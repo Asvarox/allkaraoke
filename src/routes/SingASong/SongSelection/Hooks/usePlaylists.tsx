@@ -5,8 +5,6 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import { FeatureFlags } from 'modules/utils/featureFlags';
-import isDev from 'modules/utils/isDev';
-import isE2E from 'modules/utils/isE2E';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
@@ -25,7 +23,7 @@ export interface PlaylistEntry {
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
-  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(FeatureFlags.Christmas);
+  const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Christmas);
   const songLanguages = useLanguageList(songs);
 
   return useMemo<PlaylistEntry[]>(() => {

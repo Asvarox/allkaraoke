@@ -18,13 +18,13 @@ export default forwardRef(function DirectVideoPlayer(
   { video, autoplay = true, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
   ref: ForwardedRef<VideoPlayerRef>,
 ) {
-  const player = useRef<HTMLVideoElement | null>(null);
+  const [player, setPlayer] = useState<HTMLVideoElement | null>(null);
   const [size, setSize] = useState({ w: width, h: height });
   const [status, setStatus] = useState(VideoState.UNSTARTED);
 
   useEffect(() => {
     const createCallback = (status: VideoState) => () => setStatus(status);
-    const playerRef = player.current;
+    const playerRef = player;
 
     const onPlay = createCallback(VideoState.PLAYING);
     const onPause = createCallback(VideoState.PAUSED);
@@ -53,36 +53,40 @@ export default forwardRef(function DirectVideoPlayer(
     () => ({
       setSize: (w, h) => setSize({ w, h }),
       seekTo: (time: number) => {
-        player.current && (player.current.currentTime = time);
+        if (player) {
+          // eslint-disable-next-line react-compiler/react-compiler
+          player.currentTime = time;
+        }
 
         return time;
       },
       setPlaybackSpeed: (speed: number) => {
-        if (player.current) {
-          player.current.playbackRate = speed;
+        if (player) {
+          player.playbackRate = speed;
         }
       },
       setVolume: () => undefined,
       getCurrentTime: () => {
-        return Promise.resolve(player.current?.currentTime ?? 0);
+        return Promise.resolve(player?.currentTime ?? 0);
       },
       playVideo: async () => {
         await sleep(200); // simulate similar delay as with youtube videos
-        return player.current?.play();
+        return player?.play();
       },
-      pauseVideo: () => player.current?.pause(),
-      getDuration: () => Promise.resolve(player.current?.duration ?? 0),
+      pauseVideo: () => player?.pause(),
+      getDuration: () => Promise.resolve(player?.duration ?? 0),
       loadVideoById: () => {
         clearTimeout(loadVideoTimeout.current!);
-        player.current?.pause();
+        player?.pause();
         setStatus(VideoState.UNSTARTED);
         loadVideoTimeout.current = setTimeout(() => {
-          player.current?.play();
+          player?.play();
         }, 300); // simulate similar delay as with youtube videos
       },
     }),
     [player],
   );
+  useImperativeHandle(ref, () => playerApi);
 
   useEffect(() => {
     playerApi.setSize(width, height);
@@ -92,10 +96,8 @@ export default forwardRef(function DirectVideoPlayer(
     startAt !== undefined && playerApi.seekTo(startAt);
   }, [startAt, playerApi]);
 
-  useImperativeHandle(ref, () => playerApi);
-
   return (
-    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={player}>
+    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={setPlayer}>
       <source src={video} />
     </video>
   );

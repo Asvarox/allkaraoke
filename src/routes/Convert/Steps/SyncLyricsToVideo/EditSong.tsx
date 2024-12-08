@@ -8,7 +8,7 @@ import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
 import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
 import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import AdjustPlayback from 'routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
 import EditSection, { ChangeRecord } from 'routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
 import ListTracks from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ListTracks';
@@ -87,7 +87,7 @@ const playerWidth = 824;
 const playerHeight = (playerWidth / 16) * 9;
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
-  const player = useRef<PlayerRef | null>(null);
+  const [player, setPlayer] = useState<PlayerRef | null>(null);
   const [currentTime, setCurrentTime] = useState<number>(0);
 
   const [gapShift, setGapShift] = useState<number>(0);
@@ -138,7 +138,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
 
   useEffect(() => {
     if (!visible) {
-      player.current?.pause();
+      player?.pause();
     }
   }, [visible]);
 
@@ -153,7 +153,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             autoplay={false}
             width={playerWidth}
             height={playerHeight}
-            ref={player}
+            ref={setPlayer}
             onCurrentTimeUpdate={setCurrentTime}
             players={singSetup.players}
             effectsEnabled={effectsEnabled}
@@ -163,24 +163,24 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         </Box>
       </Grid>
       <Grid item xs={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        {player.current && (
+        {player && (
           <>
             <AdjustPlayback
-              player={player.current}
+              player={player}
               currentTime={currentTime}
               effectsEnabled={effectsEnabled}
               onEffectsToggle={() => setEffectsEnabled((current) => !current)}
             />
           </>
         )}
-        {!player.current && <h2>Start the song to see the manipulation form</h2>}
+        {!player && <h2>Start the song to see the manipulation form</h2>}
       </Grid>
-      {player.current && (
+      {player && (
         <>
           <Grid item xs={8}>
             <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
               <ShiftVideoGap
-                player={player.current}
+                player={player}
                 onChange={(newShift) => {
                   const delta = newShift - videoGapShift;
                   setVideoGapShift(newShift);
@@ -190,7 +190,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 current={videoGapShift}
                 finalGap={newSong.videoGap}
               />
-              <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
+              <ShiftGap player={player} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
             </Box>
           </Grid>
           <Grid item xs={4}>
@@ -207,13 +207,13 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               Advanced
             </Typography>
             <ManipulateBpm
-              player={player.current}
+              player={player}
               onChange={setOverrideBpm}
               current={overrideBpm}
               song={newSong}
               key={newSong.gap}
             />
-            <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
+            <ListTracks player={player} song={newSong} beatLength={beatLength} />
           </Grid>
           <Grid item xs={4}>
             <div className="text-xs mb-2">
@@ -233,7 +233,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               song={newSong}
               currentTime={currentTime}
               beatLength={beatLength}
-              player={player.current}
+              player={player}
               onRecordChange={setChangeRecords}
               onTrackNameChange={(track, newName) =>
                 setTrackNames((current) => {
