@@ -5,7 +5,7 @@ import Particle from '../interfaces';
 const baseTtl = (50 / 60) * 1000;
 const ttlSpread = (25 / 60) * 1000;
 
-const initialWidth = 60;
+const initialWidth = 100;
 
 const velocityModifier = 0.3;
 

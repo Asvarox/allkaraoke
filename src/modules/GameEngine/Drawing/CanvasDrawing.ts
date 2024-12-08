@@ -7,10 +7,12 @@ import GoldNoteParticle from 'modules/GameEngine/Drawing/Particles/GoldNote';
 import SungTriangle from 'modules/GameEngine/Drawing/Particles/SungTriangle';
 import { Shaders } from 'modules/GameEngine/Drawing/Shaders/Shaders';
 import GameState from 'modules/GameEngine/GameState/GameState';
+import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
 import getPlayerNoteDistance from 'modules/GameEngine/Helpers/getPlayerNoteDistance';
 import events from 'modules/GameEvents/GameEvents';
 import PlayersManager from 'modules/Players/PlayersManager';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
+import { getLastNoteEnd } from 'modules/Songs/utils/notesSelectors';
 import { randomFloat } from 'modules/utils/randomValue';
 import { FPSCountSetting, GraphicSetting } from 'routes/Settings/SettingsState';
 import debugPitches from './Elements/debugPitches';
@@ -350,27 +352,84 @@ export default class CanvasDrawing {
     };
   };
 
-  private getNoteCoords = (
+  private getNoteCoordsBase = (
     drawingData: DrawingData,
     { start, length }: Pick<Note, 'start' | 'length'>,
     pitch: number,
     big: boolean,
-    displacement: [number, number] = [0, 0],
   ) => {
     const { sectionEndBeat, currentSection, playerCanvas, pitchStepHeight } = calculateData(drawingData);
+    const { song, currentBeat } = drawingData;
 
     const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
 
     const beatLength = playerCanvas.width / (sectionEndBeat - sectionStart);
 
-    const [dx, dy] = big ? displacement : [0, 0];
     const pitchY = pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding);
 
     return {
-      x: Math.floor(playerCanvas.baseX + beatLength * (start - sectionStart) + dx),
-      y: Math.floor(playerCanvas.baseY + 10 + pitchY + dy - (big ? 3 : 0)),
-      w: Math.floor(beatLength * length),
+      x: playerCanvas.baseX + beatLength * (start - sectionStart),
+      y: playerCanvas.baseY + 10 + pitchY - (big ? 3 : 0),
+      w: beatLength * length,
       h: big ? BIG_NOTE_HEIGHT : NOTE_HEIGHT,
+    };
+  };
+
+  private getNoteSlideInAnimationValue = (
+    position: ReturnType<typeof this.getNoteCoordsBase>,
+    drawingData: DrawingData,
+  ) => {
+    const { song, currentBeat, currentSection } = drawingData;
+    if (!currentSection) {
+      return position;
+    }
+    const sectionLengthInBeats = isNotesSection(currentSection)
+      ? getLastNoteEnd(currentSection) - currentSection.start
+      : currentSection.end - currentSection.start;
+    const sectionProgressInBeats = currentBeat - currentSection.start;
+
+    const slideInAnimationProgress = Math.min(
+      1,
+      beatToMs(sectionProgressInBeats, song) / Math.min(2000, beatToMs(sectionLengthInBeats, song)),
+    );
+    const slideInAnimationValue = Math.round(this.canvas.width * Math.pow(1 - slideInAnimationProgress, 25));
+
+    return {
+      ...position,
+      x: position.x + slideInAnimationValue,
+    };
+  };
+
+  private calculateNoteDisplacement = (
+    position: ReturnType<typeof this.getNoteCoordsBase>,
+    big: boolean,
+    displacement: [number, number] = [0, 0],
+  ) => {
+    const [dx, dy] = big ? displacement : [0, 0];
+
+    return {
+      ...position,
+      x: position.x + dx,
+      y: position.y + dy,
+    };
+  };
+
+  private getNoteCoords = (
+    drawingData: DrawingData,
+    note: Pick<Note, 'start' | 'length'>,
+    pitch: number,
+    big: boolean,
+    displacement: [number, number] = [0, 0],
+  ) => {
+    let position = this.getNoteCoordsBase(drawingData, note, pitch, big);
+    position = this.getNoteSlideInAnimationValue(position, drawingData);
+    position = this.calculateNoteDisplacement(position, big, displacement);
+
+    return {
+      x: Math.floor(position.x),
+      y: Math.floor(position.y),
+      w: Math.floor(position.w),
+      h: Math.floor(position.h),
     };
   };
 

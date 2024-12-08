@@ -50,7 +50,7 @@ test('should draw missed note above the target note if the distance is positive'
       const canvasDrawing = new CanvasDrawing(canvas);
 
       GameState.setCurrentTime(utils.beatToMs(p1note.start, mulitrack));
-      const targetTime = utils.beatToMs(p1note.start + p1note.length, mulitrack);
+      const targetTime = utils.beatToMs(p1note.start + p1note.length + 20, mulitrack);
 
       DrawingTestInput.setFrequency(0, utils.pitchToFrequency(p1note.pitch + 3));
       DrawingTestInput.setFrequency(1, utils.pitchToFrequency(p2note.pitch - 3));
