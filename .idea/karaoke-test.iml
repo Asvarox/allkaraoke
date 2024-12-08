@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/playwright/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/out" />
       <excludeFolder url="file://$MODULE_DIR$/storybook-static" />
+      <excludeFolder url="file://$MODULE_DIR$/.wrangler" />
       <excludePattern pattern="stats.html" />
     </content>
     <orderEntry type="inheritedJdk" />
