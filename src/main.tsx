@@ -61,7 +61,7 @@ if (isSentryEnabled) {
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
     // debug: true,
-    api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
+    api_host: '/ph-data',
     loaded: (ph) => {
       let storedUser = storage.local.getItem('posthog-user-id');
       if (!storedUser) {
