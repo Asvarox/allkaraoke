@@ -9,7 +9,7 @@ import useSong from 'modules/Songs/hooks/useSong';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useFullscreen from 'modules/hooks/useFullscreen';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import WaitForReadiness from 'routes/Game/Singing/WaitForReadiness';
 import LayoutGame from 'routes/LayoutGame';
 import {
@@ -28,7 +28,7 @@ interface Props {
 function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }: Props) {
   useFullscreen();
   useBlockScroll();
-  const [player, setPlayer] = useState<PlayerRef | null>(null);
+  const player = useRef<PlayerRef | null>(null);
   const song = useSong(songPreview.id);
 
   const { width, height } = useViewportSize();
@@ -67,14 +67,14 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
             <WaitForReadiness
               onFinish={() => {
                 setIsTransitionTimeout(true);
-                player?.play();
+                player.current?.play();
               }}
             />
           </BackgroundContainer>
           {song.data && (
             <Player
               pauseMenu
-              ref={setPlayer}
+              ref={player}
               onStatusChange={setPlayerState}
               players={singSetup.players}
               song={song.data}

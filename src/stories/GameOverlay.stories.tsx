@@ -91,6 +91,8 @@ const Template: StoryFn<StoryArgs> = (args) => {
     update();
   }, [args.progress]);
 
+  const videoPlayerRef = useRef<any>(null);
+
   return (
     <div style={{ position: 'relative', width: 1280, height: 720 }}>
       <GameOverlay
@@ -98,7 +100,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         duration={duration}
         effectsEnabled={true}
         song={song}
-        videoPlayerRef={null}
+        videoPlayerRef={videoPlayerRef}
         currentStatus={VideoState.PLAYING}
         onSongEnd={() => {
           GameState.resetSingSetup();

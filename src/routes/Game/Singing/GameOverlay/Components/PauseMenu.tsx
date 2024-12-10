@@ -5,7 +5,7 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import SongsService from 'modules/Songs/SongsService';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import RateSong from 'routes/Game/Singing/GameOverlay/Components/RateSong';
 import SelectInputModal from 'routes/SelectInput/SelectInputModal';
 import InputLag from 'routes/Settings/InputLag';
@@ -41,7 +41,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     }
   };
 
-  const onInputLagActive = useCallback(() => inputLagRef.current?.focus(), []);
+  const onInputLagActive = () => inputLagRef.current?.focus();
 
   return (
     <Modal onClose={onResume}>

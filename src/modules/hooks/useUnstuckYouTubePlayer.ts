@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { MutableRefObject, useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 
 /**
@@ -35,15 +35,15 @@ function useUnstuckOnStartSong(currentStatus: number) {
  * "Fix": If player enters BUFFERING status, wait until internet is available, then go back a couple
  * of seconds of the song to force the player to start playing
  */
-function useUnstuckOnBuffering(playerRef: YouTube | null, currentStatus: number) {
+function useUnstuckOnBuffering(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
   useEffect(() => {
     if (currentStatus === YouTube.PlayerState.BUFFERING) {
       const interval = setInterval(async () => {
         if (navigator.onLine) {
           clearInterval(interval);
 
-          const seconds = await playerRef?.getInternalPlayer()!.getCurrentTime()!;
-          playerRef?.getInternalPlayer()?.seekTo(Math.max(seconds - 2, 0), true);
+          const seconds = await playerRef.current?.getInternalPlayer()!.getCurrentTime()!;
+          playerRef.current?.getInternalPlayer()?.seekTo(Math.max(seconds - 2, 0), true);
         }
       }, 500);
 
@@ -54,7 +54,7 @@ function useUnstuckOnBuffering(playerRef: YouTube | null, currentStatus: number)
   });
 }
 
-export default function useUnstuckYouTubePlayer(playerRef: YouTube | null, currentStatus: number) {
+export default function useUnstuckYouTubePlayer(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
   useUnstuckOnBuffering(playerRef, currentStatus);
 
   return useUnstuckOnStartSong(currentStatus);

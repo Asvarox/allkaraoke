@@ -1,7 +1,7 @@
 import { seconds } from 'interfaces';
 import usePlayerVolume from 'modules/hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from 'modules/hooks/useUnstuckYouTubePlayer';
-import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useMemo, useState } from 'react';
+import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 
 export enum VideoState {
@@ -56,47 +56,42 @@ export default forwardRef(function YoutubeVideoPlayer(
   { video, autoplay, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
   ref: ForwardedRef<VideoPlayerRef>,
 ) {
-  const [player, setPlayer] = useState<YouTube | null>(null);
+  const player = useRef<YouTube | null>(null);
   const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
   const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
   usePlayerVolume(player, volume);
   useEffect(() => {
-    if (!player) {
+    if (!player.current) {
       return;
     }
 
-    player.getInternalPlayer()!.setSize(width, height);
+    player.current.getInternalPlayer()!.setSize(width, height);
   }, [player, width, height, video, playerKey]);
 
-  const api = useMemo(
-    (): VideoPlayerRef => ({
-      setSize: (w, h) => player?.getInternalPlayer()!.setSize(w, h),
-      seekTo: (timeSec: seconds) => player?.getInternalPlayer()!.seekTo(timeSec, true),
-      setPlaybackSpeed: (speed: number) => player?.getInternalPlayer()!.setPlaybackRate(speed),
-      setVolume: (newVolume: number) => player?.getInternalPlayer()!.setVolume(newVolume),
-      getCurrentTime: () => player?.getInternalPlayer?.()?.getCurrentTime?.() ?? Promise.resolve(0),
-      loadVideoById: (opts) => player?.getInternalPlayer()!.loadVideoById(opts),
-      playVideo: () => {
-        // console.log('play');
-        player?.getInternalPlayer()!.playVideo();
-      },
-      pauseVideo: () => {
-        // console.log('paused');
-        return player?.getInternalPlayer()!.pauseVideo();
-      },
-      getDuration: () => player?.getInternalPlayer?.()?.getDuration?.() ?? Promise.resolve(0),
-    }),
-    [player],
-  );
-
-  useImperativeHandle(ref, () => api);
+  useImperativeHandle(ref, () => ({
+    setSize: (w, h) => player.current?.getInternalPlayer()!.setSize(w, h),
+    seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
+    setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(speed),
+    setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
+    getCurrentTime: () => player.current?.getInternalPlayer?.()?.getCurrentTime?.() ?? Promise.resolve(0),
+    loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
+    playVideo: () => {
+      // console.log('play');
+      player.current?.getInternalPlayer()!.playVideo();
+    },
+    pauseVideo: () => {
+      // console.log('paused');
+      return player.current?.getInternalPlayer()!.pauseVideo();
+    },
+    getDuration: () => player.current?.getInternalPlayer?.()?.getDuration?.() ?? Promise.resolve(0),
+  }));
 
   return (
     <YouTube
       title=" "
       key={`${video}-${playerKey}`}
-      ref={setPlayer}
+      ref={player}
       videoId={video}
       opts={{
         width: '0',

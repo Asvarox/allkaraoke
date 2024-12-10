@@ -5,11 +5,13 @@ import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import tuple from 'modules/utils/tuple';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { HelpEntry } from 'routes/KeyboardHelp/Context';
 import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+
+const previouslySelectedSongs: number[] = [];
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
@@ -195,9 +197,8 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const randomlySelectedSongs = useRef<number[]>([]);
   const randomSong = () => {
-    const newIndex = selectRandomSong(songCount, randomlySelectedSongs.current);
+    const newIndex = selectRandomSong(songCount, previouslySelectedSongs);
     moveToSong(newIndex);
   };
 
@@ -243,6 +244,5 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-  // eslint-disable-next-line react-compiler/react-compiler
-  return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
+  return [focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong] as const;
 };

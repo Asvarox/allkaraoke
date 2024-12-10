@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
 import { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import PlayersManager from 'modules/Players/PlayersManager';
-import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
+import { forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef } from 'react';
 import SkipIntro from 'routes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'routes/Game/Singing/GameOverlay/Components/SkipOutro';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -24,7 +24,7 @@ interface Props {
   playerSetups: PlayerSetup[];
   duration: number;
   effectsEnabled: boolean;
-  videoPlayerRef: VideoPlayerRef | null;
+  videoPlayerRef: MutableRefObject<VideoPlayerRef | null>;
   isPauseMenuVisible: boolean;
 }
 

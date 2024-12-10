@@ -1,12 +1,14 @@
-import { PlayerSetup, SingSetup, Song } from 'interfaces';
+import { PlayerSetup, seconds, SingSetup, Song } from 'interfaces';
 import {
   ComponentProps,
   ForwardedRef,
   forwardRef,
+  MutableRefObject,
   useCallback,
   useEffect,
   useImperativeHandle,
   useMemo,
+  useRef,
   useState,
 } from 'react';
 
@@ -44,11 +46,11 @@ export interface PlayerRef {
   setPlaybackSpeed: (speed: number) => void;
 }
 
-function usePlayerSetDuration(playerRef: VideoPlayerRef | null, currentStatus: VideoState) {
+function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
   const [duration, setDuration] = useState(0);
   useEffect(() => {
-    if (playerRef && currentStatus === VideoState.PLAYING && duration === 0) {
-      playerRef.getDuration().then((dur: number) => {
+    if (playerRef.current && currentStatus === VideoState.PLAYING && duration === 0) {
+      playerRef.current.getDuration().then((dur: number) => {
         setDuration(dur);
         GameState.setDuration(dur);
       });
@@ -77,7 +79,7 @@ function Player(
   }: Props,
   ref: ForwardedRef<PlayerRef>,
 ) {
-  const [player, setPlayer] = useState<VideoPlayerRef | null>(null);
+  const player = useRef<VideoPlayerRef | null>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
   const [inputLag] = useSettingValue(InputLagSetting);
@@ -93,14 +95,14 @@ function Player(
   }, [song, singSetup]);
 
   useEffect(() => {
-    if (!player) {
+    if (!player.current) {
       return;
     }
     if (currentStatus === VideoState.PLAYING) {
       const interval = setInterval(async () => {
-        if (!player) return;
+        if (!player.current) return;
 
-        const time = Math.max(0, (await player.getCurrentTime()) * 1000 - inputLag);
+        const time = Math.max(0, (await player.current.getCurrentTime()) * 1000 - inputLag);
         setCurrentTime(time);
         onCurrentTimeUpdate?.(time);
         GameState.setCurrentTime(time);
@@ -113,17 +115,12 @@ function Player(
 
   const duration = usePlayerSetDuration(player, currentStatus);
 
-  const playerApi = useMemo(
-    () => ({
-      play: () => player?.playVideo(),
-      pause: () => player?.pauseVideo(),
-      seekTo: (time: number) => player?.seekTo(time),
-      setPlaybackSpeed: (speed: number) => player?.setPlaybackSpeed(speed),
-    }),
-    [player],
-  );
-
-  useImperativeHandle(ref, () => playerApi);
+  useImperativeHandle(ref, () => ({
+    seekTo: (time: seconds) => player.current!.seekTo(time),
+    setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
+    play: () => player.current!.playVideo(),
+    pause: () => player.current!.pauseVideo(),
+  }));
 
   const onStateChangeCallback = useCallback(
     (state: VideoState) => {
@@ -137,12 +134,12 @@ function Player(
 
   const openPauseMenu = () => {
     setPauseMenuVisible(true);
-    player?.pauseVideo();
+    player.current?.pauseVideo();
   };
 
   const closePauseMenu = () => {
     setPauseMenuVisible(false);
-    player?.playVideo();
+    player.current?.playVideo();
   };
 
   const togglePauseMenu = () => {
@@ -162,7 +159,7 @@ function Player(
       currentStatus === VideoState.PAUSED;
 
     if (currentStatus === VideoState.PLAYING && pauseMenuVisible) {
-      player?.pauseVideo();
+      player.current?.pauseVideo();
     } else if (wasJustPaused && !pauseMenuVisible) {
       // Someone clicked on the video
       setPauseMenuVisible(true);
@@ -209,7 +206,7 @@ function Player(
       )}
       <PlayerContainer>
         <VideoPlayer
-          ref={setPlayer}
+          ref={player}
           video={song.video}
           width={width}
           height={height}
@@ -224,7 +221,7 @@ function Player(
           <GoFastButton
             data-test="make-song-go-fast"
             onClick={() => {
-              player?.setPlaybackSpeed(2);
+              player.current?.setPlaybackSpeed(2);
             }}
           />
         )}

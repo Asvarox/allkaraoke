@@ -231,8 +231,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               keyboardControl={keyboardControl}
             />
             <SongGroupsNavigation
-              // eslint-disable-next-line react-compiler/react-compiler
-              container={container.current}
+              containerRef={container}
               groupedSongList={groupedSongList}
               onScrollToGroup={(group) => {
                 moveToSong(group.songs[0].index);
