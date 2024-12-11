@@ -1,9 +1,11 @@
 import dotparty from 'modules/Elements/dotparty.gif';
+import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
 import logoMp4 from 'modules/Elements/logo.mp4';
 import logoWebm from 'modules/Elements/logo.webm';
 import pride from 'modules/Elements/pride.png';
+import santaHat from 'modules/Elements/santas-hat.webp';
 import storage from 'modules/utils/storage';
-import { ComponentProps } from 'react';
+import { ComponentProps, useContext } from 'react';
 import { twc } from 'react-twc';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
@@ -13,6 +15,7 @@ if (global.location?.search.includes('pride')) {
 
 export default function Logo(props: ComponentProps<typeof StyledLogo>) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const { theme } = useContext(BackgroundContext);
 
   if (mobilePhoneMode) {
     return null;
@@ -33,6 +36,13 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
         src={dotparty}
         alt="AllKaraoke Pride logo part 2"
       />
+      {theme === 'christmas' && (
+        <img
+          className="absolute w-[13.7rem] h-[11.1rem] top-[-3rem] right-[-7rem] rotate-[30deg] object-contain"
+          src={santaHat}
+          alt="AllKaraoke Pride logo part 2"
+        />
+      )}
     </div>
   );
 }

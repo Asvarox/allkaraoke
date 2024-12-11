@@ -103,8 +103,10 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
+  // <StrictMode>
   <CacheProvider value={emotionCache}>
     <App />
     <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
   </CacheProvider>,
+  // </StrictMode>,
 );
