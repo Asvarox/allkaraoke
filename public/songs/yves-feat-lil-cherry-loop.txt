@@ -1,0 +1,487 @@
+#ARTIST:Yves feat. Lil Cherry
+#TITLE:LOOP
+#CREATOR:alexoy2k
+#BPM:256
+#YEAR:2024
+#VIDEO:v=QNTVGkUKdFA
+#GENRE:House
+#LANGUAGE:Korean, English
+#GAP:54,21875
+#ALLKARAOKE_ID:yves-feat-lil-cherry-loop
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:20.572Z
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://youtu.be/QNTVGkUKdFA?si=Bxp1VUzgbN92Fn47
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Yves feat. Lil Cherry - LOOP.mp3
+#COVER:Yves feat. Lil Cherry - LOOP [CO].jpg
+#BACKGROUND:Yves feat. Lil Cherry - LOOP [BG].jpg
+: 3 7 -2 Can’t 
+: 11 8 0 stop
+- 19 50
+- 50
+: 67 7 -2 Can’t 
+: 75 8 0 stop
+- 83 138
+- 138
+: 155 5 5 Meant 
+: 161 5 3 to be, 
+: 167 3 3 we 
+: 171 5 5 might 
+: 177 5 3 be 
+: 183 3 5 al
+: 187 6 5 right 
+: 195 8 3 now
+- 203
+: 219 3 5 Beo 
+: 223 1 3 seo 
+: 225 5 3 nal 
+: 231 3 5 su 
+: 235 7 5 eopseo 
+: 243 3 3 it’s 
+: 247 3 5 so 
+: 251 6 5 fine, 
+: 259 7 3 fine
+: 267 4 0 ~
+- 271
+: 279 3 3 I 
+: 283 5 5 swear 
+: 289 5 3 I 
+: 295 3 3 will 
+: 299 3 5 ne
+: 303 1 3 ver 
+: 305 5 3 let 
+: 311 3 5 you 
+: 315 7 5 down, 
+: 323 10 3 down
+- 333
+: 347 5 10 Kkumso 
+: 353 5 7 geu 
+: 359 3 12 ro 
+: 363 3 10 na 
+: 367 3 7 reul 
+: 371 3 5 ga
+: 375 3 5 dwo 
+: 379 7 5 jwo
+- 386
+: 387 7 7 Oh 
+: 395 7 5 yeah
+: 403 16 7 ~
+- 419
+: 423 3 7 I 
+: 427 3 10 know 
+: 431 3 10 you 
+: 435 3 10 like 
+: 439 3 7 you 
+: 443 7 12 know, 
+: 451 12 5 babe
+- 463 466
+- 466
+: 483 3 3 ’Cause 
+: 487 3 3 you’ll 
+: 491 1 5 al
+: 493 5 5 ways 
+: 499 1 5 be 
+: 501 5 5 my 
+: 507 7 5 favo
+: 515 3 3 rite
+- 518
+R 519 3 -4 Who 
+R 523 3 -4 that, 
+R 527 3 -4 who 
+R 531 3 -4 that?
+- 534
+R 535 4 2 I don’t 
+R 540 3 2 care 
+R 544 1 2 about 
+R 546 1 2 no
+R 548 5 2 body 
+R 554 3 2 else
+- 557
+R 558 4 0 Tonight, 
+R 563 3 0 what 
+R 567 3 0 I 
+R 571 8 0 do?
+- 579
+R 585 6 0 Serve 
+R 592 1 0 it 
+R 594 2 0 up, 
+R 599 3 0 I don’t 
+R 603 3 0 kiss 
+R 607 1 0 and 
+R 609 5 0 tell
+- 614
+R 615 3 0 But that’s 
+R 619 12 0 right
+- 631
+: 643 7 -2 Can’t 
+: 651 7 0 stop 
+: 659 7 0 deoche 
+: 667 7 0 gatin 
+: 675 7 12 neo
+- 682
+: 683 8 0 Imi 
+: 692 7 0 dachyeo 
+: 700 7 0 beorin 
+: 708 6 -2 neo
+- 714
+: 715 7 0 Lookin’ 
+: 723 3 0 in 
+: 727 3 0 the 
+: 731 7 0 mirror, 
+: 739 7 12 oh
+- 746
+: 747 7 0 Geoul 
+: 755 7 0 soge 
+: 763 7 0 bichin 
+: 771 4 -2 swit
+- 775
+: 779 7 0 Stuck 
+: 787 3 0 in 
+: 791 3 0 the 
+: 795 7 0 mirror, 
+: 803 7 12 oh
+- 810
+: 811 7 0 Naega 
+: 819 11 0 deureoon 
+: 831 3 0 ne
+- 834
+: 835 7 3 Para
+: 843 7 2 dise, 
+: 851 7 -2 yeah, 
+: 859 7 -5 ayy
+- 866
+: 867 3 3 Yeah, 
+: 871 3 3 I’m 
+: 875 7 2 lost, 
+: 883 3 0 but 
+: 887 3 3 I 
+: 891 7 2 like 
+: 899 7 0 it
+- 906
+: 907 7 12 Ooh, 
+: 915 7 5 ooh, 
+: 923 3 5 ooh-
+: 927 3 3 ooh-
+: 931 3 5 ooh-
+: 935 3 3 ooh, 
+: 939 7 5 ooh, 
+: 947 7 5 ooh, 
+: 955 3 5 ooh-
+: 959 4 3 ooh
+- 963
+: 967 3 3 Ooh, 
+: 971 7 12 ooh, 
+: 979 7 5 ooh, 
+: 987 3 5 ooh-
+: 991 3 3 ooh-
+: 995 3 5 ooh-
+: 999 3 3 ooh, 
+: 1003 7 5 ooh, 
+: 1011 7 5 ooh, 
+: 1019 8 5 ooh
+- 1027
+: 1035 7 12 Ooh, 
+: 1043 7 5 ooh, 
+: 1051 3 5 ooh-
+: 1055 3 3 ooh-
+: 1059 3 5 ooh-
+: 1063 3 3 ooh, 
+: 1067 7 5 ooh, 
+: 1075 7 5 ooh, 
+: 1083 3 5 ooh-
+: 1087 4 3 ooh
+- 1091
+: 1095 3 3 Ooh, 
+: 1099 7 12 ooh, 
+: 1107 7 5 ooh, 
+: 1115 3 5 ooh-
+: 1119 3 3 ooh-
+: 1123 3 5 ooh-
+: 1127 3 3 ooh, 
+: 1131 7 5 ooh, 
+: 1139 7 5 ooh, 
+: 1147 7 5 ooh
+- 1154
+: 1155 7 0 Vitamin 
+: 1163 3 0 C
+- 1166
+: 1167 1 0 Who 
+: 1169 1 0 the 
+: 1171 3 0 fuck 
+: 1175 3 0 I 
+: 1179 7 0 kkotdanjang 
+: 1187 3 0 hae 
+: 1191 4 0 for?
+- 1195
+: 1199 1 0 Who 
+: 1201 1 0 the 
+: 1203 2 0 hell 
+: 1206 1 0 am 
+: 1208 2 0 I 
+: 1211 5 0 makin’ 
+: 1217 1 0 a 
+: 1219 3 0 rain 
+: 1223 4 0 for?
+- 1227
+: 1230 1 0 I 
+: 1232 1 0 don’t 
+: 1234 4 0 care 
+: 1239 2 0 you 
+: 1242 3 0 makin’ 
+: 1246 3 0 me 
+: 1250 3 0 sing 
+: 1254 4 0 that
+- 1258
+: 1262 3 0 Yeah, I 
+: 1266 4 0 got 
+: 1271 3 0 all 
+: 1275 3 0 dolled 
+: 1279 4 0 up, 
+: 1284 7 0 mm-
+: 1292 6 0 mm
+- 1298
+: 1299 3 0 Just 
+: 1303 3 0 look 
+: 1307 3 0 good 
+: 1311 3 0 at 
+: 1315 3 0 home 
+: 1319 3 0 with 
+: 1323 3 0 you
+- 1326
+: 1327 3 0 Na 
+: 1331 11 0 waenji 
+: 1343 1 0 you 
+: 1345 1 0 A 
+: 1347 7 0 gen 
+: 1355 3 0 Z
+- 1358
+: 1359 3 0 I 
+: 1363 3 0 got 
+: 1367 3 0 that 
+: 1371 5 0 stank 
+: 1377 1 0 up 
+: 1379 3 0 on 
+: 1383 3 0 me, 
+: 1387 3 0 mm, 
+: 1391 3 0 I 
+: 1395 3 0 know 
+: 1399 3 0 that’s 
+: 1403 7 0 right
+- 1410
+: 1411 2 7 Light 
+: 1414 2 5 it 
+: 1419 7 5 bright 
+: 1427 1 7 i 
+: 1429 13 5 sungan 
+: 1443 1 7 make 
+: 1445 2 5 me 
+: 1451 7 5 high, 
+: 1459 8 0 yeah
+- 1467
+: 1471 3 0 You 
+: 1475 1 7 get 
+: 1477 4 5 it 
+: 1483 7 5 right, 
+: 1491 1 7 get 
+: 1493 4 5 it 
+: 1499 8 5 right
+- 1507 1522
+- 1522
+: 1539 7 7 Every 
+: 1547 7 5 night 
+: 1555 2 7 mae 
+: 1558 11 5 sunganeul 
+: 1570 16 7 deryeoga 
+: 1587 8 5 yeah
+- 1595
+: 1599 3 0 You 
+: 1603 1 7 get 
+: 1605 5 5 it 
+: 1611 10 5 right
+- 1621
+: 1627 7 7 Lookin’ 
+: 1635 3 5 at 
+: 1639 3 5 the 
+: 1643 18 5 starlight
+- 1661
+: 1667 7 7 Oh 
+: 1675 7 5 yeah
+: 1683 16 7 ~
+- 1699
+: 1703 3 7 I 
+: 1707 3 10 know 
+: 1711 3 10 you 
+: 1715 3 10 like 
+: 1719 3 7 you 
+: 1723 7 12 know, 
+: 1731 12 5 babe
+- 1743 1746
+- 1746
+: 1763 3 3 ’Cause 
+: 1767 3 3 you’ll 
+: 1771 7 5 always 
+: 1779 1 5 be 
+: 1781 5 3 my 
+: 1787 8 5 favorite
+- 1795
+: 1799 3 2 Who 
+: 1803 3 2 that, 
+: 1807 3 2 who 
+: 1811 3 2 that?
+- 1814
+: 1815 4 2 I 
+: 1820 3 2 don’t 
+: 1824 1 2 care 
+: 1826 1 2 about 
+: 1828 5 2 nobody 
+: 1834 3 2 else
+- 1837
+: 1838 4 0 Tonight 
+: 1843 3 0 what 
+: 1847 3 0 I 
+: 1851 8 0 do?
+- 1859
+: 1865 6 0 Serve 
+: 1872 1 0 it 
+: 1874 2 0 up, 
+: 1879 3 0 I 
+: 1883 3 0 don’t 
+: 1887 1 0 kiss 
+: 1889 5 0 and tell
+- 1894
+: 1895 3 0 But that’s 
+: 1899 12 0 right
+- 1911
+: 1923 7 -2 Can’t 
+: 1931 7 0 stop 
+: 1939 7 0 deoche 
+: 1947 7 0 gatin 
+: 1955 7 12 neo
+- 1962
+: 1963 8 0 Imi 
+: 1972 7 0 dachyeo 
+: 1980 7 0 beorin 
+: 1988 6 -2 neo
+- 1994
+: 1995 7 0 Lookin’ 
+: 2003 3 0 in 
+: 2007 3 0 the 
+: 2011 7 0 mirror, 
+: 2019 7 12 oh
+- 2026
+: 2027 7 0 Geoul 
+: 2035 7 0 soge 
+: 2043 7 0 bichin 
+: 2051 4 -2 swit
+- 2055
+: 2059 7 0 Stuck 
+: 2067 3 0 in 
+: 2071 3 0 the 
+: 2075 7 0 mirror, 
+: 2083 7 12 oh
+- 2090
+: 2091 7 0 Naega 
+: 2099 11 0 deureoon 
+: 2111 3 0 ne
+- 2114
+: 2115 7 3 Para
+: 2123 7 2 dise, 
+: 2131 7 -2 yeah, 
+: 2139 7 -5 ayy
+- 2146
+: 2147 3 3 Yeah, 
+: 2151 3 3 I’m 
+: 2155 7 2 lost 
+: 2163 3 0 but 
+: 2167 3 3 I 
+: 2171 7 2 like 
+: 2179 7 0 it
+- 2186
+: 2187 7 12 Ooh, 
+: 2195 7 5 ooh, 
+: 2203 3 5 ooh-
+: 2207 3 3 ooh-
+: 2211 3 5 ooh-
+: 2215 3 3 ooh, 
+: 2219 7 5 ooh, 
+: 2227 7 5 ooh, 
+: 2235 3 5 ooh-
+: 2239 4 3 ooh
+- 2243
+: 2247 3 3 Ooh, 
+: 2251 7 12 ooh, 
+: 2259 7 5 ooh, 
+: 2267 3 5 ooh-
+: 2271 3 3 ooh-
+: 2275 3 5 ooh-
+: 2279 3 3 ooh, 
+: 2283 7 5 ooh, 
+: 2291 7 5 ooh, 
+: 2299 8 5 ooh
+- 2307
+: 2315 7 12 Ooh, 
+: 2323 7 5 ooh, 
+: 2331 3 5 ooh-
+: 2335 3 3 ooh-
+: 2339 3 5 ooh-
+: 2343 3 3 ooh, 
+: 2347 7 5 ooh, 
+: 2355 7 5 ooh, 
+: 2363 3 5 ooh-
+: 2367 4 3 ooh
+- 2371
+: 2375 3 3 Ooh, 
+: 2379 7 12 ooh, 
+: 2387 7 5 ooh, 
+: 2395 3 5 ooh-
+: 2399 3 3 ooh-
+: 2403 3 5 ooh-
+: 2407 3 3 ooh, 
+: 2411 7 5 ooh, 
+: 2419 7 5 ooh, 
+: 2427 8 5 ooh
+- 2435
+: 2443 7 12 Ooh, 
+: 2451 7 5 ooh, 
+: 2459 3 5 ooh-
+: 2463 3 3 ooh-
+: 2467 3 5 ooh-
+: 2471 3 3 ooh, 
+: 2475 7 5 ooh, 
+: 2483 7 5 ooh, 
+: 2491 3 5 ooh-
+: 2495 4 3 ooh
+- 2499
+: 2503 3 3 Ooh, 
+: 2507 7 12 ooh, 
+: 2515 7 5 ooh, 
+: 2523 3 5 ooh-
+: 2527 3 3 ooh-
+: 2531 3 5 ooh-
+: 2535 3 3 ooh, 
+: 2539 7 5 ooh, 
+: 2547 7 5 ooh, 
+: 2555 8 5 ooh
+- 2563
+: 2572 7 12 Ooh, 
+: 2580 7 5 ooh, 
+: 2588 3 5 ooh-
+: 2592 3 3 ooh-
+: 2596 3 5 ooh-
+: 2600 3 3 ooh, 
+: 2604 7 5 ooh, 
+: 2612 7 5 ooh, 
+: 2620 3 5 ooh-
+: 2624 4 3 ooh
+- 2628
+: 2631 3 3 Ooh, 
+: 2635 7 12 ooh, 
+: 2643 7 5 ooh, 
+: 2651 3 5 ooh-
+: 2655 3 3 ooh-
+: 2659 3 5 ooh-
+: 2663 3 3 ooh, 
+: 2667 7 5 ooh, 
+: 2675 7 5 ooh, 
+: 2683 8 5 ooh
+E
