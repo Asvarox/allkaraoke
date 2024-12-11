@@ -1,0 +1,81 @@
+#ARTIST:Ariana Grande
+#TITLE:Raindrops (An Angel Cried)
+#CREATOR:amro98
+#BPM:239,24
+#YEAR:2018
+#VIDEO:v=k-pqPHc5jdg
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:156,5072730312657
+#ALLKARAOKE_ID:ariana-grande-raindrops-an-angel-cried
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:21.471Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_SOURCEURL:https://youtu.be/k-pqPHc5jdg?si=ZYIkUUiA_D-EWKmS
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Ariana Grande - Raindrops (An Angel Cried).mp3
+: 5 6 1 When 
+: 13 2 11 rain
+: 16 3 13 ~
+: 21 4 10 drops 
+: 29 25 5 fell
+- 54
+: 62 2 1 Down
+: 65 5 3 ~ 
+: 72 4 5 from 
+: 77 2 6 the 
+: 83 2 3 sky
+: 86 1 1 ~
+: 88 2 -2 ~
+: 91 18 1 ~
+- 109
+: 120 1 6 The 
+: 123 2 6 day
+: 126 3 8 ~ 
+* 130 1 8 you
+* 132 5 10 ~
+* 138 1 11 ~
+* 140 1 10 ~
+* 142 1 8 ~
+* 144 1 10 ~
+* 146 1 11 ~ 
+: 148 3 11 left 
+: 157 3 1 me
+: 161 1 2 ~
+: 163 1 1 ~
+: 165 7 -1 ~,
+- 172
+: 177 1 5 An 
+: 181 6 6 an
+: 188 1 6 gel
+: 190 5 8 ~ 
+: 198 3 1 cried
+: 202 18 6 ~
+- 220
+: 228 1 8 Oh
+: 230 4 10 ~
+: 235 2 8 ~
+: 238 5 6 ~, 
+: 246 2 10 she 
+: 249 6 8 cried
+: 256 1 8 ~
+: 258 1 6 ~
+: 260 2 3 ~
+: 263 10 6 ~,
+- 273
+: 286 3 6 An 
+* 290 3 8 an
+* 294 2 6 ~
+: 297 4 6 gel 
+: 304 3 10 cried
+: 308 9 11 ~
+: 318 10 10 ~
+: 329 1 11 ~
+: 331 1 10 ~
+: 333 11 8 ~
+- 344
+: 353 4 6 She 
+: 361 2 11 cried
+: 364 75 13 ~
+: 440 2 10 ~
+E

@@ -66,8 +66,8 @@ export const colorSets = {
 
   christmasGreen: colorSet(tinycolor('rgb(44,133,0)'), tinycolor('rgb(3, 79, 27)')),
   christmasRed: colorSet(tinycolor('rgb(181,27,42)'), tinycolor('rgb(126, 18, 29)')),
-  christmasGold: colorSet(tinycolor('rgb(206, 172, 92)'), tinycolor('rgb(129,108,58)')),
   christmasBlue: colorSet(tinycolor('rgb(87 140 190)'), tinycolor('rgb(34 53 90)')),
+  christmasGold: colorSet(tinycolor('rgb(206, 172, 92)'), tinycolor('rgb(129,108,58)')),
 
   halloweenOrange: colorSet(tinycolor('#fd9702'), tinycolor('#ff7100')),
   halloweenViolet: colorSet(tinycolor('#e102ff'), tinycolor('#ae03ff')),

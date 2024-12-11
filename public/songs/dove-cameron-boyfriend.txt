@@ -1,0 +1,413 @@
+#ARTIST:Dove Cameron
+#TITLE:Boyfriend
+#CREATOR:princetongirl98
+#BPM:240
+#YEAR:2022
+#VIDEO:v=SOn3_0Oav0k
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:17490
+#ALLKARAOKE_ID:dove-cameron-boyfriend
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:21.621Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://youtu.be/SOn3_0Oav0k?si=qbCKxxNaKJDv2-Gw
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Dove Cameron - Boyfriend.mp3
+: 16 2 2 I 
+: 20 2 0 can’t 
+: 23 4 9 be
+: 28 7 0 lieve 
+: 44 1 7 we’re 
+: 46 2 0 fi
+: 50 1 2 nally 
+: 59 8 0 alone
+- 67
+: 80 2 4 I 
+: 83 3 0 can’t 
+: 88 2 9 be
+: 92 7 0 lieve 
+: 108 1 2 I 
+: 110 1 4 al
+: 113 4 2 most 
+: 119 5 9 went 
+: 125 8 2 home
+- 133
+: 141 4 2 What 
+: 147 4 0 are 
+: 152 3 9 the 
+: 156 12 11 chances? 
+: 175 4 2 Every
+: 182 6 9 one’s 
+: 189 5 0 dan
+: 195 5 7 cing
+- 200
+: 208 1 9 And 
+: 211 2 4 he’s 
+: 214 4 11 not 
+: 219 4 0 with 
+: 224 5 2 you 
+F 241 3 0 (Hm, 
+F 248 2 0 hm, 
+F 254 3 0 hm, 
+F 261 5 0 hm)
+- 266 270
+- 270
+: 286 1 2 The 
+: 288 2 9 uni
+: 291 9 7 verse 
+: 303 4 7 must 
+: 309 4 7 have 
+: 315 3 5 di
+: 319 4 7 vined 
+: 324 12 0 this
+- 336 337
+- 337
+: 353 2 0 What 
+: 356 4 2 am 
+: 361 2 2 I 
+: 364 1 0 gonna 
+: 366 4 2 do?
+- 370
+: 382 4 7 Not 
+: 387 3 9 grab 
+: 392 3 0 your 
+: 404 4 2 wrist?
+- 408
+: 416 1 7 I 
+: 419 1 9 could 
+: 421 1 5 be 
+: 423 1 7 a 
+: 425 1 7 bet
+: 428 1 7 ter 
+: 430 3 7 boy
+: 434 4 2 friend 
+: 440 4 2 than 
+: 445 9 0 him
+- 454
+: 464 1 7 I 
+: 466 1 7 could 
+: 468 1 7 do 
+: 470 1 5 the 
+: 472 2 7 shit 
+: 476 1 2 that 
+: 478 3 7 he 
+: 482 4 2 nev
+: 488 4 0 er 
+: 494 6 0 did
+- 500
+: 511 1 2 Up 
+: 514 4 4 all 
+: 520 3 2 night, 
+: 526 4 2 I 
+: 531 3 4 won’t 
+: 536 4 2 quit
+- 540
+: 542 1 7 Think
+: 544 1 7 ing 
+: 546 1 5 I’m 
+: 554 4 7 gonna 
+: 559 4 7 steal 
+: 564 3 2 you 
+: 568 4 0 from 
+: 574 8 0 him
+- 582
+: 592 2 7 I 
+: 595 1 2 could 
+: 597 1 9 be 
+: 600 1 2 such 
+: 603 2 0 a 
+: 607 3 11 gen
+: 611 1 9 tle
+: 613 8 2 man
+- 621 622
+- 622
+: 638 3 2 Plus 
+: 643 4 2 all 
+: 648 3 2 my 
+: 654 4 4 clothes 
+: 659 4 2 would 
+: 665 5 2 fit
+- 670 753
+- 753
+: 769 1 2 I 
+: 771 1 7 could 
+: 773 2 7 be 
+: 776 1 7 a 
+: 778 1 5 bet
+: 781 1 7 ter 
+: 783 2 7 boy
+: 787 5 2 friend
+- 792
+: 800 1 9 I 
+: 803 2 9 don’t 
+: 807 3 7 need 
+: 812 1 7 to 
+: 815 3 9 tell 
+: 819 1 9 you 
+: 822 1 2 twice
+- 823
+: 831 1 9 All 
+: 835 2 9 the 
+: 838 4 7 ways 
+: 844 1 2 he 
+: 847 3 9 can’t 
+: 852 1 4 suf
+: 855 3 7 fice
+- 858
+: 863 1 4 If 
+: 865 2 9 I 
+: 869 2 4 could 
+: 872 3 0 give 
+: 876 1 9 you 
+: 879 3 0 some 
+: 884 1 9 ad
+: 887 4 0 vice
+- 891
+: 895 2 0 I 
+: 898 2 0 would 
+: 902 1 2 leave 
+: 905 3 2 with 
+: 910 3 4 me 
+: 915 4 2 to
+: 921 3 2 night
+- 924
+: 927 1 7 The 
+: 929 2 9 uni
+: 932 10 7 verse 
+: 944 3 7 must 
+: 949 4 7 have 
+: 955 3 4 di
+: 959 5 2 vined 
+: 965 9 0 this
+- 974
+: 982 1 11 Mm, 
+: 985 3 9 mm, 
+: 990 8 0 mm
+- 998
+: 1003 4 4 Ladies 
+: 1010 4 2 first, 
+: 1016 3 2 baby, 
+: 1022 2 2 I 
+: 1028 13 0 in
+: 1042 5 2 sist
+- 1047
+: 1052 4 7 I 
+: 1058 1 7 could 
+: 1061 1 5 be 
+: 1063 1 7 a 
+: 1066 1 5 bet
+: 1068 1 7 ter 
+: 1070 3 7 boy
+: 1075 3 2 friend 
+: 1080 3 2 than 
+: 1085 10 0 him
+- 1095
+: 1103 1 7 I 
+: 1105 1 7 could 
+: 1108 1 7 do 
+: 1110 1 7 the 
+: 1113 2 7 shit 
+: 1116 1 2 that 
+: 1119 2 7 he 
+: 1123 4 2 nev
+: 1128 3 7 er 
+: 1133 10 0 did
+- 1143
+: 1149 4 2 Up 
+: 1155 3 4 all 
+: 1160 4 2 night, 
+: 1165 3 2 I 
+: 1170 3 2 won’t 
+: 1176 4 2 quit
+- 1180
+: 1182 1 7 Think
+: 1185 1 5 ing 
+: 1187 1 7 I’m 
+: 1192 3 7 gonna 
+: 1197 4 7 steal 
+: 1203 4 2 you 
+: 1209 3 0 from 
+: 1214 9 0 him
+- 1223
+: 1231 1 7 I 
+: 1234 1 7 could 
+: 1236 2 9 be 
+: 1241 1 2 such 
+: 1244 1 9 a 
+: 1247 1 2 gen
+: 1249 1 9 tle
+: 1251 11 2 man
+- 1262
+: 1277 2 2 Plus 
+: 1282 3 2 all 
+: 1288 4 2 my 
+: 1294 3 5 clothes 
+: 1299 4 2 would 
+: 1305 4 2 fit
+- 1309 1392
+- 1392
+: 1408 1 7 I 
+: 1411 1 9 could 
+: 1413 1 5 be 
+: 1415 1 7 a 
+: 1419 1 5 bet
+: 1421 1 2 ter 
+: 1423 1 7 boy
+: 1426 4 2 friend 
+: 1433 1 2 than 
+: 1438 8 0 him
+- 1446 1518
+- 1518
+: 1534 1 7 I 
+: 1536 1 7 could 
+: 1538 1 9 be 
+: 1540 1 7 a 
+: 1543 1 7 bet
+: 1545 1 7 ter 
+: 1548 3 7 boy
+: 1553 6 2 friend
+- 1559
+: 1566 17 7 I 
+: 1585 2 7 nev
+: 1589 1 9 er 
+: 1591 1 9 would 
+: 1593 3 7 have 
+: 1598 6 0 left 
+: 1606 14 0 you 
+: 1629 10 7 alone
+- 1639
+: 1647 2 0 Here 
+: 1651 3 2 on 
+: 1657 3 9 your 
+: 1662 7 0 own
+- 1669
+: 1677 5 11 Glued 
+: 1686 1 0 to 
+: 1689 4 9 your 
+: 1695 8 7 phone
+- 1703
+: 1711 2 7 Nev
+: 1715 1 7 er 
+: 1719 2 9 would 
+: 1723 1 0 have 
+: 1727 5 0 left 
+: 1733 15 0 you 
+: 1755 11 9 alone
+- 1766
+: 1772 1 4 For 
+: 1775 2 2 someone 
+: 1780 1 2 else 
+: 1783 1 2 to 
+: 1786 1 2 take 
+: 1789 1 2 you 
+: 1791 1 4 home
+- 1792 1807
+- 1807
+: 1823 1 7 I 
+: 1825 1 5 could 
+: 1828 1 7 be 
+: 1831 1 7 a 
+: 1834 1 7 bet
+: 1836 1 7 ter 
+: 1838 3 5 boy
+: 1844 2 2 friend 
+: 1849 3 2 than 
+: 1854 9 2 him
+- 1863
+: 1871 1 5 I 
+: 1874 1 7 could 
+: 1876 1 7 do 
+: 1879 1 5 the 
+: 1882 1 11 shit 
+: 1884 1 4 that 
+: 1886 1 7 he 
+: 1889 2 4 nev
+: 1893 3 2 er 
+: 1902 8 0 did
+- 1910
+: 1919 2 2 Up 
+: 1923 3 4 all 
+: 1929 3 2 night, 
+: 1934 3 2 I 
+: 1939 2 4 won’t 
+: 1944 4 2 quit
+- 1948
+: 1955 2 4 I’m 
+: 1960 4 7 gonna 
+: 1967 3 7 steal 
+: 1972 3 2 you 
+: 1977 3 0 from 
+: 1982 9 0 him
+- 1991
+: 1999 1 4 I 
+: 2001 1 9 could 
+: 2004 2 11 be 
+: 2009 1 9 such 
+: 2013 1 11 a 
+: 2015 1 9 gen
+: 2019 1 9 tle
+: 2021 10 2 man
+- 2031
+: 2047 3 2 Plus 
+: 2052 3 0 you 
+: 2057 1 2 know 
+: 2060 1 2 my 
+: 2065 1 7 clothes 
+: 2068 1 2 would 
+: 2073 4 2 fit
+- 2077
+: 2082 1 9 I 
+: 2084 1 9 could 
+: 2086 1 7 be 
+: 2088 1 7 a 
+: 2091 1 7 bet
+: 2093 2 7 ter 
+: 2098 1 9 boy
+: 2102 1 2 friend 
+: 2105 1 2 than 
+: 2109 9 0 him
+- 2118
+: 2127 1 7 I 
+: 2130 1 7 could 
+: 2132 1 7 do 
+: 2135 1 9 the 
+: 2139 1 5 shit 
+: 2142 1 9 that 
+: 2145 1 5 he 
+: 2148 3 2 nev
+: 2153 3 0 er 
+: 2159 6 0 did
+- 2165
+: 2173 4 2 Up 
+: 2179 3 4 all 
+: 2184 4 2 night, 
+: 2190 3 2 I 
+: 2195 2 4 won’t 
+: 2200 3 2 quit
+- 2203
+: 2206 1 7 Think
+: 2210 1 5 ing 
+: 2213 1 7 I’m 
+: 2218 1 7 gonna 
+: 2222 1 7 steal 
+: 2225 1 4 you 
+: 2229 3 2 from 
+: 2235 9 0 him
+- 2244
+: 2255 1 2 I 
+: 2258 1 7 could 
+: 2261 1 9 be 
+: 2265 1 2 such 
+: 2268 1 7 a 
+: 2272 1 11 gen
+: 2274 1 9 tle
+: 2277 8 2 man
+- 2285
+: 2300 3 2 Plus 
+: 2305 2 2 all 
+: 2311 3 2 my 
+: 2317 4 4 clothes 
+: 2323 3 2 would 
+: 2328 3 2 fit
+E

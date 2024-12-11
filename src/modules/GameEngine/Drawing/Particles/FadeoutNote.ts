@@ -2,7 +2,7 @@ import { Note } from 'interfaces';
 import drawNote from '../Elements/note';
 import Particle from '../interfaces';
 
-const initialTtl = 300;
+const initialTtl = 400;
 
 export default class FadeoutNote implements Particle {
   public finished = false;

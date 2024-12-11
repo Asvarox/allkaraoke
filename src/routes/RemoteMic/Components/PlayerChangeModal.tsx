@@ -17,7 +17,7 @@ interface Props {
 
 const colorNames: Record<backgroundTheme, string[]> = {
   regular: ['Blue', 'Red', 'Green', 'Yellow'],
-  christmas: ['Green', 'Red', '?????', '?????'],
+  christmas: ['Green', 'Red', 'Blue', 'Gold'],
   eurovision: ['Blue', 'Violet', 'Yellow', 'Pink'],
   halloween: ['Orange', 'Violet', 'Red', 'Green'],
 };
