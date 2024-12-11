@@ -1,0 +1,427 @@
+#ARTIST:Stromae, Pomme
+#TITLE:Ma Meilleure Ennemie
+#CREATOR:Raygin
+#BPM:352
+#YEAR:2024
+#PREVIEWSTART:35
+#VIDEO:v=1F3OGIFnW1k
+#GENRE:Ballad
+#LANGUAGE:French
+#GAP:71,7045454545455
+#ALLKARAOKE_ID:stromae-pomme-ma-meilleure-ennemie
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:20.017Z
+#ALLKARAOKE_REALBPM:88
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29692
+#ALLKARAOKE_PREVIEWEND:66
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Stromae, Pomme - Ma Meilleure Ennemie.mp3
+#COVER:Stromae, Pomme - Ma Meilleure Ennemie [CO].jpg
+#BACKGROUND:Stromae, Pomme - Ma Meilleure Ennemie [BG].jpg
+F 7 6 11 Je 
+F 15 6 16 t'aime, 
+F 23 2 16 je 
+F 27 2 16 te 
+F 31 4 16 quitte, 
+F 39 2 11 je 
+F 43 6 16 t'aime, 
+F 55 2 16 je 
+F 59 2 16 te 
+F 63 4 16 quitte
+- 67
+F 71 6 9 Je 
+F 79 6 14 t'aime, 
+F 87 2 14 je 
+F 91 2 14 te 
+F 95 4 14 quitte, 
+F 103 2 9 je 
+F 107 6 14 t'aime, 
+F 119 2 14 je 
+F 123 2 14 te 
+F 127 4 14 quitte
+- 131
+F 135 6 4 Je 
+F 143 6 12 t'aime, 
+F 151 2 12 je 
+F 155 2 12 te 
+F 159 4 12 quitte, 
+F 167 2 4 je 
+F 171 6 12 t'aime, 
+F 183 2 12 je 
+F 187 2 12 te 
+F 191 4 12 quitte
+- 195
+F 199 6 4 Je 
+F 207 6 12 t'aime, 
+F 215 2 12 je 
+F 219 2 12 te 
+F 223 4 12 quitte
+- 227 232
+- 232
+R 255 2 4 T'es 
+R 259 2 4 la 
+R 263 2 4 mei 
+R 267 3 5 llеu
+R 271 6 4 re 
+R 279 6 4 chose 
+R 287 2 4 qui 
+R 291 2 4 m'est 
+R 295 2 4 ar
+R 299 2 2 ri
+R 303 4 -1 véе
+- 307
+R 319 2 4 Mais 
+R 323 2 2 aus
+R 327 2 4 si 
+R 331 2 2 la 
+R 335 6 4 pire 
+R 343 6 2 chose 
+R 351 2 2 qui 
+R 355 2 2 m'est 
+R 359 2 2 ar
+R 363 2 -1 ri
+R 367 4 -1 vée
+- 371
+R 379 2 1 Ce 
+R 383 6 3 jour-où 
+R 391 2 3 je 
+R 395 2 3 t'ai 
+R 399 6 3 ren
+R 407 6 3 con
+R 415 6 5 trée, 
+R 423 2 3 j'au
+R 427 2 3 rais 
+R 431 2 3 peutê
+R 435 2 3 tre 
+R 439 2 3 pré
+R 443 2 0 fé
+R 447 2 0 ré
+- 449
+R 455 2 3 Que 
+R 459 2 3 ce 
+R 463 6 3 jour 
+R 471 2 3 ne 
+R 475 2 4 soit 
+R 479 2 4 ja
+R 483 2 3 mais 
+R 487 2 3 ar
+R 491 2 1 ri
+R 495 4 0 vé
+- 499 500
+- 500
+R 523 2 3 La 
+R 527 2 5 pire 
+R 531 2 3 des 
+R 535 2 3 bé
+R 539 2 3 né
+R 543 2 3 dic
+R 551 4 0 tions
+- 555
+R 567 2 3 La 
+R 571 2 4 plus 
+R 575 2 4 belle 
+R 579 2 3 des 
+R 583 2 2 ma
+R 587 2 1 lé
+R 591 2 0 dic
+R 599 4 0 tions
+- 603
+R 615 2 1 De 
+R 619 2 3 toi, 
+R 623 2 1 j'de
+R 627 2 3 vrais 
+R 631 2 3 m'é
+R 635 2 3 loig
+R 639 4 3 ner
+- 643
+R 651 2 2 Mais 
+R 655 4 3 comme 
+R 663 2 2 dit 
+R 667 2 2 le 
+R 671 2 2 dic
+R 679 2 3 ton :
+- 681
+R 695 2 3 "Plu
+R 699 2 4 tôt 
+R 703 2 4 qu'être 
+R 711 4 6 seul, 
+R 719 2 3 mieux 
+R 723 2 3 vaut 
+R 727 2 3 ê
+R 731 2 3 tre 
+R 735 2 4 mal 
+R 739 2 4 ac
+R 743 2 4 com
+R 747 2 2 pag
+R 751 2 0 né"
+- 753
+: 763 2 9 Tu 
+: 767 2 11 sais 
+: 775 4 11 c'qu'on 
+* 783 10 14 dit
+* 795 2 12 ~
+* 799 10 11 ~
+* 811 2 9 ~
+* 815 12 7 ~
+- 827 828
+- 828
+R 851 2 2 Sois 
+R 855 2 3 près 
+R 859 2 3 d'tes 
+R 863 2 3 a
+R 867 2 3 mis 
+R 871 2 3 les 
+R 875 2 2 plus 
+R 879 4 0 chers
+- 883
+* 895 4 4 Mais 
+* 903 4 11 aus
+* 911 10 9 si
+* 923 2 7 ~
+* 927 10 9 ~
+* 939 2 11 ~
+* 943 10 9 ~
+- 953
+: 967 2 9 En
+: 971 4 11 core 
+: 979 2 11 plus 
+: 983 2 11 près 
+: 987 2 11 d'tes 
+: 991 2 11 a
+: 995 2 9 d
+: 999 6 11 ver
+: 1007 6 14 saires
+- 1013
+: 1015 2 11 Mais 
+: 1019 2 11 ma 
+: 1023 2 14 mei
+: 1027 2 11 lleure 
+: 1031 6 14 enne
+: 1039 4 14 mie
+: 1043 6 16 ~, 
+: 1051 2 14 c'est 
+: 1055 12 11 toi
+- 1067
+: 1087 10 16 Fuis
+: 1099 4 14 moi
+: 1103 12 9 ~, 
+: 1131 2 14 le 
+: 1135 10 16 pire, 
+: 1147 2 14 c'est 
+: 1151 10 9 toi 
+: 1163 2 7 et 
+: 1167 12 4 moi
+- 1179 1248
+- 1248
+: 1271 4 11 Mais-si 
+: 1279 2 14 tu 
+: 1283 2 11 cherches 
+: 1287 4 14 en
+: 1295 10 16 core 
+: 1307 2 19 ma 
+: 1311 8 16 voix
+: 1321 6 14 ~
+- 1327
+: 1343 6 16 Ou
+: 1351 6 14 blie
+: 1359 16 9 moi, 
+: 1387 2 14 le 
+: 1391 10 16 pire, 
+: 1403 2 14 c'est 
+: 1407 10 9 toi 
+: 1419 2 7 et 
+: 1423 16 9 moi
+- 1439 1528
+- 1528
+: 1551 6 21 Pour
+: 1561 4 23 quoi 
+: 1567 6 23 ton 
+: 1577 4 23 pré
+: 1583 6 23 nom 
+: 1597 4 16 me 
+: 1605 6 18 blesse
+- 1611 1634
+- 1634
+: 1657 4 24 Quand 
+: 1663 4 23 il
+: 1669 4 21 ~ 
+: 1675 4 19 se 
+: 1681 14 18 cache 
+: 1711 14 26 jus
+: 1727 14 24 te 
+: 1743 14 23 là 
+: 1759 14 18 dans 
+: 1775 14 19 l'es
+: 1791 8 23 pace ?
+- 1799
+: 1807 8 21 C'est 
+: 1819 2 23 quelle 
+: 1823 6 23 é
+: 1831 6 23 mo
+: 1839 8 23 tion, 
+* 1855 6 16 la 
+* 1863 16 18 haine
+- 1879 1890
+- 1890
+: 1913 4 24 Ou 
+: 1919 4 23 la 
+: 1925 6 19 dou
+: 1935 12 18 ceur, 
+: 1967 14 26 quand 
+: 1983 14 24 j'en
+: 1999 14 23 tends 
+: 2015 14 18 ton 
+: 2031 14 19 pré
+: 2047 8 23 nom ?
+- 2055
+: 2063 2 18 Je 
+: 2071 4 18 t'a
+: 2079 4 18 vais 
+: 2087 8 16 dit : 
+: 2107 2 11 "Ne 
+: 2111 2 11 re
+: 2115 4 11 garde 
+: 2127 4 18 pas 
+: 2135 4 18 en 
+: 2143 4 18 ar
+: 2151 8 16 rière"
+- 2159
+: 2175 2 11 Le 
+: 2179 10 11 pas
+: 2191 6 12 sé 
+: 2199 6 11 qui 
+: 2207 6 9 te 
+: 2215 16 11 suit 
+: 2255 8 12 te 
+: 2265 4 11 fait 
+: 2271 12 9 la 
+: 2285 6 11 guerre
+- 2291
+: 2295 2 11 Mais 
+: 2299 2 11 ma 
+: 2303 2 14 mei
+: 2307 2 11 lleure 
+: 2311 6 14 enne
+: 2319 4 14 mie
+: 2323 6 16 ~, 
+: 2331 2 14 c'est 
+: 2335 12 11 toi
+- 2347
+: 2367 10 16 Fuis
+: 2379 4 14 moi
+: 2383 12 9 ~, 
+: 2411 2 14 le 
+: 2415 10 16 pire, 
+: 2427 2 14 c'est 
+: 2431 10 9 toi 
+: 2443 2 7 et 
+: 2447 12 4 moi
+- 2459 2528
+- 2528
+: 2551 2 11 Mais 
+: 2555 2 11 ma 
+: 2559 2 14 mei
+: 2563 2 11 lleure 
+: 2567 4 14 enne
+: 2575 10 16 mie, 
+: 2587 2 19 c'est 
+: 2591 16 16 toi
+- 2607
+: 2623 10 16 Fuis
+: 2635 4 14 moi
+: 2639 12 9 ~, 
+: 2667 2 14 le 
+: 2671 10 16 pire, 
+: 2683 2 14 c'est 
+: 2687 10 9 toi 
+: 2699 2 7 et 
+: 2703 16 9 moi
+- 2719 2800
+- 2800
+F 2823 6 11 Je 
+F 2831 6 16 t'aime, 
+F 2839 2 16 je 
+F 2843 2 16 te 
+F 2847 4 16 quitte, 
+F 2855 2 11 je 
+F 2859 6 16 t'aime, 
+F 2871 2 16 je 
+F 2875 2 16 te 
+F 2879 4 16 quitte
+- 2883
+F 2887 6 9 Je 
+F 2895 6 14 t'aime, 
+F 2903 2 14 je 
+F 2907 2 14 te 
+F 2911 4 14 quitte, 
+F 2919 2 9 je 
+F 2923 6 14 t'aime, 
+F 2935 2 14 je 
+F 2939 2 14 te 
+F 2943 4 14 quitte
+- 2947
+F 2951 6 4 Je 
+F 2959 6 12 t'aime, 
+F 2967 2 12 je 
+F 2971 2 12 te 
+F 2975 4 12 quitte, 
+F 2983 2 4 je 
+F 2987 6 12 t'aime, 
+F 2999 2 12 je 
+F 3003 2 12 te 
+F 3007 4 12 quitte
+- 3011
+F 3015 6 4 Je 
+F 3023 6 12 t'aime, 
+F 3031 2 12 je 
+F 3035 2 12 te 
+F 3039 4 12 quitte, 
+F 3047 2 4 je 
+F 3051 6 12 t'aime, 
+F 3063 2 12 je 
+F 3067 2 12 te 
+F 3071 4 12 quitte
+- 3075
+F 3079 6 11 Je 
+F 3087 6 16 t'aime, 
+F 3095 2 16 je 
+F 3099 2 16 te 
+F 3103 4 16 quitte, 
+F 3111 2 11 je 
+F 3115 6 16 t'aime, 
+F 3127 2 16 je 
+F 3131 2 16 te 
+F 3135 4 16 quitte
+- 3139
+F 3143 6 9 Je 
+F 3151 6 14 t'aime, 
+F 3159 2 14 je 
+F 3163 2 14 te 
+F 3167 4 14 quitte, 
+F 3175 2 9 je 
+F 3179 6 14 t'aime, 
+F 3191 2 14 je 
+F 3195 2 14 te 
+F 3199 4 14 quitte
+- 3203
+F 3207 6 4 Je 
+F 3215 6 12 t'aime, 
+F 3223 2 12 je 
+F 3227 2 12 te 
+F 3231 4 12 quitte, 
+F 3239 2 4 je 
+F 3243 6 12 t'aime, 
+F 3255 2 12 je 
+F 3259 2 12 te 
+F 3263 4 12 quitte
+- 3267
+F 3271 6 4 Je 
+F 3279 6 12 t'aime, 
+F 3287 2 12 je 
+F 3291 2 12 te 
+F 3295 4 12 quitte, 
+F 3303 2 4 je 
+F 3307 6 12 t'aime, 
+F 3319 2 12 je 
+F 3323 2 12 te
+F 3327 4 12 quitte
+E

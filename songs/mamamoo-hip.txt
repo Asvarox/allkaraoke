@@ -1,0 +1,637 @@
+#ARTIST:MAMAMOO
+#TITLE:HIP
+#CREATOR:LaMayas
+#BPM:300
+#YEAR:2019
+#VIDEO:v=CH27pelftXk
+#GENRE:Unknown
+#LANGUAGE:Korean, English
+#GAP:100
+#ALLKARAOKE_ID:mamamoo-hip
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:20.727Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://youtu.be/CH27pelftXk?si=ebaYQMKZrq90hlAK
+#ALLKARAOKE_VOLUME:0,75
+#MP3:MAMAMOO - HIP.mp3
+#COVER:MAMAMOO - HIP [CO].jpg
+#BACKGROUND:MAMAMOO - HIP [BG].jpg
+F 7 5 6 All 
+F 13 2 6 I 
+F 17 5 6 wan
+F 22 3 6 na 
+F 27 3 6 be 
+F 31 3 6 is 
+F 35 3 6 meot
+F 38 3 6 jim
+- 41
+F 44 3 6 Nae 
+F 48 3 6 maeum
+F 52 3 6 dae
+F 56 3 6 ro 
+F 61 4 6 gol
+F 65 3 6 la 
+F 71 3 6 kick 
+F 75 2 6 it
+- 77
+F 80 3 6 Meo
+F 83 3 6 ri 
+F 88 3 6 eok
+F 91 3 6 kae 
+F 96 4 6 mu
+F 100 3 6 reup 
+F 106 4 6 da 
+F 112 6 6 HIP 
+F 122 9 6 hae
+- 131
+: 147 4 3 Do 
+: 152 3 5 it 
+: 157 3 3 do 
+: 161 3 2 it 
+: 165 3 3 like 
+: 169 3 5 me 
+: 173 4 3 do 
+: 178 1 2 it
+- 179
+: 182 5 3 Na
+: 187 3 5 reul 
+: 192 3 3 tta
+: 196 3 2 ra 
+: 200 4 3 hae 
+F 208 4 6 kick 
+F 213 2 6 it
+- 215
+: 218 4 3 Clap
+: 222 3 5 ping 
+: 226 4 3 clap
+: 230 3 2 ping 
+: 235 4 3 mo
+: 239 3 5 du 
+: 244 3 3 ga
+: 247 3 2 chi 
+: 252 4 3 HIP
+- 256 535
+- 535
+: 555 6 3 I 
+: 564 4 3 love 
+: 569 4 3 you 
+: 577 5 3 ne
+: 582 5 5 ga 
+: 588 3 -2 mwo
+: 595 3 5 ra
+: 599 4 6 deun 
+: 604 3 6 ga
+: 607 3 -2 ne
+- 610
+: 626 6 3 Res
+: 633 4 3 pect 
+: 638 5 -2 you 
+: 647 4 3 ne
+: 651 5 5 ga 
+: 658 4 3 mwol 
+: 664 4 5 ha
+: 669 4 6 deun 
+: 674 3 5 ga
+: 677 3 3 ne
+- 680
+: 699 4 6 Neul 
+: 705 3 8 tak
+: 708 3 6 keun
+: 713 2 8 ttak
+: 715 3 6 keun
+: 719 4 8 hae 
+: 726 3 6 geu 
+: 731 2 8 gwan
+: 733 3 6 si
+: 736 2 6 mi 
+: 739 3 8 ttak
+: 742 3 6 keum
+: 746 3 8 ttak
+: 749 3 6 keum
+: 753 5 8 hae
+- 758
+: 764 3 3 Tto 
+: 769 4 3 hil
+: 773 6 3 kkeum 
+: 786 4 3 hil
+: 790 7 2 kkeum 
+: 803 4 3 hil
+: 808 6 3 kkeum
+- 814
+F 830 1 6 I
+F 831 2 6 jen 
+F 834 2 6 mo
+F 836 2 6 deun 
+F 839 1 6 i
+F 840 2 6 ri 
+F 843 3 6 ga
+F 846 3 6 ppun
+F 849 2 6 hae 
+F 852 2 6 ve
+F 854 2 6 te
+F 856 3 6 ran
+- 859
+F 863 4 6 Seong
+F 867 2 6 gong
+F 869 2 6 eul 
+F 872 2 6 sseo
+F 874 2 6 reo 
+F 877 2 6 meo
+F 879 2 6 geo 
+F 882 2 6 ma
+F 884 3 6 chi 
+F 888 1 6 mi
+F 889 2 6 che
+F 891 3 6 lin
+- 894
+F 897 2 6 Nu
+F 899 2 6 gu
+F 902 2 6 bo
+F 904 2 6 da 
+F 907 2 6 ppa
+F 909 3 6 reun 
+F 913 2 6 geo
+F 915 3 6 reu
+F 918 3 6 meul 
+F 922 2 6 geo
+F 924 3 6 reon
+F 927 3 6 ne 
+F 931 3 6 bi
+F 934 3 6 si
+F 937 3 6 jeun
+- 940
+F 943 2 6 I
+F 945 2 6 jeun 
+F 948 2 6 ji
+F 950 1 6 do 
+F 952 2 6 o
+F 954 2 6 rae
+F 956 4 6 ya 
+F 968 4 6 dwit
+F 972 4 6 georeum
+- 976
+: 982 3 3 All 
+: 986 3 5 I 
+: 991 4 3 wan
+: 995 3 2 na 
+: 999 3 3 be 
+: 1003 3 5 is 
+: 1007 4 3 meot
+: 1011 3 2 jim
+- 1014
+: 1017 3 3 Nae 
+: 1021 3 5 meot
+: 1025 4 3 dae
+: 1029 3 2 ro 
+: 1034 3 3 gol
+: 1037 2 5 la 
+F 1042 4 6 kick 
+F 1047 2 6 it
+- 1049
+: 1053 3 3 Meo
+: 1056 2 5 ri 
+: 1060 4 3 eok
+: 1064 3 2 kae 
+: 1069 4 3 mu
+: 1073 3 5 reup 
+: 1078 3 3 da 
+F 1086 4 6 HIP
+- 1090
+: 1108 4 3 Ppi
+: 1112 4 3 ppi
+: 1116 4 3 ppi 
+: 1123 4 10 nol
+: 1128 4 8 la
+: 1133 4 6 ni 
+: 1138 5 8 dwae 
+* 1144 3 6 my 
+* 1148 5 10 fa
+* 1156 9 3 shion
+- 1165
+: 1181 3 3 Byeol
+: 1184 3 3 lo 
+: 1189 6 10 singyeong 
+: 1199 3 8 an 
+: 1203 4 6 sseo 
+: 1208 4 8 geu
+: 1212 3 6 jeo 
+* 1218 5 10 ac
+* 1224 9 3 tion
+- 1233
+: 1251 4 3 Ja
+: 1255 4 3 kku 
+: 1260 5 15 click 
+: 1269 5 10 me 
+: 1277 5 13 click 
+: 1286 5 8 me
+- 1291
+: 1295 4 8 Ho
+: 1299 4 6 llin 
+: 1304 3 8 deu
+: 1307 4 6 si 
+: 1312 6 10 zoom
+- 1318
+: 1328 10 3 Close 
+: 1339 4 3 up 
+: 1346 10 6 close 
+: 1358 4 3 up 
+* 1364 10 10 close 
+* 1375 4 3 up
+- 1379
+: 1382 6 8 HIP 
+: 1391 5 10 hae 
+: 1401 5 3 HIP 
+: 1416 8 2 HIP
+- 1424
+: 1432 4 10 Meo
+: 1436 4 3 ri 
+: 1443 3 10 eo
+: 1446 3 3 kkae 
+: 1451 3 10 mu
+: 1454 3 3 reup 
+F 1460 5 6 HIP
+- 1465
+: 1470 6 4 HIP 
+: 1485 8 2 HIP 
+F 1506 4 3 HIP 
+F 1511 4 3 HIP 
+F 1516 4 3 HIP 
+F 1521 4 3 HIP 
+: 1528 6 3 hae 
+: 1538 6 3 HIP 
+: 1555 8 2 HIP
+- 1563
+: 1571 4 10 Meo
+: 1575 4 3 ri 
+: 1580 3 10 eo
+: 1583 4 3 kkae 
+: 1590 3 10 mu
+: 1593 4 3 reup 
+F 1599 7 6 HIP
+- 1606
+F 1611 4 6 HIP 
+F 1616 4 6 HIP 
+F 1621 4 6 HIP 
+F 1626 4 6 HIP 
+F 1633 6 6 hae 
+F 1641 6 6 HIP
+- 1647 1649
+- 1649
+F 1669 5 6 (A
+F 1678 4 6 tten
+F 1682 4 6 tion) 
+: 1689 3 3 eo
+: 1692 3 -2 dil 
+: 1696 4 -4 ga
+: 1704 6 -6 deun 
+: 1713 7 -9 neon
+- 1720
+F 1739 5 6 (Re
+F 1745 5 6 flec
+F 1751 4 6 tion) 
+: 1757 3 3 bi
+: 1761 3 -2 nnal 
+: 1765 5 -4 su 
+: 1774 4 -6 i
+: 1780 10 -2 sseo
+- 1790 1796
+- 1796
+: 1816 7 6 Se
+: 1825 7 3 san
+: 1834 6 1 ge 
+: 1843 7 3 neon 
+: 1853 4 1 ha
+: 1857 3 -2 na
+: 1860 5 1 ppu
+: 1865 4 -2 nin 
+: 1870 7 3 geol
+- 1877
+: 1884 4 -4 Geun
+: 1888 3 -6 de 
+: 1892 3 -4 waei
+: 1895 4 -4 rae 
+: 1900 3 -4 ne 
+: 1904 4 -4 eol
+: 1908 2 -6 gu
+: 1910 3 -6 re 
+: 1914 4 -4 chim 
+: 1919 3 -6 bae
+: 1923 4 -9 nni 
+F 1930 5 6 (kak
+F 1938 5 6 tu)
+- 1943
+F 1951 3 6 Nal 
+F 1955 3 6 ja
+F 1958 3 6 geu
+F 1961 3 6 kan 
+F 1965 2 6 yeo
+F 1967 2 6 reo
+F 1969 3 6 bun 
+F 1974 2 6 gam
+F 1976 4 6 sa
+- 1980
+F 1985 3 6 Geo
+F 1988 2 6 gi
+F 1990 4 6 seo 
+F 1995 2 6 meom
+F 1997 2 6 chun 
+F 2000 3 6 jji
+F 2003 2 6 ji
+F 2005 2 6 ri 
+F 2009 3 6 ban
+F 2012 4 6 sa
+- 2016
+F 2019 3 6 Deok
+F 2022 3 6 bu
+F 2025 4 6 ne 
+F 2030 3 6 naui 
+F 2034 3 6 men
+F 2037 2 6 ta
+F 2039 3 6 reun 
+F 2043 3 6 dan
+F 2046 5 6 dan
+F 2051 3 6 hae
+- 2054
+F 2057 3 6 Nan 
+F 2061 3 6 daeum 
+F 2065 2 6 ael
+F 2067 2 6 beom 
+F 2070 3 6 man
+F 2073 3 6 deul
+F 2076 2 6 leo 
+F 2079 3 6 gal
+F 2082 4 6 ge
+- 2086
+: 2094 4 3 All 
+: 2099 3 5 you 
+: 2104 4 3 wan
+: 2108 3 2 na 
+: 2113 3 3 be 
+: 2117 3 5 is 
+: 2121 4 3 tren
+: 2125 3 2 dy
+- 2128
+: 2131 2 3 Eo
+: 2133 4 5 geuro 
+: 2138 5 2 kkeul
+: 2143 4 3 gi 
+: 2148 3 5 gi
+: 2151 4 5 mmick 
+F 2156 3 6 ttae
+F 2159 1 6 jji!
+- 2160
+: 2164 4 3 Geu
+: 2168 4 5 reon 
+: 2175 3 3 ae
+: 2178 4 2 deul 
+: 2183 3 3 kki
+: 2186 4 5 ri
+: 2191 4 3 kki
+: 2195 3 2 ri 
+F 2200 5 6 HIP
+- 2205
+: 2220 4 3 Ppi
+: 2224 5 3 ppi
+: 2229 4 3 ppi 
+: 2236 4 10 no
+: 2240 6 8 lla
+: 2246 4 6 ni 
+: 2251 4 8 dwae 
+: 2256 4 6 my 
+* 2261 6 10 fa
+* 2267 8 3 shion
+- 2275
+: 2291 6 3 Byeo
+: 2297 4 3 llo 
+: 2302 10 10 singyeong 
+: 2313 3 8 an 
+: 2317 4 6 sseo 
+: 2322 4 8 geu
+: 2326 4 6 jeo 
+* 2331 6 10 ac
+* 2337 10 3 tion
+- 2347
+: 2363 6 3 Ja
+: 2369 5 3 kku 
+: 2375 6 15 click 
+: 2382 6 10 me 
+: 2391 8 13 click 
+: 2400 4 8 me
+- 2404
+: 2407 5 8 Ho
+: 2412 6 6 llin 
+: 2419 2 8 deu
+: 2421 4 6 si 
+: 2426 10 10 zoom
+- 2436
+* 2439 12 3 Close 
+* 2452 7 3 up 
+* 2460 11 6 close 
+* 2472 6 3 up 
+* 2479 8 10 close 
+* 2488 4 3 up
+- 2492
+: 2495 8 8 HIP 
+: 2504 9 10 hae 
+: 2514 13 3 HIP 
+: 2528 13 2 HIP
+- 2541
+: 2544 5 10 Meo
+: 2549 6 3 ri 
+: 2556 2 10 eo
+: 2558 5 3 kkae 
+: 2564 3 10 mu
+: 2567 5 3 reup 
+F 2573 10 6 HIP
+- 2583
+: 2586 10 3 HIP 
+: 2597 10 2 HIP 
+F 2617 6 3 HIP 
+F 2624 6 3 HIP 
+F 2631 4 3 HIP 
+F 2636 6 3 HIP 
+: 2643 7 3 hae 
+: 2651 9 3 HIP 
+: 2662 12 2 HIP
+- 2674
+: 2683 5 10 Meo
+: 2688 6 3 ri 
+: 2695 2 10 eo
+: 2697 6 3 kkae 
+: 2704 3 10 mu
+: 2707 4 3 reup 
+: 2712 10 6 HIP
+- 2722
+F 2725 4 6 HIP 
+F 2730 4 6 HIP 
+F 2735 4 6 HIP 
+F 2740 6 6 HIP 
+: 2747 8 6 hae 
+F 2756 6 6 HIP
+- 2762
+: 2781 4 3 Ko 
+: 2786 2 3 mu
+: 2788 2 3 deun 
+: 2791 3 3 ti
+- 2794
+: 2797 4 3 Ppi
+: 2801 3 3 jyeo
+: 2804 3 3 naon 
+: 2808 3 3 ip
+- 2811
+: 2814 6 3 Tteok
+: 2820 5 3 jin 
+: 2826 2 5 meo
+: 2828 3 -2 ri
+- 2831
+: 2834 3 3 Nan 
+: 2838 3 3 san
+: 2841 2 3 ggwan
+: 2843 3 5 eop
+: 2846 1 -2 ji
+- 2847
+: 2850 4 3 Ko 
+: 2855 3 3 mu
+: 2858 2 3 deun 
+: 2861 3 5 ti
+- 2864
+: 2867 4 3 Ppi
+: 2871 2 3 jyeo
+: 2874 4 3 naon 
+: 2879 3 5 ip
+- 2882
+: 2886 5 3 Tteok
+: 2891 4 3 jin 
+: 2896 2 5 meo
+: 2898 1 -2 ri
+- 2899
+: 2902 3 3 Nae
+: 2905 2 3 ga 
+: 2908 2 3 ha
+: 2910 2 3 myeon 
+: 2913 3 3 HIP
+- 2916
+: 2919 5 3 Ko 
+: 2925 2 3 mu
+: 2927 2 3 deun 
+: 2930 3 6 ti
+- 2933
+: 2936 5 6 Ppi
+: 2941 4 3 jyeo
+: 2945 3 3 naon 
+: 2949 3 3 paen
+: 2952 2 3 ti
+- 2954
+: 2957 3 3 Tteok
+: 2960 4 3 jin 
+: 2965 3 5 meo
+: 2968 2 -2 ri
+- 2970
+: 2973 3 3 Nan 
+: 2977 3 3 san
+: 2980 3 3 ggwan
+: 2983 4 3 eop
+: 2987 2 -2 ji
+- 2989
+: 2992 2 1 Ko 
+: 2995 2 1 mu
+: 2997 2 1 deun 
+: 3000 2 3 ti
+- 3002
+: 3005 5 3 Ppi
+: 3010 3 3 jyeo
+: 3014 3 3 naon 
+: 3018 4 3 paen
+: 3022 2 -2 ti
+- 3024
+: 3027 4 3 Tteok
+: 3031 3 -2 jin 
+: 3035 3 3 meo
+: 3038 1 -2 ri
+- 3039
+: 3042 4 10 Nae
+: 3046 2 10 ga 
+: 3049 2 10 ha
+: 3051 2 10 myeon 
+: 3054 5 15 HIP
+- 3059 3311
+- 3311
+: 3331 6 3 Ppi
+: 3337 5 3 ppi
+: 3342 4 3 ppi 
+: 3347 6 10 no
+: 3353 6 8 lla
+: 3359 5 6 ni 
+: 3365 4 8 dwae 
+: 3370 3 6 my 
+: 3374 6 10 fa
+: 3380 10 3 shion
+- 3390
+: 3406 5 3 Byeo
+: 3411 4 3 llo 
+: 3416 8 10 singyeong 
+: 3425 3 8 an 
+: 3429 5 6 sseo 
+: 3435 3 8 geu
+: 3438 4 6 jeo 
+: 3443 6 10 ac
+: 3449 8 3 tion
+- 3457
+: 3474 7 3 Ja
+: 3481 4 3 kku 
+: 3486 5 15 click 
+: 3492 7 10 me 
+: 3501 10 13 click 
+: 3512 6 8 me
+- 3518
+: 3521 5 8 Ho
+: 3526 4 6 llin 
+: 3531 2 8 deu
+: 3533 4 6 si 
+: 3538 11 10 zoom
+- 3549
+: 3553 11 3 Close 
+: 3565 5 3 up 
+: 3571 10 6 close 
+: 3582 8 3 up 
+: 3591 8 10 close 
+: 3600 6 3 up
+- 3606
+: 3609 6 8 HIP 
+: 3616 7 10 hae 
+: 3624 11 3 HIP 
+: 3640 13 2 HIP
+- 3653
+: 3657 5 10 Meo
+: 3662 6 3 ri 
+: 3669 2 10 eo
+: 3671 4 3 kkae 
+: 3676 3 10 mu
+: 3679 5 3 reup 
+: 3685 8 6 HIP
+- 3693
+: 3696 10 3 HIP 
+: 3710 11 2 HIP 
+F 3731 6 6 HIP 
+F 3738 5 6 HIP 
+F 3744 4 6 HIP 
+F 3749 5 6 HIP 
+: 3755 10 3 hae 
+: 3766 8 3 HIP 
+: 3778 13 2 HIP
+- 3791
+: 3798 3 10 Meo
+: 3801 4 3 ri 
+: 3807 3 10 eo
+: 3810 4 3 kkae 
+: 3815 4 10 mu
+: 3819 5 3 reup 
+: 3825 8 6 HIP
+- 3833
+F 3836 5 6 HIP 
+F 3842 4 6 HIP 
+F 3847 4 6 HIP 
+F 3852 5 6 HIP 
+: 3858 10 2 hae 
+F 3869 5 2 HIP
+E

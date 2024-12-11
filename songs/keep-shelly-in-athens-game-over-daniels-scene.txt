@@ -1,0 +1,209 @@
+#ARTIST:Keep Shelly in Athens
+#TITLE:Game Over (Daniel's Scene)
+#CREATOR:Crowbardoctor
+#BPM:376,829986572266
+#YEAR:2018
+#VIDEO:v=6O-78IZSdq4
+#GENRE:Electronic
+#LANGUAGE:English
+#GAP:64122,856265789545
+#EDITION:Studio Session
+#ALLKARAOKE_ID:keep-shelly-in-athens-game-over-daniels-scene
+#ALLKARAOKE_LASTUPDATE:2024-12-11T00:12:20.016Z
+#ALLKARAOKE_ARTISTORIGIN:GR
+#ALLKARAOKE_CREATORURL:https://sites.google.com/view/nils-ax/language
+#ALLKARAOKE_REALBPM:79
+#ALLKARAOKE_VOLUME:0,8
+#P1:track 1
+#VERSION:1.0.0
+#MP3:Keep Shelly in Athens - Game Over (Daniel's Scene) [Karaoke].mp3
+#VOCALS:vocals.ogg
+#INSTRUMENTAL:instrumental.ogg
+#COVER:Keep Shelly in Athens - Game Over (Daniel's Scene) [CO].jpg
+#MEDLEYSTARTBEAT:3536
+#MEDLEYENDBEAT:4127
+: 25 11 2 Heard 
+: 38 5 0 a 
+: 44 29 2 woman
+- 73 74
+- 74
+: 99 6 2 in 
+: 109 8 0 my 
+: 118 19 2 mind
+- 137 141
+- 141
+: 166 7 -3 You 
+: 175 8 -3 lose 
+: 184 4 0 your 
+: 189 20 -3 keep
+- 209 213
+- 213
+: 238 46 -3 Yeah-äh-äh
+- 284 293
+- 293
+: 318 21 2 Withered 
+: 341 39 2 spirits
+- 380
+: 393 19 2 Cannot 
+: 415 20 2 fly
+- 435 443
+- 443
+: 468 9 8 Above 
+: 482 6 -1 the 
+: 489 28 -2 wi-ind
+- 517 592
+- 592
+: 617 12 2 tell 
+: 631 6 2 them 
+: 639 30 2 worry
+- 669 671
+- 671
+: 696 6 2 Bout' 
+: 705 7 2 the 
+: 714 34 2 words
+- 748
+: 763 10 -3 That 
+: 775 8 -3 won't 
+: 785 30 -4 heal
+- 815
+: 834 10 3 Oh 
+: 847 23 0 yeahh
+- 870 893
+- 893
+: 918 8 2 Hold 
+: 928 6 3 the 
+: 936 35 2 greater
+- 971
+: 983 15 7 Your 
+: 999 14 7 o
+: 1017 7 0 nly, 
+: 1025 33 -2 lie
+- 1058
+: 1063 12 7 More 
+: 1076 12 7 than 
+: 1089 85 9 fa~ir
+- 1174 1786
+- 1786
+: 1811 8 2 I'm 
+: 1821 4 1 a 
+: 1830 30 2 moron
+- 1860
+: 1885 15 2 I'm 
+: 1903 21 2 alone
+- 1924 1934
+- 1934
+: 1959 4 -3 In 
+: 1966 8 -3 this 
+: 1977 17 -4 strife
+- 1994 2001
+- 2001
+: 2026 5 3 Oh 
+: 2034 17 0 yeahh
+- 2051 2085
+- 2085
+: 2110 15 2 Holy 
+: 2127 27 3 creature
+: 2162 5 2 s
+- 2167
+: 2174 11 7 We 
+: 2188 19 7 come, 
+: 2212 8 0 to 
+: 2223 26 -3 life
+- 2249
+: 2258 7 7 Come 
+: 2267 4 7 to 
+: 2272 98 9 li~fe
+- 2370 3537
+- 3537
+: 3562 19 2 Until 
+: 3599 5 0 my 
+: 3608 22 -3 heart
+- 3630
+: 3637 28 2 Un-tell, 
+: 3673 35 0 my hearth
+- 3708
+: 3711 27 3 Un-tell 
+: 3748 6 -1 my 
+: 3757 22 -2 hearth
+- 3779
+: 3786 23 2 Un-tell, 
+: 3823 14 0 my 
+: 3840 15 2 hearth
+- 3855
+: 3859 25 2 Un-tell, 
+: 3897 5 0 my 
+: 3906 23 -3 hearth
+- 3929
+: 3935 26 2 Un-tell, 
+: 3971 12 0 my 
+: 3988 17 2 hearth
+- 4005
+: 4007 8 2 Un-
+: 4016 17 2 tell, 
+: 4044 6 0 my 
+: 4054 22 -3 hearth
+- 4076
+: 4082 29 2 Un-tell, 
+: 4118 12 0 my 
+: 4137 16 2 hearth
+- 4153
+: 4157 10 2 Un
+: 4167 24 2 der, 
+: 4193 6 0 my 
+: 4203 24 -3 hearth
+- 4227
+: 4231 35 2 Under, 
+: 4269 14 0 my 
+: 4286 18 2 hearth
+- 4304
+: 4306 33 2 Under, 
+: 4343 6 0 my 
+: 4353 22 -3 hearth
+- 4375
+: 4381 25 2 Under, 
+: 4409 9 0 my 
+: 4435 14 3 hearth
+- 4449
+: 4454 8 19 Can 
+: 4464 4 19 you 
+: 4469 6 19 wreck, 
+: 4482 24 12 me?
+- 4506
+: 4529 12 19 Holding 
+: 4543 10 21 steady 
+: 4557 21 19 now
+- 4578 4579
+- 4579
+: 4604 5 7 Turn 
+: 4613 2 7 me 
+: 4618 3 7 red
+- 4621
+: 4631 13 0 from 
+: 4645 12 -1 my 
+: 4660 37 0 hea~rth
+- 4697
+: 4705 13 2 Game 
+: 4719 18 0 Over
+- 4737
+: 4753 6 7 Time 
+: 4761 6 7 is 
+: 4769 8 0 ready 
+: 4780 32 0 now
+- 4812
+: 4828 4 7 Turn 
+: 4842 2 19 me 
+: 4845 3 21 red 
+: 4856 3 20 from 
+: 4865 26 0 my
+- 4891
+: 4902 10 7 Time 
+: 4914 2 7 is 
+: 4917 7 7 ready, 
+: 4935 26 0 now
+- 4961
+: 4976 6 7 Turn 
+: 4985 4 16 me 
+: 4991 13 8 into
+- 5004
+: 5014 9 0 stone
+E
