@@ -103,11 +103,6 @@ export default function SongPreviewComponent({
 
   const expanded = keyboardControl;
 
-  // need to use layout effect otherwise newly selected song name is displayed briefly before the element is removed
-  useLayoutEffect(() => {
-    setShowVideo(false);
-  }, [songPreview.video]);
-
   const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
   const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
   const undebounced = useMemo(
@@ -116,12 +111,19 @@ export default function SongPreviewComponent({
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 
+  // need to use layout effect otherwise newly selected song name is displayed briefly before the element is removed
+  useLayoutEffect(() => {
+    // keep showing the video when the song quickly changes back to the same song
+    setShowVideo(songPreview.video === videoId && player.current?.getStatus() === VideoState.PLAYING);
+  }, [songPreview.video, videoId]);
+
   useEffect(() => {
     player.current?.loadVideoById({
       videoId: videoId,
       startSeconds: previewStart,
       endSeconds: previewEnd,
     });
+    player.current?.playVideo();
   }, [videoId, player, previewStart, previewEnd]);
 
   const videoWidth = expanded ? windowWidth : width;
@@ -131,7 +133,7 @@ export default function SongPreviewComponent({
 
   useEffect(() => {
     player.current?.setSize(videoWidth, videoHeight);
-  }, [videoWidth, videoHeight, keyboardControl]);
+  }, [videoWidth, videoHeight, keyboardControl, videoId]);
 
   const onVideoStateChange = useCallback(
     (state: VideoState) => {

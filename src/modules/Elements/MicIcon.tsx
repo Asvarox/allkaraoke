@@ -1,7 +1,11 @@
 import { SVGProps } from 'react';
 import { twc } from 'react-twc';
 
-export const MicIcon = ({ ...props }: SVGProps<SVGSVGElement>) => (
+interface Props extends SVGProps<SVGSVGElement> {
+  christmas?: boolean;
+}
+
+export const MicIcon = ({ christmas, ...props }: Props) => (
   <svg viewBox="0 0 512 512" fill="currentcolor" {...props}>
     <path
       stroke="black"
@@ -12,5 +16,9 @@ export const MicIcon = ({ ...props }: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const MicIconBlue = twc(MicIcon)`fill-text-player-0`;
-export const MicIconRed = twc(MicIcon)`fill-text-player-1`;
+export const MicIconBlue = twc(MicIcon)((props) => [
+  props.christmas ? `fill-text-player-0-christmas` : `fill-text-player-0`,
+]);
+export const MicIconRed = twc(MicIcon)((props) => [
+  props.christmas ? `fill-text-player-1-christmas` : `fill-text-player-1`,
+]);

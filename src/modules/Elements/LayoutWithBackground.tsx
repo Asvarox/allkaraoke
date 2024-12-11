@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import Snow from 'modules/Elements/Snow';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import React, { createContext, CSSProperties, useContext, useEffect, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
@@ -33,7 +34,8 @@ const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: 
     backgroundSize: '400% 400%',
   },
   christmas: {
-    backgroundImage: `linear-gradient(-45deg, ${colorSets.christmasGreen.text}, ${colorSets.christmasGreen.stroke}, ${colorSets.christmasRed.stroke}, ${colorSets.christmasRed.stroke})`,
+    backgroundImage: `linear-gradient(-45deg, ${colorSets.christmasGreen.text}, ${colorSets.christmasGreen.stroke}, #05144a, #05144a)`,
+    // backgroundImage: `linear-gradient(-45deg, #0f1d52, #0f1d52, #05144a, #05144a)`,
     backgroundSize: '400% 400%',
   },
   halloween: {
@@ -52,8 +54,9 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
         <Background
           data-theme={theme}
           data-graphic-level={graphicLevel}
-          style={themeStyles[theme] ?? themeStyles.default}
-        />
+          style={themeStyles[theme] ?? themeStyles.default}>
+          {theme === 'christmas' && <Snow />}
+        </Background>
       )}
       {children}
     </BackgroundContext.Provider>

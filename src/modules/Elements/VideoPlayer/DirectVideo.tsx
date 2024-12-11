@@ -51,6 +51,7 @@ export default forwardRef(function DirectVideoPlayer(
   const loadVideoTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const playerApi = useMemo<VideoPlayerRef>(
     () => ({
+      getStatus: () => status,
       setSize: (w, h) => setSize({ w, h }),
       seekTo: (time: number) => {
         player.current && (player.current.currentTime = time);
