@@ -8,11 +8,11 @@ import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import songHasLongIntro from 'modules/utils/songHasLongIntro';
 import posthog from 'posthog-js';
-import { useMemo } from 'react';
+import { MutableRefObject, useMemo } from 'react';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 interface Props {
-  playerRef: VideoPlayerRef | null;
+  playerRef: MutableRefObject<VideoPlayerRef | null>;
   isEnabled: boolean;
 }
 
@@ -26,7 +26,7 @@ function SkipIntro({ playerRef, isEnabled }: Props) {
   const canSkip = isEnabled && shouldBeVisible && hasLongIntro;
 
   const skipIntro = () => {
-    playerRef?.seekTo(getSkipIntroTime(song));
+    playerRef.current?.seekTo(getSkipIntroTime(song));
 
     const { artist, title } = GameState.getSong()!;
     posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });

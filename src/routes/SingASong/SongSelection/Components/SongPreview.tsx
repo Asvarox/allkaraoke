@@ -6,8 +6,6 @@ import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
 import { isChristmasSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
-import isDev from 'modules/utils/isDev';
-import isE2E from 'modules/utils/isE2E';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
@@ -76,7 +74,7 @@ export const useSpecialTheme = (
   check: (preview: SongPreview) => boolean,
   theme: backgroundTheme,
 ) => {
-  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(feature);
+  const isSpecialThemeEnabled = useFeatureFlag(feature);
   const isSpecialSong = useSpecialSongTheme(
     songPreview,
     isSpecialThemeEnabled ? theme : 'regular',

@@ -163,9 +163,11 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         </Box>
       </Grid>
       <Grid item xs={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        {/* eslint-disable-next-line react-compiler/react-compiler */}
         {player.current && (
           <>
             <AdjustPlayback
+              // eslint-disable-next-line react-compiler/react-compiler
               player={player.current}
               currentTime={currentTime}
               effectsEnabled={effectsEnabled}
@@ -173,13 +175,16 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             />
           </>
         )}
+        {/* eslint-disable-next-line react-compiler/react-compiler */}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
       </Grid>
+      {/* eslint-disable-next-line react-compiler/react-compiler */}
       {player.current && (
         <>
           <Grid item xs={8}>
             <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
               <ShiftVideoGap
+                // eslint-disable-next-line react-compiler/react-compiler
                 player={player.current}
                 onChange={(newShift) => {
                   const delta = newShift - videoGapShift;
@@ -190,6 +195,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 current={videoGapShift}
                 finalGap={newSong.videoGap}
               />
+              {/* eslint-disable-next-line react-compiler/react-compiler */}
               <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
             </Box>
           </Grid>
@@ -207,12 +213,14 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               Advanced
             </Typography>
             <ManipulateBpm
+              // eslint-disable-next-line react-compiler/react-compiler
               player={player.current}
               onChange={setOverrideBpm}
               current={overrideBpm}
               song={newSong}
               key={newSong.gap}
             />
+            {/* eslint-disable-next-line react-compiler/react-compiler */}
             <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
           </Grid>
           <Grid item xs={4}>
@@ -233,6 +241,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               song={newSong}
               currentTime={currentTime}
               beatLength={beatLength}
+              // eslint-disable-next-line react-compiler/react-compiler
               player={player.current}
               onRecordChange={setChangeRecords}
               onTrackNameChange={(track, newName) =>

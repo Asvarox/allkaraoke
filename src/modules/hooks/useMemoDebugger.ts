@@ -25,5 +25,6 @@ export default function useMemoDebugger(memoHook: any, dependencies: any[], depe
     console.log('[use-memo-debugger] ', changedDeps);
   }
 
+  // eslint-disable-next-line react-compiler/react-compiler
   return useMemo(memoHook, dependencies);
 }

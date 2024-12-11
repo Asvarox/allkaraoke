@@ -1,8 +1,9 @@
 {
-  "plugins": ["no-only-tests"],
+  "plugins": ["no-only-tests", "eslint-plugin-react-compiler"],
   "extends": ["react-app", "prettier"],
   "env": {},
   "rules": {
+    "react-compiler/react-compiler": "error",
     "no-only-tests/no-only-tests": "error"
   },
   "overrides": [

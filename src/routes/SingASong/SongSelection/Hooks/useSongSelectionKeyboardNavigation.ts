@@ -5,11 +5,13 @@ import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import tuple from 'modules/utils/tuple';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { HelpEntry } from 'routes/KeyboardHelp/Context';
 import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+
+const previouslySelectedSongs: number[] = [];
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
@@ -57,7 +59,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
         setCursorPosition([0, 0]);
       }
     },
-    [songIndexMatrix],
+    [songIndexMatrix, songGroupMatrix],
   );
 
   const positionToValue = <T>([x, y]: [number, number], matrix: T[][], def: T) => {
@@ -157,18 +159,19 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const navigateToGroup = useCallback(
-    throttle(
-      (direction: 1 | -1, currentGroup: number) => {
-        const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
+  const navigateToGroup = useMemo(
+    () =>
+      throttle(
+        (direction: 1 | -1, currentGroup: number) => {
+          const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
 
-        moveToSong(groupedSongs[nextGroupIndex].songs[0].index);
-        menuNavigate.play();
-      },
-      700,
-      { trailing: false },
-    ),
-    [groupedSongs],
+          moveToSong(groupedSongs[nextGroupIndex].songs[0].index);
+          menuNavigate.play();
+        },
+        700,
+        { trailing: false },
+      ),
+    [groupedSongs, moveToSong],
   );
 
   const navigateVertically = (e: KeyboardEvent | undefined, direction: 1 | -1) => {
@@ -194,9 +197,8 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const randomlySelectedSongs = useRef<number[]>([]);
   const randomSong = () => {
-    const newIndex = selectRandomSong(songCount, randomlySelectedSongs.current);
+    const newIndex = selectRandomSong(songCount, previouslySelectedSongs);
     moveToSong(newIndex);
   };
 
@@ -242,5 +244,5 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-  return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
+  return [focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong] as const;
 };

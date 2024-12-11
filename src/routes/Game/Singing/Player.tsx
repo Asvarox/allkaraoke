@@ -200,7 +200,7 @@ function Player(
             height={height}
             onSongEnd={onSongEnd}
             playerSetups={players}
-            videoPlayerRef={player.current}
+            videoPlayerRef={player}
           />
         </Overlay>
       )}
