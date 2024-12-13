@@ -3606,10 +3606,10 @@
       "English"
     ],
     "bpm": 324.03,
-    "gap": 18541.57578002037,
+    "gap": 18591.57578002037,
     "year": "2009",
     "artistOrigin": "NO",
-    "lastUpdate": "2024-04-16T19:52:25.608Z",
+    "lastUpdate": "2024-12-11T04:06:21.438Z",
     "edition": "ESC 2009",
     "realBpm": 108,
     "volume": 0.8,
@@ -7976,17 +7976,18 @@
       "English"
     ],
     "bpm": 236,
-    "gap": -301.7118644067797,
+    "gap": 16.08474576271186,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2023-12-28T19:33:06.634Z",
+    "lastUpdate": "2024-12-11T19:22:27.249Z",
+    "edition": "Christmas",
     "genre": "Christmas Song, Carol, Pop",
     "realBpm": 118,
     "volume": 0.74,
     "author": "jmfb",
     "tracks": [
       {
-        "start": 12
+        "start": 7
       }
     ],
     "tracksCount": 1,
@@ -82345,9 +82346,9 @@
       "Spanish"
     ],
     "bpm": 360.18,
-    "gap": 23210.499750124938,
+    "gap": 23310.499750124938,
     "year": "1999",
-    "lastUpdate": "2024-03-23T18:31:20.982Z",
+    "lastUpdate": "2024-12-11T18:43:57.030Z",
     "genre": "Latin, rock",
     "realBpm": 120,
     "previewStart": 72,
