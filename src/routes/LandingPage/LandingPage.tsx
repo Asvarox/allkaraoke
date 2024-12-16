@@ -5,14 +5,11 @@ import Logo from 'modules/Elements/Logo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { FeatureFlags } from 'modules/utils/featureFlags';
-import isE2E from 'modules/utils/isE2E';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
-import { useFeatureFlagVariantKey } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc } from 'react-twc';
-import { MicSetupPreferenceSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import GithubRibbon from 'routes/Welcome/GithubRibbon';
 import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
@@ -23,15 +20,12 @@ import songStats from './songStats.json';
 export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
 
 function LandingPage() {
-  const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
-  const skipInitialSetup = useFeatureFlagVariantKey(FeatureFlags.SkipInitialSetup);
   const navigate = useSmoothNavigate();
   const isChristmasEnabled = useFeatureFlag(FeatureFlags.Christmas);
 
   useBackground(true, isChristmasEnabled ? 'christmas' : undefined);
 
-  const nextPage =
-    skipInitialSetup === 'test' && !isE2E() ? 'menu/' : setupPreference === null ? 'quick-setup/' : 'menu/';
+  const nextPage = 'menu/';
 
   useHotkeys(
     'enter',
