@@ -58,7 +58,6 @@ test.skip('Filters - PlayLists', async ({ page }) => {
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Make sure proper song languages are selected', async () => {
@@ -148,7 +147,6 @@ test('Filters - PlayLists (Christmas)', async ({ page }) => {
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Make sure proper song languages are selected', async () => {
@@ -227,7 +225,6 @@ test('Filters - PlayLists (Christmas)', async ({ page }) => {
 test('Filters - Quick Search', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Exclusion polish language - polish songs should be invisible', async () => {
@@ -288,7 +285,6 @@ test('Filters - Quick Search', async ({ page }) => {
 test('Song List - Random song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
 
   await test.step('Random song is selected on song list open', async () => {
     await pages.mainMenuPage.goToSingSong();

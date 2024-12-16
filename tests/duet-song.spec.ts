@@ -25,12 +25,8 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Skip to main menu', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
+  await test.step('Go to select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-  });
-
-  await test.step('Select song language', async () => {
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
@@ -46,7 +42,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Select computer`s mic', async () => {
     await pages.songPreviewPage.goNext();
-    await pages.songPreviewPage.goToInputSelection();
+    await pages.songPreviewPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();
   });
 
@@ -95,11 +91,6 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Select computer`s mic', async () => {
-    await pages.inputSelectionPage.selectComputersMicrophone();
-    await pages.computersMicConnectionPage.continueToTheSong();
-  });
-
   await test.step('Select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(spanishLang);
@@ -125,8 +116,14 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
   });
 
-  await test.step('Enter player name and play the song with 1 player', async () => {
+  await test.step('Go to select computer`s mic', async () => {
     await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectComputersMicrophone();
+    await pages.computersMicConnectionPage.continueToTheSong();
+  });
+
+  await test.step('Enter player name and play the song with 1 player', async () => {
     await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
     await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
     await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();

@@ -18,15 +18,14 @@ const player1Name = 'E2E Test All';
 const player2Name = 'E2E Test Karaoke';
 const player2NameDefault = 'Player #2';
 
-test('Source selection in sing settings', async ({ page, context, browser }) => {
+test('Source selection in sing settings', async ({ page, browser }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await pages.songListPage.openPreviewForSong(song1);
   await pages.songPreviewPage.goNext();
-  await pages.songPreviewPage.goToInputSelection();
+  await pages.songPreviewPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectAdvancedSetup();
 
   // Connect microphone
@@ -44,7 +43,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
   });
 
   await test.step('Make sure the input is not monitored anymore if it is not in use', async () => {
-    await pages.songPreviewPage.goToInputSelection();
+    await pages.songPreviewPage.goToInputSelectionPage();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMicNum);
     await expect(remoteMicBlue._page.getByTestId('monitoring-state')).toContainText('off', {
       ignoreCase: true,

@@ -21,7 +21,6 @@ test('Sorting songs by last update', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Edit Song Page', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
@@ -54,7 +53,6 @@ test('Showing and hiding columns in table works, resets after refresh', async ({
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Edit Song Page', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
@@ -99,7 +97,6 @@ test('Filtering songs shows proper results', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Edit Song Page', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });

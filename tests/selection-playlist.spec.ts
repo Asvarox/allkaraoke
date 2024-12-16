@@ -174,8 +174,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Skip to the Edit Songs', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
+  await test.step('Go to the Edit Songs Page', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
