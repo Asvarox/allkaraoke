@@ -1,0 +1,485 @@
+#ARTIST:Slipknot
+#TITLE:Left behind
+#BPM:391,7
+#YEAR:2001
+#PREVIEWSTART:6
+#VIDEO:v=D1jQKpse7Yw
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:19243,63358778626
+#ALLKARAOKE_ID:slipknot-left-behind
+#ALLKARAOKE_LASTUPDATE:2024-12-17T00:12:21.125Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:156
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=TPSenKymLwk
+#ALLKARAOKE_PREVIEWEND:69
+#ALLKARAOKE_VOLUME:0,86
+#P1:Left Behind
+#MP3:Slipknot - Left behind.mp3
+#COVER:Slipknot - Left behind.jpg
+#START:4,6
+#MEDLEYSTARTBEAT:37
+#MEDLEYENDBEAT:768
+F 26 10 18 I've 
+F 41 14 18 known
+- 55
+: 63 2 13 Fac
+: 66 3 14 ~
+: 73 5 13 es 
+: 83 9 11 that 
+: 93 5 9 have 
+: 104 3 9 dis
+: 108 8 11 ~
+: 119 1 6 ap
+: 125 8 6 peared 
+: 135 3 6 in
+: 139 3 7 ~ 
+: 146 25 6 time
+- 171
+: 191 3 9 Find
+: 195 10 11 ~
+: 206 4 6 ~ 
+: 212 13 6 me 
+: 227 7 14 wrapped 
+: 238 6 13 in 
+: 247 8 11 glass 
+: 259 5 9 and 
+: 268 3 9 slow
+: 272 5 11 ~
+: 279 4 6 ly
+- 283
+: 290 6 6 Soaked 
+: 300 3 6 in
+: 304 5 7 ~ 
+: 310 26 6 lime
+- 336
+F 355 11 18 All 
+F 370 14 18 my 
+: 391 3 16 friends
+: 395 3 18 ~ 
+: 401 6 16 have 
+: 411 6 14 pic
+: 422 4 13 tures 
+: 431 4 13 made
+: 436 3 14 ~
+- 439
+: 444 6 13 To 
+: 452 5 11 make 
+: 462 5 9 you 
+: 472 9 11 cry
+: 482 10 9 ~
+: 493 2 4 ~
+: 496 11 6 ~
+- 507
+: 518 14 11 I've 
+: 539 11 6 seen 
+: 559 4 14 this 
+: 569 8 13 and 
+: 579 4 11 won
+: 585 4 9 dered
+- 589
+: 600 4 11 What 
+: 606 5 11 I've 
+: 616 5 11 done 
+: 626 4 11 to 
+F 641 11 12 cal
+F 656 8 12 ci
+F 671 6 13 fy
+- 677
+F 681 14 13 I 
+F 696 10 13 ig
+F 711 14 13 nore 
+F 726 13 13 you 
+: 740 4 18 as 
+: 746 5 18 I 
+: 755 5 18 close
+: 761 6 16 ~ 
+: 771 4 14 my 
+: 776 11 14 eyes
+- 787
+F 797 1 24 I 
+F 801 4 24 feel 
+F 806 4 24 it 
+F 811 6 24 all 
+F 821 2 24 slip
+F 826 4 24 ping
+- 830
+F 840 11 24 I 
+F 856 11 24 come 
+F 871 10 24 towards 
+F 886 5 24 you
+- 891
+: 895 4 18 We 
+: 900 6 18 all 
+: 909 7 18 got 
+: 920 3 18 left
+: 924 2 16 ~ 
+: 930 3 14 be
+: 935 14 14 hind
+- 949
+F 955 3 24 We 
+F 959 4 24 let 
+F 964 4 24 it 
+F 969 5 24 all 
+F 979 3 24 slip 
+F 984 3 24 a
+F 989 5 24 way
+- 994
+F 998 13 24 I 
+F 1013 9 24 ig
+F 1027 13 24 nore 
+F 1041 11 24 you 
+: 1056 4 18 as 
+: 1062 5 18 I 
+: 1073 4 18 close
+: 1078 5 16 ~ 
+: 1087 4 14 my 
+: 1093 12 14 eyes
+- 1105
+F 1112 1 24 I 
+F 1117 4 24 feel 
+F 1122 3 24 it 
+F 1126 5 24 all 
+F 1136 3 24 slip
+F 1142 3 24 ping
+- 1145
+F 1156 11 24 I 
+F 1170 10 24 come 
+F 1186 10 24 towards 
+F 1201 5 24 you 
+: 1211 4 18 we 
+: 1216 6 18 all 
+: 1226 6 18 got 
+: 1236 3 18 left
+: 1240 2 16 ~ 
+: 1246 4 14 be
+: 1251 11 14 hind
+- 1262
+F 1271 4 24 We 
+F 1276 4 24 let 
+F 1281 4 24 it 
+F 1286 4 24 all 
+F 1295 3 24 slip 
+F 1300 4 24 a
+F 1306 9 24 way
+- 1315 1450
+- 1450
+F 1476 10 18 I 
+F 1490 13 18 can't 
+: 1511 3 13 stand
+: 1515 4 14 ~ 
+: 1521 4 13 to
+- 1525
+: 1532 8 11 See 
+: 1542 5 9 your 
+: 1552 4 9 tha
+: 1558 2 11 li
+: 1561 5 6 do
+: 1567 5 6 mide 
+: 1577 3 6 ro
+: 1582 3 6 bot
+: 1586 3 7 ~
+: 1590 6 6 ~ 
+: 1603 11 6 face
+- 1614
+F 1633 7 24 Ah 
+F 1644 3 24 don't 
+F 1648 3 24 e
+F 1652 2 24 ven 
+F 1658 4 24 try 
+F 1664 3 24 it
+- 1667
+F 1674 4 24 You 
+F 1679 3 24 had 
+F 1684 2 24 to 
+F 1689 4 24 be 
+F 1694 4 24 a 
+F 1699 4 24 li
+F 1704 2 24 ar 
+F 1710 3 24 just 
+F 1715 4 24 to 
+F 1720 4 24 in
+F 1726 4 24 fil
+F 1735 6 24 trate 
+F 1745 5 24 me
+- 1750
+F 1760 6 24 I'm 
+F 1770 6 24 still 
+F 1779 4 24 drown
+F 1784 11 24 ing
+- 1795
+F 1799 13 24 I 
+F 1814 10 24 ig
+F 1828 14 24 nore 
+F 1843 9 24 you 
+: 1857 3 18 as 
+: 1863 4 18 I 
+: 1871 5 18 close
+: 1877 6 16 ~ 
+: 1886 4 14 my 
+: 1891 12 14 eyes
+- 1903
+F 1911 1 24 I 
+F 1916 3 24 feel 
+F 1920 4 24 it 
+F 1925 5 24 all 
+F 1935 3 24 slip
+F 1940 4 24 ping
+- 1944
+F 1955 10 24 I 
+F 1968 10 24 come 
+F 1984 10 24 towards 
+F 1999 5 24 you
+- 2004
+: 2008 4 18 We 
+: 2013 6 18 all 
+: 2023 6 18 got 
+: 2032 4 18 left
+: 2037 3 16 ~ 
+: 2042 4 14 be
+: 2047 13 14 hind
+- 2060
+F 2067 3 24 We 
+F 2071 4 24 let 
+F 2076 4 24 it 
+F 2081 5 24 all 
+F 2090 3 24 slip 
+F 2095 4 24 a
+F 2100 5 24 way
+- 2105
+F 2110 13 24 I 
+F 2124 10 24 ig
+F 2139 14 24 nore 
+F 2154 10 24 you
+- 2164
+: 2168 3 18 As 
+: 2173 5 18 I 
+* 2183 4 18 close
+* 2188 5 16 ~ 
+: 2198 4 14 my 
+: 2203 13 14 eyes
+- 2216
+F 2222 1 24 I 
+F 2227 4 24 feel 
+F 2232 4 24 it 
+F 2237 4 24 all 
+F 2247 3 24 slip
+F 2251 4 24 ping
+- 2255
+F 2266 10 24 I 
+F 2279 10 24 come 
+F 2295 10 24 towards 
+F 2310 5 24 you 
+F 2319 4 18 we 
+F 2324 7 18 all 
+F 2334 9 18 got 
+F 2344 5 18 left 
+F 2354 4 18 be
+F 2359 11 18 hind
+- 2370
+F 2378 4 24 We 
+F 2383 4 24 let 
+F 2388 3 24 it 
+F 2392 5 24 all 
+F 2402 3 24 slip 
+F 2407 4 24 a
+F 2412 20 24 way
+- 2432 2718
+- 2718
+: 2744 3 5 Take
+: 2748 6 7 ~
+- 2754 2767
+- 2767
+: 2793 2 3 This
+: 2796 7 5 ~
+- 2803 2816
+- 2816
+: 2842 3 2 A
+: 2846 24 3 ~
+: 2871 20 2 way
+- 2891 2896
+- 2896
+: 2922 12 3 Take 
+: 2951 12 5 this
+- 2963 2971
+- 2971
+* 2997 14 3 A
+* 3012 12 5 ~
+* 3026 2 5 way
+* 3029 51 7 ~
+- 3080
+: 3084 2 7 I 
+: 3089 1 7 can 
+: 3094 8 7 feel 
+: 3104 5 5 it 
+: 3110 6 3 on 
+: 3119 5 2 my 
+: 3129 13 3 mouth
+- 3142
+: 3161 2 7 I 
+: 3166 2 7 can 
+: 3172 4 5 taste 
+: 3182 2 3 you 
+: 3185 7 3 on 
+: 3196 3 2 my 
+: 3206 7 3 fin
+: 3214 5 2 gers
+- 3219
+: 3239 3 7 I 
+: 3243 2 7 can 
+: 3251 4 5 hear 
+: 3257 6 2 you 
+: 3264 5 5 like 
+: 3274 5 3 the 
+: 3283 2 5 Ho
+: 3288 6 5 ly 
+: 3299 5 5 Ghost
+: 3305 3 7 ~
+- 3308
+F 3320 2 12 And 
+F 3325 4 12 kill 
+F 3330 4 12 you 
+F 3335 2 12 if 
+F 3340 2 12 you 
+F 3345 5 12 get 
+F 3354 2 12 too 
+F 3363 42 12 close
+- 3405
+: 3419 3 18 As 
+: 3424 5 18 I 
+: 3432 11 16 close 
+: 3447 4 14 my 
+: 3452 13 14 eyes 
+F 3472 1 12 I 
+F 3476 4 12 feel 
+F 3481 4 12 it 
+F 3486 5 12 all 
+F 3495 3 12 slip
+F 3500 4 12 ping
+- 3504
+F 3514 10 12 I 
+F 3529 9 12 come 
+F 3543 10 12 towards 
+F 3559 5 12 you 
+: 3568 4 18 we 
+: 3573 6 18 all 
+: 3583 6 18 got 
+: 3592 6 16 left 
+: 3602 4 14 be
+: 3607 12 14 hind
+- 3619
+F 3627 4 24 We 
+F 3632 3 24 let 
+F 3636 4 24 it 
+F 3641 4 24 all 
+F 3651 2 24 slip 
+F 3655 4 24 a
+F 3660 5 24 way
+- 3665
+F 3670 13 24 I 
+F 3684 9 24 ig
+F 3699 13 24 nore 
+F 3713 10 24 you 
+F 3727 3 18 as 
+F 3732 7 18 I 
+F 3741 7 18 close 
+F 3751 8 18 my 
+F 3761 13 18 eyes
+- 3774
+F 3780 1 24 I 
+F 3785 4 24 feel 
+F 3790 4 24 it 
+F 3795 4 24 all 
+F 3804 2 24 slip
+F 3809 4 24 ping
+- 3813
+F 3823 10 24 I 
+F 3837 9 24 come 
+F 3850 11 24 towards 
+F 3866 5 24 you 
+F 3876 3 18 we 
+F 3881 7 18 all 
+F 3889 8 18 got 
+F 3899 7 18 left 
+F 3909 4 18 be
+F 3914 14 18 hind
+- 3928
+F 3933 4 24 We 
+F 3938 4 24 let 
+F 3943 4 24 it 
+F 3948 4 24 all 
+F 3957 6 24 slip 
+F 3971 4 24 a
+F 3977 70 24 way
+- 4047 4066
+- 4066
+F 4092 4 24 We 
+F 4097 4 24 let 
+F 4103 4 24 it 
+F 4108 5 24 all 
+F 4118 6 24 slip 
+F 4132 4 24 a
+F 4138 70 24 way
+- 4208 4210
+- 4210
+F 4236 8 24 Ah, 
+F 4253 4 24 we 
+F 4258 4 24 let 
+F 4263 4 24 it 
+F 4268 5 24 all 
+F 4278 6 24 slip 
+F 4294 4 24 a
+F 4299 63 24 way
+- 4362 4367
+- 4367
+F 4393 13 24 Ah, 
+F 4415 4 24 we 
+F 4420 4 24 let 
+F 4425 4 24 it 
+F 4430 5 24 all 
+F 4440 6 24 slip 
+F 4455 4 24 a
+F 4460 66 24 way, 
+F 4528 4 24 ah 
+F 4536 3 24 ha 
+F 4541 3 24 ha 
+F 4547 9 24 ha
+- 4556
+F 4576 4 24 We 
+F 4581 4 24 let 
+F 4586 4 24 it 
+F 4591 4 24 all 
+F 4601 3 24 slip 
+F 4606 4 24 a
+F 4611 16 24 way
+- 4627 4663
+- 4663
+F 4689 6 24 Uh
+- 4695 4716
+- 4716
+F 4742 4 24 We 
+F 4747 4 24 let 
+F 4752 4 24 it 
+F 4757 5 24 all 
+F 4768 3 24 slip 
+F 4773 3 24 a
+F 4778 9 24 way
+- 4787 4881
+- 4881
+F 4907 4 24 We 
+F 4912 4 24 let 
+F 4917 4 24 it 
+F 4923 4 24 all 
+F 4933 3 24 slip 
+F 4938 5 24 a
+F 4944 6 24 way
+- 4950 5046
+- 5046
+F 5072 4 24 We 
+F 5077 4 24 let 
+F 5082 4 24 it 
+F 5087 5 24 all 
+F 5099 3 24 slip 
+F 5104 3 24 a
+F 5108 15 24 way
+E

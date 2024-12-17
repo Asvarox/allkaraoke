@@ -1,0 +1,310 @@
+#ARTIST:Bring Me The Horizon
+#TITLE:Can You Feel My Heart
+#CREATOR:krasserdude
+#BPM:341,79
+#YEAR:2013
+#VIDEO:v=QJJYpsA5tv8
+#GENRE:Metalcore
+#LANGUAGE:English
+#GAP:29570,608268234882
+#ALLKARAOKE_ID:bring-me-the-horizon-can-you-feel-my-heart
+#ALLKARAOKE_LASTUPDATE:2024-12-17T00:12:20.407Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168857
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25885
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Bring Me The Horizon - Can You Feel My Heart.mp3
+: 23 6 11 Can 
+: 30 3 11 you 
+: 36 5 9 hear 
+: 43 6 7 the 
+: 53 7 11 silence
+: 61 10 7 ~?
+- 71 85
+- 85
+: 108 6 11 Can 
+: 116 5 11 you 
+: 124 5 9 see 
+: 132 4 7 the 
+: 138 21 11 dark?
+- 159 170
+- 170
+: 193 6 11 Can 
+: 201 5 11 you 
+: 208 8 9 fix 
+: 218 4 7 the 
+: 225 12 11 bro
+: 241 12 7 ken?
+- 253 257
+- 257
+: 280 6 11 Can 
+: 290 5 11 you 
+: 300 13 11 feel, 
+: 322 8 11 can 
+: 332 8 11 you 
+: 343 8 11 feel 
+: 353 8 12 my 
+: 364 15 11 heart?
+- 379 684
+- 684
+: 707 4 11 Can 
+: 713 6 11 you 
+: 721 5 9 help 
+: 728 5 7 the 
+: 736 8 11 hope
+: 745 12 7 less?
+- 757
+: 780 5 11 Well, 
+: 786 2 11 I’m 
+: 791 6 11 be
+: 799 3 11 gging 
+: 808 5 9 on 
+: 817 4 7 my 
+: 823 18 11 knees
+- 841 854
+- 854
+: 877 7 11 Can 
+: 885 5 11 you 
+: 892 9 9 save 
+: 904 9 7 my 
+: 920 6 11 bas
+: 928 5 7 tard 
+: 936 14 7 soul, 
+: 962 6 11 will 
+: 970 4 11 you 
+: 978 8 9 wait 
+: 988 3 7 for 
+: 995 17 11 me?
+- 1012
+: 1034 3 11 I’m 
+: 1038 2 11 so
+: 1042 4 11 rry, 
+: 1048 6 11 bro
+: 1055 10 11 thers, 
+: 1076 4 11 so 
+: 1081 4 11 so
+: 1086 3 11 rry, 
+: 1092 5 9 lo
+: 1099 10 7 ver
+- 1109
+: 1118 3 11 For
+: 1123 3 11 give 
+: 1128 4 11 me, 
+: 1134 7 11 fa
+: 1142 10 11 ther, 
+: 1161 4 11 I 
+: 1166 3 11 love 
+: 1171 3 11 you, 
+: 1177 5 11 mo
+: 1184 9 11 ther
+- 1193 1196
+- 1196
+: 1219 4 11 Can 
+: 1225 3 11 you 
+: 1229 3 9 hear 
+: 1233 3 7 the 
+: 1239 4 11 silence
+: 1244 5 7 ~? 
+: 1263 3 11 Can 
+: 1267 3 11 you 
+: 1272 4 9 see 
+: 1277 2 7 the 
+: 1281 10 9 dark?
+- 1291
+: 1304 5 11 Can 
+: 1311 2 11 you 
+: 1315 4 9 fix 
+: 1320 4 7 the 
+: 1326 5 11 broken
+: 1334 7 7 ~? 
+: 1348 7 11 Can 
+: 1357 9 11 you 
+: 1368 9 11 feel 
+: 1378 10 12 my 
+: 1389 27 11 heart?
+- 1416 1496
+- 1496
+: 1519 6 11 Can 
+: 1528 9 11 you 
+: 1539 9 11 feel 
+: 1549 10 12 my 
+: 1560 21 11 heart?
+- 1581 2387
+- 2387
+: 2410 4 7 I’m 
+: 2416 5 11 scared 
+: 2423 5 11 to 
+: 2431 3 11 get 
+: 2436 11 9 close 
+: 2452 1 7 and 
+: 2455 1 7 I 
+: 2458 5 11 hate 
+: 2466 3 11 being
+: 2472 2 11 ~ 
+: 2475 3 11 alone
+: 2479 9 9 ~
+- 2488
+: 2496 4 7 I 
+: 2502 5 11 long 
+: 2509 6 11 for 
+: 2517 4 11 that 
+: 2522 7 9 feeling
+: 2531 5 7 ~ 
+: 2538 4 7 to 
+: 2544 5 11 not 
+: 2552 5 11 feel 
+: 2559 4 11 at 
+: 2565 9 9 all
+- 2574
+: 2582 3 7 The 
+: 2587 5 11 higher
+: 2594 5 11 ~ 
+: 2602 3 11 I 
+: 2607 10 14 get, 
+: 2624 3 12 the 
+: 2629 5 11 lower
+: 2636 6 11 ~ 
+: 2644 4 11 I’ll 
+: 2650 9 14 sink
+- 2659
+: 2667 3 7 I 
+: 2672 5 11 can’t 
+: 2680 6 11 drown 
+: 2688 3 11 my 
+: 2693 7 9 demons
+: 2702 4 7 ~, 
+: 2709 4 7 they 
+: 2714 6 11 know 
+: 2722 6 11 how 
+: 2730 3 11 to 
+: 2736 10 9 swim
+- 2746
+: 2751 5 7 I’m 
+: 2758 5 11 scared 
+: 2765 6 11 to 
+: 2772 3 11 get 
+: 2777 11 9 close 
+: 2793 1 7 and 
+: 2796 1 7 I 
+: 2799 6 11 hate 
+: 2808 4 11 being
+: 2814 2 11 ~ 
+: 2817 2 11 alone
+: 2821 10 9 ~
+- 2831
+: 2837 4 7 I 
+: 2842 6 11 long 
+: 2850 6 11 for 
+: 2858 3 11 that 
+: 2864 6 9 feeling
+: 2872 5 7 ~ 
+: 2879 4 7 to 
+: 2884 5 11 not 
+: 2892 6 11 feel 
+: 2900 4 11 at 
+: 2906 9 9 all
+- 2915
+: 2923 3 7 The 
+: 2928 6 11 higher
+: 2936 5 11 ~ 
+: 2943 3 11 I 
+: 2948 11 14 get, 
+: 2965 3 12 the 
+: 2970 5 11 lower
+: 2978 5 11 ~ 
+: 2986 2 11 I’ll 
+: 2991 11 14 sink
+- 3002
+: 3009 3 7 I 
+: 3014 5 11 can’t 
+: 3021 6 11 drown 
+: 3029 4 11 my 
+: 3035 6 9 demons
+: 3043 4 7 ~, 
+: 3051 3 7 they 
+: 3056 5 11 know 
+: 3064 5 11 how 
+: 3072 3 11 to 
+: 3078 8 9 swim
+- 3086
+: 3094 4 7 I’m 
+: 3099 4 11 scared 
+: 3106 5 11 to 
+: 3114 3 11 get 
+: 3120 11 9 close 
+: 3136 1 7 and 
+: 3138 2 7 I 
+: 3142 5 11 hate 
+: 3149 6 11 being
+: 3156 2 11 ~ 
+: 3159 2 11 alone
+: 3163 8 9 ~
+- 3171
+: 3180 4 7 I 
+: 3185 6 11 long 
+: 3193 6 11 for 
+: 3201 4 11 that 
+: 3206 6 9 feeling
+: 3214 5 7 ~ 
+: 3222 4 7 to 
+: 3227 6 11 not 
+: 3235 6 11 feel 
+: 3243 4 11 at 
+: 3249 9 9 all
+- 3258
+: 3265 3 7 The 
+: 3270 6 11 higher
+: 3278 5 11 ~ 
+: 3285 3 11 I 
+: 3291 11 14 get, 
+: 3307 4 12 the 
+: 3313 6 11 lower
+: 3320 6 11 ~ 
+: 3327 2 11 I’ll 
+: 3333 7 14 sink
+- 3340
+: 3351 4 7 I 
+: 3356 6 11 can’t 
+: 3364 6 11 drown 
+: 3371 4 11 my 
+: 3377 7 9 demons
+: 3386 4 7 ~, 
+: 3392 2 7 they 
+: 3398 5 11 know 
+: 3405 4 11 how 
+: 3413 3 11 to 
+: 3419 8 9 swim
+- 3427 3845
+- 3845
+: 3868 4 11 Can 
+: 3875 3 11 you 
+: 3881 3 9 hear 
+: 3886 3 7 the 
+: 3893 6 11 silence
+: 3901 6 7 ~?
+- 3907 3931
+- 3931
+: 3954 5 11 Can 
+: 3962 3 11 you 
+: 3967 6 9 see 
+: 3974 3 7 the 
+: 3979 36 11 dark?
+- 4015
+: 4038 6 11 Can 
+: 4046 3 11 you 
+: 4052 7 9 fix 
+: 4061 2 7 the 
+: 4067 10 11 broken
+: 4080 13 7 ~?
+- 4093 4101
+- 4101
+: 4124 7 11 Can 
+: 4135 7 11 you 
+: 4145 12 11 feel, 
+: 4167 6 11 can 
+: 4177 8 11 you 
+: 4188 7 11 feel 
+: 4197 8 12 my 
+: 4210 34 11 heart?
+E

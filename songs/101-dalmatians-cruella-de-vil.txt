@@ -1,0 +1,188 @@
+#ARTIST:101 Dalmatians
+#TITLE:Cruella De Vil
+#CREATOR:TeLiXj
+#BPM:322
+#YEAR:1961
+#PREVIEWSTART:61
+#VIDEO:v=KcdQk7JBPzQ
+#VIDEOGAP:8
+#LANGUAGE:English
+#GAP:22071,739130434784
+#ALLKARAOKE_ID:101-dalmatians-cruella-de-vil
+#ALLKARAOKE_LASTUPDATE:2024-12-17T00:12:21.262Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#P1:Cruella De Vil
+#MP3:101 Dalmatians - Cruella De Vil.mp3
+#COVER:101 Dalmatians - Cruella De Vil [CO].jpg
+: 21 2 60 Cru
+: 26 5 60 el
+: 34 2 63 la 
+: 38 6 65 De 
+: 46 10 66 Vil
+- 56
+: 68 3 65 Cru
+: 72 7 65 el
+: 81 2 68 la 
+: 85 5 70 De 
+* 93 9 71 Vil
+- 102
+: 117 1 60 If 
+: 121 6 60 she 
+: 129 2 63 does
+: 133 6 65 n't 
+* 141 4 66 scare
+: 146 6 65 ~
+: 153 5 66 you
+- 158
+: 166 2 65 No 
+: 170 7 65 e
+: 178 2 68 vil 
+: 182 7 70 thing 
+: 190 10 71 will
+- 200
+: 216 3 71 To 
+: 220 6 72 see 
+: 229 2 68 her 
+: 233 6 70 is 
+: 240 1 68 to 
+: 245 6 72 take 
+: 253 5 68 a 
+: 259 2 70 sud
+: 263 4 68 den
+- 267
+F 278 11 60 Chill
+- 289 291
+- 291
+: 312 3 65 Cru
+* 317 7 72 el
+: 325 21 71 la
+- 346
+: 362 3 65 Cru
+: 365 8 71 el
+: 373 13 70 la
+- 386 389
+- 389
+: 410 3 68 She's 
+: 415 5 72 like 
+: 423 2 68 a 
+: 427 6 70 spi
+: 436 2 68 der
+- 438
+: 441 3 72 Wait
+: 445 2 68 ing 
+: 450 7 70 for 
+: 460 3 68 the 
+: 472 24 72 kill
+- 496
+: 508 2 65 Look 
+: 513 5 72 out 
+: 521 9 71 for 
+: 534 2 65 Cru
+* 539 5 71 el
+: 546 7 70 la 
+: 559 2 68 De 
+: 564 16 68 Vil
+- 580 3134
+- 3134
+: 3155 4 65 At 
+: 3161 6 72 first 
+: 3170 3 73 you 
+: 3174 5 70 think
+- 3179
+: 3182 4 72 Cru
+: 3187 4 68 el
+* 3191 8 70 la 
+: 3201 4 67 is 
+: 3205 6 68 a 
+: 3212 2 65 de
+: 3216 11 65 vil
+- 3227 3232
+- 3232
+: 3253 4 65 But 
+: 3258 5 72 af
+: 3265 3 73 ter 
+: 3270 7 70 time 
+: 3281 4 72 has
+- 3285
+: 3288 3 68 Worn 
+: 3293 2 70 a
+: 3297 8 67 way 
+: 3307 2 68 the 
+: 3311 6 65 shock
+- 3317 3330
+- 3330
+: 3351 3 68 You 
+: 3357 4 70 come 
+: 3364 2 70 to 
+: 3369 3 70 re
+: 3372 3 68 a
+: 3376 9 70 lize
+- 3385
+: 3399 4 68 You've 
+* 3406 7 70 seen 
+: 3414 2 70 her 
+: 3418 2 70 kind 
+: 3422 2 68 of 
+: 3426 9 70 eyes
+- 3435
+: 3454 5 71 Watch
+: 3462 3 71 ing 
+: 3467 6 70 you 
+: 3474 2 68 from
+- 3476
+: 3480 2 71 Un
+: 3484 2 71 der
+* 3488 6 70 neath 
+: 3500 4 68 a 
+: 3505 5 70 rock
+- 3510 3528
+- 3528
+: 3549 2 60 This 
+* 3555 7 60 vam
+: 3564 4 63 pire
+: 3569 5 65 ~
+: 3576 5 66 bat
+- 3581
+: 3596 3 66 This 
+: 3600 7 65 in
+: 3609 3 68 hu
+: 3613 5 70 man 
+: 3621 7 71 beast
+- 3628
+: 3646 2 60 She 
+: 3651 5 60 ought 
+: 3658 2 63 to 
+: 3663 4 65 be 
+: 3670 5 66 locked 
+: 3678 4 66 up
+- 3682
+: 3695 3 66 And 
+: 3699 8 65 ne
+: 3708 2 68 ver 
+: 3712 4 70 re
+* 3719 4 71 leased
+- 3723
+: 3744 4 68 The 
+: 3750 5 72 world 
+: 3758 3 68 was 
+: 3763 5 70 such 
+: 3771 3 68 a
+- 3774
+: 3776 6 72 Whole
+: 3783 4 68 some 
+: 3793 3 70 place 
+: 3797 8 68 un
+* 3807 19 72 til
+- 3826
+: 3840 5 65 Cru
+: 3846 8 72 el
+: 3855 7 71 la, 
+: 3867 5 65 Cru
+: 3872 8 71 el
+: 3880 8 70 la 
+: 3892 2 68 De 
+: 3896 26 68 Vil
+E
