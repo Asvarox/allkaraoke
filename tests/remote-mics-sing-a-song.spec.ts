@@ -43,9 +43,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
+  await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectSmartphones();
 
-  // Connect microphones
   const remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
   const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
 

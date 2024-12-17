@@ -9,10 +9,13 @@ test.beforeEach(async ({ page, context, browser }) => {
   pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
+});
 
+test.beforeEach(async ({ page }) => {
   await test.step('Enter the game and go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 });

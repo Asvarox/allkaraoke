@@ -28,7 +28,6 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   await pages.songPreviewPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectAdvancedSetup();
 
-  // Connect microphone
   const remoteMicBlue = await openAndConnectRemoteMicDirectly(page, browser, player1Name);
 
   await test.step('Assert auto selection of inputs', async () => {
@@ -80,9 +79,9 @@ test('Source selection in in-game menu', async ({ page }) => {
 test('Source selection from remote mic', async ({ browser, page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
+  await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectSmartphones();
 
-  // Connect microphones
   const remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, player1Name);
   const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
 

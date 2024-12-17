@@ -19,6 +19,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Select Smartphones setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
     await pages.smartphonesConnectionPage.goToMainMenu();
   });
