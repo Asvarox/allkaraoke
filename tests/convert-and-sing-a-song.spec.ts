@@ -66,7 +66,7 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Select advanced setup', async () => {
-    await pages.mainMenuPage.goToSetupMicrophones();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 

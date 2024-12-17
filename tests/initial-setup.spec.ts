@@ -70,6 +70,7 @@ test('Selected device after reconnecting is selected again', async ({ page, cont
 
   await test.step('Connect new device and go to advanced setup', async () => {
     await connectDevices(newDevice);
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -111,6 +112,7 @@ test('Properly labels multichannel devices', async ({ page, context }) => {
 
   await test.step('Connect new device and go to advanced setup', async () => {
     await connectDevices(newDevice);
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -137,9 +139,12 @@ test('Remote mic is deselected when it disconnects', async ({ page, context, bro
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectAdvancedSetup();
 
-  // Connect microphone
+  await test.step('Select Advanced setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+  });
+
   const remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, playerName);
 
   await test.step('Check visibility of mic source and player1 name', async () => {

@@ -34,7 +34,7 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   await test.step('Assert auto selection of inputs', async () => {
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMicNum, player1Name);
     await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(player1Name);
-    await pages.advancedConnectionPage.goToMainMenu();
+    await pages.advancedConnectionPage.goToSongPreview();
     await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMicNum, player1Name);
     // microphone of new device is being monitored
     await expect(remoteMicBlue._page.getByTestId('monitoring-state')).toContainText('on', {
@@ -51,9 +51,10 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   });
 });
 
-test('Source selection in in-game menu', async ({ page, context, browser }) => {
+test('Source selection in in-game menu', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
+  await pages.mainMenuPage.goToInputSelectionPage();
   await expect(pages.inputSelectionPage.advancedButton).toBeVisible();
   await pages.inputSelectionPage.selectAdvancedSetup();
   await pages.advancedConnectionPage.goToMainMenu();
@@ -71,12 +72,12 @@ test('Source selection in in-game menu', async ({ page, context, browser }) => {
     await page.keyboard.press('Backspace');
     await pages.gamePage.microphonesSettings();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMicNum);
-    await pages.advancedConnectionPage.goToMainMenu();
+    await pages.advancedConnectionPage.goToSongPreview();
     await expectMonitoringToBeEnabled(page);
   });
 });
 
-test('Source selection from remote mic', async ({ browser, context, page }) => {
+test('Source selection from remote mic', async ({ browser, page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
