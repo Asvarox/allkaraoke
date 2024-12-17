@@ -175,6 +175,7 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
   });
 
   await test.step('Go to computers mic and select mic input', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();
     await expect(pages.computersMicConnectionPage.micInputNameElement).toContainText(micNameDef);
   });
