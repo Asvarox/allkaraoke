@@ -1,5 +1,34 @@
 [
   {
+    "id": "101-dalmatians-cruella-de-vil",
+    "title": "Cruella De Vil",
+    "artist": "101 Dalmatians",
+    "video": "KcdQk7JBPzQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 322,
+    "gap": 22071.739130434784,
+    "year": "1961",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-17T00:12:21.262Z",
+    "videoGap": 8,
+    "realBpm": 105,
+    "previewStart": 61,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "TeLiXj",
+    "tracks": [
+      {
+        "name": "Cruella De Vil",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "101dalmatianscruelladevil",
+    "local": false
+  },
+  {
     "id": "2-plus-1-chodz-pomaluj-moj-swiat",
     "title": "Chodz, Pomaluj Mój Swiat",
     "artist": "2 Plus 1",
@@ -2036,6 +2065,34 @@
     "local": false
   },
   {
+    "id": "ado-buriki-no-dance",
+    "title": "Buriki no Dance",
+    "artist": "Ado",
+    "video": "iL7uoLCbJoc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 344,
+    "gap": 6047.093023255814,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-17T00:12:19.746Z",
+    "realBpm": 172,
+    "previewStart": 52,
+    "previewEnd": 90,
+    "volume": 0.9,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29719",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adoburikinodance",
+    "local": false
+  },
+  {
     "id": "ado-fleeting-lullaby",
     "title": "Fleeting Lullaby",
     "artist": "Ado",
@@ -3609,7 +3666,7 @@
     "gap": 18591.57578002037,
     "year": "2009",
     "artistOrigin": "NO",
-    "lastUpdate": "2024-12-11T04:06:21.438Z",
+    "lastUpdate": "2024-12-16T20:07:22.605Z",
     "edition": "ESC 2009",
     "realBpm": 108,
     "volume": 0.8,
@@ -8259,6 +8316,34 @@
     "local": false
   },
   {
+    "id": "avenged-sevenfold-buried-alive",
+    "title": "Buried Alive",
+    "artist": "Avenged Sevenfold",
+    "video": "imwmmv9r1oE",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 78062.14285714286,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:20.409Z",
+    "genre": "Heavy Metal",
+    "realBpm": 140,
+    "volume": 0.9,
+    "author": "Lorc",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=29196",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18434",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avengedsevenfoldburiedalive",
+    "local": false
+  },
+  {
     "id": "avenged-sevenfold-critical-acclaim",
     "title": "Critical Acclaim",
     "artist": "Avenged Sevenfold",
@@ -10904,6 +10989,34 @@
     ],
     "tracksCount": 1,
     "search": "benekingstandbyme",
+    "local": false
+  },
+  {
+    "id": "benji-fede-feat-annalisa-tutto-per-una-ragione",
+    "title": "Tutto per una ragione",
+    "artist": "Benji & Fede feat. Annalisa",
+    "video": "izttIKfEzr8",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 200,
+    "gap": 9615,
+    "year": "2016",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-12-17T00:12:21.122Z",
+    "realBpm": 100,
+    "previewStart": 37,
+    "previewEnd": 90,
+    "volume": 0.7,
+    "author": "Leroidukitch",
+    "sourceUrl": "https://www.youtube.com/watch?v=izttIKfEzr8",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "benjifedefeatannalisatuttoperunaragione",
     "local": false
   },
   {
@@ -15175,6 +15288,89 @@
     ],
     "tracksCount": 1,
     "search": "bridgitmendlerreadyornot",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-can-you-feel-my-heart",
+    "title": "Can You Feel My Heart",
+    "artist": "Bring Me The Horizon",
+    "video": "QJJYpsA5tv8",
+    "language": [
+      "English"
+    ],
+    "bpm": 341.79,
+    "gap": 29570.608268234882,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.407Z",
+    "genre": "Metalcore",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "krasserdude",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168857",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25885",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizoncanyoufeelmyheart",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-darkside",
+    "title": "DArkSide",
+    "artist": "Bring Me The Horizon",
+    "video": "3Nt37RGbVjo",
+    "language": [
+      "English"
+    ],
+    "bpm": 507.95,
+    "gap": 12065.964169701741,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.406Z",
+    "genre": "Metal",
+    "realBpm": 168,
+    "volume": 0.75,
+    "author": "extraaa",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=148686",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29054",
+    "tracks": [
+      {
+        "start": 34
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizondarkside",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-feat-nova-twins-1x1",
+    "title": "1x1",
+    "artist": "Bring Me The Horizon feat. Nova Twins",
+    "video": "3QmcAAo_0Tw",
+    "language": [
+      "English"
+    ],
+    "bpm": 330.77,
+    "gap": 35862.32790156302,
+    "year": "2020",
+    "lastUpdate": "2024-12-17T00:12:19.757Z",
+    "genre": "Metal",
+    "realBpm": 164,
+    "volume": 0.8,
+    "author": "Whitebeing",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=166588",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25541",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonfeatnovatwins1x1",
     "local": false
   },
   {
@@ -27830,6 +28026,54 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-3-right-here-right-now",
+    "title": "Right Here, Right Now",
+    "artist": "Disney’s High School Musical 3",
+    "video": "ibkMwVXlez0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.15,
+    "gap": 6530.499750124937,
+    "year": "2008",
+    "lastUpdate": "2024-12-17T00:12:20.828Z",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "MDKeil",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3righthererightnow",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-3-scream",
+    "title": "Scream",
+    "artist": "Disney’s High School Musical 3",
+    "video": "6ghdm1B9sS8",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 45700,
+    "year": "2008",
+    "lastUpdate": "2024-12-17T00:12:21.001Z",
+    "realBpm": 111,
+    "volume": 1,
+    "author": "ZackAndres",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3scream",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-3-the-boys-are-back",
     "title": "The Boys Are Back",
     "artist": "Disney’s High School Musical 3",
@@ -28518,6 +28762,34 @@
     ],
     "tracksCount": 1,
     "search": "disturbeddownwiththesickness",
+    "local": false
+  },
+  {
+    "id": "disturbed-droppin-plates",
+    "title": "Droppin’ Plates",
+    "artist": "Disturbed",
+    "video": "mcLyQko_L7w",
+    "language": [
+      "English"
+    ],
+    "bpm": 288,
+    "gap": 11110.416666666666,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:19.755Z",
+    "genre": "Metal",
+    "realBpm": 144,
+    "volume": 0.95,
+    "author": "crappy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8158",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disturbeddroppinplates",
     "local": false
   },
   {
@@ -43776,6 +44048,34 @@
     "local": false
   },
   {
+    "id": "j-ax-fedez-italiana",
+    "title": "Italiana",
+    "artist": "J-Ax & Fedez",
+    "video": "OjkfOX-g6Js",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 244,
+    "gap": 10635.393442622952,
+    "year": "2018",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-12-17T00:12:21.121Z",
+    "realBpm": 122,
+    "previewStart": 45,
+    "previewEnd": 98,
+    "volume": 0.68,
+    "author": "Scutzi",
+    "sourceUrl": "https://www.youtube.com/watch?v=OjkfOX-g6Js",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jaxfedezitaliana",
+    "local": false
+  },
+  {
     "id": "j-balvin-ginza",
     "title": "Ginza",
     "artist": "J. Balvin",
@@ -56149,6 +56449,34 @@
     "local": false
   },
   {
+    "id": "linkin-park-two-faced",
+    "title": "Two Faced",
+    "artist": "Linkin Park",
+    "video": "kivUsDGWojU",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 30410.978260869564,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:21.118Z",
+    "genre": "Nu-Metal",
+    "realBpm": 92,
+    "previewStart": 53,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparktwofaced",
+    "local": false
+  },
+  {
     "id": "linkin-park-valentines-day",
     "title": "Valentine’s Day",
     "artist": "Linkin Park",
@@ -64240,7 +64568,7 @@
     "gap": 24727.19901719902,
     "year": "1983",
     "artistOrigin": "US",
-    "lastUpdate": "2024-12-14T10:32:40.766Z",
+    "lastUpdate": "2024-12-16T20:07:07.527Z",
     "genre": "Funk",
     "realBpm": 122,
     "volume": 0.7,
@@ -64880,6 +65208,31 @@
     ],
     "tracksCount": 1,
     "search": "mileycyruscantbetamed",
+    "local": false
+  },
+  {
+    "id": "miley-cyrus-feat-dua-lipa-prisoner",
+    "title": "Prisoner",
+    "artist": "Miley Cyrus feat. Dua Lipa",
+    "video": "0ir1qkPXPVM",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 4883.90625,
+    "year": "2020",
+    "lastUpdate": "2024-12-17T00:12:20.545Z",
+    "genre": "Pop",
+    "realBpm": 111,
+    "volume": 0.76,
+    "author": "o Dua Lipa",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mileycyrusfeatdualipaprisoner",
     "local": false
   },
   {
@@ -66087,6 +66440,34 @@
     ],
     "tracksCount": 1,
     "search": "mothermotherghosting",
+    "local": false
+  },
+  {
+    "id": "motionless-in-white-brand-new-numb",
+    "title": "Brand New Numb",
+    "artist": "Motionless In White",
+    "video": "RxgOFdJYjXo",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.02,
+    "gap": 1229.3062072148296,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:20.413Z",
+    "genre": "Metalcore",
+    "realBpm": 130,
+    "volume": 0.81,
+    "author": "extraaa",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=148686",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24662",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "motionlessinwhitebrandnewnumb",
     "local": false
   },
   {
@@ -72704,6 +73085,34 @@
     "local": false
   },
   {
+    "id": "ozzy-osbourne-killer-of-giants",
+    "title": "Killer Of Giants",
+    "artist": "Ozzy Osbourne",
+    "video": "03hGi0_r0xc",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.2,
+    "gap": 82463.8067061144,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.410Z",
+    "genre": "Metal",
+    "realBpm": 152,
+    "volume": 0.88,
+    "author": "crappy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3676",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozzyosbournekillerofgiants",
+    "local": false
+  },
+  {
     "id": "ozzy-osbourne-mama-im-coming-home",
     "title": "Mama, I’m Coming Home",
     "artist": "Ozzy Osbourne",
@@ -74189,6 +74598,56 @@
     ],
     "tracksCount": 1,
     "search": "perfektautobiografia",
+    "local": false
+  },
+  {
+    "id": "pet-shop-boys-always-on-my-mind",
+    "title": "Always On My Mind",
+    "artist": "Pet Shop Boys",
+    "video": "wDe60CbIagg",
+    "language": [
+      "English"
+    ],
+    "bpm": 249,
+    "gap": 80245.90361445783,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:21.261Z",
+    "realBpm": 125,
+    "volume": 0.78,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "petshopboysalwaysonmymind",
+    "local": false
+  },
+  {
+    "id": "pet-shop-boys-its-a-sin",
+    "title": "It’s A Sin",
+    "artist": "Pet Shop Boys",
+    "video": "dRHetRTOD1Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 43780,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:21.127Z",
+    "realBpm": 127,
+    "volume": 0.84,
+    "author": "ears",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "petshopboysitsasin",
     "local": false
   },
   {
@@ -77537,6 +77996,32 @@
     "local": false
   },
   {
+    "id": "radiohead-let-down",
+    "title": "Let Down",
+    "artist": "Radiohead",
+    "video": "duBCwvC1kP4",
+    "language": [
+      "English"
+    ],
+    "bpm": 206.38,
+    "gap": 21082.459540653163,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.827Z",
+    "genre": "Alternative Rock",
+    "realBpm": 102,
+    "volume": 0.71,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "radioheadletdown",
+    "local": false
+  },
+  {
     "id": "radiohead-no-surprises",
     "title": "No Surprises",
     "artist": "Radiohead",
@@ -79142,6 +79627,32 @@
     "local": false
   },
   {
+    "id": "rex-gildo-fiesta-mexicana",
+    "title": "Fiesta Mexicana",
+    "artist": "Rex Gildo",
+    "video": "7h3yvQCmoMU",
+    "language": [
+      "German"
+    ],
+    "bpm": 263.66,
+    "gap": 6853.960805328025,
+    "year": "1970",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-12-17T00:12:20.691Z",
+    "genre": "Schlager",
+    "realBpm": 132,
+    "volume": 0.75,
+    "author": "I Rex Gildo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rexgildofiestamexicana",
+    "local": false
+  },
+  {
     "id": "rhapsody-the-magic-of-the-wizards-dreams",
     "title": "The Magic Of The Wizard’s Dreams",
     "artist": "Rhapsody",
@@ -80420,6 +80931,34 @@
     "local": false
   },
   {
+    "id": "rise-against-hero-of-war",
+    "title": "Hero Of War",
+    "artist": "Rise Against",
+    "video": "_DboMAghWcA",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.7,
+    "gap": 5226.275593110172,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:20.826Z",
+    "genre": "Acoustic",
+    "realBpm": 77,
+    "previewStart": 55,
+    "previewEnd": 92,
+    "volume": 0.75,
+    "author": "Lesla",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "riseagainstheroofwar",
+    "local": false
+  },
+  {
     "id": "rise-against-prayer-of-the-refugee",
     "title": "Prayer of the refugee",
     "artist": "Rise Against",
@@ -80802,6 +81341,32 @@
     "local": false
   },
   {
+    "id": "rod-stewart-have-i-told-you-lately",
+    "title": "Have I Told You Lately",
+    "artist": "Rod Stewart",
+    "video": "doCIvWFEgN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 284,
+    "gap": 12616.478873239437,
+    "year": "1991",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.822Z",
+    "genre": "Soft Rock",
+    "realBpm": 143,
+    "volume": 0.79,
+    "author": "jockel1974",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rodstewarthaveitoldyoulately",
+    "local": false
+  },
+  {
     "id": "rod-stewart-sailing",
     "title": "Sailing",
     "artist": "Rod Stewart",
@@ -80827,6 +81392,32 @@
     ],
     "tracksCount": 1,
     "search": "rodstewartsailing",
+    "local": false
+  },
+  {
+    "id": "rod-stewart-young-turks",
+    "title": "Young Turks",
+    "artist": "Rod Stewart",
+    "video": "zQ41hqlV0Kk",
+    "language": [
+      "English"
+    ],
+    "bpm": 321.65,
+    "gap": 17930.67464635473,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-17T00:12:20.823Z",
+    "genre": "Pop",
+    "realBpm": 161,
+    "volume": 0.76,
+    "author": "fepo, The Dark",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rodstewartyoungturks",
     "local": false
   },
   {
@@ -85846,6 +86437,33 @@
     "local": false
   },
   {
+    "id": "simple-plan-welcome-to-my-life",
+    "title": "Welcome To My Life",
+    "artist": "Simple Plan",
+    "video": "r0U0AlLVqpk",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.03,
+    "gap": 12269.34392185517,
+    "year": "2004",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-12-17T00:12:20.821Z",
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "paranoik",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=paranoik",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?cancion=Welcome%20To%20My%20Life&sid=0e38b717db9498f7c126e4ed49f2bdbd",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "simpleplanwelcometomylife",
+    "local": false
+  },
+  {
     "id": "simply-red-if-you-dont-know-me-by-now",
     "title": "If You Don’t Know Me By Now",
     "artist": "Simply Red",
@@ -86507,6 +87125,35 @@
     "local": false
   },
   {
+    "id": "slipknot-left-behind",
+    "title": "Left behind",
+    "artist": "Slipknot",
+    "video": "D1jQKpse7Yw",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.7,
+    "gap": 19243.63358778626,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:21.125Z",
+    "genre": "Nu Metal",
+    "realBpm": 156,
+    "previewStart": 6,
+    "previewEnd": 69,
+    "volume": 0.86,
+    "sourceUrl": "https://www.youtube.com/watch?v=TPSenKymLwk",
+    "tracks": [
+      {
+        "name": "Left Behind",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotleftbehind",
+    "local": false
+  },
+  {
     "id": "slipknot-psychosocial",
     "title": "Psychosocial",
     "artist": "Slipknot",
@@ -86530,6 +87177,32 @@
     ],
     "tracksCount": 1,
     "search": "slipknotpsychosocial",
+    "local": false
+  },
+  {
+    "id": "slipknot-sic",
+    "title": "(Sic)",
+    "artist": "Slipknot",
+    "video": "m3I3-KTJbtY",
+    "language": [
+      "English"
+    ],
+    "bpm": 264.38,
+    "gap": 8938.742718813828,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:21.123Z",
+    "genre": "Nu Metal",
+    "realBpm": 190,
+    "volume": 0.86,
+    "author": "-",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotsic",
     "local": false
   },
   {
@@ -86585,6 +87258,31 @@
     ],
     "tracksCount": 1,
     "search": "slipknotsulfur",
+    "local": false
+  },
+  {
+    "id": "slipknot-wait-and-bleed",
+    "title": "Wait And Bleed",
+    "artist": "Slipknot",
+    "video": "B1zCN0YhW1s",
+    "language": [
+      "English"
+    ],
+    "bpm": 368.1,
+    "gap": 3029.424143556281,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:21.124Z",
+    "realBpm": 186,
+    "volume": 0.8,
+    "author": "p",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotwaitandbleed",
     "local": false
   },
   {
@@ -98623,6 +99321,35 @@
     ],
     "tracksCount": 1,
     "search": "twentyonepilotstearinmyheart",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-the-line",
+    "title": "The Line",
+    "artist": "twenty øne piløts",
+    "video": "E2Rj2gQAyPA",
+    "language": [
+      "English"
+    ],
+    "bpm": 285,
+    "gap": 24660,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-17T00:12:21.120Z",
+    "genre": "Pop",
+    "realBpm": 71,
+    "previewStart": 74,
+    "previewEnd": 110,
+    "volume": 0.8,
+    "author": "Raygin",
+    "sourceUrl": "https://www.youtube.com/watch?v=E2Rj2gQAyPA&list=PLJP5_qSxMbkKnjgQZUJPT6CV09yoIheUj&index=20",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotstheline",
     "local": false
   },
   {

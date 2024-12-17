@@ -1,5 +1,6 @@
 {
   "artists": [
+    "101 Dalmatians",
     "2NE1",
     "3 Doors Down",
     "3OH!3",
@@ -704,6 +705,7 @@
     "Mike Oldfield",
     "Mike Posner",
     "Miley Cyrus",
+    "Miley Cyrus feat. Dua Lipa",
     "Miley Cyrus & Jessie J",
     "Mili",
     "Milo Manheim & Meg Donnelly",
@@ -716,6 +718,7 @@
     "Morandi",
     "Morgan Wallen",
     "Mother Mother",
+    "Motionless In White",
     "Mötley Crüe",
     "Moulin Rouge",
     "Mr. Big",
@@ -792,6 +795,7 @@
     "Paul Simon",
     "Paula Abdul",
     "Pearl Jam",
+    "Pet Shop Boys",
     "Peter Cetera",
     "Peter Gabriel",
     "Peter Gabriel & Kate Bush",
@@ -1172,9 +1176,9 @@
     "ZZ Top"
   ],
   "languages": [
+    "English",
     "Polish",
     "Korean",
-    "English",
     "Japanese",
     "Spanish",
     "Estonian",
@@ -1202,5 +1206,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 3880
+  "songs": 3907
 }

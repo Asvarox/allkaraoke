@@ -1,0 +1,302 @@
+#ARTIST:Ozzy Osbourne
+#TITLE:Killer Of Giants
+#CREATOR:crappy
+#BPM:304,2
+#YEAR:1986
+#VIDEO:v=03hGi0_r0xc
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:82463,8067061144
+#ALLKARAOKE_ID:ozzy-osbourne-killer-of-giants
+#ALLKARAOKE_LASTUPDATE:2024-12-17T00:12:20.410Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=172
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3676
+#ALLKARAOKE_VOLUME:0,88
+#MP3:Ozzy Osbourne - Killer Of Giants.mp3
+: 20 6 4 If 
+: 28 5 6 none 
+: 34 3 6 of 
+: 38 12 6 us 
+: 70 4 6 be
+: 76 4 6 lieve 
+: 82 6 1 in 
+: 90 4 6 wa
+: 96 12 4 ~r
+- 108 126
+- 126
+: 146 7 4 Then 
+: 154 5 4 can 
+: 161 4 4 you 
+: 166 8 4 tell 
+: 177 4 4 me 
+: 182 11 8 what 
+: 194 4 6 the 
+: 199 9 6 wea
+: 210 6 4 pons 
+: 218 16 6 for?
+- 234 262
+- 262
+: 282 5 6 Lis
+: 288 2 6 ten 
+: 291 4 6 to 
+: 296 12 6 me 
+: 328 9 6 ev
+: 338 3 8 ery
+: 343 5 6 o
+: 349 10 4 ~ne
+- 359 381
+- 381
+: 401 5 4 If 
+: 407 3 4 the 
+: 411 7 4 button 
+: 419 5 4 is 
+: 426 8 4 pushed
+- 434
+: 435 8 4 There’ll 
+: 445 6 8 be 
+: 453 4 6 no
+: 458 8 6 where 
+: 467 3 4 to 
+: 472 30 6 run
+- 502
+: 505 16 6 Oh
+- 521
+: 538 15 1 Gi
+: 555 13 -1 ants, 
+: 570 16 4 slee
+: 587 13 2 ping, 
+: 602 16 1 gi
+: 619 13 -1 ants 
+: 634 13 4 win
+: 650 15 2 nings
+- 665
+: 666 15 1 Wars 
+: 682 14 -1 with
+: 698 7 4 in 
+: 707 15 6 their 
+: 724 21 6 dreams
+- 745 774
+- 774
+: 794 15 1 Till 
+: 810 14 -1 they 
+: 826 13 4 wake 
+: 842 14 2 when 
+: 858 13 1 its 
+: 873 14 -1 too 
+: 890 14 4 late
+- 904
+: 906 14 2 And 
+: 922 14 1 in 
+: 938 14 -1 gods 
+: 954 8 4 name 
+* 966 12 6 blas
+* 980 22 6 pheme
+- 1002 1014
+- 1014
+: 1034 4 6 Kil
+: 1039 3 4 ler 
+: 1044 4 2 of 
+* 1050 7 1 gi
+* 1060 22 -1 ants
+- 1082
+: 1098 4 -1 Threa
+: 1103 3 1 tens 
+: 1108 6 2 us 
+: 1117 6 -3 a
+: 1124 3 -1 ~
+: 1128 16 -3 ~ll
+- 1144
+: 1162 4 6 Moun
+: 1167 5 4 tains 
+: 1173 5 2 of 
+: 1180 6 1 mad
+: 1188 19 -1 ness
+- 1207
+: 1224 6 -1 Stan
+: 1231 4 1 ding 
+: 1237 5 2 so 
+: 1244 6 2 ta
+: 1251 3 1 ~
+: 1256 16 -3 ~ll
+- 1272
+: 1290 4 6 Mar
+: 1295 3 4 ches 
+: 1299 7 2 of 
+: 1308 6 1 pro
+: 1316 22 -1 test
+- 1338
+: 1346 4 -1 Not 
+: 1351 6 -1 stop
+: 1358 4 -1 ping 
+: 1363 4 1 the 
+: 1368 8 2 wa
+: 1377 17 4 ~r
+- 1394
+: 1414 2 6 Or 
+: 1417 3 6 the 
+: 1421 4 6 kil
+: 1426 3 4 ler 
+: 1430 3 2 of 
+: 1435 9 1 gi
+: 1446 21 -1 ants
+- 1467
+: 1479 2 6 The 
+: 1483 3 6 kil
+: 1487 3 4 ler 
+: 1491 5 2 of 
+: 1497 7 1 gi
+: 1507 23 -1 ants
+- 1530 1541
+- 1541
+: 1561 16 1 Mo
+: 1579 12 -1 ther 
+: 1593 14 4 na
+: 1609 14 2 ture
+- 1623
+: 1625 16 1 Peo
+: 1643 13 -1 ple 
+: 1658 14 4 state 
+: 1675 12 2 your 
+: 1689 18 1 case 
+: 1709 12 -1 with
+: 1724 8 4 out 
+* 1735 13 6 its 
+* 1751 16 6 worth
+- 1767 1794
+- 1794
+: 1814 5 1 Your 
+: 1820 16 -1 seas 
+: 1837 12 1 run 
+: 1851 13 -1 dry 
+: 1868 12 1 your 
+: 1882 16 1 sleep
+: 1900 16 -1 less 
+: 1918 16 2 eyes
+- 1934
+: 1935 11 1 Are 
+: 1947 22 -1 turning 
+: 1981 8 4 red 
+: 1992 13 6 a
+: 2009 20 6 lert
+- 2029 2038
+- 2038
+: 2058 5 6 Kil
+: 2064 4 4 ler 
+: 2069 6 2 of 
+: 2076 8 1 gi
+: 2085 24 -1 ants
+- 2109
+: 2125 4 -1 Threa
+: 2130 3 1 tens 
+: 2134 7 2 us 
+: 2142 7 -3 a
+: 2150 4 -1 ~
+: 2155 16 -3 ~ll
+- 2171
+: 2189 4 6 Moun
+: 2194 3 4 tains 
+: 2198 7 2 of 
+: 2206 7 1 mad
+: 2214 23 -1 ness
+- 2237
+: 2252 4 -1 Stan
+: 2257 3 1 ding 
+: 2261 5 2 so 
+: 2267 8 2 ta
+: 2276 4 1 ~
+: 2281 17 -3 ~ll
+- 2298
+: 2317 4 6 Ri
+: 2322 3 4 sing 
+: 2326 5 2 so 
+: 2332 8 1 proud
+: 2341 18 -1 ly
+- 2359
+: 2373 4 -1 It 
+: 2378 3 -1 has 
+: 2382 3 -1 no
+: 2386 3 1 where 
+: 2390 7 2 to 
+: 2399 26 4 fa
+: 2427 6 6 ~ll
+- 2433
+: 2435 3 6 Oh 
+: 2439 4 6 this 
+: 2444 3 6 kil
+: 2448 3 4 ler 
+: 2452 5 2 of 
+: 2458 8 1 gi
+: 2468 20 -1 ants
+- 2488 4294
+- 4294
+: 4314 3 6 Kil
+: 4318 2 4 ler 
+: 4321 4 2 of 
+: 4327 7 1 gi
+: 4336 17 -1 ants
+- 4353 4356
+- 4356
+: 4376 4 -1 Threa
+: 4381 6 1 tens 
+: 4389 4 2 us 
+: 4394 9 -3 a
+* 4404 3 -1 ~
+: 4408 12 -3 ~ll
+- 4420 4422
+- 4422
+: 4442 4 6 Moun
+: 4447 3 4 tains 
+: 4451 7 2 of 
+: 4459 6 1 mad
+: 4466 18 -1 ness
+- 4484 4485
+- 4485
+: 4505 4 -1 Stan
+: 4510 4 1 ding 
+: 4515 6 2 so 
+: 4522 7 2 ta
+: 4530 4 1 ~
+: 4536 14 -3 ~ll
+- 4550
+: 4570 4 6 Mar
+: 4575 3 4 ches 
+: 4579 7 2 of 
+: 4588 6 1 pro
+: 4598 17 -1 test
+- 4615
+: 4626 4 -1 Not 
+: 4631 6 -1 stop
+: 4638 4 -1 ping 
+: 4644 4 1 the 
+: 4649 7 2 wa
+: 4658 14 4 ~r
+- 4672 4677
+- 4677
+: 4697 3 6 The 
+: 4701 3 6 kil
+: 4705 3 4 ler 
+: 4709 4 2 of 
+: 4714 8 1 gi
+: 4724 19 -1 ants
+- 4743
+: 4759 2 6 The 
+: 4762 3 6 kil
+: 4766 3 4 ler 
+: 4771 5 2 of 
+: 4778 6 1 gi
+: 4786 24 -1 ants
+- 4810
+: 4828 4 6 Kil
+: 4833 3 4 ler 
+: 4837 5 2 of 
+: 4843 5 1 gi
+: 4850 21 -1 ants
+- 4871
+: 4891 4 6 Kil
+: 4896 3 4 ler 
+: 4900 5 2 of 
+: 4907 6 1 gi
+: 4915 31 -1 ants
+E
