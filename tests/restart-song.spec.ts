@@ -20,6 +20,7 @@ test('should restart the song and the scores', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Select Advanced setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
     await pages.advancedConnectionPage.goToMainMenu();
   });

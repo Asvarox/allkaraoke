@@ -27,9 +27,6 @@ test('New songs - displays new song twice by default and doesnt show it in filte
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.waitForTimeout(100);
-  await pages.inputSelectionPage.skipToMainMenu();
-  await page.waitForTimeout(500);
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await expect(await pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
@@ -56,7 +53,6 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
@@ -66,7 +62,6 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
 test('New songs - doesnt display new songs on first visit', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await expect(await pages.songListPage.getSongElement(song)).toBeVisible();

@@ -55,7 +55,6 @@ test('Convert song', async ({ page }) => {
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
 

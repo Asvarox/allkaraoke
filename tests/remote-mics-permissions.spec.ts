@@ -16,7 +16,6 @@ const playerName = 'E2E Test Blue';
 test('Should properly manage remote mics permission settings', async ({ page, browser }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSetting();
   await pages.settingsPage.openRemoteMicSettings();
 

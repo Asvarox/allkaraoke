@@ -31,6 +31,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Singstar mic', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectMultipleMicrophones();
     await pages.inputSelectionPage.selectSingstarMicrophones();
     await expect(pages.singstarConnectionPage.detectionAdvancedTip).toBeVisible();
@@ -70,6 +71,7 @@ test('Selected device after reconnecting is selected again', async ({ page, cont
 
   await test.step('Connect new device and go to advanced setup', async () => {
     await connectDevices(newDevice);
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -111,6 +113,7 @@ test('Properly labels multichannel devices', async ({ page, context }) => {
 
   await test.step('Connect new device and go to advanced setup', async () => {
     await connectDevices(newDevice);
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -137,9 +140,12 @@ test('Remote mic is deselected when it disconnects', async ({ page, context, bro
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectAdvancedSetup();
 
-  // Connect microphone
+  await test.step('Select Advanced setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+  });
+
   const remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, playerName);
 
   await test.step('Check visibility of mic source and player1 name', async () => {
@@ -169,6 +175,7 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
   });
 
   await test.step('Go to computers mic and select mic input', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();
     await expect(pages.computersMicConnectionPage.micInputNameElement).toContainText(micNameDef);
   });

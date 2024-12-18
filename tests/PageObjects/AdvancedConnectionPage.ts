@@ -7,12 +7,16 @@ export class AdvancedConnectionPagePO {
     private browser: Browser,
   ) {}
 
-  public get singSongButton() {
+  public get saveButton() {
     return this.page.getByTestId('save-button');
   }
 
   public async goToMainMenu() {
-    await this.singSongButton.click();
+    await this.saveButton.click();
+  }
+
+  public async goToSongPreview() {
+    await this.saveButton.click();
   }
 
   public get changeInputTypeButton() {

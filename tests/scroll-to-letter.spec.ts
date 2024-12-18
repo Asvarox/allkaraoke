@@ -19,7 +19,6 @@ test('Scrolling to letter works', async ({ page }) => {
 
   await test.step('Go to song list page', async () => {
     await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToSingSong();
   });
 

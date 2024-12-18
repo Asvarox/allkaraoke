@@ -15,7 +15,6 @@ test('Fullscreen is turning on automatically, if user doesnt turn off fullscreen
   await pages.landingPage.enterTheGame();
 
   await test.step('Fullscreen is disabled by default', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.toolbar.expectFullscreenToBeOff();
   });
 

@@ -14,7 +14,6 @@ test('Jukebox', async ({ page }) => {
 
   await test.step('Go to Jukebox', async () => {
     await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToJukebox();
   });
 

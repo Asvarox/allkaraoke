@@ -23,8 +23,12 @@ export class MainMenuPagePO {
     await navigateWithKeyboard(this.page, 'sing-a-song', remoteMic);
   }
 
-  public async goToSetupMicrophones() {
-    await this.page.getByTestId('select-input').click();
+  public get setupMicrophonesButton() {
+    return this.page.getByTestId('select-input');
+  }
+
+  public async goToInputSelectionPage() {
+    await this.setupMicrophonesButton.click();
   }
 
   public async goToSetting() {

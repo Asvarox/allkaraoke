@@ -12,7 +12,6 @@ test.beforeEach(async ({ page, context, browser }) => {
 test('Help', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
 
   await test.step('Help container is visible by default on the page if it is not turned off', async () => {
     await expect(pages.mainMenuPage.singSongButton).toBeVisible();

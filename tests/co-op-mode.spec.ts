@@ -17,13 +17,17 @@ const redMicNum = 1;
 const player1Name = 'Player #1';
 const player2Name = 'Player #2';
 
-test('Cooperation mode', async ({ page, browserName }, testInfo) => {
+test('Cooperation mode', async ({ page }) => {
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.goToMainMenu();
-  await pages.mainMenuPage.goToSingSong();
+
+  await test.step('Select Advanced setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+  });
 
   await test.step('Make sure song language is selected', async () => {
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);

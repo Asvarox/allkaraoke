@@ -21,6 +21,7 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
   await test.step('Go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 

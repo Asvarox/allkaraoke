@@ -42,6 +42,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Select Advanced setup', async () => {
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
     await pages.advancedConnectionPage.goToMainMenu();
   });

@@ -14,6 +14,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
   await test.step('Select Advanced setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -56,6 +57,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('Select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 
