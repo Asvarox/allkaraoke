@@ -10353,6 +10353,32 @@
     "local": false
   },
   {
+    "id": "barry-manilow-mandy",
+    "title": "Mandy",
+    "artist": "Barry Manilow",
+    "video": "AvGpvQbkccE",
+    "language": [
+      "English"
+    ],
+    "bpm": 103.3,
+    "gap": 18625.582524271846,
+    "year": "1974",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.545Z",
+    "realBpm": 104,
+    "previewStart": 54,
+    "previewEnd": 90,
+    "volume": 0.76,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "barrymanilowmandy",
+    "local": false
+  },
+  {
     "id": "basshunter-boten-anna",
     "title": "Boten Anna",
     "artist": "Basshunter",
@@ -18905,6 +18931,32 @@
     ],
     "tracksCount": 1,
     "search": "capitalinicialprimeiroserroschove",
+    "local": false
+  },
+  {
+    "id": "cardi-b-bodak-yellow",
+    "title": "Bodak Yellow",
+    "artist": "Cardi B",
+    "video": "PEGccV-NOm8",
+    "language": [
+      "English"
+    ],
+    "bpm": 386.19,
+    "gap": 13850.134389808125,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.824Z",
+    "genre": "Hip-Hop",
+    "realBpm": 125,
+    "volume": 0.71,
+    "author": "Johhny2424",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cardibbodakyellow",
     "local": false
   },
   {
@@ -29160,6 +29212,31 @@
     ],
     "tracksCount": 1,
     "search": "dojacatsayso",
+    "local": false
+  },
+  {
+    "id": "doja-cat-woman",
+    "title": "Woman",
+    "artist": "Doja Cat",
+    "video": "yxW5yuzVi8w",
+    "language": [
+      "English"
+    ],
+    "bpm": 216.02,
+    "gap": 19237.86779001944,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.822Z",
+    "realBpm": 108,
+    "volume": 0.73,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dojacatwoman",
     "local": false
   },
   {
@@ -40796,6 +40873,33 @@
     "local": false
   },
   {
+    "id": "haruhi-suzumiya-cv-aya-hirano-god-knows",
+    "title": "God Knows",
+    "artist": "Haruhi Suzumiya (CV: Aya Hirano)",
+    "video": "WWB01IuMvzA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300,
+    "gap": 28550,
+    "year": "2009",
+    "lastUpdate": "2024-12-19T00:12:09.675Z",
+    "genre": "Anime",
+    "realBpm": 144,
+    "previewStart": 66,
+    "previewEnd": 109,
+    "volume": 0.84,
+    "author": "mistnmc",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "haruhisuzumiyacvayahiranogodknows",
+    "local": false
+  },
+  {
     "id": "hashimoto-ushio-rashiku-ikimasho-tv",
     "title": "Rashiku Ikimasho (TV)",
     "artist": "Hashimoto Ushio",
@@ -43640,6 +43744,57 @@
     "local": false
   },
   {
+    "id": "inxs-disappear",
+    "title": "Disappear",
+    "artist": "INXS",
+    "video": "Xvo-bfaVsg0",
+    "language": [
+      "English"
+    ],
+    "bpm": 374.8,
+    "gap": 14400,
+    "year": "1990",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-12-19T00:12:09.397Z",
+    "realBpm": 125,
+    "volume": 0.75,
+    "author": "sledge",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "inxsdisappear",
+    "local": false
+  },
+  {
+    "id": "inxs-need-you-tonight",
+    "title": "Need You Tonight",
+    "artist": "INXS",
+    "video": "w-rv2BQa2OU",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.7,
+    "gap": 13226.4676159853,
+    "year": "1987",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-12-19T00:12:09.399Z",
+    "genre": "Rock",
+    "realBpm": 109,
+    "volume": 0.74,
+    "author": "ultrastarsongs",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "inxsneedyoutonight",
+    "local": false
+  },
+  {
     "id": "inxs-never-tear-us-apart",
     "title": "Never Tear Us Apart",
     "artist": "INXS",
@@ -44342,6 +44497,31 @@
     ],
     "tracksCount": 1,
     "search": "jamesarthursayyouwontletgo",
+    "local": false
+  },
+  {
+    "id": "james-bay-hold-back-the-river",
+    "title": "Hold Back The River",
+    "artist": "James Bay",
+    "video": "mqiH0ZSkM9I",
+    "language": [
+      "English"
+    ],
+    "bpm": 270.08,
+    "gap": 16560.296208530806,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-19T00:12:09.395Z",
+    "realBpm": 135,
+    "volume": 0.75,
+    "author": "SuperSimo",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jamesbayholdbacktheriver",
     "local": false
   },
   {
@@ -48252,6 +48432,31 @@
     ],
     "tracksCount": 1,
     "search": "junhiroesilentvoice",
+    "local": false
+  },
+  {
+    "id": "jung-kook-usher-standing-next-to-you-usher-remix",
+    "title": "Standing Next To You (Usher Remix)",
+    "artist": "Jung Kook, Usher",
+    "video": "O1d2DYZZrek",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.51,
+    "gap": 25253.931379737554,
+    "year": "2024",
+    "lastUpdate": "2024-12-19T00:12:09.259Z",
+    "genre": "R&B",
+    "realBpm": 106,
+    "volume": 0.75,
+    "author": "Fiacrester",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jungkookusherstandingnexttoyouusherremix",
     "local": false
   },
   {
@@ -52675,6 +52880,31 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-padam-padam",
+    "title": "Padam Padam",
+    "artist": "Kylie Minogue",
+    "video": "p6Cnazi_Fi0",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.02,
+    "gap": 14793.98406374502,
+    "year": "2023",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-12-19T00:12:09.820Z",
+    "realBpm": 128,
+    "volume": 0.75,
+    "author": "Rubn4",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kylieminoguepadampadam",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-the-loco-motion",
     "title": "The Loco-Motion",
     "artist": "Kylie Minogue",
@@ -53246,6 +53476,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-always-remember-us-this-way",
+    "title": "Always Remember Us This Way",
+    "artist": "Lady Gaga",
+    "video": "5vheNbQlsyU",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.16,
+    "gap": 31389.833948339485,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.257Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.76,
+    "author": "mustangfred",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagaalwaysrememberusthisway",
+    "local": false
+  },
+  {
     "id": "lady-gaga-ariana-grande-rain-on-me",
     "title": "Rain On Me",
     "artist": "Lady Gaga & Ariana Grande",
@@ -53268,6 +53524,32 @@
     ],
     "tracksCount": 1,
     "search": "ladygagaarianagranderainonme",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-bad-kids",
+    "title": "Bad Kids",
+    "artist": "Lady Gaga",
+    "video": "lxhjHz9FYQE",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 190,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.813Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.9,
+    "author": "klops_007",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagabadkids",
     "local": false
   },
   {
@@ -53491,6 +53773,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-disco-heaven",
+    "title": "Disco Heaven",
+    "artist": "Lady Gaga",
+    "video": "vilqUnAzS60",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 14093.90625,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.811Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "sebs92",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagadiscoheaven",
+    "local": false
+  },
+  {
     "id": "lady-gaga-feat-beyonce-telephone",
     "title": "Telephone",
     "artist": "Lady Gaga feat. Beyoncé",
@@ -53575,6 +53883,58 @@
     ],
     "tracksCount": 1,
     "search": "ladygagafreewoman",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-guy",
+    "title": "G.U.Y.",
+    "artist": "Lady Gaga",
+    "video": "ohs0a-QnFF4",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 407.27272727272737,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.815Z",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 0.75,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagaguy",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-highway-unicorn-road-to-love",
+    "title": "Highway Unicorn (Road To Love)",
+    "artist": "Lady Gaga",
+    "video": "-Q0m-48Sjok",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 57.03125,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.959Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.75,
+    "author": "klops_007",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagahighwayunicornroadtolove",
     "local": false
   },
   {
@@ -53716,6 +54076,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-replay",
+    "title": "Replay",
+    "artist": "Lady Gaga",
+    "video": "ZTwpCLZLdRs",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 19816.39344262295,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.816Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.74,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagareplay",
+    "local": false
+  },
+  {
     "id": "lady-gaga-speechless",
     "title": "Speechless",
     "artist": "Lady Gaga",
@@ -53739,6 +54125,31 @@
     ],
     "tracksCount": 1,
     "search": "ladygagaspeechless",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-stupid-love",
+    "title": "Stupid Love",
+    "artist": "Lady Gaga",
+    "video": "5L6xyaeiV58",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.76,
+    "gap": 22742.015609093993,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-19T00:12:09.819Z",
+    "realBpm": 118,
+    "volume": 0.75,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagastupidlove",
     "local": false
   },
   {
@@ -64877,6 +65288,33 @@
     ],
     "tracksCount": 1,
     "search": "mikagracekelly",
+    "local": false
+  },
+  {
+    "id": "mika-kobayashi-brethless",
+    "title": "BRE@TH//LESS",
+    "artist": "Mika Kobayashi",
+    "video": "xHCE8GnlYkI",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 16596,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-19T00:12:09.402Z",
+    "genre": "Jrock",
+    "realBpm": 120,
+    "volume": 0.7,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "name": "Bre@th//Less",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mikakobayashibrethless",
     "local": false
   },
   {
@@ -83224,6 +83662,31 @@
     "local": false
   },
   {
+    "id": "sawanohiroyukinzk-yosh-scapegoat",
+    "title": "scaPEGoat",
+    "artist": "SawanoHiroyuki[nZk] Yosh",
+    "video": "sCTdrDZmAIM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 312.08,
+    "gap": 12780.643424762882,
+    "year": "2015",
+    "lastUpdate": "2024-12-19T00:12:08.404Z",
+    "genre": "Anime",
+    "realBpm": 156,
+    "volume": 0.85,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sawanohiroyukinzkyoshscapegoat",
+    "local": false
+  },
+  {
     "id": "scars-on-broadway-funny",
     "title": "Funny",
     "artist": "Scars On Broadway",
@@ -94841,6 +95304,32 @@
     "local": false
   },
   {
+    "id": "the-last-dinner-party-nothing-matters",
+    "title": "Nothing Matters",
+    "artist": "The Last Dinner Party",
+    "video": "pETz4IMmeDU",
+    "language": [
+      "English"
+    ],
+    "bpm": 190,
+    "gap": 4013.684210526316,
+    "year": "2023",
+    "lastUpdate": "2024-12-19T00:12:09.093Z",
+    "genre": "Indie Rock",
+    "realBpm": 51,
+    "volume": 0.8,
+    "author": "UltraSinger [GitHub] 0.0.12-dev2",
+    "tracks": [
+      {
+        "name": "Nothing Matters",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thelastdinnerpartynothingmatters",
+    "local": false
+  },
+  {
     "id": "the-little-mermaid-part-of-your-world",
     "title": "Part Of Your World",
     "artist": "The Little Mermaid",
@@ -101903,7 +102392,7 @@
     "gap": 12712.981385413488,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2024-08-15T00:15:52.933Z",
+    "lastUpdate": "2024-12-17T13:30:19.404Z",
     "genre": "Parody",
     "realBpm": 81,
     "volume": 0.85,
