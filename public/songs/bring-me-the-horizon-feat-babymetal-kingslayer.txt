@@ -1,0 +1,501 @@
+#ARTIST:Bring Me The Horizon feat. Babymetal
+#TITLE:Kingslayer
+#CREATOR:Edi316
+#BPM:374,61
+#YEAR:2020
+#VIDEO:v=fKyXvNkGQKc
+#LANGUAGE:English, Japanese
+#GAP:25108,958917273965
+#ALLKARAOKE_ID:bring-me-the-horizon-feat-babymetal-kingslayer
+#ALLKARAOKE_LASTUPDATE:2024-12-21T00:11:16.655Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=150321
+#ALLKARAOKE_REALBPM:186
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28755
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Bring Me The Horizon feat. Babymetal - Kingslayer.mp3
+#COVER:Bring Me The Horizon feat. Babymetal - Kingslayer [CO].jpg
+#BACKGROUND:Bring Me The Horizon feat. Babymetal - Kingslayer [BG].jpg
+: 25 3 6 Hi
+: 29 4 8 ~, 
+: 49 2 8 are 
+: 52 3 8 you 
+: 58 2 8 look
+: 61 2 8 ing 
+: 65 2 8 for 
+: 70 2 8 the 
+: 75 1 8 o
+: 77 3 6 ~
+: 82 2 6 ther 
+: 91 2 6 si
+: 94 4 8 ~de?
+- 98
+: 114 3 8 Feel 
+: 118 2 8 like 
+: 122 2 9 no
+: 127 2 9 thing 
+: 131 3 9 e
+: 135 1 9 ver 
+: 139 4 9 seems 
+: 148 4 11 quite 
+: 155 5 8 right?
+- 160
+: 178 2 8 Are 
+: 182 2 8 you 
+: 187 3 8 cir
+: 192 2 8 cl
+: 196 3 8 ing 
+: 200 2 8 the 
+: 204 3 8 dra
+: 208 2 6 ~in
+: 212 4 6 pipe, 
+: 220 3 8 get
+: 225 2 8 ting 
+: 228 2 8 off 
+: 232 2 8 on 
+: 236 3 8 pa
+: 240 2 6 ~in 
+: 243 4 6 like
+- 247
+F 251 4 0 You're 
+F 260 4 0 cor
+F 267 4 0 rup
+F 275 4 0 ted?
+- 279
+: 284 9 8 I 
+: 309 2 8 need 
+: 313 2 8 to 
+: 317 3 8 know 
+: 321 2 8 where 
+: 324 2 8 your 
+: 328 3 8 lo
+: 332 3 8 ya
+: 337 2 8 ll
+: 341 4 6 ties 
+: 350 2 6 lie
+: 353 5 8 ~
+- 358
+: 373 3 8 Tell 
+: 377 3 8 me, 
+: 381 2 9 are 
+: 384 3 9 you 
+: 390 3 9 gon
+: 394 1 9 na 
+: 397 4 9 bark 
+: 406 4 11 or 
+: 414 10 8 bite?
+- 424
+: 438 2 8 Do 
+: 442 2 8 you 
+: 446 3 8 real
+: 450 2 8 ly 
+: 454 3 8 wan
+: 458 2 8 na 
+: 463 4 8 twist 
+: 471 3 6 a 
+: 478 3 6 kni
+: 482 3 8 ~fe 
+: 487 2 8 in 
+: 490 2 9 the 
+: 495 3 8 be
+: 499 2 6 ~
+: 502 4 6 lly
+- 506
+F 510 5 0 Of 
+F 519 3 0 the 
+F 527 4 0 mon
+F 535 4 0 ster?
+- 539
+F 543 5 0 Get 
+F 551 2 0 the 
+F 557 4 0 fuck 
+F 564 3 0 up, 
+F 576 4 0 wake 
+F 583 2 0 the 
+F 589 4 0 fuck 
+F 597 4 0 up
+- 601
+F 609 4 0 Wipe 
+F 616 3 0 the 
+F 622 4 0 sys
+F 629 2 0 tem 
+F 633 4 0 and 
+F 640 5 0 back 
+F 649 2 0 the 
+F 654 4 0 fuck 
+F 662 4 0 up
+- 666
+F 673 5 0 You're 
+F 681 2 0 a 
+F 686 3 0 pup
+F 692 3 0 pet, 
+F 697 3 0 when 
+F 701 3 0 they 
+F 707 3 0 cut 
+F 713 2 0 your 
+F 718 5 0 strings 
+F 726 5 0 off
+- 731
+F 739 3 0 Don't 
+F 746 3 0 come 
+F 755 5 0 craw
+F 763 3 0 ling 
+F 771 10 0 back
+- 781
+: 786 5 11 King
+: 795 3 9 sla
+: 799 3 8 ~y
+: 803 30 8 er, 
+: 846 2 4 de
+: 851 7 4 stroy
+: 860 4 4 ing 
+: 868 4 6 cas
+: 876 4 4 tles 
+: 883 6 3 in 
+: 891 2 4 the 
+: 896 8 1 sky
+- 904
+: 915 6 11 King
+: 924 3 9 sla
+: 928 3 8 ~y
+: 932 27 8 e
+: 960 1 9 ~
+: 962 1 8 ~
+: 964 5 6 ~r, 
+: 977 3 4 for
+: 981 3 4 e
+: 985 3 4 ver
+: 990 2 4 more 
+: 994 2 4 the 
+: 998 5 6 app
+: 1005 2 4 le 
+: 1011 3 4 of 
+: 1016 3 6 my
+: 1020 3 8 ~ 
+: 1025 10 8 eye
+- 1035
+: 1049 5 13 I'd 
+: 1058 11 13 sa
+: 1070 3 11 cri
+: 1075 3 8 fice 
+: 1082 3 11 my 
+: 1090 2 11 li
+: 1093 3 13 ~fe 
+: 1098 3 11 to 
+: 1106 4 8 find 
+: 1114 4 11 you, 
+: 1125 8 13 an
+: 1135 4 11 gel 
+: 1142 4 8 of 
+: 1150 3 4 the 
+: 1156 8 6 blade
+- 1164
+: 1174 6 11 King
+: 1183 3 9 sla
+: 1187 3 8 ~y
+: 1191 30 8 er, 
+: 1232 5 8 come 
+: 1240 5 8 and 
+: 1248 6 8 col
+: 1256 4 9 lect 
+: 1264 2 8 us 
+: 1268 4 8 from 
+* 1276 38 13 night
+- 1314 1555
+- 1555
+: 1580 8 8 Kurai, 
+: 1604 3 8 ko
+: 1608 2 8 no 
+: 1612 4 8 mi
+: 1617 2 8 e
+: 1621 3 8 nai 
+: 1629 5 8 se
+: 1637 5 6 ka
+: 1645 7 8 i
+- 1652
+: 1669 3 8 Ma
+: 1673 2 8 da 
+: 1677 2 9 ki
+: 1681 3 9 e
+: 1686 3 9 nai 
+: 1694 6 9 mi
+: 1702 6 11 ra
+: 1709 8 8 i
+- 1717
+: 1734 2 8 Ta
+: 1737 3 8 da 
+: 1742 2 8 te 
+: 1746 2 8 ni 
+: 1750 2 8 i
+: 1754 2 8 re
+: 1759 5 8 ta
+: 1765 2 6 i 
+: 1769 3 6 a
+: 1775 2 6 no
+: 1778 2 8 ~
+: 1782 4 8 ther 
+: 1790 4 8 wo
+: 1795 3 6 ~rld
+- 1798
+F 1807 4 0 Sys
+F 1815 4 0 tem 
+F 1824 5 0 fail
+F 1832 3 0 ure
+- 1835
+: 1839 6 8 Life 
+: 1863 2 8 is 
+: 1867 3 8 en
+: 1872 2 8 cryp
+: 1875 2 8 ted, 
+: 1880 2 8 you 
+: 1884 2 8 are 
+: 1888 2 8 mo
+: 1891 3 6 ~
+: 1896 3 6 di
+: 1904 6 8 fied
+- 1910
+: 1928 2 8 Like 
+: 1932 2 8 a 
+: 1936 1 8 vi
+: 1938 1 9 ~r
+: 1940 2 9 us 
+: 1945 1 9 in 
+: 1948 2 9 a 
+: 1952 7 9 lul
+: 1961 1 9 la
+: 1963 3 11 ~
+: 1968 8 8 by
+- 1976
+: 1993 2 8 Ar
+: 1996 2 8 ti
+: 2001 2 8 fi
+: 2005 2 8 cial 
+: 2009 3 8 till 
+: 2013 2 8 the 
+: 2017 4 8 da
+: 2022 2 6 ~y 
+: 2026 4 6 you 
+: 2034 5 8 die, 
+: 2042 2 8 sil
+: 2045 2 9 ly 
+: 2051 1 8 pro
+: 2053 3 6 ~
+: 2058 4 6 gramme
+- 2062
+F 2066 4 0 You're 
+F 2074 5 0 cor
+F 2083 5 0 rup
+F 2090 4 0 ted
+- 2094
+F 2099 4 0 Get 
+F 2107 3 0 the 
+F 2113 3 0 fuck 
+F 2120 4 0 up, 
+F 2132 4 0 wake 
+F 2139 2 0 the 
+F 2145 4 0 fuck 
+F 2152 6 0 up
+- 2158
+F 2165 4 0 Wipe 
+F 2172 3 0 the 
+F 2177 4 0 sys
+F 2184 2 0 tem 
+F 2188 4 0 and 
+F 2195 4 0 back 
+F 2203 3 0 the 
+F 2209 4 0 fuck 
+F 2217 5 0 up
+- 2222
+F 2229 4 0 You're 
+F 2236 2 0 a 
+F 2241 4 0 pup
+F 2248 2 0 pet, 
+F 2252 3 0 when 
+F 2256 3 0 they 
+F 2262 3 0 cut 
+F 2268 3 0 your 
+F 2274 4 0 strings 
+F 2282 4 0 off
+- 2286
+F 2293 4 0 Don't 
+F 2301 4 0 come 
+F 2309 6 0 craw
+F 2317 4 0 ling 
+F 2325 4 0 back, 
+F 2334 4 0 you're 
+F 2342 4 0 on 
+F 2349 4 0 your 
+F 2357 8 0 own
+- 2365
+* 2373 6 6 Sā
+* 2380 24 8 ~ 
+: 2406 5 6 to
+: 2415 3 9 ki
+: 2419 3 8 ~ 
+: 2423 10 8 no
+- 2433
+: 2447 5 1 To
+: 2454 6 9 bi
+: 2461 4 11 ~
+: 2467 9 9 ra 
+: 2478 4 11 o 
+: 2486 5 6 a
+: 2492 5 8 ~
+: 2499 9 8 ke
+: 2511 7 8 te
+: 2519 6 6 i 
+: 2531 12 6 kō
+: 2544 5 8 ~ 
+: 2552 3 3 yo
+: 2556 28 5 ~
+- 2584
+: 2600 5 11 King
+: 2609 3 9 sla
+: 2613 3 8 ~y
+: 2617 30 8 er, 
+: 2661 2 4 de
+: 2665 7 4 stroy
+: 2674 3 4 ing 
+: 2681 3 4 ca
+: 2685 3 6 ~st
+: 2691 3 4 les 
+: 2698 4 3 in 
+: 2705 2 4 the 
+: 2710 8 1 sky
+- 2718
+* 2730 5 11 King
+* 2738 3 9 sla
+* 2742 3 8 ~y
+* 2746 26 8 e
+* 2773 1 9 ~
+* 2775 2 8 ~
+* 2778 4 6 ~r, 
+: 2790 2 4 I'll 
+: 2794 4 4 fight 
+: 2803 4 4 for 
+: 2810 5 6 you 
+: 2819 2 4 un
+: 2823 4 8 til 
+: 2831 4 9 I 
+: 2839 14 8 die
+- 2853
+: 2860 5 11 King
+: 2868 4 9 sla
+: 2873 2 8 ~y
+: 2876 30 8 er, 
+: 2920 2 4 de
+: 2925 6 4 stroy
+: 2933 3 4 ing 
+: 2941 5 6 cas
+: 2949 4 4 tles 
+: 2957 4 3 in 
+: 2965 2 4 the 
+: 2969 8 1 sky
+- 2977
+: 2989 5 11 King
+: 2997 3 9 sla
+: 3001 4 8 ~y
+: 3006 27 8 e
+: 3034 1 9 ~
+: 3036 1 8 ~
+: 3038 4 6 ~r, 
+: 3050 3 4 for
+: 3054 2 4 e
+: 3058 3 4 ver
+: 3063 2 4 more 
+: 3066 3 4 the 
+: 3071 6 6 app
+: 3078 2 4 le 
+: 3082 4 4 of 
+: 3090 3 6 my
+: 3094 3 8 ~ 
+: 3099 8 8 eye
+- 3107
+: 3122 5 13 I'd 
+: 3132 10 13 sa
+: 3143 2 11 cri
+: 3147 5 13 fice 
+: 3156 3 11 it 
+: 3162 5 13 all 
+: 3171 4 11 to 
+: 3179 5 13 guide 
+: 3188 4 11 you, 
+: 3196 2 13 ne
+: 3199 4 15 ~
+: 3204 3 15 ver 
+: 3209 2 15 have 
+: 3212 2 15 to 
+: 3216 3 15 bat
+: 3220 2 16 tle 
+: 3224 3 15 a
+: 3228 10 13 lone
+- 3238
+: 3248 5 11 King
+: 3257 3 9 sla
+: 3261 3 8 ~y
+: 3265 28 8 er, 
+: 3305 6 8 come 
+: 3314 5 8 and 
+: 3321 6 8 col
+: 3329 4 9 lect 
+: 3338 2 9 us 
+: 3342 5 8 from 
+: 3349 44 13 night
+- 3393 3678
+- 3678
+F 3703 2 0 This 
+F 3708 2 0 is 
+F 3714 3 0 your 
+F 3719 4 0 wake 
+F 3725 3 0 up 
+F 3731 6 0 call
+- 3737 3740
+- 3740
+F 3765 2 0 We're 
+F 3768 3 0 go
+F 3772 2 0 ing 
+F 3776 3 0 down 
+F 3781 2 0 the 
+F 3785 3 0 rab
+F 3789 2 0 bit 
+F 3798 6 0 hole
+- 3804 3814
+- 3814
+F 3839 2 0 Are 
+F 3843 2 0 you 
+F 3847 2 0 rea
+F 3850 4 0 dy?
+- 3854 3855
+- 3855
+F 3880 5 0 I 
+F 3888 5 0 can't 
+F 3897 7 0 feel 
+F 3911 141 0 you
+- 4052 4131
+- 4131
+F 4156 25 0 Oh, 
+F 4188 24 0 yeah
+- 4212 4438
+- 4438
+F 4463 13 0 Is 
+F 4480 3 0 this 
+F 4486 3 0 what 
+F 4492 2 0 you 
+F 4496 16 0 want?
+- 4512 4517
+- 4517
+F 4542 2 0 This 
+F 4546 2 0 is 
+F 4552 2 0 what 
+F 4556 4 0 you'll 
+F 4568 4 0 fuck
+F 4574 4 0 ing 
+F 4584 8 0 get
+- 4592 4608
+- 4608
+F 4633 4 0 You 
+F 4642 3 0 mo
+F 4646 4 0 ther
+F 4657 4 0 fuck
+F 4663 4 0 ing 
+F 4674 14 0 shit
+E
