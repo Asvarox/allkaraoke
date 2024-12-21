@@ -194,22 +194,22 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           height: totalHeight,
         }}>
         {Header && <Header context={props.context} />}
+        {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
+          <>
+            {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
+              style: {
+                width: '100%',
+                position: 'absolute',
+                top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
+                left: 0,
+                boxSizing: 'border-box',
+              },
+              'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
+              'data-virtualized-index': itemsPositions[forcedItemIndex].index,
+            })}
+          </>
+        )}
         <div style={{ transform: `translateY(${pt}px)` }}>
-          {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
-            <>
-              {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
-                style: {
-                  width: '100%',
-                  position: 'absolute',
-                  top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
-                  left: 0,
-                  boxSizing: 'border-box',
-                },
-                'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
-                'data-virtualized-index': itemsPositions[forcedItemIndex].index,
-              })}
-            </>
-          )}
           {groupedItemsToRender.map((group, index) => (
             // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
             <div
