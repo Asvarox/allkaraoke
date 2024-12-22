@@ -91,7 +91,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
         if (songIndexMatrix[y] === undefined) {
           debugger;
         }
-        const maxXInRow = songIndexMatrix[y]?.length - 1 ?? 0;
+        const maxXInRow = (songIndexMatrix[y]?.length ?? 1) - 1;
         newX = Math.min(x, maxXInRow) + delta;
         if (newX < 0) {
           newY = (songIndexMatrix.length + y - 1) % songIndexMatrix.length;

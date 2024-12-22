@@ -16,7 +16,7 @@ const getColors = (color: string) => {
   return cachedColors[color];
 };
 
-console.log(cachedColors);
+console.log('cachedColors', cachedColors);
 
 export default function ray(
   canvas: HTMLCanvasElement,
