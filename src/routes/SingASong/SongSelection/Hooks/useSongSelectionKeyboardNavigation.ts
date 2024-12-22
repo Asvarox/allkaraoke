@@ -14,8 +14,6 @@ import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongList
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
 
-  // creates a "hash" of the groups to detect changes
-  const groupShape = useMemo(() => groups.map(({ songs }) => songs.length).join(','), [groups]);
   const songIndexMatrix = useMemo(
     () =>
       groups
@@ -26,7 +24,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
           ),
         )
         .flat(),
-    [groupShape, itemsPerRow],
+    [groups, itemsPerRow],
   );
   const songGroupMatrix = useMemo(
     () =>
@@ -38,7 +36,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
           ),
         )
         .flat(),
-    [groupShape, itemsPerRow],
+    [groups, itemsPerRow],
   );
 
   const previousMatrix = usePrevious(songIndexMatrix ?? []);
@@ -83,6 +81,8 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
   const moveCursor = (plane: 'x' | 'y', delta: number) => {
     menuNavigate.play();
     setCursorPosition(([x, y]) => {
+      // in case list is empty
+      if (songIndexMatrix.length === 0) return [0, 0];
       let newX = x;
       let newY = y;
       if (plane === 'y') {
@@ -91,7 +91,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
         if (songIndexMatrix[y] === undefined) {
           debugger;
         }
-        const maxXInRow = songIndexMatrix[y].length - 1;
+        const maxXInRow = songIndexMatrix[y]?.length - 1 ?? 0;
         newX = Math.min(x, maxXInRow) + delta;
         if (newX < 0) {
           newY = (songIndexMatrix.length + y - 1) % songIndexMatrix.length;

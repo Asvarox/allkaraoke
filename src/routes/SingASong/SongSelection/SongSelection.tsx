@@ -159,7 +159,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         previewLeft: song.offsetLeft,
       });
     } else if (!isLoading) {
-      console.warn('!!!!!!!!!!!! Song not found !!!!!!!!!!!!');
+      console.warn('!!!!!!!!!!!! Song not found !!!!!!!!!!!!', focusedSong, focusedGroup);
     }
   }, [focusedSong, focusedGroup, isLoading, width]);
 

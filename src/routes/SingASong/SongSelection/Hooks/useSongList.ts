@@ -34,8 +34,6 @@ export default function useSongList() {
     useSongListFilter(songList.data, popular, isLoading);
 
   const groupedSongList = useMemo(() => {
-    if (filteredList.length === 0) return [];
-
     const groups: SongGroup[] = [];
 
     if (filters.search) {
@@ -46,6 +44,7 @@ export default function useSongList() {
 
       return groups;
     } else {
+      if (filteredList.length === 0) return [];
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
 
       sortedList.forEach((song) => {

@@ -3,9 +3,13 @@ export default function startViewTransition(callback: () => void) {
   if (!document.startViewTransition) {
     callback();
   } else {
-    // @ts-expect-error startViewTransition not in typing
-    document.startViewTransition(async () => {
-      await callback();
-    });
+    try {
+      // @ts-expect-error startViewTransition not in typing
+      document.startViewTransition(async () => {
+        await callback();
+      });
+    } catch (e) {
+      console.error(e);
+    }
   }
 }

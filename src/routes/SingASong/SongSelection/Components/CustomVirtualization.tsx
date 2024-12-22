@@ -83,6 +83,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     return sizes;
   }, [props.itemHeight, props.groupHeaderHeight, props.groupSizes]);
 
+  const isEmptyList = !itemsPositions.some((item) => item.type === 'item');
+
   const totalHeight = itemsPositions.at(-1)?.bottom ?? 0;
 
   const computeVisibleItemsRange = useCallback(
@@ -232,7 +234,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           ))}
         </div>
       </Wrapper>
-      {groupedItemsToRender.length === 0 && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
+      {isEmptyList && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
       {Footer && <Footer context={props.context} />}
     </Viewport>
   );
