@@ -1,0 +1,560 @@
+#ARTIST:Icon For Hire
+#TITLE:Make A Move
+#CREATOR:glatkobrasno
+#BPM:360
+#YEAR:2011
+#VIDEO:v=e_S9VvJM1PI
+#LANGUAGE:English
+#GAP:3870
+#ALLKARAOKE_ID:icon-for-hire-make-a-move
+#ALLKARAOKE_LASTUPDATE:2024-12-21T00:11:17.256Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:166
+#ALLKARAOKE_VOLUME:0,81
+#MP3:Icon For Hire - Make A Move.mp3
+: 24 12 12 Somebody 
+: 46 10 9 make 
+: 58 14 6 a 
+: 74 15 2 move
+- 89
+: 90 12 9 Somebody 
+: 110 10 5 make 
+: 122 16 -1 a 
+: 140 15 1 move
+- 155
+: 156 5 -8 Please 
+: 162 12 0 somebody
+- 174
+: 180 9 1 Test 
+: 190 5 -1 my 
+: 196 12 18 reality
+- 208
+: 212 4 13 Check 
+: 218 3 16 if 
+: 222 3 17 there’s 
+: 226 3 11 a 
+: 230 6 14 weak 
+: 238 7 4 spot
+- 245
+: 246 8 13 Clingin 
+: 256 4 10 to 
+: 262 17 4 insanity
+- 279
+: 280 3 10 In 
+: 284 3 12 hopes 
+: 288 3 14 the 
+: 292 3 16 world 
+: 296 5 17 will 
+: 302 6 12 ease 
+: 310 5 4 up
+- 315
+: 316 6 12 Try 
+: 324 1 8 and 
+: 326 3 10 make 
+: 330 4 10 it 
+: 336 3 12 look 
+: 340 3 14 like 
+: 344 3 5 it’s 
+: 348 3 1 all
+- 351
+: 352 11 0 Somehow 
+: 364 9 17 getting 
+: 374 9 16 better
+- 383
+: 384 6 21 Cause 
+: 392 1 23 I 
+: 394 3 22 know 
+: 398 1 17 how 
+: 400 3 20 to 
+: 404 3 0 play 
+: 408 1 12 it
+- 409
+: 410 12 20 Pretty 
+: 424 7 31 good 
+: 432 7 30 against 
+: 440 1 0 the 
+: 442 8 2 measure
+- 450
+: 456 11 14 Everyone 
+: 468 10 17 started 
+: 480 5 11 out 
+: 486 5 15 a 
+: 492 5 9 little 
+: 498 14 5 insane
+- 512
+: 516 11 8 But 
+: 528 3 3 we 
+: 532 4 0 learn 
+: 538 4 9 pretty 
+: 544 4 3 quick 
+: 550 3 9 how 
+: 554 3 12 to
+- 557
+: 558 7 10 Fake 
+: 566 2 6 it 
+: 570 3 12 for 
+: 574 5 7 the 
+: 580 7 11 game
+- 587
+: 588 6 8 But 
+: 596 5 -1 some 
+: 602 3 0 of 
+: 606 4 -2 you 
+: 612 5 0 never 
+: 618 3 1 learned 
+: 622 5 -7 to
+- 627
+: 628 12 -8 Drop 
+: 642 8 -8 the 
+: 652 7 -11 act
+- 659
+: 660 7 -4 So 
+: 668 3 -6 under 
+: 672 8 -5 that 
+: 682 5 4 skin 
+: 688 1 2 of 
+: 690 4 -1 yours: 
+: 696 3 -7 a 
+: 700 8 -11 heart 
+: 710 16 -9 attack
+- 726 758
+- 758
+: 782 5 12 Cause 
+: 788 7 14 everybody’s 
+: 796 10 -8 so 
+: 808 10 -10 scared
+- 818
+: 820 3 -5 We 
+: 824 4 0 don’t 
+: 830 7 5 wanna 
+: 838 7 -3 go 
+: 846 7 -5 there
+- 853
+: 854 7 -5 We 
+: 862 5 12 don’t 
+: 868 4 -3 wanna 
+: 874 3 2 make 
+: 878 3 -1 a 
+: 882 4 1 move
+- 886
+: 890 3 2 We 
+: 894 3 0 got 
+: 898 4 2 all 
+: 904 5 -1 our 
+: 910 3 2 lives 
+: 914 4 0 to 
+: 920 3 -4 lose
+- 923
+: 924 7 19 Screaming 
+: 932 5 15 in 
+: 938 5 -5 the 
+: 944 5 12 dark 
+: 950 11 8 while
+- 961
+: 962 1 -1 We 
+: 964 1 -4 just 
+: 966 4 -2 play 
+: 972 3 -4 our 
+: 976 5 -2 part, 
+: 982 12 -5 I
+- 994
+: 996 1 3 I 
+: 998 3 5 play 
+: 1002 5 6 right 
+: 1008 14 -2 along
+- 1022
+: 1028 1 -2 Like 
+: 1030 1 -1 I 
+: 1032 3 0 don’t 
+: 1036 4 1 know 
+: 1042 6 0 what’s 
+: 1050 5 1 going 
+: 1056 6 -2 on
+- 1062
+: 1064 12 4 Somebody 
+: 1080 12 34 make 
+: 1094 16 -3 a 
+: 1112 17 0 move
+- 1129
+: 1130 14 23 Somebody 
+: 1150 12 -2 make 
+: 1164 17 20 a 
+: 1182 15 -1 move
+- 1197
+: 1198 1 -2 Please 
+: 1200 16 2 somebody 
+: 1220 11 24 make 
+: 1232 18 8 a 
+: 1252 16 -3 move
+- 1268
+: 1270 7 -5 We 
+: 1278 7 -7 all 
+: 1286 16 -10 know
+- 1302
+: 1306 4 8 We 
+: 1312 1 10 all 
+: 1314 5 13 know 
+: 1320 3 8 what’s 
+: 1324 5 4 going 
+: 1330 20 0 on
+- 1350
+: 1356 3 3 And 
+: 1360 1 3 if 
+: 1362 4 4 I 
+: 1368 3 11 had 
+: 1372 3 23 the 
+: 1376 3 21 ans
+: 1380 4 20 wers 
+: 1386 3 18 I’d 
+: 1390 3 12 have 
+: 1394 4 35 written 
+: 1402 5 33 them 
+: 1408 7 -3 out
+- 1415
+: 1416 3 -1 So 
+: 1420 1 -5 I 
+: 1422 4 -4 can 
+: 1428 4 -1 tell 
+: 1434 3 -4 you 
+: 1438 4 0 what 
+: 1444 3 2 to 
+: 1448 4 1 do
+- 1452
+: 1454 1 -4 And 
+: 1456 1 -6 what 
+: 1458 4 -7 this 
+: 1464 4 4 thing 
+: 1470 1 -8 is 
+: 1472 7 -9 ab
+: 1480 10 -7 out
+- 1490
+: 1492 5 4 But 
+: 1498 3 6 all 
+: 1502 1 8 I’ve 
+: 1504 9 4 ever 
+: 1514 7 11 learned 
+: 1522 9 8 comes 
+: 1532 22 4 second-hand
+- 1554
+: 1560 1 12 And 
+: 1562 1 9 I 
+: 1564 8 11 dare 
+: 1574 7 8 not 
+: 1582 7 9 preach
+- 1589
+: 1590 5 7 What 
+: 1596 3 5 I 
+: 1600 7 4 don’t 
+: 1608 20 0 understand
+- 1628
+: 1634 7 4 You 
+: 1642 1 6 and 
+: 1644 7 1 I: 
+: 1652 7 11 we 
+: 1660 7 0 share 
+: 1668 7 -2 the 
+: 1676 3 8 same 
+: 1680 16 11 disease
+- 1696
+: 1704 9 3 Cover 
+: 1714 6 5 up, 
+: 1722 16 12 compromise 
+: 1742 3 17 what 
+: 1746 6 14 we 
+: 1754 10 12 grieve
+- 1764
+: 1766 5 10 I’ve 
+: 1772 5 7 let 
+: 1778 5 12 more 
+: 1784 3 8 than 
+: 1788 5 5 my 
+: 1794 6 0 share 
+: 1802 3 -2 of 
+: 1806 15 21 revivals 
+: 1822 10 -1 die
+- 1832
+: 1842 2 15 This 
+: 1846 7 8 isn’t 
+: 1854 7 33 pretty 
+: 1862 4 -7 but 
+: 1868 3 -1 it’s 
+: 1872 5 0 what 
+: 1878 2 4 I 
+: 1882 5 21 am 
+: 1888 8 22 to
+: 1898 16 19 night
+- 1914 1936
+- 1936
+: 1960 8 -4 Cause 
+: 1970 10 -5 everybody’s 
+: 1984 5 20 so 
+: 1990 8 12 scared
+- 1998
+: 2000 5 21 We 
+: 2006 3 20 don’t 
+: 2010 8 20 wanna 
+: 2020 5 21 go 
+: 2026 7 -4 there
+- 2033
+: 2034 5 4 We 
+: 2040 2 9 don’t 
+: 2044 5 32 wanna 
+: 2050 5 -1 make 
+: 2056 6 0 a 
+: 2064 5 1 move
+- 2069
+: 2070 3 5 We 
+: 2074 1 4 got 
+: 2076 4 3 all 
+: 2082 4 1 our 
+: 2088 3 -1 lives 
+: 2092 4 -5 to 
+: 2098 5 -4 lose
+- 2103
+: 2104 9 -5 Screaming 
+: 2114 1 -6 in 
+: 2116 6 -3 the 
+: 2124 7 -3 dark 
+: 2132 7 -5 while
+- 2139
+: 2140 3 23 We 
+: 2144 3 23 just 
+: 2148 3 23 play 
+: 2152 3 -5 our 
+: 2156 7 -8 part, 
+: 2164 9 -8 I
+- 2173
+: 2174 5 1 I 
+: 2180 3 -1 play 
+: 2184 1 0 right 
+: 2186 10 2 along
+- 2196
+: 2204 9 2 Like 
+: 2214 2 12 I 
+: 2218 3 -4 don’t 
+: 2222 3 12 know 
+: 2226 3 23 what’s 
+: 2230 4 -2 going 
+: 2236 7 -4 on
+- 2243
+: 2244 14 3 Somebody 
+: 2262 12 -4 make 
+: 2276 16 -6 a 
+: 2294 16 3 move
+- 2310
+: 2314 16 6 Somebody 
+: 2332 12 -1 make 
+: 2352 13 7 a 
+: 2366 10 19 move
+- 2376
+: 2378 3 24 Please 
+: 2382 16 21 somebody 
+: 2400 14 4 make 
+: 2416 15 23 a 
+: 2432 15 20 move
+- 2447
+: 2448 10 23 We 
+: 2460 7 20 all 
+: 2468 14 -1 know
+- 2482
+: 2488 3 2 We 
+: 2492 3 4 all 
+: 2496 3 -1 know 
+: 2500 3 -3 what’s 
+: 2504 8 1 going 
+: 2514 10 -3 on
+- 2524
+: 2538 11 0 Pointing 
+: 2550 6 -1 my 
+: 2558 10 -3 fingers
+- 2568
+: 2570 3 -2 The 
+: 2574 8 -1 problems 
+: 2584 5 -5 still 
+: 2590 8 -4 linger
+- 2598
+: 2604 3 -5 They 
+: 2608 2 34 keep 
+: 2614 11 7 getting 
+: 2626 10 1 bigger
+- 2636
+: 2638 5 5 And 
+: 2644 3 4 I 
+: 2648 5 -1 hold 
+: 2654 5 -3 the 
+: 2660 6 -5 trigger
+- 2666
+: 2678 10 11 Running 
+: 2690 3 6 with 
+: 2694 13 -3 fire
+- 2707
+: 2708 3 19 I 
+: 2712 5 21 live 
+: 2718 5 22 like 
+: 2724 4 23 a 
+: 2732 14 4 liar
+- 2746 2828
+- 2828
+: 2852 11 3 Pointing 
+: 2864 5 0 my 
+: 2870 10 -2 fingers
+- 2880 2896
+- 2896
+: 2920 3 -6 The 
+: 2924 7 -3 problems 
+: 2932 4 0 still 
+: 2938 12 3 linger
+- 2950 2964
+- 2964
+: 2988 11 -5 Pointing 
+: 3000 5 -2 my 
+: 3006 18 6 fingers
+- 3024
+: 3026 12 11 Somebody 
+: 3042 9 6 make 
+: 3052 6 -1 a 
+: 3060 22 5 move
+- 3082 3116
+- 3116
+: 3140 4 -8 Cause 
+: 3146 12 -1 everybody’s 
+: 3162 7 8 so 
+: 3170 9 -5 scared
+- 3179
+: 3180 5 11 We 
+: 3186 1 13 don’t 
+: 3188 8 16 wanna 
+: 3198 9 19 go 
+: 3208 9 -5 there
+- 3217
+: 3218 3 8 We 
+: 3222 1 6 don’t 
+: 3224 11 4 wanna 
+: 3236 5 6 make 
+: 3242 3 -4 a 
+: 3246 22 -6 move
+- 3268
+: 3282 9 2 Screaming
+: 3292 1 4 in 
+: 3294 6 6 the 
+: 3302 7 34 dark 
+: 3310 7 -1 while
+- 3317
+: 3318 6 5 We 
+: 3326 1 8 just 
+: 3328 7 22 play 
+: 3336 3 4 our 
+: 3340 10 5 part
+- 3350
+: 3354 1 0 And 
+: 3356 2 5 I 
+: 3360 4 3 play 
+: 3366 4 4 right 
+: 3372 32 -1 along
+- 3404
+: 3422 2 -8 Cause 
+: 3426 10 -1 everybody’s 
+: 3440 7 20 so 
+: 3448 4 -2 scared
+- 3452
+: 3454 6 17 We 
+: 3464 1 13 don’t 
+: 3466 6 16 wanna 
+: 3474 7 19 go 
+: 3482 9 22 there
+- 3491
+: 3492 6 24 We 
+: 3500 1 17 don’t 
+: 3502 4 20 wanna 
+: 3508 6 24 make 
+: 3516 1 24 a 
+: 3518 7 21 move
+- 3525
+: 3526 5 22 We 
+: 3532 1 22 got 
+: 3534 5 20 all 
+: 3540 3 12 our 
+: 3544 3 10 lives 
+: 3548 5 19 to 
+: 3554 4 16 lose
+- 3558
+: 3560 9 -4 Screaming 
+: 3570 4 5 in 
+: 3576 1 9 the 
+: 3578 9 21 dark 
+: 3588 6 16 while
+- 3594
+: 3596 3 7 We 
+: 3600 5 -1 just 
+: 3606 3 -4 play 
+: 3610 3 0 our 
+: 3614 7 21 part, 
+: 3622 8 8 I
+- 3630
+: 3632 4 24 I 
+: 3638 1 9 play 
+: 3640 4 -10 right 
+: 3646 13 -5 along
+- 3659
+: 3660 3 24 Like 
+: 3664 3 24 I 
+: 3668 7 22 don’t 
+: 3676 1 -3 know 
+: 3678 5 -5 what’s 
+: 3684 6 -2 going 
+: 3692 10 -9 on
+- 3702
+: 3704 13 -3 Somebody 
+: 3718 14 3 make 
+: 3736 19 4 a 
+: 3756 12 -1 move
+- 3768
+: 3772 15 2 Somebody 
+: 3788 14 17 make 
+: 3806 17 23 a 
+: 3824 8 2 move
+- 3832
+: 3836 4 -4 Please 
+: 3842 10 -3 somebody 
+: 3854 20 -2 make 
+: 3876 15 -4 a 
+: 3892 15 -8 move
+- 3907
+: 3908 4 0 We 
+: 3914 4 35 all 
+: 3920 23 -3 know
+- 3943
+: 3944 5 3 We 
+: 3950 3 5 all 
+: 3954 3 1 know 
+: 3958 3 2 what’s 
+: 3962 9 0 going 
+: 3972 6 4 on
+- 3978
+: 3980 12 -4 Somebody 
+: 3994 19 -2 make 
+: 4014 16 6 a 
+: 4032 10 -2 move
+- 4042
+: 4046 17 3 Somebody 
+: 4064 18 6 make 
+: 4086 14 -1 a 
+: 4102 12 3 move
+- 4114
+: 4116 5 -1 Please 
+: 4122 14 2 somebody 
+: 4138 15 -2 make 
+: 4154 12 -4 a 
+: 4170 12 0 move
+- 4182
+: 4186 6 4 We 
+: 4196 3 2 all 
+: 4200 14 7 know
+- 4214
+: 4222 1 5 We 
+: 4224 6 7 all 
+: 4232 5 5 know 
+: 4238 3 3 what’s 
+: 4242 6 7 going 
+: 4250 12 1 on
+E

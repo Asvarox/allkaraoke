@@ -1,0 +1,327 @@
+#ARTIST:The Last Dinner Party
+#TITLE:Nothing Matters
+#CREATOR:UltraSinger [GitHub] 0.0.12-dev2
+#BPM:190
+#YEAR:2023
+#VIDEO:v=pETz4IMmeDU
+#GENRE:Indie Rock
+#LANGUAGE:English
+#GAP:4013,684210526316
+#ALLKARAOKE_ID:the-last-dinner-party-nothing-matters
+#ALLKARAOKE_LASTUPDATE:2024-12-19T00:12:09.093Z
+#ALLKARAOKE_REALBPM:51
+#ALLKARAOKE_VOLUME:0,8
+#P1:Nothing Matters
+#MP3:The Last Dinner Party - Nothing Matters.mp3
+#COVER:The Last Dinner Party - Nothing Matters [CO].jpg
+#BACKGROUND:The Last Dinner Party - Nothing Matters [BG].jpg
+: 13 1 14 I 
+: 15 3 14 have 
+: 19 2 16 my 
+: 23 3 16 sen
+: 26 3 18 tence 
+: 31 4 18 now 
+: 36 1 19 at 
+: 38 4 19 last 
+: 44 1 18 I 
+: 46 3 18 know 
+: 50 2 17 just 
+: 54 2 16 how 
+: 57 2 16 you 
+: 61 7 14 felt
+- 68 120
+- 120
+: 133 1 13 I 
+: 136 3 14 dig 
+: 140 2 16 my 
+: 143 3 16 fin
+: 147 3 18 gers 
+: 151 4 18 in 
+: 156 3 18 ex
+: 159 3 19 pect
+: 162 3 19 ing 
+: 166 3 18 more 
+: 170 2 16 than 
+: 173 3 16 just 
+: 177 1 16 the 
+: 180 7 14 skin
+- 187 240
+- 240
+: 253 2 13 Cause 
+: 256 4 14 we're 
+: 262 1 16 a 
+: 264 4 16 lot 
+: 271 3 18 alike 
+: 275 3 19 in 
+: 279 7 18 favour 
+: 287 4 16 like 
+: 292 1 16 a 
+: 294 3 14 mo
+: 298 3 14 tor
+: 302 3 14 bike
+- 305
+: 307 1 13 A 
+: 308 8 11 sailor 
+: 318 2 14 and 
+: 321 1 16 a 
+: 324 5 16 night
+: 329 5 18 in
+: 334 4 18 gale 
+: 339 4 18 dan
+: 343 4 18 cing 
+: 349 2 16 in 
+: 352 3 16 con
+: 355 6 14 vert
+: 361 6 15 ibles
+- 367
+: 374 1 14 And 
+: 376 1 14 you 
+: 380 2 16 can 
+: 384 3 16 hold 
+: 388 7 14 me 
+: 406 4 16 like 
+: 411 2 16 he 
+: 414 4 14 held 
+: 419 7 14 her
+- 426
+: 434 1 14 And 
+: 435 1 14 I 
+: 437 6 16 will 
+: 444 3 16 fuck 
+: 448 7 14 you 
+: 463 3 14 like 
+: 467 3 14 noth
+: 470 3 16 ing 
+: 475 4 16 mat
+: 479 8 14 ters
+- 487
+: 495 1 14 And 
+: 497 3 14 you 
+: 501 2 16 can 
+: 504 5 14 hold 
+: 510 7 14 me 
+: 527 3 16 like 
+: 531 2 17 he 
+: 535 4 14 held 
+: 540 6 14 her
+- 546
+: 555 1 14 And 
+: 558 4 16 I 
+: 562 2 16 will 
+: 565 3 16 fuck 
+: 569 7 13 you 
+: 583 3 14 like 
+: 588 3 14 noth
+: 591 3 16 ing 
+: 595 4 16 mat
+: 599 8 14 ters
+- 607
+: 614 3 14 We've 
+: 618 4 14 got 
+: 623 1 16 a 
+: 625 3 16 high
+: 628 3 18 way 
+: 632 3 17 tank 
+: 637 2 19 the 
+: 640 4 19 moon 
+: 645 1 19 is 
+: 648 3 18 burst
+: 651 3 16 ing 
+: 656 2 17 with 
+: 659 4 14 head
+: 664 4 14 lights
+- 668 722
+- 722
+: 735 2 14 One 
+: 738 4 14 more 
+: 743 1 16 and 
+: 746 5 16 we're 
+: 752 1 18 a
+: 753 4 18 way 
+: 758 1 19 love 
+: 760 10 18 tender 
+: 771 3 16 your 
+: 775 5 16 Chev
+: 780 5 14 ro
+: 785 5 13 let
+- 790 842
+- 842
+: 855 1 14 And 
+: 858 4 14 we're 
+: 863 1 16 a 
+: 865 5 16 lot 
+: 871 1 18 a
+: 873 4 18 like 
+: 878 1 19 in 
+: 881 6 18 fever 
+: 888 4 16 like 
+: 893 2 16 a 
+: 896 3 16 mo
+: 899 3 14 tor
+: 903 3 14 bike
+- 906
+: 908 2 13 a 
+: 911 7 14 sailor 
+: 919 2 14 and 
+: 922 2 16 a 
+: 926 4 16 night
+: 930 4 18 in
+: 935 4 19 gale 
+: 941 4 17 dan
+: 945 4 18 cing 
+: 953 4 16 in
+: 958 4 16 con
+: 962 4 14 vert
+: 967 4 13 ibles
+- 971
+: 976 1 14 And 
+: 979 2 14 you 
+: 982 2 16 can 
+: 986 4 14 hold 
+: 991 7 14 me 
+: 1009 4 15 like 
+: 1014 1 16 you 
+: 1016 4 14 held 
+: 1021 5 14 her
+- 1026
+: 1036 1 14 And 
+: 1038 6 16 I'll 
+: 1046 3 16 fuck 
+: 1050 7 14 you 
+: 1064 4 14 like 
+: 1069 3 14 noth
+: 1072 3 16 ing 
+: 1077 6 16 mat
+: 1083 6 14 ters
+- 1089
+: 1096 1 14 And 
+: 1098 3 14 you 
+: 1103 3 16 can 
+: 1107 3 14 hold 
+: 1111 7 14 me 
+: 1129 4 16 like 
+: 1134 2 16 you 
+: 1137 3 14 held 
+: 1141 7 14 her
+- 1148
+: 1156 1 14 And 
+: 1158 7 16 I'll 
+: 1166 3 16 fuck 
+: 1170 6 14 you 
+: 1184 4 14 like 
+: 1189 3 14 noth
+: 1193 3 16 ing 
+: 1197 5 16 mat
+: 1202 5 14 ters
+- 1207
+: 1213 5 19 Even 
+: 1219 3 19 when 
+: 1223 2 19 the 
+: 1227 2 19 cold 
+: 1231 2 19 comes 
+: 1234 3 16 crash
+: 1237 3 17 ing 
+: 1241 4 18 through
+- 1245
+: 1246 2 17 I'm 
+: 1249 3 18 put
+: 1252 3 17 ting 
+: 1256 4 18 all 
+: 1261 2 18 my 
+: 1264 3 17 bets 
+: 1268 3 16 on 
+: 1272 2 14 you
+- 1274
+: 1277 1 17 I 
+: 1280 2 14 hope 
+: 1283 3 14 they 
+: 1287 4 14 never 
+: 1292 8 13 un
+: 1300 3 13 der
+: 1303 5 11 stand 
+: 1309 7 11 us
+- 1316 1324
+- 1324
+: 1337 1 17 I 
+: 1338 3 19 put 
+: 1342 1 19 my 
+: 1344 5 19 heart 
+: 1350 4 19 in
+: 1354 3 21 side 
+: 1358 1 19 your 
+: 1360 4 18 palms
+- 1364
+: 1367 1 19 my 
+: 1368 4 18 home 
+: 1373 2 18 in 
+: 1376 4 18 your 
+: 1381 2 18 arms 
+: 1384 3 16 now 
+: 1388 2 16 we 
+: 1391 3 14 know
+- 1394
+: 1398 3 13 Noth
+: 1402 2 16 ing 
+: 1405 4 14 mat
+: 1410 8 12 ters
+- 1418
+: 1427 3 14 noth
+: 1430 3 16 ing 
+: 1435 4 18 mat
+: 1439 10 18 ters
+- 1449 1680
+- 1680
+: 1693 2 14 And 
+: 1696 1 14 you 
+: 1698 2 16 can 
+: 1702 3 14 hold 
+: 1706 11 14 me 
+: 1724 4 16 like 
+: 1729 4 16 he 
+: 1734 2 14 held 
+: 1737 9 14 her
+- 1746
+: 1753 2 14 And 
+: 1756 3 14 I 
+: 1760 1 16 will 
+: 1762 4 16 fuck 
+: 1767 8 14 you 
+: 1780 3 14 like 
+: 1785 3 14 noth
+: 1788 3 16 ing 
+: 1792 5 18 mat
+: 1797 11 23 ters
+: 1808 14 24 ~
+: 1822 16 25 ~
+: 1838 13 26 ~
+: 1851 21 25 ~
+: 1872 10 24 ~
+- 1882 1887
+- 1887
+: 1900 3 23 Like 
+: 1904 3 16 noth
+: 1907 3 14 ing 
+: 1911 4 14 mat
+: 1915 10 14 ters
+- 1925
+: 1932 2 14 And 
+: 1935 2 16 you 
+: 1938 2 14 can 
+: 1941 2 16 hold 
+: 1944 11 16 me 
+: 1962 4 14 like 
+: 1967 2 14 he 
+: 1970 4 16 held 
+: 1975 3 14 her
+- 1978
+: 1989 1 14 And 
+: 1992 2 14 I 
+: 1995 2 16 will 
+: 1999 4 16 fuck 
+: 2004 8 13 you 
+: 2017 3 14 like 
+: 2021 3 13 noth
+: 2024 3 16 ing 
+: 2028 3 16 mat
+: 2032 9 14 ters
+E
