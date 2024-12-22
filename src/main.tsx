@@ -54,7 +54,7 @@ if (isSentryEnabled) {
     // We recommend adjusting this value in production
     tracesSampleRate: isE2E() ? 0 : 0.01,
     environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
-    tunnel: import.meta.env.VITE_APP_SENTRY_TUNNEL,
+    tunnel: '/stry-tunnel',
   });
 }
 
