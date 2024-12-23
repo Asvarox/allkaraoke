@@ -115,4 +115,8 @@ export class RemoteMicMainPagePO {
   public async goBackByKeyboard() {
     await this.backArrowKeyboardButton.click();
   }
+
+  public async expectMicInputStateToBe(stateName: 'on' | 'off') {
+    await expect(this.page.getByTestId('monitoring-state')).toContainText(stateName, { ignoreCase: true });
+  }
 }
