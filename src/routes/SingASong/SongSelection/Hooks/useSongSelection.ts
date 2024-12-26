@@ -6,7 +6,7 @@ import { flushSync } from 'react-dom';
 import useSongList from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'routes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 
-export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
+export default function useSongSelection(additionalSong: string | null, songsPerRow: number) {
   const {
     songList,
     groupedSongList,
@@ -16,7 +16,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     selectedPlaylist,
     setSelectedPlaylist,
     playlists,
-  } = useSongList();
+  } = useSongList(additionalSong);
   const [keyboardControl, setKeyboardControl] = useState(true);
 
   const handleKeyboardControl = (value: boolean) => {
@@ -41,17 +41,21 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
   const [preselected, setPreselected] = useState(false);
   useEffect(() => {
     if (!preselected && songList.length && !isLoading) {
-      const preselectedSongIndex = songList.findIndex((song) => song.id === preselectedSong);
+      const preselectedSongIndex = songList.findIndex((song) => song.id === additionalSong);
       const firstNewSongIndex = songList.findIndex((song) => song.isNew);
 
       let songIndex = randomInt(0, songList.length - 1);
       if (preselectedSongIndex > -1) songIndex = preselectedSongIndex;
-      else if (firstNewSongIndex > -1) songIndex = preselectedSongIndex;
+      else if (firstNewSongIndex > -1) songIndex = firstNewSongIndex;
 
       setPreselected(true);
       moveToSong(songIndex);
     }
-  }, [moveToSong, preselected, focusedSong, songList, preselectedSong, isLoading]);
+  }, [moveToSong, preselected, focusedSong, songList, additionalSong, isLoading]);
+
+  useEffect(() => {
+    setPreselected(false);
+  }, [additionalSong]);
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong] && !isLoading) {

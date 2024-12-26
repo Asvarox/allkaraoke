@@ -299,10 +299,6 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   await test.step('Songs selected on remoteMic should be visible on desktop`s app preview, despite the different languages set between them', async () => {
     await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
 
-    test.fail(
-      true,
-      'Song selected by phone is not opened as preview, because it`s song language was not selected on desktop app - another one is opened',
-    );
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.spanish.ID);
 

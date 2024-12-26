@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { useAsync } from 'react-use';
 import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
-import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
 
 const POPULAR_SONGS_MIN_COUNT = 250;
 const POPULAR_SONGS_MAX_COUNT = 750;
@@ -15,7 +15,7 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
     [],
   );
   const sungSongs = useAsync(async () => getAllStats(), []);
-  const recentlyUpdatedSongs = useMemo(() => filteringFunctions.recentlyUpdated(songs), [songs]).map((song) => song.id);
+  const recentlyUpdatedSongs = useMemo(() => songs.filter(isSongRecentlyUpdated).map((song) => song.id), [songs]);
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
   const loading = popularSongs.loading || sungSongs.loading || !songs.length;

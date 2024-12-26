@@ -78,7 +78,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
   });
@@ -102,7 +103,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 
@@ -125,7 +127,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 
@@ -148,7 +151,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 
