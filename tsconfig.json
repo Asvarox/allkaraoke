@@ -16,7 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "@types/dom-view-transitions"]
   },
   "include": ["src", "tests", "scripts"],
   "exclude": ["functions"],

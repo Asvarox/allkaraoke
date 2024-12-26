@@ -1,11 +1,14 @@
+let previousTransition: ViewTransition | null = null;
+
 export default function startViewTransition(callback: () => void) {
-  // @ts-expect-error startViewTransition not in typings
   if (!document.startViewTransition) {
     callback();
   } else {
     try {
-      // @ts-expect-error startViewTransition not in typing
-      document.startViewTransition(async () => {
+      if (previousTransition && !previousTransition.finished) {
+        previousTransition.skipTransition();
+      }
+      previousTransition = document.startViewTransition(async () => {
         await callback();
       });
     } catch (e) {

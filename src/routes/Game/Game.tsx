@@ -18,10 +18,8 @@ function Game() {
   const [preselectedSong, setPreselectedSong] = useState<string | null>(songId ?? null);
   const [resetKey, setResetKey] = useState(0);
   const handleSelect = (setup: SingSetup & { song: SongPreview }) => {
-    // @ts-expect-error viewTransitionName is not yet in typings
     document.getElementById('preview-video-container')!.style.viewTransitionName = 'song-preview-video';
     startViewTransition(() => {
-      // @ts-expect-error viewTransitionName is not yet in typings
       document.getElementById('preview-video-container')!.style.viewTransitionName = '';
       flushSync(() => {
         setSingSetup(setup);
