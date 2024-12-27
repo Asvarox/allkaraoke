@@ -254,7 +254,7 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
 
   await test.step('Select a few songs on the remoteMic - they should open as a preview on the desktop app', async () => {
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.polish1.ID);
-    test.fail(true, 'Select button does not work for first position on the song list');
+    // test.fail(true, 'Select button does not work for first position on the song list');
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.polish1.ID);
 
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
