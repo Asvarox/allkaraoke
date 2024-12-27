@@ -227,13 +227,13 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
 
   @keyframes rhythmPulse {
     0% {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
     15% {
-      transform: scale(1.25);
+      transform: scale(1.2);
     }
     100% {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
   }
   view-transition-name: song-preview;

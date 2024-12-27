@@ -38,7 +38,7 @@ declare global {
     | undefined;
 }
 
-const focusMultiplier = 1.2;
+const focusMultiplier = 1.1;
 const MAX_SONGS_PER_ROW = 4;
 
 const LIST_SIDEBAR_WEIGHT_REM = 7;
@@ -68,6 +68,7 @@ const components: Components<{
 };
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+  const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
 
@@ -92,7 +93,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     setSelectedPlaylist,
     playlists,
     songList,
-  } = useSongSelection(preselectedSong, songsPerRow);
+  } = useSongSelection(additionalSong, songsPerRow);
   const songPreviewInGroup = useMemo(
     () =>
       groupedSongList
@@ -176,21 +177,22 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useEventEffect(
     events.remoteSongSelected,
     async (songId) => {
-      setSelectedPlaylist('All');
       const songIndex = songList.findIndex((song) => song.id === songId);
-      if (songIndex) {
-        if (focusedSong !== songIndex) {
-          moveToSong(songIndex);
-          if (!keyboardControl) {
-            setKeyboardControl(true);
-          }
-          expandSong();
-        } else if (keyboardControl) {
-          expandSong();
+      if (songIndex === -1) {
+        setAdditionalSong(songId);
+        return expandSong();
+      }
+      if (focusedSong !== songIndex) {
+        moveToSong(songIndex);
+        if (!keyboardControl) {
+          setKeyboardControl(true);
         }
+        expandSong();
+      } else if (keyboardControl) {
+        expandSong();
       }
     },
-    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl, keyboardControl, focusedSong],
+    [],
   );
 
   return (

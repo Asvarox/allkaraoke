@@ -166,6 +166,8 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   });
 
   await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {
+    await pages.songListPage.goBackToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);

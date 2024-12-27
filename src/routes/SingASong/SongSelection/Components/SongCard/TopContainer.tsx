@@ -8,7 +8,7 @@ import { getEurovisionYear, isEurovisionSong } from 'modules/Songs/utils/special
 import { ReactNode, useMemo } from 'react';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 
-import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
 
 export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
   return (
@@ -33,7 +33,7 @@ export const SongCardStatsIndicator = ({
   isPopular: boolean;
   focused: boolean;
 }) => {
-  const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
+  const isRecentlyUpdated = useMemo(() => isSongRecentlyUpdated(song), [song]);
   const isESCSong = isEurovisionSong(song);
 
   const stats = useSongStats(song);
