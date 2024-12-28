@@ -8,7 +8,7 @@ import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
 
 interface Props {
-  onExit: () => void;
+  onExit?: () => void;
   register: ReturnType<typeof useKeyboardNav>['register'];
 }
 
@@ -41,7 +41,7 @@ export default function RateSong({ register, onExit }: Props) {
     if (issues.length) {
       posthog.capture('rate-song', { issues, ...properties });
     }
-    onExit();
+    onExit?.();
   };
 
   const anySelected = volumeWrong || lyricsNotInSync || badLyrics;

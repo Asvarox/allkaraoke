@@ -155,7 +155,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             height={playerHeight}
             ref={player}
             onCurrentTimeUpdate={setCurrentTime}
-            players={singSetup.players}
             effectsEnabled={effectsEnabled}
             singSetup={singSetup}
             onSongEnd={() => undefined}

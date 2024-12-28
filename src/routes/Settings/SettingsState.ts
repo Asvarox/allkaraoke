@@ -90,6 +90,8 @@ export const RemoteMicConnectionTypeSetting = new Setting<ServerTransport['name'
   'PartyKit',
   'session',
 );
+export const IsCalibratedSetting = new Setting<boolean>('IsCalibrated', false);
+// export const IsCalibratedSetting = new Setting<boolean>('IsCalibrated', false, 'memory');
 
 posthog.onFeatureFlags?.(() => {
   RemoteMicConnectionTypeSetting.set(
@@ -98,7 +100,7 @@ posthog.onFeatureFlags?.(() => {
 });
 
 export function useSettingValue<T>(value: Setting<T>) {
-  const [currentValue, setCurrentValue] = useState(value.get());
+  const [currentValue, setCurrentValue] = useState(() => value.get());
 
   useLayoutEffect(() => {
     return value.addListener(setCurrentValue);

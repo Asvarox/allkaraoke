@@ -3,15 +3,7 @@ import { InfoText } from 'modules/Elements/Switcher';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
-import {
-  DetailedHTMLProps,
-  ForwardedRef,
-  InputHTMLAttributes,
-  ReactNode,
-  forwardRef,
-  useImperativeHandle,
-  useRef,
-} from 'react';
+import { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useImperativeHandle, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange'> {
@@ -24,34 +16,45 @@ interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
   info?: ReactNode;
 }
 
-export const Input = forwardRef(
-  (
-    { focused, label, value, onChange, disabled, className, adornment, info, ...restProps }: Props,
-    forwardedRef: ForwardedRef<HTMLInputElement>,
-  ) => {
-    const inputRef = useRef<HTMLInputElement>(null);
-    useImperativeHandle(forwardedRef, () => inputRef.current!);
+export const Input = ({
+  focused,
+  label,
+  value,
+  onChange,
+  disabled,
+  className,
+  adornment,
+  info,
+  ref,
+  ...restProps
+}: Props) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+  useImperativeHandle(ref, () => inputRef.current!);
 
-    useHotkeys(REGULAR_ALPHA_CHARS, () => inputRef.current?.focus(), { enabled: focused });
+  useHotkeys(REGULAR_ALPHA_CHARS, () => inputRef.current?.focus(), { enabled: focused });
 
-    return (
-      <div>
-        <Container data-focused={focused} className={className}>
-          <Label>{label}</Label>
-          <StyledInput
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            {...restProps}
-            disabled={disabled}
-            ref={inputRef}
-          />
-          {adornment && <Adornment>{adornment}</Adornment>}
-        </Container>
-        {info && <InfoText>{info}</InfoText>}
-      </div>
-    );
-  },
-);
+  return (
+    <div>
+      <Container
+        data-focused={focused}
+        className={className}
+        onClick={() => {
+          inputRef.current?.focus();
+        }}>
+        <Label>{label}</Label>
+        <StyledInput
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          {...restProps}
+          disabled={disabled}
+          ref={inputRef}
+        />
+        {adornment && <Adornment>{adornment}</Adornment>}
+      </Container>
+      {info && <InfoText>{info}</InfoText>}
+    </div>
+  );
+};
 
 const Adornment = styled.span``;
 
@@ -80,6 +83,7 @@ const Label = styled.span`
   padding-right: 0.5em;
   white-space: nowrap;
   width: auto;
+  pointer-events: none;
 
   svg {
     font-size: 1em;

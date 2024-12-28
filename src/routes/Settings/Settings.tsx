@@ -1,14 +1,14 @@
 import CameraManager from 'modules/Camera/CameraManager';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { nextValue, Switcher } from 'modules/Elements/Switcher';
+import { InfoText, nextValue, Switcher } from 'modules/Elements/Switcher';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import InputLag from 'routes/Settings/InputLag';
 import {
   FpsCount,
   FPSCountSetting,
@@ -28,7 +28,6 @@ function Settings() {
   const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
   const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
   const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const inputLagRef = useRef<HTMLInputElement | null>(null);
 
   const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
   useEffect(() => {
@@ -64,7 +63,12 @@ function Settings() {
         label="FPS Count"
         value={fpsCount}
       />
-      <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
+      <div className="flex flex-col">
+        <Menu.Button {...register('calibration-settings', () => navigate('settings/calibration/'))} size="small">
+          Calibrate input lag
+        </Menu.Button>
+        <InfoText>If the sound is not synchronised with the lyrics, use this to compensate it.</InfoText>
+      </div>
       <hr />
       <Switcher
         {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}

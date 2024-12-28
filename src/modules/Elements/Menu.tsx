@@ -15,7 +15,6 @@ const menuButtonDisabled = css`
 `;
 
 const menuButtonCss = css`
-  margin: 0.5rem 0;
   height: 10rem;
   border: 0 solid black;
 

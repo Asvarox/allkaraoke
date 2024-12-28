@@ -3,4 +3,5 @@ export const FeatureFlags = {
   InitialInputLag: 'initial_input_lag',
   Eurovision: 'eurovision',
   Christmas: 'christmas',
+  Calibration: 'calibration',
 } as const;

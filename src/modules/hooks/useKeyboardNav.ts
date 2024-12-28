@@ -136,3 +136,5 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     register,
   };
 }
+
+export type RegisterFunc = ReturnType<typeof useKeyboardNav>['register'];

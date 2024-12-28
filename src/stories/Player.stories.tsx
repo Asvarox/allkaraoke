@@ -77,7 +77,6 @@ const Template: StoryFn<StoryArgs> = (args) => {
             ref.current?.play();
           }, 100);
         }}
-        players={singSetup.players}
         singSetup={singSetup}
         width={1280}
         height={720}
@@ -92,5 +91,6 @@ const Test = Template.bind({});
 type Story = StoryObj<typeof Test>;
 
 export const GameSingingPlayerStory = {
+  // @ts-expect-error to be fixed
   render: (args) => <Test {...args} />,
 } satisfies Story;

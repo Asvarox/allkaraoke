@@ -13,12 +13,13 @@ const routePaths = {
   SELECT_INPUT: 'select-input',
   SETTINGS: 'settings',
   SETTINGS_REMOTE_MICS: 'settings/remote-mics',
+  SETTINGS_CALIBRATION: 'settings/calibration',
   REMOTE_MIC: 'remote-mic',
   MANAGE_SONGS: 'manage-songs',
   EXCLUDE_LANGUAGES: 'exclude-languages',
   CONVERT: 'convert',
   EDIT_SONGS_LIST: 'edit/list',
   EDIT_SONG: 'edit/song',
-};
+} as const;
 
 export default routePaths;

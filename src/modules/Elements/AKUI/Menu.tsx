@@ -6,16 +6,17 @@ import { twc } from 'react-twc';
 
 const MenuContainer = twc(
   Box,
-)`w-[100vw] max-w-[75rem] m-[2rem auto 0 auto] [view-transition-name:menu-container] items-stretch`;
+)`w-[100vw] sm:max-w-[75rem] m-[2rem auto 0 auto] [view-transition-name:menu-container] items-stretch pointer-events-auto`;
 
 export const MenuHeader = twc(Text)`text-xl text-active flex items-center justify-center`;
+export const MenuHelpText = twc(Text)`text-md`;
 
 interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, 'title'> {
   title?: ReactNode;
   spacing?: 'regular' | 'tight';
 }
-export const Menu = ({ title, children, className, spacing = 'regular', ...props }: MenuProps) => (
-  <MenuContainer {...props} className={`${className} ${spacing === 'tight' ? 'p-6 gap-1' : 'p-10 gap-4'}`}>
+export const Menu = ({ title, children, className, spacing = 'regular', ref, ...props }: MenuProps) => (
+  <MenuContainer {...props} className={`${className} ${spacing === 'tight' ? 'p-6 gap-3' : 'p-10 gap-6'}`} ref={ref}>
     {title && <MenuHeader>{title}</MenuHeader>}
     {children}
   </MenuContainer>
@@ -23,4 +24,6 @@ export const Menu = ({ title, children, className, spacing = 'regular', ...props
 
 Menu.Header = MenuHeader;
 Menu.Button = MenuButton;
+Menu.ButtonGroup = twc.div`flex`;
+Menu.HelpText = MenuHelpText;
 Menu.Divider = () => <hr />;
