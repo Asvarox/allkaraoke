@@ -20,7 +20,7 @@ import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
 import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import songStats from 'routes/LandingPage/songStats.json';
 import { v4 } from 'uuid';
@@ -106,7 +106,7 @@ root.render(
   // <StrictMode>
   <CacheProvider value={emotionCache}>
     <App />
-    <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
+    <ToastContainer position="bottom-left" theme={'colored'} limit={3} />{' '}
   </CacheProvider>,
   // </StrictMode>,
 );

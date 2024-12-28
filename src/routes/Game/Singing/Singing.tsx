@@ -51,13 +51,17 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
 
   useBackground(!isTransitionTimeout);
 
+  const showCalibration = !isCalibrated && isCalibrationEnabled && !isE2E();
   useEffect(() => {
-    if (isOverlayVisible && song.data && (isTransitionTimeout || playerState !== VideoState.UNSTARTED)) {
+    if (
+      !showCalibration &&
+      isOverlayVisible &&
+      song.data &&
+      (isTransitionTimeout || playerState !== VideoState.UNSTARTED)
+    ) {
       setIsOverlayVisible(false);
     }
   }, [song.data, isTransitionTimeout, playerState, isOverlayVisible]);
-
-  const showCalibration = !isCalibrated && isCalibrationEnabled && !isE2E();
 
   if (isEnded && song.data) {
     return (
