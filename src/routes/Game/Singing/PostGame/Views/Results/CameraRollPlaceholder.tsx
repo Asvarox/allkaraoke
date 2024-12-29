@@ -42,12 +42,12 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
             <h2>
               Get a <strong>timelapse</strong> of you singing
             </h2>
-            <Text className="text-sm">The recording is not sent nor stored anywhere.</Text>
             <Button
               className="w-full p-4 animate-focused"
               {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
               Enable camera
             </Button>
+            <Text className="text-sm">The recording is not sent nor stored anywhere.</Text>
           </>
         ) : (
           <h3>Adjust the camera position</h3>

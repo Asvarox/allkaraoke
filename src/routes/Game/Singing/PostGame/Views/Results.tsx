@@ -121,7 +121,6 @@ const ScoresContainer = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 5rem;
   flex: 1;
 
