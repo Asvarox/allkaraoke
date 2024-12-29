@@ -13,7 +13,7 @@ export const MenuButton = ({ size = 'regular', focused = false, className, ...pr
       {...props}
       data-size={size}
       data-focused={focused}
-      className={`my-2 ${size === 'small' ? 'h-20' : 'h-40'} ${className}`}
+      className={`${size === 'small' ? 'h-20' : 'h-40'} ${className}`}
     />
   );
 };

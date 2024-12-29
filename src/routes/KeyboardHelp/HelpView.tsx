@@ -106,7 +106,7 @@ const Container = twc.div((props: TwcComponentProps<'div'> & { 'data-visible': b
   props['data-visible'] ? 'flex mobile:hidden' : 'hidden',
 ]);
 
-const Kbd = twc.kbd((props: TwcComponentProps<'kbd'> & { disabled?: boolean }) => [
+export const Kbd = twc.kbd((props: TwcComponentProps<'kbd'> & { disabled?: boolean }) => [
   `py-3 px-4 rounded-md border-t-gray-300 border-l-gray-300 border-solid border-[1.25px] border-gray-500 text-gray-700 leading-4 text-sm bg-gray-50 inline-block font-normal`,
   props.disabled ? 'opacity-25' : 'opacity-100',
 ]);

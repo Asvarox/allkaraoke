@@ -30,7 +30,7 @@ interface Props {
   disablekb?: boolean;
   volume?: number;
   startAt?: number;
-  onStateChange: (state: VideoState) => void;
+  onStateChange?: (state: VideoState) => void;
   width: number;
   height: number;
 }
@@ -46,7 +46,7 @@ export interface VideoPlayerRef {
   seekTo: (time: seconds) => void;
   setPlaybackSpeed: (speed: number) => void;
   setVolume: (newVolume: number) => void;
-  getCurrentTime: () => Promise<number>;
+  getCurrentTime: () => Promise<seconds>;
   loadVideoById: (opts: LoadVideByIdOpts) => void;
   setSize: (w: number, h: number) => void;
   playVideo: () => void;

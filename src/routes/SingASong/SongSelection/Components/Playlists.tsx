@@ -25,7 +25,7 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
     },
   });
 
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useOnClickOutside(ref, () => {
     closePlaylist();
   });

@@ -31,7 +31,7 @@ interface Props {
   open?: boolean;
   hidden?: boolean;
   title: string | ReactElement;
-  children: ReactElement;
+  children: ReactElement<any>;
   place?: ComponentProps<typeof ReactTooltip>['place'];
 }
 export const Tooltip = ({ children, title, open, ...props }: Props) => {

@@ -20,7 +20,7 @@ interface Props {
   currentStatus: VideoState;
   width: number;
   height: number;
-  onSongEnd: () => void;
+  onSongEnd?: () => void;
   playerSetups: PlayerSetup[];
   duration: number;
   effectsEnabled: boolean;
