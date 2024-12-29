@@ -106,7 +106,7 @@ root.render(
   // <StrictMode>
   <CacheProvider value={emotionCache}>
     <App />
-    <ToastContainer position="bottom-left" theme={'colored'} limit={3} />{' '}
+    <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
   </CacheProvider>,
   // </StrictMode>,
 );

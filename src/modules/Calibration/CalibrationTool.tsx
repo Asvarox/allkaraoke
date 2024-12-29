@@ -8,13 +8,19 @@ export const CalibrationTool = () => {
   const [playerContainer, { width }] = useMeasure<HTMLDivElement>();
   const playerRef = useRef<VideoPlayerRef>(null);
   const [currentStatus, setCurrentStatus, currentTime] = useVideoPlayer(playerRef);
-  const [nextPulse, setNextPulse] = useState(1_000);
+  const [nextPulse, setNextPulse] = useState(250);
 
   useEffect(() => {
     if (nextPulse < currentTime) {
-      setNextPulse(nextPulse + 1_000);
+      setNextPulse(nextPulse + 250);
     }
   }, [nextPulse, currentTime]);
+
+  useEffect(() => {
+    if (currentStatus === VideoState.PLAYING) {
+      playerRef.current?.setPlaybackSpeed(0.25);
+    }
+  }, [currentStatus]);
 
   return (
     <div className="flex flex-col items-center justify-center" ref={playerContainer}>
@@ -32,7 +38,7 @@ export const CalibrationTool = () => {
         <VideoPlayer
           autoplay
           ref={playerRef}
-          video="gSmf7W3DUjs"
+          video="ivNFSVAYVZU"
           width={width}
           height={150}
           onStateChange={setCurrentStatus}
