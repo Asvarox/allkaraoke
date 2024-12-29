@@ -34,14 +34,14 @@ function CameraRoll({ ...props }: ComponentProps<typeof Container>) {
 }
 
 const Container = styled.div`
-  width: 80rem;
-  height: 60rem;
+  width: 35%;
 `;
 
 const Video = styled.video`
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 1rem;
 `;
 
 export default CameraRoll;

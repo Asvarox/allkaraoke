@@ -72,7 +72,7 @@ export default PostGameView;
 const PostGameTip = styled(GameTip)`
   transition: 300ms;
   position: absolute;
-  bottom: 20rem;
+  bottom: 4rem;
   font-size: 3.2rem;
   line-height: 1.25;
   color: white;
