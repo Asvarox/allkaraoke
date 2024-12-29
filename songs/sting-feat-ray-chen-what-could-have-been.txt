@@ -1,0 +1,265 @@
+#ARTIST:Sting feat. Ray Chen
+#TITLE:What Could Have Been
+#CREATOR:Raygin
+#BPM:440
+#YEAR:2021
+#VIDEO:v=liPu1_aPH5k
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:10051,363636363636
+#ALLKARAOKE_ID:sting-feat-ray-chen-what-could-have-been
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:42.826Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=151205
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29709
+#ALLKARAOKE_VOLUME:0,81
+#MP3:Sting feat. Ray Chen - What Could Have Been.mp3
+#COVER:Sting feat. Ray Chen - What Could Have Been [CO].jpg
+#BACKGROUND:Sting feat. Ray Chen - What Could Have Been [BG].jpg
+: 29 4 0 I 
+: 34 4 8 am 
+: 40 4 7 the 
+: 45 20 7 mon
+: 73 4 5 ster 
+: 80 4 7 you 
+: 86 4 5 cre
+: 93 24 5 a
+: 121 8 5 ted
+- 129 203
+- 203
+: 232 4 -4 You 
+: 237 6 8 ripped 
+: 245 18 8 out 
+: 265 10 7 all 
+: 277 6 5 my 
+: 285 24 5 parts
+- 309 379
+- 379
+: 408 4 0 And 
+: 413 6 12 worst 
+: 421 2 8 of 
+: 425 20 10 all, 
+: 461 4 5 for 
+: 466 4 8 me 
+: 472 4 10 to 
+: 477 16 10 live, 
+: 509 4 12 I 
+: 514 4 10 go
+: 520 4 8 tta 
+: 525 10 10 kill 
+: 537 4 8 the 
+: 544 4 10 part 
+: 550 4 8 of 
+: 557 6 7 me 
+: 565 6 5 that 
+: 573 16 5 saw
+- 589 613
+- 613
+: 642 4 5 That 
+: 648 4 7 I 
+: 653 4 8 need
+: 658 4 7 ed 
+: 664 4 5 you 
+: 669 16 7 more
+- 685 760
+- 760
+: 789 4 5 I 
+: 795 4 8 hope 
+: 801 4 5 you 
+: 807 26 8 know 
+: 837 4 8 we 
+: 845 4 8 had 
+: 853 46 8 eve
+: 901 6 7 ry
+: 909 16 7 thing
+- 925 952
+- 952
+: 981 6 0 When 
+: 989 6 10 you 
+: 997 24 8 broke 
+: 1029 6 8 me 
+: 1037 8 8 and 
+: 1053 16 8 left 
+: 1077 16 7 these 
+: 1101 16 12 pie
+: 1125 16 7 ces
+- 1141
+: 1165 6 12 I 
+: 1173 6 13 want 
+: 1181 2 13 you 
+: 1185 2 12 to 
+: 1189 24 12 hurt 
+: 1221 6 10 like 
+: 1229 6 8 you 
+: 1237 24 10 hurt 
+: 1269 6 10 me 
+: 1277 6 8 to
+: 1285 30 10 day 
+: 1317 16 8 and
+- 1333
+: 1357 6 12 I 
+: 1365 6 13 want 
+: 1373 2 13 you 
+: 1377 2 12 to 
+: 1381 24 12 lose 
+: 1413 6 10 like 
+: 1421 6 8 I 
+: 1429 24 12 lose 
+: 1461 4 10 when 
+: 1467 4 8 I 
+: 1473 20 7 play
+- 1493
+: 1509 4 5 What 
+: 1517 4 7 could 
+: 1522 4 5 have 
+: 1528 11 5 been
+- 1539 1632
+- 1632
+: 1661 104 10 Oh, 
+: 1768 4 8 what 
+: 1778 4 7 could 
+: 1784 4 5 have 
+: 1789 11 5 been
+- 1800 1936
+- 1936
+: 1965 6 15 Why
+: 1973 96 17 ~ 
+: 2077 14 15 don't 
+: 2093 14 13 you 
+: 2109 14 12 love 
+: 2125 6 13 who 
+: 2133 16 12 I 
+: 2157 14 12 am
+: 2173 48 10 ~?
+- 2221
+* 2237 6 10 What 
+* 2245 14 17 we
+* 2261 14 15 ~ 
+* 2277 6 13 could 
+* 2285 6 12 have 
+* 2293 56 12 been
+- 2349
+: 2373 6 5 I 
+: 2381 4 8 am 
+: 2386 4 5 your 
+: 2392 21 7 ghost, 
+: 2424 4 5 a 
+: 2429 32 10 fa
+: 2469 6 8 llen 
+: 2477 14 7 an
+: 2493 8 5 gel
+- 2501 2555
+- 2555
+: 2584 4 5 You 
+: 2589 6 8 ripped 
+: 2597 16 8 out 
+: 2617 10 7 all 
+: 2629 6 5 my 
+: 2637 16 5 parts
+- 2653 2736
+- 2736
+: 2765 4 5 I 
+: 2770 4 8 could
+: 2776 4 5 n't 
+: 2781 16 7 care 
+: 2817 2 5 what 
+: 2821 6 5 in
+: 2829 10 10 ven
+: 2841 10 10 tion 
+: 2853 6 8 you 
+: 2861 6 7 made 
+: 2871 14 5 me
+- 2885 2888
+- 2888
+: 2917 6 5 'Cause 
+: 2925 16 8 I, 
+: 2983 4 5 I 
+: 2989 4 7 was 
+: 2995 5 8 meant 
+: 3002 4 7 to 
+: 3008 4 5 be 
+: 3015 22 7 yours
+- 3037 4168
+- 4168
+: 4197 4 10 I 
+: 4203 4 13 hope 
+: 4209 4 10 you 
+: 4215 22 13 know 
+: 4245 6 13 we 
+: 4253 6 13 had 
+* 4261 40 13 eve
+* 4309 6 12 ry
+* 4317 16 12 thing
+- 4333 4360
+- 4360
+: 4389 6 10 When 
+: 4397 6 15 you 
+: 4405 24 13 broke 
+: 4437 6 13 me 
+: 4445 8 13 and 
+: 4461 22 13 left 
+: 4485 22 12 these 
+* 4509 22 17 pie
+* 4533 24 12 ces
+- 4557
+: 4573 4 18 I 
+: 4581 4 18 want 
+: 4589 2 18 you 
+: 4593 2 17 to 
+: 4597 24 17 hurt 
+: 4629 6 15 like 
+: 4637 6 13 you 
+: 4645 24 15 hurt 
+: 4677 6 15 me 
+: 4685 6 13 to
+: 4693 22 17 day
+: 4717 2 18 ~
+: 4721 2 17 ~ 
+: 4725 16 15 and
+- 4741
+: 4765 4 18 I 
+: 4773 4 18 want 
+: 4781 2 18 you 
+: 4785 2 17 to 
+: 4789 24 17 lose 
+: 4821 6 15 like 
+: 4829 6 13 I 
+: 4837 24 17 lose 
+: 4869 6 15 when 
+: 4877 6 13 I 
+: 4885 40 12 play
+- 4925 5312
+- 5312
+: 5341 4 18 I 
+: 5349 4 18 want 
+: 5357 2 18 you 
+: 5361 2 17 to 
+: 5365 24 17 hurt 
+: 5397 6 15 like 
+: 5405 6 13 you 
+: 5413 24 15 hurt 
+: 5445 6 15 me 
+: 5453 6 13 to
+: 5461 22 17 day
+: 5485 2 18 ~
+: 5489 2 17 ~ 
+: 5493 16 15 and
+- 5509
+: 5533 4 18 I 
+: 5541 4 18 want 
+: 5549 2 18 you 
+: 5553 2 17 to 
+: 5557 24 17 lose 
+: 5589 6 15 like 
+: 5597 6 13 I 
+: 5605 24 17 lose 
+: 5637 6 15 when 
+: 5645 6 13 I 
+: 5653 40 12 play
+- 5693 5752
+- 5752
+: 5781 4 10 What 
+: 5789 4 13 could 
+: 5794 4 10 have 
+: 5800 13 10 been
+E

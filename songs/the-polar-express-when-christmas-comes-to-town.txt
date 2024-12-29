@@ -1,0 +1,253 @@
+#ARTIST:The Polar Express
+#TITLE:When Christmas Comes To Town
+#CREATOR:seanie627
+#BPM:326,16
+#YEAR:2004
+#PREVIEWSTART:37
+#VIDEO:v=uKwwpmC02IQ
+#LANGUAGE:English
+#GAP:3918,2266372332597
+#EDITION:Christmas
+#ALLKARAOKE_ID:the-polar-express-when-christmas-comes-to-town
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:52.923Z
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#MP3:The Polar Express - When Christmas Comes To Town.mp3
+: 22 7 -2 I’m 
+: 31 4 3 wish
+: 39 5 -2 ing 
+: 47 4 5 on 
+: 54 4 -2 a 
+: 63 13 7 star
+- 76
+: 92 7 -2 And 
+: 101 5 3 try
+: 109 5 -2 ing 
+: 118 5 -4 to 
+: 128 6 -2 be
+: 137 11 -5 lieve
+- 148
+: 165 5 -2 That 
+: 173 6 3 e
+: 182 6 -2 ven 
+: 191 5 5 though 
+: 200 5 -2 it’s 
+: 209 12 7 far
+- 221
+: 240 6 -2 He’ll 
+: 250 6 3 find 
+: 259 5 -2 me 
+: 266 6 -4 Christ
+: 276 5 -2 mas 
+: 284 10 -5 Eve
+- 294
+: 312 5 7 I 
+: 321 5 8 guess 
+: 329 5 8 that 
+: 337 5 8 San
+: 346 7 7 ta’s 
+: 356 5 7 bu
+: 364 8 5 sy
+- 372
+: 385 2 3 ’Cause 
+: 389 2 5 he’s 
+: 393 6 7 ne
+: 401 5 5 ver 
+: 410 5 7 come 
+: 417 2 10 a
+: 423 12 3 round
+- 435
+: 456 7 10 I 
+: 466 4 8 think 
+: 473 5 7 of 
+: 483 8 3 him
+- 491
+: 497 4 10 When 
+: 502 6 8 Christ
+: 511 6 7 mas 
+: 521 10 5 comes 
+: 534 2 3 to 
+* 538 37 3 town
+- 575 582
+- 582
+: 604 3 -2 The 
+: 610 5 3 best 
+: 619 5 -2 time 
+: 628 5 5 of 
+: 637 6 -2 the 
+: 646 12 7 year
+- 658
+: 674 6 -2 When 
+: 682 6 3 e
+: 691 5 -2 very
+: 699 6 -4 one 
+: 708 6 -2 comes 
+: 718 13 -5 home
+- 731
+: 748 4 -2 With 
+: 754 5 3 all 
+: 764 6 -2 this 
+: 773 5 5 Christ
+: 782 7 10 mas 
+* 792 18 7 cheer
+- 810
+: 820 5 -2 It’s 
+: 829 7 3 hard 
+: 838 5 -2 to 
+: 846 7 -4 be 
+: 855 3 -2 a
+: 862 16 -5 lone
+- 878
+: 899 7 8 Put
+: 909 2 8 ting 
+* 914 12 8 up 
+: 929 3 7 the 
+: 935 7 7 Christ
+: 945 6 5 mas 
+: 954 9 5 tree
+- 963
+: 968 3 -2 With 
+: 974 7 7 friends 
+: 983 6 5 who 
+: 991 6 7 come 
+: 999 4 10 a
+: 1005 21 3 round
+- 1026
+: 1037 6 -2 It’s 
+: 1046 5 8 so 
+: 1054 5 7 much 
+: 1062 10 3 fun
+- 1072
+: 1077 4 10 When 
+: 1083 6 8 Chris
+: 1092 5 7 tmas 
+: 1100 12 5 comes 
+: 1115 2 3 to 
+* 1119 43 3 town
+- 1162 1169
+- 1169
+: 1191 6 3 Pre
+: 1199 5 3 sents 
+: 1207 7 3 for 
+: 1219 4 6 the 
+: 1226 9 5 chi
+: 1236 4 3 ~l
+: 1241 10 1 dre
+: 1252 4 -1 ~n
+- 1256
+: 1261 7 1 Wrapped 
+: 1271 2 1 in 
+: 1276 7 1 red 
+: 1286 9 5 and 
+: 1298 19 3 green
+- 1317
+: 1334 8 3 All 
+: 1344 3 3 the 
+: 1349 7 3 things 
+: 1360 7 6 I’ve 
+: 1370 8 5 heard 
+: 1380 2 3 a
+: 1385 7 1 bout
+- 1392
+: 1398 6 -1 But 
+: 1407 8 1 ne
+: 1418 2 1 ver 
+: 1422 6 1 real
+: 1431 6 5 ly 
+: 1442 13 6 seen
+- 1455 1459
+- 1459
+: 1481 6 3 No 
+: 1490 6 3 one 
+: 1499 6 3 will 
+: 1508 6 3 be 
+: 1517 5 5 sleep
+: 1525 6 5 ing 
+: 1535 9 5 on
+- 1544
+: 1549 3 -2 The 
+: 1553 9 6 night 
+: 1564 4 5 of 
+: 1571 4 3 Christ
+: 1578 4 5 mas 
+: 1585 10 6 Eve
+- 1595
+: 1607 5 6 Ho
+: 1616 6 8 ping 
+: 1626 12 9 San
+: 1644 14 9 ta’s 
+: 1663 17 9 on
+- 1680
+: 1690 6 9 His 
+* 1700 52 11 way
+- 1752
+: 1765 5 -2 When 
+: 1772 6 3 San
+: 1780 5 -2 ta’s 
+: 1788 6 5 sleigh 
+: 1797 5 -2 bells 
+: 1806 15 7 ring
+- 1821
+: 1833 5 -2 I 
+: 1842 6 3 lis
+: 1851 6 -2 ten 
+: 1859 5 -4 all 
+: 1868 5 -2 a
+: 1877 13 -5 round
+- 1890
+: 1905 6 -2 The 
+: 1914 5 4 he
+: 1922 6 -2 rald 
+: 1931 5 5 an
+* 1939 6 10 gels 
+: 1949 16 7 sing
+- 1965
+: 1977 6 -2 I 
+: 1986 5 3 ne
+: 1995 6 -2 ver 
+: 2004 6 -4 hear 
+: 2013 4 -2 a 
+: 2021 14 -5 sound
+- 2035
+: 2053 4 -2 And 
+: 2059 8 8 all 
+: 2069 2 8 the 
+* 2073 10 8 dreams 
+: 2086 5 7 of 
+: 2094 5 7 chil
+: 2103 11 5 dren
+- 2114
+: 2124 6 -2 Once 
+: 2133 8 7 lost 
+: 2143 3 5 will 
+: 2149 6 7 all 
+: 2157 5 10 be 
+: 2165 15 3 found
+- 2180
+: 2196 6 -2 That’s 
+: 2205 4 8 all 
+: 2213 6 7 I 
+: 2222 10 3 want
+- 2232
+: 2237 3 -2 When 
+: 2241 5 8 Christ
+: 2250 4 7 mas 
+: 2259 13 5 comes 
+: 2273 2 3 to 
+* 2278 34 3 town
+- 2312 2356
+- 2356
+: 2378 6 -2 That’s 
+: 2387 5 8 all 
+: 2396 6 7 I 
+: 2405 8 3 want
+- 2413
+: 2418 5 -2 When 
+: 2424 4 8 Christ
+: 2433 6 7 mas 
+* 2441 30 5 comes
+- 2471
+: 2488 3 3 To 
+* 2493 75 3 town
+E

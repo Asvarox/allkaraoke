@@ -1,0 +1,298 @@
+#ARTIST:Nancy Sinatra
+#TITLE:These Boots Are Made For Walkin'
+#BPM:279,4
+#YEAR:1966
+#PREVIEWSTART:80
+#VIDEO:v=GM1kzbAgo_E
+#GENRE:Country-Pop
+#LANGUAGE:English
+#GAP:16531,14285714286
+#ALLKARAOKE_ID:nancy-sinatra-these-boots-are-made-for-walkin
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:53.713Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GM1kzbAgo_E
+#ALLKARAOKE_PREVIEWEND:106
+#ALLKARAOKE_VOLUME:1
+#P1:These Boots Are Made For Walkin'
+#MP3:Nancy Sinatra - These Boot Are Made For Walking.mp3
+#COVER:Nancy Sinatra - These Boot Are Made For Walking [CO].jpg
+: 19 5 16 You 
+: 27 5 16 keep 
+: 34 4 15 say
+: 39 4 16 ing
+- 43
+: 48 5 16 you've 
+: 55 4 16 got 
+: 61 4 16 some
+: 66 5 16 thing 
+: 75 4 11 for 
+: 81 4 11 me
+- 85 110
+- 110
+: 129 3 16 Some
+: 133 4 16 thing 
+: 142 3 16 you 
+: 147 4 16 call 
+: 155 6 16 love
+- 161
+: 169 4 16 but 
+* 176 4 16 con
+* 183 6 11 fess
+- 189 217
+- 217
+: 236 5 13 You've 
+: 243 3 13 been 
+: 247 2 12 a 
+: 250 2 13 mess
+: 254 4 9 ing
+- 258
+: 265 4 13 where 
+: 271 3 12 you 
+: 275 2 13 should
+: 278 2 12 n't 
+: 282 3 13 been 
+: 286 2 11 a 
+: 290 3 13 mess
+: 295 4 16 ing
+- 299 316
+- 316
+: 335 2 11 and 
+: 339 4 13 now 
+: 345 3 16 some
+: 349 4 16 one 
+: 356 7 15 else 
+: 365 5 16 is 
+: 373 3 16 gett
+: 377 3 16 ing 
+: 383 7 16 all 
+: 393 4 11 your 
+: 399 5 11 best
+- 404 428
+- 428
+: 447 4 11 These 
+: 454 4 14 boots 
+: 460 3 14 are 
+: 464 6 14 made 
+* 474 2 14 for 
+* 478 3 16 walk
+* 484 4 11 ing
+- 488
+: 504 2 11 and 
+: 508 3 14 that's 
+: 514 3 14 just 
+: 521 3 14 what 
+: 525 4 14 they'll 
+: 534 5 16 do
+- 539 543
+- 543
+: 562 2 14 One 
+: 565 2 14 of 
+: 569 4 14 these 
+: 575 4 14 days 
+: 582 4 14 these 
+: 588 4 16 boots
+- 592
+: 597 4 10 are 
+: 602 3 10 gon
+: 606 7 10 na 
+: 616 2 11 walk 
+: 619 7 9 all 
+: 630 2 7 o
+: 633 4 6 ver 
+: 641 7 4 you
+- 648 841
+- 841
+: 860 4 16 You 
+: 867 4 16 keep 
+: 873 4 16 ly
+: 878 4 16 ing
+- 882
+: 887 5 16 when 
+: 894 3 15 you 
+: 898 2 16 ought 
+: 902 2 15 to 
+: 906 4 16 be 
+: 914 4 11 tru
+: 920 7 11 thing
+- 927 946
+- 946
+: 965 2 16 And 
+: 969 4 16 you 
+: 975 3 16 keep 
+: 981 4 17 los
+: 987 4 10 ing
+- 991
+: 996 4 16 when 
+: 1002 3 15 you 
+: 1006 2 16 ought 
+: 1010 2 15 to 
+: 1015 4 16 not 
+: 1022 4 11 bet
+- 1026 1058
+- 1058
+: 1077 3 13 You 
+: 1083 3 13 keep 
+: 1091 3 13 sa
+: 1095 3 13 ming
+- 1098
+: 1103 5 13 when 
+: 1111 2 12 you 
+: 1114 3 13 ought 
+: 1118 2 12 to 
+: 1121 2 13 be 
+: 1124 2 12 a 
+* 1129 6 13 chan
+* 1137 7 16 ging
+- 1144 1156
+- 1156
+: 1175 2 11 Now 
+: 1178 3 14 what's 
+: 1185 2 16 right 
+: 1189 2 16 is 
+: 1195 4 16 right
+- 1199
+: 1209 2 11 but 
+: 1212 2 16 you 
+: 1216 5 16 ain't 
+: 1224 4 16 been 
+: 1229 5 16 right 
+: 1238 7 11 yet
+- 1245 1267
+- 1267
+: 1286 3 11 These 
+: 1292 4 14 boots 
+: 1299 2 14 are 
+: 1302 6 14 made 
+: 1312 4 14 for 
+: 1317 4 16 walk
+: 1324 6 12 ing
+- 1330
+: 1343 2 11 and 
+: 1346 4 14 that's 
+: 1353 4 14 just 
+: 1360 2 14 what 
+: 1364 7 14 they'll 
+: 1374 6 16 do
+- 1380 1381
+- 1381
+: 1400 2 14 One 
+: 1403 2 14 of 
+: 1407 2 14 these 
+: 1413 5 14 days 
+: 1420 4 14 these 
+: 1428 4 16 boots
+- 1432
+: 1435 3 10 are 
+: 1441 3 10 gon
+: 1445 6 10 na 
+: 1455 3 11 walk 
+: 1459 7 9 all 
+* 1469 3 7 o
+* 1473 4 6 ver 
+* 1480 10 4 you
+- 1490 1680
+- 1680
+: 1699 3 16 You 
+: 1705 4 16 keep 
+: 1712 3 15 play
+: 1716 4 16 ing
+- 1720
+: 1727 3 16 where 
+: 1733 3 15 you 
+: 1737 2 16 should
+: 1740 2 15 n't 
+: 1743 7 16 be 
+: 1752 3 16 play
+: 1757 5 11 ing
+- 1762 1787
+- 1787
+: 1806 2 11 And 
+: 1809 2 16 you 
+: 1816 4 16 keep 
+: 1822 3 15 think
+: 1826 4 16 ing
+- 1830
+: 1836 4 16 that 
+: 1842 5 16 you'll 
+: 1849 2 16 ne
+: 1853 2 11 ver 
+: 1856 3 11 get 
+: 1863 4 11 burnt
+- 1867 1869
+- 1869
+: 1888 8 18 Hah
+- 1896
+: 1914 2 11 I've
+: 1917 5 13 ~ 
+: 1924 4 13 just 
+: 1931 4 13 found 
+: 1938 2 13 me 
+: 1941 2 12 a 
+: 1945 4 13 brand
+: 1951 3 12 new 
+: 1955 5 13 box
+- 1960
+: 1965 2 12 of 
+* 1969 6 13 match
+* 1977 5 16 es
+- 1982
+: 1994 8 9 yeah
+- 2002 2003
+- 2003
+: 2022 2 11 And 
+: 2026 4 16 what 
+: 2033 3 16 he 
+: 2037 4 16 knows
+- 2041
+: 2047 3 16 you 
+: 2051 3 16 ain't 
+: 2059 4 16 had 
+: 2067 6 16 time 
+: 2077 2 11 to 
+: 2081 13 11 learn
+- 2094 2108
+- 2108
+: 2127 5 11 These 
+: 2135 4 14 boots 
+: 2141 3 14 are 
+: 2145 6 14 made 
+: 2155 3 14 for 
+: 2159 4 17 walk
+: 2166 6 11 ing
+- 2172
+: 2186 2 11 and 
+: 2189 5 14 that's 
+: 2196 4 14 just 
+: 2203 2 14 what 
+: 2207 8 14 they'll 
+: 2217 7 16 do
+- 2224
+: 2243 2 14 One 
+: 2246 2 14 of 
+: 2250 3 14 these 
+: 2257 3 14 days 
+: 2263 3 14 these 
+: 2270 5 16 boots
+- 2275
+: 2278 4 10 are 
+: 2285 3 10 gon
+: 2289 6 10 na 
+* 2299 3 11 walk 
+* 2303 7 9 all 
+* 2313 3 7 o
+* 2317 4 6 ver 
+* 2324 7 4 you
+- 2331 2435
+- 2435
+: 2454 2 7 Are 
+: 2457 2 6 you 
+: 2460 2 7 rea
+: 2463 2 7 dy 
+: 2466 5 11 boots?
+- 2471 2505
+- 2505
+: 2524 4 16 start 
+: 2532 4 14 wal
+: 2538 4 4 king
+E
