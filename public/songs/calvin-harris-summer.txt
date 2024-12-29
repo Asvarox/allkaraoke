@@ -1,0 +1,194 @@
+#ARTIST:Calvin Harris
+#TITLE:Summer
+#CREATOR:aac*Coppo
+#BPM:256,02
+#YEAR:2014
+#VIDEO:v=ebXbLfLACGM
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:13778,98406374502
+#ALLKARAOKE_ID:calvin-harris-summer
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:53.227Z
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ebXbLfLACGM
+#ALLKARAOKE_VOLUME:0,76
+#P1:Summer
+#MP3:Calvin Harris - Summer.mp3
+#COVER:Calvin Harris - Summer [CO].jpg
+#MEDLEYSTARTBEAT:1280
+#MEDLEYENDBEAT:1824
+: 17 3 2 When 
+: 21 2 2 I 
+: 25 3 7 met 
+: 29 2 7 you 
+: 33 3 9 in 
+: 37 2 7 the 
+: 41 3 11 sum
+: 45 1 9 mer
+: 47 2 11 ~
+- 49 64
+- 64
+: 81 3 -5 To 
+: 85 2 -5 my 
+: 89 5 9 heart
+: 97 5 7 beat's 
+: 105 3 4 sound
+: 109 5 2 ~
+- 114 136
+- 136
+: 153 2 7 We 
+: 157 3 9 fell 
+* 161 2 7 in 
+* 165 1 9 love
+* 167 1 11 ~
+* 169 1 9 ~
+* 171 2 11 ~
+- 173 192
+- 192
+: 209 3 -5 As 
+: 213 2 -5 the 
+: 217 5 9 leaves 
+: 225 5 7 turned 
+: 233 11 7 brown
+- 244 260
+- 260
+: 277 2 2 And 
+: 281 3 11 we 
+: 285 2 14 could 
+: 289 3 11 be 
+: 293 2 9 to
+: 297 3 7 ge
+: 301 2 2 ther 
+: 305 7 4 ba
+: 313 3 2 by
+- 316
+: 333 2 2 As 
+: 337 3 2 long 
+: 341 2 2 as 
+: 345 5 7 skies 
+: 353 5 9 are 
+: 361 3 10 blue
+: 365 5 9 ~
+- 370 388
+- 388
+: 405 2 2 You 
+: 409 5 11 act 
+: 417 5 7 so 
+: 425 3 7 in
+: 429 2 7 no
+: 433 5 7 cent 
+: 441 9 9 now
+- 450
+: 465 3 -5 But 
+: 469 2 -5 you 
+: 473 5 9 lied 
+: 481 5 7 so 
+: 489 9 7 soon
+- 498 512
+- 512
+: 529 3 2 When 
+: 533 2 2 I 
+: 537 3 7 met 
+: 541 2 7 you 
+* 545 3 9 in 
+* 549 2 7 the 
+* 553 3 11 sum
+* 557 1 9 mer
+* 559 2 11 ~
+- 561 1280
+- 1280
+: 1297 3 2 When 
+: 1301 2 2 I 
+: 1305 3 7 met 
+: 1309 2 7 you 
+: 1313 3 9 in 
+: 1317 2 7 the 
+: 1321 3 11 sum
+: 1325 1 9 mer
+: 1327 2 11 ~
+- 1329 1344
+- 1344
+: 1361 3 -5 To 
+: 1365 2 -5 my 
+: 1369 5 9 heart
+: 1377 5 7 beat's 
+: 1385 3 4 sound
+: 1389 5 2 ~
+- 1394 1416
+- 1416
+: 1433 2 7 We 
+: 1437 3 9 fell 
+: 1441 2 7 in 
+: 1445 1 9 love
+: 1447 1 11 ~
+: 1449 1 9 ~
+: 1451 2 11 ~
+- 1453 1472
+- 1472
+: 1489 3 -5 As 
+: 1493 2 -5 the 
+: 1497 5 9 leaves 
+: 1505 5 7 turned 
+: 1513 11 7 brown
+- 1524 1540
+- 1540
+: 1557 2 2 And 
+: 1561 3 11 we 
+: 1565 2 14 could 
+: 1569 3 11 be 
+: 1573 2 9 to
+: 1577 3 7 ge
+: 1581 2 2 ther 
+: 1585 7 4 ba
+: 1593 3 2 by
+- 1596
+: 1613 2 2 As 
+: 1617 3 2 long 
+: 1621 2 2 as 
+: 1625 5 7 skies 
+: 1633 5 9 are 
+* 1641 3 10 blue
+* 1645 5 9 ~
+- 1650 1668
+- 1668
+: 1685 2 2 You 
+: 1689 5 11 act 
+: 1697 5 7 so 
+: 1705 3 7 in
+: 1709 2 7 no
+: 1713 5 7 cent 
+: 1721 9 9 now
+- 1730
+: 1745 3 -5 But 
+: 1749 2 -5 you 
+: 1753 5 9 lied 
+* 1761 5 7 so 
+* 1769 9 7 soon
+- 1778 1792
+- 1792
+: 1809 3 2 When 
+: 1813 2 2 I 
+: 1817 3 7 met 
+: 1821 2 7 you 
+: 1825 3 9 in 
+: 1829 2 7 the 
+: 1833 3 11 sum
+: 1837 1 9 mer
+: 1839 2 11 ~
+- 1841 2560
+- 2560
+: 2577 3 2 When 
+: 2581 2 2 I 
+: 2585 3 7 met 
+: 2589 2 7 you 
+: 2593 3 9 in 
+: 2597 2 7 the 
+: 2601 3 11 sum
+: 2605 1 9 mer
+: 2607 2 11 ~
+- 2609 2840
+- 2840
+: 2857 3 11 Sum
+: 2861 1 9 mer
+: 2863 2 11 ~.
+E

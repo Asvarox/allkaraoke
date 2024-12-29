@@ -1,0 +1,202 @@
+#ARTIST:Slowdive
+#TITLE:40 Days
+#CREATOR:dude76
+#BPM:384
+#YEAR:1993
+#PREVIEWSTART:64
+#VIDEO:v=aZXmcM3r3nM
+#GENRE:Shoegaze
+#LANGUAGE:English
+#GAP:20694,375
+#ALLKARAOKE_ID:slowdive-40-days
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:53.070Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:185
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=20055
+#ALLKARAOKE_PREVIEWEND:86
+#ALLKARAOKE_VOLUME:1
+#P1:40 Days
+#MP3:Slowdive - 40 Days.mp3
+: 26 8 11 For
+: 36 4 9 ty 
+: 42 10 11 days 
+: 54 4 9 and 
+: 60 4 7 I 
+: 66 16 11 miss 
+: 84 16 11 you
+- 100 130
+- 130
+: 156 6 16 I’m 
+: 164 10 14 so 
+: 176 8 16 high 
+: 186 4 14 that 
+: 192 6 12 I’ve 
+: 200 16 16 lost 
+: 218 12 18 my 
+: 232 38 14 mind
+- 270
+: 290 10 11 It’s 
+: 302 2 9 the 
+: 306 8 11 sum
+: 316 8 9 mer 
+* 326 8 7 I’m 
+: 336 16 11 think
+: 354 14 11 ing 
+: 370 30 11 of
+- 400
+: 426 8 16 For
+: 436 4 14 ty 
+: 442 8 16 days 
+: 452 6 14 and 
+: 460 6 12 I’m 
+: 468 16 16 blown 
+: 486 4 18 a
+: 492 26 14 way
+- 518 530
+- 530
+: 556 10 16 If 
+: 568 8 16 I 
+: 578 16 19 saw 
+* 596 20 21 some
+: 618 14 18 thing 
+: 634 30 14 new
+- 664
+: 668 4 16 I 
+: 674 12 18 guess 
+: 688 10 18 I 
+: 700 6 18 would
+: 708 24 18 n’t 
+: 734 14 19 wor
+: 750 24 16 ry
+- 774 796
+- 796
+: 822 8 16 If 
+: 832 10 19 I 
+: 844 14 19 saw 
+: 860 20 21 some
+: 882 16 18 thing 
+: 900 30 14 new
+- 930
+: 932 4 16 I 
+: 938 12 18 guess 
+: 952 8 18 I 
+: 962 8 18 would
+: 972 24 18 n’t 
+* 998 38 16 care
+- 1036 1670
+- 1670
+: 1696 6 11 You 
+: 1704 10 9 said 
+: 1716 6 7 you’re 
+: 1724 16 11 al
+: 1742 12 11 ways 
+: 1756 18 11 sleep
+: 1776 18 11 ing
+- 1794
+: 1814 8 16 But 
+: 1824 4 14 if 
+: 1830 10 16 so, 
+: 1842 8 14 I’ll 
+: 1852 4 12 be 
+* 1858 16 16 leav
+: 1876 20 14 ing
+- 1896 1930
+- 1930
+: 1956 6 11 It’s 
+: 1964 8 11 just 
+: 1974 6 9 that 
+: 1982 8 7 I’m 
+: 1992 14 11 al
+: 2008 14 11 ways 
+: 2024 14 11 fal
+: 2040 22 11 ling
+- 2062
+: 2080 10 16 And 
+: 2092 6 14 it 
+: 2100 6 16 makes 
+: 2108 4 14 me 
+: 2114 8 12 feel 
+: 2124 14 16 bad, 
+* 2140 32 14 yeah
+- 2172 2186
+- 2186
+: 2212 10 16 If 
+: 2224 8 16 I 
+: 2234 14 19 saw 
+: 2250 20 21 some
+: 2272 16 18 thing 
+: 2290 32 14 new
+- 2322
+: 2324 4 16 I 
+: 2330 14 18 guess 
+: 2346 8 18 I 
+: 2356 14 18 would
+: 2372 16 18 n’t 
+: 2390 14 19 wor
+: 2406 26 16 ry
+- 2432 2452
+- 2452
+: 2478 10 16 If 
+: 2490 8 19 I 
+: 2500 16 19 saw 
+: 2518 20 21 some
+: 2540 14 18 thing 
+: 2556 32 14 new
+- 2588
+: 2592 4 16 I 
+: 2598 10 18 guess 
+: 2610 4 18 that 
+: 2616 4 18 I 
+: 2622 8 18 would
+: 2632 22 18 n’t 
+: 2656 32 16 care
+- 2688 3324
+- 3324
+: 3350 4 21 Just 
+: 3356 4 21 to 
+: 3362 18 21 try 
+: 3382 4 21 and 
+* 3388 16 23 watch 
+: 3406 24 19 you
+- 3430 3434
+- 3434
+: 3460 6 21 Said 
+: 3468 4 21 I 
+: 3474 10 21 love 
+: 3486 4 21 the 
+: 3492 10 21 way 
+: 3504 4 19 that 
+: 3510 2 18 you 
+* 3514 38 16 smile, 
+: 3554 14 19 don’t
+- 3568 3580
+- 3580
+: 3606 10 21 Makes 
+: 3618 4 21 me 
+: 3624 10 21 try 
+: 3636 12 21 and 
+: 3650 14 23 watch 
+: 3666 20 19 you
+- 3686 3688
+- 3688
+: 3714 4 21 I 
+: 3720 10 21 said 
+: 3732 4 21 I 
+: 3738 10 21 love 
+: 3750 4 21 the 
+: 3756 8 21 way 
+: 3766 6 19 that 
+: 3774 2 18 you 
+: 3778 34 16 smi
+: 3814 8 19 ~
+: 3824 10 21 ~le, 
+* 3836 14 16 don’t
+- 3850
+: 3862 16 21 Smile 
+: 3880 4 21 when
+: 3886 4 21 e
+: 3892 10 21 ver 
+: 3904 6 21 I 
+: 3912 16 23 watch 
+: 3930 16 19 you
+E
