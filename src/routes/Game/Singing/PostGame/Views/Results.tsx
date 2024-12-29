@@ -3,11 +3,14 @@ import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
 import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/Button';
 import { sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
+import useKeyboardNav from 'modules/hooks/useKeyboardNav';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
+import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
 import CameraRoll from 'routes/Game/Singing/PostGame/Views/Results/CameraRoll';
+import { CameraRollPlaceholder } from 'routes/Game/Singing/PostGame/Views/Results/CameraRollPlaceholder';
 import PlayerScoreView from 'routes/Game/Singing/PostGame/Views/Results/PlayerScore';
 
 interface Props {
@@ -43,20 +46,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
     }
   };
 
-  useKeyboard(
-    {
-      accept: nextStep,
-    },
-    true,
-    [segment],
-  );
-  const help = useMemo(
-    () => ({
-      accept: 'Next',
-    }),
-    [],
-  );
-  useKeyboardHelp(help, true);
+  const { register } = useKeyboardNav();
 
   const isCoop = singSetup.mode === GAME_MODE.CO_OP;
   const finalPlayers = isCoop ? [{ ...players[0], name: players.map((player) => player.name).join(', ') }] : players;
@@ -65,6 +55,16 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   const highestScore = Math.max(...playerScores);
 
   const revealHighScore = segment > 3;
+
+  const isCameraModeEnabled = useFeatureFlag(FeatureFlags.CameraMode);
+  const initialCameraPermission = useMemo(() => CameraManager.getPermissionStatus(), []);
+  // needs to be here to force rerender of Results so Next button is selected after enabling camera
+  const [isRequestInProgress, setIsRequestInProgress] = useState(false);
+  const enableCamera = () => {
+    posthog.capture('enable-camera');
+    setIsRequestInProgress(true);
+    CameraManager.requestPermissions().then(() => setIsRequestInProgress(false));
+  };
 
   return (
     <Container>
@@ -84,11 +84,22 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
             />
           ))}
         </ScoresContainer>
-        {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
+        {isCameraModeEnabled ? (
+          <div className="w-[30%]">
+            {initialCameraPermission ? (
+              <CameraRoll />
+            ) : (
+              <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
+            )}
+          </div>
+        ) : initialCameraPermission ? (
+          <div className="w-[30%]">
+            <CameraRoll />
+          </div>
+        ) : null}
       </div>
       <SongSelectionButton
-        onClick={nextStep}
-        focused
+        {...register('next-button', () => nextStep(), undefined, true)}
         data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}>
         {isAnimFinished ? 'Next' : 'Skip'}
       </SongSelectionButton>
@@ -127,7 +138,5 @@ const SongSelectionButton = styled(Button)`
   margin-left: auto;
   margin-top: auto;
 `;
-
-const StyledPhotoRoll = styled(CameraRoll)``;
 
 export default ResultsView;

@@ -5,4 +5,5 @@ export const FeatureFlags = {
   Eurovision: 'eurovision',
   Christmas: 'christmas',
   Calibration: 'calibration',
+  CameraMode: 'camera_mode',
 } as const;

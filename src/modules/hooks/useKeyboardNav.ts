@@ -24,7 +24,7 @@ interface KeyboardAction {
   propName: string;
 }
 
-export default function useKeyboardNav(options: Options = {}, debug = false) {
+export default function useKeyboardNav(options: Options = {}, debug = true) {
   const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
