@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { captureException } from '@sentry/react';
 import CameraManager from 'modules/Camera/CameraManager';
-import { ComponentProps, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-function CameraRoll({ ...props }: ComponentProps<typeof Container>) {
+function CameraRoll() {
   const [videoSrc, setVideoSrc] = useState('');
   const video = useRef<HTMLVideoElement | null>(null);
 
@@ -26,16 +26,8 @@ function CameraRoll({ ...props }: ComponentProps<typeof Container>) {
     }
   }, [videoSrc]);
 
-  return (
-    <Container {...props}>
-      <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />
-    </Container>
-  );
+  return <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />;
 }
-
-const Container = styled.div`
-  width: 35%;
-`;
 
 const Video = styled.video`
   object-fit: cover;
