@@ -64,36 +64,40 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   const playerScores = finalPlayers.map((player) => sumDetailedScore(player.detailedScore[0]));
   const highestScore = Math.max(...playerScores);
 
+  const revealHighScore = segment > 3;
+
   return (
     <Container>
-      <ScoresContainer>
-        {finalPlayers.map((player, number) => (
-          <PlayerScoreView
-            playerNumber={player.playerNumber}
-            useColors={!isCoop}
-            revealHighScore={segment > 3}
-            segment={segment}
-            key={number}
-            player={player}
-            highScores={highScores}
-            highestScore={highestScore}
-            singSetup={singSetup}
-          />
-        ))}
-      </ScoresContainer>
+      <div className="flex flex-row gap-10">
+        <ScoresContainer data-collapse={revealHighScore}>
+          {finalPlayers.map((player, number) => (
+            <PlayerScoreView
+              playerNumber={player.playerNumber}
+              useColors={!isCoop}
+              revealHighScore={revealHighScore}
+              segment={segment}
+              key={number}
+              player={player}
+              highScores={highScores}
+              highestScore={highestScore}
+              singSetup={singSetup}
+            />
+          ))}
+        </ScoresContainer>
+        {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
+      </div>
       <SongSelectionButton
         onClick={nextStep}
         focused
         data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}>
         {isAnimFinished ? 'Next' : 'Skip'}
       </SongSelectionButton>
-      {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
     </Container>
   );
 }
 const Container = styled.div`
   position: absolute;
-  padding: 20rem 15rem 10rem 15rem;
+  padding: 20rem 5rem 15rem 5rem;
   top: 0;
   height: 100%;
   box-sizing: border-box;
@@ -108,21 +112,22 @@ const ScoresContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
-  margin-bottom: 15rem;
   flex: 1;
+
+  &[data-collapse='true'] {
+    gap: 2rem;
+  }
+
+  transition: gap 0.5s;
 `;
 
 const SongSelectionButton = styled(Button)`
   width: 40rem;
   font-size: 1.9vw;
   margin-left: auto;
+  margin-top: auto;
 `;
 
-const StyledPhotoRoll = styled(CameraRoll)`
-  position: absolute;
-  top: calc(50% - 30rem);
-  left: 95rem;
-  transform: scale(0.75);
-`;
+const StyledPhotoRoll = styled(CameraRoll)``;
 
 export default ResultsView;
