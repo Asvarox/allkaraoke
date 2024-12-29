@@ -8,14 +8,14 @@ type Callback = (e?: KeyboardEvent) => void;
 export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z,1,2,3,4,5,6,7,8,9,0';
 
 try {
-  // @ts-expect-error keyboard is not in the types
-  global?.navigator?.keyboard?.lock?.(['Escape']);
+  // // @ts-expect-error keyboard is not in the types
+  // global?.navigator?.keyboard?.lock?.(['Escape']);
 } catch (e) {
   console.warn(e);
 }
-
-// @ts-expect-error keyboard is not in the types
-export const supportsEscAsBack = !!global?.navigator?.keyboard?.lock;
+// // @ts-expect-error keyboard is not in the types
+// export const supportsEscAsBack = !!global?.navigator?.keyboard?.lock;
+export const supportsEscAsBack = false;
 
 export interface Params {
   up?: Callback;
