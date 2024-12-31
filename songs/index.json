@@ -189,6 +189,34 @@
     "local": false
   },
   {
+    "id": "3-doors-down-its-not-my-time",
+    "title": "It’s Not My Time",
+    "artist": "3 Doors Down",
+    "video": "qpfhcljJ9bQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.31,
+    "gap": 32122.54676371605,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:37.309Z",
+    "genre": "Alternative Rock",
+    "realBpm": 128,
+    "volume": 0.74,
+    "author": "sheder55",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=24",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3868",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3doorsdownitsnotmytime",
+    "local": false
+  },
+  {
     "id": "3-doors-down-kryptonite",
     "title": "Kryptonite",
     "artist": "3 Doors Down",
@@ -242,6 +270,34 @@
     ],
     "tracksCount": 1,
     "search": "3doorsdownwhenimgone",
+    "local": false
+  },
+  {
+    "id": "3-doors-down-when-youre-young",
+    "title": "When You’re Young",
+    "artist": "3 Doors Down",
+    "video": "j7h_b-YA5qM",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.98,
+    "gap": 13777.206312098187,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:37.308Z",
+    "genre": "Rock",
+    "realBpm": 77,
+    "volume": 0.8,
+    "author": "robsetsfire",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=102371",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=16366",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3doorsdownwhenyoureyoung",
     "local": false
   },
   {
@@ -995,6 +1051,34 @@
     ],
     "tracksCount": 1,
     "search": "ahatakeonme",
+    "local": false
+  },
+  {
+    "id": "a-perfect-circle-judith",
+    "title": "Judith",
+    "artist": "A Perfect Circle",
+    "video": "xTgKRCXybSM",
+    "language": [
+      "English"
+    ],
+    "bpm": 313.07,
+    "gap": 28953.835244514008,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:27.602Z",
+    "genre": "Alternative Rock",
+    "realBpm": 82,
+    "volume": 0.77,
+    "author": "Eggman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4475",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9717",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aperfectcirclejudith",
     "local": false
   },
   {
@@ -2789,6 +2873,36 @@
     "local": false
   },
   {
+    "id": "air-supply-making-love-out-of-nothing-at-all",
+    "title": "Making Love Out of Nothing at All",
+    "artist": "Air Supply",
+    "video": "ogoIxkPjRts",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.05,
+    "gap": 19461.916319507334,
+    "year": "1983",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-12-31T00:11:25.610Z",
+    "genre": "Rock",
+    "realBpm": 141,
+    "previewStart": 132,
+    "previewEnd": 187,
+    "volume": 1,
+    "author": "Pure6",
+    "sourceUrl": "https://www.youtube.com/watch?v=ogoIxkPjRts",
+    "tracks": [
+      {
+        "name": "Making Love Out Of Nothing At All",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "airsupplymakingloveoutofnothingatall",
+    "local": false
+  },
+  {
     "id": "airbag-cae-el-sol",
     "title": "Cae el sol",
     "artist": "Airbag",
@@ -2998,6 +3112,33 @@
     ],
     "tracksCount": 1,
     "search": "akinamelesssong",
+    "local": false
+  },
+  {
+    "id": "akira-yamaoka-feat-mary-elizabeth-mcglynn-youre-not-here",
+    "title": "You’re Not Here",
+    "artist": "Akira Yamaoka feat. Mary Elizabeth McGlynn",
+    "video": "S8IA3qONp8c",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 27940,
+    "year": "2008",
+    "lastUpdate": "2024-12-31T00:11:27.734Z",
+    "genre": "Rock",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "Leo 21",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3162",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=14961",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "akirayamaokafeatmaryelizabethmcglynnyourenothere",
     "local": false
   },
   {
@@ -6322,6 +6463,33 @@
     "local": false
   },
   {
+    "id": "apocalyptica-feat-brent-smith-not-strong-enough",
+    "title": "Not Strong Enough",
+    "artist": "Apocalyptica feat. Brent Smith",
+    "video": "AlZuqUTgcss",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 10333.90243902439,
+    "year": "2010",
+    "lastUpdate": "2024-12-31T00:11:27.603Z",
+    "genre": "Symphonic Rock",
+    "realBpm": 164,
+    "volume": 0.8,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26027",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "apocalypticafeatbrentsmithnotstrongenough",
+    "local": false
+  },
+  {
     "id": "apocalyptica-ft-adam-gontier-i-dont-care",
     "title": "I Don't Care",
     "artist": "Apocalyptica ft. Adam Gontier",
@@ -7947,6 +8115,64 @@
     "local": false
   },
   {
+    "id": "asian-kung-fu-generation-after-dark",
+    "title": "After Dark",
+    "artist": "Asian Kung-Fu Generation",
+    "video": "J_IsnEZcl4E",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 382.06,
+    "gap": 41048.478772967595,
+    "year": "2007",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-31T00:11:37.576Z",
+    "genre": "J-Rock",
+    "realBpm": 191,
+    "previewStart": 62,
+    "previewEnd": 101,
+    "volume": 0.63,
+    "author": "Rubilosde",
+    "sourceUrl": "https://www.youtube.com/watch?v=J_IsnEZcl4E",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "asiankungfugenerationafterdark",
+    "local": false
+  },
+  {
+    "id": "asian-kung-fu-generation-haruka-kanata",
+    "title": "Haruka Kanata",
+    "artist": "Asian Kung-Fu Generation",
+    "video": "nJ6A6GC_ki4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 350.1,
+    "gap": 30444.567266495287,
+    "year": "2005",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-31T00:11:37.574Z",
+    "edition": "Hokai Amplifier",
+    "genre": "J-Rock",
+    "realBpm": 175,
+    "previewStart": 50,
+    "previewEnd": 80,
+    "volume": 0.87,
+    "author": "Rubilosde",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "asiankungfugenerationharukakanata",
+    "local": false
+  },
+  {
     "id": "asian-kung-fu-generation-naruto-haruka-kanata",
     "title": "Haruka Kanata",
     "artist": "Asian Kung Fu Generation - Naruto",
@@ -7970,6 +8196,32 @@
     ],
     "tracksCount": 1,
     "search": "asiankungfugenerationnarutoharukakanata",
+    "local": false
+  },
+  {
+    "id": "asian-kung-fu-generation-rere",
+    "title": "Re:Re:",
+    "artist": "Asian Kung-Fu Generation",
+    "video": "fodAJ-1dN3I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 310.06,
+    "gap": 12096.06759981939,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-31T00:11:37.575Z",
+    "genre": "Anime",
+    "realBpm": 155,
+    "volume": 0.9,
+    "author": "Rubilosde",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "asiankungfugenerationrere",
     "local": false
   },
   {
@@ -8548,6 +8800,35 @@
     ],
     "tracksCount": 1,
     "search": "avengedsevenfoldbatcountry",
+    "local": false
+  },
+  {
+    "id": "avenged-sevenfold-blinded-in-chains",
+    "title": "Blinded In Chains",
+    "artist": "Avenged Sevenfold",
+    "video": "TYgxM_suaUw",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 49294.375,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:27.601Z",
+    "genre": "Hard Rock",
+    "videoGap": 7,
+    "realBpm": 96,
+    "volume": 0.85,
+    "author": "Lorc",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=29196",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12897",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avengedsevenfoldblindedinchains",
     "local": false
   },
   {
@@ -9333,6 +9614,36 @@
     ],
     "tracksCount": 1,
     "search": "avrillavignenobodyshome",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-rock-n-roll",
+    "title": "Rock N Roll",
+    "artist": "Avril Lavigne",
+    "video": "uuNTO31FlY8",
+    "language": [
+      "English"
+    ],
+    "bpm": 184,
+    "gap": 34898.739130434784,
+    "year": "2013",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-12-31T00:11:25.604Z",
+    "genre": "Rock/Pop",
+    "realBpm": 92,
+    "previewStart": 81,
+    "previewEnd": 118,
+    "volume": 0.81,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=uuNTO31FlY8",
+    "tracks": [
+      {
+        "name": "Rock N Roll",
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignerocknroll",
     "local": false
   },
   {
@@ -14236,6 +14547,34 @@
     "local": false
   },
   {
+    "id": "blue-oyster-cult-burnin-for-you",
+    "title": "Burnin’ For You",
+    "artist": "Blue Öyster Cult",
+    "video": "LcMSFZZ-erw",
+    "language": [
+      "English"
+    ],
+    "bpm": 1086.12,
+    "gap": 24785.634736493204,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:27.444Z",
+    "genre": "Rock",
+    "realBpm": 134,
+    "volume": 0.8,
+    "author": "Bananenbenno",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=178554",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26007",
+    "tracks": [
+      {
+        "start": 72
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blueoystercultburninforyou",
+    "local": false
+  },
+  {
     "id": "blue-oyster-cult-dont-fear-the-reaper",
     "title": "(Don’t Fear) The Reaper",
     "artist": "Blue Öyster Cult",
@@ -14506,6 +14845,34 @@
     ],
     "tracksCount": 1,
     "search": "bobmarleythewailersthreelittlebirds",
+    "local": false
+  },
+  {
+    "id": "bob-seger-the-silver-bullet-band-old-time-rock-roll",
+    "title": "Old Time Rock & Roll",
+    "artist": "Bob Seger & The Silver Bullet Band",
+    "video": "eMY1ewg-e9w",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 5374.390243902439,
+    "year": "1978",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:27.443Z",
+    "genre": "Rock & Roll",
+    "realBpm": 124,
+    "volume": 0.8,
+    "author": "juliana",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=558",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3969",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bobsegerthesilverbulletbandoldtimerockroll",
     "local": false
   },
   {
@@ -15130,6 +15497,62 @@
     "local": false
   },
   {
+    "id": "boston-foreplay-long-time",
+    "title": "Foreplay / Long Time",
+    "artist": "Boston",
+    "video": "TnwqUEelQjE",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.28,
+    "gap": 165380.85522978593,
+    "year": "1976",
+    "lastUpdate": "2024-12-31T00:11:27.261Z",
+    "genre": "Rock",
+    "realBpm": 119,
+    "previewStart": 195,
+    "previewEnd": 244,
+    "volume": 0.76,
+    "author": "Eggman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4475",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9579",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bostonforeplaylongtime",
+    "local": false
+  },
+  {
+    "id": "boston-more-than-a-feeling",
+    "title": "More Than A Feeling",
+    "artist": "Boston",
+    "video": "t4QK8RxCAwo",
+    "language": [
+      "English"
+    ],
+    "bpm": 338.7,
+    "gap": 17661.399468556243,
+    "year": "1976",
+    "lastUpdate": "2024-12-31T00:11:27.103Z",
+    "genre": "Rock",
+    "realBpm": 157,
+    "volume": 0.8,
+    "author": "ultrastarsongs",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1314",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4073",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bostonmorethanafeeling",
+    "local": false
+  },
+  {
     "id": "botchi-boromaru-feat-mossa-tsuyogaru-girl",
     "title": "Tsuyogaru Girl",
     "artist": "Botchi Boromaru feat. Mossa",
@@ -15431,6 +15854,143 @@
     "local": false
   },
   {
+    "id": "breaking-benjamin-breath",
+    "title": "Breath",
+    "artist": "Breaking Benjamin",
+    "video": "R6t3KfbFMOQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 365.45,
+    "gap": 20754.91312080996,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.893Z",
+    "genre": "Alternative Metal",
+    "realBpm": 93,
+    "volume": 0.85,
+    "author": "masterxy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=13612",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=7353",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminbreath",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-dance-with-the-devil",
+    "title": "Dance With The Devil",
+    "artist": "Breaking Benjamin",
+    "video": "Rxncx2mJqVo",
+    "language": [
+      "English"
+    ],
+    "bpm": 310,
+    "gap": 6013.870967741936,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:27.102Z",
+    "genre": "Rock",
+    "realBpm": 155,
+    "volume": 0.85,
+    "author": "dieter10000",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=178664",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27221",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjamindancewiththedevil",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-evil-angel",
+    "title": "Evil Angel",
+    "artist": "Breaking Benjamin",
+    "video": "ghWVgRdGlTc",
+    "language": [
+      "English"
+    ],
+    "bpm": 352,
+    "gap": 21089.886363636364,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.891Z",
+    "realBpm": 172,
+    "volume": 0.82,
+    "author": "lally87",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=35585",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=9867",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminevilangel",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-firefly",
+    "title": "Firefly",
+    "artist": "Breaking Benjamin",
+    "video": "X66R1-fNZNc",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 20070.978260869564,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.886Z",
+    "realBpm": 92,
+    "volume": 0.8,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28175",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminfirefly",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-had-enough",
+    "title": "Had Enough",
+    "artist": "Breaking Benjamin",
+    "video": "C6QZ6a8uqDk",
+    "language": [
+      "English"
+    ],
+    "bpm": 294.5,
+    "gap": 22851.32427843803,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.888Z",
+    "realBpm": 164,
+    "volume": 0.75,
+    "author": "masterxy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=13612",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=7260",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminhadenough",
+    "local": false
+  },
+  {
     "id": "breaking-benjamin-i-will-not-bow",
     "title": "I Will Not Bow",
     "artist": "Breaking Benjamin",
@@ -15455,6 +16015,33 @@
     ],
     "tracksCount": 1,
     "search": "breakingbenjaminiwillnotbow",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-rain",
+    "title": "Rain",
+    "artist": "Breaking Benjamin",
+    "video": "YIqxjTtNE7c",
+    "language": [
+      "English"
+    ],
+    "bpm": 350,
+    "gap": 15454.285714285714,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.890Z",
+    "realBpm": 125,
+    "volume": 0.79,
+    "author": "lally87",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=35585",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=9866",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminrain",
     "local": false
   },
   {
@@ -15507,6 +16094,33 @@
     ],
     "tracksCount": 1,
     "search": "breakingbenjaminthediaryofjane",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-unknown-soldier",
+    "title": "Unknown Soldier",
+    "artist": "Breaking Benjamin",
+    "video": "hOxyOXjnvPk",
+    "language": [
+      "English"
+    ],
+    "bpm": 243.9,
+    "gap": 22585.990159901598,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:25.887Z",
+    "realBpm": 115,
+    "volume": 0.8,
+    "author": "Stalker128",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=38682",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16349",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminunknownsoldier",
     "local": false
   },
   {
@@ -15798,6 +16412,34 @@
     ],
     "tracksCount": 1,
     "search": "bringmethehorizonfollowyou",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-mantra",
+    "title": "Mantra",
+    "artist": "Bring Me The Horizon",
+    "video": "VAXg78MKJcM",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 32190,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-31T00:11:27.101Z",
+    "genre": "Hard Rock",
+    "realBpm": 90,
+    "volume": 0.74,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28266",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonmantra",
     "local": false
   },
   {
@@ -18730,6 +19372,35 @@
     "local": false
   },
   {
+    "id": "buggles-video-killed-the-radio-star",
+    "title": "Video Killed The Radio Star",
+    "artist": "Buggles",
+    "video": "HRXeBKys-Sw",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.6,
+    "gap": 16069.717557251908,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-31T00:11:25.010Z",
+    "genre": "Pop",
+    "realBpm": 132,
+    "previewStart": 83,
+    "previewEnd": 102,
+    "volume": 0.79,
+    "sourceUrl": "https://www.youtube.com/watch?v=HRXeBKys-Sw",
+    "tracks": [
+      {
+        "name": "Video Killed The Radio Star",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bugglesvideokilledtheradiostar",
+    "local": false
+  },
+  {
     "id": "bunga-citra-lestari-wanita-terbahagia",
     "title": "Wanita Terbahagia",
     "artist": "Bunga Citra Lestari",
@@ -20789,6 +21460,34 @@
     "local": false
   },
   {
+    "id": "chevelle-send-the-pain-below",
+    "title": "Send The Pain Below",
+    "artist": "Chevelle",
+    "video": "gpyRI1j9t6c",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 15300,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.953Z",
+    "genre": "Rock",
+    "realBpm": 92,
+    "volume": 0.75,
+    "author": "jdogk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4730",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6525",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chevellesendthepainbelow",
+    "local": false
+  },
+  {
     "id": "chicago-hard-to-say-im-sorry",
     "title": "Hard To Say I’m Sorry",
     "artist": "Chicago",
@@ -21782,10 +22481,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 610,
+    "gap": 660,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-21T00:11:32.324Z",
+    "lastUpdate": "2024-12-30T17:47:08.055Z",
     "realBpm": 75,
     "volume": 0.8,
     "author": "Knuddel",
@@ -22921,6 +23620,34 @@
     "local": false
   },
   {
+    "id": "creedence-clearwater-revival-fortunate-son",
+    "title": "Fortunate Son",
+    "artist": "Creedence Clearwater Revival",
+    "video": "ZWijx_AgPiA",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.1,
+    "gap": 17831.900452488688,
+    "year": "1969",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.952Z",
+    "genre": "Southern Rock",
+    "realBpm": 133,
+    "volume": 0.85,
+    "author": "mustangfred",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5943",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15313",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "creedenceclearwaterrevivalfortunateson",
+    "local": false
+  },
+  {
     "id": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
     "title": "Have You Ever Seen The Rain",
     "artist": "Creedence Clearwater Revival",
@@ -23700,6 +24427,32 @@
     ],
     "tracksCount": 1,
     "search": "czeslawniemenpodpapugami",
+    "local": false
+  },
+  {
+    "id": "d4vd-remember-me",
+    "title": "Remember Me",
+    "artist": "d4vd",
+    "video": "Tg9yLrJTmTc",
+    "language": [
+      "English"
+    ],
+    "bpm": 524,
+    "gap": 1578.0916030534352,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:37.577Z",
+    "genre": "Pop",
+    "realBpm": 111,
+    "volume": 0.76,
+    "author": "RSing",
+    "tracks": [
+      {
+        "start": 35
+      }
+    ],
+    "tracksCount": 1,
+    "search": "d4vdrememberme",
     "local": false
   },
   {
@@ -24929,6 +25682,62 @@
     ],
     "tracksCount": 1,
     "search": "daughtryhome",
+    "local": false
+  },
+  {
+    "id": "daughtry-no-surprise",
+    "title": "No Surprise",
+    "artist": "Daughtry",
+    "video": "yyl24HRGgSU",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 3525,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.951Z",
+    "genre": "Rock",
+    "realBpm": 96,
+    "volume": 0.75,
+    "author": "Macbeth",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2728",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7490",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daughtrynosurprise",
+    "local": false
+  },
+  {
+    "id": "daughtry-september",
+    "title": "September",
+    "artist": "Daughtry",
+    "video": "nJzBcKM3ZIE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 12350,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.950Z",
+    "genre": "Rock",
+    "realBpm": 150,
+    "volume": 0.8,
+    "author": "Relisch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=174695",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25962",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daughtryseptember",
     "local": false
   },
   {
@@ -29296,6 +30105,62 @@
     "local": false
   },
   {
+    "id": "disturbed-a-reason-to-fight",
+    "title": "A Reason To Fight",
+    "artist": "Disturbed",
+    "video": "t4382UVl0oc",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 12640,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.947Z",
+    "genre": "Rock",
+    "realBpm": 75,
+    "volume": 0.76,
+    "author": "g3n35i5",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=157327",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27076",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disturbedareasontofight",
+    "local": false
+  },
+  {
+    "id": "disturbed-asylum",
+    "title": "Asylum",
+    "artist": "Disturbed",
+    "video": "1K9jBL2syJ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 20280,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.949Z",
+    "genre": "Rock",
+    "realBpm": 90,
+    "volume": 0.85,
+    "author": "Silverbeam",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=42",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10861",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disturbedasylum",
+    "local": false
+  },
+  {
     "id": "disturbed-deify",
     "title": "Deify",
     "artist": "Disturbed",
@@ -29380,6 +30245,34 @@
     ],
     "tracksCount": 1,
     "search": "disturbeddroppinplates",
+    "local": false
+  },
+  {
+    "id": "disturbed-facade",
+    "title": "Façade",
+    "artist": "Disturbed",
+    "video": "jdXfmkn7Gn0",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 13307.35294117647,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.666Z",
+    "genre": "Metal",
+    "realBpm": 136,
+    "volume": 0.8,
+    "author": "crappy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8159",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disturbedfacade",
     "local": false
   },
   {
@@ -30574,6 +31467,34 @@
     "local": false
   },
   {
+    "id": "drowning-pool-sinner",
+    "title": "Sinner",
+    "artist": "Drowning Pool",
+    "video": "QiKK7ULsqXk",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.18,
+    "gap": 32069.00156908085,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.946Z",
+    "genre": "Rock",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "LilPeep1337",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=149516",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27328",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "drowningpoolsinner",
+    "local": false
+  },
+  {
     "id": "dschinghis-khan-dschinghis-khan",
     "title": "Dschinghis Khan",
     "artist": "Dschinghis Khan",
@@ -31222,6 +32143,34 @@
     "local": false
   },
   {
+    "id": "eagles-the-long-run",
+    "title": "The Long Run",
+    "artist": "Eagles",
+    "video": "skC2GToR1uY",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 19800,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.796Z",
+    "genre": "Rock",
+    "realBpm": 99,
+    "volume": 0.78,
+    "author": "Relisch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=174695",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28468",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eaglesthelongrun",
+    "local": false
+  },
+  {
     "id": "earth-wind-fire-lets-groove",
     "title": "Let’s Groove",
     "artist": "Earth, Wind & Fire",
@@ -31464,6 +32413,33 @@
     ],
     "tracksCount": 1,
     "search": "edsheeraneyesclosed",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-feat-bring-me-the-horizon-bad-habits",
+    "title": "Bad Habits",
+    "artist": "Ed Sheeran feat. Bring Me The Horizon",
+    "video": "IxcxyGDD38E",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.03,
+    "gap": 456.82898904705553,
+    "year": "2021",
+    "lastUpdate": "2024-12-31T00:11:26.513Z",
+    "genre": "Pop",
+    "realBpm": 131,
+    "volume": 0.85,
+    "author": "Whitebeing",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=166588",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25673",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranfeatbringmethehorizonbadhabits",
     "local": false
   },
   {
@@ -35795,6 +36771,37 @@
     "local": false
   },
   {
+    "id": "fex-subways-of-your-mind",
+    "title": "Subways Of Your Mind",
+    "artist": "FEX",
+    "video": "KgKKcz5sjSY",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 38986.230769230766,
+    "year": "1983",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-12-31T00:11:37.312Z",
+    "genre": "New Wave",
+    "realBpm": 125,
+    "previewStart": 39,
+    "previewEnd": 87,
+    "volume": 1,
+    "author": "lukmuk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=121288",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29664",
+    "tracks": [
+      {
+        "name": "Subways Of Your Mind (Original Cassette Demo Version)",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fexsubwaysofyourmind",
+    "local": false
+  },
+  {
     "id": "fifth-harmony-feat-kid-ink-worth-it",
     "title": "Worth It",
     "artist": "Fifth Harmony feat. Kid Ink",
@@ -36119,6 +37126,89 @@
     ],
     "tracksCount": 1,
     "search": "fitoyfitipaldisporlabocaviveelpez",
+    "local": false
+  },
+  {
+    "id": "five-finger-death-punch-coming-down",
+    "title": "Coming Down",
+    "artist": "Five Finger Death Punch",
+    "video": "lzp5c7_tdm8",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.58,
+    "gap": 12593.648805796583,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.196Z",
+    "realBpm": 76,
+    "volume": 0.8,
+    "author": "ai-chan",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=45936",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19137",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fivefingerdeathpunchcomingdown",
+    "local": false
+  },
+  {
+    "id": "five-finger-death-punch-hard-to-see",
+    "title": "Hard To See",
+    "artist": "Five Finger Death Punch",
+    "video": "otsMXq-1xQw",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.98,
+    "gap": 24905.446021966247,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.043Z",
+    "genre": "Metal",
+    "realBpm": 112,
+    "volume": 0.78,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=11532",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fivefingerdeathpunchhardtosee",
+    "local": false
+  },
+  {
+    "id": "five-finger-death-punch-wrong-side-of-heaven",
+    "title": "Wrong Side Of Heaven",
+    "artist": "Five Finger Death Punch",
+    "video": "o_l4Ab5FRwM",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.04,
+    "gap": 61300.13331555793,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.198Z",
+    "genre": "Metal",
+    "realBpm": 150,
+    "volume": 0.79,
+    "author": "Divi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=161988",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24085",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fivefingerdeathpunchwrongsideofheaven",
     "local": false
   },
   {
@@ -36620,6 +37710,34 @@
     ],
     "tracksCount": 1,
     "search": "flowworldend",
+    "local": false
+  },
+  {
+    "id": "flyleaf-fully-alive",
+    "title": "Fully Alive",
+    "artist": "Flyleaf",
+    "video": "-d3RYW0YoEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 11842.142857142857,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.667Z",
+    "genre": "Hard Rock",
+    "realBpm": 149,
+    "volume": 0.75,
+    "author": "Lorc",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=29196",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18449",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "flyleaffullyalive",
     "local": false
   },
   {
@@ -42655,6 +43773,33 @@
     ],
     "tracksCount": 1,
     "search": "hillsongunitedoceanswherefeetmayfail",
+    "local": false
+  },
+  {
+    "id": "him-wings-of-a-butterfly",
+    "title": "Wings Of A Butterfly",
+    "artist": "HIM",
+    "video": "aUUSz54G6jc",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.53,
+    "gap": 29363.76533761574,
+    "year": "2005",
+    "artistOrigin": "FI",
+    "lastUpdate": "2024-12-31T00:11:25.895Z",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18693",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himwingsofabutterfly",
     "local": false
   },
   {
@@ -53287,6 +54432,33 @@
     "local": false
   },
   {
+    "id": "kouji-wada-fire",
+    "title": "FIRE!!",
+    "artist": "Kouji Wada",
+    "video": "PLMJAdGEfs4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 332.23,
+    "gap": 32397.712217439726,
+    "year": "2002",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-31T00:11:37.856Z",
+    "genre": "Jpop",
+    "realBpm": 166,
+    "volume": 0.99,
+    "author": "BPEmu",
+    "tracks": [
+      {
+        "name": "FIRE!",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "koujiwadafire",
+    "local": false
+  },
+  {
     "id": "krzysztof-krawczyk-barka",
     "title": "Barka",
     "artist": "Krzysztof Krawczyk",
@@ -58361,6 +59533,33 @@
     "local": false
   },
   {
+    "id": "little-mix-feat-jason-derulo-secret-love-song",
+    "title": "Secret Love Song",
+    "artist": "Little Mix feat. Jason Derulo",
+    "video": "qgy7vEje5-w",
+    "language": [
+      "English"
+    ],
+    "bpm": 230.79,
+    "gap": 4955.087742103211,
+    "year": "2015",
+    "lastUpdate": "2024-12-31T00:11:37.704Z",
+    "genre": "Pop",
+    "realBpm": 93,
+    "previewStart": 60,
+    "previewEnd": 124,
+    "volume": 0.76,
+    "author": "Sing-Time",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "littlemixfeatjasonderulosecretlovesong",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-stormzy-power",
     "title": "Power",
     "artist": "Little Mix feat. Stormzy",
@@ -59554,6 +60753,31 @@
     "local": false
   },
   {
+    "id": "luis-miguel-entregate",
+    "title": "Entrégate",
+    "artist": "Luis Miguel",
+    "video": "ETVV404OzTA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280,
+    "gap": 20892.14285714286,
+    "year": "1990",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-12-31T00:11:37.855Z",
+    "realBpm": 142,
+    "volume": 0.79,
+    "author": "ruarui",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "luismiguelentregate",
+    "local": false
+  },
+  {
     "id": "luis-miguel-la-bikina",
     "title": "La Bikina",
     "artist": "Luis Miguel",
@@ -59976,6 +61200,33 @@
     ],
     "tracksCount": 1,
     "search": "machinegunkellyfeatblackbearmyexsbestfriend",
+    "local": false
+  },
+  {
+    "id": "machine-gun-kelly-x-camila-cabello-bad-things",
+    "title": "Bad Things",
+    "artist": "Machine Gun Kelly x Camila Cabello",
+    "video": "QpbQ4I3Eidg",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.04,
+    "gap": 13701.880886827996,
+    "year": "2016",
+    "lastUpdate": "2024-12-31T00:11:26.203Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 0.75,
+    "author": "amro98",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=56130",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20564",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "machinegunkellyxcamilacabellobadthings",
     "local": false
   },
   {
@@ -65860,6 +67111,34 @@
     "local": false
   },
   {
+    "id": "metallica-turn-the-page",
+    "title": "Turn The Page",
+    "artist": "Metallica",
+    "video": "qPOTEs_yTJo",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.98,
+    "gap": 29767.58274976069,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:37.311Z",
+    "genre": "Rock",
+    "realBpm": 149,
+    "volume": 0.8,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12392",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "metallicaturnthepage",
+    "local": false
+  },
+  {
     "id": "metric-black-sheep-brie-larson-vocal-version",
     "title": "Black Sheep (Brie Larson Vocal Version)",
     "artist": "Metric",
@@ -71448,6 +72727,34 @@
     "local": false
   },
   {
+    "id": "nf-leave-me-alone",
+    "title": "Leave Me Alone",
+    "artist": "NF",
+    "video": "XGGWhOUYObc",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.32,
+    "gap": 12463.683048039757,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.665Z",
+    "genre": "Rap",
+    "realBpm": 162,
+    "volume": 0.75,
+    "author": "princetongirl98",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=165696",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25722",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nfleavemealone",
+    "local": false
+  },
+  {
     "id": "nf-running",
     "title": "RUNNING",
     "artist": "NF",
@@ -74637,6 +75944,34 @@
     "local": false
   },
   {
+    "id": "one-ok-rock-clock-strikes",
+    "title": "Clock Strikes",
+    "artist": "ONE OK ROCK",
+    "video": "6YZlFdTIdzM",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 383,
+    "gap": 5951.723237597911,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-31T00:11:37.445Z",
+    "realBpm": 96,
+    "previewStart": 71,
+    "previewEnd": 101,
+    "volume": 0.74,
+    "author": "patzifer",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oneokrockclockstrikes",
+    "local": false
+  },
+  {
     "id": "one-piece-juntos",
     "title": "Juntos",
     "artist": "One Piece",
@@ -75367,6 +76702,32 @@
     "local": false
   },
   {
+    "id": "pabllo-vittar-sao-amores",
+    "title": "São Amores",
+    "artist": "Pabllo Vittar",
+    "video": "WiVKh2xXhEg",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 192,
+    "gap": 65.625,
+    "year": "2024",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-12-31T00:11:25.744Z",
+    "genre": "Pop",
+    "realBpm": 96,
+    "volume": 0.75,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pabllovittarsaoamores",
+    "local": false
+  },
+  {
     "id": "pablo-alboran-solamente-tu",
     "title": "Solamente tú",
     "artist": "Pablo Alborán",
@@ -75705,6 +77066,34 @@
     ],
     "tracksCount": 1,
     "search": "panicatthediscovictorious",
+    "local": false
+  },
+  {
+    "id": "papa-roach-kick-in-the-teeth",
+    "title": "Kick In The Teeth",
+    "artist": "Papa Roach",
+    "video": "WTw5BGienrg",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 10780,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:37.310Z",
+    "genre": "Rock",
+    "realBpm": 123,
+    "volume": 0.91,
+    "author": "Lorc",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=29196",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12674",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paparoachkickintheteeth",
     "local": false
   },
   {
@@ -80486,6 +81875,33 @@
     ],
     "tracksCount": 1,
     "search": "rafaltheride",
+    "local": false
+  },
+  {
+    "id": "raffaella-carra-53-53-456",
+    "title": "53 53 456",
+    "artist": "Raffaella Carrà",
+    "video": "31C29nzGELo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250.49,
+    "gap": 14863.995289233104,
+    "year": "1977",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-12-31T00:11:37.313Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "Volodia",
+    "authorUrl": "v",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "raffaellacarra5353456",
     "local": false
   },
   {
@@ -89565,6 +90981,34 @@
     "local": false
   },
   {
+    "id": "slipknot-dead-memories",
+    "title": "Dead Memories",
+    "artist": "Slipknot",
+    "video": "9gsAz6S_zSw",
+    "language": [
+      "English"
+    ],
+    "bpm": 346.11,
+    "gap": 57243.2070728959,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.042Z",
+    "genre": "Alternative Metal",
+    "realBpm": 130,
+    "volume": 0.85,
+    "author": "JKA",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=107421",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17507",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotdeadmemories",
+    "local": false
+  },
+  {
     "id": "slipknot-duality",
     "title": "Duality",
     "artist": "Slipknot",
@@ -89724,6 +91168,33 @@
     ],
     "tracksCount": 1,
     "search": "slipknotsulfur",
+    "local": false
+  },
+  {
+    "id": "slipknot-the-devil-in-i",
+    "title": "The Devil In I",
+    "artist": "Slipknot",
+    "video": "XEEasR7hVhA",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.63,
+    "gap": 68788.08362654447,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.041Z",
+    "realBpm": 92,
+    "volume": 0.77,
+    "author": "haistshomie666",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=61915",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19568",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotthedevilini",
     "local": false
   },
   {
@@ -91202,6 +92673,33 @@
     ],
     "tracksCount": 1,
     "search": "stingshapeofmyheart",
+    "local": false
+  },
+  {
+    "id": "stone-sour-bother",
+    "title": "Bother",
+    "artist": "Stone Sour",
+    "video": "Q-pXD0FXLQ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 9980,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-31T00:11:26.372Z",
+    "realBpm": 90,
+    "volume": 0.65,
+    "author": "purgatorio",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=125",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1866",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stonesourbother",
     "local": false
   },
   {
@@ -101302,6 +102800,32 @@
     ],
     "tracksCount": 1,
     "search": "toolvicarious",
+    "local": false
+  },
+  {
+    "id": "toquinho-aquarela",
+    "title": "Aquarela",
+    "artist": "Toquinho",
+    "video": "XgfIkDnR0nw",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 206.4,
+    "gap": 36412.558139534885,
+    "year": "1983",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-12-31T00:11:25.612Z",
+    "genre": "Pop",
+    "realBpm": 200,
+    "volume": 0.72,
+    "author": "Volodia",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toquinhoaquarela",
     "local": false
   },
   {

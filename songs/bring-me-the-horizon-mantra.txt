@@ -1,0 +1,522 @@
+#ARTIST:Bring Me The Horizon
+#TITLE:Mantra
+#CREATOR:DoubleDee73
+#BPM:360
+#YEAR:2018
+#VIDEO:v=VAXg78MKJcM
+#GENRE:Hard Rock
+#LANGUAGE:English
+#GAP:32190
+#ALLKARAOKE_ID:bring-me-the-horizon-mantra
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:27.101Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=58767
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28266
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Bring Me The Horizon - Mantra.mp3
+#COVER:Bring Me The Horizon - Mantra [CO].jpg
+#BACKGROUND:Bring Me The Horizon - Mantra [BG].jpg
+: 24 3 5 Do 
+: 28 2 5 you 
+: 32 3 5 wan
+: 36 3 5 na 
+: 40 3 5 start 
+: 44 1 5 a 
+: 48 7 5 cult 
+: 56 3 5 with 
+: 60 8 5 me?
+- 68
+: 84 2 5 I’m 
+: 88 2 4 not 
+: 92 3 4 vi
+: 96 3 5 brat
+: 100 2 4 in’ 
+: 104 2 4 like 
+: 108 3 5 I 
+: 112 6 4 ough
+: 120 3 2 ta 
+: 124 6 2 be
+- 130
+: 140 2 2 I 
+: 144 6 4 need 
+: 152 2 5 a 
+: 156 7 4 pur
+: 164 4 2 pose
+- 168
+: 172 2 2 I 
+: 176 6 4 can’t 
+: 184 3 5 keep 
+: 188 4 4 sur
+: 196 7 2 fin’
+- 203
+: 216 3 5 Through 
+: 220 3 5 this 
+: 224 2 5 e
+: 228 2 5 xis
+: 232 2 5 ten
+: 236 3 5 tial 
+: 240 3 5 mi
+: 244 3 5 se
+: 248 5 5 ry
+- 253
+: 276 4 4 Now 
+: 284 3 5 we’re 
+: 288 3 5 gon
+: 292 3 5 na 
+: 296 3 5 need 
+: 300 3 5 some 
+: 304 7 5 real 
+: 312 3 5 es
+: 316 8 5 tate
+- 324
+: 340 3 4 But 
+: 344 2 4 if 
+: 348 2 4 I 
+: 352 3 4 choose 
+: 356 3 4 my 
+: 360 4 4 words 
+: 368 5 4 care
+: 376 3 2 ful
+: 380 3 2 ly
+- 383
+: 396 3 2 Think 
+: 400 5 7 I 
+: 408 3 5 could 
+: 412 6 7 fool 
+: 420 6 5 you 
+: 428 3 2 that 
+: 432 6 7 I’m 
+: 440 2 5 the 
+: 444 6 7 gu
+: 452 7 5 ru
+- 459
+: 468 4 2 Wait 
+: 476 3 5 how 
+: 480 3 5 do 
+: 484 2 5 you 
+: 488 3 5 spell 
+: 492 3 5 e
+: 496 2 5 pi
+: 500 3 5 pha
+: 504 6 5 ny?
+- 510 624
+- 624
+: 648 5 2 Be
+: 656 6 7 fore 
+: 664 3 9 the 
+: 668 9 7 truth 
+: 680 4 2 will 
+: 688 6 7 set 
+: 696 3 9 you 
+* 700 11 7 free
+* 712 18 9 ~
+- 730
+: 744 3 2 It’ll 
+: 748 4 12 piss 
+: 756 7 12 you 
+: 764 8 9 off
+- 772
+: 776 5 2 Be
+: 784 6 7 fore 
+: 792 2 9 you 
+: 796 9 7 find 
+: 808 4 2 a 
+: 816 5 7 place 
+: 824 2 9 to 
+: 828 11 7 be
+: 840 16 9 ~
+- 856
+: 868 3 2 You’re 
+: 872 3 7 gon
+: 876 3 5 na 
+: 880 5 7 lose 
+: 888 2 5 the 
+: 892 4 7 plot
+: 897 3 5 ~
+- 900
+: 904 6 7 Too 
+: 913 9 7 late 
+: 924 2 5 to 
+: 928 7 7 tell 
+: 936 5 7 you 
+* 944 3 7 now
+* 948 3 9 ~
+* 952 7 7 ~
+- 959
+: 968 7 7 One 
+: 976 8 7 ear 
+: 988 3 5 will 
+: 992 6 7 ride 
+: 1000 2 7 out 
+: 1004 3 9 the 
+: 1008 3 7 o
+: 1012 3 5 ther 
+: 1016 12 2 one
+- 1028
+: 1032 6 7 Cause 
+: 1040 10 7 all 
+: 1052 3 5 you 
+: 1056 11 7 e
+: 1068 2 7 ver 
+: 1072 10 7 do 
+: 1084 3 5 is 
+: 1088 6 9 chant 
+: 1096 8 7 the 
+: 1112 7 9 same 
+: 1120 7 7 old
+- 1127
+R 1136 4 9 Man
+R 1144 4 -3 tra
+- 1148 1668
+- 1668
+: 1692 3 5 Could 
+: 1696 3 5 I 
+: 1700 3 5 have 
+: 1704 3 5 your 
+: 1708 2 5 at
+: 1712 4 5 ten
+: 1718 3 5 tion 
+: 1725 10 5 please?
+- 1735
+: 1748 2 2 It’s 
+* 1752 3 4 time 
+: 1756 2 4 to 
+: 1760 3 4 tap 
+: 1764 2 4 in
+: 1768 2 4 to 
+: 1772 2 5 your 
+: 1776 7 4 tra
+: 1784 3 2 ge
+: 1788 3 2 dy
+- 1791
+* 1804 3 2 Think 
+* 1808 6 7 you 
+: 1816 3 5 could 
+: 1820 5 7 use 
+: 1828 7 5 a 
+: 1840 6 7 new 
+: 1848 3 5 ab
+: 1852 5 7 us
+: 1860 4 5 er
+- 1864
+: 1880 3 5 Close 
+: 1884 3 5 your 
+: 1888 3 5 eyes 
+: 1892 2 5 and 
+: 1896 2 5 lis
+: 1900 2 5 ten 
+: 1904 3 5 care
+: 1908 3 5 ful
+: 1912 3 5 ly
+- 1915 1924
+- 1924
+: 1948 2 2 I
+: 1952 3 5 ma
+: 1956 3 5 gine 
+: 1960 5 5 you’re 
+: 1968 3 5 stood 
+: 1972 2 5 on 
+: 1976 2 2 a 
+: 1980 10 5 beach
+- 1990
+: 2008 3 4 Wa
+: 2012 2 4 ter 
+: 2016 3 4 jel
+: 2020 2 4 ly 
+: 2024 3 4 lap
+: 2028 3 5 ping 
+: 2032 6 4 at 
+: 2040 3 2 your 
+: 2044 7 2 feet
+- 2051
+: 2060 3 2 But 
+: 2064 5 7 now 
+: 2072 3 5 you’re 
+* 2076 7 7 sin
+* 2084 6 5 king, 
+: 2092 3 5 what 
+: 2096 6 7 were 
+: 2104 2 5 you 
+: 2108 6 7 thin
+: 2116 8 5 king?
+- 2124
+: 2140 3 5 That’s 
+: 2144 3 5 all 
+: 2148 1 5 the 
+: 2152 3 5 time 
+: 2156 2 5 we 
+: 2160 4 5 have 
+: 2168 3 5 this 
+: 2172 5 5 week
+- 2177
+* 2184 5 2 Be
+* 2192 6 7 fore 
+* 2200 3 9 the 
+* 2204 9 7 truth 
+: 2216 4 2 will 
+: 2224 6 7 set 
+: 2232 3 9 you 
+: 2236 11 7 free
+: 2248 18 9 ~
+- 2266
+: 2280 3 2 It’ll 
+: 2284 4 12 piss 
+: 2292 7 12 you 
+: 2300 8 9 off
+- 2308
+: 2312 5 2 Be
+: 2320 6 7 fore 
+: 2328 2 9 you 
+: 2332 9 7 find 
+: 2344 4 2 a 
+: 2352 5 7 place 
+: 2360 2 9 to 
+: 2364 11 7 be
+: 2376 16 9 ~
+- 2392
+: 2404 3 2 You’re 
+: 2408 3 7 gon
+: 2412 3 5 na 
+: 2416 5 7 lose 
+: 2424 2 5 the 
+: 2428 4 7 plot
+: 2433 3 5 ~
+- 2436
+* 2440 6 7 Too 
+* 2449 9 7 late 
+: 2460 2 5 to 
+: 2464 7 7 tell 
+: 2472 5 7 you 
+: 2480 3 7 now
+: 2484 3 9 ~
+: 2488 7 7 ~
+- 2495
+: 2504 7 7 One 
+: 2512 8 7 ear 
+: 2524 3 5 will 
+: 2528 6 7 ride 
+: 2536 2 7 out 
+: 2540 3 9 the 
+: 2544 3 7 o
+: 2548 3 5 ther 
+: 2552 12 2 one
+- 2564
+: 2568 6 7 Cause 
+: 2576 10 7 all 
+: 2588 3 5 you 
+: 2592 11 7 e
+: 2604 2 7 ver 
+: 2608 10 7 do 
+: 2620 3 5 is 
+: 2624 6 9 chant 
+: 2632 8 7 the 
+: 2648 7 9 same 
+: 2656 7 7 old
+- 2663
+R 2672 4 9 Man
+R 2680 1 -3 tra
+- 2681
+* 2684 2 5 I 
+* 2688 2 7 know 
+* 2692 2 9 this 
+: 2696 3 9 does
+: 2700 3 9 n’t 
+: 2704 3 9 make 
+: 2708 2 7 a 
+: 2712 3 5 lot 
+: 2716 1 7 of 
+: 2718 5 7 sense
+- 2723
+: 2740 2 5 But 
+: 2744 3 5 do 
+: 2748 3 5 you 
+: 2752 3 9 real
+: 2756 2 9 ly 
+: 2760 3 9 wan
+: 2764 3 9 na 
+: 2768 3 9 think 
+: 2772 3 7 all 
+: 2776 2 5 by 
+: 2780 3 7 your
+* 2784 8 7 self 
+* 2796 4 2 now?
+- 2800
+: 2804 2 2 Al
+: 2808 2 5 though 
+: 2812 3 5 I’m 
+: 2816 2 7 ask
+: 2820 2 9 ing 
+: 2824 2 9 for 
+: 2828 2 9 a 
+: 2832 2 9 lit
+: 2836 2 7 tle 
+: 2840 3 5 bit 
+: 2844 2 7 of 
+: 2848 8 7 faith
+- 2856
+: 2868 2 5 You 
+: 2872 3 5 know 
+: 2876 2 5 it’s 
+* 2880 7 12 ea
+* 2888 3 12 sy 
+: 2892 6 7 to 
+: 2900 3 7 be
+: 2904 3 7 lieve
+: 2908 3 5 ~
+- 2911 2912
+- 2912
+: 2936 2 5 And 
+: 2940 2 5 I 
+: 2944 3 9 know 
+: 2948 2 9 this 
+: 2952 3 9 does
+: 2956 2 9 n’t 
+: 2960 3 9 make 
+: 2964 2 7 a 
+: 2968 3 5 lot 
+: 2972 2 7 of 
+: 2976 5 7 sense
+- 2981
+: 2996 2 5 You 
+: 3000 2 5 know 
+: 3004 2 5 you 
+: 3008 2 7 got
+: 3012 2 9 ta 
+: 3016 3 9 work 
+: 3020 2 7 the 
+: 3024 3 9 cor
+: 3028 3 7 ners 
+: 3032 2 5 of 
+: 3036 2 7 your 
+: 3040 8 7 mind 
+: 3052 8 2 now
+- 3060
+: 3064 2 5 Or 
+: 3068 2 5 I’ll 
+: 3072 2 7 ask 
+: 3076 2 9 you 
+: 3080 3 9 for 
+: 3084 2 9 a 
+: 3088 3 9 lit
+: 3092 3 7 tle 
+: 3096 2 5 bit 
+: 3100 2 7 of 
+: 3104 6 7 faith
+- 3110
+: 3124 2 5 You 
+: 3128 3 5 know 
+: 3132 2 5 it’s 
+: 3136 7 12 ea
+: 3144 2 12 sy 
+: 3148 5 7 to
+- 3153
+: 3164 3 5 So 
+: 3168 7 12 ea
+: 3176 3 12 sy 
+: 3180 5 7 to 
+: 3188 3 7 be
+: 3192 4 7 lieve
+: 3197 6 5 ~
+- 3203 3440
+- 3440
+: 3464 5 2 Be
+: 3472 6 7 fore 
+: 3480 3 9 the 
+: 3484 9 7 truth 
+: 3496 4 2 will 
+: 3504 6 7 set 
+: 3512 3 9 you 
+: 3516 11 7 free
+: 3528 18 9 ~
+- 3546
+: 3560 3 2 It’ll 
+: 3564 4 12 piss 
+: 3572 7 12 you 
+: 3580 8 9 off
+- 3588
+: 3592 5 2 Be
+: 3600 6 7 fore 
+: 3608 2 9 you 
+: 3612 9 7 find 
+: 3624 4 2 a 
+: 3632 5 7 place 
+: 3640 2 9 to 
+: 3644 11 7 be
+: 3656 16 9 ~
+- 3672
+: 3684 3 2 You’re 
+: 3688 3 7 gon
+: 3692 3 5 na 
+: 3696 5 7 lose 
+: 3704 2 5 the 
+: 3708 4 7 plot
+: 3713 3 5 ~
+- 3716
+: 3720 5 2 Be
+: 3728 6 7 fore 
+: 3736 3 9 the 
+: 3740 9 7 truth 
+: 3752 4 2 will 
+: 3760 6 7 set 
+: 3768 3 9 you 
+: 3772 11 7 free
+: 3784 18 9 ~
+- 3802
+: 3816 3 2 It’ll 
+: 3820 4 12 piss 
+: 3828 7 12 you 
+: 3836 8 9 off
+- 3844
+: 3848 5 2 Be
+: 3856 6 7 fore 
+: 3864 2 9 you 
+: 3868 9 7 find 
+: 3880 4 2 a 
+: 3888 5 7 place 
+: 3896 2 9 to 
+: 3900 11 7 be
+: 3912 16 9 ~
+- 3928
+: 3940 3 2 You’re 
+: 3944 3 7 gon
+: 3948 3 5 na 
+: 3952 5 7 lose 
+: 3960 2 5 the 
+: 3964 4 7 plot
+: 3969 3 5 ~
+- 3972
+: 3976 6 7 Too 
+: 3984 9 7 late 
+: 3996 2 5 to 
+: 4000 7 7 tell 
+: 4008 5 7 you 
+: 4016 3 7 now
+: 4020 3 9 ~
+: 4024 7 7 ~
+- 4031
+: 4040 7 7 One 
+: 4048 8 7 ear 
+: 4060 3 5 will 
+: 4064 6 7 ride 
+: 4072 2 7 out 
+: 4076 3 9 the 
+: 4080 3 7 o
+: 4084 3 5 ther 
+: 4088 12 2 one
+- 4100
+: 4104 6 7 Cause 
+: 4112 10 7 all 
+: 4124 3 5 you 
+: 4128 11 7 e
+: 4140 2 7 ver 
+: 4144 10 7 do 
+: 4156 3 5 is 
+: 4160 6 9 chant 
+: 4168 8 7 the 
+: 4184 7 9 same 
+: 4192 7 7 old
+- 4199
+G 4208 4 9 Man
+G 4216 3 -3 tra
+E

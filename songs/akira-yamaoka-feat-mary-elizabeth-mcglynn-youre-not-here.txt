@@ -1,0 +1,261 @@
+#ARTIST:Akira Yamaoka feat. Mary Elizabeth McGlynn
+#TITLE:You’re Not Here
+#CREATOR:Leo 21
+#BPM:300
+#YEAR:2008
+#VIDEO:v=S8IA3qONp8c
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:27940
+#ALLKARAOKE_ID:akira-yamaoka-feat-mary-elizabeth-mcglynn-youre-not-here
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:27.734Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3162
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=14961
+#ALLKARAOKE_VOLUME:1
+#MP3:Akira Yamaoka feat. Mary Elizabeth McGlynn (Silent Hill 3) - You’re Not Here.mp3
+: 20 3 8 Blue 
+: 26 7 10 sky 
+: 35 3 11 to 
+: 43 5 11 forever
+: 52 3 13 ~
+: 60 5 15 ~
+- 65
+: 72 1 15 The 
+: 75 6 18 green 
+: 83 5 18 grass 
+: 91 5 18 blows 
+: 98 1 18 in 
+: 100 2 20 the 
+: 105 9 15 wind,
+- 114
+: 121 6 13 Dancing
+: 130 9 11 ~
+- 139 141
+- 141
+: 161 3 8 It 
+: 167 4 10 would 
+: 173 2 11 be 
+: 186 2 11 a 
+: 190 6 13 much 
+: 199 3 15 better
+: 203 2 18 ~ 
+: 208 10 15 sight
+- 218 219
+- 219
+: 239 4 13 With 
+: 244 8 15 you,
+- 252
+: 265 5 13 With 
+: 274 5 11 me
+- 279 281
+- 281
+: 301 3 8 If 
+: 306 3 10 you 
+: 314 4 11 hadn’t
+: 322 4 11 ~ 
+: 331 4 13 met 
+: 340 5 15 me,
+- 345
+: 355 4 18 I’d 
+: 360 4 18 be 
+: 369 4 18 fine 
+: 374 4 18 on 
+: 379 4 20 my 
+: 385 11 15 own, 
+: 401 5 13 baby
+: 410 5 11 ~
+- 415 418
+- 418
+: 438 4 8 Never
+: 444 4 10 ~ 
+: 452 5 11 felt 
+: 460 4 11 so 
+: 470 5 13 lonely,
+: 478 4 15 ~ 
+: 483 4 18 then 
+: 489 7 15 you
+- 496
+: 508 2 13 Came
+: 511 6 15 ~ 
+: 518 2 13 along
+: 521 9 15 ~
+- 530
+: 543 2 13 So
+: 546 4 15 ~ 
+: 553 5 11 now 
+: 560 9 13 what
+- 569
+: 581 5 15 Should 
+: 587 2 13 I 
+: 590 8 11 do,
+- 598
+: 615 4 15 I’m 
+: 620 7 11 strung 
+: 630 8 13 out,
+- 638
+: 643 2 8 Addicted
+: 647 3 13 ~
+: 651 4 15 ~ 
+: 657 2 13 to 
+: 663 8 11 you
+- 671
+: 677 2 6 My 
+: 683 2 11 body
+: 686 4 15 ~
+: 691 4 13 ~ 
+: 701 10 11 aches,
+- 711
+: 717 4 13 Now 
+: 722 3 15 that 
+: 726 3 13 you’re 
+: 732 9 11 gone
+- 741
+: 751 6 15 My 
+: 761 5 11 supply
+: 770 13 10 ~ 
+: 788 5 14 fell
+: 797 6 17 ~ 
+: 805 22 17 trough
+- 827 828
+- 828
+: 848 4 15 Gladly
+: 853 2 18 ~ 
+: 856 4 18 gave 
+: 861 3 18 me 
+: 866 2 18 everything
+: 869 2 15 ~
+: 875 6 18 ~ 
+: 882 3 18 you
+: 887 3 15 ~ 
+: 891 3 15 had
+: 895 5 18 ~ 
+: 901 2 18 and 
+: 904 16 15 more
+: 922 8 13 ~
+- 930
+: 939 3 15 You 
+: 943 8 18 craved 
+: 953 4 15 my 
+: 961 6 15 happiness
+: 969 2 13 ~
+: 974 6 15 ~
+- 980
+: 987 3 15 When 
+: 991 2 18 you 
+: 995 4 18 made 
+: 1000 2 18 me 
+: 1003 4 18 feel
+: 1008 2 15 ~ 
+: 1014 7 18 joy 
+: 1023 3 18 it
+: 1027 3 15 ~ 
+: 1032 6 18 made 
+: 1039 2 18 you 
+: 1044 9 15 smile 
+: 1056 3 13 but 
+: 1061 5 13 now...
+- 1066
+: 1077 3 15 I 
+: 1083 6 18 feel 
+: 1091 5 15 your 
+: 1098 13 15 stress
+- 1111
+: 1126 4 15 Love 
+: 1131 3 18 was 
+: 1135 3 18 never
+: 1139 2 18 ~ 
+: 1143 4 18 meant 
+: 1148 2 15 to 
+: 1153 6 18 be 
+: 1160 4 18 such 
+: 1165 2 15 a 
+: 1169 3 18 crazy
+: 1174 4 18 ~ 
+: 1179 2 18 afair,
+: 1182 14 15 ~ 
+: 1201 6 13 no
+- 1207
+: 1217 3 15 And 
+: 1221 3 18 who 
+: 1229 6 15 has 
+: 1238 7 15 time 
+: 1247 2 13 for 
+: 1252 10 15 tears
+- 1262
+: 1265 3 15 Never
+: 1269 1 18 ~ 
+: 1274 4 18 thought 
+: 1279 2 18 I’d 
+: 1282 4 18 sit 
+: 1288 2 15 around
+: 1292 6 18 ~ 
+: 1301 3 18 and 
+: 1305 3 15 cry
+: 1310 3 18 ~ 
+: 1314 2 18 for 
+: 1317 3 18 your 
+: 1322 15 15 love
+: 1338 16 13 ~
+- 1354 1379
+- 1379
+: 1399 8 3 ’Till 
+: 1414 45 15 now
+- 1459 1778
+- 1778
+: 1798 3 15 Oh, 
+: 1802 2 15 I 
+: 1807 8 15 feel 
+: 1819 5 11 your 
+: 1827 13 11 stress
+- 1840 1902
+- 1902
+: 1922 5 18 Oh 
+: 1929 4 15 a 
+: 1934 4 13 ha 
+: 1941 6 15 ha
+- 1947
+: 1964 11 15 Oh
+- 1975
+: 1986 6 18 Whohas
+: 1993 8 15 ~ 
+: 2003 9 15 time 
+: 2016 5 15 for 
+: 2025 29 15 tears
+- 2054
+: 2065 7 15 Oh
+- 2072
+: 2080 3 11 My 
+: 2085 4 13 baby
+: 2090 5 15 ~
+- 2095 2226
+- 2226
+: 2246 16 18 Yeah 
+: 2266 5 15 ah 
+: 2273 2 13 oh 
+: 2276 41 15 ah
+- 2317 2363
+- 2363
+: 2383 2 13 Ah
+: 2386 2 15 ~ 
+: 2389 4 13 ah
+: 2394 3 15 ~ 
+: 2399 3 11 ah 
+: 2407 10 10 ah 
+: 2423 18 6 ah oh
+- 2441 2500
+- 2500
+: 2520 3 11 Yeah
+: 2524 3 11 ~ 
+: 2528 8 10 yeah 
+: 2538 4 11 yeah 
+: 2546 6 13 yeah
+: 2553 5 11 ~ 
+: 2560 46 6 yeah
+- 2606 2722
+- 2722
+: 2742 4 15 I 
+: 2749 8 15 feel 
+: 2761 4 11 your 
+: 2770 19 11 stress
+E
