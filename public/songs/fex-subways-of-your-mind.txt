@@ -1,0 +1,334 @@
+#ARTIST:FEX
+#TITLE:Subways Of Your Mind
+#CREATOR:lukmuk
+#BPM:260
+#YEAR:1983
+#PREVIEWSTART:39
+#VIDEO:v=KgKKcz5sjSY
+#GENRE:New Wave
+#LANGUAGE:English
+#GAP:38986,230769230766
+#ALLKARAOKE_ID:fex-subways-of-your-mind
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:37.312Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=121288
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29664
+#ALLKARAOKE_PREVIEWEND:87
+#ALLKARAOKE_VOLUME:1
+#P1:Subways Of Your Mind (Original Cassette Demo Version)
+#MP3:FEX - Subways Of Your Mind (Original Cassette Demo Version).mp3
+#COVER:FEX - Subways Of Your Mind (Original Cassette Demo Version) [CO].jpg
+#BACKGROUND:FEX - Subways Of Your Mind (Original Cassette Demo Version) [BG].jpg
+: 17 3 -2 Like 
+: 24 4 5 the 
+: 30 7 6 wind
+- 37 68
+- 68
+: 85 4 -4 You 
+: 91 6 3 came 
+: 98 3 3 here 
+: 102 11 5 run
+: 114 3 6 ~
+: 118 7 3 ~
+: 126 7 5 nin'
+- 133 137
+- 137
+: 154 6 -2 Take 
+: 163 5 5 the 
+: 170 6 6 con
+: 179 4 5 se
+: 186 6 3 quence 
+: 195 4 1 of 
+: 203 10 5 li
+: 214 3 3 ~
+: 219 6 3 vin'
+- 225 271
+- 271
+: 288 3 -2 There's 
+: 295 3 5 no 
+: 301 7 6 space
+- 308 339
+- 339
+: 356 3 -4 There's 
+: 361 5 3 no 
+: 368 3 3 to
+: 372 10 5 mor
+: 384 3 6 ~
+: 388 7 3 ~
+: 396 8 5 row
+- 404 406
+- 406
+: 423 6 -2 What 
+: 432 4 5 we 
+: 439 7 6 need's 
+* 448 5 5 co
+* 455 6 3 mu
+* 463 7 1 ni
+* 471 11 5 ca
+* 484 3 3 ~
+* 488 8 3 tion
+- 496 510
+- 510
+: 527 3 10 Check 
+: 532 2 10 it 
+: 536 4 10 in, 
+: 543 3 3 check 
+: 548 2 3 it 
+: 552 6 3 out
+- 558
+: 563 2 3 But 
+: 566 2 7 the 
+: 570 6 8 sun 
+: 579 7 6 will 
+: 587 7 5 nev
+: 595 6 6 er 
+* 602 15 5 shi
+* 618 4 6 ~
+* 623 11 3 ne
+- 634 646
+- 646
+: 663 3 10 Pa
+: 668 2 10 ra
+: 672 2 10 noid, 
+: 680 2 3 a
+: 684 2 3 ny
+: 688 6 3 way
+- 694
+: 699 2 3 In 
+: 702 2 7 the 
+: 706 5 8 sub
+: 714 6 6 ways 
+: 722 7 5 of 
+: 730 6 6 your 
+* 738 14 5 mi
+* 753 4 6 ~
+* 758 11 3 nd
+- 769 807
+- 807
+: 824 3 -2 Like 
+: 831 4 5 the 
+: 837 7 6 wind
+- 844 875
+- 875
+: 892 3 -4 Blo
+: 897 6 3 win' 
+: 904 3 3 from 
+: 908 11 5 so
+: 921 3 6 ~
+: 926 6 3 me
+: 934 5 5 where
+- 939 943
+- 943
+: 960 6 -2 Let 
+: 969 5 5 a 
+: 977 5 6 smile 
+: 985 4 5 be 
+: 993 5 3 your 
+* 1001 4 1 com
+* 1009 11 5 pa
+* 1022 3 3 ~
+* 1026 5 3 nion
+- 1031 1077
+- 1077
+: 1094 3 -2 There's 
+: 1101 3 5 no 
+: 1107 7 6 place
+- 1114 1146
+- 1146
+: 1163 3 -4 For 
+: 1168 5 3 a
+: 1175 3 3 ny 
+: 1179 10 5 so
+: 1191 3 6 ~
+: 1195 7 3 ~
+: 1203 8 5 rrow
+- 1211 1212
+- 1212
+: 1229 6 -2 Time 
+: 1238 4 5 for 
+: 1245 7 6 young 
+: 1254 5 5 and 
+: 1261 6 3 rest
+: 1270 6 1 less 
+* 1277 11 5 drea
+* 1290 3 3 ~
+* 1294 8 3 min'
+- 1302 1316
+- 1316
+: 1333 3 10 Check 
+: 1338 2 10 it 
+: 1342 4 10 in, 
+: 1349 3 3 check 
+: 1354 2 3 it 
+: 1358 6 3 out
+- 1364
+: 1369 2 3 But 
+: 1372 2 6 the 
+: 1376 5 8 sun 
+: 1385 7 6 will 
+: 1393 7 5 nev
+: 1401 6 6 er 
+: 1408 16 5 shi
+: 1426 3 6 ~
+: 1431 9 3 ne
+- 1440 1451
+- 1451
+: 1468 3 10 Pa
+: 1473 2 10 ra
+: 1477 3 10 noid, 
+: 1485 2 3 a
+: 1489 2 3 ny
+: 1493 6 3 way
+- 1499
+: 1504 2 3 In 
+: 1507 2 6 the 
+* 1511 6 8 sub
+* 1520 7 6 ways 
+: 1528 7 5 of 
+: 1536 6 6 your 
+: 1544 14 5 mi
+: 1560 4 6 ~
+: 1566 9 3 nd
+- 1575 2122
+- 2122
+: 2139 3 10 Check 
+: 2144 2 10 it 
+: 2148 4 10 in, 
+: 2155 3 3 check 
+: 2160 2 3 it 
+: 2164 6 3 out
+- 2170
+: 2174 2 3 But 
+: 2178 2 6 the 
+: 2182 6 8 sun 
+: 2191 7 6 will 
+: 2199 7 5 nev
+: 2207 6 6 er 
+: 2214 16 5 shi
+: 2232 3 6 ~
+: 2237 9 3 ne
+- 2246 2256
+- 2256
+: 2273 3 10 Pa
+: 2278 2 10 ra
+: 2282 3 10 noid, 
+: 2290 2 3 a
+: 2294 2 3 ny
+: 2298 6 3 way
+- 2304
+: 2309 2 3 In 
+: 2312 2 6 the 
+: 2316 6 8 sub
+: 2325 7 6 ways 
+: 2333 7 5 of 
+: 2341 6 6 your 
+* 2349 14 5 mi
+* 2365 3 6 ~
+* 2370 10 3 nd
+- 2380 2390
+- 2390
+: 2407 3 10 Check 
+: 2412 2 10 it 
+: 2416 3 10 in, 
+: 2423 3 3 check 
+: 2428 2 3 it 
+: 2432 6 3 out
+- 2438
+: 2439 3 3 It's 
+: 2444 2 3 the 
+: 2448 5 8 sum
+: 2456 5 6 mer 
+: 2464 5 5 blues
+- 2469
+: 2474 3 10 Tear 
+: 2479 2 10 it 
+: 2483 3 10 in, 
+: 2490 3 3 tear 
+: 2495 2 3 it 
+: 2499 6 3 out
+- 2505
+: 2508 3 3 It's 
+: 2513 2 3 a 
+: 2516 5 8 good 
+: 2525 5 6 ex
+: 2533 5 5 cuse
+- 2538
+* 2541 3 10 Check 
+* 2546 2 10 it 
+* 2550 3 10 in, 
+: 2557 3 3 check 
+: 2562 2 3 it 
+: 2566 6 3 out
+- 2572
+: 2574 3 3 It's 
+: 2579 2 3 the 
+: 2583 5 8 sum
+: 2591 5 6 mer 
+: 2599 5 5 blues
+- 2604
+* 2608 3 10 Tear 
+* 2613 2 10 it 
+* 2617 3 10 in, 
+: 2624 3 3 tear 
+: 2629 2 3 it 
+: 2633 6 3 out
+- 2639
+: 2642 3 3 It's 
+: 2647 2 3 a 
+: 2650 5 8 good 
+: 2659 5 6 ex
+: 2667 5 5 cuse
+- 2672
+: 2675 3 10 Check 
+: 2680 2 10 it 
+: 2684 3 10 in, 
+: 2691 3 3 check 
+: 2696 2 3 it 
+: 2700 6 3 out
+- 2706
+: 2708 3 3 It's 
+: 2713 2 3 the 
+: 2717 5 8 sum
+: 2725 5 6 mer 
+: 2733 5 5 blues
+- 2738
+: 2742 3 10 Tear 
+: 2747 2 10 it 
+: 2751 3 10 in, 
+: 2758 3 3 tear 
+: 2763 2 3 it 
+: 2767 6 3 out
+- 2773
+: 2776 3 3 It's 
+: 2781 2 3 a 
+: 2784 5 8 good 
+: 2793 5 6 ex
+: 2801 5 5 cuse
+- 2806
+: 2809 3 10 Check 
+: 2814 2 10 it 
+: 2818 3 10 in, 
+: 2825 3 3 check 
+: 2830 2 3 it 
+: 2834 6 3 out
+- 2840
+: 2842 3 3 It's 
+: 2847 2 3 the 
+: 2851 5 8 sum
+: 2859 5 6 mer 
+: 2867 5 5 blues
+- 2872
+: 2875 3 10 Tear 
+: 2880 2 10 it 
+: 2884 3 10 in, 
+: 2891 3 3 tear 
+: 2896 2 3 it 
+: 2900 6 3 out
+- 2906
+: 2909 3 3 It's 
+: 2914 2 3 a 
+: 2917 5 8 good 
+: 2926 5 6 ex
+: 2934 5 5 cuse
+E

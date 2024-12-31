@@ -1,0 +1,427 @@
+#ARTIST:Bob Seger & The Silver Bullet Band
+#TITLE:Old Time Rock & Roll
+#CREATOR:juliana
+#BPM:246
+#YEAR:1978
+#VIDEO:v=eMY1ewg-e9w
+#GENRE:Rock & Roll
+#LANGUAGE:English
+#GAP:5374,390243902439
+#ALLKARAOKE_ID:bob-seger-the-silver-bullet-band-old-time-rock-roll
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:27.443Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=558
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3969
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Bob Seger & The Silver Bullet Band - Old Time Rock & Roll.mp3
+: 16 2 4 Just 
+: 20 2 9 take 
+: 24 2 9 those 
+: 28 6 9 old 
+: 36 2 8 re
+: 40 2 7 cords 
+: 44 4 7 off 
+: 52 2 4 the 
+: 56 6 9 shelf
+- 62 64
+- 64
+: 80 2 9 I’ll 
+: 84 2 9 sit 
+: 88 2 9 and 
+: 92 2 9 lis
+: 96 2 9 ten 
+: 100 2 6 to 
+: 104 2 3 them 
+: 108 6 6 by 
+: 116 2 6 my
+: 120 6 -1 self
+- 126 128
+- 128
+: 144 2 -1 To
+: 148 3 9 day’s 
+: 154 3 9 mu
+: 159 2 6 sic 
+: 163 4 8 ain’t 
+: 171 2 8 got 
+: 175 2 6 the 
+: 179 5 8 same 
+: 187 6 10 soul
+- 193
+: 208 2 9 I 
+: 212 2 9 like 
+: 216 2 9 that 
+: 220 5 9 old 
+: 227 2 8 time 
+: 231 2 6 of 
+: 235 2 6 rock 
+: 239 5 6 and 
+: 247 5 6 roll
+- 252 255
+- 255
+: 271 2 9 Don’t 
+: 274 2 9 try 
+: 278 2 9 to 
+: 282 2 9 take 
+: 285 2 9 me 
+: 289 2 6 to 
+: 293 2 4 a 
+* 297 4 9 dis
+: 304 7 9 co
+- 311 318
+- 318
+: 334 2 9 You 
+: 338 2 9 ne
+: 342 2 9 ver 
+: 346 2 9 ev
+: 350 2 9 en 
+: 354 2 6 get 
+: 358 2 4 me 
+: 362 2 6 out 
+: 366 2 6 on 
+: 370 2 6 the 
+: 374 5 -1 floor
+- 379 381
+- 381
+: 397 2 6 In 
+: 401 4 8 ten 
+: 408 2 9 mi
+: 412 2 6 nutes 
+: 416 2 9 I’ll 
+: 420 2 6 be 
+: 424 2 8 late 
+: 428 2 8 for 
+: 432 2 6 the 
+: 436 7 9 door
+- 443 444
+- 444
+: 460 2 9 I 
+: 464 2 9 like 
+: 468 2 9 that 
+: 472 6 9 old 
+: 480 2 8 time 
+: 484 2 6 of 
+: 488 2 6 rock 
+: 492 5 6 and 
+: 499 8 6 roll
+- 507 508
+- 508
+: 524 2 13 Still 
+: 528 2 9 like 
+: 532 2 9 that 
+* 536 4 9 old 
+: 544 2 9 time 
+: 548 2 6 of 
+: 552 2 6 rock 
+: 556 5 6 and 
+: 563 5 6 roll
+- 568 570
+- 570
+: 586 2 8 That 
+: 590 2 8 kind 
+: 594 2 9 of 
+: 598 2 9 mu
+: 602 2 9 sic 
+: 606 6 6 just 
+: 614 8 6 soothes 
+: 623 1 6 the 
+: 626 7 -1 soul
+- 633 634
+- 634
+: 650 2 8 I 
+: 654 2 8 re
+: 658 2 8 mi
+: 662 2 8 nisce 
+: 666 2 6 a
+: 670 2 8 bout 
+: 674 2 6 the 
+: 678 6 8 days 
+: 686 2 8 of 
+: 690 4 1 old
+- 694 697
+- 697
+: 713 2 1 With 
+: 717 2 3 that 
+: 721 9 9 old 
+: 732 2 6 time 
+: 736 2 4 of 
+: 740 2 6 rock 
+: 744 6 6 and 
+: 752 6 6 roll
+- 758 1012
+- 1012
+: 1028 2 9 Want 
+: 1032 2 9 go 
+: 1036 2 9 to 
+: 1040 2 9 hear 
+: 1044 2 9 them 
+: 1048 2 9 play 
+: 1052 2 6 a 
+: 1056 6 9 tan
+: 1064 7 10 go
+- 1071 1076
+- 1076
+: 1092 2 9 I’d 
+: 1096 2 9 ra
+: 1100 2 9 ther 
+: 1104 2 9 hear 
+: 1108 2 9 some 
+: 1112 2 6 blues 
+: 1116 2 4 or 
+: 1120 2 6 fun
+: 1123 2 4 ky 
+: 1127 5 6 old 
+: 1134 8 -1 soul
+- 1142
+: 1156 2 6 There’s 
+: 1160 2 8 on
+: 1164 2 6 ly 
+: 1168 2 8 one 
+: 1172 2 6 sure 
+: 1176 2 8 way 
+: 1180 2 8 to 
+: 1184 2 8 get 
+: 1187 2 8 me 
+: 1190 2 6 to 
+: 1193 8 10 go
+- 1201 1202
+- 1202
+: 1218 2 1 Start 
+: 1222 2 4 play
+: 1226 2 6 ing 
+: 1230 6 9 old 
+: 1238 2 9 time 
+: 1242 2 6 of 
+: 1246 2 6 rock 
+: 1250 4 6 and 
+: 1257 5 6 roll
+- 1262 1265
+- 1265
+: 1281 3 9 Call 
+: 1286 2 9 me 
+: 1290 2 9 a 
+: 1294 2 9 re
+: 1298 2 9 lic 
+: 1302 2 6 call 
+: 1306 2 4 me 
+: 1310 6 6 what 
+: 1318 2 3 you 
+: 1322 8 10 will
+- 1330
+: 1346 2 9 Say 
+: 1350 2 9 I’m 
+: 1354 2 9 old 
+: 1358 2 9 fa
+: 1362 2 8 shioned 
+: 1366 2 6 say 
+: 1369 2 4 I’m 
+: 1372 2 6 o
+: 1376 2 6 ver 
+: 1380 2 6 the 
+: 1384 7 -1 hill
+- 1391 1392
+- 1392
+: 1408 2 1 To
+: 1412 5 8 day’s 
+: 1420 2 8 mu
+: 1424 2 6 sic 
+: 1428 5 8 ain’t 
+: 1436 2 8 got 
+: 1440 2 6 the 
+: 1444 6 8 same 
+: 1452 5 10 soul
+- 1457
+: 1472 2 9 I 
+: 1476 2 9 like 
+: 1480 2 9 that 
+: 1484 6 9 old 
+: 1492 2 8 time 
+: 1496 2 6 of 
+: 1500 2 6 rock 
+: 1504 5 6 and 
+: 1511 8 6 roll
+- 1519
+: 1534 2 13 Still 
+: 1538 2 9 like 
+: 1542 2 9 that 
+: 1546 4 9 old 
+: 1554 2 9 time 
+: 1558 2 6 of 
+: 1562 2 6 rock 
+: 1566 5 6 and 
+: 1573 5 6 roll
+- 1578 1581
+- 1581
+: 1597 2 8 That 
+: 1601 2 8 kind 
+: 1605 2 9 of 
+: 1609 2 9 mu
+: 1613 2 9 sic 
+: 1617 6 6 just 
+: 1625 6 11 soothes 
+: 1633 2 11 the 
+: 1637 7 6 soul
+- 1644 1645
+- 1645
+: 1661 2 8 I 
+: 1665 2 8 re
+: 1669 2 8 mi
+: 1673 2 8 nisce 
+: 1677 2 6 a
+: 1681 2 8 bout 
+: 1685 2 6 the 
+: 1689 6 8 days 
+: 1697 2 8 of 
+: 1701 4 1 old
+- 1705 1709
+- 1709
+: 1725 2 1 With 
+: 1729 2 3 that 
+: 1733 9 9 old 
+: 1744 2 6 time 
+: 1748 2 4 of 
+: 1752 2 6 rock 
+: 1756 6 6 and 
+: 1764 6 6 roll
+- 1770 2023
+- 2023
+: 2039 2 13 Still 
+: 2043 2 13 like 
+: 2047 2 13 that 
+: 2051 4 13 old 
+: 2059 2 9 time 
+: 2063 2 6 of 
+: 2067 2 6 rock 
+: 2071 5 6 and 
+: 2078 5 6 roll
+- 2083 2086
+- 2086
+: 2102 2 8 That 
+: 2106 2 8 kind 
+: 2110 2 9 of 
+: 2114 2 9 mu
+: 2118 2 9 sic 
+: 2122 6 6 just 
+: 2130 6 11 soothes 
+: 2138 2 11 the 
+: 2142 7 6 soul
+- 2149 2151
+- 2151
+: 2167 2 8 I 
+: 2171 2 8 re
+: 2175 2 8 mi
+: 2179 2 8 nisce 
+: 2183 2 6 a
+: 2187 2 8 bout 
+: 2191 2 6 the 
+: 2195 6 8 days 
+: 2203 2 8 of 
+: 2207 4 1 old
+- 2211 2215
+- 2215
+: 2231 2 1 With 
+: 2235 2 3 that 
+: 2239 9 9 old 
+: 2250 2 6 time 
+: 2254 2 4 of 
+: 2258 2 6 rock 
+: 2262 6 6 and 
+: 2270 6 6 roll
+- 2276 2277
+- 2277
+: 2293 2 9 Still 
+: 2297 2 9 like 
+: 2301 2 9 that 
+: 2305 4 9 old 
+: 2313 2 9 time 
+: 2317 2 6 of 
+: 2321 2 6 rock 
+: 2325 5 6 and 
+: 2332 5 6 roll
+- 2337 2340
+- 2340
+: 2356 2 8 That 
+: 2360 2 8 kind 
+: 2364 2 9 of 
+: 2368 2 9 mu
+: 2372 2 9 sic 
+: 2376 6 6 just 
+: 2384 6 6 soothes 
+: 2392 2 6 the 
+: 2396 7 -1 soul
+- 2403 2404
+- 2404
+: 2420 2 8 I 
+: 2424 2 8 re
+: 2428 2 8 mi
+: 2432 2 8 nisce 
+: 2436 2 6 a
+: 2440 2 8 bout 
+: 2444 2 6 the 
+: 2448 6 8 days 
+: 2456 2 8 of 
+: 2460 8 1 old
+- 2468
+: 2484 2 1 With 
+: 2488 2 3 that 
+* 2492 9 9 old 
+: 2503 2 6 time 
+: 2507 2 4 of 
+: 2511 2 6 rock 
+: 2515 6 6 and 
+: 2523 6 6 roll
+- 2529 2532
+- 2532
+: 2548 2 9 Still 
+: 2552 2 9 like 
+: 2556 2 9 that 
+: 2560 4 9 old 
+: 2568 2 9 time 
+: 2572 2 6 of 
+: 2576 2 6 rock 
+: 2580 5 6 and 
+: 2587 5 6 roll
+- 2592 2596
+- 2596
+: 2612 2 8 That 
+: 2616 2 8 kind 
+: 2620 2 9 of 
+: 2624 2 9 mu
+: 2628 2 9 sic 
+: 2632 6 6 just 
+: 2640 7 11 soothes 
+: 2649 2 11 the 
+: 2652 7 6 soul
+- 2659 2660
+- 2660
+: 2676 2 8 I 
+: 2680 2 8 re
+: 2684 2 8 mi
+: 2688 2 8 nisce 
+: 2692 2 6 a
+: 2696 2 8 bout 
+: 2700 2 6 the 
+: 2704 6 8 days 
+: 2712 2 8 of 
+: 2716 8 1 old
+- 2724
+: 2739 2 1 With 
+: 2743 2 3 that 
+* 2747 9 9 old 
+: 2758 2 6 time 
+: 2762 2 4 of 
+: 2766 2 6 rock 
+: 2770 6 6 and 
+: 2778 6 6 roll
+- 2784 2788
+- 2788
+: 2804 2 13 Still 
+: 2808 2 9 like 
+: 2812 2 9 that 
+: 2816 4 9 old 
+: 2824 2 9 time 
+: 2828 2 6 of 
+: 2832 2 6 rock 
+: 2836 5 6 and 
+: 2843 5 6 roll ...
+E

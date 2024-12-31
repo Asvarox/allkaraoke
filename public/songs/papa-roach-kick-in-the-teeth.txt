@@ -1,0 +1,443 @@
+#ARTIST:Papa Roach
+#TITLE:Kick In The Teeth
+#CREATOR:Lorc
+#BPM:240
+#YEAR:2010
+#VIDEO:v=WTw5BGienrg
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:10780
+#ALLKARAOKE_ID:papa-roach-kick-in-the-teeth
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:37.310Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29196
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12674
+#ALLKARAOKE_VOLUME:0,91
+#MP3:Papa Roach - Kick In The Teeth.mp3
+: 16 1 -1 We 
+: 18 1 0 live 
+: 20 2 0 in 
+: 24 1 -3 a 
+: 26 6 0 cold 
+: 34 7 0 dark 
+: 42 10 0 world
+- 52
+: 56 1 -1 With 
+: 58 5 0 ve
+: 64 1 0 nom 
+: 66 3 0 in 
+: 70 3 -1 it’s 
+: 74 6 0 veins
+- 80
+: 83 4 -1 You 
+: 88 1 -1 can 
+: 90 5 0 spit 
+: 96 1 0 it 
+: 98 5 0 in 
+: 104 1 -1 my 
+: 106 6 0 face 
+: 114 5 0 but 
+: 120 2 -1 I 
+: 123 6 0 know
+- 129
+: 132 2 -2 I’ll 
+: 135 8 2 be 
+: 144 2 4 o
+: 148 12 -3 kay
+- 160 170
+- 170
+: 186 2 4 It’s 
+* 189 2 0 on 
+* 192 2 0 the 
+* 195 2 -3 at
+* 198 6 0 tack
+- 204
+: 207 4 0 It’s 
+: 212 1 -2 a 
+: 214 6 0 war, 
+: 222 5 0 it’s 
+: 228 1 -2 a 
+: 230 8 0 game
+- 238
+: 241 1 -3 A 
+: 243 10 -2 ball 
+: 254 5 0 and 
+: 260 5 0 chain
+- 265
+: 268 5 0 Chew 
+: 274 1 0 my 
+: 276 7 0 arm 
+: 284 3 -2 off 
+: 288 2 -1 to 
+: 291 7 0 get 
+: 301 2 -3 a
+: 304 8 -1 way
+- 312
+: 316 5 9 Don’t 
+: 323 5 7 fight 
+: 330 8 4 it 
+: 342 2 4 or 
+: 346 6 9 de
+: 354 6 7 ny 
+: 362 8 4 it
+- 370
+: 380 4 7 In
+: 386 7 9 vite 
+: 394 10 9 it
+- 404
+: 408 6 4 ’Cause 
+: 415 8 7 when 
+: 424 4 9 it 
+: 432 7 9 feels 
+: 440 5 9 like 
+: 446 1 7 a 
+: 448 7 9 kick 
+: 456 5 9 in 
+: 462 1 8 the 
+: 464 5 9 teeth
+- 469
+: 473 2 9 I 
+: 476 2 4 can 
+: 479 6 7 take 
+: 487 7 9 it
+- 494
+: 502 5 9 Throw 
+: 508 1 7 your 
+: 510 6 9 stones
+- 516
+: 519 4 9 And 
+: 524 1 7 you 
+: 526 7 9 won’t 
+: 534 4 9 see 
+: 539 2 6 me 
+: 542 7 7 break 
+: 550 5 9 it
+- 555
+: 558 4 9 Say 
+: 564 5 7 what 
+: 570 2 5 you 
+: 574 7 9 want, 
+: 590 6 9 take 
+: 597 3 9 your 
+: 601 12 9 shots
+- 613
+* 616 1 7 You’re 
+* 618 5 9 set
+* 624 1 9 ting 
+: 626 7 9 me 
+: 634 7 9 free 
+: 642 6 7 with
+- 648
+: 651 6 9 One 
+: 658 7 9 more 
+: 666 5 12 kick 
+: 672 1 11 in 
+: 674 8 9 the 
+: 690 8 9 teeth!
+- 698
+F 706 3 4 Na 
+F 710 3 4 na 
+F 714 7 7 na 
+F 722 5 4 na
+- 727
+: 730 5 12 Kick 
+: 736 1 11 in 
+: 738 8 9 the 
+: 754 8 9 teeth
+- 762
+F 770 3 4 Na 
+F 774 3 4 na 
+F 778 7 7 na 
+F 786 7 4 na 
+F 794 7 7 na 
+F 802 7 4 na
+- 809
+: 812 1 1 I 
+: 814 5 0 gotta 
+: 820 1 -1 say 
+: 822 6 0 thanks
+- 828
+: 831 4 0 ’Cause 
+: 836 1 -1 you 
+: 838 5 0 kick 
+: 844 1 0 me 
+: 846 5 0 when 
+: 852 1 -1 I’m 
+: 854 8 0 down
+- 862
+: 868 1 0 I’m 
+: 870 5 0 blee
+: 876 1 0 ding 
+: 878 5 0 out 
+: 884 1 0 the 
+: 886 8 0 mouth
+- 894
+: 898 1 -2 I 
+: 900 5 0 hope 
+: 906 1 0 you 
+: 908 5 0 know 
+: 914 1 -1 I’m 
+: 916 7 2 stron
+: 924 3 4 ger 
+: 928 12 -3 now
+- 940 952
+- 952
+* 968 1 0 I’m 
+* 970 1 0 ta
+* 972 2 0 king 
+* 976 1 -2 the 
+* 978 8 0 hate
+- 986
+: 992 1 -2 I’m 
+: 994 3 0 tur
+: 998 1 0 ning 
+: 1000 1 0 it 
+: 1002 4 0 all 
+: 1007 2 -1 a
+: 1010 8 0 round
+- 1018
+: 1022 1 -3 I 
+: 1025 6 0 won’t 
+: 1034 5 0 go 
+: 1042 5 0 down 
+: 1049 4 0 ’til
+- 1053
+: 1056 1 -1 I’m 
+: 1058 6 0 six 
+: 1065 6 0 feet 
+: 1074 6 2 un
+: 1081 4 4 der
+: 1086 8 -3 ground
+- 1094
+: 1097 6 9 Don’t 
+: 1105 5 7 fight 
+: 1112 8 4 it 
+: 1124 2 4 or 
+: 1128 6 9 de
+: 1136 6 7 ny 
+: 1144 8 4 it
+- 1152
+: 1160 4 7 In
+: 1166 7 9 vite 
+: 1174 10 9 it
+- 1184
+: 1188 6 4 ’Cause 
+: 1195 8 7 when 
+: 1204 4 9 it 
+: 1212 7 9 feels 
+: 1220 5 9 like 
+: 1226 1 7 a 
+: 1228 7 9 kick 
+: 1236 5 9 in 
+: 1242 1 8 the 
+: 1244 6 9 teeth
+- 1250
+: 1253 2 9 I 
+: 1256 2 4 can 
+: 1259 6 7 take 
+: 1268 7 9 it
+- 1275
+: 1282 5 9 Throw 
+: 1288 1 7 your 
+: 1290 6 9 stones
+- 1296
+: 1299 4 9 And 
+: 1304 1 7 you 
+: 1306 7 9 won’t 
+* 1314 4 9 see 
+* 1320 1 4 me 
+* 1322 7 7 break 
+* 1330 5 9 it
+- 1335
+: 1338 4 9 Say 
+: 1344 5 7 what 
+: 1350 2 5 you 
+: 1354 7 9 want, 
+: 1370 6 9 take 
+: 1377 3 9 your 
+: 1381 12 9 shots
+- 1393
+: 1396 1 6 You’re 
+: 1398 5 9 set
+: 1404 1 9 ting 
+: 1406 7 9 me 
+: 1414 7 9 free 
+: 1422 6 7 with
+- 1428
+: 1431 6 9 One 
+: 1438 7 9 more 
+: 1446 5 12 kick 
+: 1452 1 11 in 
+: 1454 8 9 the 
+: 1470 8 9 teeth!
+- 1478
+F 1486 3 4 Na 
+F 1490 3 4 na 
+F 1494 7 7 na 
+F 1502 5 4 na
+- 1507
+* 1510 5 12 Kick 
+* 1516 1 11 in 
+* 1518 8 9 the 
+* 1534 8 9 teeth
+- 1542
+F 1550 3 4 Na 
+F 1554 3 4 na 
+F 1558 7 7 na 
+F 1566 7 4 na 
+F 1574 7 7 na 
+F 1582 8 4 na
+- 1590
+: 1596 7 0 What 
+: 1604 7 0 do
+: 1612 7 0 esn’t 
+: 1620 7 0 kill 
+: 1628 7 -1 me 
+: 1636 7 -3 on
+: 1644 8 -5 ly
+- 1652
+: 1656 7 -7 Will 
+: 1664 7 -5 make 
+: 1672 7 -3 me 
+: 1680 7 0 stron
+: 1688 7 -1 ger 
+: 1696 7 -3 in 
+: 1704 7 -5 my 
+: 1712 13 -3 head
+: 1726 18 -7 ~
+- 1744
+: 1760 7 -3 In 
+: 1768 7 -5 my 
+: 1776 14 -3 head
+: 1791 14 -5 ~
+: 1806 16 -8 ~
+- 1822
+F 1836 222 -8 *Solo*
+- 2058
+: 2062 7 4 ’Cause 
+: 2070 7 7 when 
+: 2078 4 9 it 
+: 2086 7 9 feels 
+: 2094 5 9 like 
+: 2100 1 7 a 
+: 2102 7 9 kick 
+: 2110 5 9 in 
+: 2116 1 8 the 
+: 2118 6 9 teeth
+- 2124
+: 2127 2 9 I 
+: 2130 2 5 can 
+: 2133 6 7 take 
+: 2142 8 9 it
+- 2150
+: 2156 5 9 Throw 
+: 2162 1 7 your 
+: 2164 6 9 stones
+- 2170
+: 2173 4 9 And 
+: 2178 1 7 you 
+: 2180 7 9 won’t 
+: 2188 5 9 see 
+: 2194 1 5 me 
+: 2196 7 7 break 
+: 2204 5 9 it
+- 2209
+* 2212 5 9 Say 
+* 2218 5 7 what 
+* 2224 2 5 you 
+* 2228 7 9 want, 
+: 2244 6 9 take 
+: 2251 3 9 your 
+: 2255 12 9 shots
+- 2267
+: 2270 1 7 You’re 
+: 2272 5 9 set
+: 2278 1 9 ting 
+: 2280 7 9 me 
+: 2288 7 9 free 
+: 2296 6 7 with
+- 2302
+: 2305 6 9 One 
+: 2312 7 9 more 
+: 2320 5 12 kick 
+: 2326 1 11 in 
+: 2328 8 9 the 
+: 2344 8 9 teeth!
+- 2352
+F 2360 3 4 Na 
+F 2364 3 4 na 
+F 2368 7 7 na 
+F 2376 5 4 na
+- 2381
+: 2384 5 12 Kick 
+: 2390 1 11 in 
+: 2392 8 9 the 
+: 2408 8 9 teeth
+- 2416
+F 2424 3 4 Na 
+F 2428 3 4 na 
+F 2432 7 7 na 
+F 2440 7 4 na 
+F 2448 6 7 na 
+F 2455 4 4 na
+- 2459
+: 2462 5 9 Say 
+: 2468 5 7 what 
+: 2474 2 5 you 
+: 2478 7 9 want, 
+* 2494 6 9 take 
+* 2501 3 9 your 
+* 2505 12 9 shots
+- 2517
+: 2522 1 7 You’re 
+: 2524 5 9 set
+: 2530 1 9 ting 
+: 2532 7 9 me 
+: 2540 7 9 free 
+: 2548 5 7 with
+- 2553
+: 2557 5 9 One 
+: 2563 7 9 more 
+: 2571 4 12 kick 
+: 2576 2 11 in 
+: 2579 8 9 the 
+: 2595 8 9 teeth!
+- 2603
+F 2610 3 4 Na 
+F 2614 3 4 na 
+F 2618 7 7 na 
+F 2626 5 4 na
+- 2631
+: 2634 5 12 Kick 
+: 2640 1 11 in 
+: 2642 8 9 the 
+: 2658 8 9 teeth
+- 2666
+F 2670 3 4 Na 
+F 2674 3 4 na 
+F 2678 7 7 na 
+F 2686 5 4 na
+- 2691
+* 2694 5 12 Kick 
+* 2700 1 11 in 
+* 2702 8 9 the 
+* 2718 8 9 teeth
+- 2726
+F 2732 3 4 Na 
+F 2736 3 4 na 
+F 2740 7 7 na 
+F 2748 5 4 na
+- 2753
+: 2756 5 12 Kick 
+: 2762 1 11 in 
+: 2764 8 9 the 
+: 2780 8 9 teeth
+- 2788
+F 2796 3 4 Na 
+F 2800 3 4 na 
+F 2804 7 7 na 
+F 2812 7 4 na 
+F 2820 7 7 na 
+F 2828 6 4 na
+E
