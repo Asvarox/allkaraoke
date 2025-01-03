@@ -405,7 +405,8 @@ const BaseRow = styled.div`
   display: flex;
   flex-wrap: nowrap;
   gap: var(--song-list-gap);
-  padding: 0 var(--song-list-padding-right) var(--song-list-gap) var(--song-list-padding-left);
+  padding: 0 var(--song-list-padding-right) 0 var(--song-list-padding-left);
+  margin-bottom: var(--song-list-gap);
 `;
 
 const GroupRow = styled(BaseRow)``;
@@ -414,7 +415,9 @@ const ListRow = styled(BaseRow)`
   position: relative; // this way the song preview position is computed properly
 
   &[data-is-new='true'] {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-position-y: var(--song-list-gap);
+    background-repeat: no-repeat;
   }
 `;
 

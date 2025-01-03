@@ -5,9 +5,9 @@ import { useSongListFilter } from 'routes/SingASong/SongSelection/Hooks/useSongL
 import { beforeEach } from 'vitest';
 
 const list: SongPreview[] = [
-  generateSongPreview([], { artist: 'diacritics characters', title: 'konik na biegunach' }),
-  generateSongPreview([], { artist: 'kombi', title: 'pokolenie' }),
-  generateSongPreview([], { artist: 'queen', title: "don't stop me now" }),
+  generateSongPreview([], { artist: 'diacritics characters', title: 'konik na biegunach', language: ['Polish'] }),
+  generateSongPreview([], { artist: 'kombi', title: 'pokolenie', language: ['English'] }),
+  generateSongPreview([], { artist: 'queen', title: "don't stop me now", language: ['Spanish'] }),
 ];
 
 describe('useSongListFilter', () => {
@@ -51,11 +51,23 @@ describe('useSongListFilter', () => {
     const { result } = renderHook(() => useSongListFilter(list, [], false, list[0].id));
 
     act(() => {
-      result.current.setFilters({ search: 'queen dont' });
+      result.current.setFilters({ language: 'Spanish' });
     });
 
     expect(result.current.filteredList).toContainEqual(list[2]);
     expect(result.current.filteredList).not.toContainEqual(list[1]);
     expect(result.current.filteredList).toContainEqual(list[0]);
+  });
+
+  it('should not include additional song if the search doesnt cover it', () => {
+    const { result } = renderHook(() => useSongListFilter(list, [], false, list[0].id));
+
+    act(() => {
+      result.current.setFilters({ search: 'queen dont' });
+    });
+
+    expect(result.current.filteredList).toContainEqual(list[2]);
+    expect(result.current.filteredList).not.toContainEqual(list[1]);
+    expect(result.current.filteredList).not.toContainEqual(list[0]);
   });
 });
