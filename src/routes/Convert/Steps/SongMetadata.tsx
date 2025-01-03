@@ -59,7 +59,7 @@ const useDefaultArtistOrigin = (artist: string) => {
         },
         {} as Record<string, number>,
       );
-    return Object.entries(artistOrigin).sort((a, b) => b[1] - a[1])?.[0]?.[0];
+    return Object.entries(artistOrigin).sort((a, b) => b[1] - a[1])?.[0]?.[0] ?? '';
   }, [artist, songList.data]);
 };
 
@@ -69,6 +69,7 @@ export default function SongMetadata(props: Props) {
 
   useEffect(() => {
     if (props.data.artistOrigin === undefined) {
+      console.log('props.data.artistOrigin', defaultArtistOrigin);
       props.onChange({ ...props.data, artistOrigin: defaultArtistOrigin });
     }
   }, [defaultArtistOrigin, props.data]);
