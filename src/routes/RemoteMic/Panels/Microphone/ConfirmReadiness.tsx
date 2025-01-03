@@ -40,7 +40,7 @@ function ConfirmReadiness({ onConfirm }: Props) {
   };
 
   return visible ? (
-    <Form>
+    <Form className="animate-blink">
       <MenuContainer>
         <ReadyButton data-test="ready-button" onClick={confirm}>
           Ready

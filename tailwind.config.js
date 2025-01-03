@@ -68,8 +68,23 @@ module.exports = {
             transform: 'scale(0)',
           },
         },
+        blink: {
+          '100%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+          '30%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+          '50%': {
+            backgroundColor: 'rgba(200, 200, 200, 0.85)',
+          },
+          '0%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+        },
       },
       animation: {
+        blink: 'blink 1050ms ease-in-out infinite both',
         calibrationPulse: 'calibrationPulse 1.5s ease 1',
         gradient: 'gradient 15s ease infinite',
         focused: 'focused 1000ms ease-in-out infinite both',
