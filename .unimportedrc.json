@@ -33,7 +33,8 @@
   ],
   "ignoreUnused": [
     "@mui/system",
-    "@mui/x-date-pickers"
+    "@mui/x-date-pickers",
+    "tailwindcss-motion"
   ],
   "ignoreUnresolved": [
     "../../../public/logo.svg?raw",

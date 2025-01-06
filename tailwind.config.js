@@ -100,5 +100,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-motion'),
+    // https://github.com/tailwindlabs/tailwindcss/discussions/12039
+    /** @type {import('tailwindcss/types/config').PluginCreator} */
+    ({ addVariant }) => {
+      addVariant('starting', '@starting-style');
+    },
+  ],
 };

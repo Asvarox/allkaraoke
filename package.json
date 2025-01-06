@@ -41,6 +41,7 @@
     "remotion": "^4.0.84",
     "remotion-animated": "^2.0.0",
     "tailwind-merge": "^2.5.5",
+    "tailwindcss-motion": "^1.0.1",
     "tinycolor2": "^1.6.0",
     "typewriter-effect": "^2.21.0",
     "use-persisted-state": "^0.3.3",

@@ -5,7 +5,7 @@ import events from 'modules/GameEvents/GameEvents';
 import userMediaService from 'modules/UserMedia/userMediaService';
 import Listener from 'modules/utils/Listener';
 
-export class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
+class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
   private stream: MediaStream | null = null;
   private context: AudioContext | null = null;
 
