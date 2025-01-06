@@ -84,7 +84,17 @@ function RemoteMic() {
               connectionError={connectionError}
             />
           )}
-          {activeTab === 'settings' && <RemoteSettings />}
+          {activeTab === 'settings' && (
+            <RemoteSettings
+              roomId={roomId}
+              monitoringStarted={monitoringStarted}
+              setMonitoringStarted={setMonitoringStarted}
+              connectionStatus={connectionStatus}
+              setIsKeepAwakeOn={setIsKeepAwakeOn}
+              isKeepAwakeOn={isKeepAwakeOn}
+              connectionError={connectionError}
+            />
+          )}
           <BottomBarFiller />
           <BottomBar setActiveTab={setActiveTab} active={activeTab} />
         </>
@@ -95,7 +105,8 @@ function RemoteMic() {
 export default RemoteMic;
 
 const BottomBarFiller = styled.div`
-  height: 6rem;
+  flex: 0;
+  height: 14rem;
 
   @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
     height: 0;

@@ -25,6 +25,8 @@ export class RemoteMicMainPagePO {
     await expect(this.playerNameInput).toHaveValue(playerName);
   }
 
+  indicatorElement = this.page.getByTestId('indicator');
+
   public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
     const colorToNumberMap = {
       blue: '0',
@@ -32,11 +34,11 @@ export class RemoteMicMainPagePO {
       green: '2',
       yellow: '3',
     };
-    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
   }
 
   public async expectPlayerToBeUnassigned() {
-    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', 'none');
   }
 
   public get noPermissionsToControlTheGameAlert() {
@@ -117,6 +119,6 @@ export class RemoteMicMainPagePO {
   }
 
   public async expectMicInputStateToBe(stateName: 'on' | 'off') {
-    await expect(this.page.getByTestId('monitoring-state')).toContainText(stateName, { ignoreCase: true });
+    await expect(this.indicatorElement).toHaveAttribute('data-is-mic-on', stateName === 'on' ? 'true' : 'false');
   }
 }

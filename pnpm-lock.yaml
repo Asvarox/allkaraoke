@@ -122,6 +122,9 @@ importers:
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
+      tailwindcss-motion:
+        specifier: ^1.0.1
+        version: 1.0.1(tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.11.10)(typescript@5.5.3)))
       tinycolor2:
         specifier: ^1.6.0
         version: 1.6.0
@@ -5547,6 +5550,11 @@ packages:
 
   tailwind-merge@2.5.5:
     resolution: {integrity: sha512-0LXunzzAZzo0tEPxV3I297ffKZPlKDrjj7NXphC8V5ak9yHC5zRmxnOe2m/Rd/7ivsOMJe3JZ2JVocoDdQTRBA==}
+
+  tailwindcss-motion@1.0.1:
+    resolution: {integrity: sha512-ZqarvI3XSclT46Dq1wOo9qG9Yx0TIyEtkMfTo8l0JuVKvO1WiSbvAECuTqdYHpC9Ml7abuJIk7u907SBHYprwQ==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
 
   tailwindcss@3.4.4:
     resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
@@ -11827,6 +11835,10 @@ snapshots:
   synchronous-promise@2.0.16: {}
 
   tailwind-merge@2.5.5: {}
+
+  tailwindcss-motion@1.0.1(tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.11.10)(typescript@5.5.3))):
+    dependencies:
+      tailwindcss: 3.4.4(ts-node@10.9.2(@types/node@20.11.10)(typescript@5.5.3))
 
   tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.11.10)(typescript@5.5.3)):
     dependencies:

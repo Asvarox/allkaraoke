@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
-import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
 import isDev from 'modules/utils/isDev';
@@ -24,15 +23,7 @@ interface Props {
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
 
-function Microphone({
-  roomId,
-  monitoringStarted,
-  setMonitoringStarted,
-  isKeepAwakeOn,
-  setIsKeepAwakeOn,
-  connectionError,
-  connectionStatus,
-}: Props) {
+function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionError, connectionStatus }: Props) {
   const permissions = usePermissions();
   const [searchActive, setSearchActive] = useState(false);
   const [autoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);
@@ -83,15 +74,6 @@ function Microphone({
               <strong>Remote Microphones Settings</strong> to manage them.
             </NoPermissionsMsg>
           )}
-          <KeepAwake onClick={() => setIsKeepAwakeOn(!isKeepAwakeOn)}>
-            WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
-          </KeepAwake>
-          <MicInputState
-            onClick={() =>
-              monitoringStarted ? SimplifiedMic.stopMonitoring() : SimplifiedMic.startMonitoring(undefined)
-            }>
-            Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
-          </MicInputState>
           {isConnected && (
             <KeepAwake>
               Ping: <Ping />
@@ -144,7 +126,6 @@ const MicInputState = styled.div`
   strong {
     color: ${styles.colors.text.active};
   }
-  align-self: flex-end;
 `;
 const KeepAwake = styled(MicInputState)``;
 

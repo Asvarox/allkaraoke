@@ -21,30 +21,21 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
   }, [volume]);
 
   const backgroundColor =
-    playerNumber !== null ? styles.colors.players[playerNumber].miss.stroke : styles.colors.lines.normal.fill;
-  const indicatorColor =
-    playerNumber !== null ? styles.colors.players[playerNumber].perfect.fill : styles.colors.lines.normal.fill;
+    playerNumber !== null ? styles.colors.players[playerNumber].hit.fill : styles.colors.lines.normal.fill;
 
   return (
     <IndicatorContainer
-      isMicOn={isMicOn}
+      data-is-mic-on={isMicOn}
       color={backgroundColor}
       data-player-number={`${playerNumber ?? 'none'}`}
       data-test="indicator">
       {isMicOn && (
         <>
-          <Debug>
-            {frequency ? `${Math.round(frequency)}Hz` : ' '}
-            <br />
-            {String(volume * 100).slice(0, 5)}
-          </Debug>
+          <Debug>{frequency ? `${Math.round(frequency)}Hz` : ' '}</Debug>
         </>
       )}
       {isConnected && permissions === 'write' && <PlayerChange playerNumber={playerNumber} />}
-      <Indicator
-        color={indicatorColor}
-        style={{ transform: `scaleY(${isMicOn ? 1 - Math.min(1, volume / maxVolume) : 1})` }}
-      />
+      <Indicator style={{ transform: `scaleY(${isMicOn ? 1 - Math.min(1, volume / maxVolume) : 1})` }} />
     </IndicatorContainer>
   );
 }
@@ -55,15 +46,16 @@ const Debug = styled.span`
   opacity: 0.125;
 `;
 
-const Indicator = styled.div<{ color: string }>`
+const Indicator = styled.div`
   width: 100%;
-  height: 100%;
-  background-color: ${(props) => props.color};
+  min-height: 200px;
+  max-height: 100vw;
+  background-color: rgba(0, 0, 0, 0.25);
   transition: 200ms;
   transform-origin: top;
 `;
 
-const IndicatorContainer = styled.div<{ color: string; isMicOn: boolean }>`
+const IndicatorContainer = styled.div<{ color: string }>`
   position: relative;
   border: 0.1rem solid white;
   flex: 1;
