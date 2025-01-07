@@ -25,6 +25,7 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
 
   return (
     <IndicatorContainer
+      className="rounded-md"
       data-is-mic-on={isMicOn}
       color={backgroundColor}
       data-player-number={`${playerNumber ?? 'none'}`}

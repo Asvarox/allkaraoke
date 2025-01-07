@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import { Button } from 'modules/Elements/Button';
 import { Switcher, nextIndex, nextValue } from 'modules/Elements/Switcher';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
@@ -78,14 +79,16 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
         data-test-value={gameModeNames[mode]}
       />
       <ModeDescription>
-        {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
-        {mode === GAME_MODE.CO_OP && 'Join forces and sing together - your points will be added up to a single pool.'}
-        {mode === GAME_MODE.PASS_THE_MIC && (
-          <>
-            For more than 2 players - split into groups and pass the microphone within the group when prompted with{' '}
-            <SwapHorizIcon /> symbol.
-          </>
-        )}
+        <h3>
+          {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
+          {mode === GAME_MODE.CO_OP && 'Join forces and sing together - your points will be added up to a single pool.'}
+          {mode === GAME_MODE.PASS_THE_MIC && (
+            <>
+              For more than 2 players - split into groups and pass the microphone within the group when prompted with{' '}
+              <SwapHorizIcon /> symbol.
+            </>
+          )}
+        </h3>
       </ModeDescription>
       <PlayButton {...register('next-step-button', handleNextButton, undefined, true)}>Next ➤</PlayButton>
     </>
@@ -98,7 +101,7 @@ const PlayButton = styled(Button)`
   width: 50rem;
 `;
 
-const ModeDescription = styled.h3`
+const ModeDescription = styled(Box)`
   max-width: 50rem;
   margin: -1rem 0 1rem !important;
   padding: 1.5rem;

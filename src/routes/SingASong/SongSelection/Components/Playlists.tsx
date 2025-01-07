@@ -55,6 +55,7 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
       {playlists.map(({ Wrapper, ...playlist }) => {
         const child = (
           <Playlist
+            className="shadow-none rounded-none"
             key={playlist.name}
             data-selected={`playlist-${playlist.name}` === focused}
             data-active={active}

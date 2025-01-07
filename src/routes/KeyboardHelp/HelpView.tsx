@@ -1,3 +1,4 @@
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';
@@ -101,8 +102,8 @@ const UseKeyboardIndicator = twc(
   Text,
 )`absolute inset-0 bg-black/75 flex items-center justify-center text-white text-md p-8 invisible opacity-0 duration-300 hover:opacity-100 hover:visible`;
 
-const Container = twc.div((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
-  `fixed top-[5rem] right-0 p-2 bg-black/50  flex-col gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
+const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
+  `fixed top-[5rem] right-0 p-2 items-stretch gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
   props['data-visible'] ? 'flex mobile:hidden' : 'hidden',
 ]);
 

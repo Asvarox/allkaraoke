@@ -6,7 +6,7 @@ import { twc } from 'react-twc';
 
 const MenuContainer = twc(
   Box,
-)`w-[100vw] sm:max-w-[75rem] m-[2rem auto 0 auto] [view-transition-name:menu-container] items-stretch pointer-events-auto`;
+)`w-[100vw] sm:max-w-[85rem] m-[2rem auto 0 auto] [view-transition-name:menu-container] items-stretch pointer-events-auto`;
 
 export const MenuHeader = twc(Text)`text-xl text-active flex items-center justify-center`;
 export const MenuHelpText = twc(Text)`text-md`;

@@ -85,7 +85,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
           ))}
         </ScoresContainer>
         {isCameraModeEnabled ? (
-          <div className="w-[30%]">
+          <div className={`duration-300 ${initialCameraPermission && revealHighScore ? 'w-[43%]' : 'w-[28%]'}`}>
             {initialCameraPermission ? (
               <CameraRoll />
             ) : (

@@ -1,4 +1,5 @@
 import { ButtonLink } from 'modules/Elements/AKUI/Button';
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
@@ -59,7 +60,7 @@ function LandingPage() {
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <div className="flex gap-24 p-24 items-center box-border bg-black/75 landscap:flex-1 [&_hr]:my-12 mobile:flex-col">
+        <Box className="gap-24 p-24 flex-row bg-black/75 landscap:flex-1 [&_hr]:my-12 mobile:flex-col">
           <StatSegment>
             <div className="leading-normal text-justify">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
@@ -120,7 +121,7 @@ function LandingPage() {
             />
             <Screenshot src={screenshot2} alt="In-game screen" className="[box-shadow:_0_0_10rem_rgb(19,19,19)]" />
           </StatSegment>
-        </div>
+        </Box>
         <Text className="mobile:hidden text-md text-right !mt-[-2.5rem]">
           Using this device as remote microphone?{' '}
           <SmoothLink to="remote-mic/">

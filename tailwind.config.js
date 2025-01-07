@@ -20,6 +20,9 @@ module.exports = {
       '5xl': '10rem',
     },
     extend: {
+      boxShadow: {
+        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25)',
+      },
       colors: {
         text: {
           default: styles.colors.text.default,
