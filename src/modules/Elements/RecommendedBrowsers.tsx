@@ -6,7 +6,7 @@ function RecommendedBrowsers() {
   return (
     <>
       {!isChromium() && (
-        <Box className="w-full py-12 bg-red-900 text-center">
+        <Box className="w-full py-12 bg-red-900 text-center rounded-none">
           <Text className="text-lg">
             This game is tested in <strong>Google Chrome</strong> and <strong>MS Edge</strong>.
           </Text>

@@ -21,10 +21,6 @@ export interface NetworkStartMonitorMessage {
   t: 'start-monitor';
 }
 
-export interface NetworkUnregisterMessage {
-  t: 'unregister';
-}
-
 export interface NetworkStopMonitorMessage {
   t: 'stop-monitor';
 }

@@ -31,9 +31,24 @@ export function nextValue<T extends readonly any[]>(
   return values[nextValueIndex(values, current, direction)];
 }
 
-export const Switcher = ({ focused, disabled = false, label, value, onClick, info, children, ...restProps }: Props) => (
+export const Switcher = ({
+  focused,
+  disabled = false,
+  label,
+  value,
+  onClick,
+  info,
+  children,
+  className = '',
+  ...restProps
+}: Props) => (
   <Container>
-    <ConfigurationPosition data-focused={focused} onClick={onClick} data-disabled={disabled} {...restProps}>
+    <ConfigurationPosition
+      data-focused={focused}
+      onClick={onClick}
+      data-disabled={disabled}
+      {...restProps}
+      className={`${className} rounded-md shadow-focusable`}>
       <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
       {children ?? null}
     </ConfigurationPosition>

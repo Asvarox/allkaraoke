@@ -6,6 +6,7 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
+import { twc } from 'react-twc';
 
 interface Props {
   onExit?: () => void;
@@ -72,10 +73,7 @@ export default function RateSong({ register, onExit }: Props) {
 }
 
 // todo make it a generic component
-const Checkbox = styled(MenuButton)`
-  justify-content: flex-start;
-  gap: 1rem;
-`;
+const Checkbox = twc(MenuButton)`gap-4 justify-start pl-4`;
 
 const Check = styled.div`
   svg {

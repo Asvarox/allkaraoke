@@ -90,15 +90,14 @@ export class RemoteMicMainPagePO {
   }
 
   public async expectConnectButtonToBe(buttonActivity: 'enabled' | 'disabled') {
-    const activityToBooleanMap = {
-      enabled: 'false',
-      disabled: 'true',
-    };
-    await expect(this.connectButton).toHaveAttribute('data-disabled', activityToBooleanMap[buttonActivity]);
+    if (buttonActivity === 'enabled') {
+      await expect(this.connectButton).not.toBeDisabled();
+    } else {
+      await expect(this.connectButton).toBeDisabled();
+    }
   }
 
-  public async clickToConnectMic() {
-    await this.expectConnectButtonToBe('enabled');
+  public async connect() {
     await this.connectButton.click();
   }
 

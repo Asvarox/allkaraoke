@@ -28,7 +28,7 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 
   await test.step('Enter player`s name and connect mic with the game', async () => {
     await remoteMic.remoteMicMainPage.enterPlayerName(playerName);
-    await remoteMic.remoteMicMainPage.clickToConnectMic();
+    await remoteMic.remoteMicMainPage.connect();
   });
 
   await test.step('Go to the mic settings - info about the ability to reset the mic is visible', async () => {
@@ -121,6 +121,7 @@ test('Should allow changing game input lag', async ({ browser, page }) => {
     await remoteMic.remoteMicSettingsPage.goToManageGame();
     await remoteMic.remoteMicManageGamePage.increaseGameInputLag();
     await remoteMic.remoteMicManageGamePage.expectGameInputLagToBe(numericInputValue);
-    await pages.settingsPage.expectInputLagToBe(numericInputValue);
+    await pages.settingsPage.goToCalibration();
+    await pages.calibrationPage.expectInputLagToBe(numericInputValue);
   });
 });

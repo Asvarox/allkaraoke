@@ -37,7 +37,7 @@ export const Input = ({
     <div>
       <Container
         data-focused={focused}
-        className={className}
+        className={`${className} rounded-md`}
         onClick={() => {
           inputRef.current?.focus();
         }}>

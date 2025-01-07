@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
+import { ComponentProps } from 'react';
 
-interface Props {
+interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
   unit?: string;
   value: number;
   onChange: (newValue: number) => void;
@@ -9,17 +10,25 @@ interface Props {
   disabled?: boolean;
 }
 
-function NumericInput({ unit = '', value, onChange, step = 50, disabled = false, ...props }: Props) {
+function NumericInput({ unit = '', value, onChange, step = 50, disabled = false, className = '', ...props }: Props) {
   return (
-    <Container {...props}>
-      <Button onClick={() => onChange(value - step)} disabled={disabled} data-test="numeric-input-down">
+    <Container className={`${className} rounded-md shadow-focusable`} {...props}>
+      <Button
+        onClick={() => onChange(value - step)}
+        disabled={disabled}
+        data-test="numeric-input-down"
+        className="rounded-l-md">
         -
       </Button>
       <Value>
         <strong data-test="numeric-input-value">{value}</strong>
         {unit}
       </Value>
-      <Button onClick={() => onChange(value + step)} disabled={disabled} data-test="numeric-input-up">
+      <Button
+        onClick={() => onChange(value + step)}
+        disabled={disabled}
+        data-test="numeric-input-up"
+        className="rounded-r-md">
         +
       </Button>
     </Container>
@@ -28,7 +37,6 @@ function NumericInput({ unit = '', value, onChange, step = 50, disabled = false,
 export default NumericInput;
 
 const Button = styled.button`
-  background: black;
   padding: 0.5rem 2rem;
   border: none;
   font-size: 3rem;

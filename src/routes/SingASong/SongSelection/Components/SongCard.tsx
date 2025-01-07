@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
@@ -171,7 +172,7 @@ export const SongCardBackground = styled.div`
   background-position: center center;
 `;
 
-export const SongListEntryDetails = styled.span<{ expanded?: boolean }>`
+export const SongListEntryDetails = styled(Box)<{ expanded?: boolean }>`
   background: rgba(0, 0, 0, 0.7);
 
   width: auto;

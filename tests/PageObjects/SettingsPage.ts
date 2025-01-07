@@ -37,16 +37,14 @@ export class SettingsPagePO {
   public async toggleConnectedDevicePermission() {
     await this.connectedDevicePermissionElement.click();
   }
+  public async goToCalibration() {
+    await this.page.getByTestId('calibration-settings').click();
+  }
 
   public async expectConnectedDevicePermissionToBeRead() {
     await expect(this.connectedDevicePermissionElement).toContainText('READ', { ignoreCase: true });
   }
-
   public async expectConnectedDevicePermissionToBeWrite() {
     await expect(this.connectedDevicePermissionElement).toContainText('WRITE', { ignoreCase: true });
-  }
-
-  public async expectInputLagToBe(value: string) {
-    await expect(this.page.getByTestId('input-lag')).toHaveValue(value);
   }
 }

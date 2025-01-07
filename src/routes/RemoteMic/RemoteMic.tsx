@@ -60,7 +60,7 @@ function RemoteMic() {
     <LayoutGame>
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
-      <Container id="phone-ui-container">
+      <Container id="phone-ui-container" className="pb-24 landscap:pb-0">
         <>
           {activeTab === 'microphone' && (
             <Microphone
@@ -95,7 +95,6 @@ function RemoteMic() {
               connectionError={connectionError}
             />
           )}
-          <BottomBarFiller />
           <BottomBar setActiveTab={setActiveTab} active={activeTab} />
         </>
       </Container>
@@ -103,15 +102,6 @@ function RemoteMic() {
   );
 }
 export default RemoteMic;
-
-const BottomBarFiller = styled.div`
-  flex: 0;
-  height: 14rem;
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    height: 0;
-  }
-`;
 
 const Container = styled.div`
   margin: 0 auto;
