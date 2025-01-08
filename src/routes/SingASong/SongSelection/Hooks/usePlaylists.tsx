@@ -4,6 +4,8 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
+import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
+import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import isDev from 'modules/utils/isDev';
 import isE2E from 'modules/utils/isE2E';
@@ -27,6 +29,8 @@ export interface PlaylistEntry {
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
   const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(FeatureFlags.Christmas);
   const songLanguages = useLanguageList(songs);
+  const remoteSongList = useRemoteMicSongList();
+  const { connected } = useRemoteMicServerStatus();
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
@@ -103,8 +107,15 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
         name: 'New',
         filters: { recentlyUpdated: true },
       },
+      connected.length > 0
+        ? {
+            name: 'remote-mics',
+            display: 'Remote Mics',
+            filters: { specificSongs: remoteSongList, skipExcludedLanguages: true },
+          }
+        : null,
     ];
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
-  }, [songLanguages, isLoading, recommended]);
+  }, [songLanguages, isLoading, recommended, remoteSongList, connected.length]);
 };

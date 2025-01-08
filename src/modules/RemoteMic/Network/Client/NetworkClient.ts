@@ -203,6 +203,10 @@ export class NetworkClient {
     this.sendEvent('search-song', { search });
   };
 
+  public sendMySongList = (delta: { added?: string[]; deleted?: string[] }) => {
+    this.sendEvent('my-list', delta);
+  };
+
   public selectSong = (songId: string) => {
     this.sendEvent('select-song', { id: songId });
   };

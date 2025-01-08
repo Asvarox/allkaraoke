@@ -26,6 +26,12 @@ body {
     overflow-y: auto;
 }
 
+a {
+    /*@apply typography;*/
+    @apply text-active;
+    text-decoration: underline;
+}
+
 body,
 button,
 input {
@@ -183,9 +189,4 @@ h4 {
 }
 h5 {
     font-size: 1.25rem;
-}
-
-a {
-    color: #1976d2;
-    text-decoration: underline;
 }

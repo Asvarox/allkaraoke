@@ -7,6 +7,7 @@ import useSongList from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'routes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 
 export default function useSongSelection(additionalSong: string | null, songsPerRow: number) {
+  const cleanAdditionalSong = additionalSong?.replace('-new-group', '') ?? null;
   const {
     songList,
     groupedSongList,
@@ -16,7 +17,7 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     selectedPlaylist,
     setSelectedPlaylist,
     playlists,
-  } = useSongList(additionalSong);
+  } = useSongList(cleanAdditionalSong);
   const [keyboardControl, setKeyboardControl] = useState(true);
 
   const handleKeyboardControl = (value: boolean, additionalUpdates?: () => void) => {
@@ -29,30 +30,27 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     woosh.play(false);
   };
 
-  const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters, randomSong] =
-    useSongSelectionKeyboardNavigation(
-      keyboardControl,
-      groupedSongList,
-      () => handleKeyboardControl(false),
-      songList.length,
-      filters,
-      songsPerRow,
-    );
+  const [selectedSongId, moveToSong, showFilters, setShowFilters, randomSong] = useSongSelectionKeyboardNavigation(
+    keyboardControl,
+    groupedSongList,
+    () => handleKeyboardControl(false),
+    songList.length,
+    filters,
+    songsPerRow,
+  );
+  const cleanSelectedSongId = selectedSongId.replace('-new-group', '');
 
   const [preselected, setPreselected] = useState(false);
-  useEffect(() => {
-    if (!preselected && songList.length && !isLoading) {
-      const preselectedSongIndex = songList.findIndex((song) => song.id === additionalSong);
-      const firstNewSongIndex = songList.findIndex((song) => song.isNew);
+  if (!preselected && songList.length && !isLoading) {
+    let songId = '';
+    const newSong = songList.find((song) => song.isNew);
+    if (additionalSong && songList.some((song) => song.id === cleanAdditionalSong)) songId = additionalSong;
+    else if (newSong) songId = newSong.id;
+    else songId = songList[randomInt(0, songList.length - 1)].id;
 
-      let songIndex = randomInt(0, songList.length - 1);
-      if (preselectedSongIndex > -1) songIndex = preselectedSongIndex;
-      else if (firstNewSongIndex > -1) songIndex = firstNewSongIndex;
-
-      setPreselected(true);
-      moveToSong(songIndex);
-    }
-  }, [moveToSong, preselected, focusedSong, songList, additionalSong, isLoading]);
+    moveToSong(songId);
+    setPreselected(true);
+  }
 
   useEffect(() => {
     if (additionalSong !== null) {
@@ -61,19 +59,18 @@ export default function useSongSelection(additionalSong: string | null, songsPer
   }, [additionalSong]);
 
   useEffect(() => {
-    if (preselected && songList.length && songList[focusedSong] && !isLoading) {
+    if (preselected && !isLoading && songList.length && songList.some((song) => song.id === cleanSelectedSongId)) {
       /// push query param to url containing playlist name
       const url = new URL(global.location?.href);
-      url.searchParams.set('song', songList[focusedSong].id);
+      url.searchParams.set('song', selectedSongId!);
       global.history.replaceState(null, '', url.toString());
     }
-  }, [preselected, focusedSong, songList, isLoading]);
+  }, [preselected, selectedSongId, songList, isLoading]);
 
-  const songPreview = songList?.[focusedSong];
+  const songPreview = songList?.find((song) => song.id === cleanSelectedSongId);
   return {
     groupedSongList,
-    focusedSong,
-    focusedGroup,
+    focusedSong: selectedSongId,
     moveToSong,
     setKeyboardControl: handleKeyboardControl,
     keyboardControl,

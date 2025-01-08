@@ -5,33 +5,22 @@ import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import tuple from 'modules/utils/tuple';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { HelpEntry } from 'routes/KeyboardHelp/Context';
 import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
 
-  const songIndexMatrix = useMemo(
+  const songIdMatrix = useMemo(
     () =>
       groups
-        .map(({ songs }) =>
+        .map((group) =>
           chunk(
-            songs.map((song) => song.index),
-            itemsPerRow,
-          ),
-        )
-        .flat(),
-    [groups, itemsPerRow],
-  );
-  const songGroupMatrix = useMemo(
-    () =>
-      groups
-        .map(({ songs, name }) =>
-          chunk(
-            songs.map(() => name),
+            group.songs.map((song) => getSongIdWithNew(song, group)),
             itemsPerRow,
           ),
         )
@@ -39,76 +28,68 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
     [groups, itemsPerRow],
   );
 
-  const previousMatrix = usePrevious(songIndexMatrix ?? []);
+  const isAtLastColumn = cursorPosition[0] === songIdMatrix[cursorPosition[1]]?.length - 1;
 
-  const isAtLastColumn = cursorPosition[0] === songIndexMatrix[cursorPosition[1]]?.length - 1;
+  const selectedSongId = useMemo(() => {
+    const [x, y] = cursorPosition;
+    const yRow = songIdMatrix[y];
+    if (!yRow) return '';
+    const xPos = Math.min(x, yRow.length - 1);
+
+    return yRow[xPos];
+  }, [cursorPosition, songIdMatrix]);
 
   const moveToSong = useCallback(
-    (songIndex: number, groupLetter?: string) => {
-      const y = songIndexMatrix.findIndex(
-        (columns, index) => columns.includes(songIndex) && (!groupLetter || groupLetter === songGroupMatrix[index][0]),
-      );
-      const x = songIndexMatrix[y]?.indexOf(songIndex);
-      if (x >= 0 && y >= 0) {
-        setCursorPosition([x ?? 0, y ?? 0]);
-      } else {
+    (songId: string) => {
+      const y = songIdMatrix.findIndex((row) => row.includes(songId));
+      const x = songIdMatrix[y]?.indexOf(songId) ?? -1;
+      if (x === -1 || y === -1) {
         setCursorPosition([0, 0]);
+      } else {
+        setCursorPosition([x, y]);
       }
     },
-    [songIndexMatrix],
+    [songIdMatrix],
   );
 
-  const positionToValue = <T>([x, y]: [number, number], matrix: T[][], def: T) => {
-    if (groups.length === 0) return def;
-    const row = matrix[y];
-    return row?.[x] ?? row?.at(-1) ?? matrix?.[0]?.[0] ?? def;
-  };
-  const positionToSongIndex = ([x, y]: [number, number], matrix: number[][] = songIndexMatrix) => {
-    return positionToValue([x, y], matrix, 0);
-  };
-  const positionToGroup = ([x, y]: [number, number], matrix: string[][] = songGroupMatrix) => {
-    return positionToValue([x, y], matrix, 'A');
-  };
+  const [previousSelectedSongId, setPreviousSelectedSongId] = useState(() => selectedSongId);
+  if (previousSelectedSongId !== selectedSongId) setPreviousSelectedSongId(selectedSongId);
+  const [previousSongIdMatrix, setPreviousSongIdMatrix] = useState(() => songIdMatrix);
+  if (previousSongIdMatrix !== songIdMatrix) setPreviousSongIdMatrix(songIdMatrix);
 
-  useEffect(() => {
-    const previousFocusedSong = positionToSongIndex(cursorPosition, previousMatrix);
-    const currentFocusedSong = positionToSongIndex(cursorPosition, songIndexMatrix);
-    if (previousMatrix.length && previousFocusedSong !== currentFocusedSong) {
-      moveToSong(previousFocusedSong);
-    }
-  }, [cursorPosition, songIndexMatrix, previousMatrix, isAtLastColumn]);
+  if (previousSongIdMatrix !== songIdMatrix && previousSelectedSongId && previousSelectedSongId !== selectedSongId) {
+    setPreviousSongIdMatrix(songIdMatrix);
+    moveToSong(previousSelectedSongId);
+  }
 
   const moveCursor = (plane: 'x' | 'y', delta: number) => {
     menuNavigate.play();
     setCursorPosition(([x, y]) => {
       // in case list is empty
-      if (songIndexMatrix.length === 0) return [0, 0];
+      if (songIdMatrix.length === 0) return [0, 0];
       let newX = x;
       let newY = y;
       if (plane === 'y') {
         newY = y + delta;
       } else {
-        if (songIndexMatrix[y] === undefined) {
+        if (songIdMatrix[y] === undefined) {
           debugger;
         }
-        const maxXInRow = (songIndexMatrix[y]?.length ?? 1) - 1;
+        const maxXInRow = (songIdMatrix[y]?.length ?? 1) - 1;
         newX = Math.min(x, maxXInRow) + delta;
         if (newX < 0) {
-          newY = (songIndexMatrix.length + y - 1) % songIndexMatrix.length;
-          newX = songIndexMatrix[newY].length - 1;
+          newY = (songIdMatrix.length + y - 1) % songIdMatrix.length;
+          newX = songIdMatrix[newY].length - 1;
         } else if (newX > maxXInRow) {
           newY = y + 1;
           newX = 0;
         }
       }
-      return [newX % itemsPerRow, (songIndexMatrix.length + newY) % songIndexMatrix.length];
+      return [newX % itemsPerRow, (songIdMatrix.length + newY) % songIdMatrix.length];
     });
   };
 
-  const focusedSong = positionToSongIndex(cursorPosition);
-  const focusedGroup = positionToGroup(cursorPosition);
-
-  return tuple([focusedSong, focusedGroup, cursorPosition, moveCursor, moveToSong, isAtLastColumn]);
+  return tuple([selectedSongId, cursorPosition, moveCursor, moveToSong, isAtLastColumn]);
 };
 
 export const useSongSelectionKeyboardNavigation = (
@@ -127,8 +108,10 @@ export const useSongSelectionKeyboardNavigation = (
   const previousPlaylistsState = usePrevious(showPlaylistsState);
   const [arePlaylistsVisible, leavingKey] = showPlaylistsState;
 
-  const [focusedSong, focusedGroup, cursorPosition, moveCursor, moveToSong, isAtLastColumn] =
-    useTwoDimensionalNavigation(groupedSongs, songsPerRow);
+  const [selectedSongId, cursorPosition, moveCursor, moveToSong, isAtLastColumn] = useTwoDimensionalNavigation(
+    groupedSongs,
+    songsPerRow,
+  );
   const isAtFirstColumn = cursorPosition[0] === 0;
 
   const handleEnter = () => {
@@ -162,7 +145,7 @@ export const useSongSelectionKeyboardNavigation = (
       (direction: 1 | -1, currentGroup: number) => {
         const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
 
-        moveToSong(groupedSongs[nextGroupIndex].songs[0].index);
+        moveToSong(groupedSongs[nextGroupIndex].songs[0].song.id);
         menuNavigate.play();
       },
       700,
@@ -176,7 +159,7 @@ export const useSongSelectionKeyboardNavigation = (
       moveCursor('y', direction);
     } else {
       const currentlySelectedGroupIndex = groupedSongs.findIndex(
-        (group) => !!group.songs.find((song) => song.index === focusedSong),
+        (group) => !!group.songs.find((song) => song.song.id === selectedSongId),
       );
       navigateToGroup(direction, currentlySelectedGroupIndex);
     }
@@ -197,7 +180,14 @@ export const useSongSelectionKeyboardNavigation = (
   const randomlySelectedSongs = useRef<number[]>([]);
   const randomSong = () => {
     const newIndex = selectRandomSong(songCount, randomlySelectedSongs.current);
-    moveToSong(newIndex);
+    for (const group of groupedSongs) {
+      for (const song of group.songs) {
+        if (song.index === newIndex) {
+          moveToSong(song.song.id);
+          return;
+        }
+      }
+    }
   };
 
   useKeyboard(
@@ -242,5 +232,5 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-  return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
+  return tuple([selectedSongId, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
 };

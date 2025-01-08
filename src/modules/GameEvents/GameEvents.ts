@@ -2,11 +2,12 @@ import { SingSetup, Song, SongPreview } from 'interfaces';
 import { PlayerEntity, SelectedPlayerInput } from 'modules/Players/PlayersManager';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import {
+  keyStrokes,
   NetworkRemoteMicListMessage,
+  NetworkRemoteMicMyListMessage,
   NetworkSetPermissionsMessage,
   NetworkStyleChangeMessage,
   NetworkSubscribeMessage,
-  keyStrokes,
 } from 'modules/RemoteMic/Network/messages';
 import { SongStats } from 'modules/Songs/stats/common';
 import posthog from 'posthog-js';
@@ -86,7 +87,10 @@ export const events = {
   inputListChanged: new GameEvent<(initial: boolean) => void>('inputListChanged'),
 
   karaokeConnectionStatusChange: new GameEvent<
-    (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error', e?: transportErrorReason) => void
+    (
+      status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error' | 'uninitialised',
+      e?: transportErrorReason,
+    ) => void
   >('karaokeConnectionStatusChange'),
   remoteMicPlayerSet: new GameEvent<(playerNumber: 0 | 1 | 2 | 3 | null) => void>('remoteMicPlayerSet'),
   remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),
@@ -112,6 +116,9 @@ export const events = {
   remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch'),
   remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
   remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
+  remoteMicSongListUpdated: new GameEvent<(id: string, delta: Omit<NetworkRemoteMicMyListMessage, 't'>) => void>(
+    'remoteMicSongListUpdate',
+  ),
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
   remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
   remoteStyleChanged: new GameEvent<(style: NetworkStyleChangeMessage['style']) => void>('remoteStyleChanged'),

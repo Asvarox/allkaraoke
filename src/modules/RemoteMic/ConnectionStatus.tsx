@@ -1,40 +1,15 @@
 import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect, useEventListenerSelector } from 'modules/GameEvents/hooks';
-import server from 'modules/RemoteMic/Network/Server';
-import remoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import { useEffect, useState } from 'react';
-import { useInterval } from 'react-use';
+import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
+import { useState } from 'react';
 
 export default function ConnectionStatus() {
   const [display, setDisplay] = useState<boolean | null>(null);
-  const [isOnline, setIsOnline] = useState(server.isStarted());
-  const [latency, setLatency] = useState<number | null>(server.getLatency());
+  const { connected, isOnline, latency } = useRemoteMicServerStatus();
 
-  useInterval(() => {
-    setLatency(server.getLatency());
-  }, 1000);
-
-  useEventEffect(events.micServerStarted, () => {
-    setIsOnline(true);
-  });
-
-  useEventEffect(events.micServerStopped, () => {
-    setIsOnline(false);
-  });
-
-  const connected = useEventListenerSelector(
-    [events.remoteMicConnected, events.remoteMicDisconnected],
-    () => remoteMicManager.getRemoteMics(),
-    [isOnline],
-  );
-
-  useEffect(() => {
-    if (display === null && isOnline) {
-      setDisplay(true);
-    }
-  }, [isOnline, display]);
+  if (display === null && isOnline) {
+    setDisplay(true);
+  }
 
   if (!display) {
     return null;

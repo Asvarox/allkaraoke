@@ -13,6 +13,7 @@ import Microphone from 'routes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
 import RemoteSettings from 'routes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'routes/RemoteMic/Panels/RemoteSongList';
+import useSendInitialSongList from 'routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
 
 const noSleep = new NoSleep();
 
@@ -36,6 +37,8 @@ function RemoteMic() {
   const [monitoringStarted, setMonitoringStarted] = useState(false);
   useEventEffect(events.micMonitoringStarted, () => setMonitoringStarted(true));
   useEventEffect(events.micMonitoringStopped, () => setMonitoringStarted(false));
+
+  useSendInitialSongList(connectionStatus === 'connected');
 
   const [isKeepAwakeOn, setIsKeepAwakeOn] = useState(false);
 

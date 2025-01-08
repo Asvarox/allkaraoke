@@ -21,10 +21,11 @@ import {
   CustomVirtualizedListMethods,
 } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
 
 export interface VirtualizedListMethods {
-  getSongPosition: (group: string, index: number) => { y: number } | undefined;
-  scrollToSongInGroup: (group: string, songId: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
+  getSongPosition: (songId: string) => { y: number } | undefined;
+  scrollToSongInGroup: (songId: string, behavior?: ScrollToOptions['behavior']) => Promise<void>;
   scrollToGroup: (group: string) => void;
 }
 
@@ -40,8 +41,7 @@ interface Props<T> {
   perRow: number;
   itemHeight: number;
   groupHeight: number;
-  focusedSong: number;
-  focusedGroup: string;
+  focusedSong: string;
 }
 
 function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedListMethods>) {
@@ -62,25 +62,20 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   const { ListRowWrapper, GroupRowWrapper } = props;
 
   const getGroupIndex = useCallback(
-    (group: string, index: number) => {
-      const groupIndex = props.groups.findIndex((g) => g.name === group);
-
-      if (groupIndex === -1) {
-        return props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
-      }
-      return groupIndex;
-    },
+    (songId: string) => props.groups.findIndex((g) => g.songs.some((s) => getSongIdWithNew(s, g) === songId)),
     [props.groups],
   );
 
   const getSongRow = useCallback(
-    (group: string, index: number) => {
-      const groupIndex = getGroupIndex(group, index);
+    (songId: string) => {
+      const groupIndex = getGroupIndex(songId);
       if (groupIndex === -1) {
         return;
       }
 
-      const songIndex = props.groups[groupIndex].songs.findIndex((s) => s.index === index);
+      const songIndex = props.groups[groupIndex].songs.findIndex(
+        (s) => getSongIdWithNew(s, props.groups[groupIndex]) === songId,
+      );
 
       return groupedRows
         .slice(0, groupIndex)
@@ -91,13 +86,15 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   useImperativeHandle(ref, (): VirtualizedListMethods => {
     return {
-      getSongPosition: (group, index) => {
-        const groupIndex = getGroupIndex(group, index);
+      getSongPosition: (songId) => {
+        const groupIndex = getGroupIndex(songId);
         if (groupIndex === -1) {
           return;
         }
 
-        const songIndex = props.groups[groupIndex].songs.findIndex((s) => s.index === index);
+        const songIndex = props.groups[groupIndex].songs.findIndex(
+          (s) => getSongIdWithNew(s, props.groups[groupIndex]) === songId,
+        );
 
         const rowsToScroll = groupedRows
           .slice(0, groupIndex)
@@ -115,8 +112,8 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         }
         virtuoso.current?.scrollToGroup(groupIndex, 'smooth');
       },
-      scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
-        const songRowIndex = getSongRow(group, index);
+      scrollToSongInGroup: async (songId, behavior = 'smooth') => {
+        const songRowIndex = getSongRow(songId);
         if (songRowIndex !== undefined) {
           virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'auto' : behavior);
         }
@@ -127,7 +124,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   return (
     <>
       <CustomVirtualization
-        forceRenderItem={getSongRow(props.focusedGroup, props.focusedSong) ?? -1}
+        forceRenderItem={getSongRow(props.focusedSong) ?? -1}
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
         groupHeaderHeight={props.groupHeight}

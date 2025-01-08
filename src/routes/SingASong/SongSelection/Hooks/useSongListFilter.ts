@@ -18,6 +18,7 @@ export interface AppliedFilters {
   yearAfter?: number;
   language?: string;
   excludeLanguages?: string[];
+  skipExcludedLanguages?: boolean;
   search?: string;
   edition?: string;
   recentlyUpdated?: boolean | null;
@@ -62,7 +63,8 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     });
   },
   excludeLanguages: (songList, languages: string[] = [], appliedFilters = {}) => {
-    if (languages.length === 0 || isSearchApplied(appliedFilters) || appliedFilters.edition === 'esc') return songList;
+    if (languages.length === 0 || isSearchApplied(appliedFilters) || appliedFilters.skipExcludedLanguages)
+      return songList;
 
     return songList.filter((song) => {
       return !song.language.every((songLang) => languages.includes(songLang!));
@@ -105,6 +107,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     const additionalSongs = list.filter((song) => additionalSongIds.includes(song.id));
     return [...songList, ...additionalSongs.filter((song) => !songList.includes(song))];
   },
+  skipExcludedLanguages: (songList) => songList,
 };
 
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {

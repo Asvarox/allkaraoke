@@ -129,12 +129,6 @@ export class SongListPagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public async expectSongToBeVisibleAsNew(songID: string) {
-    await this.ensureSongIsScrolledTo(`${songID}-new-group`);
-    const song = await this.getSongElement(`${songID}-new-group`, false);
-    await expect(song).toBeVisible();
-  }
-
   public async goBackToMainMenu() {
     await this.page.waitForTimeout(500);
     await this.page.keyboard.press('Backspace');
