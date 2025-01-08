@@ -58,16 +58,4 @@ describe('useSongListFilter', () => {
     expect(result.current.filteredList).not.toContainEqual(list[1]);
     expect(result.current.filteredList).toContainEqual(list[0]);
   });
-
-  it('should not include additional song if the search doesnt cover it', () => {
-    const { result } = renderHook(() => useSongListFilter(list, [], false, list[0].id));
-
-    act(() => {
-      result.current.setFilters({ search: 'queen dont' });
-    });
-
-    expect(result.current.filteredList).toContainEqual(list[2]);
-    expect(result.current.filteredList).not.toContainEqual(list[1]);
-    expect(result.current.filteredList).not.toContainEqual(list[0]);
-  });
 });

@@ -156,10 +156,11 @@ export const useSongListFilter = (
         ...(playlist?.filters ?? {}),
         ...deferredFilters,
         excludeLanguages: excludedLanguages ?? [],
-        additionalSongs: !isSearchApplied && additionalSong ? [additionalSong] : [],
+        additionalSongs: additionalSong ? [additionalSong] : [],
       }),
     [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
   );
+  // console.log(filteredList);
 
   return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };
 };

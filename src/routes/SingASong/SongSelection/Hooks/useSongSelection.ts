@@ -19,10 +19,11 @@ export default function useSongSelection(additionalSong: string | null, songsPer
   } = useSongList(additionalSong);
   const [keyboardControl, setKeyboardControl] = useState(true);
 
-  const handleKeyboardControl = (value: boolean) => {
+  const handleKeyboardControl = (value: boolean, additionalUpdates?: () => void) => {
     startViewTransition(() => {
       flushSync(() => {
         setKeyboardControl(value);
+        additionalUpdates?.();
       });
     });
     woosh.play(false);
@@ -54,7 +55,9 @@ export default function useSongSelection(additionalSong: string | null, songsPer
   }, [moveToSong, preselected, focusedSong, songList, additionalSong, isLoading]);
 
   useEffect(() => {
-    setPreselected(false);
+    if (additionalSong !== null) {
+      setPreselected(false);
+    }
   }, [additionalSong]);
 
   useEffect(() => {

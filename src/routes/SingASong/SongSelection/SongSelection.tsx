@@ -118,10 +118,13 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const forceFlag = selectedPlaylist === 'Eurovision';
 
   const container = useRef<HTMLDivElement>(null);
+  const getSongIndex = useCallback(
+    (songId: string | null) => songList.findIndex((song) => song.id === songId),
+    [songList],
+  );
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
-    const getSongIndex = (songId: string) => songList.findIndex((song) => song.id === songId);
     global.__songList = {
       scrollToSong: (songId: string) => {
         // If the song is in a new group, we need to remove the '-new-group' suffix
@@ -143,12 +146,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     return () => {
       delete global.__songList;
     };
-  }, [groupedSongList, songList]);
+  }, [groupedSongList, getSongIndex]);
 
-  const [{ previewTop, previewLeft }, setPositions] = useState({
+  const [{ previewTop, previewLeft }, setPositions] = useState(() => ({
     previewTop: 0,
     previewLeft: 0,
-  });
+  }));
   useEffect(() => {
     const song = document.querySelector<HTMLDivElement>(
       `[data-song-index="${focusedSong}"][data-group="${focusedGroup}"]`,
@@ -177,10 +180,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useEventEffect(
     events.remoteSongSelected,
     async (songId) => {
-      const songIndex = songList.findIndex((song) => song.id === songId);
+      const songIndex = getSongIndex(songId);
       if (songIndex === -1) {
-        setAdditionalSong(songId);
-        return expandSong();
+        return setKeyboardControl(false, () => {
+          setAdditionalSong(songId);
+        });
       }
       if (focusedSong !== songIndex) {
         moveToSong(songIndex);
@@ -192,8 +196,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         expandSong();
       }
     },
-    [],
+    [getSongIndex, focusedSong, keyboardControl, expandSong, moveToSong],
   );
+
+  const additionalSongIndex = useMemo(() => getSongIndex(additionalSong), [additionalSong, getSongIndex]);
+
+  if (keyboardControl && additionalSong && additionalSongIndex !== focusedSong && !isLoading) {
+    setAdditionalSong(null);
+  }
 
   return (
     <LayoutGame>
