@@ -133,7 +133,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         );
 
         if (songGroup) {
-          list.current?.scrollToSongInGroup(songId, 'auto');
+          list.current?.scrollToSongInGroup(songId, 'instant');
           return true;
         }
         return false;
@@ -176,7 +176,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     events.remoteSongSelected,
     async (songId) => {
       const isSongOnTheList = songList.some((song) => song.id === songId);
-      if (isSongOnTheList) {
+      if (!isSongOnTheList) {
         return setKeyboardControl(false, () => {
           setAdditionalSong(songId);
         });

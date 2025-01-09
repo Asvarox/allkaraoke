@@ -115,7 +115,8 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
       scrollToSongInGroup: async (songId, behavior = 'smooth') => {
         const songRowIndex = getSongRow(songId);
         if (songRowIndex !== undefined) {
-          virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'auto' : behavior);
+          console.log(songRowIndex, isE2E(), isE2E() ? 'instant' : behavior);
+          virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'instant' : behavior);
         }
       },
     };
