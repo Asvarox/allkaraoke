@@ -2,10 +2,10 @@ import { Menu } from 'modules/Elements/AKUI/Menu';
 import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
 import Modal from 'modules/Elements/Modal';
 import styles from 'modules/GameEngine/Drawing/styles';
-import gameEvents from 'modules/GameEvents/GameEvents';
+import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 interface Props {
   id: string;
@@ -22,6 +22,15 @@ const colorNames: Record<backgroundTheme, string[]> = {
 };
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
+  useEffect(() => {
+    RemoteMicClient.subscribe('remote-mics');
+
+    return () => {
+      RemoteMicClient.unsubscribe('remote-mics');
+    };
+  }, []);
+
+  const [list] = useEventListener(events.remoteMicListUpdated) ?? [[]];
   const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
   const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
     RemoteMicClient.requestPlayerChange(id, player);
@@ -34,38 +43,31 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
     <Modal onClose={onModalClose}>
       <Menu>
         {header && <h2>{header}</h2>}
-        <Menu.Button
-          size="small"
-          data-test="change-to-player-0"
-          onClick={() => selectPlayer(0)}
-          disabled={0 === playerNumber}
-          style={{ color: styles.colors.players[0].perfect.fill }}>
-          {colorNames[style][0]}
-        </Menu.Button>
-        <Menu.Button
-          size="small"
-          data-test="change-to-player-1"
-          onClick={() => selectPlayer(1)}
-          disabled={1 === playerNumber}
-          style={{ color: styles.colors.players[1].perfect.fill }}>
-          {colorNames[style][1]}
-        </Menu.Button>
-        <Menu.Button
-          size="small"
-          data-test="change-to-player-2"
-          onClick={() => selectPlayer(2)}
-          disabled={2 === playerNumber}
-          style={{ color: styles.colors.players[2].perfect.fill }}>
-          {colorNames[style][2]}
-        </Menu.Button>
-        <Menu.Button
-          size="small"
-          data-test="change-to-player-3"
-          onClick={() => selectPlayer(3)}
-          disabled={3 === playerNumber}
-          style={{ color: styles.colors.players[3].perfect.fill }}>
-          {colorNames[style][3]}
-        </Menu.Button>
+        {([0, 1, 2, 3] as const).map((number) => {
+          const occupant = list.find((mic) => mic.number === number);
+          const isOwn = number === playerNumber;
+
+          return (
+            <Menu.Button
+              key={number}
+              size="small"
+              data-test={`change-to-player-${number}`}
+              onClick={() => selectPlayer(number)}
+              disabled={isOwn}
+              className="gap-2"
+              style={{ color: styles.colors.players[number].perfect.fill }}>
+              {colorNames[style][number]}
+              {isOwn || occupant ? (
+                <span className="text-gray-300 text-sm" data-test="mic-occupant">
+                  {' '}
+                  ({isOwn ? 'You' : occupant?.name})
+                </span>
+              ) : (
+                ''
+              )}
+            </Menu.Button>
+          );
+        })}
         <Menu.Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
           Unassign
         </Menu.Button>
