@@ -4,12 +4,9 @@ import {
   ComponentType,
   CSSProperties,
   ForwardedRef,
-  forwardRef,
   Fragment,
   PropsWithChildren,
-  ReactElement,
   ReactNode,
-  Ref,
   useCallback,
   useImperativeHandle,
   useMemo,
@@ -42,9 +39,10 @@ interface Props<T> {
   itemHeight: number;
   groupHeight: number;
   focusedSong: string;
+  ref?: ForwardedRef<VirtualizedListMethods>;
 }
 
-function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedListMethods>) {
+export function VirtualizedList<T>(props: Props<T>) {
   const virtuoso = useRef<CustomVirtualizedListMethods>(null);
 
   const groupedRows = useMemo(() => {
@@ -84,7 +82,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
     [getGroupIndex, groupedRows, props.groups, props.perRow],
   );
 
-  useImperativeHandle(ref, (): VirtualizedListMethods => {
+  useImperativeHandle(props.ref, () => {
     return {
       getSongPosition: (songId) => {
         const groupIndex = getGroupIndex(songId);
@@ -115,7 +113,6 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
       scrollToSongInGroup: async (songId, behavior = 'smooth') => {
         const songRowIndex = getSongRow(songId);
         if (songRowIndex !== undefined) {
-          console.log(songRowIndex, isE2E(), isE2E() ? 'instant' : behavior);
           virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'instant' : behavior);
         }
       },
@@ -129,7 +126,6 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
         groupHeaderHeight={props.groupHeight}
-        key={props.itemHeight}
         components={props.components}
         context={props.context}
         groupContent={(index, groupProps) => (
@@ -153,8 +149,3 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
     </>
   );
 }
-
-// https://stackoverflow.com/a/58473012
-export const VirtualizedList = forwardRef(VirtualizedListInner) as <T>(
-  p: Props<T> & { ref?: Ref<VirtualizedListMethods> },
-) => ReactElement;

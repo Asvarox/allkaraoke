@@ -96,8 +96,6 @@ const sendPlayerStates = () => {
     number: PlayersManager.getPlayers().find((player) => player.input.deviceId === mic.id)?.number ?? null,
   }));
 
-  console.log(remoteMics);
-
   RemoteMicManager.broadcastToChannel('remote-mics', { t: 'remote-mics-list', list: remoteMics });
 };
 

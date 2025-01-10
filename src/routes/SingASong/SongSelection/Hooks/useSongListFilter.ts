@@ -163,7 +163,6 @@ export const useSongListFilter = (
       }),
     [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
   );
-  // console.log(filteredList);
 
   return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };
 };

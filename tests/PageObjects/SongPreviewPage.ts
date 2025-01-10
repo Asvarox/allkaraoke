@@ -22,12 +22,7 @@ export class SongPreviewPagePO {
   }
 
   public async playTheSong(skipIntro = true) {
-    await expect(this.page.getByTestId('play-song-button')).toBeVisible();
-    // there can be some weird issues on Firefox where the button is obscured by <html /> element
-    // https://github.com/microsoft/playwright/issues/12298
-    await this.page.waitForTimeout(100);
-    await this.page.getByTestId('play-song-button').click({ force: true });
-
+    await this.page.getByTestId('play-song-button').click();
     await this.page.getByTestId('make-song-go-fast').click();
     if (skipIntro) {
       const locator = this.page.locator('[data-test="skip-intro-info"]');

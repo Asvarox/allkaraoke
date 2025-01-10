@@ -74,10 +74,6 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: {
-          width: 1280,
-          height: 1080,
-        },
         permissions: ['microphone'],
       },
     },
@@ -86,10 +82,6 @@ const config: PlaywrightTestConfig = {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        viewport: {
-          width: 1280,
-          height: 1080,
-        },
 
         // https://webrtc.org/getting-started/testing
         launchOptions: {
