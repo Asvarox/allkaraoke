@@ -63,7 +63,7 @@ function Settings() {
         label="FPS Count"
         value={fpsCount}
       />
-      { }
+      {}
       <div className="flex flex-col">
         <Menu.Button {...register('calibration-settings', () => navigate('settings/calibration/'))} size="small">
           Calibrate input lag
