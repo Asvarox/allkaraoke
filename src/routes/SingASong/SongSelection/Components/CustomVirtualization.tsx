@@ -44,6 +44,7 @@ interface Props<T> {
   ) => ReactNode;
   groupContent: (index: number, props?: { style: CSSProperties }) => ReactNode;
   components: Components<T>;
+  Footer?: ReactNode;
   context: T;
   groupSizes: number[];
   ref?: ForwardedRef<CustomVirtualizedListMethods>;
@@ -169,7 +170,8 @@ export function CustomVirtualization<T>(props: Props<T>) {
       }
     },
   }));
-  const { Header, Footer, EmptyPlaceholder } = props.components ?? {};
+  const { Header, EmptyPlaceholder } = props.components ?? {};
+  const Footer = props.Footer;
 
   const forcedItemIndex = itemsPositions.findIndex(
     (item) => item.type === 'item' && item.index === props.forceRenderItem,
@@ -223,7 +225,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
         </div>
       </Wrapper>
       {isEmptyList && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
-      {Footer && <Footer context={props.context} />}
+      {Footer && Footer}
     </Viewport>
   );
 }

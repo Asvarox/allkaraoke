@@ -105,6 +105,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     [songPreview, groupedSongList],
   );
 
+  const selectedPlaylistData = useMemo(
+    () => playlists.find((playlist) => playlist.name === selectedPlaylist),
+    [playlists, selectedPlaylist],
+  );
+
   const list = useRef<VirtualizedListMethods | null>(null);
   const baseUnit = useBaseUnitPx();
   const { width, handleResize } = useViewportSize();
@@ -304,6 +309,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     height: Math.floor(songEntryHeight),
                   },
                 }}
+                Footer={
+                  selectedPlaylistData?.footerComponent ?? (
+                    <AddSongs>
+                      Missing a song? Try{' '}
+                      <Link to="convert/">
+                        <a>adding one</a>
+                      </Link>{' '}
+                      yourself!
+                    </AddSongs>
+                  )
+                }
               />
             </SongListContainer>
           </>

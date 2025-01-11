@@ -1,4 +1,5 @@
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
+import posthog from 'posthog-js';
 import { useCallback } from 'react';
 import createPersistedState from 'use-persisted-state';
 
@@ -15,6 +16,7 @@ export const useMySongList = () => {
           deleted: [songId],
         });
       } else {
+        posthog.capture('remote-song-list-add', { songId });
         setSavedSongList((current) => [...current, songId]);
         RemoteMicClient.sendMySongList({
           added: [songId],

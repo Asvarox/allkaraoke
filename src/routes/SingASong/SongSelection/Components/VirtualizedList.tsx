@@ -39,6 +39,7 @@ interface Props<T> {
   itemHeight: number;
   groupHeight: number;
   focusedSong: string;
+  Footer: ReactNode;
   ref?: ForwardedRef<VirtualizedListMethods>;
 }
 
@@ -122,6 +123,7 @@ export function VirtualizedList<T>(props: Props<T>) {
   return (
     <>
       <CustomVirtualization
+        Footer={props.Footer}
         forceRenderItem={getSongRow(props.focusedSong) ?? -1}
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
