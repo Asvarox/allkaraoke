@@ -34,7 +34,7 @@ const polishLang = 'Polish';
 const englishLang = 'English';
 const frenchLang = 'French';
 
-test.skip('Filters - PlayLists', async ({ page }) => {
+test('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -123,7 +123,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
   });
 });
 
-test('Filters - PlayLists (Christmas)', async ({ page }) => {
+test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 

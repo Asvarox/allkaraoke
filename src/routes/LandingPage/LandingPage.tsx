@@ -5,8 +5,6 @@ import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -22,9 +20,8 @@ export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigit
 
 function LandingPage() {
   const navigate = useSmoothNavigate();
-  const isChristmasEnabled = useFeatureFlag(FeatureFlags.Christmas);
 
-  useBackground(true, isChristmasEnabled ? 'christmas' : undefined);
+  useBackground(true);
 
   const nextPage = 'menu/';
 

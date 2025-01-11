@@ -4,8 +4,6 @@ import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/Button';
 import { sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
@@ -56,7 +54,6 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
 
   const revealHighScore = segment > 3;
 
-  const isCameraModeEnabled = useFeatureFlag(FeatureFlags.CameraMode);
   const initialCameraPermission = useMemo(() => CameraManager.getPermissionStatus(), []);
   // needs to be here to force rerender of Results so Next button is selected after enabling camera
   const [isRequestInProgress, setIsRequestInProgress] = useState(false);
@@ -84,19 +81,13 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
             />
           ))}
         </ScoresContainer>
-        {isCameraModeEnabled ? (
-          <div className={`duration-300 ${initialCameraPermission && revealHighScore ? 'w-[43%]' : 'w-[28%]'}`}>
-            {initialCameraPermission ? (
-              <CameraRoll />
-            ) : (
-              <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
-            )}
-          </div>
-        ) : initialCameraPermission ? (
-          <div className="w-[30%]">
+        <div className={`duration-300 ${initialCameraPermission && revealHighScore ? 'w-[43%]' : 'w-[28%]'}`}>
+          {initialCameraPermission ? (
             <CameraRoll />
-          </div>
-        ) : null}
+          ) : (
+            <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
+          )}
+        </div>
       </div>
       <SongSelectionButton
         {...register('next-button', () => nextStep(), undefined, true)}
