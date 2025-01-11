@@ -43,9 +43,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
+  await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectSmartphones();
 
-  // Connect microphones
   const remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
   const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
 
@@ -111,7 +111,6 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Expect confirmation status from players', async () => {

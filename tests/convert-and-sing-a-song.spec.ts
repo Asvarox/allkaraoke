@@ -28,7 +28,6 @@ test('Convert and sing a song', async ({ page }) => {
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
 
   await test.step('Go to convert new song', async () => {
     await pages.mainMenuPage.goToManageSongs();
@@ -67,7 +66,7 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Select advanced setup', async () => {
-    await pages.mainMenuPage.goToSetupMicrophones();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 

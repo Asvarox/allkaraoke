@@ -19,6 +19,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { twc } from 'react-twc';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import LanguageFilter from 'routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
+import { useMySongList } from 'routes/RemoteMic/Panels/RemoteSongList/useMySongList';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
@@ -34,7 +35,6 @@ interface Props {
   monitoringStarted: boolean;
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
-export const useSavedSongs = createPersistedState<string[]>('remote-mic-saved-songs');
 export const useExcludedLanguages = createPersistedState<string[]>('remote-mic-excluded-languages');
 export const useSelectedList = createPersistedState<'list' | 'queue'>('remote-mic-selected-song-list');
 export const useSearchState = createPersistedState<string>('remote-mic-song-list-search');
@@ -86,7 +86,7 @@ function RemoteSongList({
   const [search, setSearch] = useSearchState('');
   const [excludedLanguages, setExcludedLanguages] = useExcludedLanguages([]);
 
-  const [addedSongs, setAddedSongs] = useSavedSongs([]);
+  const { savedSongList, toggleSong } = useMySongList();
   const [tab, setTab] = useSelectedList('list');
 
   const unit = useBaseUnitPx();
@@ -104,10 +104,10 @@ function RemoteSongList({
         return songList.filter((song) => !song.language.every((songLang) => excludedLanguages.includes(songLang!)));
       }
     } else {
-      const addedSongList = addedSongs.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
+      const addedSongList = savedSongList.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
       return searchList(addedSongList, search);
     }
-  }, [search, songList, tab, addedSongs, excludedLanguages]);
+  }, [search, songList, tab, savedSongList, excludedLanguages]);
 
   const selectedLanguages = languages.length - excludedLanguages.length;
 
@@ -127,7 +127,7 @@ function RemoteSongList({
             All songs
           </Tab>
           <Tab data-test="your-list-button" data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
-            Your list ({addedSongs.length})
+            Your list ({savedSongList.length})
           </Tab>
           <LanguageFilter
             excludedLanguages={excludedLanguages}
@@ -157,7 +157,7 @@ function RemoteSongList({
         itemContent={(index, groupIndex, itemProps) => {
           const song = finalSongList[index];
 
-          const isOnList = addedSongs.includes(song.id);
+          const isOnList = savedSongList.includes(song.id);
 
           return (
             <SongItemContainer
@@ -187,7 +187,7 @@ function RemoteSongList({
                     data-test="remove-song-button"
                     onClick={(e) => {
                       e.stopPropagation();
-                      setAddedSongs((current) => current.filter((id) => id !== song.id));
+                      toggleSong(song.id);
                     }}>
                     -
                   </ActiveButton>
@@ -196,7 +196,7 @@ function RemoteSongList({
                     data-test="add-song-button"
                     onClick={(e) => {
                       e.stopPropagation();
-                      setAddedSongs((current) => [...current, song.id]);
+                      toggleSong(song.id);
                     }}>
                     +
                   </AddButton>

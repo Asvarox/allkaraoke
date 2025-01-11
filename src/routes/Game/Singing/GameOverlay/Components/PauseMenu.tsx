@@ -12,7 +12,7 @@ import InputLag from 'routes/Settings/InputLag';
 
 interface Props {
   onResume: () => void;
-  onExit: () => void;
+  onExit?: () => void;
   onRestart: () => void;
 }
 
@@ -37,7 +37,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     if (!songPreview?.local && progress < 0.7) {
       setRateSongOpen(true);
     } else {
-      onExit();
+      onExit?.();
     }
   };
 

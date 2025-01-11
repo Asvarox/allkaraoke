@@ -4,7 +4,6 @@ import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackg
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { isChristmasSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
@@ -97,14 +96,9 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
+  // useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
 
   const expanded = keyboardControl;
-
-  // need to use layout effect otherwise newly selected song name is displayed briefly before the element is removed
-  useLayoutEffect(() => {
-    setShowVideo(false);
-  }, [songPreview.video]);
 
   const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
   const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
@@ -114,12 +108,19 @@ export default function SongPreviewComponent({
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 
+  // need to use layout effect otherwise newly selected song name is displayed briefly before the element is removed
+  useLayoutEffect(() => {
+    // keep showing the video when the song quickly changes back to the same song
+    setShowVideo(songPreview.video === videoId && player.current?.getStatus() === VideoState.PLAYING);
+  }, [songPreview.video, videoId]);
+
   useEffect(() => {
     player.current?.loadVideoById({
       videoId: videoId,
       startSeconds: previewStart,
       endSeconds: previewEnd,
     });
+    player.current?.playVideo();
   }, [videoId, player, previewStart, previewEnd]);
 
   const videoWidth = expanded ? windowWidth : width;
@@ -129,7 +130,7 @@ export default function SongPreviewComponent({
 
   useEffect(() => {
     player.current?.setSize(videoWidth, videoHeight);
-  }, [videoWidth, videoHeight, keyboardControl]);
+  }, [videoWidth, videoHeight, keyboardControl, videoId]);
 
   const onVideoStateChange = useCallback(
     (state: VideoState) => {
@@ -223,13 +224,13 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
 
   @keyframes rhythmPulse {
     0% {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
     15% {
-      transform: scale(1.25);
+      transform: scale(1.2);
     }
     100% {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
   }
   view-transition-name: song-preview;

@@ -20,24 +20,18 @@ const P2_Name = 'E2E Test Red';
 const P3_Name = 'E2E Test Green';
 const P4_Name = 'E2E Test Yellow';
 
-test('Remote mic should connect, be selectable and control the game', async ({
-  browser,
-  page,
-  context,
-  browserName,
-}) => {
+test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
+  await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMicBluePage = await openAndConnectRemoteMicWithCode(page, browser, P1_Name);
   const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, P2_Name);
   const remoteMicGreen = await openAndConnectRemoteMicDirectly(page, browser, P3_Name);
   const remoteMicYellow = await openAndConnectRemoteMicDirectly(page, browser, P4_Name);
-
-  await page.pause();
 
   // Assert auto selection of inputs
   await pages.smartphonesConnectionPage.expectPlayerNameToBe(0, P1_Name);

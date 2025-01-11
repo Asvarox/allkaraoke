@@ -14,6 +14,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
   await test.step('Select Advanced setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
@@ -56,6 +57,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('Select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 
@@ -76,7 +78,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
   });
@@ -100,7 +103,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 
@@ -123,7 +127,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 
@@ -146,7 +151,8 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await page.waitForTimeout(1000);
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await page.waitForTimeout(500);
     await pages.gamePage.exitSong();
   });
 

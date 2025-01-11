@@ -19,11 +19,12 @@ import Game from 'routes/Game/Game';
 import LandingPage from 'routes/LandingPage/LandingPage';
 import ManageSongs from 'routes/ManageSongs/ManageSongs';
 import QuickSetup from 'routes/QuickSetup/QuickSetup';
+import routePaths from 'routes/routePaths';
+import { CalibrationSettings } from 'routes/Settings/Calibration';
 import RemoteMicSettings from 'routes/Settings/RemoteMicSettings';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import SocialMediaElements from 'routes/SocialMediaElements/SocialMediaElements';
 import Welcome from 'routes/Welcome/Welcome';
-import routePaths from 'routes/routePaths';
 
 const LazySongList = lazy(() =>
   import('routes/ManageSongs/SongManagement').then((modules) => ({ default: modules.SongList })),
@@ -66,6 +67,7 @@ function App() {
                 <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
                 <Route path={routePaths.SETTINGS} component={Settings} />
                 <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
+                <Route path={routePaths.SETTINGS_CALIBRATION} component={CalibrationSettings} />
                 <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
                 <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
                 <Route path="social-media-elements" component={SocialMediaElements} />

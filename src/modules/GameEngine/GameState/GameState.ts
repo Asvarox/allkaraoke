@@ -95,6 +95,7 @@ export class GameStateClass {
   };
 
   public getSongCompletionProgress = () => {
+    console.log('getSongCompletionProgress', this.getCurrentBeat(), getSongBeatCount(this.getSong()!), this.getSong());
     return Math.max(0, Math.min(1, this.getCurrentBeat() / getSongBeatCount(this.getSong()!)));
   };
 

@@ -1,0 +1,300 @@
+#ARTIST:Hiroyuki Sawano/Mika Kobayashi
+#TITLE:Bauklötze
+#CREATOR:smartcore
+#BPM:360
+#YEAR:2013
+#PREVIEWSTART:53
+#VIDEO:v=h_YM96zS3-8
+#GENRE:Soundtrack
+#LANGUAGE:German
+#GAP:21470
+#ALLKARAOKE_ID:hiroyuki-sawanomika-kobayashi-bauklotze
+#ALLKARAOKE_LASTUPDATE:2024-12-29T00:12:53.069Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=27614
+#ALLKARAOKE_PREVIEWEND:80
+#ALLKARAOKE_VOLUME:0,9
+#P1:Bauklötze
+#MP3:Hiroyuki Sawano/Mika Kobayashi - Bauklötze.mp3
+#COVER:Hiroyuki Sawano/Mika Kobayashi - Bauklötze [CO].jpg
+#BACKGROUND:Hiroyuki Sawano/Mika Kobayashi - Bauklötze [BG].jpg
+: 24 4 11 Es 
+: 32 3 16 ist 
+: 36 4 14 wie 
+: 44 4 13 das 
+: 52 4 13 Spiel 
+: 60 3 11 mit 
+: 64 7 13 Bau
+: 72 3 11 klöt
+: 76 24 13 zen
+- 100
+: 124 3 11 Ich 
+: 128 3 13 ma
+: 132 7 14 u
+: 140 4 13 ’re 
+: 148 28 11 mit
+- 176
+: 188 3 11 Stei
+: 192 3 11 nen 
+: 196 7 11 vor
+: 204 27 13 sich
+: 232 20 6 tig
+- 252 256
+- 256
+: 280 4 11 Es 
+: 288 3 16 ist 
+: 292 4 14 wie 
+: 300 4 13 das 
+: 308 4 13 Spiel 
+: 316 3 11 mit 
+: 320 7 13 Bau
+: 328 7 11 klöt
+: 336 20 13 zen
+- 356 360
+- 360
+: 384 4 11 Ich 
+: 392 23 19 se
+: 416 4 14 he 
+: 424 7 14 mei
+: 432 8 13 nen 
+: 444 11 11 lee
+: 456 12 18 ren 
+: 472 7 14 Bau
+: 480 7 16 kas
+: 488 12 13 ten 
+: 504 8 10 an
+- 512
+: 528 12 18 Du 
+: 544 12 19 brichst 
+: 560 23 18 mei
+: 584 4 11 ne 
+: 592 15 13 Mau
+: 608 12 14 er 
+: 624 23 19 arg
+: 648 20 18 los
+- 668
+: 688 4 11 Mit 
+: 696 7 13 schmut
+: 704 4 14 z’gen 
+: 712 7 6 Hän
+: 720 24 7 den
+- 744 760
+- 760
+: 784 4 18 An 
+: 792 39 25 je
+: 832 4 26 nem 
+: 840 28 25 Tag 
+: 872 12 28 war 
+: 888 4 28 es 
+: 896 4 26 ein 
+: 904 28 25 sehr 
+: 936 23 21 feur
+: 960 4 18 ’ges
+- 964
+: 976 15 26 A
+: 992 7 23 bend
+: 1000 15 26 ro
+: 1016 12 25 ~t
+- 1028
+: 1040 4 26 Ich 
+: 1048 7 25 ver
+: 1056 7 23 steck
+: 1064 12 25 te 
+: 1080 12 26 die 
+: 1096 7 18 Bau
+: 1104 7 26 klöt
+: 1112 4 28 ze 
+: 1120 4 25 vor 
+: 1128 12 23 dir
+- 1140
+: 1160 7 18 Trau
+: 1168 7 16 ri
+: 1176 4 18 ge 
+: 1184 7 23 Er
+: 1192 15 26 in
+: 1208 15 25 ner
+: 1224 4 23 ung 
+: 1232 12 25 an 
+: 1248 7 26 mei
+: 1256 12 25 ne
+- 1268
+: 1280 7 21 Kind
+: 1288 80 25 heit
+- 1368 1744
+- 1744
+* 1768 4 16 Ist 
+* 1776 8 18 das 
+* 1788 8 25 der 
+* 1800 7 26 Zer
+* 1808 23 25 stö
+* 1832 52 21 rer
+- 1884
+* 1896 7 16 O
+* 1904 8 18 der 
+* 1916 11 25 de
+* 1928 4 26 ~r 
+* 1936 23 25 Schöp
+* 1960 52 23 fer?
+- 2012
+: 2024 4 23 Mit 
+: 2032 8 23 der 
+: 2044 8 21 Glut 
+: 2056 4 16 des 
+: 2064 23 21 Has
+: 2088 7 16 se
+: 2096 44 18 ~s
+- 2140
+: 2152 7 18 Schwen
+: 2160 8 18 ken 
+: 2172 8 21 wir 
+: 2184 4 18 die 
+: 2192 23 21 Schwer
+: 2216 52 23 ter
+- 2268
+: 2280 4 25 Ist 
+: 2288 8 25 das 
+: 2300 11 21 un
+: 2312 4 18 ser 
+: 2320 23 25 Schick
+: 2344 52 21 sal
+- 2396
+: 2408 7 16 O
+: 2416 8 18 der 
+: 2428 11 25 un
+: 2440 4 26 ser 
+: 2448 23 28 Wil
+: 2472 52 26 le?
+- 2524
+: 2536 4 18 Wir 
+: 2544 11 16 wer
+: 2556 11 21 de
+: 2568 4 16 ~n 
+: 2576 23 16 käm
+: 2600 48 18 pfen 
+: 2656 8 11 bis 
+: 2672 15 18 die
+: 2688 4 14 ser
+- 2692
+: 2704 23 13 Hei
+: 2728 4 11 ße 
+: 2736 24 14 Wind 
+: 2768 11 16 un
+: 2780 11 21 se
+: 2792 4 18 re 
+: 2800 11 21 Flü
+: 2812 8 23 gel 
+: 2824 16 23 nimmt
+- 2840 3328
+- 3328
+: 3352 4 11 Es 
+: 3360 3 16 ist 
+: 3364 4 14 wie 
+: 3372 4 13 das 
+: 3380 4 13 Spiel 
+: 3388 3 11 mit 
+: 3392 7 13 Bau
+: 3400 7 11 klöt
+: 3408 20 13 zen
+- 3428
+: 3452 3 11 Ich 
+: 3456 3 13 ma
+: 3460 7 14 u
+: 3468 4 13 ’re 
+: 3476 28 11 mit
+- 3504
+: 3516 3 11 Stei
+: 3520 3 11 nen 
+: 3524 7 11 vor
+: 3532 27 13 sich
+: 3560 24 6 tig
+- 3584
+: 3608 4 11 Es 
+: 3616 3 16 ist 
+: 3620 4 14 wie 
+: 3628 4 13 das 
+: 3636 4 13 Spiel 
+: 3644 3 11 mit 
+: 3648 7 13 Bau
+: 3656 7 11 klöt
+: 3664 24 13 zen
+- 3688
+: 3712 4 11 Ich 
+: 3720 23 19 se
+: 3744 4 14 he 
+: 3752 7 14 mei
+: 3760 8 13 nen 
+: 3772 11 11 lee
+: 3784 12 18 ren 
+: 3800 7 14 Bau
+: 3808 7 16 kas
+: 3816 12 13 ten 
+: 3832 12 10 an
+- 3844
+: 3856 12 18 Du 
+: 3872 12 19 brichst 
+: 3888 23 18 mei
+: 3912 4 11 ne 
+: 3920 15 13 Mau
+: 3936 12 14 er 
+: 3952 23 19 arg
+: 3976 16 18 los
+- 3992
+: 4016 4 11 Mit 
+: 4024 7 13 schmut
+: 4032 4 14 z’gen 
+: 4040 7 6 Hän
+: 4048 24 7 den
+- 4072 4088
+- 4088
+: 4112 4 18 Ich 
+: 4120 36 25 tu’ 
+: 4160 4 26 nichts 
+: 4168 24 25 in 
+: 4200 12 28 den 
+: 4216 7 28 Bau
+: 4224 7 26 kas
+: 4232 12 25 ten
+- 4244
+: 4264 20 21 Ich 
+: 4288 8 18 will 
+: 4304 12 26 nicht 
+: 4320 7 23 ver
+: 4328 15 26 lie
+: 4344 8 25 ren
+- 4352
+: 4368 4 26 Ich 
+: 4376 7 25 ver
+: 4384 7 23 steck
+: 4392 12 25 te 
+: 4408 12 26 die 
+: 4424 7 18 Bau
+: 4432 7 26 klöt
+: 4440 4 28 ze 
+: 4448 4 25 vor 
+: 4456 16 23 dir
+- 4472
+: 4488 4 18 Ich 
+: 4496 7 16 mau
+: 4504 7 18 e
+: 4512 4 23 re 
+: 4520 15 26 wie
+: 4536 4 25 der
+- 4540
+: 4552 4 23 Mit 
+: 4560 15 25 Stei
+: 4576 4 26 nen 
+: 4584 20 25 vor
+: 4608 7 21 sich
+: 4616 88 25 tig-
+- 4704 4816
+- 4816
+: 4840 7 26 Ah
+: 4848 11 25 ~
+: 4860 11 21 ~
+: 4872 7 18 oohh
+: 4880 23 16 ~
+: 4904 63 18 ~
+: 4968 31 21 ~ohh
+: 5000 72 16 ~
+E

@@ -30,7 +30,6 @@ test('Edit song', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Edit Song Page and pick up the song to edit', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
     await pages.editSongsPage.editSong(editedSong.songID);

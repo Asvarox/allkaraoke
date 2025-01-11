@@ -3,6 +3,7 @@ import usePlayerVolume from 'modules/hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from 'modules/hooks/useUnstuckYouTubePlayer';
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
+import { ValuesType } from 'utility-types';
 
 export enum VideoState {
   UNSTARTED = 'UNSTARTED',
@@ -29,7 +30,7 @@ interface Props {
   disablekb?: boolean;
   volume?: number;
   startAt?: number;
-  onStateChange: (state: VideoState) => void;
+  onStateChange?: (state: VideoState) => void;
   width: number;
   height: number;
 }
@@ -41,10 +42,11 @@ export interface LoadVideByIdOpts {
 }
 
 export interface VideoPlayerRef {
+  getStatus: () => ValuesType<typeof stateMap>;
   seekTo: (time: seconds) => void;
   setPlaybackSpeed: (speed: number) => void;
   setVolume: (newVolume: number) => void;
-  getCurrentTime: () => Promise<number>;
+  getCurrentTime: () => Promise<seconds>;
   loadVideoById: (opts: LoadVideByIdOpts) => void;
   setSize: (w: number, h: number) => void;
   playVideo: () => void;
@@ -70,6 +72,7 @@ export default forwardRef(function YoutubeVideoPlayer(
   }, [player, width, height, video, playerKey]);
 
   useImperativeHandle(ref, () => ({
+    getStatus: () => stateMap[currentStatus],
     setSize: (w, h) => player.current?.getInternalPlayer()!.setSize(w, h),
     seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
     setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(speed),

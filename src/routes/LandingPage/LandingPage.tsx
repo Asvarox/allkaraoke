@@ -1,17 +1,14 @@
 import { ButtonLink } from 'modules/Elements/AKUI/Button';
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import isE2E from 'modules/utils/isE2E';
-import { useFeatureFlagVariantKey } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc } from 'react-twc';
-import { MicSetupPreferenceSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import GithubRibbon from 'routes/Welcome/GithubRibbon';
 import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
@@ -22,14 +19,11 @@ import songStats from './songStats.json';
 export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
 
 function LandingPage() {
-  const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
-  const skipInitialSetup = useFeatureFlagVariantKey(FeatureFlags.SkipInitialSetup);
   const navigate = useSmoothNavigate();
 
   useBackground(true);
 
-  const nextPage =
-    skipInitialSetup === 'test' && !isE2E() ? 'menu/' : setupPreference === null ? 'quick-setup/' : 'menu/';
+  const nextPage = 'menu/';
 
   useHotkeys(
     'enter',
@@ -63,7 +57,7 @@ function LandingPage() {
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <div className="flex gap-24 p-24 items-center box-border bg-black/75 landscap:flex-1 [&_hr]:my-12 mobile:flex-col">
+        <Box className="gap-24 p-24 flex-row bg-black/75 landscap:flex-1 [&_hr]:my-12 mobile:flex-col">
           <StatSegment>
             <div className="leading-normal text-justify">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
@@ -124,7 +118,7 @@ function LandingPage() {
             />
             <Screenshot src={screenshot2} alt="In-game screen" className="[box-shadow:_0_0_10rem_rgb(19,19,19)]" />
           </StatSegment>
-        </div>
+        </Box>
         <Text className="mobile:hidden text-md text-right !mt-[-2.5rem]">
           Using this device as remote microphone?{' '}
           <SmoothLink to="remote-mic/">

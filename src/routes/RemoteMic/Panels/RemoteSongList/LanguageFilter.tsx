@@ -51,7 +51,7 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
                   data-active={!!excludedLanguages.length && !excludedLanguages.includes(name)}
                   onClick={() => excludeLanguage(name)}
                   data-test={name}
-                  className={`!justify-between`}>
+                  className={`!justify-between pl-4`}>
                   <span>
                     {name} <small className="text-sm pl-2">({count} songs)</small>
                   </span>

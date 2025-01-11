@@ -43,7 +43,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
             <ScoreScore>
               <ScoreText score={score.score} />
             </ScoreScore>
-            <ScoreDate>{dayjs(score.date).format('MMMM DD, YYYY')}</ScoreDate>
+            <ScoreDate>{dayjs(score.date).format('MMMM D, YYYY')}</ScoreDate>
           </ScoreContainer>
         ))}
       </ScoresContainer>
@@ -96,9 +96,9 @@ const ScoreDate = styled.div`
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
   position: absolute;
-  bottom: 4rem;
+  bottom: 13rem;
   right: 2rem;
-  width: 40rem;
+  padding: 0 3rem;
   font-size: 1.9vw;
 `;
 

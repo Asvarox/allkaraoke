@@ -1,4 +1,5 @@
 import { captureException } from '@sentry/react';
+import bezier from 'bezier-easing';
 import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import { drawPlayerCanvas } from 'modules/GameEngine/Drawing/Elements/debugPlayerCanvas';
@@ -383,20 +384,24 @@ export default class CanvasDrawing {
     if (!currentSection) {
       return position;
     }
-    const sectionLengthInBeats = isNotesSection(currentSection)
-      ? getLastNoteEnd(currentSection) - currentSection.start
-      : currentSection.end - currentSection.start;
-    const sectionProgressInBeats = currentBeat - currentSection.start;
-
-    const slideInAnimationProgress = Math.min(
-      1,
-      beatToMs(sectionProgressInBeats, song) / Math.min(2000, beatToMs(sectionLengthInBeats, song)),
+    const sectionLengthInMs = beatToMs(
+      isNotesSection(currentSection)
+        ? getLastNoteEnd(currentSection) - currentSection.start
+        : currentSection.end - currentSection.start,
+      song,
     );
+    const sectionProgressInMs = beatToMs(currentBeat - currentSection.start, song);
+
+    const slideInAnimationProgress = Math.min(1, sectionProgressInMs / Math.min(2000, sectionLengthInMs));
     const slideInAnimationValue = Math.round(this.canvas.width * Math.pow(1 - slideInAnimationProgress, 25));
+
+    const progressiveSlideDisplacement = sectionLengthInMs / 30;
+    const noteProgressiveSlideProgress = progressiveSlideBezier(Math.min(1, sectionProgressInMs / sectionLengthInMs));
+    const noteProgressiveSlide = Math.round(progressiveSlideDisplacement * (0.5 - noteProgressiveSlideProgress));
 
     return {
       ...position,
-      x: position.x + slideInAnimationValue,
+      x: position.x + slideInAnimationValue + noteProgressiveSlide,
     };
   };
 
@@ -435,3 +440,5 @@ export default class CanvasDrawing {
 
   private getPreciseY = (y: number, h: number, preciseDistance: number) => y + h / 2 - (preciseDistance * h) / 3;
 }
+
+const progressiveSlideBezier = bezier(0.25, 0.5, 0.75, 0.5);

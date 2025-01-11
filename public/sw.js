@@ -1,5 +1,3 @@
- 
-
 const CACHE_NAME = 'allkaraoke-party-app-cache-v1';
 
 // Use the 'install' event to pre-cache all initial resources.
@@ -15,8 +13,9 @@ self.addEventListener('install', (event) => {
 const swOrigin = self.location.origin;
 
 self.addEventListener('fetch', (event) => {
+  const urlData = new URL(event.request.url);
   // Only cache local resources
-  if (new URL(event.request.url).origin === swOrigin) {
+  if (urlData.origin === swOrigin && !urlData.pathname.startsWith('/proxy')) {
     event.respondWith(
       (async () => {
         const cache = await caches.open(CACHE_NAME);

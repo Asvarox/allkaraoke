@@ -1,23 +1,30 @@
 import uFuzzy from '@leeoniya/ufuzzy';
-import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
+import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
 import clearString, { removeAccents } from 'modules/utils/clearString';
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import { usePlaylists } from 'routes/SingASong/SongSelection/Hooks/usePlaylists';
 
-type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
+type FilterFunc = (
+  songList: SongPreview[],
+  value: any,
+  appliedFilters: AppliedFilters,
+  list: SongPreview[],
+) => SongPreview[];
 
 export interface AppliedFilters {
   yearBefore?: number;
   yearAfter?: number;
   language?: string;
   excludeLanguages?: string[];
+  skipExcludedLanguages?: boolean;
   search?: string;
   edition?: string;
   recentlyUpdated?: boolean | null;
   duet?: boolean | null;
   specificSongs?: string[];
+  additionalSongs?: string[];
 }
 
 const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedFilters?.search ?? '').length > 2;
@@ -55,8 +62,9 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
       return song.language.includes(language);
     });
   },
-  excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
-    if (languages.length === 0 || isSearchApplied(appliedFilters) || appliedFilters.edition === 'esc') return songList;
+  excludeLanguages: (songList, languages: string[] = [], appliedFilters = {}) => {
+    if (languages.length === 0 || isSearchApplied(appliedFilters) || appliedFilters.skipExcludedLanguages)
+      return songList;
 
     return songList.filter((song) => {
       return !song.language.every((songLang) => languages.includes(songLang!));
@@ -88,23 +96,32 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
       : songList;
   },
   recentlyUpdated: (songList) => {
-    const after = dayjs().subtract(31, 'days');
-
-    return songList.filter((song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(after));
+    return songList.filter(isSongRecentlyUpdated);
   },
   specificSongs: (songList, specificSongs: string[], appliedFilters: AppliedFilters) => {
     if (isSearchApplied(appliedFilters)) return songList;
 
     return songList.filter((song) => specificSongs.includes(song.id));
   },
+  additionalSongs: (songList, additionalSongIds: string[], appliedFilters, list) => {
+    const additionalSongs = list.filter((song) => additionalSongIds.includes(song.id));
+    return [...songList, ...additionalSongs.filter((song) => !songList.includes(song))];
+  },
+  skipExcludedLanguages: (songList) => songList,
 };
+
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
   return Object.entries(appliedFilters)
     .filter((filters): filters is [keyof AppliedFilters, FilterFunc] => filters[0] in filteringFunctions)
     .reduce((songList, [name, value]) => filteringFunctions[name](songList, value, appliedFilters, list), list);
 };
 
-export const useSongListFilter = (list: SongPreview[], popular: string[], isLoading: boolean) => {
+export const useSongListFilter = (
+  list: SongPreview[],
+  popular: string[],
+  isLoading: boolean,
+  additionalSong: string | null,
+) => {
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
   const prefilteredList = useMemo(
     () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
@@ -127,13 +144,14 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
   };
 
   const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
-  const [filters, setFilters] = useState<AppliedFilters>(emptyFilters);
+  const [filters, setFilters] = useState<AppliedFilters>(() => emptyFilters);
 
   useEffect(() => {
     setFilters(emptyFilters);
   }, [selectedPlaylist]);
 
   const deferredFilters = useDeferredValue(filters);
+  const isSearchApplied = !!deferredFilters.search;
 
   const filteredList = useMemo(
     () =>
@@ -141,8 +159,9 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
         ...(playlist?.filters ?? {}),
         ...deferredFilters,
         excludeLanguages: excludedLanguages ?? [],
+        additionalSongs: additionalSong ? [additionalSong] : [],
       }),
-    [list, deferredFilters, excludedLanguages, playlist],
+    [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
   );
 
   return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };

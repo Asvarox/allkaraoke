@@ -21,10 +21,6 @@ export interface NetworkStartMonitorMessage {
   t: 'start-monitor';
 }
 
-export interface NetworkUnregisterMessage {
-  t: 'unregister';
-}
-
 export interface NetworkStopMonitorMessage {
   t: 'stop-monitor';
 }
@@ -72,6 +68,12 @@ export interface NetworkSongListMessage {
   t: 'songlist';
   custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video' | 'language' | 'search'>>;
   deleted: string[];
+}
+
+export interface NetworkRemoteMicMyListMessage {
+  t: 'my-list';
+  added?: string[];
+  deleted?: string[];
 }
 
 export interface NetworkRequestMicSelectMessage {
@@ -151,6 +153,7 @@ export interface NetworkStyleChangeMessage {
 }
 
 export type NetworkMessages =
+  | NetworkRemoteMicMyListMessage
   | NetworkSelectSongMessage
   | NetworkSubscribeMessage
   | NetworkUnsubscribeMessage

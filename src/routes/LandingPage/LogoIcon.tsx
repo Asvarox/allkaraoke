@@ -1,15 +1,17 @@
+import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
 import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
-import { HTMLProps } from 'react';
+import { HTMLProps, useContext } from 'react';
 import { twc } from 'react-twc';
 
 export default function LogoIcon(props: HTMLProps<HTMLDivElement>) {
+  const { theme } = useContext(BackgroundContext);
   return (
     <StyledLogo {...props}>
       <Mic1 asChild>
-        <MicIconRed />
+        <MicIconRed christmas={theme === 'christmas'} />
       </Mic1>
       <Mic2 asChild>
-        <MicIconBlue />
+        <MicIconBlue christmas={theme === 'christmas'} />
       </Mic2>
     </StyledLogo>
   );

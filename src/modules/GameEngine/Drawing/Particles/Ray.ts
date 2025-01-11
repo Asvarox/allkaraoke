@@ -12,6 +12,15 @@ const pow = Math.pow;
 function easeOutQuart(x: number): number {
   return 1 - pow(1 - x, 2);
 }
+function interpolateColor(value: number): string {
+  const percentage = Math.round(value * 100);
+
+  const r = 255;
+  const g = Math.min(255, Math.max(0, Math.round((255 * (200 - percentage * 2)) / 100)));
+  const b = Math.max(0, Math.round((255 * (100 - percentage)) / 100));
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
 export default class RayParticle implements Particle {
   public finished = false;
@@ -39,12 +48,14 @@ export default class RayParticle implements Particle {
     const mainRayWidth = (this.maxWidth * easing * 3) / 4;
     const mainRayHeight = this.maxWidth * easing;
 
+    const clr = interpolateColor(1 - percentage);
+
     ray(canvas, ctx, this.x, this.y, mainRayWidth, mainRayHeight, 'white', easing * 0.35);
 
     easing = easeOutQuart(percentage);
 
-    const width = (easing * this.maxWidth) / 4;
-    const height = (easing * this.maxWidth) / 4;
+    const width = (easing * this.maxWidth) / 2;
+    const height = (easing * this.maxWidth) / 2;
 
     const x = this.x;
     const y = this.y;
@@ -59,7 +70,7 @@ export default class RayParticle implements Particle {
       y + elapsedTicks * this.velocityY,
       width,
       height,
-      'white',
+      clr,
       easing * 0.2,
     );
 

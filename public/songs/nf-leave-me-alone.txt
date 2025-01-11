@@ -1,0 +1,1114 @@
+#ARTIST:NF
+#TITLE:Leave Me Alone
+#CREATOR:princetongirl98
+#BPM:217,32
+#YEAR:2019
+#VIDEO:v=XGGWhOUYObc
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:12463,683048039757
+#ALLKARAOKE_ID:nf-leave-me-alone
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:26.665Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=165696
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25722
+#ALLKARAOKE_VOLUME:0,75
+#MP3:NF - Leave Me Alone.mp3
+: 14 3 9 Hey!
+- 17 26
+- 26
+: 40 1 5 Leave 
+: 42 1 5 me 
+: 44 3 11 alone 
+: 52 1 7 (Leave 
+: 54 1 0 me 
+: 56 2 4 alone)
+- 58
+: 59 8 7 Painic-stricken, 
+: 74 3 2 handle 
+: 79 4 2 business, 
+: 85 2 2 not 
+: 88 1 7 a 
+: 90 3 2 joke, 
+: 95 4 7 yeah
+- 99
+: 101 4 4 Manners 
+: 106 3 2 missin’, 
+: 117 3 4 travel 
+: 122 4 4 different, 
+: 128 1 4 no 
+: 131 5 2 control, 
+: 138 4 7 yeah
+- 142
+: 144 1 4 Time 
+: 147 1 9 to 
+: 149 4 2 listen, 
+: 160 1 5 time 
+: 162 1 5 to 
+: 165 2 4 zip 
+: 168 1 2 it, 
+: 171 1 4 keep 
+: 174 2 5 it 
+: 177 3 2 closed
+- 180
+: 188 1 7 My 
+: 190 5 4 description, 
+: 203 3 4 highly 
+: 208 3 4 gifted, 
+: 214 1 7 take 
+: 216 1 7 some 
+: 219 3 2 notes, 
+: 224 2 9 yeah
+- 226
+: 230 1 5 Lack 
+: 233 1 4 of 
+: 235 3 5 interest, 
+: 246 1 2 why’d 
+: 249 1 7 you 
+: 252 2 7 visit? 
+: 256 2 7 Hit 
+: 260 1 4 the 
+: 262 3 4 road, 
+: 268 1 4 yeah
+- 269
+: 270 1 11 I’m 
+: 273 1 2 kinda 
+: 277 3 7 twisted, 
+: 288 1 2 so 
+: 290 1 11 keep 
+: 293 1 5 your 
+: 295 3 7 distance, 
+: 299 1 2 be 
+: 302 1 7 a 
+: 305 3 7 ghost
+- 308
+: 310 3 7 Yeah, 
+: 315 1 9 see 
+: 317 1 9 I’m 
+: 319 5 0 inventive,
+- 324
+: 330 1 0 But 
+: 332 1 9 quite 
+: 335 1 7 the 
+: 337 2 9 menace, 
+: 342 1 0 you 
+: 345 1 9 ain’t 
+: 348 3 11 know?
+- 351
+: 353 1 9 Well 
+: 356 1 7 then 
+: 359 1 2 I’m 
+: 361 4 2 offended, 
+: 372 1 11 let’s 
+: 374 1 4 jog 
+: 377 1 2 your 
+: 380 3 0 memories,
+- 383
+: 385 1 7 Here 
+: 387 1 7 we 
+: 390 3 5 go, 
+: 396 1 9 yeah
+- 397
+: 403 2 4 I 
+: 407 1 4 went 
+: 409 1 2 from 
+: 412 5 2 nobody 
+: 419 2 0 to 
+: 423 3 2 kinda 
+: 428 3 0 famous
+- 431
+: 439 2 2 Hide 
+: 442 1 2 my 
+: 444 2 4 plaques 
+: 448 1 2 inside 
+: 450 2 2 the 
+: 454 4 2 closet,
+- 458
+: 460 2 2 I 
+: 463 1 0 just 
+: 465 1 0 can’t 
+: 468 3 2 explain 
+: 472 3 0 it
+- 475
+: 481 1 11 My 
+: 483 1 5 wife, 
+: 486 1 0 she 
+: 488 1 2 tells 
+: 491 1 2 me 
+: 493 1 2 that 
+: 496 1 0 she’s 
+: 498 2 2 proud
+- 500
+: 501 1 0 And 
+: 503 1 4 thinks 
+: 506 1 2 that 
+: 509 1 2 I 
+: 511 1 2 should 
+: 514 2 0 hang 
+: 518 1 7 ’em
+- 519
+: 523 1 0 But 
+: 525 1 0 I 
+: 527 1 4 just 
+: 530 1 2 leave 
+: 533 1 2 ’em 
+: 535 1 2 on 
+: 538 1 2 the 
+: 541 1 2 ground
+- 542
+: 543 1 2 Right 
+: 546 1 2 next 
+: 548 1 7 to 
+: 551 1 0 my 
+: 554 1 9 self-
+: 557 1 2 hatred
+- 558
+: 562 4 0 Yeah, 
+: 567 4 2 yeah, 
+: 573 4 4 mental 
+: 578 3 2 health,
+- 581
+: 583 1 9 Where’s 
+: 586 1 4 my 
+: 589 4 4 mental 
+: 594 3 4 health?
+- 597
+: 599 8 2 Diagnosed 
+: 608 1 2 with 
+: 611 5 2 OCD, 
+: 618 2 4 what 
+: 622 1 4 does 
+: 625 1 2 that 
+: 628 2 5 mean?
+- 630
+: 631 1 2 Well, 
+: 634 1 2 gather 
+: 636 1 2 ’round
+- 637
+: 643 1 2 That 
+: 645 2 2 means 
+: 649 1 4 I 
+: 652 1 9 obsessively 
+: 658 3 4 obsess 
+: 664 3 4 on 
+: 669 2 4 things 
+: 673 1 2 I 
+: 675 1 4 think 
+: 680 3 4 about
+- 683
+: 685 3 2 That 
+: 690 1 2 means 
+: 692 1 7 I 
+: 695 1 4 might 
+: 698 1 4 take 
+: 700 1 4 a 
+: 702 3 4 normal 
+: 707 2 4 thought
+- 709
+: 710 1 2 And 
+: 712 1 7 think 
+: 715 1 2 it’s 
+: 717 1 2 so 
+: 720 5 4 profound
+- 725
+: 728 2 4 Ru
+: 731 1 4 mi
+: 734 4 2 na
+: 739 4 4 ting, 
+: 750 2 4 filled 
+: 753 4 2 balloons 
+: 759 1 4 full 
+: 761 4 4 of 
+: 766 3 4 doubts
+- 769
+: 771 2 4 Do 
+: 775 1 0 the 
+: 777 4 5 same 
+: 783 5 4 things,
+- 788
+: 792 1 2 If 
+: 796 1 4 I 
+: 798 1 11 don’t, 
+: 801 1 4 I’m 
+: 803 8 4 overwhelmed
+- 811
+: 814 2 4 Thoughts 
+: 817 1 4 are 
+: 820 8 5 pacing,
+- 828
+: 835 2 5 They 
+: 838 1 2 go 
+: 841 1 2 ’round 
+: 844 1 4 and 
+: 846 1 2 ’round 
+: 849 1 4 and 
+: 852 2 4 ’round
+- 854
+: 857 1 0 It’s 
+: 860 1 4 so 
+: 863 10 5 draining, 
+: 878 1 0 let’s 
+: 881 1 4 move 
+: 884 1 2 onto 
+: 887 5 2 something 
+: 894 4 0 else, 
+: 900 3 0 fine
+- 903
+: 905 1 7 I’m 
+: 908 1 5 in 
+: 910 1 11 the 
+: 912 1 4 game, 
+: 914 1 0 but 
+: 917 1 4 they 
+: 919 1 4 don’t 
+: 922 1 2 even 
+: 924 1 2 know 
+: 926 1 0 it
+- 927
+: 929 1 7 Like 
+: 931 1 0 I’m 
+: 933 1 4 undercover 
+: 935 1 5 and 
+: 938 1 4 don’t 
+: 940 1 4 want 
+: 942 1 2 to 
+: 944 1 4 blow 
+: 947 1 0 it
+- 948
+: 949 1 9 I 
+: 951 1 4 come 
+: 953 1 5 out 
+: 955 1 11 of 
+: 958 1 5 nowhere, 
+: 960 1 4 they 
+: 962 1 4 don’t 
+: 965 1 4 even 
+: 967 1 4 notice
+- 968
+: 969 1 11 The 
+: 972 1 7 flow 
+: 974 1 7 is 
+: 976 1 5 so 
+: 978 1 5 cold, 
+: 980 1 7 you 
+: 983 1 7 would 
+: 985 1 5 think 
+: 987 1 7 it 
+: 989 1 7 was 
+: 991 1 9 snowing
+- 992
+: 994 1 9 I’m 
+: 997 1 7 under 
+: 999 1 7 the 
+: 1001 1 7 weather, 
+: 1003 1 9 but 
+: 1005 1 0 wind 
+: 1007 1 7 isn’t 
+: 1009 1 7 blowin’
+- 1010
+: 1011 1 7 I 
+: 1013 1 9 got 
+: 1016 1 9 an 
+: 1018 1 2 umbrella 
+: 1020 1 9 for 
+: 1022 1 11 difficult 
+: 1029 3 11 moments
+- 1032
+: 1033 1 0 You 
+: 1035 1 2 got 
+: 1038 1 2 to 
+: 1040 1 2 admit 
+: 1042 1 2 it, 
+: 1044 1 0 I’m 
+: 1047 1 2 very 
+: 1049 1 2 devoted
+- 1050
+: 1051 2 2 I’m 
+: 1054 1 2 out 
+: 1057 1 4 in 
+: 1059 1 4 the 
+: 1061 1 4 ring, 
+: 1063 1 4 but 
+: 1065 1 4 they 
+: 1067 1 5 don’t 
+: 1070 1 4 always 
+: 1072 1 7 help 
+: 1074 1 5 me, 
+: 1076 1 5 so 
+: 1078 3 7 I...
+- 1081
+: 1088 1 5 Hold 
+: 1091 1 5 up 
+: 1093 1 4 my 
+: 1097 1 7 balloons 
+: 1102 1 5 and 
+: 1105 4 5 cover 
+: 1110 2 7 up 
+: 1113 1 5 my 
+: 1115 4 4 face
+- 1119
+: 1132 2 7 I 
+: 1135 1 4 can 
+: 1137 2 7 feel 
+: 1140 1 5 them 
+: 1142 4 7 weighing 
+: 1148 1 5 on 
+: 1150 1 5 me 
+: 1153 4 5 every 
+: 1158 4 9 day
+- 1162
+: 1174 1 4 I 
+: 1177 1 7 should 
+: 1180 2 7 let 
+: 1183 1 5 ’em 
+: 1185 1 7 go 
+: 1188 1 5 and 
+: 1190 1 5 watch 
+: 1193 2 5 ’em 
+: 1196 2 5 float 
+: 1199 6 4 away
+- 1205
+: 1214 1 9 But 
+: 1217 2 5 I’m 
+: 1221 1 5 scared 
+: 1223 1 7 if 
+: 1226 1 5 I 
+: 1228 2 7 do, 
+: 1231 1 7 then 
+: 1234 1 11 I’ll 
+: 1236 1 5 be 
+: 1239 1 4 more 
+: 1241 6 2 afraid
+- 1247
+: 1260 2 5 Tell 
+: 1263 1 5 them 
+: 1266 1 5 how 
+: 1268 1 5 I 
+: 1271 1 7 feel, 
+: 1274 1 5 but 
+: 1276 1 7 they 
+: 1279 1 5 don’t 
+: 1281 1 5 want 
+: 1284 1 5 to 
+: 1287 4 4 change
+- 1291
+: 1303 1 11 Tell 
+: 1306 1 5 them 
+: 1309 1 5 how 
+: 1311 1 5 I 
+: 1314 1 7 feel, 
+: 1317 1 5 but 
+: 1319 1 9 they 
+: 1322 1 5 remain 
+: 1325 5 7 the 
+: 1331 4 9 same
+- 1335
+: 1345 3 5 Loosen 
+: 1350 2 5 up 
+: 1354 1 5 my 
+: 1357 2 7 grip, 
+: 1360 1 7 they 
+: 1362 1 7 say 
+: 1365 1 5 that’s 
+: 1368 2 7 not 
+: 1371 4 4 okay
+- 1375
+: 1379 2 2 Quiet, 
+: 1383 5 9 quiet, 
+: 1389 4 11 quiet, 
+: 1394 4 2 quiet, 
+: 1405 5 9 ayy, 
+: 1411 1 7 leave 
+: 1413 1 7 me 
+: 1415 5 7 alone!
+- 1420 1437
+- 1437
+: 1451 2 5 Ayy, 
+: 1459 2 7 yeah
+- 1461
+: 1469 3 7 Quiet, 
+: 1473 4 7 quiet, 
+: 1479 4 7 quiet, 
+: 1485 4 7 quiet, 
+: 1494 1 7 ayy, 
+: 1497 3 7 leave 
+: 1501 1 7 me 
+: 1503 3 7 alone!
+- 1506 1520
+- 1520
+: 1534 1 11 Woo, 
+: 1544 2 5 yeah
+- 1546
+: 1555 3 7 Quiet, 
+: 1560 4 7 quiet, 
+: 1565 4 7 quiet, 
+: 1571 4 7 quiet, 
+: 1582 3 7 ayy, 
+: 1586 1 7 leave 
+: 1588 1 9 me 
+: 1590 1 7 alone!
+- 1591 1593
+- 1593
+: 1607 1 0 I 
+: 1609 1 7 hate 
+: 1611 1 7 when 
+: 1614 1 7 they 
+: 1616 2 9 debate 
+: 1620 1 7 if 
+: 1622 1 0 we’re 
+: 1626 7 9 underrated
+- 1633
+: 1636 2 9 We’re 
+: 1639 1 9 so 
+: 1642 6 7 overlooked
+- 1648
+: 1650 1 7 That 
+: 1652 1 7 they’re 
+: 1655 3 9 looking 
+: 1660 4 9 over 
+: 1665 2 4 our 
+: 1669 3 2 numbers, 
+: 1673 3 7 Nathan
+- 1676
+: 1679 2 11 We 
+: 1682 2 11 don’t 
+: 1685 1 11 do 
+: 1687 1 11 enough 
+: 1690 8 2 interviews 
+: 1699 2 11 or 
+: 1703 1 11 go 
+: 1705 1 0 out 
+: 1708 1 9 in 
+: 1711 4 4 public 
+: 1716 3 9 lately
+- 1719
+: 1721 2 2 We 
+: 1724 1 2 don’t 
+: 1727 1 2 post 
+: 1730 3 0 enough 
+: 1735 2 0 on 
+: 1738 1 11 our 
+: 1741 4 2 socials
+- 1745
+: 1746 1 0 To 
+: 1749 1 0 keep 
+: 1751 1 0 the 
+: 1754 1 4 buzz 
+: 1757 1 11 from 
+: 1759 4 11 fading
+- 1763
+: 1765 3 4 Let 
+: 1769 1 9 it 
+: 1771 3 2 fade, 
+: 1775 4 11 yeah, 
+: 1781 1 4 let 
+: 1783 1 2 it 
+: 1786 4 2 fade
+- 1790
+: 1792 1 9 Once 
+: 1794 1 0 it’s 
+: 1797 9 4 decimated,
+- 1806
+: 1807 1 9 Then 
+: 1810 1 2 you 
+: 1813 1 2 drop 
+: 1816 1 0 a 
+: 1818 2 2 song 
+: 1821 1 0 out 
+: 1824 1 11 of 
+: 1826 4 2 nowhere
+- 1830
+: 1831 2 11 And 
+: 1835 1 0 all 
+: 1837 1 0 the 
+: 1840 1 2 fans 
+: 1843 3 11 embrace 
+: 1847 1 7 it
+- 1848
+: 1849 1 9 Then 
+: 1852 1 2 the 
+: 1855 1 9 buzz 
+: 1857 2 2 will 
+: 1860 4 5 surface 
+: 1866 5 2 again,
+- 1871
+: 1872 1 2 It’s 
+: 1875 2 7 part 
+: 1878 1 2 of 
+: 1880 2 2 my 
+: 1883 7 2 operation
+- 1890
+: 1892 2 9 I 
+: 1896 1 4 don’t 
+: 1898 2 4 need 
+: 1902 1 4 advice 
+: 1906 1 2 from 
+: 1909 2 2 my 
+: 1913 1 7 doubts 
+: 1915 1 4 right 
+: 1918 1 4 now
+- 1919
+: 1921 1 4 End 
+: 1923 1 4 of 
+: 1926 9 7 conversation
+- 1935
+: 1937 1 9 Shut 
+: 1939 1 5 your 
+: 1941 4 5 mouth, 
+: 1946 4 0 yeah, 
+: 1952 2 9 shut 
+: 1955 1 5 your 
+: 1958 4 5 mouth
+- 1962
+: 1963 3 2 Better 
+: 1968 1 4 tone 
+: 1971 2 4 it 
+: 1974 4 4 down, 
+: 1980 1 5 close 
+: 1982 1 4 it 
+: 1985 4 5 now
+- 1989
+: 1990 1 7 If 
+: 1993 1 4 you 
+: 1995 1 5 make 
+: 1998 2 4 a 
+: 2001 4 4 sound, 
+: 2006 3 5 I’ma 
+: 2012 1 7 change 
+: 2014 1 7 your 
+: 2017 4 5 dial
+- 2021
+: 2022 1 5 Funny 
+: 2025 6 4 how 
+: 2032 1 2 they 
+: 2035 1 4 be 
+: 2038 3 4 acting 
+: 2044 3 4 loud, 
+: 2049 2 7 comin’ 
+: 2052 2 5 on 
+: 2055 5 4 it 
+: 2061 3 5 now
+- 2064
+: 2066 2 5 It’s 
+: 2070 3 4 floating 
+: 2075 1 9 ’round
+- 2076
+: 2077 2 7 Man, 
+: 2080 1 2 the 
+: 2083 1 4 kid 
+: 2086 1 2 is 
+: 2088 3 9 wild, 
+: 2092 2 7 pretty 
+: 2096 1 7 wild, 
+: 2102 3 11 true
+- 2105
+: 2107 1 9 I’m 
+: 2110 1 9 kinda 
+: 2112 2 11 phony 
+: 2116 2 5 but 
+: 2119 1 2 don’t 
+: 2121 1 5 really 
+: 2124 2 4 show 
+: 2127 1 2 it 
+: 2129 1 7 keep
+- 2130
+: 2131 1 2 I 
+: 2133 1 2 it 
+: 2135 2 4 together, 
+: 2139 1 5 but 
+: 2141 1 4 have 
+: 2143 1 7 a 
+: 2145 1 5 disorder
+- 2146
+: 2147 1 5 I 
+: 2150 1 2 go 
+: 2152 1 9 to 
+: 2154 1 7 my 
+: 2156 1 7 room 
+: 2158 1 7 and 
+: 2160 1 5 I 
+: 2162 1 4 sit 
+: 2164 1 7 in 
+: 2166 1 5 my 
+: 2168 1 7 corner
+- 2169
+: 2170 1 7 And 
+: 2172 1 4 talk 
+: 2174 1 0 to 
+: 2176 1 9 myself 
+: 2178 1 7 in 
+: 2180 1 9 a 
+: 2182 1 7 language 
+: 2184 2 7 that’s 
+: 2187 1 9 foreign
+- 2188
+: 2189 1 7 I 
+: 2191 1 7 think 
+: 2194 1 11 of 
+: 2196 1 0 a 
+: 2198 1 7 rhyme 
+: 2200 1 9 and 
+: 2203 1 0 I 
+: 2205 1 9 have 
+: 2207 1 5 to 
+: 2209 1 5 record 
+: 2211 1 9 it
+- 2212
+: 2214 1 7 But 
+: 2216 1 0 know 
+: 2218 1 5 if 
+: 2220 1 4 I 
+: 2222 1 9 don’t, 
+: 2224 1 9 I’ll 
+: 2226 1 0 wake 
+: 2228 1 9 up 
+: 2230 1 9 in 
+: 2232 1 9 the 
+: 2234 1 9 morning
+- 2235
+: 2236 1 4 And 
+: 2239 1 2 question 
+: 2241 1 0 my 
+: 2243 1 7 life 
+: 2245 1 2 again, 
+: 2247 1 0 always 
+: 2249 1 2 avoiding
+- 2250
+: 2251 1 11 I 
+: 2253 1 2 hate 
+: 2255 1 4 to 
+: 2258 1 4 be 
+: 2262 1 4 different, 
+: 2264 2 4 but 
+: 2268 1 4 hate 
+: 2270 1 7 to 
+: 2272 1 5 be 
+: 2274 1 5 normal, 
+: 2277 1 11 so 
+: 2279 7 7 I...
+- 2286
+: 2290 2 4 Hold 
+: 2294 1 5 up 
+: 2296 2 7 my 
+: 2299 4 5 balloons 
+: 2304 1 5 and 
+: 2307 3 5 cover 
+: 2312 1 7 up 
+: 2315 2 5 my 
+: 2318 3 4 face
+- 2321
+: 2333 2 11 I 
+: 2337 1 4 can 
+: 2339 2 7 feel 
+: 2343 1 4 them 
+: 2345 3 7 weighing 
+: 2350 1 5 on 
+: 2353 1 4 me 
+: 2355 4 5 every 
+: 2361 4 9 day
+- 2365
+: 2376 1 7 I 
+: 2379 2 7 should 
+: 2382 1 7 let 
+: 2385 1 5 ’em 
+: 2387 1 7 go 
+: 2390 1 5 and 
+: 2393 1 7 watch 
+: 2395 1 7 ’em 
+: 2398 1 5 float 
+: 2402 4 4 away
+- 2406
+: 2413 3 11 But 
+: 2418 2 4 I’m 
+: 2421 1 4 scared 
+: 2424 1 7 if 
+: 2427 1 5 I 
+: 2430 1 7 do, 
+: 2433 1 7 then 
+: 2436 1 11 I’ll 
+: 2438 1 4 be 
+: 2441 1 4 more 
+: 2444 4 2 afraid
+- 2448 2450
+- 2450
+: 2464 1 7 Tell 
+: 2466 1 5 them 
+: 2469 1 7 how 
+: 2471 1 5 I 
+: 2474 1 7 feel, 
+: 2476 1 5 but 
+: 2479 1 2 they 
+: 2481 1 5 don’t 
+: 2484 1 5 want 
+: 2487 1 4 to 
+: 2490 3 4 change
+- 2493
+: 2505 1 2 Tell 
+: 2507 1 2 them 
+: 2511 1 4 how 
+: 2514 1 5 I 
+: 2516 1 7 feel, 
+: 2519 1 5 but 
+: 2522 1 2 they 
+: 2524 1 5 remain 
+: 2527 2 7 the 
+: 2531 5 9 same
+- 2536
+: 2548 1 5 Loosen 
+: 2551 2 5 up 
+: 2555 1 5 my 
+: 2558 2 7 grip, 
+: 2561 1 2 they 
+: 2564 1 7 say 
+: 2567 1 5 that’s 
+: 2570 1 7 not 
+: 2572 5 4 okay
+- 2577
+: 2584 1 11 Quiet, 
+: 2587 2 9 quiet, 
+: 2591 4 9 quiet, 
+: 2596 4 2 quiet, 
+: 2608 4 9 ayy, 
+: 2614 1 7 leave 
+: 2617 1 7 me 
+: 2619 2 7 alone!
+- 2621 2639
+- 2639
+: 2653 2 2 Ayy, 
+: 2659 3 0 yeah
+- 2662
+: 2670 3 5 Quiet, 
+: 2675 4 7 quiet, 
+: 2681 4 7 quiet, 
+: 2687 4 7 quiet, 
+: 2698 1 4 ayy 
+: 2700 1 7 leave 
+: 2702 1 7 me 
+: 2704 5 7 alone!
+- 2709 2725
+- 2725
+: 2739 1 0 Woo, 
+: 2746 2 5 yeah
+- 2748
+: 2757 3 7 Quiet, 
+: 2761 4 7 quiet, 
+: 2767 4 7 quiet, 
+: 2773 4 7 quiet, 
+: 2784 3 7 ayy, 
+: 2789 1 7 leave 
+: 2791 1 7 me 
+: 2793 4 5 alone!
+- 2797
+: 2807 1 9 Remember 
+: 2810 1 7 back 
+: 2813 1 7 in 
+: 2816 1 2 "NO 
+: 2819 1 4 NAME, 
+: 2822 1 2 "
+- 2823
+: 2824 1 2 I 
+: 2826 1 9 said 
+: 2829 3 2 fame 
+: 2833 4 2 called?
+- 2837
+: 2848 1 9 Told 
+: 2851 1 7 you 
+: 2854 1 5 I 
+: 2857 1 2 hung 
+: 2859 1 2 up, 
+: 2862 1 7 it 
+: 2864 1 2 kinda 
+: 2869 4 4 felt 
+: 2874 5 4 wrong
+- 2879
+: 2891 4 9 Finally 
+: 2896 1 9 called 
+: 2899 1 4 him 
+: 2902 2 4 back, 
+: 2905 1 2 we 
+: 2908 3 2 didn’t 
+: 2913 4 4 talk 
+: 2918 4 2 long
+- 2922
+: 2931 2 2 He 
+: 2935 1 11 asked 
+: 2937 1 7 me 
+: 2940 1 11 how 
+: 2942 1 5 I’d 
+: 2945 1 4 been, 
+: 2948 1 4 I 
+: 2950 1 4 sent 
+: 2952 1 5 him 
+: 2956 4 7 this 
+: 2961 5 5 song
+- 2966
+: 2975 3 2 Yeah, 
+: 2980 1 9 think 
+: 2982 1 2 he 
+: 2984 1 9 took 
+: 2987 3 7 offense, 
+: 2992 1 0 he 
+: 2994 4 5 kinda 
+: 2999 3 7 seemed 
+: 3004 5 5 off
+- 3009
+: 3017 1 5 I 
+: 3020 1 4 texted 
+: 3023 2 11 him 
+: 3027 1 9 that 
+: 3030 1 7 night 
+: 3032 1 9 to 
+: 3035 1 7 ask 
+: 3038 1 5 what 
+: 3041 4 9 he 
+: 3046 5 7 thought
+- 3051
+: 3061 1 9 It 
+: 3063 1 4 took 
+: 3066 1 2 a 
+: 3068 3 2 couple 
+: 3073 1 0 days 
+: 3076 1 2 to 
+: 3078 1 7 get 
+: 3081 2 11 a 
+: 3085 10 0 response
+- 3095
+: 3103 1 11 But 
+: 3106 1 7 once 
+: 3109 1 5 I 
+: 3111 1 4 finally 
+: 3114 4 4 did, 
+: 3120 1 2 he 
+: 3122 1 9 said 
+: 3125 1 2 this 
+: 3128 3 4 song 
+: 3132 4 4 sucks
+- 3136
+: 3138 1 7 Here 
+: 3141 1 4 are 
+: 3143 1 2 the 
+: 3146 4 2 symptoms, 
+: 3155 2 5 couldn’t 
+: 3158 1 2 miss 
+: 3161 2 4 ’em, 
+: 3165 1 4 wrestle 
+: 3167 2 4 with 
+: 3170 1 4 ’em
+- 3171
+: 3174 1 4 Then 
+: 3177 1 5 I 
+: 3179 1 7 penny 
+: 3182 3 4 flip 
+: 3189 3 2 ’em, 
+: 3197 1 7 bounce 
+: 3200 1 4 ’em 
+: 3203 1 7 back 
+: 3205 1 5 up 
+: 3208 2 4 nowhere,
+- 3210
+: 3213 2 7 You 
+: 3216 2 7 should 
+: 3219 1 7 get 
+: 3222 1 4 some
+- 3223
+: 3226 1 7 Who 
+: 3228 1 2 you 
+: 3232 5 2 dissin’?
+- 3237
+: 3239 2 5 Move 
+: 3243 1 2 the 
+: 3246 1 7 switch 
+: 3249 1 2 and 
+: 3251 1 5 don’t 
+: 3254 1 4 come 
+: 3257 1 7 in 
+: 3260 1 4 the 
+: 3262 3 7 kitchen
+- 3265
+: 3268 1 7 You 
+: 3270 2 4 should 
+: 3274 4 2 listen,
+- 3278
+: 3282 3 7 Cookin’ 
+: 3287 2 2 records 
+: 3291 1 4 for 
+: 3295 1 7 my 
+: 3298 2 2 hands 
+: 3302 1 4 are 
+: 3305 2 7 blistering
+- 3307
+: 3310 2 4 So 
+: 3314 5 4 persistent, 
+: 3320 1 4 don’t 
+: 3323 2 2 forget 
+: 3327 1 5 this,
+- 3328
+: 3330 2 5 Hold 
+: 3334 1 5 the 
+: 3337 3 5 tension, 
+: 3342 1 7 soul 
+: 3345 1 2 is 
+: 3348 3 5 bending
+- 3351
+: 3353 1 7 No 
+: 3356 6 4 pretending, 
+: 3363 3 7 open 
+: 3368 3 5 ended,
+- 3371
+: 3373 2 7 Low 
+: 3377 5 5 percentage, 
+: 3384 3 7 so 
+: 3388 5 5 demented
+- 3393
+: 3395 2 7 Whole 
+: 3399 5 5 consensus, 
+: 3406 2 7 flow 
+: 3410 5 5 tremendous,
+- 3415
+: 3416 2 7 No 
+: 3420 5 7 apprentice, 
+: 3427 2 7 no 
+: 3431 6 5 incentive
+- 3437
+: 3438 1 4 Show 
+: 3442 5 7 intensive, 
+: 3449 2 7 so 
+: 3452 6 7 possessive,
+- 3458
+: 3460 2 9 Tone 
+: 3464 4 7 aggressive, 
+: 3470 1 7 watch 
+: 3473 1 5 your 
+: 3476 1 7 step 
+: 3479 1 5 when 
+: 3481 4 7 I
+- 3485
+: 3493 1 5 Hold 
+: 3496 1 7 up 
+: 3499 1 7 my 
+: 3501 1 7 balloons 
+: 3503 1 7 and 
+: 3507 4 7 cover 
+: 3513 2 7 up 
+: 3516 1 7 my 
+: 3519 2 4 face
+- 3521 3522
+- 3522
+: 3536 1 11 I 
+: 3539 1 5 can 
+: 3542 1 7 feel 
+: 3544 1 7 them 
+: 3546 1 7 weighing 
+: 3549 3 7 on 
+: 3554 1 7 me 
+: 3556 1 7 every 
+: 3559 6 7 day
+- 3565
+: 3578 1 9 I 
+: 3581 1 7 should 
+: 3584 1 7 let 
+: 3587 1 5 ’em 
+: 3589 1 7 go 
+: 3592 1 7 and 
+: 3595 1 7 watch 
+: 3597 1 7 them 
+: 3600 1 7 float 
+: 3604 3 5 away
+- 3607
+: 3619 2 2 But 
+: 3623 1 11 I’m 
+: 3625 1 7 scared 
+: 3628 1 2 if 
+: 3630 1 7 I 
+: 3633 1 7 do 
+: 3635 1 7 then 
+: 3638 1 11 I’ll 
+: 3640 1 5 be 
+: 3643 1 4 more 
+: 3646 4 4 afraid
+- 3650
+: 3654 1 7 Leave 
+: 3656 1 9 me 
+: 3658 4 7 alone, 
+: 3669 1 2 leave 
+: 3672 1 7 me 
+: 3674 4 7 alone
+- 3678 3682
+- 3682
+: 3696 1 5 Leave 
+: 3699 1 7 me 
+: 3701 3 7 alone, 
+: 3712 1 4 leave 
+: 3714 1 7 me 
+: 3717 3 7 alone
+- 3720 3724
+- 3724
+: 3738 1 4 Leave 
+: 3741 1 9 me 
+: 3743 3 11 alone, 
+: 3755 1 9 leave 
+: 3758 1 2 me 
+: 3760 2 0 alone
+- 3762 3768
+- 3768
+: 3782 1 7 Leave 
+: 3785 1 4 me 
+: 3787 4 4 alone, 
+: 3798 1 4 leave 
+: 3801 1 7 me 
+: 3803 3 7 alone, 
+: 3809 5 9 ayy, 
+: 3817 1 7 leave 
+: 3819 1 7 me 
+: 3821 2 7 alone!
+- 3823 3841
+- 3841
+: 3855 2 2 Ayy, 
+: 3861 3 0 yeah
+- 3864
+: 3874 2 9 Quiet, 
+: 3878 3 7 quiet, 
+: 3883 4 7 quiet, 
+: 3890 3 7 quiet, 
+: 3901 1 7 ayy 
+: 3903 1 7 leave 
+: 3905 1 7 me 
+: 3907 4 7 alone!
+- 3911 3926
+- 3926
+: 3940 1 2 Woo, 
+: 3948 1 4 yeah
+- 3949
+: 3959 1 5 Quiet, 
+: 3963 3 7 quiet, 
+: 3969 3 7 quiet, 
+: 3974 4 7 quiet, 
+: 3984 1 9 ayy, 
+: 3986 2 7 leave 
+: 3989 1 7 me 
+: 3991 6 7 alone!
+- 3997 4012
+- 4012
+: 4026 3 5 Ayy, 
+: 4034 2 7 yeah
+- 4036
+: 4045 3 7 Quiet, 
+: 4050 4 7 quiet, 
+: 4056 3 7 quiet, 
+: 4061 3 7 quiet, 
+: 4070 1 11 ayy, 
+: 4073 1 7 leave 
+: 4075 1 7 me 
+: 4077 3 7 alone!
+- 4080 4100
+- 4100
+: 4114 1 0 Woo, 
+: 4121 3 5 yeah
+- 4124
+: 4131 2 7 Quiet, 
+: 4135 3 9 quiet, 
+: 4141 3 7 quiet, 
+: 4146 3 7 quiet, 
+: 4157 5 5 ayy
+E

@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 import { openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
@@ -21,6 +21,7 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
   await test.step('Go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 
@@ -41,7 +42,7 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
   await test.step('Once player2 was removed, they mic should be disconnected from the game', async () => {
     await remoteMic1.remoteMicManagePlayerPage.removePlayer();
     await remoteMic2.remoteMicMainPage.expectPlayerToBeDisconnected();
-    await remoteMic2.remoteMicMainPage.expectConnectButtonToBe('disabled');
+    await expect(remoteMic2.remoteMicMainPage.connectButton).toBeDisabled();
     await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassigned();
 
     await page.reload();

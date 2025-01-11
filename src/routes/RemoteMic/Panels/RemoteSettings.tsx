@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
+import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import { useState } from 'react';
@@ -20,7 +21,7 @@ interface Props {
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
 
-function RemoteSettings() {
+function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: Props) {
   const permissions = usePermissions();
   const [openedPanel, setOpenedPanel] = useState<'microphone' | 'manage' | null>(
     permissions === 'write' ? null : 'microphone',
@@ -69,6 +70,15 @@ function RemoteSettings() {
           </MenuContainer>
         </Modal>
       )}
+      <div role="button" className="typography mt-auto" onClick={() => setIsKeepAwakeOn(!isKeepAwakeOn)}>
+        WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
+      </div>
+      <div
+        role="button"
+        className="typography"
+        onClick={() => (monitoringStarted ? SimplifiedMic.stopMonitoring() : SimplifiedMic.startMonitoring(undefined))}>
+        Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
+      </div>
     </Container>
   );
 }

@@ -29,6 +29,8 @@ export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
+const channelSubscribers: Record<string, number> = {};
+
 export class NetworkClient {
   private transport: ClientTransport | undefined;
   private clientId = storage.getItem(MIC_ID_KEY);
@@ -203,6 +205,10 @@ export class NetworkClient {
     this.sendEvent('search-song', { search });
   };
 
+  public sendMySongList = (delta: { added?: string[]; deleted?: string[] }) => {
+    this.sendEvent('my-list', delta);
+  };
+
   public selectSong = (songId: string) => {
     this.sendEvent('select-song', { id: songId });
   };
@@ -216,11 +222,23 @@ export class NetworkClient {
   };
 
   public subscribe = (channel: NetworkSubscribeMessage['channel']) => {
-    this.sendEvent<NetworkSubscribeMessage>('subscribe-event', { channel });
+    if (channelSubscribers[channel] === undefined) {
+      channelSubscribers[channel] = 0;
+    }
+    if (channelSubscribers[channel] === 0) {
+      this.sendEvent<NetworkSubscribeMessage>('subscribe-event', { channel });
+    }
+    channelSubscribers[channel]++;
   };
 
   public unsubscribe = (channel: NetworkSubscribeMessage['channel']) => {
-    this.sendEvent<NetworkUnsubscribeMessage>('unsubscribe-event', { channel });
+    if (channelSubscribers[channel] === undefined) {
+      channelSubscribers[channel] = 0;
+    }
+    if (channelSubscribers[channel] === 1) {
+      this.sendEvent<NetworkUnsubscribeMessage>('unsubscribe-event', { channel });
+    }
+    channelSubscribers[channel] = Math.max(0, channelSubscribers[channel] - 1);
   };
 
   public getSongList = () => this.sendRequest<NetworkSongListMessage>({ t: 'request-songlist' }, 'songlist');

@@ -10,10 +10,12 @@
 #GAP:72602,4376271953
 #EDITION:Rock Band
 #ALLKARAOKE_ID:metallica-enter-sandman
+#ALLKARAOKE_LASTUPDATE:2025-01-08T10:39:45.844Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman
+#ALLKARAOKE_VOLUME:0,74
 : 27 5 19 Say 
 : 33 4 19 your 
 : 40 7 19 pra

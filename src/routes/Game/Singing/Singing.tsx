@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
+import { Calibration } from 'modules/Calibration/Calibration';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import Modal from 'modules/Elements/Modal';
 import { VideoState } from 'modules/Elements/VideoPlayer';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import events from 'modules/GameEvents/GameEvents';
@@ -9,9 +12,12 @@ import useSong from 'modules/Songs/hooks/useSong';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useFullscreen from 'modules/hooks/useFullscreen';
 import useViewportSize from 'modules/hooks/useViewportSize';
+import isE2E from 'modules/utils/isE2E';
 import { useEffect, useRef, useState } from 'react';
+import { CalibrationIntro } from 'routes/Game/Singing/CalibrationIntro';
 import WaitForReadiness from 'routes/Game/Singing/WaitForReadiness';
 import LayoutGame from 'routes/LayoutGame';
+import { IsCalibratedSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
@@ -30,18 +36,26 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   useBlockScroll();
   const player = useRef<PlayerRef | null>(null);
   const song = useSong(songPreview.id);
+  const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
 
   const { width, height } = useViewportSize();
   const [isEnded, setIsEnded] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(true);
+  const [showCalibrationIntro, setShowCalibrationIntro] = useState(true);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
 
   const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
 
   useBackground(!isTransitionTimeout);
 
+  const showCalibration = !isCalibrated && !isE2E();
   useEffect(() => {
-    if (isOverlayVisible && song.data && (isTransitionTimeout || playerState !== VideoState.UNSTARTED)) {
+    if (
+      !showCalibration &&
+      isOverlayVisible &&
+      song.data &&
+      (isTransitionTimeout || playerState !== VideoState.UNSTARTED)
+    ) {
       setIsOverlayVisible(false);
     }
   }, [song.data, isTransitionTimeout, playerState, isOverlayVisible]);
@@ -64,19 +78,30 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
             <Overlay video={songPreview.video} width={width} height={height} />
             <Artist data-test="song-artist">{songPreview.artist}</Artist>
             <Title data-test="song-title">{songPreview.title}</Title>
-            <WaitForReadiness
-              onFinish={() => {
-                setIsTransitionTimeout(true);
-                player.current?.play();
-              }}
-            />
+            {showCalibration ? (
+              <Modal>
+                <Menu>
+                  {showCalibrationIntro ? (
+                    <CalibrationIntro onContinue={() => setShowCalibrationIntro(false)} />
+                  ) : (
+                    <Calibration onSave={() => setIsCalibrated(true)} />
+                  )}
+                </Menu>
+              </Modal>
+            ) : (
+              <WaitForReadiness
+                onFinish={() => {
+                  setIsTransitionTimeout(true);
+                  player.current?.play();
+                }}
+              />
+            )}
           </BackgroundContainer>
-          {song.data && (
+          {song.data && !showCalibration && (
             <Player
               pauseMenu
               ref={player}
               onStatusChange={setPlayerState}
-              players={singSetup.players}
               song={song.data}
               width={width}
               height={height}

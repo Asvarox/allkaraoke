@@ -81,7 +81,7 @@ const FocusedSongData = styled.div`
   position: relative;
   margin: 0 auto;
   color: white;
-  max-width: 144rem;
+  max-width: 80vw;
   height: 100%;
   pointer-events: none;
 `;

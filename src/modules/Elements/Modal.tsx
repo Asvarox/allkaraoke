@@ -8,8 +8,10 @@ interface Props extends PropsWithChildren {
 export default function Modal({ children, onClose }: Props) {
   return (
     <>
-      <Backdrop onClick={onClose} />
-      <div onClick={onClose} className="fixed top-0 left-0 w-screen h-screen z-[20001] overflow-auto">
+      <Backdrop onClick={onClose} className="starting:opacity-0 opacity-100 duration-300" />
+      <div
+        onClick={onClose}
+        className="fixed top-0 left-0 w-screen h-screen z-[20001] overflow-auto opacity-100 starting:opacity-0 starting:top-20 duration-300">
         <div className="flex items-center justify-center min-h-full">
           <div onClick={(e) => e.stopPropagation()}>{children}</div>
         </div>

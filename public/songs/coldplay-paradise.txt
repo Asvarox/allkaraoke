@@ -5,12 +5,14 @@
 #YEAR:2011
 #VIDEO:v=1G4isv_Fylg
 #LANGUAGE:English
-#GAP:33297,66490047258
+#GAP:33397,66490047258
 #ALLKARAOKE_ID:coldplay-paradise
+#ALLKARAOKE_LASTUPDATE:2024-12-28T19:51:37.416Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
 #ALLKARAOKE_REALBPM:68
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise
+#ALLKARAOKE_VOLUME:0,8
 : 19 2 14 Uh 
 : 23 2 12 uh 
 : 28 5 14 uh 

@@ -15,10 +15,13 @@ test.beforeEach(async ({ page, context, browser }) => {
   pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
+});
 
+test.beforeEach(async ({ page }) => {
   await test.step('Enter the game and go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
   });
 });
@@ -251,7 +254,7 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
 
   await test.step('Select a few songs on the remoteMic - they should open as a preview on the desktop app', async () => {
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.polish1.ID);
-    test.fail(true, 'Select button does not work for first position on the song list');
+    // test.fail(true, 'Select button does not work for first position on the song list');
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.polish1.ID);
 
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
@@ -296,10 +299,6 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   await test.step('Songs selected on remoteMic should be visible on desktop`s app preview, despite the different languages set between them', async () => {
     await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
 
-    test.fail(
-      true,
-      'Song selected by phone is not opened as preview, because it`s song language was not selected on desktop app - another one is opened',
-    );
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.spanish.ID);
 

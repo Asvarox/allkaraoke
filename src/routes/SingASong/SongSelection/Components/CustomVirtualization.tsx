@@ -2,13 +2,9 @@ import styled from '@emotion/styled';
 import {
   CSSProperties,
   ForwardedRef,
-  forwardRef,
   Fragment,
-  ReactElement,
   ReactNode,
-  Ref,
   useCallback,
-  useEffect,
   useImperativeHandle,
   useLayoutEffect,
   useMemo,
@@ -48,13 +44,15 @@ interface Props<T> {
   ) => ReactNode;
   groupContent: (index: number, props?: { style: CSSProperties }) => ReactNode;
   components: Components<T>;
+  Footer?: ReactNode;
   context: T;
   groupSizes: number[];
+  ref?: ForwardedRef<CustomVirtualizedListMethods>;
 }
 
 const isBetween = (value: number, min: number, max: number) => value >= min && value < max;
 
-function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomVirtualizedListMethods>) {
+export function CustomVirtualization<T>(props: Props<T>) {
   const viewportElementRef = useRef<HTMLDivElement | null>(null);
 
   const itemsPositions = useMemo(() => {
@@ -82,6 +80,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     return sizes;
   }, [props.itemHeight, props.groupHeaderHeight, props.groupSizes]);
 
+  const isEmptyList = !itemsPositions.some((item) => item.type === 'item');
+
   const totalHeight = itemsPositions.at(-1)?.bottom ?? 0;
 
   const computeVisibleItemsRange = useCallback(
@@ -101,13 +101,6 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   const [[rangeFrom, rangeTo], setItemsRange] = useState(() => computeVisibleItemsRange(0));
 
   useLayoutEffect(() => {
-    const newItemsRange = computeVisibleItemsRange(viewportElementRef.current?.scrollTop ?? 0);
-    if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
-      setItemsRange(newItemsRange);
-    }
-  }, [computeVisibleItemsRange, props.groupSizes, rangeFrom, rangeTo]);
-
-  useEffect(() => {
     if (viewportElementRef.current) {
       // if the new scrollTop would cause different changes the range to render, update it
       const onScroll = () => {
@@ -122,6 +115,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
       if (viewportElementRef.current.scrollTop > totalHeight) {
         viewportElementRef.current.scrollTo({ top: 0 });
       }
+
+      onScroll(); // todo determine if this is needed?
 
       return () => {
         viewportElementRef.current?.removeEventListener('scroll', onScroll);
@@ -155,31 +150,28 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     groupedItemsToRender.at(-1)?.push(item);
   }
 
-  useImperativeHandle(
-    ref,
-    (): CustomVirtualizedListMethods => ({
-      getItemPositionY: (index) =>
-        (itemsPositions.find((item) => item.type === 'item' && item.index === index)?.bottom ?? -1) - props.itemHeight,
-      scrollTo: (pos: number) => {
-        viewportElementRef.current?.scrollTo({ top: pos });
-      },
-      scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
-        const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
-        if (item) {
-          const scrollPos =
-            (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
-          viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
-        }
-      },
-      scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
-        const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
-        if (item) {
-          viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });
-        }
-      },
-    }),
-  );
-  const { Header, Footer, EmptyPlaceholder } = props.components ?? {};
+  useImperativeHandle(props.ref, () => ({
+    getItemPositionY: (index) =>
+      (itemsPositions.find((item) => item.type === 'item' && item.index === index)?.bottom ?? -1) - props.itemHeight,
+    scrollTo: (pos: number) => {
+      viewportElementRef.current?.scrollTo({ top: pos });
+    },
+    scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
+      const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
+      if (item) {
+        const scrollPos = (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
+        viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
+      }
+    },
+    scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
+      const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
+      if (item) {
+        viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });
+      }
+    },
+  }));
+  const { Header, EmptyPlaceholder } = props.components ?? {};
+  const Footer = props.Footer;
 
   const forcedItemIndex = itemsPositions.findIndex(
     (item) => item.type === 'item' && item.index === props.forceRenderItem,
@@ -194,22 +186,22 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           height: totalHeight,
         }}>
         {Header && <Header context={props.context} />}
+        {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
+          <>
+            {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
+              style: {
+                width: '100%',
+                position: 'absolute',
+                top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
+                left: 0,
+                boxSizing: 'border-box',
+              },
+              'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
+              'data-virtualized-index': itemsPositions[forcedItemIndex].index,
+            })}
+          </>
+        )}
         <div style={{ transform: `translateY(${pt}px)` }}>
-          {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
-            <>
-              {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
-                style: {
-                  width: '100%',
-                  position: 'absolute',
-                  top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
-                  left: 0,
-                  boxSizing: 'border-box',
-                },
-                'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
-                'data-virtualized-index': itemsPositions[forcedItemIndex].index,
-              })}
-            </>
-          )}
           {groupedItemsToRender.map((group, index) => (
             // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
             <div
@@ -232,8 +224,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           ))}
         </div>
       </Wrapper>
-      {groupedItemsToRender.length === 0 && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
-      {Footer && <Footer context={props.context} />}
+      {isEmptyList && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
+      {Footer && Footer}
     </Viewport>
   );
 }
@@ -248,8 +240,3 @@ const Viewport = styled.div`
   height: 100%;
   width: 100%;
 `;
-
-// https://stackoverflow.com/a/58473012
-export const CustomVirtualization = forwardRef(CustomVirtualizationInner) as <T>(
-  p: Props<T> & { ref?: Ref<CustomVirtualizedListMethods> },
-) => ReactElement;

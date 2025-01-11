@@ -14,13 +14,15 @@ import ScoreText from './Components/ScoreText';
 import CanvasDrawing from 'modules/GameEngine/Drawing';
 import fragShader from 'modules/GameEngine/Drawing/Shaders/shader.frag?raw';
 import vertShader from 'modules/GameEngine/Drawing/Shaders/shader.vert?raw';
+import tuple from 'modules/utils/tuple';
+import getPlayerScoreData from 'routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
 
 interface Props {
   song: Song;
   currentStatus: VideoState;
   width: number;
   height: number;
-  onSongEnd: () => void;
+  onSongEnd?: () => void;
   playerSetups: PlayerSetup[];
   duration: number;
   effectsEnabled: boolean;
@@ -134,14 +136,26 @@ const GameOverlay = forwardRef(function (
                 <ScoreText score={GameState.getPlayerScore(0)} />
               </Score>
             ) : (
-              PlayersManager.getPlayers().map((player) => (
-                <Score
-                  key={player.number}
-                  data-test={`player-${player.number}-score`}
-                  data-score={Math.floor(GameState.getPlayerScore(player.number))}>
-                  <ScoreText score={GameState.getPlayerScore(player.number)} />
-                </Score>
-              ))
+              PlayersManager.getPlayers().map((player) => {
+                const scores = PlayersManager.getPlayers().map((player) =>
+                  tuple([player.number, GameState.getPlayerScore(player.number)]),
+                );
+                const { score, isFirst } = getPlayerScoreData(scores, player.number);
+
+                return (
+                  <Score
+                    className="relative"
+                    key={player.number}
+                    data-test={`player-${player.number}-score`}
+                    data-score={Math.floor(score)}>
+                    <ScoreText score={score} />
+                    <div
+                      className={`text-xl transition-all duration-200 absolute rotate-12 top-12 ${isFirst ? '-right-10' : '-right-36'}`}>
+                      {isFirst ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
+                    </div>
+                  </Score>
+                );
+              })
             )}
           </>
         )}

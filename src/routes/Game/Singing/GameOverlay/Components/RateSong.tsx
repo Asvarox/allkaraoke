@@ -6,9 +6,10 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
+import { twc } from 'react-twc';
 
 interface Props {
-  onExit: () => void;
+  onExit?: () => void;
   register: ReturnType<typeof useKeyboardNav>['register'];
 }
 
@@ -41,7 +42,7 @@ export default function RateSong({ register, onExit }: Props) {
     if (issues.length) {
       posthog.capture('rate-song', { issues, ...properties });
     }
-    onExit();
+    onExit?.();
   };
 
   const anySelected = volumeWrong || lyricsNotInSync || badLyrics;
@@ -72,10 +73,7 @@ export default function RateSong({ register, onExit }: Props) {
 }
 
 // todo make it a generic component
-const Checkbox = styled(MenuButton)`
-  justify-content: flex-start;
-  gap: 1rem;
-`;
+const Checkbox = twc(MenuButton)`gap-4 justify-start pl-4`;
 
 const Check = styled.div`
   svg {

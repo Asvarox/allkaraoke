@@ -1,0 +1,330 @@
+#ARTIST:Drowning Pool
+#TITLE:Sinner
+#CREATOR:LilPeep1337
+#BPM:242,18
+#YEAR:2001
+#VIDEO:v=QiKK7ULsqXk
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:32069,00156908085
+#ALLKARAOKE_ID:drowning-pool-sinner
+#ALLKARAOKE_LASTUPDATE:2024-12-31T00:11:26.946Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=149516
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27328
+#ALLKARAOKE_VOLUME:1
+#MP3:Drowning Pool - Sinner.mp3
+#COVER:Drowning Pool - Sinner [CO].jpg
+#BACKGROUND:Drowning Pool - Sinner [BG].jpg
+: 16 4 6 Bend 
+: 24 4 6 me! 
+: 32 4 6 shape 
+: 40 4 6 me! 
+: 48 4 6 mis
+: 56 3 7 di
+: 60 1 6 ~
+: 64 4 6 rect 
+: 72 5 6 me!
+- 77
+: 91 2 4 It's 
+: 95 3 4 all 
+: 99 1 4 the 
+: 103 2 4 same 
+: 107 1 4 to 
+: 109 4 4 me
+: 114 6 3 ~
+- 120 135
+- 135
+: 151 1 7 Look 
+: 153 1 6 at 
+: 155 1 6 all 
+: 157 1 6 this 
+: 159 2 6 use
+: 163 2 6 less 
+: 168 4 6 talk
+- 172
+: 183 1 7 Look 
+: 185 1 6 at 
+: 187 1 6 all 
+: 189 1 6 this 
+: 191 2 6 use
+: 195 2 6 less 
+: 200 4 6 talk
+- 204
+: 215 1 7 Look 
+: 217 1 6 at 
+: 219 1 6 all 
+: 221 1 6 this 
+: 223 2 6 use
+: 227 1 6 less 
+: 231 2 6 talk 
+: 235 1 4 up
+: 239 6 6 on 
+: 248 1 4 the 
+: 252 15 6 cross
+- 267
+: 279 1 -1 You 
+: 283 4 3 look 
+: 291 4 -1 at 
+: 299 3 -1 me
+: 303 3 -3 ~ 
+: 311 1 -3 but 
+: 315 4 3 you 
+: 323 4 -1 don't 
+: 331 3 -1 see
+: 335 4 -3 ~
+- 339
+: 347 6 6 Un
+: 355 4 4 der
+: 363 10 4 stand, 
+* 375 2 4 I'm 
+* 379 2 3 a 
+* 383 3 4 sin
+* 387 2 4 ner
+* 390 3 6 ~
+- 393
+: 407 1 -1 Don't 
+: 411 5 3 cor
+: 419 4 -1 ner 
+: 427 3 -1 me
+: 431 4 -3 ~, 
+: 439 1 -3 don't 
+: 443 4 3 lec
+: 451 4 -1 ture 
+: 459 3 -1 me
+: 463 4 -3 ~
+- 467
+: 475 5 6 Raise 
+: 483 5 4 your 
+: 491 7 4 hands
+: 499 2 4 ~, 
+: 502 1 4 you're
+: 504 2 4 ~ 
+: 507 1 3 a 
+: 511 2 4 sin
+: 515 2 4 ner
+: 518 2 6 ~
+- 520 639
+- 639
+: 655 4 6 Is 
+: 663 4 6 this 
+: 671 4 6 eve
+: 679 4 6 ry
+: 687 4 6 thing 
+: 695 4 6 you 
+: 703 4 6 want
+: 711 5 6 ed?
+- 716 719
+- 719
+: 735 3 4 Find 
+: 739 2 4 an
+: 743 2 4 oth
+: 747 1 4 er 
+: 749 4 4 dream
+: 754 4 3 ~
+- 758 774
+- 774
+* 790 1 7 You 
+* 792 1 7 nev
+* 794 1 6 er 
+* 796 1 6 hear 
+: 798 1 6 a 
+: 800 2 6 word 
+: 803 2 6 I 
+: 807 4 6 say
+- 811
+: 822 1 7 You 
+: 824 1 7 nev
+: 826 1 6 er 
+: 828 1 6 hear 
+: 830 1 6 a 
+: 832 2 6 word 
+: 835 2 6 I 
+: 839 5 6 say
+- 844
+: 853 1 7 You 
+: 855 1 7 nev
+: 857 1 6 er 
+: 859 1 6 hear 
+: 861 1 6 a 
+: 863 2 6 word 
+: 867 2 6 I 
+: 871 2 6 say 
+: 875 2 6 so 
+F 879 19 8 pray!
+- 898 903
+- 903
+: 919 1 -1 You 
+: 923 4 3 look 
+: 931 4 -1 at 
+: 939 3 -1 me
+: 943 3 -3 ~ 
+: 951 1 -3 but 
+: 955 4 3 you 
+: 963 4 -1 don't 
+: 971 3 -1 see
+: 975 4 -3 ~
+- 979
+: 987 6 6 Un
+: 995 4 4 der
+: 1003 10 4 stand, 
+: 1015 2 4 I'm 
+: 1019 1 3 a 
+: 1023 3 4 sin
+: 1027 1 4 ner
+: 1029 3 6 ~
+- 1032
+* 1047 1 -1 Don't 
+* 1051 5 3 cor
+* 1059 4 -1 ner 
+* 1067 3 -1 me
+* 1071 4 -3 ~, 
+: 1079 1 -3 don't 
+: 1084 4 3 lec
+: 1092 4 -1 ture 
+: 1099 4 -1 me
+: 1104 3 -3 ~
+- 1107
+: 1115 5 6 Raise 
+: 1123 5 4 your 
+: 1131 7 4 hands
+: 1139 2 4 ~, 
+: 1142 1 4 you're
+: 1144 2 4 ~ 
+: 1147 1 3 a 
+: 1151 2 4 sin
+: 1155 2 4 ner
+: 1158 2 6 ~
+- 1160 1191
+- 1191
+: 1207 2 -3 I'm 
+: 1211 1 -3 a 
+: 1215 3 -3 sin
+: 1219 11 -3 ner
+: 1231 30 -4 ~
+- 1261 1279
+- 1279
+: 1295 2 5 Look 
+: 1299 2 4 at 
+: 1303 1 2 all 
+: 1305 1 4 these 
+: 1309 2 5 peo
+: 1313 3 4 ple 
+: 1317 1 2 in 
+: 1319 1 4 front 
+: 1321 1 2 of 
+: 1323 1 4 me
+- 1324
+: 1327 2 5 Look 
+: 1331 2 4 at 
+: 1335 1 2 all 
+: 1337 1 4 these 
+: 1341 2 5 peo
+: 1345 3 4 ple 
+* 1349 1 2 in 
+* 1351 1 4 front 
+* 1353 1 2 of 
+* 1355 1 4 me
+- 1356
+: 1359 2 5 Look 
+: 1363 2 4 at 
+: 1367 1 2 all 
+: 1369 1 4 these 
+: 1373 2 5 peo
+: 1377 2 4 ple 
+F 1381 1 2 in 
+F 1383 1 4 front 
+F 1385 1 6 of 
+F 1387 1 8 me
+- 1388
+F 1391 2 8 Look 
+F 1395 2 8 at 
+F 1399 1 10 all 
+F 1401 1 12 these 
+F 1405 2 12 peo
+F 1409 3 12 ple 
+F 1413 1 12 in 
+F 1415 1 12 front 
+F 1417 1 12 of 
+F 1419 1 12 me
+- 1420
+F 1423 11 12 Now!
+- 1434 1543
+- 1543
+: 1559 1 -1 You 
+: 1563 4 3 look 
+: 1571 4 -1 at 
+: 1579 3 -1 me
+: 1583 3 -3 ~ 
+: 1591 1 -3 but 
+* 1595 4 3 you 
+: 1603 4 -1 don't 
+: 1611 3 -1 see
+: 1615 4 -3 ~
+- 1619
+: 1627 6 6 Un
+: 1635 4 4 der
+: 1643 10 4 stand, 
+: 1655 2 4 I'm 
+: 1659 1 3 a 
+: 1663 3 4 sin
+: 1667 1 4 ner
+: 1669 3 6 ~
+- 1672
+: 1687 1 -1 Don't 
+: 1691 5 3 cor
+: 1699 4 -1 ner 
+: 1707 3 -1 me
+: 1711 4 -3 ~, 
+: 1719 1 -3 don't 
+: 1724 4 3 lec
+: 1732 4 -1 ture 
+: 1739 4 -1 me
+: 1744 3 -3 ~
+- 1747
+* 1755 5 6 Raise 
+* 1763 5 4 your 
+* 1771 7 4 hands
+* 1779 2 4 ~, 
+: 1782 1 4 you're
+: 1784 2 4 ~ 
+: 1787 1 4 a 
+: 1791 2 4 sin
+: 1795 2 4 ner
+: 1798 2 6 ~
+- 1800
+: 1815 2 1 You 
+: 1819 2 6 look
+: 1822 2 6 ~ 
+: 1827 4 4 at 
+: 1836 29 4 me
+: 1867 10 3 ~, 
+: 1880 2 1 don't 
+: 1884 5 6 cor
+: 1891 4 4 ner 
+: 1899 7 4 me
+: 1907 3 3 ~
+: 1911 3 4 ~
+: 1915 3 3 ~
+: 1919 3 4 ~
+: 1923 3 3 ~
+: 1927 5 -1 ~
+- 1932
+: 1943 2 -1 You 
+: 1947 2 4 look
+: 1950 2 6 ~ 
+: 1955 4 4 at 
+: 1963 37 4 me
+- 2000
+: 2011 5 6 Raise 
+: 2019 5 4 your 
+: 2027 7 4 hands
+: 2035 2 4 ~, 
+* 2038 1 4 you're
+* 2040 2 4 ~ 
+* 2043 2 4 a 
+* 2048 2 4 sin
+* 2052 1 4 ner
+* 2054 2 6 ~
+E

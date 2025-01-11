@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
@@ -11,11 +12,11 @@ import { TopContainer } from 'routes/SingASong/SongSelection/Components/SongCard
 interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
   focused: boolean;
-  index?: number;
+  songId?: string;
   groupLetter?: string;
   expanded?: boolean;
   background?: boolean;
-  handleClick?: (index: number, groupLetter?: string) => void;
+  handleClick?: (songId: string, groupLetter?: string) => void;
   video?: ReactNode;
   isPopular: boolean;
   forceFlag: boolean;
@@ -27,7 +28,7 @@ export const FinalSongCard = ({
   focused,
   video,
   children,
-  index,
+  songId,
   groupLetter,
   handleClick,
   isPopular,
@@ -37,8 +38,8 @@ export const FinalSongCard = ({
 }: Props) => {
   const expanded = restProps['data-expanded'] ?? false;
   const onClickCallback = useCallback(
-    () => (handleClick ? handleClick(index!, groupLetter) : undefined),
-    [handleClick, index, groupLetter],
+    () => (handleClick ? handleClick(songId!, groupLetter) : undefined),
+    [handleClick, songId, groupLetter],
   );
   const [graphicSetting] = useSettingValue(GraphicSetting);
 
@@ -171,7 +172,7 @@ export const SongCardBackground = styled.div`
   background-position: center center;
 `;
 
-export const SongListEntryDetails = styled.span<{ expanded?: boolean }>`
+export const SongListEntryDetails = styled(Box)<{ expanded?: boolean }>`
   background: rgba(0, 0, 0, 0.7);
 
   width: auto;

@@ -1,0 +1,343 @@
+#ARTIST:twenty øne piløts
+#TITLE:The Line
+#CREATOR:Raygin
+#BPM:285
+#YEAR:2024
+#PREVIEWSTART:74
+#VIDEO:v=E2Rj2gQAyPA
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:24660
+#ALLKARAOKE_ID:twenty-one-pilots-the-line
+#ALLKARAOKE_LASTUPDATE:2024-12-17T00:12:21.120Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:71
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=E2Rj2gQAyPA&list=PLJP5_qSxMbkKnjgQZUJPT6CV09yoIheUj&index=20
+#ALLKARAOKE_PREVIEWEND:110
+#ALLKARAOKE_VOLUME:0,8
+#MP3:twenty øne piløts - The Line.mp3
+#COVER:twenty øne piløts - The Line [CO].jpg
+#BACKGROUND:twenty øne piløts - The Line [BG].jpg
+: 19 2 -3 My 
+: 23 2 4 bo
+: 27 8 4 dy's 
+: 39 4 4 on 
+: 51 2 2 the 
+: 55 8 2 line 
+: 71 8 0 now
+- 79
+: 87 2 4 I 
+: 91 8 4 can't 
+: 103 2 7 fight 
+: 107 8 7 this 
+: 119 8 -1 time 
+: 135 4 -3 now
+- 139
+: 151 2 4 I 
+: 155 8 4 can 
+: 167 2 7 feel 
+: 171 10 7 the 
+: 183 14 7 light 
+: 199 12 6 shine 
+: 215 4 4 on 
+: 223 12 2 my 
+: 239 14 0 face
+: 255 6 -1 ~
+: 263 12 -3 ~
+- 275
+: 279 2 -3 Did 
+: 283 4 -3 I 
+: 291 8 -3 dis
+: 303 2 -3 a
+: 307 8 0 ppoint 
+: 319 8 2 you?
+- 327
+: 335 4 -3 Will 
+: 343 4 -3 they 
+: 351 2 -3 still 
+: 355 8 -3 let 
+: 367 2 -3 me 
+: 371 8 0 o
+: 383 8 2 ver
+- 391
+: 407 2 4 If 
+: 411 8 4 I 
+: 423 8 4 cross 
+: 435 2 2 the 
+: 439 2 2 line
+: 443 8 0 ~?
+- 451 468
+- 468
+: 487 2 0 Take 
+: 491 2 2 a 
+: 495 8 0 seat
+- 503
+: 519 2 0 But 
+: 523 2 2 I'd
+: 527 2 0 ~
+: 531 12 -1 ~ 
+: 551 2 0 rat
+: 555 2 0 her 
+: 559 6 -1 you 
+: 567 4 -1 not 
+: 575 2 -5 be 
+: 579 8 -1 here 
+: 591 8 0 for
+- 599
+: 615 2 0 What 
+: 619 2 2 could 
+: 623 8 0 be 
+: 643 2 -5 my 
+: 647 2 0 fi
+: 651 2 2 ~
+: 655 2 0 nal 
+: 659 12 -1 form
+- 671 676
+- 676
+: 695 2 -1 Stay 
+: 699 2 -1 your 
+: 703 2 -1 pre
+: 707 2 -1 tty 
+: 711 4 -1 eyes 
+: 719 4 -1 on 
+: 727 12 0 course
+- 739 756
+- 756
+: 775 2 7 Keep 
+: 779 8 6 the 
+: 791 2 -1 me
+: 795 4 -1 mo
+: 807 2 6 ries 
+: 811 4 6 of 
+: 823 2 -1 who 
+: 827 4 -1 I 
+: 835 8 -1 was 
+: 847 4 -1 be
+: 855 8 0 fore
+- 863 880
+- 880
+: 899 2 -1 So 
+: 903 2 7 stay 
+: 907 8 6 with 
+: 919 6 -1 me 
+: 927 2 -1 be
+: 931 4 -1 cause
+- 935
+: 947 2 2 My 
+: 951 2 4 bo
+: 955 8 4 dy's 
+: 967 8 4 on 
+: 979 2 2 the 
+: 983 8 2 line 
+: 999 8 0 now
+- 1007
+: 1015 2 4 I 
+: 1019 8 4 can't 
+: 1031 2 7 fight 
+: 1035 8 7 this 
+: 1047 8 -1 time 
+: 1063 8 -3 now
+- 1071
+: 1079 2 4 I 
+: 1083 8 4 can 
+: 1095 2 7 feel 
+: 1099 8 7 the 
+* 1111 14 7 light 
+* 1127 14 6 shine 
+: 1143 4 4 on 
+: 1151 8 2 my 
+: 1167 14 0 face
+: 1183 6 -1 ~
+: 1191 8 -3 ~
+- 1199
+: 1207 2 -3 Did 
+: 1211 4 -3 I 
+: 1219 8 -3 dis
+: 1231 2 -3 a
+: 1235 8 0 ppoint 
+: 1247 8 2 you?
+- 1255
+: 1263 6 -3 Will 
+: 1271 4 -3 they 
+: 1279 2 -3 still 
+: 1283 8 -3 let 
+: 1295 2 -3 me 
+: 1299 8 0 o
+: 1311 8 2 ver
+- 1319
+: 1335 2 4 If 
+: 1339 8 4 I 
+: 1351 8 4 cross 
+: 1363 2 2 the 
+: 1367 2 2 line
+: 1371 4 0 ~?
+- 1375 1396
+- 1396
+: 1415 2 0 Ho
+: 1419 2 2 nest
+: 1423 8 0 ly
+- 1431
+: 1443 2 0 I 
+: 1447 2 0 thought 
+: 1451 2 2 I
+: 1455 2 0 ~
+: 1459 8 -1 ~ 
+: 1491 2 -1 was 
+: 1495 2 -1 fu
+: 1499 4 -1 lly 
+: 1507 2 -1 pre
+: 1511 4 -1 pared 
+: 1519 8 0 for
+- 1527 1536
+- 1536
+: 1555 2 0 The 
+: 1559 6 2 thres
+: 1567 6 2 hold 
+: 1575 4 0 in 
+: 1583 8 -1 store
+- 1591 1604
+- 1604
+: 1623 2 -3 Stay 
+: 1627 2 -1 your 
+: 1631 2 -1 pre
+: 1635 2 -1 tty 
+: 1639 6 -1 eyes 
+: 1647 6 -1 on 
+: 1655 8 0 course
+- 1663 1680
+- 1680
+: 1699 2 -3 I 
+: 1703 2 7 guess 
+: 1707 8 6 I 
+: 1719 2 -1 ne
+: 1723 4 -1 ver 
+: 1735 2 7 rea
+: 1739 8 6 lly 
+: 1751 2 -1 faced 
+: 1759 2 -1 my 
+: 1763 8 -1 fears 
+: 1775 6 -1 be
+: 1783 8 0 fore
+- 1791 1808
+- 1808
+: 1827 2 -1 So 
+: 1831 2 7 stay 
+: 1835 8 6 with 
+: 1847 6 -1 me 
+: 1855 2 -1 be
+: 1859 8 -1 cause
+- 1867
+: 1875 2 -1 My 
+: 1879 2 4 bo
+: 1883 8 4 dy's 
+: 1895 8 4 on 
+: 1907 2 2 the 
+: 1911 8 2 line 
+: 1927 8 0 now
+- 1935
+: 1943 2 4 Pull 
+: 1947 8 4 the 
+: 1959 2 7 blan
+: 1963 8 7 ket 
+: 1975 8 -1 tight 
+: 1991 8 -3 now
+- 1999
+: 2007 2 4 I 
+: 2011 8 4 can 
+: 2023 2 7 feel 
+: 2027 8 7 the 
+* 2039 14 7 light 
+* 2055 14 6 shine 
+: 2071 4 4 on 
+: 2079 8 2 my 
+: 2095 14 0 face
+: 2111 6 -1 ~
+: 2119 8 -3 ~
+- 2127
+: 2135 2 -3 Did 
+: 2139 4 -3 I 
+: 2147 8 -3 dis
+: 2159 2 -3 a
+: 2163 8 0 ppoint 
+: 2175 8 2 you?
+- 2183
+: 2191 6 -3 Will 
+: 2199 4 -3 they 
+: 2207 2 -3 still 
+: 2211 8 -3 let 
+: 2223 2 -3 me 
+: 2227 8 0 o
+: 2239 8 2 ver
+- 2247
+: 2263 2 4 If 
+: 2267 8 4 I 
+: 2279 8 4 cross 
+: 2291 2 2 the 
+: 2295 2 2 line
+: 2299 2 0 ~
+: 2303 8 -3 ~?
+- 2311 2564
+- 2564
+: 2583 2 4 Please 
+: 2587 8 4 don't 
+: 2599 2 4 let 
+: 2603 8 4 them 
+: 2615 8 2 see 
+: 2631 8 0 me
+- 2639
+: 2647 2 4 Sure 
+: 2651 8 4 there's 
+: 2663 2 7 no
+: 2667 8 7 thing 
+: 2679 8 -1 left 
+: 2691 2 -3 to 
+: 2695 8 -3 try
+- 2703
+: 2711 2 4 I 
+: 2715 8 4 can 
+: 2727 2 7 feel 
+: 2731 8 7 the 
+: 2743 14 7 light 
+: 2759 14 6 shine 
+* 2775 6 7 on 
+* 2783 12 9 my 
+* 2799 36 9 face
+- 2835
+: 2839 2 7 Did 
+: 2843 4 7 I 
+: 2851 8 7 dis
+: 2863 2 7 a
+: 2867 8 7 ppoint 
+: 2879 8 9 you?
+- 2887
+: 2895 6 7 Will 
+: 2903 4 7 they 
+: 2911 2 4 still 
+: 2915 8 7 let 
+: 2927 2 2 me 
+: 2931 10 4 o
+: 2943 8 2 ver
+- 2951
+: 2967 2 2 If 
+: 2971 4 4 I 
+: 2983 8 4 cross 
+: 2995 2 2 the 
+: 2999 2 2 line
+: 3003 2 0 ~
+: 3007 8 -3 ~?
+- 3015 3076
+- 3076
+: 3095 2 2 If 
+: 3099 4 4 I 
+: 3111 8 4 cross 
+: 3123 2 2 the 
+: 3127 8 2 line
+- 3135 3204
+- 3204
+: 3223 2 2 If 
+: 3227 4 4 I 
+: 3239 8 4 cross 
+: 3251 2 2 the 
+: 3255 2 2 line
+: 3259 8 0 ~
+E

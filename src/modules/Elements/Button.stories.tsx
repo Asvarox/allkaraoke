@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { ComponentProps } from 'react';
-import { Button, LinkButton } from './Button';
+import { Button } from './Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,14 +23,6 @@ const Template: StoryFn<ComponentProps<typeof Button>> = (args) => {
         <Button {...args} disabled data-focused>
           A disabled focused button
         </Button>
-      </div>
-      <div style={{ display: 'flex', gap: 12 }}>
-        <LinkButton>A button</LinkButton>
-        <LinkButton disabled>A disabled button</LinkButton>
-        <LinkButton data-focused>A focused button</LinkButton>
-        <LinkButton disabled data-focused>
-          A disabled focused button
-        </LinkButton>
       </div>
     </div>
   );

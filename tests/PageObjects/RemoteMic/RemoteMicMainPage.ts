@@ -25,6 +25,8 @@ export class RemoteMicMainPagePO {
     await expect(this.playerNameInput).toHaveValue(playerName);
   }
 
+  indicatorElement = this.page.getByTestId('indicator');
+
   public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
     const colorToNumberMap = {
       blue: '0',
@@ -32,11 +34,11 @@ export class RemoteMicMainPagePO {
       green: '2',
       yellow: '3',
     };
-    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
   }
 
   public async expectPlayerToBeUnassigned() {
-    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', 'none');
   }
 
   public get noPermissionsToControlTheGameAlert() {
@@ -88,15 +90,14 @@ export class RemoteMicMainPagePO {
   }
 
   public async expectConnectButtonToBe(buttonActivity: 'enabled' | 'disabled') {
-    const activityToBooleanMap = {
-      enabled: 'false',
-      disabled: 'true',
-    };
-    await expect(this.connectButton).toHaveAttribute('data-disabled', activityToBooleanMap[buttonActivity]);
+    if (buttonActivity === 'enabled') {
+      await expect(this.connectButton).not.toBeDisabled();
+    } else {
+      await expect(this.connectButton).toBeDisabled();
+    }
   }
 
-  public async clickToConnectMic() {
-    await this.expectConnectButtonToBe('enabled');
+  public async connect() {
     await this.connectButton.click();
   }
 
@@ -114,5 +115,9 @@ export class RemoteMicMainPagePO {
 
   public async goBackByKeyboard() {
     await this.backArrowKeyboardButton.click();
+  }
+
+  public async expectMicInputStateToBe(stateName: 'on' | 'off') {
+    await expect(this.indicatorElement).toHaveAttribute('data-is-mic-on', stateName === 'on' ? 'true' : 'false');
   }
 }

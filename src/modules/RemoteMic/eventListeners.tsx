@@ -99,6 +99,7 @@ const sendPlayerStates = () => {
   RemoteMicManager.broadcastToChannel('remote-mics', { t: 'remote-mics-list', list: remoteMics });
 };
 
+events.playerRemoved.subscribe(sendPlayerStates);
 events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
 events.remoteMicSubscribed.subscribe(sendPlayerStates);

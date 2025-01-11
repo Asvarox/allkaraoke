@@ -12,7 +12,7 @@ import { useInterval } from 'react-use';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 interface Props {
-  onSongEnd: () => void;
+  onSongEnd?: () => void;
   isEnabled: boolean;
 }
 
@@ -42,7 +42,9 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
 
   const skipOutro = () => {
     setSkipping(true);
-    setTimeout(onSongEnd, 700);
+    if (onSongEnd) {
+      setTimeout(onSongEnd, 700);
+    }
 
     const { artist, title } = GameState.getSong()!;
     posthog.capture('outroSkipped', { name: `${artist} - ${title}`, artist, title });

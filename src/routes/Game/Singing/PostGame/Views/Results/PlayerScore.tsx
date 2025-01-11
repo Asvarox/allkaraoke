@@ -83,12 +83,12 @@ const Container = styled.div`
 
 const ScoreTextPlayer = styled.span<{ color: string }>`
   color: ${(props) => props.color};
-  font-size: 4rem;
+  font-size: 3.5rem;
 `;
 
 const ScoreTextScore = styled(ContentElement)`
   background: transparent;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   color: white;
   transition: 400ms ease-in-out;
   position: relative;
@@ -100,7 +100,7 @@ const ScoreTextScore = styled(ContentElement)`
   padding: 0;
 
   &[data-win='true'] {
-    font-size: 8.5rem;
+    font-size: 7.5rem;
     color: ${styles.colors.text.active};
   }
 `;
@@ -109,16 +109,17 @@ const ScoreTextContainer = styled.div`
   display: flex;
   flex: 1;
   width: 100%;
-  height: 8.5rem;
+  height: 7.5rem;
 `;
 
 const HighScoreBadge = styled(Badge)`
   font-size: 3rem;
   opacity: 0;
+  z-index: 2;
 
   &[data-highscore='true'] {
     top: -2.5rem;
-    right: -9rem;
+    right: -4rem;
     ${buttonFocused};
     opacity: 1;
   }

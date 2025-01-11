@@ -42,7 +42,7 @@ const player2 = {
 
 const songID = 'e2e-skip-intro-polish';
 
-test('Mobile phone mode should be playable', async ({ browser, page, context, browserName }) => {
+test('Mobile phone mode should be playable', async ({ browser, page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
@@ -57,7 +57,6 @@ test('Mobile phone mode should be playable', async ({ browser, page, context, br
     await pages.inputSelectionPage.selectSmartphones();
   });
 
-  // Connect microphones
   const remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
   const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
 

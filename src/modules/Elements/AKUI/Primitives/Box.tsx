@@ -11,7 +11,7 @@ export default forwardRef(function Box<T extends ElementType = 'div'>(
   const Component = as || 'div';
   return (
     <Component
-      className={twMerge(`flex flex-col items-center bg-black/50 justify-center box-border`, className)}
+      className={twMerge(`flex flex-col items-center bg-black/50 justify-center box-border rounded-md`, className)}
       {...props}
       ref={ref}>
       {children}

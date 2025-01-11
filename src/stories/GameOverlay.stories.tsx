@@ -121,5 +121,6 @@ const Test = Template.bind({});
 type Story = StoryObj<typeof Test>;
 
 export const GameOverlayStory = {
+  // @ts-expect-error to be fixed
   render: (args) => <Test {...args} />,
 } satisfies Story;

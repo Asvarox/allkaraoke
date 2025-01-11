@@ -3,9 +3,11 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import { FeatureFlags } from 'modules/utils/featureFlags';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { List } from '@mui/icons-material';
+import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
+import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
+import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
@@ -20,11 +22,14 @@ export interface PlaylistEntry {
   groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong'>;
   postGrouping?: (groups: SongGroup[]) => SongGroup[];
   sortingFn?: (a: SongPreview, b: SongPreview) => number;
+  footerComponent?: ReactNode;
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
-  const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Christmas);
+  const isSpecialThemeEnabled = false;
   const songLanguages = useLanguageList(songs);
+  const remoteSongList = useRemoteMicSongList();
+  const { connected } = useRemoteMicServerStatus();
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
@@ -101,8 +106,26 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
         name: 'New',
         filters: { recentlyUpdated: true },
       },
+      connected.length > 0
+        ? {
+            name: 'remote-mics',
+            display: <>From &nbsp;Phones</>,
+            filters: { specificSongs: remoteSongList, skipExcludedLanguages: true },
+            footerComponent: (
+              <div className="flex justify-center">
+                <Text className="text-xl">
+                  Add songs on your <strong>phone</strong> using{' '}
+                  <strong>
+                    <List className="!text-[1em]" /> Song List
+                  </strong>{' '}
+                  tab on the bottom of the screen
+                </Text>
+              </div>
+            ),
+          }
+        : null,
     ];
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
-  }, [songLanguages, isLoading, recommended]);
+  }, [songLanguages, isLoading, recommended, remoteSongList, connected.length]);
 };

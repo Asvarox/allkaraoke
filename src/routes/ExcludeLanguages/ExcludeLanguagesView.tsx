@@ -5,7 +5,6 @@ import { SongPreview } from 'interfaces';
 import { Flag } from 'modules/Elements/Flag';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { typography } from 'modules/Elements/cssMixins';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import isE2E from 'modules/utils/isE2E';
@@ -224,9 +223,6 @@ const LanguageEntry = styled(MenuButton)`
       background: rgba(0, 0, 0, 0.55);
     }
   }
-  ${typography};
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
   gap: 2rem;
   font-size: 2.5rem;

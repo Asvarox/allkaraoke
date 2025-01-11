@@ -20,13 +20,18 @@ module.exports = {
       '5xl': '10rem',
     },
     extend: {
+      boxShadow: {
+        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25)',
+      },
       colors: {
         text: {
           default: styles.colors.text.default,
           active: styles.colors.text.active,
           inactive: styles.colors.text.inactive,
           'player-0': styles.colors.players[0].text,
+          'player-0-christmas': styles.colorSets.christmasGreen.text,
           'player-1': styles.colors.players[1].text,
+          'player-1-christmas': styles.colorSets.christmasRed.text,
         },
         active: styles.colors.text.active,
       },
@@ -58,8 +63,32 @@ module.exports = {
             transform: 'scale(1.055)',
           },
         },
+        calibrationPulse: {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '50%, 100%': {
+            transform: 'scale(0)',
+          },
+        },
+        blink: {
+          '100%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+          '30%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+          '50%': {
+            backgroundColor: 'rgba(200, 200, 200, 0.85)',
+          },
+          '0%': {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          },
+        },
       },
       animation: {
+        blink: 'blink 1050ms ease-in-out infinite both',
+        calibrationPulse: 'calibrationPulse 1.5s ease 1',
         gradient: 'gradient 15s ease infinite',
         focused: 'focused 1000ms ease-in-out infinite both',
         'button-focused': 'buttonFocused 600ms ease-in-out infinite both',
@@ -74,5 +103,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-motion'),
+    // https://github.com/tailwindlabs/tailwindcss/discussions/12039
+    /** @type {import('tailwindcss/types/config').PluginCreator} */
+    ({ addVariant }) => {
+      addVariant('starting', '@starting-style');
+    },
+  ],
 };

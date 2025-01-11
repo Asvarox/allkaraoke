@@ -13,6 +13,7 @@ import Microphone from 'routes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
 import RemoteSettings from 'routes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'routes/RemoteMic/Panels/RemoteSongList';
+import useSendInitialSongList from 'routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
 
 const noSleep = new NoSleep();
 
@@ -37,6 +38,8 @@ function RemoteMic() {
   useEventEffect(events.micMonitoringStarted, () => setMonitoringStarted(true));
   useEventEffect(events.micMonitoringStopped, () => setMonitoringStarted(false));
 
+  useSendInitialSongList(connectionStatus === 'connected');
+
   const [isKeepAwakeOn, setIsKeepAwakeOn] = useState(false);
 
   const setKeepAwake = async (turnOn: boolean) => {
@@ -60,7 +63,7 @@ function RemoteMic() {
     <LayoutGame>
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
-      <Container id="phone-ui-container">
+      <Container id="phone-ui-container" className="pb-24 landscap:pb-0">
         <>
           {activeTab === 'microphone' && (
             <Microphone
@@ -84,8 +87,17 @@ function RemoteMic() {
               connectionError={connectionError}
             />
           )}
-          {activeTab === 'settings' && <RemoteSettings />}
-          <BottomBarFiller />
+          {activeTab === 'settings' && (
+            <RemoteSettings
+              roomId={roomId}
+              monitoringStarted={monitoringStarted}
+              setMonitoringStarted={setMonitoringStarted}
+              connectionStatus={connectionStatus}
+              setIsKeepAwakeOn={setIsKeepAwakeOn}
+              isKeepAwakeOn={isKeepAwakeOn}
+              connectionError={connectionError}
+            />
+          )}
           <BottomBar setActiveTab={setActiveTab} active={activeTab} />
         </>
       </Container>
@@ -93,14 +105,6 @@ function RemoteMic() {
   );
 }
 export default RemoteMic;
-
-const BottomBarFiller = styled.div`
-  height: 6rem;
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    height: 0;
-  }
-`;
 
 const Container = styled.div`
   margin: 0 auto;

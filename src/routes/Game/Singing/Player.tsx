@@ -1,9 +1,8 @@
-import { PlayerSetup, seconds, SingSetup, Song } from 'interfaces';
+import { milliseconds, seconds, SingSetup, Song } from 'interfaces';
 import {
   ComponentProps,
-  ForwardedRef,
-  forwardRef,
-  MutableRefObject,
+  RefAttributes,
+  RefObject,
   useCallback,
   useEffect,
   useImperativeHandle,
@@ -22,7 +21,7 @@ import GameState from '../../../modules/GameEngine/GameState/GameState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 
-interface Props extends ComponentProps<typeof Container> {
+interface Props extends Omit<ComponentProps<typeof Container>, 'ref'>, RefAttributes<PlayerRef> {
   singSetup: SingSetup;
   song: Song;
   width: number;
@@ -30,9 +29,8 @@ interface Props extends ComponentProps<typeof Container> {
   autoplay?: boolean;
   showControls?: boolean;
   onCurrentTimeUpdate?: (newTime: number) => void;
-  onSongEnd: () => void;
+  onSongEnd?: () => void;
   onStatusChange?: (status: VideoState) => void;
-  players: PlayerSetup[];
 
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
@@ -46,7 +44,7 @@ export interface PlayerRef {
   setPlaybackSpeed: (speed: number) => void;
 }
 
-function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
+function usePlayerSetDuration(playerRef: RefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
   const [duration, setDuration] = useState(0);
   useEffect(() => {
     if (playerRef.current && currentStatus === VideoState.PLAYING && duration === 0) {
@@ -60,30 +58,63 @@ function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>
   return duration;
 }
 
-function Player(
-  {
-    song,
-    width,
-    height,
-    autoplay = true,
-    showControls = false,
-    onCurrentTimeUpdate,
-    onSongEnd,
-    onStatusChange,
-    players,
-    effectsEnabled = true,
-    singSetup,
-    restartSong,
-    pauseMenu = false,
-    ...restProps
-  }: Props,
-  ref: ForwardedRef<PlayerRef>,
-) {
-  const player = useRef<VideoPlayerRef | null>(null);
+export const useVideoPlayer = (
+  playerRef: RefObject<VideoPlayerRef | null>,
+  onTimeUpdate?: (timeMs: milliseconds) => void,
+) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
   const [inputLag] = useSettingValue(InputLagSetting);
+
+  useEffect(() => {
+    if (!playerRef.current) {
+      return;
+    }
+    if (currentStatus === VideoState.PLAYING) {
+      const interval = setInterval(async () => {
+        if (!playerRef.current) return;
+
+        const time = Math.max(0, (await playerRef.current.getCurrentTime()) * 1000 - inputLag);
+        setCurrentTime(time);
+        onTimeUpdate?.(time);
+      }, 1000 / FPSCountSetting.get());
+
+      return () => clearInterval(interval);
+    }
+  }, [playerRef, currentStatus, inputLag]);
+
+  return [currentStatus, setCurrentStatus, currentTime] as const;
+};
+
+function Player({
+  song,
+  width,
+  height,
+  autoplay = true,
+  showControls = false,
+  onCurrentTimeUpdate,
+  onSongEnd,
+  onStatusChange,
+  effectsEnabled = true,
+  singSetup,
+  restartSong,
+  pauseMenu = false,
+  ref,
+  ...restProps
+}: Props) {
+  const player = useRef<VideoPlayerRef | null>(null);
   const [pauseMenuVisible, setPauseMenuVisible] = useState(false);
+
+  const updateGameState = useCallback(
+    (time: milliseconds) => {
+      onCurrentTimeUpdate?.(time);
+      GameState.setCurrentTime(time);
+      GameState.update();
+    },
+    [onCurrentTimeUpdate],
+  );
+
+  const [currentStatus, setCurrentStatus] = useVideoPlayer(player, updateGameState);
 
   useEffect(() => {
     GameState.setSong(song);
@@ -93,25 +124,6 @@ function Player(
       GameState.resetSingSetup();
     };
   }, [song, singSetup]);
-
-  useEffect(() => {
-    if (!player.current) {
-      return;
-    }
-    if (currentStatus === VideoState.PLAYING) {
-      const interval = setInterval(async () => {
-        if (!player.current) return;
-
-        const time = Math.max(0, (await player.current.getCurrentTime()) * 1000 - inputLag);
-        setCurrentTime(time);
-        onCurrentTimeUpdate?.(time);
-        GameState.setCurrentTime(time);
-        GameState.update();
-      }, 1000 / FPSCountSetting.get());
-
-      return () => clearInterval(interval);
-    }
-  }, [player, onCurrentTimeUpdate, currentStatus, inputLag]);
 
   const duration = usePlayerSetDuration(player, currentStatus);
 
@@ -199,7 +211,7 @@ function Player(
             width={width}
             height={height}
             onSongEnd={onSongEnd}
-            playerSetups={players}
+            playerSetups={singSetup.players}
             videoPlayerRef={player}
           />
         </Overlay>
@@ -260,4 +272,4 @@ const GoFastButton = styled.div`
   left: 0;
 `;
 
-export default forwardRef(Player);
+export default Player;

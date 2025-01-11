@@ -16,6 +16,8 @@ const getColors = (color: string) => {
   return cachedColors[color];
 };
 
+console.log('cachedColors', cachedColors);
+
 export default function ray(
   canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
@@ -29,17 +31,22 @@ export default function ray(
   if (width <= 0) return;
 
   ctx.globalAlpha = 1;
-  const gradient = ctx.createRadialGradient(x, y, 0, x, y, width / 2);
-  const [cFirst, cLast, c0] = getColors(color);
-  gradient.addColorStop(0, cFirst[randomInt(0, cFirst.length - 1)]);
-  gradient.addColorStop(0.05, cFirst[randomInt(0, cFirst.length - 1)]);
-  gradient.addColorStop(0.15, c0[randomInt(0, c0.length - 1)]);
-  gradient.addColorStop(1, cLast[randomInt(0, cLast.length - 1)]);
-  ctx.beginPath();
-  ctx.arc(x, y, width / 2, 0, 2 * Math.PI);
-  ctx.closePath();
-  ctx.fillStyle = gradient;
-  ctx.fill();
-  ctx.fillStyle = color;
-  ctx.globalAlpha = 1;
+  try {
+    const gradient = ctx.createRadialGradient(x, y, 0, x, y, width / 2);
+    const [cFirst, cLast, c0] = getColors(color);
+    gradient.addColorStop(0, cFirst[randomInt(0, cFirst.length - 1)]);
+    gradient.addColorStop(0.05, cFirst[randomInt(0, cFirst.length - 1)]);
+    gradient.addColorStop(0.15, c0[randomInt(0, c0.length - 1)]);
+    gradient.addColorStop(1, cLast[randomInt(0, cLast.length - 1)]);
+    ctx.beginPath();
+    ctx.arc(x, y, width / 2, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.fillStyle = gradient;
+    ctx.fill();
+    ctx.fillStyle = color;
+    ctx.globalAlpha = 1;
+  } catch (e) {
+    console.log('error', e, x, y, 0, x, y, width / 2);
+    throw e;
+  }
 }

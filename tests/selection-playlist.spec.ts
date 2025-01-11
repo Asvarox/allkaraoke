@@ -43,6 +43,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
   await pages.landingPage.enterTheGame();
 
   await test.step('Select Advanced setup', async () => {
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
     await pages.advancedConnectionPage.goToMainMenu();
   });
@@ -80,11 +81,6 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Select Advanced setup', async () => {
-    await pages.inputSelectionPage.selectAdvancedSetup();
-    await pages.advancedConnectionPage.goToMainMenu();
-  });
-
   await test.step('Go to the Song languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
@@ -101,8 +97,14 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
     await pages.songListPage.openPreviewForSong(unpopularSong.ID);
   });
 
-  await test.step('Play the song and after above 80% complete - exit the song', async () => {
+  await test.step('Select Advanced setup', async () => {
     await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToSongPreview();
+  });
+
+  await test.step('Play the song and after above 80% complete - exit the song', async () => {
     await pages.songPreviewPage.playTheSong();
     await page.waitForTimeout(3_500);
     await pages.gamePage.exitSong();
@@ -124,11 +126,6 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Select Advanced setup', async () => {
-    await pages.inputSelectionPage.selectAdvancedSetup();
-    await pages.advancedConnectionPage.goToMainMenu();
-  });
-
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
@@ -142,11 +139,17 @@ test('A song that is less than 80% complete is not adding to the Selection playl
     await pages.songListPage.searchSong(unpopularSong.title);
   });
 
-  await test.step('Toggle game mode to `Cooperation` and play the song', async () => {
+  await test.step('Toggle game mode to `Cooperation`', async () => {
     await pages.songListPage.openPreviewForSong(unpopularSong.ID);
     await pages.songPreviewPage.toggleGameMode();
     await pages.songPreviewPage.toggleGameMode();
+  });
+
+  await test.step('Go to select Advanced setup and play the song', async () => {
     await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToSongPreview();
     await pages.songPreviewPage.playTheSong();
   });
 
@@ -163,6 +166,8 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   });
 
   await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {
+    await pages.songListPage.goBackToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
@@ -174,8 +179,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Skip to the Edit Songs', async () => {
-    await pages.inputSelectionPage.skipToMainMenu();
+  await test.step('Go to the Edit Songs Page', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
@@ -222,11 +226,6 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  await test.step('Select Advanced setup', async () => {
-    await pages.inputSelectionPage.selectAdvancedSetup();
-    await pages.advancedConnectionPage.goToMainMenu();
-  });
-
   await test.step('Go to the Song Languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
@@ -243,8 +242,11 @@ test('After singing a popular song, the popularity indicator changes to `played 
 
   const popSongID = await pages.songListPage.getSelectedSongID;
 
-  await test.step('Play the song', async () => {
+  await test.step('Go to Select Advanced setup and play the song', async () => {
     await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToSongPreview();
     await pages.songPreviewPage.playTheSong();
   });
 

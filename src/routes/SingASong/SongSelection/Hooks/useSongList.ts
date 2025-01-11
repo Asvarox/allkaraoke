@@ -21,7 +21,10 @@ const groupSongsByLetter = (song: SongPreview): Pick<SongGroup, 'name'> => {
   };
 };
 
-export default function useSongList() {
+/**
+ * @param additionalSong - If provided, the song will be added to the song list and preselected. So e.g. when list contains only polish songs and user remotely selects english song, it will be added to the list and actually selected
+ */
+export default function useSongList(additionalSong: string | null) {
   const songList = useSongIndex();
   const {
     value: { popular },
@@ -31,11 +34,9 @@ export default function useSongList() {
   const isLoading = songList.isLoading || loading;
 
   const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist } =
-    useSongListFilter(songList.data, popular, isLoading);
+    useSongListFilter(songList.data, popular, isLoading, additionalSong);
 
   const groupedSongList = useMemo(() => {
-    if (filteredList.length === 0) return [];
-
     const groups: SongGroup[] = [];
 
     if (filters.search) {
@@ -46,6 +47,7 @@ export default function useSongList() {
 
       return groups;
     } else {
+      if (filteredList.length === 0) return [];
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
 
       sortedList.forEach((song) => {

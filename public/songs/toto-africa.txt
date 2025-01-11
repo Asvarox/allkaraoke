@@ -6,13 +6,15 @@
 #VIDEO:v=FTQbiNvZqaY
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:23443,9187432286
+#GAP:23493,29752953813
 #EDITION:SingStar Rock Ballads
 #ALLKARAOKE_ID:toto-africa
+#ALLKARAOKE_LASTUPDATE:2024-12-27T16:16:36.137Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa
+#ALLKARAOKE_VOLUME:0,75
 : 12 1 47 I 
 : 14 1 51 hear 
 : 16 1 54 the 

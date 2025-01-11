@@ -1,3 +1,4 @@
+import Box from 'modules/Elements/AKUI/Primitives/Box';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';
@@ -101,12 +102,12 @@ const UseKeyboardIndicator = twc(
   Text,
 )`absolute inset-0 bg-black/75 flex items-center justify-center text-white text-md p-8 invisible opacity-0 duration-300 hover:opacity-100 hover:visible`;
 
-const Container = twc.div((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
-  `fixed top-[5rem] right-0 p-2 bg-black/50  flex-col gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
+const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
+  `fixed top-[5rem] right-0 p-2 items-stretch gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
   props['data-visible'] ? 'flex mobile:hidden' : 'hidden',
 ]);
 
-const Kbd = twc.kbd((props: TwcComponentProps<'kbd'> & { disabled?: boolean }) => [
+export const Kbd = twc.kbd((props: TwcComponentProps<'kbd'> & { disabled?: boolean }) => [
   `py-3 px-4 rounded-md border-t-gray-300 border-l-gray-300 border-solid border-[1.25px] border-gray-500 text-gray-700 leading-4 text-sm bg-gray-50 inline-block font-normal`,
   props.disabled ? 'opacity-25' : 'opacity-100',
 ]);

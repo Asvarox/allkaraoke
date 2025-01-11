@@ -92,6 +92,16 @@ class CameraManager extends Listener<[boolean]> {
   };
 
   public getPermissionStatus = () => this.permissionGranted;
+
+  public getLiveCameraFeed = async () => {
+    if (!this.permissionGranted) return;
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      return this.stream;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 }
 
 export default new CameraManager();
