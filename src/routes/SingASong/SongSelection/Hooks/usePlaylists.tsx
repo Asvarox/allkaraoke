@@ -8,10 +8,6 @@ import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
 import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import isDev from 'modules/utils/isDev';
-import isE2E from 'modules/utils/isE2E';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
@@ -30,7 +26,7 @@ export interface PlaylistEntry {
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
-  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(FeatureFlags.Christmas);
+  const isSpecialThemeEnabled = false;
   const songLanguages = useLanguageList(songs);
   const remoteSongList = useRemoteMicSongList();
   const { connected } = useRemoteMicServerStatus();

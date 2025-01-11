@@ -144,7 +144,7 @@ export const useSongListFilter = (
   };
 
   const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
-  const [filters, setFilters] = useState<AppliedFilters>(emptyFilters);
+  const [filters, setFilters] = useState<AppliedFilters>(() => emptyFilters);
 
   useEffect(() => {
     setFilters(emptyFilters);

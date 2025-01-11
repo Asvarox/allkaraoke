@@ -4,7 +4,6 @@ import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackg
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { isChristmasSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import isDev from 'modules/utils/isDev';
 import isE2E from 'modules/utils/isE2E';
@@ -99,7 +98,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
+  // useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
 
   const expanded = keyboardControl;
 

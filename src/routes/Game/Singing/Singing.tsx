@@ -12,9 +12,7 @@ import useSong from 'modules/Songs/hooks/useSong';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useFullscreen from 'modules/hooks/useFullscreen';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { FeatureFlags } from 'modules/utils/featureFlags';
 import isE2E from 'modules/utils/isE2E';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { useEffect, useRef, useState } from 'react';
 import { CalibrationIntro } from 'routes/Game/Singing/CalibrationIntro';
 import WaitForReadiness from 'routes/Game/Singing/WaitForReadiness';
@@ -39,7 +37,6 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   const player = useRef<PlayerRef | null>(null);
   const song = useSong(songPreview.id);
   const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
-  const isCalibrationEnabled = useFeatureFlag(FeatureFlags.Calibration);
 
   const { width, height } = useViewportSize();
   const [isEnded, setIsEnded] = useState(false);
@@ -51,7 +48,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
 
   useBackground(!isTransitionTimeout);
 
-  const showCalibration = !isCalibrated && isCalibrationEnabled && !isE2E();
+  const showCalibration = !isCalibrated && !isE2E();
   useEffect(() => {
     if (
       !showCalibration &&
