@@ -74,7 +74,7 @@ export const eurovisionPlaylist: PlaylistEntry = {
       ision
     </EurovisionDisplay>
   ),
-  filters: { edition: 'esc' },
+  filters: { edition: 'esc', skipExcludedLanguages: true },
   hideNew: true,
   groupData: (song) => {
     const flag = song.artistOrigin ? <SFlag isocode={song.artistOrigin} /> : 'Other';

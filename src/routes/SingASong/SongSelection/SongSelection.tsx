@@ -23,6 +23,7 @@ import SongGroupsNavigation from 'routes/SingASong/SongSelection/Components/Song
 import SongPreview from 'routes/SingASong/SongSelection/Components/SongPreview';
 import { VirtualizedList, VirtualizedListMethods } from 'routes/SingASong/SongSelection/Components/VirtualizedList';
 import useSongSelection from 'routes/SingASong/SongSelection/Hooks/useSongSelection';
+import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
 import { Link } from 'wouter';
 
 interface Props {
@@ -47,12 +48,14 @@ const LIST_PADDING_LEFT_REM = LIST_SIDEBAR_WEIGHT_REM + LIST_PADDING_RIGHT_REM;
 const LIST_GAP_REM = 3.5;
 
 const components: Components<{
-  songPreview: ComponentProps<typeof SongPreview>;
+  songPreviewProps: Omit<ComponentProps<typeof SongPreview>, 'songPreview'> & { songPreview?: SongPreviewEntity };
 }> = {
   Header: ({ context }) => (
     <>
       <SongListHeaderPadding />
-      {context && context.songPreview.songPreview && <SongPreview {...context.songPreview} />}
+      {context && context.songPreviewProps.songPreview && (
+        <SongPreview {...context.songPreviewProps} songPreview={context.songPreviewProps.songPreview} />
+      )}
     </>
   ),
   Footer: () => (
@@ -76,7 +79,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useBackground(true);
   useBlockScroll();
   const {
-    focusedGroup,
     focusedSong,
     moveToSong,
     groupedSongList,
@@ -103,6 +105,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     [songPreview, groupedSongList],
   );
 
+  const selectedPlaylistData = useMemo(
+    () => playlists.find((playlist) => playlist.name === selectedPlaylist),
+    [playlists, selectedPlaylist],
+  );
+
   const list = useRef<VirtualizedListMethods | null>(null);
   const baseUnit = useBaseUnitPx();
   const { width, handleResize } = useViewportSize();
@@ -121,7 +128,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
-    const getSongIndex = (songId: string) => songList.findIndex((song) => song.id === songId);
     global.__songList = {
       scrollToSong: (songId: string) => {
         // If the song is in a new group, we need to remove the '-new-group' suffix
@@ -132,8 +138,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         );
 
         if (songGroup) {
-          const songIndex = getSongIndex(cleanSongId);
-          list.current?.scrollToSongInGroup(songGroup.name, songIndex, 'auto');
+          list.current?.scrollToSongInGroup(songId, 'instant');
           return true;
         }
         return false;
@@ -143,33 +148,31 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     return () => {
       delete global.__songList;
     };
-  }, [groupedSongList, songList]);
+  }, [groupedSongList]);
 
-  const [{ previewTop, previewLeft }, setPositions] = useState({
+  const [{ previewTop, previewLeft }, setPositions] = useState(() => ({
     previewTop: 0,
     previewLeft: 0,
-  });
+  }));
   useEffect(() => {
-    const song = document.querySelector<HTMLDivElement>(
-      `[data-song-index="${focusedSong}"][data-group="${focusedGroup}"]`,
-    );
+    const song = document.querySelector<HTMLDivElement>(`[data-song-id="${focusedSong}"]`);
     if (!isLoading && song) {
-      const position = list.current?.getSongPosition(focusedGroup, focusedSong);
+      const position = list.current?.getSongPosition(focusedSong);
       setPositions({
         previewTop: position?.y ?? 0,
         previewLeft: song.offsetLeft,
       });
     } else if (!isLoading) {
-      console.warn('!!!!!!!!!!!! Song not found !!!!!!!!!!!!', focusedSong, focusedGroup);
+      console.warn(`!!!!!!!!!!!! Song not found "${focusedSong}" !!!!!!!!!!!!`, focusedSong, 'focusedSong');
     }
-  }, [focusedSong, focusedGroup, isLoading, width]);
+  }, [focusedSong, isLoading, width, songList]);
 
   useEffect(() => {
     handleResize(); // Recalculate width/height to account possible scrollbar appearing
     if (!isLoading) {
-      list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
+      list.current?.scrollToSongInGroup(focusedSong);
     }
-  }, [width, focusedSong, focusedGroup, groupedSongList, isLoading, handleResize]);
+  }, [width, focusedSong, groupedSongList, isLoading, handleResize]);
 
   const navigate = useSmoothNavigate();
   useHotkeys('Shift + E', () => navigate(buildUrl(`edit/song/`, { playlist: null, step: 'metadata' })), [navigate]);
@@ -177,13 +180,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useEventEffect(
     events.remoteSongSelected,
     async (songId) => {
-      const songIndex = songList.findIndex((song) => song.id === songId);
-      if (songIndex === -1) {
-        setAdditionalSong(songId);
-        return expandSong();
+      const isSongOnTheList = songList.some((song) => song.id === songId);
+      if (!isSongOnTheList) {
+        return setKeyboardControl(false, () => {
+          setAdditionalSong(songId);
+        });
       }
-      if (focusedSong !== songIndex) {
-        moveToSong(songIndex);
+      if (focusedSong !== songId) {
+        moveToSong(songId);
         if (!keyboardControl) {
           setKeyboardControl(true);
         }
@@ -192,8 +196,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         expandSong();
       }
     },
-    [],
+    [songList, focusedSong, keyboardControl, expandSong, moveToSong],
   );
+
+  if (keyboardControl && additionalSong && additionalSong !== focusedSong && !isLoading) {
+    setAdditionalSong(null);
+  }
 
   return (
     <LayoutGame>
@@ -236,7 +244,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               container={container.current}
               groupedSongList={groupedSongList}
               onScrollToGroup={(group) => {
-                moveToSong(group.songs[0].index);
+                moveToSong(getSongIdWithNew(group.songs[0], group));
 
                 // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
                 setTimeout(() => list.current?.scrollToGroup(group.name), 20);
@@ -249,7 +257,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               ref={container}>
               <VirtualizedList
                 focusedSong={focusedSong}
-                focusedGroup={focusedGroup}
                 ListRowWrapper={ListRow}
                 GroupRowWrapper={GroupRow}
                 ref={list}
@@ -259,12 +266,15 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 components={components}
                 renderGroup={(group) => (
                   <SongsGroupContainer key={group.name} data-highlight={group.name === 'New'}>
-                    <SongsGroupHeader data-group-name={group.name}>{group.displayLong ?? group.name}</SongsGroupHeader>
+                    <SongsGroupHeader data-group-name={group.name} className="rounded-md">
+                      {group.displayLong ?? group.name}
+                    </SongsGroupHeader>
                   </SongsGroupContainer>
                 )}
                 perRow={songsPerRow}
                 renderItem={(songItem, group) => {
-                  const isFocused = songItem.index === focusedSong && group.name === focusedGroup;
+                  const songId = getSongIdWithNew(songItem, group);
+                  const isFocused = songId === focusedSong;
                   return (
                     <SongListEntry
                       {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
@@ -273,11 +283,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                       song={songItem.song}
                       handleClick={isFocused ? expandSong : moveToSong}
                       focused={!showFilters && keyboardControl && isFocused}
-                      index={songItem.index}
+                      songId={songId}
                       groupLetter={group.name}
                       data-song-index={songItem.index}
-                      data-focused={!showFilters && keyboardControl && songItem.index === focusedSong}
-                      data-test={`song-${songItem.song.id}${group.isNew ? '-new-group' : ''}`}
+                      data-song-id={songId}
+                      data-focused={!showFilters && keyboardControl && isFocused}
+                      data-test={`song-${getSongIdWithNew(songItem, group)}`}
                       data-group={group.name}
                       forceFlag={forceFlag}
                     />
@@ -285,7 +296,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 }}
                 placeholder={<SongListEntrySkeleton style={{ visibility: 'hidden' }} />}
                 context={{
-                  songPreview: {
+                  songPreviewProps: {
                     forceFlag,
                     isPopular: !!songPreviewInGroup?.isPopular,
                     keyboardControl: !keyboardControl,
@@ -298,6 +309,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     height: Math.floor(songEntryHeight),
                   },
                 }}
+                Footer={
+                  selectedPlaylistData?.footerComponent ?? (
+                    <AddSongs>
+                      Missing a song? Try{' '}
+                      <Link to="convert/">
+                        <a>adding one</a>
+                      </Link>{' '}
+                      yourself!
+                    </AddSongs>
+                  )
+                }
               />
             </SongListContainer>
           </>

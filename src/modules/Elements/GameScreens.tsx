@@ -90,12 +90,6 @@ export const GameScreens = styled.div`
     }
   }
 
-  a {
-    ${typography};
-    color: ${styles.colors.text.active};
-    text-decoration: underline;
-  }
-
   strong {
     color: ${styles.colors.text.active};
   }

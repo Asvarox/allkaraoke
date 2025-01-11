@@ -70,6 +70,12 @@ export interface NetworkSongListMessage {
   deleted: string[];
 }
 
+export interface NetworkRemoteMicMyListMessage {
+  t: 'my-list';
+  added?: string[];
+  deleted?: string[];
+}
+
 export interface NetworkRequestMicSelectMessage {
   t: 'request-mic-select';
   id: string;
@@ -147,6 +153,7 @@ export interface NetworkStyleChangeMessage {
 }
 
 export type NetworkMessages =
+  | NetworkRemoteMicMyListMessage
   | NetworkSelectSongMessage
   | NetworkSubscribeMessage
   | NetworkUnsubscribeMessage

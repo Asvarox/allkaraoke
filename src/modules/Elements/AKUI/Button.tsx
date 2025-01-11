@@ -5,7 +5,7 @@ import { twc } from 'react-twc';
 
 export const ButtonBase = twc(Box)((props) => {
   return [
-    `!flex-row duration-300 text-md typography cursor-pointer justify-center border-0 bg-black/75 !text-white uppercase shadow-focusable pointer-events-auto`,
+    `!flex-row duration-300 text-md typography cursor-pointer justify-center border-0 bg-black/75 text-white uppercase shadow-focusable pointer-events-auto`,
     !isE2E() && props['data-focused'] ? 'animate-button-focused scale-105' : '',
     props['data-focused'] ? 'bg-active shadow-none' : '',
     props['disabled']

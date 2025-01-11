@@ -119,7 +119,11 @@ export class SongPreviewPagePO {
   }
 
   public async goToInputSelectionPage() {
-    await this.page.getByTestId('select-inputs-button').click();
+    await expect(this.page.getByTestId('select-inputs-button')).toBeVisible();
+    // there can be some weird issues on Firefox where the button is obscured by <html /> element
+    // https://github.com/microsoft/playwright/issues/12298
+    await this.page.waitForTimeout(100);
+    await this.page.getByTestId('select-inputs-button').click({ force: true });
   }
 
   public getUnavailableStatusPlayer(playerNumber: number) {

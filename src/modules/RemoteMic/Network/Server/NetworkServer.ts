@@ -109,6 +109,8 @@ export class NetworkServer {
             } else if (type === 'set-game-input-lag-request') {
               InputLagSetting.set(event.value);
               sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
+            } else if (type === 'my-list') {
+              events.remoteMicSongListUpdated.dispatch(sender.peer, event);
             }
           }
         });
