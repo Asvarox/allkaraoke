@@ -74,6 +74,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
+    await pages.calibration.approveDefaultCalibrationSetting();
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
   });
 

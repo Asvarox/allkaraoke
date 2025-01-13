@@ -111,6 +111,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
+    await pages.calibration.approveDefaultCalibrationSetting();
   });
 
   await test.step('Expect confirmation status from players', async () => {

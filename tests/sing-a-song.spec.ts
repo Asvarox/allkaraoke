@@ -102,6 +102,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player2.number);
     await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2.number, track1);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
+    await pages.calibration.approveDefaultCalibrationSetting();
   });
 
   const p1CL = '[data-test="lyrics-current-player-0"]';
