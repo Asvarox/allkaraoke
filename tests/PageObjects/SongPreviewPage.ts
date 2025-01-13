@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { Calibration } from '../components/Calibration';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongPreviewPagePO {
@@ -7,6 +8,8 @@ export class SongPreviewPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  calibration = new Calibration(this.page, this.context, this.browser);
 
   public get nextButton() {
     return this.page.getByTestId('next-step-button');
@@ -23,6 +26,11 @@ export class SongPreviewPagePO {
 
   public async playTheSong(skipIntro = true) {
     await this.page.getByTestId('play-song-button').click();
+
+    if (this.calibration.continueButton) {
+      await this.calibration.approveDefaultCalibrationSetting();
+    }
+
     await this.page.getByTestId('make-song-go-fast').click();
     if (skipIntro) {
       const locator = this.page.locator('[data-test="skip-intro-info"]');
