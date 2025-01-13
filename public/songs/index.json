@@ -26868,16 +26868,18 @@
     "id": "deep-purple-smoke-on-the-water",
     "title": "Smoke On The Water",
     "artist": "Deep Purple",
-    "video": "zUwEIt9ez7M",
+    "video": "Q2FzZSBD5LE",
     "language": [
       "English"
     ],
     "bpm": 300,
-    "gap": 50950,
+    "gap": 56600,
     "year": "1976",
     "artistOrigin": "GB",
+    "lastUpdate": "2025-01-11T12:08:49.586Z",
     "edition": "SingStar Rocks",
     "genre": "Rock",
+    "videoGap": 7,
     "realBpm": 114,
     "volume": 0.81,
     "author": "Canni",
@@ -26885,7 +26887,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=667",
     "tracks": [
       {
-        "start": 0
+        "start": 20
       }
     ],
     "tracksCount": 1,
