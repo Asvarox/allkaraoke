@@ -78,7 +78,7 @@ export default function EditSection({
     setSelectedSection(index);
     GameState.resetPlayerNotes();
     const firstNoteStart = getSectionStart(sections[index]) * beatLength + song.gap;
-    player.seekTo(firstNoteStart / 1000 - 1.1 * playbackSpeed);
+    player.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
   };
 
   const deleteSection = () => {

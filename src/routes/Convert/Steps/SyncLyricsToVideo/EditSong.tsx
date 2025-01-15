@@ -173,8 +173,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               <Button
                 onClick={() => {
                   const firstNoteStart = getFirstNoteStartFromSections(song.tracks[0].sections) * beatLength + song.gap;
-                  console.log(getFirstNoteStartFromSections(song.tracks[0].sections), firstNoteStart);
-                  player.current?.seekTo(firstNoteStart / 1000 - 1.1 * playbackSpeed);
+                  player.current?.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
                 }}>
                 First section
               </Button>
@@ -182,7 +181,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 onClick={() => {
                   const lastNoteStart =
                     (getLastNotesSection(song.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + song.gap;
-                  player.current?.seekTo(lastNoteStart / 1000 - 1.1 * playbackSpeed);
+                  player.current?.seekTo(lastNoteStart / 1000 - 0.8 * playbackSpeed);
                 }}>
                 Last section
               </Button>
