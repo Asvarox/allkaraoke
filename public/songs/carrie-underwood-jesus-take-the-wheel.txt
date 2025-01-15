@@ -1,0 +1,413 @@
+#ARTIST:Carrie Underwood
+#TITLE:Jesus, Take The Wheel
+#CREATOR:UltraSinger [GitHub] and mindtakerr
+#BPM:380,07
+#YEAR:2005
+#VIDEO:v=lydBPm2KRaU
+#LANGUAGE:English
+#GAP:11623,339647959587
+#ALLKARAOKE_ID:carrie-underwood-jesus-take-the-wheel
+#ALLKARAOKE_LASTUPDATE:2025-01-15T00:11:15.905Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_VOLUME:0,72
+#MP3:Carrie Underwood - Jesus, Take The Wheel.mp3
+#COVER:Carrie Underwood - Jesus, Take The Wheel [CO].jpg
+#BACKGROUND:Carrie Underwood - Jesus, Take The Wheel [BG].jpg
+: 25 5 9 She 
+: 31 4 9 was 
+: 37 7 1 driv
+: 44 7 2 ing 
+: 52 5 2 last 
+: 62 5 2 Fri
+: 67 5 1 day 
+: 75 2 1 on 
+: 78 3 1 her 
+: 82 4 1 way 
+: 86 2 11 to 
+: 92 6 11 Cin
+: 98 6 11 cin
+: 104 3 11 nat
+: 107 3 9 i
+- 110
+: 114 2 9 On 
+: 117 1 9 a 
+: 123 7 11 snow 
+: 132 7 1 white 
+: 142 4 11 Christ
+: 148 3 9 mas 
+: 154 15 9 Eve
+- 169 181
+- 181
+: 206 5 1 Go
+: 211 5 2 ing 
+: 216 9 2 home 
+: 226 2 11 to 
+: 232 3 1 see 
+: 237 3 1 her 
+: 241 6 1 ma
+: 247 5 11 ma 
+: 253 3 11 and 
+: 257 2 11 her 
+: 261 4 11 dad
+: 265 3 9 dy
+- 268
+: 271 3 9 With 
+: 276 2 8 the 
+: 281 6 11 ba
+: 287 5 11 by 
+: 294 3 11 in 
+: 297 2 9 the 
+: 301 8 11 back
+: 310 8 9 seat
+- 318 323
+- 323
+: 348 5 1 Fif
+: 353 5 4 ty 
+: 361 9 6 miles 
+: 372 3 6 to 
+: 379 6 4 go 
+: 388 1 1 and 
+: 392 3 1 she 
+: 395 4 1 was 
+: 402 6 4 run
+: 408 6 1 ning 
+: 416 9 9 low
+- 425
+: 437 2 4 On 
+: 442 7 11 faith 
+: 453 3 9 and 
+: 457 11 11 gas
+: 468 11 11 ol
+: 479 11 1 ine
+- 490
+* 507 2 1 It'd 
+* 511 6 11 been 
+* 518 1 9 a 
+* 521 13 11 long 
+* 536 12 1 hard 
+* 553 22 9 year
+- 575
+: 587 5 9 She 
+: 593 5 9 had 
+: 599 1 9 a 
+: 602 6 1 lot 
+: 609 3 2 on 
+: 613 3 2 her 
+: 617 13 2 mind 
+: 633 1 9 and 
+: 635 2 1 she 
+: 641 4 4 did
+: 645 4 11 n't 
+: 651 6 11 pay 
+: 661 3 1 at
+: 664 3 11 ten
+: 667 3 9 tion
+- 670
+: 672 3 1 She 
+: 676 3 1 was 
+: 682 6 11 go
+: 688 6 11 ing 
+: 697 4 11 way 
+: 704 4 9 too 
+: 713 20 1 fast
+- 733 746
+- 746
+: 771 6 11 Be
+: 777 6 1 fore 
+: 787 6 1 she 
+: 795 11 1 knew 
+: 808 1 4 it 
+: 811 4 11 she 
+: 816 3 11 was 
+: 822 5 11 stand
+: 827 5 9 ing 
+: 834 2 9 on 
+: 837 1 1 a 
+: 842 7 11 thin 
+: 850 5 11 black 
+: 860 6 11 sheet 
+: 868 1 6 of 
+: 871 14 9 glass
+- 885
+: 907 3 1 She 
+: 914 4 4 saw 
+: 921 8 6 both 
+: 932 4 4 their 
+: 937 7 4 lives 
+: 949 4 1 flash 
+: 957 5 4 be
+: 962 5 4 fore 
+: 968 5 1 her 
+: 985 9 1 eyes
+- 994
+: 1006 2 2 She 
+: 1013 4 11 did
+: 1017 4 9 n't 
+: 1025 3 9 e
+: 1028 3 1 ven 
+: 1032 4 11 have 
+: 1041 5 1 time 
+: 1047 1 9 to 
+: 1051 14 1 cry
+- 1065
+: 1071 4 1 She 
+: 1076 3 1 was 
+: 1083 20 11 so 
+: 1112 17 9 scared
+- 1129
+: 1146 1 9 She 
+: 1151 5 4 threw 
+: 1158 2 6 her 
+: 1162 10 4 hands 
+: 1177 1 2 up 
+: 1181 6 4 in 
+: 1187 4 1 the 
+: 1201 4 9 air
+- 1205 1256
+- 1256
+* 1281 6 9 Je
+* 1287 6 11 sus 
+* 1297 5 9 take 
+* 1305 5 8 the 
+* 1311 20 9 wheel 
+* 1331 20 1 ~
+- 1351
+: 1361 7 11 Take 
+: 1369 3 1 it 
+: 1376 9 1 from 
+: 1387 9 11 my 
+: 1397 33 11 hands
+- 1430
+: 1436 6 4 Cause 
+: 1445 1 8 I 
+: 1448 5 4 can't 
+: 1457 8 6 do 
+: 1466 5 8 this
+- 1471
+: 1495 4 8 On 
+: 1501 16 8 my 
+: 1524 32 2 own
+- 1556
+: 1570 7 2 I'm 
+: 1579 6 2 let
+: 1586 10 1 ting 
+: 1597 35 9 go
+- 1632
+: 1637 4 9 So 
+: 1641 8 11 give 
+: 1649 5 1 me 
+: 1654 14 1 one 
+: 1668 8 11 more 
+: 1677 32 11 chance
+- 1709
+: 1719 10 4 Save 
+: 1731 4 4 me 
+: 1736 8 6 from 
+: 1747 7 8 this 
+: 1757 22 9 road 
+: 1781 16 8 I'm 
+: 1799 90 2 on
+- 1889 1898
+- 1898
+: 1923 6 2 Je
+: 1929 6 6 sus 
+: 1939 3 6 take 
+: 1948 3 9 the 
+: 1954 100 4 wheel
+- 2054 2242
+- 2242
+: 2267 3 9 It 
+: 2271 4 9 was 
+: 2278 13 2 still 
+: 2293 3 2 get
+: 2296 3 2 ting 
+: 2302 5 2 cold
+: 2307 4 1 er
+- 2311
+: 2313 2 1 When 
+: 2316 4 1 she 
+: 2321 6 1 made 
+: 2328 2 1 it 
+: 2331 4 11 to 
+: 2337 3 9 the 
+: 2340 6 11 shoul
+: 2346 5 9 der
+- 2351
+: 2354 2 9 And 
+: 2357 1 4 the 
+: 2362 7 11 car 
+: 2372 6 1 came 
+: 2381 4 11 to 
+: 2388 2 4 a 
+: 2392 10 9 stop
+- 2402 2404
+- 2404
+: 2429 3 4 She 
+: 2436 11 2 cried 
+: 2450 4 2 when 
+: 2455 3 9 she 
+: 2462 8 2 saw
+- 2470
+: 2472 4 1 That 
+: 2482 5 1 ba
+: 2487 4 11 by 
+: 2494 2 11 in 
+: 2497 2 9 the 
+: 2501 7 11 back
+: 2508 7 1 seat
+- 2515
+: 2522 7 11 Sleep
+: 2529 7 11 ing 
+: 2537 5 11 like 
+: 2548 2 9 a 
+: 2553 7 9 rock
+- 2560
+: 2577 2 9 And 
+: 2583 7 1 for 
+: 2592 2 9 the 
+: 2597 10 6 first 
+: 2613 14 4 time 
+: 2629 3 1 in 
+: 2633 1 1 a 
+: 2637 10 4 long 
+: 2657 10 9 time
+- 2667
+: 2675 6 9 She 
+: 2682 11 11 bowed 
+: 2693 4 9 her 
+: 2697 7 11 head 
+: 2705 4 11 to 
+: 2712 16 1 pray
+- 2728
+: 2745 4 4 She 
+: 2752 4 11 said 
+: 2758 2 9 I'm 
+: 2763 4 11 sor
+: 2767 4 11 ry 
+: 2778 6 11 for 
+: 2786 5 2 the 
+: 2794 27 9 way
+- 2821
+: 2846 4 11 I've 
+: 2852 8 1 been 
+: 2862 4 11 liv
+: 2866 4 9 ing 
+: 2872 9 9 my 
+: 2882 4 9 life
+- 2886 2893
+- 2893
+: 2918 2 9 I 
+: 2922 8 11 know 
+: 2932 2 11 I've 
+: 2938 5 11 got 
+: 2945 2 9 to 
+: 2953 19 9 change
+- 2972
+: 2984 6 11 So 
+: 2992 7 4 from 
+: 3001 11 6 now 
+: 3015 16 4 on 
+: 3032 5 2 to
+: 3038 60 9 night
+- 3098
+* 3120 7 9 Je
+* 3127 7 11 sus 
+* 3137 5 9 take 
+* 3146 5 8 the 
+* 3152 36 1 wheel
+- 3188
+: 3201 7 11 Take 
+: 3210 5 1 it 
+: 3216 12 1 from 
+: 3228 10 11 my 
+: 3238 30 11 hands
+- 3268
+: 3277 4 4 Cause 
+: 3285 1 4 I 
+: 3289 5 4 can't 
+: 3297 8 6 do 
+: 3308 5 8 this
+- 3313
+: 3319 15 9 On 
+: 3339 14 8 my 
+: 3356 39 2 own
+- 3395
+: 3408 11 2 I'm 
+: 3419 10 2 let
+: 3429 9 1 ting 
+: 3438 27 9 go, 
+: 3475 6 9 so 
+: 3481 8 1 give 
+: 3489 7 1 me 
+: 3496 11 1 one 
+: 3508 8 11 more 
+: 3516 33 11 chance
+- 3549
+: 3556 3 11 And 
+: 3562 9 4 save 
+: 3572 2 4 me 
+: 3578 7 6 from 
+: 3588 4 8 this 
+* 3600 19 9 road 
+* 3621 15 8 I'm 
+* 3637 75 2 on
+- 3712 3729
+- 3729
+: 3754 5 2 Oh 
+: 3761 6 2 Je
+: 3767 6 2 sus 
+: 3778 7 2 take 
+: 3788 5 1 the 
+: 3793 233 1 wheel
+- 4026 4066
+- 4066
+: 4091 7 2 I'm 
+: 4099 9 2 let
+: 4109 7 4 ting 
+: 4118 33 9 go
+- 4151
+: 4156 3 4 So 
+: 4161 4 11 give 
+: 4167 9 1 me 
+: 4181 4 6 one 
+: 4188 18 1 more 
+: 4211 19 11 chance
+- 4230
+: 4240 4 2 To 
+: 4245 5 4 save 
+: 4251 5 4 me 
+: 4258 6 6 from 
+: 4267 7 8 this 
+: 4277 22 9 road 
+: 4300 18 8 I'm 
+: 4320 53 2 on
+- 4373
+: 4379 7 6 From 
+: 4388 7 8 this 
+: 4397 22 9 road 
+: 4420 28 11 I'm 
+: 4450 92 4 on
+- 4542
+: 4564 6 2 Je
+: 4570 6 2 sus 
+: 4579 7 2 take 
+: 4588 3 9 the 
+: 4595 97 4 wheel
+- 4692 4705
+- 4705
+: 4730 9 4 Oh 
+: 4747 8 4 take 
+: 4758 3 4 it 
+: 4766 4 1 take 
+: 4777 2 2 it 
+: 4782 7 11 from 
+: 4792 27 9 me
+- 4819 4834
+- 4834
+: 4859 42 8 Oh 
+: 4914 85 9 whoa 
+: 5006 37 1 ooh
+: 5061 12 1 ~
+: 5083 46 9 ~
+E

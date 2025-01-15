@@ -1010,10 +1010,10 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 13515.23076923077,
+    "gap": 13565.23076923077,
     "year": "2017",
     "artistOrigin": "NO",
-    "lastUpdate": "2023-11-09T21:07:15.438Z",
+    "lastUpdate": "2025-01-14T20:12:50.591Z",
     "realBpm": 65,
     "volume": 1,
     "author": "airBN",
@@ -7853,6 +7853,32 @@
     "local": false
   },
   {
+    "id": "ariana-grande-touch-it",
+    "title": "Touch It",
+    "artist": "Ariana Grande",
+    "video": "60QQAw22J4I",
+    "language": [
+      "English"
+    ],
+    "bpm": 201.92,
+    "gap": 12084.270998415213,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:16.818Z",
+    "genre": "Pop",
+    "realBpm": 101,
+    "volume": 0.74,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandetouchit",
+    "local": false
+  },
+  {
     "id": "ariana-grande-we-cant-be-friends-wait-for-your-love",
     "title": "We can't be friends (wait for your love)",
     "artist": "Ariana Grande",
@@ -9993,6 +10019,31 @@
     "local": false
   },
   {
+    "id": "babymetal-megitsune",
+    "title": "Megitsune",
+    "artist": "Babymetal",
+    "video": "cK3NMZAUKGw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 284.08,
+    "gap": 14686.761475640664,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-01-15T00:11:15.009Z",
+    "realBpm": 142,
+    "volume": 0.74,
+    "author": "Su-Metal",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "babymetalmegitsune",
+    "local": false
+  },
+  {
     "id": "babymetal-x-electric-callboy-ratatata",
     "title": "Ratatata",
     "artist": "Babymetal x Electric Callboy",
@@ -10357,6 +10408,34 @@
     ],
     "tracksCount": 1,
     "search": "backstreetboysshowmethemeaningofbeinglonely",
+    "local": false
+  },
+  {
+    "id": "backstreet-boys-the-call",
+    "title": "The Call",
+    "artist": "Backstreet Boys",
+    "video": "wMOkm57vu0k",
+    "language": [
+      "English"
+    ],
+    "bpm": 207.82,
+    "gap": 6509.510153017034,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:14.994Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 0.75,
+    "author": "rote_rose",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168142",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=24909",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysthecall",
     "local": false
   },
   {
@@ -20376,6 +20455,81 @@
     "local": false
   },
   {
+    "id": "carrie-underwood-good-girl",
+    "title": "Good Girl",
+    "artist": "Carrie Underwood",
+    "video": "7-uothzTaaQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.34,
+    "gap": 14532.928698614229,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.901Z",
+    "realBpm": 126,
+    "volume": 0.75,
+    "author": "jomofloo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carrieunderwoodgoodgirl",
+    "local": false
+  },
+  {
+    "id": "carrie-underwood-jesus-take-the-wheel",
+    "title": "Jesus, Take The Wheel",
+    "artist": "Carrie Underwood",
+    "video": "lydBPm2KRaU",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.07,
+    "gap": 11623.339647959587,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.905Z",
+    "realBpm": 152,
+    "volume": 0.72,
+    "author": "UltraSinger [GitHub] and mindtakerr",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carrieunderwoodjesustakethewheel",
+    "local": false
+  },
+  {
+    "id": "carrie-underwood-two-black-cadillacs",
+    "title": "Two Black Cadillacs",
+    "artist": "Carrie Underwood",
+    "video": "PiLKkwZdZtg",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.92,
+    "gap": 7853.81869500249,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.903Z",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "jomofloo",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carrieunderwoodtwoblackcadillacs",
+    "local": false
+  },
+  {
     "id": "cascada-everytime-we-touch",
     "title": "Everytime We Touch",
     "artist": "Cascada",
@@ -20671,6 +20825,32 @@
     ],
     "tracksCount": 1,
     "search": "celinedionidroveallnight",
+    "local": false
+  },
+  {
+    "id": "celine-dion-i-surrender",
+    "title": "I Surrender",
+    "artist": "Céline Dion",
+    "video": "hnjGqS1Doto",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 16373.157894736842,
+    "year": "2002",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-01-15T00:11:15.915Z",
+    "genre": "Pop",
+    "realBpm": 114,
+    "volume": 0.72,
+    "author": "savik1993",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "celinedionisurrender",
     "local": false
   },
   {
@@ -22552,6 +22732,31 @@
     ],
     "tracksCount": 1,
     "search": "chumbawambatubthumping",
+    "local": false
+  },
+  {
+    "id": "ciro-y-los-persas-astros",
+    "title": "Astros",
+    "artist": "Ciro y Los Persas",
+    "video": "yQcaUpZZ-18",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 295.55,
+    "gap": 31808.94332600237,
+    "year": "2012",
+    "artistOrigin": "AR",
+    "lastUpdate": "2025-01-15T00:11:16.449Z",
+    "realBpm": 148,
+    "volume": 0.75,
+    "author": "rook22",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ciroylospersasastros",
     "local": false
   },
   {
@@ -30337,6 +30542,31 @@
     "local": false
   },
   {
+    "id": "divididos-spaghetti-del-rock",
+    "title": "Spaghetti del rock",
+    "artist": "Divididos",
+    "video": "cdzpf_T2qaA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 391.44,
+    "gap": 1924.6787247087677,
+    "year": "2000",
+    "artistOrigin": "AR",
+    "lastUpdate": "2025-01-15T00:11:17.024Z",
+    "genre": "Rock",
+    "realBpm": 101,
+    "volume": 0.74,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "divididosspaghettidelrock",
+    "local": false
+  },
+  {
     "id": "dj-jazzy-jeff-the-fresh-prince-summertime",
     "title": "Summertime",
     "artist": "DJ Jazzy Jeff & The Fresh Prince",
@@ -30573,6 +30803,32 @@
     "local": false
   },
   {
+    "id": "djo-end-of-beginning",
+    "title": "End Of Beginning",
+    "artist": "Djo",
+    "video": "EoVQ_TQFJy0",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 5185.625,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.011Z",
+    "genre": "Pop",
+    "realBpm": 160,
+    "volume": 0.75,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "djoendofbeginning",
+    "local": false
+  },
+  {
     "id": "dnce-cake-by-the-ocean",
     "title": "Cake By The Ocean",
     "artist": "DNCE",
@@ -30725,6 +30981,58 @@
     ],
     "tracksCount": 1,
     "search": "dokidokiliteratureclubyourreality",
+    "local": false
+  },
+  {
+    "id": "dolly-parton-9-to-5",
+    "title": "9 To 5",
+    "artist": "Dolly Parton",
+    "video": "UbxUSsFXYo4",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.6,
+    "gap": 9161.996007984031,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.907Z",
+    "genre": "Country",
+    "realBpm": 103,
+    "volume": 0.8,
+    "author": "ultrastarsongs",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dollyparton9to5",
+    "local": false
+  },
+  {
+    "id": "dolly-parton-i-will-always-love-you",
+    "title": "I Will Always Love You",
+    "artist": "Dolly Parton",
+    "video": "lKsQR72HY0s",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 12860,
+    "year": "1974",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.905Z",
+    "genre": "Country",
+    "realBpm": 136,
+    "volume": 0.8,
+    "author": "claudio bertozzi",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dollypartoniwillalwaysloveyou",
     "local": false
   },
   {
@@ -32018,6 +32326,36 @@
     ],
     "tracksCount": 1,
     "search": "duranduransaveaprayer",
+    "local": false
+  },
+  {
+    "id": "duran-duran-the-reflex",
+    "title": "The Reflex",
+    "artist": "Duran Duran",
+    "video": "J5ebkj9x5Ko",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.3,
+    "gap": 10187.247345654738,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:14.989Z",
+    "genre": "New Wave",
+    "realBpm": 127,
+    "previewStart": 81,
+    "previewEnd": 111,
+    "volume": 0.75,
+    "author": "williluegger",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4518",
+    "tracks": [
+      {
+        "name": "The Reflex",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "duranduranthereflex",
     "local": false
   },
   {
@@ -42014,6 +42352,36 @@
     "local": false
   },
   {
+    "id": "gustavo-cerati-engana",
+    "title": "Engaña",
+    "artist": "Gustavo Cerati",
+    "video": "eGrx3tZzjwE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 120,
+    "gap": 29927,
+    "year": "1999",
+    "artistOrigin": "AR",
+    "lastUpdate": "2025-01-15T00:11:17.203Z",
+    "genre": "Rock",
+    "videoGap": 3,
+    "realBpm": 111,
+    "previewStart": 31,
+    "previewEnd": 93,
+    "volume": 0.78,
+    "author": "Lucas",
+    "authorUrl": "Lucas",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gustavoceratiengana",
+    "local": false
+  },
+  {
     "id": "gusttavo-lima-balada",
     "title": "Balada",
     "artist": "Gusttavo Lima",
@@ -47330,6 +47698,31 @@
     "local": false
   },
   {
+    "id": "jbo-alles-nur-geklaut",
+    "title": "Alles nur geklaut",
+    "artist": "J.B.O.",
+    "video": "Rjgkmpxo7wc",
+    "language": [
+      "German"
+    ],
+    "bpm": 320.72,
+    "gap": 13077.834871539037,
+    "year": "2018",
+    "lastUpdate": "2025-01-15T00:11:17.205Z",
+    "genre": "Heavy Metal",
+    "realBpm": 160,
+    "volume": 0.73,
+    "author": "THE SPY",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jboallesnurgeklaut",
+    "local": false
+  },
+  {
     "id": "jeanne-die-kamikaze-diebin-intro",
     "title": "Intro",
     "artist": "Jeanne die Kamikaze Diebin",
@@ -49405,6 +49798,34 @@
     "local": false
   },
   {
+    "id": "joost-ski-aggu-otto-waalkes-friesenjung",
+    "title": "Friesenjung",
+    "artist": "Joost, Ski Aggu & Otto Waalkes",
+    "video": "LMzAssOr2zE",
+    "language": [
+      "German"
+    ],
+    "bpm": 322,
+    "gap": 19.161490683229886,
+    "year": "2023",
+    "lastUpdate": "2025-01-15T00:11:17.384Z",
+    "realBpm": 161,
+    "previewStart": 47,
+    "previewEnd": 95,
+    "volume": 0.75,
+    "author": "Viktor1234678",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167305",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27305",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joostskiagguottowaalkesfriesenjung",
+    "local": false
+  },
+  {
     "id": "jordin-sparks-feat-chris-brown-no-air",
     "title": "No Air",
     "artist": "Jordin Sparks feat. Chris Brown",
@@ -51427,10 +51848,10 @@
       "English"
     ],
     "bpm": 362.51,
-    "gap": 21806.923946925603,
+    "gap": 21656.923946925603,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-21T00:11:32.911Z",
+    "lastUpdate": "2025-01-14T20:10:10.699Z",
     "edition": "[Duet]-Songs",
     "genre": "Hip-Hop",
     "realBpm": 90,
@@ -56648,6 +57069,31 @@
     "local": false
   },
   {
+    "id": "lana-del-rey-carmen",
+    "title": "Carmen",
+    "artist": "Lana Del Rey",
+    "video": "L6K8Uq88BEQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.4,
+    "gap": 20756.94610778443,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.004Z",
+    "realBpm": 99,
+    "volume": 0.79,
+    "author": "magigram",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreycarmen",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-cola",
     "title": "Cola",
     "artist": "Lana Del Rey",
@@ -56723,6 +57169,31 @@
     ],
     "tracksCount": 1,
     "search": "lanadelreyfeattheweekndlustforlife",
+    "local": false
+  },
+  {
+    "id": "lana-del-rey-national-anthem",
+    "title": "National Anthem",
+    "artist": "Lana Del Rey",
+    "video": "DuEEnZk4-48",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.88,
+    "gap": 27594.935859715195,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:15.001Z",
+    "realBpm": 85,
+    "volume": 0.74,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreynationalanthem",
     "local": false
   },
   {
@@ -56805,6 +57276,32 @@
     "local": false
   },
   {
+    "id": "lana-del-rey-shades-of-cool",
+    "title": "Shades Of Cool",
+    "artist": "Lana Del Rey",
+    "video": "rJABBmAMXnY",
+    "language": [
+      "English"
+    ],
+    "bpm": 283.21,
+    "gap": 20120.67960170898,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:14.996Z",
+    "genre": "Alternative",
+    "realBpm": 138,
+    "volume": 0.74,
+    "author": "mus31",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreyshadesofcool",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-summertime-sadness",
     "title": "Summertime Sadness",
     "artist": "Lana Del Rey",
@@ -56827,6 +57324,32 @@
     ],
     "tracksCount": 1,
     "search": "lanadelreysummertimesadness",
+    "local": false
+  },
+  {
+    "id": "lana-del-rey-ultraviolence",
+    "title": "Ultraviolence",
+    "artist": "Lana Del Rey",
+    "video": "ZFWC4SiZBao",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.3,
+    "gap": 18434.97434143004,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-15T00:11:14.998Z",
+    "genre": "Alternative",
+    "realBpm": 79,
+    "volume": 0.75,
+    "author": "mus31",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreyultraviolence",
     "local": false
   },
   {
@@ -60653,6 +61176,32 @@
     ],
     "tracksCount": 1,
     "search": "luciaperezquemequitenlobailao",
+    "local": false
+  },
+  {
+    "id": "luciano-pavarotti-nessun-dorma",
+    "title": "Nessun Dorma",
+    "artist": "Luciano Pavarotti",
+    "video": "RdTBml4oOZ8",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 192,
+    "gap": 16394.375,
+    "year": "1973",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-15T00:11:16.262Z",
+    "realBpm": 58,
+    "volume": 1,
+    "author": "kout",
+    "sourceUrl": "https://www.youtube.com/watch?v=RdTBml4oOZ8",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lucianopavarottinessundorma",
     "local": false
   },
   {
@@ -66956,10 +67505,10 @@
       "English"
     ],
     "bpm": 398.01,
-    "gap": 72602.4376271953,
+    "gap": 72752.4376271953,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2025-01-08T10:39:45.844Z",
+    "lastUpdate": "2025-01-13T16:35:22.848Z",
     "edition": "Rock Band",
     "genre": "Metal",
     "videoGap": 2,
@@ -74657,6 +75206,33 @@
     "local": false
   },
   {
+    "id": "oasis-im-outta-time",
+    "title": "I'm Outta Time",
+    "artist": "Oasis",
+    "video": "R5mFKeL67Dk",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.48,
+    "gap": 918.1748107364074,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.446Z",
+    "genre": "Rock",
+    "realBpm": 77,
+    "volume": 0.93,
+    "author": "oasis",
+    "sourceUrl": "https://www.youtube.com/watch?v=R5mFKeL67Dk",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oasisimouttatime",
+    "local": false
+  },
+  {
     "id": "oasis-live-forever",
     "title": "Live Forever",
     "artist": "Oasis",
@@ -77667,6 +78243,32 @@
     "local": false
   },
   {
+    "id": "patricio-rey-y-sus-redonditos-de-ricota-tarea-fina",
+    "title": "Tarea fina",
+    "artist": "Patricio Rey y sus Redonditos de Ricota",
+    "video": "regpkbAt5MU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 255.09,
+    "gap": 23842.352816652947,
+    "year": "1991",
+    "artistOrigin": "AR",
+    "lastUpdate": "2025-01-15T00:11:16.633Z",
+    "genre": "Rock Nacional",
+    "realBpm": 127,
+    "volume": 0.72,
+    "author": "Lucas",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "patricioreyysusredonditosdericotatareafina",
+    "local": false
+  },
+  {
     "id": "paul-mccartney-michael-jackson-say-say-say",
     "title": "Say Say Say",
     "artist": "Paul McCartney & Michael Jackson",
@@ -79023,6 +79625,32 @@
     "local": false
   },
   {
+    "id": "pink-floyd-goodbye-blue-sky",
+    "title": "Goodbye Blue Sky",
+    "artist": "Pink Floyd",
+    "video": "bn6YnUt4Vuk",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.7,
+    "gap": 19189.89898989899,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.832Z",
+    "genre": "Progressive Rock",
+    "realBpm": 109,
+    "volume": 0.84,
+    "author": "Lucas",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pinkfloydgoodbyebluesky",
+    "local": false
+  },
+  {
     "id": "pink-floyd-high-hopes",
     "title": "High Hopes",
     "artist": "Pink Floyd",
@@ -79049,6 +79677,32 @@
     ],
     "tracksCount": 1,
     "search": "pinkfloydhighhopes",
+    "local": false
+  },
+  {
+    "id": "pink-floyd-money",
+    "title": "Money",
+    "artist": "Pink Floyd",
+    "video": "-0kcet4aPpQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.97,
+    "gap": 29430.882339098716,
+    "year": "1973",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.832Z",
+    "genre": "Rock",
+    "realBpm": 126,
+    "volume": 0.78,
+    "author": "mustangfred et mlef",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pinkfloydmoney",
     "local": false
   },
   {
@@ -79790,6 +80444,33 @@
     "local": false
   },
   {
+    "id": "polima-westcoast-pailita-paloma-mami-feid-de-la-ghetto-ultra-solo-remix",
+    "title": "Ultra Solo Remix",
+    "artist": "Polimá Westcoast, Pailita, Paloma Mami, Feid, De la Ghetto",
+    "video": "Qm_tHR9iwGo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 219.9,
+    "gap": 6900.807639836289,
+    "year": "2022",
+    "artistOrigin": "CO",
+    "lastUpdate": "2025-01-15T00:11:15.913Z",
+    "realBpm": 110,
+    "previewStart": 57,
+    "previewEnd": 90,
+    "volume": 0.72,
+    "author": "CrazyN",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "polimawestcoastpailitapalomamamifeiddelaghettoultrasoloremix",
+    "local": false
+  },
+  {
     "id": "polo-el-ultimo-beso",
     "title": "El último beso",
     "artist": "Polo",
@@ -80466,6 +81147,56 @@
     ],
     "tracksCount": 1,
     "search": "psychosticknumbersicanonlycounttofour",
+    "local": false
+  },
+  {
+    "id": "pulp-common-people",
+    "title": "Common People",
+    "artist": "Pulp",
+    "video": "yuTMWgOduFM",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.514,
+    "gap": 6690.373076124988,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:17.023Z",
+    "genre": "BRitpop",
+    "realBpm": 160,
+    "volume": 0.77,
+    "author": "ZNXINEOHP",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pulpcommonpeople",
+    "local": false
+  },
+  {
+    "id": "pulp-disco-2000",
+    "title": "Disco 2000",
+    "artist": "Pulp",
+    "video": "qJS3xnD7Mus",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 23899.29411764706,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.834Z",
+    "realBpm": 133,
+    "volume": 0.77,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pulpdisco2000",
     "local": false
   },
   {
@@ -82130,6 +82861,31 @@
     ],
     "tracksCount": 1,
     "search": "rammsteinduhast",
+    "local": false
+  },
+  {
+    "id": "rammstein-fruhling-in-paris",
+    "title": "Frühling in Paris",
+    "artist": "Rammstein",
+    "video": "X5DY4yxu7_8",
+    "language": [
+      "German"
+    ],
+    "bpm": 256.02,
+    "gap": 13953.98406374502,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-15T00:11:16.447Z",
+    "realBpm": 64,
+    "volume": 0.74,
+    "author": "Ultrastar-Songs",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rammsteinfruhlinginparis",
     "local": false
   },
   {
@@ -96605,6 +97361,59 @@
     "local": false
   },
   {
+    "id": "the-beatles-a-hard-days-night",
+    "title": "A Hard Day's Night",
+    "artist": "The Beatles",
+    "video": "Yjyj8qnqkYI",
+    "language": [
+      "English"
+    ],
+    "bpm": 281.28,
+    "gap": 14665.053792514587,
+    "year": "1964",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.819Z",
+    "genre": "Rock",
+    "realBpm": 136,
+    "volume": 0.77,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=A%20Hard%20Day%27s%20Night&sid=2c3a93b6c792fc3a7b3797c3f6cd080d",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesaharddaysnight",
+    "local": false
+  },
+  {
+    "id": "the-beatles-across-the-universe",
+    "title": "Across The Universe",
+    "artist": "The Beatles",
+    "video": "90M60PzmxEE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 9150,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.820Z",
+    "genre": "Psych Folk",
+    "realBpm": 151,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesacrosstheuniverse",
+    "local": false
+  },
+  {
     "id": "the-beatles-all-you-need-is-love",
     "title": "All You Need Is Love",
     "artist": "The Beatles",
@@ -96685,6 +97494,31 @@
     "local": false
   },
   {
+    "id": "the-beatles-get-back",
+    "title": "Get Back",
+    "artist": "The Beatles",
+    "video": "IKJqecxswCA",
+    "language": [
+      "English"
+    ],
+    "bpm": 369,
+    "gap": 27471.255093724532,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.822Z",
+    "genre": "Pop",
+    "realBpm": 123,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesgetback",
+    "local": false
+  },
+  {
     "id": "the-beatles-help",
     "title": "Help!",
     "artist": "The Beatles",
@@ -96709,6 +97543,31 @@
     ],
     "tracksCount": 1,
     "search": "thebeatleshelp",
+    "local": false
+  },
+  {
+    "id": "the-beatles-helter-skelter",
+    "title": "Helter Skelter",
+    "artist": "The Beatles",
+    "video": "vWW2SzoAXMo",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.67,
+    "gap": 2378.0259716836504,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.823Z",
+    "genre": "Pop",
+    "realBpm": 84,
+    "volume": 0.73,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatleshelterskelter",
     "local": false
   },
   {
@@ -96738,6 +97597,30 @@
     "local": false
   },
   {
+    "id": "the-beatles-hey-bulldog",
+    "title": "Hey Bulldog",
+    "artist": "The Beatles",
+    "video": "M4vbJQ-MrKo",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.84,
+    "gap": 13421.844727010552,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.824Z",
+    "realBpm": 102,
+    "volume": 0.74,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesheybulldog",
+    "local": false
+  },
+  {
     "id": "the-beatles-hey-jude",
     "title": "Hey Jude",
     "artist": "The Beatles",
@@ -96761,6 +97644,82 @@
     ],
     "tracksCount": 1,
     "search": "thebeatlesheyjude",
+    "local": false
+  },
+  {
+    "id": "the-beatles-i-me-mine",
+    "title": "I Me Mine",
+    "artist": "The Beatles",
+    "video": "dYCcJZRtkXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.95,
+    "gap": 6547.283145498291,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.825Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesimemine",
+    "local": false
+  },
+  {
+    "id": "the-beatles-i-want-you-shes-so-heavy",
+    "title": "I Want You (She's So Heavy)",
+    "artist": "The Beatles",
+    "video": "tAe2Q_LhY8g",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.2,
+    "gap": 12524.512874966817,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.828Z",
+    "genre": "Pop",
+    "realBpm": 116,
+    "volume": 0.76,
+    "author": "Lucas",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesiwantyoushessoheavy",
+    "local": false
+  },
+  {
+    "id": "the-beatles-ive-got-a-feeling",
+    "title": "I've Got A Feeling",
+    "artist": "The Beatles",
+    "video": "DbKPZd5oihc",
+    "language": [
+      "English"
+    ],
+    "bpm": 329.26,
+    "gap": 5637.143378107336,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.827Z",
+    "genre": "Rock",
+    "realBpm": 82,
+    "volume": 0.73,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesivegotafeeling",
     "local": false
   },
   {
@@ -96792,6 +97751,56 @@
     "local": false
   },
   {
+    "id": "the-beatles-lucy-in-the-sky-with-diamonds",
+    "title": "Lucy In The Sky With Diamonds",
+    "artist": "The Beatles",
+    "video": "aGPTfxdw_lw",
+    "language": [
+      "English"
+    ],
+    "bpm": 336.11,
+    "gap": 5188.178572491149,
+    "year": "1967",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.829Z",
+    "genre": "Pop",
+    "realBpm": 69,
+    "volume": 0.75,
+    "author": "Lucas",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatleslucyintheskywithdiamonds",
+    "local": false
+  },
+  {
+    "id": "the-beatles-she-came-in-through-the-bathroom-window",
+    "title": "She Came In Through The Bathroom Window",
+    "artist": "The Beatles",
+    "video": "NVv7IzEVf3M",
+    "language": [
+      "English"
+    ],
+    "bpm": 318.2,
+    "gap": 5473.056568196103,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.830Z",
+    "realBpm": 81,
+    "volume": 0.74,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesshecameinthroughthebathroomwindow",
+    "local": false
+  },
+  {
     "id": "the-beatles-she-loves-you",
     "title": "She Loves You",
     "artist": "The Beatles",
@@ -96814,6 +97823,31 @@
     ],
     "tracksCount": 1,
     "search": "thebeatlesshelovesyou",
+    "local": false
+  },
+  {
+    "id": "the-beatles-strawberry-fields-forever",
+    "title": "Strawberry Fields Forever",
+    "artist": "The Beatles",
+    "video": "HtUH9z_Oey8",
+    "language": [
+      "English"
+    ],
+    "bpm": 184.8,
+    "gap": 9903.297529538131,
+    "year": "1967",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-15T00:11:16.831Z",
+    "genre": "Pop",
+    "realBpm": 103,
+    "volume": 0.82,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesstrawberryfieldsforever",
     "local": false
   },
   {
@@ -100827,10 +101861,10 @@
       "English"
     ],
     "bpm": 241.95,
-    "gap": 28758.059516429013,
+    "gap": 29008.059516429013,
     "year": "2021",
     "artistOrigin": "CA",
-    "lastUpdate": "2024-02-20T21:16:31.372Z",
+    "lastUpdate": "2025-01-14T20:08:38.396Z",
     "realBpm": 121,
     "volume": 0.67,
     "author": "AngelosTag",
@@ -103229,6 +104263,30 @@
     ],
     "tracksCount": 1,
     "search": "traviemccoyfeatbrunomarsbillionaire",
+    "local": false
+  },
+  {
+    "id": "travis-scott-feat-hvme-goosebumps",
+    "title": "Goosebumps",
+    "artist": "Travis Scott feat. HVME",
+    "video": "W5b-a8Nzmag",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 150,
+    "year": "2022",
+    "lastUpdate": "2025-01-15T00:11:15.916Z",
+    "realBpm": 130,
+    "volume": 0.7,
+    "author": "blewmaxx",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "travisscottfeathvmegoosebumps",
     "local": false
   },
   {
@@ -106175,10 +107233,10 @@
       "English"
     ],
     "bpm": 327.7,
-    "gap": 12712.981385413488,
+    "gap": 12662.981385413488,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2024-12-17T13:30:19.404Z",
+    "lastUpdate": "2025-01-14T20:11:58.788Z",
     "genre": "Parody",
     "realBpm": 81,
     "volume": 0.85,
@@ -107864,6 +108922,32 @@
     ],
     "tracksCount": 1,
     "search": "yohannaisittrue",
+    "local": false
+  },
+  {
+    "id": "yoko-nagaso-yume-wo-kanaete-doraemon",
+    "title": "Yume wo Kanaete Doraemon",
+    "artist": "Yoko Nagaso",
+    "video": "b-nqKIJczVE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 246.04,
+    "gap": 7203.5488538449035,
+    "year": "2005",
+    "lastUpdate": "2025-01-15T00:11:16.093Z",
+    "genre": "Anime",
+    "realBpm": 123,
+    "volume": 0.81,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "name": "Yume Wo Kanaete (TV)",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yokonagasoyumewokanaetedoraemon",
     "local": false
   },
   {
