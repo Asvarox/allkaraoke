@@ -24,10 +24,10 @@ export class SongPreviewPagePO {
     await this.page.keyboard.press('Enter', { delay: 40 });
   }
 
-  public async playTheSong(skipIntro = true) {
+  public async playTheSong(skipIntro = true, calibration = true) {
     await this.page.getByTestId('play-song-button').click();
 
-    if (this.calibration.continueButton) {
+    if (calibration) {
       await this.calibration.approveDefaultCalibrationSetting();
     }
 

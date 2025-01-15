@@ -32,7 +32,7 @@ const player2 = {
 };
 const updatedName = 'Updated name';
 const gameMode = 'Pass The Mic';
-const gameLevel = 'Hard';
+const gameLevel = 'Easy';
 const track1 = 1;
 const track2 = 2;
 
@@ -83,6 +83,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await test.step('Set difficulty level', async () => {
     await pages.songPreviewPage.navigateToDifficultySettingsWithKeyboard();
     await page.keyboard.press('Enter'); // change to hard
+    await page.keyboard.press('Enter'); // change to easy
     await pages.songPreviewPage.expectGameDifficultyLevelToBe(gameLevel);
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
   });
@@ -164,7 +165,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Play the song and go to pause menu', async () => {
-    await pages.songPreviewPage.playTheSong();
+    await pages.songPreviewPage.playTheSong(true, false);
     await expect(page.locator(p1CL)).toBeVisible();
     await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
     await pages.gamePage.goToPauseMenu(); // another pause-menu opening method

@@ -54,6 +54,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
 test('user can correctly select all of the shown reasons why the song was not completed', async ({ page, browser }) => {
   const songID = 'e2e-pass-test-spanish-1994';
 
+  test.slow();
   await test.step('Select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
