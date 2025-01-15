@@ -1,9 +1,9 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
 import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
+import { getFirstNoteStartFromSections, getLastNotesSection } from 'modules/Songs/utils/notesSelectors';
 import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
 import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
 import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
@@ -89,13 +89,12 @@ const playerHeight = (playerWidth / 16) * 9;
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
   const [currentTime, setCurrentTime] = useState<number>(0);
+  const [playbackSpeed, setPlaybackSpeed] = useState(1);
 
   const [gapShift, setGapShift] = useState<number>(0);
   const [videoGapShift, setVideoGapShift] = useState<number>(0);
   const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
-  const [playerKey, setPlayerKey] = useState(0);
   const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
-  const [effectsEnabled, setEffectsEnabled] = useState<boolean>(false);
   const [trackNames, setTrackNames] = useState(song.tracks.map((track) => track.name ?? undefined));
   const [lyricChanges, setLyricChanges] = useState<Record<number, Record<number, Record<number, string>>>>({});
 
@@ -147,7 +146,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
       <Grid item xs={8} data-test="player-container">
         <Box sx={{ width: playerWidth, height: playerHeight }}>
           <Player
-            key={playerKey}
+            key={0}
             song={newSong}
             showControls
             autoplay={false}
@@ -155,7 +154,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             height={playerHeight}
             ref={player}
             onCurrentTimeUpdate={setCurrentTime}
-            effectsEnabled={effectsEnabled}
+            effectsEnabled={false}
             singSetup={singSetup}
             onSongEnd={() => undefined}
           />
@@ -167,9 +166,27 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <AdjustPlayback
               player={player.current}
               currentTime={currentTime}
-              effectsEnabled={effectsEnabled}
-              onEffectsToggle={() => setEffectsEnabled((current) => !current)}
+              playbackSpeed={playbackSpeed}
+              setPlaybackSpeed={setPlaybackSpeed}
             />
+            <div className="flex justify-between">
+              <Button
+                onClick={() => {
+                  const firstNoteStart = getFirstNoteStartFromSections(song.tracks[0].sections) * beatLength + song.gap;
+                  console.log(getFirstNoteStartFromSections(song.tracks[0].sections), firstNoteStart);
+                  player.current?.seekTo(firstNoteStart / 1000 - 1.1 * playbackSpeed);
+                }}>
+                First section
+              </Button>
+              <Button
+                onClick={() => {
+                  const lastNoteStart =
+                    (getLastNotesSection(song.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + song.gap;
+                  player.current?.seekTo(lastNoteStart / 1000 - 1.1 * playbackSpeed);
+                }}>
+                Last section
+              </Button>
+            </div>
           </>
         )}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
@@ -229,6 +246,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           </Grid>
           <Grid item xs={8}>
             <EditSection
+              playbackSpeed={playbackSpeed}
               song={newSong}
               currentTime={currentTime}
               beatLength={beatLength}

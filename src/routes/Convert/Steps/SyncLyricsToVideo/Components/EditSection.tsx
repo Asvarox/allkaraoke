@@ -15,7 +15,7 @@ import { Song } from 'interfaces';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
+import { getFirstNoteStartFromSections, getSectionStart } from 'modules/Songs/utils/notesSelectors';
 import { useEffect, useState } from 'react';
 import { msec } from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import useCurrentSectionIndex from 'routes/Game/Singing/Hooks/useCurrentSectionIndex';
@@ -26,6 +26,7 @@ interface Props {
   currentTime: number;
   beatLength: number;
   player: PlayerRef;
+  playbackSpeed: number;
   onRecordChange: (changeRecords: ChangeRecord[]) => void;
   onLyricChange: (changeRecords: LyricChangeRecord) => void;
   lyricChanges: Record<number, Record<number, Record<number, string>>>;
@@ -60,6 +61,7 @@ export default function EditSection({
   player,
   onRecordChange,
   onLyricChange,
+  playbackSpeed,
   onTrackNameChange,
   lyricChanges,
 }: Props) {
@@ -75,7 +77,8 @@ export default function EditSection({
   const onSectionClick = (index: number) => {
     setSelectedSection(index);
     GameState.resetPlayerNotes();
-    player.seekTo((sections[index].start * beatLength + song.gap) / 1000);
+    const firstNoteStart = getSectionStart(sections[index]) * beatLength + song.gap;
+    player.seekTo(firstNoteStart / 1000 - 1.1 * playbackSpeed);
   };
 
   const deleteSection = () => {

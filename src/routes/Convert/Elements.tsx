@@ -1,11 +1,9 @@
-import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
 import { Button, Tooltip } from '@mui/material';
 import { ComponentProps } from 'react';
+import { twc } from 'react-twc';
 
-export const Pre = styled.span`
-  font-family: monospace;
-`;
+export const Pre = twc.span`font-mono`;
 
 export const inputAction = (action: ComponentProps<typeof Button>['onClick'], enabled: boolean, label = 'Lookup') => ({
   InputProps: {

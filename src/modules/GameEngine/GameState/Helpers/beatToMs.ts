@@ -1,6 +1,6 @@
-import { Song, SongPreview } from 'interfaces';
+import { milliseconds, Song, SongPreview } from 'interfaces';
 import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 
-export default function beatToMs(beat: number, song: Song | SongPreview): number {
+export default function beatToMs(beat: number, song: Song | SongPreview): milliseconds {
   return getSongBeatLength(song) * beat;
 }

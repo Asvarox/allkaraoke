@@ -7,6 +7,7 @@ import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
 import { twc } from 'react-twc';
+import { InputLagSetting } from 'routes/Settings/SettingsState';
 
 interface Props {
   onExit?: () => void;
@@ -28,6 +29,7 @@ export default function RateSong({ register, onExit }: Props) {
     const properties = {
       songId: song?.id,
       songLastUpdated: song?.lastUpdate,
+      inputLag: InputLagSetting.get(),
     };
     const issues = [];
     if (lyricsNotInSync) {
