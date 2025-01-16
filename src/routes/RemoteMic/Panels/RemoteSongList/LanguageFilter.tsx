@@ -38,8 +38,8 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
 
   return (
     <>
-      {open && (
-        <Modal onClose={handleClose}>
+      <Modal onClose={handleClose} open={open}>
+        {open && (
           <Menu data-test="languages-container" spacing="tight">
             {filteredLanguageList.map(({ name, count }) => {
               const isExcluded = excludedLanguages.length && excludedLanguages.includes(name);
@@ -64,8 +64,8 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
               Close
             </Menu.Button>
           </Menu>
-        </Modal>
-      )}
+        )}
+      </Modal>
       {children({ open: () => setOpen(true) })}
     </>
   );

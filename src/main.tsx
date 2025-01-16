@@ -18,6 +18,7 @@ import isPreRendering from 'modules/utils/isPreRendering';
 import { randomInt } from 'modules/utils/randomValue';
 import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
 import storage from 'modules/utils/storage';
+import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
@@ -104,9 +105,11 @@ const root = createRoot(container!);
 
 root.render(
   // <StrictMode>
-  <CacheProvider value={emotionCache}>
-    <App />
-    <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
-  </CacheProvider>,
+  <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
+    <CacheProvider value={emotionCache}>
+      <App />
+      <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
+    </CacheProvider>
+  </MotionConfig>,
   // </StrictMode>,
 );

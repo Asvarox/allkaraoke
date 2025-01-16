@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { buttonFocused } from 'modules/Elements/Button';
 import { focused, typography } from 'modules/Elements/cssMixins';
+import Modal from 'modules/Elements/Modal';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { memo, useState } from 'react';
 import PlayerChangeModal from 'routes/RemoteMic/Components/PlayerChangeModal';
@@ -30,9 +31,15 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
         )}{' '}
         <SwapHorizIcon />
       </PlayerChangeContainer>
-      {isOpen && (
-        <PlayerChangeModal id={RemoteMicClient.getClientId()!} playerNumber={playerNumber} onModalClose={closeModal} />
-      )}
+      <Modal onClose={closeModal} open={isOpen}>
+        {isOpen && (
+          <PlayerChangeModal
+            id={RemoteMicClient.getClientId()!}
+            playerNumber={playerNumber}
+            onModalClose={closeModal}
+          />
+        )}
+      </Modal>
     </>
   );
 });

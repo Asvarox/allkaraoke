@@ -78,8 +78,8 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
             <Overlay video={songPreview.video} width={width} height={height} />
             <Artist data-test="song-artist">{songPreview.artist}</Artist>
             <Title data-test="song-title">{songPreview.title}</Title>
-            {showCalibration ? (
-              <Modal>
+            <Modal open={showCalibration}>
+              {showCalibration && (
                 <Menu>
                   {showCalibrationIntro ? (
                     <CalibrationIntro onContinue={() => setShowCalibrationIntro(false)} />
@@ -87,8 +87,9 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                     <Calibration onSave={() => setIsCalibrated(true)} />
                   )}
                 </Menu>
-              </Modal>
-            ) : (
+              )}
+            </Modal>
+            {!showCalibration && (
               <WaitForReadiness
                 onFinish={() => {
                   setIsTransitionTimeout(true);

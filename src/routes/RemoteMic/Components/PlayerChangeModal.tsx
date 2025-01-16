@@ -1,6 +1,5 @@
 import { Menu } from 'modules/Elements/AKUI/Menu';
 import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
-import Modal from 'modules/Elements/Modal';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
@@ -40,45 +39,43 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
   const joined = playerNumber !== null;
 
   return (
-    <Modal onClose={onModalClose}>
-      <Menu>
-        {header && <h2>{header}</h2>}
-        {([0, 1, 2, 3] as const).map((number) => {
-          const occupant = list.find((mic) => mic.number === number);
-          const isOwn = number === playerNumber;
+    <Menu>
+      {header && <h2>{header}</h2>}
+      {([0, 1, 2, 3] as const).map((number) => {
+        const occupant = list.find((mic) => mic.number === number);
+        const isOwn = number === playerNumber;
 
-          return (
-            <Menu.Button
-              key={number}
-              size="small"
-              data-test={`change-to-player-${number}`}
-              onClick={() => selectPlayer(number)}
-              disabled={isOwn}
-              className="gap-2"
-              style={{ color: styles.colors.players[number].perfect.fill }}>
-              {colorNames[style][number]}
-              {isOwn || occupant ? (
-                <span className="text-gray-300 text-sm" data-test="mic-occupant">
-                  {' '}
-                  ({isOwn ? 'You' : occupant?.name})
-                </span>
-              ) : (
-                ''
-              )}
-            </Menu.Button>
-          );
-        })}
-        <Menu.Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
-          Unassign
-        </Menu.Button>
-        <hr />
-        <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
-          Remove
-        </Menu.Button>
-        <Menu.Button onClick={onModalClose} size="small">
-          Close
-        </Menu.Button>
-      </Menu>
-    </Modal>
+        return (
+          <Menu.Button
+            key={number}
+            size="small"
+            data-test={`change-to-player-${number}`}
+            onClick={() => selectPlayer(number)}
+            disabled={isOwn}
+            className="gap-2"
+            style={{ color: styles.colors.players[number].perfect.fill }}>
+            {colorNames[style][number]}
+            {isOwn || occupant ? (
+              <span className="text-gray-300 text-sm" data-test="mic-occupant">
+                {' '}
+                ({isOwn ? 'You' : occupant?.name})
+              </span>
+            ) : (
+              ''
+            )}
+          </Menu.Button>
+        );
+      })}
+      <Menu.Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
+        Unassign
+      </Menu.Button>
+      <hr />
+      <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
+        Remove
+      </Menu.Button>
+      <Menu.Button onClick={onModalClose} size="small">
+        Close
+      </Menu.Button>
+    </Menu>
   );
 }
