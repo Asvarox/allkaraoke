@@ -10,7 +10,17 @@ import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { ComponentProps, memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  ComponentProps,
+  memo,
+  useCallback,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import LayoutGame from 'routes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -162,17 +172,18 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         previewTop: position?.y ?? 0,
         previewLeft: song.offsetLeft,
       });
+      list.current?.scrollToSongInGroup(focusedSong);
     } else if (!isLoading) {
       console.warn(`!!!!!!!!!!!! Song not found "${focusedSong}" !!!!!!!!!!!!`, focusedSong, 'focusedSong');
     }
   }, [focusedSong, isLoading, width, songList]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     handleResize(); // Recalculate width/height to account possible scrollbar appearing
     if (!isLoading) {
-      list.current?.scrollToSongInGroup(focusedSong);
+      list.current?.scrollToSongInGroup(focusedSong, 'auto');
     }
-  }, [width, focusedSong, groupedSongList, isLoading, handleResize]);
+  }, [width, selectedPlaylist, filters.search, isLoading, handleResize]);
 
   const navigate = useSmoothNavigate();
   useHotkeys('Shift + E', () => navigate(buildUrl(`edit/song/`, { playlist: null, step: 'metadata' })), [navigate]);
