@@ -12,7 +12,6 @@ import useSong from 'modules/Songs/hooks/useSong';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useFullscreen from 'modules/hooks/useFullscreen';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import isE2E from 'modules/utils/isE2E';
 import { useEffect, useRef, useState } from 'react';
 import { CalibrationIntro } from 'routes/Game/Singing/CalibrationIntro';
 import WaitForReadiness from 'routes/Game/Singing/WaitForReadiness';
@@ -48,7 +47,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
 
   useBackground(!isTransitionTimeout);
 
-  const showCalibration = !isCalibrated && !isE2E();
+  const showCalibration = !isCalibrated;
   useEffect(() => {
     if (
       !showCalibration &&

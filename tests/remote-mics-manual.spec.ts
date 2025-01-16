@@ -14,7 +14,7 @@ const gameCode = '12345';
 const gameCodeIncorr = '123';
 const playerName = 'test';
 
-test('Should provide proper ux for manual connection', async ({ browser, page }) => {
+test('Should provide proper ux for manual connection', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.joinExistingGame();
   await pages.joinExistingGamePage.confirmWifiConnection();

@@ -105,6 +105,7 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
+    await pages.calibration.approveDefaultCalibrationSetting();
   });
 
   await test.step('Check if skip intro is possible', async () => {

@@ -45,6 +45,7 @@ test('Cooperation mode', async ({ page }) => {
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
+    await pages.calibration.approveDefaultCalibrationSetting();
   });
 
   await test.step('Players cooperation score is visible', async () => {
