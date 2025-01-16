@@ -7,15 +7,16 @@ import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import ConnectRemoteMic from 'routes/ConnectRemoteMic/ConnectRemoteMic';
 
 interface Props {
+  open: boolean;
   closeModal: () => void;
 }
-function QRCodeModal({ closeModal }: Props) {
+function QRCodeModal({ closeModal, open }: Props) {
   const { register } = useKeyboardNav({
     onBackspace: closeModal,
   });
 
   return (
-    <Modal onClose={closeModal}>
+    <Modal onClose={closeModal} open={open}>
       <MenuContainer>
         <ConnectRemoteMic />
         <Button {...register('quick-connect-close', closeModal)}>Close</Button>

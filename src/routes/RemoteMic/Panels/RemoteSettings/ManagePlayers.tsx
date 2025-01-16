@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'modules/Elements/Menu';
+import Modal from 'modules/Elements/Modal';
 import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
@@ -39,18 +40,20 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
 
   return (
     <Container data-test="manage-players">
-      {open && (
-        <PlayerChangeModal
-          id={mic.id}
-          playerNumber={mic.number}
-          onModalClose={() => setOpen(false)}
-          header={
-            <>
-              Change <strong className="ph-no-capture">{mic.name}</strong>:
-            </>
-          }
-        />
-      )}
+      <Modal open={open} onClose={() => setOpen(false)}>
+        {open && (
+          <PlayerChangeModal
+            id={mic.id}
+            playerNumber={mic.number}
+            onModalClose={() => setOpen(false)}
+            header={
+              <>
+                Change <strong className="ph-no-capture">{mic.name}</strong>:
+              </>
+            }
+          />
+        )}
+      </Modal>
       <RemoteMicEntry
         onClick={() => setOpen(true)}
         data-test="remote-mic-entry"

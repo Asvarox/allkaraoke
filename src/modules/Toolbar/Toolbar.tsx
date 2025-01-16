@@ -18,7 +18,7 @@ function Toolbar() {
 
   return (
     <>
-      {isModalOpen && <QRCodeModal closeModal={closeModal} />}
+      <QRCodeModal closeModal={closeModal} open={isModalOpen} />
       <ToolbarContainer>
         {hasContent && (
           <Tooltip title="Toggle help" place="bottom-end">
