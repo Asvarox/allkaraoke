@@ -125,6 +125,7 @@ export interface HighScoreEntity {
 
 export type seconds = number;
 export type milliseconds = number;
+export type songBeat = number;
 
 // From https://github.com/peers/peerjs/blob/releases/2.0.0/lib/enums.ts
 export enum PeerErrorType {

@@ -195,7 +195,7 @@ function Player({
   useKeyboardHelp(help, effectsEnabled);
   return (
     <Container {...restProps}>
-      {pauseMenuVisible && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
+      <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} open={pauseMenuVisible} />
       {currentStatus !== VideoState.UNSTARTED && (
         <Overlay
           style={{

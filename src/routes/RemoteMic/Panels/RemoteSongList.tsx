@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Search } from '@mui/icons-material';
+import { ArrowRight, Search } from '@mui/icons-material';
 import { SongPreview } from 'interfaces';
-import { uniqBy } from 'lodash-es';
+import { groupBy, uniqBy } from 'lodash-es';
 import { Badge } from 'modules/Elements/Badge';
 import { Flag } from 'modules/Elements/Flag';
 import { Input } from 'modules/Elements/Input';
@@ -15,7 +15,8 @@ import { NetworkSongListMessage } from 'modules/RemoteMic/Network/messages';
 import SongDao from 'modules/Songs/SongsService';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
-import { useEffect, useMemo, useState } from 'react';
+import isE2E from 'modules/utils/isE2E';
+import { ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { twc } from 'react-twc';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import LanguageFilter from 'routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
@@ -39,6 +40,9 @@ export const useExcludedLanguages = createPersistedState<string[]>('remote-mic-e
 export const useSelectedList = createPersistedState<'list' | 'queue'>('remote-mic-selected-song-list');
 export const useSearchState = createPersistedState<string>('remote-mic-song-list-search');
 
+const getMainArtistName = (artist: string) => artist.split(' feat')[0];
+const isArtistPresent = (a: string, b: string[]) => b.some((artist) => artist.toLowerCase() === a.toLowerCase());
+
 function RemoteSongList({
   roomId,
   monitoringStarted,
@@ -51,6 +55,10 @@ function RemoteSongList({
   const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
   const permissions = usePermissions();
   const originalSongList = useSongIndex();
+  const [tab, setTab] = useSelectedList('list');
+  const [search, setSearch] = useSearchState('');
+  const [excludedLanguages, setExcludedLanguages] = useExcludedLanguages([]);
+  const { savedSongList, toggleSong } = useMySongList();
 
   const [overrides, setOverrides] = useState<NetworkSongListMessage | undefined>();
   useEffect(() => {
@@ -82,20 +90,11 @@ function RemoteSongList({
     [originalSongList.data, overrides],
   );
 
-  const languages = useLanguageList(songList);
-  const [search, setSearch] = useSearchState('');
-  const [excludedLanguages, setExcludedLanguages] = useExcludedLanguages([]);
-
-  const { savedSongList, toggleSong } = useMySongList();
-  const [tab, setTab] = useSelectedList('list');
-
-  const unit = useBaseUnitPx();
-
   const changeTab = (tab: 'list' | 'queue') => {
     setTab(tab);
     setSearch('');
   };
-  const finalSongList = useMemo(() => {
+  const filteredSongList = useMemo(() => {
     if (tab === 'list') {
       const searchedList = searchList(songList, search);
       if (searchedList.length !== songList.length) {
@@ -109,7 +108,38 @@ function RemoteSongList({
     }
   }, [search, songList, tab, savedSongList, excludedLanguages]);
 
+  const groupedSongList = useMemo(() => {
+    if (filteredSongList.length < (isE2E() ? 5 : 500)) {
+      return filteredSongList;
+    }
+    const groups = groupBy(filteredSongList, (song) => getMainArtistName(song.artist).toLowerCase());
+
+    return Object.values(groups)
+      .map((group) => (group.length >= (isE2E() ? 2 : 3) ? [group] : group))
+      .flat();
+  }, [filteredSongList]);
+
+  const [expandedArtists, setExpandedArtists] = useState<string[]>([]);
+  useLayoutEffect(() => {
+    setExpandedArtists([]);
+  }, [search, songList, tab, excludedLanguages]);
+
+  const itemsToRender = useMemo(() => {
+    const itemsToRender: typeof groupedSongList = [];
+
+    for (const song of groupedSongList) {
+      itemsToRender.push(song);
+      if (Array.isArray(song) && expandedArtists.includes(getMainArtistName(song[0].artist))) {
+        itemsToRender.push(...song);
+      }
+    }
+    return itemsToRender;
+  }, [groupedSongList, expandedArtists]);
+
+  const languages = useLanguageList(songList);
   const selectedLanguages = languages.length - excludedLanguages.length;
+
+  const unit = useBaseUnitPx();
 
   return (
     <Container>
@@ -147,16 +177,56 @@ function RemoteSongList({
       </TopBar>
       <CustomVirtualization
         forceRenderItem={-1}
-        overScan={100}
+        overScan={200}
         components={{}}
         context={{}}
-        groupSizes={[finalSongList.length]}
+        groupSizes={[itemsToRender.length]}
         groupHeaderHeight={1}
         groupContent={() => null}
         itemHeight={unit * 7 + 1}
         itemContent={(index, groupIndex, itemProps) => {
-          const song = finalSongList[index];
+          const song = itemsToRender[index];
 
+          if (Array.isArray(song)) {
+            const mainArtistName = getMainArtistName(song[0].artist);
+            const isExpanded = isArtistPresent(mainArtistName, expandedArtists);
+            const onClick: ReactEventHandler = (e) => {
+              e.stopPropagation();
+              if (isExpanded) {
+                setExpandedArtists((artists) => artists.filter((artist) => artist !== mainArtistName));
+              } else {
+                setExpandedArtists((artists) => [...artists, mainArtistName]);
+              }
+            };
+
+            return (
+              <SongItemContainer
+                role="button"
+                className="!bg-black !bg-opacity-75 cursor-pointer active:!bg-opacity-100"
+                data-test={`song-group-${mainArtistName}`}
+                onClick={onClick}
+                {...itemProps}>
+                <Language>
+                  <ArrowRight
+                    className={`text-white !transition-transform !duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+                  />
+                </Language>
+                <ArtistTitle>
+                  <Title>{mainArtistName}</Title>
+                  <Artist>{song.length} songs</Artist>
+                </ArtistTitle>
+                <Action>
+                  {isExpanded ? (
+                    <ActiveButton data-test="remove-song-button">CLOSE</ActiveButton>
+                  ) : (
+                    <AddButton data-test="add-song-button">EXPAND</AddButton>
+                  )}
+                </Action>
+              </SongItemContainer>
+            );
+          }
+
+          const isExpanded = isArtistPresent(getMainArtistName(song.artist), expandedArtists);
           const isOnList = savedSongList.includes(song.id);
 
           return (
@@ -164,6 +234,7 @@ function RemoteSongList({
               className={isOnList ? '!bg-black !bg-opacity-35' : ''}
               data-test={song.id}
               {...itemProps}>
+              {isExpanded && <Language />}
               <Language>
                 <Flag language={song.language} />
               </Language>
@@ -269,12 +340,13 @@ const SongItemContainer = styled.div`
 `;
 
 const Language = styled.div`
-  img {
+  min-width: 3rem;
+  img,
+  svg {
     height: 3rem;
     width: 3rem;
     object-fit: cover;
     border-radius: 3rem;
-    border: 0.1rem black solid;
     aspect-ratio: 1;
   }
 `;
@@ -284,6 +356,7 @@ const ArtistTitle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  overflow: hidden;
 `;
 
 const Artist = styled.span`

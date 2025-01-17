@@ -4,7 +4,6 @@ import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/Button';
 import { sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
 import CameraRoll from 'routes/Game/Singing/PostGame/Views/Results/CameraRoll';
@@ -58,7 +57,6 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   // needs to be here to force rerender of Results so Next button is selected after enabling camera
   const [isRequestInProgress, setIsRequestInProgress] = useState(false);
   const enableCamera = () => {
-    posthog.capture('enable-camera');
     setIsRequestInProgress(true);
     CameraManager.requestPermissions().then(() => setIsRequestInProgress(false));
   };

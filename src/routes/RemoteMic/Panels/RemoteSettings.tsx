@@ -52,24 +52,22 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
         </>
       )}
       {permissions !== 'write' && <MicrophoneSettings />}
-      {openedPanel !== null && permissions === 'write' && (
-        <Modal onClose={() => setOpenedPanel(null)}>
-          <MenuContainer>
-            <ModalHeader>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</ModalHeader>
-            {openedPanel === 'microphone' && <MicrophoneSettings />}
-            {openedPanel === 'manage' && (
-              <>
-                <ManagePlayers />
-                <RemoteInputLag />
-              </>
-            )}
-            <hr />
-            <MenuButton onClick={() => setOpenedPanel(null)} size="small" data-test="close-modal">
-              Close
-            </MenuButton>
-          </MenuContainer>
-        </Modal>
-      )}
+      <Modal onClose={() => setOpenedPanel(null)} open={openedPanel !== null && permissions === 'write'}>
+        <MenuContainer>
+          <ModalHeader>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</ModalHeader>
+          {openedPanel === 'microphone' && <MicrophoneSettings />}
+          {openedPanel === 'manage' && (
+            <>
+              <ManagePlayers />
+              <RemoteInputLag />
+            </>
+          )}
+          <hr />
+          <MenuButton onClick={() => setOpenedPanel(null)} size="small" data-test="close-modal">
+            Close
+          </MenuButton>
+        </MenuContainer>
+      </Modal>
       <div role="button" className="typography mt-auto" onClick={() => setIsKeepAwakeOn(!isKeepAwakeOn)}>
         WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
       </div>

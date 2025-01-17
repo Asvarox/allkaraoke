@@ -122,6 +122,6 @@ test('Should allow changing game input lag', async ({ browser, page }) => {
     await remoteMic.remoteMicManageGamePage.increaseGameInputLag();
     await remoteMic.remoteMicManageGamePage.expectGameInputLagToBe(numericInputValue);
     await pages.settingsPage.goToCalibration();
-    await pages.calibrationPage.expectInputLagToBe(numericInputValue);
+    await pages.calibration.expectInputLagToBe(numericInputValue);
   });
 });

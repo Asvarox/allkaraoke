@@ -22,7 +22,7 @@ const addSteps = (start: [number, number], steps: Array<[number, number, dirs]>,
 };
 
 // Possibly an overkill (but fun)?
-export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
+async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
   await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
     await expect(page.getByTestId(targetTestId)).toBeVisible();
     const navigableElements = await page.locator('[data-e2e-focused]:not([data-unfocusable])');
@@ -98,4 +98,14 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
       });
     }
   });
+}
+
+export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
+  try {
+    return await navigate(page, targetTestId, remoteMic);
+  } catch (e) {
+    console.warn('Navigating failing', e);
+    await page.waitForTimeout(300);
+    return await navigate(page, targetTestId, remoteMic);
+  }
 }

@@ -38,10 +38,8 @@ export default function ConfirmWifiModal({ onClose }: Props) {
     }
   }, []);
 
-  if (closed) return null;
-
   return (
-    <Modal onClose={closeModal}>
+    <Modal onClose={closeModal} open={!closed}>
       <Menu>
         <Wrapper>
           <h3>

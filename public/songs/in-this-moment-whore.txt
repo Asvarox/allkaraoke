@@ -1,0 +1,574 @@
+#ARTIST:In This Moment
+#TITLE:Whore
+#CREATOR:Quetzaldo
+#BPM:385,33
+#YEAR:2013
+#VIDEO:v=GurkREc-q4I
+#VIDEOGAP:50
+#GENRE:Alternative Metal
+#LANGUAGE:English
+#GAP:64167,88051799756
+#ALLKARAOKE_ID:in-this-moment-whore
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:38.021Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=161148
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28460
+#ALLKARAOKE_VOLUME:0,74
+#MP3:In This Moment - Whore.mp3
+#COVER:In This Moment - Whore [CO].jpg
+#BACKGROUND:In This Moment - Whore [BG].jpg
+R 26 2 13 I’m 
+R 30 1 11 the 
+R 35 5 13 girl 
+R 42 3 12 you’ve 
+R 46 3 12 been 
+R 52 3 13 think
+R 56 3 10 ing 
+R 61 2 12 a
+R 65 7 12 bout
+- 72
+R 91 2 2 The 
+R 96 3 12 one 
+R 104 5 12 thing 
+R 110 3 12 you 
+R 116 3 11 can’t 
+R 122 2 13 live 
+R 128 5 13 with
+R 134 7 13 out
+- 141
+R 158 3 11 Yeah, 
+R 163 3 20 I’m 
+R 168 3 14 the 
+R 173 4 14 girl 
+R 179 2 14 you’ve 
+R 184 3 14 been 
+R 189 2 16 wait
+R 192 3 14 ing 
+R 202 4 15 for
+- 206
+R 210 2 15 I’ll 
+R 214 3 16 have 
+R 218 2 16 you 
+R 223 5 16 down 
+R 230 1 16 on 
+R 232 3 16 your 
+R 237 6 17 knees
+- 243
+R 246 3 16 I’ll 
+R 250 1 17 have 
+R 253 2 16 you 
+R 258 2 17 beg
+R 261 3 17 ging 
+R 268 2 16 for 
+R 272 7 17 more
+- 279
+R 295 3 22 You 
+R 300 2 23 prob
+R 303 2 21 ably 
+R 309 4 22 thought 
+R 314 2 19 I 
+R 318 5 18 wouldn’t 
+R 327 3 18 get 
+R 332 4 18 this 
+R 340 9 18 far
+- 349
+R 364 2 19 You 
+R 369 3 24 thought 
+R 374 3 23 I’d 
+R 379 2 24 end 
+R 383 2 22 up 
+R 387 2 22 in 
+R 391 1 21 the 
+R 394 4 23 back 
+R 400 2 23 of 
+R 404 2 24 a 
+R 409 11 23 car
+- 420
+R 432 2 19 You 
+R 437 2 24 prob
+R 440 3 23 ably 
+R 446 5 23 thought 
+R 454 3 24 that 
+R 458 1 22 I’d 
+R 462 3 23 ne
+R 466 3 23 ver 
+R 472 3 24 es
+R 476 4 24 cape
+- 480
+R 485 1 23 I’d 
+R 489 2 23 be 
+R 493 2 22 a 
+R 496 6 23 rat 
+R 503 2 24 in 
+R 507 2 22 a 
+R 511 5 24 cage
+- 516
+R 520 2 22 I’d 
+R 523 4 21 be 
+R 528 1 21 a 
+R 532 4 22 slave 
+R 538 2 21 to 
+R 542 1 20 this 
+R 549 4 21 place
+- 553
+R 573 4 25 You 
+R 578 3 24 don’t 
+R 583 3 25 know 
+R 587 2 22 how 
+R 590 4 25 hard 
+R 595 1 23 I 
+R 599 4 25 fought 
+R 605 2 24 to 
+R 609 6 22 sur
+R 616 7 23 vive
+- 623
+R 625 3 26 Wak
+R 629 3 25 ing 
+R 633 4 30 up 
+R 639 6 25 a
+R 646 5 25 lone 
+R 653 3 25 when 
+R 658 2 26 I 
+R 662 4 23 was 
+R 668 6 27 left 
+R 676 2 25 to 
+R 682 6 25 die
+- 688
+R 704 2 25 And 
+R 708 3 25 you 
+R 713 2 24 don’t 
+R 718 2 23 know 
+R 723 3 24 a
+R 727 2 24 bout 
+R 731 1 25 this 
+R 734 5 23 life 
+R 741 4 23 I’ve 
+R 750 6 23 lived!
+- 756
+R 762 2 23 All 
+R 765 2 23 these 
+R 769 4 24 roads 
+R 775 4 18 I’ve 
+R 782 10 21 walked
+- 792
+R 796 4 28 All 
+R 801 4 25 these 
+R 807 7 26 tears 
+R 818 8 25 I’ve 
+R 831 23 18 bled
+- 854
+: 862 6 18 So 
+: 870 7 21 how 
+: 880 6 21 can 
+: 889 5 20 this 
+* 897 21 18 be?
+- 918
+: 931 6 13 You’re 
+: 939 8 21 pray
+: 948 8 21 ing 
+: 959 5 20 to 
+: 966 6 18 me
+- 972
+: 995 4 20 There’s 
+: 1002 4 18 a 
+: 1009 7 20 look 
+: 1019 5 20 in 
+: 1027 5 18 your 
+: 1035 16 20 eyes
+- 1051
+: 1055 4 20 I 
+: 1063 4 20 know 
+: 1071 4 18 just 
+: 1080 7 20 what 
+: 1092 8 20 that 
+: 1105 27 18 means
+- 1132
+* 1148 4 21 I 
+* 1156 8 21 can 
+* 1166 6 18 be, 
+: 1182 4 21 I 
+: 1190 6 21 can 
+: 1200 6 18 be 
+: 1208 6 18 your 
+: 1217 8 18 e
+: 1228 11 16 very
+: 1242 16 13 thing
+- 1258 1259
+- 1259
+: 1285 6 25 I 
+: 1293 7 25 can 
+: 1302 6 25 be 
+: 1310 6 25 your 
+: 1318 30 25 whore!
+- 1348
+: 1357 3 18 I 
+: 1363 4 21 am 
+: 1370 4 18 the 
+: 1378 10 25 dirt 
+: 1394 6 23 you 
+: 1404 9 18 cre
+: 1415 11 18 a
+: 1429 31 21 ted
+- 1460 1463
+- 1463
+: 1489 8 18 I 
+: 1500 4 21 am 
+: 1507 3 18 your 
+: 1514 11 25 sin
+: 1532 6 23 ner
+- 1538
+: 1541 5 23 I 
+: 1550 12 18 am 
+* 1568 9 21 your 
+: 1584 7 20 who
+: 1593 19 18 re
+- 1612
+: 1620 6 18 But 
+: 1628 6 25 let 
+: 1636 4 23 me 
+: 1644 7 23 tell 
+: 1654 3 21 you 
+: 1662 11 25 some
+: 1674 7 23 thing 
+: 1686 15 23 ba
+: 1702 13 18 by
+- 1715
+: 1721 6 18 You 
+: 1730 8 25 love 
+: 1740 4 23 me 
+: 1748 4 23 for 
+: 1756 15 23 e
+: 1772 7 21 very
+: 1780 6 23 thing 
+: 1790 6 21 you 
+: 1799 10 25 hate 
+: 1812 8 23 me 
+: 1824 6 23 for
+: 1834 5 21 ~
+: 1842 18 18 ~
+- 1860 1987
+- 1987
+R 2013 3 23 I’m 
+R 2017 2 19 the 
+R 2021 7 20 one 
+R 2030 3 20 that 
+R 2035 3 20 you 
+R 2040 4 20 need 
+R 2047 3 20 and 
+R 2054 12 21 fear
+- 2066
+R 2077 2 25 Now 
+R 2080 2 23 that 
+R 2084 3 21 you’re 
+R 2089 4 23 hooked 
+R 2094 2 21 it’s 
+R 2098 2 21 all 
+R 2102 2 21 be
+R 2106 4 25 com
+R 2114 6 23 ing 
+R 2123 10 25 clear
+- 2133
+R 2145 3 19 That 
+R 2149 3 26 all 
+R 2153 2 25 your 
+R 2156 4 25 judge
+R 2161 2 25 ments 
+R 2166 3 26 that 
+R 2170 2 25 you 
+R 2175 8 24 placed 
+R 2186 3 30 on 
+R 2192 5 32 me
+R 2198 2 30 ~
+- 2200
+R 2212 4 18 Was 
+R 2217 2 18 a 
+R 2221 2 21 re
+R 2224 3 21 flec
+R 2229 5 21 tion 
+R 2237 2 26 of 
+R 2241 3 25 dis
+R 2245 5 25 co
+R 2251 4 25 ve
+R 2257 16 24 ry
+- 2273
+R 2282 2 23 So 
+R 2286 4 25 may
+R 2292 2 25 be 
+R 2296 2 25 next 
+R 2299 3 24 time 
+R 2303 3 24 when 
+R 2307 2 23 you 
+R 2312 7 25 cast 
+R 2322 3 24 your 
+R 2328 20 23 stones
+- 2348
+R 2354 2 24 From 
+R 2358 2 24 the 
+R 2362 3 25 shad
+R 2366 4 25 ows 
+R 2371 2 24 of 
+R 2374 2 24 the 
+R 2377 8 24 dark 
+R 2387 7 24 un
+R 2395 17 29 done
+- 2412
+R 2420 2 16 You 
+R 2424 3 18 will 
+R 2430 5 20 crawl 
+R 2438 3 19 from 
+R 2442 2 21 your 
+R 2448 5 21 hid
+R 2455 3 21 ing 
+R 2460 6 22 place 
+R 2468 4 22 and
+- 2472
+R 2474 2 24 Take 
+R 2478 2 24 a 
+R 2482 4 24 look 
+R 2488 1 23 in 
+R 2490 3 23 the 
+R 2494 4 25 mir
+R 2499 4 25 ror
+- 2503
+R 2507 4 24 See 
+R 2512 3 24 the 
+R 2516 3 25 truth 
+R 2520 5 26 in 
+R 2527 3 26 your 
+R 2533 25 25 face
+- 2558
+: 2574 8 18 So 
+: 2584 7 21 how 
+: 2594 6 21 can 
+: 2603 5 20 this 
+: 2611 21 18 be?
+- 2632
+: 2644 6 13 You’re 
+* 2652 8 21 pray
+* 2661 8 21 ing 
+: 2672 5 20 to 
+: 2679 6 18 me
+- 2685
+: 2708 4 20 There’s 
+: 2715 4 18 a 
+: 2722 7 20 look 
+: 2732 5 20 in 
+: 2740 5 18 your 
+: 2748 16 20 eyes
+- 2764
+: 2766 4 20 I 
+: 2774 4 20 know 
+: 2782 4 18 just 
+: 2791 7 21 what 
+: 2803 8 20 that 
+: 2816 27 18 means
+- 2843
+* 2860 4 21 I 
+* 2868 8 21 can 
+* 2878 6 18 be, 
+: 2894 4 21 I 
+: 2902 6 21 can 
+: 2912 6 18 be 
+: 2920 6 18 your 
+: 2929 8 18 e
+: 2940 10 16 very
+: 2956 14 13 thing
+- 2970 2971
+- 2971
+: 2997 6 25 I 
+: 3005 7 25 can 
+: 3014 6 25 be 
+: 3022 6 25 your 
+: 3030 30 25 whore!
+- 3060
+: 3070 3 18 I 
+: 3076 4 21 am 
+: 3083 4 18 the 
+: 3091 10 25 dirt 
+: 3107 6 23 you 
+: 3117 9 18 cre
+: 3128 11 18 a
+: 3142 31 21 ted
+- 3173 3175
+- 3175
+: 3201 8 18 I 
+: 3212 4 21 am 
+: 3219 3 18 your 
+: 3226 11 25 sin
+: 3244 6 23 ner
+- 3250
+: 3252 5 23 I 
+: 3261 12 18 am 
+* 3279 9 21 your 
+: 3295 6 20 who
+: 3304 16 18 re
+- 3320
+: 3332 6 18 But 
+: 3340 6 25 let 
+: 3348 4 23 me 
+: 3356 7 23 tell 
+: 3366 3 21 you 
+: 3374 11 25 some
+: 3386 7 23 thing 
+: 3398 15 23 ba
+: 3414 13 18 by
+- 3427
+: 3433 6 18 You 
+: 3442 8 25 love 
+: 3452 4 23 me 
+: 3460 4 23 for 
+: 3468 15 23 e
+: 3484 7 21 very
+: 3492 6 23 thing 
+: 3502 6 21 you 
+: 3511 10 25 hate 
+: 3524 8 23 me 
+: 3536 6 23 for
+: 3546 5 21 ~
+: 3554 18 18 ~
+- 3572 4067
+- 4067
+: 4093 4 18 I 
+: 4101 6 21 am 
+: 4110 7 18 the 
+: 4120 12 25 dirt 
+: 4135 4 23 you 
+: 4144 6 18 cre
+: 4153 17 18 a
+: 4174 32 21 ted
+- 4206
+: 4228 8 18 I 
+: 4238 5 21 am 
+: 4245 4 18 your 
+: 4252 17 25 sin
+: 4271 6 23 ner
+- 4277
+: 4287 4 23 I 
+: 4295 8 18 am 
+: 4311 12 21 your 
+: 4333 15 18 whore
+- 4348
+: 4357 6 18 But 
+: 4365 6 25 let 
+: 4375 4 23 me 
+: 4383 7 23 tell 
+: 4392 3 21 you 
+: 4401 11 25 some
+: 4414 8 23 thing 
+* 4427 13 23 ba
+* 4442 9 18 by
+- 4451
+: 4462 6 23 You 
+: 4470 6 23 love 
+: 4478 6 25 me, 
+: 4494 6 25 you 
+: 4502 8 25 want 
+: 4512 6 25 me, 
+: 4528 6 25 you 
+: 4536 8 25 need 
+: 4546 10 25 me!
+- 4556
+: 4570 8 25 I 
+: 4580 7 25 can 
+: 4589 6 25 be 
+: 4597 6 25 your 
+: 4605 30 25 whore!
+- 4635
+: 4645 3 18 I 
+: 4651 4 21 am 
+: 4658 4 18 the 
+: 4666 10 25 dirt 
+: 4682 6 23 you 
+: 4691 8 18 cre
+: 4701 12 18 a
+: 4716 32 21 ted
+- 4748 4752
+- 4752
+: 4778 5 18 I 
+: 4786 4 21 am 
+: 4794 3 18 your 
+* 4801 9 25 sin
+* 4819 7 23 ner
+- 4826
+: 4828 5 23 I 
+: 4837 12 18 am 
+* 4855 9 21 your 
+: 4871 6 20 who
+: 4880 16 18 re
+- 4896
+: 4906 6 18 But 
+: 4916 6 25 let 
+: 4924 4 23 me 
+: 4932 7 23 tell 
+: 4942 3 21 you 
+: 4950 11 25 some
+: 4963 6 23 thing 
+: 4974 15 23 ba
+: 4990 13 18 by
+- 5003
+: 5009 6 18 You 
+: 5018 8 25 love 
+: 5028 4 23 me 
+: 5036 4 23 for 
+: 5044 15 23 e
+: 5060 7 21 very
+: 5068 6 23 thing 
+: 5078 6 21 you 
+: 5087 10 25 hate 
+: 5100 8 23 me 
+: 5112 6 23 for
+: 5122 5 21 ~
+: 5130 18 18 ~
+- 5148 5230
+- 5230
+: 5256 8 25 I 
+: 5266 7 25 can 
+: 5275 6 25 be 
+: 5283 6 25 your 
+: 5291 30 25 whore!
+- 5321 5366
+- 5366
+: 5392 8 25 I 
+: 5402 7 25 can 
+: 5411 6 25 be 
+: 5419 6 25 your 
+: 5427 23 25 whore!
+- 5450
+: 5456 6 18 But 
+: 5464 6 25 let 
+: 5472 4 23 me 
+: 5480 7 23 tell 
+: 5490 3 21 you 
+: 5498 11 25 some
+: 5510 7 23 thing 
+: 5522 15 23 ba
+: 5538 13 18 by
+- 5551
+: 5556 6 18 You 
+: 5565 8 25 love 
+: 5575 4 23 me 
+: 5583 4 23 for 
+: 5591 15 23 e
+: 5607 7 21 very
+: 5615 6 23 thing 
+: 5625 6 21 you 
+: 5634 10 25 hate 
+: 5647 8 23 me 
+: 5659 6 23 for
+: 5669 5 21 ~
+: 5677 11 18 ~
+- 5688
+: 5692 5 18 You 
+: 5701 8 25 love 
+: 5711 5 23 me 
+: 5720 4 23 for 
+* 5728 13 23 e
+* 5745 11 21 very
+* 5762 16 23 thing
+- 5778
+: 5799 4 20 You 
+: 5806 10 20 hate 
+: 5822 8 21 me 
+: 5838 34 20 for
+E

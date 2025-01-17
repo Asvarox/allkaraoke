@@ -1,5 +1,4 @@
 import { Box, Button, ButtonGroup, Divider, Typography } from '@mui/material';
-import { useState } from 'react';
 import { Pre } from 'routes/Convert/Elements';
 import formatMs from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import { PlayerRef } from 'routes/Game/Singing/Player';
@@ -7,13 +6,12 @@ import { PlayerRef } from 'routes/Game/Singing/Player';
 interface Props {
   player: PlayerRef;
   currentTime: number;
-  effectsEnabled: boolean;
-  onEffectsToggle: () => void;
+  playbackSpeed: number;
+  setPlaybackSpeed: (speed: number) => void;
 }
 
-export default function AdjustPlayback({ player, currentTime, effectsEnabled, onEffectsToggle }: Props) {
+export default function AdjustPlayback({ player, currentTime, playbackSpeed, setPlaybackSpeed }: Props) {
   const seekBy = (bySec: number) => player.seekTo((currentTime + bySec) / 1000);
-  const [currentSpeed, setCurrentSpeed] = useState(1);
 
   return (
     <>
@@ -55,7 +53,7 @@ export default function AdjustPlayback({ player, currentTime, effectsEnabled, on
       </Box>
       <Box>
         <Typography>
-          Playback speed: <Pre data-test="current-speed">{currentSpeed * 100}%</Pre>
+          Playback speed: <Pre data-test="current-speed">{playbackSpeed * 100}%</Pre>
         </Typography>
         <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1 }}>
           {[0.25, 0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
@@ -65,10 +63,10 @@ export default function AdjustPlayback({ player, currentTime, effectsEnabled, on
               key={speed}
               sx={{ flex: 1 }}
               onClick={() => {
-                setCurrentSpeed(speed);
+                setPlaybackSpeed(speed);
                 player.setPlaybackSpeed(speed);
               }}
-              disabled={currentSpeed === speed}>
+              disabled={playbackSpeed === speed}>
               {speed * 100}%
             </Button>
           ))}

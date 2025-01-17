@@ -1,0 +1,413 @@
+#ARTIST:Marilyn Manson
+#TITLE:One Assassination Under God
+#CREATOR:Groov
+#BPM:246
+#YEAR:2024
+#PREVIEWSTART:75
+#VIDEO:v=WnsGa7wQgTg
+#GENRE:Industrial Metal
+#LANGUAGE:English
+#GAP:35064,39024390244
+#ALLKARAOKE_ID:marilyn-manson-one-assassination-under-god
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:57.986Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=197779
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29870
+#ALLKARAOKE_PREVIEWEND:113
+#ALLKARAOKE_VOLUME:0,77
+#P1:One Assassination Under God
+#MP3:Marilyn Manson - One Assassination Under God.mp3
+#COVER:Marilyn Manson - One Assassination Under God [CO].jpg
+#BACKGROUND:Marilyn Manson - One Assassination Under God [BG].jpg
+: 16 4 0 You 
+: 21 5 2 gave 
+: 28 5 0 us 
+: 35 5 2 what 
+: 42 5 0 we 
+: 48 6 3 wished 
+: 56 11 0 for
+- 67
+: 79 2 0 A 
+: 82 4 2 fe
+: 87 4 0 w 
+: 98 5 2 tan
+: 104 5 0 gled 
+: 111 8 2 strings 
+: 120 6 3 at
+: 127 9 3 tached
+- 136 139
+- 139
+: 155 5 0 Pull 
+: 163 5 2 back 
+: 170 4 0 the 
+: 175 4 2 cur
+: 180 6 0 tain
+- 186
+: 195 3 2 I 
+: 199 4 0 won't 
+: 210 5 2 suf
+: 216 5 0 fer 
+: 222 5 2 for 
+: 229 4 2 your 
+: 234 4 3 a
+: 240 6 2 muse
+: 248 8 0 ment
+- 256
+: 271 3 0 There's 
+: 275 4 2 no 
+: 280 5 0 more 
+: 288 7 2 dreams 
+: 297 4 0 for 
+: 302 5 3 me 
+: 308 3 0 to 
+: 312 10 0 sell
+- 322
+: 335 3 0 I 
+: 339 6 2 choose 
+: 347 4 0 my 
+: 354 5 2 night
+: 362 5 0 mares 
+* 370 7 2 wise
+* 378 10 3 ly
+- 388
+: 399 4 0 I 
+: 404 5 2 don't 
+: 410 3 0 wan
+: 414 3 0 na 
+: 418 7 2 ruin 
+: 426 3 0 the 
+: 430 6 2 sto
+: 437 6 0 ry
+- 443
+: 451 3 2 But 
+: 455 3 0 it 
+: 467 4 2 do
+: 472 4 0 esn't 
+: 482 5 2 turn 
+: 488 5 0 out 
+* 495 12 -4 well
+- 507 514
+- 514
+: 530 6 2 You 
+: 538 6 0 will 
+: 547 6 2 al
+: 555 6 0 ways 
+* 562 7 3 be 
+* 570 7 2 en
+* 578 7 3 ter
+* 587 23 0 tain
+* 611 7 0 ed
+- 618 643
+- 643
+: 659 6 2 Eve
+: 666 6 0 ry
+: 675 6 2 bo
+: 682 6 0 dy 
+: 690 8 2 showed 
+: 699 5 0 up 
+: 706 7 2 for 
+: 715 6 2 the 
+: 723 7 3 ex
+: 731 7 3 e
+: 746 12 2 cu
+: 761 12 0 tion
+- 773
+: 779 5 0 But 
+: 786 7 2 no
+: 794 7 0 bo
+: 802 7 2 dy 
+: 810 5 0 would 
+: 816 10 2 show 
+: 827 9 2 their 
+: 842 23 3 face
+- 865 891
+- 891
+: 907 5 0 To 
+: 914 6 2 shoot 
+: 922 6 0 you 
+: 931 6 2 in 
+: 939 6 0 the 
+: 946 7 2 back 
+: 954 7 2 of 
+: 962 7 0 the 
+: 970 12 2 head
+- 982
+: 987 5 0 And 
+: 993 7 2 call 
+: 1001 5 0 it 
+: 1009 7 2 sac
+: 1017 8 2 ri
+: 1034 12 2 fice
+- 1046
+: 1050 6 0 They 
+: 1058 7 2 don't 
+: 1066 6 0 de
+: 1073 7 2 serve 
+: 1082 6 0 to 
+: 1090 7 2 e
+: 1098 6 0 ven 
+* 1105 9 2 say 
+* 1115 12 3 your 
+* 1130 21 3 na
+* 1152 9 2 me
+- 1161 1274
+- 1274
+: 1290 6 0 Put 
+: 1298 8 2 me 
+: 1307 5 0 in
+: 1313 7 2 side 
+: 1322 5 0 the 
+: 1328 3 2 a
+: 1332 4 0 ni
+: 1337 5 0 mal
+- 1342
+: 1345 6 0 Stitch 
+: 1352 4 0 it 
+: 1363 5 2 up 
+: 1371 5 0 and 
+: 1377 6 2 shove 
+: 1384 3 0 us 
+: 1395 4 2 off 
+: 1400 3 3 a 
+: 1406 9 3 cliff
+- 1415
+: 1419 3 0 When 
+: 1423 2 0 they 
+: 1426 6 2 tear 
+: 1434 5 0 the 
+: 1442 6 2 wings 
+: 1449 5 0 from 
+: 1455 5 0 all 
+: 1462 5 -2 the 
+* 1470 10 -5 swine
+- 1480
+: 1483 4 0 Just 
+: 1490 6 2 mon
+: 1498 5 0 keys 
+: 1506 7 2 will 
+: 1514 3 0 be 
+: 1518 7 2 left 
+: 1526 3 2 to 
+: 1530 10 3 fly
+- 1540
+: 1549 3 0 The 
+: 1554 4 2 pi
+: 1559 4 0 lot 
+: 1568 9 2 light 
+: 1578 3 0 has 
+* 1582 3 3 flick
+* 1586 4 2 ered 
+* 1591 6 0 out
+- 1597
+: 1600 3 0 And 
+: 1604 4 0 all 
+: 1610 4 2 the 
+: 1619 5 2 ash
+: 1626 4 0 es 
+: 1634 7 2 will 
+: 1642 3 0 be 
+: 1647 6 3 screa
+: 1654 9 3 ming
+- 1663 1666
+- 1666
+: 1682 5 2 No 
+: 1688 6 0 one 
+: 1697 5 2 can 
+: 1704 5 0 hear 
+: 1710 6 2 my 
+: 1717 8 0 last 
+* 1726 6 -4 words
+- 1732
+: 1735 3 -4 And 
+: 1739 4 -4 no 
+: 1747 4 2 en
+: 1753 6 0 core 
+: 1761 7 2 once 
+: 1769 4 0 we 
+: 1774 7 0 say 
+* 1782 5 -3 good
+* 1788 9 -5 bye
+- 1797
+: 1810 6 2 You 
+: 1818 6 0 will 
+: 1827 6 2 al
+: 1835 6 0 ways 
+* 1842 7 3 be 
+* 1850 7 2 en
+* 1858 7 3 ter
+* 1867 23 0 tain
+* 1891 7 0 ed
+- 1898 1922
+- 1922
+: 1938 6 2 You 
+: 1946 6 0 will 
+: 1955 6 2 al
+: 1963 6 0 ways 
+* 1970 7 3 be 
+* 1978 7 2 en
+* 1986 7 3 ter
+* 1995 23 0 tain
+* 2019 7 0 ed
+- 2026 2052
+- 2052
+: 2068 6 2 Eve
+: 2075 6 0 ry
+: 2084 6 2 bo
+: 2091 6 0 dy 
+: 2099 8 2 showed 
+: 2108 5 0 up 
+: 2115 7 2 for 
+: 2124 6 2 the 
+: 2132 7 3 ex
+: 2140 7 3 e
+: 2155 12 2 cu
+: 2170 12 0 tion
+- 2182
+: 2188 5 0 But 
+: 2195 7 2 no
+: 2203 7 0 bo
+: 2211 7 2 dy 
+: 2219 5 0 would 
+: 2225 10 2 show 
+: 2236 9 2 their 
+: 2251 23 3 face
+- 2274 2300
+- 2300
+: 2316 5 0 To 
+: 2323 6 2 shoot 
+: 2331 6 0 you 
+: 2340 6 2 in 
+: 2348 6 0 the 
+: 2355 7 2 back 
+: 2363 7 2 of 
+: 2371 7 0 the 
+: 2379 12 2 head
+- 2391
+: 2396 5 0 And 
+: 2402 7 2 call 
+: 2410 5 0 it 
+: 2418 7 2 sac
+: 2426 8 2 ri
+: 2443 12 2 fice
+- 2455
+: 2459 6 0 They 
+: 2467 7 2 don't 
+: 2475 6 0 de
+: 2482 7 2 serve 
+: 2491 6 0 to 
+: 2499 7 2 e
+: 2507 6 0 ven 
+* 2514 9 2 say 
+* 2524 12 3 your 
+* 2539 21 3 na
+* 2561 9 2 me
+- 2570 3210
+- 3210
+: 3226 6 0 As
+: 3233 5 2 sas
+: 3239 5 0 si
+: 3249 7 2 na
+: 3257 10 0 tion
+- 3267 3273
+- 3273
+: 3289 6 0 As
+: 3296 5 2 sas
+: 3302 5 0 si
+: 3312 7 2 na
+: 3320 10 0 tion
+- 3330 3337
+- 3337
+: 3353 6 0 As
+: 3360 5 2 sas
+: 3366 5 0 si
+: 3376 7 2 na
+: 3384 10 0 tion
+- 3394 3398
+- 3398
+F 3414 8 8 As
+F 3423 5 8 sas
+F 3430 6 8 si
+F 3437 8 8 na
+F 3446 85 8 ti
+F 3532 16 7 on
+F 3549 15 3 ~
+- 3564 3710
+- 3710
+: 3726 6 2 Eve
+: 3733 6 0 ry
+: 3742 6 2 bo
+: 3749 6 0 dy 
+: 3757 8 2 showed 
+: 3766 5 0 up 
+: 3773 7 2 for 
+: 3782 6 2 the 
+: 3790 7 3 ex
+: 3798 7 3 e
+: 3813 12 2 cu
+: 3828 12 0 tion
+- 3840
+: 3846 5 0 But 
+: 3853 7 2 no
+: 3861 7 0 bo
+: 3869 7 2 dy 
+: 3877 5 0 would 
+: 3883 10 2 show 
+: 3894 9 2 their 
+: 3909 23 3 face
+- 3932 3957
+- 3957
+: 3973 5 0 To 
+: 3980 6 2 shoot 
+: 3988 6 0 you 
+: 3997 6 2 in 
+: 4005 6 0 the 
+: 4012 7 2 back 
+: 4020 7 2 of 
+: 4028 7 0 the 
+: 4036 12 2 head
+- 4048
+: 4053 5 0 And 
+: 4059 7 2 call 
+: 4067 5 0 it 
+: 4075 7 2 sac
+: 4083 8 2 ri
+: 4100 12 2 fice
+- 4112
+: 4115 6 0 They 
+: 4123 7 2 don't 
+: 4131 6 0 de
+: 4138 7 2 serve 
+: 4147 6 0 to 
+: 4155 7 2 e
+: 4163 6 0 ven 
+* 4170 9 2 say 
+* 4180 12 3 your 
+* 4195 21 3 na
+* 4217 9 2 me
+- 4226
+: 4232 7 2 Sac
+: 4240 9 0 ri
+: 4257 13 0 fice
+- 4270
+: 4278 4 3 It's 
+: 4283 7 3 not 
+: 4291 3 2 a 
+: 4295 7 2 sa
+: 4303 9 0 cri
+: 4320 13 0 fice
+- 4333
+: 4342 4 3 It's 
+: 4347 7 3 not 
+: 4355 3 2 a 
+: 4359 7 2 sa
+: 4367 9 0 cri
+: 4384 13 0 fice
+- 4397
+: 4405 4 3 It's 
+: 4410 7 3 not 
+: 4418 3 2 a 
+: 4422 7 2 sa
+: 4430 9 0 cri
+: 4447 13 0 fice
+E

@@ -9,6 +9,7 @@ import PlayersManager from 'modules/Players/PlayersManager';
 import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'modules/hooks/players/consts';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import storage from 'modules/utils/storage';
+import { AnimatePresence } from 'motion/react';
 import { useEffect, useMemo, useState } from 'react';
 import SelectInputModal from 'routes/SelectInput/SelectInputModal';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -73,8 +74,9 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
 
   return (
     <>
-      {showModal && (
+      <AnimatePresence>
         <SelectInputModal
+          open={showModal}
           closeButtonText={areInputsConfigured ? 'Continue to the song' : 'Continue to player setup'}
           onClose={() => {
             setShowModal(false);
@@ -84,7 +86,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
             }
           }}
         />
-      )}
+      </AnimatePresence>
       {playerList.map((setup, index) => (
         <PlayerSettingContainer key={setup.number}>
           <PlayerSettingTitle>Player {index + 1}</PlayerSettingTitle>

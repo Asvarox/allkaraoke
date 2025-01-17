@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Calibration } from '../components/Calibration';
 import { AdvancedConnectionPagePO } from './AdvancedConnectionPage';
-import { CalibrationPagePO } from './CalibrationPage';
 import { ComputersMicConnectionPagePO } from './ComputersMicConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
 import { GamePagePO } from './GamePage';
@@ -51,6 +51,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     joinExistingGamePage: new JoinExistingGamePagePO(page, context, browser),
     settingsPage: new SettingsPagePO(page, context, browser),
     rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
-    calibrationPage: new CalibrationPagePO(page, context, browser),
+    calibration: new Calibration(page, context, browser),
   };
 }

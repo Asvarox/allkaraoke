@@ -6,6 +6,7 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import PlayersManager, { PlayerEntity } from 'modules/Players/PlayersManager';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
+import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, Fragment, PropsWithChildren, useMemo } from 'react';
 import LyricsVolumeIndicator from 'routes/Game/Singing/GameOverlay/Components/LyricsVolumeIndicator';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -58,47 +59,101 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
       {timeToNextChange < Infinity && (
         <PassTheMicProgress color={playerColor} progress={passTheMicProgress <= 1 ? passTheMicProgress * 100 : 0} />
       )}
-      {hasNotes ? (
-        <>
-          <LyricsLine data-test={`lyrics-current-player-${player.number}`} effectsEnabled={effectsEnabled}>
-            <HeadstartContainer>
-              <Headstart
-                color={playerColor}
-                percent={Math.min(2, (currentBeat - section.start) / beatsBetweenSectionAndNote)}
-              />
-            </HeadstartContainer>
-            {section?.notes.map((note) => {
-              const fill = Math.max(0, Math.min(2, (currentBeat - note.start) / note.length));
-              return (
-                <LyricContainer type={note.type} key={note.start}>
-                  <LyricActiveContainer>
-                    <LyricActive fill={fill} color={playerColor}>
-                      {note.lyrics.trim()}
-                    </LyricActive>
-                    {note.lyrics.endsWith(' ') && ' '}
-                  </LyricActiveContainer>
-                  {note.lyrics}
-                </LyricContainer>
-              );
-            })}
-            {nextSection?.start === nextChange && <PassTheMicSymbol data-should-shake={true} />}
-          </LyricsLine>
-        </>
-      ) : (
-        <LyricsLine effectsEnabled={effectsEnabled}>&nbsp;</LyricsLine>
-      )}
-      {isNotesSection(nextSection) ? (
-        <LyricsLine nextLine data-test={`lyrics-next-player-${player.number}`} effectsEnabled={effectsEnabled}>
-          {nextSection.notes.map((note) => (
-            <Fragment key={note.start}>{note.lyrics}</Fragment>
-          ))}
-          {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
-        </LyricsLine>
-      ) : (
-        <LyricsLine effectsEnabled={effectsEnabled} nextLine>
-          &nbsp;
-        </LyricsLine>
-      )}
+      <LyricsLine layout effectsEnabled={effectsEnabled} data-test={`lyrics-current-player-${player.number}`}>
+        <AnimatePresence>
+          <motion.div
+            transition={effectsEnabled ? undefined : { duration: 0 }}
+            key={String(section.start)}
+            style={{
+              textAlign: 'center',
+              position: 'absolute',
+              width: '100%',
+            }}
+            initial={{
+              opacity: 0,
+              y: 20,
+              scale: 0.9,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            exit={{
+              opacity: 0,
+              y: -20,
+              scale: 0.9,
+            }}>
+            {hasNotes ? (
+              <>
+                <HeadstartContainer>
+                  <Headstart
+                    color={playerColor}
+                    percent={Math.min(2, (currentBeat - section.start) / beatsBetweenSectionAndNote)}
+                  />
+                </HeadstartContainer>
+                <span>
+                  {section?.notes.map((note) => {
+                    const fill = Math.max(0, Math.min(2, (currentBeat - note.start) / note.length));
+                    return (
+                      <LyricContainer type={note.type} key={note.start}>
+                        <LyricActiveContainer>
+                          <LyricActive fill={fill} color={playerColor}>
+                            {note.lyrics.trim()}
+                          </LyricActive>
+                          {note.lyrics.endsWith(' ') && ' '}
+                        </LyricActiveContainer>
+                        {note.lyrics}
+                      </LyricContainer>
+                    );
+                  })}
+                  {nextSection?.start === nextChange && <PassTheMicSymbol data-should-shake={true} />}
+                </span>
+              </>
+            ) : (
+              <>&nbsp;</>
+            )}
+          </motion.div>
+        </AnimatePresence>
+      </LyricsLine>
+      <LyricsLine nextLine effectsEnabled={effectsEnabled} data-test={`lyrics-next-player-${player.number}`}>
+        <AnimatePresence>
+          {isNotesSection(nextSection) ? (
+            <motion.div
+              transition={effectsEnabled ? undefined : { duration: 0 }}
+              style={{
+                textAlign: 'center',
+                position: 'absolute',
+                width: '100%',
+              }}
+              key={String(nextSection.start)}
+              initial={{
+                opacity: 0,
+                y: 15,
+                scale: 0.85,
+              }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+                y: 0,
+              }}
+              exit={{
+                opacity: 0,
+                y: -15,
+                scale: 1.15,
+              }}>
+              <span>
+                {nextSection.notes.map((note) => (
+                  <Fragment key={note.start}>{note.lyrics}</Fragment>
+                ))}
+                {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
+              </span>
+            </motion.div>
+          ) : (
+            <>&nbsp;</>
+          )}
+        </AnimatePresence>
+      </LyricsLine>
     </LyricsContainer>
   );
 }
@@ -248,7 +303,7 @@ const PassTheMicSymbol = styled(SwapHorizIcon)`
     font-size: 4rem;
   }
 `;
-const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
+const LyricsLine = styled(motion.div)<{ nextLine?: boolean; effectsEnabled: boolean }>`
   font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
 
   height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;

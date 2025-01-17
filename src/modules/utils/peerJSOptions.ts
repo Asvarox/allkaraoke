@@ -10,12 +10,13 @@ const e2eOverrides: PeerJSOption = isE2E()
   : {};
 
 const options: PeerJSOption = {
-  // host: 'localhost',
-  // port: '8080',
-  // path: '/peerjs',
-  // secure: false,
+  host: import.meta.env.VITE_APP_BACKEND_HOST,
+  // port: 8080,
+  path: '/peerjs',
+  secure: true,
   ...e2eOverrides,
   // debug: 3,
 };
 
+console.log(options);
 export default options;

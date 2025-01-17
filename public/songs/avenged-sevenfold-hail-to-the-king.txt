@@ -1,0 +1,380 @@
+#ARTIST:Avenged Sevenfold
+#TITLE:Hail To The King
+#CREATOR:Lorc
+#BPM:240
+#YEAR:2013
+#VIDEO:v=DelhLppPSxY
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:69170
+#ALLKARAOKE_ID:avenged-sevenfold-hail-to-the-king
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:39.736Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29196
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=16340
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Avenged Sevenfold - Hail To The King.mp3
+: 16 3 6 Watch 
+: 20 3 6 your 
+: 24 2 6 tongue
+- 26
+: 29 2 3 Or 
+: 32 3 3 have 
+: 36 3 1 it 
+: 40 3 1 cut 
+: 44 3 1 from 
+: 48 3 3 your 
+: 52 12 3 head
+- 64
+: 80 3 6 Save 
+: 84 3 6 your 
+: 88 3 6 life 
+: 92 3 3 by 
+: 96 3 3 kee
+: 100 3 1 ping 
+: 104 3 1 whis
+: 108 3 1 pers 
+: 112 3 3 un
+: 116 7 5 said
+: 124 3 3 ~
+: 128 8 1 ~
+- 136
+: 144 3 6 Chil
+: 148 4 6 dren 
+: 154 3 6 roam 
+: 158 3 3 the 
+: 162 3 3 streets 
+: 166 3 1 now 
+: 170 3 1 or
+: 174 3 1 phans 
+: 178 3 3 of 
+: 182 12 3 war
+- 194
+: 210 3 6 Bo
+: 214 3 6 dies 
+: 218 3 6 han
+: 222 3 3 ging 
+: 226 3 3 in 
+: 230 3 1 the 
+: 234 3 1 streets 
+: 238 3 1 to 
+: 242 3 3 a
+: 246 7 5 dore
+: 254 3 3 ~
+: 258 10 1 ~
+- 268
+: 276 3 3 Ro
+: 280 3 3 yal 
+: 284 3 3 flames 
+: 288 3 3 will 
+: 292 3 3 carve 
+: 296 3 3 the 
+: 300 7 6 path 
+: 308 3 3 in 
+: 312 7 3 cha
+: 320 1 3 os
+: 322 10 5 ~
+- 332
+* 340 3 3 Brin
+* 344 3 3 ging 
+* 348 3 6 day
+* 352 7 3 light 
+: 361 1 3 to 
+: 363 1 1 the 
+: 365 7 3 night
+- 372 388
+- 388
+: 404 5 5 Death 
+: 410 3 5 is 
+: 414 3 5 ri
+: 418 3 5 ding 
+: 422 3 5 in 
+: 426 3 5 the 
+: 430 3 8 town
+: 434 3 6 ~ 
+: 438 3 5 with 
+: 442 7 5 ar
+: 450 3 5 mor
+: 454 8 7 ~
+- 462
+: 466 3 8 They’ve 
+: 470 3 8 come 
+: 474 3 8 to 
+: 478 3 8 take 
+: 482 3 8 all 
+: 486 3 8 your 
+: 490 10 8 rights
+- 500
+: 512 11 10 Hail 
+: 524 1 8 to 
+: 526 1 6 the 
+: 528 26 6 king
+- 554 560
+- 560
+: 576 11 10 Hail 
+: 588 1 8 to 
+: 590 1 6 the 
+: 592 28 6 one
+- 620 626
+- 626
+: 642 11 10 Kneel 
+: 654 1 8 to 
+: 656 1 6 the 
+: 658 28 6 crown
+- 686 690
+- 690
+: 706 11 10 Stand 
+: 718 1 8 in 
+: 720 1 6 the 
+: 722 29 6 sun
+: 752 14 5 ~
+- 766
+: 770 11 10 Hail 
+: 782 1 8 to 
+: 784 1 6 the 
+: 787 14 6 king
+: 802 8 3 ~
+- 810
+F 813 5 6 Hail!
+- 818
+F 828 6 6 Hail!
+- 834
+F 844 6 6 Hail!
+- 850 860
+- 860
+F 876 4 5 The 
+F 882 16 4 King...
+- 898 910
+- 910
+: 926 3 6 Blood 
+: 930 3 6 is 
+: 934 3 6 spilt 
+: 938 3 3 while 
+: 942 3 3 hol
+: 946 3 1 ding 
+: 950 3 1 keys 
+: 954 3 1 to 
+: 958 3 3 the 
+: 962 12 3 throne
+- 974 976
+- 976
+: 992 3 6 Born 
+: 996 3 6 a
+: 1000 3 6 gain 
+: 1004 3 3 but 
+: 1008 3 3 it’s 
+: 1012 3 1 too 
+: 1016 3 1 late 
+: 1020 3 1 to 
+: 1024 3 3 a
+: 1028 7 5 tone
+: 1036 3 3 ~
+: 1040 8 1 ~
+- 1048
+: 1056 6 6 No 
+: 1064 3 6 mer
+: 1068 3 6 cy 
+: 1072 3 3 from 
+: 1076 3 3 the 
+: 1080 3 1 edge 
+: 1084 3 1 of 
+: 1088 4 1 the 
+: 1094 3 3 blade
+: 1098 1 2 ~
+: 1100 6 1 ~
+- 1106
+: 1122 3 6 Dare 
+: 1126 3 6 es
+: 1130 3 6 cape 
+: 1134 3 3 and 
+: 1138 3 3 learn 
+: 1142 3 1 the 
+: 1146 3 1 price 
+: 1150 3 1 to 
+: 1154 3 3 be 
+: 1158 7 5 paid
+: 1166 3 3 ~
+: 1170 10 1 ~
+- 1180
+: 1184 5 4 Let 
+: 1190 3 3 the 
+: 1194 3 3 wa
+: 1198 3 3 ter 
+: 1202 3 3 flow 
+: 1206 3 3 with 
+: 1210 9 6 shades 
+: 1220 3 3 of 
+: 1224 5 3 red 
+: 1230 3 3 now
+: 1234 6 5 ~
+- 1240
+: 1252 3 3 A
+: 1256 3 3 rrows 
+: 1260 3 6 black 
+: 1264 6 3 out 
+: 1272 1 3 all 
+: 1274 1 1 the 
+: 1276 8 3 light
+- 1284 1300
+- 1300
+: 1316 3 5 Death 
+: 1320 3 5 is 
+: 1324 3 5 ri
+: 1328 3 5 ding 
+: 1332 3 5 in 
+: 1336 4 5 the 
+: 1342 3 8 town
+: 1346 3 6 ~ 
+: 1350 3 5 with 
+: 1354 7 5 ar
+: 1362 3 5 mor
+: 1366 8 8 ~
+- 1374
+: 1378 3 8 They’ve 
+: 1382 3 8 come 
+: 1386 3 8 to 
+: 1390 3 8 grant 
+: 1394 3 8 you 
+: 1398 3 8 your 
+: 1402 5 8 rights
+: 1408 10 10 ~
+- 1418
+* 1424 11 10 Hail 
+* 1436 1 8 to 
+* 1438 1 6 the 
+* 1440 26 6 king
+- 1466 1472
+- 1472
+: 1488 11 10 Hail 
+: 1500 1 8 to 
+: 1502 1 6 the 
+: 1504 28 6 one
+- 1532 1538
+- 1538
+: 1554 11 10 Kneel 
+: 1566 1 8 to 
+: 1568 1 6 the 
+: 1570 28 6 crown
+- 1598 1602
+- 1602
+: 1618 11 10 Stand 
+: 1630 1 8 in 
+: 1632 1 6 the 
+: 1634 29 6 sun
+: 1664 14 5 ~
+- 1678
+: 1682 11 10 Hail 
+: 1694 1 8 to 
+: 1696 1 6 the 
+: 1699 14 6 king
+: 1714 8 3 ~
+- 1722
+F 1725 5 6 Hail!
+- 1730
+F 1740 6 6 Hail!
+- 1746
+F 1756 6 6 Hail!
+- 1762 1772
+- 1772
+F 1788 4 5 The 
+F 1794 16 4 King...
+- 1810 2716
+- 2716
+* 2732 3 0 There’s 
+* 2736 3 2 a 
+* 2740 7 2 taste 
+* 2748 4 0 of 
+* 2756 3 0 fear
+* 2760 14 1 ~
+- 2774
+F 2780 8 6 Hail!
+- 2788
+: 2796 3 0 When 
+: 2800 3 2 the 
+: 2804 7 3 hench
+: 2812 4 -1 man 
+: 2820 3 0 call
+: 2824 14 2 ~
+- 2838
+F 2846 8 6 Hail!
+- 2854
+: 2862 3 0 I
+: 2866 3 0 ron 
+: 2870 7 1 fist 
+: 2878 4 0 to 
+: 2886 7 3 tame 
+: 2895 2 -1 the 
+: 2899 2 -4 land
+: 2902 16 -2 ~
+- 2918
+: 2928 3 2 I
+: 2932 3 0 ron 
+: 2937 6 2 fits 
+: 2945 3 1 to 
+: 2952 6 1 claim 
+: 2960 3 4 it 
+: 2964 3 6 all
+: 2969 45 8 ~
+- 3014
+: 3018 11 10 Hail 
+: 3030 1 8 to 
+: 3032 1 6 the 
+: 3034 26 6 king
+- 3060 3066
+- 3066
+: 3082 11 10 Hail 
+: 3094 1 8 to 
+: 3096 1 6 the 
+: 3098 28 6 one
+- 3126 3132
+- 3132
+: 3148 11 10 Kneel 
+: 3160 1 8 to 
+: 3162 1 6 the 
+: 3164 28 6 crown
+- 3192 3196
+- 3196
+: 3212 11 10 Stand 
+: 3224 1 8 in 
+: 3226 1 6 the 
+: 3228 29 6 sun
+: 3258 14 5 ~
+- 3272
+: 3278 11 10 Hail 
+: 3290 1 8 to 
+: 3292 1 6 the 
+: 3294 30 6 king
+- 3324 3326
+- 3326
+: 3342 11 10 Hail 
+: 3354 1 8 to 
+: 3356 1 6 the 
+: 3358 32 6 one
+- 3390 3392
+- 3392
+: 3408 11 10 Kneel 
+: 3420 1 8 to 
+: 3422 1 6 the 
+: 3424 32 6 crown
+- 3456
+* 3472 11 10 Stand 
+* 3484 1 8 in 
+* 3486 1 6 the 
+* 3488 19 6 sun
+* 3508 3 8 ~
+* 3512 5 10 ~
+* 3518 12 8 ~
+- 3530
+: 3538 11 10 Hail 
+: 3550 1 8 to 
+: 3552 1 6 the 
+: 3554 15 6 king
+: 3570 8 3 ~
+- 3578
+F 3581 5 6 Hail!
+- 3586
+F 3596 6 6 Hail!
+- 3602
+F 3612 6 6 Hail!
+E

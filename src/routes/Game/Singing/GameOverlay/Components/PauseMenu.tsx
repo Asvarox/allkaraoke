@@ -14,9 +14,10 @@ interface Props {
   onResume: () => void;
   onExit?: () => void;
   onRestart: () => void;
+  open: boolean;
 }
 
-export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
+const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) => {
   const navigate = useSmoothNavigate();
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const inputLagRef = useRef<HTMLInputElement | null>(null);
@@ -44,7 +45,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
   const onInputLagActive = () => inputLagRef.current?.focus();
 
   return (
-    <Modal onClose={onResume}>
+    <>
       {!rateSongOpen && (
         <>
           <Menu>
@@ -65,12 +66,22 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
               Edit song
             </MenuButton>
           </Menu>
-          {isInputModalOpen && (
-            <SelectInputModal onClose={() => setIsInputModalOpen(false)} closeButtonText={'Back to Pause Menu'} />
-          )}
+          <SelectInputModal
+            onClose={() => setIsInputModalOpen(false)}
+            closeButtonText={'Back to Pause Menu'}
+            open={isInputModalOpen}
+          />
         </>
       )}
       {rateSongOpen && <RateSong onExit={onExit} register={register} />}
+    </>
+  );
+};
+
+export default function PauseMenu({ onResume, onExit, onRestart, open }: Props) {
+  return (
+    <Modal onClose={onResume} open={open}>
+      {open && <PauseMenuContent onResume={onResume} onExit={onExit} onRestart={onRestart} />}
     </Modal>
   );
 }
