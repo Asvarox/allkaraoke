@@ -59,7 +59,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
       {timeToNextChange < Infinity && (
         <PassTheMicProgress color={playerColor} progress={passTheMicProgress <= 1 ? passTheMicProgress * 100 : 0} />
       )}
-      <LyricsLine layout effectsEnabled={effectsEnabled}>
+      <LyricsLine layout effectsEnabled={effectsEnabled} data-test={`lyrics-current-player-${player.number}`}>
         <AnimatePresence>
           <motion.div
             transition={effectsEnabled ? undefined : { duration: 0 }}
@@ -92,7 +92,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
                     percent={Math.min(2, (currentBeat - section.start) / beatsBetweenSectionAndNote)}
                   />
                 </HeadstartContainer>
-                <span data-test={`lyrics-current-player-${player.number}`}>
+                <span>
                   {section?.notes.map((note) => {
                     const fill = Math.max(0, Math.min(2, (currentBeat - note.start) / note.length));
                     return (
@@ -116,7 +116,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
           </motion.div>
         </AnimatePresence>
       </LyricsLine>
-      <LyricsLine nextLine effectsEnabled={effectsEnabled}>
+      <LyricsLine nextLine effectsEnabled={effectsEnabled} data-test={`lyrics-next-player-${player.number}`}>
         <AnimatePresence>
           {isNotesSection(nextSection) ? (
             <motion.div
@@ -142,7 +142,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
                 y: -15,
                 scale: 1.15,
               }}>
-              <span data-test={`lyrics-next-player-${player.number}`}>
+              <span>
                 {nextSection.notes.map((note) => (
                   <Fragment key={note.start}>{note.lyrics}</Fragment>
                 ))}

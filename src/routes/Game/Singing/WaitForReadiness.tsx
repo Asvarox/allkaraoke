@@ -6,6 +6,7 @@ import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'modules/GameEvents/hooks';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { waitFinished, waitForReadinessMusic } from 'modules/SoundManager';
+import isE2E from 'modules/utils/isE2E';
 import sleep from 'modules/utils/sleep';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
@@ -39,7 +40,7 @@ function WaitForReadiness({ onFinish }: Props) {
         allInputsReady = true;
         setAreAllPlayersReady(true);
       });
-      const minTimeElapsed = sleep(1_500);
+      const minTimeElapsed = sleep(isE2E() ? 250 : 1_500);
       const maxTimeElapsed = sleep(AUTOSTART_TIMEOUT_S * 1_000);
 
       // Only start the music if waiting for readiness takes some time
