@@ -1,0 +1,401 @@
+#ARTIST:Creed
+#TITLE:What If
+#CREATOR:robsetsfire
+#BPM:240
+#YEAR:1999
+#VIDEO:v=BkHjFzw1TUg
+#LANGUAGE:English
+#GAP:24500
+#ALLKARAOKE_ID:creed-what-if
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:50.162Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=102371
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=18065
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Creed - What If.mp3
+: 16 2 2 I 
+: 20 6 5 can’t 
+: 28 4 5 find 
+: 34 2 2 the 
+: 38 4 5 rhyme 
+: 44 2 2 in 
+: 48 1 5 all 
+: 50 3 2 my 
+: 54 5 5 rea
+: 60 6 5 son
+- 66
+: 74 6 5 Lost 
+: 82 4 5 sense 
+: 88 2 2 of 
+: 92 4 5 time 
+: 98 2 2 and 
+: 102 4 5 all 
+: 108 3 5 sea
+: 112 12 -2 sons
+- 124
+: 126 4 5 Feel 
+: 132 4 4 I’ve 
+: 138 2 2 been 
+: 142 5 5 beat
+: 148 6 4 en 
+: 156 14 4 down
+- 170
+: 172 4 4 By 
+: 178 2 2 the 
+: 182 4 5 words 
+: 188 2 2 of 
+: 192 5 5 men 
+: 198 3 2 who 
+: 202 4 5 have 
+: 208 4 5 no 
+: 214 12 -2 grounds
+- 226
+: 228 6 5 Can’t 
+: 236 4 5 sleep 
+: 242 3 2 be
+: 246 2 5 neath 
+: 250 2 2 the 
+: 254 4 5 trees 
+: 260 2 2 of 
+: 264 3 5 wis
+: 268 8 5 dom
+- 276
+: 278 2 2 When 
+: 282 4 5 your 
+: 288 6 5 ax 
+: 296 1 2 has 
+: 298 6 5 cut 
+: 306 1 2 the 
+: 308 1 5 roots 
+: 310 2 2 that 
+: 314 6 5 feed 
+: 322 6 5 them
+- 328
+: 330 8 5 Forked 
+: 340 6 5 tongues 
+: 348 1 4 in 
+: 350 5 5 bit
+: 356 4 5 ter 
+: 362 12 5 mouths
+- 374
+: 376 2 2 Can 
+: 380 4 5 drive 
+: 386 1 2 a 
+: 388 6 5 man 
+: 396 1 2 to 
+: 398 10 5 bleed 
+: 410 1 2 from 
+: 412 5 5 in
+: 418 6 5 side 
+: 426 8 -2 out
+- 434
+: 444 5 5 What 
+: 450 6 4 if 
+: 464 13 -2 you 
+: 478 14 2 did?
+- 492
+: 496 5 5 What 
+: 502 6 4 if 
+: 516 13 -2 you 
+: 530 48 2 lied?
+- 578 632
+- 632
+: 648 6 5 What 
+: 656 6 4 if 
+: 670 5 2 I 
+: 676 5 0 a
+: 682 14 4 venge?
+- 696
+: 698 4 4 What 
+: 704 4 5 if 
+: 710 10 4 eye 
+: 722 4 0 for 
+: 728 6 4 an 
+: 736 48 2 eye?
+- 784 830
+- 830
+: 846 9 2 I’ve 
+: 856 5 5 seen 
+: 862 3 2 the 
+: 866 5 5 wick
+: 872 2 2 ed 
+: 876 2 5 fruit 
+: 880 2 2 of 
+: 884 4 5 your 
+: 890 6 5 vine
+- 896
+: 902 5 5 De
+: 908 6 5 stroy 
+: 916 1 2 the 
+: 918 4 5 man 
+: 924 2 2 who 
+: 928 3 5 lacks 
+: 932 2 5 a 
+: 936 2 -2 strong 
+: 940 14 5 mind
+- 954
+: 956 1 5 Hu
+: 958 2 4 man 
+: 962 4 2 pride 
+: 968 2 5 sings 
+: 972 1 5 a 
+: 974 8 4 vengeful 
+: 984 10 4 song
+- 994
+: 998 3 4 In
+: 1002 3 4 spir
+: 1006 4 2 ed 
+: 1012 4 5 by 
+: 1018 2 2 the 
+: 1022 8 5 times 
+: 1032 2 2 you’ve 
+: 1036 2 5 been 
+: 1040 4 5 walked 
+: 1046 6 -2 on
+- 1052
+: 1058 6 5 My 
+: 1066 4 5 stage 
+: 1072 2 2 is 
+: 1076 4 5 shared 
+: 1082 2 2 by 
+: 1086 4 5 many 
+: 1092 5 2 mil
+: 1098 8 5 lions
+- 1106
+: 1108 1 5 Who 
+: 1110 1 2 lift 
+: 1112 4 5 their 
+: 1118 6 5 hands 
+: 1126 1 2 up 
+: 1128 5 5 high 
+: 1134 1 2 be
+: 1136 4 5 cause 
+: 1142 2 2 they 
+: 1146 4 5 feel 
+: 1152 4 5 this
+- 1156
+: 1158 2 4 We 
+: 1162 4 5 are 
+: 1168 8 5 one 
+: 1178 4 4 we 
+: 1184 6 5 are 
+: 1192 12 5 strong
+- 1204
+: 1206 1 5 The 
+: 1208 2 2 more 
+: 1212 4 5 you 
+: 1218 4 2 hold 
+: 1224 2 5 us 
+: 1228 6 2 down, 
+: 1236 2 5 the 
+: 1240 2 2 more 
+: 1244 2 5 we 
+: 1248 6 5 press 
+: 1256 6 -2 on
+- 1262
+: 1272 6 5 What 
+: 1280 6 4 if 
+: 1294 13 -2 you 
+: 1308 14 2 did?
+- 1322
+: 1324 5 5 What 
+: 1330 6 4 if 
+: 1344 13 -2 you 
+: 1358 42 2 lied?
+- 1400 1462
+- 1462
+: 1478 6 5 What 
+: 1486 6 4 if 
+: 1498 6 2 I 
+: 1506 5 0 a
+: 1512 14 4 venge?
+- 1526
+: 1528 4 4 What 
+: 1534 4 5 if 
+: 1540 10 4 eye 
+: 1552 4 0 for 
+: 1558 4 4 an 
+: 1564 34 2 eye?
+- 1598 1864
+- 1864
+: 1880 5 2 I 
+: 1886 12 2 know 
+: 1900 10 1 I 
+: 1912 14 -3 can’t 
+: 1928 16 -3 hold 
+: 1946 4 0 my 
+: 1952 16 -4 hate 
+: 1972 5 -5 in
+: 1978 16 -3 side 
+: 1996 6 0 my 
+: 2004 66 1 mind
+- 2070
+: 2082 1 -3 Cause 
+: 2084 6 2 what 
+: 2092 13 2 con
+: 2106 12 1 sumes 
+: 2120 10 -3 your 
+: 2132 12 -3 thoughts 
+: 2150 5 0 con
+: 2156 20 -3 trols 
+: 2178 4 0 your 
+: 2184 44 -3 life
+- 2228 2272
+- 2272
+: 2288 4 -3 So 
+: 2294 4 2 I’ll 
+: 2300 12 2 just 
+: 2314 10 2 ask 
+: 2326 12 -3 a 
+: 2340 11 -3 ques
+: 2352 24 -3 tion, 
+: 2392 3 -3 a 
+: 2396 7 2 lone
+: 2404 8 2 ly, 
+: 2414 13 0 sim
+: 2428 14 -3 ple 
+: 2444 9 -3 ques
+: 2454 24 0 tion
+- 2478 2482
+- 2482
+: 2498 4 2 I’ll 
+: 2506 6 2 just 
+: 2516 10 2 ask 
+: 2528 12 5 one 
+: 2542 11 7 ques
+: 2554 30 5 tion
+- 2584
+: 2600 5 5 What 
+: 2606 6 5 if, 
+: 2620 5 5 what 
+: 2626 6 5 if, 
+: 2640 5 5 what 
+: 2646 6 5 if, 
+: 2660 5 5 what 
+: 2666 6 5 if, 
+: 2678 5 5 what 
+: 2684 6 5 if 
+: 2692 14 5 I?
+- 2706
+: 2708 5 5 What 
+: 2714 6 5 if, 
+: 2728 5 5 what 
+: 2734 6 5 if, 
+: 2748 5 5 what 
+: 2754 6 5 if, 
+: 2768 5 5 what 
+: 2774 6 5 if, 
+: 2784 3 5 what 
+: 2788 4 5 if 
+: 2794 16 5 I?
+- 2810
+: 2812 5 2 What 
+: 2818 6 2 if, 
+: 2832 5 2 what 
+: 2838 6 2 if, 
+: 2850 5 2 what 
+: 2856 6 2 if 
+: 2870 5 2 what 
+: 2876 6 2 if, 
+: 2884 5 2 what 
+: 2890 6 2 if 
+: 2898 12 2 I?
+- 2910
+: 2912 5 5 What 
+: 2918 6 5 if 
+: 2932 5 5 what 
+: 2938 6 5 if, 
+: 2954 5 5 what 
+: 2960 6 5 if 
+: 2970 5 5 what 
+: 2976 6 5 if 
+: 2986 5 5 what 
+: 2992 6 5 if 
+: 3000 14 5 I?
+- 3014
+: 3022 5 5 What 
+: 3028 6 4 if 
+: 3042 12 -2 you 
+: 3056 12 2 did?
+- 3068
+: 3074 6 5 What 
+: 3082 6 4 if 
+: 3094 12 -2 you 
+: 3108 36 2 lied?
+- 3144 3210
+- 3210
+: 3226 6 5 What 
+: 3234 6 4 if 
+: 3246 6 2 I 
+: 3254 5 0 a
+: 3260 14 4 venge?
+- 3274
+: 3276 2 4 What 
+: 3280 2 5 if 
+: 3284 14 4 eye 
+: 3300 4 0 for 
+: 3306 6 4 an 
+: 3314 38 2 eye?
+- 3352 3414
+- 3414
+: 3430 6 5 What 
+: 3438 6 4 if 
+: 3452 12 0 your 
+: 3466 10 4 words 
+: 3478 6 5 Could 
+: 3486 4 5 be 
+: 3492 12 4 judged 
+: 3506 4 0 like 
+: 3512 4 4 a 
+: 3518 56 2 crime?
+- 3574 3610
+- 3610
+: 3626 5 5 What 
+: 3632 6 5 if, 
+: 3646 5 5 what 
+: 3652 6 5 if, 
+: 3664 5 5 what 
+: 3670 6 5 if, 
+: 3682 5 5 what 
+: 3688 6 5 if, 
+: 3704 5 5 what 
+: 3710 6 5 if 
+: 3718 14 5 I?
+- 3732
+: 3734 5 5 What 
+: 3740 6 5 if, 
+: 3754 5 5 what 
+: 3760 6 5 if, 
+: 3774 5 5 what 
+: 3780 6 5 if, 
+: 3792 5 5 what 
+: 3798 6 5 if, 
+: 3806 5 5 what 
+: 3812 6 5 if 
+: 3820 12 5 I?
+- 3832
+: 3836 5 2 What 
+: 3842 6 2 if, 
+: 3856 5 2 what 
+: 3862 6 2 if, 
+: 3876 5 2 what 
+: 3882 6 2 if, 
+: 3896 5 2 what 
+: 3902 6 2 if 
+: 3910 3 2 what 
+: 3914 4 2 if 
+: 3920 14 2 I?
+- 3934
+: 3938 5 2 What 
+: 3944 6 2 if 
+: 3958 5 2 what 
+: 3964 6 2 if, 
+: 3976 6 2 what 
+: 3984 6 2 if 
+: 3994 7 2 what 
+: 4002 6 2 if, 
+: 4012 3 2 what 
+: 4016 4 2 if 
+: 4022 54 2 I?
+E

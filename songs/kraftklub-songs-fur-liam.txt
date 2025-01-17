@@ -1,0 +1,638 @@
+#ARTIST:Kraftklub
+#TITLE:Songs für Liam
+#CREATOR:TrollZor
+#BPM:314,1
+#YEAR:2012
+#VIDEO:v=0zm68cRptYo
+#LANGUAGE:German
+#GAP:12597,134670487107
+#ALLKARAOKE_ID:kraftklub-songs-fur-liam
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:58.950Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:157
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Kraftklub - Songs für Liam.mp3
+F 21 2 0 Ich 
+F 25 2 0 wei
+F 29 2 0 ger 
+F 32 2 0 mich 
+F 36 2 0 das 
+F 40 2 0 hin
+F 44 2 0 zu
+F 48 3 0 nehm
+F 52 2 0 en,
+- 54
+F 56 2 0 Al
+F 59 2 0 le 
+F 62 4 0 stehn 
+F 68 2 0 nur 
+F 72 5 0 da.
+- 77
+F 84 2 0 Da
+F 88 2 0 bei 
+F 92 2 0 pas
+F 96 4 0 sier’n 
+F 103 2 0 so 
+F 107 2 0 viel 
+F 111 3 0 schlim
+F 116 2 0 me 
+F 120 2 0 Din
+F 124 2 0 ge 
+F 128 2 0 je
+F 132 2 0 den 
+F 136 5 0 Tag
+- 141
+F 152 2 0 Un
+F 156 2 0 zu
+F 160 2 0 mut
+F 164 2 0 bar
+F 168 2 0 kei
+F 172 3 0 ten 
+F 177 2 0 wie 
+F 181 2 0 die 
+F 185 2 0 neu
+F 188 2 0 en 
+F 191 2 0 Fol
+F 194 2 0 gen 
+F 198 9 0 Scrubs,
+- 207
+F 209 2 0 Ge
+F 213 2 0 ne
+F 217 2 0 rell 
+F 221 2 0 Ma
+F 225 2 0 ri
+F 229 2 0 o 
+F 233 6 0 Barth,
+- 239
+F 241 2 0 Doch 
+F 245 2 0 die 
+F 249 2 0 Leu
+F 253 2 0 te 
+F 257 2 0 wol
+F 261 2 0 len 
+F 265 4 0 das.
+- 269
+F 280 2 0 Mit
+F 284 2 0 tler
+F 288 2 0 wei
+F 292 2 0 le 
+F 296 2 0 kommt 
+F 300 2 0 zum 
+F 304 2 0 drit
+F 308 2 0 ten 
+F 312 2 0 Mal 
+F 316 2 0 das 
+F 320 2 0 sel
+F 324 2 0 be 
+F 328 4 0 Lied.
+- 332
+F 341 2 0 Das 
+F 345 2 0 ist 
+F 349 2 0 kei
+F 353 2 0 ne 
+F 357 2 0 Mu
+F 361 5 0 sik,
+- 366
+F 372 2 0 Dass 
+F 376 2 0 sind 
+F 380 2 0 die 
+F 384 2 0 Black 
+F 388 2 0 Eyed 
+F 392 4 0 Peas.
+- 396
+F 398 2 0 Wir 
+F 402 2 0 müs
+F 406 2 0 sen 
+F 410 4 0 raus
+F 416 2 0 geh’n,
+- 418
+F 421 2 0 Hier 
+F 425 2 0 darf 
+F 429 2 0 man 
+F 433 2 0 nicht 
+F 437 2 0 mehr 
+F 441 2 0 rau
+F 445 2 0 chen 
+F 449 2 0 an 
+F 453 2 0 der 
+F 457 3 0 Bar.
+- 460
+F 469 2 0 Die 
+F 473 2 0 Welt 
+F 477 2 0 geht 
+F 481 2 0 vor 
+F 485 2 0 die 
+F 489 2 0 Hun
+F 493 2 0 de, 
+F 497 2 0 Mäd
+F 501 1 0 chen,
+- 502
+F 504 2 0 Trau
+F 508 2 0 rig 
+F 512 2 0 a
+F 516 2 0 ber 
+F 520 4 0 wahr.
+- 524 527
+- 527
+: 548 2 9 Doch 
+* 552 2 16 wenn 
+: 556 2 14 du 
+: 560 2 12 mich 
+: 564 8 16 küsst
+- 572
+: 590 8 9 Schreibt 
+: 601 2 16 No
+: 605 2 16 el 
+: 609 2 16 wie
+: 612 2 16 der 
+: 616 5 14 Songs 
+: 624 2 12 für 
+: 628 3 16 Li
+: 633 3 14 am!
+- 636
+: 640 5 16 Wenn 
+: 648 3 16 du 
+: 653 3 16 mich 
+: 660 7 16 küsst!
+- 667
+* 673 5 17 Wenn 
+: 681 3 16 du 
+: 686 3 16 mich 
+: 693 7 16 küsst!
+- 700
+: 716 2 9 Komm’ 
+: 720 2 9 un
+: 724 2 9 s’re 
+: 728 2 16 Freun
+: 732 2 16 de 
+: 736 2 16 zu
+: 740 2 16 rück 
+: 745 4 14 aus 
+: 752 3 12 Ber
+: 757 4 9 lin!
+- 761
+: 768 5 16 Wenn 
+: 776 3 16 du 
+: 781 3 16 mich 
+: 788 7 16 küsst!
+- 795
+: 804 2 9 Und 
+: 808 2 16 wenn 
+: 812 2 14 du 
+: 816 2 12 mich 
+: 821 10 16 küsst,
+- 831
+: 845 2 9 Dann 
+: 849 2 9 ist 
+: 853 2 9 die 
+: 857 2 16 Welt 
+: 861 2 16 ein 
+: 865 2 16 biss
+: 869 2 16 chen 
+: 873 2 14 we
+: 877 2 14 ni
+: 881 2 12 ger 
+* 885 5 16 schei
+: 892 3 14 ße!
+- 895
+: 896 5 16 Wenn 
+: 904 3 16 du 
+: 909 3 16 mich 
+: 916 7 14 küsst!
+- 923
+: 929 5 17 Wenn 
+: 937 3 17 du 
+: 942 3 17 mich 
+: 949 7 17 küsst!
+- 956
+: 977 2 9 Bleibst 
+: 981 2 9 du 
+: 985 6 16 hier 
+: 993 2 16 o
+: 997 2 16 der 
+: 1001 2 14 ge
+: 1005 2 14 hen 
+: 1009 2 12 wir 
+: 1013 6 16 bei
+: 1021 5 14 de!
+- 1026 1124
+- 1124
+F 1145 2 0 Hät
+F 1149 2 0 test 
+F 1153 2 0 du 
+F 1157 2 0 mich 
+F 1161 2 0 mal 
+F 1165 2 0 ein 
+F 1169 2 0 biss
+F 1173 2 0 chen 
+F 1177 2 0 frü
+F 1181 2 0 her 
+F 1185 2 0 ge
+F 1189 4 0 küsst,
+- 1193
+F 1197 2 0 Dann 
+F 1201 2 0 wä
+F 1205 2 0 re 
+F 1209 5 0 AIDS 
+F 1216 2 0 jetzt 
+F 1220 2 0 be
+F 1224 5 0 siegt
+- 1229
+F 1233 2 0 Und 
+F 1237 2 0 die 
+F 1241 2 0 90
+F 1245 2 0 tees 
+F 1249 2 0 nicht 
+F 1253 2 0 zu
+F 1257 2 0 rück.
+- 1259
+F 1269 2 0 Uns 
+F 1273 2 0 bei
+F 1277 2 0 de 
+F 1281 2 0 hät
+F 1285 2 0 te 
+F 1289 2 0 man 
+F 1293 2 0 nicht 
+F 1297 2 0 in 
+F 1301 2 0 der 
+F 1305 2 0 S-
+F 1309 2 0 Bahn 
+F 1313 2 0 kon
+F 1317 2 0 trol
+F 1321 3 0 liert
+- 1324
+F 1329 2 0 Und 
+F 1333 4 0 Josh 
+F 1339 4 0 Homme 
+F 1345 2 0 hät
+F 1349 2 0 te 
+F 1353 2 0 nie
+- 1355
+F 1357 2 0 Die 
+F 1361 2 0 Arc
+F 1365 2 0 tic 
+F 1369 2 0 Mon
+F 1373 2 0 keys 
+F 1377 2 0 pro
+F 1381 2 0 du
+F 1385 3 0 ziert.
+- 1388
+F 1393 2 0 Vie
+F 1397 2 0 les 
+F 1401 2 0 wä
+F 1405 2 0 re 
+F 1409 2 0 nie 
+F 1413 3 0 pas
+F 1418 6 0 siert,
+- 1424
+F 1433 2 0 Din
+F 1437 2 0 ge, 
+F 1441 2 0 die 
+F 1445 2 0 ver
+F 1449 2 0 meid
+F 1453 2 0 bar 
+F 1457 3 0 sind.
+- 1460
+F 1461 2 0 Dann 
+F 1465 2 0 gäb 
+F 1469 2 0 es 
+F 1473 2 0 kei
+F 1477 2 0 nen 
+F 1481 2 0 ein
+F 1485 2 0 zi
+F 1489 2 0 gen
+- 1491
+F 1493 2 0 Ro
+F 1497 2 0 man
+F 1501 2 0 ti
+F 1505 2 0 schen 
+F 1509 2 0 Till 
+F 1513 2 0 Schwei
+F 1517 2 0 ger 
+F 1521 2 0 Film.
+- 1523
+F 1525 2 0 Da
+F 1529 2 0 ran 
+F 1533 2 0 kann 
+F 1537 2 0 man 
+F 1541 3 0 nichts 
+F 1546 3 0 än
+F 1551 3 0 dern,
+- 1554
+F 1561 2 0 Dass 
+F 1565 2 0 war 
+F 1569 2 0 al
+F 1573 2 0 les 
+F 1577 2 0 ges
+F 1581 2 0 tern,
+- 1583
+F 1585 2 0 A
+F 1589 2 0 ber 
+F 1593 2 0 du 
+F 1597 2 0 hast 
+F 1601 2 0 jetzt 
+F 1605 2 0 die 
+F 1609 6 0 Chance
+- 1615
+F 1617 2 0 Un
+F 1620 2 0 s’re 
+F 1624 2 0 Zu
+F 1628 2 0 kunft 
+F 1632 2 0 zu 
+F 1636 2 0 ver
+F 1640 2 0 bes
+F 1644 6 0 sern.
+- 1650
+: 1668 2 9 Denn 
+* 1672 2 16 wenn 
+: 1676 2 14 du 
+: 1680 2 12 mich 
+: 1684 8 16 küsst
+- 1692
+: 1711 7 9 Schreibt 
+: 1721 2 16 No
+: 1725 2 16 el 
+: 1729 2 16 wie
+: 1732 2 16 der 
+: 1736 5 14 Songs 
+: 1744 2 12 für 
+: 1748 3 16 Li
+: 1753 3 14 am!
+- 1756
+: 1760 5 16 Wenn 
+: 1768 3 16 du 
+: 1773 3 16 mich 
+: 1780 7 16 küsst!
+- 1787
+* 1793 5 17 Wenn 
+: 1801 3 16 du 
+: 1806 3 16 mich 
+: 1813 7 16 küsst!
+- 1820
+: 1836 2 9 Komm’ 
+: 1840 2 9 un
+: 1844 2 9 s’re 
+: 1848 2 16 Freun
+: 1852 2 16 de 
+: 1856 2 16 zu
+: 1860 2 16 rück 
+: 1865 4 14 aus 
+: 1872 3 12 Ber
+: 1877 4 9 lin!
+- 1881
+: 1888 5 16 Wenn 
+: 1896 3 16 du 
+: 1901 3 16 mich 
+: 1908 7 16 küsst!
+- 1915
+: 1924 2 9 Und 
+: 1928 2 16 wenn 
+: 1932 2 14 du 
+: 1936 2 12 mich 
+: 1941 10 16 küsst,
+- 1951
+: 1965 2 9 Dann 
+: 1969 2 9 ist 
+: 1973 2 9 die 
+: 1977 2 16 Welt 
+: 1981 2 16 ein 
+: 1985 2 16 biss
+: 1989 2 16 chen 
+: 1993 2 14 we
+: 1997 2 14 ni
+: 2001 2 12 ger 
+* 2005 5 16 schei
+: 2012 3 14 ße!
+- 2015
+: 2016 5 16 Wenn 
+: 2024 3 16 du 
+: 2029 3 16 mich 
+: 2036 7 14 küsst!
+- 2043
+: 2049 5 17 Wenn 
+: 2057 3 17 du 
+: 2062 3 17 mich 
+: 2069 7 17 küsst!
+- 2076
+: 2097 2 9 Bleibst 
+: 2101 2 9 du 
+: 2105 6 16 hier 
+: 2113 2 16 o
+: 2117 2 16 der 
+: 2121 2 14 ge
+: 2125 2 14 hen 
+: 2129 2 12 wir 
+: 2133 6 16 bei
+: 2141 5 14 de!
+- 2146 2220
+- 2220
+: 2241 6 9 Wenn 
+: 2250 3 9 du 
+: 2255 3 9 mich 
+: 2261 8 9 küsst...
+- 2269 2284
+- 2284
+: 2305 6 9 Wenn 
+: 2314 3 9 du 
+: 2319 3 9 mich 
+: 2325 8 9 küsst...
+- 2333 2347
+- 2347
+: 2368 6 9 Wenn 
+: 2377 3 9 du 
+: 2382 3 9 mich 
+* 2388 8 11 küsst...
+- 2396 2411
+- 2411
+* 2432 6 12 Wenn 
+: 2441 3 12 du 
+: 2446 3 12 mich 
+: 2452 8 14 küsst...
+- 2460 2475
+- 2475
+: 2496 6 9 Wenn 
+: 2505 3 9 du 
+: 2510 3 9 mich 
+: 2516 8 11 küsst...
+- 2524 2540
+- 2540
+: 2561 6 12 Wenn 
+: 2570 3 12 du 
+: 2575 3 12 mich 
+: 2581 8 14 küsst...
+- 2589 2604
+- 2604
+: 2625 6 9 Wenn 
+: 2634 3 9 du 
+: 2639 3 9 mich 
+: 2645 8 11 küsst...
+- 2653 2668
+- 2668
+: 2689 6 12 Wenn 
+: 2698 3 12 du 
+: 2703 3 12 mich 
+: 2709 8 14 küsst...
+- 2717
+* 2721 5 16 Wenn 
+: 2729 3 16 du 
+: 2734 3 16 mich 
+: 2741 7 16 küsst!
+- 2748
+: 2767 8 9 Schreibt 
+: 2778 2 16 No
+: 2782 2 16 el 
+: 2786 2 16 wie
+: 2789 2 16 der 
+: 2793 5 14 Songs 
+: 2801 2 12 für 
+: 2805 3 16 Li
+: 2810 3 14 am!
+- 2813
+: 2817 5 16 Wenn 
+: 2825 3 16 du 
+: 2830 3 16 mich 
+: 2837 7 16 küsst!
+- 2844
+* 2850 5 17 Wenn 
+: 2858 3 16 du 
+: 2863 3 16 mich 
+: 2870 7 16 küsst!
+- 2877
+: 2893 2 9 Komm’ 
+: 2897 2 9 un
+: 2901 2 9 s’re 
+: 2905 2 16 Freun
+: 2909 2 16 de 
+: 2913 2 16 zu
+: 2917 2 16 rück 
+: 2922 4 14 aus 
+: 2929 3 12 Ber
+: 2934 4 9 lin!
+- 2938
+: 2945 5 16 Wenn 
+: 2953 3 16 du 
+: 2958 3 16 mich 
+: 2965 7 16 küsst!
+- 2972
+: 2981 2 9 Und 
+* 2985 2 16 wenn 
+: 2989 2 14 du 
+: 2993 2 12 mich 
+: 2998 10 16 küsst,
+- 3008
+: 3022 2 9 Dann 
+: 3026 2 9 ist 
+: 3030 2 9 die 
+: 3034 2 16 Welt 
+: 3038 2 16 ein 
+: 3042 2 16 biss
+: 3046 2 16 chen 
+: 3050 2 14 we
+: 3054 2 14 ni
+: 3058 2 12 ger 
+* 3062 5 16 schei
+: 3069 3 14 ße!
+- 3072
+: 3073 5 16 Wenn 
+: 3081 3 16 du 
+: 3086 3 16 mich 
+: 3093 7 14 küsst!
+- 3100
+: 3106 5 17 Wenn 
+: 3114 3 17 du 
+: 3119 3 17 mich 
+: 3126 7 17 küsst!
+- 3133
+: 3154 2 9 Bleibst 
+: 3158 2 9 du 
+: 3162 6 16 hier 
+: 3170 2 16 o
+: 3174 2 16 der 
+: 3178 2 14 ge
+: 3182 2 14 hen 
+: 3186 2 12 wir 
+: 3190 6 16 bei
+: 3198 5 14 de!
+- 3203 3212
+- 3212
+: 3233 5 17 Wenn 
+: 3241 3 17 du 
+: 3246 3 17 mich 
+: 3253 7 17 küsst!
+- 3260
+: 3265 5 16 Wenn 
+: 3273 3 16 du 
+: 3278 3 16 mich 
+: 3285 7 16 küsst!
+- 3292
+: 3297 5 17 Wenn 
+: 3305 3 17 du 
+: 3310 3 17 mich 
+: 3317 7 17 küsst!
+- 3324
+: 3328 5 16 Wenn 
+: 3336 3 16 du 
+: 3341 3 16 mich 
+* 3348 7 14 küsst!
+- 3355
+: 3361 5 17 Wenn 
+: 3369 3 17 du 
+: 3374 3 17 mich 
+: 3381 7 17 küsst!
+- 3388
+: 3393 5 16 Wenn 
+: 3401 3 16 du 
+: 3406 3 16 mich 
+: 3413 7 16 küsst!
+- 3420
+: 3425 5 17 Wenn 
+: 3433 3 17 du 
+: 3438 3 17 mich 
+: 3445 7 17 küsst!
+- 3452
+: 3457 5 16 Wenn 
+: 3465 3 16 du 
+: 3470 3 16 mich 
+* 3477 7 14 küsst!
+- 3484
+: 3489 5 17 Wenn 
+: 3497 3 17 du 
+: 3502 3 17 mich 
+: 3509 7 17 küsst!
+- 3516
+: 3521 5 16 Wenn 
+: 3529 3 16 du 
+: 3534 3 16 mich 
+: 3541 7 16 küsst!
+- 3548
+: 3553 5 17 Wenn 
+: 3561 3 17 du 
+: 3566 3 17 mich 
+* 3573 7 17 küsst!
+- 3580
+: 3585 5 16 Wenn 
+: 3593 3 16 du 
+: 3598 3 16 mich 
+: 3605 7 14 küsst!
+- 3612
+: 3617 5 17 Wenn 
+: 3625 3 17 du 
+: 3630 3 17 mich 
+: 3637 7 17 küsst!
+- 3644
+: 3649 5 16 Wenn 
+: 3657 3 16 du 
+: 3662 3 16 mich 
+: 3669 7 16 küsst!
+- 3676
+: 3681 5 17 Wenn 
+: 3689 3 17 du 
+: 3694 3 17 mich 
+: 3701 7 17 küsst!
+- 3708 3724
+- 3724
+* 3745 5 16 Wenn 
+* 3753 3 16 du 
+* 3758 3 16 mich 
+* 3765 7 16 küsst!
+E
