@@ -30,7 +30,7 @@ export default function ray(
 ) {
   if (width <= 0) return;
 
-  ctx.globalAlpha = 1;
+  ctx.globalAlpha = alpha;
   try {
     const gradient = ctx.createRadialGradient(x, y, 0, x, y, width / 2);
     const [cFirst, cLast, c0] = getColors(color);
