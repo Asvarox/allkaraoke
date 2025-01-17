@@ -1,0 +1,253 @@
+#ARTIST:Black Veil Brides
+#TITLE:Knives And Pens
+#CREATOR:Swanton
+#BPM:372,62
+#YEAR:2010
+#VIDEO:v=gFDCHdKbKBY
+#LANGUAGE:English
+#GAP:52863,61279587784
+#ALLKARAOKE_ID:black-veil-brides-knives-and-pens
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:48.137Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=50802
+#ALLKARAOKE_REALBPM:186
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12486
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Black Veil Brides - Knives And Pens.mp3
+: 25 6 0 A
+* 34 9 5 lone 
+: 47 7 0 at 
+: 59 9 0 last, 
+: 72 9 -3 we 
+: 88 6 4 can 
+: 96 9 -5 sit 
+: 110 9 -3 and 
+* 123 18 4 fight
+- 141
+: 148 3 0 And 
+: 153 4 0 I’ve 
+: 160 9 5 lost 
+: 173 9 0 all 
+: 186 9 0 faith 
+: 202 8 -4 in 
+: 216 5 6 this 
+: 226 11 -5 blur
+: 239 9 -4 ring 
+* 252 14 6 light,
+- 266
+F 284 2 0 But 
+F 287 11 0 stay 
+F 301 10 0 right 
+F 315 10 0 here 
+F 330 9 0 we 
+F 345 5 0 can 
+F 354 11 0 change 
+F 369 7 0 our 
+F 380 21 0 plight
+- 401
+F 410 1 0 We’re 
+F 414 7 0 stor
+F 424 13 0 ming 
+F 442 8 0 through 
+F 456 9 0 this 
+F 471 6 0 des
+F 481 14 0 pite 
+F 510 15 0 what’s 
+F 543 64 0 right
+- 607 735
+- 735
+: 760 6 6 One 
+: 770 11 6 fi
+: 785 11 5 nal 
+: 801 13 4 fight, 
+: 826 7 5 for 
+: 836 11 5 this 
+: 850 11 5 to
+* 866 30 0 night.
+- 896 903
+- 903
+* 928 31 0 Woah 
+* 962 28 0 ~ 
+* 994 17 0 ~
+- 1011
+: 1017 7 6 With 
+: 1027 14 5 knives 
+: 1043 11 4 and 
+: 1057 7 4 pens 
+: 1067 11 0 ~ 
+: 1083 6 0 we 
+: 1092 11 0 made 
+: 1107 11 0 our 
+: 1121 6 0 plight 
+: 1129 28 0 ~
+- 1157 1288
+- 1288
+* 1313 11 5 Lay 
+: 1328 9 0 your 
+: 1342 9 0 heart 
+: 1356 9 -3 down 
+: 1370 7 -5 the 
+: 1380 11 -6 ends 
+: 1394 11 -5 in 
+* 1408 18 6 sight.
+- 1426
+* 1442 9 4 Con
+* 1455 11 0 science 
+: 1469 10 0 begs 
+: 1484 5 -3 for 
+: 1492 5 -4 you 
+: 1500 5 3 to 
+: 1508 11 6 do 
+* 1521 11 -4 what’s 
+: 1535 17 5 right.
+- 1552
+F 1570 6 0 E
+F 1580 8 0 very
+F 1592 11 0 day 
+F 1610 6 0 it’s 
+F 1619 5 0 still 
+F 1627 5 0 the 
+F 1636 9 0 same 
+F 1648 9 0 dull 
+F 1660 26 0 knife,
+- 1686
+F 1697 8 0 Stab 
+F 1710 8 0 it 
+F 1723 10 0 through 
+F 1737 7 0 and 
+F 1747 6 0 jus
+F 1756 4 0 ti
+F 1764 12 0 fy 
+F 1792 16 0 your 
+F 1824 61 0 pride.
+- 1885 2018
+- 2018
+: 2043 7 6 One 
+: 2052 11 6 fi
+: 2068 11 5 nal 
+: 2083 15 4 fight, 
+: 2106 7 4 for 
+: 2117 11 4 this 
+: 2132 9 4 to
+: 2149 32 0 night.
+- 2181 2184
+- 2184
+* 2209 31 0 Woah 
+* 2243 29 0 ~ 
+* 2275 15 0 ~
+- 2290
+: 2299 6 6 With 
+: 2308 13 5 knives 
+: 2323 12 5 and 
+: 2339 6 5 pens 
+: 2348 9 0 ~ 
+: 2364 5 0 we 
+: 2372 11 0 made 
+: 2387 11 0 our 
+: 2402 7 0 pli
+: 2412 20 0 ght.
+- 2432 2442
+- 2442
+* 2467 28 0 Woah 
+* 2499 29 0 ~ 
+* 2531 15 0 ~
+- 2546
+: 2553 2 5 And 
+: 2556 7 5 I 
+: 2564 11 5 can’t 
+: 2578 13 5 go 
+: 2595 7 4 on 
+: 2604 10 0 ~ 
+: 2619 7 0 wit
+: 2628 10 0 hout 
+: 2642 10 0 your 
+: 2660 5 0 love, 
+* 2667 17 0 you 
+* 2688 13 10 lost, 
+* 2707 10 6 you 
+* 2723 13 0 ne
+* 2738 12 0 ver 
+* 2755 12 -3 held 
+* 2770 7 -3 on 
+* 2780 11 6 ~
+- 2791
+F 2811 6 0 We 
+F 2820 15 0 tried 
+F 2844 6 0 out 
+F 2852 11 0 best
+- 2863
+F 2876 6 0 Turn 
+F 2885 10 0 out 
+F 2899 13 0 the 
+F 2915 78 0 light,
+- 2993
+F 3003 7 0 Turn 
+F 3012 11 0 out 
+F 3027 6 0 the 
+F 3035 47 0 light.
+- 3082 3876
+- 3876
+: 3901 6 6 One 
+: 3910 12 6 fi
+: 3925 12 5 nal 
+: 3940 14 4 fight, 
+: 3966 7 5 for 
+: 3976 11 5 this 
+: 3990 13 5 to
+: 4006 36 0 night.
+- 4042 4044
+- 4044
+* 4069 30 0 Woah 
+* 4102 28 0 ~ 
+* 4133 20 0 ~
+- 4153
+: 4158 7 6 With 
+: 4168 12 5 knives 
+: 4182 12 4 and 
+: 4197 7 4 pens 
+: 4207 10 0 ~ 
+: 4222 6 0 we 
+: 4231 11 0 made 
+: 4245 11 0 our 
+: 4261 5 0 pli
+: 4269 28 0 ght.
+- 4297 4302
+- 4302
+* 4327 26 0 Woah 
+* 4358 28 0 ~ 
+* 4390 13 0 ~
+- 4403
+: 4410 3 5 And 
+: 4415 5 5 I 
+: 4422 12 5 can’t 
+: 4437 14 5 go 
+: 4454 6 4 on 
+: 4463 11 0 ~ 
+: 4479 5 0 with
+: 4487 9 0 out 
+: 4501 10 0 your 
+: 4519 9 0 love, 
+: 4531 13 0 you 
+: 4551 10 10 lost, 
+: 4567 11 6 you 
+: 4582 13 0 ne
+: 4599 12 0 ver 
+: 4616 11 -3 held 
+: 4631 7 -3 on 
+: 4640 12 6 ~
+- 4652
+F 4668 7 0 We 
+F 4678 13 0 tried 
+F 4701 7 0 out 
+F 4712 11 0 best
+- 4723
+F 4734 6 0 Turn 
+F 4743 10 0 out 
+F 4758 11 0 the 
+F 4775 77 0 light,
+- 4852
+F 4861 8 0 Turn 
+F 4872 11 0 out 
+F 4886 7 0 the 
+F 4895 45 0 light.
+E

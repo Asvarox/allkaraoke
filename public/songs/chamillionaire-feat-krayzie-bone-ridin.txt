@@ -1,0 +1,1288 @@
+#ARTIST:Chamillionaire feat. Krayzie Bone
+#TITLE:Ridin’
+#CREATOR:Way2Evil
+#BPM:286,05
+#YEAR:2005
+#VIDEO:v=CtwJvgPJ9xw
+#LANGUAGE:English
+#GAP:12613,670686942842
+#ALLKARAOKE_ID:chamillionaire-feat-krayzie-bone-ridin
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:49.608Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=27977
+#ALLKARAOKE_REALBPM:143
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=20350
+#ALLKARAOKE_VOLUME:0,77
+#MP3:Chamillionaire feat. Krayzie Bone - Ridin’.mp3
+: 19 3 -4 They 
+: 24 2 -4 see 
+: 27 3 -4 me 
+* 33 6 3 rol
+: 40 5 -4 lin’
+- 45
+: 59 3 -4 They 
+: 64 4 3 ha
+: 71 9 4 tin’
+- 80
+: 92 3 -4 Pat
+: 96 6 1 rol
+: 103 4 1 ling 
+: 108 3 1 they 
+: 112 2 1 try
+: 115 1 1 in’ 
+: 117 1 1 to 
+: 119 4 1 catch 
+: 124 3 1 me
+- 127
+: 130 5 1 Ri
+: 136 3 3 din’ 
+: 140 4 4 dir
+: 145 4 3 ty
+- 149
+F 150 1 8 Tryin’ 
+F 152 1 7 to 
+F 154 1 8 catch 
+F 156 2 8 me 
+: 159 4 3 ri
+: 164 2 3 din’ 
+: 167 4 4 dir
+: 172 3 3 ty
+- 175
+: 179 2 8 Tryin’ 
+: 182 1 7 to 
+: 184 2 8 catch 
+: 187 3 8 me 
+: 192 3 3 ri
+: 196 2 3 din’ 
+: 199 3 4 dir
+: 203 3 3 ty.
+- 206
+: 211 2 8 Tryin’ 
+: 214 1 7 to 
+: 216 3 8 catch 
+: 220 2 8 me 
+: 224 3 3 ri
+: 228 2 3 din’ 
+: 231 3 4 dir
+: 235 3 3 ty
+- 238
+: 243 2 8 Tryin’ 
+: 246 1 7 to 
+: 248 2 8 catch 
+: 251 3 8 me 
+: 256 3 3 ri
+: 260 2 3 din’ 
+: 263 3 4 dir
+: 267 5 3 ty
+- 272
+: 275 3 -4 My 
+: 279 3 -4 mu
+: 283 2 -4 sic 
+* 288 6 3 so 
+: 295 16 -4 loud
+- 311
+: 315 3 -4 I’m 
+: 319 6 3 swang
+: 327 15 4 in’
+- 342
+: 348 2 -1 They 
+: 351 8 1 ho
+: 360 3 1 pin’ 
+: 365 2 1 that 
+: 368 3 1 they 
+: 372 2 1 ’gon 
+: 375 3 1 catch 
+: 380 3 1 me
+- 383
+: 384 7 1 Ri
+: 392 3 3 din’ 
+: 396 3 4 dir
+: 400 3 3 ty.
+- 403
+F 404 1 8 Tryin’ 
+F 406 1 7 to 
+F 408 2 8 catch 
+F 411 3 8 me 
+: 416 3 3 ri
+: 420 2 3 din’ 
+: 423 3 4 dir
+: 427 4 3 ty
+- 431
+: 435 2 8 Tryin’ 
+: 438 1 7 to 
+: 440 1 8 catch 
+: 442 3 8 me 
+: 447 4 3 ri
+: 452 2 3 din’ 
+: 455 4 4 dir
+: 460 4 3 ty
+- 464
+: 467 2 -5 Tryin’ 
+: 470 1 -4 to 
+: 472 3 -4 catch 
+: 476 2 8 me 
+: 479 8 1 ri
+: 488 6 3 din’ 
+: 496 3 -4 dir
+: 500 10 -4 ty
+- 510
+F 519 4 4 Po
+F 524 2 4 li
+F 527 1 4 ce 
+F 529 2 4 think 
+F 532 1 3 they 
+F 534 1 3 can 
+F 536 1 3 see 
+F 538 3 3 me 
+F 542 3 3 lean
+- 545
+F 548 3 4 I’m 
+F 552 3 4 tint 
+F 556 1 4 so 
+F 558 1 4 it 
+F 560 3 3 ain’t 
+F 564 1 3 ea
+F 566 1 3 sy 
+F 568 2 3 to 
+F 571 2 4 be 
+F 574 3 3 seen
+- 577
+F 578 2 4 When 
+F 581 2 4 you 
+F 584 1 3 see 
+F 586 1 3 me 
+F 588 3 3 ride 
+F 592 3 3 by 
+F 596 1 3 they 
+F 598 1 3 can 
+F 600 1 3 see 
+F 602 3 3 the 
+F 606 4 3 gleam
+- 610
+F 612 1 4 And 
+F 614 1 4 my 
+F 616 1 4 shine 
+F 618 1 3 on 
+F 620 3 3 the 
+F 624 3 3 deck 
+F 628 1 3 and 
+F 630 1 3 the 
+F 632 1 4 T. 
+F 634 3 3 V. 
+F 638 4 3 screen
+- 642
+F 644 3 4 Ride 
+F 648 2 4 with 
+F 651 1 4 a 
+F 653 2 3 new 
+F 656 3 3 chick, 
+F 661 2 3 she 
+F 664 2 3 like 
+F 667 2 3 hold 
+F 670 3 4 up
+- 673
+F 680 2 4 Next 
+F 683 1 4 to 
+F 685 2 3 the 
+F 688 3 3 play
+F 692 2 3 sta
+F 696 3 3 tion 
+F 700 1 3 con
+F 702 3 4 trol
+F 706 2 3 ler
+- 708
+F 712 1 4 Is 
+F 714 1 4 a 
+F 716 3 4 full 
+F 720 3 3 clip 
+F 724 1 3 in 
+F 726 3 3 my 
+F 730 1 3 pis
+F 732 1 3 tol
+F 734 4 4 a
+- 738
+F 744 1 4 Turn 
+F 746 1 4 a 
+F 748 3 4 jac
+F 752 4 3 ker 
+F 758 1 3 in 
+F 760 1 3 to 
+F 762 3 3 a 
+F 766 3 4 co
+F 770 1 3 ma
+- 771
+F 772 3 4 Girl 
+F 776 3 4 you 
+F 780 3 3 ain’t 
+F 784 1 3 know, 
+F 786 1 3 I’m 
+F 788 3 3 cra
+F 792 1 3 zy 
+F 794 1 3 like 
+F 796 1 3 Kray
+F 798 3 4 zie 
+F 802 3 3 Bone
+- 805
+F 808 3 4 Just 
+F 812 1 4 try
+F 814 1 4 in’ 
+F 816 1 3 to 
+F 818 1 3 bone 
+F 820 1 3 ain’t 
+F 822 1 3 tryin’ 
+F 824 1 3 to 
+F 826 2 3 have 
+F 830 3 3 ba
+F 834 3 3 bies
+- 837
+F 840 3 4 Rock 
+F 844 1 4 clean 
+F 846 1 4 it
+F 848 3 3 self 
+F 852 1 3 so 
+F 854 1 3 I 
+F 856 2 3 pull 
+F 859 2 4 in 
+F 863 4 3 la
+F 868 2 3 dies
+- 870
+F 872 2 4 Law’s 
+F 875 2 4 on 
+F 878 2 4 pat
+F 881 2 3 trol 
+F 884 1 3 and 
+F 886 1 3 you 
+F 888 3 3 know 
+F 892 2 4 they 
+F 895 3 3 hate 
+F 899 3 3 me
+- 902
+F 904 3 4 Mu
+F 908 1 4 sic 
+F 910 1 4 turned 
+F 912 1 3 all 
+F 914 1 3 the 
+F 916 1 3 way 
+F 918 3 3 up 
+F 922 1 3 un
+F 924 1 3 til 
+F 926 1 3 the 
+F 928 3 3 max
+F 932 1 3 i
+F 934 3 3 mum
+- 937
+F 938 1 4 I 
+F 940 1 4 can 
+F 942 3 4 speak 
+F 946 1 3 for 
+F 948 3 3 some 
+F 952 1 3 nig
+F 954 1 3 gas 
+F 956 1 3 tryin’ 
+F 958 1 3 to 
+F 960 3 3 jack 
+F 964 1 3 for 
+F 966 3 3 some
+- 969
+F 970 1 4 But 
+F 972 1 4 we 
+F 974 3 4 pack
+F 978 1 3 in’ 
+F 980 3 3 some
+F 984 1 3 thin’
+- 985
+F 986 1 4 That 
+F 988 2 4 we 
+F 991 2 3 have 
+F 994 2 3 and 
+F 997 3 3 uhm
+- 1000
+F 1001 2 3 Will 
+F 1004 1 4 have 
+F 1006 1 4 a 
+F 1008 1 4 nig
+F 1010 1 3 ga 
+F 1012 1 3 locked 
+F 1014 4 3 up 
+F 1020 1 3 in
+- 1021
+F 1022 1 4 The 
+F 1024 3 4 maxi
+F 1028 3 3 mum 
+F 1032 4 3 secu
+F 1037 4 3 rity 
+F 1042 3 3 cell
+- 1045
+F 1046 1 4 I’m 
+F 1048 1 4 grip
+F 1050 4 3 pin’ 
+F 1055 7 3 oak. 
+F 1063 7 3 Music 
+F 1071 3 3 load 
+F 1075 3 3 and 
+F 1079 4 3 tippin’ 
+F 1085 7 3 slow
+- 1092
+F 1095 2 4 Twist 
+F 1098 4 4 and 
+F 1103 3 3 twist
+F 1107 1 3 in’ 
+F 1109 1 3 like 
+F 1111 2 3 hit 
+F 1114 3 3 this 
+F 1118 2 3 though
+- 1120
+F 1121 5 4 Police 
+F 1127 3 4 pull up 
+F 1131 1 3 from 
+F 1133 4 3 behind 
+F 1138 1 3 and 
+F 1140 2 3 is 
+F 1143 1 3 in 
+F 1145 3 3 his 
+F 1149 7 3 throat
+- 1156
+F 1160 1 4 Win 
+F 1162 5 4 dows 
+F 1168 1 4 down 
+F 1170 1 3 got 
+F 1172 2 3 ta 
+F 1175 2 3 stop 
+F 1178 2 3 po
+F 1181 2 3 lu
+F 1184 3 3 tion
+- 1187
+F 1188 1 4 C
+F 1190 1 4 Ds 
+F 1192 3 3 change 
+F 1196 1 3 nig
+F 1198 1 3 gas 
+F 1200 2 3 like
+F 1203 2 3 who
+F 1206 1 3 is 
+F 1208 2 3 that 
+F 1211 10 3 producing?
+- 1221
+F 1222 3 4 This 
+F 1226 1 4 the 
+F 1228 1 3 Play
+F 1230 1 3 -N-
+F 1232 5 3 Skillz
+- 1237
+F 1238 1 4 When 
+F 1240 1 4 we 
+F 1242 1 3 out 
+F 1244 2 3 and 
+F 1247 3 3 crui
+F 1251 1 3 sin’
+- 1252
+F 1253 2 4 Got 
+F 1256 3 4 war
+F 1260 1 3 rants 
+F 1262 1 3 in 
+F 1264 2 3 every 
+F 1267 1 3 cit
+F 1269 1 3 y 
+F 1271 3 3 ex
+F 1275 1 3 cept 
+F 1277 3 3 Hous
+F 1281 2 3 ton
+- 1283
+F 1284 1 4 But 
+F 1286 1 4 I 
+F 1288 3 3 still 
+F 1292 1 3 ain’t 
+F 1294 2 3 lo
+F 1297 2 3 sin’
+- 1299
+: 1300 3 -4 They 
+: 1304 3 -4 see 
+: 1308 3 -4 me 
+* 1314 5 3 roll
+: 1320 8 -4 in’
+- 1328
+: 1340 3 -4 They 
+* 1344 8 3 hat
+: 1353 6 4 in’
+- 1359
+: 1372 3 -1 Pat 
+: 1376 7 1 rol
+: 1384 3 1 ling 
+: 1388 3 1 they 
+: 1392 3 1 tryin’ 
+: 1396 2 1 to 
+: 1400 3 1 catch 
+: 1404 3 1 me
+- 1407
+: 1408 7 1 Ri
+: 1416 3 3 din’ 
+: 1420 3 4 dir
+: 1424 3 3 ty
+- 1427
+F 1428 1 8 Tryin’ 
+F 1430 1 7 to 
+F 1432 3 8 catch 
+F 1436 3 8 me 
+: 1440 3 3 ri
+: 1444 3 3 din’ 
+: 1448 3 4 dir
+: 1452 3 3 ty
+- 1455
+: 1460 1 8 Tryin’ 
+: 1462 1 7 to 
+: 1464 3 8 catch 
+: 1468 3 8 me 
+: 1472 3 3 ri
+: 1476 3 3 din’ 
+: 1480 3 4 dir
+: 1484 3 3 ty.
+- 1487
+: 1492 1 8 Tryin’ 
+: 1494 1 7 to 
+: 1496 3 8 catch 
+: 1500 3 8 me 
+: 1504 3 3 ri
+: 1508 3 3 din’ 
+: 1512 3 4 dir
+: 1516 3 3 ty
+- 1519
+: 1524 1 8 Tryin’ 
+: 1526 1 7 to 
+: 1528 3 8 catch 
+: 1532 3 8 me 
+: 1536 3 3 ri
+: 1540 3 3 din’ 
+: 1544 3 4 dir
+: 1548 3 3 ty.
+- 1551
+: 1555 3 -4 My 
+: 1559 4 -4 mu
+: 1564 2 -4 sic 
+* 1568 8 3 so 
+: 1577 10 -4 loud
+- 1587
+: 1596 2 -4 I’m 
+: 1599 8 3 swang
+: 1608 10 4 in’
+- 1618
+: 1628 3 -1 They 
+: 1632 7 1 ho
+: 1640 3 1 pin’ 
+: 1644 3 1 that 
+: 1648 3 1 they 
+: 1652 3 1 ’gon 
+: 1656 2 1 catch 
+: 1660 2 1 me
+- 1662
+: 1665 6 1 Ri
+: 1672 3 3 din’ 
+: 1676 3 4 dir
+: 1680 3 3 ty.
+- 1683
+F 1684 1 8 Tryin’ 
+F 1686 1 7 to 
+F 1688 3 8 catch 
+F 1692 3 8 me 
+: 1696 3 3 ri
+: 1700 3 3 din’ 
+: 1704 3 4 dir
+: 1708 3 3 ty
+- 1711
+: 1716 1 8 Tryin’ 
+: 1718 1 7 to 
+: 1720 3 8 catch 
+: 1724 3 8 me 
+: 1728 3 3 ri
+: 1732 3 3 din’ 
+: 1736 3 4 dir
+: 1740 3 3 ty
+- 1743
+: 1748 3 1 Tryin’ 
+: 1752 2 1 to 
+: 1756 1 1 catch 
+: 1758 1 8 me 
+: 1760 6 1 ri
+: 1768 4 3 din’ 
+: 1776 2 -4 dir
+: 1779 1 -4 ty
+- 1780
+: 1781 1 8 Tryin’ 
+: 1783 1 7 to 
+: 1785 1 8 catch 
+: 1788 2 8 me 
+: 1792 2 3 ri
+: 1796 2 3 din’ 
+: 1800 3 4 dir
+: 1804 3 3 ty
+- 1807
+F 1810 1 3 I’ve 
+F 1812 2 3 been 
+F 1816 3 6 drink
+F 1820 1 6 in’ 
+F 1822 1 3 and
+F 1824 3 3 smo
+F 1828 3 3 kin’ 
+F 1832 3 6 hol
+F 1836 3 6 din’ 
+F 1840 3 3 shit 
+F 1844 1 3 cause
+- 1845
+F 1846 1 3 A 
+F 1848 1 3 brot
+F 1850 1 3 her 
+F 1852 3 6 can’t 
+F 1856 2 6 fo
+F 1859 2 3 cus.
+- 1861
+F 1862 1 3 I 
+F 1864 3 6 gotta 
+F 1868 1 6 get 
+F 1870 1 6 to 
+F 1872 3 6 home 
+F 1876 1 3 ’fore 
+F 1878 1 3 the 
+F 1880 3 6 po 
+F 1884 3 6 po’s 
+F 1888 3 6 scope 
+F 1892 3 3 this,
+- 1895
+F 1896 1 3 Big 
+F 1898 1 6 ol’ 
+F 1900 1 6 Ex
+F 1902 3 6 cur
+F 1907 3 3 sion 
+F 1912 3 6 swer
+F 1916 2 3 ving
+- 1918
+F 1920 1 3 All up
+F 1922 1 3 in 
+F 1924 3 3 the 
+F 1928 3 3 curve 
+F 1932 3 3 man
+- 1935
+F 1936 1 3 Nigga 
+F 1938 1 3 been 
+F 1940 1 3 sip
+F 1942 3 3 pin’
+- 1945
+F 1946 1 3 On 
+F 1948 1 3 that 
+F 1950 1 3 Hen
+F 1952 1 3 nes
+F 1954 1 3 sey 
+F 1956 1 3 and 
+F 1958 1 3 the 
+F 1960 3 6 gin 
+F 1964 1 3 a
+F 1966 3 3 gain
+- 1969
+F 1970 1 3 Is 
+F 1972 3 6 in 
+F 1976 1 3 a
+F 1978 2 3 gain 
+F 1981 2 3 we 
+F 1984 3 6 in 
+F 1988 1 3 the 
+F 1990 3 3 wind
+- 1993
+F 1994 1 3 Do
+F 1996 1 3 in’ 
+F 1998 1 3 a 
+F 2000 2 3 hun
+F 2003 1 3 dred 
+F 2005 1 3 while 
+F 2007 1 3 I 
+F 2009 1 3 puf 
+F 2011 1 3 on 
+F 2013 1 3 the 
+F 2015 2 3 blunt
+- 2017
+F 2018 1 3 And 
+F 2020 1 3 rol
+F 2022 1 3 lin’ 
+F 2024 1 3 on 
+F 2026 1 3 oth
+F 2028 1 3 er 
+F 2030 3 3 one 
+F 2034 2 3 up
+- 2036
+F 2040 2 3 We 
+F 2043 1 3 livin’ 
+F 2045 2 3 like 
+F 2048 1 3 we 
+F 2050 1 3 ain’t 
+F 2052 1 3 given 
+F 2054 3 3 a fuck
+- 2057
+F 2058 1 3 I 
+F 2060 1 3 got 
+F 2062 1 3 a 
+F 2064 1 3 re
+F 2066 1 3 volver 
+F 2068 1 3 in 
+F 2070 1 3 my 
+F 2072 3 6 right 
+F 2076 3 3 hand
+- 2079
+F 2084 1 3 For
+F 2086 1 3 ty 
+F 2088 3 3 ounce 
+F 2092 1 3 on 
+F 2094 1 3 my 
+F 2096 3 6 lap
+- 2099
+F 2100 3 3 Free
+F 2104 3 6 zing 
+F 2108 3 6 my 
+F 2112 5 3 balls
+- 2117
+F 2120 1 3 Roll 
+F 2122 1 3 a 
+F 2124 1 3 nig
+F 2126 1 3 ga 
+F 2128 3 6 tree, 
+F 2132 3 6 green 
+F 2136 3 6 leaves 
+F 2140 3 6 and 
+F 2144 5 3 all
+- 2149
+F 2151 1 4 Com
+F 2153 1 4 in’ 
+F 2155 1 4 pret
+F 2157 2 3 ty 
+F 2160 3 3 deep, 
+F 2164 3 3 me 
+F 2168 3 3 and 
+F 2172 3 3 my 
+F 2176 6 3 do-
+F 2184 4 3 jo
+- 2188
+F 2190 1 4 I 
+F 2192 1 4 got
+F 2194 1 3 ta 
+F 2196 1 3 get 
+F 2198 1 3 to 
+F 2200 1 3 back
+F 2202 2 3 streets
+- 2204
+F 2212 1 4 Wan
+F 2214 1 4 ted 
+F 2216 1 3 by 
+F 2218 1 3 the 
+F 2220 3 3 six 
+F 2224 3 3 pound 
+F 2228 1 3 and 
+F 2230 1 3 I 
+F 2232 3 3 got 
+F 2236 3 3 heat
+- 2239
+F 2240 3 3 Glock 
+F 2244 3 3 glock 
+F 2248 3 3 shots 
+F 2252 1 3 to 
+F 2254 1 3 the 
+F 2256 3 3 block 
+F 2260 3 3 we 
+F 2264 1 3 creep 
+F 2266 2 3 creep
+- 2268
+F 2275 3 3 Pop, 
+F 2279 3 3 pop -
+- 2282
+F 2284 3 3 Hope 
+F 2288 3 3 cops 
+F 2292 2 3 don’t 
+F 2296 3 3 see 
+F 2300 3 3 me, 
+F 2308 1 3 on 
+F 2310 1 3 a 
+F 2312 3 3 low 
+F 2316 3 3 key.
+- 2319
+: 2324 2 -4 With 
+: 2328 3 -4 no
+: 2332 3 -4 re 
+: 2336 2 -1 gards 
+: 2340 3 -2 for 
+: 2344 2 -4 the 
+: 2348 3 -1 law
+- 2351
+: 2356 3 -1 We 
+: 2360 3 -1 dodge 
+: 2364 2 -4 ’em 
+: 2368 3 -4 like 
+: 2372 2 -5 fuck 
+: 2376 3 -1 ’em 
+: 2380 4 -2 all.
+- 2384
+F 2388 1 3 But 
+F 2390 1 3 I 
+F 2392 2 3 won’t 
+F 2396 2 6 get 
+F 2400 2 6 caught 
+F 2404 3 6 up 
+F 2408 2 3 and 
+F 2412 3 6 brought 
+F 2416 3 6 up
+- 2419
+F 2420 2 3 On 
+F 2424 1 6 charges 
+F 2426 1 6 for 
+F 2428 2 3 none 
+F 2432 4 8 of 
+F 2438 4 3 y’all
+- 2442
+F 2444 1 3 Keep 
+F 2446 1 3 a 
+F 2448 2 6 gun 
+F 2452 1 8 in 
+F 2454 3 3 car, 
+F 2460 1 3 and 
+F 2462 1 3 a 
+F 2464 2 6 blunt 
+F 2468 1 8 to 
+F 2470 4 3 spark,
+- 2474
+F 2476 1 3 But 
+F 2478 1 3 well 
+F 2480 1 6 if 
+F 2482 2 8 you 
+F 2486 2 3 want, 
+F 2490 1 3 nig
+F 2492 1 3 ga 
+F 2494 1 3 you 
+F 2496 1 6 pop
+F 2498 2 8 pin’ 
+F 2502 3 3 dark
+- 2505
+F 2512 1 1 Rea
+F 2514 1 1 dy 
+F 2516 1 -1 or 
+F 2518 2 1 not
+F 2522 1 1 ~
+- 2523
+F 2524 1 1 We 
+F 2526 1 -1 bust 
+F 2528 2 1 shots 
+F 2531 2 1 off 
+F 2535 1 1 in 
+F 2537 2 -1 the 
+F 2541 3 1 air,
+- 2544
+F 2546 1 1 Kray
+F 2548 1 1 zie 
+F 2550 3 1 Bone 
+F 2554 2 1 and 
+F 2558 1 3 Cham
+F 2560 2 1 mil
+F 2564 2 -1 lion
+F 2568 5 -4 aire
+- 2573
+: 2580 2 -4 They 
+: 2584 2 -4 see 
+: 2588 2 -4 me 
+F 2593 5 3 rol
+: 2600 6 -4 lin’,
+- 2606
+: 2620 2 -4 They 
+: 2624 5 3 hat
+: 2632 8 4 in’
+- 2640
+: 2652 2 -1 Pat
+: 2656 6 1 rol
+: 2664 2 1 lin’ 
+: 2668 3 1 they 
+: 2672 2 1 tryin’ 
+: 2676 2 1 to 
+: 2680 2 1 catch 
+: 2684 2 1 me
+- 2686
+: 2688 6 1 Ri
+: 2696 2 3 din’ 
+: 2700 3 4 dir
+: 2704 3 3 ty.
+- 2707
+F 2708 1 8 Tryin’ 
+F 2710 1 7 to 
+F 2712 2 8 catch 
+F 2716 2 8 me 
+: 2720 3 3 ri
+: 2724 2 3 din’ 
+: 2728 3 4 dir
+: 2732 3 3 ty,
+- 2735
+: 2740 1 8 Tryin’ 
+: 2742 1 7 to 
+: 2744 3 8 catch 
+: 2748 2 8 me 
+: 2752 3 3 ri
+: 2756 2 3 din’ 
+: 2760 3 4 dir
+: 2764 3 3 ty.
+- 2767
+: 2772 1 8 Tryin’ 
+: 2774 1 7 to 
+: 2776 2 8 catch 
+: 2780 2 8 me 
+: 2784 2 3 ri
+: 2788 2 3 din’ 
+: 2792 3 4 dir
+: 2796 3 3 ty.
+- 2799
+: 2804 1 8 Tryin’ 
+: 2806 1 7 to 
+: 2808 3 8 catch 
+: 2812 2 8 me 
+: 2816 2 3 ri
+: 2820 2 3 din’ 
+: 2824 3 4 dir
+: 2828 3 3 ty.
+- 2831
+: 2836 2 -4 My 
+: 2840 2 -4 mu
+: 2844 2 -4 sic 
+: 2848 6 3 so 
+: 2856 8 -4 loud
+- 2864
+: 2875 2 -3 I’m 
+: 2880 5 3 swang
+: 2888 9 4 in’
+- 2897
+: 2908 2 -1 They 
+: 2912 6 1 ho
+: 2920 3 1 pin’ 
+: 2924 2 1 that 
+: 2928 2 1 they 
+: 2932 3 1 ’gon 
+: 2936 2 1 catch 
+: 2940 2 1 me
+- 2942
+: 2944 6 1 Ri
+: 2952 2 3 din’ 
+: 2956 3 4 dir
+: 2960 3 3 ty.
+- 2963
+F 2964 1 8 Tryin’ 
+F 2966 1 7 to 
+F 2968 2 8 catch 
+F 2972 2 8 me 
+: 2976 3 3 ri
+: 2980 2 3 din’ 
+: 2984 3 4 dir
+: 2988 3 3 ty,
+- 2991
+: 2996 1 8 Tryin’ 
+: 2998 1 7 to 
+: 3000 2 8 catch 
+: 3004 2 8 me 
+: 3008 2 3 ri
+: 3012 2 3 din’ 
+: 3016 3 4 dir
+: 3020 3 3 ty.
+- 3023
+: 3028 2 -4 Tryin’ 
+: 3032 1 -4 to 
+: 3034 1 -4 catch 
+: 3036 2 -4 me 
+: 3040 6 1 ri
+: 3048 5 3 din’ 
+: 3056 2 -4 dir
+: 3059 1 -4 ty.
+- 3060
+: 3061 1 8 Tryin’ 
+: 3063 1 7 to 
+: 3065 2 8 catch 
+: 3068 2 8 me 
+: 3072 2 3 rid
+: 3076 2 3 in’ 
+: 3080 3 4 dir
+: 3084 3 3 ty!
+- 3087
+F 3089 1 4 Do 
+F 3091 1 4 what 
+F 3093 1 4 you 
+F 3095 2 4 thinkin’ 
+F 3098 1 3 so,
+- 3099
+F 3100 1 3 I 
+F 3102 1 3 tried 
+F 3104 1 3 to 
+F 3106 1 3 let 
+F 3108 2 4 you 
+F 3111 3 4 go
+- 3114
+F 3115 1 4 Turn 
+F 3117 1 4 up 
+F 3119 1 3 a 
+F 3121 1 3 blink 
+F 3123 1 3 of 
+F 3125 4 3 light
+- 3129
+F 3130 2 4 And 
+F 3133 3 3 I 
+F 3137 2 4 swang 
+F 3140 1 4 it 
+F 3142 2 3 slow
+F 3145 1 3 er
+- 3146
+F 3147 1 3 A 
+F 3149 1 3 nigga 
+F 3151 4 3 upset 
+F 3157 1 3 for 
+F 3159 3 3 sure 
+F 3163 1 3 cause 
+F 3165 1 3 they 
+F 3167 2 4 think
+- 3169
+F 3173 1 4 They 
+F 3175 1 4 know 
+F 3177 1 3 that 
+F 3179 3 3 they 
+F 3183 2 3 cat
+F 3186 1 3 chin’ 
+F 3188 1 3 me
+- 3189
+F 3191 1 4 With 
+F 3193 3 3 plenty 
+F 3197 2 3 of 
+F 3200 3 4 drink 
+F 3204 2 4 and 
+F 3207 2 4 dro
+- 3209
+F 3211 1 3 So 
+F 3213 2 3 they 
+F 3217 2 3 get 
+F 3220 1 3 be
+F 3222 2 3 hind 
+F 3225 2 4 me
+- 3227
+F 3228 1 4 Tryin’ 
+F 3230 1 4 to 
+F 3232 2 3 check 
+F 3235 3 3 my 
+F 3239 4 3 tags,
+- 3243
+F 3244 1 3 Look 
+F 3246 1 3 at 
+F 3248 3 4 my 
+F 3252 2 3 rear 
+F 3258 1 4 view 
+F 3260 1 4 and 
+F 3262 3 4 they 
+F 3266 3 3 smilin’
+- 3269
+F 3272 2 3 Think 
+F 3275 2 3 they’ll 
+F 3278 1 3 catch 
+F 3280 1 3 me 
+F 3282 3 4 on 
+F 3286 1 4 the 
+F 3288 1 4 wrong 
+F 3290 1 4 well 
+F 3292 3 3 keep 
+F 3296 5 3 tryin’
+- 3301
+F 3302 1 3 Cause 
+F 3304 1 3 they 
+F 3306 1 4 keep 
+F 3308 7 3 denyin’
+- 3315
+F 3316 1 4 That 
+F 3318 1 4 it’s 
+F 3320 3 3 racial 
+F 3324 3 3 pro
+F 3328 7 3 filling
+- 3335
+F 3337 4 3 Houston, 
+F 3342 5 3 Texas 
+F 3348 1 3 you 
+F 3350 1 3 can 
+F 3352 2 4 check 
+F 3355 2 3 my 
+F 3358 7 4 tags
+- 3365
+F 3369 3 4 Pull 
+F 3373 2 4 me 
+F 3376 3 3 over 
+F 3381 1 3 try 
+F 3383 1 3 to 
+F 3385 1 3 check 
+F 3387 1 3 my 
+F 3389 8 3 slap
+- 3397
+F 3401 2 3 Glove 
+F 3404 2 3 com
+F 3407 2 4 part
+F 3410 1 4 ment 
+F 3412 1 4 got
+F 3414 1 3 ta 
+F 3416 2 3 get 
+F 3419 2 3 my 
+F 3422 6 3 cash
+- 3428
+F 3429 1 4 Cause 
+F 3431 1 3 the 
+F 3433 1 3 crook
+F 3435 1 4 ed 
+F 3437 5 4 cops 
+F 3444 1 4 try 
+F 3446 1 3 to 
+F 3448 1 3 come 
+F 3450 2 3 up 
+F 3453 6 3 fast
+- 3459
+F 3464 2 4 And 
+F 3467 1 3 been 
+F 3469 1 3 a 
+F 3471 1 4 bal
+F 3473 1 4 ler 
+F 3475 1 4 that 
+F 3477 3 3 I 
+F 3481 1 3 am 
+F 3483 2 3 I 
+F 3486 3 3 talk 
+F 3490 1 3 to 
+F 3492 3 3 them
+- 3495
+F 3496 1 3 Giving 
+F 3498 3 3 a 
+F 3502 2 3 damn 
+F 3505 5 3 about 
+F 3511 2 4 not 
+F 3514 5 4 feeling 
+F 3520 1 4 my 
+F 3522 7 3 attitude
+- 3529
+F 3530 1 3 When 
+F 3532 2 3 they 
+F 3535 9 3 realize 
+F 3545 1 3 I 
+F 3547 1 3 ain’t 
+F 3549 3 3 even 
+F 3553 5 3 ridin’ 
+F 3559 4 3 dirty
+- 3563
+F 3564 1 4 Bet 
+F 3566 1 4 you’ll 
+F 3568 3 4 be 
+F 3572 1 3 leavin’ 
+F 3574 3 3 with 
+F 3578 1 3 an 
+F 3580 3 4 even 
+F 3584 6 4 madder 
+F 3591 4 3 mood
+- 3595
+F 3597 3 3 I’mma 
+F 3601 1 3 laugh 
+F 3603 3 3 at 
+F 3607 2 4 you 
+F 3613 1 4 then 
+F 3615 1 4 I’mma 
+F 3617 1 3 have 
+F 3619 1 3 to 
+F 3621 4 3 cruise
+- 3625
+F 3627 1 3 I’m 
+F 3629 1 4 in 
+F 3631 5 4 number 
+F 3637 2 3 two 
+F 3640 1 3 on 
+F 3642 1 3 some 
+F 3644 3 3 more 
+F 3648 5 4 DJ 
+F 3654 7 4 screws
+- 3661
+F 3662 1 3 You 
+F 3664 2 3 can’t 
+F 3668 5 3 arrest 
+F 3674 2 3 me 
+F 3677 2 3 plus 
+F 3680 3 3 you 
+F 3684 2 3 can’t 
+F 3687 2 4 sue
+- 3689
+F 3690 1 4 This 
+F 3692 1 3 is 
+F 3694 1 3 a 
+F 3696 3 3 message 
+F 3700 1 3 to 
+F 3702 1 3 the 
+F 3704 3 3 law
+- 3707
+F 3708 1 4 Tellin 
+F 3710 1 4 them 
+F 3712 1 3 WE 
+F 3714 3 3 HATE 
+F 3718 3 3 YOU
+- 3721
+F 3722 1 3 I 
+F 3724 1 3 can’t 
+F 3725 1 3 be 
+F 3727 1 3 touched
+- 3728
+F 3730 2 4 Or 
+F 3733 1 4 tell 
+F 3735 1 4 ’em 
+F 3737 1 3 that 
+F 3739 2 3 they 
+F 3742 4 3 shoulda 
+F 3747 4 3 know
+- 3751
+F 3753 5 3 Tippin’ 
+F 3759 5 3 down, 
+F 3765 3 4 sittin’ 
+F 3769 3 4 crooked 
+F 3773 1 3 on 
+F 3775 1 3 my 
+F 3777 6 3 crome
+- 3783
+F 3786 2 3 Bookin’ 
+F 3789 1 3 my 
+F 3791 4 3 phone, 
+F 3796 1 3 tryin’ 
+F 3798 1 3 to 
+F 3799 1 4 find 
+F 3800 1 4 a 
+F 3802 1 3 chick 
+F 3804 1 3 I 
+F 3806 2 3 wanna 
+F 3809 4 4 bone
+- 3813
+F 3814 1 4 Like 
+F 3816 1 3 they 
+F 3818 2 3 couldn’t 
+F 3821 3 3 stop 
+F 3825 2 3 me
+- 3827
+F 3828 1 4 I’mma 
+F 3830 1 4 ’bout 
+F 3832 1 3 to 
+F 3834 1 3 pull 
+F 3836 1 3 up 
+F 3838 1 3 at 
+F 3840 1 3 your 
+F 3842 2 3 home
+- 3844
+F 3845 1 3 And 
+F 3847 3 3 it’s 
+F 3851 5 3 on.
+- 3856
+: 3861 2 -4 They 
+: 3865 2 -4 see 
+: 3869 2 -4 me 
+* 3873 6 3 rol
+: 3881 6 -4 lin’,
+- 3887
+: 3901 2 -4 They 
+: 3905 5 3 hat
+: 3913 8 4 in’
+- 3921
+: 3933 2 -1 Pat
+: 3937 6 1 rol
+: 3945 2 1 lin’ 
+: 3949 3 1 they 
+: 3953 2 1 tryin’ 
+: 3957 2 1 to 
+: 3961 2 1 catch 
+: 3965 2 1 me
+- 3967
+: 3969 6 1 Ri
+: 3977 2 3 din’ 
+: 3981 3 4 dir
+: 3985 3 3 ty.
+- 3988
+F 3989 1 8 Tryin’ 
+F 3991 1 7 to 
+F 3993 2 8 catch 
+: 3997 2 8 me 
+: 4001 3 3 ri
+: 4005 2 3 din’ 
+: 4009 3 4 dir
+: 4013 3 3 ty,
+- 4016
+: 4021 1 8 Tryin’ 
+: 4023 1 7 to 
+: 4025 3 8 catch 
+: 4029 2 8 me 
+: 4033 3 3 ri
+: 4037 2 3 din’ 
+: 4041 3 4 dir
+: 4045 3 3 ty.
+- 4048
+: 4053 1 8 Tryin’ 
+: 4055 1 7 to 
+: 4057 2 8 catch 
+: 4061 2 8 me 
+: 4065 2 3 ri
+: 4069 2 3 din’ 
+: 4073 3 4 dir
+: 4077 3 3 ty.
+- 4080
+: 4085 1 8 Tryin’ 
+: 4087 1 7 to 
+: 4089 3 8 catch 
+: 4093 2 8 me 
+: 4097 2 3 ri
+: 4101 2 3 din’ 
+: 4105 3 4 dir
+: 4109 3 3 ty.
+- 4112
+: 4116 3 -4 My 
+: 4120 3 -4 mu
+: 4125 2 -4 sic 
+* 4129 7 3 so 
+: 4137 8 -4 loud
+- 4145
+: 4156 3 -3 I’m 
+: 4161 6 3 swang
+: 4169 11 4 in’
+- 4180
+: 4189 2 -1 They 
+: 4193 6 1 ho
+: 4201 3 1 pin’ 
+: 4205 2 1 that 
+: 4209 2 1 they 
+: 4213 3 1 ’gon 
+: 4217 2 1 catch 
+: 4221 2 1 me
+- 4223
+: 4225 7 1 Ri
+: 4233 2 3 din’ 
+: 4237 3 4 dir
+: 4241 3 3 ty.
+- 4244
+F 4245 1 8 Tryin’ 
+F 4247 1 7 to 
+: 4249 2 8 catch 
+: 4253 2 8 me 
+: 4257 3 3 ri
+: 4261 2 3 din’ 
+: 4265 3 4 dir
+: 4269 3 3 ty,
+- 4272
+: 4277 1 8 Tryin’ 
+: 4279 1 7 to 
+: 4281 2 8 catch 
+: 4285 2 8 me 
+: 4289 2 3 ri
+: 4293 2 3 din’ 
+: 4297 3 4 dir
+: 4301 3 3 ty.
+- 4304
+: 4309 2 -4 Tryin’ 
+: 4313 1 -4 to 
+: 4315 1 -4 catch 
+: 4317 2 -4 me 
+: 4321 7 1 ri
+: 4329 7 3 din’ 
+: 4337 2 -4 dir
+: 4340 1 -4 ty.
+- 4341
+: 4342 1 8 Tryin’ 
+: 4344 1 7 to 
+: 4346 2 8 catch 
+: 4349 2 8 me 
+: 4353 2 3 rid
+: 4357 2 3 in’ 
+: 4361 3 4 dir
+: 4365 3 3 ty!
+E

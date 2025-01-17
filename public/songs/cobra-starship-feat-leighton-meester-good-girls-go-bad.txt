@@ -1,0 +1,550 @@
+#ARTIST:Cobra Starship feat. Leighton Meester
+#TITLE:Good Girls Go Bad
+#CREATOR:gaspar17
+#BPM:240,35
+#YEAR:2009
+#VIDEO:v=Ix5z1bRz4Sc
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:7571,456209694195
+#ALLKARAOKE_ID:cobra-starship-feat-leighton-meester-good-girls-go-bad
+#ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:49.246Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=8814
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Cobra Starship feat. Leighton Meester - Good Girls Go Bad.mp3
+: 16 2 0 I 
+: 20 2 0 make 
+: 24 2 2 them 
+: 28 4 4 good 
+: 36 6 4 girls 
+: 44 4 4 go
+- 48 64
+- 64
+: 80 2 0 I 
+: 84 2 0 make 
+: 88 2 2 them 
+: 92 4 4 good 
+: 100 6 4 girls 
+: 108 4 4 go 
+: 116 2 4 ba
+: 120 6 2 ~d
+- 126 128
+- 128
+: 144 2 0 I 
+: 148 2 0 make 
+: 152 2 2 them 
+: 156 4 4 good 
+: 164 6 4 girls 
+: 172 6 4 go
+- 178 192
+- 192
+: 208 2 0 I 
+: 212 2 0 make 
+: 216 2 2 them 
+: 220 4 4 good 
+: 228 6 4 girls 
+: 236 6 4 go
+- 242
+F 252 4 4 (Good 
+F 260 4 0 girls 
+F 268 4 -3 go 
+F 276 8 9 bad)
+- 284 300
+- 300
+F 316 4 4 (Good 
+F 324 4 0 girls 
+F 332 4 -3 go 
+F 340 8 9 bad)
+- 348 384
+- 384
+: 400 2 7 I 
+: 404 2 5 know 
+: 408 2 5 your 
+: 412 2 4 ty
+: 416 4 2 ~pe
+- 420 424
+- 424
+: 440 2 0 Yeah, 
+: 444 2 2 dad
+: 447 2 0 dy’s 
+: 450 2 2 lit
+: 453 2 0 tle 
+: 456 4 4 girl
+- 460
+: 464 2 -3 Just 
+: 468 2 0 take 
+: 472 2 2 a 
+: 476 4 4 bite
+- 480
+F 484 4 7 (One 
+F 492 1 4 bi
+F 494 2 2 ~te)
+- 496
+: 500 2 2 Let 
+: 504 2 0 me 
+: 508 2 2 shake 
+: 512 2 4 up 
+: 516 2 2 your 
+: 520 4 0 world
+- 524
+: 536 2 0 ’Cause 
+: 540 4 7 just 
+: 548 4 7 one 
+: 556 4 7 night
+- 560
+: 564 2 4 Coul
+: 568 2 0 dn’t 
+: 572 2 7 be 
+: 576 6 7 so 
+: 584 4 9 wrong
+- 588
+: 592 2 0 I’m 
+: 596 2 0 go
+: 600 2 2 nna 
+: 604 6 4 make 
+: 612 2 5 you 
+: 616 6 2 lose 
+: 624 2 4 con
+: 628 16 0 trol
+- 644
+: 656 2 0 She 
+: 660 2 0 was 
+: 664 26 7 so 
+: 696 2 -1 shy
+: 700 8 -3 ~
+- 708
+: 720 2 0 Till 
+: 724 2 0 I 
+: 728 20 7 drove 
+: 756 2 0 her 
+: 760 6 2 wi
+: 768 2 4 ~
+: 772 2 2 ~
+: 776 4 0 ~ld
+- 780
+: 784 2 0 I 
+: 788 2 0 make 
+: 792 2 2 them 
+: 796 4 4 good 
+* 804 6 4 girls 
+: 812 4 4 go 
+: 820 2 4 ba
+: 824 6 2 ~d
+- 830 832
+- 832
+: 848 2 0 I 
+: 852 2 0 make 
+: 856 2 2 them 
+: 860 4 4 good 
+: 868 6 4 girls 
+: 876 4 4 go 
+: 884 2 4 ba
+: 888 6 2 ~d
+- 894 900
+- 900
+: 916 2 0 You 
+: 920 2 0 were 
+: 924 2 7 han
+: 928 2 7 gin’ 
+: 932 2 5 in 
+: 936 2 5 the 
+: 940 2 4 cor
+: 944 2 2 ner
+- 946
+: 948 2 2 With 
+: 952 2 0 your 
+: 956 2 2 five 
+: 960 2 2 be
+: 963 2 0 ~st 
+: 968 6 4 friends
+- 974
+: 984 2 0 You 
+: 988 2 7 heard 
+: 992 2 7 that 
+: 996 2 5 I 
+: 1000 2 5 was 
+: 1004 2 4 trou
+: 1008 2 2 ble
+- 1010
+: 1012 2 2 But 
+: 1016 2 0 you 
+: 1020 2 2 coul
+: 1024 2 2 dn’t 
+: 1028 2 0 re
+: 1032 4 4 sist
+- 1036
+: 1040 2 0 I 
+: 1044 2 0 make 
+: 1048 2 2 them 
+: 1052 4 4 good 
+: 1060 6 4 girls 
+: 1068 4 4 go 
+: 1076 2 4 ba
+: 1080 6 2 ~d
+- 1086 1088
+- 1088
+: 1104 2 0 I 
+: 1108 2 0 make 
+: 1112 2 2 them 
+: 1116 4 4 good 
+: 1124 6 4 girls 
+: 1132 6 4 go
+- 1138
+F 1148 4 4 (Good 
+F 1156 4 0 girls 
+F 1164 4 -3 go 
+F 1172 8 9 bad)
+- 1180 1196
+- 1196
+F 1212 4 4 (Good 
+F 1220 4 0 girls 
+F 1228 4 -3 go 
+F 1236 8 9 bad)
+- 1244 1260
+- 1260
+F 1276 4 4 (Good 
+F 1284 4 0 girls 
+F 1292 2 -3 go)
+- 1294
+: 1296 2 7 I 
+: 1300 2 5 know 
+: 1304 2 5 your 
+: 1308 2 4 ty
+: 1312 4 2 ~pe
+- 1316
+: 1332 2 2 Boy 
+: 1336 2 2 you’re 
+: 1340 2 2 dan
+: 1345 6 2 ge
+: 1353 4 2 rous
+- 1357
+: 1360 2 -3 Yeah 
+: 1364 2 0 you’re 
+: 1368 2 2 that 
+: 1372 6 4 guy
+- 1378
+F 1380 4 4 (That 
+F 1388 2 2 guy
+F 1392 2 0 ~)
+- 1394
+: 1396 2 0 I’d 
+: 1400 2 2 be 
+: 1404 2 4 stu
+: 1408 2 5 pid 
+: 1412 2 4 to 
+: 1416 6 0 trust
+- 1422
+: 1432 2 0 But 
+: 1436 4 7 just 
+: 1444 4 7 one 
+: 1452 4 7 night 
+: 1460 2 7 coul
+: 1464 2 4 dn’t 
+: 1468 2 7 be 
+: 1472 6 7 so 
+: 1480 6 9 wrong
+- 1486
+: 1488 2 0 You 
+: 1492 2 0 make 
+: 1496 2 2 me 
+: 1500 6 4 wa
+: 1508 2 7 nna 
+: 1512 6 2 lose 
+: 1520 2 4 con
+: 1524 10 0 trol
+- 1534 1536
+- 1536
+: 1552 2 0 She 
+: 1556 2 0 was 
+: 1560 26 7 so 
+: 1592 2 -1 shy
+: 1596 8 -3 ~
+- 1604
+: 1616 2 0 Till 
+: 1620 2 0 I 
+: 1624 20 7 drove 
+: 1652 2 0 her 
+: 1656 6 2 wi
+: 1664 2 4 ~
+: 1668 2 2 ~
+: 1672 4 0 ~ld
+- 1676
+: 1680 2 0 I 
+: 1684 2 0 make 
+: 1688 2 2 them 
+: 1692 4 4 good 
+: 1700 6 4 girls 
+: 1708 4 4 go 
+: 1716 2 4 ba
+: 1720 6 2 ~d
+- 1726 1728
+- 1728
+: 1744 2 0 I 
+: 1748 2 0 make 
+: 1752 2 2 them 
+: 1756 4 4 good 
+: 1764 6 4 girls 
+: 1772 4 4 go 
+: 1780 2 4 ba
+: 1784 6 2 ~d
+- 1790 1796
+- 1796
+: 1812 2 0 I 
+: 1816 2 0 was 
+: 1820 2 7 han
+: 1824 2 7 gin’ 
+: 1828 2 5 in 
+: 1832 2 5 the 
+: 1836 2 4 cor
+: 1840 2 2 ner
+- 1842
+: 1844 2 2 With 
+: 1848 2 0 my 
+: 1852 2 2 five 
+: 1856 6 2 best 
+: 1864 8 4 friends
+- 1872
+: 1880 2 0 I 
+: 1884 2 7 heard 
+: 1888 2 7 that 
+: 1892 2 5 I 
+: 1896 2 5 was 
+: 1900 2 4 trou
+: 1904 2 2 ble
+- 1906
+: 1908 2 2 But 
+: 1912 2 0 you 
+: 1916 2 2 coul
+: 1920 2 2 dn’t 
+: 1924 2 0 re
+: 1928 6 4 sist
+- 1934
+: 1936 2 0 I 
+: 1940 2 0 make 
+: 1944 2 2 them 
+: 1948 4 4 good 
+: 1956 6 4 girls 
+: 1964 4 4 go 
+: 1972 2 4 ba
+: 1976 6 2 ~d
+- 1982 1984
+- 1984
+: 2000 2 0 I 
+: 2004 2 0 make 
+: 2008 2 2 them 
+: 2012 4 4 good 
+: 2020 6 4 girls 
+: 2028 6 4 go
+- 2034
+F 2044 4 4 (Good 
+F 2052 4 0 girls 
+F 2060 4 -3 go 
+F 2068 8 9 bad)
+- 2076 2092
+- 2092
+F 2108 4 4 (Good 
+F 2116 4 0 girls 
+F 2124 4 -3 go 
+F 2132 8 9 bad)
+- 2140 2156
+- 2156
+F 2172 4 4 (Good 
+F 2180 4 0 girls 
+F 2188 4 -3 go 
+F 2196 8 9 bad)
+- 2204
+F 2220 1 -1 Oh
+F 2222 1 0 ~
+F 2224 1 1 ~
+F 2226 1 2 ~
+F 2228 1 3 ~
+F 2230 1 4 ~
+- 2231
+F 2236 2 7 She 
+F 2240 1 5 got
+F 2242 1 4 ta 
+F 2244 2 4 way 
+F 2247 1 4 with 
+F 2249 1 4 the 
+F 2251 2 4 boys 
+F 2255 1 4 in 
+F 2257 1 3 the 
+F 2260 2 1 place
+- 2262
+F 2264 1 1 Treat 
+F 2266 1 1 ’em 
+F 2268 2 1 like 
+F 2271 1 1 they 
+F 2273 1 -1 don’t 
+F 2275 2 -1 stand 
+F 2279 1 1 a 
+F 2282 5 3 cha
+F 2288 2 4 ~nce
+- 2290
+F 2296 2 5 And 
+F 2299 2 7 he 
+F 2303 1 6 got
+F 2305 1 7 ta 
+F 2307 2 7 way 
+F 2311 1 7 with 
+F 2313 1 7 the 
+F 2315 2 6 girls 
+F 2319 1 7 in 
+F 2321 1 7 the 
+F 2323 2 7 back
+- 2325
+F 2327 1 6 Ac
+F 2329 1 5 tin’ 
+F 2331 2 5 like 
+F 2334 1 7 they’re 
+F 2336 2 7 too 
+F 2339 2 6 hot 
+F 2343 1 5 to 
+F 2345 6 3 dance
+- 2351
+F 2360 2 4 Yeah,
+- 2362
+F 2364 2 7 She 
+F 2368 1 5 got
+F 2370 1 4 ta 
+F 2372 2 4 way 
+F 2376 1 4 with 
+F 2378 1 4 the 
+F 2380 2 4 boys 
+F 2384 1 4 in 
+F 2386 1 3 the 
+F 2388 2 1 place
+- 2390
+F 2392 1 1 Treat 
+F 2394 1 1 ’em 
+F 2396 2 1 like 
+F 2399 1 1 they 
+F 2401 2 0 don’t 
+F 2404 2 0 stand 
+F 2409 1 1 a 
+F 2411 5 3 cha
+F 2417 2 4 ~nce
+- 2419
+F 2424 2 6 And 
+F 2427 2 8 he 
+F 2431 1 8 got
+F 2433 1 6 ta 
+F 2436 2 6 way 
+F 2440 1 4 with 
+F 2442 1 4 the 
+F 2444 2 4 girls 
+F 2448 1 3 in 
+F 2450 1 4 the 
+F 2452 2 2 back
+- 2454
+F 2456 1 2 Ac
+F 2458 1 4 tin’ 
+F 2460 1 3 like 
+F 2463 1 2 they’re 
+F 2465 1 4 too 
+F 2467 2 4 hot 
+F 2472 1 3 to 
+F 2474 4 -1 dance
+- 2478
+: 2480 2 0 I 
+: 2484 2 0 make 
+: 2488 2 2 them 
+: 2492 4 4 good 
+: 2500 6 4 girls 
+: 2508 4 4 go 
+: 2516 2 4 ba
+: 2520 6 2 ~d
+- 2526 2528
+- 2528
+: 2544 2 0 I 
+: 2548 2 0 make 
+: 2552 2 2 them 
+: 2556 4 9 good 
+: 2564 6 9 girls 
+: 2572 6 9 go
+- 2578
+: 2588 4 9 Good 
+: 2596 6 9 girls 
+: 2604 4 9 go 
+: 2612 38 12 ba
+: 2652 2 10 ~
+: 2656 2 8 ~
+: 2660 14 7 ~
+: 2676 40 9 ~d
+- 2716 2724
+- 2724
+: 2740 2 0 I 
+: 2744 2 0 was 
+: 2748 2 7 hang
+: 2752 2 7 in’ 
+: 2756 2 5 in 
+: 2760 2 5 the 
+: 2764 2 4 cor
+: 2768 2 2 ner
+- 2770
+: 2772 2 2 With 
+: 2776 2 0 my 
+: 2780 2 2 five 
+: 2784 6 2 best 
+: 2792 8 4 friends
+- 2800
+: 2808 2 0 I 
+: 2812 2 7 heard 
+: 2816 2 7 that 
+: 2820 2 5 you 
+: 2824 2 5 were 
+: 2828 2 4 trou
+: 2832 2 2 ble
+- 2834
+: 2836 2 2 But 
+: 2840 2 0 I 
+: 2844 2 2 coul
+: 2848 2 2 dn’t 
+: 2852 2 0 re
+: 2856 6 4 sist
+- 2862
+: 2864 2 0 I 
+: 2868 2 0 make 
+: 2872 2 2 them 
+: 2876 4 4 good 
+: 2884 6 4 girls 
+: 2892 4 4 go 
+: 2900 2 4 ba
+: 2904 6 2 ~d
+- 2910 2912
+- 2912
+: 2928 2 0 I 
+: 2932 2 0 make 
+: 2936 2 2 them 
+: 2940 4 4 good 
+: 2948 6 4 girls 
+: 2956 4 4 go 
+: 2964 2 4 ba
+: 2968 6 2 ~d
+- 2974 2976
+- 2976
+: 2992 2 0 I 
+: 2996 2 0 make 
+: 3000 2 2 them 
+: 3004 4 4 good 
+: 3012 6 4 girls 
+: 3020 6 4 go
+- 3026
+F 3036 4 4 (Good 
+F 3044 4 0 girls 
+F 3052 4 -3 go 
+F 3060 8 9 bad)
+- 3068 3084
+- 3084
+F 3100 4 4 (Good 
+F 3108 4 0 girls 
+F 3116 4 -3 go 
+F 3124 8 9 bad)
+- 3132 3148
+- 3148
+F 3164 4 4 (Good 
+F 3172 4 0 girls 
+F 3180 6 -3 go)
+E
