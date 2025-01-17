@@ -20,7 +20,7 @@ export default class GoldNoteParticle implements Particle {
     const lightColor = tinycolor(color).lighten(15).toRgbString();
     const darkColor = tinycolor(color).darken(15).toRgbString();
 
-    if (Math.random() > 0.85) {
+    if (Math.random() > 0.9) {
       const position = randomInt(0, width / 8);
 
       const rand = Math.random();

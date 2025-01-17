@@ -62,17 +62,7 @@ export default class RayParticle implements Particle {
 
     const elapsedTicks = initialTtl - this.ttl;
 
-    ctx.globalAlpha = easing * 0.2;
-    ray(
-      canvas,
-      ctx,
-      x + elapsedTicks * this.velocityX,
-      y + elapsedTicks * this.velocityY,
-      width,
-      height,
-      clr,
-      easing * 0.2,
-    );
+    ray(canvas, ctx, x + elapsedTicks * this.velocityX, y + elapsedTicks * this.velocityY, width, height, clr, easing);
 
     this.ttl = this.ttl - delta;
     this.finished = this.ttl <= 0;

@@ -45,7 +45,7 @@ export default class TriangleParticle implements Particle {
     const x = this.x - width / 2 + elapsedTicks * this.velocityX;
     const y = this.y - height / 2 + elapsedTicks * this.velocityY;
 
-    debris(canvas, ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 0.8 * percentage);
+    debris(canvas, ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 1 * percentage);
 
     this.velocityX = this.velocityX - 0.009;
     this.velocityY = this.velocityY * 1.0075;
