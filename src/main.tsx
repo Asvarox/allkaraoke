@@ -20,6 +20,7 @@ import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
 import storage from 'modules/utils/storage';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -104,12 +105,12 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
-  // <StrictMode>
-  <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
-    <CacheProvider value={emotionCache}>
-      <App />
-      <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
-    </CacheProvider>
-  </MotionConfig>,
-  // </StrictMode>,
+  <StrictMode>
+    <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
+      <CacheProvider value={emotionCache}>
+        <App />
+        <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
+      </CacheProvider>
+    </MotionConfig>
+  </StrictMode>,
 );

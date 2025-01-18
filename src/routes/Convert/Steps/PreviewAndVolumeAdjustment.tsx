@@ -19,26 +19,22 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const reference = useRef<HTMLAudioElement | null>(null);
 
   const [initialised, setInitialised] = useState(false);
-  useEffect(() => {
-    (async () => {
-      if (data.volume === 0) {
-        onChange({ ...data, volume: 0.5 });
-        await player.current?.getInternalPlayer()?.setVolume(50);
-      } else {
-        await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
-      }
-      setInitialised(true);
-    })();
-  }, []);
 
   useEffect(() => {
-    if (!initialised) {
-      return;
-    }
     const interval = setInterval(async () => {
-      const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
-      if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
-        onChange({ ...data, volume: currentVolume / 100 });
+      if (!initialised) {
+        if (data.volume === 0) {
+          onChange({ ...data, volume: 0.5 });
+          await player.current?.getInternalPlayer()?.setVolume(50);
+        } else {
+          await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
+        }
+        setInitialised(true);
+      } else {
+        const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
+        if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
+          onChange({ ...data, volume: currentVolume / 100 });
+        }
       }
     }, 500);
 

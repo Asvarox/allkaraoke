@@ -86,7 +86,10 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     if (disabled) {
       return { disabled, focused: false };
     }
-    newElementList.current.push(name);
+    if (!newElementList.current.includes(name)) {
+      newElementList.current.push(name);
+    }
+
     if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
 
     if (isDefault) {
