@@ -26,7 +26,7 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
   );
 
   useEffect(() => {
-    SimplifiedMic.startMonitoring(undefined);
+    SimplifiedMic.startMonitoring();
     return SimplifiedMic.addListener(updateVolumes);
   }, [updateVolumes]);
 

@@ -87,7 +87,7 @@ export default class CanvasDrawing {
       ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
       const players = PlayersManager.getPlayers();
-      players.forEach((player, index) => {
+      players.forEach((player) => {
         this.drawPlayer(player.number, ctx);
       });
 
@@ -164,7 +164,7 @@ export default class CanvasDrawing {
     if (!isNotesSection(drawingData.currentSection)) return;
 
     drawingData.currentSection.notes.forEach((note) => {
-      const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true, displacements[note.start]);
+      const { x, y, w } = this.getNoteCoords(drawingData, note, note.pitch, true, displacements[note.start]);
 
       drawNote(ctx, x, y, w, note, drawingData.playerNumber);
     });
@@ -255,7 +255,7 @@ export default class CanvasDrawing {
   private fadeoutNotes = (section: NotesSection, drawingData: DrawingData) => {
     if (GraphicSetting.get() === 'high') {
       section.notes.forEach((note) => {
-        const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
+        const { x, y, w } = this.getNoteCoords(drawingData, note, note.pitch, true);
 
         ParticleManager.add(new FadeoutNote(x, y, w, note, drawingData.playerNumber));
       });
@@ -360,7 +360,6 @@ export default class CanvasDrawing {
     big: boolean,
   ) => {
     const { sectionEndBeat, currentSection, playerCanvas, pitchStepHeight } = calculateData(drawingData);
-    const { song, currentBeat } = drawingData;
 
     const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
 

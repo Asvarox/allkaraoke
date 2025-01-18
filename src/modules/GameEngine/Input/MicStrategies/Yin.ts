@@ -3,7 +3,7 @@ import { FrequencyDetectionStrategy } from 'modules/GameEngine/Input/MicStrategi
 export default class YinStrategy implements FrequencyDetectionStrategy {
   private detector: ReturnType<typeof YIN> | undefined;
 
-  public init = async (context: AudioContext, buffer: number): Promise<void> => {
+  public init = async (context: AudioContext, _buffer: number): Promise<void> => {
     this.detector = YIN({
       sampleRate: context.sampleRate,
     });

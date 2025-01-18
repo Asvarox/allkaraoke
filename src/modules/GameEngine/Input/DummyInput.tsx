@@ -29,7 +29,7 @@ class DummyInput implements InputInterface {
 
   public getFrequencies = () => this.frequencies;
   public getVolumes = () => this.volumes;
-  public clearFrequencies = (deviceId?: string) => undefined;
+  public clearFrequencies = () => undefined;
 
   public stopMonitoring = async () => {
     if (!this.isMonitoring) return;

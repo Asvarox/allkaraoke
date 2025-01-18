@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin');
-
 const styles = require('./src/modules/GameEngine/Drawing/styles');
 
 /** @type {import('tailwindcss').Config} */

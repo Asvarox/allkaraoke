@@ -35,7 +35,7 @@ export default class Renderer {
       await page.waitForSelector(selector, { timeout: 7_500, state: 'attached' });
       await page.waitForLoadState('domcontentloaded');
     } catch (error) {
-      console.error(`Failed to prerender route: ${route}`);
+      console.error(`Failed to prerender route: ${route}`, error);
     }
 
     const html = await page.content();

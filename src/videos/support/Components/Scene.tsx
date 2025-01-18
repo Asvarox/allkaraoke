@@ -32,7 +32,7 @@ interface Props extends PropsWithChildren {
 }
 
 export const Scene: React.FC<Props> = ({ children, delay = 0, transition = true, color, id }) => {
-  const { durationInFrames, fps } = useVideoConfig();
+  const { durationInFrames } = useVideoConfig();
   const frame = useAbsoluteFrame();
 
   const movement = easeInOutSine(frame / (durationInFrames / 2));

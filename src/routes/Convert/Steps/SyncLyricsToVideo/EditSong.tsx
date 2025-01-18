@@ -11,7 +11,6 @@ import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseS
 import { useEffect, useMemo, useRef, useState } from 'react';
 import AdjustPlayback from 'routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
 import EditSection, { ChangeRecord } from 'routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
-import ListTracks from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ListTracks';
 import ManipulateBpm from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
 import ShiftGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
 import ShiftVideoGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
@@ -227,16 +226,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <Typography variant={'h5'} mb={2}>
               Advanced
             </Typography>
-            <ManipulateBpm
-              // eslint-disable-next-line react-compiler/react-compiler
-              player={player.current}
-              onChange={setOverrideBpm}
-              current={overrideBpm}
-              song={newSong}
-              key={newSong.gap}
-            />
-            {/* eslint-disable-next-line react-compiler/react-compiler */}
-            <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
+            <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
           </Grid>
           <Grid item xs={4}>
             <div className="text-xs mb-2">

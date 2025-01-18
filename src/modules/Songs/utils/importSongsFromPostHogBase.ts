@@ -103,7 +103,7 @@ export const importSongsFromPostHogBase = async (
         console.log(`Added song ${song.id}`);
       }
     } catch (e) {
-      console.warn(`Couldn't convert song ${songTxt}`);
+      console.warn(`Couldn't convert song ${songTxt}`, e);
     }
   }
 };

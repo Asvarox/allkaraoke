@@ -11,7 +11,7 @@ const abstractStorage = (type: typeof sessionStorage | typeof localStorage) => (
 
     try {
       return JSON.parse(val);
-    } catch (e) {
+    } catch (_e) {
       return val as T;
     }
   },

@@ -163,7 +163,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
         viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
       }
     },
-    scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
+    scrollToGroup: async (groupIndex, behavior = 'auto') => {
       const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
       if (item) {
         viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });

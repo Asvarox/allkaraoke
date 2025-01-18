@@ -72,7 +72,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
 
   useHotkeys(
     'Backspace',
-    (e) => {
+    () => {
       searchInput.current?.focus();
     },
     { enabled: !isFocused && keyboardControl },

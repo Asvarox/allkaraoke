@@ -41,7 +41,7 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
   return (
     <Container data-test="manage-players">
       <Modal open={open} onClose={() => setOpen(false)}>
-        {open && (
+        {permission === 'write' && open && (
           <PlayerChangeModal
             id={mic.id}
             playerNumber={mic.number}

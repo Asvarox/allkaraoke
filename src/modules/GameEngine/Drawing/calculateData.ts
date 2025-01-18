@@ -31,7 +31,6 @@ const getPlayerCanvas = (
 export default function calculateData({
   canvas,
   currentSectionIndex,
-  song,
   songBeatLength,
   minPitch,
   maxPitch,

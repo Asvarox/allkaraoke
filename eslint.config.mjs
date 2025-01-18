@@ -18,6 +18,11 @@ const compat = new FlatCompat({
 
 export default [
   {
+    linterOptions: {
+      reportUnusedDisableDirectives: 'error',
+    },
+  },
+  {
     ignores: [
       '**/playwright/',
       '**/build',
@@ -46,7 +51,6 @@ export default [
     rules: {
       'react-compiler/react-compiler': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
@@ -55,6 +59,18 @@ export default [
       'react/prop-types': 'off',
       'react/no-unknown-property': 'off',
       'react/display-name': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
     },
   },
   {

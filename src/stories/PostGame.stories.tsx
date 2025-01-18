@@ -49,7 +49,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const singSetup: SingSetup = {
     tolerance: 2,
-    players: new Array(args.playerNum).fill(0).map((t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
     id: 'storybook-id',
     mode: args.gameMode,
   };
@@ -67,7 +67,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
   const pointsPerBeat = MAX_POINTS / sumDetailedScore(maxPoints);
 
   const maxScores = beatsToPoints(maxPoints, pointsPerBeat);
-  const players: PlayerScore[] = new Array(args.playerNum).fill(0).map((t, i) => {
+  const players: PlayerScore[] = new Array(args.playerNum).fill(0).map((_t, i) => {
     const playerNum = i as 0 | 1 | 2 | 3;
 
     return {

@@ -87,7 +87,7 @@ export class NetworkClient {
       () => {
         this.connectToServer(lcRoomId, name, silent);
       },
-      (reason, event) => {
+      (reason) => {
         if (reason === 'unavailable-id') {
           // create new id if the old one is taken
           this.setClientId(v4());
@@ -144,7 +144,7 @@ export class NetworkClient {
     setTimeout(this.ping, 2_000);
   };
 
-  public connectToServer = (roomId: string, name: string, silent: boolean) => {
+  public connectToServer = (_roomId: string, name: string, silent: boolean) => {
     this.connected = true;
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
@@ -159,7 +159,7 @@ export class NetworkClient {
       if (type === 'start-monitor') {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.addListener(this.onFrequencyUpdate);
-        SimplifiedMic.startMonitoring(undefined);
+        SimplifiedMic.startMonitoring();
       } else if (type === 'stop-monitor') {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.stopMonitoring();

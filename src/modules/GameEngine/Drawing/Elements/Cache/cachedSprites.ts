@@ -34,7 +34,7 @@ const generateSpriteMap = () => {
   /// clear canvas
   ctx.clearRect(0, 0, maxWidth, height);
   currentHeight = 0;
-  Object.entries(spriteMap).forEach(([key, entry]) => {
+  Object.entries(spriteMap).forEach(([, entry]) => {
     entry.draw(ctx, entry.padding, currentHeight + entry.padding, entry.width, entry.height);
     currentHeight = currentHeight + entry.padding * 2 + entry.height;
   });

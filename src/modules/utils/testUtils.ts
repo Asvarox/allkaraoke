@@ -46,7 +46,7 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
 export const generateSongPreview = (tracks: Section[][], data: Partial<Song> = {}): SongPreview =>
   getSongPreview(generateSong(tracks, data));
 
-export const generateSection = (start: number, length: number, notesCount: number): Section => ({
+export const generateSection = (start: number, _length: number, notesCount: number): Section => ({
   type: 'notes',
   start,
   notes: range(notesCount).map((val) => generateNote(start + val, 1)),

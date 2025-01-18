@@ -20,7 +20,7 @@ export class GamePagePO {
         await this.page.keyboard.press('Enter');
       }
     } catch (error) {
-      console.log('Skip-intro-info is not visible');
+      console.log('Skip-intro-info is not visible', error);
     }
   }
 

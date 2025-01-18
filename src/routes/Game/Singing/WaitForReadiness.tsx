@@ -27,9 +27,7 @@ function WaitForReadiness({ onFinish }: Props) {
   });
 
   const players = useEventListenerSelector([events.inputListChanged, events.readinessConfirmed], () => {
-    return PlayersManager.getPlayers().map(
-      (player, index) => [player.input.deviceId!, player.getName(), player] as const,
-    );
+    return PlayersManager.getPlayers().map((player) => [player.input.deviceId!, player.getName(), player] as const);
   });
 
   useEffect(() => {

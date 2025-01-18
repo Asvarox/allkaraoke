@@ -43,15 +43,7 @@ export const useSearchState = createPersistedState<string>('remote-mic-song-list
 const getMainArtistName = (artist: string) => artist.split(' feat')[0];
 const isArtistPresent = (a: string, b: string[]) => b.some((artist) => artist.toLowerCase() === a.toLowerCase());
 
-function RemoteSongList({
-  roomId,
-  monitoringStarted,
-  setMonitoringStarted,
-  isKeepAwakeOn,
-  setIsKeepAwakeOn,
-  connectionError,
-  connectionStatus,
-}: Props) {
+function RemoteSongList({ connectionStatus }: Props) {
   const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
   const permissions = usePermissions();
   const originalSongList = useSongIndex();
@@ -184,7 +176,7 @@ function RemoteSongList({
         groupHeaderHeight={1}
         groupContent={() => null}
         itemHeight={unit * 7 + 1}
-        itemContent={(index, groupIndex, itemProps) => {
+        itemContent={(index, _groupIndex, itemProps) => {
           const song = itemsToRender[index];
 
           if (Array.isArray(song)) {

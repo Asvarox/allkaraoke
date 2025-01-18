@@ -103,7 +103,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return songList.filter((song) => specificSongs.includes(song.id));
   },
-  additionalSongs: (songList, additionalSongIds: string[], appliedFilters, list) => {
+  additionalSongs: (songList, additionalSongIds: string[], _, list) => {
     const additionalSongs = list.filter((song) => additionalSongIds.includes(song.id));
     return [...songList, ...additionalSongs.filter((song) => !songList.includes(song))];
   },

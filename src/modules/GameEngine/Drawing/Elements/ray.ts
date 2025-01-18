@@ -19,12 +19,12 @@ const getColors = (color: string) => {
 console.log('cachedColors', cachedColors);
 
 export default function ray(
-  canvas: HTMLCanvasElement,
+  _canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
   x: number,
   y: number,
   width: number,
-  height: number,
+  _height: number,
   color: string | any,
   alpha: number = 1,
 ) {

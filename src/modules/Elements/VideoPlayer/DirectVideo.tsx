@@ -15,7 +15,7 @@ import Youtube, { VideoPlayerRef, VideoState } from './Youtube';
 type Props = ComponentProps<typeof Youtube>;
 
 export default forwardRef(function DirectVideoPlayer(
-  { video, autoplay = true, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
+  { video, autoplay = true, startAt, controls, width, height, onStateChange }: Props,
   ref: ForwardedRef<VideoPlayerRef>,
 ) {
   const player = useRef<HTMLVideoElement | null>(null);

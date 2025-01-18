@@ -159,7 +159,7 @@ export default function SongMetadata(props: Props) {
           disableClearable
           options={definedGenres}
           value={props.data.genre ?? ''}
-          onChange={(e, newValue) => props.onChange({ ...props.data, genre: newValue })}
+          onChange={(_, newValue) => props.onChange({ ...props.data, genre: newValue })}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -183,7 +183,7 @@ export default function SongMetadata(props: Props) {
           disableClearable
           options={definedEditions}
           value={props.data.edition ?? ''}
-          onChange={(e, newValue) => props.onChange({ ...props.data, edition: newValue })}
+          onChange={(_, newValue) => props.onChange({ ...props.data, edition: newValue })}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -209,7 +209,7 @@ export default function SongMetadata(props: Props) {
           disableClearable
           options={definedLanguages}
           value={typeof props.data.language === 'string' ? [props.data.language] : props.data.language}
-          onChange={(e, newValue) => {
+          onChange={(_, newValue) => {
             props.onChange({
               ...props.data,
               language: newValue ? (newValue.filter(Boolean) as string[]) : props.data.language,

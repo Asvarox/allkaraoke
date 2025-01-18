@@ -36,5 +36,5 @@ export default class ExplodingNoteParticle implements Particle {
       particleManager.add(new TriangleParticle(x + i * 9, finalY, finalColor, (density - i) / 10));
     }
   }
-  public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {};
+  public tick = () => {};
 }
