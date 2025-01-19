@@ -1,0 +1,436 @@
+#ARTIST:SIRA, badchieff, Bausa
+#TITLE:9 bis 9
+#BPM:147,04
+#YEAR:203
+#VIDEO:v=Air9tGk6wFM
+#GENRE:Hip-Hop
+#LANGUAGE:German
+#GAP:-98,03917301414583
+#ALLKARAOKE_ID:sira-badchieff-bausa-9-bis-9
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:29.360Z
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_VOLUME:0,8
+#MP3:SIRA, badchieff, Bausa - 9 bis 9.mp3
+#COVER:SIRA, badchieff, Bausa - 9 bis 9 [CO].jpg
+#BACKGROUND:SIRA, badchieff, Bausa - 9 bis 9 [BG].jpg
+F 3 1 14 Zehn 
+F 4 1 12 vor 
+F 7 2 14 acht, 
+F 10 3 14 ich 
+F 14 3 14 lauf' 
+F 18 3 14 immer 
+F 22 7 14 noch
+- 29
+F 32 2 13 Komm' 
+F 35 3 14 nicht 
+F 39 2 14 an, 
+F 44 2 14 nimm 
+F 47 1 13 ein'n 
+F 49 3 14 Schluck
+- 52
+F 55 1 17 Noch 
+F 57 1 16 ein 
+F 59 4 12 Shot, 
+F 64 1 12 alles 
+F 66 1 14 drin
+- 67
+: 69 1 16 Von 
+: 70 3 16 neun 
+: 75 1 12 bis 
+: 77 2 11 neun, 
+: 80 1 12 was 
+: 82 2 16 ich 
+: 85 4 16 anfass', 
+: 90 1 12 wird 
+: 93 1 17 zu 
+: 95 1 16 Gold
+- 96
+: 99 3 16 Schwarzer 
+: 103 2 16 Hoodie 
+: 106 2 16 stinkt 
+: 109 4 16 nach 
+: 114 1 14 Smoke
+- 115
+: 117 2 17 Und 
+: 120 2 16 mein 
+: 123 2 12 Herz 
+: 126 2 12 bewegt 
+: 129 1 12 sich 
+: 131 1 14 zu 
+: 133 1 16 dem 
+: 135 5 16 Bass
+- 140
+: 143 1 12 Von 
+: 146 2 11 neun 
+: 149 2 12 bis 
+: 152 1 14 neun, 
+: 154 2 16 was 
+: 157 3 16 ich 
+: 161 1 11 anfass', 
+: 163 1 12 wird 
+: 165 2 17 zu 
+: 168 1 16 Gold
+- 169
+: 171 4 16 Schwarzer 
+: 176 3 16 Hoodie 
+: 180 3 16 stinkt 
+: 184 3 16 nach 
+: 188 1 15 Smoke
+- 189
+: 191 2 17 Und 
+: 194 2 16 mein 
+: 197 3 12 Herz 
+: 201 2 12 bewegt 
+: 204 2 12 sich 
+: 207 1 14 zu 
+: 209 1 17 dem 
+: 210 4 16 Bass
+- 214
+: 217 2 12 Von 
+: 220 2 12 neun 
+: 223 1 14 bis 
+: 225 3 16 neun, 
+: 229 2 16 was 
+: 232 2 11 ich 
+: 235 1 12 anfass', 
+: 236 2 17 wird 
+: 239 1 16 zu 
+: 241 2 16 Gold
+- 243
+: 246 1 16 Schwarzer 
+: 248 3 16 Hoodie 
+: 252 3 16 stinkt 
+: 256 1 -3 nach 
+: 257 5 0 Smoke
+- 262
+: 265 2 0 Und 
+: 268 2 4 mein 
+: 271 3 7 Herz 
+: 275 1 7 bewegt 
+: 277 1 4 sich 
+: 279 2 4 zu 
+: 282 1 2 dem 
+: 284 4 4 Bass 
+F 289 4 4 (Yeah)
+- 293
+: 300 4 7 Baby, 
+: 305 1 4 guck 
+: 307 2 2 nicht 
+: 310 1 2 auf 
+: 312 3 4 den 
+: 316 2 5 Preis, 
+: 319 3 7 ich 
+: 323 1 4 bin 
+: 325 2 4 jung 
+: 328 1 2 und 
+: 330 1 4 ich 
+: 332 2 12 bin 
+: 335 1 17 reich
+- 336
+: 339 3 16 Manchmal 
+: 343 4 16 muss 
+: 348 1 4 es 
+: 350 1 7 einfach 
+: 352 2 7 sein 
+F 355 1 4 (Smoke, 
+F 356 2 4 und 
+F 359 2 2 mein 
+F 362 3 4 Herz 
+F 366 2 4 bewegt 
+F 369 1 7 sich—)
+- 370
+: 373 1 7 In 
+: 375 3 4 der 
+: 379 2 2 Ferne 
+: 382 4 4 läuft 
+: 387 1 -8 ein 
+: 389 2 7 Song, 
+: 392 1 7 baby, 
+: 394 1 4 hear 
+: 396 1 4 me 
+: 398 2 2 when 
+: 401 4 4 I 
+: 407 1 12 come
+- 408
+: 411 1 16 Wie 
+: 413 2 17 der 
+: 416 1 3 King 
+: 417 1 16 of 
+: 418 2 16 Bongo 
+: 421 3 16 Bong 
+F 425 2 16 (Smoke, 
+F 428 1 16 und 
+F 429 4 16 mein 
+F 434 1 14 Herz—)
+- 435
+: 437 1 16 Ich 
+: 439 1 16 würfel' 
+: 441 1 16 die 
+* 443 6 12 Sechs
+- 449
+: 457 1 16 Hol' 
+: 459 1 17 mir 
+: 460 1 16 den 
+: 462 3 16 Jackpot, 
+: 466 1 16 gib 
+: 468 1 14 mir 
+: 469 1 9 kein'n 
+: 471 1 16 Sekt
+- 472
+: 474 1 11 Ich 
+: 475 4 16 trinke 
+: 480 1 16 wie 
+: 482 2 16 James 
+: 485 2 16 Bond
+- 487
+* 494 2 17 Keine 
+* 497 2 17 Verschwendung
+- 499
+: 502 1 16 Glaub 
+: 503 1 16 mir, 
+: 505 1 16 wir 
+: 507 2 16 finden 
+: 511 2 17 dafür 
+: 514 1 14 noch 
+: 516 5 16 Verwendung
+- 521
+: 528 3 11 Stundenlang 
+: 532 2 16 'Mario 
+: 535 1 11 Kart' 
+: 537 4 16 auf 
+: 542 1 16 der 
+: 544 3 14 64er 
+* 548 10 16 Nintendo
+- 558
+: 565 3 16 Manchmal 
+: 569 1 14 von 
+: 571 1 16 acht 
+: 573 1 15 bis 
+: 574 3 14 acht, 
+: 578 4 17 manchmal
+- 582
+: 585 1 12 Von 
+: 587 1 16 neun 
+: 589 1 16 bis 
+: 590 3 16 neun, 
+: 594 1 12 was 
+: 596 1 16 ich 
+: 598 2 16 anfass', 
+: 602 2 16 wird 
+: 605 1 13 zu 
+: 607 3 14 Gold
+- 610
+: 613 1 -1 Schwarzer 
+: 615 4 14 Hoodie 
+: 620 2 12 stinkt 
+: 623 2 14 nach 
+: 626 3 11 Smoke
+- 629
+: 632 2 12 Und 
+: 635 1 14 mein 
+: 636 4 16 Herz 
+: 641 3 16 bewegt 
+: 645 2 12 sich 
+: 648 2 12 zu 
+: 651 1 12 dem 
+: 653 2 14 Bass
+- 655
+: 658 1 16 Von 
+: 659 4 16 neun 
+: 664 2 12 bis 
+: 667 2 11 neun, 
+: 670 2 12 was 
+: 673 1 14 ich 
+: 675 2 16 anfass', 
+: 678 4 16 wird 
+: 683 1 12 zu 
+: 685 1 12 Gold
+- 686
+: 687 2 17 Schwarzer 
+: 690 3 16 Hoodie 
+: 694 2 16 stinkt 
+: 697 1 15 nach 
+: 699 4 16 Smoke
+- 703
+: 706 1 14 Und 
+: 708 2 16 mein 
+: 711 3 16 Herz 
+: 715 1 15 bewegt 
+: 717 2 17 sich 
+: 720 2 16 zu 
+: 723 2 12 dem 
+: 726 5 12 Bass
+- 731
+* 735 6 12 Hennessy 
+: 742 2 14 und 
+: 745 1 17 Wein 
+* 747 4 16 begleiten 
+: 752 2 12 mich 
+: 755 4 12 die 
+: 760 2 14 ganze 
+: 763 3 14 Zeit
+- 766
+: 771 4 16 Ich 
+: 776 1 11 leb' 
+: 778 1 13 von 
+: 780 2 17 Stadt 
+: 783 1 16 zur 
+: 785 2 16 nächsten 
+: 788 1 16 Stadt, 
+: 790 3 16 komm' 
+: 794 2 16 vielleicht 
+: 797 2 16 nie 
+* 800 4 16 mehr 
+* 805 2 5 heim
+- 807
+: 810 3 7 Versteh 
+: 814 1 7 mich 
+: 816 1 5 jetzt 
+: 818 3 4 nicht 
+: 822 2 4 falsch, 
+* 825 1 2 es 
+* 826 2 4 ist 
+* 829 1 3 genau 
+* 831 4 4 des, 
+* 836 2 4 was 
+* 839 2 4 ich 
+* 842 2 4 mein'
+- 844
+: 847 1 5 Tu' 
+: 849 2 7 nur, 
+: 852 2 7 was 
+: 855 2 4 ich 
+: 858 1 4 will, 
+: 860 3 3 deswegen 
+: 864 2 4 könnte 
+: 868 1 2 ich 
+: 870 2 4 besser 
+: 873 4 2 sein
+- 877
+: 880 2 4 Ja, 
+: 883 2 2 ich 
+: 886 1 2 flieg' 
+: 888 1 7 so 
+: 890 3 7 weit, 
+: 894 3 5 weit, 
+* 898 1 4 flieg' 
+* 900 1 2 heut 
+* 902 1 5 morgen 
+* 904 2 2 schon 
+* 907 4 4 vorbei
+- 911
+: 917 2 4 Und 
+: 920 1 5 die 
+: 922 3 3 Kippe 
+: 926 4 4 brennt 
+: 931 1 5 sich 
+: 934 2 7 in 
+: 937 2 7 meine 
+: 940 4 4 Fingerspitzen 
+: 945 2 3 von 
+: 948 1 4 neu
+- 949
+: 952 2 2 Von 
+: 955 2 5 neun 
+: 958 1 5 bis 
+: 960 1 4 neun, 
+: 962 1 3 was 
+: 964 1 4 ich 
+: 966 1 4 anfass', 
+: 968 3 12 wird 
+: 973 2 17 zu 
+: 976 1 16 Gold
+- 977
+: 980 2 16 Schwarzer 
+: 983 5 16 Hoodie 
+: 990 1 0 stinkt 
+: 991 2 12 nach 
+: 994 3 17 Smoke
+- 997
+: 1000 2 16 Und 
+: 1003 2 16 mein 
+: 1006 1 16 Herz 
+: 1008 3 16 bewegt 
+: 1012 2 0 sich 
+: 1015 1 12 zu 
+: 1017 1 17 dem 
+: 1019 2 16 Bass
+- 1021
+: 1024 1 16 Von 
+: 1026 2 16 neun 
+: 1029 1 15 bis 
+: 1031 3 12 neun, 
+: 1035 1 17 was 
+: 1037 2 16 ich 
+: 1040 1 16 anfass', 
+: 1042 1 16 wird 
+: 1044 1 26 zu 
+: 1046 4 16 Gold
+- 1050
+: 1053 1 14 Schwarzer 
+: 1054 6 16 Hoodie 
+: 1061 6 16 stinkt 
+: 1068 1 12 nach 
+: 1070 1 12 Smoke
+- 1071
+: 1072 1 14 Und 
+: 1074 1 16 mein 
+: 1075 7 16 Herz 
+: 1083 1 11 bewegt 
+: 1085 2 11 sich 
+: 1088 2 14 zu 
+: 1091 2 15 dem 
+: 1094 2 16 Bass
+- 1096
+: 1099 1 12 Von 
+: 1101 1 12 neun 
+: 1103 2 17 bis 
+: 1106 1 16 neun, 
+: 1108 1 16 was 
+: 1110 2 14 ich 
+: 1113 3 16 anfass', 
+: 1117 2 16 wird 
+: 1120 1 16 zu 
+: 1125 1 15 Gold
+- 1126
+: 1126 4 17 Schwarzer 
+: 1131 4 16 Hoodie 
+: 1136 4 12 stinkt 
+: 1141 1 12 nach 
+: 1143 1 12 Smoke
+- 1144
+: 1145 2 14 Und 
+: 1148 1 17 mein 
+: 1149 4 16 Herz 
+: 1154 2 12 bewegt 
+: 1157 5 12 sich 
+: 1163 1 14 zu 
+: 1165 2 16 dem 
+: 1168 1 16 Bass
+- 1169
+: 1172 1 11 Von 
+: 1173 2 13 neun 
+: 1176 2 17 bis 
+: 1179 1 16 neun, 
+: 1181 1 16 was 
+: 1183 2 16 ich 
+: 1186 2 16 anfass', 
+: 1189 3 16 wird 
+: 1193 1 16 zu 
+: 1194 4 16 Gold
+- 1198
+: 1201 1 5 Schwarzer 
+: 1202 1 5 Hoodie 
+: 1204 2 4 stinkt 
+: 1207 4 4 nach 
+: 1216 2 0 Smoke
+- 1218
+: 1221 1 12 Und 
+: 1223 2 2 mein 
+: 1226 1 4 Herz 
+: 1228 3 4 bewegt 
+: 1232 2 12 sich 
+: 1235 1 0 zu 
+: 1237 2 4 dem 
+: 1240 4 4 Bass
+E

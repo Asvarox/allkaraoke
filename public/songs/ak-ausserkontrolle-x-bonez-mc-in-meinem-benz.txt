@@ -1,0 +1,647 @@
+#ARTIST:AK AusserKontrolle x Bonez MC
+#TITLE:In meinem Benz
+#CREATOR:Viktor1234678
+#BPM:310
+#YEAR:2020
+#VIDEO:v=VSTExzF4I34
+#LANGUAGE:German
+#GAP:10953,870967741936
+#ALLKARAOKE_ID:ak-ausserkontrolle-x-bonez-mc-in-meinem-benz
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:19.690Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167305
+#ALLKARAOKE_REALBPM:155
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29164
+#ALLKARAOKE_VOLUME:0,77
+#MP3:AK AusserKontrolle x Bonez MC - In meinem Benz.mp3
+: 21 3 -2 In 
+: 25 3 -2 mei
+: 29 3 -2 nem 
+: 33 5 3 Benz 
+: 49 3 6 roll' 
+: 53 3 6 ich 
+: 57 3 6 wie 
+: 61 3 6 ein 
+: 65 3 5 Ghet
+: 69 3 5 to-
+: 73 3 5 Prä
+: 77 3 5 si
+: 81 4 5 dent
+- 85
+: 86 3 -2 In 
+: 90 3 -2 mei
+: 94 3 -2 nem 
+: 98 5 3 Benz 
+: 109 3 3 ver
+: 113 3 6 teil' 
+: 117 3 6 ich 
+: 121 3 6 Gra
+: 125 3 6 tis-
+: 129 3 8 T-
+: 133 5 6 Shirts 
+: 139 3 5 an 
+: 143 3 5 die 
+: 147 3 5 Fans
+- 150
+: 151 3 -2 In 
+: 155 2 -2 mei
+: 158 2 -2 nem 
+: 161 8 3 Benz 
+: 177 3 6 siehst 
+: 181 3 6 du 
+: 185 3 6 mei
+: 189 3 6 ne 
+: 193 7 8 Kö
+: 201 6 5 nigs
+: 208 3 5 ket
+: 212 3 5 te
+- 215
+: 216 3 -2 Wie 
+: 220 3 -2 sie 
+: 224 8 2 glänzt, 
+: 246 3 3 in 
+: 250 6 3 mei'm 
+: 259 10 5 Benz
+- 269
+: 277 3 -2 In 
+: 281 3 -2 mei
+: 285 3 -2 nem 
+: 289 5 3 Benz 
+: 305 3 6 dreh' 
+: 309 3 6 ich 
+: 313 3 6 ein 
+: 317 3 6 paar 
+: 321 3 5 Run
+: 325 3 5 den 
+: 329 3 5 mit 
+: 333 3 5 der 
+: 337 2 5 Gang
+- 339
+: 340 3 -2 In 
+: 344 3 -2 mei
+: 348 3 -2 nem 
+: 352 5 3 Benz 
+: 368 3 6 geb' 
+: 372 3 6 ich 
+: 376 3 6 Au
+: 380 3 6 to
+: 384 3 8 gram
+: 388 3 6 me 
+: 392 3 5 an 
+: 396 3 5 die 
+: 400 4 5 Fans
+- 404
+: 405 3 -2 In 
+: 409 3 -2 mei
+: 413 3 -2 nem 
+: 417 5 3 Benz 
+: 433 3 6 siehst 
+: 437 3 6 du 
+: 441 3 6 mei
+: 445 3 6 ne 
+: 449 6 8 Ro
+: 457 9 5 li
+- 466
+: 469 4 -2 Wie 
+: 475 4 -2 sie 
+: 481 7 2 glänzt, 
+: 501 3 3 in 
+: 505 5 3 mei'm 
+: 514 10 5 Benz
+- 524 528
+- 528
+R 549 3 0 In 
+R 553 2 0 mei
+R 556 3 0 nem 
+R 560 5 0 Benz 
+R 567 1 0 zähl' 
+R 569 3 0 ich 
+R 573 2 0 die 
+R 577 3 0 Sta
+R 581 2 0 pel 
+R 585 3 0 und 
+R 589 3 0 trink' 
+R 593 3 0 Ca
+R 597 3 0 pri-
+R 601 2 0 Son
+R 604 3 0 ne
+- 607
+R 608 3 0 Hab' 
+R 612 4 0 zwei 
+R 617 3 0 Ti
+R 621 2 0 sche 
+R 624 3 0 re
+R 628 5 0 ser
+R 634 2 0 viert, 
+R 637 3 0 auch 
+R 641 2 0 wenn 
+R 644 3 0 ich 
+R 648 3 0 nicht 
+R 652 4 0 zur 
+R 657 4 0 Par
+R 662 1 0 ty 
+R 664 3 0 kom
+R 668 3 0 me
+- 671
+R 678 3 0 Und 
+R 682 2 0 mei
+R 685 2 0 ne 
+R 688 3 0 Schlam
+R 692 3 0 pe 
+R 696 5 0 schreibt: 
+R 705 3 0 „Wie
+R 709 3 0 so 
+R 713 3 0 hast 
+R 717 3 0 du 
+R 721 2 0 kei
+R 724 3 0 ne 
+R 728 5 0 Zeit?“
+- 733
+R 737 4 0 Kauf' 
+R 743 1 0 ihr 
+R 745 3 0 ein 
+R 750 2 0 Paar 
+R 753 3 0 Hai
+R 757 3 0 fisch-
+R 761 5 0 Nikes, 
+R 769 3 0 ein
+R 773 3 0 fach, 
+R 777 4 0 dass 
+R 782 2 0 sie 
+R 785 4 0 lei
+R 790 3 0 se 
+R 794 4 0 bleibt
+- 798
+R 806 3 0 Es 
+R 810 3 0 tut 
+R 814 2 0 mir 
+R 817 3 0 leid, 
+R 821 3 0 mein 
+R 825 2 0 Le
+R 828 3 0 ben 
+R 833 2 0 dreht 
+R 836 3 0 sich 
+R 840 2 0 nur 
+R 843 3 0 um 
+R 848 3 0 Can
+R 852 4 0 na
+R 857 3 0 bis
+- 860
+R 865 2 0 Und 
+R 868 3 0 für 
+R 873 3 0 Stress 
+R 877 3 0 hab' 
+R 881 3 0 ich 
+R 885 3 0 so'n 
+R 889 3 0 paar 
+R 893 3 0 Ba
+R 897 2 0 na
+R 900 3 0 na 
+R 904 5 0 Clips 
+R 910 3 0 wie 'n 
+R 914 2 0 Sa
+R 917 2 0 la
+R 920 5 0 fist
+- 925 928
+- 928
+R 949 3 0 Und 
+R 953 3 0 wäh
+R 957 3 0 rend 
+R 961 3 0 du 
+R 965 3 0 so 
+R 969 2 0 wie 
+R 972 3 0 ein 
+R 976 3 0 Pen
+R 980 3 0 ner 
+R 984 6 0 lebst
+- 990
+R 994 3 0 Siehst 
+R 998 3 0 du 
+R 1002 3 0 mich 
+R 1006 3 0 im 
+R 1010 3 0 A
+R 1014 3 0 M
+R 1018 1 0 G 
+R 1020 3 0 auf 
+R 1024 4 0 drei
+R 1029 4 0 tei
+R 1034 3 0 li
+R 1038 3 0 gen 
+R 1042 2 0 M
+R 1045 3 0 A
+R 1049 6 0 Es
+- 1055
+R 1069 3 0 Ya 
+R 1073 2 0 sa
+R 1076 2 0 la
+R 1079 3 0 me, 
+R 1084 3 0 die 
+R 1089 5 0 Stra
+R 1095 1 0 ße 
+R 1097 3 0 hat 
+R 1101 3 0 mich 
+R 1105 4 0 lieb
+- 1109
+R 1110 1 0 Fahr' 
+R 1112 3 0 ü
+R 1116 3 0 ber 
+R 1120 4 0 Rot 
+R 1125 1 0 nur 
+R 1127 5 0 aus 
+R 1133 2 0 Prin
+R 1136 7 0 zip, 
+R 1145 3 0 bis 
+R 1149 3 0 zum 
+R 1153 3 0 Tod 
+R 1157 3 0 bleib' 
+R 1161 3 0 ich 
+R 1165 3 0 Ban
+R 1169 4 0 dit
+- 1173
+R 1181 3 0 Der 
+R 1185 4 0 Code 
+R 1190 2 0 ist 
+R 1193 4 0 1
+R 1198 3 0 8
+R 1202 2 0 7
+R 1205 3 0 ~, 
+R 1209 3 0 Bru
+R 1213 2 0 der, 
+R 1216 3 0 So
+R 1220 3 0 nus 
+R 1224 4 0 macht 
+R 1229 3 0 den 
+R 1233 4 0 Beat
+- 1237
+R 1240 4 0 Kauf' 
+R 1245 3 0 dir 
+R 1249 4 0 Do
+R 1254 2 0 go 
+R 1257 3 0 Ar
+R 1261 3 0 gen
+R 1265 4 0 ti
+R 1270 1 0 no, 
+R 1272 2 0 ab
+R 1275 3 0 er 
+R 1280 3 0 Bonez 
+R 1284 3 0 hat 
+R 1288 4 0 Kro
+R 1293 3 0 ko
+R 1297 3 0 dil
+- 1300
+: 1301 3 -2 In 
+: 1305 3 -2 mei
+: 1309 3 -2 nem 
+: 1313 5 3 Benz 
+: 1329 3 6 roll' 
+: 1333 3 6 ich 
+: 1337 3 6 wie 
+: 1341 3 6 ein 
+: 1345 3 5 Ghet
+: 1349 3 5 to-
+: 1353 3 5 Prä
+: 1357 3 5 si
+: 1361 4 5 dent
+- 1365
+: 1366 3 -2 In 
+: 1370 3 -2 mei
+: 1374 3 -2 nem 
+: 1378 5 3 Benz 
+: 1389 3 3 ver
+: 1393 3 6 teil' 
+: 1397 3 6 ich 
+: 1401 3 6 Gra
+: 1405 3 6 tis-
+: 1409 3 8 T-
+: 1413 5 6 Shirts 
+: 1419 3 5 an 
+: 1423 3 5 die 
+: 1427 3 5 Fans
+- 1430
+: 1431 3 -2 In 
+: 1435 2 -2 mei
+: 1438 2 -2 nem 
+: 1441 8 3 Benz 
+: 1457 3 6 siehst 
+: 1461 3 6 du 
+: 1465 3 6 mei
+: 1469 3 6 ne 
+: 1473 7 8 Kö
+: 1481 6 5 nigs
+: 1488 3 5 ket
+: 1492 3 5 te
+- 1495
+: 1496 3 -2 Wie 
+: 1500 3 -2 sie 
+: 1504 8 2 glänzt, 
+: 1526 3 3 in 
+: 1530 6 3 mei'm 
+: 1539 10 5 Benz
+- 1549
+: 1557 3 -2 In 
+: 1561 3 -2 mei
+: 1565 3 -2 nem 
+: 1569 5 3 Benz 
+: 1585 3 6 dreh' 
+: 1589 3 6 ich 
+: 1593 3 6 ein 
+: 1597 3 6 paar 
+: 1601 3 5 Run
+: 1605 3 5 den 
+: 1609 3 5 mit 
+: 1613 3 5 der 
+: 1617 2 5 Gang
+- 1619
+: 1620 3 -2 In 
+: 1624 3 -2 mei
+: 1628 3 -2 nem 
+: 1632 5 3 Benz 
+: 1648 3 6 geb' 
+: 1652 3 6 ich 
+: 1656 3 6 Au
+: 1660 3 6 to
+: 1664 3 8 gram
+: 1668 3 6 me 
+: 1672 3 5 an 
+: 1676 3 5 die 
+: 1680 4 5 Fans
+- 1684
+: 1685 3 -2 In 
+: 1689 3 -2 mei
+: 1693 3 -2 nem 
+: 1697 5 3 Benz 
+: 1713 3 6 siehst 
+: 1717 3 6 du 
+: 1721 3 6 mei
+: 1725 3 6 ne 
+: 1729 6 8 Ro
+: 1737 9 5 li
+- 1746
+: 1749 4 -2 Wie 
+: 1755 4 -2 sie 
+: 1761 7 2 glänzt, 
+: 1781 3 3 in 
+: 1785 5 3 mei'm 
+: 1794 10 5 Benz
+- 1804
+R 1824 3 0 Ge
+R 1828 3 0 stern 
+R 1832 3 0 noch 
+R 1836 2 0 in 
+R 1840 3 0 Zel
+R 1844 3 0 le 
+R 1848 4 0 drin, 
+R 1856 4 0 heut 
+R 1861 3 0 mit 
+R 1865 3 0 Grou
+R 1869 2 0 pies 
+R 1872 3 0 She
+R 1876 4 0 ra
+R 1881 3 0 ton
+- 1884
+R 1888 3 0 Du 
+R 1892 4 0 siehst 
+R 1897 3 0 mich 
+R 1901 3 0 im 
+R 1905 3 0 Benz 
+R 1909 3 0 si
+R 1913 3 0 tzen, 
+R 1922 2 0 so 
+R 1925 3 0 wie 
+R 1929 3 0 Le
+R 1933 3 0 wis 
+R 1937 3 0 Ha
+R 1941 3 0 mil
+R 1945 3 0 ton
+- 1948
+R 1957 3 0 L
+R 1961 3 0 V 
+R 1965 3 0 und 
+R 1969 3 0 Fen
+R 1973 3 0 di-
+R 1977 5 0 Hemd, 
+R 1989 1 0 wäh
+R 1991 1 0 rend 
+R 1993 3 0 ich 
+R 1997 3 0 die 
+R 2001 3 0 Ba
+R 2005 3 0 tzen 
+R 2009 3 0 zäh
+R 2013 3 0 le
+- 2016
+R 2018 3 0 Du 
+R 2022 3 0 trägst 
+R 2026 3 0 wie
+R 2030 3 0 der 
+R 2034 3 0 Se
+R 2038 1 0 cond-
+R 2040 4 0 Hand 
+R 2045 3 0 wie 
+R 2049 3 0 Men
+R 2053 3 0 schen 
+R 2057 2 0 mit 
+R 2060 3 0 'ner 
+R 2064 3 0 Arm
+R 2068 4 0 pro
+R 2073 4 0 the
+R 2078 2 0 se
+- 2080
+R 2081 3 0 Gang
+R 2085 3 0 ster 
+R 2089 2 0 und 
+R 2092 3 0 kein 
+R 2096 5 0 Pro
+R 2102 5 0 fi
+R 2108 4 0 ler
+- 2112
+R 2120 3 0 Ta
+R 2124 4 0 his 
+R 2129 3 0 sha
+R 2133 2 0 ken 
+R 2136 3 0 in 
+R 2140 3 0 mei'm 
+R 2144 4 0 Old
+R 2150 4 0 ti
+R 2156 4 0 mer
+- 2160
+R 2168 4 0 Und 
+R 2173 3 0 der 
+R 2177 4 0 Ben
+R 2182 3 0 zer 
+R 2186 2 0 wird 
+R 2189 3 0 zum 
+R 2193 4 0 Low
+R 2198 4 0 ri
+R 2203 4 0 der
+- 2207
+R 2208 4 0 Boss 
+R 2213 1 0 in 
+R 2215 3 0 Ex
+R 2219 4 0 is
+R 2224 4 0 tenz, 
+R 2229 3 0 auch 
+R 2233 3 0 wenn 
+R 2237 2 0 die 
+R 2240 2 0 Son
+R 2243 3 0 ne 
+R 2247 3 0 nicht 
+R 2251 3 0 mehr 
+R 2255 6 0 brennt
+- 2261
+R 2269 2 0 Ich 
+R 2272 4 0 red' 
+R 2277 2 0 zwar 
+R 2280 4 0 nicht 
+R 2285 3 0 vom 
+R 2289 5 0 Reis, 
+R 2295 4 0 doch 
+R 2300 3 0 der 
+R 2304 3 0 On
+R 2308 3 0 kel 
+R 2312 4 0 steht 
+R 2317 5 0 vorm 
+R 2323 6 0 Benz
+- 2329
+R 2345 6 0 Spritz
+R 2353 6 0 tour, 
+R 2360 4 0 heiz' 
+R 2365 4 0 im 
+R 2370 4 0 A
+R 2375 4 0 M
+R 2380 4 0 G 
+R 2385 4 0 E-
+R 2390 3 0 Cou
+R 2394 5 0 pé
+- 2399
+R 2410 5 0 Ich 
+R 2416 6 0 cruis', 
+R 2423 5 0 heißt, 
+R 2429 3 0 ich 
+R 2433 4 0 fahr' 
+R 2438 4 0 mit 
+R 2443 4 0 Pe
+R 2448 3 0 ne
+R 2452 3 0 lo
+R 2456 5 0 pe
+- 2461
+R 2469 3 0 Mit 
+R 2473 3 0 dei
+R 2477 3 0 ner 
+R 2481 3 0 Schlam
+R 2485 2 0 pe 
+R 2488 3 0 Rich
+R 2492 3 0 tung 
+R 2496 3 0 Hol
+R 2500 2 0 ly
+R 2503 4 0 wood 
+R 2508 4 0 Hills
+- 2512
+R 2521 3 0 Denn 
+R 2525 3 0 sie 
+R 2529 4 0 tanzt 
+R 2534 1 0 hier 
+R 2536 5 0 aus 
+R 2542 3 0 der 
+R 2546 3 0 Rei
+R 2550 1 0 he 
+R 2552 3 0 wie 
+R 2556 4 0 beim 
+R 2561 3 0 Bol
+R 2565 1 0 ly
+R 2567 5 0 wood-
+R 2573 5 0 Film
+- 2578
+: 2581 3 -2 In 
+: 2585 3 -2 mei
+: 2589 3 -2 nem 
+: 2593 5 3 Benz 
+: 2609 3 6 roll' 
+: 2613 3 6 ich 
+: 2617 3 6 wie 
+: 2621 3 6 ein 
+: 2625 3 5 Ghet
+: 2629 3 5 to-
+: 2633 3 5 Prä
+: 2637 3 5 si
+: 2641 4 5 dent
+- 2645
+: 2646 3 -2 In 
+: 2650 3 -2 mei
+: 2654 3 -2 nem 
+: 2658 5 3 Benz 
+: 2669 3 3 ver
+: 2673 3 6 teil' 
+: 2677 3 6 ich 
+: 2681 3 6 Gra
+: 2685 3 6 tis-
+: 2689 3 8 T-
+: 2693 5 6 Shirts 
+: 2699 3 5 an 
+: 2703 3 5 die 
+: 2707 3 5 Fans
+- 2710
+: 2711 3 -2 In 
+: 2715 2 -2 mei
+: 2718 2 -2 nem 
+: 2721 8 3 Benz 
+: 2737 3 6 siehst 
+: 2741 3 6 du 
+: 2745 3 6 mei
+: 2749 3 6 ne 
+: 2753 7 8 Kö
+: 2761 6 5 nigs
+: 2768 3 5 ket
+: 2772 3 5 te
+- 2775
+: 2776 3 -2 Wie 
+: 2780 3 -2 sie 
+: 2784 8 2 glänzt, 
+: 2806 3 3 in 
+: 2810 6 3 mei'm 
+: 2819 10 5 Benz
+- 2829
+: 2837 3 -2 In 
+: 2841 3 -2 mei
+: 2845 3 -2 nem 
+: 2849 5 3 Benz 
+: 2865 3 6 dreh' 
+: 2869 3 6 ich 
+: 2873 3 6 ein 
+: 2877 3 6 paar 
+: 2881 3 5 Run
+: 2885 3 5 den 
+: 2889 3 5 mit 
+: 2893 3 5 der 
+: 2897 2 5 Gang
+- 2899
+: 2900 3 -2 In 
+: 2904 3 -2 mei
+: 2908 3 -2 nem 
+: 2912 5 3 Benz 
+: 2928 3 6 geb' 
+: 2932 3 6 ich 
+: 2936 3 6 Au
+: 2940 3 6 to
+: 2944 3 8 gram
+: 2948 3 6 me 
+: 2952 3 5 an 
+: 2956 3 5 die 
+: 2960 4 5 Fans
+- 2964
+: 2965 3 -2 In 
+: 2969 3 -2 mei
+: 2973 3 -2 nem 
+: 2977 5 3 Benz 
+: 2993 3 6 siehst 
+: 2997 3 6 du 
+: 3001 3 6 mei
+: 3005 3 6 ne 
+: 3009 6 8 Ro
+: 3017 9 5 li
+- 3026
+: 3029 4 -2 Wie 
+: 3035 4 -2 sie 
+: 3041 7 2 glänzt, 
+: 3061 3 3 in 
+: 3065 5 3 mei'm 
+: 3074 10 5 Benz
+E

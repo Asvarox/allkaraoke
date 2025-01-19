@@ -1,0 +1,832 @@
+#ARTIST:BONEZ MC & RAF Camora
+#TITLE:Ohne mein Team
+#CREATOR:Viktor1234678
+#BPM:260
+#YEAR:2016
+#VIDEO:v=0aZvBvXyx7M
+#GENRE:Rap
+#LANGUAGE:German
+#GAP:7319,2307692307695
+#ALLKARAOKE_ID:bonez-mc-raf-camora-ohne-mein-team
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:20.079Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167305
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28547
+#ALLKARAOKE_VOLUME:0,77
+#MP3:BONEZ MC & RAF Camora - Ohne mein Team.mp3
+#COVER:BONEZ MC & RAF Camora - Ohne mein Team [CO].jpg
+#BACKGROUND:BONEZ MC & RAF Camora - Ohne mein Team [BG].jpg
+: 17 2 -4 Zu 
+: 20 2 3 sechst 
+: 23 1 3 im 
+: 25 2 3 Mer
+: 28 5 3 ce
+: 34 4 1 des, 
+: 46 1 -4 weil 
+: 48 1 -1 al
+: 50 1 -4 le 
+: 52 3 -1 Jungs 
+: 56 1 -1 müs
+: 58 1 -4 sen 
+: 60 6 1 mit
+- 66
+: 78 1 -4 Ein 
+: 80 1 -4 biss
+: 82 1 -4 chen 
+: 84 2 3 Sekt 
+: 87 1 3 für 
+: 89 2 3 die 
+: 92 6 3 Mä
+: 99 4 1 dels 
+: 110 1 -4 und 
+: 112 3 -4 auf 
+: 116 3 -1 hun
+: 120 3 -1 dert 
+: 124 3 -3 ein'n 
+: 128 7 -4 Fick
+- 135
+: 143 2 -4 Kein 
+: 146 1 -4 Ge
+: 148 2 3 setz, 
+: 151 1 3 kei
+: 153 1 3 ne 
+: 155 6 3 Re
+: 162 3 1 geln, 
+: 174 1 -4 lass 
+: 176 3 -3 uns 
+: 180 3 -1 Koh
+: 184 3 -1 le 
+: 188 3 -3 ver
+: 192 3 -4 dien'n
+- 195
+: 206 2 -4 Weil 
+: 209 1 -4 so 
+: 211 1 3 lässt 
+: 213 2 3 es 
+: 216 3 3 sich 
+: 220 4 3 le
+: 225 4 1 ben 
+: 232 3 -4 und 
+: 236 3 -1 nie
+: 240 3 -4 mals 
+: 244 3 -1 oh
+: 248 3 -4 ne 
+: 252 5 -1 mein 
+: 260 5 1 Team
+- 265
+R 266 1 0 Ich 
+R 268 2 0 schlie
+R 271 1 0 ße 
+R 273 2 0 die 
+R 276 1 0 Tür 
+R 278 2 0 des 
+R 281 2 0 A
+R 284 4 0 part
+R 289 5 0 ments, 
+R 303 2 0 wenn 
+R 306 1 0 die 
+R 308 2 0 Par
+R 311 2 0 ty 
+R 314 2 0 kom
+R 317 2 0 plett 
+R 321 4 0 ist
+- 325
+R 339 2 0 Mo
+R 342 2 0 ni
+R 345 2 0 ka, 
+R 348 2 0 Sa
+R 351 2 0 rah, 
+R 354 2 0 Be
+R 357 1 0 lin
+R 359 2 0 da 
+R 362 2 0 von 
+R 365 2 0 Ins
+R 368 1 0 ta
+R 370 2 0 gram 
+R 373 1 0 auf 
+R 375 2 0 mei
+R 378 1 0 ne 
+R 380 5 0 Guest
+R 386 5 0 list
+- 391
+R 393 2 0 Men
+R 396 2 0 thol 
+R 399 1 0 in 
+R 401 2 0 der 
+R 404 2 0 Kip
+R 407 2 0 pe, 
+R 412 2 0 So
+R 415 1 0 da 
+R 417 2 0 im 
+R 420 4 0 Drink, 
+R 425 1 0 'ne 
+R 427 3 0 Chick 
+R 431 2 0 will, 
+R 434 2 0 dass 
+R 437 1 0 ich 
+R 439 1 0 für 
+R 441 1 0 sie 
+R 444 2 0 "So 
+R 447 1 0 la
+R 449 2 0 la" 
+R 452 4 0 sing
+- 456
+R 457 2 0 Sie 
+R 460 2 0 will 
+R 463 1 0 mich 
+R 465 2 0 in
+R 468 5 0 tim
+- 473
+R 489 2 0 Ich 
+R 492 2 0 ko
+R 495 2 0 ope
+R 498 2 0 ~
+R 501 2 0 rie
+R 504 1 0 re 
+R 506 2 0 nicht 
+R 509 1 0 oh
+R 511 1 0 ne 
+R 513 2 0 mein 
+R 516 4 0 Team
+- 520
+R 522 1 0 Die 
+R 524 2 0 Son
+R 527 1 0 ne 
+R 529 2 0 scheint 
+R 533 1 0 durch 
+R 535 2 0 die 
+R 538 2 0 Gar
+R 541 2 0 di
+R 544 5 0 ne
+- 549
+R 555 2 0 Haut
+R 558 2 0 far
+R 561 2 0 be: 
+R 564 2 0 O
+R 567 1 0 vo
+R 569 2 0 mal
+R 572 2 0 ti
+R 575 2 0 ne
+- 577
+R 587 2 0 Ko
+R 590 2 0 ka
+R 593 2 0 in 
+R 596 2 0 in 
+R 599 2 0 der 
+R 602 1 0 Ka
+R 604 1 0 bi
+R 606 2 0 ne 
+R 609 1 0 zu 
+R 611 4 0 zweit
+- 615
+R 618 1 0 Der 
+R 620 2 0 Tod 
+R 623 2 0 hat 
+R 626 1 0 die 
+R 628 2 0 To
+R 631 2 0 des
+R 634 1 0 pa
+R 636 1 0 pie
+R 638 2 0 re 
+R 641 2 0 ver
+R 644 4 0 teilt
+- 648
+R 652 2 0 All 
+R 655 2 0 mei
+R 658 1 0 ne 
+R 660 2 0 A
+R 663 2 0 rabs 
+R 666 2 0 sind 
+R 669 2 0 heu
+R 672 1 0 te 
+R 674 2 0 La
+R 677 1 0 ti
+R 679 2 0 nos
+- 681
+R 683 2 0 Chi
+R 686 2 0 ca, 
+R 689 2 0 ¿qué 
+R 692 2 0 pa
+R 695 1 0 sa?, 
+R 697 1 0 die 
+R 699 2 0 Boys 
+R 702 2 0 sind 
+R 705 1 0 A
+R 707 2 0 mi
+R 710 2 0 gos
+- 712
+R 713 2 0 Sie 
+R 716 2 0 passt 
+R 719 2 0 mir 
+R 722 2 0 den 
+R 725 2 0 Joint, 
+R 728 1 0 lass 
+R 730 2 0 die 
+R 733 1 0 Ho
+R 735 1 0 mies 
+R 737 2 0 dran 
+R 740 4 0 zieh'n
+- 744
+R 745 2 0 Ges
+R 748 3 0 mokt 
+R 752 3 0 wird 
+R 756 4 0 nie 
+R 764 1 -4 oh
+R 766 1 -4 ne 
+R 768 3 -3 mein 
+R 772 4 1 Team
+- 776
+R 784 3 0 (Nie 
+R 788 3 0 oh
+R 792 3 0 ne) 
+R 796 1 0 oh
+R 798 1 0 ne 
+R 800 3 0 mein 
+R 804 4 0 Team
+- 808
+R 816 3 0 (Nie 
+R 820 3 0 oh
+R 824 3 0 ne) 
+R 828 1 0 oh
+R 830 1 0 ne 
+R 832 3 0 mein 
+R 836 4 0 Team
+- 840
+R 848 3 0 Ham
+R 852 3 0 burg, 
+R 856 3 0 Ber
+R 860 3 0 lin, 
+R 864 3 0 West+-
+R 868 5 0 Wien
+- 873
+R 880 3 0 (Nie 
+R 884 3 0 oh
+R 888 3 0 ne) 
+R 892 1 0 oh
+R 894 1 0 ne 
+R 896 3 0 mein 
+R 900 4 0 Team
+- 904
+R 912 3 0 (Nie 
+R 916 3 0 oh
+R 920 3 0 ne) 
+R 924 1 0 oh
+R 926 1 0 ne 
+R 928 3 0 mein 
+R 932 4 0 Team
+- 936
+R 944 3 0 (Nie 
+R 948 3 0 oh
+R 952 3 0 ne) 
+R 956 1 0 oh
+R 958 1 0 ne 
+R 960 3 0 mein 
+R 964 4 0 Team
+- 968
+R 976 3 0 Ham
+R 980 3 0 burg, 
+R 984 3 0 Ber
+R 988 3 0 lin, 
+R 992 3 0 West+-
+R 996 5 0 Wien
+- 1001
+R 1007 3 0 (Nie 
+R 1011 3 0 oh
+R 1015 3 0 ne) 
+R 1020 1 0 oh
+R 1022 1 0 ne 
+R 1024 3 0 mein 
+R 1028 4 0 Team
+- 1032
+R 1044 2 0 Bal
+R 1047 3 0 lern, 
+: 1059 2 -4 nicht 
+: 1062 2 -4 um 
+: 1065 2 -4 12 
+: 1068 2 -4 Uhr, 
+: 1072 1 -4 a
+: 1074 1 -3 ber 
+: 1076 3 -1 1
+: 1080 1 -1 3 
+: 1082 2 -1 Uhr 
+: 1085 2 -1 ist 
+: 1088 1 -1 schon 
+: 1090 1 -3 o
+: 1092 3 -4 kay
+- 1095
+R 1104 3 0 Ein 
+R 1109 1 0 Yal
+R 1111 4 0 lan, 
+R 1120 3 0 zwei 
+R 1125 1 0 Yal
+R 1127 4 0 lan 
+: 1135 3 -4 ab 
+: 1139 3 -1 1
+: 1143 1 -1 3 
+: 1145 2 -1 Uhr 
+: 1148 2 -1 ist 
+: 1151 1 -1 schon 
+: 1153 2 1 o
+: 1156 4 -4 kay
+- 1160
+R 1167 4 0 Ein 
+R 1173 4 0 Glas 
+R 1179 3 0 Ya
+R 1183 2 0 ma
+R 1186 3 0 za
+R 1190 3 0 ki 
+: 1194 2 -4 nicht 
+: 1197 2 -4 schon 
+: 1200 2 -3 um 
+: 1203 4 -1 12, 
+: 1208 1 -1 a
+: 1210 1 -1 ber 
+: 1212 3 -1 eins 
+: 1216 1 -1 ist 
+: 1218 1 -3 o
+: 1220 4 -4 kay
+- 1224
+F 1228 3 -4 Je
+F 1232 3 -4 den 
+F 1237 4 0 Tag 
+F 1244 2 0 ei
+F 1247 2 0 ne 
+F 1250 4 0 Par
+F 1255 4 0 ty
+- 1259
+R 1276 2 0 Tre
+R 1279 1 0 te 
+R 1281 2 0 nicht 
+R 1284 4 0 auf, 
+R 1290 2 0 nicht 
+R 1293 1 0 oh
+R 1295 1 0 ne 
+R 1297 2 0 mein 
+R 1300 4 0 Team
+- 1304
+R 1308 2 0 Kei
+R 1311 1 0 ner 
+R 1313 2 0 hier 
+R 1316 2 0 nimmt 
+R 1319 2 0 uns 
+R 1322 1 0 die 
+R 1324 2 0 Phi
+R 1327 1 0 lo
+R 1329 2 0 so
+R 1332 4 0 phie
+- 1336
+R 1339 2 0 Al
+R 1342 2 0 les 
+R 1345 2 0 be
+R 1348 3 0 täubt, 
+R 1355 2 0 Li
+R 1358 2 0 do
+R 1361 2 0 ca
+R 1364 3 0 in
+- 1367
+R 1371 3 0 Frag 
+R 1375 1 0 nicht, 
+R 1377 1 0 wie 
+R 1379 2 0 viel 
+R 1382 2 0 ich 
+R 1385 1 0 am 
+R 1387 2 0 Ki
+R 1390 1 0 lo 
+R 1392 3 0 ver
+R 1396 3 0 dien
+- 1399
+R 1400 2 0 Ein 
+R 1403 2 0 Chick 
+R 1406 2 0 in 
+R 1409 2 0 der 
+R 1412 2 0 Lin
+R 1415 1 0 ken, 
+R 1417 2 0 ein 
+R 1420 2 0 Chick 
+R 1423 2 0 in 
+R 1426 2 0 der 
+R 1429 2 0 Rech
+R 1432 1 0 ten
+- 1433
+R 1434 1 0 Wir 
+R 1436 2 0 seh'n 
+R 1439 1 0 uns 
+R 1441 2 0 beim 
+R 1444 3 0 E
+R 1448 2 0 cho, 
+R 1452 2 0 Lis
+R 1455 1 0 te 
+R 1457 2 0 von 
+R 1460 3 0 Max
+R 1464 3 0 well
+- 1467
+R 1468 1 0 Bring 
+R 1470 2 0 mir 
+R 1473 2 0 den 
+R 1476 2 0 Rum, 
+R 1479 1 0 ei
+R 1481 1 0 ne 
+R 1483 2 0 Kis
+R 1486 2 0 te 
+R 1489 1 0 vom 
+R 1491 3 0 Bes
+R 1495 2 0 ten
+- 1497
+R 1498 1 0 Ich 
+R 1500 2 0 brauch 
+R 1503 1 0 kein 
+R 1505 1 0 Ho
+R 1507 2 0 tel, 
+R 1510 2 0 Ba
+R 1513 2 0 by, 
+R 1516 1 0 fi
+R 1518 1 0 cken 
+R 1520 2 0 im 
+R 1523 1 0 Back
+R 1525 3 0 stage
+- 1528
+R 1529 1 0 Was 
+R 1531 2 0 heu
+R 1534 1 0 te 
+R 1536 3 0 pas
+R 1540 3 0 siert, 
+R 1545 2 0 wird 
+R 1548 2 0 mor
+R 1551 1 0 gen 
+R 1553 2 0 ver
+R 1556 4 0 drängt
+- 1560
+R 1563 3 0 Lass 
+R 1567 1 0 mich 
+R 1569 1 0 am 
+R 1571 3 0 Strand 
+R 1575 1 0 von 
+R 1577 2 0 der 
+R 1580 1 0 Son
+R 1582 2 0 ne 
+R 1585 2 0 ver
+R 1588 4 0 brenn'n
+- 1592
+R 1594 1 0 Sie 
+R 1596 2 0 komm'n 
+R 1599 1 0 mit 
+R 1601 2 0 den 
+R 1604 3 0 Cops, 
+R 1609 2 0 ich 
+R 1612 2 0 komm 
+R 1615 1 0 mit 
+R 1617 2 0 der 
+R 1620 3 0 Gang
+- 1623
+R 1625 1 0 In 
+R 1627 2 0 Sa
+R 1630 2 0 chen 
+R 1633 1 0 Ge
+R 1635 2 0 walt 
+R 1638 1 0 sind 
+R 1640 2 0 wir 
+R 1643 2 0 zu 
+R 1646 2 0 kon
+R 1649 2 0 se
+R 1652 3 0 quent
+- 1655
+R 1659 2 0 Al
+R 1662 1 0 le 
+R 1664 3 0 aus 
+R 1668 2 0 Gha
+R 1671 1 0 na 
+R 1673 2 0 sind 
+R 1676 2 0 heut 
+R 1679 1 0 Bra
+R 1681 2 0 sil
+R 1684 2 0 ia
+R 1687 3 0 ner
+- 1690
+R 1693 2 0 Prince 
+R 1696 1 0 Bo
+R 1698 1 0 a
+R 1700 3 0 teng 
+R 1704 1 0 von 
+R 1706 1 0 der 
+R 1708 2 0 Co
+R 1711 1 0 pa
+R 1713 2 0 ca
+R 1716 2 0 ba
+R 1719 3 0 na
+- 1722
+R 1724 2 0 Ko
+R 1727 1 0 ma 
+R 1729 2 0 sein 
+R 1732 2 0 Va
+R 1735 2 0 ter, 
+R 1738 1 0 die 
+R 1740 2 0 Dro
+R 1743 2 0 gen 
+R 1746 1 0 sind 
+R 1748 5 0 clean
+- 1753
+R 1755 2 0 Al
+R 1758 2 0 le 
+R 1761 1 0 woll'n 
+R 1763 2 0 mich 
+R 1766 1 0 o
+R 1768 1 0 ben-
+R 1770 2 0 oh
+R 1773 2 0 ne 
+R 1776 1 0 be
+R 1778 3 0 dien'n, 
+R 1782 2 0 doch 
+R 1786 2 0 nie 
+R 1789 1 0 oh
+R 1791 1 0 ne 
+R 1793 2 0 mein 
+R 1796 3 0 Team
+- 1799
+R 1808 3 0 (Nie 
+R 1812 3 0 oh
+R 1816 3 0 ne) 
+R 1820 1 0 oh
+R 1822 1 0 ne 
+R 1824 3 0 mein 
+R 1828 4 0 Team
+- 1832
+R 1840 3 0 (Nie 
+R 1844 3 0 oh
+R 1848 3 0 ne) 
+R 1852 1 0 oh
+R 1854 1 0 ne 
+R 1856 3 0 mein 
+R 1860 4 0 Team
+- 1864
+R 1872 3 0 Ham
+R 1876 3 0 burg, 
+R 1880 3 0 Ber
+R 1884 3 0 lin, 
+R 1888 3 0 West+-
+R 1892 5 0 Wien
+- 1897
+R 1904 3 0 (Nie 
+R 1908 3 0 oh
+R 1912 3 0 ne) 
+R 1916 1 0 oh
+R 1918 1 0 ne 
+R 1920 3 0 mein 
+R 1924 4 0 Team
+- 1928
+R 1936 3 0 (Nie 
+R 1940 3 0 oh
+R 1944 3 0 ne) 
+R 1948 1 0 oh
+R 1950 1 0 ne 
+R 1952 3 0 mein 
+R 1956 4 0 Team
+- 1960
+R 1968 3 0 (Nie 
+R 1972 3 0 oh
+R 1976 3 0 ne) 
+R 1980 1 0 oh
+R 1982 1 0 ne 
+R 1984 3 0 mein 
+R 1988 4 0 Team
+- 1992
+R 2000 3 0 Ham
+R 2004 3 0 burg, 
+R 2008 3 0 Ber
+R 2012 3 0 lin, 
+R 2016 3 0 West+-
+R 2020 5 0 Wien
+- 2025
+R 2031 4 0 (Nie 
+R 2036 3 0 oh
+R 2040 3 0 ne) 
+R 2045 1 0 oh
+R 2047 1 0 ne 
+R 2049 3 0 mein 
+R 2053 4 0 Team
+- 2057
+R 2068 2 1 Bal
+R 2071 3 0 lern, 
+: 2083 2 -4 nicht 
+: 2086 2 -4 um 
+: 2089 2 -4 12 
+: 2092 2 -4 Uhr, 
+: 2096 1 -4 a
+: 2098 1 -3 ber 
+: 2100 3 -1 1
+: 2104 1 -1 3 
+: 2106 2 -1 Uhr 
+: 2109 2 -1 ist 
+: 2112 1 -1 schon 
+: 2114 1 -3 o
+: 2116 3 -4 kay
+- 2119
+R 2127 3 0 Ein 
+R 2132 1 0 Yal
+R 2134 4 0 lan, 
+R 2143 3 0 zwei 
+R 2148 1 0 Yal
+R 2150 4 0 lan 
+: 2158 3 -3 ab 
+: 2162 3 -1 1
+: 2166 1 -1 3 
+: 2168 2 -1 Uhr 
+: 2171 2 -1 ist 
+: 2174 1 -1 schon 
+: 2176 2 1 o
+: 2179 4 -4 kay
+- 2183
+R 2190 4 0 Ein 
+R 2196 4 0 Glas 
+R 2202 3 0 Ya
+R 2206 2 0 ma
+R 2209 3 0 za
+R 2213 3 0 ki 
+: 2217 2 -4 nicht 
+: 2220 2 -4 schon 
+: 2223 2 -3 um 
+: 2226 4 -1 12, 
+: 2231 1 -1 a
+: 2233 1 -1 ber 
+: 2235 2 -1 eins 
+: 2238 2 -1 ist 
+: 2241 2 -3 o
+: 2244 3 -4 kay
+- 2247
+R 2252 3 -5 Je
+R 2256 3 0 den 
+R 2261 4 0 Tag 
+R 2268 2 0 ei
+R 2271 2 0 ne 
+R 2274 4 0 Par
+R 2279 4 0 ty, 
+: 2287 2 -4 weil 
+: 2290 1 -3 ab 
+: 2292 2 -1 1
+: 2295 1 -1 3 
+: 2297 2 -1 Uhr 
+: 2300 1 -1 ist 
+: 2302 2 -1 schon 
+: 2305 2 1 o
+: 2308 2 -4 kay
+- 2310
+: 2321 2 -4 Zu 
+: 2324 2 3 sechst 
+: 2327 1 3 im 
+: 2329 2 3 Mer
+: 2332 5 3 ce
+: 2338 4 1 des, 
+: 2350 1 -4 weil 
+: 2352 1 -1 al
+: 2354 1 -4 le 
+: 2356 3 -1 Jungs 
+: 2360 1 -1 müs
+: 2362 1 -4 sen 
+: 2364 6 1 mit
+- 2370
+: 2382 1 -4 Ein 
+: 2384 1 -4 biss
+: 2386 1 -4 chen 
+: 2388 2 3 Sekt 
+: 2391 1 3 für 
+: 2393 2 3 die 
+: 2396 6 3 Mä
+: 2403 4 1 dels 
+: 2414 1 -4 und 
+: 2416 3 -4 auf 
+: 2420 3 -1 hun
+: 2424 3 -1 dert 
+: 2428 3 -3 ein'n 
+: 2432 7 -4 Fick
+- 2439
+: 2447 2 -4 Kein 
+: 2450 1 -4 Ge
+: 2452 2 3 setz, 
+: 2455 1 3 kei
+: 2457 1 3 ne 
+: 2459 6 3 Re
+: 2466 3 1 geln, 
+: 2478 1 -4 lass 
+: 2480 3 -3 uns 
+: 2484 3 -1 Koh
+: 2488 3 -1 le 
+: 2492 3 -3 ver
+: 2496 3 -4 dien'n
+- 2499
+: 2510 2 -4 Weil 
+: 2513 1 -4 so 
+: 2515 1 3 lässt 
+: 2517 2 3 es 
+: 2520 3 3 sich 
+: 2524 4 3 le
+: 2529 4 1 ben 
+: 2536 3 -4 und 
+: 2540 3 -1 nie
+: 2544 3 -4 mals 
+: 2548 3 -1 oh
+: 2552 3 -4 ne 
+: 2556 5 -1 mein 
+: 2564 5 1 Team
+- 2569
+R 2580 2 1 Bal
+R 2583 3 0 lern, 
+: 2595 2 -4 nicht 
+: 2598 2 -4 um 
+: 2601 2 -4 12 
+: 2604 2 -4 Uhr, 
+: 2608 1 -4 a
+: 2610 1 -3 ber 
+: 2612 3 -1 1
+: 2616 1 -1 3 
+: 2618 2 -1 Uhr 
+: 2621 2 -1 ist 
+: 2624 1 -1 schon 
+: 2626 1 -3 o
+: 2628 3 -4 kay
+- 2631
+R 2640 3 0 Ein 
+R 2645 1 0 Yal
+R 2647 4 0 lan, 
+R 2656 3 0 zwei 
+R 2661 1 0 Yal
+R 2663 4 0 lan 
+: 2671 3 -3 ab 
+: 2675 3 -1 1
+: 2679 1 -1 3 
+: 2681 2 -1 Uhr 
+: 2684 2 -1 ist 
+: 2687 1 -1 schon 
+: 2689 2 1 o
+: 2692 4 -4 kay
+- 2696
+R 2703 4 0 Ein 
+R 2709 4 0 Glas 
+R 2715 3 0 Ya
+R 2719 2 0 ma
+R 2722 3 0 za
+R 2726 3 0 ki 
+: 2730 2 -4 nicht 
+: 2733 2 -4 schon 
+: 2736 2 -4 um 
+: 2739 4 -1 12, 
+: 2744 1 -1 a
+: 2746 1 -1 ber 
+: 2748 3 -1 eins 
+: 2752 1 -1 ist 
+: 2754 1 -3 o
+: 2756 4 -4 kay
+- 2760
+R 2764 3 0 Je
+R 2768 3 0 den 
+R 2773 4 0 Tag 
+R 2780 2 0 ei
+R 2783 2 0 ne 
+R 2786 4 0 Par
+R 2791 4 0 ty, 
+: 2799 2 -4 weil 
+: 2802 1 -4 ab 
+: 2804 2 -1 1
+: 2807 1 -1 3 
+: 2809 2 -1 Uhr 
+: 2812 1 -1 ist 
+: 2814 2 -1 schon 
+: 2817 2 1 o
+: 2820 2 -4 kay
+- 2822
+: 2824 3 1 Hey, 
+: 2832 3 1 hey, 
+: 2840 3 1 hey, 
+: 2848 3 1 hey, 
+: 2856 3 1 hey, 
+: 2864 3 1 hey, 
+: 2872 3 1 he+-
+: 2876 3 -1 e+-
+: 2880 3 1 ey
+- 2883
+: 2888 3 1 Hey, 
+: 2896 3 1 hey, 
+: 2904 3 1 hey, 
+: 2912 3 1 hey, 
+: 2920 3 1 hey, 
+: 2928 3 1 hey, 
+: 2936 3 1 he+-
+: 2940 3 -1 e+-
+: 2944 3 1 ey
+- 2947
+: 2952 3 1 Hey, 
+: 2960 3 1 hey, 
+: 2968 3 1 hey, 
+: 2976 3 1 hey, 
+: 2984 3 1 hey, 
+: 2992 3 1 hey, 
+: 3000 3 1 he+-
+: 3004 3 -1 e+-
+: 3008 3 1 ey
+- 3011
+: 3016 3 1 Hey, 
+: 3024 3 1 hey, 
+: 3032 3 1 hey, 
+: 3040 3 -1 hey, 
+: 3048 3 -1 hey, 
+: 3056 3 -1 hey, 
+: 3064 3 -3 hey
+E
