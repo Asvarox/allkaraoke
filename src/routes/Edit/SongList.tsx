@@ -167,7 +167,7 @@ export default function SongList() {
                       </IconButton>
                     )}
                     <IconButton
-                      className={!row.original.local ? 'opacity-50 !cursor-default' : ''}
+                      className={!row.original.local ? '!cursor-default opacity-50' : ''}
                       title="Delete the song"
                       onClick={async () => {
                         const proceed = global.confirm(`Are you sure you want to delete this song?`);

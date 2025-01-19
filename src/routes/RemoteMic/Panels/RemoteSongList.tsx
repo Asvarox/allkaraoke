@@ -194,7 +194,7 @@ function RemoteSongList({ connectionStatus }: Props) {
             return (
               <SongItemContainer
                 role="button"
-                className="!bg-black !bg-opacity-75 cursor-pointer active:!bg-opacity-100"
+                className="cursor-pointer !bg-black !bg-opacity-75 active:!bg-opacity-100"
                 data-test={`song-group-${mainArtistName}`}
                 onClick={onClick}
                 {...itemProps}>

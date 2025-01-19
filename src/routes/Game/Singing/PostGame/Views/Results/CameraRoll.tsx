@@ -30,7 +30,7 @@ function CameraRoll() {
   return (
     <div className={`flex flex-col`}>
       <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />
-      <Text className="text-center mt-4">
+      <Text className="mt-4 text-center">
         You can disable camera mode in <strong>Settings</strong>.
       </Text>
     </div>

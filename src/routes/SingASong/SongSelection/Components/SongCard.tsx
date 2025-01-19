@@ -134,12 +134,12 @@ export const SongCardContainer = styled.div`
   padding: 0.5rem;
 
   border: 0.1rem black solid;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 `;
 
 export const SongCardBackground = styled.div`
   background-color: #2b2b2b;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   &[data-expanded='true'] {
     border-radius: 0;
   }

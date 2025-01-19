@@ -214,10 +214,10 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </Box>
           </Grid>
           <Grid item xs={4}>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an intro.
             </div>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               Use <strong>Lyrics shift gap</strong> to sync the start of the lyrics to the video. You can lower the{' '}
               <strong>Playback speed</strong> above to make sure you got it just right.{' '}
             </div>
@@ -229,15 +229,15 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
           </Grid>
           <Grid item xs={4}>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.
             </div>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               You can either use <strong>Last note end time</strong> - enter the millisecond when the last note should
               end (seek through the video for the moment as <strong>Current time</strong> panel show the exact
               millisecond) and a suggested BPM value will appear below.
             </div>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               <strong>Tempo (BPM)</strong> field allows to fine-tune the tempo.
             </div>
           </Grid>
@@ -274,17 +274,17 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             />
           </Grid>
           <Grid item xs={4}>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               If the lyrics there are more lyrics than in the video or there are longer/shorter interludes between
               verses, you can <strong>Edit verses</strong>.
             </div>
-            <div className="text-xs mb-2">Select a verse by clicking on it.</div>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">Select a verse by clicking on it.</div>
+            <div className="mb-2 text-xs">
               You can either <strong>Change its start beat</strong> (which will &quot;move in time&quot; the verse and
               all subsequent ones) or <strong>Delete it</strong> (it won&#39;t affect the timing of other verses). You
               can also edit the lyrics of each note.
             </div>
-            <div className="text-xs mb-2">
+            <div className="mb-2 text-xs">
               <strong>List of changes</strong> on the right allows you to see and undo the actions one by one.
             </div>
           </Grid>

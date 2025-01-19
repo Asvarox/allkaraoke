@@ -49,7 +49,7 @@ declare global {
     | undefined;
 }
 
-const focusMultiplier = 1.1;
+const focusMultiplier = 1.15;
 const MAX_SONGS_PER_ROW = 4;
 
 const LIST_SIDEBAR_WEIGHT_REM = 7;

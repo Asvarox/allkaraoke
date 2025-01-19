@@ -150,7 +150,7 @@ const GameOverlay = forwardRef(function (
                     data-score={Math.floor(score)}>
                     <ScoreText score={score} />
                     <div
-                      className={`text-xl transition-all duration-200 absolute rotate-12 top-12 ${isFirst ? '-right-10' : '-right-36'}`}>
+                      className={`absolute top-12 rotate-12 text-xl transition-all duration-200 ${isFirst ? '-right-10' : '-right-36'}`}>
                       {isFirst ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
                     </div>
                   </Score>

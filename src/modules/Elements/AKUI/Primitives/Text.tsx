@@ -14,7 +14,7 @@ export default forwardRef(function Text<T extends ElementType = 'span'>(
   return (
     <Component
       className={twMerge(
-        `typography text-base [&_a]:text-active [&_a]:typography ${active ? 'text-active' : ''}`,
+        `typography [&_a]:typography text-base [&_a]:text-active ${active ? 'text-active' : ''}`,
         className,
       )}
       {...props}

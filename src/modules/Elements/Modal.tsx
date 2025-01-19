@@ -11,12 +11,12 @@ export default function Modal({ children, open, onClose }: Props) {
     <AnimatePresence>
       {open && (
         <>
-          <Backdrop onClick={onClose} className="starting:opacity-0 opacity-100 duration-300" exit={{ opacity: 0 }} />
+          <Backdrop onClick={onClose} className="opacity-100 duration-300 starting:opacity-0" exit={{ opacity: 0 }} />
           <motion.div
             exit={{ opacity: 0, top: '20%' }}
             onClick={onClose}
-            className="fixed top-0 left-0 w-screen h-screen z-[20001] overflow-auto opacity-100 starting:opacity-0 starting:top-20 duration-300">
-            <div className="flex items-center justify-center min-h-full">
+            className="fixed left-0 top-0 z-[20001] h-screen w-screen overflow-auto opacity-100 duration-300 starting:top-20 starting:opacity-0">
+            <div className="flex min-h-full items-center justify-center">
               <div onClick={(e) => e.stopPropagation()}>{children}</div>
             </div>
           </motion.div>
