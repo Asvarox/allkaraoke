@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
+import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, ReactNode } from 'react';
 import { ValuesType } from 'utility-types';
 
@@ -8,7 +9,8 @@ interface Props extends PropsWithChildren, ComponentProps<typeof ConfigurationPo
   focused?: boolean;
   disabled?: boolean;
   label: ReactNode;
-  value: ReactNode;
+  value: string | number | undefined | null;
+  displayValue?: ReactNode;
   info?: ReactNode;
   onClick?: () => void;
 }
@@ -36,6 +38,7 @@ export const Switcher = ({
   disabled = false,
   label,
   value,
+  displayValue,
   onClick,
   info,
   children,
@@ -49,7 +52,16 @@ export const Switcher = ({
       data-disabled={disabled}
       {...restProps}
       className={`${className} rounded-md shadow-focusable`}>
-      <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
+      <span>{label ? <>{label}:</> : ''}</span>{' '}
+      <AnimatePresence>
+        <ConfigValue
+          key={value ?? ''}
+          initial={{ opacity: 0, translateY: 20 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          exit={{ opacity: 0, translateY: -20 }}>
+          {displayValue ?? value}
+        </ConfigValue>
+      </AnimatePresence>
       {children ?? null}
     </ConfigurationPosition>
     {info && <InfoText>{info}</InfoText>}
@@ -78,6 +90,8 @@ const ConfigurationPosition = styled.span<{ disabled?: boolean }>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 
   &[data-expanded='true'] {
     font-size: 6rem;
@@ -95,10 +109,12 @@ const ConfigurationPosition = styled.span<{ disabled?: boolean }>`
   }
 `;
 
-const ConfigValue = styled.span`
+const ConfigValue = styled(motion.span)`
   color: ${styles.colors.text.active};
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   padding-left: 1rem;
+  position: absolute;
+  right: 1rem;
 `;

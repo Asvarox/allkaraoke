@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import events from 'modules/GameEvents/GameEvents';
+import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
 import GameSettings from 'routes/SingASong/SongSelection/Components/SongSettings/GameSettings';
 import MicCheck from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck';
@@ -32,25 +33,43 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
   };
   return (
     <Container>
-      <MicCheck style={step === 'players' ? { viewTransitionName: 'player-mic-check-container' } : undefined} />
-      <GameConfiguration>
-        {step === 'song' && (
-          <GameSettings
-            songPreview={songPreview}
-            onNextStep={onSongStepFinish}
-            keyboardControl={keyboardControl}
-            onExitKeyboardControl={onExitKeyboardControl}
-          />
-        )}
-        {step === 'players' && (
-          <PlayerSettings
-            songPreview={songPreview}
-            onNextStep={startSong}
-            keyboardControl={keyboardControl}
-            onExitKeyboardControl={() => setStep('song')}
-          />
-        )}
-      </GameConfiguration>
+      <MicCheck style={step === 'players' ? undefined : undefined} />
+      <AnimatePresence>
+        <GameConfiguration
+          key={step}
+          transition={{
+            duration: 0.2,
+          }}
+          initial={{
+            opacity: 0,
+            translateX: 200,
+          }}
+          animate={{
+            opacity: 1,
+            translateX: 0,
+          }}
+          exit={{
+            opacity: 0,
+            translateX: 200,
+          }}>
+          {step === 'song' && (
+            <GameSettings
+              songPreview={songPreview}
+              onNextStep={onSongStepFinish}
+              keyboardControl={keyboardControl}
+              onExitKeyboardControl={onExitKeyboardControl}
+            />
+          )}
+          {step === 'players' && (
+            <PlayerSettings
+              songPreview={songPreview}
+              onNextStep={startSong}
+              keyboardControl={keyboardControl}
+              onExitKeyboardControl={() => setStep('song')}
+            />
+          )}
+        </GameConfiguration>
+      </AnimatePresence>
     </Container>
   );
 }
@@ -68,10 +87,12 @@ const Container = styled.div`
   }
 `;
 
-const GameConfiguration = styled.div`
+const GameConfiguration = styled(motion.div)`
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 1.25rem;
+  position: absolute;
+  right: 0;
 `;

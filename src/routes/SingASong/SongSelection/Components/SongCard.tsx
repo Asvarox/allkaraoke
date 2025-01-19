@@ -89,8 +89,8 @@ export const FinalSongCard = ({
 export const Language = styled(SongFlag)`
   height: 2.75rem;
   object-fit: cover;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
   position: absolute;
   z-index: -1;
   left: 0rem;
