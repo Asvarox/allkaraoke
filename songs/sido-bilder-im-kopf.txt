@@ -1,0 +1,1113 @@
+#ARTIST:Sido
+#TITLE:Bilder im Kopf
+#CREATOR:TrollZor
+#BPM:360
+#YEAR:2012
+#VIDEO:v=RveIJFR7LV4
+#LANGUAGE:German
+#GAP:9990
+#ALLKARAOKE_ID:sido-bilder-im-kopf
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:29.355Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Sido - Bilder im Kopf.mp3
+: 24 2 7 In 
+: 27 3 7 ei
+: 32 2 5 nem 
+: 35 3 7 schwar
+: 40 2 7 zen 
+: 43 3 7 Fo
+: 48 2 7 to
+: 51 3 7 al
+: 56 2 7 bum
+- 58
+: 59 2 7 Mit 
+: 64 2 7 ’nem 
+: 67 3 7 sil
+: 72 2 5 ber
+: 75 2 5 nen 
+: 80 4 5 Knopf
+- 84
+: 104 2 9 Be
+: 107 3 9 wahr 
+: 112 2 9 ich 
+: 115 3 9 al
+: 120 2 9 le 
+: 123 3 9 die
+: 128 2 9 se 
+* 131 3 10 Bil
+: 136 2 7 der 
+: 139 3 7 im 
+: 144 4 7 Kopf
+- 148
+: 152 2 5 Ich 
+: 155 3 7 weiß 
+: 160 3 5 noch
+- 163
+: 171 3 7 Da
+: 176 2 7 mals 
+: 179 3 7 als 
+: 184 2 7 ich 
+: 187 2 7 jung 
+: 192 2 7 und 
+: 195 3 7 wild 
+: 200 2 5 war 
+: 203 3 5 im 
+: 208 5 5 Block
+- 213
+: 235 3 9 Ich 
+: 240 2 9 be
+: 243 3 9 wahr 
+: 248 2 9 mir 
+: 251 3 9 die
+: 256 2 9 se 
+: 259 3 10 Bil
+: 264 2 7 der 
+: 267 3 7 im 
+: 272 4 7 Kopf
+- 276
+: 280 2 7 In 
+: 283 3 7 ein
+: 288 2 5 em 
+: 291 3 7 schwar
+: 296 2 7 zen 
+: 299 3 7 Fo
+: 304 2 7 to
+: 307 3 7 al
+: 312 2 7 bum
+- 314
+: 315 2 7 Mit 
+: 320 2 7 ’nem 
+: 323 3 7 sil
+: 328 2 5 ber
+: 331 2 5 nen 
+* 336 4 5 Knopf
+- 340
+: 360 2 9 Be
+: 363 3 9 wahr 
+: 368 2 9 ich 
+: 371 3 9 al
+: 376 2 9 le 
+: 379 3 9 die
+: 384 2 9 se 
+: 387 3 10 Bil
+: 392 2 7 der 
+: 395 3 7 im 
+: 400 4 7 Kopf
+- 404
+: 408 2 5 Ich 
+: 411 3 7 weiß 
+: 416 3 5 noch
+- 419
+: 424 2 7 Als 
+: 427 3 7 wir 
+: 432 2 7 das 
+: 435 3 7 ers
+: 440 2 7 te 
+: 443 3 7 Mal 
+: 448 2 7 ge
+: 451 3 7 chillt 
+: 456 2 5 hab’n 
+: 459 3 5 im 
+: 464 5 5 Loft
+- 469
+: 491 3 9 Ich 
+: 496 2 9 be
+: 499 3 9 wahr 
+: 504 2 9 mir 
+: 507 3 9 die
+: 512 2 9 se 
+* 515 4 10 Bil
+: 520 2 7 der 
+: 523 3 7 im 
+: 528 5 7 Kopf
+- 533
+F 544 2 9 Es 
+F 548 2 9 war 
+F 552 2 9 ein
+F 556 2 9 mal 
+F 560 2 9 vor 
+F 564 2 9 lan
+F 568 2 9 ger 
+F 572 2 9 lan
+F 576 2 9 ger 
+F 580 4 9 Zeit
+- 584
+F 592 2 9 Vor 
+F 596 6 9 3
+F 604 4 9 2 
+F 612 2 9 Jahren, 
+F 616 2 9 als 
+F 620 5 9 Mama 
+F 628 4 9 schwanger 
+F 636 2 9 war
+- 638
+F 640 2 9 Sie 
+F 644 4 9 schreit, 
+F 652 2 9 denn 
+F 656 2 9 ich 
+F 660 5 9 kom
+F 667 5 9 me!
+- 672
+F 680 2 9 Ich 
+F 684 2 9 war 
+F 688 2 9 so 
+F 692 2 9 süß 
+F 696 6 9 ohne 
+F 704 2 9 die 
+F 708 5 9 Haare 
+F 716 2 9 am 
+F 720 2 9 Sack
+- 722
+F 728 2 9 A
+F 732 2 9 ber 
+F 736 2 9 die 
+F 740 2 9 wach
+F 744 2 9 sen 
+F 748 2 9 schon 
+F 752 2 9 noch
+- 754
+F 756 3 9 War
+F 760 2 9 te 
+F 763 3 9 mal 
+F 768 3 9 ab
+- 771
+F 776 2 9 Ich 
+F 780 2 9 bin 
+F 784 2 9 im 
+F 788 4 9 Osten 
+F 796 2 9 auf
+F 800 2 9 ge
+F 804 2 9 wach
+F 808 2 9 sen, 
+F 812 2 9 bis 
+F 816 2 9 ich 
+F 820 4 9 9 
+F 828 4 9 war
+- 832
+F 852 2 9 Oran
+F 856 2 9 ge
+F 860 5 9 nes 
+F 868 2 9 Licht 
+F 872 2 9 und 
+F 876 5 9 graue 
+F 884 4 9 Häuser
+- 888
+F 892 2 9 Dann 
+F 896 2 9 der 
+F 900 3 9 Auf
+F 907 2 9 bruch 
+F 912 2 9 ins 
+F 916 4 9 Neu
+F 924 2 9 land
+- 926
+F 936 2 9 An 
+F 940 2 9 der 
+F 944 2 9 Ent
+F 948 2 9 schei
+F 952 2 9 dung 
+F 956 2 9 kann 
+F 960 2 9 ich 
+F 964 2 9 nicht 
+F 968 2 9 nur 
+F 972 2 9 Gu
+F 976 2 9 tes 
+F 980 2 9 las
+F 984 2 9 sen
+- 986
+F 988 2 9 Denn 
+F 992 2 9 es 
+F 996 2 9 war 
+F 1000 2 9 nicht 
+F 1004 2 9 im
+F 1008 2 9 mer 
+F 1012 2 9 ein
+F 1016 2 9 fach
+- 1018
+F 1020 2 9 Für 
+F 1024 2 9 uns 
+F 1028 2 9 drei 
+F 1032 2 9 hier 
+F 1036 2 9 Fuß 
+F 1040 2 9 zu 
+F 1044 2 9 fas
+F 1048 2 9 sen
+- 1050
+F 1052 3 9 A
+F 1056 2 9 ber 
+F 1060 2 9 al
+F 1064 2 9 les 
+F 1068 2 9 hat 
+F 1072 2 9 sich 
+F 1076 4 9 eben 
+F 1083 2 9 so 
+F 1087 2 9 er
+F 1091 3 9 ge
+F 1096 2 9 ben
+- 1098
+F 1100 2 9 Und 
+F 1104 3 9 mein 
+F 1108 4 9 Va
+F 1113 3 9 ter?
+- 1116
+F 1132 5 9 Über 
+F 1140 2 9 den 
+F 1144 2 9 will 
+F 1148 2 9 ich 
+F 1152 2 9 nicht 
+F 1156 5 9 reden
+- 1161
+F 1164 2 9 Ich 
+F 1168 6 9 erwar
+F 1176 2 9 te 
+F 1180 2 9 nichts 
+F 1185 2 9 mehr
+- 1187
+F 1192 2 9 Ich 
+F 1196 2 9 woll
+F 1200 2 9 te 
+F 1204 3 9 kei
+F 1208 2 9 nem 
+F 1212 5 9 glauben
+- 1217
+F 1220 3 9 Trau
+F 1225 2 9 te 
+F 1228 2 9 nur 
+F 1232 2 9 ein 
+F 1236 2 9 paar 
+F 1240 2 9 Ge
+F 1244 2 9 sich
+F 1248 4 9 tern
+- 1252
+F 1260 4 9 Nachts 
+F 1268 4 9 draußen
+- 1272
+F 1276 2 9 Die 
+F 1280 3 9 Au
+F 1284 2 9 gen 
+F 1288 2 9 kann
+F 1292 2 9 ten 
+F 1295 2 9 nur 
+F 1300 3 9 Stra
+F 1304 2 9 ßen
+F 1308 2 9 lich
+F 1312 2 9 ter
+- 1314
+F 1324 2 9 Kon
+F 1328 2 9 ser
+F 1332 2 9 viert 
+F 1336 2 9 und 
+F 1340 2 9 ar
+F 1344 2 9 chi
+F 1348 2 9 viert
+- 1350
+F 1352 2 9 Ich 
+F 1356 2 9 hab’s 
+F 1360 2 9 ge
+F 1364 6 9 spei
+F 1372 2 9 chert
+- 1374
+F 1388 2 9 Pa
+F 1392 2 9 ra
+F 1396 2 9 phiert 
+F 1400 2 9 und 
+F 1404 2 9 num
+F 1408 2 9 me
+F 1412 2 9 riert
+- 1414
+F 1416 2 9 Da
+F 1420 2 9 mit 
+F 1424 2 9 ich’s 
+F 1428 5 9 leicht 
+F 1436 2 9 hab
+- 1438
+F 1448 2 9 Wenn 
+F 1452 2 9 die 
+F 1456 6 9 Erin
+F 1464 2 9 ne
+F 1468 2 9 rung 
+F 1472 2 9 auch 
+F 1476 3 9 lang
+F 1481 2 9 sam 
+F 1487 2 9 ver
+F 1492 3 9 schwin
+F 1496 2 9 det
+- 1498
+F 1500 2 9 Weiß 
+F 1504 2 9 ich 
+F 1508 2 9 im
+F 1512 2 9 mer
+F 1516 2 9 hin 
+F 1520 2 9 ge
+F 1524 2 9 nau, 
+F 1528 2 9 wo 
+F 1532 2 9 man 
+F 1536 2 9 sie 
+F 1540 6 9 fin
+F 1549 2 9 det
+- 1551
+: 1560 2 7 In 
+: 1563 3 7 ein
+: 1568 2 5 em 
+: 1571 3 7 schwar
+: 1576 2 7 zen 
+: 1579 3 7 Fo
+: 1584 2 7 to
+: 1587 3 7 al
+: 1592 2 7 bum
+- 1594
+: 1595 2 7 Mit 
+: 1600 2 7 ’nem 
+: 1603 3 7 sil
+: 1608 2 5 ber
+: 1611 2 5 nen 
+: 1616 4 5 Knopf
+- 1620
+: 1640 2 9 Be
+: 1643 3 9 wahr 
+: 1648 2 9 ich 
+: 1651 3 9 al
+: 1656 2 9 le 
+: 1659 3 9 die
+: 1664 2 9 se 
+: 1667 3 10 Bil
+: 1672 2 7 der 
+: 1675 3 7 im 
+: 1680 4 7 Kopf
+- 1684
+: 1688 2 5 Ich 
+* 1691 3 7 weiß 
+: 1696 3 5 noch
+- 1699
+: 1707 3 7 Da
+: 1712 2 7 mals 
+: 1715 3 7 als 
+: 1720 2 7 ich 
+: 1723 2 7 jung 
+: 1728 2 7 und 
+: 1731 3 7 wild 
+: 1736 2 5 war 
+: 1739 3 5 im 
+: 1744 5 5 Block
+- 1749
+: 1771 3 9 Ich 
+: 1776 2 9 be
+: 1779 3 9 wahr 
+: 1784 2 9 mir 
+: 1787 3 9 die
+: 1792 2 9 se 
+: 1795 3 10 Bil
+: 1800 2 7 der 
+: 1803 3 7 im 
+: 1808 4 7 Kopf
+- 1812
+: 1816 2 7 In 
+: 1819 3 7 ein
+: 1824 2 5 em 
+: 1827 3 7 schwar
+: 1832 2 7 zen 
+: 1835 3 7 Fo
+: 1840 2 7 to
+: 1843 3 7 al
+: 1848 2 7 bum
+- 1850
+: 1851 2 7 Mit 
+: 1856 2 7 ’nem 
+* 1859 3 7 sil
+: 1864 2 5 ber
+: 1867 2 5 nen 
+: 1872 4 5 Knopf
+- 1876
+: 1896 2 9 Be
+: 1899 3 9 wahr 
+: 1904 2 9 ich 
+: 1907 3 9 al
+: 1912 2 9 le 
+: 1915 3 9 die
+: 1920 2 9 se 
+: 1923 3 10 Bil
+: 1928 2 7 der 
+: 1931 3 7 im 
+: 1936 4 7 Kopf
+- 1940
+: 1944 2 5 Ich 
+: 1947 3 7 weiß 
+: 1952 3 5 noch
+- 1955
+: 1960 2 7 Als 
+: 1963 3 7 wir 
+: 1968 2 7 das 
+: 1971 3 7 ers
+: 1976 2 7 te 
+: 1979 3 7 Mal 
+: 1984 2 7 ge
+: 1987 3 7 chillt 
+: 1992 2 5 hab’n 
+: 1995 3 5 im 
+: 2000 5 5 Loft
+- 2005
+: 2027 3 9 Ich 
+: 2032 2 9 be
+: 2035 3 9 wahr 
+: 2040 2 9 mir 
+: 2043 3 9 die
+: 2048 2 9 se 
+* 2051 4 10 Bil
+: 2056 2 7 der 
+: 2059 3 7 im 
+: 2064 5 7 Kopf
+- 2069
+F 2092 2 9 Da
+F 2096 2 9 mals 
+F 2100 2 9 auf 
+F 2104 2 9 ’m 
+F 2108 2 9 Hof 
+F 2112 2 9 mit 
+F 2116 3 9 Bob
+F 2120 2 9 by 
+F 2124 2 9 und 
+F 2128 2 9 so
+- 2130
+F 2140 2 9 Die
+F 2144 2 9 ses 
+F 2148 4 9 Rap 
+F 2156 4 9 Ding
+- 2160
+F 2164 2 9 Un
+F 2168 2 9 ser 
+F 2172 2 9 neu
+F 2176 2 9 es 
+F 2180 2 9 Hob
+F 2184 2 9 by 
+F 2188 2 9 und 
+F 2192 3 9 so
+- 2195
+F 2200 2 9 Und 
+F 2204 2 9 die
+F 2208 2 9 ses 
+F 2213 4 9 Gras 
+F 2220 4 9 Ding
+- 2224
+F 2228 4 9 2 
+F 2236 2 9 Gramm 
+F 2240 2 9 auf 
+F 2245 2 9 Kom
+F 2248 2 9 mi 
+F 2252 2 9 und 
+F 2257 3 9 so
+- 2260
+F 2280 2 9 Wir 
+F 2284 2 9 hab’n 
+F 2288 2 9 ge
+F 2292 2 9 träumt, 
+F 2296 2 9 wir 
+F 2300 2 9 wär’n 
+F 2304 2 9 ein 
+F 2308 2 9 Pro
+F 2312 2 9 mi 
+F 2316 2 9 und 
+F 2320 2 9 so
+- 2322
+F 2328 2 9 Ich 
+F 2332 2 9 zog 
+F 2336 2 9 die 
+F 2340 3 9 Jor
+F 2344 2 9 dans 
+F 2348 2 9 mit 
+F 2352 2 9 den 
+F 2356 2 9 Lö
+F 2360 2 9 chern 
+F 2364 2 9 an
+- 2366
+F 2368 2 9 Und 
+F 2372 2 9 dann 
+F 2376 2 9 ’ne 
+F 2380 2 9 Run
+F 2384 2 9 de 
+F 2388 2 9 Bas
+F 2394 2 9 ket
+F 2398 3 9 ball
+- 2401
+F 2412 2 9 In 
+F 2416 2 9 der 
+F 2420 2 9 Rau
+F 2424 2 9 cher
+F 2428 5 9 ecke 
+F 2436 2 9 stand 
+F 2440 2 9 Ja
+F 2444 2 9 mal 
+F 2448 2 9 am 
+F 2452 2 9 Mar
+F 2456 2 9 ter
+F 2462 4 9 pfahl
+- 2466
+F 2476 2 9 Ob 
+F 2480 2 9 wir 
+F 2484 4 9 Spaß 
+F 2492 2 9 hat
+F 2496 2 9 ten 
+F 2500 4 9 da
+F 2506 2 9 mals?
+- 2508
+F 2516 5 9 Ra
+F 2523 2 9 te 
+F 2527 4 9 mal
+- 2531
+F 2536 2 9 A
+F 2540 2 9 ber 
+F 2544 2 9 die 
+F 2548 2 9 Schul
+F 2552 2 9 bank 
+F 2556 2 9 hab’n 
+F 2560 2 9 wir 
+F 2564 2 9 nicht 
+F 2569 4 9 nur
+- 2573
+F 2576 2 9 Zum 
+F 2580 4 9 Spaß 
+F 2587 2 9 be
+F 2592 2 9 malt
+- 2594
+F 2596 4 9 Uni 
+F 2604 2 9 pas
+F 2608 2 9 ste 
+F 2612 2 9 nicht 
+F 2616 2 9 in 
+F 2620 2 9 mei
+F 2624 2 9 ne 
+F 2628 2 9 Welt
+- 2630
+F 2632 2 9 Nicht 
+F 2636 2 9 mal 
+F 2640 2 9 ’n 
+F 2644 2 9 halb 
+F 2648 2 9 Se
+F 2652 2 9 mes
+F 2656 2 9 ter
+- 2658
+F 2664 2 9 Wir 
+F 2668 2 9 brauch
+F 2672 2 9 ten 
+F 2676 2 9 Geld, 
+F 2680 2 9 wir 
+F 2684 2 9 war’n 
+F 2688 2 9 Re
+F 2692 3 9 bellen
+- 2695
+F 2696 2 9 Wir 
+F 2700 2 9 wus
+F 2704 2 9 sten 
+F 2708 2 9 al
+F 2712 2 9 les 
+F 2716 2 9 bes
+F 2720 2 9 ser
+- 2722
+F 2732 2 9 Wir 
+F 2736 2 9 hab’n 
+F 2740 2 9 rum
+F 2744 2 9 ge
+F 2748 2 9 hang’n 
+F 2752 2 9 und 
+F 2756 2 9 Muc
+F 2760 2 9 ke 
+F 2764 2 9 ge
+F 2768 2 9 macht
+- 2770
+F 2776 2 9 Das 
+F 2780 2 9 Mi
+F 2784 2 9 kro
+F 2788 2 9 fon 
+F 2792 2 9 im 
+F 2796 2 9 Klei
+F 2800 2 9 der
+F 2804 2 9 schrank
+- 2806
+F 2808 2 9 Wir 
+F 2812 2 9 haben 
+F 2816 2 9 ge
+F 2820 2 9 wusst, 
+F 2824 2 9 dass 
+F 2828 2 9 es 
+F 2832 3 9 klappt
+- 2835
+F 2844 2 9 Und 
+F 2848 2 9 jetzt 
+F 2852 2 9 ist 
+F 2856 2 9 es 
+F 2860 2 9 kon
+F 2864 2 9 ser
+F 2868 2 9 viert 
+F 2872 2 9 und 
+F 2876 2 9 ar
+F 2880 2 9 chi
+F 2884 2 9 viert
+- 2886
+F 2888 2 9 Ich 
+F 2892 2 9 hab’s 
+F 2896 2 9 ge
+F 2900 4 9 spei
+F 2908 2 9 chert
+- 2910
+F 2924 2 9 Pa
+F 2928 2 9 ra
+F 2932 2 9 phiert 
+F 2936 2 9 und 
+F 2940 5 9 numme
+F 2948 2 9 riert
+- 2950
+F 2952 2 9 Da
+F 2956 2 9 mit 
+F 2960 2 9 ich’s 
+F 2964 4 9 leicht 
+F 2972 3 9 hab
+- 2975
+F 2984 2 9 Wenn 
+F 2988 2 9 die 
+F 2992 5 9 Erin
+F 3000 2 9 ne
+F 3004 2 9 rung 
+F 3008 2 9 auch 
+F 3012 4 9 lang
+F 3017 3 9 sam 
+F 3023 2 9 ver
+F 3028 3 9 schwin
+F 3032 2 9 det
+- 3034
+F 3036 2 9 Weiß 
+F 3040 2 9 ich 
+F 3044 2 9 im
+F 3048 2 9 mer
+F 3052 2 9 hin 
+F 3056 2 9 ge
+F 3060 2 9 nau
+- 3062
+F 3064 2 9 Wo 
+F 3068 2 9 man 
+F 3072 2 9 sie 
+F 3076 4 9 fin
+F 3084 3 9 det
+- 3087
+: 3096 2 7 In 
+: 3099 3 7 ein
+: 3104 2 5 em 
+: 3107 3 7 schwar
+: 3112 2 7 zen 
+: 3115 3 7 Fo
+: 3120 2 7 to
+: 3123 3 7 al
+: 3128 2 7 bum
+- 3130
+: 3131 2 7 Mit 
+: 3136 2 7 ’nem 
+: 3139 3 7 sil
+: 3144 2 5 ber
+: 3147 2 5 nen 
+: 3152 4 5 Knopf
+- 3156
+: 3176 2 9 Be
+: 3179 3 9 wahr 
+: 3184 2 9 ich 
+: 3187 3 9 al
+: 3192 2 9 le 
+: 3195 3 9 die
+: 3200 2 9 se 
+: 3203 3 10 Bil
+: 3208 2 7 der 
+: 3211 3 7 im 
+* 3216 4 7 Kopf
+- 3220
+: 3224 2 5 Ich 
+: 3227 3 7 weiß 
+: 3232 3 5 noch
+- 3235
+: 3243 3 7 Da
+: 3248 2 7 mals 
+: 3251 3 7 als 
+: 3256 2 7 ich 
+: 3259 2 7 jung 
+: 3264 2 7 und 
+: 3267 3 7 wild 
+: 3272 2 5 war 
+: 3275 3 5 im 
+: 3280 5 5 Block
+- 3285
+: 3307 3 9 Ich 
+: 3312 2 9 be
+: 3315 3 9 wahr 
+: 3320 2 9 mir 
+: 3323 3 9 die
+: 3328 2 9 se 
+: 3331 3 10 Bil
+: 3336 2 7 der 
+: 3339 3 7 im 
+: 3344 4 7 Kopf
+- 3348
+: 3352 2 7 In 
+: 3355 3 7 ein
+: 3360 2 5 em 
+: 3363 3 7 schwar
+: 3368 2 7 zen 
+: 3371 3 7 Fo
+: 3376 2 7 to
+: 3379 3 7 al
+: 3384 2 7 bum
+- 3386
+: 3387 2 7 Mit 
+: 3392 2 7 ’nem 
+: 3395 3 7 sil
+: 3400 2 5 ber
+: 3403 2 5 nen 
+: 3408 4 5 Knopf
+- 3412
+: 3432 2 9 Be
+: 3435 3 9 wahr 
+: 3440 2 9 ich 
+* 3443 3 9 al
+: 3448 2 9 le 
+: 3451 3 9 die
+: 3456 2 9 se 
+: 3459 3 10 Bil
+: 3464 2 7 der 
+: 3467 3 7 im 
+: 3472 4 7 Kopf
+- 3476
+: 3480 2 5 Ich 
+: 3483 3 7 weiß 
+: 3488 3 5 noch
+- 3491
+: 3496 2 7 Als 
+: 3499 3 7 wir 
+: 3504 2 7 das 
+: 3507 3 7 ers
+: 3512 2 7 te 
+: 3515 3 7 Mal 
+: 3520 2 7 ge
+: 3523 3 7 chillt 
+: 3528 2 5 hab’n 
+: 3531 3 5 im 
+* 3536 5 5 Loft
+- 3541
+: 3563 3 9 Ich 
+: 3568 2 9 be
+: 3571 3 9 wahr 
+: 3576 2 9 mir 
+: 3579 3 9 die
+: 3584 2 9 se 
+: 3587 4 10 Bil
+: 3592 2 7 der 
+: 3595 3 7 im 
+: 3600 5 7 Kopf
+- 3605
+F 3608 2 9 In 
+F 3612 2 9 mei
+F 3616 2 9 nem 
+F 3620 2 9 schwar
+F 3624 2 9 zen 
+F 3628 2 9 Fo
+F 3632 2 9 to
+F 3636 2 9 al
+F 3640 2 9 bum
+- 3642
+F 3644 2 9 Mit 
+F 3648 2 9 dem 
+F 3652 2 9 sil
+F 3656 6 9 bernen 
+F 3664 3 9 Knopf
+- 3667
+F 3672 2 9 Sind 
+F 3676 5 9 viele 
+F 3684 2 9 Bil
+F 3688 2 9 der 
+F 3692 2 9 von 
+F 3696 2 9 ’nem 
+F 3700 2 9 Typ
+- 3702
+F 3708 2 9 Mit 
+F 3712 2 9 ’nem 
+F 3716 2 9 sil
+F 3720 2 9 ber
+F 3724 2 9 nen 
+F 3728 4 9 Kopf
+- 3732
+F 3736 2 9 Und 
+F 3740 2 9 vie
+F 3744 2 9 le 
+F 3748 2 9 Bil
+F 3752 2 9 der 
+F 3756 2 9 von 
+F 3760 2 9 gu
+F 3764 2 9 ten 
+F 3768 2 9 Freun
+F 3773 2 9 den
+- 3775
+F 3776 2 9 Und 
+F 3780 2 9 Freun
+F 3784 2 9 den 
+F 3788 2 9 die 
+F 3792 2 9 Fein
+F 3796 2 9 de 
+F 3800 2 9 wur
+F 3804 2 9 den
+- 3806
+F 3808 2 9 Von 
+F 3812 2 9 Au
+F 3816 2 9 tos 
+F 3820 2 9 mit 
+F 3824 5 9 1000 
+F 3832 2 9 P
+F 3836 2 9 S
+- 3838
+F 3840 2 9 Und 
+F 3844 2 9 Bräu
+F 3848 2 9 ten 
+F 3852 2 9 mit 
+F 3856 2 9 gei
+F 3860 2 9 len 
+F 3864 2 9 Kur
+F 3868 2 9 ven
+- 3870
+F 3872 2 9 Von 
+F 3876 2 9 Par
+F 3880 2 9 tys, 
+F 3884 2 9 von 
+F 3888 2 9 Kon
+F 3892 2 9 zer
+F 3896 2 9 ten
+- 3898
+F 3900 2 9 Von 
+F 3904 2 9 den 
+F 3908 2 9 Brü
+F 3912 2 9 chen, 
+F 3916 2 9 von 
+F 3920 2 9 den 
+F 3924 2 9 Ärz
+F 3928 2 9 ten
+- 3930
+F 3932 2 9 Von 
+F 3936 2 9 den 
+F 3940 2 9 Zeug
+F 3944 2 9 nis
+F 3948 2 9 sen, 
+F 3952 2 9 dem 
+F 3956 2 9 Letz
+F 3960 2 9 ten 
+F 3964 2 9 bis 
+F 3968 2 9 zum 
+F 3972 2 9 Er
+F 3976 2 9 sten
+- 3978
+F 3980 2 9 Ich 
+F 3984 2 9 hab 
+F 3988 2 9 Bil
+F 3992 2 9 der 
+F 3996 2 9 von 
+F 4000 2 9 den 
+F 4004 2 9 Fei
+F 4008 2 9 er
+F 4012 2 9 ta
+F 4016 2 9 gen
+- 4018
+F 4020 2 9 Bil
+F 4024 2 9 der 
+F 4028 2 9 von 
+F 4032 2 9 mei’m 
+F 4036 5 9 O
+F 4044 3 9 pa
+- 4047
+F 4064 2 9 Ich 
+F 4068 2 9 war 
+F 4072 2 9 so 
+F 4076 2 9 ver
+F 4080 2 9 dammt 
+F 4084 2 9 trau
+F 4088 2 9 rig, 
+F 4092 2 9 als 
+F 4096 2 9 er 
+F 4100 4 9 tot 
+F 4108 3 9 war
+- 4111
+F 4116 2 9 Doch 
+F 4120 2 9 ich 
+F 4124 2 9 hab 
+F 4128 3 9 es
+- 4131
+F 4140 2 9 Kon
+F 4144 2 9 ser
+F 4148 2 9 viert 
+F 4152 2 9 und 
+F 4156 2 9 ar
+F 4160 2 9 chi
+F 4164 2 9 viert
+- 4166
+F 4168 2 9 Ich 
+F 4172 2 9 hab’s 
+F 4176 2 9 ge
+F 4180 5 9 spei
+F 4188 2 9 chert
+- 4190
+F 4204 2 9 Pa
+F 4208 2 9 ra
+F 4212 2 9 phiert 
+F 4216 2 9 und 
+F 4220 2 9 num
+F 4224 2 9 me
+F 4228 2 9 riert
+- 4230
+F 4232 2 9 Da
+F 4236 2 9 mit 
+F 4240 2 9 ich’s 
+F 4244 4 9 leicht 
+F 4253 2 9 hab
+- 4255
+F 4268 2 9 Denn 
+F 4272 2 9 ich 
+F 4276 2 9 weiß 
+F 4280 2 9 ge
+F 4284 2 9 nau
+- 4286
+F 4288 2 9 Bei 
+F 4292 2 9 mir 
+F 4296 2 9 läuft’s 
+F 4300 2 9 nicht 
+F 4304 2 9 für 
+F 4308 6 9 immer 
+F 4316 2 9 rund
+- 4318
+F 4328 2 9 Doch 
+F 4332 2 9 was 
+F 4336 2 9 mir 
+F 4340 2 9 bleibt, 
+F 4344 2 9 ist 
+F 4348 2 9 die 
+F 4352 6 9 Erin
+F 4360 2 9 ne
+F 4364 3 9 rung
+- 4367
+: 4376 2 7 In 
+: 4379 3 7 ein
+: 4384 2 5 em 
+* 4387 3 7 schwar
+: 4392 2 7 zen 
+: 4395 3 7 Fo
+: 4400 2 7 to
+: 4403 3 7 al
+: 4408 2 7 bum
+- 4410
+: 4411 2 7 Mit 
+: 4416 2 7 ’nem 
+: 4419 3 7 sil
+: 4424 2 5 ber
+: 4427 2 5 nen 
+: 4432 4 5 Knopf
+- 4436
+: 4456 2 9 Be
+: 4459 3 9 wahr 
+: 4464 2 9 ich 
+: 4467 3 9 al
+: 4472 2 9 le 
+: 4475 3 9 die
+: 4480 2 9 se 
+: 4483 3 10 Bil
+: 4488 2 7 der 
+: 4491 3 7 im 
+: 4496 4 7 Kopf
+- 4500
+: 4504 2 5 Ich 
+: 4507 3 7 weiß 
+: 4512 3 5 noch
+- 4515
+: 4523 3 7 Da
+: 4528 2 7 mals 
+: 4531 3 7 als 
+: 4536 2 7 ich 
+: 4539 2 7 jung 
+: 4544 2 7 und 
+: 4547 3 7 wild 
+: 4552 2 5 war 
+: 4555 3 5 im 
+: 4560 5 5 Block
+- 4565
+: 4587 3 9 Ich 
+: 4592 2 9 be
+: 4595 3 9 wahr 
+: 4600 2 9 mir 
+: 4603 3 9 die
+: 4608 2 9 se 
+* 4611 3 10 Bil
+: 4616 2 7 der 
+: 4619 3 7 im 
+: 4624 4 7 Kopf
+- 4628
+: 4632 2 7 In 
+: 4635 3 7 ein
+: 4640 2 5 em 
+: 4643 3 7 schwar
+: 4648 2 7 zen 
+: 4651 3 7 Fo
+: 4656 2 7 to
+: 4659 3 7 al
+: 4664 2 7 bum
+- 4666
+: 4667 2 7 Mit 
+: 4672 2 7 ’nem 
+: 4675 3 7 sil
+: 4680 2 5 ber
+: 4683 2 5 nen 
+: 4688 4 5 Knopf
+- 4692
+: 4712 2 9 Be
+: 4715 3 9 wahr 
+: 4720 2 9 ich 
+: 4723 3 9 al
+: 4728 2 9 le 
+: 4731 3 9 die
+: 4736 2 9 se 
+: 4739 3 10 Bil
+: 4744 2 7 der 
+: 4747 3 7 im 
+: 4752 4 7 Kopf
+- 4756
+: 4760 2 5 Ich 
+: 4763 3 7 weiß 
+: 4768 3 5 noch
+- 4771
+: 4776 2 7 Als 
+: 4779 3 7 wir 
+: 4784 2 7 das 
+: 4787 3 7 ers
+: 4792 2 7 te 
+: 4795 3 7 Mal 
+: 4800 2 7 ge
+* 4803 3 7 chillt 
+: 4808 2 5 hab’n 
+: 4811 3 5 im 
+: 4816 5 5 Loft
+- 4821
+: 4843 3 9 Ich 
+: 4848 2 9 be
+: 4851 3 9 wahr 
+: 4856 2 9 mir 
+: 4859 3 9 die
+: 4864 2 9 se 
+: 4867 4 10 Bil
+: 4872 2 7 der 
+: 4875 3 7 im 
+: 4880 5 7 Kopf
+- 4885 4992
+- 4992
+: 5016 2 5 Ich 
+: 5019 3 7 weiß 
+: 5024 3 5 noch, 
+: 5032 2 5 ich 
+: 5035 3 7 weiß 
+: 5040 3 5 noch
+- 5043 5248
+- 5248
+: 5272 2 5 Ich 
+* 5275 3 7 weiß 
+: 5280 3 5 noch, 
+: 5288 2 5 ich 
+: 5291 3 7 weiß 
+: 5296 3 5 noch
+E

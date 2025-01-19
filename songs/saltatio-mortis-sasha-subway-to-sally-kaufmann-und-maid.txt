@@ -1,0 +1,615 @@
+#ARTIST:Saltatio Mortis, Sasha, Subway to Sally
+#TITLE:Kaufmann und Maid
+#CREATOR:TrollZor
+#BPM:247,94
+#YEAR:2020
+#VIDEO:v=K4T5NEiyK5g
+#LANGUAGE:German
+#GAP:15379,525369040897
+#ALLKARAOKE_ID:saltatio-mortis-sasha-subway-to-sally-kaufmann-und-maid
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:28.552Z
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:0,99
+#MP3:Saltatio Mortis, Sasha, Subway to Sally, dArtagnan, Feuerschwanz, Tanzwut & Patty Gurdy - Kaufmann und Maid.mp3
+#COVER:Saltatio Mortis, Sasha, Subway to Sally, dArtagnan, Feuerschwanz, Tanzwut & Patty Gurdy - Kaufmann und Maid [CO].jpg
+#BACKGROUND:Saltatio Mortis, Sasha, Subway to Sally, dArtagnan, Feuerschwanz, Tanzwut & Patty Gurdy - Kaufmann und Maid [BG].jpg
+: 17 4 2 Einst 
+: 24 1 2 ein 
+: 26 2 2 ed
+: 29 2 4 ler 
+: 34 4 5 Kauf
+: 42 3 2 mann 
+: 49 3 4 auf 
+: 54 2 5 ein 
+: 57 3 4 Mä
+: 61 2 0 del 
+: 65 7 -3 traf
+- 72
+: 82 3 2 Di
+: 86 2 2 rekt 
+: 90 1 2 vor 
+: 93 2 4 den 
+: 97 6 5 To
+* 105 3 7 ren 
+: 110 2 2 von 
+: 114 4 4 Dumm
+: 120 1 5 di
+: 122 2 4 da
+: 125 2 0 del
+: 129 7 2 dei
+- 136
+: 142 2 -3 Er 
+: 146 5 2 frag
+: 152 1 2 te 
+: 154 2 2 sie, 
+: 158 2 4 wo
+: 162 2 5 her 
+: 166 2 2 sie 
+: 170 2 2 stammt, 
+: 174 2 2 ein 
+: 178 5 4 Weib 
+: 184 1 5 so 
+: 186 2 4 hold 
+: 190 2 0 und 
+: 194 5 -3 brav
+- 199
+: 205 3 -3 Und 
+: 209 4 2 wie 
+: 214 2 2 es 
+: 217 3 2 sie 
+: 222 2 4 hier
+: 225 2 5 her 
+: 229 2 2 ver
+: 233 3 2 schlug, 
+: 237 2 2 nach 
+: 242 3 4 Dumm
+: 247 1 5 di
+: 249 2 4 da
+: 253 2 0 del
+: 257 9 2 dei
+- 266 317
+- 317
+: 334 2 2 Sie 
+: 338 2 2 an
+: 342 2 2 twor
+: 345 1 2 te
+: 349 1 4 te 
+: 353 2 5 ihm 
+: 357 1 2 so
+: 361 3 2 gleich 
+: 365 1 2 mit 
+: 369 3 4 eng
+: 374 2 5 els
+: 377 3 4 glei
+: 381 1 0 cher 
+: 385 8 4 Stimm
+- 393
+: 398 3 -3 Ich 
+: 402 3 2 kom
+: 407 1 2 me 
+: 409 2 2 doch 
+: 414 2 4 sehr 
+: 417 3 5 wohl 
+: 422 2 2 von 
+: 426 3 2 hier 
+: 430 2 2 aus 
+: 434 4 4 Dumm
+: 440 1 5 di
+: 442 2 4 da
+: 445 2 0 del
+: 449 8 2 dei
+- 457
+: 461 2 -3 Doch 
+: 465 4 2 darf 
+: 470 1 2 ich 
+: 473 2 2 fra
+: 477 2 4 gen, 
+: 481 2 5 wer 
+: 485 1 2 da 
+: 489 2 2 spricht, 
+: 493 2 2 ge
+: 497 4 4 hüllt 
+: 503 1 5 in 
+: 505 3 4 ed
+: 509 2 0 len 
+: 513 9 -3 Zwirn?
+- 522
+: 525 3 -3 Dеr 
+: 529 4 2 Kauf
+: 535 1 2 mann 
+: 537 2 2 küss
+: 541 1 4 te 
+: 545 3 5 ihr 
+: 549 1 2 die 
+: 553 2 2 Hand: 
+: 557 1 2 "Man 
+: 561 2 4 nennt 
+: 565 3 5 mich 
+: 569 2 4 Di
+: 573 2 0 dеl
+: 577 8 2 dei"
+- 585 632
+- 632
+: 649 3 5 Und 
+: 655 2 7 sie 
+* 658 6 9 gin
+* 666 8 9 gen 
+: 677 2 9 in 
+: 681 3 10 die 
+: 687 1 9 Ta
+: 689 5 7 ver
+: 697 10 7 ne
+- 707
+: 713 4 7 Und 
+: 719 1 4 sie 
+: 722 4 5 tran
+: 729 10 5 ken 
+: 745 4 7 ed
+: 751 1 5 len 
+: 753 14 4 Met
+- 767
+: 777 4 5 Und 
+: 783 1 7 sie 
+: 785 6 9 träum
+: 793 9 9 ten 
+: 809 4 10 von 
+: 814 2 9 der 
+: 817 6 7 Fer
+: 825 10 7 ne
+- 835
+: 841 3 9 Und 
+: 847 1 7 sie 
+: 849 6 5 sang
+: 857 11 5 en 
+: 873 4 7 die
+: 879 1 5 ses 
+: 881 18 4 Lied
+- 899
+: 913 4 2 Dumm
+: 919 1 2 di
+: 921 3 2 da
+: 925 2 4 del
+: 929 2 5 du
+: 933 2 7 del
+: 937 2 5 da
+: 941 2 2 del
+: 945 4 4 dumm
+: 951 1 5 di
+: 953 2 4 da
+: 957 2 0 del
+: 961 8 2 dei
+- 969
+* 977 4 2 Dumm
+* 983 1 2 di
+* 985 3 2 da
+* 989 2 4 del
+* 993 2 5 du
+* 997 2 7 del
+* 1001 2 5 da
+* 1005 2 2 del
+: 1009 2 4 du
+: 1013 2 5 del
+: 1017 2 4 da
+: 1021 2 0 del
+: 1025 8 2 dei
+- 1033
+: 1038 2 -3 Das 
+: 1041 3 2 en
+: 1045 3 2 gels
+: 1049 2 2 glei
+: 1053 2 4 che 
+: 1057 2 5 Ma
+: 1061 2 7 del 
+: 1065 3 5 hauch
+: 1069 2 2 te 
+: 1073 4 4 ihm 
+: 1079 1 5 ganz 
+: 1081 2 4 sanft 
+: 1085 2 2 ins 
+: 1089 11 4 Ohr
+- 1100
+: 1106 4 2 "Wuss
+: 1111 1 2 test 
+: 1113 3 2 du 
+: 1117 2 4 denn 
+: 1121 3 5 gar 
+: 1125 2 7 nicht, 
+: 1129 2 5 dass 
+: 1133 2 2 ich 
+: 1137 4 4 Dumm
+: 1143 1 5 di
+: 1145 3 4 du
+: 1149 3 0 del 
+: 1154 8 2 heiß?"
+- 1162
+: 1165 2 -3 Den 
+: 1169 3 2 e
+: 1173 2 2 sels
+: 1177 2 2 glei
+: 1180 2 4 chen 
+: 1185 2 5 Kauf
+: 1189 2 2 mann, 
+: 1193 2 2 oh, 
+: 1197 2 2 den 
+: 1201 3 4 lie
+: 1206 2 5 bes
+: 1209 1 4 tol
+: 1211 3 0 len 
+: 1217 6 -3 Tor
+- 1223
+: 1226 2 -3 Ü
+: 1229 2 -3 ber
+: 1233 4 2 mannt 
+: 1239 1 2 in 
+: 1241 3 2 sei
+: 1245 2 4 nem 
+: 1249 2 5 Rausch 
+: 1253 2 7 der 
+: 1257 2 5 Drang 
+: 1261 2 2 nach 
+: 1265 4 4 Dumm
+: 1271 1 5 di
+: 1273 2 4 da
+: 1277 2 0 del
+: 1281 10 2 dei
+- 1291 1341
+- 1341
+: 1358 2 -3 Doch 
+: 1361 3 2 ist 
+: 1367 1 2 der 
+: 1369 2 2 Papst 
+: 1373 2 4 ka
+: 1377 3 5 tho
+: 1381 2 7 lisch 
+: 1385 2 5 und 
+: 1389 2 2 sie 
+: 1393 4 4 war'n 
+: 1398 2 5 ein 
+: 1401 1 4 Lie
+: 1403 1 2 ~
+: 1405 2 0 bes
+: 1409 8 -3 paar
+- 1417
+: 1421 2 -3 Die 
+: 1425 3 2 Näch
+: 1431 1 2 te 
+: 1433 3 2 wa
+: 1437 2 4 ren 
+: 1441 2 5 lang 
+: 1445 2 7 und 
+: 1449 2 5 Di
+: 1453 2 2 del
+: 1457 4 4 dumm
+: 1463 1 5 di
+: 1465 2 4 du
+: 1469 2 0 del
+: 1473 5 2 dei
+- 1478
+: 1481 3 2 Das 
+: 1485 2 -3 klingt 
+: 1489 5 2 heu
+: 1495 1 2 te 
+: 1497 3 2 viel
+: 1501 2 4 leicht 
+: 1505 3 5 ko
+: 1509 2 7 misch, 
+: 1513 2 5 doch 
+: 1517 2 2 schon 
+: 1521 4 4 nach 
+: 1527 1 5 nur 
+: 1529 2 4 ein 
+: 1533 3 0 paar 
+: 1537 6 -3 Jahrn
+- 1543
+: 1549 2 0 In 
+: 1553 4 2 Dumm
+: 1559 1 2 di
+: 1561 3 2 du
+: 1565 2 4 del
+* 1569 2 5 drei 
+: 1573 2 7 hat
+: 1577 2 5 ten 
+: 1581 2 2 sie 
+: 1585 2 4 1
+: 1589 2 5 3 
+: 1593 2 4 Kin
+: 1597 2 0 der
+: 1601 8 2 lein
+- 1609 1655
+- 1655
+: 1672 3 5 Und 
+: 1678 2 7 sie 
+: 1681 6 9 gin
+: 1689 8 9 gen 
+: 1701 2 9 in 
+* 1705 3 10 die 
+* 1711 1 9 Ta
+* 1713 5 7 ver
+* 1721 10 7 ne
+- 1731
+: 1737 4 7 Und 
+: 1742 1 4 sie 
+: 1745 4 5 tran
+: 1753 10 5 ken 
+: 1769 4 7 ed
+: 1775 1 5 len 
+: 1777 8 4 Me
+: 1786 5 9 ~t
+- 1791
+: 1801 4 5 Und 
+: 1807 1 7 sie 
+: 1809 6 9 träum
+: 1817 9 9 ten 
+: 1833 4 10 von 
+: 1838 2 9 der 
+: 1841 6 7 Fer
+: 1849 10 7 ne
+- 1859
+: 1865 3 9 Und 
+: 1871 1 7 sie 
+: 1873 6 5 san
+: 1881 11 5 gen 
+: 1897 4 7 die
+: 1903 1 5 ses 
+: 1905 17 4 Lied
+- 1922
+* 1937 4 2 Dumm
+* 1943 1 2 di
+* 1945 3 2 da
+* 1949 2 4 del
+* 1953 2 5 du
+* 1957 2 7 del
+* 1961 2 5 da
+* 1965 2 2 del
+: 1969 4 4 dumm
+: 1975 1 5 di
+: 1977 2 4 da
+: 1981 2 0 del
+: 1985 8 2 dei
+- 1993
+: 2001 4 2 Dumm
+: 2007 1 2 di
+: 2009 3 2 da
+: 2013 2 4 del
+: 2017 2 5 du
+: 2021 2 7 del
+: 2025 2 5 da
+: 2029 2 2 del
+: 2033 2 4 du
+: 2037 2 5 del
+: 2041 2 4 da
+: 2045 2 0 del
+* 2049 3 4 dei
+* 2053 4 2 ~
+- 2057 2065
+- 2065
+: 2082 9 -3 Sie 
+: 2096 6 2 stan
+: 2104 3 2 den 
+: 2109 3 2 vor 
+: 2114 3 4 dem 
+: 2120 5 5 Trau
+: 2126 3 7 al
+: 2132 5 5 tar, 
+: 2139 3 2 die 
+: 2144 4 4 Eng
+: 2150 3 5 lein 
+: 2156 3 4 sang
+: 2161 4 0 en 
+: 2167 10 -3 laut
+- 2177
+: 2191 6 2 Dumm
+: 2199 2 2 di
+: 2202 4 2 da
+: 2207 4 4 del
+* 2213 5 5 du
+* 2220 4 7 del
+* 2225 4 5 da
+* 2231 4 2 del
+: 2238 4 4 du
+: 2244 4 5 del
+: 2250 4 4 da
+: 2255 4 0 del
+: 2262 13 2 dei
+- 2275
+: 2279 4 -3 Fort
+: 2285 7 2 an 
+: 2293 3 2 sollst 
+: 2297 4 2 du 
+: 2303 3 4 mein 
+: 2308 4 5 Rit
+: 2314 4 7 ter 
+: 2320 4 5 sein 
+: 2326 3 2 und 
+: 2332 5 4 ich 
+: 2340 3 5 bin 
+: 2344 3 4 dei
+: 2348 1 2 ~
+: 2350 2 0 ne 
+: 2356 9 -3 Braut
+- 2365
+: 2368 4 -3 Sprach 
+: 2374 3 -3 die 
+: 2380 6 2 schö
+: 2389 1 2 ne 
+: 2391 3 2 Dumm
+: 2397 3 4 di
+: 2403 3 5 du
+: 2408 3 7 del 
+: 2415 5 5 zu 
+: 2421 3 2 ihr'm 
+: 2427 4 4 liebs
+: 2433 3 5 ten 
+: 2439 4 4 Di
+: 2445 4 0 del
+: 2451 2 4 dei
+: 2454 6 2 ~
+- 2460
+: 2463 3 -3 Doch 
+: 2468 3 -3 das 
+: 2474 6 2 wun
+: 2482 2 2 der
+: 2486 5 2 schö
+: 2492 3 4 ne 
+: 2498 3 5 Mäg
+: 2504 3 7 de
+: 2510 4 5 lein 
+: 2516 3 2 war 
+: 2522 5 4 weit 
+: 2528 3 5 für 
+: 2534 3 4 ih
+: 2539 2 0 re 
+: 2545 6 -3 Zeit
+- 2551
+: 2556 4 -3 Sie 
+: 2561 4 -3 be
+: 2567 5 2 hielt 
+: 2574 2 2 den 
+: 2577 4 2 Mäd
+: 2583 3 4 chen
+: 2588 4 5 na
+: 2593 2 7 men 
+: 2598 3 5 Dumm
+: 2603 3 2 di
+: 2608 3 4 du
+: 2613 2 5 del, 
+* 2618 4 4 oh
+* 2623 2 0 ne 
+* 2628 11 2 Scheiß
+- 2639
+: 2643 2 0 Der 
+: 2649 4 2 Kauf
+: 2655 2 2 mann 
+: 2658 3 2 Di
+: 2662 3 4 del
+: 2667 3 5 dei 
+: 2672 2 7 war 
+: 2676 3 5 da
+: 2681 2 2 mit 
+: 2685 3 4 cool 
+: 2689 3 5 und 
+: 2694 2 4 stimm
+: 2698 2 0 te 
+: 2703 5 -3 ein
+- 2708
+: 2712 3 -3 Und 
+: 2717 2 -3 fort
+: 2721 3 2 an 
+: 2727 1 2 war’n 
+: 2729 4 2 sie 
+: 2734 3 4 be
+: 2738 2 5 kannt 
+: 2742 2 7 als 
+: 2746 3 5 Dumm
+: 2750 2 2 di
+: 2754 2 4 du
+: 2758 2 5 del
+: 2762 3 4 di
+: 2766 3 0 del
+: 2771 2 4 dei
+: 2774 7 2 ~
+- 2781
+: 2795 4 5 Und 
+: 2800 2 7 sie 
+: 2803 6 9 gin
+: 2811 10 9 gen 
+: 2823 2 9 in 
+: 2826 3 10 die 
+: 2832 1 9 Ta
+: 2834 5 7 ver
+: 2842 8 7 ne
+- 2850
+: 2858 4 7 Und 
+: 2863 1 4 sie 
+: 2866 6 5 tran
+: 2874 10 5 ken 
+: 2890 4 7 ed
+: 2896 1 5 len 
+: 2898 8 4 Me
+: 2907 5 9 ~t
+- 2912
+: 2922 4 5 Und 
+: 2928 1 7 sie 
+: 2930 6 9 träum
+: 2938 9 9 ten 
+: 2954 4 10 von 
+: 2959 2 9 der 
+: 2962 6 7 Fer
+: 2970 9 7 ne
+- 2979
+: 2986 3 9 Und 
+: 2992 1 7 sie 
+: 2994 6 5 sang
+: 3002 11 5 en 
+: 3018 4 7 die
+: 3024 1 5 ses 
+: 3026 17 4 Lied
+- 3043
+: 3050 3 5 Und 
+: 3056 1 7 sie 
+: 3058 6 9 gin
+: 3067 8 9 gen 
+: 3078 2 9 in 
+: 3082 3 10 die 
+: 3088 1 9 Ta
+: 3090 5 7 ver
+: 3098 9 7 ne
+- 3107
+: 3114 4 7 Und 
+: 3120 1 4 sie 
+: 3122 6 5 tran
+: 3130 10 5 ken 
+: 3146 4 7 ed
+: 3152 1 5 len 
+* 3154 8 4 Me
+* 3163 5 9 ~t
+- 3168
+: 3178 4 5 Und 
+: 3184 1 7 sie 
+: 3186 6 9 träum
+: 3194 9 9 ten 
+: 3210 4 10 von 
+: 3215 2 9 der 
+: 3218 6 7 Fer
+: 3226 10 7 ne
+- 3236
+: 3242 3 7 Und 
+: 3248 1 4 sie 
+: 3250 6 5 sang
+: 3258 11 5 en 
+: 3274 4 7 die
+: 3280 1 5 ses 
+: 3282 18 4 Lied
+- 3300 3329
+- 3329
+: 3346 4 2 Dumm
+: 3352 1 2 di
+: 3354 3 2 da
+: 3358 2 4 del
+: 3362 2 5 du
+: 3366 2 7 del
+: 3370 2 5 da
+: 3374 2 2 del
+: 3378 4 4 dumm
+: 3384 1 5 di
+: 3386 2 4 da
+: 3390 2 0 del
+: 3394 8 2 dei
+- 3402
+* 3410 4 2 Dumm
+* 3416 1 2 di
+* 3418 3 2 da
+* 3422 2 4 del
+* 3426 2 5 du
+* 3430 2 7 del
+* 3434 2 5 da
+* 3438 2 2 del
+* 3442 2 4 du
+* 3446 2 5 del
+* 3450 2 4 da
+* 3454 2 0 del
+* 3458 8 2 dei
+- 3466 3537
+- 3537
+G 3554 5 7 Hey!
+E

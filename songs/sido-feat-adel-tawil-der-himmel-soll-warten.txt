@@ -1,0 +1,765 @@
+#ARTIST:Sido feat. Adel Tawil
+#TITLE:Der Himmel soll warten
+#CREATOR:TrollZor
+#BPM:376,75
+#YEAR:2010
+#VIDEO:v=VBInnGswRes
+#GENRE:Hip-Hop
+#LANGUAGE:German
+#GAP:10204,64499004645
+#ALLKARAOKE_ID:sido-feat-adel-tawil-der-himmel-soll-warten
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:29.152Z
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Sido feat. Adel Tawil - Der Himmel soll warten.mp3
+: 25 12 0 O
+: 42 7 -4 ho 
+* 59 13 0 O
+: 75 8 -2 ho
+- 83 130
+- 130
+: 155 10 0 O
+: 171 7 -4 ho 
+: 187 12 0 O
+: 203 10 -2 ho
+- 213
+: 236 5 3 O
+: 244 5 3 ho
+* 252 4 0 ho
+: 259 6 -4 ho
+- 265
+: 283 10 0 O
+: 299 7 -4 ho 
+: 315 12 0 O
+: 331 10 -2 ho
+- 341 385
+- 385
+: 410 10 0 O
+: 426 7 -4 ho 
+: 442 12 0 O
+: 458 10 -2 ho
+- 468
+: 491 5 3 O
+: 499 5 3 ho
+: 507 4 0 ho
+: 514 6 -4 ho
+- 520
+F 524 3 -3 O
+F 532 3 -3 kay, 
+F 539 3 -3 war
+F 543 3 -3 te 
+F 548 4 -3 kurz, 
+F 555 3 -3 guckt 
+F 560 3 -3 mich 
+F 565 3 -3 an, 
+F 571 4 -3 siehst 
+F 577 2 -3 du 
+F 581 4 -3 das
+- 585
+F 588 3 -3 Ich 
+F 592 3 -3 bin 
+F 596 6 -3 cool, 
+F 603 6 -3 dies 
+F 610 3 -3 und 
+F 614 4 -3 das, 
+F 620 3 -3 ich 
+F 624 4 -3 freu 
+F 629 2 -3 mir 
+F 632 2 -3 ’n 
+F 635 3 -3 rie
+F 639 5 -3 sen 
+F 645 4 -3 Ast
+- 649
+F 658 2 -3 Ich 
+F 662 2 -3 mach 
+F 666 2 -3 das 
+F 670 2 -3 hier 
+F 674 2 -3 für 
+F 677 2 -3 die 
+F 680 2 -3 Leu
+F 684 2 -3 te 
+F 688 2 -3 die 
+F 692 2 -3 das 
+F 697 2 -3 hier 
+F 700 2 -3 lie
+F 705 2 -3 ben
+- 707
+F 711 1 -3 Lasst 
+F 715 1 -3 mich 
+F 720 1 -3 ein
+F 724 1 -3 fach 
+F 728 1 -3 in 
+F 733 1 -3 Frie
+F 737 1 -3 den 
+F 741 1 -3 wenn 
+F 746 1 -3 ihr 
+F 750 1 -3 Si
+F 754 1 -3 do 
+F 758 1 -3 hasst
+- 759
+F 765 5 -3 Punkt 
+F 774 4 -3 aus!
+- 778
+F 781 2 -3 Ich 
+F 785 2 -3 bin 
+F 789 2 -3 ein 
+F 794 2 -3 ge
+F 798 2 -3 mach
+F 802 1 -3 ter 
+F 806 2 -3 Mann, 
+F 813 2 -3 guckt 
+F 818 2 -3 was 
+F 822 2 -3 ich 
+F 826 2 -3 er
+F 830 4 -3 reicht 
+F 837 3 -3 hab
+- 840
+F 845 2 -3 Ei
+F 850 2 -3 gen
+F 854 2 -3 tlich 
+F 858 2 -3 könn
+F 863 1 -3 te 
+F 867 2 -3 man 
+F 871 2 -3 sa
+F 875 2 -3 gen 
+F 879 2 -3 so 
+F 883 2 -3 wie’s 
+F 887 2 -3 ist 
+F 894 3 -3 reicht 
+F 901 3 -3 das
+- 904
+F 913 2 -3 A
+F 917 2 -3 ber 
+F 923 2 -3 es 
+F 927 2 -3 reicht 
+F 931 2 -3 nicht, 
+F 936 2 -3 nein, 
+F 941 2 -3 ich 
+F 946 2 -3 kann 
+F 951 2 -3 nicht 
+F 955 2 -3 be
+F 959 3 -3 schei
+F 964 2 -3 den 
+F 967 2 -3 sein
+- 969
+F 980 2 -3 Ich 
+F 983 2 -3 will 
+F 986 2 -3 so
+F 990 2 -3 vie
+F 994 2 -3 les 
+F 997 4 -3 noch 
+F 1002 2 -3 er
+F 1005 3 -3 le
+F 1009 3 -3 ben 
+F 1013 3 -3 vor 
+F 1018 3 -3 dem 
+F 1022 3 -3 Grei
+F 1026 2 -3 ßen
+F 1030 3 -3 heim
+- 1033
+F 1044 2 -3 Ich 
+F 1047 2 -3 will 
+F 1051 2 -3 den 
+F 1055 5 -3 Jack
+F 1062 2 -3 pot 
+F 1067 2 -3 im 
+F 1071 2 -3 Lot
+F 1075 2 -3 to 
+F 1079 2 -3 ge
+F 1083 3 -3 winn’ 
+F 1088 2 -3 und 
+F 1092 3 -3 da
+F 1097 3 -3 mit 
+F 1102 2 -3 al
+F 1105 2 -3 le 
+F 1109 2 -3 mei
+F 1113 2 -3 ne
+- 1115
+F 1116 4 -3 Schäf
+F 1123 3 -3 chen 
+F 1130 2 -3 ins 
+F 1134 3 -3 Tro
+F 1139 2 -3 cke
+F 1142 2 -3 ne 
+F 1145 3 -3 bring’
+- 1148
+F 1157 2 -3 Ich 
+F 1161 2 -3 will 
+F 1165 2 -3 high 
+F 1169 2 -3 und 
+F 1175 3 -3 frei 
+F 1182 2 -3 sein 
+F 1187 2 -3 wie 
+F 1192 2 -3 ei
+F 1195 2 -3 ne 
+F 1198 3 -3 Flo
+F 1203 3 -3 cke 
+F 1207 2 -3 im 
+F 1210 2 -3 Wind,
+- 1212
+F 1218 2 -3 An
+F 1221 2 -3 sons
+F 1225 2 -3 ten 
+F 1229 3 -3 schrei 
+F 1234 2 -3 ich 
+F 1238 2 -3 wie 
+F 1242 2 -3 ein 
+F 1246 2 -3 bo
+F 1250 2 -3 cki
+F 1254 2 -3 ges 
+F 1258 2 -3 Kind
+- 1260
+F 1267 2 -3 Und 
+F 1271 2 -3 dann 
+F 1275 2 -3 wird’s 
+F 1279 2 -3 wie
+F 1283 2 -3 der 
+F 1287 2 -3 ek
+F 1291 2 -3 lig
+- 1293
+F 1299 2 -3 Ich 
+F 1303 2 -3 hab 
+F 1307 2 -3 schon 
+F 1311 2 -3 viel 
+F 1315 2 -3 er
+F 1319 3 -3 lebt 
+F 1323 3 -3 ich 
+F 1327 2 -3 hab 
+F 1331 2 -3 a
+F 1334 2 -3 ber 
+F 1337 2 -3 noch 
+F 1341 2 -3 so 
+F 1346 2 -3 viel 
+F 1350 4 -3 vor
+- 1354
+F 1360 2 -3 Und 
+F 1364 2 -3 ihr 
+F 1368 2 -3 al
+F 1371 2 -3 le 
+F 1374 2 -3 guckt 
+F 1379 2 -3 mir 
+F 1383 2 -3 da
+F 1387 2 -3 bei 
+F 1391 2 -3 zu 
+F 1395 2 -3 auf 
+F 1399 2 -3 
+F 1403 2 -3 eu
+F 1408 2 -3 er’m 
+F 1412 2 -3 Mo
+F 1416 2 -3 ni
+F 1419 2 -3 tor
+- 1421
+F 1426 2 -3 Bis 
+F 1430 2 -3 sie 
+F 1434 2 -3 mir 
+F 1438 2 -3 ir
+F 1442 2 -3 gend
+F 1446 2 -3 wann 
+F 1450 2 -3 das 
+F 1454 2 -3 gro
+F 1458 2 -3 ße 
+F 1462 2 -3 Licht 
+F 1466 6 -3 aus
+F 1474 2 -3 chal
+F 1478 2 -3 ten,
+- 1480
+F 1486 2 -3 Doch 
+F 1490 2 -3 der 
+F 1494 2 -3 Him
+F 1498 2 -3 mel 
+F 1503 4 -3 muss 
+F 1508 2 -3 es 
+F 1512 2 -3 erst
+F 1515 2 -3 mal 
+F 1520 2 -3 oh
+F 1524 2 -3 ne 
+F 1528 2 -3 mich 
+F 1532 2 -3 aus
+F 1538 4 -3 hal
+F 1544 2 -3 ten.
+- 1546
+F 1549 8 -3 Ye
+F 1558 9 -3 ah
+- 1567
+: 1573 4 -7 Ich 
+: 1581 4 1 ruf 
+: 1589 4 1 es 
+: 1597 4 1 nach 
+: 1605 6 0 o
+: 1614 4 -2 ben
+- 1618
+: 1637 3 3 Der 
+: 1644 4 1 Him
+: 1653 4 0 mel 
+: 1660 5 -2 soll 
+: 1669 5 -2 war
+: 1677 3 -4 ten
+- 1680
+: 1701 2 -4 Denn 
+: 1704 2 -4 ich 
+: 1707 4 0 hab 
+: 1715 5 -4 noch 
+: 1723 4 1 was 
+: 1731 4 -2 vor
+- 1735 1744
+- 1744
+: 1769 2 3 Der 
+: 1773 2 3 Him
+: 1777 7 2 mel 
+: 1789 5 0 muss 
+: 1797 6 -2 war
+: 1805 4 0 ten
+- 1809
+: 1833 3 -7 Wenn 
+: 1838 5 -7 al
+: 1845 5 -4 les 
+: 1853 5 -4 vor
+: 1861 14 -5 bei 
+: 1879 7 -7 ist
+- 1886
+: 1902 5 13 Nimm 
+: 1909 6 13 mir 
+: 1919 4 10 den 
+: 1925 13 7 A
+: 1942 5 9 tem
+- 1947
+: 1957 6 -3 Doch 
+: 1965 8 2 noch 
+: 1977 3 1 bleib 
+: 1983 3 1 ich 
+: 1990 8 -1 hier
+- 1998 2000
+- 2000
+: 2025 2 3 Der 
+: 2029 2 3 Him
+: 2033 7 1 mel 
+: 2045 5 0 soll 
+: 2053 5 -1 war
+: 2061 1 1 ten
+- 2062
+F 2063 2 -3 War
+F 2067 2 -3 te 
+F 2071 2 -3 mal, 
+F 2076 4 -3 Stopp,
+- 2080
+F 2091 2 -3 Du 
+F 2095 2 -3 kannst 
+F 2099 2 -3 mich 
+F 2103 2 -3 noch 
+F 2107 2 -3 nicht 
+F 2111 4 -3 gehn 
+F 2117 2 -3 las
+F 2121 2 -3 sen,
+- 2123
+F 2131 3 -3 Nimm 
+F 2136 2 -3 dir 
+F 2140 3 -3 doch 
+F 2145 2 -3 lie
+F 2149 2 -3 ber 
+F 2153 2 -3 die
+F 2156 2 -3 se 
+F 2160 2 -3 E
+F 2164 2 -3 mos 
+F 2168 2 -3 die 
+F 2172 2 -3 ihr 
+F 2175 2 -3 Le
+F 2179 2 -3 ben 
+F 2183 4 -3 has
+F 2190 3 -3 sen
+- 2193
+F 2197 2 -3 Ich 
+F 2201 2 -3 bin 
+F 2205 2 -3 noch 
+F 2208 2 -3 lan
+F 2211 2 -3 ge 
+F 2215 2 -3 nicht 
+F 2219 2 -3 fer
+F 2223 2 -3 tig, 
+F 2228 2 -3 es 
+F 2232 2 -3 fängt 
+F 2236 2 -3 doch 
+F 2240 2 -3 ge
+F 2243 2 -3 ra
+F 2246 2 -3 de 
+F 2249 3 -3 an
+- 2252
+F 2260 2 -3 Ich 
+F 2263 2 -3 hab 
+F 2267 2 -3 am 
+F 2271 2 -3 Sack 
+F 2275 3 -3 doch 
+F 2280 2 -3 ge
+F 2284 2 -3 rad’mal 
+F 2288 2 -3 Haa
+F 2291 2 -3 re 
+F 2295 3 -3 dran, 
+F 2302 4 -3 3 
+F 2309 5 -3 Stück!
+- 2314
+F 2323 3 -3 Ich 
+F 2328 2 -3 will 
+F 2332 3 -3 mein’ 
+F 2337 3 -3 Sohn 
+F 2343 2 -3 wach
+F 2347 2 -3 sen 
+F 2351 3 -3 sehn, 
+F 2356 2 -3 ich 
+F 2360 3 -3 will 
+F 2365 2 -3 ’ne 
+F 2369 3 -3 Toch
+F 2374 2 -3 ter
+- 2376
+F 2380 2 -3 Und 
+F 2384 2 -3 dann 
+F 2388 2 -3 nach 
+F 2392 5 -3 9 
+F 2399 2 -3 Mo
+F 2403 2 -3 na
+F 2407 2 -3 ten 
+F 2411 2 -3 von 
+F 2415 2 -3 mir 
+F 2419 2 -3 aus 
+F 2423 6 -3 
+F 2432 2 -3 gleich 
+F 2435 2 -3 noch
+F 2438 4 -3 mal
+- 2442
+F 2452 2 -3 Ich 
+F 2457 2 -3 will 
+F 2462 2 -3 ein 
+F 2466 2 -3 Haus 
+F 2475 2 -3 ’nen 
+F 2479 2 -3 Af
+F 2483 2 -3 fen 
+F 2487 3 -3 und 
+F 2492 2 -3 ein 
+F 2497 3 -3 Pferd
+- 2500
+F 2512 2 -3 Lasst 
+F 2517 2 -3 mich 
+F 2521 2 -3 ma
+F 2525 2 -3 chen, 
+F 2530 2 -3 all 
+F 2534 2 -3 das 
+F 2538 2 -3 werd 
+F 2542 2 -3 ich 
+F 2545 2 -3 schaf
+F 2548 2 -3 fen 
+F 2553 2 -3 und 
+F 2557 2 -3 noch 
+F 2562 2 -3 mehr
+- 2564
+F 2581 2 -3 Ich 
+F 2585 2 -3 will 
+F 2590 3 -3 Kar
+F 2594 2 -3 rie
+F 2598 2 -3 re 
+F 2602 2 -3 ma
+F 2605 3 -3 chen, 
+F 2612 2 -3 ich 
+F 2616 2 -3 will 
+F 2620 2 -3 noch 
+F 2624 3 -3 wei
+F 2629 2 -3 ter 
+F 2633 3 -3 Hoch
+- 2636
+F 2646 2 -3 Ich 
+F 2649 2 -3 will 
+F 2653 2 -3 in 
+F 2656 2 -3 Chi
+F 2660 2 -3 na 
+F 2665 2 -3 mal 
+F 2669 2 -3 ein 
+F 2673 2 -3 Hund 
+F 2678 4 -3 kos
+F 2684 2 -3 ten, 
+F 2689 2 -3 ein
+F 2693 2 -3 fach 
+F 2698 2 -3 so
+- 2700
+F 2709 2 -3 Ich 
+F 2713 2 -3 will 
+F 2718 2 -3 nach 
+F 2722 2 -3 Las 
+F 2728 2 -3 Ve
+F 2732 2 -3 gas, 
+F 2737 2 -3 al
+F 2742 2 -3 les 
+F 2747 2 -3 was 
+F 2750 2 -3 ich 
+F 2753 2 -3 hab 
+F 2756 2 -3 auf 
+F 2759 2 -3 
+F 2762 2 -3 Rot
+- 2764
+F 2769 4 -3 Haus 
+F 2776 3 -3 weg, 
+F 2784 3 -3 Pferd 
+F 2789 3 -3 weg, 
+F 2800 3 -3 Klap
+F 2805 3 -3 pe 
+F 2810 3 -3 zu, 
+F 2816 3 -3 Af
+F 2821 2 -3 fe 
+F 2824 4 -3 tot
+- 2828
+F 2837 2 -3 Ich 
+F 2841 2 -3 will 
+F 2845 2 -3 zur 
+F 2849 2 -3 Ru
+F 2852 2 -3 he 
+F 2855 3 -3 kom
+F 2859 3 -3 men, 
+F 2865 4 -3 kein 
+F 2871 6 -3 Streit, 
+F 2881 3 -3 kein 
+F 2886 4 -3 Stress
+- 2890
+F 2900 2 -3 Vor
+F 2906 2 -3 raus
+F 2910 3 -3 ge
+F 2914 2 -3 setzt 
+F 2918 2 -3 dass 
+F 2922 2 -3 man 
+F 2926 2 -3 mir 
+F 2929 5 -3 noch’n 
+F 2937 2 -3 biss
+F 2942 2 -3 chen 
+F 2946 4 -3 Zeit 
+F 2953 3 -3 lässt
+- 2956
+F 2967 2 -3 Wenn 
+F 2970 2 -3 ich 
+F 2973 2 -3 dann 
+F 2977 3 -3 fer
+F 2981 3 -3 tig 
+F 2986 2 -3 bin 
+F 2992 3 -3 hol 
+F 2998 2 -3 mich 
+F 3001 3 -3 da 
+F 3005 4 -3 raus
+- 3009
+F 3012 3 -3 Doch 
+F 3018 2 -3 bis 
+F 3022 2 -3 da
+F 3025 2 -3 hin 
+F 3029 3 -3 kommst 
+F 3033 2 -3 du 
+F 3037 2 -3 gut 
+F 3041 2 -3 oh
+F 3045 2 -3 ne 
+F 3049 3 -3 mich 
+F 3053 2 -3 aus 
+F 3058 2 -3 
+- 3060
+F 3062 2 -3 Und 
+F 3065 2 -3 ich 
+F 3068 3 -3 sing 
+F 3072 4 -3 "Hal
+F 3077 3 -3 le
+F 3081 3 -3 lu
+F 3086 3 -3 ja"
+- 3089
+: 3112 4 -7 Ich 
+: 3120 4 1 ruf 
+: 3128 4 1 es 
+: 3136 4 1 nach 
+: 3144 6 0 o
+: 3153 4 -2 ben
+- 3157
+: 3176 6 3 Der 
+: 3184 3 1 Him
+: 3190 5 1 mel 
+: 3200 5 -2 soll 
+: 3208 6 -2 war
+: 3216 4 -4 ten
+- 3220
+: 3240 2 -4 Denn 
+: 3243 2 -4 ich 
+: 3246 4 0 hab 
+: 3254 5 -4 noch 
+: 3262 4 1 was 
+: 3270 4 -2 vor
+- 3274 3283
+- 3283
+: 3308 2 3 Der 
+: 3312 2 3 Him
+: 3316 7 1 mel 
+: 3328 5 1 muss 
+: 3336 6 -2 war
+: 3344 4 0 ten
+- 3348
+: 3370 3 -7 Wenn 
+: 3375 5 -7 al
+: 3382 5 -4 les 
+: 3390 5 -4 vor
+: 3398 14 -5 bei 
+: 3416 7 -7 ist
+- 3423
+: 3440 5 13 Nimm 
+: 3447 6 13 mir 
+: 3457 4 10 den 
+: 3463 13 7 A
+: 3480 5 9 tem
+- 3485
+: 3496 6 -4 Doch 
+: 3504 7 3 noch 
+: 3514 6 1 bleib 
+: 3522 3 1 ich 
+: 3528 8 -2 hier
+- 3536 3541
+- 3541
+: 3566 2 3 Der 
+: 3570 2 3 Him
+: 3574 7 1 mel 
+: 3586 5 1 soll 
+: 3594 3 -2 war
+: 3599 3 -4 ten
+- 3602
+: 3617 12 0 O
+: 3634 7 -4 ho 
+: 3651 13 0 O
+: 3667 8 -2 ho
+- 3675 3720
+- 3720
+: 3745 12 0 O
+: 3762 7 -4 ho 
+: 3779 13 0 O
+: 3795 8 -2 ho
+- 3803
+: 3827 5 3 O
+: 3835 5 3 ho
+: 3843 4 0 ho
+: 3850 6 -4 ho
+- 3856
+: 3874 12 0 O
+: 3891 7 -4 ho 
+: 3908 9 0 O
+: 3923 7 -2 ho
+- 3930 3979
+- 3979
+: 4004 12 0 O
+: 4021 7 -4 ho 
+: 4038 10 0 O
+: 4051 8 -2 ho
+- 4059
+: 4082 5 3 O
+: 4090 5 3 ho
+: 4098 4 0 ho
+: 4105 6 -4 ho
+- 4111 4115
+- 4115
+: 4140 4 -7 Ich 
+: 4147 4 1 ruf 
+: 4155 4 1 es 
+: 4163 4 1 nach 
+: 4171 6 0 o
+: 4180 4 -2 ben
+- 4184
+: 4202 5 3 Der 
+: 4210 4 3 Him
+: 4216 5 2 mel 
+: 4224 4 0 soll 
+: 4232 6 -2 war
+: 4240 4 -4 ten
+- 4244
+: 4267 2 -4 Denn 
+: 4270 2 -4 ich 
+: 4273 4 0 hab 
+: 4281 5 -4 noch 
+: 4289 4 1 was 
+: 4297 4 -2 vor
+- 4301 4310
+- 4310
+: 4335 2 3 Der 
+: 4339 2 3 Him
+: 4343 7 2 mel 
+: 4355 5 1 muss 
+: 4363 6 -2 war
+: 4371 4 0 ten
+- 4375
+: 4395 3 5 Wenn 
+: 4400 5 7 al
+: 4407 5 8 les 
+: 4415 5 5 vor
+: 4423 7 5 bei
+: 4432 5 3 ~ 
+: 4441 7 3 ist
+- 4448
+: 4467 5 16 Nimm 
+: 4474 6 14 mir 
+: 4484 4 13 den 
+: 4490 13 13 A
+: 4507 5 14 tem
+- 4512
+: 4523 6 -4 Doch 
+: 4531 7 3 noch 
+: 4541 4 1 bleib 
+: 4547 3 1 ich 
+: 4555 8 -2 hier
+- 4563 4567
+- 4567
+: 4592 2 3 Der 
+: 4596 2 3 Him
+: 4600 7 2 mel 
+: 4612 5 1 soll 
+: 4620 6 -2 war
+: 4628 4 0 ten
+- 4632
+: 4653 4 -7 Ich 
+: 4661 4 1 ruf 
+: 4669 4 1 es 
+: 4677 4 1 nach 
+: 4685 6 0 o
+: 4694 4 -2 ben
+- 4698
+: 4717 6 3 Der 
+: 4725 3 1 Him
+: 4731 5 1 mel 
+: 4741 5 -2 soll 
+: 4749 6 -2 war
+: 4757 4 -4 ten
+- 4761
+: 4779 2 -4 Denn 
+: 4782 2 -4 ich 
+: 4785 4 0 hab 
+: 4793 5 -4 noch 
+: 4801 4 1 was 
+: 4809 4 -2 vor
+- 4813 4825
+- 4825
+: 4850 2 3 Der 
+: 4854 2 3 Him
+: 4858 7 2 mel 
+: 4870 5 0 muss 
+: 4878 6 -2 war
+: 4886 4 0 ten
+- 4890
+: 4908 3 5 Wenn 
+: 4913 5 7 al
+: 4920 5 8 les 
+: 4928 5 5 vor
+: 4936 7 5 bei
+: 4945 5 3 ~ 
+: 4954 7 3 ist
+- 4961
+: 4979 5 16 Nimm 
+: 4986 6 14 mir 
+: 4996 4 13 den 
+: 5002 13 13 A
+: 5019 5 14 tem
+- 5024
+: 5035 6 -4 Doch 
+: 5043 7 3 noch 
+: 5053 6 1 bleib 
+: 5061 3 1 ich 
+: 5067 8 -2 hier
+- 5075 5078
+- 5078
+: 5103 2 3 Der 
+: 5109 2 3 Him
+: 5113 5 2 mel 
+: 5125 5 0 muss 
+: 5133 6 -2 war
+: 5141 4 0 ten
+E

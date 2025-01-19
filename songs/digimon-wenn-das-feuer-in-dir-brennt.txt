@@ -1,0 +1,234 @@
+#ARTIST:Digimon
+#TITLE:Wenn das Feuer in dir brennt
+#CREATOR:reck0ning
+#BPM:338,08
+#YEAR:2004
+#VIDEO:v=PnpSYPaIgHY
+#VIDEOGAP:10
+#GENRE:TV
+#LANGUAGE:German
+#GAP:30331,531471840983
+#ALLKARAOKE_ID:digimon-wenn-das-feuer-in-dir-brennt
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:20.077Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:166
+#ALLKARAOKE_VOLUME:0,86
+#MP3:Digimon - Wenn das Feuer in dir brennt.mp3
+#START:12.0
+#END:104500
+: 23 6 9 Fahr 
+: 31 6 9 bis 
+: 39 4 6 zum 
+: 47 6 11 Ho
+: 55 3 9 ri
+: 59 4 9 zont
+- 63
+: 71 2 6 Im
+: 75 2 7 mer 
+: 79 2 9 wei
+: 83 3 9 ter 
+: 87 5 9 bleib 
+: 95 4 9 nie
+* 103 3 14 mals 
+* 107 4 13 ste
+: 115 4 9 hen
+- 119
+: 127 2 6 Denn 
+: 131 2 7 al
+: 135 2 9 le 
+: 139 7 9 Gren
+: 151 4 2 zen
+- 155 176
+- 176
+: 199 3 14 Kannst 
+: 203 3 16 du 
+: 207 10 17 ü
+: 223 8 16 ber
+: 239 8 14 win
+: 255 8 16 den
+- 263
+: 279 4 9 Das 
+: 287 4 9 Feu
+: 295 4 6 er 
+: 303 6 11 brennt 
+: 311 2 9 in 
+: 315 4 9 dir
+- 319
+: 327 2 6 Und 
+: 331 2 7 du 
+: 335 4 9 kannst 
+: 343 4 9 dein 
+: 351 4 9 Ziel 
+: 359 2 14 schon 
+: 363 6 13 se
+: 371 4 9 hen
+- 375
+: 383 2 6 Denn 
+: 387 2 7 du 
+: 391 3 9 fühlst 
+: 395 6 9 gren
+: 403 2 2 zen
+: 407 4 2 los
+- 411
+: 427 2 14 Du 
+: 431 5 17 kannst 
+: 439 5 17 die 
+: 447 5 16 Ant
+: 455 2 16 wort 
+: 459 5 16 fin
+: 467 10 14 den
+- 477 484
+- 484
+: 507 2 9 Es 
+: 511 5 14 kommt 
+: 519 2 13 der 
+: 523 9 14 Tag
+- 532
+: 539 2 9 An 
+: 543 5 14 dem 
+: 551 2 13 du 
+: 555 9 14 siehst
+- 564
+: 575 6 14 Wie 
+: 583 3 16 die 
+: 587 4 18 gan
+: 595 2 18 ze 
+: 599 2 18 Er
+: 603 2 18 de 
+* 607 6 19 un
+: 615 2 18 ter 
+: 619 6 16 dir 
+: 627 3 9 zer
+: 631 4 9 bricht
+- 635
+: 639 5 14 Du 
+: 647 2 13 hast 
+: 651 8 14 Mut
+- 659
+: 671 5 14 Und 
+: 679 2 13 du 
+: 683 8 14 spürst,
+- 691
+: 703 6 14 Dass 
+: 711 2 16 dein 
+: 715 5 18 Weg 
+: 723 2 18 dich 
+: 727 2 18 nur 
+: 731 2 18 in 
+: 735 5 19 ei
+: 743 2 18 ne 
+: 747 6 16 Rich
+: 755 3 9 tung 
+: 759 4 9 führt.
+- 763
+: 767 2 14 Bis 
+: 771 2 14 in 
+: 775 3 13 das 
+* 779 1 13 Li
+* 781 66 14 cht!
+- 847 848
+- 848
+: 871 2 9 Das 
+: 875 10 9 Feu
+: 887 3 14 er 
+: 891 5 14 in 
+: 899 3 9 dei
+: 903 3 9 nen 
+: 907 8 9 Au
+: 919 3 16 gen 
+: 923 4 16 ist
+- 927
+: 931 2 9 Das 
+: 935 2 9 Sig
+* 939 5 18 nal, 
+* 947 6 19 dass 
+* 955 5 18 du 
+: 963 5 16 ge
+: 971 2 16 wi
+: 975 20 14 nnst
+- 995
+: 1003 1 14 De
+: 1005 2 16 i
+: 1011 3 16 ne 
+: 1015 3 16 Kraft 
+: 1019 3 16 wird 
+: 1023 2 16 ex
+: 1027 6 16 plo
+: 1035 8 14 dier’n
+- 1043
+: 1047 2 14 Wenn 
+: 1051 3 11 der 
+: 1055 2 14 Kampf 
+: 1059 6 14 be
+: 1067 6 14 gi
+: 1075 3 11 n
+: 1079 8 9 nt
+- 1087 1100
+- 1100
+: 1123 3 9 Du 
+: 1127 3 9 wirst 
+: 1131 10 9 wei
+: 1143 2 14 ter 
+: 1147 6 14 bis 
+: 1155 2 9 an 
+: 1159 3 9 die 
+: 1163 10 9 Gren
+: 1175 2 16 zen 
+: 1179 6 16 geh’n
+- 1185
+: 1191 3 9 Und 
+* 1195 5 18 bald 
+* 1203 5 19 kommt 
+* 1211 5 18 der 
+: 1219 5 16 Mo
+: 1227 3 16 me
+: 1231 8 14 nt
+- 1239
+: 1259 6 16 Du 
+: 1267 2 16 bist 
+: 1271 2 16 längst 
+: 1275 2 16 be
+: 1279 2 16 reit, 
+* 1283 2 18 weil 
+* 1287 2 16 in 
+* 1291 8 14 dir 
+: 1303 5 14 das 
+: 1311 3 14 Feu
+: 1315 4 14 er 
+: 1323 6 14 bre
+: 1331 2 11 n
+: 1335 8 9 nt
+- 1343
+: 1363 2 11 Es 
+: 1367 2 14 ist 
+: 1371 3 11 das 
+: 1375 2 14 A
+: 1379 6 14 ben
+: 1387 6 18 teu
+: 1395 12 14 er
+- 1407
+: 1427 2 11 Das 
+: 1431 2 14 Freun
+: 1435 3 11 de 
+: 1439 2 14 nie
+: 1443 5 14 mals 
+: 1451 6 14 tre
+: 1459 2 11 n
+: 1463 8 9 nt
+- 1471 1472
+- 1472
+: 1495 2 14 Denn 
+: 1499 3 11 wir 
+: 1503 2 14 fühlen 
+: 1507 5 14 das 
+: 1515 5 18 Feu
+: 1523 6 14 er
+- 1529 1532
+- 1532
+* 1555 2 11 Das 
+* 1559 2 14 im
+* 1563 3 11 mer 
+* 1567 2 14 in 
+* 1571 4 14 uns 
+* 1579 7 14 brennt
+E

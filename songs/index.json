@@ -2889,16 +2889,18 @@
       "English"
     ],
     "bpm": 279.9,
-    "gap": 12217,
+    "gap": 11398.779206859592,
     "year": "2017",
     "artistOrigin": "US",
+    "lastUpdate": "2025-01-17T05:13:33.573Z",
     "realBpm": 140,
+    "volume": 0.75,
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die",
     "tracks": [
       {
-        "start": 0
+        "start": 19
       }
     ],
     "tracksCount": 1,
@@ -3117,6 +3119,32 @@
     ],
     "tracksCount": 1,
     "search": "ajrworldssmallestviolin",
+    "local": false
+  },
+  {
+    "id": "ak-ausserkontrolle-x-bonez-mc-in-meinem-benz",
+    "title": "In meinem Benz",
+    "artist": "AK AusserKontrolle x Bonez MC",
+    "video": "VSTExzF4I34",
+    "language": [
+      "German"
+    ],
+    "bpm": 310,
+    "gap": 10953.870967741936,
+    "year": "2020",
+    "lastUpdate": "2025-01-19T00:12:19.690Z",
+    "realBpm": 155,
+    "volume": 0.77,
+    "author": "Viktor1234678",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167305",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29164",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "akausserkontrollexbonezmcinmeinembenz",
     "local": false
   },
   {
@@ -6495,6 +6523,33 @@
     ],
     "tracksCount": 1,
     "search": "annierojasmissuenossehacenrealidaddoraemon",
+    "local": false
+  },
+  {
+    "id": "anselmo-ralph-nao-me-toca",
+    "title": "Não Me Toca",
+    "artist": "Anselmo Ralph",
+    "video": "whH2oDg28-k",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 360,
+    "gap": 52893,
+    "year": "2011",
+    "artistOrigin": "AO",
+    "lastUpdate": "2025-01-19T00:12:17.881Z",
+    "realBpm": 180,
+    "previewStart": 97,
+    "previewEnd": 119,
+    "volume": 0.75,
+    "author": "airBN",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anselmoralphnaometoca",
     "local": false
   },
   {
@@ -15997,6 +16052,59 @@
     "local": false
   },
   {
+    "id": "bonez-mc-raf-camora-500-ps",
+    "title": "500 PS",
+    "artist": "BONEZ MC & RAF Camora",
+    "video": "hLWGlq_2qbk",
+    "language": [
+      "German"
+    ],
+    "bpm": 280.93,
+    "gap": 33465.5124052255,
+    "year": "2018",
+    "lastUpdate": "2025-01-19T00:12:19.885Z",
+    "realBpm": 140,
+    "volume": 0.76,
+    "author": "Viktor1234678",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167305",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25557",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bonezmcrafcamora500ps",
+    "local": false
+  },
+  {
+    "id": "bonez-mc-raf-camora-ohne-mein-team",
+    "title": "Ohne mein Team",
+    "artist": "BONEZ MC & RAF Camora",
+    "video": "0aZvBvXyx7M",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 7319.2307692307695,
+    "year": "2016",
+    "lastUpdate": "2025-01-19T00:12:20.079Z",
+    "genre": "Rap",
+    "realBpm": 130,
+    "volume": 0.77,
+    "author": "Viktor1234678",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167305",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28547",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bonezmcrafcamoraohnemeinteam",
+    "local": false
+  },
+  {
     "id": "bonnie-tyler-holding-out-for-a-hero",
     "title": "Holding Out For A Hero",
     "artist": "Bonnie Tyler",
@@ -16992,6 +17100,33 @@
     "local": false
   },
   {
+    "id": "bring-me-the-horizon-drown",
+    "title": "Drown",
+    "artist": "Bring Me The Horizon",
+    "video": "XSoOCHLlyeM",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.96,
+    "gap": 14276.830220239755,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-19T00:12:16.803Z",
+    "realBpm": 143,
+    "volume": 0.78,
+    "author": "Hoanzl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=170950",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28047",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizondrown",
+    "local": false
+  },
+  {
     "id": "bring-me-the-horizon-feat-babymetal-kingslayer",
     "title": "Kingslayer",
     "artist": "Bring Me The Horizon feat. Babymetal",
@@ -17016,6 +17151,33 @@
     ],
     "tracksCount": 1,
     "search": "bringmethehorizonfeatbabymetalkingslayer",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-feat-dani-filth-wonderful-life",
+    "title": "Wonderful Life",
+    "artist": "Bring Me The Horizon feat. Dani Filth",
+    "video": "4hoDwVy6IQ4",
+    "language": [
+      "English"
+    ],
+    "bpm": 346,
+    "gap": 13152.890173410404,
+    "year": "2018",
+    "lastUpdate": "2025-01-19T00:12:16.810Z",
+    "genre": "Alternative Metal",
+    "realBpm": 173,
+    "volume": 0.78,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28445",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonfeatdanifilthwonderfullife",
     "local": false
   },
   {
@@ -17102,6 +17264,33 @@
     "local": false
   },
   {
+    "id": "bring-me-the-horizon-ludens",
+    "title": "Ludens",
+    "artist": "Bring Me The Horizon",
+    "video": "B9wvTuDC-H0",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.78,
+    "gap": 8946.419743725832,
+    "year": "2019",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-19T00:12:16.807Z",
+    "realBpm": 198,
+    "volume": 0.77,
+    "author": "ai-chan",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=45936",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27171",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonludens",
+    "local": false
+  },
+  {
     "id": "bring-me-the-horizon-mantra",
     "title": "Mantra",
     "artist": "Bring Me The Horizon",
@@ -17127,6 +17316,61 @@
     ],
     "tracksCount": 1,
     "search": "bringmethehorizonmantra",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-sleepwalking",
+    "title": "Sleepwalking",
+    "artist": "Bring Me The Horizon",
+    "video": "lir3dzYIhz0",
+    "language": [
+      "English"
+    ],
+    "bpm": 298,
+    "gap": 31663.28859060403,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-19T00:12:17.676Z",
+    "genre": "Metalcore",
+    "realBpm": 149,
+    "volume": 0.74,
+    "author": "krasserdude",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168857",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25871",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonsleepwalking",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-strangers",
+    "title": "sTraNgeRs",
+    "artist": "Bring Me The Horizon",
+    "video": "FsNGxsrcZas",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.9,
+    "gap": 9368.80621422731,
+    "year": "2022",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-19T00:12:16.792Z",
+    "realBpm": 183,
+    "volume": 0.8,
+    "author": "ai-chan",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=45936",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27155",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonstrangers",
     "local": false
   },
   {
@@ -29556,6 +29800,33 @@
     "local": false
   },
   {
+    "id": "digimon-wenn-das-feuer-in-dir-brennt",
+    "title": "Wenn das Feuer in dir brennt",
+    "artist": "Digimon",
+    "video": "PnpSYPaIgHY",
+    "language": [
+      "German"
+    ],
+    "bpm": 338.08,
+    "gap": 30331.531471840983,
+    "year": "2004",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-01-19T00:12:20.077Z",
+    "genre": "TV",
+    "videoGap": 10,
+    "realBpm": 166,
+    "volume": 0.86,
+    "author": "reck0ning",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "digimonwenndasfeuerindirbrennt",
+    "local": false
+  },
+  {
     "id": "dillaz-colas",
     "title": "Colãs",
     "artist": "Dillaz",
@@ -34416,12 +34687,12 @@
       "English"
     ],
     "bpm": 232.2,
-    "gap": 19180.007751937985,
+    "gap": 19230.007751937985,
     "year": "2017",
     "artistOrigin": "UK",
-    "lastUpdate": "2024-05-08T16:42:17.705Z",
+    "lastUpdate": "2025-01-17T05:15:37.865Z",
     "genre": "Pop",
-    "videoGap": 15,
+    "videoGap": 5,
     "realBpm": 97,
     "previewStart": 80,
     "previewEnd": 135,
@@ -35404,6 +35675,31 @@
     ],
     "tracksCount": 1,
     "search": "elenifoureirafuego",
+    "local": false
+  },
+  {
+    "id": "elisa-luce-tramonti-a-nord-est",
+    "title": "Luce (Tramonti a Nord Est)",
+    "artist": "Elisa",
+    "video": "tPwqOWK6EFw",
+    "language": [
+      ""
+    ],
+    "bpm": 178.1,
+    "gap": 19469.331836047164,
+    "year": "2000",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:17.884Z",
+    "realBpm": 111,
+    "previewStart": 134.279,
+    "volume": 0.71,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elisalucetramontianordest",
     "local": false
   },
   {
@@ -48033,6 +48329,34 @@
     "local": false
   },
   {
+    "id": "isabel-aaiun-potra-salvaje",
+    "title": "Potra salvaje",
+    "artist": "Isabel Aaiún",
+    "video": "CZ-zGADsFSw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 266,
+    "gap": 8524.962406015038,
+    "year": "2021",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-01-19T00:12:20.251Z",
+    "genre": "POP",
+    "realBpm": 1,
+    "previewStart": 50,
+    "previewEnd": 79,
+    "volume": 0.76,
+    "author": "Isabel Aiún",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "isabelaaiunpotrasalvaje",
+    "local": false
+  },
+  {
     "id": "israel-kamakawiwoole-somewhere-over-the-rainbow-what-a-wonderful-world",
     "title": "Somewhere Over The Rainbow / What A Wonderful World",
     "artist": "Israel Kamakawiwo’ole",
@@ -56577,6 +56901,31 @@
     "local": false
   },
   {
+    "id": "klaus-lage-band-1000-und-1-nacht-zoom",
+    "title": "1000 und 1 Nacht (Zoom!)",
+    "artist": "Klaus Lage Band",
+    "video": "Ug3HFmW8AVA",
+    "language": [
+      "German"
+    ],
+    "bpm": 249.2,
+    "gap": 2226.725521669342,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.752Z",
+    "realBpm": 125,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "klauslageband1000und1nachtzoom",
+    "local": false
+  },
+  {
     "id": "klocuch-beznadzieja-w-chmurny-dzien",
     "title": "Beznadzieja w chmurny dzień",
     "artist": "Klocuch",
@@ -60449,11 +60798,11 @@
     "language": [
       "English"
     ],
-    "bpm": 378.07,
-    "gap": 8628.120189382918,
+    "bpm": 378.47,
+    "gap": 8578.120189382918,
     "year": "2018",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-05-14T12:53:14.678Z",
+    "lastUpdate": "2025-01-17T05:15:05.053Z",
     "genre": "None",
     "realBpm": 110,
     "volume": 0.7,
@@ -65722,6 +66071,31 @@
     ],
     "tracksCount": 1,
     "search": "manfredmanndowahdiddydiddy",
+    "local": false
+  },
+  {
+    "id": "mango-oro",
+    "title": "Oro",
+    "artist": "Mango",
+    "video": "2jrpW2jV9Po",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 99.75,
+    "gap": 10227,
+    "year": "2001",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:18.284Z",
+    "realBpm": 99,
+    "previewStart": 87.977,
+    "volume": 0.68,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mangooro",
     "local": false
   },
   {
@@ -71777,6 +72151,30 @@
     "local": false
   },
   {
+    "id": "mina-portati-via",
+    "title": "Portati Via",
+    "artist": "Mina",
+    "video": "SLEKIJuLR-k",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 240,
+    "gap": 150,
+    "year": "2006",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:18.886Z",
+    "realBpm": 120,
+    "volume": 0.72,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "minaportativia",
+    "local": false
+  },
+  {
     "id": "minami-kawaki-wo-ameku",
     "title": "Kawaki wo Ameku",
     "artist": "Minami",
@@ -74799,6 +75197,57 @@
     "local": false
   },
   {
+    "id": "neffa-lontano-dal-tuo-sole",
+    "title": "Lontano dal tuo sole",
+    "artist": "Neffa",
+    "video": "EyOQPIsKQPI",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 91.2,
+    "gap": 33310.98901098901,
+    "year": "2008",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:19.297Z",
+    "videoGap": 12,
+    "realBpm": 91,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "neffalontanodaltuosole",
+    "local": false
+  },
+  {
+    "id": "neffa-prima-di-andare-via",
+    "title": "prima di andare via",
+    "artist": "neffa",
+    "video": "dOAuNydr7RA",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 111,
+    "gap": 29834.054054054053,
+    "year": "2010",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:19.100Z",
+    "videoGap": 10,
+    "realBpm": 111,
+    "previewStart": 34.177,
+    "volume": 0.71,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "neffaprimadiandarevia",
+    "local": false
+  },
+  {
     "id": "neil-young-heart-of-gold",
     "title": "Heart Of Gold",
     "artist": "Neil Young",
@@ -77345,6 +77794,30 @@
     ],
     "tracksCount": 1,
     "search": "nocnykochanektribjut",
+    "local": false
+  },
+  {
+    "id": "noemi-sono-solo-parole",
+    "title": "Sono solo parole",
+    "artist": "Noemi",
+    "video": "HPVSB8kOWrM",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 131.79,
+    "gap": 14145.643068518097,
+    "year": "2001",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:18.683Z",
+    "realBpm": 130,
+    "volume": 0.76,
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "noemisonosoloparole",
     "local": false
   },
   {
@@ -80120,6 +80593,31 @@
     "local": false
   },
   {
+    "id": "papaplatte-bis-zu-ihr",
+    "title": "Bis zu ihr",
+    "artist": "Papaplatte",
+    "video": "L75srT6F9BM",
+    "language": [
+      "German"
+    ],
+    "bpm": 393.75,
+    "gap": 21857.52380952381,
+    "year": "2021",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.956Z",
+    "realBpm": 113,
+    "volume": 0.71,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "papaplattebiszuihr",
+    "local": false
+  },
+  {
     "id": "papas-da-lingua-eu-sei",
     "title": "Eu sei",
     "artist": "Papas da Língua",
@@ -80705,6 +81203,32 @@
     ],
     "tracksCount": 1,
     "search": "patricioreyysusredonditosdericotatareafina",
+    "local": false
+  },
+  {
+    "id": "patty-pravo-pazza-idea",
+    "title": "Pazza idea",
+    "artist": "Patty Pravo",
+    "video": "nVPQym8EoOM",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 74.65,
+    "gap": 14900,
+    "year": "1999",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:18.488Z",
+    "videoGap": 1,
+    "realBpm": 113,
+    "previewStart": 68.57,
+    "volume": 0.78,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pattypravopazzaidea",
     "local": false
   },
   {
@@ -87059,8 +87583,10 @@
     "gap": 39446.739130434784,
     "year": "2012",
     "artistOrigin": "BB",
+    "lastUpdate": "2025-01-17T05:12:45.303Z",
     "genre": "Pop",
     "realBpm": 92,
+    "volume": 0.75,
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds",
@@ -89639,6 +90165,55 @@
     "local": false
   },
   {
+    "id": "sal-da-vinci-rossetto-e-caffe",
+    "title": "Rossetto e caffè",
+    "artist": "Sal Da Vinci",
+    "video": "MnnUUYkiMqA",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 384,
+    "gap": 9654.375,
+    "year": "2024",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-01-19T00:12:19.493Z",
+    "realBpm": 96,
+    "volume": 0.75,
+    "author": "Sal Da Vinci",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "saldavincirossettoecaffe",
+    "local": false
+  },
+  {
+    "id": "saltatio-mortis-sasha-subway-to-sally-kaufmann-und-maid",
+    "title": "Kaufmann und Maid",
+    "artist": "Saltatio Mortis, Sasha, Subway to Sally",
+    "video": "K4T5NEiyK5g",
+    "language": [
+      "German"
+    ],
+    "bpm": 247.94,
+    "gap": 15379.525369040897,
+    "year": "2020",
+    "lastUpdate": "2025-01-19T00:12:28.552Z",
+    "realBpm": 124,
+    "volume": 0.99,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "saltatiomortissashasubwaytosallykaufmannundmaid",
+    "local": false
+  },
+  {
     "id": "salvador-sobral-amar-pelos-dois",
     "title": "Amar pelos dois",
     "artist": "Salvador Sobral",
@@ -90414,6 +90989,155 @@
     ],
     "tracksCount": 1,
     "search": "scarsonbroadwayworldlonggone",
+    "local": false
+  },
+  {
+    "id": "schandmaul-dein-anblick",
+    "title": "Dein Anblick",
+    "artist": "Schandmaul",
+    "video": "MIydkUxnWGs",
+    "language": [
+      "German"
+    ],
+    "bpm": 253.4,
+    "gap": 29443.68587213891,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.143Z",
+    "realBpm": 98,
+    "volume": 0.82,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmauldeinanblick",
+    "local": false
+  },
+  {
+    "id": "schandmaul-der-wandersmann",
+    "title": "Der Wandersmann",
+    "artist": "Schandmaul",
+    "video": "8WA10Bnq2Xw",
+    "language": [
+      "German"
+    ],
+    "bpm": 303.95,
+    "gap": 16532.995558480012,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:20.447Z",
+    "realBpm": 112,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmaulderwandersmann",
+    "local": false
+  },
+  {
+    "id": "schandmaul-orchester-der-clown",
+    "title": "Der Clown",
+    "artist": "Schandmaul & Orchester",
+    "video": "QAb9obXQdcs",
+    "language": [
+      "German"
+    ],
+    "bpm": 302.4,
+    "gap": 93907.93650793651,
+    "year": "2005",
+    "lastUpdate": "2025-01-19T00:12:28.144Z",
+    "realBpm": 77,
+    "volume": 0.78,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmaulorchesterderclown",
+    "local": false
+  },
+  {
+    "id": "schandmaul-teufelsweib",
+    "title": "Teufelsweib",
+    "artist": "Schandmaul",
+    "video": "qswWv_kuS7I",
+    "language": [
+      "German"
+    ],
+    "bpm": 235.38,
+    "gap": 33780.37216416008,
+    "year": "1999",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.141Z",
+    "realBpm": 129,
+    "volume": 0.76,
+    "author": "Nudelsuppe",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmaulteufelsweib",
+    "local": false
+  },
+  {
+    "id": "schandmaul-walpurgisnacht",
+    "title": "Walpurgisnacht",
+    "artist": "Schandmaul",
+    "video": "xYubLwVzFZo",
+    "language": [
+      "German"
+    ],
+    "bpm": 480.4,
+    "gap": 16310.832639467111,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.342Z",
+    "realBpm": 122,
+    "volume": 0.73,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmaulwalpurgisnacht",
+    "local": false
+  },
+  {
+    "id": "schandmaul-willst-du",
+    "title": "Willst du?",
+    "artist": "Schandmaul",
+    "video": "Qq6cpQqx6bg",
+    "language": [
+      "German"
+    ],
+    "bpm": 280,
+    "gap": 42572.142857142855,
+    "year": "1999",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.341Z",
+    "realBpm": 89,
+    "volume": 0.8,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "schandmaulwillstdu",
     "local": false
   },
   {
@@ -93298,6 +94022,81 @@
     "local": false
   },
   {
+    "id": "sido-augen-auf",
+    "title": "Augen auf",
+    "artist": "Sido",
+    "video": "i5-NnEGU29I",
+    "language": [
+      "German"
+    ],
+    "bpm": 320.05,
+    "gap": -63.61818465864701,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:29.358Z",
+    "realBpm": 80,
+    "volume": 0.73,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidoaugenauf",
+    "local": false
+  },
+  {
+    "id": "sido-bilder-im-kopf",
+    "title": "Bilder im Kopf",
+    "artist": "Sido",
+    "video": "RveIJFR7LV4",
+    "language": [
+      "German"
+    ],
+    "bpm": 360,
+    "gap": 9990,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:29.355Z",
+    "realBpm": 90,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidobilderimkopf",
+    "local": false
+  },
+  {
+    "id": "sido-feat-adel-tawil-der-himmel-soll-warten",
+    "title": "Der Himmel soll warten",
+    "artist": "Sido feat. Adel Tawil",
+    "video": "VBInnGswRes",
+    "language": [
+      "German"
+    ],
+    "bpm": 376.75,
+    "gap": 10204.64499004645,
+    "year": "2010",
+    "lastUpdate": "2025-01-19T00:12:29.152Z",
+    "genre": "Hip-Hop",
+    "realBpm": 94,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidofeatadeltawilderhimmelsollwarten",
+    "local": false
+  },
+  {
     "id": "sido-feat-andreas-bourani-astronaut",
     "title": "Astronaut",
     "artist": "Sido feat. Andreas Bourani",
@@ -93322,6 +94121,82 @@
     ],
     "tracksCount": 1,
     "search": "sidofeatandreasbouraniastronaut",
+    "local": false
+  },
+  {
+    "id": "sido-mein-block",
+    "title": "Mein Block",
+    "artist": "Sido",
+    "video": "6jRQOuiQhQA",
+    "language": [
+      "German"
+    ],
+    "bpm": 360,
+    "gap": 4250,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:28.344Z",
+    "realBpm": 90,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidomeinblock",
+    "local": false
+  },
+  {
+    "id": "sido-schlechtes-vorbild",
+    "title": "Schlechtes Vorbild",
+    "artist": "Sido",
+    "video": "9jjvlT78pU4",
+    "language": [
+      "German"
+    ],
+    "bpm": 388,
+    "gap": -22.917525773195962,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:29.353Z",
+    "realBpm": 97,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidoschlechtesvorbild",
+    "local": false
+  },
+  {
+    "id": "sido-tausend-tattoos",
+    "title": "Tausend Tattoos",
+    "artist": "Sido",
+    "video": "O-aUMnnbIX0",
+    "language": [
+      "German"
+    ],
+    "bpm": 364,
+    "gap": 420.9890109890109,
+    "year": "2018",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:29.351Z",
+    "genre": "Hip-Hop, Rap",
+    "realBpm": 92,
+    "volume": 0.77,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidotausendtattoos",
     "local": false
   },
   {
@@ -93876,6 +94751,30 @@
     ],
     "tracksCount": 1,
     "search": "singtaronegertonimstillstanding",
+    "local": false
+  },
+  {
+    "id": "sira-badchieff-bausa-9-bis-9",
+    "title": "9 bis 9",
+    "artist": "SIRA, badchieff, Bausa",
+    "video": "Air9tGk6wFM",
+    "language": [
+      "German"
+    ],
+    "bpm": 147.04,
+    "gap": -98.03917301414583,
+    "year": "203",
+    "lastUpdate": "2025-01-19T00:12:29.360Z",
+    "genre": "Hip-Hop",
+    "realBpm": 128,
+    "volume": 0.8,
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sirabadchieffbausa9bis9",
     "local": false
   },
   {
@@ -98298,6 +99197,29 @@
     ],
     "tracksCount": 1,
     "search": "taiocruzworldinourhands",
+    "local": false
+  },
+  {
+    "id": "takagi-ketra-tommaso-paradiso-elisa-da-sola-in-the-night",
+    "title": "Da sola In the night",
+    "artist": "Takagi & Ketra, Tommaso Paradiso, Elisa",
+    "video": "cxR1nHGaNiI",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 108,
+    "gap": 18027.777777777777,
+    "year": "2018",
+    "lastUpdate": "2025-01-19T00:12:18.087Z",
+    "realBpm": 111,
+    "volume": 0.78,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "takagiketratommasoparadisoelisadasolainthenight",
     "local": false
   },
   {
@@ -111633,6 +112555,32 @@
     ],
     "tracksCount": 1,
     "search": "wojciechbujoczekkrolszamanow",
+    "local": false
+  },
+  {
+    "id": "wolfgang-petry-wahnsinn",
+    "title": "Wahnsinn",
+    "artist": "Wolfgang Petry",
+    "video": "8WQFqRO3Xzg",
+    "language": [
+      "German"
+    ],
+    "bpm": 266,
+    "gap": 13100.962406015038,
+    "year": "1983",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-19T00:12:17.678Z",
+    "genre": "Pop",
+    "realBpm": 136,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wolfgangpetrywahnsinn",
     "local": false
   },
   {

@@ -1,0 +1,384 @@
+#ARTIST:Bring Me The Horizon
+#TITLE:Sleepwalking
+#CREATOR:krasserdude
+#BPM:298
+#YEAR:2013
+#VIDEO:v=lir3dzYIhz0
+#GENRE:Metalcore
+#LANGUAGE:English
+#GAP:31663,28859060403
+#ALLKARAOKE_ID:bring-me-the-horizon-sleepwalking
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:17.676Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168857
+#ALLKARAOKE_REALBPM:149
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25871
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Bring Me The Horizon - Sleepwalking.mp3
+: 20 5 9 My 
+: 28 5 9 se
+: 36 10 9 crets 
+: 53 2 5 are 
+: 57 7 7 bur
+: 66 2 7 ning 
+: 70 2 9 a 
+: 74 5 7 hole 
+: 81 3 5 through 
+: 85 2 9 my 
+: 89 5 7 heart
+- 94
+: 97 3 5 And 
+: 101 3 9 my 
+: 105 5 7 bones 
+: 113 2 5 catch 
+: 117 2 9 a 
+: 122 5 7 fe
+: 129 7 5 ver
+- 136
+: 150 2 9 When 
+: 153 2 9 it 
+: 156 6 9 cuts 
+: 164 4 9 you 
+: 169 5 9 up 
+: 177 6 9 this 
+: 186 11 9 deep
+- 197
+: 203 2 7 It’s 
+: 206 2 9 hard 
+: 210 2 9 to 
+: 213 3 9 find 
+: 217 2 10 a 
+: 221 6 9 way 
+: 229 6 7 to 
+: 238 2 9 breathe
+: 242 10 10 ~
+: 253 12 9 ~
+- 265
+: 270 12 9 Your 
+: 285 5 9 eyes 
+: 293 5 9 are 
+: 301 2 9 swa
+: 305 2 9 llo
+: 309 5 9 wing 
+: 317 12 9 me
+- 329
+: 333 2 9 Mi
+: 336 3 9 rrors 
+: 340 2 9 start 
+: 344 2 10 to 
+: 349 5 9 whis
+: 356 6 5 per, 
+: 365 2 9 sha
+: 369 2 9 dows 
+: 373 2 9 start 
+: 376 7 7 to 
+: 385 7 9 sing
+- 392
+: 396 14 9 My 
+: 413 13 9 skin’s 
+: 429 3 9 smo
+: 433 2 9 the
+: 436 4 9 ring 
+: 444 11 9 me
+- 455
+: 462 2 9 Help 
+: 466 2 9 me 
+: 469 1 9 find 
+: 473 1 10 a 
+: 477 4 9 way 
+: 484 6 7 to 
+: 493 2 9 breathe
+: 497 11 10 ~
+: 509 9 9 ~
+- 518
+: 527 7 9 Time 
+: 538 7 9 stood 
+: 548 19 9 still 
+: 582 4 9 the 
+: 590 9 9 way 
+: 603 8 5 it 
+: 614 10 9 did 
+: 627 4 10 be
+: 636 15 9 fore
+- 651
+: 662 4 9 It’s 
+: 668 4 9 like 
+: 676 7 9 I’m 
+: 684 10 12 sleep
+: 697 10 10 wal
+: 709 3 10 king
+: 716 26 9 ~
+- 742 762
+- 762
+: 782 10 9 Fell 
+: 793 7 9 in
+: 805 20 9 to 
+: 838 3 9 a
+: 845 10 9 no
+: 857 9 5 ther 
+: 869 9 9 hole 
+: 882 6 10 a
+: 891 15 9 gain
+- 906
+: 917 3 9 It’s 
+: 924 5 9 like 
+: 931 6 9 I’m 
+: 941 10 12 sleep
+: 954 9 10 wal
+: 964 2 10 king
+: 971 30 9 ~
+- 1001 1006
+- 1006
+F 1026 2 5 I’m 
+F 1029 3 5 at 
+F 1033 2 5 the 
+F 1037 3 5 edge 
+F 1043 6 5 of 
+F 1052 6 5 the 
+F 1061 9 5 world
+- 1070
+F 1090 2 5 Where 
+F 1093 3 5 do 
+F 1097 1 5 I 
+F 1100 4 7 go 
+F 1106 3 7 from 
+F 1112 7 7 here, 
+F 1126 2 7 do 
+F 1129 2 5 I 
+F 1132 4 7 dis
+F 1138 2 7 a
+F 1145 10 7 ppear?
+- 1155
+F 1164 6 5 Edge 
+F 1172 6 5 of 
+F 1180 6 5 the 
+F 1189 21 5 world
+- 1210
+F 1221 2 5 Should 
+F 1225 2 5 I 
+F 1229 3 5 sink 
+F 1234 3 5 or 
+F 1240 8 5 swim 
+F 1256 2 5 or 
+F 1260 5 5 sim
+F 1267 2 5 ply 
+F 1271 3 5 dis
+F 1275 2 5 a
+F 1280 7 5 ppear?
+- 1287
+: 1292 12 9 Your 
+: 1309 6 9 eyes 
+: 1317 5 9 are 
+: 1326 2 9 swa
+: 1330 2 9 llo
+: 1333 5 9 wing 
+: 1341 12 9 me
+- 1353
+: 1358 2 9 Mi
+: 1361 2 9 rrors 
+: 1365 2 9 start 
+: 1369 2 10 to 
+: 1373 4 9 whis
+: 1380 6 5 per, 
+: 1389 2 9 sha
+: 1393 2 9 dows 
+: 1397 2 9 start 
+: 1401 6 7 to 
+: 1410 8 9 sing
+- 1418
+: 1421 12 9 My 
+: 1437 12 9 skin’s 
+: 1453 2 9 smo
+: 1457 1 9 the
+: 1460 6 9 ring 
+: 1469 12 9 me
+- 1481
+: 1486 2 9 Help 
+: 1489 2 9 me 
+: 1493 2 9 find 
+: 1496 2 10 a 
+: 1500 6 9 way 
+: 1507 6 5 to 
+: 1516 2 9 breathe
+: 1520 7 10 ~~, 
+: 1532 2 9 sing 
+: 1536 6 9 it
+- 1542
+: 1550 9 9 Time 
+: 1561 6 9 stood 
+: 1572 23 9 still 
+: 1606 4 9 the 
+: 1613 8 9 way 
+: 1625 9 7 it 
+: 1637 10 9 did 
+: 1650 5 10 be
+: 1660 13 9 fore
+- 1673
+: 1685 5 9 It’s 
+: 1692 6 9 like 
+: 1700 5 9 I’m 
+: 1709 9 12 sleep
+: 1721 9 10 wal
+: 1733 5 10 king
+: 1740 17 9 ~
+- 1757 1787
+- 1787
+: 1807 8 9 Fell 
+: 1818 8 9 in
+: 1828 22 9 to 
+: 1861 5 9 a
+: 1869 9 9 no
+: 1881 8 5 ther 
+: 1893 9 9 hole 
+: 1908 5 10 a
+: 1916 10 9 gain
+- 1926
+: 1941 5 9 It’s 
+: 1949 5 9 like 
+: 1957 5 9 I’m 
+: 1965 10 12 sleep
+: 1978 8 10 wal
+: 1989 3 10 king
+: 1994 21 9 ~
+- 2015 2033
+- 2033
+F 2053 4 9 Wake 
+F 2060 18 9 up
+- 2078
+F 2094 4 9 Take 
+F 2101 4 9 my 
+F 2109 5 9 hand 
+F 2117 9 9 and 
+F 2130 2 5 give 
+F 2133 2 7 me 
+F 2136 2 9 a 
+F 2141 5 9 rea
+F 2147 2 9 son 
+F 2152 3 7 to 
+F 2156 7 9 start 
+F 2165 2 7 a
+F 2168 9 9 gain
+- 2177
+F 2181 5 9 Wake 
+F 2189 12 9 up
+- 2201
+F 2221 4 9 Pull 
+F 2228 3 9 me 
+F 2233 4 9 out 
+F 2241 10 9 and 
+F 2257 3 5 give 
+F 2261 2 7 me 
+F 2264 2 9 a 
+F 2268 4 9 rea
+F 2274 3 9 son 
+F 2280 3 7 to 
+F 2285 14 9 start 
+F 2309 3 9 a
+F 2316 7 9 gain
+- 2323 2408
+- 2408
+: 2428 6 7 Time 
+: 2436 13 9 stands 
+: 2454 11 9 still
+- 2465 2535
+- 2535
+: 2555 4 7 Time 
+: 2566 13 9 stands 
+: 2586 22 9 still
+- 2608 2808
+- 2808
+: 2828 13 9 Your 
+: 2846 5 9 eyes 
+: 2853 6 9 are 
+: 2861 2 9 swa
+: 2865 1 9 llo
+: 2869 5 9 wing 
+: 2877 7 9 me
+- 2884
+: 2893 3 9 Mi
+: 2897 2 9 rrors 
+: 2901 2 9 start 
+: 2905 2 10 to 
+: 2909 5 9 whis
+: 2916 5 5 per, 
+: 2924 3 9 sha
+: 2928 2 9 dows 
+: 2932 2 9 start 
+: 2936 6 9 to 
+: 2944 11 9 sing
+- 2955
+: 2958 11 9 My 
+: 2973 10 9 skin 
+: 2985 2 9 is 
+: 2989 3 9 smo
+: 2993 1 9 the
+: 2997 3 9 ring
+: 3001 2 10 ~ 
+: 3005 10 9 me
+- 3015
+: 3022 2 9 Help 
+: 3025 2 9 me 
+: 3029 2 9 find 
+: 3033 2 10 a 
+: 3037 4 9 way 
+: 3044 5 7 to 
+: 3053 1 9 breathe
+: 3056 10 10 ~
+: 3068 7 9 ~
+- 3075
+: 3086 7 9 Time 
+: 3097 6 9 stood 
+: 3108 22 9 still 
+: 3141 5 9 the 
+: 3149 9 9 way 
+: 3163 7 5 it 
+: 3173 10 9 did 
+: 3186 6 10 be
+: 3196 14 9 fore
+- 3210
+: 3221 5 9 It’s 
+: 3229 5 9 like 
+: 3236 5 9 I’m 
+: 3245 10 12 sleep
+: 3257 10 10 wal
+: 3269 3 10 king
+: 3274 34 9 ~
+- 3308 3321
+- 3321
+: 3341 10 9 Fell 
+: 3354 8 9 in
+: 3366 19 9 to 
+: 3397 5 9 a
+: 3405 10 9 no
+: 3418 8 5 ther 
+: 3429 11 9 hole 
+: 3443 7 10 a
+: 3453 12 9 gain
+- 3465
+: 3479 4 9 It’s 
+: 3485 4 9 like 
+: 3492 5 9 I’m 
+: 3501 10 12 sleep
+: 3513 9 10 wal
+: 3524 3 10 king
+: 3532 30 9 ~
+- 3562 3707
+- 3707
+: 3727 8 9 Time 
+: 3738 8 9 stood 
+: 3749 18 9 still 
+: 3782 6 9 the 
+: 3790 9 9 way 
+: 3801 9 5 it 
+: 3813 11 9 did 
+: 3826 5 10 be
+: 3837 10 9 fore
+- 3847
+: 3862 4 9 It’s 
+: 3869 4 9 like 
+: 3876 5 9 I’m 
+: 3885 10 12 sleep
+: 3898 10 10 wal
+: 3910 2 10 king
+: 3917 24 9 ~
+E

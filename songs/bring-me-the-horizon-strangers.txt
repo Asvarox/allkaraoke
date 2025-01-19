@@ -1,0 +1,514 @@
+#ARTIST:Bring Me The Horizon
+#TITLE:sTraNgeRs
+#CREATOR:ai-chan
+#BPM:366,9
+#YEAR:2022
+#VIDEO:v=FsNGxsrcZas
+#LANGUAGE:English
+#GAP:9368,80621422731
+#ALLKARAOKE_ID:bring-me-the-horizon-strangers
+#ALLKARAOKE_LASTUPDATE:2025-01-19T00:12:16.792Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=45936
+#ALLKARAOKE_REALBPM:183
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27155
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Bring Me The Horizon - sTraNgeRs.mp3
+#COVER:Bring Me The Horizon - sTraNgeRs [CO].jpg
+#BACKGROUND:Bring Me The Horizon - sTraNgeRs [BG].jpg
+: 24 4 0 May
+: 31 3 0 be 
+: 39 4 7 I’ll 
+: 46 4 7 just 
+: 53 4 7 be 
+: 61 6 7 fucked 
+: 72 3 7 up 
+: 79 5 7 for
+: 85 4 7 e
+: 92 11 5 ver
+- 103
+: 126 3 0 Should 
+: 130 2 0 have 
+: 134 7 7 fi
+: 143 3 7 gured 
+: 150 4 7 my
+: 157 5 7 self 
+: 167 4 9 out 
+: 175 4 5 by 
+: 183 11 5 now
+- 194
+: 215 2 0 And 
+: 219 5 0 I 
+: 231 6 7 don’t 
+: 239 4 7 want 
+: 245 3 7 to 
+: 254 6 7 tear 
+: 263 2 7 my
+: 267 8 7 self 
+: 279 4 7 o~
+: 286 9 5 pen 
+: 298 8 0 no
+- 306
+: 319 2 0 But 
+: 322 2 0 it’s 
+: 327 6 7 hard 
+: 335 2 7 to 
+: 339 7 7 care 
+: 351 7 7 when 
+: 359 3 5 you 
+: 364 8 5 bleed 
+: 374 20 9 out
+- 394
+: 398 6 5 So 
+: 406 6 7 won’t 
+: 415 5 5 you 
+: 424 5 9 break 
+: 431 3 7 me 
+: 436 9 5 down, 
+: 447 5 9 break 
+: 454 3 7 me 
+: 458 8 5 down
+- 466
+: 472 4 9 Make 
+: 480 4 9 me 
+: 488 3 9 get 
+: 495 3 9 bett
+: 501 10 7 ~er
+- 511
+: 518 4 9 I 
+: 526 5 7 con
+: 533 6 5 fess 
+: 544 4 9 I’m 
+: 550 2 7 a 
+: 555 8 5 mess, 
+: 567 5 9 some 
+: 576 5 9 kind 
+: 584 6 9 of 
+: 592 3 9 e
+: 597 5 7 ~rror
+- 602
+: 606 3 7 Well, 
+: 616 10 0 may
+: 628 10 5 ~be 
+: 641 6 7 I 
+: 652 8 9 was 
+: 665 7 0 des
+: 676 7 5 tined 
+: 688 6 7 to 
+: 696 5 7 dis
+: 704 5 7 a
+: 713 10 7 pe
+: 726 20 5 ~ar
+- 746
+: 760 5 7 We’re 
+: 768 6 7 just 
+: 777 4 7 a 
+: 784 6 7 room 
+: 793 5 7 full 
+: 800 3 7 of 
+: 807 16 7 stra
+: 825 3 5 ~n
+: 830 17 5 gers
+- 847
+: 856 5 9 Look
+: 863 5 9 ing 
+: 872 2 9 for 
+: 880 5 9 some
+: 888 3 7 thing 
+: 893 3 5 to 
+: 904 16 7 sa
+: 922 4 5 ~ve 
+: 928 12 5 us
+- 940
+: 952 7 9 A
+: 961 4 9 lone 
+: 968 8 9 to
+: 978 6 9 ge
+: 985 2 7 ther 
+: 989 7 5 we’re 
+: 1000 8 9 dy
+: 1010 3 5 ~ing 
+: 1017 3 7 to 
+: 1024 6 9 live
+- 1030
+: 1035 3 5 And 
+: 1041 5 7 we’re 
+: 1048 6 9 li
+: 1056 6 10 ving 
+: 1065 3 9 to 
+: 1070 15 9 die
+- 1085
+: 1096 3 2 Dy
+: 1101 2 5 ing 
+: 1104 2 2 to 
+: 1108 9 9 live, 
+: 1120 3 2 li
+: 1125 2 5 ving 
+: 1129 2 2 to 
+: 1133 9 9 die
+- 1142
+: 1144 6 7 We’re 
+: 1153 5 7 just 
+: 1163 4 7 a 
+: 1170 5 7 room 
+: 1178 5 7 full 
+: 1186 3 7 of 
+: 1192 16 7 stra
+: 1210 5 5 ~n
+: 1217 21 5 gers
+- 1238
+F 1242 37 0 (Strangers, 
+F 1289 39 0 strangers, 
+F 1336 36 0 strangers)
+- 1372
+: 1379 2 0 Well, 
+: 1382 2 0 I 
+: 1386 5 7 guess 
+: 1393 3 7 my 
+: 1398 5 7 guar
+: 1405 3 7 dian 
+: 1410 6 7 an
+: 1417 2 7 gel 
+: 1421 7 7 missed 
+: 1430 2 7 the 
+: 1434 5 7 me
+: 1441 14 5 mo
+- 1455
+: 1475 2 0 ’Cause 
+: 1478 2 0 we’re 
+: 1482 6 7 walk
+: 1490 4 7 ing 
+: 1496 6 7 on 
+: 1506 6 9 ra
+: 1513 4 5 zors 
+: 1523 2 5 a
+: 1526 13 5 gain
+- 1539 1545
+- 1545
+: 1569 2 0 And 
+: 1574 2 0 we 
+: 1579 7 7 swore 
+: 1588 2 7 to 
+: 1592 4 7 God
+- 1596
+: 1599 2 7 We’d 
+: 1603 4 7 ne
+: 1609 2 7 ver 
+: 1613 6 7 let 
+: 1621 3 7 this 
+: 1626 6 7 hap
+: 1634 8 5 pe
+: 1644 3 0 ~n 
+: 1649 8 0 no
+- 1657 1659
+- 1659
+: 1683 2 0 We’ve 
+: 1687 5 9 dragged 
+: 1694 3 7 our
+: 1699 6 9 selves 
+: 1706 2 7 through 
+: 1710 7 9 hell
+- 1717
+: 1719 2 7 And 
+: 1724 5 9 we’ll 
+: 1732 3 7 be 
+: 1737 5 9 damned 
+: 1745 2 7 if 
+: 1749 4 9 we 
+: 1755 4 9 go 
+: 1762 4 9 back
+- 1766
+: 1771 4 9 Break 
+: 1777 3 7 me 
+: 1783 8 5 down, 
+: 1795 6 9 break 
+: 1803 3 7 me 
+: 1808 7 5 down,
+- 1815
+: 1818 4 9 Make 
+: 1826 4 9 me 
+: 1834 3 9 get 
+: 1841 3 9 better
+: 1847 10 7 ~
+- 1857
+: 1866 4 10 I 
+: 1874 3 7 confess
+: 1879 5 5 ~ 
+: 1887 3 5 that 
+: 1892 4 9 I’m 
+: 1898 2 7 a 
+: 1903 8 5 mess, 
+: 1915 5 9 some 
+: 1924 5 9 kind 
+: 1932 5 9 of 
+: 1940 3 9 error
+: 1945 5 7 ~
+- 1950
+: 1954 3 7 Well, 
+: 1964 10 9 may
+: 1976 7 9 be 
+: 1984 2 7 ~
+: 1989 6 7 I
+: 1996 2 5 ~ 
+: 2000 5 5 was
+: 2006 2 4 ~ 
+: 2013 7 0 des
+: 2024 7 5 tined 
+: 2036 6 7 to 
+: 2044 5 7 dis
+: 2052 5 7 a
+: 2061 10 7 pe~
+: 2074 20 5 ar
+- 2094
+: 2106 5 7 We’re 
+: 2115 4 7 just 
+: 2122 5 7 a 
+: 2130 5 7 room 
+: 2138 5 7 full 
+: 2146 4 7 of 
+: 2154 17 7 strangers
+: 2173 3 5 ~
+: 2178 18 5 ~
+- 2196
+: 2203 5 9 Looking
+: 2210 5 9 ~ 
+: 2219 2 9 for 
+: 2227 5 9 something
+: 2235 3 7 ~ 
+: 2240 3 5 to 
+: 2251 16 7 save
+: 2269 4 5 ~ 
+: 2275 12 5 us
+- 2287
+: 2299 7 9 A
+: 2308 4 9 lone 
+: 2315 8 9 to
+: 2325 6 9 ge
+: 2332 2 7 ther 
+: 2336 7 5 we’re 
+: 2347 8 9 dy
+: 2357 3 5 ing 
+: 2364 3 7 to 
+: 2371 6 9 live
+- 2377
+: 2381 3 5 And 
+: 2387 5 7 we’re 
+: 2394 6 9 li
+: 2402 6 10 ving 
+: 2411 3 9 to 
+: 2416 15 9 die
+- 2431
+: 2443 3 2 Dying
+: 2448 2 5 ~ 
+: 2451 2 2 to 
+: 2454 9 9 live, 
+: 2467 3 2 living
+: 2472 2 5 ~ 
+: 2476 2 2 to 
+: 2480 9 9 die
+- 2489
+: 2491 6 7 It 
+: 2500 7 7 ne
+: 2508 4 7 ver 
+: 2517 5 7 stops, 
+: 2524 6 7 can’t 
+: 2532 8 7 e
+: 2541 14 7 ra~
+: 2557 5 5 se 
+: 2564 18 5 this
+- 2582
+: 2583 2 0 So 
+: 2587 8 9 cross 
+: 2598 5 9 out 
+: 2605 3 9 my 
+: 2610 10 9 eyes, 
+: 2622 5 7 tear 
+: 2629 4 5 the 
+: 2637 14 7 pa
+: 2653 6 5 ~
+: 2661 15 5 ges
+- 2676
+: 2687 5 9 ’Cause 
+: 2695 4 9 you 
+: 2701 4 9 and 
+: 2708 6 9 I 
+: 2716 3 7 we’re 
+: 2721 8 5 just 
+: 2733 5 9 dying
+: 2741 4 5 ~ 
+: 2750 3 7 to 
+: 2756 5 9 live
+- 2761
+: 2765 5 5 And 
+: 2774 4 7 we’re 
+: 2781 7 9 living
+: 2789 5 10 ~ 
+: 2797 2 9 to 
+: 2801 17 9 die
+- 2818
+: 2828 3 2 Dying
+: 2833 2 5 ~ 
+: 2836 2 2 to 
+: 2840 9 9 live, 
+: 2852 3 2 living
+: 2857 2 5 ~ 
+: 2861 2 2 to 
+: 2865 9 9 die
+- 2874
+: 2877 4 9 It 
+: 2885 7 9 ne
+: 2894 4 9 ver 
+: 2900 7 9 stops, 
+: 2911 4 9 it 
+: 2918 6 9 don’t
+- 2924
+: 2932 31 5 Where 
+: 2973 21 7 did 
+: 2996 15 9 we
+: 3013 6 5 ~ 
+: 3021 40 5 go?
+- 3061
+: 3063 6 5 We’re 
+: 3070 4 9 all 
+: 3077 2 7 a
+: 3081 10 9 lone 
+: 3093 8 9 all 
+: 3102 2 7 a
+: 3105 7 9 lo
+: 3114 1 7 ~ne
+- 3115
+: 3116 42 5 No 
+: 3165 20 7 place 
+: 3189 20 9 like 
+: 3212 34 9 home
+- 3246
+: 3262 6 9 Take 
+: 3270 2 7 us 
+: 3274 5 9 back 
+: 3281 2 7 to 
+: 3287 5 9 yes
+: 3294 3 7 ter
+: 3299 17 9 day
+- 3316
+F 3334 29 0 SOS
+- 3363
+F 3376 2 0 Save 
+F 3381 4 0 us 
+F 3388 6 0 from 
+F 3397 46 0 ourselves
+- 3443
+: 3455 5 7 We’re 
+: 3463 6 7 just 
+: 3472 4 7 a 
+: 3479 6 7 room 
+: 3488 5 7 full 
+: 3495 3 7 of 
+: 3502 16 7 stra
+: 3520 3 5 ~n
+: 3525 17 5 gers
+- 3542
+: 3551 5 9 Look
+: 3558 5 9 ing 
+: 3567 2 9 for 
+: 3575 5 9 some
+: 3583 3 7 thing 
+: 3588 3 5 to 
+: 3599 16 7 save
+: 3617 4 5 ~ 
+: 3623 12 5 us
+- 3635
+: 3644 7 9 A
+: 3653 4 9 lone 
+: 3660 8 9 to
+: 3670 6 9 ge
+: 3677 2 7 ther 
+: 3681 7 5 we’re 
+: 3692 8 9 dy
+: 3702 3 5 ing 
+: 3709 3 7 to 
+: 3716 6 9 live
+- 3722
+: 3728 5 5 And 
+: 3737 4 7 we’re 
+: 3744 7 9 living
+: 3752 5 10 ~ 
+: 3760 2 9 to 
+: 3764 17 9 die
+- 3781
+: 3790 3 2 Dying
+: 3795 2 5 ~ 
+: 3798 2 2 to 
+: 3802 9 9 live, 
+: 3814 3 2 living
+: 3819 2 5 ~ 
+: 3823 2 2 to 
+: 3827 9 9 die
+- 3836
+: 3839 6 7 It 
+: 3848 7 7 ne
+: 3856 4 7 ver 
+: 3865 5 7 stops, 
+: 3872 6 7 can’t 
+: 3880 8 7 e
+: 3889 14 7 ra
+: 3905 5 5 ~se 
+: 3912 17 5 this
+- 3929
+: 3930 2 0 So 
+: 3934 8 9 cross 
+: 3945 5 9 out 
+: 3952 3 9 my 
+: 3957 10 9 eyes, 
+: 3969 5 7 tear 
+: 3976 4 5 the 
+: 3984 14 7 pa
+: 4000 6 9 ~
+: 4008 15 9 ges
+- 4023
+: 4031 5 9 ’Cause 
+: 4040 4 9 you 
+: 4047 4 9 and 
+: 4053 6 9 I 
+: 4062 3 7 we’re 
+: 4067 8 5 just 
+: 4079 5 9 dying
+: 4087 4 5 ~ 
+: 4096 3 7 to 
+: 4103 6 9 live
+- 4109
+: 4112 5 5 And 
+: 4121 4 7 we’re 
+: 4128 7 9 living
+: 4136 5 10 ~ 
+: 4144 2 9 to 
+: 4148 17 9 die
+- 4165
+: 4174 3 2 Dying
+: 4179 2 5 ~ 
+: 4182 2 2 to 
+: 4186 9 9 live, 
+: 4198 3 2 living
+: 4203 2 5 ~ 
+: 4207 2 2 to 
+: 4211 9 9 die
+- 4220
+: 4224 6 9 We’re 
+: 4233 5 9 just 
+: 4241 5 9 a 
+: 4249 17 9 room
+- 4266
+: 4272 6 9 We’re 
+: 4281 5 9 just 
+: 4289 5 9 a 
+: 4297 21 9 room
+- 4318
+: 4320 6 9 We’re 
+: 4328 6 9 just 
+: 4337 5 9 a 
+: 4345 7 9 room 
+: 4356 4 9 full 
+: 4363 3 9 of 
+: 4369 13 7 stra
+: 4386 4 5 ~n
+: 4393 22 5 gers
+E
