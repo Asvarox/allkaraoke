@@ -2,16 +2,16 @@ import styled from '@emotion/styled';
 import { Button } from 'modules/Elements/Button';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
-import { useEffect, useState } from 'react';
+import { MutableRefObject, useEffect, useState } from 'react';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 
 interface Props {
   groupedSongList: SongGroup[];
   onScrollToGroup: (group: SongGroup) => void;
-  container: any;
+  containerRef: MutableRefObject<HTMLDivElement | null>;
 }
 
-export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, container }: Props) {
+export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, containerRef }: Props) {
   const [activeGroups, setActiveGroups] = useState<number[]>([]);
 
   useEffect(() => {
@@ -41,8 +41,8 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
       });
     });
 
-    if (container) {
-      mutationObserver.observe(container, {
+    if (containerRef.current) {
+      mutationObserver.observe(containerRef.current, {
         childList: true,
         subtree: true,
       });
@@ -53,7 +53,7 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
         observer.disconnect();
       };
     }
-  }, [groupedSongList, container]);
+  }, [groupedSongList, containerRef]);
 
   return (
     <>

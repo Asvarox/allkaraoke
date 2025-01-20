@@ -28,10 +28,12 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectSmartphones();
 
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   const remoteMicBluePage = await openAndConnectRemoteMicWithCode(page, browser, P1_Name);
   const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, P2_Name);
   const remoteMicGreen = await openAndConnectRemoteMicDirectly(page, browser, P3_Name);
   const remoteMicYellow = await openAndConnectRemoteMicDirectly(page, browser, P4_Name);
+  /* eslint-enable @typescript-eslint/no-unused-vars */
 
   // Assert auto selection of inputs
   await pages.smartphonesConnectionPage.expectPlayerNameToBe(0, P1_Name);

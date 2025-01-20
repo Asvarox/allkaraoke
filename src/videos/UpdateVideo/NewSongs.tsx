@@ -20,7 +20,7 @@ import { flexCenter, flexVertical } from 'videos/support/cssMixins';
 const SONG_PRESENTATION_FRAMES = 70;
 const TITLE_PRESENTATION_FRAMES = SONG_PRESENTATION_FRAMES;
 
-export const getNewSongsSequenceLength = (songs: SongPreview[]) =>
+export const getNewSongsSequenceLength = (_songs: SongPreview[]) =>
   9 * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
 
 export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; durationInFrames: number }) => {
@@ -37,7 +37,7 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
       try {
         const res = await fetch(`https://i3.ytimg.com/vi/${song.video}/maxresdefault.jpg`);
         setHighResThumbnail(res.status !== 404);
-      } catch (e) {
+      } catch (_e) {
         setHighResThumbnail(false);
       }
 

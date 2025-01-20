@@ -3,6 +3,7 @@ import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import reactPlugin from 'eslint-plugin-react';
+import pluginReactCompiler from 'eslint-plugin-react-compiler';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import typescriptPlugin from 'typescript-eslint';
@@ -16,6 +17,11 @@ const compat = new FlatCompat({
 });
 
 export default [
+  {
+    linterOptions: {
+      reportUnusedDisableDirectives: 'error',
+    },
+  },
   {
     ignores: [
       '**/playwright/',
@@ -33,6 +39,7 @@ export default [
   reactPlugin.configs.flat['jsx-runtime'],
   {
     plugins: {
+      'react-compiler': pluginReactCompiler,
       'eslint-plugin-react': reactPlugin,
       'no-only-tests': noOnlyTests,
     },
@@ -42,8 +49,8 @@ export default [
     },
 
     rules: {
+      'react-compiler/react-compiler': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
@@ -52,6 +59,18 @@ export default [
       'react/prop-types': 'off',
       'react/no-unknown-property': 'off',
       'react/display-name': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
     },
   },
   {

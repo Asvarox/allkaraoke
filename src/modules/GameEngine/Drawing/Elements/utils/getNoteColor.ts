@@ -2,7 +2,7 @@ import { PlayerNote } from 'interfaces';
 import styles from '../../styles';
 
 export function getColor(
-  ctx: CanvasRenderingContext2D,
+  _ctx: CanvasRenderingContext2D,
   playerNumber: 0 | 1 | 2 | 3,
   isStar: boolean,
   isHit: boolean,

@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
 import { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import PlayersManager from 'modules/Players/PlayersManager';
-import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
+import { forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef } from 'react';
 import SkipIntro from 'routes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'routes/Game/Singing/GameOverlay/Components/SkipOutro';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -26,7 +26,7 @@ interface Props {
   playerSetups: PlayerSetup[];
   duration: number;
   effectsEnabled: boolean;
-  videoPlayerRef: VideoPlayerRef | null;
+  videoPlayerRef: MutableRefObject<VideoPlayerRef | null>;
   isPauseMenuVisible: boolean;
 }
 
@@ -55,7 +55,7 @@ const GameOverlay = forwardRef(function (
         resume: () => drawer.current?.resume(),
       };
     },
-    [drawer.current, lyrics.current?.offsetHeight, overlayScaleFactor],
+    [],
   );
 
   useEffect(() => {
@@ -81,7 +81,7 @@ const GameOverlay = forwardRef(function (
     return () => {
       drawer.current?.end();
     };
-  }, [lyrics.current?.offsetHeight, overlayScaleFactor]);
+  }, [overlayScaleFactor]);
 
   useEffect(() => {
     if (isPauseMenuVisible && drawer.current?.isPlaying()) {
@@ -150,7 +150,7 @@ const GameOverlay = forwardRef(function (
                     data-score={Math.floor(score)}>
                     <ScoreText score={score} />
                     <div
-                      className={`text-xl transition-all duration-200 absolute rotate-12 top-12 ${isFirst ? '-right-10' : '-right-36'}`}>
+                      className={`absolute top-12 rotate-12 text-xl transition-all duration-200 ${isFirst ? '-right-10' : '-right-36'}`}>
                       {isFirst ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
                     </div>
                   </Score>

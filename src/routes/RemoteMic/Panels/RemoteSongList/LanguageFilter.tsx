@@ -53,9 +53,9 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
                   data-test={name}
                   className={`!justify-between pl-4`}>
                   <span>
-                    {name} <small className="text-sm pl-2">({count} songs)</small>
+                    {name} <small className="pl-2 text-sm">({count} songs)</small>
                   </span>
-                  <Flag language={[name]} className=" h-full w-32 object-cover" />
+                  <Flag language={[name]} className="h-full w-32 object-cover" />
                 </Menu.Button>
               );
             })}

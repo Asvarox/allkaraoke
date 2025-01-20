@@ -42,10 +42,18 @@ function Settings() {
     CameraManager.requestPermissions().then(() => setIsRequestInProgress(false));
   };
 
-  let cameraValue: ReactNode = 'Disabled';
-  if (isRequestInProgress) cameraValue = <Loader size="0.9em" />;
-  else if (camera === null) cameraValue = 'Click to enable';
-  else if (camera) cameraValue = 'Enabled';
+  let cameraValue = 'disabled';
+  let cameraDisplayValue: ReactNode = 'Disabled';
+  if (isRequestInProgress) {
+    cameraValue = 'loading';
+    cameraDisplayValue = <Loader size="0.9em" />;
+  } else if (camera === null) {
+    cameraValue = 'click-to-enable';
+    cameraDisplayValue = 'Click to enable';
+  } else if (camera) {
+    cameraValue = 'enabled';
+    cameraDisplayValue = 'Enabled';
+  }
 
   return (
     <MenuWithLogo>
@@ -63,6 +71,7 @@ function Settings() {
         label="FPS Count"
         value={fpsCount}
       />
+      {}
       <div className="flex flex-col">
         <Menu.Button {...register('calibration-settings', () => navigate('settings/calibration/'))} size="small">
           Calibrate input lag
@@ -74,6 +83,7 @@ function Settings() {
         {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}
         label="Enable camera mode"
         value={cameraValue}
+        displayValue={cameraDisplayValue}
         info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
       />
       <hr />

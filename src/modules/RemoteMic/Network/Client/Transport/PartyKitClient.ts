@@ -40,7 +40,7 @@ export class PartyKitClientTransport extends Listener<[NetworkMessages]> impleme
       try {
         reason = JSON.parse(event.reason)?.error;
       } catch (e) {
-        console.info('could not parse close reason', event);
+        console.info('could not parse close reason', event, e);
       }
       this.clearAllListeners();
       onClose(reason, event);

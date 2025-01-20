@@ -12,8 +12,8 @@ export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'hallowee
 export const BackgroundContext = createContext({
   visible: true,
   theme: 'regular' as backgroundTheme,
-  setVisibility: (visible: boolean): void => undefined,
-  setTheme: (theme: backgroundTheme): void => undefined,
+  setVisibility: (_visible: boolean): void => undefined,
+  setTheme: (_theme: backgroundTheme): void => undefined,
 });
 
 export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme = 'regular') => {

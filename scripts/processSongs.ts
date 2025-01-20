@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unused-vars */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { Song } from 'interfaces';
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';

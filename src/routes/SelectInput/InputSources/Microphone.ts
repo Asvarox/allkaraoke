@@ -12,15 +12,15 @@ interface NameMapper {
 const singstarWirelessMicMapper: NameMapper = {
   test: (label) =>
     label.toLowerCase().includes('wireless mic #') || label.toLowerCase().includes('sony wireless singstar'),
-  map: (label, channel) => `SingStar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
+  map: (_, channel) => `SingStar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 const singstarWiredMicMapper: NameMapper = {
   test: (label) => label.toLowerCase().includes('usbmic serial#') || label.toLowerCase().includes('singstar'),
-  map: (label, channel) => `SingStar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
+  map: (_, channel) => `SingStar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 const singstarGenericMapper: NameMapper = {
-  test: (label, channel, channels) => channels === 2 && label.toLowerCase().includes('singstar'),
-  map: (label, channel) => `SingStar Mic - ${channel === 0 ? 'Blue' : 'Red'}`,
+  test: (label, _, channels) => channels === 2 && label.toLowerCase().includes('singstar'),
+  map: (_, channel) => `SingStar Mic - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 
 const getPreferred = (...[label, ch, channels]: Parameters<NameMapper['test']>) =>

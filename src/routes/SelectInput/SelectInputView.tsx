@@ -30,7 +30,7 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 
 const previouslySelected = storage.local.getItem(LAST_SELECTED_KEY);
 
-function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText, smooth = true }: Props) {
+function SelectInputView({ onFinish, closeButtonText, onBack, skipText, smooth = true }: Props) {
   const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
   const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference> | 'multiple-mics'>(
     storedPreference === 'skip' ? null : storedPreference,

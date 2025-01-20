@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
-import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useState } from 'react';
+import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
 
 const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
@@ -56,18 +56,15 @@ export const PlayerMicCheck = ({
   playerNumber,
   ...props
 }: { playerNumber: 0 | 1 | 2 | 3 } & ComponentProps<typeof VolumeIndicatorBase>) => {
-  const [elem, setElem] = useState<HTMLDivElement | null>();
+  const elemRef = useRef<HTMLDivElement | null>(null);
 
-  const cb = useCallback(
-    ([volume]: [number, number]) => {
-      if (elem) {
-        const percent = `${Math.min(1, volume * 20)}`;
+  const cb = useCallback(([volume]: [number, number]) => {
+    if (elemRef.current) {
+      const percent = `${Math.min(1, volume * 20)}`;
 
-        elem.style.transform = `scaleX(${percent})`;
-      }
-    },
-    [elem],
-  );
+      elemRef.current.style.transform = `scaleX(${percent})`;
+    }
+  }, []);
 
   usePlayerMicData(playerNumber, cb);
   const color = usePlayerColor(playerNumber);
@@ -75,7 +72,7 @@ export const PlayerMicCheck = ({
   return (
     <VolumeIndicatorBase
       {...props}
-      ref={setElem}
+      ref={elemRef}
       style={{
         background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
       }}

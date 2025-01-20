@@ -28,7 +28,7 @@ const daySeed = new Date().toDateString();
 export const TransitionCircles: React.FC<Props> = ({ delay, duration, id }) => {
   const randomizedCircles = useMemo(
     () =>
-      range(CIRCLE_NUM).map((a, i) => {
+      range(CIRCLE_NUM).map((_, i) => {
         return {
           x: random(`${daySeed}-${id}-random-x-${i}`),
           y: random(`${daySeed}-${id}-random-y-${i}`),

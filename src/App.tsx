@@ -22,7 +22,7 @@ import QuickSetup from 'routes/QuickSetup/QuickSetup';
 import routePaths from 'routes/routePaths';
 import { CalibrationSettings } from 'routes/Settings/Calibration';
 import RemoteMicSettings from 'routes/Settings/RemoteMicSettings';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import SocialMediaElements from 'routes/SocialMediaElements/SocialMediaElements';
 import Welcome from 'routes/Welcome/Welcome';
 
@@ -38,7 +38,6 @@ const LazySongList = lazy(() =>
 // const LazyGame = lazy(() => prefetchGame);
 
 function App() {
-  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [graphicSetting] = useSettingValue(GraphicSetting);
 
   const theme = useMemo<Theme>(

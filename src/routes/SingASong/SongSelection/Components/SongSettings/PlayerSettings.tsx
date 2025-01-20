@@ -116,6 +116,8 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
 const PlayerSettingContainer = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  width: 80rem;
 `;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`
@@ -127,4 +129,6 @@ const PlayerSettingTitle = styled.span`
   ${typography};
   padding: 1.3rem;
   font-size: 4.5rem;
+  width: 20rem;
+  text-align: right;
 `;

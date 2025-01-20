@@ -14,8 +14,8 @@ export type RegularHelpEntry = Partial<Record<keys, string | null>>;
 export type HelpEntry = RegularHelpEntry & { remote?: remoteActions[] };
 
 export const KeyboardHelpContext = createContext({
-  setKeyboard: (name: string, helpEntry: HelpEntry): void => {},
-  unsetKeyboard: (name: string): void => {},
+  setKeyboard: (_name: string, _helpEntry: HelpEntry): void => {},
+  unsetKeyboard: (_name: string): void => {},
   hasContent: false,
 });
 

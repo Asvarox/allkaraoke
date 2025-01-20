@@ -1,5 +1,4 @@
-import { Button } from 'modules/Elements/Button';
-import { MenuContainer } from 'modules/Elements/Menu';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import Modal from 'modules/Elements/Modal';
 import 'modules/RemoteMic/eventListeners';
 import 'modules/Stats';
@@ -17,10 +16,12 @@ function QRCodeModal({ closeModal, open }: Props) {
 
   return (
     <Modal onClose={closeModal} open={open}>
-      <MenuContainer>
+      <Menu>
         <ConnectRemoteMic />
-        <Button {...register('quick-connect-close', closeModal)}>Close</Button>
-      </MenuContainer>
+        <Menu.Button {...register('quick-connect-close', closeModal)} size="small">
+          Close
+        </Menu.Button>
+      </Menu>
     </Modal>
   );
 }

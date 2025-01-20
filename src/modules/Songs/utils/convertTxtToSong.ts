@@ -104,14 +104,14 @@ export function getVideoId(url: string) {
     if (linkUrl.host === 'youtu.be') return linkUrl.pathname.substring(1);
     if (linkUrl.host === 'www.youtube.com' || linkUrl.host === 'youtube.com') return linkUrl.searchParams.get('v');
     return null;
-  } catch (e: any) {
+  } catch (_e) {
     return null;
   }
 }
 function safeJsonParse<T, DV = T>(str: any, defaultValue: DV): T | DV {
   try {
     return JSON.parse(str);
-  } catch (e) {
+  } catch (_e) {
     return defaultValue;
   }
 }

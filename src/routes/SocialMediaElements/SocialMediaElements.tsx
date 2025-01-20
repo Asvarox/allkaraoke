@@ -123,10 +123,3 @@ const EurovisionLogo = styled.img`
   margin-left: 4rem;
   transform: scale(1.5);
 `;
-
-const ChristmasTree = styled.span`
-  //position: absolute;
-  //margin: 0 0 100px 100px;
-  font-size: 180px;
-  transform: rotate(15deg);
-`;

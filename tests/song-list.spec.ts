@@ -19,8 +19,8 @@ const allPlaylist = 'All';
 const xmasPlaylist = 'Christmas';
 const xmasSong = 'e2e-christmas-english-1995';
 
-const halloweenPlaylist = 'Halloween';
-const halloweenSong = 'e2e-croissant-french-1994';
+const _halloweenPlaylist = 'Halloween';
+const _halloweenSong = 'e2e-croissant-french-1994';
 
 const engModSong = 'e2e-single-english-1995';
 const polOldDuetSong = 'e2e-multitrack-polish-1994';

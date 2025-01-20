@@ -36,7 +36,7 @@ export class GameStateClass {
   public setSingSetup = (singSetup: SingSetup) => {
     this.singSetup = singSetup;
 
-    this.playerStates = singSetup.players.map(({ number }, index) => new PlayerState(number, this));
+    this.playerStates = singSetup.players.map(({ number }) => new PlayerState(number, this));
     this.currentTime = 0;
     this.playing = true;
   };

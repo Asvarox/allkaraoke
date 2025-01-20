@@ -18,6 +18,6 @@ export class DrawingTestInputSource {
 
   public static getInputs = async (): Promise<InputSource[]> => inputs;
 
-  public static subscribeToListChange = (callback: () => void) => undefined;
-  public static unsubscribeToListChange = (callback: () => void) => undefined;
+  public static subscribeToListChange = (_callback: () => void) => undefined;
+  public static unsubscribeToListChange = (_callback: () => void) => undefined;
 }

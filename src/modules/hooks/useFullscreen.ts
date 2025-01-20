@@ -9,6 +9,6 @@ export default function useFullscreen() {
       if (autoEnableFullscreen) {
         document.body.requestFullscreen().catch(console.info);
       }
-    } catch (e) {}
+    } catch (_e) {}
   }, []);
 }

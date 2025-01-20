@@ -1,13 +1,8 @@
 import styled from '@emotion/styled';
 import { SingSetup, SongPreview } from 'interfaces';
-import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackground';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import isDev from 'modules/utils/isDev';
-import isE2E from 'modules/utils/isE2E';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   PropsWithChildren,
@@ -18,7 +13,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
@@ -26,7 +21,6 @@ import {
   SongListEntryDetailsTitle,
 } from 'routes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from 'routes/SingASong/SongSelection/Components/SongSettings';
-import { ValuesType } from 'utility-types';
 
 interface Props {
   songPreview: SongPreview;
@@ -43,45 +37,45 @@ interface Props {
 
 const PREVIEW_LENGTH = 30;
 
-const useSpecialSongTheme = (
-  songPreview: SongPreview,
-  theme: backgroundTheme,
-  checkFn: (song: SongPreview) => boolean,
-) => {
-  const [backgroundTheme, setBackgroundTheme] = useSettingValue(BackgroundThemeSetting);
-  const isSpecialThemeSong = checkFn(songPreview);
-  useBackground(true, isSpecialThemeSong ? theme : 'regular');
+// const useSpecialSongTheme = (
+//   songPreview: SongPreview,
+//   theme: backgroundTheme,
+//   checkFn: (song: SongPreview) => boolean,
+// ) => {
+//   const [backgroundTheme, setBackgroundTheme] = useSettingValue(BackgroundThemeSetting);
+//   const isSpecialThemeSong = checkFn(songPreview);
+//   useBackground(true, isSpecialThemeSong ? theme : 'regular');
+//
+//   useEffect(() => {
+//     if (isSpecialThemeSong) {
+//       setBackgroundTheme(theme);
+//     }
+//   }, []);
+//
+//   useEffect(() => {
+//     if (backgroundTheme !== theme && isSpecialThemeSong) {
+//       setBackgroundTheme(theme);
+//     } else if (backgroundTheme === theme && !isSpecialThemeSong) {
+//       setBackgroundTheme('regular');
+//     }
+//   }, [theme, backgroundTheme, songPreview]);
+//
+//   return isSpecialThemeSong;
+// };
 
-  useEffect(() => {
-    if (isSpecialThemeSong) {
-      setBackgroundTheme(theme);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (backgroundTheme !== theme && isSpecialThemeSong) {
-      setBackgroundTheme(theme);
-    } else if (backgroundTheme === theme && !isSpecialThemeSong) {
-      setBackgroundTheme('regular');
-    }
-  }, [theme, backgroundTheme, songPreview]);
-
-  return isSpecialThemeSong;
-};
-
-export const useSpecialTheme = (
-  songPreview: SongPreview,
-  feature: ValuesType<typeof FeatureFlags>,
-  check: (preview: SongPreview) => boolean,
-  theme: backgroundTheme,
-) => {
-  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(feature);
-  const isSpecialSong = useSpecialSongTheme(
-    songPreview,
-    isSpecialThemeEnabled ? theme : 'regular',
-    isSpecialThemeEnabled ? check : () => false,
-  );
-};
+// export const useSpecialTheme = (
+//   songPreview: SongPreview,
+//   feature: ValuesType<typeof FeatureFlags>,
+//   check: (preview: SongPreview) => boolean,
+//   theme: backgroundTheme,
+// ) => {
+//   const isSpecialThemeEnabled = useFeatureFlag(feature);
+//   const _isSpecialSong = useSpecialSongTheme(
+//     songPreview,
+//     isSpecialThemeEnabled ? theme : 'regular',
+//     isSpecialThemeEnabled ? check : () => false,
+//   );
+// };
 
 export default function SongPreviewComponent({
   songPreview,

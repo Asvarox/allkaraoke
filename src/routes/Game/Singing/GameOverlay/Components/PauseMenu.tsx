@@ -42,6 +42,8 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     }
   };
 
+  const onInputLagActive = () => inputLagRef.current?.focus();
+
   return (
     <>
       {!rateSongOpen && (
@@ -56,7 +58,8 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
               Microphones settings
             </MenuButton>
             <hr />
-            <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
+            {/* eslint-disable-next-line react-compiler/react-compiler */}
+            <InputLag ref={inputLagRef} {...register('input-lag', onInputLagActive)} />
             <MenuButton
               {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
               size="small">

@@ -33,5 +33,5 @@ export default class GoldNoteParticle implements Particle {
       particleManager.add(new GoldTriangle(x + position * 8, finalY, finalColor));
     }
   }
-  public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {};
+  public tick = () => {};
 }

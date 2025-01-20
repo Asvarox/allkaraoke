@@ -47,7 +47,7 @@ function LandingPage() {
         <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <GithubRibbon />
-      <div className="flex flex-col w-[110rem] items-stretch justify-center h-screen gap-12 mx-auto landscap:flex-row landscap:w-full mobile:w-full shadow-active [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
+      <div className="mx-auto flex h-screen w-[110rem] flex-col items-stretch justify-center gap-12 shadow-active mobile:w-full landscap:w-full landscap:flex-row [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
         <div className="flex justify-center gap-24 mobile:hidden">
           <LogoIcon />
           <Logo />
@@ -57,9 +57,9 @@ function LandingPage() {
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <Box className="gap-24 p-24 flex-row bg-black/75 landscap:flex-1 [&_hr]:my-12 mobile:flex-col">
+        <Box className="flex-row gap-24 bg-black/75 p-24 mobile:flex-col landscap:flex-1 [&_hr]:my-12">
           <StatSegment>
-            <div className="leading-normal text-justify">
+            <div className="text-justify leading-normal">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
               <strong>SingStar</strong>. Sing along to your favorite songs and compete with your friends, all through
               the browser! Updated almost weekly with new songs and features.
@@ -119,13 +119,13 @@ function LandingPage() {
             <Screenshot src={screenshot2} alt="In-game screen" className="[box-shadow:_0_0_10rem_rgb(19,19,19)]" />
           </StatSegment>
         </Box>
-        <Text className="mobile:hidden text-md text-right !mt-[-2.5rem]">
+        <Text className="!mt-[-2.5rem] text-right text-md mobile:hidden">
           Using this device as remote microphone?{' '}
           <SmoothLink to="remote-mic/">
             <a data-test="join-existing-game">Join existing game</a>
           </SmoothLink>
         </Text>
-        <div className="flex flex-col gap-12 landscap:flex-1 [&&_a]:min-h-[30rem] justify-center">
+        <div className="flex flex-col justify-center gap-12 landscap:flex-1 [&&_a]:min-h-[30rem]">
           <SmoothLink to="remote-mic/">
             <PlayButton data-test="join-existing-game" className="hidden mobile:flex">
               <span>

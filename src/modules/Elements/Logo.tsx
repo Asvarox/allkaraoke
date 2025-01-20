@@ -32,13 +32,13 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
         <source src={logoMp4} type="video/mp4" />
       </StyledLogo>
       <img
-        className="absolute w-[13.7rem] h-[5.1rem] bottom-[-0.5rem] right-[-1rem]"
+        className="absolute bottom-[-0.5rem] right-[-1rem] h-[5.1rem] w-[13.7rem]"
         src={dotparty}
         alt="AllKaraoke Pride logo part 2"
       />
       {theme === 'christmas' && (
         <img
-          className="absolute w-[13.7rem] h-[11.1rem] top-[-3rem] right-[-7rem] rotate-[30deg] object-contain"
+          className="absolute right-[-7rem] top-[-3rem] h-[11.1rem] w-[13.7rem] rotate-[30deg] object-contain"
           src={santaHat}
           alt="AllKaraoke Pride logo part 2"
         />

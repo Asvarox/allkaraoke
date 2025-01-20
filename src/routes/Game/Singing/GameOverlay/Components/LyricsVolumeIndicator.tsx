@@ -9,10 +9,9 @@ import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings
 
 interface Props extends ComponentProps<typeof Container> {
   player: PlayerEntity;
-  bottom?: boolean;
 }
 
-function LyricsVolumeIndicator({ player, bottom = false, ...props }: Props) {
+function LyricsVolumeIndicator({ player, ...props }: Props) {
   const playerVolume = InputManager.getPlayerVolume(player.number);
   const status = usePlayerMicStatus(player.number);
 

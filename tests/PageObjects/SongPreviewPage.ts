@@ -22,6 +22,7 @@ export class SongPreviewPagePO {
   public async navigateToGoNextWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, 'next-step-button', remoteMic);
     await this.page.keyboard.press('Enter', { delay: 40 });
+    await this.page.waitForTimeout(300); // force wait for the animation to finish
   }
 
   public async playTheSong(skipIntro = true, calibration = true) {

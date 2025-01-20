@@ -6,14 +6,14 @@ import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 import SuggestMobileMode from 'routes/QuickSetup/SuggestMobileMode';
 import SelectInputView from 'routes/SelectInput/SelectInputView';
-import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 function QuickSetup() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const isMobileDevice = useMemo(() => isMobile(), []);
 
   const navigate = useSmoothNavigate();
-  const onFinish = async (pref: (typeof MicSetupPreference)[number]) => {
+  const onFinish = async () => {
     navigate('menu/');
     if (!isDev() && mobilePhoneMode && document.fullscreenElement === null) {
       try {

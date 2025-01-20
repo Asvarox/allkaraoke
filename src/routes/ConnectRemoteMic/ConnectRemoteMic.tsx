@@ -26,7 +26,7 @@ function ConnectRemoteMic() {
   const [match] = useRoute('remote-mic');
   const gameCode = useQueryParam('room') ?? RemoteMicServer.getGameCode();
   linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic`;
-  linkObject.searchParams.set('room', gameCode);
+  linkObject.search = `room=${gameCode}`;
 
   const link = linkObject.href;
 

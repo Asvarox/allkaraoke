@@ -56,7 +56,7 @@ export default function mergeTracks(tracks: Song['tracks'], song: Song) {
 
   let finalSections = [...notesSections[0]];
 
-  notOverlappingSections.forEach((section, index) => {
+  notOverlappingSections.forEach((section) => {
     if (section.shouldReplace) {
       finalSections = finalSections.filter(
         (s) => !section.sectionsToRemove.some((removedSection) => removedSection.start === s.start),

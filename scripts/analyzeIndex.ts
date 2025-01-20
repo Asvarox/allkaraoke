@@ -1,22 +1,5 @@
 import { SongPreview } from 'interfaces';
 
-const data = {
-  language: {
-    kinds: [] as Array<string | string[]>,
-    missing: [] as string[],
-  },
-  year: {
-    kinds: [] as string[],
-    missing: [] as string[],
-  },
-  // genre: {
-  //     kinds: [] as string[],
-  //     missing: [] as string[],
-  // },
-};
-
-type Data = typeof data;
-
 const index: SongPreview[] = require('../public/songs/index.json');
 
 /// group songs by artist property

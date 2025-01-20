@@ -6,11 +6,11 @@ import FullscreenButton from 'modules/Toolbar/Fullscreen';
 import QRCodeModal from 'modules/Toolbar/QRCodeModal';
 import { useContext, useState } from 'react';
 import { KeyboardHelpContext } from 'routes/KeyboardHelp/Context';
-import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { KeyboardHelpVisibilitySetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 function Toolbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  // const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
   const { hasContent } = useContext(KeyboardHelpContext);
 

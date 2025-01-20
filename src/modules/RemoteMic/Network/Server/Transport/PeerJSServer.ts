@@ -18,7 +18,7 @@ export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInte
   public connect(
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+    _onClose: (reason: transportCloseReason, originalEvent: any) => void,
   ) {
     this.peer = new Peer(`allkaraoke-party-room-${roomId}`, peerJSOptions);
 

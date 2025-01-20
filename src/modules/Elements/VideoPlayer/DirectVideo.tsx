@@ -15,7 +15,7 @@ import Youtube, { VideoPlayerRef, VideoState } from './Youtube';
 type Props = ComponentProps<typeof Youtube>;
 
 export default forwardRef(function DirectVideoPlayer(
-  { video, autoplay = true, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
+  { video, autoplay = true, startAt, controls, width, height, onStateChange }: Props,
   ref: ForwardedRef<VideoPlayerRef>,
 ) {
   const player = useRef<HTMLVideoElement | null>(null);
@@ -54,7 +54,9 @@ export default forwardRef(function DirectVideoPlayer(
       getStatus: () => status,
       setSize: (w, h) => setSize({ w, h }),
       seekTo: (time: number) => {
-        player.current && (player.current.currentTime = time);
+        if (player.current) {
+          player.current.currentTime = time;
+        }
 
         return time;
       },
@@ -84,6 +86,7 @@ export default forwardRef(function DirectVideoPlayer(
     }),
     [player],
   );
+  useImperativeHandle(ref, () => playerApi);
 
   useEffect(() => {
     playerApi.setSize(width, height);
@@ -92,8 +95,6 @@ export default forwardRef(function DirectVideoPlayer(
   useEffect(() => {
     startAt !== undefined && playerApi.seekTo(startAt);
   }, [startAt, playerApi]);
-
-  useImperativeHandle(ref, () => playerApi);
 
   return (
     <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={player}>

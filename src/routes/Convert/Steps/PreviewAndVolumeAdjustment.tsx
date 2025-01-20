@@ -19,26 +19,22 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const reference = useRef<HTMLAudioElement | null>(null);
 
   const [initialised, setInitialised] = useState(false);
-  useEffect(() => {
-    (async () => {
-      if (data.volume === 0) {
-        onChange({ ...data, volume: 0.5 });
-        await player.current?.getInternalPlayer()?.setVolume(50);
-      } else {
-        await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
-      }
-      setInitialised(true);
-    })();
-  }, []);
 
   useEffect(() => {
-    if (!initialised) {
-      return;
-    }
     const interval = setInterval(async () => {
-      const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
-      if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
-        onChange({ ...data, volume: currentVolume / 100 });
+      if (!initialised) {
+        if (data.volume === 0) {
+          onChange({ ...data, volume: 0.5 });
+          await player.current?.getInternalPlayer()?.setVolume(50);
+        } else {
+          await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
+        }
+        setInitialised(true);
+      } else {
+        const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
+        if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
+          onChange({ ...data, volume: currentVolume / 100 });
+        }
       }
     }, 500);
 
@@ -50,7 +46,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
   const [isReferencePlaying, setIsReferencePlaying] = useState(false);
 
-  const handleSliderChange = async (e: any, value: number | number[]) => {
+  const handleSliderChange = async (_e: any, value: number | number[]) => {
     await player.current?.getInternalPlayer()?.setVolume(+value * 100);
     onChange({ ...data, volume: +value });
   };
@@ -65,6 +61,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     player.current?.getInternalPlayer()?.getDuration().then(setDuration);
   }, []);
 
+  // eslint-disable-next-line react-compiler/react-compiler
   const internalPlayer = player.current?.getInternalPlayer();
 
   return (
@@ -80,7 +77,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           step={1}
           value={[previewStart, previewEnd]}
           max={(duration ?? 500) - MIN_PREVIEW_LENGTH}
-          onChange={(e, value) => {
+          onChange={(_e, value) => {
             const [start, end] = value as number[];
             if (end - start > MIN_PREVIEW_LENGTH) {
               onChange({

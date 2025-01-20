@@ -54,7 +54,6 @@ const isBetween = (value: number, min: number, max: number) => value >= min && v
 
 export function CustomVirtualization<T>(props: Props<T>) {
   const viewportElementRef = useRef<HTMLDivElement | null>(null);
-  const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
 
   const itemsPositions = useMemo(() => {
     const sizes: ItemPosition[] = [];
@@ -87,6 +86,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
+      const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
       const firstVisibleItem = itemsPositions.findIndex((item) => item.bottom > scrollTop - props.overScan);
       // todo subtract item height from bottom
       const lastVisibleItem = itemsPositions.findIndex(
@@ -95,7 +95,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
 
       return [firstVisibleItem, lastVisibleItem === -1 ? itemsPositions.length : lastVisibleItem];
     },
-    [itemsPositions, viewportHeight, props.overScan],
+    [itemsPositions, props.overScan],
   );
 
   const [[rangeFrom, rangeTo], setItemsRange] = useState(() => computeVisibleItemsRange(0));
@@ -163,7 +163,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
         viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
       }
     },
-    scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
+    scrollToGroup: async (groupIndex, behavior = 'auto') => {
       const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
       if (item) {
         viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });

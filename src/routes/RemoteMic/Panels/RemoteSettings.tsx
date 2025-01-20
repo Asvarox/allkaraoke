@@ -74,7 +74,7 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
       <div
         role="button"
         className="typography"
-        onClick={() => (monitoringStarted ? SimplifiedMic.stopMonitoring() : SimplifiedMic.startMonitoring(undefined))}>
+        onClick={() => (monitoringStarted ? SimplifiedMic.stopMonitoring() : SimplifiedMic.startMonitoring())}>
         Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
       </div>
     </Container>

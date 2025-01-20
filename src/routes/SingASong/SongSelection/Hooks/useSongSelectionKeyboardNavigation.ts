@@ -5,12 +5,14 @@ import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import tuple from 'modules/utils/tuple';
-import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useLayoutEffect, useMemo, useState } from 'react';
 import { HelpEntry } from 'routes/KeyboardHelp/Context';
 import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
+
+const previouslySelectedSongs: number[] = [];
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
@@ -140,18 +142,19 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const navigateToGroup = useCallback(
-    throttle(
-      (direction: 1 | -1, currentGroup: number) => {
-        const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
+  const navigateToGroup = useMemo(
+    () =>
+      throttle(
+        (direction: 1 | -1, currentGroup: number) => {
+          const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
 
-        moveToSong(groupedSongs[nextGroupIndex].songs[0].song.id);
-        menuNavigate.play();
-      },
-      700,
-      { trailing: false },
-    ),
-    [groupedSongs],
+          moveToSong(groupedSongs[nextGroupIndex].songs[0].song.id);
+          menuNavigate.play();
+        },
+        700,
+        { trailing: false },
+      ),
+    [groupedSongs, moveToSong],
   );
 
   const navigateVertically = (e: KeyboardEvent | undefined, direction: 1 | -1) => {
@@ -177,9 +180,8 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const randomlySelectedSongs = useRef<number[]>([]);
   const randomSong = () => {
-    const newIndex = selectRandomSong(songCount, randomlySelectedSongs.current);
+    const newIndex = selectRandomSong(songCount, previouslySelectedSongs);
     for (const group of groupedSongs) {
       for (const song of group.songs) {
         if (song.index === newIndex) {
@@ -232,5 +234,5 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-  return tuple([selectedSongId, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
+  return [selectedSongId, moveToSong, arePlaylistsVisible, closePlaylist, randomSong] as const;
 };

@@ -54,7 +54,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
   const singSetup: SingSetup = useMemo(() => {
     const setup = {
       tolerance: args.tolerance,
-      players: new Array(args.playerNum).fill(0).map((t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+      players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
       id: 'storybook-id',
       mode: args.gameMode,
     };
@@ -91,6 +91,8 @@ const Template: StoryFn<StoryArgs> = (args) => {
     update();
   }, [args.progress]);
 
+  const videoPlayerRef = useRef<any>(null);
+
   return (
     <div style={{ position: 'relative', width: 1280, height: 720 }}>
       <GameOverlay
@@ -98,7 +100,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         duration={duration}
         effectsEnabled={true}
         song={song}
-        videoPlayerRef={null}
+        videoPlayerRef={videoPlayerRef}
         currentStatus={VideoState.PLAYING}
         onSongEnd={() => {
           GameState.resetSingSetup();

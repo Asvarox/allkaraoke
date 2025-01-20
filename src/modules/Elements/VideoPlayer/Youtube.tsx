@@ -1,7 +1,7 @@
 import { seconds } from 'interfaces';
 import usePlayerVolume from 'modules/hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from 'modules/hooks/useUnstuckYouTubePlayer';
-import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
+import { ForwardedRef, forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
 
@@ -63,13 +63,6 @@ export default forwardRef(function YoutubeVideoPlayer(
 
   const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
   usePlayerVolume(player, volume);
-  useEffect(() => {
-    if (!player.current) {
-      return;
-    }
-
-    player.current.getInternalPlayer()!.setSize(width, height);
-  }, [player, width, height, video, playerKey]);
 
   useImperativeHandle(ref, () => ({
     getStatus: () => stateMap[currentStatus],
@@ -97,8 +90,8 @@ export default forwardRef(function YoutubeVideoPlayer(
       ref={player}
       videoId={video}
       opts={{
-        width: '0',
-        height: '0',
+        width: width,
+        height: height,
         playerVars: {
           autoplay: autoplay ? 1 : 0,
           rel: 0,

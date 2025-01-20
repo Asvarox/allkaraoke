@@ -29,7 +29,7 @@ class CameraManager extends Listener<[boolean]> {
       this.stream = await navigator.mediaDevices.getUserMedia({ video: true });
       this.permissionGranted = true;
       await this.stopRecord();
-    } catch (e) {
+    } catch (_e) {
       this.permissionGranted = false;
     }
     storage.local.setItem(CAMERA_GRANT_KEY, JSON.stringify(this.permissionGranted));

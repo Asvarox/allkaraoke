@@ -5,16 +5,14 @@ import { getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
 import { useState } from 'react';
 import { Pre } from 'routes/Convert/Elements';
 import calculateProperBPM from 'routes/Convert/calculateProperBpm';
-import { PlayerRef } from 'routes/Game/Singing/Player';
 
 interface Props {
   onChange: (bpm: number) => void;
   current: number;
-  player: PlayerRef;
   song: Song;
 }
 
-export default function ManipulateBpm({ current, onChange, player, song }: Props) {
+export default function ManipulateBpm({ current, onChange, song }: Props) {
   const lastNoteEndBeat = Math.max(...song.tracks.map((track) => getLastNoteEndFromSections(track.sections)));
   const lastNoteEndMs = beatToMs(lastNoteEndBeat, song) + song.gap;
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));

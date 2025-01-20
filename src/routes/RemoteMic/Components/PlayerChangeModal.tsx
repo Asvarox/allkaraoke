@@ -56,7 +56,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
             style={{ color: styles.colors.players[number].perfect.fill }}>
             {colorNames[style][number]}
             {isOwn || occupant ? (
-              <span className="text-gray-300 text-sm" data-test="mic-occupant">
+              <span className="text-sm text-gray-300" data-test="mic-occupant">
                 {' '}
                 ({isOwn ? 'You' : occupant?.name})
               </span>

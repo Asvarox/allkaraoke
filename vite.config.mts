@@ -9,6 +9,8 @@ import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
+// @ts-expect-error missing types for the lib
+import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';
@@ -24,6 +26,7 @@ export default defineConfig({
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
     }),
+    ReactCompilerBabelPlugin,
     react({
       babel: {
         plugins: [

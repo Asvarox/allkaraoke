@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/experimental-ct-react';
 import { MicInputCtStory } from '../Input/MicInput.ct-story';
 
 test('Mic input should properly return frequencies', async ({ mount, page }) => {
-  const component = await mount(<MicInputCtStory />);
+  await mount(<MicInputCtStory />);
 
   const frequencies = await page.evaluate(async () => {
     const { micInput } = window;

@@ -20,7 +20,7 @@ function DurationBar({ players }: Props) {
     () =>
       uniq(
         song.tracks
-          .filter((v, index) => players.find((player) => player.track === index))
+          .filter((_, index) => players.find((player) => player.track === index))
           .map(({ sections }) => getFirstNoteStartFromSections(sections) * beatLength + song.gap),
       ),
     [song, beatLength, players],
@@ -29,7 +29,7 @@ function DurationBar({ players }: Props) {
     () =>
       uniq(
         song.tracks
-          .filter((v, index) => players.find((player) => player.track === index))
+          .filter((_, index) => players.find((player) => player.track === index))
           .map(({ sections }) => getLastNoteEndFromSections(sections) * beatLength + song.gap),
       ),
     [song, beatLength, players],

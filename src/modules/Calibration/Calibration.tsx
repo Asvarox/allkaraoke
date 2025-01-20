@@ -26,6 +26,7 @@ export const Calibration = ({ onClose, onSave }: Props) => {
       <Menu.HelpText>
         Click <strong>←</strong> if you hear the click <strong>before</strong> the circle.
       </Menu.HelpText>
+      {/* eslint-disable-next-line react-compiler/react-compiler */}
       <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
       <Menu.HelpText className="text-right">
         Click <strong>→</strong> if you hear the click <strong>after</strong> the circle.

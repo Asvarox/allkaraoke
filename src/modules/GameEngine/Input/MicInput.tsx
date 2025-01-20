@@ -83,7 +83,7 @@ export class MicInput implements InputInterface {
     return this.frequencies;
   };
   public getVolumes = () => this.volumes;
-  public clearFrequencies = (deviceId?: string) => undefined;
+  public clearFrequencies = () => undefined;
 
   public stopMonitoring = async () => {
     if (!this.startedMonitoring) return;
