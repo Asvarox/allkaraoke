@@ -29,7 +29,7 @@ self.addEventListener('fetch', (event) => {
 
           // And return it.
           return fetchResponse;
-        } catch (e) {
+        } catch (_e) {
           // Fetching didn't work get the resource from the cache.
           const cachedResponse = await cache.match(event.request);
 
