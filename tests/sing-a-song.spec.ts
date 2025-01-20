@@ -92,14 +92,14 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     // Player 1
     await expect(pages.songPreviewPage.getPlayerNameInput(player1.number)).toBeVisible();
     await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1.number, player1.name);
-    await pages.songPreviewPage.expectEnteredPlayerNameToBe(player1.number, player1.name);
+    await pages.songPreviewPage.expectAlreadyEnteredPlayerNameToBe(player1.number, player1.name);
     await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player1.number);
     await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1.number, track2);
 
     // Player 2
     await expect(pages.songPreviewPage.getPlayerNameInput(player2.number)).toBeVisible();
     await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player2.number, player2.name);
-    await pages.songPreviewPage.expectEnteredPlayerNameToBe(player2.number, player2.name);
+    await pages.songPreviewPage.expectAlreadyEnteredPlayerNameToBe(player2.number, player2.name);
     await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player2.number);
     await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2.number, track1);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
