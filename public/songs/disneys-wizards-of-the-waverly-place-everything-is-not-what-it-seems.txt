@@ -1,0 +1,239 @@
+#ARTIST:Disney’s Wizards of the Waverly Place
+#TITLE:Everything Is Not What It Seems
+#CREATOR:amro98
+#BPM:250
+#YEAR:2009
+#PREVIEWSTART:18
+#VIDEO:v=J3Og4vG_xuo
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:230
+#ALLKARAOKE_ID:disneys-wizards-of-the-waverly-place-everything-is-not-what-it-seems
+#ALLKARAOKE_LASTUPDATE:2025-01-21T00:11:20.942Z
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_PREVIEWEND:41
+#ALLKARAOKE_VOLUME:0,72
+#MP3:Disney’s Wizards of the Waverly Place (Selena Gomez) - Everything Is Not What It Seems.mp3
+: 17 1 1 Well, 
+: 19 1 1 you 
+: 21 3 0 know 
+: 25 1 1 eve
+: 27 1 1 ry
+: 29 2 0 thing’s 
+: 33 1 0 gon
+: 35 1 0 na 
+: 37 1 0 be 
+: 39 3 0 a 
+: 43 1 4 breeze
+: 45 3 5 ~
+- 48
+: 49 1 1 And 
+: 51 1 1 the 
+: 53 1 0 end 
+: 55 1 1 will 
+: 57 2 0 no 
+: 61 3 0 doubt 
+: 65 1 1 jus
+: 67 1 1 ti
+: 69 3 0 fy 
+: 73 1 1 the 
+: 75 1 7 means
+: 77 3 8 ~
+- 80
+: 81 1 1 You 
+: 83 1 0 can 
+: 85 2 0 fix 
+: 89 1 0 a
+: 91 1 1 ny 
+: 93 1 0 pro
+: 95 1 0 blem 
+: 97 1 0 with 
+: 99 1 0 the 
+: 101 1 0 sligh
+: 103 1 0 test 
+: 105 1 0 of 
+: 108 1 7 ease
+: 110 5 8 ~
+- 115
+: 121 1 -3 Yes
+: 123 1 -1 ~ 
+: 129 4 -5 please
+- 133
+: 145 1 -1 But 
+: 147 1 0 you 
+: 149 2 0 might 
+: 153 2 0 find 
+: 157 2 0 out 
+: 161 1 0 it’ll
+: 163 1 -1 ~ 
+: 165 1 0 go 
+: 167 1 0 to 
+: 169 1 0 your 
+: 171 1 4 head
+: 173 2 5 ~
+- 175
+: 177 1 0 When 
+: 179 1 0 you 
+: 181 1 0 write 
+: 183 1 0 a 
+: 185 1 0 re
+: 188 3 0 port 
+: 193 1 0 on 
+: 195 1 0 a 
+: 197 1 0 book 
+: 199 1 0 you’ve 
+: 201 1 0 ne
+: 203 1 0 ver 
+: 205 1 6 read
+: 207 1 8 ~
+- 208
+: 209 1 1 With 
+: 211 1 0 the 
+: 213 1 0 snap 
+: 215 1 0 of 
+: 217 1 0 your 
+: 219 2 0 fin
+: 222 2 1 gers 
+: 225 1 1 you 
+: 227 1 0 can 
+: 229 3 0 make 
+: 233 1 1 your 
+* 235 8 8 bed!
+- 243
+: 256 2 0 That’s 
+: 260 3 0 what 
+: 264 2 3 I 
+: 269 4 -4 said
+- 273
+: 278 2 0 Eve
+: 281 1 4 ry
+: 283 2 5 ~
+: 289 6 5 thing 
+: 297 3 5 is
+- 300
+: 305 1 3 Not
+: 307 2 5 ~ 
+: 313 3 0 what 
+: 317 3 0 it 
+: 325 3 0 seems
+- 328
+: 329 3 0 When 
+: 333 2 0 you 
+: 337 3 0 can 
+: 341 4 0 get
+- 345
+: 349 3 4 All 
+: 353 3 5 you 
+: 357 3 5 wan
+: 361 3 5 ted 
+: 365 2 5 in 
+: 368 3 8 your
+- 371
+* 373 1 3 Wild
+* 375 1 4 ~
+* 377 3 0 ~
+* 381 1 0 est 
+* 385 1 0 dreams
+* 387 1 1 ~
+* 389 3 0 ~
+- 392
+: 393 3 0 You 
+: 397 3 0 might 
+: 405 4 0 run
+- 409
+: 413 3 5 In
+: 417 2 5 to 
+: 421 1 5 trou
+: 423 1 5 ~
+: 425 3 5 ble 
+: 429 2 5 if 
+: 433 2 8 you
+- 435
+: 437 1 3 Go
+: 439 1 4 ~ 
+: 441 2 0 to 
+: 444 2 0 ex
+: 449 1 0 tremes
+: 451 1 1 ~
+: 453 1 0 ~
+- 454
+: 457 2 0 Be
+: 461 3 0 cause
+- 464
+: 469 2 0 Eve
+: 473 4 -2 ry
+: 481 4 0 thing 
+: 489 1 0 is
+: 491 1 1 ~
+- 492
+: 497 1 -2 Not
+: 499 3 0 ~ 
+: 504 4 -2 what 
+: 509 4 -4 it 
+: 517 6 -7 seems
+- 523
+: 533 3 0 Eve
+: 537 1 4 ry
+: 539 2 5 ~
+: 545 5 5 thing 
+: 552 5 5 is
+- 557
+: 560 1 3 Not
+: 562 3 4 ~ 
+: 569 4 0 what 
+: 574 3 0 it 
+: 580 4 0 seems
+- 584
+: 586 2 0 When 
+: 589 2 0 you 
+: 593 2 0 can 
+: 597 4 0 have
+- 601
+: 604 2 4 What 
+: 609 3 5 you 
+: 613 3 5 want
+- 616
+: 621 2 5 By 
+* 625 1 8 the 
+: 629 1 3 simp
+: 633 1 0 lest 
+: 637 1 0 of 
+: 641 1 0 means
+: 643 1 1 ~
+: 645 4 0 ~
+- 649
+: 658 1 0 Be 
+: 661 2 0 care
+: 665 3 5 ful 
+: 669 2 5 not 
+: 673 1 5 to 
+: 677 2 5 mess
+- 679
+: 685 1 5 With 
+: 688 3 7 the 
+: 693 1 3 ba
+: 695 1 4 ~
+: 697 2 0 lance 
+: 701 2 0 of 
+: 705 1 0 things
+: 707 1 1 ~
+: 709 3 0 ~
+- 712
+: 713 2 0 Be
+: 717 3 0 cause
+- 720
+: 725 1 -2 Eve
+: 727 1 0 ~
+: 729 4 -2 ry
+: 737 4 0 thing 
+: 745 1 0 is
+: 747 2 1 ~ 
+: 753 1 -2 not
+: 755 1 0 ~
+: 757 2 -2 ~
+- 759 768
+- 768
+: 785 3 0 What 
+: 789 4 4 it 
+: 797 7 5 seems
+E

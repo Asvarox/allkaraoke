@@ -1308,11 +1308,11 @@
     "language": [
       "English"
     ],
-    "bpm": 236.7,
-    "gap": 35975.05830164765,
+    "bpm": 236.4,
+    "gap": 35925.05830164765,
     "year": "1979",
     "artistOrigin": "SE",
-    "lastUpdate": "2024-10-29T07:11:39.503Z",
+    "lastUpdate": "2025-01-19T16:53:37.987Z",
     "edition": "SingStar ABBA",
     "realBpm": 127,
     "volume": 1,
@@ -14658,6 +14658,31 @@
     "local": false
   },
   {
+    "id": "bleachers-rollercoaster",
+    "title": "Rollercoaster",
+    "artist": "Bleachers",
+    "video": "ldk2pLyVZ4c",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.75,
+    "gap": 45270.69498069498,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:10.934Z",
+    "realBpm": 162,
+    "volume": 0.78,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bleachersrollercoaster",
+    "local": false
+  },
+  {
     "id": "blenders-ciagnik",
     "title": "Ciągnik",
     "artist": "Blenders",
@@ -16180,6 +16205,56 @@
     ],
     "tracksCount": 1,
     "search": "borislavslavovbaldursgate3iwanttolive",
+    "local": false
+  },
+  {
+    "id": "bosse-der-letzte-tanz",
+    "title": "Der letzte Tanz",
+    "artist": "Bosse",
+    "video": "HkxvFc6ypWs",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 16079.23076923077,
+    "year": "2020",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.254Z",
+    "realBpm": 128,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bossederletztetanz",
+    "local": false
+  },
+  {
+    "id": "bosse-schonste-zeit",
+    "title": "Schönste Zeit",
+    "artist": "Bosse",
+    "video": "RTlzQEA-4oc",
+    "language": [
+      "German"
+    ],
+    "bpm": 242,
+    "gap": 21978.26446280992,
+    "year": "2013",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.405Z",
+    "realBpm": 121,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bosseschonstezeit",
     "local": false
   },
   {
@@ -18625,10 +18700,10 @@
       "English"
     ],
     "bpm": 289.9,
-    "gap": 12006.90238013108,
+    "gap": 11906.90238013108,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2024-11-09T00:11:01.913Z",
+    "lastUpdate": "2025-01-19T16:52:55.989Z",
     "realBpm": 145,
     "volume": 0.75,
     "author": "savik1993",
@@ -22272,6 +22347,31 @@
     ],
     "tracksCount": 1,
     "search": "chappellroanredwinesupernova",
+    "local": false
+  },
+  {
+    "id": "charlene-ive-never-been-to-me",
+    "title": "I’ve Never Been To Me",
+    "artist": "Charlene",
+    "video": "ImHHKw8LMcM",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.2,
+    "gap": 4627.199017199017,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:09.449Z",
+    "realBpm": 121,
+    "volume": 0.79,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "charleneiveneverbeentome",
     "local": false
   },
   {
@@ -30123,6 +30223,29 @@
     "local": false
   },
   {
+    "id": "disneys-aladdin-ein-traum-wird-wahr",
+    "title": "Ein Traum Wird Wahr",
+    "artist": "Disney's Aladdin",
+    "video": "dSAsZNt7jkE",
+    "language": [
+      "German"
+    ],
+    "bpm": 240.4,
+    "gap": 11562,
+    "year": "1992",
+    "lastUpdate": "2025-01-21T00:11:11.329Z",
+    "realBpm": 63,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysaladdineintraumwirdwahr",
+    "local": false
+  },
+  {
     "id": "disneys-aladin-a-whole-new-world",
     "title": "A Whole New World",
     "artist": "Disney's Aladin",
@@ -31717,6 +31840,33 @@
     ],
     "tracksCount": 1,
     "search": "disneysvaianaquehaymasalla",
+    "local": false
+  },
+  {
+    "id": "disneys-wizards-of-the-waverly-place-everything-is-not-what-it-seems",
+    "title": "Everything Is Not What It Seems",
+    "artist": "Disney’s Wizards of the Waverly Place",
+    "video": "J3Og4vG_xuo",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 230,
+    "year": "2009",
+    "lastUpdate": "2025-01-21T00:11:20.942Z",
+    "genre": "Soundtrack",
+    "realBpm": 125,
+    "previewStart": 18,
+    "previewEnd": 41,
+    "volume": 0.72,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyswizardsofthewaverlyplaceeverythingisnotwhatitseems",
     "local": false
   },
   {
@@ -39123,6 +39273,56 @@
     "local": false
   },
   {
+    "id": "filow-rasenschach",
+    "title": "Rasenschach",
+    "artist": "Filow",
+    "video": "uihkiu9uP4c",
+    "language": [
+      "German"
+    ],
+    "bpm": 159,
+    "gap": 10872.264150943396,
+    "year": "2024",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.120Z",
+    "realBpm": 159,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "filowrasenschach",
+    "local": false
+  },
+  {
+    "id": "filow-turbo",
+    "title": "Turbo",
+    "artist": "Filow",
+    "video": "sOUNKH4NqP8",
+    "language": [
+      "German"
+    ],
+    "bpm": 326,
+    "gap": 10697.730061349694,
+    "year": "2024",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:09.990Z",
+    "realBpm": 163,
+    "volume": 0.78,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "filowturbo",
+    "local": false
+  },
+  {
     "id": "finger-eleven-paralyzer",
     "title": "Paralyzer",
     "artist": "Finger Eleven",
@@ -42410,6 +42610,32 @@
     "local": false
   },
   {
+    "id": "glass-animals-youth",
+    "title": "Youth",
+    "artist": "Glass Animals",
+    "video": "_ZdsmLgCVdU",
+    "language": [
+      "English"
+    ],
+    "bpm": 374.75,
+    "gap": 19649.332888592395,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-21T00:11:10.805Z",
+    "genre": "Alternative",
+    "realBpm": 96,
+    "volume": 0.72,
+    "author": "Mircosoft93",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "glassanimalsyouth",
+    "local": false
+  },
+  {
     "id": "glee-cast-cant-fight-this-feeling",
     "title": "Can’t Fight This Feeling",
     "artist": "Glee Cast",
@@ -43255,6 +43481,32 @@
     ],
     "tracksCount": 1,
     "search": "grabbitzdieforyou",
+    "local": false
+  },
+  {
+    "id": "gracie-abrams-thats-so-true",
+    "title": "That’s So True",
+    "artist": "Gracie Abrams",
+    "video": "BDHM8cyJQa8",
+    "language": [
+      "English"
+    ],
+    "bpm": 434,
+    "gap": 6.820276497695659,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:11.202Z",
+    "genre": "Folk-Pop",
+    "realBpm": 109,
+    "volume": 0.92,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gracieabramsthatssotrue",
     "local": false
   },
   {
@@ -44959,12 +45211,13 @@
       "English"
     ],
     "bpm": 286.29,
-    "gap": 9495.50592057005,
+    "gap": 9445.50592057005,
     "year": "2019",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-02-24T23:41:44.930Z",
+    "lastUpdate": "2025-01-20T20:23:35.803Z",
     "genre": "Pop, funk",
     "realBpm": 95,
+    "volume": 0.76,
     "author": "Volodia",
     "tracks": [
       {
@@ -52869,6 +53122,85 @@
     "local": false
   },
   {
+    "id": "juli-perfekte-welle",
+    "title": "Perfekte Welle",
+    "artist": "Juli",
+    "video": "ad8ukI7Z-b8",
+    "language": [
+      "German"
+    ],
+    "bpm": 224.06,
+    "gap": 10635.804695170937,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:11.326Z",
+    "genre": "Rock",
+    "realBpm": 112,
+    "volume": 0.77,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juliperfektewelle",
+    "local": false
+  },
+  {
+    "id": "juli-regen-meer",
+    "title": "Regen + Meer",
+    "artist": "Juli",
+    "video": "V5C35L9mh6c",
+    "language": [
+      "German"
+    ],
+    "bpm": 388,
+    "gap": 27434.845360824744,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:11.062Z",
+    "genre": "Rock",
+    "videoGap": 25,
+    "realBpm": 93,
+    "volume": 0.86,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juliregenmeer",
+    "local": false
+  },
+  {
+    "id": "juli-wir-beide",
+    "title": "Wir beide",
+    "artist": "Juli",
+    "video": "7HJ48oJ7IQE",
+    "language": [
+      "German"
+    ],
+    "bpm": 340,
+    "gap": 22615.294117647056,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:11.327Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 0.76,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juliwirbeide",
+    "local": false
+  },
+  {
     "id": "julie-and-the-phantoms-edge-of-great",
     "title": "Edge Of Great",
     "artist": "Julie and the Phantoms",
@@ -57186,6 +57518,55 @@
     ],
     "tracksCount": 1,
     "search": "koujiwadafire",
+    "local": false
+  },
+  {
+    "id": "kraftklub-feat-tokio-hotel-fahr-mit-mir-4x4",
+    "title": "Fahr mit mir (4x4)",
+    "artist": "Kraftklub feat. Tokio Hotel",
+    "video": "-xuh3dz0jEo",
+    "language": [
+      "German"
+    ],
+    "bpm": 338.28,
+    "gap": 9640.134799574316,
+    "year": "2022",
+    "lastUpdate": "2025-01-21T00:11:10.124Z",
+    "realBpm": 85,
+    "volume": 0.77,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kraftklubfeattokiohotelfahrmitmir4x4",
+    "local": false
+  },
+  {
+    "id": "kraftklub-schusse-in-die-luft",
+    "title": "Schüsse in die Luft",
+    "artist": "Kraftklub",
+    "video": "Dx0MGYe4jR4",
+    "language": [
+      "German"
+    ],
+    "bpm": 284.03,
+    "gap": 20066.584867795656,
+    "year": "2014",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.123Z",
+    "realBpm": 142,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kraftklubschusseindieluft",
     "local": false
   },
   {
@@ -77196,13 +77577,13 @@
       "English"
     ],
     "bpm": 396,
-    "gap": 9865.151515151516,
+    "gap": 9965.151515151516,
     "year": "1993",
     "artistOrigin": "US",
-    "lastUpdate": "2023-12-28T19:33:32.437Z",
+    "lastUpdate": "2025-01-19T16:54:58.099Z",
     "edition": "None",
     "genre": "None",
-    "realBpm": 203,
+    "realBpm": 101,
     "volume": 0.74,
     "author": "Ampersand",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=4291",
@@ -78059,6 +78440,38 @@
     ],
     "tracksCount": 1,
     "search": "oasisliveforever",
+    "local": false
+  },
+  {
+    "id": "oasis-some-might-say",
+    "title": "Some Might Say",
+    "artist": "Oasis",
+    "video": "oxOjIj18I9E",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.46,
+    "gap": 34813.58680921548,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-01-21T00:11:20.942Z",
+    "edition": "Guitar Hero World Tour",
+    "genre": "Britpop",
+    "realBpm": 110,
+    "previewStart": 35,
+    "previewEnd": 89,
+    "volume": 0.76,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16223",
+    "tracks": [
+      {
+        "name": "Some Might Say",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oasissomemightsay",
     "local": false
   },
   {
@@ -85905,6 +86318,32 @@
     "local": false
   },
   {
+    "id": "rammstein-mutter",
+    "title": "Mutter",
+    "artist": "Rammstein",
+    "video": "gNdnVVHfseA",
+    "language": [
+      "German"
+    ],
+    "bpm": 231.94,
+    "gap": 13765.757301628328,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.804Z",
+    "genre": "industrial metal",
+    "realBpm": 116,
+    "volume": 0.72,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rammsteinmutter",
+    "local": false
+  },
+  {
     "id": "ramones-pet-sematary",
     "title": "Pet Sematary",
     "artist": "Ramones",
@@ -87048,6 +87487,32 @@
     ],
     "tracksCount": 1,
     "search": "retracksakatsukinokuruma",
+    "local": false
+  },
+  {
+    "id": "revolverheld-freunde-bleiben",
+    "title": "Freunde Bleiben",
+    "artist": "Revolverheld",
+    "video": "mgWOqtF6gZQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 350.3,
+    "gap": 10814.285714285714,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.659Z",
+    "genre": "Rock",
+    "realBpm": 90,
+    "volume": 0.77,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "revolverheldfreundebleiben",
     "local": false
   },
   {
@@ -89177,9 +89642,9 @@
       "English"
     ],
     "bpm": 254.49,
-    "gap": 297.9959919839679,
+    "gap": 247.99599198396788,
     "year": "2020",
-    "lastUpdate": "2024-11-25T00:12:17.631Z",
+    "lastUpdate": "2025-01-20T20:22:36.926Z",
     "realBpm": 125,
     "volume": 0.77,
     "author": "Rosa Walton and Hallie Coggins",
@@ -91381,6 +91846,55 @@
     "local": false
   },
   {
+    "id": "sdp-deine-freundin",
+    "title": "Deine Freundin",
+    "artist": "SDP",
+    "video": "6hJLq6JJSOw",
+    "language": [
+      "German"
+    ],
+    "bpm": 253.77,
+    "gap": 11645.15309138196,
+    "year": "2015",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:09.983Z",
+    "realBpm": 127,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpdeinefreundin",
+    "local": false
+  },
+  {
+    "id": "sdp-feat-adel-tawil-ich-will-nur-dass-du-weisst",
+    "title": "Ich will nur dass du weißt",
+    "artist": "SDP feat. Adel Tawil",
+    "video": "cZ58odQo87A",
+    "language": [
+      "German"
+    ],
+    "bpm": 332.3,
+    "gap": 14706.921456515198,
+    "year": "2015",
+    "lastUpdate": "2025-01-21T00:11:09.854Z",
+    "realBpm": 80,
+    "volume": 0.78,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpfeatadeltawilichwillnurdassduweisst",
+    "local": false
+  },
+  {
     "id": "sdp-feat-sido-die-nacht-von-freitag-auf-montag",
     "title": "Die Nacht von Freitag auf Montag",
     "artist": "SDP feat. Sido",
@@ -91405,6 +91919,129 @@
     ],
     "tracksCount": 1,
     "search": "sdpfeatsidodienachtvonfreitagaufmontag",
+    "local": false
+  },
+  {
+    "id": "sdp-feat-sido-ne-leiche",
+    "title": "Ne Leiche",
+    "artist": "SDP feat. Sido",
+    "video": "VP5B1UmgHfc",
+    "language": [
+      "German"
+    ],
+    "bpm": 280.03,
+    "gap": 17132.251901581974,
+    "year": "2010",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:09.988Z",
+    "realBpm": 140,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpfeatsidoneleiche",
+    "local": false
+  },
+  {
+    "id": "sdp-unikat",
+    "title": "Unikat",
+    "artist": "SDP",
+    "video": "7wVlLR4pYjg",
+    "language": [
+      "German"
+    ],
+    "bpm": 292,
+    "gap": 21693.972602739726,
+    "year": "2019",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:09.982Z",
+    "realBpm": 73,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpunikat",
+    "local": false
+  },
+  {
+    "id": "sdp-wenn-ich-gross-bin",
+    "title": "Wenn ich groß bin",
+    "artist": "SDP",
+    "video": "oTI3tRQ_-3k",
+    "language": [
+      "German"
+    ],
+    "bpm": 399.88,
+    "gap": 17007.196158847655,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:09.985Z",
+    "realBpm": 100,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpwennichgrossbin",
+    "local": false
+  },
+  {
+    "id": "sdp-x-clueso-die-schonsten-tage",
+    "title": "Die schönsten Tage",
+    "artist": "SDP x Clueso",
+    "video": "SXxvaMrMFnE",
+    "language": [
+      "German"
+    ],
+    "bpm": 480,
+    "gap": 8170,
+    "year": "2022",
+    "lastUpdate": "2025-01-21T00:11:09.726Z",
+    "realBpm": 120,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpxcluesodieschonstentage",
+    "local": false
+  },
+  {
+    "id": "sdp-x-sido-x-esther-graf-mama-hat-gesagt",
+    "title": "Mama hat gesagt",
+    "artist": "SDP x Sido x Esther Graf",
+    "video": "31rzVpAXQC0",
+    "language": [
+      "German"
+    ],
+    "bpm": 270,
+    "gap": 8700,
+    "year": "2024",
+    "lastUpdate": "2025-01-21T00:11:09.598Z",
+    "genre": "Rap",
+    "volume": 0.78,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpxsidoxesthergrafmamahatgesagt",
     "local": false
   },
   {
@@ -91799,6 +92436,31 @@
     ],
     "tracksCount": 1,
     "search": "selenagomezloseyoutoloveme",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-same-old-love",
+    "title": "Same Old Love",
+    "artist": "Selena Gomez",
+    "video": "9h30Bx4Klxg",
+    "language": [
+      "English"
+    ],
+    "bpm": 392.04,
+    "gap": 24415.203550658098,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:21.085Z",
+    "realBpm": 98,
+    "volume": 0.76,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezsameoldlove",
     "local": false
   },
   {
@@ -97953,6 +98615,31 @@
     "local": false
   },
   {
+    "id": "sxtn-fotzen-im-club",
+    "title": "Fotzen im Club",
+    "artist": "SXTN",
+    "video": "NH9HRlyos80",
+    "language": [
+      "German"
+    ],
+    "bpm": 239.79,
+    "gap": 7209.124233704491,
+    "year": "2016",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:08.803Z",
+    "realBpm": 120,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sxtnfotzenimclub",
+    "local": false
+  },
+  {
     "id": "sylver-turn-the-tide",
     "title": "Turn The Tide",
     "artist": "Sylver",
@@ -99775,6 +100462,58 @@
     "local": false
   },
   {
+    "id": "taylor-swift-anti-hero",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "video": "XqN2qFvY64U",
+    "language": [
+      "English"
+    ],
+    "bpm": 193.95,
+    "gap": 4444.586233565352,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:10.801Z",
+    "genre": "Pop",
+    "realBpm": 97,
+    "volume": 0.77,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftantihero",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-bad-blood",
+    "title": "Bad Blood",
+    "artist": "Taylor Swift",
+    "video": "d2_FwIIQvWQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.04,
+    "gap": -86.68686036936833,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:10.661Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "volume": 0.78,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftbadblood",
+    "local": false
+  },
+  {
     "id": "taylor-swift-better-than-revenge",
     "title": "Better Than Revenge",
     "artist": "Taylor Swift",
@@ -100046,6 +100785,31 @@
     "local": false
   },
   {
+    "id": "taylor-swift-ft-ice-spice-karma",
+    "title": "Karma",
+    "artist": "Taylor Swift ft. Ice Spice",
+    "video": "XzOvgu3GPwY",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 10230,
+    "year": "2023",
+    "lastUpdate": "2025-01-21T00:11:10.664Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 0.77,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftfticespicekarma",
+    "local": false
+  },
+  {
     "id": "taylor-swift-gorgeous",
     "title": "Gorgeous",
     "artist": "Taylor Swift",
@@ -100288,6 +101052,31 @@
     "local": false
   },
   {
+    "id": "taylor-swift-red",
+    "title": "Red",
+    "artist": "Taylor Swift",
+    "video": "Zlot0i3Zykw",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 14130,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:10.800Z",
+    "realBpm": 125,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftred",
+    "local": false
+  },
+  {
     "id": "taylor-swift-shake-it-off",
     "title": "Shake It Off",
     "artist": "Taylor Swift",
@@ -100364,6 +101153,31 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftvigilanteshit",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-we-are-never-ever-getting-back-together",
+    "title": "We Are Never Ever Getting Back Together",
+    "artist": "Taylor Swift",
+    "video": "WA4iX5D9Z64",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.02,
+    "gap": 8605.442752528188,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:10.662Z",
+    "realBpm": 172,
+    "volume": 0.74,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftweareneverevergettingbacktogether",
     "local": false
   },
   {
@@ -101260,13 +102074,15 @@
     "language": [
       "English"
     ],
-    "bpm": 309.87,
-    "gap": 7873.444670345629,
+    "bpm": 309.57,
+    "gap": 7823.444670345629,
     "year": "1967",
     "artistOrigin": "GB",
+    "lastUpdate": "2025-01-20T20:22:07.640Z",
     "edition": "The Beatles Rock Band",
     "genre": "Pop",
     "realBpm": 103,
+    "volume": 0.75,
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=All%20You%20Need%20Is%20Love",
@@ -103630,6 +104446,36 @@
     ],
     "tracksCount": 1,
     "search": "thekidsforelskailaerern",
+    "local": false
+  },
+  {
+    "id": "the-killers-be-still",
+    "title": "Be Still",
+    "artist": "The Killers",
+    "video": "3h-7YQ5hsEY",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 11588.5,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-01-21T00:11:21.086Z",
+    "genre": "Rock",
+    "realBpm": 144,
+    "previewStart": 63,
+    "previewEnd": 93,
+    "volume": 1,
+    "author": "Thomas Ustar",
+    "sourceUrl": "https://usdb.eu/download/374",
+    "tracks": [
+      {
+        "name": "Be Still",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thekillersbestill",
     "local": false
   },
   {
@@ -106650,6 +107496,31 @@
     "local": false
   },
   {
+    "id": "tim-toupet-ich-bin-ein-doner",
+    "title": "Ich bin ein Döner",
+    "artist": "Tim Toupet",
+    "video": "nQV399fwexg",
+    "language": [
+      "German"
+    ],
+    "bpm": 276,
+    "gap": 455.7391304347826,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.534Z",
+    "realBpm": 138,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "timtoupetichbineindoner",
+    "local": false
+  },
+  {
     "id": "timbaland-feat-keri-hilson-the-way-i-are",
     "title": "The Way I Are",
     "artist": "Timbaland feat. Keri Hilson",
@@ -107257,6 +108128,32 @@
     ],
     "tracksCount": 1,
     "search": "tokiohotelandeinerseiteichbinda",
+    "local": false
+  },
+  {
+    "id": "tokio-hotel-durch-den-monsun",
+    "title": "Durch Den Monsun",
+    "artist": "Tokio Hotel",
+    "video": "cnZvPQ6Swgs",
+    "language": [
+      "German"
+    ],
+    "bpm": 224,
+    "gap": 5672.535714285715,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.406Z",
+    "genre": "Rock",
+    "realBpm": 112,
+    "volume": 0.75,
+    "author": "TrollZor",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tokiohoteldurchdenmonsun",
     "local": false
   },
   {
@@ -112376,6 +113273,33 @@
     ],
     "tracksCount": 1,
     "search": "wirsindheldendenkmal",
+    "local": false
+  },
+  {
+    "id": "wir-sind-helden-nur-ein-wort",
+    "title": "Nur Ein Wort",
+    "artist": "Wir Sind Helden",
+    "video": "X5kmM98iklo",
+    "language": [
+      "German"
+    ],
+    "bpm": 350,
+    "gap": 11206.285714285714,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-01-21T00:11:10.408Z",
+    "genre": "Rock",
+    "realBpm": 187,
+    "volume": 0.76,
+    "author": "TrollZor",
+    "sourceUrl": "https://www.youtube.com/watch?v=X5kmM98iklo",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wirsindheldennureinwort",
     "local": false
   },
   {

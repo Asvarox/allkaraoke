@@ -1,0 +1,751 @@
+#ARTIST:SXTN
+#TITLE:Fotzen im Club
+#CREATOR:TrollZor
+#BPM:239,79
+#YEAR:2016
+#VIDEO:v=NH9HRlyos80
+#LANGUAGE:German
+#GAP:7209,124233704491
+#ALLKARAOKE_ID:sxtn-fotzen-im-club
+#ALLKARAOKE_LASTUPDATE:2025-01-21T00:11:08.803Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:0,76
+#MP3:SXTN - Fotzen im Club.mp3
+#COVER:SXTN - Fotzen im Club [CO].jpg
+#BACKGROUND:SXTN - Fotzen im Club [BG].jpg
+F 16 1 0 Vom 
+F 18 1 0 Don
+F 20 1 0 ners
+F 22 1 0 tag-
+F 24 1 0 Suff 
+F 28 1 0 noch 
+F 31 1 0 die 
+F 33 1 0 Res
+F 35 1 0 te 
+F 38 1 0 zwit
+F 41 1 0 schern
+- 42
+F 45 1 0 Make
+F 47 1 0 up 
+F 50 1 0 rauf
+F 54 1 0 kla
+F 58 1 0 tschen, 
+F 61 1 0 bis 
+F 63 1 0 die 
+F 65 1 0 Fres
+F 67 1 0 se 
+F 69 1 0 glit
+F 72 1 0 zert
+- 73
+F 76 1 0 Ei
+F 78 1 0 nen 
+F 81 1 0 rein
+F 83 1 0 dü
+F 86 1 0 beln, 
+F 89 3 0 weil 
+F 94 1 0 im 
+F 96 1 0 Club 
+F 99 1 0 ist 
+F 102 1 0 zu 
+F 105 1 0 teu
+F 107 1 0 er
+- 108
+F 111 1 0 Frei
+F 115 1 0 tag 
+F 118 1 0 ist 
+F 120 1 0 High-
+F 123 1 0 Tag, 
+F 126 4 0 gib 
+F 132 1 0 mal 
+F 135 1 0 Feu
+F 138 1 0 er
+- 139
+F 143 1 0 Ge
+F 145 1 0 nau 
+F 147 1 0 zwei 
+F 151 1 0 Po
+F 154 1 0 ba
+F 157 1 0 cken,
+- 158
+F 161 1 0 Al
+F 163 1 0 les 
+F 165 1 0 was 
+F 167 1 0 man 
+F 170 1 0 braucht
+- 171
+F 173 1 0 Und 
+F 175 1 0 die 
+F 177 1 0 kann 
+F 179 1 0 man 
+F 181 1 0 auch 
+F 183 1 0 sha
+F 186 1 0 ken
+- 187
+F 188 1 0 Ohne 
+F 190 1 0 Kleid
+F 194 1 0 chen 
+F 197 1 0 und 
+F 200 1 0 hohe 
+F 204 1 0 Ha
+F 208 1 0 cken
+- 209
+F 212 1 0 Wir 
+F 214 1 0 tra
+F 216 1 0 gen 
+F 218 1 0 Ni
+F 220 1 0 kes 
+F 222 1 0 und 
+F 224 1 0 so 
+F 227 1 0 ’ne 
+F 229 1 0 Sa
+F 231 1 0 chen
+- 232
+F 233 2 0 Trin
+F 238 1 0 ken 
+F 240 1 0 Wein
+F 242 1 0 chen 
+F 245 1 0 zum 
+F 247 1 0 Ein
+F 250 1 0 stieg,
+- 251
+F 254 1 0 Be
+F 256 1 0 reit 
+F 258 1 0 für 
+F 260 1 0 ’ne 
+F 263 1 0 gro
+F 265 1 0 ße 
+F 267 1 0 Nacht
+- 268
+F 272 1 0 Reicht 
+F 275 1 0 mit 
+F 277 1 0 dem 
+F 279 1 0 Vor
+F 282 1 0 glüh’n,
+- 283
+F 287 1 0 Ab 
+F 290 1 0 auf 
+F 292 1 0 die 
+F 295 1 0 Stra
+F 298 1 0 ße
+- 299
+F 302 1 0 Lus
+F 306 1 0 tige 
+F 310 1 0 Druf
+F 315 1 0 fis 
+F 318 1 0 und 
+F 320 1 0 Yup
+F 323 1 0 pie-
+F 326 1 0 Vi
+F 328 1 0 sa
+F 331 1 0 gen
+- 332
+F 334 1 0 Jetzt 
+F 336 1 0 erst 
+F 339 1 0 mal 
+F 342 1 0 zu 
+F 344 1 0 Spä
+F 347 1 0 ti, 
+F 351 1 0 dann 
+F 353 1 0 sau
+F 355 1 0 fen 
+F 358 1 0 wir 
+F 360 1 0 Bier
+- 361
+F 363 3 0 Die 
+F 368 1 0 Stra
+F 371 1 0 ßen 
+F 373 1 0 sind 
+F 376 1 0 voll,
+- 377
+F 379 3 0 Ge
+F 384 1 0 nau 
+F 386 1 0 so 
+F 389 1 0 wie 
+F 391 1 0 wir
+- 392
+F 396 3 0 Im 
+F 401 1 0 Bus 
+F 403 1 0 wer
+F 406 1 0 den 
+F 408 1 0 Jungs 
+F 412 1 0 ohne 
+F 414 1 0 Grund 
+F 419 1 0 ver
+F 422 1 0 mö
+F 425 1 0 belt
+- 426
+F 428 1 0 Was 
+F 431 1 0 pö
+F 435 1 0 beln, 
+F 438 1 0 du 
+F 440 1 0 Hund?
+- 441
+F 445 2 0 Dei
+F 448 1 0 ne 
+F 450 1 0 Mut
+F 452 1 0 ter 
+F 454 1 0 pö
+F 457 1 0 belt!
+- 458
+F 464 1 0 O
+F 466 1 0 ra
+F 469 1 0 ni
+F 471 1 0 en
+F 473 1 0 stra
+F 475 1 0 ße 
+F 477 1 0 noch 
+F 479 1 0 ’n 
+F 481 1 0 Whis
+F 483 1 0 key-
+F 486 1 0 schluck
+- 487
+F 491 1 0 Dann 
+F 494 1 0 im 
+F 496 1 0 Ein
+F 499 1 0 kaufs
+F 502 1 0 wa
+F 506 1 0 gen 
+F 509 1 0 in 
+F 512 1 0 Rich
+F 515 1 0 tung 
+F 517 1 0 Club
+- 518
+: 528 4 1 Scheiß 
+: 533 1 1 auf 
+: 535 5 -1 die 
+: 541 9 3 Ar
+: 551 9 1 beit, 
+: 562 3 1 scheiß 
+: 566 4 1 auf 
+: 571 3 -1 dein’n 
+: 575 8 -4 Chef
+- 583
+: 591 5 1 Wir 
+: 597 4 1 ge
+: 602 2 -1 hen 
+: 605 6 3 fei
+: 612 10 1 ern, 
+: 625 3 1 brau
+: 629 4 1 chen 
+: 634 4 -1 kein 
+: 639 8 -4 Cash
+- 647
+: 657 4 1 Gib 
+: 662 4 1 mir 
+: 667 2 -1 ’ne 
+: 670 5 3 Kip
+: 676 12 1 pe, 
+: 690 3 1 gib 
+: 694 3 1 mir 
+: 698 3 -1 dein 
+: 702 9 -4 Bier
+- 711
+: 720 4 1 Die 
+: 725 4 1 Nacht 
+: 730 3 -1 ist 
+: 734 3 1 jung, 
+: 738 3 1 denn 
+: 742 3 1 es 
+: 746 3 -1 ist 
+: 750 3 1 grad 
+: 754 6 1 mal 
+: 761 4 -1 um 
+: 766 8 3 vier
+- 774
+: 786 7 8 Ich 
+: 794 4 3 geh 
+: 799 3 1 heut 
+: 803 2 1 mit 
+: 806 3 1 mei
+: 810 2 -1 nen 
+: 813 4 1 Fot
+: 818 3 1 zen 
+: 822 3 -1 in 
+: 826 7 3 Club
+- 833 835
+- 835
+: 851 3 8 Wir 
+: 855 7 3 komm’n 
+: 863 2 1 rein 
+: 866 3 1 und 
+: 870 3 1 je
+: 874 3 -1 des 
+: 878 3 1 Op
+: 882 3 -1 fer 
+: 886 3 -1 hier 
+: 890 8 -4 guckt
+- 898 899
+- 899
+: 915 2 8 Die-
+: 918 6 3 ser 
+: 925 4 1 Scheiß 
+: 930 3 1 fickt 
+: 934 3 1 dei
+: 938 3 -1 ne 
+: 942 3 1 Bo
+: 946 3 1 xen 
+: 950 3 -1 ka
+: 954 3 3 putt
+: 958 8 1 , 
+: 968 8 -4 denn
+- 976
+: 978 8 8 Ich 
+: 987 3 3 bin 
+: 991 3 1 heut 
+: 995 2 1 mit 
+: 998 3 1 mei
+: 1002 2 -1 nen 
+: 1005 3 1 Fot
+: 1009 3 1 zen 
+: 1013 3 -1 im 
+: 1017 6 -4 Club
+- 1023
+: 1024 2 1 (Fot
+: 1027 1 1 zen 
+: 1029 3 -1 im 
+: 1033 5 -4 Club)
+- 1038
+: 1042 2 1 Fo-
+: 1045 3 1 Fo-
+: 1049 5 1 Fo-
+: 1055 3 1 Fot
+: 1059 2 1 zen 
+: 1062 2 -1 im 
+: 1065 6 -4 Club,
+- 1071
+: 1079 2 1 Fo-
+: 1082 1 1 Fo-
+: 1084 1 1 Fo-
+: 1086 3 1 Fot
+: 1090 3 1 zen 
+: 1094 2 -1 im 
+: 1097 7 -4 Club
+- 1104
+: 1107 2 1 Fo-
+: 1110 3 1 Fo-
+: 1114 4 1 Fo-
+: 1119 3 1 Fot
+: 1123 2 1 zen 
+: 1126 2 -1 im 
+: 1129 7 -4 Club,
+- 1136
+: 1143 2 1 Fo-
+: 1146 1 1 Fo-
+: 1148 1 1 Fo-
+: 1150 3 1 Fot
+: 1154 3 1 zen 
+: 1158 2 -1 im 
+: 1161 7 -4 Club
+- 1168
+: 1172 2 1 Fo-
+: 1175 3 1 Fo-
+: 1179 2 1 Fo-
+: 1182 3 1 Fot
+: 1186 3 1 zen 
+: 1190 2 -1 im 
+: 1193 6 -4 Club,
+- 1199
+: 1207 2 1 Fo-
+: 1210 1 1 Fo-
+: 1212 1 1 Fo-
+: 1214 3 1 Fot
+: 1218 3 1 zen 
+: 1222 2 -1 im 
+: 1225 7 -4 Club
+- 1232
+: 1234 2 1 Fo-
+: 1237 3 1 Fo-
+: 1241 4 1 Fo-
+: 1246 3 1 Fot
+: 1250 3 1 zen 
+: 1254 2 -1 im 
+: 1257 6 -4 Club,
+- 1263
+: 1269 2 1 Fo-
+: 1272 1 1 Fo-
+: 1274 1 1 Fo-
+: 1276 3 1 Fot
+: 1280 3 1 zen 
+: 1284 2 -1 im 
+: 1287 3 -4 Club
+- 1290
+F 1291 2 0 Ich 
+F 1294 1 0 steh 
+F 1297 1 0 an 
+F 1301 1 0 der 
+F 1303 1 0 Bar, 
+F 1311 1 0 to
+F 1314 1 0 des
+F 1316 1 0 be
+F 1319 1 0 sof
+F 1322 1 0 fen
+- 1323
+F 1327 1 0 Fla
+F 1329 1 0 sche 
+F 1332 1 0 ge
+F 1335 1 0 rekt, 
+F 1342 1 0 Ho
+F 1346 1 0 sen
+F 1348 1 0 stall 
+F 1351 1 0 of
+F 1354 1 0 fen
+- 1355
+F 1357 2 0 Ey, 
+F 1367 1 0 gib 
+F 1369 1 0 mir 
+F 1371 1 0 dei
+F 1373 1 0 ne 
+F 1375 1 0 Koh
+F 1379 1 0 le, 
+F 1381 1 0 du 
+F 1384 1 0 Trot
+F 1387 1 0 tel
+- 1388
+F 1391 2 0 SXTN, 
+F 1400 1 0 dei
+F 1402 1 0 ne 
+F 1404 1 0 neu
+F 1406 1 0 e 
+F 1408 1 0 Dro
+F 1411 1 0 ge 
+F 1413 1 0 der 
+F 1416 1 0 Wo
+F 1418 1 0 che
+- 1419
+F 1421 1 0 Ihr 
+F 1423 1 0 seid 
+F 1425 1 0 Op
+F 1427 1 0 fer,
+- 1428
+F 1435 1 0 Des
+F 1437 1 0 halb 
+F 1439 1 0 kokst 
+F 1442 1 0 ihr 
+F 1445 1 0 auch 
+F 1447 1 0 so 
+F 1449 1 0 viel
+- 1450
+F 1453 1 0 Du 
+F 1455 1 0 wirst 
+F 1457 1 0 lang
+F 1459 1 0 sam 
+F 1461 1 0 wie
+F 1463 1 0 der 
+F 1465 1 0 häss
+F 1467 1 0 lich,
+- 1468
+F 1469 1 0 Also 
+F 1471 1 0 hol 
+F 1473 1 0 ick 
+F 1475 1 0 noch 
+F 1477 1 0 ’n 
+F 1479 1 0 Bier
+- 1480
+F 1483 1 0 Bei 
+F 1485 1 0 der 
+F 1487 1 0 Bar-
+F 1490 1 0 Fot
+F 1493 1 0 ze,
+- 1494
+F 1496 1 0 Sie 
+F 1498 1 0 ist 
+F 1500 1 0 voll 
+F 1502 1 0 am 
+F 1504 1 0 Start
+- 1505
+F 1506 1 0 Trotz
+F 1509 1 0 dem 
+F 1511 1 0 ist 
+F 1513 1 0 sie 
+F 1515 1 0 nicht 
+F 1517 1 0 be
+F 1519 1 0 gei
+F 1521 1 0 stert,
+- 1522
+F 1523 1 0 Dass 
+F 1525 1 0 ihr 
+F 1527 1 0 Nu
+F 1529 1 0 ra 
+F 1531 1 0 vor 
+F 1533 1 0 die 
+F 1535 1 0 Bar 
+F 1537 1 0 kotzt
+- 1538
+F 1543 1 0 Ja
+F 1545 1 0 ba
+F 1547 1 0 da
+F 1549 1 0 ba, 
+F 1551 1 0 du 
+F 1562 1 0 hast 
+F 1564 1 0 ’n 
+F 1568 1 0 Arsch 
+F 1571 1 0 wie 
+F 1573 1 0 ’ne 
+F 1575 1 0 Kuh
+- 1576
+F 1579 1 0 Kei
+F 1581 1 0 ne 
+F 1583 1 0 an
+F 1585 1 0 de
+F 1587 1 0 re 
+F 1591 1 0 hat 
+F 1593 1 0 so 
+F 1595 1 0 ein 
+F 1598 1 0 An
+F 1601 1 0 ker-
+F 1603 1 0 Tat
+F 1605 1 0 too
+- 1606
+F 1612 3 0 Du 
+F 1618 1 0 und 
+F 1620 1 0 dei
+F 1622 1 0 ne 
+F 1624 1 0 At
+F 1626 1 0 zen,
+- 1627
+F 1629 1 0 Krass 
+F 1633 1 0 auf 
+F 1635 1 0 A
+F 1637 1 0 na
+F 1639 1 0 bo
+F 1641 1 0 li
+F 1643 1 0 ka
+- 1644
+F 1646 1 0 Ick 
+F 1649 1 0 und 
+F 1651 1 0 meene 
+F 1653 1 0 Fot
+F 1655 1 0 zen 
+F 1657 1 0 blei
+F 1661 1 0 ben 
+F 1663 1 0 lie
+F 1665 1 0 ber 
+F 1667 1 0 Al
+F 1669 1 0 ko
+F 1671 1 0 ho
+F 1673 1 0 li
+F 1675 1 0 ker
+- 1676
+F 1691 2 0 Du 
+F 1695 1 0 willst 
+F 1697 1 0 ihn 
+F 1699 1 0 über 
+F 1706 1 0 drei 
+F 1708 1 0 E
+F 1710 1 0 cken 
+F 1712 1 0 rein
+F 1714 1 0 ste
+F 1716 1 0 cken?
+- 1717
+F 1719 1 0 Nein, 
+F 1721 1 0 lass 
+F 1724 1 0 mal 
+F 1726 1 0 sein, 
+F 1730 1 0 wir 
+F 1732 1 0 sind 
+F 1734 1 0 high, 
+F 1737 1 0 ey!
+- 1738
+F 1742 1 0 Bitch
+F 1745 1 0 move, 
+F 1750 1 0 wenn 
+F 1752 1 0 du 
+F 1754 1 0 nicht 
+F 1756 1 0 so
+F 1758 1 0 fort 
+F 1761 1 0 für 
+F 1763 1 0 uns 
+F 1765 1 0 Platz 
+F 1769 1 0 machst
+- 1770
+F 1773 1 0 Move 
+F 1778 1 0 Bitch, 
+F 1782 1 0 denn 
+F 1784 1 0 wir 
+F 1786 1 0 tan
+F 1788 1 0 zen 
+F 1790 1 0 heut 
+F 1792 1 0 die 
+F 1794 1 0 gan
+F 1796 1 0 ze 
+F 1798 1 0 Nacht 
+F 1801 1 0 lang
+- 1802
+: 1807 4 1 Scheiß 
+: 1812 1 1 auf 
+: 1814 5 -1 die 
+: 1820 9 3 Ar
+: 1830 9 1 beit, 
+: 1841 3 1 scheiß 
+: 1845 4 1 auf 
+: 1850 3 -1 dein’n 
+: 1854 8 -4 Chef
+- 1862
+: 1873 5 1 Wir 
+: 1879 4 1 ge
+: 1884 2 -1 hen 
+: 1887 6 3 fei
+: 1894 10 1 ern, 
+: 1907 3 1 brau
+: 1911 3 1 chen 
+: 1915 3 -1 kein 
+: 1919 8 -4 Cash
+- 1927
+: 1936 4 1 Gib 
+: 1941 4 1 mir 
+: 1946 2 -1 ’ne 
+: 1949 5 3 Kip
+: 1955 12 1 pe, 
+: 1969 3 1 gib 
+: 1973 3 1 mir 
+: 1977 3 -1 dein 
+: 1981 9 -4 Bier
+- 1990
+: 2002 4 1 Die 
+: 2007 4 1 Nacht 
+: 2012 3 -1 ist 
+: 2016 3 1 jung, 
+: 2020 3 1 denn 
+: 2024 3 1 es 
+: 2028 3 -1 ist 
+: 2032 3 1 grad 
+: 2036 6 1 mal 
+: 2043 4 -1 um 
+: 2048 8 3 vier
+- 2056
+: 2064 7 8 Ich 
+: 2072 4 3 geh 
+: 2077 3 1 heut 
+: 2081 2 1 mit 
+: 2084 3 1 mei
+: 2088 2 -1 nen 
+: 2091 4 1 Fot
+: 2096 3 1 zen 
+: 2100 3 -1 in 
+: 2104 7 3 Club
+- 2111 2113
+- 2113
+: 2129 3 8 Wir 
+: 2133 7 3 komm’n 
+: 2141 2 1 rein 
+: 2144 3 1 und 
+: 2148 3 1 je
+: 2152 3 -1 des 
+: 2156 3 1 Op
+: 2160 3 -1 fer 
+: 2164 3 -1 hier 
+: 2168 8 -4 guckt
+- 2176 2177
+- 2177
+: 2193 2 8 Die
+: 2196 6 3 ser 
+: 2203 4 1 Scheiß 
+: 2208 3 1 fickt 
+: 2212 3 1 dei
+: 2216 3 -1 ne 
+: 2220 3 1 Bo
+: 2224 3 1 xen 
+: 2228 3 -1 ka
+: 2232 3 3 putt
+: 2236 8 1 , 
+: 2246 8 -4 denn
+- 2254
+: 2257 8 8 Ich 
+: 2266 3 3 bin 
+: 2270 3 1 heut 
+: 2274 2 1 mit 
+: 2277 3 1 mei
+: 2281 2 -1 nen 
+: 2284 3 1 Fot
+: 2288 3 1 zen 
+: 2292 3 -1 im 
+: 2296 6 -4 Club
+- 2302
+: 2303 2 1 (Fot
+: 2306 1 1 zen 
+: 2308 3 -1 im 
+: 2312 5 -4 Club)
+- 2317
+: 2322 2 1 Fo-
+: 2325 3 1 Fo-
+: 2329 5 1 Fo-
+: 2335 3 1 Fot
+: 2339 2 1 zen 
+: 2342 2 -1 im 
+: 2345 6 -4 Club,
+- 2351
+: 2356 2 1 Fo-
+: 2359 1 1 Fo-
+: 2361 1 1 Fo-
+: 2363 3 1 Fot
+: 2367 3 1 zen 
+: 2371 3 -1 im 
+: 2375 7 -4 Club
+- 2382
+: 2384 2 1 Fo-
+: 2387 3 1 Fo-
+: 2391 5 1 Fo-
+: 2397 3 1 Fot
+: 2401 2 1 zen 
+: 2404 2 -1 im 
+: 2407 6 -4 Club,
+- 2413
+: 2420 2 1 Fo-
+: 2423 1 1 Fo-
+: 2425 2 1 Fo-
+: 2428 3 1 Fot
+: 2432 3 1 zen 
+: 2436 3 -1 im 
+: 2440 7 -4 Club
+- 2447
+: 2449 2 1 Fo-
+: 2452 3 1 Fo-
+: 2456 5 1 Fo-
+: 2462 3 1 Fot
+: 2466 2 1 zen 
+: 2469 3 -1 im 
+: 2473 5 -4 Club,
+- 2478
+: 2485 2 1 Fo-
+: 2488 1 1 Fo-
+: 2490 2 1 Fo-
+: 2493 2 1 Fot
+: 2496 4 1 zen 
+: 2501 3 -1 im 
+: 2505 6 -4 Club
+- 2511
+: 2513 2 1 Fo-
+: 2516 3 1 Fo-
+: 2520 5 1 Fo-
+: 2526 3 1 Fot
+: 2530 2 1 zen 
+: 2533 3 -1 im 
+: 2537 5 -4 Club,
+- 2542
+: 2550 2 1 Fo-
+: 2553 1 1 Fo-
+: 2555 1 1 Fo-
+: 2557 3 1 Fot
+: 2561 3 1 zen 
+: 2565 3 -1 im 
+: 2569 7 -4 Club
+- 2576 2661
+- 2661
+: 2677 2 1 Fo-
+: 2680 3 1 Fo-
+: 2684 1 1 Fo-
+: 2686 2 1 Fot
+: 2689 2 1 zen 
+: 2692 3 -1 im 
+: 2696 8 -4 Club
+- 2704 2791
+- 2791
+: 2807 2 1 Fo-
+: 2810 3 1 Fo-
+: 2814 1 1 Fo-
+: 2816 2 1 Fo
+: 2819 2 1 tzen 
+: 2822 3 -1 im 
+: 2826 8 -4 Club
+E
