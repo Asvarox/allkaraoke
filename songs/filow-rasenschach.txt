@@ -1,0 +1,533 @@
+#ARTIST:Filow
+#TITLE:Rasenschach
+#CREATOR:TrollZor
+#BPM:159
+#YEAR:2024
+#VIDEO:v=uihkiu9uP4c
+#LANGUAGE:German
+#GAP:10872,264150943396
+#ALLKARAOKE_ID:filow-rasenschach
+#ALLKARAOKE_LASTUPDATE:2025-01-21T00:11:10.120Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:159
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Filow - Rasenschach.mp3
+#COVER:Filow - Rasenschach [CO].jpg
+#BACKGROUND:Filow - Rasenschach [BG].jpg
+R 11 3 0 Ja 
+R 15 1 0 (I
+R 17 1 0 cke), 
+R 19 3 0 ja 
+R 23 1 0 (Yeah)
+- 24
+R 25 1 0 Sie 
+R 27 1 0 trägt 
+R 29 1 0 ein 
+R 31 3 0 Deutsch
+R 35 3 0 land-
+R 39 1 0 Kle
+R 41 1 0 be
+R 43 3 0 tat
+R 47 3 0 too 
+R 51 1 0 auf 
+R 53 1 0 der 
+R 55 1 0 Fo
+R 57 3 0 tze
+- 60
+R 63 1 0 Ick 
+R 65 1 0 sitz' 
+R 67 1 0 in 
+R 69 1 0 mein' 
+R 71 1 0 Trai
+R 73 1 0 nings
+R 75 3 0 an
+R 79 3 0 zug 
+R 83 1 0 vor 
+R 85 1 0 der 
+R 87 1 0 Glo
+R 89 3 0 tze
+- 92
+R 99 1 0 Gleich 
+R 101 1 0 is 
+R 103 1 0 An
+R 105 3 0 pfiff, 
+R 109 1 0 sie 
+R 111 1 0 fragt 
+R 113 1 0 mich, 
+R 115 1 0 ob 
+R 117 1 0 sie 
+R 119 1 0 Schwanz 
+R 121 3 0 kricht
+- 124
+R 127 1 0 Nein, 
+R 129 1 0 a
+R 131 1 0 ber 
+R 133 1 0 sie 
+R 135 1 0 darf 
+R 137 1 0 mein'n 
+R 139 1 0 Pim
+R 141 1 0 mel 
+R 143 1 0 bla
+R 145 1 0 sen 
+R 147 1 0 un
+R 149 1 0 term 
+R 151 1 0 Stamm
+R 153 3 0 tisch
+- 156
+R 159 3 0 Heh, 
+R 163 1 0 ick 
+R 165 1 0 bin 
+R 167 1 0 ra
+R 169 1 0 tze
+R 171 3 0 voll, 
+R 175 1 0 ick 
+R 177 1 0 bin 
+R 179 1 0 nich 
+R 181 1 0 janz 
+R 183 3 0 dicht
+- 186
+R 189 1 0 Ick 
+R 191 1 0 le
+R 193 1 0 be 
+R 195 1 0 für 
+R 197 1 0 dit 
+R 199 1 0 At
+R 201 1 0 zen
+R 203 3 0 volk 
+R 207 1 0 und 
+R 209 1 0 jetz 
+R 211 1 0 wird 
+R 213 1 0 je
+R 215 3 0 kickt
+- 218
+R 223 3 0 Deutsch
+R 227 3 0 land
+R 231 1 0 flag
+R 233 1 0 ge, 
+R 235 3 0 zwei 
+R 239 3 0 Stück 
+R 243 1 0 im 
+R 245 1 0 Je
+R 247 3 0 sicht
+- 250
+R 251 1 0 Ers
+R 253 1 0 te 
+R 255 1 0 Stro
+R 257 1 0 phe 
+R 259 1 0 sing' 
+R 261 1 0 ick 
+R 263 3 0 mit, 
+R 267 1 0 dit 
+R 269 1 0 war 
+R 271 1 0 kee
+R 273 1 0 ne 
+R 275 3 0 Ab
+R 279 3 0 sicht
+- 282
+R 287 3 0 Chips 
+R 291 1 0 Fun
+R 293 1 0 ny-
+R 295 3 0 Frisch, 
+R 303 3 0 Tisch 
+R 307 1 0 Flie
+R 309 1 0 sen
+R 311 3 0 tisch
+- 314
+R 319 1 0 Bier 
+R 321 1 0 is 
+R 323 1 0 von 
+R 325 1 0 der 
+R 327 1 0 Tan
+R 329 1 0 kе, 
+R 331 1 0 mir 
+R 333 1 0 e
+R 335 1 0 jal, 
+R 337 1 0 wel
+R 339 1 0 chet 
+R 341 1 0 dit 
+R 343 3 0 is
+- 346
+R 351 3 0 Schwarz-
+R 355 3 0 Rot-
+R 359 3 0 Jold, 
+R 367 3 0 Glas 
+R 371 3 0 is 
+R 375 3 0 voll
+- 378
+R 381 1 0 Wir 
+R 383 1 0 tö
+R 385 1 0 ten 
+R 387 1 0 al
+R 389 1 0 le 
+R 391 1 0 Na
+R 393 1 0 zis 
+R 395 1 0 und 
+R 397 1 0 ihr 
+R 399 3 0 Ha
+R 403 3 0 ken
+R 407 3 0 kreuz
+- 410
+R 415 3 0 Deutsch
+R 419 7 0 land, 
+R 429 1 0 dit 
+R 431 1 0 Run
+R 433 1 0 de 
+R 435 1 0 muss 
+R 437 1 0 ins 
+R 439 1 0 E
+R 441 1 0 cki
+R 443 3 0 ge
+- 446
+R 449 1 0 Scheiß' 
+R 451 1 0 auf 
+R 453 1 0 ve
+R 455 1 0 gan, 
+R 457 1 0 ick 
+R 459 1 0 brauch' 
+R 461 1 0 wat 
+R 463 1 0 Fet
+R 465 1 0 ti
+R 467 1 0 ges 
+R 469 1 0 zum 
+R 471 1 0 Fres
+R 473 1 0 sen 
+R 475 3 0 jetz
+- 478
+R 479 3 0 Ölf 
+R 483 7 0 Mann 
+R 491 1 0 auf 
+R 493 1 0 dem 
+R 495 3 0 Platz, 
+R 499 1 0 Ra
+R 501 1 0 sen
+R 503 3 0 schach
+- 506
+R 509 1 0 Wir 
+R 511 1 0 fa
+R 513 1 0 ckeln 
+R 515 1 0 al
+R 517 1 0 let 
+R 519 1 0 ab, 
+R 521 1 0 weil 
+R 523 1 0 Py
+R 525 1 0 ro
+R 527 1 0 tech
+R 529 1 0 nik 
+R 531 1 0 keen 
+R 533 1 0 Ver
+R 535 1 0 bre
+R 537 1 0 chen 
+R 539 3 0 is
+- 542
+R 543 3 0 Deutsch
+R 547 7 0 land, 
+R 557 1 0 dit 
+R 559 1 0 Run
+R 561 1 0 de 
+R 563 1 0 muss 
+R 565 1 0 ins 
+R 567 1 0 E
+R 569 1 0 cki
+R 571 3 0 ge
+- 574
+R 577 1 0 Scheiß' 
+R 579 1 0 auf 
+R 581 1 0 ve
+R 583 1 0 gan, 
+R 585 1 0 ick 
+R 587 1 0 brauch' 
+R 589 1 0 wat 
+R 591 1 0 Fet
+R 593 1 0 ti
+R 595 1 0 ges 
+R 597 1 0 zum 
+R 599 1 0 Fres
+R 601 1 0 sen 
+R 603 3 0 jetz
+- 606
+R 607 3 0 Ölf 
+R 611 7 0 Mann 
+R 619 1 0 auf 
+R 621 1 0 dem 
+R 623 3 0 Platz, 
+R 627 1 0 Ra
+R 629 1 0 sen
+R 631 3 0 schach
+- 634
+R 637 1 0 Wir 
+R 639 1 0 fa
+R 641 1 0 ckeln 
+R 643 1 0 al
+R 645 1 0 let 
+R 647 1 0 ab, 
+R 649 1 0 weil 
+R 651 1 0 Py
+R 653 1 0 ro
+R 655 1 0 tech
+R 657 1 0 nik 
+R 659 1 0 keen 
+R 661 1 0 Ver
+R 663 1 0 bre
+R 665 1 0 chen 
+R 667 3 0 is
+- 670
+R 671 1 0 Kip
+R 673 1 0 pen 
+R 675 1 0 in
+R 677 1 0 ne 
+R 679 1 0 So
+R 681 1 0 cken, 
+R 683 1 0 so 
+R 685 1 0 als 
+R 687 1 0 wär 
+R 689 1 0 ick 
+R 691 1 0 Wal
+R 693 1 0 ter 
+R 695 3 0 Frosch
+- 698
+R 699 1 0 Ick 
+R 701 1 0 spiel' 
+R 703 1 0 sel
+R 705 1 0 ber 
+R 707 1 0 zwar 
+R 709 1 0 keen 
+R 711 1 0 Fuß
+R 713 1 0 ball, 
+R 715 1 0 trotz
+R 717 1 0 dem 
+R 719 1 0 hab' 
+R 721 1 0 ick 
+R 723 1 0 ein
+R 725 1 0 je
+R 727 1 0 locht
+- 728
+R 729 1 0 Ick 
+R 731 1 0 hab' 
+R 733 1 0 se 
+R 735 3 0 ein
+R 739 3 0 je
+R 743 3 0 netzt, 
+R 747 1 0 da
+R 749 1 0 nach 
+R 751 1 0 hab' 
+R 753 1 0 ick 
+R 755 1 0 sie 
+R 757 1 0 je
+R 759 3 0 korbt
+- 762
+R 763 1 0 Kee
+R 765 1 0 ne 
+R 767 1 0 Lie
+R 769 1 0 be 
+R 771 1 0 für 
+R 773 1 0 die 
+R 775 1 0 Püp
+R 777 1 0 pis, 
+R 779 1 0 weil 
+R 781 1 0 ick 
+R 783 1 0 lie
+R 785 1 0 be 
+R 787 1 0 nur 
+R 789 1 0 den 
+R 791 3 0 Sport
+- 794
+R 805 1 0 A
+R 807 1 0 ler
+R 809 3 0 ta, 
+R 815 1 0 jetz 
+R 817 1 0 mach' 
+R 819 1 0 ick 
+R 821 1 0 A
+R 823 3 0 larm
+- 826
+R 827 1 0 Sie 
+R 829 1 0 spielt 
+R 831 1 0 och 
+R 833 1 0 keen 
+R 835 1 0 Fuß
+R 837 1 0 ball, 
+R 839 1 0 doch 
+R 841 1 0 hält 
+R 843 1 0 mei
+R 845 1 0 ne 
+R 847 1 0 Bäl
+R 849 1 0 le 
+R 851 1 0 wie 
+R 853 1 0 der 
+R 855 3 0 Kahn
+- 858
+R 859 1 0 Ei
+R 861 1 0 gen
+R 863 3 0 tor 
+R 867 1 0 Gün
+R 869 1 0 do
+R 871 3 0 ğan, 
+R 877 1 0 dit 
+R 879 1 0 war 
+R 881 1 0 so 
+R 883 1 0 nich 
+R 885 1 0 je
+R 887 3 0 plant
+- 890
+R 893 1 0 Ick 
+R 895 1 0 hö
+R 897 1 0 re 
+R 899 1 0 ee
+R 901 1 0 nen 
+R 903 1 0 Fa
+R 905 1 0 scho, 
+R 907 1 0 dit 
+R 909 1 0 macht 
+R 911 1 0 ra-
+R 913 1 0 ta-
+R 915 1 0 ta-
+R 917 1 0 ta-
+R 919 3 0 ta
+- 922
+R 927 3 0 Chips 
+R 931 1 0 Fun
+R 933 1 0 ny-
+R 935 3 0 Frisch, 
+R 943 3 0 Tisch 
+R 947 1 0 Flie
+R 949 1 0 sen
+R 951 3 0 tisch
+- 954
+R 959 1 0 Bier 
+R 961 1 0 is 
+R 963 1 0 von 
+R 965 1 0 der 
+R 967 1 0 Tan
+R 969 1 0 ke, 
+R 971 1 0 mir 
+R 973 1 0 e
+R 975 1 0 jal, 
+R 977 1 0 wel
+R 979 1 0 chet 
+R 981 1 0 dit 
+R 983 3 0 is
+- 986
+R 991 3 0 Schwarz-
+R 995 3 0 Rot-
+R 999 3 0 Jold, 
+R 1007 3 0 Glas 
+R 1011 3 0 is 
+R 1015 3 0 voll
+- 1018
+R 1021 1 0 Wir 
+R 1023 1 0 tö
+R 1025 1 0 ten 
+R 1027 1 0 al
+R 1029 1 0 le 
+R 1031 1 0 Na
+R 1033 1 0 zis 
+R 1035 1 0 und 
+R 1037 1 0 ihr 
+R 1039 3 0 Ha
+R 1043 3 0 ken
+R 1047 3 0 kreuz
+- 1050
+R 1055 3 0 Deutsch
+R 1059 7 0 land, 
+R 1069 1 0 dit 
+R 1071 1 0 Run
+R 1073 1 0 de 
+R 1075 1 0 muss 
+R 1077 1 0 ins 
+R 1079 1 0 E
+R 1081 1 0 cki
+R 1083 3 0 ge
+- 1086
+R 1089 1 0 Scheiß' 
+R 1091 1 0 auf 
+R 1093 1 0 ve
+R 1095 1 0 gan, 
+R 1097 1 0 ick 
+R 1099 1 0 brauch' 
+R 1101 1 0 wat 
+R 1103 1 0 Fet
+R 1105 1 0 ti
+R 1107 1 0 ges 
+R 1109 1 0 zum 
+R 1111 1 0 Fres
+R 1113 1 0 sen 
+R 1115 3 0 jetz
+- 1118
+R 1119 3 0 Ölf 
+R 1123 7 0 Mann 
+R 1131 1 0 auf 
+R 1133 1 0 dem 
+R 1135 3 0 Platz, 
+R 1139 1 0 Ra
+R 1141 1 0 sen
+R 1143 3 0 schach
+- 1146
+R 1149 1 0 Wir 
+R 1151 1 0 fa
+R 1153 1 0 ckeln 
+R 1155 1 0 al
+R 1157 1 0 let 
+R 1159 1 0 ab, 
+R 1161 1 0 weil 
+R 1163 1 0 Py
+R 1165 1 0 ro
+R 1167 1 0 tech
+R 1169 1 0 nik 
+R 1171 1 0 keen 
+R 1173 1 0 Ver
+R 1175 1 0 bre
+R 1177 1 0 chen 
+R 1179 3 0 is
+- 1182
+R 1183 3 4 Deutsch
+R 1187 7 4 land, 
+R 1197 1 3 dit 
+R 1199 1 3 Run
+R 1201 1 4 de 
+R 1203 1 4 muss 
+R 1205 1 4 ins 
+R 1207 1 3 E
+R 1209 1 4 cki
+R 1211 3 4 ge
+- 1214
+R 1217 1 0 Scheiß' 
+R 1219 1 0 auf 
+R 1221 1 0 ve
+R 1223 1 0 gan, 
+R 1225 1 0 ick 
+R 1227 1 0 brauch' 
+R 1229 1 0 wat 
+R 1231 1 0 Fet
+R 1233 1 0 ti
+R 1235 1 0 ges 
+R 1237 1 0 zum 
+R 1239 1 0 Fres
+R 1241 1 0 sen 
+R 1243 3 0 jetz
+- 1246
+R 1247 3 0 Ölf 
+R 1251 7 0 Mann 
+R 1259 1 0 auf 
+R 1261 1 0 dem 
+R 1263 3 0 Platz, 
+R 1267 1 0 Ra
+R 1269 1 0 sen
+R 1271 3 0 schach
+- 1274
+R 1277 1 0 Wir 
+R 1279 1 0 fa
+R 1281 1 0 ckeln 
+R 1283 1 0 all
+R 1285 1 0 et 
+R 1287 1 0 ab, 
+R 1289 1 0 weil 
+R 1291 1 0 Py
+R 1293 1 0 ro
+R 1295 1 0 tech
+R 1297 1 0 nik 
+R 1299 1 0 keen 
+R 1301 1 0 Ver
+R 1303 1 0 bre
+R 1305 1 0 chen 
+R 1307 3 0 is
+E

@@ -1,0 +1,780 @@
+#ARTIST:Filow
+#TITLE:Turbo
+#CREATOR:TrollZor
+#BPM:326
+#YEAR:2024
+#VIDEO:v=sOUNKH4NqP8
+#LANGUAGE:German
+#GAP:10697,730061349694
+#ALLKARAOKE_ID:filow-turbo
+#ALLKARAOKE_LASTUPDATE:2025-01-21T00:11:09.990Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:163
+#ALLKARAOKE_VOLUME:0,78
+#MP3:Filow - Turbo.mp3
+#COVER:Filow - Turbo [CO].jpg
+#BACKGROUND:Filow - Turbo [BG].jpg
+R 22 5 0 T-
+R 30 5 0 U-
+R 38 5 0 R-
+R 46 5 0 B-
+R 54 5 0 O
+- 59
+R 63 3 0 Das 
+R 67 3 0 is 
+R 71 3 0 Tur
+R 75 3 0 bo, 
+R 79 3 0 Jun
+R 83 3 0 ge
+- 86
+R 91 3 0 Ich 
+R 95 3 0 lau
+R 99 3 0 fe 
+R 103 3 0 nicht, 
+R 107 3 0 son
+R 111 3 0 dern 
+R 115 3 0 fahr' 
+R 119 3 0 Scoo
+R 123 1 0 ter
+- 124
+R 127 3 0 Ich 
+R 131 3 0 hab 
+R 135 3 0 Ro
+R 139 3 0 cher
+R 143 3 0 lun
+R 147 1 0 ge
+- 148
+R 151 5 0 Sie 
+R 159 5 0 is' 
+R 167 5 0 auf 
+R 175 5 0 mein' 
+R 183 4 0 Schoß
+- 187
+R 191 3 0 Bin 
+R 195 3 0 ein 
+R 199 3 0 bö
+R 203 3 0 ser 
+R 207 3 0 Jun
+R 211 3 0 ge
+- 214
+R 219 3 0 Ich 
+R 223 3 0 fahr 
+R 227 3 0 um 
+R 231 3 0 drei 
+R 235 3 0 Uhr 
+R 239 3 0 Nachts 
+R 243 3 0 zur 
+R 247 3 0 Dö
+R 251 3 0 ner
+R 255 3 0 bu
+R 259 3 0 de 
+F 263 5 0 (O
+F 271 4 0 kay)
+- 275
+R 279 5 0 T-
+R 287 5 0 U-
+R 295 5 0 R-
+R 303 5 0 B-
+R 311 4 0 O
+- 315
+R 319 3 0 Das 
+R 323 3 0 is 
+R 327 3 0 Tur
+R 331 3 0 bo, 
+R 335 3 0 Jun
+R 339 3 0 ge
+- 342
+R 347 3 0 Ich 
+R 351 3 0 lau
+R 355 3 0 fe 
+R 359 3 0 nicht, 
+R 363 3 0 son
+R 367 3 0 dern 
+R 371 3 0 fahr' 
+R 375 3 0 Scoo
+R 379 1 0 ter
+- 380
+R 383 3 0 Ich 
+R 387 3 0 hab 
+R 391 3 0 Ro
+R 395 3 0 cher
+R 399 3 0 lun
+R 403 1 0 ge
+- 404
+R 407 5 0 Sie 
+R 415 5 0 is' 
+R 423 5 0 auf 
+R 431 5 0 mein' 
+R 439 4 0 Schoß
+- 443
+R 447 3 0 Bin 
+R 451 3 0 ein 
+R 455 3 0 bö
+R 459 3 0 ser 
+R 463 3 0 Jun
+R 467 3 0 ge
+- 470
+R 475 3 0 Ich 
+R 479 3 0 fahr 
+R 483 3 0 um 
+R 487 3 0 drei 
+R 491 3 0 Uhr 
+R 495 3 0 Nachts 
+R 499 3 0 zur 
+R 503 3 0 Dö
+R 507 3 0 ner
+R 511 3 0 bu
+R 515 3 0 de
+- 518
+R 523 3 0 Ick 
+R 527 3 0 kom
+R 531 3 0 me 
+R 535 3 0 in 
+R 539 3 0 die 
+R 543 3 0 Bu
+R 547 3 0 de 
+R 551 4 0 rein
+- 555
+R 559 3 0 Sag 
+R 563 3 0 mit 
+R 567 3 0 al
+R 571 3 0 led 
+R 575 3 0 oh
+R 579 3 0 ne 
+R 583 5 0 Fleisch
+- 588
+R 595 3 0 Zum 
+R 599 3 0 Run
+R 603 3 0 ter
+R 607 3 0 spü
+R 611 3 0 len 
+R 615 3 0 hätt' 
+R 619 3 0 ick 
+R 623 3 0 gern 
+R 627 3 0 so 
+R 631 3 0 'ne 
+R 635 3 0 tür
+R 639 3 0 ki
+R 643 3 0 sche 
+R 647 5 0 Sprite
+- 652
+R 659 3 0 Dann 
+R 663 3 0 nehm' 
+R 667 3 0 ick 
+R 671 3 0 noch 
+R 675 3 0 so 
+R 679 3 0 een 
+R 683 3 0 sal
+R 687 3 0 zi
+R 691 3 0 ges 
+R 695 3 0 Ak
+R 699 3 0 ti
+R 703 3 0 mel 
+R 707 3 0 da
+R 711 5 0 bei
+- 716
+R 723 3 0 Ick 
+R 727 3 0 fres
+R 731 3 0 se 
+R 735 3 0 zwar 
+R 739 3 0 ein 
+R 743 3 0 Drei
+R 747 3 0 eck, 
+R 751 3 0 doch 
+R 755 3 0 auf 
+R 759 3 0 mein 
+R 763 3 0 Kopf 
+R 767 3 0 is 
+R 771 3 0 ein 
+R 775 5 0 Kreis 
+F 784 5 0 (O
+F 791 1 0 kay)
+- 792
+R 795 3 0 Bei 
+R 799 3 0 dir 
+R 803 3 0 sieht's 
+R 807 3 0 aus 
+R 815 3 0 wie 
+R 819 3 0 bei 
+R 823 3 0 Hem
+R 827 3 0 pels 
+R 831 3 0 un
+R 835 3 0 ter'm 
+R 839 3 0 So
+R 843 1 0 fa
+- 844
+R 847 3 0 Du 
+R 851 3 0 fährst 
+R 855 3 0 U
+R 859 3 0 ber 
+R 863 3 0 im 
+R 867 3 0 To
+R 871 3 0 yo
+R 875 3 0 ta, 
+R 879 3 0 ick 
+R 883 3 0 fahr' 
+R 887 3 0 rü
+R 891 3 0 ber 
+R 895 3 0 mit 
+R 899 3 0 mei'm 
+R 903 3 0 Mo
+R 907 5 0 fa
+- 912
+R 923 3 0 Bei 
+R 927 3 0 mir 
+R 931 3 0 is' 
+R 935 3 0 je
+R 939 3 0 der 
+R 943 3 0 Tag 
+R 947 3 0 der 
+R 951 3 0 ers
+R 955 3 0 te 
+R 959 3 0 Tag 
+R 963 3 0 des 
+R 967 3 0 Mo
+R 971 5 0 nats 
+F 978 3 0 (Ja)
+- 981
+R 988 3 0 Der 
+R 992 3 0 ers
+R 996 3 0 te 
+R 1000 3 0 Mai 
+R 1004 3 0 der 
+R 1008 3 0 is' 
+R 1012 3 0 mein 
+R 1016 5 0 scheiß 
+R 1024 5 0 Suff-
+R 1032 3 0 Ko
+R 1036 5 0 ma
+- 1041
+R 1051 3 0 Sie 
+R 1055 3 0 fragt 
+R 1059 3 0 mich 
+R 1063 3 0 wer 
+R 1067 3 0 ick 
+R 1071 3 0 bin 
+R 1080 3 0 und 
+R 1084 3 0 ick 
+R 1088 3 0 sa
+R 1092 3 0 ge 
+R 1096 1 0 I
+R 1098 5 0 cke
+- 1103
+R 1110 3 0 Kee
+R 1114 3 0 ne 
+R 1118 3 0 zehn 
+R 1122 3 0 Mi
+R 1126 3 0 nu
+R 1130 3 0 ten 
+R 1134 3 0 spä
+R 1138 3 0 ter 
+R 1142 3 0 tun 
+R 1146 3 0 wir 
+R 1150 3 0 bee
+R 1154 3 0 de 
+R 1158 3 0 fi
+R 1162 3 0 cken
+- 1165
+R 1171 3 0 Die 
+R 1175 3 0 Da
+R 1179 3 0 me 
+R 1183 3 0 macht 
+R 1187 3 0 ein 
+R 1191 3 0 Fleck 
+R 1195 3 0 auf 
+R 1199 3 0 mei
+R 1203 3 0 nem 
+R 1207 3 0 Hals 
+R 1211 3 0 mit 
+R 1215 3 0 ih
+R 1219 3 0 ren 
+R 1223 3 0 Lip
+R 1227 1 0 pen
+- 1228
+R 1231 3 0 Da
+R 1235 3 0 nach 
+R 1239 3 0 fragt 
+R 1243 1 0 se'
+- 1244
+R 1247 3 0 Komms
+R 1251 3 0 te 
+R 1255 3 0 mor
+R 1259 3 0 gen 
+R 1263 3 0 noch 
+R 1267 3 0 vor
+R 1271 1 0 bei
+- 1272
+R 1274 3 0 Dit 
+R 1278 3 0 kanns
+R 1282 3 0 te 
+R 1286 3 0 kni
+R 1290 3 0 cken
+- 1293
+R 1302 5 0 T-
+R 1310 5 0 U-
+R 1318 5 0 R-
+R 1326 5 0 B-
+R 1334 5 0 O
+- 1339
+R 1343 3 0 Das 
+R 1347 3 0 is 
+R 1351 3 0 Tur
+R 1355 3 0 bo, 
+R 1359 3 0 Jun
+R 1363 3 0 ge
+- 1366
+R 1371 3 0 Ich 
+R 1375 3 0 lau
+R 1379 3 0 fe 
+R 1383 3 0 nicht, 
+R 1387 3 0 son
+R 1391 3 0 dern 
+R 1395 3 0 fahr' 
+R 1399 3 0 Scoo
+R 1403 1 0 ter
+- 1404
+R 1407 3 0 Ich 
+R 1411 3 0 hab 
+R 1415 3 0 Ro
+R 1419 3 0 cher
+R 1423 3 0 lun
+R 1427 1 0 ge
+- 1428
+R 1431 5 0 Sie 
+R 1439 5 0 is' 
+R 1447 5 0 auf 
+R 1455 5 0 mein' 
+R 1463 4 0 Schoß
+- 1467
+R 1471 3 0 Bin 
+R 1475 3 0 ein 
+R 1479 3 0 bö
+R 1483 3 0 ser 
+R 1487 3 0 Jun
+R 1491 3 0 ge
+- 1494
+R 1499 3 0 Ich 
+R 1503 3 0 fahr 
+R 1507 3 0 um 
+R 1511 3 0 drei 
+R 1515 3 0 Uhr 
+R 1519 3 0 Nachts 
+R 1523 3 0 zur 
+R 1527 3 0 Dö
+R 1531 3 0 ner
+R 1535 3 0 bu
+R 1539 3 0 de 
+F 1543 5 0 (O
+F 1551 4 0 kay)
+- 1555
+R 1559 5 0 T-
+R 1567 5 0 U-
+R 1575 5 0 R-
+R 1583 5 0 B-
+R 1591 4 0 O
+- 1595
+R 1599 3 0 Das 
+R 1603 3 0 is 
+R 1607 3 0 Tur
+R 1611 3 0 bo, 
+R 1615 3 0 Jun
+R 1619 3 0 ge
+- 1622
+R 1627 3 0 Ich 
+R 1631 3 0 lau
+R 1635 3 0 fe 
+R 1639 3 0 nicht, 
+R 1643 3 0 son
+R 1647 3 0 dern 
+R 1651 3 0 fahr' 
+R 1655 3 0 Scoo
+R 1659 1 0 ter
+- 1660
+R 1663 3 0 Ich 
+R 1667 3 0 hab 
+R 1671 3 0 Ro
+R 1675 3 0 cher
+R 1679 3 0 lun
+R 1683 1 0 ge
+- 1684
+R 1687 5 0 Sie 
+R 1695 5 0 is' 
+R 1703 5 0 auf 
+R 1711 5 0 mein' 
+R 1719 4 0 Schoß
+- 1723
+R 1727 3 0 Bin 
+R 1731 3 0 ein 
+R 1735 3 0 bö
+R 1739 3 0 ser 
+R 1743 3 0 Jun
+R 1747 3 0 ge
+- 1750
+R 1755 3 0 Ich 
+R 1759 3 0 fahr 
+R 1763 3 0 um 
+R 1767 3 0 drei 
+R 1771 3 0 Uhr 
+R 1775 3 0 Nachts 
+R 1779 3 0 zur 
+R 1783 3 0 Dö
+R 1787 3 0 ner
+R 1791 3 0 bu
+R 1795 3 0 de
+- 1798
+R 1803 3 0 Ick 
+R 1807 3 0 fah
+R 1811 3 0 re 
+R 1815 3 0 Lime, 
+R 1819 3 0 ick 
+R 1823 3 0 fah
+R 1827 3 0 re 
+R 1831 3 0 Tier, 
+R 1835 3 0 ick 
+R 1839 3 0 fahr
+R 1843 3 0 e 
+R 1847 3 0 Voi, 
+R 1851 3 0 ick 
+R 1855 3 0 fah
+R 1859 3 0 re 
+R 1863 4 0 Bolt
+- 1867
+R 1871 3 0 A
+R 1875 3 0 ber 
+R 1879 3 0 im
+R 1883 3 0 mer 
+R 1887 3 0 wenn 
+R 1891 3 0 ick 
+R 1895 3 0 fah
+R 1899 3 0 re 
+R 1903 1 0 bin 
+R 1905 3 0 ick 
+R 1911 5 0 voll
+- 1916
+R 1931 3 0 Ick 
+R 1935 3 0 hab 
+R 1939 3 0 'n 
+R 1943 3 0 Hut 
+R 1947 3 0 auf 
+R 1951 3 0 mei
+R 1955 3 0 nem 
+R 1959 1 0 Kopf
+- 1960
+R 1963 3 0 Ick 
+R 1967 3 0 fühl 
+R 1971 3 0 mich 
+R 1975 3 0 wie 
+R 1979 3 0 ein 
+R 1983 5 0 Cow-
+R 1991 5 0 Boy 
+F 1999 3 0 (Ja)
+- 2002
+R 2007 3 0 Kip
+R 2011 3 0 pe 
+R 2015 3 0 in
+R 2019 3 0 na 
+R 2023 3 0 Fres
+R 2027 1 0 se
+- 2028
+R 2031 3 0 Auf 
+R 2035 3 0 dem 
+R 2039 5 0 Zahn 
+R 2047 3 0 is' 
+R 2055 6 0 Gold
+- 2061
+R 2071 3 0 Mon
+R 2075 3 0 tag, 
+R 2079 3 0 Diens
+R 2083 3 0 tag, 
+R 2087 3 0 Mitt
+R 2091 1 0 woch
+- 2092
+R 2095 3 0 Mir 
+R 2099 3 0 e
+R 2103 5 0 gal 
+R 2111 3 0 wel
+R 2115 3 0 cher 
+R 2119 3 0 Tag 
+R 2123 3 0 heut' 
+R 2127 4 0 is'
+- 2131
+R 2135 3 0 Du 
+R 2139 3 0 gehst 
+R 2143 3 0 je
+R 2147 3 0 den 
+R 2151 3 0 A
+R 2155 3 0 bend 
+R 2159 3 0 fi
+R 2163 3 0 cken, 
+R 2167 3 0 A
+R 2171 3 0 1
+R 2175 3 0 0
+R 2179 3 0 0 
+R 2183 3 0 Ar
+R 2187 3 0 te
+R 2191 3 0 mis
+- 2194
+R 2203 3 0 Du 
+R 2207 3 0 wählst 
+R 2211 3 0 die 
+R 2215 3 0 A
+R 2219 3 0 f
+R 2223 3 0 D, 
+R 2227 3 0 ich 
+R 2231 3 0 kleb' 
+R 2235 3 0 dich 
+R 2239 3 0 auf 
+R 2243 3 0 die 
+R 2247 3 0 Stra
+R 2251 3 0 ße 
+R 2255 5 0 Bitch
+- 2260
+R 2267 3 0 Und 
+R 2271 3 0 bist 
+R 2275 3 0 du 
+R 2279 3 0 ho
+R 2283 3 0 mo
+R 2287 3 0 phob, 
+R 2291 3 0 dann 
+R 2295 3 0 wirst 
+R 2299 3 0 du 
+R 2303 3 0 in 
+R 2307 3 0 den 
+R 2311 3 0 Arsch 
+R 2315 3 0 ge
+R 2319 3 0 fickt
+- 2322
+R 2330 3 0 Er 
+R 2334 3 0 fragt 
+R 2338 3 0 mich 
+R 2342 3 0 wer 
+R 2346 3 0 ick 
+R 2350 3 0 bin 
+R 2359 3 0 und 
+R 2363 3 0 ick 
+R 2367 3 0 sa
+R 2371 3 0 ge 
+R 2375 1 0 I
+R 2377 5 0 cke
+- 2382
+R 2390 3 0 Kee
+R 2394 3 0 ne 
+R 2398 3 0 zehn 
+R 2402 3 0 Mi
+R 2406 3 0 nu
+R 2410 3 0 ten 
+R 2414 3 0 spä
+R 2418 3 0 ter 
+R 2422 3 0 tun 
+R 2426 3 0 wir 
+R 2430 3 0 bee
+R 2434 3 0 de 
+R 2438 3 0 küs
+R 2442 5 0 sen
+- 2447
+R 2451 3 0 Ick 
+R 2455 3 0 ho
+R 2459 3 0 le 
+R 2463 3 0 aus 
+R 2467 3 0 der 
+R 2471 3 0 Schach
+R 2475 3 0 tel 
+R 2479 3 0 Gau
+R 2483 3 0 lois
+R 2487 3 0 es 
+R 2491 3 0 noch 
+R 2495 3 0 ee
+R 2499 3 0 ne 
+R 2503 3 0 Kip
+R 2507 3 0 pe
+- 2510
+R 2515 3 0 Er 
+R 2519 3 0 will 
+R 2523 3 0 mir 
+R 2527 3 0 an
+R 2531 3 0 ne 
+R 2535 3 0 Nüs
+R 2539 1 0 se
+- 2540
+R 2543 3 0 A
+R 2547 3 0 ber 
+R 2551 3 0 ick 
+R 2555 3 0 muss 
+R 2559 3 0 lei
+R 2563 3 0 der 
+R 2567 3 0 dip
+R 2571 3 0 pen
+- 2574
+R 2583 5 0 T-
+R 2591 5 0 U-
+R 2599 5 0 R-
+R 2607 5 0 B-
+R 2615 5 0 O
+- 2620
+R 2624 3 0 Das 
+R 2628 3 0 is 
+R 2632 3 0 Tur
+R 2636 3 0 bo, 
+R 2640 3 0 Jun
+R 2644 3 0 ge
+- 2647
+R 2651 3 0 Ich 
+R 2655 3 0 lau
+R 2659 3 0 fe 
+R 2663 3 0 nicht, 
+R 2667 3 0 son
+R 2671 3 0 dern 
+R 2675 3 0 fahr' 
+R 2679 3 0 Scoo
+R 2683 1 0 ter
+- 2684
+R 2687 3 0 Ich 
+R 2691 3 0 hab 
+R 2695 3 0 Ro
+R 2699 3 0 cher
+R 2703 3 0 lun
+R 2707 1 0 ge
+- 2708
+R 2711 5 0 Sie 
+R 2719 5 0 is' 
+R 2727 5 0 auf 
+R 2735 5 0 mein' 
+R 2743 4 0 Schoß
+- 2747
+R 2751 3 0 Bin 
+R 2755 3 0 ein 
+R 2759 3 0 bö
+R 2763 3 0 ser 
+R 2767 3 0 Jun
+R 2771 3 0 ge
+- 2774
+R 2779 3 0 Ich 
+R 2783 3 0 fahr 
+R 2787 3 0 um 
+R 2791 3 0 drei 
+R 2795 3 0 Uhr 
+R 2799 3 0 Nachts 
+R 2803 3 0 zur 
+R 2807 3 0 Dö
+R 2811 3 0 ner
+R 2815 3 0 bu
+F 2819 3 0 de 
+F 2823 5 0 (O
+F 2831 4 0 kay)
+- 2835
+R 2839 6 0 T-
+R 2847 6 0 U-
+R 2855 6 0 R-
+R 2863 6 0 B-
+R 2871 4 0 O
+- 2875
+R 2879 3 0 Das 
+R 2883 3 0 is 
+R 2887 3 0 Tur
+R 2891 3 0 bo, 
+R 2895 3 0 Jun
+R 2899 3 0 ge
+- 2902
+R 2907 3 0 Ich 
+R 2911 3 0 lau
+R 2915 3 0 fe 
+R 2919 3 0 nicht, 
+R 2923 3 0 son
+R 2927 3 0 dern 
+R 2931 3 0 fahr' 
+R 2935 3 0 Scoo
+R 2939 1 0 ter
+- 2940
+R 2943 3 0 Ich 
+R 2947 3 0 hab 
+R 2951 3 0 Ro
+R 2955 3 0 cher
+R 2959 3 0 lun
+R 2963 1 0 ge
+- 2964
+R 2967 5 0 Sie 
+R 2975 5 0 is' 
+R 2983 5 0 auf 
+R 2991 5 0 mein' 
+R 2999 4 0 Schoß
+- 3003
+R 3007 3 0 Bin 
+R 3011 3 0 ein 
+R 3015 3 0 bö
+R 3019 3 0 ser 
+R 3023 3 0 Jun
+R 3027 3 0 ge
+- 3030
+R 3035 3 0 Ich 
+R 3039 3 0 fahr 
+R 3043 3 0 um 
+R 3047 3 0 drei 
+R 3051 3 0 Uhr 
+R 3055 3 0 Nachts 
+R 3059 3 0 zur 
+R 3063 3 0 Dö
+R 3067 3 0 ner
+R 3071 3 0 bu
+R 3075 3 0 de
+- 3078
+R 3095 6 0 T-
+R 3103 6 0 U-
+R 3111 6 0 R-
+R 3119 6 0 B-
+R 3127 4 0 O
+- 3131
+R 3135 3 0 Al
+R 3139 3 0 le 
+R 3143 3 0 tan
+R 3147 3 0 zen 
+R 3151 3 0 jetzt 
+R 3155 3 0 den 
+R 3159 3 0 Tur
+R 3163 3 0 bo
+R 3167 3 0 dance
+- 3170
+R 3175 3 0 Tur
+R 3179 3 0 bo
+R 3183 3 0 dance 
+R 3191 3 0 Tur
+R 3195 3 0 bo
+R 3199 3 0 dance 
+R 3207 3 0 Tur
+R 3211 3 0 bo
+R 3215 3 0 dance 
+R 3223 3 0 Tur
+R 3227 3 0 bo
+R 3231 4 0 dance
+- 3235
+R 3239 3 0 Tur
+R 3243 3 0 bo
+R 3247 3 0 dance 
+R 3255 3 0 Tur
+R 3259 3 0 bo
+R 3263 3 0 dance 
+R 3271 3 0 Tur
+R 3275 3 0 bo
+R 3279 3 0 dance
+- 3282
+R 3295 3 0 Tur
+R 3299 3 0 bo
+R 3303 3 0 dance 
+R 3319 3 0 Tur
+R 3323 3 0 bo 
+R 3327 3 0 Tur
+R 3331 3 0 bo 
+R 3335 3 0 Tur
+R 3339 3 0 bo
+R 3343 5 0 dance
+- 3348
+R 3359 3 0 Tur
+R 3363 3 0 bo
+R 3367 3 0 dance 
+R 3383 3 0 Tur
+R 3387 3 0 bo 
+R 3391 3 0 Tur
+R 3395 3 0 bo 
+R 3399 3 0 Tur
+R 3403 3 0 bo
+R 3407 5 0 dance
+E

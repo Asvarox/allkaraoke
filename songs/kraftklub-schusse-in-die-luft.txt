@@ -1,0 +1,717 @@
+#ARTIST:Kraftklub
+#TITLE:Schüsse in die Luft
+#CREATOR:TrollZor
+#BPM:284,03
+#YEAR:2014
+#VIDEO:v=Dx0MGYe4jR4
+#LANGUAGE:German
+#GAP:20066,584867795656
+#ALLKARAOKE_ID:kraftklub-schusse-in-die-luft
+#ALLKARAOKE_LASTUPDATE:2025-01-21T00:11:10.123Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Kraftklub - Schüsse in die Luft.mp3
+#COVER:Kraftklub - Schüsse in die Luft [CO].jpg
+#BACKGROUND:Kraftklub - Schüsse in die Luft [BG].jpg
+F 19 4 0 Meine 
+F 27 4 0 Mutter 
+F 35 6 0 sagt
+- 41
+F 43 2 0 Junge, 
+F 51 1 0 geh’ 
+F 55 1 0 ma’ 
+F 59 8 0 schlafen
+- 67
+F 79 1 0 Fahr 
+F 83 1 0 mal 
+F 87 1 0 in 
+F 91 8 0 Urlaub!
+- 99
+F 103 1 0 Aber 
+F 107 1 0 ich 
+F 111 1 0 soll 
+F 115 1 0 auf 
+F 119 1 0 die 
+F 123 8 0 Straße
+- 131
+F 143 1 0 Sagt 
+F 147 4 0 Farin 
+F 155 8 0 Urlaub
+- 163
+F 166 1 0 Ja 
+F 171 1 0 okay, 
+F 175 1 0 jetzt 
+F 179 1 0 steh’ 
+F 183 2 0 ich 
+F 187 1 0 hier
+- 188
+F 191 4 0 Doch 
+F 197 1 0 bin 
+F 199 5 0 allein 
+F 207 2 0 vor 
+F 211 2 0 einer 
+F 219 2 0 Wand
+- 221
+F 223 1 0 Da 
+F 227 1 0 bin 
+F 229 4 0 nur 
+F 235 1 0 ich 
+F 239 2 0 und 
+F 243 5 0 sonst 
+F 251 1 0 nichts
+- 252
+F 258 1 0 Nur 
+F 260 5 0 dieser 
+F 267 1 0 Stein 
+F 271 1 0 in 
+F 275 5 0 meiner 
+F 283 2 0 Hand
+- 285
+F 287 1 0 Es 
+F 291 1 0 ist 
+F 295 4 0 ein 
+F 303 10 0 einsamer 
+F 315 1 0 Krieg
+- 316
+F 323 1 0 Gegen 
+F 327 1 0 den 
+F 331 4 0 Dreck, 
+F 337 1 0 der 
+F 339 1 0 mich 
+F 343 5 0 umgibt
+- 348
+F 355 2 0 Den 
+F 359 10 0 verfickten 
+F 371 2 0 Dreck
+- 373
+F 375 2 0 Den 
+F 379 5 0 scheinbar 
+F 387 5 0 keiner 
+F 395 5 0 außer 
+F 403 1 0 mir 
+F 407 4 0 sieht
+- 411
+F 419 5 0 Aber 
+F 427 2 0 wie 
+F 431 4 0 auch?
+- 435
+F 439 1 0 Wenn 
+F 443 5 0 niemand 
+F 451 11 0 rausschaut?
+- 462
+F 468 5 0 Lieber 
+F 475 1 0 auf 
+F 479 1 0 der 
+F 483 5 0 Couch 
+F 491 4 0 mit
+- 495
+F 499 14 0 Frauentausch 
+F 515 6 0 oder 
+F 523 6 0 Bauer 
+F 531 1 0 sucht 
+F 535 5 0 Frau
+- 540
+F 545 1 0 Und 
+F 547 1 0 ja 
+F 551 9 0 natürlich 
+F 563 1 0 nur 
+F 567 12 0 ironisch 
+F 585 1 0 und 
+F 587 1 0 nur 
+F 591 1 0 so 
+F 595 12 0 nebenbei
+- 607
+F 615 1 0 Aber 
+F 619 1 0 im 
+F 623 6 0 Vergleich 
+F 630 1 0 mit 
+F 632 1 0 den 
+F 635 4 0 Opfern 
+F 643 2 0 da 
+F 647 1 0 ist 
+F 649 1 0 das 
+F 651 3 0 eigene 
+F 657 3 0 Leben 
+F 663 1 0 schon 
+F 667 4 0 geil
+- 671
+F 675 2 0 Ein 
+F 679 2 0 Hund 
+F 683 5 0 beißt 
+F 690 1 0 nicht, 
+F 694 1 0 wenn 
+F 696 1 0 er 
+F 699 8 0 bellt 
+F 712 2 0 und 
+F 715 5 0 alles 
+F 723 1 0 ist 
+F 727 4 0 gut
+- 731
+F 736 8 0 Solange 
+F 747 1 0 die 
+F 751 1 0 auf 
+F 755 9 0 RTL 
+F 767 1 0 noch 
+F 769 1 0 ’n 
+F 771 6 0 bisschen 
+F 779 5 0 dümmer 
+F 787 2 0 sind 
+F 791 1 0 als 
+F 795 1 0 du
+- 796
+: 803 2 -1 Und 
+: 807 2 -1 ich 
+: 811 4 2 schie
+: 817 1 2 ße 
+: 819 2 2 in 
+: 823 2 -1 die 
+: 827 6 2 Luft
+- 833
+: 843 6 -1 Bang 
+: 851 6 4 Bang 
+: 859 6 -1 Bang
+- 865
+: 871 2 -1 Ich 
+: 875 2 2 zie
+: 879 2 2 he 
+: 883 2 2 in 
+: 887 2 2 den 
+: 891 6 -1 Krieg, 
+: 899 2 -1 a
+: 903 2 -1 ber 
+: 907 2 2 kei
+: 911 2 2 ner 
+: 915 4 2 zieht 
+: 923 4 -1 mit
+- 927
+: 931 6 2 Drei 
+: 939 4 2 Schüs
+: 945 1 2 se 
+: 947 2 2 in 
+: 951 2 -1 die 
+: 955 4 2 Luft
+- 959
+: 971 6 6 Bang 
+: 979 6 2 Bang 
+: 987 6 -1 Bang
+- 993
+: 999 2 -1 Der 
+: 1003 4 4 Ein
+: 1009 1 4 zi
+: 1011 2 4 ge 
+: 1015 2 2 hier 
+: 1019 4 -1 drau
+: 1025 4 -1 ßen 
+: 1031 2 -1 bin 
+: 1035 2 4 lei
+: 1039 2 4 der 
+: 1043 2 4 wie
+: 1047 2 2 der 
+: 1051 4 4 ich
+- 1055
+: 1059 2 4 Und 
+: 1063 2 4 ich 
+: 1067 4 4 schie
+: 1073 1 4 ße 
+: 1075 2 4 in 
+: 1079 2 2 die 
+: 1083 6 6 Luft
+- 1089
+: 1099 6 -1 Bang 
+: 1107 6 4 Bang 
+: 1115 6 6 Bang
+- 1121
+: 1127 2 -1 Doch 
+: 1131 2 4 kei
+: 1135 2 4 ne 
+: 1139 2 4 Re
+: 1143 2 2 ak
+: 1147 6 -1 tion, 
+: 1155 2 -1 nur 
+: 1159 2 -1 Be
+: 1163 2 4 schwer
+: 1167 2 4 den 
+: 1171 2 4 ü
+: 1175 2 2 ber 
+: 1179 4 4 Krach
+- 1183
+: 1187 6 4 Drei 
+: 1195 4 4 Schüs
+: 1201 1 4 se 
+: 1203 2 4 in 
+: 1207 2 2 die 
+: 1211 6 6 Luft
+- 1217
+: 1227 6 6 Bang 
+: 1235 6 2 Bang 
+: 1243 6 -1 Bang
+- 1249
+: 1255 2 -1 Die 
+: 1259 2 -1 Re
+: 1263 2 -1 vo
+: 1267 2 -1 lu
+: 1271 6 4 tion 
+: 1279 2 4 o
+: 1283 2 4 der 
+: 1287 2 4 Ber
+: 1291 4 4 lin 
+: 1297 4 4 Tag 
+: 1303 2 2 und 
+: 1307 8 1 Nacht
+- 1315 1336
+- 1336
+F 1355 2 0 Du 
+F 1359 2 0 wirst 
+F 1363 2 0 nicht 
+F 1367 12 0 enttäuscht
+- 1379
+F 1384 1 0 Wenn 
+F 1386 1 0 du 
+F 1388 1 0 nie 
+F 1391 6 0 etwas 
+F 1400 12 0 erwartest
+- 1412
+F 1415 1 0 Und 
+F 1417 4 0 bevor 
+F 1423 2 0 du 
+F 1427 5 0 etwas 
+F 1435 5 0 falsch 
+F 1443 4 0 machst
+- 1447
+F 1449 1 0 Dann 
+F 1451 4 0 mach 
+F 1456 1 0 mal 
+F 1459 5 0 lieber 
+F 1467 2 0 gar 
+F 1472 5 0 nichts
+- 1477
+F 1484 13 0 Irgendjemand 
+F 1500 3 0 sagt 
+F 1505 1 0 schon 
+F 1508 10 0 irgendwann 
+F 1520 3 0 mal 
+F 1524 9 0 irgendwas
+- 1533
+F 1536 8 0 Ansonsten 
+F 1547 4 0 musst 
+F 1553 1 0 du 
+F 1555 1 0 halt 
+F 1559 9 0 zufrieden 
+F 1571 2 0 sein 
+F 1575 2 0 mit 
+F 1579 2 0 dem, 
+F 1583 2 0 was 
+F 1587 2 0 du 
+F 1591 5 0 hast
+- 1596
+F 1600 1 0 Und 
+F 1603 5 0 selbst 
+F 1609 1 0 wenn 
+F 1611 6 0 alles 
+F 1619 5 0 scheiße 
+F 1627 4 0 ist, 
+F 1633 1 0 du 
+F 1635 5 0 pleite 
+F 1643 4 0 bist 
+F 1649 1 0 und 
+F 1652 4 0 sonst 
+F 1658 2 0 nix 
+F 1664 7 0 kannst
+- 1671
+F 1687 2 0 Dann 
+F 1691 2 0 sei 
+F 1695 2 0 doch 
+F 1699 6 0 einfach 
+F 1707 5 0 Stolz 
+F 1715 3 0 auf 
+F 1720 3 0 dein 
+F 1725 5 0 Land
+- 1730
+F 1740 4 0 Oder 
+F 1747 1 0 gib 
+F 1751 1 0 die 
+F 1755 6 0 Schuld 
+F 1763 1 0 ein 
+F 1767 1 0 paar 
+F 1771 5 0 ander’n 
+F 1779 5 0 armen 
+F 1787 5 0 Schweinen
+- 1792
+F 1795 4 0 Hey, 
+F 1801 1 0 wie 
+F 1803 4 0 wär’s 
+F 1809 1 0 denn 
+F 1811 1 0 mit 
+F 1815 1 0 den 
+F 1819 5 0 Leuten 
+F 1827 1 0 im 
+F 1831 24 0 Asylbewerberheim
+- 1855
+F 1859 2 0 Nein, 
+F 1863 2 0 ich 
+F 1867 2 0 war 
+F 1871 2 0 nie 
+F 1875 14 0 anti-alles, 
+F 1891 2 0 ich 
+F 1895 2 0 war 
+F 1899 6 0 immer 
+F 1907 10 0 anti-ihr
+- 1917
+F 1919 2 0 Doch 
+F 1923 2 0 hab’ 
+F 1927 2 0 schon 
+F 1931 6 0 lange 
+F 1939 13 0 angefangen 
+F 1955 2 0 mich 
+F 1959 2 0 mit 
+F 1963 4 0 Dingen 
+F 1969 1 0 zu 
+F 1971 12 0 arrangieren
+- 1983
+F 1987 5 0 Und 
+F 1993 4 0 genau 
+F 1999 2 0 das 
+F 2003 2 0 wollt’ 
+F 2007 2 0 ich 
+F 2011 2 0 nie, 
+F 2015 2 0 ich 
+F 2019 2 0 bin 
+F 2023 2 0 schon 
+F 2027 4 0 viel 
+F 2033 1 0 zu 
+F 2035 5 0 lange 
+F 2043 2 0 hier
+- 2045
+F 2047 2 0 Ich 
+F 2051 2 0 muss 
+F 2055 2 0 hier 
+F 2059 5 0 weg, 
+F 2067 1 0 denn 
+F 2070 9 0 ansonsten 
+F 2083 2 0 werd’ 
+F 2087 2 0 ich 
+F 2091 8 0 irgendwann 
+F 2100 1 0 wie 
+F 2102 1 0 ihr
+- 2103
+: 2104 1 -1 Ich 
+: 2107 5 2 schie
+: 2113 1 2 ße 
+: 2115 2 2 in 
+: 2119 2 -1 die 
+: 2123 8 2 Luft
+- 2131
+: 2139 6 -1 Bang 
+: 2147 6 4 Bang 
+: 2155 6 -1 Bang
+- 2161
+: 2167 2 -1 Ich 
+: 2171 2 2 zie
+: 2175 2 2 he 
+: 2179 2 2 in 
+: 2183 2 2 den 
+: 2187 6 -1 Krieg, 
+: 2195 2 -1 a
+: 2199 2 -1 ber 
+: 2203 2 2 kei
+: 2207 2 2 ner 
+: 2211 6 2 zieht 
+: 2219 4 -1 mit
+- 2223
+: 2227 6 2 Drei 
+: 2235 4 2 Schüs
+: 2241 1 2 se 
+: 2243 2 2 in 
+: 2247 2 -1 die 
+: 2251 8 2 Luft
+- 2259
+: 2267 6 6 Bang 
+: 2275 6 2 Bang 
+: 2283 6 -1 Bang
+- 2289
+: 2295 2 -1 Der 
+: 2299 4 4 Ein
+: 2305 1 4 zi
+: 2307 2 4 ge 
+: 2311 2 2 hier 
+: 2315 4 -1 drau
+: 2321 4 -1 ßen 
+: 2327 2 -1 bin 
+: 2331 2 4 lei
+: 2335 2 4 der 
+: 2339 2 4 wie
+: 2343 2 2 der 
+: 2347 4 4 ich
+- 2351
+: 2355 2 4 Und 
+: 2359 2 4 ich 
+: 2363 4 4 schie
+: 2369 1 4 ße 
+: 2371 2 4 in 
+: 2375 2 2 die 
+: 2379 8 6 Luft
+- 2387
+: 2395 6 -1 Bang 
+: 2403 6 4 Bang 
+: 2411 6 6 Bang
+- 2417
+: 2423 2 -1 Doch 
+: 2427 2 4 kei
+: 2431 2 4 ne 
+: 2435 2 4 Re
+: 2439 2 2 ak
+: 2443 6 -1 tion, 
+: 2451 2 -1 nur 
+: 2455 2 -1 Be
+: 2459 2 4 schwer
+: 2463 2 4 den 
+: 2467 2 4 ü
+: 2471 2 2 ber 
+: 2475 2 4 Krach
+- 2477
+: 2483 6 4 Drei 
+: 2491 4 4 Schüs
+: 2497 1 4 se 
+: 2499 2 4 in 
+: 2503 2 2 die 
+: 2507 8 6 Luft
+- 2515
+: 2523 6 6 Bang 
+: 2531 6 2 Bang 
+: 2539 6 -1 Bang
+- 2545
+: 2551 2 -1 Die 
+: 2555 2 -1 Re
+: 2559 2 -1 vo
+: 2563 2 -1 lu
+: 2567 6 4 tion 
+: 2575 2 4 o
+: 2579 2 4 der 
+: 2583 2 4 Ber
+: 2587 4 4 lin 
+: 2593 4 4 Tag 
+: 2599 2 2 und 
+: 2603 24 6 Nacht
+- 2627
+F 2640 6 0 Allen 
+F 2647 3 0 ist 
+F 2651 6 0 alles 
+F 2659 9 0 egal, 
+F 2671 5 0 außer 
+F 2679 2 0 der 
+F 2683 20 0 Handyvertrag
+- 2703 2704
+- 2704
+: 2723 2 -1 Und 
+: 2727 2 -1 ich 
+: 2731 4 -1 ma
+: 2737 1 -1 le 
+: 2739 1 -1 al
+: 2741 4 2 les 
+: 2747 3 -1 schwarz
+- 2750
+F 2751 2 0 Mit 
+F 2755 13 0 390 
+F 2771 5 0 Euro 
+F 2779 3 0 Hartz 
+F 2785 2 0 kommt 
+F 2790 1 0 man 
+F 2792 1 0 nicht 
+F 2795 3 0 weit 
+F 2800 2 0 im 
+F 2804 15 0 Bio-Markt
+- 2819 2832
+- 2832
+: 2851 2 -1 Und 
+: 2855 2 -1 ich 
+: 2859 5 4 ma
+: 2865 1 4 le 
+: 2867 2 4 al
+: 2871 2 2 les 
+: 2875 6 -1 schwarz
+- 2881
+F 2883 2 0 Dein 
+F 2887 11 0 verkackter 
+F 2899 14 0 Kommentar 
+F 2915 1 0 war 
+F 2919 10 0 natürlich 
+F 2931 1 0 nur 
+F 2933 4 0 ein 
+F 2939 6 0 Spaß, 
+F 2947 6 0 alles 
+F 2955 7 0 klar
+- 2962
+: 2979 2 4 Und 
+: 2983 2 4 ich 
+: 2987 4 4 ma
+: 2993 1 4 le 
+: 2995 1 4 al
+: 2997 4 2 les 
+: 3003 5 6 schwarz
+- 3008
+F 3010 1 0 Die 
+F 3012 6 0 ganze 
+F 3020 5 0 Nacht 
+F 3027 7 0 besoffene 
+F 3036 12 0 Vollidioten 
+F 3051 6 0 bedienen 
+F 3059 2 0 an 
+F 3063 2 0 der 
+F 3067 2 0 Bar
+- 3069
+F 3073 1 0 Für 
+F 3075 6 0 sieben 
+F 3084 5 0 Euro 
+F 3091 2 0 die 
+F 3095 9 0 Stunde, 
+F 3107 6 0 aber 
+F 3115 7 0 schwarz
+- 3122
+: 3127 2 -1 Ich 
+: 3131 4 2 schie
+: 3137 1 2 ße 
+: 3139 2 2 in 
+: 3143 2 -1 die 
+: 3147 8 2 Luft
+- 3155
+: 3163 6 -1 Bang 
+: 3171 6 4 Bang 
+: 3179 6 -1 Bang
+- 3185
+: 3191 2 -1 Ich 
+: 3195 2 2 zie
+: 3199 2 2 he 
+: 3203 2 2 in 
+: 3207 2 2 den 
+: 3211 6 -1 Krieg, 
+: 3219 2 -1 a
+: 3223 2 -1 ber 
+: 3227 2 2 kei
+: 3231 2 2 ner 
+: 3235 6 2 zieht 
+: 3243 4 -1 mit
+- 3247
+: 3251 6 2 Drei 
+: 3259 4 2 Schüs
+: 3265 1 2 se 
+: 3267 2 2 in 
+: 3271 2 -1 die 
+: 3275 8 2 Luft
+- 3283
+: 3291 6 6 Bang 
+: 3299 6 2 Bang 
+: 3307 6 -1 Bang
+- 3313
+: 3319 2 -1 Der 
+: 3323 4 4 Ein
+: 3329 1 4 zi
+: 3331 2 4 ge 
+: 3335 2 2 hier 
+: 3339 4 -1 drau
+: 3345 4 -1 ßen 
+: 3351 2 -1 bin 
+: 3355 2 4 lei
+: 3359 2 4 der 
+: 3363 2 4 wie
+: 3367 2 2 der 
+: 3371 4 4 ich
+- 3375
+: 3379 2 4 Und 
+: 3383 2 4 ich 
+: 3387 4 4 schie
+: 3393 1 4 ße 
+: 3395 2 4 in 
+: 3399 2 2 die 
+: 3403 8 6 Luft
+- 3411
+: 3419 6 -1 Bang 
+: 3427 6 4 Bang 
+: 3435 6 6 Bang
+- 3441
+: 3447 2 -1 Doch 
+: 3451 2 4 kei
+: 3455 2 4 ne 
+: 3459 2 4 Re
+: 3463 2 2 ak
+: 3467 6 -1 tion, 
+: 3475 2 -1 nur 
+: 3479 2 -1 Be
+: 3483 2 4 schwer
+: 3487 2 4 den 
+: 3491 2 4 ü
+: 3495 2 2 ber 
+: 3499 4 4 Krach
+- 3503
+: 3507 6 4 Drei 
+: 3515 4 4 Schüs
+: 3521 1 4 se 
+: 3523 2 4 in 
+: 3527 2 2 die 
+: 3531 8 6 Luft
+- 3539
+: 3547 6 6 Bang 
+: 3555 6 2 Bang 
+: 3563 6 -1 Bang
+- 3569
+: 3575 2 -1 Die 
+: 3579 2 -1 Re
+: 3583 2 -1 vo
+: 3587 2 -1 lu
+: 3591 6 4 tion 
+: 3599 2 4 o
+: 3603 2 4 der 
+: 3607 2 4 Ber
+: 3611 4 4 lin 
+: 3617 4 4 Tag 
+: 3623 2 2 und 
+: 3627 10 6 Nacht
+- 3637
+: 3639 2 -1 Ich 
+: 3643 4 2 schie
+: 3649 1 2 ße 
+: 3651 2 2 in 
+: 3655 2 -1 die 
+: 3659 8 2 Luft
+- 3667
+: 3675 6 -1 Bang 
+: 3683 6 4 Bang 
+: 3691 6 -1 Bang
+- 3697 3744
+- 3744
+: 3763 6 2 Drei 
+: 3771 4 2 Schüs
+: 3777 1 2 se 
+: 3779 2 2 in 
+: 3783 2 -1 die 
+: 3787 8 2 Luft
+- 3795
+: 3803 6 6 Bang 
+: 3811 6 2 Bang 
+: 3819 6 -1 Bang
+- 3825 3872
+- 3872
+: 3891 2 4 Und 
+: 3895 2 4 ich 
+: 3899 4 4 schie
+: 3905 1 4 ße 
+: 3907 2 4 in 
+: 3911 2 2 die 
+: 3915 8 6 Luft
+- 3923
+: 3931 6 -1 Bang 
+: 3939 6 4 Bang 
+: 3947 6 6 Bang
+- 3953 4000
+- 4000
+: 4019 6 4 Drei 
+: 4027 4 4 Schüs
+: 4033 1 4 se 
+: 4035 2 4 in 
+: 4039 2 2 die 
+: 4043 8 6 Luft
+- 4051
+: 4059 6 6 Bang 
+: 4067 6 2 Bang 
+: 4075 6 -1 Bang
+E
