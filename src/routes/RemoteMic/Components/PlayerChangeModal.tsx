@@ -73,7 +73,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
       <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
         Remove
       </Menu.Button>
-      <Menu.Button onClick={onModalClose} size="small">
+      <Menu.Button onClick={onModalClose} size="small" data-test="close-menu">
         Close
       </Menu.Button>
     </Menu>
