@@ -205,7 +205,9 @@ function RemoteSongList({ connectionStatus }: Props) {
                 </Language>
                 <ArtistTitle>
                   <Title>{mainArtistName}</Title>
-                  <Artist>{song.length} songs</Artist>
+                  <Artist data-test={'songs-count'} data-value={`${song.length}`}>
+                    {song.length} songs
+                  </Artist>
                 </ArtistTitle>
                 <Action>
                   {isExpanded ? (
