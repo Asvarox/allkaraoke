@@ -27,12 +27,12 @@ export class RateUnfinishedSongPagePO {
     await this.wrongLyricsIssueButton.click();
   }
 
-  public get wrongVolumeIssueButton() {
-    return this.page.getByTestId('button-wrong-volume');
+  public get tooLoudIssueButton() {
+    return this.page.getByTestId('button-too-loud');
   }
 
-  public async selectVolumeIssue() {
-    await this.wrongVolumeIssueButton.click();
+  public async selectTooLoudIssue() {
+    await this.tooLoudIssueButton.click();
   }
 
   public get exitSongButton() {

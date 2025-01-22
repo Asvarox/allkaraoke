@@ -40,7 +40,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.lyricsSyncIssueButton).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.wrongLyricsIssueButton).toBeVisible();
-    await expect(pages.rateUnfinishedSongPage.wrongVolumeIssueButton).toBeVisible();
+    await expect(pages.rateUnfinishedSongPage.tooLoudIssueButton).toBeVisible();
   });
 
   await test.step('User can skip the song rating container and go to pick up another song', async () => {
@@ -135,7 +135,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('User can select `volume issue` as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectVolumeIssue();
+    await pages.rateUnfinishedSongPage.selectTooLoudIssue();
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
@@ -161,7 +161,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('User can select all issues as a reasons of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
     await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
-    await pages.rateUnfinishedSongPage.selectVolumeIssue();
+    await pages.rateUnfinishedSongPage.selectTooLoudIssue();
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
