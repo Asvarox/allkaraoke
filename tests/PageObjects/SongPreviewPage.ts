@@ -100,7 +100,7 @@ export class SongPreviewPagePO {
     await this.enterPlayerNameWithKeyboard(playerName);
   }
 
-  public async expectAlreadyEnteredPlayerNameToBe(playerNumber: number, playerName: string) {
+  public async expectEnteredPlayerNameToBe(playerNumber: number, playerName: string) {
     await expect(this.getPlayerNameInput(playerNumber)).toHaveAttribute('value', `${playerName}`);
   }
 
