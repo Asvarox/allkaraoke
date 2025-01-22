@@ -45,8 +45,11 @@ const songs = {
     ID: 'e2e-pass-test-spanish-1994',
     name: 'pass',
   },
-  french: {
+  french1: {
     ID: 'e2e-croissant-french-1994',
+  },
+  french2: {
+    ID: 'e2e-cote-dazur-french-1994',
   },
   engPol: {
     ID: 'e2e-english-polish-1994',
@@ -257,8 +260,8 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     // test.fail(true, 'Select button does not work for first position on the song list');
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.polish1.ID);
 
-    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
-    await pages.songPreviewPage.expectPreviewSongToBe(songs.french.ID);
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french1.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.french1.ID);
 
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
     await pages.songPreviewPage.expectPreviewSongToBe(songs.spanish.ID);
@@ -302,7 +305,96 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
     await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.spanish.ID);
 
-    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
-    await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.french.ID);
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french1.ID);
+    await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.french1.ID);
+  });
+});
+
+test('Grouping artist`s songs works', async ({ page, browser }) => {
+  const playerName = 'Player1';
+  const remoteMicsPlaylist = 'remote-mics';
+  const artistInfo = {
+    name: 'French Test',
+    songsCount: '2',
+  } as const;
+
+  await test.step('Go to select Smartphones setup', async () => {
+    await page.goto('/');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+  });
+
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
+
+  await test.step('Ensure all languages are selected and go to the Song List', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('When artist has more than 1 song, they should be grouped by artist in song list with number of songs info', async () => {
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french1.ID)).not.toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french2.ID)).not.toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getGroupedArtistSongsElement(artistInfo.name)).toBeVisible();
+    await remoteMic.remoteMicSongListPage.expectArtistSongCountToBe(artistInfo.songsCount);
+  });
+
+  await test.step('After expanding the group tile, all artist`s songs should be visible', async () => {
+    await remoteMic.remoteMicSongListPage.clickToExpandSongsGroup(artistInfo.name);
+    await expect(remoteMic.remoteMicSongListPage.getExpandedArtistSongsGroupElement(artistInfo.name)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french1.ID)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french2.ID)).toBeVisible();
+  });
+
+  await test.step('After closing the group tile, the songs should be hidden again in the artist`s song group', async () => {
+    await remoteMic.remoteMicSongListPage.clickToCloseSongsGroup(artistInfo.name);
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french1.ID)).not.toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french2.ID)).not.toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getGroupedArtistSongsElement(artistInfo.name)).toBeVisible();
+  });
+
+  await test.step('Expand the artist`s group and add songs to the favourites', async () => {
+    await remoteMic.remoteMicSongListPage.clickToExpandSongsGroup(artistInfo.name);
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.french1.ID);
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.french2.ID);
+    await remoteMic.remoteMicSongListPage.expectFavouriteListToContainNumberOfSongs(artistInfo.songsCount);
+  });
+
+  await test.step('Open preview of the song in all-songs view by remote mic - the track should display correctly in desktop app', async () => {
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french1.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.french1.ID);
+  });
+
+  await test.step('Favourite songs should be also added to remoteMic playlist', async () => {
+    await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
+    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await pages.songListPage.goToPlaylist(remoteMicsPlaylist);
+    await expect(await pages.songListPage.getSongElement(songs.french1.ID)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songs.french2.ID)).toBeVisible();
+  });
+
+  await test.step('After going back to remote song list, the artist`s song group should be already rolled up', async () => {
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
+    await expect(remoteMic.remoteMicSongListPage.getExpandedArtistSongsGroupElement(artistInfo.name)).not.toBeVisible();
+  });
+
+  await test.step('Go to favourites and open preview of the song - the track should display correctly in desktop app', async () => {
+    await remoteMic.remoteMicSongListPage.goToFavouriteList();
+    await remoteMic.remoteMicSongListPage.expectSongToBeVisible(songs.french1.ID);
+    await remoteMic.remoteMicSongListPage.expectSongToBeVisible(songs.french2.ID);
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french2.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.french2.ID);
+  });
+
+  await test.step('Go to remove the song from favourites - the song should no longer be visible there', async () => {
+    await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
+    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
+    await remoteMic.remoteMicSongListPage.goToFavouriteList();
+    await remoteMic.remoteMicSongListPage.removeSongFromFavouriteList(songs.french1.ID);
+    await remoteMic.remoteMicSongListPage.expectSongNotToBeVisible(songs.french1.ID);
   });
 });
