@@ -356,6 +356,13 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
     await expect(remoteMic.remoteMicSongListPage.getGroupedArtistSongsElement(artistInfo.name)).toBeVisible();
   });
 
+  await test.step('When searching for a songs grouped by artist, they should be visible in the results', async () => {
+    await remoteMic.remoteMicSongListPage.searchTheSong(artistInfo.name);
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french1.ID)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french2.ID)).toBeVisible();
+    await remoteMic.remoteMicSongListPage.searchInput.clear();
+  });
+
   await test.step('Expand the artist`s group and add songs to the favourites', async () => {
     await remoteMic.remoteMicSongListPage.clickToExpandSongsGroup(artistInfo.name);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.french1.ID);
