@@ -112,7 +112,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             display: <>From &nbsp;Phones</>,
             filters: { specificSongs: remoteSongList, skipExcludedLanguages: true },
             footerComponent: (
-              <div className="flex justify-center">
+              <div data-test="remote-mic-playlist-tip" className="flex justify-center">
                 <Text className="text-xl">
                   Add songs on your <strong>phone</strong> using{' '}
                   <strong>

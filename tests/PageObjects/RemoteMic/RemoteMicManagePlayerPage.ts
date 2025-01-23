@@ -25,4 +25,8 @@ export class RemoteMicManagePlayerPage {
   public async removePlayer() {
     await this.page.getByTestId('remove-player').click();
   }
+
+  public async goBackToManageGame() {
+    await this.page.getByTestId('close-menu').click();
+  }
 }
