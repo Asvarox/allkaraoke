@@ -1,14 +1,14 @@
 #ARTIST:The Charlie Daniels Band
 #TITLE:The Devil Went Down To Georgia
 #CREATOR:demondawg
-#BPM:275,7
+#BPM:276
 #YEAR:1979
 #VIDEO:v=sh7BZf7D5Bw
 #LANGUAGE:English
-#GAP:14464,598540145986
+#GAP:14413,674646354733
 #EDITION:Halloween
 #ALLKARAOKE_ID:the-charlie-daniels-band-the-devil-went-down-to-georgia
-#ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:57.208Z
+#ALLKARAOKE_LASTUPDATE:2025-01-22T11:15:25.230Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8481
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5760
