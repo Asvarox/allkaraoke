@@ -1,4 +1,6 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+
+type issueType = 'lyrics sync' | 'wrong lyrics' | 'too quiet' | 'too loud';
 
 export class RateUnfinishedSongPagePO {
   constructor(
@@ -27,6 +29,14 @@ export class RateUnfinishedSongPagePO {
     await this.wrongLyricsIssueButton.click();
   }
 
+  public get tooQuietIssueButton() {
+    return this.page.getByTestId('button-too-quiet');
+  }
+
+  public async selectTooQuietIssue() {
+    await this.tooQuietIssueButton.click();
+  }
+
   public get tooLoudIssueButton() {
     return this.page.getByTestId('button-too-loud');
   }
@@ -45,5 +55,23 @@ export class RateUnfinishedSongPagePO {
 
   public async submitYourSelectionAndExit() {
     await this.exitSongButton.click();
+  }
+
+  public getIssueCheckbox(issue: issueType) {
+    const issueNameToSelectorMap = {
+      'lyrics sync': 'not-in-sync',
+      'wrong lyrics': 'bad-lyrics',
+      'too quiet': 'too-quiet',
+      'too loud': 'too-loud',
+    };
+    return this.page.getByTestId(`button-${issueNameToSelectorMap[issue]}`).locator('svg');
+  }
+
+  public async expectIssueToBeSelected(issue: issueType) {
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
+  }
+
+  public async expectIssueToBeDiselected(issue: issueType) {
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
   }
 }
