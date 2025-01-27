@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
-type issueType = 'lyrics sync' | 'wrong lyrics' | 'too quiet' | 'too loud';
+type issueType = 'not-in-sync' | 'bad-lyrics' | 'too-quiet' | 'too-loud';
 
 export class RateUnfinishedSongPagePO {
   constructor(
@@ -58,20 +58,14 @@ export class RateUnfinishedSongPagePO {
   }
 
   public getIssueCheckbox(issue: issueType) {
-    const issueNameToSelectorMap = {
-      'lyrics sync': 'not-in-sync',
-      'wrong lyrics': 'bad-lyrics',
-      'too quiet': 'too-quiet',
-      'too loud': 'too-loud',
-    };
-    return this.page.getByTestId(`button-${issueNameToSelectorMap[issue]}`).locator('svg');
+    return this.page.getByTestId(`button-${issue}`).locator('svg');
   }
 
   public async expectIssueToBeSelected(issue: issueType) {
     await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
   }
 
-  public async expectIssueToBeDiselected(issue: issueType) {
+  public async expectIssueToBeDeselected(issue: issueType) {
     await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
   }
 }

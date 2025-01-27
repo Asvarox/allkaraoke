@@ -109,7 +109,7 @@ test('user can correctly select all of the shown reasons why the song was not co
 
   await test.step('User can select `lyrics synchronization issue` as a reason of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('lyrics sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
@@ -117,7 +117,7 @@ test('user can correctly select all of the shown reasons why the song was not co
 
   await test.step('User can select `wrong lyrics issue` as a reason of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('wrong lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
@@ -125,7 +125,7 @@ test('user can correctly select all of the shown reasons why the song was not co
 
   await test.step('User can select `too quiet` song issue as a reason of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectTooQuietIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
@@ -133,7 +133,7 @@ test('user can correctly select all of the shown reasons why the song was not co
 
   await test.step('User can select `too loud` song issue as a reason of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectTooLoudIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
@@ -141,18 +141,18 @@ test('user can correctly select all of the shown reasons why the song was not co
 
   await test.step('Only 1 volume issue (too quiet/too loud) can be selected at the same time - after clicking also on 2nd option, 1st is unselected', async () => {
     await pages.rateUnfinishedSongPage.selectTooQuietIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
     await pages.rateUnfinishedSongPage.selectTooLoudIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
-    await pages.rateUnfinishedSongPage.expectIssueToBeDiselected('too quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeDeselected('too-quiet');
   });
 
   await test.step('Select 2 more issues - user can select all 3 category issues as a reasons of unfinished song', async () => {
     await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
     await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('lyrics sync');
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('wrong lyrics');
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
