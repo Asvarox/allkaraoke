@@ -43,7 +43,14 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await expect(pages.rateUnfinishedSongPage.tooLoudIssueButton).toBeVisible();
   });
 
+  await test.step('After pressing Escape the user returns to game mode', async () => {
+    await page.keyboard.press('Escape');
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
+  });
+
   await test.step('User can skip the song rating container and go to pick up another song', async () => {
+    await pages.gamePage.exitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
