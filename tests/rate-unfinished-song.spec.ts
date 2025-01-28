@@ -172,3 +172,34 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.songListPage.expectSelectedSongToBe(songID);
   });
 });
+
+test('If a song has volume = 1, the `too quiet` issue cannot be selected', async ({ page }) => {
+  const songID = 'e2e-pass-test-spanish-1994';
+
+  await test.step('Ensure song language is selected ', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected('Spanish');
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('Select computer`s mic and play the song', async () => {
+    await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
+    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectComputersMicrophone();
+    await pages.computersMicConnectionPage.continueToTheSong();
+    await pages.songPreviewPage.playTheSong();
+  });
+
+  await test.step('Exit the song - the `too quiet` issue should not be displayed for selection, when song has max vol = 1', async () => {
+    await page.waitForTimeout(1000);
+    await pages.gamePage.exitSong();
+    await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
+    await expect(pages.rateUnfinishedSongPage.tooQuietIssueButton).not.toBeVisible();
+    await expect(pages.rateUnfinishedSongPage.asLoudAsItCouldBeInfo).toBeVisible();
+    await expect(pages.rateUnfinishedSongPage.asLoudAsItCouldBeInfo).toBeDisabled();
+  });
+});
