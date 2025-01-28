@@ -68,4 +68,8 @@ export class RateUnfinishedSongPagePO {
   public async expectIssueToBeDeselected(issue: issueType) {
     await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
   }
+
+  public get asLoudAsItCouldBeInfo() {
+    return this.page.getByText('Too quiet').locator('~span', { hasText: '(already as loud as it could be)' });
+  }
 }
