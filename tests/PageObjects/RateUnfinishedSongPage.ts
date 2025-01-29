@@ -65,7 +65,7 @@ export class RateUnfinishedSongPagePO {
     await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
   }
 
-  public async expectIssueToBeDeselected(issue: issueType) {
+  public async expectIssueNotToBeSelected(issue: issueType) {
     await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
   }
 
