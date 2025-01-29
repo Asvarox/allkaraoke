@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
-import { openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -10,7 +9,12 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test('window for rating unfinished song is visible and can be skipped by the user', async ({ page }) => {
+const songsID = {
+  french: 'e2e-croissant-french-1994',
+  spanish: 'e2e-pass-test-spanish-1994',
+} as const;
+
+test('window for rating unfinished song is visible and can be skipped by the user', async ({ page, browserName }) => {
   await test.step('Select Advanced setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
@@ -25,11 +29,13 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
   });
 
-  await test.step('Play the random song', async () => {
+  await test.step('Play the song', async () => {
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await page.waitForTimeout(500);
-    await pages.songListPage.approveSelectedSongByKeyboard();
+    if (browserName === 'firefox') {
+      await pages.songListPage.toolbar.ensureFullscreenIsOff();
+    }
+    await pages.songListPage.openPreviewForSong(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
@@ -58,9 +64,10 @@ test('window for rating unfinished song is visible and can be skipped by the use
   });
 });
 
-test('user can correctly select all of the shown reasons why the song was not completed', async ({ page, browser }) => {
-  const songID = 'e2e-pass-test-spanish-1994';
-
+test('user can correctly select all of the shown reasons why the song was not completed', async ({
+  page,
+  browserName,
+}) => {
   const navigateAndPlayNextSong = async () => {
     await test.step('Go back to Song List', async () => {
       await pages.postGameResultsPage.skipScoresAnimation();
@@ -68,11 +75,10 @@ test('user can correctly select all of the shown reasons why the song was not co
       await pages.postGameHighScoresPage.goToSongList();
     });
 
-    await test.step('Navigate with keyboard to play random song', async () => {
-      await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
-      await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
-      await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
-      await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
+    await test.step('Play the song', async () => {
+      await pages.songListPage.openPreviewForSong(songsID.french);
+      await pages.songPreviewPage.goNext();
+      await pages.songPreviewPage.playTheSong(true, false);
     });
 
     await test.step('Exit the song before its end', async () => {
@@ -83,28 +89,27 @@ test('user can correctly select all of the shown reasons why the song was not co
   };
 
   test.slow();
-  await test.step('Select Smartphones setup', async () => {
+  await test.step('Select Computer`s mic setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToInputSelectionPage();
-    await pages.inputSelectionPage.selectSmartphones();
+    await pages.inputSelectionPage.selectComputersMicrophone();
   });
 
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player1');
-
   await test.step('Ensure all languages are selected', async () => {
-    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.computersMicConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
-  await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
-    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
-    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
-    await pages.calibration.approveDefaultCalibrationSetting();
-    await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
+  await test.step('Play the song', async () => {
+    if (browserName === 'firefox') {
+      await pages.songListPage.toolbar.ensureFullscreenIsOff();
+    }
+    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
   });
 
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
@@ -151,7 +156,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
     await pages.rateUnfinishedSongPage.selectTooLoudIssue();
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
-    await pages.rateUnfinishedSongPage.expectIssueToBeDeselected('too-quiet');
+    await pages.rateUnfinishedSongPage.expectIssueNotToBeSelected('too-quiet');
   });
 
   await test.step('Select 2 more issues - user can select all 3 category issues as a reasons of unfinished song', async () => {
@@ -167,15 +172,13 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
-    await pages.songListPage.getSongElement(songID);
-    await pages.songListPage.openPreviewForSong(songID);
-    await pages.songListPage.expectSelectedSongToBe(songID);
+    await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
+    await pages.songListPage.openPreviewForSong(songsID.spanish);
+    await pages.songListPage.expectSelectedSongToBe(songsID.spanish);
   });
 });
 
 test('If a song has volume = 1, the `too quiet` issue cannot be selected', async ({ page }) => {
-  const songID = 'e2e-pass-test-spanish-1994';
-
   await test.step('Ensure song language is selected ', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
@@ -185,8 +188,8 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
   });
 
   await test.step('Select computer`s mic and play the song', async () => {
-    await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songID);
+    await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
+    await pages.songListPage.openPreviewForSong(songsID.spanish);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();
