@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
-import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
+import { MusicBrainzApi } from 'musicbrainz-api/lib/musicbrainz-api';
 import * as process from 'process';
 import songIndex from '../public/songs/index.json';
+import { Song } from '../src/interfaces';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 
@@ -67,7 +67,7 @@ async function updateArtistOrigin(song: Song) {
     song.artistOrigin = existingSong.artistOrigin;
   } else {
     console.log(`Looking for ${song.artist} origin`);
-    const externalData = await mbApi.search<IArtistList>('artist', {
+    const externalData = await mbApi.search('artist', {
       query: `"${song.artist}"`,
     });
     if (externalData.count > 0) {
