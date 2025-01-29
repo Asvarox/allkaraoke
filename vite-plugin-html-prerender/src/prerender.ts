@@ -1,4 +1,4 @@
-import { minify } from 'html-minifier';
+import { minify } from 'html-minifier-terser';
 import path from 'path';
 import type { Plugin, ResolvedConfig } from 'vite';
 import Renderer from './renderer';
@@ -51,12 +51,14 @@ const emitRendered = async (options: HtmlPrerenderOptions, config: ResolvedConfi
         }),
       );
     })
-    .then((renderedRoutes) => {
+    .then(async (renderedRoutes) => {
       if (options.minify) {
         console.log('[vite-plugin-html-prerender] Minifying rendered HTML...');
-        renderedRoutes.forEach((route) => {
-          route.html = minify(route.html, options.minify);
-        });
+        await Promise.all(
+          renderedRoutes.map(async (route) => {
+            route.html = await minify(route.html, options.minify);
+          }),
+        );
       }
       return renderedRoutes;
     })
