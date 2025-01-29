@@ -63,14 +63,9 @@ const data = [
   </>,
 ];
 
-interface Props extends HTMLProps<HTMLElement> {
-  as?: any;
-}
-
-export const GameTip = ({ as = 'h4', ...restProps }: Props): ReactNode => {
+export const GameTip = (props: HTMLProps<HTMLHeadingElement>): ReactNode => {
   const randomValue = useMemo(() => randomInt(0, data.length - 1), []);
   // const randomValue = useMemo(() => randomInt(0, 0), []);
 
-  const Component = as;
-  return <Component {...restProps}>{data[randomValue]}</Component>;
+  return <h4 {...props}>{data[randomValue]}</h4>;
 };

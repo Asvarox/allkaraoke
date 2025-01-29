@@ -7,15 +7,17 @@ import MenuWithLogo from 'modules/Elements/MenuWithLogo';
 import storage from 'modules/utils/storage';
 
 export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
+  const errorObj = error as object;
+
   return (
     <MenuWithLogo supportedBrowsers>
       <h1>
         <Warning fontSize="large" /> An error occurred :(
       </h1>
-      {'message' in (error as any) ? (
+      {'message' in errorObj ? (
         <>
           <h3>The game crashed with following error</h3>
-          <Pre>{(error as any).message}</Pre>
+          <Pre>{errorObj.message as string}</Pre>
         </>
       ) : (
         <h3>The game crashed</h3>

@@ -11,6 +11,7 @@ import { CacheProvider } from '@emotion/react';
 import { browserTracingIntegration, init, setUser, thirdPartyErrorFilterIntegration } from '@sentry/react';
 import App from 'App';
 import 'index.css';
+import NoPrerender from 'modules/Elements/NoPrerender';
 import { normalizeSting } from 'modules/Songs/utils/getSongId';
 import isDev from 'modules/utils/isDev';
 import isE2E from 'modules/utils/isE2E';
@@ -20,10 +21,8 @@ import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
 import storage from 'modules/utils/storage';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
-import { StrictMode } from 'react';
+import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import songStats from 'routes/LandingPage/songStats.json';
 import { v4 } from 'uuid';
 
@@ -104,12 +103,20 @@ const container = document.getElementById('root');
 
 const root = createRoot(container!);
 
+const LazyToastContainer = lazy(() =>
+  import('react-toastify').then(({ ToastContainer }) => ({ default: ToastContainer })),
+);
+
 root.render(
   <StrictMode>
     <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
       <CacheProvider value={emotionCache}>
         <App />
-        <ToastContainer position="bottom-left" theme={'colored'} limit={3} />
+        <NoPrerender>
+          <Suspense>
+            <LazyToastContainer position="bottom-left" theme={'colored'} limit={3} />
+          </Suspense>
+        </NoPrerender>
       </CacheProvider>
     </MotionConfig>
   </StrictMode>,
