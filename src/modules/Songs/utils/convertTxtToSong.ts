@@ -225,13 +225,16 @@ export default function convertTxtToSong(
 
       const [type, start, length, pitch, ...lyrics] = split;
 
-      (lastSection as NotesSection).notes.push({
-        type: typesMap[type as keyof typeof typesMap] ?? 'normal',
-        start: Number(start),
-        length: Number(length),
-        pitch: Number(pitch),
-        lyrics: lyrics.join(' '),
-      });
+      // some files have empty notes sections, this makes sure they don't get added
+      if (type && start !== undefined && length !== undefined && pitch !== undefined) {
+        (lastSection as NotesSection).notes.push({
+          type: typesMap[type as keyof typeof typesMap] ?? 'normal',
+          start: Number(start),
+          length: Number(length),
+          pitch: Number(pitch),
+          lyrics: lyrics.join(' '),
+        });
+      }
       lastStart = Number(split[1]);
     }
   });
