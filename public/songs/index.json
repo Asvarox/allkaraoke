@@ -13193,10 +13193,10 @@
       "English"
     ],
     "bpm": 210,
-    "gap": 2820,
+    "gap": 2770,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2024-10-29T00:11:25.032Z",
+    "lastUpdate": "2025-01-27T10:31:02.759Z",
     "realBpm": 105,
     "volume": 0.71,
     "author": "DoubleDee",
@@ -24337,9 +24337,9 @@
       "English"
     ],
     "bpm": 246,
-    "gap": 38804.39024390244,
+    "gap": 38704.39024390244,
     "year": "2017",
-    "lastUpdate": "2024-08-07T20:58:27.134Z",
+    "lastUpdate": "2025-01-27T10:33:37.192Z",
     "realBpm": 123,
     "volume": 0.73,
     "author": "lozboorman",
@@ -44023,10 +44023,10 @@
       "English"
     ],
     "bpm": 292.95,
-    "gap": 33227.13773681516,
+    "gap": 33327.13773681516,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-16T06:24:39.791Z",
+    "lastUpdate": "2025-01-27T10:32:25.791Z",
     "edition": "[SC]-Songs",
     "genre": "None",
     "realBpm": 147,
@@ -46309,10 +46309,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 10920,
+    "gap": 11020,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:36.082Z",
+    "lastUpdate": "2025-01-27T10:33:15.893Z",
     "edition": "Disney Sing It",
     "realBpm": 108,
     "volume": 0.74,
@@ -54769,10 +54769,10 @@
       "English"
     ],
     "bpm": 362.51,
-    "gap": 21656.923946925603,
+    "gap": 21606.923946925603,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-01-14T20:10:10.699Z",
+    "lastUpdate": "2025-01-27T10:32:50.956Z",
     "edition": "[Duet]-Songs",
     "genre": "Hip-Hop",
     "realBpm": 90,
@@ -56818,10 +56818,10 @@
       "English"
     ],
     "bpm": 299.18,
-    "gap": 49.7259175078548,
+    "gap": -100.2740824921452,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-08T16:20:19.366Z",
+    "lastUpdate": "2025-01-27T10:31:58.848Z",
     "genre": "Rap",
     "realBpm": 101,
     "volume": 0.73,
@@ -59441,9 +59441,9 @@
       "English"
     ],
     "bpm": 120,
-    "gap": 2400,
+    "gap": 2500,
     "year": "2024",
-    "lastUpdate": "2024-11-03T00:12:32.001Z",
+    "lastUpdate": "2025-01-28T20:55:06.648Z",
     "genre": "Pop",
     "realBpm": 158,
     "volume": 0.74,
@@ -73434,9 +73434,9 @@
     "gap": 6003.98406374502,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-11T00:11:14.716Z",
+    "lastUpdate": "2025-01-27T10:31:23.158Z",
     "realBpm": 105,
-    "volume": 0.7,
+    "volume": 0.8,
     "author": "daggeg",
     "sourceUrl": "https://www.youtube.com/watch?v=3vjkh-acmTE&feature=youtu.be",
     "tracks": [
@@ -105994,9 +105994,10 @@
       "English"
     ],
     "bpm": 270,
-    "gap": 7016,
+    "gap": 5966,
     "year": "1988",
     "artistOrigin": "GB",
+    "lastUpdate": "2025-01-27T10:34:21.956Z",
     "realBpm": 129,
     "volume": 0.85,
     "author": "TeLiXj",
@@ -106004,7 +106005,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)",
     "tracks": [
       {
-        "start": 0
+        "start": 18
       }
     ],
     "tracksCount": 1,
@@ -113477,16 +113478,16 @@
       "English"
     ],
     "bpm": 316.12,
-    "gap": 87.84765279007968,
+    "gap": -59.60268252562321,
     "year": "2003",
     "artistOrigin": "CH",
-    "lastUpdate": "2024-07-08T16:20:19.987Z",
+    "lastUpdate": "2025-01-27T10:30:44.767Z",
     "realBpm": 88,
     "volume": 1,
     "author": "crimmins",
     "tracks": [
       {
-        "start": 7
+        "start": 8
       }
     ],
     "tracksCount": 1,
