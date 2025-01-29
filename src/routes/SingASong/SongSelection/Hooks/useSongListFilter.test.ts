@@ -1,6 +1,7 @@
-import { act, renderHook } from '@testing-library/react';
+import { renderHook } from '@testing-library/react';
 import { SongPreview } from 'interfaces';
 import { generateSongPreview } from 'modules/utils/testUtils';
+import { act } from 'react';
 import { useSongListFilter } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 import { beforeEach } from 'vitest';
 
