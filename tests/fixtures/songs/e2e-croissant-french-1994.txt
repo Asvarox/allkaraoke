@@ -7,75 +7,11 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:e2e-croissant-french-1994
 #VIDEO:v=koBUXESJZ8g
-: 15 2 -3 It
-: 18 2 -3 was
-: 24 10 2 Christ
-: 37 2 1 mas
-* 42 10 4 E
-* 54 2 2 ~ve
-: 59 9 2 babe
-- 68 75
-- 75
-* 90 6 14 In
-: 101 2 13 the
-: 106 4 13 drunk
-: 112 8 11 tank
-- 120 131
-- 131
-: 146 5 11 An
-: 153 3 13 old
-: 158 5 14 man
-: 169 2 9 said
-: 173 2 6 to
-: 176 7 6 me,
-- 183 193
-- 193
-: 208 3 2 Won’t
-* 215 8 7 see
-: 226 2 6 a
-: 230 2 6 no
-: 233 2 4 ther
-: 236 8 4 one
-- 244 256
-- 256
-: 271 4 -3 And
-: 278 6 2 then
-: 289 2 1 he
-* 295 8 4 sang
-: 306 2 2 a
-: 311 9 2 song
-- 320 325
-- 325
-: 340 2 14 The
-* 344 7 14 Rare
-: 354 4 13 Old
-: 360 3 13 Moun
-: 365 4 11 tain
-: 374 7 11 Dew
-- 381 386
-- 386
-: 401 3 11 I
-: 407 4 13 turned
-: 415 2 14 my
-: 422 2 9 face
-: 426 2 6 a
-: 429 7 6 way
-- 436 445
-- 445
-: 460 3 2 And
-* 467 9 7 dreamed
-: 480 2 6 a
-: 484 8 4 bout
-: 499 9 2 you
-- 508 512
-- 512
-: 527 5 -3 Got
-: 535 6 2 on
-: 546 2 1 a
-* 550 9 4 lu
-: 563 2 2 cky
-: 567 6 2 one
-- 573 581
-- 581
-: 596
+: 0 10 0 First
+: 15 10 0 Second
+: 30 10 0 Third
+- 50
+: 60 10 0 Fourth
+: 75 10 0 Fifth
+: 90 10 0 Seventh
 E
