@@ -35,6 +35,15 @@ export class Toolbar {
     await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
   }
 
+  public async ensureFullscreenIsOff() {
+    const fullscreenStatus = await this.fullscreenElement.getAttribute('data-testid');
+
+    if (fullscreenStatus === 'FullscreenExitIcon') {
+      await this.toggleFullscreen();
+      await this.expectFullscreenToBeOff();
+    }
+  }
+
   public async quickConnectPhone() {
     await this.page.getByTestId('quick-connect-phone').click();
   }

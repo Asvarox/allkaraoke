@@ -1,4 +1,6 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+
+type issueType = 'not-in-sync' | 'bad-lyrics' | 'too-quiet' | 'too-loud';
 
 export class RateUnfinishedSongPagePO {
   constructor(
@@ -27,6 +29,14 @@ export class RateUnfinishedSongPagePO {
     await this.wrongLyricsIssueButton.click();
   }
 
+  public get tooQuietIssueButton() {
+    return this.page.getByTestId('button-too-quiet');
+  }
+
+  public async selectTooQuietIssue() {
+    await this.tooQuietIssueButton.click();
+  }
+
   public get tooLoudIssueButton() {
     return this.page.getByTestId('button-too-loud');
   }
@@ -45,5 +55,21 @@ export class RateUnfinishedSongPagePO {
 
   public async submitYourSelectionAndExit() {
     await this.exitSongButton.click();
+  }
+
+  public getIssueCheckbox(issue: issueType) {
+    return this.page.getByTestId(`button-${issue}`).locator('svg');
+  }
+
+  public async expectIssueToBeSelected(issue: issueType) {
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
+  }
+
+  public async expectIssueNotToBeSelected(issue: issueType) {
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
+  }
+
+  public get asLoudAsItCouldBeInfo() {
+    return this.page.getByText('Too quiet').locator('~span', { hasText: '(already as loud as it could be)' });
   }
 }
