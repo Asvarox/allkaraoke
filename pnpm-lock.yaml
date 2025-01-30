@@ -33,11 +33,11 @@ importers:
         specifier: ^7.23.6
         version: 7.23.6(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mui/system@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(date-fns@4.1.0)(dayjs@1.11.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@remotion/gif':
-        specifier: ^4.0.84
-        version: 4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^4.0.255
+        version: 4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@remotion/google-fonts':
-        specifier: ^4.0.84
-        version: 4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^4.0.255
+        version: 4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@sentry/react':
         specifier: ^8.41.0
         version: 8.41.0(react@19.0.0)
@@ -70,7 +70,7 @@ importers:
         version: 4.17.21
       material-react-table:
         specifier: ^2.7.0
-        version: 2.7.0(fa3lbbrn3kjgex3ndzzvsdccue)
+        version: 2.7.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/icons-material@6.3.1(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mui/x-date-pickers@7.23.6(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mui/system@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(date-fns@4.1.0)(dayjs@1.11.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       motion:
         specifier: ^11.18.0
         version: 11.18.0(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1653,14 +1653,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@remotion/gif@4.0.84':
-    resolution: {integrity: sha512-5zTRzdLRzvVjSH3Ym8UL4IiOal0y7kmCOvm8vA+/3JJW9RFWICoTwWTG8yh+2IaPomZs4cC8/CQloQkYROulhw==}
+  '@remotion/gif@4.0.255':
+    resolution: {integrity: sha512-tcI+JklxvCqyvaEBR7tSlTayFTH5j6/Njx6CB6pXUc/jJ3ORMLIPyrUNPFZPM80VQW/0u+3erLVy3FKjjKmzQQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/google-fonts@4.0.84':
-    resolution: {integrity: sha512-wfl0o/CWeMbJQ0rlLBIuk4guVh4ADpzhJsgFonmpf9UGlGftXcvgGLNT5Ao35yWLqYfCek2y4+Rn3eytPQqjUw==}
+  '@remotion/google-fonts@4.0.255':
+    resolution: {integrity: sha512-zTWX4qB3776Pnm1qrGG6upvlaCW3bUMB+Xuot+iJSPLpoDKJDS7XhthY1rA7qIx918y2vYIr+kKMmgQprosZ4w==}
 
   '@remotion/media-parser@4.0.255':
     resolution: {integrity: sha512-wp9VmvFpBst1xFxOMmHqEqt+Apre3h/jp5duz18uENnKwjKiTlHDbWf5IeoG9xp0e4xH3cRTA9/5iDtjWLQqtw==}
@@ -5047,12 +5047,6 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  remotion@4.0.84:
-    resolution: {integrity: sha512-ocR2vsSGBoyJY4GmQY/RsvYz5sRsPuC7+GHKGJK1gp5h1KctrLJpt5hqx1wKquXkcuZ5pnsMrHrPe5lFRT9RnA==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-
   remove-accents@0.4.2:
     resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
 
@@ -7161,15 +7155,15 @@ snapshots:
   '@remotion/compositor-win32-x64-msvc@4.0.255':
     optional: true
 
-  '@remotion/gif@4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@remotion/gif@4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-      remotion: 4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      remotion: 4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
-  '@remotion/google-fonts@4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@remotion/google-fonts@4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      remotion: 4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      remotion: 4.0.255(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     transitivePeerDependencies:
       - react
       - react-dom
@@ -10106,8 +10100,8 @@ snapshots:
 
   map-or-similar@1.5.0: {}
 
-  material-react-table@2.7.0(fa3lbbrn3kjgex3ndzzvsdccue):
-    dependencies:
+  ? material-react-table@2.7.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/icons-material@6.3.1(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mui/x-date-pickers@7.23.6(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mui/system@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(date-fns@4.1.0)(dayjs@1.11.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+  : dependencies:
       '@emotion/react': 11.14.0(@types/react@19.0.2)(react@19.0.0)
       '@emotion/styled': 11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0)
       '@mui/icons-material': 6.3.1(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react@19.0.0))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@types/react@19.0.2)(react@19.0.0)
@@ -10995,11 +10989,6 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  remotion@4.0.84(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
-    dependencies:
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-
   remove-accents@0.4.2: {}
 
   require-directory@2.1.1: {}
@@ -11570,7 +11559,7 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.3.11(esbuild@0.24.0)(webpack@5.96.1(esbuild@0.24.0)):
+  terser-webpack-plugin@5.3.11(esbuild@0.17.19)(webpack@5.96.1(esbuild@0.24.0)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -11579,7 +11568,7 @@ snapshots:
       terser: 5.37.0
       webpack: 5.96.1(esbuild@0.17.19)
     optionalDependencies:
-      esbuild: 0.24.0
+      esbuild: 0.17.19
 
   terser@5.37.0:
     dependencies:
@@ -12006,7 +11995,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.11(esbuild@0.24.0)(webpack@5.96.1(esbuild@0.24.0))
+      terser-webpack-plugin: 5.3.11(esbuild@0.17.19)(webpack@5.96.1(esbuild@0.24.0))
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:
