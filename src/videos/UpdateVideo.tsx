@@ -69,7 +69,6 @@ export const UpdateVideo: React.FC = () => {
   const { durationInFrames } = useVideoConfig();
   return (
     <GameScreens>
-      {/* @ts-expect-error expects weird props for Audio */}
       <Audio
         src={music}
         startFrom={msToFps(12_050)}
@@ -78,7 +77,6 @@ export const UpdateVideo: React.FC = () => {
             extrapolateLeft: 'clamp',
           })
         }
-        placeholder={undefined}
       />
       <Global
         styles={css`

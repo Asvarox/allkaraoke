@@ -2,7 +2,7 @@ import InputManager from 'modules/GameEngine/Input/InputManager';
 import events from 'modules/GameEvents/GameEvents';
 import PlayersManager from 'modules/Players/PlayersManager';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import { toast } from 'react-toastify';
+import isPreRendering from 'modules/utils/isPreRendering';
 import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
 
 events.playerRemoved.subscribe((player) => {
@@ -62,30 +62,34 @@ events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
   }
 });
 
-events.remoteMicConnected.subscribe(({ name, id, silent }) => {
-  if (!silent) {
-    toast.success(
-      <>
-        Remote microphone <b className="ph-no-capture">{name}</b> connected!
-      </>,
-      {
-        toastId: `connection-status-${id}`,
-        updateId: `connection-status-${id}`,
-      },
-    );
+events.remoteMicConnected.subscribe(async ({ name, id, silent }) => {
+  if (!isPreRendering) {
+    if (!silent) {
+      (await import('react-toastify')).toast.success(
+        <>
+          Remote microphone <b className="ph-no-capture">{name}</b> connected!
+        </>,
+        {
+          toastId: `connection-status-${id}`,
+          updateId: `connection-status-${id}`,
+        },
+      );
+    }
   }
 });
-events.remoteMicDisconnected.subscribe(({ name, id }, silent) => {
-  if (!silent) {
-    toast.warning(
-      <>
-        Remote microphone <b className="ph-no-capture">{name}</b> disconnected!
-      </>,
-      {
-        toastId: `connection-status-${id}`,
-        updateId: `connection-status-${id}`,
-      },
-    );
+events.remoteMicDisconnected.subscribe(async ({ name, id }, silent) => {
+  if (!isPreRendering) {
+    if (!silent) {
+      (await import('react-toastify')).toast.warning(
+        <>
+          Remote microphone <b className="ph-no-capture">{name}</b> disconnected!
+        </>,
+        {
+          toastId: `connection-status-${id}`,
+          updateId: `connection-status-${id}`,
+        },
+      );
+    }
   }
 });
 

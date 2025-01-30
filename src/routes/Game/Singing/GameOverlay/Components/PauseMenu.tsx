@@ -73,7 +73,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
           />
         </>
       )}
-      {rateSongOpen && <RateSong onExit={onExit} register={register} />}
+      {rateSongOpen && <RateSong onExit={onExit} register={register} song={GameState.getSong()} />}
     </>
   );
 };

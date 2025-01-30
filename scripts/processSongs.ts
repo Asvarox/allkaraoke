@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unused-vars */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
-import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
-import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
+import { Song } from '../src/interfaces';
+
+import { MusicBrainzApi } from 'musicbrainz-api/lib/musicbrainz-api';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 import clearString from '../src/modules/utils/clearString';
@@ -12,7 +12,6 @@ import escSongs from './escSongs.json';
 // @ts-ignore file might not exist
 import scrapedBpmData from './scraped-bpm-data.json';
 
-// @ts-expect-error
 const mbApi = new MusicBrainzApi({
   appName: 'Olkaraoke',
   appVersion: '0.1.0',
@@ -85,7 +84,7 @@ async function appendBandOrigin(songData: Omit<Song, 'tracks'>) {
     return;
   }
 
-  const externalData = await mbApi.search<IArtistList>('artist', {
+  const externalData = await mbApi.search('artist', {
     query: `"${songData.artist}"`,
   });
   if (externalData.count > 0) {
@@ -116,7 +115,7 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
   }
   console.log('    Missing year');
 
-  const externalData = await mbApi.search<IIsrcSearchResult>('recording', {
+  const externalData = await mbApi.search('recording', {
     query: `"${songData.artist}" "${songData.title}"`,
   });
 
@@ -124,24 +123,21 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
     let oldestRecord = externalData.recordings[0];
 
     externalData.recordings.forEach((result) => {
-      // @ts-expect-error
-      const firstReleaseDate = result['first-release-date']?.split('-')?.[0] ?? -Infinity;
-      // @ts-expect-error
-      const currentOldestRelease = oldestRecord['first-release-date']?.split('-')?.[0] ?? Infinity;
+      const firstReleaseDate = Number(result['releases']?.at(0)?.date?.split('-')?.[0] ?? -Infinity);
+      const currentOldestRelease = Number(result['releases']?.at(0)?.date?.split('-')?.[0] ?? Infinity);
       if (clearString(result.title) === clearString(songData.title) && currentOldestRelease > firstReleaseDate) {
         oldestRecord = result;
       }
     });
 
-    // @ts-expect-error
-    const currentOldestRelease = oldestRecord['first-release-date']?.split('-')?.[0];
+    const currentOldestRelease = Number(oldestRecord['releases']?.at(0)?.date?.split('-')?.[0]);
     if (
       clearString(oldestRecord.title) === clearString(songData.title) &&
       currentOldestRelease !== undefined &&
       currentOldestRelease > 100
     ) {
       console.log('    ...', currentOldestRelease);
-      songData.year = currentOldestRelease;
+      songData.year = String(currentOldestRelease);
     } else {
       console.log(
         '    ...not found',
@@ -154,7 +150,7 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
 }
 
 async function setEurovisionEdition(songData: Omit<Song, 'tracks'>) {
-  const escSong = (escSongs as any[]).find((escSong) =>
+  const escSong = (escSongs as Array<Record<'artist' | 'song' | 'year', string>>).find((escSong) =>
     clearString(songData.id).endsWith(clearString(escSong.artist?.replaceAll(' and ', '') + escSong.song)),
   );
   if (escSong) {

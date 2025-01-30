@@ -173,7 +173,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <div className="flex justify-between">
               <Button
                 onClick={() => {
-                  const firstNoteStart = getFirstNoteStartFromSections(song.tracks[0].sections) * beatLength + song.gap;
+                  const firstNoteStart =
+                    getFirstNoteStartFromSections(newSong.tracks[0].sections) * beatLength + newSong.gap;
                   player.current?.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
                 }}>
                 First section
@@ -181,7 +182,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               <Button
                 onClick={() => {
                   const lastNoteStart =
-                    (getLastNotesSection(song.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + song.gap;
+                    (getLastNotesSection(newSong.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + newSong.gap;
                   player.current?.seekTo(lastNoteStart / 1000 - 0.8 * playbackSpeed);
                 }}>
                 Last section

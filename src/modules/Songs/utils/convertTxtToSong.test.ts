@@ -280,4 +280,23 @@ describe('convertTxtToSong', () => {
       expect(parsed.video).toEqual('QzkK3ZtI9SU');
     });
   });
+
+  it('should properly parse the song with empty notes section', () => {
+    const text = `#ARTIST:French Test
+#TITLE:Croissant
+#BPM:350
+#YEAR:1994
+#LANGUAGE:French
+#GAP:1000
+#EDITION:Halloween
+#ALLKARAOKE_ID:e2e-croissant-french-1994
+#VIDEO:v=koBUXESJZ8g
+: 15 2 -3 It
+- 581
+: 596
+E`;
+
+    const parsed = convertTxtToSong(text);
+    expect(parsed.tracks[0].sections).toHaveLength(1);
+  });
 });

@@ -161,4 +161,12 @@ export class SongListPagePO {
     await expect(newSongs).toBeVisible();
     await newSongs.click();
   }
+
+  public get emptyPlaylistAlert() {
+    return this.songListContainer.getByText('No songs found');
+  }
+
+  public get remoteMicPlaylistTip() {
+    return this.page.getByTestId('remote-mic-playlist-tip');
+  }
 }
