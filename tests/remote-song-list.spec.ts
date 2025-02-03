@@ -317,13 +317,6 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
     songsCount: '2',
   } as const;
 
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/');
-    await pages.landingPage.enterTheGame();
-    await pages.mainMenuPage.goToInputSelectionPage();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
 
   await test.step('Ensure all languages are selected and go to the Song List', async () => {

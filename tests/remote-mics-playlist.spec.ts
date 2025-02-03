@@ -27,6 +27,7 @@ const songs = {
   },
   french: {
     ID: 'e2e-croissant-french-1994',
+    artist: 'French Test',
   },
   engPol: {
     ID: 'e2e-english-polish-1994',
@@ -79,6 +80,7 @@ test('Adding and removing song from the remote mic playlist on desktop app works
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.english1.ID);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.polish2.ID);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.spanish.ID);
+    await remoteMic.remoteMicSongListPage.clickToExpandSongsGroup(songs.french.artist);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.french.ID);
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
     await remoteMic.remoteMicSongListPage.expectFavouriteListToContainNumberOfSongs('4');
@@ -107,6 +109,7 @@ test('Adding and removing song from the remote mic playlist on desktop app works
 
   await test.step('Add songs to Player2`s favourites - songs should be visible in remoteMics playlist, which also includes songs added via Player1', async () => {
     await remoteMic2.remoteMicMainPage.remoteTabBar.goToSongList();
+    await remoteMic2.remoteMicSongListPage.clickToExpandSongsGroup(songs.french.artist);
     await remoteMic2.remoteMicSongListPage.addSongToFavouriteList(songs.french.ID);
     await remoteMic2.remoteMicSongListPage.addSongToFavouriteList(songs.engPol.ID);
     await remoteMic2.remoteMicSongListPage.goToFavouriteList();
@@ -117,6 +120,7 @@ test('Adding and removing song from the remote mic playlist on desktop app works
 
   await test.step('Add to Player1`s favourites a song, that is already in remoteMics playlist - both players now have the same song in favourites', async () => {
     await remoteMic.remoteMicSongListPage.goToAllSongsPlaylist();
+    await remoteMic.remoteMicSongListPage.clickToExpandSongsGroup(songs.french.artist);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.french.ID);
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
     await remoteMic.remoteMicSongListPage.expectFavouriteListToContainNumberOfSongs('3');
