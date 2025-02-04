@@ -1,0 +1,528 @@
+#ARTIST:The Lonely Island feat. T-Pain
+#TITLE:I’m On A Boat
+#CREATOR:nwaack
+#BPM:601,35
+#YEAR:2009
+#VIDEO:v=avaSdC0QOUM
+#LANGUAGE:English
+#GAP:27722,244948865053
+#ALLKARAOKE_ID:the-lonely-island-feat-t-pain-im-on-a-boat
+#ALLKARAOKE_LASTUPDATE:2025-02-04T15:05:16.048Z
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_VOLUME:0,74
+#MP3:The Lonely Island feat. T-Pain - I’m On A Boat.mp3
+F 40 30 18 Oh 
+F 74 26 20 shit, 
+F 116 9 20 get 
+F 128 3 14 your 
+F 133 4 19 to
+F 141 4 12 wels 
+F 150 4 16 rea
+F 160 4 16 dy
+- 164
+F 167 3 17 It’s 
+F 173 3 19 a
+F 179 5 16 bout 
+F 188 4 20 to 
+F 196 6 16 go 
+F 207 25 12 down
+- 232
+F 259 3 18 Eve
+F 264 3 11 ry
+F 269 3 17 bo
+F 274 3 17 dy 
+F 281 3 17 in 
+F 286 3 17 the 
+F 292 3 17 place 
+F 302 2 17 hit 
+F 310 3 20 the 
+F 318 5 18 fu 
+F 330 4 19 cking 
+F 339 14 16 deck
+- 353
+F 376 4 11 But 
+F 383 4 17 stay 
+F 394 3 18 on 
+F 401 4 17 your 
+F 409 7 11 mo
+F 421 5 17 ther
+F 432 8 17 fu
+F 446 7 19 cking 
+F 456 24 16 toes
+- 480
+F 504 6 14 We 
+F 514 3 14 run
+F 520 3 12 ning 
+F 525 3 9 this, 
+F 534 5 14 let’s 
+F 541 4 13 go
+- 545
+F 563 3 20 I’m 
+F 571 4 16 on 
+F 578 4 18 a 
+F 586 16 18 boat,
+- 602
+F 627 4 17 I’m 
+F 635 4 17 on 
+F 642 4 15 a 
+F 650 12 18 boat
+- 662
+F 667 5 18 Eve
+F 675 3 16 ry
+F 682 4 18 bo
+F 690 4 18 dy 
+F 698 5 18 look 
+F 707 4 15 at 
+F 714 10 17 me
+- 724
+F 729 5 17 ’Cause 
+F 737 4 14 I’m 
+F 745 5 16 sail
+F 753 4 17 ing 
+F 761 5 16 on 
+F 770 4 15 a 
+F 778 13 17 boat
+- 791
+F 820 4 18 I’m 
+F 827 4 18 on 
+F 834 4 15 a 
+F 842 15 18 boat,
+- 857
+F 882 5 19 I’m 
+F 891 5 18 on 
+F 899 5 15 a 
+F 908 10 18 boat
+- 918
+F 924 4 17 Take 
+F 932 4 16 a 
+F 939 8 19 good 
+F 954 10 18 hard 
+F 970 8 18 look
+- 978
+F 987 3 18 At 
+F 994 4 16 the 
+F 1001 5 18 mo
+F 1011 4 18 ther
+F 1018 5 17 fu
+F 1027 5 19 cking 
+F 1034 11 18 boat
+- 1045
+F 1076 4 17 I’m 
+F 1085 4 18 on 
+F 1092 4 17 a 
+F 1100 8 18 boat 
+F 1116 4 17 mo
+F 1124 4 16 ther
+F 1132 4 16 fu
+F 1140 4 16 cker,
+- 1144
+F 1149 4 17 Take 
+F 1157 4 16 a 
+F 1164 4 17 look 
+F 1172 5 16 at 
+F 1180 5 17 me
+- 1185
+F 1211 6 18 Straight 
+F 1227 4 17 float
+F 1235 4 17 ing 
+F 1244 4 10 on 
+F 1251 4 15 a 
+F 1261 8 18 boat
+- 1269
+F 1276 4 19 On 
+F 1285 3 17 the 
+F 1292 4 18 deep 
+F 1301 4 18 blue 
+F 1308 16 18 sea
+- 1324
+F 1340 5 20 Bus
+F 1348 4 17 ting 
+F 1356 13 18 five 
+F 1374 11 17 knots,
+- 1385
+F 1388 12 19 Wind 
+F 1403 4 17 whip
+F 1411 4 16 ping 
+F 1419 5 18 out 
+F 1427 5 20 my 
+F 1435 16 20 coat
+- 1451
+F 1460 4 16 You 
+F 1469 10 20 can’t 
+F 1484 5 19 stop 
+F 1493 4 20 me 
+F 1501 4 20 mo
+F 1508 4 17 ther
+F 1517 4 20 fu
+F 1525 5 20 cker,
+- 1530
+F 1533 4 19 ’cause 
+F 1541 4 18 I’m 
+F 1549 4 20 on 
+F 1557 4 20 a... 
+F 1565 4 19 Take 
+F 1572 4 16 a 
+F 1580 4 17 pic
+F 1588 4 16 ture, 
+F 1596 6 15 trick,
+- 1602
+F 1621 4 16 I’m 
+F 1629 4 17 on 
+F 1637 4 15 a 
+F 1644 7 17 boat, 
+F 1658 14 15 bitch,
+- 1672
+F 1686 4 18 We 
+F 1693 4 16 drin
+F 1701 5 15 king 
+F 1709 10 15 San
+F 1724 5 14 ta
+F 1733 4 16 na 
+F 1741 10 15 champ 
+F 1756 4 16 ’cause 
+F 1765 4 15 it’s 
+F 1773 8 14 so 
+F 1787 15 14 crisp,
+- 1802
+F 1813 5 15 I 
+F 1820 5 15 got 
+F 1828 4 15 my 
+F 1836 8 13 swim 
+F 1852 5 14 trunks
+- 1857
+F 1883 5 17 And 
+F 1892 4 15 my 
+F 1900 4 15 flip
+F 1908 4 14 pie
+F 1916 4 14 flop
+F 1924 7 15 pies
+- 1931
+F 1941 5 20 I’m 
+F 1949 4 16 flip
+F 1956 4 14 ping 
+F 1964 3 14 bur
+F 1971 3 14 gers 
+F 1977 4 14 you 
+F 1984 5 15 at 
+F 1993 4 15 Kin
+F 2001 5 14 ko’s
+- 2006
+F 2013 5 14 Straight 
+F 2026 7 15 flip
+F 2039 4 15 ping 
+F 2049 4 15 co
+F 2056 4 12 pies
+- 2060
+F 2063 6 14 I’m 
+F 2071 5 17 ri
+F 2079 4 17 ding 
+F 2086 5 15 on 
+F 2093 5 15 a 
+F 2105 6 15 dol 
+F 2119 5 18 phin,
+- 2124
+F 2145 4 18 Do
+F 2151 4 16 ing 
+F 2163 5 9 flips 
+F 2173 5 17 and 
+F 2185 4 18 shit
+- 2189
+F 2196 4 15 This 
+F 2202 4 15 dol
+F 2208 4 16 phin’s 
+F 2218 8 18 splash
+F 2235 8 19 ing,
+- 2243
+F 2259 4 18 Gett 
+F 2267 3 18 ing 
+F 2274 4 17 ever
+F 2282 4 17 y
+F 2291 4 17 body 
+F 2300 6 17 all 
+F 2312 4 16 wet
+- 2316
+F 2323 6 20 But 
+F 2334 4 19 this 
+F 2342 4 17 ain’t 
+F 2355 10 16 Sea
+F 2368 15 17 world,
+- 2383
+F 2396 6 19 This 
+F 2405 4 18 is 
+F 2413 5 20 real 
+F 2422 4 18 as 
+F 2430 5 16 it 
+F 2438 13 20 gets
+- 2451
+F 2456 4 18 I’m 
+F 2463 4 18 on 
+F 2470 4 19 a 
+F 2478 11 19 boat, 
+F 2495 4 19 moth
+F 2504 3 19 er
+F 2511 4 19 fuck
+F 2519 4 19 er,
+- 2523
+F 2528 4 16 Don’t 
+F 2536 4 19 you 
+F 2544 4 19 e
+F 2551 4 20 ver 
+F 2559 4 16 for
+F 2566 7 20 get
+- 2573
+F 2583 4 20 I’m 
+F 2590 3 17 on 
+F 2598 3 18 a 
+F 2606 8 16 boat 
+F 2621 19 13 and
+- 2640
+F 2646 4 16 It’s 
+F 2655 3 16 go
+F 2661 3 16 ing 
+F 2667 6 15 fast 
+F 2683 12 15 and
+- 2695
+F 2711 9 13 I 
+F 2722 4 15 got 
+F 2729 4 16 a 
+F 2737 4 15 nau 
+F 2746 5 15 ti
+F 2754 4 15 cal 
+F 2761 4 14 themed, 
+F 2772 10 15 Pash
+F 2785 5 16 mi
+F 2792 5 15 na 
+F 2803 6 14 Af
+F 2813 10 15 ghan
+- 2823
+: 2841 10 15 I’m 
+: 2853 5 15 the 
+: 2861 10 15 king 
+: 2874 5 13 of 
+: 2882 4 11 the 
+: 2888 7 15 world,
+- 2895
+: 2906 12 15 On 
+: 2919 4 13 a 
+: 2926 14 15 boat 
+: 2942 10 15 like 
+: 2957 6 15 Le
+: 2966 5 11 o
+- 2971
+: 2973 1 9 I
+: 2975 4 15 ~f 
+: 2981 6 15 you 
+: 2989 9 15 o
+: 2999 4 13 ~n 
+: 3006 5 11 the 
+: 3015 18 15 shore,
+- 3033
+: 3036 5 15 Then 
+: 3044 5 13 you 
+: 3053 14 15 sure 
+: 3069 11 15 not 
+: 3085 5 15 me, 
+: 3094 19 11 oh
+- 3113
+F 3122 7 20 Get 
+F 3135 11 14 the 
+F 3150 9 16 fuck 
+F 3165 15 19 up, 
+F 3189 11 18 this 
+F 3204 7 19 boat 
+F 3217 10 19 is 
+F 3230 20 9 real
+- 3250
+F 3262 10 18 Fuck 
+F 3278 5 11 land, 
+F 3287 5 19 I’m 
+F 3295 5 9 on 
+F 3304 5 19 a 
+F 3312 9 10 boat, 
+F 3326 4 20 moth
+F 3335 5 20 er
+F 3343 5 18 fuck
+F 3351 11 20 er!
+- 3362
+F 3391 9 10 Fuck 
+F 3407 7 14 trees, 
+F 3416 3 20 I 
+F 3423 4 12 climb 
+F 3439 5 13 buo
+F 3448 4 10 ys, 
+F 3456 4 20 moth
+F 3464 4 20 er 
+F 3472 5 9 fuck
+F 3480 18 9 er!
+- 3498
+F 3512 5 23 I’m 
+F 3521 7 13 on 
+F 3531 3 13 the 
+F 3538 6 13 deck 
+F 3552 4 13 with 
+F 3560 4 19 my 
+F 3567 11 22 boys, 
+F 3584 4 12 moth
+F 3592 4 12 er
+F 3600 5 21 fuck
+F 3608 11 13 er!
+- 3619
+F 3639 5 16 The 
+F 3648 13 16 boat 
+F 3665 5 16 en
+F 3673 5 14 gine 
+F 3680 12 16 make 
+F 3696 13 19 noise, 
+F 3711 5 16 moth
+F 3718 5 14 er 
+F 3727 6 16 fuck
+F 3735 23 16 er!
+- 3758
+F 3776 9 17 Hey 
+F 3792 8 18 ma, 
+F 3802 4 19 if 
+F 3809 4 17 you 
+F 3817 5 15 could 
+F 3826 8 17 see 
+F 3837 8 16 me 
+F 3849 17 10 now
+- 3866
+F 3886 10 16 Arms 
+F 3902 12 16 spread 
+F 3919 12 17 wide 
+F 3936 4 17 on 
+F 3944 4 15 the 
+F 3952 8 18 star
+F 3963 7 17 board 
+F 3975 24 16 bow
+- 3999
+F 4017 5 17 Gon
+F 4025 4 18 na 
+F 4033 5 19 fly 
+F 4041 5 19 this 
+F 4050 11 19 boat 
+F 4066 5 19 to 
+F 4074 5 16 the 
+F 4082 8 19 moon 
+F 4094 8 19 some
+F 4105 22 17 how
+- 4127
+F 4136 4 18 Like 
+F 4145 5 20 Ke
+F 4154 4 19 vin 
+F 4162 5 18 Gar
+F 4170 22 18 nett, 
+F 4208 5 19 an
+F 4218 4 19 y 
+F 4225 5 19 thing 
+F 4234 4 18 is 
+F 4242 5 19 pos
+F 4250 4 19 si
+F 4258 33 19 ble
+- 4291 4314
+- 4314
+: 4354 33 9 Yeah,
+- 4387
+: 4400 6 16 Ne
+: 4411 5 16 ver 
+: 4420 5 16 thought 
+: 4429 4 16 I’d 
+: 4436 5 16 be 
+: 4444 4 16 on 
+: 4452 4 16 a 
+: 4459 9 16 boa
+: 4469 34 14 ~t
+- 4503
+: 4513 6 14 It’s 
+: 4523 4 14 a 
+: 4530 10 14 big 
+: 4544 12 14 blue 
+: 4561 6 14 wa
+: 4570 5 16 ter
+: 4578 6 14 y 
+: 4587 39 9 road
+- 4626
+: 4640 12 16 Po
+: 4656 20 19 sei
+: 4681 17 16 do
+: 4699 17 12 ~n, 
+: 4721 20 16 look 
+: 4745 18 16 at 
+: 4767 18 17 me
+: 4786 15 16 ~
+: 4802 17 12 ~ 
+* 4820 7 12 oh
+* 4828 6 14 ~
+* 4835 8 16 ~
+* 4844 8 12 ~
+* 4853 32 9 ~
+- 4885
+: 4908 8 16 Ne
+: 4918 11 16 ver 
+: 4933 5 16 thought 
+: 4942 4 16 I’d 
+: 4949 11 16 see 
+: 4965 5 16 the 
+: 4974 5 16 day
+: 4980 32 14 ~
+- 5012
+: 5027 6 14 When 
+: 5037 4 14 a 
+: 5045 10 14 big 
+: 5059 11 14 boat 
+: 5074 6 14 co
+: 5084 5 14 ming 
+: 5092 6 16 my 
+: 5100 37 9 way
+- 5137
+: 5157 15 9 Be
+: 5176 11 16 lieve 
+: 5190 11 16 me 
+: 5205 5 16 when 
+: 5213 8 16 I 
+: 5224 19 16 say
+: 5244 16 17 ~
+: 5261 16 14 ~
+- 5277
+: 5285 11 16 I 
+: 5299 22 19 fucked 
+: 5325 17 16 a 
+* 5346 26 19 mer
+* 5375 31 16 mai
+* 5410 11 16 ~
+* 5426 44 16 ~
+* 5474 11 16 ~
+* 5491 67 16 ~d
+- 5558
+: 5588 8 12 Oh
+: 5597 7 14 ~
+: 5605 8 16 ~
+: 5614 10 21 ~
+: 5625 20 19 ~
+: 5646 11 16 ~
+- 5657 5684
+- 5684
+F 5724 4 14 Sh~
+F 5732 5 14 sh~
+: 5740 22 14 sho
+- 5762
+F 5789 5 14 Sh~
+F 5796 5 14 sh~
+: 5804 16 14 sho
+- 5820
+F 5823 4 14 Sh~
+F 5829 4 14 sh~
+* 5836 13 14 sho
+- 5849
+F 5853 5 14 Sh~
+: 5861 8 14 shor
+* 5871 21 16 ty
+- 5892
+: 5919 12 14 Shor
+: 5933 22 16 ty
+- 5955
+: 5965 13 16 Ye~
+: 5980 5 14 ah 
+* 5988 14 12 yeah~ 
+: 6005 42 9 yeah
+E

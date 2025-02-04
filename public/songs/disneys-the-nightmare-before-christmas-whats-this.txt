@@ -1,0 +1,541 @@
+#ARTIST:Disney’s The Nightmare Before Christmas
+#TITLE:What’s This?
+#CREATOR:matthu
+#BPM:312,45
+#YEAR:1993
+#VIDEO:v=QLvvkTbHjHI
+#LANGUAGE:English
+#GAP:76551,83869419107
+#EDITION:Christmas
+#ALLKARAOKE_ID:disneys-the-nightmare-before-christmas-whats-this
+#ALLKARAOKE_LASTUPDATE:2025-02-04T15:05:27.314Z
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Disney’s The Nightmare Before Christmas - What’s This?.mp3
+F 21 2 7 What’s 
+F 24 3 7 this? 
+F 35 2 7 What’s 
+F 38 7 7 this?
+- 45
+: 50 2 7 There’s 
+: 53 2 7 co
+: 56 2 9 lor 
+: 60 2 11 e
+: 64 2 12 very
+: 67 7 11 where
+- 74
+F 79 2 7 What’s 
+F 83 7 7 this?
+- 90
+: 94 2 -1 There’s 
+: 98 2 3 white 
+: 101 2 7 things 
+: 105 2 9 in 
+: 109 2 11 the 
+: 112 5 7 air
+- 117
+F 123 2 7 What’s 
+F 127 5 7 this?
+- 132
+: 138 2 7 I 
+: 141 2 7 can’t 
+: 145 2 9 be
+: 149 3 11 lieve 
+: 153 2 12 my 
+: 157 2 11 eyes 
+: 161 2 7 I 
+: 165 2 11 must 
+: 168 2 7 be 
+: 172 2 11 dream
+: 176 2 7 ing
+- 178
+: 179 2 11 Wake 
+: 183 2 7 up, 
+F 187 2 13 Jack, 
+F 190 2 11 this 
+F 193 2 11 is
+F 197 2 11 n’t 
+F 201 4 7 fair
+- 205
+F 211 2 7 What’s 
+F 215 5 7 this?
+- 220 251
+- 251
+F 272 2 7 What’s 
+F 275 5 7 this? 
+F 287 2 7 What’s 
+F 290 6 7 this?
+- 296
+: 301 2 4 There’s 
+: 305 2 7 some
+: 309 2 4 thing 
+F 312 2 11 ve
+F 316 2 12 ry 
+F 320 5 10 wrong
+- 325
+F 330 2 7 What’s 
+F 334 5 7 this?
+- 339
+: 345 2 -1 These 
+: 349 2 3 peo
+: 353 2 6 ple 
+: 357 2 9 sing
+: 361 2 11 ing 
+: 365 2 7 songs
+- 367
+F 376 5 7 What’s 
+F 383 2 7 this?
+- 385
+: 389 2 4 The 
+: 392 2 7 streets 
+: 396 2 9 are 
+: 400 2 11 lined 
+: 404 2 12 with 
+: 408 2 11 Lit
+: 412 2 7 tle 
+: 416 2 11 crea
+: 420 2 7 tures 
+: 424 2 11 laugh
+: 428 2 7 ing
+- 430
+F 431 2 7 E
+F 435 2 7 very
+F 439 2 7 body 
+F 443 3 7 seems 
+F 447 2 7 so 
+F 451 3 7 hap
+F 456 2 7 py
+- 458
+F 459 2 7 Have 
+F 462 2 7 I 
+F 465 2 7 pos
+F 469 2 7 si
+F 473 2 7 bly 
+F 477 2 7 gone 
+F 480 2 7 daf
+F 484 2 7 fy
+- 486
+F 488 2 7 What 
+F 492 2 7 is 
+F 495 4 7 this?
+- 499 504
+- 504
+F 525 2 7 What’s 
+F 528 3 7 this?
+- 531 562
+- 562
+: 583 2 0 There’s 
+: 586 2 12 chil
+: 589 2 11 dren 
+: 593 2 9 throw
+: 597 2 11 ing 
+: 600 3 12 snow
+F 605 4 11 balls
+- 609
+: 612 2 0 In
+: 615 2 11 stead 
+: 619 2 9 of 
+: 622 2 7 throw
+: 626 2 9 ing 
+: 629 5 11 heads
+- 634
+: 640 3 4 They’re 
+: 644 2 12 bu
+: 648 3 11 sy 
+: 652 2 9 build
+: 656 2 11 ing 
+F 659 6 14 toys
+- 665
+F 667 2 7 And 
+F 670 2 7 ab
+F 674 1 7 so
+F 676 3 7 lute
+F 680 2 7 ly 
+F 683 2 7 no 
+F 687 2 7 one’s 
+F 690 7 7 dead
+- 697
+: 702 2 4 There’s 
+: 706 2 14 frost 
+: 709 2 12 on 
+: 713 2 10 e
+: 717 2 12 very 
+: 720 3 14 win
+F 725 1 11 dow
+- 726
+F 727 2 7 Oh, 
+F 732 2 7 I 
+: 735 2 13 can’t 
+: 739 2 12 be
+: 743 2 10 lieve 
+: 746 2 12 my 
+: 750 7 13 eyes
+- 757
+: 762 2 1 And 
+: 766 2 13 in 
+: 770 2 11 my 
+: 774 3 9 bones 
+: 779 3 11 I 
+: 784 3 13 feel 
+: 788 3 11 the 
+: 794 3 13 warmth
+- 797
+* 800 4 15 That’s 
+* 807 6 16 com
+* 816 6 15 ing 
+* 826 12 13 from 
+* 841 8 16 in
+* 852 22 15 side
+- 874
+F 887 2 7 Oh, 
+F 891 6 7 look, 
+F 900 2 7 what’s 
+F 904 6 7 this
+- 910
+: 915 2 5 They’re 
+: 918 2 8 hang
+: 921 2 10 ing 
+: 925 2 12 mi
+: 929 2 13 stle
+: 933 7 12 toe,
+- 940
+F 943 3 7 They 
+F 948 6 7 kiss
+- 954
+: 960 2 0 Why 
+: 964 2 7 that 
+: 967 2 8 looks 
+: 970 3 10 so 
+: 974 2 12 u
+: 978 5 8 nique
+- 983
+F 989 2 7 In
+F 992 6 7 spired
+- 998
+: 1003 2 5 They’re 
+: 1007 2 8 ga
+: 1011 2 10 ther
+: 1014 2 12 ing 
+: 1018 2 13 a
+: 1022 2 12 round 
+: 1026 2 8 to 
+: 1030 2 12 hear 
+: 1034 2 8 a 
+: 1037 2 12 sto
+: 1041 2 8 ry
+- 1043
+F 1045 2 7 Roast
+F 1048 2 7 ing 
+F 1052 2 7 chest
+F 1056 2 7 nuts 
+F 1059 2 7 on 
+F 1063 2 7 a 
+F 1067 6 7 fire
+- 1073
+F 1076 2 7 What’s 
+F 1080 7 7 this?
+- 1087 1116
+- 1116
+F 1137 2 7 What’s 
+F 1140 6 7 this?
+- 1146
+F 1151 2 7 In 
+F 1155 8 7 here 
+: 1167 2 0 they’ve 
+: 1171 2 8 got 
+: 1174 2 10 a 
+: 1178 2 12 lit
+: 1181 2 13 tle 
+F 1185 7 12 tree,
+- 1192
+F 1197 2 7 How 
+F 1201 6 7 queer 
+: 1212 2 3 And 
+: 1216 2 7 who 
+: 1219 2 8 would 
+: 1222 2 10 e
+: 1226 2 12 ver 
+: 1229 5 8 think
+- 1234
+F 1240 2 7 And 
+F 1244 7 7 why
+- 1251
+: 1256 2 3 They’re 
+: 1260 2 8 co
+: 1263 2 10 vering 
+: 1267 2 12 it 
+: 1270 2 13 with 
+: 1274 2 12 ti
+: 1278 2 8 ny 
+: 1281 2 12 lit
+: 1285 2 8 tle 
+: 1288 2 12 things
+- 1290
+: 1292 2 8 They’ve 
+: 1296 2 12 got 
+: 1300 1 8 e
+: 1303 3 12 lec
+: 1308 2 8 tric 
+: 1311 1 12 lights 
+: 1314 2 8 on 
+: 1318 2 12 strings
+- 1320
+F 1324 2 7 And 
+F 1327 1 7 there’s 
+F 1329 2 7 a 
+F 1333 3 7 smile 
+F 1339 1 7 on 
+F 1341 1 7 e
+F 1344 1 7 very
+F 1347 3 7 one
+- 1350
+F 1352 2 7 So, 
+F 1356 2 7 now, 
+F 1359 2 7 cor
+F 1363 3 7 rect 
+F 1369 1 7 me 
+F 1372 1 7 if 
+F 1374 1 7 I’m 
+F 1378 3 7 wrong
+- 1381
+* 1385 1 1 This 
+* 1388 1 1 looks 
+* 1391 1 3 like 
+* 1394 3 5 fun! 
+* 1398 1 3 This 
+* 1400 1 1 looks 
+* 1403 2 3 like 
+* 1408 2 5 fun!
+- 1410
+F 1411 2 7 Oh, 
+F 1415 2 7 could 
+F 1419 2 7 it 
+F 1423 2 7 be 
+F 1427 1 7 I 
+F 1430 1 7 got 
+F 1434 2 7 my 
+F 1438 3 7 wish?
+- 1441
+F 1449 2 7 What’s 
+F 1453 3 7 this?
+- 1456 1486
+- 1486
+F 1507 2 7 Oh 
+F 1511 6 7 my, 
+F 1523 2 7 what 
+F 1527 6 7 now
+- 1533
+: 1538 2 8 The 
+: 1542 2 8 child
+: 1545 2 10 ren 
+: 1549 2 12 are 
+: 1552 2 13 a
+: 1556 5 12 sleep
+- 1561
+F 1567 2 7 But 
+F 1571 6 7 look,
+- 1577
+: 1583 2 0 There’s 
+: 1586 2 7 no
+: 1590 2 8 thing 
+: 1593 2 10 un
+: 1596 3 12 der
+: 1600 5 8 neath
+- 1605
+F 1611 2 7 No 
+F 1615 6 7 ghouls,
+- 1621
+: 1627 2 3 No 
+: 1630 3 8 wi
+: 1635 2 10 tches 
+: 1638 2 12 here 
+: 1641 2 13 to 
+: 1645 2 12 scream 
+: 1648 2 8 and 
+: 1652 2 12 scare 
+: 1656 2 8 them
+- 1658
+: 1659 2 12 Or 
+: 1662 2 8 en
+: 1666 2 12 snare 
+: 1670 3 8 them,
+- 1673
+: 1678 2 12 On
+: 1681 2 8 ly 
+: 1684 2 12 lit
+: 1688 1 8 tle 
+: 1691 2 12 co
+: 1695 3 8 zy 
+: 1699 3 12 things
+- 1702
+* 1704 3 8 Se
+* 1709 7 12 cure 
+* 1717 2 8 in
+* 1721 3 12 side 
+* 1726 5 8 their 
+* 1733 10 12 dream
+* 1749 24 7 land
+- 1773 1820
+- 1820
+F 1841 2 7 What’s 
+F 1844 5 7 this?
+- 1849 1879
+- 1879
+: 1900 3 -2 The 
+: 1904 2 13 mon
+: 1907 2 12 sters 
+: 1911 2 10 are 
+: 1915 2 12 all 
+: 1918 3 13 mis
+: 1922 2 12 sing
+- 1924
+: 1925 2 8 And 
+: 1929 2 10 the 
+: 1933 3 12 night
+: 1937 1 10 mares 
+: 1940 2 8 can’t 
+: 1943 2 10 be 
+: 1947 7 12 found
+- 1954
+: 1958 2 13 And 
+: 1962 2 15 in 
+: 1965 2 13 their 
+: 1969 2 10 place 
+F 1972 2 7 there 
+F 1976 2 7 seems 
+F 1981 2 7 to 
+F 1984 2 7 be
+- 1986
+F 1988 2 7 Good 
+F 1991 2 7 feel
+F 1995 2 7 ing 
+F 1999 2 7 all 
+F 2003 2 7 a
+F 2006 5 7 round
+- 2011
+: 2017 2 14 In
+: 2021 2 15 stead 
+: 2025 2 13 of 
+: 2028 2 11 screams, 
+: 2032 2 13 I 
+: 2036 2 15 swear 
+F 2041 2 13 I 
+F 2044 2 11 can
+- 2046
+F 2048 2 7 Hear 
+: 2052 2 14 mu
+: 2056 2 13 sic 
+: 2060 2 11 in 
+: 2063 2 13 the 
+: 2067 5 14 air
+- 2072
+: 2080 2 7 The 
+: 2083 3 14 smell 
+: 2087 2 12 of 
+: 2090 3 10 cakes 
+: 2094 2 12 and 
+: 2098 2 14 pies
+- 2100
+* 2102 2 16 Are 
+* 2106 2 14 ab
+* 2111 2 16 so
+* 2115 3 17 lute
+* 2121 5 16 ly 
+* 2133 8 14 e
+* 2146 9 17 very
+* 2159 16 16 where
+- 2175
+F 2189 3 7 The 
+F 2193 6 7 sights, 
+F 2204 2 7 the 
+F 2207 6 7 sounds
+- 2213
+: 2218 2 9 They’re 
+: 2222 2 9 e
+: 2226 2 11 very
+: 2229 2 13 where 
+: 2233 2 14 and 
+: 2236 10 13 all 
+F 2249 2 7 a
+F 2252 6 7 round
+- 2258
+: 2264 2 4 I’ve 
+: 2267 2 8 ne
+: 2270 2 9 ver 
+: 2274 2 11 felt 
+: 2277 2 13 so 
+: 2281 5 9 good 
+F 2292 2 7 be
+F 2296 6 7 fore
+- 2302
+: 2307 2 4 This 
+: 2310 2 9 em
+: 2314 2 11 pty 
+: 2318 2 13 place 
+: 2321 2 14 in
+: 2325 2 13 side 
+: 2329 2 9 of 
+: 2333 2 13 me
+- 2335
+: 2337 2 9 Is 
+: 2341 2 13 fil
+: 2344 2 9 ling 
+: 2348 2 13 up
+- 2350
+: 2353 1 9 I 
+: 2355 2 13 sim
+: 2359 2 9 ply 
+: 2363 2 13 can
+: 2366 2 9 not 
+F 2370 1 7 get 
+F 2373 1 7 e
+F 2375 3 7 nough
+- 2378
+F 2382 1 7 I 
+F 2385 3 7 want 
+F 2389 1 7 it, 
+F 2392 2 7 oh, 
+F 2396 2 7 I 
+F 2400 2 7 want 
+F 2403 2 7 it
+- 2405
+: 2408 2 13 Oh, 
+: 2412 2 13 I 
+: 2415 2 14 want 
+: 2419 2 13 it 
+: 2422 2 11 for 
+: 2426 2 13 my 
+: 2430 4 14 own
+- 2434
+* 2436 1 14 I’ve 
+* 2439 1 14 got 
+* 2442 2 16 to 
+* 2445 2 18 know, 
+* 2448 2 16 I’ve 
+* 2452 2 14 got 
+* 2455 2 16 to 
+* 2459 2 18 know
+- 2461
+: 2464 2 16 What 
+: 2468 2 14 is 
+F 2471 2 7 this 
+F 2474 2 7 place 
+F 2478 2 7 that 
+F 2481 1 7 I 
+F 2484 1 7 have 
+F 2491 7 7 found?
+- 2498
+F 2502 3 7 What
+- 2505
+F 2520 5 7 Is
+- 2525
+F 2535 8 7 This?
+- 2543 2642
+- 2642
+F 2663 4 7 Christ
+F 2669 4 7 mas 
+F 2675 10 7 town?
+- 2685 2699
+- 2699
+F 2720 29 7 Hmm...
+E

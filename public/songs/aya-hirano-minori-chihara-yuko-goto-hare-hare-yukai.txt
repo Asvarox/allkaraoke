@@ -1,0 +1,221 @@
+#ARTIST:Aya Hirano, Minori Chihara & Yuko Goto
+#TITLE:Hare hare yukai
+#BPM:344
+#YEAR:2006
+#PREVIEWSTART:27
+#VIDEO:v=x2iKC0C32-g
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:11767,093023255813
+#ALLKARAOKE_ID:aya-hirano-minori-chihara-yuko-goto-hare-hare-yukai
+#ALLKARAOKE_LASTUPDATE:2025-02-04T15:05:28.610Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_PREVIEWEND:62
+#ALLKARAOKE_VOLUME:0,72
+#MP3:Aya Hirano, Minori Chihara & Yuko Goto - Hare hare yukai (TV).mp3
+#COVER:Aya Hirano, Minori Chihara & Yuko Goto - Hare hare yukai (TV).jpg
+: 23 2 3 Na
+: 27 2 3 zo
+: 31 2 2 na
+: 35 8 3 zo
+- 43
+: 55 2 5 mi
+: 59 2 5 ta
+: 63 2 3 i 
+: 67 4 5 ni
+- 71
+: 75 2 -2 chi
+: 79 4 7 kyu
+: 87 2 8 u
+: 91 4 7 gi 
+: 99 4 3 wo
+- 103
+* 107 2 -2 to
+* 111 4 7 ki
+: 119 3 8 a
+: 123 4 7 ka
+: 131 3 5 shi
+: 135 3 3 ta
+: 139 6 5 ra
+- 145
+: 151 4 3 Min
+: 159 2 2 na 
+: 163 4 3 de 
+: 171 4 2 do
+* 179 4 -1 ko
+- 183
+: 187 3 -1 ma
+: 191 4 5 de 
+: 197 4 3 mo 
+: 203 2 2 i
+: 207 4 2 ke
+: 215 2 3 ru 
+: 219 4 3 ne
+- 223
+: 235 2 0 Ji
+: 239 2 3 ka
+: 243 2 5 n 
+: 247 2 7 no 
+: 251 5 5 ha
+: 259 1 7 te
+- 260
+: 263 2 5 ma
+: 267 2 2 de 
+* 271 12 6 booon!!
+- 283
+: 291 4 5 Wa-
+: 299 2 3 pu 
+: 303 11 1 de
+- 314
+: 323 4 -2 ru-
+: 331 2 -1 pu 
+: 335 8 1 na
+- 343
+: 347 3 1 ko
+: 351 4 1 no 
+: 359 2 -2 o
+: 363 6 1 mo
+: 371 6 3 i 
+: 379 6 -2 wa
+- 385
+: 391 2 -2 Na
+: 395 2 1 ni 
+: 399 2 -1 mo 
+: 403 2 -2 ka
+: 407 2 -1 mo 
+: 411 4 1 wo
+- 415
+: 419 2 -1 ma
+: 423 2 1 ki
+: 427 4 3 ko
+: 435 2 3 n
+: 439 1 3 da
+- 440
+: 443 4 5 so
+: 451 2 3 u
+: 455 2 2 zo
+: 459 2 3 u 
+* 463 16 5 de
+- 479
+: 491 4 7 a
+: 499 4 7 so
+: 507 2 9 bo
+: 511 4 7 u
+- 515
+: 527 2 9 A
+: 531 4 9 ru 
+: 539 2 9 ha
+: 543 4 9 re
+: 551 2 9 ta 
+: 555 3 7 hi
+- 558
+: 563 2 5 no 
+: 567 2 7 ko
+: 571 10 9 to
+- 581
+: 591 2 9 Ma
+: 595 2 9 ho
+: 599 2 9 u 
+: 603 2 9 i
+: 607 4 9 jou
+- 611
+: 615 2 9 no 
+: 619 4 10 ju
+: 627 2 9 ka
+: 631 2 10 i 
+* 635 4 12 ga
+- 639
+: 647 2 12 Ka
+: 651 2 12 gi
+: 655 5 10 ri
+: 663 2 9 na
+: 667 4 5 ku
+- 671
+: 679 2 12 fu
+: 683 2 12 ri
+: 687 5 10 so
+: 695 2 9 so
+: 699 4 5 gu
+- 703
+: 711 2 12 fu
+: 715 3 12 ka
+: 719 4 10 nou 
+: 727 2 8 ja
+: 731 6 7 na
+: 739 6 5 i 
+: 747 8 7 wa
+- 755 760
+- 760
+: 783 2 9 A
+: 787 5 9 shi
+: 795 2 9 ta 
+: 799 4 9 ma
+: 807 3 9 ta 
+: 811 4 7 a
+: 819 3 5 u 
+: 823 2 7 to
+: 827 10 9 ki
+- 837
+: 847 3 9 wa
+: 851 3 9 ra
+: 855 3 9 i 
+: 859 3 9 na
+: 863 4 9 ga
+: 871 3 9 ra 
+: 875 4 10 ha
+: 883 2 9 mi
+: 887 2 10 n
+: 891 4 12 gu
+- 895
+: 903 2 12 U
+: 907 2 12 re
+: 911 4 10 shi
+: 919 3 9 sa 
+: 923 4 5 wo
+- 927
+: 935 4 12 a
+* 943 4 14 tsu
+: 951 3 9 me
+: 955 4 7 yo
+: 963 4 5 u
+- 967
+: 975 4 10 Kan
+: 983 4 10 tan 
+: 991 4 10 nan
+: 999 3 10 da 
+: 1003 2 12 yo 
+: 1007 4 9 kon
+: 1015 3 9 na 
+: 1019 4 7 no
+- 1023
+: 1031 3 5 O
+: 1035 2 7 i
+: 1039 4 8 ka
+: 1047 2 8 ke
+: 1051 4 7 te 
+: 1059 16 5 ne
+- 1075
+: 1095 3 5 tsu
+: 1099 2 7 ka
+: 1103 4 8 mae
+: 1111 3 8 te 
+: 1115 4 6 mi
+: 1123 12 4 te
+- 1135
+: 1143 4 -1 O
+: 1151 2 -1 o
+: 1155 4 4 ki 
+: 1163 2 3 na
+- 1165
+: 1171 2 4 yu
+: 1175 4 3 me
+- 1179
+: 1187 2 4 yu
+: 1191 4 3 me
+- 1195
+: 1203 2 4 su
+: 1207 2 3 ki 
+: 1211 2 4 de
+: 1215 4 3 shou?
+E
