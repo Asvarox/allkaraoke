@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 import { openAndConnectRemoteMicWithCode } from './steps/openAndConnectRemoteMic';
@@ -70,7 +71,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   browser,
   browserName,
 }) => {
-  let remoteMic: any;
+  let remoteMic: RemoteMicPages;
 
   const goBackToSongList = async () => {
     await test.step('Go back to Song List', async () => {
