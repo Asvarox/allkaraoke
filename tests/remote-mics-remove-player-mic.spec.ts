@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 import { openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
@@ -18,6 +19,9 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
     defaultName: 'Player #2',
   };
 
+  let remoteMic1: RemoteMicPages;
+  let remoteMic2: RemoteMicPages;
+
   await test.step('Go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
@@ -25,8 +29,10 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
     await pages.inputSelectionPage.selectSmartphones();
   });
 
-  const remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, player1name);
-  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
+  await test.step('Go to select Smartphones setup', async () => {
+    remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, player1name);
+    remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
+  });
 
   await test.step('Make sure both players` mics are connected to the game', async () => {
     await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();

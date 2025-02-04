@@ -17,3 +17,5 @@ export default function initialiseRemoteMic(page: Page, context: BrowserContext,
     _page: page,
   };
 }
+
+export type RemoteMicPages = ReturnType<typeof initialiseRemoteMic>;
