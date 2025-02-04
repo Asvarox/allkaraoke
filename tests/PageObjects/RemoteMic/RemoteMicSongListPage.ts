@@ -91,14 +91,13 @@ export class RemoteMicSongListPagePO {
   public async chooseSongForPreview(songID: string) {
     const selectTheSong = this.getSongElement(songID).locator(this.selectSongButton).click();
 
-    if (await this.getSongElement(songID).isVisible()) {
-      await selectTheSong;
-    } else {
+    // Used to find grouped song
+    if (await this.getSongElement(songID).isHidden()) {
       const songNameFromID = songID.split('-')[1];
       await this.searchTheSong(songNameFromID);
       await expect(this.getSongElement(songID)).toBeVisible();
-      await selectTheSong;
     }
+    await selectTheSong;
     await this.searchInput.clear();
   }
 
