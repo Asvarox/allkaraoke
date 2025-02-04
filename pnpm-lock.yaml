@@ -77,9 +77,6 @@ importers:
       msgpackr:
         specifier: ^1.10.1
         version: 1.10.1
-      musicbrainz-api:
-        specifier: 0.11.0
-        version: 0.11.0
       peerjs:
         specifier: 2.0.0-beta.3
         version: 2.0.0-beta.3
@@ -321,6 +318,9 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+      musicbrainz-api:
+        specifier: 0.11.0
+        version: 0.11.0
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
