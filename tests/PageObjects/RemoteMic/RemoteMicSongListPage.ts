@@ -89,6 +89,35 @@ export class RemoteMicSongListPagePO {
   }
 
   public async chooseSongForPreview(songID: string) {
-    await this.getSongElement(songID).locator(this.selectSongButton).click();
+    const selectTheSong = this.getSongElement(songID).locator(this.selectSongButton).click();
+
+    // Used to find grouped song
+    if (await this.getSongElement(songID).isHidden()) {
+      const songNameFromID = songID.split('-')[1];
+      await this.searchTheSong(songNameFromID);
+      await expect(this.getSongElement(songID)).toBeVisible();
+    }
+    await selectTheSong;
+    await this.searchInput.clear();
+  }
+
+  public getGroupedArtistSongsElement(artistName: string) {
+    return this.page.getByTestId(`song-group-${artistName}`);
+  }
+
+  public getExpandedArtistSongsGroupElement(artistName: string) {
+    return this.getGroupedArtistSongsElement(artistName).getByText('CLOSE');
+  }
+
+  public async clickToExpandSongsGroup(artistName: string) {
+    await this.getGroupedArtistSongsElement(artistName).click();
+  }
+
+  public async clickToCloseSongsGroup(artistName: string) {
+    await this.getExpandedArtistSongsGroupElement(artistName).click();
+  }
+
+  public async expectArtistSongCountToBe(count: string) {
+    await expect(this.page.getByTestId('songs-count')).toHaveAttribute('data-value', count);
   }
 }
