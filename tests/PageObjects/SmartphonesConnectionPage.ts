@@ -16,6 +16,10 @@ export class SmartphonesConnectionPagePO {
     await this.singSongButton.click();
   }
 
+  public async goToSongPreview() {
+    await this.singSongButton.click();
+  }
+
   public async navigateToSaveButtonWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, 'save-button', remoteMic);
   }

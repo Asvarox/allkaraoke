@@ -117,7 +117,41 @@ export class RemoteMicMainPagePO {
     await this.backArrowKeyboardButton.click();
   }
 
+  public get downArrowKeyboardButton() {
+    return this.page.getByTestId('arrow-down');
+  }
+
+  public async navigateByRemoteKeyboard(
+    buttonName:
+      | 'button-resume-song'
+      | 'button-restart-song'
+      | 'button-exit-song'
+      | 'input-settings'
+      | 'input-lag'
+      | 'edit-song',
+  ) {
+    //const buttonNameAttr = this.page.getByTestId(buttonName).getAttribute('data-e2e-focused');
+
+    const selectedButton = await this.page.locator('[data-e2e-focused="true"]').getAttribute('data-test');
+
+    if (selectedButton !== buttonName) {
+      await this.downArrowKeyboardButton.click();
+    } else {
+      await expect(this.page.getByTestId(buttonName)).toHaveAttribute('data-e2e-focused', 'true');
+      await this.enterKeyboardButton.click();
+    }
+    // data-e2e-focused="false" - wtedy nie jest zaznaczone, true - tak
+  }
+
   public async expectMicInputStateToBe(stateName: 'on' | 'off') {
     await expect(this.indicatorElement).toHaveAttribute('data-is-mic-on', stateName === 'on' ? 'true' : 'false');
+  }
+
+  public get pauseMenuButton() {
+    return this.page.getByTestId('keyboard-backspace');
+  }
+
+  public async goToPauseMenuWithKeyboard() {
+    await this.pauseMenuButton.click();
   }
 }

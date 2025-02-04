@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 type issueType = 'not-in-sync' | 'bad-lyrics' | 'too-quiet' | 'too-loud';
 
@@ -71,5 +72,15 @@ export class RateUnfinishedSongPagePO {
 
   public get asLoudAsItCouldBeInfo() {
     return this.page.getByText('Too quiet').locator('~span', { hasText: '(already as loud as it could be)' });
+  }
+
+  public async navigateAndSelectIssueWithKeyboard(issue: issueType, remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, `button-${issue}`, remoteMic);
+    await this.page.keyboard.press('Enter');
+  }
+
+  public async navigateToSubmitIssueWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'button-song-ok', remoteMic);
+    await this.page.keyboard.press('Enter');
   }
 }
