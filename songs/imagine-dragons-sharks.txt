@@ -1,0 +1,636 @@
+#ARTIST:Imagine Dragons
+#TITLE:Sharks
+#CREATOR:princetongirl98
+#BPM:249,69
+#YEAR:2022
+#VIDEO:v=Te3_VlimRw0
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:16768,73362970083
+#ALLKARAOKE_ID:imagine-dragons-sharks
+#ALLKARAOKE_LASTUPDATE:2025-02-04T15:05:16.666Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_VOLUME:0,7
+#MP3:Imagine Dragons - Sharks.mp3
+: 17 3 5 Trou
+: 22 4 5 ble
+- 26
+: 32 1 10 Blood 
+: 36 1 1 is 
+: 38 1 3 in 
+: 40 1 3 the 
+: 42 4 3 rocky 
+: 48 5 5 wa
+: 55 3 0 ters
+- 58
+: 66 1 1 Hide 
+: 68 1 3 a
+: 71 1 3 way 
+: 73 1 1 your 
+: 75 2 3 sons 
+: 79 2 5 and 
+: 82 4 6 daugh
+: 87 4 10 ters
+- 91
+: 99 1 8 Eat 
+: 102 2 5 you 
+: 106 2 3 a
+: 110 7 0 live
+- 117 129
+- 129
+: 146 4 6 Le
+: 151 3 5 vels
+- 154
+: 161 1 5 Bet
+: 163 1 3 ter 
+: 165 1 10 put 
+: 168 1 5 your 
+: 170 2 3 head 
+: 174 1 5 on 
+: 178 4 1 swiv
+: 184 3 10 els
+- 187
+: 194 1 10 Dan
+: 196 1 10 cing 
+: 198 1 10 with 
+: 201 1 6 the 
+: 203 2 3 very 
+: 209 5 1 dev
+: 216 3 10 il
+- 219
+: 226 1 3 But
+: 229 3 0 ter 
+: 235 2 1 to 
+: 239 6 0 knife
+- 245 246
+- 246
+: 263 2 1 You 
+: 267 3 0 think 
+: 272 2 1 you’re 
+: 275 2 5 bet
+: 279 2 1 ter 
+: 283 2 0 than 
+: 287 3 1 them
+- 290
+: 295 2 1 Bet
+: 299 2 0 ter 
+: 303 2 1 than 
+: 307 4 1 them
+- 311
+: 327 3 1 You 
+: 332 2 0 think 
+: 336 2 1 they’re 
+: 340 6 5 really 
+: 347 3 0 your 
+: 352 4 1 friends
+- 356
+: 359 7 1 Really 
+: 368 2 1 your 
+: 371 5 0 friends
+- 376
+: 391 2 1 But 
+: 396 2 0 when 
+: 400 2 1 it 
+: 404 2 5 comes 
+: 408 2 1 to 
+: 411 2 0 the 
+: 415 5 1 end
+- 420
+: 423 2 1 To 
+: 428 2 0 the 
+: 431 4 6 end
+- 435 439
+- 439
+: 456 1 8 You’re 
+: 460 2 5 just 
+: 464 2 5 the 
+: 468 2 5 same 
+: 472 1 5 as 
+: 476 4 10 them
+- 480
+: 489 2 5 Same 
+: 492 1 10 as 
+: 496 5 10 them
+- 501 504
+- 504
+: 521 2 10 So 
+: 525 2 10 let 
+: 529 2 8 it 
+: 533 5 1 go, 
+: 541 2 10 let 
+: 545 2 1 it 
+: 549 4 1 go
+- 553
+: 557 1 10 That’s 
+: 560 1 10 the 
+: 564 2 1 way 
+: 569 2 1 that 
+: 573 1 10 it 
+: 577 3 1 goes
+- 580
+: 588 3 10 First 
+: 593 2 10 you’re 
+: 597 6 0 in, 
+: 605 1 10 then 
+: 609 2 10 you’re 
+: 613 5 0 out
+- 618
+: 622 5 10 Every
+: 629 6 5 body 
+: 637 3 6 kno
+: 641 1 5 ~
+: 643 6 5 ~ws
+- 649
+: 658 1 1 You’re 
+: 662 6 0 hot, 
+: 670 2 8 then 
+: 674 2 5 you’re 
+: 678 6 1 cold
+- 684
+: 686 1 10 You’re 
+: 690 2 10 a 
+: 694 3 1 light 
+: 698 2 1 in 
+: 702 2 10 the 
+: 706 4 1 dark
+- 710
+: 718 2 10 Just 
+: 722 2 10 you 
+: 726 6 0 wait 
+: 734 2 10 and 
+: 738 1 10 you’ll 
+: 742 5 0 see
+- 747
+: 749 2 10 That 
+: 754 2 6 you’re 
+: 757 2 5 swim
+: 761 2 5 min’ 
+: 766 2 6 with 
+: 769 6 5 sharks
+- 775 789
+- 789
+: 806 1 3 He’s 
+: 808 1 10 com
+: 810 1 10 in’ 
+: 812 1 8 to 
+: 814 3 1 get 
+: 819 4 5 you 
+: 839 4 1 woo-
+: 846 5 1 woo
+- 851 852
+- 852
+: 869 1 1 He’s 
+: 872 1 10 com
+: 874 1 10 in’ 
+: 876 1 5 to 
+: 879 3 1 get 
+: 883 3 10 you, 
+: 892 1 10 get 
+: 895 3 6 you 
+: 905 3 1 woo
+- 908
+: 919 3 6 Bub
+: 924 3 5 bles
+- 927
+: 936 1 3 Drown
+: 938 1 3 in’, 
+: 942 1 5 you 
+: 944 2 3 see 
+: 948 1 5 in 
+: 952 4 1 doub
+: 958 2 10 les
+- 960
+: 968 1 3 Don’t 
+: 970 1 3 you 
+: 972 1 3 let 
+: 974 1 1 ’em 
+: 976 1 3 see 
+: 980 2 5 your 
+: 984 4 1 strug
+: 990 3 10 gles
+- 993
+: 1000 1 5 Hid
+: 1004 2 5 ing 
+: 1008 2 3 your 
+: 1012 4 0 tears
+- 1016 1031
+- 1031
+: 1048 4 5 Cris
+: 1053 2 5 is
+- 1055
+: 1064 1 1 Take 
+: 1066 1 10 ad
+: 1069 1 3 vant
+: 1071 1 5 age 
+: 1073 2 3 off 
+: 1077 2 5 your 
+: 1080 4 6 nice
+: 1086 4 10 ness
+- 1090
+: 1096 1 3 Cut 
+: 1099 1 3 you 
+: 1101 1 10 up 
+: 1103 1 5 in 
+: 1105 3 3 even 
+: 1111 4 5 sli
+: 1117 3 6 ces
+- 1120
+: 1129 2 6 Prey 
+: 1133 2 5 on 
+: 1137 2 3 your 
+: 1141 6 6 fear
+- 1147 1148
+- 1148
+: 1165 2 1 You 
+: 1169 2 0 think 
+: 1173 2 1 you’re 
+: 1176 2 10 bet
+: 1180 2 1 ter 
+: 1185 3 0 than 
+: 1189 4 1 them
+- 1193
+: 1197 2 1 Bet
+: 1200 2 0 ter 
+: 1204 2 1 than 
+: 1208 5 1 them
+- 1213
+: 1230 2 1 You 
+: 1234 2 0 think 
+: 1238 2 1 they’re 
+: 1242 6 5 really 
+: 1249 2 10 your 
+: 1253 5 1 friends
+- 1258
+: 1261 6 1 Really 
+: 1269 2 1 your 
+: 1273 5 0 friends
+- 1278
+: 1294 1 1 But 
+: 1297 2 0 when 
+: 1302 2 1 it 
+: 1305 2 5 comes 
+: 1310 2 1 to 
+: 1314 2 0 the 
+: 1318 5 1 end
+- 1323
+: 1326 2 1 To 
+: 1330 2 0 the 
+: 1334 6 6 end
+- 1340 1342
+- 1342
+: 1359 1 3 You’re 
+: 1362 2 5 just 
+: 1366 1 8 the 
+: 1370 1 5 same 
+: 1373 2 5 as 
+: 1377 3 8 them
+- 1380
+: 1390 2 5 Same 
+: 1394 2 1 as 
+: 1398 4 10 them
+- 1402 1406
+- 1406
+: 1423 2 10 So 
+: 1427 2 10 let 
+: 1431 2 10 it 
+: 1434 6 1 go, 
+: 1442 2 10 let 
+: 1447 2 10 it 
+: 1450 7 1 go
+- 1457
+: 1459 2 10 That’s 
+: 1463 2 10 the 
+: 1467 2 1 way 
+: 1471 2 1 that 
+: 1475 2 6 it 
+: 1479 3 1 goes
+- 1482
+: 1491 2 10 First 
+: 1495 2 10 you’re 
+: 1499 6 0 in, 
+: 1507 2 10 then 
+: 1511 2 10 you’re 
+: 1515 5 0 out
+- 1520
+: 1523 5 10 Every
+: 1531 6 5 body 
+: 1539 3 6 kno
+: 1543 1 5 ~
+: 1545 5 5 ws
+- 1550
+: 1560 2 10 You’re 
+: 1564 6 5 hot, 
+: 1572 2 10 then 
+: 1576 2 10 you’re 
+: 1579 6 1 cold
+- 1585
+: 1588 2 10 You’re 
+: 1592 2 10 a 
+: 1596 2 6 light 
+: 1600 2 6 in 
+: 1603 2 1 the 
+: 1607 5 1 dark
+- 1612
+: 1621 1 6 Just 
+: 1624 2 10 you 
+: 1628 6 10 wait 
+: 1636 2 10 and 
+: 1641 2 10 you’ll 
+: 1644 6 0 see
+- 1650
+: 1652 1 10 That 
+: 1656 1 6 you’re 
+: 1659 2 5 swim
+: 1663 2 5 min’ 
+: 1667 2 5 with 
+: 1672 5 5 sharks
+- 1677
+F 1691 1 0 Your 
+F 1694 1 0 blood 
+F 1696 2 0 is 
+F 1700 1 0 pump
+F 1703 4 0 ing 
+: 1710 1 10 he’s 
+: 1713 1 10 com
+: 1715 1 5 in’ 
+: 1717 1 1 to 
+: 1719 1 10 get 
+: 1721 3 10 you
+- 1724
+F 1728 1 0 Don’t 
+F 1730 1 0 take 
+F 1732 1 0 it 
+F 1734 1 0 from 
+F 1737 1 0 me 
+: 1741 5 1 woo-
+: 1748 4 1 woo
+- 1752
+F 1758 1 0 Your 
+F 1762 1 0 blood 
+F 1765 1 0 is 
+F 1767 1 0 pump
+F 1770 1 0 ing 
+: 1776 1 10 he’s 
+: 1778 1 10 com
+: 1780 1 10 in’ 
+: 1782 1 1 to 
+: 1785 1 10 get 
+: 1788 2 5 you, 
+: 1795 1 10 get 
+: 1798 4 6 you
+- 1802 1809
+- 1809
+F 1826 1 0 Your 
+F 1828 1 0 blood 
+F 1830 1 0 is 
+F 1832 1 0 pump
+F 1834 4 0 ing 
+: 1839 1 10 he’s 
+: 1841 1 10 com
+: 1843 1 10 in’ 
+: 1845 1 5 to 
+: 1848 1 10 get 
+: 1851 4 5 you 
+: 1869 4 1 woo 
+: 1876 5 1 woo
+- 1881
+F 1886 1 0 Your 
+F 1888 1 0 blood 
+F 1890 1 0 is 
+F 1892 1 0 pump
+F 1895 3 0 ing 
+: 1900 1 1 he’s 
+: 1906 1 10 com
+: 1908 1 10 in’ 
+: 1910 1 1 to 
+: 1913 4 1 get 
+: 1919 1 10 you, 
+: 1924 1 10 get 
+: 1927 2 10 you
+- 1929 1936
+- 1936
+: 1953 3 10 Every 
+: 1958 1 10 time 
+: 1961 2 8 my 
+: 1966 2 5 heart 
+: 1970 2 10 is 
+: 1974 3 3 beat
+: 1979 1 10 ing, 
+: 1982 1 6 I 
+: 1986 2 5 can 
+: 1990 2 3 feel 
+: 1994 2 3 the 
+: 1998 1 1 re
+: 2002 1 8 cipe
+- 2003
+: 2010 1 8 I 
+: 2014 2 10 won
+: 2020 1 10 der 
+: 2023 2 5 if 
+: 2027 1 8 my 
+: 2031 1 5 day 
+: 2035 2 6 is 
+: 2039 1 3 com
+: 2043 2 3 ing,
+- 2045
+: 2047 1 3 Blame 
+: 2051 2 3 it 
+: 2055 2 3 on 
+: 2059 2 0 the 
+: 2063 2 5 en
+: 2066 1 10 tropy
+- 2067
+: 2077 1 5 My 
+: 2079 2 8 blood 
+: 2083 2 10 is 
+: 2087 2 10 pump
+: 2091 1 10 ing,
+- 2092
+: 2094 2 10 I 
+: 2099 2 5 can 
+: 2103 2 1 see 
+: 2107 2 1 the 
+: 2111 2 0 end 
+: 2115 2 0 is 
+: 2119 2 8 right 
+: 2123 2 10 in 
+: 2126 2 8 front 
+: 2131 2 10 of 
+: 2135 5 10 me
+- 2140
+: 2142 1 5 Don’t 
+: 2144 2 8 take 
+: 2148 2 10 it 
+: 2151 2 5 from 
+: 2155 2 5 me, 
+: 2162 1 10 I 
+: 2165 2 10 could 
+: 2168 2 6 be 
+: 2172 12 6 everything, 
+: 2190 20 5 everything
+- 2210 2286
+- 2286
+F 2303 1 0 Don’t 
+F 2305 1 0 take 
+F 2308 2 0 it 
+F 2311 2 0 from 
+F 2315 4 0 me
+- 2319 2329
+- 2329
+F 2346 1 0 My 
+F 2348 1 0 blood 
+F 2350 1 0 is 
+F 2353 2 0 pump
+F 2356 1 0 ing, 
+F 2362 1 0 my 
+F 2368 1 0 blood 
+F 2372 2 0 is 
+F 2377 2 0 pump
+F 2381 2 0 ing
+- 2383
+F 2395 1 0 Don’t 
+F 2397 1 0 take 
+F 2401 2 0 it 
+F 2405 1 0 from 
+F 2408 1 0 me, 
+F 2422 1 0 I 
+F 2425 2 0 could 
+F 2428 1 0 be 
+F 2432 2 0 everything, 
+: 2448 18 6 everything
+- 2466 2645
+- 2645
+: 2662 1 10 So 
+: 2665 1 10 let 
+: 2667 2 10 it 
+: 2673 7 5 go, 
+: 2682 1 10 let 
+: 2685 2 10 it 
+: 2690 5 1 go
+- 2695
+: 2698 2 10 That’s 
+: 2702 1 10 the 
+: 2705 2 1 way 
+: 2710 1 1 that 
+: 2713 1 10 it 
+: 2717 5 1 goes
+- 2722
+: 2730 2 10 First 
+: 2733 2 10 you’re 
+: 2737 6 0 in, 
+: 2746 1 10 then 
+: 2750 1 10 you’re 
+: 2753 6 0 out
+- 2759
+: 2762 6 10 Every
+: 2770 5 5 body 
+: 2777 2 5 kno
+: 2781 1 6 ~
+: 2784 5 5 ws
+- 2789
+: 2798 1 10 You’re 
+: 2802 6 5 hot, 
+: 2810 1 10 then 
+: 2814 2 10 you’re 
+: 2818 5 1 cold
+- 2823
+: 2826 1 10 You’re 
+: 2830 2 10 a 
+: 2834 1 5 light 
+: 2838 2 1 in 
+: 2842 1 1 the 
+: 2846 5 1 dark
+- 2851
+: 2859 1 6 Just 
+: 2862 2 1 you 
+: 2866 6 0 wait 
+: 2875 1 10 and 
+: 2879 1 5 you’ll 
+: 2882 5 0 see
+- 2887
+: 2890 2 10 That 
+: 2894 1 6 you’re 
+: 2898 2 5 swim
+: 2902 2 5 min’ 
+: 2906 2 6 with 
+: 2910 5 6 sharks
+- 2915
+F 2929 1 0 Your 
+F 2932 1 0 blood 
+F 2935 2 0 is 
+F 2939 2 0 pump
+F 2943 1 0 ing 
+F 2947 1 0 he’s 
+F 2949 1 0 com
+F 2951 1 0 in’ 
+F 2956 1 0 to 
+F 2958 1 0 get 
+F 2960 4 0 you 
+F 2969 1 0 take 
+F 2971 1 0 it
+- 2972
+F 2972 1 0 Don’t 
+F 2974 1 0 from 
+F 2976 2 0 me 
+F 2980 4 0 woo 
+F 2987 5 0 woo
+- 2992
+F 2995 1 0 Your 
+F 2997 1 0 blood 
+F 2999 1 0 is 
+F 3001 1 0 pump
+F 3003 3 0 ing 
+F 3008 1 0 he’s 
+F 3011 1 0 com
+F 3013 1 0 in’ 
+F 3015 1 0 to 
+F 3017 1 0 get 
+F 3019 3 0 you, 
+F 3025 1 0 get 
+F 3028 4 0 you
+- 3032
+F 3037 1 0 Don’t 
+F 3039 1 0 take 
+F 3042 1 0 it 
+F 3044 1 0 from 
+F 3046 1 0 me
+- 3047
+F 3057 1 0 Your 
+F 3060 1 0 blood 
+F 3063 1 0 is 
+F 3066 2 0 pump
+F 3069 1 0 ing 
+F 3071 1 0 he’s 
+F 3073 1 0 com
+F 3075 1 0 in’ 
+F 3078 1 0 to 
+F 3080 5 0 get 
+F 3088 1 0 you
+- 3089
+F 3091 1 0 Don’t 
+F 3094 1 0 take 
+F 3096 1 0 it 
+F 3099 1 0 from 
+F 3103 1 0 me
+- 3104
+F 3111 1 0 Your 
+F 3119 1 0 blood 
+F 3122 2 0 is 
+F 3126 3 0 pump
+F 3131 5 0 ing 
+F 3138 1 0 he’s 
+F 3140 1 0 com
+F 3143 1 0 in’ 
+F 3145 1 0 to 
+F 3148 2 0 get 
+F 3152 3 0 you, 
+F 3159 1 0 get 
+F 3162 5 0 you
+- 3167
+F 3167 1 0 Don’t 
+F 3170 1 0 take 
+F 3173 1 0 it 
+F 3176 1 0 from 
+F 3179 1 0 me
+E
