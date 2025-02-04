@@ -1,0 +1,621 @@
+#ARTIST:Yuko
+#TITLE:Shinzou wo Sasageyo
+#CREATOR:YukoCovers
+#BPM:319,97
+#YEAR:2023
+#VIDEO:v=qDdYLRg9hak
+#LANGUAGE:German
+#GAP:5332,532706191206
+#ALLKARAOKE_ID:yuko-shinzou-wo-sasageyo
+#ALLKARAOKE_LASTUPDATE:2025-02-04T15:05:17.174Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://www.youtube.com/@YukoCovers
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qDdYLRg9hak
+#ALLKARAOKE_VOLUME:0,75
+#P1:Shinzou wo Sasageyo German Cover
+#MP3:FULL_VERSION_Shinzou_wo_Sasageyo_German_FanCover_Shingeki_no_Kyojin.mp3
+#COVER:aba0b8e9babc7ffb6515c605f3b79985.jpg
+#BACKGROUND:aba0b8e9babc7ffb6515c605f3b79985.jpg
+: 21 1 0 Ich 
+: 26 1 0 dachte, 
+: 33 1 0 nichts 
+: 41 1 0 kann 
+: 49 1 0 schlimmer 
+: 65 1 0 sein 
+: 71 1 0 als
+- 72
+: 80 1 0 Die 
+: 85 1 0 Hölle, 
+: 94 1 0 in 
+: 98 1 0 die 
+: 104 1 0 wir 
+: 112 1 0 einst 
+: 120 1 0 gefallen 
+: 136 1 0 sind,
+- 137
+: 145 1 0 Doch 
+: 150 1 0 soll 
+: 155 1 0 dies 
+: 162 1 0 nun 
+: 169 1 0 mein 
+: 177 1 0 Schicksal 
+: 192 1 0 sein, 
+: 199 1 0 werd'
+- 200
+: 209 1 0 Ich 
+: 214 1 0 fliegen 
+: 225 1 0 mit 
+: 236 1 0 dem 
+: 241 1 0 Wind.
+- 242 253
+- 253
+: 274 1 0 Gedanken 
+: 288 1 0 voll 
+: 296 1 0 von 
+: 304 1 0 finsteren 
+: 321 1 0 Jahren.
+- 322
+: 340 1 0 Erinnerung 
+: 352 1 0 fehlt, 
+: 360 1 0 wie's 
+: 368 1 0 einmal 
+: 384 1 0 war, 
+: 391 1 0 denn
+- 392
+: 401 1 0 Die 
+: 407 1 0 Mauern 
+: 417 1 0 uns'rer 
+: 433 1 0 Hoffnung 
+: 449 1 0 brachen.
+- 450
+: 466 1 0 Der 
+: 471 1 0 Albtraum 
+: 482 1 0 schaut 
+: 494 1 0 herein!
+- 495 512
+- 512
+: 533 1 0 Wer 
+: 538 1 0 hat 
+: 543 1 0 dieses 
+: 549 1 0 Unheil 
+: 557 1 0 nur 
+: 562 1 0 heraufbeschworen?
+- 563 576
+- 576
+: 597 1 0 Haben 
+: 606 1 0 nur 
+: 610 1 0 den 
+: 614 1 0 Sieg 
+: 617 1 0 vor 
+: 621 1 0 Augen, 
+: 629 1 0 den 
+: 634 1 0 Verstand 
+: 645 1 0 verloren!
+- 646
+: 660 1 0 Um 
+: 665 1 0 in 
+: 670 1 0 diesen 
+: 677 1 0 Kampf 
+: 682 1 0 zu 
+: 685 1 0 ziehen, 
+: 690 1 0 brauch' 
+: 694 1 0 ich 
+: 699 1 0 all 
+: 704 1 0 meinen 
+: 710 1 0 Mut!
+- 711
+: 725 1 0 Schlage 
+: 730 1 0 ihren 
+: 741 1 0 Kopf 
+: 746 1 0 ab, 
+: 753 1 0 bevor 
+: 758 1 0 sie 
+: 768 1 0 es 
+: 773 1 0 tun!
+- 774
+: 787 1 0 Welcher 
+: 793 1 0 Schwur 
+: 801 1 0 ist 
+: 806 1 0 nötig, 
+: 812 1 0 um 
+: 818 1 0 den 
+: 822 1 0 Teufel 
+: 829 1 0 zu 
+: 834 1 0 besiegen?
+- 835
+: 852 1 0 Alles, 
+: 860 1 0 was 
+: 866 1 0 ich 
+: 871 1 0 bieten 
+: 877 1 0 kann, 
+: 884 1 0 ist 
+: 890 1 0 nur 
+: 897 1 0 mein 
+: 902 1 0 Herz!
+- 903
+: 914 1 0 Und 
+: 918 1 0 um 
+: 930 1 0 zu 
+: 934 1 0 siegen, 
+: 941 1 0 gebe 
+: 949 1 0 ich 
+: 959 1 0 es 
+: 964 1 0 her!
+- 965
+: 976 1 0 Ertragt 
+: 993 1 0 die 
+: 997 1 0 Qual, 
+: 1008 1 0 vergesst 
+: 1024 1 0 den 
+: 1028 1 0 Schmerz!
+- 1029
+: 1039 1 0 Zum 
+: 1044 1 0 Wohl 
+: 1054 1 0 des 
+: 1061 1 0 Volkes, 
+: 1069 1 0 opfert 
+: 1077 1 0 euer 
+: 1092 1 0 Herz!
+- 1093
+: 1105 1 0 Für 
+: 1109 1 0 alle 
+: 1124 1 0 Seelen, 
+: 1135 1 0 die 
+: 1140 1 0 wir 
+: 1152 1 0 verloren,
+- 1153
+: 1168 1 0 Wird 
+: 1173 1 0 nun 
+: 1187 1 0 neue 
+: 1193 1 0 Kraft 
+: 1199 1 0 in 
+: 1205 1 0 uns 
+: 1215 1 0 geboren!
+- 1216
+: 1233 1 0 Ertragt 
+: 1247 1 0 die 
+: 1252 1 0 Qual, 
+: 1265 1 0 vergesst 
+: 1280 1 0 den 
+: 1285 1 0 Schmerz!
+- 1286
+: 1298 1 0 Zum 
+: 1304 1 0 Wohl 
+: 1312 1 0 des 
+: 1317 1 0 Volkes 
+: 1325 1 0 opfert 
+: 1333 1 0 euer 
+: 1347 1 0 Herz!
+- 1348
+: 1364 1 0 Die 
+: 1368 1 0 Zukunft 
+: 1381 1 0 liegt 
+: 1391 1 0 in 
+: 1397 1 0 unserer 
+: 1413 1 0 Hand!
+- 1414
+: 1426 1 0 Wir 
+: 1430 1 0 kämpfen 
+: 1445 1 0 nur 
+: 1450 1 0 für 
+: 1454 1 0 unser 
+: 1459 1 0 Land!
+- 1460 1762
+- 1762
+: 1783 1 0 Wer 
+: 1787 1 0 kennt 
+: 1791 1 0 einen 
+: 1798 1 0 Weg, 
+: 1800 1 0 um 
+: 1805 1 0 durch 
+: 1809 1 0 die 
+: 1813 1 0 Zeit 
+: 1823 1 0 zu 
+: 1828 1 0 gehen?
+- 1829
+: 1845 1 0 Um 
+: 1849 1 0 den 
+: 1854 1 0 Teufel 
+: 1861 1 0 zu 
+: 1865 1 0 verbrenn', 
+: 1873 1 0 muss 
+: 1878 1 0 ein 
+: 1884 1 0 Wunder 
+: 1893 1 0 geschehen!
+- 1894
+: 1908 1 0 Gegen 
+: 1917 1 0 ihn 
+: 1925 1 0 allein' 
+: 1930 1 0 richtet 
+: 1937 1 0 sich 
+: 1942 1 0 all 
+: 1945 1 0 mein 
+: 1949 1 0 Zorn 
+: 1953 1 0 und 
+: 1957 1 0 Hass!
+- 1958
+: 1972 1 0 Seit 
+: 1978 1 0 er 
+: 1982 1 0 uns 
+: 1987 1 0 verfluchte 
+: 1997 1 0 an 
+: 2002 1 0 dem 
+: 2009 1 0 einen 
+: 2020 1 0 Tag!
+- 2021
+: 2036 1 0 Welcher 
+: 2044 1 0 Schwur 
+: 2050 1 0 ist 
+: 2054 1 0 nötig, 
+: 2060 1 0 um 
+: 2067 1 0 die 
+: 2070 1 0 Macht 
+: 2075 1 0 des 
+: 2078 1 0 Teufels 
+: 2082 1 0 zu
+- 2083
+: 2099 1 0 Wir 
+: 2103 1 0 laufen 
+: 2103 1 0 zerstören? 
+: 2108 1 0 immer 
+: 2117 1 0 weiter, 
+: 2125 1 0 egal, 
+: 2133 1 0 was 
+: 2145 1 0 passiert,
+- 2146
+: 2161 1 0 Auch 
+: 2166 1 0 wenn 
+: 2176 1 0 der 
+: 2180 1 0 Weg 
+: 2185 1 0 uns 
+: 2190 1 0 durch 
+: 2195 1 0 die 
+: 2199 1 0 Hölle 
+: 2213 1 0 führt!
+- 2214
+: 2226 1 0 Ertragt 
+: 2241 1 0 die 
+: 2245 1 0 Qual, 
+: 2256 1 0 vergesst 
+: 2271 1 0 den 
+: 2276 1 0 Schmerz!
+- 2277
+: 2288 1 0 Zum 
+: 2293 1 0 Wohl 
+: 2304 1 0 des 
+: 2308 1 0 Volkes 
+: 2316 1 0 opfert 
+: 2324 1 0 euer 
+: 2340 1 0 Herz!
+- 2341
+: 2352 1 0 Für 
+: 2358 1 0 alles, 
+: 2371 1 0 was 
+: 2384 1 0 wir 
+: 2389 1 0 sterben 
+: 2404 1 0 sahen,
+- 2405
+: 2417 1 0 Entflammt 
+: 2431 1 0 das 
+: 2437 1 0 Feuer 
+: 2444 1 0 von 
+: 2449 1 0 vor 
+: 2454 1 0 tausend 
+: 2468 1 0 Jahren!
+- 2469
+: 2481 1 0 Ertragt 
+: 2495 1 0 die 
+: 2500 1 0 Qual, 
+: 2513 1 0 vergesst 
+: 2529 1 0 den 
+: 2533 1 0 Schmerz!
+- 2534
+: 2546 1 0 Zum 
+: 2553 1 0 Wohl 
+: 2561 1 0 des 
+: 2566 1 0 Volkes 
+: 2573 1 0 opfert 
+: 2581 1 0 euer 
+: 2596 1 0 Herz!
+- 2597
+: 2611 1 0 Das 
+: 2615 1 0 Fleisch 
+: 2624 1 0 des 
+: 2629 1 0 Feuers 
+: 2644 1 0 Opfer 
+: 2661 1 0 ist,
+- 2662
+: 2673 1 0 Das 
+: 2678 1 0 Siegesfeuer 
+: 2701 1 0 Leben 
+: 2709 1 0 frisst!
+- 2710 3005
+- 3005
+: 3026 1 0 So 
+: 3032 1 0 rätselhaft 
+: 3043 1 0 und 
+: 3047 1 0 unglaubwürdig 
+: 3057 1 0 – 
+: 3062 1 0 fassen 
+: 3070 1 0 kann 
+: 3071 1 0 ich's 
+: 3077 1 0 nicht!
+- 3078
+: 3089 1 0 Wie 
+: 3094 1 0 kann 
+: 3098 1 0 es 
+: 3103 1 0 sein? 
+: 3105 1 0 Der 
+: 3110 1 0 Teufel 
+: 3116 1 0 trägt 
+: 3122 1 0 ein 
+: 3126 1 0 menschliches 
+: 3139 1 0 Gesicht!
+- 3140
+: 3154 1 0 Er 
+: 3159 1 0 lügt 
+: 3164 1 0 und 
+: 3164 1 0 will 
+: 3169 1 0 uns 
+: 3173 1 0 täuschen, 
+: 3181 1 0 doch 
+: 3186 1 0 ich 
+: 3190 1 0 fall' 
+: 3193 1 0 nicht 
+: 3197 1 0 darauf 
+: 3203 1 0 rein!
+- 3204
+: 3218 1 0 Vernichten 
+: 3227 1 0 werd' 
+: 3234 1 0 ich 
+: 3238 1 0 jedes 
+: 3245 1 0 Monster 
+: 3253 1 0 ganz 
+: 3268 1 0 allein'!
+- 3269
+: 3281 1 0 Wie 
+: 3287 1 0 hat 
+: 3290 1 0 dies 
+: 3296 1 0 alles 
+: 3303 1 0 angefangen? 
+: 3314 1 0 Wer 
+: 3320 1 0 hat 
+: 3325 1 0 den 
+: 3330 1 0 Krieg 
+: 3336 1 0 begonnen?
+- 3337
+: 3347 1 0 Es 
+: 3352 1 0 ist 
+: 3358 1 0 hunderte 
+: 3364 1 0 Jahre 
+: 3369 1 0 her 
+: 3375 1 0 und 
+: 3381 1 0 keiner 
+: 3387 1 0 weiß 
+: 3394 1 0 es 
+: 3398 1 0 mehr...
+- 3399
+: 3407 1 0 Doch 
+: 3413 1 0 was 
+: 3418 1 0 wir 
+: 3423 1 0 nicht 
+: 3427 1 0 vergessen 
+: 3431 1 0 können, 
+: 3441 1 0 ist 
+: 3446 1 0 dieser 
+: 3452 1 0 große 
+: 3458 1 0 Zorn!
+- 3459
+: 3472 1 0 Durch 
+: 3478 1 0 ihn 
+: 3483 1 0 ist 
+: 3487 1 0 jede 
+: 3493 1 0 Hoffnung 
+: 3500 1 0 auf 
+: 3506 1 0 Vernunft 
+: 3521 1 0 verloren!
+- 3522
+: 3535 1 0 Wo 
+: 3541 1 0 führt 
+: 3546 1 0 uns 
+: 3549 1 0 dieser 
+: 3555 1 0 Pfad 
+: 3561 1 0 hin? 
+: 3569 1 0 Das 
+: 3574 1 0 Ziel 
+: 3578 1 0 wird 
+: 3583 1 0 uns 
+: 3587 1 0 verschwiegen!
+- 3588
+: 3601 1 0 Doch 
+: 3606 1 0 wurde 
+: 3614 1 0 er 
+: 3619 1 0 gemacht 
+: 3626 1 0 aus 
+: 3633 1 0 den 
+: 3637 1 0 Leichen 
+: 3648 1 0 und 
+: 3654 1 0 Schmerz!
+- 3655
+: 3664 1 0 Es 
+: 3669 1 0 gibt 
+: 3673 1 0 keine 
+: 3679 1 0 andere 
+: 3685 1 0 Chance 
+: 3695 1 0 auf 
+: 3703 1 0 den 
+: 3708 1 0 Sieg, 
+: 3713 1 0 so 
+: 3718 1 0 opfer' 
+: 3732 1 0 dein 
+: 3736 1 0 Herz
+- 3737
+: 3742 1 0 Für 
+: 3749 1 0 Frieden 
+: 3764 1 0 und 
+: 3776 1 0 Freiheit!
+- 3777 3780
+- 3780
+: 3801 1 0 Jagen 
+: 3807 1 0 wir 
+: 3811 1 0 den 
+: 3814 1 0 Teufel 
+: 3821 1 0 zurück 
+: 3831 1 0 in 
+: 3837 1 0 eine 
+: 3844 1 0 andere 
+: 3861 1 0 Zeit!
+- 3862 5442
+- 5442
+: 5463 1 0 An 
+: 5466 1 0 jenem 
+: 5473 1 0 Tage 
+: 5485 1 0 erkannte 
+: 5502 1 0 die 
+: 5506 1 0 Menschheit...
+- 5507
+: 5522 1 0 Die 
+: 5526 1 0 Angst 
+: 5530 1 0 vor 
+: 5535 1 0 dem 
+: 5539 1 0 Tod 
+: 5546 1 0 und 
+: 5550 1 0 dem 
+: 5554 1 0 Verlust 
+: 5562 1 0 der 
+: 5567 1 0 Freiheit!
+- 5568
+: 5586 1 0 Schau, 
+: 5601 1 0 die 
+: 5607 1 0 Tore 
+: 5613 1 0 vor 
+: 5618 1 0 uns 
+: 5622 1 0 schließen, 
+: 5633 1 0 Gitterstäbe 
+: 5653 1 0 sprießen...
+- 5654
+: 5674 1 0 Der 
+: 5678 1 0 Vogelkäfig 
+: 5700 1 0 wächst!
+- 5701
+: 5716 1 0 Ein 
+: 5720 1 0 Pfeil 
+: 5725 1 0 aus 
+: 5730 1 0 Feuer 
+: 5743 1 0 rast 
+: 5751 1 0 durch 
+: 5757 1 0 das 
+: 5761 1 0 Dunkel 
+: 5774 1 0 der 
+: 5778 1 0 Nacht!
+- 5779
+: 5787 1 0 Nun 
+: 5793 1 0 streck' 
+: 5801 1 0 deine 
+: 5813 1 0 Flügel 
+: 5828 1 0 aus!
+- 5829
+: 5844 1 0 Steig' 
+: 5849 1 0 in 
+: 5854 1 0 die 
+: 5858 1 0 Luft 
+: 5865 1 0 und 
+: 5873 1 0 folge 
+: 5881 1 0 dem 
+: 5887 1 0 Weg 
+: 5894 1 0 in 
+: 5901 1 0 die 
+: 5907 1 0 neue 
+: 5941 1 0 Freiheit!
+- 5942 5989
+- 5989
+: 6010 1 0 Ertragt 
+: 6031 1 0 die 
+: 6036 1 0 Qual, 
+: 6048 1 0 vergesst 
+: 6065 1 0 den 
+: 6069 1 0 Schmerz!
+- 6070
+: 6081 1 0 Zum 
+: 6086 1 0 Wohl 
+: 6096 1 0 des 
+: 6102 1 0 Volkes 
+: 6109 1 0 opfert 
+: 6116 1 0 euer 
+: 6132 1 0 Herz!
+- 6133
+: 6146 1 0 Für 
+: 6151 1 0 all 
+: 6160 1 0 das 
+: 6165 1 0 Leid, 
+: 6176 1 0 das 
+: 6181 1 0 wir 
+: 6191 1 0 bewahren,
+- 6192 6193
+- 6193
+: 6214 1 0 Kämpfen 
+: 6227 1 0 wir 
+: 6234 1 0 seit 
+: 6239 1 0 über 
+: 6245 1 0 tausend 
+: 6261 1 0 Jahren!
+- 6262
+: 6274 1 0 Ertragt 
+: 6287 1 0 die 
+: 6292 1 0 Qual, 
+: 6305 1 0 vergesst 
+: 6320 1 0 den 
+: 6325 1 0 Schmerz!
+- 6326
+: 6337 1 0 Zum 
+: 6341 1 0 Wohl 
+: 6353 1 0 des 
+: 6358 1 0 Volkes 
+: 6364 1 0 opfert 
+: 6371 1 0 euer 
+: 6389 1 0 Herz!
+- 6390
+: 6405 1 0 Verwandle 
+: 6419 1 0 all 
+: 6432 1 0 die 
+: 6437 1 0 Wut 
+: 6447 1 0 in 
+: 6451 1 0 Kraft
+- 6452
+: 6466 1 0 Und 
+: 6471 1 0 zieh' 
+: 6480 1 0 mit 
+: 6485 1 0 Feuerpfeilen 
+: 6501 1 0 in 
+: 6512 1 0 die 
+: 6517 1 0 Schlacht!
+- 6518
+: 6531 1 0 Ertragt 
+: 6545 1 0 die 
+: 6550 1 0 Qual, 
+: 6560 1 0 vergesst 
+: 6576 1 0 den 
+: 6581 1 0 Schmerz!
+- 6582
+: 6591 1 0 Zum 
+: 6597 1 0 Wohl 
+: 6607 1 0 des 
+: 6613 1 0 Volkes 
+: 6621 1 0 opfert 
+: 6629 1 0 euer 
+: 6644 1 0 Herz!
+- 6645
+: 6656 1 0 Die 
+: 6661 1 0 Zukunft 
+: 6676 1 0 liegt 
+: 6688 1 0 in 
+: 6693 1 0 uns'rer 
+: 6708 1 0 Hand!
+- 6709
+: 6723 1 0 Wir 
+: 6727 1 0 kämpfen 
+: 6740 1 0 nur 
+: 6746 1 0 für 
+: 6752 1 0 unser 
+: 6758 1 0 Land!
+E
