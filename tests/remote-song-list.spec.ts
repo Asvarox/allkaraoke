@@ -9,6 +9,7 @@ import {
 } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -76,12 +77,15 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   const P1_Name = 'E2E Test Blue';
   const videoURL = 'https://www.youtube.com/watch?v=8YKAHgwLEMg';
   const convertedSongID = 'convert-test';
+  let remoteMic: RemoteMicPages;
 
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
-  const remoteMic = await openRemoteMic(page, context, browser);
-  await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
+  await test.step('Open remoteMic and enter player name', async () => {
+    remoteMic = await openRemoteMic(page, context, browser);
+    await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
+  });
 
   await test.step('Song list is available without connecting', async () => {
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
@@ -237,9 +241,12 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     num: 0,
     name: 'Player 1 - Ren',
   } as const;
+  let remoteMic: RemoteMicPages;
 
-  const remoteMic = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
+  await test.step('Connect remoteMic - after entering player name, it should be visible properly in input', async () => {
+    remoteMic = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
+  });
 
   await test.step('On the desktop app - ensure all languages are selected', async () => {
     await pages.smartphonesConnectionPage.goToMainMenu();

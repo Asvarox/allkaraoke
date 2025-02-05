@@ -23,21 +23,25 @@ const P4_Name = 'E2E Test Yellow';
 test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  await pages.mainMenuPage.goToInputSelectionPage();
-  await pages.inputSelectionPage.selectSmartphones();
 
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  const remoteMicBluePage = await openAndConnectRemoteMicWithCode(page, browser, P1_Name);
-  const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, P2_Name);
-  const remoteMicGreen = await openAndConnectRemoteMicDirectly(page, browser, P3_Name);
-  const remoteMicYellow = await openAndConnectRemoteMicDirectly(page, browser, P4_Name);
-  /* eslint-enable @typescript-eslint/no-unused-vars */
+  await test.step('Go to select Smartphones setup', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+  });
 
-  // Assert auto selection of inputs
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(0, P1_Name);
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(1, P2_Name);
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(2, P3_Name);
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(3, P4_Name);
+  await test.step('Connect remoteMics - after entering players names, they should be visible properly in inputs', async () => {
+    /* eslint-disable @typescript-eslint/no-unused-vars */
+    const remoteMicBluePage = await openAndConnectRemoteMicWithCode(page, browser, P1_Name);
+    const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, P2_Name);
+    const remoteMicGreen = await openAndConnectRemoteMicDirectly(page, browser, P3_Name);
+    const remoteMicYellow = await openAndConnectRemoteMicDirectly(page, browser, P4_Name);
+    /* eslint-enable @typescript-eslint/no-unused-vars */
+
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(0, P1_Name);
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(1, P2_Name);
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(2, P3_Name);
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(3, P4_Name);
+  });
 });

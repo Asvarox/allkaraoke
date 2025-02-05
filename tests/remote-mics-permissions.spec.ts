@@ -3,6 +3,7 @@ import { initTestMode, mockSongs } from './helpers';
 import { connectRemoteMic, openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -11,13 +12,16 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const playerName = 'E2E Test Blue';
-
 test('Should properly manage remote mics permission settings', async ({ page, browser }) => {
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  await pages.mainMenuPage.goToSetting();
-  await pages.settingsPage.openRemoteMicSettings();
+  const playerName = 'E2E Test Blue';
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Go to remoteMic settings', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToSetting();
+    await pages.settingsPage.openRemoteMicSettings();
+  });
 
   await test.step('Sets and remembers default permission', async () => {
     await pages.settingsPage.expectDefaultPermissionToBeWrite();
@@ -27,13 +31,9 @@ test('Should properly manage remote mics permission settings', async ({ page, br
     await pages.settingsPage.expectDefaultPermissionToBeRead();
   });
 
-  await test.step('Open quick connect phone', async () => {
+  await test.step('Connect remoteMic to the game', async () => {
     await pages.settingsPage.toolbar.quickConnectPhone();
-  });
-
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
-
-  await test.step('Close quick connect', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
     await pages.settingsPage.toolbar.closeQuickConnectPhone();
   });
 
