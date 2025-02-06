@@ -3,6 +3,8 @@ import { Browser, BrowserContext, Page } from '@playwright/test';
 import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
 import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
 
+type micColorType = 'blue' | 'red' | 'green' | 'yellow';
+
 export class RemoteMicMainPagePO {
   constructor(
     private page: Page,
@@ -27,7 +29,7 @@ export class RemoteMicMainPagePO {
 
   indicatorElement = this.page.getByTestId('indicator');
 
-  public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
+  public async expectPlayerToBeAssigned(micColor: micColorType) {
     const colorToNumberMap = {
       blue: '0',
       red: '1',
@@ -59,6 +61,10 @@ export class RemoteMicMainPagePO {
 
   public get joinGameButton() {
     return this.page.getByTestId('change-player');
+  }
+
+  public async goToChangeMicColor() {
+    await this.joinGameButton.click();
   }
 
   public get readyButton() {
