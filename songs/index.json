@@ -4525,11 +4525,11 @@
     "language": [
       "English"
     ],
-    "bpm": 237,
-    "gap": 7787.341772151899,
+    "bpm": 236.8,
+    "gap": 7737.341772151899,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-23T00:10:52.068Z",
+    "lastUpdate": "2025-02-06T18:52:52.041Z",
     "genre": "Contemporary R&B, Soul",
     "realBpm": 118,
     "volume": 1,
@@ -10513,10 +10513,10 @@
       "English"
     ],
     "bpm": 255.92,
-    "gap": -25.6723976242576,
+    "gap": -17.06033135354801,
     "year": "2024",
     "artistOrigin": "HR",
-    "lastUpdate": "2024-04-12T19:19:42.650Z",
+    "lastUpdate": "2025-02-06T18:59:36.565Z",
     "edition": "ESC 2024",
     "genre": "Techno",
     "realBpm": 128,
@@ -10526,7 +10526,7 @@
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28759",
     "tracks": [
       {
-        "start": 6
+        "start": 5
       }
     ],
     "tracksCount": 1,
@@ -31563,10 +31563,10 @@
     "language": [
       "English"
     ],
-    "bpm": 360,
+    "bpm": 359.5,
     "gap": 27280,
     "year": "1997",
-    "lastUpdate": "2024-05-20T19:25:44.648Z",
+    "lastUpdate": "2025-02-06T18:51:10.203Z",
     "genre": "Disney",
     "realBpm": 86,
     "volume": 0.99,
@@ -43392,9 +43392,9 @@
       "Korean"
     ],
     "bpm": 240,
-    "gap": 22120,
+    "gap": 22020,
     "year": "2009",
-    "lastUpdate": "2024-01-07T06:25:25.929Z",
+    "lastUpdate": "2025-02-06T18:46:52.769Z",
     "edition": "None",
     "genre": "K-Pop",
     "realBpm": 100,
@@ -48718,9 +48718,10 @@
       "English"
     ],
     "bpm": 375.03,
-    "gap": 7739,
+    "gap": 6689.079993600511,
     "year": "2017",
     "artistOrigin": "US",
+    "lastUpdate": "2025-02-06T18:53:57.471Z",
     "genre": "Pop",
     "realBpm": 123,
     "volume": 0.71,
@@ -48729,7 +48730,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer",
     "tracks": [
       {
-        "start": 0
+        "start": 25
       }
     ],
     "tracksCount": 1,
@@ -49706,11 +49707,11 @@
     "language": [
       "English"
     ],
-    "bpm": 276,
-    "gap": 10981.739130434782,
+    "bpm": 275.9,
+    "gap": 10931.739130434782,
     "year": "1981",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-11-17T00:12:50.781Z",
+    "lastUpdate": "2025-02-06T18:53:28.549Z",
     "genre": "Heavy Metal",
     "realBpm": 104,
     "volume": 0.83,
@@ -62497,10 +62498,10 @@
       "English"
     ],
     "bpm": 283.14,
-    "gap": 13463.43081161263,
+    "gap": 13913.43081161263,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-20T21:16:30.748Z",
+    "lastUpdate": "2025-02-06T18:57:04.118Z",
     "genre": "Pop",
     "realBpm": 142,
     "volume": 0.85,
@@ -70068,9 +70069,9 @@
       "English"
     ],
     "bpm": 250,
-    "gap": 6920,
+    "gap": 6870,
     "year": "2018",
-    "lastUpdate": "2024-10-03T11:16:53.587Z",
+    "lastUpdate": "2025-02-06T18:54:14.321Z",
     "genre": "Pop",
     "realBpm": 125,
     "volume": 0.75,
@@ -71706,11 +71707,11 @@
     "language": [
       "English"
     ],
-    "bpm": 276,
+    "bpm": 275.8,
     "gap": 18903.739130434784,
     "year": "2015",
     "artistOrigin": "US",
-    "lastUpdate": "2024-08-27T00:15:38.234Z",
+    "lastUpdate": "2025-02-06T18:58:59.684Z",
     "genre": "Alternative",
     "videoGap": 2,
     "realBpm": 136,
@@ -74839,10 +74840,10 @@
       "English"
     ],
     "bpm": 228.2,
-    "gap": 17344.022787028924,
+    "gap": 17294.022787028924,
     "year": "1985",
     "artistOrigin": "DE",
-    "lastUpdate": "2024-08-17T00:15:08.781Z",
+    "lastUpdate": "2025-02-06T18:47:52.878Z",
     "genre": "Pop",
     "realBpm": 114,
     "previewStart": 60,
@@ -86323,19 +86324,19 @@
     "id": "prince-and-the-revolution-purple-rain-album-version",
     "title": "Purple Rain (Album Version)",
     "artist": "Prince and the Revolution",
-    "video": "S6Y1gohk5-A",
+    "video": "347vCib_lMs",
     "language": [
       "English"
     ],
-    "bpm": 232,
+    "bpm": 231.5,
     "gap": 18250.172413793105,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2023-03-06T13:33:12.847Z",
+    "lastUpdate": "2025-02-06T18:45:49.609Z",
     "edition": "Pop",
     "genre": "Pop",
     "realBpm": 113,
-    "volume": 0.5,
+    "volume": 0.78,
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=5829",
     "tracks": [
       {
@@ -88172,9 +88173,10 @@
       "English"
     ],
     "bpm": 365.28,
-    "gap": 39623.454664914585,
+    "gap": 39573.454664914585,
     "year": "1992",
     "artistOrigin": "US",
+    "lastUpdate": "2025-02-06T18:57:38.398Z",
     "realBpm": 88,
     "volume": 1,
     "author": "sanicsip",
@@ -92642,10 +92644,10 @@
       "English"
     ],
     "bpm": 270.03,
-    "gap": 66125.1110987668,
+    "gap": 66075.1110987668,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2025-01-17T00:11:38.954Z",
+    "lastUpdate": "2025-02-06T18:47:24.415Z",
     "genre": "Pop",
     "videoGap": 52,
     "realBpm": 90,
@@ -102010,10 +102012,10 @@
       "Korean"
     ],
     "bpm": 290.2,
-    "gap": 29671.91867677464,
+    "gap": 29621.91867677464,
     "year": "2014",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-08-09T00:15:47.015Z",
+    "lastUpdate": "2025-02-06T19:00:29.846Z",
     "genre": "K-Pop",
     "realBpm": 144,
     "previewStart": 84,
@@ -104764,19 +104766,19 @@
       "English"
     ],
     "bpm": 301.1,
-    "gap": 11700.936404931861,
+    "gap": 11800.653271338426,
     "year": "1970",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-05-07T07:07:59.721Z",
+    "lastUpdate": "2025-02-06T18:58:07.459Z",
     "genre": "Pop",
     "realBpm": 72,
-    "volume": 0.5,
+    "volume": 0.73,
     "author": "dekkard",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Let%20It%20Be",
     "tracks": [
       {
-        "start": 21
+        "start": 20
       }
     ],
     "tracksCount": 1,
@@ -108913,9 +108915,9 @@
       "English"
     ],
     "bpm": 236,
-    "gap": 18363.050847457627,
+    "gap": 18313.050847457627,
     "year": "2020",
-    "lastUpdate": "2024-01-12T06:24:16.242Z",
+    "lastUpdate": "2025-02-06T18:48:38.479Z",
     "genre": "Pop",
     "realBpm": 118,
     "volume": 0.69,
@@ -109819,10 +109821,10 @@
       "English"
     ],
     "bpm": 275.5,
-    "gap": 4271.739130434782,
+    "gap": 4570.963702359347,
     "year": "2003",
     "artistOrigin": "CA",
-    "lastUpdate": "2024-02-13T06:15:26.582Z",
+    "lastUpdate": "2025-02-06T18:50:36.558Z",
     "genre": "Rock",
     "realBpm": 138,
     "volume": 0.77,
@@ -116604,15 +116606,15 @@
       "Japanese"
     ],
     "bpm": 260,
-    "gap": 173.0769230769231,
+    "gap": 100,
     "year": "2019",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-07-08T16:20:20.051Z",
+    "lastUpdate": "2025-02-06T18:46:27.250Z",
     "realBpm": 130,
     "volume": 0.72,
     "tracks": [
       {
-        "start": 10
+        "start": 13
       }
     ],
     "tracksCount": 1,
