@@ -25,13 +25,21 @@ export class RemoteMicChangeMicColorPagePO {
     return this.page.getByTestId(`change-to-player-${this.micColorToNumberMap[micColor]}`).getByTestId('mic-occupant');
   }
 
-  public async expectPlayerToHaveMicAssigned(micColor: micColorType, playerName: string) {
+  public async expectAnyPlayerToHaveMicAssigned(micColor: micColorType, playerName: string) {
     await expect(this.getMicAssignmentLocator(micColor)).toBeVisible();
     await expect(this.getMicAssignmentLocator(micColor)).toHaveText(`(${playerName})`);
   }
 
+  public get unassignButton() {
+    return this.page.getByTestId('change-to-unset');
+  }
+
   public async unassignOwnPlayer() {
     await this.page.getByTestId('change-to-unset').click();
+  }
+
+  public async expectPlayerToBeUnassigned() {
+    await expect(this.unassignButton).toBeDisabled();
   }
 
   public async removeOwnPlayer() {
