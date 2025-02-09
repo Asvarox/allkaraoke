@@ -120,4 +120,12 @@ export class RemoteMicMainPagePO {
   public async expectMicInputStateToBe(stateName: 'on' | 'off') {
     await expect(this.indicatorElement).toHaveAttribute('data-is-mic-on', stateName === 'on' ? 'true' : 'false');
   }
+
+  public get pauseMenuButton() {
+    return this.page.getByTestId('keyboard-backspace');
+  }
+
+  public async goToPauseMenuWithKeyboard() {
+    await this.pauseMenuButton.click();
+  }
 }

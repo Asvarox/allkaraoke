@@ -41,10 +41,6 @@ export class GamePagePO {
     await this.restartButton.click();
   }
 
-  public async navigateToRestartSongWithKeyboard(remoteMic?: Page) {
-    await navigateWithKeyboard(this.page, 'button-restart-song', remoteMic);
-  }
-
   public get resumeSongButton() {
     return this.page.getByTestId('button-resume-song');
   }
@@ -57,6 +53,20 @@ export class GamePagePO {
   public async exitSong() {
     await this.goToPauseMenuByKeyboard();
     await this.page.getByTestId('button-exit-song').click();
+  }
+
+  public async navigateAndApproveWithKeyboard(
+    buttonName:
+      | 'button-resume-song'
+      | 'button-restart-song'
+      | 'button-exit-song'
+      | 'input-settings'
+      | 'input-lag'
+      | 'edit-song',
+    remoteMic?: Page,
+  ) {
+    await navigateWithKeyboard(this.page, buttonName, remoteMic);
+    await this.page.keyboard.press('Enter');
   }
 
   public async microphonesSettings() {
