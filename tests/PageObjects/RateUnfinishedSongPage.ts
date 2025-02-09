@@ -74,12 +74,12 @@ export class RateUnfinishedSongPagePO {
     return this.page.getByText('Too quiet').locator('~span', { hasText: '(already as loud as it could be)' });
   }
 
-  public async navigateAndSelectIssueWithKeyboard(issue: issueType, remoteMic?: Page) {
+  public async selectIssueWithKeyboard(issue: issueType, remoteMic?: Page) {
     await navigateWithKeyboard(this.page, `button-${issue}`, remoteMic);
     await this.page.keyboard.press('Enter');
   }
 
-  public async navigateToSubmitIssueWithKeyboard(remoteMic?: Page) {
+  public async submitIssueWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, 'button-song-ok', remoteMic);
     await this.page.keyboard.press('Enter');
   }

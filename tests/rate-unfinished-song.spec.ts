@@ -152,9 +152,9 @@ test('user can correctly select all of the shown reasons why the song was not co
   await navigateAndPlayNextSong();
 
   await test.step('User can select `too loud` song issue as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.navigateAndSelectIssueWithKeyboard('too-loud');
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
-    await pages.rateUnfinishedSongPage.navigateToSubmitIssueWithKeyboard();
+    await pages.rateUnfinishedSongPage.submitIssueWithKeyboard();
   });
 
   await goBackToSongList();
@@ -181,20 +181,20 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Only 1 volume issue (too quiet/too loud) can be selected at the same time - after clicking also on 2nd option, 1st is unselected', async () => {
-    await pages.rateUnfinishedSongPage.navigateAndSelectIssueWithKeyboard('too-quiet', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-quiet', remoteMic._page);
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
-    await pages.rateUnfinishedSongPage.navigateAndSelectIssueWithKeyboard('too-loud', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud', remoteMic._page);
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
     await pages.rateUnfinishedSongPage.expectIssueNotToBeSelected('too-quiet');
   });
 
   await test.step('Select 2 more issues - user can select all 3 category issues as a reasons of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.navigateAndSelectIssueWithKeyboard('not-in-sync', remoteMic._page);
-    await pages.rateUnfinishedSongPage.navigateAndSelectIssueWithKeyboard('bad-lyrics', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('not-in-sync', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('bad-lyrics', remoteMic._page);
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
-    await pages.rateUnfinishedSongPage.navigateToSubmitIssueWithKeyboard(remoteMic._page);
+    await pages.rateUnfinishedSongPage.submitIssueWithKeyboard(remoteMic._page);
   });
 
   await test.step('User can return to Song List to choose another song', async () => {
