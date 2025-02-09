@@ -132,8 +132,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(remoteMic1.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled();
     await remoteMic1.remoteMicMainPage.goBackByKeyboard();
     await expect(pages.gamePage.restartButton).toBeVisible();
-    await pages.gamePage.navigateToRestartSongWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
+    await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song', remoteMic2._page);
   });
 
   await test.step('Play song', async () => {
