@@ -1380,6 +1380,33 @@
     "local": false
   },
   {
+    "id": "abba-knowing-me-knowing-you",
+    "title": "Knowing Me, Knowing You",
+    "artist": "ABBA",
+    "video": "iUrzicaiRLU",
+    "language": [
+      "English"
+    ],
+    "bpm": 428.2,
+    "gap": 8584.119570294255,
+    "year": "1976",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-02-13T00:11:22.452Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 0.76,
+    "author": "Channa",
+    "sourceUrl": "https://youtu.be/iUrzicaiRLU",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbaknowingmeknowingyou",
+    "local": false
+  },
+  {
     "id": "abba-lay-all-your-love-on-me",
     "title": "Lay All Your Love On Me",
     "artist": "ABBA",
@@ -1514,6 +1541,33 @@
     "local": false
   },
   {
+    "id": "abba-sos",
+    "title": "S.O.S.",
+    "artist": "ABBA",
+    "video": "cvChjHcABPA",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.35,
+    "gap": 15683.350523058789,
+    "year": "1975",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-02-13T00:11:22.451Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.76,
+    "author": "Channa",
+    "sourceUrl": "https://youtu.be/cvChjHcABPA",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbasos",
+    "local": false
+  },
+  {
     "id": "abba-super-trouper",
     "title": "Super Trouper",
     "artist": "ABBA",
@@ -1537,6 +1591,33 @@
     ],
     "tracksCount": 1,
     "search": "abbasupertrouper",
+    "local": false
+  },
+  {
+    "id": "abba-take-a-chance-on-me",
+    "title": "Take A Chance On Me",
+    "artist": "ABBA",
+    "video": "-crgQGdpZR0",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 155.29411764705878,
+    "year": "1977",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-02-13T00:11:22.449Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 0.75,
+    "author": "Channa",
+    "sourceUrl": "https://youtu.be/-crgQGdpZR0",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbatakeachanceonme",
     "local": false
   },
   {
@@ -4251,6 +4332,34 @@
     ],
     "tracksCount": 1,
     "search": "alexanderrybakfairytale",
+    "local": false
+  },
+  {
+    "id": "alexandros-senkou",
+    "title": "Senkou",
+    "artist": "[Alexandros]",
+    "video": "xfG6L9I7N8I",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 416,
+    "gap": 42640.38461538462,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-13T00:11:20.821Z",
+    "realBpm": 104,
+    "previewStart": 80,
+    "previewEnd": 128,
+    "volume": 0.79,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alexandrossenkou",
     "local": false
   },
   {
@@ -19291,6 +19400,31 @@
     "local": false
   },
   {
+    "id": "bryan-adams-cuts-like-a-knife",
+    "title": "Cuts Like A Knife",
+    "artist": "Bryan Adams",
+    "video": "6VZhSkREYBc",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.8,
+    "gap": 9516.993496748375,
+    "year": "1982",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-02-13T00:11:20.816Z",
+    "realBpm": 96,
+    "volume": 0.8,
+    "author": "jockel1974",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamscutslikeaknife",
+    "local": false
+  },
+  {
     "id": "bryan-adams-everything-i-do-i-do-it-for-you",
     "title": "(Everything I Do) I Do It For You",
     "artist": "Bryan Adams",
@@ -22119,6 +22253,33 @@
     ],
     "tracksCount": 1,
     "search": "cazuzaexagerado",
+    "local": false
+  },
+  {
+    "id": "cc-catch-heartbreak-hotel",
+    "title": "Heartbreak Hotel",
+    "artist": "C.C. Catch",
+    "video": "B57EHSXMVp0",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.57,
+    "gap": 15635.929775636963,
+    "year": "1986",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-02-13T00:11:21.661Z",
+    "genre": "Dance",
+    "realBpm": 118,
+    "volume": 0.73,
+    "author": "RetroGirl, aac",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=16699",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cccatchheartbreakhotel",
     "local": false
   },
   {
@@ -33092,6 +33253,33 @@
     "local": false
   },
   {
+    "id": "dixie-chicks-landslide",
+    "title": "Landslide",
+    "artist": "Dixie Chicks",
+    "video": "J4_wXPZ1Bnk",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 13293.972602739726,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.292Z",
+    "genre": "Country",
+    "realBpm": 146,
+    "volume": 0.72,
+    "author": "channa",
+    "sourceUrl": "https://youtu.be/J4_wXPZ1Bnk",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dixiechickslandslide",
+    "local": false
+  },
+  {
     "id": "dj-jazzy-jeff-the-fresh-prince-summertime",
     "title": "Summertime",
     "artist": "DJ Jazzy Jeff & The Fresh Prince",
@@ -40119,6 +40307,35 @@
     ],
     "tracksCount": 1,
     "search": "filowturbo",
+    "local": false
+  },
+  {
+    "id": "filter-hey-man-nice-shot",
+    "title": "Hey Man, Nice Shot",
+    "artist": "Filter",
+    "video": "o9mJ82x_l-E",
+    "language": [
+      "English"
+    ],
+    "bpm": 352,
+    "gap": 13021.886363636364,
+    "year": "1995",
+    "lastUpdate": "2025-02-13T00:11:22.135Z",
+    "genre": "Industrial Rock",
+    "realBpm": 177,
+    "previewStart": 53,
+    "previewEnd": 101,
+    "volume": 0.72,
+    "author": "Groov",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=197779",
+    "tracks": [
+      {
+        "name": "Hey Man, Nice Shot",
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "filterheymanniceshot",
     "local": false
   },
   {
@@ -51897,6 +52114,34 @@
     "local": false
   },
   {
+    "id": "jewel-foolish-games",
+    "title": "Foolish Games",
+    "artist": "Jewel",
+    "video": "UNoouLa7uxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 243.78,
+    "gap": 14925.50578390352,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.607Z",
+    "realBpm": 131,
+    "previewStart": 60,
+    "previewEnd": 137,
+    "volume": 0.71,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=UNoouLa7uxA",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jewelfoolishgames",
+    "local": false
+  },
+  {
     "id": "jewel-intuition",
     "title": "Intuition",
     "artist": "Jewel",
@@ -51920,6 +52165,33 @@
     ],
     "tracksCount": 1,
     "search": "jewelintuition",
+    "local": false
+  },
+  {
+    "id": "jewel-you-were-meant-for-me",
+    "title": "You Were Meant For Me",
+    "artist": "Jewel",
+    "video": "4WW4qcmrJ3E",
+    "language": [
+      "English"
+    ],
+    "bpm": 373.24,
+    "gap": 7793.284535419569,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.605Z",
+    "genre": "Rock, Country Rock, Pop Rock",
+    "realBpm": 114,
+    "volume": 0.75,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=4WW4qcmrJ3E",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jewelyouweremeantforme",
     "local": false
   },
   {
@@ -59002,6 +59274,32 @@
     ],
     "tracksCount": 1,
     "search": "kortezzostan",
+    "local": false
+  },
+  {
+    "id": "kosheen-catch",
+    "title": "Catch",
+    "artist": "Kosheen",
+    "video": "37-pzVV2F3Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.98,
+    "gap": 5439.155319639973,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-02-13T00:11:21.809Z",
+    "realBpm": 130,
+    "volume": 0.72,
+    "author": "lava",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=4592",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kosheencatch",
     "local": false
   },
   {
@@ -66344,6 +66642,33 @@
     ],
     "tracksCount": 1,
     "search": "macklemoreryanlewisfeatwanzthriftshop",
+    "local": false
+  },
+  {
+    "id": "macy-gray-i-try",
+    "title": "I Try",
+    "artist": "Macy Gray",
+    "video": "WEQ0l_m3Xm0",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.6,
+    "gap": 6798.324607329843,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.458Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=WEQ0l_m3Xm0",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "macygrayitry",
     "local": false
   },
   {
@@ -75539,6 +75864,33 @@
     "local": false
   },
   {
+    "id": "mr-president-coco-jamboo",
+    "title": "Coco Jamboo",
+    "artist": "Mr. President",
+    "video": "EScLmWJs82I",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 5497.5,
+    "year": "1996",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-02-13T00:11:21.969Z",
+    "genre": "Dance",
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "karmidi",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=8691",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mrpresidentcocojamboo",
+    "local": false
+  },
+  {
     "id": "mrs-green-apple-inferno",
     "title": "Inferno",
     "artist": "Mrs. GREEN APPLE",
@@ -79906,6 +80258,32 @@
     "local": false
   },
   {
+    "id": "no-doubt-feat-lady-saw-underneath-it-all",
+    "title": "Underneath It All",
+    "artist": "No Doubt feat. Lady Saw",
+    "video": "RvuVFHTvdaY",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 15131.739130434782,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.456Z",
+    "realBpm": 138,
+    "volume": 0.75,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=RvuVFHTvdaY",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nodoubtfeatladysawunderneathitall",
+    "local": false
+  },
+  {
     "id": "no-doubt-its-my-life",
     "title": "It's My Life",
     "artist": "No Doubt",
@@ -82128,6 +82506,33 @@
     ],
     "tracksCount": 1,
     "search": "outkastmsjackson",
+    "local": false
+  },
+  {
+    "id": "outkast-roses",
+    "title": "Roses",
+    "artist": "OutKast",
+    "video": "gWju37TZfo0",
+    "language": [
+      "English"
+    ],
+    "bpm": 218,
+    "gap": 78996.69724770643,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-13T00:11:22.291Z",
+    "genre": "Rap",
+    "realBpm": 109,
+    "volume": 0.76,
+    "author": "bohning",
+    "sourceUrl": "https://youtu.be/gWju37TZfo0",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "outkastroses",
     "local": false
   },
   {
@@ -95828,6 +96233,33 @@
     "local": false
   },
   {
+    "id": "shakira-underneath-your-clothes",
+    "title": "Underneath Your Clothes",
+    "artist": "Shakira",
+    "video": "uwBwKcQ1k84",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.37,
+    "gap": 35983.30595482546,
+    "year": "2001",
+    "artistOrigin": "CO",
+    "lastUpdate": "2025-02-13T00:11:22.454Z",
+    "genre": "Pop",
+    "realBpm": 166,
+    "volume": 0.75,
+    "author": "channa",
+    "sourceUrl": "https://youtu.be/uwBwKcQ1k84",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakiraunderneathyourclothes",
+    "local": false
+  },
+  {
     "id": "shakira-whenever-wherever",
     "title": "Whenever wherever",
     "artist": "Shakira",
@@ -107921,6 +108353,32 @@
     "local": false
   },
   {
+    "id": "the-rasmus-livin-in-a-world-without-you",
+    "title": "Livin’ In A World Without You",
+    "artist": "The Rasmus",
+    "video": "lNKTWyU_0c4",
+    "language": [
+      "English"
+    ],
+    "bpm": 302.97,
+    "gap": 19089.802950787205,
+    "year": "2008",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-02-13T00:11:21.958Z",
+    "realBpm": 101,
+    "volume": 0.75,
+    "author": "Wüstenpfeil, IC",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=4804",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "therasmuslivininaworldwithoutyou",
+    "local": false
+  },
+  {
     "id": "the-rembrandts-ill-be-there-for-you",
     "title": "I'll Be There for You",
     "artist": "The Rembrandts",
@@ -112892,6 +113350,33 @@
     "local": false
   },
   {
+    "id": "uru-ambivalent",
+    "title": "Ambivalent",
+    "artist": "Uru",
+    "video": "e_pdE__o5D8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260,
+    "gap": 30319.23076923077,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-13T00:11:21.966Z",
+    "genre": "Jpop",
+    "realBpm": 130,
+    "volume": 0.77,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://youtu.be/e_pdE__o5D8",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "uruambivalent",
+    "local": false
+  },
+  {
     "id": "usa-for-africa-we-are-the-world",
     "title": "We Are the World",
     "artist": "USA for Africa",
@@ -113099,6 +113584,33 @@
     ],
     "tracksCount": 1,
     "search": "usherugotitbad",
+    "local": false
+  },
+  {
+    "id": "utada-hikaru-flavor-of-life",
+    "title": "Flavor Of Life",
+    "artist": "Utada Hikaru",
+    "video": "tpk0PxK-c5E",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 380.1,
+    "gap": 9313.417521704814,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-13T00:11:21.963Z",
+    "genre": "J-Pop",
+    "realBpm": 106,
+    "volume": 0.74,
+    "author": "vindimy",
+    "sourceUrl": "https://youtu.be/BQ4JRebpuD0",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "utadahikaruflavoroflife",
     "local": false
   },
   {
