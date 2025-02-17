@@ -1,7 +1,6 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
-
-type micColorType = 'blue' | 'red' | 'green' | 'yellow';
+import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicChangeMicColorPagePO {
   constructor(
@@ -10,19 +9,12 @@ export class RemoteMicChangeMicColorPagePO {
     private browser: Browser,
   ) {}
 
-  micColorToNumberMap = {
-    blue: '0',
-    red: '1',
-    green: '2',
-    yellow: '3',
-  };
-
   public async setOrChangeMicAssignment(micColor: micColorType) {
-    await this.page.getByTestId(`change-to-player-${this.micColorToNumberMap[micColor]}`).click();
+    await this.page.getByTestId(`change-to-player-${micColorToNumberMap[micColor]}`).click();
   }
 
   public getMicAssignmentLocator(micColor: micColorType) {
-    return this.page.getByTestId(`change-to-player-${this.micColorToNumberMap[micColor]}`).getByTestId('mic-occupant');
+    return this.page.getByTestId(`change-to-player-${micColorToNumberMap[micColor]}`).getByTestId('mic-occupant');
   }
 
   public async expectAnyPlayerToHaveMicAssigned(micColor: micColorType, playerName: string) {
@@ -40,10 +32,6 @@ export class RemoteMicChangeMicColorPagePO {
 
   public async expectPlayerToBeUnassigned() {
     await expect(this.unassignButton).toBeDisabled();
-  }
-
-  public async removeOwnPlayer() {
-    await this.page.getByTestId('remove-player').click();
   }
 
   public async goBackToMainMenu() {

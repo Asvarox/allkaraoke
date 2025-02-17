@@ -2,8 +2,7 @@ import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
 import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
-
-type micColorType = 'blue' | 'red' | 'green' | 'yellow';
+import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicMainPagePO {
   constructor(
@@ -30,13 +29,7 @@ export class RemoteMicMainPagePO {
   indicatorElement = this.page.getByTestId('indicator');
 
   public async expectPlayerToBeAssigned(micColor: micColorType) {
-    const colorToNumberMap = {
-      blue: '0',
-      red: '1',
-      green: '2',
-      yellow: '3',
-    };
-    await expect(this.indicatorElement).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', micColorToNumberMap[micColor]);
   }
 
   public async expectPlayerToBeUnassigned() {

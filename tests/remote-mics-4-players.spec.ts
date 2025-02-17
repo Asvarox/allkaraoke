@@ -36,12 +36,12 @@ const player4 = {
   num: 3,
 };
 
-let remoteMic1: RemoteMicPages;
-let remoteMic2: RemoteMicPages;
-let remoteMic3: RemoteMicPages;
-let remoteMic4: RemoteMicPages;
-
 test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
+  let remoteMic1: RemoteMicPages;
+  let remoteMic2: RemoteMicPages;
+  let remoteMic3: RemoteMicPages;
+  let remoteMic4: RemoteMicPages;
+
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
@@ -52,7 +52,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await pages.inputSelectionPage.selectSmartphones();
   });
 
-  await test.step('Connect remoteMics - entered names should be displayed properly nad players should be assigned to mics', async () => {
+  await test.step('Connect remoteMics - entered names should be displayed properly and players should be assigned to mics', async () => {
     remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
     remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
     remoteMic3 = await openAndConnectRemoteMicDirectly(page, browser, player3.name);
