@@ -3,6 +3,7 @@ import { initTestMode, mockSongs } from './helpers';
 import { connectRemoteMic, openAndConnectRemoteMicDirectly, openRemoteMic } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -51,10 +52,10 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 
 test('Should allow changing microphone input lag', async ({ browser, page }) => {
   const numericInputValue = '25';
+  let remoteMic: RemoteMicPages;
 
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-
-  await test.step('changing microphone lag is visible', async () => {
+  await test.step('Connect remoteMic and go to its settings - changing microphone lag should be visible', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
     await remoteMic.remoteMicSettingsPage.increaseMicInputLag();
@@ -75,11 +76,12 @@ test('Should properly manage mics', async ({ browser, page }) => {
   const player2Name = 'Player 2';
   const blueMic = 'blue';
   const redMic = 'red';
+  let remoteMic1: RemoteMicPages;
+  let remoteMic2: RemoteMicPages;
 
-  const remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
-
-  await test.step('Make sure which player is assigned to the remoteMic2', async () => {
+  await test.step('Connect remoteMics - make sure which player is assigned to the remoteMic2', async () => {
+    remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+    remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(redMic);
   });
 
@@ -108,10 +110,10 @@ test('Should properly manage mics', async ({ browser, page }) => {
 
 test('Should allow changing game input lag', async ({ browser, page }) => {
   const numericInputValue = '50';
+  let remoteMic: RemoteMicPages;
 
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-
-  await test.step('Go to desktop app settings', async () => {
+  await test.step('Connect remoteMic and go to the desktop app settings', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSetting();
   });

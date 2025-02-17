@@ -2,6 +2,7 @@ import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
 import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
+import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicMainPagePO {
   constructor(
@@ -27,14 +28,8 @@ export class RemoteMicMainPagePO {
 
   indicatorElement = this.page.getByTestId('indicator');
 
-  public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
-    const colorToNumberMap = {
-      blue: '0',
-      red: '1',
-      green: '2',
-      yellow: '3',
-    };
-    await expect(this.indicatorElement).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
+  public async expectPlayerToBeAssigned(micColor: micColorType) {
+    await expect(this.indicatorElement).toHaveAttribute('data-player-number', micColorToNumberMap[micColor]);
   }
 
   public async expectPlayerToBeUnassigned() {
@@ -59,6 +54,10 @@ export class RemoteMicMainPagePO {
 
   public get joinGameButton() {
     return this.page.getByTestId('change-player');
+  }
+
+  public async goToChangeMicColor() {
+    await this.joinGameButton.click();
   }
 
   public get readyButton() {

@@ -29,12 +29,9 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
     await pages.inputSelectionPage.selectSmartphones();
   });
 
-  await test.step('Go to select Smartphones setup', async () => {
+  await test.step('Make sure both players` mics are connected to the game', async () => {
     remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, player1name);
     remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
-  });
-
-  await test.step('Make sure both players` mics are connected to the game', async () => {
     await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();
     await remoteMic2.remoteMicMainPage.expectPlayerToBeConnected();
   });
