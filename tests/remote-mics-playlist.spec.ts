@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 import { openAndConnectRemoteMicWithCode } from './steps/openAndConnectRemoteMic';
@@ -48,8 +49,8 @@ test('Adding and removing song from the remote mic playlist on desktop app works
   const player2Name = 'Player2';
   const remoteMicsPlaylistName = 'remote-mics';
 
-  let remoteMic: any;
-  let remoteMic2: any;
+  let remoteMic: RemoteMicPages;
+  let remoteMic2: RemoteMicPages;
 
   await test.step('Ensure that all languages are selected', async () => {
     await page.goto('/');

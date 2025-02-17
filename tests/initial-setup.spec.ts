@@ -3,6 +3,7 @@ import { mockSongs, stubUserMedia } from './helpers';
 import { openAndConnectRemoteMicWithCode } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -27,10 +28,9 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
     channels: 2,
   };
 
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-
   await test.step('Go to Singstar mic', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectMultipleMicrophones();
     await pages.inputSelectionPage.selectSingstarMicrophones();
@@ -137,24 +137,23 @@ test('Remote mic is deselected when it disconnects', async ({ page, context, bro
   const micSourceName = 'Remote microphone';
   const playerName = 'Remote Mic Test';
   const playerNameDef = 'Default device';
+  let remoteMic: RemoteMicPages;
 
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-
-  await test.step('Select Advanced setup', async () => {
+  await test.step('Go to select Advanced setup', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
-  const remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, playerName);
-
-  await test.step('Check visibility of mic source and player1 name', async () => {
+  await test.step('Connect remoteMic and check visibility of mic source and player1 name', async () => {
+    remoteMic = await openAndConnectRemoteMicWithCode(page, browser, playerName);
     await pages.advancedConnectionPage.expectPlayerMicSourceToBe(blueMicNum, micSourceName);
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMicNum, playerName);
   });
 
   await test.step('Close remote mic', async () => {
-    await remoteMicBlue._page.close();
+    await remoteMic._page.close();
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMicNum, playerNameDef);
   });
 });
