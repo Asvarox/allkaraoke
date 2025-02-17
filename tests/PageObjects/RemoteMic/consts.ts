@@ -7,3 +7,15 @@ export const micColorToNumberMap = {
 
 //alternative: export type micColorType = 'blue' | 'red' | 'green' | 'yellow';
 export type micColorType = keyof typeof micColorToNumberMap;
+
+export type columnNameType =
+  | 'ID'
+  | 'Artist'
+  | 'Title'
+  | 'Year'
+  | 'Language'
+  | 'Video'
+  | 'Last Update'
+  | 'Local'
+  | 'Deleted'
+  | 'Actions';
