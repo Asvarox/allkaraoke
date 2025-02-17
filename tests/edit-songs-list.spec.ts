@@ -12,7 +12,6 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 test('Sorting songs by last update', async ({ page }) => {
-  const columnLastUpdate = 'Last Update';
   const lastUpdateColumnNum = 4;
   const lastUpdate1 = 'Jan 16 2023';
   const lastUpdate2 = 'Jan 15 2023';
@@ -26,7 +25,7 @@ test('Sorting songs by last update', async ({ page }) => {
   });
 
   await test.step('Check column with the last updates songs', async () => {
-    await expect(pages.editSongsPage.getColumnHeader(columnLastUpdate)).toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Last Update')).toBeVisible();
     await expect(pages.editSongsPage.getTableCell(1, lastUpdateColumnNum)).toBeEmpty();
     await expect(pages.editSongsPage.getTableCell(2, lastUpdateColumnNum)).toBeEmpty();
     await expect(pages.editSongsPage.getTableCell(3, lastUpdateColumnNum)).toBeEmpty();
@@ -36,8 +35,8 @@ test('Sorting songs by last update', async ({ page }) => {
     await expect(pages.editSongsPage.getTableCell(1, lastUpdateColumnNum)).toBeEmpty();
     await expect(pages.editSongsPage.getTableCell(2, lastUpdateColumnNum)).toBeEmpty();
     await expect(pages.editSongsPage.getTableCell(3, lastUpdateColumnNum)).toBeEmpty();
-    await pages.editSongsPage.sortByLastUpdateDESC();
-    await expect(pages.editSongsPage.lastUpdateArrowDownwardIcon).toBeVisible();
+    await pages.editSongsPage.sortColumnDESC('Last Update');
+    await expect(pages.editSongsPage.getColumnArrowDownwardSortingIcon('Last Update')).toBeVisible();
     await expect(pages.editSongsPage.getTableCell(1, lastUpdateColumnNum)).toContainText(lastUpdate1);
     await expect(pages.editSongsPage.getTableCell(2, lastUpdateColumnNum)).toContainText(lastUpdate2);
     await expect(pages.editSongsPage.getTableCell(3, lastUpdateColumnNum)).toContainText(lastUpdate3);
@@ -45,10 +44,6 @@ test('Sorting songs by last update', async ({ page }) => {
 });
 
 test('Showing and hiding columns in table works, resets after refresh', async ({ page }) => {
-  const columnID = 'ID';
-  const columnArtist = 'Artist';
-  const columnVideo = 'Video';
-
   await test.step('Go to Edit Song Page', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
@@ -57,35 +52,34 @@ test('Showing and hiding columns in table works, resets after refresh', async ({
   });
 
   await test.step('Only default song info columns should be visible', async () => {
-    await expect(pages.editSongsPage.getColumnHeader(columnArtist)).toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnID)).not.toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnVideo)).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Artist')).toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('ID')).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Video')).not.toBeVisible();
   });
 
   await test.step('Enable song ID and video columns', async () => {
-    await pages.editSongsPage.toggleColumnVisibility(columnID);
-    await pages.editSongsPage.toggleColumnVisibility(columnVideo);
-    await expect(pages.editSongsPage.getColumnHeader(columnID)).toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnVideo)).toBeVisible();
+    await pages.editSongsPage.toggleColumnVisibility('ID');
+    await pages.editSongsPage.toggleColumnVisibility('Video');
+    await expect(pages.editSongsPage.getColumnHeader('ID')).toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Video')).toBeVisible();
   });
 
   await test.step('When hiding all columns, they become invisible', async () => {
     await pages.editSongsPage.hideAllColumns();
-    await expect(pages.editSongsPage.getColumnHeader(columnArtist)).not.toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnID)).not.toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnVideo)).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Artist')).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('ID')).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Video')).not.toBeVisible();
   });
 
   await test.step('After reloading the page, only default columns should be visible again', async () => {
     await page.reload();
-    await expect(pages.editSongsPage.getColumnHeader(columnArtist)).toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnID)).not.toBeVisible();
-    await expect(pages.editSongsPage.getColumnHeader(columnVideo)).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Artist')).toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('ID')).not.toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Video')).not.toBeVisible();
   });
 });
 
 test('Filtering songs shows proper results', async ({ page }) => {
-  const columnYear = 'Year';
   const yearColumnNum = 2;
   const year1 = '1990';
   const year2 = '1994';
@@ -100,14 +94,14 @@ test('Filtering songs shows proper results', async ({ page }) => {
   });
 
   await test.step('Check column with songs release year', async () => {
-    await expect(pages.editSongsPage.getColumnHeader(columnYear)).toBeVisible();
+    await expect(pages.editSongsPage.getColumnHeader('Year')).toBeVisible();
     await expect(pages.editSongsPage.getTableCell(1, yearColumnNum)).toHaveText(year1);
     await expect(pages.editSongsPage.getTableCell(2, yearColumnNum)).toHaveText(year2);
     await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(year3);
   });
 
   await test.step('Filtering by release year - only searched songs should be visible', async () => {
-    await pages.editSongsPage.filterByColumnName(columnYear, filteredYear);
+    await pages.editSongsPage.filterByColumnName('Year', filteredYear);
     await expect(pages.editSongsPage.getTableCell(1, yearColumnNum)).toHaveText(filteredYear);
     await expect(pages.editSongsPage.getTableCell(2, yearColumnNum)).toHaveText(filteredYear);
     await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(filteredYear);
