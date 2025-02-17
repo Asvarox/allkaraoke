@@ -108,7 +108,7 @@ export class EditSongsPagePO {
   }
 
   public getColumnHeader(name: string) {
-    return this.page.locator(`[title="${name}"]`);
+    return this.page.locator('.MuiTableRow-root.MuiTableRow-head.ec-1t2xaz1').getByText(name, { exact: true });
   }
 
   public getTableCell(rowNumber: number, cellNumber: number) {

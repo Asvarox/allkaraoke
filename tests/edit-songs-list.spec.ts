@@ -10,17 +10,17 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
   await mockRandom({ page, context }, 0);
 });
-const columnLastUpdate = 'Last Update';
-const lastUpdateColumnNum = 4;
-const lastUpdate1 = 'Jan 16 2023';
-const lastUpdate2 = 'Jan 15 2023';
-const lastUpdate3 = 'Aug 18 2022';
 
 test('Sorting songs by last update', async ({ page }) => {
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
+  const columnLastUpdate = 'Last Update';
+  const lastUpdateColumnNum = 4;
+  const lastUpdate1 = 'Jan 16 2023';
+  const lastUpdate2 = 'Jan 15 2023';
+  const lastUpdate3 = 'Aug 18 2022';
 
   await test.step('Go to Edit Song Page', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
@@ -44,15 +44,14 @@ test('Sorting songs by last update', async ({ page }) => {
   });
 });
 
-const columnID = 'ID';
-const columnArtist = 'Artist';
-const columnVideo = 'Video';
-
 test('Showing and hiding columns in table works, resets after refresh', async ({ page }) => {
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
+  const columnID = 'ID';
+  const columnArtist = 'Artist';
+  const columnVideo = 'Video';
 
   await test.step('Go to Edit Song Page', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
@@ -85,18 +84,17 @@ test('Showing and hiding columns in table works, resets after refresh', async ({
   });
 });
 
-const columnYear = 'Year';
-const yearColumnNum = 2;
-const year1 = '1990';
-const year2 = '1994';
-const year3 = '1994';
-const filteredYear = '1995';
-
 test('Filtering songs shows proper results', async ({ page }) => {
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
+  const columnYear = 'Year';
+  const yearColumnNum = 2;
+  const year1 = '1990';
+  const year2 = '1994';
+  const year3 = '1994';
+  const filteredYear = '1995';
 
   await test.step('Go to Edit Song Page', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
   });
