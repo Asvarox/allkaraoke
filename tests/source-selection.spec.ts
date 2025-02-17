@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 import { expectMonitoringToBeEnabled } from './steps/assertMonitoringStatus';
@@ -34,6 +35,8 @@ const redMic = {
 } as const;
 
 test('Source selection in sing settings', async ({ page, browser }) => {
+  let remoteMic: RemoteMicPages;
+
   await test.step('Go to open song preview', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.continueAndGoToSongList();
@@ -46,21 +49,20 @@ test('Source selection in sing settings', async ({ page, browser }) => {
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
-  const remoteMicBlue = await openAndConnectRemoteMicDirectly(page, browser, names.player1);
-
-  await test.step('Assert auto selection of inputs', async () => {
+  await test.step('Connect remoteMic and assert auto selection of inputs', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, names.player1);
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMic.num, names.player1);
     await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(names.player1);
     await pages.advancedConnectionPage.goToSongPreview();
     await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMic.num, names.player1);
     // microphone of new device is being monitored
-    await remoteMicBlue.remoteMicMainPage.expectMicInputStateToBe('on');
+    await remoteMic.remoteMicMainPage.expectMicInputStateToBe('on');
   });
 
   await test.step('Make sure the input is not monitored anymore if it is not in use', async () => {
     await pages.songPreviewPage.goToInputSelectionPage();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMic.num);
-    await remoteMicBlue.remoteMicMainPage.expectMicInputStateToBe('off');
+    await remoteMic.remoteMicMainPage.expectMicInputStateToBe('off');
   });
 });
 
@@ -91,13 +93,15 @@ test('Source selection in in-game menu', async ({ page }) => {
 });
 
 test('Source selection from remote mic', async ({ browser, page }) => {
-  await test.step('Select Smartphones setup', async () => {
+  let remoteMicBlue: RemoteMicPages;
+  let remoteMicRed: RemoteMicPages;
+
+  await test.step('Select Smartphones setup and connect remoteMics', async () => {
     await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
+    remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, names.player1);
+    remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, names.player2);
   });
-
-  const remoteMicBlue = await openAndConnectRemoteMicWithCode(page, browser, names.player1);
-  const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, names.player2);
 
   await test.step('Change player2 to blue mic', async () => {
     await remoteMicRed.remoteMicMainPage.joinGameButton.click();

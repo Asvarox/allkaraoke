@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { RemoteMicSongListPagePO } from '././RemoteMicSongListPage';
+import { RemoteMicChangeMicColorPagePO } from './RemoteMicChangeMicColorPage';
 import { RemoteMicMainPagePO } from './RemoteMicMainPage';
 import { RemoteMicManageGamePage } from './RemoteMicManageGamePage';
 import { RemoteMicManagePlayerPage } from './RemoteMicManagePlayerPage';
@@ -14,6 +15,7 @@ export default function initialiseRemoteMic(page: Page, context: BrowserContext,
     remoteMicManageGamePage: new RemoteMicManageGamePage(page, context, browser),
     remoteMicManagePlayerPage: new RemoteMicManagePlayerPage(page, context, browser),
     remoteMicSongLanguagesPage: new RemoteMicSongLanguagesPagePO(page, context, browser),
+    remoteMicChangeMicColorPage: new RemoteMicChangeMicColorPagePO(page, context, browser),
     _page: page,
   };
 }

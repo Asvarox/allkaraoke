@@ -7,6 +7,7 @@ import {
 } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
+import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -39,17 +40,22 @@ const song2 = {
 } as const;
 
 test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
+  let remoteMic1: RemoteMicPages;
+  let remoteMic2: RemoteMicPages;
+
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  await pages.mainMenuPage.goToInputSelectionPage();
-  await pages.inputSelectionPage.selectSmartphones();
 
-  const remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
-  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
+  await test.step('Go to select Smartphones setup', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+  });
 
-  await test.step('Assert auto selection of inputs', async () => {
+  await test.step('Connect remoteMics - after entering players names, they should be visible properly in inputs', async () => {
+    remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
+    remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.name);
   });
