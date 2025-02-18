@@ -1,5 +1,17 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
+type columnNameType =
+  | 'ID'
+  | 'Artist'
+  | 'Title'
+  | 'Year'
+  | 'Language'
+  | 'Video'
+  | 'Last Update'
+  | 'Local'
+  | 'Deleted'
+  | 'Actions';
+
 export class EditSongsPagePO {
   constructor(
     private page: Page,
@@ -7,8 +19,12 @@ export class EditSongsPagePO {
     private browser: Browser,
   ) {}
 
+  public get searchInput() {
+    return this.page.getByPlaceholder('Search');
+  }
+
   public async searchSongs(songID: string) {
-    await this.page.locator('[placeholder="Search"]').fill(songID);
+    await this.searchInput.fill(songID);
   }
 
   public async hideSong(songID: string) {
@@ -29,6 +45,16 @@ export class EditSongsPagePO {
   public async expectSongToBeVisible(songID: string) {
     await this.searchSongs(songID);
     await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
+  }
+
+  public getSongElement(songID: string) {
+    return this.page.locator(`[data-song="${songID}"]`).first();
+  }
+
+  public get noSongResultsFoundElement() {
+    return this.page
+      .locator('tbody .MuiTypography-root.MuiTypography-body1')
+      .getByText('No results found', { exact: true });
   }
 
   public async editSong(songID: string) {
@@ -70,36 +96,36 @@ export class EditSongsPagePO {
     return this.page.getByTestId('share-songs-switch').getByRole('checkbox');
   }
 
-  public get lastUpdateDefaultIcon() {
-    return this.page.locator('[aria-label="Sort by Last Update descending"] [data-testid="SyncAltIcon"]');
+  public getColumnDefaultSortingIcon(columnName: columnNameType) {
+    return this.page.locator(`[aria-label="Sort by ${columnName} descending"] [data-testid="SyncAltIcon"]`);
   }
 
-  public get lastUpdateArrowDownwardIcon() {
-    return this.page.locator('[aria-label="Sorted by Last Update descending"] [data-testid="ArrowDownwardIcon"]');
+  public getColumnArrowDownwardSortingIcon(columnName: columnNameType) {
+    return this.page.locator(`[aria-label="Sorted by ${columnName} descending"] [data-testid="ArrowDownwardIcon"]`);
   }
 
-  public get lastUpdateArrowUpwardIcon() {
+  public getColumnArrowUpwardSortingIcon(columnName: columnNameType) {
     // data-testid for this up arrow selector is also "ArrowDownwardIcon", which seems incorrect, so I use svg instead
-    return this.page.locator('[aria-label="Sorted by Last Update ascending"] svg');
+    return this.page.locator(`[aria-label="Sorted by ${columnName} ascending"] svg`);
   }
 
-  public async sortByLastUpdateDESC() {
-    if (await this.lastUpdateDefaultIcon.isVisible()) {
-      await this.lastUpdateDefaultIcon.click();
+  public async sortColumnDESC(columnName: columnNameType) {
+    if (await this.getColumnDefaultSortingIcon(columnName).isVisible()) {
+      await this.getColumnDefaultSortingIcon(columnName).click();
     }
-    if (await this.lastUpdateArrowUpwardIcon.isVisible()) {
-      await this.lastUpdateArrowUpwardIcon.click();
-      await this.lastUpdateDefaultIcon.click();
+    if (await this.getColumnArrowUpwardSortingIcon(columnName).isVisible()) {
+      await this.getColumnArrowUpwardSortingIcon(columnName).click();
+      await this.getColumnDefaultSortingIcon(columnName).click();
     }
   }
 
-  public async sortByLastUpdateASC() {
-    if (await this.lastUpdateDefaultIcon.isVisible()) {
-      await this.lastUpdateDefaultIcon.click();
-      await this.lastUpdateArrowDownwardIcon.click();
+  public async sortColumnASC(columnName: columnNameType) {
+    if (await this.getColumnDefaultSortingIcon(columnName).isVisible()) {
+      await this.getColumnDefaultSortingIcon(columnName).click();
+      await this.getColumnArrowDownwardSortingIcon(columnName).click();
     }
-    if (await this.lastUpdateArrowDownwardIcon.isVisible()) {
-      await this.lastUpdateArrowDownwardIcon.click();
+    if (await this.getColumnArrowDownwardSortingIcon(columnName).isVisible()) {
+      await this.getColumnArrowDownwardSortingIcon(columnName).click();
     }
   }
 
@@ -107,8 +133,8 @@ export class EditSongsPagePO {
     return this.page.locator('table tr.MuiTableRow-root').nth(rowNumber);
   }
 
-  public getColumnHeader(name: string) {
-    return this.page.locator(`[title="${name}"]`);
+  public getColumnHeader(columnName: columnNameType) {
+    return this.page.locator('.MuiTableRow-root.MuiTableRow-head').getByText(columnName, { exact: true });
   }
 
   public getTableCell(rowNumber: number, cellNumber: number) {
@@ -119,11 +145,11 @@ export class EditSongsPagePO {
     await this.page.locator('[aria-label="Show/Hide columns"]').click();
   }
 
-  public async toggleColumnVisibility(name: string) {
+  public async toggleColumnVisibility(columnName: columnNameType) {
     await this.expandShowOrHideColumnList();
     await this.page
       .locator('span.MuiTypography-body1.MuiFormControlLabel-label')
-      .getByText(`${name}`, { exact: true })
+      .getByText(`${columnName}`, { exact: true })
       .click();
     await this.page.locator('.MuiBackdrop-invisible').click();
   }
@@ -137,8 +163,8 @@ export class EditSongsPagePO {
     await this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]').click();
   }
 
-  public async filterByColumnName(name: string, phrase: string) {
+  public async filterByColumnName(columnName: columnNameType, phrase: string) {
     await this.showFiltersVisibility();
-    await this.page.locator(`[title="Filter by ${name}"]`).fill(phrase);
+    await this.page.locator(`[title="Filter by ${columnName}"]`).fill(phrase);
   }
 }
