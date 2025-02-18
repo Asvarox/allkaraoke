@@ -19,8 +19,12 @@ export class EditSongsPagePO {
     private browser: Browser,
   ) {}
 
+  public get searchInput() {
+    return this.page.getByPlaceholder('Search');
+  }
+
   public async searchSongs(songID: string) {
-    await this.page.locator('[placeholder="Search"]').fill(songID);
+    await this.searchInput.fill(songID);
   }
 
   public async hideSong(songID: string) {
@@ -41,6 +45,16 @@ export class EditSongsPagePO {
   public async expectSongToBeVisible(songID: string) {
     await this.searchSongs(songID);
     await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
+  }
+
+  public getSongElement(songID: string) {
+    return this.page.locator(`[data-song="${songID}"]`).first();
+  }
+
+  public get noSongResultsFoundElement() {
+    return this.page
+      .locator('tbody .MuiTypography-root.MuiTypography-body1')
+      .getByText('No results found', { exact: true });
   }
 
   public async editSong(songID: string) {
