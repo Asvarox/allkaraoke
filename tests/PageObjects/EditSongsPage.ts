@@ -1,5 +1,16 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
-import { columnNameType } from '../PageObjects/RemoteMic/consts';
+
+type columnNameType =
+  | 'ID'
+  | 'Artist'
+  | 'Title'
+  | 'Year'
+  | 'Language'
+  | 'Video'
+  | 'Last Update'
+  | 'Local'
+  | 'Deleted'
+  | 'Actions';
 
 export class EditSongsPagePO {
   constructor(
@@ -109,7 +120,7 @@ export class EditSongsPagePO {
   }
 
   public getColumnHeader(columnName: columnNameType) {
-    return this.page.locator('.MuiTableRow-root.MuiTableRow-head.ec-1t2xaz1').getByText(columnName, { exact: true });
+    return this.page.locator('.MuiTableRow-root.MuiTableRow-head').getByText(columnName, { exact: true });
   }
 
   public getTableCell(rowNumber: number, cellNumber: number) {
