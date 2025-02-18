@@ -83,8 +83,15 @@ test('Filtering songs shows proper results', async ({ page }) => {
   const yearColumnNum = 2;
   const year1 = '1990';
   const year2 = '1994';
-  const year3 = '1994';
-  const filteredYear = '1995';
+  const year3 = {
+    year: '1994',
+    songID: 'e2e-croissant-french-1994',
+  } as const;
+
+  const filteredYear = {
+    year: '1995',
+    songID: 'e2e-christmas-english-1995',
+  } as const;
 
   await test.step('Go to Edit Song Page', async () => {
     await page.goto('/?e2e-test');
@@ -97,13 +104,22 @@ test('Filtering songs shows proper results', async ({ page }) => {
     await expect(pages.editSongsPage.getColumnHeader('Year')).toBeVisible();
     await expect(pages.editSongsPage.getTableCell(1, yearColumnNum)).toHaveText(year1);
     await expect(pages.editSongsPage.getTableCell(2, yearColumnNum)).toHaveText(year2);
-    await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(year3);
+    await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(year3.year);
   });
 
   await test.step('Filtering by release year - only searched songs should be visible', async () => {
-    await pages.editSongsPage.filterByColumnName('Year', filteredYear);
-    await expect(pages.editSongsPage.getTableCell(1, yearColumnNum)).toHaveText(filteredYear);
-    await expect(pages.editSongsPage.getTableCell(2, yearColumnNum)).toHaveText(filteredYear);
-    await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(filteredYear);
+    await pages.editSongsPage.filterByColumnName('Year', filteredYear.year);
+    await expect(pages.editSongsPage.getTableCell(1, yearColumnNum)).toHaveText(filteredYear.year);
+    await expect(pages.editSongsPage.getTableCell(2, yearColumnNum)).toHaveText(filteredYear.year);
+    await expect(pages.editSongsPage.getTableCell(3, yearColumnNum)).toHaveText(filteredYear.year);
+  });
+
+  await test.step('Searching when filtering is enabled only works for filtered songs', async () => {
+    await pages.editSongsPage.searchSongs(year3.songID);
+    await expect(pages.editSongsPage.getSongElement(year3.songID)).not.toBeVisible();
+    await expect(pages.editSongsPage.noSongResultsFoundElement).toBeVisible();
+
+    await pages.editSongsPage.searchSongs(filteredYear.songID);
+    await expect(pages.editSongsPage.getSongElement(filteredYear.songID)).toBeVisible();
   });
 });
