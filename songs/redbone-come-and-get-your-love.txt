@@ -1,0 +1,368 @@
+#ARTIST:Redbone
+#TITLE:Come And Get Your Love
+#CREATOR:Channa
+#BPM:236,3
+#YEAR:1973
+#VIDEO:v=4MpPGb_apD8
+#LANGUAGE:English
+#GAP:17000
+#ALLKARAOKE_ID:redbone-come-and-get-your-love
+#ALLKARAOKE_LASTUPDATE:2025-02-19T00:11:20.213Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:106
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4MpPGb_apD8
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Redbone - Come And Get Your Love.mp3
+: 16 13 2 Hail! 
+: 32 17 2 (hail!
+- 49
+: 52 9 -1 What’s 
+: 64 3 6 the 
+: 68 3 4 mat
+: 72 3 2 ter 
+: 76 3 2 with 
+: 80 3 -1 your 
+: 84 17 -3 head,
+- 101
+: 108 17 2 Yeah!
+- 125 140
+- 140
+: 156 21 4 Hail 
+: 178 17 2 (hail)
+- 195
+: 200 7 -1 What’s 
+: 208 3 6 the 
+: 212 3 4 mat
+: 216 3 2 ter 
+: 220 3 2 with 
+: 224 3 -1 your 
+: 228 9 -3 mind
+- 237
+: 240 3 2 And 
+: 244 3 -1 your 
+: 248 7 -3 sign 
+: 256 3 2 an
+: 260 5 -1 a, 
+: 268 7 -3 oh
+: 276 7 6 oh
+: 284 11 4 oh
+- 295
+: 304 13 2 Hail 
+: 320 13 2 (hail)
+- 333
+: 340 3 -1 No
+: 344 3 6 thin’ 
+: 348 3 6 the 
+: 352 7 4 mat
+: 360 3 2 ter 
+: 364 3 2 with 
+: 368 3 -1 your 
+: 372 7 -3 head
+- 379
+: 380 7 2 Ba
+: 388 3 -1 by 
+: 392 7 -3 find 
+: 400 9 2 it, 
+: 412 3 -1 come 
+: 416 3 2 on 
+: 420 3 -1 and 
+: 424 7 -3 find 
+: 432 9 2 it
+- 441
+: 448 17 -1 Hail, 
+: 484 7 6 with 
+: 492 3 6 it 
+: 496 7 4 ba
+: 504 3 2 by
+- 507
+: 508 3 2 ’Cause 
+: 512 3 -1 you’re 
+: 516 7 -3 fine
+- 523
+: 524 7 2 And 
+: 532 3 -1 you’re 
+: 536 7 -3 mine,
+- 543
+: 544 3 2 And 
+: 548 7 -1 you 
+: 556 3 -3 look 
+: 560 3 2 so 
+: 564 3 -1 di
+: 568 17 -3 vine
+- 585
+: 596 3 4 Come 
+* 600 3 6 and 
+* 604 3 2 get 
+* 608 11 4 your 
+* 620 17 4 love
+- 637 656
+- 656
+: 672 3 2 Come 
+: 676 3 6 and 
+: 680 3 2 get 
+: 684 7 4 your 
+: 692 17 4 love
+- 709 724
+- 724
+: 740 3 2 Come 
+: 744 3 6 and 
+: 748 3 2 get 
+: 752 11 4 your 
+: 764 17 4 love
+- 781 796
+- 796
+: 812 7 2 Come 
+: 820 3 6 and 
+: 824 3 2 get 
+: 828 7 4 your 
+: 836 17 4 love
+- 853 894
+- 894
+: 910 15 2 Hail 
+: 928 15 2 (hail)
+- 943
+: 950 7 -1 What’s 
+: 960 3 6 the 
+: 964 3 4 mat
+: 968 3 2 ter 
+: 972 3 2 with 
+: 976 7 -1 you 
+: 984 7 -3 feel 
+: 992 9 2 right
+- 1001
+: 1006 5 -1 Don’t 
+: 1012 3 9 you 
+: 1016 7 2 feel 
+: 1024 9 2 right 
+: 1036 7 -1 ba
+: 1044 7 2 by
+- 1051
+: 1052 19 -1 Hail, 
+: 1076 7 2 oh 
+: 1084 9 4 yeah!
+- 1093
+: 1104 7 2 Get 
+: 1112 3 6 it 
+: 1116 3 6 from 
+: 1120 3 4 the 
+: 1124 9 2 main 
+: 1134 7 2 vine, 
+: 1148 7 -1 all 
+: 1156 17 2 right!
+- 1173
+: 1184 3 -1 I 
+: 1188 3 -3 said 
+: 1192 3 -1 I 
+: 1196 7 -3 find 
+: 1204 9 2 it, 
+: 1216 7 -1 find 
+: 1224 9 2 it
+- 1233
+: 1236 7 -1 Go 
+: 1244 3 6 on 
+: 1248 3 4 and’love 
+: 1252 3 2 it 
+: 1256 7 2 if 
+* 1264 3 -1 you 
+* 1268 7 -3 like 
+* 1276 9 2 it, 
+* 1292 17 -1 yeah!
+- 1309 1322
+- 1322
+: 1338 19 4 Hail 
+: 1358 17 2 (hail)
+- 1375
+: 1380 7 -1 It’s 
+: 1388 3 6 your 
+: 1392 3 4 busi
+: 1396 3 2 ness 
+: 1400 7 2 if 
+: 1408 3 -1 you 
+: 1412 7 -3 want 
+: 1420 7 2 some,
+- 1427
+: 1428 9 -1 Take 
+: 1438 11 2 some
+- 1449
+: 1452 3 -1 Get 
+: 1456 3 2 it 
+: 1460 7 2 to
+: 1468 3 -1 ge
+: 1472 3 2 ther 
+: 1476 3 2 ba
+: 1480 5 -1 by
+- 1485
+: 1492 3 -3 Come 
+: 1496 3 6 and 
+: 1500 3 2 get 
+: 1504 7 4 your 
+: 1512 17 4 love
+- 1529 1548
+- 1548
+: 1564 3 2 Come 
+: 1568 7 6 and 
+: 1576 3 2 get 
+: 1580 7 4 your 
+: 1588 17 4 love
+- 1605 1616
+- 1616
+: 1632 3 2 Come 
+: 1636 3 6 and 
+: 1640 3 2 get 
+: 1644 11 4 your 
+: 1656 17 4 love
+- 1673 1688
+- 1688
+: 1704 7 2 Come 
+: 1712 3 6 and 
+: 1716 3 2 get 
+: 1720 7 4 your 
+: 1728 17 4 love!
+- 1745 1784
+- 1784
+F 1800 11 2 Come and get your love
+- 1811
+F 1812 19 2 Come and get your love
+- 1831
+F 1832 29 2 Come and get your love, now
+- 1861
+F 1872 19 -1 Come and get your love
+- 1891
+F 1892 11 2 Come and get your love
+- 1903
+F 1904 29 2 Come and get your love, now
+- 1933
+F 1948 11 6 Come and get your love
+- 1959
+F 1960 19 2 Come and get your love
+- 1979
+F 1980 27 2 Come and get your love, now
+- 2007
+F 2008 19 -1 Come and get your love
+- 2027
+F 2028 11 2 Come and get your love
+- 2039
+F 2040 29 2 Come and get your love, now
+- 2069 2076
+- 2076
+: 2092 7 6 Come 
+: 2100 3 6 and 
+: 2104 3 2 get 
+: 2108 7 4 your 
+: 2116 17 4 love
+- 2133 2152
+- 2152
+: 2168 3 2 Come 
+: 2172 3 6 and 
+: 2176 3 2 get 
+: 2180 11 4 your 
+: 2192 17 4 love
+- 2209 2224
+- 2224
+: 2240 3 2 Come 
+: 2244 7 6 and 
+: 2252 3 2 get 
+: 2256 7 4 your 
+: 2264 17 4 love
+- 2281 2292
+- 2292
+: 2308 3 2 Come 
+: 2312 3 6 and 
+: 2316 3 2 get 
+: 2320 11 4 your 
+: 2332 17 4 love!
+- 2349 2386
+- 2386
+: 2402 17 2 Hail 
+: 2420 17 2 (hail)
+- 2437
+: 2446 5 -1 What’s 
+: 2454 3 6 the 
+: 2458 3 4 mat
+: 2462 3 2 ter 
+: 2466 3 2 with 
+: 2470 3 -1 you 
+: 2474 7 -3 feel 
+: 2482 11 2 right
+- 2493
+: 2496 7 -1 Don’t 
+: 2504 3 9 you 
+: 2508 7 2 feel 
+: 2516 9 2 right 
+: 2528 7 -1 ba
+: 2536 7 2 by
+- 2543
+: 2544 17 -1 Hail, 
+: 2568 7 2 oh 
+: 2576 17 4 yeah!
+- 2593
+: 2594 11 2 Get 
+: 2606 3 6 it 
+: 2610 3 6 from 
+: 2614 3 4 the 
+: 2618 7 2 main 
+: 2626 9 2 vine, 
+: 2642 3 -1 all 
+: 2646 11 2 right
+- 2657 2772
+- 2772
+: 2788 3 -1 La 
+: 2792 7 2 la 
+: 2800 3 2 la 
+: 2804 3 2 la 
+: 2808 3 2 la
+- 2811
+: 2812 3 2 La 
+: 2816 3 2 la 
+: 2820 7 2 la 
+: 2828 3 2 la 
+: 2832 3 4 la!
+- 2835
+F 2836 17 -1 Come’and’get’your’love!
+- 2853
+: 2860 3 -1 La 
+: 2864 3 2 la 
+: 2868 3 2 la 
+: 2872 3 2 la 
+: 2876 7 2 la
+- 2883
+: 2884 3 2 La 
+: 2888 3 2 la 
+: 2892 3 2 la 
+: 2896 3 2 la
+- 2899
+F 2900 7 9 La la la la!
+- 2907
+F 2908 17 9 Come’and’get’your’love!
+- 2925
+: 2932 3 9 La 
+: 2936 3 2 la 
+: 2940 3 2 la 
+: 2944 3 2 la 
+: 2948 3 2 la
+- 2951
+: 2952 3 2 La la la 
+: 2956 3 2 la 
+: 2960 3 2 la
+- 2963
+: 2964 3 2 La 
+: 2968 3 2 la 
+: 2972 3 2 la 
+: 2976 3 2 la la!
+- 2979
+F 2980 13 -1 Come’and’get’your’love!
+- 2993
+: 3000 2 -1 La 
+: 3004 2 2 la 
+: 3008 2 2 la 
+: 3012 2 2 la 
+: 3016 2 2 la
+- 3018
+: 3020 2 2 La 
+: 3024 2 2 la 
+: 3028 2 2 la 
+: 3032 2 2 la 
+: 3036 12 2 la!
+- 3048
+F 3056 16 2 Come’and’get’your’love!
+E

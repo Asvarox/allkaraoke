@@ -1,0 +1,369 @@
+#ARTIST:Rhapsody
+#TITLE:Emerald Sword
+#CREATOR:Canni
+#BPM:360,1
+#YEAR:1998
+#PREVIEWSTART:107
+#VIDEO:v=oupD5I_CG-s
+#LANGUAGE:English
+#GAP:31290,27770063871
+#ALLKARAOKE_ID:rhapsody-emerald-sword
+#ALLKARAOKE_LASTUPDATE:2025-02-19T00:11:20.713Z
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=1377
+#ALLKARAOKE_PREVIEWEND:129
+#ALLKARAOKE_VOLUME:0,81
+#MP3:Rhapsody - Emerald Sword.mp3
+: 24 11 0 I 
+: 36 11 2 crossed 
+: 48 7 3 the 
+: 56 11 2 val
+: 68 10 -2 leys 
+: 80 7 -2 the 
+: 88 11 3 dust 
+: 100 11 5 of 
+: 112 7 7 mid
+: 120 16 5 lands
+- 136
+: 144 7 5 To 
+: 152 11 5 search 
+: 164 11 3 for 
+: 176 7 2 the 
+: 184 11 2 third 
+: 196 10 3 key 
+: 208 7 5 to 
+: 216 11 7 o
+: 228 11 2 pen 
+: 240 7 0 the 
+: 248 16 2 gates
+- 264
+: 280 12 7 Now 
+: 296 5 7 I’m 
+: 302 5 5 near 
+: 308 3 3 the 
+: 312 11 3 al
+: 324 10 2 tar 
+* 336 7 10 the 
+* 344 11 10 se
+* 356 11 12 cret 
+: 368 7 10 in
+: 376 12 5 side
+- 388
+: 410 3 8 As 
+: 414 7 8 le
+: 422 3 8 gend 
+: 426 14 8 told 
+: 442 3 8 my 
+: 446 5 7 be
+: 452 5 5 loved 
+: 458 12 7 sun
+- 470
+: 474 7 9 Light 
+: 482 7 9 the 
+: 490 7 7 dra
+: 498 7 6 gons 
+: 506 16 7 eyes
+- 522
+: 530 3 7 On 
+: 534 3 10 the 
+: 538 15 12 way 
+: 554 7 10 to 
+: 562 7 5 the 
+: 570 15 7 glo
+: 586 7 3 ry 
+: 594 7 3 I’ll 
+: 602 15 8 ho
+: 618 7 7 nour 
+: 626 7 5 my 
+: 634 18 7 sword
+- 652
+: 658 7 3 To 
+: 666 15 12 serve 
+: 682 7 10 right 
+: 690 7 5 i
+: 698 16 7 deals 
+: 722 7 7 and 
+: 730 15 8 jus
+: 746 7 10 tice 
+: 754 7 8 for 
+* 762 24 12 all
+- 786 1034
+- 1034
+: 1058 11 3 Fi
+: 1070 11 2 na
+: 1082 7 3 lly 
+: 1090 11 2 ha
+: 1102 10 -2 ppend 
+: 1114 7 -2 the 
+: 1122 11 3 sun 
+: 1134 11 5 lit 
+: 1146 7 7 their 
+: 1154 16 5 eyes
+- 1170
+: 1178 7 5 The 
+: 1186 11 5 spell 
+: 1198 11 3 was 
+: 1210 7 2 cre
+: 1218 11 2 a
+: 1230 14 3 ting 
+: 1250 11 6 strange 
+: 1262 11 3 games 
+: 1274 7 0 of 
+: 1282 16 2 light
+- 1298
+: 1314 12 7 Thanks 
+: 1330 5 7 to 
+: 1336 5 5 hi
+: 1342 3 3 dden 
+: 1346 11 3 mi
+: 1358 10 2 rrors 
+: 1370 7 10 I 
+: 1378 11 10 found 
+* 1390 11 12 my 
+: 1402 7 10 lost 
+: 1410 12 5 way
+- 1422
+: 1442 3 8 O
+: 1446 7 8 ver 
+: 1454 3 8 the 
+: 1458 14 8 stones
+- 1472
+: 1474 3 8 I 
+: 1478 7 7 reached 
+: 1486 3 7 the 
+: 1490 12 7 place 
+: 1504 1 6 it 
+: 1506 7 9 was 
+: 1514 7 9 a 
+: 1522 7 7 se
+: 1530 7 6 cret 
+: 1538 16 7 cave
+- 1554
+: 1562 3 7 In 
+: 1566 3 10 a 
+: 1570 15 12 long 
+: 1586 7 10 bloo
+: 1594 7 5 dy 
+: 1602 15 7 ba
+: 1618 7 3 ttle 
+: 1626 7 3 that 
+: 1634 15 8 pro
+: 1650 7 7 phe
+: 1658 7 5 cies 
+: 1666 18 7 told
+- 1684
+: 1690 7 3 The 
+: 1698 15 12 light 
+: 1714 7 10 will 
+: 1722 7 5 pre
+: 1730 16 7 vail 
+: 1754 7 7 hence 
+: 1762 15 8 wis
+: 1778 7 10 dom 
+: 1786 7 8 is 
+* 1794 24 12 gold
+- 1818
+: 1842 7 8 For 
+: 1850 7 10 the 
+: 1858 15 12 king 
+: 1874 7 13 for 
+: 1882 7 12 the 
+: 1890 15 10 land 
+: 1906 7 8 for 
+: 1914 7 7 the 
+: 1922 31 8 moun
+: 1954 12 7 tains
+- 1966
+: 1970 7 5 For 
+: 1978 7 5 the 
+: 1986 15 17 green 
+: 2002 7 17 va
+: 2010 7 17 lleys 
+: 2018 15 15 where 
+: 2034 7 10 dra
+: 2042 6 13 gons 
+* 2050 44 12 fly
+- 2094
+: 2098 7 8 For 
+: 2106 7 10 the 
+: 2114 15 12 glo
+: 2130 7 13 ry 
+: 2138 7 12 the 
+: 2146 15 15 po
+: 2162 7 15 wer 
+: 2170 7 15 to 
+* 2178 15 20 win 
+: 2194 7 19 the 
+: 2202 7 17 black 
+: 2210 15 12 lord
+- 2225
+: 2226 7 10 I 
+: 2234 7 12 will 
+: 2242 15 13 search 
+: 2258 7 15 for 
+: 2266 7 17 the 
+: 2274 15 15 e
+: 2290 15 19 merald 
+* 2306 24 20 sword
+- 2330 3546
+- 3546
+: 3570 11 0 On
+: 3582 11 2 ly 
+: 3594 7 3 a 
+: 3602 11 2 wa
+: 3614 10 -2 rrior 
+: 3634 11 3 with 
+: 3646 11 5 a 
+: 3658 7 7 clear 
+: 3666 16 5 heart
+- 3682
+: 3698 11 5 Could 
+: 3710 11 7 have 
+: 3722 7 8 the 
+: 3730 11 8 ho
+: 3742 7 7 nour 
+: 3750 3 7 to 
+: 3754 4 7 be 
+: 3762 11 9 kissed 
+: 3774 11 11 by 
+: 3786 7 12 the 
+: 3794 16 11 sun
+- 3810
+* 3826 12 12 Yes, 
+: 3842 5 12 I
+: 3848 5 10 ’m 
+: 3854 3 8 that 
+: 3858 11 8 wa
+: 3870 10 7 rrior 
+: 3882 7 10 I 
+: 3890 11 10 fo
+: 3902 11 12 llowed 
+: 3914 7 10 my 
+: 3922 12 5 way
+- 3934
+: 3954 3 8 Led 
+: 3958 7 8 by 
+: 3966 3 8 the 
+: 3970 14 8 force 
+: 3986 3 8 of 
+: 3990 7 7 cos
+: 3998 3 5 mic 
+: 4002 14 7 soul
+- 4016
+: 4018 7 9 I 
+: 4026 7 9 can 
+: 4034 7 7 reach 
+: 4042 7 6 the 
+: 4050 16 7 sword
+- 4066
+: 4074 3 7 On 
+: 4078 3 10 the 
+: 4082 15 12 way 
+: 4098 7 10 to 
+: 4106 7 5 the 
+: 4114 15 7 glo
+: 4130 7 3 ry 
+: 4138 7 3 I’ll 
+: 4146 15 8 ho
+: 4162 7 7 nour 
+: 4170 7 5 my 
+: 4178 18 7 sword
+- 4196
+: 4202 7 3 To 
+: 4210 15 12 serve 
+: 4226 7 10 right 
+: 4234 7 5 i
+: 4242 16 7 deals 
+: 4266 7 7 and 
+: 4274 15 8 jus
+: 4290 7 10 tice 
+: 4298 7 8 for 
+: 4306 24 12 all
+- 4330
+: 4354 7 8 For 
+: 4362 7 10 the 
+: 4370 15 12 king 
+: 4386 7 13 for 
+: 4394 7 12 the 
+: 4402 15 10 land 
+: 4418 7 8 for 
+: 4426 7 7 the 
+: 4434 31 8 moun
+: 4466 12 7 tains
+- 4478
+: 4482 7 5 For 
+: 4490 7 5 the 
+: 4498 15 17 green 
+: 4514 7 17 va
+: 4522 7 17 lleys 
+: 4530 15 15 where 
+: 4546 7 10 dra
+: 4554 6 13 gons 
+: 4562 44 12 fly
+- 4606
+: 4610 7 8 For 
+: 4618 7 10 the 
+: 4626 15 12 glo
+: 4642 7 13 ry 
+: 4650 7 12 the 
+: 4658 15 15 po
+: 4674 7 15 wer 
+: 4682 7 15 to 
+* 4690 15 20 win 
+: 4706 7 19 the 
+: 4714 7 17 black 
+: 4722 15 12 lord
+- 4737
+: 4738 7 10 I 
+: 4746 7 12 will 
+: 4754 15 13 search 
+: 4770 7 15 for 
+: 4778 7 17 the 
+: 4786 15 15 e
+: 4802 15 19 merald 
+* 4818 24 20 sword
+- 4842
+: 4866 7 8 For 
+: 4874 7 10 the 
+: 4882 15 12 king 
+: 4898 7 13 for 
+: 4906 7 12 the 
+: 4914 15 10 land 
+: 4930 7 8 for 
+: 4938 7 7 the 
+: 4946 31 8 moun
+: 4978 12 7 tains
+- 4990
+: 4994 7 5 For 
+: 5002 7 5 the 
+: 5010 15 17 green 
+: 5026 7 17 va
+: 5034 7 17 lleys 
+: 5042 15 15 where 
+: 5058 7 10 dra
+: 5066 6 13 gons 
+* 5074 44 12 fly
+- 5118
+: 5122 7 8 For 
+: 5130 7 10 the 
+: 5138 15 12 glo
+: 5154 7 13 ry 
+: 5162 7 12 the 
+: 5170 15 15 po
+: 5186 7 15 wer 
+: 5194 7 15 to 
+* 5202 15 20 win 
+: 5218 7 19 the 
+: 5226 7 17 black 
+: 5234 15 12 lord
+- 5249
+: 5250 7 10 I 
+: 5258 7 12 will 
+: 5266 15 13 search 
+: 5282 7 15 for 
+: 5290 7 17 the 
+: 5298 15 15 e
+: 5314 15 19 merald 
+* 5330 24 20 sword
+E
