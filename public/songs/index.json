@@ -3529,10 +3529,10 @@
       "English"
     ],
     "bpm": 360.4,
-    "gap": 941.1098779134295,
+    "gap": 891.1098779134295,
     "year": "2004",
     "artistOrigin": "SN",
-    "lastUpdate": "2024-06-07T00:10:32.923Z",
+    "lastUpdate": "2025-02-18T06:29:40.258Z",
     "genre": "R&B",
     "realBpm": 90,
     "volume": 0.93,
@@ -4731,6 +4731,34 @@
     ],
     "tracksCount": 1,
     "search": "alizeejenaimarre",
+    "local": false
+  },
+  {
+    "id": "all-4-one-i-swear",
+    "title": "I Swear",
+    "artist": "All-4-One",
+    "video": "cVpvlaKfLQc",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.92,
+    "gap": 448.7708758860988,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.406Z",
+    "genre": "R&B",
+    "realBpm": 83,
+    "volume": 0.71,
+    "author": "pauldiddy, snake84",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=11087",
+    "tracks": [
+      {
+        "name": "I Swear",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "all4oneiswear",
     "local": false
   },
   {
@@ -26744,10 +26772,10 @@
       "Spanish"
     ],
     "bpm": 384,
-    "gap": 6374.375,
+    "gap": 6424.375,
     "year": "2005",
     "artistOrigin": "PR",
-    "lastUpdate": "2024-04-20T06:51:24.425Z",
+    "lastUpdate": "2025-02-18T06:31:13.092Z",
     "realBpm": 96,
     "volume": 1,
     "author": "Leroidukitch",
@@ -36164,6 +36192,32 @@
     "local": false
   },
   {
+    "id": "eir-aoi-ignite",
+    "title": "IGNITE",
+    "artist": "Eir Aoi",
+    "video": "UgQeSizFJ3A",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 342.72,
+    "gap": 163.34733893557427,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-19T00:11:20.879Z",
+    "realBpm": 171,
+    "volume": 0.75,
+    "author": "omega-xis",
+    "sourceUrl": "https://www.youtube.com/watch?v=UgQeSizFJ3A",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eiraoiignite",
+    "local": false
+  },
+  {
     "id": "el-bananero-ricardo",
     "title": "Ricardo",
     "artist": "El Bananero",
@@ -38688,10 +38742,10 @@
       "English"
     ],
     "bpm": 250.5,
-    "gap": 7302.035928143712,
+    "gap": 7252.035928143712,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-06-17T21:01:29.704Z",
+    "lastUpdate": "2025-02-18T06:29:24.987Z",
     "edition": "None",
     "genre": "pop",
     "realBpm": 125,
@@ -44902,6 +44956,33 @@
     "local": false
   },
   {
+    "id": "green-day-geek-stink-breath",
+    "title": "Geek Stink Breath",
+    "artist": "Green Day",
+    "video": "fr2T-Rcgq1c",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.61,
+    "gap": 2304.1806324410404,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.409Z",
+    "genre": "Rock",
+    "realBpm": 131,
+    "volume": 0.66,
+    "author": "mustangfred",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=10955",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendaygeekstinkbreath",
+    "local": false
+  },
+  {
     "id": "green-day-holiday",
     "title": "Holiday",
     "artist": "Green Day",
@@ -45198,20 +45279,22 @@
     "id": "green-day-wake-me-up-when-september-ends",
     "title": "Wake Me Up When September Ends",
     "artist": "Green Day",
-    "video": "rdpBZ5_b48g",
+    "video": "NU9JoFKlaZ0",
     "language": [
       "English"
     ],
-    "bpm": 340,
-    "gap": 8445.29411764706,
+    "bpm": 340.1,
+    "gap": 111745.29411764706,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2023-04-19T18:59:20.459Z",
+    "lastUpdate": "2025-02-18T12:59:36.914Z",
+    "genre": "Rock",
     "realBpm": 105,
-    "volume": 0.59,
-    "author": "jusmo",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=jusmo",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Wake%20Me%20Up%20When%20September%20Ends",
+    "previewStart": 240,
+    "previewEnd": 270,
+    "volume": 0.66,
+    "author": "bohning",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=26038",
     "tracks": [
       {
         "start": 23
@@ -45787,10 +45870,10 @@
       "Portuguese"
     ],
     "bpm": 256,
-    "gap": 7673.90625,
+    "gap": 7773.90625,
     "year": "2011",
     "artistOrigin": "BR",
-    "lastUpdate": "2024-01-07T06:25:26.057Z",
+    "lastUpdate": "2025-02-18T06:26:15.341Z",
     "realBpm": 128,
     "volume": 0.83,
     "author": "RYoshi",
@@ -46648,10 +46731,10 @@
       "English"
     ],
     "bpm": 299.62,
-    "gap": 6648.7317268540155,
+    "gap": 6498.7317268540155,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-11T00:11:06.039Z",
+    "lastUpdate": "2025-02-18T21:19:16.935Z",
     "realBpm": 75,
     "volume": 0.83,
     "tracks": [
@@ -50412,6 +50495,30 @@
     "local": false
   },
   {
+    "id": "jack-johnson-upside-down",
+    "title": "Upside Down",
+    "artist": "Jack Johnson",
+    "video": "dqUdI4AIDF0",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 32550,
+    "year": "2005",
+    "lastUpdate": "2025-02-19T00:11:20.222Z",
+    "realBpm": 102,
+    "volume": 0.76,
+    "author": "hamadad",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jackjohnsonupsidedown",
+    "local": false
+  },
+  {
     "id": "jack-u-skrillex-diplo-with-justin-bieber-where-are-u-now",
     "title": "Where Are Ü Now",
     "artist": "Jack Ü (Skrillex & Diplo) with Justin Bieber",
@@ -50500,10 +50607,10 @@
       "English"
     ],
     "bpm": 339.92,
-    "gap": 11195.05530713109,
+    "gap": 11145.05530713109,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-11-03T00:12:32.392Z",
+    "lastUpdate": "2025-02-18T06:34:02.234Z",
     "genre": "Pop",
     "realBpm": 85,
     "previewEnd": 205,
@@ -55200,10 +55307,10 @@
       "English"
     ],
     "bpm": 256.04,
-    "gap": 37726.06186533354,
+    "gap": 37676.06186533354,
     "year": "2012",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-10-01T07:18:43.603Z",
+    "lastUpdate": "2025-02-18T06:30:16.995Z",
     "genre": "Pop",
     "realBpm": 128,
     "volume": 0.5,
@@ -56598,13 +56705,13 @@
       "English"
     ],
     "bpm": 264,
-    "gap": 4012.2727272727275,
+    "gap": 3812.2727272727275,
     "year": "2014",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:27.545Z",
+    "lastUpdate": "2025-02-18T06:29:08.570Z",
     "genre": "R&B",
     "realBpm": 131,
-    "volume": 0.56,
+    "volume": 0.73,
     "author": "vicktoben",
     "tracks": [
       {
@@ -59711,6 +59818,32 @@
     ],
     "tracksCount": 1,
     "search": "kyarypamyupamyuftlenkagamineponponpon",
+    "local": false
+  },
+  {
+    "id": "kyary-pamyu-pamyu-ft-rin-kagamine-tsukema-tsukeru",
+    "title": "Tsukema Tsukeru",
+    "artist": "Kyary Pamyu Pamyu Ft. Rin Kagamine",
+    "video": "Xj9Ssh-3y2Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 290.37,
+    "gap": 5753.493646037814,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-19T00:11:20.712Z",
+    "genre": "J-Pop",
+    "realBpm": 145,
+    "volume": 0.5,
+    "author": "Senortruco",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kyarypamyupamyuftrinkagaminetsukematsukeru",
     "local": false
   },
   {
@@ -64486,6 +64619,33 @@
     "local": false
   },
   {
+    "id": "lionel-richie-all-night-long-all-night",
+    "title": "All Night Long (All Night)",
+    "artist": "Lionel Richie",
+    "video": "nqAvFx3NxUM",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.85,
+    "gap": 19056.033968326832,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.220Z",
+    "realBpm": 109,
+    "previewStart": 44,
+    "previewEnd": 90,
+    "volume": 0.82,
+    "author": "daggeg/Jascrey",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lionelrichieallnightlongallnight",
+    "local": false
+  },
+  {
     "id": "lionel-richie-say-you-say-me",
     "title": "Say You Say Me",
     "artist": "Lionel Richie",
@@ -66161,6 +66321,32 @@
     ],
     "tracksCount": 1,
     "search": "lukamegurinejustbefriends",
+    "local": false
+  },
+  {
+    "id": "lukas-graham-love-someone",
+    "title": "Love Someone",
+    "artist": "Lukas Graham",
+    "video": "dN44xpHjNxE",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.67,
+    "gap": 10208.190743720512,
+    "year": "2018",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-02-19T00:11:20.560Z",
+    "genre": "Club",
+    "realBpm": 172,
+    "volume": 0.88,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lukasgrahamlovesomeone",
     "local": false
   },
   {
@@ -74838,6 +75024,31 @@
     "local": false
   },
   {
+    "id": "mindless-self-indulgence-what-do-they-know",
+    "title": "What Do They Know?",
+    "artist": "Mindless Self Indulgence",
+    "video": "9zJzgnk49sQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 308.17,
+    "gap": -92.16309179998052,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.412Z",
+    "realBpm": 154,
+    "volume": 0.73,
+    "author": "synonomy",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mindlessselfindulgencewhatdotheyknow",
+    "local": false
+  },
+  {
     "id": "minmi-shiki-no-uta",
     "title": "Shiki no Uta",
     "artist": "MINMI",
@@ -75099,6 +75310,34 @@
     ],
     "tracksCount": 1,
     "search": "mitskiwashingmachineheart",
+    "local": false
+  },
+  {
+    "id": "mitsunori-ikeda-feat-aimee-b-fallen-angel",
+    "title": "Fallen Angel",
+    "artist": "Mitsunori Ikeda feat. Aimee B.",
+    "video": "C2_sMoPPUqQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 40560,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-19T00:11:20.710Z",
+    "genre": "Jpop",
+    "realBpm": 95,
+    "volume": 0.84,
+    "author": "GaryCXJk",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=51165",
+    "tracks": [
+      {
+        "name": "Mitsunori Ikeda feat. Aimee B - Fallen Angel",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mitsunoriikedafeataimeebfallenangel",
     "local": false
   },
   {
@@ -78916,18 +79155,44 @@
     "local": false
   },
   {
+    "id": "nickelback-far-away",
+    "title": "Far Away",
+    "artist": "Nickelback",
+    "video": "j4y-RzVGrHg",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.02,
+    "gap": 7735.038718893316,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.211Z",
+    "realBpm": 133,
+    "volume": 0.73,
+    "author": "channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=j4y-RzVGrHg",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickelbackfaraway",
+    "local": false
+  },
+  {
     "id": "nickelback-hero",
     "title": "Hero",
     "artist": "Nickelback",
-    "video": "wQzn4a5qHT4",
+    "video": "TmSRMWw8Y_0",
     "language": [
       "English"
     ],
     "bpm": 294.56,
-    "gap": 8563.531776208582,
+    "gap": 9313.531776208582,
     "year": "2002",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-10-29T20:49:46.501Z",
+    "lastUpdate": "2025-02-18T06:27:09.742Z",
     "genre": "Rock",
     "realBpm": 74,
     "volume": 1,
@@ -79076,6 +79341,32 @@
     ],
     "tracksCount": 1,
     "search": "nickelbacksomeday",
+    "local": false
+  },
+  {
+    "id": "nickelback-too-bad",
+    "title": "Too Bad",
+    "artist": "Nickelback",
+    "video": "37zAeB_x2EM",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 8973.90625,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.209Z",
+    "realBpm": 128,
+    "volume": 0.74,
+    "author": "channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=37zAeB_x2EM",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickelbacktoobad",
     "local": false
   },
   {
@@ -81025,6 +81316,33 @@
     "local": false
   },
   {
+    "id": "ok-go-get-over-it",
+    "title": "Get Over It",
+    "artist": "OK Go",
+    "video": "3BxfpbyV-uc",
+    "language": [
+      "English"
+    ],
+    "bpm": 404,
+    "gap": 16097.524752475247,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.408Z",
+    "genre": "Alternative Rock",
+    "realBpm": 185,
+    "volume": 0.76,
+    "author": "Gollum",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=22166",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "okgogetoverit",
+    "local": false
+  },
+  {
     "id": "ok-go-here-it-goes-again",
     "title": "Here It Goes Again",
     "artist": "OK Go",
@@ -82479,6 +82797,34 @@
     ],
     "tracksCount": 1,
     "search": "osquatroemeiaolasolidao",
+    "local": false
+  },
+  {
+    "id": "outkast-hey-ya",
+    "title": "Hey Ya!",
+    "artist": "OutKast",
+    "video": "PWgvGjAhvIw",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.15,
+    "gap": 67077.27446118635,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.878Z",
+    "realBpm": 159,
+    "previewStart": 102,
+    "previewEnd": 135,
+    "volume": 0.75,
+    "author": "daggeg",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=25019",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "outkastheyya",
     "local": false
   },
   {
@@ -86047,10 +86393,10 @@
       "English"
     ],
     "bpm": 253.45,
-    "gap": 9773.88439534425,
+    "gap": 9723.88439534425,
     "year": "2012",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-05T00:10:37.026Z",
+    "lastUpdate": "2025-02-18T06:30:47.533Z",
     "genre": "Pop",
     "realBpm": 95,
     "volume": 0.76,
@@ -89500,6 +89846,32 @@
     "local": false
   },
   {
+    "id": "redbone-come-and-get-your-love",
+    "title": "Come And Get Your Love",
+    "artist": "Redbone",
+    "video": "4MpPGb_apD8",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.3,
+    "gap": 17000,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.213Z",
+    "realBpm": 106,
+    "volume": 0.75,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=4MpPGb_apD8",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "redbonecomeandgetyourlove",
+    "local": false
+  },
+  {
     "id": "rednex-cotton-eye-joe",
     "title": "Cotton Eye Joe",
     "artist": "Rednex",
@@ -90064,6 +90436,34 @@
     "local": false
   },
   {
+    "id": "rhapsody-emerald-sword",
+    "title": "Emerald Sword",
+    "artist": "Rhapsody",
+    "video": "oupD5I_CG-s",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.1,
+    "gap": 31290.27770063871,
+    "year": "1998",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-02-19T00:11:20.713Z",
+    "realBpm": 180,
+    "previewStart": 107,
+    "previewEnd": 129,
+    "volume": 0.81,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=1377",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rhapsodyemeraldsword",
+    "local": false
+  },
+  {
     "id": "rhapsody-the-magic-of-the-wizards-dreams",
     "title": "The Magic Of The Wizard’s Dreams",
     "artist": "Rhapsody",
@@ -90303,10 +90703,10 @@
       "English"
     ],
     "bpm": 227.22,
-    "gap": 17857.770266701875,
+    "gap": 17807.770266701875,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-05-17T16:50:30.582Z",
+    "lastUpdate": "2025-02-18T06:32:23.918Z",
     "edition": "SingStar English",
     "realBpm": 112,
     "volume": 0.81,
@@ -94831,6 +95231,33 @@
     "local": false
   },
   {
+    "id": "selena-dreaming-of-you",
+    "title": "Dreaming Of You",
+    "artist": "Selena",
+    "video": "VRU2qs82DAg",
+    "language": [
+      "English"
+    ],
+    "bpm": 331.8,
+    "gap": 23645.424954792044,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.216Z",
+    "realBpm": 84,
+    "volume": 0.75,
+    "author": "Channa",
+    "authorUrl": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=sBFBbqyysGU",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenadreamingofyou",
+    "local": false
+  },
+  {
     "id": "selena-gomez-bad-liar",
     "title": "Bad Liar",
     "artist": "Selena Gomez",
@@ -95245,6 +95672,32 @@
     ],
     "tracksCount": 1,
     "search": "selenagomezxmarshmellowolves",
+    "local": false
+  },
+  {
+    "id": "selena-i-could-fall-in-love",
+    "title": "I Could Fall In Love",
+    "artist": "Selena",
+    "video": "XBCDvINm0Vo",
+    "language": [
+      "English"
+    ],
+    "bpm": 352,
+    "gap": 30319.886363636364,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.215Z",
+    "realBpm": 158,
+    "volume": 0.74,
+    "author": "Channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=XBCDvINm0Vo",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenaicouldfallinlove",
     "local": false
   },
   {
@@ -97207,10 +97660,10 @@
       "English"
     ],
     "bpm": 210,
-    "gap": 11647,
+    "gap": 11547,
     "year": "2017",
     "artistOrigin": "AU",
-    "lastUpdate": "2023-12-21T21:43:38.013Z",
+    "lastUpdate": "2025-02-18T06:33:33.565Z",
     "edition": "Christmas",
     "genre": "Christmas",
     "realBpm": 105,
@@ -100176,6 +100629,35 @@
     ],
     "tracksCount": 1,
     "search": "stachurskyzostanmyrazem",
+    "local": false
+  },
+  {
+    "id": "staind-fade",
+    "title": "Fade",
+    "artist": "Staind",
+    "video": "_-9VnIba_qQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.32,
+    "gap": 38340.11218765936,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:20.218Z",
+    "genre": "Hard Rock",
+    "realBpm": 116,
+    "volume": 0.76,
+    "author": "Channa",
+    "authorUrl": "staind",
+    "sourceUrl": "https://www.youtube.com/watch?v=_-9VnIba_qQ",
+    "tracks": [
+      {
+        "name": "fade",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "staindfade",
     "local": false
   },
   {
@@ -104186,10 +104668,10 @@
       "English"
     ],
     "bpm": 320,
-    "gap": 4935.625,
+    "gap": 4885.625,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2024-08-07T20:58:27.684Z",
+    "lastUpdate": "2025-02-18T06:25:40.881Z",
     "realBpm": 160,
     "volume": 0.71,
     "author": "DoubleDee",
@@ -111457,6 +111939,33 @@
     "local": false
   },
   {
+    "id": "tomatsu-haruka-courage-sword-art-online-ii",
+    "title": "Courage Sword Art Online II",
+    "artist": "Tomatsu Haruka",
+    "video": "jwEHAxaZRis",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 382.19,
+    "gap": 10318.812632460294,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-02-19T00:11:21.042Z",
+    "genre": "J-Pop",
+    "realBpm": 92,
+    "volume": 0.73,
+    "author": "mouton5000",
+    "sourceUrl": "https://www.youtube.com/watch?v=jwEHAxaZRis",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomatsuharukacourageswordartonlineii",
+    "local": false
+  },
+  {
     "id": "tommy-february6-everyday-at-the-bus-stop",
     "title": "Everyday at the Bus Stop",
     "artist": "Tommy february6",
@@ -111948,6 +112457,32 @@
     ],
     "tracksCount": 1,
     "search": "toyveraoeamor",
+    "local": false
+  },
+  {
+    "id": "trace-adkins-youre-gonna-miss-this",
+    "title": "You’re Gonna Miss This",
+    "artist": "Trace Adkins",
+    "video": "lBDN8yWyNYU",
+    "language": [
+      "English"
+    ],
+    "bpm": 310,
+    "gap": 11703.870967741936,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-02-19T00:11:19.477Z",
+    "genre": "Country",
+    "realBpm": 155,
+    "volume": 0.75,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "traceadkinsyouregonnamissthis",
     "local": false
   },
   {
