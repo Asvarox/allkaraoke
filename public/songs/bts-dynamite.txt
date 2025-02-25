@@ -4,14 +4,16 @@
 #BPM:228,02
 #YEAR:2020
 #VIDEO:v=gdZLi9oWNZg
-#VIDEOGAP:20
+#VIDEOGAP:9
 #LANGUAGE:English
 #GAP:22812,24445224103
 #ALLKARAOKE_ID:bts-dynamite
+#ALLKARAOKE_LASTUPDATE:2025-02-23T18:12:56.683Z
 #ALLKARAOKE_ARTISTORIGIN:KR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite
+#ALLKARAOKE_VOLUME:0,71
 : 15 2 4 'Cause, 
 : 20 1 11 ah
 : 22 3 13 ~ 
