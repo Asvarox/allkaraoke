@@ -45,6 +45,8 @@ interface Response {
               from events
               where event = 'songEnded'
                 and created_at >= (now() - INTERVAL 45 DAY)
+                and properties.progress > 0.8
+                and properties.score0 > 0
               group by properties.songId
               order by sessions desc, played desc limit ${currentSongs.length}
           `,
