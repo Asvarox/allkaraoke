@@ -37,6 +37,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
     if (browserName === 'firefox') {
       await pages.songListPage.toolbar.ensureFullscreenIsOff();
     }
+    await expect(pages.songListPage.songPreviewElement).toBeVisible();
     await pages.songListPage.openPreviewForSong(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
