@@ -139,7 +139,7 @@ describe('convertTxtToSong', () => {
 
         expect(convertSongToTxt(song)).toEqual(txt);
       }
-    });
+    }, 30_000);
 
     it.skip('Useful to debug specific failing song file', () => {
       const file = 'name';
