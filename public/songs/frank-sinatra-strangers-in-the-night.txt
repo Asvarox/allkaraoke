@@ -1,0 +1,269 @@
+#ARTIST:Frank Sinatra
+#TITLE:Strangers In The Night
+#CREATOR:jalaat73
+#BPM:318
+#YEAR:1966
+#VIDEO:v=BTOeRwIUnG0
+#LANGUAGE:English
+#GAP:10169,433962264151
+#ALLKARAOKE_ID:frank-sinatra-strangers-in-the-night
+#ALLKARAOKE_LASTUPDATE:2025-03-07T00:12:01.803Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=94013
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=833
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Frank Sinatra - Strangers In The Night.mp3
+: 21 8 5 Stran
+: 33 5 7 gers 
+: 41 2 7 in 
+: 44 2 5 the 
+: 48 23 7 night
+- 71
+: 85 5 5 Ex
+: 93 5 7 chan
+: 101 5 9 ging 
+: 109 6 7 glan
+: 117 10 5 ces
+- 127
+: 133 5 4 Won
+: 141 4 5 d’ring 
+* 149 4 5 in 
+: 157 2 4 the 
+* 161 20 5 night
+- 181
+: 197 5 4 What 
+: 205 5 5 were 
+: 213 2 7 the 
+: 217 9 5 chan
+: 229 8 4 ces
+- 237
+: 249 4 2 We’d 
+: 257 3 4 be 
+* 263 6 4 sha
+: 271 3 2 ring 
+: 276 15 4 love
+- 291 293
+- 293
+: 314 5 2 Be
+: 322 5 4 fore 
+: 329 3 5 the 
+* 334 13 4 night 
+: 349 7 2 was 
+* 360 53 10 through
+- 413 455
+- 455
+: 476 6 7 Some
+: 484 5 9 thing 
+: 492 6 9 in 
+: 500 3 7 your 
+: 505 24 9 eyes
+- 529
+: 541 10 7 Was 
+: 555 3 9 so 
+: 560 4 10 in
+: 566 5 9 vi
+: 573 8 7 ting
+- 581
+: 589 6 5 Some
+: 597 5 7 thing 
+: 605 3 7 in 
+: 610 5 5 your 
+: 618 24 7 smile
+- 642
+: 649 7 5 Was 
+: 659 4 7 so 
+: 666 5 9 ex
+: 674 6 7 ci
+: 682 7 5 ting
+- 689
+: 701 6 4 Some
+: 709 4 5 thing 
+: 716 5 5 in 
+: 724 5 4 my 
+: 733 10 5 heart
+- 743 746
+- 746
+: 767 5 4 Told 
+: 776 5 5 me 
+: 784 4 7 I 
+: 791 10 5 must 
+: 809 7 4 have 
+: 819 88 12 you
+- 907
+: 928 9 12 Stran
+: 939 7 10 gers 
+: 948 2 10 in 
+: 951 1 9 the 
+: 953 14 9 night
+- 967 973
+- 973
+: 994 3 9 Two 
+: 1000 7 10 lone
+: 1009 4 12 ly 
+: 1017 5 12 peo
+: 1025 3 10 ple, 
+: 1031 3 10 we 
+: 1037 4 9 were
+- 1041
+: 1045 7 12 Stran
+: 1055 6 10 gers 
+: 1065 2 10 in 
+: 1069 2 9 the 
+: 1073 12 9 night
+- 1085
+: 1104 4 9 Up 
+: 1112 3 10 to 
+: 1118 2 12 the 
+: 1121 5 12 mo
+: 1128 8 10 ment
+- 1136
+: 1137 4 10 When 
+: 1143 4 9 we 
+: 1151 5 10 said 
+: 1159 5 9 our 
+: 1166 4 9 first 
+: 1174 3 7 hel
+: 1179 8 7 lo
+- 1187 1188
+- 1188
+: 1209 3 10 Lit
+* 1214 5 9 tle 
+* 1223 3 9 did 
+: 1229 2 7 we 
+: 1233 14 7 know
+- 1247
+: 1266 5 10 Love 
+: 1273 4 9 was 
+: 1280 5 9 just 
+: 1288 2 7 a 
+: 1292 7 7 glance 
+: 1304 4 5 a
+: 1310 7 5 way
+- 1317
+: 1322 4 5 A 
+: 1328 5 9 warm 
+: 1336 4 7 em
+: 1342 6 7 bra
+: 1350 5 5 cing 
+: 1359 9 5 dance 
+: 1371 8 4 a
+: 1381 7 2 way 
+: 1393 13 4 and
+- 1406
+: 1412 3 5 E
+: 1418 3 7 ver 
+: 1423 6 7 since 
+: 1432 5 5 that 
+: 1439 14 7 night
+- 1453
+: 1472 5 5 We’ve 
+: 1480 6 7 been 
+: 1490 4 9 to
+: 1496 5 7 ge
+: 1503 8 5 ther
+- 1511
+: 1520 3 4 Lo
+: 1525 7 5 vers 
+: 1537 4 5 at 
+: 1543 6 4 first 
+: 1553 14 5 sight
+- 1567
+: 1586 4 4 In 
+* 1593 9 5 love 
+: 1605 5 7 for
+: 1612 3 5 e
+: 1617 7 4 ver
+- 1624
+: 1633 4 2 It 
+: 1641 5 4 turned 
+: 1649 4 4 out 
+: 1657 5 2 so 
+: 1665 12 4 right
+- 1677
+: 1694 4 4 For 
+: 1702 10 5 stran
+: 1715 6 7 gers 
+: 1724 10 5 in 
+: 1737 3 4 the 
+* 1742 67 5 night
+- 1809 2160
+- 2160
+: 2181 7 10 Love 
+: 2190 6 9 was 
+: 2198 6 9 just 
+: 2208 2 7 a 
+: 2212 11 7 glance 
+: 2227 4 5 a
+: 2234 12 5 way
+- 2246
+: 2247 4 5 A 
+: 2253 9 9 warm 
+: 2265 5 7 em
+: 2274 5 7 bra
+: 2283 5 5 cing 
+* 2291 13 5 dance 
+: 2309 13 4 a
+: 2325 14 2 way
+- 2339 2346
+- 2346
+: 2367 6 7 E
+: 2376 3 9 ver 
+: 2382 6 9 since 
+: 2392 4 7 that 
+: 2399 17 9 night
+- 2416
+: 2431 4 7 We’ve 
+: 2438 4 9 been 
+: 2445 5 11 to
+: 2452 3 9 ge
+: 2457 10 7 ther
+- 2467
+: 2476 5 14 Lo
+: 2483 4 11 vers 
+: 2491 4 9 at 
+: 2498 5 7 first 
+: 2509 13 2 sight
+- 2522
+: 2538 4 6 In 
+: 2545 4 7 love 
+: 2553 4 9 for
+: 2559 4 6 e
+: 2565 7 4 ver
+- 2572
+: 2584 4 4 It 
+: 2592 5 6 turned 
+: 2600 3 6 out 
+: 2606 5 4 so 
+: 2613 17 6 right
+- 2630
+: 2645 4 6 For 
+: 2653 9 7 stran
+: 2665 7 9 gers 
+: 2674 9 7 in 
+: 2686 3 6 the 
+: 2691 58 7 night
+- 2749 2780
+- 2780
+: 2801 6 7 Do
+: 2809 3 9 be
+: 2815 3 9 do
+: 2821 4 7 be
+: 2827 18 9 do
+- 2845
+: 2865 4 7 Do
+: 2872 4 9 do
+: 2878 4 11 do
+: 2885 7 9 de
+: 2895 7 7 da
+- 2902
+: 2905 6 6 Da
+: 2913 4 7 da
+: 2920 4 7 da
+: 2927 4 6 da
+: 2934 5 7 da 
+: 2941 6 2 ya
+: 2950 5 2 ya
+: 2957 6 -5 ya
+: 2966 6 -5 ~
+E
