@@ -6663,6 +6663,32 @@
     "local": false
   },
   {
+    "id": "anna-terpilowska-wilcza-zamiec",
+    "title": "Wilcza zamieć",
+    "artist": "Anna Terpiłowska",
+    "video": "U9Hf4NFgVUU",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 293.74,
+    "gap": 24979.036210182414,
+    "year": "2015",
+    "artistOrigin": "PL",
+    "lastUpdate": "2025-03-07T00:12:02.068Z",
+    "videoGap": 10,
+    "realBpm": 75,
+    "volume": 0.7,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "annaterpilowskawilczazamiec",
+    "local": false
+  },
+  {
     "id": "annenmaykantereit-barfuss-am-klavier",
     "title": "Barfuß am Klavier",
     "artist": "AnnenMayKantereit",
@@ -8902,6 +8928,31 @@
     ],
     "tracksCount": 1,
     "search": "askingalexandriaaloneagain",
+    "local": false
+  },
+  {
+    "id": "atarashii-gakko-otonablue",
+    "title": "OTONABLUE",
+    "artist": "ATARASHII GAKKO!",
+    "video": "l446hUqQ7GY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260,
+    "gap": 15269.23076923077,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-03-07T00:12:01.544Z",
+    "realBpm": 130,
+    "volume": 0.75,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "atarashiigakkootonablue",
     "local": false
   },
   {
@@ -16578,6 +16629,32 @@
     "local": false
   },
   {
+    "id": "bonnie-raitt-i-cant-make-you-love-me",
+    "title": "I Can’t Make You Love Me",
+    "artist": "Bonnie Raitt",
+    "video": "nW9Cu6GYqxo",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 32484.39024390244,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:02.069Z",
+    "genre": "Country Pop",
+    "realBpm": 125,
+    "volume": 0.75,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bonnieraitticantmakeyouloveme",
+    "local": false
+  },
+  {
     "id": "bonnie-tyler-holding-out-for-a-hero",
     "title": "Holding Out For A Hero",
     "artist": "Bonnie Tyler",
@@ -21393,6 +21470,34 @@
     ],
     "tracksCount": 1,
     "search": "calemaanossavez",
+    "local": false
+  },
+  {
+    "id": "calle-13-atrevete-te-te",
+    "title": "¡Atrévete, te, te!",
+    "artist": "Calle 13",
+    "video": "vXtJkDHEAAc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 352.04,
+    "gap": 12254.997727530963,
+    "year": "2006",
+    "artistOrigin": "PR",
+    "lastUpdate": "2025-03-07T00:12:01.940Z",
+    "genre": "Reggaeton",
+    "realBpm": 85,
+    "volume": 0.74,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Calle+13",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "calle13atrevetetete",
     "local": false
   },
   {
@@ -26336,6 +26441,34 @@
     ],
     "tracksCount": 1,
     "search": "crusherpfeatgumiecho",
+    "local": false
+  },
+  {
+    "id": "crystal-waters-gypsy-woman-shes-homeless",
+    "title": "Gypsy Woman (She's Homeless)",
+    "artist": "Crystal Waters",
+    "video": "_KztNIg4cvE",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.8,
+    "gap": 7331.165971643036,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.934Z",
+    "genre": "House",
+    "realBpm": 120,
+    "volume": 0.74,
+    "author": "Globule",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=globule",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?cancion=Gypsy+Woman+%28She%27s+Homeless%29",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "crystalwatersgypsywomansheshomeless",
     "local": false
   },
   {
@@ -37427,6 +37560,32 @@
     "local": false
   },
   {
+    "id": "em-beihold-numb-little-bug",
+    "title": "Numb Little Bug",
+    "artist": "Em Beihold",
+    "video": "n-PgPuFhrEY",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.43,
+    "gap": 10906.57580119261,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.677Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "volume": 0.7,
+    "author": "hazza",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "embeiholdnumblittlebug",
+    "local": false
+  },
+  {
     "id": "emilia-rodriguez-lupica-damelo-damelo-damelo",
     "title": "Dámelo, dámelo, dámelo",
     "artist": "Emilia Rodríguez Lupica",
@@ -41872,6 +42031,33 @@
     ],
     "tracksCount": 1,
     "search": "franksinatrasantaclausiscomingtotown",
+    "local": false
+  },
+  {
+    "id": "frank-sinatra-strangers-in-the-night",
+    "title": "Strangers In The Night",
+    "artist": "Frank Sinatra",
+    "video": "BTOeRwIUnG0",
+    "language": [
+      "English"
+    ],
+    "bpm": 318,
+    "gap": 10169.433962264151,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.803Z",
+    "realBpm": 91,
+    "volume": 0.73,
+    "author": "jalaat73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=94013",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=833",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "franksinatrastrangersinthenight",
     "local": false
   },
   {
@@ -58910,6 +59096,32 @@
     "local": false
   },
   {
+    "id": "kiryu-kazuma-judgement-shinpan",
+    "title": "JUDGEMENT-shinpan",
+    "artist": "Kiryu Kazuma",
+    "video": "FkVwZMjgjm8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 157,
+    "gap": 12244.585987261147,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-03-07T00:12:01.805Z",
+    "genre": "Rock",
+    "realBpm": 157,
+    "volume": 0.75,
+    "author": "fabiofabrizio",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kiryukazumajudgementshinpan",
+    "local": false
+  },
+  {
     "id": "kiss-detroit-rock-city",
     "title": "Detroit Rock City",
     "artist": "KISS",
@@ -63946,6 +64158,33 @@
     "local": false
   },
   {
+    "id": "linkin-park-forgotten",
+    "title": "Forgotten",
+    "artist": "Linkin Park",
+    "video": "HNCgBuI2eJc",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.45,
+    "gap": 138.00208008320334,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.936Z",
+    "genre": "Rapcore",
+    "realBpm": 108,
+    "previewEnd": 19,
+    "volume": 0.72,
+    "author": "¡JKA!",
+    "tracks": [
+      {
+        "start": -1
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkforgotten",
+    "local": false
+  },
+  {
     "id": "linkin-park-from-the-inside",
     "title": "From the inside",
     "artist": "Linkin Park",
@@ -66668,6 +66907,32 @@
     ],
     "tracksCount": 1,
     "search": "m83featsusannesundforoblivion",
+    "local": false
+  },
+  {
+    "id": "maanam-kocham-cie-kochanie-moje",
+    "title": "Kocham cię, kochanie moje",
+    "artist": "Maanam",
+    "video": "2YA_zrmxLiQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 353,
+    "gap": 21552.161254199327,
+    "year": "1983",
+    "artistOrigin": "PL",
+    "lastUpdate": "2025-03-07T00:12:00.508Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "volume": 0.73,
+    "author": "Peschi",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maanamkochamciekochaniemoje",
     "local": false
   },
   {
@@ -73356,6 +73621,33 @@
     ],
     "tracksCount": 1,
     "search": "michaeljacksonblackorwhite",
+    "local": false
+  },
+  {
+    "id": "michael-jackson-blood-on-the-dance-floor",
+    "title": "Blood On The Dance Floor",
+    "artist": "Michael Jackson",
+    "video": "c3_NntYhzV4",
+    "language": [
+      "English"
+    ],
+    "bpm": 218,
+    "gap": 35946.69724770642,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.938Z",
+    "genre": "Pop",
+    "realBpm": 109,
+    "volume": 0.73,
+    "author": "PESFan",
+    "tracks": [
+      {
+        "name": "Blood On The Dance Floor",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaeljacksonbloodonthedancefloor",
     "local": false
   },
   {
@@ -98522,6 +98814,58 @@
     "local": false
   },
   {
+    "id": "siouxsie-the-banshees-cities-in-dust",
+    "title": "Cities In Dust",
+    "artist": "Siouxsie & The Banshees",
+    "video": "wsOHvP1XnRg",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.6,
+    "gap": 46676.39344262295,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-03-07T00:12:01.266Z",
+    "genre": "Post-Punk",
+    "realBpm": 120,
+    "volume": 0.74,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "siouxsiethebansheescitiesindust",
+    "local": false
+  },
+  {
+    "id": "siouxsie-the-banshees-spellbound",
+    "title": "Spellbound",
+    "artist": "Siouxsie & The Banshees",
+    "video": "TjvvK-Rj0WI",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.7,
+    "gap": 12021.274101444407,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-03-07T00:12:01.127Z",
+    "genre": "Post-Punk",
+    "realBpm": 149,
+    "volume": 0.73,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "siouxsiethebansheesspellbound",
+    "local": false
+  },
+  {
     "id": "sira-badchieff-bausa-9-bis-9",
     "title": "9 bis 9",
     "artist": "SIRA, badchieff, Bausa",
@@ -109162,6 +109506,32 @@
     "local": false
   },
   {
+    "id": "the-sisters-of-mercy-marian",
+    "title": "Marian",
+    "artist": "The Sisters of Mercy",
+    "video": "yVPx4zalkiM",
+    "language": [
+      "English"
+    ],
+    "bpm": 267,
+    "gap": 33198.76404494382,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-03-07T00:12:01.406Z",
+    "genre": "Gothic Rock",
+    "realBpm": 133,
+    "volume": 0.72,
+    "author": "dude76",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thesistersofmercymarian",
+    "local": false
+  },
+  {
     "id": "the-smashing-pumpkins-1979",
     "title": "1979",
     "artist": "The Smashing Pumpkins",
@@ -113510,6 +113880,32 @@
     "local": false
   },
   {
+    "id": "type-o-negative-i-dont-wanna-be-me",
+    "title": "I Don’t Wanna Be Me",
+    "artist": "Type O Negative",
+    "video": "LXIWRan3XGY",
+    "language": [
+      "English"
+    ],
+    "bpm": 401.6,
+    "gap": 5542.533864541832,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-03-07T00:12:01.269Z",
+    "genre": "Gothic Metal",
+    "realBpm": 101,
+    "volume": 0.71,
+    "author": "Zalakajin",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "typeonegativeidontwannabeme",
+    "local": false
+  },
+  {
     "id": "u-kiss-0330",
     "title": "0330",
     "artist": "U-Kiss",
@@ -114737,6 +115133,34 @@
     ],
     "tracksCount": 1,
     "search": "vicconochentera",
+    "local": false
+  },
+  {
+    "id": "vicentico-y-valeria-bertuccelli-no-te-apartes-de-mi",
+    "title": "No te apartes de mí",
+    "artist": "Vicentico y Valeria Bertuccelli",
+    "video": "tJOu5ukveiQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 3177,
+    "year": "2012",
+    "lastUpdate": "2025-03-07T00:12:01.945Z",
+    "realBpm": 111,
+    "volume": 0.75,
+    "author": "Vicentico",
+    "sourceUrl": "https://www.youtube.com/watch?v=V2ji2KgJYcE",
+    "tracks": [
+      {
+        "start": 20
+      },
+      {
+        "start": 712
+      }
+    ],
+    "tracksCount": 2,
+    "search": "vicenticoyvaleriabertuccellinoteapartesdemi",
     "local": false
   },
   {
