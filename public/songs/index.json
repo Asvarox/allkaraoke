@@ -1145,17 +1145,19 @@
       "English"
     ],
     "bpm": 337,
-    "gap": 36137.857851825596,
+    "gap": 36181.77151335312,
     "year": "1985",
     "artistOrigin": "NO",
+    "lastUpdate": "2025-03-18T06:34:50.487Z",
     "edition": "SingStar",
     "realBpm": 172,
+    "volume": 0.77,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me",
     "tracks": [
       {
-        "start": 23
+        "start": 22
       }
     ],
     "tracksCount": 1,
@@ -6322,10 +6324,10 @@
       "Polish"
     ],
     "bpm": 270,
-    "gap": 2930,
+    "gap": 2980,
     "year": "1985",
     "artistOrigin": "PL",
-    "lastUpdate": "2023-06-28T19:18:27.556Z",
+    "lastUpdate": "2025-03-17T08:11:48.828Z",
     "genre": "None",
     "realBpm": 72,
     "previewStart": 3,
@@ -14824,10 +14826,10 @@
       "Korean"
     ],
     "bpm": 250.04,
-    "gap": 16263.163173892179,
+    "gap": 16313.163173892177,
     "year": "2016",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-01-19T05:46:34.152Z",
+    "lastUpdate": "2025-03-17T08:12:32.718Z",
     "realBpm": 123,
     "volume": 0.71,
     "author": "RAE",
@@ -21907,9 +21909,9 @@
       "English"
     ],
     "bpm": 270.26,
-    "gap": 31896.96203655739,
+    "gap": 31996.96203655739,
     "year": "2019",
-    "lastUpdate": "2024-11-03T00:12:31.745Z",
+    "lastUpdate": "2025-03-17T08:11:04.470Z",
     "realBpm": 134,
     "previewStart": 44,
     "previewEnd": 64,
@@ -49454,9 +49456,10 @@
       "English"
     ],
     "bpm": 400,
-    "gap": 35040,
+    "gap": 34077.5,
     "year": "2012",
     "artistOrigin": "US",
+    "lastUpdate": "2025-03-17T08:10:33.552Z",
     "realBpm": 68,
     "volume": 0.75,
     "author": "dontellme",
@@ -49464,7 +49467,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Radioactive",
     "tracks": [
       {
-        "start": 0
+        "start": 27
       }
     ],
     "tracksCount": 1,
@@ -61368,10 +61371,10 @@
     "bpm": 357,
     "gap": 14281.596638655463,
     "year": "2008",
-    "lastUpdate": "2023-11-07T21:41:36.218Z",
+    "lastUpdate": "2025-03-18T06:35:04.370Z",
     "edition": "[SC]-Songs",
     "realBpm": 119,
-    "volume": 0.74,
+    "volume": 0.65,
     "author": "IC",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5498",
@@ -71521,12 +71524,14 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 5750.2307692307695,
+    "gap": 5800.2307692307695,
     "year": "1967",
     "artistOrigin": "US",
+    "lastUpdate": "2025-03-17T08:10:01.263Z",
     "edition": "SingStar R&B",
     "genre": "Pop",
     "realBpm": 129,
+    "volume": 0.77,
     "author": "Canni",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=1169",
