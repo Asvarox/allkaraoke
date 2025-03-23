@@ -8,10 +8,12 @@
 #LANGUAGE:English
 #GAP:13393,90243902439
 #ALLKARAOKE_ID:natasha-bedingfield-unwritten
+#ALLKARAOKE_LASTUPDATE:2025-03-22T15:58:32.543Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Natasha%20Bedingfield&cancion=Unwritten
+#ALLKARAOKE_VOLUME:0,78
 : 22 5 17 I 
 * 28 10 15 am 
 : 42 12 12 un
