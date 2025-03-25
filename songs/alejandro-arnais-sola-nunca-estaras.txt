@@ -1,0 +1,220 @@
+#ARTIST:Alejandro Arnais
+#TITLE:Sola nunca estarás
+#CREATOR:Zero
+#BPM:266
+#YEAR:1996
+#VIDEO:v=Xcu_06arIgI
+#LANGUAGE:Spanish
+#GAP:13504,962406015038
+#ALLKARAOKE_ID:alejandro-arnais-sola-nunca-estaras
+#ALLKARAOKE_LASTUPDATE:2025-03-25T00:12:39.637Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:0,86
+#MP3:Alejandro Arnais - Sola nunca estarás.mp3
+#COVER:Alejandro Arnais - Sola nunca estarás.jpg
+: 18 3 2 Ca
+: 22 2 2 pri
+: 26 2 4 cho
+: 31 5 11 sa e
+: 38 4 12 res 
+: 43 5 12 tu 
+: 51 3 3 mu
+: 55 3 4 chas 
+: 59 2 4 ve
+: 63 4 10 ces 
+: 68 5 11 lo 
+: 75 5 12 sé
+- 80
+: 86 3 9 no 
+: 90 3 11 te im
+: 95 9 12 por
+: 106 4 13 tan 
+: 111 5 12 los 
+: 118 3 10 de
+* 123 12 10 más
+- 135
+: 147 2 3 y 
+: 151 3 8 quie
+: 155 3 11 res 
+: 159 3 12 to
+: 163 4 12 do ha
+: 171 6 13 cer 
+: 179 2 5 a 
+: 183 2 8 tu 
+: 187 6 12 ma
+: 195 6 12 ne
+: 203 4 13 ra
+- 207
+: 215 3 12 ¿Por 
+: 219 9 12 qué 
+: 231 2 10 te 
+: 235 3 8 com
+: 239 3 8 por
+: 243 3 11 tas 
+: 247 2 10 a
+: 251 13 10 sí?
+- 264
+: 275 3 2 Y 
+: 279 3 2 co
+: 283 3 3 mo u
+: 287 3 10 na i
+: 292 3 12 lu
+: 298 4 12 sión
+- 302
+: 306 3 3 que 
+: 310 3 3 quie
+: 314 3 3 res 
+: 318 3 10 tu 
+: 323 5 11 vi
+: 330 6 12 vir
+- 336
+: 339 3 5 en 
+: 343 2 9 el 
+: 347 2 12 pa
+: 351 9 13 sa
+: 362 3 13 do 
+: 367 4 11 que 
+: 374 3 10 se 
+: 379 6 10 fue
+: 387 4 11 ~
+- 391
+: 403 3 2 La 
+: 407 3 7 gen
+: 411 2 11 te 
+: 415 2 12 te 
+: 419 5 13 da
+: 427 4 14 ña
+- 431
+: 435 2 5 no 
+: 439 2 9 lo 
+: 443 5 12 com
+: 450 6 13 pren
+: 458 6 13 des
+- 464
+: 471 2 10 y 
+: 475 2 11 te ha
+: 479 3 11 cen 
+: 483 3 9 llo
+: 487 6 7 rar
+- 493
+: 499 3 11 an
+: 503 3 11 gus
+: 507 6 14 tia
+: 515 3 10 da es
+: 519 7 7 tás
+- 526
+: 530 3 4 Con 
+: 534 3 8 las 
+: 538 3 11 per
+: 543 3 13 so
+: 547 6 15 nas 
+: 555 6 15 nun
+: 563 2 15 ca 
+: 567 3 12 te en
+: 571 6 16 tien
+: 579 10 14 des
+- 589
+: 598 3 5 pe
+: 602 2 4 ro 
+: 606 2 11 so
+: 610 3 15 la 
+: 614 3 15 nun
+: 618 3 15 ca 
+: 623 5 15 es
+: 630 3 12 ta
+: 634 8 16 rás
+- 642
+: 646 3 11 Por
+: 650 3 12 que 
+: 654 3 12 yo es
+: 658 3 12 ta
+: 662 3 12 ré a
+: 667 9 11 hí
+- 676
+: 686 3 12 ya 
+: 690 5 13 ve
+* 698 4 15 rás
+: 703 7 14 ~
+- 710
+: 718 3 14 aun
+: 722 5 15 que 
+: 730 10 20 mil 
+: 742 6 19 tor
+: 750 3 16 men
+: 754 3 16 tas 
+: 759 3 17 ven
+: 763 9 16 drán
+- 772
+: 782 3 6 cuan
+: 786 3 7 do 
+: 790 3 10 de 
+: 795 5 12 no
+: 802 2 12 che 
+: 806 3 12 lle
+: 810 6 12 gues 
+: 818 3 10 a 
+: 822 3 8 tu 
+: 826 2 11 ca
+: 830 5 8 sa
+- 835
+: 842 3 4 y el 
+: 846 3 5 al
+: 850 4 8 ma
+- 854
+* 858 10 12 sien
+: 870 3 10 tas 
+: 874 3 8 he
+: 878 2 10 ri
+: 882 7 12 da
+- 889
+: 898 3 13 cuen
+: 902 3 13 ta 
+: 906 3 13 con
+: 910 6 13 mi
+: 918 3 15 go a
+: 922 10 12 mor
+- 932
+: 942 3 11 Por
+: 946 3 12 que 
+: 950 3 12 tu y 
+: 954 10 15 yo
+- 964
+: 974 3 12 u
+: 978 5 15 no 
+: 986 6 19 so
+: 994 3 20 lo 
+: 998 3 19 se
+: 1002 3 19 re
+: 1006 4 16 mos 
+: 1011 6 16 los 
+* 1019 9 17 dos
+- 1028
+: 1035 2 5 y 
+: 1039 3 6 mu
+: 1043 5 10 chas 
+: 1050 6 11 co
+: 1059 5 12 sas 
+: 1066 6 15 jun
+: 1074 6 12 tos 
+: 1082 6 16 va
+: 1090 3 11 mos 
+: 1094 3 10 a ha
+: 1098 4 7 cer
+- 1102
+: 1106 3 4 mi 
+: 1110 3 7 va
+: 1114 6 11 lor 
+: 1122 2 10 va 
+: 1126 3 9 pro
+: 1130 2 9 te
+: 1134 3 10 ger
+: 1138 8 11 te
+- 1146
+: 1157 4 12 mien
+: 1162 3 15 tras 
+: 1167 4 11 vi
+: 1172 4 9 vas 
+: 1178 2 8 a
+* 1182 23 8 quí
+E
