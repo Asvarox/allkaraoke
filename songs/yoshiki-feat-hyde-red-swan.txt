@@ -1,0 +1,167 @@
+#ARTIST:YOSHIKI feat. HYDE
+#TITLE:Red Swan
+#CREATOR:asdFer
+#BPM:347,96
+#YEAR:2018
+#VIDEO:v=MWSR17vEVBw
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:13225,506724910909
+#EDITION:Anime
+#ALLKARAOKE_ID:yoshiki-feat-hyde-red-swan
+#ALLKARAOKE_LASTUPDATE:2025-03-29T00:12:18.176Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:0,75
+#MP3:YOSHIKI feat. HYDE - Red Swan (TV).mp3
+#COVER:YOSHIKI feat. HYDE - Red Swan (TV).jpg
+#MEDLEYSTARTBEAT:1002
+#MEDLEYENDBEAT:1750
+: 23 3 -2 Like
+: 28 3 0 ~ 
+: 34 5 -2 the 
+: 44 12 -2 sky 
+: 60 3 -3 at 
+: 66 28 -3 night
+- 94
+: 108 5 -3 There 
+: 116 5 -5 in 
+: 124 4 -7 the 
+: 130 3 -5 dark
+: 135 40 -3 ~
+- 175
+: 196 3 -5 You 
+: 202 8 -3 can 
+* 213 3 -3 hide
+* 219 6 -2 ~ 
+: 229 3 -3 your 
+: 235 30 -5 fear
+- 265
+: 286 8 -3 Can 
+: 297 3 -3 lie
+: 303 6 -2 ~, 
+: 313 3 -3 my 
+: 319 22 -5 dear
+- 341
+: 355 4 -12 Ko
+: 361 4 -7 no 
+* 369 4 -5 ma
+* 376 3 -3 ~
+* 382 2 -5 ma
+* 386 36 -3 ~
+- 422
+: 435 3 -3 Yu
+: 440 3 -3 me 
+: 446 3 -2 wo 
+: 451 3 -2 mi
+: 456 3 0 ~
+: 461 3 -3 ~
+: 468 34 -3 te
+- 502 516
+- 516
+: 539 4 -3 Chi 
+: 545 3 -3 da
+: 551 3 -3 ra
+: 556 8 -2 ~
+: 567 4 -3 ke 
+: 573 38 -5 no 
+: 624 3 -3 tsu
+: 630 3 -3 ba
+: 636 3 -3 sa
+: 641 24 -2 ~
+- 665
+: 672 3 -7 Hi
+: 677 2 4 ro
+: 682 12 5 ~
+: 698 4 5 ge
+: 704 8 7 ~
+: 714 4 5 ~
+: 720 66 5 te
+- 786
+F 793 3 0 What's 
+F 798 2 0 the 
+F 802 18 0 lie?
+- 820 854
+- 854
+F 877 3 0 What's 
+F 882 2 0 the 
+F 887 16 0 truth?
+- 903 937
+- 937
+F 960 4 0 What 
+F 966 2 0 to 
+F 970 2 0 be
+F 974 14 0 lieve?
+- 988 1002
+- 1002
+: 1025 2 5 Like 
+: 1030 3 5 a 
+: 1036 3 5 fall
+: 1042 8 7 en 
+: 1057 3 5 an
+: 1062 3 7 ~
+: 1067 3 5 ~
+: 1073 24 5 gel
+- 1097
+: 1110 3 5 To
+: 1116 3 5 ki 
+: 1121 3 5 no 
+* 1126 3 4 ka
+* 1131 3 2 ~
+* 1136 3 2 ze 
+: 1141 2 2 ni
+: 1145 36 4 ~
+- 1181 1182
+- 1182
+: 1205 2 4 Na
+: 1209 4 5 ~
+: 1216 6 7 ga
+: 1226 3 5 sa
+: 1231 3 7 ~
+: 1236 3 5 ~
+: 1241 3 5 re
+: 1247 32 5 te 
+: 1283 3 2 o
+: 1289 5 2 chi
+: 1297 5 4 te 
+: 1305 2 5 yu
+: 1310 26 5 ku
+- 1336
+: 1347 3 0 In
+: 1353 2 5 to
+: 1357 12 7 ~ 
+: 1374 15 7 the 
+: 1394 12 7 sta
+: 1409 2 9 rry 
+: 1414 20 9 night
+- 1434
+* 1442 3 9 Me
+* 1447 3 9 ga
+* 1452 3 9 mi 
+: 1457 2 7 no
+: 1460 2 9 ~ 
+: 1464 5 7 yo
+: 1472 4 5 u 
+* 1479 2 7 ni
+: 1483 34 9 ~
+- 1517 1530
+- 1530
+: 1553 3 9 Da
+: 1558 3 9 ki
+: 1564 3 9 shi
+: 1570 6 10 ~
+: 1579 3 9 me
+: 1585 38 7 te
+- 1623
+: 1637 8 9 Ei
+: 1648 3 9 en
+: 1654 6 10 ~
+: 1663 3 9 ~ 
+: 1669 26 7 wo
+- 1695
+* 1706 6 5 Fly 
+: 1716 6 7 to 
+* 1726 4 5 hea
+* 1732 4 7 ~
+: 1739 34 5 ven
+E

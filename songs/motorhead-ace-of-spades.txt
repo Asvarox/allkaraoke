@@ -1,0 +1,272 @@
+#ARTIST:Motörhead
+#TITLE:Ace Of Spades
+#CREATOR:Ultrastar-Songs
+#BPM:284,3
+#YEAR:1980
+#VIDEO:v=3mbvWn1EY6g
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:12256,478873239437
+#ALLKARAOKE_ID:motorhead-ace-of-spades
+#ALLKARAOKE_LASTUPDATE:2025-03-29T00:12:09.373Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:1
+#ALLKARAOKE_PREVIEWEND:155
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Motörhead - Ace Of Spades.mp3
+: 19 3 6 If 
+: 23 3 6 you 
+: 27 3 6 like 
+: 31 3 3 to 
+: 35 5 6 gam
+: 41 4 6 ble
+- 45
+: 47 3 3 I 
+: 51 3 6 tell 
+: 55 3 6 you 
+: 59 3 6 I’m 
+: 63 3 3 your 
+: 67 8 6 man
+- 75
+: 80 3 3 You 
+* 84 4 6 win 
+: 92 4 6 some 
+: 100 5 6 lose 
+: 106 4 6 some
+- 110
+: 112 3 3 It’s 
+: 116 5 6 all 
+: 122 3 6 the 
+: 126 7 6 same 
+: 134 3 6 to 
+: 138 3 6 me
+: 142 4 10 ~
+- 146 251
+- 251
+: 270 3 3 The 
+: 274 3 6 plea
+: 278 3 6 sure 
+: 282 3 6 is 
+: 286 3 6 to 
+: 290 4 5 play
+- 294
+: 306 3 6 Makes 
+: 310 3 6 no 
+: 314 3 6 dif
+: 318 3 3 ference 
+: 322 3 6 what 
+: 326 3 3 you 
+: 330 1 3 say
+* 332 4 6 ~
+- 336 383
+- 383
+: 402 3 5 I 
+: 406 3 5 don’t 
+: 410 3 5 share 
+: 414 3 5 your 
+: 418 8 5 greed
+- 426
+: 433 1 5 The 
+: 435 3 6 on
+: 439 3 6 ly 
+: 443 3 6 card 
+: 447 3 6 I 
+: 451 6 6 need
+- 457
+: 459 4 3 Is 
+: 464 3 3 the 
+: 468 5 6 Ace 
+: 474 3 3 of 
+: 478 1 3 Spades
+: 480 8 6 ~
+- 488
+: 496 3 3 The 
+: 500 5 6 Ace 
+: 506 3 3 of 
+: 510 1 3 Spades
+: 512 8 6 ~
+- 520 578
+- 578
+: 597 3 6 Play
+: 601 3 6 ing 
+: 605 3 6 for 
+: 609 3 3 the 
+* 613 5 6 high 
+: 619 6 6 one
+- 625
+: 630 3 6 Danc
+: 634 3 6 ing 
+: 638 3 6 with 
+: 642 3 3 the 
+: 646 3 6 dev
+: 650 4 6 il
+- 654
+: 662 3 6 Go
+: 666 3 6 ing 
+: 670 3 6 with 
+: 674 3 3 the 
+: 678 6 6 flow
+- 684
+: 690 5 3 It’s 
+: 696 5 6 all 
+: 702 4 3 a 
+: 707 6 6 game 
+: 714 3 3 to 
+: 718 7 6 me
+- 725 834
+- 834
+: 853 4 5 Se
+: 858 3 5 ven 
+: 862 3 5 or 
+: 866 3 5 e
+: 870 3 5 le
+: 874 4 5 ven
+- 878
+: 886 7 6 Snake 
+: 894 5 6 eyes 
+* 900 5 6 watch
+: 906 3 3 ing 
+: 910 1 3 you
+: 912 6 6 ~
+- 918 964
+- 964
+: 983 3 5 Dou
+: 987 3 5 ble 
+: 991 3 5 up 
+: 995 3 5 or 
+: 999 8 5 quit
+- 1007
+: 1016 3 6 Dou
+: 1020 3 6 ble 
+: 1024 3 6 stake 
+: 1028 3 3 or 
+: 1032 6 6 split
+- 1038
+: 1044 3 3 The 
+* 1048 5 6 Ace 
+: 1054 3 3 of 
+: 1058 1 3 Spades
+: 1060 8 6 ~
+- 1068
+: 1076 3 3 The 
+: 1080 5 6 Ace 
+: 1086 5 3 of 
+: 1092 3 6 Spades
+: 1096 6 3 ~
+- 1102 1216
+- 1216
+: 1235 3 3 You 
+: 1239 3 3 know 
+: 1243 3 3 I’m 
+: 1247 3 3 born 
+: 1251 3 3 to 
+* 1255 8 6 lose
+- 1263
+: 1267 3 3 And 
+: 1271 3 6 gam
+: 1275 1 3 bl
+: 1277 5 3 ing’s 
+: 1283 3 3 for 
+: 1287 1 3 fools
+: 1289 4 6 ~
+- 1293
+: 1300 3 3 But 
+: 1304 3 6 that’s 
+: 1308 1 6 the 
+: 1310 5 6 way
+- 1315
+: 1316 3 6 I 
+: 1320 3 6 like 
+: 1324 3 3 it 
+: 1328 3 6 ba
+: 1332 4 3 by
+- 1336
+: 1337 3 6 I 
+: 1341 3 3 don’t 
+: 1345 3 6 wan
+: 1349 1 6 na 
+: 1351 5 6 live
+- 1356
+: 1357 3 6 For
+: 1361 3 15 ev
+: 1365 4 13 er
+- 1369 1441
+- 1441
+: 1460 3 5 And 
+: 1464 3 5 don’t 
+: 1468 3 5 for
+: 1472 3 5 get 
+: 1476 3 5 the 
+* 1480 7 8 Jo
+: 1488 8 6 ker
+- 1496 1985
+- 1985
+: 2004 3 6 Push
+: 2008 3 6 ing 
+: 2012 3 6 up 
+: 2016 3 3 the 
+: 2020 5 6 an
+: 2026 6 6 te
+- 2032
+: 2034 3 3 I 
+: 2038 3 6 know 
+: 2042 3 6 you 
+: 2046 3 6 wan
+: 2050 3 3 na 
+: 2054 5 6 see 
+: 2060 6 6 me
+- 2066
+: 2075 3 6 Read 
+: 2079 3 6 ’em 
+: 2083 3 3 and 
+* 2087 4 6 weep
+- 2091
+: 2098 3 3 The 
+: 2102 5 6 dead 
+: 2108 5 6 man’s 
+: 2114 7 6 hand 
+: 2122 3 3 a
+: 2126 1 3 gain
+: 2128 4 6 ~
+- 2132 2240
+- 2240
+: 2259 3 3 I 
+: 2263 3 5 see 
+: 2267 3 6 it 
+: 2271 3 5 in 
+: 2275 3 5 your 
+: 2279 8 5 eyes
+- 2287
+: 2297 5 6 Take 
+: 2303 5 6 one 
+: 2309 5 6 look 
+: 2315 5 3 and 
+* 2321 8 6 die
+- 2329 2369
+- 2369
+: 2388 3 3 The 
+: 2392 3 5 on
+: 2396 3 5 ly 
+: 2400 3 5 thing 
+: 2404 3 5 you 
+: 2408 8 5 see
+- 2416
+: 2422 3 5 You 
+: 2426 3 6 know 
+: 2430 3 6 it’s 
+: 2434 3 6 gon
+: 2438 3 5 na 
+: 2442 8 6 be
+- 2450
+: 2454 3 3 The 
+: 2458 5 6 Ace 
+: 2464 5 3 of 
+: 2470 1 3 Spades
+* 2472 10 6 ~
+- 2482
+: 2486 3 3 The 
+: 2490 6 6 Ace 
+: 2497 4 3 of 
+: 2502 1 3 Spades
+: 2504 10 6 ~
+E

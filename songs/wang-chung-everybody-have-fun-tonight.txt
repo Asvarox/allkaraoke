@@ -1,0 +1,435 @@
+#ARTIST:Wang Chung
+#TITLE:Everybody Have Fun Tonight
+#CREATOR:UltraSinger [GitHub] and mindtakerr
+#BPM:383,52
+#YEAR:1986
+#VIDEO:v=BoXu6QmxpJE
+#GENRE:Rock, Electronic, Synth-Pop, Pop Rock
+#LANGUAGE:English
+#GAP:24943,103879849812
+#ALLKARAOKE_ID:wang-chung-everybody-have-fun-tonight
+#ALLKARAOKE_LASTUPDATE:2025-03-29T00:12:18.304Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=BoXu6QmxpJE
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Wang Chung - Everybody Have Fun Tonight.mp3
+#COVER:Wang Chung - Everybody Have Fun Tonight [CO].jpg
+#BACKGROUND:Wang Chung - Everybody Have Fun Tonight [BG].jpg
+: 26 2 3 I'll 
+: 31 10 8 drive 
+: 41 1 11 a 
+: 43 8 18 mil
+: 51 8 18 lion 
+: 61 11 18 miles
+- 72 94
+- 94
+: 120 2 16 To 
+: 126 5 16 be 
+: 132 2 14 with 
+: 138 9 16 you 
+: 151 8 13 to
+: 159 8 11 night
+- 167 189
+- 189
+: 215 3 4 So 
+: 222 2 8 if 
+: 227 3 11 you're 
+: 234 7 18 feel
+: 241 7 18 ing 
+: 251 11 18 low
+- 262 284
+- 284
+: 310 7 16 Turn 
+: 319 1 16 up 
+: 323 4 13 your 
+: 328 12 16 ra
+: 341 12 13 dio
+- 353 379
+- 379
+: 405 5 11 The 
+: 412 5 19 words 
+: 419 4 16 we 
+: 425 9 18 use 
+: 436 4 15 are 
+: 441 10 16 strong
+- 451 475
+- 475
+: 501 4 15 They 
+: 507 2 16 make 
+: 513 17 16 real
+: 531 17 13 ity
+- 548 571
+- 571
+: 597 2 4 But 
+: 602 6 8 now 
+: 609 4 11 the 
+: 615 9 18 mu
+: 624 9 18 sic's 
+: 638 7 16 on
+- 645 665
+- 665
+: 691 2 18 Oh 
+: 694 2 19 ba
+: 704 3 13 by 
+: 709 7 16 dance 
+: 720 5 13 with 
+: 728 5 13 me
+- 733 799
+- 799
+: 825 2 17 Rip 
+: 828 1 17 it 
+: 836 5 13 up
+- 841
+: 865 9 6 Move 
+: 876 11 6 down
+- 887 888
+- 888
+: 914 3 14 Rip 
+: 922 4 16 it 
+: 932 4 13 up
+- 936
+: 961 1 13 Move 
+: 968 1 13 it 
+: 972 1 19 down 
+: 983 1 19 to 
+: 991 1 17 the 
+: 996 14 16 ground
+- 1010
+: 1010 4 14 Rip 
+: 1015 5 16 it 
+: 1021 12 13 up
+- 1033 1035
+- 1035
+: 1061 4 5 Cool 
+: 1068 10 9 Down
+- 1078
+: 1104 3 25 Rip 
+: 1113 3 16 it 
+: 1123 4 13 up
+- 1127
+* 1133 5 16 Don't 
+* 1140 4 19 hang 
+* 1146 5 19 me 
+* 1151 4 19 on 
+* 1157 3 16 the 
+* 1163 17 18 border
+* 1181 10 17 line
+- 1191
+: 1212 15 18 Every
+: 1228 18 18 body 
+: 1247 8 13 have 
+: 1258 11 16 fun 
+: 1271 6 16 to
+: 1278 6 18 night
+- 1284 1298
+- 1298
+: 1324 7 8 Every
+: 1331 7 9 body 
+: 1343 5 9 have 
+: 1355 4 3 fun 
+: 1365 6 5 to
+: 1371 6 5 night
+- 1377 1384
+- 1384
+: 1410 13 19 Every
+: 1423 13 18 body 
+: 1437 5 13 Wang 
+: 1448 7 16 Chung 
+: 1466 4 16 to
+: 1470 4 18 night
+- 1474 1485
+- 1485
+: 1511 9 8 Every
+: 1521 8 9 body 
+: 1531 9 8 have 
+: 1543 10 -1 fun 
+: 1556 4 4 to
+: 1562 15 3 night
+- 1577 1578
+- 1578
+: 1604 8 8 Every
+: 1615 9 8 body 
+: 1627 9 11 Wang 
+: 1639 9 4 Chung 
+: 1651 5 4 to
+: 1657 8 4 night
+- 1665 1679
+- 1679
+: 1705 8 4 Every
+: 1713 8 8 body 
+: 1724 5 11 have 
+: 1735 8 16 fun
+- 1743 1763
+- 1763
+: 1789 3 4 Deep 
+: 1796 4 8 in 
+: 1801 4 11 the 
+: 1807 9 18 world 
+: 1819 6 18 to
+: 1825 6 16 night
+- 1831 1859
+- 1859
+: 1885 3 16 Our 
+: 1889 4 16 hearts 
+: 1898 2 16 beat 
+: 1902 10 16 safe 
+: 1915 3 13 and 
+: 1919 10 13 sound
+- 1929 1953
+- 1953
+: 1979 4 11 I'll 
+: 1985 5 4 hold 
+: 1992 3 11 you 
+: 1997 9 19 so 
+: 2008 10 16 close
+- 2018 2049
+- 2049
+: 2075 2 16 Just 
+: 2081 2 16 let 
+: 2087 6 13 your
+: 2094 6 16 self 
+: 2105 4 13 go 
+: 2111 8 13 down
+- 2119 2177
+- 2177
+: 2203 2 17 Rip 
+: 2206 1 17 it 
+: 2214 5 13 up
+- 2219 2220
+- 2220
+: 2246 11 6 Move 
+: 2259 25 6 down
+- 2284
+: 2296 4 14 Rip 
+: 2302 4 16 it 
+: 2307 12 13 up
+- 2319
+: 2343 4 13 Move 
+: 2349 4 13 it 
+: 2355 8 19 down 
+: 2366 3 19 to 
+: 2372 3 17 the 
+: 2378 10 16 ground
+- 2388
+: 2388 4 14 Rip 
+: 2393 5 16 it 
+: 2399 12 13 up
+- 2411 2413
+- 2413
+: 2439 4 5 Cool 
+: 2446 10 9 Down
+- 2456 2460
+- 2460
+: 2486 6 25 Rip 
+: 2493 4 16 it 
+: 2499 13 13 up
+- 2512
+* 2520 6 19 Get 
+* 2526 5 19 out 
+* 2531 6 19 what's 
+* 2540 4 17 in
+* 2546 8 18 side 
+* 2557 4 16 of 
+* 2563 18 16 you
+- 2581
+: 2593 16 20 Every
+: 2611 13 18 body 
+: 2628 8 13 have 
+: 2640 8 16 fun 
+: 2652 4 17 to
+: 2658 9 18 night
+- 2667 2681
+- 2681
+: 2707 8 8 Every
+: 2715 8 9 body 
+: 2725 7 11 have 
+: 2738 5 4 fun 
+: 2748 6 4 to
+: 2754 6 4 night
+- 2760
+: 2784 17 19 Every
+: 2803 14 18 body 
+: 2820 9 13 Wang 
+: 2831 10 16 Chung 
+: 2844 4 16 to
+: 2850 11 18 night
+- 2861 2871
+- 2871
+: 2897 8 9 Every
+: 2905 8 9 body 
+: 2916 5 11 have 
+: 2927 10 4 fun 
+: 2939 6 4 to
+: 2945 6 4 night
+- 2951 2960
+- 2960
+: 2986 11 8 Every
+: 2998 11 9 body 
+: 3010 9 11 Wang 
+: 3022 12 4 Chung 
+: 3035 6 4 to
+: 3041 6 4 night
+- 3047 3062
+- 3062
+: 3088 8 8 Every
+: 3096 8 9 body 
+: 3106 4 11 have 
+: 3119 5 4 fun 
+: 3126 2 4 to
+: 3129 3 5 night
+- 3132
+: 3133 10 5 Every
+: 3143 10 16 body
+- 3153 3157
+- 3157
+: 3183 8 8 Every
+: 3191 8 8 body 
+: 3202 5 11 have 
+: 3213 7 16 fun
+- 3220 3229
+- 3229
+: 3255 14 4 On 
+: 3273 5 24 the 
+: 3280 7 24 edge 
+: 3290 6 24 of 
+: 3300 7 23 ob
+: 3309 11 19 li
+: 3320 28 21 vion
+- 3348
+: 3352 14 21 All 
+: 3369 4 21 the 
+: 3375 8 19 world 
+: 3390 14 19 is 
+: 3408 26 19 Babylon
+- 3434
+: 3445 15 17 All 
+: 3463 6 19 the 
+: 3470 19 12 love 
+: 3492 9 17 and 
+: 3502 13 17 every
+: 3517 13 16 one
+- 3530
+: 3543 1 6 A 
+: 3546 4 16 ship 
+: 3556 3 14 of 
+: 3565 14 14 fools
+- 3579
+* 3590 9 7 Sail
+* 3602 11 19 ing 
+* 3614 28 17 on
+- 3642
+: 3661 31 13 Every
+: 3692 31 11 body
+- 3723 3730
+- 3730
+: 3756 8 8 Every
+: 3764 8 9 body 
+: 3774 5 11 have 
+: 3786 7 4 fun 
+: 3797 6 4 to
+: 3803 6 4 night
+- 3809 3826
+- 3826
+: 3852 25 13 Every
+: 3877 25 11 body
+- 3902 3915
+- 3915
+: 3941 11 18 Every
+: 3953 11 18 body 
+: 3965 5 16 have 
+: 3976 12 4 fun 
+: 3988 6 4 to
+: 3994 6 4 night
+- 4000
+: 4024 8 19 Across 
+: 4038 3 18 the 
+: 4042 12 18 na
+: 4054 12 16 tion 
+: 4071 10 16 around 
+: 4084 4 16 the 
+: 4089 11 18 world
+- 4100 4111
+- 4111
+: 4137 7 8 Every
+: 4144 7 -3 body 
+: 4156 3 -1 have 
+: 4172 5 3 fun 
+: 4178 5 5 to
+: 4183 5 4 night
+- 4188
+: 4210 2 19 A 
+: 4215 9 19 cel
+: 4224 9 19 eb
+: 4233 9 17 ra
+: 4242 9 16 tion 
+: 4256 3 12 so 
+: 4262 8 16 spread 
+: 4275 4 16 the 
+: 4280 9 18 word
+- 4289 4670
+- 4670
+* 4696 14 19 Every
+* 4711 14 18 body 
+* 4728 5 13 have 
+* 4739 6 17 fun 
+* 4756 4 16 to
+* 4760 4 18 night
+- 4764 4779
+- 4779
+: 4805 8 9 Every
+: 4813 8 9 body 
+: 4824 5 9 have 
+: 4834 11 4 fun 
+: 4848 5 4 to
+: 4853 5 4 night
+- 4858 4869
+- 4869
+: 4895 10 19 Every
+: 4905 10 18 body 
+: 4917 5 13 Wang 
+: 4928 7 16 Chung 
+: 4942 6 16 to
+: 4948 6 18 night
+- 4954 4976
+- 4976
+: 5002 6 8 Every
+: 5008 6 8 body 
+: 5015 4 11 have 
+: 5025 9 4 fun 
+: 5040 5 16 to
+: 5045 5 16 night
+- 5050 5057
+- 5057
+: 5083 10 19 Every
+: 5096 9 7 body 
+: 5109 9 11 Wang 
+: 5120 11 4 Chung 
+: 5132 5 4 to
+: 5138 9 4 night
+- 5147 5154
+- 5154
+: 5180 10 17 Every
+: 5192 11 8 body 
+: 5205 7 11 have 
+: 5216 11 4 fun 
+: 5228 5 16 to
+: 5234 6 12 night
+- 5240 5256
+- 5256
+: 5282 12 3 Every
+: 5294 12 -1 body 
+: 5307 2 18 have 
+: 5312 10 4 fun
+- 5322 5333
+- 5333
+: 5359 44 26 Every
+: 5406 26 11 body
+- 5432 5450
+- 5450
+: 5476 12 14 Every
+: 5488 12 13 one
+- 5500
+* 5517 22 21 Everybody! 
+* 5539 22 20 Everyone!
+E

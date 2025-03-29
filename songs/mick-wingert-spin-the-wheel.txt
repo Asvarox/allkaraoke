@@ -1,0 +1,221 @@
+#ARTIST:Mick Wingert
+#TITLE:Spin The Wheel
+#CREATOR:Mick Wingert
+#BPM:336
+#YEAR:2024
+#VIDEO:v=Ns0N8bcB95I
+#GENRE:Country
+#LANGUAGE:English
+#GAP:11937,857142857143
+#ALLKARAOKE_ID:mick-wingert-spin-the-wheel
+#ALLKARAOKE_LASTUPDATE:2025-03-29T00:12:07.991Z
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Mick Wingert - Spin The Wheel.mp3
+#COVER:Mick Wingert - Spin The Wheel [CO].jpg
+#BACKGROUND:Mick Wingert - Spin The Wheel [BG].jpg
+: 22 4 0 Go 
+: 30 4 3 spin 
+: 38 2 3 the 
+: 42 10 3 wheel
+: 54 4 -2 ~ 
+: 62 4 -2 and 
+: 70 4 -2 see 
+: 78 10 -2 where 
+: 90 2 -4 it 
+: 94 36 0 lands
+- 130 144
+- 144
+: 166 4 0 Join 
+: 174 4 3 in 
+: 182 2 3 the 
+: 186 10 5 cir
+: 198 4 -2 cus, 
+: 214 6 -4 stay 
+: 222 6 -2 for 
+: 230 2 -2 a 
+: 234 32 -2 dance, 
+: 270 2 -4 and
+- 272
+: 286 4 0 Right 
+: 294 4 3 when 
+: 302 2 0 the 
+: 306 12 3 war 
+: 322 4 3 qui
+: 328 2 0 ets 
+: 334 6 4 down
+: 342 10 0 ~, 
+: 358 6 5 strike 
+: 366 10 5 up 
+: 378 2 -4 the 
+: 382 36 0 band
+- 418
+: 430 4 -2 Keep 
+: 438 4 0 mar
+: 446 2 -4 ching 
+* 450 18 -4 on
+* 470 14 -2 ~
+* 486 12 0 ~, 
+: 510 6 -7 my 
+: 518 24 -4 friends
+- 542 548
+- 548
+: 570 3 -7 And 
+: 575 3 -4 do 
+: 582 2 -4 what 
+: 590 2 -4 you 
+: 594 16 -4 can
+- 610 840
+- 840
+: 862 6 3 Wait 
+: 870 6 3 'til 
+: 878 6 3 your 
+: 886 2 3 bro
+: 890 6 3 thers 
+: 898 2 3 and 
+: 902 4 0 your 
+: 910 6 5 sis
+: 918 12 -2 ters, 
+: 934 4 -2 see 
+: 942 8 -2 where 
+: 954 2 -4 you 
+: 958 40 0 been
+- 998
+: 1018 2 0 And 
+: 1022 2 3 if 
+: 1026 10 3 you 
+: 1038 6 3 loved 
+: 1046 2 0 the 
+: 1050 6 3 jour
+: 1058 4 -2 ney 
+: 1078 6 -4 more 
+: 1086 6 -2 than 
+: 1094 2 -2 the 
+: 1098 36 -2 end, 
+: 1138 2 -2 go 
+: 1142 2 -2 a
+: 1146 10 -4 head
+- 1156
+: 1158 2 0 Just 
+: 1164 4 0 turn 
+: 1170 2 3 that 
+: 1174 10 3 hour
+: 1186 6 3 glass 
+: 1194 2 0 a
+: 1198 16 4 round 
+: 1218 2 4 and 
+: 1222 16 5 count 
+: 1242 2 -4 to 
+: 1246 40 0 ten
+- 1286
+: 1294 4 -2 This 
+: 1302 4 0 ain't 
+: 1310 2 -4 good
+* 1314 18 -4 bye
+* 1334 14 -2 ~
+* 1350 10 0 ~ 
+: 1374 4 -7 no 
+: 1382 16 -4 more
+- 1398 1400
+- 1400
+F 1422 4 -4 Nah, 
+: 1438 3 -4 it 
+: 1445 2 -4 just 
+: 1453 2 -4 be
+: 1457 29 -4 gan
+- 1486 1548
+- 1548
+: 1570 6 3 March 
+: 1578 4 3 on, 
+: 1590 6 -4 my 
+: 1598 32 0 friends
+- 1630 1704
+- 1704
+: 1726 2 -4 Woah
+: 1730 6 0 -oh
+: 1738 10 3 -oh, 
+: 1750 18 5 oh
+: 1770 2 3 -o
+: 1774 72 5 -oh
+- 1846 1848
+- 1848
+: 1870 12 3 Woah
+: 1886 64 0 -oh
+- 1950 1992
+- 1992
+: 2014 2 -4 Woah
+: 2018 6 0 -oh
+: 2026 10 3 -oh, 
+: 2038 18 5 oh
+: 2058 2 3 -o
+* 2062 62 5 -oh 
+F 2126 8 8 uh
+- 2134 2136
+- 2136
+: 2158 14 3 Oh
+: 2174 62 0 -ooh
+: 2238 40 -2 -ooh
+- 2278 2288
+- 2288
+: 2310 4 3 Go 
+: 2316 6 3 and 
+: 2324 10 3 make 
+: 2338 4 3 some 
+: 2344 4 0 mis
+: 2350 6 3 takes
+: 2358 4 0 ~, 
+: 2372 2 -4 you 
+: 2376 4 -2 live 
+: 2382 8 -2 and 
+: 2394 2 -4 you 
+: 2398 48 0 learn
+- 2446
+: 2466 2 -4 And 
+: 2470 6 0 where 
+: 2478 2 3 the 
+: 2482 4 3 chips 
+: 2492 10 3 fall, 
+: 2514 2 -4 it's 
+: 2518 4 -4 not 
+: 2526 6 -2 your 
+: 2534 6 -2 con
+: 2542 32 -2 cern, 
+F 2580 4 -4 nah
+- 2584
+: 2598 4 -4 Like 
+: 2606 2 -4 the 
+: 2610 18 0 wind 
+: 2630 2 3 gon
+: 2634 2 0 na 
+: 2638 2 3 bree
+: 2642 2 0 ~
+: 2646 12 -2 ze, 
+: 2662 18 -2 fires 
+: 2682 2 -4 will 
+: 2686 40 0 burn
+- 2726
+: 2734 4 -2 Just 
+: 2742 4 0 let 
+: 2750 2 -4 the 
+: 2754 18 -4 gears
+: 2774 14 -2 ~
+: 2790 12 0 ~, 
+: 2814 6 -2 my 
+: 2822 16 -4 friend
+- 2838 2840
+- 2840
+: 2862 4 -4 Oh, 
+: 2878 4 0 just 
+: 2886 4 3 let 
+: 2894 2 0 the 
+: 2898 27 3 gears
+: 2927 22 4 ~
+: 2951 11 5 ~, 
+: 2966 6 0 my 
+: 2974 2 -2 friend
+: 2978 20 -4 ~
+- 2998 3052
+- 3052
+: 3074 4 -4 Let'em 
+: 3082 28 -4 turn
+E
