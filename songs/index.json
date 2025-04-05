@@ -13575,6 +13575,32 @@
     "local": false
   },
   {
+    "id": "big-bang-lies",
+    "title": "Lies",
+    "artist": "Big Bang",
+    "video": "2Cv3phvP8Ro",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 250,
+    "gap": 70472,
+    "year": "2007",
+    "artistOrigin": "NO",
+    "lastUpdate": "2025-04-05T00:11:57.686Z",
+    "videoGap": 21,
+    "realBpm": 125,
+    "volume": 0.79,
+    "author": "Rubn4",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bigbanglies",
+    "local": false
+  },
+  {
     "id": "big-boy-mis-ojos-lloran-por-ti",
     "title": "Mis ojos lloran por ti",
     "artist": "Big Boy",
@@ -28466,6 +28492,33 @@
     ],
     "tracksCount": 1,
     "search": "dariusruckerwagonwheel",
+    "local": false
+  },
+  {
+    "id": "daryl-hall-john-oates-i-cant-go-for-that-no-can-do",
+    "title": "I Can’t Go For That (No Can Do)",
+    "artist": "Daryl Hall & John Oates",
+    "video": "ccenFp_3kq8",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.5,
+    "gap": 57601.40684410647,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:56.986Z",
+    "genre": "Soft Rock",
+    "realBpm": 111,
+    "volume": 0.72,
+    "author": "Gollum",
+    "sourceUrl": "https://www.youtube.com/watch?v=ccenFp_3kq8",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "darylhalljohnoatesicantgoforthatnocando",
     "local": false
   },
   {
@@ -48659,6 +48712,57 @@
     "local": false
   },
   {
+    "id": "him-heartkiller",
+    "title": "Heartkiller",
+    "artist": "HIM",
+    "video": "V5L9pvwKSjE",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.57,
+    "gap": 19413.867325689338,
+    "year": "2010",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-05T00:11:57.001Z",
+    "realBpm": 154,
+    "volume": 0.74,
+    "author": "Desidiosus",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himheartkiller",
+    "local": false
+  },
+  {
+    "id": "him-the-funeral-of-hearts",
+    "title": "The Funeral Of Hearts",
+    "artist": "HIM",
+    "video": "8AH-tW8OHHs",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.25,
+    "gap": 2021.216361679225,
+    "year": "2003",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-05T00:11:56.989Z",
+    "genre": "lovemetal",
+    "realBpm": 114,
+    "volume": 0.73,
+    "author": "natalia",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himthefuneralofhearts",
+    "local": false
+  },
+  {
     "id": "him-wings-of-a-butterfly",
     "title": "Wings Of A Butterfly",
     "artist": "HIM",
@@ -53983,6 +54087,32 @@
     "local": false
   },
   {
+    "id": "john-lennon-jealous-guy",
+    "title": "Jealous Guy",
+    "artist": "John Lennon",
+    "video": "h2hGdtJvaN0",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.3,
+    "gap": 14267.38403041825,
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-05T00:11:57.668Z",
+    "genre": "Pop",
+    "realBpm": 129,
+    "volume": 0.75,
+    "sourceUrl": "https://www.youtube.com/watch?v=wADRRYNHhOA",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnlennonjealousguy",
+    "local": false
+  },
+  {
     "id": "john-lennon-stand-by-me",
     "title": "Stand By Me",
     "artist": "John Lennon",
@@ -54930,6 +55060,32 @@
     "local": false
   },
   {
+    "id": "jonathan-coulton-chiron-beta-prime",
+    "title": "Chiron Beta Prime",
+    "artist": "Jonathan Coulton",
+    "video": "vmumgxAfTwA",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 13382.142857142857,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.679Z",
+    "realBpm": 140,
+    "volume": 0.74,
+    "author": "strudel",
+    "sourceUrl": "https://www.youtube.com/watch?v=vmumgxAfTwA",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultonchironbetaprime",
+    "local": false
+  },
+  {
     "id": "jonathan-coulton-code-monkey",
     "title": "Code Monkey",
     "artist": "Jonathan Coulton",
@@ -54953,6 +55109,136 @@
     ],
     "tracksCount": 1,
     "search": "jonathancoultoncodemonkey",
+    "local": false
+  },
+  {
+    "id": "jonathan-coulton-creepy-doll",
+    "title": "Creepy Doll",
+    "artist": "Jonathan Coulton",
+    "video": "VIQNVl1oanY",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 3062.1428571428573,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.684Z",
+    "realBpm": 70,
+    "volume": 0.79,
+    "author": "strudel",
+    "sourceUrl": "https://www.youtube.com/watch?v=VIQNVl1oanY",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultoncreepydoll",
+    "local": false
+  },
+  {
+    "id": "jonathan-coulton-i-feel-fantastic",
+    "title": "I Feel Fantastic",
+    "artist": "Jonathan Coulton",
+    "video": "HaHG0-CL6fc",
+    "language": [
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 4010,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.676Z",
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "strudel",
+    "sourceUrl": "https://youtu.be/HaHG0-CL6fc",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultonifeelfantastic",
+    "local": false
+  },
+  {
+    "id": "jonathan-coulton-re-your-brains",
+    "title": "Re: Your Brains",
+    "artist": "Jonathan Coulton",
+    "video": "L4Ghlgn61Pw",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 0.625,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.674Z",
+    "realBpm": 80,
+    "volume": 0.75,
+    "author": "strudel",
+    "sourceUrl": "https://youtu.be/L4Ghlgn61Pw",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultonreyourbrains",
+    "local": false
+  },
+  {
+    "id": "jonathan-coulton-still-alive",
+    "title": "Still Alive",
+    "artist": "Jonathan Coulton",
+    "video": "yDuVYVsif_M",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": -858,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.672Z",
+    "genre": "blues",
+    "realBpm": 116,
+    "volume": 0.77,
+    "sourceUrl": "https://youtu.be/yDuVYVsif_M",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultonstillalive",
+    "local": false
+  },
+  {
+    "id": "jonathan-coulton-the-future-soon",
+    "title": "The Future Soon",
+    "artist": "Jonathan Coulton",
+    "video": "eHEZQOdAiZU",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 11380,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.671Z",
+    "realBpm": 100,
+    "volume": 0.73,
+    "author": "strudel",
+    "sourceUrl": "https://www.youtube.com/watch?v=eHEZQOdAiZU",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonathancoultonthefuturesoon",
     "local": false
   },
   {
@@ -69653,6 +69939,33 @@
     "local": false
   },
   {
+    "id": "mana-labios-compartidos",
+    "title": "Labios compartidos",
+    "artist": "Maná",
+    "video": "1IgOZaQqB58",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 323.7,
+    "gap": 14921.481481481482,
+    "year": "2006",
+    "artistOrigin": "MX",
+    "lastUpdate": "2025-04-05T00:11:57.682Z",
+    "genre": "Rock",
+    "realBpm": 162,
+    "volume": 0.75,
+    "author": "e.server0",
+    "sourceUrl": "https://www.youtube.com/watch?v=1IgOZaQqB58",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manalabioscompartidos",
+    "local": false
+  },
+  {
     "id": "mana-mariposa-traicionera",
     "title": "Mariposa traicionera",
     "artist": "Maná",
@@ -69727,6 +70040,33 @@
     ],
     "tracksCount": 1,
     "search": "manashakiramiverdad",
+    "local": false
+  },
+  {
+    "id": "mana-te-llore-un-rio",
+    "title": "Te lloré un río",
+    "artist": "Maná",
+    "video": "z4HvWIJp62U",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 235.98,
+    "gap": 29192.964658021865,
+    "year": "1992",
+    "artistOrigin": "MX",
+    "lastUpdate": "2025-04-05T00:11:57.681Z",
+    "genre": "Rock en español",
+    "realBpm": 118,
+    "volume": 0.76,
+    "author": "JaVar61",
+    "sourceUrl": "https://www.youtube.com/watch?v=z4HvWIJp62U",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manatelloreunrio",
     "local": false
   },
   {
@@ -82624,6 +82964,32 @@
     "local": false
   },
   {
+    "id": "oasis-champagne-supernova",
+    "title": "Champagne Supernova",
+    "artist": "Oasis",
+    "video": "HBO0WlNbbHg",
+    "language": [
+      "English"
+    ],
+    "bpm": 400.46,
+    "gap": 32228.145500925326,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-05T00:11:57.004Z",
+    "genre": "Rock",
+    "realBpm": 151,
+    "volume": 0.75,
+    "sourceUrl": "https://www.youtube.com/watch?v=HBO0WlNbbHg",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oasischampagnesupernova",
+    "local": false
+  },
+  {
     "id": "oasis-dont-look-back-in-anger",
     "title": "Don't Look Back in Anger",
     "artist": "Oasis",
@@ -84069,10 +84435,10 @@
       "English"
     ],
     "bpm": 383,
-    "gap": 5951.723237597911,
+    "gap": 5851.723237597911,
     "year": "2013",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-12-31T00:11:37.445Z",
+    "lastUpdate": "2025-04-03T19:09:08.920Z",
     "realBpm": 96,
     "previewStart": 71,
     "previewEnd": 101,
@@ -84110,6 +84476,31 @@
     ],
     "tracksCount": 1,
     "search": "onepiecejuntos",
+    "local": false
+  },
+  {
+    "id": "one-republic-apologize",
+    "title": "Apologize",
+    "artist": "One Republic",
+    "video": "F0Af9MZzrLc",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 15020,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.008Z",
+    "realBpm": 118,
+    "volume": 0.76,
+    "sourceUrl": "https://www.youtube.com/watch?v=F0Af9MZzrLc",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onerepublicapologize",
     "local": false
   },
   {
@@ -94192,6 +94583,31 @@
     "local": false
   },
   {
+    "id": "rookiez-is-punkd-in-my-world",
+    "title": "In My World",
+    "artist": "ROOKiEZ is PUNK'D",
+    "video": "vSUsiPvJv2Q",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 386.59,
+    "gap": 14383.179285547996,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.602Z",
+    "realBpm": 190,
+    "volume": 1,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rookiezispunkdinmyworld",
+    "local": false
+  },
+  {
     "id": "rosa-linn-snap",
     "title": "Snap",
     "artist": "Rosa Linn",
@@ -97445,6 +97861,32 @@
     "local": false
   },
   {
+    "id": "selena-no-me-queda-mas",
+    "title": "No me queda más",
+    "artist": "Selena",
+    "video": "FCi-Xp2TVoQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 375.1,
+    "gap": 75682.65957446808,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.680Z",
+    "videoGap": 56,
+    "realBpm": 95,
+    "volume": 0.73,
+    "sourceUrl": "https://www.youtube.com/watch?v=FCi-Xp2TVoQ",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenanomequedamas",
+    "local": false
+  },
+  {
     "id": "sergio-dalma-bailar-pegados",
     "title": "Bailar pegados",
     "artist": "Sergio Dalma",
@@ -98665,6 +99107,33 @@
     "local": false
   },
   {
+    "id": "shania-twain-youre-still-the-one",
+    "title": "You’re Still The One",
+    "artist": "Shania Twain",
+    "video": "QiHMkiPGlv4",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 3242.5373134328356,
+    "year": "1997",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-04-05T00:11:57.669Z",
+    "genre": "Country Pop",
+    "realBpm": 67,
+    "volume": 0.75,
+    "author": "channa",
+    "sourceUrl": "https://www.youtube.com/watch?v=QiHMkiPGlv4",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shaniatwainyourestilltheone",
+    "local": false
+  },
+  {
     "id": "shawn-mendes-camila-cabello-i-know-what-you-did-last-summer",
     "title": "I Know What You Did Last Summer",
     "artist": "Shawn Mendes & Camila Cabello",
@@ -99530,6 +99999,55 @@
     "local": false
   },
   {
+    "id": "sid-monochrome-no-kiss",
+    "title": "Monochrome no kiss",
+    "artist": "SID",
+    "video": "WksPtWaqUdQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300,
+    "gap": 57760,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.601Z",
+    "genre": "Anime",
+    "realBpm": 100,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidmonochromenokiss",
+    "local": false
+  },
+  {
+    "id": "sid-ranbu-no-melody",
+    "title": "Ranbu no Melody",
+    "artist": "Sid",
+    "video": "5emM3JGI5JA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 383.4,
+    "gap": 71.02190923317676,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.601Z",
+    "realBpm": 96,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidranbunomelody",
+    "local": false
+  },
+  {
     "id": "sid-uso",
     "title": "Uso",
     "artist": "Sid",
@@ -99554,6 +100072,32 @@
     ],
     "tracksCount": 1,
     "search": "siduso",
+    "local": false
+  },
+  {
+    "id": "sid-vip",
+    "title": "V.I.P",
+    "artist": "SID",
+    "video": "BILob75BsO4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 370.58,
+    "gap": 32.61455016460684,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.600Z",
+    "genre": "Anime",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sidvip",
     "local": false
   },
   {
@@ -102236,6 +102780,32 @@
     "local": false
   },
   {
+    "id": "spyair-sakura-mitsu-tsuki",
+    "title": "Sakura Mitsu Tsuki",
+    "artist": "SPYAIR",
+    "video": "IcZRX8oc-8Q",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 357.96,
+    "gap": 11668.30103922226,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.473Z",
+    "genre": "Anime",
+    "realBpm": 179,
+    "volume": 1,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "spyairsakuramitsutsuki",
+    "local": false
+  },
+  {
     "id": "srbuk-walking-out",
     "title": "Walking Out",
     "artist": "Srbuk",
@@ -102479,6 +103049,57 @@
     ],
     "tracksCount": 1,
     "search": "staindfade",
+    "local": false
+  },
+  {
+    "id": "staind-its-been-awhile",
+    "title": "It’s Been Awhile",
+    "artist": "Staind",
+    "video": "araU0fZj6oQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.2,
+    "gap": 51985.23484201537,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-05T00:11:57.006Z",
+    "realBpm": 117,
+    "volume": 0.73,
+    "author": "IC",
+    "sourceUrl": "https://youtu.be/araU0fZj6oQ",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stainditsbeenawhile",
+    "local": false
+  },
+  {
+    "id": "starish-maji-love-1000",
+    "title": "Maji Love 1000%",
+    "artist": "STARISH",
+    "video": "mwq9LRdXi3w",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 258.35,
+    "gap": 35509.96690536095,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.344Z",
+    "genre": "Anime",
+    "realBpm": 129,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "starishmajilove1000",
     "local": false
   },
   {
@@ -113999,6 +114620,56 @@
     "local": false
   },
   {
+    "id": "tommy-heavenly6-papermoon",
+    "title": "PAPERMOON",
+    "artist": "Tommy heavenly6",
+    "video": "-eYK3YP524A",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 328.04,
+    "gap": 13227.025118887941,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.216Z",
+    "genre": "Anime",
+    "realBpm": 164,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tommyheavenly6papermoon",
+    "local": false
+  },
+  {
+    "id": "tommy-heavenly6-pray",
+    "title": "Pray",
+    "artist": "Tommy heavenly6",
+    "video": "OQYcEEkG_V0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 355.83,
+    "gap": 1341.280920664362,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.082Z",
+    "genre": "Anime",
+    "realBpm": 178,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tommyheavenly6pray",
+    "local": false
+  },
+  {
     "id": "tomofumi-tanizawa-kimi-ni-todoke",
     "title": "Kimi ni Todoke",
     "artist": "Tomofumi Tanizawa",
@@ -114025,6 +114696,57 @@
     ],
     "tracksCount": 1,
     "search": "tomofumitanizawakiminitodoke",
+    "local": false
+  },
+  {
+    "id": "tomofumi-tanizawa-sawakaze",
+    "title": "Sawakaze",
+    "artist": "Tomofumi Tanizawa",
+    "video": "sjJzR6ghQ2c",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 283.69,
+    "gap": 80.37921675067855,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:58.081Z",
+    "realBpm": 141,
+    "volume": 1,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomofumitanizawasawakaze",
+    "local": false
+  },
+  {
+    "id": "tomorrow-x-together-everlasting-shine",
+    "title": "Everlasting shine",
+    "artist": "Tomorrow X Together",
+    "video": "uFDkYBKUc3Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 253.84,
+    "gap": 156.2612669398046,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2025-04-05T00:11:57.954Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomorrowxtogethereverlastingshine",
     "local": false
   },
   {
@@ -114819,6 +115541,32 @@
     ],
     "tracksCount": 1,
     "search": "tvxqmirotic",
+    "local": false
+  },
+  {
+    "id": "tvxq-share-the-world",
+    "title": "Share The World",
+    "artist": "Tvxq",
+    "video": "i4EjetJBdWE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 240.08,
+    "gap": 5327.333222259247,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2025-04-05T00:11:58.218Z",
+    "genre": "Anime",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tvxqsharetheworld",
     "local": false
   },
   {
@@ -116344,6 +117092,31 @@
     ],
     "tracksCount": 1,
     "search": "vjinbtsitsdefinitelyyou",
+    "local": false
+  },
+  {
+    "id": "v6-break-out",
+    "title": "Break Out!",
+    "artist": "V6",
+    "video": "tkFJw3XVp9A",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 320.02,
+    "gap": 4562.686519592526,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-05T00:11:57.818Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "v6breakout",
     "local": false
   },
   {
@@ -118271,6 +119044,33 @@
     "local": false
   },
   {
+    "id": "wham-everything-she-wants",
+    "title": "Everything She Wants",
+    "artist": "Wham!",
+    "video": "Yf_Lwe6p-Cg",
+    "language": [
+      "English"
+    ],
+    "bpm": 229.9,
+    "gap": 39821.31361461505,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-05T00:11:56.995Z",
+    "genre": "Pop",
+    "realBpm": 115,
+    "volume": 0.74,
+    "author": "anthem_1",
+    "sourceUrl": "https://www.youtube.com/watch?v=Yf_Lwe6p-Cg",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whameverythingshewants",
+    "local": false
+  },
+  {
     "id": "wham-last-christmas",
     "title": "Last Christmas",
     "artist": "Wham!",
@@ -120161,6 +120961,30 @@
     ],
     "tracksCount": 1,
     "search": "yukoshinzouwosasageyo",
+    "local": false
+  },
+  {
+    "id": "yuzu-feat-hyadain-hyouri-ittai",
+    "title": "Hyouri Ittai",
+    "artist": "YUZU feat. HYADAIN",
+    "video": "1pJ3vXOZgmE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 311.35,
+    "gap": 12010.276858840532,
+    "year": "2013",
+    "lastUpdate": "2025-04-05T00:11:57.686Z",
+    "realBpm": 71,
+    "volume": 0.8,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yuzufeathyadainhyouriittai",
     "local": false
   },
   {
