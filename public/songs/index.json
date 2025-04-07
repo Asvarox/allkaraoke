@@ -43410,6 +43410,34 @@
     "local": false
   },
   {
+    "id": "gabry-ponte-tutta-litalia",
+    "title": "Tutta l’Italia",
+    "artist": "Gabry Ponte",
+    "video": "iUC9eebtpvI",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 384,
+    "gap": 2454.375,
+    "year": "2025",
+    "artistOrigin": "SM",
+    "lastUpdate": "2025-04-07T00:12:41.725Z",
+    "genre": "Electronic",
+    "realBpm": 128,
+    "volume": 0.75,
+    "author": "Tuupertunut",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30123",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gabrypontetuttalitalia",
+    "local": false
+  },
+  {
     "id": "gandalf-sax-guy-10-hours-hd",
     "title": "Sax Guy 10 Hours HD",
     "artist": "Gandalf",
@@ -77077,6 +77105,35 @@
     "local": false
   },
   {
+    "id": "miriana-conte-kant",
+    "title": "Kant",
+    "artist": "Miriana Conte",
+    "video": "kO_efvmsT4w",
+    "language": [
+      "English"
+    ],
+    "bpm": 246.28,
+    "gap": 7253.499431541335,
+    "year": "2025",
+    "artistOrigin": "MT",
+    "lastUpdate": "2025-04-07T00:12:41.728Z",
+    "edition": "ESC 2025",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.5,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30080",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mirianacontekant",
+    "local": false
+  },
+  {
     "id": "mitski-a-pearl",
     "title": "A Pearl",
     "artist": "Mitski",
@@ -91821,6 +91878,35 @@
     "local": false
   },
   {
+    "id": "red-sebastian-strobe-lights",
+    "title": "Strobe Lights",
+    "artist": "Red Sebastian",
+    "video": "ScupiVTosHU",
+    "language": [
+      "English"
+    ],
+    "bpm": 290.2,
+    "gap": 6153.918676774638,
+    "year": "2025",
+    "artistOrigin": "BE",
+    "lastUpdate": "2025-04-07T00:12:41.730Z",
+    "edition": "ESC 2025",
+    "genre": "Electronic",
+    "realBpm": 145,
+    "volume": 0.75,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30079",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "redsebastianstrobelights",
+    "local": false
+  },
+  {
     "id": "red-velvet-peek-a-boo",
     "title": "Peek-A-Boo",
     "artist": "Red Velvet",
@@ -105779,6 +105865,35 @@
     "local": false
   },
   {
+    "id": "tali-fighter",
+    "title": "Fighter",
+    "artist": "TALI",
+    "video": "DJf04cdgk70",
+    "language": [
+      "French",
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 4893.157894736842,
+    "year": "2024",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2025-04-07T00:12:40.875Z",
+    "edition": "ESC 2024",
+    "realBpm": 94,
+    "volume": 0.77,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29340",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "talifighter",
+    "local": false
+  },
+  {
     "id": "talking-heads-psycho-killer",
     "title": "Psycho Killer",
     "artist": "Talking Heads",
@@ -106122,6 +106237,35 @@
     ],
     "tracksCount": 1,
     "search": "tatuallthethingsshesaid",
+    "local": false
+  },
+  {
+    "id": "tautumeitas-bur-man-laimi",
+    "title": "Bur Man Laimi",
+    "artist": "Tautumeitas",
+    "video": "RKw0OCgPV3s",
+    "language": [
+      "Latvian"
+    ],
+    "bpm": 279.77,
+    "gap": 3435.3060728455516,
+    "year": "2025",
+    "artistOrigin": "LV",
+    "lastUpdate": "2025-04-07T00:12:41.585Z",
+    "edition": "ESC 2025",
+    "genre": "Folk",
+    "realBpm": 140,
+    "volume": 0.81,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30391",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tautumeitasburmanlaimi",
     "local": false
   },
   {
