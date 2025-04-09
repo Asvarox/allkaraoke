@@ -355,6 +355,32 @@
     "local": false
   },
   {
+    "id": "3-nen-e-gumi-utatan-bye-bye-yesterday",
+    "title": "Bye Bye Yesterday",
+    "artist": "3-nen E-gumi Utatan",
+    "video": "q8L4VhyfVxQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360.04,
+    "gap": 4672.1110987668035,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:38.794Z",
+    "genre": "Anime",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3nenegumiutatanbyebyeyesterday",
+    "local": false
+  },
+  {
     "id": "3-nen-e-gumi-utatan-jiriki-hongan-revolution",
     "title": "Jiriki Hongan Revolution",
     "artist": "3-nen E-Gumi Utatan",
@@ -5896,6 +5922,31 @@
     "local": false
   },
   {
+    "id": "amazarashi-kisetsu-wa-tsugitsugi-shindeiku",
+    "title": "Kisetsu wa Tsugitsugi Shindeiku",
+    "artist": "amazarashi",
+    "video": "MAw59zSbGqs",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 361.98,
+    "gap": 9845.469915464942,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:38.642Z",
+    "realBpm": 181,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "amazarashikisetsuwatsugitsugishindeiku",
+    "local": false
+  },
+  {
     "id": "america-a-horse-with-no-name",
     "title": "A Horse With No Name",
     "artist": "America",
@@ -6797,6 +6848,32 @@
     ],
     "tracksCount": 1,
     "search": "anittaboysdontcry",
+    "local": false
+  },
+  {
+    "id": "anly-kara-no-kokoro",
+    "title": "Kara no Kokoro",
+    "artist": "Anly",
+    "video": "xQKlfIeqTGM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 440.08,
+    "gap": 63.54335575349933,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:38.471Z",
+    "genre": "Anime",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anlykaranokokoro",
     "local": false
   },
   {
@@ -19950,6 +20027,30 @@
     "local": false
   },
   {
+    "id": "bryan-adams-feat-melanie-c-when-youre-gone",
+    "title": "When You’re Gone",
+    "artist": "Bryan Adams feat. Melanie C.",
+    "video": "_W2jONIjrM0",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.8,
+    "gap": 6095.271867612293,
+    "year": "1998",
+    "lastUpdate": "2025-04-09T00:12:49.604Z",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "michas17j, daggeg",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamsfeatmelaniecwhenyouregone",
+    "local": false
+  },
+  {
     "id": "bryan-adams-have-you-ever-really-loved-a-woman",
     "title": "Have You Ever Really Loved A Woman?",
     "artist": "Bryan Adams",
@@ -25840,6 +25941,32 @@
     "local": false
   },
   {
+    "id": "coldplay-violet-hill",
+    "title": "Violet Hill",
+    "artist": "Coldplay",
+    "video": "IakDItZ7f7Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.2,
+    "gap": 35633.806706114396,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-09T00:12:49.602Z",
+    "genre": "Pop",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "coldplayviolethill",
+    "local": false
+  },
+  {
     "id": "coldplay-viva-la-vida",
     "title": "Viva la vida",
     "artist": "Coldplay",
@@ -26024,6 +26151,32 @@
     ],
     "tracksCount": 1,
     "search": "conchitawurstriselikeaphoenix",
+    "local": false
+  },
+  {
+    "id": "concrete-blonde-joey",
+    "title": "Joey",
+    "artist": "Concrete Blonde",
+    "video": "OdpTcvSn8HQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.46,
+    "gap": 7739.3034616356435,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-09T00:12:49.446Z",
+    "genre": "Rock",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Scudder",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "concreteblondejoey",
     "local": false
   },
   {
@@ -26216,6 +26369,85 @@
     ],
     "tracksCount": 1,
     "search": "countingcrowsaccidentallyinlove",
+    "local": false
+  },
+  {
+    "id": "counting-crows-mr-jones",
+    "title": "Mr. Jones",
+    "artist": "Counting Crows",
+    "video": "-oqAU5VxFWs",
+    "language": [
+      "English"
+    ],
+    "bpm": 282.7,
+    "gap": 4102.576882290562,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-09T00:12:38.798Z",
+    "genre": "Alternative Rock",
+    "realBpm": 142,
+    "volume": 0.72,
+    "author": "Fence",
+    "sourceUrl": "https://youtu.be/-oqAU5VxFWs",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "countingcrowsmrjones",
+    "local": false
+  },
+  {
+    "id": "craig-david-fill-me-in",
+    "title": "Fill Me In",
+    "artist": "Craig David",
+    "video": "3imO7PFU5cI",
+    "language": [
+      "English"
+    ],
+    "bpm": 265,
+    "gap": 49321.1320754717,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-09T00:12:49.256Z",
+    "genre": "R&B",
+    "realBpm": 132,
+    "volume": 0.82,
+    "author": "ultrastarsongs, DoubleDee",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "craigdavidfillmein",
+    "local": false
+  },
+  {
+    "id": "craig-david-walking-away",
+    "title": "Walking Away",
+    "artist": "Craig David",
+    "video": "Dbb7xeZGR-U",
+    "language": [
+      "English"
+    ],
+    "bpm": 345.45,
+    "gap": 35381.302648719065,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-09T00:12:49.443Z",
+    "genre": "R&B",
+    "realBpm": 86,
+    "volume": 0.82,
+    "author": "ultrastar-es",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "craigdavidwalkingaway",
     "local": false
   },
   {
@@ -28058,6 +28290,33 @@
     ],
     "tracksCount": 1,
     "search": "daisukeishiwatarismellofthegame",
+    "local": false
+  },
+  {
+    "id": "daisy-x-daisy-evidence",
+    "title": "Evidence",
+    "artist": "Daisy x Daisy",
+    "video": "qMaNNvkfaw0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 320.63,
+    "gap": 20847.55918036366,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:38.312Z",
+    "genre": "Anime",
+    "videoGap": 7,
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daisyxdaisyevidence",
     "local": false
   },
   {
@@ -34342,6 +34601,31 @@
     "local": false
   },
   {
+    "id": "do-as-infinity-mysterious-magic",
+    "title": "Mysterious Magic",
+    "artist": "Do As Infinity",
+    "video": "qpvkFgW109I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 303.24,
+    "gap": 7241.684606252473,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:38.153Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "doasinfinitymysteriousmagic",
+    "local": false
+  },
+  {
     "id": "doda-dzaga",
     "title": "Dzaga",
     "artist": "Doda",
@@ -36874,6 +37158,31 @@
     "local": false
   },
   {
+    "id": "edge-of-life-believe-in-myself",
+    "title": "Believe in Myself",
+    "artist": "EDGE of LIFE",
+    "video": "MkBVsAYUc-g",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360,
+    "gap": 488,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.981Z",
+    "realBpm": 180,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edgeoflifebelieveinmyself",
+    "local": false
+  },
+  {
     "id": "edmund-fetting-czterej-pancerni",
     "title": "Czterej Pancerni",
     "artist": "Edmund Fetting",
@@ -38397,6 +38706,32 @@
     ],
     "tracksCount": 1,
     "search": "emiliarodriguezlupicaheaven",
+    "local": false
+  },
+  {
+    "id": "emilie-autumn-the-art-of-suicide",
+    "title": "The Art Of Suicide",
+    "artist": "Emilie Autumn",
+    "video": "eaNYNkrlll4",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 17846.024096385543,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-09T00:12:39.294Z",
+    "genre": "Electronic",
+    "realBpm": 166,
+    "volume": 0.75,
+    "author": "Zevac",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "emilieautumntheartofsuicide",
     "local": false
   },
   {
@@ -42063,6 +42398,32 @@
     "local": false
   },
   {
+    "id": "flow-steppin-out",
+    "title": "Steppin' Out",
+    "artist": "FLOW",
+    "video": "VquGtEYZ-sc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 279.42,
+    "gap": 17083.21555603171,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.981Z",
+    "genre": "Anime",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "flowsteppinout",
+    "local": false
+  },
+  {
     "id": "flow-world-end",
     "title": "World End",
     "artist": "FLOW",
@@ -42086,6 +42447,32 @@
     ],
     "tracksCount": 1,
     "search": "flowworldend",
+    "local": false
+  },
+  {
+    "id": "flumpool-yoru-wa-nemureru-kai",
+    "title": "Yoru wa Nemureru kai?",
+    "artist": "flumpool",
+    "video": "7BmxmRnKnZg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260.02,
+    "gap": 12400.30620721483,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.832Z",
+    "genre": "Anime",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "flumpoolyoruwanemurerukai",
     "local": false
   },
   {
@@ -43226,6 +43613,32 @@
     "local": false
   },
   {
+    "id": "fripside-two-souls-toward-the-truth",
+    "title": "Two souls -toward the truth-",
+    "artist": "FripSide",
+    "video": "V0sMh-TH50o",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 330,
+    "gap": 17860,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.831Z",
+    "genre": "Anime",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fripsidetwosoulstowardthetruth",
+    "local": false
+  },
+  {
     "id": "fugees-killing-me-softly-with-his-song",
     "title": "Killing Me Softly (With His Song)",
     "artist": "Fugees",
@@ -43306,6 +43719,58 @@
     ],
     "tracksCount": 1,
     "search": "funsomenights",
+    "local": false
+  },
+  {
+    "id": "funkist-ft",
+    "title": "Ft",
+    "artist": "Funkist",
+    "video": "sgWnq-WHB_4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 397.09,
+    "gap": 31207.854894356442,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.831Z",
+    "genre": "Anime",
+    "videoGap": 13,
+    "realBpm": 99,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "funkistft",
+    "local": false
+  },
+  {
+    "id": "funkist-snow-fairy",
+    "title": "Snow fairy",
+    "artist": "Funkist",
+    "video": "9jvVBVcZ0-Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 212,
+    "gap": 383.433962264151,
+    "year": "2009",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.681Z",
+    "genre": "Anime",
+    "realBpm": 106,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "funkistsnowfairy",
     "local": false
   },
   {
@@ -44709,6 +45174,32 @@
     ],
     "tracksCount": 1,
     "search": "girlsgenerationecho",
+    "local": false
+  },
+  {
+    "id": "girls-generation-oh",
+    "title": "Oh!",
+    "artist": "Girls' Generation",
+    "video": "TGbwL8kSpEk",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 288.02,
+    "gap": 12172.485382959516,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2025-04-09T00:12:38.796Z",
+    "genre": "Kpop",
+    "realBpm": 144,
+    "volume": 0.81,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "girlsgenerationoh",
     "local": false
   },
   {
@@ -47514,6 +48005,32 @@
     "local": false
   },
   {
+    "id": "harry-styles-adore-you",
+    "title": "Adore You",
+    "artist": "Harry Styles",
+    "video": "VF-r5TtlT9w",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.56,
+    "gap": 486.54226346580583,
+    "year": "2019",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-09T00:12:49.765Z",
+    "genre": "Pop",
+    "realBpm": 99,
+    "volume": 0.75,
+    "author": "AkaMisaki",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "harrystylesadoreyou",
+    "local": false
+  },
+  {
     "id": "harry-styles-as-it-was",
     "title": "As It Was",
     "artist": "Harry Styles",
@@ -47827,6 +48344,31 @@
     ],
     "tracksCount": 1,
     "search": "heartalone",
+    "local": false
+  },
+  {
+    "id": "hearts-grow-yura-yura",
+    "title": "Yura yura",
+    "artist": "Hearts Grow",
+    "video": "-m8kR0FQ7Wk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300.98,
+    "gap": 301.2560303010167,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.524Z",
+    "genre": "Anime",
+    "realBpm": 76,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "heartsgrowyurayura",
     "local": false
   },
   {
@@ -48174,6 +48716,32 @@
     ],
     "tracksCount": 1,
     "search": "herculestanciertocomotu",
+    "local": false
+  },
+  {
+    "id": "hero-tenohira",
+    "title": "Tenohira",
+    "artist": "HERO",
+    "video": "R5sa0Yl8RVU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 207.02,
+    "gap": 10036.605255530867,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.358Z",
+    "genre": "Anime",
+    "realBpm": 207,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "herotenohira",
     "local": false
   },
   {
@@ -48762,6 +49330,83 @@
     ],
     "tracksCount": 1,
     "search": "himheartkiller",
+    "local": false
+  },
+  {
+    "id": "him-join-me",
+    "title": "Join Me",
+    "artist": "HIM",
+    "video": "W5J8IgoUdjo",
+    "language": [
+      "English"
+    ],
+    "bpm": 227.64,
+    "gap": 7958.162872461985,
+    "year": "1999",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-09T00:12:39.290Z",
+    "genre": "Gothic Metal",
+    "realBpm": 114,
+    "volume": 0.76,
+    "author": "HIM",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himjoinme",
+    "local": false
+  },
+  {
+    "id": "him-killing-loneliness",
+    "title": "Killing Loneliness",
+    "artist": "HIM",
+    "video": "PWaZ9yg_LQ4",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.36,
+    "gap": 22390.3316598052,
+    "year": "2005",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-09T00:12:39.289Z",
+    "genre": "Rock Alternativo",
+    "realBpm": 134,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himkillingloneliness",
+    "local": false
+  },
+  {
+    "id": "him-right-here-in-my-arms",
+    "title": "Right Here in My Arms",
+    "artist": "HIM",
+    "video": "-jllKSiEufM",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 19007.384615384617,
+    "year": "2000",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-09T00:12:39.288Z",
+    "genre": "Rock",
+    "realBpm": 156,
+    "volume": 0.76,
+    "author": "HIM",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "himrighthereinmyarms",
     "local": false
   },
   {
@@ -49951,6 +50596,32 @@
     "local": false
   },
   {
+    "id": "idoling-sow-sense-of-wonder",
+    "title": "S.O.W. ~Sense of Wonder~",
+    "artist": "Idoling!!!",
+    "video": "F9OOd9wNevg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 340.23,
+    "gap": 63.20959351027244,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.198Z",
+    "genre": "Anime",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "idolingsowsenseofwonder",
+    "local": false
+  },
+  {
     "id": "iggy-azalea-feat-charli-xcx-fancy",
     "title": "Fancy",
     "artist": "Iggy Azalea feat. Charli XCX",
@@ -50082,6 +50753,32 @@
     ],
     "tracksCount": 1,
     "search": "ikimonogakaribluebird",
+    "local": false
+  },
+  {
+    "id": "ikimono-gakari-hotaru-no-hikari",
+    "title": "Hotaru no Hikari",
+    "artist": "Ikimono Gakari",
+    "video": "H3aqR_n3sM4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 294.06,
+    "gap": 50.92001632319938,
+    "year": "2009",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:37.042Z",
+    "genre": "Anime",
+    "realBpm": 149,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ikimonogakarihotarunohikari",
     "local": false
   },
   {
@@ -50953,6 +51650,31 @@
     ],
     "tracksCount": 1,
     "search": "innasunisup",
+    "local": false
+  },
+  {
+    "id": "inoue-joe-closer",
+    "title": "CLOSER",
+    "artist": "Inoue Joe",
+    "video": "kmL3EuiiWXM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 332.02,
+    "gap": 1493.08397084513,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:27.297Z",
+    "genre": "Anime",
+    "realBpm": 166,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "inouejoecloser",
     "local": false
   },
   {
@@ -52076,6 +52798,31 @@
     ],
     "tracksCount": 1,
     "search": "jamesnewtonhowardfeatjenniferlawrencethehangingtree",
+    "local": false
+  },
+  {
+    "id": "jamil-the-rock-city-boy",
+    "title": "The Rock City Boy",
+    "artist": "Jamil",
+    "video": "3wnfkrsmkQQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 319.09,
+    "gap": 4832.8177003353285,
+    "year": "2011",
+    "lastUpdate": "2025-04-09T00:12:27.094Z",
+    "genre": "Anime",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jamiltherockcityboy",
     "local": false
   },
   {
@@ -57339,6 +58086,32 @@
     "local": false
   },
   {
+    "id": "kana-boon-silhouette",
+    "title": "Silhouette",
+    "artist": "KANA-BOON",
+    "video": "zVgKnfN9i34",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 366.04,
+    "gap": 12916.500928860234,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:26.929Z",
+    "genre": "Anime",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kanaboonsilhouette",
+    "local": false
+  },
+  {
     "id": "kana-hanazawa-renai-circulation",
     "title": "Renai Circulation",
     "artist": "Kana Hanazawa",
@@ -58645,6 +59418,32 @@
     ],
     "tracksCount": 1,
     "search": "katyperrywideawake",
+    "local": false
+  },
+  {
+    "id": "kavka-shishido-ashita-o-narase",
+    "title": "Ashita o Narase",
+    "artist": "Kavka Shishido",
+    "video": "e-7uuV7B7mo",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 334.08,
+    "gap": 10507.212643678162,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:26.769Z",
+    "genre": "Anime",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kavkashishidoashitaonarase",
     "local": false
   },
   {
@@ -63318,6 +64117,32 @@
     "local": false
   },
   {
+    "id": "lama-spell",
+    "title": "Spell",
+    "artist": "Lama",
+    "video": "msLpNlQYaKk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 294.02,
+    "gap": 17852.661247534183,
+    "year": "2011",
+    "artistOrigin": "FR",
+    "lastUpdate": "2025-04-09T00:12:26.576Z",
+    "genre": "Anime",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lamaspell",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-24",
     "title": "24",
     "artist": "Lana Del Rey",
@@ -66832,6 +67657,33 @@
     "local": false
   },
   {
+    "id": "long-shot-party-distance",
+    "title": "Distance",
+    "artist": "LONG SHOT PARTY",
+    "video": "r6EPMvIhtyA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 399.4,
+    "gap": 31.77466199298948,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:26.402Z",
+    "genre": "Anime",
+    "realBpm": 99,
+    "previewStart": 61,
+    "previewEnd": 90,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "longshotpartydistance",
+    "local": false
+  },
+  {
     "id": "lord-of-the-lost-blood-glitter",
     "title": "Blood & Glitter",
     "artist": "Lord Of The Lost",
@@ -69291,6 +70143,32 @@
     ],
     "tracksCount": 1,
     "search": "magicaffairomeniii",
+    "local": false
+  },
+  {
+    "id": "magic-party-egao-no-mahou",
+    "title": "Egao No Mahou",
+    "artist": "Magic Party",
+    "video": "KQNBhCHL2TY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 232.67,
+    "gap": 58.71706709072936,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:26.240Z",
+    "genre": "Anime",
+    "realBpm": 175,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "magicpartyegaonomahou",
     "local": false
   },
   {
@@ -72206,6 +73084,30 @@
     "local": false
   },
   {
+    "id": "mariya-nishiuchi-dont-let-me-down",
+    "title": "Don't let me down",
+    "artist": "Mariya Nishiuchi",
+    "video": "drBDsb6qwWI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 264.12,
+    "gap": 16069.737392094503,
+    "year": "2015",
+    "lastUpdate": "2025-04-09T00:12:26.075Z",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariyanishiuchidontletmedown",
+    "local": false
+  },
+  {
     "id": "mark-forster-feat-sido-au-revoir",
     "title": "Au revoir",
     "artist": "Mark Forster feat. Sido",
@@ -73120,6 +74022,32 @@
     ],
     "tracksCount": 1,
     "search": "marylarodowiczniechzyjebal",
+    "local": false
+  },
+  {
+    "id": "masaaki-endoh-vital",
+    "title": "Vital",
+    "artist": "Masaaki Endoh",
+    "video": "CAWl-zvIKXg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 399.96,
+    "gap": 11841.398739873988,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:25.913Z",
+    "genre": "Anime",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "masaakiendohvital",
     "local": false
   },
   {
@@ -74164,6 +75092,33 @@
     "local": false
   },
   {
+    "id": "melendi-volantes-pa-la-falda-mi-gitana",
+    "title": "Volantes pa la falda mi gitana",
+    "artist": "Melendi",
+    "video": "GyubShHJahg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 287.98,
+    "gap": 4494.347940829224,
+    "year": "2006",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-04-09T00:12:49.070Z",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Melendi&cancion=Volantes%20pa%20la%20falda%20mi%20gitana",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melendivolantespalafaldamigitana",
+    "local": false
+  },
+  {
     "id": "melim-ouvi-dizer",
     "title": "Ouvi Dizer",
     "artist": "Melim",
@@ -74928,6 +75883,31 @@
     ],
     "tracksCount": 1,
     "search": "miapaperplanes",
+    "local": false
+  },
+  {
+    "id": "michael-andrews-feat-gary-jules-mad-world",
+    "title": "Mad World",
+    "artist": "Michael Andrews feat. Gary Jules",
+    "video": "elaaKc2TC8s",
+    "language": [
+      "English"
+    ],
+    "bpm": 371.24,
+    "gap": 16899.871781058075,
+    "year": "2001",
+    "lastUpdate": "2025-04-09T00:12:39.141Z",
+    "realBpm": 174,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://youtu.be/elaaKc2TC8s",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaelandrewsfeatgaryjulesmadworld",
     "local": false
   },
   {
@@ -75980,6 +76960,31 @@
     ],
     "tracksCount": 1,
     "search": "mikalollipop",
+    "local": false
+  },
+  {
+    "id": "mika-nakashima-x-hyde-kiss-of-death",
+    "title": "KISS OF DEATH",
+    "artist": "Mika Nakashima x Hyde",
+    "video": "A4kLcDWBYcQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 488.04,
+    "gap": 65.62035898696831,
+    "year": "2018",
+    "lastUpdate": "2025-04-09T00:12:25.750Z",
+    "genre": "Anime",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mikanakashimaxhydekissofdeath",
     "local": false
   },
   {
@@ -77267,6 +78272,32 @@
     "local": false
   },
   {
+    "id": "mob-choir-99",
+    "title": "99",
+    "artist": "MOB CHOIR",
+    "video": "Bw-5Lka7gPE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 380.24,
+    "gap": 1671.7807700399749,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:25.578Z",
+    "genre": "Anime",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mobchoir99",
+    "local": false
+  },
+  {
     "id": "mocedades-eres-tu",
     "title": "Eres tú",
     "artist": "Mocedades",
@@ -77891,6 +78922,32 @@
     ],
     "tracksCount": 1,
     "search": "motleycruekickstartmyheart",
+    "local": false
+  },
+  {
+    "id": "motohiro-hata-toumei-datta-sekai",
+    "title": "Toumei Datta Sekai",
+    "artist": "Motohiro Hata",
+    "video": "06EjEq_7RJY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 336,
+    "gap": 435.8571428571428,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:25.398Z",
+    "genre": "Jrock",
+    "realBpm": 168,
+    "volume": 1,
+    "author": "memo",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "motohirohatatoumeidattasekai",
     "local": false
   },
   {
@@ -79801,6 +80858,31 @@
     ],
     "tracksCount": 1,
     "search": "nathanevanswellerman",
+    "local": false
+  },
+  {
+    "id": "natsuko-asou-perfect-area-complete",
+    "title": "Perfect Area Complete",
+    "artist": "Natsuko Asou",
+    "video": "TrZFso-yip8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 366,
+    "gap": 4576.393442622951,
+    "year": "2010",
+    "lastUpdate": "2025-04-09T00:12:25.230Z",
+    "genre": "Anime",
+    "realBpm": 183,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "natsukoasouperfectareacomplete",
     "local": false
   },
   {
@@ -81743,6 +82825,32 @@
     "local": false
   },
   {
+    "id": "nico-touches-the-walls-diver",
+    "title": "Diver",
+    "artist": "NICO Touches the Walls",
+    "video": "P1yJ51DH-18",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 298.14,
+    "gap": 5881.761320185148,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:25.059Z",
+    "genre": "Anime",
+    "realBpm": 149,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nicotouchesthewallsdiver",
+    "local": false
+  },
+  {
     "id": "nico-touches-the-walls-hologram",
     "title": "Hologram",
     "artist": "NICO Touches the Walls",
@@ -82858,6 +83966,31 @@
     ],
     "tracksCount": 1,
     "search": "noemisonosoloparole",
+    "local": false
+  },
+  {
+    "id": "nogizaka46-tsuki-no-ookisa",
+    "title": "Tsuki no Ookisa",
+    "artist": "Nogizaka46",
+    "video": "YxR3D_a7jUU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 370.35,
+    "gap": 10018.444309437018,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:24.887Z",
+    "realBpm": 185,
+    "volume": 1,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nogizaka46tsukinoookisa",
     "local": false
   },
   {
@@ -84799,6 +85932,31 @@
     ],
     "tracksCount": 1,
     "search": "orangecaramelcatallena",
+    "local": false
+  },
+  {
+    "id": "orange-range-o2",
+    "title": "O2",
+    "artist": "Orange Range",
+    "video": "Mrgcz2JKCTc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 337.96,
+    "gap": 13.080246182980204,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-09T00:12:24.266Z",
+    "realBpm": 169,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "orangerangeo2",
     "local": false
   },
   {
@@ -103934,6 +105092,31 @@
     "local": false
   },
   {
+    "id": "sublime-what-i-got",
+    "title": "What I Got",
+    "artist": "Sublime",
+    "video": "0Uc3ZrmhDN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.3,
+    "gap": 9844.540691582257,
+    "year": "1996",
+    "lastUpdate": "2025-04-09T00:12:38.799Z",
+    "realBpm": 96,
+    "volume": 0.78,
+    "author": "FaKK",
+    "sourceUrl": "https://youtu.be/0Uc3ZrmhDN4",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sublimewhatigot",
+    "local": false
+  },
+  {
     "id": "subwoolfer-give-that-wolf-a-banana",
     "title": "Give That Wolf A Banana",
     "artist": "Subwoolfer",
@@ -107220,6 +108403,33 @@
     ],
     "tracksCount": 1,
     "search": "tearsforfearseverybodywantstoruletheworld",
+    "local": false
+  },
+  {
+    "id": "tears-for-fears-mad-world",
+    "title": "Mad World",
+    "artist": "Tears For Fears",
+    "video": "u1ZvPSpLxCg",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.52,
+    "gap": 8825.286656519533,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-09T00:12:39.287Z",
+    "genre": "New Romantic",
+    "realBpm": 112,
+    "volume": 0.79,
+    "author": "Gollum",
+    "sourceUrl": "https://youtu.be/u1ZvPSpLxCg",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tearsforfearsmadworld",
     "local": false
   },
   {
@@ -111041,6 +112251,32 @@
     "local": false
   },
   {
+    "id": "the-midnight-lost-boy",
+    "title": "Lost Boy",
+    "artist": "The Midnight",
+    "video": "5LwHDTBRS9U",
+    "language": [
+      "English"
+    ],
+    "bpm": 552,
+    "gap": 41534.565217391304,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-09T00:12:49.072Z",
+    "genre": "Indie",
+    "realBpm": 137,
+    "volume": 0.76,
+    "author": "dcxx83",
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "tracksCount": 1,
+    "search": "themidnightlostboy",
+    "local": false
+  },
+  {
     "id": "the-neighbourhood-sweater-weather",
     "title": "Sweater Weather",
     "artist": "The Neighbourhood",
@@ -114341,6 +115577,32 @@
     ],
     "tracksCount": 1,
     "search": "tmrevolutionxnanamizukikakumeidualism",
+    "local": false
+  },
+  {
+    "id": "toadies-possum-kingdom",
+    "title": "Possum Kingdom",
+    "artist": "Toadies",
+    "video": "EkwD5rQ-_d4",
+    "language": [
+      "English"
+    ],
+    "bpm": 201.36,
+    "gap": 8541.585220500596,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-09T00:12:38.969Z",
+    "realBpm": 105,
+    "volume": 0.73,
+    "author": "horrible",
+    "sourceUrl": "https://youtu.be/EkwD5rQ-_d4",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toadiespossumkingdom",
     "local": false
   },
   {

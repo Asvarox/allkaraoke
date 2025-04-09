@@ -1,0 +1,334 @@
+#ARTIST:MOB CHOIR
+#TITLE:99
+#CREATOR:Subkei
+#BPM:380,24
+#YEAR:2016
+#VIDEO:v=Bw-5Lka7gPE
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:1671,7807700399749
+#ALLKARAOKE_ID:mob-choir-99
+#ALLKARAOKE_LASTUPDATE:2025-04-09T00:12:25.578Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:1
+#MP3:MOB CHOIR - 99 (TV).mp3
+#COVER:MOB CHOIR - 99 (TV).jpg
+#MEDLEYSTARTBEAT:1281
+#MEDLEYENDBEAT:1935
+: 25 3 -1 If 
+: 33 2 4 eve
+: 37 2 6 ~
+: 41 4 6 ry
+: 48 2 5 one
+: 52 3 6 ~ 
+: 57 4 6 is 
+: 65 2 5 not
+: 68 2 6 ~ 
+: 73 4 6 spe
+: 81 4 6 cial
+- 85
+: 88 2 -1 May
+: 93 2 -1 be 
+: 97 4 6 you 
+: 105 4 6 can 
+: 113 5 6 be 
+: 121 2 6 what 
+: 125 2 6 you 
+: 129 2 8 want
+: 132 2 6 ~ 
+: 137 5 6 to 
+: 145 5 6 be
+- 150
+: 157 2 -1 So
+: 161 3 4 re
+: 165 5 6 ~
+: 173 2 -1 zo
+: 177 3 4 re
+: 181 5 6 ~ 
+: 188 2 -1 no 
+: 193 3 4 ko
+: 197 5 6 ~
+: 205 2 -1 ta
+: 209 5 6 e
+- 214
+: 221 2 -1 Mi
+: 225 2 7 tsu
+: 229 12 9 ~
+: 245 5 7 ka
+: 251 3 6 ~
+: 257 10 6 ru 
+: 276 3 7 da
+: 280 5 9 ~
+: 288 3 9 ro
+: 292 130 11 u!
+- 422
+F 437 5 4 Twelve, 
+F 453 3 5 thir
+F 458 3 2 teen, 
+F 469 3 5 four
+F 474 3 2 teen, 
+F 485 3 5 fif
+F 490 3 2 teen
+- 493
+F 501 3 5 Six
+F 506 3 2 teen, 
+F 517 1 5 sev
+F 519 1 4 en
+F 521 2 4 teen, 
+F 525 2 5 eigh
+F 529 2 4 teen, 
+F 533 2 4 nine
+F 537 1 4 teen
+- 538
+F 541 2 6 Twen
+F 545 2 4 ty 
+F 549 4 6 one, 
+F 557 2 6 twen
+F 561 2 5 ty 
+F 565 4 5 two, 
+F 573 2 6 twen
+F 577 2 5 ty 
+F 581 4 5 three
+- 585
+F 589 2 6 Twen
+F 593 2 5 ty 
+F 597 4 5 four, 
+F 605 2 6 twen
+F 609 2 5 ty 
+F 613 1 6 five
+- 614
+: 617 2 2 A
+: 621 2 2 ko
+: 625 2 2 ga
+: 629 2 2 re 
+: 633 2 2 na
+: 637 2 2 ya
+: 641 4 1 mi 
+* 649 4 1 pam
+* 657 2 -1 pu 
+* 661 5 2 appu
+- 666
+F 669 2 6 Twen
+F 673 2 5 ty 
+F 677 4 5 six, 
+F 685 2 6 twen
+F 689 2 5 ty 
+F 693 2 5 sev
+F 697 1 4 en
+- 698
+F 701 2 6 Twen
+F 705 2 5 ty 
+F 709 4 5 eight, 
+F 717 2 6 twen
+F 721 2 5 ty 
+F 725 4 5 nine, 
+F 733 2 6 thir
+F 737 4 5 ty
+- 741
+: 745 3 6 Ji
+: 753 4 6 bun 
+: 761 2 6 sa
+: 765 2 6 ga
+: 769 2 6 shi 
+: 773 2 6 te
+: 777 2 -1 re
+: 781 3 -1 pa
+: 789 5 -1 shii
+- 794
+F 797 2 6 Thir
+F 801 2 5 ty 
+F 805 4 6 one, 
+F 813 2 6 thir
+F 817 2 5 ty 
+F 821 4 5 two, 
+F 829 2 6 thir
+F 833 2 5 ty 
+F 837 4 5 three, 
+F 845 2 6 thir
+F 849 2 5 ty 
+F 853 4 5 four
+- 857
+* 869 3 2 Na
+* 873 3 2 i
+* 877 2 2 mo
+* 881 2 2 no 
+: 885 2 2 ne
+: 889 2 2 da
+: 893 2 2 ri 
+: 897 2 1 sai
+: 900 2 2 ~
+: 905 2 2 ko 
+: 909 5 -1 shou
+: 917 5 2 da
+- 922
+F 925 2 6 Thir
+F 929 2 5 ty 
+F 933 4 5 six, 
+F 941 2 6 thir
+F 945 2 5 ty 
+F 949 2 5 sev
+F 953 1 4 en
+- 954
+F 957 2 6 Thir
+F 961 2 5 ty 
+F 965 4 5 eight, 
+F 973 2 6 thir
+F 977 2 5 ty 
+F 981 4 5 nine, 
+F 989 2 6 for
+F 993 4 5 ty
+- 997
+: 1005 4 6 Sei
+: 1013 5 6 shun 
+: 1025 2 6 so
+: 1029 2 6 ru
+: 1033 3 -1 to 
+: 1041 2 -1 supu
+: 1045 11 -1 rasshu
+- 1056
+F 1069 5 5 Mob? 
+F 1085 5 5 Mob? 
+F 1101 3 5 what 
+F 1109 2 3 do 
+F 1113 2 3 you 
+F 1117 7 5 want?
+- 1124
+F 1133 5 5 Mob? 
+F 1149 5 5 Mob? 
+F 1165 3 5 what 
+F 1173 2 3 do 
+F 1177 2 3 you 
+F 1181 7 5 want?
+- 1188
+F 1197 5 5 Mob? 
+F 1213 5 5 Mob? 
+F 1229 3 5 who 
+F 1237 2 3 do 
+F 1241 2 3 you 
+F 1245 7 5 want?
+- 1252
+F 1261 5 5 Move! 
+F 1277 5 5 move! 
+F 1285 4 5 just 
+F 1293 4 5 like 
+F 1301 2 5 Mob!
+- 1303
+: 1306 3 -1 If 
+: 1314 2 4 eve
+: 1318 2 6 ~
+: 1322 4 6 ry
+: 1329 2 5 one
+: 1333 3 6 ~ 
+: 1338 4 6 is 
+: 1346 2 5 not
+: 1349 2 6 ~ 
+: 1354 4 6 spe
+: 1362 4 6 cial
+- 1366
+: 1370 2 -1 May
+: 1374 2 -1 be 
+: 1378 4 6 you 
+: 1386 4 6 can 
+: 1394 5 6 be 
+* 1402 2 6 what 
+* 1406 2 6 you 
+* 1410 2 8 want
+* 1413 2 6 ~ 
+* 1418 5 6 to 
+* 1426 5 6 be
+- 1431
+: 1438 2 -1 Yo
+: 1442 3 4 ro
+: 1446 5 6 ~
+: 1454 2 -1 ko
+: 1458 3 4 bi
+: 1462 5 6 ~ 
+: 1470 2 -1 ka
+: 1474 3 4 na
+: 1478 5 6 ~
+: 1486 2 -1 shi
+: 1490 4 6 mi
+- 1494
+: 1502 2 6 Ka
+: 1506 2 7 ka
+: 1510 7 9 ~
+: 1518 4 9 e
+: 1526 8 7 te 
+: 1538 19 6 mo
+- 1557
+: 1570 3 6 Your 
+: 1578 3 6 life 
+: 1586 3 6 is 
+: 1594 3 6 your 
+: 1602 3 6 own, 
+* 1610 3 6 o
+* 1618 3 6 key?
+- 1621
+: 1626 2 -1 To
+: 1630 2 -1 ku
+: 1634 5 6 be
+: 1642 2 6 tsu 
+: 1646 2 6 ja 
+: 1650 2 8 na
+: 1653 2 6 ~
+: 1658 2 6 ku
+: 1662 2 6 te 
+: 1666 4 6 mo 
+: 1674 3 9 o
+: 1678 2 11 ~
+: 1682 5 11 key
+- 1687
+: 1694 2 -1 So
+: 1698 3 4 re
+: 1702 5 6 ~
+: 1710 2 -1 zo
+: 1714 3 4 re
+: 1718 5 6 ~ 
+: 1725 2 -1 no 
+: 1730 3 4 ko
+: 1734 5 6 ~
+: 1742 2 -1 ta
+: 1746 5 6 e
+- 1751
+* 1758 2 6 Mi
+* 1762 2 7 tsu
+* 1766 12 9 ~
+* 1782 6 7 ka
+* 1789 2 6 ~
+* 1794 9 6 ru 
+: 1814 2 7 da
+: 1818 4 9 ~
+: 1826 2 9 ro
+: 1830 130 11 u!
+- 1960
+: 1966 2 7 Nine
+: 1970 2 6 ty 
+: 1974 4 6 two, 
+: 1982 2 7 nine
+: 1986 2 6 ty 
+: 1990 4 6 three
+- 1994
+: 1998 2 7 Nine
+: 2002 2 6 ty 
+: 2006 4 6 four, 
+: 2014 2 7 nine
+: 2018 2 6 ty 
+: 2022 4 6 five, 
+: 2030 2 7 nine
+: 2034 2 6 ty 
+: 2038 3 6 six
+- 2041
+: 2046 2 7 Nine
+: 2050 2 6 ty 
+: 2054 1 6 sev
+: 2056 2 6 en, 
+* 2062 2 7 nine
+* 2066 2 6 ty 
+* 2070 4 6 eight, 
+: 2078 3 7 nine
+: 2083 2 7 ty 
+: 2087 66 8 nine
+: 2154 52 7 ~
+: 2207 5 6 ~
+E
