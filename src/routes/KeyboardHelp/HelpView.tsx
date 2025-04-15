@@ -94,16 +94,16 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
 
 const Section = twc.div`flex items-center gap-4`;
 
-const SectionKeys = twc.div`flex-nowrap flex-[2] text-white font-bold text-center [&_kbd]:m-1`;
+const SectionKeys = twc.div`flex-nowrap flex-2 text-white font-bold text-center [&_kbd]:m-1`;
 
-const SectionHelp = twc(Text)`flex-[3] text-base text-right`;
+const SectionHelp = twc(Text)`flex-3 text-base text-right`;
 
 const UseKeyboardIndicator = twc(
   Text,
 )`absolute inset-0 bg-black/75 flex items-center justify-center text-white text-md p-8 invisible opacity-0 duration-300 hover:opacity-100 hover:visible`;
 
 const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
-  `fixed top-[5rem] right-0 p-2 items-stretch gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
+  `fixed top-[5rem] right-0 p-2 items-stretch gap-4 w-[34rem] cursor-pointer scale-75 z-1000 [view-transition-name:help-view] [&_svg]:fill-white hover:[&_.UseKeyboardIndicator]:opacity-100 hover:[&_.UseKeyboardIndicator]:visible`,
   props['data-visible'] ? 'flex mobile:hidden' : 'hidden',
 ]);
 

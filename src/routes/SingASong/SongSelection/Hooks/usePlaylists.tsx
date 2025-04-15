@@ -116,7 +116,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
                 <Text className="text-xl">
                   Add songs on your <strong>phone</strong> using{' '}
                   <strong>
-                    <List className="!text-[1em]" /> Song List
+                    <List className="text-[1em]!" /> Song List
                   </strong>{' '}
                   tab on the bottom of the screen
                 </Text>

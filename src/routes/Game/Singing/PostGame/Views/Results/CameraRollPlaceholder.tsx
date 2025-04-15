@@ -26,7 +26,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
   }, [loading]);
 
   return (
-    <div className={`relative flex aspect-[4/3] justify-center ${!permissionStatus ? `items-center` : `items-end`}`}>
+    <div className={`relative flex aspect-4/3 justify-center ${!permissionStatus ? `items-center` : `items-end`}`}>
       <div className="rounded-2xl bg-black">
         <video
           autoPlay
@@ -43,7 +43,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
               Get a <strong>timelapse</strong> of you singing
             </h2>
             <Button
-              className="w-full animate-focused p-4"
+              className="animate-focused w-full p-4"
               {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
               Enable camera
             </Button>
@@ -54,7 +54,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
         )}
       </div>
       {!permissionStatus && (
-        <Text className="absolute bottom-0 right-0 p-4 text-sm">
+        <Text className="absolute right-0 bottom-0 p-4 text-sm">
           Placeholder video from{' '}
           <a href="https://www.storyblocks.com/" target="_blank" rel="noreferrer">
             Storyblocks.com
