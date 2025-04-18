@@ -63,7 +63,7 @@ function RemoteMic() {
     <LayoutGame>
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
-      <Container id="phone-ui-container" className="pb-24 landscap:pb-0">
+      <Container id="phone-ui-container" className="landscap:pb-0 pb-24">
         <>
           {activeTab === 'microphone' && (
             <Microphone

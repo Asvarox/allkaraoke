@@ -9,11 +9,12 @@ import { PlaylistEntry } from 'routes/SingASong/SongSelection/Hooks/usePlaylists
 const EurovisionDisplay = styled.span`
   background-image: linear-gradient(
     90deg,
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionViolet.text},
+    ${colorSets.eurovisionRed.text},
     ${colorSets.eurovisionPink.text},
     ${colorSets.eurovisionBlue.text},
-    ${colorSets.eurovisionPink.text}
+    ${colorSets.eurovisionGreen.text},
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionRed.text}
   );
 
   background-size: 200% 200%;
@@ -33,7 +34,7 @@ const EurovisionDisplay = styled.span`
         }
 `;
 
-const EurovisionLogo = styled.img`
+export const EurovisionLogo = styled.img`
   width: 1em;
   height: 1em;
   animation: heartbeat 1.5s infinite;
@@ -114,7 +115,7 @@ export const eurovisionPlaylist: PlaylistEntry = {
         </>
       );
       other.songs = singleItemGroups.map((group) => group.songs[0]);
-      finalGroups = groups.filter((group) => group.songs.length > 1);
+      finalGroups = groups.filter((group) => group.name === 'Other' || group.songs.length > 1);
     }
     // sort by country name
     finalGroups.sort((a, b) => {

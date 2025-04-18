@@ -26,7 +26,7 @@ export const CalibrationTool = () => {
     <div className="flex flex-col items-center justify-center" ref={playerContainer}>
       {currentStatus === VideoState.PLAYING ? (
         <div
-          className="pointer-events-none absolute h-[150px] w-[150px] scale-0 animate-calibrationPulse rounded-full bg-active"
+          className="animate-calibrationPulse bg-active pointer-events-none absolute h-[150px] w-[150px] scale-0 rounded-full"
           key={nextPulse}
         />
       ) : (

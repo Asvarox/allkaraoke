@@ -18,13 +18,19 @@ function Game() {
   const [preselectedSong, setPreselectedSong] = useState<string | null>(songId ?? null);
   const [resetKey, setResetKey] = useState(0);
   const handleSelect = (setup: SingSetup & { song: SongPreview }) => {
-    document.getElementById('preview-video-container')!.style.viewTransitionName = 'song-preview-video';
-    startViewTransition(() => {
-      document.getElementById('preview-video-container')!.style.viewTransitionName = '';
-      flushSync(() => {
-        setSingSetup(setup);
+    const previewVideo = document.getElementById('preview-video-container');
+
+    if (previewVideo) {
+      previewVideo.style.viewTransitionName = 'song-preview-video';
+      startViewTransition(() => {
+        previewVideo.style.viewTransitionName = '';
+        flushSync(() => {
+          setSingSetup(setup);
+        });
       });
-    });
+    } else {
+      setSingSetup(setup);
+    }
 
     woosh.play(false);
   };

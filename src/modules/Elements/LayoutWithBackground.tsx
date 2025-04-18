@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { EurovisionBackground } from 'modules/Elements/Background/Eurovision';
 import Snow from 'modules/Elements/Snow';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import React, { createContext, CSSProperties, useContext, useEffect, useState } from 'react';
@@ -45,18 +46,30 @@ const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: 
 
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
-  const [theme, setTheme] = useState<backgroundTheme>('regular');
+  const [theme, setTheme] = useState<backgroundTheme>('eurovision');
   const [graphicLevel] = useSettingValue(GraphicSetting);
 
   return (
     <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
       {visible && (
-        <Background
-          data-theme={theme}
-          data-graphic-level={graphicLevel}
-          style={themeStyles[theme] ?? themeStyles.default}>
-          {theme === 'christmas' && <Snow />}
-        </Background>
+        <div className="fixed z-[-1]">
+          {theme === 'eurovision' && <EurovisionBackground />}
+          {theme === 'regular' && (
+            <Background
+              data-theme={theme}
+              data-graphic-level={graphicLevel}
+              style={themeStyles[theme] ?? themeStyles.default}
+            />
+          )}
+          {theme === 'christmas' && (
+            <Background
+              data-theme={theme}
+              data-graphic-level={graphicLevel}
+              style={themeStyles[theme] ?? themeStyles.default}>
+              <Snow />
+            </Background>
+          )}
+        </div>
       )}
       {children}
     </BackgroundContext.Provider>
@@ -99,7 +112,7 @@ type BGProps = TwcComponentProps<'div'> & {
 };
 
 export const Background = twc(BackgroundStatic)((props: BGProps) => [
-  `z-[-1] top-0 fixed`,
+  'w-screen h-screen',
   props['data-theme'] === 'halloween' ? 'bg-black' : '',
   props['data-graphic-level'] === 'high' ? 'animate-gradient' : '',
 ]);

@@ -11,7 +11,7 @@ export default function Text<T extends ElementType = 'span'>({ as, className, ch
   return (
     <Component
       className={twMerge(
-        `typography [&_a]:typography text-base [&_a]:text-active ${active ? 'text-active' : ''}`,
+        `typography [&_a]:typography [&_a]:text-active text-base ${active ? 'text-active' : ''}`,
         className,
       )}
       {...props}>

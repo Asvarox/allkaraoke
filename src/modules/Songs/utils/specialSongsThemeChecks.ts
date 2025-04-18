@@ -8,9 +8,10 @@ export function isChristmasSong(song: SongPreview | Song) {
 export const getEurovisionYear = (song: SongPreview | Song) => {
   return (
     song.edition
-      ?.split(',')
-      .find((edition) => edition.toLowerCase().startsWith('esc '))
-      ?.replace('Esc ', '')
+      ?.toLowerCase()
+      .split(',')
+      .find((edition) => edition.startsWith('esc '))
+      ?.replace('esc ', '')
       ?.trim() ?? undefined
   );
 };

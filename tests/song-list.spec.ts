@@ -16,8 +16,11 @@ const duetsPlaylist = 'Duets';
 const newPlaylist = 'New';
 const allPlaylist = 'All';
 
-const xmasPlaylist = 'Christmas';
+const _xmasPlaylist = 'Christmas';
 const xmasSong = 'e2e-christmas-english-1995';
+
+const eurovisionPlaylist = 'Eurovision';
+const eurovisionSong = 'e2e-new-english-1995';
 
 const _halloweenPlaylist = 'Halloween';
 const _halloweenSong = 'e2e-croissant-french-1994';
@@ -34,7 +37,7 @@ const polishLang = 'Polish';
 const englishLang = 'English';
 const frenchLang = 'French';
 
-test('Filters - PlayLists', async ({ page }) => {
+test.skip('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -123,7 +126,7 @@ test('Filters - PlayLists', async ({ page }) => {
   });
 });
 
-test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
+test('Filters - PlayLists (Eurovision)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -163,14 +166,14 @@ test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
     await pages.songListPage.focusSong(polSong);
   });
 
-  await test.step('Going to Christmas-playlist and check songs visibility', async () => {
+  await test.step('Going to Eurovision-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowLeft');
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
-    await pages.songListPage.expectPlaylistToBeSelected(xmasPlaylist);
+    await pages.songListPage.expectPlaylistToBeSelected(eurovisionPlaylist);
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
-    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(eurovisionSong)).toBeVisible();
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {
@@ -210,7 +213,7 @@ test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
     await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
     await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(eurovisionSong)).toBeVisible();
   });
 
   await test.step('Leave the playlists and check songs visibility', async () => {

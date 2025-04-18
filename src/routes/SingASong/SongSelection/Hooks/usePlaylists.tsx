@@ -1,15 +1,16 @@
 import { SongPreview } from 'interfaces';
 import { ClosableTooltip } from 'modules/Elements/Tooltip';
-// import { FeatureFlags } from 'modules/utils/featureFlags';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { List } from '@mui/icons-material';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
 import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
+import { eurovisionPlaylist } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
@@ -26,7 +27,7 @@ export interface PlaylistEntry {
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
-  const isSpecialThemeEnabled = false;
+  const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Eurovision);
   const songLanguages = useLanguageList(songs);
   const remoteSongList = useRemoteMicSongList();
   const { connected } = useRemoteMicServerStatus();
@@ -67,18 +68,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     const playlists: Array<PlaylistEntry | null> = [
       selection,
       all,
-      isSpecialThemeEnabled
-        ? {
-            name: 'Christmas',
-            display: (
-              <>
-                <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
-                <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
-              </>
-            ),
-            filters: { edition: 'christmas' },
-          }
-        : null,
+      isSpecialThemeEnabled ? eurovisionPlaylist : null,
       // {
       //   name: 'Halloween',
       //   display: (

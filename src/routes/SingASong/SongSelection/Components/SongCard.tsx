@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
 import Box from 'modules/Elements/AKUI/Primitives/Box';
 import { typography } from 'modules/Elements/cssMixins';
+import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
-import { ComponentProps, ReactNode, useCallback } from 'react';
+import { ComponentProps, ReactNode, use, useCallback } from 'react';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import SongFlag from 'routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 import { TopContainer } from 'routes/SingASong/SongSelection/Components/SongCard/TopContainer';
@@ -36,6 +37,7 @@ export const FinalSongCard = ({
   forceFlag = false,
   ...restProps
 }: Props) => {
+  const { theme } = use(BackgroundContext);
   const expanded = restProps['data-expanded'] ?? false;
   const onClickCallback = useCallback(
     () => (handleClick ? handleClick(songId!, groupLetter) : undefined),
@@ -53,6 +55,7 @@ export const FinalSongCard = ({
           data-focused={expanded ? false : focused}
           data-expanded={restProps['data-expanded']}
           data-graphic-setting={graphicSetting}
+          data-theme={theme}
         />
       )}
       <SongInfo data-expanded={expanded}>
@@ -160,6 +163,9 @@ export const SongCardBackground = styled.div`
     }
     &[data-expanded='true'] {
       filter: blur(10px);
+    }
+    &[data-theme='eurovision'] {
+      opacity: 0.95;
     }
   }
   &[data-graphic-setting='low'] {

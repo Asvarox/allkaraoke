@@ -12,7 +12,7 @@ interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
 
 function NumericInput({ unit = '', value, onChange, step = 50, disabled = false, className = '', ...props }: Props) {
   return (
-    <Container className={`${className} rounded-md shadow-focusable`} {...props}>
+    <Container className={`${className} shadow-focusable rounded-md`} {...props}>
       <Button
         onClick={() => onChange(value - step)}
         disabled={disabled}
