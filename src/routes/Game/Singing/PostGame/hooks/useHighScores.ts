@@ -11,7 +11,7 @@ const fakePlayerNames = [
   'Chad Khalimov',
   'Dat Boi',
   'Good Guy Greg',
-  'Scumbag Steve',
+  'Steve',
   'Meme Man',
   'Pepe',
   'Wojak',
