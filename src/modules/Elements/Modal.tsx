@@ -15,7 +15,7 @@ export default function Modal({ children, open, onClose }: Props) {
           <motion.div
             exit={{ opacity: 0, top: '20%' }}
             onClick={onClose}
-            className="fixed left-0 top-0 z-[20001] h-screen w-screen overflow-auto opacity-100 duration-300 starting:top-20 starting:opacity-0">
+            className="fixed top-0 left-0 z-20001 h-screen w-screen overflow-auto opacity-100 duration-300 starting:top-20 starting:opacity-0">
             <div className="flex min-h-full items-center justify-center">
               <div onClick={(e) => e.stopPropagation()}>{children}</div>
             </div>

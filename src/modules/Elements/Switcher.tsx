@@ -51,7 +51,7 @@ export const Switcher = ({
       onClick={onClick}
       data-disabled={disabled}
       {...restProps}
-      className={`${className} rounded-md shadow-focusable`}>
+      className={`${className} shadow-focusable rounded-md`}>
       <span>{label ? <>{label}:</> : ''}</span>{' '}
       <AnimatePresence>
         <ConfigValue

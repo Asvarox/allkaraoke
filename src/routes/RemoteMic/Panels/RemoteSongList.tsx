@@ -157,7 +157,7 @@ function RemoteSongList({ connectionStatus }: Props) {
             onListChange={setExcludedLanguages}>
             {({ open }) => (
               <Tab
-                className="!flex-grow-[0.3]"
+                className="flex-grow-[0.3]!"
                 onClick={open}
                 data-test="song-language-filter"
                 data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
@@ -194,13 +194,13 @@ function RemoteSongList({ connectionStatus }: Props) {
             return (
               <SongItemContainer
                 role="button"
-                className="cursor-pointer !bg-black !bg-opacity-75 active:!bg-opacity-100"
+                className="bg-opacity-75! active:bg-opacity-100! cursor-pointer bg-black!"
                 data-test={`song-group-${mainArtistName}`}
                 onClick={onClick}
                 {...itemProps}>
                 <Language>
                   <ArrowRight
-                    className={`text-white !transition-transform !duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+                    className={`text-white transition-transform! duration-200! ${isExpanded ? 'rotate-90' : ''}`}
                   />
                 </Language>
                 <ArtistTitle>
@@ -225,7 +225,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
           return (
             <SongItemContainer
-              className={isOnList ? '!bg-black !bg-opacity-35' : ''}
+              className={isOnList ? 'bg-opacity-35! bg-black!' : ''}
               data-test={song.id}
               {...itemProps}>
               {isExpanded && <Language />}

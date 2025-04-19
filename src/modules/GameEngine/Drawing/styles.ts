@@ -6,13 +6,13 @@ export const christmasGreenStrokeBase = tinycolor('rgb(15, 138, 95)');
 export const christmasRedFillBase = tinycolor('rgb(245, 98, 77)');
 export const christmasRedStrokeBase = tinycolor('rgb(204, 35, 30)');
 
-export const eurovisionYellowFillBase = tinycolor('rgb(245, 220, 21)');
-export const eurovisionYellowStrokeBase = tinycolor(eurovisionYellowFillBase.toRgbString()).darken(15);
-export const eurovisionPinkFillBase = tinycolor('rgb(255, 70, 223)');
+export const eurovisionGreenFillBase = tinycolor('#2cfd79');
+export const eurovisionYellowStrokeBase = tinycolor(eurovisionGreenFillBase.toRgbString()).darken(15);
+export const eurovisionPinkFillBase = tinycolor('#fb47e5');
 export const eurovisionPinkStrokeBase = tinycolor(eurovisionPinkFillBase.toRgbString()).darken(15);
-export const eurovisionOrangeFillBase = tinycolor('rgb(255, 119, 20)');
-export const eurovisionOrangeStrokeBase = tinycolor(eurovisionOrangeFillBase.toRgbString()).darken(15);
-export const eurovisionBlueFillBase = tinycolor('rgb(31, 192, 223)');
+export const eurovisionRedFillBase = tinycolor('#ff0400');
+export const eurovisionRedStrokeBase = tinycolor(eurovisionRedFillBase.toRgbString()).darken(15);
+export const eurovisionBlueFillBase = tinycolor('#13dad6');
 export const eurovisionBlueStrokeBase = tinycolor(eurovisionBlueFillBase.toRgbString()).darken(15);
 export const eurovisionVioletFillBase = tinycolor('rgb(102, 44, 182)');
 export const eurovisionVioletStrokeBase = tinycolor(eurovisionVioletFillBase.toRgbString()).darken(15);
@@ -74,9 +74,9 @@ export const colorSets = {
   halloweenRed: colorSet(redFillBase, redStrokeBase),
   halloweenGreen: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
 
-  eurovisionYellow: colorSet(eurovisionYellowFillBase, eurovisionYellowStrokeBase),
+  eurovisionGreen: colorSet(eurovisionGreenFillBase, eurovisionYellowStrokeBase),
   eurovisionPink: colorSet(eurovisionPinkFillBase, eurovisionPinkStrokeBase),
-  eurovisionOrange: colorSet(eurovisionOrangeFillBase, eurovisionOrangeStrokeBase),
+  eurovisionRed: colorSet(eurovisionRedFillBase, eurovisionRedStrokeBase),
   eurovisionBlue: colorSet(eurovisionBlueFillBase, eurovisionBlueStrokeBase),
   eurovisionViolet: colorSet(eurovisionVioletFillBase, eurovisionVioletStrokeBase),
 };
@@ -116,12 +116,7 @@ const colorThemes: Record<
   [ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>]
 > = {
   christmas: [colorSets.christmasGreen, colorSets.christmasRed, colorSets.christmasBlue, colorSets.christmasGold],
-  eurovision: [
-    colorSets.eurovisionBlue,
-    colorSets.eurovisionViolet,
-    colorSets.eurovisionYellow,
-    colorSets.eurovisionPink,
-  ],
+  eurovision: [colorSets.eurovisionBlue, colorSets.eurovisionRed, colorSets.eurovisionGreen, colorSets.eurovisionPink],
   halloween: [colorSets.halloweenOrange, colorSets.halloweenViolet, colorSets.halloweenRed, colorSets.halloweenGreen],
   regular: [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow],
 };

@@ -14,9 +14,9 @@ const EurovisionBgSvg = () => {
 
   const stops = [
     { offset: '0%', color: colorSets.eurovisionPink.text },
-    { offset: '25%', color: colorSets.eurovisionYellow.text },
+    { offset: '25%', color: colorSets.eurovisionGreen.text },
     { offset: '50%', color: colorSets.eurovisionPink.text },
-    { offset: '75%', color: colorSets.eurovisionOrange.text },
+    { offset: '75%', color: colorSets.eurovisionRed.text },
     { offset: '100%', color: colorSets.eurovisionPink.text },
   ];
 

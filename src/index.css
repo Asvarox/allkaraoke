@@ -1,22 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer components {
-    .typography {
-        -webkit-text-stroke: 0.1rem black;
-        color: white;
-        font-weight: bold;
-        strong {
-            color: orange;
-        }
+@plugin "tailwindcss-motion";
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentcolor);
+    }
+
+    a {
+        /*@apply typography;*/
+        @apply text-active;
+        text-decoration: underline;
     }
 }
+
+
+@utility typography {
+    -webkit-text-stroke: 0.1rem black;
+    color: white;
+    font-weight: bold;
+    strong {
+        color: orange;
+    }
+}
+
 body {
     line-height: 1;
     position: relative;
-    margin: 0;
-;
+    margin: 0;;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -26,11 +51,6 @@ body {
     overflow-y: auto;
 }
 
-a {
-    /*@apply typography;*/
-    @apply text-active;
-    text-decoration: underline;
-}
 
 body,
 button,
@@ -126,9 +146,11 @@ code {
         transform: scale(1.2);
     }
 }
+
 ::view-transition-old(menu-container) {
     animation: 210ms ease-in-out both fade-out, 300ms ease-in-out both scale-to-up;
 }
+
 ::view-transition-new(menu-container) {
     animation: 210ms ease-in-out 90ms both fade-in, 300ms ease-in-out both scale-from-down;
 }
@@ -181,12 +203,15 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
 h3 {
     font-size: 1.75rem;
 }
+
 h4 {
     font-size: 1.5rem;
 }
+
 h5 {
     font-size: 1.25rem;
 }

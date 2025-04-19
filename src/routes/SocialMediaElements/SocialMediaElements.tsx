@@ -50,7 +50,7 @@ const ESCBarsLogo = styled.div`
       0deg,
       ${colorSets.eurovisionViolet.text},
       ${colorSets.eurovisionBlue.text},
-      ${colorSets.eurovisionYellow.text},
+      ${colorSets.eurovisionGreen.text},
       ${colorSets.eurovisionBlue.text},
       ${colorSets.eurovisionViolet.text}
     );
@@ -76,8 +76,8 @@ const ESCBarsBackground = styled(ESCBarsLogo)`
     background-image: linear-gradient(
       0deg,
       ${colorSets.eurovisionPink.text},
-      ${colorSets.eurovisionOrange.text},
-      ${colorSets.eurovisionYellow.text},
+      ${colorSets.eurovisionRed.text},
+      ${colorSets.eurovisionGreen.text},
       ${colorSets.eurovisionPink.text}
     );
   }
