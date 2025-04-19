@@ -1,0 +1,609 @@
+#ARTIST:Murray Head
+#TITLE:One Night In Bangkok
+#CREATOR:fepo
+#BPM:431,4
+#YEAR:1984
+#PREVIEWSTART:68
+#VIDEO:v=rgc_LRjlbTU
+#LANGUAGE:English
+#GAP:38561,42128448875
+#ALLKARAOKE_ID:murray-head-one-night-in-bangkok
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:11:51.803Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:109
+#ALLKARAOKE_PREVIEWEND:89
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Murray Head - One Night In Bangkok.mp3
+F 29 6 2 Bang
+F 37 6 2 kok, 
+F 53 2 2 o
+F 57 2 2 ri
+F 61 2 2 en
+F 65 2 2 tal 
+F 69 2 2 set
+F 73 2 2 ting
+- 75
+F 79 2 2 And 
+F 82 2 2 the 
+F 85 4 2 ci
+F 90 3 2 ty 
+F 94 6 2 don’t 
+F 101 4 2 know 
+F 108 4 2 what 
+F 114 3 2 the 
+F 118 3 2 ci
+F 122 3 2 ty 
+F 127 4 2 is 
+F 133 3 2 get
+F 137 4 2 tin’
+- 141
+F 146 3 2 The 
+F 151 3 2 creme 
+F 155 2 2 de 
+F 158 3 2 la 
+F 163 6 2 creme
+- 169
+F 174 3 2 Of 
+F 178 2 2 the 
+F 181 6 2 chess 
+F 190 7 2 world
+- 197
+F 199 2 2 In 
+F 203 2 2 a 
+F 207 10 2 show 
+F 220 4 2 with 
+F 225 3 2 eve
+F 229 3 2 ry
+F 233 4 2 thing 
+F 239 8 2 but 
+F 253 11 2 Yul 
+F 266 6 2 Bryn
+F 273 5 2 ner
+- 278 384
+- 384
+F 413 8 2 Time 
+F 423 12 2 flies 
+F 437 2 2 doe
+F 441 2 2 sn’t 
+F 445 4 2 seem 
+F 451 1 2 a 
+F 453 3 2 mi
+F 457 4 2 nute
+- 461
+F 462 3 2 Since 
+F 466 3 2 the 
+F 470 3 2 Ti
+F 474 2 2 ro
+F 477 4 2 le
+F 482 3 2 an 
+F 486 7 2 spa 
+F 494 3 2 had 
+F 498 2 2 the 
+F 501 8 2 chess 
+F 511 7 2 boards 
+F 519 2 2 in 
+F 523 4 2 it
+- 527
+F 541 4 2 All 
+F 550 12 2 change 
+F 567 3 2 don’t 
+F 571 3 2 you 
+F 575 3 2 know 
+F 579 2 2 that 
+F 582 3 2 when 
+F 587 6 2 you
+- 593
+F 595 5 2 Play 
+F 601 4 2 at 
+F 607 4 2 this 
+F 613 4 2 le
+F 619 3 2 vel 
+F 623 4 2 there’s 
+F 629 3 2 no 
+F 633 3 2 or
+F 637 2 2 di
+F 640 3 2 na
+F 644 3 2 ry 
+F 648 3 2 ve
+F 653 8 2 nues
+- 661
+F 687 4 2 It’s 
+F 693 7 2 Ice
+F 701 12 2 land 
+F 717 3 2 or 
+F 721 2 2 the 
+F 724 2 2 Phi
+F 727 3 2 lip
+F 731 10 2 pines 
+F 749 4 2 or 
+F 757 5 2 Has
+F 763 8 2 tings
+- 771
+F 789 4 2 Or
+- 793
+F 805 4 2 Or 
+F 811 6 2 this 
+F 821 8 2 place!
+- 829 833
+- 833
+: 862 6 5 One 
+: 870 7 5 night 
+: 878 6 5 in 
+: 886 7 5 Bang
+: 894 6 2 kok 
+: 902 8 5 and 
+: 911 5 7 the 
+* 918 14 9 world’s 
+* 934 12 7 your 
+: 950 4 5 oys
+: 956 10 2 ter
+- 966
+: 992 4 2 The 
+: 998 7 5 bars 
+: 1006 5 5 are 
+* 1014 7 7 tem
+: 1022 7 2 ples 
+: 1031 4 2 but 
+: 1038 4 2 the 
+* 1046 8 0 pearls 
+: 1057 10 4 ain’t 
+: 1071 10 2 free
+- 1081 1091
+- 1091
+: 1120 6 5 You’ll 
+: 1127 6 5 find 
+: 1134 4 7 a 
+: 1139 9 5 god 
+: 1151 6 5 in 
+: 1160 5 5 eve
+: 1167 5 7 ry 
+: 1176 14 9 gol
+: 1191 10 7 den 
+: 1207 6 5 clois
+: 1215 8 2 ter
+- 1223
+: 1248 4 2 And 
+: 1254 8 4 if 
+: 1264 7 5 you’re 
+: 1272 7 7 luc
+: 1280 6 2 ky 
+: 1288 4 2 then 
+: 1296 7 2 the 
+: 1304 6 0 god’s 
+: 1314 7 4 a 
+: 1327 12 2 she
+- 1339 1341
+- 1341
+: 1370 4 2 I 
+: 1376 4 4 can 
+: 1384 6 5 feel 
+: 1391 4 5 an 
+: 1398 8 7 an
+: 1408 4 2 gel 
+: 1414 8 2 sli
+: 1424 6 2 ding 
+: 1432 5 0 up 
+: 1440 11 4 to 
+: 1457 11 2 me
+- 1468
+F 1472 7 2 One 
+F 1480 11 2 town’s 
+F 1496 3 2 ve
+F 1500 3 2 ry 
+F 1504 4 2 like 
+F 1510 2 2 a
+F 1514 2 2 no
+F 1517 2 2 ther
+- 1519
+F 1520 3 2 When 
+F 1524 3 2 your 
+F 1528 6 2 head’s 
+F 1536 8 2 down 
+F 1546 3 2 o
+F 1550 2 2 ver 
+F 1553 5 2 your 
+F 1562 5 2 pie
+F 1568 4 2 ces 
+F 1578 4 2 bro
+F 1584 2 2 ther
+- 1586
+: 1587 3 0 It’s 
+: 1591 2 1 a 
+: 1594 7 2 drag, 
+: 1602 3 0 it’s 
+: 1606 3 1 a 
+: 1610 7 2 bore, 
+: 1618 4 0 it’s 
+: 1625 3 4 real
+: 1629 3 5 ly 
+: 1633 4 5 such 
+: 1638 3 5 a 
+: 1642 3 4 pi
+: 1646 2 5 ty
+- 1648
+: 1649 3 5 To 
+: 1653 3 5 be 
+: 1657 3 5 loo
+: 1661 3 7 king 
+: 1666 2 7 at 
+: 1670 2 7 the 
+: 1674 7 7 board, 
+: 1682 6 9 not 
+: 1689 4 0 loo
+: 1694 3 2 king 
+: 1698 2 2 at 
+: 1702 2 2 the 
+: 1705 3 0 ci
+: 1710 4 2 ty
+- 1714
+F 1722 3 2 What 
+F 1726 2 2 do 
+F 1730 3 2 ya 
+F 1734 13 2 mean?
+- 1747
+F 1765 4 2 You 
+F 1770 6 2 seen 
+F 1779 5 2 one 
+F 1786 8 2 crow
+F 1797 4 2 ded, 
+F 1802 4 2 pol
+F 1808 4 2 lu
+F 1814 4 2 ted, 
+F 1827 6 2 stin
+F 1835 6 2 king 
+F 1845 2 2 town
+- 1847
+: 1849 15 0 Tea 
+: 1866 13 2 girls 
+: 1882 7 0 warm 
+: 1890 4 2 and 
+: 1897 7 5 sweet
+- 1904
+: 1914 3 0 Some 
+* 1918 3 0 are 
+* 1922 3 2 set 
+: 1927 3 5 up
+- 1930
+: 1939 2 0 In 
+: 1942 2 2 the 
+: 1946 3 5 Som
+: 1950 3 2 mer
+: 1954 5 2 set 
+* 1961 6 0 Maugham 
+: 1969 7 2 suite
+- 1976
+F 1986 6 2 Get 
+F 1994 11 2 Thai’d! 
+F 2006 3 2 You’re 
+F 2010 3 2 tal
+F 2014 3 2 king 
+F 2018 3 2 to 
+F 2022 2 2 a 
+F 2026 4 2 tou
+F 2032 4 2 rist
+- 2036
+F 2037 4 2 Whose 
+F 2042 4 2 eve
+F 2048 4 2 ry 
+F 2054 10 2 move’s 
+F 2068 2 2 a
+F 2071 5 2 mong 
+F 2078 3 2 the 
+F 2082 6 2 pu
+F 2090 4 2 rest
+- 2094 2105
+- 2105
+F 2134 4 2 I 
+F 2140 4 2 get 
+F 2146 4 2 my 
+F 2152 4 2 kicks 
+F 2162 4 2 a
+F 2167 5 2 bove 
+F 2176 4 2 the 
+F 2182 6 2 waist
+F 2190 8 2 line, 
+F 2203 7 2 sun
+F 2212 8 2 shine
+- 2220 2278
+- 2278
+: 2307 7 5 One 
+: 2315 6 5 night 
+: 2322 5 5 in 
+: 2330 7 5 Bang
+: 2338 6 2 kok 
+: 2348 7 5 makes 
+: 2356 4 7 a 
+: 2364 12 9 hard 
+: 2379 12 7 man 
+: 2394 6 5 hum
+: 2402 8 2 ble
+- 2410
+: 2437 4 2 Not 
+: 2442 5 5 much 
+: 2450 5 5 be
+: 2457 9 7 tween 
+: 2467 6 2 des
+: 2475 6 2 pair 
+: 2483 6 2 and 
+: 2491 6 0 ecs
+: 2498 12 4 ta
+: 2512 12 2 sy
+- 2524 2534
+- 2534
+: 2563 8 5 One 
+: 2572 5 5 night 
+: 2578 5 5 in 
+: 2586 6 5 Bang
+: 2593 6 2 kok 
+: 2604 4 5 and 
+: 2610 4 7 the 
+: 2618 14 9 tough 
+: 2634 16 7 guys 
+: 2651 6 5 tum
+: 2658 12 2 ble
+- 2670
+: 2695 4 2 Can’t 
+: 2700 4 5 be 
+: 2707 4 5 too 
+: 2712 8 7 care
+: 2722 7 2 ful 
+* 2731 6 2 with 
+: 2739 4 2 your 
+: 2746 8 0 com
+: 2755 13 4 pa
+: 2770 10 2 ny
+- 2780 2785
+- 2785
+: 2814 4 2 I 
+: 2819 5 4 can 
+: 2828 4 5 feel 
+: 2834 4 5 the 
+: 2839 9 7 de
+: 2850 6 2 vil 
+: 2858 6 2 wal
+: 2866 4 2 king 
+: 2874 6 0 next 
+: 2882 14 4 to 
+: 2898 19 2 me
+- 2917 3465
+- 3465
+F 3494 6 2 Si
+F 3502 10 2 ams 
+F 3517 3 2 gon
+F 3521 3 2 na 
+F 3525 3 2 be 
+F 3529 3 2 the 
+F 3533 3 2 wit
+F 3537 4 2 ness
+- 3541
+F 3542 3 2 To 
+F 3546 3 2 the 
+F 3550 3 2 ul
+F 3554 3 2 ti
+F 3558 7 2 mate 
+F 3566 6 2 test 
+F 3574 4 2 of 
+F 3580 3 2 ce
+F 3584 4 2 re
+F 3590 4 2 bral 
+F 3596 6 2 fit
+F 3604 4 2 ness
+- 3608
+F 3622 4 2 This 
+F 3628 8 2 grips 
+F 3638 5 2 me 
+F 3644 6 2 more 
+F 3652 7 2 than 
+F 3660 3 2 would 
+F 3664 2 2 a
+- 3666
+F 3672 3 2 Mud
+F 3676 2 2 dy 
+F 3679 4 2 old 
+F 3686 3 2 ri
+F 3690 3 2 ver 
+F 3696 3 2 or 
+F 3700 3 2 re
+F 3704 5 2 cli
+F 3711 4 2 ning 
+F 3720 3 2 Bud
+F 3724 3 2 dha
+- 3727
+F 3750 3 2 And 
+F 3754 4 2 thank 
+F 3762 5 2 God 
+F 3769 3 2 I’m 
+F 3774 2 2 on
+F 3777 4 2 ly 
+F 3782 4 2 wat
+F 3788 4 2 ching 
+F 3794 3 2 the 
+F 3798 8 2 game
+- 3806
+F 3812 3 2 Con
+F 3816 8 2 trol
+F 3826 3 2 ling 
+F 3831 3 2 it
+- 3834 3849
+- 3849
+F 3878 4 2 I 
+F 3886 8 2 don’t 
+F 3896 5 2 see 
+F 3902 4 2 you 
+F 3910 6 2 guys 
+F 3918 4 2 ra
+F 3923 3 2 ting
+- 3926
+F 3928 2 2 The 
+F 3934 7 2 kind 
+F 3942 3 2 of 
+F 3946 6 2 mate 
+F 3956 8 2 I’m 
+F 3966 7 2 con
+F 3974 6 2 tem
+F 3982 4 2 pla
+F 3987 3 2 ting
+- 3990
+F 3994 4 2 I’d 
+F 4000 4 2 let 
+F 4005 5 2 you 
+F 4012 8 2 watch
+- 4020
+F 4026 4 2 I 
+F 4031 4 2 would 
+F 4036 3 2 in
+F 4040 3 2 vite 
+F 4046 4 2 you
+- 4050
+F 4054 3 2 But 
+F 4058 3 2 the 
+F 4062 8 2 queens 
+F 4072 4 2 we 
+F 4078 8 2 use 
+F 4094 6 2 would 
+F 4102 3 2 not 
+F 4106 3 2 ex
+F 4112 4 2 cite 
+F 4118 8 2 you
+- 4126
+F 4152 6 2 So 
+F 4160 3 2 you 
+F 4164 2 2 bet
+F 4167 2 2 ter 
+F 4170 3 2 go 
+F 4175 6 2 back 
+F 4182 3 2 to 
+F 4186 4 2 your 
+F 4192 8 2 bars
+- 4200
+F 4204 6 2 Your 
+F 4212 6 2 temp
+F 4220 10 2 les
+- 4230
+F 4248 4 2 Your 
+F 4254 4 2 mas
+F 4259 8 2 sage
+- 4267
+F 4274 7 2 Par
+F 4282 5 2 lours
+- 4287 4297
+- 4297
+: 4326 6 5 One 
+: 4334 7 5 night 
+: 4342 5 5 in 
+: 4350 7 5 Bang
+: 4358 7 2 kok 
+: 4366 6 5 and 
+: 4374 4 7 the 
+: 4382 15 9 world’s 
+: 4398 10 7 your 
+: 4414 6 5 oys
+: 4421 12 2 ter
+- 4433
+: 4455 5 2 The 
+: 4462 8 5 bars 
+: 4472 5 5 are 
+: 4479 6 7 temp
+: 4486 6 2 les 
+: 4495 5 2 but 
+: 4502 5 2 the 
+: 4511 8 0 pearls 
+: 4521 10 4 ain’t 
+: 4534 12 2 free
+- 4546 4555
+- 4555
+: 4584 6 5 You’ll 
+: 4591 6 5 find 
+: 4598 4 7 a 
+: 4604 8 5 god 
+: 4615 6 5 in 
+: 4623 5 5 eve
+: 4630 8 7 ry 
+: 4640 12 9 gol
+: 4656 8 7 den 
+* 4670 8 5 clois
+* 4679 9 2 ter
+- 4688
+: 4710 4 2 A 
+: 4716 11 4 lit
+: 4728 4 5 tle 
+: 4734 8 7 flesh, 
+: 4744 4 2 a 
+: 4752 7 2 lit
+: 4760 4 2 tle 
+: 4768 7 0 his
+: 4776 13 4 to
+: 4791 12 2 ry
+- 4803
+: 4832 5 2 I 
+: 4838 6 4 can 
+: 4846 7 5 feel 
+: 4855 5 5 an 
+: 4861 8 7 an
+: 4871 5 2 gel 
+: 4878 8 2 sli
+: 4887 7 2 ding 
+: 4895 6 0 up 
+: 4904 10 4 to 
+: 4918 12 2 me
+- 4930
+: 4935 7 5 One 
+: 4944 6 5 night 
+: 4952 5 5 in 
+: 4960 7 5 Bang
+: 4968 7 2 kok 
+: 4976 7 5 makes 
+: 4984 6 7 a 
+: 4993 12 9 hard 
+: 5007 12 7 man 
+: 5021 9 5 hum
+: 5032 8 2 ble
+- 5040
+: 5063 6 2 Not 
+: 5071 8 4 much 
+: 5080 3 5 be
+: 5084 10 7 tween 
+: 5096 6 2 des
+: 5104 7 2 pair 
+: 5112 6 2 and 
+: 5120 6 0 ecs
+: 5128 12 4 ta
+: 5142 12 2 sy
+- 5154 5163
+- 5163
+: 5192 6 5 One 
+: 5199 7 5 night 
+: 5208 5 5 in 
+: 5216 6 5 Bang
+: 5223 6 2 kok 
+: 5232 6 5 and 
+: 5240 8 7 the 
+: 5249 12 9 tough 
+: 5263 12 7 guys 
+: 5278 8 5 tum
+: 5288 8 2 ble
+- 5296
+: 5322 6 2 Can’t 
+: 5330 6 4 be 
+: 5338 4 5 too 
+: 5344 8 7 care
+: 5353 7 2 ful 
+: 5361 6 2 with 
+: 5369 6 2 your 
+: 5377 6 0 com
+: 5384 12 4 pa
+: 5400 10 2 ny
+- 5410 5413
+- 5413
+: 5442 6 2 I 
+: 5449 6 4 can 
+: 5457 4 5 feel 
+: 5463 4 5 the 
+: 5470 8 7 de
+: 5480 6 2 vil 
+: 5489 5 2 wal
+: 5496 6 2 king 
+: 5504 8 0 next 
+: 5514 12 4 to 
+* 5530 50 2 me
+E

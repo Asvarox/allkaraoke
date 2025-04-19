@@ -1,0 +1,317 @@
+#ARTIST:Asia
+#TITLE:Heat Of The Moment
+#CREATOR:asia
+#BPM:248,3
+#YEAR:1982
+#PREVIEWSTART:44
+#VIDEO:v=lCALGlGuVUA
+#GENRE:Pop Rock
+#LANGUAGE:English
+#GAP:4323,016512283528
+#ALLKARAOKE_ID:asia-heat-of-the-moment
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:14.885Z
+#ALLKARAOKE_ARTISTORIGIN:IO
+#ALLKARAOKE_CREATORURL:https://www.youtube.com/channel/UCwPmDlEaOe1BeZr57yL0vaw
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=lCALGlGuVUA&pp=ygUSaGVhdCBvZiB0aGUgbW9tZW50
+#ALLKARAOKE_PREVIEWEND:67
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Asia - Heat Of The Moment.mp3
+: 17 3 3 I 
+: 21 3 3 ne
+: 25 3 5 ver 
+: 29 3 5 meant 
+: 33 3 1 to 
+: 37 7 1 be 
+: 45 3 5 so 
+: 49 7 3 bad 
+: 57 3 5 to 
+: 61 7 5 you
+- 68 80
+- 80
+: 97 3 3 One 
+: 101 3 3 thing 
+: 105 3 5 I 
+: 109 3 5 said 
+: 113 3 1 that 
+: 117 7 1 I 
+: 125 3 5 would 
+: 129 7 3 ne
+: 137 3 1 ver 
+: 141 7 1 do
+- 148 160
+- 160
+: 177 3 3 A 
+: 181 3 3 look 
+: 185 3 5 from 
+: 189 3 5 you 
+: 193 3 1 and 
+: 197 7 1 I 
+: 205 3 5 would 
+* 209 7 3 fall 
+* 217 3 5 from 
+* 221 7 5 grace
+- 228 240
+- 240
+: 257 2 3 And 
+: 260 2 3 that 
+: 263 3 5 would 
+: 267 3 5 wipe 
+: 271 2 1 the 
+: 275 6 1 smile
+- 281
+: 283 3 5 Right 
+: 287 5 3 from 
+: 293 5 1 my 
+* 299 5 1 fa
+* 305 36 -2 ~ce
+- 341 350
+- 350
+: 367 3 3 Do 
+: 371 3 3 you 
+: 375 3 5 re
+: 379 3 5 mem
+: 383 3 1 ber 
+: 387 7 1 when 
+: 395 3 5 we 
+: 399 7 3 used 
+: 407 3 5 to 
+: 411 7 5 dance
+- 418 428
+- 428
+: 445 3 3 And 
+: 449 3 3 in
+: 453 3 5 ci
+: 457 3 5 dence 
+: 461 3 1 a
+: 465 7 1 rose 
+: 473 3 5 from 
+: 477 3 3 cir
+: 481 5 1 cum
+: 487 7 1 stance
+- 494 506
+- 506
+: 523 3 3 One 
+: 527 3 3 thing 
+: 531 3 5 lead 
+: 535 3 5 to 
+: 539 2 1 a
+: 542 6 1 no
+: 549 3 5 ther, 
+* 553 7 3 we 
+* 561 3 5 were 
+* 565 7 5 young
+- 572 584
+- 584
+: 601 2 3 And 
+: 604 2 3 we 
+: 607 3 5 would 
+: 611 3 5 scream 
+: 615 3 1 to
+: 619 7 1 ge
+: 627 3 5 ther 
+: 631 7 3 songs 
+: 639 7 1 un
+: 647 3 1 su
+: 651 25 -2 ~ng
+- 676
+: 689 3 -2 It 
+: 693 3 0 was 
+* 697 3 1 the 
+* 701 19 5 heat 
+: 721 5 3 of 
+: 727 3 5 the 
+: 731 5 3 mo
+: 737 3 1 ment
+- 740 746
+- 746
+: 763 3 5 Tel
+: 767 3 7 ling 
+: 771 3 5 you 
+: 775 3 3 what 
+* 782 3 8 my 
+* 789 5 10 heart 
+* 795 1 5 mea
+* 797 1 3 ~
+* 799 5 1 ~nt
+- 804
+: 817 3 1 The 
+: 821 13 5 heat 
+: 835 7 3 of 
+: 843 3 5 the 
+: 847 5 3 mo
+: 853 5 1 ment
+- 858
+: 863 3 -2 Shone 
+: 867 3 1 in 
+: 871 3 3 your 
+: 875 32 3 eye
+: 908 23 1 ~s
+- 931
+: 939 3 3 And 
+: 943 3 3 now 
+: 947 3 5 you 
+: 951 3 5 find 
+: 955 3 1 your
+: 959 7 1 self 
+: 967 3 5 in 
+: 971 5 3 eigh
+: 977 3 5 ty
+: 981 7 5 two
+- 988 998
+- 998
+: 1015 3 3 The 
+: 1019 3 3 dis
+: 1023 3 5 co 
+: 1027 3 5 hot
+: 1031 3 1 spots 
+: 1035 5 1 hold 
+: 1041 3 5 no 
+: 1045 7 3 charm 
+: 1053 3 1 for 
+: 1057 7 1 you
+- 1064 1074
+- 1074
+: 1091 3 3 You 
+: 1095 3 3 can 
+: 1099 3 5 con
+: 1103 3 5 cern 
+: 1107 3 1 your
+: 1111 7 1 self 
+: 1119 3 5 with 
+: 1123 7 3 big
+: 1131 3 5 ger 
+: 1135 7 5 things
+- 1142 1150
+- 1150
+: 1167 3 3 You 
+: 1171 3 3 catch 
+: 1175 3 5 the 
+: 1179 3 5 pearl 
+: 1183 3 1 and 
+: 1187 7 1 ride
+- 1194
+: 1194 3 5 The 
+: 1198 5 3 dra
+: 1204 7 1 gons 
+: 1212 3 1 wi
+: 1216 31 -2 ~ngs
+- 1247
+: 1254 3 -2 ’Cause 
+: 1258 3 0 it’s 
+: 1262 3 1 the 
+: 1266 17 5 heat 
+: 1284 7 3 of 
+: 1292 3 5 the 
+: 1296 5 3 mo
+: 1302 5 1 ment
+- 1307
+: 1324 3 1 The 
+: 1328 13 5 heat 
+: 1342 7 3 of 
+: 1350 3 5 the 
+: 1354 5 3 mo
+: 1360 5 1 ment
+- 1365
+: 1381 3 1 The 
+: 1385 13 5 heat 
+* 1399 7 3 of 
+* 1407 3 5 the 
+* 1411 5 3 mo
+* 1417 5 1 ment
+- 1422
+: 1428 3 -2 Shone 
+: 1432 3 1 in 
+: 1436 3 3 your 
+: 1440 61 3 eye
+: 1502 11 3 ~
+: 1514 17 1 ~
+: 1532 11 1 ~
+: 1544 17 0 ~s
+- 1561 1990
+- 1990
+: 2007 2 3 And 
+: 2010 2 3 when 
+: 2013 3 5 your 
+: 2017 3 5 looks 
+: 2021 3 1 are 
+* 2025 6 1 gone
+- 2031
+: 2033 3 5 And 
+: 2037 5 3 you’re 
+: 2043 3 5 a
+: 2047 7 5 lone
+- 2054 2062
+- 2062
+: 2079 3 3 How 
+: 2083 3 3 ma
+: 2087 3 5 ny 
+: 2091 3 5 nights 
+: 2095 3 1 you 
+: 2099 5 1 sit 
+: 2105 3 5 be
+: 2109 5 3 side 
+: 2115 3 1 the 
+: 2119 7 1 phone
+- 2126 2135
+- 2135
+: 2152 3 3 What 
+: 2156 3 3 were 
+: 2160 3 5 the 
+: 2164 3 5 things 
+: 2168 3 1 you 
+: 2172 5 1 wan
+: 2178 3 5 ted 
+: 2182 5 3 for 
+: 2188 7 5 your
+: 2196 7 5 self
+- 2203 2210
+- 2210
+: 2227 3 3 Teen
+: 2231 3 3 age 
+* 2235 3 5 am
+* 2239 3 5 bi
+* 2243 3 1 tions 
+: 2247 5 1 you 
+: 2253 3 5 re
+: 2257 5 3 mem
+: 2263 7 1 ber 
+: 2271 3 1 we
+: 2275 31 -2 ~ll
+- 2306
+: 2312 3 -2 It 
+: 2316 3 0 was 
+: 2320 3 1 the 
+: 2324 15 5 heat 
+: 2340 7 3 of 
+* 2348 3 5 the 
+* 2352 7 3 mo
+* 2360 3 1 ment
+- 2363 2367
+- 2367
+: 2384 3 5 Tel
+: 2388 3 7 ling 
+: 2392 3 5 you 
+: 2396 3 3 what 
+: 2403 3 8 your 
+: 2410 5 10 heart 
+* 2416 1 5 mea
+* 2418 1 3 ~
+* 2420 5 1 ~nt
+- 2425
+: 2437 3 1 The 
+: 2441 13 5 heat 
+: 2455 7 3 of 
+: 2463 3 5 the 
+: 2467 5 3 mo
+: 2473 5 1 ment
+- 2478
+: 2482 3 -2 Shone 
+: 2486 3 1 in 
+: 2490 3 3 your 
+: 2494 57 3 eye
+: 2552 11 3 ~
+: 2564 17 1 ~
+: 2582 11 1 ~
+: 2594 17 0 ~s
+E

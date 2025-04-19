@@ -1,0 +1,279 @@
+#ARTIST:Duran Duran
+#TITLE:INVISIBLE
+#CREATOR:Duran Duran
+#BPM:114
+#YEAR:2021
+#VIDEO:v=FKwVFWwA_x8
+#LANGUAGE:English
+#GAP:19338,368421052633
+#ALLKARAOKE_ID:duran-duran-invisible
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:11:50.986Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:0,79
+#MP3:Duran Duran - Invisible.mp3
+: 8 2 2 Wal
+: 11 4 1 king 
+: 16 2 2 by 
+: 19 1 1 the 
+: 21 2 1 wa
+: 24 3 -1 ~all
+- 27 29
+- 29
+: 37 1 -6 The 
+: 39 4 2 sha
+: 44 2 1 dows 
+: 48 1 2 will 
+: 50 1 4 not 
+: 53 4 4 fall
+- 57 61
+- 61
+: 69 2 -1 Is 
+: 72 3 2 si
+: 76 2 1 lent
+: 79 2 2 ly 
+: 82 2 1 ig
+: 85 2 1 n
+: 88 2 -1 ~ored
+- 90 125
+- 125
+: 133 2 2 Dis
+: 136 3 2 cou
+: 140 2 1 raged 
+: 144 1 2 by 
+: 147 1 1 the 
+: 149 3 1 noi
+: 153 3 -1 ~ise
+- 156 160
+- 160
+: 168 2 2 Li
+: 171 3 1 ving 
+: 175 1 2 with
+: 177 3 4 out 
+: 181 4 4 choice
+- 185 188
+- 188
+: 196 1 -1 Is 
+: 198 1 -1 a 
+: 200 3 2 life 
+: 204 3 1 with
+: 208 3 2 out 
+: 212 1 1 a 
+: 214 1 1 vo
+: 216 4 -1 ~oice
+- 220 221
+- 221
+: 229 1 -6 When 
+: 231 3 -1 you 
+: 235 3 1 can’t 
+: 239 3 2 e
+: 243 1 4 ven 
+: 245 5 6 say 
+* 259 2 9 my 
+* 262 4 4 name
+- 266
+: 273 1 2 Has 
+: 275 1 4 the 
+: 277 6 6 memory 
+: 285 4 6 gone? 
+: 290 1 2 Are 
+: 292 1 4 you 
+: 294 6 6 feeling 
+: 302 3 6 numb?
+- 305
+: 306 1 2 Go 
+: 308 1 4 and 
+: 310 5 6 call 
+* 323 2 9 my 
+* 326 4 4 name
+- 330
+: 337 1 2 I 
+: 339 1 4 can’t 
+: 341 3 6 play 
+: 345 3 6 this 
+: 349 2 6 game, 
+: 353 1 2 so 
+: 355 1 4 I 
+: 357 3 6 ask 
+: 361 3 6 a
+: 365 3 6 gain
+- 368
+: 369 1 2 Will 
+: 371 1 4 you 
+: 373 6 6 say 
+* 387 2 9 my 
+* 390 4 4 name?
+- 394
+: 401 1 2 Has 
+: 403 1 4 the 
+: 405 6 6 memory 
+: 413 3 6 gone? 
+: 417 1 2 Are 
+: 419 1 4 you 
+: 421 3 6 fee
+: 425 3 6 ling 
+: 429 3 6 numb?
+- 432
+: 433 1 2 Or 
+: 435 1 4 have 
+: 437 3 6 I 
+: 441 3 6 be
+: 445 3 6 come 
+* 449 5 7 in
+* 455 3 6 vi
+* 459 1 4 si
+* 461 3 2 ble?
+- 464 541
+- 541
+: 549 1 -1 The 
+: 551 3 2 drea
+: 555 3 1 mers 
+: 559 3 2 wish 
+: 563 3 1 aw
+: 567 4 0 way
+- 571 573
+- 573
+: 581 1 -1 Is 
+: 583 4 2 fal
+: 588 3 1 ling 
+: 592 1 2 on 
+: 594 2 4 my 
+: 597 4 4 face
+- 601 606
+- 606
+: 614 1 -1 The 
+: 616 3 2 shape 
+: 620 1 1 of 
+: 622 1 1 m
+: 624 2 2 ~y 
+: 628 3 1 disgra
+: 632 2 -1 ~ace
+- 634 637
+- 637
+: 645 1 -6 When 
+: 647 3 -1 you 
+: 651 3 1 don’t 
+: 655 3 2 hear 
+: 659 1 4 a 
+: 661 5 6 word 
+* 675 2 9 I 
+* 678 4 4 say
+- 682
+: 689 1 2 As 
+: 691 1 4 the 
+: 693 3 6 tal
+: 697 3 6 king 
+: 701 3 6 goes, 
+: 706 1 2 it’s 
+: 708 1 4 a 
+: 709 3 6 one-
+: 713 3 6 way 
+: 717 3 6 flow
+- 720
+: 723 1 4 No 
+: 725 4 6 fault, 
+* 739 2 9 no 
+* 742 4 4 blame
+- 746
+: 753 1 2 Has 
+: 755 1 4 the 
+: 757 2 6 me
+: 760 1 6 mo
+: 762 2 6 ry 
+: 765 3 6 gone? 
+: 770 1 2 Are 
+: 772 1 4 you 
+: 774 2 6 fee
+: 777 3 6 ling 
+: 781 4 6 numb?
+- 785
+: 786 1 2 And 
+: 788 1 4 have 
+: 790 2 6 I 
+: 793 3 6 be
+: 797 4 6 come 
+* 802 4 7 in
+* 807 3 6 vi
+* 811 2 4 si
+* 814 4 2 ble?
+- 818 989
+- 989
+: 997 1 -6 And 
+: 999 3 -1 no 
+: 1003 3 1 one 
+: 1007 4 2 hears 
+: 1012 1 4 a 
+: 1014 5 6 word 
+* 1027 1 9 they 
+* 1029 4 6 say
+- 1033
+: 1041 1 2 Has 
+: 1043 1 4 the 
+: 1045 2 6 me
+: 1048 1 6 mo
+: 1049 3 6 ry 
+: 1053 3 6 gone? 
+: 1058 1 2 Are 
+: 1059 1 4 you 
+: 1061 3 6 fee
+: 1065 4 6 ling 
+: 1070 2 6 numb?
+- 1072
+: 1073 2 2 Not 
+: 1076 1 4 a 
+: 1077 5 6 word 
+* 1091 1 9 they 
+* 1093 4 4 say
+- 1097 1098
+- 1098
+: 1106 1 2 But 
+: 1108 1 4 a 
+: 1110 6 6 voiceless 
+: 1117 4 6 crowd 
+: 1122 1 2 is
+: 1124 1 4 ~n't 
+: 1126 2 6 back
+: 1129 2 6 ing 
+: 1132 4 6 down
+- 1136
+: 1137 1 2 When 
+: 1139 1 4 the 
+: 1141 5 6 air 
+* 1155 2 9 turns 
+* 1158 4 4 red
+- 1162
+: 1169 1 2 With 
+: 1171 1 4 their 
+: 1173 3 6 loa
+: 1177 4 6 ded 
+: 1185 1 2 he
+: 1187 1 4 si
+: 1189 2 6 ta
+: 1192 4 6 tion
+- 1196
+: 1201 1 2 Can 
+: 1203 1 4 you 
+: 1205 4 6 say 
+* 1218 2 9 my 
+* 1221 4 4 name?
+- 1225
+: 1233 1 2 Has 
+: 1235 1 4 the 
+: 1237 7 6 memory 
+: 1245 3 6 gone? 
+: 1250 1 2 Are 
+: 1252 1 4 you 
+: 1254 2 6 fee
+: 1257 3 6 ling 
+: 1261 3 6 numb?
+- 1264
+: 1265 2 2 Have 
+: 1268 1 4 we 
+: 1270 4 6 all 
+: 1275 1 6 be
+: 1277 4 6 come 
+* 1282 4 7 in
+* 1287 3 6 vi
+* 1291 2 4 si
+* 1294 4 0 ~ble?
+E

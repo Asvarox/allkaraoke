@@ -1,0 +1,593 @@
+#ARTIST:Rob Cantor
+#TITLE:Shia LaBeouf
+#CREATOR:magic-ott
+#BPM:384
+#YEAR:2012
+#VIDEO:v=o0u4M6vppCI
+#LANGUAGE:English
+#GAP:6324,375
+#ALLKARAOKE_ID:rob-cantor-shia-labeouf
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:04.085Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Rob Cantor - Shia LaBeouf.mp3
+#END:197000
+F 26 3 24 You’re 
+F 30 3 24 wal
+F 34 3 24 king 
+F 38 3 24 in 
+F 42 3 24 the 
+F 46 12 24 woods
+- 58 62
+- 62
+F 88 3 24 There’s 
+F 92 3 24 no 
+F 96 3 24 one 
+F 100 3 24 a
+F 104 4 24 round 
+F 112 3 24 and 
+F 116 5 24 your 
+F 122 9 24 phone 
+F 132 4 24 is 
+F 138 6 24 dead
+- 144
+F 162 4 24 Out 
+F 168 3 24 of 
+F 172 3 24 the 
+F 176 3 24 cor
+F 180 3 24 ner 
+F 184 1 24 of 
+F 186 1 24 your 
+F 188 4 24 eye 
+F 198 3 24 you 
+F 202 9 24 spot 
+F 212 4 24 him:
+- 216
+F 218 7 24 Shi
+F 226 1 24 a 
+F 228 5 24 La
+F 234 8 24 Beouf
+- 242 256
+- 256
+F 282 3 24 He’s 
+F 286 3 24 fol
+F 290 3 24 lo
+F 294 3 24 wing 
+F 298 4 24 you, 
+F 310 1 24 a
+F 312 3 24 bout 
+F 316 5 24 thir
+F 322 3 24 ty 
+F 326 7 24 feet 
+F 334 6 24 back
+- 340
+F 366 1 24 He 
+F 368 5 24 gets 
+F 374 3 24 down 
+F 378 3 24 on 
+F 382 3 24 all 
+F 386 12 24 four 
+F 400 3 24 and 
+F 404 6 24 breaks 
+F 412 3 24 in
+F 416 1 24 to 
+F 418 3 24 a 
+F 422 8 24 sprint
+- 430
+F 444 5 24 He’s 
+F 450 5 24 gai
+F 456 5 24 ning 
+F 462 5 24 on 
+F 468 4 24 you
+- 472
+F 474 5 24 Shi
+F 480 5 24 a 
+F 486 5 24 La
+F 492 10 24 Beouf
+- 502 512
+- 512
+F 538 5 24 You’re 
+F 544 3 24 loo
+F 548 5 24 king 
+F 554 3 24 for 
+F 558 5 24 your 
+F 564 7 24 car 
+F 572 5 24 but 
+F 578 3 24 you’re 
+F 582 5 24 all 
+F 588 5 24 tur
+F 594 3 24 ned 
+F 598 3 24 a
+F 602 12 24 round
+- 614
+F 624 5 24 He’s 
+F 630 5 24 al
+F 636 7 24 most 
+F 644 3 24 u
+F 648 5 24 pon 
+F 654 5 24 you 
+F 660 3 24 now 
+F 664 3 24 and 
+F 668 3 24 you 
+F 672 5 24 can 
+F 678 7 24 see 
+F 686 7 24 there’s 
+F 694 7 24 blood 
+F 702 3 24 on 
+F 706 3 24 his 
+F 710 10 24 face
+- 720
+F 730 5 24 My 
+F 736 9 24 God, 
+F 746 7 24 there’s 
+F 754 7 24 blood 
+F 762 3 24 e
+F 766 3 24 ve
+F 770 3 24 ry
+F 774 8 24 where
+- 782
+: 798 2 25 Run
+: 802 2 25 ning 
+: 806 2 26 for 
+: 810 4 24 your 
+: 816 4 24 life 
+: 824 2 24 (from 
+: 828 4 25 Shi
+: 834 4 26 a 
+: 840 2 25 La
+: 844 6 24 Beouf)
+- 850
+: 856 4 25 He’s 
+: 862 3 25 bran
+: 866 2 24 dis
+: 870 4 25 hing 
+: 876 2 24 a 
+: 880 6 25 knife 
+: 888 4 26 (It’s 
+: 894 4 24 Shi
+: 900 2 25 a 
+: 904 2 24 La
+: 908 6 25 Beouf)
+- 914
+: 924 4 27 Lur
+: 930 3 27 king 
+: 934 1 26 in 
+: 936 2 26 the 
+: 940 8 26 sha
+* 950 24 23 dows
+- 974
+: 990 4 26 Hol
+: 996 2 24 ly
+: 1000 2 26 wood 
+: 1004 4 26 su
+: 1010 2 24 per
+: 1014 4 26 star 
+: 1020 4 25 Shi
+: 1026 2 25 a 
+: 1030 2 25 La
+: 1034 4 24 Beouf
+- 1038
+: 1052 4 25 Liv
+: 1058 3 25 ing 
+: 1062 2 25 in 
+: 1066 2 24 the 
+: 1070 4 25 woods 
+: 1084 4 25 (Shi
+: 1090 2 24 a 
+: 1094 2 23 La
+: 1098 4 24 Beouf)
+- 1102
+: 1116 4 25 Kil
+: 1122 4 25 ling 
+: 1128 2 25 for 
+: 1132 8 24 sport 
+: 1148 4 25 (Shi
+: 1154 2 24 a 
+: 1158 2 24 La
+: 1162 4 24 Beouf)
+- 1166
+: 1182 2 28 Ea
+: 1186 2 28 ting 
+: 1190 2 27 all 
+: 1194 2 26 the 
+: 1198 8 27 bo
+* 1208 22 23 dies
+- 1230
+: 1244 4 25 Ac
+: 1250 4 24 tu
+: 1256 4 22 al 
+: 1262 4 23 can
+: 1268 2 22 ni
+: 1272 2 22 bal 
+: 1276 4 24 Shi
+: 1282 2 23 a 
+: 1286 2 23 La
+: 1290 4 22 Beouf
+- 1294
+F 1316 5 24 Now 
+F 1322 3 24 it’s 
+F 1326 10 24 dark 
+F 1338 5 24 and 
+F 1344 5 24 you 
+F 1350 7 24 seem 
+F 1358 3 24 to 
+F 1362 3 24 have 
+F 1366 9 24 lost 
+F 1376 8 24 him
+- 1384
+F 1388 5 24 But 
+F 1394 5 24 you’re 
+F 1400 5 24 hope
+F 1406 5 24 less
+F 1412 5 24 ly 
+F 1418 7 24 lost 
+F 1426 5 24 your
+F 1432 14 24 self
+- 1446
+F 1454 7 24 Stran
+F 1462 7 24 ded 
+F 1470 3 24 with 
+F 1474 1 24 a 
+F 1476 5 24 mur
+F 1482 5 24 der
+F 1488 6 24 er
+- 1494
+F 1502 5 24 You 
+F 1508 5 24 creep 
+F 1514 5 24 si
+F 1520 5 24 lent
+F 1526 5 24 ly 
+F 1532 3 24 through 
+F 1536 1 24 the 
+F 1538 3 24 un
+F 1542 3 24 der
+F 1546 8 24 brush
+- 1554
+F 1568 5 24 A
+F 1574 8 24 ha! 
+F 1594 5 24 In 
+F 1600 1 24 the 
+F 1602 5 24 dis
+F 1608 10 24 tance
+- 1618
+F 1622 5 24 A 
+F 1628 7 24 small 
+F 1636 7 24 cot
+F 1644 5 24 tage 
+F 1650 3 24 with 
+F 1654 1 24 a 
+F 1656 7 24 light 
+F 1664 6 24 on
+- 1670
+F 1678 8 24 Hope! 
+F 1696 5 24 You 
+F 1702 5 24 move 
+F 1708 9 24 steal
+F 1718 5 24 thi
+F 1724 3 24 ly 
+F 1728 3 24 to
+F 1732 3 24 ward 
+F 1736 6 24 it
+- 1742
+F 1744 5 24 But 
+F 1750 5 24 your 
+F 1756 8 24 leg 
+F 1768 12 24 Ah!
+- 1780
+F 1782 5 24 It’s 
+F 1788 3 24 caught 
+F 1792 3 24 in 
+F 1796 1 24 a 
+F 1798 7 24 bear 
+F 1806 8 24 trap
+- 1814
+: 1820 2 25 Gna
+: 1824 4 25 wing 
+: 1830 2 26 off 
+: 1834 2 26 your 
+: 1838 6 25 leg 
+F 1852 10 24 (Quiet, 
+F 1864 10 24 quiet)
+- 1874
+: 1888 2 25 Lim
+: 1892 2 25 ping 
+: 1896 2 25 to 
+: 1900 2 27 the 
+: 1904 2 26 cot
+: 1908 4 26 tage 
+F 1916 10 24 (Quiet, 
+F 1928 8 24 quiet)
+- 1936
+: 1948 4 26 Now 
+: 1954 2 25 you’re 
+: 1958 2 24 on 
+: 1962 2 25 the 
+: 1966 4 25 door
+: 1972 6 26 step
+- 1978 1986
+- 1986
+: 2012 4 26 Sit
+: 2018 2 24 ting 
+: 2022 2 25 in
+: 2026 4 25 side: 
+: 2046 4 26 Shi
+: 2052 2 25 a 
+: 2056 2 24 La
+: 2060 6 25 Beouf
+- 2066
+: 2076 4 26 Shar
+: 2082 2 24 pen
+: 2086 2 24 ing 
+: 2090 2 25 an 
+: 2094 6 25 axe 
+: 2108 4 26 (Shi
+: 2114 2 25 a 
+: 2118 2 24 La
+: 2122 4 25 Beouf)
+- 2126
+: 2134 4 25 But 
+: 2140 2 24 he 
+: 2144 2 24 does
+: 2148 2 23 n’t 
+: 2152 2 24 hear 
+: 2156 2 25 you 
+: 2160 2 25 en
+: 2164 4 24 ter 
+: 2170 4 23 (Shi
+: 2176 2 25 a 
+: 2180 2 24 La
+: 2184 4 25 Beouf)
+- 2188
+: 2200 2 26 You’re 
+: 2204 4 25 snea
+: 2210 2 27 king 
+: 2214 2 27 up 
+: 2218 2 25 be
+: 2222 4 26 hind 
+* 2228 26 23 him
+- 2254
+: 2268 4 24 Strang
+: 2274 4 23 ling 
+: 2282 4 25 su
+: 2288 2 23 per
+: 2292 4 25 star 
+: 2302 4 24 Shi
+: 2308 2 23 a 
+: 2312 2 24 La
+: 2316 4 23 Beouf
+- 2320
+: 2332 4 25 Figh
+: 2338 4 25 ting 
+: 2344 2 25 for 
+: 2348 2 25 your 
+: 2352 4 25 life 
+: 2358 4 25 with 
+: 2364 4 25 Shi
+: 2370 2 25 a 
+: 2374 2 25 La
+: 2378 4 25 Beouf
+- 2382
+: 2398 4 25 Wrest
+: 2404 4 25 ling 
+: 2410 2 23 a 
+: 2414 4 23 knife 
+: 2424 2 25 from 
+: 2428 4 26 Shi
+: 2434 2 25 a 
+: 2438 2 24 La
+: 2442 4 24 Beouf
+- 2446
+: 2460 2 27 Stab 
+: 2464 2 25 him 
+: 2468 2 25 in 
+: 2472 4 25 his 
+: 2478 6 26 kid
+* 2486 26 23 ney
+- 2512
+: 2526 4 23 Safe 
+: 2532 4 23 at 
+: 2538 6 22 last 
+: 2550 4 23 from 
+: 2556 4 24 Shi
+: 2562 2 22 a 
+: 2566 2 23 La
+: 2570 4 22 Beouf
+- 2574
+F 2600 5 24 You 
+F 2606 9 24 limp 
+F 2616 3 24 in
+F 2620 3 24 to 
+F 2624 3 24 the 
+F 2628 7 24 dark 
+F 2636 12 24 woods
+- 2648
+F 2652 11 24 Blood 
+F 2664 5 24 oo
+F 2670 5 24 zing 
+F 2676 7 24 from 
+F 2684 7 24 your 
+F 2692 15 24 stump 
+F 2708 14 24 leg
+- 2722
+F 2742 7 26 You’ve 
+F 2750 5 26 bea
+F 2756 8 26 ten 
+F 2778 5 26 Shi
+F 2784 4 26 a 
+F 2790 3 26 La
+F 2794 8 26 Beouf
+- 2802 2804
+- 2804
+F 2830 2 26 
+- 2832
+: 2838 4 26 Wait! 
+: 2850 2 25 He 
+: 2854 2 25 is
+: 2858 2 25 n’t 
+: 2862 4 26 dead 
+: 2876 4 26 (Shi
+: 2882 2 25 a 
+: 2886 2 25 sur
+: 2890 8 26 prise)
+- 2898
+: 2902 3 25 There’s 
+: 2906 2 26 a 
+: 2910 3 24 gun 
+: 2914 2 26 to 
+: 2918 2 24 your 
+: 2922 4 25 head 
+: 2938 2 25 and 
+: 2942 2 26 death 
+: 2946 2 25 in 
+: 2950 2 25 his 
+: 2954 6 26 eyes
+- 2960
+: 2968 4 26 But 
+: 2974 2 25 you 
+: 2978 1 24 can 
+: 2980 2 25 do 
+: 2984 2 25 Jiu 
+: 2988 4 26 Jit
+* 2994 24 24 su
+- 3018
+: 3038 2 26 Bo
+: 3042 2 23 dy 
+: 3046 4 25 slam 
+: 3052 4 26 su
+: 3058 2 24 per
+: 3062 4 23 star 
+: 3068 4 24 Shi
+: 3074 2 23 a 
+: 3078 2 22 La
+: 3082 4 23 Beouf
+- 3086
+: 3100 4 28 Le
+: 3106 2 27 gen
+: 3110 2 26 da
+: 3114 2 29 ry 
+: 3118 6 30 fight 
+: 3130 2 28 with 
+: 3134 4 28 Shi
+: 3140 2 28 a 
+: 3144 2 29 La
+: 3148 6 30 Beouf
+- 3154
+: 3164 2 27 Nor
+: 3168 2 26 mal 
+: 3172 2 28 Tues
+: 3176 2 26 day 
+: 3180 6 27 night 
+: 3192 2 27 for 
+: 3196 4 28 Shi
+: 3202 2 26 a 
+: 3206 2 25 La
+: 3210 4 26 Beouf
+- 3214
+: 3226 2 25 You 
+: 3230 1 26 try 
+: 3232 2 27 to 
+: 3236 6 26 swing 
+: 3244 2 25 an 
+: 3248 4 26 axe 
+: 3256 2 25 at 
+: 3260 6 26 Shi
+: 3268 2 25 a 
+: 3272 2 24 La
+: 3276 4 26 Beouf
+- 3280
+: 3292 2 26 But 
+: 3296 2 25 blood 
+: 3300 2 24 is 
+: 3304 2 25 drai
+: 3308 2 24 ning 
+: 3312 4 25 fast 
+: 3318 1 24 from 
+: 3320 2 25 your 
+: 3324 6 24 stump 
+: 3332 8 23 leg
+- 3340
+: 3352 4 25 He’s 
+: 3358 2 25 dod
+: 3362 2 26 ging 
+: 3366 1 27 e
+: 3368 1 24 ve
+: 3370 2 25 ry 
+: 3374 6 25 swipe, 
+: 3386 4 25 he 
+: 3392 2 26 par
+: 3396 2 25 ries 
+: 3400 2 26 to 
+: 3404 2 25 the 
+: 3408 4 26 left
+- 3412
+: 3416 4 29 You 
+: 3422 2 27 coun
+: 3426 2 27 ter 
+: 3430 1 28 to 
+: 3432 2 26 the 
+: 3436 4 28 right, 
+: 3448 4 27 you 
+: 3454 4 25 catch 
+: 3460 2 26 him 
+: 3464 1 25 in 
+: 3466 2 24 the 
+: 3470 4 25 neck
+- 3474
+: 3480 4 23 You’re 
+: 3486 4 25 chop
+: 3492 2 27 ping 
+: 3496 2 24 off 
+: 3500 2 27 his 
+: 3504 6 26 head 
+* 3512 30 24 now
+- 3542
+: 3550 4 24 You 
+: 3556 2 23 have 
+: 3560 3 24 just 
+: 3564 1 23 de
+: 3566 1 23 ca
+: 3568 2 23 pi
+: 3572 2 24 ta
+: 3576 2 23 ted 
+: 3580 4 25 Shi
+: 3586 2 23 a 
+: 3590 2 23 La
+: 3594 10 24 Beouf
+- 3604
+F 3624 5 24 His 
+F 3630 7 24 head 
+F 3638 9 24 top
+F 3648 7 24 les 
+F 3656 1 24 to 
+F 3658 1 24 the 
+F 3660 6 24 floor, 
+F 3676 3 24 ex
+F 3680 7 24 pres
+F 3688 3 24 sion
+F 3692 6 24 less
+- 3698 3700
+- 3700
+F 3726 5 24 You 
+F 3732 11 24 fall 
+F 3744 3 24 to 
+F 3748 5 24 your 
+F 3754 9 24 knees 
+F 3764 5 24 and 
+F 3770 7 24 catch 
+F 3778 3 24 your 
+F 3782 12 24 breath
+- 3794 3796
+- 3796
+F 3822 5 24 You’re 
+F 3828 5 24 fi
+F 3834 5 24 nal
+F 3840 3 24 ly 
+F 3844 8 24 safe
+- 3852
+F 3872 5 24 From 
+F 3878 7 24 Shi
+F 3886 3 24 a 
+F 3890 5 24 La
+F 3896 8 24 Beouf
+E

@@ -1,0 +1,354 @@
+#ARTIST:Sabaton
+#TITLE:Twilight Of The Thunder God
+#CREATOR:Jahner
+#BPM:380,64
+#YEAR:2012
+#PREVIEWSTART:52
+#VIDEO:v=4cxpeOgIGkc
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:31774,817150063052
+#ALLKARAOKE_ID:sabaton-twilight-of-the-thunder-god
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:03.418Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_PREVIEWEND:72
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Sabaton - Twilight Of The Thunder God.mp3
+: 25 4 4 There 
+: 32 2 1 is 
+: 36 4 1 Fen
+: 46 4 -1 ris 
+: 54 11 1 grim
+- 65
+: 80 3 -1 His 
+: 87 5 1 jaws 
+: 95 2 1 are 
+: 99 8 1 o
+: 110 4 -1 pen 
+: 119 12 1 wide
+- 131
+: 143 4 3 The 
+: 151 4 3 ser
+: 159 9 3 pent 
+: 183 4 3 ri
+: 191 4 3 ses 
+: 199 4 3 from 
+: 207 2 3 the 
+: 211 15 3 waves
+- 226 245
+- 245
+* 270 4 3 Jor
+* 278 4 4 mun
+: 286 2 1 gandr 
+: 290 5 1 twists 
+: 297 3 -1 and 
+* 305 18 1 turns,
+- 323
+: 343 3 1 Migh
+: 350 5 1 ty 
+: 358 4 1 in 
+: 365 5 -1 his 
+: 374 13 1 wrath
+- 387
+: 399 5 3 The 
+: 406 13 3 eyes 
+: 429 5 3 are 
+: 438 4 3 full 
+: 446 4 3 of 
+: 453 5 3 pri
+: 461 3 3 mal 
+: 466 11 3 hate
+- 477 508
+- 508
+* 533 18 1 Thor, 
+* 565 3 1 O
+* 570 3 1 din’s 
+* 577 6 1 son,
+- 583
+: 589 5 3 Pro
+: 597 3 4 tec
+: 605 12 4 tor 
+: 621 4 6 of 
+* 629 5 8 ma
+* 637 2 6 ~n
+* 641 10 4 kind,
+- 651
+: 661 4 6 Ride 
+: 669 2 6 to 
+: 673 7 6 meet 
+: 684 4 4 your 
+: 692 15 6 fate,
+- 707
+* 716 4 4 Your 
+* 725 4 1 des
+: 733 3 1 ti
+: 737 8 1 ny 
+: 749 4 -1 a
+: 757 14 1 waits
+- 771
+: 789 16 1 Thor, 
+: 821 3 1 Hló
+: 826 3 1 dyn’s 
+: 832 8 1 son,
+- 840
+: 845 5 3 Pro
+: 853 3 4 tec
+: 861 12 4 tor 
+: 877 4 6 of 
+: 885 5 8 ma
+: 893 2 6 ~n
+: 897 10 4 kind,
+- 907
+: 916 4 6 Ride 
+: 924 2 6 to 
+: 928 7 6 meet 
+: 939 4 4 your 
+: 947 17 6 fate,
+- 964
+: 979 4 1 Rag
+: 987 2 1 na
+: 991 6 1 rök 
+: 1003 4 -1 a
+: 1011 15 1 waits
+- 1026 1146
+- 1146
+* 1171 4 4 Vingt
+: 1179 2 1 hor 
+: 1183 4 1 rise 
+: 1191 4 -1 to 
+: 1200 11 1 face
+- 1211
+: 1227 4 3 The 
+: 1235 4 4 snake 
+: 1243 2 1 with 
+: 1247 5 1 ham
+: 1256 4 -1 mer 
+: 1263 13 1 high
+- 1276
+: 1298 11 3 At 
+: 1323 4 3 the 
+: 1331 8 3 edge 
+: 1347 4 3 of 
+: 1354 2 3 the 
+: 1358 16 3 world
+- 1374 1393
+- 1393
+: 1418 4 3 As 
+: 1426 4 4 light
+: 1433 2 1 ning 
+: 1438 5 1 fills 
+: 1447 5 -1 the 
+: 1455 12 1 air
+- 1467
+: 1486 2 -1 As 
+: 1490 5 1 Mjöll
+: 1499 2 1 nir 
+: 1503 4 1 does 
+: 1511 4 -1 it’s 
+: 1518 11 1 work
+- 1529
+: 1546 4 3 The 
+: 1554 4 3 twin
+: 1561 11 3 fold 
+: 1585 5 3 ser
+: 1594 4 3 pent 
+: 1601 5 3 roars 
+: 1610 2 3 in 
+: 1614 14 3 pain
+- 1628 1657
+- 1657
+* 1682 16 1 Thor, 
+* 1714 3 1 O
+* 1719 3 1 din’s 
+* 1726 6 1 son,
+- 1732
+: 1737 5 3 Pro
+: 1745 3 4 tec
+: 1753 12 4 tor 
+* 1769 4 6 of 
+* 1777 5 8 ma
+* 1785 2 6 ~n
+* 1789 10 4 kind,
+- 1799
+: 1809 4 6 Ride 
+: 1817 2 6 to 
+: 1821 7 6 meet 
+: 1832 4 4 your 
+: 1840 15 6 fate,
+- 1855
+* 1865 4 4 Your 
+* 1874 4 1 des
+: 1882 3 1 ti
+: 1886 8 1 ny 
+: 1898 4 -1 a
+: 1906 14 1 waits
+- 1920
+: 1937 16 1 Thor, 
+: 1969 3 1 Hló
+: 1974 3 1 dyn’s 
+: 1980 8 1 son,
+- 1988
+: 1993 5 3 Pro
+: 2001 3 4 tec
+: 2009 12 4 tor 
+: 2025 4 6 of 
+: 2033 5 8 ma
+: 2041 2 6 ~n
+: 2045 10 4 kind,
+- 2055
+: 2063 4 6 Ride 
+: 2072 2 6 to 
+: 2076 7 6 meet 
+: 2087 4 4 your 
+: 2095 17 6 fate,
+- 2112
+: 2127 4 1 Rag
+: 2135 2 1 na
+: 2139 6 1 rök 
+: 2151 4 -1 a
+: 2159 15 1 waits
+- 2174 2676
+- 2676
+F 2701 5 0 Migh
+F 2709 2 0 ty 
+F 2713 12 0 Thor, 
+F 2733 5 0 grabs 
+F 2741 2 0 the 
+F 2745 11 0 snake
+- 2756
+F 2764 6 0 Firm
+F 2774 5 0 ly 
+F 2782 5 0 by 
+F 2789 3 0 its 
+F 2794 14 0 tongue
+- 2808
+F 2828 5 0 Lifts 
+F 2837 5 0 his 
+F 2845 1 0 ham
+F 2850 3 0 mer 
+F 2857 7 0 high 
+F 2866 4 0 to 
+F 2874 11 0 strike
+- 2885
+F 2892 5 0 Soon 
+F 2901 4 0 his 
+F 2909 5 0 work 
+F 2917 2 0 is 
+F 2921 13 0 done
+- 2934
+F 2955 5 0 Ving
+F 2965 4 0 thor 
+F 2972 5 0 slays 
+F 2980 2 0 the 
+F 2985 5 0 guar
+F 2993 3 0 dian 
+F 3000 11 0 snake
+- 3011
+F 3018 6 0 Lea
+F 3027 4 0 ding 
+F 3036 5 0 to 
+F 3044 2 0 the 
+F 3049 12 0 death
+- 3061
+F 3083 6 0 Twi
+F 3092 4 0 light 
+F 3100 4 0 of 
+F 3108 2 0 the 
+F 3112 6 0 thun
+F 3121 4 0 der 
+F 3129 12 0 god
+- 3141
+F 3147 4 0 Rag
+F 3156 3 0 na
+F 3164 4 0 rök 
+F 3172 2 0 a
+F 3176 13 0 waits
+- 3189
+F 3212 5 0 Twi
+F 3219 4 0 light 
+F 3244 10 0 of 
+F 3267 5 0 the 
+F 3275 5 0 thun
+F 3284 2 0 der 
+F 3288 17 0 god
+- 3305 3313
+- 3313
+F 3338 4 0 Twi
+F 3346 17 0 light 
+F 3370 17 0 of 
+F 3394 4 0 the 
+F 3403 4 0 thun
+F 3410 2 0 der 
+F 3415 21 0 god
+- 3436 3440
+- 3440
+F 3465 4 0 Twi
+F 3474 16 0 light 
+F 3498 18 0 of 
+F 3521 5 0 the 
+F 3531 4 0 thun
+F 3538 2 0 der 
+F 3542 20 0 god
+- 3562 3568
+- 3568
+F 3593 5 0 Twi
+F 3603 16 0 light 
+F 3626 18 0 of 
+F 3649 5 0 the 
+F 3658 9 0 thun
+F 3670 2 0 der 
+F 3673 40 0 god
+- 3713 4462
+- 4462
+* 4487 16 1 Thor, 
+* 4519 3 1 O
+* 4524 3 1 din’s 
+* 4531 6 1 son,
+- 4537
+: 4542 5 3 Pro
+: 4550 3 4 tec
+: 4558 12 4 tor 
+: 4574 4 6 of 
+: 4582 5 8 ma
+: 4590 2 6 ~n
+: 4594 10 4 kind,
+- 4604
+: 4615 4 6 Ride 
+: 4623 2 6 to 
+: 4627 7 6 meet 
+: 4638 4 4 your 
+: 4646 15 6 fate,
+- 4661
+* 4669 4 4 Your 
+* 4678 4 1 des
+: 4686 3 1 ti
+: 4690 8 1 ny 
+: 4702 4 -1 a
+: 4710 14 1 waits
+- 4724
+: 4743 16 1 Thor, 
+: 4775 3 1 Hló
+: 4780 3 1 dyn’s 
+: 4787 8 1 son,
+- 4795
+: 4798 5 3 Pro
+: 4806 3 4 tec
+: 4814 12 4 tor 
+: 4830 4 6 of 
+: 4838 5 8 ma
+: 4846 2 6 ~n
+: 4850 10 4 kind,
+- 4860
+: 4870 4 6 Ride 
+: 4878 2 6 to 
+: 4882 7 6 meet 
+: 4892 4 4 your 
+: 4901 14 6 fate,
+- 4915
+: 4933 4 1 Rag
+: 4941 2 1 na
+: 4945 6 1 rök 
+: 4957 4 -1 a
+: 4965 15 1 waits
+E

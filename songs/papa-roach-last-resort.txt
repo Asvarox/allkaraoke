@@ -1,0 +1,559 @@
+#ARTIST:Papa Roach
+#TITLE:Last Resort
+#CREATOR:FaKK
+#BPM:363
+#YEAR:2000
+#VIDEO:v=evfwCzdzCl8
+#LANGUAGE:English
+#GAP:-83,96694214876034
+#ALLKARAOKE_ID:papa-roach-last-resort
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:03.413Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_PREVIEWEND:58
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Papa Roach - Last Resort.mp3
+: 3 5 4 Cut 
+: 11 5 4 my 
+: 19 5 4 life 
+: 27 5 7 in
+: 35 5 7 to 
+: 43 5 2 pie
+: 51 8 2 ces,
+- 59
+: 67 5 4 This 
+: 75 5 4 is 
+: 83 5 4 my 
+: 91 5 7 last 
+: 99 5 9 re
+: 107 12 2 sort!
+- 119
+: 131 3 4 Suf
+: 135 3 4 fo
+: 139 6 4 ca
+: 147 8 4 tion, 
+: 163 6 7 no 
+: 171 5 2 brea
+: 179 5 2 thing,
+- 184
+: 187 4 4 Don’t 
+: 194 2 4 give 
+: 198 2 2 a 
+: 202 5 4 fuck,
+- 207
+: 211 2 4 If 
+: 214 2 4 I 
+: 218 3 7 cut 
+: 222 2 7 my 
+* 226 5 9 arm 
+: 234 5 2 blee
+: 242 6 2 ding!
+- 248 299
+- 299
+: 323 5 4 This 
+: 331 5 4 is 
+: 339 5 4 my 
+: 347 5 7 last 
+: 355 5 9 re
+: 363 12 2 sort!
+- 375 492
+- 492
+F 516 3 4 Cut 
+F 520 2 4 my 
+F 524 5 4 life 
+F 532 3 4 in
+F 536 3 4 to 
+F 540 5 4 pie
+F 548 5 2 ces.
+- 553
+F 569 2 4 I’ve 
+F 573 2 4 reached 
+F 577 2 4 my 
+F 581 2 6 last 
+F 585 2 2 re
+F 589 4 4 sort
+- 593
+F 597 3 4 Suf
+F 601 2 2 fo
+F 605 4 4 ca
+F 613 2 4 tion, 
+F 617 2 2 no 
+F 621 4 4 brea
+F 628 5 2 thing
+- 633
+F 640 3 4 Don’t 
+F 644 2 4 give 
+F 648 2 4 a 
+F 652 5 4 fuck
+- 657
+F 661 2 4 If 
+F 665 2 4 I 
+F 669 2 4 cut 
+F 673 2 4 my 
+F 677 4 4 arm 
+F 685 5 4 blee
+F 693 3 -1 ding
+- 696
+F 709 2 4 Do 
+F 713 2 4 you 
+F 717 3 4 e
+F 721 2 4 ven 
+F 725 5 4 care
+- 730
+F 734 2 4 If 
+F 738 3 4 I 
+F 742 5 4 die 
+F 749 5 4 blee
+F 756 4 4 ding?
+- 760
+F 769 2 4 Would 
+F 773 2 4 it 
+F 777 2 4 be 
+F 781 3 4 wrong
+- 784
+F 785 2 4 Would 
+F 789 2 4 it 
+F 793 2 4 be 
+F 797 5 4 right
+- 802
+F 825 1 4 If
+F 827 1 4 I 
+F 829 2 4 took 
+F 833 2 4 my 
+F 837 4 6 life 
+F 843 2 7 to
+F 847 5 4 night
+- 852
+F 861 2 4 Chan
+F 865 2 7 ces 
+F 869 5 4 are 
+F 877 2 4 that 
+F 881 2 7 I 
+F 885 5 4 might
+- 890
+F 901 3 4 Mu
+F 905 2 4 ti
+F 909 3 4 la
+F 914 2 7 tion 
+F 918 2 4 out 
+F 922 2 2 of 
+F 927 5 4 sight
+- 932
+F 954 1 4 And 
+F 956 1 4 I’m 
+F 958 3 4 con
+F 962 2 4 tem
+F 966 3 4 pla
+F 970 3 4 ting 
+F 974 3 7 su
+F 978 2 7 i
+F 982 8 4 cide
+- 990
+: 1010 3 2 ’Cause 
+: 1014 4 4 I’m 
+: 1022 3 4 lo
+: 1026 2 2 sing 
+: 1030 5 4 my 
+: 1038 6 4 sight,
+- 1044
+: 1054 3 4 Lo
+: 1058 2 2 sing 
+: 1062 5 4 my 
+: 1070 8 4 mind,
+- 1078
+: 1085 5 4 Wish 
+: 1093 5 4 some
+: 1101 3 4 bo
+: 1105 2 2 dy 
+: 1109 5 4 would 
+: 1117 3 4 tell 
+: 1121 2 2 me 
+: 1125 4 4 I’m 
+: 1133 9 4 fine
+- 1142
+: 1149 3 4 Lo
+: 1153 2 4 sing 
+: 1157 5 7 my 
+: 1165 6 2 sight,
+- 1171
+: 1181 3 4 Lo
+: 1185 2 4 sing 
+: 1189 5 7 my 
+: 1197 8 2 mind,
+- 1205
+: 1213 5 7 Wish 
+: 1221 5 7 some
+: 1229 3 7 bo
+: 1233 2 4 dy 
+: 1237 5 7 would 
+: 1245 3 7 tell 
+: 1249 2 4 me 
+: 1253 4 4 I’m 
+: 1261 8 2 fine
+- 1269 1386
+- 1386
+F 1410 2 4 I 
+F 1414 2 4 ne
+F 1418 2 4 ver 
+F 1422 1 4 re
+F 1424 1 4 a
+F 1426 2 4 lized 
+F 1430 2 4 I 
+F 1434 2 2 was 
+F 1438 4 4 spread 
+F 1446 2 4 too 
+F 1450 5 4 thin
+- 1455
+F 1466 2 4 Till 
+F 1470 2 4 it 
+F 1474 2 2 was 
+F 1478 2 4 too 
+F 1482 4 7 late
+- 1486
+F 1491 2 4 And 
+F 1495 2 4 I 
+F 1499 2 4 was 
+F 1503 3 4 emp
+F 1507 2 2 ty 
+F 1511 2 4 with
+F 1515 5 6 in
+- 1520
+F 1526 3 6 Hun
+F 1530 4 4 gry 
+F 1538 3 4 fee
+F 1542 2 4 ding 
+F 1546 2 2 on 
+F 1550 3 4 cha
+F 1555 4 2 os
+- 1559
+F 1562 2 4 And 
+F 1566 3 4 li
+F 1570 2 4 ving 
+F 1574 2 4 in 
+F 1578 3 7 sin
+- 1581
+F 1598 3 4 Down
+F 1602 4 2 ward 
+F 1610 3 4 spi
+F 1614 3 4 ral,
+- 1617
+F 1622 3 4 Where 
+F 1626 2 2 do 
+F 1630 5 4 I 
+F 1638 2 7 be
+F 1642 6 4 gin?
+- 1648
+F 1666 3 4 It 
+F 1670 4 4 all 
+F 1678 3 4 star
+F 1682 2 2 ted 
+F 1686 2 4 when 
+F 1690 2 2 I 
+F 1694 5 4 lost 
+F 1702 2 4 my 
+F 1706 3 6 mo
+F 1711 4 2 ther
+- 1715
+F 1723 3 4 No 
+F 1727 2 4 love 
+F 1731 2 4 for 
+F 1735 2 4 my
+F 1739 4 4 self
+- 1743
+F 1751 3 4 And 
+F 1755 2 4 no 
+F 1759 3 2 love 
+F 1763 2 4 for 
+F 1767 2 6 a
+F 1771 3 7 no
+F 1775 4 2 ther
+- 1779
+F 1784 3 7 Sear
+F 1788 3 4 ching
+- 1791
+F 1795 2 4 To 
+F 1799 2 4 find 
+F 1803 2 4 a 
+F 1807 2 6 love 
+F 1811 2 4 up
+F 1815 2 4 on 
+F 1819 2 4 a 
+F 1823 3 4 high
+F 1827 2 2 er 
+F 1831 3 6 le
+F 1835 2 -1 vel
+- 1837
+F 1847 3 6 Fin
+F 1851 3 4 ding
+- 1854
+F 1859 3 4 No
+F 1863 2 4 thing 
+F 1867 2 4 but 
+F 1871 4 4 ques
+F 1879 2 4 tions 
+F 1883 2 4 and 
+F 1887 3 6 de
+F 1893 4 -1 vils
+- 1897
+: 1907 3 2 ’Cause 
+: 1911 5 4 I’m 
+: 1919 3 4 lo
+: 1923 2 2 sing 
+: 1927 3 4 my 
+: 1935 6 4 sight
+- 1941
+: 1951 3 4 Lo
+: 1955 2 2 sing 
+: 1959 5 4 my 
+: 1967 8 4 mind,
+- 1975
+: 1983 5 4 Wish 
+: 1991 5 4 some
+: 1999 3 4 bo
+: 2003 2 2 dy 
+: 2007 5 4 would 
+: 2015 2 4 tell 
+: 2019 2 2 me 
+: 2023 5 4 I’m 
+: 2031 8 4 fine
+- 2039
+: 2046 3 4 Lo
+: 2050 2 4 sing 
+: 2054 6 7 my 
+: 2062 7 2 sight,
+- 2069
+: 2079 3 4 Lo
+: 2083 2 4 sing 
+: 2087 5 7 my 
+: 2095 8 2 mind,
+- 2103
+: 2111 5 7 Wish 
+: 2119 5 7 some
+: 2127 3 7 bo
+: 2131 2 4 dy 
+: 2135 5 7 would 
+: 2143 2 7 tell 
+: 2147 2 4 me 
+: 2151 5 4 I’m 
+: 2159 8 2 fine
+- 2167
+: 2175 5 4 No
+: 2183 8 4 thing’s 
+: 2199 5 7 al
+: 2207 13 2 right
+- 2220
+: 2240 6 7 No
+: 2248 9 4 thing 
+: 2264 5 7 is 
+: 2272 16 2 fine
+- 2288 2303
+- 2303
+: 2327 5 4 I’m 
+: 2335 3 4 run
+: 2340 7 4 ning 
+: 2352 5 4 and 
+: 2360 4 4 I’m 
+: 2368 12 7 cry
+: 2382 7 6 ~
+: 2392 17 4 in’
+- 2409 2431
+- 2431
+: 2455 5 4 I’m 
+: 2463 9 7 cry
+: 2475 9 6 ~
+: 2487 17 4 in’
+- 2504
+: 2519 5 4 I’m 
+* 2527 9 7 cry
+* 2539 9 6 ~
+* 2551 14 4 in’
+- 2565
+: 2583 5 4 I’m 
+: 2591 9 7 cry
+: 2603 9 6 ~
+: 2615 12 4 in’
+- 2627
+: 2647 4 -1 I’m 
+: 2655 12 -1 cry
+: 2671 6 -3 ing
+- 2677
+F 2695 20 4 I 
+F 2727 13 4 can’t 
+F 2759 20 4 go 
+F 2793 18 4 on
+- 2811
+F 2825 20 4 Li
+F 2859 18 4 ving 
+F 2890 11 4 this 
+F 2922 19 4 way
+- 2941
+: 2953 4 4 Cut 
+: 2961 5 4 my 
+: 2969 4 4 life 
+: 2977 5 7 in
+: 2985 4 7 to 
+: 2993 5 2 pie
+: 3001 5 2 ces
+- 3006
+: 3017 5 4 This 
+: 3025 4 4 is 
+: 3033 4 4 my 
+: 3041 5 7 last 
+: 3049 4 9 re
+: 3057 9 2 sort
+- 3066
+: 3081 3 4 Suf
+: 3085 2 4 fo
+: 3089 4 4 ca
+: 3097 6 4 tion,
+- 3103
+: 3113 6 7 No 
+: 3121 5 2 brea
+: 3129 4 2 thing
+- 3133
+: 3137 4 4 Don’t 
+: 3145 2 4 give 
+: 3149 2 2 a 
+: 3153 4 4 fuck
+- 3157
+: 3160 2 4 If 
+: 3164 2 4 I 
+: 3168 2 7 cut 
+: 3172 2 7 my 
+: 3176 4 9 arm 
+: 3184 5 2 blee
+: 3192 4 2 ding
+- 3196
+: 3204 3 4 Would 
+: 3208 2 4 it 
+: 3212 2 4 be 
+: 3216 2 4 wrong
+- 3218
+: 3220 3 4 Would 
+: 3224 3 4 it 
+: 3228 2 2 be 
+: 3232 4 4 right?
+- 3236
+: 3260 1 4 If 
+: 3262 1 2 I 
+: 3264 3 4 took 
+: 3268 2 2 my 
+: 3272 2 4 life 
+: 3276 2 2 to
+: 3280 4 4 night
+- 3284
+: 3297 3 4 Chan
+: 3301 2 2 ces 
+: 3305 4 4 are 
+: 3313 2 6 that 
+: 3317 2 7 I 
+: 3321 6 4 might.
+- 3327
+: 3337 3 4 Mu
+: 3341 2 2 ti
+: 3345 2 4 la
+: 3349 2 2 tion 
+: 3353 2 4 out 
+: 3357 2 2 of 
+: 3361 5 4 sight.
+- 3366
+: 3389 1 4 And 
+: 3391 1 2 I’m 
+: 3393 2 4 con
+: 3397 2 2 tem
+: 3401 3 4 pla
+: 3405 2 2 ting 
+: 3409 3 4 su
+: 3413 2 7 i
+* 3417 9 4 cide.
+- 3426
+: 3446 3 2 ’Cause 
+: 3450 5 4 I’m 
+: 3458 3 4 lo
+: 3462 2 2 sing 
+: 3466 5 4 my 
+: 3474 6 4 sight
+- 3480
+: 3490 3 4 Lo
+: 3494 2 2 sing 
+: 3498 5 4 my 
+: 3506 8 4 mind,
+- 3514
+: 3522 4 4 Wish 
+: 3530 5 4 some
+: 3538 3 4 bo
+: 3542 2 2 dy 
+: 3546 5 4 would 
+: 3554 2 4 tell 
+: 3558 2 2 me 
+: 3562 4 4 I’m 
+: 3570 8 4 fine
+- 3578
+: 3585 3 4 Lo
+: 3589 2 4 sing 
+: 3593 5 7 my 
+: 3601 8 2 sight
+- 3609
+: 3617 3 4 Lo
+: 3621 2 4 sing 
+: 3625 5 7 my 
+: 3633 8 2 mind
+- 3641
+: 3650 5 7 Wish 
+: 3658 5 7 some
+: 3666 3 7 bo
+: 3670 2 4 dy 
+: 3674 5 7 would 
+: 3682 2 7 tell 
+: 3686 2 4 me 
+: 3690 5 4 I’m 
+: 3698 8 2 fine
+- 3706
+: 3714 6 4 No
+: 3722 8 4 thing’s 
+: 3738 5 7 al
+: 3746 12 2 right,
+- 3758
+* 3778 5 7 No
+: 3786 7 4 thing 
+: 3802 5 7 is 
+: 3810 16 2 fine
+- 3826 3842
+- 3842
+: 3866 4 4 I’m 
+: 3874 3 4 run
+: 3878 6 4 ning 
+: 3890 5 4 and 
+: 3898 5 4 I’m 
+* 3906 9 7 cry
+: 3918 9 6 ~
+: 3930 20 4 in’
+- 3950
+F 3971 16 16 I 
+F 4001 16 16 can’t 
+F 4033 18 16 go 
+F 4065 20 16 on 
+F 4098 24 16 li
+F 4130 17 16 ving 
+F 4162 17 16 this 
+F 4194 28 16 way
+- 4222 4363
+- 4363
+: 4387 11 4 Can’t 
+: 4403 10 6 go 
+: 4419 12 7 o
+: 4435 10 6 ~n
+- 4445 4491
+- 4491
+: 4515 12 4 Li
+: 4531 12 6 ving 
+: 4547 10 7 this 
+: 4563 11 6 way
+- 4574 4620
+- 4620
+: 4644 11 4 No
+: 4660 12 6 thing’s 
+: 4676 14 7 a
+: 4692 14 6 ~ll 
+* 4756 10 11 right!
+E
