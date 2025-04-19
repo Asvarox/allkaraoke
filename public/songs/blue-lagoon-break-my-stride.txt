@@ -1,0 +1,637 @@
+#ARTIST:Blue Lagoon
+#TITLE:Break My Stride
+#BPM:210
+#YEAR:2009
+#PREVIEWSTART:9
+#VIDEO:v=bO3-FA1Kq-A
+#LANGUAGE:English
+#GAP:4840
+#ALLKARAOKE_ID:blue-lagoon-break-my-stride
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:11:53.322Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_PREVIEWEND:45
+#ALLKARAOKE_VOLUME:0,77
+#MP3:Blue Lagoon - Break My Stride.mp3
+#COVER:Blue Lagoon - Break My Stride [CO].jpg
+#BACKGROUND:Blue Lagoon - Break My Stride [BG].jpg
+#START:5
+F 14 2 0 This 
+F 18 2 0 one 
+F 21 1 0 de
+F 22 1 0 de
+F 24 1 0 ca
+F 26 1 0 ted 
+F 28 1 0 to 
+F 29 1 0 them 
+F 31 2 0 Heart
+F 35 2 0 bro
+F 38 1 0 ken 
+F 40 1 0 Lo
+F 42 4 0 vers
+- 46 55
+- 55
+: 69 2 5 Last 
+: 73 2 5 night 
+: 76 2 5 I 
+: 81 2 4 had 
+: 84 2 2 the 
+: 89 2 4 stra
+: 91 2 0 ~n 
+: 95 2 0 gest 
+* 101 7 -5 dream
+- 108 112
+- 112
+: 126 2 7 I 
+: 129 2 7 sailed 
+: 133 1 7 a
+: 135 4 7 way 
+: 140 2 7 to 
+: 143 2 6 Chi
+: 146 1 4 ~
+: 148 3 4 na 
+: 156 1 4 in 
+: 158 1 6 a 
+: 160 2 6 lit
+: 163 1 6 tle 
+: 165 2 6 row
+: 168 3 6 boat 
+: 172 1 6 to 
+: 175 1 4 fi~
+: 177 1 1 nd 
+: 180 1 2 ya
+- 181
+: 187 1 4 And 
+: 189 2 5 you 
+: 193 3 5 said 
+: 197 2 5 you 
+: 201 2 5 had 
+: 205 2 5 to 
+: 209 1 4 get 
+: 213 2 2 your 
+: 218 4 4 laun
+: 223 2 0 dry 
+: 229 8 -5 cleaned
+- 237 239
+- 239
+: 253 3 7 Didn’t 
+: 257 3 7 want 
+: 261 2 7 no 
+: 265 3 7 one 
+: 269 1 4 to 
+: 271 2 6 ho~
+: 274 2 4 ld 
+: 277 3 4 you, 
+: 281 3 6 what 
+: 285 2 6 does 
+: 289 2 7 that 
+: 292 2 7 mean
+- 294
+: 299 1 6 And 
+: 301 1 5 you 
+: 305 4 6 said
+- 309
+* 317 3 -1 Ain’t 
+* 321 1 -1 no
+* 323 1 -1 thing 
+* 325 1 -1 gon
+* 327 1 -1 na 
+* 329 2 0 break 
+* 332 2 0 my 
+* 338 4 2 stride
+- 342
+: 349 2 6 No
+: 352 1 6 bo
+: 354 1 6 dy’s 
+: 357 1 6 gon
+: 359 1 6 na 
+: 363 4 7 slow 
+: 369 5 6 me 
+: 377 3 6 do~
+: 381 4 4 wn,
+- 385
+: 390 2 7 Oh 
+: 393 4 4 no
+- 397
+: 405 2 2 I’ve 
+: 409 2 4 got 
+: 413 1 2 to 
+: 417 2 4 keep 
+: 421 2 2 on 
+: 426 6 7 mov
+: 433 4 6 ing
+- 437
+: 445 2 -1 Ain’t 
+: 448 1 -1 no
+: 450 1 -1 thing 
+: 452 1 -1 gon
+: 454 1 -1 na 
+: 457 2 0 break 
+: 460 2 0 my 
+: 465 6 2 stride
+- 471
+: 478 1 6 I’m 
+: 480 1 6 run
+: 482 1 6 ning 
+: 485 1 6 an 
+: 487 1 6 I 
+: 490 6 7 won’t 
+: 497 4 6 touch 
+: 505 2 6 grou~
+: 509 3 4 nd,
+- 512
+: 517 3 7 Oh 
+: 521 4 4 no
+- 525
+: 533 2 2 I’ve 
+: 537 2 4 got 
+: 541 2 2 to 
+: 545 2 4 keep 
+: 549 2 2 on 
+: 554 6 7 mov
+: 562 6 6 ing
+- 568 570
+- 570
+F 584 1 0 Rea
+F 586 1 0 ching 
+F 588 3 0 out 
+F 592 1 0 to 
+F 594 2 0 all 
+F 597 1 0 dem
+- 598 600
+- 600
+F 614 1 0 To 
+F 616 1 0 dem 
+F 618 2 0 Lo
+F 621 4 0 vers
+- 625 641
+- 641
+F 655 1 0 They 
+F 657 3 0 can’t 
+F 661 4 0 find 
+F 667 1 0 them
+F 669 3 0 self 
+F 673 1 0 you 
+F 675 2 0 know
+- 677 687
+- 687
+: 701 1 4 You’re 
+: 705 2 5 on 
+: 708 2 5 the 
+: 711 5 5 road 
+: 717 2 5 and 
+: 720 2 5 no~
+: 723 1 7 w 
+: 725 2 5 you 
+: 729 2 4 pra~
+: 732 2 0 y 
+: 736 2 0 it 
+: 741 6 -5 lasts
+- 747 751
+- 751
+: 765 1 7 The 
+: 767 4 7 road 
+: 772 2 7 be
+: 775 5 7 hind 
+: 781 2 7 was 
+: 784 4 6 rock
+: 789 1 4 y, 
+: 797 2 6 but 
+: 800 3 6 now 
+: 804 3 6 you’re 
+: 809 3 6 feel
+: 813 1 6 ing 
+* 815 2 9 cock
+* 820 2 6 y
+* 823 1 5 ~
+- 824
+: 828 2 5 You 
+: 832 3 5 look 
+: 837 2 5 at 
+: 841 7 5 me 
+: 850 2 7 and 
+: 853 1 5 you 
+: 859 3 0 see 
+: 863 3 0 your 
+: 869 5 -5 past
+- 874 880
+- 880
+: 894 2 7 Is 
+: 897 2 7 that 
+: 901 1 7 the 
+: 903 5 7 rea
+: 909 2 7 son 
+: 913 2 4 why 
+: 917 2 4 you’re 
+: 922 2 6 run
+: 925 2 6 ning 
+: 929 1 7 so 
+: 934 2 9 fast
+- 936
+: 939 1 6 And 
+: 941 1 5 you 
+: 945 4 7 said
+- 949
+: 957 3 -1 Ain’t 
+: 961 1 -1 no
+: 963 1 -1 thing 
+: 965 1 -1 gon
+: 967 1 -1 na 
+: 969 2 0 break 
+: 972 2 0 my 
+: 978 4 2 stride
+- 982
+: 989 2 6 No
+: 992 1 6 bo
+: 994 1 6 dy’s 
+: 997 1 6 gon
+: 999 1 6 na 
+: 1003 4 7 slow 
+: 1009 5 6 me 
+: 1017 3 6 do~
+: 1021 4 4 wn,
+- 1025
+* 1030 2 7 Oh 
+* 1033 4 4 no
+- 1037
+: 1045 2 2 I’ve 
+: 1049 2 4 got 
+: 1053 1 2 to 
+: 1057 2 4 keep 
+: 1061 2 2 on 
+: 1066 6 7 mov
+: 1073 4 6 ing
+- 1077
+: 1085 2 -1 Ain’t 
+: 1088 1 -1 no
+: 1090 1 -1 thing 
+: 1092 1 -1 gon
+: 1094 1 -1 na 
+: 1097 2 0 break 
+: 1100 2 0 my 
+: 1105 6 2 stride
+- 1111
+: 1118 1 6 I’m 
+: 1120 1 6 run
+: 1122 1 6 ning 
+: 1125 1 6 an 
+: 1127 1 6 I 
+: 1130 6 7 won’t 
+: 1137 4 6 touch 
+: 1145 2 6 grou~
+: 1149 3 4 nd,
+- 1152
+: 1157 3 7 Oh 
+: 1161 4 4 no
+- 1165
+: 1173 2 2 I’ve 
+: 1177 2 4 got 
+: 1181 2 2 to 
+: 1185 2 4 keep 
+: 1189 2 2 on 
+: 1194 6 7 mov
+: 1202 6 6 ing
+- 1208
+F 1209 1 0 ... 
+F 1210 1 0 break 
+F 1213 2 0 my 
+F 1217 1 0 stride, 
+F 1219 1 0 I’m 
+F 1221 1 0 gon
+F 1223 1 0 na 
+F 1225 1 0 keep 
+F 1227 2 0 on 
+F 1231 1 0 mov
+F 1233 1 0 in
+- 1234
+F 1237 1 0 Ca 
+F 1239 1 0 me 
+F 1241 1 0 na 
+F 1245 2 0 stand 
+F 1249 1 0 still 
+F 1251 1 0 me 
+F 1253 1 0 gon
+F 1255 1 0 na 
+F 1257 1 0 keep 
+F 1259 2 0 on 
+F 1262 2 0 grov
+F 1265 2 0 in
+- 1267
+F 1269 1 0 While 
+F 1271 1 0 me 
+F 1273 3 0 walk 
+F 1277 1 0 down 
+F 1279 1 0 the 
+F 1281 3 0 street 
+F 1285 2 0 of 
+F 1289 1 0 Re
+F 1291 1 0 vo
+F 1293 3 0 lu
+F 1297 2 0 tion
+- 1299
+F 1301 1 0 Hear 
+F 1303 1 0 the 
+F 1305 3 0 sound 
+F 1309 2 0 of 
+F 1313 1 0 free
+F 1315 1 0 dom 
+F 1317 1 0 till 
+F 1319 1 0 I 
+F 1321 2 0 reach 
+F 1324 2 0 Mount 
+F 1327 1 0 Zi
+F 1329 1 0 on
+- 1330
+F 1331 1 0 No
+F 1333 1 0 bo
+F 1335 1 0 dy 
+F 1337 4 0 slow 
+F 1343 1 0 me 
+F 1345 2 0 down, 
+F 1351 1 0 and 
+F 1352 1 0 I 
+F 1353 2 0 won’t 
+F 1357 3 0 touch 
+F 1361 3 0 ground
+- 1364
+F 1368 2 0 Feel 
+F 1371 2 0 Jah 
+F 1374 2 0 Jah 
+F 1377 1 0 pre
+F 1379 1 0 sent, 
+F 1381 1 0 an 
+F 1383 1 0 I 
+F 1385 1 0 feel 
+F 1387 1 0 him 
+F 1389 1 0 all 
+F 1391 1 0 a
+F 1393 2 0 round
+- 1395
+F 1401 2 0 Good 
+F 1405 2 0 Vi
+F 1409 1 0 bra
+F 1411 1 0 tion 
+F 1413 1 0 i
+F 1415 1 0 na 
+F 1417 1 0 you 
+F 1421 2 0 an 
+F 1425 3 0 me, 
+F 1431 1 0 will 
+F 1433 2 0 bless 
+F 1437 1 0 e
+F 1438 1 0 ve
+F 1439 1 0 ry
+F 1441 1 0 bo
+F 1443 1 0 dy 
+F 1445 1 0 i
+F 1447 1 0 na 
+F 1449 1 0 Com
+F 1451 2 0 mu
+F 1454 2 0 ni
+F 1457 2 0 ty
+- 1459
+: 1468 1 2 Ne
+: 1470 1 1 ver 
+: 1472 2 2 let 
+: 1475 1 1 a
+: 1477 1 2 no
+: 1479 1 1 ther 
+: 1481 3 2 guy 
+: 1485 2 5 like 
+: 1489 6 5 you,
+- 1495
+* 1505 2 4 Work 
+* 1509 3 4 me 
+* 1514 6 5 o
+* 1521 2 4 ver
+* 1524 3 2 ~
+- 1527
+: 1532 1 2 Ne
+: 1534 1 1 ver 
+: 1536 2 2 let 
+: 1539 1 2 a
+: 1541 1 2 no
+: 1543 1 1 ther 
+: 1545 2 2 guy 
+: 1548 3 5 like 
+: 1553 7 5 you,
+- 1560
+: 1569 2 4 Drag 
+: 1573 3 4 me 
+: 1578 6 5 un
+: 1585 4 4 der
+: 1590 3 2 ~
+- 1593
+: 1596 2 4 If 
+: 1599 1 3 I 
+: 1601 1 3 need 
+: 1603 1 3 a
+: 1605 1 4 no
+: 1607 1 3 ther 
+: 1609 2 4 guy 
+: 1614 2 7 like 
+: 1617 5 7 you,
+- 1622
+: 1633 3 6 I 
+: 1637 3 6 will 
+: 1642 5 7 tell 
+: 1649 1 6 him
+: 1651 1 4 ~
+: 1653 2 2 ~
+- 1655
+: 1660 1 4 Ne
+: 1662 1 3 ver 
+: 1664 1 4 want 
+: 1666 1 3 a
+: 1668 1 4 no
+: 1670 1 3 ther 
+: 1673 2 4 guy 
+: 1678 2 7 like 
+: 1681 5 7 you, 
+: 1688 2 4 have 
+: 1693 1 6 to 
+: 1698 8 6 say,
+- 1706
+* 1712 2 22 Woo
+* 1715 1 21 ~oh
+- 1716
+: 1725 3 1 Ain’t 
+: 1729 1 1 no
+: 1731 1 1 thing 
+: 1733 1 1 gon
+: 1735 1 1 na 
+: 1737 2 2 break 
+: 1740 2 2 my 
+: 1746 4 4 stride
+- 1750
+: 1757 2 8 No
+: 1760 1 8 bo
+: 1762 1 8 dy’s 
+: 1765 1 8 gon
+: 1767 1 8 na 
+: 1771 4 9 slow 
+: 1777 5 8 me 
+: 1785 3 8 do~
+: 1789 4 6 wn,
+- 1793
+: 1798 2 9 Oh 
+: 1801 4 6 no
+- 1805
+: 1813 2 4 I’ve 
+: 1817 2 6 got 
+: 1821 1 4 to 
+: 1825 2 6 keep 
+: 1829 2 4 on 
+: 1834 6 9 mov
+: 1841 4 8 ing
+- 1845
+: 1853 2 1 Ain’t 
+: 1856 1 1 no
+: 1858 1 1 thing 
+: 1860 1 1 gon
+: 1862 1 1 na 
+: 1865 2 2 break 
+: 1868 2 2 my 
+: 1873 6 4 stride
+- 1879
+: 1886 1 8 I’m 
+: 1888 1 8 run
+: 1890 1 8 ning 
+: 1893 1 8 an 
+: 1895 1 8 I 
+: 1898 6 9 won’t 
+: 1905 4 8 touch 
+: 1913 2 8 grou~
+: 1917 3 6 nd,
+- 1920
+: 1925 3 9 Oh 
+: 1929 4 6 no
+- 1933
+: 1941 2 4 I’ve 
+: 1945 2 6 got 
+: 1949 2 4 to 
+: 1953 2 6 keep 
+: 1957 2 4 on 
+: 1962 6 9 mov
+: 1970 6 8 ing
+- 1976
+: 1981 3 1 Ain’t 
+: 1985 1 1 no
+: 1987 1 1 thing 
+: 1989 1 1 gon
+: 1991 1 1 na 
+: 1993 2 2 break 
+: 1996 2 2 my 
+: 2002 4 4 stride
+- 2006
+: 2013 2 8 No
+: 2016 1 8 bo
+: 2018 1 8 dy’s 
+: 2021 1 8 gon
+: 2023 1 8 na 
+: 2027 4 9 slow 
+: 2033 5 8 me 
+: 2041 3 8 do~
+: 2045 4 6 wn,
+- 2049
+: 2054 2 9 Oh 
+: 2057 4 6 no
+- 2061
+: 2069 2 4 I’ve 
+: 2073 2 6 got 
+: 2077 1 4 to 
+: 2081 2 6 keep 
+: 2085 2 4 on 
+: 2090 6 9 mov
+: 2097 4 8 ing
+- 2101
+* 2109 2 1 Ain’t 
+* 2112 1 1 no
+* 2114 1 1 thing 
+* 2116 1 1 gon
+* 2118 1 1 na 
+* 2121 2 2 break 
+* 2124 2 2 my 
+* 2129 6 4 stride
+- 2135
+: 2142 1 8 I’m 
+: 2144 1 8 run
+: 2146 1 8 ning 
+: 2149 1 8 an 
+: 2151 1 8 I 
+: 2154 6 9 won’t 
+: 2161 4 8 touch 
+: 2169 2 8 grou~
+: 2173 3 6 nd,
+- 2176
+: 2181 3 9 Oh 
+: 2185 4 6 no
+- 2189
+: 2197 2 4 I’ve 
+: 2201 2 6 got 
+: 2205 2 4 to 
+: 2209 2 6 keep 
+: 2213 2 4 on 
+: 2218 6 9 mov
+: 2226 6 8 ing
+- 2232
+* 2237 3 1 Ain’t 
+* 2241 1 1 no
+* 2243 1 1 thing 
+* 2245 1 1 gon
+* 2247 1 1 na 
+* 2249 2 2 break 
+* 2252 2 2 my 
+* 2258 4 4 stride
+- 2262
+: 2269 2 8 No
+: 2272 1 8 bo
+: 2274 1 8 dy’s 
+: 2277 1 8 gon
+: 2279 1 8 na 
+: 2282 4 9 slow 
+: 2289 6 8 me 
+: 2297 3 8 do~
+: 2301 4 6 wn,
+- 2305
+: 2310 2 9 Oh 
+: 2313 4 6 no
+- 2317
+: 2325 2 4 I’ve 
+: 2329 2 6 got 
+: 2333 1 4 to 
+: 2337 2 6 keep 
+: 2341 2 4 on 
+: 2346 6 9 mov
+: 2353 4 8 ing
+- 2357
+: 2365 2 1 Ain’t 
+: 2368 1 1 no
+: 2370 1 1 thing 
+: 2372 1 1 gon
+: 2374 1 1 na 
+: 2377 2 2 break 
+: 2380 2 2 my 
+: 2385 6 4 stride
+- 2391
+: 2398 1 8 I’m 
+: 2400 1 8 run
+: 2402 1 8 ning 
+: 2405 1 8 an 
+: 2407 1 8 I 
+: 2410 6 9 won’t 
+: 2417 4 8 touch 
+: 2425 2 8 grou~
+: 2429 3 6 nd,
+- 2432
+: 2445 3 9 Oh 
+: 2449 4 6 no
+- 2453
+* 2453 2 4 I’ve 
+* 2457 2 6 got 
+* 2461 1 4 to 
+* 2465 2 6 keep 
+* 2469 2 4 on 
+* 2474 6 9 mov
+* 2481 4 8 ing
+E

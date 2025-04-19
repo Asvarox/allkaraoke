@@ -1,0 +1,344 @@
+#ARTIST:Story of the Year
+#TITLE:In The Shadows
+#CREATOR:Lorc
+#BPM:328,4
+#YEAR:2003
+#VIDEO:v=m5bAzjzCFW0
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:8725,127892813642
+#ALLKARAOKE_ID:story-of-the-year-in-the-shadows
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:13.405Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:194
+#ALLKARAOKE_VOLUME:1
+#MP3:Story of the Year - In The Shadows.mp3
+F 22 11 2 We 
+F 36 8 2 both 
+F 46 10 2 take 
+F 59 11 2 the 
+F 80 5 2 hard
+F 87 11 2 est 
+F 99 12 2 pun
+F 113 16 2 ches
+- 129
+F 134 9 2 And 
+F 145 7 2 co
+F 154 11 2 llect 
+: 175 6 8 black 
+: 184 8 7 eyes 
+: 194 8 5 just 
+: 204 4 6 to 
+: 211 8 4 prove 
+: 221 14 2 it
+- 235
+: 242 9 2 Still 
+: 253 9 2 we 
+: 265 7 3 pass 
+: 276 13 2 by 
+: 298 10 6 just 
+: 310 6 5 like 
+: 318 8 5 strang
+: 327 2 6 ~
+: 330 7 6 ers
+: 340 8 2 ~
+- 348
+: 352 7 3 And 
+: 362 8 2 we 
+: 373 13 2 speak 
+: 390 8 2 just 
+: 400 13 2 like 
+: 419 6 2 the 
+: 428 10 7 clos
+: 441 8 5 est 
+: 455 10 2 e
+: 467 14 2 ne
+: 483 51 2 mies
+- 534
+F 539 13 2 E
+F 553 11 2 ne
+F 565 24 2 mies!
+- 589
+: 602 11 5 Wo
+: 617 7 4 ah, 
+* 632 2 4 in 
+* 635 3 4 the 
+* 640 10 6 sha
+* 652 5 4 dows 
+* 658 4 2 of 
+* 663 4 2 our 
+* 668 12 2 life
+- 680
+: 683 4 2 We 
+: 688 5 2 can 
+: 694 10 2 fall 
+: 705 4 2 in
+: 711 7 2 to 
+: 719 3 1 the 
+: 724 12 2 night 
+: 738 9 4 un
+: 750 22 2 scarred
+- 772 793
+- 793
+: 815 12 6 Wo
+: 829 10 4 ah, 
+: 847 2 5 in 
+: 850 3 5 the 
+: 856 10 6 sha
+: 867 5 4 dows 
+: 874 3 2 of 
+: 878 4 2 our 
+: 883 11 2 life
+- 894
+: 897 6 2 We 
+: 904 6 2 can 
+: 911 7 2 ne
+: 919 6 2 ver 
+: 927 4 2 let 
+: 933 5 2 it 
+: 940 11 2 go 
+: 954 10 4 this 
+: 967 32 6 far
+- 999 1027
+- 1027
+F 1049 11 2 Some
+F 1061 8 2 how 
+F 1072 10 2 my 
+F 1084 14 2 words 
+F 1105 2 2 are 
+F 1108 7 2 rend
+F 1116 10 2 ered 
+F 1127 9 2 use
+F 1137 16 2 less
+- 1153
+F 1160 9 2 Still 
+F 1171 9 2 I 
+F 1182 11 2 pull 
+: 1201 7 7 my 
+: 1210 8 7 lip 
+: 1220 9 6 down 
+: 1230 5 7 to 
+: 1236 10 5 my 
+: 1247 18 2 chest
+- 1265
+: 1270 9 3 Just 
+: 1281 8 2 to 
+: 1291 11 3 show 
+: 1304 15 2 you 
+: 1326 8 6 how 
+: 1336 8 5 my 
+: 1346 10 7 jaw 
+: 1357 9 8 is
+: 1369 6 2 ~
+- 1375
+: 1378 6 3 Tir
+: 1385 6 2 ed 
+: 1393 6 2 from 
+: 1402 8 2 wait
+: 1411 6 2 ing 
+: 1420 6 7 to 
+: 1428 11 8 say
+- 1439
+: 1448 4 2 The 
+: 1455 12 6 things 
+: 1469 12 4 that 
+: 1484 9 2 you 
+: 1495 13 2 should 
+: 1511 48 2 hear
+- 1559
+F 1567 11 2 You 
+F 1580 12 2 should 
+F 1594 28 2 hear!
+- 1622
+: 1631 11 5 Wo
+: 1644 9 4 ah, 
+: 1661 2 5 in 
+: 1664 3 5 the 
+: 1669 11 6 sha
+: 1681 5 4 dows 
+: 1687 4 2 of 
+: 1692 4 2 our 
+: 1697 12 2 life
+- 1709
+: 1712 4 2 We 
+: 1717 5 2 can 
+* 1723 10 2 fall 
+* 1734 4 2 in
+* 1739 8 2 to 
+: 1748 4 2 the 
+: 1753 12 2 night 
+: 1767 9 4 un
+: 1780 21 2 scarred
+- 1801 1822
+- 1822
+: 1844 12 6 Wo
+: 1858 10 5 ah, 
+: 1876 2 5 in 
+: 1879 3 5 the 
+: 1885 11 6 sha
+: 1897 4 4 dows 
+: 1903 3 2 of 
+: 1907 4 2 our 
+: 1912 11 2 life
+- 1923
+: 1926 6 2 We 
+: 1933 6 2 can 
+: 1941 6 2 ne
+: 1948 6 2 ver 
+: 1956 4 2 let 
+: 1962 5 2 it 
+: 1969 11 2 go 
+: 1982 11 5 this 
+: 1996 32 7 far
+- 2028 2061
+- 2061
+: 2083 8 1 Af
+: 2093 9 1 ter 
+: 2103 52 1 all 
+: 2177 3 0 we’re 
+: 2181 14 2 still 
+: 2197 12 2 the 
+: 2212 50 2 same
+: 2263 17 1 ~
+- 2280
+: 2291 8 1 These 
+: 2303 8 1 emp
+: 2313 5 2 ty 
+: 2322 7 2 pro
+: 2330 6 2 mi
+: 2337 4 0 ses
+: 2342 3 1 ~
+: 2346 25 1 ~
+- 2371
+: 2387 7 5 Seem 
+: 2396 3 5 to 
+: 2403 7 0 ne
+: 2413 10 -2 ver 
+: 2429 18 -2 change
+: 2454 32 -3 ~
+- 2486 2500
+- 2500
+: 2522 9 2 There’s 
+: 2532 4 4 a 
+: 2539 9 6 smile 
+: 2549 6 4 on 
+: 2557 7 2 my 
+: 2565 8 2 face
+- 2573
+: 2576 7 0 And 
+: 2585 4 3 it’s 
+: 2593 8 6 two 
+: 2604 8 4 fif
+: 2613 4 2 ty-
+: 2619 12 2 five 
+: 2633 13 2 A
+: 2647 23 2 M
+- 2670
+: 2690 5 2 And 
+: 2696 5 2 this 
+: 2702 9 2 cramp 
+: 2712 8 2 in 
+: 2721 13 2 my 
+: 2735 10 2 wrist
+- 2745
+: 2751 2 2 Puts 
+: 2756 7 6 me 
+: 2766 6 4 back 
+: 2774 6 2 to 
+: 2781 7 2 sleep
+- 2788
+: 2793 11 1 Till 
+: 2805 5 3 it 
+: 2812 7 6 all 
+: 2820 8 4 comes 
+: 2830 5 2 a
+: 2836 15 2 round 
+* 2853 12 2 a
+* 2866 100 2 gain
+- 2966 3059
+- 3059
+F 3081 76 2 Yeah!
+- 3157
+F 3168 9 2 With 
+F 3178 10 2 a 
+F 3189 13 2 closed 
+F 3203 16 2 fist!
+- 3219
+F 3222 9 2 With 
+F 3232 10 2 a 
+F 3243 13 2 closed 
+F 3257 16 2 fist!
+- 3273
+F 3278 9 2 With 
+F 3288 10 2 a 
+F 3299 13 2 closed 
+F 3313 15 2 fist!
+- 3328
+F 3332 7 2 With 
+F 3340 11 2 a 
+F 3352 16 2 closed 
+F 3381 84 2 fist!
+- 3465 3507
+- 3507
+: 3529 12 6 Wo
+: 3543 7 5 ah, 
+: 3559 2 4 in 
+: 3562 3 5 the 
+: 3567 10 6 sha
+: 3579 5 4 dows 
+: 3585 4 2 of 
+: 3590 4 2 our 
+: 3595 12 2 life
+- 3607
+: 3610 4 2 We 
+: 3615 5 2 can 
+: 3621 10 2 fall 
+: 3632 4 2 in
+: 3637 8 2 to 
+: 3646 4 2 the 
+: 3651 12 2 night 
+: 3665 10 4 un
+: 3678 21 2 scarred
+- 3699 3720
+- 3720
+: 3742 12 6 Wo
+: 3757 9 4 ah, 
+: 3774 2 4 in 
+: 3777 3 5 the 
+: 3783 10 5 sha
+: 3794 5 4 dows 
+: 3800 4 2 of 
+: 3805 4 2 our 
+: 3810 11 2 life
+- 3821
+: 3825 4 5 We 
+: 3832 4 5 can 
+* 3838 7 4 ne
+* 3846 5 4 ver 
+* 3854 4 4 let 
+* 3860 4 2 it 
+* 3867 9 4 go 
+: 3880 11 8 this 
+: 3892 34 5 far
+- 3926 3936
+- 3936
+: 3958 12 6 Wo
+: 3972 8 4 ah, 
+: 3989 2 5 in 
+: 3992 3 4 the 
+: 3997 10 5 sha
+: 4009 4 4 dows 
+: 4015 4 2 of 
+: 4020 4 2 our 
+: 4025 12 2 life
+- 4037
+: 4040 4 6 We 
+: 4045 5 5 can 
+: 4051 10 5 fall 
+: 4062 3 5 in
+: 4068 5 4 to 
+: 4076 3 3 the 
+: 4081 11 4 night 
+: 4095 9 9 un
+: 4107 54 5 scarred
+E

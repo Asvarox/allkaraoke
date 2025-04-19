@@ -1,0 +1,331 @@
+#ARTIST:Sabaton
+#TITLE:Gott mit uns
+#CREATOR:Ultrus
+#BPM:270,1
+#YEAR:2012
+#PREVIEWSTART:29
+#VIDEO:v=rLXBjLN1fOY
+#GENRE:Power Metal
+#LANGUAGE:English
+#GAP:14450,370233246946
+#ALLKARAOKE_ID:sabaton-gott-mit-uns
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:12:03.415Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_PREVIEWEND:57
+#ALLKARAOKE_VOLUME:0,72
+#MP3:Sabaton - Gott mit uns.mp3
+: 18 2 3 Spend 
+: 22 1 3 the 
+: 24 5 3 night 
+: 30 3 2 in 
+: 34 5 0 for
+: 40 7 -2 ma
+: 48 16 -5 tion
+- 64
+: 82 2 -9 To 
+: 86 1 -9 the 
+: 88 5 -9 bat
+: 94 3 -7 tle 
+: 98 5 -5 we 
+: 104 9 -5 march 
+: 114 2 -7 in 
+: 118 1 -9 the 
+: 120 16 -7 dawn
+- 136
+: 146 2 3 We’re 
+: 152 5 3 rea
+: 158 3 2 dy 
+: 162 4 0 to 
+: 168 9 -2 die 
+: 178 2 -2 for 
+: 182 1 0 our 
+: 184 16 2 king
+- 200
+: 210 2 3 On 
+: 214 1 3 the 
+: 216 5 3 fi
+: 222 3 7 elds 
+: 226 5 3 of 
+: 232 9 5 Brei
+: 242 5 3 ten
+: 248 10 2 feld
+- 258
+: 264 8 3 Fi
+: 274 2 2 re 
+: 278 1 0 at 
+: 280 12 -2 will
+- 292
+: 296 8 7 Aim 
+: 306 2 5 for 
+: 310 1 3 the 
+: 312 5 2 can
+: 318 9 5 nons
+- 327
+: 328 8 5 Coun
+: 338 2 3 ter 
+: 342 1 2 at
+: 344 12 0 tack
+- 356
+: 360 8 2 Thun
+: 370 2 0 der 
+: 374 1 -1 of 
+: 376 8 0 guns
+- 384
+: 392 4 0 "Gott 
+: 400 4 3 mit 
+: 408 4 2 uns" 
+: 418 2 0 as 
+: 422 1 -2 we 
+: 424 5 0 all 
+: 430 3 0 stand 
+: 434 5 3 u
+: 440 6 2 ni
+: 448 6 -2 ted
+- 454
+: 456 6 3 All 
+: 464 6 7 to
+: 472 6 5 ge
+: 480 6 0 ther 
+: 488 4 2 "Gott 
+: 496 4 -2 mit 
+: 504 8 0 uns"
+- 512 518
+- 518
+: 536 6 3 From 
+: 544 6 3 the 
+: 552 6 3 old 
+: 568 4 -2 world’s 
+: 574 6 2 de
+: 582 8 0 mise
+- 590
+: 600 6 3 See 
+: 608 6 3 an 
+: 616 10 5 em
+: 632 5 3 pi
+: 638 6 2 re 
+: 646 8 0 rise
+- 654
+: 664 6 3 From 
+: 672 6 3 the 
+: 680 6 3 north 
+: 696 4 -2 rea
+: 702 6 2 ching 
+: 710 8 0 far
+- 718
+: 728 6 7 Here 
+: 736 6 3 we 
+: 744 16 5 are
+- 760 774
+- 774
+: 792 5 3 On 
+: 798 5 3 Sep
+: 804 8 3 tem
+: 814 1 2 ber 
+: 816 4 2 the 
+: 822 6 2 se
+: 830 1 2 venth 
+: 832 5 2 we 
+: 838 6 3 filled 
+: 846 6 3 their 
+: 854 6 3 hearts 
+: 862 6 3 with 
+: 870 3 3 fe
+: 874 6 2 ar
+- 880 902
+- 902
+: 920 4 3 Se
+: 926 4 3 ven 
+: 932 6 3 times 
+: 942 1 2 they 
+: 944 4 2 at
+: 950 6 2 tacked 
+: 958 1 2 on 
+: 960 5 2 that 
+: 966 10 3 day
+- 976
+: 984 4 3 Se
+: 990 4 3 ven 
+: 996 6 5 times 
+: 1006 1 5 they 
+: 1008 5 5 re
+: 1014 6 5 trea
+: 1022 2 5 ted
+- 1024
+: 1032 8 3 Ca
+: 1042 2 2 val
+: 1046 1 0 ry 
+: 1048 10 -2 charge
+- 1058
+: 1064 8 7 Fo
+: 1074 2 5 llow 
+: 1078 1 3 the 
+: 1080 5 2 ban
+: 1086 8 5 ner
+- 1094
+: 1096 8 5 Af
+: 1106 2 3 ter 
+: 1110 1 2 the 
+: 1112 10 0 king
+- 1122
+: 1128 8 2 Free
+: 1138 2 0 dom 
+: 1142 1 -1 we 
+: 1144 10 0 bring
+- 1154
+: 1160 4 0 "Gott 
+: 1168 4 3 mit 
+: 1176 4 2 uns" 
+: 1186 2 0 as 
+: 1190 1 -2 we 
+: 1192 4 0 all 
+: 1198 3 0 stand 
+: 1202 5 3 u
+: 1208 6 2 ni
+: 1216 6 -2 ted
+- 1222
+: 1224 6 3 All 
+: 1232 6 7 to
+: 1240 6 5 ge
+: 1248 6 0 ther 
+: 1256 4 2 "Gott 
+: 1264 4 -2 mit 
+: 1272 4 0 uns"
+- 1276 1286
+- 1286
+: 1304 6 3 From 
+: 1312 6 3 the 
+: 1320 6 3 old 
+: 1336 5 -2 world’s 
+: 1342 6 2 de
+: 1350 8 0 mise
+- 1358
+: 1368 6 3 See 
+: 1376 6 3 an 
+: 1384 10 5 em
+: 1400 5 3 pi
+: 1406 6 2 re 
+: 1414 8 0 rise
+- 1422
+: 1432 6 3 From 
+: 1440 6 3 the 
+: 1448 6 3 north 
+: 1464 4 -2 rea
+: 1470 6 2 ching 
+: 1478 8 0 far
+- 1486
+: 1496 6 7 Here 
+: 1504 6 3 we 
+: 1512 14 5 are
+- 1526 2294
+- 2294
+: 2312 8 3 Brea
+: 2322 2 2 king 
+: 2326 1 0 the 
+: 2328 10 -2 lines
+- 2338
+: 2344 8 7 Thou
+: 2354 2 5 sands 
+: 2358 1 3 of 
+: 2360 5 2 sol
+: 2366 8 5 diers
+- 2374
+: 2376 8 5 Run 
+: 2386 2 3 for 
+: 2390 1 2 their 
+: 2392 10 0 lives
+- 2402
+: 2408 8 2 Le
+: 2418 2 0 gends 
+: 2422 1 -1 a
+: 2424 10 0 rise
+- 2434
+: 2440 4 0 "Gott 
+: 2448 4 3 mit 
+: 2456 4 2 uns" 
+: 2466 2 0 as 
+: 2470 1 -2 we 
+: 2472 4 0 all 
+: 2478 3 0 stand 
+: 2482 5 3 u
+: 2488 6 2 ni
+: 2496 6 -2 ted
+- 2502
+: 2504 6 3 All 
+: 2512 6 7 to
+: 2520 6 5 ge
+: 2528 6 0 ther 
+: 2536 4 2 "Gott 
+: 2544 4 -2 mit..."
+- 2548
+: 2552 4 0 "Gott 
+: 2560 4 3 mit 
+: 2568 4 2 uns" 
+: 2578 2 0 as 
+: 2582 1 -2 we 
+: 2584 4 0 all 
+: 2590 3 0 stand 
+: 2594 5 3 u
+: 2600 6 2 ni
+: 2608 6 -2 ted
+- 2614
+: 2616 6 3 All 
+: 2624 6 7 to
+: 2632 6 5 ge
+: 2640 6 0 ther 
+: 2648 4 2 "Gott 
+: 2656 4 -2 mit 
+: 2664 4 0 uns"
+- 2668 2694
+- 2694
+: 2712 6 3 From 
+: 2720 6 3 the 
+: 2728 6 3 old 
+: 2744 4 -2 world’s 
+: 2750 6 2 de
+: 2758 8 0 mise
+- 2766
+: 2776 6 3 See 
+: 2784 6 3 an
+: 2792 14 5 em
+: 2808 5 3 pi
+: 2814 6 2 re 
+: 2822 8 0 rise
+- 2830
+: 2840 6 3 From 
+: 2848 6 3 the 
+: 2856 6 3 north 
+: 2872 4 -2 rea
+: 2878 6 2 ching 
+: 2886 8 0 far
+- 2894
+: 2904 6 7 Here 
+: 2912 6 3 we 
+: 2920 14 5 are
+- 2934 2950
+- 2950
+: 2968 6 3 From 
+: 2976 6 3 the 
+: 2984 6 3 old 
+: 3000 4 -2 world’s 
+: 3006 6 2 de
+: 3014 8 0 mise
+- 3022
+: 3032 6 3 See 
+: 3040 6 3 an 
+: 3048 14 5 em
+: 3064 5 3 pi
+: 3070 6 2 re 
+: 3078 8 0 rise
+- 3086
+: 3096 6 3 From 
+: 3104 6 3 the 
+: 3112 6 3 north 
+: 3128 4 -2 rea
+: 3134 6 2 ching 
+: 3142 8 0 far
+- 3150
+: 3160 6 7 Here 
+: 3168 6 3 we 
+: 3176 14 5 are
+E

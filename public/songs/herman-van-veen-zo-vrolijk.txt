@@ -1,0 +1,256 @@
+#ARTIST:Herman van Veen
+#TITLE:Zo vrolijk
+#CREATOR:Way2Evil
+#BPM:255,8
+#YEAR:1986
+#VIDEO:v=DPLrCZGE-ns
+#LANGUAGE:Dutch
+#GAP:18073,90625
+#ALLKARAOKE_ID:herman-van-veen-zo-vrolijk
+#ALLKARAOKE_LASTUPDATE:2025-04-19T00:11:52.404Z
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Herman van Veen - Zo vrolijk.mp3
+: 17 3 7 Ik 
+: 21 3 12 ben 
+: 25 3 12 van
+: 29 3 12 daag 
+: 33 3 12 zo 
+: 37 3 7 vro
+: 41 4 7 lijk, 
+: 49 3 7 zo 
+: 53 3 9 vro
+: 57 4 9 lijk, 
+: 65 3 9 zo 
+: 69 3 4 vro
+: 73 4 4 lijk.
+- 77
+: 81 3 4 Ik 
+: 85 3 5 ben 
+: 89 3 2 be
+: 93 3 5 hoor
+: 97 3 2 lijk 
+: 101 3 9 vro
+: 105 4 7 lijk, 
+: 113 3 7 zo 
+: 117 3 0 vro
+: 121 3 2 lijk 
+: 125 3 4 was 
+: 129 3 7 ik 
+* 133 8 12 nooit.
+- 141
+: 145 3 7 Ik 
+: 149 3 12 was 
+: 153 3 12 wel 
+: 157 3 12 va
+: 161 3 12 ker 
+: 165 3 7 vro
+: 169 4 7 lijk,
+- 173
+: 179 3 7 Heel 
+: 183 3 9 vro
+: 187 4 9 lijk, 
+: 195 3 9 heel 
+: 199 3 4 vro
+: 203 4 4 lijk,
+- 207
+: 211 3 4 Maar 
+: 215 3 5 zo 
+: 219 3 2 be
+: 223 3 5 hoor
+: 227 3 2 lijk 
+: 231 3 9 vro
+: 235 4 7 lijk,
+- 239
+: 243 3 7 Was 
+: 247 3 0 ik 
+: 251 3 2 tot 
+: 255 3 4 nog 
+: 259 3 7 toe 
+: 263 8 12 nooit.
+- 271 518
+- 518
+: 535 3 12 Soms 
+: 539 3 13 ben 
+: 543 3 13 ik 
+: 547 3 13 on
+: 551 3 13 ge
+: 555 3 8 luk
+: 559 4 8 kig,
+- 563
+: 567 3 8 Ont
+: 571 3 10 zet
+: 575 3 10 tend 
+: 579 3 10 on
+: 583 3 10 ge
+: 587 3 5 luk
+: 591 4 5 kig.
+- 595
+: 599 3 5 Soms 
+: 603 3 3 ben 
+: 607 3 5 ik 
+: 611 3 6 on
+: 615 3 3 ge
+: 619 3 10 luk
+: 623 4 8 kig,
+- 627
+: 631 3 8 Dan 
+: 635 3 1 sterf 
+: 639 3 3 ik 
+: 643 3 5 van 
+: 647 3 8 ver
+: 651 8 13 driet.
+- 659
+: 665 3 8 Soms 
+: 669 3 13 ben 
+: 673 3 13 ik 
+: 677 3 13 wat 
+: 681 3 13 neu
+: 685 3 8 ro
+: 689 4 8 tisch,
+- 693
+: 697 3 8 Pshy
+: 701 3 10 cho
+: 705 3 10 tisch 
+: 709 3 10 en 
+: 713 3 10 cha
+: 717 3 5 ot
+: 721 4 5 isch,
+- 725
+: 729 3 5 La
+: 733 3 3 biel 
+: 737 3 5 en 
+: 741 3 6 ne
+: 745 3 3 o
+: 749 3 10 go
+: 753 4 8 tisch,
+- 757
+: 765 3 1 Maar 
+: 769 3 3 van
+: 773 3 5 daag 
+: 777 3 8 dus 
+: 781 8 13 niet.
+- 789 1036
+- 1036
+* 1053 3 7 Van
+* 1057 3 12 daag 
+* 1061 3 12 ben 
+* 1065 3 12 ik 
+* 1069 3 12 zo 
+* 1073 3 7 vro
+* 1077 4 7 lijk,
+- 1081
+: 1085 3 7 Zo 
+: 1089 3 9 vro
+: 1093 4 9 lijk, 
+: 1101 3 9 zo 
+: 1105 3 4 vro
+: 1109 4 4 lijk.
+- 1113
+: 1117 3 4 Ik 
+: 1121 3 5 ben 
+: 1125 3 2 be
+: 1129 3 5 hoor
+: 1133 3 2 lijk 
+: 1137 3 9 vro
+: 1141 4 7 lijk,
+- 1145
+: 1151 3 7 Zo 
+: 1155 3 0 vro
+: 1159 3 2 lijk 
+: 1163 3 4 was 
+: 1167 3 7 ik 
+: 1171 8 12 nooit.
+- 1179
+: 1183 3 7 Soms 
+: 1187 3 12 ben 
+: 1191 3 12 ik 
+: 1195 3 12 on
+: 1199 3 12 ge
+: 1203 3 7 luk
+: 1207 4 7 kig,
+- 1211
+: 1215 3 7 Ont
+: 1219 3 9 zet
+: 1223 3 9 tend 
+: 1227 3 9 on
+: 1231 3 9 ge
+: 1235 3 4 luk
+: 1239 4 4 kig.
+- 1243
+: 1247 3 4 Soms 
+: 1251 3 5 ben 
+: 1255 3 2 ik 
+: 1259 3 5 on
+: 1263 3 2 ge
+: 1267 3 9 luk
+: 1271 4 7 kig,
+- 1275
+: 1279 3 7 Dan 
+: 1283 3 0 sterf 
+: 1287 3 2 ik 
+: 1291 3 4 van 
+: 1295 3 7 ver
+: 1299 8 12 driet.
+- 1307
+: 1309 5 12 Soms 
+: 1315 3 13 ben 
+: 1319 3 13 ik 
+: 1323 3 13 wat 
+: 1327 5 13 neu
+: 1333 3 8 ro
+: 1337 5 8 tisch,
+- 1342
+: 1343 3 8 Psy
+: 1347 3 10 cho
+: 1351 4 10 tisch 
+: 1357 3 10 en 
+: 1361 3 5 cha
+: 1365 3 5 o
+: 1369 4 5 tisch 
+: 1377 3 5 la
+: 1381 3 3 biel 
+: 1385 3 5 en 
+: 1389 3 6 pa
+: 1393 3 3 ra
+: 1397 3 10 so
+: 1401 4 8 tisch
+- 1405
+: 1413 3 1 Maar 
+: 1417 3 3 van
+: 1421 3 5 daag 
+: 1425 3 8 dus 
+: 1429 8 13 niet.
+- 1437
+: 1441 3 8 Ik 
+: 1445 3 13 ben 
+: 1449 3 13 van
+: 1453 3 13 daag 
+: 1457 3 13 dus 
+: 1461 3 8 vro
+: 1465 4 8 lijk,
+- 1469
+* 1473 3 8 Zo 
+* 1477 3 10 vro
+* 1481 4 10 lijk, 
+* 1489 3 10 zo 
+* 1493 3 5 vro
+* 1497 4 5 lijk,
+- 1501
+: 1505 3 5 Ik 
+: 1509 3 3 ben 
+: 1513 3 5 be
+: 1517 3 6 hoor
+: 1521 3 3 lijk 
+: 1525 3 10 vro
+: 1529 4 8 lijk,
+- 1533
+: 1537 3 8 Zo 
+: 1541 3 1 vro
+: 1545 3 3 lijk 
+: 1549 3 5 was 
+: 1553 3 8 ik 
+: 1557 8 13 nooit.
+E
