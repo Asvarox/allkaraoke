@@ -46,7 +46,7 @@ const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: 
 
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
-  const [theme, setTheme] = useState<backgroundTheme>('eurovision');
+  const [theme, setTheme] = useState<backgroundTheme>('regular');
   const [graphicLevel] = useSettingValue(GraphicSetting);
 
   return (
