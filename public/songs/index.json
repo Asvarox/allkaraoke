@@ -22875,6 +22875,34 @@
     "local": false
   },
   {
+    "id": "carl-espen-silent-storm",
+    "title": "Silent Storm",
+    "artist": "Carl Espen",
+    "video": "RPm6ifNHuJQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 11173.972602739726,
+    "year": "2014",
+    "artistOrigin": "NO",
+    "lastUpdate": "2025-04-23T00:12:23.774Z",
+    "edition": "ESC 2014",
+    "realBpm": 75,
+    "volume": 0.73,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29248",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carlespensilentstorm",
+    "local": false
+  },
+  {
     "id": "carlos-baute-y-marta-sanchez-colgando-en-tus-manos",
     "title": "Colgando en tus manos",
     "artist": "Carlos Baute y Marta Sánchez",
@@ -38682,6 +38710,33 @@
     "local": false
   },
   {
+    "id": "elina-born-stig-rasta-goodbye-to-yesterday",
+    "title": "Goodbye To Yesterday",
+    "artist": "Elina Born & Stig Rästa",
+    "video": "viwKuw_idZw",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 7661.739130434783,
+    "year": "2015",
+    "lastUpdate": "2025-04-23T00:12:23.618Z",
+    "edition": "Esc 2015",
+    "realBpm": 138,
+    "volume": 0.77,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29253",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elinabornstigrastagoodbyetoyesterday",
+    "local": false
+  },
+  {
     "id": "elisa-luce-tramonti-a-nord-est",
     "title": "Luce (Tramonti a Nord Est)",
     "artist": "Elisa",
@@ -40273,6 +40328,35 @@
     ],
     "tracksCount": 1,
     "search": "ericsaadepopular",
+    "local": false
+  },
+  {
+    "id": "erika-vikman-ich-komme",
+    "title": "ICH KOMME",
+    "artist": "Erika Vikman",
+    "video": "Kg3QoTpnqyw",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 294,
+    "gap": 13245.591836734693,
+    "year": "2025",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-23T00:12:23.343Z",
+    "edition": "Esc 2025",
+    "videoGap": 5,
+    "realBpm": 147,
+    "volume": 0.77,
+    "author": "Tuupertunut",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30073",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "erikavikmanichkomme",
     "local": false
   },
   {
@@ -44696,18 +44780,20 @@
     "id": "gabry-ponte-tutta-litalia",
     "title": "Tutta l’Italia",
     "artist": "Gabry Ponte",
-    "video": "iUC9eebtpvI",
+    "video": "Le3WpaLYRvE",
     "language": [
       "Italian"
     ],
     "bpm": 384,
-    "gap": 2454.375,
+    "gap": 6804.375,
     "year": "2025",
     "artistOrigin": "SM",
-    "lastUpdate": "2025-04-07T00:12:41.725Z",
+    "lastUpdate": "2025-04-22T19:27:44.669Z",
+    "edition": "Esc 2025",
     "genre": "Electronic",
+    "videoGap": 5,
     "realBpm": 128,
-    "volume": 0.75,
+    "volume": 0.82,
     "author": "Tuupertunut",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=30123",
@@ -59217,6 +59303,36 @@
     "local": false
   },
   {
+    "id": "kaj-bara-bada-bastu",
+    "title": "Bara bada bastu",
+    "artist": "KAJ",
+    "video": "WK3HOMhAeQY",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 318,
+    "gap": 8799.43396226415,
+    "year": "2025",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-23T00:12:23.200Z",
+    "edition": "Esc 2025",
+    "genre": "Pop",
+    "videoGap": 5,
+    "realBpm": 106,
+    "volume": 0.75,
+    "author": "Tuupertunut",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30119",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kajbarabadabastu",
+    "local": false
+  },
+  {
     "id": "kaleen-we-will-rave",
     "title": "We Will Rave",
     "artist": "Kaleen",
@@ -71977,6 +72093,35 @@
     ],
     "tracksCount": 1,
     "search": "malumahp",
+    "local": false
+  },
+  {
+    "id": "mamagama-run-with-u",
+    "title": "Run With U",
+    "artist": "Mamagama",
+    "video": "upbiPJ9uA70",
+    "language": [
+      "English"
+    ],
+    "bpm": 232,
+    "gap": 24555.172413793105,
+    "year": "2025",
+    "artistOrigin": "AZ",
+    "lastUpdate": "2025-04-23T00:12:23.491Z",
+    "edition": "Esc 2025",
+    "genre": "Indie-Pop",
+    "realBpm": 115,
+    "volume": 0.76,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30061",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mamagamarunwithu",
     "local": false
   },
   {
@@ -101760,6 +101905,34 @@
     "local": false
   },
   {
+    "id": "sertab-erener-everyway-that-i-can",
+    "title": "Everyway That I Can",
+    "artist": "Sertab Erener",
+    "video": "bRAjf9rFA58",
+    "language": [
+      "English"
+    ],
+    "bpm": 379,
+    "gap": 14830.554089709762,
+    "year": "2003",
+    "artistOrigin": "TR",
+    "lastUpdate": "2025-04-23T00:12:24.088Z",
+    "edition": "ESC 2003",
+    "realBpm": 102,
+    "volume": 0.76,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29059",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sertaberenereverywaythatican",
+    "local": false
+  },
+  {
     "id": "set-it-off-why-worry",
     "title": "Why Worry",
     "artist": "Set It Off",
@@ -106885,6 +107058,34 @@
     "local": false
   },
   {
+    "id": "stefan-hope",
+    "title": "Hope",
+    "artist": "STEFAN",
+    "video": "bKhSlSx00-I",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 11754.390243902439,
+    "year": "2022",
+    "lastUpdate": "2025-04-23T00:12:23.934Z",
+    "edition": "Esc 2022",
+    "genre": "Western-Pop",
+    "realBpm": 123,
+    "volume": 0.76,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29197",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stefanhope",
+    "local": false
+  },
+  {
     "id": "steindi-the-hardest-karaoke-song-in-the-world",
     "title": "The Hardest Karaoke Song in the World",
     "artist": "Steindi",
@@ -110150,11 +110351,11 @@
     "gap": 3435.3060728455516,
     "year": "2025",
     "artistOrigin": "LV",
-    "lastUpdate": "2025-04-07T00:12:41.585Z",
-    "edition": "ESC 2025",
+    "lastUpdate": "2025-04-22T19:25:54.562Z",
+    "edition": "Esc 2025",
     "genre": "Folk",
     "realBpm": 140,
-    "volume": 0.81,
+    "volume": 0.78,
     "author": "Mircosoft93",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=30391",
@@ -118866,6 +119067,34 @@
     ],
     "tracksCount": 1,
     "search": "tomatsuharukacourageswordartonlineii",
+    "local": false
+  },
+  {
+    "id": "tommy-cash-espresso-macchiato",
+    "title": "Espresso Macchiato",
+    "artist": "Tommy Cash",
+    "video": "5MS_Fczs_98",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 20920,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-23T00:12:22.529Z",
+    "edition": "Esc 2025",
+    "realBpm": 120,
+    "volume": 0.78,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30461",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tommycashespressomacchiato",
     "local": false
   },
   {
