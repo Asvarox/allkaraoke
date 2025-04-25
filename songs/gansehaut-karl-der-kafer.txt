@@ -1,0 +1,299 @@
+#ARTIST:Gänsehaut
+#TITLE:Karl der Käfer
+#CREATOR:macgyver2809
+#BPM:300
+#YEAR:1983
+#PREVIEWSTART:34
+#VIDEO:v=SLErVV1TxUI
+#LANGUAGE:German
+#GAP:2720
+#ALLKARAOKE_ID:gansehaut-karl-der-kafer
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:05.051Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=612
+#ALLKARAOKE_REALBPM:131
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5877
+#ALLKARAOKE_PREVIEWEND:50
+#ALLKARAOKE_VOLUME:0,9
+#MP3:Gänsehaut - Karl der Käfer.mp3
+: 20 7 4 Tief 
+: 31 2 6 im 
+: 34 8 3 Wald 
+: 48 2 5 zwi
+: 51 3 4 schen 
+: 59 4 4 Moos 
+: 66 3 3 und 
+: 72 10 5 Farn
+- 82
+: 93 2 3 Da 
+: 97 2 5 lebte 
+: 103 6 4 ein 
+: 111 10 3 Käfer 
+: 126 3 4 mit 
+: 132 10 3 Namen 
+: 145 8 2 Karl.
+- 153
+: 164 2 4 Sein 
+: 169 3 6 Le
+: 173 10 6 ben 
+: 192 5 5 wurde 
+: 201 12 5 jäh 
+: 214 3 4 ge
+: 218 17 3 stört
+- 235
+: 248 3 4 Als 
+: 254 2 4 er 
+: 257 4 6 ein 
+: 262 11 3 dumpfes 
+: 276 3 4 Grol
+: 280 10 4 len 
+: 292 15 2 hört.
+- 307
+: 316 3 4 Lärm
+: 320 4 3 ende 
+: 326 6 5 Ma
+: 333 4 4 schi
+: 338 5 2 nen 
+: 345 5 6 über
+: 351 7 5 rollen 
+: 359 7 4 den 
+: 367 11 2 Wald
+- 378
+: 385 3 3 Über
+: 389 4 4 tö
+: 394 4 4 nen 
+: 399 4 3 den 
+: 404 3 2 Ge
+: 408 7 2 sang 
+: 422 3 6 der 
+: 428 2 7 Vö
+: 431 6 7 gel 
+: 439 2 5 schon 
+: 442 10 4 bald.
+- 452
+: 460 2 6 Mit 
+: 464 5 7 schar
+: 470 6 8 fer 
+: 477 10 5 Axt 
+: 489 7 4 fällt 
+: 497 3 6 man 
+: 502 8 5 Baum 
+: 512 2 5 um 
+: 515 10 3 Baum
+- 525
+: 543 3 5 Zer
+: 547 4 4 stört 
+: 554 6 3 damit 
+: 566 2 5 sei
+: 569 4 5 nen 
+: 574 12 4 Lebens
+: 587 13 2 raum
+- 600
+* 610 7 5 Karl 
+: 618 5 6 der 
+: 624 9 4 Käfer 
+: 638 4 4 wurde 
+: 646 5 3 nicht 
+: 655 3 3 ge
+: 659 12 2 fragt
+- 671
+: 680 2 5 Man 
+: 684 3 4 hatte 
+: 689 10 5 ihn 
+: 702 5 4 ein
+: 708 10 4 fach 
+: 721 10 3 fort
+: 732 4 2 ge
+: 737 10 2 jagt.
+- 747
+* 758 3 5 Karl 
+: 765 3 6 der 
+: 771 9 4 Käfer 
+: 785 6 5 wurde 
+: 794 6 4 nicht 
+: 803 3 6 ge
+: 807 12 3 fragt
+- 819
+: 826 2 4 Man 
+: 831 2 5 hatte 
+: 835 11 4 ihn 
+: 849 4 6 ein
+: 854 10 6 fach 
+: 868 10 5 fort
+: 879 4 2 ge
+: 884 10 2 jagt.
+- 894 1179
+- 1179
+: 1199 3 6 Eine 
+: 1203 3 7 Wand 
+: 1208 2 5 aus 
+: 1211 5 4 As
+: 1217 10 4 phalt 
+: 1235 9 8 breitet 
+: 1245 7 6 sich 
+: 1253 9 4 aus
+- 1262
+: 1272 2 7 For
+: 1275 4 7 dert 
+: 1281 4 5 die 
+: 1288 11 4 Natur 
+: 1306 2 7 zum 
+: 1310 4 5 Rück
+: 1315 4 4 zug 
+: 1323 11 3 auf.
+- 1334
+: 1340 3 5 Eine 
+* 1348 10 7 Blume 
+: 1371 3 6 die 
+: 1376 3 5 noch 
+: 1380 4 4 am 
+: 1385 6 7 Weges
+: 1392 5 5 rand 
+: 1398 13 7 steht
+- 1411 1412
+- 1412
+: 1432 8 6 Wird 
+: 1441 4 8 ein
+: 1446 5 8 fach 
+: 1455 11 6 zu
+: 1467 3 5 ge
+: 1471 13 3 teert.
+- 1484
+* 1494 10 4 Karl
+* 1505 8 7 ~ 
+: 1520 3 5 ist 
+: 1526 2 4 schon 
+: 1530 7 3 längst 
+: 1540 2 6 nicht 
+: 1543 4 5 mehr 
+: 1549 7 2 hier
+- 1556
+: 1565 3 6 Ein 
+: 1569 6 5 Platz 
+: 1578 3 6 für 
+: 1583 13 8 Tiere 
+: 1605 7 6 gibt’s 
+: 1613 6 5 da 
+: 1620 4 3 nicht 
+: 1625 10 2 mehr.
+- 1635
+: 1642 6 5 Dort 
+: 1651 4 7 wo 
+: 1656 8 8 Karl 
+: 1667 2 4 ein
+: 1670 4 4 mal 
+: 1676 5 6 zu 
+: 1687 3 6 Hause 
+: 1692 9 5 war
+- 1701
+: 1720 5 5 Fahr’n 
+: 1728 2 7 jetzt 
+: 1733 9 9 Käfer 
+: 1747 3 6 aus 
+: 1753 6 4 Blech 
+: 1762 2 6 und 
+: 1766 14 4 Stahl.
+- 1780
+* 1788 6 3 Karl 
+: 1797 3 5 der 
+: 1802 8 8 Käfer 
+: 1816 4 5 wurde 
+: 1825 3 7 nicht 
+: 1834 4 8 ge
+: 1839 10 5 fragt
+- 1849
+: 1856 2 3 Man 
+: 1861 2 5 hatte 
+: 1865 11 6 ihn 
+: 1880 2 8 ein
+: 1883 10 8 fach 
+: 1898 10 7 fort
+: 1909 2 3 ge
+: 1912 10 3 jagt.
+- 1922
+* 1935 3 2 Karl 
+: 1943 2 5 der 
+: 1947 11 7 Käfer 
+: 1963 4 6 wurde 
+: 1971 5 4 nicht 
+: 1982 3 4 ge
+: 1986 10 2 fragt
+- 1996
+: 2005 2 5 Man 
+: 2010 1 5 hatte 
+: 2013 10 7 ihn 
+: 2026 3 5 ein
+: 2030 10 5 fach 
+: 2045 10 5 fort
+: 2056 2 2 ge
+: 2059 10 2 jagt
+- 2069 2651
+- 2651
+* 2671 6 6 Karl 
+: 2680 2 7 der 
+: 2684 9 5 Käfer 
+: 2698 5 4 wurde 
+: 2706 6 7 nicht 
+: 2715 3 6 ge
+: 2719 14 2 fragt
+- 2733
+: 2739 2 6 Man 
+: 2744 1 5 hatte 
+: 2747 11 4 ihn 
+: 2761 2 6 ein
+: 2764 10 6 fach 
+: 2780 10 6 fort
+: 2791 2 4 ge
+: 2794 10 4 jagt.
+- 2804
+* 2817 4 5 Karl 
+: 2826 1 7 der 
+: 2829 12 5 Käfer 
+: 2845 4 7 wurde 
+: 2853 6 5 nicht 
+: 2862 3 6 ge
+: 2866 13 2 fragt
+- 2879
+: 2886 2 6 Man 
+: 2889 2 7 hatte 
+: 2894 11 6 ihn 
+: 2908 2 5 ein
+: 2911 10 5 fach 
+: 2928 10 4 fort
+: 2939 2 2 ge
+: 2942 10 2 jagt.
+- 2952
+* 2964 4 3 Karl 
+: 2972 2 5 der 
+: 2976 12 7 Käfer 
+: 2992 5 5 wurde 
+: 3000 5 6 nicht 
+: 3009 3 6 ge
+: 3013 17 2 fragt
+- 3030
+: 3032 3 5 Man 
+: 3037 2 7 hatte 
+: 3041 13 6 ihn 
+: 3057 1 4 ein
+: 3059 10 4 fach 
+: 3075 10 4 fort
+: 3086 2 2 ge
+: 3089 10 2 jagt.
+- 3099
+* 3112 6 6 Karl 
+: 3121 2 5 der 
+: 3125 11 7 Käfer 
+: 3140 5 5 wurde 
+: 3147 7 7 nicht 
+: 3157 3 5 ge
+: 3161 16 2 fragt
+- 3177
+: 3182 6 4 Man 
+: 3190 9 6 hatte 
+: 3200 11 8 ihn 
+: 3212 4 9 ein
+: 3217 15 9 fach 
+* 3233 14 7 fort
+* 3248 6 5 ge
+* 3255 62 5 jagt.
+E

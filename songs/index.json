@@ -2965,6 +2965,34 @@
     "local": false
   },
   {
+    "id": "adriana-calcanhoto-fico-assim-sem-voce",
+    "title": "Fico Assim Sem Você",
+    "artist": "Adriana Calcanhoto",
+    "video": "iojYDSjKK00",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 244,
+    "gap": 16966.39344262295,
+    "year": "2005",
+    "artistOrigin": "BR",
+    "lastUpdate": "2025-04-25T00:13:01.973Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "patriciagouveia",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5248",
+    "tracks": [
+      {
+        "name": "Fico Assim Sem Você",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adrianacalcanhotoficoassimsemvoce",
+    "local": false
+  },
+  {
     "id": "aerosmith-crazy",
     "title": "Crazy",
     "artist": "Aerosmith",
@@ -7481,6 +7509,35 @@
     "local": false
   },
   {
+    "id": "apache-207-breaking-your-heart",
+    "title": "Breaking Your Heart",
+    "artist": "Apache 207",
+    "video": "jkNmgHcWIUU",
+    "language": [
+      "German"
+    ],
+    "bpm": 330,
+    "gap": 34250,
+    "year": "2023",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:04.456Z",
+    "realBpm": 165,
+    "previewStart": 64,
+    "previewEnd": 85,
+    "volume": 0.76,
+    "author": "Mamba99",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=156400",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27462",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "apache207breakingyourheart",
+    "local": false
+  },
+  {
     "id": "apocalyptica-feat-brent-smith-not-strong-enough",
     "title": "Not Strong Enough",
     "artist": "Apocalyptica feat. Brent Smith",
@@ -7907,6 +7964,32 @@
     ],
     "tracksCount": 1,
     "search": "arcticmonkeysibetyoulookgoodonthedancefloor",
+    "local": false
+  },
+  {
+    "id": "arctic-monkeys-i-wanna-be-yours",
+    "title": "I Wanna Be Yours",
+    "artist": "Arctic Monkeys",
+    "video": "dFMu3ulTd-w",
+    "language": [
+      "English"
+    ],
+    "bpm": 150,
+    "gap": 17100,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-25T00:13:04.651Z",
+    "genre": "Alternative",
+    "realBpm": 68,
+    "volume": 0.77,
+    "author": "TuneoApp AutoGen",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arcticmonkeysiwannabeyours",
     "local": false
   },
   {
@@ -12043,6 +12126,34 @@
     "local": false
   },
   {
+    "id": "bad-omens-limits",
+    "title": "Limits",
+    "artist": "Bad Omens",
+    "video": "HSpaZjR_ULE",
+    "language": [
+      "English"
+    ],
+    "bpm": 206,
+    "gap": 14290.582524271846,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.863Z",
+    "realBpm": 140,
+    "previewStart": 99,
+    "previewEnd": 132,
+    "volume": 0.7,
+    "author": "MadDogX",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=26865",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "badomenslimits",
+    "local": false
+  },
+  {
     "id": "bad-omens-the-grey",
     "title": "The Grey",
     "artist": "Bad Omens",
@@ -12736,6 +12847,36 @@
     ],
     "tracksCount": 1,
     "search": "battachase",
+    "local": false
+  },
+  {
+    "id": "beast-in-black-blind-and-frozen",
+    "title": "Blind And Frozen",
+    "artist": "Beast In Black",
+    "video": "2N4tXf3Ensw",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.32,
+    "gap": 25025.04105090312,
+    "year": "2017",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-04-25T00:13:03.865Z",
+    "genre": "Metal",
+    "realBpm": 146,
+    "previewStart": 55,
+    "previewEnd": 92,
+    "volume": 0.68,
+    "author": "mouton5000",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=147726",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=22999",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "beastinblackblindandfrozen",
     "local": false
   },
   {
@@ -16126,6 +16267,35 @@
     ],
     "tracksCount": 1,
     "search": "blindguardianthebardssongintheforest",
+    "local": false
+  },
+  {
+    "id": "blind-guardian-to-france",
+    "title": "To France",
+    "artist": "Blind Guardian",
+    "video": "OJb05AMcbtY",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 9360,
+    "year": "1996",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:04.853Z",
+    "realBpm": 98,
+    "previewStart": 79,
+    "previewEnd": 118,
+    "volume": 0.74,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=217",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardiantofrance",
     "local": false
   },
   {
@@ -31929,6 +32099,65 @@
     "local": false
   },
   {
+    "id": "die-arzte-westerland",
+    "title": "Westerland",
+    "artist": "Die Ärzte",
+    "video": "BdObvla9QeU",
+    "language": [
+      "German"
+    ],
+    "bpm": 376.6,
+    "gap": 10454.248539564525,
+    "year": "1988",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:04.062Z",
+    "genre": "Punk",
+    "realBpm": 94,
+    "previewStart": 62,
+    "previewEnd": 102,
+    "volume": 0.77,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3456",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "diearztewesterland",
+    "local": false
+  },
+  {
+    "id": "die-drei-kids-titelsong",
+    "title": "Titelsong",
+    "artist": "Die drei ??? Kids",
+    "video": "XvacL5DVYX8",
+    "language": [
+      "German"
+    ],
+    "bpm": 393.22,
+    "gap": -21.078276791617782,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:04.255Z",
+    "realBpm": 128,
+    "previewStart": 25,
+    "previewEnd": 57,
+    "volume": 0.82,
+    "author": "katana-0815",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=135001",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29915",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "diedreikidstitelsong",
+    "local": false
+  },
+  {
     "id": "die-flippers-aber-dich-gibts-nur-einmal-fur-mich",
     "title": "Aber dich gibt’s nur einmal für mich",
     "artist": "Die Flippers",
@@ -44829,6 +45058,35 @@
     "local": false
   },
   {
+    "id": "gansehaut-karl-der-kafer",
+    "title": "Karl der Käfer",
+    "artist": "Gänsehaut",
+    "video": "SLErVV1TxUI",
+    "language": [
+      "German"
+    ],
+    "bpm": 300,
+    "gap": 2720,
+    "year": "1983",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:05.051Z",
+    "realBpm": 131,
+    "previewStart": 34,
+    "previewEnd": 50,
+    "volume": 0.9,
+    "author": "macgyver2809",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=612",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5877",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gansehautkarlderkafer",
+    "local": false
+  },
+  {
     "id": "garou-seul",
     "title": "Seul",
     "artist": "Garou",
@@ -46789,6 +47047,33 @@
     ],
     "tracksCount": 1,
     "search": "golecorkiestraslodycze",
+    "local": false
+  },
+  {
+    "id": "golec-uorkiestra-sciernisko",
+    "title": "Ściernisko",
+    "artist": "Golec uOrkiestra",
+    "video": "yrJ_lzYGJdg",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 299.9,
+    "gap": 32400,
+    "year": "2000",
+    "artistOrigin": "PL",
+    "lastUpdate": "2025-04-25T00:13:03.033Z",
+    "genre": "Folk Pop",
+    "realBpm": 149,
+    "volume": 0.8,
+    "author": "gpm",
+    "sourceUrl": "https://www.youtube.com/watch?v=yrJ_lzYGJdg",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "golecuorkiestrasciernisko",
     "local": false
   },
   {
@@ -48926,6 +49211,34 @@
     ],
     "tracksCount": 1,
     "search": "hanatanjishoumushoku",
+    "local": false
+  },
+  {
+    "id": "hans-albers-auf-der-reeperbahn-nachts-um-halb-eins",
+    "title": "Auf der Reeperbahn nachts um halb eins",
+    "artist": "Hans Albers",
+    "video": "fhM_lOlAjqo",
+    "language": [
+      "German"
+    ],
+    "bpm": 210,
+    "gap": 9790,
+    "year": "1936",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:05.441Z",
+    "genre": "Schlager",
+    "realBpm": 74,
+    "volume": 0.8,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6097",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hansalbersaufderreeperbahnnachtsumhalbeins",
     "local": false
   },
   {
@@ -51242,6 +51555,36 @@
     "local": false
   },
   {
+    "id": "hubert-kah-engel-07",
+    "title": "Engel 07",
+    "artist": "Hubert Kah",
+    "video": "suwrrth5Xbo",
+    "language": [
+      "German"
+    ],
+    "bpm": 303.3,
+    "gap": 19330.880316518298,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:05.640Z",
+    "genre": "Synth-Pop, Neue Deutsche Welle",
+    "realBpm": 150,
+    "previewStart": 44,
+    "previewEnd": 96,
+    "volume": 0.8,
+    "author": "RES",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=55",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1425",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hubertkahengel07",
+    "local": false
+  },
+  {
     "id": "huey-lewis-the-news-do-you-believe-in-love",
     "title": "Do You Believe In Love",
     "artist": "Huey Lewis & The News",
@@ -52031,6 +52374,32 @@
     "local": false
   },
   {
+    "id": "imagine-dragons-amsterdam",
+    "title": "Amsterdam",
+    "artist": "Imagine Dragons",
+    "video": "8F8ulEOrhOM",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 32321.739130434784,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.445Z",
+    "genre": "Alternative",
+    "realBpm": 115,
+    "volume": 0.77,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonsamsterdam",
+    "local": false
+  },
+  {
     "id": "imagine-dragons-bad-liar",
     "title": "Bad Liar",
     "artist": "Imagine Dragons",
@@ -52225,6 +52594,32 @@
     "local": false
   },
   {
+    "id": "imagine-dragons-hear-me",
+    "title": "Hear Me",
+    "artist": "Imagine Dragons",
+    "video": "yg8lwoGx_mM",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 22080,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.438Z",
+    "genre": "Alternative",
+    "realBpm": 128,
+    "volume": 0.74,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonshearme",
+    "local": false
+  },
+  {
     "id": "imagine-dragons-its-time",
     "title": "It's Time",
     "artist": "Imagine Dragons",
@@ -52274,6 +52669,32 @@
     ],
     "tracksCount": 1,
     "search": "imaginedragonsnatural",
+    "local": false
+  },
+  {
+    "id": "imagine-dragons-nothing-left-to-say-rocks",
+    "title": "Nothing Left To Say / Rocks",
+    "artist": "Imagine Dragons",
+    "video": "zsmhXJ5pCj0",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 34941.596638655465,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.447Z",
+    "genre": "Alternative",
+    "realBpm": 108,
+    "volume": 0.75,
+    "author": "prgoenner",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonsnothinglefttosayrocks",
     "local": false
   },
   {
@@ -52358,6 +52779,31 @@
     "local": false
   },
   {
+    "id": "imagine-dragons-shots-live-acoustic",
+    "title": "Shots (Live Acoustic)",
+    "artist": "Imagine Dragons",
+    "video": "Tni74ocFxtQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 379.64,
+    "gap": 29672.22210515225,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.437Z",
+    "realBpm": 96,
+    "volume": 0.79,
+    "author": "mkdigital",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonsshotsliveacoustic",
+    "local": false
+  },
+  {
     "id": "imagine-dragons-thunder",
     "title": "Thunder",
     "artist": "Imagine Dragons",
@@ -52383,6 +52829,32 @@
     ],
     "tracksCount": 1,
     "search": "imaginedragonsthunder",
+    "local": false
+  },
+  {
+    "id": "imagine-dragons-tiptoe",
+    "title": "Tiptoe",
+    "artist": "Imagine Dragons",
+    "video": "C0IeIXVMDBI",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 35960,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.440Z",
+    "genre": "Alternative",
+    "realBpm": 120,
+    "volume": 0.74,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonstiptoe",
     "local": false
   },
   {
@@ -52546,6 +53018,36 @@
     ],
     "tracksCount": 1,
     "search": "inthismomentwhore",
+    "local": false
+  },
+  {
+    "id": "ina-deter-band-neue-manner-braucht-das-land",
+    "title": "Neue Männer braucht das Land",
+    "artist": "Ina Deter Band",
+    "video": "4rvybxj_UEw",
+    "language": [
+      "German"
+    ],
+    "bpm": 303.1,
+    "gap": 3763.157894736842,
+    "year": "1982",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:04.854Z",
+    "genre": "NDW",
+    "realBpm": 154,
+    "previewStart": 43,
+    "previewEnd": 80,
+    "volume": 0.79,
+    "author": "RES",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=55",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=14770",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "inadeterbandneuemannerbrauchtdasland",
     "local": false
   },
   {
@@ -53722,6 +54224,31 @@
     ],
     "tracksCount": 1,
     "search": "jagwartwinbadfeeling",
+    "local": false
+  },
+  {
+    "id": "jamal-feat-jambojet-uspm-policeman",
+    "title": "Policeman",
+    "artist": "Jamal feat. Jambojet & USPM",
+    "video": "el0prDXwxQI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 392,
+    "gap": 6355.102040816327,
+    "year": "2005",
+    "lastUpdate": "2025-04-25T00:13:02.832Z",
+    "genre": "Reggae",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jamalfeatjambojetuspmpoliceman",
     "local": false
   },
   {
@@ -63557,6 +64084,32 @@
     "local": false
   },
   {
+    "id": "kygo-feat-conrad-firestone",
+    "title": "Firestone",
+    "artist": "Kygo feat. Conrad",
+    "video": "9Sc-ir2UwGU",
+    "language": [
+      "English"
+    ],
+    "bpm": 228.04,
+    "gap": 31653.33099456236,
+    "year": "2014",
+    "lastUpdate": "2025-04-25T00:13:04.652Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 0.76,
+    "author": "fepo",
+    "sourceUrl": "https://www.youtube.com/watch?v=INOXovnyZ8s",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kygofeatconradfirestone",
+    "local": false
+  },
+  {
     "id": "kygo-feat-maty-noyes-stay",
     "title": "Stay",
     "artist": "Kygo feat. Maty Noyes",
@@ -67001,6 +67554,31 @@
     ],
     "tracksCount": 1,
     "search": "lewiscapaldiforgetme",
+    "local": false
+  },
+  {
+    "id": "lewis-capaldi-hold-me-while-you-wait",
+    "title": "Hold Me While You Wait",
+    "artist": "Lewis Capaldi",
+    "video": "ZHRXmYdwc1o",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.1,
+    "gap": 4738.040478380864,
+    "year": "2019",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-25T00:13:04.852Z",
+    "realBpm": 107,
+    "volume": 0.79,
+    "author": "telefreed",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lewiscapaldiholdmewhileyouwait",
     "local": false
   },
   {
@@ -79667,11 +80245,11 @@
     "gap": 7253.499431541335,
     "year": "2025",
     "artistOrigin": "MT",
-    "lastUpdate": "2025-04-07T00:12:41.728Z",
+    "lastUpdate": "2025-04-23T19:33:26.285Z",
     "edition": "ESC 2025",
     "genre": "Pop",
     "realBpm": 122,
-    "volume": 0.5,
+    "volume": 0.78,
     "author": "Mircosoft93",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=30080",
@@ -79923,6 +80501,31 @@
     ],
     "tracksCount": 1,
     "search": "modestmousefloaton",
+    "local": false
+  },
+  {
+    "id": "molly-sanden-husavik-my-hometown",
+    "title": "Husavik - My Hometown",
+    "artist": "Molly Sanden",
+    "video": "UamELF1MyN0",
+    "language": [
+      "English"
+    ],
+    "bpm": 343.7,
+    "gap": 22636.217631655512,
+    "year": "2021",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-04-25T00:13:01.981Z",
+    "realBpm": 132,
+    "volume": 0.75,
+    "author": "Robohon",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mollysandenhusavikmyhometown",
     "local": false
   },
   {
@@ -80816,6 +81419,36 @@
     ],
     "tracksCount": 1,
     "search": "mumfordsonsiwillwait",
+    "local": false
+  },
+  {
+    "id": "munchener-freiheit-ohne-dich-schlaf-ich-heut-nacht-nicht-ein",
+    "title": "Ohne dich (schlaf ich heut Nacht nicht ein)",
+    "artist": "Münchener Freiheit",
+    "video": "0fUsuQUUotA",
+    "language": [
+      "German"
+    ],
+    "bpm": 366.44,
+    "gap": 20607.57450060037,
+    "year": "1985",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:05.246Z",
+    "genre": "Schlager",
+    "realBpm": 89,
+    "previewStart": 64,
+    "previewEnd": 90,
+    "volume": 0.7,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27466",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "munchenerfreiheitohnedichschlafichheutnachtnichtein",
     "local": false
   },
   {
@@ -91901,6 +92534,36 @@
     "local": false
   },
   {
+    "id": "poppy-concrete",
+    "title": "Concrete",
+    "artist": "Poppy",
+    "video": "WwoGhpYdebQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 352.95,
+    "gap": 3410.025499362516,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.652Z",
+    "genre": "Metal",
+    "realBpm": 176,
+    "previewStart": 37,
+    "previewEnd": 60,
+    "volume": 0.74,
+    "author": "lukmuk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=121288",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=24223",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "poppyconcrete",
+    "local": false
+  },
+  {
     "id": "porno-graffitti-melissa",
     "title": "Melissa",
     "artist": "Porno Graffitti",
@@ -98528,6 +99191,34 @@
     ],
     "tracksCount": 1,
     "search": "rundmcitstricky",
+    "local": false
+  },
+  {
+    "id": "rundfunk-kinderchor-berlin-agnes-sandmann-sandmann-lieber-sandmann",
+    "title": "Sandmann, lieber Sandmann",
+    "artist": "Rundfunk-Kinderchor Berlin & Agnes Sandmann",
+    "video": "Legon7o51WE",
+    "language": [
+      "German"
+    ],
+    "bpm": 209.62,
+    "gap": 5608.187195878256,
+    "year": "2012",
+    "lastUpdate": "2025-04-25T00:13:04.063Z",
+    "realBpm": 106,
+    "previewStart": 7,
+    "previewEnd": 30,
+    "volume": 0.7,
+    "author": "blewmaxx",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=41198",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=14615",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rundfunkkinderchorberlinagnessandmannsandmannliebersandmann",
     "local": false
   },
   {
@@ -108623,6 +109314,32 @@
     "local": false
   },
   {
+    "id": "sylwia-grzeszczak-male-rzeczy",
+    "title": "Małe rzeczy",
+    "artist": "Sylwia Grzeszczak",
+    "video": "87Q5PEjmrCU",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 174.1,
+    "gap": 8252.268811028145,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2025-04-25T00:13:03.030Z",
+    "genre": "Pop",
+    "realBpm": 88,
+    "volume": 0.91,
+    "author": "gpm",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sylwiagrzeszczakmalerzeczy",
+    "local": false
+  },
+  {
     "id": "sylwia-grzeszczak-tamta-dziewczyna",
     "title": "Tamta dziewczyna",
     "artist": "Sylwia Grzeszczak",
@@ -109976,8 +110693,8 @@
     "bpm": 380,
     "gap": 4893.157894736842,
     "year": "2024",
-    "artistOrigin": "NZ",
-    "lastUpdate": "2025-04-07T00:12:40.875Z",
+    "artistOrigin": "LU",
+    "lastUpdate": "2025-04-23T19:37:45.835Z",
     "edition": "ESC 2024",
     "realBpm": 94,
     "volume": 0.77,
@@ -110019,6 +110736,34 @@
     ],
     "tracksCount": 1,
     "search": "talkingheadspsychokiller",
+    "local": false
+  },
+  {
+    "id": "talking-heads-this-must-be-the-place-naive-melody",
+    "title": "This Must Be The Place (Naive Melody)",
+    "artist": "Talking Heads",
+    "video": "Fb2q141rMNE",
+    "language": [
+      "English"
+    ],
+    "bpm": 229.05,
+    "gap": 37787.681728880154,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-25T00:13:03.233Z",
+    "genre": "New Wave",
+    "realBpm": 115,
+    "previewStart": 144,
+    "previewEnd": 170,
+    "volume": 1,
+    "author": "krasserdude",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "talkingheadsthismustbetheplacenaivemelody",
     "local": false
   },
   {
@@ -116365,6 +117110,34 @@
     "local": false
   },
   {
+    "id": "the-smiths-please-please-please-let-me-get-what-i-want",
+    "title": "Please, Please, Please, Let Me Get What I Want",
+    "artist": "The Smiths",
+    "video": "w3qPMe_cCJk",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 884.9624060150377,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-04-25T00:13:03.232Z",
+    "genre": "Alternative Rock",
+    "realBpm": 63,
+    "previewStart": 41,
+    "previewEnd": 66,
+    "volume": 0.81,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thesmithspleasepleasepleaseletmegetwhatiwant",
+    "local": false
+  },
+  {
     "id": "the-smiths-there-is-a-light-that-never-goes-out",
     "title": "There Is A Light That Never Goes Out",
     "artist": "The Smiths",
@@ -119080,8 +119853,8 @@
     "bpm": 360,
     "gap": 20920,
     "year": "2025",
-    "artistOrigin": "US",
-    "lastUpdate": "2025-04-23T00:12:22.529Z",
+    "artistOrigin": "EE",
+    "lastUpdate": "2025-04-23T19:35:29.200Z",
     "edition": "Esc 2025",
     "realBpm": 120,
     "volume": 0.78,
@@ -121138,6 +121911,36 @@
     ],
     "tracksCount": 1,
     "search": "udolindenbergapache207komet",
+    "local": false
+  },
+  {
+    "id": "udo-lindenberg-sonderzug-nach-pankow",
+    "title": "Sonderzug nach Pankow",
+    "artist": "Udo Lindenberg",
+    "video": "1oKKwuIZzr8",
+    "language": [
+      "German"
+    ],
+    "bpm": 323.58,
+    "gap": 46579.213066072756,
+    "year": "1982",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:14.507Z",
+    "genre": "Schlager",
+    "realBpm": 162,
+    "previewStart": 47,
+    "previewEnd": 95,
+    "volume": 0.78,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12238",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "udolindenbergsonderzugnachpankow",
     "local": false
   },
   {
@@ -125915,6 +126718,35 @@
     ],
     "tracksCount": 1,
     "search": "zaralarssonuncover",
+    "local": false
+  },
+  {
+    "id": "zartmann-tau-mich-auf",
+    "title": "tau mich auf",
+    "artist": "Zartmann",
+    "video": "M0_z5WmMV-c",
+    "language": [
+      "German"
+    ],
+    "bpm": 314,
+    "gap": 8746.815286624204,
+    "year": "2025",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-25T00:13:03.449Z",
+    "realBpm": 125,
+    "previewStart": 33,
+    "previewEnd": 60,
+    "volume": 0.82,
+    "author": "DS",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1062",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30433",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "zartmanntaumichauf",
     "local": false
   },
   {

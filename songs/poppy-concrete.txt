@@ -1,0 +1,379 @@
+#ARTIST:Poppy
+#TITLE:Concrete
+#CREATOR:lukmuk
+#BPM:352,95
+#YEAR:2020
+#PREVIEWSTART:37
+#VIDEO:v=WwoGhpYdebQ
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:3410,025499362516
+#ALLKARAOKE_ID:poppy-concrete
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:03.652Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=121288
+#ALLKARAOKE_REALBPM:176
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=24223
+#ALLKARAOKE_PREVIEWEND:60
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Poppy - Concrete.mp3
+F 24 1 0 Bu
+F 27 1 0 ry 
+F 30 4 0 me 
+F 37 3 0 six 
+F 44 6 0 feet 
+F 52 8 0 deep, 
+F 69 2 0 bu
+F 74 1 0 ry 
+F 78 6 0 me 
+F 86 4 0 six 
+F 93 5 0 feet 
+F 100 6 0 deep
+- 106 125
+- 125
+F 149 2 0 Bu
+F 153 1 0 ry 
+F 157 4 0 me 
+F 165 5 0 six 
+F 172 5 0 feet 
+F 181 7 0 deep, 
+F 196 2 0 bu
+F 201 1 0 ry 
+F 205 6 0 me 
+F 213 5 0 six 
+F 221 5 0 feet 
+F 228 7 0 deep
+- 235 253
+- 253
+F 277 2 0 Bu
+F 282 1 0 ry 
+F 285 5 0 me 
+F 293 5 0 six 
+F 301 5 0 feet 
+F 309 9 0 deep, 
+F 324 1 0 co
+F 328 2 0 ver 
+F 333 4 0 me 
+F 338 2 0 in 
+F 343 6 0 con
+F 351 10 0 crete, 
+F 364 3 0 turn 
+F 370 1 0 me 
+F 374 6 0 in
+F 382 1 0 to 
+F 385 2 0 a 
+F 389 11 0 street
+- 400
+F 406 2 0 Bu
+F 410 2 0 ry 
+F 413 6 0 me 
+F 421 5 0 six 
+F 428 5 0 feet 
+F 436 11 0 deep, 
+F 452 2 0 co
+F 456 2 0 ver 
+F 461 3 0 me 
+F 466 2 0 in 
+F 470 5 0 con
+F 478 12 0 crete, 
+F 492 2 0 turn 
+F 496 2 0 me 
+F 500 7 0 in
+F 510 1 0 to 
+F 513 2 0 a 
+F 517 17 0 street
+- 534 767
+- 767
+: 791 5 12 Che
+: 797 3 9 wy 
+: 802 7 7 che
+: 811 10 5 wy, 
+* 823 2 5 yum
+* 827 2 5 my 
+* 831 2 5 yum
+* 835 2 5 my 
+* 839 2 5 yum
+* 843 2 5 my
+- 845
+: 854 5 12 Sharp 
+: 860 3 9 and 
+: 865 7 7 poin
+: 874 10 5 ty, 
+* 886 2 5 yum
+* 890 2 5 my 
+* 894 2 5 yum
+* 898 2 5 my 
+* 902 2 5 yum
+* 906 2 5 my
+- 908
+: 918 12 9 Break 
+: 934 12 9 me 
+: 950 6 9 off 
+: 959 1 6 a 
+: 963 6 4 piece 
+: 971 1 2 of 
+: 975 5 2 that 
+: 983 7 2 tas
+: 991 6 6 ty 
+: 998 12 4 treat
+- 1010
+: 1016 3 2 Su
+: 1020 3 2 gar 
+: 1024 3 2 in 
+: 1028 3 5 my 
+: 1032 8 4 teeth, 
+: 1049 3 2 de
+: 1053 2 2 mons 
+: 1056 2 2 in 
+: 1060 2 5 my 
+: 1064 10 4 dreams
+- 1074
+: 1080 3 2 Watch 
+: 1084 3 2 me 
+: 1088 3 2 while 
+: 1092 3 5 I 
+: 1097 5 4 sleep 
+: 1105 2 4 for 
+* 1108 3 7 e
+* 1112 14 9 ter
+* 1128 13 4 ni
+* 1143 34 2 ty
+- 1177 1280
+- 1280
+F 1304 1 0 Bu
+F 1308 1 0 ry 
+F 1311 5 0 me 
+F 1319 6 0 six 
+F 1328 5 0 feet 
+F 1336 11 0 deep, 
+F 1351 1 0 co
+F 1355 1 0 ver 
+F 1359 1 0 me 
+F 1363 2 0 in 
+F 1368 6 0 con
+F 1376 11 0 crete, 
+F 1391 1 0 turn 
+F 1395 1 0 me 
+F 1399 7 0 in
+F 1408 1 0 to 
+F 1412 1 0 a 
+F 1416 12 0 street
+- 1428 1673
+- 1673
+: 1697 2 2 Some 
+: 1702 8 2 peo
+: 1711 1 4 ple 
+: 1715 5 6 like 
+: 1722 11 4 can
+: 1734 50 9 dy
+- 1784
+: 1795 2 0 Some 
+: 1800 7 0 peo
+: 1808 4 2 ple 
+: 1814 3 4 like 
+: 1820 9 2 cof
+: 1830 34 7 fee
+- 1864
+: 1869 3 2 But 
+: 1875 17 2 these 
+: 1894 14 11 life
+: 1911 9 9 less 
+: 1922 15 7 fla
+: 1938 6 2 ~
+: 1945 11 2 vors 
+: 1959 10 4 don’t 
+: 1973 18 5 sa
+: 1992 16 7 tis
+: 2009 11 5 fy 
+: 2021 39 4 me
+- 2060 2066
+- 2066
+: 2090 2 2 I 
+: 2095 8 2 tried 
+: 2104 1 4 to 
+: 2108 5 6 eat 
+: 2115 11 4 ice 
+: 2127 50 9 cream
+- 2177
+: 2188 2 0 I 
+: 2193 7 0 tried 
+: 2201 4 2 to 
+: 2207 3 4 drink 
+: 2213 14 7 tea
+- 2227 2240
+- 2240
+: 2264 4 2 But 
+: 2270 12 2 I 
+: 2287 14 11 need 
+: 2304 9 9 the 
+: 2316 15 7 taste 
+: 2334 14 2 of 
+* 2352 9 4 young 
+* 2365 19 5 blood 
+* 2385 17 7 in 
+* 2404 11 9 my 
+* 2416 45 9 teeth
+- 2461
+: 2465 23 2 Oo
+: 2489 24 1 ooh 
+: 2515 23 -1 wa
+: 2539 24 -2 ah
+- 2563 2590
+- 2590
+F 2614 1 1 
+- 2615 2796
+- 2796
+: 2820 5 12 Che
+: 2826 3 9 wy 
+: 2831 7 7 che
+: 2840 10 5 wy, 
+: 2852 2 5 yum
+: 2856 2 5 my 
+: 2860 2 5 yum
+: 2864 2 5 my 
+: 2868 2 5 yum
+: 2872 2 5 my
+- 2874
+: 2884 5 12 Sharp 
+: 2890 3 9 and 
+: 2895 7 7 poin
+: 2904 10 5 ty, 
+: 2916 2 5 yum
+: 2920 2 5 my 
+: 2924 2 5 yum
+: 2928 2 5 my 
+: 2932 2 5 yum
+: 2936 2 5 my
+- 2938
+: 2948 12 9 Break 
+: 2964 12 9 me 
+: 2978 6 9 off 
+: 2986 1 6 a 
+: 2989 6 4 piece 
+: 2997 3 2 of 
+: 3002 5 2 that 
+: 3011 7 2 tas
+: 3019 6 6 ty 
+: 3027 11 4 treat
+- 3038
+: 3042 3 2 Su
+: 3046 3 2 gar 
+: 3050 3 2 in 
+: 3054 3 5 my 
+: 3058 8 4 teeth, 
+: 3075 3 2 de
+: 3080 2 2 mons 
+: 3084 2 2 in 
+: 3088 2 5 my 
+: 3092 9 4 dreams
+- 3101
+: 3105 2 2 Watch 
+: 3109 1 2 me 
+: 3113 1 2 while 
+: 3117 2 5 I 
+: 3122 5 4 sleep 
+: 3130 1 4 for 
+* 3133 1 7 e
+* 3137 14 9 ter
+* 3153 13 4 ni
+* 3168 34 2 ty
+- 3202 3210
+- 3210
+: 3234 3 2 Su
+: 3238 3 2 gar 
+: 3242 3 2 in 
+: 3246 3 5 my 
+: 3250 8 4 teeth, 
+: 3266 3 2 de
+: 3270 2 2 mons 
+: 3273 2 2 in 
+: 3277 2 5 my 
+: 3281 10 4 dreams
+- 3291
+: 3299 2 2 Watch 
+: 3303 1 2 me 
+: 3307 1 2 while 
+: 3311 2 5 I 
+: 3316 5 4 sleep 
+: 3324 1 4 for 
+* 3327 1 7 e
+* 3331 14 9 ter
+* 3347 13 4 ni
+* 3362 34 2 ty
+- 3396 3430
+- 3430
+F 3454 1 1 
+- 3455 3625
+- 3625
+: 3649 2 11 Bu
+: 3653 2 11 ry 
+: 3657 6 11 me 
+: 3665 3 11 six 
+: 3672 3 6 feet 
+: 3679 8 6 deep 
+: 3691 6 4 and 
+: 3701 11 4 just 
+: 3714 2 11 co
+: 3718 2 11 ver 
+: 3722 4 11 me 
+: 3730 3 6 in 
+: 3737 6 6 con
+: 3747 7 4 crete 
+: 3758 9 4 please
+- 3767
+: 3773 4 9 Turn 
+: 3779 5 9 me 
+: 3787 5 8 in
+: 3794 6 6 to 
+: 3804 5 4 a 
+: 3814 10 4 street, 
+: 3830 4 9 turn 
+: 3836 5 9 me 
+: 3845 4 8 in
+: 3853 6 6 to 
+: 3863 7 4 a 
+: 3873 10 4 street
+- 3883
+: 3887 1 11 I 
+: 3890 2 11 don’t 
+: 3894 5 11 wan
+: 3901 4 6 na 
+: 3910 6 6 wait 
+: 3921 9 4 for
+: 3932 9 11 e
+: 3942 2 6 ~
+: 3945 4 4 ver 
+: 3953 4 4 and 
+: 3959 15 3 e
+: 3975 8 4 ver, 
+: 3987 12 4 please
+- 3999
+: 4004 4 9 Turn 
+: 4010 5 9 me 
+: 4019 4 8 in
+: 4027 6 6 to 
+: 4037 7 4 a 
+: 4047 9 4 street
+- 4056
+: 4060 4 9 Turn 
+: 4066 5 9 me 
+: 4075 4 8 in
+: 4083 6 6 to 
+: 4093 7 4 a 
+* 4103 35 4 street
+- 4138 4207
+- 4207
+: 4231 4 9 Turn 
+: 4237 5 9 me 
+: 4246 4 8 in
+: 4254 6 6 to 
+: 4264 7 4 a 
+: 4274 10 4 street
+- 4284
+: 4293 4 9 Turn 
+: 4299 5 9 me 
+: 4308 4 8 in
+: 4316 6 6 to 
+: 4326 7 4 a 
+: 4336 12 4 street
+E

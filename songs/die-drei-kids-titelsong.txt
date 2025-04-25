@@ -1,0 +1,132 @@
+#ARTIST:Die drei ??? Kids
+#TITLE:Titelsong
+#CREATOR:katana-0815
+#BPM:393,22
+#YEAR:2008
+#PREVIEWSTART:25
+#VIDEO:v=XvacL5DVYX8
+#LANGUAGE:German
+#GAP:-21,078276791617782
+#ALLKARAOKE_ID:die-drei-kids-titelsong
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:04.255Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=135001
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29915
+#ALLKARAOKE_PREVIEWEND:57
+#ALLKARAOKE_VOLUME:0,82
+#MP3:Die drei ??? Kids - Titelsong.mp3
+#COVER:Die drei ??? Kids - Titelsong [CO].jpg
+#BACKGROUND:Die drei ??? Kids - Titelsong [BG].jpg
+: 21 6 23 Die 
+: 29 7 22 Drei 
+: 38 7 20 Fra
+: 47 3 18 ge
+: 52 7 15 zei
+: 61 7 18 chen
+: 70 10 11 Kids
+- 80
+: 85 6 15 Oh 
+: 93 9 23 wo
+: 104 8 22 ~
+: 113 12 20 ~
+: 127 13 18 oh
+- 140
+: 148 18 15 Fürch
+: 168 14 11 tet 
+: 186 17 16 je
+: 204 12 13 der 
+: 223 14 18 Ü
+: 241 15 15 bel
+: 260 14 20 tä
+: 278 14 18 ter
+- 292
+: 317 6 23 Die 
+: 325 7 22 Drei 
+: 334 7 20 Fra
+: 343 3 18 ge
+: 348 7 15 zei
+: 357 7 18 chen 
+: 366 10 11 Kids
+- 376
+: 380 6 15 Oh
+: 388 9 23 wo
+: 399 8 22 ~
+: 409 12 20 ~ 
+* 423 12 18 oh
+- 435
+: 446 16 15 De
+: 464 17 11 dek
+: 482 15 16 ti
+: 499 14 13 ve 
+: 518 18 18 fan
+: 538 17 15 gen 
+: 557 16 20 Die
+: 575 16 18 be
+- 591 716
+- 716
+R 742 8 8 Jus
+R 751 17 8 tus 
+G 779 8 8 Jus
+G 788 16 8 tus
+- 804
+R 817 8 8 Pe
+R 826 13 8 ter 
+G 853 8 8 Pe
+G 862 13 8 ter
+- 875
+R 880 12 8 Und 
+R 895 13 8 Bob 
+G 926 11 8 Bob
+- 937
+R 951 9 8 Aus 
+R 969 7 8 Ro
+R 977 10 8 cky-
+R 992 21 8 Beach
+- 1013
+: 1020 6 23 Die 
+: 1028 7 22 Drei 
+: 1037 7 20 Fra
+: 1046 3 18 ge
+: 1051 7 15 zei
+: 1060 7 18 chen 
+: 1069 10 11 Kids
+- 1079
+: 1084 6 15 Oh
+: 1092 9 23 wo
+: 1103 8 22 ~
+: 1112 12 20 ~
+* 1126 12 18 oh
+- 1138
+: 1148 18 15 Fürch
+: 1168 14 11 tet 
+: 1186 17 16 je
+: 1204 12 13 der 
+: 1223 14 18 Ü
+: 1241 15 15 bel
+: 1260 14 20 tä
+: 1278 14 18 ter
+- 1292
+: 1317 6 23 Die 
+: 1325 7 22 Drei 
+: 1334 7 20 Fra
+: 1343 3 18 ge
+: 1348 7 15 zei
+: 1357 7 18 chen 
+: 1366 10 11 Kids
+- 1376
+: 1379 6 15 Oh
+: 1387 9 23 wo
+: 1398 8 22 ~
+: 1408 12 20 ~ 
+* 1422 12 18 oh
+- 1434
+: 1446 16 15 De
+: 1464 16 11 dek
+: 1482 15 16 ti
+: 1500 14 13 ve 
+: 1518 18 18 fan
+: 1537 17 15 gen 
+: 1556 16 20 Die
+: 1574 16 18 be
+E

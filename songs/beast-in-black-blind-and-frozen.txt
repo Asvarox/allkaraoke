@@ -1,0 +1,461 @@
+#ARTIST:Beast In Black
+#TITLE:Blind And Frozen
+#CREATOR:mouton5000
+#BPM:292,32
+#YEAR:2017
+#PREVIEWSTART:55
+#VIDEO:v=2N4tXf3Ensw
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:25025,04105090312
+#ALLKARAOKE_ID:beast-in-black-blind-and-frozen
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:03.865Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=147726
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22999
+#ALLKARAOKE_PREVIEWEND:92
+#ALLKARAOKE_VOLUME:0,68
+#MP3:Beast In Black - Blind And Frozen.mp3
+: 19 11 4 Once 
+: 35 12 11 I 
+: 51 9 7 touched 
+: 66 13 9 your 
+: 83 32 4 heart
+- 115 128
+- 128
+: 147 13 4 Held 
+: 163 13 11 you 
+: 179 12 7 in 
+: 195 16 9 closed 
+: 216 29 7 arms
+- 245
+: 263 7 7 Built 
+: 272 2 6 a 
+: 276 11 4 ha
+: 291 11 11 ven 
+: 307 14 7 for 
+: 323 12 9 your 
+: 340 31 4 love
+- 371 372
+- 372
+: 391 3 2 Un
+: 395 2 2 til 
+: 398 4 2 I 
+: 403 11 4 let 
+: 419 12 11 you 
+: 436 10 7 fall 
+: 451 13 6 a
+: 468 10 6 part
+: 479 1 7 ~
+: 481 1 6 ~
+: 483 16 4 ~
+- 499
+: 511 6 9 Please 
+: 520 6 11 for
+: 527 14 9 give 
+: 548 16 7 me
+- 564
+: 583 3 4 God 
+: 587 3 6 I 
+: 591 5 7 miss 
+: 599 3 7 you 
+: 603 3 7 like 
+: 607 7 7 hell
+- 614
+: 616 2 4 I 
+: 619 4 6 was 
+: 624 6 7 wrong 
+: 631 3 7 I 
+: 635 3 7 can 
+: 639 6 7 tell
+- 645
+: 647 3 6 For 
+: 651 2 4 the 
+: 656 6 2 heart 
+: 663 3 2 can 
+: 667 3 2 be 
+: 671 6 7 blind 
+: 680 4 11 and 
+: 687 7 11 fro
+: 695 13 9 zen
+- 708
+: 711 3 9 Now 
+: 715 4 11 I 
+: 720 4 12 live 
+: 727 3 12 with 
+: 731 3 12 the 
+: 735 8 12 pain
+- 743
+: 744 3 11 E
+: 748 2 9 very 
+: 752 4 11 night, 
+: 760 3 7 e
+: 764 2 6 very 
+: 768 4 4 day
+- 772
+: 775 3 4 As 
+: 779 3 6 I 
+: 783 11 7 read 
+: 796 6 7 those 
+: 803 3 7 let
+: 807 3 9 ters 
+: 811 4 11 you 
+: 816 4 11 wrote 
+: 824 10 9 me
+- 834
+: 839 3 4 How 
+: 843 3 6 I 
+: 847 7 7 long 
+: 855 3 7 for 
+: 859 2 7 the 
+: 863 6 7 time
+- 869
+: 871 3 4 When 
+: 875 3 6 your 
+: 879 3 7 lips 
+: 888 3 7 would 
+: 892 2 7 kiss 
+: 896 7 7 mine
+- 903
+: 904 3 6 And 
+: 908 3 4 the 
+: 912 6 2 pro
+: 919 3 2 mise 
+: 923 2 2 was 
+: 927 8 7 still 
+: 936 6 11 un
+: 943 6 11 bro
+: 952 9 9 ken
+- 961
+: 967 2 9 I 
+: 971 2 11 will 
+: 975 5 12 wait 
+: 983 3 12 for 
+: 987 3 12 to
+: 991 7 12 mor
+: 999 2 11 row
+- 1001
+: 1003 2 9 That 
+: 1008 6 11 may 
+: 1015 3 7 ne
+: 1019 2 6 ver 
+: 1023 5 4 come
+- 1028
+: 1032 3 4 I 
+: 1036 3 6 will 
+: 1040 7 7 wait 
+: 1048 3 9 in 
+: 1052 2 11 the 
+: 1056 10 9 name 
+: 1068 2 7 of 
+: 1072 34 7 love
+- 1106 1397
+- 1397
+: 1416 3 4 My 
+: 1420 3 4 for
+: 1424 3 4 ~
+: 1428 12 4 lorn 
+: 1443 13 11 heart 
+: 1460 13 7 fain
+: 1476 15 9 tly 
+: 1493 33 4 beats
+- 1526 1529
+- 1529
+: 1548 8 4 Your 
+: 1557 10 4 ab
+: 1573 11 11 sence 
+: 1589 11 7 makes 
+: 1604 21 9 me 
+: 1629 31 7 weak
+- 1660
+: 1673 8 7 And 
+: 1682 2 6 if 
+: 1685 11 4 no
+: 1701 10 11 thing 
+: 1716 13 7 brings 
+: 1733 12 9 you 
+: 1748 31 4 back
+- 1779 1781
+- 1781
+: 1800 3 2 Sure
+: 1804 2 2 ly 
+: 1807 4 2 I’ll 
+: 1814 12 4 roam 
+: 1830 13 11 through 
+: 1844 14 7 life 
+: 1861 12 6 in 
+: 1877 11 6 black
+* 1889 1 7 ~
+* 1891 1 6 ~
+* 1893 15 4 ~
+- 1908
+: 1921 7 9 Like 
+: 1929 5 11 a 
+: 1938 18 9 sha
+: 1958 17 7 dow
+- 1975
+: 1993 3 4 God 
+: 1997 3 6 I 
+: 2001 4 7 miss 
+: 2009 3 7 you 
+: 2013 3 7 like 
+: 2017 6 7 hell
+- 2023
+: 2025 3 4 I 
+: 2029 3 6 was 
+: 2033 6 7 wrong 
+: 2041 3 7 I 
+: 2045 3 7 can 
+: 2049 6 7 tell
+- 2055
+: 2057 3 6 For 
+: 2061 3 4 the 
+: 2065 5 2 heart 
+: 2073 3 2 can 
+: 2077 2 2 be 
+* 2081 5 7 blind 
+: 2089 6 11 and 
+* 2097 7 11 fro
+* 2105 13 9 zen
+- 2118
+: 2121 3 9 Now 
+: 2125 3 11 I 
+: 2129 4 12 live 
+: 2137 3 12 with 
+: 2141 2 12 the 
+: 2145 7 12 pain
+- 2152
+: 2153 3 11 E
+: 2157 3 9 very 
+: 2161 5 11 night, 
+: 2169 3 7 e
+: 2173 2 6 very 
+: 2177 5 4 day
+- 2182
+: 2185 3 4 As 
+: 2189 3 6 I 
+: 2193 9 7 read 
+: 2205 4 7 those 
+: 2213 3 7 let
+: 2217 2 9 ters 
+: 2221 3 11 you 
+: 2226 3 11 wrote 
+: 2233 12 9 me
+- 2245
+: 2249 3 4 How 
+: 2253 3 6 I 
+: 2257 6 7 long 
+: 2265 3 7 for 
+: 2269 3 7 the 
+: 2273 4 7 time
+- 2277
+: 2281 3 4 When 
+: 2285 3 6 your 
+: 2289 4 7 lips 
+: 2297 3 7 would 
+: 2301 3 7 kiss 
+: 2305 7 7 mine
+- 2312
+: 2313 3 6 And 
+: 2317 3 4 the 
+: 2321 7 2 pro
+: 2329 3 2 mise 
+: 2333 3 2 was 
+: 2337 8 7 still 
+* 2346 4 11 un
+* 2353 5 11 bro
+* 2362 9 9 ken
+- 2371
+: 2377 3 9 I 
+: 2381 3 11 will 
+: 2385 5 12 wait 
+: 2393 3 12 for 
+: 2397 3 12 to
+: 2401 6 12 mor
+: 2409 2 11 row
+- 2411
+: 2413 2 9 That 
+: 2417 6 11 may 
+: 2425 2 7 ne
+: 2429 2 6 ver 
+: 2433 4 4 come
+- 2437
+: 2441 3 4 I 
+: 2445 3 6 will 
+: 2449 7 7 wait 
+: 2457 3 9 in 
+: 2461 3 11 the 
+: 2465 12 9 name 
+: 2478 2 7 of 
+: 2481 34 7 love
+- 2515 2526
+- 2526
+: 2545 7 12 I 
+: 2553 3 11 would 
+: 2557 14 12 die 
+: 2589 7 12 for 
+: 2597 3 11 the 
+: 2601 2 9 love 
+: 2605 2 7 of 
+: 2609 7 12 mer
+: 2617 32 9 cy
+- 2649 2654
+- 2654
+: 2673 7 12 Des
+: 2681 2 11 ti
+: 2686 10 12 ny, 
+: 2717 6 4 is 
+: 2726 2 2 this 
+: 2729 3 0 how 
+: 2733 2 -1 it 
+: 2738 5 0 should 
+: 2746 38 2 be? 
+* 2785 8 4 No 
+* 2794 7 7 no 
+* 2802 13 9 no!
+- 2815 4184
+- 4184
+: 4203 3 4 God 
+: 4207 2 6 I 
+: 4210 5 7 miss 
+: 4219 3 7 you 
+: 4223 2 7 like 
+: 4227 4 7 hell
+- 4231
+: 4235 3 4 I 
+: 4239 3 6 was 
+: 4243 7 7 wrong 
+: 4251 3 7 I 
+: 4255 3 7 can 
+: 4259 6 7 tell
+- 4265
+: 4267 3 6 For 
+: 4271 2 4 the 
+: 4275 6 2 heart 
+: 4283 3 2 can 
+: 4287 3 2 be 
+: 4292 5 7 blind 
+: 4300 5 11 and 
+: 4307 7 11 fro
+: 4315 9 9 zen
+- 4324
+: 4331 3 9 Now 
+: 4335 3 11 I 
+: 4339 4 12 live 
+: 4347 3 12 with 
+: 4351 2 12 the 
+: 4355 5 12 pain
+- 4360
+: 4363 3 11 E
+: 4367 3 9 very 
+: 4371 4 11 night, 
+: 4379 3 7 e
+: 4383 3 6 very 
+: 4387 5 4 day
+- 4392
+: 4395 3 4 As 
+: 4399 3 6 I 
+: 4403 8 7 read 
+: 4415 5 7 those 
+: 4423 3 7 let
+: 4427 3 9 ters 
+: 4431 3 11 you 
+: 4435 7 11 wrote 
+: 4443 44 9 me
+- 4487
+: 4491 3 4 God 
+: 4495 3 6 I 
+: 4499 4 7 miss 
+: 4507 3 7 you 
+: 4511 3 7 like 
+: 4515 6 7 hell
+- 4521
+: 4523 3 4 I 
+: 4527 3 6 was 
+: 4531 5 7 wrong 
+: 4539 3 7 I 
+: 4543 2 7 can 
+: 4547 7 7 tell
+- 4554
+: 4555 3 6 For 
+: 4559 3 4 the 
+: 4563 6 2 heart 
+: 4571 3 2 can 
+: 4575 3 2 be 
+* 4579 5 7 blind 
+: 4588 4 11 and 
+* 4595 6 11 fro
+* 4604 12 9 zen
+- 4616
+: 4619 3 9 Now 
+: 4623 3 11 I 
+: 4627 5 12 live 
+: 4635 3 12 with 
+: 4639 2 12 the 
+: 4643 8 12 pain
+- 4651
+: 4652 3 11 E
+: 4656 2 9 very 
+: 4660 5 11 night, 
+: 4668 3 7 e
+: 4672 2 6 very 
+: 4676 5 4 day
+- 4681
+: 4684 3 4 As 
+: 4688 3 6 I 
+: 4692 10 7 read 
+: 4704 3 7 those 
+: 4711 3 7 let
+: 4715 3 9 ters 
+* 4719 4 11 you 
+* 4724 5 11 wrote 
+* 4731 12 9 me
+- 4743
+: 4747 3 4 How 
+: 4751 3 6 I 
+: 4755 6 7 long 
+: 4763 3 7 for 
+: 4767 2 7 the 
+: 4771 6 7 time
+- 4777
+: 4780 3 4 When 
+: 4784 3 6 your 
+: 4788 3 7 lips 
+: 4795 3 7 would 
+: 4799 3 7 kiss 
+: 4803 8 7 mine
+- 4811
+: 4812 3 6 And 
+: 4816 2 4 the 
+: 4820 6 2 pro
+: 4827 3 2 mise 
+: 4831 3 2 was 
+: 4835 7 7 still 
+* 4843 6 11 un
+* 4852 5 11 bro
+* 4860 10 9 ken
+- 4870
+: 4875 3 9 I 
+: 4879 3 11 will 
+: 4883 6 12 wait 
+: 4892 3 12 for 
+: 4896 3 12 to
+: 4900 7 12 mor
+: 4908 2 11 row
+- 4910
+: 4911 2 9 That 
+: 4916 6 11 may 
+: 4924 3 7 ne
+: 4928 2 6 ver 
+: 4932 4 4 come
+- 4936
+: 4940 3 4 I 
+: 4944 3 6 will 
+: 4948 7 7 wait 
+: 4956 3 9 in 
+: 4960 2 11 the 
+: 4964 11 9 name 
+: 4976 3 7 of 
+* 4980 35 7 love
+E

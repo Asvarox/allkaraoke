@@ -1,0 +1,125 @@
+#ARTIST:The Smiths
+#TITLE:Please, Please, Please, Let Me Get What I Want
+#CREATOR:Gollum
+#BPM:266
+#YEAR:1984
+#PREVIEWSTART:41
+#VIDEO:v=w3qPMe_cCJk
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:884,9624060150377
+#ALLKARAOKE_ID:the-smiths-please-please-please-let-me-get-what-i-want
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:03.232Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:63
+#ALLKARAOKE_PREVIEWEND:66
+#ALLKARAOKE_VOLUME:0,81
+#MP3:The Smiths - Please, Please, Please, Let Me Get What I Want.mp3
+: 18 3 6 Good 
+: 24 20 4 times 
+: 47 2 7 for 
+: 50 2 6 a 
+: 53 29 -3 change
+- 82 90
+- 90
+: 108 4 6 See, 
+: 113 2 4 the 
+: 117 2 6 luck 
+: 121 4 4 I’ve 
+: 127 19 6 had 
+: 150 2 4 can 
+: 153 2 6 make 
+: 157 2 4 a 
+: 160 3 6 good 
+: 165 7 2 man
+- 172
+: 177 5 4 Turn 
+: 186 21 6 bad
+- 207 226
+- 226
+: 244 14 9 So 
+: 262 13 9 please, 
+: 279 13 7 please, 
+: 295 3 6 please
+: 299 13 4 ~
+- 312
+: 318 3 7 Let 
+: 323 11 6 me, 
+: 335 3 7 let 
+: 341 10 6 me, 
+: 352 3 7 let 
+: 358 18 6 me
+- 376
+: 386 3 6 Let 
+: 392 19 2 me 
+: 413 3 6 get 
+: 419 2 4 what 
+: 422 7 2 I 
+: 431 2 4 want
+: 434 16 6 ~ 
+* 454 4 6 this 
+* 460 8 2 time
+- 468 599
+- 599
+: 617 2 6 Hav
+: 620 2 6 en’t 
+: 623 2 6 had 
+: 626 2 6 a 
+: 629 21 4 dream 
+: 651 1 7 in 
+: 653 2 6 a 
+: 656 3 7 long
+: 660 4 6 ~ 
+: 666 12 2 time
+- 678 702
+- 702
+: 720 4 6 See, 
+: 725 2 4 the 
+: 729 4 6 life 
+: 735 4 4 I’ve 
+: 742 18 6 had 
+* 762 2 4 can 
+* 766 2 6 make 
+: 769 2 4 a 
+: 772 3 6 good 
+: 777 7 2 man
+- 784
+: 797 24 6 Bad
+- 821 836
+- 836
+: 854 26 9 So 
+: 883 4 9 for 
+: 889 4 9 once 
+: 895 2 7 in 
+: 899 4 6 my 
+: 904 22 6 life
+- 926
+: 930 3 7 Let 
+: 936 19 6 me 
+* 957 4 4 get 
+* 963 2 6 what 
+* 966 4 7 I 
+: 971 16 6 want
+- 987 991
+- 991
+: 1009 2 5 Lord
+: 1012 11 6 ~ 
+: 1026 15 6 knows, 
+: 1043 3 6 it 
+: 1048 2 4 would 
+: 1051 4 2 be 
+: 1056 2 4 the 
+: 1060 6 6 first 
+: 1069 10 2 time
+- 1079 1126
+- 1126
+: 1144 3 5 Lord
+: 1148 11 6 ~ 
+: 1162 14 6 knows, 
+* 1178 3 6 it 
+* 1183 2 4 would 
+* 1186 2 2 be 
+* 1189 2 4 the 
+* 1194 5 6 first 
+* 1202 12 2 time
+E
