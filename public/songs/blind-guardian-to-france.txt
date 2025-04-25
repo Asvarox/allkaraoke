@@ -1,0 +1,354 @@
+#ARTIST:Blind Guardian
+#TITLE:To France
+#CREATOR:Canni
+#BPM:240
+#YEAR:1996
+#PREVIEWSTART:79
+#VIDEO:v=OJb05AMcbtY
+#LANGUAGE:English
+#GAP:9360
+#ALLKARAOKE_ID:blind-guardian-to-france
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:04.853Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=217
+#ALLKARAOKE_PREVIEWEND:118
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Blind Guardian - To France.mp3
+: 16 6 2 Ta
+: 23 2 4 king 
+: 26 5 6 on 
+: 32 8 11 wa
+: 41 5 9 ter
+- 46
+: 55 4 2 Sai
+: 60 5 4 ling 
+: 66 4 6 a 
+: 71 7 6 rest
+: 80 8 8 less 
+: 89 6 4 sea
+- 95
+: 99 4 1 From 
+: 104 4 4 a 
+: 109 9 11 me
+: 119 9 13 mo
+: 133 7 2 ry
+- 140
+: 146 5 4 A 
+: 153 9 6 fan
+: 163 7 8 ta
+: 172 7 2 sy
+- 179
+: 180 1 4 The 
+: 182 5 6 wind 
+* 188 8 11 car
+: 197 8 9 ries
+- 205
+: 212 4 2 In
+: 217 3 4 to 
+: 221 6 6 white 
+: 228 7 6 wa
+: 236 5 4 ter
+- 241
+: 250 4 1 Far 
+: 255 5 2 from 
+: 261 4 4 the 
+* 266 8 11 is
+: 275 8 13 lands
+- 283
+: 290 9 2 Don’t 
+: 300 8 4 you 
+: 310 8 6 know 
+: 319 9 8 you’re
+- 328
+: 329 9 9 Ne
+: 339 8 8 ver 
+: 349 8 11 going 
+: 359 6 9 to 
+: 368 5 6 get 
+: 374 2 4 to 
+: 377 9 6 France
+- 386
+: 402 1 8 Ma
+: 404 2 9 ry 
+: 407 5 8 Queen 
+: 413 8 6 of 
+: 422 9 4 chance 
+: 432 4 6 will 
+: 437 4 8 they 
+* 442 9 11 fi
+: 452 4 8 ~nd 
+: 457 8 9 you
+- 465 470
+- 470
+: 486 9 9 Ne
+: 496 7 8 ver 
+: 505 8 11 going 
+: 515 8 9 to 
+: 525 4 6 get 
+: 530 2 4 to 
+: 533 7 6 France
+- 540 543
+- 543
+: 559 1 8 Could 
+: 561 2 9 a 
+: 564 5 8 new 
+: 570 8 6 ro
+: 579 9 4 mance 
+: 589 4 6 e
+: 594 4 8 ver 
+* 599 9 11 bi
+: 609 4 8 ~nd 
+: 614 10 9 you
+- 624 783
+- 783
+: 799 4 2 Wal
+: 804 4 4 king 
+: 809 4 6 on 
+* 814 9 11 fo
+: 824 8 9 reign 
+: 834 9 2 grounds
+- 843
+: 844 3 4 Like 
+: 848 4 6 a 
+: 853 8 6 sha
+: 862 8 4 dow
+- 870
+: 876 4 1 Roa
+: 881 5 2 ming 
+: 887 4 4 in 
+* 892 9 11 far 
+: 902 9 13 off
+- 911
+: 912 13 2 Ter
+: 926 9 4 ri
+: 936 9 6 to
+: 946 7 8 ry
+- 953
+: 956 5 2 O
+: 962 2 4 ver 
+: 965 3 6 your 
+* 970 9 11 shoul
+: 980 6 9 der
+- 986
+: 994 6 2 Sto
+: 1001 2 4 ries 
+: 1004 4 6 un
+: 1009 9 6 fold 
+: 1019 7 4 you’re
+- 1026
+: 1028 9 1 Sear
+: 1038 5 2 ching 
+: 1044 3 4 for 
+* 1049 9 11 sanc
+: 1059 7 13 tua
+: 1069 5 2 ry
+- 1074
+: 1083 9 4 You 
+: 1093 9 6 know 
+: 1103 8 8 you’re
+- 1111
+: 1112 8 9 Ne
+: 1122 9 8 ver 
+: 1132 9 11 going 
+: 1142 6 9 to 
+: 1151 4 6 get 
+: 1156 2 4 to 
+: 1159 11 6 France
+- 1170
+: 1184 2 8 Ma
+: 1187 2 9 ry 
+: 1190 5 8 Queen 
+: 1196 7 6 of 
+: 1204 10 4 chance 
+: 1215 4 6 will 
+: 1220 4 8 they 
+* 1225 9 11 fi
+: 1235 3 9 ~nd 
+: 1239 8 9 you
+- 1247 1253
+- 1253
+: 1269 9 9 Ne
+: 1279 8 8 ver 
+: 1288 9 11 going 
+: 1298 8 9 to 
+: 1308 4 6 get 
+: 1313 2 4 to 
+: 1316 10 6 France
+- 1326
+: 1341 2 8 Could 
+: 1344 2 9 a 
+: 1347 3 8 new 
+: 1352 9 6 ro
+: 1362 8 4 mance 
+: 1371 5 6 e
+: 1377 4 8 ver 
+* 1382 9 11 bi
+: 1392 4 9 ~nd 
+: 1397 9 9 you
+- 1406 1410
+- 1410
+: 1426 11 6 I 
+: 1439 14 8 see 
+: 1454 7 9 a 
+: 1464 12 2 pic
+: 1478 13 4 ture
+- 1491
+: 1503 13 13 By 
+: 1517 10 16 the 
+: 1528 11 9 lamp’s 
+: 1542 14 9 fli
+: 1557 3 13 ~c
+: 1561 10 11 ker
+- 1571
+: 1582 14 6 Is
+: 1597 13 8 n’t 
+: 1611 7 9 it 
+: 1620 15 6 strange 
+: 1636 14 4 how
+- 1650
+: 1658 14 13 Dreams 
+: 1674 13 16 fade 
+: 1689 8 9 and 
+: 1699 13 9 shi
+: 1713 4 13 ~m
+: 1718 10 11 mer
+- 1728
+: 1738 9 9 Ne
+: 1748 8 8 ver 
+: 1757 9 11 going 
+: 1767 9 9 to 
+: 1777 4 6 get 
+: 1782 2 4 to 
+: 1785 11 6 France
+- 1796
+: 1812 1 8 Ma
+: 1814 2 9 ry 
+: 1817 4 8 Queen 
+: 1822 7 6 of 
+: 1830 10 4 chance 
+: 1841 4 6 will 
+: 1846 4 8 they 
+* 1851 9 11 fi
+: 1861 4 9 ~nd 
+: 1866 10 9 you
+- 1876 1878
+- 1878
+: 1894 10 9 Ne
+: 1905 8 8 ver 
+: 1914 9 11 going 
+: 1924 7 9 to 
+: 1934 4 6 get 
+: 1939 2 4 to 
+: 1942 9 6 France
+- 1951
+: 1967 2 8 Could 
+: 1970 2 9 a 
+: 1973 4 8 new 
+: 1978 9 6 ro
+: 1988 9 4 mance 
+: 1998 4 6 e
+: 2003 4 8 ver 
+* 2008 9 11 bi
+: 2018 4 9 ~nd 
+: 2023 9 9 you
+- 2032 2349
+- 2349
+: 2365 12 6 I 
+: 2379 14 8 see 
+: 2394 8 9 a 
+: 2403 15 6 pic
+: 2419 12 4 ture
+- 2431
+: 2443 11 13 By 
+: 2456 9 16 the 
+: 2467 13 9 lamp’s 
+: 2482 13 9 fli
+: 2496 4 13 ~c
+: 2501 6 11 ker
+- 2507
+: 2522 13 6 Is
+: 2536 14 8 n’t 
+: 2551 7 9 it 
+: 2560 13 6 strange 
+: 2574 13 4 how
+- 2587
+: 2599 13 13 Dreams 
+: 2613 12 16 fade 
+: 2628 8 9 and 
+: 2638 14 9 shi
+: 2653 4 13 ~m
+: 2658 5 11 mer
+- 2663
+: 2677 9 9 Ne
+: 2687 9 8 ver 
+: 2697 9 11 going 
+: 2707 7 9 to 
+: 2716 4 6 get 
+: 2721 2 4 to 
+: 2724 10 6 France
+- 2734 2735
+- 2735
+: 2751 1 8 Ma
+: 2753 2 9 ry 
+: 2756 4 8 Queen 
+: 2761 8 6 of 
+: 2770 10 4 chance 
+: 2781 4 6 will 
+: 2786 4 8 they 
+* 2791 8 11 fi
+: 2800 4 9 ~nd 
+: 2805 10 9 you
+- 2815 2818
+- 2818
+: 2834 9 9 Ne
+: 2844 9 8 ver 
+: 2854 9 11 going 
+: 2864 8 9 to 
+: 2873 4 6 get 
+: 2878 2 4 to 
+: 2881 9 6 France
+- 2890 2892
+- 2892
+: 2908 1 8 Could 
+: 2910 2 9 a 
+: 2913 4 8 new 
+: 2918 8 6 ro
+: 2927 9 4 mance 
+: 2937 4 6 e
+: 2942 5 8 ver 
+* 2948 9 11 bi
+: 2958 3 9 ~nd 
+: 2962 9 9 you
+- 2971 3718
+- 3718
+: 3734 9 9 Ne
+: 3744 9 8 ver 
+: 3754 9 11 going 
+: 3764 7 9 to 
+: 3774 3 6 get 
+: 3778 2 4 to 
+: 3781 9 6 France
+- 3790 3875
+- 3875
+: 3891 9 9 Ne
+: 3901 9 8 ver 
+: 3911 8 11 going 
+: 3920 6 9 to
+- 3926 4031
+- 4031
+: 4047 9 9 Ne
+: 4057 9 8 ver 
+: 4067 9 11 going 
+: 4077 7 9 to 
+: 4087 3 6 get 
+: 4091 2 4 to 
+: 4094 9 6 France
+- 4103 4188
+- 4188
+: 4204 9 9 Ne
+: 4214 9 8 ver 
+: 4224 8 11 going 
+: 4233 7 9 to
+E

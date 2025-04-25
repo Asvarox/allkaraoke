@@ -1,0 +1,554 @@
+#ARTIST:Münchener Freiheit
+#TITLE:Ohne dich (schlaf ich heut Nacht nicht ein)
+#CREATOR:fepo
+#BPM:366,44
+#YEAR:1985
+#PREVIEWSTART:64
+#VIDEO:v=0fUsuQUUotA
+#GENRE:Schlager
+#LANGUAGE:German
+#GAP:20607,57450060037
+#ALLKARAOKE_ID:munchener-freiheit-ohne-dich-schlaf-ich-heut-nacht-nicht-ein
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:05.246Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27466
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,7
+#MP3:Münchener Freiheit - Ohne dich (schlaf ich heut Nacht nicht ein) (Album Version).mp3
+#COVER:Münchener Freiheit - Ohne dich (schlaf ich heut Nacht nicht ein) (Album Version) [CO].jpg
+#BACKGROUND:Münchener Freiheit - Ohne dich (schlaf ich heut Nacht nicht ein) (Album Version) [BG].jpg
+: 24 2 -5 Ich 
+: 28 5 -2 will 
+: 36 2 -2 mich 
+: 40 4 -2 nicht 
+: 48 3 -2 ver
+: 53 3 -2 än
+: 58 8 -2 dern
+- 66 68
+- 68
+: 92 2 -5 Um 
+: 96 3 -2 dir 
+: 102 3 -2 zu 
+: 107 5 -2 im
+: 114 2 -2 po
+: 118 8 -2 nier’n
+- 126 137
+- 137
+: 161 3 0 Nicht 
+: 168 3 -2 den 
+: 173 4 -2 gan
+: 179 3 -2 zen 
+: 185 7 -2 A
+: 194 4 -5 bend
+- 198
+: 220 3 -9 Pro
+: 225 7 -2 ble
+: 234 3 -2 me 
+: 239 5 -2 dis
+: 246 2 -2 ku
+: 250 8 -2 tier’n
+- 258 260
+- 260
+: 284 2 -2 A
+: 288 2 -2 ber 
+: 292 2 -2 ein
+: 296 2 -2 es 
+: 300 3 -2 geb’ 
+: 305 2 -2 ich 
+: 309 6 0 zu
+: 317 5 -4 ~
+- 322 360
+- 360
+: 384 4 3 Das 
+: 392 3 3 was 
+: 398 3 3 ich 
+: 404 9 3 will 
+: 416 4 3 bist 
+: 424 31 3 du
+- 455 528
+- 528
+: 552 2 -5 Ich 
+: 556 6 -2 will 
+: 564 4 -2 nichts 
+: 570 3 -2 ga
+: 575 3 -2 ran
+: 580 7 -2 tie
+: 589 7 -5 ren
+- 596
+: 616 2 -5 Was 
+: 620 2 -2 ich 
+: 624 7 -2 nicht 
+: 634 4 -2 hal
+: 640 3 -2 ten 
+: 645 12 -2 kann
+- 657 660
+- 660
+: 684 3 -5 Will 
+: 689 2 0 mit 
+: 693 5 -2 dir 
+: 701 4 -2 was 
+: 707 4 -2 er
+: 713 7 -2 le
+: 722 6 -5 ben
+- 728
+: 745 3 -5 Bes
+: 750 2 -5 ser 
+: 754 7 0 gleich 
+: 764 4 -2 als 
+: 770 4 -2 ir
+: 776 3 -5 gend
+: 781 8 -2 wann
+- 789
+: 812 5 -2 Und 
+: 820 2 -2 ge
+: 824 2 -2 be 
+: 829 2 -2 of
+: 833 2 -2 fen 
+: 837 9 0 zu
+: 848 9 -4 ~
+- 857 886
+- 886
+: 910 4 3 Das 
+: 918 3 3 was 
+: 924 3 3 ich 
+: 930 9 3 will 
+: 942 4 3 bist 
+: 950 31 3 du
+- 981 1068
+- 1068
+: 1092 2 3 Oh
+: 1096 2 3 ne 
+: 1101 5 3 dich 
+: 1108 4 3 schlaf’ 
+: 1114 4 3 ich 
+: 1122 4 0 heut 
+: 1129 5 2 Nacht 
+: 1136 4 3 nicht 
+: 1142 10 5 ein
+- 1152
+: 1159 2 2 Oh
+: 1162 2 2 ne 
+: 1166 5 2 dich 
+: 1175 3 2 fahr’ 
+: 1180 4 2 ich 
+: 1187 6 -2 heut’ 
+: 1196 6 0 Nacht 
+: 1204 4 2 nicht 
+: 1211 9 3 heim
+- 1220
+: 1226 2 3 Oh
+: 1229 2 3 ne 
+: 1233 5 3 dich 
+: 1241 3 3 komm’ 
+: 1246 4 3 ich 
+: 1253 6 0 heut’ 
+: 1262 6 0 nicht 
+: 1270 2 2 zur 
+: 1274 7 3 Ruh
+- 1281
+: 1290 4 3 Das 
+: 1298 4 3 was 
+: 1306 6 7 ich 
+* 1314 16 5 will 
+: 1332 5 3 bist 
+: 1340 10 3 du
+- 1350
+: 1357 2 3 Oh
+: 1361 2 3 ne 
+: 1366 5 3 dich 
+: 1373 4 3 schlaf’ 
+: 1379 4 3 ich 
+: 1387 4 0 heut 
+: 1394 5 2 Nacht 
+: 1401 4 3 nicht 
+: 1407 10 5 ein
+- 1417
+: 1421 2 2 Oh
+: 1424 2 2 ne 
+: 1428 5 2 dich 
+: 1437 3 2 fahr’ 
+: 1442 4 2 ich 
+: 1449 6 -2 heut’ 
+: 1458 6 0 Nacht 
+: 1466 4 2 nicht 
+: 1473 9 3 heim
+- 1482
+: 1488 2 3 Oh
+: 1491 2 3 ne 
+: 1495 5 3 dich 
+: 1503 3 3 komm’ 
+: 1508 4 3 ich 
+: 1515 6 0 heut’ 
+: 1524 6 0 nicht 
+: 1532 2 2 zur 
+: 1536 7 3 Ruh
+- 1543
+: 1554 5 3 Das 
+: 1562 4 3 was 
+: 1570 6 7 ich 
+* 1578 13 5 will 
+: 1595 5 3 bist 
+: 1603 35 3 du
+- 1638 1848
+- 1848
+: 1872 2 -4 Ich 
+: 1876 3 -2 will 
+: 1882 4 -2 nicht 
+: 1888 2 -2 al
+: 1892 3 -2 les 
+: 1900 6 -2 sa
+: 1908 6 -2 gen
+- 1914 1916
+- 1916
+: 1940 4 0 Nicht 
+: 1948 2 -2 so 
+: 1953 4 -2 viel 
+: 1959 3 -2 er
+: 1964 9 -2 klär’n
+- 1973 1982
+- 1982
+: 2006 5 0 Nicht 
+: 2013 3 -2 mit 
+: 2019 4 -2 so 
+: 2025 4 -2 viel 
+: 2031 7 -2 Wor
+: 2040 4 -5 ten
+- 2044
+: 2068 3 -9 Den 
+: 2073 7 0 Au
+: 2082 2 -2 gen
+: 2086 6 -2 blick 
+: 2094 3 -2 zer
+: 2099 11 -2 stör’n
+- 2110
+: 2132 2 -2 A
+: 2136 2 -2 ber 
+: 2140 2 -2 ei
+: 2144 2 -2 nes 
+: 2148 2 -2 geb’ 
+: 2152 2 -2 ich 
+* 2156 8 0 zu
+: 2165 6 -4 ~
+- 2171 2206
+- 2206
+: 2230 4 3 Das 
+: 2238 3 3 was 
+: 2244 3 3 ich 
+: 2250 9 3 will 
+: 2262 4 3 bist 
+* 2270 31 3 du
+- 2301 2373
+- 2373
+: 2397 3 2 Ich 
+: 2404 2 7 will 
+: 2408 5 5 auch 
+: 2416 4 5 nichts 
+: 2424 3 3 er
+: 2429 13 3 zähl’n
+- 2442
+: 2460 2 3 Was 
+: 2464 4 3 dich 
+: 2470 5 7 eh 
+: 2477 2 5 nicht 
+: 2481 5 5 in
+: 2488 4 3 tress
+: 2494 10 3 siert
+- 2504 2506
+- 2506
+: 2530 2 3 Will 
+: 2534 3 7 mit 
+: 2539 6 5 dir 
+: 2547 4 5 was 
+: 2554 3 3 er
+: 2559 7 3 le
+: 2568 5 3 ben
+- 2573
+: 2593 2 3 Was 
+: 2597 2 3 uns 
+: 2602 8 7 bei
+: 2612 2 5 de 
+: 2617 5 5 fas
+: 2624 3 3 zi
+: 2629 6 5 ni
+: 2637 3 0 ~ert
+- 2640
+: 2660 2 3 Und 
+: 2663 2 3 ich 
+: 2667 2 3 ge
+: 2670 2 3 be 
+: 2674 4 3 of
+: 2680 2 3 fen 
+* 2684 46 5 zu
+- 2730 2737
+- 2737
+: 2761 4 8 Das 
+: 2767 2 8 was 
+: 2771 4 8 ich 
+: 2778 4 8 wi
+: 2784 4 7 ~ll 
+: 2791 5 7 bist 
+* 2798 49 3 du
+- 2847 2916
+- 2916
+: 2940 2 3 Oh
+: 2944 2 3 ne 
+: 2949 5 3 dich 
+: 2956 4 3 schlaf’ 
+: 2962 4 3 ich 
+: 2970 4 0 heut 
+: 2977 5 2 Nacht 
+: 2984 4 3 nicht 
+: 2990 10 5 ein
+- 3000
+: 3005 2 2 Oh
+: 3009 2 2 ne 
+: 3013 5 2 dich 
+: 3021 3 2 fahr’ 
+: 3026 4 2 ich 
+: 3033 6 -2 heut’ 
+: 3042 6 0 Nacht 
+: 3050 4 2 nicht 
+: 3057 9 3 heim
+- 3066
+: 3071 2 3 Oh
+: 3074 2 3 ne 
+: 3078 5 3 dich 
+: 3086 3 3 komm’ 
+: 3091 4 3 ich 
+: 3098 6 0 heut’ 
+: 3107 6 0 nicht 
+: 3115 2 2 zur 
+: 3119 7 3 Ruh
+- 3126
+: 3136 5 3 Das 
+: 3144 4 3 was 
+: 3152 6 7 ich 
+* 3160 13 5 will 
+: 3177 5 3 bist 
+: 3185 8 3 du
+- 3193
+: 3203 2 3 Oh
+: 3207 2 3 ne 
+: 3212 5 3 dich 
+: 3219 4 3 schlaf’ 
+: 3225 4 3 ich 
+: 3233 4 0 heut 
+: 3240 5 2 Nacht 
+: 3247 4 3 nicht 
+: 3253 10 5 ein
+- 3263
+: 3270 2 2 Oh
+: 3274 2 2 ne 
+: 3278 5 2 dich 
+: 3286 3 2 fahr’ 
+: 3291 4 2 ich 
+: 3298 6 -2 heut’ 
+: 3307 6 0 Nacht 
+: 3315 4 2 nicht 
+: 3322 9 3 heim
+- 3331
+: 3335 2 3 Oh
+: 3338 2 3 ne 
+: 3342 5 3 dich 
+: 3350 3 3 komm’ 
+: 3355 4 3 ich 
+: 3362 6 0 heut’ 
+: 3371 6 0 nicht 
+: 3379 2 2 zur 
+: 3383 7 3 Ruh
+- 3390
+: 3401 5 3 Das 
+: 3409 4 3 was 
+: 3417 6 7 ich 
+* 3425 13 5 will 
+: 3442 5 3 bist 
+: 3450 26 3 du
+- 3476 3971
+- 3971
+: 3995 2 3 Oh
+: 3999 2 3 ne 
+: 4004 5 3 dich 
+: 4011 4 3 schlaf’ 
+: 4017 4 3 ich 
+: 4025 4 0 heut 
+: 4032 5 2 Nacht 
+: 4039 4 3 nicht 
+: 4045 10 5 ein
+- 4055
+: 4061 2 2 Oh
+: 4065 2 2 ne 
+: 4069 5 2 dich 
+: 4077 3 2 fahr’ 
+: 4082 4 2 ich 
+: 4089 6 -2 heut’ 
+: 4098 6 0 Nacht 
+: 4106 4 2 nicht 
+: 4113 9 3 heim
+- 4122
+: 4128 2 3 Oh
+: 4131 2 3 ne 
+: 4135 5 3 dich 
+: 4143 3 3 komm’ 
+: 4148 4 3 ich 
+: 4155 6 0 heut’ 
+: 4164 6 0 nicht 
+: 4172 2 2 zur 
+: 4176 7 3 Ruh
+- 4183
+: 4194 5 3 Das 
+: 4202 4 3 was 
+: 4210 6 7 ich 
+* 4218 13 5 will 
+: 4235 5 3 bist 
+: 4243 8 3 du
+- 4251
+: 4259 2 3 Oh
+: 4263 2 3 ne 
+: 4268 5 3 dich 
+: 4275 4 3 schlaf’ 
+: 4281 4 3 ich 
+: 4289 4 0 heut 
+: 4296 5 2 Nacht 
+: 4303 4 3 nicht 
+: 4309 10 5 ein
+- 4319
+: 4325 2 2 Oh
+: 4329 2 2 ne 
+: 4333 5 2 dich 
+: 4341 3 2 fahr’ 
+: 4346 4 2 ich 
+: 4353 6 -2 heut’ 
+: 4362 6 0 Nacht 
+: 4370 4 2 nicht 
+: 4377 9 3 heim
+- 4386
+: 4392 2 3 Oh
+: 4395 2 3 ne 
+: 4399 5 3 dich 
+: 4407 3 3 komm’ 
+: 4412 4 3 ich 
+: 4419 6 0 heut’ 
+: 4428 6 0 nicht 
+: 4436 2 2 zur 
+: 4440 7 3 Ruh
+- 4447
+: 4455 5 3 Das 
+: 4463 4 3 was 
+: 4471 6 7 ich 
+* 4479 13 5 will 
+: 4496 5 3 bist 
+: 4504 15 3 du
+- 4519
+: 4523 2 3 Oh
+: 4527 2 3 ne 
+: 4532 5 3 dich 
+: 4539 4 3 schlaf’ 
+: 4545 4 3 ich 
+: 4553 4 0 heut 
+: 4560 5 2 Nacht 
+: 4567 4 3 nicht 
+: 4573 10 5 ein
+- 4583
+: 4588 2 2 Oh
+: 4592 2 2 ne 
+: 4596 5 2 dich 
+: 4604 3 2 fahr’ 
+: 4609 4 2 ich 
+: 4616 6 -2 heut’ 
+: 4625 6 0 Nacht 
+: 4633 4 2 nicht 
+: 4640 9 3 heim
+- 4649
+: 4656 2 3 Oh
+: 4659 2 3 ne 
+: 4663 5 3 dich 
+: 4671 3 3 komm’ 
+: 4676 4 3 ich 
+: 4683 6 0 heut’ 
+: 4692 6 0 nicht 
+: 4700 2 2 zur 
+: 4704 7 3 Ruh
+- 4711
+: 4720 5 3 Das 
+: 4728 4 3 was 
+: 4736 6 7 ich 
+* 4744 13 5 will 
+: 4761 5 3 bist 
+: 4769 10 3 du
+- 4779
+: 4786 2 3 Oh
+: 4790 2 3 ne 
+: 4795 5 3 dich 
+: 4802 4 3 schlaf’ 
+: 4808 4 3 ich 
+: 4816 4 0 heut 
+: 4823 5 2 Nacht 
+: 4830 4 3 nicht 
+: 4836 10 5 ein
+- 4846
+: 4852 2 2 Oh
+: 4856 2 2 ne 
+: 4860 5 2 dich 
+: 4868 3 2 fahr’ 
+: 4873 4 2 ich 
+: 4880 6 -2 heut’ 
+: 4889 6 0 Nacht 
+: 4897 4 2 nicht 
+: 4904 9 3 heim
+- 4913
+: 4919 2 3 Oh
+: 4922 2 3 ne 
+: 4926 5 3 dich 
+: 4934 3 3 komm’ 
+: 4939 4 3 ich 
+: 4946 6 0 heut’ 
+: 4955 6 0 nicht 
+: 4963 2 2 zur 
+: 4967 7 3 Ruh
+- 4974
+: 4984 5 3 Das 
+: 4992 4 3 was 
+: 5000 6 7 ich 
+* 5008 13 5 will 
+: 5025 5 3 bist 
+: 5033 10 3 du
+- 5043
+: 5050 2 3 Oh
+: 5054 2 3 ne 
+: 5059 5 3 dich 
+: 5066 4 3 schlaf’ 
+: 5072 4 3 ich 
+: 5080 4 0 heut 
+: 5087 5 2 Nacht 
+: 5094 4 3 nicht 
+: 5100 10 5 ein
+- 5110
+: 5116 2 2 Oh
+: 5120 2 2 ne 
+: 5124 5 2 dich 
+: 5132 3 2 fahr’ 
+: 5137 4 2 ich 
+: 5144 6 -2 heut’ 
+: 5153 6 0 Nacht 
+: 5161 4 2 nicht 
+: 5168 9 3 heim
+- 5177
+: 5183 2 3 Oh
+: 5186 2 3 ne 
+: 5190 5 3 dich 
+: 5198 3 3 komm’ 
+: 5203 4 3 ich 
+: 5210 6 0 heut’ 
+: 5219 6 0 nicht 
+: 5227 2 2 zur 
+: 5231 7 3 Ruh
+- 5238
+: 5247 5 3 Das 
+: 5255 4 3 was 
+: 5263 6 7 ich 
+* 5271 13 5 will 
+: 5288 5 3 bist 
+: 5296 10 3 du
+E

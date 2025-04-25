@@ -123,6 +123,7 @@
     "Barry Manilow",
     "Basement",
     "Bastille",
+    "Beast In Black",
     "Beastie Boys",
     "Bebe Rexha",
     "Bebe Rexha y David Guetta",
@@ -669,6 +670,7 @@
     "KoRn",
     "Kosheen",
     "KT Tunstall",
+    "Kygo feat. Conrad",
     "Kygo feat. Maty Noyes",
     "Kygo & Selena Gomez",
     "Kygo x Whitney Houston",
@@ -830,6 +832,7 @@
     "Mitski",
     "Modern Talking",
     "Modest Mouse",
+    "Molly Sanden",
     "Montaigne",
     "Monty Python",
     "Morandi",
@@ -950,6 +953,7 @@
     "Poets of the Fall",
     "Pointer Sisters",
     "Poison",
+    "Poppy",
     "Portal",
     "Post Malone",
     "Post Malone feat. 21 Savage",
@@ -1363,11 +1367,11 @@
     "Estonian",
     "German",
     "Swedish",
+    "Portuguese",
     "Indonesian",
     "Chinese",
     "French",
     "Ukrainian",
-    "Portuguese",
     "Dutch",
     "Italian",
     "Catalan",
@@ -1389,5 +1393,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 4740
+  "songs": 4770
 }

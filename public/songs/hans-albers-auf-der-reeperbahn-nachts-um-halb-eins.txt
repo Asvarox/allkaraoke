@@ -1,0 +1,486 @@
+#ARTIST:Hans Albers
+#TITLE:Auf der Reeperbahn nachts um halb eins
+#CREATOR:fepo
+#BPM:210
+#YEAR:1936
+#VIDEO:v=fhM_lOlAjqo
+#GENRE:Schlager
+#LANGUAGE:German
+#GAP:9790
+#ALLKARAOKE_ID:hans-albers-auf-der-reeperbahn-nachts-um-halb-eins
+#ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:05.441Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6097
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Hans Albers - Auf der Reeperbahn nachts um halb eins.mp3
+: 14 6 13 Sil
+: 22 5 11 bern 
+: 30 5 13 klingt 
+: 37 2 11 und 
+: 42 6 14 springt 
+: 51 2 9 die 
+: 54 2 14 Heu
+: 57 2 9 er
+- 59
+: 71 4 9 Heut 
+: 78 3 9 speel 
+: 83 2 9 ick 
+: 88 3 7 dat 
+: 94 2 6 fei
+: 98 2 6 ne 
+: 102 5 2 Oos
+- 107 108
+- 108
+: 122 2 13 Heu
+: 125 2 11 te 
+: 128 1 11 da 
+: 130 3 11 ist 
+: 135 3 7 mir 
+: 143 4 9 nichts 
+: 149 2 9 zu 
+: 152 3 9 teu
+: 157 4 9 er
+- 161
+: 167 3 9 Mor
+: 172 2 9 gen 
+: 176 3 9 geht 
+: 181 5 9 ja 
+: 190 2 7 die 
+: 194 5 6 Rei
+: 201 2 4 se 
+: 204 6 2 los
+- 210
+: 218 4 4 Lang
+: 225 2 4 sam 
+: 229 2 4 bum
+: 233 2 6 mel 
+: 237 2 8 ich 
+: 240 8 9 ganz 
+: 250 2 4 al
+: 253 3 4 lei
+: 258 2 1 ne
+- 260
+: 266 2 8 Die 
+: 269 2 9 Ree
+: 272 2 8 per
+: 275 5 8 bahn 
+: 283 2 8 nach 
+: 287 2 6 der 
+: 292 2 8 Frei
+: 296 2 4 heit 
+: 299 3 4 rauf
+- 302 303
+- 303
+: 317 4 4 Tref
+: 323 4 4 fe 
+: 329 2 4 ich 
+: 333 2 6 ei
+: 336 2 8 ne 
+: 340 4 9 blon
+: 346 2 8 de 
+: 349 3 9 recht 
+: 354 4 11 fei
+: 360 5 9 ne
+- 365
+: 375 3 4 Die 
+: 380 7 4 ga
+: 390 5 9 bel 
+: 398 4 8 ich 
+: 408 3 11 mir 
+* 413 35 9 auf
+- 448 451
+- 451
+: 465 13 2 Komm 
+: 480 3 2 doch 
+: 488 2 2 lie
+: 491 2 4 ~
+: 494 2 4 be 
+: 498 5 6 klei
+: 505 5 6 ne
+- 510
+: 519 4 7 Sei 
+: 525 2 7 die 
+* 528 5 6 mei
+: 535 4 6 ne
+- 539
+: 544 3 9 Sag 
+: 548 3 4 nicht 
+: 553 9 2 nein
+- 562
+: 567 3 -3 Du 
+: 571 4 2 sollst 
+: 577 2 6 bis 
+: 582 2 9 mor
+: 585 2 9 gen 
+* 590 6 11 früh 
+: 598 3 11 um 
+: 603 7 9 neu
+: 612 6 9 ne
+- 618
+: 623 4 7 Mei
+: 629 2 7 ne 
+: 632 5 6 klei
+: 639 4 6 ne 
+: 645 6 6 lieb
+: 653 2 2 ste 
+: 657 12 4 sein
+- 669
+: 682 3 4 Is
+: 686 3 4 ses 
+: 691 2 6 Dir 
+: 695 3 7 recht 
+: 700 2 6 na 
+: 704 2 4 dann 
+: 709 4 6 bleib 
+: 715 3 9 ich 
+: 720 3 2 Dir
+- 723
+: 733 4 7 Treu 
+: 739 2 11 so
+: 742 5 14 gar 
+: 749 2 14 bis 
+: 753 2 11 um 
+: 757 12 9 Zehn
+- 769
+: 781 4 14 Hak 
+: 787 3 14 mich 
+: 792 3 14 un
+: 797 3 13 ter 
+: 802 3 11 wir 
+: 807 2 9 wol
+: 811 2 14 len 
+: 815 4 6 zu
+: 821 2 9 sam
+: 825 2 2 men 
+: 829 6 6 mal
+- 835
+: 842 7 -3 Bu
+: 851 6 4 ~m
+: 860 15 4 meln 
+: 877 12 2 gehn
+- 889 898
+- 898
+: 912 17 9 Auf 
+: 931 9 11 der 
+* 946 7 14 Ree
+: 954 2 11 per
+: 957 2 9 bahn 
+: 960 2 6 Nachts 
+: 964 2 4 um 
+: 968 3 -1 halb 
+: 972 4 6 eins
+- 976
+: 979 1 9 Di 
+: 981 1 9 del 
+: 983 1 9 di 
+: 985 1 9 del 
+: 987 1 9 dip
+- 988
+: 994 2 9 Ob 
+: 997 1 11 du’
+: 999 1 11 n 
+: 1001 2 14 Mä
+: 1004 1 11 del 
+: 1006 3 6 hast 
+: 1011 2 7 o
+: 1014 2 11 der 
+: 1017 2 11 ob 
+: 1021 9 9 keins
+- 1030
+: 1040 1 14 A
+: 1042 1 16 mü
+: 1045 4 16 sierst 
+: 1051 1 11 du 
+: 1053 3 11 dich
+- 1056
+: 1063 2 4 Denn 
+: 1067 3 6 das 
+: 1072 2 6 fin
+: 1075 2 9 det 
+: 1078 7 2 sich
+- 1085
+: 1089 2 2 Auf 
+: 1092 2 6 der 
+: 1096 3 4 Ree
+: 1100 3 8 per
+: 1104 3 11 bahn 
+: 1108 3 14 Nachts 
+: 1113 3 13 um 
+: 1118 2 11 halb 
+: 1122 10 9 eins
+- 1132
+: 1139 2 9 Wer 
+: 1143 2 11 noch 
+: 1147 3 14 nie
+: 1151 3 11 mals 
+: 1156 2 9 in 
+: 1159 2 6 lau
+: 1162 4 4 schi
+: 1168 2 -3 ger 
+: 1171 4 6 Nacht
+- 1175
+: 1188 2 2 Ei
+: 1191 2 1 nen 
+: 1195 6 2 Ree
+: 1202 2 4 per
+: 1205 3 6 bahn 
+: 1210 2 7 bum
+: 1213 2 9 mel 
+: 1216 1 11 ge
+: 1218 4 9 macht
+- 1222
+: 1236 2 6 Ist 
+: 1239 2 9 ein 
+: 1243 2 11 ar
+: 1247 2 9 mer 
+: 1251 5 9 Wicht
+- 1256
+: 1261 2 16 Denn 
+: 1264 2 19 er 
+: 1268 2 18 kennt 
+: 1272 3 21 dich 
+: 1277 4 14 nicht
+- 1281
+: 1285 2 14 Mein 
+: 1289 3 16 St.
+: 1293 2 18 Pau
+: 1296 2 21 li, 
+: 1302 3 18 St.
+: 1307 2 16 Pau
+: 1310 2 9 li 
+: 1314 2 18 bei 
+: 1318 5 14 Nacht
+- 1323 1333
+- 1333
+: 1347 5 9 Kehr 
+: 1354 3 7 ich 
+: 1360 3 2 Heim 
+: 1366 3 6 im 
+: 1371 3 9 näch
+: 1376 3 9 sten 
+: 1380 4 9 Jah
+: 1386 4 9 re
+- 1390
+: 1397 7 9 Braun 
+: 1406 2 9 ge
+: 1410 3 9 brannt 
+: 1416 3 9 wie 
+: 1420 3 12 so’n 
+: 1425 2 11 Hot
+: 1429 2 9 ten
+: 1432 4 4 tott
+- 1436
+: 1446 4 9 Hast 
+: 1453 3 9 Du 
+: 1459 3 2 Dei
+: 1464 2 6 ne 
+: 1469 2 9 blon
+: 1473 2 9 den 
+: 1477 4 9 Haa
+: 1483 4 9 re
+- 1487
+: 1494 5 9 Schwarz 
+: 1502 2 9 ge
+: 1506 7 9 färbt, 
+: 1517 2 9 viel
+: 1520 4 13 leicht 
+: 1527 2 9 auch 
+: 1531 6 2 rot
+- 1537
+: 1544 5 4 Grüßt 
+: 1552 2 4 Dich 
+: 1556 2 4 dann 
+: 1560 2 6 mal 
+: 1563 3 8 ein 
+: 1569 3 9 frem
+: 1574 2 7 der 
+: 1577 4 7 Jung’
+- 1581
+: 1589 3 6 Und 
+: 1594 2 8 Du 
+: 1598 2 9 gehst 
+: 1602 2 8 vor
+: 1605 3 9 rü
+: 1610 3 6 ber, 
+: 1615 3 4 und 
+: 1619 5 9 kennst 
+: 1626 2 6 ihn 
+: 1630 4 4 nicht
+- 1634
+: 1641 3 4 Kommt 
+: 1647 2 4 Dir 
+: 1651 3 4 viel
+: 1656 3 4 leicht 
+: 1661 2 6 die 
+: 1665 3 8 Er
+: 1670 2 9 in
+: 1674 2 8 ne
+: 1678 4 9 rung 
+: 1685 6 11 wie
+: 1693 7 9 der
+- 1700
+: 1712 8 6 Wenn 
+: 1722 6 4 leis 
+: 1732 5 9 er 
+: 1740 3 8 zu 
+: 1745 7 11 Dir 
+: 1755 17 9 spricht
+- 1772 1809
+- 1809
+: 1823 15 2 Komm 
+: 1842 3 2 doch 
+: 1848 4 2 lie
+: 1853 4 4 ~
+: 1859 2 -3 be 
+: 1863 5 6 klei
+: 1871 5 6 ne
+- 1876
+: 1885 2 19 Sei 
+: 1889 2 19 die 
+: 1892 4 18 mei
+: 1898 4 18 ne
+- 1902
+: 1910 2 18 Sag 
+: 1914 2 16 nicht 
+: 1918 10 14 nein
+- 1928
+: 1934 2 -3 Du 
+: 1937 2 2 sollst 
+: 1941 2 6 bis 
+: 1946 3 9 mor
+: 1951 3 9 gen 
+: 1957 8 11 früh 
+: 1967 3 11 um 
+: 1972 5 9 neu
+: 1979 5 9 ne
+- 1984
+: 1991 6 7 Mei
+: 1999 2 7 ne 
+: 2003 4 6 klei
+: 2009 2 6 ne 
+: 2013 6 6 lieb
+: 2022 2 2 ste 
+: 2026 12 4 sein
+- 2038
+: 2052 2 4 Is
+: 2055 2 4 ses 
+: 2059 2 6 Dir 
+: 2063 3 7 recht 
+: 2070 2 6 na 
+: 2073 2 4 dann 
+: 2078 6 6 bleib 
+: 2086 3 9 ich 
+: 2091 3 2 Dir
+- 2094
+: 2098 8 7 Treu 
+: 2107 2 11 so
+: 2110 7 14 gar 
+: 2120 2 14 bis 
+: 2123 2 11 um 
+: 2127 12 9 Zehn
+- 2139
+: 2151 6 14 Hak 
+: 2162 3 14 mich 
+: 2167 3 14 un
+: 2171 3 13 ter 
+: 2175 4 11 wir 
+: 2182 2 9 wol
+: 2185 3 14 len 
+: 2190 4 6 zu
+: 2195 3 9 sam
+: 2200 3 2 men 
+: 2204 12 6 mal
+- 2216
+: 2227 5 -3 Bu
+: 2234 9 4 ~m
+: 2247 9 4 meln 
+: 2258 10 2 gehn
+- 2268 2287
+- 2287
+: 2301 18 9 Auf 
+: 2321 9 11 der 
+: 2335 5 14 Ree
+: 2342 2 11 per
+: 2345 2 9 bahn 
+: 2349 3 6 Nachts 
+: 2353 3 4 um 
+: 2358 3 -3 halb 
+: 2362 4 6 eins
+- 2366
+: 2380 2 9 Ob 
+: 2383 1 11 du’
+: 2385 1 11 n 
+: 2387 2 14 Mä
+: 2390 2 11 del 
+: 2393 2 7 hast 
+: 2398 2 7 o
+: 2401 2 7 der 
+: 2404 2 11 ob 
+: 2410 9 9 keins
+- 2419
+: 2429 1 14 A
+: 2431 1 16 mü
+: 2434 4 16 sierst 
+: 2440 2 11 du 
+: 2443 2 11 dich
+- 2445
+: 2451 2 4 Denn 
+: 2455 3 6 das 
+: 2461 2 6 fin
+: 2464 2 9 det 
+: 2467 7 2 sich
+- 2474
+: 2477 2 2 Auf 
+: 2480 2 6 der 
+: 2483 4 4 Ree
+: 2488 2 8 per
+: 2492 3 11 bahn 
+: 2497 2 14 Nachts 
+: 2501 3 13 um 
+: 2506 3 11 halb 
+: 2511 10 9 eins
+- 2521
+: 2527 2 9 Wer 
+: 2531 2 11 noch 
+: 2535 3 14 nie
+: 2539 3 11 mals 
+: 2544 2 9 in 
+: 2547 2 6 lau
+: 2550 4 4 schie
+: 2557 2 -3 ger 
+: 2560 4 6 Nacht
+- 2564
+: 2576 2 7 Ei
+: 2579 2 6 nen 
+: 2583 5 14 Ree
+: 2590 2 13 per
+: 2594 3 14 bahn 
+: 2599 2 14 bum
+: 2602 2 13 mel 
+: 2605 1 13 ge
+: 2607 5 9 macht
+- 2612
+: 2624 2 11 Ist 
+: 2627 2 11 ein 
+: 2631 2 14 ar
+: 2635 2 13 mer 
+: 2638 4 13 Wicht
+- 2642
+: 2645 2 13 Denn 
+: 2649 2 13 er 
+: 2655 3 14 kennt 
+: 2660 2 14 dich 
+: 2663 3 9 nicht
+- 2666
+: 2673 2 2 Mein 
+* 2677 3 4 St.
+* 2684 3 6 Pau
+* 2689 5 9 li, 
+* 2697 4 6 St.
+* 2703 3 4 Pau
+* 2708 4 -3 li 
+* 2720 7 9 bei 
+* 2730 12 14 Nacht
+E
