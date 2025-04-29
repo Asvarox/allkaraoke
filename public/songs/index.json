@@ -2557,6 +2557,33 @@
     "local": false
   },
   {
+    "id": "ado-ashura-chan",
+    "title": "Ashura-chan",
+    "artist": "Ado",
+    "video": "cyq5-StPISU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 312,
+    "gap": -47.30769230769238,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:01.653Z",
+    "genre": "J-Pop",
+    "realBpm": 156,
+    "volume": 0.73,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "name": "Ashura-chan",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adoashurachan",
+    "local": false
+  },
+  {
     "id": "ado-backlight",
     "title": "Backlight",
     "artist": "Ado",
@@ -2801,6 +2828,33 @@
     ],
     "tracksCount": 1,
     "search": "adoshow",
+    "local": false
+  },
+  {
+    "id": "ado-tot-musica",
+    "title": "Tot Musica",
+    "artist": "Ado",
+    "video": "V9_ZpqfqHFI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260,
+    "gap": 1239.230769230769,
+    "year": "2022",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:01.651Z",
+    "genre": "Other",
+    "realBpm": 130,
+    "volume": 0.74,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "name": "Tot Musica",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adototmusica",
     "local": false
   },
   {
@@ -3358,6 +3412,37 @@
     ],
     "tracksCount": 1,
     "search": "aimerescalatetv",
+    "local": false
+  },
+  {
+    "id": "aimer-kataomoi",
+    "title": "Kataomoi",
+    "artist": "Aimer",
+    "video": "kxs9Su_mbpU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 387.96,
+    "gap": 12944.74172595113,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:01.647Z",
+    "genre": "J-Pop",
+    "realBpm": 97,
+    "previewStart": 44,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "DeinAlptraum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=161112",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29492",
+    "tracks": [
+      {
+        "name": "Kataomoi",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aimerkataomoi",
     "local": false
   },
   {
@@ -29352,6 +29437,32 @@
     "local": false
   },
   {
+    "id": "daoko-x-kenshi-yonezu-uchiage-hanabi",
+    "title": "Uchiage Hanabi",
+    "artist": "Daoko x Kenshi Yonezu",
+    "video": "-tKVN2mAKRI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 384,
+    "gap": 22305.375,
+    "year": "2017",
+    "lastUpdate": "2025-04-29T00:13:01.865Z",
+    "genre": "Jpop",
+    "realBpm": 96,
+    "volume": 0.76,
+    "author": "Subkei",
+    "sourceUrl": "https://www.youtube.com/watch?v=-tKVN2mAKRI",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daokoxkenshiyonezuuchiagehanabi",
+    "local": false
+  },
+  {
     "id": "darius-rucker-wagon-wheel",
     "title": "Wagon Wheel",
     "artist": "Darius Rucker",
@@ -34908,6 +35019,33 @@
     ],
     "tracksCount": 1,
     "search": "disturbedmeaningoflife",
+    "local": false
+  },
+  {
+    "id": "disturbed-stricken",
+    "title": "Stricken",
+    "artist": "Disturbed",
+    "video": "I77mjesUbkw",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.82,
+    "gap": 14822.314239705544,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.650Z",
+    "genre": "Alternative Rock",
+    "realBpm": 174,
+    "volume": 0.79,
+    "author": "Dagrau85",
+    "tracks": [
+      {
+        "name": "Stricken",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disturbedstricken",
     "local": false
   },
   {
@@ -41205,6 +41343,34 @@
     "local": false
   },
   {
+    "id": "eve-kaikai-kitan",
+    "title": "Kaikai Kitan",
+    "artist": "Eve",
+    "video": "GwaRztMaoY0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 372,
+    "gap": 17535.93548387097,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:01.850Z",
+    "genre": "J-pop",
+    "realBpm": 185,
+    "volume": 0.75,
+    "author": "wolf359",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=wolf359",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Eve&cancion=Kaikai%20Kitan%20(TV)",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "evekaikaikitan",
+    "local": false
+  },
+  {
     "id": "everlast-what-its-like",
     "title": "What It’s Like",
     "artist": "Everlast",
@@ -41716,6 +41882,35 @@
     "local": false
   },
   {
+    "id": "falco-vienna-calling",
+    "title": "Vienna Calling",
+    "artist": "Falco",
+    "video": "MTlSjRMx5Ic",
+    "language": [
+      "German"
+    ],
+    "bpm": 263.06,
+    "gap": 10397.618185965179,
+    "year": "1985",
+    "artistOrigin": "AT",
+    "lastUpdate": "2025-04-29T00:13:01.643Z",
+    "genre": "Classical",
+    "realBpm": 132,
+    "previewStart": 141,
+    "previewEnd": 169,
+    "volume": 0.74,
+    "author": "diver66",
+    "sourceUrl": "https://usdb.eu/Falco/ViennaCalling/1241",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "falcoviennacalling",
+    "local": false
+  },
+  {
     "id": "fall-out-boy-centuries",
     "title": "Centuries",
     "artist": "Fall Out Boy",
@@ -41824,6 +42019,32 @@
     "local": false
   },
   {
+    "id": "fall-out-boy-i-dont-care",
+    "title": "I Don’t Care",
+    "artist": "Fall Out Boy",
+    "video": "Alh6iIvVN9o",
+    "language": [
+      "English"
+    ],
+    "bpm": 268.2,
+    "gap": 27492.537313432837,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.658Z",
+    "genre": "Rock",
+    "realBpm": 134,
+    "volume": 0.77,
+    "author": "Blackshot",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "falloutboyidontcare",
+    "local": false
+  },
+  {
     "id": "fall-out-boy-immortals",
     "title": "Immortals",
     "artist": "Fall Out Boy",
@@ -41928,6 +42149,32 @@
     ],
     "tracksCount": 1,
     "search": "falloutboythecarpaltunneloflove",
+    "local": false
+  },
+  {
+    "id": "fall-out-boy-the-last-of-the-real-ones",
+    "title": "The Last Of The Real Ones",
+    "artist": "Fall Out Boy",
+    "video": "7YAAyUFL1GQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 15701.739130434782,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.852Z",
+    "genre": "Alternative Rock",
+    "realBpm": 115,
+    "volume": 0.72,
+    "author": "DoubleDee73",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "falloutboythelastoftherealones",
     "local": false
   },
   {
@@ -47027,6 +47274,32 @@
     "local": false
   },
   {
+    "id": "going-under-ground-listen-to-the-stereo",
+    "title": "Listen to the Stereo",
+    "artist": "Going Under Ground",
+    "video": "I8uwTNmglrQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 364.4,
+    "gap": 287.873765093304,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:02.428Z",
+    "genre": "Anime",
+    "realBpm": 181,
+    "volume": 0.76,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "goingundergroundlistentothestereo",
+    "local": false
+  },
+  {
     "id": "golec-orkiestra-slodycze",
     "title": "Słodycze",
     "artist": "Golec Orkiestra",
@@ -49001,6 +49274,33 @@
     ],
     "tracksCount": 1,
     "search": "halestormimissthemisery",
+    "local": false
+  },
+  {
+    "id": "halsey-graveyard",
+    "title": "Graveyard",
+    "artist": "Halsey",
+    "video": "rPgaYeq9NvI",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 16260.978260869566,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.859Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 0.73,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=rPgaYeq9NvI",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "halseygraveyard",
     "local": false
   },
   {
@@ -51585,6 +51885,36 @@
     "local": false
   },
   {
+    "id": "hubert-kah-sternenhimmel",
+    "title": "Sternenhimmel",
+    "artist": "Hubert Kah",
+    "video": "NAzab4LC6s8",
+    "language": [
+      "German"
+    ],
+    "bpm": 380,
+    "gap": 11843.157894736842,
+    "year": "1982",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-29T00:13:01.253Z",
+    "genre": "Pop",
+    "realBpm": 190,
+    "previewStart": 83,
+    "previewEnd": 113,
+    "volume": 0.82,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=945",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hubertkahsternenhimmel",
+    "local": false
+  },
+  {
     "id": "huey-lewis-the-news-do-you-believe-in-love",
     "title": "Do You Believe In Love",
     "artist": "Huey Lewis & The News",
@@ -52048,6 +52378,36 @@
     "local": false
   },
   {
+    "id": "ideal-eiszeit",
+    "title": "Eiszeit",
+    "artist": "Ideal",
+    "video": "XzHpSeWW4EU",
+    "language": [
+      "German"
+    ],
+    "bpm": 276,
+    "gap": 9411.739130434782,
+    "year": "1981",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-04-29T00:13:00.403Z",
+    "genre": "NDW",
+    "realBpm": 181,
+    "previewStart": 42,
+    "previewEnd": 90,
+    "volume": 0.9,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26136",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "idealeiszeit",
+    "local": false
+  },
+  {
     "id": "idina-menzel-let-it-go",
     "title": "Let It Go",
     "artist": "Idina Menzel",
@@ -52451,6 +52811,33 @@
     ],
     "tracksCount": 1,
     "search": "imaginedragonsbeliever",
+    "local": false
+  },
+  {
+    "id": "imagine-dragons-bleeding-out",
+    "title": "Bleeding Out",
+    "artist": "Imagine Dragons",
+    "video": "QFKHScAStsU",
+    "language": [
+      "English"
+    ],
+    "bpm": 338.06,
+    "gap": 3049.4710998047685,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.856Z",
+    "genre": "Alternative",
+    "realBpm": 84,
+    "volume": 0.74,
+    "author": "aac",
+    "tracks": [
+      {
+        "name": "Bleeding Out",
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "imaginedragonsbleedingout",
     "local": false
   },
   {
@@ -70795,6 +71182,30 @@
     "local": false
   },
   {
+    "id": "lukas-graham-7-years",
+    "title": "7 Years",
+    "artist": "Lukas Graham",
+    "video": "LHCob76kigA",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.151,
+    "gap": 20090.278171740716,
+    "year": "2016",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-04-29T00:13:01.862Z",
+    "realBpm": 120,
+    "volume": 0.79,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lukasgraham7years",
+    "local": false
+  },
+  {
     "id": "lukas-graham-love-someone",
     "title": "Love Someone",
     "artist": "Lukas Graham",
@@ -82123,6 +82534,34 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-i-never-told-you-what-i-do-for-a-living",
+    "title": "I Never Told You What I Do For A Living",
+    "artist": "My Chemical Romance",
+    "video": "RXXi_wCri4w",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.19,
+    "gap": 6049.548450189209,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.655Z",
+    "genre": "Rock",
+    "realBpm": 116,
+    "volume": 0.74,
+    "author": "synonomy",
+    "sourceUrl": "https://www.youtube.com/watch?v=C5f18AsYv-0",
+    "tracks": [
+      {
+        "name": "I Never Told You What I Do for a Living",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromanceinevertoldyouwhatidoforaliving",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-im-not-okay-i-promise",
     "title": "I’m Not Okay (I Promise)",
     "artist": "My Chemical Romance",
@@ -82933,6 +83372,32 @@
     ],
     "tracksCount": 1,
     "search": "nancysinatrathesebootsaremadeforwalkin",
+    "local": false
+  },
+  {
+    "id": "nano-bulls-eye",
+    "title": "Bull's eye",
+    "artist": "Nano",
+    "video": "c2OMGaPVViQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 394,
+    "gap": 27777.15228426396,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:02.227Z",
+    "videoGap": 1,
+    "realBpm": 99,
+    "volume": 0.76,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nanobullseye",
     "local": false
   },
   {
@@ -89665,6 +90130,35 @@
     ],
     "tracksCount": 1,
     "search": "paramoreemergency",
+    "local": false
+  },
+  {
+    "id": "paramore-hard-times",
+    "title": "Hard Times",
+    "artist": "Paramore",
+    "video": "AEB6ibtdPZc",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 31140,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.459Z",
+    "realBpm": 120,
+    "previewStart": 48,
+    "previewEnd": 92,
+    "volume": 0.75,
+    "author": "RetroGirl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=157487",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=23429",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramorehardtimes",
     "local": false
   },
   {
@@ -98714,6 +99208,32 @@
     ],
     "tracksCount": 1,
     "search": "romeosantosymarcanthonyyotambien",
+    "local": false
+  },
+  {
+    "id": "rookiez-is-punkd-complication",
+    "title": "Complication",
+    "artist": "Rookiez is Punk'd",
+    "video": "0RhHVmQYGZc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 275.99975160022353,
+    "gap": 7344.73825,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:01.659Z",
+    "genre": "ANIME",
+    "realBpm": 136,
+    "volume": 0.74,
+    "author": "dangereus",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rookiezispunkdcomplication",
     "local": false
   },
   {
@@ -108459,6 +108979,35 @@
     "local": false
   },
   {
+    "id": "strawberry-alarm-clock-incense-and-peppermints",
+    "title": "Incense And Peppermints",
+    "artist": "Strawberry Alarm Clock",
+    "video": "4rw1_FNdy-Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 135.1,
+    "gap": 18827.352941176472,
+    "year": "1967",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.255Z",
+    "realBpm": 133,
+    "previewStart": 20,
+    "previewEnd": 65,
+    "volume": 0.8,
+    "author": "sentientred",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=348",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28811",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "strawberryalarmclockincenseandpeppermints",
+    "local": false
+  },
+  {
     "id": "stromae-alors-on-danse",
     "title": "Alors on danse",
     "artist": "Stromae",
@@ -117619,6 +118168,34 @@
     "local": false
   },
   {
+    "id": "the-weeknd-dancing-in-the-flames",
+    "title": "Dancing In The Flames",
+    "artist": "The Weeknd",
+    "video": "MLlSSJ0z7xM",
+    "language": [
+      "English"
+    ],
+    "bpm": 351,
+    "gap": 14857.094017094018,
+    "year": "2024",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-04-29T00:13:01.657Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "previewStart": 10,
+    "previewEnd": 72,
+    "volume": 0.76,
+    "author": "Fepo",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweeknddancingintheflames",
+    "local": false
+  },
+  {
     "id": "the-weeknd-earned-it",
     "title": "Earned it",
     "artist": "The Weeknd",
@@ -117880,6 +118457,34 @@
     ],
     "tracksCount": 1,
     "search": "theweekndtakemybreath",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-the-hills",
+    "title": "The Hills",
+    "artist": "The Weeknd",
+    "video": "yzTuBuRdAyA",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 7594.424778761062,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-04-29T00:13:01.656Z",
+    "genre": "Alternative R&B",
+    "realBpm": 113,
+    "previewStart": 8,
+    "previewEnd": 78,
+    "volume": 0.79,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndthehills",
     "local": false
   },
   {
@@ -124087,6 +124692,31 @@
     "local": false
   },
   {
+    "id": "weaver-kuchizuke-diamond",
+    "title": "Kuchizuke Diamond",
+    "artist": "WEAVER",
+    "video": "aPyGcf4_cJU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 327.92,
+    "gap": 5463.656989509636,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-04-29T00:13:02.043Z",
+    "realBpm": 164,
+    "volume": 0.74,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weaverkuchizukediamond",
+    "local": false
+  },
+  {
     "id": "ween-ocean-man",
     "title": "Ocean Man",
     "artist": "Ween",
@@ -125999,6 +126629,93 @@
     ],
     "tracksCount": 1,
     "search": "yazoonobodysdiary",
+    "local": false
+  },
+  {
+    "id": "yellowcard-breathing",
+    "title": "Breathing",
+    "artist": "Yellowcard",
+    "video": "SucBpQiwYZU",
+    "language": [
+      "English"
+    ],
+    "bpm": 359.8,
+    "gap": 25949.444135630907,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.466Z",
+    "realBpm": 180,
+    "previewStart": 48,
+    "previewEnd": 95,
+    "volume": 0.7,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4317",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yellowcardbreathing",
+    "local": false
+  },
+  {
+    "id": "yellowcard-ocean-avenue",
+    "title": "Ocean Avenue",
+    "artist": "Yellowcard",
+    "video": "X9fLbfzCqWw",
+    "language": [
+      "English"
+    ],
+    "bpm": 347.68,
+    "gap": 6517.708237459733,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.637Z",
+    "realBpm": 174,
+    "previewStart": 51,
+    "previewEnd": 93,
+    "volume": 0.76,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4682",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yellowcardoceanavenue",
+    "local": false
+  },
+  {
+    "id": "yellowcard-way-away",
+    "title": "Way Away",
+    "artist": "Yellowcard",
+    "video": "k4t5qqdP7As",
+    "language": [
+      "English"
+    ],
+    "bpm": 359.5,
+    "gap": 25788.609179415856,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-04-29T00:13:01.639Z",
+    "realBpm": 180,
+    "previewStart": 48,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "Sabu",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=88",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1618",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yellowcardwayaway",
     "local": false
   },
   {

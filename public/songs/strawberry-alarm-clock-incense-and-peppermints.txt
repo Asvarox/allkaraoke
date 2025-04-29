@@ -1,0 +1,286 @@
+#ARTIST:Strawberry Alarm Clock
+#TITLE:Incense And Peppermints
+#CREATOR:sentientred
+#BPM:135,1
+#YEAR:1967
+#PREVIEWSTART:20
+#VIDEO:v=4rw1_FNdy-Y
+#LANGUAGE:English
+#GAP:18827,352941176472
+#ALLKARAOKE_ID:strawberry-alarm-clock-incense-and-peppermints
+#ALLKARAOKE_LASTUPDATE:2025-04-29T00:13:01.255Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=348
+#ALLKARAOKE_REALBPM:133
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28811
+#ALLKARAOKE_PREVIEWEND:65
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Strawberry Alarm Clock - Incense And Peppermints.mp3
+#COVER:Strawberry Alarm Clock - Incense And Peppermints [CO].jpg
+#BACKGROUND:Strawberry Alarm Clock - Incense And Peppermints [BG].jpg
+: 9 4 4 Good 
+: 13 2 11 sense
+- 15
+: 17 2 13 In
+: 19 2 14 no
+: 21 4 13 cence
+- 25
+: 25 2 11 Crip
+: 27 2 7 plin' 
+: 29 1 11 man
+: 31 9 12 kind
+- 40
+: 42 1 4 Dead 
+: 46 2 11 kings 
+: 50 2 13 ma
+: 52 2 14 ny 
+: 54 4 13 things 
+: 58 2 11 I 
+: 60 2 7 can't 
+: 62 1 11 de
+: 64 10 12 fine
+- 74
+: 75 4 4 O
+: 79 2 11 cca
+: 81 1 4 sions 
+: 83 2 13 per
+: 85 2 14 ~
+: 87 1 13 sua
+: 89 2 4 sions 
+: 91 2 11 clut
+: 93 2 7 ter 
+: 95 1 11 your 
+: 97 6 12 mind
+- 103
+: 107 4 4 In
+: 112 2 11 cense 
+: 114 1 4 and 
+: 116 2 13 pep
+: 118 2 14 per
+: 120 2 13 mints 
+: 122 1 13 the 
+: 124 2 11 col
+: 126 2 7 or 
+: 128 1 11 of 
+: 130 5 12 time
+- 135
+: 141 5 4 Who 
+: 147 7 6 cares 
+: 155 1 6 what 
+: 157 3 9 games 
+: 161 1 9 we 
+: 163 7 9 choose
+- 170
+: 174 1 4 Lit
+: 176 1 4 tle 
+: 178 1 4 to 
+: 180 7 6 win 
+: 188 2 6 but 
+: 190 1 9 noth
+: 192 1 9 ing 
+: 194 1 9 to 
+: 196 6 9 lose
+- 202
+: 206 5 4 In
+: 211 2 11 cense 
+: 213 2 4 and 
+: 215 2 13 pep
+: 217 2 14 per
+: 219 3 13 mints 
+: 223 2 11 mean
+: 225 2 7 ing
+: 227 1 11 less 
+: 229 6 12 nouns
+- 235
+: 239 1 4 Turn 
+: 241 4 11 on
+- 245
+* 245 2 4 Tune 
+* 247 3 13 in
+- 250
+: 251 2 13 Turn 
+: 254 1 13 your 
+: 256 1 11 eyes
+: 258 1 7 ~ 
+: 260 1 11 a
+: 262 8 12 round
+- 270
+: 271 2 9 Look 
+: 273 1 7 at 
+: 275 1 6 your
+: 277 6 7 self
+- 283
+: 287 2 9 Look 
+: 289 2 7 at 
+: 291 1 6 your
+: 293 6 7 self
+- 299
+: 303 6 6 Yeah 
+: 309 2 11 yeah
+: 311 18 13 ~
+- 329
+: 335 2 9 Look 
+: 337 1 7 at 
+: 339 1 6 your
+: 341 8 7 self
+- 349
+: 351 2 9 Look 
+: 353 2 7 at 
+: 355 1 6 your
+: 357 10 7 self
+- 367
+: 367 6 6 Yeah 
+: 373 1 11 yeah
+: 374 8 13 ~
+- 382
+: 383 14 16 Yeah 
+: 399 1 16 yeah
+: 400 1 14 ~
+: 401 3 13 ~
+- 404 407
+- 407
+: 416 1 4 To 
+: 418 2 4 div
+: 420 1 11 ide 
+: 422 1 4 the 
+: 424 2 13 cock
+: 426 2 14 eyed
+: 428 4 13 ~ 
+: 433 2 11 wor
+: 435 2 7 ld 
+: 437 1 11 in 
+: 439 6 12 two
+- 445
+: 450 1 4 Throw 
+: 452 2 4 your 
+: 454 2 11 pride 
+: 456 1 4 to 
+: 458 2 13 one 
+: 460 2 14 side
+- 462
+: 462 1 13 It's 
+: 464 2 7 the 
+: 466 2 11 least 
+: 468 2 7 you 
+: 470 1 11 can 
+: 472 5 12 do
+- 477
+: 483 1 11 Beat
+: 487 2 11 niks 
+: 489 2 4 and 
+: 491 2 13 pol
+: 493 2 14 i
+: 495 2 13 tics
+- 497
+: 499 2 11 Noth
+: 501 2 7 ing 
+: 503 1 11 is 
+: 505 5 12 new
+- 510
+: 513 1 4 A 
+: 516 2 11 yard
+: 520 2 11 stick 
+: 522 2 4 for 
+: 524 2 13 lu
+: 526 2 14 na
+: 528 4 13 tics
+- 532
+: 532 2 11 One 
+: 534 2 7 point 
+: 536 1 11 of 
+: 538 5 12 view
+- 543
+: 549 5 4 Who 
+: 555 7 6 cares 
+: 563 1 6 what 
+: 565 3 9 games 
+: 569 1 9 we 
+: 571 7 9 choose
+- 578
+: 582 1 4 Lit
+: 584 1 4 tle 
+: 586 1 4 to 
+: 588 7 6 win 
+: 596 2 6 but 
+: 598 1 9 noth
+: 600 1 9 ing 
+: 602 1 9 to 
+: 604 9 9 lose
+- 613 751
+- 751
+: 760 4 4 Good 
+: 764 2 11 sence 
+: 768 2 13 in
+: 770 2 14 no
+: 772 4 13 cence
+- 776
+: 776 2 11 Crip
+: 778 2 7 plin' 
+: 780 1 11 man
+: 782 10 12 kind
+- 792
+: 793 3 4 Dead 
+: 797 2 11 kings 
+: 799 2 4 and 
+: 801 2 13 ma
+: 803 2 14 ny 
+: 805 4 13 things 
+: 809 2 11 I 
+: 811 2 7 can't 
+: 813 1 11 de
+: 815 4 12 fine
+- 819
+: 826 1 4 O
+: 828 1 11 cca
+: 830 1 4 sions 
+: 833 2 11 Per
+: 835 1 13 ~
+: 837 1 14 sua
+: 839 2 13 sions 
+: 841 2 11 clut
+: 843 2 7 ter 
+: 845 1 11 your 
+: 847 5 12 mind
+- 852
+: 857 4 4 In
+: 862 1 11 cense 
+: 864 1 4 and 
+: 866 2 13 pep
+: 868 2 14 per
+: 870 1 13 mints 
+: 872 2 4 the 
+: 874 2 11 co
+: 876 2 7 lor 
+: 878 1 11 of 
+: 880 6 12 time
+- 886
+: 890 5 4 Who 
+: 896 6 6 cares 
+: 905 1 6 what 
+: 907 3 9 games 
+: 911 1 9 we 
+: 913 7 9 choose
+- 920
+: 924 1 4 Lit
+: 926 1 4 tle 
+: 928 1 4 to 
+: 930 7 6 win 
+: 938 2 6 but 
+: 940 1 9 no
+: 942 1 9 thing 
+: 944 1 9 to 
+: 946 7 9 lose
+- 953 1013
+- 1013
+: 1022 6 4 In
+: 1028 6 6 cense 
+: 1038 4 9 pep
+: 1042 2 9 per
+: 1044 7 9 mints
+- 1051
+: 1054 7 4 In
+: 1061 5 6 cense 
+: 1071 4 9 pep
+: 1075 2 9 per
+: 1077 7 9 mints
+E
