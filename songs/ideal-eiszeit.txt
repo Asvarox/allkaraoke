@@ -1,0 +1,294 @@
+#ARTIST:Ideal
+#TITLE:Eiszeit
+#CREATOR:fepo
+#BPM:276
+#YEAR:1981
+#PREVIEWSTART:42
+#VIDEO:v=XzHpSeWW4EU
+#GENRE:NDW
+#LANGUAGE:German
+#GAP:9411,739130434782
+#ALLKARAOKE_ID:ideal-eiszeit
+#ALLKARAOKE_LASTUPDATE:2025-04-29T00:13:00.403Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:181
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=26136
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,9
+#MP3:Ideal - Eiszeit.mp3
+: 18 2 4 Das 
+: 21 2 4 Te
+: 24 2 4 le
+: 27 4 4 fon 
+: 33 4 4 seit 
+: 40 4 7 Jah
+: 46 2 7 ren 
+: 50 6 6 still.
+- 56
+: 66 2 4 Kein 
+: 69 2 4 Mensch 
+: 72 2 4 mit 
+: 75 2 4 dem 
+: 79 2 4 ich 
+: 86 6 7 re
+: 94 2 7 den 
+: 97 7 6 will.
+- 104
+: 114 2 9 Ich 
+: 117 2 12 seh’ 
+: 120 2 9 im 
+: 124 4 9 Spie
+: 130 4 7 gel 
+: 136 5 9 mein 
+: 143 2 7 Ge
+: 146 6 9 sicht,
+- 152
+: 165 2 11 Nichts 
+: 169 2 11 hat 
+: 172 4 9 mehr 
+: 178 2 7 Ge
+: 182 5 6 wicht.
+- 187 192
+- 192
+: 210 2 4 Ich 
+: 213 2 4 wer
+: 216 2 4 fe 
+: 219 3 4 Schat
+: 224 4 4 ten 
+: 231 5 7 an 
+: 238 2 7 die 
+: 242 8 6 Wand
+- 250
+: 259 2 4 Und 
+: 262 2 4 hal
+: 265 2 4 te 
+: 268 4 4 zärt
+: 274 3 4 lich 
+: 280 5 7 mei
+: 287 2 7 ne 
+: 290 7 6 Hand.
+- 297
+: 307 2 9 Ich 
+: 310 2 11 red’ 
+: 313 2 9 mit 
+: 316 5 9 mir 
+: 323 3 7 und 
+: 329 3 9 schau’ 
+: 334 3 7 ins 
+: 339 7 9 Licht,
+- 346
+: 358 2 11 Mich 
+: 362 2 11 er
+: 365 5 9 reichst 
+: 372 2 7 du 
+: 376 5 6 nicht.
+- 381 582
+- 582
+: 600 2 4 In 
+: 603 2 4 mei
+: 606 2 4 nem 
+* 609 4 4 Film 
+: 615 3 4 bin 
+: 620 2 7 ich 
+: 626 3 7 der 
+: 632 6 6 Star.
+- 638
+: 648 2 4 Ich 
+: 651 2 4 komm’ 
+: 654 2 4 auch 
+: 657 4 4 nur 
+: 663 3 4 al
+: 668 5 7 lei
+: 675 2 7 ne 
+: 679 6 6 klar.
+- 685
+: 698 2 11 Pan
+: 701 2 9 zer
+: 704 4 9 schrank 
+: 710 3 7 aus 
+: 717 3 9 Di
+: 722 2 7 a
+: 726 6 9 mant,
+- 732
+: 744 2 11 Kom
+: 747 2 11 bi
+: 750 2 11 na
+: 753 9 11 tion 
+: 766 4 9 un
+: 772 2 7 be
+: 775 8 6 kannt.
+- 783 964
+- 964
+: 982 4 -5 Eis
+: 991 6 -6 zeit, 
+: 1008 2 -5 mit 
+: 1011 2 -5 mir 
+: 1014 2 -5 be
+: 1017 3 -5 ginnt 
+: 1023 3 -5 die 
+: 1029 6 -5 Eis
+: 1038 7 -6 zeit,
+- 1045
+: 1058 2 -5 Im 
+: 1061 2 -5 La
+: 1064 2 -6 by
+: 1067 3 -5 rinth 
+: 1072 5 -6 der 
+: 1079 6 -6 Eis
+* 1088 6 -6 zeit,
+- 1094
+: 1106 3 -5 Mi
+: 1111 3 -6 nus 
+: 1117 3 -6 neun
+: 1122 3 -6 zig 
+: 1127 7 -6 Grad.
+- 1134 1159
+- 1159
+: 1177 4 -5 Eis
+: 1186 6 -6 zeit, 
+: 1203 2 -5 mit 
+: 1206 2 -5 mir 
+: 1209 2 -5 be
+: 1212 3 -5 ginnt 
+: 1218 3 -5 die 
+: 1224 6 -5 Eis
+: 1233 7 -6 zeit,
+- 1240
+: 1250 2 -5 Im 
+: 1253 2 -5 La
+: 1256 2 -5 by
+: 1259 3 -6 rinth 
+: 1264 5 -6 der 
+: 1271 6 -6 Eis
+* 1280 6 -6 zeit,
+- 1286
+: 1298 3 -5 Mi
+: 1303 3 -6 nus 
+: 1309 3 -6 neun
+: 1314 3 -6 zig 
+: 1319 7 -6 Grad.
+- 1326 1551
+- 1551
+: 1569 2 4 Al
+: 1572 2 4 le 
+: 1575 2 4 Wor
+: 1578 2 4 te 
+: 1581 3 4 tau
+: 1585 2 4 send
+: 1588 4 7 mal 
+: 1594 2 7 ge
+: 1598 8 6 sagt
+- 1606
+: 1618 2 4 Al
+: 1621 2 4 le 
+: 1624 2 4 Fra
+: 1627 2 4 gen 
+: 1630 2 4 tau
+: 1633 2 4 send
+* 1636 5 7 mal 
+: 1643 2 7 ge
+: 1647 7 6 fragt.
+- 1654
+: 1664 2 11 Al
+: 1667 2 11 le 
+: 1670 2 9 Ge
+: 1673 2 11 füh
+: 1676 2 9 le 
+: 1679 2 9 tau
+: 1682 2 9 send
+: 1685 4 9 mal 
+: 1691 2 9 ge
+: 1695 8 9 fühlt,
+- 1703
+: 1715 2 11 Tief
+: 1718 2 9 ge
+: 1721 5 11 fror’n 
+: 1733 4 9 tief
+: 1739 2 7 ge
+: 1743 8 6 kühlt.
+- 1751
+: 1761 2 4 In 
+: 1764 2 4 mei
+: 1767 2 4 nem 
+* 1770 4 4 Film 
+: 1776 3 4 bin 
+: 1781 2 7 ich 
+: 1787 3 7 der 
+: 1793 6 6 Star.
+- 1799
+: 1809 2 4 Ich 
+: 1812 2 4 komm’ 
+: 1815 2 4 auch 
+: 1818 4 4 nur 
+: 1824 3 4 al
+: 1829 5 7 lei
+: 1836 2 7 ne 
+: 1840 6 6 klar.
+- 1846
+: 1861 2 11 Pan
+: 1864 2 9 zer
+: 1867 4 9 schrank 
+: 1873 3 7 aus 
+: 1880 3 9 Di
+: 1885 2 7 a
+: 1889 6 9 mant,
+- 1895
+: 1906 2 11 Kom
+: 1909 2 11 bi
+: 1912 2 11 na
+: 1915 9 11 tion 
+: 1928 4 9 un
+: 1934 2 7 be
+: 1937 8 6 kannt.
+- 1945 2130
+- 2130
+: 2148 4 -5 Eis
+: 2157 6 -6 zeit, 
+: 2174 2 -5 mit 
+: 2177 2 -5 mir 
+: 2180 2 -5 be
+: 2183 2 -5 ginnt 
+: 2189 3 -5 die 
+: 2196 6 -5 Eis
+: 2207 7 -6 zeit,
+- 2214
+: 2224 2 -5 Im 
+: 2227 2 -5 La
+: 2230 2 -5 by
+: 2233 3 -6 rinth 
+: 2238 5 -6 der 
+: 2245 6 -6 Eis
+* 2254 6 -6 zeit,
+- 2260
+: 2272 3 -5 Mi
+: 2277 3 -6 nus 
+: 2283 3 -6 neun
+: 2288 3 -6 zig 
+: 2293 7 -6 Grad.
+- 2300 2324
+- 2324
+: 2342 5 -5 Eis
+: 2352 6 -6 zeit, 
+: 2369 2 -5 mit 
+: 2372 3 -5 mir 
+: 2376 2 -5 be
+: 2379 4 -5 ginnt 
+: 2387 4 -5 die 
+: 2393 6 -5 Eis
+: 2403 7 -6 zeit,
+- 2410
+: 2420 2 -5 Im 
+: 2423 2 -5 La
+: 2426 2 -5 by
+: 2429 3 -6 rinth 
+: 2434 5 -6 der 
+: 2441 6 -6 Eis
+* 2450 6 -6 zeit,
+- 2456
+: 2468 3 -5 Mi
+: 2473 3 -6 nus 
+: 2479 3 -6 neun
+: 2484 3 -6 zig 
+: 2489 7 -6 Grad.
+E
