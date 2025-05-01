@@ -9,6 +9,7 @@
 #GAP:15421,274643903944
 #EDITION:Rock Band
 #ALLKARAOKE_ID:red-hot-chili-peppers-dani-california
+#ALLKARAOKE_SID:3603
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:96

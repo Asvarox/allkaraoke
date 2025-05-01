@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:4350
 #ALLKARAOKE_ID:the-beatles-yesterday
+#ALLKARAOKE_SID:4275
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
 #ALLKARAOKE_REALBPM:96

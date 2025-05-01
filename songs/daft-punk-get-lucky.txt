@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:15010
 #ALLKARAOKE_ID:daft-punk-get-lucky
+#ALLKARAOKE_SID:1081
 #ALLKARAOKE_ARTISTORIGIN:FR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #ALLKARAOKE_REALBPM:116

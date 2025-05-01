@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:19345,90625
 #ALLKARAOKE_ID:luka-megurine-just-be-friends
+#ALLKARAOKE_SID:2672
 #ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:24.853Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:128

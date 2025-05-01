@@ -7,6 +7,7 @@
 #LANGUAGE:Spanish
 #GAP:4494,347940829224
 #ALLKARAOKE_ID:melendi-volantes-pa-la-falda-mi-gitana
+#ALLKARAOKE_SID:2916
 #ALLKARAOKE_LASTUPDATE:2025-04-09T00:12:49.070Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=telixj

@@ -9,6 +9,7 @@
 #GAP:25041,67
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-another-one-bites-the-dust
+#ALLKARAOKE_SID:3525
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112

@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:7730
 #ALLKARAOKE_ID:guns-n-roses-knocking-on-heavens-door
+#ALLKARAOKE_SID:1823
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:66

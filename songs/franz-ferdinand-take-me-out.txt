@@ -9,6 +9,7 @@
 #GAP:4653,175908221798
 #EDITION:SingStar Party English
 #ALLKARAOKE_ID:franz-ferdinand-take-me-out
+#ALLKARAOKE_SID:1681
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:104

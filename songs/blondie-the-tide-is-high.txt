@@ -8,6 +8,7 @@
 #GAP:28892,63730569948
 #EDITION:SingStar SP English
 #ALLKARAOKE_ID:blondie-the-tide-is-high
+#ALLKARAOKE_SID:628
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:96

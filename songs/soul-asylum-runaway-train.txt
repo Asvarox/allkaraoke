@@ -8,6 +8,7 @@
 #GAP:16179,29411764706
 #EDITION:SingStar Amped German
 #ALLKARAOKE_ID:soul-asylum-runaway-train
+#ALLKARAOKE_SID:4031
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:117

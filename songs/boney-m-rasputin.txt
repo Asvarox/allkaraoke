@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:49733,08284023669
 #ALLKARAOKE_ID:boney-m-rasputin
+#ALLKARAOKE_SID:664
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #ALLKARAOKE_REALBPM:64
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin

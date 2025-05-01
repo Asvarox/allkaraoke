@@ -9,6 +9,7 @@
 #GAP:20698,89898989899
 #EDITION:SingStar Pop 2
 #ALLKARAOKE_ID:3-doors-down-when-im-gone
+#ALLKARAOKE_SID:12
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:74

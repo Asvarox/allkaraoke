@@ -10,6 +10,7 @@
 #GAP:6431,132075471698
 #EDITION:Rock Band Store 2008 Vol. 4
 #ALLKARAOKE_ID:the-offspring-pretty-fly-for-a-white-guy
+#ALLKARAOKE_SID:4372
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:144

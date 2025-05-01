@@ -10,6 +10,7 @@
 #GAP:7194,758848892008
 #EDITION:Lego Rock Band
 #ALLKARAOKE_ID:kaiser-chiefs-ruby
+#ALLKARAOKE_SID:2262
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:92

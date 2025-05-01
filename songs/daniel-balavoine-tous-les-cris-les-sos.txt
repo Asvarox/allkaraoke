@@ -9,6 +9,7 @@
 #LANGUAGE:French
 #GAP:42579,87096774194
 #ALLKARAOKE_ID:daniel-balavoine-tous-les-cris-les-sos
+#ALLKARAOKE_SID:1096
 #ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:01.526Z
 #ALLKARAOKE_ARTISTORIGIN:FR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred

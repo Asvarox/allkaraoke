@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:38050
 #ALLKARAOKE_ID:beastie-boys-you-gotta-fight-for-your-right-to-party
+#ALLKARAOKE_SID:487
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:134

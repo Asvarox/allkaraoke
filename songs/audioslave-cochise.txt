@@ -9,6 +9,7 @@
 #GAP:60449,739130434784
 #EDITION:SingStar Amped
 #ALLKARAOKE_ID:audioslave-cochise
+#ALLKARAOKE_SID:367
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:81

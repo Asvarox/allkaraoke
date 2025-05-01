@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:404,5122561280641
 #ALLKARAOKE_ID:christina-aguilera-feat-redman-dirrty
+#ALLKARAOKE_SID:960
 #ALLKARAOKE_LASTUPDATE:2023-04-29T21:51:39.081Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:100

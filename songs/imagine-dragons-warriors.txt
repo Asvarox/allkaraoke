@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:8812
 #ALLKARAOKE_ID:imagine-dragons-warriors
+#ALLKARAOKE_SID:2001
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=skream
 #ALLKARAOKE_REALBPM:156

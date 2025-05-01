@@ -8,6 +8,7 @@
 #LANGUAGE:Spanish
 #GAP:10192,166638893517
 #ALLKARAOKE_ID:carlos-baute-y-marta-sanchez-colgando-en-tus-manos
+#ALLKARAOKE_SID:869
 #ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.556Z
 #ALLKARAOKE_ARTISTORIGIN:VE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben

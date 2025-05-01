@@ -9,6 +9,7 @@
 #GAP:45729,09
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-i-want-to-break-free
+#ALLKARAOKE_SID:3534
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:108

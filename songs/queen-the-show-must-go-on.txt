@@ -10,6 +10,7 @@
 #GAP:25940,12
 #EDITION:SingStar Rock Ballads
 #ALLKARAOKE_ID:queen-the-show-must-go-on
+#ALLKARAOKE_SID:3547
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:83

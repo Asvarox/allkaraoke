@@ -9,6 +9,7 @@
 #GAP:2701,3344388200385
 #EDITION:SingStar Rock Ballads
 #ALLKARAOKE_ID:nickelback-how-you-remind-me
+#ALLKARAOKE_SID:3194
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:86

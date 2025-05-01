@@ -9,6 +9,7 @@
 #LANGUAGE:Polish
 #GAP:35200
 #ALLKARAOKE_ID:akademia-pana-kleksa-kaczka-dziwaczka
+#ALLKARAOKE_SID:136
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2892

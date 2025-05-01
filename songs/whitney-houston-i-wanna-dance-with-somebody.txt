@@ -9,6 +9,7 @@
 #GAP:29452,59663865546
 #EDITION:SingStar Anthems
 #ALLKARAOKE_ID:whitney-houston-i-wanna-dance-with-somebody
+#ALLKARAOKE_SID:4704
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9523
 #ALLKARAOKE_REALBPM:117

@@ -9,6 +9,7 @@
 #GAP:48644,10255358425
 #EDITION:Rock Band Store 2010 Vol. 4
 #ALLKARAOKE_ID:the-doors-riders-on-the-storm
+#ALLKARAOKE_SID:4324
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:99

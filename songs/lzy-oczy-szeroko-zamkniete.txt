@@ -9,6 +9,7 @@
 #GAP:29860,272727272728
 #EDITION:SingStar ESKA
 #ALLKARAOKE_ID:lzy-oczy-szeroko-zamkniete
+#ALLKARAOKE_SID:2685
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:77

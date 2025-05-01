@@ -9,6 +9,7 @@
 #LANGUAGE:Polish
 #GAP:8773,65768106528
 #ALLKARAOKE_ID:edyta-gorniak-mietek-szczesniak-dumka-na-dwa-serca
+#ALLKARAOKE_SID:1441
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_VOLUME:0,9
 #P1:Edyta Górniak

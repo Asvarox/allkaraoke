@@ -8,6 +8,7 @@
 #GAP:21930,83
 #EDITION:SingStar Rocks
 #ALLKARAOKE_ID:scorpions-wind-of-change
+#ALLKARAOKE_SID:3817
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3
 #ALLKARAOKE_REALBPM:75

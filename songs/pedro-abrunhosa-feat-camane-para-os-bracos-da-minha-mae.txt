@@ -9,6 +9,7 @@
 #LANGUAGE:Portuguese
 #GAP:7797,512874966817
 #ALLKARAOKE_ID:pedro-abrunhosa-feat-camane-para-os-bracos-da-minha-mae
+#ALLKARAOKE_SID:3414
 #ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:25.976Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:106

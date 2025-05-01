@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:3357,5461106655976
 #ALLKARAOKE_ID:boney-m-daddy-cool
+#ALLKARAOKE_SID:662
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M&cancion=Daddy%20Cool

@@ -9,6 +9,7 @@
 #LANGUAGE:Spanish
 #GAP:3912,609756097561
 #ALLKARAOKE_ID:amaral-marta-sebas-guille-y-los-demas
+#ALLKARAOKE_SID:230
 #ALLKARAOKE_LASTUPDATE:2024-05-15T17:29:16.794Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=gilrael

@@ -8,6 +8,7 @@
 #GAP:27094
 #EDITION:SingStar ABBA
 #ALLKARAOKE_ID:abba-fernando
+#ALLKARAOKE_SID:53
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112

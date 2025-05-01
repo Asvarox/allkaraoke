@@ -7,6 +7,7 @@
 #LANGUAGE:Portuguese
 #GAP:6550
 #ALLKARAOKE_ID:mamonas-assassinas-sabao-cra-cra
+#ALLKARAOKE_SID:2749
 #ALLKARAOKE_LASTUPDATE:2025-01-23T00:11:21.576Z
 #ALLKARAOKE_ARTISTORIGIN:BR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=tongas%20pla

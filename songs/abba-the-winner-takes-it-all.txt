@@ -8,6 +8,7 @@
 #GAP:35114
 #EDITION:SingStar ABBA
 #ALLKARAOKE_ID:abba-the-winner-takes-it-all
+#ALLKARAOKE_SID:65
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:61

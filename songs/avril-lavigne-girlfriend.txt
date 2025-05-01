@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:12061,239736673677
 #ALLKARAOKE_ID:avril-lavigne-girlfriend
+#ALLKARAOKE_SID:410
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:81

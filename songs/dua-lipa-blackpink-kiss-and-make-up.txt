@@ -8,6 +8,7 @@
 #LANGUAGE:English, Korean
 #GAP:8441,151515151516
 #ALLKARAOKE_ID:dua-lipa-blackpink-kiss-and-make-up
+#ALLKARAOKE_SID:1383
 #ALLKARAOKE_LASTUPDATE:2024-10-19T00:11:00.474Z
 #ALLKARAOKE_ARTISTORIGIN:KR
 #ALLKARAOKE_CREATORURL:Mathieu Jomphe-Lepine, Chelcee Grimes, Dua Lipa, Marc Vincent, Teddy Park, Zacharie Raymond, Yannick Rastogi.

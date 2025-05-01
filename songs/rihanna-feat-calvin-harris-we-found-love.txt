@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:58798,98406374502
 #ALLKARAOKE_ID:rihanna-feat-calvin-harris-we-found-love
+#ALLKARAOKE_SID:3659
 #ALLKARAOKE_LASTUPDATE:2023-01-28T21:06:14.478Z
 #ALLKARAOKE_ARTISTORIGIN:BB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo

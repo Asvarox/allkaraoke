@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:69170
 #ALLKARAOKE_ID:avenged-sevenfold-hail-to-the-king
+#ALLKARAOKE_SID:390
 #ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:39.736Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29196

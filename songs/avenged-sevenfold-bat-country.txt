@@ -9,6 +9,7 @@
 #GAP:5065,229564169512
 #EDITION:Guitar Hero Warriors of Rock
 #ALLKARAOKE_ID:avenged-sevenfold-bat-country
+#ALLKARAOKE_SID:385
 #ALLKARAOKE_LASTUPDATE:2024-05-07T13:32:26.624Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83

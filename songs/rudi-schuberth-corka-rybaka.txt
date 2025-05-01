@@ -9,6 +9,7 @@
 #GAP:4691,4098360655735
 #EDITION:SingStar '80s Polish
 #ALLKARAOKE_ID:rudi-schuberth-corka-rybaka
+#ALLKARAOKE_SID:3739
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:87

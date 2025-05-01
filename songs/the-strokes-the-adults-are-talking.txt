@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:21120,121197430613
 #ALLKARAOKE_ID:the-strokes-the-adults-are-talking
+#ALLKARAOKE_SID:4420
 #ALLKARAOKE_LASTUPDATE:2024-07-23T00:10:52.969Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=rsa_skala

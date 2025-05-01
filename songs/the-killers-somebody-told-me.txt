@@ -9,6 +9,7 @@
 #GAP:21046,880886827996
 #EDITION:SingStar Rocks
 #ALLKARAOKE_ID:the-killers-somebody-told-me
+#ALLKARAOKE_SID:4352
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #ALLKARAOKE_REALBPM:138

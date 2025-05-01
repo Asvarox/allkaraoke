@@ -10,6 +10,7 @@
 #GAP:31180
 #EDITION:Rock Band
 #ALLKARAOKE_ID:bon-jovi-wanted-dead-or-alive
+#ALLKARAOKE_SID:660
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:74

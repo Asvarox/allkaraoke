@@ -8,6 +8,7 @@
 #GAP:493,2355680710498
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-i-want-it-all
+#ALLKARAOKE_SID:3533
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:92

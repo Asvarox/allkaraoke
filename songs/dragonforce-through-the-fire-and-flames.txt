@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:20045
 #ALLKARAOKE_ID:dragonforce-through-the-fire-and-flames
+#ALLKARAOKE_SID:1369
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=conejof1
 #ALLKARAOKE_REALBPM:200

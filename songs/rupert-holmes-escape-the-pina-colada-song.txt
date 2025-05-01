@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:13753,633673979846
 #ALLKARAOKE_ID:rupert-holmes-escape-the-pina-colada-song
+#ALLKARAOKE_SID:3744
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #ALLKARAOKE_REALBPM:136

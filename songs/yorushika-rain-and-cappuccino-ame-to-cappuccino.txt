@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:19466,435757545423
 #ALLKARAOKE_ID:yorushika-rain-and-cappuccino-ame-to-cappuccino
+#ALLKARAOKE_SID:4765
 #ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:12.858Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=161112

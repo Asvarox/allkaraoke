@@ -9,6 +9,7 @@
 #LANGUAGE:Japanese
 #GAP:24310
 #ALLKARAOKE_ID:houshou-marine-feat-gawr-gura-shinkiro
+#ALLKARAOKE_SID:1945
 #ALLKARAOKE_LASTUPDATE:2025-01-17T00:11:58.765Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=51165
 #ALLKARAOKE_REALBPM:110

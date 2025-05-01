@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:6950
 #ALLKARAOKE_ID:bon-jovi-you-give-love-a-bad-name
+#ALLKARAOKE_SID:661
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #ALLKARAOKE_REALBPM:123

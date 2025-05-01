@@ -7,6 +7,7 @@
 #LANGUAGE:Russian
 #GAP:31750
 #ALLKARAOKE_ID:chai-vdvoem-jelannaya
+#ALLKARAOKE_SID:903
 #ALLKARAOKE_LASTUPDATE:2025-02-04T13:19:33.399Z
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6nM-wFfb3is&ab_channel=StarPro

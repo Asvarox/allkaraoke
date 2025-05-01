@@ -8,6 +8,7 @@
 #LANGUAGE:Portuguese
 #GAP:5857,7507237053715
 #ALLKARAOKE_ID:diogo-picarra-e-pedro-abrunhosa-amor-de-ferro
+#ALLKARAOKE_SID:1226
 #ALLKARAOKE_LASTUPDATE:2024-07-21T00:11:32.619Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/fr/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:125

@@ -9,6 +9,7 @@
 #GAP:5393,52
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-we-are-the-champions
+#ALLKARAOKE_SID:3549
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:46

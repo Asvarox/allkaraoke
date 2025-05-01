@@ -8,6 +8,7 @@
 #GAP:22250
 #EDITION:Ultrastar Rocks!
 #ALLKARAOKE_ID:jet-are-you-gonna-be-my-girl
+#ALLKARAOKE_SID:2112
 #ALLKARAOKE_ARTISTORIGIN:AU
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #ALLKARAOKE_REALBPM:103

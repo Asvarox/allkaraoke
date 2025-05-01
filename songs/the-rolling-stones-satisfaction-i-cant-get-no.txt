@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:13677,142857142857
 #ALLKARAOKE_ID:the-rolling-stones-satisfaction-i-cant-get-no
+#ALLKARAOKE_SID:4397
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #ALLKARAOKE_REALBPM:138

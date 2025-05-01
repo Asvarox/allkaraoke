@@ -8,6 +8,7 @@
 #LANGUAGE:Polish
 #GAP:32270
 #ALLKARAOKE_ID:maciej-moleda-zrobie-mezczyzn-z-was
+#ALLKARAOKE_SID:2692
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:114

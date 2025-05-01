@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:34043,30595482546
 #ALLKARAOKE_ID:audioslave-be-yourself
+#ALLKARAOKE_SID:366
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #ALLKARAOKE_REALBPM:117

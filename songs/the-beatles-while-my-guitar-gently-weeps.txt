@@ -9,6 +9,7 @@
 #GAP:15656,136029729496
 #EDITION:The Beatles Rock Band
 #ALLKARAOKE_ID:the-beatles-while-my-guitar-gently-weeps
+#ALLKARAOKE_SID:4274
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:116

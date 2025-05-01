@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:11398,779206859592
 #ALLKARAOKE_ID:against-the-current-legends-never-die
+#ALLKARAOKE_SID:122
 #ALLKARAOKE_LASTUPDATE:2025-01-17T05:13:33.573Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

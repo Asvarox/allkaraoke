@@ -7,6 +7,7 @@
 #LANGUAGE:Spanish
 #GAP:3177
 #ALLKARAOKE_ID:vicentico-y-valeria-bertuccelli-no-te-apartes-de-mi
+#ALLKARAOKE_SID:4638
 #ALLKARAOKE_LASTUPDATE:2025-03-07T00:12:01.945Z
 #ALLKARAOKE_REALBPM:111
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=V2ji2KgJYcE

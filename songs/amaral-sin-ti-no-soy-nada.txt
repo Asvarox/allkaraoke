@@ -9,6 +9,7 @@
 #GAP:7500
 #EDITION:SingStar Pop
 #ALLKARAOKE_ID:amaral-sin-ti-no-soy-nada
+#ALLKARAOKE_SID:231
 #ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.555Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

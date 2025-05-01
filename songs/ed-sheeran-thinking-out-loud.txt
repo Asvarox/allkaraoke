@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:8042,290722693329
 #ALLKARAOKE_ID:ed-sheeran-thinking-out-loud
+#ALLKARAOKE_SID:1433
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #ALLKARAOKE_REALBPM:78

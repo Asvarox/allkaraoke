@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:200
 #ALLKARAOKE_ID:smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note
+#ALLKARAOKE_SID:4011
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:103

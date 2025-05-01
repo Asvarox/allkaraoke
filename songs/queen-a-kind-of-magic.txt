@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:6550
 #ALLKARAOKE_ID:queen-a-kind-of-magic
+#ALLKARAOKE_SID:3524
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:129

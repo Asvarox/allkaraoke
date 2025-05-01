@@ -9,6 +9,7 @@
 #LANGUAGE:Spanish
 #GAP:64250,43396226415
 #ALLKARAOKE_ID:heroes-del-silencio-entre-dos-tierras
+#ALLKARAOKE_SID:1897
 #ALLKARAOKE_LASTUPDATE:2024-05-15T17:29:17.426Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pacayaka

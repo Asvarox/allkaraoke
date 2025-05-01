@@ -7,6 +7,7 @@
 #LANGUAGE:English, Japanese
 #GAP:25108,958917273965
 #ALLKARAOKE_ID:bring-me-the-horizon-feat-babymetal-kingslayer
+#ALLKARAOKE_SID:710
 #ALLKARAOKE_LASTUPDATE:2024-12-21T00:11:16.655Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=150321
 #ALLKARAOKE_REALBPM:186

@@ -11,6 +11,7 @@
 #GAP:4570
 #EDITION:UltraStar
 #ALLKARAOKE_ID:pokemon-opening-pl
+#ALLKARAOKE_SID:3490
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
 #ALLKARAOKE_REALBPM:145
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15471

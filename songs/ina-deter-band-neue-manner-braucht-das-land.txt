@@ -9,6 +9,7 @@
 #LANGUAGE:German
 #GAP:3763,157894736842
 #ALLKARAOKE_ID:ina-deter-band-neue-manner-braucht-das-land
+#ALLKARAOKE_SID:2006
 #ALLKARAOKE_LASTUPDATE:2025-04-25T00:13:04.854Z
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=55

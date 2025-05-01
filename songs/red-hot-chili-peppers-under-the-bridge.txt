@@ -10,6 +10,7 @@
 #GAP:28337,221485908623
 #EDITION:Rock Band Store 2008 Vol. 3
 #ALLKARAOKE_ID:red-hot-chili-peppers-under-the-bridge
+#ALLKARAOKE_SID:3608
 #ALLKARAOKE_LASTUPDATE:2024-05-14T12:53:15.182Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

@@ -9,6 +9,7 @@
 #GAP:38471,56763145322
 #EDITION:Rock Band Store 2012 Vol. 3
 #ALLKARAOKE_ID:the-black-keys-lonely-boy
+#ALLKARAOKE_SID:4295
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:166

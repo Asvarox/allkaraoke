@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:3473
 #ALLKARAOKE_ID:carly-rae-jepsen-call-me-maybe
+#ALLKARAOKE_SID:874
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
 #ALLKARAOKE_REALBPM:117

@@ -8,6 +8,7 @@
 #GAP:10866,062992125984
 #EDITION:SingStar
 #ALLKARAOKE_ID:the-village-people-ymca
+#ALLKARAOKE_SID:4425
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:127

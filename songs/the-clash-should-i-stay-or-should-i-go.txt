@@ -9,6 +9,7 @@
 #GAP:11400
 #EDITION:SingStar Pop
 #ALLKARAOKE_ID:the-clash-should-i-stay-or-should-i-go
+#ALLKARAOKE_SID:4310
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:113

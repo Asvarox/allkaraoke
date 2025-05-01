@@ -8,6 +8,7 @@
 #GAP:46460
 #EDITION:Rock Band Store 2010 Vol. 4
 #ALLKARAOKE_ID:bon-jovi-bad-medicine
+#ALLKARAOKE_SID:655
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:117

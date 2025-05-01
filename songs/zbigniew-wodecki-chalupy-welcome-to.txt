@@ -9,6 +9,7 @@
 #GAP:5015,956947162426
 #EDITION:SingStar '80s Polish
 #ALLKARAOKE_ID:zbigniew-wodecki-chalupy-welcome-to
+#ALLKARAOKE_SID:4785
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:124

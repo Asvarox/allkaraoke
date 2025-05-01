@@ -8,6 +8,7 @@
 #LANGUAGE:Polish
 #GAP:34128,843107591
 #ALLKARAOKE_ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-bogurodzica
+#ALLKARAOKE_SID:3628
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:42

@@ -9,6 +9,7 @@
 #LANGUAGE:French
 #GAP:29468,778485771956
 #ALLKARAOKE_ID:gilbert-montagne-les-sunlights-des-tropiques
+#ALLKARAOKE_SID:1744
 #ALLKARAOKE_LASTUPDATE:2024-06-27T00:10:27.773Z
 #ALLKARAOKE_ARTISTORIGIN:FR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
