@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
 import { Button, FormControlLabel, Grid, IconButton, Switch } from '@mui/material';
-import dayjs from 'dayjs';
-import { SongPreview } from 'interfaces';
-import { MRT_ColumnDef, MaterialReactTable } from 'material-react-table';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import NoPrerender from 'modules/Elements/NoPrerender';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
@@ -14,8 +11,8 @@ import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useQueryParam from 'modules/hooks/useQueryParam';
 import { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import posthog from 'posthog-js';
-import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
+import SongsTable from 'routes/Edit/Components/SongsTable';
 import ShareSongsModal, { useShareSongs } from 'routes/Edit/ShareSongsModal';
 import { Link } from 'wouter';
 
@@ -28,62 +25,6 @@ export default function SongList() {
   const created = useQueryParam('created');
   const songId = useQueryParam('id');
 
-  const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
-    () => [
-      {
-        accessorKey: 'id',
-        header: 'ID',
-      },
-      {
-        accessorKey: 'artist',
-        header: 'Artist',
-      },
-      {
-        accessorKey: 'title',
-        header: 'Title',
-        Cell: ({ renderedCellValue, row }) => (
-          <Link to={buildUrl(`game/`, { song: row.original.id, playlist: 'All' })}>{renderedCellValue}</Link>
-        ),
-      },
-      {
-        accessorKey: 'year',
-        header: 'Year',
-        size: 100,
-      },
-      {
-        accessorKey: 'language',
-        header: 'Language',
-        size: 100,
-      },
-      {
-        accessorKey: 'video',
-        header: 'Video',
-        size: 100,
-      },
-      {
-        accessorKey: 'lastUpdate',
-        header: 'Last Update',
-        sortUndefined: -1 as -1,
-        Cell: ({ cell }) => {
-          const val = cell.getValue<string>();
-
-          return val && <span>{dayjs(val).format('MMM DD YYYY, HH:mm')}</span>;
-        },
-      },
-      {
-        accessorKey: 'local',
-        header: 'Local',
-        Cell: ({ cell }) => (cell.getValue<boolean>() ? `✔️` : ''),
-      },
-      {
-        accessorKey: 'isDeleted',
-        header: 'Deleted',
-        Cell: ({ cell }) => (cell.getValue<boolean>() ? `✔️` : ''),
-        size: 100,
-      },
-    ],
-    [],
-  );
   if (!data) return <>Loading</>;
 
   return (
@@ -112,12 +53,9 @@ export default function SongList() {
               </Link>
             </Grid>
             <Grid item xs={12}>
-              <MaterialReactTable
+              <SongsTable
+                globalFilter={songId}
                 data={data}
-                columns={columns}
-                getRowId={(song) => song.id}
-                positionActionsColumn="last"
-                enableRowActions
                 renderRowActions={({ row }) => (
                   <>
                     <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })}>
@@ -188,14 +126,6 @@ export default function SongList() {
                     </IconButton>
                   </>
                 )}
-                initialState={{
-                  density: 'compact',
-                  columnVisibility: { local: false, isDeleted: false, video: false, id: false },
-                  globalFilter: songId,
-                  showGlobalFilter: true,
-                }}
-                enableDensityToggle={false}
-                enableFullScreenToggle={false}
               />
             </Grid>
             {shareSongs !== null && (

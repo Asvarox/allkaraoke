@@ -28,7 +28,6 @@ export interface CustomVirtualizedListMethods {
 
 export interface Components<T> {
   Header?: (props: { context?: T }) => ReactNode;
-  Footer?: (props: { context?: T }) => ReactNode;
   EmptyPlaceholder?: (props: { context?: T }) => ReactNode;
 }
 

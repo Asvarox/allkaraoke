@@ -5,6 +5,7 @@ import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
+import { useSetlist } from 'modules/Songs/hooks/useSetlist';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
@@ -68,19 +69,11 @@ const components: Components<{
       )}
     </>
   ),
-  Footer: () => (
-    <AddSongs>
-      Missing a song? Try{' '}
-      <Link to="convert/">
-        <a>adding one</a>
-      </Link>{' '}
-      yourself!
-    </AddSongs>
-  ),
   EmptyPlaceholder: () => <NoSongsFound>No songs found</NoSongsFound>,
 };
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+  const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
@@ -321,7 +314,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   },
                 }}
                 Footer={
-                  selectedPlaylistData?.footerComponent ?? (
+                  selectedPlaylistData?.footerComponent ??
+                  (setlist.isEditable ? (
                     <AddSongs>
                       Missing a song? Try{' '}
                       <Link to="convert/">
@@ -329,7 +323,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                       </Link>{' '}
                       yourself!
                     </AddSongs>
-                  )
+                  ) : null)
                 }
               />
             </SongListContainer>
