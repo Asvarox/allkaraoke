@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:-132,3370429252783
 #ALLKARAOKE_ID:chuck-berry-you-never-can-tell
+#ALLKARAOKE_SID:972
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:157

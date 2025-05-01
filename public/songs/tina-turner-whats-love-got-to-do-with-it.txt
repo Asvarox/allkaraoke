@@ -9,6 +9,7 @@
 #GAP:19444,285714285714
 #EDITION:SingStar Legends
 #ALLKARAOKE_ID:tina-turner-whats-love-got-to-do-with-it
+#ALLKARAOKE_SID:4483
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8110
 #ALLKARAOKE_REALBPM:98

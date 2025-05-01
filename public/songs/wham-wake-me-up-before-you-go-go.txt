@@ -9,6 +9,7 @@
 #GAP:-34,87515451174295
 #EDITION:SingStar '80s
 #ALLKARAOKE_ID:wham-wake-me-up-before-you-go-go
+#ALLKARAOKE_SID:4697
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:162

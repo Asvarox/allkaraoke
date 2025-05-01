@@ -8,6 +8,7 @@
 #LANGUAGE:French
 #GAP:34741
 #ALLKARAOKE_ID:indochine-jai-demande-a-la-lune
+#ALLKARAOKE_SID:2013
 #ALLKARAOKE_LASTUPDATE:2023-01-27T21:54:54.755Z
 #ALLKARAOKE_ARTISTORIGIN:FR
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lord_tenebro

@@ -7,6 +7,7 @@
 #LANGUAGE:Polish
 #GAP:6620,416493127864
 #ALLKARAOKE_ID:elektryczne-gitary-jestem-z-miasta
+#ALLKARAOKE_SID:1463
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #ALLKARAOKE_REALBPM:126

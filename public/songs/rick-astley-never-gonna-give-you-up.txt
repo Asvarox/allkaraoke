@@ -8,6 +8,7 @@
 #GAP:17807,770266701875
 #EDITION:SingStar English
 #ALLKARAOKE_ID:rick-astley-never-gonna-give-you-up
+#ALLKARAOKE_SID:3647
 #ALLKARAOKE_LASTUPDATE:2025-02-18T06:32:23.918Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

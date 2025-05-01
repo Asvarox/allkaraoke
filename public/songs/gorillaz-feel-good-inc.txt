@@ -9,6 +9,7 @@
 #GAP:21743,270758122744
 #EDITION:SingStar Pop USA
 #ALLKARAOKE_ID:gorillaz-feel-good-inc
+#ALLKARAOKE_SID:1787
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136

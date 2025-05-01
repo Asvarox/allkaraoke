@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:38963,90625
 #ALLKARAOKE_ID:muse-uprising
+#ALLKARAOKE_SID:3090
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #ALLKARAOKE_REALBPM:129

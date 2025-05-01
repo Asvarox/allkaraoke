@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:141,11109876680393
 #ALLKARAOKE_ID:3-nen-e-gumi-utatan-jiriki-hongan-revolution
+#ALLKARAOKE_SID:15
 #ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:23.810Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei

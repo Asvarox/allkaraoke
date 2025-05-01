@@ -9,6 +9,7 @@
 #GAP:22241,22343409162
 #EDITION:Christmas
 #ALLKARAOKE_ID:michael-buble-its-beginning-to-look-a-lot-like-christmas
+#ALLKARAOKE_SID:2948
 #ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:15.018Z
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei

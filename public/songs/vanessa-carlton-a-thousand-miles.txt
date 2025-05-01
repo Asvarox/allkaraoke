@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:29595,15789473684
 #ALLKARAOKE_ID:vanessa-carlton-a-thousand-miles
+#ALLKARAOKE_SID:4624
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:96

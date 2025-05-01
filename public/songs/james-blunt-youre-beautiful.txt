@@ -9,6 +9,7 @@
 #GAP:14367,65
 #EDITION:SingStar Pop USA
 #ALLKARAOKE_ID:james-blunt-youre-beautiful
+#ALLKARAOKE_SID:2058
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:81

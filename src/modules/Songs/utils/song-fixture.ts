@@ -2,6 +2,7 @@ import { Song } from 'interfaces';
 
 export const mulitrack: Song = {
   id: 'multitrack',
+  shortId: 1,
   artist: 'E2ETest',
   artistOrigin: undefined,
   title: 'Multitrack',

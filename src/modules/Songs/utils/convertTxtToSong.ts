@@ -44,6 +44,7 @@ export const songTXTKeys = [
   'ARTISTORIGIN',
   'VIDEOID',
   'ALLKARAOKE_ID',
+  'ALLKARAOKE_SID',
   'ALLKARAOKE_LASTUPDATE',
   'ALLKARAOKE_VOLUME',
   'ALLKARAOKE_REALBPM',
@@ -162,6 +163,7 @@ export default function convertTxtToSong(
 
   const song: Song = {
     id: getPropertyValueFromTxt(text, ['ALLKARAOKE_ID', 'ID']) ?? getSongId({ title, artist }),
+    shortId: Number(getPropertyValueFromTxt(text, ['ALLKARAOKE_SID']) ?? -1),
     title,
     artist,
     video,

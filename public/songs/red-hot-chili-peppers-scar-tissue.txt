@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:11472
 #ALLKARAOKE_ID:red-hot-chili-peppers-scar-tissue
+#ALLKARAOKE_SID:3605
 #ALLKARAOKE_LASTUPDATE:2024-11-10T08:06:14.831Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

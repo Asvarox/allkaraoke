@@ -8,6 +8,7 @@
 #GAP:43400
 #EDITION:Christmas
 #ALLKARAOKE_ID:idina-menzel-with-michael-buble-baby-its-cold-outside
+#ALLKARAOKE_SID:1970
 #ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.556Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=116579
 #ALLKARAOKE_REALBPM:113

@@ -10,6 +10,7 @@
 #GAP:61550
 #EDITION:Rock Band 2
 #ALLKARAOKE_ID:tenacious-d-master-exploder
+#ALLKARAOKE_SID:4233
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:74

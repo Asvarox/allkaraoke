@@ -9,6 +9,7 @@
 #LANGUAGE:Portuguese
 #GAP:19182,65405687451
 #ALLKARAOKE_ID:barbara-bandeira-ft-dillaz-carro
+#ALLKARAOKE_SID:473
 #ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:44.148Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:115

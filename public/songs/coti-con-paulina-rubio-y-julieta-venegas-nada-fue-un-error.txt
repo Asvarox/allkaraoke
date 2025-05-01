@@ -9,6 +9,7 @@
 #LANGUAGE:Spanish
 #GAP:13525,41149292521
 #ALLKARAOKE_ID:coti-con-paulina-rubio-y-julieta-venegas-nada-fue-un-error
+#ALLKARAOKE_SID:1015
 #ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.558Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:139

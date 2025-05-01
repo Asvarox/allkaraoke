@@ -8,6 +8,7 @@
 #GAP:45200
 #EDITION:[SC]-Songs
 #ALLKARAOKE_ID:the-white-stripes-jolene
+#ALLKARAOKE_SID:4446
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #ALLKARAOKE_REALBPM:111

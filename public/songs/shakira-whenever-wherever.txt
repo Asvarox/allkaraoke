@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:15984,09219858156
 #ALLKARAOKE_ID:shakira-whenever-wherever
+#ALLKARAOKE_SID:3897
 #ALLKARAOKE_ARTISTORIGIN:CO
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:108

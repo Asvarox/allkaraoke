@@ -37,6 +37,7 @@ export default function convertSongToTxt(song: Song) {
     gap: toTxtValue('GAP', song.gap),
     edition: toTxtValue('EDITION', song.edition),
     id: toTxtValue('ALLKARAOKE_ID', song.id),
+    shortId: toTxtValue('ALLKARAOKE_SID', song.shortId),
     lastUpdate: toTxtValue('ALLKARAOKE_LASTUPDATE', song.lastUpdate),
     artistOrigin: toTxtValue('ALLKARAOKE_ARTISTORIGIN', song.artistOrigin),
     authorUrl: toTxtValue('ALLKARAOKE_CREATORURL', song.authorUrl),

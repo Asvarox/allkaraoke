@@ -8,6 +8,7 @@
 #LANGUAGE:Portuguese
 #GAP:2293,1639931474847
 #ALLKARAOKE_ID:barbara-bandeira-feat-carminho-onde-vais
+#ALLKARAOKE_SID:472
 #ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.042Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:140

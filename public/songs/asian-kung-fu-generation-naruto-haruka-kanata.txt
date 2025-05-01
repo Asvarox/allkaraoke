@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:27006,74418604651
 #ALLKARAOKE_ID:asian-kung-fu-generation-naruto-haruka-kanata
+#ALLKARAOKE_SID:358
 #ALLKARAOKE_LASTUPDATE:2024-11-17T00:12:51.662Z
 #ALLKARAOKE_REALBPM:175
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6332

@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:32718,095238095237
 #ALLKARAOKE_ID:shakira-ft-freshlyground-waka-waka-this-time-for-africa
+#ALLKARAOKE_SID:3884
 #ALLKARAOKE_LASTUPDATE:2024-12-08T15:07:40.845Z
 #ALLKARAOKE_ARTISTORIGIN:CO
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

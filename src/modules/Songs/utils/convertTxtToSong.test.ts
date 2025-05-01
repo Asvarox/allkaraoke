@@ -25,6 +25,7 @@ const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}, u
 
   return `
 #ID:${data?.id ?? 'IdTest'}
+#ALLKARAOKE_SID:${data?.shortId ?? 1}
 #ARTIST:${data?.artist ?? 'ArtistTest'}
 #TITLE:${data?.title ?? 'TitleTest'}
 #BPM:${data?.bpm ?? '60'}
@@ -49,6 +50,7 @@ const songStub = {
   artist: 'ArtistTest',
   title: 'TitleTest',
   id: 'IdTest',
+  shortId: 1,
   language: ['language'],
   bpm: 60,
   bar: 4,

@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:-174,5
 #ALLKARAOKE_ID:miku-hatsune-romeo-and-cinderella
+#ALLKARAOKE_SID:2996
 #ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:23.639Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=asdfer

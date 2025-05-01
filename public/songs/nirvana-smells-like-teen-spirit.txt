@@ -9,6 +9,7 @@
 #GAP:25629,29411764706
 #EDITION:SingStar Lgnds
 #ALLKARAOKE_ID:nirvana-smells-like-teen-spirit
+#ALLKARAOKE_SID:3240
 #ALLKARAOKE_LASTUPDATE:2024-08-06T16:26:24.975Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

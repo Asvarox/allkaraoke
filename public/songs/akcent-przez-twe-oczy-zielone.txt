@@ -7,6 +7,7 @@
 #LANGUAGE:Polish
 #GAP:52399,82138967545
 #ALLKARAOKE_ID:akcent-przez-twe-oczy-zielone
+#ALLKARAOKE_SID:138
 #ALLKARAOKE_ARTISTORIGIN:RO
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:138

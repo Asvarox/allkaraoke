@@ -9,6 +9,7 @@
 #GAP:37687
 #EDITION:SingStar '80s
 #ALLKARAOKE_ID:alice-cooper-poison
+#ALLKARAOKE_SID:183
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:117

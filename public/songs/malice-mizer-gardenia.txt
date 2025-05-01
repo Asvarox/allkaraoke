@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:33300
 #ALLKARAOKE_ID:malice-mizer-gardenia
+#ALLKARAOKE_SID:2738
 #ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.231Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=linxstrife

@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:15977,35294117647
 #ALLKARAOKE_ID:the-gregory-brothers-feat-takeo-ischi-chicken-attack
+#ALLKARAOKE_SID:4334
 #ALLKARAOKE_LASTUPDATE:2024-10-03T11:16:52.698Z
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=20732

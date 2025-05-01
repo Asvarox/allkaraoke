@@ -9,6 +9,7 @@
 #GAP:54891,67
 #EDITION:SingStar '80s
 #ALLKARAOKE_ID:europe-final-countdown
+#ALLKARAOKE_SID:1545
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:116

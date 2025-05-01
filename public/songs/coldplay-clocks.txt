@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:35480
 #ALLKARAOKE_ID:coldplay-clocks
+#ALLKARAOKE_SID:995
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #ALLKARAOKE_REALBPM:129

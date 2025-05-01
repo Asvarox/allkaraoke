@@ -7,6 +7,7 @@
 #LANGUAGE:Polish
 #GAP:27170
 #ALLKARAOKE_ID:brathanki-w-kinie-w-lublinie
+#ALLKARAOKE_SID:687
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:153

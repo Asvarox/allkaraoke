@@ -8,6 +8,7 @@
 #GAP:14563
 #EDITION:SingStar ABBA
 #ALLKARAOKE_ID:abba-mamma-mia
+#ALLKARAOKE_SID:57
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136

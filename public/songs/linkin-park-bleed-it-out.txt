@@ -10,6 +10,7 @@
 #GAP:9716,864554185888
 #EDITION:Guitar Hero Warriors of Rock
 #ALLKARAOKE_ID:linkin-park-bleed-it-out
+#ALLKARAOKE_SID:2574
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #ALLKARAOKE_REALBPM:144

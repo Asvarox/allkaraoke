@@ -9,6 +9,7 @@
 #GAP:2357,532756293179
 #EDITION:Christmas
 #ALLKARAOKE_ID:pointer-sisters-christmas-in-new-york
+#ALLKARAOKE_SID:3487
 #ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:24.730Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb

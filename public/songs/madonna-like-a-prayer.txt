@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:13324,278562488826
 #ALLKARAOKE_ID:madonna-like-a-prayer
+#ALLKARAOKE_SID:2713
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:112

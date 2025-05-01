@@ -10,6 +10,7 @@
 #GAP:49247,06
 #EDITION:SingStar '90s
 #ALLKARAOKE_ID:spice-girls-wannabe
+#ALLKARAOKE_SID:4044
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:110

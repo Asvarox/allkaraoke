@@ -9,6 +9,7 @@
 #GAP:23203,497753369946
 #EDITION:SingStar Party English
 #ALLKARAOKE_ID:cyndi-lauper-girls-just-wanna-have-fun
+#ALLKARAOKE_SID:1052
 #ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:22.228Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

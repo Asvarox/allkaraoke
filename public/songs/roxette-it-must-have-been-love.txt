@@ -9,6 +9,7 @@
 #GAP:16981,952853598013
 #EDITION:SingStar Rock Ballads
 #ALLKARAOKE_ID:roxette-it-must-have-been-love
+#ALLKARAOKE_SID:3732
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136

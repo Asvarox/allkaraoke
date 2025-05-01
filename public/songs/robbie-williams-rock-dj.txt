@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:8417,181129877694
 #ALLKARAOKE_ID:robbie-williams-rock-dj
+#ALLKARAOKE_SID:3699
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:103

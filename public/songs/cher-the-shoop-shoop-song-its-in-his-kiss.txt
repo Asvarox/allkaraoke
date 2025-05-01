@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:-290,7747562039166
 #ALLKARAOKE_ID:cher-the-shoop-shoop-song-its-in-his-kiss
+#ALLKARAOKE_SID:929
 #ALLKARAOKE_LASTUPDATE:2023-01-28T20:48:25.846Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=zxz

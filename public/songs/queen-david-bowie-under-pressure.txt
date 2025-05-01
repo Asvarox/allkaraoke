@@ -9,6 +9,7 @@
 #GAP:27493
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-david-bowie-under-pressure
+#ALLKARAOKE_SID:3529
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:114

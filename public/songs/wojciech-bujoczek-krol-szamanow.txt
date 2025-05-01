@@ -8,6 +8,7 @@
 #LANGUAGE:Polish
 #GAP:2941,195170624626
 #ALLKARAOKE_ID:wojciech-bujoczek-krol-szamanow
+#ALLKARAOKE_SID:4740
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w

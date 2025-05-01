@@ -10,6 +10,7 @@
 #GAP:46540
 #EDITION:Rock Band Europe
 #ALLKARAOKE_ID:muse-hysteria
+#ALLKARAOKE_SID:3078
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:92

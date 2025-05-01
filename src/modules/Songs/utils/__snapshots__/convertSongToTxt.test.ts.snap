@@ -9,6 +9,7 @@ exports[`convertSongToTxt > should properly convert the song 1`] = `
 #LANGUAGE:Polish
 #GAP:1000
 #ALLKARAOKE_ID:multitrack
+#ALLKARAOKE_SID:1
 #ALLKARAOKE_REALBPM:100
 #P2:test track 2
 #SOMEPROP: some value

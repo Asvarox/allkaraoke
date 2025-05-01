@@ -9,6 +9,7 @@
 #GAP:18372,85
 #EDITION:SingStar Queen
 #ALLKARAOKE_ID:queen-we-will-rock-you
+#ALLKARAOKE_SID:3550
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:81

@@ -8,6 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:15473,30620721483
 #ALLKARAOKE_ID:rin-kagamine-x-luka-megurine-drop-pop-candy
+#ALLKARAOKE_SID:3686
 #ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.211Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:130

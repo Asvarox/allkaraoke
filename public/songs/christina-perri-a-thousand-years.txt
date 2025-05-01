@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:19531,924754054773
 #ALLKARAOKE_ID:christina-perri-a-thousand-years
+#ALLKARAOKE_SID:970
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:73

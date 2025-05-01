@@ -45,6 +45,7 @@ export interface SingSetup {
 }
 
 export interface Song {
+  shortId: number;
   local?: boolean;
   lastUpdate: string | undefined;
   author: string | undefined;

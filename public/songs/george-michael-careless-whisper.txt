@@ -9,6 +9,7 @@
 #GAP:14024,324607329843
 #EDITION:SingStar
 #ALLKARAOKE_ID:george-michael-careless-whisper
+#ALLKARAOKE_SID:1717
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:77

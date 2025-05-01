@@ -9,6 +9,7 @@
 #GAP:13814,433962264151
 #EDITION:SingStar Rocks
 #ALLKARAOKE_ID:the-rolling-stones-paint-it-black
+#ALLKARAOKE_SID:4396
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
 #ALLKARAOKE_REALBPM:159

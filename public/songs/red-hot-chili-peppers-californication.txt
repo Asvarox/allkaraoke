@@ -9,6 +9,7 @@
 #GAP:22394,689900500078
 #EDITION:Rock Band Store 2011 Vol. 3
 #ALLKARAOKE_ID:red-hot-chili-peppers-californication
+#ALLKARAOKE_SID:3601
 #ALLKARAOKE_LASTUPDATE:2023-04-19T19:18:47.216Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

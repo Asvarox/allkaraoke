@@ -9,6 +9,7 @@
 #GAP:-454,76923076923094
 #EDITION:SingStar Latino
 #ALLKARAOKE_ID:aleks-syntek-y-ana-torroja-duele-el-amor
+#ALLKARAOKE_SID:173
 #ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.554Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:130

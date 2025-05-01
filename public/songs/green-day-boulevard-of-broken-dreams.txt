@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:36284,087803416245
 #ALLKARAOKE_ID:green-day-boulevard-of-broken-dreams
+#ALLKARAOKE_SID:1800
 #ALLKARAOKE_LASTUPDATE:2025-02-26T07:00:57.289Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

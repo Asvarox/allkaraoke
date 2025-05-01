@@ -9,6 +9,7 @@
 #GAP:11849,921113689095
 #EDITION:SingStar '80s
 #ALLKARAOKE_ID:billy-joel-uptown-girl
+#ALLKARAOKE_SID:566
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:129

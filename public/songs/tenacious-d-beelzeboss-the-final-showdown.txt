@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:29984,689766317486
 #ALLKARAOKE_ID:tenacious-d-beelzeboss-the-final-showdown
+#ALLKARAOKE_SID:4228
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
 #ALLKARAOKE_REALBPM:130

@@ -9,6 +9,7 @@
 #GAP:8723,758169934641
 #EDITION:SingStar '80s
 #ALLKARAOKE_ID:katrina-and-the-waves-walking-on-sunshine
+#ALLKARAOKE_SID:2297
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:108

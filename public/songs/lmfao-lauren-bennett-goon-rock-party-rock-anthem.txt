@@ -9,6 +9,7 @@
 #LANGUAGE:English
 #GAP:101814,30620721483
 #ALLKARAOKE_ID:lmfao-lauren-bennett-goon-rock-party-rock-anthem
+#ALLKARAOKE_SID:2625
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem

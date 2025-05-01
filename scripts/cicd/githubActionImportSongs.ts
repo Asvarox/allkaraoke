@@ -1,12 +1,15 @@
 import { execSync } from 'child_process';
 import dotenv from 'dotenv';
 import fs from 'fs';
+import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../../src/modules/Songs/utils/convertTxtToSong';
 
 dotenv.config({ path: '.env.local' });
 
 (async () => {
+  let maxId = currentSongs.reduce((acc, song) => Math.max(acc, song.shortId ?? 0), 0);
+
   const { requestPostHog } = require('../utils.cjs');
 
   const [userId, argDaysFrom = '', argDaysTo = ''] = process.argv.slice(2);
@@ -86,6 +89,7 @@ dotenv.config({ path: '.env.local' });
           song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
         } else {
           addedSongs.push(song.id);
+          song.shortId = ++maxId;
         }
         fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
         console.log(`Added/updated song ${song.id}`);

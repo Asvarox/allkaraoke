@@ -10,6 +10,7 @@
 #GAP:61549,02
 #EDITION:SingStar Anthem
 #ALLKARAOKE_ID:queen-radio-ga-ga
+#ALLKARAOKE_SID:3542
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112

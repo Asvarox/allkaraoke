@@ -8,6 +8,7 @@
 #GAP:2162,5
 #EDITION:SingStar SP
 #ALLKARAOKE_ID:rihanna-umbrella
+#ALLKARAOKE_SID:3681
 #ALLKARAOKE_ARTISTORIGIN:BB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:174

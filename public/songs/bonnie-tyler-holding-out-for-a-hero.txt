@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:32356,319839411175
 #ALLKARAOKE_ID:bonnie-tyler-holding-out-for-a-hero
+#ALLKARAOKE_SID:669
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #ALLKARAOKE_REALBPM:152

@@ -8,6 +8,7 @@
 #LANGUAGE:English
 #GAP:1528
 #ALLKARAOKE_ID:christina-aguilera-beautiful
+#ALLKARAOKE_SID:956
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:76

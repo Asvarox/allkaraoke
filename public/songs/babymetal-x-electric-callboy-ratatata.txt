@@ -6,6 +6,7 @@
 #LANGUAGE:English, Japanese
 #GAP:5794,31931575196
 #ALLKARAOKE_ID:babymetal-x-electric-callboy-ratatata
+#ALLKARAOKE_SID:435
 #ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:13.744Z
 #ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=profil&id=150321
 #ALLKARAOKE_REALBPM:140

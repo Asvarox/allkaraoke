@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #GAP:12857,800039208
 #ALLKARAOKE_ID:eric-clapton-tears-in-heaven
+#ALLKARAOKE_SID:1526
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:77

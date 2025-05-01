@@ -9,6 +9,7 @@
 #GAP:8249,272727272728
 #EDITION:SingStar Amped
 #ALLKARAOKE_ID:david-bowie-changes
+#ALLKARAOKE_SID:1119
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112

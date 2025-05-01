@@ -10,6 +10,7 @@
 #GAP:56600
 #EDITION:SingStar Rocks
 #ALLKARAOKE_ID:deep-purple-smoke-on-the-water
+#ALLKARAOKE_SID:1160
 #ALLKARAOKE_LASTUPDATE:2025-01-11T12:08:49.586Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
