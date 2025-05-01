@@ -29,8 +29,8 @@ function ManageSongs() {
           <SmoothLink to="edit/list/">
             <MenuButton {...register('edit-songs', () => navigate('edit/list/'))}>Edit songs</MenuButton>
           </SmoothLink>
-          <SmoothLink to="edit/setlists/">
-            <MenuButton {...register('edit-setlists', () => navigate('edit/setlists/'))}>Manage setlists</MenuButton>
+          <SmoothLink to="edit/setlists">
+            <MenuButton {...register('edit-setlists', () => navigate('edit/setlists'))}>Manage setlists</MenuButton>
           </SmoothLink>
           <SmoothLink to="convert/">
             <MenuButton {...register('convert-song', () => navigate('convert/'))}>Convert UltraStar .txt</MenuButton>
