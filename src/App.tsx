@@ -29,6 +29,7 @@ import Welcome from 'routes/Welcome/Welcome';
 const LazySongList = lazy(() =>
   import('routes/ManageSongs/SongManagement').then((modules) => ({ default: modules.SongList })),
 );
+const LazySetlist = lazy(() => import('routes/Edit/Setlists').then((modules) => ({ default: modules.default })));
 
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
@@ -83,6 +84,14 @@ function App() {
                 <Route path={routePaths.EDIT_SONG}>
                   <Edit />
                 </Route>
+                <Route
+                  path={routePaths.EDIT_SETLISTS}
+                  component={() => (
+                    <Suspense fallback={<PageLoader />}>
+                      <LazySetlist />
+                    </Suspense>
+                  )}
+                />
                 <Route path={routePaths.INDEX} component={LandingPage} />
               </Switch>
             </Router>

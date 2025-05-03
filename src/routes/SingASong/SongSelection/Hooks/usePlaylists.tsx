@@ -6,6 +6,7 @@ import { List } from '@mui/icons-material';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
 import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
 import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
+import { useSetlist } from 'modules/Songs/hooks/useSetlist';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
@@ -27,6 +28,7 @@ export interface PlaylistEntry {
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
+  const { isSetlistInPlace } = useSetlist();
   const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Eurovision);
   const songLanguages = useLanguageList(songs);
   const remoteSongList = useRemoteMicSongList();
@@ -66,9 +68,9 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
 
     const all: PlaylistEntry = { name: 'All', filters: {} };
     const playlists: Array<PlaylistEntry | null> = [
-      selection,
+      !isSetlistInPlace ? selection : null, // makes "all" playlist the first one if a setlist is loaded
       all,
-      isSpecialThemeEnabled ? eurovisionPlaylist : null,
+      !isSetlistInPlace && isSpecialThemeEnabled ? eurovisionPlaylist : null,
       // {
       //   name: 'Halloween',
       //   display: (
@@ -92,10 +94,12 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
           }
         : null,
       { name: 'Duets', filters: { duet: true } },
-      {
-        name: 'New',
-        filters: { recentlyUpdated: true },
-      },
+      !isSetlistInPlace
+        ? {
+            name: 'New',
+            filters: { recentlyUpdated: true },
+          }
+        : null,
       connected.length > 0
         ? {
             name: 'remote-mics',

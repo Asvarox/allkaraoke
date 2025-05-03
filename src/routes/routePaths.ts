@@ -20,6 +20,7 @@ const routePaths = {
   CONVERT: 'convert',
   EDIT_SONGS_LIST: 'edit/list',
   EDIT_SONG: 'edit/song',
+  EDIT_SETLISTS: 'edit/setlists',
 } as const;
 
 export default routePaths;

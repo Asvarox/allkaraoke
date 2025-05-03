@@ -3,11 +3,13 @@ import MenuWithLogo from 'modules/Elements/MenuWithLogo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
+import { useSetlist } from 'modules/Songs/hooks/useSetlist';
 import { Helmet } from 'react-helmet';
 
 function ManageSongs() {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu/');
+  const setlist = useSetlist();
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
@@ -22,12 +24,19 @@ function ManageSongs() {
           Select Song Languages
         </MenuButton>
       </SmoothLink>
-      <SmoothLink to="edit/list/">
-        <MenuButton {...register('edit-songs', () => navigate('edit/list/'))}>Edit songs</MenuButton>
-      </SmoothLink>
-      <SmoothLink to="convert/">
-        <MenuButton {...register('convert-song', () => navigate('convert/'))}>Convert UltraStar .txt</MenuButton>
-      </SmoothLink>
+      {setlist.isEditable && (
+        <>
+          <SmoothLink to="edit/list/">
+            <MenuButton {...register('edit-songs', () => navigate('edit/list/'))}>Edit songs</MenuButton>
+          </SmoothLink>
+          <SmoothLink to="edit/setlists">
+            <MenuButton {...register('edit-setlists', () => navigate('edit/setlists'))}>Manage setlists</MenuButton>
+          </SmoothLink>
+          <SmoothLink to="convert/">
+            <MenuButton {...register('convert-song', () => navigate('convert/'))}>Convert UltraStar .txt</MenuButton>
+          </SmoothLink>
+        </>
+      )}
       <hr />
       <SmoothLink to="menu/">
         <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
