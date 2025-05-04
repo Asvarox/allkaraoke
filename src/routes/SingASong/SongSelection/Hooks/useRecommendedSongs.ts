@@ -27,7 +27,7 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
       sungSongs.value![song].scores.some((score) => (score.progress ?? 0) > 0.8),
     );
 
-    const popularSongLanguages = Object.keys(popularSongs.value!).filter(
+    const popularSongLanguages = Object.keys(popularSongs.value ?? {}).filter(
       (language) => !excludedLanguages?.includes(language),
     );
     // get the list of languages that we don't want to include in the first run:
