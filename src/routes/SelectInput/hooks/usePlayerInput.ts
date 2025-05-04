@@ -1,4 +1,4 @@
-import { nextIndex, nextValue } from 'modules/Elements/Switcher';
+import { nextIndex, nextValue } from 'modules/Elements/Utils/indexes';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from 'modules/GameEvents/hooks';
 import PlayersManager from 'modules/Players/PlayersManager';

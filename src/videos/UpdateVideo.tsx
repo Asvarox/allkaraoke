@@ -62,6 +62,7 @@ const dateFormat = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'sh
 
 const msToFps = (ms: number) => (ms / 1000) * 30;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const getUpdateVideoLength = () =>
   120 + getNewSongsSequenceLength(data.newSongs) - 30 + getUpdatesSequenceLength(data.updates) + 120;
 

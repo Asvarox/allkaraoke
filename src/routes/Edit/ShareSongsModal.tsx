@@ -12,8 +12,10 @@ interface Props {
 }
 
 const SHARE_SONGS_KEY = 'share-songs';
+// eslint-disable-next-line react-refresh/only-export-components
 export const useShareSongs = createPersistedState<boolean | null>(SHARE_SONGS_KEY);
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const shareSong = async (id: string) => {
   try {
     const isShareEnabled = storage.getItem(SHARE_SONGS_KEY);

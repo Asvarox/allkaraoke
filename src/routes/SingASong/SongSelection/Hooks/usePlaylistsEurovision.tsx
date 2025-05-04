@@ -66,6 +66,7 @@ const SFlag = styled(Flag)`
   object-fit: contain;
 `;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const eurovisionPlaylist: PlaylistEntry = {
   name: 'Eurovision',
   display: (

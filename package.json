@@ -141,6 +141,7 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-compiler": "19.0.0-beta-714736e-20250131",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "express": "^4.21.2",
     "happy-dom": "^16.7.3",
     "html-minifier-terser": "^7.2.0",

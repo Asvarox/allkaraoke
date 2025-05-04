@@ -1,7 +1,7 @@
 import { Alert, AlertTitle, Button, Grid, Paper, Step, StepButton, StyledEngineProvider } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { Song } from 'interfaces';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import SongDao from 'modules/Songs/SongsService';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';

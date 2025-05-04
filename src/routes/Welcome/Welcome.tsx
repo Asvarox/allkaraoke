@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import { typography } from 'modules/Elements/cssMixins';

@@ -20,6 +20,7 @@ import { flexCenter, flexVertical } from 'videos/support/cssMixins';
 const SONG_PRESENTATION_FRAMES = 70;
 const TITLE_PRESENTATION_FRAMES = SONG_PRESENTATION_FRAMES;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const getNewSongsSequenceLength = (_songs: SongPreview[]) =>
   9 * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
 

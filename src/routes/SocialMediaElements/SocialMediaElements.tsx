@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import { EurovisionTheme, useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
+import { EurovisionTheme } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import LayoutGame from 'routes/LayoutGame';

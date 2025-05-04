@@ -16,7 +16,7 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoP
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
-import { FPSCountSetting, InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
 import GameState from '../../../modules/GameEngine/GameState/GameState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
@@ -57,34 +57,6 @@ function usePlayerSetDuration(playerRef: RefObject<VideoPlayerRef | null>, curre
 
   return duration;
 }
-
-export const useVideoPlayer = (
-  playerRef: RefObject<VideoPlayerRef | null>,
-  onTimeUpdate?: (timeMs: milliseconds) => void,
-) => {
-  const [currentTime, setCurrentTime] = useState(0);
-  const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
-  const [inputLag] = useSettingValue(InputLagSetting);
-
-  useEffect(() => {
-    if (!playerRef.current) {
-      return;
-    }
-    if (currentStatus === VideoState.PLAYING) {
-      const interval = setInterval(async () => {
-        if (!playerRef.current) return;
-
-        const time = Math.max(0, (await playerRef.current.getCurrentTime()) * 1000 - inputLag);
-        setCurrentTime(time);
-        onTimeUpdate?.(time);
-      }, 1000 / FPSCountSetting.get());
-
-      return () => clearInterval(interval);
-    }
-  }, [playerRef, currentStatus, inputLag]);
-
-  return [currentStatus, setCurrentStatus, currentTime] as const;
-};
 
 function Player({
   song,

@@ -1,7 +1,7 @@
 import { ButtonLink } from 'modules/Elements/AKUI/Button';
 import Box from 'modules/Elements/AKUI/Primitives/Box';
 import Text from 'modules/Elements/AKUI/Primitives/Text';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import Logo from 'modules/Elements/Logo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
@@ -16,7 +16,7 @@ import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import songStats from './songStats.json';
 
-export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
+const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
 
 function LandingPage() {
   const navigate = useSmoothNavigate();

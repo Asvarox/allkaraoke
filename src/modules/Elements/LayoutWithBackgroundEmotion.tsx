@@ -1,30 +1,12 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { BackgroundContext } from './BackgroundContext';
 import eurovisionBg from './eurovisionbg.svg';
 
 export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'halloween';
-
-export const BackgroundContext = createContext({
-  visible: true,
-  theme: 'regular' as backgroundTheme,
-  setVisibility: (_visible: boolean): void => undefined,
-  setTheme: (_theme: backgroundTheme): void => undefined,
-});
-
-export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme = 'regular') => {
-  const { setVisibility, setTheme } = useContext(BackgroundContext);
-
-  useEffect(() => {
-    setVisibility(shouldBeVisible);
-  }, [shouldBeVisible, setVisibility]);
-
-  useEffect(() => {
-    setTheme(theme);
-  }, [theme, setTheme]);
-};
 
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);

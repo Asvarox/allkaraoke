@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
-import { BackgroundContext, useBackground } from 'modules/Elements/LayoutWithBackground';
+import { BackgroundContext, useBackground } from 'modules/Elements/BackgroundContext';
 import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';

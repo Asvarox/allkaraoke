@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { nextValue, Switcher } from 'modules/Elements/Switcher';
+import { Switcher } from 'modules/Elements/Switcher';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from 'modules/GameEvents/hooks';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
@@ -18,6 +18,7 @@ import {
   useSettingValue,
 } from 'routes/Settings/SettingsState';
 
+import { nextValue } from 'modules/Elements/Utils/indexes';
 import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
 import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
 

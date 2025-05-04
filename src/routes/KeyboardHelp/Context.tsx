@@ -3,7 +3,8 @@ import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
 import ConnectionStatus from 'modules/RemoteMic/ConnectionStatus';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
+import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
+import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
 import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR' | 'alphanumeric';
@@ -12,12 +13,6 @@ type remoteActions = 'search' | 'select-song';
 
 export type RegularHelpEntry = Partial<Record<keys, string | null>>;
 export type HelpEntry = RegularHelpEntry & { remote?: remoteActions[] };
-
-export const KeyboardHelpContext = createContext({
-  setKeyboard: (_name: string, _helpEntry: HelpEntry): void => {},
-  unsetKeyboard: (_name: string): void => {},
-  hasContent: false,
-});
 
 type KeyboardsList = Record<string, HelpEntry>;
 
@@ -54,10 +49,10 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
   const hasContent = !!Object.values(rest).length;
 
   return (
-    <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard, hasContent }}>
+    <KeyboardHelpContext value={{ setKeyboard, unsetKeyboard, hasContent }}>
       {children}
       <KeyboardHelpView help={rest} />
       <ConnectionStatus />
-    </KeyboardHelpContext.Provider>
+    </KeyboardHelpContext>
   );
 };

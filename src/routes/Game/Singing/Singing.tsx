@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { Calibration } from 'modules/Calibration/Calibration';
 import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import Modal from 'modules/Elements/Modal';
 import { VideoState } from 'modules/Elements/VideoPlayer';
 import GameState from 'modules/GameEngine/GameState/GameState';

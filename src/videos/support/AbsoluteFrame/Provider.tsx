@@ -1,6 +1,7 @@
 import { createContext, PropsWithChildren } from 'react';
 import { useCurrentFrame } from 'remotion';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const AbsoluteFrameContext = createContext({
   frame: 0,
 });

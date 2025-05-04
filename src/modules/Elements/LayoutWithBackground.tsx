@@ -1,33 +1,15 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { EurovisionBackground } from 'modules/Elements/Background/Eurovision';
+import { BackgroundContext as BackgroundContext1 } from 'modules/Elements/BackgroundContext';
 import Snow from 'modules/Elements/Snow';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import React, { createContext, CSSProperties, useContext, useEffect, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import eurovisionBg from './eurovisionbg.svg';
 
 export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'halloween';
-
-export const BackgroundContext = createContext({
-  visible: true,
-  theme: 'regular' as backgroundTheme,
-  setVisibility: (_visible: boolean): void => undefined,
-  setTheme: (_theme: backgroundTheme): void => undefined,
-});
-
-export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme = 'regular') => {
-  const { setVisibility, setTheme } = useContext(BackgroundContext);
-
-  useEffect(() => {
-    setVisibility(shouldBeVisible);
-  }, [shouldBeVisible, setVisibility]);
-
-  useEffect(() => {
-    setTheme(theme);
-  }, [theme, setTheme]);
-};
 
 const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: CSSProperties } = {
   default: {
@@ -50,7 +32,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   const [graphicLevel] = useSettingValue(GraphicSetting);
 
   return (
-    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
+    <BackgroundContext1 value={{ visible, setVisibility: setVisible, setTheme, theme }}>
       {visible && (
         <div className="fixed z-[-1]">
           {theme === 'eurovision' && <EurovisionBackground />}
@@ -72,7 +54,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
         </div>
       )}
       {children}
-    </BackgroundContext.Provider>
+    </BackgroundContext1>
   );
 }
 

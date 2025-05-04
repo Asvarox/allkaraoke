@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import { switchToTheme } from 'modules/GameEngine/Drawing/styles';
 import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';

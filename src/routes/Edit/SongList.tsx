@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
 import { Button, FormControlLabel, Grid, IconButton, Switch } from '@mui/material';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import NoPrerender from 'modules/Elements/NoPrerender';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import SongDao from 'modules/Songs/SongsService';

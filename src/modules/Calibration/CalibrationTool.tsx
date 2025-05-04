@@ -2,7 +2,8 @@ import Text from 'modules/Elements/AKUI/Primitives/Text';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import { useEffect, useRef, useState } from 'react';
 import { useMeasure } from 'react-use';
-import { useVideoPlayer } from 'routes/Game/Singing/Player';
+
+import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
 
 export const CalibrationTool = () => {
   const [playerContainer, { width }] = useMeasure<HTMLDivElement>();

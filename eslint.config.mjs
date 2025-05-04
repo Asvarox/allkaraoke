@@ -4,6 +4,7 @@ import js from '@eslint/js';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import reactPlugin from 'eslint-plugin-react';
 import pluginReactCompiler from 'eslint-plugin-react-compiler';
+import reactRefresh from 'eslint-plugin-react-refresh';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import typescriptPlugin from 'typescript-eslint';
@@ -17,6 +18,7 @@ const compat = new FlatCompat({
 });
 
 export default [
+  reactRefresh.configs.vite,
   {
     linterOptions: {
       reportUnusedDisableDirectives: 'error',

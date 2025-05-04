@@ -1,5 +1,4 @@
 import dotparty from 'modules/Elements/dotparty.gif';
-import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
 import logoMp4 from 'modules/Elements/logo.mp4';
 import logoWebm from 'modules/Elements/logo.webm';
 import pride from 'modules/Elements/pride.png';
@@ -11,6 +10,7 @@ import { ComponentProps, useContext } from 'react';
 import { twc } from 'react-twc';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
+import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { EurovisionLogo } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
 

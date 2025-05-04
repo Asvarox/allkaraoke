@@ -1,4 +1,4 @@
-import { ErrorBoundary, withProfiler } from '@sentry/react';
+import { ErrorBoundary } from '@sentry/react';
 import { KeyboardHelpProvider } from 'routes/KeyboardHelp/Context';
 import RemoteMic from 'routes/RemoteMic/RemoteMic';
 import Settings from 'routes/Settings/Settings';
@@ -102,4 +102,4 @@ function App() {
   );
 }
 
-export default withProfiler(App);
+export default App;

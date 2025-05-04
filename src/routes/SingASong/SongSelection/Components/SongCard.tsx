@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
 import Box from 'modules/Elements/AKUI/Primitives/Box';
+import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import { typography } from 'modules/Elements/cssMixins';
-import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
 import { ComponentProps, ReactNode, use, useCallback } from 'react';

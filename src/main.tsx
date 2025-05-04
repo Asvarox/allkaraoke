@@ -8,7 +8,13 @@ import 'modules/utils/wdyr';
 
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import { browserTracingIntegration, init, setUser, thirdPartyErrorFilterIntegration } from '@sentry/react';
+import {
+  browserTracingIntegration,
+  init,
+  setUser,
+  thirdPartyErrorFilterIntegration,
+  withProfiler,
+} from '@sentry/react';
 import App from 'App';
 import 'index.css';
 import NoPrerender from 'modules/Elements/NoPrerender';
@@ -107,11 +113,13 @@ const LazyToastContainer = lazy(() =>
   import('react-toastify').then(({ ToastContainer }) => ({ default: ToastContainer })),
 );
 
+const AppWithProfiler = withProfiler(App);
+
 root.render(
   <StrictMode>
     <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
       <CacheProvider value={emotionCache}>
-        <App />
+        <AppWithProfiler />
         <NoPrerender>
           <Suspense>
             <LazyToastContainer position="bottom-left" theme={'colored'} limit={3} />

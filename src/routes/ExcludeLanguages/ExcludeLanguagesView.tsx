@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
-import { SongPreview } from 'interfaces';
 import { Flag } from 'modules/Elements/Flag';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
+import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import isE2E from 'modules/utils/isE2E';
@@ -12,30 +12,6 @@ import languageNameToIsoCode from 'modules/utils/languageNameToIsoCode';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
 import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
-
-export const useLanguageList = (list: Pick<SongPreview, 'language'>[]) => {
-  return useMemo(() => {
-    const langs: Record<string, { name: string; count: number }> = {};
-
-    list.forEach((song) => {
-      if (!song.language) return;
-      const songLangs = Array.isArray(song.language) ? song.language : [song.language];
-
-      songLangs.forEach((lang) => {
-        const langId = lang.toLowerCase();
-        if (!langs[langId]) {
-          langs[langId] = { name: lang, count: 0 };
-        }
-        langs[langId].count = langs[langId].count + 1;
-      });
-    });
-
-    const languages = Object.values(langs);
-    languages.sort((a, b) => b.count - a.count);
-
-    return languages;
-  }, [list]);
-};
 
 interface Props {
   onClose: () => void;

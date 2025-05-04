@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import { Button } from 'modules/Elements/Button';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import NoPrerender from 'modules/Elements/NoPrerender';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import VideoPlayer, { VideoState } from 'modules/Elements/VideoPlayer';

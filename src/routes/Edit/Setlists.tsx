@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { LockOpen, LockOutlined } from '@mui/icons-material';
 import { Button, Grid } from '@mui/material';
-import { useBackground } from 'modules/Elements/LayoutWithBackground';
+import { useBackground } from 'modules/Elements/BackgroundContext';
 import NoPrerender from 'modules/Elements/NoPrerender';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';

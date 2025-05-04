@@ -13,12 +13,12 @@ import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import { NetworkSongListMessage } from 'modules/RemoteMic/Network/messages';
 import SongDao from 'modules/Songs/SongsService';
+import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import isE2E from 'modules/utils/isE2E';
 import { ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { twc } from 'react-twc';
-import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import LanguageFilter from 'routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
 import { useMySongList } from 'routes/RemoteMic/Panels/RemoteSongList/useMySongList';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
@@ -36,9 +36,9 @@ interface Props {
   monitoringStarted: boolean;
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
-export const useExcludedLanguages = createPersistedState<string[]>('remote-mic-excluded-languages');
-export const useSelectedList = createPersistedState<'list' | 'queue'>('remote-mic-selected-song-list');
-export const useSearchState = createPersistedState<string>('remote-mic-song-list-search');
+const useExcludedLanguages = createPersistedState<string[]>('remote-mic-excluded-languages');
+const useSelectedList = createPersistedState<'list' | 'queue'>('remote-mic-selected-song-list');
+const useSearchState = createPersistedState<string>('remote-mic-song-list-search');
 
 const getMainArtistName = (artist: string) => artist.split(' feat')[0];
 const isArtistPresent = (a: string, b: string[]) => b.some((artist) => artist.toLowerCase() === a.toLowerCase());

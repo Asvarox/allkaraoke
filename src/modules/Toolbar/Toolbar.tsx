@@ -5,7 +5,7 @@ import { Tooltip } from 'modules/Elements/Tooltip';
 import FullscreenButton from 'modules/Toolbar/Fullscreen';
 import QRCodeModal from 'modules/Toolbar/QRCodeModal';
 import { useContext, useState } from 'react';
-import { KeyboardHelpContext } from 'routes/KeyboardHelp/Context';
+import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
 import { KeyboardHelpVisibilitySetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 function Toolbar() {

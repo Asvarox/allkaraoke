@@ -1,18 +1,10 @@
 import { seconds } from 'interfaces';
+import { VideoState } from 'modules/Elements/VideoPlayer/VideoState';
 import usePlayerVolume from 'modules/hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from 'modules/hooks/useUnstuckYouTubePlayer';
 import { ForwardedRef, forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
-
-export enum VideoState {
-  UNSTARTED = 'UNSTARTED',
-  ENDED = 'ENDED',
-  PLAYING = 'PLAYING',
-  PAUSED = 'PAUSED',
-  BUFFERING = 'BUFFERING',
-  CUED = 'CUED',
-}
 
 const stateMap = {
   [YouTube.PlayerState.UNSTARTED]: VideoState.UNSTARTED,

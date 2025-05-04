@@ -9,8 +9,9 @@ import {
   useState,
 } from 'react';
 
+import { VideoState } from 'modules/Elements/VideoPlayer/VideoState';
 import sleep from 'modules/utils/sleep';
-import Youtube, { VideoPlayerRef, VideoState } from './Youtube';
+import Youtube, { VideoPlayerRef } from './Youtube';
 
 type Props = ComponentProps<typeof Youtube>;
 

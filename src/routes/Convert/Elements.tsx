@@ -5,6 +5,7 @@ import { twc } from 'react-twc';
 
 export const Pre = twc.span`font-mono`;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const inputAction = (action: ComponentProps<typeof Button>['onClick'], enabled: boolean, label = 'Lookup') => ({
   InputProps: {
     endAdornment: (

@@ -11,6 +11,7 @@ export interface UpdateEntry {
   description: React.ReactNode;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const getUpdatesSequenceLength = (updates: UpdateEntry[]) =>
   updates.length * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
 

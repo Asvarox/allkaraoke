@@ -3,7 +3,8 @@ import { Flag } from 'modules/Elements/Flag';
 import Modal from 'modules/Elements/Modal';
 import isE2E from 'modules/utils/isE2E';
 import { useState } from 'react';
-import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
+
+import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
 
 interface Props {
   excludedLanguages: string[];

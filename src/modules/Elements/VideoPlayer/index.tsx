@@ -15,5 +15,5 @@ const VideoPlayer = forwardRef(
 
 export default VideoPlayer;
 
-export { VideoState } from './Youtube';
+export { VideoState } from 'modules/Elements/VideoPlayer/VideoState';
 export type { VideoPlayerRef } from './Youtube';

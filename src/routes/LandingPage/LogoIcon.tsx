@@ -1,4 +1,4 @@
-import { BackgroundContext } from 'modules/Elements/LayoutWithBackground';
+import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
 import { HTMLProps, useContext } from 'react';
 import { twc } from 'react-twc';
