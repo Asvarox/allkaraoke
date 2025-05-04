@@ -95,15 +95,23 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
                 <span>
                   {section?.notes.map((note) => {
                     const fill = Math.max(0, Math.min(2, (currentBeat - note.start) / note.length));
+
+                    const pop = Math.min(1, Math.ceil(fill));
+
                     return (
                       <LyricContainer type={note.type} key={note.start}>
                         <LyricActiveContainer>
-                          <LyricActive fill={fill} color={playerColor}>
-                            {note.lyrics.trim()}
-                          </LyricActive>
-                          {note.lyrics.endsWith(' ') && ' '}
+                          <LyricPop pop={pop}>
+                            <LyricActive fill={fill} color={playerColor}>
+                              {note.lyrics.trim()}
+                            </LyricActive>
+                            {note.lyrics.endsWith(' ') && <>&nbsp;</>}
+                          </LyricPop>
                         </LyricActiveContainer>
-                        {note.lyrics}
+                        <LyricPop pop={pop}>
+                          {note.lyrics.trim()}
+                          {note.lyrics.endsWith(' ') && <>&nbsp;</>}
+                        </LyricPop>
                       </LyricContainer>
                     );
                   })}
@@ -236,6 +244,22 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
 
 const LyricContainer = styled.span<{ type: Note['type'] }>`
   font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
+`;
+
+const LyricPop = styled.span<{ pop: number }>`
+  @keyframes pop {
+    100% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(1.15);
+    }
+    0% {
+      transform: scale(1);
+    }
+  }
+  ${(props) => (props.pop === 1 ? `animation: pop 500ms ease-in-out 1 both;` : ``)}
+  display: inline-block;
 `;
 
 const LyricActiveContainer = styled.span`
