@@ -3,7 +3,6 @@ import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCo
 import { Badge } from 'modules/Elements/Badge';
 import { MenuButton } from 'modules/Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
-import SmoothLink from 'modules/Elements/SmoothLink';
 import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
@@ -117,16 +116,9 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         </PlayersNumber>
       </Option>
       <hr />
-      <SmoothLink
-        to="menu/"
-        onClick={(e) => {
-          e?.preventDefault();
-          onPreferenceSelected('skip');
-        }}>
-        <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
-          {skipText || 'Skip'}
-        </MenuButton>
-      </SmoothLink>
+      <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
+        {skipText || 'Skip'}
+      </MenuButton>
     </>
   );
 }

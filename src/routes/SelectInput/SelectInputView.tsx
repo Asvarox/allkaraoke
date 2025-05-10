@@ -45,15 +45,15 @@ function SelectInputView({ onFinish, closeButtonText, onBack, skipText, smooth =
     };
   }, []);
 
-  const storePreference = (...args: Parameters<typeof setPreference>) => {
-    if (smooth) {
+  const storePreference = (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => {
+    if (smooth && preference !== 'skip') {
       startViewTransition(() => {
         flushSync(() => {
-          setPreference(...args);
+          setPreference(preference);
         });
       });
     } else {
-      setPreference(...args);
+      setPreference(preference);
     }
   };
 
