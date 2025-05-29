@@ -86,7 +86,7 @@ module.exports = {
       },
       animation: {
         blink: 'blink 1050ms ease-in-out infinite both',
-        calibrationPulse: 'calibrationPulse 1.5s ease 1',
+        'calibrate-pulse': 'calibrationPulse 1.5s ease 1',
         gradient: 'gradient 15s ease infinite',
         focused: 'focused 1000ms ease-in-out infinite both',
         'button-focused': 'buttonFocused 600ms ease-in-out infinite both',
