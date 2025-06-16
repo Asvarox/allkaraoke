@@ -38,6 +38,9 @@ jobs:
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.reports == 'true'
         run: npx playwright merge-reports --reporter html ./all-blob-reports
+      - name: Copy resources # for some reason, the resources are not copied automatically
+        if: steps.reports_check.outputs.reports == 'true'
+        run: cp -r ./all-blob-reports/resources ./playwright-report/resources
       - uses: actions/upload-artifact@v4
         if: steps.reports_check.outputs.reports == 'true'
         with:
