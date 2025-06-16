@@ -30,6 +30,11 @@ jobs:
             echo "reports=true" >> $GITHUB_OUTPUT
           fi
 
+      - uses: actions/upload-artifact@v4
+        if: steps.reports_check.outputs.reports == 'true'
+        with:
+          name: test-results-blob-report
+          path: ./all-blob-reports
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.reports == 'true'
         run: npx playwright merge-reports --reporter html ./all-blob-reports
