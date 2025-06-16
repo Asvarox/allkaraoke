@@ -34,14 +34,16 @@ class SongsService {
   private defaultIndex: SongPreview[] | null = null;
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
-  public store = async (song: Song) => {
+  public store = async (song: Song, reloadIndex = true) => {
     await (
       await getStorage()
     )?.setItem(this.generateSongFile(song), {
       ...song,
       lastUpdate: new Date().toISOString(),
     });
-    await this.reloadIndex();
+    if (reloadIndex) {
+      await this.reloadIndex();
+    }
   };
 
   /**

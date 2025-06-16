@@ -20,7 +20,6 @@ const importSongsFromPostHog = async () => {
   }
   from = new Date(from).toISOString();
 
-  storage.local.setItem('posthog_from', new Date().toISOString());
   const makeRequest = async (url: string, options: RequestInit) => {
     const response = await fetch(url, {
       ...options,
@@ -37,18 +36,25 @@ const importSongsFromPostHog = async () => {
     return response.json();
   };
 
+  let lastSongAdd: number = 0;
+
   await importSongsFromPostHogBase(
     makeRequest,
     await SongsService.getIndex(true),
     [],
-    async (song: Song) => {
-      return SongsService.store(song);
+    async (song: Song, createdAt) => {
+      await SongsService.store(song, false);
+      const createdAtTime = new Date(createdAt).getTime();
+      if (createdAtTime > lastSongAdd) {
+        lastSongAdd = createdAtTime;
+      }
     },
     async (songId: string) => {
       return SongsService.deleteSong(songId);
     },
     from,
   );
+  storage.local.setItem('posthog_from', new Date(lastSongAdd).toISOString());
 };
 
 export default importSongsFromPostHog;

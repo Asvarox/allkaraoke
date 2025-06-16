@@ -48,7 +48,7 @@ export const importSongsFromPostHogBase = async (
   mkRequest: RequestFunc,
   currentSongs: SongPreview[],
   fetchedSongIds: string[],
-  onSongAdded: (song: Song) => Promise<void>,
+  onSongAdded: (song: Song, createdAt: string) => Promise<void>,
   onSongRemoved: (songId: string) => Promise<void>,
   from?: string,
 ) => {
@@ -74,7 +74,7 @@ export const importSongsFromPostHogBase = async (
 
   const songsAdded: string[] = [];
 
-  for (const [songTxt, songId] of sharedSongs.results as Array<[string, string]>) {
+  for (const [songTxt, songId, createdAt] of sharedSongs.results as Array<[string, string, string]>) {
     try {
       if (!songTxt && songId && songsAdded.includes(songId)) {
         await onSongRemoved(songId);
@@ -99,7 +99,7 @@ export const importSongsFromPostHogBase = async (
       } else {
         song.lastUpdate = new Date().toISOString();
         songsAdded.push(song.id);
-        await onSongAdded(song);
+        await onSongAdded(song, createdAt);
         console.log(`Added song ${song.id}`);
       }
     } catch (e) {
