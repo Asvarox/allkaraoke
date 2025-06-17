@@ -1,0 +1,223 @@
+#ARTIST:Nirvana
+#TITLE:About A Girl
+#BPM:140
+#YEAR:1989
+#VIDEO:v=JIx2H-plXdU
+#GENRE:Grunge
+#LANGUAGE:English
+#GAP:13999,714285714286
+#ALLKARAOKE_ID:nirvana-about-a-girl
+#ALLKARAOKE_SID:4806
+#ALLKARAOKE_LASTUPDATE:2025-06-17T00:13:24.715Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Nirvana - About A Girl.mp3
+#COVER:Nirvana - About A Girl.jpg
+#BACKGROUND:Nirvana - About A Girl [BG].jpg
+: 9 1 -1 -
+: 11 2 -1 I 
+: 17 1 2 need 
+: 19 3 4 an 
+: 25 1 7 ea
+: 28 2 9 sy 
+: 32 4 7 friend
+- 36
+: 39 1 -1 I 
+: 43 6 -1 do... 
+: 52 1 2 with 
+: 54 3 4 an 
+: 60 1 7 ear 
+: 63 3 9 to 
+: 67 3 7 lend
+- 70
+: 73 2 -1 I 
+: 77 6 -1 do... 
+: 86 1 2 think 
+: 88 3 4 you 
+: 95 1 7 fit 
+: 97 2 9 this 
+: 101 4 7 shoe
+- 105
+: 108 1 -1 I 
+: 112 6 -1 do... 
+: 121 1 2 but 
+: 123 3 4 you 
+: 129 1 7 have 
+: 132 2 9 a 
+: 136 5 7 clue
+- 141 142
+- 142
+: 151 2 1 I'll 
+: 155 1 4 take 
+: 157 5 8 ad
+: 164 1 6 van
+: 166 2 4 tage 
+: 170 4 1 while
+- 174 176
+- 176
+: 185 1 1 You 
+: 189 1 4 hang 
+: 192 4 8 me 
+: 198 2 6 out 
+: 201 1 4 to 
+: 204 4 1 dry
+- 208
+: 212 1 -1 But 
+: 214 3 -1 I 
+: 219 2 1 can't 
+: 223 2 4 see 
+: 227 3 8 you 
+: 231 1 6 ev
+: 234 2 4 ery 
+: 238 1 7 night
+: 240 4 4 ~
+- 244
+* 248 7 4 free
+- 255 271
+- 271
+: 280 1 -1 I 
+: 283 18 -1 do...
+- 301 307
+- 307
+: 316 5 -1 I'm 
+: 324 1 2 stand
+: 326 4 4 ing 
+: 333 1 7 in 
+: 335 2 9 your 
+: 339 3 7 line
+- 342
+: 346 1 -1 I 
+: 350 5 -1 do... 
+: 358 1 2 hope 
+: 360 4 4 you 
+: 367 1 7 have 
+: 369 3 9 the 
+: 373 3 7 time
+- 376
+: 379 2 -1 I 
+: 383 6 -1 do... 
+: 392 1 2 pick 
+: 394 3 4 a 
+: 401 1 7 num
+: 403 3 9 ber 
+: 407 3 7 too
+- 410
+: 414 1 -1 I 
+: 418 5 -1 do... 
+: 426 1 2 keep 
+: 428 2 4 a 
+: 435 1 7 date 
+: 437 3 9 with 
+: 442 3 7 you
+- 445 447
+- 447
+: 456 1 1 I'll 
+: 460 1 4 take 
+: 462 4 8 ad
+: 469 1 6 van
+: 471 2 4 tage 
+: 475 5 1 while
+- 480
+: 489 2 1 You 
+: 493 1 4 hang 
+: 496 4 8 me 
+: 502 1 6 out 
+: 506 1 4 to 
+: 508 4 1 dry
+- 512
+: 515 1 -1 But 
+: 518 2 -1 I 
+: 522 2 1 can't 
+: 526 2 4 see 
+: 530 3 8 you 
+: 535 1 6 ev
+: 537 2 4 ery 
+: 541 1 7 night
+: 543 4 4 ~
+- 547
+: 551 7 4 free
+- 558 910
+- 910
+: 919 6 -1 I 
+: 927 1 2 need 
+: 929 4 4 an 
+: 936 1 7 ea
+: 938 3 9 sy 
+* 942 3 7 friend
+- 945
+: 949 1 -1 I 
+: 953 5 -1 do... 
+: 961 1 2 with 
+: 963 3 4 an 
+: 969 1 7 ear 
+: 972 2 9 to 
+: 976 4 7 lend
+- 980
+: 983 1 -1 I 
+: 987 4 -1 do... 
+: 995 1 2 think 
+: 997 2 4 you 
+: 1003 1 7 fit 
+: 1006 3 9 this 
+: 1010 3 7 shoe
+- 1013
+: 1017 1 -1 I 
+: 1020 6 -1 do... 
+: 1029 1 2 but 
+: 1031 2 4 you 
+: 1037 1 7 have 
+: 1039 3 9 a 
+: 1043 4 7 clue
+- 1047 1050
+- 1050
+: 1059 1 1 I'll 
+: 1063 1 4 take 
+* 1065 5 8 ad
+* 1072 1 6 van
+* 1074 2 4 tage 
+* 1078 4 1 while
+- 1082 1084
+- 1084
+: 1093 2 1 You 
+: 1097 1 4 hang 
+: 1099 4 8 me 
+: 1105 2 6 out 
+: 1109 1 4 to 
+: 1112 3 1 dry
+- 1115
+: 1120 1 -1 But 
+: 1122 2 -1 I 
+: 1126 2 1 can't 
+: 1130 2 4 see 
+: 1134 3 8 you 
+: 1139 1 6 ev
+: 1141 2 4 ery 
+: 1145 1 7 night
+: 1147 3 4 -
+- 1150
+: 1153 1 -1 Oh, 
+: 1156 1 -1 I 
+: 1159 2 1 can't 
+: 1163 2 4 see 
+: 1167 3 8 you 
+: 1172 1 6 ev
+: 1174 2 4 ery 
+: 1178 1 7 night...
+* 1180 16 4 ~
+- 1196 1206
+- 1206
+: 1215 24 4 free
+- 1239
+: 1245 2 -1 I 
+: 1249 23 -1 do...
+- 1272
+: 1278 2 -1 I 
+: 1282 25 -1 do...
+- 1307
+: 1312 1 -1 I 
+: 1315 27 -1 do...
+- 1342
+: 1345 3 -1 I 
+: 1350 25 -1 do...
+E

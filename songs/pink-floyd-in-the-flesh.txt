@@ -1,0 +1,196 @@
+#ARTIST:Pink Floyd
+#TITLE:In The Flesh
+#CREATOR:spark
+#BPM:301,94
+#YEAR:1979
+#PREVIEWSTART:117
+#VIDEO:v=GGGO9nPO0Po
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:115554,77707006369
+#ALLKARAOKE_ID:pink-floyd-in-the-flesh
+#ALLKARAOKE_SID:4818
+#ALLKARAOKE_LASTUPDATE:2025-06-17T00:13:26.063Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_PREVIEWEND:162
+#ALLKARAOKE_VOLUME:1
+#P1:In The Flesh
+#MP3:Pink Floyd - In The Flesh?.mp3
+: 20 4 18 So 
+: 26 6 18 ya 
+: 44 6 16 thought 
+: 52 5 16 ya 
+: 68 5 14 might 
+: 74 5 14 like 
+: 83 6 13 to 
+: 107 6 11 go 
+: 114 2 11 to 
+: 117 2 11 the 
+: 123 8 9 show.
+- 131 190
+- 190
+: 210 4 18 To 
+: 216 16 18 feel 
+: 233 3 16 the 
+: 237 13 16 warm 
+: 252 5 14 thrill 
+: 258 6 14 of 
+: 265 9 14 con
+: 276 4 13 fu
+: 281 10 13 sion
+- 291
+: 293 4 9 That 
+: 300 4 11 space 
+: 307 4 11 ca
+: 312 5 13 det 
+: 319 10 9 glow.
+- 329 388
+- 388
+: 408 4 13 I’ve 
+: 414 5 13 got 
+: 430 6 13 some 
+: 437 8 13 bad 
+: 447 9 13 news 
+: 459 2 13 for 
+: 462 3 13 you 
+: 471 3 13 sun
+: 477 15 13 shine.
+- 492
+: 494 6 14 Pink 
+: 502 3 14 is
+: 506 4 14 n’t 
+: 512 12 14 well 
+: 526 4 13 he 
+: 533 8 11 stayed 
+: 542 5 14 back 
+: 548 1 14 at 
+: 550 2 14 the 
+: 554 4 14 ho
+: 560 13 14 tel
+- 573
+: 576 5 13 And 
+: 582 7 11 they’ve 
+: 590 5 16 sent 
+: 596 2 16 us 
+: 600 2 16 a
+: 603 12 16 long 
+: 627 2 14 as 
+: 630 2 13 a 
+: 638 3 16 sur
+: 642 2 16 ro
+: 645 7 16 gate 
+: 654 14 16 band.
+- 668
+: 683 3 16 We’re 
+: 687 7 16 going 
+: 695 2 16 to 
+: 699 11 16 find 
+: 712 5 16 out 
+: 718 7 18 where 
+: 726 5 20 you 
+: 732 8 20 fans 
+: 742 5 18 real
+: 748 5 16 ly 
+: 756 9 16 sta
+: 766 5 18 ~
+: 772 9 20 nd.
+- 781
+: 783 5 13 Are 
+: 789 6 13 there 
+: 796 2 13 an
+: 799 2 13 y 
+: 804 16 13 queers 
+: 822 2 4 in 
+: 825 5 4 the 
+: 831 7 9 thea
+: 839 4 9 tre 
+: 844 3 9 to
+: 848 10 9 night?
+- 858
+: 872 3 4 Get 
+: 876 3 4 ’em 
+: 880 4 6 up 
+: 885 2 8 a
+: 888 6 6 gainst 
+: 896 3 8 the 
+: 901 13 6 wall.
+- 914
+: 928 6 6 Get 
+: 951 11 14 them!
+- 962
+: 972 4 13 Now 
+: 978 6 13 there*s 
+: 986 4 13 one 
+: 991 1 13 in 
+: 993 1 13 the 
+: 998 5 13 spot
+: 1004 9 13 light
+- 1013
+: 1014 3 14 He 
+: 1018 4 13 don’t 
+: 1023 3 13 look 
+: 1027 6 13 right 
+: 1034 2 4 to 
+: 1037 12 9 me.
+- 1049
+: 1063 3 4 Get 
+: 1067 4 4 him 
+: 1072 3 6 up 
+: 1077 3 8 a
+: 1081 5 6 gainst 
+: 1089 4 8 the 
+: 1094 10 6 wall.
+- 1104
+: 1120 8 4 Get 
+: 1144 10 14 them!
+- 1154
+: 1166 3 4 And 
+: 1170 3 13 that 
+: 1175 10 13 one 
+: 1186 2 13 looks 
+: 1192 5 13 Jew
+: 1198 10 13 ish 
+: 1214 3 13 and 
+: 1218 3 13 that 
+: 1222 5 9 one’s 
+: 1228 1 4 a 
+: 1232 23 13 coon.
+- 1255
+: 1264 4 18 Who 
+: 1270 4 18 let 
+: 1275 4 18 all 
+: 1280 5 18 this 
+: 1289 6 18 riff
+: 1296 14 18 raff 
+: 1311 4 18 in
+: 1316 4 18 to 
+: 1321 2 18 the 
+: 1324 14 18 room?
+- 1338
+: 1346 5 16 There’s 
+: 1353 5 14 one 
+: 1362 4 20 smok
+: 1367 2 20 ing 
+: 1370 4 20 a 
+: 1375 9 20 joint 
+: 1403 5 20 and 
+: 1409 2 20 an
+: 1412 2 23 oth
+: 1415 2 23 er 
+: 1418 3 23 with 
+: 1423 9 23 spots!
+- 1432 1435
+- 1435
+* 1455 3 18 If 
+* 1460 4 16 I 
+* 1466 5 16 had 
+* 1472 4 18 my 
+* 1478 37 16 way 
+* 1516 6 16 I’d 
+* 1523 4 16 have 
+* 1528 8 16 all 
+* 1537 2 18 of 
+* 1541 9 21 them 
+* 1555 8 21 shot.
+E

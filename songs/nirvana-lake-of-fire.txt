@@ -1,0 +1,237 @@
+#ARTIST:Nirvana
+#TITLE:Lake of Fire
+#BPM:278
+#YEAR:1994
+#VIDEO:v=d4LdUQzCPPM
+#VIDEOGAP:1
+#GENRE:Grunge
+#LANGUAGE:English
+#GAP:34117,82014388489
+#ALLKARAOKE_ID:nirvana-lake-of-fire
+#ALLKARAOKE_SID:4812
+#ALLKARAOKE_LASTUPDATE:2025-06-17T00:13:26.055Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Nirvana - Lake of Fire.mp3
+#COVER:Nirvana - Lake of Fire.jpg
+: 19 3 16 Where 
+: 23 2 18 do 
+: 27 4 18 bad 
+: 34 6 18 folks 
+: 42 2 16 go 
+: 45 2 16 when 
+: 49 3 16 they 
+: 57 7 21 die?
+- 64
+: 68 2 15 They 
+: 72 4 18 don't 
+: 79 2 18 go 
+: 82 2 18 to 
+: 85 4 18 hea
+: 91 2 18 ven 
+: 94 3 13 where 
+: 98 2 11 the 
+: 101 5 15 an
+: 109 4 15 gels 
+: 116 3 15 fly
+: 120 5 13 ~
+- 125
+: 132 3 18 Go 
+: 136 2 18 to 
+: 139 2 18 a 
+: 143 5 18 lake 
+: 151 6 18 of 
+: 162 6 16 fire 
+: 169 4 16 and 
+: 177 6 9 fry
+- 183
+: 191 4 23 See 
+: 196 2 23 them 
+: 199 2 23 a
+: 203 8 23 gain 
+: 214 4 16 till 
+: 219 2 16 the 
+: 222 3 16 fourth 
+: 227 2 16 of 
+: 230 6 18 Ju
+: 238 13 18 ly
+- 251 352
+- 352
+: 371 4 11 I 
+: 376 3 13 knew 
+: 380 2 13 a 
+: 384 6 16 la
+: 391 6 13 dy, 
+: 402 4 11 came 
+: 408 2 13 from 
+: 411 2 13 Du
+: 414 9 13 luth
+- 423
+: 433 3 13 Bit 
+: 440 3 13 by 
+: 444 2 13 a 
+: 448 6 13 dog 
+: 456 2 13 with 
+: 459 2 10 a 
+: 463 4 11 rab
+: 468 3 12 bit 
+: 476 7 12 tooth
+- 483
+: 490 2 9 She 
+: 494 4 13 went 
+: 501 2 13 to 
+: 505 2 13 her 
+: 509 5 13 grave 
+: 517 3 13 just 
+: 521 2 13 a 
+: 525 2 15 lit
+: 528 2 13 tle 
+: 532 4 15 too 
+: 540 3 9 soon
+: 544 3 10 ~
+- 547
+: 555 4 18 Flew 
+: 560 2 18 howl
+: 563 5 18 ing 
+: 570 6 15 out 
+: 578 3 13 on 
+: 582 2 11 the 
+: 586 3 11 yel
+: 590 9 13 low 
+: 602 27 13 moon
+- 629 636
+- 636
+: 655 4 16 Where 
+: 660 2 18 do 
+: 663 5 18 bad 
+: 671 5 18 folks 
+: 678 2 16 go 
+: 681 3 16 when 
+: 686 5 16 they 
+: 694 8 21 die?
+- 702
+: 706 2 13 They 
+: 709 5 18 don't 
+: 717 3 18 go 
+: 721 2 18 to 
+: 724 3 18 hea
+: 729 2 18 ven 
+* 732 3 13 where 
+* 736 2 11 the 
+: 739 5 15 an
+: 747 4 15 gels 
+: 754 3 15 fly
+: 758 6 13 ~
+- 764
+: 770 3 16 Go 
+: 774 2 18 to 
+: 777 2 18 a 
+: 782 4 18 lake 
+: 789 6 18 of 
+* 800 7 16 fire 
+* 808 4 16 and 
+* 816 8 9 fry
+- 824
+: 830 4 21 See 
+: 835 3 23 them 
+: 839 2 23 a
+: 843 8 23 gain 
+: 854 2 18 till 
+: 858 2 16 the 
+: 861 3 16 fourth 
+: 866 2 16 of 
+: 869 6 18 Ju
+: 877 15 18 ly
+- 892 995
+- 995
+: 1014 3 13 Peo
+: 1019 3 13 ple 
+* 1026 3 13 cry
+* 1030 3 15 ~ 
+* 1034 7 13 and 
+: 1045 3 11 peo
+: 1050 4 13 ple 
+: 1057 9 13 moan
+- 1066
+: 1075 2 11 Look 
+: 1080 2 13 for 
+: 1083 2 13 a 
+: 1087 5 13 dry 
+: 1096 6 13 place 
+: 1104 2 10 to 
+: 1107 6 12 call 
+: 1115 3 12 their 
+: 1119 3 10 home
+: 1123 5 12 ~
+- 1128
+: 1138 3 11 Try 
+: 1142 2 13 to 
+: 1145 2 13 find 
+: 1148 3 13 some 
+: 1153 7 13 place 
+: 1162 2 13 to 
+: 1165 3 13 rest
+: 1169 4 15 ~ 
+: 1176 4 15 their 
+: 1184 5 10 bones
+- 1189
+: 1193 2 11 While 
+: 1196 2 11 the 
+: 1199 4 18 an
+: 1204 3 18 gels 
+: 1208 2 18 and 
+: 1211 2 18 the 
+: 1214 3 15 de
+: 1218 2 15 vils
+- 1220
+: 1223 3 13 Try 
+: 1227 2 11 to 
+: 1230 2 13 make 
+: 1235 2 13 them 
+: 1238 7 13 their 
+: 1246 3 11 own
+: 1250 35 13 ~
+- 1285
+: 1301 3 16 Where 
+: 1305 2 18 do 
+: 1308 5 18 bad 
+: 1316 6 18 folks 
+: 1324 2 16 go 
+: 1327 3 16 when 
+: 1331 4 16 they 
+: 1339 8 21 die?
+- 1347
+: 1351 2 13 They 
+: 1354 5 18 don't 
+: 1362 3 18 go 
+: 1366 2 18 to 
+: 1369 4 18 hea
+: 1374 2 18 ven 
+: 1377 3 13 where 
+: 1381 2 11 the 
+: 1385 6 15 an
+: 1392 6 15 gels 
+* 1400 3 15 fly
+* 1404 5 13 ~
+- 1409
+: 1417 2 16 Go 
+: 1420 2 18 to 
+: 1423 2 18 a 
+: 1427 5 18 lake 
+: 1435 7 18 of 
+: 1447 6 16 fire 
+: 1454 4 16 and 
+: 1462 7 9 fry
+- 1469
+: 1476 4 21 See 
+: 1482 2 23 them 
+: 1485 2 23 a
+: 1489 8 23 gain 
+: 1500 2 18 till 
+: 1505 2 16 the 
+* 1508 4 16 fourth 
+* 1513 2 16 of 
+* 1516 5 18 Ju
+* 1524 14 18 ly
+E
