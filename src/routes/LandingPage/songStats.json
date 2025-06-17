@@ -751,6 +751,7 @@
     "Magic!",
     "Malik Harris",
     "Mamagama",
+    "Mamma Mia!",
     "Mamma Mia! (Movie)",
     "Man With A Mission",
     "Manchester Orchestra",
@@ -903,6 +904,7 @@
     "O.A.R.",
     "Oasis",
     "Ochman",
+    "OCT",
     "OK Go",
     "Olivia Newton-John",
     "Olivia Rodrigo",
@@ -955,6 +957,7 @@
     "Pointer Sisters",
     "Poison",
     "Poppy",
+    "Porcupine Tree",
     "Portal",
     "Post Malone",
     "Post Malone feat. 21 Savage",
@@ -1008,6 +1011,7 @@
     "Rihanna feat. Mikky Ekko",
     "Rihanna & Ne-Yo",
     "Rise Against",
+    "Roar",
     "Rob Cantor",
     "Rob Thomas",
     "Rob Zombie",
@@ -1253,6 +1257,7 @@
     "The White Stripes",
     "The Who",
     "The Witcher (Joey Batey)",
+    "The Yogscast",
     "The Zutons",
     "TheFatRat feat. Laura Brehm",
     "TheFatRat",
@@ -1337,9 +1342,11 @@
     "will.i.am",
     "WILLOW",
     "Wilson Phillips",
+    "Wind Rose",
     "Windows95man",
     "Wiz Khalifa",
     "Wiz Khalifa ft. Charlie Puth",
+    "Woodkid",
     "Xavier Rudd",
     "Yazoo",
     "Yellowcard",
@@ -1396,5 +1403,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 4796
+  "songs": 4836
 }

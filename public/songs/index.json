@@ -5055,6 +5055,34 @@
     "local": false
   },
   {
+    "id": "ali-wild-side",
+    "title": "Wild Side",
+    "artist": "ALI",
+    "video": "bgo9dJB_icw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 268.6,
+    "gap": 11148.787788533135,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-17T00:13:26.243Z",
+    "genre": "Anime",
+    "realBpm": 134,
+    "volume": 0.77,
+    "author": "ALI",
+    "tracks": [
+      {
+        "name": "Wild Side (TV)",
+        "start": 18
+      }
+    ],
+    "shortId": 4823,
+    "tracksCount": 1,
+    "search": "aliwildside",
+    "local": false
+  },
+  {
     "id": "alice-cooper-poison",
     "title": "Poison",
     "artist": "Alice Cooper",
@@ -12528,6 +12556,62 @@
     "shortId": 453,
     "tracksCount": 1,
     "search": "badbunnyamorfoda",
+    "local": false
+  },
+  {
+    "id": "bad-bunny-chencho-corleone-me-porto-bonito",
+    "title": "Me porto bonito",
+    "artist": "Bad Bunny & Chencho Corleone",
+    "video": "K0vXF7lJcWY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 368,
+    "gap": 3390.978260869565,
+    "year": "2022",
+    "artistOrigin": "PR",
+    "lastUpdate": "2025-06-17T00:13:24.694Z",
+    "genre": "Latino",
+    "realBpm": 92,
+    "volume": 0.75,
+    "author": "bad bunny",
+    "sourceUrl": "https://youtu.be/a1Femq4NPxs?si=QcFYg07xyNuKTDfm",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4798,
+    "tracksCount": 1,
+    "search": "badbunnychenchocorleonemeportobonito",
+    "local": false
+  },
+  {
+    "id": "bad-bunny-dtmf",
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "video": "v9T_MGfzq7I",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 226,
+    "gap": 12284.424778761062,
+    "year": "2025",
+    "artistOrigin": "PR",
+    "lastUpdate": "2025-06-17T00:13:26.057Z",
+    "genre": "Latino",
+    "realBpm": 136,
+    "volume": 0.73,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=v9T_MGfzq7I",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4813,
+    "tracksCount": 1,
+    "search": "badbunnydtmf",
     "local": false
   },
   {
@@ -23192,6 +23276,32 @@
     "shortId": 838,
     "tracksCount": 1,
     "search": "bulletformyvalentineyourbetrayal",
+    "local": false
+  },
+  {
+    "id": "bump-of-chicken-hello-world",
+    "title": "Hello, world!",
+    "artist": "BUMP OF CHICKEN",
+    "video": "0nkJ8wPseSM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 211.06,
+    "gap": 315.34918980384725,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-17T00:13:25.612Z",
+    "realBpm": 106,
+    "volume": 0.73,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": -5
+      }
+    ],
+    "shortId": 4809,
+    "tracksCount": 1,
+    "search": "bumpofchickenhelloworld",
     "local": false
   },
   {
@@ -52837,6 +52947,32 @@
     "local": false
   },
   {
+    "id": "hikaru-utada-one-last-kiss",
+    "title": "One Last Kiss",
+    "artist": "Hikaru Utada",
+    "video": "0Uhh62MUEic",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 223.78,
+    "gap": 26038.54821699884,
+    "year": "2021",
+    "lastUpdate": "2025-06-17T00:13:27.161Z",
+    "genre": "J-pop",
+    "realBpm": 112,
+    "volume": 0.91,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4835,
+    "tracksCount": 1,
+    "search": "hikaruutadaonelastkiss",
+    "local": false
+  },
+  {
     "id": "hilary-duff-come-clean",
     "title": "Come Clean",
     "artist": "Hilary Duff",
@@ -58285,6 +58421,33 @@
     "shortId": 2109,
     "tracksCount": 1,
     "search": "jessicatoledomimanana",
+    "local": false
+  },
+  {
+    "id": "jessie-j-domino",
+    "title": "Domino",
+    "artist": "Jessie J",
+    "video": "UJtB55MaoD0",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 4916.062992125984,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:24.690Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 0.66,
+    "author": "sprock",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4797,
+    "tracksCount": 1,
+    "search": "jessiejdomino",
     "local": false
   },
   {
@@ -68938,6 +69101,34 @@
     "local": false
   },
   {
+    "id": "lafee-heul-doch",
+    "title": "Heul doch",
+    "artist": "LaFee",
+    "video": "WvdFOhE5tY0",
+    "language": [
+      "German"
+    ],
+    "bpm": 319.96,
+    "gap": 16275.501937742218,
+    "year": "2007",
+    "lastUpdate": "2025-06-17T00:13:27.311Z",
+    "genre": "Pop",
+    "realBpm": 160,
+    "previewStart": 17,
+    "previewEnd": 72,
+    "volume": 0.77,
+    "author": "gaspar17",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4836,
+    "tracksCount": 1,
+    "search": "lafeeheuldoch",
+    "local": false
+  },
+  {
     "id": "lama-spell",
     "title": "Spell",
     "artist": "Lama",
@@ -69775,6 +69966,34 @@
     "shortId": 2526,
     "tracksCount": 1,
     "search": "lesserafimfearless",
+    "local": false
+  },
+  {
+    "id": "le-sserafim-hot",
+    "title": "HOT",
+    "artist": "LE SSERAFIM",
+    "video": "r9AEGPB6qIU",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 256,
+    "gap": 12078.90625,
+    "year": "2025",
+    "artistOrigin": "KR",
+    "lastUpdate": "2025-06-17T00:13:26.058Z",
+    "genre": "Kpop",
+    "realBpm": 130,
+    "volume": 0.74,
+    "author": "asdFer",
+    "sourceUrl": "https://www.youtube.com/watch?v=r9AEGPB6qIU",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4814,
+    "tracksCount": 1,
+    "search": "lesserafimhot",
     "local": false
   },
   {
@@ -75888,6 +76107,33 @@
     "local": false
   },
   {
+    "id": "mamma-mia-lay-all-your-love-on-me",
+    "title": "Lay All Your Love On Me",
+    "artist": "Mamma Mia!",
+    "video": "dxn9hbJh3uc",
+    "language": [
+      "English"
+    ],
+    "bpm": 192,
+    "gap": 4644.375,
+    "year": "2008",
+    "artistOrigin": "NL",
+    "lastUpdate": "2025-06-17T00:13:26.709Z",
+    "genre": "Soundtrack",
+    "realBpm": 133,
+    "volume": 0.92,
+    "author": "Bardotje",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4828,
+    "tracksCount": 1,
+    "search": "mammamialayallyourloveonme",
+    "local": false
+  },
+  {
     "id": "mamma-mia-movie-i-have-a-dream",
     "title": "I Have A Dream",
     "artist": "Mamma Mia! (Movie)",
@@ -76508,7 +76754,7 @@
     "gap": 9666.990291262136,
     "year": "2021",
     "artistOrigin": "IT",
-    "lastUpdate": "2024-05-22T18:45:58.485Z",
+    "lastUpdate": "2025-06-16T10:24:19.289Z",
     "edition": "ESC 2021",
     "genre": "Rock",
     "realBpm": 103,
@@ -85691,6 +85937,35 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-kill-all-your-friends",
+    "title": "Kill All Your Friends",
+    "artist": "My Chemical Romance",
+    "video": "BQndQV9E8C8",
+    "language": [
+      "English"
+    ],
+    "bpm": 204.25,
+    "gap": 17111.8482252142,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:24.700Z",
+    "genre": "Rock",
+    "realBpm": 102,
+    "volume": 0.72,
+    "author": "synonomy",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=10828",
+    "tracks": [
+      {
+        "name": "Kill All Your Friends",
+        "start": 14
+      }
+    ],
+    "shortId": 4800,
+    "tracksCount": 1,
+    "search": "mychemicalromancekillallyourfriends",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-mama",
     "title": "Mama",
     "artist": "My Chemical Romance",
@@ -85742,6 +86017,34 @@
     "shortId": 3102,
     "tracksCount": 1,
     "search": "mychemicalromancenananananananananananana",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-save-yourself-ill-hold-them-back",
+    "title": "Save Yourself, I’ll Hold Them Back",
+    "artist": "My Chemical Romance",
+    "video": "C5f18AsYv-0",
+    "language": [
+      "English"
+    ],
+    "bpm": 270.46,
+    "gap": 42521.70080603416,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:24.697Z",
+    "genre": "Rock",
+    "realBpm": 137,
+    "volume": 0.76,
+    "author": "synonomy",
+    "tracks": [
+      {
+        "name": "Save Yourself, I'll Hold Them Back",
+        "start": 18
+      }
+    ],
+    "shortId": 4799,
+    "tracksCount": 1,
+    "search": "mychemicalromancesaveyourselfillholdthemback",
     "local": false
   },
   {
@@ -86421,6 +86724,34 @@
     "local": false
   },
   {
+    "id": "nagi-yanagi-aqua-terrarium",
+    "title": "Aqua Terrarium",
+    "artist": "Nagi Yanagi",
+    "video": "L1g0Yk9Aw_g",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 236.34,
+    "gap": 162.7248032495557,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-17T00:13:24.716Z",
+    "genre": "Anime",
+    "realBpm": 140,
+    "previewStart": 34,
+    "previewEnd": 84,
+    "volume": 0.74,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 4807,
+    "tracksCount": 1,
+    "search": "nagiyanagiaquaterrarium",
+    "local": false
+  },
+  {
     "id": "namie-amuro-come",
     "title": "Come",
     "artist": "Namie Amuro",
@@ -86472,6 +86803,32 @@
     "shortId": 3129,
     "tracksCount": 1,
     "search": "namikajeneparlepasfrancais",
+    "local": false
+  },
+  {
+    "id": "nana-kitade-kesenai-tsumi",
+    "title": "Kesenai tsumi",
+    "artist": "Nana Kitade",
+    "video": "I4VWgs7A6w4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 316.05,
+    "gap": 20403.322259136214,
+    "year": "2003",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-17T00:13:27.011Z",
+    "genre": "Anime",
+    "realBpm": 100,
+    "volume": 0.98,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4833,
+    "tracksCount": 1,
+    "search": "nanakitadekesenaitsumi",
     "local": false
   },
   {
@@ -86529,6 +86886,32 @@
     "shortId": 3131,
     "tracksCount": 1,
     "search": "nanobullseye",
+    "local": false
+  },
+  {
+    "id": "nanowar-of-steel-feat-charly-glamour-gigatron-norwegian-reggaeton",
+    "title": "Norwegian Reggaeton",
+    "artist": "Nanowar of Steel feat. Charly Glamour & Gigatron",
+    "video": "j0YXfeNxJJ0",
+    "language": [
+      "English"
+    ],
+    "bpm": 352.54,
+    "gap": 1810.8392806490044,
+    "year": "2020",
+    "lastUpdate": "2025-06-17T00:13:26.864Z",
+    "genre": "Comedy",
+    "realBpm": 104,
+    "volume": 0.74,
+    "author": "Cedus",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4829,
+    "tracksCount": 1,
+    "search": "nanowarofsteelfeatcharlyglamourgigatronnorwegianreggaeton",
     "local": false
   },
   {
@@ -89234,6 +89617,58 @@
     "local": false
   },
   {
+    "id": "nirvana-about-a-girl-unplugged",
+    "title": "About a Girl (Unplugged)",
+    "artist": "Nirvana",
+    "video": "AhcttcXcRYY",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.86,
+    "gap": 15546.776332043153,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:27.009Z",
+    "genre": "Grunge",
+    "realBpm": 132,
+    "volume": 0.79,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4830,
+    "tracksCount": 1,
+    "search": "nirvanaaboutagirlunplugged",
+    "local": false
+  },
+  {
+    "id": "nirvana-about-a-girl",
+    "title": "About A Girl",
+    "artist": "Nirvana",
+    "video": "JIx2H-plXdU",
+    "language": [
+      "English"
+    ],
+    "bpm": 140,
+    "gap": 13999.714285714286,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:24.715Z",
+    "genre": "Grunge",
+    "realBpm": 132,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 4806,
+    "tracksCount": 1,
+    "search": "nirvanaaboutagirl",
+    "local": false
+  },
+  {
     "id": "nirvana-all-apologies",
     "title": "All Apologies",
     "artist": "Nirvana",
@@ -89406,6 +89841,33 @@
     "local": false
   },
   {
+    "id": "nirvana-lake-of-fire",
+    "title": "Lake of Fire",
+    "artist": "Nirvana",
+    "video": "d4LdUQzCPPM",
+    "language": [
+      "English"
+    ],
+    "bpm": 278,
+    "gap": 34117.82014388489,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:26.055Z",
+    "genre": "Grunge",
+    "videoGap": 1,
+    "realBpm": 145,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4812,
+    "tracksCount": 1,
+    "search": "nirvanalakeoffire",
+    "local": false
+  },
+  {
     "id": "nirvana-lithium",
     "title": "Lithium",
     "artist": "Nirvana",
@@ -89459,6 +89921,32 @@
     "shortId": 3236,
     "tracksCount": 1,
     "search": "nirvanaloungeact",
+    "local": false
+  },
+  {
+    "id": "nirvana-on-a-plain",
+    "title": "On a plain",
+    "artist": "Nirvana",
+    "video": "7uQbfqWoOtc",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.39,
+    "gap": 7651.968158283099,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:26.062Z",
+    "genre": "Grunge",
+    "realBpm": 133,
+    "volume": 0.82,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4816,
+    "tracksCount": 1,
+    "search": "nirvanaonaplain",
     "local": false
   },
   {
@@ -89541,6 +90029,32 @@
     "local": false
   },
   {
+    "id": "nirvana-sliver",
+    "title": "Sliver",
+    "artist": "Nirvana",
+    "video": "QECJ9pCyhns",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.25,
+    "gap": 6608.120170063774,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:27.010Z",
+    "genre": "Grunge",
+    "realBpm": 141,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4831,
+    "tracksCount": 1,
+    "search": "nirvanasliver",
+    "local": false
+  },
+  {
     "id": "nirvana-smells-like-teen-spirit",
     "title": "Smells Like Teen Spirit",
     "artist": "Nirvana",
@@ -89597,6 +90111,32 @@
     "local": false
   },
   {
+    "id": "nirvana-stay-away",
+    "title": "Stay away",
+    "artist": "Nirvana",
+    "video": "AKSvNMxRpSQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.04,
+    "gap": 25496.03150964101,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:27.011Z",
+    "genre": "Grunge",
+    "realBpm": 165,
+    "volume": 0.86,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4832,
+    "tracksCount": 1,
+    "search": "nirvanastayaway",
+    "local": false
+  },
+  {
     "id": "nirvana-the-man-who-sold-the-world-mtv-unplugged",
     "title": "The Man Who Sold The World (MTV Unplugged)",
     "artist": "Nirvana",
@@ -89622,6 +90162,32 @@
     "shortId": 3242,
     "tracksCount": 1,
     "search": "nirvanathemanwhosoldtheworldmtvunplugged",
+    "local": false
+  },
+  {
+    "id": "nirvana-where-did-you-sleep-last-night",
+    "title": "Where Did You Sleep Last Night",
+    "artist": "Nirvana",
+    "video": "Nq62vcKxYcU",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.4,
+    "gap": 21812.03863845446,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-17T00:13:27.159Z",
+    "genre": "Grunge",
+    "realBpm": 109,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4834,
+    "tracksCount": 1,
+    "search": "nirvanawheredidyousleeplastnight",
     "local": false
   },
   {
@@ -90535,6 +91101,31 @@
     "shortId": 3275,
     "tracksCount": 1,
     "search": "ochmanriver",
+    "local": false
+  },
+  {
+    "id": "oct-half-horse-half-man",
+    "title": "Half Horse Half Man",
+    "artist": "OCT",
+    "video": "6v_R180kIGs",
+    "language": [
+      "English"
+    ],
+    "bpm": 444,
+    "gap": 23256.486486486487,
+    "year": "2025",
+    "lastUpdate": "2025-06-17T00:13:26.068Z",
+    "realBpm": 239,
+    "volume": 0.76,
+    "author": "GaryCXJk",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "shortId": 4822,
+    "tracksCount": 1,
+    "search": "octhalfhorsehalfman",
     "local": false
   },
   {
@@ -95589,6 +96180,68 @@
     "local": false
   },
   {
+    "id": "pink-floyd-have-a-cigar",
+    "title": "Have A Cigar",
+    "artist": "Pink Floyd",
+    "video": "tbdpv7G_PPg",
+    "language": [
+      "English"
+    ],
+    "bpm": 487.44,
+    "gap": 62815.263417035945,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.062Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "previewStart": 64,
+    "previewEnd": 128,
+    "volume": 1,
+    "author": "Jesposo",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=14690",
+    "tracks": [
+      {
+        "name": "Have A Cigar",
+        "start": 32
+      }
+    ],
+    "shortId": 4817,
+    "tracksCount": 1,
+    "search": "pinkfloydhaveacigar",
+    "local": false
+  },
+  {
+    "id": "pink-floyd-hey-you",
+    "title": "Hey You",
+    "artist": "Pink Floyd",
+    "video": "soL8JK6kALc",
+    "language": [
+      "English"
+    ],
+    "bpm": 449,
+    "gap": 34535.53571428572,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.064Z",
+    "genre": "Rock",
+    "realBpm": 112,
+    "previewStart": 235,
+    "previewEnd": 271,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=1307",
+    "tracks": [
+      {
+        "name": "Hey You",
+        "start": 30
+      }
+    ],
+    "shortId": 4819,
+    "tracksCount": 1,
+    "search": "pinkfloydheyyou",
+    "local": false
+  },
+  {
     "id": "pink-floyd-high-hopes",
     "title": "High Hopes",
     "artist": "Pink Floyd",
@@ -95616,6 +96269,36 @@
     "shortId": 3459,
     "tracksCount": 1,
     "search": "pinkfloydhighhopes",
+    "local": false
+  },
+  {
+    "id": "pink-floyd-in-the-flesh",
+    "title": "In The Flesh",
+    "artist": "Pink Floyd",
+    "video": "GGGO9nPO0Po",
+    "language": [
+      "English"
+    ],
+    "bpm": 301.94,
+    "gap": 115554.77707006369,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.063Z",
+    "genre": "Rock",
+    "realBpm": 152,
+    "previewStart": 117,
+    "previewEnd": 162,
+    "volume": 1,
+    "author": "spark",
+    "tracks": [
+      {
+        "name": "In The Flesh",
+        "start": 20
+      }
+    ],
+    "shortId": 4818,
+    "tracksCount": 1,
+    "search": "pinkfloydintheflesh",
     "local": false
   },
   {
@@ -96466,6 +97149,31 @@
     "local": false
   },
   {
+    "id": "pokemon-together",
+    "title": "Together",
+    "artist": "Pokémon",
+    "video": "fxYjkVW-A4I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 274,
+    "gap": 13694.598540145986,
+    "year": "2006",
+    "lastUpdate": "2025-06-17T00:13:25.434Z",
+    "realBpm": 112,
+    "volume": 0.77,
+    "author": "zozole",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4808,
+    "tracksCount": 1,
+    "search": "pokemontogether",
+    "local": false
+  },
+  {
     "id": "polima-westcoast-pailita-paloma-mami-feid-de-la-ghetto-ultra-solo-remix",
     "title": "Ultra Solo Remix",
     "artist": "Polimá Westcoast, Pailita, Paloma Mami, Feid, De la Ghetto",
@@ -96548,6 +97256,33 @@
     "shortId": 3493,
     "tracksCount": 1,
     "search": "poppyconcrete",
+    "local": false
+  },
+  {
+    "id": "porcupine-tree-blackest-eyes",
+    "title": "Blackest Eyes",
+    "artist": "Porcupine Tree",
+    "video": "Nfql0PyA8D0",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.52,
+    "gap": 53184.50646483759,
+    "year": "2002",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.539Z",
+    "genre": "Rock",
+    "realBpm": 95,
+    "volume": 0.72,
+    "author": "Astur_TorQue",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4827,
+    "tracksCount": 1,
+    "search": "porcupinetreeblackesteyes",
     "local": false
   },
   {
@@ -102078,6 +102813,36 @@
     "shortId": 3691,
     "tracksCount": 1,
     "search": "riseagainstsavior",
+    "local": false
+  },
+  {
+    "id": "roar-i-cant-handle-change",
+    "title": "I Can’t Handle Change",
+    "artist": "Roar",
+    "video": "f1V0cQFyC7E",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 29991.93548387097,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.064Z",
+    "genre": "Indie Rock",
+    "realBpm": 186,
+    "previewStart": 158,
+    "previewEnd": 189,
+    "volume": 0.73,
+    "author": "krasserdude",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=29190",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4820,
+    "tracksCount": 1,
+    "search": "roaricanthandlechange",
     "local": false
   },
   {
@@ -119021,6 +119786,34 @@
     "local": false
   },
   {
+    "id": "the-cardigans-lovefool",
+    "title": "Lovefool",
+    "artist": "The Cardigans",
+    "video": "NI6aOFI7hms",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.9,
+    "gap": 4100.087092451988,
+    "year": "1996",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-06-17T00:13:26.245Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 0.78,
+    "author": "RES",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4605",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4824,
+    "tracksCount": 1,
+    "search": "thecardiganslovefool",
+    "local": false
+  },
+  {
     "id": "the-cardigans-my-favourite-game",
     "title": "My Favourite Game",
     "artist": "The Cardigans",
@@ -121883,6 +122676,33 @@
     "local": false
   },
   {
+    "id": "the-sixth-lie-hibana",
+    "title": "Hibana",
+    "artist": "THE SIXTH LIE",
+    "video": "5MdJDg5dJq0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 363.88,
+    "gap": 10076.662855886556,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-17T00:13:25.752Z",
+    "genre": "Anime",
+    "realBpm": 183,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4810,
+    "tracksCount": 1,
+    "search": "thesixthliehibana",
+    "local": false
+  },
+  {
     "id": "the-smashing-pumpkins-1979",
     "title": "1979",
     "artist": "The Smashing Pumpkins",
@@ -123239,6 +124059,32 @@
     "local": false
   },
   {
+    "id": "the-yogscast-diggy-diggy-hole",
+    "title": "Diggy Diggy Hole",
+    "artist": "The Yogscast",
+    "video": "ytWz0qVvBZ0",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 31650,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-17T00:13:26.396Z",
+    "realBpm": 91,
+    "volume": 0.72,
+    "author": "Carpi",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4826,
+    "tracksCount": 1,
+    "search": "theyogscastdiggydiggyhole",
+    "local": false
+  },
+  {
     "id": "the-zutons-valerie",
     "title": "Valerie",
     "artist": "The Zutons",
@@ -123623,6 +124469,62 @@
     "local": false
   },
   {
+    "id": "three-days-grace-animal-i-have-become",
+    "title": "Animal I Have Become",
+    "artist": "Three Days Grace",
+    "video": "xqds0B_meys",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.8,
+    "gap": 23154.39024390244,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-17T00:13:24.702Z",
+    "genre": "Rock",
+    "realBpm": 122,
+    "volume": 0.73,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "name": "Animal I Have Become",
+        "start": 16
+      }
+    ],
+    "shortId": 4801,
+    "tracksCount": 1,
+    "search": "threedaysgraceanimalihavebecome",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-break",
+    "title": "Break",
+    "artist": "Three Days Grace",
+    "video": "_4VCpTZye10",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.42,
+    "gap": 30921.81047039671,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-17T00:13:24.707Z",
+    "genre": "Alternative Rock",
+    "realBpm": 116,
+    "volume": 0.78,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "name": "Break",
+        "start": 16
+      }
+    ],
+    "shortId": 4803,
+    "tracksCount": 1,
+    "search": "threedaysgracebreak",
+    "local": false
+  },
+  {
     "id": "three-days-grace-i-hate-everything-about-you",
     "title": "I Hate Everything About You",
     "artist": "Three Days Grace",
@@ -123674,6 +124576,90 @@
     "shortId": 4469,
     "tracksCount": 1,
     "search": "threedaysgracejustlikeyou",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-last-to-know",
+    "title": "Last To Know",
+    "artist": "Three Days Grace",
+    "video": "Dh262qUpcEY",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 6732.142857142857,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-17T00:13:24.713Z",
+    "genre": "Alternative Rock",
+    "realBpm": 139,
+    "volume": 0.75,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "name": "Last To Know",
+        "start": 19
+      }
+    ],
+    "shortId": 4804,
+    "tracksCount": 1,
+    "search": "threedaysgracelasttoknow",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-let-it-die",
+    "title": "Let It Die",
+    "artist": "Three Days Grace",
+    "video": "7Zm3ZIsFZkg",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 1075.1020408163263,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-17T00:13:24.714Z",
+    "genre": "Rock",
+    "realBpm": 97,
+    "volume": 0.76,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "name": "Let It Die",
+        "start": 26
+      }
+    ],
+    "shortId": 4805,
+    "tracksCount": 1,
+    "search": "threedaysgraceletitdie",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-never-too-late",
+    "title": "Never Too Late",
+    "artist": "Three Days Grace",
+    "video": "lL2ZwXj1tXM",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 13077.241379310344,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-17T00:13:24.704Z",
+    "genre": "Rock",
+    "realBpm": 150,
+    "volume": 0.75,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "name": "Never Too Late",
+        "start": 19
+      }
+    ],
+    "shortId": 4802,
+    "tracksCount": 1,
+    "search": "threedaysgracenevertoolate",
     "local": false
   },
   {
@@ -126445,6 +127431,34 @@
     "local": false
   },
   {
+    "id": "twice-feat-megan-thee-stallion-strategy",
+    "title": "Strategy",
+    "artist": "TWICE feat. Megan Thee Stallion",
+    "video": "Sz_wWzgh-vQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 10260.272727272728,
+    "year": "2025",
+    "artistOrigin": "KR",
+    "lastUpdate": "2025-06-17T00:13:26.060Z",
+    "genre": "Kpop",
+    "realBpm": 110,
+    "volume": 0.71,
+    "author": "asdFer",
+    "sourceUrl": "https://www.youtube.com/watch?v=Sz_wWzgh-vQ",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4815,
+    "tracksCount": 1,
+    "search": "twicefeatmegantheestallionstrategy",
+    "local": false
+  },
+  {
     "id": "twice-feel-special",
     "title": "Feel Special",
     "artist": "TWICE",
@@ -126889,6 +127903,33 @@
     "shortId": 4586,
     "tracksCount": 1,
     "search": "u2beautifulday",
+    "local": false
+  },
+  {
+    "id": "u2-i-still-havent-found-what-im-looking-for",
+    "title": "I Still Haven’t Found What I’m Looking For",
+    "artist": "U2",
+    "video": "e3-5YC_oHjE",
+    "language": [
+      "English"
+    ],
+    "bpm": 396,
+    "gap": 25395.151515151516,
+    "year": "1987",
+    "artistOrigin": "IE",
+    "lastUpdate": "2025-06-17T00:13:26.067Z",
+    "genre": "Rock",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "snake84",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4821,
+    "tracksCount": 1,
+    "search": "u2istillhaventfoundwhatimlookingfor",
     "local": false
   },
   {
@@ -130832,6 +131873,32 @@
     "local": false
   },
   {
+    "id": "wind-rose-diggy-diggy-hole",
+    "title": "Diggy Diggy Hole",
+    "artist": "Wind Rose",
+    "video": "34CZjsEI1yU",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": 66531.62790697675,
+    "year": "2019",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-06-17T00:13:26.246Z",
+    "realBpm": 125,
+    "volume": 0.77,
+    "author": "TomBuLa",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4825,
+    "tracksCount": 1,
+    "search": "windrosediggydiggyhole",
+    "local": false
+  },
+  {
     "id": "windows95man-no-rules",
     "title": "No Rules!",
     "artist": "Windows95man",
@@ -131184,6 +132251,33 @@
     "shortId": 4742,
     "tracksCount": 1,
     "search": "wondergirlstellme",
+    "local": false
+  },
+  {
+    "id": "woodkid-i-love-you",
+    "title": "I Love You",
+    "artist": "Woodkid",
+    "video": "KQu8FOjJXdI",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.1,
+    "gap": 105024.30674426566,
+    "year": "2013",
+    "artistOrigin": "FR",
+    "lastUpdate": "2025-06-17T00:13:25.916Z",
+    "genre": "Alternative",
+    "realBpm": 146,
+    "volume": 0.76,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4811,
+    "tracksCount": 1,
+    "search": "woodkidiloveyou",
     "local": false
   },
   {

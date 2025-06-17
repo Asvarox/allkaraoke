@@ -1,0 +1,435 @@
+#ARTIST:Nanowar of Steel feat. Charly Glamour & Gigatron
+#TITLE:Norwegian Reggaeton
+#CREATOR:Cedus
+#BPM:352,54
+#YEAR:2020
+#VIDEO:v=j0YXfeNxJJ0
+#GENRE:Comedy
+#LANGUAGE:English
+#GAP:1810,8392806490044
+#ALLKARAOKE_ID:nanowar-of-steel-feat-charly-glamour-gigatron-norwegian-reggaeton
+#ALLKARAOKE_SID:4829
+#ALLKARAOKE_LASTUPDATE:2025-06-17T00:13:26.864Z
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Nanowar of Steel feat. Charly Glamour & Gigatron - Norwegian Reggaeton.mp3
+#COVER:Nanowar of Steel feat. Charly Glamour & Gigatron - Norwegian Reggaeton [CO].jpg
+#BACKGROUND:Nanowar of Steel feat. Charly Glamour & Gigatron - Norwegian Reggaeton [BG].jpg
+F 24 9 2 Yeah, 
+F 39 6 2 you 
+F 45 4 2 drilled 
+F 49 3 2 my 
+F 52 9 2 heart 
+F 61 3 2 and 
+F 64 2 2 my 
+F 66 3 2 blood 
+F 69 4 2 is 
+F 73 8 2 spilling, 
+F 81 12 2 babe
+- 93 109
+- 109
+F 133 7 4 Like 
+F 140 6 4 oil 
+F 146 4 4 from 
+F 150 3 4 a 
+F 153 13 4 platform 
+F 166 3 4 in 
+F 169 3 4 the 
+F 172 7 4 North 
+F 179 11 4 Sea
+- 190 213
+- 213
+F 237 7 2 You 
+F 244 5 2 fished 
+F 249 3 2 me 
+F 252 5 2 like 
+F 257 3 2 a 
+F 260 9 2 whaler 
+F 269 6 2 in 
+F 275 10 2 violation 
+F 285 3 2 of 
+F 288 14 2 international 
+F 302 12 2 treaties, 
+F 314 8 2 babe
+- 322 344
+- 344
+F 368 7 2 Now 
+F 375 2 2 I'm 
+F 377 2 2 in 
+F 379 2 2 an 
+F 381 9 2 Oslo 
+F 390 5 2 state 
+F 395 3 2 of 
+F 398 7 2 mind, 
+F 405 10 2 honey
+- 415 422
+- 422
+F 446 6 4 And 
+F 452 5 4 you 
+F 457 5 4 burned 
+F 462 2 4 my 
+F 464 9 4 soul 
+F 473 5 4 like 
+F 478 4 4 the 
+F 482 7 4 Fantoft 
+F 489 10 4 church 
+F 499 3 4 in 
+F 502 5 4 June 
+F 507 17 4 1992, 
+F 525 8 4 babe
+- 533 536
+- 536
+F 560 3 3 All 
+F 563 2 3 I 
+F 565 5 3 want 
+F 570 2 3 to 
+F 572 4 3 tell 
+F 576 4 3 you 
+F 580 12 3 is: 
+F 595 9 3 Hvis 
+F 605 13 3 lyset 
+F 619 11 3 tar 
+F 631 12 3 oss
+- 643 1064
+- 1064
+: 1088 40 9 Hypothermia, 
+: 1143 10 5 cuba 
+: 1154 4 5 libre, 
+: 1159 11 4 midnight 
+: 1171 6 3 sun
+- 1177
+: 1195 8 1 Sommer 
+: 1204 17 1 fiesta 
+: 1222 5 1 at 
+: 1228 30 1 Ragnarok 
+: 1259 14 1 beach
+- 1273 1277
+- 1277
+: 1301 6 2 You 
+: 1308 4 2 were 
+: 1313 32 1 dancing, 
+: 1353 9 -1 like 
+: 1363 4 0 a 
+: 1368 4 0 polar 
+: 1373 10 0 killer 
+: 1384 8 -1 whale
+- 1392
+: 1413 5 0 When 
+: 1419 3 1 your 
+: 1423 24 2 bloodthirsty 
+: 1449 8 2 eyes 
+: 1458 10 2 crossed 
+: 1469 6 3 with 
+: 1476 31 3 mine
+- 1507
+: 1511 14 3 Corazón 
+: 1526 14 3 vikingo 
+: 1541 3 3 de 
+: 1545 7 3 Santo 
+: 1553 14 3 Domingo
+- 1567
+: 1568 2 4 La 
+: 1571 8 4 iglesia 
+: 1580 14 4 quemada, 
+: 1595 3 4 la 
+: 1599 6 4 piña 
+: 1606 16 4 colada
+- 1622
+: 1623 8 2 Vamos 
+: 1632 2 2 a 
+: 1635 11 2 bailar 
+: 1647 10 2 con 
+: 1658 6 3 "Det 
+: 1665 11 3 som 
+: 1677 15 3 engang 
+: 1693 30 3 var"
+- 1723
+: 1731 11 3 Guerrero 
+: 1743 13 2 cubano, 
+: 1757 13 3 bailarín 
+: 1771 13 2 pagano
+- 1784
+: 1786 12 3 Tomando 
+: 1799 12 2 mojito 
+: 1812 4 2 en 
+: 1817 4 3 el 
+: 1822 15 3 sacrificio
+- 1837
+: 1838 11 3 Vamos 
+: 1850 3 3 a 
+: 1854 8 3 bailar 
+: 1863 11 4 con 
+: 1875 27 5 Hellhammer 
+: 1903 4 3 y 
+: 1908 34 6 Varg
+- 1942
+: 1944 12 2 Profanar 
+: 1957 4 3 la 
+: 1962 16 3 tumba, 
+: 1979 8 3 al 
+: 1988 12 3 ritmo 
+: 2001 8 3 de 
+: 2010 6 4 la 
+: 2017 14 5 rumba
+- 2031
+: 2040 4 2 Con 
+: 2045 9 3 Fenriz 
+: 2055 9 2 y 
+: 2065 23 2 Darkthrone: 
+: 2090 20 3 Norwegian 
+: 2111 42 3 Reggaeton!
+- 2153
+: 2156 16 2 Profanar 
+: 2173 6 3 la 
+: 2180 14 3 tumba, 
+* 2195 8 3 al 
+* 2204 12 3 ritmo 
+* 2217 9 3 de 
+* 2227 6 4 la 
+* 2234 17 5 rumba
+- 2251
+: 2252 6 2 Con 
+: 2259 13 3 Fenriz 
+: 2273 5 2 y 
+: 2279 28 2 Darkthrone: 
+* 2308 19 3 Norwegian 
+* 2328 42 3 Reggaeton!
+- 2370
+: 2372 10 3 Esta 
+: 2383 12 4 vida 
+: 2396 18 4 loca, 
+: 2423 6 2 a 
+: 2430 12 3 mirar 
+: 2443 6 3 la 
+: 2450 16 2 foca
+- 2466
+: 2472 15 3 Asando 
+: 2488 8 2 un 
+: 2497 25 3 salmón: 
+: 2523 21 2 Norwegian 
+: 2545 45 3 Reggaeton!-
+- 2590 3003
+- 3003
+R 3027 4 3 My 
+R 3031 11 3 Drakkar 
+R 3042 6 3 is 
+R 3048 6 3 ready 
+R 3054 8 3 won't 
+R 3062 3 3 you 
+R 3065 4 3 get 
+R 3069 6 3 on 
+R 3075 9 3 board-
+- 3084
+R 3084 4 3 While 
+R 3088 4 3 I 
+R 3092 11 3 proudly 
+R 3103 3 3 sail 
+R 3106 3 3 in 
+R 3109 2 3 the 
+R 3111 8 3 depths 
+R 3119 3 3 of 
+R 3122 7 3 your 
+R 3129 10 3 fjord-
+- 3139
+R 3139 4 3 When 
+R 3143 3 3 the 
+R 3146 6 3 storm 
+R 3152 4 3 is 
+R 3156 10 3 raging, 
+R 3166 4 3 and 
+R 3170 5 3 your 
+R 3175 5 3 booty 
+R 3180 3 3 is 
+R 3183 11 3 shaking-
+- 3194
+R 3194 5 3 Hold 
+R 3199 5 3 my 
+R 3204 5 3 pole 
+R 3209 8 3 tight 
+R 3217 3 3 and 
+R 3220 4 3 you 
+R 3224 4 3 ain't 
+R 3228 3 3 get 
+R 3231 4 3 no 
+R 3235 12 3 aching-
+- 3247
+G 3247 3 3 Your 
+G 3250 13 3 breakfast 
+G 3263 4 3 is 
+G 3267 8 3 ready, 
+G 3275 7 3 isn't 
+G 3282 5 3 it 
+G 3287 17 3 good?-
+- 3304
+: 3304 3 3 It 
+: 3307 5 3 comes 
+: 3312 2 3 with 
+: 3314 3 3 my 
+: 3317 11 3 morning 
+: 3328 18 3 Norwegian 
+: 3346 12 3 wood-
+- 3358
+R 3358 4 3 I'm 
+R 3362 7 3 swimming 
+R 3369 10 3 against 
+R 3379 3 3 the 
+R 3382 9 3 stream 
+R 3391 2 3 I 
+R 3393 6 3 don't 
+R 3399 7 3 care-
+- 3406
+R 3406 4 3 I'm 
+R 3410 7 3 soon 
+R 3417 10 3 getting 
+R 3427 7 3 there 
+R 3434 4 3 where 
+R 3438 5 3 the 
+R 3443 12 3 salmons 
+R 3455 8 3 dare!-
+- 3463
+F 3464 14 2 Nórdico 
+F 3478 14 3 latino, 
+F 3492 6 6 qué 
+F 3498 21 2 luciferino!-
+- 3519
+F 3519 10 3 Mata 
+F 3529 4 5 al 
+F 3533 13 1 enemigo, 
+F 3546 10 5 pero 
+F 3556 16 2 despacito-
+- 3572
+F 3572 12 3 Vamos 
+F 3584 3 3 a 
+F 3587 10 3 bailar 
+F 3597 12 3 en 
+F 3609 8 4 la 
+F 3617 19 4 Playa 
+F 3636 8 4 del 
+F 3644 30 3 Mal-
+- 3674
+F 3679 12 4 Mueve 
+F 3691 4 3 tu 
+F 3695 14 3 cintura, 
+F 3709 6 3 con 
+F 3715 4 3 mi 
+F 3719 18 3 armadura-
+- 3737
+F 3737 12 4 Satanás 
+F 3749 3 4 me 
+F 3752 11 4 sube 
+F 3763 6 4 la 
+F 3769 22 4 temperatura-
+- 3791
+F 3791 10 3 Vamos 
+F 3801 5 1 a 
+F 3806 12 3 bailar 
+F 3818 9 3 en 
+F 3827 26 3 maligno 
+F 3853 40 3 ritual
+- 3893
+: 3895 14 2 Profanar 
+: 3910 6 3 la 
+: 3917 15 3 tumba, 
+: 3933 8 3 al 
+: 3942 10 3 ritmo 
+: 3953 7 3 de 
+: 3961 7 4 la 
+: 3969 14 5 rumba
+- 3983
+: 3991 5 2 Con 
+: 3997 10 3 Fenriz 
+: 4008 7 2 y 
+: 4016 25 2 Darkthrone: 
+: 4043 20 3 Norwegian 
+: 4064 45 3 Reggaeton!
+- 4109
+: 4110 9 3 Esta 
+: 4120 11 4 vida 
+: 4132 18 4 loca, 
+: 4159 4 2 a 
+: 4164 11 3 mirar 
+: 4176 8 3 la 
+: 4185 18 2 foca
+- 4203
+: 4207 16 3 Asando 
+: 4224 8 2 un 
+: 4233 26 3 salmón: 
+: 4260 20 2 Norwegian 
+: 4281 47 3 Reggaeton!
+- 4328 4747
+- 4747
+: 4771 6 2 In 
+: 4778 5 1 your 
+: 4784 35 3 head
+- 4819
+: 4825 6 2 In 
+: 4832 6 1 your 
+: 4839 30 3 head
+- 4869
+: 4870 24 2 Reggaeton, 
+: 4898 26 3 Reggaeton, 
+: 4928 25 2 Reggaeton
+- 4953 4963
+- 4963
+: 4987 7 2 In 
+: 4995 5 1 your 
+: 5001 22 3 head
+- 5023
+* 5043 4 2 In 
+* 5048 6 1 your 
+* 5055 32 3 head
+- 5087
+: 5088 26 2 Reggaeton, 
+* 5117 26 3 Reggaeton, 
+: 5145 34 2 Reggaeton
+- 5179
+: 5195 13 2 Profanar 
+: 5209 7 3 la 
+: 5217 18 3 tumba, 
+: 5236 5 3 al 
+: 5242 10 3 ritmo 
+: 5253 9 3 de 
+: 5263 6 4 la 
+: 5270 19 5 rumba
+- 5289
+: 5291 6 2 Con 
+: 5298 11 3 Fenriz 
+: 5310 5 2 y 
+: 5316 27 2 Darkthrone: 
+: 5346 19 3 Norwegian 
+: 5366 44 3 Reggaeton!
+- 5410
+: 5411 14 2 Profanar 
+: 5426 6 3 la 
+: 5433 19 3 tumba, 
+: 5453 5 3 al 
+: 5459 10 3 ritmo 
+: 5470 8 3 de 
+: 5479 7 4 la 
+: 5487 20 5 rumba
+- 5507
+: 5509 4 2 Con 
+: 5514 12 3 Fenriz 
+: 5527 7 2 y 
+: 5535 25 2 Darkthrone: 
+: 5563 17 3 Norwegian 
+: 5581 46 3 Reggaeton!
+- 5627
+: 5628 9 3 Esta 
+: 5638 10 4 vida 
+: 5649 22 4 loca, 
+: 5675 7 2 a 
+: 5683 12 3 mirar 
+: 5696 7 3 la 
+: 5704 19 2 foca
+- 5723
+: 5727 16 3 Asando 
+: 5745 6 2 un 
+: 5752 26 3 salmón: 
+: 5781 18 2 Norwegian 
+: 5800 45 3 Reggaeton!
+- 5845 6249
+- 6249
+: 6273 15 3 Norwegian 
+: 6289 42 2 Reggaeton
+E

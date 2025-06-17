@@ -1,0 +1,280 @@
+#ARTIST:ALI
+#TITLE:Wild Side
+#CREATOR:ALI
+#BPM:268,6
+#YEAR:2019
+#VIDEO:v=bgo9dJB_icw
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:11148,787788533135
+#ALLKARAOKE_ID:ali-wild-side
+#ALLKARAOKE_SID:4823
+#ALLKARAOKE_LASTUPDATE:2025-06-17T00:13:26.243Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_VOLUME:0,77
+#P1:Wild Side (TV)
+#MP3:ALI - Wild Side (TV).mp3
+#COVER:ALI - Wild Side (TV).jpg
+#MEDLEYSTARTBEAT:717
+#MEDLEYENDBEAT:1041
+F 18 3 2 Mass 
+F 24 1 2 ni 
+F 26 1 2 a
+F 28 1 2 wa
+F 30 1 2 se
+F 32 1 2 ta 
+F 34 2 2 Life
+F 37 1 2 style
+- 38
+F 41 1 2 Mu
+F 43 1 2 ri 
+F 45 1 2 de
+F 47 1 2 mo 
+F 49 1 2 ra
+F 51 1 2 ku
+F 53 1 2 su
+F 55 1 2 rya 
+F 57 1 2 fu
+F 59 4 2 ri
+- 63
+F 69 2 2 Free
+F 73 2 2 dom 
+F 77 2 2 ou
+F 81 2 2 ka
+- 83
+F 87 1 2 Ri
+F 89 1 2 fu
+F 91 1 2 jin 
+F 95 1 2 fu
+F 97 1 2 ki
+F 99 1 2 to
+F 101 1 2 ba
+F 103 1 2 su 
+F 105 1 2 skill
+- 106
+F 109 1 2 Ko
+F 111 1 2 re 
+F 113 1 2 chi
+F 115 1 2 gau 
+F 117 3 2 last 
+F 122 1 2 mi
+F 124 4 2 nute
+- 128
+F 133 3 3 Mer
+F 138 2 3 ci, 
+F 142 1 3 au 
+F 144 1 3 re
+F 146 4 3 voir
+- 150
+F 153 5 3 Pride 
+F 160 1 3 wa 
+F 162 1 3 ja
+F 164 1 3 ma 
+F 166 1 3 su
+F 168 1 3 ru 
+F 170 1 3 mou
+F 172 2 3 sho
+- 174
+F 178 2 3 Donc 
+F 182 1 3 vas-y 
+F 184 1 3 je
+F 186 2 3 te 
+F 190 3 0 ca
+- 193
+F 196 1 3 Su
+F 198 1 3 be
+F 200 1 3 te 
+F 202 1 3 try 
+F 206 1 3 shi 
+F 208 2 3 kon
+F 212 5 2 pai
+- 217
+F 220 1 2 Fu
+F 222 1 2 e 
+F 224 1 2 ni 
+F 226 1 2 su
+F 228 1 2 ku
+F 230 1 2 wa
+F 232 6 3 re 
+F 242 2 2 Half
+F 246 1 2 time
+- 247
+: 250 5 3 I 
+: 258 5 7 kept 
+: 266 2 7 walk
+: 270 2 7 ing 
+: 274 2 7 on 
+: 278 2 6 the 
+: 282 5 7 Wild
+: 290 4 6 ~ 
+: 298 14 7 Side
+- 312
+: 318 2 -4 I 
+: 322 2 3 don't 
+: 326 1 -2 wan
+: 328 1 -4 na 
+: 331 2 -2 fall 
+: 335 2 -4 a
+: 339 3 -4 sleep 
+: 346 2 -5 through
+: 350 2 -7 out 
+: 355 2 -5 my
+: 359 2 -12 ~ 
+: 364 12 -12 life
+- 376
+: 386 5 0 Some
+: 394 5 0 times 
+: 403 2 -1 in 
+: 407 2 -4 a 
+: 411 2 -2 buf
+: 415 2 -4 fa
+: 419 5 0 lo 
+: 427 12 0 Style
+- 439
+: 450 5 2 Some
+: 458 5 -5 times 
+: 467 4 2 like 
+: 473 5 -5 a 
+: 482 3 5 rock
+: 488 2 4 'n 
+: 492 5 3 roll 
+: 500 5 2 mind
+- 505
+F 519 2 3 Cli
+F 523 2 3 max 
+F 527 1 3 yu
+F 529 1 3 me
+F 532 1 3 mi 
+F 534 3 3 all 
+F 539 6 3 in
+- 545
+F 551 2 3 Oz
+F 555 2 3 zu 
+F 559 1 3 mi
+F 561 1 3 e
+F 564 1 3 nai 
+F 567 6 3 blurred
+- 573
+F 579 1 3 Ki
+F 582 3 3 mochi 
+F 587 1 3 to
+F 590 1 3 bi
+F 593 1 3 ta
+F 596 1 3 tsu 
+F 599 3 3 Boe
+F 604 5 3 ing
+- 609
+F 614 2 3 I
+F 618 2 3 ssun 
+F 622 1 3 sa
+F 625 1 3 ki 
+F 628 1 3 wa 
+F 631 5 3 saa?
+- 636 677
+- 677
+: 695 2 0 It 
+: 699 2 0 is 
+: 703 2 0 a 
+: 707 2 -1 won
+: 711 2 -5 der
+: 715 2 0 ful 
+: 719 2 2 my 
+: 723 8 3 life
+- 731
+: 735 2 0 Please 
+: 739 2 7 could 
+: 743 2 5 you 
+* 747 2 3 kiss 
+* 752 2 2 my 
+* 756 7 3 name?
+- 763
+: 767 1 -1 When 
+: 769 1 0 the 
+: 771 2 -1 mu
+: 775 3 -5 sic's 
+: 780 5 2 o
+: 787 8 3 ver
+- 795
+: 802 5 0 Turn 
+: 811 5 5 off 
+: 819 2 3 light
+- 821
+: 824 2 0 It 
+: 828 2 0 was 
+: 832 2 0 a 
+: 836 2 -1 such 
+: 839 2 -5 a 
+: 843 5 2 sweet 
+: 850 8 3 time
+- 858
+: 862 1 0 Could 
+: 864 1 0 you 
+* 867 3 7 pray 
+* 872 2 5 for 
+* 876 1 3 me, 
+: 879 2 2 my 
+: 884 8 3 friend?
+- 892
+: 896 2 -1 It's 
+: 900 2 0 start
+: 904 2 0 ing 
+: 908 2 5 o
+: 912 2 5 ver 
+: 916 18 3 time
+- 934
+: 940 2 5 Tak
+: 944 2 7 ing 
+: 948 4 8 o
+: 955 4 1 ver 
+: 962 6 0 night
+- 968
+: 972 2 3 Tak
+: 976 2 5 ing 
+: 980 2 7 o
+: 984 2 0 ver 
+: 988 4 0 blue 
+: 995 8 -1 time
+- 1003
+: 1007 1 0 If 
+: 1009 1 0 you 
+: 1012 2 5 heard 
+: 1016 2 3 that 
+: 1020 2 2 scream
+: 1024 2 0 ing 
+: 1028 2 -1 shout 
+: 1032 2 -1 in 
+: 1036 5 -1 your 
+: 1044 15 0 mind
+- 1059
+: 1068 2 5 Tak
+: 1072 2 7 ing 
+* 1076 2 7 o
+* 1079 2 8 ~
+* 1084 4 0 ver 
+: 1090 6 -1 shine
+- 1096
+: 1099 2 3 Tak
+: 1103 2 5 ing 
+: 1107 2 7 o
+: 1111 2 0 ver 
+: 1115 1 0 shoot
+: 1118 2 0 ing 
+: 1122 8 -1 star
+- 1130
+: 1135 2 0 All 
+* 1139 2 5 I 
+* 1143 2 3 was 
+* 1147 2 2 talk
+* 1151 2 0 ing a
+* 1155 2 -1 bout 
+* 1159 2 -1 was 
+: 1164 8 8 mu
+: 1178 16 7 sic
+: 1197 5 3 ~
+- 1202
+F 1208 4 0 And 
+F 1216 4 0 that's 
+F 1223 8 0 called 
+F 1234 16 3 jazz!
+E
