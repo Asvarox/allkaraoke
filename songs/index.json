@@ -18888,6 +18888,33 @@
     "local": false
   },
   {
+    "id": "boys-town-gang-cant-take-my-eyes-off-you",
+    "title": "Can’t Take My Eyes Off You",
+    "artist": "Boys Town Gang",
+    "video": "y3R4bzBgC3g",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.4,
+    "gap": 27976.583108368686,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-19T00:13:27.830Z",
+    "realBpm": 27,
+    "volume": 0.73,
+    "author": "Leroidukitch, asb",
+    "sourceUrl": "Boys Town Gang - Can’t Take My Eyes Off You",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4848,
+    "tracksCount": 1,
+    "search": "boystowngangcanttakemyeyesoffyou",
+    "local": false
+  },
+  {
     "id": "boyz-ii-men-end-of-the-road",
     "title": "End Of The Road",
     "artist": "Boyz II Men",
@@ -47500,6 +47527,34 @@
     "local": false
   },
   {
+    "id": "george-benson-give-me-the-night",
+    "title": "Give Me The Night",
+    "artist": "George Benson",
+    "video": "FIF7wKJb2iU",
+    "language": [
+      "English"
+    ],
+    "bpm": 221.36,
+    "gap": 16703.556198048427,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-19T00:13:26.890Z",
+    "genre": "Disco",
+    "realBpm": 29,
+    "volume": 0.79,
+    "author": "RetroGirl",
+    "sourceUrl": "George Benson - Give Me The Night",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4841,
+    "tracksCount": 1,
+    "search": "georgebensongivemethenight",
+    "local": false
+  },
+  {
     "id": "george-ezra-budapest",
     "title": "Budapest",
     "artist": "George Ezra",
@@ -47556,6 +47611,34 @@
     "shortId": 1716,
     "tracksCount": 1,
     "search": "georgeezrashotgun",
+    "local": false
+  },
+  {
+    "id": "george-mccrae-rock-your-baby",
+    "title": "Rock Your Baby",
+    "artist": "George McCrae",
+    "video": "gutE8I0Tk3E",
+    "language": [
+      "English"
+    ],
+    "bpm": 211.5,
+    "gap": 18077.09219858156,
+    "year": "1974",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-19T00:13:27.025Z",
+    "genre": "Disco",
+    "realBpm": 35,
+    "volume": 0.78,
+    "author": "RetroGirl",
+    "sourceUrl": "George McCrae - Rock Your Baby",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4842,
+    "tracksCount": 1,
+    "search": "georgemccraerockyourbaby",
     "local": false
   },
   {
@@ -50841,6 +50924,33 @@
     "local": false
   },
   {
+    "id": "guy-sebastian-armageddon",
+    "title": "Armageddon",
+    "artist": "Guy Sebastian",
+    "video": "dXtQBtL_rXY",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.17,
+    "gap": 11098.877654196158,
+    "year": "2012",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:26.617Z",
+    "realBpm": 31,
+    "volume": 0.75,
+    "author": "Souly",
+    "sourceUrl": "Guy Sebastian - Armageddon",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 4839,
+    "tracksCount": 1,
+    "search": "guysebastianarmageddon",
+    "local": false
+  },
+  {
     "id": "gwen-stefani-4-in-the-morning",
     "title": "4 In The Morning",
     "artist": "Gwen Stefani",
@@ -52973,6 +53083,34 @@
     "local": false
   },
   {
+    "id": "hilary-duff-all-about-you",
+    "title": "All About You",
+    "artist": "Hilary Duff",
+    "video": "dA1ZmHibs4w",
+    "language": [
+      "English"
+    ],
+    "bpm": 316,
+    "gap": 10353.164556962025,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-19T00:13:38.725Z",
+    "edition": "SingStar",
+    "realBpm": 158,
+    "volume": 0.73,
+    "author": "bohning",
+    "sourceUrl": "Hilary Duff - All About You",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4865,
+    "tracksCount": 1,
+    "search": "hilaryduffallaboutyou",
+    "local": false
+  },
+  {
     "id": "hilary-duff-come-clean",
     "title": "Come Clean",
     "artist": "Hilary Duff",
@@ -54157,6 +54295,33 @@
     "shortId": 1955,
     "tracksCount": 1,
     "search": "hueylewisthenewsthepoweroflove",
+    "local": false
+  },
+  {
+    "id": "hugh-grant-pop-pop-goes-my-heart",
+    "title": "PoP! Goes My Heart",
+    "artist": "Hugh Grant (PoP!)",
+    "video": "1LCNTVJZK6I",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.4,
+    "gap": 14271.257565568258,
+    "year": "2007",
+    "lastUpdate": "2025-06-19T00:13:38.576Z",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 0.71,
+    "author": "Timtim",
+    "sourceUrl": "Hugh Grant (PoP!) - PoP! Goes My Heart",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4864,
+    "tracksCount": 1,
+    "search": "hughgrantpoppopgoesmyheart",
     "local": false
   },
   {
@@ -58703,6 +58868,34 @@
     "local": false
   },
   {
+    "id": "jimmy-cliff-i-can-see-clearly-now",
+    "title": "I Can See Clearly Now",
+    "artist": "Jimmy Cliff",
+    "video": "MrHxhQPOO2c",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.54,
+    "gap": 16008.079652667613,
+    "year": "1993",
+    "artistOrigin": "JM",
+    "lastUpdate": "2025-06-19T00:13:26.467Z",
+    "genre": "Reggae",
+    "realBpm": 26,
+    "volume": 0.76,
+    "author": "happyniko",
+    "sourceUrl": "Jimmy Cliff - I Can See Clearly Now",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4838,
+    "tracksCount": 1,
+    "search": "jimmyclifficanseeclearlynow",
+    "local": false
+  },
+  {
     "id": "jimmy-eat-world-the-middle",
     "title": "The Middle",
     "artist": "Jimmy Eat World",
@@ -61897,6 +62090,61 @@
     "local": false
   },
   {
+    "id": "junior-senior-move-your-feet",
+    "title": "Move Your Feet",
+    "artist": "Junior Senior",
+    "video": "SPlQpGeTbIE",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.7,
+    "gap": 6590.323937736643,
+    "year": "2002",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-06-19T00:13:27.961Z",
+    "realBpm": 28,
+    "volume": 0.8,
+    "author": "choosie",
+    "sourceUrl": "Junior Senior - Move Your Feet",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4849,
+    "tracksCount": 1,
+    "search": "juniorseniormoveyourfeet",
+    "local": false
+  },
+  {
+    "id": "junior-senior-take-my-time",
+    "title": "Take My Time",
+    "artist": "Junior Senior",
+    "video": "v0rvlV0nByo",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.8,
+    "gap": 16605.535714285714,
+    "year": "2005",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-06-19T00:13:28.139Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.73,
+    "author": "a224",
+    "sourceUrl": "Junior Senior - Take My Time",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4850,
+    "tracksCount": 1,
+    "search": "juniorseniortakemytime",
+    "local": false
+  },
+  {
     "id": "junko-minagawa-sayaka-ohara-eternal-eternity",
     "title": "Eternal Eternity",
     "artist": "Junko Minagawa & Sayaka Ohara",
@@ -61920,6 +62168,60 @@
     "shortId": 2236,
     "tracksCount": 1,
     "search": "junkominagawasayakaoharaeternaleternity",
+    "local": false
+  },
+  {
+    "id": "justice-crew-que-sera",
+    "title": "Que sera",
+    "artist": "Justice Crew",
+    "video": "x3-pfGBLh0Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.22,
+    "gap": -38.801916932907375,
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.437Z",
+    "realBpm": 60,
+    "volume": 0.71,
+    "author": "peace",
+    "sourceUrl": "Justice Crew - Que sera (Australian Version)",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 4863,
+    "tracksCount": 1,
+    "search": "justicecrewquesera",
+    "local": false
+  },
+  {
+    "id": "justice-feat-tame-impala-neverender",
+    "title": "Neverender",
+    "artist": "Justice feat. Tame Impala",
+    "video": "47YNsf-7Y7c",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.94,
+    "gap": 671.0959220312902,
+    "year": "2024",
+    "lastUpdate": "2025-06-19T00:13:38.306Z",
+    "genre": "Electronic",
+    "realBpm": 33,
+    "volume": 0.75,
+    "author": "Mircosoft93",
+    "sourceUrl": "Justice feat. Tame Impala - Neverender",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4858,
+    "tracksCount": 1,
+    "search": "justicefeattameimpalaneverender",
     "local": false
   },
   {
@@ -63310,6 +63612,35 @@
     "shortId": 2286,
     "tracksCount": 1,
     "search": "karenaokidaisukehasegawagreatdays",
+    "local": false
+  },
+  {
+    "id": "karina-corazon-mentiroso",
+    "title": "Corazón mentiroso",
+    "artist": "Karina",
+    "video": "kWjYDyCwZI0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 370.57,
+    "gap": -120.82545807809595,
+    "year": "2009",
+    "artistOrigin": "AR",
+    "lastUpdate": "2025-06-19T00:13:38.047Z",
+    "genre": "Cumbia",
+    "realBpm": 92,
+    "volume": 0.74,
+    "author": "DaVIch0",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=davich0",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=karina",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 4855,
+    "tracksCount": 1,
+    "search": "karinacorazonmentiroso",
     "local": false
   },
   {
@@ -81125,6 +81456,34 @@
     "shortId": 2927,
     "tracksCount": 1,
     "search": "menatworkwhocanitbenow",
+    "local": false
+  },
+  {
+    "id": "men-without-hats-the-safety-dance",
+    "title": "The Safety Dance",
+    "artist": "Men Without Hats",
+    "video": "1p_BvaHsgGg",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.8,
+    "gap": 9348.461538461539,
+    "year": "1982",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-06-19T00:13:27.558Z",
+    "genre": "Electronic",
+    "realBpm": 25,
+    "volume": 0.75,
+    "author": "Strainer",
+    "sourceUrl": "Men Without Hats - The Safety Dance",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4846,
+    "tracksCount": 1,
+    "search": "menwithouthatsthesafetydance",
     "local": false
   },
   {
@@ -107439,6 +107798,34 @@
     "local": false
   },
   {
+    "id": "september-cry-for-you",
+    "title": "Cry For You",
+    "artist": "September",
+    "video": "iigsUXhpKpM",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.8,
+    "gap": 30888.475750577367,
+    "year": "2005",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-06-19T00:13:26.747Z",
+    "genre": "Dance",
+    "realBpm": 33,
+    "volume": 0.76,
+    "author": "Dragon33",
+    "sourceUrl": "September - Cry For You",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4840,
+    "tracksCount": 1,
+    "search": "septembercryforyou",
+    "local": false
+  },
+  {
     "id": "sergio-dalma-bailar-pegados",
     "title": "Bailar pegados",
     "artist": "Sergio Dalma",
@@ -113205,6 +113592,35 @@
     "local": false
   },
   {
+    "id": "steppenwolf-born-to-be-wild",
+    "title": "Born To Be Wild",
+    "artist": "Steppenwolf",
+    "video": "rMbATaj7Il8",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 13227.241379310344,
+    "year": "1968",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:28.479Z",
+    "edition": "SingStar Pop",
+    "genre": "Rock",
+    "realBpm": 40,
+    "volume": 0.77,
+    "author": "Master_Vyggän",
+    "sourceUrl": "Steppenwolf - Born To Be Wild",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4853,
+    "tracksCount": 1,
+    "search": "steppenwolfborntobewild",
+    "local": false
+  },
+  {
     "id": "stereophonics-dakota",
     "title": "Dakota",
     "artist": "Stereophonics",
@@ -116279,6 +116695,146 @@
     "shortId": 4174,
     "tracksCount": 1,
     "search": "tallyhallbananaman",
+    "local": false
+  },
+  {
+    "id": "tame-impala-borderline",
+    "title": "Borderline",
+    "artist": "Tame Impala",
+    "video": "2g5xkLqIElU",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 4285.102040816327,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.432Z",
+    "genre": "Psychedelic Rock",
+    "realBpm": 26,
+    "volume": 0.75,
+    "author": "sonamor",
+    "sourceUrl": "Tame Impala - Borderline",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4859,
+    "tracksCount": 1,
+    "search": "tameimpalaborderline",
+    "local": false
+  },
+  {
+    "id": "tame-impala-elephant",
+    "title": "Elephant",
+    "artist": "Tame Impala",
+    "video": "LnKUD_OztRE",
+    "language": [
+      "English"
+    ],
+    "bpm": 246.73,
+    "gap": 3727.2767802861426,
+    "year": "2012",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.434Z",
+    "genre": "Psychedelic Rock",
+    "realBpm": 27,
+    "volume": 0.74,
+    "author": "rote_rose",
+    "sourceUrl": "Tame Impala - Elephant",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4861,
+    "tracksCount": 1,
+    "search": "tameimpalaelephant",
+    "local": false
+  },
+  {
+    "id": "tame-impala-let-it-happen",
+    "title": "Let It Happen",
+    "artist": "Tame Impala",
+    "video": "pFptt7Cargc",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.8,
+    "gap": 18739.183346677342,
+    "year": "2015",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.434Z",
+    "genre": "Alternative",
+    "realBpm": 1,
+    "volume": 0.74,
+    "author": "Mircosoft93",
+    "sourceUrl": "Tame Impala - Let It Happen",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4860,
+    "tracksCount": 1,
+    "search": "tameimpalaletithappen",
+    "local": false
+  },
+  {
+    "id": "tame-impala-lost-in-yesterday",
+    "title": "Lost In Yesterday",
+    "artist": "Tame Impala",
+    "video": "utCjuKDXQsE",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.15,
+    "gap": 25146.997747286503,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.436Z",
+    "genre": "Rock",
+    "realBpm": 17,
+    "volume": 0.75,
+    "author": "lukmuk",
+    "sourceUrl": "Tame Impala - Lost In Yesterday",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4862,
+    "tracksCount": 1,
+    "search": "tameimpalalostinyesterday",
+    "local": false
+  },
+  {
+    "id": "tame-impala-the-less-i-know-the-better",
+    "title": "The Less I Know The Better",
+    "artist": "Tame Impala",
+    "video": "sBzrzS1Ag_g",
+    "language": [
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 102234.35897435897,
+    "year": "2015",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:38.181Z",
+    "genre": "Rock",
+    "realBpm": 19,
+    "volume": 0.75,
+    "author": "Tensey",
+    "sourceUrl": "Tame Impala - The Less I Know The Better",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4857,
+    "tracksCount": 1,
+    "search": "tameimpalathelessiknowthebetter",
     "local": false
   },
   {
@@ -119979,6 +120535,60 @@
     "local": false
   },
   {
+    "id": "the-cheeky-girls-cheeky-song-touch-my-bum",
+    "title": "Cheeky Song (Touch My Bum)",
+    "artist": "The Cheeky Girls",
+    "video": "mfODYOp41ww",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 2119.230769230769,
+    "year": "2002",
+    "lastUpdate": "2025-06-19T00:13:28.143Z",
+    "genre": "Pop",
+    "realBpm": 33,
+    "volume": 0.95,
+    "author": "bunnyking",
+    "sourceUrl": "The Cheeky Girls - Cheeky Song (Touch My Bum)",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4851,
+    "tracksCount": 1,
+    "search": "thecheekygirlscheekysongtouchmybum",
+    "local": false
+  },
+  {
+    "id": "the-chemical-brothers-setting-sun",
+    "title": "Setting Sun",
+    "artist": "The Chemical Brothers",
+    "video": "p5NX1FC-7-w",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 42930,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-19T00:13:28.331Z",
+    "realBpm": 34,
+    "volume": 0.73,
+    "author": "choosie",
+    "sourceUrl": "The Chemical Brothers - Setting Sun",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4852,
+    "tracksCount": 1,
+    "search": "thechemicalbrotherssettingsun",
+    "local": false
+  },
+  {
     "id": "the-cinematic-orchestra-to-build-a-home",
     "title": "To build a home",
     "artist": "The Cinematic Orchestra",
@@ -120114,6 +120724,33 @@
     "shortId": 4312,
     "tracksCount": 1,
     "search": "thecommonlinnetscalmafterthestorm",
+    "local": false
+  },
+  {
+    "id": "the-communards-with-sarah-jane-morris-dont-leave-me-this-way",
+    "title": "Don’t Leave Me This Way",
+    "artist": "The Communards with Sarah Jane Morris",
+    "video": "1RHBAd5YUR8",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.3,
+    "gap": 6480.361121782558,
+    "year": "1986",
+    "lastUpdate": "2025-06-19T00:13:27.429Z",
+    "genre": "Synth-Pop",
+    "realBpm": 42,
+    "volume": 0.78,
+    "author": "znxineohp",
+    "sourceUrl": "The Communards with Sarah Jane Morris - Don’t Leave Me This Way",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4845,
+    "tracksCount": 1,
+    "search": "thecommunardswithsarahjanemorrisdontleavemethisway",
     "local": false
   },
   {
@@ -122973,6 +123610,58 @@
     "local": false
   },
   {
+    "id": "the-snowman-walking-in-the-air",
+    "title": "Walking In The Air",
+    "artist": "The Snowman",
+    "video": "wQt6NmOKzYw",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.76,
+    "gap": 14747.87785899552,
+    "year": "209",
+    "lastUpdate": "2025-06-19T00:13:27.304Z",
+    "realBpm": 29,
+    "volume": 0.75,
+    "author": "lozboorman",
+    "sourceUrl": "The Snowman - Walking In The Air",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4844,
+    "tracksCount": 1,
+    "search": "thesnowmanwalkingintheair",
+    "local": false
+  },
+  {
+    "id": "the-soup-dragons-im-free",
+    "title": "I’m Free",
+    "artist": "The Soup Dragons",
+    "video": "EVw7fzIP6cQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 206.49,
+    "gap": 133.001598140346,
+    "year": "1989",
+    "lastUpdate": "2025-06-19T00:13:28.480Z",
+    "realBpm": 60,
+    "volume": 0.79,
+    "author": "daggeg, Schreiadler",
+    "sourceUrl": "The Soup Dragons - I’m Free",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4854,
+    "tracksCount": 1,
+    "search": "thesoupdragonsimfree",
+    "local": false
+  },
+  {
     "id": "the-specials-ghost-town",
     "title": "Ghost Town",
     "artist": "The Specials",
@@ -123138,6 +123827,33 @@
     "local": false
   },
   {
+    "id": "the-supremes-stop-in-the-name-of-love",
+    "title": "Stop! In The Name Of Love",
+    "artist": "The Supremes",
+    "video": "9JiS02O4fEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 231.85,
+    "gap": 18673.696802879527,
+    "year": "1965",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-19T00:13:27.695Z",
+    "realBpm": 22,
+    "volume": 0.74,
+    "author": "Unknown",
+    "sourceUrl": "The Supremes - Stop! In The Name Of Love",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4847,
+    "tracksCount": 1,
+    "search": "thesupremesstopinthenameoflove",
+    "local": false
+  },
+  {
     "id": "the-sweet-fox-on-the-run",
     "title": "Fox On The Run",
     "artist": "The Sweet",
@@ -123167,6 +123883,34 @@
     "shortId": 4421,
     "tracksCount": 1,
     "search": "thesweetfoxontherun",
+    "local": false
+  },
+  {
+    "id": "the-temper-trap-sweet-disposition",
+    "title": "Sweet Disposition",
+    "artist": "The Temper Trap",
+    "video": "jxKjOOR9sPU",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": 7111.627906976744,
+    "year": "2008",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-19T00:13:25.766Z",
+    "genre": "Indie",
+    "realBpm": 37,
+    "volume": 0.71,
+    "author": "aikon96",
+    "sourceUrl": "The Temper Trap - Sweet Disposition",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4837,
+    "tracksCount": 1,
+    "search": "thetempertrapsweetdisposition",
     "local": false
   },
   {
@@ -129346,6 +130090,33 @@
     "local": false
   },
   {
+    "id": "vicente-fernandez-mujeres-divinas",
+    "title": "Mujeres divinas",
+    "artist": "Vicente Fernández",
+    "video": "t3uoUVi-QFE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 196.98,
+    "gap": 20220.051781906794,
+    "year": "1988",
+    "artistOrigin": "MX",
+    "lastUpdate": "2025-06-19T00:13:38.180Z",
+    "realBpm": 34,
+    "volume": 0.84,
+    "author": "kaim21",
+    "sourceUrl": "https://youtu.be/t3uoUVi-QFE?si=FN4ko0q4d_j4ELLY",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4856,
+    "tracksCount": 1,
+    "search": "vicentefernandezmujeresdivinas",
+    "local": false
+  },
+  {
     "id": "vicentico-y-valeria-bertuccelli-no-te-apartes-de-mi",
     "title": "No te apartes de mí",
     "artist": "Vicentico y Valeria Bertuccelli",
@@ -131926,6 +132697,34 @@
     "shortId": 4730,
     "tracksCount": 1,
     "search": "windows95mannorules",
+    "local": false
+  },
+  {
+    "id": "wings-mull-of-kintyre",
+    "title": "Mull Of Kintyre",
+    "artist": "Wings",
+    "video": "Plhtk_XJqhM",
+    "language": [
+      "English"
+    ],
+    "bpm": 370,
+    "gap": 7236.486486486487,
+    "year": "1977",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-19T00:13:27.151Z",
+    "genre": "Rock",
+    "realBpm": 47,
+    "volume": 0.78,
+    "author": "Fepo",
+    "sourceUrl": "Wings - Mull Of Kintyre",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4843,
+    "tracksCount": 1,
+    "search": "wingsmullofkintyre",
     "local": false
   },
   {

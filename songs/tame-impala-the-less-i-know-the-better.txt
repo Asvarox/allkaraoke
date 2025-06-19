@@ -1,0 +1,379 @@
+#ARTIST:Tame Impala
+#TITLE:The Less I Know The Better
+#CREATOR:Tensey
+#BPM:234
+#YEAR:2015
+#VIDEO:v=sBzrzS1Ag_g
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:102234,35897435897
+#ALLKARAOKE_ID:tame-impala-the-less-i-know-the-better
+#ALLKARAOKE_SID:4857
+#ALLKARAOKE_LASTUPDATE:2025-06-19T00:13:38.181Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:19
+#ALLKARAOKE_SOURCEURL:Tame Impala - The Less I Know The Better
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Tame Impala - The Less I Know The Better.mp3
+#COVER:Tame Impala - The Less I Know The Better [CO].jpg
+#BACKGROUND:Tame Impala - The Less I Know The Better [BG].jpg
+#START:78
+: 16 7 4 Some
+: 25 6 6 one 
+: 33 6 8 said 
+: 41 3 9 they 
+: 45 3 8 left 
+: 53 4 6 to
+: 57 14 4 ge
+: 71 4 1 ther
+- 75
+: 82 6 11 I 
+: 90 6 9 ran 
+: 98 6 8 out 
+: 106 3 9 the 
+: 110 3 8 door 
+: 117 3 6 to 
+: 121 13 4 get 
+: 135 2 1 her
+- 137
+: 146 6 4 She 
+: 154 6 6 was 
+: 162 8 8 hold
+: 170 2 9 ing 
+: 174 6 8 hands 
+: 182 3 6 with 
+: 186 12 4 Tre
+: 198 6 1 vor
+- 204
+: 210 6 11 Not 
+: 218 6 9 the 
+: 226 8 8 great
+: 234 3 9 est 
+: 238 7 8 feel
+: 245 3 6 ing 
+* 250 12 6 ev
+* 262 8 1 er
+* 270 7 -1 ~
+- 277
+: 280 8 6 Said, 
+: 290 6 8 "Pull 
+: 298 4 9 your
+: 302 6 8 self 
+: 310 4 6 to
+: 314 12 4 geth
+: 326 6 1 er
+- 332
+: 338 6 11 You 
+: 346 6 9 should 
+: 354 6 8 try 
+: 362 3 9 your 
+: 366 6 8 luck 
+: 374 3 6 with 
+: 378 12 4 Heath
+: 390 6 1 er"
+- 396
+: 402 6 4 Then 
+: 410 6 6 I 
+: 418 6 8 heard 
+: 426 3 9 they 
+: 430 6 8 slept 
+: 438 4 6 to
+: 442 12 4 geth
+: 454 4 1 er
+- 458
+* 466 6 11 Oh, 
+: 474 6 9 the 
+: 482 6 8 less 
+: 490 3 9 I 
+: 494 6 8 know 
+: 502 3 6 the 
+: 506 12 6 bett
+: 518 8 1 er
+: 526 12 -1 ~
+- 538 586
+- 586
+: 602 6 9 The 
+: 610 6 8 less 
+: 618 3 9 I 
+: 622 6 8 know 
+: 629 3 6 the 
+: 633 12 6 bett
+: 645 8 1 er
+: 653 5 -1 ~
+- 658
+: 662 6 4 Oh, 
+: 670 3 3 my 
+: 674 18 -1 love,
+- 692
+: 702 6 8 Can't 
+: 710 6 9 you 
+: 718 6 6 see 
+: 725 8 4 your
+: 733 6 4 self 
+: 742 6 8 by 
+: 750 3 9 my 
+: 754 24 6 side?
+- 778
+: 790 6 4 No 
+: 798 4 3 sur
+: 802 7 1 pri
+: 809 10 -1 se
+- 819
+: 822 3 -4 When 
+: 826 3 -4 you're 
+: 830 6 8 on 
+: 838 6 9 his 
+: 846 7 6 shoul
+: 853 7 4 der 
+: 862 6 4 like 
+: 870 7 8 eve
+: 877 3 9 ry 
+: 882 24 6 night
+- 906
+: 918 6 4 Oh, 
+: 926 3 3 my 
+: 930 4 1 lo
+: 934 18 -1 ve,
+- 952
+: 958 6 8 Can't 
+: 966 6 9 you 
+: 974 6 6 see 
+: 982 6 4 that 
+: 990 6 4 you're 
+* 998 6 8 on 
+* 1005 4 9 my 
+* 1010 24 6 mind?
+- 1034
+: 1046 6 4 Don't 
+: 1054 4 3 sup
+: 1058 6 -1 pose 
+: 1066 3 -1 you 
+: 1070 6 -1 could 
+: 1078 8 -1 con
+: 1086 6 8 vince 
+: 1094 6 9 your 
+: 1102 8 11 lo
+: 1110 5 9 ver 
+: 1117 6 8 to
+- 1123
+: 1126 5 9 Change 
+: 1134 3 8 his 
+: 1138 6 8 mind
+: 1144 14 6 ~?
+- 1158
+: 1172 8 4 So 
+* 1182 4 3 good
+* 1186 20 1 bye
+- 1206 1280
+- 1280
+: 1296 6 4 She 
+: 1304 8 6 said, 
+: 1314 6 8 "It's 
+: 1322 4 9 not 
+: 1327 6 8 now 
+: 1335 3 6 or 
+: 1339 11 4 ne
+: 1350 8 1 ver
+- 1358
+: 1362 6 11 Wait 
+: 1370 6 9 ten 
+: 1378 6 8 years, 
+: 1386 4 9 we'll 
+: 1391 6 8 be 
+: 1398 4 6 to
+: 1402 12 4 geth
+: 1414 6 1 er"
+- 1420
+: 1426 6 4 I 
+: 1434 6 6 said, 
+: 1442 8 8 "Bett
+: 1450 3 9 er 
+: 1455 6 8 late 
+: 1462 3 6 than 
+: 1466 12 4 nev
+: 1478 8 1 er
+- 1486
+* 1490 6 11 Just 
+: 1498 6 9 don't 
+: 1506 6 8 make 
+: 1514 3 9 me 
+: 1518 6 8 wait 
+: 1526 4 6 for
+: 1530 12 6 e
+: 1542 8 1 v
+: 1550 10 -1 er"
+- 1560 1610
+- 1610
+: 1626 6 9 Don't 
+: 1634 6 8 make 
+: 1642 3 9 me 
+: 1646 6 8 wait 
+: 1654 4 6 for
+: 1658 12 6 e
+: 1670 8 1 v
+: 1678 10 -1 er
+- 1688 1738
+- 1738
+: 1754 6 9 Don't 
+: 1762 6 8 make 
+: 1770 3 9 me 
+: 1774 6 8 wait 
+* 1782 4 6 for
+* 1786 12 6 e
+* 1798 8 1 v
+* 1806 5 -1 er
+- 1811
+: 1814 6 4 Oh, 
+: 1822 3 3 my 
+: 1826 18 -1 love,
+- 1844
+: 1854 6 8 Can't 
+: 1862 6 9 you 
+: 1870 6 6 see 
+: 1877 8 4 your
+: 1885 6 4 self 
+: 1894 6 8 by 
+: 1902 3 9 my 
+: 1906 24 6 side?
+- 1930
+: 1942 3 -4 I 
+: 1946 3 -3 don't 
+: 1950 4 -4 sup
+: 1954 6 8 pose 
+: 1962 3 8 you 
+: 1966 6 8 could 
+: 1974 8 4 con
+: 1982 6 8 vince 
+: 1990 6 9 your 
+: 1998 8 11 lo
+: 2006 4 9 ver 
+: 2013 6 8 to
+- 2019
+* 2022 5 9 Change 
+* 2030 3 8 his 
+* 2034 6 8 mind
+* 2040 14 6 ~?
+- 2054 2066
+- 2066
+: 2082 6 -6 I 
+: 2090 6 -4 was 
+: 2098 8 -1 do
+: 2106 6 -4 in' 
+: 2114 6 3 fine 
+: 2122 4 4 with
+: 2126 6 3 out 
+: 2134 5 -1 you
+- 2139
+: 2142 6 6 'Til 
+: 2150 3 4 I 
+: 2154 3 4 saw 
+: 2158 3 3 your 
+: 2162 4 3 fa
+: 2166 4 1 ce,
+- 2170
+: 2174 6 4 Now 
+: 2182 3 3 I 
+: 2186 3 3 can't 
+: 2190 4 1 e
+: 2194 4 1 ra
+: 2198 6 -1 se
+- 2204
+: 2210 8 -6 Giv
+: 2218 6 -4 in' 
+: 2226 6 -1 in 
+: 2234 6 -4 to 
+: 2242 6 3 all 
+: 2250 3 4 his 
+: 2254 7 3 bull
+: 2261 6 -1 shit
+- 2267
+: 2270 6 6 Is 
+: 2278 3 4 this 
+: 2282 3 4 what 
+: 2286 3 3 you 
+: 2290 4 3 want
+: 2294 3 1 ~?
+- 2297
+: 2302 6 4 Is 
+: 2310 3 3 this 
+: 2314 3 3 who 
+: 2318 3 1 you 
+: 2322 4 1 are
+: 2326 8 -1 ~?
+- 2334
+: 2338 6 -6 I 
+: 2346 6 -4 was 
+: 2354 8 -1 do
+: 2362 6 -4 in' 
+: 2370 6 3 fine 
+: 2378 4 4 with
+: 2382 6 3 out 
+: 2390 5 -1 you
+- 2395
+: 2398 6 6 'Til 
+: 2406 3 4 I 
+: 2410 3 4 saw 
+: 2414 3 3 your 
+: 2418 4 3 ey
+: 2422 4 1 es
+- 2426
+: 2431 6 4 turn 
+: 2439 4 3 a
+: 2443 3 3 way 
+: 2447 3 1 from 
+: 2451 4 1 mi
+: 2455 6 -1 ne
+- 2461
+: 2466 6 -6 Oh, 
+: 2474 6 -4 sweet 
+: 2482 8 -1 dar
+: 2490 6 -4 ing, 
+* 2498 6 3 where 
+* 2506 3 4 he 
+* 2510 5 3 wants 
+* 2517 1 -1 you
+- 2518
+: 2520 4 -6 Said, 
+: 2526 6 6 "Come 
+: 2534 3 4 on 
+: 2538 4 4 Su
+: 2542 4 3 per
+: 2546 4 3 m
+: 2550 6 1 an, 
+: 2558 6 4 say 
+: 2566 3 3 your 
+: 2570 3 3 stu
+: 2573 3 1 pid 
+: 2578 4 1 li
+: 2582 12 -1 ne"
+- 2594 2632
+- 2632
+: 2648 4 -6 Said, 
+: 2654 6 6 "Come 
+: 2662 3 4 on 
+: 2666 4 4 Su
+: 2670 4 3 per
+: 2674 4 3 m
+: 2678 6 1 an, 
+: 2686 6 4 say 
+: 2694 3 3 your 
+: 2698 3 3 stu
+: 2701 3 1 pid 
+: 2706 4 1 li
+: 2710 12 -1 ne"
+- 2722 2760
+- 2760
+: 2776 4 -6 Said, 
+: 2782 6 6 "Come 
+: 2790 3 4 on 
+: 2794 4 4 Su
+: 2798 4 3 per
+: 2802 4 3 m
+: 2806 6 1 an, 
+: 2814 6 4 say 
+: 2822 3 3 your 
+: 2826 3 3 stu
+: 2829 3 1 pid 
+: 2834 4 1 li
+: 2838 12 -1 ne"
+E
