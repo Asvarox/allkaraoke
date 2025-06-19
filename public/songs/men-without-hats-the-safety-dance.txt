@@ -1,0 +1,501 @@
+#ARTIST:Men Without Hats
+#TITLE:The Safety Dance
+#CREATOR:Strainer
+#BPM:202,8
+#YEAR:1982
+#VIDEO:v=1p_BvaHsgGg
+#GENRE:Electronic
+#LANGUAGE:English
+#GAP:9348,461538461539
+#ALLKARAOKE_ID:men-without-hats-the-safety-dance
+#ALLKARAOKE_SID:4846
+#ALLKARAOKE_LASTUPDATE:2025-06-19T00:13:27.558Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:25
+#ALLKARAOKE_SOURCEURL:Men Without Hats - The Safety Dance
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Men Without Hats - The Safety Dance.mp3
+: 13 1 7 We 
+: 15 1 7 can 
+: 17 3 7 dance 
+: 21 1 5 if 
+: 23 1 4 we 
+: 25 1 5 want 
+: 27 5 7 to
+- 32
+: 37 1 5 We 
+: 39 1 5 can 
+: 41 3 5 leave 
+: 45 3 5 your 
+: 49 4 5 friends 
+: 54 1 4 be
+: 56 7 5 hind
+- 63
+: 69 1 5 ’Cause 
+: 71 1 5 your 
+: 73 4 5 friends 
+: 78 2 5 don’t 
+: 81 4 5 dance
+- 85
+: 86 1 5 And 
+: 88 2 5 if 
+: 91 1 5 they 
+: 93 3 5 don’t 
+: 97 4 5 dance
+- 101
+: 102 1 5 Well 
+: 104 4 5 they’re, 
+: 109 2 7 no 
+: 113 4 5 friends 
+: 118 1 4 of 
+: 120 5 2 mine
+- 125
+* 132 6 0 Say, 
+: 141 1 7 we 
+: 143 1 7 can 
+: 145 2 7 go 
+: 149 1 5 where 
+: 151 1 4 we 
+: 153 1 5 want 
+: 155 5 7 to
+- 160
+: 164 1 5 A 
+: 166 1 5 place 
+: 168 1 5 where 
+: 170 2 5 they 
+: 173 3 5 will 
+: 178 2 5 ne
+: 181 1 4 ver 
+: 183 5 5 find
+- 188
+: 195 1 5 And 
+: 197 1 5 we 
+: 199 1 5 can 
+: 201 2 5 act 
+: 205 1 5 like 
+: 207 1 5 we 
+: 209 3 5 come
+- 212
+: 213 2 5 From 
+: 216 2 5 out 
+: 219 1 5 of 
+: 221 3 5 this 
+: 225 3 5 world
+- 228
+: 229 1 5 Leave 
+: 231 1 5 the 
+: 233 3 7 real 
+: 237 2 7 one 
+: 241 3 5 far 
+: 245 1 4 be
+: 247 9 2 hind
+- 256
+: 260 1 0 And 
+: 262 1 0 we 
+: 264 1 0 can 
+: 266 7 0 dance
+- 273
+F 277 2 0 Dan
+F 282 5 3 sez!
+- 287 382
+- 382
+: 396 2 7 We 
+: 399 1 7 can 
+: 401 3 7 go 
+: 405 1 5 when 
+: 407 1 4 we 
+: 409 1 5 want 
+: 411 5 7 to
+- 416
+: 421 1 5 Night 
+: 423 1 5 is 
+: 425 3 5 young 
+: 429 3 5 and 
+: 433 2 5 so 
+: 437 2 4 am 
+: 440 6 5 I
+- 446
+: 451 1 5 And 
+: 453 1 5 we 
+: 455 1 5 can 
+: 457 3 5 dress 
+: 461 2 5 real 
+: 465 4 5 neat
+- 469
+: 470 1 5 From 
+: 472 1 5 our 
+: 474 2 5 hats 
+: 478 1 5 to 
+: 480 1 5 our 
+: 482 3 5 feet
+- 485
+: 486 1 5 And 
+: 488 1 5 sur
+: 490 1 7 prise 
+: 492 1 7 them 
+: 494 1 7 with 
+: 496 1 7 a 
+: 498 1 5 vic
+: 500 2 4 tory 
+: 503 6 2 cry
+- 509
+* 516 6 0 Say, 
+: 525 1 7 we 
+: 527 1 7 can 
+: 529 4 7 act 
+: 534 1 5 if 
+: 536 1 4 we 
+: 538 1 5 want 
+: 540 5 7 to
+- 545
+: 548 1 5 If 
+: 550 1 5 we 
+: 552 3 5 don’t 
+: 556 3 5 no
+: 560 4 5 bo
+: 565 1 4 dy 
+: 567 5 5 will
+- 572
+: 579 1 5 And 
+: 581 1 5 you 
+: 583 1 5 can 
+: 585 3 5 act 
+: 589 3 5 real 
+: 593 3 5 rude
+- 596
+: 599 1 5 And 
+: 601 1 5 to
+: 603 1 5 tal
+: 605 1 5 ly 
+: 607 1 5 re
+: 609 1 5 mo
+: 611 1 5 ~ved
+- 612
+: 613 1 5 And 
+: 615 1 5 I 
+: 617 1 5 can 
+: 619 1 7 act 
+: 621 1 7 like 
+: 623 1 7 an 
+: 626 1 5 im
+: 628 1 4 be
+: 630 5 2 cile
+- 635
+* 643 1 0 And 
+* 645 4 0 say
+- 649
+: 653 1 5 We 
+: 655 1 5 can 
+: 657 5 5 dance, 
+: 669 1 5 we 
+: 671 1 5 can 
+: 673 5 5 dance
+- 678
+: 681 1 5 E
+: 683 1 5 ve
+: 685 1 5 ry
+: 687 2 5 thing’s 
+: 690 1 5 out 
+: 692 1 5 of 
+: 694 1 5 con
+: 696 5 5 trol
+- 701 703
+- 703
+: 717 1 5 We 
+: 719 1 5 can 
+: 721 5 5 dance, 
+: 733 1 5 we 
+: 735 1 5 can 
+: 737 5 5 dance
+- 742
+: 743 1 5 We’re 
+: 745 3 8 doing 
+: 749 1 8 it 
+: 751 1 5 from 
+: 753 3 8 pole 
+: 757 1 8 to 
+: 759 5 5 pole
+- 764 767
+- 767
+: 781 1 5 We 
+: 783 1 5 can 
+: 785 5 5 dance, 
+: 797 1 5 we 
+: 799 1 5 can 
+: 801 5 5 dance
+- 806
+: 809 1 5 E
+: 811 1 5 ve
+: 813 1 5 ry
+: 815 1 5 bo
+: 817 1 5 dy 
+: 819 1 5 look 
+: 821 1 5 at 
+: 823 1 5 your 
+: 825 4 5 hands
+- 829 831
+- 831
+: 845 1 5 We 
+: 847 1 5 can 
+: 849 5 5 dance, 
+: 861 1 5 we 
+: 863 1 5 can 
+: 865 5 5 dance
+- 870
+: 872 1 8 E
+: 874 1 8 ve
+: 876 1 8 ry
+: 878 1 5 bo
+: 880 1 5 dy’s 
+: 882 1 8 ta
+: 884 1 8 king 
+: 886 1 8 the 
+* 888 8 5 cha
+* 897 5 8 ~
+* 903 3 5 ~
+* 907 6 7 ~nce
+- 913 914
+- 914
+* 928 4 7 Safe
+* 933 2 7 ty 
+* 936 10 9 dance
+- 946
+: 954 1 9 Oh 
+: 956 2 9 well 
+: 959 1 9 its 
+: 961 3 9 safe 
+: 965 1 6 to 
+: 967 10 7 dance
+- 977
+: 988 1 7 Yes 
+: 990 2 7 it’s 
+: 993 2 7 safe 
+: 997 1 9 to 
+: 999 8 9 dance
+- 1007 1150
+- 1150
+: 1164 2 7 We 
+: 1167 1 7 can 
+: 1169 2 7 dance 
+: 1173 1 5 if 
+: 1175 1 4 we 
+: 1177 1 5 want 
+: 1179 8 7 to
+- 1187
+: 1188 1 5 We’ve 
+: 1191 1 5 got 
+: 1193 2 5 all 
+: 1197 2 5 your 
+: 1201 2 5 life 
+: 1205 2 4 and 
+: 1208 7 5 mine
+- 1215
+: 1221 2 5 As 
+: 1224 2 5 long 
+: 1227 1 5 as 
+: 1229 1 5 we 
+: 1231 1 5 a
+: 1233 2 5 buse 
+: 1236 2 5 it,
+- 1238
+: 1240 1 5 Ne
+: 1242 2 5 ver 
+: 1245 1 5 gon
+: 1247 1 5 na 
+: 1249 1 5 lose 
+: 1251 3 5 it
+- 1254
+: 1255 2 7 E
+: 1258 1 7 ve
+: 1260 1 7 ry
+: 1262 1 7 thing 
+: 1264 1 7 will 
+: 1266 1 5 work 
+: 1268 1 4 out 
+: 1271 11 2 right
+- 1282
+* 1286 1 0 I 
+* 1288 3 0 say, 
+: 1293 1 7 we 
+: 1295 1 7 can 
+: 1298 3 7 dance 
+: 1302 1 5 if 
+: 1304 1 4 we 
+: 1306 1 5 want 
+: 1308 8 7 to
+- 1316
+: 1317 1 5 We 
+: 1319 1 5 can 
+: 1321 2 5 leave 
+: 1325 2 5 your 
+: 1329 2 5 friends 
+: 1333 1 4 be
+: 1335 6 5 hind
+- 1341
+: 1349 1 5 ’Cause 
+: 1351 1 5 your 
+: 1353 3 5 friends 
+: 1357 3 5 don’t 
+: 1361 3 5 dance,
+- 1364
+: 1366 1 5 And 
+: 1368 2 5 if 
+: 1372 1 5 they 
+: 1374 3 5 don’t 
+: 1378 3 5 dance
+- 1381
+: 1382 1 5 Well 
+: 1384 3 5 they’re 
+: 1389 3 7 no 
+: 1393 3 5 friends 
+: 1397 1 4 of 
+: 1399 6 2 mine
+- 1405
+* 1411 1 0 I 
+* 1413 6 0 say,
+- 1419
+: 1421 1 5 We 
+: 1423 1 5 can 
+: 1425 8 5 dance, 
+: 1437 1 5 we 
+: 1439 1 5 can 
+: 1441 5 5 dance
+- 1446
+: 1449 2 5 E
+: 1452 1 5 ve
+: 1454 1 5 ry
+: 1456 1 5 thing’s 
+: 1459 1 5 out 
+: 1461 1 5 of 
+: 1463 1 5 con
+: 1465 7 5 trol
+- 1472
+: 1485 2 5 We 
+: 1488 1 5 can 
+: 1490 4 5 dance, 
+: 1501 2 5 we 
+: 1504 1 5 can 
+: 1506 4 5 dance
+- 1510
+: 1511 2 5 We’re 
+: 1514 3 8 doing 
+: 1518 1 8 it 
+: 1520 1 5 from 
+: 1523 3 8 pole 
+: 1527 1 8 to 
+: 1529 8 5 pole
+- 1537
+: 1549 2 5 We 
+: 1552 1 5 can 
+: 1554 4 5 dance, 
+: 1565 2 5 we 
+: 1568 1 5 can 
+: 1570 4 5 dance
+- 1574
+: 1577 1 5 E
+: 1579 1 5 ve
+: 1581 1 5 ry
+: 1582 1 5 bo
+: 1584 1 5 dy 
+: 1586 1 5 look 
+: 1588 1 5 at 
+: 1590 1 5 your 
+: 1592 8 5 hands
+- 1600
+: 1613 2 5 We 
+: 1616 1 5 can 
+: 1618 4 5 dance, 
+: 1629 2 5 we 
+: 1632 1 5 can 
+: 1634 4 5 dance
+- 1638
+: 1641 1 8 E
+: 1643 1 8 ve
+: 1645 1 8 ry
+: 1647 1 5 bo
+: 1649 1 5 dy’s 
+: 1651 1 8 ta
+: 1653 1 8 king 
+: 1655 1 8 the 
+* 1657 8 5 cha
+* 1667 4 8 ~
+* 1672 3 5 ~
+* 1676 6 7 ~nce
+- 1682
+: 1692 2 7 Well 
+: 1695 2 7 it’s 
+: 1698 2 7 safe 
+: 1702 1 9 to 
+: 1704 7 9 dance
+- 1711
+: 1723 2 9 Yes 
+: 1726 2 9 it’s 
+: 1729 2 9 safe 
+: 1733 1 7 to 
+: 1735 8 7 dance
+- 1743
+: 1755 2 7 Well 
+: 1758 2 7 it’s 
+: 1761 2 7 safe 
+: 1765 1 9 to 
+: 1767 7 9 dance
+- 1774
+: 1786 2 9 Well 
+: 1789 2 9 it’s 
+: 1792 2 9 safe 
+: 1796 1 7 to 
+: 1798 7 7 dance
+- 1805 1807
+- 1807
+: 1821 2 7 Yes 
+: 1824 2 7 it’s 
+: 1827 2 7 safe 
+: 1831 1 9 to 
+: 1833 7 9 dance
+- 1840
+: 1852 2 9 Well 
+: 1855 2 9 it’s 
+: 1858 2 9 safe 
+: 1862 1 7 to 
+: 1864 7 7 dance
+- 1871
+: 1885 2 7 Well 
+: 1888 2 7 it’s 
+: 1891 2 7 safe 
+: 1895 1 9 to 
+: 1897 7 9 dance
+- 1904
+: 1917 2 9 It’s 
+: 1920 1 9 a 
+: 1923 2 9 Safe
+: 1926 2 0 ty 
+: 1929 6 0 Dance
+- 1935
+* 1947 2 0 Well 
+* 1950 1 0 it’s 
+* 1952 1 0 a 
+* 1954 2 7 Safe
+* 1957 1 7 ty 
+* 1959 8 0 Dance
+- 1967
+* 1979 2 0 Oh 
+* 1982 1 0 it’s 
+* 1984 1 0 a 
+* 1986 2 7 Safe
+* 1989 1 7 ty 
+* 1991 8 0 Dance
+- 1999
+* 2011 2 0 Oh 
+* 2014 1 0 it’s 
+* 2016 1 0 a 
+* 2018 2 7 Safe
+* 2021 1 7 ty 
+* 2023 8 0 Dance
+- 2031
+* 2043 2 0 Well 
+* 2046 1 0 it’s 
+* 2048 1 0 a 
+* 2050 2 7 Safe
+* 2053 1 7 ty 
+* 2055 8 0 Dance
+E

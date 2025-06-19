@@ -1,0 +1,227 @@
+#ARTIST:Tame Impala
+#TITLE:Elephant
+#CREATOR:rote_rose
+#BPM:246,73
+#YEAR:2012
+#VIDEO:v=LnKUD_OztRE
+#GENRE:Psychedelic Rock
+#LANGUAGE:English
+#GAP:3727,2767802861426
+#ALLKARAOKE_ID:tame-impala-elephant
+#ALLKARAOKE_SID:4861
+#ALLKARAOKE_LASTUPDATE:2025-06-19T00:13:38.434Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:27
+#ALLKARAOKE_SOURCEURL:Tame Impala - Elephant
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Tame Impala - Elephant.mp3
+#COVER:Tame Impala - Elephant [CO].jpg
+#BACKGROUND:Tame Impala - Elephant [BG].jpg
+: 16 3 2 Well, 
+: 20 2 2 he 
+: 23 7 2 feels 
+: 32 4 2 like 
+: 37 2 2 an 
+* 40 3 2 e
+* 44 2 2 le
+* 47 3 2 phant
+- 50
+: 54 5 2 Sha
+: 60 3 2 kin' 
+: 64 6 2 his 
+: 71 6 2 big 
+: 79 6 2 grey 
+: 87 6 2 trunk 
+: 95 5 2 for 
+: 101 2 2 the 
+: 104 5 2 hell 
+: 110 2 2 of 
+: 113 5 2 it
+- 118
+: 131 3 5 He 
+: 135 8 5 knows 
+: 144 4 -1 that 
+: 149 2 -1 you're 
+: 152 4 -1 drea
+: 157 2 -1 min' 
+: 160 5 -1 a
+: 168 7 -1 bout 
+: 176 4 -1 be
+: 181 3 -1 ing 
+: 185 3 -3 loved 
+: 189 8 -3 by 
+: 198 9 -3 him
+- 207 248
+- 248
+: 264 4 -3 Too 
+: 269 5 -2 bad 
+: 275 4 -3 your 
+: 280 4 -4 chan
+: 285 4 -3 ces 
+: 290 4 -4 are 
+: 295 9 -5 slim
+- 304 382
+- 382
+: 398 2 2 And 
+: 401 6 2 it's 
+: 408 7 2 not 
+: 416 7 2 like 
+: 424 7 2 Mis
+: 432 7 2 ter 
+: 440 5 2 Shuck
+- 445
+: 448 3 2 To 
+: 452 2 2 get 
+: 455 9 2 shy 
+: 465 4 2 when 
+: 470 2 2 they 
+: 473 4 2 ask 
+: 478 2 2 him 
+: 481 4 2 who 
+: 486 2 2 is 
+: 489 6 2 on 
+: 496 6 2 top
+- 502
+: 517 3 5 There 
+: 521 6 5 must 
+: 529 5 -1 be 
+: 535 4 -1 some
+: 540 5 -1 thing 
+: 546 4 -1 deep 
+: 551 8 -1 down 
+: 560 4 -1 in 
+: 565 3 -1 the 
+: 569 3 -3 dark 
+: 573 8 -3 down 
+: 582 12 -3 there
+- 594 634
+- 634
+* 650 4 -3 He's 
+* 655 4 -2 not 
+* 660 4 -3 too 
+* 665 4 -4 ea
+* 670 4 -3 si
+* 675 4 -4 ly 
+* 680 9 -5 scared
+- 689 767
+- 767
+: 783 2 2 He's 
+: 786 4 2 got 
+: 793 7 2 friends 
+: 802 2 2 but 
+: 806 3 2 they 
+: 810 3 2 got 
+: 818 8 2 the fear
+- 826
+: 831 3 2 Wouldn't
+: 835 3 2 ~ 
+: 842 6 2 care 
+: 850 3 2 too 
+: 855 2 2 much 
+: 859 3 2 if 
+: 863 2 2 he 
+: 867 5 2 just 
+: 874 3 2 di
+: 879 2 2 sap
+: 883 8 2 peared
+- 891
+: 901 4 5 Oh, 
+: 906 7 5 look, 
+: 914 7 -1 hey, 
+: 922 5 -1 there 
+: 928 2 -1 he 
+: 931 5 -1 is 
+: 937 7 -1 now 
+: 945 5 -1 co
+: 951 3 -1 ming 
+: 955 4 -1 down 
+: 960 7 -1 the 
+: 968 16 -3 stairs
+- 984 1112
+- 1112
+F 1128 2 2 Here 
+F 1130 2 2 he 
+F 1132 7 2 comes
+- 1139 2692
+- 2692
+: 2708 2 2 He 
+: 2711 4 2 pulled 
+: 2716 2 2 the 
+: 2719 5 2 mir
+: 2725 2 2 rors 
+: 2728 3 2 off 
+: 2732 2 2 his 
+* 2735 5 2 Ca
+* 2741 3 2 di
+* 2745 4 2 llac
+- 2749
+: 2752 6 5 Yeah
+- 2758
+* 2760 4 2 'Cause 
+* 2765 2 2 he 
+* 2768 4 2 doesn't
+* 2773 2 2 ~ 
+* 2776 4 2 like 
+* 2781 2 2 it 
+* 2784 4 2 look
+* 2789 2 2 ing 
+* 2792 4 2 like 
+* 2797 2 2 he 
+* 2800 6 2 looks 
+* 2807 7 2 back
+- 2814
+: 2827 3 5 He 
+: 2831 9 5 talks 
+: 2841 6 -1 like 
+: 2848 4 -1 his 
+: 2853 3 -1 o
+: 2857 3 -1 pi
+: 2861 3 -1 ni
+: 2865 3 -1 on 
+: 2872 3 -1 is 
+: 2876 3 -3 a 
+: 2880 3 -3 sim
+: 2884 8 -1 ple 
+: 2893 13 -3 fact
+- 2906 2951
+- 2951
+: 2967 7 2 Some
+: 2975 8 0 bo
+: 2984 7 -3 dy 
+: 2992 7 2 grabbed 
+: 3000 7 2 his 
+: 3008 7 0 co
+: 3016 9 -3 llar
+- 3025
+: 3032 7 2 He 
+: 3040 7 0 cried 
+: 3048 7 -3 the 
+: 3056 7 2 whole 
+: 3064 7 2 way 
+: 3072 10 2 home
+- 3082
+: 3084 3 5 No 
+: 3088 9 5 one 
+: 3098 4 -1 re
+: 3105 3 -1 mem
+: 3110 3 -1 bered 
+: 3114 3 -1 a 
+: 3121 4 -1 thing 
+: 3128 2 -1 when 
+: 3132 2 -3 they 
+: 3136 6 -3 saw 
+: 3145 2 -1 him a
+: 3149 14 -3 gain
+- 3163 3202
+- 3202
+: 3218 4 -3 That's 
+: 3223 4 -2 how 
+: 3228 4 -3 it 
+: 3233 4 -4 is 
+* 3238 4 -3 'til 
+* 3243 4 -4 the 
+* 3248 9 -5 end
+- 3257 3282
+- 3282
+* 3298 14 5 Yeah
+E
