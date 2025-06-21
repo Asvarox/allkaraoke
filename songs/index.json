@@ -6533,6 +6533,34 @@
     "local": false
   },
   {
+    "id": "american-hi-fi-flavor-of-the-weak",
+    "title": "Flavor Of The Weak",
+    "artist": "American Hi-Fi",
+    "video": "uAmINmjpQxw",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 49650,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-21T00:13:07.214Z",
+    "genre": "Rock",
+    "realBpm": 34,
+    "volume": 0.74,
+    "author": "jdogk",
+    "sourceUrl": "American Hi-Fi - Flavor Of The Weak",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4873,
+    "tracksCount": 1,
+    "search": "americanhififlavoroftheweak",
+    "local": false
+  },
+  {
     "id": "americo-el-embrujo",
     "title": "El embrujo",
     "artist": "Américo",
@@ -6663,6 +6691,34 @@
     "shortId": 239,
     "tracksCount": 1,
     "search": "amorelectrosoefogosequeimar",
+    "local": false
+  },
+  {
+    "id": "amy-diamond-tomorrow",
+    "title": "Tomorrow",
+    "artist": "Amy Diamond",
+    "video": "lEYww7g9_9g",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 9470,
+    "year": "2005",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-06-21T00:13:07.471Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.75,
+    "author": "holocaust73",
+    "sourceUrl": "Amy Diamond - Tomorrow (Annie’s Song)",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4876,
+    "tracksCount": 1,
+    "search": "amydiamondtomorrow",
     "local": false
   },
   {
@@ -27565,6 +27621,62 @@
     "local": false
   },
   {
+    "id": "cold-chisel-khe-sanh",
+    "title": "Khe Sanh",
+    "artist": "Cold Chisel",
+    "video": "BNA4ELdkYCo",
+    "language": [
+      "English"
+    ],
+    "bpm": 82.42,
+    "gap": 5608.026692550352,
+    "year": "1978",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-21T00:13:06.941Z",
+    "genre": "Rock",
+    "realBpm": 28,
+    "volume": 0.76,
+    "author": "Xaisaimac",
+    "sourceUrl": "Cold Chisel - Khe Sanh",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 4870,
+    "tracksCount": 1,
+    "search": "coldchiselkhesanh",
+    "local": false
+  },
+  {
+    "id": "cold-stupid-girl",
+    "title": "Stupid Girl",
+    "artist": "Cold",
+    "video": "fGT1QRyVYvY",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 28842.14285714286,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-21T00:13:07.075Z",
+    "genre": "Rock",
+    "realBpm": 30,
+    "volume": 0.75,
+    "author": "jdogk",
+    "sourceUrl": "Cold - Stupid Girl",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4871,
+    "tracksCount": 1,
+    "search": "coldstupidgirl",
+    "local": false
+  },
+  {
     "id": "coldplay-a-sky-full-of-stars",
     "title": "A Sky Full Of Stars",
     "artist": "Coldplay",
@@ -27589,6 +27701,34 @@
     "shortId": 993,
     "tracksCount": 1,
     "search": "coldplayaskyfullofstars",
+    "local": false
+  },
+  {
+    "id": "coldplay-adventure-of-a-lifetime",
+    "title": "Adventure Of A Lifetime",
+    "artist": "Coldplay",
+    "video": "QtXby3twMmI",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.98,
+    "gap": 65075.44602196624,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-21T00:13:07.213Z",
+    "genre": "Rock, Pop, Alternative",
+    "realBpm": 28,
+    "volume": 0.77,
+    "author": "gun8",
+    "sourceUrl": "Coldplay - Adventure Of A Lifetime",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4872,
+    "tracksCount": 1,
+    "search": "coldplayadventureofalifetime",
     "local": false
   },
   {
@@ -33358,6 +33498,32 @@
     "shortId": 1201,
     "tracksCount": 1,
     "search": "destinyschildsaymyname",
+    "local": false
+  },
+  {
+    "id": "destroy-boys-muzzle",
+    "title": "Muzzle",
+    "artist": "Destroy Boys",
+    "video": "jQ2JK3WiCvU",
+    "language": [
+      "English"
+    ],
+    "bpm": 424,
+    "gap": 47349.43396226415,
+    "year": "2021",
+    "lastUpdate": "2025-06-21T00:13:07.343Z",
+    "realBpm": 25,
+    "volume": 0.73,
+    "author": "Viktor1234678",
+    "sourceUrl": "Destroy Boys - Muzzle",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 4874,
+    "tracksCount": 1,
+    "search": "destroyboysmuzzle",
     "local": false
   },
   {
@@ -44842,6 +45008,34 @@
     "local": false
   },
   {
+    "id": "first-choice-doctor-love",
+    "title": "Doctor Love",
+    "artist": "First Choice",
+    "video": "fr5q6eGlpZY",
+    "language": [
+      "English"
+    ],
+    "bpm": 230.6,
+    "gap": 16544.284475281875,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-21T00:13:06.023Z",
+    "genre": "Disco",
+    "realBpm": 32,
+    "volume": 0.74,
+    "author": "Zevac",
+    "sourceUrl": "First Choice - Doctor Love",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4866,
+    "tracksCount": 1,
+    "search": "firstchoicedoctorlove",
+    "local": false
+  },
+  {
     "id": "fito-paez-mariposa-technicolor",
     "title": "Mariposa Technicolor",
     "artist": "Fito Paez",
@@ -55993,6 +56187,34 @@
     "shortId": 2015,
     "tracksCount": 1,
     "search": "indochinenoscelebrations",
+    "local": false
+  },
+  {
+    "id": "inna-club-rocker",
+    "title": "Club Rocker",
+    "artist": "Inna",
+    "video": "yAEAnlVRM1Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 17363.90625,
+    "year": "2011",
+    "artistOrigin": "RO",
+    "lastUpdate": "2025-06-21T00:13:06.938Z",
+    "genre": "Electrohop",
+    "realBpm": 35,
+    "volume": 0.73,
+    "author": "gaspar17",
+    "sourceUrl": "Inna - Club Rocker",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4869,
+    "tracksCount": 1,
+    "search": "innaclubrocker",
     "local": false
   },
   {
@@ -75489,6 +75711,34 @@
     "local": false
   },
   {
+    "id": "madonna-jump",
+    "title": "Jump",
+    "artist": "Madonna",
+    "video": "Rx0mYN32Kps",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 15951.596638655463,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-21T00:13:07.470Z",
+    "genre": "Pop",
+    "realBpm": 38,
+    "volume": 0.75,
+    "author": "Coppo",
+    "sourceUrl": "Madonna - Jump",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4875,
+    "tracksCount": 1,
+    "search": "madonnajump",
+    "local": false
+  },
+  {
     "id": "madonna-like-a-prayer",
     "title": "Like A Prayer",
     "artist": "Madonna",
@@ -80808,6 +81058,34 @@
     "shortId": 2904,
     "tracksCount": 1,
     "search": "megurinelukalukalukanightfever",
+    "local": false
+  },
+  {
+    "id": "melanie-brand-new-key",
+    "title": "Brand New Key",
+    "artist": "Melanie",
+    "video": "lKcpodt0YCU",
+    "language": [
+      "English"
+    ],
+    "bpm": 251.38,
+    "gap": 6566.0028630507395,
+    "year": "1971",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-21T00:13:06.796Z",
+    "genre": "Pop",
+    "realBpm": 44,
+    "volume": 0.77,
+    "author": "Fepo",
+    "sourceUrl": "Melanie - Brand New Key",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4868,
+    "tracksCount": 1,
+    "search": "melaniebrandnewkey",
     "local": false
   },
   {
@@ -87466,6 +87744,34 @@
     "shortId": 3138,
     "tracksCount": 1,
     "search": "natashafarrowcallingtothenight",
+    "local": false
+  },
+  {
+    "id": "natasha-thomas-why-does-your-love-hurt-so-much",
+    "title": "Why (Does Your Love Hurt So Much)",
+    "artist": "Natasha Thomas",
+    "video": "i9unvLb_zrw",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.6,
+    "gap": 13934.085801838612,
+    "year": "2003",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-06-21T00:13:06.659Z",
+    "edition": "[Sc]-Songs",
+    "realBpm": 21,
+    "volume": 0.75,
+    "author": "Canni",
+    "sourceUrl": "Natasha Thomas - Why (Does Your Love Hurt So Much)",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4867,
+    "tracksCount": 1,
+    "search": "natashathomaswhydoesyourlovehurtsomuch",
     "local": false
   },
   {

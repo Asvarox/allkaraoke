@@ -1,0 +1,229 @@
+#ARTIST:Amy Diamond
+#TITLE:Tomorrow
+#CREATOR:holocaust73
+#BPM:240
+#YEAR:2005
+#VIDEO:v=lEYww7g9_9g
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:9470
+#ALLKARAOKE_ID:amy-diamond-tomorrow
+#ALLKARAOKE_SID:4876
+#ALLKARAOKE_LASTUPDATE:2025-06-21T00:13:07.471Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:32
+#ALLKARAOKE_SOURCEURL:Amy Diamond - Tomorrow (Annie’s Song)
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Amy Diamond - Tomorrow (Annie’s Song).mp3
+: 16 5 9 The 
+: 22 3 6 sun 
+: 26 3 6 will 
+: 30 7 9 come 
+: 38 16 14 out 
+: 56 1 18 to 
+: 58 5 16 mor 
+: 64 12 14 row
+- 76
+: 80 3 18 Bet 
+: 84 5 16 your 
+: 90 3 14 bot 
+: 94 3 13 tom 
+: 98 5 11 dol 
+: 104 6 16 lar 
+: 112 5 13 that 
+: 118 3 9 to 
+: 122 7 6 mor 
+: 130 24 14 row
+- 154
+: 160 5 16 There’ll 
+: 166 5 18 be 
+: 172 30 7 sun
+- 202
+: 214 5 9 Just 
+: 220 3 6 thin 
+: 224 1 6 king 
+: 226 5 9 a 
+: 232 21 14 bout 
+: 254 3 18 to 
+: 258 5 16 mor 
+: 264 10 14 row
+- 274
+: 276 7 18 Clears 
+: 284 3 16 a 
+: 288 3 14 way 
+: 292 1 13 the 
+: 294 5 11 cob 
+: 300 7 16 webs 
+: 308 7 13 and 
+: 316 3 9 the 
+: 320 5 6 sor 
+: 326 24 14 row
+- 350
+: 356 6 16 Til’ 
+: 364 4 18 there’s 
+: 370 26 7 none
+- 396
+: 398 3 9 When
+: 402 3 9 I’m 
+: 406 3 9 stuck 
+: 410 3 14 in 
+: 414 3 16 a 
+: 418 19 17 day
+- 437
+: 438 5 14 That’s 
+: 444 19 17 gray 
+: 464 3 14 and 
+: 468 5 17 lo 
+: 474 5 19 ne 
+: 480 16 19 ly
+- 496
+: 498 3 12 I
+: 502 1 12 just 
+: 504 3 12 stick 
+: 508 3 17 out 
+: 512 5 19 my 
+: 518 16 21 chin 
+: 536 5 17 and 
+: 542 19 21 grin 
+: 562 5 17 and 
+: 568 54 21 say:
+- 622 642
+- 642
+: 658 3 9 The 
+: 662 5 6 sun 
+: 668 3 6 will 
+: 672 5 9 come 
+: 678 14 14 out 
+: 696 5 18 to 
+: 702 5 16 mor 
+: 708 8 14 row
+- 716
+: 718 5 18 So 
+: 724 5 16 you 
+: 730 3 14 got 
+: 734 3 13 ta 
+: 738 3 11 hang 
+: 742 5 16 on 
+: 748 9 13 ’til 
+: 758 3 9 to 
+: 762 7 6 mor 
+: 770 18 14 row
+- 788
+: 800 5 16 Come 
+: 806 3 18 what 
+: 810 43 19 may
+- 853
+: 854 5 21 To 
+: 860 5 23 mor 
+: 866 12 21 row! 
+: 880 5 18 to 
+: 886 5 23 mor 
+: 892 12 21 row! 
+: 906 3 14 I 
+: 910 5 21 love 
+: 916 11 19 you 
+: 928 5 14 to 
+: 934 5 21 mor 
+: 940 11 19 row
+- 951
+: 952 5 16 You’re 
+: 958 6 19 al 
+: 966 11 18 ways 
+: 978 5 14 a 
+: 984 10 9 day 
+: 998 10 16 a 
+: 1010 30 14 way
+- 1040 1270
+- 1270
+: 1286 3 9 When
+: 1290 1 9 I’m 
+: 1292 3 9 stuck 
+: 1296 1 14 in 
+: 1298 6 16 a 
+: 1306 17 17 day 
+: 1324 5 14 that’s 
+: 1330 17 17 gray 
+: 1348 5 14 and 
+: 1354 11 17 lone 
+: 1366 16 19 ly
+- 1382
+: 1384 1 12 I
+: 1386 3 12 just 
+: 1390 1 12 stick 
+: 1392 3 17 out 
+: 1396 5 19 my 
+: 1402 19 21 chin 
+: 1422 5 17 and 
+: 1428 17 21 grin 
+: 1446 5 17 and 
+: 1452 32 21 say
+- 1484 1528
+- 1528
+: 1544 5 10 The 
+: 1550 3 7 sun 
+: 1554 3 7 will 
+: 1558 5 10 come 
+: 1564 15 15 out 
+: 1580 5 19 to 
+: 1586 5 17 mor 
+: 1592 11 15 row
+- 1603
+: 1604 7 19 So 
+: 1612 3 17 you 
+: 1616 3 15 got 
+: 1620 1 14 ta 
+: 1622 5 12 hang 
+: 1628 5 17 on 
+: 1634 8 14 ’til 
+: 1644 3 10 to 
+: 1648 5 7 mor 
+: 1654 26 15 row
+- 1680
+: 1686 5 17 Come 
+: 1692 5 19 what 
+: 1698 31 20 ma
+: 1730 6 20 y
+- 1736
+: 1740 5 22 To 
+: 1746 5 24 mor 
+: 1752 11 22 row! 
+: 1764 6 19 to 
+: 1772 5 24 mor 
+: 1778 11 22 row! 
+: 1790 5 15 I 
+: 1796 5 22 love 
+: 1802 13 20 you 
+: 1816 5 15 to 
+: 1822 5 22 mor 
+: 1828 11 20 row
+- 1839
+: 1840 5 17 You’re 
+: 1846 5 20 al 
+: 1852 13 19 ways 
+: 1866 5 15 a 
+: 1872 9 10 day
+: 1882 13 17 a
+: 1896 16 15 way
+- 1912
+: 1918 23 22 To 
+: 1942 7 24 mor 
+: 1950 11 22 row! 
+: 1962 5 19 to 
+: 1968 5 24 mor 
+: 1974 12 22 row! 
+: 1988 3 15 I 
+: 1992 5 22 love 
+: 1998 12 20 you 
+: 2012 5 15 to 
+: 2018 5 22 mor 
+: 2024 11 20 row
+- 2035
+: 2036 7 17 You’re 
+: 2044 6 20 al 
+: 2052 28 19 ways 
+: 2082 6 15 a 
+: 2090 56 24 day 
+: 2166 21 22 a 
+: 2188 97 22 wa 
+: 2286 58 15 y
+E
