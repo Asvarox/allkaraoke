@@ -1,0 +1,247 @@
+#ARTIST:Destroy Boys
+#TITLE:Muzzle
+#CREATOR:Viktor1234678
+#BPM:424
+#YEAR:2021
+#VIDEO:v=jQ2JK3WiCvU
+#LANGUAGE:English
+#GAP:47349,43396226415
+#ALLKARAOKE_ID:destroy-boys-muzzle
+#ALLKARAOKE_SID:4874
+#ALLKARAOKE_LASTUPDATE:2025-06-21T00:13:07.343Z
+#ALLKARAOKE_REALBPM:25
+#ALLKARAOKE_SOURCEURL:Destroy Boys - Muzzle
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Destroy Boys - Muzzle.mp3
+: 28 5 -5 You 
+: 36 5 -5 don’t 
+: 44 5 3 know 
+: 51 6 3 me
+- 57
+: 59 3 3 You 
+: 63 4 3 don’t 
+: 71 5 -2 see 
+: 79 6 -2 me
+- 85
+: 87 2 -2 You 
+: 91 5 -2 think 
+: 99 5 -2 you 
+: 107 6 2 know 
+: 115 5 2 me 
+: 123 3 -2 by 
+: 128 4 -3 the 
+: 139 7 -5 screen
+- 146
+: 155 4 -5 You 
+: 163 5 -5 don’t 
+: 171 5 3 know 
+: 179 5 3 me
+- 184
+: 188 3 3 You 
+: 192 5 3 don’t 
+: 200 5 -2 see 
+: 207 5 -2 me
+- 212
+: 216 2 -2 You 
+: 219 3 -2 think 
+: 224 5 -2 I’m 
+: 232 7 2 trash 
+: 243 3 2 and 
+: 247 2 2 you 
+: 251 2 -2 think 
+: 255 6 -3 I’m 
+: 267 8 -5 mean
+- 275
+: 282 4 -5 You 
+: 290 4 -5 don’t 
+: 298 4 3 know 
+: 306 4 3 me
+- 310
+: 316 2 3 You 
+: 319 4 3 don’t 
+: 327 4 -2 see 
+: 334 5 -2 me
+- 339
+: 342 4 -2 You 
+: 347 4 -2 think 
+: 355 4 -2 you 
+: 363 5 2 know 
+: 371 5 2 me 
+: 380 2 -2 by 
+: 384 4 -3 the 
+: 395 7 -5 screen
+- 402
+: 412 4 -5 You 
+: 419 5 -5 don’t 
+: 427 5 3 know 
+: 435 5 3 me
+- 440
+: 443 3 3 You 
+: 448 3 3 don’t 
+: 455 4 -2 see 
+: 462 6 -2 me
+- 468
+: 472 2 -2 You 
+: 475 3 -2 think 
+: 480 4 -2 I’m 
+: 488 5 2 trash 
+: 500 2 2 and 
+: 504 2 2 you 
+: 508 2 -2 think 
+: 512 6 -3 I’m 
+: 522 7 -5 mean
+- 529
+: 541 3 3 I 
+: 545 4 3 am 
+: 552 5 -2 not 
+: 560 3 -3 your 
+: 564 2 -3 fu
+: 568 2 -3 cking 
+: 572 4 -2 man
+: 579 5 -3 ne
+: 588 6 -5 quin
+- 594
+: 604 10 3 Clothes 
+: 617 5 -2 pin 
+: 624 2 -3 call 
+: 628 2 -3 up 
+: 632 2 -3 your 
+: 636 5 -2 week
+: 644 4 -3 end 
+: 652 6 -5 sin
+- 658
+: 666 4 3 I 
+: 672 5 3 am 
+: 679 5 -2 not 
+: 687 3 -3 your 
+: 691 2 -3 Po
+: 695 2 -3 lly 
+: 699 2 -2 Po
+: 703 6 -3 cket 
+: 716 8 -5 girl
+- 724
+: 732 3 3 Chu
+: 736 4 3 cking 
+: 744 5 -2 me 
+: 752 4 -3 in 
+: 759 3 -3 your 
+: 763 5 -2 do
+: 772 4 -3 nate 
+: 780 6 -5 bin
+- 786
+: 795 5 -5 You 
+: 803 5 -5 don’t 
+: 811 5 3 know 
+: 819 6 3 me
+- 825
+: 828 3 3 You 
+: 832 4 3 don’t 
+: 840 5 -2 see 
+: 848 6 -2 me
+- 854
+: 856 2 -2 You 
+: 860 5 -2 think 
+: 868 5 -2 you 
+: 876 6 2 know 
+: 884 5 2 me 
+: 892 3 -2 by 
+: 897 4 -3 the 
+: 908 7 -5 screen
+- 915
+: 924 4 -5 You 
+: 932 5 -5 don’t 
+: 940 5 3 know 
+: 948 5 3 me
+- 953
+: 957 3 3 You 
+: 961 5 3 don’t 
+: 969 5 -2 see 
+: 976 5 -2 me
+- 981
+: 985 2 -2 You 
+: 988 3 -2 think 
+: 993 5 -2 I’m 
+: 1001 7 2 trash?
+- 1008
+: 1016 2 2 You 
+: 1020 2 -2 think 
+: 1024 6 -3 I’m 
+: 1033 8 -5 mean?
+- 1041
+: 1051 4 -5 You 
+: 1059 4 -5 don’t 
+: 1067 4 3 know 
+: 1075 4 3 me
+- 1079
+: 1085 2 3 You 
+: 1088 4 3 don’t 
+: 1096 4 -2 see 
+: 1103 5 -2 me
+- 1108
+: 1111 4 -2 You 
+: 1116 4 -2 think 
+: 1124 4 -2 you 
+: 1132 5 2 know 
+: 1140 5 2 me 
+: 1149 2 -2 by 
+: 1153 4 -3 the 
+: 1164 7 -5 screen
+- 1171
+: 1181 4 -5 You 
+: 1188 5 -5 don’t 
+: 1196 5 3 know 
+: 1204 5 3 me
+- 1209
+: 1212 3 3 You 
+: 1217 3 3 don’t 
+: 1224 4 -2 see 
+: 1231 6 -2 me
+- 1237
+: 1240 3 -2 You 
+: 1244 3 -2 think 
+: 1248 4 -2 I’m 
+: 1256 6 2 trash 
+: 1266 3 2 and 
+: 1270 3 2 you 
+: 1275 3 -2 think 
+: 1279 6 -3 I’m 
+: 1293 6 -5 mean
+- 1299
+: 1310 3 3 I 
+: 1314 4 3 am 
+: 1321 5 -2 not 
+: 1329 3 -3 your 
+: 1333 2 -3 fu
+: 1337 2 -3 cking 
+: 1341 4 -2 man
+: 1348 5 -3 ne
+: 1357 6 -5 quin
+- 1363
+: 1373 10 3 Clothes 
+: 1386 5 -2 pin 
+: 1393 2 -3 call 
+: 1397 2 -3 up 
+: 1401 2 -3 your 
+: 1405 5 -2 wee
+: 1413 4 -3 kend 
+: 1421 6 -5 sin
+- 1427
+: 1435 4 3 I 
+: 1441 5 3 am 
+: 1448 5 -2 not 
+: 1456 3 -3 your 
+: 1460 2 -3 Pol
+: 1464 2 -3 ly 
+: 1468 2 -2 Po
+: 1472 6 -3 cket 
+: 1485 8 -5 girl
+- 1493
+: 1501 3 3 Chu
+: 1505 4 3 cking 
+: 1513 5 -2 me 
+: 1521 4 -3 in 
+: 1528 3 -3 your 
+: 1532 5 -2 do
+: 1541 4 -3 nate 
+: 1549 6 -5 bin
+E
