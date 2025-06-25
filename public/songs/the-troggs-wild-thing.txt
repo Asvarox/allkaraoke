@@ -1,0 +1,175 @@
+#ARTIST:The Troggs
+#TITLE:Wild Thing
+#CREATOR:Gollum
+#BPM:392,61
+#YEAR:1966
+#VIDEO:v=gSWInYFVksg
+#GENRE:Garage Rock
+#LANGUAGE:English
+#GAP:6856,6478184457865
+#ALLKARAOKE_ID:the-troggs-wild-thing
+#ALLKARAOKE_SID:4882
+#ALLKARAOKE_LASTUPDATE:2025-06-25T00:13:30.349Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:26
+#ALLKARAOKE_SOURCEURL:The Troggs - Wild Thing
+#ALLKARAOKE_VOLUME:1
+#MP3:The Troggs - Wild Thing.mp3
+: 26 12 9 Wild 
+: 41 15 9 thing
+- 56 100
+- 100
+: 126 6 14 You 
+: 134 4 14 make 
+: 142 6 13 my 
+: 150 8 11 heart 
+: 166 13 9 sing
+- 179 224
+- 224
+: 250 6 14 You 
+: 258 4 14 make 
+: 265 9 16 eve
+: 281 5 9 ry
+: 289 10 9 thi
+: 300 8 6 ~ng 
+F 312 14 21 groo
+F 327 12 21 vy
+- 339 372
+- 372
+: 398 11 9 Wild 
+: 414 13 9 thing
+- 427 526
+- 526
+F 552 8 21 Wild 
+F 565 7 21 thing, 
+F 574 9 21 I 
+F 593 6 21 think 
+F 600 8 21 I 
+F 609 4 21 love 
+F 617 5 21 you
+- 622 641
+- 641
+: 667 2 4 But 
+: 671 8 16 I 
+: 681 6 16 wan
+: 688 7 15 na 
+: 696 6 16 kno
+: 703 8 14 ~w 
+* 713 6 12 for 
+* 723 8 9 su
+* 732 6 7 ~re
+- 738 758
+- 758
+F 784 2 21 So 
+F 793 4 21 come 
+F 798 7 21 on 
+F 806 11 21 and 
+F 823 6 21 hold 
+F 830 3 21 me 
+F 839 11 21 tight
+- 850 913
+- 913
+: 939 4 7 I 
+: 947 6 12 love 
+: 962 8 7 you
+- 970 1231
+- 1231
+: 1257 12 9 Wild 
+: 1273 15 9 thing
+- 1288 1332
+- 1332
+: 1358 6 14 You 
+: 1366 4 14 make 
+: 1373 6 13 my 
+: 1383 8 11 heart 
+: 1398 14 9 sing
+- 1412 1458
+- 1458
+: 1484 6 14 You 
+: 1492 4 14 make 
+: 1499 10 16 eve
+: 1514 5 9 ry
+: 1522 10 9 thi
+: 1533 9 6 ~ng 
+F 1546 11 21 groo
+F 1559 10 21 vy
+- 1569 1607
+- 1607
+: 1633 10 9 Wild 
+: 1648 13 9 thing
+- 1661 2257
+- 2257
+F 2283 8 21 Wild 
+F 2296 7 21 thing 
+F 2304 9 21 I 
+F 2320 4 21 think 
+F 2330 8 21 you 
+F 2339 6 21 move 
+F 2350 5 21 me
+- 2355 2372
+- 2372
+: 2398 1 4 But 
+: 2401 7 16 I 
+: 2409 6 16 wan
+: 2417 5 15 na 
+: 2424 7 16 kno
+: 2432 5 14 ~w 
+: 2440 5 12 for 
+: 2450 7 9 su
+: 2458 7 7 ~re
+- 2465 2484
+- 2484
+F 2510 1 21 So 
+F 2518 1 21 come 
+F 2521 5 21 on 
+F 2527 12 21 and 
+F 2545 6 21 hold 
+F 2553 3 21 me 
+F 2561 11 21 tight
+- 2572 2634
+- 2634
+: 2660 5 7 You 
+: 2668 6 11 move 
+: 2683 7 7 me
+- 2690 3127
+- 3127
+: 3153 12 9 Wild 
+: 3168 15 9 thing
+- 3183 3226
+- 3226
+: 3252 6 14 You 
+: 3259 5 14 make 
+* 3268 5 13 my 
+* 3276 8 11 heart 
+* 3291 15 9 sing
+- 3306 3350
+- 3350
+: 3376 6 14 You 
+: 3383 5 14 make 
+: 3391 10 16 eve
+: 3406 5 9 ry
+: 3414 12 9 thi
+: 3427 6 6 ~ng 
+F 3438 12 21 groo
+F 3451 12 21 vy
+- 3463 3498
+- 3498
+: 3524 12 9 Wild 
+: 3539 16 9 thing
+- 3555 3596
+- 3596
+F 3622 1 9 Come 
+F 3625 8 9 on, 
+F 3635 1 9 come 
+F 3637 9 9 on, 
+: 3648 12 9 wild 
+: 3663 16 9 thing
+- 3679 3722
+- 3722
+F 3748 4 9 Shake 
+F 3753 2 9 it, 
+F 3761 5 9 shake 
+F 3767 2 9 it, 
+: 3771 12 9 wild 
+: 3786 11 9 thing
+E

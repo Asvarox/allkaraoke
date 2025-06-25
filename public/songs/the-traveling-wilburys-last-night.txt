@@ -1,0 +1,375 @@
+#ARTIST:The Traveling Wilburys
+#TITLE:Last Night
+#CREATOR:lozboorman
+#BPM:240
+#YEAR:1988
+#VIDEO:v=gnoknpsI3sI
+#LANGUAGE:English
+#GAP:13350
+#ALLKARAOKE_ID:the-traveling-wilburys-last-night
+#ALLKARAOKE_SID:4885
+#ALLKARAOKE_LASTUPDATE:2025-06-25T00:13:30.743Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:27
+#ALLKARAOKE_SOURCEURL:The Traveling Wilburys - Last Night
+#ALLKARAOKE_VOLUME:0,75
+#MP3:The Traveling Wilburys - Last Night.mp3
+: 16 2 -5 She 
+: 20 2 -5 was 
+: 24 2 0 there 
+: 28 2 0 at 
+: 32 2 4 the 
+: 36 6 7 bar
+- 42 50
+- 50
+: 66 2 7 She 
+: 70 2 9 heard 
+: 74 2 5 my 
+* 78 2 -1 gui
+* 82 6 0 tar
+- 88 124
+- 124
+: 140 2 -5 She 
+: 144 2 -5 was 
+: 148 4 0 long 
+: 156 2 4 and 
+: 160 6 7 tall
+- 166
+: 182 2 7 She 
+: 186 2 7 was 
+: 190 2 7 the 
+: 194 2 9 queen 
+: 198 2 -1 of 
+: 202 2 -1 them 
+: 206 8 0 all
+- 214 254
+- 254
+* 270 8 7 Last 
+* 282 8 7 night
+- 290 302
+- 302
+: 318 2 7 Thin
+: 322 2 7 king 
+: 326 4 5 ’bout 
+: 334 8 4 last 
+: 346 6 4 night
+- 352 378
+- 378
+: 394 8 7 Last 
+: 406 8 7 night
+- 414 426
+- 426
+: 442 2 7 Thin
+: 446 2 7 king 
+: 450 4 5 ’bout 
+: 458 8 4 last 
+: 470 6 4 night
+- 476 494
+- 494
+: 510 2 -5 She 
+: 514 2 -5 was 
+: 518 2 0 dark 
+: 522 2 0 and 
+: 526 2 4 dis
+: 530 8 7 creet
+- 538 540
+- 540
+: 556 2 7 She 
+: 560 2 7 was 
+: 564 2 9 light 
+: 568 2 5 on 
+: 572 2 -1 her 
+: 576 8 0 feet
+- 584 618
+- 618
+: 634 2 -5 We 
+: 638 2 -5 went 
+: 642 2 0 up 
+: 646 2 0 to 
+: 650 2 4 her 
+: 654 8 7 room
+- 662 664
+- 664
+: 680 2 7 And 
+: 684 2 7 she 
+* 688 2 9 low
+* 692 2 -1 ered 
+* 696 2 -1 the 
+* 700 8 0 broom
+- 708 748
+- 748
+* 764 8 7 Last 
+* 776 8 7 night
+- 784 796
+- 796
+: 812 2 7 Thin
+: 816 2 7 king 
+: 820 4 5 ’bout 
+: 828 8 4 last 
+: 840 6 4 night
+- 846 872
+- 872
+: 888 8 7 Last 
+: 900 8 7 night
+- 908 918
+- 918
+: 934 2 7 Thin
+: 938 2 7 king 
+: 942 4 5 ’bout 
+: 950 8 4 last 
+: 962 6 4 night
+- 968 1004
+- 1004
+: 1020 2 9 Down 
+: 1024 2 7 be
+: 1028 6 9 low
+- 1034
+: 1038 2 7 They 
+: 1042 6 9 danced 
+: 1050 2 7 and 
+: 1054 6 9 sang 
+: 1062 2 9 in 
+: 1066 2 7 the 
+: 1070 8 9 street
+- 1078 1120
+- 1120
+: 1136 6 9 While 
+: 1144 2 9 up 
+: 1148 2 7 a
+: 1152 6 9 bove
+- 1158
+: 1160 2 7 The 
+: 1164 8 9 walls 
+* 1174 2 7 were 
+* 1178 6 11 steam
+* 1186 2 11 ing 
+* 1190 2 9 with 
+* 1194 12 7 heat
+- 1206 1242
+- 1242
+: 1258 8 7 Last 
+: 1270 8 7 night
+- 1278 1290
+- 1290
+: 1306 2 7 Thin
+: 1310 2 7 king 
+: 1314 4 5 ’bout 
+: 1322 8 4 last 
+: 1334 6 4 night
+- 1340 1366
+- 1366
+* 1382 8 7 Last 
+* 1394 8 7 night
+- 1402 1412
+- 1412
+: 1428 2 7 Thin
+: 1432 2 7 king 
+: 1436 4 5 ’bout 
+: 1444 8 4 last 
+: 1456 6 4 night
+- 1462 1482
+- 1482
+: 1498 2 -5 I 
+: 1502 2 -5 was 
+: 1506 2 0 fee
+: 1510 2 0 ling 
+: 1514 2 4 no 
+* 1518 8 7 pain
+- 1526 1528
+- 1528
+: 1544 2 7 Fee
+: 1548 2 7 ling 
+: 1552 2 9 good 
+: 1556 2 -1 in 
+: 1560 2 -1 my 
+: 1564 8 0 brain
+- 1572 1610
+- 1610
+: 1626 2 -5 I 
+: 1630 2 0 looked 
+: 1634 2 0 in 
+: 1638 2 4 her 
+* 1642 10 7 eyes
+- 1652
+: 1668 2 7 They 
+: 1672 2 7 were 
+: 1676 2 9 full 
+: 1680 2 -1 of 
+: 1684 2 -1 sur
+: 1688 8 0 prise
+- 1696 1736
+- 1736
+: 1752 8 7 Last 
+: 1764 8 7 night
+- 1772 1782
+- 1782
+: 1798 2 7 Tal
+: 1802 2 7 king 
+: 1806 4 5 ’bout 
+: 1814 8 4 last 
+: 1826 6 4 night
+- 1832 1860
+- 1860
+: 1876 8 7 Last 
+: 1888 8 7 night
+- 1896 1906
+- 1906
+: 1922 2 7 Tal
+: 1926 2 7 king 
+: 1930 4 5 ’bout 
+: 1938 8 4 last 
+: 1950 6 4 night
+- 1956 1980
+- 1980
+: 1996 2 7 I 
+: 2000 6 9 asked 
+: 2008 2 9 her 
+: 2012 2 7 to 
+: 2016 2 9 ma
+: 2020 2 9 rry 
+: 2024 2 9 me 
+: 2028 2 7 she 
+: 2032 8 9 smiled
+- 2040
+: 2046 2 9 Pulled 
+: 2050 2 9 out 
+: 2054 2 7 a 
+: 2058 8 9 knife
+- 2066 2102
+- 2102
+: 2118 2 7 The 
+: 2122 2 9 par
+: 2126 2 9 ty’s 
+: 2130 2 9 just 
+: 2134 2 7 be
+: 2138 2 9 gin
+: 2142 2 9 ning 
+: 2146 2 7 she 
+: 2150 8 9 said
+- 2158
+: 2166 2 7 Your 
+* 2170 2 11 mo
+* 2174 2 11 ney 
+* 2178 2 9 or 
+* 2182 2 7 your 
+* 2186 2 9 life 
+* 2190 8 7 ~
+- 2198 2230
+- 2230
+: 2246 8 7 Last 
+: 2258 8 7 night
+- 2266 2276
+- 2276
+: 2292 2 7 Tal
+: 2296 2 7 king 
+: 2300 4 5 ’bout 
+: 2308 8 4 last 
+: 2320 6 4 night
+- 2326 2354
+- 2354
+: 2370 8 7 Last 
+: 2382 8 7 night
+- 2390 2400
+- 2400
+: 2416 2 7 Tal
+: 2420 2 7 king 
+: 2424 4 5 ’bout 
+: 2432 8 4 last 
+: 2444 6 4 night
+- 2450 2470
+- 2470
+: 2486 2 -5 Now 
+: 2490 2 -5 I’m 
+: 2494 2 0 back 
+: 2498 2 0 at 
+: 2502 2 4 the 
+: 2506 8 7 bar
+- 2514
+: 2528 2 7 She 
+: 2532 2 7 went 
+: 2536 2 7 a 
+: 2540 2 9 li
+: 2544 2 -1 ttle 
+: 2548 2 -1 too 
+: 2552 8 0 far
+- 2560 2602
+- 2602
+: 2618 2 0 She 
+: 2622 2 0 done 
+: 2626 2 4 me 
+: 2630 8 7 wrong
+- 2638 2640
+- 2640
+: 2656 2 7 All 
+: 2660 2 7 I 
+: 2664 2 9 got 
+: 2668 2 -1 is 
+: 2672 2 -1 this 
+: 2676 8 0 song
+- 2684 2724
+- 2724
+* 2740 8 7 Last 
+* 2752 8 7 night
+- 2760 2770
+- 2770
+: 2786 2 7 Thin
+: 2790 2 7 king 
+: 2794 4 5 ’bout 
+: 2802 8 4 last 
+: 2814 6 4 night
+- 2820 2848
+- 2848
+: 2864 8 7 Last 
+: 2876 8 7 night
+- 2884 2894
+- 2894
+: 2910 2 7 Thin
+: 2914 2 7 king 
+: 2918 4 5 ’bout 
+: 2926 8 4 last 
+: 2938 6 4 night
+- 2944 2972
+- 2972
+* 2988 8 7 Last 
+* 3000 8 7 night
+- 3008 3018
+- 3018
+: 3034 2 7 Tal
+: 3038 2 7 king 
+: 3042 4 5 ’bout 
+: 3050 8 4 last 
+: 3062 6 4 night
+- 3068 3096
+- 3096
+: 3112 8 7 Last 
+: 3124 8 7 night
+- 3132 3142
+- 3142
+: 3158 2 7 Tal
+: 3162 2 7 king 
+: 3166 4 5 ’bout 
+: 3174 8 4 last 
+: 3186 6 4 night
+- 3192 3218
+- 3218
+* 3234 8 7 Last 
+* 3246 8 7 night
+- 3254 3266
+- 3266
+: 3282 2 7 Thin
+: 3286 2 7 king 
+: 3290 4 5 ’bout 
+: 3298 8 4 last 
+: 3310 6 4 night
+- 3316 3342
+- 3342
+: 3358 8 7 Last 
+: 3370 8 7 night
+- 3378 3388
+- 3388
+: 3404 2 7 Thin
+: 3408 2 7 king 
+: 3412 4 5 ’bout 
+: 3420 8 4 last 
+: 3432 6 4 night
+E
