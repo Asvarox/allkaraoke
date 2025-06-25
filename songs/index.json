@@ -2735,6 +2735,38 @@
     "local": false
   },
   {
+    "id": "ado-charles",
+    "title": "Charles",
+    "artist": "Ado",
+    "video": "trIiMhTDKxo",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 369.14,
+    "gap": -36.96976756786046,
+    "year": "2025",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-06-25T00:13:31.025Z",
+    "edition": "Cover",
+    "genre": "Jpop",
+    "realBpm": 148,
+    "previewStart": 90,
+    "previewEnd": 144,
+    "volume": 0.83,
+    "author": "hqmmy",
+    "sourceUrl": "https://www.youtube.com/watch?v=trIiMhTDKxo",
+    "tracks": [
+      {
+        "name": "Charles",
+        "start": 22
+      }
+    ],
+    "shortId": 4890,
+    "tracksCount": 1,
+    "search": "adocharles",
+    "local": false
+  },
+  {
     "id": "ado-fleeting-lullaby",
     "title": "Fleeting Lullaby",
     "artist": "Ado",
@@ -7563,9 +7595,10 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 90319.23076923077,
+    "gap": 90269.23076923077,
     "year": "2012",
-    "lastUpdate": "2024-10-17T00:11:23.180Z",
+    "lastUpdate": "2025-06-24T05:47:27.835Z",
+    "videoGap": 75,
     "realBpm": 125,
     "volume": 0.85,
     "author": "Mamba99",
@@ -34230,6 +34263,35 @@
     "local": false
   },
   {
+    "id": "dion-the-wanderer",
+    "title": "The Wanderer",
+    "artist": "Dion",
+    "video": "jP1z0dQVcIQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 5708.691588785046,
+    "year": "1961",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:29.202Z",
+    "edition": "[Sc]-Songs",
+    "genre": "R&B, Pop, Rock and Roll, Doo-wop",
+    "realBpm": 39,
+    "volume": 0.85,
+    "author": "IC",
+    "sourceUrl": "Dion - The Wanderer",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4877,
+    "tracksCount": 1,
+    "search": "dionthewanderer",
+    "local": false
+  },
+  {
     "id": "dire-straits-money-for-nothing",
     "title": "Money For Nothing",
     "artist": "Dire Straits",
@@ -57158,6 +57220,33 @@
     "shortId": 2049,
     "tracksCount": 1,
     "search": "jackwhitelazaretto",
+    "local": false
+  },
+  {
+    "id": "jade-dont-walk-away",
+    "title": "Don’t Walk Away",
+    "artist": "Jade",
+    "video": "wZ9HG0nGe-g",
+    "language": [
+      "English"
+    ],
+    "bpm": 206,
+    "gap": 11400.582524271846,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.188Z",
+    "realBpm": 26,
+    "volume": 0.78,
+    "author": "Ultrastar-Songs",
+    "sourceUrl": "Jade - Don’t Walk Away",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4880,
+    "tracksCount": 1,
+    "search": "jadedontwalkaway",
     "local": false
   },
   {
@@ -93581,6 +93670,34 @@
     "local": false
   },
   {
+    "id": "outliers-have-you-ever-seen-the-rain",
+    "title": "Have You Ever Seen The Rain",
+    "artist": "Outliers",
+    "video": "Z_c-JVBES2M",
+    "language": [
+      "English"
+    ],
+    "bpm": 390,
+    "gap": 3140,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-25T00:13:29.855Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.71,
+    "author": "Fepo",
+    "sourceUrl": "Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4878,
+    "tracksCount": 1,
+    "search": "outliershaveyoueverseentherain",
+    "local": false
+  },
+  {
     "id": "ov7-enloqueceme",
     "title": "Enloquéceme",
     "artist": "OV7",
@@ -100736,6 +100853,35 @@
     "local": false
   },
   {
+    "id": "ray-charles-hit-the-road-jack",
+    "title": "Hit The Road Jack",
+    "artist": "Ray Charles",
+    "video": "uSiHqxgE2d0",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.9,
+    "gap": 4581.177987962166,
+    "year": "1961",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.001Z",
+    "edition": "SingStar Legends US",
+    "genre": "Soul",
+    "realBpm": 23,
+    "volume": 0.74,
+    "author": "IC",
+    "sourceUrl": "Ray Charles - Hit The Road Jack",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4879,
+    "tracksCount": 1,
+    "search": "raycharleshittheroadjack",
+    "local": false
+  },
+  {
     "id": "ray-parker-jr-ghostbusters",
     "title": "Ghostbusters",
     "artist": "Ray Parker Jr.",
@@ -103922,6 +104068,33 @@
     "shortId": 3706,
     "tracksCount": 1,
     "search": "rodstewartfeatronaldisleythisoldheartofmine",
+    "local": false
+  },
+  {
+    "id": "rod-stewart-feat-the-temptations-the-motown-song",
+    "title": "The Motown Song",
+    "artist": "Rod Stewart feat. The Temptations",
+    "video": "9EzV-S5nXlw",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.86,
+    "gap": 2205.3862311610565,
+    "year": "1991",
+    "lastUpdate": "2025-06-25T00:13:30.754Z",
+    "genre": "Rock, Pop Rock, Contemporary R&B",
+    "realBpm": 31,
+    "volume": 0.72,
+    "author": "UltraSinger [GitHub] 0.0.11-dev4 and mindtakerr",
+    "sourceUrl": "Rod Stewart feat. The Temptations - The Motown Song",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4888,
+    "tracksCount": 1,
+    "search": "rodstewartfeatthetemptationsthemotownsong",
     "local": false
   },
   {
@@ -107255,6 +107428,33 @@
     "shortId": 3827,
     "tracksCount": 1,
     "search": "sdpxsidoxesthergrafmamahatgesagt",
+    "local": false
+  },
+  {
+    "id": "seal-future-love-paradise",
+    "title": "Future Love Paradise",
+    "artist": "Seal",
+    "video": "ntaudlPu3F4",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.63,
+    "gap": 6080.412184837794,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-25T00:13:31.027Z",
+    "realBpm": 34,
+    "volume": 0.79,
+    "author": "Tracks",
+    "sourceUrl": "Seal - Future Love Paradise",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4891,
+    "tracksCount": 1,
+    "search": "sealfutureloveparadise",
     "local": false
   },
   {
@@ -112582,6 +112782,35 @@
     "shortId": 4018,
     "tracksCount": 1,
     "search": "snellesmoorverliefd",
+    "local": false
+  },
+  {
+    "id": "sniff-n-the-tears-drivers-seat",
+    "title": "Driver’s Seat",
+    "artist": "Sniff ’n’ the Tears",
+    "video": "9SCzVEUlqqA",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.14,
+    "gap": 22465.496355301722,
+    "year": "1978",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-25T00:13:30.889Z",
+    "edition": "Singstar Chartbreaker",
+    "genre": "Pop",
+    "realBpm": 18,
+    "volume": 0.76,
+    "author": "MDKeil",
+    "sourceUrl": "Sniff ’n’ the Tears - Driver’s Seat",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4889,
+    "tracksCount": 1,
+    "search": "sniffnthetearsdriversseat",
     "local": false
   },
   {
@@ -122673,6 +122902,34 @@
     "local": false
   },
   {
+    "id": "the-mighty-mighty-bosstones-the-impression-that-i-get",
+    "title": "The Impression That I Get",
+    "artist": "The Mighty Mighty BossTones",
+    "video": "NIGMUAMevH0",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 20215.29411764706,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-25T00:13:30.348Z",
+    "edition": "Singstar Amped [Au]",
+    "realBpm": 28,
+    "volume": 0.77,
+    "author": "dgmo5046",
+    "sourceUrl": "The Mighty Mighty BossTones - The Impression That I Get",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4881,
+    "tracksCount": 1,
+    "search": "themightymightybosstonestheimpressionthatiget",
+    "local": false
+  },
+  {
     "id": "the-neighbourhood-sweater-weather",
     "title": "Sweater Weather",
     "artist": "The Neighbourhood",
@@ -124270,6 +124527,171 @@
     "shortId": 4423,
     "tracksCount": 1,
     "search": "thetonyrichprojectnobodyknows",
+    "local": false
+  },
+  {
+    "id": "the-trashmen-surfin-bird-the-bird-is-the-word",
+    "title": "Surfin’ Bird (The Bird Is The Word)",
+    "artist": "The Trashmen",
+    "video": "9Gc4QTqslN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.58,
+    "gap": -32.618249161619715,
+    "year": "1963",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.478Z",
+    "genre": "Surf Rock, Garage Rock, Proto-Punk",
+    "realBpm": 31,
+    "volume": 0.76,
+    "author": "b1991",
+    "sourceUrl": "The Trashmen - Surfin’ Bird (The Bird Is The Word)",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 4883,
+    "tracksCount": 1,
+    "search": "thetrashmensurfinbirdthebirdistheword",
+    "local": false
+  },
+  {
+    "id": "the-traveling-wilburys-end-of-the-line",
+    "title": "End Of The Line",
+    "artist": "The Traveling Wilburys",
+    "video": "p6vqKXLjSmg",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 10869.23076923077,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.751Z",
+    "genre": "Rock",
+    "realBpm": 39,
+    "volume": 0.78,
+    "author": "znxineohp",
+    "sourceUrl": "The Traveling Wilburys - End Of The Line",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4887,
+    "tracksCount": 1,
+    "search": "thetravelingwilburysendoftheline",
+    "local": false
+  },
+  {
+    "id": "the-traveling-wilburys-handle-with-care",
+    "title": "Handle With Care",
+    "artist": "The Traveling Wilburys",
+    "video": "1o4s1KVJaVA",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.65,
+    "gap": 8091.5404201145775,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.746Z",
+    "realBpm": 13,
+    "volume": 0.75,
+    "author": "znxineohp",
+    "sourceUrl": "The Traveling Wilburys - Handle With Care",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4886,
+    "tracksCount": 1,
+    "search": "thetravelingwilburyshandlewithcare",
+    "local": false
+  },
+  {
+    "id": "the-traveling-wilburys-heading-for-the-light",
+    "title": "Heading For The Light",
+    "artist": "The Traveling Wilburys",
+    "video": "SI-il17vJ3w",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.78,
+    "gap": 5769.155319639973,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.612Z",
+    "realBpm": 1,
+    "volume": 0.74,
+    "author": "lozboorman",
+    "sourceUrl": "The Traveling Wilburys - Heading For The Light",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4884,
+    "tracksCount": 1,
+    "search": "thetravelingwilburysheadingforthelight",
+    "local": false
+  },
+  {
+    "id": "the-traveling-wilburys-last-night",
+    "title": "Last Night",
+    "artist": "The Traveling Wilburys",
+    "video": "gnoknpsI3sI",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 13350,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-25T00:13:30.743Z",
+    "realBpm": 27,
+    "volume": 0.75,
+    "author": "lozboorman",
+    "sourceUrl": "The Traveling Wilburys - Last Night",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4885,
+    "tracksCount": 1,
+    "search": "thetravelingwilburyslastnight",
+    "local": false
+  },
+  {
+    "id": "the-troggs-wild-thing",
+    "title": "Wild Thing",
+    "artist": "The Troggs",
+    "video": "gSWInYFVksg",
+    "language": [
+      "English"
+    ],
+    "bpm": 392.61,
+    "gap": 6856.6478184457865,
+    "year": "1966",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-25T00:13:30.349Z",
+    "genre": "Garage Rock",
+    "realBpm": 26,
+    "volume": 1,
+    "author": "Gollum",
+    "sourceUrl": "The Troggs - Wild Thing",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4882,
+    "tracksCount": 1,
+    "search": "thetroggswildthing",
     "local": false
   },
   {

@@ -1,0 +1,260 @@
+#ARTIST:Outliers
+#TITLE:Have You Ever Seen The Rain
+#CREATOR:Fepo
+#BPM:390
+#YEAR:2025
+#VIDEO:v=Z_c-JVBES2M
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:3140
+#ALLKARAOKE_ID:outliers-have-you-ever-seen-the-rain
+#ALLKARAOKE_SID:4878
+#ALLKARAOKE_LASTUPDATE:2025-06-25T00:13:29.855Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:24
+#ALLKARAOKE_SOURCEURL:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain
+#ALLKARAOKE_VOLUME:0,71
+#MP3:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3
+#COVER:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain [CO].jpg
+#BACKGROUND:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain [BG].jpg
+: 26 4 -5 Some
+: 32 5 -3 one 
+: 39 8 0 told 
+: 50 5 -3 me 
+* 57 11 4 lo
+* 69 3 2 ~ng 
+: 74 4 0 a
+: 80 12 0 go
+- 92 96
+- 96
+: 122 5 -5 There's 
+: 129 3 -3 a 
+: 134 9 0 calm 
+: 145 5 -3 be
+: 152 11 4 fo
+: 164 4 0 ~re 
+: 170 4 0 the 
+: 176 11 0 storm
+- 187
+: 194 5 7 I 
+: 201 13 7 know,
+- 214 224
+- 224
+: 250 6 7 It's 
+: 258 10 7 been 
+: 270 12 7 co
+: 284 7 5 min' 
+: 294 10 5 for 
+: 306 10 4 some 
+: 318 12 4 time
+- 330 384
+- 384
+: 410 6 -5 When 
+: 418 4 -3 it's 
+: 424 8 0 o
+: 434 3 -3 ver, 
+: 440 11 4 so
+: 452 4 0 ~ 
+: 458 3 0 they 
+: 463 11 0 say
+- 474 483
+- 483
+: 509 3 -5 I
+: 513 3 -3 t'll 
+: 518 8 0 rain 
+: 528 4 -3 a 
+: 534 12 4 su
+: 547 4 0 n
+: 553 5 0 ny 
+: 560 10 0 day
+- 570
+: 578 4 7 I 
+: 584 11 7 know,
+- 595 612
+- 612
+: 638 9 7 Shi
+: 649 7 7 nin' 
+: 658 7 7 do
+: 666 7 5 ~wn 
+: 675 5 5 like 
+: 683 7 5 wa
+: 692 8 4 ter
+- 700 780
+- 780
+: 806 14 9 I 
+: 822 3 7 wan
+: 827 3 4 na 
+: 832 5 7 kno
+: 838 3 5 ~
+: 842 3 2 ~w,
+- 845
+: 866 5 4 Have 
+: 874 3 5 you 
+: 879 2 7 e
+: 883 15 7 ver 
+: 901 12 7 see
+: 915 5 0 ~n 
+: 922 2 0 the 
+: 926 16 0 rain?
+- 942 972
+- 972
+: 998 6 -3 Co
+: 1006 8 0 min' 
+: 1018 16 0 down 
+: 1039 5 -5 on 
+: 1046 10 4 sun
+: 1058 6 -3 ny 
+: 1066 11 0 day
+- 1077 1152
+- 1152
+: 1178 5 -5 Yes
+: 1185 3 -3 ter
+: 1190 11 0 day, 
+: 1204 3 -3 and 
+: 1209 15 4 days 
+: 1227 4 0 be
+: 1233 8 0 fore
+- 1241 1248
+- 1248
+: 1274 6 -5 Sun 
+: 1282 2 -3 is 
+: 1286 6 0 co
+: 1293 3 -3 ~ld 
+: 1298 3 -3 and 
+: 1303 13 4 rai
+: 1317 4 0 ~n 
+: 1323 2 0 is 
+: 1327 13 0 hard
+- 1340
+: 1346 4 7 I 
+: 1352 11 7 know,
+- 1363 1380
+- 1380
+: 1406 5 7 Been 
+: 1414 7 7 that 
+: 1424 9 7 way
+: 1434 4 5 ~ 
+: 1440 7 5 for 
+: 1449 8 5 all 
+: 1459 9 4 my 
+: 1470 14 0 time
+- 1484 1536
+- 1536
+: 1562 6 -5 'Til 
+: 1570 5 -3 for
+: 1577 8 0 e
+: 1587 4 -3 ver, 
+: 1593 10 4 o
+: 1604 4 0 ~n 
+: 1610 5 0 it 
+: 1617 13 0 goes
+- 1630 1632
+- 1632
+: 1658 5 -5 Through 
+: 1665 3 -3 the 
+: 1670 6 0 ci
+: 1678 3 -3 ~r
+: 1683 3 -5 cle, 
+: 1688 11 4 fa
+: 1700 3 0 ~st 
+: 1705 5 0 and 
+: 1712 14 0 slow
+- 1726
+: 1730 4 7 I 
+: 1736 11 7 know,
+- 1747 1764
+- 1764
+: 1790 3 7 It 
+: 1795 9 7 can't 
+: 1806 9 7 stop, 
+* 1818 10 5 I 
+* 1830 13 5 won
+: 1845 9 4 der
+- 1854 1935
+- 1935
+: 1961 11 9 I 
+: 1974 3 7 wan
+: 1979 3 4 na 
+: 1984 5 7 kno
+: 1990 3 5 ~
+: 1994 3 2 ~w,
+- 1997
+: 2019 5 4 Have 
+: 2027 3 5 you 
+: 2032 2 7 e
+: 2036 15 7 ver 
+: 2054 12 7 see
+: 2068 5 0 ~n 
+: 2075 2 0 the 
+: 2079 16 0 rain?
+- 2095 2125
+- 2125
+: 2151 11 9 I 
+: 2164 3 7 wan
+: 2169 3 4 na 
+: 2174 5 7 kno
+: 2180 3 5 ~
+: 2184 3 2 ~w,
+- 2187
+: 2210 5 4 Have 
+: 2218 3 5 you 
+: 2223 2 7 e
+: 2227 15 7 ver 
+: 2245 12 7 see
+: 2259 5 0 ~n 
+: 2266 2 0 the 
+: 2270 16 0 rain?
+- 2286 2316
+- 2316
+: 2342 6 -3 Co
+: 2350 8 0 min' 
+: 2362 16 0 down 
+: 2383 5 -5 on 
+: 2390 10 4 sun
+: 2402 6 -3 ny 
+: 2410 11 0 day
+- 2421 2436
+- 2436
+: 2462 48 12 Yeah!
+- 2510
+: 2534 16 9 I 
+: 2552 3 7 wan
+: 2556 3 4 na 
+: 2561 6 7 kno
+: 2568 3 9 ~w
+- 2571
+: 2594 5 4 Have 
+: 2602 3 5 you 
+: 2607 2 7 e
+: 2611 15 7 ver 
+: 2629 12 7 see
+: 2643 5 0 ~n 
+: 2650 2 0 the 
+: 2654 16 0 rain?
+- 2670 2703
+- 2703
+: 2729 11 9 I 
+: 2742 3 7 wan
+: 2747 3 4 na 
+: 2752 5 7 kno
+: 2758 3 5 ~
+: 2762 3 2 ~w,
+- 2765
+: 2787 5 4 Have 
+: 2795 3 5 you 
+: 2800 2 7 e
+: 2804 15 7 ver 
+: 2822 12 7 see
+: 2836 5 0 ~n 
+: 2843 2 0 the 
+: 2847 16 0 rain?
+- 2863 2892
+- 2892
+: 2918 6 -3 Co
+: 2926 8 0 min' 
+: 2938 16 0 down 
+: 2959 5 -5 on 
+: 2966 10 4 sun
+: 2978 6 -3 ny 
+: 2986 11 0 day
+E

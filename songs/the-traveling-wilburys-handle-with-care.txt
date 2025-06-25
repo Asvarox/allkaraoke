@@ -1,0 +1,318 @@
+#ARTIST:The Traveling Wilburys
+#TITLE:Handle With Care
+#CREATOR:znxineohp
+#BPM:235,65
+#YEAR:1988
+#VIDEO:v=1o4s1KVJaVA
+#LANGUAGE:English
+#GAP:8091,5404201145775
+#ALLKARAOKE_ID:the-traveling-wilburys-handle-with-care
+#ALLKARAOKE_SID:4886
+#ALLKARAOKE_LASTUPDATE:2025-06-25T00:13:30.746Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:13
+#ALLKARAOKE_SOURCEURL:The Traveling Wilburys - Handle With Care
+#ALLKARAOKE_VOLUME:0,75
+#MP3:The Traveling Wilburys - Handle With Care.mp3
+: 16 5 2 Been 
+: 22 3 2 beat 
+: 26 5 2 up 
+: 32 7 2 and 
+: 40 3 2 bat
+: 44 3 2 tered 
+: 48 3 2 a
+: 52 8 2 round
+- 60 64
+- 64
+: 80 7 2 Been 
+: 88 3 2 sent 
+: 92 3 2 up 
+: 96 3 2 and 
+: 100 3 2 I’ve 
+: 104 7 2 been 
+: 112 5 2 shot 
+: 118 10 2 down
+- 128 130
+- 130
+: 146 7 4 You’re 
+: 154 3 4 the 
+: 158 5 4 best 
+: 164 5 2 thing 
+: 170 3 2 that 
+: 174 3 2 I’ve 
+: 178 3 2 ev
+: 182 5 2 er 
+: 188 8 -5 found
+- 196
+: 212 7 0 Han
+: 220 3 0 dle 
+: 224 3 0 me 
+: 228 7 -1 with 
+: 236 12 -5 care
+- 248 262
+- 262
+: 278 7 2 Rep
+: 286 3 2 u
+: 290 3 2 tat
+: 294 8 2 ions 
+: 304 5 2 chan
+: 310 3 2 ge
+: 314 3 2 a
+: 318 6 2 ble
+- 324 326
+- 326
+: 342 7 2 Sit
+: 350 3 2 u
+: 354 3 2 ati
+: 358 9 2 ons 
+: 368 3 2 tol
+: 372 3 2 er
+: 376 3 2 a
+: 380 4 2 ble
+- 384 392
+- 392
+: 408 3 2 But 
+: 412 3 4 ba
+: 416 3 4 by 
+: 420 7 4 you’re 
+: 428 3 2 a
+: 432 3 2 dor
+: 436 3 2 a
+: 440 8 -5 ble
+- 448 458
+- 458
+: 474 7 0 Han
+: 482 3 0 dle 
+: 486 3 0 me 
+: 490 7 -1 with 
+* 498 20 -3 care
+- 518
+* 534 7 2 I’m 
+* 542 7 2 so 
+* 550 9 3 tired 
+* 560 7 3 of 
+* 568 7 4 be
+* 576 3 0 ing 
+* 580 7 -1 lone
+* 588 8 -3 ly
+- 596
+* 600 7 2 I 
+* 608 7 2 still 
+* 616 7 3 have 
+* 624 7 3 some 
+* 632 7 4 love 
+* 640 3 0 to 
+* 644 8 -3 give
+- 652
+* 666 7 2 Won’t 
+* 674 7 2 you 
+* 682 7 3 show 
+* 690 7 3 me 
+* 698 7 6 that 
+* 706 7 4 you 
+* 714 3 2 real
+* 718 9 -3 ly 
+* 728 10 -5 care
+- 738 768
+- 768
+: 784 3 -3 Ev
+: 788 3 -6 ery
+: 792 7 -3 bo
+: 800 4 -1 dy
+- 804
+: 816 3 -3 Got 
+: 820 3 -6 some
+: 824 9 -3 bo
+: 834 6 -6 dy
+- 840
+: 854 3 -6 To 
+* 858 31 2 lean 
+* 890 3 2 on
+* 894 3 0 ~
+* 898 4 -1 ~
+- 902
+: 914 3 -3 Put 
+: 918 3 -6 your 
+: 922 7 -3 bo
+: 930 6 -1 dy
+- 936
+: 946 3 -3 Next 
+: 950 3 -6 to 
+: 954 7 -3 mi
+: 962 4 -6 ne
+- 966 968
+- 968
+: 984 3 -6 And 
+* 988 33 2 dream 
+* 1022 5 2 on
+* 1028 8 4 ~
+- 1036 1038
+- 1038
+: 1054 7 2 I’ve 
+: 1062 5 2 been 
+: 1068 7 2 fobbed 
+: 1076 5 2 off 
+: 1082 1 2 and 
+: 1084 3 2 I’ve 
+: 1088 5 2 been 
+: 1094 3 2 a 
+: 1098 12 2 fool
+- 1110 1112
+- 1112
+: 1128 7 2 I’ve 
+: 1136 3 2 been 
+: 1140 7 2 robbed 
+: 1148 3 2 and 
+: 1152 3 2 rid
+: 1156 3 2 i
+: 1160 3 2 cul
+: 1164 8 2 ed
+- 1172
+: 1188 3 2 In 
+: 1192 7 4 day 
+: 1200 3 4 care 
+: 1204 3 4 cen
+: 1208 7 2 tres 
+: 1216 5 2 and 
+: 1222 11 2 night 
+: 1234 10 2 schools
+- 1244
+: 1260 7 0 Han
+: 1268 3 0 dle 
+: 1272 3 0 me 
+: 1276 7 -1 with 
+: 1284 12 -5 care
+- 1296 1430
+- 1430
+: 1446 7 2 Been 
+: 1454 5 2 stuck 
+: 1460 3 2 in 
+: 1464 3 2 air
+: 1468 10 2 ports 
+: 1482 3 2 ter
+: 1486 3 2 ror
+: 1490 8 2 ized
+- 1498 1504
+- 1504
+: 1520 7 2 Sent 
+: 1528 3 2 to 
+: 1532 3 2 meet
+: 1536 7 2 ings 
+: 1544 3 2 hyp
+: 1548 3 2 no
+: 1552 3 2 ti
+: 1556 8 2 zed
+- 1564 1568
+- 1568
+: 1584 5 2 Ov
+: 1590 3 4 er 
+: 1594 3 4 ex
+: 1598 11 4 posed 
+: 1610 3 2 com
+: 1614 3 2 mer
+: 1618 5 2 ical
+: 1624 10 -5 ized
+- 1634 1636
+- 1636
+: 1652 7 0 Han
+: 1660 3 0 dle 
+: 1664 3 0 me 
+: 1668 7 -1 with 
+* 1676 20 -3 care
+- 1696
+* 1712 7 2 I’m 
+* 1720 7 2 so 
+* 1728 9 3 tired 
+* 1738 7 3 of 
+* 1746 3 4 be
+* 1750 7 0 ing 
+* 1758 7 -1 lone
+* 1766 8 -3 ly
+- 1774
+* 1778 7 2 I 
+* 1786 7 2 still 
+* 1794 7 3 have 
+* 1802 7 3 some 
+* 1810 5 4 lo
+* 1816 1 2 ve 
+* 1818 5 0 to 
+* 1824 10 -3 give
+- 1834
+* 1844 7 2 Won’t 
+* 1852 7 2 you 
+* 1860 7 3 show 
+* 1868 7 3 me 
+* 1876 7 6 that 
+* 1884 9 4 you 
+* 1894 3 2 real
+* 1898 7 -3 ly 
+* 1906 12 -5 care
+- 1918 1946
+- 1946
+: 1962 3 -3 Ev
+: 1966 3 -6 ery
+: 1970 7 -3 bo
+: 1978 4 -1 dy’s
+- 1982
+: 1994 3 -3 Got 
+: 1998 5 -6 some
+: 2004 7 -3 bo
+: 2012 4 -6 dy
+- 2016
+: 2032 3 -6 To 
+* 2036 31 2 lean 
+* 2068 3 2 on
+* 2072 3 0 ~
+* 2076 4 -1 ~
+- 2080
+: 2094 3 -3 Put 
+: 2098 3 -6 your 
+: 2102 7 -3 bo
+: 2110 4 -1 dy
+- 2114
+: 2126 3 -3 Next 
+: 2130 3 -6 to 
+: 2134 7 -3 mi
+: 2142 4 -6 ne
+- 2146
+: 2162 3 -6 And 
+* 2166 31 2 dream 
+* 2198 7 2 on
+* 2206 8 4 ~
+- 2214 2216
+- 2216
+: 2232 3 6 I’ve 
+: 2236 5 6 been 
+: 2242 5 6 up
+: 2248 7 6 tight 
+: 2256 7 6 and 
+: 2264 7 6 made 
+: 2272 5 7 a 
+: 2278 12 2 mess
+- 2290
+: 2298 1 6 But 
+: 2300 3 6 I’ll 
+: 2304 7 6 clean 
+: 2312 1 6 it 
+: 2314 5 6 up 
+: 2320 9 6 my
+: 2330 7 6 self 
+: 2338 7 7 I 
+: 2346 14 2 guess
+- 2360
+* 2370 7 4 Oh
+* 2378 3 4 ~
+* 2382 3 4 ~ 
+: 2386 7 2 sweet 
+: 2394 3 2 sm
+: 2398 3 2 ell 
+: 2402 3 2 of 
+: 2406 5 2 suc
+: 2412 10 -5 cess
+- 2422
+: 2438 7 4 Han
+: 2446 3 4 dle 
+: 2450 3 4 me 
+: 2454 7 2 with 
+: 2462 12 0 care
+E
