@@ -68,7 +68,7 @@ function RemoteMic() {
           <div className="flex flex-col">
             <Typography className="text-xs">CONNECTION STATUS:</Typography>
             <Typography className="mr-auto text-sm">
-              <strong>{connectionStatus?.toUpperCase()}</strong>{' '}
+              <strong data-test="connection-status">{connectionStatus?.toUpperCase()}</strong>{' '}
               {connectionStatus === 'connected' && (
                 <>
                   (<Ping />)

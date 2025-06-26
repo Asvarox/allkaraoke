@@ -76,6 +76,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
       pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player1.name),
       pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player2.name),
     ]);
+    await remoteMic1.remoteMicChangeMicColorPage.goBackToMainMenu();
+    await remoteMic2.remoteMicChangeMicColorPage.goBackToMainMenu();
   });
 
   await test.step('Navigate to song list by phone', async () => {

@@ -156,7 +156,13 @@ export interface NetworkSongSelectionPlayerSettingsMessage {
   t: 'song-selection-player-settings';
 }
 
+export interface NetworkUnassignPlayersAfterSongEndedChangeMessage {
+  t: 'unassign-players-after-song-ended-change';
+  state: boolean;
+}
+
 export type NetworkMessages =
+  | NetworkUnassignPlayersAfterSongEndedChangeMessage
   | NetworkSongSelectionPlayerSettingsMessage
   | NetworkRemoteMicMyListMessage
   | NetworkSelectSongMessage
