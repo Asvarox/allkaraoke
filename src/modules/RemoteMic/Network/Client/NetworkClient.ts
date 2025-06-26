@@ -63,13 +63,16 @@ export class NetworkClient {
 
   public connect = (roomId: string, name: string, silent: boolean) => {
     const lcRoomId = roomId.toLowerCase();
-    if (!this.transport) {
-      this.transport = lcRoomId.startsWith('w')
-        ? new WebSocketClientTransport()
-        : lcRoomId.startsWith('k')
-          ? new PartyKitClientTransport()
-          : new PeerJSClientTransport();
+    if (this.transport) {
+      this.transport.clearAllListeners();
+      this.transport.close();
     }
+    this.transport = lcRoomId.startsWith('w')
+      ? new WebSocketClientTransport()
+      : lcRoomId.startsWith('k')
+        ? new PartyKitClientTransport()
+        : new PeerJSClientTransport();
+
     if (this.clientId === null) this.setClientId(v4());
     this.roomId = lcRoomId;
 
@@ -185,6 +188,8 @@ export class NetworkClient {
         events.remoteMicListUpdated.dispatch(data.list);
       } else if (type === 'style-change') {
         events.remoteStyleChanged.dispatch(data.style);
+      } else if (type === 'song-selection-player-settings') {
+        events.remoteSongSelectionPlayerSettingsOpened.dispatch();
       }
     });
   };

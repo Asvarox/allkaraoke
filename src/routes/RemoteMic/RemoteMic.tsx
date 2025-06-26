@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { useBackground } from 'modules/Elements/BackgroundContext';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import { switchToTheme } from 'modules/GameEngine/Drawing/styles';
@@ -11,6 +12,7 @@ import LayoutGame from 'routes/LayoutGame';
 import BottomBar from 'routes/RemoteMic/BottomBar';
 import Microphone from 'routes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
+import Ping from 'routes/RemoteMic/Panels/Microphone/Ping';
 import RemoteSettings from 'routes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'routes/RemoteMic/Panels/RemoteSongList';
 import useSendInitialSongList from 'routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
@@ -60,11 +62,26 @@ function RemoteMic() {
   };
 
   return (
-    <LayoutGame>
+    <LayoutGame
+      toolbarContent={
+        activeTab !== 'song-list' ? (
+          <div className="flex flex-col">
+            <Typography className="text-xs">CONNECTION STATUS:</Typography>
+            <Typography className="mr-auto text-sm">
+              <strong>{connectionStatus?.toUpperCase()}</strong>{' '}
+              {connectionStatus === 'connected' && (
+                <>
+                  (<Ping />)
+                </>
+              )}
+            </Typography>
+          </div>
+        ) : undefined
+      }>
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
-      <Container id="phone-ui-container" className="landscap:pb-0 pb-24">
-        <>
+      <Container id="phone-ui-container" className="flex flex-col gap-[1px]">
+        <div className="flex flex-1 flex-col justify-center overflow-hidden">
           {activeTab === 'microphone' && (
             <Microphone
               roomId={roomId}
@@ -98,8 +115,8 @@ function RemoteMic() {
               connectionError={connectionError}
             />
           )}
-          <BottomBar setActiveTab={setActiveTab} active={activeTab} />
-        </>
+        </div>
+        <BottomBar setActiveTab={setActiveTab} active={activeTab} />
       </Container>
     </LayoutGame>
   );

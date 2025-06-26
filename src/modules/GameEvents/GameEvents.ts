@@ -122,6 +122,7 @@ export const events = {
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
   remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
   remoteStyleChanged: new GameEvent<(style: NetworkStyleChangeMessage['style']) => void>('remoteStyleChanged'),
+  remoteSongSelectionPlayerSettingsOpened: new GameEvent('remoteSongSelectionPlayerSettingsOpened'),
   remoteMicPermissionsSet: new GameEvent<(level: NetworkSetPermissionsMessage['level']) => void>(
     'remoteMicPermissionsSet',
   ),

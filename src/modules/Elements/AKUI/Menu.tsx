@@ -1,6 +1,6 @@
 import { MenuButton } from 'modules/Elements/AKUI/Menu/MenuButton';
 import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twc } from 'react-twc';
 
@@ -8,8 +8,8 @@ const MenuContainer = twc(
   Box,
 )`w-[100vw] sm:max-w-[85rem] m-[2rem auto 0 auto] [view-transition-name:menu-container] items-stretch pointer-events-auto`;
 
-export const MenuHeader = twc(Text)`text-xl text-active flex items-center justify-center`;
-export const MenuHelpText = twc(Text)`text-md`;
+export const MenuHeader = twc(Typography)`text-xl text-active flex items-center justify-center`;
+export const MenuHelpText = twc(Typography)`text-md`;
 
 interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, 'title'> {
   title?: ReactNode;

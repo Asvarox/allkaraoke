@@ -1,6 +1,4 @@
 import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
 import isDev from 'modules/utils/isDev';
@@ -8,7 +6,6 @@ import { useState } from 'react';
 import Connect from 'routes/RemoteMic/Panels/Microphone/Connect';
 import RemoteMicKeyboard from 'routes/RemoteMic/Panels/Microphone/Keyboard';
 import MicPreview from 'routes/RemoteMic/Panels/Microphone/MicPreview';
-import Ping from 'routes/RemoteMic/Panels/Microphone/Ping';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 import { AutoEnableFullscreenSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -27,8 +24,10 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
   const permissions = usePermissions();
   const [searchActive, setSearchActive] = useState(false);
   const [autoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);
+  const [triggerPlayerChangeModal, setTriggerPlayerChangeModal] = useState(false);
 
   const onConnect = async () => {
+    setTriggerPlayerChangeModal(true);
     setIsKeepAwakeOn(true);
 
     try {
@@ -47,7 +46,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
   const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
 
   return (
-    <Container>
+    <div className="landscap:flex-row text-md flex h-full flex-col items-center justify-center gap-8">
       <UserMediaEnabled
         showImages={false}
         fallback={
@@ -56,8 +55,13 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             <h2>Please allow access to the microphone.</h2>
           </>
         }>
-        <Panel collapse={searchActive}>
-          <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />
+        <Panel collapse={searchActive} className="flex flex-col gap-8 px-8">
+          <MicPreview
+            isVisible={isConnected}
+            isMicOn={monitoringStarted}
+            isConnected={isConnected}
+            showPlayerChangeModal={triggerPlayerChangeModal}
+          />
           <Connect
             roomId={roomId}
             isVisible={true}
@@ -66,7 +70,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             connectionError={connectionError}
           />
         </Panel>
-        <Panel>
+        <Panel className="px-8">
           {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
           {permissions === 'read' && (
             <NoPermissionsMsg data-test="no-permissions-message">
@@ -74,38 +78,12 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
               <strong>Remote Microphones Settings</strong> to manage them.
             </NoPermissionsMsg>
           )}
-          {isConnected && (
-            <KeepAwake>
-              Ping: <Ping />
-            </KeepAwake>
-          )}
         </Panel>
       </UserMediaEnabled>
-    </Container>
+    </div>
   );
 }
 export default Microphone;
-
-const Container = styled.div`
-  font-size: 2.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1.5rem;
-  box-sizing: border-box;
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    flex-direction: row;
-  }
-
-  h5 {
-    margin-top: 0.5em;
-
-    svg {
-      font-size: 0.9em;
-    }
-  }
-`;
 
 const Panel = styled.div<{ collapse?: boolean }>`
   flex: 1;
@@ -120,14 +98,6 @@ const Panel = styled.div<{ collapse?: boolean }>`
     justify-content: center;
   }
 `;
-
-const MicInputState = styled.div`
-  ${typography}
-  strong {
-    color: ${styles.colors.text.active};
-  }
-`;
-const KeepAwake = styled(MicInputState)``;
 
 const NoPermissionsMsg = styled.h5`
   padding-bottom: 5rem;

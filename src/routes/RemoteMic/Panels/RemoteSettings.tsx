@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Checkbox } from 'modules/Elements/AKUI/Checkbox';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
 import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
@@ -60,6 +61,9 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
             <>
               <ManagePlayers />
               <RemoteInputLag />
+              <Checkbox checked size="small" info="Unassign players after they finish singing">
+                Reset players
+              </Checkbox>
             </>
           )}
           <hr />

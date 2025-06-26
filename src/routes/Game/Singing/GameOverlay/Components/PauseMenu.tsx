@@ -5,7 +5,7 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import SongsService from 'modules/Songs/SongsService';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { useEffect, useRef, useState } from 'react';
+import { ComponentRef, useEffect, useRef, useState } from 'react';
 import RateSong from 'routes/Game/Singing/GameOverlay/Components/RateSong';
 import SelectInputModal from 'routes/SelectInput/SelectInputModal';
 import InputLag from 'routes/Settings/InputLag';
@@ -20,7 +20,7 @@ interface Props {
 const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) => {
   const navigate = useSmoothNavigate();
   const menuRef = useRef<null | HTMLButtonElement>(null);
-  const inputLagRef = useRef<HTMLInputElement | null>(null);
+  const inputLagRef = useRef<ComponentRef<typeof InputLag>>(null);
 
   useEffect(() => {
     menuRef.current?.focus();
@@ -42,7 +42,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     }
   };
 
-  const onInputLagActive = () => inputLagRef.current?.focus();
+  const onInputLagActive = () => inputLagRef.current?.element?.focus();
 
   return (
     <>

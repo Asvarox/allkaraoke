@@ -2,7 +2,7 @@ import { HighScoreEntity } from 'interfaces';
 import { Autocomplete } from 'modules/Elements/Autocomplete';
 import useRecentPlayerNames from 'modules/hooks/players/useRecentPlayerNames';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { useRef, useState } from 'react';
+import { ComponentRef, useRef, useState } from 'react';
 
 interface Props {
   index: number;
@@ -13,7 +13,7 @@ interface Props {
 }
 
 function HighScoreRename({ score, register, singSetupId, onSave, index }: Props) {
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<ComponentRef<typeof Autocomplete>>(null);
   const [newName, setNewName] = useState('');
   const playerNames = useRecentPlayerNames();
 
@@ -22,7 +22,7 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
   };
 
   const onActive = () => {
-    inputRef.current?.focus();
+    inputRef.current?.element?.focus();
   };
 
   return (

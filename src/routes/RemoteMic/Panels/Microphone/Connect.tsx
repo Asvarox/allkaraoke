@@ -1,16 +1,19 @@
 import styled from '@emotion/styled';
-import { QrCode2, Warning, Wifi } from '@mui/icons-material';
+import { QrCode2, Wifi } from '@mui/icons-material';
 import { MAX_NAME_LENGTH } from 'consts';
+import { Menu } from 'modules/Elements/AKUI/Menu';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { Input } from 'modules/Elements/Input';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
+import Modal from 'modules/Elements/Modal';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import { GAME_CODE_LENGTH } from 'modules/RemoteMic/Network/Server/NetworkServer';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
-import { FormEventHandler, useEffect, useRef, useState } from 'react';
+import { ComponentRef, FormEventHandler, useCallback, useEffect, useRef, useState } from 'react';
 import ConfirmWifiModal from 'routes/RemoteMic/Components/ConfrimWifiModal';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import createPersistedState from 'use-persisted-state';
@@ -28,18 +31,35 @@ const usePersistedName = createPersistedState<string>('remote_mic_name');
 function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionError }: Props) {
   const [name, setName] = usePersistedName('');
   const [errorReset, setErrorReset] = useState(false);
-  const firstInputRef = useRef<HTMLInputElement | null>(null);
-  const secondInputRef = useRef<HTMLInputElement | null>(null);
+  const gameCodeInputRef = useRef<ComponentRef<typeof Input>>(null);
+  const nameInputRef = useRef<ComponentRef<typeof Input>>(null);
   const [customRoomId, setCustomRoomId] = useState<string>(roomId ?? '');
   const navigate = useSmoothNavigate();
 
   const disabled = connectionStatus !== 'uninitialised' && connectionStatus !== 'error';
+  const connected = connectionStatus === 'connected';
+
+  const focusNextInput = useCallback(
+    (triggerValidation = false) => {
+      if (!roomId && customRoomId.length !== GAME_CODE_LENGTH) {
+        gameCodeInputRef.current?.element?.focus();
+        triggerValidation && gameCodeInputRef.current?.triggerValidationError('Provide a valid game code');
+        return true;
+      } else if (name === '') {
+        nameInputRef.current?.element?.focus();
+        triggerValidation && nameInputRef.current?.triggerValidationError('Provide your name');
+        return true;
+      }
+      return false;
+    },
+    [customRoomId, roomId, name],
+  );
 
   useEffect(() => {
-    if (connectionStatus === 'connected' && !roomId) {
+    if (connected && !roomId) {
       navigate(`remote-mic/`, { room: customRoomId });
     }
-  }, [connectionStatus, roomId, customRoomId]);
+  }, [connectionStatus, roomId, customRoomId, connected]);
 
   const connectToServer = (silent = false) => {
     RemoteMicClient.connect(customRoomId, name, silent);
@@ -50,18 +70,14 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
     e.preventDefault();
     setErrorReset(false);
 
-    if (!roomId && customRoomId.length !== GAME_CODE_LENGTH) {
-      firstInputRef.current?.focus();
-    } else if (name === '') {
-      (secondInputRef.current ?? firstInputRef.current)?.focus();
-    } else {
+    if (!focusNextInput(true)) {
       connectToServer();
     }
   };
 
   useEffect(() => {
     posthog.capture(roomId ? 'remote-mic-qrcode' : 'remote-mic-manual');
-    firstInputRef.current?.focus();
+    focusNextInput(false);
   }, []);
   useEffect(() => {
     if (storage.session.getItem('reload-mic-request') !== null) {
@@ -71,17 +87,6 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
     }
   }, []);
 
-  const [showConnectionTip, setShowConnectionTip] = useState(false);
-
-  useEffect(() => {
-    setShowConnectionTip(false);
-    if (connectionStatus === 'connecting' || connectionStatus === 'reconnecting') {
-      const timeout = setTimeout(() => setShowConnectionTip(true), 2000);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [connectionStatus]);
-
   const shouldShowError = connectionStatus === 'error' && !errorReset;
 
   return isVisible ? (
@@ -89,14 +94,14 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
       {roomId?.startsWith('p') && (
         <ConfirmWifiModal
           onClose={() => {
-            firstInputRef.current?.focus();
+            gameCodeInputRef.current?.element?.focus();
           }}
         />
       )}
-      <Form onSubmit={handleConnect}>
-        {!disabled && (
+      <form className="flex flex-col gap-8" onSubmit={handleConnect}>
+        {!connected && (
           <GCInput
-            ref={firstInputRef}
+            ref={gameCodeInputRef}
             placeholder="_____"
             label="Game code"
             autoCapitalize={'characters'}
@@ -105,6 +110,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
             value={customRoomId}
             maxLength={GAME_CODE_LENGTH}
             focused={false}
+            disabled={connected}
             autoFocus
             data-test="game-code-input"
             onFocus={() => {
@@ -129,111 +135,61 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
           placeholder="Enter your name…"
           value={name}
           onChange={setName}
-          ref={roomId ? firstInputRef : secondInputRef}
+          ref={nameInputRef}
           disabled={disabled}
           autoFocus
           data-test="player-name-input"
         />
-        <ConnectButton type="submit" disabled={disabled} data-test="connect-button">
-          {connectionStatus === 'connecting' && <Loader size={'1em'} />}
-          {connectionStatus === 'uninitialised' || errorReset ? 'Connect' : connectionStatus.toUpperCase()}
-        </ConnectButton>
-      </Form>
-      {(showConnectionTip || shouldShowError) && (
-        <>
-          {showConnectionTip && <h3>If it doesn&#39;t connect</h3>}
-          {shouldShowError && (
-            <>
-              <h3>
-                <strong>
-                  <Warning />
-                </strong>{' '}
-                Could not connect:
-              </h3>
-              <h6>
-                Error code: <strong>{connectionError}</strong>
-              </h6>
-              <br />
-              {connectionError === 'peer-unavailable' ? (
-                <>
-                  <h4>
-                    {roomId === undefined ? 'Game with this code not found 🤔' : 'The game seems to be offline 🤔'}
-                  </h4>
-                  {roomId === undefined && (
-                    <h5>
-                      1. Is the code <strong>{customRoomId.toUpperCase()}</strong> correct?
-                    </h5>
-                  )}
-                  <h5>
-                    {roomId === undefined ? 2 : 1}. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
-                  </h5>
-                  {roomId !== undefined && (
-                    <h5>
-                      2. Scan the{' '}
-                      <strong>
-                        <QrCode2 /> QR Code
-                      </strong>{' '}
-                      again
-                    </h5>
-                  )}
-                  <h5>
-                    3. Make sure you are in the same{' '}
-                    <strong>
-                      <Wifi /> Wi-Fi
-                    </strong>
-                  </h5>
-                </>
-              ) : connectionError === 'network' ? (
-                <>
-                  <h4>No internet access 💀</h4>
-                  <h5>
-                    Make sure you are in the same{' '}
-                    <strong>
-                      <Wifi /> Wi-Fi
-                    </strong>
-                    and that it has internet connection
-                  </h5>
-                </>
-              ) : (
-                <>
-                  <h5>
-                    1. Make sure you are in the same{' '}
-                    <strong>
-                      <Wifi /> Wi-Fi
-                    </strong>
-                  </h5>
-                  <h5>
-                    2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
-                  </h5>
-                  <h5>
-                    3. Scan the{' '}
-                    <strong>
-                      <QrCode2 /> QR Code
-                    </strong>{' '}
-                    again
-                  </h5>
-                </>
+        {!connected && (
+          <MenuButton className="h-28" type="submit" disabled={disabled} data-test="connect-button">
+            {connectionStatus === 'connecting' && <Loader size={'1em'} />}
+            {connectionStatus === 'uninitialised' || errorReset ? 'Connect' : connectionStatus.toUpperCase()}
+          </MenuButton>
+        )}
+      </form>
+      <Modal open={shouldShowError} onClose={() => setErrorReset(true)} data-test="connection-error-modal">
+        <Menu>
+          <Menu.Header>Couldn&#39;t connect</Menu.Header>
+          <Typography>{roomId ? 'The game seems to be offline 🤔' : 'Game with this code not found 🤔'}</Typography>
+          <Typography>
+            <ul className="list-disc pl-12 text-sm leading-12">
+              {!roomId && (
+                <li>
+                  Is the code <strong>{customRoomId.toUpperCase()}</strong> correct?
+                </li>
               )}
-            </>
-          )}
-        </>
-      )}
+              <li>
+                Refresh (<strong>F5</strong>) the Karaoke Game on the PC.
+              </li>
+              {roomId && (
+                <li>
+                  Scan the{' '}
+                  <strong>
+                    <QrCode2 /> QR Code
+                  </strong>{' '}
+                  again
+                </li>
+              )}
+              <li>
+                Make sure you are in the same{' '}
+                <strong>
+                  <Wifi /> Wi-Fi
+                </strong>
+              </li>
+            </ul>
+          </Typography>
+          <Typography className="text-sm">
+            Error code: <strong>{connectionError}</strong>
+          </Typography>
+          <Menu.Button size="small" onClick={() => setErrorReset(true)}>
+            Close
+          </Menu.Button>
+        </Menu>
+      </Modal>
     </>
   ) : null;
 }
 export default Connect;
-
-const Form = styled.form`
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-const ConnectButton = styled(MenuButton)`
-  margin-bottom: 0;
-  height: 72px;
-`;
 
 const GCInput = styled(Input)`
   input {

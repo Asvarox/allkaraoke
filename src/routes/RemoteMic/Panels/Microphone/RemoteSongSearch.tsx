@@ -4,7 +4,7 @@ import { MAX_NAME_LENGTH } from 'consts';
 import { Input } from 'modules/Elements/Input';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import useDebounce from 'modules/hooks/useDebounce';
-import { useEffect, useRef, useState } from 'react';
+import { ComponentRef, useEffect, useRef, useState } from 'react';
 import { usePrevious, useUnmount } from 'react-use';
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
 
 function RemoteSongSearch({ onSearchStateChange }: Props) {
   const [search, setSearch] = useState('');
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<ComponentRef<typeof Input>>(null);
 
   const debouncedSearch = useDebounce(search, 100);
 

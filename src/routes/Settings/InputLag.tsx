@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
 import { Input } from 'modules/Elements/Input';
-import { forwardRef, useImperativeHandle, useRef } from 'react';
+import { ComponentRef, Ref, useImperativeHandle, useRef } from 'react';
 import { InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
 interface Props {
   focused: boolean;
+  ref?: Ref<ComponentRef<typeof Input>>;
 }
 
-const InputLag = forwardRef<HTMLInputElement, Props>(({ ...restProps }, forwardedRef) => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  useImperativeHandle(forwardedRef, () => inputRef.current!);
+const InputLag = ({ ref, ...restProps }: Props) => {
+  const inputRef = useRef<ComponentRef<typeof Input>>(null);
+  useImperativeHandle(ref, () => inputRef.current!);
   const [inputLag, setInputLag] = useSettingValue(InputLagSetting);
 
   return (
@@ -26,14 +27,14 @@ const InputLag = forwardRef<HTMLInputElement, Props>(({ ...restProps }, forwarde
       adornment={'ms'}
       onKeyDown={(e) => {
         if (e.code === 'Enter') {
-          inputRef.current?.blur();
+          inputRef.current?.element?.blur();
         }
       }}
       info="If the sound is not synchronised with the lyrics, use this to compensate it."
       {...restProps}
     />
   );
-});
+};
 
 const InputLagField = styled(Input)`
   input {

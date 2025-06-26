@@ -1,6 +1,6 @@
 import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/AKUI/Button';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { RegisterFunc } from 'modules/hooks/useKeyboardNav';
 import { useEffect, useRef } from 'react';
 import timelapse from './timelapse.webm';
@@ -47,19 +47,19 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
               {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
               Enable camera
             </Button>
-            <Text className="text-sm">The recording is not sent nor stored anywhere.</Text>
+            <Typography className="text-sm">The recording is not sent nor stored anywhere.</Typography>
           </>
         ) : (
           <h3>Adjust the camera position</h3>
         )}
       </div>
       {!permissionStatus && (
-        <Text className="absolute right-0 bottom-0 p-4 text-sm">
+        <Typography className="absolute right-0 bottom-0 p-4 text-sm">
           Placeholder video from{' '}
           <a href="https://www.storyblocks.com/" target="_blank" rel="noreferrer">
             Storyblocks.com
           </a>
-        </Text>
+        </Typography>
       )}
     </div>
   );

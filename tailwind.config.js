@@ -30,6 +30,8 @@ module.exports = {
           'player-0-christmas': styles.colorSets.christmasGreen.text,
           'player-1': styles.colors.players[1].text,
           'player-1-christmas': styles.colorSets.christmasRed.text,
+
+          error: 'red',
         },
         active: styles.colors.text.active,
       },

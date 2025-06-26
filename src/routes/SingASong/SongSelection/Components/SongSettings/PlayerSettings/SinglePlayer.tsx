@@ -7,7 +7,7 @@ import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { useCallback, useRef, useState } from 'react';
+import { ComponentRef, useCallback, useRef, useState } from 'react';
 
 interface Props {
   multipleTracks: boolean;
@@ -31,11 +31,11 @@ export default function SinglePlayer({
   setup,
 }: Props) {
   const [inputTouched, setInputTouched] = useState(false);
-  const nameRef = useRef<HTMLInputElement | null>(null);
+  const nameRef = useRef<ComponentRef<typeof Autocomplete>>(null);
   // Force update when the name changes
   useEventListener(events.playerNameChanged);
 
-  const focusName = useCallback(() => nameRef.current?.focus(), []);
+  const focusName = useCallback(() => nameRef.current?.element?.focus(), []);
 
   if (player === undefined) {
     return null;

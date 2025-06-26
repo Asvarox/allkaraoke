@@ -1,12 +1,18 @@
 import styled from '@emotion/styled';
-import { InfoText } from 'modules/Elements/Switcher';
+import { InputWrapper } from 'modules/Elements/AKUI/InputWrapper';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
-import { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useImperativeHandle, useRef } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useImperativeHandle, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
-interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange'> {
+interface InputRef {
+  element: HTMLInputElement | null;
+  triggerValidationError: (message: string) => void;
+}
+interface Props
+  extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange' | 'ref'> {
   focused: boolean;
   label: ReactNode;
   value: string;
@@ -14,6 +20,7 @@ interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
   disabled?: boolean;
   adornment?: ReactNode;
   info?: ReactNode;
+  ref?: React.Ref<InputRef>;
 }
 
 export const Input = ({
@@ -28,16 +35,29 @@ export const Input = ({
   ref,
   ...restProps
 }: Props) => {
+  const [validationError, setValidationError] = useState<null | string>(null);
+  const validationErrorTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  useImperativeHandle(ref, () => inputRef.current!);
+  useImperativeHandle(ref, () => ({
+    element: inputRef.current,
+    triggerValidationError: (message: string) => {
+      if (validationErrorTimeoutRef.current) {
+        clearTimeout(validationErrorTimeoutRef.current);
+      }
+      setValidationError(message);
+      validationErrorTimeoutRef.current = setTimeout(() => {
+        setValidationError(null);
+      }, 4000);
+    },
+  }));
 
   useHotkeys(REGULAR_ALPHA_CHARS, () => inputRef.current?.focus(), { enabled: focused });
 
   return (
-    <div>
+    <InputWrapper info={info}>
       <Container
         data-focused={focused}
-        className={`${className} rounded-md`}
+        className={`${className} relative rounded-md ${validationError ? 'starting:outline-text-error/0 outline-text-error/100 outline outline-offset-2 duration-300' : ''}`}
         onClick={() => {
           inputRef.current?.focus();
         }}>
@@ -50,9 +70,17 @@ export const Input = ({
           ref={inputRef}
         />
         {adornment && <Adornment>{adornment}</Adornment>}
+        <AnimatePresence>
+          {validationError && (
+            <motion.div
+              exit={{ opacity: 0, right: '20%' }}
+              className="bg-text-error/75 absolute right-0 bottom-[-1.5rem] rounded-md p-1 text-sm text-white opacity-100 duration-300 starting:right-10 starting:opacity-0">
+              {validationError}️
+            </motion.div>
+          )}
+        </AnimatePresence>
       </Container>
-      {info && <InfoText>{info}</InfoText>}
-    </div>
+    </InputWrapper>
   );
 };
 

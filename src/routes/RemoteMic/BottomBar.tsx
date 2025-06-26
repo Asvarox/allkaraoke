@@ -11,7 +11,7 @@ interface Props {
 
 export default function BottomBar({ active, setActiveTab }: Props) {
   return (
-    <Container>
+    <div className="landscap:fixed landscap:max-w-[400px] landscap:scale-75 right-0 bottom-0 flex w-full origin-bottom-right items-stretch gap-[1px]">
       <ItemContainer
         active={active === 'microphone'}
         onClick={() => setActiveTab('microphone')}
@@ -36,26 +36,9 @@ export default function BottomBar({ active, setActiveTab }: Props) {
         </ItemIcon>
         <ItemTitle>Settings</ItemTitle>
       </ItemContainer>
-    </Container>
+    </div>
   );
 }
-
-const Container = styled.div`
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: stretch;
-  width: 100%;
-  gap: 1px;
-  background: #424242;
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    max-width: 400px;
-    transform: scale(0.75);
-    transform-origin: bottom right;
-  }
-`;
 
 const ItemContainer = styled.div<{ active?: boolean }>`
   cursor: pointer;

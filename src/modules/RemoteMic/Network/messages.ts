@@ -152,7 +152,12 @@ export interface NetworkStyleChangeMessage {
   style: backgroundTheme;
 }
 
+export interface NetworkSongSelectionPlayerSettingsMessage {
+  t: 'song-selection-player-settings';
+}
+
 export type NetworkMessages =
+  | NetworkSongSelectionPlayerSettingsMessage
   | NetworkRemoteMicMyListMessage
   | NetworkSelectSongMessage
   | NetworkSubscribeMessage

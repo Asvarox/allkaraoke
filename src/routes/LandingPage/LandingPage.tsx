@@ -1,6 +1,6 @@
 import { ButtonLink } from 'modules/Elements/AKUI/Button';
 import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { useBackground } from 'modules/Elements/BackgroundContext';
 import Logo from 'modules/Elements/Logo';
 import SmoothLink from 'modules/Elements/SmoothLink';
@@ -119,12 +119,12 @@ function LandingPage() {
             <Screenshot src={screenshot2} alt="In-game screen" className="[box-shadow:_0_0_10rem_rgb(19,19,19)]" />
           </StatSegment>
         </Box>
-        <Text className="text-md mobile:hidden mt-[-2.5rem]! text-right">
+        <Typography className="text-md mobile:hidden mt-[-2.5rem]! text-right">
           Using this device as remote microphone?{' '}
           <SmoothLink to="remote-mic/">
             <a data-test="join-existing-game">Join existing game</a>
           </SmoothLink>
-        </Text>
+        </Typography>
         <div className="landscap:flex-1 flex flex-col justify-center gap-12 [&&_a]:min-h-[30rem]">
           <SmoothLink to="remote-mic/">
             <PlayButton data-test="join-existing-game" className="mobile:flex hidden">
@@ -148,7 +148,7 @@ const StatText = twc.div``;
 const StatSubText = twc.div`pt-2 text-right text-[0.7em] [&_.Typewriter]:inline`;
 
 const StatSegment = twc(
-  Text,
+  Typography,
 )`flex flex-col flex-1 gap-4 typography text-[2.3rem] mobile:text-[8.5rem] landscap:text-[4.9rem]`;
 
 const Screenshot = twc.img`w-full aspect-video object-cover shadow-5 border-1 border-black/50 rounded-2xl mobile:w-[calc(50%-2rem)] mobile:h-[50rem]`;

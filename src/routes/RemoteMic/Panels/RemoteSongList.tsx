@@ -134,12 +134,12 @@ function RemoteSongList({ connectionStatus }: Props) {
   const unit = useBaseUnitPx();
 
   return (
-    <Container>
-      <TopBar>
+    <Container className="overflow-hidden">
+      <TopBar className="pt-1">
         <Input
           focused={false}
           label={<Search />}
-          placeholder="Search for a song…"
+          placeholder="Search the list…"
           value={search}
           onChange={(value) => setSearch(value)}
           data-test="search-input"
@@ -175,7 +175,7 @@ function RemoteSongList({ connectionStatus }: Props) {
         groupSizes={[itemsToRender.length]}
         groupHeaderHeight={1}
         groupContent={() => null}
-        itemHeight={unit * 7 + 1}
+        itemHeight={unit * 7}
         itemContent={(index, _groupIndex, itemProps) => {
           const song = itemsToRender[index];
 
