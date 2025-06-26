@@ -7,7 +7,11 @@ import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import SongDao from 'modules/Songs/SongsService';
 import storage from 'modules/utils/storage';
-import { InputLagSetting, RemoteMicConnectionTypeSetting } from 'routes/Settings/SettingsState';
+import {
+  InputLagSetting,
+  RemoteMicConnectionTypeSetting,
+  UnassignOnSongFinishedSetting,
+} from 'routes/Settings/SettingsState';
 
 export const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -104,11 +108,22 @@ export class NetworkServer {
               events.playerChangeRequested.dispatch(event.id, event.playerNumber);
             } else if (type === 'get-game-input-lag-request') {
               sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
-            } else if (type === 'remove-player') {
-              this.transport?.removePlayer(event.id);
             } else if (type === 'set-game-input-lag-request') {
               InputLagSetting.set(event.value);
               sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
+            } else if (type === 'get-unassign-players-after-song-finished-setting-request') {
+              sender.send({
+                t: 'get-unassign-players-after-song-finished-setting-response',
+                state: UnassignOnSongFinishedSetting.get(),
+              });
+            } else if (type === 'set-unassign-players-after-song-finished-setting-request') {
+              UnassignOnSongFinishedSetting.set(event.state);
+              sender.send({
+                t: 'get-unassign-players-after-song-finished-setting-response',
+                state: UnassignOnSongFinishedSetting.get(),
+              });
+            } else if (type === 'remove-player') {
+              this.transport?.removePlayer(event.id);
             } else if (type === 'my-list') {
               events.remoteMicSongListUpdated.dispatch(sender.peer, event);
             }

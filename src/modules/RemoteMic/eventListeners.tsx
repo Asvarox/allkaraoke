@@ -4,7 +4,6 @@ import PlayersManager from 'modules/Players/PlayersManager';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import isPreRendering from 'modules/utils/isPreRendering';
 import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
-import { UnassignOnSongFinishedSetting } from 'routes/Settings/SettingsState';
 
 events.playerRemoved.subscribe((player) => {
   if (player.input.source === RemoteMicrophoneInputSource.inputName) {
@@ -108,10 +107,3 @@ events.playerRemoved.subscribe(sendPlayerStates);
 events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
 events.remoteMicSubscribed.subscribe(sendPlayerStates);
-
-UnassignOnSongFinishedSetting.addListener((state) => {
-  RemoteMicManager.broadcast({
-    t: 'unassign-players-after-song-ended-change',
-    state,
-  });
-});
