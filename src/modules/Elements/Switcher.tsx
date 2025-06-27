@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { InputWrapper } from 'modules/Elements/AKUI/InputWrapper';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { AnimatePresence, motion } from 'motion/react';
@@ -26,7 +27,7 @@ export const Switcher = ({
   className = '',
   ...restProps
 }: Props) => (
-  <Container>
+  <InputWrapper info={info}>
     <ConfigurationPosition
       data-focused={focused}
       onClick={onClick}
@@ -45,18 +46,8 @@ export const Switcher = ({
       </AnimatePresence>
       {children ?? null}
     </ConfigurationPosition>
-    {info && <InfoText>{info}</InfoText>}
-  </Container>
+  </InputWrapper>
 );
-
-const Container = styled.div``;
-
-export const InfoText = styled.div`
-  ${typography};
-  font-size: 2rem;
-  padding: 1rem 0.5rem 0;
-  text-align: justify;
-`;
 
 const ConfigurationPosition = styled.span<{ disabled?: boolean }>`
   background: rgba(0, 0, 0, 0.7);

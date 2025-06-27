@@ -9,6 +9,7 @@ import {
   keyStrokes,
   NetworkGetGameInputLagResponseMessage,
   NetworkGetMicrophoneLagResponseMessage,
+  NetworkGetUnassignPlayersAfterSongFinishedResponseMessage,
   NetworkMessages,
   NetworkRemovePlayerMessage,
   NetworkRequestMicSelectMessage,
@@ -18,6 +19,7 @@ import {
 } from 'modules/RemoteMic/Network/messages';
 import sendMessage from 'modules/RemoteMic/Network/sendMessage';
 import { getPingTime } from 'modules/RemoteMic/Network/utils';
+import Listener from 'modules/utils/Listener';
 import { roundTo } from 'modules/utils/roundTo';
 import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
@@ -31,7 +33,7 @@ export type transportErrorReason = string;
 
 const channelSubscribers: Record<string, number> = {};
 
-export class NetworkClient {
+export class NetworkClient extends Listener<[NetworkMessages]> {
   private transport: ClientTransport | undefined;
   private clientId = storage.getItem(MIC_ID_KEY);
   private roomId: string | null = null;
@@ -63,13 +65,16 @@ export class NetworkClient {
 
   public connect = (roomId: string, name: string, silent: boolean) => {
     const lcRoomId = roomId.toLowerCase();
-    if (!this.transport) {
-      this.transport = lcRoomId.startsWith('w')
-        ? new WebSocketClientTransport()
-        : lcRoomId.startsWith('k')
-          ? new PartyKitClientTransport()
-          : new PeerJSClientTransport();
+    if (this.transport) {
+      this.transport.clearAllListeners();
+      this.transport.close();
     }
+    this.transport = lcRoomId.startsWith('w')
+      ? new WebSocketClientTransport()
+      : lcRoomId.startsWith('k')
+        ? new PartyKitClientTransport()
+        : new PeerJSClientTransport();
+
     if (this.clientId === null) this.setClientId(v4());
     this.roomId = lcRoomId;
 
@@ -156,6 +161,7 @@ export class NetworkClient {
     this.transport!.addListener((data) => {
       const type = data.t;
 
+      this.onUpdate(data);
       if (type === 'start-monitor') {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.addListener(this.onFrequencyUpdate);
@@ -264,6 +270,17 @@ export class NetworkClient {
     this.sendRequest<NetworkGetMicrophoneLagResponseMessage>(
       { t: 'set-microphone-lag-request', value },
       'get-microphone-lag-response',
+    );
+  public getUnassignPlayersAfterSongFinishedSetting = () =>
+    this.sendRequest<NetworkGetUnassignPlayersAfterSongFinishedResponseMessage>(
+      { t: 'get-unassign-players-after-song-finished-setting-request' },
+      'get-unassign-players-after-song-finished-setting-response',
+    );
+
+  public setUnassignPlayersAfterSongFinishedSetting = (state: boolean) =>
+    this.sendRequest<NetworkGetUnassignPlayersAfterSongFinishedResponseMessage>(
+      { t: 'set-unassign-players-after-song-finished-setting-request', state },
+      'get-unassign-players-after-song-finished-setting-response',
     );
 
   public removePlayer = (playerId: string) =>

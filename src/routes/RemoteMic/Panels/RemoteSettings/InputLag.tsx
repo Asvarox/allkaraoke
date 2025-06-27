@@ -1,3 +1,4 @@
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
 import NumericInput from 'routes/RemoteMic/Components/NumericInput';
@@ -32,7 +33,9 @@ function RemoteInputLag() {
         unit="ms"
         data-test="game-input-lag"
       />
-      <h6>If the sound is not synchronised with the lyrics, use this to compensate it.</h6>
+      <Typography className="text-sm">
+        If the sound is not synchronised with the lyrics, use this to compensate it.
+      </Typography>
     </>
   );
 }

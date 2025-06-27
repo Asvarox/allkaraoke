@@ -15,9 +15,11 @@ import {
   RemoteMicConnectionType,
   RemoteMicConnectionTypeSetting,
   RemoteMicPermissions,
+  UnassignOnSongFinishedSetting,
   useSettingValue,
 } from 'routes/Settings/SettingsState';
 
+import { Checkbox } from 'modules/Elements/AKUI/Checkbox';
 import { nextValue } from 'modules/Elements/Utils/indexes';
 import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
 import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
@@ -31,6 +33,7 @@ function RemoteMicSettings() {
 
   const [remoteMicConnectionType, setRemoteMicConnectionType] = useSettingValue(RemoteMicConnectionTypeSetting);
   const [defaultPermission, setDefaultPermission] = useSettingValue(DefaultRemoteMicPermission);
+  const [unassignOnSongFinished, setUnassignOnSongFinished] = useSettingValue(UnassignOnSongFinishedSetting);
   const remoteMics = useEventListenerSelector(events.inputListChanged, () => RemoteMicManager.getRemoteMics());
 
   const forceUpdate = useUpdate();
@@ -68,13 +71,19 @@ function RemoteMicSettings() {
             <strong>WRITE</strong> - player is able to navigate the menus remotely and assign themselves and other
             players to the game.
             <br />
-            <br />
             <strong>READ</strong> - player will only be able to use the device as a microphone and otherwise have no
             control over the game.
           </>
         }
         value={defaultPermission.toUpperCase()}
       />
+      <Checkbox
+        size="small"
+        checked={unassignOnSongFinished}
+        {...register('unassign-on-song-finished', () => setUnassignOnSongFinished(!unassignOnSongFinished))}
+        info={`Prevents "ghost" players - remote mics sticking around, not singing subsequent songs.`}>
+        Unassign players after they finish singing
+      </Checkbox>
       <hr />
       <h3>Connected devices permissions:</h3>
       {remoteMics.map((mic) => {

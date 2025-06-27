@@ -9,9 +9,10 @@ interface Props {
   isVisible: boolean;
   isMicOn: boolean;
   isConnected: boolean;
+  showPlayerChangeModal?: boolean;
 }
 
-function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
+function MicPreview({ isVisible, isMicOn, isConnected, showPlayerChangeModal }: Props) {
   const [volume, setVolume] = useState(0);
   const [frequency, setFrequency] = useState(0);
   const [playerNumber] = useEventListener(events.remoteMicPlayerSet, true) ?? [null];
@@ -33,6 +34,7 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
   return isVisible ? (
     <>
       <VolumeIndicator
+        showPlayerChangeModal={showPlayerChangeModal}
         volume={volume}
         frequency={frequency}
         playerNumber={playerNumber}

@@ -33,7 +33,7 @@ test('Should properly manage remote mics permission settings', async ({ page, br
 
   await test.step('Connect remoteMic to the game', async () => {
     await pages.settingsPage.toolbar.quickConnectPhone();
-    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName, false);
     await pages.settingsPage.toolbar.closeQuickConnectPhone();
   });
 

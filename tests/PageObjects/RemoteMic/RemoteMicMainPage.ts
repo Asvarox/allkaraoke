@@ -80,20 +80,15 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('connect-button');
   }
 
+  public get connectionStatusElement() {
+    return this.page.getByTestId('connection-status');
+  }
   public async expectPlayerToBeConnected() {
-    await expect(this.connectButton).toContainText('CONNECTED', { ignoreCase: true });
+    await expect(this.connectionStatusElement).toContainText('CONNECTED', { ignoreCase: true });
   }
 
   public async expectPlayerToBeDisconnected() {
-    await expect(this.connectButton).toContainText('DISCONNECTED', { ignoreCase: true });
-  }
-
-  public async expectConnectButtonToBe(buttonActivity: 'enabled' | 'disabled') {
-    if (buttonActivity === 'enabled') {
-      await expect(this.connectButton).not.toBeDisabled();
-    } else {
-      await expect(this.connectButton).toBeDisabled();
-    }
+    await expect(this.connectionStatusElement).toContainText('DISCONNECTED', { ignoreCase: true });
   }
 
   public async connect() {

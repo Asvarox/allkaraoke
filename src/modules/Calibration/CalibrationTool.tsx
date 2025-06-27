@@ -1,4 +1,4 @@
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import { useEffect, useRef, useState } from 'react';
 import { useMeasure } from 'react-use';
@@ -31,9 +31,9 @@ export const CalibrationTool = () => {
           key={nextPulse}
         />
       ) : (
-        <Text className="pointer-events-none absolute text-center">
+        <Typography className="pointer-events-none absolute text-center">
           <strong>Click here</strong> to start calibration
-        </Text>
+        </Typography>
       )}
       <div className="opacity-0">
         <VideoPlayer

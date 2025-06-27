@@ -4,11 +4,11 @@ import { IconButton } from '@mui/material';
 import { Tooltip } from 'modules/Elements/Tooltip';
 import FullscreenButton from 'modules/Toolbar/Fullscreen';
 import QRCodeModal from 'modules/Toolbar/QRCodeModal';
-import { useContext, useState } from 'react';
+import { PropsWithChildren, useContext, useState } from 'react';
 import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
 import { KeyboardHelpVisibilitySetting, useSettingValue } from 'routes/Settings/SettingsState';
 
-function Toolbar() {
+function Toolbar({ children }: PropsWithChildren) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   // const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
@@ -19,7 +19,8 @@ function Toolbar() {
   return (
     <>
       <QRCodeModal closeModal={closeModal} open={isModalOpen} />
-      <ToolbarContainer>
+      <ToolbarContainer className="flex items-center">
+        {children}
         {hasContent && (
           <Tooltip title="Toggle help" place="bottom-end">
             <HelpButton size="small" onClick={() => setIsHelpVisible(!isHelpVisible)} data-test="toggle-help">

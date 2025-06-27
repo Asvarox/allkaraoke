@@ -11,6 +11,7 @@ interface Props {
   playerNumber: 0 | 1 | 2 | 3 | null;
   onModalClose: () => void;
   header?: React.ReactNode;
+  showRemoveButton?: boolean;
 }
 
 const colorNames: Record<backgroundTheme, string[]> = {
@@ -20,7 +21,7 @@ const colorNames: Record<backgroundTheme, string[]> = {
   halloween: ['Orange', 'Violet', 'Red', 'Green'],
 };
 
-export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
+export default function PlayerChangeModal({ playerNumber, id, onModalClose, header, showRemoveButton = false }: Props) {
   useEffect(() => {
     RemoteMicClient.subscribe('remote-mics');
 
@@ -70,9 +71,11 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
         Unassign
       </Menu.Button>
       <hr />
-      <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
-        Remove
-      </Menu.Button>
+      {showRemoveButton && (
+        <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
+          Remove
+        </Menu.Button>
+      )}
       <Menu.Button onClick={onModalClose} size="small" data-test="close-menu">
         Close
       </Menu.Button>

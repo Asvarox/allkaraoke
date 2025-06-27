@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { MenuButton } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
 import styles from 'modules/GameEngine/Drawing/styles';
@@ -29,7 +30,7 @@ function ManagePlayers() {
       {list.map((mic) => (
         <Entry mic={mic} key={mic.id} />
       ))}
-      {list.length === 0 && <h4>No remote microphones connected</h4>}
+      {list.length === 0 && <Typography className="text-sm">No remote microphones connected</Typography>}
     </>
   );
 }
@@ -43,6 +44,7 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
       <Modal open={open} onClose={() => setOpen(false)}>
         {permission === 'write' && open && (
           <PlayerChangeModal
+            showRemoveButton={true}
             id={mic.id}
             playerNumber={mic.number}
             onModalClose={() => setOpen(false)}

@@ -6,7 +6,7 @@ type Props<T extends ElementType> = PolymorphicProps<T> & {
   active?: boolean;
 };
 
-export default function Text<T extends ElementType = 'span'>({ as, className, children, active, ...props }: Props<T>) {
+export function Typography<T extends ElementType = 'span'>({ as, className, children, active, ...props }: Props<T>) {
   const Component = as || 'span';
   return (
     <Component
@@ -19,3 +19,4 @@ export default function Text<T extends ElementType = 'span'>({ as, className, ch
     </Component>
   );
 }
+export default Typography;

@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import PostGameView from 'routes/Game/Singing/PostGame/PostGameView';
 import useHighScores from 'routes/Game/Singing/PostGame/hooks/useHighScores';
 import LayoutGame from 'routes/LayoutGame';
+import { UnassignOnSongFinishedSetting } from 'routes/Settings/SettingsState';
 import GameState from '../../../../modules/GameEngine/GameState/GameState';
 
 interface Props {
@@ -33,7 +34,17 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
         song={song}
         width={width}
         height={height}
-        onClickSongSelection={onClickSongSelection}
+        onClickSongSelection={() => {
+          onClickSongSelection();
+
+          if (UnassignOnSongFinishedSetting.get()) {
+            PlayersManager.getPlayers().forEach((player) => {
+              if (player.input.source === 'Remote Microphone') {
+                PlayersManager.removePlayer(player.number);
+              }
+            });
+          }
+        }}
         players={playerScores}
         highScores={highScores}
       />

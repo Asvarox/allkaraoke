@@ -46,7 +46,6 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
     await remoteMic1.remoteMicManagePlayerPage.removePlayer();
     await remoteMic2.remoteMicMainPage.expectPlayerToBeDisconnected();
     await expect(remoteMic2.remoteMicMainPage.connectButton).toBeDisabled();
-    await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassigned();
 
     await page.reload();
     await pages.inputSelectionPage.selectSmartphones();

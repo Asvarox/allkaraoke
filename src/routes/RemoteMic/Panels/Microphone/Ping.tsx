@@ -3,7 +3,7 @@ import { getPingTime } from 'modules/RemoteMic/Network/utils';
 import { useEffect, useState } from 'react';
 
 function Ping() {
-  const [latency, setLatency] = useState(0);
+  const [latency, setLatency] = useState(RemoteMicClient.latency);
 
   useEffect(() => {
     const interval = setInterval(() => {

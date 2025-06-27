@@ -31,7 +31,7 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   };
 
   return keyboard !== undefined ? (
-    <Container data-test="remote-keyboard">
+    <div data-test="remote-keyboard" className="flex flex-wrap justify-center gap-4">
       {keyboard?.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
       {(isHorizontal || isVertical) && (
         <ActionsContainer>
@@ -96,16 +96,10 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           <Shuffle /> {keyboard?.shiftR || 'Random Song'}
         </ActionButton>
       </ActionsContainer>
-    </Container>
+    </div>
   ) : null;
 }
 
-const Container = styled.div`
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
 const ArrowsContainer = styled.div`
   display: flex;
   justify-content: center;

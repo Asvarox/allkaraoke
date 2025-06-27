@@ -1,9 +1,10 @@
 import CameraManager from 'modules/Camera/CameraManager';
 import { Menu } from 'modules/Elements/AKUI/Menu';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { InfoText, Switcher } from 'modules/Elements/Switcher';
+import { Switcher } from 'modules/Elements/Switcher';
 import { nextValue } from 'modules/Elements/Utils/indexes';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
@@ -77,7 +78,9 @@ function Settings() {
         <Menu.Button {...register('calibration-settings', () => navigate('settings/calibration/'))} size="small">
           Calibrate input lag
         </Menu.Button>
-        <InfoText>If the sound is not synchronised with the lyrics, use this to compensate it.</InfoText>
+        <Typography className="text-sm">
+          If the sound is not synchronised with the lyrics, use this to compensate it.
+        </Typography>
       </div>
       <hr />
       <Switcher

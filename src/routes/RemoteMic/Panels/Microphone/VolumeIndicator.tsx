@@ -10,9 +10,17 @@ interface Props {
   frequency: number | null;
   isMicOn: boolean;
   isConnected: boolean;
+  showPlayerChangeModal?: boolean;
 }
 
-export default function VolumeIndicator({ playerNumber, volume, frequency, isMicOn, isConnected }: Props) {
+export default function VolumeIndicator({
+  playerNumber,
+  volume,
+  frequency,
+  isMicOn,
+  isConnected,
+  showPlayerChangeModal,
+}: Props) {
   const [maxVolume, setMaxVolume] = useState(0.000001);
   const permissions = usePermissions();
 
@@ -35,7 +43,9 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
           <Debug>{frequency ? `${Math.round(frequency)}Hz` : ' '}</Debug>
         </>
       )}
-      {isConnected && permissions === 'write' && <PlayerChange playerNumber={playerNumber} />}
+      {isConnected && permissions === 'write' && (
+        <PlayerChange playerNumber={playerNumber} defaultOpen={showPlayerChangeModal} />
+      )}
       <Indicator style={{ transform: `scaleY(${isMicOn ? 1 - Math.min(1, volume / maxVolume) : 1})` }} />
     </IndicatorContainer>
   );

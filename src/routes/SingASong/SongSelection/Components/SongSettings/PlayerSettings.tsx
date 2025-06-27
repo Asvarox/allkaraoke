@@ -6,6 +6,7 @@ import InputManager from 'modules/GameEngine/Input/InputManager';
 import gameEvents from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
 import PlayersManager from 'modules/Players/PlayersManager';
+import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'modules/hooks/players/consts';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import storage from 'modules/utils/storage';
@@ -65,6 +66,12 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
       remote: ['select-song'],
     },
   });
+
+  useEffect(() => {
+    RemoteMicManager.broadcast({
+      t: 'song-selection-player-settings',
+    });
+  }, []);
 
   const startSong = () => {
     onNextStep(playerList);

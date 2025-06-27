@@ -4,12 +4,13 @@ import { PropsWithChildren } from 'react';
 
 interface Props extends PropsWithChildren {
   toolbar?: boolean;
+  toolbarContent?: React.ReactNode;
 }
 
-function LayoutGame({ children, toolbar = true }: Props) {
+function LayoutGame({ children, toolbarContent, toolbar = true }: Props) {
   return (
     <GameScreens>
-      {toolbar && <Toolbar />}
+      {toolbar && <Toolbar>{toolbarContent}</Toolbar>}
       {children}
     </GameScreens>
   );

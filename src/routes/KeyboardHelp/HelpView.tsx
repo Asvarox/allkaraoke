@@ -1,5 +1,5 @@
 import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -96,10 +96,10 @@ const Section = twc.div`flex items-center gap-4`;
 
 const SectionKeys = twc.div`flex-nowrap flex-2 text-white font-bold text-center [&_kbd]:m-1`;
 
-const SectionHelp = twc(Text)`flex-3 text-base text-right`;
+const SectionHelp = twc(Typography)`flex-3 text-base text-right`;
 
 const UseKeyboardIndicator = twc(
-  Text,
+  Typography,
 )`absolute inset-0 bg-black/75 flex items-center justify-center text-white text-md p-8 invisible opacity-0 duration-300 hover:opacity-100 hover:visible`;
 
 const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [

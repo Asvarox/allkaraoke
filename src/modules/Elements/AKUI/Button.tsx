@@ -1,11 +1,12 @@
 import Box from 'modules/Elements/AKUI/Primitives/Box';
 import isE2E from 'modules/utils/isE2E';
-import { HTMLProps, PropsWithChildren, ReactNode } from 'react';
+import { ComponentProps, ComponentType, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twc } from 'react-twc';
+import { twMerge } from 'tailwind-merge';
 
 export const ButtonBase = twc(Box)((props) => {
   return [
-    `flex-row! duration-300 text-md typography cursor-pointer justify-center border-0 bg-black/75 text-white uppercase shadow-focusable pointer-events-auto`,
+    `flex-row! duration-300 text-md typography cursor-pointer justify-center border-0 bg-black/75 text-white uppercase shadow-focusable pointer-events-auto gap-4`,
     !isE2E() && props['data-focused'] ? 'animate-button-focused scale-105' : '',
     props['data-focused'] ? 'bg-active shadow-none' : '',
     props['disabled']
@@ -40,3 +41,12 @@ export const ButtonLink = ({ children, ...props }: Props & Omit<HTMLProps<HTMLAn
     {children}
   </ButtonBase>
 );
+
+Button.Icon = ({
+  Icon,
+  className,
+  ...rest
+}: {
+  Icon: ComponentType<any>;
+  className?: ComponentProps<'svg'>['className'];
+}) => <Icon {...rest} className={twMerge('h-8! w-8!', className)} />;

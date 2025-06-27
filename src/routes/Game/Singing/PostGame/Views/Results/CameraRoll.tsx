@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { captureException } from '@sentry/react';
 import CameraManager from 'modules/Camera/CameraManager';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { useEffect, useRef, useState } from 'react';
 
 function CameraRoll() {
@@ -30,9 +30,9 @@ function CameraRoll() {
   return (
     <div className={`flex flex-col`}>
       <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />
-      <Text className="mt-4 text-center">
+      <Typography className="mt-4 text-center">
         You can disable camera mode in <strong>Settings</strong>.
-      </Text>
+      </Typography>
     </div>
   );
 }

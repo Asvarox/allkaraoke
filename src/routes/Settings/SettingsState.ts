@@ -91,7 +91,7 @@ export const RemoteMicConnectionTypeSetting = new Setting<ServerTransport['name'
   'session',
 );
 export const IsCalibratedSetting = new Setting<boolean>('IsCalibrated', false);
-// export const IsCalibratedSetting = new Setting<boolean>('IsCalibrated', false, 'memory');
+export const UnassignOnSongFinishedSetting = new Setting<boolean>('UnassignOnSongFinished', false, 'session');
 
 posthog.onFeatureFlags?.(() => {
   RemoteMicConnectionTypeSetting.set(

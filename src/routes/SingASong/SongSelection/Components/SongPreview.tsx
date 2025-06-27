@@ -322,7 +322,12 @@ const SongBPMIndicator = (
 
   if (graphicSetting === 'low') return null;
 
-  const realBpm = props.song.realBpm || (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+  const realBpm =
+    props.song.realBpm && props.song.realBpm > 40
+      ? props.song.realBpm
+      : props.song.bpm > 300
+        ? props.song.bpm / 4
+        : props.song.bpm / 2;
   return (
     <BaseSongBPMIndicator
       width={props.width}

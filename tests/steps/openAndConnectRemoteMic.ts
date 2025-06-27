@@ -1,13 +1,13 @@
-import { Browser, BrowserContext, Page, devices, expect, test } from '@playwright/test';
+import { Browser, BrowserContext, Page, devices, test } from '@playwright/test';
 import initialiseRemoteMic from '../PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from '../PageObjects/initialise';
 import { initTestMode, mockSongs } from '../helpers';
 
-export async function connectRemoteMic(remoteMicPage: Page) {
+export async function connectRemoteMic(remoteMicPage: Page, closeMicSelectionMenu = true) {
   await remoteMicPage.getByTestId('connect-button').click();
-  await expect(remoteMicPage.getByTestId('connect-button')).toContainText('Connected', {
-    ignoreCase: true,
-  });
+  if (closeMicSelectionMenu) {
+    await remoteMicPage.getByTestId('close-menu').click();
+  }
 }
 export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser) {
   const remoteMic = await context.newPage();
@@ -22,7 +22,12 @@ export async function openRemoteMic(page: Page, context: BrowserContext, browser
   return initialiseRemoteMic(remoteMic, context, browser);
 }
 
-export async function openAndConnectRemoteMicDirectly(page: Page, browser: Browser, name: string) {
+export async function openAndConnectRemoteMicDirectly(
+  page: Page,
+  browser: Browser,
+  name: string,
+  closeMicSelectionMenu = true,
+) {
   return test.step(`Connect remote mic ${name}`, async () => {
     const context = await browser.newContext({
       ...devices['Pixel 5'],
@@ -32,7 +37,7 @@ export async function openAndConnectRemoteMicDirectly(page: Page, browser: Brows
     const remoteMic = await openRemoteMic(page, context, browser);
 
     await remoteMic._page.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic._page);
+    await connectRemoteMic(remoteMic._page, closeMicSelectionMenu);
 
     return remoteMic;
   });

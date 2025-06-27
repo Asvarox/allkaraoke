@@ -3,7 +3,7 @@ import { Input } from 'modules/Elements/Input';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
 import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
-import { Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
+import { ComponentRef, Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
@@ -16,7 +16,7 @@ interface Props {
   visible: boolean;
 }
 export default function QuickSearch({ setFilters, filters, keyboardControl, visible, setVisible }: Props) {
-  const searchInput = useRef<HTMLInputElement | null>(null);
+  const searchInput = useRef<ComponentRef<typeof Input>>(null);
   const [isFocused, setIsFocused] = useState(false);
 
   const setSearch = (value: string) => {
@@ -27,7 +27,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
   };
 
   const onLeave = () => {
-    searchInput.current?.blur();
+    searchInput.current?.element?.blur();
   };
 
   useHotkeys('down', onLeave, { enabled: isFocused, enableOnTags: ['INPUT'] });
@@ -64,7 +64,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
     REGULAR_ALPHA_CHARS,
     (e) => {
       onSearchSong(e);
-      searchInput.current?.focus();
+      searchInput.current?.element?.focus();
     },
     { enabled: !isFocused && keyboardControl },
     [filters.search],
@@ -73,7 +73,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
   useHotkeys(
     'Backspace',
     () => {
-      searchInput.current?.focus();
+      searchInput.current?.element?.focus();
     },
     { enabled: !isFocused && keyboardControl },
     [filters.search],
@@ -97,7 +97,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
           data-test="filters-search-form"
           onSubmit={(e) => {
             e.preventDefault();
-            searchInput.current?.blur();
+            searchInput.current?.element?.blur();
           }}>
           <Input
             onFocus={() => setIsFocused(true)}

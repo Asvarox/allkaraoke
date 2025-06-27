@@ -89,6 +89,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   await test.step('After reconnecting - if previous mic is free, the player should be assigned to it again', async () => {
     await remoteMic1._page.reload();
     await remoteMic1.remoteMicMainPage.connect();
+    await remoteMic1.remoteMicChangeMicColorPage.goBackToMainMenu();
     await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned('blue');
 
     await remoteMic4.remoteMicChangeMicColorPage.expectAnyPlayerToHaveMicAssigned('blue', player1.name);
@@ -122,6 +123,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
     await remoteMic3._page.reload();
     await remoteMic3.remoteMicMainPage.connect();
+    await remoteMic3.remoteMicChangeMicColorPage.goBackToMainMenu();
     await remoteMic3.remoteMicMainPage.expectPlayerToBeAssigned('red');
 
     await remoteMic4.remoteMicChangeMicColorPage.expectAnyPlayerToHaveMicAssigned('red', player3.name);

@@ -3,7 +3,7 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { List } from '@mui/icons-material';
-import Text from 'modules/Elements/AKUI/Primitives/Text';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
 import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
 import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
@@ -107,13 +107,13 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             filters: { specificSongs: remoteSongList, skipExcludedLanguages: true },
             footerComponent: (
               <div data-test="remote-mic-playlist-tip" className="flex justify-center">
-                <Text className="text-xl">
+                <Typography className="text-xl">
                   Add songs on your <strong>phone</strong> using{' '}
                   <strong>
                     <List className="text-[1em]!" /> Song List
                   </strong>{' '}
                   tab on the bottom of the screen
-                </Text>
+                </Typography>
               </div>
             ),
           }

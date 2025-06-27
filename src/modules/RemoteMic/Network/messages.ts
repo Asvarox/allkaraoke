@@ -152,7 +152,29 @@ export interface NetworkStyleChangeMessage {
   style: backgroundTheme;
 }
 
+export interface NetworkSongSelectionPlayerSettingsMessage {
+  t: 'song-selection-player-settings';
+}
+
+export interface NetworkGetUnassignPlayersAfterSongFinishedRequestMessage {
+  t: 'get-unassign-players-after-song-finished-setting-request';
+}
+
+export interface NetworkGetUnassignPlayersAfterSongFinishedResponseMessage {
+  t: 'get-unassign-players-after-song-finished-setting-response';
+  state: boolean;
+}
+
+export interface NetworkSetUnassignPlayersAfterSongFinishedRequestMessage {
+  t: 'set-unassign-players-after-song-finished-setting-request';
+  state: boolean;
+}
+
 export type NetworkMessages =
+  | NetworkGetUnassignPlayersAfterSongFinishedRequestMessage
+  | NetworkGetUnassignPlayersAfterSongFinishedResponseMessage
+  | NetworkSetUnassignPlayersAfterSongFinishedRequestMessage
+  | NetworkSongSelectionPlayerSettingsMessage
   | NetworkRemoteMicMyListMessage
   | NetworkSelectSongMessage
   | NetworkSubscribeMessage

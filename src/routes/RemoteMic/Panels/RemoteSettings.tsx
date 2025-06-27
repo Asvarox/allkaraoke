@@ -10,6 +10,7 @@ import ManagePlayers from 'routes/RemoteMic/Panels/RemoteSettings/ManagePlayers'
 import MicrophoneSettings from 'routes/RemoteMic/Panels/RemoteSettings/MicrophoneSettings';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
+import UnassignAfterSongFinishedSetting from './RemoteSettings/UnassignAfterSongFinishedSetting';
 
 interface Props {
   roomId: string | null;
@@ -60,6 +61,7 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
             <>
               <ManagePlayers />
               <RemoteInputLag />
+              <UnassignAfterSongFinishedSetting />
             </>
           )}
           <hr />

@@ -30,7 +30,7 @@
 
 
 @utility typography {
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.025em black;
     color: white;
     font-weight: bold;
     strong {
