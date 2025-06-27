@@ -2249,10 +2249,10 @@
       "English"
     ],
     "bpm": 240,
-    "gap": 12690,
+    "gap": 12740,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-06-21T00:10:21.593Z",
+    "lastUpdate": "2025-06-25T04:56:49.797Z",
     "genre": "R&B",
     "realBpm": 71,
     "volume": 0.7,
@@ -7371,24 +7371,24 @@
     "id": "angele-balance-ton-quoi",
     "title": "Balance ton quoi",
     "artist": "Angèle",
-    "video": "Hi7Rx3En7-k",
+    "video": "3e-knnTkzCY",
     "language": [
       "French"
     ],
     "bpm": 232.5,
-    "gap": 112.90322580645159,
+    "gap": 398.38709677419354,
     "year": "2018",
-    "lastUpdate": "2025-01-16T11:54:58.389Z",
+    "lastUpdate": "2025-06-25T05:02:19.257Z",
     "genre": "Pop",
     "realBpm": 116,
     "previewStart": 73,
     "previewEnd": 255,
-    "volume": 0.95,
+    "volume": 0.76,
     "author": "mustangfred & Joachim Roekens",
     "sourceUrl": "https://www.youtube.com/watch?v=Hi7Rx3En7-k",
     "tracks": [
       {
-        "start": 6
+        "start": 7
       }
     ],
     "shortId": 262,
@@ -25386,11 +25386,11 @@
     "language": [
       "English"
     ],
-    "bpm": 124,
+    "bpm": 124.2,
     "gap": 12572.258064516129,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2024-06-29T00:10:14.466Z",
+    "lastUpdate": "2025-06-25T05:03:40.807Z",
     "realBpm": 62,
     "volume": 0.74,
     "author": "piharatamo",
@@ -29566,10 +29566,12 @@
       "Polish"
     ],
     "bpm": 161.52,
-    "gap": 15678.454680534918,
+    "gap": 15778.454680534918,
     "year": "1967",
     "artistOrigin": "PL",
+    "lastUpdate": "2025-06-25T04:54:19.038Z",
     "realBpm": 80,
+    "volume": 0.8,
     "author": "davidus01",
     "tracks": [
       {
@@ -93698,6 +93700,34 @@
     "local": false
   },
   {
+    "id": "outliers-place-your-hands",
+    "title": "Place Your Hands",
+    "artist": "Outliers",
+    "video": "n55qLZ-PhNo",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 1278.5373134328358,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-27T00:13:36.784Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.77,
+    "author": "Fepo",
+    "sourceUrl": "Outliers feat. Reef - Place Your Hands (Outliers Remix)",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4897,
+    "tracksCount": 1,
+    "search": "outliersplaceyourhands",
+    "local": false
+  },
+  {
     "id": "ov7-enloqueceme",
     "title": "Enloquéceme",
     "artist": "OV7",
@@ -107431,6 +107461,61 @@
     "local": false
   },
   {
+    "id": "seal-amazing",
+    "title": "Amazing",
+    "artist": "Seal",
+    "video": "MH6JmwsRhS0",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 2346.3934426229507,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-27T00:13:35.924Z",
+    "genre": "Pop",
+    "realBpm": 11,
+    "volume": 0.76,
+    "author": "Senfbussard",
+    "sourceUrl": "Seal - Amazing",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4893,
+    "tracksCount": 1,
+    "search": "sealamazing",
+    "local": false
+  },
+  {
+    "id": "seal-crazy",
+    "title": "Crazy",
+    "artist": "Seal",
+    "video": "4Fc67yQsPqQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 308.7,
+    "gap": 10269.591836734693,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-27T00:13:35.928Z",
+    "realBpm": 33,
+    "volume": 0.72,
+    "author": "Buberatz",
+    "sourceUrl": "Seal - Crazy",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4894,
+    "tracksCount": 1,
+    "search": "sealcrazy",
+    "local": false
+  },
+  {
     "id": "seal-future-love-paradise",
     "title": "Future Love Paradise",
     "artist": "Seal",
@@ -107482,6 +107567,33 @@
     "shortId": 3828,
     "tracksCount": 1,
     "search": "sealkissfromarose",
+    "local": false
+  },
+  {
+    "id": "seal-loves-divine",
+    "title": "Love’s Divine",
+    "artist": "Seal",
+    "video": "iczaDcixBj4",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 17974.5,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-27T00:13:35.930Z",
+    "realBpm": 32,
+    "volume": 0.76,
+    "author": "Leroidukitch, blackcat6",
+    "sourceUrl": "Seal - Love’s Divine",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4895,
+    "tracksCount": 1,
+    "search": "seallovesdivine",
     "local": false
   },
   {
@@ -113102,6 +113214,35 @@
     "local": false
   },
   {
+    "id": "sonia-youll-never-stop-me-loving-you",
+    "title": "You’ll Never Stop Me Loving You",
+    "artist": "Sonia",
+    "video": "mMo4PfiiBhk",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 16210,
+    "year": "1989",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-06-27T00:13:35.937Z",
+    "edition": "SingStar",
+    "genre": "Dance Pop",
+    "realBpm": 3,
+    "volume": 0.75,
+    "author": "GunnerXero",
+    "sourceUrl": "Sonia - You’ll Never Stop Me Loving You",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4896,
+    "tracksCount": 1,
+    "search": "soniayoullneverstopmelovingyou",
+    "local": false
+  },
+  {
     "id": "sophie-ellis-bextor-murder-on-the-dancefloor",
     "title": "Murder On The Dancefloor",
     "artist": "Sophie Ellis-Bextor",
@@ -116586,11 +116727,11 @@
       "English"
     ],
     "bpm": 367,
-    "gap": 71209.0735694823,
+    "gap": 71159.0735694823,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-12T06:24:16.093Z",
-    "videoGap": 59,
+    "lastUpdate": "2025-06-25T04:55:29.377Z",
+    "videoGap": 57,
     "realBpm": 89,
     "volume": 0.77,
     "author": "Tracks",
@@ -120764,6 +120905,34 @@
     "local": false
   },
   {
+    "id": "the-blues-brothers-sweet-home-chicago",
+    "title": "Sweet Home Chicago",
+    "artist": "The Blues Brothers",
+    "video": "euJ22UqLD5Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 253,
+    "gap": 7022.094861660079,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-06-27T00:13:36.785Z",
+    "genre": "Blues",
+    "realBpm": 34,
+    "volume": 0.76,
+    "author": "DoubleDee",
+    "sourceUrl": "The Blues Brothers - Sweet Home Chicago",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4898,
+    "tracksCount": 1,
+    "search": "thebluesbrotherssweethomechicago",
+    "local": false
+  },
+  {
     "id": "the-boomtown-rats-i-dont-like-mondays",
     "title": "I Don’t Like Mondays",
     "artist": "The Boomtown Rats",
@@ -121489,6 +121658,33 @@
     "shortId": 4319,
     "tracksCount": 1,
     "search": "thecurefridayiminlove",
+    "local": false
+  },
+  {
+    "id": "the-dandy-warhols-not-if-you-were-the-last-junkie-on-earth",
+    "title": "Not If You Were The Last Junkie On Earth",
+    "artist": "The Dandy Warhols",
+    "video": "APrpB-i4d_E",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.1,
+    "gap": 4856.662114176454,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-06-27T00:13:35.920Z",
+    "realBpm": 25,
+    "volume": 0.77,
+    "author": "daggeg",
+    "sourceUrl": "The Dandy Warhols - Not If You Were The Last Junkie On Earth",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4892,
+    "tracksCount": 1,
+    "search": "thedandywarholsnotifyouwerethelastjunkieonearth",
     "local": false
   },
   {
@@ -128033,6 +128229,60 @@
     "shortId": 4538,
     "tracksCount": 1,
     "search": "tovelohabitsstayhigh",
+    "local": false
+  },
+  {
+    "id": "toy-box-best-friend",
+    "title": "Best Friend",
+    "artist": "Toy-Box",
+    "video": "BddgVkX_e70",
+    "language": [
+      "English"
+    ],
+    "bpm": 278,
+    "gap": 13794.820143884892,
+    "year": "1998",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-06-27T00:13:36.787Z",
+    "realBpm": 19,
+    "volume": 0.78,
+    "author": "Way2Evil",
+    "sourceUrl": "Toy-Box - Best Friend",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4899,
+    "tracksCount": 1,
+    "search": "toyboxbestfriend",
+    "local": false
+  },
+  {
+    "id": "toy-box-super-duper-man",
+    "title": "Super-Duper-Man",
+    "artist": "Toy-Box",
+    "video": "359J1lC96QQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.02,
+    "gap": 14592.215556031711,
+    "year": "1999",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-06-27T00:13:36.789Z",
+    "realBpm": 26,
+    "volume": 0.76,
+    "author": "RetroGirl",
+    "sourceUrl": "Toy-Box - Super-Duper-Man",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4900,
+    "tracksCount": 1,
+    "search": "toyboxsuperduperman",
     "local": false
   },
   {
