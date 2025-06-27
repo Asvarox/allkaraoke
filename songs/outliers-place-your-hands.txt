@@ -1,0 +1,248 @@
+#ARTIST:Outliers
+#TITLE:Place Your Hands
+#CREATOR:Fepo
+#BPM:268
+#YEAR:2025
+#VIDEO:v=n55qLZ-PhNo
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:1278,5373134328358
+#ALLKARAOKE_ID:outliers-place-your-hands
+#ALLKARAOKE_SID:4897
+#ALLKARAOKE_LASTUPDATE:2025-06-27T00:13:36.784Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:32
+#ALLKARAOKE_SOURCEURL:Outliers feat. Reef - Place Your Hands (Outliers Remix)
+#ALLKARAOKE_VOLUME:0,77
+#MP3:Outliers feat. Reef - Place Your Hands (Outliers Remix).mp3
+#COVER:Outliers feat. Reef - Place Your Hands (Outliers Remix) [CO].jpg
+#BACKGROUND:Outliers feat. Reef - Place Your Hands (Outliers Remix) [BG].jpg
+: 18 5 7 Oh, 
+: 26 5 7 place 
+: 34 3 5 you
+: 38 2 7 ~r 
+: 42 42 -2 hands
+- 84
+: 90 2 -2 On 
+: 94 5 7 my 
+: 102 4 3 ho
+: 108 38 -2 ~pe
+- 146
+: 154 2 7 Run 
+: 158 3 7 you
+: 162 2 8 ~r 
+* 166 34 8 fin
+: 202 3 5 ge
+: 206 5 3 ~rs
+- 211
+: 218 5 7 Through 
+: 226 9 7 my 
+: 237 4 3 sou
+: 242 14 -2 ~l,
+- 256
+F 261 3 7 All 
+F 266 2 7 right 
+F 270 4 7 now
+- 274
+: 282 5 3 Oh, 
+: 289 2 3 and 
+: 292 4 3 the 
+: 298 4 5 way 
+: 304 3 5 that 
+: 309 2 3 I 
+: 313 3 5 feel 
+: 318 2 5 al
+: 322 4 5 right 
+: 328 2 5 no
+: 331 3 3 ~w
+- 334
+: 338 5 8 Oh 
+: 345 4 8 Lord, 
+: 351 2 8 it 
+: 355 4 3 may 
+: 361 11 -2 go
+- 372 384
+- 384
+: 402 5 7 So, 
+: 410 5 7 place 
+: 418 3 5 you
+: 422 2 7 ~r 
+: 426 42 -2 hands
+- 468
+: 474 2 -2 On 
+: 478 5 7 my 
+: 486 4 3 ho
+: 492 38 -2 ~pe
+- 530
+: 538 2 7 Run 
+: 542 3 7 you
+: 546 2 8 ~r 
+* 550 34 8 fin
+: 586 3 5 ge
+: 590 5 3 ~rs
+- 595
+: 602 5 7 Through 
+: 610 9 7 my 
+: 621 4 3 sou
+: 626 14 -2 ~l,
+- 640
+F 644 3 7 All 
+F 649 2 7 right 
+F 653 4 7 now
+- 657
+: 666 5 3 Oh, 
+: 673 2 3 and 
+: 676 4 3 the 
+: 682 4 5 way 
+: 688 3 5 that 
+: 693 2 3 I 
+: 697 3 5 feel 
+: 702 2 5 al
+: 706 4 5 right 
+: 712 2 5 no
+: 715 3 -2 ~w
+- 718
+: 722 5 8 Oh 
+: 729 4 8 Lord, 
+: 735 2 8 it 
+: 739 4 3 may 
+: 745 3 -2 go
+- 748
+: 754 2 8 Put 
+: 758 2 8 your 
+: 762 6 8 hands 
+: 770 5 3 on,
+- 775
+: 778 2 8 Put 
+: 782 2 8 your 
+: 786 6 8 hands 
+: 794 5 3 on,
+- 799 800
+- 800
+: 818 2 8 Put 
+: 822 2 8 your 
+: 826 6 8 hands 
+: 834 5 3 on,
+- 839
+: 842 2 8 Put 
+: 846 2 8 your 
+: 850 6 8 hands 
+: 858 5 3 on,
+- 863 864
+- 864
+: 882 2 8 Put 
+: 886 2 8 your 
+: 890 6 8 hands 
+: 898 5 3 on,
+- 903
+: 906 2 8 Put 
+: 910 2 8 your 
+: 914 6 8 hands 
+: 922 5 3 on,
+- 927 928
+- 928
+: 946 2 8 Put 
+: 950 2 8 your 
+: 954 6 8 hands 
+: 962 5 3 on,
+- 967
+: 978 5 7 So 
+: 985 3 7 lay
+: 989 2 5 ~ 
+: 993 11 3 me 
+: 1006 2 3 do
+: 1009 33 -2 ~wn
+- 1042
+: 1050 2 0 For 
+: 1054 6 7 a 
+: 1062 6 3 whi
+: 1070 21 -2 ~
+: 1093 15 3 ~le
+- 1108
+: 1114 2 7 Join 
+: 1118 3 7 my
+: 1122 2 8 ~ 
+: 1126 30 8 bo
+: 1158 4 7 dy
+: 1163 13 3 ~
+- 1176
+: 1178 4 7 With 
+: 1184 11 7 my 
+: 1198 2 3 mi
+: 1202 12 -2 ~nd
+- 1214
+F 1222 2 7 Al
+F 1226 3 7 right 
+F 1231 4 7 now
+- 1235
+: 1242 4 3 Oh, 
+: 1248 3 3 and 
+: 1253 2 3 I 
+: 1257 5 5 cried 
+: 1264 3 5 at 
+: 1269 2 3 the 
+: 1273 3 5 com
+: 1278 2 5 mo
+: 1282 3 5 ~n 
+: 1287 6 5 one
+- 1293
+: 1298 6 8 Four 
+: 1306 3 7 weeks 
+: 1311 3 3 when 
+: 1316 4 3 he 
+: 1322 3 3 died
+- 1325 1536
+- 1536
+: 1554 5 8 Oh 
+: 1561 5 8 Lord, 
+: 1568 3 8 it 
+: 1573 3 8 may 
+* 1578 28 7 go 
+: 1608 27 5 a
+: 1637 25 3 way
+- 1662 1824
+- 1824
+: 1842 5 7 So, 
+: 1850 5 7 place 
+: 1858 3 5 you
+: 1862 2 7 ~r 
+: 1866 42 -2 hands
+- 1908
+: 1914 2 -2 On 
+: 1918 5 7 my 
+: 1926 4 3 ho
+: 1932 38 -2 ~pe
+- 1970
+: 1978 2 7 Run 
+: 1982 3 7 you
+: 1986 2 8 ~r 
+* 1990 34 8 fin
+: 2026 3 5 ge
+: 2030 5 3 ~rs
+- 2035
+: 2042 6 7 Through 
+: 2050 9 7 my 
+: 2061 21 7 soul,
+- 2082
+F 2086 3 7 All 
+F 2091 2 7 right 
+F 2095 4 7 now
+- 2099
+: 2106 5 3 Oh, 
+: 2113 2 3 and 
+: 2116 4 3 the 
+: 2122 4 5 way 
+: 2128 3 5 that 
+: 2133 2 3 I 
+: 2137 3 5 feel 
+: 2142 2 5 al
+: 2146 4 5 right 
+: 2152 2 5 no
+: 2155 3 -2 ~w
+- 2158
+: 2163 5 8 Oh 
+* 2170 4 7 Lord, 
+: 2176 2 5 it 
+: 2179 5 3 may 
+: 2186 12 -2 go
+E
