@@ -3,7 +3,7 @@ import { Song } from 'interfaces';
 import languageNameToIsoCode from 'modules/utils/languageNameToIsoCode';
 import { ComponentProps, useLayoutEffect, useState } from 'react';
 
-const overrides = import.meta.glob('./Flag/flags/*.svg', { as: 'url', eager: true });
+const overrides = import.meta.glob<string>('./Flag/flags/*.svg', { query: '?url', eager: true, import: 'default' });
 
 type Props =
   | {
