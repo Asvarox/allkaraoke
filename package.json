@@ -171,7 +171,7 @@
     "vite": "^7.0.4",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
-    "wrangler": "^3.106.0"
+    "wrangler": "^4.24.3"
   },
   "homepage": "./",
   "dependenciesMeta": {
