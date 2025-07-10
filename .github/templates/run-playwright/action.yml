@@ -1,7 +1,7 @@
 # See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 
 name: run-playwright
-description: 'Installs, caches, runs and store artifacts of Playwright'
+description: 'Runs and stores artifacts of Playwright'
 
 inputs:
   packagescript:
@@ -23,20 +23,6 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: actions/cache@v4
-      id: playwright-cache
-      with:
-        path: |
-          ~/.cache/ms-playwright
-        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ inputs.project }}
-        restore-keys: |
-          ${{ runner.os }}-playwright-${{ inputs.project }}
-    - run: pnpm playwright install --with-deps chromium ${{ inputs.project }}
-      if: steps.playwright-cache.outputs.cache-hit != 'true'
-      shell: bash
-    - run: pnpm playwright install-deps ${{ inputs.project }}
-      if: steps.playwright-cache.outputs.cache-hit == 'true'
-      shell: bash
     - run: pnpm ${{ inputs.packagescript }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }}
       shell: bash
     - uses: actions/upload-artifact@v4

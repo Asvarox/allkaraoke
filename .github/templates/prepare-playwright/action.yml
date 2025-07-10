@@ -1,0 +1,40 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
+name: prepare-playwright
+description: 'Installs and caches Playwright and its dependencies'
+
+inputs:
+  project:
+    required: false
+    description: 'Playwright project (browser)'
+    default: 'chromium'
+
+runs:
+  using: 'composite'
+  steps:
+    # https://github.com/actions/runner-images/issues/10977#issuecomment-2810713336
+    - run: |
+        # Skip installing pacakge docs {makes the man-db trigger much faster) 
+        # (I disabled `/doc` and `/info` too, just in case.)
+        sudo tee /etc/dpkg/dpkg.cfg.d/01_nodoc > /dev/null << 'EOF'
+        path-exclude /usr/share/doc/*
+        path-exclude /usr/share/man/*
+        path-exclude /usr/share/info/*
+        EOF
+      shell: bash
+      name: 'Disable installing package docs'
+
+    - uses: actions/cache@v4
+      id: playwright-cache
+      with:
+        path: |
+          ~/.cache/ms-playwright
+        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ inputs.project }}
+        restore-keys: |
+          ${{ runner.os }}-playwright-${{ inputs.project }}
+    - run: pnpm playwright install --with-deps chromium ${{ inputs.project }}
+      if: steps.playwright-cache.outputs.cache-hit != 'true'
+      shell: bash
+    - run: pnpm playwright install-deps ${{ inputs.project }}
+      if: steps.playwright-cache.outputs.cache-hit == 'true'
+      shell: bash

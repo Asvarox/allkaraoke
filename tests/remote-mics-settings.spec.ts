@@ -30,6 +30,7 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
   await test.step('Enter player`s name and connect mic with the game', async () => {
     await remoteMic.remoteMicMainPage.enterPlayerName(playerName);
     await remoteMic.remoteMicMainPage.connect();
+    await remoteMic.remoteMicChangeMicColorPage.goBackToMainMenu();
   });
 
   await test.step('Go to the mic settings - info about the ability to reset the mic is visible', async () => {
