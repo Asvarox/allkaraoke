@@ -6,7 +6,8 @@ import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import LayoutGame from 'routes/LayoutGame';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import EurovisionBgSvg from 'routes/SocialMediaElements/EurovisionBackground';
-import logo from '../../../public/logo.svg?raw';
+// @ts-expect-error import from /public/ folder
+import logo from '/logo.svg?url&raw';
 
 export default function SocialMediaElements() {
   useBackground(false);
