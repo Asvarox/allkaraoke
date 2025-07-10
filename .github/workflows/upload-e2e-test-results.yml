@@ -49,7 +49,9 @@ jobs:
 
       - name: Remove files larger than 25MB (limit of Cloudflare Pages)
         if: steps.reports_check.outputs.reports == 'true'
-        run: find ./playwright-report -type f -size +25M -delete
+        run: |
+          find ./playwright-report -type f -size +25M
+          find ./playwright-report -type f -size +25M -delete
       - name: Upload merged report
         if: steps.reports_check.outputs.reports == 'true'
         id: deploy-report
