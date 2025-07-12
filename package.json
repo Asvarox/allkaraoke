@@ -185,5 +185,6 @@
       "unplugged": true
     }
   },
-  "packageManager": "pnpm@9.0.6"
+  "packageManager": "pnpm@9.0.6",
+  "license": "MIT"
 }
