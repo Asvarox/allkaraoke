@@ -5,8 +5,10 @@ import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, ReactNode, use, useCallback } from 'react';
-import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import SongFlag from 'routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 import { TopContainer } from 'routes/SingASong/SongSelection/Components/SongCard/TopContainer';
 
@@ -187,7 +189,15 @@ export const SongListEntryDetails = styled(Box)<{ expanded?: boolean }>`
   ${typography};
 
   text-align: right;
-  font-size: 2.7rem;
+  font-size: ${(props) => {
+    if (props.expanded) return '6rem';
+    // Use feature flag hook to determine font size
+    const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    // Only increase font size for desktop users with feature flag enabled
+    const shouldUseLargerFont = !mobilePhoneMode && fewerSongsPerRowEnabled;
+    return shouldUseLargerFont ? '3.5rem' : '2.7rem';
+  }};
 
   &[data-expanded='true'] {
     font-size: 6rem;
@@ -201,6 +211,15 @@ export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
 export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
   margin-top: ${(props) => (props.expanded ? '1.5rem' : '0.5rem')};
   color: white;
+  font-size: ${(props) => {
+    if (props.expanded) return '6rem';
+    // Use feature flag hook to determine font size - title gets 4rem when flag is enabled on desktop
+    const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    // Only increase font size for desktop users with feature flag enabled
+    const shouldUseLargerFont = !mobilePhoneMode && fewerSongsPerRowEnabled;
+    return shouldUseLargerFont ? '4rem' : '2.7rem';
+  }};
 `;
 
 export const SongAuthor = styled(SongListEntryDetailsTitle)`
