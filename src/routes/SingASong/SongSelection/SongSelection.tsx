@@ -11,6 +11,8 @@ import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
 import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import useViewportSize from 'modules/hooks/useViewportSize';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   memo,
@@ -76,7 +78,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
+  const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
+
+  // Mobile mode always shows 3 songs per row, regardless of feature flag
+  const songsPerRow = mobilePhoneMode || fewerSongsPerRowEnabled ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
 
   useBackgroundMusic(false);
   useBackground(true);
