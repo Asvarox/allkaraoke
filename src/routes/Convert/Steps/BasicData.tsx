@@ -1,11 +1,13 @@
 import { Box, Button, TextField } from '@mui/material';
 import { Song } from 'interfaces';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
+import { getSectionStartInMs } from 'modules/Songs/utils/notesSelectors';
 import { ChangeEventHandler, useMemo } from 'react';
+import importUltrastarEsSong from 'routes/Convert/importUltrastarEsSong';
 import { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
+import formatMs from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import { fixDiacritics } from 'routes/Convert/Steps/utils/fixDiacritics';
 import isValidUltrastarTxtFormat from 'routes/Convert/Steps/utils/validateUltrastar';
-import importUltrastarEsSong from 'routes/Convert/importUltrastarEsSong';
 
 export interface BasicDataEntity {
   sourceUrl: string;
@@ -108,16 +110,19 @@ export default function BasicData(props: Props) {
           </Box>
         </>
       ) : (
-        <Box sx={{ display: 'flex', width: '100%', height: 500, overflow: 'auto' }}>
+        <div className="flex h-150 w-full gap-1 overflow-auto">
           {props.finalSong?.tracks?.map((track, index) => (
-            <Box key={index} sx={{ flex: 1 }}>
+            <div key={index} className="flex flex-1 flex-col gap-1">
               <h4 className="py-3">{track.name ?? `Track #${index + 1}`}</h4>
               {track.sections.filter(isNotesSection).map((section) => (
-                <p key={section.start}>{section.notes.map((note) => note.lyrics).join('')}</p>
+                <p key={section.start}>
+                  <span className="text-[0.75rem]"> [{formatMs(getSectionStartInMs(section, props.finalSong))}]</span>{' '}
+                  {section.notes.map((note) => note.lyrics).join('')}
+                </p>
               ))}
-            </Box>
+            </div>
           ))}
-        </Box>
+        </div>
       )}
     </Box>
   );

@@ -33,7 +33,6 @@ export interface SongMetadataEntity {
 interface Props {
   onChange: (data: SongMetadataEntity) => void;
   data: SongMetadataEntity;
-  songTitle?: string;
   songArtist?: string;
   videoId: string;
   videoGap?: number;
@@ -115,11 +114,11 @@ export default function SongMetadata(props: Props) {
 
   const searchGoogle = (phrase: string) => {
     global.open(
-      `https://www.google.com/search?q=${encodeURIComponent(`${props.songArtist} ${props.songTitle} ${phrase}`)}`,
+      `https://www.google.com/search?q=${encodeURIComponent(`${props.data.artist} ${props.data.title} ${phrase}`)}`,
       '_blank',
     );
   };
-  const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
+  const isSearchableForVideo = !!props.data.title && !!props.data.artist;
   const isRealBpmInvalid = +(props.data?.realBpm ?? 0) > 200;
 
   const [hasSearchedBpm, setHasSearchedBpm] = useState(false);

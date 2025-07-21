@@ -1,4 +1,5 @@
-import { NotesSection, Section, songBeat } from 'interfaces';
+import { milliseconds, NotesSection, Section, Song, songBeat } from 'interfaces';
+import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 import isNotesSection from './isNotesSection';
 
 export const getFirstNoteFromSection = (section: NotesSection) => {
@@ -28,6 +29,10 @@ export const getNoteAtBeat = (section: NotesSection, beat: number, tolerance = 0
 
 export function getSectionStart(section: Section): songBeat {
   return isNotesSection(section) ? section.notes[0].start : section.start;
+}
+
+export function getSectionStartInMs(section: Section, song: Song): milliseconds {
+  return getSectionStart(section) * getSongBeatLength(song) + song.gap;
 }
 
 export function getLastNotesSection(sections: Section[]) {

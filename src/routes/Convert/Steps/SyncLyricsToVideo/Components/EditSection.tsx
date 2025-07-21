@@ -15,7 +15,7 @@ import { Song } from 'interfaces';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections, getSectionStart } from 'modules/Songs/utils/notesSelectors';
+import { getFirstNoteStartFromSections, getSectionStartInMs } from 'modules/Songs/utils/notesSelectors';
 import { useEffect, useState } from 'react';
 import { msec } from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import useCurrentSectionIndex from 'routes/Game/Singing/Hooks/useCurrentSectionIndex';
@@ -77,7 +77,7 @@ export default function EditSection({
   const onSectionClick = (index: number) => {
     setSelectedSection(index);
     GameState.resetPlayerNotes();
-    const firstNoteStart = getSectionStart(sections[index]) * beatLength + song.gap;
+    const firstNoteStart = getSectionStartInMs(sections[index], song);
     player.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
   };
 

@@ -90,7 +90,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
 
-  const [gapShift, setGapShift] = useState<number>(0);
+  const [gapShift, setGapShift] = useState<string>('0');
   const [videoGapShift, setVideoGapShift] = useState<number>(0);
   const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
   const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
@@ -103,7 +103,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     processed = normaliseGap(processed);
     processed = addHeadstart(processed);
     processed = normaliseSectionPaddings(processed);
-    processed = shiftGap(processed, gapShift);
+    if (!isNaN(Number(gapShift))) processed = shiftGap(processed, Number(gapShift));
     processed = shiftVideoGap(processed, videoGapShift);
     processed = setBpm(processed, overrideBpm);
     processed = applyChanges(processed, changeRecords);
@@ -205,7 +205,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                   const delta = newShift - videoGapShift;
                   setVideoGapShift(newShift);
                   // video gap is not automatically added to gap, need to adjust it here directly
-                  setGapShift((current) => current + delta * 1000);
+                  setGapShift((current) =>
+                    !isNaN(Number(current)) ? String(Number(current) + delta * 1000) : current,
+                  );
                 }}
                 current={videoGapShift}
                 finalGap={newSong.videoGap}

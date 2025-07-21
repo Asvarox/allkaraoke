@@ -60,8 +60,8 @@ export interface Song {
   artistOrigin: string | undefined;
   title: string;
   video: string;
-  previewStart: number | undefined;
-  previewEnd: number | undefined;
+  previewStart: seconds | undefined;
+  previewEnd: seconds | undefined;
   gap: milliseconds;
   bpm: number;
   realBpm: number | undefined;
