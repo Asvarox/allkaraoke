@@ -1,0 +1,221 @@
+#ARTIST:The Beatles
+#TITLE:Till There Was You
+#CREATOR:choosie
+#BPM:245,02
+#YEAR:1962
+#VIDEO:v=SHAqAO7w8M8
+#LANGUAGE:English
+#GAP:6829,687933992321
+#ALLKARAOKE_ID:the-beatles-till-there-was-you
+#ALLKARAOKE_SID:4905
+#ALLKARAOKE_LASTUPDATE:2025-07-25T00:14:07.222Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:35
+#ALLKARAOKE_SOURCEURL:The Beatles - Till There Was You
+#ALLKARAOKE_VOLUME:0,76
+#MP3:The Beatles - Till There Was You.mp3
+: 16 2 9 There 
+: 20 2 10 were 
+: 24 16 12 bells
+- 40
+: 48 2 9 On 
+: 51 2 10 the 
+: 56 12 12 hill
+- 68
+: 84 2 9 But 
+: 88 2 10 I 
+: 93 2 12 ne
+: 97 10 10 ver
+- 107
+: 112 2 17 Heard 
+: 116 2 14 them 
+* 121 2 12 ring
+* 125 10 10 ing
+- 135
+: 148 4 5 No, 
+: 155 4 7 I 
+: 163 2 10 ne
+: 166 3 9 ver 
+: 171 7 16 heard 
+: 181 2 16 them 
+: 184 2 15 at 
+: 188 12 14 all
+- 200
+: 211 4 4 Till 
+: 217 3 5 there 
+: 222 4 7 was 
+: 228 24 12 you
+- 252 256
+- 256
+: 272 2 9 There 
+: 276 2 10 were 
+: 281 14 12 birds
+- 295
+: 301 2 9 In 
+: 304 2 10 the 
+: 309 16 12 sky
+- 325
+: 338 2 9 But 
+: 342 2 10 I 
+* 347 2 12 ne
+* 350 10 10 ver
+- 360
+: 366 4 17 Saw 
+: 372 2 14 them 
+: 377 2 12 wing
+: 381 10 10 ing
+- 391
+: 403 4 5 No, 
+: 410 3 7 I 
+: 416 2 10 ne
+: 419 2 9 ver 
+: 424 9 16 saw 
+: 436 1 16 them 
+: 438 2 15 at 
+: 442 14 14 all
+- 456
+: 467 4 4 Till 
+: 473 2 5 there 
+: 477 4 7 was 
+: 483 22 5 you
+- 505
+: 519 3 5 And 
+: 524 3 5 there 
+: 529 4 5 was 
+* 539 1 17 mu
+* 541 5 19 ~
+* 549 14 17 sic
+- 563
+: 579 4 5 And 
+: 587 3 19 won
+: 592 3 19 der
+: 597 3 17 ful 
+: 602 2 12 ro
+: 605 2 14 ~
+: 609 8 12 ses
+- 617
+: 626 2 12 They
+: 629 4 9 ~ 
+: 637 4 14 tell 
+: 643 9 16 me
+- 652
+: 659 4 15 In 
+: 667 12 14 sweet 
+: 683 2 10 fra
+: 686 2 12 ~
+: 689 4 10 grant 
+: 696 2 9 me
+: 699 14 5 dows
+- 713
+: 722 3 10 Of 
+: 727 16 7 dawn 
+: 754 1 12 and
+: 756 4 14 ~ 
+: 763 14 8 dew
+- 777
+* 786 2 9 There 
+* 790 2 10 was 
+* 795 9 12 love
+- 804
+: 814 3 9 All 
+: 819 3 10 a
+: 824 16 12 round
+- 840
+: 851 2 9 But 
+: 855 2 10 I 
+: 860 2 12 ne
+: 864 10 10 ver
+- 874
+: 878 2 17 Heard 
+: 882 3 14 it 
+: 887 3 12 sing
+: 892 12 10 ing
+- 904
+: 915 4 5 No, 
+: 922 3 7 I 
+: 929 2 10 ne
+: 932 3 9 ver 
+: 938 6 16 heard 
+* 947 2 16 it 
+* 950 2 15 at 
+* 954 14 14 all
+- 968
+: 978 4 4 Till 
+: 985 2 5 there 
+: 988 4 7 was 
+: 994 22 5 you
+- 1016 1270
+- 1270
+: 1286 3 5 And 
+: 1291 3 5 there 
+: 1296 4 5 was 
+: 1306 1 17 mu
+: 1308 6 19 ~
+: 1317 16 17 sic
+- 1333
+: 1343 6 19 And 
+: 1354 3 19 won
+: 1359 3 19 der
+: 1363 3 17 ful 
+* 1369 2 12 ro
+* 1372 2 14 ~
+* 1375 8 12 ses
+- 1383
+: 1394 2 12 They
+: 1397 5 9 ~ 
+: 1405 3 14 tell 
+: 1411 3 16 me
+- 1414
+: 1424 4 15 In 
+: 1431 15 14 sweet 
+: 1450 4 12 fra
+: 1456 4 10 grant 
+: 1463 2 9 me
+: 1466 16 5 dows
+- 1482
+: 1490 2 10 Of 
+: 1495 20 7 dawn
+- 1515
+: 1524 1 12 And
+: 1526 4 14 ~ 
+* 1533 14 8 dew
+- 1547
+: 1550 2 9 There 
+: 1553 2 10 was 
+: 1558 13 12 love
+- 1571
+: 1580 2 9 All 
+: 1583 2 10 a
+: 1587 16 12 round
+- 1603
+: 1615 3 9 But 
+: 1620 3 10 I 
+: 1626 2 12 ne
+: 1630 10 10 ver
+- 1640
+: 1646 3 17 Heard 
+: 1651 3 14 it 
+: 1656 3 12 sing
+: 1661 12 10 ing
+- 1673
+: 1685 4 5 No, 
+: 1692 3 7 I 
+* 1699 2 10 ne
+* 1702 3 9 ver 
+* 1707 6 16 heard 
+: 1717 2 16 it 
+: 1720 2 15 at 
+: 1723 16 14 all
+- 1739
+: 1748 4 4 Till 
+: 1754 2 5 there 
+: 1758 4 7 was 
+: 1764 28 5 you
+- 1792 1798
+- 1798
+: 1814 47 4 Till
+- 1861
+* 1868 8 5 There 
+: 1879 2 7 was 
+: 1884 88 5 you.
+E
