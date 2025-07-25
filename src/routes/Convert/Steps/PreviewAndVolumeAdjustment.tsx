@@ -24,8 +24,8 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     const interval = setInterval(async () => {
       if (!initialised) {
         if (data.volume === 0) {
-          onChange({ ...data, volume: 0.5 });
-          await player.current?.getInternalPlayer()?.setVolume(50);
+          onChange({ ...data, volume: 0.7 });
+          await player.current?.getInternalPlayer()?.setVolume(70);
         } else {
           await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
         }
@@ -60,6 +60,20 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     }
     player.current?.getInternalPlayer()?.getDuration().then(setDuration);
   }, []);
+
+  useEffect(() => {
+    if (duration !== null && duration < previewEnd) {
+      const singableLength = Math.max(duration - videoGap - MIN_PREVIEW_LENGTH, 0) / 2;
+      const start = Math.max(videoGap + singableLength, 0);
+      const end = Math.max(start + MIN_PREVIEW_LENGTH, duration);
+
+      onChange({
+        ...data,
+        previewStart: start,
+        previewEnd: end,
+      });
+    }
+  }, [duration, data, previewEnd, onChange, videoGap]);
 
   // eslint-disable-next-line react-compiler/react-compiler
   const internalPlayer = player.current?.getInternalPlayer();

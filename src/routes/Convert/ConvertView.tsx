@@ -11,7 +11,8 @@ import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useQueryParam from 'modules/hooks/useQueryParam';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import setQueryParam from 'modules/utils/setQueryParam';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import AuthorAndVideo, { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
 import BasicData, { BasicDataEntity } from 'routes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'routes/Convert/Steps/SongMetadata';
@@ -58,7 +59,7 @@ export default function ConvertView({ song }: Props) {
     realBpm: song?.realBpm ? String(song.realBpm) : '',
     year: song?.year ?? '',
     language: song?.language ?? [],
-    volume: song?.volume ?? 0,
+    volume: song?.volume ?? 70,
     previewStart: song?.previewStart ?? undefined,
     previewEnd: song?.previewEnd ?? undefined,
     genre: song?.genre,
@@ -183,6 +184,32 @@ export default function ConvertView({ song }: Props) {
     id: getSongId(metadataEntity),
   };
 
+  const saveSong = useCallback(async () => {
+    setIsSaving(true);
+    await SongDao.store(finalSong!);
+    await shareSong(finalSong!.id);
+    setIsSaving(false);
+    navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+  }, [finalSong, isEdit, navigate]);
+
+  const onNextStep = useCallback(() => {
+    if (currentStep < steps.length - 1) {
+      setCurrentStep((current) => current + 1);
+    } else if (steps[currentStep] === 'metadata') {
+      saveSong();
+    }
+  }, [currentStep, saveSong]);
+
+  useHotkeys(
+    'shift+enter',
+    () => {
+      onNextStep();
+    },
+    [onNextStep],
+  );
+
+  const isLastStep = steps.at(currentStep) === 'metadata';
+
   return (
     <StyledEngineProvider injectFirst>
       <NormalizeFontSize />
@@ -224,14 +251,7 @@ export default function ConvertView({ song }: Props) {
           <form
             onSubmit={async (e) => {
               e.preventDefault();
-              if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
-              else if (steps.at(currentStep) === 'metadata') {
-                setIsSaving(true);
-                await SongDao.store(finalSong!);
-                await shareSong(finalSong!.id);
-                setIsSaving(false);
-                navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
-              }
+              onNextStep();
             }}>
             {steps.at(currentStep) === 'basic-data' && (
               <BasicData
@@ -300,7 +320,7 @@ export default function ConvertView({ song }: Props) {
                 disabled={currentStep === 0}>
                 Previous
               </Button>
-              {steps.at(currentStep) === 'metadata' ? (
+              {isLastStep ? (
                 <Button
                   data-test="save-button"
                   sx={{ align: 'right' }}
@@ -315,7 +335,7 @@ export default function ConvertView({ song }: Props) {
                   sx={{ align: 'right' }}
                   variant={'contained'}
                   type="submit"
-                  disabled={!isNextStepAvailable || currentStep === steps.length - 1}>
+                  disabled={isSaving || !isNextStepAvailable || currentStep === steps.length - 1}>
                   Next
                 </Button>
               )}

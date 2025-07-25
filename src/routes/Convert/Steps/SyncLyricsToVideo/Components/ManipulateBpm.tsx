@@ -1,10 +1,11 @@
-import { Box, TextField } from '@mui/material';
+import { TextField } from '@mui/material';
 import { Song } from 'interfaces';
 import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
 import { getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
 import { useState } from 'react';
 import { Pre } from 'routes/Convert/Elements';
 import calculateProperBPM from 'routes/Convert/calculateProperBpm';
+import ShortcutIndicator from './ShortcutIndicator';
 
 interface Props {
   onChange: (bpm: number) => void;
@@ -18,7 +19,7 @@ export default function ManipulateBpm({ current, onChange, song }: Props) {
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
 
   return (
-    <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
+    <div className="mb-2 flex items-start gap-2">
       <TextField
         data-test="desired-end"
         size={'small'}
@@ -38,21 +39,22 @@ export default function ManipulateBpm({ current, onChange, song }: Props) {
           )
         }
       />
-      <TextField
-        data-test="change-bpm"
-        size={'small'}
-        type="number"
-        value={current}
-        onChange={(e) => onChange(+e.target.value)}
-        label="Tempo (BPM) of the lyrics"
-        sx={{ flex: 0.5 }}
-        helperText={' '}
-        InputProps={{
-          inputProps: {
-            step: '0.1',
-          },
-        }}
-      />
-    </Box>
+      <ShortcutIndicator shortcutKey="z/x">
+        <TextField
+          data-test="change-bpm"
+          size={'small'}
+          type="number"
+          value={current}
+          onChange={(e) => onChange(+e.target.value)}
+          label="Tempo (BPM) of the lyrics"
+          sx={{ flex: 0.5 }}
+          InputProps={{
+            inputProps: {
+              step: '0.1',
+            },
+          }}
+        />
+      </ShortcutIndicator>
+    </div>
   );
 }

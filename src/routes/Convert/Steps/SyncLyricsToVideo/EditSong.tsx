@@ -9,12 +9,14 @@ import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
 import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import AdjustPlayback from 'routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
 import EditSection, { ChangeRecord } from 'routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
 import ManipulateBpm from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
 import ShiftGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
 import ShiftVideoGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
 import Player, { PlayerRef } from 'routes/Game/Singing/Player';
+import ShortcutIndicator from './Components/ShortcutIndicator';
 
 interface Props {
   song: Song;
@@ -140,6 +142,45 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     }
   }, [visible]);
 
+  useEffect(() => {
+    if (player.current) {
+      player.current.setPlaybackSpeed(playbackSpeed);
+    }
+  }, [playbackSpeed]);
+
+  const seekToFirstSection = (padding = 0.5 * playbackSpeed) => {
+    const firstNoteStart = getFirstNoteStartFromSections(newSong.tracks[0].sections) * beatLength + newSong.gap;
+    player.current?.seekTo(firstNoteStart / 1000 - padding);
+  };
+
+  const seekToLastSection = (padding = 0.5 * playbackSpeed) => {
+    const lastNoteStart =
+      (getLastNotesSection(newSong.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + newSong.gap;
+    player.current?.seekTo(lastNoteStart / 1000 - padding);
+  };
+
+  useHotkeys('q', () => {
+    setPlaybackSpeed(0.5);
+    seekToFirstSection(0.25);
+  });
+  useHotkeys('w', () => {
+    setPlaybackSpeed(0.5);
+    seekToLastSection(0.25);
+  });
+  useHotkeys('a', () => {
+    setGapShift((current) => String(Number(current) - 50));
+  });
+  useHotkeys('s', () => {
+    setGapShift((current) => String(Number(current) + 50));
+  });
+
+  useHotkeys('z', () => {
+    setOverrideBpm((current) => current - 0.1);
+  });
+  useHotkeys('x', () => {
+    setOverrideBpm((current) => current + 0.1);
+  });
+
   return (
     <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
       <Grid item xs={8} data-test="player-container">
@@ -160,46 +201,35 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         </Box>
       </Grid>
       <Grid item xs={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        {/* eslint-disable-next-line react-compiler/react-compiler */}
         {player.current && (
           <>
             <AdjustPlayback
-              // eslint-disable-next-line react-compiler/react-compiler
               player={player.current}
               currentTime={currentTime}
               playbackSpeed={playbackSpeed}
               setPlaybackSpeed={setPlaybackSpeed}
             />
             <div className="flex justify-between">
-              <Button
-                onClick={() => {
-                  const firstNoteStart =
-                    getFirstNoteStartFromSections(newSong.tracks[0].sections) * beatLength + newSong.gap;
-                  player.current?.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
-                }}>
-                First section
-              </Button>
-              <Button
-                onClick={() => {
-                  const lastNoteStart =
-                    (getLastNotesSection(newSong.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + newSong.gap;
-                  player.current?.seekTo(lastNoteStart / 1000 - 0.8 * playbackSpeed);
-                }}>
-                Last section
-              </Button>
+              <ShortcutIndicator shortcutKey="q">
+                <Button variant="outlined" size="small" onClick={() => seekToFirstSection()}>
+                  First section
+                </Button>
+              </ShortcutIndicator>
+              <ShortcutIndicator shortcutKey="w">
+                <Button variant="outlined" size="small" onClick={() => seekToLastSection()}>
+                  Last section
+                </Button>
+              </ShortcutIndicator>
             </div>
           </>
         )}
-        {/* eslint-disable-next-line react-compiler/react-compiler */}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
       </Grid>
-      {/* eslint-disable-next-line react-compiler/react-compiler */}
       {player.current && (
         <>
           <Grid item xs={8}>
             <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
               <ShiftVideoGap
-                // eslint-disable-next-line react-compiler/react-compiler
                 player={player.current}
                 onChange={(newShift) => {
                   const delta = newShift - videoGapShift;
@@ -212,7 +242,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 current={videoGapShift}
                 finalGap={newSong.videoGap}
               />
-              {/* eslint-disable-next-line react-compiler/react-compiler */}
               <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
             </Box>
           </Grid>
@@ -250,7 +279,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               song={newSong}
               currentTime={currentTime}
               beatLength={beatLength}
-              // eslint-disable-next-line react-compiler/react-compiler
               player={player.current}
               onRecordChange={setChangeRecords}
               onTrackNameChange={(track, newName) =>

@@ -64,7 +64,6 @@ export default function AdjustPlayback({ player, currentTime, playbackSpeed, set
               sx={{ flex: 1 }}
               onClick={() => {
                 setPlaybackSpeed(speed);
-                player.setPlaybackSpeed(speed);
               }}
               disabled={playbackSpeed === speed}>
               {speed * 100}%

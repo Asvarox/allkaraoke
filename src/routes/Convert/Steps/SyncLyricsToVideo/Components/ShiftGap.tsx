@@ -2,6 +2,7 @@ import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
 import { milliseconds } from 'interfaces';
 import { msec } from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import { PlayerRef } from 'routes/Game/Singing/Player';
+import ShortcutIndicator from './ShortcutIndicator';
 
 interface Props {
   onChange: (shift: string) => void;
@@ -19,7 +20,7 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
   return (
     <Box flex="1">
       <Typography>Lyrics Gap shift (final: {msec(finalGap, player)})</Typography>
-      <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+      <div className="mt-1 flex gap-1">
         <ButtonGroup sx={{ flex: 1 }}>
           <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(-1000)} data-test="shift-gap-1s">
             -1000
@@ -27,9 +28,11 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
           <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(-500)} data-test="shift-gap-0.5s">
             -500
           </Button>
-          <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(-50)} data-test="shift-gap-0.05s">
-            -50
-          </Button>
+          <ShortcutIndicator shortcutKey="a">
+            <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(-50)} data-test="shift-gap-0.05s">
+              -50
+            </Button>
+          </ShortcutIndicator>
         </ButtonGroup>
         <TextField
           sx={{ py: 0, flex: 1 }}
@@ -41,9 +44,11 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
           data-test="shift-gap"
         />
         <ButtonGroup sx={{ flex: 1 }}>
-          <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(50)} data-test="shift-gap+0.05s">
-            +50
-          </Button>
+          <ShortcutIndicator shortcutKey="s">
+            <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(50)} data-test="shift-gap+0.05s">
+              +50
+            </Button>
+          </ShortcutIndicator>
           <Button sx={{ flex: 1, px: 1 }} onClick={() => changeBy(500)} data-test="shift-gap+0.5s">
             +500
           </Button>
@@ -51,7 +56,7 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
             +1000
           </Button>
         </ButtonGroup>
-      </Box>
+      </div>
     </Box>
   );
 }
