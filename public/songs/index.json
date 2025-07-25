@@ -49877,6 +49877,33 @@
     "local": false
   },
   {
+    "id": "gorillaz-plastic-beach",
+    "title": "Plastic Beach",
+    "artist": "Gorillaz",
+    "video": "dP13tNC5QCU",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.78,
+    "gap": 293133.2394717169,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-25T00:14:07.219Z",
+    "realBpm": 22,
+    "volume": 0.74,
+    "author": "Usdx",
+    "sourceUrl": "Gorillaz - Plastic Beach",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4903,
+    "tracksCount": 1,
+    "search": "gorillazplasticbeach",
+    "local": false
+  },
+  {
     "id": "gotye-kimbra-somebody-that-i-used-to-know",
     "title": "Somebody That I Used To Know",
     "artist": "Gotye & Kimbra",
@@ -103970,6 +103997,34 @@
     "local": false
   },
   {
+    "id": "robin-bengtsson-i-cant-go-on",
+    "title": "I Can’t Go On",
+    "artist": "Robin Bengtsson",
+    "video": "ipz4GF13gaw",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.89,
+    "gap": 7706.210932121712,
+    "year": "2017",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-07-25T00:14:07.226Z",
+    "edition": "Esc 2017",
+    "realBpm": 28,
+    "volume": 0.74,
+    "author": "daggeg",
+    "sourceUrl": "Robin Bengtsson - I Can’t Go On (ESC 2017 Sweden)",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4907,
+    "tracksCount": 1,
+    "search": "robinbengtssonicantgoon",
+    "local": false
+  },
+  {
     "id": "rocio-durcal-la-gata-bajo-la-lluvia",
     "title": "La gata bajo la lluvia",
     "artist": "Rocío Dúrcal",
@@ -104616,6 +104671,33 @@
     "shortId": 3724,
     "tracksCount": 1,
     "search": "rookiezispunkdinmyworld",
+    "local": false
+  },
+  {
+    "id": "room-2012-haunted",
+    "title": "Haunted",
+    "artist": "Room 2012",
+    "video": "3EyIDOy4Ehw",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 14438.095238095239,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-07-25T00:14:06.744Z",
+    "realBpm": 32,
+    "volume": 0.71,
+    "author": "gaspar17",
+    "sourceUrl": "Room 2012 - Haunted",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4902,
+    "tracksCount": 1,
+    "search": "room2012haunted",
     "local": false
   },
   {
@@ -120080,6 +120162,34 @@
     "local": false
   },
   {
+    "id": "the-beatles-love-me-do",
+    "title": "Love Me Do",
+    "artist": "The Beatles",
+    "video": "0JWl_wUOQc4",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.7,
+    "gap": 13765.059788179024,
+    "year": "1962",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-25T00:14:07.224Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.74,
+    "author": "RetroGirl",
+    "sourceUrl": "The Beatles - Love Me Do",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4906,
+    "tracksCount": 1,
+    "search": "thebeatleslovemedo",
+    "local": false
+  },
+  {
     "id": "the-beatles-lucy-in-the-sky-with-diamonds",
     "title": "Lucy In The Sky With Diamonds",
     "artist": "The Beatles",
@@ -120207,6 +120317,60 @@
     "shortId": 4272,
     "tracksCount": 1,
     "search": "thebeatlesthelongandwindingroad",
+    "local": false
+  },
+  {
+    "id": "the-beatles-this-boy",
+    "title": "This Boy",
+    "artist": "The Beatles",
+    "video": "lW5D7HpYhBU",
+    "language": [
+      "English"
+    ],
+    "bpm": 225.34,
+    "gap": 8771.50883109967,
+    "year": "1963",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-25T00:14:07.220Z",
+    "realBpm": 18,
+    "volume": 0.73,
+    "author": "choosie",
+    "sourceUrl": "The Beatles - This Boy",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4904,
+    "tracksCount": 1,
+    "search": "thebeatlesthisboy",
+    "local": false
+  },
+  {
+    "id": "the-beatles-till-there-was-you",
+    "title": "Till There Was You",
+    "artist": "The Beatles",
+    "video": "SHAqAO7w8M8",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.02,
+    "gap": 6829.687933992321,
+    "year": "1962",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-25T00:14:07.222Z",
+    "realBpm": 35,
+    "volume": 0.76,
+    "author": "choosie",
+    "sourceUrl": "The Beatles - Till There Was You",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4905,
+    "tracksCount": 1,
+    "search": "thebeatlestilltherewasyou",
     "local": false
   },
   {
@@ -128310,6 +128474,34 @@
     "shortId": 4539,
     "tracksCount": 1,
     "search": "toyboxtarzanjane",
+    "local": false
+  },
+  {
+    "id": "toy-box-the-sailor-song",
+    "title": "The Sailor-Song",
+    "artist": "Toy-Box",
+    "video": "qlti8Q-gU-Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 278.1,
+    "gap": 9815.188781014023,
+    "year": "1999",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-07-25T00:14:06.738Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.74,
+    "author": "barbeque",
+    "sourceUrl": "Toy-Box - The Sailor-Song",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4901,
+    "tracksCount": 1,
+    "search": "toyboxthesailorsong",
     "local": false
   },
   {
