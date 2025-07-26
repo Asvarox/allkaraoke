@@ -10,6 +10,7 @@ import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyric
 import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { useWindowSize } from 'react-use';
 import AdjustPlayback from 'routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
 import EditSection, { ChangeRecord } from 'routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
 import ManipulateBpm from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
@@ -84,13 +85,13 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
   }),
 });
 
-const playerWidth = 824;
-const playerHeight = (playerWidth / 16) * 9;
-
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
+  const { width } = useWindowSize();
+  const playerWidth = Math.min(width - 16, 824);
+  const playerHeight = (playerWidth / 16) * 9;
 
   const [gapShift, setGapShift] = useState<string>('0');
   const [videoGapShift, setVideoGapShift] = useState<number>(0);
@@ -183,7 +184,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
 
   return (
     <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
-      <Grid item xs={8} data-test="player-container">
+      <Grid item xs={12} sm={8} data-test="player-container">
         <Box sx={{ width: playerWidth, height: playerHeight }}>
           <Player
             key={0}
@@ -200,7 +201,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           />
         </Box>
       </Grid>
-      <Grid item xs={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+      <Grid item xs={12} sm={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         {player.current && (
           <>
             <AdjustPlayback
@@ -227,8 +228,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
       </Grid>
       {player.current && (
         <>
-          <Grid item xs={8}>
-            <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
+          <Grid item xs={12} sm={8}>
+            <div className="flex flex-1 flex-col gap-5 sm:flex-row">
               <ShiftVideoGap
                 player={player.current}
                 onChange={(newShift) => {
@@ -243,9 +244,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 finalGap={newSong.videoGap}
               />
               <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
-            </Box>
+            </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={0} sm={4} className="hidden sm:block">
             <div className="mb-2 text-xs">
               Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an intro.
             </div>
@@ -254,13 +255,13 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               <strong>Playback speed</strong> above to make sure you got it just right.{' '}
             </div>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={12} sm={8}>
             <Typography variant={'h5'} mb={2}>
               Advanced
             </Typography>
             <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={0} sm={4} className="hidden sm:block">
             <div className="mb-2 text-xs">
               If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.
             </div>
@@ -273,7 +274,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               <strong>Tempo (BPM)</strong> field allows to fine-tune the tempo.
             </div>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={12} sm={8}>
             <EditSection
               playbackSpeed={playbackSpeed}
               song={newSong}
@@ -304,7 +305,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               }
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={0} sm={4} className="hidden sm:block">
             <div className="mb-2 text-xs">
               If the lyrics there are more lyrics than in the video or there are longer/shorter interludes between
               verses, you can <strong>Edit verses</strong>.

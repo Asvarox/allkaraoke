@@ -43,7 +43,18 @@ export default function SongList() {
               </Link>
             </Grid>
             <Grid item xs={6} display="flex" alignItems="center" justifyContent="center">
-              <h4>{data.length} songs</h4>
+              <h4>
+                <span
+                  onClick={() => {
+                    window.__exposeSingletons();
+                    window.__singletons.importSongs();
+                  }}>
+                  {data.length}
+                </span>{' '}
+                <Link to="edit/redirect-to-first-local-song">
+                  <span>songs</span>
+                </Link>
+              </h4>
             </Grid>
             <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
               <Link to="convert/">

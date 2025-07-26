@@ -45,8 +45,12 @@ export interface SingSetup {
 }
 
 export interface Song {
+  /** The song's unique numeric identifier, used for setlists */
   shortId: number;
+  /** If true, the song is stored locally (or overrides the main game's version if `isBuiltIn` is also true) */
   local?: boolean;
+  /** If true, the song is available in the main game */
+  isBuiltIn?: boolean;
   lastUpdate: string | undefined;
   author: string | undefined;
   authorUrl: string | undefined;

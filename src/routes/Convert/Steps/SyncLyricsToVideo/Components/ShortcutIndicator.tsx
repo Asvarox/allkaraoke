@@ -1,4 +1,4 @@
-import { Tooltip } from '@mui/material';
+import { Tooltip, useMediaQuery } from '@mui/material';
 import React from 'react';
 
 interface Props {
@@ -7,6 +7,11 @@ interface Props {
 }
 
 export default function ShortcutIndicator({ shortcutKey, children }: Props) {
+  const hidden = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+  if (hidden) {
+    return children;
+  }
   return (
     <Tooltip
       title={`${shortcutKey}`}

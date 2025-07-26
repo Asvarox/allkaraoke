@@ -14,6 +14,7 @@ import LayoutWithBackgroundProvider from 'modules/Elements/LayoutWithBackground'
 import PageLoader from 'modules/Elements/PageLoader';
 import { Suspense, lazy, useMemo } from 'react';
 import GetSongsBPMs from 'routes/Edit/GetSongsBPMs';
+import RedirectToFirstLocalSong from 'routes/Edit/RedirectToFirstLocalSong';
 import ExcludeLanguages from 'routes/ExcludeLanguages/ExcludeLanguages';
 import Game from 'routes/Game/Game';
 import LandingPage from 'routes/LandingPage/LandingPage';
@@ -81,6 +82,7 @@ function App() {
                   )}
                 />
                 <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
+                <Route path="edit/redirect-to-first-local-song" component={RedirectToFirstLocalSong} />
                 <Route path={routePaths.EDIT_SONG}>
                   <Edit />
                 </Route>

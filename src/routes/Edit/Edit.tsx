@@ -26,7 +26,7 @@ export default function Edit() {
   if (!song.data) return <>Loading</>;
 
   return (
-    <Paper elevation={2} sx={{ minHeight: '100vh', width: '1260px', margin: '0 auto', paddingTop: '30px' }}>
+    <Paper elevation={2} sx={{ minHeight: '100vh', maxWidth: '1260px', margin: '0 auto', paddingTop: '30px' }}>
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>

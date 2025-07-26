@@ -40,6 +40,7 @@ export default function ConvertView({ song }: Props) {
   const initialStep = useQueryParam('step') as ValuesType<typeof steps> | null;
   const [currentStep, setCurrentStep] = useState(Math.max(0, steps.indexOf(initialStep!)));
   const [isSaving, setIsSaving] = useState(false);
+  const redirect = useQueryParam('redirect');
 
   useEffect(() => {
     if (steps[currentStep]) {
@@ -189,7 +190,11 @@ export default function ConvertView({ song }: Props) {
     await SongDao.store(finalSong!);
     await shareSong(finalSong!.id);
     setIsSaving(false);
-    navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+    if (redirect) {
+      navigate(redirect);
+    } else {
+      navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+    }
   }, [finalSong, isEdit, navigate]);
 
   const onNextStep = useCallback(() => {
@@ -305,40 +310,57 @@ export default function ConvertView({ song }: Props) {
                 position: 'fixed',
                 bottom: 0,
                 left: '50%',
-                width: '1260px',
+                maxWidth: '1260px',
+                width: '100%',
                 padding: 1,
                 transform: 'translateX(-50%)',
                 display: 'flex',
                 gap: 2,
-                justifyContent: 'flex-end',
+                justifyContent: 'space-between',
               }}
               elevation={3}>
-              <Button
-                data-test="previous-button"
-                sx={{ align: 'right' }}
-                onClick={() => setCurrentStep((current) => current - 1)}
-                disabled={currentStep === 0}>
-                Previous
-              </Button>
-              {isLastStep ? (
+              {redirect && (
                 <Button
-                  data-test="save-button"
+                  disabled={isSaving}
                   sx={{ align: 'right' }}
-                  type="submit"
-                  variant={'contained'}
-                  disabled={isSaving}>
-                  {isSaving ? 'Saving...' : 'Save'}
-                </Button>
-              ) : (
-                <Button
-                  data-test="next-button"
-                  sx={{ align: 'right' }}
-                  variant={'contained'}
-                  type="submit"
-                  disabled={isSaving || !isNextStepAvailable || currentStep === steps.length - 1}>
-                  Next
+                  onClick={async () => {
+                    setIsSaving(true);
+                    await SongDao.store(finalSong!);
+                    setIsSaving(false);
+                    navigate(redirect);
+                  }}>
+                  Skip
                 </Button>
               )}
+
+              <div className="flex items-end">
+                <Button
+                  data-test="previous-button"
+                  sx={{ align: 'right' }}
+                  onClick={() => setCurrentStep((current) => current - 1)}
+                  disabled={currentStep === 0}>
+                  Previous
+                </Button>
+                {isLastStep ? (
+                  <Button
+                    data-test="save-button"
+                    sx={{ align: 'right' }}
+                    type="submit"
+                    variant={'contained'}
+                    disabled={isSaving}>
+                    {isSaving ? 'Saving...' : 'Save'}
+                  </Button>
+                ) : (
+                  <Button
+                    data-test="next-button"
+                    sx={{ align: 'right' }}
+                    variant={'contained'}
+                    type="submit"
+                    disabled={isSaving || !isNextStepAvailable || currentStep === steps.length - 1}>
+                    Next
+                  </Button>
+                )}
+              </div>
             </Paper>
           </form>
         </Grid>

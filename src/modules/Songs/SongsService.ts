@@ -123,6 +123,7 @@ class SongsService {
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
     ].map((song) => ({
       ...song,
+      isBuiltIn: this.isBuiltIn(song.id),
       isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
       isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
     }));
@@ -179,7 +180,7 @@ class SongsService {
       .filter((song): song is Song => song !== null)
       .map((song) => {
         try {
-          return getSongPreview(song, true);
+          return getSongPreview(song, { local: true });
         } catch (e) {
           console.error(e);
           return null;

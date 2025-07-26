@@ -7,19 +7,19 @@ interface Options {
 }
 
 export const buildUrl = (to: string, params?: Record<string, string | null>) => {
-  if (params) {
-    const url = new URLSearchParams(global.location?.search);
-
-    Object.entries(params).forEach(([param, value]) => {
-      if (value === null) {
-        url.delete(param);
-      } else {
-        url.set(param, value);
-      }
-    });
-    return `${to}?${url.toString()}`;
+  if (!params) {
+    return to;
   }
-  return to;
+  const url = new URLSearchParams(global.location?.search);
+
+  Object.entries(params).forEach(([param, value]) => {
+    if (value === null) {
+      url.delete(param);
+    } else {
+      url.set(param, value);
+    }
+  });
+  return `${to}?${url.toString()}`;
 };
 
 export default function useSmoothNavigate() {

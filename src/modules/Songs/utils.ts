@@ -7,7 +7,7 @@ const generateSearchString = (song: Pick<Song, 'title' | 'artist'>) => clearStri
 
 export const getSongPreview = (
   { bar, unsupportedProps, mergedTrack, shortId, ...songData }: Song,
-  local = false,
+  options: Pick<SongPreview, 'local'> = { local: false },
 ): SongPreview => ({
   ...songData,
   id: getSongId(songData),
@@ -19,5 +19,5 @@ export const getSongPreview = (
     start: getFirstNoteStartFromSections(sections),
   })),
   search: generateSearchString(songData),
-  local,
+  ...options,
 });

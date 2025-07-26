@@ -124,44 +124,46 @@ function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayer
           </motion.div>
         </AnimatePresence>
       </LyricsLine>
-      <LyricsLine nextLine effectsEnabled={effectsEnabled} data-test={`lyrics-next-player-${player.number}`}>
-        <AnimatePresence>
-          {isNotesSection(nextSection) ? (
-            <motion.div
-              transition={effectsEnabled ? undefined : { duration: 0 }}
-              style={{
-                textAlign: 'center',
-                position: 'absolute',
-                width: '100%',
-              }}
-              key={String(nextSection.start)}
-              initial={{
-                opacity: 0,
-                y: 15,
-                scale: 0.85,
-              }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: -15,
-                scale: 1.15,
-              }}>
-              <span>
-                {nextSection.notes.map((note) => (
-                  <Fragment key={note.start}>{note.lyrics}</Fragment>
-                ))}
-                {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
-              </span>
-            </motion.div>
-          ) : (
-            <>&nbsp;</>
-          )}
-        </AnimatePresence>
-      </LyricsLine>
+      {effectsEnabled && (
+        <LyricsLine nextLine effectsEnabled={effectsEnabled} data-test={`lyrics-next-player-${player.number}`}>
+          <AnimatePresence>
+            {isNotesSection(nextSection) ? (
+              <motion.div
+                transition={effectsEnabled ? undefined : { duration: 0 }}
+                style={{
+                  textAlign: 'center',
+                  position: 'absolute',
+                  width: '100%',
+                }}
+                key={String(nextSection.start)}
+                initial={{
+                  opacity: 0,
+                  y: 15,
+                  scale: 0.85,
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  y: -15,
+                  scale: 1.15,
+                }}>
+                <span>
+                  {nextSection.notes.map((note) => (
+                    <Fragment key={note.start}>{note.lyrics}</Fragment>
+                  ))}
+                  {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
+                </span>
+              </motion.div>
+            ) : (
+              <>&nbsp;</>
+            )}
+          </AnimatePresence>
+        </LyricsLine>
+      )}
     </LyricsContainer>
   );
 }
@@ -328,7 +330,12 @@ const PassTheMicSymbol = styled(SwapHorizIcon)`
   }
 `;
 const LyricsLine = styled(motion.div)<{ nextLine?: boolean; effectsEnabled: boolean }>`
-  font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
+  font-size: ${({ nextLine, effectsEnabled }) => {
+    if (!effectsEnabled) {
+      return `min(5vw, 1.75rem)`;
+    }
+    return `${3.5 + (nextLine ? 0 : 1)}rem`;
+  }};
 
   height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;
   -webkit-text-stroke-width: ${({ effectsEnabled }) => (effectsEnabled ? '0.2rem' : '1px')};
