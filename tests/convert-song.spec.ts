@@ -246,7 +246,7 @@ test('Convert song', async ({ page }) => {
   });
 
   await test.step('Set song volume', async () => {
-    const autoGenVolume = '0.25';
+    const autoGenVolume = '1';
 
     await expect(pages.songEditMetadataPage.currentSongVolumeLevel).toHaveValue(autoGenVolume);
     await pages.songEditMetadataPage.setTheVolumeOfTheSong(FINAL_VOLUME);
