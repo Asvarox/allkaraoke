@@ -3,8 +3,10 @@ import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import { useEffect, useMemo } from 'react';
+import { useShareSongs } from 'routes/Edit/ShareSongsModal';
 
 export default function RedirectToFirstLocalSong() {
+  const [, setShareSongs] = useShareSongs();
   const navigate = useSmoothNavigate();
   const { data, isLoading } = useSongIndex(true);
   useBackgroundMusic(false);
@@ -18,6 +20,7 @@ export default function RedirectToFirstLocalSong() {
 
   useEffect(() => {
     if (song) {
+      setShareSongs(true);
       navigate(
         buildUrl(`edit/song/`, {
           song: song.id,
