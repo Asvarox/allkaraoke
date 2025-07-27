@@ -2,7 +2,6 @@ import { throttle } from 'lodash-es';
 import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
 import events from 'modules/GameEvents/GameEvents';
 import { PartyKitClientTransport } from 'modules/RemoteMic/Network/Client/Transport/PartyKitClient';
-import { PeerJSClientTransport } from 'modules/RemoteMic/Network/Client/Transport/PeerJSClient';
 import { WebSocketClientTransport } from 'modules/RemoteMic/Network/Client/Transport/WebSocketClient';
 import { ClientTransport } from 'modules/RemoteMic/Network/Client/Transport/interface';
 import {
@@ -73,7 +72,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       ? new WebSocketClientTransport()
       : lcRoomId.startsWith('k')
         ? new PartyKitClientTransport()
-        : new PeerJSClientTransport();
+        : new PartyKitClientTransport();
 
     if (this.clientId === null) this.setClientId(v4());
     this.roomId = lcRoomId;

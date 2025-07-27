@@ -18,6 +18,8 @@
   "ignoreUnimported": [
     "src/modules/Elements/LayoutWithBackgroundEmotion.tsx",
     "src/modules/GameEngine/Input/MicStrategies/Yin.ts",
+    "src/modules/RemoteMic/Network/Client/Transport/PeerJSClient.ts",
+    "src/modules/RemoteMic/Network/Server/Transport/PeerJSServer.ts",
     "src/modules/Songs/utils/song-fixture.ts",
     "src/modules/hooks/useCallbackDebugger.ts",
     "src/modules/hooks/useEffectDebugger.ts",
@@ -25,6 +27,7 @@
     "src/modules/utils/TestCanvas.tsx",
     "src/modules/utils/delayPromise.ts",
     "src/modules/utils/isoCodeToCountry.ts",
+    "src/modules/utils/peerJSOptions.ts",
     "src/modules/utils/testUtils.ts",
     "src/modules/utils/useFeatureFlag.ts",
     "src/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision.tsx",
@@ -34,6 +37,7 @@
   "ignoreUnused": [
     "@mui/system",
     "@mui/x-date-pickers",
+    "peerjs",
     "tailwindcss-motion"
   ],
   "ignoreUnresolved": [
