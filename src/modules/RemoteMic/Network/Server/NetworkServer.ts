@@ -1,6 +1,5 @@
 import events from 'modules/GameEvents/GameEvents';
 import { PartyKitServerTransport } from 'modules/RemoteMic/Network/Server/Transport/PartyKitServer';
-import { PeerJSServerTransport } from 'modules/RemoteMic/Network/Server/Transport/PeerJSServer';
 import { WebSocketServerTransport } from 'modules/RemoteMic/Network/Server/Transport/WebSocketServer';
 import { ServerTransport } from 'modules/RemoteMic/Network/Server/Transport/interface';
 import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
@@ -47,7 +46,7 @@ export class NetworkServer {
           ? new WebSocketServerTransport()
           : type === 'PartyKit'
             ? new PartyKitServerTransport()
-            : new PeerJSServerTransport();
+            : new PartyKitServerTransport();
     }
     if (this.started) return;
     this.started = true;
