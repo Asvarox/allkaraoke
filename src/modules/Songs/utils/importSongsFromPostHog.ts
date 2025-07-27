@@ -36,11 +36,13 @@ const importSongsFromPostHog = async () => {
     return response.json();
   };
 
-  let lastSongAdd: number = 0;
+  let lastSongAdd: number = storage.local.getItem('posthog_from')
+    ? new Date(storage.local.getItem('posthog_from')!).getTime()
+    : 0;
 
   await importSongsFromPostHogBase(
     makeRequest,
-    await SongsService.getIndex(true),
+    (await SongsService.getIndex(true)).filter((song) => !song.local),
     [],
     async (song: Song, createdAt) => {
       await SongsService.store(song, false);
