@@ -129,6 +129,7 @@
     "@types/youtube-player": "^5.5.11",
     "@vitejs/plugin-basic-ssl": "^2.1.0",
     "@vitejs/plugin-react": "^4.6.0",
+    "@vitejs/plugin-react-oxc": "^0.3.0",
     "@vitest/ui": "3.2.4",
     "@welldone-software/why-did-you-render": "^10.0.1",
     "babel-plugin-react-compiler": "19.0.0-beta-e552027-20250112",
@@ -168,7 +169,7 @@
     "typescript-eslint": "^8.35.0",
     "unimported": "^1.31.1",
     "utility-types": "^3.11.0",
-    "vite": "^7.0.4",
+    "vite": "npm:rolldown-vite@latest",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
     "wrangler": "^3.106.0"
