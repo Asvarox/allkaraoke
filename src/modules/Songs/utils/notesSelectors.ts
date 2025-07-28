@@ -1,5 +1,5 @@
 import { milliseconds, NotesSection, Section, Song, songBeat } from 'interfaces';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
+import getSongBeatLength from './getSongBeatLength';
 import isNotesSection from './isNotesSection';
 
 export const getFirstNoteFromSection = (section: NotesSection) => {
