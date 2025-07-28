@@ -24309,6 +24309,32 @@
     "local": false
   },
   {
+    "id": "carlos-paiao-play-back",
+    "title": "Play Back",
+    "artist": "Carlos Paião",
+    "video": "O83OTfo_7jo",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 278.2200000000004,
+    "gap": 7728.630795773131,
+    "year": "1981",
+    "artistOrigin": "PT",
+    "lastUpdate": "2025-07-28T11:10:42.107Z",
+    "realBpm": 139,
+    "volume": 0.88,
+    "author": "wildnight",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4911,
+    "tracksCount": 1,
+    "search": "carlospaiaoplayback",
+    "local": false
+  },
+  {
     "id": "carlos-rivera-recuerdame",
     "title": "Recuerdame",
     "artist": "Carlos Rivera",
@@ -25639,6 +25665,32 @@
     "shortId": 919,
     "tracksCount": 1,
     "search": "charlieputhselenagomezwedonttalkanymore",
+    "local": false
+  },
+  {
+    "id": "chave-douro-pai-da-crianca",
+    "title": "Pai da criança",
+    "artist": "Chave D’Ouro",
+    "video": "AkkksOY1QfY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 240,
+    "gap": 27080,
+    "year": "2010",
+    "lastUpdate": "2025-07-28T11:10:41.573Z",
+    "genre": "Pimba",
+    "realBpm": 138,
+    "volume": 0.79,
+    "author": "wildnight",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4909,
+    "tracksCount": 1,
+    "search": "chavedouropaidacrianca",
     "local": false
   },
   {
@@ -65769,6 +65821,35 @@
     "local": false
   },
   {
+    "id": "kelly-clarkson-never-again",
+    "title": "Never Again",
+    "artist": "Kelly Clarkson",
+    "video": "GVYesEpMr84",
+    "language": [
+      "English"
+    ],
+    "bpm": 176,
+    "gap": 5477.272727272727,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-28T11:10:42.236Z",
+    "genre": "Pop",
+    "realBpm": 146,
+    "volume": 0.5,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Kelly%20Clarkson&cancion=Never%20Again",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 4913,
+    "tracksCount": 1,
+    "search": "kellyclarksonneveragain",
+    "local": false
+  },
+  {
     "id": "kelly-clarkson-people-like-us",
     "title": "People Like Us",
     "artist": "Kelly Clarkson",
@@ -99877,6 +99958,32 @@
     "local": false
   },
   {
+    "id": "quim-barreiros-a-padaria",
+    "title": "A Padaria",
+    "artist": "Quim Barreiros",
+    "video": "q_EDEUTm8-M",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 240,
+    "gap": 10610,
+    "year": "2006",
+    "artistOrigin": "PT",
+    "lastUpdate": "2025-07-28T11:10:42.105Z",
+    "realBpm": 188,
+    "volume": 0.65,
+    "author": "Raitova",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4910,
+    "tracksCount": 1,
+    "search": "quimbarreirosapadaria",
+    "local": false
+  },
+  {
     "id": "r-city-feat-adam-levine-locked-away",
     "title": "Locked Away",
     "artist": "R. City feat. Adam Levine",
@@ -115092,6 +115199,35 @@
     "local": false
   },
   {
+    "id": "stromae-lenfer",
+    "title": "L'enfer",
+    "artist": "Stromae",
+    "video": "DO8NSL5Wyeg",
+    "language": [
+      "French"
+    ],
+    "bpm": 361.71,
+    "gap": 27825.727544165216,
+    "year": "2022",
+    "artistOrigin": "BE",
+    "lastUpdate": "2025-07-28T11:10:42.238Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=L%27enfer",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4914,
+    "tracksCount": 1,
+    "search": "stromaelenfer",
+    "local": false
+  },
+  {
     "id": "stromae-papaoutai",
     "title": "Papaoutai",
     "artist": "Stromae",
@@ -123541,6 +123677,35 @@
     "local": false
   },
   {
+    "id": "the-police-every-breath-you-take",
+    "title": "Every Breath You Take",
+    "artist": "The Police",
+    "video": "OMOGaugKpzs",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.7,
+    "gap": 14857.41798040051,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-28T11:10:41.570Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Police&cancion=Every%20Breath%20You%20Take",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4908,
+    "tracksCount": 1,
+    "search": "thepoliceeverybreathyoutake",
+    "local": false
+  },
+  {
     "id": "the-police-message-in-a-bottle",
     "title": "Message in a bottle",
     "artist": "The Police",
@@ -123566,6 +123731,35 @@
     "shortId": 4380,
     "tracksCount": 1,
     "search": "thepolicemessageinabottle",
+    "local": false
+  },
+  {
+    "id": "the-police-roxanne",
+    "title": "Roxanne",
+    "artist": "The Police",
+    "video": "3T1c7GkzRQQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.9000000000002,
+    "gap": 18055.29411764706,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-28T11:10:42.234Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Police&cancion=Roxanne",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4912,
+    "tracksCount": 1,
+    "search": "thepoliceroxanne",
     "local": false
   },
   {
