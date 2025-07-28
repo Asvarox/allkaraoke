@@ -18,7 +18,7 @@ dotenv.config({ path: '.env.local' });
     throw new Error('Missing user ID');
   }
 
-  const daysFrom = argDaysFrom !== '' ? +argDaysFrom : 2;
+  const daysFrom = argDaysFrom !== '' ? +argDaysFrom : 4;
   if (isNaN(daysFrom)) {
     throw new Error(`Invalid day from: "${argDaysFrom}"`);
   }
