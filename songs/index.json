@@ -81,6 +81,37 @@
     "local": false
   },
   {
+    "id": "2500-at-nightcord-x-kagamine-len-irony",
+    "title": "Irony",
+    "artist": "25:00 at Nightcord x Kagamine Len",
+    "video": "vcPkSC7SDZo",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360.08,
+    "gap": 28.824039102421693,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.680Z",
+    "edition": "Project Sekai",
+    "genre": "Anime",
+    "realBpm": 90,
+    "previewStart": 87,
+    "previewEnd": 109,
+    "volume": 0.55,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4925,
+    "tracksCount": 1,
+    "search": "2500atnightcordxkagaminelenirony",
+    "local": false
+  },
+  {
     "id": "2ne1-i-am-the-best",
     "title": "I Am The Best",
     "artist": "2NE1",
@@ -7748,6 +7779,32 @@
     "local": false
   },
   {
+    "id": "annie-lennox-walking-on-broken-glass",
+    "title": "Walking On Broken Glass",
+    "artist": "Annie Lennox",
+    "video": "y25stK5ymlA",
+    "language": [
+      "English"
+    ],
+    "bpm": 230.33,
+    "gap": 7423.140711153563,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-29T00:15:33.724Z",
+    "realBpm": 115,
+    "volume": 0.5,
+    "author": "cjszoo",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4916,
+    "tracksCount": 1,
+    "search": "annielennoxwalkingonbrokenglass",
+    "local": false
+  },
+  {
     "id": "annie-rojas-mis-suenos-se-hacen-realidad-doraemon",
     "title": "Mis sueños se hacen realidad, Doraemon",
     "artist": "Annie Rojas",
@@ -11250,6 +11307,31 @@
     "local": false
   },
   {
+    "id": "avicii-feat-aloe-blacc-sos",
+    "title": "SOS",
+    "artist": "Avicii feat. Aloe Blacc",
+    "video": "u8tdT5pAE34",
+    "language": [
+      "English"
+    ],
+    "bpm": 267.19,
+    "gap": 4209.483139339047,
+    "year": "2019",
+    "lastUpdate": "2025-07-29T00:15:35.210Z",
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "ben1993",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4935,
+    "tracksCount": 1,
+    "search": "aviciifeataloeblaccsos",
+    "local": false
+  },
+  {
     "id": "avicii-feat-sandro-cavazza-without-you",
     "title": "Without You",
     "artist": "Avicii feat. Sandro Cavazza",
@@ -11273,6 +11355,32 @@
     "shortId": 403,
     "tracksCount": 1,
     "search": "aviciifeatsandrocavazzawithoutyou",
+    "local": false
+  },
+  {
+    "id": "avicii-gonna-love-ya",
+    "title": "Gonna Love Ya",
+    "artist": "Avicii",
+    "video": "UuxTn5vC8VM",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": -70,
+    "year": "2015",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-07-29T00:15:35.209Z",
+    "realBpm": 100,
+    "volume": 0.72,
+    "author": "snake84",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 4934,
+    "tracksCount": 1,
+    "search": "aviciigonnaloveya",
     "local": false
   },
   {
@@ -11407,6 +11515,32 @@
     "shortId": 408,
     "tracksCount": 1,
     "search": "aviciiwakemeup",
+    "local": false
+  },
+  {
+    "id": "avicii-you-make-me",
+    "title": "You Make Me",
+    "artist": "Avicii",
+    "video": "2GADx4Hy-Gg",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.06,
+    "gap": 26155.244741262097,
+    "year": "2013",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-07-29T00:15:35.373Z",
+    "realBpm": 125,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4936,
+    "tracksCount": 1,
+    "search": "aviciiyoumakeme",
     "local": false
   },
   {
@@ -16329,6 +16463,32 @@
     "shortId": 584,
     "tracksCount": 1,
     "search": "blacksabbathheavenandhell",
+    "local": false
+  },
+  {
+    "id": "black-sabbath-iron-man",
+    "title": "Iron Man",
+    "artist": "Black Sabbath",
+    "video": "b3-QqGVt-tM",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.59999999999997,
+    "gap": 10200,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-29T00:15:35.034Z",
+    "realBpm": 148,
+    "volume": 0.74,
+    "author": "Ultrastar-Songs",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4929,
+    "tracksCount": 1,
+    "search": "blacksabbathironman",
     "local": false
   },
   {
@@ -24169,6 +24329,32 @@
     "local": false
   },
   {
+    "id": "caravan-palace-lone-digger",
+    "title": "Lone Digger",
+    "artist": "Caravan Palace",
+    "video": "UbQgXeY_zi4",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 18031.774193548386,
+    "year": "2015",
+    "artistOrigin": "FR",
+    "lastUpdate": "2025-07-29T00:15:35.374Z",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "xrJUExmQEk",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4937,
+    "tracksCount": 1,
+    "search": "caravanpalacelonedigger",
+    "local": false
+  },
+  {
     "id": "cardi-b-bodak-yellow",
     "title": "Bodak Yellow",
     "artist": "Cardi B",
@@ -24306,6 +24492,32 @@
     "shortId": 870,
     "tracksCount": 1,
     "search": "carloscarrillodetectiveconan",
+    "local": false
+  },
+  {
+    "id": "carlos-paiao-play-back",
+    "title": "Play Back",
+    "artist": "Carlos Paião",
+    "video": "O83OTfo_7jo",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 278.2200000000004,
+    "gap": 7728.630795773131,
+    "year": "1981",
+    "artistOrigin": "PT",
+    "lastUpdate": "2025-07-27T21:06:05.032Z",
+    "realBpm": 139,
+    "volume": 0.88,
+    "author": "wildnight",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "carlospaiaoplayback",
     "local": false
   },
   {
@@ -25639,6 +25851,32 @@
     "shortId": 919,
     "tracksCount": 1,
     "search": "charlieputhselenagomezwedonttalkanymore",
+    "local": false
+  },
+  {
+    "id": "chave-douro-pai-da-crianca",
+    "title": "Pai da criança",
+    "artist": "Chave D’Ouro",
+    "video": "AkkksOY1QfY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 240,
+    "gap": 27080,
+    "year": "2010",
+    "lastUpdate": "2025-07-27T21:05:15.441Z",
+    "genre": "Pimba",
+    "realBpm": 138,
+    "volume": 0.79,
+    "author": "wildnight",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "chavedouropaidacrianca",
     "local": false
   },
   {
@@ -36704,6 +36942,32 @@
     "local": false
   },
   {
+    "id": "disturbed-prayer",
+    "title": "Prayer",
+    "artist": "Disturbed",
+    "video": "DWSlOCEzRGo",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.4,
+    "gap": 24881.156186612578,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.035Z",
+    "realBpm": 99,
+    "volume": 0.5,
+    "author": "minquit",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4930,
+    "tracksCount": 1,
+    "search": "disturbedprayer",
+    "local": false
+  },
+  {
     "id": "disturbed-stricken",
     "title": "Stricken",
     "artist": "Disturbed",
@@ -43319,6 +43583,33 @@
     "local": false
   },
   {
+    "id": "evermore-its-too-late-ride-on",
+    "title": "It’s Too Late (Ride On)",
+    "artist": "Evermore",
+    "video": "bBTN93Ue8jI",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.46,
+    "gap": 27659.821389675453,
+    "year": "2004",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-07-29T00:15:34.684Z",
+    "genre": "Rock",
+    "realBpm": 139,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4927,
+    "tracksCount": 1,
+    "search": "evermoreitstoolaterideon",
+    "local": false
+  },
+  {
     "id": "ewa-farna-cicho",
     "title": "Cicho",
     "artist": "Ewa Farna",
@@ -45069,6 +45360,32 @@
     "shortId": 1617,
     "tracksCount": 1,
     "search": "finneldorfkinder",
+    "local": false
+  },
+  {
+    "id": "fiona-apple-criminal",
+    "title": "Criminal",
+    "artist": "Fiona Apple",
+    "video": "FRv4VQra2kc",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.47,
+    "gap": 21787.256308549244,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:34.867Z",
+    "realBpm": 90,
+    "volume": 0.5,
+    "author": "crimson30",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4928,
+    "tracksCount": 1,
+    "search": "fionaapplecriminal",
     "local": false
   },
   {
@@ -50779,6 +51096,34 @@
     "local": false
   },
   {
+    "id": "gumi-kokoronashi",
+    "title": "Kokoronashi",
+    "artist": "GUMI",
+    "video": "3SkNrZnoK5w",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 336.32,
+    "gap": 748.7916270218838,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.485Z",
+    "genre": "Vocaloid",
+    "realBpm": 168,
+    "volume": 0.5,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 4918,
+    "tracksCount": 1,
+    "search": "gumikokoronashi",
+    "local": false
+  },
+  {
     "id": "gumi-ninja-ri-ban-ban",
     "title": "Ninja Ri Ban Ban",
     "artist": "GUMI",
@@ -52161,6 +52506,36 @@
     "local": false
   },
   {
+    "id": "hatsune-miku-happy-halloween",
+    "title": "Happy Halloween",
+    "artist": "Hatsune Miku",
+    "video": "1DcgczDzQPk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 240,
+    "gap": 26970,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.681Z",
+    "genre": "Vocaloid",
+    "realBpm": 120,
+    "previewStart": 84,
+    "previewEnd": 117,
+    "volume": 0.65,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4926,
+    "tracksCount": 1,
+    "search": "hatsunemikuhappyhalloween",
+    "local": false
+  },
+  {
     "id": "hatsune-miku-megurine-luka-magnet",
     "title": "Magnet",
     "artist": "Hatsune Miku & Megurine Luka",
@@ -52184,6 +52559,37 @@
     "shortId": 1869,
     "tracksCount": 1,
     "search": "hatsunemikumegurinelukamagnet",
+    "local": false
+  },
+  {
+    "id": "hatsune-miku-world-is-mine",
+    "title": "World is mine",
+    "artist": "Hatsune Miku",
+    "video": "NY__VTIUsiU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300,
+    "gap": 2900,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.491Z",
+    "genre": "Vocaloid",
+    "realBpm": 83,
+    "previewStart": 2,
+    "previewEnd": 21,
+    "volume": 0.59,
+    "author": "pibgorila",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=pibegorila",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=miku",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4920,
+    "tracksCount": 1,
+    "search": "hatsunemikuworldismine",
     "local": false
   },
   {
@@ -54850,6 +55256,35 @@
     "shortId": 1964,
     "tracksCount": 1,
     "search": "ichtrojezawszeztobachcialbymbyc",
+    "local": false
+  },
+  {
+    "id": "ichika-hoshino-saki-tenma-feat-hatsune-miku-ikanaide",
+    "title": "Ikanaide",
+    "artist": "Ichika Hoshino, Saki Tenma Feat. Hatsune Miku",
+    "video": "zkA91RnBsUs",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 381.83,
+    "gap": 21838.887541576092,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.675Z",
+    "edition": "Leo/need, Project Sekai",
+    "genre": "Anime",
+    "realBpm": 94,
+    "volume": 0.61,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asdfer",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4922,
+    "tracksCount": 1,
+    "search": "ichikahoshinosakitenmafeathatsunemikuikanaide",
     "local": false
   },
   {
@@ -65440,6 +65875,35 @@
     "local": false
   },
   {
+    "id": "kei-feat-luka-megurine-hello-worker",
+    "title": "Hello, Worker",
+    "artist": "KEI feat. Luka Megurine",
+    "video": "w0xfJyMB1Ok",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 336,
+    "gap": 18655.85714285714,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.487Z",
+    "genre": "Vocaloid",
+    "videoGap": 4,
+    "realBpm": 168,
+    "volume": 0.5,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 4919,
+    "tracksCount": 1,
+    "search": "keifeatlukamegurinehelloworker",
+    "local": false
+  },
+  {
     "id": "keiino-spirit-in-the-sky",
     "title": "Spirit In The Sky",
     "artist": "KEiiNO",
@@ -65766,6 +66230,35 @@
     "shortId": 2350,
     "tracksCount": 1,
     "search": "kellyclarksonmylifewouldsuckwithoutyou",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-never-again",
+    "title": "Never Again",
+    "artist": "Kelly Clarkson",
+    "video": "GVYesEpMr84",
+    "language": [
+      "English"
+    ],
+    "bpm": 176,
+    "gap": 5477.272727272727,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-28T06:35:14.210Z",
+    "genre": "Pop",
+    "realBpm": 146,
+    "volume": 0.5,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Kelly%20Clarkson&cancion=Never%20Again",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "kellyclarksonneveragain",
     "local": false
   },
   {
@@ -71107,6 +71600,37 @@
     "local": false
   },
   {
+    "id": "leoneed-x-rin-kagamine-tokyo-teddy-bear",
+    "title": "Tokyo Teddy Bear",
+    "artist": "Leo/need x Rin Kagamine",
+    "video": "UqulFtYBdGw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 204.02,
+    "gap": 416.68914812273306,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.676Z",
+    "edition": "Project Sekai",
+    "genre": "Anime",
+    "realBpm": 93,
+    "previewStart": 143,
+    "previewEnd": 173,
+    "volume": 0.7,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4923,
+    "tracksCount": 1,
+    "search": "leoneedxrinkagaminetokyoteddybear",
+    "local": false
+  },
+  {
     "id": "leony-remedy",
     "title": "Remedy",
     "artist": "Leony",
@@ -73005,6 +73529,33 @@
     "local": false
   },
   {
+    "id": "lisa-adamas",
+    "title": "ADAMAS",
+    "artist": "LiSA",
+    "video": "UljR2IQAVfw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 382.4,
+    "gap": 14519.351464435147,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:33.718Z",
+    "realBpm": 96,
+    "volume": 0.4,
+    "author": "DeinAlptraum",
+    "sourceUrl": "https://www.youtube.com/watch?v=UljR2IQAVfw",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4915,
+    "tracksCount": 1,
+    "search": "lisaadamas",
+    "local": false
+  },
+  {
     "id": "lisa-akeboshi",
     "title": "Akeboshi",
     "artist": "LiSA",
@@ -74741,6 +75292,35 @@
     "shortId": 2672,
     "tracksCount": 1,
     "search": "lukamegurinejustbefriends",
+    "local": false
+  },
+  {
+    "id": "luka-megurine-miku-hatsune-gumi-ia-kagamine-rin-pomp-and-circumstance",
+    "title": "Pomp and Circumstance",
+    "artist": "Luka Megurine, Miku Hatsune, GUMI, IA, Kagamine Rin",
+    "video": "Zx8gQKPg8_s",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260,
+    "gap": 11583.23076923077,
+    "year": "2012",
+    "lastUpdate": "2025-07-29T00:15:34.494Z",
+    "genre": "Vocaloid",
+    "realBpm": 130,
+    "previewStart": 48,
+    "previewEnd": 65,
+    "volume": 0.6,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4921,
+    "tracksCount": 1,
+    "search": "lukamegurinemikuhatsunegumiiakagaminerinpompandcircumstance",
     "local": false
   },
   {
@@ -99877,6 +100457,32 @@
     "local": false
   },
   {
+    "id": "quim-barreiros-a-padaria",
+    "title": "A Padaria",
+    "artist": "Quim Barreiros",
+    "video": "q_EDEUTm8-M",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 240,
+    "gap": 10610,
+    "year": "2006",
+    "artistOrigin": "PT",
+    "lastUpdate": "2025-07-27T21:05:46.599Z",
+    "realBpm": 188,
+    "volume": 0.65,
+    "author": "Raitova",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "quimbarreirosapadaria",
+    "local": false
+  },
+  {
     "id": "r-city-feat-adam-levine-locked-away",
     "title": "Locked Away",
     "artist": "R. City feat. Adam Levine",
@@ -115092,6 +115698,35 @@
     "local": false
   },
   {
+    "id": "stromae-lenfer",
+    "title": "L'enfer",
+    "artist": "Stromae",
+    "video": "DO8NSL5Wyeg",
+    "language": [
+      "French"
+    ],
+    "bpm": 361.71,
+    "gap": 27825.727544165216,
+    "year": "2022",
+    "artistOrigin": "BE",
+    "lastUpdate": "2025-07-28T06:35:50.550Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=L%27enfer",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "stromaelenfer",
+    "local": false
+  },
+  {
     "id": "stromae-papaoutai",
     "title": "Papaoutai",
     "artist": "Stromae",
@@ -122301,6 +122936,32 @@
     "local": false
   },
   {
+    "id": "the-highwaymen-highwayman",
+    "title": "Highwayman",
+    "artist": "The Highwaymen",
+    "video": "aFkcAH-m9W0",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.33,
+    "gap": 14106.22794444719,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.036Z",
+    "realBpm": 101,
+    "volume": 0.87,
+    "author": "daggeg",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4931,
+    "tracksCount": 1,
+    "search": "thehighwaymenhighwayman",
+    "local": false
+  },
+  {
     "id": "the-ink-spots-i-dont-want-to-set-the-world-on-fire",
     "title": "I Don’t Want To Set The World On Fire",
     "artist": "The Ink Spots",
@@ -123541,6 +124202,35 @@
     "local": false
   },
   {
+    "id": "the-police-every-breath-you-take",
+    "title": "Every Breath You Take",
+    "artist": "The Police",
+    "video": "OMOGaugKpzs",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.7,
+    "gap": 14857.41798040051,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-27T21:04:44.954Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Police&cancion=Every%20Breath%20You%20Take",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "thepoliceeverybreathyoutake",
+    "local": false
+  },
+  {
     "id": "the-police-message-in-a-bottle",
     "title": "Message in a bottle",
     "artist": "The Police",
@@ -123566,6 +124256,35 @@
     "shortId": 4380,
     "tracksCount": 1,
     "search": "thepolicemessageinabottle",
+    "local": false
+  },
+  {
+    "id": "the-police-roxanne",
+    "title": "Roxanne",
+    "artist": "The Police",
+    "video": "3T1c7GkzRQQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.9000000000002,
+    "gap": 18055.29411764706,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-07-28T06:34:38.507Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Police&cancion=Roxanne",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": -1,
+    "tracksCount": 1,
+    "search": "thepoliceroxanne",
     "local": false
   },
   {
@@ -123620,6 +124339,87 @@
     "shortId": 4382,
     "tracksCount": 1,
     "search": "theprettyrecklessheavenknows",
+    "local": false
+  },
+  {
+    "id": "the-pretty-reckless-just-tonight",
+    "title": "Just Tonight",
+    "artist": "The Pretty Reckless",
+    "video": "Y7VGOnV2QhU",
+    "language": [
+      "English"
+    ],
+    "bpm": 374.71,
+    "gap": 12219.226068159376,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.552Z",
+    "genre": "Alternative Rock",
+    "realBpm": 164,
+    "volume": 0.75,
+    "author": "ZomSongs",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4939,
+    "tracksCount": 1,
+    "search": "theprettyrecklessjusttonight",
+    "local": false
+  },
+  {
+    "id": "the-pretty-reckless-make-me-wanna-die",
+    "title": "Make Me Wanna Die",
+    "artist": "The Pretty Reckless",
+    "video": "txBfhpm1jI0",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.55,
+    "gap": 29896.268176553855,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.554Z",
+    "genre": "Rock",
+    "realBpm": 97,
+    "volume": 0.73,
+    "author": "ZomSongs",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4940,
+    "tracksCount": 1,
+    "search": "theprettyrecklessmakemewannadie",
+    "local": false
+  },
+  {
+    "id": "the-pretty-reckless-take-me-down",
+    "title": "Take Me Down",
+    "artist": "The Pretty Reckless",
+    "video": "BQpZv2r8fb4",
+    "language": [
+      "English"
+    ],
+    "bpm": 221.91,
+    "gap": 16036.075435987563,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.551Z",
+    "genre": "Rock",
+    "realBpm": 111,
+    "volume": 0.72,
+    "author": "princetongirl98",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4938,
+    "tracksCount": 1,
+    "search": "theprettyrecklesstakemedown",
     "local": false
   },
   {
@@ -126905,6 +127705,33 @@
     "local": false
   },
   {
+    "id": "tiromancino-per-me-e-importante",
+    "title": "Per me è importante",
+    "artist": "Tiromancino",
+    "video": "N1NSE9O48Dk",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 271.8,
+    "gap": 27455.62251655629,
+    "year": "2002",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-07-29T00:15:34.483Z",
+    "genre": "Pop",
+    "realBpm": 136,
+    "volume": 0.87,
+    "sourceUrl": "http://ultrastar.altervista.org/forum/viewtopic.php?f=2&t=3300",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4917,
+    "tracksCount": 1,
+    "search": "tiromancinopermeeimportante",
+    "local": false
+  },
+  {
     "id": "tix-fallen-angel",
     "title": "Fallen Angel",
     "artist": "Tix",
@@ -128059,6 +128886,34 @@
     "local": false
   },
   {
+    "id": "tool-aenima",
+    "title": "Ænima",
+    "artist": "Tool",
+    "video": "CehYA3omb5o",
+    "language": [
+      "English"
+    ],
+    "bpm": 450.38999999999993,
+    "gap": 26207.53098582174,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.207Z",
+    "genre": "Progressive Metal",
+    "videoGap": 4,
+    "realBpm": 182,
+    "volume": 0.72,
+    "author": "waderose",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "shortId": 4933,
+    "tracksCount": 1,
+    "search": "toolaenima",
+    "local": false
+  },
+  {
     "id": "tool-lateralus",
     "title": "Lateralus",
     "artist": "Tool",
@@ -128117,6 +128972,33 @@
     "shortId": 4528,
     "tracksCount": 1,
     "search": "toolschism",
+    "local": false
+  },
+  {
+    "id": "tool-sober",
+    "title": "Sober",
+    "artist": "Tool",
+    "video": "nspxAG12Cpc",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 50730.38461538462,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-07-29T00:15:35.205Z",
+    "genre": "Rock",
+    "realBpm": 149,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4932,
+    "tracksCount": 1,
+    "search": "toolsober",
     "local": false
   },
   {
@@ -134247,6 +135129,34 @@
     "shortId": 4811,
     "tracksCount": 1,
     "search": "woodkidiloveyou",
+    "local": false
+  },
+  {
+    "id": "wotamin-feat-hatsune-miku-irony",
+    "title": "Irony",
+    "artist": "Wotamin feat Hatsune Miku",
+    "video": "uEgiBZwwZFA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360.08,
+    "gap": 1287.2221728504778,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-07-29T00:15:34.678Z",
+    "genre": "Utaite",
+    "realBpm": 90,
+    "volume": 0.5,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4924,
+    "tracksCount": 1,
+    "search": "wotaminfeathatsunemikuirony",
     "local": false
   },
   {
