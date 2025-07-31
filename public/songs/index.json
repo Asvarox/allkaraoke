@@ -92,7 +92,7 @@
     "gap": 28.824039102421693,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.680Z",
+    "lastUpdate": "2025-07-28T13:16:06.331Z",
     "edition": "Project Sekai",
     "genre": "Anime",
     "realBpm": 90,
@@ -106,7 +106,7 @@
         "start": 17
       }
     ],
-    "shortId": 4925,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "2500atnightcordxkagaminelenirony",
     "local": false
@@ -7790,7 +7790,7 @@
     "gap": 7423.140711153563,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-07-29T00:15:33.724Z",
+    "lastUpdate": "2025-07-28T13:11:04.940Z",
     "realBpm": 115,
     "volume": 0.5,
     "author": "cjszoo",
@@ -7799,7 +7799,7 @@
         "start": 15
       }
     ],
-    "shortId": 4916,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "annielennoxwalkingonbrokenglass",
     "local": false
@@ -11317,7 +11317,7 @@
     "bpm": 267.19,
     "gap": 4209.483139339047,
     "year": "2019",
-    "lastUpdate": "2025-07-29T00:15:35.210Z",
+    "lastUpdate": "2025-07-28T13:44:45.378Z",
     "realBpm": 100,
     "volume": 0.5,
     "author": "ben1993",
@@ -11326,7 +11326,7 @@
         "start": 18
       }
     ],
-    "shortId": 4935,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "aviciifeataloeblaccsos",
     "local": false
@@ -11369,7 +11369,7 @@
     "gap": -70,
     "year": "2015",
     "artistOrigin": "SE",
-    "lastUpdate": "2025-07-29T00:15:35.209Z",
+    "lastUpdate": "2025-07-28T13:44:14.896Z",
     "realBpm": 100,
     "volume": 0.72,
     "author": "snake84",
@@ -11378,7 +11378,7 @@
         "start": 6
       }
     ],
-    "shortId": 4934,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "aviciigonnaloveya",
     "local": false
@@ -11529,7 +11529,7 @@
     "gap": 26155.244741262097,
     "year": "2013",
     "artistOrigin": "SE",
-    "lastUpdate": "2025-07-29T00:15:35.373Z",
+    "lastUpdate": "2025-07-28T13:44:58.322Z",
     "realBpm": 125,
     "volume": 0.5,
     "author": "lozboorman",
@@ -11538,7 +11538,7 @@
         "start": 17
       }
     ],
-    "shortId": 4936,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "aviciiyoumakeme",
     "local": false
@@ -16477,7 +16477,7 @@
     "gap": 10200,
     "year": "1970",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-07-29T00:15:35.034Z",
+    "lastUpdate": "2025-07-28T13:39:22.086Z",
     "realBpm": 148,
     "volume": 0.74,
     "author": "Ultrastar-Songs",
@@ -16486,7 +16486,7 @@
         "start": 16
       }
     ],
-    "shortId": 4929,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "blacksabbathironman",
     "local": false
@@ -24340,7 +24340,7 @@
     "gap": 18031.774193548386,
     "year": "2015",
     "artistOrigin": "FR",
-    "lastUpdate": "2025-07-29T00:15:35.374Z",
+    "lastUpdate": "2025-07-28T13:45:43.715Z",
     "realBpm": 124,
     "volume": 0.5,
     "author": "xrJUExmQEk",
@@ -24349,7 +24349,7 @@
         "start": 17
       }
     ],
-    "shortId": 4937,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "caravanpalacelonedigger",
     "local": false
@@ -36953,7 +36953,7 @@
     "gap": 24881.156186612578,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.035Z",
+    "lastUpdate": "2025-07-28T13:40:06.178Z",
     "realBpm": 99,
     "volume": 0.5,
     "author": "minquit",
@@ -36962,7 +36962,7 @@
         "start": 26
       }
     ],
-    "shortId": 4930,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "disturbedprayer",
     "local": false
@@ -43594,7 +43594,7 @@
     "gap": 27659.821389675453,
     "year": "2004",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-07-29T00:15:34.684Z",
+    "lastUpdate": "2025-07-28T13:37:46.144Z",
     "genre": "Rock",
     "realBpm": 139,
     "volume": 0.5,
@@ -43604,7 +43604,7 @@
         "start": 18
       }
     ],
-    "shortId": 4927,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "evermoreitstoolaterideon",
     "local": false
@@ -45374,7 +45374,7 @@
     "gap": 21787.256308549244,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:34.867Z",
+    "lastUpdate": "2025-07-28T13:38:17.709Z",
     "realBpm": 90,
     "volume": 0.5,
     "author": "crimson30",
@@ -45383,7 +45383,7 @@
         "start": 24
       }
     ],
-    "shortId": 4928,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "fionaapplecriminal",
     "local": false
@@ -51107,7 +51107,7 @@
     "gap": 748.7916270218838,
     "year": "2014",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.485Z",
+    "lastUpdate": "2025-07-28T13:12:10.881Z",
     "genre": "Vocaloid",
     "realBpm": 168,
     "volume": 0.5,
@@ -51118,7 +51118,7 @@
         "start": 22
       }
     ],
-    "shortId": 4918,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "gumikokoronashi",
     "local": false
@@ -52517,7 +52517,7 @@
     "gap": 26970,
     "year": "2014",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.681Z",
+    "lastUpdate": "2025-07-28T13:16:28.790Z",
     "genre": "Vocaloid",
     "realBpm": 120,
     "previewStart": 84,
@@ -52530,7 +52530,7 @@
         "start": 16
       }
     ],
-    "shortId": 4926,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "hatsunemikuhappyhalloween",
     "local": false
@@ -52573,7 +52573,7 @@
     "gap": 2900,
     "year": "2010",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.491Z",
+    "lastUpdate": "2025-07-28T13:13:30.808Z",
     "genre": "Vocaloid",
     "realBpm": 83,
     "previewStart": 2,
@@ -52587,7 +52587,7 @@
         "start": 20
       }
     ],
-    "shortId": 4920,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "hatsunemikuworldismine",
     "local": false
@@ -55270,7 +55270,7 @@
     "gap": 21838.887541576092,
     "year": "2021",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.675Z",
+    "lastUpdate": "2025-07-28T13:14:41.648Z",
     "edition": "Leo/need, Project Sekai",
     "genre": "Anime",
     "realBpm": 94,
@@ -55282,7 +55282,7 @@
         "start": 25
       }
     ],
-    "shortId": 4922,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "ichikahoshinosakitenmafeathatsunemikuikanaide",
     "local": false
@@ -65886,7 +65886,7 @@
     "gap": 18655.85714285714,
     "year": "2011",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.487Z",
+    "lastUpdate": "2025-07-28T13:12:31.371Z",
     "genre": "Vocaloid",
     "videoGap": 4,
     "realBpm": 168,
@@ -65898,7 +65898,7 @@
         "start": 22
       }
     ],
-    "shortId": 4919,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "keifeatlukamegurinehelloworker",
     "local": false
@@ -71611,7 +71611,7 @@
     "gap": 416.68914812273306,
     "year": "2024",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.676Z",
+    "lastUpdate": "2025-07-28T13:15:10.735Z",
     "edition": "Project Sekai",
     "genre": "Anime",
     "realBpm": 93,
@@ -71625,7 +71625,7 @@
         "start": 14
       }
     ],
-    "shortId": 4923,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "leoneedxrinkagaminetokyoteddybear",
     "local": false
@@ -73540,7 +73540,7 @@
     "gap": 14519.351464435147,
     "year": "2018",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:33.718Z",
+    "lastUpdate": "2025-07-28T13:10:31.466Z",
     "realBpm": 96,
     "volume": 0.4,
     "author": "DeinAlptraum",
@@ -73550,7 +73550,7 @@
         "start": 25
       }
     ],
-    "shortId": 4915,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "lisaadamas",
     "local": false
@@ -75305,7 +75305,7 @@
     "bpm": 260,
     "gap": 11583.23076923077,
     "year": "2012",
-    "lastUpdate": "2025-07-29T00:15:34.494Z",
+    "lastUpdate": "2025-07-28T13:13:59.248Z",
     "genre": "Vocaloid",
     "realBpm": 130,
     "previewStart": 48,
@@ -75318,7 +75318,7 @@
         "start": 17
       }
     ],
-    "shortId": 4921,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "lukamegurinemikuhatsunegumiiakagaminerinpompandcircumstance",
     "local": false
@@ -122947,7 +122947,7 @@
     "gap": 14106.22794444719,
     "year": "1985",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.036Z",
+    "lastUpdate": "2025-07-28T13:40:47.146Z",
     "realBpm": 101,
     "volume": 0.87,
     "author": "daggeg",
@@ -122956,7 +122956,7 @@
         "start": 13
       }
     ],
-    "shortId": 4931,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "thehighwaymenhighwayman",
     "local": false
@@ -124353,7 +124353,7 @@
     "gap": 12219.226068159376,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.552Z",
+    "lastUpdate": "2025-07-28T13:46:55.595Z",
     "genre": "Alternative Rock",
     "realBpm": 164,
     "volume": 0.75,
@@ -124363,7 +124363,7 @@
         "start": 25
       }
     ],
-    "shortId": 4939,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theprettyrecklessjusttonight",
     "local": false
@@ -124380,7 +124380,7 @@
     "gap": 29896.268176553855,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.554Z",
+    "lastUpdate": "2025-07-28T13:47:32.442Z",
     "genre": "Rock",
     "realBpm": 97,
     "volume": 0.73,
@@ -124390,7 +124390,7 @@
         "start": 26
       }
     ],
-    "shortId": 4940,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theprettyrecklessmakemewannadie",
     "local": false
@@ -124407,7 +124407,7 @@
     "gap": 16036.075435987563,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.551Z",
+    "lastUpdate": "2025-07-28T13:46:23.210Z",
     "genre": "Rock",
     "realBpm": 111,
     "volume": 0.72,
@@ -124417,7 +124417,7 @@
         "start": 15
       }
     ],
-    "shortId": 4938,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theprettyrecklesstakemedown",
     "local": false
@@ -127716,7 +127716,7 @@
     "gap": 27455.62251655629,
     "year": "2002",
     "artistOrigin": "IT",
-    "lastUpdate": "2025-07-29T00:15:34.483Z",
+    "lastUpdate": "2025-07-28T13:11:47.798Z",
     "genre": "Pop",
     "realBpm": 136,
     "volume": 0.87,
@@ -127726,7 +127726,7 @@
         "start": 18
       }
     ],
-    "shortId": 4917,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "tiromancinopermeeimportante",
     "local": false
@@ -128897,7 +128897,7 @@
     "gap": 26207.53098582174,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.207Z",
+    "lastUpdate": "2025-07-28T13:43:45.553Z",
     "genre": "Progressive Metal",
     "videoGap": 4,
     "realBpm": 182,
@@ -128908,7 +128908,7 @@
         "start": 30
       }
     ],
-    "shortId": 4933,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "toolaenima",
     "local": false
@@ -128986,7 +128986,7 @@
     "gap": 50730.38461538462,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2025-07-29T00:15:35.205Z",
+    "lastUpdate": "2025-07-28T13:42:21.183Z",
     "genre": "Rock",
     "realBpm": 149,
     "volume": 0.5,
@@ -128996,7 +128996,7 @@
         "start": 21
       }
     ],
-    "shortId": 4932,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "toolsober",
     "local": false
@@ -135143,7 +135143,7 @@
     "gap": 1287.2221728504778,
     "year": "2012",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-07-29T00:15:34.678Z",
+    "lastUpdate": "2025-07-28T13:15:37.930Z",
     "genre": "Utaite",
     "realBpm": 90,
     "volume": 0.5,
@@ -135154,7 +135154,7 @@
         "start": 24
       }
     ],
-    "shortId": 4924,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "wotaminfeathatsunemikuirony",
     "local": false
