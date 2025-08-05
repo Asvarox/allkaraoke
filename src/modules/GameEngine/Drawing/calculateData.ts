@@ -1,4 +1,4 @@
-import { FrequencyRecord, PlayerNote, Section, Song, SongTrack } from 'interfaces';
+import { FrequencyRecord, milliseconds, Note, PlayerNote, Section, Song, SongTrack } from 'interfaces';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
 
 export const pitchPadding = 6;
@@ -73,8 +73,9 @@ export interface DrawingData {
   minPitch: number;
   maxPitch: number;
   canvas: HTMLCanvasElement;
-  currentTime: number;
+  currentTime: milliseconds;
   currentSectionIndex: number;
+  currentNote: Note | undefined;
   frequencies: FrequencyRecord[];
   playerNotes: PlayerNote[];
   currentPlayerNotes: PlayerNote[];

@@ -105,6 +105,8 @@ export default class CanvasDrawing {
     }
   };
 
+  private currentPlayerNotes: Record<number, Note> = {};
+
   private drawPlayer = (playerNumber: 0 | 1 | 2 | 3, ctx: CanvasRenderingContext2D) => {
     const drawingData = this.getDrawingData(playerNumber);
     const { currentSection } = calculateData(drawingData);
@@ -126,6 +128,15 @@ export default class CanvasDrawing {
     }
     false && drawPlayerCanvas(drawingData);
     false && debugPitches(ctx!, drawingData);
+
+    if (
+      playerNumber === 0 &&
+      drawingData.currentNote &&
+      this.currentPlayerNotes[playerNumber] !== drawingData.currentNote
+    ) {
+      this.currentPlayerNotes[playerNumber] = drawingData.currentNote;
+      events.noteStarted.dispatch();
+    }
   };
 
   private setDistortionForce = (drawingData: DrawingData) => {
@@ -347,6 +358,7 @@ export default class CanvasDrawing {
       currentPlayerNotes: playerNotes.filter((note) => note.note.start >= (currentSection?.start ?? Infinity)),
       track,
       currentBeat: GameState.getCurrentBeat(),
+      currentNote: playerState.getCurrentNote(),
       currentSectionIndex,
       currentSection,
       paddingVertical: this.verticalMargin,

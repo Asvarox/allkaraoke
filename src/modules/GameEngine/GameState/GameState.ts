@@ -1,4 +1,4 @@
-import { GAME_MODE, SingSetup, Song } from 'interfaces';
+import { GAME_MODE, milliseconds, seconds, SingSetup, Song, songBeat } from 'interfaces';
 import {
   addDetailedScores,
   beatsToPoints,
@@ -13,19 +13,19 @@ import tuple from 'modules/utils/tuple';
 
 export class GameStateClass {
   private song: Song | null = null;
-  private currentTime: number = 0;
-  private duration: number = 0;
+  private currentTime: milliseconds = 0;
+  private duration: seconds = 0;
   private singSetup: SingSetup | null = null;
   private playerStates: PlayerState[] = [];
   private playing: boolean = false;
 
-  public setCurrentTime = (currentTime: number) => (this.currentTime = currentTime);
-  public getCurrentTime = (accountGap = true) => {
+  public setCurrentTime = (currentTime: milliseconds) => (this.currentTime = currentTime);
+  public getCurrentTime = (accountGap = true): milliseconds => {
     return this.currentTime - (accountGap && this.song ? this.song.gap : 0);
   };
 
-  public getSongBeatLength = () => getSongBeatLength(this.song!);
-  public getCurrentBeat = () => {
+  public getSongBeatLength = (): milliseconds => getSongBeatLength(this.song!);
+  public getCurrentBeat = (): songBeat => {
     return getCurrentBeat(this.getCurrentTime(), this.getSongBeatLength(), 0, false);
   };
 
@@ -49,7 +49,7 @@ export class GameStateClass {
 
   public getTolerance = () => this.getSingSetup()?.tolerance ?? 2;
 
-  public setDuration = (duration: number) => (this.duration = duration);
+  public setDuration = (duration: seconds) => (this.duration = duration);
   public getDuration = () => this.duration;
 
   public getPlayer = (playerNumber: 0 | 1 | 2 | 3) =>

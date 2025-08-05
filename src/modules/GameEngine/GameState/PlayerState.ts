@@ -1,4 +1,4 @@
-import { FrequencyRecord, NotesSection, PlayerNote } from 'interfaces';
+import { FrequencyRecord, NotesSection, PlayerNote, songBeat } from 'interfaces';
 import { GameStateClass } from 'modules/GameEngine/GameState/GameState';
 import { appendFrequencyToPlayerNotes } from 'modules/GameEngine/GameState/Helpers/appendFrequencyToPlayerNotes';
 import calculateScore, { calculateDetailedScoreData } from 'modules/GameEngine/GameState/Helpers/calculateScore';
@@ -101,7 +101,7 @@ class PlayerState {
   public getPlayerNotes = () => this.playerNotes;
   public getPlayerFrequencies = () => this.frequencyRecords;
 
-  public getSectionIndexByBeat = (beat: number) => {
+  public getSectionIndexByBeat = (beat: songBeat) => {
     return this.getTrack().sections.findIndex((section, index, sections) => {
       if (beat < 0) return true;
       if (beat < section.start) return false;
@@ -110,7 +110,14 @@ class PlayerState {
     });
   };
 
+  public getNoteAtBeat = (beat: songBeat) => {
+    const section = this.getSectionByBeat(beat);
+    if (!section || !isNotesSection(section)) return undefined;
+    return getNoteAtBeat(section, beat, 0);
+  };
+
   public getCurrentSectionIndex = () => this.getSectionIndexByBeat(this.gameState.getCurrentBeat());
+  public getCurrentNote = () => this.getNoteAtBeat(this.gameState.getCurrentBeat());
 
   public getSectionByBeat = (beat: number) => this.getTrack().sections[this.getSectionIndexByBeat(beat)] ?? null;
 

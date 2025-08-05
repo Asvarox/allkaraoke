@@ -3,7 +3,7 @@ import { ValuesType } from 'utility-types';
 
 export type NoteType = ValuesType<typeof typesMap>;
 export interface Note {
-  start: number;
+  start: songBeat;
   length: number;
   pitch: number;
   type: NoteType;
@@ -12,14 +12,14 @@ export interface Note {
 
 export interface NotesSection {
   // end: never;
-  start: number;
+  start: songBeat;
   notes: Note[];
   type: 'notes';
 }
 
 export interface PauseSection {
-  start: number;
-  end: number;
+  start: songBeat;
+  end: songBeat;
   // notes: never;
   type: 'pause';
 }

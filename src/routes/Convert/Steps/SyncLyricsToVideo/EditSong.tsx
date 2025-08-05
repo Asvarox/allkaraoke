@@ -1,9 +1,16 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
-import { GAME_MODE, SingSetup, Song } from 'interfaces';
+import { GAME_MODE, milliseconds, Note, seconds, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
+import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections, getLastNotesSection } from 'modules/Songs/utils/notesSelectors';
+import {
+  getFirstNoteFromSection,
+  getFirstNoteStartFromSections,
+  getLastNotesSection,
+  getSectionEnd,
+  getSectionStart,
+} from 'modules/Songs/utils/notesSelectors';
 import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
 import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
 import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
@@ -87,7 +94,7 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
-  const [currentTime, setCurrentTime] = useState<number>(0);
+  const [currentTime, setCurrentTime] = useState<milliseconds>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
@@ -144,30 +151,102 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   }, [visible]);
 
   useEffect(() => {
-    if (player.current) {
-      player.current.setPlaybackSpeed(playbackSpeed);
-    }
+    player.current?.setPlaybackSpeed(playbackSpeed);
   }, [playbackSpeed]);
 
-  const seekToFirstSection = (padding = 0.5 * playbackSpeed) => {
-    const firstNoteStart = getFirstNoteStartFromSections(newSong.tracks[0].sections) * beatLength + newSong.gap;
-    player.current?.seekTo(firstNoteStart / 1000 - padding);
+  const seekToNote = (note?: Note, padding: seconds = 0.5 * playbackSpeed) => {
+    if (note && player.current) {
+      player.current.seekTo((note.start * beatLength + newSong.gap) / 1000 - padding);
+      player.current.play();
+    }
   };
 
-  const seekToLastSection = (padding = 0.5 * playbackSpeed) => {
-    const lastNoteStart =
-      (getLastNotesSection(newSong.tracks[0].sections)?.notes[0].start ?? 0) * beatLength + newSong.gap;
-    player.current?.seekTo(lastNoteStart / 1000 - padding);
+  const seekToFirstSection = (padding?: seconds) => {
+    const firstNote = getFirstNoteFromSection(newSong.tracks[0].sections);
+    seekToNote(firstNote, padding);
   };
 
-  useHotkeys('q', () => {
-    setPlaybackSpeed(0.5);
-    seekToFirstSection(0.25);
-  });
-  useHotkeys('w', () => {
-    setPlaybackSpeed(0.5);
-    seekToLastSection(0.25);
-  });
+  const seekToSubsequentSection = async (direction: -1 | 1, padding?: seconds) => {
+    if (!player.current) return;
+    const currentBeat = getCurrentBeat(await player.current!.getCurrentTime!(), beatLength, newSong.gap);
+    const notesSections = newSong.tracks[0].sections.filter(isNotesSection);
+    const currentSectionIndex = notesSections.findIndex(
+      (section) => getSectionStart(section) <= currentBeat && getSectionEnd(section) >= currentBeat,
+    );
+    if (currentSectionIndex === -1 || notesSections[currentSectionIndex + direction] === undefined) return;
+
+    seekToNote(notesSections[currentSectionIndex + direction].notes[0], padding);
+  };
+
+  const seekToNextSection = (padding?: seconds) => {
+    seekToSubsequentSection(1, padding);
+  };
+  const seekToPreviousSection = (padding?: seconds) => {
+    seekToSubsequentSection(-1, padding);
+  };
+
+  const seekToLastSection = (padding?: seconds) => {
+    const lastNoteStart = getLastNotesSection(newSong.tracks[0].sections)?.notes[0];
+    seekToNote(lastNoteStart, padding);
+  };
+
+  useHotkeys(
+    '1',
+    () => {
+      setPlaybackSpeed(0.25);
+    },
+    [newSong, setPlaybackSpeed],
+  );
+  useHotkeys(
+    '2',
+    () => {
+      setPlaybackSpeed(0.5);
+    },
+    [newSong, setPlaybackSpeed],
+  );
+  useHotkeys(
+    '3',
+    () => {
+      setPlaybackSpeed(1);
+    },
+    [newSong, setPlaybackSpeed],
+  );
+  useHotkeys(
+    '4',
+    () => {
+      setPlaybackSpeed(2);
+    },
+    [newSong, setPlaybackSpeed],
+  );
+
+  useHotkeys(
+    'q',
+    () => {
+      seekToFirstSection();
+    },
+    [newSong, seekToFirstSection],
+  );
+  useHotkeys(
+    'w',
+    () => {
+      seekToPreviousSection();
+    },
+    [newSong, seekToPreviousSection],
+  );
+  useHotkeys(
+    'e',
+    () => {
+      seekToNextSection();
+    },
+    [newSong, seekToNextSection],
+  );
+  useHotkeys(
+    'r',
+    () => {
+      seekToLastSection();
+    },
+    [newSong],
+  );
   useHotkeys('a', () => {
     setGapShift((current) => String(Number(current) - 50));
   });
@@ -217,6 +296,16 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 </Button>
               </ShortcutIndicator>
               <ShortcutIndicator shortcutKey="w">
+                <Button variant="outlined" size="small" onClick={() => seekToPreviousSection()}>
+                  Prev
+                </Button>
+              </ShortcutIndicator>
+              <ShortcutIndicator shortcutKey="e">
+                <Button variant="outlined" size="small" onClick={() => seekToNextSection()}>
+                  Next
+                </Button>
+              </ShortcutIndicator>
+              <ShortcutIndicator shortcutKey="r">
                 <Button variant="outlined" size="small" onClick={() => seekToLastSection()}>
                   Last section
                 </Button>

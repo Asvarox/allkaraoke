@@ -130,6 +130,8 @@ export const events = {
 
   micServerStarted: new GameEvent('micServerStarted'),
   micServerStopped: new GameEvent('micServerStopped'),
+
+  noteStarted: new GameEvent('noteStarted', false, false),
 };
 
 export default events;

@@ -28,7 +28,7 @@ interface Props extends Omit<ComponentProps<typeof Container>, 'ref'>, RefAttrib
   height: number;
   autoplay?: boolean;
   showControls?: boolean;
-  onCurrentTimeUpdate?: (newTime: number) => void;
+  onCurrentTimeUpdate?: (newTime: milliseconds) => void;
   onSongEnd?: () => void;
   onStatusChange?: (status: VideoState) => void;
 
@@ -42,10 +42,12 @@ export interface PlayerRef {
   pause: () => void;
   seekTo: (time: number) => void;
   setPlaybackSpeed: (speed: number) => void;
+  getCurrentTime?: () => Promise<milliseconds>;
+  getDuration?: () => seconds;
 }
 
 function usePlayerSetDuration(playerRef: RefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState<seconds>(0);
   useEffect(() => {
     if (playerRef.current && currentStatus === VideoState.PLAYING && duration === 0) {
       playerRef.current.getDuration().then((dur: number) => {
@@ -104,6 +106,8 @@ function Player({
     setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
     play: () => player.current!.playVideo(),
     pause: () => player.current!.pauseVideo(),
+    getCurrentTime: async () => ((await player.current?.getCurrentTime()) ?? 0) * 1000,
+    getDuration: () => duration,
   }));
 
   const onStateChangeCallback = useCallback(

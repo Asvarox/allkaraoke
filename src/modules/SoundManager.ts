@@ -39,7 +39,10 @@ class Sound {
         await clonedNode.play();
         clonedNode.remove();
       } else {
-        await this.sound?.play();
+        if (this.sound) {
+          this.sound.currentTime = 0;
+          await this.sound?.play();
+        }
       }
     } catch (data) {
       return console.warn(data);

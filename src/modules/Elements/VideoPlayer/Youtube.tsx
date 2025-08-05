@@ -60,7 +60,7 @@ export default forwardRef(function YoutubeVideoPlayer(
     getStatus: () => stateMap[currentStatus],
     setSize: (w, h) => player.current?.getInternalPlayer()!.setSize(w, h),
     seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
-    setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(speed),
+    setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(Number(speed)),
     setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
     getCurrentTime: () => player.current?.getInternalPlayer?.()?.getCurrentTime?.() ?? Promise.resolve(0),
     loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
@@ -94,6 +94,9 @@ export default forwardRef(function YoutubeVideoPlayer(
           disablekb: disablekb ? 1 : 0,
           modestbranding: 1,
         },
+      }}
+      onPlaybackRateChange={(e) => {
+        console.log('onPlaybackRateChange', e.data);
       }}
       onStateChange={(e) => {
         setCurrentStatus(e.data);

@@ -11,7 +11,7 @@ import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useQueryParam from 'modules/hooks/useQueryParam';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import setQueryParam from 'modules/utils/setQueryParam';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import AuthorAndVideo, { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
 import BasicData, { BasicDataEntity } from 'routes/Convert/Steps/BasicData';
@@ -185,25 +185,27 @@ export default function ConvertView({ song }: Props) {
     id: getSongId(metadataEntity),
   };
 
-  const saveSong = useCallback(async () => {
+  const saveSong = async () => {
     setIsSaving(true);
     await SongDao.store(finalSong!);
-    await shareSong(finalSong!.id);
-    setIsSaving(false);
     if (redirect) {
+      // dont wait for the share to finish if redirect is set
+      shareSong(finalSong!.id);
       navigate(redirect);
     } else {
+      await shareSong(finalSong!.id);
       navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
     }
-  }, [finalSong, isEdit, navigate]);
+    setIsSaving(false);
+  };
 
-  const onNextStep = useCallback(() => {
+  const onNextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep((current) => current + 1);
     } else if (steps[currentStep] === 'metadata') {
       saveSong();
     }
-  }, [currentStep, saveSong]);
+  };
 
   useHotkeys(
     'shift+enter',

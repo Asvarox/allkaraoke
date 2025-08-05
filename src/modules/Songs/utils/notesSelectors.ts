@@ -2,13 +2,12 @@ import { milliseconds, NotesSection, Section, Song, songBeat } from 'interfaces'
 import getSongBeatLength from './getSongBeatLength';
 import isNotesSection from './isNotesSection';
 
-export const getFirstNoteFromSection = (section: NotesSection) => {
-  return section.notes[0];
+export const getFirstNoteFromSection = (sections: Section[]) => {
+  const firstNoteSection = sections.find(isNotesSection);
+  return firstNoteSection?.notes[0];
 };
 export const getFirstNoteStartFromSections = (sections: Section[]): songBeat => {
-  const firstNoteSection = sections.find(isNotesSection);
-
-  return firstNoteSection ? getFirstNoteFromSection(firstNoteSection).start : Infinity;
+  return (getFirstNoteFromSection(sections)?.start ?? Infinity) as songBeat;
 };
 export const getLastNoteEndFromSections = (sections: Section[]): songBeat => {
   const notesSections = sections.filter(isNotesSection);
@@ -23,13 +22,17 @@ export const getLastNoteEnd = (section: NotesSection): songBeat => {
   return lastNote.start + lastNote.length;
 };
 
-export const getNoteAtBeat = (section: NotesSection, beat: number, tolerance = 0) => {
+export const getNoteAtBeat = (section: NotesSection, beat: songBeat, tolerance = 0) => {
   return section.notes.find((note) => note.start - tolerance <= beat && note.start + note.length + tolerance >= beat);
 };
 
 export function getSectionStart(section: Section): songBeat {
   return isNotesSection(section) ? section.notes[0].start : section.start;
 }
+
+export const getSectionEnd = (section: Section): songBeat => {
+  return isNotesSection(section) ? getLastNoteEnd(section) : section.end;
+};
 
 export function getSectionStartInMs(section: Section, song: Song): milliseconds {
   return getSectionStart(section) * getSongBeatLength(song) + song.gap;
