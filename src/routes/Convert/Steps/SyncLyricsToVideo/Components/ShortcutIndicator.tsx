@@ -14,6 +14,7 @@ export default function ShortcutIndicator({ shortcutKey, children }: Props) {
   }
   return (
     <Tooltip
+      disableInteractive
       title={`${shortcutKey}`}
       placement={'bottom-end'}
       open
