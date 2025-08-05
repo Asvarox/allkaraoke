@@ -73,6 +73,7 @@
     "Anitta",
     "Anna Kendrick",
     "Anna Margaret",
+    "Annie Lennox",
     "Apocalyptica ft. Adam Gontier",
     "Aqua",
     "Aram MP3",
@@ -100,6 +101,7 @@
     "Ava Max",
     "Avantasia",
     "Avenged Sevenfold",
+    "Avicii feat. Aloe Blacc",
     "Avicii feat. Sandro Cavazza",
     "Avicii",
     "Avril Lavigne",
@@ -225,6 +227,7 @@
     "Camila Cabello ft. Ed Sheeran",
     "Camp Rock 2",
     "Capital Cities",
+    "Caravan Palace",
     "Cardi B",
     "Cardi B & Bruno Mars",
     "Carl Espen",
@@ -432,6 +435,7 @@
     "Evanescence",
     "Eve 6",
     "Everlast",
+    "Evermore",
     "Extreme",
     "Faith Hill",
     "Faith No More",
@@ -445,6 +449,7 @@
     "FIFTY FIFTY",
     "Filter",
     "Finger Eleven",
+    "Fiona Apple",
     "First Choice",
     "Five Finger Death Punch",
     "Five For Fighting",
@@ -1235,6 +1240,7 @@
     "The Eagles",
     "The Fray",
     "The Greatest Showman",
+    "The Highwaymen",
     "The Ink Spots",
     "The Jackson 5",
     "The Jacksons",
@@ -1412,8 +1418,8 @@
   "languages": [
     "English",
     "Polish",
-    "Korean",
     "Japanese",
+    "Korean",
     "Spanish",
     "Estonian",
     "German",
@@ -1444,5 +1450,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 4907
+  "songs": 4940
 }

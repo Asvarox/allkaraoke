@@ -1,0 +1,362 @@
+#ARTIST:Stromae
+#TITLE:L'enfer
+#CREATOR:mustangfred
+#BPM:361,71
+#YEAR:2022
+#VIDEO:v=DO8NSL5Wyeg
+#GENRE:Pop
+#LANGUAGE:French
+#GAP:27825,727544165216
+#ALLKARAOKE_ID:stromae-lenfer
+#ALLKARAOKE_SID:-1
+#ALLKARAOKE_LASTUPDATE:2025-07-28T06:35:50.550Z
+#ALLKARAOKE_ARTISTORIGIN:BE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=L%27enfer
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Stromae - L'enfer.mp3
+#COVER:Stromae - L'enfer.png
+#MEDLEYSTARTBEAT:488
+#MEDLEYENDBEAT:1404
+: 24 1 2 J’suis 
+: 28 2 5 pas 
+: 33 1 2 tout 
+: 40 3 5 seul 
+: 45 3 2 à 
+: 49 2 5 être 
+: 55 1 2 tout 
+: 61 4 5 seul
+: 66 3 4 ~
+- 69
+: 87 1 2 Ça 
+: 91 1 5 fait 
+: 95 2 2 d’jà 
+: 103 2 1 ça 
+: 109 4 1 d’moins 
+: 115 3 2 dans 
+: 119 2 4 la 
+: 125 3 5 tête
+- 128
+: 144 1 2 Et 
+: 148 1 5 si 
+: 154 3 2 j’comp
+: 160 6 5 tais 
+: 176 2 7 com
+: 180 2 5 bien 
+: 183 1 5 on
+: 185 2 4 ~ 
+: 189 6 4 est
+- 195 227
+- 227
+* 251 3 4 beau
+* 258 4 5 coup
+- 262
+: 284 1 2 Tout 
+: 290 1 5 ce 
+: 292 2 2 à 
+: 298 3 5 quoi 
+: 304 1 2 j’ai 
+: 309 2 5 d’jà 
+: 315 2 2 pen
+: 321 5 5 sé
+- 326
+: 345 1 2 Dire 
+: 350 1 5 que 
+: 355 4 2 plein 
+: 361 4 1 d’autres 
+: 368 1 1 y 
+: 370 4 1 ont 
+: 376 2 2 d’jà 
+* 381 3 4 pen
+* 389 4 5 sé
+- 393
+: 405 1 2 Mais 
+: 408 4 5 mal
+: 414 3 2 gré 
+: 421 5 5 tout, 
+: 431 4 7 je 
+: 441 2 5 m’sens 
+: 446 1 4 tout 
+: 451 11 4 seul
+- 462 488
+- 488
+: 512 2 4 Du 
+: 518 4 5 coup
+- 522 554
+- 554
+: 578 1 2 J’ai 
+: 582 6 4 par
+: 594 5 4 fois 
+: 600 3 4 eu
+: 604 4 2 ~ 
+: 610 1 2 des 
+: 615 3 2 pen
+: 620 3 1 ~
+: 626 2 1 sées 
+: 632 5 1 sui
+: 643 2 4 ci
+: 647 5 5 daires
+- 652
+: 656 1 5 et 
+: 659 4 4 j’en 
+: 666 2 2 suis 
+: 673 1 0 peu 
+: 680 6 -2 fier
+- 686
+: 706 1 -3 On 
+: 713 6 -5 croit 
+: 724 3 -3 par
+: 734 3 -2 fois 
+: 740 1 2 que 
+: 746 6 1 c’est 
+: 754 2 2 la 
+: 762 3 4 seule
+: 767 1 1 ~ 
+* 773 3 2 ma
+* 778 10 5 nière 
+: 790 2 4 de 
+: 794 3 2 les 
+: 802 2 0 faire
+: 805 1 2 ~ 
+: 811 4 2 taire
+- 815
+: 838 1 -2 Ces 
+: 842 7 2 pen
+: 854 1 4 sées 
+: 859 4 7 qui
+: 864 4 5 ~ 
+: 870 1 5 me 
+: 875 5 9 font
+: 881 4 7 ~ 
+: 887 5 7 vi
+: 893 1 5 vre 
+: 895 4 5 un 
+: 901 2 4 en
+: 907 5 5 fer
+- 912 944
+- 944
+: 968 1 2 Ces 
+: 973 3 5 pen
+* 978 1 4 ~
+* 985 1 4 sées 
+: 991 5 2 qui 
+: 999 2 1 me 
+: 1006 4 5 font
+: 1012 3 4 ~ 
+: 1018 4 4 vi
+: 1023 1 2 vre 
+: 1026 3 2 un 
+: 1030 3 1 en
+: 1038 4 2 fer
+- 1042 1298
+- 1298
+: 1322 1 2 Est-c’
+: 1328 2 5 qu’ya 
+: 1334 2 2 que 
+: 1338 4 5 moi 
+: 1346 2 2 qui 
+: 1349 1 2 ai 
+: 1351 1 5 la 
+: 1356 1 2 té
+: 1359 4 5 lé
+- 1363
+: 1387 2 2 et 
+: 1390 1 5 la 
+: 1396 4 2 chaîne 
+: 1404 2 1 cul
+: 1410 2 1 pa
+: 1415 1 2 bi
+: 1418 2 4 li
+: 1423 5 5 té?
+- 1428
+: 1444 1 2 Mais 
+: 1449 3 5 faut 
+: 1455 3 2 bien 
+: 1464 5 5 s’chan
+: 1472 2 7 ger 
+: 1475 3 5 les 
+: 1480 2 5 i
+: 1484 4 4 dées
+- 1488 1517
+- 1517
+: 1541 2 4 Pas 
+: 1546 2 4 trop 
+: 1551 2 2 quand 
+: 1555 1 2 même
+: 1557 1 5 ~
+- 1558 1560
+- 1560
+: 1584 1 2 Si
+: 1587 2 5 non 
+: 1592 3 2 ça 
+: 1600 3 5 r’part 
+: 1607 1 2 vite 
+: 1613 1 5 dans 
+: 1615 3 2 la 
+: 1621 4 5 tête
+- 1625
+: 1648 1 2 Et 
+: 1651 1 5 c’est 
+: 1655 4 2 trop 
+: 1663 4 1 tard 
+: 1672 1 1 pour 
+: 1677 1 2 qu’ça 
+: 1682 2 4 s’ar
+: 1686 3 5 rête
+- 1689
+: 1706 1 2 C’est 
+: 1709 2 5 là 
+: 1716 2 2 qu’j’ai
+: 1720 1 2 me
+: 1723 4 5 rais 
+: 1737 1 7 tout 
+: 1741 2 5 ou
+: 1745 3 4 bli
+: 1750 4 7 er
+- 1754 1789
+- 1789
+: 1813 3 4 Du 
+: 1819 4 5 coup
+- 1823 1855
+- 1855
+: 1879 1 2 J’ai 
+: 1883 6 4 par
+: 1895 3 4 fois 
+: 1900 3 4 eu
+: 1905 4 2 ~ 
+: 1911 1 2 des 
+: 1916 3 2 pen
+: 1921 2 1 ~
+: 1927 2 1 sées 
+: 1932 6 1 sui
+: 1944 2 4 ci
+: 1948 4 5 daires
+- 1952
+: 1956 1 5 et 
+: 1960 3 4 j’en 
+: 1967 2 2 suis 
+: 1974 1 0 peu 
+: 1981 5 -2 fier
+- 1986
+: 2006 2 -3 On 
+: 2013 7 -5 croit 
+: 2025 3 -3 par
+: 2035 3 -2 fois 
+: 2041 1 2 que 
+: 2047 6 1 c’est 
+: 2054 2 2 la 
+: 2063 3 4 seule
+: 2068 2 1 ~ 
+: 2074 3 2 ma
+: 2079 10 5 nière 
+: 2091 2 4 de 
+: 2095 2 2 les 
+: 2103 2 0 faire
+: 2106 1 2 ~ 
+: 2111 4 2 taire
+- 2115
+: 2138 1 -2 Ces 
+: 2143 6 2 pen
+: 2155 1 4 sées 
+: 2161 3 7 qui
+: 2165 1 5 ~ 
+: 2171 1 5 me 
+: 2176 4 9 font
+: 2182 3 7 ~ 
+: 2188 5 7 vi
+: 2194 1 5 vre 
+: 2196 4 5 un 
+: 2202 1 4 en
+: 2208 5 5 fer
+- 2213 2244
+- 2244
+: 2268 1 2 Ces 
+: 2273 4 5 pen
+: 2279 1 4 ~
+: 2286 1 4 sées 
+: 2291 7 2 qui 
+: 2301 1 1 me 
+: 2307 3 5 font
+: 2312 3 4 ~ 
+: 2318 5 4 vi
+: 2324 1 2 vre 
+: 2327 2 2 un 
+: 2331 2 1 en
+: 2338 4 2 fer
+- 2342 2860
+- 2860
+: 2884 1 2 Tu 
+: 2890 1 2 sais 
+: 2895 2 2 j’ai 
+: 2899 3 9 mû
+: 2904 1 7 re
+: 2907 3 7 ment 
+: 2911 2 7 ré
+: 2917 1 5 flé
+: 2923 2 2 chi
+- 2925
+: 2948 1 2 Et 
+: 2951 1 2 je 
+: 2956 2 2 sais 
+* 2962 4 10 vrai
+* 2967 5 9 ment 
+: 2976 2 7 pas 
+: 2981 2 10 quoi 
+: 2988 3 9 faire
+: 2992 5 5 ~ 
+: 2999 1 4 de 
+: 3003 4 2 toi
+- 3007
+: 3018 1 2 Jus
+: 3025 2 9 te
+: 3029 6 7 ment, 
+: 3039 4 7 ré
+: 3046 2 5 flé
+: 3053 3 2 chir
+- 3056
+: 3078 1 2 C’est 
+: 3083 3 2 bien 
+: 3090 2 7 l’pro
+: 3095 4 5 blème 
+: 3106 3 5 a
+: 3110 1 4 vec 
+: 3116 5 5 toi
+- 3121
+: 3144 1 2 Tu 
+: 3150 1 2 sais 
+: 3154 5 2 j’ai 
+* 3161 3 9 mû
+* 3165 2 7 re
+* 3169 3 7 ment 
+: 3173 2 7 ré
+: 3178 2 7 flé
+: 3184 2 2 chi
+- 3186
+: 3209 1 2 Et 
+: 3213 1 2 je 
+: 3218 2 2 sais 
+* 3224 4 10 vrai
+* 3230 5 9 ment 
+: 3238 2 7 pas 
+: 3244 2 10 quoi 
+: 3250 4 9 faire
+: 3255 5 5 ~ 
+: 3263 1 4 de 
+: 3267 2 2 toi
+- 3269
+: 3280 1 2 Jus
+: 3287 2 9 te
+: 3291 7 7 ment, 
+: 3301 3 7 ré
+: 3307 2 5 flé
+: 3314 2 2 chir
+- 3316
+: 3340 1 2 C’est 
+: 3344 4 2 bien 
+: 3353 2 7 l’pro
+: 3358 4 5 blème 
+: 3366 4 5 a
+: 3371 1 4 vec 
+: 3376 5 5 toi
+E
