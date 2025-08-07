@@ -3440,6 +3440,32 @@
     "local": false
   },
   {
+    "id": "against-the-current-feat-guardin-againagain",
+    "title": "again&again",
+    "artist": "Against The Current feat. Guardin",
+    "video": "sURhALFOo6w",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.4,
+    "gap": 6483.500294637595,
+    "year": "2021",
+    "lastUpdate": "2025-08-07T00:14:41.806Z",
+    "genre": "Rock",
+    "realBpm": 84,
+    "volume": 0.74,
+    "author": "princetongirl98",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4915,
+    "tracksCount": 1,
+    "search": "againstthecurrentfeatguardinagainagain",
+    "local": false
+  },
+  {
     "id": "against-the-current-legends-never-die",
     "title": "Legends Never Die",
     "artist": "Against The Current",
@@ -40702,6 +40728,32 @@
     "local": false
   },
   {
+    "id": "electric-callboy-we-got-the-moves",
+    "title": "We Got The Moves",
+    "artist": "Electric Callboy",
+    "video": "D1NdGBldg3w",
+    "language": [
+      "English"
+    ],
+    "bpm": 370.04,
+    "gap": 5721.596043670955,
+    "year": "2023",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-08-07T00:14:41.804Z",
+    "realBpm": 150,
+    "volume": 0.72,
+    "author": "LilSinger",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4914,
+    "tracksCount": 1,
+    "search": "electriccallboywegotthemoves",
+    "local": false
+  },
+  {
     "id": "electric-light-orchestra-bluebird",
     "title": "Bluebird",
     "artist": "Electric Light Orchestra",
@@ -53434,6 +53486,35 @@
     "shortId": 1900,
     "tracksCount": 1,
     "search": "heymimowszystko",
+    "local": false
+  },
+  {
+    "id": "hidehiro-kawai-fukashigi-no-carte",
+    "title": "Fukashigi no Carte",
+    "artist": "Hidehiro Kawai",
+    "video": "YjrSkBjDVEw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 396,
+    "gap": -265.1515151515152,
+    "year": "2018",
+    "lastUpdate": "2025-08-07T00:14:42.464Z",
+    "realBpm": 96,
+    "previewStart": 62,
+    "previewEnd": 82,
+    "volume": 0.7,
+    "author": "Furie",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=170363",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25085",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 4917,
+    "tracksCount": 1,
+    "search": "hidehirokawaifukashiginocarte",
     "local": false
   },
   {
@@ -104148,6 +104229,33 @@
     "local": false
   },
   {
+    "id": "rise-against-but-tonight-we-dance",
+    "title": "But Tonight We Dance",
+    "artist": "Rise Against",
+    "video": "YYLNR1nypxU",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": -50,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.789Z",
+    "genre": "Rock",
+    "realBpm": 154,
+    "volume": 0.78,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 4909,
+    "tracksCount": 1,
+    "search": "riseagainstbuttonightwedance",
+    "local": false
+  },
+  {
     "id": "rise-against-everchanging-acoustic",
     "title": "Everchanging (Acoustic)",
     "artist": "Rise Against",
@@ -104172,6 +104280,32 @@
     "shortId": 3687,
     "tracksCount": 1,
     "search": "riseagainsteverchangingacoustic",
+    "local": false
+  },
+  {
+    "id": "rise-against-give-it-all",
+    "title": "Give It All",
+    "artist": "Rise Against",
+    "video": "dhldbymXK-8",
+    "language": [
+      "English"
+    ],
+    "bpm": 206.1,
+    "gap": 9081.07714701601,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.801Z",
+    "realBpm": 103,
+    "volume": 0.72,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4913,
+    "tracksCount": 1,
+    "search": "riseagainstgiveitall",
     "local": false
   },
   {
@@ -104204,6 +104338,33 @@
     "local": false
   },
   {
+    "id": "rise-against-kotov-syndrome",
+    "title": "Kotov Syndrome",
+    "artist": "Rise Against",
+    "video": "NCop3uaktG0",
+    "language": [
+      "English"
+    ],
+    "bpm": 304,
+    "gap": 13608.157894736842,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.795Z",
+    "genre": "Punk",
+    "realBpm": 152,
+    "volume": 0.77,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4912,
+    "tracksCount": 1,
+    "search": "riseagainstkotovsyndrome",
+    "local": false
+  },
+  {
     "id": "rise-against-prayer-of-the-refugee",
     "title": "Prayer of the refugee",
     "artist": "Rise Against",
@@ -104230,6 +104391,59 @@
     "shortId": 3689,
     "tracksCount": 1,
     "search": "riseagainstprayeroftherefugee",
+    "local": false
+  },
+  {
+    "id": "rise-against-re-education-through-labor",
+    "title": "Re-Education (Through Labor)",
+    "artist": "Rise Against",
+    "video": "QnbvOi4SpSk",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.03,
+    "gap": 31346.58919704084,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.793Z",
+    "genre": "Melodic Hardcore",
+    "realBpm": 148,
+    "volume": 0.76,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4911,
+    "tracksCount": 1,
+    "search": "riseagainstreeducationthroughlabor",
+    "local": false
+  },
+  {
+    "id": "rise-against-ready-to-fall",
+    "title": "Ready To Fall",
+    "artist": "Rise Against",
+    "video": "XN2FrUUq-zI",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.25,
+    "gap": 21830.97943192948,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.791Z",
+    "realBpm": 129,
+    "volume": 0.73,
+    "author": "Ko3rMiT",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4910,
+    "tracksCount": 1,
+    "search": "riseagainstreadytofall",
     "local": false
   },
   {
@@ -124396,6 +124610,33 @@
     "local": false
   },
   {
+    "id": "the-pretty-reckless-miss-nothing",
+    "title": "Miss Nothing",
+    "artist": "The Pretty Reckless",
+    "video": "hFlHsKExcYg",
+    "language": [
+      "English"
+    ],
+    "bpm": 314.03,
+    "gap": 14756.9111231411,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-07T00:14:41.785Z",
+    "genre": "Rock",
+    "realBpm": 157,
+    "volume": 0.73,
+    "author": "FM_Doll",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4908,
+    "tracksCount": 1,
+    "search": "theprettyrecklessmissnothing",
+    "local": false
+  },
+  {
     "id": "the-pretty-reckless-take-me-down",
     "title": "Take Me Down",
     "artist": "The Pretty Reckless",
@@ -135211,6 +135452,35 @@
     "shortId": 4744,
     "tracksCount": 1,
     "search": "xjapanendlessrain",
+    "local": false
+  },
+  {
+    "id": "x-japan-forever-love",
+    "title": "Forever Love",
+    "artist": "X Japan",
+    "video": "Pa_qDF-f_Gc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 370.11,
+    "gap": 46537.78771176137,
+    "year": "1996",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-07T00:14:42.463Z",
+    "genre": "Ballad",
+    "realBpm": 187,
+    "volume": 0.8,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=X%20Japan&cancion=Forever%20Love",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4916,
+    "tracksCount": 1,
+    "search": "xjapanforeverlove",
     "local": false
   },
   {
