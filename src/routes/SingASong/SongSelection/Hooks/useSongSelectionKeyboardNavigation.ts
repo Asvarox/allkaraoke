@@ -1,4 +1,4 @@
-import { chunk, throttle } from 'lodash-es';
+import { chunk, throttle } from 'es-toolkit';
 import { menuBack, menuEnter, menuNavigate } from 'modules/SoundManager';
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
@@ -152,7 +152,7 @@ export const useSongSelectionKeyboardNavigation = (
           menuNavigate.play();
         },
         700,
-        { trailing: false },
+        { edges: ['leading'] },
       ),
     [groupedSongs, moveToSong],
   );

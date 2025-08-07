@@ -1,4 +1,4 @@
-import { debounce } from 'lodash-es';
+import { debounce } from 'es-toolkit';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import events from 'modules/GameEvents/GameEvents';

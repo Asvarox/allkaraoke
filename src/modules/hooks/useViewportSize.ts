@@ -1,4 +1,4 @@
-import { throttle } from 'lodash-es';
+import { throttle } from 'es-toolkit';
 import { useEffect, useMemo, useState } from 'react';
 
 const getViewportSize = () => ({

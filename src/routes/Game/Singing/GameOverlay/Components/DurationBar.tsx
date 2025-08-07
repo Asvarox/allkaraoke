@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
+import { uniq } from 'es-toolkit';
 import { PlayerSetup } from 'interfaces';
-import { uniq } from 'lodash-es';
 import styles from 'modules/GameEngine/Drawing/styles';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';

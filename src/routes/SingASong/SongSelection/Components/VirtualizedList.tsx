@@ -1,4 +1,4 @@
-import { chunk } from 'lodash-es';
+import { chunk } from 'es-toolkit';
 import isE2E from 'modules/utils/isE2E';
 import {
   ComponentType,

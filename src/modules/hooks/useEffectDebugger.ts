@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash-es';
+import { isEqual } from 'es-toolkit';
 import usePrevious from 'modules/hooks/usePrevious';
 import { useEffect } from 'react';
 
