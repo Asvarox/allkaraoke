@@ -1,5 +1,5 @@
 import { expect, Page, test } from '@playwright/test';
-import _ from 'lodash';
+import { partition } from 'es-toolkit';
 import tuple from 'modules/utils/tuple';
 
 const findInMatrix = (matrix: string[][], name: string): [number, number] => {
@@ -43,7 +43,7 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
       const middlePointY = rect.y + rect.height / 2;
 
       // get all elements whose left side is on the same Y-plane as the "middle" of the compared element
-      const [row, rest] = _.partition(rectangles, ([, rectangle]) => {
+      const [row, rest] = partition(rectangles, ([, rectangle]) => {
         return middlePointY < rectangle.y + rectangle.height && middlePointY > rectangle.y;
       });
       rows.push(await Promise.all([...row, base].map(async ([element]) => (await element.getAttribute('data-test'))!)));

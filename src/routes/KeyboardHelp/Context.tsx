@@ -1,4 +1,4 @@
-import { omit } from 'lodash-es';
+import { omit } from 'es-toolkit';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
 import ConnectionStatus from 'modules/RemoteMic/ConnectionStatus';

@@ -1,5 +1,5 @@
 import { captureException } from '@sentry/react';
-import { range } from 'lodash-es';
+import { range } from 'es-toolkit';
 import { getInputId } from 'modules/Players/utils';
 import userMediaService from 'modules/UserMedia/userMediaService';
 import { InputSource } from './interfaces';

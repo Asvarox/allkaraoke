@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
+import { cloneDeep } from 'es-toolkit';
 import { GAME_MODE, milliseconds, Note, seconds, SingSetup, Song } from 'interfaces';
-import { cloneDeep } from 'lodash-es';
 import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';

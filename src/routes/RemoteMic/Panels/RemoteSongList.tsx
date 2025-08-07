@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { ArrowRight, Search } from '@mui/icons-material';
+import { groupBy, uniqBy } from 'es-toolkit';
 import { SongPreview } from 'interfaces';
-import { groupBy, uniqBy } from 'lodash-es';
 import { Badge } from 'modules/Elements/Badge';
 import { Flag } from 'modules/Elements/Flag';
 import { Input } from 'modules/Elements/Input';

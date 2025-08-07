@@ -48,6 +48,12 @@
         "src/routes/SocialMediaElements/SocialMediaElements.tsx"
       ]
     ],
+    [
+      "lodash",
+      [
+        "node_modules/@welldone-software/why-did-you-render/dist/whyDidYouRender.js"
+      ]
+    ],
     "modules/GameEngine/Drawing/Shaders/shader.frag?raw",
     [
       "modules/GameEngine/Drawing/Shaders/shader.frag?raw",

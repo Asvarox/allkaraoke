@@ -1,5 +1,5 @@
+import { capitalize } from 'es-toolkit';
 import { Note } from 'interfaces';
-import { capitalize } from 'lodash-es';
 import { SpriteNames } from 'modules/GameEngine/Drawing/Elements/Cache/spriteMap';
 import drawSpriteWithStartAndEnd from 'modules/GameEngine/Drawing/Elements/spriteWithStartAndEnd';
 

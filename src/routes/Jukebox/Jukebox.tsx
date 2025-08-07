@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
+import { shuffle } from 'es-toolkit';
 import { SongPreview } from 'interfaces';
-import { shuffle } from 'lodash-es';
 import { useBackground } from 'modules/Elements/BackgroundContext';
 import { Button } from 'modules/Elements/Button';
 import NoPrerender from 'modules/Elements/NoPrerender';

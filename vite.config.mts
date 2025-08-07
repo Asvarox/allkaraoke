@@ -9,7 +9,6 @@ import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
-// @ts-expect-error missing types for the lib
 import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
 
 const certPath = './config/crt/server.pem';
@@ -23,6 +22,7 @@ if (!customCert) {
 // https://vitejs.dev/config/
 export default defineConfig({
   experimental: {
+    // @ts-expect-error missing types for the lib
     enableNativePlugin: true,
   },
   plugins: [
@@ -44,10 +44,6 @@ export default defineConfig({
               },
               '@mui/material': {
                 transform: '@mui/material/${member}',
-                preventFullImport: true,
-              },
-              'lodash-es': {
-                transform: 'lodash-es/${member}',
                 preventFullImport: true,
               },
             },

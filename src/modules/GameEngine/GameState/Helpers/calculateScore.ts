@@ -1,6 +1,6 @@
 import { noPointsNoteTypes } from 'consts';
+import { memoize } from 'es-toolkit';
 import { DetailedScore, PlayerNote, Song } from 'interfaces';
-import { memoize } from 'lodash-es';
 import getPlayerNoteDistance from 'modules/GameEngine/Helpers/getPlayerNoteDistance';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
 import tuple from 'modules/utils/tuple';
