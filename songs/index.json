@@ -3450,7 +3450,7 @@
     "bpm": 339.4,
     "gap": 6483.500294637595,
     "year": "2021",
-    "lastUpdate": "2025-08-07T00:14:41.806Z",
+    "lastUpdate": "2025-08-06T12:54:35.305Z",
     "genre": "Rock",
     "realBpm": 84,
     "volume": 0.74,
@@ -3460,7 +3460,7 @@
         "start": 23
       }
     ],
-    "shortId": 4915,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "againstthecurrentfeatguardinagainagain",
     "local": false
@@ -40739,7 +40739,7 @@
     "gap": 5721.596043670955,
     "year": "2023",
     "artistOrigin": "DE",
-    "lastUpdate": "2025-08-07T00:14:41.804Z",
+    "lastUpdate": "2025-08-05T07:55:48.135Z",
     "realBpm": 150,
     "volume": 0.72,
     "author": "LilSinger",
@@ -40748,7 +40748,7 @@
         "start": 25
       }
     ],
-    "shortId": 4914,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "electriccallboywegotthemoves",
     "local": false
@@ -53499,7 +53499,7 @@
     "bpm": 396,
     "gap": -265.1515151515152,
     "year": "2018",
-    "lastUpdate": "2025-08-07T00:14:42.464Z",
+    "lastUpdate": "2025-08-06T12:56:13.034Z",
     "realBpm": 96,
     "previewStart": 62,
     "previewEnd": 82,
@@ -53512,7 +53512,7 @@
         "start": 7
       }
     ],
-    "shortId": 4917,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "hidehirokawaifukashiginocarte",
     "local": false
@@ -104240,7 +104240,7 @@
     "gap": -50,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.789Z",
+    "lastUpdate": "2025-08-05T07:53:33.859Z",
     "genre": "Rock",
     "realBpm": 154,
     "volume": 0.78,
@@ -104250,7 +104250,7 @@
         "start": 12
       }
     ],
-    "shortId": 4909,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "riseagainstbuttonightwedance",
     "local": false
@@ -104294,7 +104294,7 @@
     "gap": 9081.07714701601,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.801Z",
+    "lastUpdate": "2025-08-05T07:55:23.893Z",
     "realBpm": 103,
     "volume": 0.72,
     "author": "IC",
@@ -104303,7 +104303,7 @@
         "start": 14
       }
     ],
-    "shortId": 4913,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "riseagainstgiveitall",
     "local": false
@@ -104349,7 +104349,7 @@
     "gap": 13608.157894736842,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.795Z",
+    "lastUpdate": "2025-08-05T07:54:55.457Z",
     "genre": "Punk",
     "realBpm": 152,
     "volume": 0.77,
@@ -104359,7 +104359,7 @@
         "start": 20
       }
     ],
-    "shortId": 4912,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "riseagainstkotovsyndrome",
     "local": false
@@ -104405,7 +104405,7 @@
     "gap": 31346.58919704084,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.793Z",
+    "lastUpdate": "2025-08-05T07:54:32.190Z",
     "genre": "Melodic Hardcore",
     "realBpm": 148,
     "volume": 0.76,
@@ -104415,7 +104415,7 @@
         "start": 20
       }
     ],
-    "shortId": 4911,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "riseagainstreeducationthroughlabor",
     "local": false
@@ -104432,7 +104432,7 @@
     "gap": 21830.97943192948,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.791Z",
+    "lastUpdate": "2025-08-05T07:54:02.479Z",
     "realBpm": 129,
     "volume": 0.73,
     "author": "Ko3rMiT",
@@ -104441,7 +104441,7 @@
         "start": 17
       }
     ],
-    "shortId": 4910,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "riseagainstreadytofall",
     "local": false
@@ -124621,7 +124621,7 @@
     "gap": 14756.9111231411,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-07T00:14:41.785Z",
+    "lastUpdate": "2025-08-05T07:52:59.647Z",
     "genre": "Rock",
     "realBpm": 157,
     "volume": 0.73,
@@ -124631,7 +124631,7 @@
         "start": 21
       }
     ],
-    "shortId": 4908,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theprettyrecklessmissnothing",
     "local": false
@@ -135466,7 +135466,7 @@
     "gap": 46537.78771176137,
     "year": "1996",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-08-07T00:14:42.463Z",
+    "lastUpdate": "2025-08-06T12:54:56.630Z",
     "genre": "Ballad",
     "realBpm": 187,
     "volume": 0.8,
@@ -135478,7 +135478,7 @@
         "start": 25
       }
     ],
-    "shortId": 4916,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "xjapanforeverlove",
     "local": false
