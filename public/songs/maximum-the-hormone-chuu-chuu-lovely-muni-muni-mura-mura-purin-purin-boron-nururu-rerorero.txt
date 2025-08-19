@@ -1,0 +1,967 @@
+#ARTIST:Maximum The Hormone
+#TITLE:Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero
+#CREATOR:subkei
+#BPM:257,54
+#YEAR:2007
+#VIDEO:v=MPUCEz-RCg0
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:7,7566203308224
+#ALLKARAOKE_ID:maximum-the-hormone-chuu-chuu-lovely-muni-muni-mura-mura-purin-purin-boron-nururu-rerorero
+#ALLKARAOKE_SID:4927
+#ALLKARAOKE_LASTUPDATE:2025-08-19T07:35:59.350Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Maximum%20The%20Hormone&cancion=Chuu%20Chuu%20Lovely%20Muni%20Muni%20Mura%20Mura%20Purin%20Purin%20Boron%20Nururu%20Rerorero
+#ALLKARAOKE_VOLUME:0,5
+#COVER:Maximum The Hormone - Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero.jpg
+#MP3:Maximum The Hormone - Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero.mp3
+#MEDLEYSTARTBEAT:2627
+#MEDLEYENDBEAT:3186
+F 1 2 0 One 
+F 5 2 0 two 
+F 9 2 0 three 
+F 13 1 0 four!
+- 14
+: 17 2 3 Chuu 
+: 21 2 3 chuu 
+: 25 1 3 ra
+: 27 1 5 bu
+: 29 1 7 rii 
+: 31 1 10 mu
+: 33 2 12 ni
+: 37 1 10 mu
+: 39 2 12 ni 
+: 43 1 10 mu
+: 45 1 7 ra
+: 47 1 5 mu
+: 49 1 3 ra
+- 50
+: 53 2 3 Purin 
+: 57 2 3 purin 
+: 61 2 3 boron 
+: 65 1 5 nu
+: 67 1 5 ru
+: 69 1 5 ru 
+: 71 2 7 re
+: 75 1 5 ro
+: 77 1 7 re
+: 79 1 5 ro
+- 80
+: 81 2 3 Chuu 
+: 85 2 3 chuu 
+: 89 1 3 ra
+: 91 1 5 bu
+: 93 1 7 rii 
+: 95 1 10 mu
+: 97 2 12 ni
+: 101 1 10 mu
+: 103 2 12 ni 
+: 107 1 10 mu
+: 109 1 7 ra
+: 111 1 5 mu
+: 113 1 3 ra
+- 114
+: 117 2 3 Purin 
+: 121 2 3 purin 
+: 125 2 3 boron 
+: 129 1 5 nu
+: 131 1 5 ru
+: 133 1 5 ru 
+: 135 2 7 re
+: 139 1 5 ro
+: 141 1 7 re
+: 143 1 5 ro
+- 144
+: 145 2 3 Chuu 
+: 149 2 3 chuu 
+: 153 1 3 ra
+: 155 1 5 bu
+: 157 1 7 rii 
+: 159 1 10 mu
+: 161 2 12 ni
+: 165 1 10 mu
+: 167 2 12 ni 
+: 171 1 10 mu
+: 173 1 7 ra
+: 175 1 5 mu
+: 177 1 3 ra
+- 178
+: 181 2 3 Purin 
+: 185 2 3 purin 
+: 189 2 3 boron 
+: 193 1 5 nu
+: 195 1 5 ru
+: 197 1 5 ru 
+: 199 2 7 re
+: 203 1 5 ro
+: 205 1 7 re
+: 207 1 5 ro
+- 208
+: 209 2 3 Chuu 
+: 213 2 3 chuu 
+: 217 1 3 ra
+: 219 1 5 bu
+: 221 1 7 rii 
+: 223 1 10 mu
+: 225 2 12 ni
+: 229 1 10 mu
+: 231 2 12 ni 
+: 235 1 10 mu
+: 237 1 7 ra
+: 239 1 5 mu
+: 241 1 3 ra
+- 242
+: 245 2 3 Purin 
+: 249 2 3 purin 
+: 253 2 3 boron 
+: 257 1 5 nu
+: 259 1 5 ru
+: 261 1 5 ru 
+: 263 2 7 re
+: 267 1 5 ro
+: 269 1 7 re
+: 271 1 5 ro
+- 272
+F 273 1 0 Ano 
+F 275 1 0 mu
+F 277 1 0 su
+F 279 1 0 me 
+F 281 1 0 ro
+F 283 1 0 kkun
+F 285 1 0 roo
+F 287 1 0 ru 
+F 289 1 0 pan
+- 290
+F 293 1 0 Su
+F 295 1 0 to 
+F 297 1 0 hi
+F 299 1 0 ppa
+F 301 1 0 gashi 
+F 303 1 0 te 
+F 305 2 0 burn! 
+F 310 2 0 suke
+F 314 2 0 suke 
+F 317 1 0 no 
+F 319 1 0 bo
+F 321 3 0 dy
+- 324
+F 335 3 0 Sei
+F 339 1 0 he
+F 341 1 0 ki 
+F 343 1 0 i
+F 345 1 0 na
+F 347 1 0 me 
+F 349 1 0 ne e 
+F 351 2 0 su
+F 355 1 0 too
+F 357 1 0 kaa
+- 358
+F 359 1 0 To
+F 361 1 0 mo
+F 363 1 0 do
+F 365 1 0 mo 
+F 367 3 0 mosshu 
+F 373 2 0 ko
+F 376 1 0 kka
+F 378 1 0 ra 
+F 382 9 0 start?
+- 391
+F 398 1 0 Bi
+F 400 2 0 nii
+F 403 1 0 ru 
+F 406 1 0 bi
+F 408 2 0 nii
+F 411 1 0 ru 
+F 414 1 0 bi
+F 416 2 0 nii
+F 419 1 0 ru 
+F 421 1 0 bi
+F 423 2 0 nii
+F 426 1 0 ru
+- 427
+F 429 1 0 Bi
+F 431 2 0 nii
+F 434 1 0 ru 
+F 437 1 0 bi
+F 439 2 0 nii
+F 442 1 0 ru 
+F 445 5 0 Sex!
+- 450
+F 461 1 0 A
+F 463 2 0 ru
+F 466 1 0 mi 
+F 469 1 0 a
+F 471 2 0 ru
+F 474 1 0 mi 
+F 477 1 0 a
+F 479 2 0 ru
+F 482 1 0 mi 
+F 484 1 0 a
+F 486 2 0 ru
+F 489 1 0 mi
+- 490
+F 492 1 0 A
+F 494 2 0 ru
+F 497 1 0 mi 
+F 499 1 0 a
+F 501 1 0 ru i
+F 503 1 0 mi 
+F 505 1 0 ro
+F 507 6 0 kku
+- 513
+: 523 2 10 Bitch 
+: 527 2 8 you! 
+: 531 2 10 get 
+: 535 2 8 you! 
+: 539 2 10 too
+: 543 1 10 ri
+: 545 1 10 ma
+- 546
+: 549 2 8 Chuu
+: 553 1 8 nen 
+: 555 2 10 os
+: 559 2 10 san 
+: 563 1 10 ren
+: 567 6 8 chuu
+- 573
+: 586 2 10 Nen
+: 590 2 8 juu 
+: 594 2 10 rin
+: 598 2 8 juu 
+: 602 2 10 risu
+: 606 1 10 to
+: 608 2 10 ra 
+: 612 1 8 chuu
+- 613
+: 616 1 8 De 
+: 618 2 10 ga su
+: 622 2 10 to 
+: 626 1 10 ei
+: 630 6 8 juu
+- 636
+* 650 2 10 Bitch 
+* 654 2 8 you! 
+* 658 2 10 get 
+* 662 2 8 you! 
+* 666 2 10 too
+* 670 1 10 ri
+* 672 1 10 ma
+- 673
+* 676 2 8 Chuu
+* 680 1 8 nen 
+* 682 2 10 os
+* 686 2 10 san 
+* 690 1 10 ren
+* 694 6 8 chuu
+- 700
+: 714 2 10 Nen
+: 718 2 8 juu 
+: 722 2 10 rin
+: 726 2 8 juu 
+: 730 2 10 risu
+: 734 1 10 to
+: 736 2 10 ra 
+: 740 1 8 chuu
+- 741
+: 744 1 8 De 
+: 746 2 10 ga su
+: 750 2 10 to 
+: 754 1 10 ei
+: 758 6 8 juu
+- 764
+F 777 2 0 Uesu
+F 781 1 0 to 
+F 783 2 0 ho
+F 787 1 0 so
+F 789 1 0 mi 
+F 791 1 0 no 
+F 793 2 0 masu
+F 797 1 0 taa 
+F 799 2 0 piisu
+- 801
+F 804 1 0 E
+F 806 1 0 su
+F 808 1 0 te, 
+F 810 2 0 hosu
+F 814 1 0 to 
+F 816 1 0 ku
+F 818 1 0 ra
+F 820 1 0 bu 
+F 822 1 0 fu
+F 826 4 0 metsu
+- 830
+F 838 2 0 En
+F 842 2 0 jo 
+F 846 1 0 suto
+F 848 1 0 re
+F 851 1 0 su 
+F 853 1 0 o
+F 855 1 0 tsu
+F 857 1 0 to
+F 859 1 0 me 
+F 862 1 0 suto
+F 864 2 0 re
+F 867 1 0 su 
+F 869 1 0 yuu 
+F 871 1 0 to
+- 872
+F 874 1 0 Mesu 
+F 877 1 0 to 
+F 879 1 0 wa 
+F 881 1 0 ei
+F 883 1 0 kyuu 
+F 885 1 0 no 
+F 887 4 0 reesu
+- 891
+F 901 2 0 Jasu
+F 905 3 0 tisu
+F 911 2 0 gee
+F 914 2 0 mu? 
+F 917 1 0 se
+F 919 1 0 i
+F 921 2 0 yo
+F 925 1 0 ku 
+F 927 2 0 slave
+- 929
+F 932 2 0 O
+F 937 3 0 sae 
+F 943 3 0 kire 
+F 948 1 0 nu 
+F 950 1 0 yo
+F 952 1 0 ku
+F 954 5 0 bou
+- 959
+F 965 1 0 So
+F 967 1 0 no 
+F 969 2 0 suu
+F 973 1 0 tsu
+F 975 2 0 kee
+F 978 1 0 su 
+F 981 1 0 ni 
+F 983 1 0 wa 
+F 985 2 0 roo
+F 989 1 0 pu 
+F 991 1 0 no
+- 992
+F 995 1 0 Ta
+F 997 1 0 ba 
+F 999 1 0 to 
+F 1001 2 0 ga
+F 1005 1 0 mu 
+F 1007 2 0 tee
+F 1011 1 0 pu 
+F 1013 1 0 to 
+F 1015 1 0 ka
+F 1017 2 0 ttaa
+F 1021 3 0 nai
+F 1025 3 0 fu
+- 1028
+: 1033 2 3 Chuu 
+: 1037 2 3 chuu 
+: 1041 1 3 ra
+: 1043 1 5 bu
+: 1045 1 7 rii 
+: 1047 1 10 mu
+: 1049 2 12 ni
+: 1053 1 10 mu
+: 1055 2 12 ni 
+: 1059 1 10 mu
+: 1061 1 7 ra
+: 1063 1 5 mu
+: 1065 1 3 ra
+- 1066
+: 1069 2 3 Purin 
+: 1073 2 3 purin 
+: 1077 2 3 boron 
+: 1081 1 5 nu
+: 1083 1 5 ru
+: 1085 1 5 ru 
+: 1087 2 7 re
+: 1091 1 5 ro
+: 1093 1 7 re
+: 1095 1 5 ro
+- 1096
+* 1097 2 3 Chuu 
+* 1101 2 3 chuu 
+* 1105 1 3 ra
+* 1107 1 5 bu
+* 1109 1 7 rii 
+* 1111 1 10 mu
+* 1113 2 12 ni
+* 1117 1 10 mu
+* 1119 2 12 ni 
+* 1123 1 10 mu
+* 1125 1 7 ra
+* 1127 1 5 mu
+* 1129 1 3 ra
+- 1130
+: 1133 2 3 Purin 
+: 1137 2 3 purin 
+: 1141 2 3 boron 
+: 1145 1 5 nu
+: 1147 1 5 ru
+: 1149 1 5 ru 
+: 1151 2 7 re
+: 1155 1 5 ro
+: 1157 1 7 re
+: 1159 1 5 ro
+- 1160
+: 1161 2 3 Chuu 
+: 1165 2 3 chuu 
+: 1169 1 3 ra
+: 1171 1 5 bu
+: 1173 1 7 rii 
+: 1175 1 10 mu
+: 1177 2 12 ni
+: 1181 1 10 mu
+: 1183 2 12 ni 
+: 1187 1 10 mu
+: 1189 1 7 ra
+: 1191 1 5 mu
+: 1193 1 3 ra
+- 1194
+: 1197 2 3 Purin 
+: 1201 2 3 purin 
+: 1205 2 3 boron 
+: 1209 1 5 nu
+: 1211 1 5 ru
+: 1213 1 5 ru 
+: 1215 2 7 re
+: 1219 1 5 ro
+: 1221 1 7 re
+: 1223 1 5 ro
+- 1224
+: 1225 2 3 Chuu 
+: 1229 2 3 chuu 
+: 1233 1 3 ra
+: 1235 1 5 bu
+: 1237 1 7 rii 
+: 1239 1 10 mu
+: 1241 2 12 ni
+: 1245 1 10 mu
+: 1247 2 12 ni 
+: 1251 1 10 mu
+: 1253 1 7 ra
+: 1255 1 5 mu
+: 1257 1 3 ra
+- 1258
+: 1261 2 3 Purin 
+: 1265 2 3 purin 
+: 1269 2 3 boron 
+: 1273 1 5 nu
+: 1275 1 5 ru
+: 1277 1 5 ru 
+: 1279 2 7 re
+: 1283 1 5 ro
+: 1285 1 7 re
+: 1287 1 5 ro
+- 1288
+F 1289 2 0 Ha
+F 1293 1 0 da
+F 1295 2 0 ka 
+F 1299 1 0 shika 
+F 1301 1 0 mi 
+F 1303 1 0 te e! 
+F 1305 3 0 you
+F 1309 1 0 su 
+F 1311 1 0 ta
+F 1313 1 0 shi
+F 1315 1 0 ka
+F 1317 1 0 me 
+F 1319 1 0 te e!
+- 1320
+F 1321 2 0 Mu
+F 1325 1 0 su
+F 1327 1 0 ko 
+F 1329 1 0 shi
+F 1331 2 0 koshi
+F 1334 1 0 ko 
+F 1336 4 0 life
+- 1340
+F 1352 3 0 Sei
+F 1356 1 0 he
+F 1358 1 0 ki 
+F 1360 1 0 i
+F 1362 1 0 na
+F 1364 1 0 me 
+F 1366 1 0 ne e
+- 1367
+F 1369 1 0 Su
+F 1372 1 0 too
+F 1374 1 0 kaa 
+F 1376 1 0 to
+F 1378 1 0 mo
+F 1380 1 0 do
+F 1382 1 0 mo 
+F 1384 3 0 mosshu
+- 1387
+F 1390 2 0 Ko
+F 1393 1 0 kka
+F 1395 1 0 ra 
+F 1399 9 0 start?
+- 1408
+F 1415 1 0 Bi
+F 1417 2 0 nii
+F 1420 1 0 ru 
+F 1423 1 0 bi
+F 1425 2 0 nii
+F 1428 1 0 ru 
+F 1431 1 0 bi
+F 1433 2 0 nii
+F 1436 1 0 ru 
+F 1438 1 0 bi
+F 1440 2 0 nii
+F 1443 1 0 ru
+- 1444
+F 1446 1 0 Bi
+F 1448 2 0 nii
+F 1451 1 0 ru 
+F 1454 1 0 bi
+F 1456 2 0 nii
+F 1459 1 0 ru 
+F 1462 5 0 Sex!
+- 1467
+F 1476 1 0 Po
+F 1478 2 0 riesu
+F 1481 1 0 teru 
+F 1485 1 0 po
+F 1487 2 0 riesu
+F 1490 1 0 teru 
+F 1493 1 0 po
+F 1495 2 0 riesu
+F 1498 1 0 teru
+- 1499
+F 1502 1 0 Po
+F 1504 2 0 riesu
+F 1507 1 0 teru 
+F 1510 1 0 po
+F 1512 2 0 riesu
+F 1515 1 0 teru 
+F 1517 1 0 so
+F 1519 1 0 ~
+F 1521 1 0 ~
+F 1523 1 0 bo
+F 1525 6 0 ro
+- 1531
+: 1539 2 10 Bitch 
+: 1543 2 8 you! 
+: 1547 2 10 get 
+: 1551 2 8 you! 
+: 1555 2 10 too
+: 1559 1 10 ri
+: 1561 1 10 ma
+- 1562
+: 1565 2 8 Chuu
+: 1569 1 8 nen 
+: 1571 2 10 os
+: 1575 2 10 san 
+: 1579 1 10 ren
+: 1583 6 8 chuu
+- 1589
+* 1602 2 10 Nen
+* 1606 2 8 juu 
+* 1610 2 10 rin
+* 1614 2 8 juu 
+* 1618 2 10 risu
+* 1622 1 10 to
+* 1624 2 10 ra 
+* 1628 1 8 chuu
+- 1629
+* 1632 1 8 De 
+* 1634 2 10 ga su
+* 1638 2 10 to 
+* 1642 1 10 ei
+* 1646 6 8 juu
+- 1652
+: 1666 2 10 Bitch 
+: 1670 2 8 you! 
+: 1674 2 10 get 
+: 1678 2 8 you! 
+: 1682 2 10 too
+: 1686 1 10 ri
+: 1688 1 10 ma
+- 1689
+: 1692 2 8 Chuu
+: 1696 1 8 nen 
+: 1698 2 10 os
+: 1702 2 10 san 
+: 1706 1 10 ren
+: 1710 6 8 chuu
+- 1716
+: 1730 2 10 Nen
+: 1734 2 8 juu 
+: 1738 2 10 rin
+: 1742 2 8 juu 
+: 1746 2 10 risu
+: 1750 1 10 to
+: 1752 2 10 ra 
+: 1756 1 8 chuu
+- 1757
+: 1760 1 8 De 
+: 1762 2 10 ga su
+: 1766 2 10 to 
+: 1770 1 10 ei
+: 1774 6 8 juu
+- 1780
+F 1794 2 0 Uesu
+F 1798 1 0 to 
+F 1800 2 0 ho
+F 1804 1 0 so
+F 1806 1 0 mi 
+F 1808 1 0 no 
+F 1810 2 0 masu
+F 1814 1 0 taa 
+F 1816 2 0 piisu
+- 1818
+F 1821 1 0 E
+F 1823 1 0 su
+F 1825 1 0 te, 
+F 1827 2 0 hosu
+F 1831 1 0 to 
+F 1833 1 0 ku
+F 1835 1 0 ra
+F 1837 1 0 bu 
+F 1839 1 0 fu
+F 1843 4 0 metsu
+- 1847
+F 1854 2 0 En
+F 1858 2 0 jo 
+F 1862 1 0 suto
+F 1864 1 0 re
+F 1867 1 0 su 
+F 1869 1 0 o
+F 1871 1 0 tsu
+F 1873 1 0 to
+F 1875 1 0 me 
+F 1878 1 0 suto
+F 1880 2 0 re
+F 1883 1 0 su 
+F 1885 1 0 yuu 
+F 1887 1 0 to
+- 1888
+F 1890 1 0 Mesu 
+F 1893 1 0 to 
+F 1895 1 0 wa 
+F 1897 1 0 ei
+F 1899 1 0 kyuu 
+F 1901 1 0 no 
+F 1903 4 0 reesu
+- 1907
+F 1917 2 0 Jasu
+F 1921 3 0 tisu
+F 1927 2 0 gee
+F 1930 2 0 mu? 
+F 1933 1 0 se
+F 1935 1 0 i
+F 1937 2 0 yo
+F 1941 1 0 ku 
+F 1943 2 0 slave
+- 1945
+F 1948 2 0 O
+F 1953 3 0 sae 
+F 1959 3 0 kire 
+F 1964 1 0 nu 
+F 1966 1 0 yo
+F 1968 1 0 ku
+F 1970 5 0 bou
+- 1975
+F 1981 1 0 So
+F 1983 1 0 no 
+F 1985 2 0 suu
+F 1989 1 0 tsu
+F 1991 2 0 kee
+F 1994 1 0 su 
+F 1997 1 0 ni 
+F 1999 1 0 wa 
+F 2001 2 0 roo
+F 2005 1 0 pu 
+F 2007 1 0 no
+- 2008
+F 2011 1 0 Ta
+F 2013 1 0 ba 
+F 2015 1 0 to 
+F 2017 2 0 ga
+F 2021 1 0 mu 
+F 2023 2 0 tee
+F 2027 1 0 pu 
+F 2029 1 0 to 
+F 2031 1 0 ka
+F 2033 2 0 ttaa
+F 2037 3 0 nai
+F 2041 3 0 fu
+- 2044
+: 2050 2 3 Chuu 
+: 2054 2 3 chuu 
+: 2058 1 3 ra
+: 2060 1 5 bu
+: 2062 1 7 rii 
+: 2064 1 10 mu
+: 2066 2 12 ni
+: 2070 1 10 mu
+: 2072 2 12 ni 
+: 2076 1 10 mu
+: 2078 1 7 ra
+: 2080 1 5 mu
+: 2082 1 3 ra
+- 2083
+: 2085 2 3 Purin 
+: 2089 2 3 purin 
+: 2093 2 3 boron 
+: 2097 1 5 nu
+: 2099 1 5 ru
+: 2101 1 5 ru 
+: 2103 2 7 re
+: 2107 1 5 ro
+: 2109 1 7 re
+: 2111 1 5 ro
+- 2112
+: 2113 2 3 Chuu 
+: 2117 2 3 chuu 
+: 2121 1 3 ra
+: 2123 1 5 bu
+: 2125 1 7 rii 
+: 2127 1 10 mu
+: 2129 2 12 ni
+: 2133 1 10 mu
+: 2135 2 12 ni 
+: 2139 1 10 mu
+: 2141 1 7 ra
+: 2143 1 5 mu
+: 2145 1 3 ra
+- 2146
+: 2149 2 3 Purin 
+: 2153 2 3 purin 
+: 2157 2 3 boron 
+: 2161 1 5 nu
+: 2163 1 5 ru
+: 2165 1 5 ru 
+: 2167 2 7 re
+: 2171 1 5 ro
+: 2173 1 7 re
+: 2175 1 5 ro
+- 2176
+: 2178 2 3 Chuu 
+: 2182 2 3 chuu 
+: 2186 1 3 ra
+: 2188 1 5 bu
+: 2190 1 7 rii 
+: 2192 1 10 mu
+: 2194 2 12 ni
+: 2198 1 10 mu
+: 2200 2 12 ni 
+: 2204 1 10 mu
+: 2206 1 7 ra
+: 2208 1 5 mu
+: 2210 1 3 ra
+- 2211
+: 2213 2 3 Purin 
+: 2217 2 3 purin 
+: 2221 2 3 boron 
+: 2225 1 5 nu
+: 2227 1 5 ru
+: 2229 1 5 ru 
+: 2231 2 7 re
+: 2235 1 5 ro
+: 2237 1 7 re
+: 2239 1 5 ro
+- 2240
+: 2241 2 3 Chuu 
+: 2245 2 3 chuu 
+: 2249 1 3 ra
+: 2251 1 5 bu
+: 2253 1 7 rii 
+: 2255 1 10 mu
+: 2257 2 12 ni
+: 2261 1 10 mu
+: 2263 2 12 ni 
+: 2267 1 10 mu
+: 2269 1 7 ra
+: 2271 1 5 mu
+: 2273 1 3 ra
+- 2274
+: 2277 2 3 Purin 
+: 2281 2 3 purin 
+: 2285 2 3 boron 
+: 2289 1 5 nu
+: 2291 1 5 ru
+: 2293 1 5 ru 
+: 2295 2 7 re
+: 2299 1 5 ro
+: 2301 1 7 re
+: 2303 1 5 ro 
+: 2305 20 3 eh
+- 2325 2344
+- 2344
+F 2361 4 0 Hai
+- 2365 2611
+- 2611
+: 2628 2 8 Dai
+: 2632 2 8 gaku
+: 2636 2 8 sei 
+: 2640 2 10 ga 
+: 2644 3 7 i
+: 2648 3 5 i 
+: 2653 3 5 na
+- 2656
+: 2662 3 7 Kou
+: 2666 3 7 kou
+: 2670 3 7 sei 
+: 2674 4 10 mo 
+: 2679 3 12 i
+: 2683 3 10 i 
+: 2687 4 12 na
+- 2691
+: 2696 2 3 Chuu
+: 2700 2 3 gaku
+: 2704 2 3 sei 
+: 2708 3 3 mo 
+: 2713 3 5 i
+: 2717 2 3 i 
+: 2721 2 5 ke
+: 2725 2 3 do 
+: 2729 16 7 ne
+- 2745 2746
+- 2746
+* 2763 2 12 Shou
+* 2767 2 12 gaku
+* 2771 2 12 sei 
+: 2775 2 12 mo 
+: 2779 2 10 i
+: 2783 3 7 i 
+: 2788 4 7 na
+- 2792
+: 2797 2 7 To
+: 2800 1 7 ro
+: 2802 1 7 ke 
+: 2805 2 7 sou 
+: 2809 2 7 de 
+: 2813 3 5 i
+: 2817 2 3 i 
+: 2821 5 3 na
+- 2826
+: 2830 3 3 You
+: 2834 3 3 chien 
+: 2839 2 3 ji 
+: 2843 3 12 mo 
+: 2847 3 10 i
+: 2851 2 7 i 
+: 2855 2 5 ke
+: 2859 17 3 do
+- 2876 2880
+- 2880
+: 2897 2 3 Chuu 
+: 2901 2 3 chuu 
+: 2905 1 3 ra
+: 2907 1 5 bu
+: 2909 1 7 rii 
+: 2911 1 10 mu
+: 2913 2 12 ni
+: 2917 1 10 mu
+: 2919 2 12 ni 
+: 2923 1 10 mu
+: 2925 1 7 ra
+: 2927 1 5 mu
+: 2929 1 3 ra
+- 2930
+: 2933 2 3 Purin 
+: 2937 2 3 purin 
+: 2941 2 3 boron 
+: 2945 1 5 nu
+: 2947 1 5 ru
+: 2949 1 5 ru 
+: 2951 2 7 re
+: 2955 1 5 ro
+: 2957 1 7 re
+: 2959 1 5 ro
+- 2960
+: 2961 2 3 Chuu 
+: 2965 2 3 chuu 
+: 2969 1 3 ra
+: 2971 1 5 bu
+: 2973 1 7 rii 
+: 2975 1 10 mu
+: 2977 2 12 ni
+: 2981 1 10 mu
+: 2983 2 12 ni 
+: 2987 1 10 mu
+: 2989 1 7 ra
+: 2991 1 5 mu
+: 2993 1 3 ra
+- 2994
+: 2997 2 3 Purin 
+: 3001 2 3 purin 
+: 3005 2 3 boron 
+: 3009 1 5 nu
+: 3011 1 5 ru
+: 3013 1 5 ru 
+: 3015 2 7 re
+: 3019 1 5 ro
+: 3021 1 7 re
+: 3023 1 5 ro
+- 3024
+: 3025 2 3 Chuu 
+: 3029 2 3 chuu 
+: 3033 1 3 ra
+: 3035 1 5 bu
+: 3037 1 7 rii 
+: 3039 1 10 mu
+: 3041 2 12 ni
+: 3045 1 10 mu
+: 3047 2 12 ni 
+: 3051 1 10 mu
+: 3053 1 7 ra
+: 3055 1 5 mu
+: 3057 1 3 ra
+- 3058
+: 3061 2 3 Purin 
+: 3065 2 3 purin 
+: 3069 2 3 boron 
+: 3073 1 5 nu
+: 3075 1 5 ru
+: 3077 1 5 ru 
+: 3079 2 7 re
+: 3083 1 5 ro
+: 3085 1 7 re
+: 3087 1 5 ro
+- 3088
+: 3089 2 3 Chuu 
+: 3093 2 3 chuu 
+: 3097 1 3 ra
+: 3099 1 5 bu
+: 3101 1 7 rii 
+: 3103 1 10 mu
+: 3105 2 12 ni
+: 3109 1 10 mu
+: 3111 2 12 ni 
+: 3115 1 10 mu
+: 3117 1 7 ra
+: 3119 1 5 mu
+: 3121 1 3 ra
+- 3122
+: 3125 2 3 Purin 
+: 3129 2 3 purin 
+: 3133 2 3 boron 
+: 3137 1 5 nu
+: 3139 1 5 ru
+: 3141 1 5 ru 
+: 3143 2 7 re
+: 3147 1 5 ro
+: 3149 1 7 re
+: 3151 1 5 ro
+- 3152
+: 3153 2 3 Chuu 
+: 3157 2 3 chuu 
+: 3161 1 3 ra
+: 3163 1 5 bu
+: 3165 1 7 rii 
+: 3167 1 10 mu
+: 3169 2 12 ni
+: 3173 1 10 mu
+: 3175 2 12 ni 
+: 3179 1 10 mu
+: 3181 1 7 ra
+: 3183 1 5 mu
+: 3185 2 3 ra
+E

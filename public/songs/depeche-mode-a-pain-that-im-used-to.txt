@@ -1,0 +1,392 @@
+#ARTIST:Depeche Mode
+#TITLE:A Pain that I'm used to
+#CREATOR:mustangfred
+#BPM:219,83
+#YEAR:2005
+#VIDEO:v=G2iGtRseS7E
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:23613,481826866213
+#ALLKARAOKE_ID:depeche-mode-a-pain-that-im-used-to
+#ALLKARAOKE_SID:4937
+#ALLKARAOKE_LASTUPDATE:2025-08-19T07:36:00.072Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=A%20Pain%20that%20I%27m%20used%20to
+#ALLKARAOKE_VOLUME:0,5
+#COVER:Depeche Mode - A Pain that I'm used to.jpg
+#MP3:Depeche Mode - A Pain that I'm used to.mp3
+#MEDLEYSTARTBEAT:717
+#MEDLEYENDBEAT:1027
+: 15 2 2 I'm 
+: 19 1 4 not 
+: 23 7 5 sure 
+: 32 2 2 what 
+: 35 3 4 I'm 
+: 40 2 5 look
+: 44 1 4 ing 
+: 48 5 2 for 
+: 56 3 5 an
+: 60 3 4 y
+: 64 3 2 more
+- 67
+: 80 2 2 I 
+: 84 2 4 just 
+: 88 6 5 know 
+: 96 2 2 that 
+: 100 2 4 I'm 
+: 104 2 5 hard
+: 108 2 5 er 
+: 112 2 2 to 
+* 116 2 5 con
+* 120 2 8 sole
+* 124 2 7 ~
+* 128 2 5 ~
+* 132 2 2 ~
+- 134
+: 146 3 2 I 
+: 150 1 4 don't 
+* 154 4 5 see
+: 159 1 2 ~ 
+: 162 2 2 who 
+: 166 1 4 I'm 
+: 170 3 5 try
+: 174 2 5 ing 
+: 178 1 4 to 
+: 180 2 2 be 
+: 183 1 4 in
+: 187 2 5 stead 
+: 190 2 4 of 
+: 195 2 2 me
+- 197
+: 211 1 2 But 
+: 215 1 4 the 
+: 220 3 5 key
+: 224 2 2 ~ 
+: 227 2 2 is 
+: 231 1 4 a 
+: 236 1 5 ques
+: 239 3 4 tion 
+: 244 1 2 of 
+: 247 2 4 con
+: 252 4 8 trol
+: 257 2 7 ~
+: 260 3 5 ~
+: 264 2 2 ~
+- 266 521
+- 521
+: 536 3 2 Can 
+: 540 1 4 you 
+: 545 4 5 say
+: 550 1 2 ~ 
+: 553 1 2 what 
+: 557 1 4 you're 
+: 561 3 5 try
+: 565 1 5 ing 
+: 569 1 4 to 
+: 571 3 2 play
+- 574
+: 577 3 5 an
+: 581 3 4 y
+: 585 3 2 way
+- 588
+: 602 2 2 I 
+: 606 1 4 just 
+: 610 4 5 pay
+: 615 1 2 ~ 
+: 618 3 2 while 
+: 622 1 4 you're
+- 623
+: 626 2 5 break
+: 630 3 4 ing 
+: 634 3 2 all 
+: 638 2 4 the 
+: 642 4 8 rules
+: 647 2 7 ~
+: 650 2 5 ~
+: 653 4 2 ~
+- 657
+: 667 2 2 All 
+: 670 1 4 the 
+* 675 5 5 signs 
+: 683 3 2 that 
+: 687 1 4 I 
+: 691 6 5 find 
+: 699 2 2 have 
+: 703 3 4 been 
+: 707 2 5 un
+: 711 3 4 der
+: 716 3 2 lined
+- 719
+: 732 3 2 Dev
+: 736 1 4 ils 
+: 740 7 5 thrive 
+: 749 1 2 on 
+: 752 1 4 the 
+: 756 6 5 drive 
+: 764 3 2 that 
+: 768 1 4 is 
+: 773 3 8 fu
+: 777 3 7 ~
+: 781 2 5 ~
+: 784 2 2 eled
+- 786
+: 796 3 2 All 
+: 801 1 5 this 
+* 804 3 7 run
+* 808 4 9 ning 
+: 813 2 7 a
+: 817 9 5 round
+- 826
+: 829 2 2 Well 
+: 833 1 5 it's 
+: 836 3 7 get
+: 840 3 9 ting 
+: 844 2 7 me 
+: 848 10 5 down 
+: 860 2 2 just
+- 862
+: 868 2 7 give 
+: 873 2 9 me 
+: 876 1 7 a 
+: 881 6 5 pain 
+: 889 2 2 that 
+: 893 4 5 I'm 
+* 900 4 9 used 
+* 908 5 5 to
+- 913
+: 924 3 2 I 
+: 929 2 5 don't 
+: 932 2 7 need 
+: 936 1 9 to 
+: 941 2 7 be
+: 944 9 5 lieve
+- 953
+: 956 3 2 All 
+: 961 1 5 the 
+: 965 1 7 dreams 
+: 969 1 9 you 
+: 973 1 7 con
+: 976 7 5 ceive
+- 983
+: 989 1 2 You 
+: 992 1 5 just 
+: 997 1 7 need 
+: 1000 2 9 to 
+: 1004 1 7 a
+: 1009 3 5 chieve
+- 1012
+: 1017 1 2 Some
+: 1020 1 5 thing 
+: 1024 1 2 that 
+* 1029 2 8 rings 
+: 1036 6 5 true
+- 1042 1353
+- 1353
+: 1368 3 2 There's 
+: 1373 2 4 a 
+: 1377 6 5 hole 
+: 1384 4 2 in 
+: 1389 1 4 your 
+* 1394 6 5 soul 
+: 1402 1 2 like 
+: 1406 2 4 an 
+: 1410 3 5 an
+: 1414 2 4 i
+: 1418 5 2 mal
+- 1423
+: 1434 2 2 With 
+: 1438 2 4 no 
+: 1442 6 5 con
+: 1451 1 2 science, 
+: 1455 1 4 re
+: 1458 6 5 pen
+: 1467 1 2 tance, 
+: 1471 1 4 oh 
+: 1474 6 8 no
+: 1481 2 7 ~
+: 1484 2 5 ~
+: 1487 8 2 ~
+- 1495
+: 1499 2 2 Close 
+: 1504 2 4 your 
+: 1507 6 5 eyes
+- 1513
+: 1517 2 2 pay 
+: 1520 1 4 the 
+: 1524 5 5 price 
+: 1532 2 2 for 
+: 1536 2 4 your 
+: 1540 3 5 par
+: 1544 2 4 a
+: 1548 6 2 dise
+- 1554
+: 1565 3 2 Dev
+: 1569 1 4 ils 
+: 1573 6 5 feed 
+: 1580 3 2 on 
+: 1585 1 4 the 
+: 1589 5 5 seeds 
+: 1597 2 2 of 
+: 1601 1 4 the 
+* 1605 4 8 soul
+* 1610 3 7 ~
+* 1614 2 5 ~
+* 1617 7 2 ~
+- 1624 1871
+- 1871
+: 1886 1 2 I 
+: 1890 2 2 can't 
+: 1894 1 4 con
+: 1898 6 5 ceal 
+: 1906 3 2 what 
+: 1910 2 4 I 
+: 1915 5 5 feel, 
+: 1922 3 2 what 
+: 1926 3 4 I 
+: 1930 4 5 know 
+: 1935 1 4 is 
+: 1940 2 2 real
+- 1942
+: 1955 3 2 No 
+: 1959 1 4 mis
+: 1963 6 5 tak
+: 1972 1 2 ing 
+: 1976 1 4 the 
+: 1980 5 5 fak
+: 1988 2 2 ing, 
+: 1992 1 4 I 
+: 1997 4 8 care
+: 2002 2 7 ~
+: 2005 2 5 ~
+: 2008 5 2 ~
+- 2013
+: 2020 3 2 With 
+: 2024 1 4 a 
+: 2028 5 5 pra
+: 2034 2 4 yer 
+: 2037 2 2 in 
+: 2040 4 4 the 
+: 2045 5 5 air 
+: 2052 4 2 I 
+: 2057 2 4 will 
+: 2061 2 5 leave 
+: 2065 1 4 it 
+: 2069 3 2 there
+- 2072
+: 2085 4 2 On 
+: 2090 1 4 a 
+: 2094 5 5 note 
+: 2102 3 2 full 
+: 2106 2 4 of 
+: 2110 5 5 hope 
+: 2118 2 2 not 
+: 2122 1 5 de
+: 2126 8 8 spair
+: 2135 2 7 ~
+: 2139 1 5 ~
+: 2142 1 2 ~
+- 2143
+: 2150 3 2 All 
+: 2154 1 4 this 
+: 2158 3 7 run
+: 2162 3 8 ning 
+: 2166 3 7 a
+: 2170 7 5 round
+- 2177
+: 2183 2 2 Well 
+: 2186 1 5 it's 
+* 2190 3 7 get
+: 2194 2 9 ting 
+: 2198 2 7 me 
+: 2202 6 5 down
+- 2208
+: 2214 2 2 Just 
+: 2222 2 7 give 
+: 2226 3 9 me 
+: 2230 1 7 a 
+: 2235 5 5 pain 
+: 2243 1 2 that 
+: 2246 3 5 I'm 
+: 2254 4 9 used 
+: 2262 4 5 to
+- 2266
+: 2279 2 2 I 
+: 2282 2 5 don't 
+: 2286 1 7 need 
+: 2290 1 9 to 
+: 2294 3 7 be
+: 2298 7 5 lieve
+- 2305
+: 2310 3 2 All 
+: 2314 1 5 the 
+: 2318 2 7 dreams 
+: 2323 1 9 you 
+: 2326 1 7 con
+: 2330 6 5 ceive
+- 2336
+: 2342 1 2 You 
+: 2346 1 5 just 
+: 2350 2 7 need 
+: 2354 2 9 to 
+: 2358 1 7 a
+: 2362 3 5 chieve
+- 2365
+: 2370 2 2 some
+: 2374 1 5 thing 
+: 2378 1 2 that 
+: 2382 4 8 rings 
+: 2390 4 5 true
+- 2394
+: 2406 2 2 All 
+: 2409 1 5 this 
+: 2414 3 7 run
+: 2418 2 9 ning 
+: 2422 3 7 a
+: 2426 8 5 round
+- 2434
+: 2438 2 2 Well 
+: 2442 1 5 it's 
+: 2446 3 7 get
+: 2450 2 9 ting 
+: 2454 2 7 me 
+: 2458 7 5 down
+- 2465
+: 2470 2 2 Just 
+: 2477 2 7 give 
+: 2482 2 9 me 
+: 2485 2 7 a 
+: 2490 5 5 pain 
+: 2498 2 2 that 
+: 2502 2 5 I'm 
+: 2509 4 9 used 
+: 2518 3 5 to
+- 2521
+: 2534 3 2 I 
+: 2538 2 5 don't 
+: 2542 2 7 need 
+: 2546 2 9 to 
+: 2549 3 7 be
+: 2554 7 5 lieve
+- 2561
+: 2566 2 2 All 
+: 2570 1 5 the 
+: 2574 2 7 dreams 
+: 2578 1 9 you 
+: 2582 1 7 con
+: 2586 6 5 ceive
+- 2592
+: 2598 1 2 You 
+: 2601 1 5 just 
+: 2606 2 7 need 
+: 2610 2 9 to 
+: 2614 1 7 a
+: 2618 3 5 chieve
+- 2621
+: 2626 1 2 Some
+: 2629 2 5 thing 
+: 2634 1 2 that 
+: 2637 4 8 rings 
+: 2645 5 5 true
+E
