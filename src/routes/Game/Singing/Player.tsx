@@ -42,7 +42,7 @@ export interface PlayerRef {
   pause: () => void;
   seekTo: (time: number) => void;
   setPlaybackSpeed: (speed: number) => void;
-  getCurrentTime?: () => Promise<milliseconds>;
+  getCurrentTime: () => Promise<milliseconds>;
   getDuration?: () => seconds;
 }
 

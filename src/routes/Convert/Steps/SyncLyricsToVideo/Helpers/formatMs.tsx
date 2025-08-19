@@ -10,11 +10,7 @@ const formatMs = (msec: number) => {
   const seconds = Math.floor(msec / 1000) - minutes * 60;
   const miliseconds = Math.floor(msec % 1000);
 
-  return (
-    <Pre>
-      {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}.{String(miliseconds).padStart(3, '0')}
-    </Pre>
-  );
+  return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}.${String(miliseconds).padStart(3, '0')}`;
 };
 
 const ytPlayerAdapter = (player: PlayerRef | YouTubePlayer): PlayerRef => {
@@ -24,6 +20,7 @@ const ytPlayerAdapter = (player: PlayerRef | YouTubePlayer): PlayerRef => {
       pause: () => player.pauseVideo(),
       seekTo: (timeSec: seconds) => player.seekTo(timeSec, true),
       setPlaybackSpeed: (rate) => player.setPlaybackRate(rate),
+      getCurrentTime: () => player.getCurrentTime(),
     };
   }
 
@@ -45,7 +42,7 @@ export const msec = (ms: number | undefined, player?: PlayerRef | YouTubePlayer 
             }
           : undefined
       }>
-      {formatMs(ms ?? 0)}
+      <Pre>{formatMs(ms ?? 0)}</Pre>
     </Button>
   </Tooltip>
 );

@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
-import { GAME_MODE, milliseconds, Note, seconds, SingSetup, Song } from 'interfaces';
+import { GAME_MODE, Note, seconds, SingSetup, Song } from 'interfaces';
 import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
@@ -92,7 +92,7 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
-  const [currentTime, setCurrentTime] = useState<milliseconds>(0);
+  //   const [currentTime, setCurrentTime] = useState<milliseconds>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
@@ -169,7 +169,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     const currentBeat = getCurrentBeat(await player.current!.getCurrentTime!(), beatLength, newSong.gap);
     const notesSections = newSong.tracks[0].sections.filter(isNotesSection);
     const targetSectionIndex = notesSections.filter((section) => section.start <= currentBeat).length - 1 + direction;
-    // if (targetSectionIndex < 0 || notesSections[targetSectionIndex] === undefined) return;
 
     const finalSectionIndex = Math.max(Math.min(targetSectionIndex, notesSections.length - 1), 0);
 
@@ -271,7 +270,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             width={playerWidth}
             height={playerHeight}
             ref={player}
-            onCurrentTimeUpdate={setCurrentTime}
+            // onCurrentTimeUpdate={setCurrentTime}
             effectsEnabled={false}
             singSetup={singSetup}
             onSongEnd={() => undefined}
@@ -283,7 +282,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           <>
             <AdjustPlayback
               player={player.current}
-              currentTime={currentTime}
+              //   currentTime={currentTime}
               playbackSpeed={playbackSpeed}
               setPlaybackSpeed={setPlaybackSpeed}
             />
@@ -365,7 +364,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <EditSection
               playbackSpeed={playbackSpeed}
               song={newSong}
-              currentTime={currentTime}
+              //   currentTime={currentTime}
               beatLength={beatLength}
               player={player.current}
               onRecordChange={setChangeRecords}

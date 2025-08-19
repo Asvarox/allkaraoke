@@ -8,6 +8,7 @@ import { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
 import formatMs from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import { fixDiacritics } from 'routes/Convert/Steps/utils/fixDiacritics';
 import isValidUltrastarTxtFormat from 'routes/Convert/Steps/utils/validateUltrastar';
+import { Pre } from '../Elements';
 
 export interface BasicDataEntity {
   sourceUrl: string;
@@ -116,7 +117,10 @@ export default function BasicData(props: Props) {
               <h4 className="py-3">{track.name ?? `Track #${index + 1}`}</h4>
               {track.sections.filter(isNotesSection).map((section) => (
                 <p key={section.start}>
-                  <span className="text-[0.75rem]"> [{formatMs(getSectionStartInMs(section, props.finalSong))}]</span>{' '}
+                  <span className="text-[0.75rem]">
+                    {' '}
+                    [<Pre>{formatMs(getSectionStartInMs(section, props.finalSong))}</Pre>]
+                  </span>{' '}
                   {section.notes.map((note) => note.lyrics).join('')}
                 </p>
               ))}

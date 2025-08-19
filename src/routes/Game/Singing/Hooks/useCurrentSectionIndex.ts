@@ -1,11 +1,22 @@
 import { Section } from 'interfaces';
-import { useMemo } from 'react';
+import { useEffect, useState } from 'react';
+import { PlayerRef } from '../Player';
 
-export default function useCurrentSectionIndex(sections: Section[], currentBeat: number) {
-  const wholeBeat = Math.floor(currentBeat);
-  return useMemo(
-    () =>
-      sections.findIndex((section, index) => {
+export default function useCurrentSectionIndex(
+  sections: Section[],
+  player: PlayerRef,
+  beatLength: number,
+  gap: number,
+) {
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(-1);
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      const currentTime = await player.getCurrentTime();
+      const currentBeat = (currentTime - gap) / beatLength;
+      const wholeBeat = Math.floor(currentBeat);
+
+      const sectionIndex = sections.findIndex((section, index) => {
         if (wholeBeat < 0) return true;
         if (wholeBeat < section.start) return false;
         if (index === sections.length - 1) return true;
@@ -13,7 +24,11 @@ export default function useCurrentSectionIndex(sections: Section[], currentBeat:
           return true;
         }
         return false;
-      }),
-    [wholeBeat, sections],
-  );
+      });
+      setCurrentSectionIndex(sectionIndex);
+    }, 50);
+    return () => clearInterval(interval);
+  }, [sections, player, beatLength, gap]);
+
+  return currentSectionIndex;
 }

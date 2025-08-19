@@ -13,7 +13,6 @@ import {
 } from '@mui/material';
 import { Song } from 'interfaces';
 import GameState from 'modules/GameEngine/GameState/GameState';
-import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import isNotesSection from 'modules/Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections, getSectionStartInMs } from 'modules/Songs/utils/notesSelectors';
 import { useEffect, useState } from 'react';
@@ -23,7 +22,6 @@ import { PlayerRef } from 'routes/Game/Singing/Player';
 
 interface Props {
   song: Song;
-  currentTime: number;
   beatLength: number;
   player: PlayerRef;
   playbackSpeed: number;
@@ -56,7 +54,6 @@ export type ChangeRecord = ChangeRecordDelete | ChangeRecordShift;
 
 export default function EditSection({
   song,
-  currentTime,
   beatLength,
   player,
   onRecordChange,
@@ -68,11 +65,10 @@ export default function EditSection({
   const [track, setTrack] = useState(0);
   const [selectedSection, setSelectedSection] = useState(-1);
   const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
-  const currentBeat = getCurrentBeat(currentTime, beatLength, song.gap);
 
   const sections = song.tracks[track].sections.filter(isNotesSection);
 
-  const currentSectionIndex = useCurrentSectionIndex(sections, currentBeat);
+  const currentSectionIndex = useCurrentSectionIndex(sections, player, beatLength, song.gap);
 
   const onSectionClick = (index: number) => {
     setSelectedSection(index);
