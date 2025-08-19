@@ -8,8 +8,6 @@ import {
   getFirstNoteFromSection,
   getFirstNoteStartFromSections,
   getLastNotesSection,
-  getSectionEnd,
-  getSectionStart,
 } from 'modules/Songs/utils/notesSelectors';
 import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
 import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
@@ -170,12 +168,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     if (!player.current) return;
     const currentBeat = getCurrentBeat(await player.current!.getCurrentTime!(), beatLength, newSong.gap);
     const notesSections = newSong.tracks[0].sections.filter(isNotesSection);
-    const currentSectionIndex = notesSections.findIndex(
-      (section) => getSectionStart(section) <= currentBeat && getSectionEnd(section) >= currentBeat,
-    );
-    if (currentSectionIndex === -1 || notesSections[currentSectionIndex + direction] === undefined) return;
+    const targetSectionIndex = notesSections.filter((section) => section.start <= currentBeat).length - 1 + direction;
+    // if (targetSectionIndex < 0 || notesSections[targetSectionIndex] === undefined) return;
 
-    seekToNote(notesSections[currentSectionIndex + direction].notes[0], padding);
+    const finalSectionIndex = Math.max(Math.min(targetSectionIndex, notesSections.length - 1), 0);
+
+    seekToNote(notesSections[finalSectionIndex].notes[0], padding);
   };
 
   const seekToNextSection = (padding?: seconds) => {
