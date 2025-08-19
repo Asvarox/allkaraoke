@@ -1,0 +1,468 @@
+#ARTIST:Stromae
+#TITLE:Santé
+#CREATOR:mustangfred
+#BPM:367,84
+#YEAR:2021
+#VIDEO:v=P3QS83ubhHE
+#GENRE:Pop
+#LANGUAGE:French
+#GAP:10613,53501522401
+#ALLKARAOKE_ID:stromae-sante
+#ALLKARAOKE_SID:4934
+#ALLKARAOKE_LASTUPDATE:2025-08-19T07:35:59.807Z
+#ALLKARAOKE_ARTISTORIGIN:BE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=Sant%C3%A9
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Stromae - Santé.mp3
+#COVER:Stromae - Santé.jpg
+#MEDLEYSTARTBEAT:1702
+#MEDLEYENDBEAT:2975
+: 25 1 4 À 
+: 30 1 4 ceux 
+: 33 2 4 qui 
+: 36 4 4 n'en 
+: 41 3 4 ont 
+* 49 9 9 pas
+- 58 126
+- 126
+: 151 1 2 À 
+: 156 1 2 ceux 
+: 161 2 2 qui 
+: 164 3 4 n'en 
+: 169 2 2 ont 
+: 176 4 0 pas
+- 180
+* 199 6 9 Ro
+* 209 7 4 sa, 
+: 232 5 0 Ro
+: 241 6 -1 sa
+- 247
+: 272 2 4 quand 
+: 277 2 4 on 
+: 283 2 4 fout 
+: 288 3 4 l'bor
+: 293 3 8 del, 
+: 301 2 4 tu 
+: 304 2 2 net
+: 309 4 0 toies
+- 313
+: 329 3 9 Et 
+: 336 7 4 toi, 
+: 361 6 0 Al
+: 369 8 2 bert
+- 377
+: 400 2 -1 quand 
+: 405 2 -1 on 
+: 411 3 -1 trinque, 
+: 418 1 -1 tu 
+: 420 3 2 ra
+: 426 3 0 masses 
+: 432 3 -1 les 
+: 436 6 0 verres
+- 442
+: 459 3 9 Cé
+: 464 7 4 line, 
+: 489 3 0 'ba
+: 496 6 -1 taire
+- 502 503
+- 503
+: 528 2 4 toi, 
+: 533 2 4 tu 
+: 539 3 4 t'prends 
+: 544 2 4 des 
+: 548 3 8 vestes 
+: 556 2 4 au 
+: 559 2 2 ves
+: 567 5 0 tiaire
+- 572
+: 585 6 0 Ar
+: 593 4 0 lette, 
+* 618 5 -3 ar
+* 625 4 -3 rête
+* 630 3 2 ~
+- 633
+: 652 2 -1 toi, 
+: 655 2 -1 la 
+: 662 3 -1 fête, 
+: 669 2 -1 tu 
+: 672 1 -1 la 
+: 677 2 2 passes 
+: 683 2 0 aux 
+: 688 2 -1 toi
+: 692 1 -3 lettes
+- 693
+: 697 1 5 Et 
+: 701 2 9 si 
+: 704 1 9 on 
+* 709 2 12 cé
+* 713 1 12 lé
+* 718 5 4 brait 
+: 727 1 4 ceux 
+: 731 2 4 qui 
+: 737 2 4 n'cé
+: 741 1 7 lè
+: 745 2 7 brent 
+: 751 4 5 pas
+- 755 775
+- 775
+: 800 2 11 Pour 
+* 804 4 14 une 
+: 813 2 14 fois
+: 816 2 8 ~ 
+: 821 2 9 j'ai
+: 825 1 9 me
+: 827 3 9 rais 
+: 832 2 9 le
+: 837 1 12 ver 
+: 840 2 12 mon
+: 844 1 4 ~ 
+: 846 7 4 verre 
+: 855 2 4 à 
+: 860 1 4 ceux 
+: 865 1 4 qui 
+: 868 3 7 n'en 
+: 873 1 7 ont
+: 876 1 2 ~ 
+: 880 3 2 pas
+- 883 894
+- 894
+: 919 2 2 À 
+: 924 1 2 ceux 
+: 929 2 2 qui 
+: 933 2 4 n'en 
+: 937 2 2 ont 
+: 944 3 0 pas
+- 947 1180
+- 1180
+R 1205 3 0 Quoi 
+R 1210 2 0 les 
+R 1215 3 0 bonnes 
+R 1220 3 0 ma
+R 1226 7 0 nières?
+- 1233
+R 1253 1 0 Pour
+R 1258 2 0 quoi 
+R 1264 1 0 j'fe
+R 1266 1 0 rais 
+R 1270 1 0 sem
+R 1275 1 0 blant?
+- 1276
+R 1280 1 0 Toute 
+R 1285 1 0 fa
+R 1291 2 0 çon, 
+R 1294 1 0 elle 
+R 1296 1 0 est 
+R 1301 3 0 pa
+R 1306 2 0 yée 
+R 1312 3 0 pour 
+R 1316 2 0 le 
+R 1324 3 0 faire
+- 1327
+R 1332 1 0 tu 
+R 1339 2 0 t'prends 
+R 1345 2 0 pour 
+R 1349 3 0 ma 
+R 1354 8 0 mère?
+- 1362
+R 1375 2 0 Dans 
+R 1381 2 0 une 
+R 1385 2 0 heure, 
+R 1391 3 0 j're
+R 1398 2 0 viens, 
+R 1404 1 0 qu'ce 
+R 1408 2 0 soit 
+R 1415 1 0 propre
+- 1416
+R 1421 1 0 Qu'on 
+R 1425 1 0 puisse 
+R 1431 1 0 y 
+R 1434 3 0 man
+R 1441 1 0 ger 
+R 1445 2 0 par 
+R 1452 3 0 terre
+- 1455
+R 1461 2 0 trois 
+R 1467 2 0 heures 
+R 1473 2 0 que 
+R 1478 2 0 j'at
+R 1484 2 0 tends
+- 1486
+R 1501 2 0 Fran
+R 1508 3 0 ch'ment, 
+R 1516 1 0 ils 
+R 1519 1 0 les 
+R 1525 2 0 fa
+R 1531 2 0 briquent 
+R 1536 1 0 ou 
+R 1541 3 0 quoi?
+- 1544
+R 1548 2 0 Heu
+R 1551 2 0 reu
+R 1557 3 0 s'ment 
+R 1564 1 0 qu'c'est 
+R 1569 1 0 que 
+R 1574 2 0 deux 
+R 1581 3 0 verres
+- 1584
+R 1588 1 0 Ap
+R 1592 2 0 pelle-
+R 1596 2 0 moi 
+R 1601 2 0 ton 
+R 1605 3 0 res
+R 1613 3 0 pon
+R 1621 3 0 sable 
+R 1627 2 0 et 
+R 1632 1 0 fais 
+R 1637 2 0 vite
+- 1639
+R 1648 2 0 Elle 
+R 1653 2 0 pour
+R 1656 1 0 rait 
+R 1661 1 0 se 
+R 1665 2 0 fi
+R 1669 2 0 nir 
+R 1677 3 0 comme 
+R 1685 2 0 ça, 
+R 1696 2 0 ta 
+R 1701 3 0 car
+R 1708 4 0 rière
+- 1712
+: 1727 2 9 Oui, 
+: 1734 2 12 cé
+: 1737 2 12 lé
+: 1742 5 4 brons 
+: 1752 1 4 ceux 
+: 1755 1 4 qui 
+: 1761 2 4 n'cé
+: 1764 2 7 lè
+: 1768 3 7 brent 
+: 1775 8 5 pas
+- 1783 1791
+- 1791
+: 1816 3 11 En
+: 1823 3 11 core 
+: 1828 4 14 une 
+: 1836 2 14 fois
+: 1841 1 8 ~, 
+: 1844 3 9 j'ai
+: 1849 2 9 m'rais
+: 1853 1 9 ~ 
+: 1855 3 9 le
+: 1860 2 12 ver 
+: 1864 2 12 mon
+: 1868 1 4 ~ 
+: 1872 6 4 verre 
+: 1880 1 4 à 
+: 1884 1 4 ceux 
+: 1888 1 4 qui 
+: 1891 4 7 n'en 
+: 1897 2 7 ont 
+: 1904 8 2 pas
+- 1912 1918
+- 1918
+: 1943 1 4 À 
+: 1948 2 4 ceux 
+: 1953 1 4 qui 
+: 1956 2 5 n'en 
+: 1960 1 5 ont
+: 1963 1 -1 ~ 
+: 1968 1 0 pas
+- 1969 2174
+- 2174
+: 2199 2 4 À 
+: 2205 1 4 ceux 
+: 2209 1 4 qui 
+: 2213 2 4 n'en 
+: 2218 1 4 ont 
+* 2223 8 9 pas
+- 2231 2480
+- 2480
+: 2505 3 9 Frot
+: 2512 6 4 ter, 
+: 2537 3 0 frot
+: 2544 2 -1 ter
+- 2546 2560
+- 2560
+: 2585 3 2 mieux 
+: 2591 2 4 vaut 
+: 2596 2 9 ne 
+: 2602 1 4 pas 
+: 2608 2 2 s'y
+- 2610
+: 2632 3 9 frot
+: 2639 4 4 ter, 
+: 2665 3 0 frot
+: 2672 4 -1 ter
+: 2677 3 2 ~
+- 2680 2689
+- 2689
+: 2714 1 -1 si 
+: 2719 3 -1 tu 
+: 2724 2 2 n'me 
+: 2730 2 0 con
+: 2734 2 -1 nais 
+: 2740 4 0 pas
+- 2744
+: 2760 3 9 Bros
+: 2768 5 4 ser, 
+: 2791 3 0 bros
+: 2800 6 -1 ser
+- 2806 2812
+- 2812
+: 2837 1 4 tu 
+: 2842 3 4 pour
+: 2847 2 4 ras 
+: 2852 2 7 tou
+: 2858 1 4 jours 
+: 2864 2 2 te
+- 2866
+: 2888 3 9 bros
+: 2896 5 4 ser, 
+: 2920 4 0 bros
+: 2928 5 -1 ser
+- 2933 2939
+- 2939
+: 2964 1 -1 si 
+: 2969 2 -1 tu 
+: 2973 3 -1 n'me 
+: 2978 3 2 res
+: 2985 1 0 pec
+: 2991 1 -1 tes 
+: 2996 4 -3 pas
+- 3000
+: 3007 2 7 Oui, 
+: 3014 2 12 cé
+: 3017 3 12 lé
+: 3023 4 4 brons 
+: 3032 1 4 ceux 
+: 3036 1 4 qui 
+: 3041 1 4 n'cé
+: 3044 3 7 lè
+: 3049 3 7 brent 
+: 3056 6 5 pas
+- 3062 3071
+- 3071
+: 3096 3 11 En
+: 3103 3 11 core 
+: 3108 4 14 une 
+* 3116 1 14 fois
+: 3120 1 8 ~, 
+: 3124 3 9 j'ai
+: 3129 1 9 m'rais
+: 3132 1 9 ~ 
+: 3135 3 9 le
+: 3140 2 12 ver 
+: 3144 2 12 mon
+: 3148 1 4 ~ 
+: 3152 5 4 verre 
+: 3159 1 4 à 
+: 3164 1 4 ceux 
+: 3168 2 4 qui 
+: 3171 3 7 n'en 
+: 3176 1 7 ont
+: 3179 1 2 ~ 
+: 3183 3 2 pas
+- 3186 3198
+- 3198
+: 3223 1 2 À 
+: 3228 1 2 ceux 
+: 3232 2 2 qui 
+: 3236 2 5 n'en 
+: 3239 1 5 ont
+: 3242 1 -1 ~ 
+: 3247 2 0 pas
+- 3249 3503
+- 3503
+: 3528 1 9 Pi
+: 3531 3 9 lote 
+: 3539 2 9 d'a
+: 3545 3 9 vion 
+: 3550 3 7 ou 
+: 3555 2 5 in
+: 3562 3 4 fir
+: 3567 8 2 mière
+- 3575
+: 3588 2 8 chauf
+: 3593 4 8 feur 
+: 3599 1 8 de 
+: 3603 3 8 ca
+: 3608 5 8 mion 
+: 3616 1 4 ou 
+: 3618 1 4 hô
+: 3621 2 4 tesse 
+: 3627 2 2 de 
+: 3631 6 0 l'air
+- 3637
+: 3658 3 4 Bou
+: 3663 4 4 lan
+: 3672 2 5 ger 
+: 3675 2 4 ou 
+: 3680 3 0 ma
+: 3685 2 -1 rin-
+: 3691 1 -3 pê
+: 3696 8 5 cheur
+- 3704
+: 3708 5 2 un 
+: 3716 4 2 verre 
+: 3722 2 5 aux 
+: 3728 3 4 cham
+: 3735 5 4 pions 
+: 3742 1 2 des 
+: 3748 3 0 pires 
+: 3755 3 2 ho
+: 3759 7 4 raires
+- 3766
+: 3775 2 9 Aux 
+: 3780 4 9 jeunes 
+: 3786 3 9 pa
+: 3791 5 9 rents 
+: 3799 3 9 ber
+: 3807 1 7 cés 
+: 3811 4 5 par 
+: 3817 1 4 les 
+: 3822 6 2 pleurs
+- 3828
+: 3846 2 8 aux 
+: 3850 2 8 in
+: 3856 4 8 som
+: 3863 2 8 niaques 
+: 3870 1 5 de 
+: 3875 2 4 pro
+: 3881 1 2 fes
+: 3887 5 4 sion
+- 3892
+: 3911 1 0 Et 
+: 3915 1 4 tous 
+: 3920 1 4 ceux 
+: 3924 1 4 qui 
+: 3928 3 4 souffrent 
+: 3935 1 0 de 
+: 3940 4 -1 peine 
+: 3947 1 -3 de 
+: 3951 4 5 cœur
+: 3957 2 4 ~
+: 3961 3 2 ~
+- 3964
+: 3968 1 2 qui 
+: 3972 1 2 n'ont 
+: 3976 4 5 pas 
+: 3984 6 4 l'cœur 
+: 3992 2 4 aux 
+: 4000 2 2 cé
+: 4004 1 0 lé
+: 4007 2 -1 bra
+: 4016 1 -3 tions
+- 4017 4199
+- 4199
+: 4224 1 5 Qui 
+: 4228 2 5 n'ont 
+: 4233 3 5 pas 
+: 4240 5 4 l'cœur 
+: 4247 2 4 aux 
+* 4256 1 4 cé
+* 4259 1 4 lé
+* 4263 2 4 bra
+* 4271 8 9 tions
+E

@@ -1,0 +1,269 @@
+#ARTIST:Depeche Mode
+#TITLE:Precious
+#CREATOR:mustangfred
+#BPM:212
+#YEAR:2005
+#VIDEO:v=8yn3ViE6mhY
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:19109,43396226415
+#ALLKARAOKE_ID:depeche-mode-precious
+#ALLKARAOKE_SID:4938
+#ALLKARAOKE_LASTUPDATE:2025-08-19T07:36:00.073Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=Precious
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Depeche Mode - Precious.mp3
+#COVER:Depeche Mode - Precious.jpg
+: 14 3 1 Pre
+: 18 6 -1 cious 
+: 25 2 -2 and 
+: 30 4 -4 fra
+: 35 3 -6 gile 
+: 42 7 -2 things
+- 49 63
+- 63
+* 77 5 1 Need 
+: 83 5 -1 spe
+: 89 4 -2 cial 
+: 94 7 -4 han
+: 102 4 -6 d
+: 107 3 -6 ling
+- 110 128
+- 128
+: 142 5 1 My 
+: 149 4 -1 god 
+: 155 3 -2 what 
+: 159 4 -4 have 
+: 166 2 -6 we 
+: 171 5 -4 done 
+: 178 8 -2 to 
+* 187 44 3 you?
+- 231 258
+- 258
+: 272 5 1 We 
+: 278 4 -1 al
+: 284 3 -2 ways 
+: 288 5 -4 try 
+: 295 2 -6 to 
+: 299 9 -2 share
+- 308 322
+- 322
+: 336 3 1 The 
+: 341 4 -1 ten
+: 348 3 -2 de
+: 352 5 -4 rest 
+: 359 2 -6 of 
+: 365 8 -6 care
+- 373 387
+- 387
+: 401 5 1 Now 
+: 407 2 -1 look 
+: 413 3 -2 what 
+: 419 4 -4 we 
+: 425 2 -6 have 
+: 430 4 -4 put 
+: 437 5 -2 you 
+: 447 43 3 through
+- 490 517
+- 517
+* 531 7 1 Things 
+: 539 4 -1 get 
+: 546 4 -2 dam
+: 553 2 -6 aged
+- 555
+: 563 6 1 Things 
+: 571 4 -1 get 
+: 578 4 -2 bro
+: 584 2 -6 ken
+- 586
+: 595 3 1 I 
+: 601 2 -1 thought 
+: 607 3 -2 we'd 
+: 612 3 -4 ma
+: 616 3 -6 nage
+- 619
+: 623 2 -6 But 
+* 627 6 1 words 
+: 634 3 -1 left 
+: 639 2 -2 un
+: 643 4 -4 spo
+: 650 2 -6 ken
+- 652
+: 660 4 1 Left 
+: 666 3 -1 us 
+: 671 3 -2 so 
+: 676 3 -4 brit
+: 680 2 -6 tle
+- 682
+: 693 4 1 There 
+: 698 3 -1 was 
+: 703 4 -2 so 
+: 709 3 -4 lit
+: 714 4 -6 tle 
+: 720 4 -4 left 
+: 728 5 -2 to 
+: 736 12 -9 give
+- 748 968
+- 968
+: 982 4 1 An
+: 989 4 -1 gels 
+: 994 2 -2 with 
+: 999 6 -4 sil
+: 1006 2 -6 ver 
+: 1011 7 -2 wings
+- 1018 1032
+- 1032
+: 1046 6 1 Shoul
+: 1053 5 -1 dn't 
+: 1059 5 -2 know 
+: 1067 4 -4 suf
+: 1073 3 -6 fer
+: 1077 3 -6 ing
+- 1080 1094
+- 1094
+: 1108 3 -6 I 
+: 1112 5 1 wish 
+: 1118 3 -1 I 
+: 1123 2 -2 could 
+: 1128 5 -4 take 
+: 1136 2 -6 the 
+: 1141 4 -4 pain 
+: 1149 6 -2 for 
+: 1157 43 3 you
+- 1200 1223
+- 1223
+: 1237 2 -6 If 
+* 1241 5 1 god 
+: 1247 5 -1 has 
+: 1253 2 -2 a 
+: 1258 5 -4 mas
+: 1265 1 -6 ter 
+: 1270 6 -2 plan
+- 1276 1287
+- 1287
+: 1301 3 -6 That 
+* 1306 5 1 on
+: 1312 4 -1 ly 
+: 1317 4 -2 he 
+: 1322 5 -4 un
+: 1329 2 -6 der
+: 1333 6 -6 stands
+- 1339 1354
+- 1354
+: 1368 2 -6 I 
+: 1371 3 1 hope 
+: 1376 4 -1 it's 
+: 1383 2 -2 your 
+: 1387 7 -4 eyes 
+: 1395 2 -6 he's 
+: 1398 8 -4 see
+: 1407 4 -2 ing 
+: 1415 44 3 through
+- 1459 1487
+- 1487
+: 1501 6 1 Things 
+: 1508 4 -1 get 
+: 1515 5 -2 dam
+: 1523 2 -6 aged
+- 1525
+: 1533 7 1 Things 
+: 1541 3 -1 get 
+: 1548 4 -2 bro
+: 1553 1 -6 ken
+- 1554
+: 1564 3 1 I 
+: 1570 3 -1 thought 
+: 1576 3 -2 we'd 
+: 1581 3 -4 ma
+: 1585 3 -6 nage
+- 1588
+: 1593 1 -6 But 
+: 1597 5 1 words 
+: 1603 3 -1 left 
+: 1608 2 -2 un
+: 1612 4 -4 spo
+: 1618 1 -6 ken
+- 1619
+: 1628 4 1 Left 
+: 1635 3 -1 us 
+: 1640 3 -2 so 
+: 1645 3 -4 brit
+: 1649 3 -6 tle
+- 1652
+: 1662 4 1 There 
+: 1667 3 -1 was 
+: 1673 3 -2 so 
+: 1677 3 -4 lit
+: 1683 4 -6 tle 
+: 1689 5 -4 left 
+: 1697 4 -2 to 
+: 1706 11 -9 give
+- 1717 2196
+- 2196
+: 2210 4 1 I 
+: 2217 3 -1 pray 
+: 2222 2 -2 you 
+: 2226 5 -4 learn 
+: 2233 2 -6 to 
+: 2238 15 -2 trust
+- 2253 2262
+- 2262
+: 2276 3 1 Have 
+: 2282 3 -1 faith 
+: 2288 2 -2 in 
+: 2292 5 -4 both 
+: 2299 3 -6 of 
+: 2303 12 -6 us
+- 2315 2324
+- 2324
+* 2338 4 1 And 
+: 2344 4 -1 keep 
+: 2351 4 -2 room 
+: 2356 5 -4 in 
+: 2362 4 -6 your 
+: 2368 6 -4 heart 
+: 2377 4 -2 for 
+: 2383 44 3 two
+- 2427 2455
+- 2455
+: 2469 6 1 Things 
+: 2477 4 -1 get 
+: 2485 4 -2 dam
+: 2492 2 -6 aged
+- 2494
+: 2502 6 1 Things 
+: 2510 3 -1 get 
+: 2517 4 -2 bro
+: 2522 2 -6 ken
+- 2524
+: 2533 5 1 I 
+: 2540 3 -1 thought 
+: 2545 3 -2 we'd 
+: 2550 3 -4 ma
+: 2555 3 -6 nage
+- 2558
+: 2562 1 -6 But 
+* 2566 4 1 words 
+: 2572 3 -1 left 
+: 2578 2 -2 un
+: 2581 4 -4 spo
+: 2586 2 -6 ken
+- 2588
+: 2597 4 1 Left 
+: 2604 3 -1 us 
+: 2609 3 -2 so 
+: 2614 3 -4 brit
+: 2619 2 -6 tle
+- 2621
+: 2631 4 1 There 
+: 2636 3 -1 was 
+: 2642 3 -2 so 
+: 2646 4 -4 lit
+: 2652 3 -6 tle 
+: 2659 4 -4 left 
+: 2666 6 -2 to 
+: 2675 20 -9 give
+E

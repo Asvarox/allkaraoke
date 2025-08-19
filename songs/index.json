@@ -3387,6 +3387,64 @@
     "local": false
   },
   {
+    "id": "afi-girls-not-grey",
+    "title": "Girl's Not Grey",
+    "artist": "AFI",
+    "video": "1Yzu-4kJg6g",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.3,
+    "gap": 23725.89704769114,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.804Z",
+    "genre": "Rock Alternativo",
+    "realBpm": 122,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=AFI&cancion=Girl%27s%20Not%20Grey",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4932,
+    "tracksCount": 1,
+    "search": "afigirlsnotgrey",
+    "local": false
+  },
+  {
+    "id": "afi-love-like-winter",
+    "title": "Love Like Winter",
+    "artist": "AFI",
+    "video": "rsrEXwozK-Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.48,
+    "gap": 5053.780525186472,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.803Z",
+    "genre": "Rock Alternativo",
+    "realBpm": 120,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=AFI&cancion=Love%20Like%20Winter",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4931,
+    "tracksCount": 1,
+    "search": "afilovelikewinter",
+    "local": false
+  },
+  {
     "id": "afi-miss-murder",
     "title": "Miss Murder",
     "artist": "AFI",
@@ -4372,6 +4430,33 @@
     "shortId": 154,
     "tracksCount": 1,
     "search": "alanwalkerk391emeliehollowlily",
+    "local": false
+  },
+  {
+    "id": "alan-walker-sasha-alex-sloan-hero",
+    "title": "Hero",
+    "artist": "Alan Walker & Sasha Alex Sloan",
+    "video": "tu4HfcmMn1E",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.12,
+    "gap": 1698.57686815802,
+    "year": "2023",
+    "lastUpdate": "2025-08-19T07:35:59.159Z",
+    "genre": "Dance",
+    "realBpm": 126,
+    "volume": 0.5,
+    "author": "jmfb",
+    "tracks": [
+      {
+        "name": "Hero - Alan Walker & Sasha Alex Sloan",
+        "start": 17
+      }
+    ],
+    "shortId": 4920,
+    "tracksCount": 1,
+    "search": "alanwalkersashaalexsloanhero",
     "local": false
   },
   {
@@ -13086,6 +13171,35 @@
     "local": false
   },
   {
+    "id": "bag-raiders-shooting-stars",
+    "title": "Shooting Stars",
+    "artist": "Bag Raiders",
+    "video": "feA64wXhbjo",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.98,
+    "gap": 6948.918393471477,
+    "year": "2009",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-19T07:36:00.076Z",
+    "genre": "Dance-pop, synth-pop",
+    "realBpm": 125,
+    "volume": 0.5,
+    "author": "rsa_skala",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rsa_skala",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Bag%20Raiders&cancion=Shooting%20Stars",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4940,
+    "tracksCount": 1,
+    "search": "bagraidersshootingstars",
+    "local": false
+  },
+  {
     "id": "bai-sha-jaws-dive-back-in-time",
     "title": "Dive Back in Time",
     "artist": "Bai Sha JAWS",
@@ -15927,6 +16041,35 @@
     "local": false
   },
   {
+    "id": "billy-idol-white-wedding",
+    "title": "White Wedding",
+    "artist": "Billy Idol",
+    "video": "AAZQaYKZMTI",
+    "language": [
+      "English"
+    ],
+    "bpm": 293.14999999999964,
+    "gap": 28622.188295165393,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:35:59.019Z",
+    "genre": "Rock",
+    "realBpm": 147,
+    "volume": 0.5,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=189",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4915,
+    "tracksCount": 1,
+    "search": "billyidolwhitewedding",
+    "local": false
+  },
+  {
     "id": "billy-joel-piano-man",
     "title": "Piano Man",
     "artist": "Billy Joel",
@@ -16598,6 +16741,36 @@
     "shortId": 587,
     "tracksCount": 1,
     "search": "blacksabbathsweetleaf",
+    "local": false
+  },
+  {
+    "id": "black-sabbath-war-pigs",
+    "title": "War Pigs",
+    "artist": "Black Sabbath",
+    "video": "PrZFscfJxXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 400.5999999999999,
+    "gap": 62097.02493765586,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:35:59.345Z",
+    "genre": "Heavy Metal",
+    "realBpm": 91,
+    "previewStart": 60,
+    "previewEnd": 106,
+    "volume": 0.76,
+    "author": "Superpanda",
+    "tracks": [
+      {
+        "name": "War Pigs",
+        "start": 27
+      }
+    ],
+    "shortId": 4924,
+    "tracksCount": 1,
+    "search": "blacksabbathwarpigs",
     "local": false
   },
   {
@@ -32725,6 +32898,32 @@
     "local": false
   },
   {
+    "id": "def-leppard-pour-some-sugar-on-me",
+    "title": "Pour Some Sugar On Me",
+    "artist": "Def Leppard",
+    "video": "0UIB9Y4OFPs",
+    "language": [
+      "English"
+    ],
+    "bpm": 338.7,
+    "gap": 41521.39946855624,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:35:58.865Z",
+    "realBpm": 176,
+    "volume": 0.63,
+    "author": "livewireau",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4909,
+    "tracksCount": 1,
+    "search": "defleppardpoursomesugaronme",
+    "local": false
+  },
+  {
     "id": "deftones-back-to-school-mini-maggit",
     "title": "Back to School (Mini Maggit)",
     "artist": "Deftones",
@@ -33464,6 +33663,35 @@
     "local": false
   },
   {
+    "id": "depeche-mode-a-pain-that-im-used-to",
+    "title": "A Pain that I'm used to",
+    "artist": "Depeche Mode",
+    "video": "G2iGtRseS7E",
+    "language": [
+      "English"
+    ],
+    "bpm": 219.83,
+    "gap": 23613.481826866213,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:36:00.072Z",
+    "genre": "Pop",
+    "realBpm": 108,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=A%20Pain%20that%20I%27m%20used%20to",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4937,
+    "tracksCount": 1,
+    "search": "depechemodeapainthatimusedto",
+    "local": false
+  },
+  {
     "id": "depeche-mode-enjoy-the-silence",
     "title": "Enjoy The Silence",
     "artist": "Depeche Mode",
@@ -33575,6 +33803,35 @@
     "local": false
   },
   {
+    "id": "depeche-mode-precious",
+    "title": "Precious",
+    "artist": "Depeche Mode",
+    "video": "8yn3ViE6mhY",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 19109.43396226415,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:36:00.073Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=Precious",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4938,
+    "tracksCount": 1,
+    "search": "depechemodeprecious",
+    "local": false
+  },
+  {
     "id": "depeche-mode-shake-the-disease",
     "title": "Shake the disease",
     "artist": "Depeche Mode",
@@ -33604,6 +33861,35 @@
     "shortId": 1194,
     "tracksCount": 1,
     "search": "depechemodeshakethedisease",
+    "local": false
+  },
+  {
+    "id": "depeche-mode-strangelove-88",
+    "title": "Strangelove '88",
+    "artist": "Depeche Mode",
+    "video": "MHRabky4Ajc",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.91,
+    "gap": 56636.94150077859,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:36:00.074Z",
+    "genre": "Synthpop/New wave",
+    "realBpm": 119,
+    "volume": 0.5,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=Strangelove%20%2788",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4939,
+    "tracksCount": 1,
+    "search": "depechemodestrangelove88",
     "local": false
   },
   {
@@ -40330,6 +40616,34 @@
     "local": false
   },
   {
+    "id": "editors-munich",
+    "title": "Munich",
+    "artist": "Editors",
+    "video": "KPUs63HuJ78",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.91,
+    "gap": 24530.181900429747,
+    "year": "2005",
+    "lastUpdate": "2025-08-19T07:36:00.374Z",
+    "genre": "Rock Alternative",
+    "realBpm": 150,
+    "volume": 0.5,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Editors&cancion=Munich",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4942,
+    "tracksCount": 1,
+    "search": "editorsmunich",
+    "local": false
+  },
+  {
     "id": "edmund-fetting-czterej-pancerni",
     "title": "Czterej Pancerni",
     "artist": "Edmund Fetting",
@@ -45522,6 +45836,35 @@
     "local": false
   },
   {
+    "id": "fitz-and-the-tantrums-handclap",
+    "title": "HandClap",
+    "artist": "Fitz and The Tantrums",
+    "video": "Y2V6yjjPbX0",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.02,
+    "gap": 5251.215556031712,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.943Z",
+    "genre": "Altenative/Indie",
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "gregoy",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gregoy",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Fitz%20and%20The%20Tantrums&cancion=HandClap",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4936,
+    "tracksCount": 1,
+    "search": "fitzandthetantrumshandclap",
+    "local": false
+  },
+  {
     "id": "five-finger-death-punch-coming-down",
     "title": "Coming Down",
     "artist": "Five Finger Death Punch",
@@ -49012,6 +49355,35 @@
     "local": false
   },
   {
+    "id": "gigi-dagostino-lamour-toujours",
+    "title": "L'amour Toujours",
+    "artist": "Gigi D'agostino",
+    "video": "w15oWDh02K4",
+    "language": [
+      "English"
+    ],
+    "bpm": 278.11,
+    "gap": 54636.22563014634,
+    "year": "1999",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-08-19T07:35:59.644Z",
+    "genre": "Electronic",
+    "realBpm": 139,
+    "volume": 0.5,
+    "author": "Sebmolder",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=sebmolder",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Gigi%20D%27agostino&cancion=L%27amour%20Toujours",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4930,
+    "tracksCount": 1,
+    "search": "gigidagostinolamourtoujours",
+    "local": false
+  },
+  {
     "id": "gilbert-montagne-les-sunlights-des-tropiques",
     "title": "Les Sunlights des Tropiques",
     "artist": "Gilbert Montagné",
@@ -49369,6 +49741,36 @@
     "local": false
   },
   {
+    "id": "glee-cast-defying-gravity",
+    "title": "Defying Gravity",
+    "artist": "Glee Cast",
+    "video": "YWmjQ49BUnQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 211.66,
+    "gap": 63.9213833506567,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.156Z",
+    "genre": "Soundtrack, Pop",
+    "realBpm": 110,
+    "volume": 0.5,
+    "author": "FredBrot",
+    "tracks": [
+      {
+        "start": 7
+      },
+      {
+        "start": 95
+      }
+    ],
+    "shortId": 4917,
+    "tracksCount": 2,
+    "search": "gleecastdefyinggravity",
+    "local": false
+  },
+  {
     "id": "glee-cast-forget-you",
     "title": "Forget You",
     "artist": "Glee Cast",
@@ -49530,6 +49932,34 @@
     "shortId": 1762,
     "tracksCount": 2,
     "search": "gleecastleamichelejakezyrustelephone",
+    "local": false
+  },
+  {
+    "id": "glee-cast-perfect",
+    "title": "Perfect",
+    "artist": "Glee Cast",
+    "video": "Th5VrhJffic",
+    "language": [
+      "English"
+    ],
+    "bpm": 368.16,
+    "gap": 20009.595827900914,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.157Z",
+    "genre": "Pop",
+    "videoGap": 18,
+    "realBpm": 120,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4918,
+    "tracksCount": 1,
+    "search": "gleecastperfect",
     "local": false
   },
   {
@@ -53497,9 +53927,9 @@
       "Japanese"
     ],
     "bpm": 396,
-    "gap": -265.1515151515152,
+    "gap": 227.2727272727273,
     "year": "2018",
-    "lastUpdate": "2025-08-06T12:56:13.034Z",
+    "lastUpdate": "2025-08-06T09:01:01.257Z",
     "realBpm": 96,
     "previewStart": 62,
     "previewEnd": 82,
@@ -53509,7 +53939,7 @@
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25085",
     "tracks": [
       {
-        "start": 7
+        "start": -6
       }
     ],
     "shortId": -1,
@@ -59362,6 +59792,33 @@
     "shortId": 2106,
     "tracksCount": 1,
     "search": "jessemccartneybecauseyoulive",
+    "local": false
+  },
+  {
+    "id": "jesse-mccartney-right-where-you-want-me",
+    "title": "Right Where You Want Me",
+    "artist": "Jesse McCartney",
+    "video": "0ncqa7iifD8",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.6,
+    "gap": 13431.657374556513,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.347Z",
+    "genre": "Pop",
+    "realBpm": 99,
+    "volume": 0.62,
+    "author": "Julia92",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4926,
+    "tracksCount": 1,
+    "search": "jessemccartneyrightwhereyouwantme",
     "local": false
   },
   {
@@ -68381,6 +68838,32 @@
     "local": false
   },
   {
+    "id": "kygo-x-tina-turner-whats-love-got-to-do-with-it",
+    "title": "What’s Love Got To Do With It",
+    "artist": "Kygo x Tina Turner",
+    "video": "TNYGLMQxZ64",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 30440,
+    "year": "2020",
+    "lastUpdate": "2025-08-19T07:35:59.023Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.63,
+    "author": "snake84",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4916,
+    "tracksCount": 1,
+    "search": "kygoxtinaturnerwhatslovegottodowithit",
+    "local": false
+  },
+  {
     "id": "kygo-x-whitney-houston-higher-love",
     "title": "Higher Love",
     "artist": "Kygo x Whitney Houston",
@@ -71372,6 +71855,36 @@
     "shortId": 2531,
     "tracksCount": 1,
     "search": "leannrimescantfightthemoonlight",
+    "local": false
+  },
+  {
+    "id": "led-zeppelin-immigrant-song",
+    "title": "Immigrant Song",
+    "artist": "Led Zeppelin",
+    "video": "P3Y8OWkiUts",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.70000000000002,
+    "gap": 8808.810572687225,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:35:59.346Z",
+    "genre": "Hard Rock",
+    "realBpm": 113,
+    "previewStart": 8,
+    "previewEnd": 56,
+    "volume": 0.9,
+    "author": "vm",
+    "tracks": [
+      {
+        "name": "Immigrant Song",
+        "start": 15
+      }
+    ],
+    "shortId": 4925,
+    "tracksCount": 1,
+    "search": "ledzeppelinimmigrantsong",
     "local": false
   },
   {
@@ -76518,6 +77031,35 @@
     "local": false
   },
   {
+    "id": "madonna-la-isla-bonita",
+    "title": "La Isla Bonita",
+    "artist": "Madonna",
+    "video": "zpzdgmqIHOQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.91,
+    "gap": 23799.69990997299,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.805Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Madonna&cancion=La%20Isla%20Bonita",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4933,
+    "tracksCount": 1,
+    "search": "madonnalaislabonita",
+    "local": false
+  },
+  {
     "id": "madonna-like-a-prayer",
     "title": "Like A Prayer",
     "artist": "Madonna",
@@ -81369,6 +81911,35 @@
     "shortId": 2887,
     "tracksCount": 1,
     "search": "maxcoverirunninginthe90s",
+    "local": false
+  },
+  {
+    "id": "maximum-the-hormone-chuu-chuu-lovely-muni-muni-mura-mura-purin-purin-boron-nururu-rerorero",
+    "title": "Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero",
+    "artist": "Maximum The Hormone",
+    "video": "MPUCEz-RCg0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 257.54,
+    "gap": 7.7566203308224,
+    "year": "2007",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-19T07:35:59.350Z",
+    "genre": "Anime",
+    "realBpm": 129,
+    "volume": 0.5,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Maximum%20The%20Hormone&cancion=Chuu%20Chuu%20Lovely%20Muni%20Muni%20Mura%20Mura%20Purin%20Purin%20Boron%20Nururu%20Rerorero",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 4927,
+    "tracksCount": 1,
+    "search": "maximumthehormonechuuchuulovelymunimunimuramurapurinpurinboronnurururerorero",
     "local": false
   },
   {
@@ -87099,6 +87670,35 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-bulletproof-heart",
+    "title": "Bulletproof Heart",
+    "artist": "My Chemical Romance",
+    "video": "SPNYBLsu0ek",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.38,
+    "gap": 6528.571644269969,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:58.871Z",
+    "genre": "Rock",
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=13012",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4911,
+    "tracksCount": 1,
+    "search": "mychemicalromancebulletproofheart",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-cancer",
     "title": "Cancer",
     "artist": "My Chemical Romance",
@@ -87123,6 +87723,34 @@
     "shortId": 3092,
     "tracksCount": 1,
     "search": "mychemicalromancecancer",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-dead",
+    "title": "Dead!",
+    "artist": "My Chemical Romance",
+    "video": "H48kOqqaWv0",
+    "language": [
+      "English"
+    ],
+    "bpm": 399,
+    "gap": 2474.9624060150377,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:58.867Z",
+    "realBpm": 199,
+    "volume": 0.5,
+    "author": "synonomy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=31207",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9501",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4910,
+    "tracksCount": 1,
+    "search": "mychemicalromancedead",
     "local": false
   },
   {
@@ -90923,6 +91551,62 @@
     "local": false
   },
   {
+    "id": "nil-moliner-libertad",
+    "title": "Libertad",
+    "artist": "Nil Moliner",
+    "video": "utyaiklIQog",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 264.29,
+    "gap": 807.3949449468387,
+    "year": "2021",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-08-19T07:35:59.017Z",
+    "genre": "Pop",
+    "realBpm": 132,
+    "volume": 0.5,
+    "author": "Volodia",
+    "authorUrl": "Nil moliner",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4914,
+    "tracksCount": 1,
+    "search": "nilmolinerlibertad",
+    "local": false
+  },
+  {
+    "id": "nil-moliner-mi-religion",
+    "title": "Mi religión",
+    "artist": "Nil Moliner",
+    "video": "fUN_G-zeJB8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 212.01,
+    "gap": 2906.480684873355,
+    "year": "2019",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-08-19T07:35:58.877Z",
+    "genre": "Pop",
+    "realBpm": 106,
+    "volume": 0.5,
+    "author": "Volodia",
+    "authorUrl": "Nil Moliner",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4913,
+    "tracksCount": 1,
+    "search": "nilmolinermireligion",
+    "local": false
+  },
+  {
     "id": "nilsson-without-you",
     "title": "Without You",
     "artist": "Nilsson",
@@ -91029,6 +91713,35 @@
     "shortId": 3227,
     "tracksCount": 1,
     "search": "ninamikeleiserieseltderschnee",
+    "local": false
+  },
+  {
+    "id": "nine-inch-nails-hurt",
+    "title": "Hurt",
+    "artist": "Nine Inch Nails",
+    "video": "6oGqIfnIAEA",
+    "language": [
+      "English"
+    ],
+    "bpm": 228.7,
+    "gap": 4105.748031496063,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.483Z",
+    "genre": "Rock Alternativo",
+    "realBpm": 80,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Nine%20Inch%20Nails&cancion=Hurt",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4928,
+    "tracksCount": 1,
+    "search": "nineinchnailshurt",
     "local": false
   },
   {
@@ -91443,6 +92156,33 @@
     "shortId": 3238,
     "tracksCount": 1,
     "search": "nirvanapolly",
+    "local": false
+  },
+  {
+    "id": "nirvana-sappy",
+    "title": "Sappy",
+    "artist": "Nirvana",
+    "video": "jOg8IblMNK4",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.18,
+    "gap": 1173.6061363104068,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:35:59.158Z",
+    "genre": "Grunge",
+    "realBpm": 129,
+    "volume": 0.65,
+    "author": "Ko3rMiT",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4919,
+    "tracksCount": 1,
+    "search": "nirvanasappy",
     "local": false
   },
   {
@@ -92570,6 +93310,35 @@
     "shortId": 4822,
     "tracksCount": 1,
     "search": "octhalfhorsehalfman",
+    "local": false
+  },
+  {
+    "id": "of-monsters-and-men-little-talks",
+    "title": "Little Talks",
+    "artist": "Of Monsters and Men",
+    "video": "ghb6eDopW8I",
+    "language": [
+      "English"
+    ],
+    "bpm": 311.16,
+    "gap": 2987.6590821442346,
+    "year": "2011",
+    "artistOrigin": "IS",
+    "lastUpdate": "2025-08-19T07:35:58.392Z",
+    "genre": "Indie Rock",
+    "realBpm": 136,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Of%20Monsters%20and%20Men&cancion=Little%20Talks",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4908,
+    "tracksCount": 1,
+    "search": "ofmonstersandmenlittletalks",
     "local": false
   },
   {
@@ -93891,6 +94660,37 @@
     "local": false
   },
   {
+    "id": "one-ok-rock-memories-japanese-ver",
+    "title": "Memories (Japanese Ver.)",
+    "artist": "ONE OK ROCK",
+    "video": "hkK3g97CbZg",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 350.04,
+    "gap": 27164.398354473775,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-19T07:35:59.342Z",
+    "edition": "Anime",
+    "genre": "Jpop",
+    "realBpm": 175,
+    "volume": 0.5,
+    "author": "haistshomie666",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=61915",
+    "sourceUrl": "https://usdb.animux.de/",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4921,
+    "tracksCount": 1,
+    "search": "oneokrockmemoriesjapanesever",
+    "local": false
+  },
+  {
     "id": "one-piece-juntos",
     "title": "Juntos",
     "artist": "One Piece",
@@ -94216,6 +95016,36 @@
     "shortId": 3335,
     "tracksCount": 1,
     "search": "orangerangeo2",
+    "local": false
+  },
+  {
+    "id": "orgy-blue-monday",
+    "title": "Blue Monday",
+    "artist": "Orgy",
+    "video": "-8gVmD39AmI",
+    "language": [
+      "English"
+    ],
+    "bpm": 386.38,
+    "gap": 55210.63098504063,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:36:00.208Z",
+    "genre": "Industrial Rock",
+    "videoGap": 14,
+    "realBpm": 170,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Orgy&cancion=Blue%20Monday",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4941,
+    "tracksCount": 1,
+    "search": "orgybluemonday",
     "local": false
   },
   {
@@ -94892,6 +95722,32 @@
     "shortId": 3357,
     "tracksCount": 1,
     "search": "pabloalboransolamentetu",
+    "local": false
+  },
+  {
+    "id": "pablo-alboran-tanto",
+    "title": "Tanto",
+    "artist": "Pablo Alborán",
+    "video": "i-yeB7JL00Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 282.48,
+    "gap": 19732.0790144435,
+    "year": "2012",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-08-19T07:35:58.874Z",
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "nauce",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4912,
+    "tracksCount": 1,
+    "search": "pabloalborantanto",
     "local": false
   },
   {
@@ -101012,6 +101868,33 @@
     "local": false
   },
   {
+    "id": "radwimps-sparkle",
+    "title": "Sparkle",
+    "artist": "RADWIMPS",
+    "video": "a2GujJZfXpg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 248.3,
+    "gap": 20874.016512283528,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-19T07:35:59.643Z",
+    "genre": "JRock",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "Radwimps",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4929,
+    "tracksCount": 1,
+    "search": "radwimpssparkle",
+    "local": false
+  },
+  {
     "id": "radwimps-zen-zen-zense",
     "title": "Zen Zen Zense",
     "artist": "RADWIMPS",
@@ -102229,6 +103112,35 @@
     "shortId": 3614,
     "tracksCount": 1,
     "search": "rednexcottoneyejoe",
+    "local": false
+  },
+  {
+    "id": "reel-2-real-i-like-to-move-it",
+    "title": "I like to move it",
+    "artist": "Reel 2 Real",
+    "video": "vuo8kD5zF5I",
+    "language": [
+      "English"
+    ],
+    "bpm": 246.41,
+    "gap": 3352.013554644698,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:36:00.532Z",
+    "genre": "Pop",
+    "realBpm": 123,
+    "volume": 0.5,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Reel%202%20Real&cancion=I%20like%20to%20move%20it",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4943,
+    "tracksCount": 1,
+    "search": "reel2realiliketomoveit",
     "local": false
   },
   {
@@ -114116,6 +115028,35 @@
     "local": false
   },
   {
+    "id": "soft-cell-tainted-love",
+    "title": "Tainted Love",
+    "artist": "Soft Cell",
+    "video": "XZVpR3Pk-r8",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.7,
+    "gap": 8879.929543076387,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-19T07:35:59.808Z",
+    "genre": "Pop",
+    "realBpm": 143,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Soft%20Cell&cancion=Tainted%20Love",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4935,
+    "tracksCount": 1,
+    "search": "softcelltaintedlove",
+    "local": false
+  },
+  {
     "id": "sonia-youll-never-stop-me-loving-you",
     "title": "You’ll Never Stop Me Loving You",
     "artist": "Sonia",
@@ -115997,6 +116938,35 @@
     "local": false
   },
   {
+    "id": "stromae-sante",
+    "title": "Santé",
+    "artist": "Stromae",
+    "video": "P3QS83ubhHE",
+    "language": [
+      "French"
+    ],
+    "bpm": 367.84,
+    "gap": 10613.53501522401,
+    "year": "2021",
+    "artistOrigin": "BE",
+    "lastUpdate": "2025-08-19T07:35:59.807Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=Sant%C3%A9",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4934,
+    "tracksCount": 1,
+    "search": "stromaesante",
+    "local": false
+  },
+  {
     "id": "stromae-tous-les-memes",
     "title": "Tous les mêmes",
     "artist": "Stromae",
@@ -116572,6 +117542,68 @@
     "shortId": 4114,
     "tracksCount": 1,
     "search": "surfcursedisco",
+    "local": false
+  },
+  {
+    "id": "survive-said-the-prophet-found-lost",
+    "title": "found & lost",
+    "artist": "Survive Said The Prophet",
+    "video": "0z6FLH2HXl4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 207.98,
+    "gap": 23344.287527646888,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-19T07:35:59.344Z",
+    "edition": "Anime",
+    "genre": "Jpop",
+    "realBpm": 104,
+    "previewStart": 62,
+    "previewEnd": 79,
+    "volume": 0.5,
+    "author": "nezunobaka",
+    "sourceUrl": "ultrastar-es.org",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4923,
+    "tracksCount": 1,
+    "search": "survivesaidtheprophetfoundlost",
+    "local": false
+  },
+  {
+    "id": "survive-said-the-prophet-mukanjyo",
+    "title": "MUKANJYO",
+    "artist": "Survive Said The Prophet",
+    "video": "l5wAdQ-UkWY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 379.92,
+    "gap": 146.95009475679092,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-19T07:35:59.343Z",
+    "edition": "Anime",
+    "genre": "Jpop",
+    "realBpm": 95,
+    "previewStart": 32,
+    "previewEnd": 51,
+    "volume": 0.81,
+    "author": "Currymalker",
+    "sourceUrl": "https://ultrastar-es.org/",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 4922,
+    "tracksCount": 1,
+    "search": "survivesaidtheprophetmukanjyo",
     "local": false
   },
   {
@@ -124828,6 +125860,36 @@
     "shortId": 4388,
     "tracksCount": 1,
     "search": "thepussycatdollssway",
+    "local": false
+  },
+  {
+    "id": "the-raconteurs-steady-as-she-goes",
+    "title": "Steady, As She Goes",
+    "artist": "The Raconteurs",
+    "video": "DXAidGQUuns",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.49999999999966,
+    "gap": 47656.28571428572,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:36:00.659Z",
+    "genre": "Rock",
+    "videoGap": 13,
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Raconteurs&cancion=Steady,%20As%20She%20Goes",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4945,
+    "tracksCount": 1,
+    "search": "theraconteurssteadyasshegoes",
     "local": false
   },
   {
@@ -133605,6 +134667,35 @@
     "shortId": 4681,
     "tracksCount": 1,
     "search": "weezerpinktriangle",
+    "local": false
+  },
+  {
+    "id": "weezer-pork-and-beans",
+    "title": "Pork and beans",
+    "artist": "Weezer",
+    "video": "PQHPYelqr0E",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.1,
+    "gap": 11920.416493127863,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-19T07:36:00.658Z",
+    "genre": "Rock Alternativo",
+    "realBpm": 120,
+    "volume": 0.5,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Pork%20and%20beans",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4944,
+    "tracksCount": 1,
+    "search": "weezerporkandbeans",
     "local": false
   },
   {

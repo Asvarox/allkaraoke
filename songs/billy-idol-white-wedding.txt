@@ -1,0 +1,301 @@
+#ARTIST:Billy Idol
+#TITLE:White Wedding
+#CREATOR:Canni
+#BPM:293,14999999999964
+#YEAR:1982
+#VIDEO:v=AAZQaYKZMTI
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:28622,188295165393
+#ALLKARAOKE_ID:billy-idol-white-wedding
+#ALLKARAOKE_SID:4915
+#ALLKARAOKE_LASTUPDATE:2025-08-19T07:35:59.019Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:147
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=189
+#ALLKARAOKE_VOLUME:0,5
+#VERSION:1.0.0
+#MP3:Billy Idol - White Wedding (Album Version).opus
+#COVER:Billy Idol - White Wedding (Album Version) [CO].jpg
+: 20 5 -1 Hey 
+: 28 2 2 lit
+: 32 2 4 tle 
+: 36 6 6 sis
+: 44 4 6 ter, 
+: 51 3 -1 what 
+: 58 4 2 have 
+: 66 4 6 you 
+: 73 9 4 done?
+- 82 128
+- 128
+: 148 5 -1 Hey 
+: 156 2 2 lit
+: 160 2 4 tle 
+: 164 4 6 sis
+: 172 3 6 ter, 
+: 177 4 9 who’s 
+: 184 4 6 the 
+: 192 6 4 on
+: 200 2 6 ly 
+: 204 8 6 one?
+- 212 256
+- 256
+: 276 5 -1 Hey 
+: 284 2 2 lit
+: 288 2 4 tle 
+: 292 4 6 sis
+: 300 2 6 ter, 
+: 304 5 9 who’s 
+: 312 4 6 your 
+: 320 4 4 Su
+: 328 2 6 per
+: 332 6 6 man?
+- 338
+: 340 5 -1 Hey 
+: 348 2 2 lit
+: 352 2 4 tle 
+: 356 4 6 sis
+: 364 2 6 ter, 
+: 368 4 9 who’s 
+: 376 4 6 the 
+: 384 4 4 one 
+: 392 2 6 we 
+: 396 6 -1 want?
+- 402
+: 404 4 -1 Hey 
+: 412 2 2 lit
+: 416 2 4 tle 
+: 420 4 6 sis
+: 428 2 6 ter, 
+: 432 4 9 shot
+: 440 5 6 gun!
+- 445
+: 460 2 6 It’s 
+: 464 2 4 a, 
+: 476 4 2 nice 
+: 484 4 2 day 
+: 492 4 -1 to, 
+: 512 5 9 start 
+: 520 2 6 a
+: 524 2 4 gai
+: 528 9 6 ~n
+- 537 568
+- 568
+: 588 2 2 It’s 
+: 592 2 -1 a, 
+* 604 4 2 nice 
+* 612 4 2 day 
+: 620 2 -1 for 
+: 624 2 -1 a, 
+: 636 4 2 white 
+: 644 2 2 wed
+: 648 8 2 ding
+- 656 696
+- 696
+: 716 2 2 It’s 
+: 720 2 -1 a, 
+: 732 4 2 nice 
+: 740 4 2 day 
+: 748 4 -1 to, 
+: 768 4 9 start 
+: 776 2 6 a
+: 780 2 4 gai
+: 784 10 6 ~n
+- 794 832
+- 832
+: 852 4 -1 Hey 
+: 860 2 2 lit
+: 864 2 4 tle 
+: 868 4 6 sis
+: 876 2 6 ter, 
+: 880 4 -1 who 
+: 888 4 2 is 
+: 896 2 4 it 
+: 900 5 6 you’re 
+: 908 4 4 wi
+: 914 4 2 ~th
+- 918 960
+- 960
+: 980 4 -1 Hey 
+: 988 2 2 lit
+: 992 2 4 tle 
+: 996 4 6 sis
+: 1004 2 6 ter, 
+: 1008 6 9 what’s 
+: 1016 3 6 your 
+: 1023 5 4 vice 
+: 1032 2 6 and 
+: 1036 4 6 wish?
+- 1040 1088
+- 1088
+: 1108 4 -1 Hey 
+: 1116 2 2 lit
+: 1120 2 4 tle 
+: 1124 4 6 sis
+: 1131 2 6 ter, 
+: 1136 4 9 shot
+: 1144 4 6 gun!
+- 1148
+: 1152 8 6 Oh 
+: 1163 6 6 yeah
+- 1169
+: 1172 5 -1 Hey 
+: 1180 2 2 lit
+: 1184 2 4 tle 
+: 1188 4 6 sis
+: 1196 2 6 ter, 
+: 1200 5 9 who’s 
+: 1208 4 6 your 
+: 1216 4 4 Su
+: 1224 2 6 per
+: 1228 6 6 man?
+- 1234
+: 1236 4 -1 Hey 
+: 1244 2 2 lit
+: 1248 2 4 tle 
+: 1252 4 6 sis
+: 1259 2 6 ter, 
+: 1264 4 9 shot
+: 1272 4 6 gun!
+- 1276
+: 1292 2 2 It’s 
+: 1296 2 -1 a, 
+: 1308 4 2 nice 
+: 1316 4 2 day 
+: 1324 4 -1 to, 
+: 1344 4 9 start 
+: 1352 2 6 a
+: 1356 2 4 gai
+: 1360 10 6 ~n
+- 1370 1400
+- 1400
+: 1420 2 2 It’s 
+: 1424 2 -1 a, 
+* 1436 4 2 nice 
+* 1444 4 2 day 
+: 1452 2 -1 for 
+: 1456 2 -1 a, 
+* 1468 4 2 white 
+* 1476 2 2 wed
+* 1480 8 2 ding
+- 1488 1528
+- 1528
+: 1548 3 2 It’s 
+: 1552 4 -1 a, 
+: 1564 4 2 nice 
+: 1572 6 2 day 
+: 1580 6 -1 to, 
+: 1600 5 6 start 
+: 1608 2 6 a
+: 1612 35 6 gai
+: 1650 16 -1 ~n
+- 1666 2291
+- 2291
+: 2311 1 11 Pick 
+: 2313 1 14 it 
+: 2316 5 11 up!
+- 2321 2332
+- 2332
+: 2352 4 14 Take 
+: 2360 2 11 me 
+: 2364 6 11 back 
+: 2372 6 11 home, 
+: 2380 4 14 yeah!
+- 2384 2423
+- 2423
+: 2443 2 -1 There 
+: 2446 2 2 is 
+: 2450 2 6 no
+: 2455 3 6 thin’ 
+: 2462 4 6 fair 
+: 2470 2 4 in 
+: 2474 4 2 this 
+: 2482 3 -1 wo
+: 2486 10 -3 ~
+: 2498 3 -3 ~
+: 2503 6 -1 ~rld
+- 2509 2550
+- 2550
+: 2570 2 -1 There 
+: 2574 2 2 is 
+: 2578 2 6 no
+: 2582 5 6 thin’ 
+: 2590 5 6 safe 
+: 2598 4 4 in 
+: 2606 6 9 this 
+: 2616 4 6 wo
+: 2622 14 4 ~rld
+- 2636 2674
+- 2674
+: 2694 2 6 And 
+: 2698 5 6 there’s 
+: 2706 4 9 no
+: 2712 3 6 thin’ 
+: 2719 4 9 sure 
+: 2726 2 6 in 
+: 2730 4 9 this 
+: 2738 4 6 wo
+: 2744 8 4 ~rld
+- 2752
+: 2759 2 6 And 
+: 2763 3 6 there’s 
+: 2769 3 9 no
+: 2775 3 6 thin’ 
+: 2781 4 9 pure 
+: 2789 3 6 in 
+: 2794 4 9 this 
+: 2800 4 6 wo
+: 2806 6 4 ~rld
+- 2812
+: 2821 2 6 And 
+: 2825 2 6 look 
+: 2830 3 6 for 
+: 2835 3 9 some
+: 2840 4 6 thing 
+: 2848 5 9 left 
+: 2855 2 6 in 
+: 2859 3 9 this 
+: 2867 14 11 wo
+: 2883 9 14 ~
+: 2894 22 11 ~rld
+- 2916 2923
+- 2923
+: 2943 6 18 Start 
+: 2951 2 18 a
+* 2955 36 18 gai
+: 2993 5 11 ~n
+- 2998
+: 3003 2 14 Come 
+: 3007 10 14 on, 
+: 3019 2 11 it’s 
+: 3023 2 11 a, 
+: 3035 4 14 nice 
+: 3043 4 14 day 
+: 3051 2 11 for 
+: 3055 2 11 a, 
+: 3067 4 4 white 
+: 3075 2 4 wed
+: 3079 10 2 ding
+- 3089 3127
+- 3127
+: 3147 2 2 It’s 
+: 3151 2 -1 a, 
+: 3163 4 2 nice 
+: 3171 4 2 day 
+: 3180 5 -1 to, 
+: 3199 6 6 start 
+: 3207 2 6 a
+: 3211 38 6 gai
+: 3251 16 -1 ~n
+- 3267
+: 3274 2 2 It’s 
+: 3278 2 -1 a, 
+: 3290 4 2 nice 
+: 3298 4 2 day 
+: 3307 5 -1 to, 
+: 3326 6 6 start 
+: 3334 2 6 a
+: 3338 38 6 gai
+: 3378 24 -1 ~n
+E
