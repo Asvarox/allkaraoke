@@ -118,7 +118,6 @@ export default function BasicData(props: Props) {
               {track.sections.filter(isNotesSection).map((section) => (
                 <p key={section.start}>
                   <span className="text-[0.75rem]">
-                    {' '}
                     [<Pre>{formatMs(getSectionStartInMs(section, props.finalSong))}</Pre>]
                   </span>{' '}
                   {section.notes.map((note) => note.lyrics).join('')}

@@ -92,7 +92,6 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
-  //   const [currentTime, setCurrentTime] = useState<milliseconds>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
@@ -270,7 +269,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             width={playerWidth}
             height={playerHeight}
             ref={player}
-            // onCurrentTimeUpdate={setCurrentTime}
             effectsEnabled={false}
             singSetup={singSetup}
             onSongEnd={() => undefined}
@@ -280,12 +278,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
       <Grid item xs={12} sm={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         {player.current && (
           <>
-            <AdjustPlayback
-              player={player.current}
-              //   currentTime={currentTime}
-              playbackSpeed={playbackSpeed}
-              setPlaybackSpeed={setPlaybackSpeed}
-            />
+            <AdjustPlayback player={player.current} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
             <div className="flex justify-between">
               <ShortcutIndicator shortcutKey="q">
                 <Button variant="outlined" size="small" onClick={() => seekToFirstSection()}>
@@ -364,7 +357,6 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <EditSection
               playbackSpeed={playbackSpeed}
               song={newSong}
-              //   currentTime={currentTime}
               beatLength={beatLength}
               player={player.current}
               onRecordChange={setChangeRecords}
