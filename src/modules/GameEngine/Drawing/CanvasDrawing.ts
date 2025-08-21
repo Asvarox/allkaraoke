@@ -108,6 +108,12 @@ export default class CanvasDrawing {
   private currentPlayerNotes: Record<number, Note> = {};
 
   private drawPlayer = (playerNumber: 0 | 1 | 2 | 3, ctx: CanvasRenderingContext2D) => {
+    // Skip rendering if playerState is undefined
+    const playerState = GameState.getPlayer(playerNumber);
+    if (!playerState) {
+      return;
+    }
+
     const drawingData = this.getDrawingData(playerNumber);
     const { currentSection } = calculateData(drawingData);
 
