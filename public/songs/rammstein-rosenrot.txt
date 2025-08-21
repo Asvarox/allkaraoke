@@ -1,0 +1,422 @@
+#ARTIST:Rammstein
+#TITLE:Rosenrot
+#CREATOR:Beneblade
+#BPM:227,82
+#YEAR:2005
+#VIDEO:v=af59U2BRRAU
+#LANGUAGE:German
+#GAP:7497,378193310508
+#ALLKARAOKE_ID:rammstein-rosenrot
+#ALLKARAOKE_SID:4947
+#ALLKARAOKE_LASTUPDATE:2025-08-21T00:11:14.383Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Rammstein&cancion=Rosenrot
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Rammstein - Rosenrot.mp3
+#COVER:Rammstein - Rosenrot [CO].jpg
+#MEDLEYSTARTBEAT:1028
+#MEDLEYENDBEAT:1785
+: 15 7 0 Sah 
+: 23 7 0 ein 
+: 31 3 0 Mäd
+: 35 3 0 chen 
+: 39 5 0 ein 
+: 47 5 -4 Rös
+: 55 2 -4 lein 
+: 59 11 -4 stehen
+- 70
+: 79 6 0 Blüh
+: 87 3 0 te 
+: 91 7 0 dort 
+: 103 6 0 in 
+* 111 3 3 lich
+: 115 6 3 ten 
+: 123 7 2 Hö
+* 131 2 0 hen
+- 133
+: 139 2 -5 So 
+: 143 6 0 Sprach 
+: 151 3 0 sie 
+: 155 9 0 ih
+: 167 5 -5 ren 
+: 175 5 -4 Liebs
+* 183 3 -2 ten 
+: 188 9 -4 an
+- 197
+: 207 4 0 Ob 
+: 215 3 0 er 
+: 219 5 0 es 
+: 227 9 0 ihr 
+: 239 6 3 stei
+: 247 3 3 gen 
+: 251 5 2 kann
+: 257 4 0 ~
+- 261
+: 275 2 0 Sie 
+: 279 3 0 will 
+: 283 2 0 es 
+: 287 5 0 und 
+: 295 6 -5 so 
+* 303 3 -4 ist 
+* 308 3 -2 es 
+: 315 11 -4 fein
+- 326
+: 339 2 0 So 
+: 343 3 0 war 
+: 347 3 0 es 
+: 351 2 0 und 
+: 355 3 0 so 
+: 359 2 0 wird 
+* 363 2 2 es 
+* 367 3 3 im
+: 371 6 3 mer 
+: 379 5 2 sein
+: 386 4 0 ~
+- 390
+: 403 3 0 Sie 
+: 407 3 0 will 
+: 411 2 0 es 
+: 415 4 0 und 
+: 423 6 -5 so 
+: 431 3 -4 ist 
+: 436 4 -2 es 
+: 443 10 -4 Brauch
+- 453
+: 463 4 0 Was 
+: 471 6 0 sie 
+: 479 6 0 will 
+: 487 5 2 be
+: 495 5 3 kommt 
+: 503 3 3 sie 
+: 507 7 2 auch
+* 515 2 0 ~
+- 517
+: 527 5 7 Tie
+: 535 3 7 fe 
+: 540 5 7 Brun
+: 547 9 7 nen 
+: 559 5 8 muss 
+* 567 3 10 man 
+: 571 10 8 gra
+: 583 2 8 ben
+- 585
+: 591 6 7 Wenn 
+: 599 2 7 man 
+: 604 10 7 kla
+: 616 4 7 res 
+* 622 3 8 Was
+: 628 6 3 ser 
+: 636 10 3 will
+- 646
+: 655 6 3 Ro
+: 663 2 3 sen
+: 667 9 3 rot, 
+: 679 6 3 oh 
+* 687 3 3 Ro
+* 691 2 0 ~
+: 695 2 0 sen
+: 699 11 0 rot
+- 710
+: 719 6 3 Tie
+: 727 3 3 fe 
+: 731 3 3 Was
+: 739 9 3 ser 
+: 751 4 3 sind 
+* 759 3 3 nicht 
+: 767 10 3 still
+- 777
+: 787 3 0 Der 
+: 791 3 0 Jüng
+: 795 2 0 ling 
+: 799 6 0 steigt 
+: 807 6 -5 den 
+: 815 6 -4 Berg 
+: 823 2 -2 mit 
+: 827 12 -4 Qual
+- 839
+: 851 3 0 Die 
+: 855 3 0 Aus
+: 859 2 0 sicht 
+: 863 4 0 ist 
+: 871 6 0 ihm 
+: 879 6 3 sehr 
+: 887 2 3 e
+: 892 6 2 gal
+* 899 4 0 ~
+- 903 904
+- 904
+* 919 2 0 Hat 
+* 923 2 0 das 
+: 927 6 0 Rös
+: 935 6 -5 lein 
+: 943 6 -4 nur 
+: 951 3 -2 im 
+: 955 10 -4 Sinn
+- 965
+: 975 5 -5 Bringt 
+: 983 5 -5 es 
+: 991 6 -5 sei
+: 999 5 -5 ner 
+* 1007 5 -4 Liebs
+: 1015 3 -2 ten 
+: 1020 9 -4 hin
+- 1029
+: 1043 3 0 Sie 
+: 1047 3 0 will 
+: 1051 2 0 es 
+: 1055 5 0 und 
+: 1063 6 -5 so 
+: 1071 3 -4 ist 
+: 1076 3 -2 es 
+: 1083 11 -4 fein
+- 1094
+: 1107 3 0 So 
+: 1111 3 0 war 
+: 1116 2 0 es 
+: 1119 3 0 und 
+: 1123 2 0 so 
+: 1127 3 0 wird 
+* 1131 2 2 es 
+: 1136 3 3 im
+: 1140 5 3 mer 
+: 1147 6 2 sein
+: 1155 4 0 ~
+- 1159
+: 1171 3 0 Sie 
+: 1175 3 0 will 
+: 1179 2 0 es 
+: 1183 5 0 und 
+: 1191 6 -5 so 
+* 1199 2 -4 ist 
+* 1204 3 -2 es 
+: 1211 10 -4 Brauch
+- 1221
+: 1231 4 0 Was 
+: 1239 6 0 sie 
+: 1247 6 0 will 
+: 1255 5 2 be
+: 1263 5 3 kommt 
+* 1271 3 3 sie 
+* 1275 5 2 auch
+* 1281 4 0 ~
+- 1285
+: 1295 6 7 Tie
+: 1303 3 7 fe 
+: 1308 5 7 Brun
+: 1316 9 7 nen 
+: 1327 4 8 muss 
+: 1335 3 10 man 
+: 1339 10 8 gra
+: 1351 2 8 ben
+- 1353
+: 1359 6 7 Wenn 
+: 1367 2 7 man 
+: 1371 10 7 kla
+: 1383 3 7 res 
+: 1391 3 8 Was
+: 1396 6 3 ser 
+: 1404 9 3 will
+- 1413
+: 1423 6 3 Ro
+: 1431 2 3 sen
+: 1435 9 3 rot, 
+: 1447 6 3 oh 
+: 1455 3 3 Ro
+: 1459 3 0 ~
+* 1463 2 0 sen
+: 1467 10 0 rot
+- 1477
+: 1487 6 3 Tie
+: 1495 3 3 fe 
+: 1500 3 3 Was
+: 1508 7 3 ser 
+: 1519 4 3 sind 
+: 1527 3 3 nicht 
+: 1535 8 3 still
+- 1543
+: 1552 6 7 Tie
+: 1560 2 7 fe 
+: 1564 5 7 Brun
+: 1572 9 7 nen 
+: 1583 5 8 muss 
+: 1591 3 10 man 
+: 1596 10 8 gra
+: 1608 2 8 ben
+- 1610
+: 1615 6 12 Wenn 
+: 1623 3 11 man 
+: 1627 7 12 kla
+: 1635 2 7 ~
+: 1639 6 7 res 
+: 1647 3 8 Was
+: 1652 4 10 ser
+: 1657 2 8 ~ 
+: 1661 8 8 will
+- 1669
+: 1679 6 7 Ros
+: 1687 2 7 en
+: 1691 10 7 rot, 
+: 1704 5 7 oh 
+* 1711 3 8 Ro
+* 1715 3 3 ~
+: 1719 2 3 sen
+: 1724 10 3 rot
+- 1734
+: 1743 6 3 Tie
+: 1751 3 3 fe 
+: 1756 3 3 Was
+: 1764 9 3 ser 
+: 1775 4 3 sind 
+: 1783 3 3 nicht 
+: 1791 9 3 still
+- 1800 2052
+- 2052
+: 2067 2 0 An 
+: 2071 3 0 sei
+: 2075 2 0 nen 
+: 2079 6 0 Stie
+: 2087 5 -5 feln 
+: 2095 3 -4 bricht 
+: 2100 5 -2 ein 
+: 2108 11 -4 Stein
+- 2119 2120
+- 2120
+: 2135 2 0 Will 
+: 2139 2 0 nicht 
+: 2144 5 0 mehr 
+: 2151 4 0 am 
+: 2159 6 3 Fel
+: 2167 3 3 sen 
+: 2172 5 2 sein
+* 2179 3 0 ~
+- 2182 2183
+- 2183
+: 2198 2 0 Und 
+: 2202 2 0 ein 
+: 2206 7 0 Schrei 
+: 2215 5 -5 tut 
+* 2223 3 -4 je
+: 2228 4 -2 dem 
+: 2235 5 -4 kund
+- 2240
+: 2255 7 -5 Bei
+: 2264 3 -5 de 
+: 2271 6 -5 fal
+: 2279 6 -5 len 
+* 2288 5 -4 in 
+: 2296 2 -9 den 
+: 2300 5 -9 Grund
+- 2305 2308
+- 2308
+: 2323 3 0 Sie 
+: 2327 3 0 will 
+: 2332 2 0 es 
+: 2335 4 0 und 
+: 2343 6 -5 so 
+: 2351 2 -4 ist 
+: 2356 4 -2 es 
+: 2364 10 -4 fein
+- 2374
+* 2387 2 7 So 
+: 2391 2 7 war 
+* 2395 2 7 es 
+: 2399 2 7 und 
+* 2403 2 7 so 
+: 2407 2 7 wird 
+* 2411 2 7 es 
+: 2415 4 8 im
+: 2421 4 3 mer 
+: 2428 15 3 sein
+- 2443
+: 2451 3 0 Sie 
+: 2455 3 0 will 
+: 2460 2 0 es 
+: 2464 4 0 und 
+: 2471 6 -5 so 
+: 2480 3 -4 ist 
+: 2485 4 -2 es 
+: 2492 9 -4 Brauch
+- 2501
+: 2511 4 0 Was 
+: 2519 6 0 sie 
+: 2527 5 0 will 
+: 2535 5 2 be
+: 2543 5 3 kommt 
+: 2551 3 3 sie 
+: 2556 5 2 auch
+* 2564 2 0 ~
+- 2566
+: 2575 6 7 Tie
+: 2583 2 7 fe 
+: 2587 5 7 Brun
+: 2595 10 7 nen 
+: 2607 4 8 muss 
+: 2616 2 10 man 
+: 2620 10 8 gra
+: 2631 2 8 ben
+- 2633
+: 2639 6 12 Wenn 
+* 2647 2 11 man 
+: 2652 6 12 kla
+* 2660 2 7 ~
+: 2664 4 7 res 
+* 2672 3 8 Was
+* 2676 4 10 ser
+* 2681 2 8 ~ 
+: 2684 9 8 will
+- 2693
+: 2703 6 7 Ro
+: 2711 2 7 sen
+: 2715 10 7 rot, 
+: 2728 5 7 oh 
+: 2735 4 8 Ro
+: 2740 2 3 ~
+: 2743 2 3 sen
+: 2748 8 3 rot
+- 2756
+: 2768 6 3 Tie
+: 2776 3 3 fe 
+: 2780 3 3 Was
+: 2788 8 3 ser 
+: 2799 4 3 sind 
+: 2807 3 3 nicht 
+: 2816 7 3 still
+- 2823
+: 2831 6 7 Tie
+: 2839 2 7 fe 
+: 2843 5 7 Brun
+: 2852 9 7 nen 
+: 2863 4 8 muss 
+: 2871 2 10 man 
+: 2876 8 8 gra
+* 2887 1 8 ben
+- 2888
+: 2895 6 12 Wenn 
+: 2903 2 11 man 
+: 2907 7 12 kla
+: 2916 2 7 ~
+: 2920 4 7 res 
+: 2927 4 8 Was
+: 2932 4 10 ser
+: 2937 2 8 ~ 
+: 2940 7 8 will
+- 2947
+: 2959 6 7 Ro
+: 2967 2 7 sen
+: 2971 10 7 rot, 
+: 2984 6 7 oh 
+* 2991 4 8 Ro
+* 2996 2 3 ~
+* 2999 2 3 sen
+: 3004 11 3 rot
+- 3015
+: 3023 6 3 Tie
+: 3031 3 3 fe 
+: 3036 3 3 Was
+: 3044 9 3 ser 
+: 3055 4 3 sind 
+: 3063 3 3 nicht 
+: 3072 7 3 still
+E

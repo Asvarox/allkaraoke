@@ -13182,7 +13182,7 @@
     "gap": 6948.918393471477,
     "year": "2009",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-19T07:36:00.076Z",
+    "lastUpdate": "2025-08-18T11:20:21.975Z",
     "genre": "Dance-pop, synth-pop",
     "realBpm": 125,
     "volume": 0.5,
@@ -13194,7 +13194,7 @@
         "start": 17
       }
     ],
-    "shortId": 4940,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "bagraidersshootingstars",
     "local": false
@@ -33674,7 +33674,7 @@
     "gap": 23613.481826866213,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-19T07:36:00.072Z",
+    "lastUpdate": "2025-08-18T09:25:34.119Z",
     "genre": "Pop",
     "realBpm": 108,
     "volume": 0.5,
@@ -33686,7 +33686,7 @@
         "start": 15
       }
     ],
-    "shortId": 4937,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "depechemodeapainthatimusedto",
     "local": false
@@ -33814,7 +33814,7 @@
     "gap": 19109.43396226415,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-19T07:36:00.073Z",
+    "lastUpdate": "2025-08-18T09:26:00.813Z",
     "genre": "Pop",
     "realBpm": 105,
     "volume": 0.5,
@@ -33826,7 +33826,7 @@
         "start": 14
       }
     ],
-    "shortId": 4938,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "depechemodeprecious",
     "local": false
@@ -33875,7 +33875,7 @@
     "gap": 56636.94150077859,
     "year": "1988",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-19T07:36:00.074Z",
+    "lastUpdate": "2025-08-18T11:19:46.016Z",
     "genre": "Synthpop/New wave",
     "realBpm": 119,
     "volume": 0.5,
@@ -33887,7 +33887,7 @@
         "start": 16
       }
     ],
-    "shortId": 4939,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "depechemodestrangelove88",
     "local": false
@@ -40626,7 +40626,7 @@
     "bpm": 397.91,
     "gap": 24530.181900429747,
     "year": "2005",
-    "lastUpdate": "2025-08-19T07:36:00.374Z",
+    "lastUpdate": "2025-08-18T11:21:32.624Z",
     "genre": "Rock Alternative",
     "realBpm": 150,
     "volume": 0.5,
@@ -40638,7 +40638,7 @@
         "start": 27
       }
     ],
-    "shortId": 4942,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "editorsmunich",
     "local": false
@@ -42893,6 +42893,33 @@
     "shortId": 1516,
     "tracksCount": 1,
     "search": "enriqueiglesiasbailamos",
+    "local": false
+  },
+  {
+    "id": "enrique-iglesias-be-with-you",
+    "title": "Be With You",
+    "artist": "Enrique Iglesias",
+    "video": "yYedTpODkx8",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 27321.774193548386,
+    "year": "1999",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-08-21T00:11:15.253Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.64,
+    "author": "perzu25",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4954,
+    "tracksCount": 1,
+    "search": "enriqueiglesiasbewithyou",
     "local": false
   },
   {
@@ -45847,7 +45874,7 @@
     "gap": 5251.215556031712,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-19T07:35:59.943Z",
+    "lastUpdate": "2025-08-18T09:25:11.978Z",
     "genre": "Altenative/Indie",
     "realBpm": 140,
     "volume": 0.5,
@@ -45859,7 +45886,7 @@
         "start": 19
       }
     ],
-    "shortId": 4936,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "fitzandthetantrumshandclap",
     "local": false
@@ -46746,6 +46773,36 @@
     "shortId": 1651,
     "tracksCount": 1,
     "search": "foofighterslearntofly",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-monkey-wrench",
+    "title": "Monkey Wrench",
+    "artist": "Foo Fighters",
+    "video": "I7rCNiiNPxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.8,
+    "gap": 50144.594180704444,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:14.374Z",
+    "genre": "Rock Alternativo",
+    "videoGap": 36,
+    "realBpm": 174,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Foo%20Fighters&cancion=Monkey%20Wrench",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4946,
+    "tracksCount": 1,
+    "search": "foofightersmonkeywrench",
     "local": false
   },
   {
@@ -48061,29 +48118,30 @@
     "id": "gabry-ponte-tutta-litalia",
     "title": "Tutta l’Italia",
     "artist": "Gabry Ponte",
-    "video": "Le3WpaLYRvE",
+    "video": "iUC9eebtpvI",
     "language": [
       "Italian"
     ],
     "bpm": 384,
-    "gap": 6804.375,
+    "gap": 2404.375,
     "year": "2025",
     "artistOrigin": "SM",
-    "lastUpdate": "2025-04-22T19:27:44.669Z",
+    "lastUpdate": "2025-08-20T12:33:54.807Z",
     "edition": "Esc 2025",
     "genre": "Electronic",
-    "videoGap": 5,
     "realBpm": 128,
-    "volume": 0.82,
-    "author": "Tuupertunut",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
-    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30123",
+    "previewStart": 60,
+    "previewEnd": 99,
+    "volume": 1,
+    "author": "Geklow",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172301",
+    "sourceUrl": "https://usdb.animux.de/",
     "tracks": [
       {
         "start": 26
       }
     ],
-    "shortId": 1699,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "gabrypontetuttalitalia",
     "local": false
@@ -48222,6 +48280,36 @@
     "shortId": 1704,
     "tracksCount": 1,
     "search": "garybarloweltonjohnfacetoface",
+    "local": false
+  },
+  {
+    "id": "gawr-gura-x-casey-edwards-ash-again",
+    "title": "Ash Again",
+    "artist": "Gawr Gura x Casey Edwards",
+    "video": "twUFbqyul_M",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 9501.739130434782,
+    "year": "2025",
+    "lastUpdate": "2025-08-21T00:11:14.399Z",
+    "genre": "Alternative",
+    "realBpm": 115,
+    "volume": 0.5,
+    "author": "Jiiniasu",
+    "sourceUrl": "https://www.youtube.com/watch?v=twUFbqyul_M",
+    "tracks": [
+      {
+        "start": 15
+      },
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4952,
+    "tracksCount": 2,
+    "search": "gawrguraxcaseyedwardsashagain",
     "local": false
   },
   {
@@ -49217,6 +49305,33 @@
     "shortId": 1738,
     "tracksCount": 1,
     "search": "ghostmonstranceclock",
+    "local": false
+  },
+  {
+    "id": "ghost-peacefield",
+    "title": "Peacefield",
+    "artist": "Ghost",
+    "video": "5w-XjMGfR_I",
+    "language": [
+      "English"
+    ],
+    "bpm": 249,
+    "gap": -43.13253012048199,
+    "year": "2025",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-08-21T00:11:15.418Z",
+    "genre": "Hard Rock",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "lukmuk",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4959,
+    "tracksCount": 1,
+    "search": "ghostpeacefield",
     "local": false
   },
   {
@@ -68032,6 +68147,33 @@
     "local": false
   },
   {
+    "id": "kocchi-no-kento-hai-yorokonde",
+    "title": "Hai Yorokonde",
+    "artist": "Kocchi no Kento",
+    "video": "jzi6RNVEOtA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 294,
+    "gap": 7539.591836734694,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-21T00:11:15.254Z",
+    "realBpm": 147,
+    "volume": 0.5,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=30540",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4955,
+    "tracksCount": 1,
+    "search": "kocchinokentohaiyorokonde",
+    "local": false
+  },
+  {
     "id": "kodaline-all-i-want",
     "title": "All I Want",
     "artist": "Kodaline",
@@ -68248,6 +68390,35 @@
     "shortId": 2402,
     "tracksCount": 1,
     "search": "kornfreakonaleash",
+    "local": false
+  },
+  {
+    "id": "korn-make-me-bad",
+    "title": "Make Me Bad",
+    "artist": "KoRn",
+    "video": "ujEph5vFwmc",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.50000000000003,
+    "gap": 58152.619754133106,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:15.419Z",
+    "genre": "Rock",
+    "realBpm": 110,
+    "volume": 0.6,
+    "author": "jdogk",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=6182",
+    "tracks": [
+      {
+        "name": "Make Me Bad",
+        "start": 16
+      }
+    ],
+    "shortId": 4960,
+    "tracksCount": 1,
+    "search": "kornmakemebad",
     "local": false
   },
   {
@@ -71504,6 +71675,34 @@
     "shortId": 2519,
     "tracksCount": 1,
     "search": "laurapausiniencambiono",
+    "local": false
+  },
+  {
+    "id": "laura-thorn-la-poupee-monte-le-son-esc-2025-luxembourg",
+    "title": "La poupée monte le son (ESC 2025 Luxembourg)",
+    "artist": "Laura Thorn",
+    "video": "GT7ZZBCscUg",
+    "language": [
+      "French"
+    ],
+    "bpm": 396,
+    "gap": 19225.151515151516,
+    "year": "2025",
+    "artistOrigin": "LU",
+    "lastUpdate": "2025-08-21T00:11:14.387Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Geklow",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172301",
+    "sourceUrl": "https://usdb.animux.de/",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4948,
+    "tracksCount": 1,
+    "search": "laurathornlapoupeemontelesonesc2025luxembourg",
     "local": false
   },
   {
@@ -83199,6 +83398,36 @@
     "local": false
   },
   {
+    "id": "metallica-for-whom-the-bell-tolls",
+    "title": "For Whom The Bell Tolls",
+    "artist": "Metallica",
+    "video": "B_HSa1dEL9s",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.6,
+    "gap": 125548.3305509182,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:14.389Z",
+    "genre": "Metal",
+    "realBpm": 118,
+    "previewStart": 125,
+    "previewEnd": 175,
+    "volume": 0.6,
+    "author": "IC",
+    "tracks": [
+      {
+        "name": "For Whom The Bell Tolls",
+        "start": 16
+      }
+    ],
+    "shortId": 4949,
+    "tracksCount": 1,
+    "search": "metallicaforwhomthebelltolls",
+    "local": false
+  },
+  {
     "id": "metallica-harvester-of-sorrow",
     "title": "Harvester Of Sorrow",
     "artist": "Metallica",
@@ -84205,6 +84434,37 @@
     "shortId": 2966,
     "tracksCount": 1,
     "search": "michaeljacksonsmoothcriminalsingleversion",
+    "local": false
+  },
+  {
+    "id": "michael-jackson-they-dont-care-about-us",
+    "title": "They Don't Care About Us",
+    "artist": "Michael Jackson",
+    "video": "QNJL6nfu__Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.08,
+    "gap": 40282.87103224194,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:15.414Z",
+    "genre": "Pop Rock",
+    "realBpm": 90,
+    "previewStart": 104,
+    "previewEnd": 158,
+    "volume": 1,
+    "author": "chelste",
+    "authorUrl": "https://ultrastar-es.org/pt/canciones?creador=chelste",
+    "sourceUrl": "https://ultrastar-es.org/pt/canciones?artista=Michael%20Jackson&cancion=They%20don%27t%20care%20about%20us",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4957,
+    "tracksCount": 1,
+    "search": "michaeljacksontheydontcareaboutus",
     "local": false
   },
   {
@@ -95030,7 +95290,7 @@
     "gap": 55210.63098504063,
     "year": "1998",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-19T07:36:00.208Z",
+    "lastUpdate": "2025-08-18T11:20:57.501Z",
     "genre": "Industrial Rock",
     "videoGap": 14,
     "realBpm": 170,
@@ -95043,7 +95303,7 @@
         "start": 26
       }
     ],
-    "shortId": 4941,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "orgybluemonday",
     "local": false
@@ -102315,6 +102575,34 @@
     "local": false
   },
   {
+    "id": "rammstein-rosenrot",
+    "title": "Rosenrot",
+    "artist": "Rammstein",
+    "video": "af59U2BRRAU",
+    "language": [
+      "German"
+    ],
+    "bpm": 227.82,
+    "gap": 7497.378193310508,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-08-21T00:11:14.383Z",
+    "realBpm": 114,
+    "volume": 0.5,
+    "author": "Beneblade",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=beneblade",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Rammstein&cancion=Rosenrot",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4947,
+    "tracksCount": 1,
+    "search": "rammsteinrosenrot",
+    "local": false
+  },
+  {
     "id": "ramones-pet-sematary",
     "title": "Pet Sematary",
     "artist": "Ramones",
@@ -103126,7 +103414,7 @@
     "gap": 3352.013554644698,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-19T07:36:00.532Z",
+    "lastUpdate": "2025-08-18T11:23:33.138Z",
     "genre": "Pop",
     "realBpm": 123,
     "volume": 0.5,
@@ -103138,7 +103426,7 @@
         "start": 16
       }
     ],
-    "shortId": 4943,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "reel2realiliketomoveit",
     "local": false
@@ -115039,7 +115327,7 @@
     "gap": 8879.929543076387,
     "year": "1981",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-19T07:35:59.808Z",
+    "lastUpdate": "2025-08-18T09:24:46.767Z",
     "genre": "Pop",
     "realBpm": 143,
     "volume": 0.5,
@@ -115051,7 +115339,7 @@
         "start": 19
       }
     ],
-    "shortId": 4935,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "softcelltaintedlove",
     "local": false
@@ -116949,7 +117237,7 @@
     "gap": 10613.53501522401,
     "year": "2021",
     "artistOrigin": "BE",
-    "lastUpdate": "2025-08-19T07:35:59.807Z",
+    "lastUpdate": "2025-08-18T09:24:07.576Z",
     "genre": "Pop",
     "realBpm": 138,
     "volume": 0.5,
@@ -116961,7 +117249,7 @@
         "start": 25
       }
     ],
-    "shortId": 4934,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "stromaesante",
     "local": false
@@ -119532,6 +119820,34 @@
     "shortId": 4176,
     "tracksCount": 1,
     "search": "tanbionicaobsesionarioenlamayor",
+    "local": false
+  },
+  {
+    "id": "tarkan-kuzu-kuzu",
+    "title": "Kuzu Kuzu",
+    "artist": "Tarkan",
+    "video": "Ew2o0DnXpCI",
+    "language": [
+      "Turkish",
+      "English"
+    ],
+    "bpm": 188,
+    "gap": 9981.765957446809,
+    "year": "2001",
+    "artistOrigin": "TR",
+    "lastUpdate": "2025-08-21T00:11:15.416Z",
+    "realBpm": 94,
+    "volume": 0.5,
+    "author": "Tarkan",
+    "tracks": [
+      {
+        "name": "Kuzu kuzu",
+        "start": 13
+      }
+    ],
+    "shortId": 4958,
+    "tracksCount": 1,
+    "search": "tarkankuzukuzu",
     "local": false
   },
   {
@@ -122870,6 +123186,33 @@
     "local": false
   },
   {
+    "id": "the-black-keys-gold-on-the-ceiling",
+    "title": "Gold On The Ceiling",
+    "artist": "The Black Keys",
+    "video": "6yCIDkFI7ew",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.38,
+    "gap": 27956.886421466574,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:14.391Z",
+    "genre": "Rock",
+    "realBpm": 130,
+    "volume": 0.5,
+    "author": "mus31",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4951,
+    "tracksCount": 1,
+    "search": "theblackkeysgoldontheceiling",
+    "local": false
+  },
+  {
     "id": "the-black-keys-lonely-boy",
     "title": "Lonely boy",
     "artist": "The Black Keys",
@@ -122895,6 +123238,32 @@
     "shortId": 4295,
     "tracksCount": 1,
     "search": "theblackkeyslonelyboy",
+    "local": false
+  },
+  {
+    "id": "the-black-keys-tighten-up",
+    "title": "Tighten Up",
+    "artist": "The Black Keys",
+    "video": "mpaPBCBjSVc",
+    "language": [
+      "English"
+    ],
+    "bpm": 218.12,
+    "gap": 45508.45772969008,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-21T00:11:14.390Z",
+    "realBpm": 109,
+    "volume": 0.5,
+    "author": "choosie",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 4950,
+    "tracksCount": 1,
+    "search": "theblackkeystightenup",
     "local": false
   },
   {
@@ -125874,7 +126243,7 @@
     "gap": 47656.28571428572,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-19T07:36:00.659Z",
+    "lastUpdate": "2025-08-18T11:25:59.403Z",
     "genre": "Rock",
     "videoGap": 13,
     "realBpm": 124,
@@ -125887,7 +126256,7 @@
         "start": 23
       }
     ],
-    "shortId": 4945,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theraconteurssteadyasshegoes",
     "local": false
@@ -130158,6 +130527,34 @@
     "shortId": 4525,
     "tracksCount": 1,
     "search": "tonibraxtonunbreakmyheart",
+    "local": false
+  },
+  {
+    "id": "tony-carreira-sonhos-de-menino",
+    "title": "Sonhos de menino",
+    "artist": "Tony Carreira",
+    "video": "Sx_OALoIrj8",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 256.6,
+    "gap": 911.2353858144972,
+    "year": "1997",
+    "artistOrigin": "PT",
+    "lastUpdate": "2025-08-21T00:11:15.412Z",
+    "realBpm": 128,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pt/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pt/canciones?artista=Tony%20Carreira&cancion=Sonhos%20de%20menino",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4956,
+    "tracksCount": 1,
+    "search": "tonycarreirasonhosdemenino",
     "local": false
   },
   {
@@ -134681,7 +135078,7 @@
     "gap": 11920.416493127863,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-19T07:36:00.658Z",
+    "lastUpdate": "2025-08-18T11:23:57.027Z",
     "genre": "Rock Alternativo",
     "realBpm": 120,
     "volume": 0.5,
@@ -134693,7 +135090,7 @@
         "start": 16
       }
     ],
-    "shortId": 4944,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "weezerporkandbeans",
     "local": false
@@ -137949,6 +138346,33 @@
     "shortId": 4794,
     "tracksCount": 1,
     "search": "zielonezabkinumerekwkrzaczkach",
+    "local": false
+  },
+  {
+    "id": "ziferblat-bird-of-pray-esc-2025-ukraine",
+    "title": "Bird Of Pray (ESC 2025 Ukraine)",
+    "artist": "Ziferblat",
+    "video": "OJ1x2aiL7ks",
+    "language": [
+      "Ukrainian",
+      "English"
+    ],
+    "bpm": 201,
+    "gap": 3859.8507462686566,
+    "year": "2025",
+    "artistOrigin": "UA",
+    "lastUpdate": "2025-08-21T00:11:15.106Z",
+    "realBpm": 201,
+    "volume": 0.5,
+    "author": "Tuupertunut",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4953,
+    "tracksCount": 1,
+    "search": "ziferblatbirdofprayesc2025ukraine",
     "local": false
   },
   {

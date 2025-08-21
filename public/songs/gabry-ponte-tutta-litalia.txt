@@ -1,22 +1,23 @@
 #ARTIST:Gabry Ponte
 #TITLE:Tutta l’Italia
-#CREATOR:Tuupertunut
+#CREATOR:Geklow
 #BPM:384
 #YEAR:2025
-#VIDEO:v=Le3WpaLYRvE
-#VIDEOGAP:5
+#PREVIEWSTART:60
+#VIDEO:v=iUC9eebtpvI
 #GENRE:Electronic
 #LANGUAGE:Italian
-#GAP:6804,375
+#GAP:2404,375
 #EDITION:Esc 2025
 #ALLKARAOKE_ID:gabry-ponte-tutta-litalia
-#ALLKARAOKE_SID:1699
-#ALLKARAOKE_LASTUPDATE:2025-04-22T19:27:44.669Z
+#ALLKARAOKE_SID:-1
+#ALLKARAOKE_LASTUPDATE:2025-08-20T12:33:54.807Z
 #ALLKARAOKE_ARTISTORIGIN:SM
-#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=189927
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=172301
 #ALLKARAOKE_REALBPM:128
-#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=30123
-#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/
+#ALLKARAOKE_PREVIEWEND:99
+#ALLKARAOKE_VOLUME:1
 #MP3:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino).mp3
 #COVER:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino) [CO].jpg
 #BACKGROUND:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino) [BG].jpg
