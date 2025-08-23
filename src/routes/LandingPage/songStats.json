@@ -89,6 +89,7 @@
     "blink-182",
     "Bryan Adams",
     "Creed",
+    "Eminem",
     "Genesis",
     "Hamilton",
     "Jason Derulo",
@@ -107,7 +108,6 @@
     "Chris Brown",
     "Daft Punk",
     "Duran Duran",
-    "Eminem",
     "Frank Sinatra",
     "George Michael",
     "Hilary Duff",
@@ -135,6 +135,7 @@
     "Guns N' Roses",
     "Heart",
     "Hollywood Undead",
+    "INXS",
     "Justin Bieber",
     "Justin Timberlake",
     "Keane",
@@ -143,13 +144,12 @@
     "Ne-Yo",
     "Nelly Furtado",
     "Ozzy Osbourne",
+    "P!nk",
     "Prince and the Revolution",
     "Seal",
     "Selena Gomez & The Scene",
     "Shakira",
-    "Shania Twain",
-    "Shawn Mendes",
-    "Taio Cruz"
+    "Shania Twain"
   ],
   "languages": [
     "Armenian",
@@ -187,5 +187,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5003
+  "songs": 5029
 }

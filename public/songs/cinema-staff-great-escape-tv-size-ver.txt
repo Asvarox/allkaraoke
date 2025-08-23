@@ -1,0 +1,230 @@
+#ARTIST:cinema staff
+#TITLE:Great Escape - TV Size Ver.
+#CREATOR:hqmmy
+#BPM:399,9
+#YEAR:2013
+#PREVIEWSTART:45
+#VIDEO:v=-Jb28YMGNPA
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:13501,246811702926
+#ALLKARAOKE_ID:cinema-staff-great-escape-tv-size-ver
+#ALLKARAOKE_SID:4965
+#ALLKARAOKE_LASTUPDATE:2025-08-23T00:12:22.701Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:184
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=-Jb28YMGNPA&ab_channel=SamehadaSword
+#ALLKARAOKE_PREVIEWEND:80
+#ALLKARAOKE_VOLUME:0,96
+#P1:Great Escape
+#VERSION:1.2.0
+#COVER:cinema staff - Great Escape - TV Size Ver [CO].jpg
+#COVERURL:http://coverartarchive.org/release/51b7f5f8-f448-481c-b80e-d374690c5eda/34536656638.jpg
+#MP3:cinema staff - Great Escape - TV Size Ver.mp3
+#AUDIO:cinema staff - Great Escape - TV Size Ver.mp3
+#VOCALS:cinema staff - Great Escape - TV Size Ver [Vocals].mp3
+#INSTRUMENTAL:cinema staff - Great Escape - TV Size Ver [Instrumental].mp3
+#VIDEOURL:https://www.youtube.com/watch?v=-Jb28YMGNPA
+#COMMENT:Score: total: 7991, notes: 7320 line: 671, golden: 0
+: 27 3 10 Ta
+: 32 4 11 to
+: 36 11 13 e
+: 48 13 14 ba 
+: 62 5 11 o
+: 68 15 11 re 
+: 84 10 13 ga 
+: 95 4 9 o
+: 100 16 9 re 
+: 117 6 11 ja
+: 123 6 12 ~ 
+: 130 7 8 nai 
+: 138 3 8 to 
+: 142 4 9 shi
+: 147 12 9 te
+- 159
+: 171 1 11 o
+: 172 16 13 mae 
+: 189 12 14 wa 
+: 202 3 11 o
+: 205 4 10 mae
+: 209 5 11 ~
+: 214 4 10 ~ 
+: 218 4 11 da 
+: 223 9 12 to 
+: 242 6 18 i
+: 248 5 16 ki
+: 254 3 12 re
+: 258 3 13 ~
+: 262 2 11 ru 
+: 265 2 13 no 
+: 270 25 14 ka?
+- 295
+: 304 3 11 su
+: 308 17 14 na 
+: 327 12 13 no 
+: 340 3 11 u
+: 343 3 13 tsu
+: 346 8 12 ~
+: 355 4 11 wa 
+: 360 4 13 wo
+: 364 8 15 ~
+- 372
+: 375 6 8 ko
+: 381 10 9 wa
+: 392 5 10 shi
+: 397 3 11 te
+: 400 7 12 ~ 
+: 408 3 9 ko
+: 412 10 8 bo
+: 423 5 8 re
+: 429 7 9 ta
+- 436
+: 447 3 13 ko
+: 450 6 11 ko
+: 456 7 13 ro
+: 464 12 14 wo 
+: 477 20 11 hiro
+: 498 6 15 t
+: 504 5 15 te 
+: 513 3 17 a
+: 517 7 18 tsu
+: 524 5 16 me
+: 530 5 15 ra
+: 535 5 13 ~
+: 540 3 11 re
+: 543 4 13 ru
+: 548 25 14 ka?
+- 573
+: 580 11 17 da
+: 592 5 15 re
+: 599 10 12 ka 
+: 610 5 10 no 
+* 616 9 19 yo
+* 626 9 12 bu 
+* 636 3 14 ko
+* 639 5 13 ~
+* 644 5 15 e 
+* 652 57 15 ga
+- 709
+: 720 7 18 mi
+: 729 2 18 mi
+: 731 3 17 ~
+: 737 9 12 na
+: 747 8 10 ri
+: 755 8 9 ni 
+: 764 8 10 ka
+: 773 4 10 wa
+: 777 4 11 ~
+: 781 5 8 ~ 
+: 790 22 7 tta
+- 812
+* 824 8 18 to
+* 834 8 13 ki 
+* 843 7 19 ga 
+* 851 7 13 to
+* 859 8 19 ma
+* 868 4 19 tta 
+* 873 5 19 mi
+* 879 6 16 ta
+* 886 8 12 i 
+* 895 30 9 da
+* 925 5 11 ~
+* 930 30 13 ~
+- 960
+: 965 11 18 saa
+: 976 2 16 ~ 
+: 981 11 14 me 
+: 992 5 11 o 
+: 999 8 18 sa
+: 1008 6 20 ma
+: 1016 13 13 se
+- 1029
+: 1039 5 20 fu
+: 1044 3 16 ~
+: 1054 4 15 ka
+: 1059 3 20 i
+: 1062 3 18 ~ 
+: 1070 3 17 ya
+: 1073 2 18 ~
+: 1076 7 20 mi 
+: 1085 6 18 o
+: 1092 7 19 re 
+: 1101 6 16 wa 
+: 1108 6 17 nu
+: 1116 8 15 ke
+: 1125 6 14 da
+: 1132 2 12 shi
+: 1134 6 13 ~
+: 1143 21 18 ta
+- 1164
+: 1179 9 29 ha
+: 1189 7 28 ya
+: 1196 9 30 te 
+: 1209 5 26 mi
+: 1214 8 29 ta
+: 1223 5 30 i 
+: 1229 7 30 ni 
+: 1237 11 29 ni
+: 1248 8 27 ge
+: 1256 7 25 da
+: 1264 8 26 shi
+: 1273 29 23 ta
+- 1302
+: 1317 8 28 i
+: 1330 5 28 ki
+: 1335 7 28 ta 
+: 1348 5 25 shi
+: 1353 2 27 ka
+: 1355 4 28 ~
+: 1360 8 29 ba
+: 1368 8 31 ne 
+: 1378 4 26 mi
+: 1382 3 27 ~
+: 1387 10 27 ta
+: 1397 7 25 i 
+: 1405 9 26 da
+: 1416 4 26 tta
+: 1421 8 30 ~
+- 1429
+: 1439 17 22 o
+: 1457 5 26 re
+: 1462 10 23 ~
+: 1474 4 25 da
+: 1478 6 28 ~
+: 1484 3 23 ~
+: 1491 15 22 chi 
+: 1509 9 25 wa 
+: 1520 5 25 ka
+: 1525 7 26 be 
+: 1533 4 27 no 
+: 1538 7 26 so
+: 1545 5 28 to 
+: 1551 11 22 e
+: 1562 8 23 ~
+- 1570
+: 1574 3 25 ma
+: 1577 6 27 ta 
+: 1585 5 27 a
+: 1591 8 25 ou
+: 1599 4 28 ~ 
+: 1605 16 23 ze
+- 1621
+* 1625 4 24 chi
+* 1630 5 29 zu
+* 1635 2 28 ~ 
+* 1638 4 28 ni 
+* 1642 5 26 na
+* 1647 3 27 i 
+* 1651 3 23 ba
+* 1654 2 26 ~
+* 1656 7 29 sho
+* 1663 2 28 ~
+* 1665 3 26 ~ 
+* 1672 5 26 de~
+* 1677 20 27 ~
+* 1697 8 28 ~
+* 1705 3 29 ~
+* 1708 17 30 ~
+* 1725 5 31 ~
+* 1730 3 32 ~
+E
