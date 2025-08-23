@@ -1934,6 +1934,33 @@
     "local": false
   },
   {
+    "id": "abor-tynna-baller-esc-2025-germany",
+    "title": "Baller (ESC 2025 Germany)",
+    "artist": "Abor & Tynna",
+    "video": "3rrWZ6cldsA",
+    "language": [
+      "German"
+    ],
+    "bpm": 276,
+    "gap": 19851.739130434784,
+    "year": "2025",
+    "artistOrigin": "AT",
+    "lastUpdate": "2025-08-23T00:12:22.704Z",
+    "genre": "German Pop, Club",
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "Dragon33",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4967,
+    "tracksCount": 1,
+    "search": "abortynnaballeresc2025germany",
+    "local": false
+  },
+  {
     "id": "acdc-back-in-black",
     "title": "Back in Black",
     "artist": "AC/DC",
@@ -3052,6 +3079,34 @@
     "shortId": 107,
     "tracksCount": 1,
     "search": "adousseewa",
+    "local": false
+  },
+  {
+    "id": "ado-where-the-wind-blows-piano-ver",
+    "title": "Where the wind blows (Piano Ver.)",
+    "artist": "Ado",
+    "video": "YO-rXgQKlF8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 384.11,
+    "gap": 17015.66585092812,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-23T00:12:23.012Z",
+    "genre": "J-Pop",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "hqmmy",
+    "sourceUrl": "https://www.youtube.com/watch?v=YO-rXgQKlF8&ab_channel=Ado",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 4970,
+    "tracksCount": 1,
+    "search": "adowherethewindblowspianover",
     "local": false
   },
   {
@@ -5643,6 +5698,34 @@
     "local": false
   },
   {
+    "id": "all-saints-black-coffee",
+    "title": "Black Coffee",
+    "artist": "All Saints",
+    "video": "v0Xej6Sz5nU",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 9130,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.014Z",
+    "genre": "Pop",
+    "realBpm": 13,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "All Saints\tBlack Coffee",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4971,
+    "tracksCount": 1,
+    "search": "allsaintsblackcoffee",
+    "local": false
+  },
+  {
     "id": "all-time-low-dear-maria-count-me-in",
     "title": "Dear Maria, Count Me In",
     "artist": "All Time Low",
@@ -6839,6 +6922,34 @@
     "local": false
   },
   {
+    "id": "amerie-1-thing",
+    "title": "1 Thing",
+    "artist": "Amerie",
+    "video": "bbqVg_23otg",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.6,
+    "gap": 9996.486486486487,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:23.294Z",
+    "genre": "R&B",
+    "realBpm": -43,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Amerie - 1 Thing",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 4975,
+    "tracksCount": 1,
+    "search": "amerie1thing",
+    "local": false
+  },
+  {
     "id": "amor-electro-so-e-fogo-se-queimar",
     "title": "Só é fogo se queimar",
     "artist": "Amor Electro",
@@ -7278,6 +7389,34 @@
     "shortId": 253,
     "tracksCount": 1,
     "search": "anahimehipnotizas",
+    "local": false
+  },
+  {
+    "id": "anastacia-im-outta-love",
+    "title": "I’m Outta Love",
+    "artist": "Anastacia",
+    "video": "TnOy6HEf7HU",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 19115.29411764706,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:23.423Z",
+    "genre": "R&B",
+    "realBpm": -20,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Anastacia - I’m Outta Love",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 4976,
+    "tracksCount": 1,
+    "search": "anastaciaimouttalove",
     "local": false
   },
   {
@@ -13197,6 +13336,33 @@
     "shortId": -1,
     "tracksCount": 1,
     "search": "bagraidersshootingstars",
+    "local": false
+  },
+  {
+    "id": "baha-men-who-let-the-dogs-out",
+    "title": "Who Let The Dogs Out",
+    "artist": "Baha Men",
+    "video": "ojULkWEUsPs",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.4,
+    "gap": 16143.157894736842,
+    "year": "2000",
+    "artistOrigin": "BS",
+    "lastUpdate": "2025-08-23T00:12:23.679Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "rafallus",
+    "sourceUrl": "Baha Men - Who Let The Dogs Out",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4981,
+    "tracksCount": 1,
+    "search": "bahamenwholetthedogsout",
     "local": false
   },
   {
@@ -27567,6 +27733,37 @@
     "local": false
   },
   {
+    "id": "cinema-staff-great-escape-tv-size-ver",
+    "title": "Great Escape - TV Size Ver.",
+    "artist": "cinema staff",
+    "video": "-Jb28YMGNPA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 399.9,
+    "gap": 13501.246811702926,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-23T00:12:22.701Z",
+    "genre": "Anime",
+    "realBpm": 184,
+    "previewStart": 45,
+    "previewEnd": 80,
+    "volume": 0.96,
+    "author": "hqmmy",
+    "sourceUrl": "https://www.youtube.com/watch?v=-Jb28YMGNPA&ab_channel=SamehadaSword",
+    "tracks": [
+      {
+        "name": "Great Escape",
+        "start": 27
+      }
+    ],
+    "shortId": 4965,
+    "tracksCount": 1,
+    "search": "cinemastaffgreatescapetvsizever",
+    "local": false
+  },
+  {
     "id": "ciro-y-los-persas-astros",
     "title": "Astros",
     "artist": "Ciro y Los Persas",
@@ -31232,6 +31429,34 @@
     "shortId": 1102,
     "tracksCount": 1,
     "search": "danielesilvestriginoelalfetta",
+    "local": false
+  },
+  {
+    "id": "dannii-minogue-i-begin-to-wonder",
+    "title": "I Begin To Wonder",
+    "artist": "Dannii Minogue",
+    "video": "1YblCV3Iz2k",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.2,
+    "gap": 6238.897700237906,
+    "year": "2003",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-23T00:12:24.086Z",
+    "genre": "Pop",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Dannii Minogue - I Begin To Wonder",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4985,
+    "tracksCount": 1,
+    "search": "danniiminogueibegintowonder",
     "local": false
   },
   {
@@ -35137,6 +35362,32 @@
     "shortId": 1237,
     "tracksCount": 1,
     "search": "disneysbeautyandthebeasthowdoesamomentlastforever",
+    "local": false
+  },
+  {
+    "id": "disneys-brave-julie-fowlis-touch-the-sky",
+    "title": "Touch The Sky",
+    "artist": "Disney’s Brave (Julie Fowlis)",
+    "video": "TJFcbHOgXOc",
+    "language": [
+      "English"
+    ],
+    "bpm": 302.83,
+    "gap": 20639.345177162104,
+    "year": "2012",
+    "lastUpdate": "2025-08-23T00:12:22.067Z",
+    "genre": "Folk",
+    "realBpm": 79,
+    "volume": 0.5,
+    "author": "Jahner",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 4963,
+    "tracksCount": 1,
+    "search": "disneysbravejuliefowlistouchthesky",
     "local": false
   },
   {
@@ -42566,6 +42817,32 @@
     "local": false
   },
   {
+    "id": "eminem-rap-god",
+    "title": "Rap God",
+    "artist": "Eminem",
+    "video": "XbGs_qK2PQA",
+    "language": [
+      "English"
+    ],
+    "bpm": 600,
+    "gap": 170,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:23.007Z",
+    "realBpm": 148,
+    "volume": 0.5,
+    "author": "UnisusJr",
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "shortId": 4969,
+    "tracksCount": 1,
+    "search": "eminemrapgod",
+    "local": false
+  },
+  {
     "id": "eminem-the-real-slim-shady",
     "title": "The Real Slim Shady",
     "artist": "Eminem",
@@ -42907,7 +43184,7 @@
     "gap": 27321.774193548386,
     "year": "1999",
     "artistOrigin": "ES",
-    "lastUpdate": "2025-08-21T00:11:15.253Z",
+    "lastUpdate": "2025-08-20T20:45:26.159Z",
     "genre": "Pop",
     "realBpm": 122,
     "volume": 0.64,
@@ -42917,7 +43194,7 @@
         "start": 17
       }
     ],
-    "shortId": 4954,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "enriqueiglesiasbewithyou",
     "local": false
@@ -46787,7 +47064,7 @@
     "gap": 50144.594180704444,
     "year": "1997",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:14.374Z",
+    "lastUpdate": "2025-08-20T06:28:53.466Z",
     "genre": "Rock Alternativo",
     "videoGap": 36,
     "realBpm": 174,
@@ -46800,7 +47077,7 @@
         "start": 26
       }
     ],
-    "shortId": 4946,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "foofightersmonkeywrench",
     "local": false
@@ -48170,6 +48447,34 @@
     "local": false
   },
   {
+    "id": "ganggajang-sounds-of-then-this-is-australia",
+    "title": "Sounds Of Then (This Is Australia)",
+    "artist": "GANGgajang",
+    "video": "ML9h3I5Uktw",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.4,
+    "gap": 13890.737327188941,
+    "year": "1985",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-23T00:12:23.427Z",
+    "genre": "Rock",
+    "realBpm": -82,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "GANGgajang - Sounds Of Then (This Is Australia)",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 4978,
+    "tracksCount": 1,
+    "search": "ganggajangsoundsofthenthisisaustralia",
+    "local": false
+  },
+  {
     "id": "gansehaut-karl-der-kafer",
     "title": "Karl der Käfer",
     "artist": "Gänsehaut",
@@ -48293,7 +48598,7 @@
     "bpm": 230,
     "gap": 9501.739130434782,
     "year": "2025",
-    "lastUpdate": "2025-08-21T00:11:14.399Z",
+    "lastUpdate": "2025-08-20T20:44:04.209Z",
     "genre": "Alternative",
     "realBpm": 115,
     "volume": 0.5,
@@ -48307,7 +48612,7 @@
         "start": 15
       }
     ],
-    "shortId": 4952,
+    "shortId": -1,
     "tracksCount": 2,
     "search": "gawrguraxcaseyedwardsashagain",
     "local": false
@@ -49319,7 +49624,7 @@
     "gap": -43.13253012048199,
     "year": "2025",
     "artistOrigin": "SE",
-    "lastUpdate": "2025-08-21T00:11:15.418Z",
+    "lastUpdate": "2025-08-20T20:48:44.879Z",
     "genre": "Hard Rock",
     "realBpm": 124,
     "volume": 0.5,
@@ -49329,7 +49634,7 @@
         "start": 13
       }
     ],
-    "shortId": 4959,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "ghostpeacefield",
     "local": false
@@ -57556,6 +57861,34 @@
     "local": false
   },
   {
+    "id": "inxs-new-sensation",
+    "title": "New Sensation",
+    "artist": "INXS",
+    "video": "azfG5H-pCVg",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.62,
+    "gap": 32948.27443899923,
+    "year": "1987",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-23T00:12:23.424Z",
+    "genre": "Pop",
+    "realBpm": 39,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "INXS - New Sensation",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4977,
+    "tracksCount": 1,
+    "search": "inxsnewsensation",
+    "local": false
+  },
+  {
     "id": "inxs-original-sin",
     "title": "Original Sin",
     "artist": "INXS",
@@ -58667,6 +59000,62 @@
     "local": false
   },
   {
+    "id": "jamiroquai-cosmic-girl",
+    "title": "Cosmic Girl",
+    "artist": "Jamiroquai",
+    "video": "D-NvQ6VJYtE",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.05,
+    "gap": 18996.025935996655,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.161Z",
+    "genre": "Pop",
+    "realBpm": 8,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamiroquai\tCosmic Girl",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4972,
+    "tracksCount": 1,
+    "search": "jamiroquaicosmicgirl",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-too-young-to-die",
+    "title": "Too Young To Die",
+    "artist": "Jamiroquai",
+    "video": "mjeWKssl8Ic",
+    "language": [
+      "English"
+    ],
+    "bpm": 203.4,
+    "gap": 22538.05896805897,
+    "year": "1993",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.164Z",
+    "genre": "Funk",
+    "realBpm": 6,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Jamiroquai - Too Young To Die",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4973,
+    "tracksCount": 1,
+    "search": "jamiroquaitooyoungtodie",
+    "local": false
+  },
+  {
     "id": "jamiroquai-virtual-insanity",
     "title": "Virtual Insanity",
     "artist": "Jamiroquai",
@@ -59250,6 +59639,34 @@
     "shortId": 2082,
     "tracksCount": 1,
     "search": "javieramenaotraera",
+    "local": false
+  },
+  {
+    "id": "javine-real-things",
+    "title": "Real Things",
+    "artist": "Javine",
+    "video": "r0ZmiBDu0pY",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.05,
+    "gap": 10975.24368907773,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.552Z",
+    "genre": "Urban",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Javine - Real Things",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 4979,
+    "tracksCount": 1,
+    "search": "javinerealthings",
     "local": false
   },
   {
@@ -60293,6 +60710,34 @@
     "shortId": 2118,
     "tracksCount": 1,
     "search": "jimijamisonimalwaysherebaywatchtheme",
+    "local": false
+  },
+  {
+    "id": "jimmy-barnes-working-class-man",
+    "title": "Working Class Man",
+    "artist": "Jimmy Barnes",
+    "video": "t3TPmPOrDEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.1,
+    "gap": 12952.142857142857,
+    "year": "1985",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-23T00:12:23.676Z",
+    "genre": "Rock",
+    "realBpm": -56,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Jimmy Barnes - Working Class Man",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 4980,
+    "tracksCount": 1,
+    "search": "jimmybarnesworkingclassman",
     "local": false
   },
   {
@@ -68158,7 +68603,7 @@
     "gap": 7539.591836734694,
     "year": "2024",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-08-21T00:11:15.254Z",
+    "lastUpdate": "2025-08-20T20:45:47.114Z",
     "realBpm": 147,
     "volume": 0.5,
     "author": "DeinAlptraum, HansiMcKlaus",
@@ -68168,7 +68613,7 @@
         "start": 20
       }
     ],
-    "shortId": 4955,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "kocchinokentohaiyorokonde",
     "local": false
@@ -68404,7 +68849,7 @@
     "gap": 58152.619754133106,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:15.419Z",
+    "lastUpdate": "2025-08-20T20:49:39.283Z",
     "genre": "Rock",
     "realBpm": 110,
     "volume": 0.6,
@@ -68416,7 +68861,7 @@
         "start": 16
       }
     ],
-    "shortId": 4960,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "kornmakemebad",
     "local": false
@@ -71689,7 +72134,7 @@
     "gap": 19225.151515151516,
     "year": "2025",
     "artistOrigin": "LU",
-    "lastUpdate": "2025-08-21T00:11:14.387Z",
+    "lastUpdate": "2025-08-20T06:30:46.709Z",
     "realBpm": 130,
     "volume": 1,
     "author": "Geklow",
@@ -71700,7 +72145,7 @@
         "start": 26
       }
     ],
-    "shortId": 4948,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "laurathornlapoupeemontelesonesc2025luxembourg",
     "local": false
@@ -73159,6 +73604,34 @@
     "shortId": 2569,
     "tracksCount": 1,
     "search": "lilyallennotfair",
+    "local": false
+  },
+  {
+    "id": "limahl-the-never-ending-story",
+    "title": "The Never Ending Story",
+    "artist": "Limahl",
+    "video": "2WN0T-Ee3q4",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.4,
+    "gap": 12502.00488997555,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.166Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=1109",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4974,
+    "tracksCount": 1,
+    "search": "limahltheneverendingstory",
     "local": false
   },
   {
@@ -74867,6 +75340,34 @@
     "shortId": 2628,
     "tracksCount": 1,
     "search": "loitumaievaspolka",
+    "local": false
+  },
+  {
+    "id": "londonbeat-you-bring-on-the-sun",
+    "title": "You Bring On The Sun",
+    "artist": "LondonBeat",
+    "video": "hQIqK8PFNSg",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.4,
+    "gap": 8794.77157360406,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.816Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Fepo",
+    "sourceUrl": "Londonbeat - You Bring On The Sun",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 4982,
+    "tracksCount": 1,
+    "search": "londonbeatyoubringonthesun",
     "local": false
   },
   {
@@ -83409,7 +83910,7 @@
     "gap": 125548.3305509182,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:14.389Z",
+    "lastUpdate": "2025-08-20T12:34:27.899Z",
     "genre": "Metal",
     "realBpm": 118,
     "previewStart": 125,
@@ -83422,7 +83923,7 @@
         "start": 16
       }
     ],
-    "shortId": 4949,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "metallicaforwhomthebelltolls",
     "local": false
@@ -84448,7 +84949,7 @@
     "gap": 40282.87103224194,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:15.414Z",
+    "lastUpdate": "2025-08-20T20:47:28.851Z",
     "genre": "Pop Rock",
     "realBpm": 90,
     "previewStart": 104,
@@ -84462,7 +84963,7 @@
         "start": 21
       }
     ],
-    "shortId": 4957,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "michaeljacksontheydontcareaboutus",
     "local": false
@@ -97697,6 +98198,37 @@
     "local": false
   },
   {
+    "id": "penguin-research-button",
+    "title": "Button",
+    "artist": "PENGUIN RESEARCH",
+    "video": "EMe_zK3th8E",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 390.6,
+    "gap": 7809.536098310292,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-08-23T00:12:22.702Z",
+    "genre": "Anime",
+    "realBpm": 182,
+    "previewStart": 67,
+    "previewEnd": 89,
+    "volume": 1,
+    "author": "hqmmy",
+    "sourceUrl": "https://www.youtube.com/watch?v=EMe_zK3th8E",
+    "tracks": [
+      {
+        "name": "Button",
+        "start": 26
+      }
+    ],
+    "shortId": 4966,
+    "tracksCount": 1,
+    "search": "penguinresearchbutton",
+    "local": false
+  },
+  {
     "id": "pereza-estrella-polar",
     "title": "Estrella polar",
     "artist": "Pereza",
@@ -99454,6 +99986,35 @@
     "local": false
   },
   {
+    "id": "pnk-dear-mr-president",
+    "title": "Dear Mr. President",
+    "artist": "P!nk",
+    "video": "wmMS9XVIa00",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": 14816.717557251908,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:22.056Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.56,
+    "author": "IC",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=3738",
+    "tracks": [
+      {
+        "name": "Dear Mr. President",
+        "start": 17
+      }
+    ],
+    "shortId": 4961,
+    "tracksCount": 1,
+    "search": "pnkdearmrpresident",
+    "local": false
+  },
+  {
     "id": "pnk-feat-lily-allen-true-love",
     "title": "True Love",
     "artist": "P!nk feat. Lily Allen",
@@ -99595,6 +100156,34 @@
     "shortId": 3484,
     "tracksCount": 1,
     "search": "pnksowhat",
+    "local": false
+  },
+  {
+    "id": "pnk-sober",
+    "title": "Sober",
+    "artist": "P!nk",
+    "video": "nJ3ZM8FDBlg",
+    "language": [
+      "English"
+    ],
+    "bpm": 273,
+    "gap": 14120.989010989011,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:22.065Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 0.71,
+    "author": "IC",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=6340",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4962,
+    "tracksCount": 1,
+    "search": "pnksober",
     "local": false
   },
   {
@@ -102548,6 +103137,32 @@
     "local": false
   },
   {
+    "id": "rammstein-mein-herz-brennt",
+    "title": "Mein Herz brennt",
+    "artist": "Rammstein",
+    "video": "WXv31OmnKqQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 323.39,
+    "gap": 28679.560283249328,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-08-23T00:12:22.699Z",
+    "realBpm": 83,
+    "volume": 0.5,
+    "author": "Yodamies",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 4964,
+    "tracksCount": 1,
+    "search": "rammsteinmeinherzbrennt",
+    "local": false
+  },
+  {
     "id": "rammstein-mutter",
     "title": "Mutter",
     "artist": "Rammstein",
@@ -102586,7 +103201,7 @@
     "gap": 7497.378193310508,
     "year": "2005",
     "artistOrigin": "DE",
-    "lastUpdate": "2025-08-21T00:11:14.383Z",
+    "lastUpdate": "2025-08-20T06:29:24.717Z",
     "realBpm": 114,
     "volume": 0.5,
     "author": "Beneblade",
@@ -102597,7 +103212,7 @@
         "start": 15
       }
     ],
-    "shortId": 4947,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "rammsteinrosenrot",
     "local": false
@@ -105701,6 +106316,33 @@
     "shortId": 3691,
     "tracksCount": 1,
     "search": "riseagainstsavior",
+    "local": false
+  },
+  {
+    "id": "riva-feat-dannii-minogue-who-do-you-love-now",
+    "title": "Who Do You Love Now?",
+    "artist": "Riva feat. Dannii Minogue",
+    "video": "hBxIHOL080k",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 8410,
+    "year": "2001",
+    "lastUpdate": "2025-08-23T00:12:24.211Z",
+    "genre": "Dance",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Riva feat. Dannii Minogue - Who Do You Love Now?",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 4986,
+    "tracksCount": 1,
+    "search": "rivafeatdanniiminoguewhodoyoulovenow",
     "local": false
   },
   {
@@ -119835,7 +120477,7 @@
     "gap": 9981.765957446809,
     "year": "2001",
     "artistOrigin": "TR",
-    "lastUpdate": "2025-08-21T00:11:15.416Z",
+    "lastUpdate": "2025-08-20T20:48:06.821Z",
     "realBpm": 94,
     "volume": 0.5,
     "author": "Tarkan",
@@ -119845,7 +120487,7 @@
         "start": 13
       }
     ],
-    "shortId": 4958,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "tarkankuzukuzu",
     "local": false
@@ -123197,7 +123839,7 @@
     "gap": 27956.886421466574,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:14.391Z",
+    "lastUpdate": "2025-08-20T20:43:38.624Z",
     "genre": "Rock",
     "realBpm": 130,
     "volume": 0.5,
@@ -123207,7 +123849,7 @@
         "start": 17
       }
     ],
-    "shortId": 4951,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theblackkeysgoldontheceiling",
     "local": false
@@ -123252,7 +123894,7 @@
     "gap": 45508.45772969008,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-21T00:11:14.390Z",
+    "lastUpdate": "2025-08-20T12:34:50.170Z",
     "realBpm": 109,
     "volume": 0.5,
     "author": "choosie",
@@ -123261,7 +123903,7 @@
         "start": 15
       }
     ],
-    "shortId": 4950,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theblackkeystightenup",
     "local": false
@@ -126317,6 +126959,32 @@
     "shortId": 4390,
     "tracksCount": 1,
     "search": "therasmuslivininaworldwithoutyou",
+    "local": false
+  },
+  {
+    "id": "the-red-jumpsuit-apparatus-your-guardian-angel",
+    "title": "Your Guardian Angel",
+    "artist": "The Red Jumpsuit Apparatus",
+    "video": "2GuX-F08fwI",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 16670,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-23T00:12:22.843Z",
+    "realBpm": 113,
+    "volume": 0.5,
+    "author": "MarcX",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 4968,
+    "tracksCount": 1,
+    "search": "theredjumpsuitapparatusyourguardianangel",
     "local": false
   },
   {
@@ -130541,7 +131209,7 @@
     "gap": 911.2353858144972,
     "year": "1997",
     "artistOrigin": "PT",
-    "lastUpdate": "2025-08-21T00:11:15.412Z",
+    "lastUpdate": "2025-08-20T20:46:14.469Z",
     "realBpm": 128,
     "volume": 0.65,
     "author": "TeLiXj",
@@ -130552,7 +131220,7 @@
         "start": 17
       }
     ],
-    "shortId": 4956,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "tonycarreirasonhosdemenino",
     "local": false
@@ -137112,6 +137780,62 @@
     "local": false
   },
   {
+    "id": "yazoo-only-you-1999-mix",
+    "title": "Only You (1999 Mix)",
+    "artist": "Yazoo",
+    "video": "AsMcT03cSvs",
+    "language": [
+      "English"
+    ],
+    "bpm": 319.8,
+    "gap": 14525.009380863039,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:24.084Z",
+    "genre": "Synth-Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Yazoo - Only You (1999 Mix)",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 4984,
+    "tracksCount": 1,
+    "search": "yazooonlyyou1999mix",
+    "local": false
+  },
+  {
+    "id": "years-years-shine",
+    "title": "Shine",
+    "artist": "Years & Years",
+    "video": "hXTAn4ELEwM",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 17387.777777777777,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-23T00:12:23.944Z",
+    "genre": "Dance & Electronic",
+    "realBpm": 86,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Years & Years - Shine",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 4983,
+    "tracksCount": 1,
+    "search": "yearsyearsshine",
+    "local": false
+  },
+  {
     "id": "yellowcard-breathing",
     "title": "Breathing",
     "artist": "Yellowcard",
@@ -138361,7 +139085,7 @@
     "gap": 3859.8507462686566,
     "year": "2025",
     "artistOrigin": "UA",
-    "lastUpdate": "2025-08-21T00:11:15.106Z",
+    "lastUpdate": "2025-08-20T20:44:31.275Z",
     "realBpm": 201,
     "volume": 0.5,
     "author": "Tuupertunut",
@@ -138370,7 +139094,7 @@
         "start": 13
       }
     ],
-    "shortId": 4953,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "ziferblatbirdofprayesc2025ukraine",
     "local": false
