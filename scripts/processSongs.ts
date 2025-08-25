@@ -10,8 +10,8 @@ import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
 // @ts-ignore file might not exist
 import escSongs from './escSongs.json';
 // @ts-ignore file might not exist
-import songIndex from '../public/songs/index.json';
 import scrapedBpmData from './scraped-bpm-data.json';
+import songIndex from '../public/songs/index.json';
 
 // @ts-expect-error
 const mbApi = new MusicBrainzApi({
