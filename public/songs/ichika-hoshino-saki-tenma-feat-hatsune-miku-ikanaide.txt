@@ -9,7 +9,7 @@
 #GAP:21838,887541576092
 #EDITION:Leo/need, Project Sekai
 #ALLKARAOKE_ID:ichika-hoshino-saki-tenma-feat-hatsune-miku-ikanaide
-#ALLKARAOKE_SID:-1
+#ALLKARAOKE_SID:4974
 #ALLKARAOKE_LASTUPDATE:2025-07-28T13:14:41.648Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=asdfer

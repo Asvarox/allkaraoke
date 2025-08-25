@@ -38,6 +38,11 @@ console.log(files);
       } catch (error) {
         console.error(`Error updating artist origin for ${file}: ${error}`);
       }
+      try {
+        await setSongShortId(data);
+      } catch (error) {
+        console.error(`Error updating song short ID for ${file}: ${error}`);
+      }
 
       writeFileSync(file, convertSongToTxt(data), 'utf-8');
     } catch (error) {
@@ -74,5 +79,14 @@ async function updateArtistOrigin(song: Song) {
       song.artistOrigin = externalData.artists[0].country;
       foundOrigins[song.artist] = song.artistOrigin!;
     }
+  }
+}
+
+let maxId = songIndex.reduce((max, song) => Math.max(max, song.shortId ?? 0), songIndex[0]?.shortId ?? 0);
+
+function setSongShortId(song: Song) {
+  if (!song.shortId || song.shortId <= 0) {
+    console.log(`Setting shortId for ${song.id} from ${song.shortId} to ${++maxId}`);
+    song.shortId = maxId;
   }
 }

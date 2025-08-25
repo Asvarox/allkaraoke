@@ -87,12 +87,13 @@ dotenv.config({ path: '.env.local' });
           // keep old last update time if the song exists
           // song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
           song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
+          song.shortId = oldSong.shortId;
         } else {
           addedSongs.push(song.id);
           song.shortId = ++maxId;
         }
         fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
-        console.log(`Added/updated song ${song.id}`);
+        console.log(`Added/updated song ${song.id} - SID ${song.shortId}`);
       }
     } catch (e) {
       console.warn(`Couldn't convert song`, songId, e, songTxt);

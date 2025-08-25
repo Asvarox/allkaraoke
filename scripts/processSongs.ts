@@ -10,6 +10,7 @@ import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
 // @ts-ignore file might not exist
 import escSongs from './escSongs.json';
 // @ts-ignore file might not exist
+import songIndex from '../public/songs/index.json';
 import scrapedBpmData from './scraped-bpm-data.json';
 
 // @ts-expect-error
@@ -20,6 +21,16 @@ const mbApi = new MusicBrainzApi({
 });
 
 const SONGS_FOLDER = './public/songs';
+
+let maxId = songIndex.reduce((max, song) => Math.max(max, song.shortId ?? 0), songIndex[0]?.shortId ?? 0);
+
+function setSongShortId(song: Pick<Song, 'shortId' | 'id'>) {
+  if (!song.shortId || song.shortId <= 0) {
+    console.log(`Setting shortId for ${song.id} from ${song.shortId} to ${maxId + 1}`);
+    song.shortId = maxId + 1;
+    maxId = maxId + 1;
+  }
+}
 
 (async function () {
   const songs = readdirSync(SONGS_FOLDER);
@@ -33,6 +44,7 @@ const SONGS_FOLDER = './public/songs';
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;
     try {
+      setSongShortId(songData);
       // await fixGapForNewerSongs(songData);
       // await setEurovisionEdition(songData);
       // await fillMissingRealBpm(songData, file);
