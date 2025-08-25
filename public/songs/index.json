@@ -1945,7 +1945,7 @@
     "gap": 19851.739130434784,
     "year": "2025",
     "artistOrigin": "AT",
-    "lastUpdate": "2025-08-23T00:12:22.704Z",
+    "lastUpdate": "2025-08-21T14:07:59.113Z",
     "genre": "German Pop, Club",
     "realBpm": 1,
     "volume": 0.5,
@@ -1955,7 +1955,7 @@
         "start": 18
       }
     ],
-    "shortId": 4967,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "abortynnaballeresc2025germany",
     "local": false
@@ -3093,7 +3093,7 @@
     "gap": 17015.66585092812,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-08-23T00:12:23.012Z",
+    "lastUpdate": "2025-08-21T14:09:34.309Z",
     "genre": "J-Pop",
     "realBpm": 140,
     "volume": 1,
@@ -3104,7 +3104,7 @@
         "start": 26
       }
     ],
-    "shortId": 4970,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "adowherethewindblowspianover",
     "local": false
@@ -5709,7 +5709,7 @@
     "gap": 9130,
     "year": "2000",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.014Z",
+    "lastUpdate": "2025-08-21T14:10:00.580Z",
     "genre": "Pop",
     "realBpm": 13,
     "volume": 0.5,
@@ -5720,7 +5720,7 @@
         "start": 16
       }
     ],
-    "shortId": 4971,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "allsaintsblackcoffee",
     "local": false
@@ -6933,7 +6933,7 @@
     "gap": 9996.486486486487,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:23.294Z",
+    "lastUpdate": "2025-08-22T06:27:26.450Z",
     "genre": "R&B",
     "realBpm": -43,
     "volume": 0.5,
@@ -6944,7 +6944,7 @@
         "start": 27
       }
     ],
-    "shortId": 4975,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "amerie1thing",
     "local": false
@@ -7403,7 +7403,7 @@
     "gap": 19115.29411764706,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:23.423Z",
+    "lastUpdate": "2025-08-22T06:27:55.869Z",
     "genre": "R&B",
     "realBpm": -20,
     "volume": 0.5,
@@ -7414,7 +7414,7 @@
         "start": 23
       }
     ],
-    "shortId": 4976,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "anastaciaimouttalove",
     "local": false
@@ -13350,7 +13350,7 @@
     "gap": 16143.157894736842,
     "year": "2000",
     "artistOrigin": "BS",
-    "lastUpdate": "2025-08-23T00:12:23.679Z",
+    "lastUpdate": "2025-08-22T11:07:18.297Z",
     "realBpm": 19,
     "volume": 0.5,
     "author": "rafallus",
@@ -13360,7 +13360,7 @@
         "start": 17
       }
     ],
-    "shortId": 4981,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "bahamenwholetthedogsout",
     "local": false
@@ -27744,7 +27744,7 @@
     "gap": 13501.246811702926,
     "year": "2013",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-08-23T00:12:22.701Z",
+    "lastUpdate": "2025-08-21T07:49:25.449Z",
     "genre": "Anime",
     "realBpm": 184,
     "previewStart": 45,
@@ -27758,7 +27758,7 @@
         "start": 27
       }
     ],
-    "shortId": 4965,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "cinemastaffgreatescapetvsizever",
     "local": false
@@ -31443,7 +31443,7 @@
     "gap": 6238.897700237906,
     "year": "2003",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-23T00:12:24.086Z",
+    "lastUpdate": "2025-08-22T11:09:40.797Z",
     "genre": "Pop",
     "realBpm": 12,
     "volume": 0.5,
@@ -31454,7 +31454,7 @@
         "start": 17
       }
     ],
-    "shortId": 4985,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "danniiminogueibegintowonder",
     "local": false
@@ -35375,7 +35375,7 @@
     "bpm": 302.83,
     "gap": 20639.345177162104,
     "year": "2012",
-    "lastUpdate": "2025-08-23T00:12:22.067Z",
+    "lastUpdate": "2025-08-21T07:48:39.904Z",
     "genre": "Folk",
     "realBpm": 79,
     "volume": 0.5,
@@ -35385,7 +35385,7 @@
         "start": 20
       }
     ],
-    "shortId": 4963,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "disneysbravejuliefowlistouchthesky",
     "local": false
@@ -42828,7 +42828,7 @@
     "gap": 170,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:23.007Z",
+    "lastUpdate": "2025-08-21T14:09:13.425Z",
     "realBpm": 148,
     "volume": 0.5,
     "author": "UnisusJr",
@@ -42837,7 +42837,7 @@
         "start": 40
       }
     ],
-    "shortId": 4969,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "eminemrapgod",
     "local": false
@@ -48458,7 +48458,7 @@
     "gap": 13890.737327188941,
     "year": "1985",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-23T00:12:23.427Z",
+    "lastUpdate": "2025-08-22T06:28:47.176Z",
     "genre": "Rock",
     "realBpm": -82,
     "volume": 0.5,
@@ -48469,7 +48469,7 @@
         "start": 17
       }
     ],
-    "shortId": 4978,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "ganggajangsoundsofthenthisisaustralia",
     "local": false
@@ -57872,7 +57872,7 @@
     "gap": 32948.27443899923,
     "year": "1987",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-23T00:12:23.424Z",
+    "lastUpdate": "2025-08-22T06:28:14.534Z",
     "genre": "Pop",
     "realBpm": 39,
     "volume": 0.5,
@@ -57883,7 +57883,7 @@
         "start": 16
       }
     ],
-    "shortId": 4977,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "inxsnewsensation",
     "local": false
@@ -59011,7 +59011,7 @@
     "gap": 18996.025935996655,
     "year": "1996",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.161Z",
+    "lastUpdate": "2025-08-22T06:25:33.723Z",
     "genre": "Pop",
     "realBpm": 8,
     "volume": 0.5,
@@ -59022,7 +59022,7 @@
         "start": 16
       }
     ],
-    "shortId": 4972,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "jamiroquaicosmicgirl",
     "local": false
@@ -59039,7 +59039,7 @@
     "gap": 22538.05896805897,
     "year": "1993",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.164Z",
+    "lastUpdate": "2025-08-22T06:26:45.049Z",
     "genre": "Funk",
     "realBpm": 6,
     "volume": 0.5,
@@ -59050,7 +59050,7 @@
         "start": 14
       }
     ],
-    "shortId": 4973,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "jamiroquaitooyoungtodie",
     "local": false
@@ -59653,7 +59653,7 @@
     "gap": 10975.24368907773,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.552Z",
+    "lastUpdate": "2025-08-22T06:29:28.476Z",
     "genre": "Urban",
     "realBpm": 24,
     "volume": 0.5,
@@ -59664,7 +59664,7 @@
         "start": 13
       }
     ],
-    "shortId": 4979,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "javinerealthings",
     "local": false
@@ -60724,7 +60724,7 @@
     "gap": 12952.142857142857,
     "year": "1985",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-23T00:12:23.676Z",
+    "lastUpdate": "2025-08-22T11:06:52.004Z",
     "genre": "Rock",
     "realBpm": -56,
     "volume": 0.5,
@@ -60735,7 +60735,7 @@
         "start": 19
       }
     ],
-    "shortId": 4980,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "jimmybarnesworkingclassman",
     "local": false
@@ -73618,7 +73618,7 @@
     "gap": 12502.00488997555,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.166Z",
+    "lastUpdate": "2025-08-22T06:27:01.507Z",
     "genre": "Pop",
     "realBpm": 122,
     "volume": 1,
@@ -73629,7 +73629,7 @@
         "start": 16
       }
     ],
-    "shortId": 4974,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "limahltheneverendingstory",
     "local": false
@@ -75354,7 +75354,7 @@
     "gap": 8794.77157360406,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.816Z",
+    "lastUpdate": "2025-08-22T11:07:36.169Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -75365,7 +75365,7 @@
         "start": 16
       }
     ],
-    "shortId": 4982,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "londonbeatyoubringonthesun",
     "local": false
@@ -98209,7 +98209,7 @@
     "gap": 7809.536098310292,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-08-23T00:12:22.702Z",
+    "lastUpdate": "2025-08-21T07:49:47.489Z",
     "genre": "Anime",
     "realBpm": 182,
     "previewStart": 67,
@@ -98223,7 +98223,7 @@
         "start": 26
       }
     ],
-    "shortId": 4966,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "penguinresearchbutton",
     "local": false
@@ -99997,7 +99997,7 @@
     "gap": 14816.717557251908,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:22.056Z",
+    "lastUpdate": "2025-08-21T07:47:54.220Z",
     "genre": "Pop",
     "realBpm": 130,
     "volume": 0.56,
@@ -100009,7 +100009,7 @@
         "start": 17
       }
     ],
-    "shortId": 4961,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "pnkdearmrpresident",
     "local": false
@@ -100170,7 +100170,7 @@
     "gap": 14120.989010989011,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:22.065Z",
+    "lastUpdate": "2025-08-21T07:48:13.302Z",
     "genre": "Pop",
     "realBpm": 92,
     "volume": 0.71,
@@ -100181,7 +100181,7 @@
         "start": 18
       }
     ],
-    "shortId": 4962,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "pnksober",
     "local": false
@@ -103148,7 +103148,7 @@
     "gap": 28679.560283249328,
     "year": "2001",
     "artistOrigin": "DE",
-    "lastUpdate": "2025-08-23T00:12:22.699Z",
+    "lastUpdate": "2025-08-21T07:49:04.159Z",
     "realBpm": 83,
     "volume": 0.5,
     "author": "Yodamies",
@@ -103157,7 +103157,7 @@
         "start": 22
       }
     ],
-    "shortId": 4964,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "rammsteinmeinherzbrennt",
     "local": false
@@ -106329,7 +106329,7 @@
     "bpm": 270,
     "gap": 8410,
     "year": "2001",
-    "lastUpdate": "2025-08-23T00:12:24.211Z",
+    "lastUpdate": "2025-08-22T11:10:19.912Z",
     "genre": "Dance",
     "realBpm": 32,
     "volume": 0.5,
@@ -106340,7 +106340,7 @@
         "start": 18
       }
     ],
-    "shortId": 4986,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "rivafeatdanniiminoguewhodoyoulovenow",
     "local": false
@@ -126973,7 +126973,7 @@
     "gap": 16670,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-23T00:12:22.843Z",
+    "lastUpdate": "2025-08-21T14:08:38.650Z",
     "realBpm": 113,
     "volume": 0.5,
     "author": "MarcX",
@@ -126982,7 +126982,7 @@
         "start": 24
       }
     ],
-    "shortId": 4968,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "theredjumpsuitapparatusyourguardianangel",
     "local": false
@@ -137791,7 +137791,7 @@
     "gap": 14525.009380863039,
     "year": "1999",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:24.084Z",
+    "lastUpdate": "2025-08-22T11:08:36.390Z",
     "genre": "Synth-Pop",
     "realBpm": 19,
     "volume": 0.5,
@@ -137802,7 +137802,7 @@
         "start": 21
       }
     ],
-    "shortId": 4984,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "yazooonlyyou1999mix",
     "local": false
@@ -137819,7 +137819,7 @@
     "gap": 17387.777777777777,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-23T00:12:23.944Z",
+    "lastUpdate": "2025-08-22T11:08:15.518Z",
     "genre": "Dance & Electronic",
     "realBpm": 86,
     "volume": 0.5,
@@ -137830,7 +137830,7 @@
         "start": 14
       }
     ],
-    "shortId": 4983,
+    "shortId": -1,
     "tracksCount": 1,
     "search": "yearsyearsshine",
     "local": false
