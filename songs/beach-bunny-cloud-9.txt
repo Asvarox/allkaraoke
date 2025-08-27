@@ -1,0 +1,224 @@
+#ARTIST:Beach Bunny
+#TITLE:Cloud 9
+#CREATOR:mitchdog
+#BPM:324
+#YEAR:2020
+#VIDEO:v=_3vTWUeS80Y
+#LANGUAGE:English
+#GAP:5121,481481481482
+#ALLKARAOKE_ID:beach-bunny-cloud-9
+#ALLKARAOKE_SID:5047
+#ALLKARAOKE_LASTUPDATE:2025-08-27T00:13:15.752Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:31
+#ALLKARAOKE_SOURCEURL:Beach Bunny - Cloud 9
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Beach Bunny - Cloud 9.mp3
+: 22 4 16 I 
+: 30 4 17 don’t 
+: 36 4 18 wanna 
+: 46 4 19 seem 
+: 56 4 16 the 
+: 64 4 16 way 
+: 72 4 17 I 
+: 80 4 18 do
+- 84 112
+- 112
+: 134 4 20 But 
+: 140 6 16 I’m 
+: 148 6 17 con
+: 158 1 19 fi
+: 160 6 18 dent 
+: 170 6 16 when 
+: 178 4 17 I’m 
+: 186 4 16 with 
+: 194 6 15 you
+- 200
+: 210 6 16 Lately, 
+: 222 6 17 all 
+: 232 4 19 I 
+: 240 4 15 feel 
+: 248 4 15 is 
+: 258 6 16 bad 
+: 266 4 18 and 
+: 274 8 18 bruised
+- 282 316
+- 316
+: 338 4 18 Tired 
+: 348 4 19 of 
+: 354 12 17 tripping 
+: 370 6 17 on 
+: 378 6 16 my 
+: 388 6 15 shoes
+- 394 406
+- 406
+: 428 4 16 But 
+: 436 4 17 when 
+: 444 4 19 he 
+* 452 8 17 loves 
+* 464 8 19 me, 
+: 476 6 17 I 
+: 486 6 20 feel 
+: 500 4 18 like
+- 504
+: 508 4 16 I’m 
+: 516 8 12 float
+: 528 6 20 ing
+- 534
+: 540 8 18 When 
+: 552 6 11 he 
+: 564 6 9 calls 
+: 572 6 20 me 
+: 580 20 18 pretty,
+- 600
+: 604 8 15 I 
+: 616 8 11 feel 
+: 628 6 12 like 
+* 638 6 18 some
+* 646 20 18 body 
+: 668 14 18 Even
+- 682
+: 690 6 18 When 
+: 700 6 16 we 
+: 708 10 9 fade 
+: 720 38 15 eventually,
+- 758
+: 760 6 9 I’m 
+: 770 18 9 nothing
+- 788
+: 794 12 18 You 
+: 808 8 19 will 
+: 818 6 19 always 
+: 826 20 13 be 
+: 850 8 16 my 
+: 860 18 18 favorite 
+: 882 6 18 form 
+: 892 4 15 of 
+: 900 26 13 loving
+- 926 940
+- 940
+: 962 6 15 When 
+: 972 6 16 I 
+: 980 6 18 start 
+: 988 5 19 to 
+: 994 10 16 tumble 
+: 1008 8 17 from 
+: 1020 2 18 the 
+: 1024 14 18 sky
+- 1038 1068
+- 1068
+: 1090 7 17 You 
+: 1098 12 18 remind 
+: 1114 6 16 me 
+: 1122 6 18 how 
+: 1130 6 16 to 
+* 1140 6 16 fly
+- 1146
+: 1154 8 16 Lately, 
+: 1168 4 17 I’ve 
+: 1176 6 20 been 
+: 1184 10 16 feeling 
+: 1200 6 16 not 
+: 1214 12 17 alive
+- 1226 1260
+- 1260
+: 1282 6 17 But 
+: 1290 4 17 you 
+: 1298 5 18 bring 
+: 1304 6 16 me 
+: 1312 6 17 back 
+: 1320 6 15 to 
+: 1330 10 16 life
+- 1340 1348
+- 1348
+: 1370 6 17 But 
+: 1380 6 18 when 
+: 1388 4 18 he 
+* 1396 10 18 loves 
+* 1408 8 20 me,
+- 1416
+: 1420 8 18 I 
+: 1432 8 20 feel 
+: 1444 4 19 like 
+: 1450 6 16 I’m 
+: 1460 10 13 float
+: 1472 8 20 ing
+- 1480
+: 1484 8 18 When 
+: 1494 6 12 he 
+: 1506 6 18 calls 
+: 1514 4 9 me 
+: 1524 14 18 pretty,
+- 1538
+: 1544 10 15 I 
+: 1560 8 12 feel 
+: 1572 6 19 like 
+* 1580 6 20 some
+* 1588 22 18 body
+- 1610
+: 1614 14 19 Even 
+: 1632 8 20 when 
+: 1644 4 16 we 
+: 1652 12 9 fade 
+: 1666 38 20 eventually,
+- 1704
+: 1708 6 20 I’m 
+: 1716 20 20 nothing
+- 1736
+: 1740 10 19 You 
+: 1754 6 20 will 
+: 1764 6 14 always 
+: 1780 10 13 be 
+: 1794 8 16 my 
+: 1804 10 18 favorite
+- 1814
+: 1826 8 17 Form 
+: 1836 6 14 of 
+: 1844 30 13 loving
+- 1874 2406
+- 2406
+: 2428 6 13 But 
+: 2438 4 20 when 
+: 2444 6 20 he 
+: 2454 6 20 loves 
+: 2464 6 20 me,
+- 2470
+: 2476 8 20 I 
+: 2488 8 14 feel 
+: 2500 6 20 like 
+: 2508 6 16 I’m 
+* 2516 10 13 float
+* 2528 8 20 ing 
+: 2538 8 18 When
+- 2546
+: 2550 6 11 He 
+: 2562 6 18 calls 
+: 2570 6 20 me 
+* 2580 12 18 pretty,
+- 2592
+: 2602 8 20 I 
+: 2614 8 11 feel 
+: 2628 6 12 like 
+: 2636 6 16 some
+: 2644 22 19 body 
+: 2668 16 19 Even
+- 2684
+: 2688 8 17 When 
+: 2698 6 16 we 
+: 2708 10 9 fade 
+: 2722 38 15 eventually, 
+: 2762 6 20 I’m
+- 2768
+: 2770 20 20 Nothing
+- 2790
+: 2794 10 19 You 
+: 2808 8 19 will 
+: 2818 14 16 always 
+: 2836 10 13 be 
+: 2848 8 16 my
+- 2856
+: 2858 18 18 Favorite 
+: 2882 7 17 form 
+: 2890 6 14 of 
+: 2898 36 13 loving
+E

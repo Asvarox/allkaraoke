@@ -6735,6 +6735,35 @@
     "local": false
   },
   {
+    "id": "amber-pacific-always-you-good-times",
+    "title": "Always You (Good Times)",
+    "artist": "Amber Pacific",
+    "video": "X2Uq09b5c_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 370,
+    "gap": 21106.486486486487,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:13.570Z",
+    "genre": "Pop Punk",
+    "realBpm": 190,
+    "previewStart": 88,
+    "previewEnd": 116,
+    "volume": 0.5,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5031,
+    "tracksCount": 1,
+    "search": "amberpacificalwaysyougoodtimes",
+    "local": false
+  },
+  {
     "id": "america-a-horse-with-no-name",
     "title": "A Horse With No Name",
     "artist": "America",
@@ -8785,10 +8814,10 @@
       "English"
     ],
     "bpm": 150,
-    "gap": 17100,
+    "gap": 17050,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-04-25T00:13:04.651Z",
+    "lastUpdate": "2025-08-26T04:57:51.390Z",
     "genre": "Alternative",
     "realBpm": 68,
     "volume": 0.77,
@@ -13205,10 +13234,10 @@
       "English"
     ],
     "bpm": 422.91,
-    "gap": 19141.880896644678,
+    "gap": 19041.880896644678,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2025-01-17T00:11:39.742Z",
+    "lastUpdate": "2025-08-26T04:59:45.338Z",
     "genre": "Metalcore",
     "realBpm": 140,
     "volume": 0.75,
@@ -14030,6 +14059,33 @@
     "shortId": 485,
     "tracksCount": 1,
     "search": "battachase",
+    "local": false
+  },
+  {
+    "id": "beach-bunny-cloud-9",
+    "title": "Cloud 9",
+    "artist": "Beach Bunny",
+    "video": "_3vTWUeS80Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 5121.481481481482,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:15.752Z",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "mitchdog",
+    "sourceUrl": "Beach Bunny - Cloud 9",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5047,
+    "tracksCount": 1,
+    "search": "beachbunnycloud9",
     "local": false
   },
   {
@@ -19207,10 +19263,10 @@
       "English"
     ],
     "bpm": 259.65,
-    "gap": 6887.90872328134,
+    "gap": 6787.90872328134,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-07-21T00:11:31.597Z",
+    "lastUpdate": "2025-08-26T04:53:06.451Z",
     "genre": "Pop",
     "realBpm": 130,
     "volume": 1,
@@ -27678,6 +27734,33 @@
     "local": false
   },
   {
+    "id": "chuck-berry-johnny-b-goode",
+    "title": "Johnny B. Goode",
+    "artist": "Chuck Berry",
+    "video": "aKCt8ssC7cs",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.1,
+    "gap": 16417.38448125545,
+    "year": "1957",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:14.742Z",
+    "realBpm": 52,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Chuck Berry - Johnny B. Goode",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5039,
+    "tracksCount": 1,
+    "search": "chuckberryjohnnybgoode",
+    "local": false
+  },
+  {
     "id": "chuck-berry-you-never-can-tell",
     "title": "You never can tell",
     "artist": "Chuck Berry",
@@ -34391,6 +34474,34 @@
     "local": false
   },
   {
+    "id": "diana-king-shy-guy",
+    "title": "Shy Guy",
+    "artist": "Diana King",
+    "video": "szjaHbjhauk",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.17,
+    "gap": 1893.1102958768643,
+    "year": "1994",
+    "artistOrigin": "JM",
+    "lastUpdate": "2025-08-27T00:13:15.569Z",
+    "genre": "Soundtrack",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Diana King - Shy Guy",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5046,
+    "tracksCount": 1,
+    "search": "dianakingshyguy",
+    "local": false
+  },
+  {
     "id": "diana-ross-im-coming-out",
     "title": "I’m Coming Out",
     "artist": "Diana Ross",
@@ -38136,6 +38247,32 @@
     "local": false
   },
   {
+    "id": "doe-maar-sinds-1-dag-of-2-32-jaar",
+    "title": "Sinds 1 dag of 2 (32 jaar)",
+    "artist": "Doe Maar",
+    "video": "D2kNBnKyWJ0",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 226,
+    "gap": 7644.424778761062,
+    "year": "1980",
+    "artistOrigin": "NL",
+    "lastUpdate": "2025-08-27T00:13:14.368Z",
+    "realBpm": 114,
+    "volume": 0.67,
+    "author": "Way2Evil",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5032,
+    "tracksCount": 1,
+    "search": "doemaarsinds1dagof232jaar",
+    "local": false
+  },
+  {
     "id": "doja-cat-feat-sza-kiss-me-more",
     "title": "Kiss Me More",
     "artist": "Doja Cat feat. SZA",
@@ -39933,6 +40070,34 @@
     "shortId": 1402,
     "tracksCount": 1,
     "search": "duranduranthereflex",
+    "local": false
+  },
+  {
+    "id": "dusty-springfield-son-of-a-preacher-man",
+    "title": "Son-Of-A Preacher Man",
+    "artist": "Dusty Springfield",
+    "video": "oAZLgsDRUv4",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.4,
+    "gap": 10625.691868758915,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-27T00:13:16.440Z",
+    "genre": "Pop",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "sourceUrl": "Dusty Springfield - Son-Of-A Preacher Man",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5057,
+    "tracksCount": 1,
+    "search": "dustyspringfieldsonofapreacherman",
     "local": false
   },
   {
@@ -45354,6 +45519,61 @@
     "shortId": 1593,
     "tracksCount": 1,
     "search": "fatalbazookafoustacagoule",
+    "local": false
+  },
+  {
+    "id": "fatboy-slim-praise-you",
+    "title": "Praise You",
+    "artist": "Fatboy Slim",
+    "video": "ruAi4VBoBSM",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.25,
+    "gap": 17588.43359818388,
+    "year": "1998",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-27T00:13:14.923Z",
+    "genre": "Pop",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Schluckschuppen",
+    "sourceUrl": "Fatboy Slim - Praise You",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5041,
+    "tracksCount": 1,
+    "search": "fatboyslimpraiseyou",
+    "local": false
+  },
+  {
+    "id": "fatboy-slim-the-rockafeller-skank",
+    "title": "The Rockafeller Skank",
+    "artist": "Fatboy Slim",
+    "video": "ZocZDQDLKg4",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.25,
+    "gap": -139.14004914004914,
+    "year": "1998",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-27T00:13:14.747Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Mischn",
+    "sourceUrl": "Fatboy Slim - The Rockafeller Skank",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 5040,
+    "tracksCount": 1,
+    "search": "fatboyslimtherockafellerskank",
     "local": false
   },
   {
@@ -50971,9 +51191,10 @@
       "English"
     ],
     "bpm": 359.5,
-    "gap": 29857.214484679665,
+    "gap": 28856.609179415856,
     "year": "2001",
-    "lastUpdate": "2023-12-15T05:36:08.822Z",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-26T04:59:20.373Z",
     "genre": "Alternative",
     "realBpm": 90,
     "volume": 0.79,
@@ -50997,9 +51218,10 @@
       "English"
     ],
     "bpm": 297.5,
-    "gap": 26609.59663865546,
+    "gap": 25609.59663865546,
     "year": "2001",
-    "lastUpdate": "2023-12-15T05:36:08.949Z",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-25T15:02:45.830Z",
     "edition": "None",
     "genre": "None",
     "realBpm": 83,
@@ -60218,6 +60440,32 @@
     "local": false
   },
   {
+    "id": "jesse-joy-and-j-balvin-manana-es-too-late",
+    "title": "Mañana es Too Late",
+    "artist": "Jesse & Joy and J Balvin",
+    "video": "QsuTjx_yosA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 368,
+    "gap": 8270.978260869566,
+    "year": "2019",
+    "lastUpdate": "2025-08-27T00:13:14.564Z",
+    "realBpm": 43,
+    "volume": 0.5,
+    "author": "Rubn4",
+    "sourceUrl": "https://www.youtube.com/watch?v=QsuTjx_yosA",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5038,
+    "tracksCount": 1,
+    "search": "jessejoyandjbalvinmananaestoolate",
+    "local": false
+  },
+  {
     "id": "jesse-joy-corre",
     "title": "!Corre!",
     "artist": "Jesse & Joy",
@@ -62908,6 +63156,33 @@
     "shortId": 2196,
     "tracksCount": 1,
     "search": "jostarstommycodajinjojosonochinokiokuendoftheworld",
+    "local": false
+  },
+  {
+    "id": "journey-any-way-you-want-it",
+    "title": "Any Way You Want It",
+    "artist": "Journey",
+    "video": "atxUuldUcfI",
+    "language": [
+      "English"
+    ],
+    "bpm": 277.4,
+    "gap": 37576.676279740444,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:14.554Z",
+    "genre": "Rock",
+    "realBpm": 139,
+    "volume": 1,
+    "author": "frinz",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5033,
+    "tracksCount": 1,
+    "search": "journeyanywayyouwantit",
     "local": false
   },
   {
@@ -67464,6 +67739,33 @@
     "shortId": 2354,
     "tracksCount": 1,
     "search": "kellyclarksonwalkaway",
+    "local": false
+  },
+  {
+    "id": "kelly-rowland-feat-david-guetta-commander",
+    "title": "Commander",
+    "artist": "Kelly Rowland feat. David Guetta",
+    "video": "dwfKZ-1jyiw",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.35999999999999,
+    "gap": 40.230344717267826,
+    "year": "2010",
+    "lastUpdate": "2025-08-27T00:13:16.443Z",
+    "genre": "R&B",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "gaspar17",
+    "sourceUrl": "Kelly Rowland feat. David Guetta - Commander",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5058,
+    "tracksCount": 1,
+    "search": "kellyrowlandfeatdavidguettacommander",
     "local": false
   },
   {
@@ -73182,10 +73484,10 @@
       "English"
     ],
     "bpm": 378.47,
-    "gap": 8578.120189382918,
+    "gap": 8177.168494200332,
     "year": "2018",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-01-17T05:15:05.053Z",
+    "lastUpdate": "2025-08-26T04:56:43.457Z",
     "genre": "None",
     "realBpm": 110,
     "volume": 0.7,
@@ -75018,6 +75320,113 @@
     "shortId": 2617,
     "tracksCount": 1,
     "search": "lisamysoulyourbeats",
+    "local": false
+  },
+  {
+    "id": "little-big-go-bananas",
+    "title": "Go Bananas",
+    "artist": "Little Big",
+    "video": "ADlGkXAz1D0",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.28,
+    "gap": 11027.168475696082,
+    "year": "2019",
+    "lastUpdate": "2025-08-27T00:13:14.925Z",
+    "genre": "Electronic",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "Mircosoft93",
+    "sourceUrl": "Little Big - Go Bananas",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5042,
+    "tracksCount": 1,
+    "search": "littlebiggobananas",
+    "local": false
+  },
+  {
+    "id": "little-big-hypnodancer",
+    "title": "Hypnodancer",
+    "artist": "Little Big",
+    "video": "RhMYBfF7-hE",
+    "language": [
+      "English"
+    ],
+    "bpm": 283.96,
+    "gap": 16256.33751232568,
+    "year": "2020",
+    "lastUpdate": "2025-08-27T00:13:15.278Z",
+    "genre": "Electronic",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "MrLudozzerca",
+    "sourceUrl": "Little Big - Hypnodancer",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5044,
+    "tracksCount": 1,
+    "search": "littlebighypnodancer",
+    "local": false
+  },
+  {
+    "id": "little-big-kurwa",
+    "title": "Kurwa",
+    "artist": "Little Big",
+    "video": "iL1HvAu8V1w",
+    "language": [
+      "Other"
+    ],
+    "bpm": 390,
+    "gap": 2209,
+    "year": "2024",
+    "lastUpdate": "2025-08-27T00:13:15.424Z",
+    "genre": "Hard Bass",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "GaryCXJk",
+    "sourceUrl": "Little Big - Kurwa",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5045,
+    "tracksCount": 1,
+    "search": "littlebigkurwa",
+    "local": false
+  },
+  {
+    "id": "little-big-lolly-bomb",
+    "title": "Lolly Bomb",
+    "artist": "Little Big",
+    "video": "FBnAZnfNB6U",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.02,
+    "gap": 18810.083326389467,
+    "year": "2018",
+    "lastUpdate": "2025-08-27T00:13:15.131Z",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "MrLudozzerca",
+    "sourceUrl": "Little Big - Lolly Bomb",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5043,
+    "tracksCount": 1,
+    "search": "littlebiglollybomb",
     "local": false
   },
   {
@@ -85303,6 +85712,62 @@
     "local": false
   },
   {
+    "id": "midnight-oil-blue-sky-mine",
+    "title": "Blue Sky Mine",
+    "artist": "Midnight Oil",
+    "video": "Ofrqm6-LCqs",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 55357.27272727273,
+    "year": "1990",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.923Z",
+    "genre": "Rock",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Midnight Oil - Blue Sky Mine",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5048,
+    "tracksCount": 1,
+    "search": "midnightoilblueskymine",
+    "local": false
+  },
+  {
+    "id": "midnight-oil-the-dead-heart",
+    "title": "The Dead Heart",
+    "artist": "Midnight Oil",
+    "video": "16bFBzx7I_0",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.5,
+    "gap": 14269.963702359346,
+    "year": "1986",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.925Z",
+    "genre": "Rock",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Midnight Oil - The Dead Heart",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5049,
+    "tracksCount": 1,
+    "search": "midnightoilthedeadheart",
+    "local": false
+  },
+  {
     "id": "miguel-bose-amante-bandido",
     "title": "Amante Bandido",
     "artist": "Miguel Bosé",
@@ -86696,6 +87161,62 @@
     "local": false
   },
   {
+    "id": "mis-teeq-one-night-stand",
+    "title": "One Night Stand",
+    "artist": "Mis-Teeq",
+    "video": "iYcCkwYU_ck",
+    "language": [
+      "English"
+    ],
+    "bpm": 404.20000000000005,
+    "gap": 60347.52475247525,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-27T00:13:16.261Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "Ultrastar-Songs",
+    "sourceUrl": "Mis-Teeq - One Night Stand",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5055,
+    "tracksCount": 1,
+    "search": "misteeqonenightstand",
+    "local": false
+  },
+  {
+    "id": "mis-teeq-scandalous",
+    "title": "Scandalous",
+    "artist": "Mis-Teeq",
+    "video": "S1kE0MMfr20",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 21475,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-27T00:13:16.101Z",
+    "edition": "SingStar",
+    "genre": "R&B",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Mis-Teeq - Scandalous",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5054,
+    "tracksCount": 1,
+    "search": "misteeqscandalous",
+    "local": false
+  },
+  {
     "id": "mitski-a-pearl",
     "title": "A Pearl",
     "artist": "Mitski",
@@ -87318,6 +87839,34 @@
     "shortId": 3051,
     "tracksCount": 1,
     "search": "morandiangels",
+    "local": false
+  },
+  {
+    "id": "morat-amor-con-hielo",
+    "title": "Amor con hielo",
+    "artist": "Morat",
+    "video": "1P5eDa_Kn2M",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 13290,
+    "year": "2017",
+    "artistOrigin": "CO",
+    "lastUpdate": "2025-08-27T00:13:14.559Z",
+    "realBpm": 50,
+    "previewStart": 12,
+    "previewEnd": 90,
+    "volume": 1,
+    "sourceUrl": "https://music.youtube.com/watch?v=VoREIeX8L5w&si=f4-hCes_NtF-h8j9",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5036,
+    "tracksCount": 1,
+    "search": "moratamorconhielo",
     "local": false
   },
   {
@@ -96457,6 +97006,34 @@
     "local": false
   },
   {
+    "id": "pablo-alboran-no-vaya-a-ser",
+    "title": "No vaya a ser",
+    "artist": "Pablo Alborán",
+    "video": "-XGHBV1p5lw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 399.9,
+    "gap": -78.60315078769696,
+    "year": "2017",
+    "artistOrigin": "ES",
+    "lastUpdate": "2025-08-27T00:13:14.561Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Volodia",
+    "sourceUrl": "https://music.youtube.com/watch?v=VoREIeX8L5w&si=f4-hCes_NtF-h8j9",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 5037,
+    "tracksCount": 1,
+    "search": "pabloalborannovayaaser",
+    "local": false
+  },
+  {
     "id": "pablo-alboran-solamente-tu",
     "title": "Solamente tú",
     "artist": "Pablo Alborán",
@@ -103215,6 +103792,33 @@
     "shortId": 4998,
     "tracksCount": 1,
     "search": "rammsteinrosenrot",
+    "local": false
+  },
+  {
+    "id": "ramones-blitzkrieg-bop",
+    "title": "Blitzkrieg Bop",
+    "artist": "Ramones",
+    "video": "skdE0KAFCEA",
+    "language": [
+      "English"
+    ],
+    "bpm": 341.3499999999999,
+    "gap": 21750.194643641153,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:16.264Z",
+    "realBpm": 39,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Ramones - Blitzkrieg Bop",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5056,
+    "tracksCount": 1,
+    "search": "ramonesblitzkriegbop",
     "local": false
   },
   {
@@ -122482,6 +123086,89 @@
     "local": false
   },
   {
+    "id": "the-angels-am-i-ever-gonna-see-your-face-again",
+    "title": "Am I Ever Gonna See Your Face Again?",
+    "artist": "The Angels",
+    "video": "oZJxSN_I2o8",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.6,
+    "gap": 14798.330550918197,
+    "year": "1976",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.930Z",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "dungbeetle46",
+    "sourceUrl": "The Angels - Am I Ever Gonna See Your Face Again?",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5052,
+    "tracksCount": 1,
+    "search": "theangelsamievergonnaseeyourfaceagain",
+    "local": false
+  },
+  {
+    "id": "the-angels-marseilles",
+    "title": "Marseilles",
+    "artist": "The Angels",
+    "video": "CPkanDMMiwc",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 32099.23076923077,
+    "year": "1978",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.928Z",
+    "genre": "Rock",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "Kitteh",
+    "sourceUrl": "The Angels - Marseilles",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5051,
+    "tracksCount": 1,
+    "search": "theangelsmarseilles",
+    "local": false
+  },
+  {
+    "id": "the-angels-mr-damage",
+    "title": "Mr. Damage",
+    "artist": "The Angels",
+    "video": "SVogqzKnTps",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 9442.620689655172,
+    "year": "1979",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.927Z",
+    "genre": "Rock",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Kitteh",
+    "sourceUrl": "The Angels - Mr. Damage",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5050,
+    "tracksCount": 1,
+    "search": "theangelsmrdamage",
+    "local": false
+  },
+  {
     "id": "the-animals-the-house-of-the-rising-sun",
     "title": "The House of the Rising Sun",
     "artist": "The Animals",
@@ -129909,6 +130596,34 @@
     "local": false
   },
   {
+    "id": "tina-arena-chains",
+    "title": "Chains",
+    "artist": "Tina Arena",
+    "video": "6jC9Insyzgc",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 165.29411764705878,
+    "year": "1994",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-27T00:13:15.931Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "RES",
+    "sourceUrl": "Tina Arena - Chains",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5053,
+    "tracksCount": 1,
+    "search": "tinaarenachains",
+    "local": false
+  },
+  {
     "id": "tina-turner-goldeneye",
     "title": "GoldenEye",
     "artist": "Tina Turner",
@@ -136872,15 +137587,15 @@
     "id": "will-smith-wild-wild-west",
     "title": "Wild Wild West",
     "artist": "Will Smith",
-    "video": "_zXKtfKnfT8",
+    "video": "vRLED8AvVvQ",
     "language": [
       "English"
     ],
     "bpm": 213.78,
-    "gap": 2097.681728880157,
+    "gap": 1147.6817288801572,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-21T00:11:34.347Z",
+    "lastUpdate": "2025-08-26T04:56:05.181Z",
     "edition": "[Duet]-Songs",
     "genre": "Hip-Hop",
     "realBpm": 107,
@@ -139126,6 +139841,33 @@
     "local": false
   },
   {
+    "id": "zz-top-la-grange",
+    "title": "La Grange",
+    "artist": "ZZ Top",
+    "video": "rG6b8gjMEkw",
+    "language": [
+      "English"
+    ],
+    "bpm": 324.8,
+    "gap": 6993.990147783252,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:14.555Z",
+    "genre": "Rock",
+    "realBpm": 164,
+    "volume": 1,
+    "author": "mustangfred",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5034,
+    "tracksCount": 1,
+    "search": "zztoplagrange",
+    "local": false
+  },
+  {
     "id": "zz-top-sharp-dressed-man",
     "title": "Sharp Dressed Man",
     "artist": "ZZ Top",
@@ -139149,6 +139891,32 @@
     "shortId": 4796,
     "tracksCount": 1,
     "search": "zztopsharpdressedman",
+    "local": false
+  },
+  {
+    "id": "zz-top-tush",
+    "title": "Tush",
+    "artist": "ZZ Top",
+    "video": "WzU3iR3Wrog",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.4,
+    "gap": 8619.32400932401,
+    "year": "1975",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-27T00:13:14.556Z",
+    "realBpm": 145,
+    "volume": 0.5,
+    "author": "RES",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5035,
+    "tracksCount": 1,
+    "search": "zztoptush",
     "local": false
   }
 ]
