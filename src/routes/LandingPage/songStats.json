@@ -175,6 +175,7 @@
     "Latvian",
     "Lithuanian",
     "Norwegian",
+    "Other",
     "Polish",
     "Portuguese",
     "Romanian",
@@ -187,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5029
+  "songs": 5057
 }

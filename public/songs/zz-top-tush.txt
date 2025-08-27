@@ -1,0 +1,145 @@
+#ARTIST:ZZ Top
+#TITLE:Tush
+#CREATOR:RES
+#BPM:257,4
+#YEAR:1975
+#VIDEO:v=WzU3iR3Wrog
+#LANGUAGE:English
+#GAP:8619,32400932401
+#ALLKARAOKE_ID:zz-top-tush
+#ALLKARAOKE_SID:5035
+#ALLKARAOKE_LASTUPDATE:2025-08-27T00:13:14.556Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_VOLUME:0,5
+#MP3:ZZ Top - Tush.mp3
+: 17 2 17 I’ve 
+: 21 2 19 been 
+: 25 6 22 low,
+- 31
+: 43 2 17 Ive 
+: 47 2 19 been 
+: 51 10 19 down
+- 61
+: 73 2 17 Take 
+: 77 2 19 my 
+: 83 6 22 word,
+- 89
+: 101 2 17 My 
+: 105 2 19 way 
+: 109 32 22 rou
+: 145 12 19 ~nd
+- 157
+: 173 1 12 I 
+: 175 2 12 aint 
+: 181 5 12 ask
+: 187 2 12 ing 
+: 191 2 10 for 
+: 197 6 22 much
+: 205 4 19 ~
+- 209 226
+- 226
+: 243 1 14 I 
+: 245 2 14 said 
+: 249 6 17 Lord 
+: 257 4 17 take 
+: 263 2 14 me 
+: 267 4 17 down
+: 273 4 14 town
+- 277
+: 285 2 17 I’m 
+: 289 2 17 just 
+: 293 2 17 loo
+: 297 2 17 king 
+: 301 1 17 for 
+: 303 2 15 some 
+: 307 1 17 tu
+: 309 1 19 ~
+: 311 4 21 sh
+- 315 340
+- 340
+: 357 2 17 I’ve 
+: 361 2 19 been 
+: 365 6 22 bad, 
+: 385 2 17 i’ve 
+: 389 2 19 been 
+: 393 10 19 good
+- 403
+: 413 3 17 Dal
+: 417 4 19 las, 
+: 423 6 22 Texas, 
+: 441 2 17 Hol
+: 445 2 19 ly
+: 449 32 22 wooo
+: 485 12 19 od
+- 497
+: 513 1 12 I 
+: 515 2 12 aint 
+: 521 5 12 ask
+: 527 2 12 ing 
+: 531 2 10 for 
+: 537 6 22 much
+: 545 4 19 ~
+- 549 568
+- 568
+: 585 1 14 I 
+: 587 2 14 said 
+: 591 6 17 Lord 
+: 599 2 17 take 
+: 603 2 14 me 
+: 607 4 17 down
+: 613 4 14 town
+- 617
+: 627 2 17 I’m 
+: 631 2 17 just 
+: 635 1 17 loo
+: 637 2 17 king 
+: 641 2 17 for 
+: 645 2 15 some 
+: 649 1 17 tu
+: 651 1 19 ~
+: 653 4 22 sh
+- 657 1362
+- 1362
+: 1379 2 17 Take 
+: 1383 2 19 me 
+: 1387 6 22 back 
+: 1407 2 17 way 
+: 1411 2 19 back 
+: 1415 6 19 home,
+- 1421
+: 1435 2 17 Not 
+: 1439 2 19 by 
+: 1443 8 22 myself, 
+: 1465 2 17 not 
+: 1469 2 19 al
+: 1473 32 22 oooo
+: 1509 12 19 ne
+- 1521
+: 1531 2 12 I 
+: 1535 2 12 aint 
+: 1541 3 12 ask
+: 1545 4 12 ing 
+: 1553 2 10 for 
+: 1557 6 22 much 
+: 1565 4 19 ~
+- 1569 1590
+- 1590
+: 1607 1 14 I 
+: 1609 2 14 said 
+: 1613 6 17 Lord 
+: 1621 2 17 take 
+: 1625 2 14 me 
+: 1629 4 17 down
+: 1635 4 14 town
+- 1639
+: 1649 2 17 I’m 
+: 1653 2 17 just 
+: 1657 2 17 loo
+: 1661 2 17 king 
+: 1665 1 14 for 
+: 1667 2 17 some 
+: 1671 1 17 tu
+: 1673 1 19 ~
+: 1675 4 22 sh
+E
