@@ -6746,7 +6746,7 @@
     "gap": 21106.486486486487,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:13.570Z",
+    "lastUpdate": "2025-08-25T19:05:03.738Z",
     "genre": "Pop Punk",
     "realBpm": 190,
     "previewStart": 88,
@@ -14073,7 +14073,7 @@
     "gap": 5121.481481481482,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:15.752Z",
+    "lastUpdate": "2025-08-26T20:00:05.393Z",
     "realBpm": 31,
     "volume": 0.5,
     "author": "mitchdog",
@@ -25712,6 +25712,34 @@
     "local": false
   },
   {
+    "id": "celine-dion-peabo-bryson-beauty-and-the-beast",
+    "title": "Beauty And The Beast",
+    "artist": "Celine Dion & Peabo Bryson",
+    "video": "pgYEJHJXFB4",
+    "language": [
+      "English"
+    ],
+    "bpm": 309.65,
+    "gap": 16502.72242854836,
+    "year": "1991",
+    "lastUpdate": "2025-08-29T00:12:58.301Z",
+    "edition": "Disney Sing It",
+    "genre": "Soundtrack",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Disney’s Beauty and the Beast (Céline Dion & Peabo Bryson) - Beauty And The Beast",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5067,
+    "tracksCount": 1,
+    "search": "celinedionpeabobrysonbeautyandthebeast",
+    "local": false
+  },
+  {
     "id": "celine-dion-thats-the-way-it-is",
     "title": "That’s The Way It Is",
     "artist": "Céline Dion",
@@ -27745,7 +27773,7 @@
     "gap": 16417.38448125545,
     "year": "1957",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:14.742Z",
+    "lastUpdate": "2025-08-25T19:08:21.232Z",
     "realBpm": 52,
     "volume": 0.5,
     "author": "Canni",
@@ -31515,6 +31543,35 @@
     "local": false
   },
   {
+    "id": "dannii-minogue-all-i-wanna-do",
+    "title": "All I Wanna Do",
+    "artist": "Dannii Minogue",
+    "video": "_MAjm0QqJ7g",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 8942.537313432837,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-29T00:12:56.766Z",
+    "edition": "Soda Stereo",
+    "genre": "Pop",
+    "realBpm": 50,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Dannii Minogue - All I Wanna Do",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5059,
+    "tracksCount": 1,
+    "search": "danniiminoguealliwannado",
+    "local": false
+  },
+  {
     "id": "dannii-minogue-i-begin-to-wonder",
     "title": "I Begin To Wonder",
     "artist": "Dannii Minogue",
@@ -34485,7 +34542,7 @@
     "gap": 1893.1102958768643,
     "year": "1994",
     "artistOrigin": "JM",
-    "lastUpdate": "2025-08-27T00:13:15.569Z",
+    "lastUpdate": "2025-08-26T19:59:43.999Z",
     "genre": "Soundtrack",
     "realBpm": 27,
     "volume": 0.5,
@@ -37185,6 +37242,36 @@
     "local": false
   },
   {
+    "id": "disneys-toy-story-you-got-a-friend-in-me",
+    "title": "You Got A Friend In Me",
+    "artist": "Disney’s Toy Story",
+    "video": "ZjbSKknc2rc",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 1921.7391304347825,
+    "year": "1969",
+    "lastUpdate": "2025-08-29T00:12:57.594Z",
+    "edition": "Singstar Singalong With Disney",
+    "genre": "Soundtrack",
+    "realBpm": 32,
+    "previewStart": 33.5,
+    "previewEnd": 77,
+    "volume": 0.5,
+    "author": "Kimbo",
+    "sourceUrl": "Disney’s Toy Story - You Got A Friend In Me",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5062,
+    "tracksCount": 1,
+    "search": "disneystoystoryyougotafriendinme",
+    "local": false
+  },
+  {
     "id": "disneys-treasure-planet-im-still-here",
     "title": "I’m Still Here",
     "artist": "Disney’s Treasure Planet",
@@ -38258,7 +38345,7 @@
     "gap": 7644.424778761062,
     "year": "1980",
     "artistOrigin": "NL",
-    "lastUpdate": "2025-08-27T00:13:14.368Z",
+    "lastUpdate": "2025-08-25T19:05:26.923Z",
     "realBpm": 114,
     "volume": 0.67,
     "author": "Way2Evil",
@@ -40084,7 +40171,7 @@
     "gap": 10625.691868758915,
     "year": "1968",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-27T00:13:16.440Z",
+    "lastUpdate": "2025-08-26T20:08:02.863Z",
     "genre": "Pop",
     "realBpm": 20,
     "volume": 0.5,
@@ -44445,6 +44532,34 @@
     "local": false
   },
   {
+    "id": "evermore-light-surrounding-you",
+    "title": "Light Surrounding You",
+    "artist": "Evermore",
+    "video": "0J-f_-N7bMk",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 11853.90243902439,
+    "year": "2006",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-29T00:12:58.591Z",
+    "genre": "Pop Internacional",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "Evermore - Light Surrounding You",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5069,
+    "tracksCount": 1,
+    "search": "evermorelightsurroundingyou",
+    "local": false
+  },
+  {
     "id": "ewa-farna-cicho",
     "title": "Cicho",
     "artist": "Ewa Farna",
@@ -45533,7 +45648,7 @@
     "gap": 17588.43359818388,
     "year": "1998",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-27T00:13:14.923Z",
+    "lastUpdate": "2025-08-25T19:11:20.197Z",
     "genre": "Pop",
     "realBpm": 29,
     "volume": 0.5,
@@ -45561,7 +45676,7 @@
     "gap": -139.14004914004914,
     "year": "1998",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-27T00:13:14.747Z",
+    "lastUpdate": "2025-08-25T19:10:15.720Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "Mischn",
@@ -58868,6 +58983,35 @@
     "local": false
   },
   {
+    "id": "jackie-wilson-reet-petite",
+    "title": "Reet Petite",
+    "artist": "Jackie Wilson",
+    "video": "8CTs8a7dVa0",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.4,
+    "gap": 9143.500294637595,
+    "year": "1957",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-29T00:12:56.771Z",
+    "edition": "Singstar Legends [Au|De|Es|Fr|It|Uk]",
+    "genre": "Contemporary R&B, Soul",
+    "realBpm": -29,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jackie Wilson - Reet Petite",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5060,
+    "tracksCount": 1,
+    "search": "jackiewilsonreetpetite",
+    "local": false
+  },
+  {
     "id": "jade-dont-walk-away",
     "title": "Don’t Walk Away",
     "artist": "Jade",
@@ -60450,7 +60594,7 @@
     "bpm": 368,
     "gap": 8270.978260869566,
     "year": "2019",
-    "lastUpdate": "2025-08-27T00:13:14.564Z",
+    "lastUpdate": "2025-08-25T19:07:56.963Z",
     "realBpm": 43,
     "volume": 0.5,
     "author": "Rubn4",
@@ -63170,7 +63314,7 @@
     "gap": 37576.676279740444,
     "year": "1980",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:14.554Z",
+    "lastUpdate": "2025-08-25T19:05:44.674Z",
     "genre": "Rock",
     "realBpm": 139,
     "volume": 1,
@@ -67752,7 +67896,7 @@
     "bpm": 250.35999999999999,
     "gap": 40.230344717267826,
     "year": "2010",
-    "lastUpdate": "2025-08-27T00:13:16.443Z",
+    "lastUpdate": "2025-08-26T20:08:39.015Z",
     "genre": "R&B",
     "realBpm": 32,
     "volume": 0.5,
@@ -75333,7 +75477,7 @@
     "bpm": 254.28,
     "gap": 11027.168475696082,
     "year": "2019",
-    "lastUpdate": "2025-08-27T00:13:14.925Z",
+    "lastUpdate": "2025-08-25T19:12:02.159Z",
     "genre": "Electronic",
     "realBpm": 35,
     "volume": 0.5,
@@ -75360,7 +75504,7 @@
     "bpm": 283.96,
     "gap": 16256.33751232568,
     "year": "2020",
-    "lastUpdate": "2025-08-27T00:13:15.278Z",
+    "lastUpdate": "2025-08-25T19:12:42.765Z",
     "genre": "Electronic",
     "realBpm": 26,
     "volume": 0.5,
@@ -75387,7 +75531,7 @@
     "bpm": 390,
     "gap": 2209,
     "year": "2024",
-    "lastUpdate": "2025-08-27T00:13:15.424Z",
+    "lastUpdate": "2025-08-25T19:13:53.652Z",
     "genre": "Hard Bass",
     "realBpm": 23,
     "volume": 0.5,
@@ -75414,7 +75558,7 @@
     "bpm": 240.02,
     "gap": 18810.083326389467,
     "year": "2018",
-    "lastUpdate": "2025-08-27T00:13:15.131Z",
+    "lastUpdate": "2025-08-25T19:12:27.891Z",
     "realBpm": 31,
     "volume": 0.5,
     "author": "MrLudozzerca",
@@ -85723,7 +85867,7 @@
     "gap": 55357.27272727273,
     "year": "1990",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.923Z",
+    "lastUpdate": "2025-08-26T20:01:20.551Z",
     "genre": "Rock",
     "realBpm": 26,
     "volume": 0.5,
@@ -85751,7 +85895,7 @@
     "gap": 14269.963702359346,
     "year": "1986",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.925Z",
+    "lastUpdate": "2025-08-26T20:01:50.204Z",
     "genre": "Rock",
     "realBpm": 32,
     "volume": 0.5,
@@ -87172,7 +87316,7 @@
     "gap": 60347.52475247525,
     "year": "2001",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-27T00:13:16.261Z",
+    "lastUpdate": "2025-08-26T20:06:22.391Z",
     "realBpm": 20,
     "volume": 0.5,
     "author": "Ultrastar-Songs",
@@ -87199,7 +87343,7 @@
     "gap": 21475,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-27T00:13:16.101Z",
+    "lastUpdate": "2025-08-26T20:05:44.648Z",
     "edition": "SingStar",
     "genre": "R&B",
     "realBpm": 24,
@@ -87853,7 +87997,7 @@
     "gap": 13290,
     "year": "2017",
     "artistOrigin": "CO",
-    "lastUpdate": "2025-08-27T00:13:14.559Z",
+    "lastUpdate": "2025-08-25T19:06:48.473Z",
     "realBpm": 50,
     "previewStart": 12,
     "previewEnd": 90,
@@ -97017,7 +97161,7 @@
     "gap": -78.60315078769696,
     "year": "2017",
     "artistOrigin": "ES",
-    "lastUpdate": "2025-08-27T00:13:14.561Z",
+    "lastUpdate": "2025-08-25T19:07:33.055Z",
     "genre": "Pop",
     "realBpm": 32,
     "volume": 0.5,
@@ -103806,7 +103950,7 @@
     "gap": 21750.194643641153,
     "year": "1976",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:16.264Z",
+    "lastUpdate": "2025-08-26T20:07:15.909Z",
     "realBpm": 39,
     "volume": 0.5,
     "author": "Canni",
@@ -107121,6 +107265,64 @@
     "local": false
   },
   {
+    "id": "robbie-williams-gary-barlow-shame",
+    "title": "Shame",
+    "artist": "Robbie Williams & Gary Barlow",
+    "video": "kjdIfQH7tKI",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.4,
+    "gap": 14212.785602503911,
+    "year": "2010",
+    "lastUpdate": "2025-08-29T00:12:57.878Z",
+    "genre": "Pop",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "RES",
+    "sourceUrl": "Robbie Williams and Gary Barlow - Shame",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5064,
+    "tracksCount": 1,
+    "search": "robbiewilliamsgarybarlowshame",
+    "local": false
+  },
+  {
+    "id": "robbie-williams-kylie-minogue-kids",
+    "title": "Kids",
+    "artist": "Robbie Williams & Kylie Minogue",
+    "video": "cvn6eYJh-0c",
+    "language": [
+      "English"
+    ],
+    "bpm": 369.24,
+    "gap": 19784.40038999025,
+    "year": "2002",
+    "lastUpdate": "2025-08-29T00:12:57.746Z",
+    "edition": "Singstar Pop",
+    "genre": "Pop",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "tintenherz23",
+    "sourceUrl": "Robbie Williams & Kylie Minogue - Kids [DUET]",
+    "tracks": [
+      {
+        "start": 25
+      },
+      {
+        "start": 89
+      }
+    ],
+    "shortId": 5063,
+    "tracksCount": 2,
+    "search": "robbiewilliamskylieminoguekids",
+    "local": false
+  },
+  {
     "id": "robbie-williams-let-me-entertain-you",
     "title": "Let Me Entertain You",
     "artist": "Robbie Williams",
@@ -109256,6 +109458,35 @@
     "shortId": 3770,
     "tracksCount": 1,
     "search": "sabrinacarpenterwhy",
+    "local": false
+  },
+  {
+    "id": "sade-your-love-is-king",
+    "title": "Your Love Is King",
+    "artist": "Sade",
+    "video": "k1ljpLQ1V6Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 268.35,
+    "gap": 20363.851313583007,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-29T00:12:57.446Z",
+    "edition": "Ultrastar",
+    "genre": "Soundtrack",
+    "realBpm": -35,
+    "volume": 0.5,
+    "author": "choosie",
+    "sourceUrl": "Sade - Your Love Is King",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5061,
+    "tracksCount": 1,
+    "search": "sadeyourloveisking",
     "local": false
   },
   {
@@ -119253,6 +119484,34 @@
     "local": false
   },
   {
+    "id": "swv-right-here",
+    "title": "Right Here",
+    "artist": "SWV",
+    "video": "vHwXoY0LiQk",
+    "language": [
+      "English"
+    ],
+    "bpm": 375.3,
+    "gap": 22680.79936051159,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-08-29T00:12:58.023Z",
+    "genre": "Parody",
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "Tracks",
+    "sourceUrl": "SWV - Right Here",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5065,
+    "tracksCount": 1,
+    "search": "swvrighthere",
+    "local": false
+  },
+  {
     "id": "sxtn-fotzen-im-club",
     "title": "Fotzen im Club",
     "artist": "SXTN",
@@ -120644,6 +120903,33 @@
     "shortId": 4166,
     "tracksCount": 1,
     "search": "takayakurodabakamitai",
+    "local": false
+  },
+  {
+    "id": "take-that-featuring-lulu-relight-my-fire",
+    "title": "Relight My Fire",
+    "artist": "Take That Featuring Lulu",
+    "video": "40Od45DjCA4",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 30246.39344262295,
+    "year": "1993",
+    "lastUpdate": "2025-08-29T00:12:58.161Z",
+    "genre": "Pop",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That feat. Lulu - Relight My Fire",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5066,
+    "tracksCount": 1,
+    "search": "takethatfeaturinglulurelightmyfire",
     "local": false
   },
   {
@@ -123097,7 +123383,7 @@
     "gap": 14798.330550918197,
     "year": "1976",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.930Z",
+    "lastUpdate": "2025-08-26T20:04:48.618Z",
     "realBpm": 31,
     "volume": 0.5,
     "author": "dungbeetle46",
@@ -123124,7 +123410,7 @@
     "gap": 32099.23076923077,
     "year": "1978",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.928Z",
+    "lastUpdate": "2025-08-26T20:03:49.801Z",
     "genre": "Rock",
     "realBpm": 24,
     "volume": 0.5,
@@ -123152,7 +123438,7 @@
     "gap": 9442.620689655172,
     "year": "1979",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.927Z",
+    "lastUpdate": "2025-08-26T20:03:21.034Z",
     "genre": "Rock",
     "realBpm": 26,
     "volume": 0.5,
@@ -130607,7 +130893,7 @@
     "gap": 165.29411764705878,
     "year": "1994",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-27T00:13:15.931Z",
+    "lastUpdate": "2025-08-26T20:05:05.797Z",
     "genre": "Pop",
     "realBpm": 25,
     "volume": 0.5,
@@ -138523,6 +138809,34 @@
     "local": false
   },
   {
+    "id": "yazz-the-only-way-is-up",
+    "title": "The Only Way Is Up",
+    "artist": "Yazz",
+    "video": "vjD3EVC1-zU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 15110,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-29T00:12:58.443Z",
+    "genre": "Pop",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Yazz And The Plastic Population - The Only Way Is Up",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5068,
+    "tracksCount": 1,
+    "search": "yazztheonlywayisup",
+    "local": false
+  },
+  {
     "id": "years-years-shine",
     "title": "Shine",
     "artist": "Years & Years",
@@ -139852,7 +140166,7 @@
     "gap": 6993.990147783252,
     "year": "1973",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:14.555Z",
+    "lastUpdate": "2025-08-25T19:06:08.330Z",
     "genre": "Rock",
     "realBpm": 164,
     "volume": 1,
@@ -139905,7 +140219,7 @@
     "gap": 8619.32400932401,
     "year": "1975",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-27T00:13:14.556Z",
+    "lastUpdate": "2025-08-25T19:06:32.913Z",
     "realBpm": 145,
     "volume": 0.5,
     "author": "RES",
