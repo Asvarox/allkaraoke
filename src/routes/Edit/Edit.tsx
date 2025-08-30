@@ -43,7 +43,7 @@ export default function Edit() {
             <IconButton
               title="Delete the song"
               onClick={async () => {
-                const proceed = global.confirm(`Are you sure you want to delete this song?`);
+                const proceed = globalThis.confirm(`Are you sure you want to delete this song?`);
 
                 if (proceed) {
                   await SongDao.deleteSong(song.data!.id);

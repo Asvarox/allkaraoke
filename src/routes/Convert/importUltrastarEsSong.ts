@@ -22,7 +22,7 @@ async function importUltrastarEsSong(url: string): Promise<AuthorAndVidEntity> {
 
   const id = doc.querySelector('ul[data-id]')?.getAttribute('data-id');
   const txtUrl = `https://ultrastar-es.org/pl/canciones/descargar/txt/${id}`;
-  global.location.href = txtUrl;
+  globalThis.location.href = txtUrl;
 
   const authorPath = doc.querySelector('#listado > ul > li > dl > dd:nth-child(6) > a')?.getAttribute('href');
   const videoId = doc.querySelector('#listado > ul > li')?.getAttribute('data-id');
@@ -50,8 +50,8 @@ async function importUsDbAnimuxSong(url: string, obj: URL): Promise<AuthorAndVid
     '#tablebg > tbody > tr:nth-child(3) > td > table:nth-child(2) > tbody > tr.list_head > td:nth-child(2)',
   )?.textContent;
 
-  global.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(artist + ' ' + title)}`, '_blank');
-  global.open(`http://usdb.animux.de/index.php?link=gettxt&id=${obj.searchParams.get('id')}`, '_blank');
+  globalThis.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(artist + ' ' + title)}`, '_blank');
+  globalThis.open(`http://usdb.animux.de/index.php?link=gettxt&id=${obj.searchParams.get('id')}`, '_blank');
 
   return {
     authorUrl: authorPath ? 'http://usdb.animux.de/index.php' + authorPath : '',

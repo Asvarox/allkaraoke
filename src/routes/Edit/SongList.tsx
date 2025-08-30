@@ -119,7 +119,7 @@ export default function SongList() {
                       className={!row.original.local ? 'cursor-default! opacity-50' : ''}
                       title="Delete the song"
                       onClick={async () => {
-                        const proceed = global.confirm(`Are you sure you want to delete this song?`);
+                        const proceed = globalThis.confirm(`Are you sure you want to delete this song?`);
 
                         if (proceed) {
                           await SongDao.deleteSong(row.original.id);

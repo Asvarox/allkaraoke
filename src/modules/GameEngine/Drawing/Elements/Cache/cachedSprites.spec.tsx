@@ -7,7 +7,7 @@ test('Should draw a proper sprite map', async ({ mount, page }) => {
   const component = await mount(<TestCanvas width={1} height={1} />);
 
   await page.evaluate(() => {
-    const { getSprite } = global.canvasTestApi.Elements;
+    const { getSprite } = globalThis.canvasTestApi.Elements;
     const { canvas } = getSprite('p1Miss', 'start');
 
     document.getElementById('root')!.prepend(canvas);
@@ -21,7 +21,7 @@ test('Should return proper coordinates to draw a legit note', async ({ mount, pa
   const component = await mount(<TestCanvas width={100} height={100} />);
 
   await page.evaluate(() => {
-    const { drawSprite } = global.canvasTestApi.Elements;
+    const { drawSprite } = globalThis.canvasTestApi.Elements;
     const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
 
@@ -38,7 +38,7 @@ test('Should return proper coordinates to draw a legit small note', async ({ mou
   const component = await mount(<TestCanvas width={100} height={100} />);
 
   await page.evaluate(() => {
-    const { drawSprite } = global.canvasTestApi.Elements;
+    const { drawSprite } = globalThis.canvasTestApi.Elements;
     const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
 

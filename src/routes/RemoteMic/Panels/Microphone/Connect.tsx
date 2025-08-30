@@ -82,7 +82,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   useEffect(() => {
     if (storage.session.getItem('reload-mic-request') !== null) {
       // give other components option to read the property on mount before its removed
-      global.setTimeout(() => storage.session.removeItem('reload-mic-request'), 1);
+      globalThis.setTimeout(() => storage.session.removeItem('reload-mic-request'), 1);
       connectToServer(true);
     }
   }, []);
@@ -122,7 +122,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
               // When Ctrl+V, remove whitespaces before changing the value
               event.preventDefault();
               // @ts-expect-error clipboardData is not in the types
-              let paste = (event.clipboardData || global.clipboardData).getData('text');
+              let paste = (event.clipboardData || globalThis.clipboardData).getData('text');
               paste = paste.replace(/\s/g, '');
               setCustomRoomId(paste.slice(0, GAME_CODE_LENGTH));
             }}

@@ -30,7 +30,7 @@ function MicrophoneSettings() {
     RemoteMicClient.disconnect();
     storage.local.removeItem('remote_mic_name');
     storage.local.removeItem(MIC_ID_KEY);
-    global.location?.reload();
+    globalThis.location?.reload();
   };
   return (
     <>

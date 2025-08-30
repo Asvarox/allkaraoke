@@ -71,6 +71,7 @@ class PlayersManager {
   private requestingPromise: Promise<any> | null = null;
   public constructor() {
     const storedPlayers = storage.session.getItem<ReturnType<PlayerEntity['toJSON']>[]>(SELECTED_INPUTS_KEY) ?? [];
+    console.log('Restoring players from storage', storedPlayers);
     if (storedPlayers.length) {
       this.players = storedPlayers.map(PlayerEntity.fromJSON);
 

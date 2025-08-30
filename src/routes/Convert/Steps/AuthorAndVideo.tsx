@@ -18,7 +18,7 @@ interface Props {
 
 export default function AuthorAndVideo(props: Props) {
   const searchForVideo = () => {
-    global.open(
+    globalThis.open(
       `https://www.youtube.com/results?search_query=${encodeURIComponent(props?.songArtist + ' ' + props?.songTitle)}`,
       '_blank',
     );

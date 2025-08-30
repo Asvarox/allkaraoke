@@ -34,19 +34,19 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
       </h3>
       <MenuButton onClick={resetError}>Reset Error</MenuButton>
       <h4>If that doesn&#39;t help</h4>
-      <MenuButton onClick={() => (global.location.href = global.location?.origin)}>Reload the game</MenuButton>
+      <MenuButton onClick={() => (globalThis.location.href = globalThis.location?.origin)}>Reload the game</MenuButton>
       <h4>If that doesn&#39;t help</h4>
       <MenuButton
         onClick={() => {
           if (
-            global.confirm(
+            globalThis.confirm(
               'Are you sure? It will delete all custom songs and scores. Before doing that, try opening the game in an private window or another browser to make sure it will actually help',
             )
           ) {
             storage.session.clear();
             storage.local.clear();
             localForage.clear();
-            global.location.href = global.location?.origin;
+            globalThis.location.href = globalThis.location?.origin;
           }
         }}>
         Clear all data

@@ -18,8 +18,8 @@ function QuickSetup() {
     if (!isDev() && mobilePhoneMode && document.fullscreenElement === null) {
       try {
         await document.body.requestFullscreen();
-        global.screen.orientation.unlock();
-        await global.screen.orientation.lock?.('landscape');
+        globalThis.screen.orientation.unlock();
+        await globalThis.screen.orientation.lock?.('landscape');
       } catch (e) {
         console.info(e);
       }

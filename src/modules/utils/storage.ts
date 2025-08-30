@@ -70,12 +70,12 @@ class MemoryStorage implements Storage {
   }
 }
 
-const local = abstractStorage(global?.localStorage ?? new MemoryStorage());
+const local = abstractStorage(globalThis?.localStorage ?? new MemoryStorage());
 
 const storage = {
   ...local,
   local,
-  session: abstractStorage(global?.sessionStorage ?? new MemoryStorage()),
+  session: abstractStorage(globalThis?.sessionStorage ?? new MemoryStorage()),
   memory: abstractStorage(new MemoryStorage()),
 };
 

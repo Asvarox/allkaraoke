@@ -33,14 +33,14 @@ function FullscreenButton() {
               setAutoEnableFullscreen(true);
               await document.body.requestFullscreen();
               if (mobilePhoneMode) {
-                global.screen.orientation.unlock();
-                await global.screen.orientation.lock?.('landscape');
+                globalThis.screen.orientation.unlock();
+                await globalThis.screen.orientation.lock?.('landscape');
               }
             } else {
               setAutoEnableFullscreen(false);
               await document.exitFullscreen();
               if (mobilePhoneMode) {
-                global.screen.orientation.unlock();
+                globalThis.screen.orientation.unlock();
               }
             }
           } catch (e) {

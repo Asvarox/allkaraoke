@@ -10,7 +10,7 @@ export const buildUrl = (to: string, params?: Record<string, string | null>) => 
   if (!params) {
     return to;
   }
-  const url = new URLSearchParams(global.location?.search);
+  const url = new URLSearchParams(globalThis.location?.search);
 
   Object.entries(params).forEach(([param, value]) => {
     if (value === null) {

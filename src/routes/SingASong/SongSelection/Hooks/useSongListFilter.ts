@@ -131,14 +131,14 @@ export const useSongListFilter = (
   const playlists = usePlaylists(prefilteredList, popular, isLoading);
 
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
-    new URLSearchParams(global.location?.search).get('playlist') ?? null,
+    new URLSearchParams(globalThis.location?.search).get('playlist') ?? null,
   );
 
   const setPlaylist = (name: string) => {
     /// push query param to url containing playlist name
-    const url = new URL(global.location?.href);
+    const url = new URL(globalThis.location?.href);
     url.searchParams.set('playlist', name);
-    global.history.replaceState(null, '', url.toString());
+    globalThis.history.replaceState(null, '', url.toString());
 
     setSelectedPlaylist(name);
   };

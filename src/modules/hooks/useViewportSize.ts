@@ -2,8 +2,8 @@ import { throttle } from 'es-toolkit';
 import { useEffect, useMemo, useState } from 'react';
 
 const getViewportSize = () => ({
-  width: global.document.body.clientWidth,
-  height: global.visualViewport!.height,
+  width: globalThis.document.body.clientWidth,
+  height: globalThis.visualViewport!.height,
 });
 
 export default function useViewportSize() {
@@ -19,10 +19,10 @@ export default function useViewportSize() {
   );
 
   useEffect(() => {
-    global.addEventListener('resize', handleResize);
+    globalThis.addEventListener('resize', handleResize);
     handleResize();
 
-    return () => global.removeEventListener('resize', handleResize);
+    return () => globalThis.removeEventListener('resize', handleResize);
   }, []);
 
   return { ...windowSize, handleResize };

@@ -113,7 +113,7 @@ export default function SongMetadata(props: Props) {
   );
 
   const searchGoogle = (phrase: string) => {
-    global.open(
+    globalThis.open(
       `https://www.google.com/search?q=${encodeURIComponent(`${props.data.artist} ${props.data.title} ${phrase}`)}`,
       '_blank',
     );

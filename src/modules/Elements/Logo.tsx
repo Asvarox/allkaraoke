@@ -14,7 +14,7 @@ import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { EurovisionLogo } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
 
-if (global.location?.search.includes('pride')) {
+if (globalThis.location?.search.includes('pride')) {
   storage.session.setItem('pride', 'true');
 }
 

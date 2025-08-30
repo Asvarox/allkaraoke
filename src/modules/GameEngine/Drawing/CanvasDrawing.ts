@@ -101,7 +101,7 @@ export default class CanvasDrawing {
       if (this.loop) setTimeout(this.drawFrame, finalTimeout, FPSCountSetting.get());
     }
     if (FPSCountSetting.get() !== 30) {
-      if (this.loop) global.requestAnimationFrame(this.drawFrame);
+      if (this.loop) globalThis.requestAnimationFrame(this.drawFrame);
     }
   };
 

@@ -61,9 +61,9 @@ export default function useSongSelection(additionalSong: string | null, songsPer
   useEffect(() => {
     if (preselected && !isLoading && songList.length && songList.some((song) => song.id === cleanSelectedSongId)) {
       /// push query param to url containing playlist name
-      const url = new URL(global.location?.href);
+      const url = new URL(globalThis.location?.href);
       url.searchParams.set('song', selectedSongId!);
-      global.history.replaceState(null, '', url.toString());
+      globalThis.history.replaceState(null, '', url.toString());
     }
   }, [preselected, selectedSongId, songList, isLoading]);
 
