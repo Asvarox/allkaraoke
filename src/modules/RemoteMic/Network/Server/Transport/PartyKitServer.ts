@@ -29,6 +29,13 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
   public readonly name = 'PartyKit';
   private connection: WebSocket | null = null;
 
+  private sendEvent(event: NetworkMessages) {
+    if (this.connection?.readyState !== WebSocket.OPEN) {
+      return;
+    }
+    this.connection?.send(pack(event));
+  }
+
   public connect(
     roomId: string,
     onConnect: () => void,
@@ -37,7 +44,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
     this.connection = new WebSocket(`${PARTYKIT_SERVER}/party/${roomId}`);
     this.connection.binaryType = 'arraybuffer';
     this.connection.onopen = () => {
-      this.connection?.send(pack({ t: 'register-room', id: roomId }));
+      this.sendEvent({ t: 'register-room', id: roomId });
       onConnect();
       this.ping();
 
@@ -77,7 +84,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
     this.pinging = true;
     this.pingStart = getPingTime();
 
-    this.connection?.send(pack({ t: 'ping' }));
+    this.sendEvent({ t: 'ping' });
   };
   private onPong = () => {
     if (!this.pinging) return;
@@ -93,7 +100,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
   };
 
   public removePlayer(playerId: string) {
-    this.connection?.send(pack({ t: 'remove-player', id: playerId }));
+    this.sendEvent({ t: 'remove-player', id: playerId });
   }
 }
 

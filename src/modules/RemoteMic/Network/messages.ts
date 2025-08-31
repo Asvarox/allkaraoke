@@ -17,6 +17,11 @@ export interface NetworkUnregisterMessage {
   t: 'unregister';
 }
 
+export interface NetworkRegisterRoomMessage {
+  t: 'register-room';
+  id: string;
+}
+
 export interface NetworkStartMonitorMessage {
   t: 'start-monitor';
 }
@@ -183,11 +188,12 @@ export type NetworkMessages =
   | NetworkSetPermissionsMessage
   | NetworkPlayerNumberMessage
   | NetworkRegisterMessage
+  | NetworkUnregisterMessage
+  | NetworkRegisterRoomMessage
   | NetworkStartMonitorMessage
   | NetworkStopMonitorMessage
   | NetworkKeyStrokeMessage
   | NetworkRemoteKeyboardMessage
-  | NetworkUnregisterMessage
   | NetworkReloadMicMessage
   | NetworkRequestReadinessMessage
   | NetworkConfirmReadinessMessage

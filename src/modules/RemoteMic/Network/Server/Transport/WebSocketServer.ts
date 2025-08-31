@@ -29,6 +29,13 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
   public readonly name = 'WebSockets';
   private connection: WebSocket | null = null;
 
+  private sendEvent(event: NetworkMessages) {
+    if (this.connection?.readyState !== WebSocket.OPEN) {
+      return;
+    }
+    this.connection?.send(pack(event));
+  }
+
   public constructor() {
     super();
   }
@@ -41,7 +48,7 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
     this.connection = new WebSocket(WEBSOCKETS_SERVER);
     this.connection.binaryType = 'arraybuffer';
     this.connection.onopen = () => {
-      this.connection?.send(pack({ t: 'register-room', id: roomId }));
+      this.sendEvent({ t: 'register-room', id: roomId });
       onConnect();
       this.ping();
 
@@ -81,7 +88,7 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
     this.pinging = true;
     this.pingStart = getPingTime();
 
-    this.connection?.send(pack({ t: 'ping' }));
+    this.sendEvent({ t: 'ping' });
   };
   private onPong = () => {
     if (!this.pinging) return;
@@ -97,7 +104,7 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
   };
 
   public removePlayer(playerId: string) {
-    this.connection?.send(pack({ t: 'remove-player', id: playerId }));
+    this.sendEvent({ t: 'remove-player', id: playerId });
   }
 }
 
