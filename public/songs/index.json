@@ -14205,6 +14205,35 @@
     "local": false
   },
   {
+    "id": "beatsteaks-hand-in-hand",
+    "title": "Hand In Hand",
+    "artist": "Beatsteaks",
+    "video": "aWbpT9hNAYQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 284,
+    "gap": 9676.478873239437,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-08-31T00:14:23.776Z",
+    "edition": "Esc 1958",
+    "genre": "Rock, Alternative",
+    "realBpm": 40,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Beatsteaks - Hand In Hand",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5071,
+    "tracksCount": 1,
+    "search": "beatsteakshandinhand",
+    "local": false
+  },
+  {
     "id": "bebe-rexha-feat-florida-georgia-line-meant-to-be",
     "title": "Meant To Be",
     "artist": "Bebe Rexha feat. Florida Georgia Line",
@@ -25722,7 +25751,7 @@
     "bpm": 309.65,
     "gap": 16502.72242854836,
     "year": "1991",
-    "lastUpdate": "2025-08-29T00:12:58.301Z",
+    "lastUpdate": "2025-08-28T11:19:05.705Z",
     "edition": "Disney Sing It",
     "genre": "Soundtrack",
     "realBpm": 29,
@@ -31554,7 +31583,7 @@
     "gap": 8942.537313432837,
     "year": "1997",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-29T00:12:56.766Z",
+    "lastUpdate": "2025-08-27T04:51:58.518Z",
     "edition": "Soda Stereo",
     "genre": "Pop",
     "realBpm": 50,
@@ -37252,7 +37281,7 @@
     "bpm": 230,
     "gap": 1921.7391304347825,
     "year": "1969",
-    "lastUpdate": "2025-08-29T00:12:57.594Z",
+    "lastUpdate": "2025-08-27T04:54:05.428Z",
     "edition": "Singstar Singalong With Disney",
     "genre": "Soundtrack",
     "realBpm": 32,
@@ -43315,6 +43344,34 @@
     "local": false
   },
   {
+    "id": "end-of-fashion-o-yeah",
+    "title": "O Yeah",
+    "artist": "End Of Fashion",
+    "video": "aGC2wqmvtMA",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 1555.625,
+    "year": "2005",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-08-31T00:14:23.128Z",
+    "genre": "Rock",
+    "realBpm": 200,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "End Of Fashion - O Yeah",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5070,
+    "tracksCount": 1,
+    "search": "endoffashionoyeah",
+    "local": false
+  },
+  {
     "id": "enej-kamien-z-napisem-love",
     "title": "Kamień z napisem LOVE",
     "artist": "Enej",
@@ -44543,7 +44600,7 @@
     "gap": 11853.90243902439,
     "year": "2006",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-08-29T00:12:58.591Z",
+    "lastUpdate": "2025-08-28T11:20:29.534Z",
     "genre": "Pop Internacional",
     "realBpm": 36,
     "volume": 0.5,
@@ -51077,6 +51134,34 @@
     "shortId": 1775,
     "tracksCount": 1,
     "search": "goingundergroundlistentothestereo",
+    "local": false
+  },
+  {
+    "id": "golden-earring-twilight-zone",
+    "title": "Twilight Zone",
+    "artist": "Golden Earring",
+    "video": "a1sf2CzEq0w",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.66,
+    "gap": 18945.886926392293,
+    "year": "1982",
+    "artistOrigin": "NL",
+    "lastUpdate": "2025-08-31T00:14:23.903Z",
+    "genre": "General Mainstream Rock",
+    "realBpm": 119,
+    "volume": 0.5,
+    "author": "Fepo",
+    "sourceUrl": "https://youtu.be/wIaaBuGNwNw?si=QUjJ9HyxE7oz7k8W",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5072,
+    "tracksCount": 1,
+    "search": "goldenearringtwilightzone",
     "local": false
   },
   {
@@ -58994,7 +59079,7 @@
     "gap": 9143.500294637595,
     "year": "1957",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-29T00:12:56.771Z",
+    "lastUpdate": "2025-08-27T04:52:57.102Z",
     "edition": "Singstar Legends [Au|De|Es|Fr|It|Uk]",
     "genre": "Contemporary R&B, Soul",
     "realBpm": -29,
@@ -95385,6 +95470,34 @@
     "local": false
   },
   {
+    "id": "omc-how-bizarre",
+    "title": "How Bizarre",
+    "artist": "OMC",
+    "video": "C2cMG33mWVY",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.84,
+    "gap": 14639.346781940441,
+    "year": "1995",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2025-08-31T00:14:24.040Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "MDKeil",
+    "sourceUrl": "OMC - How Bizarre",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5073,
+    "tracksCount": 1,
+    "search": "omchowbizarre",
+    "local": false
+  },
+  {
     "id": "on-off-futatsu-no-kodou-to-akai-tsumi",
     "title": "Futatsu no Kodou to Akai Tsumi",
     "artist": "ON OFF",
@@ -107275,7 +107388,7 @@
     "bpm": 383.4,
     "gap": 14212.785602503911,
     "year": "2010",
-    "lastUpdate": "2025-08-29T00:12:57.878Z",
+    "lastUpdate": "2025-08-27T12:02:31.892Z",
     "genre": "Pop",
     "realBpm": 33,
     "volume": 0.5,
@@ -107302,7 +107415,7 @@
     "bpm": 369.24,
     "gap": 19784.40038999025,
     "year": "2002",
-    "lastUpdate": "2025-08-29T00:12:57.746Z",
+    "lastUpdate": "2025-08-27T04:55:54.658Z",
     "edition": "Singstar Pop",
     "genre": "Pop",
     "realBpm": 33,
@@ -109472,7 +109585,7 @@
     "gap": 20363.851313583007,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-29T00:12:57.446Z",
+    "lastUpdate": "2025-08-27T04:53:22.615Z",
     "edition": "Ultrastar",
     "genre": "Soundtrack",
     "realBpm": -35,
@@ -119495,7 +119608,7 @@
     "gap": 22680.79936051159,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2025-08-29T00:12:58.023Z",
+    "lastUpdate": "2025-08-28T11:17:58.563Z",
     "genre": "Parody",
     "realBpm": 100,
     "volume": 0.5,
@@ -120916,7 +121029,7 @@
     "bpm": 244,
     "gap": 30246.39344262295,
     "year": "1993",
-    "lastUpdate": "2025-08-29T00:12:58.161Z",
+    "lastUpdate": "2025-08-28T11:18:21.515Z",
     "genre": "Pop",
     "realBpm": 27,
     "volume": 0.5,
@@ -125908,6 +126021,35 @@
     "shortId": 4326,
     "tracksCount": 1,
     "search": "theeagleshotelcalifornia",
+    "local": false
+  },
+  {
+    "id": "the-foundations-build-me-up-buttercup",
+    "title": "Build Me Up Buttercup",
+    "artist": "The Foundations",
+    "video": "hSofzQURQDk",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 20332.537313432837,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-08-31T00:14:24.042Z",
+    "edition": "Singstar Party English",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Peschi",
+    "sourceUrl": "The Foundations - Build Me Up Buttercup",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5074,
+    "tracksCount": 1,
+    "search": "thefoundationsbuildmeupbuttercup",
     "local": false
   },
   {
@@ -138820,7 +138962,7 @@
     "gap": 15110,
     "year": "1988",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-08-29T00:12:58.443Z",
+    "lastUpdate": "2025-08-28T11:19:55.499Z",
     "genre": "Pop",
     "realBpm": 18,
     "volume": 0.5,
