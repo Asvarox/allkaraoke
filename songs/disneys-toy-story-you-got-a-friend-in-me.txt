@@ -1,0 +1,193 @@
+#ARTIST:Disney’s Toy Story
+#TITLE:You Got A Friend In Me
+#CREATOR:Kimbo
+#BPM:230
+#YEAR:1969
+#PREVIEWSTART:33,5
+#VIDEO:v=ZjbSKknc2rc
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:1921,7391304347825
+#EDITION:Singstar Singalong With Disney
+#ALLKARAOKE_ID:disneys-toy-story-you-got-a-friend-in-me
+#ALLKARAOKE_SID:5062
+#ALLKARAOKE_LASTUPDATE:2025-08-27T04:54:05.428Z
+#ALLKARAOKE_REALBPM:32
+#ALLKARAOKE_SOURCEURL:Disney’s Toy Story - You Got A Friend In Me
+#ALLKARAOKE_PREVIEWEND:77
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Disney’s Toy Story - You Got A Friend In Me.mp3
+: 15 2 7 You’ve 
+: 20 7 10 got 
+: 28 1 7 a 
+* 31 6 12 friend 
+: 38 3 10 in 
+: 43 3 3 me
+- 46 67
+- 67
+: 82 2 12 You’ve 
+: 86 2 15 got 
+: 89 1 12 a 
+: 92 7 15 friend 
+: 100 4 12 in 
+: 106 2 10 me
+- 108 130
+- 130
+: 145 2 12 When 
+: 148 2 8 the 
+: 152 7 10 road 
+: 160 2 3 looks 
+: 177 1 14 rough 
+: 179 4 14 a
+* 185 6 15 head
+- 191
+: 192 2 12 And 
+: 195 4 10 you’re 
+: 200 9 15 miles 
+: 211 2 10 and 
+: 216 5 12 miles
+- 221
+: 223 2 7 From 
+: 226 2 3 your 
+* 230 2 5 nice 
+: 238 6 7 warm 
+: 246 3 7 bed
+- 249 255
+- 255
+: 270 2 12 You 
+: 273 3 14 just 
+: 277 2 17 re
+: 280 3 15 me
+: 284 2 10 mber
+- 286
+: 287 3 7 What 
+: 292 1 3 your 
+: 295 3 6 old 
+: 300 6 7 pal 
+: 307 3 3 said
+- 310
+: 317 3 7 Boy 
+* 323 9 15 you’ve 
+: 334 4 12 got 
+: 339 1 10 a 
+: 341 3 5 friend 
+: 346 5 3 in 
+: 353 1 5 me
+: 355 2 7 ~
+- 357 364
+- 364
+: 379 3 15 Yeah 
+: 384 9 15 you’ve 
+: 395 4 12 got 
+: 400 1 10 a 
+: 402 7 15 friend 
+: 410 3 12 in 
+: 415 2 7 me
+- 417 439
+- 439
+: 454 3 12 Well 
+: 458 1 12 some 
+: 460 1 12 o
+: 462 1 12 ther 
+: 465 4 12 folks
+- 469
+: 471 4 12 Might 
+: 476 1 12 be 
+: 479 2 12 a
+- 481
+: 484 1 14 Lit
+: 486 1 14 tle 
+: 488 1 14 bit 
+* 493 3 14 smart
+: 497 1 14 er 
+: 499 1 14 than 
+: 501 2 14 I 
+: 504 2 14 am
+- 506
+: 519 1 12 Big
+: 521 1 12 ger 
+: 523 1 12 and 
+: 526 7 12 strong
+: 535 1 12 er 
+: 540 1 12 too
+- 541 548
+- 548
+: 563 4 12 May
+: 568 1 12 be
+- 569
+: 579 1 14 But 
+: 581 3 14 none 
+: 586 1 14 of 
+: 588 6 14 them
+- 594
+: 600 1 14 Will 
+* 603 6 14 e
+: 611 3 14 ver 
+: 615 7 14 love 
+: 624 2 14 you
+- 626
+: 628 2 14 The 
+: 632 1 12 way
+: 634 4 10 ~
+: 640 6 10 I 
+: 647 3 10 do
+- 650
+: 663 1 7 It’s 
+: 665 4 8 me 
+: 671 4 7 and 
+: 678 4 5 you 
+* 684 4 7 boy
+- 688
+: 701 1 7 And 
+: 703 2 10 as 
+: 706 2 7 the 
+: 709 8 12 years 
+: 719 4 10 go 
+: 724 3 3 by
+- 727 740
+- 740
+: 755 1 3 Our 
+: 757 4 12 friend
+* 763 3 15 ship 
+: 769 1 12 will 
+: 772 7 15 ne
+: 780 4 12 ver 
+: 785 3 10 die
+- 788 809
+- 809
+: 824 1 15 You’re 
+: 826 2 15 gon
+: 829 1 12 na 
+: 832 5 15 see
+- 837
+: 839 3 15 It’s 
+: 843 3 12 our 
+* 850 5 15 des
+: 859 5 14 ti
+: 865 6 12 ny
+- 871 881
+- 881
+: 896 2 15 You’ve 
+: 899 3 12 got 
+: 903 2 10 a 
+: 906 4 5 friend 
+: 912 4 7 in 
+* 918 3 7 me
+- 921 944
+- 944
+: 959 2 15 You’ve 
+: 962 3 12 got 
+: 966 2 10 a 
+: 969 4 5 friend 
+: 974 3 7 in 
+: 979 3 7 me
+- 982 1006
+- 1006
+: 1021 2 15 You 
+: 1024 5 12 got 
+: 1030 1 10 a 
+: 1032 7 15 friend 
+: 1040 4 12 in 
+: 1045 1 10 me
+: 1047 1 12 ~
+E

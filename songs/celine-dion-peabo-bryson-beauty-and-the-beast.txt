@@ -1,0 +1,275 @@
+#ARTIST:Celine Dion & Peabo Bryson
+#TITLE:Beauty And The Beast
+#CREATOR:Canni
+#BPM:309,65
+#YEAR:1991
+#VIDEO:v=pgYEJHJXFB4
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:16502,72242854836
+#EDITION:Disney Sing It
+#ALLKARAOKE_ID:celine-dion-peabo-bryson-beauty-and-the-beast
+#ALLKARAOKE_SID:5067
+#ALLKARAOKE_LASTUPDATE:2025-08-28T11:19:05.705Z
+#ALLKARAOKE_REALBPM:29
+#ALLKARAOKE_SOURCEURL:Disney’s Beauty and the Beast (Céline Dion & Peabo Bryson) - Beauty And The Beast
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Disney’s Beauty and the Beast (Céline Dion & Peabo Bryson) - Beauty And The Beast.mp3
+: 21 9 -3 Tale 
+: 31 7 0 as 
+: 39 11 4 old 
+: 51 9 5 as 
+: 61 40 -2 time,
+- 101 126
+- 126
+: 147 15 -3 True 
+: 163 7 0 as 
+: 171 3 4 it 
+: 175 5 5 can 
+: 181 48 7 be.
+- 229 258
+- 258
+: 279 7 5 Bare
+: 287 7 7 ly 
+: 295 5 9 e
+: 301 6 10 ven 
+: 309 20 12 friends,
+- 329
+: 343 7 12 Then 
+: 351 9 10 some
+: 361 7 9 bo
+: 369 3 7 dy 
+: 373 24 5 bends
+- 397
+: 409 13 10 Un
+: 423 5 9 ex
+: 429 7 7 pect
+: 437 11 5 ed
+: 449 5 2 l
+: 455 42 0 y
+- 497 512
+- 512
+: 533 15 -5 Just 
+: 549 5 -3 a 
+: 555 5 1 lit
+: 561 3 2 tle 
+: 565 11 -3 cha
+: 577 30 -5 nge
+- 607 638
+- 638
+: 659 15 -6 Small 
+: 675 3 -3 to 
+: 679 9 1 say 
+: 689 7 2 the 
+: 697 20 4 least.
+- 717
+: 729 9 6 Both 
+: 739 3 4 a 
+: 743 9 6 lit
+: 753 6 9 tle 
+: 761 18 2 scared,
+- 779
+: 791 7 2 Nei
+: 799 3 1 ther 
+: 803 9 2 one 
+: 813 7 6 pre
+: 821 20 -5 pared.
+- 841
+: 853 9 6 Beau
+: 863 7 7 ty 
+: 871 13 4 and 
+: 885 17 6 the 
+: 903 42 2 Beast.
+- 945 960
+- 960
+: 981 9 2 Ev
+: 991 5 4 er 
+: 997 9 6 just 
+: 1007 7 7 the 
+: 1015 58 9 same.
+- 1073 1088
+- 1088
+: 1109 9 2 Ev
+: 1119 7 4 er 
+: 1127 6 6 a 
+: 1135 9 7 sur
+: 1145 68 9 prise
+- 1213 1218
+- 1218
+: 1239 7 2 Ev
+: 1247 7 4 er 
+: 1255 7 6 as 
+: 1263 7 7 be
+: 1271 16 9 fore,
+- 1287
+: 1299 3 9 And 
+: 1303 7 9 ev
+: 1311 7 7 er 
+: 1319 7 6 just 
+: 1327 7 4 as 
+: 1335 16 2 sure
+- 1351
+: 1367 7 2 As 
+: 1375 5 4 the 
+: 1381 14 6 sun 
+: 1397 11 2 will 
+: 1409 44 4 rise.
+- 1453
+: 1461 17 4 Whoa, 
+: 1479 17 7 oh, 
+: 1497 27 9 oh, 
+: 1525 13 11 oh, 
+: 1539 5 11 oh
+: 1545 3 9 ~
+: 1549 7 6 ~
+: 1557 1 4 ~
+: 1559 10 2 ~
+- 1569 1900
+- 1900
+: 1921 27 9 Mmmhhh, 
+: 1949 1 11 U
+: 1951 3 9 o
+: 1955 1 11 u
+: 1957 5 9 o
+: 1963 3 11 u
+: 1967 5 12 O
+: 1973 5 11 u
+: 1979 11 9 Uo
+: 1991 6 11 oh
+- 1997
+: 2009 5 2 E
+: 2015 5 4 ver 
+: 2021 9 6 just 
+: 2031 7 7 the 
+: 2039 60 9 same.
+- 2099 2116
+- 2116
+: 2137 17 11 E
+: 2155 7 9 ver 
+: 2163 3 9 a 
+: 2167 5 6 sur
+: 2173 33 9 pri
+: 2207 9 6 ~
+: 2217 5 6 ~
+: 2223 9 4 ~
+: 2233 16 2 se
+- 2249
+: 2263 7 2 E
+: 2271 7 4 ver 
+: 2279 7 6 as 
+: 2287 7 7 be
+: 2295 16 9 fore,
+- 2311
+: 2327 7 9 Ev
+: 2335 5 7 er 
+: 2341 11 6 just 
+: 2353 5 4 as 
+: 2359 16 2 sure
+- 2375
+: 2393 7 2 As 
+: 2401 4 4 the 
+: 2407 15 6 sun 
+: 2423 7 2 will 
+: 2431 34 4 rise.
+- 2465
+: 2471 14 4 Oh, 
+: 2495 14 5 oh, 
+: 2521 16 7 oh,
+- 2537 2566
+- 2566
+: 2587 9 -1 Tale 
+: 2597 7 2 as 
+: 2605 7 6 old 
+: 2613 13 7 as 
+: 2627 26 0 time
+- 2653 2692
+- 2692
+: 2713 9 11 Tune 
+: 2723 5 9 as 
+: 2729 19 9 old 
+: 2749 13 11 as 
+: 2763 32 7 song
+- 2795 2824
+- 2824
+: 2845 7 7 Bit
+: 2853 5 9 ter 
+: 2859 9 11 sweet 
+: 2869 7 12 and 
+: 2877 16 14 strange,
+- 2893
+: 2905 13 14 Find
+: 2919 5 12 ing 
+: 2925 7 11 you 
+: 2933 6 9 can 
+: 2941 16 7 change,
+- 2957
+: 2971 13 12 Learn
+: 2985 7 11 ing 
+: 2993 5 9 you 
+: 2999 7 7 were 
+: 3007 22 2 wrong.
+- 3029 3076
+- 3076
+: 3097 11 -4 Cer
+: 3109 7 -1 tain 
+: 3117 17 3 as 
+: 3135 4 4 the 
+: 3141 19 -3 sun.
+- 3160
+: 3161 9 8 Cer
+: 3171 8 4 tain 
+: 3181 15 6 as 
+: 3197 3 8 the 
+: 3201 9 8 su
+: 3211 15 4 n.
+- 3226
+: 3227 9 -4 Ri
+: 3237 7 -1 sing 
+: 3245 7 3 in 
+: 3253 7 4 the 
+: 3261 29 6 East.
+- 3290
+: 3291 9 8 Tale 
+: 3301 9 6 as 
+: 3311 11 8 old 
+: 3323 5 11 as 
+: 3329 20 4 time,
+- 3349
+: 3355 9 4 Song 
+: 3365 7 3 as 
+: 3373 7 4 old 
+: 3381 9 8 as 
+: 3391 18 -3 rhyme.
+- 3409
+: 3419 9 8 Beau
+: 3429 7 9 ty 
+: 3437 9 6 and 
+: 3447 23 8 the 
+: 3471 40 4 Beast.
+- 3511 3526
+- 3526
+: 3547 11 8 Tale 
+: 3559 5 6 as 
+: 3565 15 8 old 
+: 3581 7 11 as 
+: 3589 17 4 time,
+- 3606
+: 3607 19 1 Song 
+: 3627 3 -1 as 
+: 3631 9 1 old 
+: 3641 14 4 as 
+: 3657 20 -3 rhyme
+- 3677
+: 3685 7 8 Beau
+: 3693 11 9 ty 
+: 3705 15 6 and 
+: 3721 44 8 the 
+: 3781 118 4 Beast.
+- 3899 4298
+- 4298
+: 4319 13 12 Beau
+: 4333 15 13 ty 
+: 4349 25 9 and 
+: 4375 40 11 the 
+: 4443 134 4 Beast.
+E
