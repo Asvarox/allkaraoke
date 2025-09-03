@@ -1,0 +1,426 @@
+#ARTIST:ABC
+#TITLE:When Smokey Sings
+#CREATOR:tomhillmeyer
+#BPM:252,79999999999995
+#YEAR:1987
+#VIDEO:v=BVXLiN1vCdQ
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:29688,095238095237
+#ALLKARAOKE_ID:abc-when-smokey-sings
+#ALLKARAOKE_SID:5078
+#ALLKARAOKE_LASTUPDATE:2025-09-03T00:11:41.942Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:88
+#ALLKARAOKE_SOURCEURL:ABC - When Smokey Sings
+#ALLKARAOKE_VOLUME:0,5
+#MP3:ABC - When Smokey Sings.mp3
+: 17 3 -3 Deb
+: 21 6 0 on
+: 29 10 0 air 
+: 49 4 -2 lul
+: 55 5 -3 la
+: 61 8 -7 bies
+- 69
+: 77 2 -12 In 
+: 81 3 -2 mel
+: 85 6 -3 o
+: 93 10 -7 dies 
+: 105 3 -3 re
+: 109 7 -5 veal
+: 117 14 -8 ed
+- 131
+: 145 3 -5 In 
+: 149 6 0 deep 
+: 157 15 0 despair 
+: 173 2 -5 on 
+: 177 4 -2 lon
+: 183 5 -3 ely 
+: 189 12 -7 nights
+- 201
+: 205 3 -7 He 
+: 209 4 -2 knows 
+: 215 5 -3 just 
+: 221 7 -2 how 
+: 229 2 0 you 
+: 233 30 0 feel
+- 263
+: 269 2 -5 The 
+: 273 3 -2 sly
+: 277 6 0 est 
+: 285 12 0 rhymes, 
+: 301 3 0 the 
+: 305 4 5 sharp
+: 311 5 4 est 
+: 317 12 0 suits
+- 329
+: 333 3 0 In 
+: 337 3 5 mir
+: 341 6 4 a
+: 349 7 0 cles 
+: 357 11 2 made 
+: 369 5 0 re
+: 375 14 -5 al
+- 389
+F 397 0 -5 Like 
+F 399 0 -5 a 
+: 401 3 -3 bird 
+: 405 6 0 in 
+: 413 6 0 flight
+- 419
+F 429 0 -5 On 
+: 431 1 -5 a 
+: 433 3 -3 hot 
+: 437 6 0 sweet 
+: 445 6 0 night
+- 451
+: 461 3 -5 You 
+: 465 5 -3 know 
+: 471 5 0 you’re 
+: 477 6 0 right 
+: 485 6 -5 just 
+: 493 6 -3 to 
+: 501 4 -2 hold 
+: 507 4 -3 her 
+: 513 6 -7 tight
+- 519
+: 525 2 -5 He 
+: 529 4 -3 soothes 
+: 535 5 0 it 
+: 541 8 0 right 
+F 557 0 -5 makes 
+: 559 1 -5 it 
+: 561 3 -3 out 
+: 565 4 0 of 
+: 573 8 0 sight
+- 581
+* 589 2 0 And 
+* 593 3 5 eve
+* 597 3 4 ry
+* 601 2 0 thing’s 
+* 605 3 5 good 
+* 609 3 4 in 
+* 613 2 0 the 
+* 617 10 5 world 
+* 633 2 7 to
+* 637 6 4 night
+- 643
+: 649 6 2 When 
+: 657 3 -3 Smo
+: 661 6 0 key 
+: 669 34 0 sings, 
+: 709 2 5 I 
+: 713 7 5 hear 
+: 721 3 4 vi
+: 725 3 2 o
+: 729 12 0 lins
+- 741 760
+- 760
+: 777 6 0 When 
+: 785 3 -3 Smo
+: 789 6 0 key 
+: 797 38 0 sings, 
+: 837 2 5 I 
+: 841 3 5 for
+: 845 2 4 get 
+: 849 3 7 ev
+: 853 3 4 e
+: 857 3 2 ry
+: 861 10 0 thing
+- 871 888
+- 888
+: 905 2 -3 And 
+: 909 2 -5 she’s 
+: 913 3 -3 pack
+: 917 6 0 ing 
+: 925 8 0 her things
+- 933
+: 937 2 0 And 
+: 941 2 0 she’s 
+: 945 3 2 spread
+: 949 2 2 ing 
+: 953 3 4 her 
+: 957 8 0 wings
+- 965
+: 973 3 -5 The 
+: 977 3 -3 front 
+: 981 3 0 door 
+: 985 2 0 might 
+: 989 6 0 slam
+- 995
+: 1001 2 -3 But 
+: 1005 2 -3 the 
+: 1009 2 5 back 
+: 1013 3 5 door 
+: 1017 2 7 it 
+: 1021 8 4 rings
+- 1029
+: 1033 6 0 And 
+: 1041 3 -3 Smo
+: 1045 6 0 key 
+: 1053 36 0 sings, 
+: 1097 2 5 he 
+: 1101 8 4 sings
+- 1109 1152
+- 1152
+: 1169 3 -3 El
+: 1173 6 0 e
+: 1181 8 0 gance 
+: 1197 3 -5 in 
+: 1201 4 -2 el
+: 1207 5 -3 o
+: 1213 10 -7 quence
+- 1223
+: 1229 2 -7 For 
+: 1233 6 -2 sale 
+: 1241 3 -3 or 
+: 1245 6 -7 rent 
+: 1253 2 -12 or 
+: 1257 3 -3 hi
+: 1261 8 -5 re
+- 1269 1280
+- 1280
+: 1297 3 -5 Should I 
+: 1301 6 0 say 
+: 1309 10 0 yes 
+: 1325 3 -5 and 
+: 1329 4 -2 match 
+: 1335 5 -3 his 
+: 1341 10 -7 best
+- 1351
+: 1357 2 -7 Then 
+: 1361 6 -2 I 
+: 1369 2 -3 would 
+: 1373 6 -2 be 
+: 1381 2 0 a 
+: 1385 3 0 Li
+: 1389 22 0 ar
+- 1411
+: 1425 7 -3 Sym
+: 1433 3 0 pho
+: 1437 10 0 nies 
+: 1457 6 5 that 
+: 1465 3 4 soothe 
+: 1469 8 0 the rage
+- 1477
+: 1485 2 -5 When 
+: 1489 3 5 lov
+: 1493 6 4 ers’ 
+: 1501 7 0 hearts 
+: 1509 10 2 catch 
+: 1521 3 0 fi
+: 1525 12 -5 re
+- 1537
+F 1549 0 -5 Like 
+: 1551 1 -5 a 
+: 1553 3 -3 bird 
+: 1557 6 0 in 
+: 1565 6 0 flight
+- 1571
+F 1581 0 -5 On 
+: 1583 1 -5 a 
+: 1585 3 -3 hot 
+: 1589 6 0 sweet 
+: 1597 6 0 night
+- 1603
+: 1613 3 -5 You 
+: 1617 5 -3 know 
+: 1623 5 0 you’re 
+: 1629 6 0 right
+- 1635
+: 1637 6 -5 Just 
+: 1645 6 -3 to 
+: 1653 4 -2 hold 
+: 1659 4 -3 her 
+: 1665 6 -7 tight
+- 1671
+: 1677 2 -5 He 
+: 1681 4 -3 soothes 
+: 1687 5 0 it 
+: 1693 8 0 right
+- 1701
+F 1709 0 -5 Makes 
+: 1711 1 -5 it 
+: 1713 3 -3 out 
+: 1717 4 0 of 
+: 1725 8 0 sight
+- 1733
+* 1741 2 0 And 
+* 1745 3 5 eve
+* 1749 3 4 ry
+* 1753 2 0 thing’s 
+* 1757 3 5 good 
+* 1761 3 4 in 
+* 1765 2 0 the 
+* 1769 10 5 world 
+* 1785 2 7 to
+* 1789 6 4 night
+- 1795
+: 1801 6 2 When 
+: 1809 3 -3 Smo
+: 1813 6 0 key 
+: 1821 34 0 sings 
+: 1861 2 5 I 
+: 1865 7 5 hear 
+: 1873 3 4 vi
+: 1877 3 2 o
+: 1881 12 0 lins
+- 1893 1912
+- 1912
+: 1929 6 0 When 
+: 1937 3 -3 Smo
+: 1941 6 0 key 
+: 1949 38 0 sings 
+: 1989 2 5 I 
+: 1993 3 5 for
+: 1997 2 4 get 
+: 2001 3 7 ev
+: 2005 3 4 er
+: 2009 3 2 y
+: 2013 10 0 thing
+- 2023
+: 2025 3 -3 Ye
+: 2029 10 -5 ah
+- 2039 2040
+- 2040
+: 2057 2 -3 As 
+: 2061 2 -5 she’s 
+: 2065 3 -3 packing 
+: 2069 6 0 her 
+: 2077 8 0 things
+- 2085
+: 2089 2 0 As 
+: 2093 2 0 she’s 
+: 2097 3 2 spread
+: 2101 2 2 ing 
+: 2105 3 4 her 
+: 2109 8 0 wings
+- 2117
+: 2125 3 -5 Smash
+: 2129 3 -3 ing 
+: 2133 4 0 the 
+: 2141 6 0 hell
+- 2147
+: 2153 2 -3 With 
+: 2157 2 -3 the 
+: 2161 2 5 hea
+: 2165 3 5 ven 
+: 2169 2 7 she 
+: 2173 8 4 brings
+- 2181
+: 2185 6 0 Then 
+: 2193 3 -3 Smo
+: 2197 6 0 key 
+: 2205 36 0 sings, 
+: 2249 2 5 he 
+: 2253 8 4 sings
+- 2261 2432
+- 2432
+: 2449 3 -3 Lut
+: 2453 6 0 her 
+: 2461 14 0 croons
+- 2475 2496
+- 2496
+: 2513 7 -3 Sly’s 
+: 2521 3 0 the 
+: 2525 2 -3 o
+: 2529 6 0 ri
+: 2537 2 -3 gi
+: 2541 6 0 nal 
+: 2549 2 -3 o
+: 2553 2 0 ri
+: 2557 2 0 gi
+: 2561 6 2 na
+: 2569 6 4 tor
+- 2575 2580
+- 2580
+: 2597 6 0 James 
+: 2605 16 -2 screams
+- 2621 2624
+- 2624
+: 2641 3 -3 Mar
+: 2645 2 0 vin 
+: 2649 3 0 was 
+: 2653 2 -3 the 
+: 2657 7 0 on
+: 2665 4 -3 ly 
+: 2681 2 -3 in
+: 2685 2 0 no
+: 2689 7 2 va
+: 2697 6 4 tor
+- 2703 2716
+- 2716
+: 2733 3 0 But 
+: 2737 3 5 no
+: 2741 3 4 thing 
+: 2745 3 2 can 
+: 2749 2 0 com
+: 2753 8 -3 pare
+- 2761
+: 2769 3 5 No
+: 2773 3 4 thing 
+: 2777 3 2 can 
+: 2781 3 0 com
+: 2785 6 -3 pare 
+: 2793 6 -5 when 
+: 2801 2 -3 Smo
+: 2805 6 0 key 
+: 2813 20 0 sings
+- 2833 3064
+- 3064
+: 3081 6 2 When 
+: 3089 3 -3 Smo
+: 3093 6 0 key 
+: 3101 34 0 sings, 
+: 3141 2 5 I 
+: 3145 7 5 hear 
+: 3153 3 4 vi
+: 3157 3 2 o
+: 3161 12 0 lins
+- 3173 3192
+- 3192
+: 3209 6 0 When 
+: 3217 3 -3 Smo
+: 3221 6 0 key 
+: 3229 38 0 sings, 
+: 3269 2 5 I 
+: 3273 3 5 for 
+: 3277 2 4 get 
+: 3281 3 7 Ev
+: 3285 3 4 e
+: 3289 3 2 ry
+: 3293 10 0 thing
+- 3303 3320
+- 3320
+: 3337 2 -3 As 
+: 3341 2 -5 she’s 
+: 3345 3 -3 packing 
+: 3349 6 0 her 
+: 3357 38 0 things
+- 3395
+* 3401 2 0 As 
+* 3405 3 0 she’s 
+* 3409 2 2 spread
+* 3413 2 2 ing 
+* 3417 3 4 her 
+* 3421 38 4 wings
+- 3459
+: 3469 2 0 She 
+: 3473 2 5 threw 
+: 3477 2 7 back 
+: 3481 2 7 the 
+: 3485 40 7 ring
+- 3525
+: 3529 6 2 When 
+: 3537 3 -3 Smo
+: 3541 6 0 key 
+: 3549 46 0 sings
+- 3595
+: 3601 3 2 Smo
+: 3605 6 4 key 
+: 3613 44 4 sings
+- 3657
+: 3665 3 5 Smo
+: 3669 6 7 key 
+: 3677 52 7 sings
+E

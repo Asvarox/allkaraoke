@@ -1934,6 +1934,120 @@
     "local": false
   },
   {
+    "id": "abc-all-of-my-heart",
+    "title": "All Of My Heart",
+    "artist": "ABC",
+    "video": "Lfph3043yZU",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.14,
+    "gap": 19116.40378021243,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-03T00:11:41.940Z",
+    "genre": "Soft Rock",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "sourceUrl": "ABC - All Of My Heart",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5077,
+    "tracksCount": 1,
+    "search": "abcallofmyheart",
+    "local": false
+  },
+  {
+    "id": "abc-poison-arrow",
+    "title": "Poison Arrow",
+    "artist": "ABC",
+    "video": "a70yJwgQtzo",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.56,
+    "gap": 34210.33892936332,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-03T00:11:41.304Z",
+    "edition": "2",
+    "genre": "Pop",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "ABC - Poison Arrow",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5075,
+    "tracksCount": 1,
+    "search": "abcpoisonarrow",
+    "local": false
+  },
+  {
+    "id": "abc-the-look-of-love",
+    "title": "The Look Of Love",
+    "artist": "ABC",
+    "video": "cNEdxZURTaI",
+    "language": [
+      "English"
+    ],
+    "bpm": 241.54,
+    "gap": 7936.375755568436,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-03T00:11:41.938Z",
+    "edition": "New",
+    "genre": "Synth-Pop, New Wave, Dance-Pop, New Pop",
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "ABC - The Look Of Love",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5076,
+    "tracksCount": 1,
+    "search": "abcthelookoflove",
+    "local": false
+  },
+  {
+    "id": "abc-when-smokey-sings",
+    "title": "When Smokey Sings",
+    "artist": "ABC",
+    "video": "BVXLiN1vCdQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.79999999999995,
+    "gap": 29688.095238095237,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-03T00:11:41.942Z",
+    "genre": "Alternative Rock",
+    "realBpm": 88,
+    "volume": 0.5,
+    "author": "tomhillmeyer",
+    "sourceUrl": "ABC - When Smokey Sings",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5078,
+    "tracksCount": 1,
+    "search": "abcwhensmokeysings",
+    "local": false
+  },
+  {
     "id": "abor-tynna-baller-esc-2025-germany",
     "title": "Baller (ESC 2025 Germany)",
     "artist": "Abor & Tynna",
@@ -36228,9 +36342,9 @@
       "English"
     ],
     "bpm": 400,
-    "gap": 1647.5,
+    "gap": 1597.5,
     "year": "2013",
-    "lastUpdate": "2024-06-05T00:10:02.108Z",
+    "lastUpdate": "2025-09-01T04:33:55.932Z",
     "genre": "Cinema",
     "realBpm": 100,
     "volume": 0.93,
@@ -51281,10 +51395,10 @@
       "English"
     ],
     "bpm": 297.2,
-    "gap": 12430.578734858682,
+    "gap": 12880.578734858682,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2024-08-07T20:58:27.232Z",
+    "lastUpdate": "2025-09-01T04:34:40.700Z",
     "realBpm": 74,
     "volume": 0.83,
     "author": "Diddlmaus30mg",
@@ -57150,10 +57264,10 @@
       "English"
     ],
     "bpm": 375.03,
-    "gap": 6689.079993600511,
+    "gap": 6639.079993600511,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2025-02-06T18:53:57.471Z",
+    "lastUpdate": "2025-09-01T04:35:18.570Z",
     "genre": "Pop",
     "realBpm": 123,
     "volume": 0.71,
@@ -85499,10 +85613,10 @@
       "English"
     ],
     "bpm": 200,
-    "gap": 62635,
+    "gap": 64085,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2024-04-28T19:12:48.858Z",
+    "lastUpdate": "2025-09-01T04:33:01.983Z",
     "genre": "Pop",
     "realBpm": 108,
     "previewStart": 345,
@@ -121719,7 +121833,7 @@
     "gap": 21570,
     "year": "2002",
     "artistOrigin": "RU",
-    "lastUpdate": "2024-08-27T00:15:38.243Z",
+    "lastUpdate": "2025-09-01T04:35:06.607Z",
     "genre": "Pop",
     "videoGap": 8,
     "realBpm": 90,
@@ -133446,10 +133560,10 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 20060,
+    "gap": 19910,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.335Z",
+    "lastUpdate": "2025-09-01T04:33:34.732Z",
     "genre": "Soundtrack",
     "realBpm": 90,
     "volume": 0.7,
