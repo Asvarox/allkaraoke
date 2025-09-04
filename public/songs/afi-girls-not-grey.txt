@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=AFI&cancion=Girl%27s%20Not%20Grey
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:AFI - Girl's Not Grey.mp3
 #COVER:AFI - Girl's Not Grey.jpg
 : 26 5 15 I'll

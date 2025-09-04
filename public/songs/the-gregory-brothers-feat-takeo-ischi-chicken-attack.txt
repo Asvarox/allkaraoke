@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=20732
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #P1:Chicken Attack
 #MP3:The Gregory Brothers feat. Takeo Ischi - Chicken Attack.mp3
 #START:4.0

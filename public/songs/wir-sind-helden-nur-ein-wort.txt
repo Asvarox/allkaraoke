@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:187
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=X5kmM98iklo
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Wir Sind Helden - Nur Ein Wort.mp3
 #COVER:Wir Sind Helden - Nur Ein Wort.jpg
 : 23 2 59 Ich 

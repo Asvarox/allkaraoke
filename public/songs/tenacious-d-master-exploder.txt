@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Master%20Exploder
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 : 0 38 11 Ah
 : 41 41 12 ~
 : 85 39 14 ~

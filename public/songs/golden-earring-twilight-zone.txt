@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:119
 #ALLKARAOKE_SOURCEURL:https://youtu.be/wIaaBuGNwNw?si=QUjJ9HyxE7oz7k8W
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Golden Earring - Twilight Zone.mp3
 : 16 4 11 It’s 
 : 24 4 11 two 

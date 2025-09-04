@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:151
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=HBO0WlNbbHg
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Oasis - Champagne Supernova.mp3
 #COVER:Oasis - Champagne Supernova.jpg
 #START:1,5

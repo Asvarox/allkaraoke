@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:IT
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_VOLUME:0,89
+#ALLKARAOKE_OLDVOLUME:0,89
 #MP3:Måneskin - Honey (Are U Coming?).mp3
 #COVER:Måneskin - Honey (Are U Coming?) [CO].jpg
 #BACKGROUND:Måneskin - Honey (Are U Coming?) [BG].jpg

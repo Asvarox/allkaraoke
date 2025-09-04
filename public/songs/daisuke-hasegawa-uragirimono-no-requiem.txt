@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_OLDVOLUME:0,99
 #MP3:Daisuke Hasegawa - Uragirimono no Requiem (TV).mp3
 #COVER:Daisuke Hasegawa - Uragirimono no Requiem (TV).jpg
 #MEDLEYSTARTBEAT:1408

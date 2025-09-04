@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8158
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #MP3:Disturbed - Droppin’ Plates.mp3
 : 19 4 -4 Well 
 : 24 3 -4 here 

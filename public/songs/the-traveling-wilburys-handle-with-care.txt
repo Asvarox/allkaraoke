@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:13
 #ALLKARAOKE_SOURCEURL:The Traveling Wilburys - Handle With Care
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:The Traveling Wilburys - Handle With Care.mp3
 : 16 5 2 Been 
 : 22 3 2 beat 

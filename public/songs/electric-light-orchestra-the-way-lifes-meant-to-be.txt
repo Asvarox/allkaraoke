@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Electric Light Orchestra - The Way Life's Meant to Be.mp3
 #COVER:Electric Light Orchestra - The Way Life's Meant to Be.jpg
 #MEDLEYSTARTBEAT:667

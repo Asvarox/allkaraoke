@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=26136
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,9
 #MP3:Ideal - Eiszeit.mp3
 : 18 2 4 Das 
 : 21 2 4 Te

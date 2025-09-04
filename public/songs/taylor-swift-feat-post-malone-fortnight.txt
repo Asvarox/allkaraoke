@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:192
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=D8VEhcPeSlc
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Taylor Swift feat. Post Malone - Fortnight.mp3
 #COVER:Taylor Swift feat. Post Malone - Fortnight [CO].jpg
 #BACKGROUND:Taylor Swift feat. Post Malone - Fortnight [BG].jpg

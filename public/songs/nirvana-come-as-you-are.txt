@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:60
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Come%20As%20You%20Are
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 : 23 11 59 Come 
 : 45 9 62 as 
 : 57 5 64 you 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Riva feat. Dannii Minogue - Who Do You Love Now?
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Riva feat. Dannii Minogue - Who Do You Love Now?.mp3
 : 18 2 5 Where 
 : 22 2 7 do 

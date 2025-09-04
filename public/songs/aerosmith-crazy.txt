@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy
 #ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_OLDVOLUME:0,91
 F 21 2 13 come 
 F 24 5 13 'ere 
 F 30 4 13 ba

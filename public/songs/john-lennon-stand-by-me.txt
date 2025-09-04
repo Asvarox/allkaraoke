@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/results?search_query=john+lennon
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 #MP3:John Lennon - Stand By Me.mp3
 : 14 2 1 When 
 : 18 2 4 the 

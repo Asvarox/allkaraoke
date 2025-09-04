@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:196
 #ALLKARAOKE_PREVIEWEND:58
 #ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Rise Against - Prayer of the refugee.mp3
 #COVER:Rise Against - Prayer of the refugee.jpg
 #START:3,2

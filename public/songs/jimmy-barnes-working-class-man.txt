@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:-56
 #ALLKARAOKE_SOURCEURL:Jimmy Barnes - Working Class Man
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Jimmy Barnes - Working Class Man.mp3
 : 19 2 15 Work
 : 23 2 18 in’ 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=Romeo+and+Cinderella+miku
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Miku Hatsune - Romeo and Cinderella.mp3
 #COVER:Miku Hatsune - Romeo and Cinderella.jpg
 #MEDLEYSTARTBEAT:1661

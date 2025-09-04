@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 : 18 3 9 When 
 : 22 4 10 I 
 : 27 3 12 wake 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://youtu.be/ZjBZ8MUnB0E?si=dET8K6yIuYjPekWP
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Dua Lipa - Training Season.mp3
 #COVER:Dua Lipa - Training Season [CO].jpg
 #BACKGROUND:Dua Lipa - Training Season [BG].jpg

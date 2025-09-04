@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 12 3 -1 Shine 
 : 16 3 6 bright 
 : 20 1 -1 like 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_VOLUME:0,98
+#ALLKARAOKE_OLDVOLUME:0,98
 #MP3:Tatsuya Kitani - Rapport.mp3
 #COVER:Tatsuya Kitani - Rapport [CO].jpg
 #BACKGROUND:Tatsuya Kitani - Rapport [BG].jpg

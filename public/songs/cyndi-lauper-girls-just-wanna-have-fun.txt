@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Cyndi%20Lauper&cancion=Girls%20Just%20Wanna%20Have%20Fun
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 : 16 2 70 I 
 : 18 4 70 come 
 : 22 4 70 home

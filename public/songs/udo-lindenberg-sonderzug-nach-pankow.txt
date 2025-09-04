@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12238
 #ALLKARAOKE_PREVIEWEND:95
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Udo Lindenberg - Sonderzug nach Pankow.mp3
 : 22 2 -2 Ent
 : 26 3 2 schul

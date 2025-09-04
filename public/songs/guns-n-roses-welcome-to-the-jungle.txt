@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Welcome%20to%20the%20jungle
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 : 16 3 6 Wel
 : 20 3 8 come 
 : 25 1 8 to 

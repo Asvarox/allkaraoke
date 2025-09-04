@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jason%20Mraz&cancion=I'm%20yours
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 20 3 13 Well
 : 24 4 15 ~, 
 : 32 3 15 you 

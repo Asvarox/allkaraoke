@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:159
 #ALLKARAOKE_SOURCEURL:https://youtu.be/SXiSVQZLje8?si=_UCy22MgHEa7B-V_
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ariana Grande feat. Nicki Minaj - Side To Side.mp3
 : 10 2 4 I’ve 
 : 14 2 6 been 

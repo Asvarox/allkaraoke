@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 : 21 3 9 To 
 F 25 2 9 jest 
 F 28 2 9 naj

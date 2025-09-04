@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Paradise%20City
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 : 13 2 6 Take 
 : 17 1 6 me 
 : 19 6 6 down 

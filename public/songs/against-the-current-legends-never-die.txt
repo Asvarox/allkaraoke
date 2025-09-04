@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 19 2 -1 Leg
 : 23 2 0 ~
 : 27 6 0 ends 

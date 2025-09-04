@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=eFTLKWw542g
 #ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_OLDVOLUME:0,86
 #MP3:Billy Joel - We Didn’t Start The Fire.mp3
 : 19 3 -1 Har
 : 23 2 -1 ry 

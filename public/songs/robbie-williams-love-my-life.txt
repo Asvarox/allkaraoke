@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=20425
 #ALLKARAOKE_PREVIEWEND:75
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #P1:Love My Life
 #MP3:Robbie Williams - Love My Life.mp3
 : 19 5 7 Te

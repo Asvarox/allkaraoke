@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Robin Bengtsson - I Can’t Go On (ESC 2017 Sweden)
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Robin Bengtsson - I Can’t Go On (ESC 2017 Sweden).mp3
 : 14 2 9 I 
 : 18 2 9 can’t 

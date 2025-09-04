@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://youtu.be/iggmiF7DNoM?si=HVXMAnXISIuzJsov
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:girl in red - We Fell In Love In October.mp3
 : 17 5 -1 Smo
 : 25 4 2 king 

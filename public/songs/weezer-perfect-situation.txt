@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Perfect%20Situation
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 : 25 7 11 What's 
 : 34 4 10 the 
 : 40 7 6 deal 

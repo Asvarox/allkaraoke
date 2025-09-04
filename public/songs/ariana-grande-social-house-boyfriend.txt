@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_SOURCEURL:https://youtu.be/9SRxBTtspYM?si=tXQbNvcxK290ET7U
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ariana Grande & Social House - boyfriend.mp3
 : 17 1 18 I’m
 : 20 1 20 ~ 

@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=21447
 #ALLKARAOKE_PREVIEWEND:241
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 : 17 5 -3 You 
 : 23 12 -1 call 
 : 36 5 -3 me 

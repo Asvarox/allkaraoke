@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:The Angels - Mr. Damage
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:The Angels - Mr. Damage.mp3
 #COVER:The Angels - Mr. Damage [CO].jpg
 #BACKGROUND:The Angels - Mr. Damage [BG].jpg

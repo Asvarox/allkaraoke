@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=PPNMGYOm1aM
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Zendaya & Bella Thorne - Watch Me.mp3
 #COVER:Zendaya & Bella Thorne - Watch Me [CO].jpg
 : 17 3 2 I 

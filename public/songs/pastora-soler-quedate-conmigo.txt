@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:84
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=14326
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Pastora Soler - Quédate conmigo (ESC 2012 Spain).mp3
 : 22 6 8 Per
 : 29 7 8 dón 

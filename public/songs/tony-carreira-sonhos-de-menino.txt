@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pt/canciones?artista=Tony%20Carreira&cancion=Sonhos%20de%20menino
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 #MP3:Tony Carreira - Sonhos de menino.mp3
 #COVER:Tony Carreira - Sonhos de menino.jpg
 : 17 4 57 Nah 

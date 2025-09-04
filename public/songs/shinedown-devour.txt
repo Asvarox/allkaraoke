@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:177
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=9061
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Shinedown - Devour.mp3
 : 23 2 -12 Take 
 : 27 1 -10 it 

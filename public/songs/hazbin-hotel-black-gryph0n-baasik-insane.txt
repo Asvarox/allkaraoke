@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=juJkNKodgdE
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 #P1:Insane
 #MP3:Hazbin Hotel (Black Gryph0n & Baasik) - Insane.mp3
 #COVER:Hazbin Hotel (Black Gryph0n & Baasik) - Insane [CO].jpg

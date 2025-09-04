@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=nCkpzqqog4k&ab_channel=SamSmithVEVO
 #ALLKARAOKE_PREVIEWEND:95
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Sam Smith - I'm Not The Only One (Official Music Video).mp3
 #COVER:11.png
 #BACKGROUND:10.png

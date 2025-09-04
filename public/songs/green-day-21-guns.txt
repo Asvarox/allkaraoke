@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:159
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=7304
 #ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Green Day - 21 Guns.mp3
 : 21 4 5 Do 
 : 29 4 5 you 

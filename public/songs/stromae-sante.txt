@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=Sant%C3%A9
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Stromae - Santé.mp3
 #COVER:Stromae - Santé.jpg
 #MEDLEYSTARTBEAT:1702

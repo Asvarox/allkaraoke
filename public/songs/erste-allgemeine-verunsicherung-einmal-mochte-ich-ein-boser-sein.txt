@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AT
 #ALLKARAOKE_REALBPM:176
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Erste Allgemeine Verunsicherung - Einmal möchte ich ein Böser sein.mp3
 : 12 4 3 Ich 
 : 18 2 3 bi-

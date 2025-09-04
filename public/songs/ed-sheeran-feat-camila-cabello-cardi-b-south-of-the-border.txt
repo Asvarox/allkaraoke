@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=UPOT2tgY9QQ
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Ed Sheeran feat. Camila Cabello & Cardi B - South Of The Border.mp3
 : 26 2 7 She 
 : 30 4 7 got 

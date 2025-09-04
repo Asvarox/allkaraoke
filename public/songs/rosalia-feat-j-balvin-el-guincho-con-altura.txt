@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=iWOyfLBYtuU
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:ROSALÍA feat. J Balvin & El Guincho - Con altura.mp3
 #COVER:ROSALÍA feat. J Balvin & El Guincho - Con altura [CO].jpg
 #MEDLEYSTARTBEAT:576

@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #MP3:Mägo de Oz - Molinos de viento.mp3
 #COVER:Mägo de Oz - Molinos de viento.jpg
 : 18 2 7 Si a

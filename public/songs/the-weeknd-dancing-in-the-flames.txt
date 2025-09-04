@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_PREVIEWEND:72
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:The Weeknd - Dancing In The Flames.mp3
 #COVER:The Weeknd - Dancing In The Flames [CO].jpg
 #BACKGROUND:The Weeknd - Dancing In The Flames [BG].jpg

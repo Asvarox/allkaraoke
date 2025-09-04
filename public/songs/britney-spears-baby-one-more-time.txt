@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Baby%20One%20More%20Time
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 : 16 3 60 Oh 
 : 21 3 60 ba
 : 26 3 60 by, 

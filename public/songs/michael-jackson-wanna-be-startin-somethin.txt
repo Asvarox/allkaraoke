@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 #P1:Wanna Be Startin’ Somethin’
 #MP3:Michael Jackson - Wanna Be Startin’ Somethin’.mp3
 : 16 1 14 I 

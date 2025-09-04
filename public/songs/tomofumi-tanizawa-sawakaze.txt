@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Tomofumi Tanizawa - Sawakaze (TV).mp3
 #COVER:Tomofumi Tanizawa - Sawakaze (TV).jpg
 : 11 2 -3 Ma

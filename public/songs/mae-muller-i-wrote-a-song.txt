@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27084
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Mae Muller - I Wrote A Song (ESC 2023 UK).mp3
 #COVER:Mae Muller - I Wrote A Song (ESC 2023 UK) [CO].jpg
 #BACKGROUND:Mae Muller - I Wrote A Song (ESC 2023 UK) [BG].jpg

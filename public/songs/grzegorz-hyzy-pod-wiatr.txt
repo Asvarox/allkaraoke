@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Grzegorz%20Hy%C5%BCy&cancion=Pod%20wiatr
 #ALLKARAOKE_PREVIEWEND:136
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 #MP3:Grzegorz Hyży - Pod wiatr.mp3
 #COVER:Grzegorz Hyży - Pod wiatr [CO].jpg
 #MEDLEYSTARTBEAT:256

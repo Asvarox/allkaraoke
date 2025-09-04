@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=16340
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Avenged Sevenfold - Hail To The King.mp3
 : 16 3 6 Watch 
 : 20 3 6 your 

@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=R.E.M.&cancion=Losing%20My%20Religion
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 : 25 40 11 Oh 
 : 68 13 9 life
 - 81 85

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:50
 #ALLKARAOKE_SOURCEURL:Dannii Minogue - All I Wanna Do
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Dannii Minogue - All I Wanna Do.mp3
 : 18 1 7 All 
 : 20 1 7 I 

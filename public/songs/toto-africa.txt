@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 12 1 47 I 
 : 14 1 51 hear 
 : 16 1 54 the 

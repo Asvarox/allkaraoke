@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=SbjKOI8VTY0&ab_channel=Skillet-Topic
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Skillet - Comatose.mp3
 : 26 8 6 I 
 : 36 8 -5 hate 

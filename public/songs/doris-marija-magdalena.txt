@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Doris&cancion=Marija%20Magdalena
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Doris - Marija Magdalena.mp3
 #COVER:Doris - Marija Magdalena.jpg
 : 16 2 -4 Jer 

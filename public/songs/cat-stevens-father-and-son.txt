@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=P6zaCV4niKk
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Cat Stevens - Father And Son.mp3
 : 19 4 -1 It’s 
 : 25 3 0 not 

@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5929
 #ALLKARAOKE_PREVIEWEND:52
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 : 19 4 -2 We 
 : 27 4 3 wish 
 : 33 2 3 you 

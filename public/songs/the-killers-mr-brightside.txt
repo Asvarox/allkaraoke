@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 : 26 4 13 Com
 : 31 4 13 ing 
 : 36 4 13 out 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Christina%20Aguilera%20feat.%20Redman
 #ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_OLDVOLUME:0,61
 F 13 4 6 Ah
 - 17
 F 30 3 6 Dir

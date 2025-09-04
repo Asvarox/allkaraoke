@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Sylwia%20Grzeszczak%20%26%20Liber&cancion=Co%20z%20nami%20bedzie%3F
 #ALLKARAOKE_PREVIEWEND:113
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 : 21 6 66 Kiedy 
 : 29 2 66 znaj
 : 33 5 66 dzie

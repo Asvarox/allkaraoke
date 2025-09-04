@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Phantom%20Planet&cancion=California
 #ALLKARAOKE_PREVIEWEND:52
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 : 16 3 8 We've 
 : 20 1 11 been 
 : 22 3 13 on 

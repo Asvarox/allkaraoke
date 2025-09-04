@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:127
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=24511
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Daði og Gagnamagnið - Think About Things.mp3
 #START:41.0
 : 17 4 1 Ba

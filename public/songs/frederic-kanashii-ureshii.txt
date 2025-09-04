@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:142
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Frederic
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Frederic - Kanashii Ureshii.mp3
 #COVER:Frederic - Kanashii Ureshii.jpg
 #MEDLEYSTARTBEAT:1033

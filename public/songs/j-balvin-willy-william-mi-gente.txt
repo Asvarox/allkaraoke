@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=23852
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:J Balvin & Willy William - Mi gente.mp3
 : 14 1 4 Si el 
 : 16 2 11 rit

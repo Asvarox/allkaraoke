@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:121
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Amaia%20y%20Alfred&cancion=Tu%20canci%C3%B3n
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:Amaia y Alfred - Tu canción.mp3
 #COVER:Amaia y Alfred - Tu canción.jpg
 #START:3,5

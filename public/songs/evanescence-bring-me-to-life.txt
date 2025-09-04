@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 : 25 2 9 How
 : 29 18 11 ~
 : 49 5 9 ~ 

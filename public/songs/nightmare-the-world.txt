@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=nightmare
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #P1:The World
 #MP3:Nightmare - The world (TV).mp3
 #COVER:Nightmare - The world (TV).jpg

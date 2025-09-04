@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=26PAgklYYvo&feature=youtu.be
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:James Morrison feat. Nelly Furtado - Broken Strings [DUET].mp3
 : 22 2 -2 Let 
 : 28 2 1 me 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=B%C3%B4a&cancion=Duvet%20(TV)
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 #COVER:Bôa - Duvet (TV).jpg
 #MP3:Bôa - Duvet (TV).mp3
 : 11 9 14 And 

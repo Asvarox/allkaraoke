@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Kelly Rowland feat. David Guetta - Commander
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Kelly Rowland feat. David Guetta - Commander.mp3
 F 16 6 6 DANCE
 - 22 31

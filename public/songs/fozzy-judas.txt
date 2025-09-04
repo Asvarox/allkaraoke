@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22863
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Fozzy - Judas.mp3
 : 27 5 14 You 
 : 34 7 15 are 

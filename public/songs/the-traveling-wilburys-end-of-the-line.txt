@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:39
 #ALLKARAOKE_SOURCEURL:The Traveling Wilburys - End Of The Line
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:The Traveling Wilburys - End Of The Line.mp3
 : 17 3 9 Well 
 : 21 3 11 it’s 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=18065
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Creed - What If.mp3
 : 16 2 2 I 
 : 20 6 5 can’t 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:The Supremes - Stop! In The Name Of Love
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:The Supremes - Stop! In The Name Of Love.mp3
 #COVER:The Supremes - Stop! In The Name Of Love [CO].jpg
 #BACKGROUND:The Supremes - Stop! In The Name Of Love [BG].jpg

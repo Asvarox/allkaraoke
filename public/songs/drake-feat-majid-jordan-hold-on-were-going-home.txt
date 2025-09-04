@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #P1:Hold On, We’re Going Home
 #MP3:Drake feat. Majid Jordan - Hold On, We’re Going Home.mp3
 #COVER:Drake feat. Majid Jordan - Hold On, We’re Going Home [CO].jpg

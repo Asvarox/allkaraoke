@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_PREVIEWEND:70
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 #MP3:Marshmello x Jonas Brothers - Leave Before You Love Me.mp3
 #COVER:Marshmello x Jonas Brothers - Leave Before You Love Me.jpg
 #MEDLEYSTARTBEAT:1547

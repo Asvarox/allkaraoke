@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://youtu.be/z9porfO8C_Q
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 #MP3:Kygo feat. Maty Noyes - Stay.mp3
 : 14 2 7 Thought 
 : 18 2 5 I 

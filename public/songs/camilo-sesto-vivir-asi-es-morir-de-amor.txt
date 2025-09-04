@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Camilo%20Sesto&cancion=Vivir%20as%C3%AD%20es%20morir%20de%20amor
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 23 4 12 Siem
 : 30 3 12 pre 
 : 34 4 12 me 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=AtKZKl7Bgu0
 #ALLKARAOKE_PREVIEWEND:102
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #P1:I Need Your Love
 #MP3:Calvin Harris feat. Ellie Goulding - I Need Your Love.mp3
 #COVER:Calvin Harris feat. Ellie Goulding - I Need Your Love.jpg

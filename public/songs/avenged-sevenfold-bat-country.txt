@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 F 27 228 12 Mah!
 - 255
 : 259 2 0 Caught

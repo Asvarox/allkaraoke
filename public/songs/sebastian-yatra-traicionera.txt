@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:91
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ItsAV9QaecM
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Sebastián Yatra - Traicionera.ogg
 #COVER:Sebastián Yatra - Traicionera.jpg
 #MEDLEYSTARTBEAT:2471

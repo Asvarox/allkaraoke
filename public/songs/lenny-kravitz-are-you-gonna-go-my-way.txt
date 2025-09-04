@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lenny%20Kravitz&cancion=Are%20You%20Gonna%20Go%20My%20Way
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 26 4 16 I 
 : 32 4 16 was 
 : 39 15 19 born

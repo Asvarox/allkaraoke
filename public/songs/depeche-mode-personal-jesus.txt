@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Depeche%20Mode&cancion=Personal%20Jesus
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 18 4 6 Reach
 : 24 6 6  out
 : 31 2 6  and

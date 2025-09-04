@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:Dean Lewis - Be Alright.mp3
 : 17 1 -6 I 
 : 19 1 -6 look 

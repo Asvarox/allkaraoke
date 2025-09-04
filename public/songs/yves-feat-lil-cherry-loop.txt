@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://youtu.be/QNTVGkUKdFA?si=Bxp1VUzgbN92Fn47
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Yves feat. Lil Cherry - LOOP.mp3
 #COVER:Yves feat. Lil Cherry - LOOP [CO].jpg
 #BACKGROUND:Yves feat. Lil Cherry - LOOP [BG].jpg

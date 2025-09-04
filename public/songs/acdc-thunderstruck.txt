@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Thunderstruck%20(Live)
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 - 0 1301
 - 1301
 F 1327 5 11 Thun

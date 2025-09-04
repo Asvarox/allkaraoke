@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=0-Oy5WoBrLw&ab_channel=AmandaSeyfried-Topic
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #P1:I Have A Dream
 #MP3:Mamma Mia! (Movie) - I Have A Dream.mp3
 : 13 4 5 I 

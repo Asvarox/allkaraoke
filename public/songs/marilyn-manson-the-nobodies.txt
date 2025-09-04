@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qi5nTb-NRFU
 #ALLKARAOKE_PREVIEWEND:124
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Marilyn Manson - The Nobodies.mp3
 : 20 1 7 To
 : 25 10 16 day 

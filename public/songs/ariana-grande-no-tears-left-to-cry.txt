@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Ariana%20Grande
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 23 8 12 Right 
 : 36 10 12 now, 
 : 51 3 11 I'm 

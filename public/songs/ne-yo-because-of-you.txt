@@ -13,6 +13,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=atz_aZA3rf0&ab_channel=NeYoVEVO
 #ALLKARAOKE_PREVIEWEND:32
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ne-Yo - Because Of You (Official Music Video).mp3
 #COVER:11.png
 #BACKGROUND:10.png

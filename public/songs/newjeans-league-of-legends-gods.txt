@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:146
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=_03-NQCb-qw
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #P1:Gods
 #MP3:NewJeans; League of Legends - GODS.mp3
 #COVER:NewJeans; League of Legends - GODS [CO].jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Malice+Mizer
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 #P1:malice mizer
 #MP3:Malice Mizer - Gardenia.mp3
 #COVER:Malice Mizer - Gardenia.jpg

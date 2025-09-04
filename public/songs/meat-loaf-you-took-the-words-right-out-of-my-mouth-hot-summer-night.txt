@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3419
 #ALLKARAOKE_PREVIEWEND:146
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:You Took The Words Right Out Of My Mouth (Hot Summer Night)
 #MP3:Meat Loaf - You Took The Words Right Out Of My Mouth (Hot Summer Night) (Album Version).mp3
 #START:49.0

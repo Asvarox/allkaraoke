@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:IS
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Steindi - The Hardest Karaoke Song in the World.mp3
 #COVER:Steindi - The Hardest Karaoke Song in the World.png
 : 18 2 12 This 

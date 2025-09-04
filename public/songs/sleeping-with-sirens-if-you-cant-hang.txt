@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:192
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21564
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Sleeping with Sirens - If You Can’t Hang.mp3
 : 26 1 7 I 
 : 30 2 12 met 

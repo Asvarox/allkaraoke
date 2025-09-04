@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=vmumgxAfTwA
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Jonathan Coulton - Chiron Beta Prime.mp3
 : 19 2 9 This 
 : 23 3 9 year 

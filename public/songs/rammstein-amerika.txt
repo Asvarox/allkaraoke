@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:63
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Amerika
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_OLDVOLUME:0,68
 - 0 48
 - 48
 : 65 3 -5 A

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GMqlmMDJxJQ
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Basement - Covet.mp3
 #COVER:Basement - Covet [CO].jpg
 #BACKGROUND:Basement - Covet [BG].jpg

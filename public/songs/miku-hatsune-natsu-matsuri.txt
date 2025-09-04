@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:142
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?cancion=Natsu+Matsuri
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #P1:Natsu Matsuri
 #MP3:Miku Hatsune - Natsu Matsuri.mp3
 #COVER:Miku Hatsune - Natsu Matsuri.jpg

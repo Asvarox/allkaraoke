@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=IlDjEd8gAkI&ab_channel=Toy-Box
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Toy-Box - Tarzan & Jane.mp3
 : 19 3 5 Oh
 : 25 1 5 ~

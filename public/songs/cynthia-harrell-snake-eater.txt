@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=znN66HhZCDI
 #ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_OLDVOLUME:0,97
 #P1:Snake Eater - Cynthia Harrell
 #COVER:Cynthia Harrell - Snake Eater [CO].jpg
 #MP3:Cynthia Harrell - Snake Eater.mp3

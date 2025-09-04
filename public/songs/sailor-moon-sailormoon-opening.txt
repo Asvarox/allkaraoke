@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:142
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=5357
 #ALLKARAOKE_VOLUME:0,98
+#ALLKARAOKE_OLDVOLUME:0,98
 : -2 2 0 Sag’ 
 : 2 2 0 das 
 : 6 8 0 Zau

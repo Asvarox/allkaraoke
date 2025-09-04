@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=pomidorowa
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 : 24 2 7 Ju
 * 28 3 7 tro 
 * 33 2 0 zno

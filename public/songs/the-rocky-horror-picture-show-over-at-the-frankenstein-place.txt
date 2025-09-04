@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:86
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=16253
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_OLDVOLUME:0,99
 #MP3:The Rocky Horror Picture Show - Over At The Frankenstein Place [DUET].mp3
 - 0 700
 - 700

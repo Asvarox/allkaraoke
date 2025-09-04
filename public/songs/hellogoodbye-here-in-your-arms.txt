@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettx
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Hellogoodbye - Here (In Your Arms).mp3
 : 17 2 21 I 
 : 21 6 19 like

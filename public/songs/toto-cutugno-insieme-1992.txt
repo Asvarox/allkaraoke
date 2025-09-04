@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=7835
 #ALLKARAOKE_VOLUME:0,96
+#ALLKARAOKE_OLDVOLUME:0,96
 #MP3:Toto Cutugno - Insieme: 1992.mp3
 : 19 4 19 In
 : 27 16 17 sie

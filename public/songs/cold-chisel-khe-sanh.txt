@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Cold Chisel - Khe Sanh
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Cold Chisel - Khe Sanh.mp3
 #COVER:Cold Chisel - Khe Sanh [CO].jpg
 #BACKGROUND:Cold Chisel - Khe Sanh [BG].jpg

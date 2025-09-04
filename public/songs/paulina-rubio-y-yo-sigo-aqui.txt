@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Paulina%20Rubio&cancion=Y%20yo%20sigo%20aqu%C3%AD
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 : 23 2 60 Tu 
 : 27 2 65 quí
 : 30 3 65 mi

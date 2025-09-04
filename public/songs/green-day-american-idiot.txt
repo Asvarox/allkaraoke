@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:184
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=American%20Idiot
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 : 19 2 15 Don't 
 : 22 2 15 wan
 : 25 2 15 na 

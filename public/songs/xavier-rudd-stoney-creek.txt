@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_PREVIEWEND:147
 #ALLKARAOKE_VOLUME:0,64
+#ALLKARAOKE_OLDVOLUME:0,64
 #MP3:Xavier Rudd - Stoney Creek.mp3
 #COVER:Xavier Rudd - Stoney Creek [CO].jpg
 #BACKGROUND:Xavier Rudd - Stoney Creek [BG].jpg

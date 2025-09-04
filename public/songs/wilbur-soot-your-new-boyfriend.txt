@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/channel/UC1n_PfsVqxllCcnMPlxBIjw
 #ALLKARAOKE_PREVIEWEND:80
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Wilbur Soot - Your New Boyfriend.mp3
 : 24 4 -1 Life 
 : 31 1 -1 is

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://youtu.be/T-jNkwesjpk?si=9tXGabU_PuRSyxJS
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #P1:Bad Memories
 #MP3:Meduza x James Carter feat. Elley Duhé + Fast Boy - Bad Memories.mp3
 #COVER:Meduza x James Carter feat. Elley Duhé + Fast Boy - Bad Memories [CO].jpg

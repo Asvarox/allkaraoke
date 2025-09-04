@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4MpPGb_apD8
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Redbone - Come And Get Your Love.mp3
 : 16 13 2 Hail! 
 : 32 17 2 (hail!

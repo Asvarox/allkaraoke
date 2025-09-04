@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:185
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=6522
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Brad Paisley - Mud On The Tires.mp3
 : 27 4 30 I’ve 
 : 35 4 33 got 

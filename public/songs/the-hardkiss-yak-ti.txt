@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=28276
 #ALLKARAOKE_PREVIEWEND:71
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:The Hardkiss - Як ти?.mp3
 #COVER:The Hardkiss - Як ти? [CO].jpg
 #BACKGROUND:The Hardkiss - Як ти? [BG].jpg

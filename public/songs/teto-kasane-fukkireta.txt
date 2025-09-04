@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #COVER:Teto Kasane - Ochame Kinou (Fukkireta) (TV) [CO].jpg
 #MP3:Teto Kasane - Ochame Kinou (Fukkireata) (TV).mp3
 : 20 2 -1 I

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:172
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ZENCTedP0Ec&ab_channel=StarPro
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Bratya Grim - Resnici.mp3
 : 23 3 17 Gu
 : 27 3 19 by 

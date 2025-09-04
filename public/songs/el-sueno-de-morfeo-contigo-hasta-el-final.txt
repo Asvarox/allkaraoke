@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=El%20Sue%C3%B1o%20de%20Morfeo&cancion=Contigo%20hasta%20el%20final
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:El Sueño de Morfeo - Contigo hasta el final.mp3
 #COVER:El Sueño de Morfeo - Contigo hasta el final [CO].png
 : 20 17 -4 Ah

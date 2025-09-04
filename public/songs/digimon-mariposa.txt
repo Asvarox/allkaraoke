@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:172
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Digimon&cancion=Mariposa
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Digimon - Mariposa.mp3
 #COVER:Digimon - Mariposa.jpg
 : 22 2 -4 So

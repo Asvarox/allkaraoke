@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:158
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=XBCDvINm0Vo
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Selena - I Could Fall In Love.mp3
 : 23 3 -5 I 
 : 27 3 -2 could 

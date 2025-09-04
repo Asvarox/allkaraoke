@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:133
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Luis Miguel - Ahora te puedes marchar.mp3
 #COVER:Luis Miguel - Ahora te puedes marchar.jpg
 #BACKGROUND:Luis Miguel - Ahora te puedes marchar [BG].jpg

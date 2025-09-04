@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:1
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=8-eNdHn9uRE
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #P1:Mujer
 #P2:Hombre
 #MP3:Ricchi & Poveri - Será porque te amo.mp3

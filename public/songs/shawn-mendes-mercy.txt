@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #P1:Mercy
 #MP3:Shawn Mendes - Mercy.mp3
 #COVER:Shawn Mendes - Mercy [CO].jpg

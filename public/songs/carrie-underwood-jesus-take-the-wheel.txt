@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Carrie Underwood - Jesus, Take The Wheel.mp3
 #COVER:Carrie Underwood - Jesus, Take The Wheel [CO].jpg
 #BACKGROUND:Carrie Underwood - Jesus, Take The Wheel [BG].jpg

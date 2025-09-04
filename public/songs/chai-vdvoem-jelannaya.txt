@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6nM-wFfb3is&ab_channel=StarPro
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Chai Vdvoem - Jelannaya.mp3
 : 16 3 18 Po
 : 20 3 18 pro

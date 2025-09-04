@@ -11,6 +11,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:David Kushner - Daylight.mp3
 #COVER:David Kushner - Daylight [CO].jpg
 #BACKGROUND:David Kushner - Daylight [BG].jpg

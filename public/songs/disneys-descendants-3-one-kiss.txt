@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://youtu.be/51A5vUrEgqg?si=R86ThBnCop4dvsHz
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Disney’s Descendants 3 (Sofia Carson, Dove Cameron, China Anne McClain) - One Kiss.mp3
 : 19 1 7 Don’t 
 : 23 1 9 freak 

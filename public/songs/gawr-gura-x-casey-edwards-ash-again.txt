@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:115
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=twUFbqyul_M
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Gawr Gura x Casey Edwards - Ash Again.mp3
 #COVER:Gawr Gura x Casey Edwards - Ash Again [CO].jpg
 #BACKGROUND:Gawr Gura x Casey Edwards - Ash Again [BG].jpg

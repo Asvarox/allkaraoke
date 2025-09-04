@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=mNEUkkoUoIA
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #COVER:OneRepublic - I ain't worried.jpg
 #MP3:OneRepublic - I ain't worried.mp3
 #MEDLEYSTARTBEAT:199

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:The Angels - Am I Ever Gonna See Your Face Again?
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:The Angels - Am I Ever Gonna See Your Face Again?.mp3
 : 20 4 9 Went 
 : 28 4 9 down 

@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=7fUpaXxPgMI
 #ALLKARAOKE_PREVIEWEND:105
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #P1:Du Trägst Keine Liebe In Dir
 #MP3:Echt - Du trägst keine Liebe in dir.mp3
 : 15 7 22 Whoo 

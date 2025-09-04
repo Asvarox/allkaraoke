@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=WJTXDCh2YiA
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #P1:Wigns
 #MP3:Birdy - Wings.mp3
 #COVER:Birdy - Wings [CO].jpg

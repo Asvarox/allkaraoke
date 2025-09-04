@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=-rey3m8SWQI&ab_channel=DuaLipa
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #P1:Be the One
 #MP3:Dua Lipa - Be The One.mp3
 #COVER:Dua Lipa - Be The One [CO].jpg

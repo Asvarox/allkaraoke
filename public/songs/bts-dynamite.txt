@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 : 15 2 4 'Cause, 
 : 20 1 11 ah
 : 22 3 13 ~ 

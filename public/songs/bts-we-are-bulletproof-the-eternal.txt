@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:84
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=7UWBYJjuIL0
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:BTS - We are Bulletproof the Eternal.mp3
 #COVER:BTS - We are Bulletproof the Eternal.jpg
 #MEDLEYSTARTBEAT:1276

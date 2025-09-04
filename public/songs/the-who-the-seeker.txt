@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=The%20Seeker
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 : 18 1 1 I've 
 : 21 2 4 looked 
 : 28 3 4 un

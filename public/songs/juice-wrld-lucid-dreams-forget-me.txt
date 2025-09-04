@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:84
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=mzB1VGEGcSU
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Juice WRLD - Lucid Dreams (Forget Me).mp3
 F 30 2 12 En
 F 33 2 12 vi

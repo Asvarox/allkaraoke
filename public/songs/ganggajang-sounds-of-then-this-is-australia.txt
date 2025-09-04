@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:-82
 #ALLKARAOKE_SOURCEURL:GANGgajang - Sounds Of Then (This Is Australia)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:GANGgajang - Sounds Of Then (This Is Australia).mp3
 : 17 3 11 I 
 : 21 3 11 think 

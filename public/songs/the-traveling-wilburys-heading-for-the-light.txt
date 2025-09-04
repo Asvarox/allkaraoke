@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:1
 #ALLKARAOKE_SOURCEURL:The Traveling Wilburys - Heading For The Light
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:The Traveling Wilburys - Heading For The Light.mp3
 : 17 2 -6 I 
 : 21 2 -1 wan

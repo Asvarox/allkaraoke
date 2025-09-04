@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:154
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22002
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Bebe Rexha feat. Florida Georgia Line - Meant To Be.mp3
 : 21 2 17 Ba
 : 25 2 19 by, 

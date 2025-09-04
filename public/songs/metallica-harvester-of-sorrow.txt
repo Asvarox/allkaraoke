@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=6105
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Metallica - Harvester Of Sorrow.mp3
 : 22 8 16 My 
 : 32 8 16 life 

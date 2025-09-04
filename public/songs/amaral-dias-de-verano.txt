@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Amaral&cancion=D%C3%ADas%20de%20verano
 #ALLKARAOKE_PREVIEWEND:105
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Amaral - Días de verano.mp3
 #COVER:Amaral - Días de verano.jpg
 #END:205000

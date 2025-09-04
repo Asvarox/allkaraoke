@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:172
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=wvR7EtLuJfg&ab_channel=PXNDX
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 : 23 3 4 Sé 
 : 28 6 0 que es
 : 36 6 3 tá en 

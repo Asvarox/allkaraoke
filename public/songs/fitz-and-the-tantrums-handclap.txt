@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Fitz%20and%20The%20Tantrums&cancion=HandClap
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Fitz and The Tantrums - HandClap.mp3
 #COVER:Fitz and The Tantrums - HandClap [CO].jpg
 #MEDLEYSTARTBEAT:2256

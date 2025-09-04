@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17242
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:The Common Linnets - Calm After The Storm.mp3
 : 20 5 -4 Dri
 : 26 4 -4 ving 

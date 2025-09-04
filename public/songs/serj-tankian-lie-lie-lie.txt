@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=1962
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #P1:Lie Lie Lie
 #MP3:Serj Tankian - Lie Lie Lie.mp3
 : 16 3 -7 La

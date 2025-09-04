@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:183
 #ALLKARAOKE_PREVIEWEND:63
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Theme Song
 #MP3:Disney’s DuckTales 2017 (Felicia Barton) - Theme Song.mp3
 #COVER:Disney’s DuckTales 2017 (Felicia Barton) - Theme Song [CO].jpg

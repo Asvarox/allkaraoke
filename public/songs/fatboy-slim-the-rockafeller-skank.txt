@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Fatboy Slim - The Rockafeller Skank
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Fatboy Slim - The Rockafeller Skank.mp3
 : 1 5 7 Right 
 : 7 1 6 a

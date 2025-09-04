@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=LXXQLa-5n5w&pp=ygUMcHJldHR5IGh1cnRz
 #ALLKARAOKE_PREVIEWEND:230
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Beyoncé - Pretty Hurts.mp3
 : 17 6 11 Pret
 : 24 9 10 ty 

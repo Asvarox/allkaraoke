@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:146
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=3-nen%20E-Gumi%20Utatan&cancion=Seishun%20Satsubatsuron%20(TV)
 #ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_OLDVOLUME:0,86
 #P1:Seishun Satsubatsuron
 #MP3:3-nen E-Gumi Utatan - Seishun Satsubatsuron (TV).mp3
 #COVER:3-nen E-Gumi Utatan - Seishun Satsubatsuron (TV).jpg

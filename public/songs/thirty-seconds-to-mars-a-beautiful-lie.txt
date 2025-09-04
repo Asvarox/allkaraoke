@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:160
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 : 21 3 9 Lie
 : 25 16 11 ~ 
 : 44 3 9 a

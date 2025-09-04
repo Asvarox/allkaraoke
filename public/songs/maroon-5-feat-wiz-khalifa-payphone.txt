@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Maroon%205%20feat.%20Wiz%20Khalifa
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 15 2 3 I'm 
 : 19 3 4 at 
 : 23 2 6 a 

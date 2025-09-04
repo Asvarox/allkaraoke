@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mocedades&cancion=Eres%20t%C3%BA
 #ALLKARAOKE_VOLUME:0,89
+#ALLKARAOKE_OLDVOLUME:0,89
 #MP3:Mocedades - Eres tú.mp3
 #COVER:Mocedades - Eres tú.jpg
 : 11 2 62 Co

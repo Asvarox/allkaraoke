@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:68
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 : 19 2 14 Uh 
 : 23 2 12 uh 
 : 28 5 14 uh 

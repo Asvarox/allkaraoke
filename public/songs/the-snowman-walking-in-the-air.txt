@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:The Snowman - Walking In The Air
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:The Snowman - Walking In The Air.mp3
 : 17 2 9 We’re 
 : 23 2 14 walk

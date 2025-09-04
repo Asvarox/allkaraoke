@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:80
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Nine%20Inch%20Nails&cancion=Hurt
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Nine Inch Nails - Hurt.mp3
 #COVER:Nine Inch Nails - Hurt.jpg
 : 15 4 4 I

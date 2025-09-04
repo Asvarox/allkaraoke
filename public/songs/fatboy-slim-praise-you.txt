@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Fatboy Slim - Praise You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Fatboy Slim - Praise You.mp3
 #COVER:Fatboy Slim - Praise You [CO].jpg
 #BACKGROUND:Fatboy Slim - Praise You [BG].jpg

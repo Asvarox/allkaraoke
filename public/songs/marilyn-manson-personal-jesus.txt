@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Rl6fyhZ0G5E
 #ALLKARAOKE_PREVIEWEND:76
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #P1:Personal Jesus
 #MP3:Marilyn Manson - Personal Jesus.mp3
 : 17 3 18 Reach 

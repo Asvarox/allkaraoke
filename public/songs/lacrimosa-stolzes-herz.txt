@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:256
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=5734
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,9
 : 17 3 8 Zu 
 : 21 10 8 fühlen 
 : 35 4 8 um 

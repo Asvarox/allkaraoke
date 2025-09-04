@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:127
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #P1:Bitch Better Have My Money
 #MP3:Rihanna - Bitch Better Have My Money (Album Version).mp3
 : 14 1 3 Ya

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Tame Impala - Elephant
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Tame Impala - Elephant.mp3
 #COVER:Tame Impala - Elephant [CO].jpg
 #BACKGROUND:Tame Impala - Elephant [BG].jpg

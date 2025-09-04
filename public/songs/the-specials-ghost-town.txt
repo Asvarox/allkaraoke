@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=15001
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:The Specials - Ghost Town.mp3
 F 20 3 6 This 
 F 28 5 6 town, 

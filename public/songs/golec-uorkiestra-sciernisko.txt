@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:149
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=yrJ_lzYGJdg
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Golec uOrkiestra - Ściernisko.mp3
 #COVER:Golec uOrkiestra - Ściernisko [CO].jpg
 #BACKGROUND:Golec uOrkiestra - Ściernisko [BG].jpg

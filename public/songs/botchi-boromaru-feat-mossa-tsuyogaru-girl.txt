@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:244
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=29672
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Botchi Boromaru feat. Mossa - Tsuyogaru Girl.mp3
 #COVER:Botchi Boromaru feat. Mossa - Tsuyogaru Girl [CO].jpg
 #BACKGROUND:Botchi Boromaru feat. Mossa - Tsuyogaru Girl [BG].jpg

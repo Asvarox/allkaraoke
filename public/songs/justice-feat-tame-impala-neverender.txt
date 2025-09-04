@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Justice feat. Tame Impala - Neverender
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Justice feat. Tame Impala - Neverender.mp3
 #COVER:Justice feat. Tame Impala - Neverender [CO].jpg
 #BACKGROUND:Justice feat. Tame Impala - Neverender [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AU
 #ALLKARAOKE_REALBPM:166
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Savage Garden - Truly Madly Deeply.mp3
 #COVER:Savage Garden - Truly Madly Deeply.jpg
 : 17 4 12 I'll 

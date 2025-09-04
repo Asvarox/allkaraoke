@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=HRXeBKys-Sw
 #ALLKARAOKE_PREVIEWEND:102
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #P1:Video Killed The Radio Star
 #MP3:Buggles - Video Killed The Radio Star.mp3
 #COVER:Buggles - Video Killed The Radio Star [CO].jpg

@@ -72,6 +72,7 @@ export interface Song {
   bar: number;
   tracks: SongTrack[];
   volume: number | undefined;
+  manualVolume: number | undefined;
   id: string;
   unsupportedProps: string[];
   mergedTrack: SongTrack;

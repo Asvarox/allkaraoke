@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ariana%20Grande&cancion=Santa%20tell%20me
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 : 26 5 -1 San
 : 34 5 2 ta, 
 : 42 2 2 tell

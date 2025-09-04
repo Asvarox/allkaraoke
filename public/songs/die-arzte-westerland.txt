@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3456
 #ALLKARAOKE_PREVIEWEND:102
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Die Ärzte - Westerland.mp3
 : 25 31 11 Ah 
 : 57 15 9 ah 

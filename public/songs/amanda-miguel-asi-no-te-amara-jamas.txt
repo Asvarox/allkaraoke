@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AR
 #ALLKARAOKE_REALBPM:131
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Amanda Miguel - Así no te amará jamás.mp3
 #COVER:Amanda Miguel - Así no te amará jamás [CO].jpg
 : 19 2 -1 Yo 

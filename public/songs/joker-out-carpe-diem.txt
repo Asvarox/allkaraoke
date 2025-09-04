@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27443
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Joker Out - Carpe diem.mp3
 #COVER:Joker Out - Carpe diem [CO].jpg
 #BACKGROUND:Joker Out - Carpe diem [BG].jpg

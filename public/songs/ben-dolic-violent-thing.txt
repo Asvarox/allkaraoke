@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27249
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Ben Dolič - Violent Thing (ESC 2020 Germany).mp3
 #COVER:Ben Dolič - Violent Thing (ESC 2020 Germany) [CO].jpg
 #BACKGROUND:Ben Dolič - Violent Thing (ESC 2020 Germany) [BG].jpg

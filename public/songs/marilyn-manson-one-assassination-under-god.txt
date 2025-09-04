@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29870
 #ALLKARAOKE_PREVIEWEND:113
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #P1:One Assassination Under God
 #MP3:Marilyn Manson - One Assassination Under God.mp3
 #COVER:Marilyn Manson - One Assassination Under God [CO].jpg

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=PEnJbjBuxnw
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #MP3:AJR - World’s Smallest Violin.mp3
 #COVER:AJR - World’s Smallest Violin [CO].jpg
 #BACKGROUND:AJR - World’s Smallest Violin [BG].jpg

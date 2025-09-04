@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=LH4Y1ZUUx2g
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #P1:Ariana Grande - break up with your girlfriend, i’m bored
 #MP3:Ariana Grande - break up with your girlfriend, i'm bored.mp3
 #COVER:Ariana Grande - break up with your girlfriend, i'm bored.jpg

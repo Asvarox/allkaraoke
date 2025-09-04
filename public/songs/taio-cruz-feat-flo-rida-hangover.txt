@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=13046
 #ALLKARAOKE_PREVIEWEND:124
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #P1:Hangover
 #MP3:Taio Cruz feat. Flo Rida - Hangover.mp3
 #END:223000

@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Journey - Any Way You Want It.mp3
 #COVER:Journey - Any Way You Want It [CO].jpg
 #BACKGROUND:Journey - Any Way You Want It [BG].jpg

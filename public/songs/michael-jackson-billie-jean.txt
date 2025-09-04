@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 : 16 4 13 She 
 : 22 2 13 was 
 : 26 2 13 more 

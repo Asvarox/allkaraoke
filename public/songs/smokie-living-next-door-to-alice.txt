@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smokie&cancion=Living%20Next%20Door%20To%20Alice
 #ALLKARAOKE_PREVIEWEND:131
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,6
 : 17 2 1 Sal
 : 21 1 4 ly 
 : 25 7 2 called

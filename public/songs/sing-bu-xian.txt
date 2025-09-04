@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=epwRc3zmqdA&ab_channel=NycailaMei
 #ALLKARAOKE_VOLUME:0,89
+#ALLKARAOKE_OLDVOLUME:0,89
 #MP3:S.I.N.G - Bù Xiàn (TV).mp3
 #COVER:S.I.N.G - Bù Xiàn (TV) [CO].jpg
 #MEDLEYSTARTBEAT:1579

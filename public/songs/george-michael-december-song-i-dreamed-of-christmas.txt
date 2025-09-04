@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=December%20song%20(I%20dreamed%20of%20Christmas)
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 F 20 7 -4 Mer
 F 29 3 -2 ry 
 F 38 6 0 Christ

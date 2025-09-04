@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=BBpIV9A1PXc&ab_channel=NIKI
 #ALLKARAOKE_PREVIEWEND:118
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:NIKI - Backburner (Official Music Video).mp3
 #COVER:11.png
 #BACKGROUND:10.png

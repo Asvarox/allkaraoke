@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 : 15 3 13 Tired 
 : 19 3 13 of 
 : 23 3 13 being

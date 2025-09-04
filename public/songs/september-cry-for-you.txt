@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:September - Cry For You
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:September - Cry For You.mp3
 #COVER:September - Cry For You [CO].jpg
 #BACKGROUND:September - Cry For You [BG].jpg

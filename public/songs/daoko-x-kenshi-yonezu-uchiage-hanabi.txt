@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=-tKVN2mAKRI
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Daoko x Kenshi Yonezu - Uchiage Hanabi.mp3
 #COVER:Daoko x Kenshi Yonezu - Uchiage Hanabi.jpg
 #MEDLEYSTARTBEAT:1024

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:166
 #ALLKARAOKE_SOURCEURL:https://youtu.be/3qFvCPmee8U
 #ALLKARAOKE_VOLUME:0,66
+#ALLKARAOKE_OLDVOLUME:0,66
 #MP3:Eminem feat. Juice WRLD - Godzilla.mp3
 F 22 4 3 Ugh, 
 F 38 4 3 you’re 

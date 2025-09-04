@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:91
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Snelle - Smoorverliefd.mp3
 #COVER:Snelle - Smoorverliefd [CO].jpg
 #BACKGROUND:Snelle - Smoorverliefd [BG].jpg

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Foo Fighters - Best Of You.mp3
 : 23 3 7 I’ve 
 : 29 3 8 got 

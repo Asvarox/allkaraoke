@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11775
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_OLDVOLUME:0,68
 : 24 2 0 Ich 
 : 28 2 0 se
 : 33 2 -2 he 

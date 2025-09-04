@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:DO
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,6
 #MP3:Monchy y Alexandra - No es una novela.mp3
 #COVER:Monchy y Alexandra - No es una novela [CO].jpg
 : 17 2 8 Que 

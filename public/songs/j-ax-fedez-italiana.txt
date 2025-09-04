@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=OjkfOX-g6Js
 #ALLKARAOKE_PREVIEWEND:98
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_OLDVOLUME:0,68
 #MP3:J-Ax & Fedez - Italiana.mp3
 F 16 5 27 Brrr
 F 22 61 17 rah-

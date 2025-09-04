@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_PREVIEWEND:45
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Blue Lagoon - Break My Stride.mp3
 #COVER:Blue Lagoon - Break My Stride [CO].jpg
 #BACKGROUND:Blue Lagoon - Break My Stride [BG].jpg

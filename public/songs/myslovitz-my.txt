@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=17980
 #ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_OLDVOLUME:0,91
 : 0 11 9 Ja,
 : 47 8 11  twar
 : 55 7 12 dy

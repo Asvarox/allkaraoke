@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=FCi-Xp2TVoQ
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Selena - No me queda más.mp3
 #COVER:Selena - No me queda más [CO].jpg
 #BACKGROUND:Selena - No me queda más [BG].jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3982
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,9
 #P1:Radio/Video
 #MP3:System of a Down - Radio/Video.mp3
 : 19 3 18 La 

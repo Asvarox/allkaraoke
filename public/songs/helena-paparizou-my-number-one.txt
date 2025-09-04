@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:113
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8279
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Helena Paparizou - My Number One (ESC 2005 Greece).mp3
 : 15 3 59 You
 : 19 3 59 ’re 

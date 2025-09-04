@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:65
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 * 13 3 5 Czer
 * 18 3 4 wo
 * 23 2 7 ne 

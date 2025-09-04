@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:166
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=VdphvuyaV_I
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Billy Idol - Rebel Yell.mp3
 : 22 3 6 Last 
 : 26 7 4 night 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:171
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28679
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,6
 #MP3:Kenya Grace - Strangers.mp3
 #COVER:Kenya Grace - Strangers [CO].jpg
 #BACKGROUND:Kenya Grace - Strangers [BG].jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Scar%20Tissue
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 : 24 7 9 Scar 
 : 33 4 9 tis
 : 38 3 7 sue 

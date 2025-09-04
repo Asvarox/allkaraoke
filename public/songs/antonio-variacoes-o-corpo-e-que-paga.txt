@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:PT
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #P1:O corpo é que paga
 #MP3:António Variações - …o corpo é que paga.mp3
 : 18 3 17 Quan

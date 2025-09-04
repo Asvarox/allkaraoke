@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:121
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Girls%27%20Generation&cancion=Echo
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 #COVER:Girls' Generation - Echo.jpg
 #MP3:Girls' Generation - Echo.mp3
 #MEDLEYSTARTBEAT:516

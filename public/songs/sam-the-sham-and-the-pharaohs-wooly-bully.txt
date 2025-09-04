@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:143
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=18606
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Sam The Sham And The Pharaohs - Wooly Bully.mp3
 F 5 2 0 U
 F 9 4 0 no! 

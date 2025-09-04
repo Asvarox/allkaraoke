@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=TmKh7lAwnBI
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Bad Bunny y Jhay Cortez - Dákiti.mp3
 #COVER:Bad Bunny y Jhay Cortez - Dákiti.jpg
 #MEDLEYSTARTBEAT:771

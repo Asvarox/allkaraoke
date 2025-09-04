@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #P1:Sledgehammer
 #MP3:Fifth Harmony - Sledgehammer.mp3
 #COVER:Fifth Harmony - Sledgehammer [CO].jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6DD45r0CfPI&ab_channel=SephirothSeymour
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #MP3:Zhao Lei from R1SE - Wàng Yán Gē.mp3
 #COVER:Zhao Lei from R1SE - Wàng Yán Gē [CO].png
 #MEDLEYSTARTBEAT:518

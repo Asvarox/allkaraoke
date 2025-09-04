@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Midnight Oil - Blue Sky Mine
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Midnight Oil - Blue Sky Mine.mp3
 #COVER:Midnight Oil - Blue Sky Mine [CO].jpg
 #BACKGROUND:Midnight Oil - Blue Sky Mine [BG].jpg

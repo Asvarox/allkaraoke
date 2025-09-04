@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12523
 #ALLKARAOKE_VOLUME:0,98
+#ALLKARAOKE_OLDVOLUME:0,98
 #MP3:Brotherhood Of Man - Save Your Kisses For Me.mp3
 : 19 3 -1 Though 
 : 23 2 0 it 

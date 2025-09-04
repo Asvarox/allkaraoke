@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_PREVIEWEND:60
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:P!nk - Lets get this party started.mp3
 #COVER:P!nk - Lets get this party started.jpg
 : 17 40 59 I'm 

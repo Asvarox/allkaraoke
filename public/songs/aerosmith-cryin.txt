@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qfNmyxV2Ncw
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:Aerosmith - Cryin'.mp3
 : 7 2 1 There 
 : 9 2 4 was 

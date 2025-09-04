@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=5rOiW_xY-kc&feature=youtu.be
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:R.E.M. - Everybody Hurts.mp3
 #END:336000
 : 23 2 9 When 

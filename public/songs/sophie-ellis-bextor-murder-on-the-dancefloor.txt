@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #P1:Murder on the Dancefloor (no Delay)
 #MP3:Sophie Ellis-Bextor - Murder On The Dancefloor.mp3
 : 16 2 15 It’s 

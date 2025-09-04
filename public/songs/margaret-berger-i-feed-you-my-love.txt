@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=15705
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Margaret Berger - I Feed You My Love (ESC 2013 Norway).mp3
 #START:8
 : 26 3 -1 A 

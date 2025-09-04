@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28898
 #ALLKARAOKE_VOLUME:0,89
+#ALLKARAOKE_OLDVOLUME:0,89
 #P1:Harakiri
 #MP3:Serj Tankian - Harakiri.mp3
 #COVER:Serj Tankian - Harakiri [CO].jpg

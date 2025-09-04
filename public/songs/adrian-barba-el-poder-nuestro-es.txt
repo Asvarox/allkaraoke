@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:121
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:El Poder Nuestro Es
 #MP3:Adrián Barba - El poder nuestro es.mp3
 #COVER:Adrián Barba - El poder nuestro es.jpg

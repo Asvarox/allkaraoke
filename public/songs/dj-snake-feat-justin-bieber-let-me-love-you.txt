@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:https://youtu.be/euCqAq6BRa4
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 #MP3:DJ Snake feat. Justin Bieber - Let Me Love You.mp3
 : 13 1 -5 I 
 : 15 1 -5 used 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=0uqeqnwRLZo
 #ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,69
 #MP3:Chris Brown feat. Benny Benassi - Beautiful People.mp3
 : 17 2 -4 E
 : 22 5 -2 very

@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:The Beatles - I Want You (She's So Heavy).mp3
 #COVER:The Beatles - I Want You (She's So Heavy) [CO].jpg
 : 25 3 21 I 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_VOLUME:0,92
+#ALLKARAOKE_OLDVOLUME:0,92
 #MP3:Fran Perea - Uno más uno son siete.mp3
 #COVER:Fran Perea - Uno más uno son siete.jpg
 #END:176500

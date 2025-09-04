@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=lAhUScrPC7Y
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Mother Mother - Ghosting.mp3
 : 27 14 3 I’ve 
 : 43 12 11 been 

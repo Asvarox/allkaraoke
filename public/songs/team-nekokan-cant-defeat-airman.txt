@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Airman ga Taosenai
 #MP3:Team Nekokan - Can't Defeat Airman.mp3
 #COVER:Team Nekokan - Can't Defeat Airman.jpg

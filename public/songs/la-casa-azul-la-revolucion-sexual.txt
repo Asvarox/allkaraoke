@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=La%20Casa%20Azul&cancion=La%20revolución%20sexual
 #ALLKARAOKE_PREVIEWEND:100
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:La Casa Azul - La revolución sexual.mp3
 #COVER:La Casa Azul - La revolución sexual.jpg
 : 31 3 0 Dí

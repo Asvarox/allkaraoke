@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:6
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Too Young To Die
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Jamiroquai - Too Young To Die.mp3
 #COVER:Jamiroquai - Too Young To Die [CO].jpg
 #BACKGROUND:Jamiroquai - Too Young To Die [BG].jpg

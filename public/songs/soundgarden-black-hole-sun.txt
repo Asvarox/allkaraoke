@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Soundgarden&cancion=Black%20Hole%20Sun
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,7
 : 14 4 60 In 
 : 21 4 63 my 
 : 26 7 65 eyes

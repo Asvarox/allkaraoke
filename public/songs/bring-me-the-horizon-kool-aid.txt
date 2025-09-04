@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:149
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28957
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Bring Me The Horizon - Kool-Aid.mp3
 #COVER:Bring Me The Horizon - Kool-Aid [CO].jpg
 #BACKGROUND:Bring Me The Horizon - Kool-Aid [BG].jpg

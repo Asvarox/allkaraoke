@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=25257
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 : 20 3 -2 Ba
 : 24 3 0 ka 
 : 28 3 2 mi

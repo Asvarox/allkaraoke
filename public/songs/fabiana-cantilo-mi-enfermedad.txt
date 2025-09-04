@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AR
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Fabiana Cantilo - Mi enfermedad.mp3
 #COVER:Fabiana Cantilo - Mi enfermedad.jpg
 #BACKGROUND:Fabiana Cantilo - Mi enfermedad [BG].jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_PREVIEWEND:70
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #P1:On My Way
 #MP3:Alan Walker, Sabrina Carpenter and Farruko - On my way.mp3
 #COVER:Alan Walker, Sabrina Carpenter and Farruko - On my way.jpg

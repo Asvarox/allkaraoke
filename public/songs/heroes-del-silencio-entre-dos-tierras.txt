@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:166
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=H%C3%A9roes%20del%20Silencio&cancion=Entre%20dos%20tierras
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #FIXER:Pacayaka
 #MP3:Héroes del Silencio - Entre dos tierras.mp3
 #COVER:Héroes del Silencio - Entre dos tierras.jpg

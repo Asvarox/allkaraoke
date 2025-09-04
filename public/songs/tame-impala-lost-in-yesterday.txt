@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Tame Impala - Lost In Yesterday
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Tame Impala - Lost In Yesterday.mp3
 : 16 3 3 When 
 : 21 1 3 we 

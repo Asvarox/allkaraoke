@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Du%20Hast
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 : 27 15 17 Du
 - 42 45
 - 45

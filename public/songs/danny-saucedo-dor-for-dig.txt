@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:85
 #ALLKARAOKE_PREVIEWEND:109
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Danny Saucedo - Dör för dig.mp3
 #COVER:Danny Saucedo - Dör för dig [CO].jpg
 #BACKGROUND:Danny Saucedo - Dör för dig [BG].jpg

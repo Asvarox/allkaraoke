@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:174
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=587
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Bucks Fizz - Making Your Mind Up.mp3
 : 23 3 2 You 
 : 27 3 2 got

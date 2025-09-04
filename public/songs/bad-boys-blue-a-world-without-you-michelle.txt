@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=b9Hm7VH1EPc&ab_channel=ATLUS
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Bad Boys Blue - A World Without You (Michelle).mp3
 : 16 2 0 The 
 : 20 2 0 bride 

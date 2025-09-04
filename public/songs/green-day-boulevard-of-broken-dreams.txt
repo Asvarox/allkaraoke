@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Boulevard%20of%20Broken%20Dreams
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 : 22 4 -7 I 
 : 30 4 -7 walk 
 : 38 4 -5 a 

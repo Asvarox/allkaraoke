@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=952
 #ALLKARAOKE_PREVIEWEND:97
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 : 20 3 -3 Der 
 : 24 6 -3 tris
 : 32 7 -1 te 

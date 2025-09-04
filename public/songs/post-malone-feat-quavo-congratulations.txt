@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29058
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Post Malone feat. Quavo - Congratulations.mp3
 #COVER:Post Malone feat. Quavo - Congratulations [CO].jpg
 #BACKGROUND:Post Malone feat. Quavo - Congratulations [BG].jpg

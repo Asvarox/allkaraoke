@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:CL
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #P1:KINNIKUMAN OP
 #COVER:Claudio Carrizo - ¡Kinnikuman a luchar! (TV) [CO].jpg
 #MP3:Claudio Carrizo - ¡Kinnikuman a luchar! (TV).mp3

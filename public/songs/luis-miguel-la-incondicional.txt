@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Luis Miguel - La incondicional.mp3
 #COVER:Luis Miguel - La incondicional.jpg
 : 16 12 7 Tú,

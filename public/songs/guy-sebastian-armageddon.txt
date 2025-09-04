@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Guy Sebastian - Armageddon
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Guy Sebastian - Armageddon.mp3
 : 22 6 12 Dark
 : 31 6 14 ness 

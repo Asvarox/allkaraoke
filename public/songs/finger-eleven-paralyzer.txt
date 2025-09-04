@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=4670
 #ALLKARAOKE_PREVIEWEND:88
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Finger Eleven - Paralyzer.mp3
 : 14 3 4 I 
 : 18 5 11 hold 

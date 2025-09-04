@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_PREVIEWEND:126
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #ENCODING:UTF8
 #MP3:Václav Neckář - Tu kytaru jsem koupil kvůli tobě.mp3
 #COVER:Václav Neckář - Tu kytaru jsem koupil kvůli tobě.jpg

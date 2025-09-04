@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_PREVIEWEND:101
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Soda Stereo - Tratame suavemente.mp3
 #COVER:Soda Stereo - Tratame suavemente.jpg
 : 20 3 9 Al

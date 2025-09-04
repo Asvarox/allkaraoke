@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3969
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Bob Seger & The Silver Bullet Band - Old Time Rock & Roll.mp3
 : 16 2 4 Just 
 : 20 2 9 take 

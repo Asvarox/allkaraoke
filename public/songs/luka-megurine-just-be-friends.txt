@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Luka%20Megurine&cancion=Just%20Be%20Friends
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #P1:Just Be Friends
 #COVER:Luka Megurine - Just Be Friends.jpg
 #MP3:Luka Megurine - Just Be Friends.mp3

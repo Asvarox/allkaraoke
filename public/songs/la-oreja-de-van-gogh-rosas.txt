@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:107
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Rosas
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,6
 : 14 3 69 En 
 : 18 3 73 un 
 : 22 3 73 dí

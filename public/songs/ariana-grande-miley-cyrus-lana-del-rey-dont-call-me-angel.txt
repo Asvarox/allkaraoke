@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:101
 #ALLKARAOKE_SOURCEURL:https://youtu.be/leopt__ATR0?si=StNr3UX8K9Y-KhhM
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ariana Grande, Miley Cyrus & Lana Del Rey - Don’t Call Me Angel.mp3
 : 28 8 0 Boy, 
 : 44 2 5 don’t

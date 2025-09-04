@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:http://ultrastar.altervista.org/forum/viewtopic.php?f=2&t=3300
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 #MP3:Per me è importante-Tiromancino.mp3
 #COVER:per-me-è-importante.jpg
 #BACKGROUND:back.jpg

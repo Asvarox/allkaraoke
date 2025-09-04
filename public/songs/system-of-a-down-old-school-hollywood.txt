@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:163
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3966
 #ALLKARAOKE_VOLUME:0,92
+#ALLKARAOKE_OLDVOLUME:0,92
 #P1:Old School Hollywood
 #MP3:System of a Down - Old School Hollywood.mp3
 : 22 7 6 Old 

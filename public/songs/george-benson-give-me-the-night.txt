@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:George Benson - Give Me The Night
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:George Benson - Give Me The Night.mp3
 : 15 2 5 When
 : 19 3 8 e

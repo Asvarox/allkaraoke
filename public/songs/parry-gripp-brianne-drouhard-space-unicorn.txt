@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #P1:Space Unicorn
 #MP3:Parry Gripp and Brianne Drouhard - Space Unicorn.mp3
 #COVER:Parry Gripp and Brianne Drouhard - Space Unicorn.jpg

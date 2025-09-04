@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Izumi%20Kobayashi
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #P1:Dancing Star
 #MP3:Izumi Kobayashi - Dancing Star (TV).mp3
 #COVER:Izumi Kobayashi - Dancing Star (TV).jpg

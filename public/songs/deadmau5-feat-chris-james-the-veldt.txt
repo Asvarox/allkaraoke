@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:The Veldt
 #MP3:deadmau5 feat. Chris James - The Veldt.mp3
 #COVER:deadmau5 feat. Chris James - The Veldt [CO].jpg

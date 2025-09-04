@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=17365
 #ALLKARAOKE_PREVIEWEND:107
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Shakira feat. Carlinhos Brown - La la la (Brazil 2014).mp3
 : 17 3 1 Es
 : 23 2 4 sa 

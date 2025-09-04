@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=0lapF4DQPKQ
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #P1:Black Swan - BTS
 #MP3:BTS - Black Swan.mp3
 #COVER:BTS - Black Swan.jpg

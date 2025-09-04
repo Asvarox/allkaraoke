@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=BoXu6QmxpJE
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Wang Chung - Everybody Have Fun Tonight.mp3
 #COVER:Wang Chung - Everybody Have Fun Tonight [CO].jpg
 #BACKGROUND:Wang Chung - Everybody Have Fun Tonight [BG].jpg

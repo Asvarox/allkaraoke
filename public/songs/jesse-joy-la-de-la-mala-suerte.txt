@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=r0eIhlsks4s
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Jesse & Joy - La de la mala suerte.mp3
 #COVER:Jesse & Joy - La de la mala suerte [CO].jpg
 : 19 3 8 A

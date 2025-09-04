@@ -22,6 +22,7 @@ export const mulitrack: Song = {
   previewStart: undefined,
   previewEnd: undefined,
   volume: undefined,
+  manualVolume: undefined,
   realBpm: 100,
   unsupportedProps: ['#SOMEPROP: some value', '#SOMEPROP2: some value2'],
   mergedTrack: {

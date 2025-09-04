@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://youtu.be/NdTgs_rkRtg
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:SDP - Anfang anzufangen.mp3
 : 23 3 22 Ich 
 : 27 3 25 weiß 

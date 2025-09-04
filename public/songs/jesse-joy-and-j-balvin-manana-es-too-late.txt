@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:43
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=QsuTjx_yosA
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Jesse & Joy and J Balvin - Mañana es Too Late.mp3
 #COVER:Jesse & Joy and J Balvin - Mañana es Too Late.jpg
 #MEDLEYSTARTBEAT:508

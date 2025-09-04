@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:80
 #ALLKARAOKE_SOURCEURL:https://youtu.be/L4Ghlgn61Pw
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Jonathan Coulton - Re: Your Brains.mp3
 : 13 3 11 He
 : 17 2 9 ya 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:70
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=u15tEo0wsQI
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty.mp3
 #COVER:Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty [CO].jpg
 #BACKGROUND:Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty [BG].jpg

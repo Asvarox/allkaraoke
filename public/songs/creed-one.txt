@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:111
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3681
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Creed - One.mp3
 : 30 8 11 Af
 : 42 8 16 firma

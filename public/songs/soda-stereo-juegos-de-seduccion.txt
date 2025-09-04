@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_PREVIEWEND:43
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #P1:Juegos de Seducción
 #MP3:Soda Stereo - Juegos de seducción.mp3
 #COVER:Soda Stereo - Juegos de seducción.jpg

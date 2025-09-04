@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:IT
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Angelina Mango - La noia.mp3
 #COVER:Angelina Mango - La noia [CO].jpg
 #BACKGROUND:Angelina Mango - La noia [BG].jpg

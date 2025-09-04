@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 #MP3:Billie Eilish - when the party's over.mp3
 #COVER:Billie Eilish - when the party's over.jpg
 #MEDLEYSTARTBEAT:1979

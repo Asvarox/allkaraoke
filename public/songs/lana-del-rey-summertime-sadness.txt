@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 : 15 3 13 Kiss 
 : 19 3 13 me 
 : 23 3 13 hard 

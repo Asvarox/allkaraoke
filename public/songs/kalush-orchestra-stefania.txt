@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25547
 #ALLKARAOKE_PREVIEWEND:45
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #MP3:Kalush Orchestra - Stefania (ESC 2022 Ukraine).mp3
 : 21 5 4 Ste
 : 27 5 5 fa

@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:176
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Falco&cancion=Rock%20Me%20Amadeus
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 : 12 2 57 Er 
 : 14 2 57 war 
 : 16 2 57 ein 

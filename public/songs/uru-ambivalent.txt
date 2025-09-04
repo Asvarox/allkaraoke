@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://youtu.be/e_pdE__o5D8
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Uru - Ambivalent.mp3
 #COVER:Uru - Ambivalent [CO].jpg
 #BACKGROUND:Uru - Ambivalent [BG].jpg

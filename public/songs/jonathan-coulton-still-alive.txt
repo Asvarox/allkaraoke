@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://youtu.be/yDuVYVsif_M
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Jonathan Coulton - Still Alive.mp3
 #COVER:Jonathan Coulton - Still Alive.jpg
 : 16 3 19 This 

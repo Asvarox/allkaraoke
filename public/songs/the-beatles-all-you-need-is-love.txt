@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=All%20You%20Need%20Is%20Love
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 : 21 19 23 Love 
 : 44 21 21 love 
 : 67 9 19 love

@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 : 14 3 5 E
 : 18 3 3 very
 : 22 11 3 bo

@@ -11,6 +11,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:YOASOBI - Yoru ni kakeru (Into The Night).mp3
 #COVER:YOASOBI - Yoru ni kakeru (Into The Night) [CO].jpg
 #BACKGROUND:YOASOBI - Yoru ni kakeru (Into The Night) [BG].jpg

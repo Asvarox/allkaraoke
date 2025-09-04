@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1866
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,65
 #MP3:Stone Sour - Bother.mp3
 : 24 7 3 Wish 
 : 34 8 10 I 

@@ -10,8 +10,8 @@ import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
 // @ts-ignore file might not exist
 import escSongs from './escSongs.json';
 // @ts-ignore file might not exist
-import scrapedBpmData from './scraped-bpm-data.json';
 import songIndex from '../public/songs/index.json';
+import scrapedBpmData from './scraped-bpm-data.json';
 
 // @ts-expect-error
 const mbApi = new MusicBrainzApi({
@@ -44,7 +44,8 @@ function setSongShortId(song: Pick<Song, 'shortId' | 'id'>) {
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;
     try {
-      setSongShortId(songData);
+      songData.manualVolume = song.volume;
+      //   setSongShortId(songData);
       // await fixGapForNewerSongs(songData);
       // await setEurovisionEdition(songData);
       // await fillMissingRealBpm(songData, file);

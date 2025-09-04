@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Robbie Williams and Gary Barlow - Shame
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Robbie Williams and Gary Barlow - Shame.mp3
 #START:11.0
 : 26 4 22 Well 

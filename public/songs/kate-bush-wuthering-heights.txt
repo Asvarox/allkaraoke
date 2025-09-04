@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=11527
 #ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_OLDVOLUME:0,91
 #MP3:Kate Bush - Wuthering Heights.mp3
 : 16 3 16 Out 
 : 20 3 14 on 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=4605
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:The Cardigans - Lovefool.mp3
 : 15 3 7 Dea
 : 19 3 4 ~r 

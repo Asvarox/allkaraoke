@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=TfYHI-UuoAI
 #ALLKARAOKE_PREVIEWEND:108
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Prometo
 #MP3:Fernando Daniel - Prometo.mp3
 #COVER:Fernando Daniel - Prometo.jpg

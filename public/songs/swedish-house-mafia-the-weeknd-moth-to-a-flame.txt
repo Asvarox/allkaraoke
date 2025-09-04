@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=u9n7Cw-4_HQ
 #ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_OLDVOLUME:0,62
 #P1:Moth To A Flame
 #MP3:Swedish House Mafia & The Weeknd - Moth To A Flame.mp3
 F 16 3 0 Wo

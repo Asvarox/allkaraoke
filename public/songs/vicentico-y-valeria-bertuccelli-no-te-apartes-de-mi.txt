@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:111
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=V2ji2KgJYcE
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Vicentico y Valeria Bertuccelli - No te apartes de mí.mp3
 #COVER:Vicentico y Valeria Bertuccelli - No te apartes de mí.jpg
 #MEDLEYSTARTBEAT:2778

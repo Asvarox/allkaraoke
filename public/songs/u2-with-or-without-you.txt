@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,9
 : 0 3 14 See
 : 6 3 16  the
 : 10 3 18  stone

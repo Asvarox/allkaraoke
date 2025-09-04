@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29352
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,9
 #MP3:Ich Troje - A wszystko to (bo ciebie kocham).mp3
 #COVER:Ich Troje - A wszystko to (bo ciebie kocham) [CO].jpg
 #BACKGROUND:Ich Troje - A wszystko to (bo ciebie kocham) [BG].jpg

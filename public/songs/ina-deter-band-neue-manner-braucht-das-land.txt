@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=14770
 #ALLKARAOKE_PREVIEWEND:80
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Ina Deter Band - Neue Männer braucht das Land.mp3
 : 20 4 4 Ich 
 : 26 12 4 sprüh’s 

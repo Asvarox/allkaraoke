@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #COVER:Taylor Swift - All Too Well [CO].jpg
 #MP3:Taylor Swift - All Too Well.mp3
 #BACKGROUND:Taylor Swift - All Too Well [BG].jpg

@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=The%20Raconteurs&cancion=Steady,%20As%20She%20Goes
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:The Raconteurs - Steady, As She Goes.mp3
 #COVER:The Raconteurs - Steady, As She Goes.jpg
 : 23 4 66 Find 

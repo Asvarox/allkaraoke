@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Joan%20Sebastian&cancion=25%20rosas
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #P1:25 rosas
 #MP3:Joan Sebastian - 25 rosas.mp3
 #COVER:Joan Sebastian - 25 rosas.jpg

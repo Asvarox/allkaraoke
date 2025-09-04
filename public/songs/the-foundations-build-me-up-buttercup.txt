@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:The Foundations - Build Me Up Buttercup
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:The Foundations - Build Me Up Buttercup.mp3
 : 18 4 24 Why 
 : 26 7 21 do 

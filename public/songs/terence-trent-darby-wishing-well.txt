@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_PREVIEWEND:50
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #MP3:Terence Trent D’Arby - Wishing Well.mp3
 #COVER:Terence Trent D’Arby - Wishing Well [CO].jpg
 #BACKGROUND:Terence Trent D’Arby - Wishing Well [BG].jpg

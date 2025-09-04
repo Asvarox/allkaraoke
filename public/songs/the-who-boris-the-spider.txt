@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=21067
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:The Who - Boris The Spider.mp3
 : 20 3 14 Look, 
 : 26 3 14 he’s 

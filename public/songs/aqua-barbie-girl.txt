@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aqua&cancion=Barbie%20Girl
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 F 17 5 36 Hiya 
 F 23 7 36 Barbie
 - 30

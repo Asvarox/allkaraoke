@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Revolverheld - Freunde Bleiben.mp3
 #COVER:Revolverheld - Freunde Bleiben.jpg
 : 23 2 54 Du 

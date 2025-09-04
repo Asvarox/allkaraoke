@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:149
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12392
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Metallica - Turn The Page.mp3
 : 26 3 0 On 
 : 30 3 5 a 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jesse%20%26%20Joy&cancion=%C2%A1Corre!
 #ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_OLDVOLUME:0,85
 : 20 2 6 Me 
 : 24 2 15 mi
 : 28 4 18 ras 

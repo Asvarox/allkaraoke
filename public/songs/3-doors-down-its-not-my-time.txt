@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3868
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:3 Doors Down - It’s Not My Time.mp3
 : 26 4 9 Loo
 : 32 5 11 king 

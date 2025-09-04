@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Tame Impala - Borderline
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Tame Impala - Borderline.mp3
 #COVER:Tame Impala - Borderline [CO].jpg
 #BACKGROUND:Tame Impala - Borderline [BG].jpg

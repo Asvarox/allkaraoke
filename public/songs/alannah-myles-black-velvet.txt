@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:182
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=tT4d1LQy4es
 #ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_OLDVOLUME:0,97
 #MP3:Alannah Myles - Black Velvet.mp3
 : 23 45 3 Mmm
 : 69 2 1 ~

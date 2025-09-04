@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Destroy Boys - Muzzle
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Destroy Boys - Muzzle.mp3
 : 28 5 -5 You 
 : 36 5 -5 don’t 

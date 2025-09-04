@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:137
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=18004
 #ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Anggun - Echo (You And I) (ESC 2012 France).mp3
 : 18 5 -1 You 
 : 24 4 -1 and 

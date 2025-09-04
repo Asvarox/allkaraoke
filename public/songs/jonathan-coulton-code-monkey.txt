@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:160
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6J-W3mn9N2w
 #ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:audio.mp3
 #COVER:cover.jpg
 #BACKGROUND:background.jpg

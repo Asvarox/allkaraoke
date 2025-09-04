@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Outliers feat. Reef - Place Your Hands (Outliers Remix)
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Outliers feat. Reef - Place Your Hands (Outliers Remix).mp3
 #COVER:Outliers feat. Reef - Place Your Hands (Outliers Remix) [CO].jpg
 #BACKGROUND:Outliers feat. Reef - Place Your Hands (Outliers Remix) [BG].jpg

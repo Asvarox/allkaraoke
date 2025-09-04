@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Sz_wWzgh-vQ
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:TWICE feat. Megan Thee Stallion - Strategy.mp3
 #COVER:TWICE feat. Megan Thee Stallion - Strategy.jpg
 #MEDLEYSTARTBEAT:675

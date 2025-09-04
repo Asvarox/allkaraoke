@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=5342
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Andrés Calamaro - Flaca.mp3
 : 14 2 14 Fla
 : 18 4 11 ca 

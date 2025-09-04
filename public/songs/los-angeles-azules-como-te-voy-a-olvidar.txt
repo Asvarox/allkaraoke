@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Los Ángeles Azules - Cómo te voy a olvidar.mp3
 #COVER:Los Ángeles Azules - Cómo te voy a olvidar.jpg
 #MEDLEYSTARTBEAT:391

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_PREVIEWEND:128
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:[Alexandros] - Senkou.mp3
 #COVER:[Alexandros] - Senkou [CO].jpg
 #BACKGROUND:[Alexandros] - Senkou [BG].jpg

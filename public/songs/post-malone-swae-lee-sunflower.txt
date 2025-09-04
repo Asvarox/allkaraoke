@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=22672
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_OLDVOLUME:0,68
 #MP3:Post Malone & Swae Lee - Sunflower.mp3
 : 24 2 -3 Ayy, 
 : 32 8 -1 ayy, 

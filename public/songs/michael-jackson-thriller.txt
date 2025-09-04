@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 : 32 4 11 It's 
 : 39 5 13 close 
 : 48 2 15 to 

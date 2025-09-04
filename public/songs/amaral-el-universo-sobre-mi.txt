@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Amaral&cancion=El%20universo%20sobre%20mi
 #ALLKARAOKE_PREVIEWEND:69
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 #MP3:Amaral - El universo sobre mi.mp3
 #COVER:Amaral - El universo sobre mi.jpg
 : 25 3 64 Só

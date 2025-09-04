@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:59
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Petula%20Clark&cancion=Downtown
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_OLDVOLUME:0,77
 : 15 4 59 When 
 : 19 4 59 you're 
 : 23 4 59 a

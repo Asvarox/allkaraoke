@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=6054
 #ALLKARAOKE_PREVIEWEND:73
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Tie Your Mother Down
 #MP3:Queen - Tie Your Mother Down.mp3
 #START:5.5

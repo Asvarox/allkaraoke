@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Oasis&cancion=Don%27t%20look%20back%20in%20anger
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #MP3:Oasis - Don't look back in anger.mp3
 #COVER:Oasis - Don't look back in anger.jpg
 : 40 4 16 Slip 

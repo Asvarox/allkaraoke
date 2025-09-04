@@ -11,6 +11,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:166
 #ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Afroman - Because I got high.mp3
 #COVER:Afroman - Because I got high [CO].jpg
 #BACKGROUND:Afroman - Because I got high [BG].jpg

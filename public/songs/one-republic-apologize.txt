@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:118
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=F0Af9MZzrLc
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:One Republic - Apologize.mp3
 #COVER:One Republic - Apologize.png
 : 20 4 51 I'm 

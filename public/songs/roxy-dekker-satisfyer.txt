@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/
 #ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_OLDVOLUME:0,83
 #P1:Satisfyer
 #MP3:Roxy Dekker - Satisfyer.mp3
 #COVER:Roxy Dekker - Satisfyer [CO].jpg

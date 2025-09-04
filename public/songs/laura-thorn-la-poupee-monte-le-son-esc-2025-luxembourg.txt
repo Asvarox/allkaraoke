@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Laura Thorn - La poupée monte le son (ESC 2025 Luxembourg).mp3
 #COVER:Laura Thorn - La poupée monte le son (ESC 2025 Luxembourg) [CO].jpg
 #BACKGROUND:Laura Thorn - La poupée monte le son (ESC 2025 Luxembourg) [BG].jpg

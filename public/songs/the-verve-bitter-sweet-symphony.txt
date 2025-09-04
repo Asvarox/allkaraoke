@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3820
 #ALLKARAOKE_PREVIEWEND:80
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #P1:Bitter Sweet Symphony
 #MP3:The Verve - Bitter Sweet Symphony.mp3
 : 23 4 9 ’Cause 

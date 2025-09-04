@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14055
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 0 4 5 Cie
 : 8 4 5 szą
 : 16 4 0  się

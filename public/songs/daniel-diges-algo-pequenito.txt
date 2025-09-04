@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:177
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9035
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_OLDVOLUME:0,68
 #MP3:Daniel Diges - Algo pequeñito (ESC 2010 Spain).mp3
 : 24 4 4 Al
 : 30 2 4 go 

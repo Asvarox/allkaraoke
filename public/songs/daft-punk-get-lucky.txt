@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Daft%20Punk&cancion=Get%20Lucky
 #ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_OLDVOLUME:0,91
 : 0 4 4 Like
 : 6 2 6  the
 : 10 3 11  le

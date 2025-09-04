@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:The Greatest Showman - A Million Dreams [DUET].mp3
 : 21 1 12 I 
 : 23 9 11 close 

@@ -11,6 +11,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Lewis Capaldi - Forget Me.mp3
 #COVER:Lewis Capaldi - Forget Me [CO].jpg
 #BACKGROUND:Lewis Capaldi - Forget Me [BG].jpg

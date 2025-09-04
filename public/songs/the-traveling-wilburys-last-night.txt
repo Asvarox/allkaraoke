@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:The Traveling Wilburys - Last Night
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:The Traveling Wilburys - Last Night.mp3
 : 16 2 -5 She 
 : 20 2 -5 was 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Z7yNvMzz2zg&pp=ygUGcHN5Y2hv
 #ALLKARAOKE_VOLUME:0,63
+#ALLKARAOKE_OLDVOLUME:0,63
 #MP3:Red Velvet - Psycho.mp3
 #COVER:Red Velvet - Psycho.jpg
 #MEDLEYSTARTBEAT:1320

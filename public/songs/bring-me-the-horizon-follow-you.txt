@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=RqQKhSzThyc
 #ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_OLDVOLUME:0,88
 #MP3:Bring Me The Horizon - Follow You.mp3
 : 24 7 10 My 
 : 32 10 8 head 

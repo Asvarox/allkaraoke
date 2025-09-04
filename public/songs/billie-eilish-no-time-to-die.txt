@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:71
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=BboMpayJomw
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_OLDVOLUME:0,73
 #P1:No Time To Die - Billie Eilish
 #MP3:Billie Eilish - No Time To Die.mp3
 #COVER:Billie Eilish - No Time To Die.jpg

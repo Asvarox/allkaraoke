@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:46
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 0 3 55 I've
 : 4 3 58  paid
 : 8 4 60  my

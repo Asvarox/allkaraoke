@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_OLDVOLUME:0,99
 #MP3:DJ Jazzy Jeff & The Fresh Prince - Summertime.mp3
 #COVER:DJ Jazzy Jeff & The Fresh Prince - Summertime.jpg
 : 13 2 65 Sum

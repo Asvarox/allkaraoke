@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=wgAKnsO6N-s&ab_channel=MagicAffair
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Magic Affair - Omen III.mp3
 : 18 6 8 Show 
 : 26 2 6 you 

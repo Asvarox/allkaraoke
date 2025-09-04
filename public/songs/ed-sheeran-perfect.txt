@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=2Vv-BfVoq4g
 #ALLKARAOKE_PREVIEWEND:135
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Ed Sheeran - Perfect.mp3
 #COVER:Ed Sheeran - Perfect.jpg
 #START:0.01

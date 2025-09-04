@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ET3-t1jFmo0
 #ALLKARAOKE_PREVIEWEND:77
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Seether - Fine Again.mp3
 : 23 6 1 It 
 : 31 9 6 seems 

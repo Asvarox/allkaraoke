@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:FR
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_OLDVOLUME:0,99
 #P1:Harder, Better, Faster, Stronger
 #MP3:Daft Punk - Harder Better Faster Stronger.mp3
 : 16 2 6 Work 

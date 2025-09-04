@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:42
 #ALLKARAOKE_SOURCEURL:The Communards with Sarah Jane Morris - Don’t Leave Me This Way
 #ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:The Communards with Sarah Jane Morris - Don’t Leave Me This Way.mp3
 : 17 24 13 Mmm
 : 45 2 12 ~

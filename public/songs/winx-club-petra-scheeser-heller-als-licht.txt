@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=21568
 #ALLKARAOKE_PREVIEWEND:77
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Winx Club (Petra Scheeser) - Heller als Licht.mp3
 F 18 8 9 Uhh~ 
 F 29 36 9 aahhh~

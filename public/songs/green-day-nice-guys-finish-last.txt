@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=6491
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Green Day - Nice Guys Finish Last.mp3
 : 25 6 4 Nice 
 : 33 6 4 guys 

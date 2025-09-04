@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=hxSg2Ioz3LM&t=1s
 #ALLKARAOKE_PREVIEWEND:144
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,82
 #MP3:DECO 27 feat. Hatsune Miku - Hibana.mp3
 #COVER:DECO 27 feat. Hatsune Miku - Hibana [CO].jpg
 #MEDLEYSTARTBEAT:0

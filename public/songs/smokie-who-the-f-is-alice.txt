@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3784
 #ALLKARAOKE_PREVIEWEND:67
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_OLDVOLUME:0,56
 : 17 3 16 Sal
 : 21 2 16 ly 
 : 25 3 14 ca

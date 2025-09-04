@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Ranma 1/2 opening latino
 #COVER:María de Jesús Terán - No me hagas sentir una salvaje.jpg
 #MP3:María de Jesús Terán - No me hagas sentir una salvaje.mp3

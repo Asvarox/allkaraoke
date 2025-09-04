@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6o7bCAZSxsg
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Rosalía - Saoko.mp3
 #COVER:Rosalía - Saoko.jpg
 #START:0.1

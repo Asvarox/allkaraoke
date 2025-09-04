@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:146
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:A Flock Of Seagulls - I Ran (So Far Away).mp3
 #COVER:A Flock Of Seagulls - I Ran (So Far Away) [CO].jpg
 #BACKGROUND:A Flock Of Seagulls - I Ran (So Far Away) [BG].jpg

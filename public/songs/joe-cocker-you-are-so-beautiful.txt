@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:70
 #ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,67
 #MP3:Joe Cocker - You Are So Beautiful.mp3
 #COVER:Joe Cocker - You Are So Beautiful [CO].jpg
 #BACKGROUND:Joe Cocker - You Are So Beautiful [BG].jpg

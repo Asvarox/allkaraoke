@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9559
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Hera Björk - Je ne sais quoi (ESC 2010 Iceland).mp3
 * 18 18 15 I 
 : 46 2 18 am 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:80
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25782
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,6
 #MP3:Sam Ryder - Space Man (ESC 2022 UK).mp3
 : 23 3 6 If 
 : 30 5 6 I
