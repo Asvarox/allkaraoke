@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bowie&cancion=Changes
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,81
 F 15 3 58 Oh 
 F 19 2 51 yeah

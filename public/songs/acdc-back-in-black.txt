@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:97
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Back%20in%20Black%20(Live)
-#ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,65
 : 26 3 28 Back 
 : 31 3 28 in 

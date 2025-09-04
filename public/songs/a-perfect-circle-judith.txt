@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4475
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9717
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,77
 #MP3:A Perfect Circle - Judith.mp3
 : 21 7 7 You’re 

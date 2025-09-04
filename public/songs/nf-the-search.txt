@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=165696
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25288
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,85
 #MP3:NF - The Search.mp3
 : 25 2 4 "Hey, 

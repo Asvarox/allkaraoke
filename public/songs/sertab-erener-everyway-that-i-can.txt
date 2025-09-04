@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168173
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29059
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,63
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Sertab Erener - Everyway That I Can (ESC Turkey 2003).mp3
 #COVER:Sertab Erener - Everyway That I Can (ESC Turkey 2003) [CO].jpg

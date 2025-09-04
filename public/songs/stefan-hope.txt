@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29197
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:STEFAN - Hope (ESC 2022 Estonia).mp3
 #COVER:STEFAN - Hope (ESC 2022 Estonia) [CO].jpg

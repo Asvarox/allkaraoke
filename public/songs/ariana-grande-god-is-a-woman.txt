@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:145
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=ariana+grande
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,65
 #ALLKARAOKE_OLDVOLUME:0,74
 : 26 5 8 You
 : 33 10 10 ~

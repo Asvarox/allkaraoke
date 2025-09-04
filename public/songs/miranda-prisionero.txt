@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=27655
 #ALLKARAOKE_PREVIEWEND:130
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Miranda! - Prisionero.mp3
 #COVER:Miranda! - Prisionero [CO].jpg

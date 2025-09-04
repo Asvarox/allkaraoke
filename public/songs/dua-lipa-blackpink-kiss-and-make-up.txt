@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:Mathieu Jomphe-Lepine, Chelcee Grimes, Dua Lipa, Marc Vincent, Teddy Park, Zacharie Raymond, Yannick Rastogi.
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=AX3Bsiq-13k
-#ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,67
 #P1:Kiss and Make Up - Dua Lipa & BLACKPINK
 #MP3:Dua Lipa & BLACKPINK - Kiss and Make Up.mp3

@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=tongas%20pla
 #ALLKARAOKE_REALBPM:51
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=mamonas
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Mamonas Assassinas - Sabão cra cra.mp3
 #COVER:Mamonas Assassinas - Sabão cra cra.jpg

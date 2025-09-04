@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=conejof1
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=DragonForce&cancion=Through%20the%20fire%20and%20flames
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
 : 13 1 19 On 
 : 15 1 19 a 

@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
 #ALLKARAOKE_REALBPM:180
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8168
-#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_VOLUME:0,55
 #ALLKARAOKE_OLDVOLUME:0,84
 #P1:Fireflies
 : 18 2 -2 You 

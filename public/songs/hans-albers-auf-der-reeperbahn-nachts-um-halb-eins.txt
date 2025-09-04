@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6097
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,81
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Hans Albers - Auf der Reeperbahn nachts um halb eins.mp3
 : 14 6 13 Sil

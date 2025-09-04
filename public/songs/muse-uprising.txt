@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Uprising
+#ALLKARAOKE_VOLUME:0,51
 : 34 2 0 The 
 : 38 10 2 pa
 : 50 2 0 ra

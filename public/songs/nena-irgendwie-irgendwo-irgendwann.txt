@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=502
 #ALLKARAOKE_PREVIEWEND:100
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,98
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Nena - Irgendwie, irgendwo, irgendwann.mp3
 : 23 3 -1 Im 

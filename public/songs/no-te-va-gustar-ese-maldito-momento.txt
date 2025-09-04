@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=marague248
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=No%20Te%20Va%20Gustar&cancion=Ese%20maldito%20momento
-#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_VOLUME:0,85
 #ALLKARAOKE_OLDVOLUME:0,79
 #MP3:No Te Va Gustar - Ese maldito momento.mp3
 #COVER:No Te Va Gustar - Ese maldito momento.jpg

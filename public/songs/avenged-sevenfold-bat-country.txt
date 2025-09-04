@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,94
 #ALLKARAOKE_OLDVOLUME:0,5
 F 27 228 12 Mah!
 - 255

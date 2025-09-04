@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Madonna&cancion=La%20Isla%20Bonita
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Madonna - La Isla Bonita.mp3
 #COVER:Madonna - La Isla Bonita [CO].jpg

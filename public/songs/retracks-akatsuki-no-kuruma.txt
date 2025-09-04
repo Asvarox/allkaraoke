@@ -17,7 +17,7 @@
 #ALLKARAOKE_REALBPM:109
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4dP_m0kNmJA
 #ALLKARAOKE_PREVIEWEND:192
-#ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_VOLUME:0,61
 #ALLKARAOKE_OLDVOLUME:0,86
 #MP3:FictionJunction YUUKA - Akatsuki no Kuruma 〜ReTracks.mp3
 #COVER:FictionJunction YUUKA - Akatsuki no Kuruma 〜ReTracks [CO].jpg

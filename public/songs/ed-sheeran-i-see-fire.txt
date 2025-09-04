@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,73
 #ALLKARAOKE_OLDVOLUME:0,76
 : 11 9 10 Oh, 
 : 25 3 13 mis

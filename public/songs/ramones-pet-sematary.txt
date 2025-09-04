@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3974
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Ramones - Pet Sematary.mp3
 : 20 2 9 Un

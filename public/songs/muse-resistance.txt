@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=1v4n
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Resistance
+#ALLKARAOKE_VOLUME:0,5
 : 17 5 -8 Is 
 : 23 4 -4 our 
 : 28 7 -1 se

@@ -12,7 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:0,85
 #ALLKARAOKE_OLDVOLUME:0,91
 : 0 2 0 Ba
 : 4 2 2 by,

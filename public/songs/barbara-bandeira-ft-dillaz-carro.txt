@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:115
 #ALLKARAOKE_PREVIEWEND:99
-#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_VOLUME:0,63
 #ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Bárbara Bandeira ft. Dillaz - Carro.mp3
 #COVER:Bárbara Bandeira ft. Dillaz - Carro.jpg

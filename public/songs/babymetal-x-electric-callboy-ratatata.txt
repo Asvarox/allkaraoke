@@ -10,7 +10,7 @@
 #ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:13.744Z
 #ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=profil&id=150321
 #ALLKARAOKE_REALBPM:140
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Babymetal x Electric Callboy - Ratatata.mp3
 #COVER:Babymetal x Electric Callboy - Ratatata [CO].jpg

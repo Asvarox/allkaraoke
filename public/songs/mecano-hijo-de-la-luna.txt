@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:179
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mecano&cancion=Hijo%20de%20la%20luna
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
 : 16 2 61 Ton
 : 19 2 63 to el 

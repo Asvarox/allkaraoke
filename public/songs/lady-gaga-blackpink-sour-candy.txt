@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:Michael TuckerStefani GermanottaMadison LoveMatthew BurnsRami YacoubHong Jun Park
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Fc2qWBIToKU
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,74
 #P1:Sour Candy - Lady Gaga, BLACKPINK
 #MP3:Lady Gaga & BLACKPINK - Sour Candy.mp3

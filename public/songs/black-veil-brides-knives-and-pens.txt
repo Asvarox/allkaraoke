@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=50802
 #ALLKARAOKE_REALBPM:186
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12486
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Black Veil Brides - Knives And Pens.mp3
 : 25 6 0 A

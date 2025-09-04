@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Man%C3%A1&cancion=Clavado%20en%20un%20bar
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
 - 0 147
 - 147

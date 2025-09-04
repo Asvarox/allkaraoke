@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168173
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25552
-#ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_VOLUME:0,66
 #ALLKARAOKE_OLDVOLUME:0,68
 #MP3:Subwoolfer - Give That Wolf A Banana.mp3
 : 3 6 -5 O

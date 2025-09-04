@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Van%20Halen&cancion=Jump
+#ALLKARAOKE_VOLUME:0,68
 F 26 12 12 Ah
 F 40 7 14 ~
 F 49 11 16 ~

@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Enej&cancion=Kamie%C5%84%20z%20napisem%20LOVE
 #ALLKARAOKE_PREVIEWEND:90
-#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_VOLUME:0,65
 #ALLKARAOKE_OLDVOLUME:0,7
 #MP3:Enej - Kamień z napisem LOVE.mp3
 #COVER:Enej - Kamień z napisem LOVE [CO].jpg

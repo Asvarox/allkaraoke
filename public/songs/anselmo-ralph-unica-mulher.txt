@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=airbn
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_PREVIEWEND:97
-#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,82
 #MP3:Anselmo Ralph - Única Mulher.mp3
 #COVER:Anselmo Ralph - Única Mulher.jpg

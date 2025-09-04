@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:85
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Calle+13
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,87
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Calle 13 - ¡Atrévete, te, te!.mp3
 #COVER:Calle 13 - ¡Atrévete, te, te!.jpg

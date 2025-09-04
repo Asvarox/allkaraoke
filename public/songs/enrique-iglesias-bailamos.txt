@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias&cancion=Bailamos
+#ALLKARAOKE_VOLUME:0,5
 F 0 3 7 Es
 F 4 2 7 ta
 F 7 2 7  no

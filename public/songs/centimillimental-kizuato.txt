@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:178
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=e6uOkHm8vcQ&pp=ygUYa2l6dWF0byBjZW50aW1pbGxpbWVudGFs
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Centimillimental - Kizuato.mp3
 #COVER:Centimillimental - Kizuato.jpg

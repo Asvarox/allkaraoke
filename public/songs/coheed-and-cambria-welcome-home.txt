@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6031
 #ALLKARAOKE_REALBPM:154
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=7317
-#ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Coheed And Cambria - Welcome Home.mp3
 : 27 7 27 You 

@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=angs
 #ALLKARAOKE_REALBPM:65
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=The%20Loneliest
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,6
 : 17 4 6 You'll 
 : 24 6 2 be 

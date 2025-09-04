@@ -15,7 +15,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=165071
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27046
-#ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,87
 #MP3:Lord Of The Lost - Blood & Glitter.mp3
 #COVER:Lord Of The Lost - Blood & Glitter [CO].jpg

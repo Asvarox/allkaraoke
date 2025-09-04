@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=45936
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19137
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Five Finger Death Punch - Coming Down.mp3
 : 15 2 20 It’s 

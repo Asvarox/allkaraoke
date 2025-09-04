@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tadeusz%20Wo%C5%BAniak&cancion=Zegarmistrz%20%C5%9Bwiat%C5%82a
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,78
 #ALLKARAOKE_OLDVOLUME:0,8
 : 0 2 -13 A
 : 3 2 -6  kie

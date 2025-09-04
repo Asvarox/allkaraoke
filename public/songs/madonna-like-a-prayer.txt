@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Like%20A%20Prayer
+#ALLKARAOKE_VOLUME:0,93
 : 15 4 5 Life
 : 23 6 5  is
 : 30 7 5  a

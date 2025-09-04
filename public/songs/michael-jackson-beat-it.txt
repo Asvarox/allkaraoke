@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,5
 : 19 3 10 They 
 : 23 3 10 told 

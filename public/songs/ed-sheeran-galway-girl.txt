@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nezunobaka
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Galway%20Girl
+#ALLKARAOKE_VOLUME:0,5
 : 27 1 -3 She 
 : 33 4 6 played 
 : 41 2 4 the 

@@ -14,7 +14,7 @@
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GM1kzbAgo_E
 #ALLKARAOKE_PREVIEWEND:106
-#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_VOLUME:0,9
 #ALLKARAOKE_OLDVOLUME:1
 #P1:These Boots Are Made For Walkin'
 #MP3:Nancy Sinatra - These Boot Are Made For Walking.mp3

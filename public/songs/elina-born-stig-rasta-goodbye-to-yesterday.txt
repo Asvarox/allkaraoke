@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=179304
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=29253
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Elina Born & Stig Rästa - Goodbye To Yesterday (ESC 2015 Estonia).mp3
 #COVER:Elina Born & Stig Rästa - Goodbye To Yesterday (ESC 2015 Estonia) [CO].jpg

@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=169980
 #ALLKARAOKE_REALBPM:78
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24889
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,77
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Budka Suflera i Felicjan Andrzejczak - Jolka Jolka.mp3
 : 20 6 2 Jol

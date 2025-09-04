@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://www.youtube.com/@RagNBoneManVEVO
 #ALLKARAOKE_REALBPM:171
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=1Al-nuR1iAU
-#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_VOLUME:0,72
 #ALLKARAOKE_OLDVOLUME:0,82
 #COVER:Rag'n'Bone Man - Skin.jpg
 #MP3:Rag'n'Bone Man - Skin.mp3

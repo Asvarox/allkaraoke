@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #ALLKARAOKE_REALBPM:78
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud
+#ALLKARAOKE_VOLUME:0,6
 : 21 2 -6 When 
 : 24 3 -3 your 
 : 30 2 -3 legs

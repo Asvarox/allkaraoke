@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)
+#ALLKARAOKE_VOLUME:0,91
 - -18 1
 - 1
 : 19 9 -5 I 

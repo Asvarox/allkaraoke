@@ -12,7 +12,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11350
-#ALLKARAOKE_VOLUME:0,751
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,751
 F 0 1 7 Pra
 F 2 1 7 wy

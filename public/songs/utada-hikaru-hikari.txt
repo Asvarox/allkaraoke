@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=18501
 #ALLKARAOKE_REALBPM:88
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=14589
-#ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,95
 : 23 5 7 Don
 : 30 14 14 na 

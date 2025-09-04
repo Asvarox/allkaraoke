@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox
+#ALLKARAOKE_VOLUME:0,5
 : 17 2 6 Dog
 : 20 3 8 ~ 
 : 25 3 8 goes

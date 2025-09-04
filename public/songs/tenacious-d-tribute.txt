@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
 : 28 3 9 This
 F 32 2 9  is

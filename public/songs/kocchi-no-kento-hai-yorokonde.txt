@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:147
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=30540
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Kocchi no Kento - Hai Yorokonde.mp3
 #COVER:Kocchi no Kento - Hai Yorokonde [CO].jpg

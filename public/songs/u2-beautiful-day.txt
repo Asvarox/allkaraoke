@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Beautiful%20Day
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,8
 : 0 4 45 The
 : 4 2 52  heart

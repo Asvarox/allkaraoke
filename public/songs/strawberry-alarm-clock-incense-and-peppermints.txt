@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:133
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28811
 #ALLKARAOKE_PREVIEWEND:65
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Strawberry Alarm Clock - Incense And Peppermints.mp3
 #COVER:Strawberry Alarm Clock - Incense And Peppermints [CO].jpg

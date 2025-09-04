@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Alejandro%20Fern%C3%A1ndez&cancion=Abr%C3%A1zame
-#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,79
 #P1:Abrazame
 #MP3:Alejandro Fernández - Abrázame.mp3

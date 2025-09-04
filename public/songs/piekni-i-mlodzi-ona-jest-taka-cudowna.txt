@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Pi%C4%99kni%20i%20M%C5%82odzi&cancion=Ona%20jest%20taka%20cudowna
 #ALLKARAOKE_PREVIEWEND:183
-#ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,54
 #MP3:Piękni i Młodzi - Ona jest taka cudowna.mp3
 #COVER:Piękni i Młodzi - Ona jest taka cudowna [CO].jpg

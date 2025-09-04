@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Blondie&cancion=The%20Tide%20Is%20High
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
 : 13 2 54 The
 : 17 7 59  tide

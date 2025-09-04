@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=174695
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25962
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Daughtry - September.mp3
 : 20 6 7 How 

@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=189822
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28848
-#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_VOLUME:0,68
 #ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Coma - Los Cebula i Krokodyle Łzy.mp3
 #COVER:Coma - Los Cebula i Krokodyle Łzy [CO].jpg

@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pablo%20Albor%C3%A1n&cancion=Solamente%20t%C3%BA
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
 : 19 3 13 Re
 : 23 6 18 gá

@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2078
-#ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_VOLUME:0,69
 #ALLKARAOKE_OLDVOLUME:0,86
 #P1:Exit Music (For A Film)
 #MP3:Radiohead - Exit Music (For A Film).mp3

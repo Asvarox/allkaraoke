@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=189822
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28850
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,81
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Coma - Lipiec.mp3
 #COVER:Coma - Lipiec [CO].jpg

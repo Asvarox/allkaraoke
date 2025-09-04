@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:187
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=X%20Japan&cancion=Forever%20Love
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,86
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:X Japan - Forever Love.mp3
 #COVER:X Japan - Forever Love [CO].jpg

@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29196
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=16132
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Bullet For My Valentine - Cries In Vain.mp3
 : 23 11 19 Lord 

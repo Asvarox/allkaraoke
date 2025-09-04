@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=10828
-#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,72
 #P1:Kill All Your Friends
 #MP3:My Chemical Romance - Kill All Your Friends.mp3

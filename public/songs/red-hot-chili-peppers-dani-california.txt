@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Dani%20California
+#ALLKARAOKE_VOLUME:0,76
 : 26 2 11 Get
 : 29 4 11 ting 
 : 34 2 11 born

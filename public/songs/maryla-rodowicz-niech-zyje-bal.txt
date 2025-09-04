@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2938
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
 #MP3:Maryla Rodowicz - Niech żyje bal.mp3
 : 20 8 -6 Ży

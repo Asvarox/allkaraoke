@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Ciega%2C%20sordomuda
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,6
 : 16 2 20 Se 
 : 20 2 20 me a

@@ -10,7 +10,7 @@
 #ALLKARAOKE_LASTUPDATE:2024-02-13T05:38:33.160Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:100
-#ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,68
 #MP3:Backstreet Boys - Quit playing games (with my heart).mp3
 #COVER:Backstreet Boys - Quit playing games (with my heart) [CO].jpg

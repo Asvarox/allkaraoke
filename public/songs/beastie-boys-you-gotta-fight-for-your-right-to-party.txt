@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:134
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)
+#ALLKARAOKE_VOLUME:0,8
 : 18 4 13 Kick 
 : 23 4 11 it!
 - 45 271

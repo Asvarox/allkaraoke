@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=18450
-#ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_VOLUME:0,65
 #ALLKARAOKE_OLDVOLUME:0,73
 #MP3:Arctic Monkeys - R U Mine?.mp3
 #START:24.0

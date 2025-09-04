@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=302
 #ALLKARAOKE_REALBPM:91
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2391
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,79
 #ALLKARAOKE_OLDVOLUME:0,8
 #P1:Can't Stop
 #MP3:Red Hot Chili Peppers - Can’t Stop.mp3

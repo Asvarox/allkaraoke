@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=148686
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24662
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Motionless In White - Brand New Numb.mp3
 F 17 1 0 I’m 

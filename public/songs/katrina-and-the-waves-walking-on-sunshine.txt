@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,9
 F 15 3 70 Ow
 - 18 78

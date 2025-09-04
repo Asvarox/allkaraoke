@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Ska-P&cancion=El%20vals%20del%20obrero
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,77
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Ska-P - El vals del obrero.mp3
 #COVER:Ska-P - El vals del obrero [CO].jpg

@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,81
 : 0 7 52 I'm
 : 8 7 52  not

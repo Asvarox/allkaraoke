@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=11532
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Five Finger Death Punch - Hard To See.mp3
 : 15 5 23 I’m 

@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=161112
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25355
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Yorushika - Rain and Cappuccino (Ame to Cappuccino).mp3
 : 27 6 10 Ha

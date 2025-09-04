@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=36923
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=13636
-#ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,86
 #MP3:Queen - Save Me.mp3
 #START:7.0

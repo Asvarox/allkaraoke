@@ -15,7 +15,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29384
 #ALLKARAOKE_PREVIEWEND:93
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Houshou Marine feat. Gawr Gura - SHINKIRO.mp3
 #COVER:Houshou Marine feat. Gawr Gura - SHINKIRO [CO].jpg

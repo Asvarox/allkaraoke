@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=D9G1VOjN_84
-#ALLKARAOKE_VOLUME:0,64
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,64
 #COVER:Imagine Dragons x JID - Enemy.jpg
 #MP3:Imagine Dragons x JID - Enemy.mp3

@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=The%20Scientist
+#ALLKARAOKE_VOLUME:0,59
 : 19 6 5 Come 
 : 27 3 7 up 
 : 34 6 5 to 

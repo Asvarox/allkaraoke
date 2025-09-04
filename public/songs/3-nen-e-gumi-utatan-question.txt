@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:177
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=3-nen%20E-gumi%20Utatan&cancion=QUESTION%20(TV)
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
 #P1:Question
 #COVER:3-nen E-gumi Utatan - QUESTION (TV).jpg

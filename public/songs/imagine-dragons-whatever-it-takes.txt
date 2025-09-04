@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:68
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Whatever%20It%20Takes
+#ALLKARAOKE_VOLUME:0,55
 : 0 1 8 Fall
 : 2 1 8 ing
 : 4 3 8  too

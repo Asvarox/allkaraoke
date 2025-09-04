@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
 : 25 7 22 Ooh
 : 33 22 20 ~,

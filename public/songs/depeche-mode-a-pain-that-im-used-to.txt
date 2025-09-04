@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=A%20Pain%20that%20I%27m%20used%20to
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,63
 #ALLKARAOKE_OLDVOLUME:0,5
 #COVER:Depeche Mode - A Pain that I'm used to.jpg
 #MP3:Depeche Mode - A Pain that I'm used to.mp3

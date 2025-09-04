@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=32454
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=17829
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,9
 #MP3:ClariS - CLICK (TV).mp3
 : 5 5 5 Ki

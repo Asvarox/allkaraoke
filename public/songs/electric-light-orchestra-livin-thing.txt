@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=asb
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,75
 #COVER:Electric Light Orchestra - Livin' Thing [CO].jpg
 #MP3:Electric Light Orchestra - Livin' Thing.mp3

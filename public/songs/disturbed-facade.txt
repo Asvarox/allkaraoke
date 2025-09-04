@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=172
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8159
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Disturbed - Façade.mp3
 : 18 4 3 No 

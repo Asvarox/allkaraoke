@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira%20y%20Alejandro%20Sanz&cancion=La%20tortura
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,99
 #ALLKARAOKE_OLDVOLUME:0,5
 F 13 1 16 Ay 
 F 15 1 16 pa

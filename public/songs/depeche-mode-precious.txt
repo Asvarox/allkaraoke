@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Depeche%20Mode&cancion=Precious
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,79
 #ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Depeche Mode - Precious.mp3
 #COVER:Depeche Mode - Precious.jpg

@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:165
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?idioma=ko&orden=9
-#ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_VOLUME:0,59
 #ALLKARAOKE_OLDVOLUME:0,65
 #P1:Easy
 #MP3:LE SSERAFIM - EASY.mp3

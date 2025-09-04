@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know
-#ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,83
 : 17 3 19 Now 
 : 21 3 21 and 

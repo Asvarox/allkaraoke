@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8481
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=5707
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Garth Brooks - Friends In Low Places.mp3
 : 15 3 16 Blame 

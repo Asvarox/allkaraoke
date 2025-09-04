@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=174695
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28468
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:0,7
 #ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Eagles - The Long Run.mp3
 #COVER:Eagles - The Long Run [CO].jpg

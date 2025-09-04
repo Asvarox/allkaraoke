@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:85
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Waiting%20for%20the%20end
+#ALLKARAOKE_VOLUME:0,57
 - -26 1
 - 1
 F 27 8 17 Yeah

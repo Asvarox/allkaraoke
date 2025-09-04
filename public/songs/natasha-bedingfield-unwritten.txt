@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Natasha%20Bedingfield&cancion=Unwritten
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,78
 : 22 5 17 I 
 * 28 10 15 am 

@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:145
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15471
 #ALLKARAOKE_PREVIEWEND:45
+#ALLKARAOKE_VOLUME:1
 : 0 2 2 Gdy 
 : 2 1 2 wyz
 : 4 2 2 wa

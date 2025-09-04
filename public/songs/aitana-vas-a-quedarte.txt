@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://www.youtube.com/@AitanaVEVO
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=24324
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Aitana - Vas a quedarte.mp3
 : 14 2 -1 Yo 

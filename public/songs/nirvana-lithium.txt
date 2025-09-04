@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Lithium
-#ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_VOLUME:0,57
 #ALLKARAOKE_OLDVOLUME:0,62
 : 16 5 54 I'm 
 : 24 5 54 so 

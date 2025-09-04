@@ -14,7 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Alive
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
 F 23 9 36 Wah
 - 55 412

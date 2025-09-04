@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=sRxrwjOtIag&feature=youtu.be
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Taylor Swift - All Too Well (10 Minute Version).mp3
 #COVER:Taylor Swift - All Too Well (10 Minute Version) [CO].jpg
