@@ -684,6 +684,62 @@
     "local": false
   },
   {
+    "id": "3t-anything",
+    "title": "Anything",
+    "artist": "3T",
+    "video": "EBoX-wYhs-U",
+    "language": [
+      "English"
+    ],
+    "bpm": 264.1,
+    "gap": 52.033320711851616,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:39.098Z",
+    "genre": "R&B",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "3T - Anything",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 5087,
+    "tracksCount": 1,
+    "search": "3tanything",
+    "local": false
+  },
+  {
+    "id": "3t-i-need-you",
+    "title": "I Need You",
+    "artist": "3T",
+    "video": "D86ye9nCBLM",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 15228.095238095239,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:39.240Z",
+    "genre": "R&B",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "3T - I Need You",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5088,
+    "tracksCount": 1,
+    "search": "3tineedyou",
+    "local": false
+  },
+  {
     "id": "4-non-blondes-whats-up",
     "title": "What’s Up?",
     "artist": "4 Non Blondes",
@@ -1945,7 +2001,7 @@
     "gap": 19116.40378021243,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-03T00:11:41.940Z",
+    "lastUpdate": "2025-09-01T07:24:19.402Z",
     "genre": "Soft Rock",
     "realBpm": 29,
     "volume": 0.5,
@@ -1973,7 +2029,7 @@
     "gap": 34210.33892936332,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-03T00:11:41.304Z",
+    "lastUpdate": "2025-09-01T07:22:52.667Z",
     "edition": "2",
     "genre": "Pop",
     "realBpm": 9,
@@ -2002,7 +2058,7 @@
     "gap": 7936.375755568436,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-03T00:11:41.938Z",
+    "lastUpdate": "2025-09-01T07:23:42.770Z",
     "edition": "New",
     "genre": "Synth-Pop, New Wave, Dance-Pop, New Pop",
     "realBpm": 100,
@@ -2031,7 +2087,7 @@
     "gap": 29688.095238095237,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-03T00:11:41.942Z",
+    "lastUpdate": "2025-09-01T07:25:30.371Z",
     "genre": "Alternative Rock",
     "realBpm": 88,
     "volume": 0.5,
@@ -2243,6 +2299,34 @@
     "shortId": 74,
     "tracksCount": 1,
     "search": "aceofbaseallthatshewants",
+    "local": false
+  },
+  {
+    "id": "ace-of-base-life-is-a-flower",
+    "title": "Life Is A Flower",
+    "artist": "Ace of Base",
+    "video": "sdc_6YvJfFo",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.75,
+    "gap": 9084.547461368653,
+    "year": "1998",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-09-05T00:12:37.872Z",
+    "genre": "Pop",
+    "realBpm": 52,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "Ace of Base - Life Is A Flower",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5079,
+    "tracksCount": 1,
+    "search": "aceofbaselifeisaflower",
     "local": false
   },
   {
@@ -19840,6 +19924,33 @@
     "shortId": 684,
     "tracksCount": 2,
     "search": "bradleycooperladygagashallow",
+    "local": false
+  },
+  {
+    "id": "bran-van-astounded",
+    "title": "Astounded",
+    "artist": "Bran Van",
+    "video": "eCybcwSaZks",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 13900,
+    "year": "2001",
+    "lastUpdate": "2025-09-05T00:12:37.878Z",
+    "genre": "Pop",
+    "realBpm": 6,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Bran Van 3000 feat. Curtis Mayfield - Astounded",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5080,
+    "tracksCount": 1,
+    "search": "branvanastounded",
     "local": false
   },
   {
@@ -42927,6 +43038,34 @@
     "local": false
   },
   {
+    "id": "emf-unbelievable",
+    "title": "Unbelievable",
+    "artist": "EMF",
+    "video": "sfCLt0kTd5E",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 12890.384615384615,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:38.943Z",
+    "genre": "Rock",
+    "realBpm": 65,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "EMF - Unbelievable",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5086,
+    "tracksCount": 1,
+    "search": "emfunbelievable",
+    "local": false
+  },
+  {
     "id": "emilia-rodriguez-lupica-damelo-damelo-damelo",
     "title": "Dámelo, dámelo, dámelo",
     "artist": "Emilia Rodríguez Lupica",
@@ -63476,6 +63615,34 @@
     "local": false
   },
   {
+    "id": "joss-stone-super-duper-love-are-you-diggin-on-me-pt-1",
+    "title": "Super Duper Love (Are You Diggin’ On Me?) Pt. 1",
+    "artist": "Joss Stone",
+    "video": "g03JgYdf45I",
+    "language": [
+      "English"
+    ],
+    "bpm": 376,
+    "gap": 9942.659574468085,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:38.941Z",
+    "genre": "Soul",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Joss Stone - Super Duper Love (Are You Diggin’ On Me?) Pt. 1",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5085,
+    "tracksCount": 1,
+    "search": "jossstonesuperduperloveareyoudigginonmept1",
+    "local": false
+  },
+  {
     "id": "jostars-tommycodajin-jojo-sono-chi-no-kioku-end-of-the-world",
     "title": "Jojo - Sono Chi no Kioku ~end of THE WORLD~",
     "artist": "JO☆STARS ~TOMMY,Coda,JIN~",
@@ -82806,6 +82973,62 @@
     "local": false
   },
   {
+    "id": "marvin-gaye-kim-weston-it-takes-two",
+    "title": "It Takes Two",
+    "artist": "Marvin Gaye & Kim Weston",
+    "video": "URU-gWAOlDM",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.35,
+    "gap": 6717.6834823688205,
+    "year": "1966",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-05T00:12:40.221Z",
+    "genre": "R&B",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "sourceUrl": "Marvin Gaye & Kim Weston - It Takes Two",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5098,
+    "tracksCount": 1,
+    "search": "marvingayekimwestonittakestwo",
+    "local": false
+  },
+  {
+    "id": "marvin-gaye-lets-get-it-on",
+    "title": "Let’s Get It On",
+    "artist": "Marvin Gaye",
+    "video": "RuG3aiTznQA",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.50000000000006,
+    "gap": 1956.2398500936915,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:40.218Z",
+    "genre": "R&B",
+    "realBpm": 50,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Marvin Gaye - Let’s Get It On",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5096,
+    "tracksCount": 1,
+    "search": "marvingayeletsgetiton",
+    "local": false
+  },
+  {
     "id": "marvin-gaye-sexual-healing",
     "title": "Sexual Healing",
     "artist": "Marvin Gaye",
@@ -82869,6 +83092,34 @@
     "local": false
   },
   {
+    "id": "marvin-gaye-whats-going-on",
+    "title": "What’s Going On",
+    "artist": "Marvin Gaye",
+    "video": "KDK7TiEiMOI",
+    "language": [
+      "English"
+    ],
+    "bpm": 199.8,
+    "gap": 16525,
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:40.220Z",
+    "genre": "R&B, Soul",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Marvin Gaye - What’s Going On",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5097,
+    "tracksCount": 1,
+    "search": "marvingayewhatsgoingon",
+    "local": false
+  },
+  {
     "id": "mary-j-blige-family-affair",
     "title": "Family Affair",
     "artist": "Mary J. Blige",
@@ -82921,6 +83172,34 @@
     "shortId": 2871,
     "tracksCount": 1,
     "search": "maryroospinocchio",
+    "local": false
+  },
+  {
+    "id": "mary-wells-my-guy",
+    "title": "My Guy",
+    "artist": "Mary Wells",
+    "video": "Y9Bau0Lu8eg",
+    "language": [
+      "English"
+    ],
+    "bpm": 249,
+    "gap": 7455.903614457831,
+    "year": "1964",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:40.222Z",
+    "genre": "Soul",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Mary Wells - My Guy",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5099,
+    "tracksCount": 1,
+    "search": "marywellsmyguy",
     "local": false
   },
   {
@@ -83860,6 +84139,34 @@
     "shortId": 2904,
     "tracksCount": 1,
     "search": "megurinelukalukalukanightfever",
+    "local": false
+  },
+  {
+    "id": "mel-kim-respectable",
+    "title": "Respectable",
+    "artist": "Mel & Kim",
+    "video": "ykDsmAqExH8",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 21801.774193548386,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:39.917Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Mel & Kim - Respectable",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5094,
+    "tracksCount": 1,
+    "search": "melkimrespectable",
     "local": false
   },
   {
@@ -98703,6 +99010,33 @@
     "local": false
   },
   {
+    "id": "paul-mccartney-we-all-stand-together",
+    "title": "We All Stand Together",
+    "artist": "Paul McCartney",
+    "video": "gVfaf43W9cM",
+    "language": [
+      "English"
+    ],
+    "bpm": 191.90000000000046,
+    "gap": 46425,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:38.598Z",
+    "realBpm": 106,
+    "volume": 0.5,
+    "author": "ears",
+    "sourceUrl": "Paul McCartney and the Frog Chorus - We All Stand Together",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5081,
+    "tracksCount": 1,
+    "search": "paulmccartneyweallstandtogether",
+    "local": false
+  },
+  {
     "id": "paul-simon-you-can-call-me-al",
     "title": "You Can Call Me Al",
     "artist": "Paul Simon",
@@ -102396,6 +102730,34 @@
     "local": false
   },
   {
+    "id": "queen-crazy-little-thing-called-love",
+    "title": "Crazy Little Thing Called Love",
+    "artist": "Queen",
+    "video": "zO6D_BAuYCI",
+    "language": [
+      "English"
+    ],
+    "bpm": 310.4,
+    "gap": 10425.180412371134,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:38.751Z",
+    "genre": "Rock",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "sgandtg",
+    "sourceUrl": "Queen - Crazy Little Thing Called Love",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5082,
+    "tracksCount": 1,
+    "search": "queencrazylittlethingcalledlove",
+    "local": false
+  },
+  {
     "id": "queen-david-bowie-under-pressure",
     "title": "Under Pressure",
     "artist": "Queen & David Bowie",
@@ -102481,6 +102843,34 @@
     "shortId": 3531,
     "tracksCount": 1,
     "search": "queendontstopmenow",
+    "local": false
+  },
+  {
+    "id": "queen-fat-bottomed-girls",
+    "title": "Fat Bottomed Girls",
+    "artist": "Queen",
+    "video": "VMnjF1O4eH0",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 6080,
+    "year": "1978",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-05T00:12:38.753Z",
+    "genre": "Rock",
+    "realBpm": 42,
+    "volume": 0.5,
+    "author": "REL",
+    "sourceUrl": "Queen - Fat Bottomed Girls",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5083,
+    "tracksCount": 1,
+    "search": "queenfatbottomedgirls",
     "local": false
   },
   {
@@ -105984,6 +106374,34 @@
     "shortId": 3649,
     "tracksCount": 1,
     "search": "rickastleytogetherforever",
+    "local": false
+  },
+  {
+    "id": "rick-james-super-freak",
+    "title": "Super Freak",
+    "artist": "Rick James",
+    "video": "QYHxGBH6o4M",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 14577.272727272728,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:40.366Z",
+    "genre": "Funk",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Rick James - Super Freak",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5100,
+    "tracksCount": 1,
+    "search": "rickjamessuperfreak",
     "local": false
   },
   {
@@ -116581,6 +116999,34 @@
     "local": false
   },
   {
+    "id": "smokey-robinson-the-miracles-the-tracks-of-my-tears",
+    "title": "The Tracks Of My Tears",
+    "artist": "Smokey Robinson & The Miracles",
+    "video": "BCwkZrj2VT4",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 16585.102040816328,
+    "year": "1965",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-05T00:12:40.551Z",
+    "genre": "Soul",
+    "realBpm": -30,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Smokey Robinson & The Miracles - The Tracks Of My Tears",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5101,
+    "tracksCount": 1,
+    "search": "smokeyrobinsonthemiraclesthetracksofmytears",
+    "local": false
+  },
+  {
     "id": "smokie-living-next-door-to-alice",
     "title": "Living Next Door To Alice",
     "artist": "Smokie",
@@ -123464,6 +123910,33 @@
     "local": false
   },
   {
+    "id": "texas-lightning-no-no-never",
+    "title": "No No Never",
+    "artist": "Texas Lightning",
+    "video": "XAaG0jalyjg",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 798.2644628099173,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-09-05T00:12:39.762Z",
+    "realBpm": 60,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Texas Lightning - No No Never",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5093,
+    "tracksCount": 1,
+    "search": "texaslightningnononever",
+    "local": false
+  },
+  {
     "id": "teya-salena-who-the-hell-is-edgar",
     "title": "Who The Hell Is Edgar",
     "artist": "Teya & Salena",
@@ -125546,6 +126019,33 @@
     "shortId": 4852,
     "tracksCount": 1,
     "search": "thechemicalbrotherssettingsun",
+    "local": false
+  },
+  {
+    "id": "the-church-the-unguarded-moment",
+    "title": "The Unguarded Moment",
+    "artist": "The Church",
+    "video": "Osz-GQbX37o",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 27357.352941176472,
+    "year": "1981",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-05T00:12:38.754Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "The Church - The Unguarded Moment",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5084,
+    "tracksCount": 1,
+    "search": "thechurchtheunguardedmoment",
     "local": false
   },
   {
@@ -134802,6 +135302,111 @@
     "local": false
   },
   {
+    "id": "us5-just-because-of-you",
+    "title": "Just Because Of You",
+    "artist": "US5",
+    "video": "v3bDSBhl4NI",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.64,
+    "gap": 3756.5879291362226,
+    "year": "2005",
+    "lastUpdate": "2025-09-05T00:12:39.390Z",
+    "realBpm": -21,
+    "volume": 0.5,
+    "author": "gaspar17",
+    "sourceUrl": "US5 - Just Because Of You",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5090,
+    "tracksCount": 1,
+    "search": "us5justbecauseofyou",
+    "local": false
+  },
+  {
+    "id": "us5-mama",
+    "title": "Mama",
+    "artist": "US5",
+    "video": "xoDH5STiuX0",
+    "language": [
+      "English"
+    ],
+    "bpm": 335.4,
+    "gap": 22446.100178890876,
+    "year": "2006",
+    "lastUpdate": "2025-09-05T00:12:39.244Z",
+    "realBpm": 14,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "US5 - Mama",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5089,
+    "tracksCount": 1,
+    "search": "us5mama",
+    "local": false
+  },
+  {
+    "id": "us5-maria",
+    "title": "Maria",
+    "artist": "US5",
+    "video": "9zlHmhBMX8Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 20515,
+    "year": "2005",
+    "lastUpdate": "2025-09-05T00:12:39.515Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "gaspar17",
+    "sourceUrl": "US5 - Maria",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5091,
+    "tracksCount": 1,
+    "search": "us5maria",
+    "local": false
+  },
+  {
+    "id": "us5-rhythm-of-life-shake-it-down",
+    "title": "Rhythm Of Life (Shake It Down)",
+    "artist": "US5",
+    "video": "LpKxT0Jz0Zk",
+    "language": [
+      "English"
+    ],
+    "bpm": 231.1,
+    "gap": 9286.395499783643,
+    "year": "2007",
+    "lastUpdate": "2025-09-05T00:12:39.636Z",
+    "genre": "Pop",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "Eggman",
+    "sourceUrl": "US5 - Rhythm Of Life (Shake It Down)",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5092,
+    "tracksCount": 1,
+    "search": "us5rhythmoflifeshakeitdown",
+    "local": false
+  },
+  {
     "id": "usa-for-africa-we-are-the-world",
     "title": "We Are the World",
     "artist": "USA for Africa",
@@ -139511,6 +140116,33 @@
     "shortId": 4763,
     "tracksCount": 1,
     "search": "yokotakahashizankokunatenshinoteze",
+    "local": false
+  },
+  {
+    "id": "yoomiii-a-kiss-is-all-i-miss",
+    "title": "A Kiss Is All I Miss",
+    "artist": "Yoomiii",
+    "video": "zwG2kgislXk",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 6029.2307692307695,
+    "year": "2006",
+    "lastUpdate": "2025-09-05T00:12:40.072Z",
+    "genre": "Pop",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Yoomiii - A Kiss Is All I Miss",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5095,
+    "tracksCount": 1,
+    "search": "yoomiiiakissisallimiss",
     "local": false
   },
   {
