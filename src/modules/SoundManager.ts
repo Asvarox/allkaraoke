@@ -24,7 +24,7 @@ class Sound {
       preload?: boolean;
     },
   ) {
-    if (global.Audio) {
+    if (globalThis.Audio) {
       this.sound = new Audio(options.src);
       this.sound.preload = options.preload ? 'auto' : 'none';
       this.sound.volume = options.volume ?? 1;

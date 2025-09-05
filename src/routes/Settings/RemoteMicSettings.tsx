@@ -48,7 +48,7 @@ function RemoteMicSettings() {
           if (code?.length === GAME_CODE_LENGTH - 1) {
             storeGameCode(code);
 
-            global.location.reload();
+            globalThis.location.reload();
           }
         }}>
         Remote Microphone Settings

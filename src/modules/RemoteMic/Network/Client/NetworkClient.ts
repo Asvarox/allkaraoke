@@ -98,7 +98,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
           this.connect(lcRoomId, name, silent);
           return;
         }
-        global.removeEventListener('beforeunload', this.disconnect);
+        globalThis.removeEventListener('beforeunload', this.disconnect);
 
         if (this.reconnecting) {
           events.karaokeConnectionStatusChange.dispatch('reconnecting');
@@ -155,7 +155,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     posthog.capture('remote_mic_connection_successful', { transport: this.roomId?.charAt(0) });
     this.sendEvent('register', { name, id: this.clientId!, silent, lag: RemoteMicrophoneLagSetting.get() });
     this.ping();
-    global?.addEventListener('beforeunload', this.disconnect);
+    globalThis?.addEventListener('beforeunload', this.disconnect);
 
     this.transport!.addListener((data) => {
       const type = data.t;
@@ -173,11 +173,11 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       } else if (type === 'keyboard-layout') {
         events.remoteKeyboardLayout.dispatch(data.help);
       } else if (type === 'reload-mic') {
-        global.removeEventListener('beforeunload', this.disconnect);
+        globalThis.removeEventListener('beforeunload', this.disconnect);
         this.sendEvent('unregister');
         storage.session.setItem('reload-mic-request', '1');
         document.getElementById('phone-ui-container')?.remove();
-        global.location?.reload();
+        globalThis.location?.reload();
       } else if (type === 'request-readiness') {
         events.remoteReadinessRequested.dispatch();
       } else if (type === 'pong') {

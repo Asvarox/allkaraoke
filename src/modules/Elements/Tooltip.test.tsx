@@ -13,7 +13,7 @@ describe('Tooltip', () => {
 
   describe('ClosableTooltip', () => {
     beforeEach(() => {
-      global.localStorage.clear();
+      globalThis.localStorage.clear();
     });
 
     afterEach(() => {

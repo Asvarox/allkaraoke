@@ -136,7 +136,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
-    global.__songList = {
+    globalThis.__songList = {
       scrollToSong: (songId: string) => {
         // If the song is in a new group, we need to remove the '-new-group' suffix
         const [cleanSongId] = songId.split('-new-group');
@@ -154,7 +154,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     };
 
     return () => {
-      delete global.__songList;
+      delete globalThis.__songList;
     };
   }, [groupedSongList]);
 

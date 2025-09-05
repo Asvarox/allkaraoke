@@ -33,8 +33,8 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
     try {
       if (!isDev() && autoEnableFullscreen) {
         await document.body.requestFullscreen();
-        global.screen.orientation.unlock();
-        await global.screen.orientation.lock?.('portrait');
+        globalThis.screen.orientation.unlock();
+        await globalThis.screen.orientation.lock?.('portrait');
       }
     } catch (e) {
       console.warn(e);

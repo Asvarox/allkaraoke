@@ -30,7 +30,7 @@ export class GameEvent<T extends (...args: any[]) => void> {
   };
 
   public dispatch = (...args: Parameters<T>) => {
-    this.log && console.log('dispatch', this.name, ...args);
+    // this.log && console.log('dispatch', this.name, ...args);
     this.subscribers.forEach((callback) => callback(...args));
     this.lastParams = args;
 

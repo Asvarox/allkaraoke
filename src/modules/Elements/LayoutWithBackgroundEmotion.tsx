@@ -51,7 +51,7 @@ const EscBar = styled.div`
   }
 `;
 
-export const EurovisionTheme = () => <EscBar data-animate={!global.location?.href.includes('/remote-mic')} />;
+export const EurovisionTheme = () => <EscBar data-animate={!globalThis.location?.href.includes('/remote-mic')} />;
 
 const christmasCss = css`
   background-image: linear-gradient(

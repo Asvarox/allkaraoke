@@ -10,8 +10,8 @@ function SuggestMobilePhone() {
     try {
       setMobilePhoneMode(true);
       await document.body.requestFullscreen();
-      global.screen.orientation.unlock();
-      await global.screen.orientation.lock?.('landscape');
+      globalThis.screen.orientation.unlock();
+      await globalThis.screen.orientation.lock?.('landscape');
     } catch (e) {
       console.info(e);
     }

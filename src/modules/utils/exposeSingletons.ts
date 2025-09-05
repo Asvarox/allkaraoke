@@ -36,13 +36,13 @@ declare global {
   var __singletons: typeof singletons;
 }
 
-global.__exposeSingletons = () => {
-  global.__singletons = singletons;
+globalThis.__exposeSingletons = () => {
+  globalThis.__singletons = singletons;
 };
 
 if (process.env.NODE_ENV === 'development') {
-  global.__exposeSingletons();
-  console.log(global.__singletons);
+  globalThis.__exposeSingletons();
+  console.log(globalThis.__singletons);
 } else {
-  console.log(`Run global.__exposeSingletons() and inspect global.__singletons for debugging`);
+  console.log(`Run globalThis.__exposeSingletons() and inspect globalThis.__singletons for debugging`);
 }

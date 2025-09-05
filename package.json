@@ -75,7 +75,8 @@
     "video-render": "remotion render src/videos/index.ts UpdateVideo out/video.mp4",
     "unimported": "unimported",
     "types-check": "tsc --noEmit",
-    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check"
+    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check",
+    "test:browser": "vitest --config=vitest.browser.config.ts"
   },
   "browserslist": {
     "production": [
@@ -117,6 +118,7 @@
     "@types/html-minifier-terser": "^7.0.2",
     "@types/latinize": "^0.2.18",
     "@types/node": "^22.12.0",
+    "@types/pngjs": "^6.0.5",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@types/react-helmet": "^6.1.11",
@@ -128,6 +130,7 @@
     "@vitejs/plugin-basic-ssl": "^2.1.0",
     "@vitejs/plugin-react": "^4.6.0",
     "@vitejs/plugin-react-oxc": "^0.3.0",
+    "@vitest/browser": "^3.2.4",
     "@vitest/ui": "3.2.4",
     "@welldone-software/why-did-you-render": "^10.0.1",
     "babel-plugin-react-compiler": "19.0.0-beta-e552027-20250112",
@@ -149,8 +152,10 @@
     "node-fetch": "^3.3.2",
     "npm-run-all": "^4.1.5",
     "peer": "^1.0.2",
+    "pixelmatch": "^7.1.0",
     "playwright": "^1.53.1",
     "playwright-core": "^1.53.1",
+    "pngjs": "^7.0.0",
     "postcss": "^8.4.47",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
@@ -169,6 +174,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
+    "vitest-browser-react": "^1.0.1",
     "wrangler": "^3.106.0"
   },
   "homepage": "./",

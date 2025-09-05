@@ -4,14 +4,14 @@ class DummyInput implements InputInterface {
   private frequencies: [number, number] = [410, 210];
   private volumes: [number, number] = [1, 1];
   private timestamp = 0;
-  private interval: ReturnType<typeof global.setInterval> | null = null;
+  private interval: ReturnType<typeof globalThis.setInterval> | null = null;
 
   private isMonitoring = false;
 
   public startMonitoring = async () => {
     if (this.isMonitoring) return;
     this.isMonitoring = true;
-    this.interval = global.setInterval(() => {
+    this.interval = globalThis.setInterval(() => {
       this.timestamp = this.timestamp + 32;
 
       const secPart = 0; // this.timestamp % 1000;
@@ -35,7 +35,7 @@ class DummyInput implements InputInterface {
     if (!this.isMonitoring) return;
     this.isMonitoring = false;
     if (this.interval) {
-      global.clearInterval(this.interval);
+      globalThis.clearInterval(this.interval);
     }
   };
 

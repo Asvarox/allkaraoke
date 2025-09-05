@@ -87,9 +87,53 @@ export default defineConfig({
   },
 
   test: {
-    include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    globals: true,
-    environment: 'happy-dom',
-    setupFiles: 'src/setupTests.ts',
+    projects: [
+      {
+        extends: true,
+        test: {
+          name: 'browser',
+          setupFiles: 'src/tests/setupTests.browser.ts',
+          include: ['src/**/*.browser.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+          browser: {
+            enabled: true,
+            provider: 'playwright',
+            viewport: { width: 1280, height: 720 },
+            locators: {
+              testIdAttribute: 'data-test',
+            },
+            // https://vitest.dev/guide/browser/playwright
+            instances: [
+              {
+                browser: 'chromium',
+                launch: {
+                  args: [
+                    '--no-sandbox',
+                    '--font-render-hinting=none', // https://github.com/microsoft/playwright/issues/20097
+                    '--mute-audio',
+                    '--allow-file-access-from-files',
+                    '--use-fake-ui-for-media-stream',
+                    '--use-fake-device-for-media-stream',
+                    '--use-file-for-fake-audio-capture=tests/fixtures/test-440hz.wav',
+                    !process.env.CI ? '--use-gl=egl' : '',
+                  ],
+                },
+              },
+            ],
+          },
+          globals: true,
+        },
+      },
+      {
+        extends: true,
+        test: {
+          name: 'unit',
+          include: ['src/**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+          exclude: ['src/**/*.browser.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+          globals: true,
+          environment: 'happy-dom',
+          setupFiles: 'src/tests/setupTests.ts',
+        },
+      },
+    ],
   },
 });

@@ -28,7 +28,7 @@ const CanvasTestApi = {
   CanvasDrawing,
 };
 
-global.canvasTestApi = CanvasTestApi;
+globalThis.canvasTestApi = CanvasTestApi;
 
 declare global {
   var canvasTestApi: typeof CanvasTestApi;

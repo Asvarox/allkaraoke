@@ -20,7 +20,7 @@ function RoomCode({ gameCode, ...props }: { gameCode: string }) {
 }
 
 function ConnectRemoteMic() {
-  const linkObject = new URL(global.location?.href);
+  const linkObject = new URL(globalThis.location?.href);
 
   // Validate if the component is rendered in a remote mic or in the "main" game via the URL
   const [match] = useRoute('remote-mic');

@@ -13,7 +13,7 @@ const list: SongPreview[] = [
 
 describe('useSongListFilter', () => {
   beforeEach(() => {
-    global.location.search = '?playlist=All';
+    globalThis.location.search = '?playlist=All';
   });
   it('should return filtered list', () => {
     const { result } = renderHook(() => useSongListFilter(list, [], false, null));

@@ -32,7 +32,7 @@ export class NetworkServer {
       }
     }
 
-    global?.addEventListener?.('beforeunload', () => {
+    globalThis?.addEventListener?.('beforeunload', () => {
       RemoteMicManager.getRemoteMics().forEach((remoteMic) => remoteMic.connection.close());
       this.transport?.disconnect();
     });

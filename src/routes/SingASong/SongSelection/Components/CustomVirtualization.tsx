@@ -85,7 +85,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
-      const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
+      const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? globalThis.innerHeight;
       const firstVisibleItem = itemsPositions.findIndex((item) => item.bottom > scrollTop - props.overScan);
       // todo subtract item height from bottom
       const lastVisibleItem = itemsPositions.findIndex(

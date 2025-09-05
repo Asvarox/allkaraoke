@@ -14,7 +14,7 @@ test('Should draw a proper note when it is shorter than minimum', async ({ mount
 
   await page.evaluate(
     ([playerNote]) => {
-      const { drawPlayerNote } = global.canvasTestApi.Elements;
+      const { drawPlayerNote } = globalThis.canvasTestApi.Elements;
       const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
       const ctx = canvas.getContext('2d')!;
 
@@ -37,7 +37,7 @@ test('Should draw multiple notes', async ({ mount, page }) => {
 
   await page.evaluate(
     ([playerNote]) => {
-      const { drawPlayerNote } = global.canvasTestApi.Elements;
+      const { drawPlayerNote } = globalThis.canvasTestApi.Elements;
       const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
       const ctx = canvas.getContext('2d')!;
 

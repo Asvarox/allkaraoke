@@ -7,7 +7,7 @@ declare global {
 
 export const MicInputCtStory = () => {
   useEffect(() => {
-    global.micInput = MicInput;
+    globalThis.micInput = MicInput;
   }, []);
   return (
     <div>
