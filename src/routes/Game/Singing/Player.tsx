@@ -16,6 +16,8 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoP
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import usePrevious from 'modules/hooks/usePrevious';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
 import GameState from '../../../modules/GameEngine/GameState/GameState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
@@ -76,6 +78,7 @@ function Player({
   ref,
   ...restProps
 }: Props) {
+  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const player = useRef<VideoPlayerRef | null>(null);
   const [pauseMenuVisible, setPauseMenuVisible] = useState(false);
 
@@ -201,7 +204,7 @@ function Player({
           controls={showControls}
           autoplay={autoplay}
           disablekb={process.env.NODE_ENV !== 'development'}
-          volume={song.volume}
+          volume={newVolumeFFEnabled ? song.volume ?? song.manualVolume : song.manualVolume}
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
         />

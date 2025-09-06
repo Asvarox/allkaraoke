@@ -11,6 +11,7 @@ import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
 import escSongs from './escSongs.json';
 // @ts-ignore file might not exist
 import songIndex from '../public/songs/index.json';
+// @ts-ignore file might not exist
 import scrapedBpmData from './scraped-bpm-data.json';
 
 // @ts-expect-error
