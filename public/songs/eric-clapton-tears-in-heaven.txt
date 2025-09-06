@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Eric%20Clapton&cancion=Tears%20in%20Heaven
+#ALLKARAOKE_VOLUME:1
 : 20 6 13 Would 
 : 28 4 9 you 
 : 36 1 14 know

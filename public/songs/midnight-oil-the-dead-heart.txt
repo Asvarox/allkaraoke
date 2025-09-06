@@ -13,7 +13,8 @@
 #ALLKARAOKE_ARTISTORIGIN:AU
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Midnight Oil - The Dead Heart
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Midnight Oil - The Dead Heart.mp3
 #COVER:Midnight Oil - The Dead Heart [CO].jpg
 #BACKGROUND:Midnight Oil - The Dead Heart [BG].jpg

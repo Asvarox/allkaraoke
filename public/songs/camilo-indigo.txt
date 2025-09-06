@@ -16,7 +16,8 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=DriCCFRQlj8
 #ALLKARAOKE_PREVIEWEND:202
-#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_OLDVOLUME:0,7
 #MP3:Camilo y Evaluna Montaner - Índigo.mp3
 #COVER:Camilo y Evaluna Montaner - Índigo [CO].jpg
 #BACKGROUND:Camilo y Evaluna Montaner - Índigo [BG].jpg

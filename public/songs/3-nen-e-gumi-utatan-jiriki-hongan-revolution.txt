@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:180
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=3-nen%20E-Gumi%20Utatan&cancion=Jiriki%20Hongan%20Revolution%20(TV)
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 #P1:Jiriki Hongan Revolution
 #MP3:3-nen E-Gumi Utatan - Jiriki Hongan Revolution (TV).mp3
 #COVER:3-nen E-Gumi Utatan - Jiriki Hongan Revolution (TV).jpg

@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Garou&cancion=Seul
+#ALLKARAOKE_VOLUME:1
 : 21 9 2 Tant 
 : 34 2 2 de 
 : 38 16 2 fois 

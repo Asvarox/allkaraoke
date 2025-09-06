@@ -16,7 +16,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,63
+#ALLKARAOKE_OLDVOLUME:0,74
 : 26 3 17 You 
 : 30 3 19 and 
 : 36 21 17 me

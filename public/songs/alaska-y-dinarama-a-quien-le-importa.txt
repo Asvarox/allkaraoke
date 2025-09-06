@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alaska%20y%20Dinarama&cancion=A%20qui%C3%A9n%20le%20importa
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 17 3 59 La 
 : 21 3 59 gen
 : 25 3 60 te 

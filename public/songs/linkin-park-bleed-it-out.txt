@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out
+#ALLKARAOKE_VOLUME:0,56
 - -25 1
 - 1
 F 26 5 0 Yeah 

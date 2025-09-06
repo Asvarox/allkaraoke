@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Akcent&cancion=Przez%20Twe%20oczy%20zielone
+#ALLKARAOKE_VOLUME:0,5
 : 18 2 -7 Od
 : 22 2 -7 kąd 
 : 26 3 -7 zo

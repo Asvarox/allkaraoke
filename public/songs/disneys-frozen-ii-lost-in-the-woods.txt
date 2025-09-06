@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=23976
 #ALLKARAOKE_PREVIEWEND:84
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:lostinthewoods
 #MP3:Disney’s Frozen II (Jonathan Groff) - Lost In The Woods.mp3
 : 20 3 8 A

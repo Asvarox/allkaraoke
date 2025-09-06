@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:72
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22418
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Duncan Laurence - Arcade.mp3
 : 19 1 9 A 
 : 24 1 9 bro

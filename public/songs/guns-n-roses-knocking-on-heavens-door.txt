@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:66
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Knocking%20On%20Heavens%20Door
+#ALLKARAOKE_VOLUME:0,72
 : 0 47 6 Uh
 : 48 8 6 ~
 : 57 21 5 ~

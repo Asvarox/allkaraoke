@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Even%20Flow
+#ALLKARAOKE_VOLUME:0,91
 : 27 29 18 Freez
 : 59 21 12 ing
 : 81 3 11 ~

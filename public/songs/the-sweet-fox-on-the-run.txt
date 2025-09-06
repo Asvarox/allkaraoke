@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=11362
 #ALLKARAOKE_PREVIEWEND:78
 #ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,95
 #P1:Fox On The Run
 #MP3:The Sweet - Fox On The Run.mp3
 : 17 11 18 I

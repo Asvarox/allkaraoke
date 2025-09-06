@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=125
 #ALLKARAOKE_REALBPM:151
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=1843
-#ALLKARAOKE_VOLUME:0,88
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,88
 #P1:Forest
 #MP3:System of a Down - Forest.mp3
 : 20 5 0 Walk 

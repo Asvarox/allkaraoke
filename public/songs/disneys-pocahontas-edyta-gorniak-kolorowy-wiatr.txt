@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=180336
 #ALLKARAOKE_REALBPM:91
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=26438
+#ALLKARAOKE_VOLUME:1
 - 0 1
 - 1
 : 23 2 9 Ty 

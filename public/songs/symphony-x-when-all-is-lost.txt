@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=linxstrife
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Symphony+X
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_OLDVOLUME:0,91
 #MP3:Symphony X - When All Is Lost.mp3
 #COVER:Symphony X - When All Is Lost.jpg
 #MEDLEYSTARTBEAT:2262

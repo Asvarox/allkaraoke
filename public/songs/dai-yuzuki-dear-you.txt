@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=24778
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:dai, Yuzuki - Dear You.mp3
 : 23 15 15 A
 : 39 3 17 na

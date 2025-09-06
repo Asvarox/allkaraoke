@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=volodia
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Reel%202%20Real&cancion=I%20like%20to%20move%20it
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Reel 2 Real - I like to move it.mp3
 #COVER:Reel 2 Real - I like to move it.jpg
 #MEDLEYSTARTBEAT:1145

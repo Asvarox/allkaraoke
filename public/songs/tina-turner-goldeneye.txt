@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2599
+#ALLKARAOKE_VOLUME:1
 : 14 3 0 See 
 : 18 3 -2 re
 : 22 3 -4 flec

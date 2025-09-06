@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=124518
 #ALLKARAOKE_REALBPM:154
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=20731
+#ALLKARAOKE_VOLUME:0,56
 : 21 5 1 Guess 
 : 30 6 0 you're 
 : 38 4 0 rea

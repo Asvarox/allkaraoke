@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Have%20a%20nice%20day
+#ALLKARAOKE_VOLUME:0,5
 : 0 11 23 Why
 : 12 3 11  you
 : 17 5 13  wan

@@ -12,7 +12,8 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:34
 #ALLKARAOKE_SOURCEURL:https://youtu.be/t3uoUVi-QFE?si=FN4ko0q4d_j4ELLY
-#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Vicente Fernández - Mujeres divinas.mp3
 #COVER:Vicente Fernández - Mujeres divinas [CO].jpg
 #BACKGROUND:Vicente Fernández - Mujeres divinas [BG].jpg

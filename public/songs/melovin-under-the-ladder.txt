@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27220
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,57
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:MELOVIN - Under The Ladder (ESC 2018 Ukraine).mp3
 #COVER:MELOVIN - Under The Ladder (ESC 2018 Ukraine) [CO].jpg
 #BACKGROUND:MELOVIN - Under The Ladder (ESC 2018 Ukraine) [BG].jpg

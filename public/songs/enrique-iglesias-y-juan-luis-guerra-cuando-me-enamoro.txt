@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias%20y%20Juan%20Luis%20Guerra&cancion=Cuando%20me%20enamoro
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_OLDVOLUME:0,6
 F 17 21 13 uh
 F 39 4 13 ~
 F 44 7 13 ~

@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Caution
+#ALLKARAOKE_VOLUME:0,5
 : 24 1 11 Let 
 : 27 3 14 me 
 : 31 1 14 in

@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,78
 : 18 3 58 I 
 : 22 4 58 don't 
 : 30 5 58 care 

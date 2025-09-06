@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:147
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=8130
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:I wanna be like you
 #MP3:Disney’s The Jungle Book - I Wanna Be Like You [DUET].mp3
 : 15 1 19 A 

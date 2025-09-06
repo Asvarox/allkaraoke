@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=56581
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=13928
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Queen - It’s A Hard Life.mp3
 #START:6.0
 #END:249000

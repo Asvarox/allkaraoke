@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:51
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Rota
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,8
 : 18 11 -12 Nie 
 * 32 6 -7 rzu
 * 39 4 -5 cim 

@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167305
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25557
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:BONEZ MC & RAF Camora - 500 PS.mp3
 : 19 2 22 5
 : 23 2 21 0

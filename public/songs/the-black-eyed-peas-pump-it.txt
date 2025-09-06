@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Eyed%20Peas&cancion=Pump%20It
+#ALLKARAOKE_VOLUME:0,5
 : 20 4 69 Ha 
 : 36 4 69 ha 
 : 52 60 69 haa

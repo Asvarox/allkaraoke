@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=179304
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27545
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:ALIKA - Bridges.mp3
 #COVER:ALIKA - Bridges [CO].jpg
 #BACKGROUND:ALIKA - Bridges [BG].jpg

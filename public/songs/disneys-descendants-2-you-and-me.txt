@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_SOURCEURL:https://youtu.be/Q0kuJ3lPnPY?si=xZYfCSYk36uWeyCL
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Disney’s Descendants 2 - You And Me.mp3
 : 26 2 3 Loo
 : 31 1 -3 king 

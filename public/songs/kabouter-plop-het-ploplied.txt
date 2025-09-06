@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=31489
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9165
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Kabouter Plop - Het Ploplied.mp3
 : 16 7 17 Ik 
 : 24 5 17 ben 

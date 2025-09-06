@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6689
 #ALLKARAOKE_REALBPM:119
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14022
+#ALLKARAOKE_VOLUME:0,56
 : 16 10 6 Sail
 - 42 284
 - 284

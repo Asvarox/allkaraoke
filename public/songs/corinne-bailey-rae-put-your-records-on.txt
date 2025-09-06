@@ -15,7 +15,8 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=3867
 #ALLKARAOKE_PREVIEWEND:82
-#ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,99
 #MP3:Corinne Bailey Rae - Put Your Records On.mp3
 : 26 10 13 Three 
 : 40 3 13 lit

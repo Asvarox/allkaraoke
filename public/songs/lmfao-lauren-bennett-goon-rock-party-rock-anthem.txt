@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem
+#ALLKARAOKE_VOLUME:0,97
 F 17 2 24 Par
 F 21 2 24 ty 
 F 25 4 24 Rock

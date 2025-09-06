@@ -5,6 +5,8 @@ import { Menu } from 'modules/Elements/AKUI/Menu';
 import { MenuButton } from 'modules/Elements/Menu';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
 import { twc } from 'react-twc';
@@ -19,8 +21,11 @@ interface Props {
 type reportTypes = 'not-in-sync' | 'too-loud' | 'too-quiet' | 'bad-lyrics';
 
 export default function RateSong({ register, onExit, song }: Props) {
+  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const [issues, setIssues] = useState<reportTypes[]>([]);
+
+  const volume = newVolumeFFEnabled ? song?.volume ?? song?.manualVolume : song?.manualVolume;
 
   const toggleIssue = (issue: reportTypes) => {
     setIssues((current) => {
@@ -59,9 +64,7 @@ export default function RateSong({ register, onExit, song }: Props) {
   };
 
   const anySelected = issues.length > 0;
-  const isTooQuietDisabled = !!song?.volume && song.volume > 0.95;
-
-  console.log(song?.volume);
+  const isTooQuietDisabled = !!volume && volume > 0.95;
 
   return (
     <>

@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #ALLKARAOKE_REALBPM:121
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Sunny
+#ALLKARAOKE_VOLUME:0,5
 : 16 2 7 Sun
 : 20 1 5 ny
 : 22 3 7 ~

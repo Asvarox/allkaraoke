@@ -13,7 +13,8 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=24297
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_OLDVOLUME:0,85
 #P1:Thunderbirds are go
 #MP3:Busted - Thunderbirds Are Go!.mp3
 : 13 2 6 Spring 

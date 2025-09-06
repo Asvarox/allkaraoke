@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:160
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=23424
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Beethoven's Cunt
 #MP3:Serj Tankian - Beethoven’s Cunt.mp3
 : 44 7 -5 Bru

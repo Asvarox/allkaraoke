@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 25 6 20 Ri
 : 33 7 20 cky 
 : 42 6 18 was 

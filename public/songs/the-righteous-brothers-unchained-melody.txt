@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Zv8czIoAw5w
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:The Righteous Brothers - Unchained Melody.mp3
 : 18 42 12 Whoa 
 : 62 13 16 my

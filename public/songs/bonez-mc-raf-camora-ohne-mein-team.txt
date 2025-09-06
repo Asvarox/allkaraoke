@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167305
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28547
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:BONEZ MC & RAF Camora - Ohne mein Team.mp3
 #COVER:BONEZ MC & RAF Camora - Ohne mein Team [CO].jpg
 #BACKGROUND:BONEZ MC & RAF Camora - Ohne mein Team [BG].jpg

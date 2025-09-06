@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gorillaz&cancion=Feel%20Good%20Inc.
+#ALLKARAOKE_VOLUME:1
 : 18 4 65 Feel
 : 26 4 63  good
 - 45 63

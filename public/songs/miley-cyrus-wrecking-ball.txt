@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball
+#ALLKARAOKE_VOLUME:0,65
 : 0 1 7 We
 : 2 2 9 ~
 : 8 5 2  claiwed,

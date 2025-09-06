@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=160643
 #ALLKARAOKE_REALBPM:143
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28599
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Skaldowie feat. Stanisław Wenglorz - Nie widzę ciebie w swych marzeniach.mp3
 #COVER:Skaldowie feat. Stanisław Wenglorz - Nie widzę ciebie w swych marzeniach [CO].jpg
 #BACKGROUND:Skaldowie feat. Stanisław Wenglorz - Nie widzę ciebie w swych marzeniach [BG].jpg

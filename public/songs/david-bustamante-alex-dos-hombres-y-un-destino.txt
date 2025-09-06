@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=658
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:David Bustamante & Àlex - Dos hombres y un destino.mp3
 : 19 3 13 E
 : 23 3 14 lla 

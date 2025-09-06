@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=I%20Want%20It%20That%20Way
+#ALLKARAOKE_VOLUME:0,74
 : 26 4 11 Yeah
 : 31 2 13 ~
 : 34 11 11 ~

@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:84
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Cailin%20Russo%20%26%20Chrissy%20Costanza&cancion=Phoenix
+#ALLKARAOKE_VOLUME:0,54
 : 0 2 1 What
 : 4 2 1  are
 : 8 2 3  you

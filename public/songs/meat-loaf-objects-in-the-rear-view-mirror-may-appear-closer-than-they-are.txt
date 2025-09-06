@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=2113
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Meat Loaf - Objects In The Rear View Mirror May Appear Closer Than They Are.m4a
 #COVER:Meat Loaf - Objects In The Rear View Mirror May Appear Closer Than They Are [CO].jpg
 #BACKGROUND:Meat Loaf - Objects In The Rear View Mirror May Appear Closer Than They Are [BG].jpg

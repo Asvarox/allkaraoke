@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:174
 #ALLKARAOKE_SOURCEURL:https://youtu.be/elaaKc2TC8s
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Michael Andrews feat. Gary Jules - Mad World.mp3
 : 25 4 5 All 
 : 33 4 5 a

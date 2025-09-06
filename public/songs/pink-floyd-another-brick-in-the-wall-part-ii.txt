@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pink%20Floyd&cancion=Another%20Brick%20In%20The%20Wall%20(Part%20II)
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 - -13 1
 - 1
 : 14 4 14 We 

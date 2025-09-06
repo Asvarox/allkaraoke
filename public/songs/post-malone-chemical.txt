@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28296
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Post Malone - Chemical.mp3
 #COVER:Post Malone - Chemical [CO].jpg
 #BACKGROUND:Post Malone - Chemical [BG].jpg

@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:164
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Savin'%20Me
+#ALLKARAOKE_VOLUME:0,79
 : 22 3 66 Pri
 : 26 4 65 son 
 : 34 7 65 gates

@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Soul%20Asylum&cancion=Runaway%20Train
+#ALLKARAOKE_VOLUME:0,95
 : 23 5 60 Call
 : 28 5 60  you
 : 34 3 60  up

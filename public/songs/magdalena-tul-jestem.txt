@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23692
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=11880
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,91
 #MP3:Magdalena Tul - Jestem (ESC 2011 Poland).mp3
 F 14 6 1 Jes
 F 22 6 -1 tem 

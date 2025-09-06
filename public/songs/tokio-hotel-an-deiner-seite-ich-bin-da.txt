@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3040
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,5
 : 16 3 3 Kei
 : 20 3 5 ner 
 : 24 9 7 weiß 

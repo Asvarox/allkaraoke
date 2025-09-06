@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=179304
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=30461
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:Tommy Cash - Espresso Macchiato (ESC 2025 Estonia).mp3
 #COVER:Tommy Cash - Espresso Macchiato (ESC 2025 Estonia) [CO].jpg
 #BACKGROUND:Tommy Cash - Espresso Macchiato (ESC 2025 Estonia) [BG].jpg

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21635
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,78
 #P1:A Prophecy
 #MP3:Asking Alexandria - A Prophecy.mp3
 F 26 5 3 How 

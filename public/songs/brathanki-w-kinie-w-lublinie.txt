@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:153
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=W%20kinie%2C%20w%20Lublinie
+#ALLKARAOKE_VOLUME:0,92
 : 0 2 7 O
 : 4 6 7  świ
 : 12 3 6 cie

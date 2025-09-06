@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=Boom%2C%20Boom%2C%20Boom%2C%20Boom!!
+#ALLKARAOKE_VOLUME:0,5
 : 18 7 18 Oh
 : 26 3 15 ~
 : 30 2 13 ~, 

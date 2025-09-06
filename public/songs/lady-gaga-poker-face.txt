@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Poker%20Face
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,76
 : 24 4 23 I 
 : 30 4 23 wan
 * 36 2 23 na 

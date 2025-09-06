@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=102371
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=16366
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:3 Doors Down - When You’re Young.mp3
 : 21 8 17 So 
 : 31 8 15 far 

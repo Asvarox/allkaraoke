@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Soraya&cancion=La%20noche%20es%20para%20m%C3%AD
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Soraya - La noche es para mí.mp3
 #COVER:Soraya - La noche es para mí.jpg
 : 17 4 1 Vuel

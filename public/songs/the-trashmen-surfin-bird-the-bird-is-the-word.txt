@@ -13,7 +13,8 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:The Trashmen - Surfin’ Bird (The Bird Is The Word)
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:The Trashmen - Surfin’ Bird (The Bird Is The Word).mp3
 #COVER:The Trashmen - Surfin’ Bird (The Bird Is The Word) [CO].jpg
 #BACKGROUND:The Trashmen - Surfin’ Bird (The Bird Is The Word) [BG].jpg

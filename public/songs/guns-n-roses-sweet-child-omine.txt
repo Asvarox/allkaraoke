@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:63
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Sweet%20Child%20O%C2%B4Mine
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 17 3 8 She's 
 : 22 2 8 got 
 : 25 1 8 a 

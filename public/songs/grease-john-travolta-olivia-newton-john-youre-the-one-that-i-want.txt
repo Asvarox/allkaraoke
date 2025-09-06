@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:107
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want
-#ALLKARAOKE_VOLUME:0,98
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,98
 - 0 1
 - 1
 F 15 4 0 San

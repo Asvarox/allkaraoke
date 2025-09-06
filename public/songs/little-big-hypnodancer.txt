@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Little Big - Hypnodancer
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Little Big - Hypnodancer.mp3
 : 19 5 5 I 
 : 27 5 7 don’t 

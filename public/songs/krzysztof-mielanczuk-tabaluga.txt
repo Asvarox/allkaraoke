@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Krzysztof%20Miela%C5%84czuk&cancion=Tabaluga
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,91
 : 19 1 -5 O
 : 21 2 0 ~
 : 25 1 2 to 

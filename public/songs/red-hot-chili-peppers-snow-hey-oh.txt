@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=15396
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Snow ((Hey Oh))
 #MP3:Red Hot Chili Peppers - Snow ((Hey Oh)).mp3
 : 27 6 11 Come 

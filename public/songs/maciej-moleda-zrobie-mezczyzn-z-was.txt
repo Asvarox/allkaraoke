@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maciej%20Mol%C4%99da&cancion=Zrobi%C4%99%20m%C4%99%C5%BCczyzn%20z%20was
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 0 4 5 Brać
 : 8 3 0  się
 : 12 7 3  do

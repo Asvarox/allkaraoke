@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Carlos%20Baute%20y%20Marta%20S%C3%A1nchez&cancion=Colgando%20en%20tus%20manos
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 : 16 1 18 Qui
 : 18 1 18 zá
 : 20 1 18 no

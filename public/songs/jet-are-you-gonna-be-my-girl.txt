@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=997
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,81
 : 0 22 52 Go
 - 32
 : 214 2 64 It's

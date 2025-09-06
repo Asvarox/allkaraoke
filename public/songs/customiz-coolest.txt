@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:188
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=CustomiZ&cancion=COOLEST%20(TV)
-#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,7
 #MP3:CustomiZ - COOLEST (TV).mp3
 #COVER:CustomiZ - COOLEST (TV) [CO].jpg
 #MEDLEYSTARTBEAT:768

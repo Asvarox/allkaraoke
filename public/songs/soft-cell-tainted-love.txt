@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:143
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Soft%20Cell&cancion=Tainted%20Love
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Soft Cell - Tainted Love.mp3
 #COVER:Soft Cell - Tainted Love [CO].jpg
 : 19 5 60 Some

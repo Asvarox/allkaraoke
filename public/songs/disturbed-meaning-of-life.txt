@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=172
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=8160
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Disturbed - Meaning Of Life.mp3
 : 17 6 6 Get 
 : 25 6 6 psy

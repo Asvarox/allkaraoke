@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,9
 : 24 2 4 Naj
 : 29 2 4 pierw
 : 37 3 4  kil

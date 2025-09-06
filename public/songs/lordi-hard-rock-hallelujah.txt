@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lordi&cancion=Hard%20Rock%20Hallelujah
+#ALLKARAOKE_VOLUME:0,76
 : 16 8 58 Hard
 : 32 7 58  rock
 - 39

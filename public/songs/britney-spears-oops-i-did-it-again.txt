@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Oops!%20I%20did%20it%20again
+#ALLKARAOKE_VOLUME:0,9
 F 20 4 6 Yeah,
 F 26 4 6  yeah,
 F 32 4 6  yeah,

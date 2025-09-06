@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=5Rswx2Z7SDw
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Holiday
 #MP3:Madonna - Holiday.mp3
 #COVER:Madonna - Holiday [CO].jpg

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:127,31
 #ALLKARAOKE_SOURCEURL:usdb.animux.de
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Herbert Grönemeyer - Mein Konzert.m4a
 #COVER:Herbert Grönemeyer - Mein Konzert [CO].jpg
 #BACKGROUND:Herbert Grönemeyer - Mein Konzert [BG].jpg

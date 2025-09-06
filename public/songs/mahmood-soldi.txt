@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1835
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22507
-#ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_OLDVOLUME:0,61
 #MP3:Mahmood - Soldi.mp3
 : 25 2 3 In 
 : 29 2 3 pe

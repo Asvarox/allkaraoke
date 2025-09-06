@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
+#ALLKARAOKE_VOLUME:0,52
 : 0 6 12 Some
 : 8 3 12 bo
 * 12 3 12 dy

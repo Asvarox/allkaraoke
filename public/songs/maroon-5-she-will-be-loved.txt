@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved
+#ALLKARAOKE_VOLUME:0,73
 : 27 4 15 Beau
 : 33 4 15 ty 
 : 41 6 15 queen 

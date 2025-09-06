@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10440
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 0 2 -4 Jak
 : 4 2 -6  zwyk
 : 8 2 -4 le,

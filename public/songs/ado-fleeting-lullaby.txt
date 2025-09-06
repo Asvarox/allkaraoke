@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=174903
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28357
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ado - Fleeting Lullaby.mp3
 #COVER:Ado - Fleeting Lullaby [CO].jpg
 #BACKGROUND:Ado - Fleeting Lullaby [BG].jpg

@@ -12,7 +12,8 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:134
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=b9McVO9hpUE&ab_channel=LaBoucheVEVO
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:La Bouche - Sweet Dreams (Ola ola e).mp3
 : 8 6 9 Sweet 
 * 16 8 2 dreams 

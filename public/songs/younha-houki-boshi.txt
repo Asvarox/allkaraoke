@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5037
 #ALLKARAOKE_PREVIEWEND:61
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Younha - Houki boshi (TV).mp3
 : 21 7 6 Yo
 : 29 7 6 zo

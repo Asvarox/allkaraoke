@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w
+#ALLKARAOKE_VOLUME:0,81
 : 20 2 0 O
 : 24 6 0 twórz
 : 32 4 0  o

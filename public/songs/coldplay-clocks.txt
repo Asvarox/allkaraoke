@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks
+#ALLKARAOKE_VOLUME:0,56
 : 0 7 15 Lights
 : 8 6 15  go
 : 15 7 15  out

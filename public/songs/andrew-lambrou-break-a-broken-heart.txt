@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27585
-#ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Andrew Lambrou - Break A Broken Heart (ESC 2023 Cyprus).mp3
 #COVER:Andrew Lambrou - Break A Broken Heart (ESC 2023 Cyprus) [CO].jpg
 #BACKGROUND:Andrew Lambrou - Break A Broken Heart (ESC 2023 Cyprus) [BG].jpg

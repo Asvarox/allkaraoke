@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lzy&cancion=Oczy%20szeroko%20zamkniete
+#ALLKARAOKE_VOLUME:0,5
 : 21 4 59 Zos
 : 29 11 60 tan
 : 42 3 60 ~

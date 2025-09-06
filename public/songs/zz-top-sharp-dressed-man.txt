@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man
+#ALLKARAOKE_VOLUME:0,76
 : 33 14 3 Clean 
 : 49 6 0 shirt
 : 57 16 3 ~,

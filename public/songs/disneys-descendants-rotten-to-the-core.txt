@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://youtu.be/zGlLe1w3DJM?si=JCQVkasm1G8h9QgM
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Disney’s Descendants - Rotten To The Core.mp3
 F 17 2 2 They 
 F 23 2 2 say 

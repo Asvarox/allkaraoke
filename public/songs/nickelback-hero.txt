@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Hero
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 20 3 3 I 
 : 25 3 1 am 
 : 32 6 -1 so 

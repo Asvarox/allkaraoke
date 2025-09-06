@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AR
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Amanda Miguel - Él me mintió.mp3
 #COVER:Amanda Miguel - Él me mintió [CO].jpg
 : 14 2 12 Él 

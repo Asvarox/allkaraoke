@@ -15,7 +15,8 @@
 #ALLKARAOKE_ARTISTORIGIN:EE
 #ALLKARAOKE_REALBPM:145
 #ALLKARAOKE_PREVIEWEND:80
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,51
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:5MIINUST x Puuluup - (nendest) narkootikumidest ei tea me (küll) midagi.mp3
 #COVER:5MIINUST x Puuluup - (nendest) narkootikumidest ei tea me (küll) midagi [CO].jpg
 #BACKGROUND:5MIINUST x Puuluup - (nendest) narkootikumidest ei tea me (küll) midagi [BG].jpg

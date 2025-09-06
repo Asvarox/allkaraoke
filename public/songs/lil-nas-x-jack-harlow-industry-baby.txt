@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168173
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=24924
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Lil Nas X & Jack Harlow - Industry Baby.mp3
 : 23 3 10 Ba
 : 27 3 8 by 

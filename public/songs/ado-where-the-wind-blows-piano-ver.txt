@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=YO-rXgQKlF8&ab_channel=Ado
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #VERSION:1.2.0
 #COVER:Ado - Where the wind blows (from ONE PIECE FILM RED) (Piano Ver.) [CO].jpg
 #COVERURL:https://coverartarchive.org/release/e7783e69-e8a5-4920-aa56-5989999f1c25/40667386195.jpg

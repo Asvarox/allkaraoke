@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:143
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Eric Clapton - Wonderful Tonight (Live at Royal Albert Hall).mp3
 : 26 7 9 It’s 
 : 35 10 11 late 

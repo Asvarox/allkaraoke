@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,77
 F 15 4 4 Ghost
 F 23 2 6 bust
 F 27 2 2 ers

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=globule
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?cancion=Gypsy+Woman+%28She%27s+Homeless%29
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,74
 #COVER:Crystal Waters - Gypsy Woman (She's Homeless).jpg
 #MP3:Crystal Waters - Gypsy Woman (She's Homeless).mp3
 #MEDLEYSTARTBEAT:0

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:151
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=10849
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Metallica with Michael Kamen conducting the San Francisco Symphony Orchestra - No Leaf Clover.mp3
 : 27 3 27 And 
 : 32 3 27 it 

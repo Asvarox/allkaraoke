@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Zbigniew%20Wodecki&cancion=Chalupy%20welcome%20to
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,8
 : 17 3 64 Jak
 : 23 3 65  co
 : 29 3 67  ro

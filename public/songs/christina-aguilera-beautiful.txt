@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful
+#ALLKARAOKE_VOLUME:0,84
 F 0 3 6 Don't
 F 4 1 6  look
 F 6 3 6  at

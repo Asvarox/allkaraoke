@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=no+title
-#ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,69
 #P1:No Title
 #MP3:Reol - No title.mp3
 #COVER:Reol - No title.jpg

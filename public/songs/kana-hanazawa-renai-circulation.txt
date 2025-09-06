@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=14526
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Kana Hanazawa - Renai Circulation (TV).mp3
 F 31 13 4 Se 
 F 47 5 7 no, 

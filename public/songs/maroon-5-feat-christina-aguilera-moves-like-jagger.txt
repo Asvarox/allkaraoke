@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205%20feat.%20Christina%20Aguilera&cancion=Moves%20Like%20Jagger
+#ALLKARAOKE_VOLUME:1
 : 0 2 11 Just
 : 4 2 11  shoot
 : 8 3 13  for

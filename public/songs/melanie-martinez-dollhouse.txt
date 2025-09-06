@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=141466
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21177
-#ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_OLDVOLUME:0,68
 #MP3:Melanie Martinez - Dollhouse.mp3
 : 23 5 10 Hey 
 : 33 13 15 girl,

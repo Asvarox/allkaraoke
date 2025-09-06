@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://usdb.animux.de/?link=profil&id=156515
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28578
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,81
 #P1:Alone Again
 #MP3:Asking Alexandria - Alone Again.mp3
 #COVER:Asking Alexandria - Alone Again [CO].jpg

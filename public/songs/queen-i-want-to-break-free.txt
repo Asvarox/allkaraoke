@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20to%20Break%20Free
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,85
 : 0 3 59 I
 : 4 2 64  want
 : 10 2 66  to

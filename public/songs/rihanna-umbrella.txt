@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:174
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Umbrella
+#ALLKARAOKE_VOLUME:0,55
 F 0 2 48 Uh
 F 3 2 48  huh,
 F 8 2 48  uh

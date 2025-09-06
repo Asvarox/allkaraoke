@@ -16,7 +16,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2517
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=13874
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Gréta Salóme & Jónsi - Never Forget (ESC 2012 Iceland).mp3
 : 18 2 0 She’s 
 : 25 6 0 sing

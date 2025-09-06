@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:73
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years
+#ALLKARAOKE_VOLUME:1
 : 25 15 10 Heart 
 : 57 15 10 beats 
 : 89 15 10 fast

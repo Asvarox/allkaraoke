@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #ALLKARAOKE_REALBPM:86
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow
+#ALLKARAOKE_VOLUME:0,52
 : 37 7 13 Look 
 : 51 6 15 at 
 : 62 2 13 the 

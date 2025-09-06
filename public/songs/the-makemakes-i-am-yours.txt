@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=179304
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28749
-#ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,97
 #MP3:The Makemakes - I Am Yours (Eurovision Song Contest 2015).mp3
 #COVER:The Makemakes - I Am Yours (Eurovision Song Contest 2015) [CO].jpg
 #BACKGROUND:The Makemakes - I Am Yours (Eurovision Song Contest 2015) [BG].jpg

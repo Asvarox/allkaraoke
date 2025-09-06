@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=55691
 #ALLKARAOKE_REALBPM:178
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12299
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,9
 #P1:Breaking The Girl
 #MP3:Red Hot Chili Peppers - Breaking The Girl.mp3
 : 25 30 -4 I 

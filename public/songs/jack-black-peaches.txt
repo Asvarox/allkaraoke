@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=aveican
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jack%20Black&cancion=Peaches
-#ALLKARAOKE_VOLUME:0,63
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,63
 F 25 2 0 This 
 F 29 4 0 one
 - 33 34

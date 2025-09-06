@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:85
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jeden%20Osiem%20L&cancion=Jak%20zapomniec
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_OLDVOLUME:0,81
 : 23 2 59 Ile
 : 27 2 59 ~
 : 31 2 59 dał

@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lord_tenebro
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Indochine&cancion=J'ai%20Demand%C3%A9%20A%20La%20Lune
+#ALLKARAOKE_VOLUME:0,72
 : 22 3 11 J'ai 
 : 26 2 9 de
 : 29 10 11 man

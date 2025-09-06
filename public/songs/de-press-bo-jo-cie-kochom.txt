@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #ALLKARAOKE_REALBPM:101
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11463
-#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_VOLUME:0,57
+#ALLKARAOKE_OLDVOLUME:0,91
 F 11 12 -1 Hej!
 - 24
 : 35 1 -1 Wy

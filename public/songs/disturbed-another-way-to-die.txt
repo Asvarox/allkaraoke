@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=42
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=10862
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Disturbed - Another Way To Die.mp3
 : 15 3 25 The 
 : 19 2 25 in

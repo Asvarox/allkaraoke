@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Bag%20Raiders&cancion=Shooting%20Stars
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #FIXER:rsa_skala
 #MP3:Bag Raiders - Shooting Stars.mp3
 #COVER:Bag Raiders - Shooting Stars.jpg

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19913
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Francesca Michielin - Nessun grado di separazione (ESC 2016 Italy).mp3
 : 22 16 4 E’ 
 : 42 2 4 la 

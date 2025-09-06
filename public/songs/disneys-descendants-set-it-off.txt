@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://youtu.be/E-e7U_JqWco?si=mva0Avww-nyJq3Vv
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Disney’s Descendants - Set It Off.mp3
 #COVER:Disney’s Descendants - Set It Off [CO].jpg
 #BACKGROUND:Disney’s Descendants - Set It Off [BG].jpg

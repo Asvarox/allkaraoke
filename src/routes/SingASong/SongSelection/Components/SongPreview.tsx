@@ -5,6 +5,7 @@ import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
 import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   PropsWithChildren,
@@ -56,14 +57,18 @@ export default function SongPreviewComponent({
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
   useSpecialTheme(songPreview, FeatureFlags.Eurovision, isEurovisionSong, 'eurovision');
+  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
 
   const expanded = keyboardControl;
 
   const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
   const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
+  const songPreviewVolume = newVolumeFFEnabled
+    ? songPreview.volume ?? songPreview.manualVolume
+    : songPreview.manualVolume;
   const undebounced = useMemo(
-    () => [songPreview.video, start, end, songPreview.volume] as const,
-    [songPreview.video, start, end, songPreview.volume],
+    () => [songPreview.video, start, end, songPreviewVolume] as const,
+    [songPreview.video, start, end, songPreviewVolume],
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 

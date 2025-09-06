@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rudi%20Schuberth&cancion=C%C3%B3rka%20Rybaka
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 20 4 61 Gdy
 : 26 4 61  ksie
 : 32 3 64 zyc

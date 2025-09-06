@@ -15,7 +15,8 @@
 #ALLKARAOKE_REALBPM:75
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1237
 #ALLKARAOKE_PREVIEWEND:88
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_OLDVOLUME:0,85
 #P1:Stop Crying Your Heart Out
 #MP3:Oasis - Stop Crying Your Heart Out.mp3
 : 20 7 4 Ho

@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168569
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24720
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Tix - Fallen Angel (ESC 2021 Norway).mp3
 : 25 7 6 What 
 : 33 3 6 can 

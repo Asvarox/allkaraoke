@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=5073
 #ALLKARAOKE_REALBPM:156
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=9275
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Shinedown - Son Of Sam.mp3
 : 16 3 11 Paint 
 : 20 2 11 it 

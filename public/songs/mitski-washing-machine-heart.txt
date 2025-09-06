@@ -12,7 +12,8 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=3vjkh-acmTE&feature=youtu.be
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Mitski - Washing Machine Heart.mp3
 : 26 9 1 Toss 
 : 41 6 4 you

@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=When%20I'm%20Gone
+#ALLKARAOKE_VOLUME:0,5
 : 20 3 57 There's
 : 24 3 57  a
 : 28 4 57 no

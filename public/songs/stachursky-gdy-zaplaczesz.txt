@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2862
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,9
 : 0 2 55 Py
 : 2 2 57 tasz 
 : 4 2 59 czy 

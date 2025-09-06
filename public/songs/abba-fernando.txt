@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Fernando
+#ALLKARAOKE_VOLUME:0,65
 : 0 1 61 Can
 : 2 1 61  you
 : 4 4 61  hear

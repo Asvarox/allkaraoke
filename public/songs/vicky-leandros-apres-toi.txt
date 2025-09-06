@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=2729
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_OLDVOLUME:0,81
 #MP3:Vicky Leandros - Après toi.mp3
 : 14 3 6 Tu 
 : 18 9 6 t’en 

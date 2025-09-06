@@ -14,6 +14,7 @@
 #ALLKARAOKE_ARTISTORIGIN:UA
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Teresa & Maria
 #MP3:Alyona Alyona & Jerry Heil - Teresa & Maria (ESC 2024 Ukraine).mp3
 #COVER:Alyona Alyona & Jerry Heil - Teresa & Maria (ESC 2024 Ukraine) [CO].jpg

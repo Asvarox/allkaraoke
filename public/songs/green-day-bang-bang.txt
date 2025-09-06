@@ -13,7 +13,8 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:127
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=28897
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Green Day - Bang Bang.mp3
 #COVER:Green Day - Bang Bang [CO].jpg
 #BACKGROUND:Green Day - Bang Bang [BG].jpg

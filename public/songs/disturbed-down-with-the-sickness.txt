@@ -16,7 +16,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,53
+#ALLKARAOKE_OLDVOLUME:0,5
 F 26 7 15 Ooh 
 F 34 4 15 ah 
 F 39 3 15 ah 

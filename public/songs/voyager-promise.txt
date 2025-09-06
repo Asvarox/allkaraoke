@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=165251
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27333
-#ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_VOLUME:0,53
+#ALLKARAOKE_OLDVOLUME:0,87
 #MP3:Voyager - Promise.mp3
 #COVER:Voyager - Promise [CO].jpg
 #BACKGROUND:Voyager - Promise [BG].jpg

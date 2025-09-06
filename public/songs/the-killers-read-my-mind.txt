@@ -14,7 +14,8 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=zc8hbSM1zVo
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,81
 #P1:The Killers - Read my mind
 #MP3:The Killers - Read my mind.mp3
 #COVER:The Killers - Read my mind.jpg

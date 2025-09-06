@@ -11,6 +11,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #ALLKARAOKE_REALBPM:64
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin
+#ALLKARAOKE_VOLUME:0,69
 F 17 3 -6 There
 F 21 3 -6  live
 F 25 3 -6  a

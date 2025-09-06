@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=We%20Like%20To%20Party
+#ALLKARAOKE_VOLUME:0,54
 F 18 3 0 We 
 F 26 3 0 like 
 F 32 1 0 to 

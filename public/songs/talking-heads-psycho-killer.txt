@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=21220
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8891
-#ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,99
 #MP3:Talking Heads - Psycho Killer.mp3
 : 26 3 12 I 
 : 32 2 11 can’t

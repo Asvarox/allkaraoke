@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pt/canciones?artista=Michael%20Jackson&cancion=They%20don%27t%20care%20about%20us
 #ALLKARAOKE_PREVIEWEND:158
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Michael Jackson - They don't care about us.mp3
 #COVER:Michael Jackson - They don't care about us.jpg
 #MEDLEYSTARTBEAT:4726

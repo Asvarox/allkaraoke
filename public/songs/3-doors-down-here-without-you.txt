@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:72
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you
+#ALLKARAOKE_VOLUME:0,5
 : 19 1 0 A
 : 23 2 10  hun
 : 26 2 12 ~

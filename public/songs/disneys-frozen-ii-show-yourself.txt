@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/GPpwI_m598Q
 #ALLKARAOKE_PREVIEWEND:85
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Disney’s Frozen II - Show Yourself.mp3
 : 34 5 -6 Ev 
 : 41 8 -6 ’ry 

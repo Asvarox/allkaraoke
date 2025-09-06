@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=132857
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=20026
-#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,84
 #MP3:Barei - Say Yay! (ESC 2016 Spain).mp3
 : 17 3 11 Hel
 : 22 2 12 lo, 

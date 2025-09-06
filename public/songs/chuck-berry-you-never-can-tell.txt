@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:157
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Chuck%20Berry&cancion=You%20never%20can%20tell
+#ALLKARAOKE_VOLUME:1
 - -20 1
 - 1
 F 12 2 7 La

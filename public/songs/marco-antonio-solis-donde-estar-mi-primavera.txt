@@ -11,6 +11,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:176
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Marco Antonio Solis - Donde estar· mi primavera.mp3
 #COVER:Marco Antonio Solis - Donde estar· mi primavera.jpg
 * 22 3 7 Yo 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chiio
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metro%20Station&cancion=Shake%20It
+#ALLKARAOKE_VOLUME:0,62
 : 19 2 -6 I'll
 : 22 4 -6  take
 : 27 3 -6  you

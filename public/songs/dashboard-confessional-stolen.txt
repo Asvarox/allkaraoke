@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dashboard%20Confessional&cancion=Stolen
 #ALLKARAOKE_PREVIEWEND:129
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 14 2 -2 We 
 : 18 2 -2 watched 
 : 21 1 -2 the 

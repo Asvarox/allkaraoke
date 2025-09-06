@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rupert%20Holmes&cancion=Escape%20(The%20Pi%C3%B1a%20Colada%20Song)
+#ALLKARAOKE_VOLUME:1
 : 19 3 -3 I 
 : 24 1 -5 was 
 : 28 7 -3 tired 

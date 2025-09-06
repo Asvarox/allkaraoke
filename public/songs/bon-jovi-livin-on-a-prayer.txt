@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 F 16 1 53 Once 
 F 18 4 53 upon 
 F 24 3 53 a 

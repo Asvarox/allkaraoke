@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:42
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Bogurodzica
+#ALLKARAOKE_VOLUME:0,83
 : 15 33 2 Bo
 : 49 26 0 gu
 : 76 34 5 ro

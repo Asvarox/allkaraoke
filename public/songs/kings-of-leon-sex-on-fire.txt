@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3762
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=4848
+#ALLKARAOKE_VOLUME:0,64
 : 21 3 16 Lay 
 : 25 2 16 where 
 : 29 2 16 you're 

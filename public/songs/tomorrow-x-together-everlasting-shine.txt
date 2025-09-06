@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:KR
 #ALLKARAOKE_REALBPM:127
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Tomorrow X Together - Everlasting shine (TV).mp3
 #COVER:Tomorrow X Together - Everlasting shine (TV).jpg
 #MEDLEYSTARTBEAT:896

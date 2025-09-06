@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=haek
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse+feat.+Mark+Ronson
+#ALLKARAOKE_VOLUME:1
 : 21 4 10 Well, 
 : 27 3 12 some
 : 33 6 15 times 
