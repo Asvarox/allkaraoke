@@ -29,6 +29,7 @@
     "Kelly Clarkson",
     "Lana Del Rey",
     "Backstreet Boys",
+    "Jamiroquai",
     "Maroon 5",
     "Miley Cyrus",
     "The Black Eyed Peas",
@@ -46,6 +47,7 @@
     "Fall Out Boy",
     "Glee Cast",
     "High School Musical",
+    "INXS",
     "Mariah Carey",
     "Panic! at the Disco",
     "Radiohead",
@@ -60,6 +62,7 @@
     "Rod Stewart",
     "Sabaton",
     "Thirty Seconds to Mars",
+    "Three Days Grace",
     "5 Seconds of Summer",
     "Arctic Monkeys",
     "Céline Dion",
@@ -71,7 +74,6 @@
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
-    "Three Days Grace",
     "Whitney Houston",
     "Bon Jovi",
     "Depeche Mode",
@@ -135,7 +137,6 @@
     "Guns N' Roses",
     "Heart",
     "Hollywood Undead",
-    "INXS",
     "Justin Bieber",
     "Justin Timberlake",
     "Keane",
@@ -148,8 +149,7 @@
     "Prince and the Revolution",
     "Seal",
     "Selena Gomez & The Scene",
-    "Shakira",
-    "Shania Twain"
+    "Shakira"
   ],
   "languages": [
     "Armenian",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5100
+  "songs": 5129
 }
