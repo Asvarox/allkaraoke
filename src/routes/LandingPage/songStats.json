@@ -37,6 +37,7 @@
     "Avril Lavigne",
     "Beyoncé",
     "Elton John",
+    "INXS",
     "Paramore",
     "The Weeknd",
     "Breaking Benjamin",
@@ -47,7 +48,6 @@
     "Fall Out Boy",
     "Glee Cast",
     "High School Musical",
-    "INXS",
     "Mariah Carey",
     "Panic! at the Disco",
     "Radiohead",
@@ -120,6 +120,7 @@
     "Papa Roach",
     "Robbie Williams",
     "Simon & Garfunkel",
+    "Texas",
     "The Smashing Pumpkins",
     "The Who",
     "twenty øne piløts",
@@ -142,14 +143,13 @@
     "Keane",
     "KISS",
     "KoRn",
+    "Natasha Bedingfield",
     "Ne-Yo",
     "Nelly Furtado",
     "Ozzy Osbourne",
     "P!nk",
     "Prince and the Revolution",
-    "Seal",
-    "Selena Gomez & The Scene",
-    "Shakira"
+    "Seal"
   ],
   "languages": [
     "Armenian",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5129
+  "songs": 5158
 }
