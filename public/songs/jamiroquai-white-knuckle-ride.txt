@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Jamiroquai - White Knuckle Ride
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #MP3:Jamiroquai - White Knuckle Ride.mp3
 #COVER:Jamiroquai - White Knuckle Ride [CO].jpg
 #BACKGROUND:Jamiroquai - White Knuckle Ride [BG].jpg
