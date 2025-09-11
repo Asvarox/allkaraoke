@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Stromae&cancion=L%27enfer
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Stromae - L'enfer.mp3
 #COVER:Stromae - L'enfer.png
 #MEDLEYSTARTBEAT:488

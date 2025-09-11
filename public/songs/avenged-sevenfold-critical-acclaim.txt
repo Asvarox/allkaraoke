@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3219
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=6471
-#ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,95
 #P1:Critical Acclaim
 #MP3:Avenged Sevenfold - Critical Acclaim.mp3
 : 27 278 29 Yeaaaaaaaaa 

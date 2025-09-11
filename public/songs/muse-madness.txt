@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Madness
+#ALLKARAOKE_VOLUME:0,62
 : 0 2 10 M
 : 4 2 10  m
 : 8 2 10  m

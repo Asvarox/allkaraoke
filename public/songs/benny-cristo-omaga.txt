@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28488
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,57
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:Benny Cristo - Omaga (ESC 2021 Czechia).mp3
 #COVER:Benny Cristo - Omaga (ESC 2021 Czechia) [CO].jpg
 #BACKGROUND:Benny Cristo - Omaga (ESC 2021 Czechia) [BG].jpg

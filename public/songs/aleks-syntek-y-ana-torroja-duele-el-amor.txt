@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aleks%20Syntek%20y%20Ana%20Torroja&cancion=Duele%20el%20amor
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 17 7 61 Due
 : 25 6 59 le el 
 : 33 6 57 a

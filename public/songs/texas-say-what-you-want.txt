@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Texas - Say What You Want
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #MP3:Texas - Say What You Want.mp3
 #COVER:Texas - Say What You Want [CO].jpg
 #BACKGROUND:Texas - Say What You Want [BG].jpg

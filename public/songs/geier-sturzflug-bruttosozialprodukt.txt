@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #ALLKARAOKE_REALBPM:83
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=861
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_OLDVOLUME:0,6
 : 22 4 2 Wenn 
 : 30 4 2 früh 
 : 38 4 0 am 

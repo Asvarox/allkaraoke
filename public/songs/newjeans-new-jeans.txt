@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=angs
 #ALLKARAOKE_REALBPM:134
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones
-#ALLKARAOKE_VOLUME:0,67
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,67
 : 24 3 4 Look, 
 : 29 3 4 it's 
 : 35 5 2 a 

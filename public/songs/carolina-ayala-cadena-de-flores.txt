@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:MX
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Cadena de flores
 #MP3:Carolina Ayala - Cadena de flores (TV).mp3
 #COVER:Carolina Ayala - Cadena de flores (TV).jpg

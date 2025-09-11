@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Bloodhound%20Gang&cancion=The%20bad%20touch
+#ALLKARAOKE_VOLUME:1
 - -32 1
 - 1
 F 33 3 0 I'd 

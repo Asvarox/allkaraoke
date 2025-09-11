@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=182875
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27020
-#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,7
 : 18 11 0 Mnie 
 : 31 3 0 wy
 : 35 3 0 wia

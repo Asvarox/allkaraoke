@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Hysteria
-#ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_OLDVOLUME:0,81
 : 0 2 11 It's
 : 9 6 12  bug
 * 17 6 9 ~

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:142
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29040
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Ado - God-ish.mp3
 #COVER:Ado - God-ish [CO].jpg
 #BACKGROUND:Ado - God-ish [BG].jpg

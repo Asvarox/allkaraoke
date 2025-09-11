@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
 #ALLKARAOKE_REALBPM:68
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Radioactive
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 : 27 2 -3 I'm 
 : 35 6 6 wa
 : 43 4 6 king 

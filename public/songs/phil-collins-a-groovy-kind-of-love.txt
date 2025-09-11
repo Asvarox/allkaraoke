@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Phil Collins - A Groovy Kind Of Love.mp3
 #COVER:Phil Collins - A Groovy Kind Of Love.jpg
 : 16 5 7 When 

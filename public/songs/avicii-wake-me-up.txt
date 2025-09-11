@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1645
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15877
+#ALLKARAOKE_VOLUME:1
 : 17 1 11 Fee
 : 19 1 11 ling 
 : 21 2 11 my 

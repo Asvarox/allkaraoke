@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Black%20or%20white
+#ALLKARAOKE_VOLUME:1
 : 15 3 -1 I 
 : 19 3 4 took 
 : 23 3 8 my 

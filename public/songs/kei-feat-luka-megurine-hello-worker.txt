@@ -14,7 +14,8 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:168
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:KEI feat. Luka Megurine - Hello, Worker.mp3
 #COVER:KEI feat. Luka Megurine - Hello, Worker [CO].jpg
 #START:4

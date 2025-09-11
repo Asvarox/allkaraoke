@@ -17,6 +17,7 @@
 #ALLKARAOKE_REALBPM:146
 #ALLKARAOKE_PREVIEWEND:154
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,87
 #MP3:Mšgo de Oz - La posada de los muertos.mp3
 #COVER:Mšgo de Oz - La posada de los muertos.jpg
 : 15 3 4 Al

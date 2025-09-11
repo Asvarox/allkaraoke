@@ -17,7 +17,8 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lynyrd%20Skynyrd&cancion=Sweet%20Home%20Alabama
 #ALLKARAOKE_PREVIEWEND:101
-#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,7
 F 10 6 48 One 
 F 24 7 48 two 
 F 39 8 48 three

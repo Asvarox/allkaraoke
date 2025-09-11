@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Gettin' Jiggy Wit It
 #MP3:Will Smith - Gettin’ Jiggy Wit It.mp3
 #COVER:Will Smith - Gettin’ Jiggy Wit It [CO].jpg

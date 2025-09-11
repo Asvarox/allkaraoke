@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27770
-#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_VOLUME:0,51
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Malik Harris - Rockstars (ESC 2022 Germany).mp3
 #COVER:Malik Harris - Rockstars (ESC 2022 Germany) [CO].jpg
 #BACKGROUND:Malik Harris - Rockstars (ESC 2022 Germany) [BG].jpg

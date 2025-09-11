@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:109
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Raphael&cancion=Hablemos%20del%20amor
-#ALLKARAOKE_VOLUME:0,94
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,94
 #MP3:Raphael - Hablemos del amor.mp3
 #COVER:Raphael - Hablemos del amor.jpg
 #END:169000

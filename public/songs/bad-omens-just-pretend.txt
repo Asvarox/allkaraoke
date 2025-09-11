@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=148686
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28499
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Bad Omens - Just Pretend.mp3
 #COVER:Bad Omens - Just Pretend [CO].jpg
 #BACKGROUND:Bad Omens - Just Pretend [BG].jpg

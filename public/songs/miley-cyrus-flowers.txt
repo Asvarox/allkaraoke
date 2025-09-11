@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:118
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Flowers
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,6
 : 16 1 -1 We
 : 18 1 0 ~ 
 : 20 2 -1 were 

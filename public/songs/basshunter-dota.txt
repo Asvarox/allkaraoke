@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Basshunter&cancion=DotA
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_OLDVOLUME:0,5
 : 19 2 4 Vi 
 : 23 2 4 sit
 : 27 2 7 ter 

@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=38917
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10525
-#ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,97
 #MP3:Stevie Wonder - Superstition.mp3
 : 27 7 1 Ve
 : 35 4 3 ry 

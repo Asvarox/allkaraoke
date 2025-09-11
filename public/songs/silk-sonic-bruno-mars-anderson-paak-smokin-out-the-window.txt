@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=58767
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=26350
-#ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_OLDVOLUME:0,69
 #MP3:Silk Sonic - Bruno Mars & Anderson .Paak - Smokin Out The Window.mp3
 F 15 2 4 Wait 
 F 18 1 4 a 

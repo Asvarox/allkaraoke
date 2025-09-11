@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=160643
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29648
-#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_OLDVOLUME:0,72
 #MP3:Grażyna Łobaszewska - Czas nas uczy pogody.mp3
 #COVER:Grażyna Łobaszewska - Czas nas uczy pogody [CO].jpg
 #BACKGROUND:Grażyna Łobaszewska - Czas nas uczy pogody [BG].jpg

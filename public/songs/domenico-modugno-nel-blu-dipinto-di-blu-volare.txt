@@ -16,7 +16,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=21623
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Domenico Modugno - Nel blu dipinto di blu (Volare) (ESC 1958 Italy).mp3
 : 17 5 14 Pen
 : 28 1 14 so 

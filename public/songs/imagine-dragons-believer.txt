@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer
-#ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_OLDVOLUME:0,71
 : 25 3 -2 First 
 : 36 4 5 things 
 : 49 3 3 first

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Another%20One%20Bites%20the%20Dust
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,85
 F 0 6 67 Ooh
 - 8
 F 16 3 67 Let's

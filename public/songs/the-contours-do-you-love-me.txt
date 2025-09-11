@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:The Contours - Do You Love Me (Now That I Can Dance) [DUET]
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,93
 #MP3:The Contours - Do You Love Me (Now That I Can Dance) [DUET].mp3
 F 18 2 36 You 
 F 21 3 36 broke 

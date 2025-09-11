@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=11313
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Elektryczne Gitary - Kiler.mp3
 : 20 2 2 To, 
 : 28 2 2 co 

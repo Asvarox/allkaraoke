@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3028
-#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,82
 #MP3:Santana feat. Rob Thomas - Smooth.mp3
 : 15 3 15 Man 
 : 19 2 15 it’s 

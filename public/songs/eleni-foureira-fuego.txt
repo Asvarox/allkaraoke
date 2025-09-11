@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
 #ALLKARAOKE_REALBPM:101
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21883
-#ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,61
 #MP3:Eleni Foureira - Fuego.mp3
 : 13 1 2 Take 
 : 15 1 2 a 

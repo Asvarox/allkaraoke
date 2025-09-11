@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_PREVIEWEND:65
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,6
 #MP3:Luka Megurine, Miku Hatsune, GUMI, IA, Kagamine Rin - Pomp and Circumstance.mp3
 #COVER:Luka Megurine, Miku Hatsune, GUMI, IA, Kagamine Rin - Pomp and Circumstance.jpg
 #START:32

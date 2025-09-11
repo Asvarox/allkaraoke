@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=4809
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Blue Öyster Cult - (Don’t Fear) The Reaper.mp3
 : 19 17 12 All 
 : 37 3 11 our 

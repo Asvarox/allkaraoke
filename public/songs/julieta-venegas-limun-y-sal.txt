@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:111
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Julieta%20Venegas&cancion=Lim%C3%B3n%20Y%20Sal
-#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_OLDVOLUME:0,6
 : 15 8 56 Uuh
 : 23 8 59 ~
 : 31 8 58 ~

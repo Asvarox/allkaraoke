@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia
+#ALLKARAOKE_VOLUME:0,59
 : 0 6 57 I've
 : 8 6 62  been
 : 17 3 61  cheat

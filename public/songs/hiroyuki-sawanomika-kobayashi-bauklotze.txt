@@ -15,7 +15,8 @@
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=27614
 #ALLKARAOKE_PREVIEWEND:80
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_OLDVOLUME:0,9
 #P1:Bauklötze
 #MP3:Hiroyuki Sawano/Mika Kobayashi - Bauklötze.mp3
 #COVER:Hiroyuki Sawano/Mika Kobayashi - Bauklötze [CO].jpg

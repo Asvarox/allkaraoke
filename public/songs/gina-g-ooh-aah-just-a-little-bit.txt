@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=91773
 #ALLKARAOKE_REALBPM:131
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17182
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Gina G - Ooh Aah… Just A Little Bit.mp3
 : 17 2 8 You’re 
 : 21 2 8 my 

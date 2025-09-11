@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Hey%20Jude
+#ALLKARAOKE_VOLUME:0,69
 - -19 1
 - 1
 : 20 11 11 Hey, 

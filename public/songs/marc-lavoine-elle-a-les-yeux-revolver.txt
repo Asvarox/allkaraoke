@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=8G9CBCNKKdE
 #ALLKARAOKE_PREVIEWEND:200
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Marc Lavoine - Elle a les yeux revolver….mp3
 : 21 3 5 Un 
 : 25 4 9 peu 

@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=6722
 #ALLKARAOKE_PREVIEWEND:66
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Love Hurts
 #MP3:Nazareth - Love Hurts.mp3
 : 20 19 9 Love 

@@ -14,7 +14,8 @@
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=QOQ1CHBjxIU
 #ALLKARAOKE_PREVIEWEND:137
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:31 Minutos - Mi equilibrio espiritual.mp3
 #COVER:31 Minutos - Mi equilibrio espiritual.jpg
 : 18 3 4 Lo 

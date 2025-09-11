@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
+#ALLKARAOKE_VOLUME:1
 : 15 5 7 No
 : 23 2 3 tice 
 : 27 17 5 me

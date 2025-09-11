@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Be%20Yourself
+#ALLKARAOKE_VOLUME:0,5
 : 16 3 7 Some
 : 20 2 10 one 
 : 24 3 10 falls 

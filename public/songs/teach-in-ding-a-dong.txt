@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21667
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Teach-In - Ding-a-dong (ESC 1975 Netherlands).mp3
 : 19 3 0 When 
 : 23 1 2 you’re 

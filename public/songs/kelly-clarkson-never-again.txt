@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:146
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Kelly%20Clarkson&cancion=Never%20Again
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,95
+#ALLKARAOKE_OLDVOLUME:0,5
 #COVER:Kelly Clarkson - Never Again.jpg
 #MP3:Kelly Clarkson - Never Again.mp3
 : 12 1 -2 I 

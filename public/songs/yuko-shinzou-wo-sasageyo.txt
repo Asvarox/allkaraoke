@@ -12,7 +12,8 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://www.youtube.com/@YukoCovers
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qDdYLRg9hak
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,53
+#ALLKARAOKE_OLDVOLUME:0,75
 #P1:Shinzou wo Sasageyo German Cover
 #MP3:FULL_VERSION_Shinzou_wo_Sasageyo_German_FanCover_Shingeki_no_Kyojin.mp3
 #COVER:aba0b8e9babc7ffb6515c605f3b79985.jpg

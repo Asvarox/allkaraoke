@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Bloody%20Mary
-#ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:Lady Gaga - Bloody Mary.mp3
 #COVER:Lady Gaga - Bloody Mary [CO].jpg
 #BACKGROUND:Lady Gaga - Bloody Mary [BG].jpg

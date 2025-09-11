@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=189927
 #ALLKARAOKE_REALBPM:147
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=30073
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Erika Vikman - ICH KOMME (ESC 2025 Finland).mp3
 #COVER:Erika Vikman - ICH KOMME (ESC 2025 Finland) [CO].jpg
 #BACKGROUND:Erika Vikman - ICH KOMME (ESC 2025 Finland) [BG].jpg

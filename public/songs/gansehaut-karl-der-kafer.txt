@@ -15,7 +15,8 @@
 #ALLKARAOKE_REALBPM:131
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5877
 #ALLKARAOKE_PREVIEWEND:50
-#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,9
 #MP3:Gänsehaut - Karl der Käfer.mp3
 : 20 7 4 Tief 
 : 31 2 6 im 

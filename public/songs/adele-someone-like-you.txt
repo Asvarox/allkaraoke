@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nauce
 #ALLKARAOKE_REALBPM:72
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_OLDVOLUME:0,75
 : 18 2 1 I
 : 21 19 4 ~ 
 : 42 17 1 heard

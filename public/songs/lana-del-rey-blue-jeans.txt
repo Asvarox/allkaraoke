@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:118
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
+#ALLKARAOKE_VOLUME:0,59
 : 16 7 12 Blue 
 : 24 11 10 Jeans
 - 35

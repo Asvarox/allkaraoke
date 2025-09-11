@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27213
-#ALLKARAOKE_VOLUME:0,69
+#ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_OLDVOLUME:0,69
 #MP3:We Are Domi - Lights Off (ESC 2022 Czech Republic).mp3
 #COVER:We Are Domi - Lights Off (ESC 2022 Czech Republic) [CO].jpg
 #BACKGROUND:We Are Domi - Lights Off (ESC 2022 Czech Republic) [BG].jpg

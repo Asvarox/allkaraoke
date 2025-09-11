@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Hold%20The%20Line
+#ALLKARAOKE_VOLUME:1
 : 23 2 61 It's 
 : 28 3 66 not 
 : 32 2 66 in 

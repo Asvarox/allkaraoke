@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=sebmolder
 #ALLKARAOKE_REALBPM:139
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Gigi%20D%27agostino&cancion=L%27amour%20Toujours
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_OLDVOLUME:0,5
 #FIXER:Volodia
 #MP3:Gigi D'agostino - L'amour Toujours.mp3
 #COVER:Gigi D'agostino - L'amour Toujours.jpg

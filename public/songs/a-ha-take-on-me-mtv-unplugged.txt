@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:65
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20On%20Me%20(MTV%20Unplugged)
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 17 1 -3 Talk
 : 19 1 1 ~
 : 21 5 2 ~

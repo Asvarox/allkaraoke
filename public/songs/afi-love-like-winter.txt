@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=AFI&cancion=Love%20Like%20Winter
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:AFI - Love Like Winter.mp3
 #COVER:AFI - Love Like Winter.jpg
 #MEDLEYSTARTBEAT:834

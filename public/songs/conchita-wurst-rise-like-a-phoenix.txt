@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=98211
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17208
-#ALLKARAOKE_VOLUME:0,83
+#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_OLDVOLUME:0,83
 #MP3:Conchita Wurst - Rise Like A Phoenix (ESC 2014 Austria).mp3
 : 22 2 -3 Wa
 : 26 2 -3 king 
