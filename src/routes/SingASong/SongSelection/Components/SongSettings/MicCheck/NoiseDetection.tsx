@@ -3,10 +3,10 @@ import { Warning } from '@mui/icons-material';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from 'modules/GameEvents/hooks';
 import PlayersManager from 'modules/Players/PlayersManager';
-import usePlayerMic from 'modules/hooks/players/usePlayerMic';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
+import { memo, useCallback, useEffect, useRef, useState } from 'react';
 
-export default function NoiseDetection() {
+export default memo(function NoiseDetection() {
   const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
   const isBuiltIn = inputs.some((input) => input.source === 'Microphone');
 
@@ -15,7 +15,7 @@ export default function NoiseDetection() {
     measures.current.push(data);
   }, []);
 
-  usePlayerMic(0, 50, handleMeasure);
+  usePlayerMicData(0, handleMeasure, true, 50);
 
   const [noiseDetected, setNoiseDetected] = useState(false);
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function NoiseDetection() {
       </h4>
     </NoiseWarningContainer>
   );
-}
+});
 
 const NoiseWarningContainer = styled.div<{ visible: boolean }>`
   opacity: ${(props) => (props.visible ? 1 : 0)};

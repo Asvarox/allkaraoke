@@ -234,7 +234,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             </GroupRow>
             {new Array(4).fill(0).map((_, i) => (
               <ListRow key={i}>
-                {new Array(4).fill(0).map((_, i) => (
+                {new Array(songsPerRow).fill(0).map((_, i) => (
                   <SongListEntrySkeleton key={i} />
                 ))}
               </ListRow>
