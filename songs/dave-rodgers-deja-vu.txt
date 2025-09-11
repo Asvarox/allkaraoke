@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dave%20Rodgers&cancion=Deja%20Vu
+#ALLKARAOKE_VOLUME:0,55
 : 21 6 0 Shoot 
 * 29 2 3 your 
 : 33 6 -2 bod

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Franz%20Ferdinand&cancion=Take%20Me%20Out
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,85
 : 14 4 71 So
 : 20 4 74  if
 : 26 3 76  you're

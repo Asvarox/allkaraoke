@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=161988
 #ALLKARAOKE_REALBPM:150
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24085
-#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,79
 #MP3:Five Finger Death Punch - Wrong Side Of Heaven.mp3
 #START:23.7
 #END:299000

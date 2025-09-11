@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:181
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:amazarashi - Kisetsu wa Tsugitsugi Shindeiku (TV).mp3
 #COVER:amazarashi - Kisetsu wa Tsugitsugi Shindeiku (TV) [CO].jpg
 #MEDLEYSTARTBEAT:1028

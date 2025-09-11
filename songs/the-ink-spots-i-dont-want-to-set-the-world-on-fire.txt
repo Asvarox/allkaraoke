@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22711
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:The Ink Spots - I Don’t Want To Set The World On Fire.mp3
 : 23 15 -3 I 
 : 39 15 0 don’t 

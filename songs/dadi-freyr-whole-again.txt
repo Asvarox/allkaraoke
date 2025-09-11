@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:177
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27448
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Daði Freyr - Whole Again (Live).mp3
 #COVER:Daði Freyr - Whole Again (Live) [CO].jpg
 #BACKGROUND:Daði Freyr - Whole Again (Live) [BG].jpg

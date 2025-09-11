@@ -12,6 +12,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:113
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Can't%20stop%20the%20feeling!
+#ALLKARAOKE_VOLUME:0,62
 F 15 4 14 Uh
 - 19 32
 - 32

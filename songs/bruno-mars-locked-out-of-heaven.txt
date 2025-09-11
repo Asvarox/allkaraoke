@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars
+#ALLKARAOKE_VOLUME:0,5
 : 10 2 5 Oh 
 : 14 2 10 yeah 
 : 18 3 9 yeah

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=249
-#ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_VOLUME:0,57
+#ALLKARAOKE_OLDVOLUME:0,82
 #MP3:Coldplay - Fix You (Album Version).mp3
 : 19 3 -2 When 
 : 23 3 -2 you 

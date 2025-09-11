@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Ring+Of+Fire&idioma=en
+#ALLKARAOKE_VOLUME:0,78
 : 14 8 50 Love
 - 22
 : 33 1 50 Is 

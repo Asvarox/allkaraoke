@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sebmolder
 #ALLKARAOKE_REALBPM:174
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Harry%20Styles&cancion=As%20It%20Was
-#ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,56
 - 0 316
 - 316
 : 339 3 1 Hold

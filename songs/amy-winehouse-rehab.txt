@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:73
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse
+#ALLKARAOKE_VOLUME:0,5
 : 19 3 53 They 
 : 24 3 55 tried 
 : 29 3 57 to 

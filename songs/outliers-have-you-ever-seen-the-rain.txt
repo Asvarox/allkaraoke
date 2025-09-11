@@ -13,7 +13,8 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain
-#ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_OLDVOLUME:0,71
 #MP3:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3
 #COVER:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain [CO].jpg
 #BACKGROUND:Outliers vs. John Fogerty & Creedence Clearwater Revival - Have You Ever Seen The Rain [BG].jpg

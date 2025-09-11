@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:58
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=RdTBml4oOZ8
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Luciano Pavarotti - Nessun Dorma.mp3
 #COVER:Luciano Pavarotti - Nessun Dorma.jpg
 : 13 2 11 Nes

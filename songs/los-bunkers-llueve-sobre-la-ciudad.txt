@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:CL
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Llueve Sobre La Ciudad
 #MP3:Los Bunkers - Llueve sobre la ciudad.mp3
 #COVER:Los Bunkers - Llueve sobre la ciudad [CO].jpg

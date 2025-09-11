@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Knights%20of%20Cydonia
+#ALLKARAOKE_VOLUME:0,7
 : 0 11 4 Ah
 : 14 12 4  Ah
 : 29 24 2  Ah

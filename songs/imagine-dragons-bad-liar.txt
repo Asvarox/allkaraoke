@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Bad%20Liar
+#ALLKARAOKE_VOLUME:0,56
 : 0 2 4 Oh,
 : 3 3 4  hush,
 : 12 6 7  my

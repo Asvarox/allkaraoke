@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Baha Men - Who Let The Dogs Out
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #MP3:Baha Men - Who Let The Dogs Out.mp3
 : 17 2 7 Who 
 : 21 2 7 let 

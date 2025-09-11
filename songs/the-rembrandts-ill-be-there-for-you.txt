@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:93
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 0 1 4 So
 : 4 6 9  no
 : 12 5 11  one

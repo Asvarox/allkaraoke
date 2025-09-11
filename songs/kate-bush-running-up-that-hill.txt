@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Running+Up+That+Hill
+#ALLKARAOKE_VOLUME:0,98
 : 14 2 67 It 
 : 16 2 67 does
 : 18 2 67 n't 

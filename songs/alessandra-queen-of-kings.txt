@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168173
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27127
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Alessandra - Queen Of Kings.mp3
 #COVER:Alessandra - Queen Of Kings [CO].jpg
 #BACKGROUND:Alessandra - Queen Of Kings [BG].jpg

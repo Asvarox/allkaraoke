@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:-30
 #ALLKARAOKE_SOURCEURL:Smokey Robinson & The Miracles - The Tracks Of My Tears
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #MP3:Smokey Robinson & The Miracles - The Tracks Of My Tears.mp3
 : 26 7 11 Peo
 : 34 8 14 ple 

@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga%2C%20Bradley%20Cooper&cancion=Shallow
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,91
+#ALLKARAOKE_OLDVOLUME:0,75
 : 25 2 2 Tell
 : 29 2 4 ~ 
 : 33 4 4 me 

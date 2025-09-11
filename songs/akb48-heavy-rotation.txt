@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:178
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=lkHlnWFnA0c&t=1s
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,75
 #COVER:AKB48 - Heavy Rotation [CO].jpg
 #MP3:AKB48 - Heavy Rotation.mp3
 : 24 3 14 One, 

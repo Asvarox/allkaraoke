@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=chainsaw+man
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:Kenshi Yonezu - KICK BACK (TV).mp3
 #COVER:Kenshi Yonezu - KICK BACK (TV) [CO].jpg
 #MEDLEYSTARTBEAT:1148

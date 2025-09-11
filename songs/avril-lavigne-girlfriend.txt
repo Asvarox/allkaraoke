@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Girlfriend
+#ALLKARAOKE_VOLUME:0,58
 : 22 5 9 Hey! 
 : 30 5 9 Hey! 
 : 38 5 9 You! 

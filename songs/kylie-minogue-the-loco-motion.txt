@@ -12,6 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:AU
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue
+#ALLKARAOKE_VOLUME:1
 : 17 3 3 E
 : 21 3 5 very
 : 25 3 3 bo

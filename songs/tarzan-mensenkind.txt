@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:142
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tarzan&cancion=Mensenkind
+#ALLKARAOKE_VOLUME:1
 : 20 6 63 O 
 : 27 2 63 de 
 : 31 4 63 kracht 

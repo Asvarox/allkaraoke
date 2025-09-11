@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=wolf359
 #ALLKARAOKE_REALBPM:185
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Eve&cancion=Kaikai%20Kitan%20(TV)
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Eve - Kaikai Kitan (TV).mp3
 #COVER:Eve - Kaikai Kitan (TV).jpg
 #MEDLEYSTARTBEAT:749

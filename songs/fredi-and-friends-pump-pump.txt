@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22235
 #ALLKARAOKE_PREVIEWEND:177
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Fredi and Friends - Pump-Pump (ESC 1976 Finland).mp3
 #START:86.0
 : 19 2 7 I 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=vV3l_1j8pPE
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #P1:Kibou no uta
 #MP3:ULTRA TOWER - Kibou no Uta (TV).mp3
 #COVER:ULTRA TOWER - Kibou no Uta (TV) [CO].jpg

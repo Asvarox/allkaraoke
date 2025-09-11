@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qY_3i59b8g4
 #ALLKARAOKE_PREVIEWEND:229
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #MP3:Partenaire Particulier - Partenaire particulier.mp3
 : 21 3 6 Je 
 : 28 1 6 suis 

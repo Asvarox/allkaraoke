@@ -12,7 +12,8 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:90
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?busqueda=Papa+Roach+Scars
-#ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,77
 #MP3:Papa Roach - Scars.mp3
 #COVER:Papa Roach - Scars.jpg
 : 14 1 5 I 

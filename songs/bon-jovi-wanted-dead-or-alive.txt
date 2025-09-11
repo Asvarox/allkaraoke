@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Wanted%20dead%20or%20alive
+#ALLKARAOKE_VOLUME:0,51
 : 0 3 14 It's
 : 5 4 17  all
 : 11 4 12 ~

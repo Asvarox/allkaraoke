@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran%20and%20Elton%20John&cancion=Merry%20Christmas
-#ALLKARAOKE_VOLUME:0,72
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,72
 : 26 7 -5 Build 
 : 37 2 0 the 
 : 43 4 2 fire

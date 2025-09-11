@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=paranoik
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?cancion=Welcome%20To%20My%20Life&sid=0e38b717db9498f7c126e4ed49f2bdbd
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,98
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Simple Plan - Welcome To My Life.mp3
 #COVER:Simple Plan - Welcome To My Life.jpg
 #BACKGROUND:Simple Plan - Welcome To My Life [BG].jpg

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=51165
 #ALLKARAOKE_REALBPM:178
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29382
-#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,85
 #MP3:Hoshimachi Suisei - Stellar Stellar.mp3
 #COVER:Hoshimachi Suisei - Stellar Stellar [CO].jpg
 #BACKGROUND:Hoshimachi Suisei - Stellar Stellar [BG].jpg

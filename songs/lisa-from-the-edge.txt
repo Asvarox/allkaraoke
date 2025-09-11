@@ -16,7 +16,8 @@
 #ALLKARAOKE_REALBPM:162
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=f0F9cHyNiQY&ab_channel=%E3%81%A0%E3%81%84GO
 #ALLKARAOKE_PREVIEWEND:87
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,76
 #MP3:FictionJunction feat. LiSA - from the edge (TV).mp3
 #COVER:FictionJunction feat. LiSA - from the edge (TV) [CO].jpg
 #MEDLEYSTARTBEAT:708

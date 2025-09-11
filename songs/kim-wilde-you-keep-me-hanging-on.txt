@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:134
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=You+keep+me+hanging+on
+#ALLKARAOKE_VOLUME:1
 : 16 2 10 Keep
 : 19 3 12 ~ 
 : 25 1 10 me

@@ -14,7 +14,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=771
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3076
-#ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_OLDVOLUME:0,74
 #MP3:France Gall - Poupée de cire, poupée de son.mp3
 #START:5.5
 : 20 8 8 Je 

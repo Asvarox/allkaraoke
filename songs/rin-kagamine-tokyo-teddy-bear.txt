@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Rin%20Kagamine&cancion=Tokyo%20Teddy%20Bear
-#ALLKARAOKE_VOLUME:0,84
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,84
 #P1:Tokyo Teddy Bear
 #COVER:Rin Kagamine - Tokyo Teddy Bear [CO].jpg
 #MP3:Rin Kagamine - Tokyo Teddy Bear.mp3

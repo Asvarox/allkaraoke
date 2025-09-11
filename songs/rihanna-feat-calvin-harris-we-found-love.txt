@@ -15,6 +15,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Rihanna%20feat.%20Calvin%20Harris
+#ALLKARAOKE_VOLUME:1
 : 17 3 8 Yel
 : 21 3 10 low 
 : 25 3 10 dia

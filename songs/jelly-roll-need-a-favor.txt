@@ -12,7 +12,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8481
 #ALLKARAOKE_REALBPM:158
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27383
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,8
 #MP3:Jelly Roll - Need A Favor.mp3
 #COVER:Jelly Roll - Need A Favor [CO].jpg
 #BACKGROUND:Jelly Roll - Need A Favor [BG].jpg

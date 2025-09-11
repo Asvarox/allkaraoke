@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=tongas%20pla
 #ALLKARAOKE_REALBPM:113
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=El+Cuarteto+de+Nos
-#ALLKARAOKE_VOLUME:0,78
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,78
 #MP3:El Cuarteto de Nos - El hijo de Hernández.mp3
 #COVER:El Cuarteto de Nos - El hijo de Hernández.jpg
 #BACKGROUND:El Cuarteto de Nos - El hijo de Hernández [BG].jpg

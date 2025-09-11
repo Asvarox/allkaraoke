@@ -11,7 +11,8 @@
 #ALLKARAOKE_LASTUPDATE:2025-02-04T13:23:59.652Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:122
-#ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,75
 #MP3:Miku Hatsune & Len & Rin Kagamine & Luka Megurine & Gumi & Yuki Kaai - Mr.Music.mp3
 #COVER:Miku Hatsune & Len & Rin Kagamine & Luka Megurine & Gumi & Yuki Kaai - Mr.Music [CO].jpg
 #MEDLEYSTARTBEAT:940

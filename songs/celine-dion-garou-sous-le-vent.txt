@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:141
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion%20%26%20Garou&cancion=Sous%20le%20vent
+#ALLKARAOKE_VOLUME:0,62
 : 9 2 45 Et 
 : 11 1 57 si 
 : 13 1 57 tu 

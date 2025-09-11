@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:168
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 #COVER:Motohiro Hata - Toumei Datta Sekai (TV).jpg
 #MP3:Motohiro Hata - Toumei Datta Sekai (TV).mp3
 : 22 6 4 oh

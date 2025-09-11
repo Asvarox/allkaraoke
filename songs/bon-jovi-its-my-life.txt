@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 : 16 3 10 This 
 : 20 2 12 ain't 
 : 23 1 12 a 

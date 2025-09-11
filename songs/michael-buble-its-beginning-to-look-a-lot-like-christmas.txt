@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:95
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Bubl%C3%A9&cancion=It's%20Beginning%20to%20Look%20a%20lot%20Like%20Christmas%20(Live)
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 26 4 -4 It's 
 : 41 3 -3 be
 : 46 4 -1 gin

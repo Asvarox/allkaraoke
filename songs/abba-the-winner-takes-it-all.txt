@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:61
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All
+#ALLKARAOKE_VOLUME:0,62
 : 0 7 61 I
 : 7 6 63  don't
 : 14 4 65  wan

@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mark%20Ronson%20ft%20%20Miley%20Cyrus&cancion=Nothing%20Breaks%20Like%20a%20Heart
+#ALLKARAOKE_VOLUME:0,5
 : 15 2 7 This 
 : 19 4 7 world 
 : 25 4 7 can 

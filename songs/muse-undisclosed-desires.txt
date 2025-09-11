@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=webo
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Undisclosed%20desires
+#ALLKARAOKE_VOLUME:0,88
 : 3 2 -2 I
 : 8 8 -2  know
 : 21 4 0  you've

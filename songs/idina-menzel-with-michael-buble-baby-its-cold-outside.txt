@@ -13,7 +13,8 @@
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=116579
 #ALLKARAOKE_REALBPM:113
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=20441
-#ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_VOLUME:0,63
+#ALLKARAOKE_OLDVOLUME:0,76
 #P1:Michael Bublé
 #P2:Idina Menzel
 - 0 36

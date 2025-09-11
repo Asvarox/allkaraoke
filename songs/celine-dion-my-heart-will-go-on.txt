@@ -15,7 +15,8 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On
-#ALLKARAOKE_VOLUME:0,8
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:0,8
 : 26 20 16 E
 : 48 6 16 very 
 : 56 14 16 night 

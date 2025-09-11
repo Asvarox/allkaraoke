@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Maximum%20The%20Hormone&cancion=Chuu%20Chuu%20Lovely%20Muni%20Muni%20Mura%20Mura%20Purin%20Purin%20Boron%20Nururu%20Rerorero
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_OLDVOLUME:0,5
 #COVER:Maximum The Hormone - Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero.jpg
 #MP3:Maximum The Hormone - Chuu Chuu Lovely Muni Muni Mura Mura Purin Purin Boron Nururu Rerorero.mp3
 #MEDLEYSTARTBEAT:2627

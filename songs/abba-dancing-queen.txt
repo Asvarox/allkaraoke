@@ -13,6 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Dancing%20Queen
+#ALLKARAOKE_VOLUME:0,5
 : 0 14 71 Ooh
 : 15 1 73  ooh
 : 17 2 71 ~
