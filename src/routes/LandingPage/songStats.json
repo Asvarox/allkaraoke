@@ -29,6 +29,7 @@
     "Kelly Clarkson",
     "Lana Del Rey",
     "Backstreet Boys",
+    "Jamiroquai",
     "Maroon 5",
     "Miley Cyrus",
     "The Black Eyed Peas",
@@ -36,6 +37,7 @@
     "Avril Lavigne",
     "Beyoncé",
     "Elton John",
+    "INXS",
     "Paramore",
     "The Weeknd",
     "Breaking Benjamin",
@@ -60,6 +62,7 @@
     "Rod Stewart",
     "Sabaton",
     "Thirty Seconds to Mars",
+    "Three Days Grace",
     "5 Seconds of Summer",
     "Arctic Monkeys",
     "Céline Dion",
@@ -71,7 +74,6 @@
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
-    "Three Days Grace",
     "Whitney Houston",
     "Bon Jovi",
     "Depeche Mode",
@@ -118,6 +120,7 @@
     "Papa Roach",
     "Robbie Williams",
     "Simon & Garfunkel",
+    "Texas",
     "The Smashing Pumpkins",
     "The Who",
     "twenty øne piløts",
@@ -135,21 +138,18 @@
     "Guns N' Roses",
     "Heart",
     "Hollywood Undead",
-    "INXS",
     "Justin Bieber",
     "Justin Timberlake",
     "Keane",
     "KISS",
     "KoRn",
+    "Natasha Bedingfield",
     "Ne-Yo",
     "Nelly Furtado",
     "Ozzy Osbourne",
     "P!nk",
     "Prince and the Revolution",
-    "Seal",
-    "Selena Gomez & The Scene",
-    "Shakira",
-    "Shania Twain"
+    "Seal"
   ],
   "languages": [
     "Armenian",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5100
+  "songs": 5158
 }

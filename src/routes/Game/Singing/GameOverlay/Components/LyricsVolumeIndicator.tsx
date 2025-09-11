@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
-import { VolumeIndicator } from 'modules/Elements/VolumeIndicator';
-import InputManager from 'modules/GameEngine/Input/InputManager';
+import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
-import { ComponentProps } from 'react';
+import { ComponentProps, memo } from 'react';
 import Ping from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
 import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
@@ -12,12 +11,11 @@ interface Props extends ComponentProps<typeof Container> {
 }
 
 function LyricsVolumeIndicator({ player, ...props }: Props) {
-  const playerVolume = InputManager.getPlayerVolume(player.number);
   const status = usePlayerMicStatus(player.number);
 
   return (
     <Container {...props}>
-      {status !== 'unavailable' && <VolumeIndicator playerNumber={player.number} volume={playerVolume} />}
+      {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} />}
       <StyledPlayerStatus status={status} tooltipPosition="start" />
       <StyledPing playerNumber={player.number} />
     </Container>
@@ -41,4 +39,4 @@ const StyledPing = styled(Ping)`
   -webkit-text-stroke: 0.1rem black;
 `;
 
-export default LyricsVolumeIndicator;
+export default memo(LyricsVolumeIndicator);

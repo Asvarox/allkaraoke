@@ -1,0 +1,372 @@
+#ARTIST:Four Tops
+#TITLE:Reach Out I’ll Be There
+#BPM:233,75
+#YEAR:1966
+#VIDEO:v=2EaflX0MWRo
+#GENRE:Soul
+#LANGUAGE:English
+#GAP:14713,262032085562
+#ALLKARAOKE_ID:four-tops-reach-out-ill-be-there
+#ALLKARAOKE_SID:5104
+#ALLKARAOKE_LASTUPDATE:2025-09-07T15:23:40.638Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:17
+#ALLKARAOKE_SOURCEURL:Four Tops - Reach Out I’ll Be There
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Four Tops - Reach Out I’ll Be There.mp3
+#COVER:Four Tops - Reach Out I’ll Be There [CO].jpg
+#BACKGROUND:Four Tops - Reach Out I’ll Be There [BG].jpg
+: 16 3 3 Now 
+: 20 2 6 if 
+: 23 2 3 you 
+: 27 6 6 feel
+- 33
+: 35 3 6 That 
+: 39 2 3 you 
+: 43 4 6 can’t 
+: 51 2 6 go 
+: 55 8 8 on
+- 63
+: 79 2 1 Be
+: 83 4 3 cause 
+: 91 2 6 all 
+: 95 2 3 of 
+: 99 4 6 your
+- 103
+: 106 3 6 Hope 
+: 110 4 6 is 
+* 118 9 8 gone
+- 127
+: 142 3 1 And 
+: 146 3 3 your 
+: 149 2 6 life 
+: 153 2 3 is 
+: 157 3 6 filled
+- 160
+: 163 3 6 With 
+: 169 3 6 much 
+: 177 3 3 con
+: 181 5 8 fu
+: 189 3 1 sion
+- 192
+: 204 2 1 Un
+: 208 3 3 til 
+: 215 2 6 hap
+: 219 2 3 pi
+: 221 2 6 ness
+- 223
+: 228 2 3 Is 
+: 231 2 6 just 
+: 235 2 3 an 
+: 239 2 6 il
+: 243 6 8 lu
+: 250 3 1 sion
+- 253
+: 266 3 1 And 
+: 270 3 3 your 
+: 274 2 8 world
+: 276 3 6 ~ 
+: 280 2 3 a
+: 282 6 6 round
+- 288
+: 290 2 6 Is 
+: 294 1 6 crum
+: 296 1 6 bl
+: 298 5 6 ing 
+: 305 6 8 down
+- 311
+: 325 7 10 Dar
+: 332 4 8 ling
+* 336 3 6 ~
+- 339 344
+- 344
+F 360 1 19 Come 
+F 362 2 19 on 
+F 366 4 19 girl
+- 370
+F 383 2 19 Reach 
+F 386 2 19 on 
+F 389 2 19 out 
+F 393 1 19 for 
+F 395 3 19 me
+- 398 403
+- 403
+: 419 3 5 Reach 
+: 423 2 6 out 
+: 426 3 2 for 
+: 430 5 10 me
+: 435 2 8 ~
+: 437 2 6 ~
+- 439 473
+- 473
+F 489 2 19 Ha
+- 491
+: 497 22 5 I’ll 
+: 520 3 10 be 
+: 524 18 3 there
+- 542
+: 552 3 3 With 
+: 556 3 3 a 
+: 560 4 8 love
+: 564 2 6 ~ 
+: 568 3 6 that 
+: 572 3 6 will
+- 575
+: 576 3 5 Shel
+: 580 6 3 ter 
+: 587 6 8 you
+: 593 2 6 ~
+: 595 5 5 ~
+- 600 606
+- 606
+* 622 21 5 I’ll 
+: 645 3 10 be 
+: 649 17 3 there
+- 666
+: 676 3 3 With 
+: 680 3 3 a 
+: 684 4 8 love
+: 688 2 6 ~ 
+: 692 3 6 that 
+: 696 3 6 will
+- 699
+: 700 3 5 See 
+: 704 6 3 you 
+: 711 6 8 through
+: 717 2 6 ~
+: 719 5 5 ~
+- 724 745
+- 745
+: 761 3 3 When 
+: 765 2 6 you 
+: 769 3 6 feel
+: 773 3 3 ~ 
+: 777 4 8 lost
+- 781
+: 788 2 6 And 
+: 790 2 3 a
+: 792 2 6 bout 
+: 796 2 6 to 
+: 800 2 6 give 
+: 804 4 8 up
+- 808 811
+- 811
+: 827 3 1 ’Cause 
+: 832 3 3 your 
+: 839 3 6 best 
+: 847 3 6 just
+- 850
+: 855 2 6 Ain’t 
+* 859 3 10 good 
+: 863 2 8 e
+: 866 3 5 nough
+- 869 874
+- 874
+: 890 3 1 And 
+: 894 2 3 you 
+: 897 3 6 feel 
+: 902 2 3 the 
+: 904 3 6 world
+- 907
+: 913 3 3 Has 
+: 920 4 6 grown 
+: 929 8 8 cold
+- 937 940
+- 940
+: 956 2 1 And 
+: 960 2 3 you’re 
+: 963 2 6 drift
+: 967 1 6 ing 
+: 969 2 6 out
+- 971
+: 979 2 6 All 
+: 983 2 6 on 
+: 987 2 3 your 
+: 991 5 8 own
+- 996 999
+- 999
+: 1015 2 1 And 
+: 1018 2 3 you 
+* 1022 5 6 need 
+: 1029 3 3 a
+- 1032
+: 1042 5 6 Hand 
+: 1050 2 3 to 
+: 1054 7 8 hold
+- 1061
+: 1073 4 8 Dar
+: 1077 4 10 ~
+: 1081 4 8 ling
+: 1085 3 6 ~
+- 1088 1095
+- 1095
+F 1111 2 19 Come 
+F 1114 3 19 on 
+F 1118 4 19 girl
+- 1122
+F 1132 2 19 Reach 
+F 1135 3 19 out 
+F 1139 2 19 for 
+F 1142 3 19 me
+- 1145 1154
+- 1154
+: 1170 1 3 Reach 
+: 1172 4 6 out 
+: 1178 2 3 for 
+: 1183 3 10 me
+: 1186 4 8 ~
+: 1190 2 6 ~
+: 1192 3 3 ~
+- 1195 1221
+- 1221
+F 1237 2 19 Ha
+- 1239
+: 1245 23 5 I’ll 
+: 1269 3 10 be 
+: 1273 19 3 there
+- 1292
+: 1304 3 3 To 
+: 1308 4 8 love
+: 1312 2 6 ~ 
+: 1316 3 6 and
+- 1319
+: 1323 2 5 Com
+: 1327 4 3 fort 
+: 1335 5 8 you
+: 1340 2 6 ~
+: 1342 2 8 ~
+: 1344 2 6 ~
+: 1346 5 5 ~
+- 1351
+: 1364 2 3 And 
+: 1367 25 5 I’ll 
+: 1393 3 10 be 
+: 1397 17 3 there
+- 1414
+: 1429 2 3 To 
+: 1432 4 8 che
+: 1436 2 6 ~
+: 1440 3 6 rish 
+: 1444 3 6 and 
+: 1448 4 5 care
+: 1452 2 3 ~
+- 1454
+: 1456 3 3 For 
+: 1460 5 8 you
+: 1465 2 6 ~
+: 1467 2 8 ~
+: 1469 2 6 ~
+: 1471 4 5 ~
+- 1475 1750
+- 1750
+: 1766 3 3 I 
+: 1770 2 5 can 
+: 1774 2 6 tell 
+: 1778 3 3 the 
+: 1782 2 6 way 
+: 1786 2 3 you
+- 1788
+: 1790 6 6 Hang 
+: 1798 2 3 your 
+* 1802 6 8 head
+- 1808 1809
+- 1809
+: 1825 1 5 You’re 
+: 1827 1 5 not 
+: 1829 3 5 in 
+: 1833 5 8 love 
+: 1840 4 3 now
+- 1844
+: 1856 2 3 Now 
+: 1860 2 6 you’re 
+: 1862 2 3 a
+: 1868 6 8 fraid
+- 1874
+: 1888 3 1 And 
+: 1892 2 3 through 
+: 1895 2 6 your 
+: 1899 5 6 tears
+- 1904
+: 1907 2 6 You
+: 1911 2 3 ~ 
+: 1915 2 6 look 
+: 1918 5 6 a
+* 1926 6 8 round
+- 1932 1933
+- 1933
+: 1949 2 1 But 
+: 1953 2 3 there’s 
+: 1957 4 6 no 
+: 1965 3 6 piece 
+: 1969 2 3 of 
+: 1973 5 6 mind
+- 1978
+: 1980 2 3 To 
+: 1984 2 6 be 
+: 1988 6 8 found
+- 1994
+F 2005 1 19 I 
+F 2007 2 19 know 
+F 2010 1 19 what 
+F 2012 1 19 you’re 
+F 2014 5 19 thinking
+- 2019
+F 2026 1 19 You’re 
+F 2028 7 19 alone 
+F 2036 3 19 now
+- 2039
+F 2046 1 19 No 
+F 2048 3 19 love 
+F 2052 1 19 of 
+F 2054 1 19 your 
+F 2056 3 19 own
+- 2059
+: 2066 2 1 But 
+* 2070 8 10 dar
+: 2078 4 8 ling
+: 2082 2 6 ~
+- 2084 2093
+- 2093
+F 2109 1 19 Come 
+F 2111 1 19 on 
+F 2114 4 19 girl
+- 2118
+F 2126 1 19 Reach 
+F 2129 2 19 out 
+F 2133 1 19 for 
+F 2135 2 19 me
+- 2137
+: 2149 3 10 Reach 
+: 2153 5 8 out
+* 2158 5 6 ~
+: 2163 3 3 ~
+- 2166 2204
+- 2204
+F 2220 1 19 Just 
+F 2222 1 19 look 
+F 2224 2 19 over 
+F 2227 1 19 your 
+F 2229 5 19 shoulder
+- 2234
+: 2243 23 5 I’ll 
+: 2267 3 10 be 
+: 2271 18 3 there
+- 2289
+: 2301 3 3 To 
+: 2305 3 8 give 
+: 2309 3 8 you 
+: 2313 3 6 all 
+: 2317 3 6 the 
+: 2321 4 5 love
+: 2325 2 3 ~
+- 2327
+: 2329 3 3 You 
+: 2333 6 8 need
+: 2339 2 6 ~
+: 2341 7 5 ~
+- 2348
+: 2363 2 3 And 
+: 2366 24 5 I’ll 
+: 2391 3 10 be 
+* 2395 18 3 there
+E

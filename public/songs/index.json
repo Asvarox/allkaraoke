@@ -719,7 +719,7 @@
     "gap": 52.033320711851616,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:39.098Z",
+    "lastUpdate": "2025-09-03T15:15:58.459Z",
     "genre": "R&B",
     "realBpm": 16,
     "volume": 0.5,
@@ -747,7 +747,7 @@
     "gap": 15228.095238095239,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:39.240Z",
+    "lastUpdate": "2025-09-03T15:16:32.420Z",
     "genre": "R&B",
     "realBpm": 16,
     "volume": 0.5,
@@ -2177,6 +2177,34 @@
     "local": false
   },
   {
+    "id": "abingdon-boys-school-howling",
+    "title": "Howling",
+    "artist": "Abingdon Boys School",
+    "video": "jJaW8NUdUUc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 332,
+    "gap": 29726.024096385543,
+    "year": "2007",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-08T06:42:12.797Z",
+    "genre": "Anime",
+    "realBpm": 166,
+    "volume": 0.7,
+    "author": "kyoczek",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=22555",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5126,
+    "tracksCount": 1,
+    "search": "abingdonboysschoolhowling",
+    "local": false
+  },
+  {
     "id": "abor-tynna-baller-esc-2025-germany",
     "title": "Baller (ESC 2025 Germany)",
     "artist": "Abor & Tynna",
@@ -2393,7 +2421,7 @@
     "gap": 9084.547461368653,
     "year": "1998",
     "artistOrigin": "SE",
-    "lastUpdate": "2025-09-05T00:12:37.872Z",
+    "lastUpdate": "2025-09-03T07:09:32.941Z",
     "genre": "Pop",
     "realBpm": 52,
     "volume": 0.5,
@@ -15693,6 +15721,62 @@
     "local": false
   },
   {
+    "id": "beverley-knight-come-as-you-are",
+    "title": "Come As You Are",
+    "artist": "Beverley Knight",
+    "video": "JufzLn3Ho2A",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 13271.596638655463,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:21:50.275Z",
+    "genre": "R&B",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Beverley Knight - Come As You Are",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5110,
+    "tracksCount": 1,
+    "search": "beverleyknightcomeasyouare",
+    "local": false
+  },
+  {
+    "id": "beverley-knight-shoulda-woulda-coulda",
+    "title": "Shoulda Woulda Coulda",
+    "artist": "Beverley Knight",
+    "video": "0d0JUiBCakg",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.2,
+    "gap": 13003.8067061144,
+    "year": "2002",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:21:29.733Z",
+    "genre": "R&B",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Beverley Knight - Shoulda Woulda Coulda",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5109,
+    "tracksCount": 1,
+    "search": "beverleyknightshouldawouldacoulda",
+    "local": false
+  },
+  {
     "id": "beyonce-blow",
     "title": "Blow",
     "artist": "Beyoncé",
@@ -16969,6 +17053,35 @@
     "shortId": 560,
     "tracksCount": 1,
     "search": "billieeilishwhenthepartysover",
+    "local": false
+  },
+  {
+    "id": "billie-eilish-wildflower",
+    "title": "Wildflower",
+    "artist": "Billie Eilish",
+    "video": "l08Zw-RY__Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 13906.486486486487,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:23:22.546Z",
+    "genre": "Pop",
+    "realBpm": 148,
+    "volume": 0.6,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=30567",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5103,
+    "tracksCount": 1,
+    "search": "billieeilishwildflower",
     "local": false
   },
   {
@@ -20654,7 +20767,7 @@
     "bpm": 300,
     "gap": 13900,
     "year": "2001",
-    "lastUpdate": "2025-09-05T00:12:37.878Z",
+    "lastUpdate": "2025-09-03T07:10:11.960Z",
     "genre": "Pop",
     "realBpm": 6,
     "volume": 0.5,
@@ -30200,6 +30313,62 @@
     "local": false
   },
   {
+    "id": "commodores-brick-house",
+    "title": "Brick House",
+    "artist": "Commodores",
+    "video": "MtOlJfAGqxw",
+    "language": [
+      "English"
+    ],
+    "bpm": 211.39999999999992,
+    "gap": 4440.9514747859175,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:26:02.377Z",
+    "genre": "Funk",
+    "realBpm": 41,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Commodores - Brick House",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5105,
+    "tracksCount": 1,
+    "search": "commodoresbrickhouse",
+    "local": false
+  },
+  {
+    "id": "commodores-easy",
+    "title": "Easy",
+    "artist": "Commodores",
+    "video": "xh51jXqsz6w",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 14837.272727272728,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:26:14.160Z",
+    "genre": "Soul",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Commodores - Easy",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5106,
+    "tracksCount": 1,
+    "search": "commodoreseasy",
+    "local": false
+  },
+  {
     "id": "conchita-wurst-rise-like-a-phoenix",
     "title": "Rise Like A Phoenix",
     "artist": "Conchita Wurst",
@@ -32025,9 +32194,9 @@
       "Spanish"
     ],
     "bpm": 240,
-    "gap": 973,
+    "gap": 1223,
     "year": "2011",
-    "lastUpdate": "2024-02-13T05:38:33.541Z",
+    "lastUpdate": "2025-09-08T05:12:04.814Z",
     "genre": "Reggaeton",
     "realBpm": 120,
     "previewStart": 85,
@@ -32827,7 +32996,7 @@
     "id": "daniel-caesar-japanese-denim",
     "title": "Japanese Denim",
     "artist": "Daniel Caesar",
-    "video": "6OkneaH-eTA",
+    "video": "FG2PgVl0Nlc",
     "language": [
       "English"
     ],
@@ -32835,7 +33004,7 @@
     "gap": 8490,
     "year": "2015",
     "artistOrigin": "CA",
-    "lastUpdate": "2024-05-14T12:53:14.537Z",
+    "lastUpdate": "2025-09-08T05:10:55.047Z",
     "genre": "Acoustic",
     "realBpm": 124,
     "volume": 0.63,
@@ -44602,7 +44771,7 @@
     "gap": 12890.384615384615,
     "year": "1990",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:38.943Z",
+    "lastUpdate": "2025-09-03T15:14:59.070Z",
     "genre": "Rock",
     "realBpm": 65,
     "volume": 0.5,
@@ -49733,6 +49902,33 @@
     "local": false
   },
   {
+    "id": "four-tops-reach-out-ill-be-there",
+    "title": "Reach Out I’ll Be There",
+    "artist": "Four Tops",
+    "video": "2EaflX0MWRo",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.75,
+    "gap": 14713.262032085562,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:23:40.638Z",
+    "genre": "Soul",
+    "realBpm": 17,
+    "volume": 0.5,
+    "sourceUrl": "Four Tops - Reach Out I’ll Be There",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5104,
+    "tracksCount": 1,
+    "search": "fourtopsreachoutillbethere",
+    "local": false
+  },
+  {
     "id": "fozzy-judas",
     "title": "Judas",
     "artist": "Fozzy",
@@ -54479,6 +54675,63 @@
     "shortId": 1816,
     "tracksCount": 1,
     "search": "gretasalomejonsineverforget",
+    "local": false
+  },
+  {
+    "id": "grinspoon-chemical-heart",
+    "title": "Chemical Heart",
+    "artist": "Grinspoon",
+    "video": "58mXxWuUqYw",
+    "language": [
+      "English"
+    ],
+    "bpm": 308,
+    "gap": 15827.272727272728,
+    "year": "2002",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-11T00:12:12.569Z",
+    "edition": "Singstar Amped [Au]",
+    "genre": "Rock",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "dgmo5046",
+    "sourceUrl": "Grinspoon - Chemical Heart",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5147,
+    "tracksCount": 1,
+    "search": "grinspoonchemicalheart",
+    "local": false
+  },
+  {
+    "id": "grinspoon-hard-act-to-follow",
+    "title": "Hard Act To Follow",
+    "artist": "Grinspoon",
+    "video": "GKmx12kIs-I",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.06,
+    "gap": 4744.6218918226095,
+    "year": "2004",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-11T00:12:11.227Z",
+    "genre": "Rock",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "Grinspoon - Hard Act To Follow",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5133,
+    "tracksCount": 1,
+    "search": "grinspoonhardacttofollow",
     "local": false
   },
   {
@@ -60566,6 +60819,86 @@
     "local": false
   },
   {
+    "id": "inxs-afterglow",
+    "title": "Afterglow",
+    "artist": "INXS",
+    "video": "OnTelUJrDhc",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 10509.433962264151,
+    "year": "2005",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T05:50:30.791Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "sourceUrl": "INXS - Afterglow",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5124,
+    "tracksCount": 1,
+    "search": "inxsafterglow",
+    "local": false
+  },
+  {
+    "id": "inxs-beautiful-girl",
+    "title": "Beautiful Girl",
+    "artist": "INXS",
+    "video": "TLmQ2vxMbn0",
+    "language": [
+      "English"
+    ],
+    "bpm": 353.46,
+    "gap": 39911.4971991173,
+    "year": "1992",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-11T00:12:11.224Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "sourceUrl": "INXS - Beautiful Girl",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5132,
+    "tracksCount": 1,
+    "search": "inxsbeautifulgirl",
+    "local": false
+  },
+  {
+    "id": "inxs-devil-inside",
+    "title": "Devil Inside",
+    "artist": "INXS",
+    "video": "hv_zJrO_ptk",
+    "language": [
+      "English"
+    ],
+    "bpm": 301.0399999999999,
+    "gap": 2074.4468042742415,
+    "year": "1987",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T08:57:03.002Z",
+    "realBpm": 39,
+    "volume": 0.5,
+    "author": "sledge",
+    "sourceUrl": "INXS - Devil Inside",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5128,
+    "tracksCount": 1,
+    "search": "inxsdevilinside",
+    "local": false
+  },
+  {
     "id": "inxs-disappear",
     "title": "Disappear",
     "artist": "INXS",
@@ -60590,6 +60923,87 @@
     "shortId": 2020,
     "tracksCount": 1,
     "search": "inxsdisappear",
+    "local": false
+  },
+  {
+    "id": "inxs-dont-change",
+    "title": "Don’t Change",
+    "artist": "INXS",
+    "video": "sLm3Khusq_8",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.91999999999996,
+    "gap": 47811.19589141599,
+    "year": "1982",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T08:57:45.125Z",
+    "genre": "Rock",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "mus31",
+    "sourceUrl": "INXS - Don’t Change",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5129,
+    "tracksCount": 1,
+    "search": "inxsdontchange",
+    "local": false
+  },
+  {
+    "id": "inxs-hear-that-sound",
+    "title": "Hear That Sound",
+    "artist": "INXS",
+    "video": "7tohrJ7EJIA",
+    "language": [
+      "English"
+    ],
+    "bpm": 219.94,
+    "gap": 16006.993725561517,
+    "year": "1990",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T05:49:26.333Z",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "sledge",
+    "sourceUrl": "INXS - Hear That Sound",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5122,
+    "tracksCount": 1,
+    "search": "inxshearthatsound",
+    "local": false
+  },
+  {
+    "id": "inxs-heaven-sent",
+    "title": "Heaven Sent",
+    "artist": "INXS",
+    "video": "fydm01xmeqk",
+    "language": [
+      "English"
+    ],
+    "bpm": 274.58,
+    "gap": 16500.680020394786,
+    "year": "1992",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-11T00:12:11.218Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "sourceUrl": "INXS - Heaven Sent",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5131,
+    "tracksCount": 1,
+    "search": "inxsheavensent",
     "local": false
   },
   {
@@ -60702,6 +61116,60 @@
     "shortId": 2023,
     "tracksCount": 1,
     "search": "inxsoriginalsin",
+    "local": false
+  },
+  {
+    "id": "inxs-suicide-blonde",
+    "title": "Suicide Blonde",
+    "artist": "INXS",
+    "video": "z0Kid-fjPr8",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 3840,
+    "year": "1990",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T05:49:56.586Z",
+    "genre": "Rock",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "INXS - Suicide Blonde",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5123,
+    "tracksCount": 1,
+    "search": "inxssuicideblonde",
+    "local": false
+  },
+  {
+    "id": "inxs-the-gift",
+    "title": "The Gift",
+    "artist": "INXS",
+    "video": "Aqr9brikgIs",
+    "language": [
+      "English"
+    ],
+    "bpm": 385.83,
+    "gap": 31367.192131249514,
+    "year": "1993",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-08T05:51:39.766Z",
+    "realBpm": 10,
+    "volume": 0.5,
+    "sourceUrl": "INXS - The Gift",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5125,
+    "tracksCount": 1,
+    "search": "inxsthegift",
     "local": false
   },
   {
@@ -61858,6 +62326,60 @@
     "local": false
   },
   {
+    "id": "jamiroquai-alright",
+    "title": "Alright",
+    "artist": "Jamiroquai",
+    "video": "9kXiLeBXzG4",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 21245.29411764706,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-08T05:48:02.720Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamiroquai - Alright",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5121,
+    "tracksCount": 1,
+    "search": "jamiroquaialright",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-canned-heat",
+    "title": "Canned Heat",
+    "artist": "Jamiroquai",
+    "video": "u9muTnTQ5qs",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 14883.90625,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-08T05:47:42.333Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Ultrasinger, mindtakerr, DoubleDee",
+    "sourceUrl": "Jamiroquai - Canned Heat",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5120,
+    "tracksCount": 1,
+    "search": "jamiroquaicannedheat",
+    "local": false
+  },
+  {
     "id": "jamiroquai-cosmic-girl",
     "title": "Cosmic Girl",
     "artist": "Jamiroquai",
@@ -61884,6 +62406,200 @@
     "shortId": 4976,
     "tracksCount": 1,
     "search": "jamiroquaicosmicgirl",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-deeper-underground",
+    "title": "Deeper Underground",
+    "artist": "Jamiroquai",
+    "video": "QjcA2xSH25Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 416,
+    "gap": 58850.38461538462,
+    "year": "1998",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:22:07.642Z",
+    "genre": "Funk",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamiroquai - Deeper Underground",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 5111,
+    "tracksCount": 1,
+    "search": "jamiroquaideeperunderground",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-everybodys-going-to-the-moon",
+    "title": "Everybody’s Going To The Moon",
+    "artist": "Jamiroquai",
+    "video": "Urgn-eHrqvY",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": 10201.627906976744,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:24:51.732Z",
+    "genre": "Pop",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Eggman",
+    "sourceUrl": "Jamiroquai - Everybody’s Going To The Moon",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5115,
+    "tracksCount": 1,
+    "search": "jamiroquaieverybodysgoingtothemoon",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-king-for-a-day",
+    "title": "King For A Day",
+    "artist": "Jamiroquai",
+    "video": "w4AQbsCz1AY",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 21955.29411764706,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-08T05:47:24.197Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Lesla",
+    "sourceUrl": "Jamiroquai - King For A Day",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5119,
+    "tracksCount": 1,
+    "search": "jamiroquaikingforaday",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-little-l",
+    "title": "Little L",
+    "artist": "Jamiroquai",
+    "video": "ITtT7_05TtM",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 23846.39344262295,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:25:21.744Z",
+    "genre": "Funk, Nu-Disco",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Jamiroquai - Little L",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5117,
+    "tracksCount": 1,
+    "search": "jamiroquailittlel",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-love-foolosophy",
+    "title": "Love Foolosophy",
+    "artist": "Jamiroquai",
+    "video": "uYJCP6_zZbg",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.6,
+    "gap": 14803.921113689095,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:24:04.711Z",
+    "realBpm": 13,
+    "volume": 0.5,
+    "author": "PowerOric",
+    "sourceUrl": "Jamiroquai - Love Foolosophy",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5114,
+    "tracksCount": 1,
+    "search": "jamiroquailovefoolosophy",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-seven-days-in-sunny-june",
+    "title": "Seven Days In Sunny June",
+    "artist": "Jamiroquai",
+    "video": "FRSH-egVyzk",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.1,
+    "gap": 18653.479911420436,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:22:32.997Z",
+    "genre": "Funk, Acid Jazz",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Jamiroquai - Seven Days In Sunny June",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5112,
+    "tracksCount": 1,
+    "search": "jamiroquaisevendaysinsunnyjune",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-space-cowboy",
+    "title": "Space Cowboy",
+    "artist": "Jamiroquai",
+    "video": "OPkjnRIdQXQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 222.82,
+    "gap": 4990.2163181043,
+    "year": "1994",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:23:31.282Z",
+    "genre": "Funk",
+    "realBpm": 99,
+    "volume": 0.5,
+    "author": "DoubleDee73",
+    "sourceUrl": "Jamiroquai - Space Cowboy",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5113,
+    "tracksCount": 1,
+    "search": "jamiroquaispacecowboy",
     "local": false
   },
   {
@@ -61942,6 +62658,61 @@
     "shortId": 2062,
     "tracksCount": 1,
     "search": "jamiroquaivirtualinsanity",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-white-knuckle-ride",
+    "title": "White Knuckle Ride",
+    "artist": "Jamiroquai",
+    "video": "k_bQ0h85gY8",
+    "language": [
+      "English"
+    ],
+    "bpm": 251.35,
+    "gap": 14959.478416550626,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-08T05:46:20.673Z",
+    "genre": "Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "Sam003pa",
+    "sourceUrl": "Jamiroquai - White Knuckle Ride",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5118,
+    "tracksCount": 1,
+    "search": "jamiroquaiwhiteknuckleride",
+    "local": false
+  },
+  {
+    "id": "jamiroquai-you-give-me-something",
+    "title": "You Give Me Something",
+    "artist": "Jamiroquai",
+    "video": "OEcBz6VtyDg",
+    "language": [
+      "English"
+    ],
+    "bpm": 241,
+    "gap": 16304.149377593361,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-07T18:25:05.887Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Jamiroquai - You Give Me Something",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5116,
+    "tracksCount": 1,
+    "search": "jamiroquaiyougivemesomething",
     "local": false
   },
   {
@@ -65922,7 +66693,7 @@
     "gap": 9942.659574468085,
     "year": "2004",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:38.941Z",
+    "lastUpdate": "2025-09-03T15:14:28.383Z",
     "genre": "Soul",
     "realBpm": 20,
     "volume": 0.5,
@@ -66662,6 +67433,32 @@
     "shortId": 2220,
     "tracksCount": 1,
     "search": "juanesyerbatero",
+    "local": false
+  },
+  {
+    "id": "judas-priest-turbo-lover",
+    "title": "Turbo Lover",
+    "artist": "Judas Priest",
+    "video": "JhY9GOhFwN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 303.9,
+    "gap": 18182.83316880553,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:11.828Z",
+    "realBpm": 152,
+    "volume": 0.5,
+    "author": "Dummbatzen",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5136,
+    "tracksCount": 1,
+    "search": "judaspriestturbolover",
     "local": false
   },
   {
@@ -78803,6 +79600,33 @@
     "local": false
   },
   {
+    "id": "little-river-band-lonesome-loser",
+    "title": "Lonesome Loser",
+    "artist": "Little River Band",
+    "video": "XIle_6Vzm5A",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 10,
+    "year": "1979",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-11T00:12:11.228Z",
+    "realBpm": 118,
+    "volume": 0.5,
+    "author": "blewmaxx",
+    "sourceUrl": "https://youtu.be/XIle_6Vzm5A",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 5134,
+    "tracksCount": 1,
+    "search": "littleriverbandlonesomeloser",
+    "local": false
+  },
+  {
     "id": "lizar-ciagle-pada",
     "title": "Ciągle Pada",
     "artist": "Lizar",
@@ -79932,6 +80756,32 @@
     "shortId": 2659,
     "tracksCount": 1,
     "search": "lsdthunderclouds",
+    "local": false
+  },
+  {
+    "id": "luca-hanni-she-got-me-esc-2019-switzerland",
+    "title": "She Got Me (ESC 2019 Switzerland)",
+    "artist": "Luca Hänni",
+    "video": "GdSmDZckaAw",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 9330,
+    "year": "2019",
+    "artistOrigin": "CH",
+    "lastUpdate": "2025-09-11T00:12:12.150Z",
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "Su-Metal",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5144,
+    "tracksCount": 1,
+    "search": "lucahannishegotmeesc2019switzerland",
     "local": false
   },
   {
@@ -85980,7 +86830,7 @@
     "gap": 6717.6834823688205,
     "year": "1966",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-05T00:12:40.221Z",
+    "lastUpdate": "2025-09-04T14:21:03.923Z",
     "genre": "R&B",
     "realBpm": 36,
     "volume": 0.5,
@@ -86008,7 +86858,7 @@
     "gap": 1956.2398500936915,
     "year": "1973",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:40.218Z",
+    "lastUpdate": "2025-09-04T14:19:16.896Z",
     "genre": "R&B",
     "realBpm": 50,
     "volume": 0.5,
@@ -86101,7 +86951,7 @@
     "gap": 16525,
     "year": "1971",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:40.220Z",
+    "lastUpdate": "2025-09-04T14:20:47.818Z",
     "genre": "R&B, Soul",
     "realBpm": 30,
     "volume": 0.5,
@@ -86186,7 +87036,7 @@
     "gap": 7455.903614457831,
     "year": "1964",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:40.222Z",
+    "lastUpdate": "2025-09-04T14:21:25.463Z",
     "genre": "Soul",
     "realBpm": 35,
     "volume": 0.5,
@@ -87036,6 +87886,58 @@
     "local": false
   },
   {
+    "id": "megadeth-holy-wars-the-punishment-due",
+    "title": "Holy Wars… The Punishment Due",
+    "artist": "Megadeth",
+    "video": "9d4ui9q7eDM",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 88725.29411764706,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-11T00:12:11.973Z",
+    "realBpm": 130,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5139,
+    "tracksCount": 1,
+    "search": "megadethholywarsthepunishmentdue",
+    "local": false
+  },
+  {
+    "id": "megadeth-symphony-of-destruction",
+    "title": "Symphony Of Destruction",
+    "artist": "Megadeth",
+    "video": "vfpgpf6QVnI",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.6,
+    "gap": 17040.68669527897,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-11T00:12:11.832Z",
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5138,
+    "tracksCount": 1,
+    "search": "megadethsymphonyofdestruction",
+    "local": false
+  },
+  {
     "id": "meghan-trainor-lips-are-movin",
     "title": "Lips Are Movin'",
     "artist": "Meghan Trainor",
@@ -87187,7 +88089,7 @@
     "gap": 21801.774193548386,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:39.917Z",
+    "lastUpdate": "2025-09-04T14:18:13.960Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -94338,6 +95240,91 @@
     "shortId": 3136,
     "tracksCount": 1,
     "search": "natashabedingfieldpocketfulofsunshine",
+    "local": false
+  },
+  {
+    "id": "natasha-bedingfield-single",
+    "title": "Single",
+    "artist": "Natasha Bedingfield",
+    "video": "2AwaA85nEbE",
+    "language": [
+      "English"
+    ],
+    "bpm": 336.3,
+    "gap": 4288.733273862623,
+    "year": "2004",
+    "artistOrigin": "UK",
+    "lastUpdate": "2025-09-11T00:12:12.988Z",
+    "genre": "Pop, Urban",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Natasha Bedingfield - Single",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5156,
+    "tracksCount": 1,
+    "search": "natashabedingfieldsingle",
+    "local": false
+  },
+  {
+    "id": "natasha-bedingfield-soulmate",
+    "title": "Soulmate",
+    "artist": "Natasha Bedingfield",
+    "video": "P27MPi3ZhCg",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.4,
+    "gap": 13881.257565568258,
+    "year": "2007",
+    "artistOrigin": "UK",
+    "lastUpdate": "2025-09-11T00:12:12.987Z",
+    "genre": "Pop",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "mesand",
+    "sourceUrl": "Natasha Bedingfield - Soulmate",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5155,
+    "tracksCount": 1,
+    "search": "natashabedingfieldsoulmate",
+    "local": false
+  },
+  {
+    "id": "natasha-bedingfield-these-words",
+    "title": "These Words",
+    "artist": "Natasha Bedingfield",
+    "video": "e5RuGj0g1tk",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 7194.845360824742,
+    "year": "2004",
+    "artistOrigin": "UK",
+    "lastUpdate": "2025-09-11T00:12:12.993Z",
+    "edition": "SingStar Popworld",
+    "genre": "Urban",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "madman7745",
+    "sourceUrl": "Natasha Bedingfield - These Words",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5159,
+    "tracksCount": 1,
+    "search": "natashabedingfieldthesewords",
     "local": false
   },
   {
@@ -102590,7 +103577,7 @@
     "gap": 46425,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:38.598Z",
+    "lastUpdate": "2025-09-03T07:12:10.258Z",
     "realBpm": 106,
     "volume": 0.5,
     "author": "ears",
@@ -105662,6 +106649,31 @@
     "local": false
   },
   {
+    "id": "postgirobygget-en-solskinnsdag",
+    "title": "En solskinnsdag",
+    "artist": "Postgirobygget",
+    "video": "-pTeyeRV_rc",
+    "language": [
+      "Norwegian"
+    ],
+    "bpm": 240.2,
+    "gap": 8130.832639467111,
+    "year": "1996",
+    "lastUpdate": "2025-09-08T10:49:45.521Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 0.97,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5130,
+    "tracksCount": 1,
+    "search": "postgirobyggetensolskinnsdag",
+    "local": false
+  },
+  {
     "id": "powerwolf-demons-are-a-girls-best-friend",
     "title": "Demons Are A Girl’s Best Friend",
     "artist": "Powerwolf",
@@ -106444,7 +107456,7 @@
     "gap": 10425.180412371134,
     "year": "1979",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:38.751Z",
+    "lastUpdate": "2025-09-03T07:12:31.221Z",
     "genre": "Rock",
     "realBpm": 26,
     "volume": 0.5,
@@ -106563,7 +107575,7 @@
     "gap": 6080,
     "year": "1978",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-05T00:12:38.753Z",
+    "lastUpdate": "2025-09-03T07:12:56.818Z",
     "genre": "Rock",
     "realBpm": 42,
     "volume": 0.5,
@@ -110219,7 +111231,7 @@
     "gap": 14577.272727272728,
     "year": "1981",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:40.366Z",
+    "lastUpdate": "2025-09-04T14:21:39.896Z",
     "genre": "Funk",
     "realBpm": 32,
     "volume": 0.5,
@@ -112649,6 +113661,90 @@
     "local": false
   },
   {
+    "id": "ronan-keating-feat-yusuf-father-and-son",
+    "title": "Father And Son",
+    "artist": "Ronan Keating feat. Yusuf",
+    "video": "aVbbYYUMI-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 287.58,
+    "gap": 7005.97141664928,
+    "year": "2004",
+    "lastUpdate": "2025-09-11T00:12:12.700Z",
+    "edition": "Singstar Pop",
+    "genre": "Pop",
+    "realBpm": 51,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Ronan Keating feat. Yusuf - Father And Son",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5151,
+    "tracksCount": 1,
+    "search": "ronankeatingfeatyusuffatherandson",
+    "local": false
+  },
+  {
+    "id": "ronan-keating-lovin-each-day",
+    "title": "Lovin’ Each Day",
+    "artist": "Ronan Keating",
+    "video": "7bO5h71TlMU",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": -63.125,
+    "year": "2001",
+    "artistOrigin": "IE",
+    "lastUpdate": "2025-09-11T00:12:12.572Z",
+    "genre": "Pop",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Ronan Keating - Lovin’ Each Day",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5149,
+    "tracksCount": 1,
+    "search": "ronankeatinglovineachday",
+    "local": false
+  },
+  {
+    "id": "ronan-keating-when-you-say-nothing-at-all",
+    "title": "When You Say Nothing At All",
+    "artist": "Ronan Keating",
+    "video": "2vfozdlfRes",
+    "language": [
+      "English"
+    ],
+    "bpm": 261,
+    "gap": 10062.988505747126,
+    "year": "1999",
+    "artistOrigin": "IE",
+    "lastUpdate": "2025-09-11T00:12:12.699Z",
+    "genre": "Pop",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "pauldiddy",
+    "sourceUrl": "Ronan Keating - When You Say Nothing At All",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5150,
+    "tracksCount": 1,
+    "search": "ronankeatingwhenyousaynothingatall",
+    "local": false
+  },
+  {
     "id": "rookiez-is-punkd-complication",
     "title": "Complication",
     "artist": "Rookiez is Punk'd",
@@ -114960,6 +116056,34 @@
     "shortId": 3800,
     "tracksCount": 1,
     "search": "savatagegutterballet",
+    "local": false
+  },
+  {
+    "id": "sawano-hiroyuki-paragon",
+    "title": "PARAGON",
+    "artist": "Sawano Hiroyuki",
+    "video": "0EbORal9HPQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 12490.537313432837,
+    "year": "2025",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-11T00:12:12.840Z",
+    "genre": "Pop",
+    "volume": 0.5,
+    "author": "wolf359",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=wolf359",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Sawano%20Hiroyuki&cancion=PARAGON",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5154,
+    "tracksCount": 1,
+    "search": "sawanohiroyukiparagon",
     "local": false
   },
   {
@@ -121224,7 +122348,7 @@
     "gap": 16585.102040816328,
     "year": "1965",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-05T00:12:40.551Z",
+    "lastUpdate": "2025-09-04T14:24:05.802Z",
     "genre": "Soul",
     "realBpm": -30,
     "volume": 0.5,
@@ -121452,6 +122576,32 @@
     "shortId": 4020,
     "tracksCount": 1,
     "search": "snowpatrolchasingcars",
+    "local": false
+  },
+  {
+    "id": "sobel-sanah-czesc-jak-sie-masz",
+    "title": "Cześć, jak się masz?",
+    "artist": "Sobel & sanah",
+    "video": "DnePdjIA0wk",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 220.64,
+    "gap": -21.936185641769384,
+    "year": "2021",
+    "lastUpdate": "2025-09-11T00:12:12.285Z",
+    "genre": "Pop",
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "MylordWaliza",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 5145,
+    "tracksCount": 1,
+    "search": "sobelsanahczescjaksiemasz",
     "local": false
   },
   {
@@ -121987,6 +123137,33 @@
     "shortId": 4036,
     "tracksCount": 1,
     "search": "spandauballetgold",
+    "local": false
+  },
+  {
+    "id": "spandau-ballet-through-the-barricades",
+    "title": "Through The Barricades",
+    "artist": "Spandau Ballet",
+    "video": "QHwKLvzWXUM",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.24,
+    "gap": 23994.774158226115,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:11.830Z",
+    "genre": "New Wave",
+    "realBpm": 73,
+    "volume": 0.5,
+    "author": "DoubleDee73",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5137,
+    "tracksCount": 1,
+    "search": "spandauballetthroughthebarricades",
     "local": false
   },
   {
@@ -123018,6 +124195,34 @@
     "local": false
   },
   {
+    "id": "stevie-wonder-for-once-in-my-life",
+    "title": "For Once In My Life",
+    "artist": "Stevie Wonder",
+    "video": "l3qi3E40aWE",
+    "language": [
+      "English"
+    ],
+    "bpm": 215.2,
+    "gap": 13244.163568773234,
+    "year": "1968",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:22:54.900Z",
+    "genre": "Soul",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Stevie Wonder - For Once In My Life",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5102,
+    "tracksCount": 1,
+    "search": "steviewonderforonceinmylife",
+    "local": false
+  },
+  {
     "id": "stevie-wonder-i-just-called-to-say-i-love-you",
     "title": "I Just Called to Say I Love You",
     "artist": "Stevie Wonder",
@@ -123820,6 +125025,34 @@
     "local": false
   },
   {
+    "id": "sublime-wrong-way",
+    "title": "Wrong Way",
+    "artist": "Sublime",
+    "video": "uLifSFBs_Lk",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.87,
+    "gap": 9154.631584225437,
+    "year": "1996",
+    "lastUpdate": "2025-09-11T00:12:11.983Z",
+    "genre": "Ska Punk",
+    "realBpm": 100,
+    "previewStart": 60,
+    "previewEnd": 108,
+    "volume": 0.5,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5143,
+    "tracksCount": 1,
+    "search": "sublimewrongway",
+    "local": false
+  },
+  {
     "id": "subwoolfer-give-that-wolf-a-banana",
     "title": "Give That Wolf A Banana",
     "artist": "Subwoolfer",
@@ -124421,6 +125654,32 @@
     "shortId": 4116,
     "tracksCount": 1,
     "search": "survivoreyeofthetiger",
+    "local": false
+  },
+  {
+    "id": "swedish-house-mafia-feat-john-martin-dont-you-worry-child",
+    "title": "Don’t You Worry Child",
+    "artist": "Swedish House Mafia feat. John Martin",
+    "video": "1y6smkh6c-0",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": 19251.627906976744,
+    "year": "2012",
+    "lastUpdate": "2025-09-11T00:12:12.412Z",
+    "genre": "Electronic",
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5146,
+    "tracksCount": 1,
+    "search": "swedishhousemafiafeatjohnmartindontyouworrychild",
     "local": false
   },
   {
@@ -128340,6 +129599,62 @@
     "local": false
   },
   {
+    "id": "texas-black-eyed-boy",
+    "title": "Black Eyed Boy",
+    "artist": "Texas",
+    "video": "F-ZcOdNN4VY",
+    "language": [
+      "English"
+    ],
+    "bpm": 238.3,
+    "gap": 6552.866135123793,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:12.991Z",
+    "genre": "Motown",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Texas - Black Eyed Boy",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5158,
+    "tracksCount": 1,
+    "search": "texasblackeyedboy",
+    "local": false
+  },
+  {
+    "id": "texas-halo",
+    "title": "Halo",
+    "artist": "Texas",
+    "video": "y411Wggex4c",
+    "language": [
+      "English"
+    ],
+    "bpm": 251.28,
+    "gap": 28715.195797516713,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:12.839Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Texas - Halo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5153,
+    "tracksCount": 1,
+    "search": "texashalo",
+    "local": false
+  },
+  {
     "id": "texas-i-dont-want-a-lover",
     "title": "I Don’t Want A Lover",
     "artist": "Texas",
@@ -128369,6 +129684,34 @@
     "local": false
   },
   {
+    "id": "texas-inner-smile",
+    "title": "Inner Smile",
+    "artist": "Texas",
+    "video": "DfzbVTQE3iw",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 6248.691588785046,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:12.570Z",
+    "genre": "Pop",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "jackroke",
+    "sourceUrl": "Texas - Inner Smile",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5148,
+    "tracksCount": 1,
+    "search": "texasinnersmile",
+    "local": false
+  },
+  {
     "id": "texas-lightning-no-no-never",
     "title": "No No Never",
     "artist": "Texas Lightning",
@@ -128380,7 +129723,7 @@
     "gap": 798.2644628099173,
     "year": "2006",
     "artistOrigin": "DE",
-    "lastUpdate": "2025-09-05T00:12:39.762Z",
+    "lastUpdate": "2025-09-04T14:17:20.894Z",
     "realBpm": 60,
     "volume": 0.5,
     "author": "IC",
@@ -128393,6 +129736,61 @@
     "shortId": 5093,
     "tracksCount": 1,
     "search": "texaslightningnononever",
+    "local": false
+  },
+  {
+    "id": "texas-say-what-you-want",
+    "title": "Say What You Want",
+    "artist": "Texas",
+    "video": "5n1mfhFBYdg",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 8204.375,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:12.990Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Texas - Say What You Want",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5157,
+    "tracksCount": 1,
+    "search": "texassaywhatyouwant",
+    "local": false
+  },
+  {
+    "id": "texas-when-we-are-together",
+    "title": "When We Are Together",
+    "artist": "Texas",
+    "video": "i3zl4zgA9nQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.44,
+    "gap": 15510.064345817522,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:12.838Z",
+    "realBpm": 74,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Texas - When We Are Together",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5152,
+    "tracksCount": 1,
+    "search": "texaswhenwearetogether",
     "local": false
   },
   {
@@ -130568,7 +131966,7 @@
     "gap": 27357.352941176472,
     "year": "1981",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-05T00:12:38.754Z",
+    "lastUpdate": "2025-09-03T15:13:57.509Z",
     "realBpm": 25,
     "volume": 0.5,
     "author": "a224",
@@ -130752,6 +132150,37 @@
     "shortId": 4845,
     "tracksCount": 1,
     "search": "thecommunardswithsarahjanemorrisdontleavemethisway",
+    "local": false
+  },
+  {
+    "id": "the-contours-do-you-love-me",
+    "title": "Do You Love Me",
+    "artist": "The Contours",
+    "video": "l3zJZ2d4cis",
+    "language": [
+      "English"
+    ],
+    "bpm": 303,
+    "gap": 48.91089108910887,
+    "year": "1962",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-07T15:26:29.544Z",
+    "genre": "Soul",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "sourceUrl": "The Contours - Do You Love Me (Now That I Can Dance) [DUET]",
+    "tracks": [
+      {
+        "start": 18
+      },
+      {
+        "start": 355
+      }
+    ],
+    "shortId": 5107,
+    "tracksCount": 2,
+    "search": "thecontoursdoyouloveme",
     "local": false
   },
   {
@@ -132154,6 +133583,34 @@
     "shortId": 4357,
     "tracksCount": 1,
     "search": "thelittlemermaidpartofyourworld",
+    "local": false
+  },
+  {
+    "id": "the-living-end-white-noise",
+    "title": "White Noise",
+    "artist": "The Living End",
+    "video": "QskZwT1psEc",
+    "language": [
+      "English"
+    ],
+    "bpm": 278.6,
+    "gap": 11137.0279971285,
+    "year": "2008",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-07T15:27:27.177Z",
+    "videoGap": 10,
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "The Living End - White Noise",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5108,
+    "tracksCount": 1,
+    "search": "thelivingendwhitenoise",
     "local": false
   },
   {
@@ -135575,6 +137032,33 @@
     "local": false
   },
   {
+    "id": "thin-lizzy-the-boys-are-back-in-town",
+    "title": "The Boys Are Back In Town",
+    "artist": "Thin Lizzy",
+    "video": "wIE5wwvicew",
+    "language": [
+      "English"
+    ],
+    "bpm": 349.29999999999995,
+    "gap": 23482.875536480686,
+    "year": "1976",
+    "artistOrigin": "IE",
+    "lastUpdate": "2025-09-11T00:12:11.975Z",
+    "genre": "Rock",
+    "realBpm": 162,
+    "volume": 0.5,
+    "author": "Peschi",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5140,
+    "tracksCount": 1,
+    "search": "thinlizzytheboysarebackintown",
+    "local": false
+  },
+  {
     "id": "third-eye-blind-semi-charmed-life",
     "title": "Semi-Charmed Life",
     "artist": "Third Eye Blind",
@@ -136118,6 +137602,33 @@
     "shortId": 4470,
     "tracksCount": 1,
     "search": "threedaysgracepain",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-the-good-life",
+    "title": "The Good Life",
+    "artist": "Three Days Grace",
+    "video": "tzRk5EIHAoI",
+    "language": [
+      "English"
+    ],
+    "bpm": 255,
+    "gap": 23510,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-09-08T06:42:41.033Z",
+    "genre": "Crossover",
+    "realBpm": 128,
+    "volume": 0.5,
+    "author": "mesand",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5127,
+    "tracksCount": 1,
+    "search": "threedaysgracethegoodlife",
     "local": false
   },
   {
@@ -138120,6 +139631,33 @@
     "local": false
   },
   {
+    "id": "toto-dont-chain-my-heart",
+    "title": "Don’t Chain My Heart",
+    "artist": "Toto",
+    "video": "iXiQGXhHLOM",
+    "language": [
+      "English"
+    ],
+    "bpm": 211.64,
+    "gap": 17937.749007749007,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-11T00:12:11.981Z",
+    "genre": "Rock",
+    "realBpm": 159,
+    "volume": 0.5,
+    "author": "Zevac",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5142,
+    "tracksCount": 1,
+    "search": "totodontchainmyheart",
+    "local": false
+  },
+  {
     "id": "toto-hold-the-line",
     "title": "Hold The Line",
     "artist": "Toto",
@@ -138173,6 +139711,32 @@
     "shortId": 4537,
     "tracksCount": 1,
     "search": "totoillbeoveryou",
+    "local": false
+  },
+  {
+    "id": "toto-rosanna",
+    "title": "Rosanna",
+    "artist": "Toto",
+    "video": "qmOLtTGvsbM",
+    "language": [
+      "English"
+    ],
+    "bpm": 331.7,
+    "gap": 16425.125113053964,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-11T00:12:11.977Z",
+    "realBpm": 85,
+    "volume": 0.5,
+    "author": "Peschi",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5141,
+    "tracksCount": 1,
+    "search": "totorosanna",
     "local": false
   },
   {
@@ -140182,7 +141746,7 @@
     "bpm": 399.64,
     "gap": 3756.5879291362226,
     "year": "2005",
-    "lastUpdate": "2025-09-05T00:12:39.390Z",
+    "lastUpdate": "2025-09-03T15:18:25.671Z",
     "realBpm": -21,
     "volume": 0.5,
     "author": "gaspar17",
@@ -140208,7 +141772,7 @@
     "bpm": 335.4,
     "gap": 22446.100178890876,
     "year": "2006",
-    "lastUpdate": "2025-09-05T00:12:39.244Z",
+    "lastUpdate": "2025-09-03T15:16:54.999Z",
     "realBpm": 14,
     "volume": 0.5,
     "author": "Canni",
@@ -140234,7 +141798,7 @@
     "bpm": 200,
     "gap": 20515,
     "year": "2005",
-    "lastUpdate": "2025-09-05T00:12:39.515Z",
+    "lastUpdate": "2025-09-04T14:16:40.837Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "gaspar17",
@@ -140260,7 +141824,7 @@
     "bpm": 231.1,
     "gap": 9286.395499783643,
     "year": "2007",
-    "lastUpdate": "2025-09-05T00:12:39.636Z",
+    "lastUpdate": "2025-09-04T14:17:03.890Z",
     "genre": "Pop",
     "realBpm": 15,
     "volume": 0.5,
@@ -142949,6 +144513,33 @@
     "local": false
   },
   {
+    "id": "wet-wet-wet-love-is-all-around",
+    "title": "Love Is All Around",
+    "artist": "Wet Wet Wet",
+    "video": "h3gEkwhdXUE",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 10755.29411764706,
+    "year": "1993",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-11T00:12:11.230Z",
+    "realBpm": 74,
+    "volume": 0.5,
+    "author": "Whiteshark",
+    "sourceUrl": "https://youtu.be/h3gEkwhdXUE",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5135,
+    "tracksCount": 1,
+    "search": "wetwetwetloveisallaround",
+    "local": false
+  },
+  {
     "id": "wham-everything-she-wants",
     "title": "Everything She Wants",
     "artist": "Wham!",
@@ -145170,7 +146761,7 @@
     "bpm": 260,
     "gap": 6029.2307692307695,
     "year": "2006",
-    "lastUpdate": "2025-09-05T00:12:40.072Z",
+    "lastUpdate": "2025-09-04T14:18:26.595Z",
     "genre": "Pop",
     "realBpm": 28,
     "volume": 0.5,

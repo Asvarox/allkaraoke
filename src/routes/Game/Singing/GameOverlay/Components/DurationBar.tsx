@@ -1,19 +1,21 @@
 import styled from '@emotion/styled';
 import { uniq } from 'es-toolkit';
 import { PlayerSetup } from 'interfaces';
+import { VideoState } from 'modules/Elements/VideoPlayer';
 import styles from 'modules/GameEngine/Drawing/styles';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
-import { useMemo } from 'react';
+import { memo, useEffect, useMemo, useRef } from 'react';
 
 interface Props {
   players: PlayerSetup[];
+  currentStatus: VideoState;
+  duration: number;
 }
 
-function DurationBar({ players }: Props) {
-  const currentTime = GameState.getCurrentTime(false);
+function DurationBar({ players, duration }: Props) {
+  const barFillRef = useRef<HTMLDivElement>(null);
   const beatLength = GameState.getSongBeatLength();
-  const duration = GameState.getDuration();
   const song = GameState.getSong()!;
 
   const firstNotes = useMemo(
@@ -37,7 +39,23 @@ function DurationBar({ players }: Props) {
 
   const durationMs = duration * 1000;
 
-  if (!currentTime || !duration) return null;
+  useEffect(() => {
+    const updateBarFill = () => {
+      if (!duration || !barFillRef.current) return;
+
+      const currentTime = GameState.getCurrentTime(false);
+      if (currentTime && barFillRef.current) {
+        const fillPercentage = Math.round((currentTime / durationMs) * 10_000) / 100;
+        barFillRef.current.style.transform = `scaleX(${fillPercentage / 100})`;
+      }
+    };
+
+    const interval = setInterval(updateBarFill, 50); // ~60fps
+
+    return () => clearInterval(interval);
+  }, [duration, durationMs]);
+
+  if (!duration) return null;
 
   return (
     <Bar>
@@ -47,7 +65,7 @@ function DurationBar({ players }: Props) {
       {lastNotes.map((note) => (
         <Marker key={note} position={note / durationMs} />
       ))}
-      <BarFill fill={currentTime / durationMs} />
+      <BarFill ref={barFillRef} />
     </Bar>
   );
 }
@@ -77,10 +95,10 @@ const BaseBarFill = styled(Bar)`
   top: 0;
   background: white;
   opacity: 50%;
+  width: 100%;
+  transform-origin: left center;
 `;
 
-const BarFill = (props: { fill: number }) => (
-  <BaseBarFill style={{ width: `${Math.round(props.fill * 10_000) / 100}%` }} />
-);
+const BarFill = styled(BaseBarFill)``;
 
-export default DurationBar;
+export default memo(DurationBar);
