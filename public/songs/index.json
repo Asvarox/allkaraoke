@@ -14889,6 +14889,59 @@
     "local": false
   },
   {
+    "id": "beat-crusaders-beck-moon-on-the-water",
+    "title": "Moon On The Water",
+    "artist": "Beat Crusaders (Beck)",
+    "video": "8GcFZ_T-Yj4",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.18,
+    "gap": 82.79677350274824,
+    "year": "409",
+    "lastUpdate": "2025-09-15T00:13:31.482Z",
+    "realBpm": 34,
+    "volume": 0.5,
+    "author": "whiskey0010singwell",
+    "sourceUrl": "Beat Crusaders (Beck) - Moon On The Water",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5168,
+    "tracksCount": 1,
+    "search": "beatcrusadersbeckmoononthewater",
+    "local": false
+  },
+  {
+    "id": "beat-crusaders-hit-in-the-usa",
+    "title": "Hit In The USA",
+    "artist": "Beat Crusaders",
+    "video": "YXAnjQ--6lo",
+    "language": [
+      "English"
+    ],
+    "bpm": 341,
+    "gap": 17188.269794721407,
+    "year": "2004",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-15T00:13:30.681Z",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "Beat Crusaders - Hit In The USA",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5167,
+    "tracksCount": 1,
+    "search": "beatcrusadershitintheusa",
+    "local": false
+  },
+  {
     "id": "beata-kozidrak-rzeka-marzen",
     "title": "Rzeka marzeń",
     "artist": "Beata Kozidrak",
@@ -46739,6 +46792,62 @@
     "local": false
   },
   {
+    "id": "example-changed-the-way-you-kiss-me",
+    "title": "Changed The Way You Kiss Me",
+    "artist": "Example",
+    "video": "CLXt3yh2g0s",
+    "language": [
+      "English"
+    ],
+    "bpm": 339,
+    "gap": 7454.300884955752,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:31.658Z",
+    "genre": "Pop",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "flaur",
+    "sourceUrl": "Example - Changed The Way You Kiss Me",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5169,
+    "tracksCount": 1,
+    "search": "examplechangedthewayyoukissme",
+    "local": false
+  },
+  {
+    "id": "example-kids-again",
+    "title": "Kids Again",
+    "artist": "Example",
+    "video": "0wyoKWgy3SE",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 34603.90625,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:31.841Z",
+    "genre": "Dance & Electronic",
+    "realBpm": 44,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Example - Kids Again",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5170,
+    "tracksCount": 1,
+    "search": "examplekidsagain",
+    "local": false
+  },
+  {
     "id": "exo-miracles-in-december",
     "title": "Miracles In December",
     "artist": "EXO",
@@ -60747,7 +60856,7 @@
     "gap": 15800.815347721822,
     "year": "1988",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-13T00:11:24.113Z",
+    "lastUpdate": "2025-09-11T06:46:03.037Z",
     "realBpm": 41,
     "volume": 0.5,
     "author": "Canni",
@@ -113726,7 +113835,7 @@
     "bpm": 240,
     "gap": 13570,
     "year": "2002",
-    "lastUpdate": "2025-09-13T00:11:24.266Z",
+    "lastUpdate": "2025-09-11T06:46:18.769Z",
     "realBpm": 32,
     "volume": 0.5,
     "author": "Sing-Girl",
@@ -115219,6 +115328,62 @@
     "local": false
   },
   {
+    "id": "sade-love-is-found",
+    "title": "Love Is Found",
+    "artist": "Sade",
+    "video": "15WDBuvovXo",
+    "language": [
+      "English"
+    ],
+    "bpm": 362,
+    "gap": 32385.524861878454,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:30.680Z",
+    "genre": "Soul",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "dude76",
+    "sourceUrl": "Sade - Love Is Found",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5166,
+    "tracksCount": 1,
+    "search": "sadeloveisfound",
+    "local": false
+  },
+  {
+    "id": "sade-smooth-operator",
+    "title": "Smooth Operator",
+    "artist": "Sade",
+    "video": "4TYv2PhG89A",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.85,
+    "gap": 18269.374609130708,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:30.674Z",
+    "genre": "Soul",
+    "realBpm": 34,
+    "volume": 0.5,
+    "author": "Coco",
+    "sourceUrl": "Sade - Smooth Operator",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5165,
+    "tracksCount": 1,
+    "search": "sadesmoothoperator",
+    "local": false
+  },
+  {
     "id": "sade-your-love-is-king",
     "title": "Your Love Is King",
     "artist": "Sade",
@@ -115570,7 +115735,7 @@
     "gap": 14667.35294117647,
     "year": "2008",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-13T00:11:24.394Z",
+    "lastUpdate": "2025-09-11T06:46:47.596Z",
     "genre": "Pop",
     "realBpm": 24,
     "volume": 0.5,
@@ -115598,7 +115763,7 @@
     "gap": 14380.208289939595,
     "year": "2012",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-13T00:11:24.522Z",
+    "lastUpdate": "2025-09-11T06:47:16.888Z",
     "realBpm": 43,
     "volume": 0.5,
     "author": "Rubn4",
@@ -121016,7 +121181,7 @@
     "bpm": 289.86,
     "gap": 6086.7667149658455,
     "year": "2011",
-    "lastUpdate": "2025-09-13T00:11:23.464Z",
+    "lastUpdate": "2025-09-11T06:45:44.417Z",
     "genre": "Pop, Funk",
     "realBpm": 21,
     "volume": 0.5,
@@ -127348,6 +127513,34 @@
     "local": false
   },
   {
+    "id": "take-that-babe",
+    "title": "Babe",
+    "artist": "Take That",
+    "video": "MviFdVHltEM",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 5193.972602739726,
+    "year": "1993",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:32.214Z",
+    "genre": "Pop",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Babe",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5179,
+    "tracksCount": 1,
+    "search": "takethatbabe",
+    "local": false
+  },
+  {
     "id": "take-that-featuring-lulu-relight-my-fire",
     "title": "Relight My Fire",
     "artist": "Take That Featuring Lulu",
@@ -127373,6 +127566,34 @@
     "shortId": 5066,
     "tracksCount": 1,
     "search": "takethatfeaturinglulurelightmyfire",
+    "local": false
+  },
+  {
+    "id": "take-that-it-only-takes-a-minute",
+    "title": "It Only Takes A Minute",
+    "artist": "Take That",
+    "video": "7J3U4Ke0SCY",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.2,
+    "gap": -28.953211736716895,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:32.207Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - It Only Takes A Minute",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "shortId": 5176,
+    "tracksCount": 1,
+    "search": "takethatitonlytakesaminute",
     "local": false
   },
   {
@@ -127432,6 +127653,62 @@
     "shortId": 4168,
     "tracksCount": 2,
     "search": "takethatshine",
+    "local": false
+  },
+  {
+    "id": "take-that-the-flood",
+    "title": "The Flood",
+    "artist": "Take That",
+    "video": "aCHg5r6rFoI",
+    "language": [
+      "English"
+    ],
+    "bpm": 201.3,
+    "gap": 14051.296572280178,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:32.208Z",
+    "genre": "Pop",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "RES",
+    "sourceUrl": "Take That - The Flood",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5177,
+    "tracksCount": 1,
+    "search": "takethattheflood",
+    "local": false
+  },
+  {
+    "id": "take-that-up-all-night",
+    "title": "Up All Night",
+    "artist": "Take That",
+    "video": "5gzDFf0M-N4",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 7324.375,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:32.210Z",
+    "genre": "Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Up All Night",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5178,
+    "tracksCount": 1,
+    "search": "takethatupallnight",
     "local": false
   },
   {
@@ -143256,6 +143533,91 @@
     "local": false
   },
   {
+    "id": "village-people-5-oclock-in-the-morning",
+    "title": "5 O’Clock In The Morning",
+    "artist": "Village People",
+    "video": "kkpZQL0kR6k",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.40000000000003,
+    "gap": 11240,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-15T00:13:32.028Z",
+    "genre": "Ballad",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Village People - 5 O’Clock In The Morning",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5173,
+    "tracksCount": 1,
+    "search": "villagepeople5oclockinthemorning",
+    "local": false
+  },
+  {
+    "id": "village-people-in-the-navy",
+    "title": "In The Navy",
+    "artist": "Village People",
+    "video": "nmGuy0jievs",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.22,
+    "gap": 32893.76529082156,
+    "year": "1978",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-15T00:13:32.202Z",
+    "genre": "Pop",
+    "videoGap": 14,
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Fepo",
+    "sourceUrl": "Village People - In The Navy",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5174,
+    "tracksCount": 1,
+    "search": "villagepeopleinthenavy",
+    "local": false
+  },
+  {
+    "id": "village-people-macho-man",
+    "title": "Macho Man",
+    "artist": "Village People",
+    "video": "aT4RCxneAdc",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.70000000000005,
+    "gap": 3887.2468117029257,
+    "year": "1978",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-15T00:13:32.205Z",
+    "genre": "Dance",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Village People - Macho Man",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5175,
+    "tracksCount": 1,
+    "search": "villagepeoplemachoman",
+    "local": false
+  },
+  {
     "id": "violetta-hoy-somos-mas",
     "title": "Hoy somos más",
     "artist": "Violetta",
@@ -146363,6 +146725,33 @@
     "local": false
   },
   {
+    "id": "yazoo-dont-go",
+    "title": "Don’t Go",
+    "artist": "Yazoo",
+    "video": "_sQGwDeambg",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 14848.095238095239,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-15T00:13:31.843Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Yazoo - Don’t Go",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5171,
+    "tracksCount": 1,
+    "search": "yazoodontgo",
+    "local": false
+  },
+  {
     "id": "yazoo-nobodys-diary",
     "title": "Nobody’s Diary",
     "artist": "Yazoo",
@@ -146999,6 +147388,36 @@
     "shortId": 4766,
     "tracksCount": 1,
     "search": "yoshikifeathyderedswan",
+    "local": false
+  },
+  {
+    "id": "young-mc-bust-a-move",
+    "title": "Bust A Move",
+    "artist": "Young MC",
+    "video": "xy4FXhkm6Nw",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.48,
+    "gap": 16000.805163920502,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-15T00:13:31.854Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Young MC - Bust A Move [DUET]",
+    "tracks": [
+      {
+        "start": 16
+      },
+      {
+        "start": 526
+      }
+    ],
+    "shortId": 5172,
+    "tracksCount": 2,
+    "search": "youngmcbustamove",
     "local": false
   },
   {

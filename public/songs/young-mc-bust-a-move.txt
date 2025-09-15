@@ -1,0 +1,1129 @@
+#ARTIST:Young MC
+#TITLE:Bust A Move
+#CREATOR:bohning
+#BPM:235,48
+#YEAR:1989
+#VIDEO:v=xy4FXhkm6Nw
+#LANGUAGE:English
+#GAP:16000,805163920502
+#ALLKARAOKE_ID:young-mc-bust-a-move
+#ALLKARAOKE_SID:5172
+#ALLKARAOKE_LASTUPDATE:2025-09-15T00:13:31.854Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:Young MC - Bust A Move [DUET]
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Young MC - Bust A Move [DUET].mp3
+#COVER:Young MC - Bust A Move [DUET] [CO].jpg
+#BACKGROUND:Young MC - Bust A Move [DUET] [BG].jpg
+R 16 2 0 This 
+R 20 2 0 here’s 
+R 23 1 0 a 
+: 25 2 0 jam
+- 27
+R 30 2 1 For 
+R 34 2 1 all 
+R 38 1 1 the 
+R 40 2 1 fel
+R 43 2 1 las
+- 45
+R 48 1 2 Try
+R 50 1 2 in’ 
+R 52 1 2 to 
+R 54 2 2 do 
+R 58 2 2 what
+- 60
+R 62 2 3 Those 
+R 66 1 3 la
+R 68 2 3 dies 
+R 72 2 3 tell 
+R 76 3 3 us
+- 79
+R 82 2 0 Get 
+R 86 2 0 shot 
+R 90 2 0 down
+- 92
+R 94 1 1 ’Cause 
+R 96 1 1 ya 
+R 98 1 1 o
+R 100 2 1 ver-
+R 104 2 1 zea
+R 108 3 1 lous
+- 111
+R 112 2 2 Play 
+R 116 2 2 hard 
+R 120 1 2 to 
+R 122 2 2 get
+- 124
+R 126 2 3 Fe
+R 130 2 3 males 
+R 134 2 3 get 
+R 138 1 3 jea
+R 140 2 3 lous
+- 142
+R 146 2 0 O
+R 150 2 0 kay 
+G 154 2 0 smar
+R 158 2 0 ty
+- 160
+R 162 2 1 Go 
+R 166 1 1 to 
+R 168 1 1 a 
+R 170 2 1 par
+R 174 2 1 ty
+- 176
+R 178 3 2 Girls 
+R 182 1 2 are 
+R 184 2 2 scan
+R 188 1 2 ti
+R 190 1 2 ly 
+R 192 2 2 clad
+- 194
+R 196 1 3 And 
+R 198 1 3 show
+R 200 1 3 in’ 
+R 202 2 3 bo
+R 206 1 3 dy
+- 207
+R 208 1 0 A 
+R 210 2 0 chick 
+R 214 3 0 walks 
+R 218 2 0 by
+- 220
+R 222 1 1 You 
+R 224 2 1 wish 
+R 228 1 1 you 
+R 230 1 1 could 
+R 232 2 1 sex 
+R 236 1 1 her
+- 237
+R 238 1 2 But 
+R 240 1 2 you’re 
+R 242 1 2 stan
+R 244 1 2 ding 
+R 246 1 2 on 
+R 248 1 2 the 
+R 250 2 2 wall
+- 252
+R 254 1 3 Like 
+R 256 1 3 you 
+R 258 2 3 was 
+R 261 3 3 Poin
+R 265 3 3 dex
+R 269 3 3 ter
+- 272
+R 274 2 0 Next 
+R 278 2 0 day’s 
+G 282 2 0 func
+R 286 2 0 tion
+- 288
+R 290 2 1 High 
+R 294 2 1 class 
+R 298 2 1 lun
+R 302 2 1 cheon
+- 304
+R 306 2 2 Food 
+R 310 1 2 they’re 
+R 312 2 2 ser
+R 316 1 2 ving
+- 317
+R 318 2 3 You’re 
+R 322 3 3 stone 
+R 326 2 3 cold 
+R 330 3 3 mun
+R 334 2 3 chin’
+- 336
+R 338 1 0 Mu
+R 340 1 0 sic 
+R 342 2 0 comes 
+R 346 2 0 on
+- 348
+R 350 1 1 Peo
+R 352 1 1 ple 
+R 354 2 1 start 
+R 358 1 1 to 
+R 360 2 1 dance
+- 362
+R 364 1 2 But 
+R 366 1 2 then 
+R 368 1 2 you 
+R 370 2 2 ate 
+R 373 1 2 so 
+R 375 2 2 much
+- 377
+R 380 1 3 You 
+R 382 1 3 near
+R 384 1 3 ly 
+R 386 2 3 split 
+R 390 1 3 your 
+G 392 3 3 pants
+- 395
+R 400 1 0 A 
+R 402 2 0 girl 
+R 406 2 0 starts 
+R 410 2 0 wal
+R 414 2 0 kin’
+- 416
+R 418 2 1 Guys 
+R 422 2 1 start 
+R 426 2 1 gaw
+R 430 2 1 kin’
+- 432
+R 434 2 2 Sits 
+R 438 2 2 down 
+R 442 2 2 next 
+R 446 1 2 to 
+R 448 1 2 you
+- 449
+R 450 1 3 And 
+R 452 1 3 starts 
+R 455 2 3 tal
+R 459 3 3 kin’
+- 462
+R 464 2 0 Says 
+R 468 1 0 she 
+R 470 1 0 wan
+R 472 1 0 na 
+R 474 2 0 dance
+- 476
+R 478 1 1 ’Cause 
+R 480 1 1 she 
+R 482 2 1 likes 
+R 486 1 1 to 
+R 488 2 1 groove
+- 490
+R 492 1 2 So 
+R 494 1 2 come 
+R 496 2 2 on 
+R 500 2 2 fat
+R 504 2 2 so
+- 506
+R 508 1 3 And 
+R 510 2 3 just 
+R 514 2 3 bust 
+R 518 1 3 a 
+R 520 3 3 move
+- 523 622
+- 622
+R 638 1 0 Just 
+R 642 2 0 bust 
+R 646 1 0 a 
+R 648 3 0 move
+- 651 766
+- 766
+R 782 2 0 You’re 
+R 786 2 0 on 
+R 790 2 0 a 
+R 794 2 0 mis
+R 798 2 0 sion
+- 800
+R 802 2 1 And 
+R 806 2 1 you’re 
+R 810 2 1 wi
+R 814 2 1 shin’
+- 816
+R 818 1 2 Some
+R 820 2 2 one 
+R 824 1 2 could 
+R 826 2 2 cure
+- 828
+R 830 1 3 Your 
+R 832 2 3 lone
+R 836 1 3 ly 
+R 838 2 3 con
+R 842 2 3 di
+R 846 2 3 tion
+- 848
+R 850 1 0 Loo
+R 852 1 0 kin’ 
+R 854 1 0 for 
+R 856 2 0 love
+- 858
+R 860 2 1 In 
+R 864 2 1 all 
+R 868 1 1 the 
+R 870 2 1 wrong 
+R 874 2 1 pla
+R 878 2 1 ces
+- 880
+R 882 2 2 No 
+R 886 2 2 fine 
+R 890 2 2 girls
+- 892
+R 894 2 3 Just 
+G 898 1 3 ug
+R 900 2 3 ly 
+R 904 2 3 fa
+R 908 2 3 ces
+- 910
+R 914 2 0 Some 
+R 918 2 0 fru
+R 922 2 0 stra
+R 926 1 0 tion
+- 927
+R 928 2 1 First 
+R 932 2 1 in
+R 935 1 1 cli
+R 937 2 1 na
+R 941 2 1 tion
+- 943
+R 944 1 2 Is 
+R 946 1 2 to 
+R 948 1 2 be
+R 950 1 2 come 
+R 952 1 2 a 
+R 954 2 2 monk
+- 956
+R 958 1 3 And 
+R 960 1 3 leave 
+R 964 1 3 the 
+R 966 1 3 si
+R 968 1 3 tu
+R 970 2 3 a
+R 973 1 3 tion
+- 974
+R 976 1 0 But 
+R 978 1 0 eve
+R 980 1 0 ry 
+R 982 2 0 dark 
+R 985 1 0 tun
+R 987 1 0 nel
+- 988
+R 990 1 1 Has 
+R 992 1 1 a 
+R 994 1 1 light 
+R 996 2 1 of 
+R 1000 2 1 hope
+- 1002
+R 1004 1 2 So 
+R 1006 2 2 don’t 
+R 1010 2 2 hang 
+R 1014 1 2 your
+R 1016 2 2 self
+- 1018
+R 1022 1 3 With 
+R 1024 1 3 a 
+R 1026 1 3 ce
+R 1028 1 3 li
+R 1030 1 3 bate 
+R 1032 2 3 rope
+- 1034
+R 1038 2 0 Your 
+R 1042 2 0 mo
+R 1046 2 0 vie’s 
+R 1050 1 0 show
+R 1052 2 0 in’
+- 1054
+R 1058 2 1 So 
+R 1062 2 1 you’re 
+R 1066 1 1 go
+R 1068 2 1 in’
+- 1070
+R 1074 1 2 Could 
+R 1077 1 2 care 
+R 1080 2 2 less
+- 1082
+R 1084 1 2 A
+R 1086 1 2 bout 
+R 1088 1 2 the 
+R 1090 2 3 five 
+R 1094 2 3 you’re 
+R 1098 1 3 blow
+R 1100 2 3 in’
+- 1102
+R 1106 1 0 Thea
+R 1108 1 0 ter 
+R 1110 2 0 gets 
+R 1114 2 0 dark
+- 1116
+R 1118 1 1 Just 
+R 1120 1 1 to 
+R 1122 2 1 start 
+R 1126 1 1 the 
+R 1128 3 1 show
+- 1131
+R 1134 1 2 Then 
+R 1136 1 2 ya 
+R 1138 1 2 spot 
+R 1140 1 2 a 
+R 1142 2 2 fine 
+R 1146 1 2 wo
+R 1148 1 2 man
+- 1149
+R 1150 1 3 Sit
+R 1152 1 3 tin’ 
+R 1154 1 3 in 
+R 1156 2 3 your 
+R 1159 2 3 row
+- 1161
+R 1166 2 0 She’s 
+R 1170 2 0 dressed 
+R 1174 1 0 in 
+R 1176 1 0 ah 
+R 1178 2 0 yel
+R 1182 2 0 low
+- 1184
+R 1186 2 1 She 
+R 1190 2 1 says, 
+R 1194 2 1 "Hel
+R 1198 2 1 lo
+- 1200
+R 1202 2 2 Come 
+R 1206 2 2 sit 
+R 1210 2 2 next 
+R 1214 1 2 to 
+R 1216 2 2 me
+- 1218
+R 1220 1 3 You 
+R 1222 2 3 fine 
+R 1226 1 3 fel
+R 1228 2 3 low"
+- 1230
+R 1232 1 0 You 
+R 1234 1 0 run 
+R 1236 1 0 o
+R 1238 1 0 ver 
+R 1240 1 0 there
+- 1241
+R 1244 1 1 With
+R 1246 1 1 out 
+R 1248 1 1 a 
+R 1250 1 1 se
+R 1252 1 1 cond 
+R 1254 1 1 to 
+R 1256 2 1 lose
+- 1258
+R 1262 2 2 And 
+R 1266 2 2 what 
+R 1270 2 2 comes 
+R 1274 2 2 next
+- 1276
+R 1278 1 3 Hey 
+G 1282 2 3 bust 
+R 1286 1 3 a 
+R 1288 3 3 move
+- 1291 1390
+- 1390
+R 1406 2 0 Just 
+R 1410 2 0 bust 
+R 1414 1 0 a 
+R 1416 3 0 move
+- 1419 1538
+- 1538
+R 1554 2 0 In 
+R 1558 2 0 this 
+R 1562 1 0 ci
+R 1564 2 0 ty
+- 1566
+R 1568 2 1 La
+R 1572 1 1 dies 
+R 1574 2 1 look 
+G 1578 1 1 pret
+R 1580 2 1 ty
+- 1582
+R 1586 2 2 Guys 
+R 1590 1 2 tell 
+R 1594 2 2 jokes
+- 1596
+R 1598 1 3 So 
+R 1600 1 3 they 
+R 1604 1 3 can 
+R 1606 2 3 seem 
+R 1610 1 3 wit
+R 1612 2 3 ty
+- 1614
+R 1618 1 0 Tell 
+R 1620 1 0 a 
+R 1622 1 0 fun
+R 1624 1 0 ny 
+R 1626 2 0 joke
+- 1628
+R 1630 1 1 Just 
+R 1632 1 1 to 
+R 1634 1 1 get 
+R 1636 2 1 some 
+R 1640 2 1 play
+- 1642
+R 1646 1 2 Then 
+R 1648 1 2 you 
+R 1650 1 2 try 
+R 1652 1 2 to 
+R 1654 1 2 make 
+R 1656 1 2 a 
+R 1658 1 2 move
+- 1659
+R 1660 1 3 And 
+R 1663 1 3 she 
+R 1666 2 3 says, 
+R 1670 2 3 "No 
+R 1674 3 3 way"
+- 1677
+G 1682 2 0 Girls 
+R 1686 2 0 are 
+R 1690 2 0 fa
+R 1694 2 0 kin’
+- 1696
+R 1698 2 1 Good
+R 1702 2 1 ness 
+R 1706 2 1 sa
+R 1710 2 1 kin’
+- 1712
+R 1714 1 2 They 
+R 1716 2 2 want 
+R 1720 1 2 the 
+R 1722 2 2 man
+- 1724
+R 1726 1 3 Who 
+R 1728 2 3 brings 
+R 1732 2 3 home 
+R 1736 1 3 the 
+R 1738 2 3 ba
+R 1742 2 3 con
+- 1744
+R 1746 2 0 Got 
+R 1750 2 0 no 
+R 1754 1 0 mo
+R 1756 1 0 ney
+- 1757
+R 1758 1 1 And 
+R 1760 1 1 you 
+R 1762 1 1 got 
+R 1764 2 1 no 
+R 1768 2 1 car
+- 1770
+R 1774 1 2 Then 
+R 1776 1 2 you 
+R 1778 2 2 got 
+R 1782 2 2 no 
+R 1786 1 2 wo
+R 1788 1 2 men
+- 1789
+R 1792 1 3 And 
+R 1794 2 3 there 
+R 1797 2 3 you 
+R 1800 2 3 are
+- 1802
+R 1806 2 0 Some 
+R 1810 2 0 girls 
+R 1814 1 0 are 
+R 1816 1 0 sa
+R 1818 2 0 dis
+R 1822 2 0 tic
+- 1824
+R 1826 1 1 Ma
+R 1828 1 1 te
+R 1830 1 1 ri
+R 1832 1 1 a
+G 1834 2 1 lis
+R 1838 2 1 tic
+- 1840
+R 1842 1 2 Loo
+R 1844 1 2 kin’ 
+R 1846 1 2 for 
+R 1848 1 2 a 
+R 1850 2 2 man
+- 1852
+R 1854 1 3 Makes 
+R 1856 1 3 them 
+R 1858 1 3 op
+R 1860 1 3 por
+R 1862 1 3 tu
+R 1864 2 3 ni
+R 1868 1 3 stic
+- 1869
+R 1872 1 0 They’re 
+R 1874 1 0 ly
+R 1876 1 0 in’ 
+R 1878 1 0 on 
+R 1880 1 0 a 
+R 1882 2 0 beach
+- 1884
+R 1886 1 1 Per
+R 1888 1 1 pe
+R 1890 1 1 tra
+R 1892 1 1 ting 
+R 1894 1 1 a 
+R 1896 2 1 tan
+- 1898
+R 1900 1 2 So 
+R 1902 1 2 that 
+R 1904 1 2 a 
+R 1906 1 2 bro
+R 1908 1 2 ther 
+R 1910 1 2 with 
+R 1912 1 2 the 
+R 1914 1 2 mo
+R 1916 1 2 ney
+- 1917
+R 1918 1 3 Can 
+R 1920 1 3 be 
+R 1924 2 3 their 
+R 1928 2 3 man
+- 1930
+R 1932 1 0 So 
+R 1934 1 0 on 
+R 1936 1 0 the 
+R 1938 2 0 beach 
+R 1942 2 0 you’re 
+R 1946 2 0 strol
+R 1950 2 0 lin’
+- 1952
+R 1954 2 1 Real 
+R 1958 2 1 high 
+R 1962 2 1 rol
+R 1966 2 1 lin’
+- 1968
+R 1970 1 2 Eve
+R 1972 1 2 ry
+R 1974 1 2 thing 
+R 1976 1 2 you 
+R 1978 2 2 have
+- 1980
+R 1982 1 3 Is 
+R 1984 2 3 yours 
+R 1988 1 3 and 
+R 1990 2 3 not 
+R 1994 1 3 sto
+R 1996 2 3 len
+- 1998
+R 2000 1 0 A 
+R 2002 2 0 girl 
+R 2006 2 0 runs 
+R 2010 2 0 up
+- 2012
+R 2014 2 1 With 
+R 2018 1 1 some
+R 2020 1 1 thin’ 
+R 2022 1 1 to 
+R 2024 3 1 prove
+- 2027
+R 2030 2 2 So 
+R 2034 2 2 don’t 
+R 2038 2 2 just 
+R 2042 2 2 stand 
+R 2046 2 2 there
+- 2048
+R 2050 2 3 Bust 
+R 2054 1 3 a 
+R 2056 3 3 move
+- 2059 2158
+- 2158
+R 2174 2 0 Just 
+R 2178 2 0 bust 
+R 2182 1 0 a 
+R 2184 3 0 move
+- 2187 2286
+- 2286
+F 2302 1 0 Break 
+F 2304 1 0 it 
+F 2306 2 0 down 
+F 2310 1 0 for 
+F 2312 1 0 me 
+F 2314 1 0 fel
+F 2316 2 0 las
+- 2318 2814
+- 2814
+R 2830 2 0 Your 
+R 2834 2 0 best 
+R 2838 2 0 friend 
+R 2842 2 0 Har
+R 2846 2 0 ry
+- 2848
+R 2850 1 1 Has 
+R 2852 1 1 a 
+R 2854 1 1 bro
+R 2856 1 1 ther 
+R 2858 2 1 Lar
+R 2862 2 1 ry
+- 2864
+R 2866 2 2 In 
+R 2870 2 2 five 
+R 2874 2 2 days 
+R 2878 1 2 from 
+R 2880 2 2 now
+- 2882
+R 2884 1 3 He’s 
+R 2886 1 3 gon
+R 2888 1 3 na 
+R 2890 1 3 mar
+R 2892 1 3 ry
+- 2893
+R 2896 1 0 He’s 
+R 2898 1 0 ho
+R 2900 1 0 pin’ 
+R 2902 1 0 you 
+R 2904 1 0 can 
+R 2906 1 0 make 
+R 2908 1 0 it 
+R 2910 1 0 there
+- 2911
+R 2914 1 1 If 
+R 2916 2 1 you 
+R 2920 3 1 can
+- 2923
+R 2926 1 2 ’Cause 
+R 2928 2 2 in 
+R 2932 1 2 the 
+R 2934 1 2 ce
+R 2936 1 2 re
+R 2938 1 2 mo
+R 2940 1 2 ny
+- 2941
+R 2942 1 3 You’ll 
+R 2944 2 3 be 
+R 2948 1 3 the 
+R 2950 2 3 best 
+R 2954 2 3 man
+- 2956
+R 2962 2 0 You 
+R 2966 2 0 say, 
+R 2970 1 0 "Nea
+R 2972 2 0 to"
+- 2974
+R 2976 2 1 Check 
+R 2980 2 1 your 
+R 2984 1 1 li
+R 2986 1 1 bi
+R 2988 2 1 do
+- 2990
+R 2992 1 2 And 
+R 2994 2 2 roll 
+R 2998 1 2 to 
+R 3000 1 2 the 
+R 3002 2 2 church
+- 3004
+R 3006 1 3 In 
+R 3008 1 3 your 
+R 3010 2 3 new 
+R 3014 2 3 tux
+R 3018 1 3 e
+R 3020 2 3 do
+- 3022
+R 3024 1 0 The 
+R 3026 2 0 bride 
+R 3030 2 0 walks 
+R 3034 3 0 down
+- 3037
+R 3038 1 1 Just 
+R 3040 1 1 to 
+R 3042 2 1 start 
+R 3046 1 1 the 
+R 3048 1 1 wed
+R 3050 1 1 ding
+- 3051
+R 3052 1 2 And 
+R 3054 2 2 there’s 
+R 3058 2 2 one 
+R 3062 2 2 more 
+R 3066 3 2 girl
+- 3069
+R 3070 2 3 You 
+R 3074 2 3 won’t 
+R 3078 1 3 be 
+R 3082 1 3 get
+R 3084 2 3 tin’
+- 3086
+R 3088 1 0 So 
+R 3090 2 0 you 
+R 3094 2 0 start 
+R 3098 1 0 thin
+R 3100 2 0 kin’
+- 3102
+R 3104 2 1 Then 
+R 3108 1 1 you 
+R 3110 2 1 start 
+R 3114 1 1 blin
+R 3116 2 1 kin’
+- 3118
+R 3120 1 2 A 
+R 3122 2 2 brides
+R 3126 2 2 maid 
+R 3130 2 2 looks
+- 3132
+R 3134 1 2 And 
+R 3136 2 2 thinks 
+R 3140 1 3 that 
+R 3142 1 3 you’re 
+G 3144 2 3 win
+R 3147 2 3 kin’
+- 3149
+R 3152 1 0 She 
+R 3154 1 0 thinks 
+R 3156 1 0 you’re 
+R 3158 1 0 kin
+R 3160 1 0 da 
+R 3162 2 0 cute
+- 3164
+R 3166 1 1 So 
+R 3169 2 1 she 
+R 3172 2 1 winks 
+R 3176 3 1 back
+- 3179
+R 3180 1 2 And 
+R 3182 1 2 now 
+R 3184 1 2 you’re 
+R 3186 1 2 fee
+R 3188 1 2 lin’ 
+R 3190 1 2 real
+R 3192 1 2 ly 
+R 3194 2 2 firm
+- 3196
+R 3198 1 3 ’Cause 
+R 3200 1 3 the 
+R 3202 1 3 girl 
+R 3204 2 3 is 
+R 3208 2 3 stacked
+- 3210
+R 3214 2 0 Re
+R 3218 2 0 cep
+R 3222 2 0 tion’s 
+R 3226 2 0 jum
+R 3230 2 0 pin’
+- 3232
+R 3234 2 1 Bass 
+R 3238 2 1 is 
+G 3242 2 1 pum
+R 3246 2 1 pin’
+- 3248
+R 3250 1 2 Look 
+R 3252 1 2 at 
+R 3254 1 2 the 
+R 3256 2 2 girl
+- 3258
+R 3260 1 3 And 
+R 3262 1 3 your 
+R 3264 2 3 heart 
+R 3268 2 3 starts 
+R 3272 2 3 thum
+R 3276 2 3 pin’
+- 3278
+R 3280 2 0 Says 
+R 3284 1 0 she 
+R 3286 1 0 wants 
+R 3288 1 0 to 
+R 3290 2 0 dance
+- 3292
+R 3294 1 1 To 
+R 3296 1 1 a 
+R 3298 1 1 diffe
+R 3300 2 1 rent 
+R 3304 3 1 groove
+- 3307
+R 3310 3 2 Now 
+R 3314 1 2 you 
+R 3316 1 2 know 
+R 3318 1 2 what 
+R 3320 1 2 to 
+R 3322 2 2 do
+- 3324
+R 3326 1 3 So 
+R 3328 1 3 you 
+R 3330 2 3 bust 
+R 3334 1 3 a 
+R 3336 3 3 move
+- 3339 3438
+- 3438
+R 3454 2 0 Just 
+R 3458 2 0 bust 
+R 3462 1 0 a 
+R 3464 3 0 move
+- 3467 3570
+- 3570
+R 3586 2 0 Move 
+R 3590 2 0 it 
+R 3594 3 0 boy
+- 0 510
+- 510
+: 526 4 4 Uh
+- 530
+: 542 4 4 Huh
+- 546
+* 558 4 4 Yeah
+- 562
+: 574 4 4 Huh
+- 578
+: 590 4 4 Uh
+- 594
+: 606 4 4 Huh
+- 610
+: 622 5 4 Yeah
+- 627
+: 638 4 4 Huh
+- 642
+* 654 3 8 Huh
+: 658 6 7 ~
+- 664
+: 670 4 4 Hey
+- 674
+: 686 3 8 Huh
+: 690 5 7 ~
+- 695
+: 702 4 4 Yeah
+- 706
+: 718 4 4 Uh
+- 722
+: 734 4 4 Huh
+- 738
+: 750 4 4 Yeah
+- 754
+: 766 4 4 Huh
+- 770
+: 782 4 4 Huh
+- 786 1022
+- 1022
+: 1038 4 4 Uh
+- 1042 1086
+- 1086
+: 1102 4 4 Uh
+- 1106 1150
+- 1150
+* 1166 4 4 Uh
+- 1170 1214
+- 1214
+: 1230 4 4 Uh
+- 1234 1286
+- 1286
+: 1302 2 4 And 
+* 1306 3 10 you
+: 1310 2 9 ~ 
+: 1314 3 7 want 
+: 1318 2 9 it
+- 1320 1322
+- 1322
+: 1338 6 8 You 
+: 1346 3 6 got 
+: 1350 1 6 it
+- 1351
+: 1366 2 4 And 
+: 1370 3 10 you
+: 1374 2 9 ~ 
+: 1378 3 7 want 
+: 1382 2 9 it
+- 1384
+: 1390 6 9 Ba
+: 1398 3 6 by 
+: 1402 4 8 you 
+: 1410 3 7 got 
+: 1414 2 4 it
+- 1416
+: 1430 3 4 And 
+: 1434 3 10 you
+: 1438 2 9 ~ 
+: 1442 3 7 want 
+: 1446 2 9 it
+- 1448 1450
+- 1450
+: 1466 5 8 You 
+* 1474 3 6 got 
+: 1478 2 6 it 
+: 1486 4 4 uh
+- 1490
+: 1498 3 10 You
+: 1502 2 9 ~ 
+: 1506 3 7 want 
+: 1510 2 9 it
+- 1512
+: 1518 3 9 Ba
+: 1522 2 8 ~
+: 1526 2 6 by 
+: 1530 4 8 you 
+: 1538 3 6 got 
+: 1542 2 4 it
+- 1544
+: 1550 4 4 Huh
+- 1554 1790
+- 1790
+: 1806 4 4 Uh
+- 1810 1822
+- 1822
+: 1838 4 4 Yeah
+- 1842 1854
+- 1854
+: 1870 4 4 Uh
+- 1874 1886
+- 1886
+: 1902 4 4 Yeah
+- 1906 1918
+- 1918
+: 1934 4 4 Uh
+- 1938 1950
+- 1950
+: 1966 4 4 Yeah
+- 1970 1982
+- 1982
+: 1998 4 4 Uh
+- 2002 2054
+- 2054
+: 2070 2 4 If 
+: 2074 3 10 you
+: 2078 2 9 ~ 
+: 2082 3 7 want 
+: 2086 2 9 it
+- 2088 2090
+- 2090
+: 2106 5 8 You 
+: 2114 3 6 got 
+: 2118 2 6 it 
+: 2126 4 4 uh
+- 2130
+: 2138 3 10 You
+: 2142 2 9 ~ 
+: 2146 3 9 want 
+: 2150 2 7 it
+- 2152
+: 2158 3 10 Ba
+* 2162 2 9 ~
+: 2166 2 7 by 
+: 2170 5 9 you 
+: 2178 3 7 got 
+: 2182 2 4 it 
+: 2190 4 4 uh
+- 2194
+: 2202 3 10 You
+: 2206 2 9 ~ 
+: 2210 3 7 want 
+: 2214 2 9 it 
+: 2222 4 4 ooh
+- 2226
+: 2234 5 9 You 
+: 2242 3 7 got 
+: 2246 3 4 it 
+: 2254 3 4 uh
+- 2257
+: 2266 3 10 You
+: 2270 2 9 ~ 
+: 2274 3 7 want 
+: 2278 2 9 it
+- 2280
+: 2286 3 10 Ba
+: 2290 2 9 ~
+: 2294 3 7 by 
+: 2298 5 9 you 
+: 2306 3 7 got 
+: 2310 3 4 it
+- 2313 2558
+- 2558
+: 2574 3 8 Huh
+: 2578 4 6 ~
+- 2582
+: 2590 4 4 Hey
+- 2594
+: 2606 4 4 Yeah
+- 2610
+: 2622 4 4 Huh
+- 2626
+* 2638 3 8 Ooh
+: 2642 4 6 ~
+- 2646
+: 2654 4 4 Ooh
+- 2658
+: 2670 4 4 Hey
+- 2674
+: 2686 5 4 Yeah
+- 2691
+: 2702 4 4 Uh
+- 2706
+: 2718 4 4 Ooh
+- 2722
+: 2734 4 4 Hey
+- 2738
+: 2750 4 4 Yeah
+- 2754
+: 2766 4 4 Hee
+- 2770
+: 2782 4 4 Huh
+- 2786
+: 2798 4 4 Uh
+- 2802
+: 2814 4 4 Uh
+- 2818
+: 2830 4 4 Hey
+- 2834 3334
+- 3334
+: 3350 1 4 And 
+: 3352 1 4 if 
+: 3354 3 10 you
+: 3358 2 9 ~ 
+: 3362 3 7 want 
+: 3366 2 9 it
+- 3368 3370
+- 3370
+: 3386 5 9 You 
+: 3394 3 7 got 
+: 3398 3 4 it 
+: 3406 4 4 uh
+- 3410
+: 3418 4 9 You 
+: 3426 3 7 want 
+* 3430 2 9 it
+- 3432
+: 3439 2 9 Ba
+: 3442 2 8 ~
+: 3446 3 6 by 
+: 3450 5 8 you 
+: 3458 3 6 got 
+: 3462 2 6 it 
+: 3470 4 4 uh
+- 3474
+: 3482 3 9 You
+: 3486 2 7 ~ 
+: 3490 3 7 want 
+: 3494 2 9 it 
+: 3502 4 4 uh
+- 3506
+: 3514 5 9 You 
+: 3522 3 7 got 
+: 3526 3 4 it 
+: 3534 4 4 uh
+- 3538
+: 3546 5 9 You 
+: 3554 3 7 want 
+: 3558 2 9 it
+- 3560
+: 3566 3 10 Ba
+: 3570 2 9 ~
+: 3574 3 7 by 
+: 3578 5 9 you 
+: 3586 2 7 got 
+: 3590 3 4 it
+- 3593
+: 3598 3 8 Uh
+: 3602 4 6 ~
+- 3606
+: 3614 3 8 Huh
+: 3618 4 6 ~
+- 3622
+: 3630 3 8 Hey
+: 3634 4 6 ~
+- 3638
+: 3646 4 4 Hey
+- 3650
+* 3662 4 4 Uh
+- 3666
+: 3678 4 4 Huh
+- 3682
+: 3694 4 4 Yeah
+- 3698
+: 3710 4 4 Huh
+- 3714
+: 3726 3 8 Huh
+: 3730 4 6 ~
+- 3734
+: 3742 4 4 Hey
+- 3746
+: 3758 3 8 Huh
+: 3762 4 6 ~
+- 3766
+: 3774 4 4 Yeah
+- 3778
+: 3790 4 4 Uh
+- 3794
+: 3806 4 4 Huh
+- 3810
+: 3822 3 8 Hey
+: 3826 4 6 ~
+- 3830
+: 3838 4 4 Hey
+- 3842
+* 3854 4 4 Yeah
+E

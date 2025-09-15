@@ -120,6 +120,7 @@
     "Papa Roach",
     "Robbie Williams",
     "Simon & Garfunkel",
+    "Take That",
     "Texas",
     "The Smashing Pumpkins",
     "The Who",
@@ -148,8 +149,7 @@
     "Nelly Furtado",
     "Ozzy Osbourne",
     "P!nk",
-    "Prince and the Revolution",
-    "Seal"
+    "Prince and the Revolution"
   ],
   "languages": [
     "Armenian",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5163
+  "songs": 5178
 }
