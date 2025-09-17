@@ -14899,7 +14899,7 @@
     "bpm": 280.18,
     "gap": 82.79677350274824,
     "year": "409",
-    "lastUpdate": "2025-09-15T00:13:31.482Z",
+    "lastUpdate": "2025-09-13T08:40:18.640Z",
     "realBpm": 34,
     "volume": 0.5,
     "author": "whiskey0010singwell",
@@ -14926,7 +14926,7 @@
     "gap": 17188.269794721407,
     "year": "2004",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-09-15T00:13:30.681Z",
+    "lastUpdate": "2025-09-13T08:39:46.622Z",
     "realBpm": 29,
     "volume": 0.5,
     "author": "Diddlmaus30mg",
@@ -46803,7 +46803,7 @@
     "gap": 7454.300884955752,
     "year": "2011",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:31.658Z",
+    "lastUpdate": "2025-09-13T21:11:23.542Z",
     "genre": "Pop",
     "realBpm": 31,
     "volume": 0.5,
@@ -46831,7 +46831,7 @@
     "gap": 34603.90625,
     "year": "2014",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:31.841Z",
+    "lastUpdate": "2025-09-13T21:11:43.231Z",
     "genre": "Dance & Electronic",
     "realBpm": 44,
     "volume": 0.5,
@@ -115339,7 +115339,7 @@
     "gap": 32385.524861878454,
     "year": "2011",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:30.680Z",
+    "lastUpdate": "2025-09-13T08:39:19.283Z",
     "genre": "Soul",
     "realBpm": 19,
     "volume": 0.5,
@@ -115367,7 +115367,7 @@
     "gap": 18269.374609130708,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:30.674Z",
+    "lastUpdate": "2025-09-13T08:38:43.752Z",
     "genre": "Soul",
     "realBpm": 34,
     "volume": 0.5,
@@ -127513,6 +127513,34 @@
     "local": false
   },
   {
+    "id": "take-that-a-million-love-songs",
+    "title": "A Million Love Songs",
+    "artist": "Take That",
+    "video": "-98w8bO6PXo",
+    "language": [
+      "English"
+    ],
+    "bpm": 271.9,
+    "gap": 13827.35294117647,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.366Z",
+    "genre": "Pop",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - A Million Love Songs",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5184,
+    "tracksCount": 1,
+    "search": "takethatamillionlovesongs",
+    "local": false
+  },
+  {
     "id": "take-that-babe",
     "title": "Babe",
     "artist": "Take That",
@@ -127524,7 +127552,7 @@
     "gap": 5193.972602739726,
     "year": "1993",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:32.214Z",
+    "lastUpdate": "2025-09-14T10:25:59.892Z",
     "genre": "Pop",
     "realBpm": 16,
     "volume": 0.5,
@@ -127538,6 +127566,62 @@
     "shortId": 5179,
     "tracksCount": 1,
     "search": "takethatbabe",
+    "local": false
+  },
+  {
+    "id": "take-that-back-for-good",
+    "title": "Back For Good",
+    "artist": "Take That",
+    "video": "N2ICtCO8TCw",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.4,
+    "gap": 17144.424778761062,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.365Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Back For Good",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5183,
+    "tracksCount": 1,
+    "search": "takethatbackforgood",
+    "local": false
+  },
+  {
+    "id": "take-that-could-it-be-magic",
+    "title": "Could It Be Magic",
+    "artist": "Take That",
+    "video": "SVBIfSt0lAo",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 13436.062992125984,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.377Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Could It Be Magic",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5188,
+    "tracksCount": 1,
+    "search": "takethatcoulditbemagic",
     "local": false
   },
   {
@@ -127569,6 +127653,146 @@
     "local": false
   },
   {
+    "id": "take-that-greatest-day",
+    "title": "Greatest Day",
+    "artist": "Take That",
+    "video": "d9kiR4UxLtM",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.2,
+    "gap": 17628.201634877383,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.380Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Greatest Day",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5190,
+    "tracksCount": 1,
+    "search": "takethatgreatestday",
+    "local": false
+  },
+  {
+    "id": "take-that-hold-up-a-light",
+    "title": "Hold Up A Light",
+    "artist": "Take That",
+    "video": "Xc8Z8o0XouQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 5086.062992125984,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.383Z",
+    "genre": "Pop",
+    "realBpm": 11,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Hold Up A Light",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5191,
+    "tracksCount": 1,
+    "search": "takethatholdupalight",
+    "local": false
+  },
+  {
+    "id": "take-that-how-deep-is-your-love",
+    "title": "How Deep Is Your Love",
+    "artist": "Take That",
+    "video": "CTqabbIPfc0",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 16635,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.369Z",
+    "genre": "Pop",
+    "realBpm": 34,
+    "volume": 0.5,
+    "author": "Peschi",
+    "sourceUrl": "Take That - How Deep Is Your Love",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5186,
+    "tracksCount": 1,
+    "search": "takethathowdeepisyourlove",
+    "local": false
+  },
+  {
+    "id": "take-that-how-did-it-come-to-this",
+    "title": "How Did It Come To This",
+    "artist": "Take That",
+    "video": "A4sVmhfjDi0",
+    "language": [
+      "English"
+    ],
+    "bpm": 231.8,
+    "gap": 16030.172413793103,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.362Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "liorfox",
+    "sourceUrl": "Take That - How Did It Come To This",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5182,
+    "tracksCount": 1,
+    "search": "takethathowdiditcometothis",
+    "local": false
+  },
+  {
+    "id": "take-that-id-wait-for-life",
+    "title": "I’d Wait For Life",
+    "artist": "Take That",
+    "video": "Rn7uaz0fayA",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 31213.90625,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.368Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - I’d Wait For Life",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5185,
+    "tracksCount": 1,
+    "search": "takethatidwaitforlife",
+    "local": false
+  },
+  {
     "id": "take-that-it-only-takes-a-minute",
     "title": "It Only Takes A Minute",
     "artist": "Take That",
@@ -127580,7 +127804,7 @@
     "gap": -28.953211736716895,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:32.207Z",
+    "lastUpdate": "2025-09-14T10:20:59.255Z",
     "genre": "Pop",
     "realBpm": 32,
     "volume": 0.5,
@@ -127594,6 +127818,62 @@
     "shortId": 5176,
     "tracksCount": 1,
     "search": "takethatitonlytakesaminute",
+    "local": false
+  },
+  {
+    "id": "take-that-kidz",
+    "title": "Kidz",
+    "artist": "Take That",
+    "video": "jlapv48d7VQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.4,
+    "gap": 20618.00327332242,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.360Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "liorfox",
+    "sourceUrl": "Take That - Kidz",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5181,
+    "tracksCount": 1,
+    "search": "takethatkidz",
+    "local": false
+  },
+  {
+    "id": "take-that-never-forget",
+    "title": "Never Forget",
+    "artist": "Take That",
+    "video": "N7bw29eTfNw",
+    "language": [
+      "English"
+    ],
+    "bpm": 364.8,
+    "gap": 18863.157894736843,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.375Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Never Forget",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5187,
+    "tracksCount": 1,
+    "search": "takethatneverforget",
     "local": false
   },
   {
@@ -127622,6 +127902,34 @@
     "shortId": 4167,
     "tracksCount": 1,
     "search": "takethatpatience",
+    "local": false
+  },
+  {
+    "id": "take-that-promises",
+    "title": "Promises",
+    "artist": "Take That",
+    "video": "4qoTyf5CksE",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 25773.157894736843,
+    "year": "1991",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.354Z",
+    "genre": "Pop",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Promises",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5180,
+    "tracksCount": 1,
+    "search": "takethatpromises",
     "local": false
   },
   {
@@ -127667,7 +127975,7 @@
     "gap": 14051.296572280178,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:32.208Z",
+    "lastUpdate": "2025-09-14T10:25:05.710Z",
     "genre": "Pop",
     "realBpm": 27,
     "volume": 0.5,
@@ -127695,7 +128003,7 @@
     "gap": 7324.375,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:32.210Z",
+    "lastUpdate": "2025-09-14T10:25:36.518Z",
     "genre": "Pop",
     "realBpm": 19,
     "volume": 0.5,
@@ -127709,6 +128017,34 @@
     "shortId": 5178,
     "tracksCount": 1,
     "search": "takethatupallnight",
+    "local": false
+  },
+  {
+    "id": "take-that-what-do-you-want-from-me",
+    "title": "What Do You Want From Me?",
+    "artist": "Take That",
+    "video": "w3V8BnByebo",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 22361.739130434784,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-17T00:12:08.379Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "liorfox",
+    "sourceUrl": "Take That - What Do You Want From Me?",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5189,
+    "tracksCount": 1,
+    "search": "takethatwhatdoyouwantfromme",
     "local": false
   },
   {
@@ -143544,7 +143880,7 @@
     "gap": 11240,
     "year": "1981",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-15T00:13:32.028Z",
+    "lastUpdate": "2025-09-14T08:55:31.951Z",
     "genre": "Ballad",
     "realBpm": 25,
     "volume": 0.5,
@@ -143572,7 +143908,7 @@
     "gap": 32893.76529082156,
     "year": "1978",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-15T00:13:32.202Z",
+    "lastUpdate": "2025-09-14T08:57:04.505Z",
     "genre": "Pop",
     "videoGap": 14,
     "realBpm": 27,
@@ -143601,7 +143937,7 @@
     "gap": 3887.2468117029257,
     "year": "1978",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-15T00:13:32.205Z",
+    "lastUpdate": "2025-09-14T10:20:34.733Z",
     "genre": "Dance",
     "realBpm": 26,
     "volume": 0.5,
@@ -146736,7 +147072,7 @@
     "gap": 14848.095238095239,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-15T00:13:31.843Z",
+    "lastUpdate": "2025-09-13T21:12:17.578Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "bohning",
@@ -147402,7 +147738,7 @@
     "gap": 16000.805163920502,
     "year": "1989",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-15T00:13:31.854Z",
+    "lastUpdate": "2025-09-14T08:54:46.205Z",
     "realBpm": 21,
     "volume": 0.5,
     "author": "bohning",
