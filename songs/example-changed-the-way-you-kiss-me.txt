@@ -1,0 +1,443 @@
+#ARTIST:Example
+#TITLE:Changed The Way You Kiss Me
+#CREATOR:flaur
+#BPM:339
+#YEAR:2011
+#VIDEO:v=CLXt3yh2g0s
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:7454,300884955752
+#ALLKARAOKE_ID:example-changed-the-way-you-kiss-me
+#ALLKARAOKE_SID:5169
+#ALLKARAOKE_LASTUPDATE:2025-09-13T21:11:23.542Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:31
+#ALLKARAOKE_SOURCEURL:Example - Changed The Way You Kiss Me
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Example - Changed The Way You Kiss Me.mp3
+: 23 3 4 I've 
+: 29 3 4 nev
+: 34 3 4 er 
+: 40 3 4 been 
+: 46 2 6 a
+: 51 8 7 fraid 
+: 61 3 7 of 
+: 66 3 7 the 
+: 71 7 6 high
+: 79 3 6 est 
+: 86 7 4 heights
+- 93 97
+- 97
+: 120 3 -1 Or 
+: 125 3 -1 a
+: 131 13 -1 fraid 
+: 146 2 4 of 
+: 152 3 -1 fly
+: 156 5 -3 ~
+: 162 6 -3 ing 
+: 172 5 -1 now
+- 177
+: 193 3 4 I've 
+: 199 3 4 nev
+: 205 3 4 er 
+: 210 3 4 been 
+: 216 2 6 a
+: 221 9 7 fraid 
+: 232 3 7 of 
+: 237 3 7 the 
+: 243 6 6 wild
+: 250 3 6 est 
+: 257 6 4 fights
+- 263 267
+- 267
+: 290 4 -1 Not 
+: 296 2 -1 a
+: 302 12 -1 fraid 
+: 316 3 4 of 
+: 322 4 -1 dy
+: 327 5 -3 ~
+: 333 5 -3 ing
+- 338 342
+- 342
+: 365 2 -1 But 
+: 370 4 -1 now 
+: 376 2 -1 I 
+: 381 3 -1 want 
+: 385 6 -1 off 
+: 397 4 4 this 
+: 408 5 -1 ride
+- 413
+: 419 3 -1 Cause 
+: 424 2 -1 you're 
+: 429 9 -1 scar
+: 440 6 4 ing 
+: 450 5 -1 me
+- 455
+: 466 3 4 And 
+: 472 3 6 I 
+: 478 8 7 don't 
+: 488 6 7 like 
+: 499 6 6 where 
+: 508 4 6 we're 
+: 514 4 6 go
+: 519 5 4 ing
+- 524
+: 545 5 -1 I 
+: 552 3 -1 need 
+: 557 3 -1 a 
+: 562 3 -1 new 
+: 569 5 4 fun 
+: 579 5 -1 fair
+- 584
+: 590 3 -1 Cause 
+: 595 2 -1 you're 
+: 600 9 -1 scar
+: 611 5 4 ing 
+: 621 6 -1 me
+- 627
+: 637 3 4 And 
+: 642 3 6 I 
+: 648 7 7 don't 
+: 658 6 7 like 
+: 670 6 6 where 
+: 679 3 6 we're 
+: 685 4 6 go
+: 690 4 4 ing
+- 694
+: 706 3 4 And 
+: 712 3 6 now 
+: 717 3 6 you're 
+: 723 4 6 gon
+: 729 3 6 na 
+: 734 4 6 miss 
+: 744 6 4 me
+- 750 769
+- 769
+: 792 3 4 I 
+: 797 3 6 know 
+: 802 4 6 you're 
+: 809 4 6 gon
+: 814 3 6 na 
+: 819 5 6 miss 
+: 830 5 4 me
+- 835 854
+- 854
+: 877 3 4 I 
+: 883 4 11 guar
+: 888 3 11 an
+: 894 3 11 tee 
+: 899 3 11 you'll 
+: 904 6 11 miss 
+: 915 5 9 me
+- 920 929
+- 929
+: 952 2 0 Cause 
+: 958 2 0 you 
+: 963 12 7 changed 
+: 979 3 0 the 
+: 985 2 6 wa
+: 988 8 7 ~y 
+: 999 4 7 you 
+: 1006 4 6 kiss 
+: 1016 4 4 me
+- 1020 1271
+- 1271
+: 1294 2 0 Cause 
+: 1299 2 0 you 
+: 1305 10 7 changed 
+: 1321 3 0 the 
+: 1326 4 6 wa
+: 1331 5 7 ~y 
+: 1340 5 7 you 
+: 1349 3 6 kiss 
+: 1358 4 4 me
+- 1362
+R 1382 1 0 We 
+R 1384 2 0 used 
+R 1388 1 0 to 
+R 1390 2 0 be 
+R 1395 2 0 so 
+R 1401 2 0 so 
+R 1406 3 0 soul
+R 1412 3 0 ful
+- 1415
+R 1422 3 0 Al 
+R 1428 3 0 Green 
+R 1432 2 0 on 
+R 1435 1 0 the 
+R 1438 3 0 back
+R 1444 2 0 ground 
+R 1448 3 0 vo
+R 1454 3 0 cals
+- 1457
+R 1464 3 0 T 
+R 1471 3 0 to
+R 1476 2 0 tal 
+R 1479 1 0 we're 
+R 1481 1 0 on 
+R 1483 1 0 the 
+R 1485 4 0 next 
+R 1492 4 0 high
+- 1496
+R 1505 2 0 We 
+R 1508 2 0 get 
+R 1513 3 0 by 
+R 1518 1 0 with 
+R 1520 2 0 a 
+R 1524 2 0 so 
+R 1529 2 0 called 
+R 1535 3 0 soul
+R 1540 1 0 mate
+- 1541
+R 1544 3 0 Made 
+R 1550 2 0 for 
+R 1553 2 0 each 
+R 1556 1 0 oth
+R 1558 1 0 er 
+R 1561 3 0 chit 
+R 1567 3 0 chat
+- 1570
+R 1577 2 0 But 
+R 1582 3 0 that 
+R 1593 3 0 dried 
+R 1599 3 0 up
+- 1602
+R 1614 3 0 Wise 
+R 1620 2 0 up 
+R 1625 1 0 to 
+R 1627 2 0 the 
+R 1631 1 0 cut
+R 1633 1 0 ting 
+R 1635 3 0 edge 
+R 1641 2 0 facts
+- 1643
+R 1647 2 0 Now 
+R 1650 1 0 I'm 
+R 1652 2 0 chill
+R 1656 1 0 ing 
+R 1658 1 0 on 
+R 1660 1 0 my 
+R 1663 2 0 Jack 
+R 1667 2 0 Jones
+- 1669
+R 1673 1 0 Look
+R 1675 2 0 ing 
+R 1679 2 0 for 
+R 1682 1 0 a 
+R 1684 2 0 way 
+R 1689 2 0 back 
+R 1694 2 0 home
+- 1696
+R 1700 2 0 But 
+R 1703 1 0 I 
+R 1705 2 0 can't 
+R 1710 2 0 get 
+R 1716 3 0 back
+- 1719
+: 1727 5 4 Ou
+: 1733 2 2 ~r 
+: 1738 3 2 lo
+: 1742 2 -1 ~ve 
+: 1747 5 -1 fee
+: 1753 2 -3 ~ls 
+: 1759 4 -3 wro
+: 1764 2 -5 ~ng 
+: 1770 6 -5 please 
+: 1781 6 -6 wind 
+: 1791 2 -5 it 
+: 1796 4 -8 back
+- 1800
+* 1810 7 4 Ou
+* 1818 2 2 ~r 
+* 1823 4 2 lo
+* 1828 2 -1 ~ve 
+* 1834 3 -1 fee
+* 1838 2 -3 ~ls 
+* 1844 6 -3 wrong 
+* 1855 6 -3 can't 
+* 1866 6 -1 hide 
+* 1876 3 0 the 
+* 1881 6 -1 cracks
+- 1887
+: 1902 3 4 I 
+: 1907 5 11 guar
+: 1913 3 11 an
+: 1919 3 11 tee 
+: 1924 3 11 you'll 
+: 1930 4 11 miss 
+: 1940 4 9 me
+- 1944 1953
+- 1953
+: 1976 3 0 Cause 
+: 1982 2 0 you 
+: 1989 9 7 changed 
+: 2004 2 0 the 
+: 2009 4 6 wa
+: 2014 3 7 ~y 
+: 2021 6 7 you 
+: 2031 5 6 kiss 
+: 2042 3 4 me
+- 2045 2263
+- 2263
+: 2286 3 4 I've 
+: 2292 4 4 nev
+: 2297 2 4 er 
+: 2303 3 4 been 
+: 2308 2 6 a
+: 2315 8 7 fraid 
+: 2325 3 7 of 
+: 2330 3 7 the 
+: 2335 7 6 high
+: 2343 3 6 est 
+: 2349 8 4 heights
+- 2357 2359
+- 2359
+: 2382 5 -1 Or 
+: 2389 2 -1 a
+: 2394 13 -1 fraid 
+: 2409 2 4 of 
+: 2415 4 -1 fly
+: 2420 4 -3 ~
+: 2425 6 -3 ing 
+: 2436 5 -1 now
+- 2441
+: 2457 3 4 I've 
+: 2464 3 4 nev
+: 2469 2 4 er 
+: 2474 4 4 been 
+: 2479 2 6 a
+: 2485 8 7 fraid 
+: 2496 3 7 of 
+: 2501 2 7 the 
+: 2506 7 6 wild
+: 2514 2 6 est 
+: 2521 6 4 fights
+- 2527 2531
+- 2531
+: 2554 3 -1 Not 
+: 2559 2 -1 a
+: 2565 12 -1 fraid 
+: 2580 3 4 of 
+: 2586 4 -1 dy
+: 2591 5 -3 ~
+: 2597 5 -3 ing
+- 2602 2615
+- 2615
+: 2638 3 -1 I 
+: 2644 4 -1 need 
+: 2650 3 -1 a 
+: 2655 3 -1 new 
+: 2661 6 4 fun 
+: 2672 6 -1 fair
+- 2678
+: 2683 3 -1 Cause 
+: 2688 2 -1 you're 
+: 2693 9 -1 scar
+: 2704 4 4 ing 
+: 2713 5 -1 me
+- 2718
+: 2730 4 4 And 
+: 2736 3 6 I 
+: 2741 7 7 don't 
+: 2751 7 7 like 
+: 2762 7 6 where 
+: 2772 3 6 we're 
+: 2777 5 6 go
+: 2783 5 4 ing
+- 2788
+* 2800 2 4 I 
+* 2805 4 11 guar
+* 2810 3 11 an
+* 2816 3 11 tee 
+* 2821 2 11 you'll 
+* 2826 5 11 miss 
+* 2837 4 9 me
+- 2841 2851
+- 2851
+: 2874 2 0 Cause 
+: 2879 3 0 you 
+: 2885 11 7 changed 
+: 2901 3 4 the 
+: 2906 4 6 wa
+: 2911 6 7 ~y 
+: 2922 3 7 you 
+: 2929 3 6 kiss 
+: 2939 4 4 me
+- 2943 3278
+- 3278
+: 3301 2 0 Cause 
+: 3306 2 0 you 
+: 3312 12 7 changed 
+: 3328 3 4 the 
+: 3333 4 6 wa
+: 3338 9 7 ~y 
+: 3349 3 7 you 
+: 3355 4 6 kiss 
+: 3365 5 4 me
+- 3370
+: 3391 7 4 Ou
+: 3399 2 2 ~r 
+: 3403 4 2 lo
+: 3408 2 -1 ~ve 
+: 3414 3 -1 fee
+: 3418 2 -3 ~ls 
+: 3425 3 -3 wro
+: 3429 2 -5 ~ng 
+: 3435 7 -5 please 
+: 3447 6 -6 wind 
+: 3456 2 -5 it 
+: 3461 5 -8 back
+- 3466
+: 3477 5 4 Ou
+: 3483 2 2 ~r 
+: 3488 4 2 lo
+: 3493 2 -1 ~ve 
+: 3499 4 -1 fee
+: 3504 2 -3 ~ls 
+: 3510 4 -3 wrong 
+: 3521 6 -3 can't 
+: 3531 7 -1 hide 
+: 3542 2 0 the 
+: 3547 7 -1 cracks
+- 3554
+: 3568 2 4 I 
+: 3574 4 11 guar
+: 3579 3 11 an
+: 3585 3 11 tee 
+: 3589 3 11 you'll 
+: 3595 3 11 mi
+: 3599 2 9 ~ss 
+: 3606 4 9 me
+- 3610 3619
+- 3619
+* 3642 3 4 Cause 
+* 3648 3 4 you 
+* 3654 11 7 changed 
+* 3669 3 4 the 
+* 3675 4 6 wa
+* 3680 4 7 ~y 
+* 3687 5 7 you 
+* 3697 4 6 kiss 
+* 3707 4 4 me
+- 3711 3886
+- 3886
+: 3909 3 4 I 
+: 3915 5 11 guar
+: 3921 3 11 an
+: 3927 3 11 tee 
+: 3931 3 11 you'll 
+: 3936 4 11 mi
+: 3941 2 9 ~ss 
+: 3948 5 9 me
+- 3953 3961
+- 3961
+: 3984 2 4 Cause 
+: 3990 2 4 you 
+: 3996 11 7 changed 
+: 4012 3 4 the 
+: 4017 4 6 wa
+: 4022 4 7 ~y 
+: 4029 6 7 you 
+: 4039 4 6 kiss 
+: 4050 4 4 me
+E
