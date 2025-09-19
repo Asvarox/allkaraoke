@@ -1,0 +1,520 @@
+#ARTIST:Linkin Park
+#TITLE:Unshatter
+#CREATOR:DoubleDee
+#BPM:290
+#YEAR:2025
+#PREVIEWSTART:63
+#VIDEO:v=_B3ONO5nh6g
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:2717,2413793103447
+#ALLKARAOKE_ID:linkin-park-unshatter
+#ALLKARAOKE_SID:5201
+#ALLKARAOKE_LASTUPDATE:2025-09-19T00:12:10.395Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_PREVIEWEND:93
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Linkin Park - Unshatter.mp3
+#COVER:Linkin Park - Unshatter [CO].jpg
+#BACKGROUND:Linkin Park - Unshatter [BG].jpg
+: 19 2 6 And 
+: 23 6 13 we’ll 
+: 31 3 13 ne
+: 35 2 11 ver 
+: 39 2 11 e
+: 43 2 9 ver 
+: 47 2 9 put 
+: 51 2 9 it 
+: 55 2 9 back 
+: 59 2 8 to
+: 63 3 8 ge
+: 67 3 9 ther
+- 70
+: 75 2 4 I 
+: 79 2 8 shoul
+: 83 2 9 da 
+: 87 4 9 known 
+: 95 2 9 bet
+: 99 2 9 ter, 
+: 103 4 6 you’re 
+: 111 10 13 ly
+: 123 3 11 ~
+: 127 3 11 ~
+: 131 9 9 ~in’
+- 140 256
+- 256
+R 275 2 0 May
+R 279 2 0 be 
+R 283 2 0 I 
+R 287 1 0 made 
+R 289 1 0 it 
+R 291 3 0 more 
+R 295 3 0 com
+R 299 2 0 pli
+R 303 2 0 ca
+R 307 2 0 ted 
+R 311 2 0 than 
+R 315 2 0 it 
+R 319 2 0 had 
+R 323 2 0 to 
+R 327 2 0 be
+- 329
+R 339 1 0 May
+R 341 1 0 be 
+R 343 2 0 I’m 
+R 347 2 0 mis
+R 351 2 0 ta
+R 355 2 0 ken, 
+R 359 2 0 but 
+R 363 2 0 it’s 
+R 367 2 0 ta
+R 371 2 0 king 
+R 375 2 0 some
+R 379 2 0 thing 
+R 383 2 0 out 
+R 387 2 0 of 
+R 391 3 0 me
+- 394
+R 403 1 0 May
+R 405 1 0 be 
+R 407 3 0 I’m 
+R 411 2 0 too 
+R 415 2 0 pa
+R 419 2 0 tient 
+R 423 2 0 ’cause 
+R 427 2 0 I 
+R 431 2 0 wai
+R 435 2 0 ted 
+R 439 2 0 un
+R 443 2 0 til 
+R 447 2 0 now 
+R 451 2 0 to 
+R 455 3 0 see
+- 458
+R 467 2 0 Take 
+R 471 2 0 what 
+R 475 2 0 you 
+R 479 1 0 say 
+R 481 1 0 and 
+R 483 3 0 I’ll 
+R 487 2 0 ru
+R 491 2 0 mi
+R 495 2 0 nate 
+R 499 2 0 a
+R 503 2 0 way 
+R 507 2 0 re
+R 511 2 0 a
+R 515 2 0 li
+R 519 3 0 ty
+- 522
+: 531 2 6 But 
+: 535 6 9 we’ll 
+: 543 3 9 ne
+: 547 2 9 ver 
+: 551 2 9 e
+: 555 2 6 ver 
+: 559 2 9 put 
+: 563 2 9 it 
+: 567 2 9 back 
+: 571 2 9 to
+: 575 3 9 ge
+: 579 2 9 ther
+- 581
+: 587 2 4 I 
+: 591 2 9 shoul
+: 595 2 9 da 
+: 599 5 9 known 
+: 607 2 9 bet
+: 611 3 9 ter, 
+: 615 6 6 you’re 
+: 623 10 8 ly
+: 635 3 9 ~
+: 639 15 9 ~in’
+- 654
+: 671 12 14 Un
+: 687 15 13 shat
+: 703 9 9 ter 
+: 715 3 9 the 
+: 719 3 11 pic
+: 727 6 11 ture 
+: 735 3 11 I 
+: 739 3 9 was 
+: 743 2 11 try
+: 747 2 9 na 
+: 751 7 11 see 
+: 759 6 13 my
+: 767 6 8 self 
+: 775 13 9 in
+- 788
+: 799 12 14 Un
+: 815 15 13 shat
+: 831 9 9 ter 
+: 843 3 9 the 
+: 847 6 11 pro
+: 855 6 11 mise 
+: 863 3 11 that 
+: 867 3 9 I 
+: 871 2 11 coul
+: 875 2 9 dn’t 
+: 879 7 11 help 
+: 887 6 13 be
+: 895 11 13 lieve
+: 907 3 11 ~
+- 910
+: 915 2 2 I 
+: 919 5 9 don’t 
+: 927 6 9 know 
+: 935 3 9 how 
+: 939 2 9 it 
+: 943 3 9 got 
+: 951 4 9 so 
+: 959 7 9 cold
+- 966
+: 967 3 9 But 
+: 971 2 6 my 
+: 975 4 9 chest 
+: 983 2 9 is 
+: 987 2 6 a 
+: 991 7 9 hole 
+: 999 2 9 and 
+: 1003 2 9 the 
+: 1007 5 11 whole 
+: 1015 5 13 world 
+: 1023 6 8 fell 
+: 1031 11 9 in
+- 1042
+: 1055 12 14 Un
+: 1071 15 13 shat
+: 1087 12 9 ter 
+: 1103 19 13 me
+: 1123 3 14 ~
+: 1127 3 13 ~
+: 1131 27 11 ~
+- 1158
+R 1171 1 0 I 
+R 1173 1 0 was 
+R 1175 2 0 wai
+R 1179 2 0 tin’ 
+R 1183 2 0 pa
+R 1187 2 0 tient
+R 1191 2 0 ly, 
+R 1195 2 0 sa
+R 1199 2 0 vin’ 
+R 1203 2 0 judg
+R 1207 2 0 ment 
+R 1211 2 0 for 
+R 1215 4 0 too 
+R 1223 4 0 long
+- 1227
+R 1235 1 0 When 
+R 1237 1 0 the 
+R 1239 2 0 he
+R 1243 2 0 si
+R 1247 2 0 ta
+R 1251 2 0 tion 
+R 1255 2 0 would 
+R 1259 2 0 set 
+R 1263 2 0 the 
+R 1267 2 0 stage 
+R 1271 2 0 that 
+R 1275 2 0 I’d 
+R 1279 4 0 lose 
+R 1287 4 0 on
+- 1291
+R 1299 1 0 You 
+R 1301 1 0 were 
+R 1303 3 0 on
+R 1307 2 0 ly 
+R 1311 2 0 ai
+R 1315 2 0 min’ 
+R 1319 2 0 to 
+R 1323 2 0 pass 
+R 1327 2 0 the 
+R 1331 3 0 blame 
+R 1335 2 0 and 
+R 1339 2 0 then 
+R 1343 4 0 move 
+R 1351 4 0 on
+- 1355
+R 1363 1 0 You 
+R 1365 1 0 just 
+R 1367 3 0 turned 
+R 1371 2 0 the 
+R 1375 2 0 ta
+R 1379 2 0 bles 
+R 1383 2 0 and 
+R 1387 2 0 made 
+R 1391 2 0 my 
+R 1395 2 0 right 
+R 1399 2 0 to 
+R 1403 2 0 a 
+R 1407 4 0 new 
+R 1415 4 0 wrong
+- 1419
+: 1427 2 6 But 
+: 1431 6 9 we’ll 
+: 1439 3 9 ne
+: 1443 2 9 ver 
+: 1447 2 9 e
+: 1451 2 6 ver 
+: 1455 2 9 put 
+: 1459 2 9 it 
+: 1463 2 9 back 
+: 1467 2 9 to
+: 1471 3 9 ge
+: 1475 2 9 ther
+- 1477
+: 1483 2 6 I 
+: 1487 2 9 shoul
+: 1491 2 9 da 
+: 1495 5 9 known 
+: 1503 2 9 bet
+: 1507 3 9 ter, 
+: 1511 6 6 you’re 
+: 1519 10 13 ly
+: 1531 3 11 ~
+: 1535 3 11 ~
+: 1539 11 9 ~in’
+- 1550
+: 1567 12 14 Un
+: 1583 15 13 shat
+: 1599 9 9 ter 
+: 1611 3 9 the 
+: 1615 3 11 pic
+: 1623 6 11 ture 
+: 1631 3 11 I 
+: 1635 3 9 was 
+: 1639 2 11 try
+: 1643 2 9 na 
+: 1647 7 11 see 
+: 1655 6 13 my
+: 1663 6 8 self 
+: 1671 13 9 in
+- 1684
+: 1695 12 14 Un
+: 1711 15 13 shat
+: 1727 9 9 ter 
+: 1739 3 9 the 
+: 1743 6 11 pro
+: 1751 6 11 mise 
+: 1759 3 11 that 
+: 1763 3 9 I 
+: 1767 2 11 coul
+: 1771 2 9 dn’t 
+: 1775 7 11 help 
+: 1783 6 13 be
+: 1791 11 13 lieve
+: 1803 3 11 ~
+- 1806
+: 1811 2 4 I 
+: 1815 5 9 don’t 
+: 1823 6 9 know 
+: 1831 3 9 how 
+: 1835 2 9 it 
+: 1839 3 9 got 
+: 1847 4 9 so 
+: 1855 7 9 cold
+- 1862
+: 1863 3 9 But 
+: 1867 2 6 my 
+: 1871 4 9 chest 
+: 1879 2 9 is 
+: 1883 2 6 a 
+: 1887 7 9 hole 
+: 1895 2 9 and 
+: 1899 2 9 the 
+: 1903 5 11 whole 
+: 1911 5 13 world 
+: 1919 6 8 fell 
+: 1927 11 9 in
+- 1938
+: 1951 12 14 Un
+: 1967 15 13 shat
+: 1983 12 9 ter 
+* 1999 19 13 me
+* 2019 3 14 ~
+* 2023 3 13 ~
+* 2027 23 11 ~
+* 2051 3 12 ~
+* 2055 12 13 ~
+- 2067
+F 2083 2 0 You 
+F 2087 2 0 don’t 
+F 2095 2 0 know 
+F 2103 2 0 me
+- 2105
+R 2115 2 0 You 
+R 2119 2 0 don’t 
+R 2127 2 0 know 
+R 2135 2 0 me
+- 2137
+R 2147 2 0 I 
+R 2151 2 0 don’t 
+R 2159 2 0 owe 
+R 2167 2 0 you 
+R 2175 2 0 a
+R 2179 2 0 ny
+R 2183 5 0 thing, 
+R 2191 4 0 go
+- 2195
+R 2211 2 0 You 
+R 2215 3 0 don’t 
+R 2223 2 0 know 
+R 2231 2 0 me
+- 2233
+R 2243 2 0 You 
+R 2247 3 0 don’t 
+R 2255 2 0 know 
+R 2263 2 0 me
+- 2265
+R 2275 2 0 I 
+R 2279 2 0 don’t 
+R 2287 3 0 owe 
+R 2295 3 0 you—
+- 2298 2300
+- 2300
+: 2319 20 13 Go!
+- 2339 2384
+- 2384
+: 2403 3 1 I 
+: 2407 5 1 don’t 
+: 2415 3 1 owe 
+: 2423 3 2 you
+: 2427 3 4 ~ 
+: 2431 3 2 a
+: 2435 2 1 ny
+: 2439 13 1 thing
+- 2452 2512
+- 2512
+: 2531 3 1 I 
+: 2535 5 1 don’t 
+: 2543 3 1 owe 
+: 2551 3 2 you
+: 2555 3 4 ~ 
+: 2559 3 2 a
+: 2563 2 1 ny
+: 2567 7 1 thing, 
+: 2575 12 1 go!
+- 2587
+: 2595 2 1 You 
+: 2599 6 1 don’t 
+: 2607 4 1 know 
+: 2615 9 1 me
+- 2624
+: 2627 2 1 You 
+: 2631 6 1 don’t 
+: 2639 6 1 know 
+: 2647 7 1 me
+- 2654
+: 2659 2 1 I 
+: 2663 5 1 don’t 
+: 2671 6 2 owe 
+: 2679 5 4 you 
+: 2687 2 2 a
+: 2691 2 1 ny
+: 2695 6 1 thing, 
+: 2703 12 1 you
+- 2715
+: 2723 2 1 You 
+: 2727 6 1 don’t 
+: 2735 6 1 know 
+: 2743 8 1 me
+- 2751
+: 2755 2 1 You 
+: 2759 6 1 don’t 
+: 2767 6 1 know 
+: 2775 7 1 me
+- 2782
+: 2786 3 1 I 
+: 2791 6 1 don’t 
+: 2799 14 2 owe 
+: 2815 48 1 you
+- 2863
+: 2867 3 4 And 
+: 2871 6 13 we’ll 
+: 2879 3 13 ne
+: 2883 2 11 ver 
+: 2887 2 11 e
+: 2891 2 9 ver 
+: 2895 2 9 put 
+: 2899 2 8 it 
+: 2903 2 8 back 
+: 2907 2 6 to
+: 2911 3 8 ge
+: 2915 4 9 ther
+- 2919
+: 2923 2 4 I 
+: 2927 2 9 shoul
+: 2931 2 9 da 
+: 2935 5 9 known 
+: 2943 2 9 bet
+: 2947 3 9 ter, 
+: 2951 6 6 you’re 
+: 2959 10 13 ly
+: 2971 3 11 ~
+: 2975 3 11 ~
+: 2979 11 9 ~in’
+- 2990
+: 3007 12 14 Un
+: 3023 15 13 shat
+: 3039 9 9 ter 
+: 3051 3 9 the 
+: 3055 3 11 pic
+: 3063 6 11 ture 
+: 3071 3 11 I 
+: 3075 3 9 was 
+: 3079 2 11 try
+: 3083 2 9 na 
+: 3087 7 11 see 
+: 3095 6 13 my
+: 3103 6 8 self 
+: 3111 13 9 in
+- 3124
+: 3135 12 14 Un
+: 3151 15 13 shat
+: 3167 9 9 ter 
+: 3179 3 9 the 
+: 3183 6 11 pro
+: 3191 6 11 mise 
+: 3199 3 11 that 
+: 3203 3 9 I 
+: 3207 2 11 coul
+: 3211 2 9 dn’t 
+: 3215 7 11 help 
+: 3223 6 13 be
+: 3231 11 13 lieve
+: 3243 3 11 ~
+- 3246
+: 3251 2 4 I 
+: 3255 5 9 don’t 
+: 3263 6 9 know 
+: 3271 3 9 how 
+: 3275 2 8 it 
+: 3279 3 9 got 
+: 3287 4 9 so 
+: 3295 7 9 cold
+- 3302
+: 3303 3 9 But 
+: 3307 2 6 my 
+: 3311 4 9 chest 
+: 3319 2 9 is 
+: 3323 2 6 a 
+: 3327 7 9 hole 
+: 3335 2 9 and 
+: 3339 2 9 the 
+: 3343 5 11 whole 
+: 3351 5 13 world 
+: 3359 6 8 fell 
+: 3367 11 9 in
+- 3378
+: 3391 12 14 Un
+: 3407 15 13 shat
+: 3423 12 9 ter 
+: 3439 19 13 me
+: 3459 3 14 ~
+: 3463 3 13 ~
+: 3467 23 11 ~
+: 3491 3 12 ~
+* 3495 137 13 ~
+E

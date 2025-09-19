@@ -32782,6 +32782,32 @@
     "local": false
   },
   {
+    "id": "dali-moonlight-densetsu",
+    "title": "Moonlight Densetsu",
+    "artist": "DALI",
+    "video": "D4WY94x63JE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 280.04,
+    "gap": 27692.288244536496,
+    "year": "1992",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-19T00:12:09.944Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Rubn4",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5195,
+    "tracksCount": 1,
+    "search": "dalimoonlightdensetsu",
+    "local": false
+  },
+  {
     "id": "dama-e-salvador-seixas-balada-do-desajeitado",
     "title": "Balada do Desajeitado",
     "artist": "D.A.M.A e Salvador Seixas",
@@ -37295,6 +37321,32 @@
     "shortId": 1237,
     "tracksCount": 1,
     "search": "disneysbeautyandthebeasthowdoesamomentlastforever",
+    "local": false
+  },
+  {
+    "id": "disneys-bolt-miley-cyrus-john-travolta-i-thought-i-lost-you",
+    "title": "I Thought I Lost You",
+    "artist": "Disney’s Bolt (Miley Cyrus & John Travolta)",
+    "video": "T_ozrd6so_0",
+    "language": [
+      "English"
+    ],
+    "bpm": 205.94,
+    "gap": 6960.780430984275,
+    "year": "2008",
+    "lastUpdate": "2025-09-19T00:12:10.236Z",
+    "genre": "Pop",
+    "realBpm": 103,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5197,
+    "tracksCount": 1,
+    "search": "disneysboltmileycyrusjohntravoltaithoughtilostyou",
     "local": false
   },
   {
@@ -58684,6 +58736,33 @@
     "local": false
   },
   {
+    "id": "hound-dog-rocks",
+    "title": "ROCKS",
+    "artist": "Hound Dog",
+    "video": "_zkByok5wqg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 252.2,
+    "gap": 32778.09523809524,
+    "year": "1986",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-19T00:12:09.250Z",
+    "genre": "J-Rock",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "Funnygirly",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5194,
+    "tracksCount": 1,
+    "search": "hounddogrocks",
+    "local": false
+  },
+  {
     "id": "houshou-marine-feat-gawr-gura-shinkiro",
     "title": "SHINKIRO",
     "artist": "Houshou Marine feat. Gawr Gura",
@@ -61446,6 +61525,33 @@
     "shortId": 2028,
     "tracksCount": 1,
     "search": "ironmaidenhallowedbethyname",
+    "local": false
+  },
+  {
+    "id": "iron-maiden-stranger-in-a-strange-land",
+    "title": "Stranger In A Strange Land",
+    "artist": "Iron Maiden",
+    "video": "UJsl-bB7lmk",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.2,
+    "gap": 39897.27272727273,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.431Z",
+    "genre": "Heavy Metal",
+    "realBpm": 110,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5216,
+    "tracksCount": 1,
+    "search": "ironmaidenstrangerinastrangeland",
     "local": false
   },
   {
@@ -75212,6 +75318,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-garden-of-eden",
+    "title": "Garden Of Eden",
+    "artist": "Lady Gaga",
+    "video": "tep9uGsVzK4",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.02,
+    "gap": 3230.0815934725224,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.403Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "volume": 0.77,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5204,
+    "tracksCount": 1,
+    "search": "ladygagagardenofeden",
+    "local": false
+  },
+  {
     "id": "lady-gaga-guy",
     "title": "G.U.Y.",
     "artist": "Lady Gaga",
@@ -75321,6 +75453,32 @@
     "shortId": 2478,
     "tracksCount": 1,
     "search": "ladygagahighwayunicornroadtolove",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-how-bad-do-u-want-me",
+    "title": "How Bad Do U Want Me",
+    "artist": "Lady Gaga",
+    "video": "Nd_M9A5xFlY",
+    "language": [
+      "English"
+    ],
+    "bpm": 188.02,
+    "gap": 4112.876289756409,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.408Z",
+    "genre": "Pop",
+    "realBpm": 188,
+    "volume": 0.71,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5206,
+    "tracksCount": 1,
+    "search": "ladygagahowbaddouwantme",
     "local": false
   },
   {
@@ -75692,6 +75850,32 @@
     "shortId": 2491,
     "tracksCount": 1,
     "search": "ladygagayouandi",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-zombieboy",
+    "title": "Zombieboy",
+    "artist": "Lady Gaga",
+    "video": "xWS0aRqzP6E",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.04,
+    "gap": -7.3266677593836675,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.406Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.83,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 5205,
+    "tracksCount": 1,
+    "search": "ladygagazombieboy",
     "local": false
   },
   {
@@ -79065,6 +79249,62 @@
     "shortId": 2603,
     "tracksCount": 1,
     "search": "linkinparktwofaced",
+    "local": false
+  },
+  {
+    "id": "linkin-park-unshatter",
+    "title": "Unshatter",
+    "artist": "Linkin Park",
+    "video": "_B3ONO5nh6g",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 2717.2413793103447,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.395Z",
+    "genre": "Alternative Rock",
+    "realBpm": 145,
+    "previewStart": 63,
+    "previewEnd": 93,
+    "volume": 0.8,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5201,
+    "tracksCount": 1,
+    "search": "linkinparkunshatter",
+    "local": false
+  },
+  {
+    "id": "linkin-park-up-from-the-bottom",
+    "title": "Up From The Bottom",
+    "artist": "Linkin Park",
+    "video": "97Mj6pXYMd8",
+    "language": [
+      "English"
+    ],
+    "bpm": 321,
+    "gap": 19758.69158878505,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.393Z",
+    "genre": "Nu Metal",
+    "realBpm": 107,
+    "volume": 0.7,
+    "author": "Loewy159",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5200,
+    "tracksCount": 1,
+    "search": "linkinparkupfromthebottom",
     "local": false
   },
   {
@@ -87442,6 +87682,35 @@
     "shortId": 2880,
     "tracksCount": 1,
     "search": "matchboxtwentyunwell",
+    "local": false
+  },
+  {
+    "id": "matsuko-mawatari-hohoemi-no-bakudan",
+    "title": "Hohoemi no Bakudan",
+    "artist": "Matsuko Mawatari",
+    "video": "urZWmEgm72Q",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260,
+    "gap": 18979.23076923077,
+    "year": "1992",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-19T00:12:10.100Z",
+    "genre": "Anime",
+    "realBpm": 129,
+    "previewStart": 20,
+    "previewEnd": 37,
+    "volume": 1,
+    "author": "SUBKEI",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5196,
+    "tracksCount": 1,
+    "search": "matsukomawatarihohoeminobakudan",
     "local": false
   },
   {
@@ -108602,6 +108871,33 @@
     "local": false
   },
   {
+    "id": "radiohead-15-step",
+    "title": "15 Step",
+    "artist": "Radiohead",
+    "video": "9bahTUVLXZw",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 8850,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.389Z",
+    "genre": "Alternative Rock, Art Rock",
+    "realBpm": 184,
+    "volume": 1,
+    "author": "rsa_skala",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5198,
+    "tracksCount": 1,
+    "search": "radiohead15step",
+    "local": false
+  },
+  {
     "id": "radiohead-airbag",
     "title": "Airbag",
     "artist": "Radiohead",
@@ -127524,7 +127820,7 @@
     "gap": 13827.35294117647,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.366Z",
+    "lastUpdate": "2025-09-15T13:28:36.633Z",
     "genre": "Pop",
     "realBpm": 18,
     "volume": 0.5,
@@ -127580,7 +127876,7 @@
     "gap": 17144.424778761062,
     "year": "1995",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.365Z",
+    "lastUpdate": "2025-09-15T13:28:00.688Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -127608,7 +127904,7 @@
     "gap": 13436.062992125984,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.377Z",
+    "lastUpdate": "2025-09-15T13:30:20.886Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -127622,6 +127918,62 @@
     "shortId": 5188,
     "tracksCount": 1,
     "search": "takethatcoulditbemagic",
+    "local": false
+  },
+  {
+    "id": "take-that-do-what-u-like",
+    "title": "Do What U Like",
+    "artist": "Take That",
+    "video": "qpqAXZI0s0s",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 8888.264462809917,
+    "year": "1991",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.423Z",
+    "genre": "Pop",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Do What U Like",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5212,
+    "tracksCount": 1,
+    "search": "takethatdowhatulike",
+    "local": false
+  },
+  {
+    "id": "take-that-everything-changes",
+    "title": "Everything Changes",
+    "artist": "Take That",
+    "video": "QzHIxigdlgQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.64,
+    "gap": 11362.50352057581,
+    "year": "1993",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.410Z",
+    "genre": "Pop",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Everything Changes",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5207,
+    "tracksCount": 1,
+    "search": "takethateverythingchanges",
     "local": false
   },
   {
@@ -127664,7 +128016,7 @@
     "gap": 17628.201634877383,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.380Z",
+    "lastUpdate": "2025-09-16T11:12:15.789Z",
     "genre": "Pop",
     "realBpm": 25,
     "volume": 0.5,
@@ -127692,7 +128044,7 @@
     "gap": 5086.062992125984,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.383Z",
+    "lastUpdate": "2025-09-16T11:12:52.342Z",
     "genre": "Pop",
     "realBpm": 11,
     "volume": 0.5,
@@ -127720,7 +128072,7 @@
     "gap": 16635,
     "year": "1996",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.369Z",
+    "lastUpdate": "2025-09-15T13:29:38.862Z",
     "genre": "Pop",
     "realBpm": 34,
     "volume": 0.5,
@@ -127748,7 +128100,7 @@
     "gap": 16030.172413793103,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.362Z",
+    "lastUpdate": "2025-09-15T07:27:58.925Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -127765,6 +128117,62 @@
     "local": false
   },
   {
+    "id": "take-that-i-can-make-it",
+    "title": "I Can Make It",
+    "artist": "Take That",
+    "video": "pv76EZg3SNQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.65,
+    "gap": 27048.831970632404,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.427Z",
+    "genre": "Pop",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Peschi",
+    "sourceUrl": "Take That - I Can Make It",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5214,
+    "tracksCount": 1,
+    "search": "takethaticanmakeit",
+    "local": false
+  },
+  {
+    "id": "take-that-i-found-heaven",
+    "title": "I Found Heaven",
+    "artist": "Take That",
+    "video": "CggiMJ59U1Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.7,
+    "gap": 31168.998998999,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.428Z",
+    "genre": "Pop",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "Peschi",
+    "sourceUrl": "Take That - I Found Heaven",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5215,
+    "tracksCount": 1,
+    "search": "takethatifoundheaven",
+    "local": false
+  },
+  {
     "id": "take-that-id-wait-for-life",
     "title": "I’d Wait For Life",
     "artist": "Take That",
@@ -127776,7 +128184,7 @@
     "gap": 31213.90625,
     "year": "2006",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.368Z",
+    "lastUpdate": "2025-09-15T13:29:08.582Z",
     "genre": "Pop",
     "realBpm": 26,
     "volume": 0.5,
@@ -127832,7 +128240,7 @@
     "gap": 20618.00327332242,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.360Z",
+    "lastUpdate": "2025-09-15T07:27:13.884Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -127849,6 +128257,34 @@
     "local": false
   },
   {
+    "id": "take-that-love-aint-here-anymore",
+    "title": "Love Ain’t Here Anymore",
+    "artist": "Take That",
+    "video": "lSgAd9EshG4",
+    "language": [
+      "English"
+    ],
+    "bpm": 279,
+    "gap": 5538.4946236559135,
+    "year": "1993",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.425Z",
+    "genre": "Pop",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Love Ain’t Here Anymore",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5213,
+    "tracksCount": 1,
+    "search": "takethatloveainthereanymore",
+    "local": false
+  },
+  {
     "id": "take-that-never-forget",
     "title": "Never Forget",
     "artist": "Take That",
@@ -127860,7 +128296,7 @@
     "gap": 18863.157894736843,
     "year": "1995",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.375Z",
+    "lastUpdate": "2025-09-15T13:30:02.735Z",
     "genre": "Pop",
     "realBpm": 24,
     "volume": 0.5,
@@ -127874,6 +128310,62 @@
     "shortId": 5187,
     "tracksCount": 1,
     "search": "takethatneverforget",
+    "local": false
+  },
+  {
+    "id": "take-that-nobody-else",
+    "title": "Nobody Else",
+    "artist": "Take That",
+    "video": "tkTWUl3MKLw",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 20143.90243902439,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.413Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "unitone",
+    "sourceUrl": "Take That - Nobody Else",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5209,
+    "tracksCount": 1,
+    "search": "takethatnobodyelse",
+    "local": false
+  },
+  {
+    "id": "take-that-once-youve-tasted-love",
+    "title": "Once You’ve Tasted Love",
+    "artist": "Take That",
+    "video": "bC-K2zKushk",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 918.0952380952381,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.421Z",
+    "genre": "Pop",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Once You’ve Tasted Love",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5211,
+    "tracksCount": 1,
+    "search": "takethatonceyouvetastedlove",
     "local": false
   },
   {
@@ -127916,7 +128408,7 @@
     "gap": 25773.157894736843,
     "year": "1991",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.354Z",
+    "lastUpdate": "2025-09-15T07:26:33.421Z",
     "genre": "Pop",
     "realBpm": 16,
     "volume": 0.5,
@@ -127961,6 +128453,65 @@
     "shortId": 4168,
     "tracksCount": 2,
     "search": "takethatshine",
+    "local": false
+  },
+  {
+    "id": "take-that-sos",
+    "title": "SOS",
+    "artist": "Take That",
+    "video": "aQ65tYI5vkM",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 19157.241379310344,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.411Z",
+    "genre": "Pop",
+    "realBpm": 13,
+    "volume": 0.5,
+    "author": "liorfox",
+    "sourceUrl": "Take That - SOS",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5208,
+    "tracksCount": 1,
+    "search": "takethatsos",
+    "local": false
+  },
+  {
+    "id": "take-that-sure",
+    "title": "Sure",
+    "artist": "Take That",
+    "video": "tsleJQbe_QY",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 214540.97826086957,
+    "year": "1994",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-19T00:12:10.419Z",
+    "genre": "Pop",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Take That - Sure [DUET]",
+    "tracks": [
+      {
+        "start": 25
+      },
+      {
+        "start": 41
+      }
+    ],
+    "shortId": 5210,
+    "tracksCount": 2,
+    "search": "takethatsure",
     "local": false
   },
   {
@@ -128031,7 +128582,7 @@
     "gap": 22361.739130434784,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-17T00:12:08.379Z",
+    "lastUpdate": "2025-09-15T13:30:43.737Z",
     "genre": "Pop",
     "realBpm": 26,
     "volume": 0.5,
@@ -133430,6 +133981,58 @@
     "local": false
   },
   {
+    "id": "the-fray-over-my-head-cable-car",
+    "title": "Over My Head (Cable Car)",
+    "artist": "The Fray",
+    "video": "fFRkpvvop3I",
+    "language": [
+      "English"
+    ],
+    "bpm": 231.8,
+    "gap": 5530.172413793103,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.399Z",
+    "realBpm": 116,
+    "volume": 0.64,
+    "author": "mk90",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5203,
+    "tracksCount": 1,
+    "search": "thefrayovermyheadcablecar",
+    "local": false
+  },
+  {
+    "id": "the-fray-you-found-me",
+    "title": "You Found Me",
+    "artist": "The Fray",
+    "video": "jFg_8u87zT0",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.05,
+    "gap": 3833.320177602368,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:10.397Z",
+    "realBpm": 152,
+    "volume": 0.66,
+    "author": "jalkazar",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5202,
+    "tracksCount": 1,
+    "search": "thefrayyoufoundme",
+    "local": false
+  },
+  {
     "id": "the-gift-facil-de-entender",
     "title": "Fácil de entender",
     "artist": "The Gift",
@@ -136430,6 +137033,33 @@
     "local": false
   },
   {
+    "id": "the-strokes-reptilia",
+    "title": "Reptilia",
+    "artist": "The Strokes",
+    "video": "b8-tXG8KrWs",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.77,
+    "gap": 38016.91747754959,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:09.242Z",
+    "genre": "Rock",
+    "realBpm": 158,
+    "volume": 1,
+    "author": "hamadad",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5192,
+    "tracksCount": 1,
+    "search": "thestrokesreptilia",
+    "local": false
+  },
+  {
     "id": "the-strokes-someday",
     "title": "Someday",
     "artist": "The Strokes",
@@ -136485,6 +137115,33 @@
     "shortId": 4420,
     "tracksCount": 1,
     "search": "thestrokestheadultsaretalking",
+    "local": false
+  },
+  {
+    "id": "the-strokes-under-cover-of-darkness",
+    "title": "Under Cover Of Darkness",
+    "artist": "The Strokes",
+    "video": "_l09H-3zzgA",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.47,
+    "gap": 26243.831643361063,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-19T00:12:09.248Z",
+    "genre": "Rock",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5193,
+    "tracksCount": 1,
+    "search": "thestrokesundercoverofdarkness",
     "local": false
   },
   {
@@ -147579,6 +148236,32 @@
     "shortId": 4762,
     "tracksCount": 1,
     "search": "yokonagasoyumewokanaetedoraemon",
+    "local": false
+  },
+  {
+    "id": "yoko-takahashi-the-cruel-angels-thesis",
+    "title": "The Cruel Angel’s Thesis",
+    "artist": "Yoko Takahashi",
+    "video": "wqmv96HJan8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 256.36,
+    "gap": 75.30503978779848,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2025-09-19T00:12:10.391Z",
+    "realBpm": 128,
+    "volume": 0.9,
+    "author": "chl",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5199,
+    "tracksCount": 1,
+    "search": "yokotakahashithecruelangelsthesis",
     "local": false
   },
   {
