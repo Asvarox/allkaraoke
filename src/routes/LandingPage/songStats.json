@@ -1,11 +1,12 @@
 {
   "artists": [
     "Linkin Park",
-    "Britney Spears",
     "Lady Gaga",
+    "Britney Spears",
     "Ariana Grande",
     "Queen",
     "Taylor Swift",
+    "Take That",
     "The Beatles",
     "System of a Down",
     "One Direction",
@@ -20,7 +21,6 @@
     "ABBA",
     "Ghost",
     "Madonna",
-    "Take That",
     "Muse",
     "Adele",
     "Bruno Mars",
@@ -44,6 +44,7 @@
     "Breaking Benjamin",
     "Marilyn Manson",
     "Metallica",
+    "Radiohead",
     "Bring Me The Horizon",
     "Coldplay",
     "Fall Out Boy",
@@ -51,7 +52,6 @@
     "High School Musical",
     "Mariah Carey",
     "Panic! at the Disco",
-    "Radiohead",
     "Slipknot",
     "Volbeat",
     "Ava Max",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5190
+  "songs": 5215
 }

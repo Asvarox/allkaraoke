@@ -1,0 +1,197 @@
+#ARTIST:Matsuko Mawatari
+#TITLE:Hohoemi no Bakudan
+#CREATOR:SUBKEI
+#BPM:260
+#YEAR:1992
+#PREVIEWSTART:20
+#VIDEO:v=urZWmEgm72Q
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:18979,23076923077
+#ALLKARAOKE_ID:matsuko-mawatari-hohoemi-no-bakudan
+#ALLKARAOKE_SID:5196
+#ALLKARAOKE_LASTUPDATE:2025-09-19T00:12:10.100Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_PREVIEWEND:37
+#ALLKARAOKE_VOLUME:1
+#MP3:Matsuko Mawatari - Hohoemi no Bakudan (TV).mp3
+: 17 4 3 Ma
+: 23 4 3 chi
+: 29 4 3 no 
+* 37 1 -2 hi
+* 39 1 -2 to
+: 41 3 -2 go
+: 45 1 -2 mi
+- 46
+: 49 4 3 Ka
+: 55 4 3 ta 
+: 61 4 3 ga 
+: 69 3 -2 butsu
+: 73 3 -2 ka
+: 77 1 -2 tte
+- 78
+: 81 4 3 Hi
+: 87 4 3 to
+: 93 4 3 ri
+* 101 3 5 bo
+* 105 3 7 ~
+: 109 6 0 cchi
+- 115 129
+- 129
+: 146 4 3 Ha
+: 152 4 3 te
+: 158 4 3 na
+: 166 3 -2 i 
+: 170 3 -2 sou
+: 174 1 -2 gen
+- 175
+: 178 4 3 Ka
+: 184 4 3 ze 
+: 190 4 3 ga 
+: 198 1 -2 Byun
+: 200 1 -2 byu
+: 202 3 -2 n 
+: 206 1 -2 to
+- 207
+: 210 5 3 Hi
+: 216 5 3 to
+: 222 5 3 ri
+* 230 3 5 bo
+* 234 3 7 ~
+: 238 6 0 cchi
+- 244
+: 259 3 3 Do
+: 263 3 5 ~
+: 267 3 7 cchi 
+: 271 3 8 da
+: 275 3 8 rou
+: 279 30 10 ~?
+- 309
+: 320 6 10 Na
+: 328 3 8 ki
+: 332 3 7 ta
+* 336 3 8 ku
+* 340 3 7 na
+: 344 13 -2 ru
+- 357
+: 360 2 -2 Ba
+: 364 4 5 sho 
+: 369 13 3 wa
+- 382
+: 392 2 3 Fu
+* 396 2 2 ta
+* 400 2 3 tsu 
+: 404 6 0 ma
+: 411 4 2 ru 
+: 416 12 3 wo
+- 428
+: 436 5 3 Tsu
+: 442 5 5 ke
+: 448 12 7 te
+- 460
+: 468 5 7 Chop
+: 475 5 7 pi
+: 481 3 5 ri 
+* 485 3 7 o
+: 489 3 7 to
+: 493 2 6 na 
+: 497 7 5 sa
+- 504 521
+- 521
+: 538 3 3 Me
+: 542 1 5 cha
+: 544 2 7 me
+: 547 8 7 cha
+- 555
+: 562 1 7 Ku
+: 564 1 7 ru
+: 566 7 7 shii 
+: 574 3 5 ka
+: 578 7 10 be 
+: 586 3 8 da
+: 590 3 7 ~
+: 594 3 5 tte 
+: 598 7 5 fu
+: 606 3 7 i 
+: 610 10 -2 ni
+- 620
+: 630 7 5 Na
+: 638 3 7 ze 
+: 642 10 0 ka
+- 652
+* 662 3 7 Bu
+* 666 3 3 chi
+: 670 3 5 ko
+: 674 2 0 wa
+: 679 2 3 su
+: 682 4 3 ~
+- 686
+: 691 7 7 Yu
+: 699 3 3 u
+: 703 2 5 ki 
+: 707 2 0 to 
+: 711 3 3 po
+: 715 4 3 wer
+- 719
+: 727 7 2 Wa
+: 735 3 3 i
+: 739 6 2 te 
+* 747 3 3 ku
+* 751 3 5 ru 
+: 755 3 3 no 
+: 759 29 7 wa
+- 788
+* 796 3 3 Me
+* 800 1 5 cha
+: 802 2 7 me
+: 805 9 7 cha
+- 814
+: 820 1 7 Ki
+: 822 1 7 bi
+: 824 7 7 shii 
+: 832 3 5 hi
+: 836 7 10 to 
+: 844 3 8 ta
+: 848 3 7 chi 
+: 852 3 5 ga 
+: 856 7 5 fu
+: 864 3 7 i 
+: 868 10 -2 ni
+- 878
+: 888 7 5 Mi
+: 896 3 7 se
+: 900 10 0 ta
+- 910
+* 920 3 7 Ya
+* 924 3 3 sa
+: 929 1 5 shi
+: 932 2 0 sa 
+: 937 2 3 no
+: 940 4 3 ~
+- 944
+: 949 7 7 Sei
+: 957 3 3 ~ 
+: 961 3 5 da
+* 965 2 0 ~
+: 969 3 3 tta
+: 973 4 3 ri
+- 977
+: 985 3 2 Su
+: 989 3 2 ~
+: 993 3 3 ru 
+: 997 7 2 n 
+* 1005 3 3 da
+* 1009 3 5 rou
+: 1013 3 3 ~ 
+: 1017 29 10 ne
+- 1046
+: 1050 5 0 A
+: 1056 5 2 ri
+: 1062 3 3 ga
+: 1066 5 3 tou
+: 1072 4 5 go
+: 1078 3 7 za
+: 1082 23 8 i 
+* 1106 4 7 masu!
+E
