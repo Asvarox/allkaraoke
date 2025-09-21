@@ -104,6 +104,7 @@
     "Shinedown",
     "Sia",
     "Spice Girls",
+    "Wham!",
     "3 Doors Down",
     "Aerosmith",
     "Black Sabbath",
@@ -139,6 +140,7 @@
     "Guns N' Roses",
     "Heart",
     "Hollywood Undead",
+    "Iron Maiden",
     "Justin Bieber",
     "Justin Timberlake",
     "Keane",
@@ -147,9 +149,7 @@
     "Natasha Bedingfield",
     "Ne-Yo",
     "Nelly Furtado",
-    "Ozzy Osbourne",
-    "P!nk",
-    "Prince and the Revolution"
+    "Ozzy Osbourne"
   ],
   "languages": [
     "Armenian",
@@ -188,5 +188,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5215
+  "songs": 5227
 }
