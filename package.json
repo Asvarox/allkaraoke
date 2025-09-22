@@ -169,7 +169,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
-    "wrangler": "^3.106.0"
+    "wrangler": "^4.38.0"
   },
   "homepage": "./",
   "dependenciesMeta": {
