@@ -58,7 +58,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
               Microphones settings
             </MenuButton>
             <hr />
-            {/* eslint-disable-next-line react-compiler/react-compiler */}
+            {}
             <InputLag ref={inputLagRef} {...register('input-lag', onInputLagActive)} />
             <MenuButton
               {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}

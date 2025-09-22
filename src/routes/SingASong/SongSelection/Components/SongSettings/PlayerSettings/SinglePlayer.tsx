@@ -63,7 +63,6 @@ export default function SinglePlayer({
         onChange={onNameChange}
         label="Name:"
         ref={nameRef}
-        // eslint-disable-next-line react-compiler/react-compiler
         {...register(`player-${player.number}-name`, focusName)}
       />
       {multipleTracks && (
