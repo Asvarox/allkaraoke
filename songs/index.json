@@ -31,6 +31,34 @@
     "local": false
   },
   {
+    "id": "10cc-im-not-in-love",
+    "title": "I’m Not In Love",
+    "artist": "10cc",
+    "video": "STugQ0X1NoI",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.2,
+    "gap": 14524.164133738603,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.302Z",
+    "genre": "Pop",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "k1656",
+    "sourceUrl": "10cc - I’m Not In Love",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5227,
+    "tracksCount": 1,
+    "search": "10ccimnotinlove",
+    "local": false
+  },
+  {
     "id": "2-plus-1-chodz-pomaluj-moj-swiat",
     "title": "Chodz, Pomaluj Mój Swiat",
     "artist": "2 Plus 1",
@@ -31410,6 +31438,32 @@
     "local": false
   },
   {
+    "id": "crowded-house-better-be-home-soon",
+    "title": "Better Be Home Soon",
+    "artist": "Crowded House",
+    "video": "AQOlwMKpmvQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 381.48,
+    "gap": 13136.98647373388,
+    "year": "1988",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-21T00:13:47.247Z",
+    "realBpm": 94,
+    "volume": 0.5,
+    "author": "Fiete",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5220,
+    "tracksCount": 1,
+    "search": "crowdedhousebetterbehomesoon",
+    "local": false
+  },
+  {
     "id": "crowded-house-dont-dream-its-over",
     "title": "Don’t Dream It’s Over",
     "artist": "Crowded House",
@@ -31437,6 +31491,60 @@
     "shortId": 1042,
     "tracksCount": 1,
     "search": "crowdedhousedontdreamitsover",
+    "local": false
+  },
+  {
+    "id": "crowded-house-fall-at-your-feet",
+    "title": "Fall At Your Feet",
+    "artist": "Crowded House",
+    "video": "2ROiU9kOHeE",
+    "language": [
+      "English"
+    ],
+    "bpm": 205.6,
+    "gap": 12408.599221789884,
+    "year": "1991",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-21T00:13:47.291Z",
+    "genre": "Rock",
+    "realBpm": 103,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5224,
+    "tracksCount": 1,
+    "search": "crowdedhousefallatyourfeet",
+    "local": false
+  },
+  {
+    "id": "crowded-house-weather-with-you",
+    "title": "Weather With You",
+    "artist": "Crowded House",
+    "video": "ag8XcMG1EX4",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 19471.93548387097,
+    "year": "1991",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-21T00:13:47.289Z",
+    "genre": "Rock",
+    "realBpm": 94,
+    "volume": 0.5,
+    "author": "strummer",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5223,
+    "tracksCount": 1,
+    "search": "crowdedhouseweatherwithyou",
     "local": false
   },
   {
@@ -32793,7 +32901,7 @@
     "gap": 27692.288244536496,
     "year": "1992",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-09-19T00:12:09.944Z",
+    "lastUpdate": "2025-09-17T13:58:57.229Z",
     "realBpm": 140,
     "volume": 1,
     "author": "Rubn4",
@@ -37334,7 +37442,7 @@
     "bpm": 205.94,
     "gap": 6960.780430984275,
     "year": "2008",
-    "lastUpdate": "2025-09-19T00:12:10.236Z",
+    "lastUpdate": "2025-09-17T13:59:29.898Z",
     "genre": "Pop",
     "realBpm": 103,
     "volume": 0.5,
@@ -58747,7 +58855,7 @@
     "gap": 32778.09523809524,
     "year": "1986",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-09-19T00:12:09.250Z",
+    "lastUpdate": "2025-09-17T13:58:39.088Z",
     "genre": "J-Rock",
     "realBpm": 125,
     "volume": 1,
@@ -61500,6 +61608,33 @@
     "local": false
   },
   {
+    "id": "iron-maiden-flight-of-icarus",
+    "title": "Flight Of Icarus",
+    "artist": "Iron Maiden",
+    "video": "p4w2BZXL6Ss",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.5,
+    "gap": 8977.912317327766,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.300Z",
+    "genre": "Heavy Metal",
+    "realBpm": 111,
+    "volume": 0.5,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5226,
+    "tracksCount": 1,
+    "search": "ironmaidenflightoficarus",
+    "local": false
+  },
+  {
     "id": "iron-maiden-hallowed-be-thy-name",
     "title": "Hallowed Be Thy Name",
     "artist": "Iron Maiden",
@@ -61528,6 +61663,33 @@
     "local": false
   },
   {
+    "id": "iron-maiden-run-to-the-hills",
+    "title": "Run To The Hills",
+    "artist": "Iron Maiden",
+    "video": "86URGgqONvA",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.30000000000007,
+    "gap": 13425.151515151516,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.940Z",
+    "genre": "Heavy Metal",
+    "realBpm": 174,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5228,
+    "tracksCount": 1,
+    "search": "ironmaidenruntothehills",
+    "local": false
+  },
+  {
     "id": "iron-maiden-stranger-in-a-strange-land",
     "title": "Stranger In A Strange Land",
     "artist": "Iron Maiden",
@@ -61539,7 +61701,7 @@
     "gap": 39897.27272727273,
     "year": "1986",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.431Z",
+    "lastUpdate": "2025-09-18T14:19:40.426Z",
     "genre": "Heavy Metal",
     "realBpm": 110,
     "volume": 0.5,
@@ -75329,7 +75491,7 @@
     "gap": 3230.0815934725224,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.403Z",
+    "lastUpdate": "2025-09-17T14:03:15.486Z",
     "genre": "Pop",
     "realBpm": 125,
     "volume": 0.77,
@@ -75467,7 +75629,7 @@
     "gap": 4112.876289756409,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.408Z",
+    "lastUpdate": "2025-09-17T14:03:56.290Z",
     "genre": "Pop",
     "realBpm": 188,
     "volume": 0.71,
@@ -75864,7 +76026,7 @@
     "gap": -7.3266677593836675,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.406Z",
+    "lastUpdate": "2025-09-17T14:03:33.059Z",
     "genre": "Pop",
     "realBpm": 122,
     "volume": 0.83,
@@ -79263,7 +79425,7 @@
     "gap": 2717.2413793103447,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.395Z",
+    "lastUpdate": "2025-09-17T14:01:28.704Z",
     "genre": "Alternative Rock",
     "realBpm": 145,
     "previewStart": 63,
@@ -79292,7 +79454,7 @@
     "gap": 19758.69158878505,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.393Z",
+    "lastUpdate": "2025-09-17T14:00:59.962Z",
     "genre": "Nu Metal",
     "realBpm": 107,
     "volume": 0.7,
@@ -87696,7 +87858,7 @@
     "gap": 18979.23076923077,
     "year": "1992",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-09-19T00:12:10.100Z",
+    "lastUpdate": "2025-09-17T13:59:09.473Z",
     "genre": "Anime",
     "realBpm": 129,
     "previewStart": 20,
@@ -88288,6 +88450,32 @@
     "shortId": 2899,
     "tracksCount": 1,
     "search": "meduzaxjamescarterfeatelleyduhefastboybadmemories",
+    "local": false
+  },
+  {
+    "id": "megadeth-a-tout-le-monde",
+    "title": "À tout le monde",
+    "artist": "Megadeth",
+    "video": "iEyOwLY3rV4",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.89999999999995,
+    "gap": 9108.424778761062,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-21T00:13:47.231Z",
+    "realBpm": 114,
+    "volume": 0.5,
+    "author": "Eazee",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5217,
+    "tracksCount": 1,
+    "search": "megadethatoutlemonde",
     "local": false
   },
   {
@@ -108882,7 +109070,7 @@
     "gap": 8850,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.389Z",
+    "lastUpdate": "2025-09-17T13:59:46.242Z",
     "genre": "Alternative Rock, Art Rock",
     "realBpm": 184,
     "volume": 1,
@@ -127932,7 +128120,7 @@
     "gap": 8888.264462809917,
     "year": "1991",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.423Z",
+    "lastUpdate": "2025-09-18T14:17:17.221Z",
     "genre": "Pop",
     "realBpm": 28,
     "volume": 0.5,
@@ -127960,7 +128148,7 @@
     "gap": 11362.50352057581,
     "year": "1993",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.410Z",
+    "lastUpdate": "2025-09-18T12:05:24.310Z",
     "genre": "Pop",
     "realBpm": 30,
     "volume": 0.5,
@@ -128128,7 +128316,7 @@
     "gap": 27048.831970632404,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.427Z",
+    "lastUpdate": "2025-09-18T14:18:19.354Z",
     "genre": "Pop",
     "realBpm": 28,
     "volume": 0.5,
@@ -128156,7 +128344,7 @@
     "gap": 31168.998998999,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.428Z",
+    "lastUpdate": "2025-09-18T14:18:49.605Z",
     "genre": "Pop",
     "realBpm": 35,
     "volume": 0.5,
@@ -128268,7 +128456,7 @@
     "gap": 5538.4946236559135,
     "year": "1993",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.425Z",
+    "lastUpdate": "2025-09-18T14:17:42.908Z",
     "genre": "Pop",
     "realBpm": 18,
     "volume": 0.5,
@@ -128324,7 +128512,7 @@
     "gap": 20143.90243902439,
     "year": "1995",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.413Z",
+    "lastUpdate": "2025-09-18T12:06:44.533Z",
     "genre": "Pop",
     "realBpm": 25,
     "volume": 0.5,
@@ -128352,7 +128540,7 @@
     "gap": 918.0952380952381,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.421Z",
+    "lastUpdate": "2025-09-18T14:16:35.540Z",
     "genre": "Pop",
     "realBpm": 28,
     "volume": 0.5,
@@ -128467,7 +128655,7 @@
     "gap": 19157.241379310344,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.411Z",
+    "lastUpdate": "2025-09-18T12:06:16.244Z",
     "genre": "Pop",
     "realBpm": 13,
     "volume": 0.5,
@@ -128495,7 +128683,7 @@
     "gap": 214540.97826086957,
     "year": "1994",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-19T00:12:10.419Z",
+    "lastUpdate": "2025-09-18T12:07:00.978Z",
     "genre": "Pop",
     "realBpm": 21,
     "volume": 0.5,
@@ -133992,7 +134180,7 @@
     "gap": 5530.172413793103,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.399Z",
+    "lastUpdate": "2025-09-17T14:02:50.767Z",
     "realBpm": 116,
     "volume": 0.64,
     "author": "mk90",
@@ -134018,7 +134206,7 @@
     "gap": 3833.320177602368,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:10.397Z",
+    "lastUpdate": "2025-09-17T14:01:48.621Z",
     "realBpm": 152,
     "volume": 0.66,
     "author": "jalkazar",
@@ -137044,7 +137232,7 @@
     "gap": 38016.91747754959,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:09.242Z",
+    "lastUpdate": "2025-09-17T13:57:24.653Z",
     "genre": "Rock",
     "realBpm": 158,
     "volume": 1,
@@ -137129,7 +137317,7 @@
     "gap": 26243.831643361063,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-19T00:12:09.248Z",
+    "lastUpdate": "2025-09-17T13:57:59.573Z",
     "genre": "Rock",
     "realBpm": 200,
     "volume": 1,
@@ -146030,6 +146218,62 @@
     "local": false
   },
   {
+    "id": "wham-bad-boys",
+    "title": "Bad Boys",
+    "artist": "Wham!",
+    "video": "hktHI4fGydE",
+    "language": [
+      "English"
+    ],
+    "bpm": 239,
+    "gap": 508.9539748953975,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.246Z",
+    "genre": "Pop",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Wham! - Bad Boys",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 5219,
+    "tracksCount": 1,
+    "search": "whambadboys",
+    "local": false
+  },
+  {
+    "id": "wham-club-tropicana",
+    "title": "Club Tropicana",
+    "artist": "Wham!",
+    "video": "aedfoKFi2tQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 52611.596638655465,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.252Z",
+    "genre": "Pop",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Leki",
+    "sourceUrl": "Wham! - Club Tropicana",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5221,
+    "tracksCount": 1,
+    "search": "whamclubtropicana",
+    "local": false
+  },
+  {
     "id": "wham-everything-she-wants",
     "title": "Everything She Wants",
     "artist": "Wham!",
@@ -146056,6 +146300,61 @@
     "shortId": 4695,
     "tracksCount": 1,
     "search": "whameverythingshewants",
+    "local": false
+  },
+  {
+    "id": "wham-freedom",
+    "title": "Freedom",
+    "artist": "Wham!",
+    "video": "VVkGsdu_qeY",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 77227.27272727272,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.242Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Wham! - Freedom",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5218,
+    "tracksCount": 1,
+    "search": "whamfreedom",
+    "local": false
+  },
+  {
+    "id": "wham-im-your-man",
+    "title": "I’m Your Man",
+    "artist": "Wham!",
+    "video": "kAGl8RWTSqc",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 76567.27272727272,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.286Z",
+    "genre": "Pop",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Wham! - I’m Your Man",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5222,
+    "tracksCount": 1,
+    "search": "whamimyourman",
     "local": false
   },
   {
@@ -146087,6 +146386,34 @@
     "shortId": 4696,
     "tracksCount": 1,
     "search": "whamlastchristmas",
+    "local": false
+  },
+  {
+    "id": "wham-the-edge-of-heaven",
+    "title": "The Edge Of Heaven",
+    "artist": "Wham!",
+    "video": "c-Ut39MGwAo",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.34,
+    "gap": 96.20878762159691,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-21T00:13:47.297Z",
+    "genre": "New Wave",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Wham! - The Edge Of Heaven",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 5225,
+    "tracksCount": 1,
+    "search": "whamtheedgeofheaven",
     "local": false
   },
   {
@@ -148250,7 +148577,7 @@
     "gap": 75.30503978779848,
     "year": "2020",
     "artistOrigin": "JP",
-    "lastUpdate": "2025-09-19T00:12:10.391Z",
+    "lastUpdate": "2025-09-17T14:00:21.235Z",
     "realBpm": 128,
     "volume": 0.9,
     "author": "chl",
