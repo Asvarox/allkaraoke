@@ -31,6 +31,34 @@
     "local": false
   },
   {
+    "id": "10cc-dreadlock-holiday",
+    "title": "Dreadlock Holiday",
+    "artist": "10cc",
+    "video": "fUNTk5xsxk4",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.56,
+    "gap": 22842.659574468085,
+    "year": "1978",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-23T00:12:38.701Z",
+    "genre": "Reggae",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Ankhman",
+    "sourceUrl": "10cc - Dreadlock Holiday",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5230,
+    "tracksCount": 1,
+    "search": "10ccdreadlockholiday",
+    "local": false
+  },
+  {
     "id": "10cc-im-not-in-love",
     "title": "I’m Not In Love",
     "artist": "10cc",
@@ -42,7 +70,7 @@
     "gap": 14524.164133738603,
     "year": "1975",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.302Z",
+    "lastUpdate": "2025-09-20T13:25:00.440Z",
     "genre": "Pop",
     "realBpm": 35,
     "volume": 0.5,
@@ -56,6 +84,33 @@
     "shortId": 5227,
     "tracksCount": 1,
     "search": "10ccimnotinlove",
+    "local": false
+  },
+  {
+    "id": "10cc-the-things-we-do-for-love",
+    "title": "The Things We Do For Love",
+    "artist": "10cc",
+    "video": "P0rf3_viTxk",
+    "language": [
+      "English"
+    ],
+    "bpm": 405.1,
+    "gap": 18460.24685262898,
+    "year": "1976",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-23T00:12:38.694Z",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "anthem_1",
+    "sourceUrl": "10cc - The Things We Do For Love",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5229,
+    "tracksCount": 1,
+    "search": "10ccthethingswedoforlove",
     "local": false
   },
   {
@@ -5614,6 +5669,33 @@
     "shortId": 178,
     "tracksCount": 1,
     "search": "alexclaretooclose",
+    "local": false
+  },
+  {
+    "id": "alex-lloyd-amazing",
+    "title": "Amazing",
+    "artist": "Alex Lloyd",
+    "video": "mJPDJRLxHek",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 16875,
+    "year": "2001",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-23T00:12:38.704Z",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Alex Lloyd - Amazing",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5232,
+    "tracksCount": 1,
+    "search": "alexlloydamazing",
     "local": false
   },
   {
@@ -26768,6 +26850,33 @@
     "local": false
   },
   {
+    "id": "ce-ce-peniston-finally",
+    "title": "Finally",
+    "artist": "Ce Ce Peniston",
+    "video": "xk8mm1Qmt-Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.96,
+    "gap": 15349.833305550925,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-23T00:12:39.333Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Ce Ce Peniston - Finally",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5233,
+    "tracksCount": 1,
+    "search": "cecepenistonfinally",
+    "local": false
+  },
+  {
     "id": "cee-lo-green-forget-you",
     "title": "Forget You",
     "artist": "Cee Lo Green",
@@ -31449,7 +31558,7 @@
     "gap": 13136.98647373388,
     "year": "1988",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-21T00:13:47.247Z",
+    "lastUpdate": "2025-09-19T06:49:44.251Z",
     "realBpm": 94,
     "volume": 0.5,
     "author": "Fiete",
@@ -31505,7 +31614,7 @@
     "gap": 12408.599221789884,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-21T00:13:47.291Z",
+    "lastUpdate": "2025-09-20T13:23:21.229Z",
     "genre": "Rock",
     "realBpm": 103,
     "volume": 0.5,
@@ -31532,7 +31641,7 @@
     "gap": 19471.93548387097,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-21T00:13:47.289Z",
+    "lastUpdate": "2025-09-20T06:09:31.678Z",
     "genre": "Rock",
     "realBpm": 94,
     "volume": 0.5,
@@ -61619,7 +61728,7 @@
     "gap": 8977.912317327766,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.300Z",
+    "lastUpdate": "2025-09-20T13:24:36.315Z",
     "genre": "Heavy Metal",
     "realBpm": 111,
     "volume": 0.5,
@@ -61674,7 +61783,7 @@
     "gap": 13425.151515151516,
     "year": "1981",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.940Z",
+    "lastUpdate": "2025-09-20T13:25:50.226Z",
     "genre": "Heavy Metal",
     "realBpm": 174,
     "volume": 0.5,
@@ -61714,6 +61823,33 @@
     "shortId": 5216,
     "tracksCount": 1,
     "search": "ironmaidenstrangerinastrangeland",
+    "local": false
+  },
+  {
+    "id": "iron-maiden-the-trooper",
+    "title": "The Trooper",
+    "artist": "Iron Maiden",
+    "video": "X4bgXH3sJ2Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 35721.48148148148,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-23T00:12:38.703Z",
+    "genre": "Heavy Metal",
+    "realBpm": 160,
+    "volume": 0.5,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5231,
+    "tracksCount": 1,
+    "search": "ironmaidenthetrooper",
     "local": false
   },
   {
@@ -64655,6 +64791,34 @@
     "shortId": 2112,
     "tracksCount": 1,
     "search": "jetareyougonnabemygirl",
+    "local": false
+  },
+  {
+    "id": "jet-cold-hard-bitch",
+    "title": "Cold Hard Bitch",
+    "artist": "Jet",
+    "video": "gGzmLl73TZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.0999999999999,
+    "gap": 37221.820258948974,
+    "year": "2004",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-23T00:12:39.484Z",
+    "genre": "Alternative Rock",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Jet - Cold Hard Bitch",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5234,
+    "tracksCount": 1,
+    "search": "jetcoldhardbitch",
     "local": false
   },
   {
@@ -88464,7 +88628,7 @@
     "gap": 9108.424778761062,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-21T00:13:47.231Z",
+    "lastUpdate": "2025-09-19T06:47:55.047Z",
     "realBpm": 114,
     "volume": 0.5,
     "author": "Eazee",
@@ -146229,7 +146393,7 @@
     "gap": 508.9539748953975,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.246Z",
+    "lastUpdate": "2025-09-19T06:49:04.195Z",
     "genre": "Pop",
     "realBpm": 16,
     "volume": 0.5,
@@ -146257,7 +146421,7 @@
     "gap": 52611.596638655465,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.252Z",
+    "lastUpdate": "2025-09-19T06:50:15.871Z",
     "genre": "Pop",
     "realBpm": 27,
     "volume": 0.5,
@@ -146314,7 +146478,7 @@
     "gap": 77227.27272727272,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.242Z",
+    "lastUpdate": "2025-09-19T06:48:38.179Z",
     "realBpm": 15,
     "volume": 0.5,
     "author": "bohning",
@@ -146341,7 +146505,7 @@
     "gap": 76567.27272727272,
     "year": "1988",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.286Z",
+    "lastUpdate": "2025-09-20T06:08:16.728Z",
     "genre": "Pop",
     "realBpm": 29,
     "volume": 0.5,
@@ -146400,7 +146564,7 @@
     "gap": 96.20878762159691,
     "year": "1986",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-21T00:13:47.297Z",
+    "lastUpdate": "2025-09-20T13:24:14.238Z",
     "genre": "New Wave",
     "realBpm": 23,
     "volume": 0.5,
