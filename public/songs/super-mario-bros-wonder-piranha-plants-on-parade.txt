@@ -1,0 +1,158 @@
+#ARTIST:Super Mario Bros. Wonder
+#TITLE:Piranha Plants On Parade
+#CREATOR:GaryCXJk
+#BPM:220
+#YEAR:2024
+#VIDEO:v=6YO6JE5lF8E
+#LANGUAGE:Scat
+#GAP:7077,272727272727
+#ALLKARAOKE_ID:super-mario-bros-wonder-piranha-plants-on-parade
+#ALLKARAOKE_SID:5241
+#ALLKARAOKE_LASTUPDATE:2025-09-25T00:12:15.345Z
+#ALLKARAOKE_REALBPM:28
+#ALLKARAOKE_SOURCEURL:Super Mario Bros. Wonder - Piranha Plants On Parade
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Super Mario Bros. Wonder - Piranha Plants On Parade.mp3
+#COVER:Super Mario Bros. Wonder - Piranha Plants On Parade [CO].jpg
+#BACKGROUND:Super Mario Bros. Wonder - Piranha Plants On Parade [BG].jpg
+: 15 7 -1 La 
+: 23 7 3 la 
+: 31 7 6 la 
+: 39 7 9 la
+- 46
+: 47 4 11 Ta 
+: 53 1 11 ta 
+: 55 1 11 ra 
+: 59 1 11 ta 
+: 63 10 11 ta
+- 73
+: 79 2 4 Lan 
+: 87 2 -1 lan
+- 89
+: 95 2 4 La 
+: 99 2 4 ta 
+: 103 2 -1 tan
+- 105
+: 111 2 4 La 
+: 115 1 4 ta 
+: 117 1 4 ta 
+: 119 2 -1 ra 
+: 123 2 -1 ta 
+: 127 2 4 tan
+- 129 132
+- 132
+: 147 2 11 Di 
+: 151 4 11 pa 
+: 157 1 16 di 
+: 159 3 13 po
+: 163 2 11 ya 
+: 167 3 8 po
+: 171 2 4 ya 
+: 175 5 3 du
+: 181 1 3 ba 
+: 183 3 3 du
+: 187 2 4 ba 
+: 191 12 6 ti
+- 203
+: 211 1 9 Ba 
+: 213 1 8 da 
+: 215 5 9 pa 
+: 221 1 11 pa 
+: 223 2 13 din 
+: 227 2 13 din 
+: 231 3 11 po
+: 235 3 9 ya 
+: 239 5 8 du
+: 245 1 7 da 
+: 247 3 8 du 
+: 251 2 9 ba 
+: 255 11 11 pu
+- 266
+: 275 2 11 Di 
+: 279 4 11 pa 
+: 285 1 16 di 
+: 287 3 13 po
+: 291 2 11 ya 
+: 295 3 8 po
+: 299 2 4 ya 
+: 303 5 1 lu 
+: 309 1 0 ba 
+: 311 2 1 du 
+: 315 2 3 pa 
+: 319 7 4 di 
+: 327 2 12 di
+: 330 4 13 ~
+- 334
+: 335 2 11 La 
+: 339 2 11 la 
+: 343 5 8 lu 
+: 349 1 11 la 
+: 351 2 9 pa 
+: 355 3 9 pa 
+: 359 2 8 la 
+: 363 2 6 pa 
+: 367 5 4 pom 
+: 375 5 11 pam 
+: 383 5 16 pam
+- 388
+: 399 4 13 Lun 
+: 407 4 9 lun 
+: 415 2 4 tu 
+: 419 3 16 ta 
+: 423 2 13 ra 
+: 427 2 9 ta
+: 431 5 11 Ti 
+: 437 1 13 ra 
+: 439 2 11 ti 
+: 443 2 8 la
+: 447 15 4 lu
+- 462
+: 463 5 6 Pa 
+: 469 1 5 la 
+: 471 2 6 pa 
+: 475 2 8 la 
+: 479 3 9 pi
+- 482
+: 483 2 13 La 
+: 487 3 11 ti 
+: 491 2 9 da
+- 493
+: 495 5 8 Pa
+: 501 1 7 ya 
+: 503 3 8 pa
+: 507 2 9 ya 
+: 511 3 11 pi
+- 514
+: 515 2 16 La 
+: 519 3 15 ti 
+: 523 5 14 da
+- 528
+: 531 2 13 La 
+: 535 3 13 ta 
+: 539 3 12 ra 
+: 543 5 13 di 
+: 549 1 9 da 
+: 551 2 4 di 
+: 555 3 13 pa 
+: 559 7 11 pi 
+: 567 2 13 da 
+: 571 3 15 ta 
+: 576 9 16 da
+- 585
+: 587 2 11 Pi 
+: 591 5 13 pa 
+: 598 1 13 pa 
+: 600 1 11 da 
+: 603 2 9 pa 
+: 607 3 8 po
+: 611 2 6 ya 
+: 615 3 4 po
+: 619 2 6 ya
+- 621
+: 623 4 8 La 
+: 631 4 4 la 
+: 639 2 7 ra 
+: 643 2 7 ta 
+: 647 4 4 ta 
+: 655 6 8 pa
+E

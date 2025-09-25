@@ -42,7 +42,7 @@
     "gap": 22842.659574468085,
     "year": "1978",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-23T00:12:38.701Z",
+    "lastUpdate": "2025-09-21T15:53:54.611Z",
     "genre": "Reggae",
     "realBpm": 17,
     "volume": 0.5,
@@ -98,7 +98,7 @@
     "gap": 18460.24685262898,
     "year": "1976",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-23T00:12:38.694Z",
+    "lastUpdate": "2025-09-21T15:53:39.747Z",
     "realBpm": 16,
     "volume": 0.5,
     "author": "anthem_1",
@@ -2659,6 +2659,33 @@
     "shortId": 79,
     "tracksCount": 1,
     "search": "adamlambertwhatayawantfromme",
+    "local": false
+  },
+  {
+    "id": "adam-pascal-one-song-glory-rent-ost",
+    "title": "One Song Glory (Rent OST)",
+    "artist": "Adam Pascal",
+    "video": "Yr1LwoxuXiQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.04,
+    "gap": 13330.554089709764,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-25T00:12:16.071Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Adam Pascal - One Song Glory (Rent OST)",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5246,
+    "tracksCount": 1,
+    "search": "adampascalonesonggloryrentost",
     "local": false
   },
   {
@@ -5244,6 +5271,88 @@
     "local": false
   },
   {
+    "id": "alber-hammond-it-never-rains-in-southern-california",
+    "title": "It Never Rains In Southern California",
+    "artist": "Alber Hammond",
+    "video": "Gmq4WIjQxp0",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.75,
+    "gap": 15278.850698174007,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:16.221Z",
+    "genre": "Soft Rock",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Albert Hammond - It Never Rains In Southern California",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5247,
+    "tracksCount": 1,
+    "search": "alberhammonditneverrainsinsoutherncalifornia",
+    "local": false
+  },
+  {
+    "id": "albert-hammond-down-by-the-river",
+    "title": "Down By The River",
+    "artist": "Albert Hammond",
+    "video": "3IfcMoMslxM",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.79999999999967,
+    "gap": 14098.126888217523,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:16.370Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "MasterChristian",
+    "sourceUrl": "Albert Hammond - Down By The River",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5248,
+    "tracksCount": 1,
+    "search": "alberthammonddownbytheriver",
+    "local": false
+  },
+  {
+    "id": "albert-hammond-the-free-electric-band",
+    "title": "The Free Electric Band",
+    "artist": "Albert Hammond",
+    "video": "f2zoq2uI0Fc",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.84,
+    "gap": 8914.753435731609,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:16.535Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "MasterChristian",
+    "sourceUrl": "Albert Hammond - The Free Electric Band",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5249,
+    "tracksCount": 1,
+    "search": "alberthammondthefreeelectricband",
+    "local": false
+  },
+  {
     "id": "alec-benjamin-let-me-down-slowly",
     "title": "Let Me Down Slowly",
     "artist": "Alec Benjamin",
@@ -5683,7 +5792,7 @@
     "gap": 16875,
     "year": "2001",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-23T00:12:38.704Z",
+    "lastUpdate": "2025-09-21T15:55:05.680Z",
     "realBpm": 16,
     "volume": 0.5,
     "author": "bohning",
@@ -15659,6 +15768,60 @@
     "local": false
   },
   {
+    "id": "benassi-bros-feat-dhany-every-single-day",
+    "title": "Every Single Day",
+    "artist": "Benassi Bros. feat. Dhany",
+    "video": "-ue-vxgDTPk",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 15729.23076923077,
+    "year": "2005",
+    "lastUpdate": "2025-09-25T00:12:15.649Z",
+    "genre": "Electronic",
+    "realBpm": 40,
+    "volume": 0.5,
+    "author": "Zevac",
+    "sourceUrl": "Benassi Bros. feat. Dhany - Every Single Day",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5243,
+    "tracksCount": 1,
+    "search": "benassibrosfeatdhanyeverysingleday",
+    "local": false
+  },
+  {
+    "id": "benassi-bros-feat-dhany-hit-my-heart",
+    "title": "Hit My Heart",
+    "artist": "Benassi Bros. feat. Dhany",
+    "video": "ZSM2naTDM5g",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 14212.537313432837,
+    "year": "2004",
+    "lastUpdate": "2025-09-25T00:12:15.495Z",
+    "genre": "House",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Leroidukitch",
+    "sourceUrl": "Benassi Bros. feat. Dhany - Hit My Heart",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5242,
+    "tracksCount": 1,
+    "search": "benassibrosfeatdhanyhitmyheart",
+    "local": false
+  },
+  {
     "id": "benee-feat-gus-dapperton-supalonely",
     "title": "Supalonely",
     "artist": "BENEE feat. Gus Dapperton",
@@ -15713,6 +15876,33 @@
     "shortId": 509,
     "tracksCount": 1,
     "search": "benjifedefeatannalisatuttoperunaragione",
+    "local": false
+  },
+  {
+    "id": "benny-benassi-satisfaction",
+    "title": "Satisfaction",
+    "artist": "Benny Benassi",
+    "video": "a0fkNdPiIL4",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.33,
+    "gap": 1320.4740137517765,
+    "year": "2002",
+    "artistOrigin": "IT",
+    "lastUpdate": "2025-09-25T00:12:15.774Z",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "DS",
+    "sourceUrl": "Benny Benassi - Satisfaction",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5244,
+    "tracksCount": 1,
+    "search": "bennybenassisatisfaction",
     "local": false
   },
   {
@@ -23041,6 +23231,61 @@
     "local": false
   },
   {
+    "id": "bros-i-owe-you-nothing",
+    "title": "I Owe You Nothing",
+    "artist": "Bros",
+    "video": "7yu0T9n5uos",
+    "language": [
+      "English"
+    ],
+    "bpm": 249,
+    "gap": 3555.9036144578313,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:14.616Z",
+    "realBpm": 86,
+    "volume": 0.5,
+    "author": "Ultrastar-Songs",
+    "sourceUrl": "Bros - I Owe You Nothing",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5239,
+    "tracksCount": 1,
+    "search": "brosioweyounothing",
+    "local": false
+  },
+  {
+    "id": "bros-when-will-i-be-famous",
+    "title": "When Will I Be Famous",
+    "artist": "Bros",
+    "video": "m105lXVuaew",
+    "language": [
+      "English"
+    ],
+    "bpm": 246.75,
+    "gap": 1337.355623100304,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:15.343Z",
+    "genre": "Pop",
+    "realBpm": 89,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Bros - When Will I Be Famous",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5240,
+    "tracksCount": 1,
+    "search": "broswhenwillibefamous",
+    "local": false
+  },
+  {
     "id": "brotherhood-of-man-save-your-kisses-for-me",
     "title": "Save Your Kisses For Me",
     "artist": "Brotherhood Of Man",
@@ -26861,7 +27106,7 @@
     "gap": 15349.833305550925,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-23T00:12:39.333Z",
+    "lastUpdate": "2025-09-21T15:55:31.004Z",
     "realBpm": 26,
     "volume": 0.5,
     "author": "lozboorman",
@@ -30539,10 +30784,10 @@
       "English"
     ],
     "bpm": 264,
-    "gap": 14837.272727272728,
+    "gap": 14687.272727272728,
     "year": "1977",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-07T15:26:14.160Z",
+    "lastUpdate": "2025-09-23T04:14:56.064Z",
     "genre": "Soul",
     "realBpm": 36,
     "volume": 0.68,
@@ -33575,6 +33820,34 @@
     "shortId": 1106,
     "tracksCount": 1,
     "search": "dariusruckerwagonwheel",
+    "local": false
+  },
+  {
+    "id": "daryl-braithwaite-one-summer",
+    "title": "One Summer",
+    "artist": "Daryl Braithwaite",
+    "video": "pVfA9r-AVOg",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.9,
+    "gap": 34708.71132472214,
+    "year": "1988",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-25T00:12:15.926Z",
+    "genre": "Pop",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "MDKeil",
+    "sourceUrl": "Daryl Braithwaite - One Summer",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5245,
+    "tracksCount": 1,
+    "search": "darylbraithwaiteonesummer",
     "local": false
   },
   {
@@ -43142,11 +43415,11 @@
     "language": [
       "English"
     ],
-    "bpm": 383.95,
-    "gap": 14905.242739940097,
+    "bpm": 383.84999999999997,
+    "gap": 14805.242739940097,
     "year": "2017",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-03-27T06:59:11.262Z",
+    "lastUpdate": "2025-09-23T04:12:38.501Z",
     "genre": "Pop",
     "videoGap": 1,
     "realBpm": 96,
@@ -45356,10 +45629,10 @@
       "English"
     ],
     "bpm": 341.85,
-    "gap": 33450.78543220711,
+    "gap": 33400.78543220711,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-14T08:17:52.667Z",
+    "lastUpdate": "2025-09-23T04:15:15.106Z",
     "genre": "Rap",
     "realBpm": 171,
     "volume": 1,
@@ -61837,7 +62110,7 @@
     "gap": 35721.48148148148,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-23T00:12:38.703Z",
+    "lastUpdate": "2025-09-21T15:54:19.762Z",
     "genre": "Heavy Metal",
     "realBpm": 160,
     "volume": 0.5,
@@ -64805,7 +65078,7 @@
     "gap": 37221.820258948974,
     "year": "2004",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-23T00:12:39.484Z",
+    "lastUpdate": "2025-09-21T15:56:34.836Z",
     "genre": "Alternative Rock",
     "realBpm": 15,
     "volume": 0.5,
@@ -64819,6 +65092,115 @@
     "shortId": 5234,
     "tracksCount": 1,
     "search": "jetcoldhardbitch",
+    "local": false
+  },
+  {
+    "id": "jet-shes-a-genius",
+    "title": "She’s A Genius",
+    "artist": "Jet",
+    "video": "IVA799gKNzo",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.45,
+    "gap": 35794.61652159632,
+    "year": "2009",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-25T00:12:14.602Z",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "ai-chan",
+    "sourceUrl": "Jet - She’s A Genius",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5235,
+    "tracksCount": 1,
+    "search": "jetshesagenius",
+    "local": false
+  },
+  {
+    "id": "jethro-tull-aqualung",
+    "title": "Aqualung",
+    "artist": "Jethro Tull",
+    "video": "N4zPu3ISCGs",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.3199999999999,
+    "gap": 12037.297459491898,
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:14.611Z",
+    "genre": "Progressive Rock",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Jethro Tull - Aqualung",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5236,
+    "tracksCount": 1,
+    "search": "jethrotullaqualung",
+    "local": false
+  },
+  {
+    "id": "jethro-tull-bungle-in-the-jungle",
+    "title": "Bungle In The Jungle",
+    "artist": "Jethro Tull",
+    "video": "ha7HY1DtZtw",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 14559.433962264151,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:14.613Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "4go10",
+    "sourceUrl": "Jethro Tull - Bungle In The Jungle",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5237,
+    "tracksCount": 1,
+    "search": "jethrotullbungleinthejungle",
+    "local": false
+  },
+  {
+    "id": "jethro-tull-living-in-the-past",
+    "title": "Living In The Past",
+    "artist": "Jethro Tull",
+    "video": "Tn9IyFLDtjk",
+    "language": [
+      "English"
+    ],
+    "bpm": 302.02,
+    "gap": 38627.017079306235,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-25T00:12:14.614Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "choosie",
+    "sourceUrl": "Jethro Tull - Living In The Past",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5238,
+    "tracksCount": 1,
+    "search": "jethrotulllivinginthepast",
     "local": false
   },
   {
@@ -87650,10 +88032,10 @@
       "English"
     ],
     "bpm": 199.8,
-    "gap": 16525,
+    "gap": 16374.024024024024,
     "year": "1971",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-04T14:20:47.818Z",
+    "lastUpdate": "2025-09-23T04:14:29.235Z",
     "genre": "R&B, Soul",
     "realBpm": 30,
     "volume": 0.89,
@@ -97512,10 +97894,10 @@
       "English"
     ],
     "bpm": 217.32,
-    "gap": 12463.683048039757,
+    "gap": 12313.683048039757,
     "year": "2019",
     "artistOrigin": "US",
-    "lastUpdate": "2024-12-31T00:11:26.665Z",
+    "lastUpdate": "2025-09-23T04:13:23.881Z",
     "genre": "Rap",
     "realBpm": 162,
     "volume": 0.5,
@@ -126341,6 +126723,32 @@
     "local": false
   },
   {
+    "id": "super-mario-bros-wonder-piranha-plants-on-parade",
+    "title": "Piranha Plants On Parade",
+    "artist": "Super Mario Bros. Wonder",
+    "video": "6YO6JE5lF8E",
+    "language": [
+      "Scat"
+    ],
+    "bpm": 220,
+    "gap": 7077.272727272727,
+    "year": "2024",
+    "lastUpdate": "2025-09-25T00:12:15.345Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "GaryCXJk",
+    "sourceUrl": "Super Mario Bros. Wonder - Piranha Plants On Parade",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5241,
+    "tracksCount": 1,
+    "search": "supermariobroswonderpiranhaplantsonparade",
+    "local": false
+  },
+  {
     "id": "supergrass-alright",
     "title": "Alright",
     "artist": "Supergrass",
@@ -149340,9 +149748,9 @@
       "English"
     ],
     "bpm": 368.28,
-    "gap": 22261.75301401108,
+    "gap": 22211.75301401108,
     "year": "2017",
-    "lastUpdate": "2024-01-26T17:05:38.135Z",
+    "lastUpdate": "2025-09-23T04:13:42.585Z",
     "genre": "Pop",
     "realBpm": 180,
     "volume": 0.56,

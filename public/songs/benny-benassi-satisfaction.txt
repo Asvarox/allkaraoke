@@ -1,0 +1,201 @@
+#ARTIST:Benny Benassi
+#TITLE:Satisfaction
+#CREATOR:DS
+#BPM:260,33
+#YEAR:2002
+#VIDEO:v=a0fkNdPiIL4
+#LANGUAGE:English
+#GAP:1320,4740137517765
+#ALLKARAOKE_ID:benny-benassi-satisfaction
+#ALLKARAOKE_SID:5244
+#ALLKARAOKE_LASTUPDATE:2025-09-25T00:12:15.774Z
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_REALBPM:24
+#ALLKARAOKE_SOURCEURL:Benny Benassi - Satisfaction
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Benny Benassi - Satisfaction.mp3
+: 17 3 9 Push 
+: 24 3 8 me
+- 27
+: 36 3 11 And 
+: 41 3 11 then 
+: 45 1 10 just 
+: 49 2 9 touch 
+: 57 4 9 me
+- 61
+: 70 2 10 Till 
+: 73 2 10 I 
+: 77 3 10 can 
+: 82 2 8 get 
+: 89 6 8 my 
+: 105 1 9 sa
+: 107 2 9 tis
+: 113 2 7 fac
+: 118 2 7 tion
+- 120 128
+- 128
+* 145 3 10 Push 
+* 153 4 2 me
+- 157
+: 165 2 18 And 
+: 169 2 21 then 
+: 173 2 23 just 
+: 177 3 21 hurt 
+: 185 4 15 me
+- 189
+: 197 3 21 Till 
+: 202 2 16 I 
+: 205 3 15 can 
+: 210 3 17 get 
+: 216 5 16 my 
+: 233 2 21 sa
+: 236 2 19 tis
+: 241 4 22 fac
+: 249 3 14 tion, 
+: 266 1 21 sa
+: 268 2 19 tis
+: 273 4 22 fac
+: 282 3 14 tion
+- 285 801
+- 801
+* 818 4 9 Push 
+* 825 4 8 me
+- 829
+: 837 2 9 And 
+: 842 2 9 then 
+: 846 2 10 just 
+: 850 3 9 touch 
+: 858 4 9 me
+- 862
+: 870 3 10 Till 
+: 874 3 10 I 
+: 878 3 10 can 
+: 882 3 8 get 
+: 891 4 8 my 
+: 906 2 9 sa
+: 909 2 9 tis
+: 914 3 7 fac
+: 919 3 7 tion
+- 922 930
+- 930
+: 947 3 10 Push 
+: 955 4 2 me
+- 959
+: 966 2 18 And 
+: 970 2 21 then 
+: 974 2 23 just 
+: 978 4 21 hurt 
+: 986 4 15 me
+- 990
+: 998 3 21 Till 
+: 1003 2 16 I 
+: 1006 3 15 can 
+: 1010 3 19 get 
+: 1018 4 16 my 
+: 1034 2 21 sa
+: 1037 2 19 tis
+: 1043 3 22 fac
+: 1050 3 14 tion
+- 1053 1314
+- 1314
+: 1331 4 9 Push 
+: 1338 4 8 me
+- 1342
+: 1351 2 11 And 
+: 1354 3 11 then 
+: 1359 2 10 just 
+: 1363 4 9 touch 
+: 1370 4 9 me
+- 1374
+: 1383 3 10 Till 
+: 1387 3 10 I 
+: 1391 3 10 can 
+: 1395 3 8 get 
+: 1403 4 8 my 
+: 1418 2 9 sa
+: 1421 2 9 tis
+: 1426 4 7 fac
+: 1432 3 7 tion
+- 1435 1442
+- 1442
+: 1459 3 10 Push 
+: 1467 4 2 me
+- 1471
+: 1479 2 18 And 
+: 1483 2 21 then 
+: 1487 2 23 just 
+: 1491 3 21 hurt 
+: 1499 4 15 me
+- 1503
+: 1511 3 21 Till 
+: 1516 2 16 I 
+: 1519 3 15 can 
+: 1523 3 17 get 
+: 1530 4 16 my 
+: 1546 2 21 sa
+: 1550 1 19 tis
+: 1555 3 22 fac
+: 1562 3 14 tion
+- 1565
+* 1579 2 21 Sa
+* 1582 2 19 tis
+* 1588 3 22 fac
+* 1594 3 14 tion, 
+* 1611 2 21 sa
+* 1614 2 19 tis
+* 1620 3 22 fac
+* 1626 3 14 tion, 
+* 1643 2 21 sa
+* 1646 2 19 tis
+* 1652 3 22 fac
+* 1658 3 14 tion
+- 1661
+: 1675 2 21 Sa
+: 1678 1 19 tis
+: 1684 3 22 fac
+: 1691 2 14 tion, 
+: 1707 2 21 sa
+: 1710 1 19 tis
+: 1716 3 22 fac
+: 1722 3 14 tion
+- 1725 2125
+- 2125
+: 2142 3 10 Push 
+: 2149 4 2 me
+- 2153
+: 2161 2 18 And 
+: 2165 3 21 then 
+: 2170 2 23 just 
+: 2174 4 21 hurt 
+: 2181 4 15 me
+- 2185
+: 2194 2 21 Till 
+: 2199 2 16 I 
+: 2202 3 15 can 
+: 2206 3 17 get 
+: 2213 4 16 my 
+: 2230 2 21 sa
+: 2233 2 19 tis
+: 2238 3 22 fac
+: 2245 3 14 tion
+- 2248 2253
+- 2253
+: 2270 3 9 Push 
+: 2277 4 8 me
+- 2281
+: 2290 2 11 And 
+: 2293 2 11 then 
+: 2298 2 10 just 
+: 2302 4 9 touch 
+: 2309 4 9 me
+- 2313
+: 2321 3 10 Till 
+: 2326 2 10 I 
+: 2330 3 10 can 
+: 2334 3 8 get 
+: 2342 4 8 my 
+* 2357 2 9 sa
+* 2360 2 9 tis
+* 2366 2 7 fac
+* 2371 3 7 tion
+E
