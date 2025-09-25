@@ -1,0 +1,303 @@
+#ARTIST:Alber Hammond
+#TITLE:It Never Rains In Southern California
+#CREATOR:Canni
+#BPM:232,75
+#YEAR:1972
+#VIDEO:v=Gmq4WIjQxp0
+#GENRE:Soft Rock
+#LANGUAGE:English
+#GAP:15278,850698174007
+#ALLKARAOKE_ID:alber-hammond-it-never-rains-in-southern-california
+#ALLKARAOKE_SID:5247
+#ALLKARAOKE_LASTUPDATE:2025-09-25T00:12:16.221Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:29
+#ALLKARAOKE_SOURCEURL:Albert Hammond - It Never Rains In Southern California
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Albert Hammond - It Never Rains In Southern California.mp3
+: 16 3 4 Got 
+: 20 6 6 on 
+: 28 11 11 board 
+: 40 3 9 a 
+: 44 7 11 west 
+: 52 8 9 bound
+- 60
+: 62 5 11 Se
+: 68 8 9 ven 
+: 84 3 11 for
+: 88 1 11 ty 
+: 90 5 9 se
+: 96 18 4 ven
+- 114 132
+- 132
+: 148 5 4 Did
+: 154 3 6 n’t 
+: 158 9 11 think 
+: 168 3 9 be
+: 172 11 11 fore
+- 183
+: 184 3 9 De
+: 188 7 11 ci
+: 196 10 9 ding 
+: 210 5 11 wha
+: 216 3 11 ~t 
+: 220 3 9 to 
+: 224 24 9 do
+- 248 256
+- 256
+: 272 7 14 All 
+: 280 7 13 that 
+: 288 9 11 talk 
+: 298 3 9 of 
+: 302 9 11 op
+: 312 3 9 por
+: 316 3 11 tu
+: 320 3 11 ni
+: 324 24 13 ties,
+- 348
+: 352 5 9 T
+: 358 6 9 V 
+: 366 13 9 breaks 
+: 380 3 9 and 
+: 384 5 6 mo
+: 390 17 4 vies
+- 407
+: 408 7 9 Rang 
+: 416 32 11 true, 
+: 462 3 11 su
+: 466 3 11 ~re 
+: 470 7 9 rang 
+: 478 38 9 true.
+- 516
+: 528 11 4 Seems 
+: 540 5 6 it 
+: 546 7 11 ne
+: 554 5 9 ver 
+: 560 7 11 rains
+- 567
+: 568 5 9 In 
+: 574 7 11 Sou
+: 582 12 9 thern 
+: 600 3 11 Ca
+: 604 1 11 li
+: 606 7 9 for
+: 614 36 4 nia
+- 650
+: 658 11 4 Seems 
+: 670 5 6 I’ve 
+: 676 9 11 of
+: 686 3 9 ten 
+: 690 9 11 heard
+- 699
+: 700 5 9 That 
+: 706 11 11 kind 
+: 718 3 9 of 
+: 722 5 11 ta
+: 728 5 11 ~lk 
+: 734 1 9 be
+: 736 40 9 fore
+- 776
+: 778 9 14 It 
+: 788 3 13 ne
+: 792 9 9 ver 
+: 802 13 11 rains 
+: 816 3 11 in 
+: 820 5 11 Ca
+: 826 5 9 li
+: 832 7 11 for
+: 840 18 13 nia
+- 858
+: 866 3 9 But 
+: 870 15 9 girl, 
+: 886 7 9 don’t 
+: 894 3 9 they 
+: 898 7 6 warn 
+: 906 12 4 ya
+- 918
+: 926 3 9 It 
+: 930 42 11 pours
+- 972
+: 980 7 11 Ma
+: 988 3 11 ~n 
+: 992 3 9 it 
+: 996 42 9 pours.
+- 1038
+: 1046 5 4 Ou
+: 1052 5 4 ~t 
+: 1058 5 4 of 
+: 1064 10 4 work, 
+: 1078 3 4 I’m 
+: 1082 1 4 out 
+: 1084 3 6 of 
+: 1088 3 4 my 
+: 1092 16 4 head
+- 1108
+: 1112 1 4 Ou
+: 1114 1 4 ~t 
+: 1116 1 6 of 
+: 1118 5 4 self 
+: 1124 3 4 res
+: 1128 6 4 pect
+- 1134
+: 1136 3 4 I’m 
+: 1140 7 4 out 
+: 1148 3 6 of 
+: 1152 12 4 bread
+- 1164
+: 1166 11 9 I’m 
+: 1178 7 8 un
+: 1186 5 6 der 
+: 1192 9 4 loved
+- 1201
+: 1202 3 4 I’m 
+: 1206 5 4 un
+: 1212 1 4 der 
+: 1214 14 4 fed
+- 1228
+: 1236 3 4 I 
+: 1240 5 4 wan
+: 1246 3 6 na 
+: 1250 5 4 go 
+: 1256 36 16 home
+- 1292
+: 1294 7 21 It 
+: 1302 5 18 ne
+: 1308 3 16 ~
+: 1312 5 13 ver 
+: 1318 11 11 rains 
+: 1330 5 11 in 
+: 1336 5 11 Ca
+: 1342 3 9 li
+: 1346 7 11 for
+: 1354 18 13 nia
+- 1372
+: 1380 3 9 But 
+: 1384 15 9 girl, 
+: 1400 9 9 don’t 
+: 1410 1 9 they 
+: 1412 7 6 warn 
+: 1420 14 4 ya,
+- 1434
+: 1440 3 9 It 
+: 1444 42 11 pours,
+- 1486
+: 1494 7 11 Ma
+: 1502 3 11 ~n 
+: 1506 1 9 it 
+: 1508 46 9 pours.
+- 1554 1798
+- 1798
+: 1814 7 4 Will 
+: 1822 3 6 you 
+: 1826 11 11 tell 
+: 1838 1 9 the 
+: 1840 11 11 folks 
+: 1852 8 9 back 
+: 1862 12 11 home
+- 1874
+: 1884 1 11 I 
+: 1886 1 11 nea
+: 1888 1 11 ~r
+: 1890 1 9 ly 
+: 1892 7 6 made 
+: 1900 14 4 it
+- 1914 1934
+- 1934
+: 1950 3 4 Ha
+: 1954 1 6 ~d 
+: 1956 5 11 of
+: 1962 7 9 fers 
+: 1970 7 11 but 
+: 1978 7 9 don’t 
+: 1986 11 11 know
+- 1997
+: 1998 5 9 Which 
+: 2004 5 11 o
+: 2010 3 11 ~ne 
+: 2014 3 9 to 
+: 2018 24 9 take
+- 2042 2048
+- 2048
+: 2064 13 14 Please 
+: 2078 7 13 don’t 
+: 2086 5 11 tell 
+: 2092 3 9 them
+- 2095
+: 2096 11 11 How 
+: 2108 3 9 you 
+: 2112 9 11 found 
+: 2122 14 13 me
+- 2136
+: 2150 5 9 Don’t 
+: 2156 3 9 tell 
+: 2160 1 9 them 
+: 2162 9 9 how 
+: 2172 3 9 you 
+: 2176 9 6 found 
+: 2186 10 4 me
+- 2196
+: 2206 1 9 Give 
+: 2208 1 9 me 
+: 2210 1 9 a 
+: 2212 28 11 break
+- 2240 2242
+- 2242
+: 2258 5 11 Give 
+: 2264 9 11 me 
+: 2274 3 9 a 
+: 2278 34 9 break
+- 2312
+: 2320 13 4 Seems 
+: 2334 5 6 it 
+: 2340 7 11 ne
+: 2348 5 9 ver 
+: 2354 5 11 rains
+- 2359
+: 2360 5 9 In 
+: 2366 7 11 Sou
+: 2374 14 9 thern 
+: 2392 5 11 Ca
+: 2398 1 11 li
+: 2400 5 9 for
+: 2406 18 4 nia
+- 2424 2436
+- 2436
+: 2452 9 4 Seems 
+: 2462 3 6 I’ve 
+: 2466 11 11 of
+: 2478 3 9 ten 
+: 2482 9 11 heard
+- 2491
+: 2492 5 9 That 
+: 2498 11 11 kind 
+: 2510 1 9 of 
+: 2512 5 11 ta
+: 2518 5 11 ~lk 
+: 2524 5 9 be
+: 2530 32 9 fore
+- 2562
+: 2568 11 14 It 
+: 2580 7 13 ne
+: 2588 5 9 ver 
+: 2594 11 11 rains 
+: 2606 5 11 in 
+: 2612 5 11 Ca
+: 2618 3 9 li
+: 2622 7 11 for
+: 2630 16 13 nia
+- 2646
+: 2656 3 9 But 
+: 2660 15 9 girl, 
+: 2676 7 9 don’t 
+: 2684 3 9 they 
+: 2688 9 6 warn 
+: 2698 16 4 ya
+- 2714
+: 2716 3 9 It 
+: 2720 42 11 pours
+- 2762
+: 2768 5 11 Ma
+: 2774 5 11 ~n 
+: 2780 3 9 it 
+: 2784 42 9 pours
+E
