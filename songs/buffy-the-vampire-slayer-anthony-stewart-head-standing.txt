@@ -1,0 +1,263 @@
+#ARTIST:Buffy The Vampire Slayer (Anthony Stewart Head)
+#TITLE:Standing
+#CREATOR:Canni
+#BPM:337,25
+#YEAR:2001
+#VIDEO:v=S-moQqQH2VU
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:11981,497405485545
+#ALLKARAOKE_ID:buffy-the-vampire-slayer-anthony-stewart-head-standing
+#ALLKARAOKE_SID:5253
+#ALLKARAOKE_LASTUPDATE:2025-09-27T00:11:53.084Z
+#ALLKARAOKE_REALBPM:35
+#ALLKARAOKE_SOURCEURL:Buffy The Vampire Slayer (Anthony Stewart Head) - Standing
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Buffy The Vampire Slayer (Anthony Stewart Head) - Standing.mp3
+#END:135000
+: 22 6 10 You’re 
+: 30 6 10 not 
+: 38 6 10 rea
+: 46 6 10 dy 
+: 64 1 10 for 
+: 66 2 10 the 
+: 70 6 8 world 
+: 78 10 3 out
+: 94 18 10 side.
+- 112 123
+- 123
+: 145 3 1 You 
+: 150 6 10 keep 
+: 158 2 10 pre
+: 161 6 10 ten
+: 172 10 10 ding, 
+: 189 2 10 but 
+: 193 2 10 you 
+: 197 4 8 just 
+: 205 10 3 can’t 
+* 222 20 10 hide.
+- 242 251
+- 251
+: 273 2 1 I 
+: 277 6 10 know, 
+: 285 4 10 I 
+: 293 4 8 said 
+: 301 2 1 that 
+: 305 4 1 I’d 
+: 313 6 3 be 
+: 324 7 3 stan
+: 333 4 1 ding 
+: 339 2 1 by 
+: 343 4 -2 your 
+: 348 15 3 side.
+- 363
+: 385 2 1 But 
+: 389 10 5 I
+: 401 2 3 ~
+: 405 12 1 ~
+- 417 505
+- 505
+: 527 4 3 Your 
+: 533 6 10 path’s 
+: 541 4 10 un
+: 549 6 10 bea
+: 557 6 10 ten 
+: 571 2 10 and 
+: 575 4 10 it’s 
+: 581 6 8 all 
+* 591 14 3 up
+* 606 10 10 hill,
+- 616 637
+- 637
+: 659 2 1 And 
+: 663 4 10 you 
+: 669 4 10 can 
+: 677 6 10 meet 
+: 685 4 10 it, 
+: 701 2 10 but 
+: 705 2 10 you 
+: 709 4 8 ne
+: 717 10 3 ver 
+* 733 12 10 will.
+- 745 763
+- 763
+: 785 2 1 And 
+: 789 6 10 I’m 
+: 797 2 10 the 
+: 801 4 8 rea
+: 809 4 1 son 
+: 825 2 1 that 
+: 829 8 3 you’re 
+: 841 6 3 stan
+: 851 6 1 ding 
+: 861 8 3 still.
+- 869 875
+- 875
+: 897 2 1 But 
+* 901 10 5 I
+: 913 2 3 ~
+: 917 14 1 ~
+- 931 975
+- 975
+: 997 4 1 I 
+: 1003 4 8 wish 
+: 1009 6 10 I 
+: 1019 4 8 could 
+: 1027 18 10 say 
+: 1053 2 10 the 
+: 1057 6 8 right 
+: 1067 8 10 words,
+- 1075
+: 1089 2 3 To 
+: 1093 4 5 lead 
+: 1099 4 8 you 
+: 1105 2 5 through 
+: 1109 4 3 this 
+: 1117 3 3 la
+: 1121 6 1 ~nd.
+- 1127
+: 1133 2 10 Wish 
+: 1137 6 10 I 
+: 1147 4 6 could 
+* 1155 16 10 play 
+: 1183 4 5 the 
+: 1189 6 8 fa
+: 1197 8 10 ther,
+- 1205
+: 1217 2 3 And 
+: 1221 6 5 take 
+: 1229 4 8 you 
+: 1237 4 8 by 
+: 1245 2 5 the 
+: 1249 8 10 hand.
+- 1257
+: 1261 2 10 Wish 
+: 1265 4 8 I 
+: 1273 6 6 could 
+* 1285 20 11 stay 
+: 1311 4 8 he
+: 1317 6 6 ~re, 
+: 1343 2 6 but 
+: 1347 6 6 now 
+: 1357 6 4 I 
+: 1365 4 4 un
+: 1371 2 6 der
+: 1375 12 4 stand.
+- 1387
+: 1403 4 4 I 
+: 1408 7 6 am 
+: 1419 12 6 stan
+: 1433 12 4 ding 
+: 1465 3 4 in 
+: 1469 4 1 the 
+: 1475 14 6 wa
+: 1491 12 1 ~y
+- 1503 1531
+- 1531
+: 1553 2 1 The 
+: 1557 8 10 cries 
+: 1567 2 10 a
+: 1571 6 10 round 
+: 1581 8 10 you, 
+: 1595 2 11 you 
+: 1599 4 10 don’t 
+: 1605 6 8 hear 
+: 1613 12 3 at 
+: 1629 10 10 all.
+- 1639 1659
+- 1659
+: 1681 2 1 ’Cause 
+: 1685 6 10 you 
+: 1693 4 10 know 
+: 1701 4 10 I’m 
+: 1709 6 10 here 
+: 1729 2 10 to 
+: 1733 4 8 take 
+: 1741 8 3 that 
+: 1757 30 10 call.
+- 1787
+: 1809 2 1 So 
+: 1813 4 10 you 
+: 1821 4 10 just 
+: 1829 4 8 lie 
+: 1837 4 1 there,
+- 1841
+: 1845 4 1 When 
+: 1853 4 3 you 
+: 1861 4 3 should 
+: 1869 2 1 be 
+: 1873 4 1 stan
+: 1879 4 -2 ding 
+: 1887 16 3 tall.
+- 1903
+: 1921 2 1 But 
+* 1925 10 5 I
+: 1937 2 3 ~
+: 1941 12 1 ~
+- 1953 1999
+- 1999
+: 2021 4 1 I 
+: 2027 4 8 wish 
+: 2033 6 10 I 
+: 2043 6 8 could 
+* 2051 22 10 lay 
+: 2077 2 10 your 
+: 2081 6 8 arms 
+: 2091 6 10 down
+- 2097
+: 2113 2 3 And 
+: 2117 4 5 let 
+: 2123 4 8 you 
+: 2129 4 5 rest 
+: 2137 2 3 at 
+: 2141 3 3 la
+: 2145 4 1 ~st.
+- 2149
+: 2157 2 10 Wish 
+: 2161 6 10 I 
+: 2169 4 6 could 
+: 2179 16 10 slay 
+: 2203 4 5 your 
+: 2209 6 8 de
+: 2217 8 10 mons,
+- 2225
+: 2239 4 3 But 
+: 2245 2 5 now 
+: 2249 4 8 that 
+: 2257 4 8 time 
+: 2263 2 5 has 
+* 2269 8 10 passed.
+- 2277
+: 2285 2 10 Wish 
+: 2289 6 8 I 
+: 2297 4 6 could 
+* 2307 20 11 stay 
+: 2337 12 6 here,
+- 2349
+: 2367 3 6 Your 
+: 2372 7 6 stal
+: 2383 5 4 wart 
+: 2391 5 4 stan
+: 2398 4 6 ding 
+: 2405 5 6 fa
+: 2411 10 4 ~st.
+- 2421
+: 2427 3 4 But 
+: 2432 3 6 I 
+: 2437 4 6 am 
+: 2445 8 6 stan
+: 2457 10 4 ding 
+: 2489 2 4 in 
+: 2493 5 1 the 
+: 2499 14 6 way
+: 2517 8 1 ~.
+- 2525 2533
+- 2533
+: 2555 4 4 I’m 
+: 2562 8 6 just 
+: 2573 12 6 stan
+: 2588 8 4 ding 
+: 2623 2 4 in 
+: 2627 4 1 the 
+* 2633 34 6 way.
+E

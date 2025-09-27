@@ -2673,7 +2673,7 @@
     "gap": 13330.554089709764,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-25T00:12:16.071Z",
+    "lastUpdate": "2025-09-24T10:58:30.720Z",
     "realBpm": 30,
     "volume": 0.5,
     "author": "Canni",
@@ -3994,6 +3994,34 @@
     "local": false
   },
   {
+    "id": "afro-dite-never-let-it-go",
+    "title": "Never Let It Go",
+    "artist": "Afro-Dite",
+    "video": "vMBM1hkjGas",
+    "language": [
+      "English"
+    ],
+    "bpm": 273.85,
+    "gap": 45704.05879130911,
+    "year": "2002",
+    "artistOrigin": "SE",
+    "lastUpdate": "2025-09-27T00:11:52.888Z",
+    "genre": "Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Afro-Dite - Never Let It Go",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5252,
+    "tracksCount": 1,
+    "search": "afroditeneverletitgo",
+    "local": false
+  },
+  {
     "id": "afroman-because-i-got-high",
     "title": "Because I got high",
     "artist": "Afroman",
@@ -5191,10 +5219,10 @@
       "English"
     ],
     "bpm": 209.1,
-    "gap": 675.6958393113343,
+    "gap": 525.6958393113343,
     "year": "1995",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-06-17T20:54:33.771Z",
+    "lastUpdate": "2025-09-26T18:05:34.265Z",
     "genre": "Pop Rock",
     "realBpm": 105,
     "volume": 0.8,
@@ -5282,7 +5310,7 @@
     "gap": 15278.850698174007,
     "year": "1972",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:16.221Z",
+    "lastUpdate": "2025-09-24T10:58:55.170Z",
     "genre": "Soft Rock",
     "realBpm": 29,
     "volume": 0.5,
@@ -5310,7 +5338,7 @@
     "gap": 14098.126888217523,
     "year": "1972",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:16.370Z",
+    "lastUpdate": "2025-09-24T10:59:56.362Z",
     "realBpm": 21,
     "volume": 0.5,
     "author": "MasterChristian",
@@ -5337,7 +5365,7 @@
     "gap": 8914.753435731609,
     "year": "1972",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:16.535Z",
+    "lastUpdate": "2025-09-24T11:00:41.320Z",
     "realBpm": 27,
     "volume": 0.5,
     "author": "MasterChristian",
@@ -5831,6 +5859,62 @@
     "shortId": 179,
     "tracksCount": 1,
     "search": "alexubagoyamaiamonterosinmiedoanada",
+    "local": false
+  },
+  {
+    "id": "alexander-klaws-free-like-the-wind",
+    "title": "Free Like The Wind",
+    "artist": "Alexander Klaws",
+    "video": "KMHsNUWIS98",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.95,
+    "gap": 7485.697931311508,
+    "year": "2003",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-09-27T00:11:52.232Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "monal, fepo, b4St1@fuN",
+    "sourceUrl": "Alexander Klaws - Free Like The Wind",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5250,
+    "tracksCount": 1,
+    "search": "alexanderklawsfreelikethewind",
+    "local": false
+  },
+  {
+    "id": "alexander-klaws-take-me-tonight",
+    "title": "Take Me Tonight",
+    "artist": "Alexander Klaws",
+    "video": "DmgDOFtzRFA",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.06,
+    "gap": 3190.6227869193917,
+    "year": "2003",
+    "artistOrigin": "DE",
+    "lastUpdate": "2025-09-27T00:11:52.886Z",
+    "genre": "Pop",
+    "realBpm": 168,
+    "volume": 0.5,
+    "author": "Canni, b4St1@fuN",
+    "sourceUrl": "Alexander Klaws - Take Me Tonight",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5251,
+    "tracksCount": 1,
+    "search": "alexanderklawstakemetonight",
     "local": false
   },
   {
@@ -7011,6 +7095,33 @@
     "shortId": 218,
     "tracksCount": 1,
     "search": "alvarosolersofia",
+    "local": false
+  },
+  {
+    "id": "alvin-stardust-i-feel-like-buddy-holly",
+    "title": "I Feel Like Buddy Holly",
+    "artist": "Alvin Stardust",
+    "video": "rfvniO-DWZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 225.8799999999997,
+    "gap": 18131.347337921045,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:55.011Z",
+    "realBpm": 41,
+    "volume": 0.5,
+    "author": "blewmaxx",
+    "sourceUrl": "Alvin Stardust - I Feel Like Buddy Holly",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5282,
+    "tracksCount": 1,
+    "search": "alvinstardustifeellikebuddyholly",
     "local": false
   },
   {
@@ -10894,6 +11005,37 @@
     "local": false
   },
   {
+    "id": "ashford-simpson-solid",
+    "title": "Solid",
+    "artist": "Ashford & Simpson",
+    "video": "w3PoTnkLfxE",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.4,
+    "gap": 31126.561264822136,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.235Z",
+    "genre": "Pop",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Ashford & Simpson - Solid [DUET]",
+    "tracks": [
+      {
+        "start": 253
+      },
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5254,
+    "tracksCount": 2,
+    "search": "ashfordsimpsonsolid",
+    "local": false
+  },
+  {
     "id": "ashlee-simpson-autobiography",
     "title": "Autobiography",
     "artist": "Ashlee Simpson",
@@ -14096,6 +14238,33 @@
     "local": false
   },
   {
+    "id": "bad-company-feel-like-makin-love",
+    "title": "Feel Like Makin’ Love",
+    "artist": "Bad Company",
+    "video": "OEPvv9pjIoQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 349.6,
+    "gap": 10473.157894736842,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:53.379Z",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Bad Company - Feel Like Makin’ Love",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5255,
+    "tracksCount": 1,
+    "search": "badcompanyfeellikemakinlove",
+    "local": false
+  },
+  {
     "id": "bad-lip-reading-bushes-of-love",
     "title": "Bushes Of Love",
     "artist": "Bad Lip Reading",
@@ -14239,6 +14408,361 @@
     "shortId": 460,
     "tracksCount": 1,
     "search": "badomensthegrey",
+    "local": false
+  },
+  {
+    "id": "bad-religion-21st-century-digital-boy",
+    "title": "21st Century (Digital Boy)",
+    "artist": "Bad Religion",
+    "video": "TYApdmp6je8",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.5,
+    "gap": 13075.332068311196,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.666Z",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "Silverbeam",
+    "sourceUrl": "Bad Religion - 21st Century (Digital Boy)",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5267,
+    "tracksCount": 1,
+    "search": "badreligion21stcenturydigitalboy",
+    "local": false
+  },
+  {
+    "id": "bad-religion-american-jesus",
+    "title": "American Jesus",
+    "artist": "Bad Religion",
+    "video": "12kcpP-8jfM",
+    "language": [
+      "English"
+    ],
+    "bpm": 363.3,
+    "gap": 21129.083402146985,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.526Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Bad Religion - American Jesus",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5256,
+    "tracksCount": 1,
+    "search": "badreligionamericanjesus",
+    "local": false
+  },
+  {
+    "id": "bad-religion-big-bang",
+    "title": "Big Bang",
+    "artist": "Bad Religion",
+    "video": "pbk92npiF9s",
+    "language": [
+      "English"
+    ],
+    "bpm": 668,
+    "gap": 13429.520958083833,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.659Z",
+    "realBpm": 200,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Bad Religion - Big Bang",
+    "tracks": [
+      {
+        "start": 45
+      }
+    ],
+    "shortId": 5261,
+    "tracksCount": 1,
+    "search": "badreligionbigbang",
+    "local": false
+  },
+  {
+    "id": "bad-religion-change-of-ideas",
+    "title": "Change Of Ideas",
+    "artist": "Bad Religion",
+    "video": "arj0whjOpuA",
+    "language": [
+      "English"
+    ],
+    "bpm": 600,
+    "gap": 0,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.660Z",
+    "realBpm": 200,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Bad Religion - Change Of Ideas",
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "shortId": 5262,
+    "tracksCount": 1,
+    "search": "badreligionchangeofideas",
+    "local": false
+  },
+  {
+    "id": "bad-religion-generator",
+    "title": "Generator",
+    "artist": "Bad Religion",
+    "video": "zTfdILFoBTU",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.5,
+    "gap": 25.378151260504183,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.662Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Bad Religion - Generator",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 5264,
+    "tracksCount": 1,
+    "search": "badreligiongenerator",
+    "local": false
+  },
+  {
+    "id": "bad-religion-gods-love",
+    "title": "God’s Love",
+    "artist": "Bad Religion",
+    "video": "S01MnOAPh1M",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 307.27272727272737,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.655Z",
+    "genre": "Rock",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "borax",
+    "sourceUrl": "Bad Religion - God’s Love",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5258,
+    "tracksCount": 1,
+    "search": "badreligiongodslove",
+    "local": false
+  },
+  {
+    "id": "bad-religion-let-them-eat-war",
+    "title": "Let Them Eat War",
+    "artist": "Bad Religion",
+    "video": "F4ngeLZX5_M",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 16878.69158878505,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.653Z",
+    "genre": "Rock",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "borax",
+    "sourceUrl": "Bad Religion - Let Them Eat War",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5257,
+    "tracksCount": 1,
+    "search": "badreligionletthemeatwar",
+    "local": false
+  },
+  {
+    "id": "bad-religion-punk-rock-song",
+    "title": "Punk Rock Song",
+    "artist": "Bad Religion",
+    "video": "S_Xm9BzpwPc",
+    "language": [
+      "English"
+    ],
+    "bpm": 265.65,
+    "gap": 5943.625070581592,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.665Z",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "TheXReaper",
+    "sourceUrl": "Bad Religion - Punk Rock Song",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5266,
+    "tracksCount": 1,
+    "search": "badreligionpunkrocksong",
+    "local": false
+  },
+  {
+    "id": "bad-religion-skyscraper",
+    "title": "Skyscraper",
+    "artist": "Bad Religion",
+    "video": "uyK3I9cnb3Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 337.5,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.661Z",
+    "genre": "Punk Rock",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Agony96",
+    "sourceUrl": "Bad Religion - Skyscraper",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5263,
+    "tracksCount": 1,
+    "search": "badreligionskyscraper",
+    "local": false
+  },
+  {
+    "id": "bad-religion-social-suicide",
+    "title": "Social Suicide",
+    "artist": "Bad Religion",
+    "video": "U8tWEhGNcls",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.4000000000001,
+    "gap": 10797.093023255813,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.657Z",
+    "genre": "Rock",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "borax",
+    "sourceUrl": "Bad Religion - Social Suicide",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5259,
+    "tracksCount": 1,
+    "search": "badreligionsocialsuicide",
+    "local": false
+  },
+  {
+    "id": "bad-religion-sorrow",
+    "title": "Sorrow",
+    "artist": "Bad Religion",
+    "video": "r7Hb4bxF12E",
+    "language": [
+      "English"
+    ],
+    "bpm": 278.19,
+    "gap": 9425.520327833496,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.658Z",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Bad Religion - Sorrow",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5260,
+    "tracksCount": 1,
+    "search": "badreligionsorrow",
+    "local": false
+  },
+  {
+    "id": "bad-religion-walk-away",
+    "title": "Walk Away",
+    "artist": "Bad Religion",
+    "video": "2PAwWIGZMBU",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 2270,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.663Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Bad Religion - Walk Away",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5265,
+    "tracksCount": 1,
+    "search": "badreligionwalkaway",
+    "local": false
+  },
+  {
+    "id": "bad-religion-you",
+    "title": "You",
+    "artist": "Bad Religion",
+    "video": "2s7paN4AHpE",
+    "language": [
+      "English"
+    ],
+    "bpm": 308.68,
+    "gap": 5059.525722430996,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.667Z",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Bad Religion - You",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5268,
+    "tracksCount": 1,
+    "search": "badreligionyou",
     "local": false
   },
   {
@@ -15778,7 +16302,7 @@
     "bpm": 260,
     "gap": 15729.23076923077,
     "year": "2005",
-    "lastUpdate": "2025-09-25T00:12:15.649Z",
+    "lastUpdate": "2025-09-24T10:57:38.790Z",
     "genre": "Electronic",
     "realBpm": 40,
     "volume": 0.5,
@@ -15805,7 +16329,7 @@
     "bpm": 268,
     "gap": 14212.537313432837,
     "year": "2004",
-    "lastUpdate": "2025-09-25T00:12:15.495Z",
+    "lastUpdate": "2025-09-24T07:36:34.866Z",
     "genre": "House",
     "realBpm": 27,
     "volume": 0.5,
@@ -15890,7 +16414,7 @@
     "gap": 1320.4740137517765,
     "year": "2002",
     "artistOrigin": "IT",
-    "lastUpdate": "2025-09-25T00:12:15.774Z",
+    "lastUpdate": "2025-09-24T10:57:51.633Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "DS",
@@ -19865,6 +20389,35 @@
     "local": false
   },
   {
+    "id": "bob-marley-no-woman-no-cry",
+    "title": "No Woman No Cry",
+    "artist": "Bob Marley",
+    "video": "IT8XvzIfi4U",
+    "language": [
+      "English"
+    ],
+    "bpm": 302.4,
+    "gap": 57677.93650793651,
+    "year": "1976",
+    "artistOrigin": "JM",
+    "lastUpdate": "2025-09-27T00:11:54.270Z",
+    "edition": "Singstar Party",
+    "genre": "Reggae",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "zwiebel1000",
+    "sourceUrl": "Bob Marley & The Wailers - No Woman No Cry",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5275,
+    "tracksCount": 1,
+    "search": "bobmarleynowomannocry",
+    "local": false
+  },
+  {
     "id": "bob-marley-the-wailers-could-you-be-loved",
     "title": "Could You Be Loved",
     "artist": "Bob Marley & The Wailers",
@@ -23242,7 +23795,7 @@
     "gap": 3555.9036144578313,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:14.616Z",
+    "lastUpdate": "2025-09-24T07:35:23.956Z",
     "realBpm": 86,
     "volume": 0.5,
     "author": "Ultrastar-Songs",
@@ -23269,7 +23822,7 @@
     "gap": 1337.355623100304,
     "year": "1987",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:15.343Z",
+    "lastUpdate": "2025-09-24T07:35:41.523Z",
     "genre": "Pop",
     "realBpm": 89,
     "volume": 0.5,
@@ -25438,6 +25991,33 @@
     "shortId": 832,
     "tracksCount": 1,
     "search": "budkasuflerazaostatnigrosz",
+    "local": false
+  },
+  {
+    "id": "buffy-the-vampire-slayer-anthony-stewart-head-standing",
+    "title": "Standing",
+    "artist": "Buffy The Vampire Slayer (Anthony Stewart Head)",
+    "video": "S-moQqQH2VU",
+    "language": [
+      "English"
+    ],
+    "bpm": 337.25,
+    "gap": 11981.497405485545,
+    "year": "2001",
+    "lastUpdate": "2025-09-27T00:11:53.084Z",
+    "genre": "Soundtrack",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Buffy The Vampire Slayer (Anthony Stewart Head) - Standing",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5253,
+    "tracksCount": 1,
+    "search": "buffythevampireslayeranthonystewartheadstanding",
     "local": false
   },
   {
@@ -33834,7 +34414,7 @@
     "gap": 34708.71132472214,
     "year": "1988",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-25T00:12:15.926Z",
+    "lastUpdate": "2025-09-24T10:58:07.693Z",
     "genre": "Pop",
     "realBpm": 35,
     "volume": 0.5,
@@ -34797,10 +35377,10 @@
       "English"
     ],
     "bpm": 260.34,
-    "gap": 16851.511638626413,
+    "gap": 16801.511638626413,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2024-12-29T00:12:42.668Z",
+    "lastUpdate": "2025-09-26T18:06:10.970Z",
     "realBpm": 130,
     "volume": 0.59,
     "manualVolume": 0.76,
@@ -35341,6 +35921,35 @@
     "shortId": 1158,
     "tracksCount": 1,
     "search": "deco27mozaikrole",
+    "local": false
+  },
+  {
+    "id": "deep-blue-something-breakfast-at-tiffanys",
+    "title": "Breakfast At Tiffany’s",
+    "artist": "Deep Blue Something",
+    "video": "1ClCpfeIELw",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.8,
+    "gap": 7170.978260869565,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:54.718Z",
+    "edition": "[Sc]-Songs",
+    "genre": "Pop Rock",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Deep Blue Something - Breakfast At Tiffany’s",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5280,
+    "tracksCount": 1,
+    "search": "deepbluesomethingbreakfastattiffanys",
     "local": false
   },
   {
@@ -50440,6 +51049,33 @@
     "local": false
   },
   {
+    "id": "for-my-pain-sea-of-emotions",
+    "title": "Sea Of Emotions",
+    "artist": "For My Pain…",
+    "video": "U2hQGAALb-0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 22400,
+    "year": "2003",
+    "artistOrigin": "FI",
+    "lastUpdate": "2025-09-27T00:11:54.576Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "Wüstenpfeil",
+    "sourceUrl": "For My Pain… - Sea Of Emotions",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5279,
+    "tracksCount": 1,
+    "search": "formypainseaofemotions",
+    "local": false
+  },
+  {
     "id": "foreigner-i-want-to-know-what-love-is",
     "title": "I Want To Know What Love Is",
     "artist": "Foreigner",
@@ -50493,6 +51129,34 @@
     "shortId": 1659,
     "tracksCount": 1,
     "search": "foreignerwaitingforagirllikeyou",
+    "local": false
+  },
+  {
+    "id": "foster-the-people-houdini",
+    "title": "Houdini",
+    "artist": "Foster The People",
+    "video": "Bv5okx42-9g",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.22,
+    "gap": 25478.294432839888,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:54.428Z",
+    "genre": "Indie Pop",
+    "realBpm": -1,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "sourceUrl": "Foster The People - Houdini",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5277,
+    "tracksCount": 1,
+    "search": "fosterthepeoplehoudini",
     "local": false
   },
   {
@@ -51484,6 +52148,34 @@
     "shortId": 1692,
     "tracksCount": 1,
     "search": "funsomenights",
+    "local": false
+  },
+  {
+    "id": "funeral-for-a-friend-roses-for-the-dead",
+    "title": "Roses For The Dead",
+    "artist": "Funeral For A Friend",
+    "video": "qsaamq0E964",
+    "language": [
+      "English"
+    ],
+    "bpm": 410,
+    "gap": 19842.19512195122,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:54.429Z",
+    "edition": "[Sc]-Songs",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Funeral For A Friend - Roses For The Dead",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5278,
+    "tracksCount": 1,
+    "search": "funeralforafriendrosesforthedead",
     "local": false
   },
   {
@@ -62862,10 +63554,10 @@
       "English"
     ],
     "bpm": 339.92,
-    "gap": 11145.05530713109,
+    "gap": 11195.05530713109,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-02-18T06:34:02.234Z",
+    "lastUpdate": "2025-09-26T18:05:50.280Z",
     "genre": "Pop",
     "realBpm": 85,
     "previewEnd": 205,
@@ -64165,6 +64857,33 @@
     "local": false
   },
   {
+    "id": "jax-jones-you-dont-know-me",
+    "title": "You Don’t Know Me",
+    "artist": "Jax Jones",
+    "video": "WH9C6oLEtOg",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 2341.7741935483873,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:53.981Z",
+    "realBpm": 52,
+    "volume": 0.5,
+    "author": "choosie",
+    "sourceUrl": "Jax Jones feat. Raye - You Don’t Know Me",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5273,
+    "tracksCount": 1,
+    "search": "jaxjonesyoudontknowme",
+    "local": false
+  },
+  {
     "id": "jay-sean-feat-lil-wayne-down",
     "title": "Down",
     "artist": "Jay Sean feat. Lil Wayne",
@@ -65106,7 +65825,7 @@
     "gap": 35794.61652159632,
     "year": "2009",
     "artistOrigin": "AU",
-    "lastUpdate": "2025-09-25T00:12:14.602Z",
+    "lastUpdate": "2025-09-23T20:16:27.288Z",
     "realBpm": 18,
     "volume": 0.5,
     "author": "ai-chan",
@@ -65133,7 +65852,7 @@
     "gap": 12037.297459491898,
     "year": "1971",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:14.611Z",
+    "lastUpdate": "2025-09-23T20:17:31.213Z",
     "genre": "Progressive Rock",
     "realBpm": 25,
     "volume": 0.5,
@@ -65161,7 +65880,7 @@
     "gap": 14559.433962264151,
     "year": "1974",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:14.613Z",
+    "lastUpdate": "2025-09-24T07:34:43.319Z",
     "realBpm": 30,
     "volume": 0.5,
     "author": "4go10",
@@ -65188,7 +65907,7 @@
     "gap": 38627.017079306235,
     "year": "1969",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-25T00:12:14.614Z",
+    "lastUpdate": "2025-09-24T07:35:02.419Z",
     "realBpm": 27,
     "volume": 0.5,
     "author": "choosie",
@@ -65465,6 +66184,35 @@
     "shortId": 2119,
     "tracksCount": 1,
     "search": "jimmyeatworldthemiddle",
+    "local": false
+  },
+  {
+    "id": "jimmy-ruffin-what-becomes-of-the-brokenhearted",
+    "title": "What Becomes Of The Brokenhearted",
+    "artist": "Jimmy Ruffin",
+    "video": "cQywZYoGB1g",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 7175.102040816327,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:54.861Z",
+    "edition": "SingStar Motown",
+    "genre": "Soul",
+    "realBpm": 34,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Jimmy Ruffin - What Becomes Of The Brokenhearted",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5281,
+    "tracksCount": 1,
+    "search": "jimmyruffinwhatbecomesofthebrokenhearted",
     "local": false
   },
   {
@@ -74991,11 +75739,11 @@
     "language": [
       "Spanish"
     ],
-    "bpm": 200,
-    "gap": 17950,
+    "bpm": 199.70000000000002,
+    "gap": 17650,
     "year": "1999",
     "artistOrigin": "AR",
-    "lastUpdate": "2024-04-20T06:51:24.846Z",
+    "lastUpdate": "2025-09-26T18:07:07.758Z",
     "genre": "Pop",
     "realBpm": 99,
     "volume": 0.52,
@@ -77906,6 +78654,61 @@
     "local": false
   },
   {
+    "id": "lemar-5050",
+    "title": "50/50",
+    "artist": "Lemar",
+    "video": "SdNGCfDowEU",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 9253.157894736842,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:53.671Z",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Lemar - 50/50",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5270,
+    "tracksCount": 1,
+    "search": "lemar5050",
+    "local": false
+  },
+  {
+    "id": "lemar-its-not-that-easy",
+    "title": "It’s Not That Easy",
+    "artist": "Lemar",
+    "video": "qThX-hT8ErY",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 12513.90243902439,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-27T00:11:53.832Z",
+    "genre": "Pop",
+    "realBpm": 39,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Lemar - It’s Not That Easy",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5271,
+    "tracksCount": 1,
+    "search": "lemaritsnotthateasy",
+    "local": false
+  },
+  {
     "id": "lena-satellite",
     "title": "Satellite",
     "artist": "Lena",
@@ -77933,6 +78736,34 @@
     "shortId": 2535,
     "tracksCount": 1,
     "search": "lenasatellite",
+    "local": false
+  },
+  {
+    "id": "lenka-everything-at-once",
+    "title": "Everything At Once",
+    "artist": "Lenka",
+    "video": "eE9tV1WGTgE",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 5767.241379310345,
+    "year": "2011",
+    "artistOrigin": "AU",
+    "lastUpdate": "2025-09-27T00:11:54.131Z",
+    "genre": "Adult Alternative Pop",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "fepo",
+    "sourceUrl": "Lenka - Everything At Once",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5274,
+    "tracksCount": 1,
+    "search": "lenkaeverythingatonce",
     "local": false
   },
   {
@@ -82833,6 +83664,32 @@
     "shortId": 2692,
     "tracksCount": 1,
     "search": "maciejmoledazrobiemezczyznzwas",
+    "local": false
+  },
+  {
+    "id": "macklemore-feat-ziggy-stardust-and-we-danced",
+    "title": "And We Danced",
+    "artist": "Macklemore feat. Ziggy Stardust",
+    "video": "Vhf5cuXiLTA",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 93320,
+    "year": "2009",
+    "lastUpdate": "2025-09-27T00:12:04.635Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "superstar90",
+    "sourceUrl": "Macklemore feat. Ziggy Stardust - And We Danced",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5283,
+    "tracksCount": 1,
+    "search": "macklemorefeatziggystardustandwedanced",
     "local": false
   },
   {
@@ -126733,7 +127590,7 @@
     "bpm": 220,
     "gap": 7077.272727272727,
     "year": "2024",
-    "lastUpdate": "2025-09-25T00:12:15.345Z",
+    "lastUpdate": "2025-09-24T07:36:09.751Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "GaryCXJk",
@@ -133163,9 +134020,9 @@
       "English"
     ],
     "bpm": 376.56,
-    "gap": 19464.142766093053,
+    "gap": 19264.142766093053,
     "year": "2003",
-    "lastUpdate": "2024-04-28T19:13:00.386Z",
+    "lastUpdate": "2025-09-26T18:05:03.340Z",
     "genre": "Pop",
     "realBpm": 94,
     "volume": 0.56,
@@ -138309,6 +139166,34 @@
     "shortId": 4426,
     "tracksCount": 1,
     "search": "thevinesgetfree",
+    "local": false
+  },
+  {
+    "id": "the-weather-girls-its-raining-men",
+    "title": "It’s Raining Men",
+    "artist": "The Weather Girls",
+    "video": "_Dq_JcpWAJs",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 13717.35294117647,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:54.272Z",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "JMz",
+    "sourceUrl": "The Weather Girls - It’s Raining Men",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5276,
+    "tracksCount": 1,
+    "search": "theweathergirlsitsrainingmen",
     "local": false
   },
   {
@@ -146763,6 +147648,34 @@
     "local": false
   },
   {
+    "id": "westlife-world-of-our-own",
+    "title": "World Of Our Own",
+    "artist": "Westlife",
+    "video": "Jal-vzO8bVE",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.88,
+    "gap": 15114.79738695519,
+    "year": "2001",
+    "artistOrigin": "IE",
+    "lastUpdate": "2025-09-27T00:11:53.669Z",
+    "genre": "Pop",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "dan878",
+    "sourceUrl": "Westlife - World Of Our Own",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5269,
+    "tracksCount": 1,
+    "search": "westlifeworldofourown",
+    "local": false
+  },
+  {
     "id": "wet-wet-wet-love-is-all-around",
     "title": "Love Is All Around",
     "artist": "Wet Wet Wet",
@@ -147468,6 +148381,34 @@
     "shortId": 4713,
     "tracksCount": 1,
     "search": "wilbursootyournewboyfriend",
+    "local": false
+  },
+  {
+    "id": "wild-cherry-play-that-funky-music",
+    "title": "Play That Funky Music",
+    "artist": "Wild Cherry",
+    "video": "JTvlujbJ5vg",
+    "language": [
+      "English"
+    ],
+    "bpm": 382.7100000000002,
+    "gap": 6408.093268047445,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-09-27T00:11:53.836Z",
+    "genre": "Funk",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Wild Cherry - Play That Funky Music",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5272,
+    "tracksCount": 1,
+    "search": "wildcherryplaythatfunkymusic",
     "local": false
   },
   {

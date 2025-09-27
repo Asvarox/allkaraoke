@@ -1,0 +1,189 @@
+#ARTIST:Bad Religion
+#TITLE:Change Of Ideas
+#CREATOR:Canni
+#BPM:600
+#YEAR:1989
+#VIDEO:v=arj0whjOpuA
+#LANGUAGE:English
+#GAP:0
+#ALLKARAOKE_ID:bad-religion-change-of-ideas
+#ALLKARAOKE_SID:5262
+#ALLKARAOKE_LASTUPDATE:2025-09-27T00:11:53.660Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Bad Religion - Change Of Ideas
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Bad Religion - Change Of Ideas.mp3
+: 40 3 13 Well 
+: 44 2 13 the 
+: 48 10 14 sheaves 
+: 59 3 14 have 
+: 63 8 13 all 
+: 72 4 13 been 
+: 77 14 11 brought,
+- 91
+: 106 4 9 But 
+: 111 3 9 the 
+: 115 10 9 fields 
+: 126 3 9 have 
+: 130 8 8 washed 
+: 139 4 8 a
+: 144 14 6 way,
+- 158
+: 171 5 13 And 
+: 177 3 13 the 
+: 181 6 14 pa
+: 188 4 14 la
+: 193 10 13 ces 
+: 204 10 11 now 
+: 220 16 11 stand
+- 236
+: 238 5 9 Where 
+: 244 3 9 the 
+: 248 4 9 cof
+: 253 6 9 fins 
+: 261 8 11 all 
+: 270 2 11 were 
+* 273 22 13 laid,
+- 295
+: 304 5 13 And 
+: 310 3 13 the 
+: 314 8 14 times 
+: 323 2 14 we 
+: 326 8 13 see 
+: 335 4 13 a
+: 340 16 11 head,
+- 356
+: 368 4 9 We 
+: 373 4 9 must 
+: 378 8 9 glaze 
+: 387 4 9 with 
+: 392 4 8 ro
+: 397 4 8 zy 
+: 402 20 6 hues,
+- 422
+: 433 6 13 For 
+: 440 2 13 what 
+: 443 5 14 don’t 
+: 450 5 14 wish 
+: 456 8 13 to 
+: 465 2 11 ad
+: 468 16 11 mit
+- 484
+: 499 4 9 What 
+: 504 4 9 it 
+: 509 4 9 is 
+: 516 2 9 we 
+: 519 9 11 have 
+: 529 2 11 to 
+: 532 16 13 lo
+: 549 8 14 ~
+: 558 14 13 ~se.
+- 572 653
+- 653
+: 693 8 13 Mil
+: 702 8 13 le
+: 711 4 13 ni
+: 716 10 13 a 
+: 728 6 13 in 
+: 736 10 13 co
+: 747 60 13 ming,
+- 807
+: 828 6 13 The 
+: 836 6 13 mo
+: 844 6 6 dern 
+: 851 12 6 age 
+: 864 6 8 is 
+: 871 25 6 here.
+- 896 921
+- 921
+: 961 6 13 It 
+: 969 10 18 sanc
+: 980 4 13 ti
+: 987 9 13 fies 
+: 997 4 12 the 
+: 1002 11 13 fu
+* 1014 55 13 tu
+: 1071 15 11 ~re,
+- 1086
+: 1096 8 13 Yet 
+: 1105 8 13 ren
+: 1115 8 6 ders 
+: 1125 5 6 us 
+: 1131 6 8 with 
+: 1139 20 6 fear.
+- 1159 1197
+- 1197
+: 1237 12 13 So 
+: 1251 12 13 ma
+: 1264 8 13 ny 
+: 1273 9 13 the
+: 1283 5 13 o
+: 1289 15 13 ries,
+- 1304
+: 1305 12 11 So 
+: 1318 12 11 ma
+: 1331 6 13 ny 
+: 1338 8 9 pro
+: 1347 3 8 phe
+: 1351 12 6 cies,
+- 1363
+: 1372 8 9 What 
+: 1382 14 9 we 
+: 1397 8 9 do 
+: 1406 14 9 need 
+: 1422 8 11 is 
+: 1431 4 9 a 
+: 1436 14 8 change 
+: 1452 8 6 of 
+: 1461 6 4 i
+: 1468 25 6 deas.
+- 1493
+: 1503 9 13 When 
+: 1516 9 13 we 
+: 1527 4 13 are 
+: 1533 12 13 scared
+- 1545
+: 1549 10 13 We 
+: 1560 6 13 can 
+: 1567 14 11 hide 
+: 1582 4 11 in 
+: 1587 8 13 our 
+: 1598 8 9 re
+: 1608 8 8 ve
+: 1618 8 6 ries 
+: 1634 8 9 but
+- 1642
+: 1648 8 9 What 
+: 1657 8 9 we 
+: 1666 14 9 need 
+: 1683 8 11 is 
+: 1692 4 9 a 
+: 1698 14 8 change 
+: 1714 8 6 of 
+: 1724 8 4 i
+: 1733 23 6 deas.
+- 1756
+: 1766 14 13 Change 
+: 1781 10 13 of 
+: 1792 8 13 i
+: 1801 26 13 deas,
+- 1827
+: 1832 14 11 Change 
+: 1848 8 11 of 
+: 1857 8 13 i
+: 1866 10 9 de
+: 1877 3 8 ~
+: 1881 10 6 ~as,
+- 1891
+: 1900 8 9 What 
+: 1909 13 9 we 
+: 1923 7 9 need 
+: 1931 12 9 now 
+: 1947 9 11 is 
+: 1957 4 9 a 
+: 1962 14 8 change 
+: 1977 10 6 of 
+: 1988 8 4 i
+: 1997 53 6 deas.
+E
