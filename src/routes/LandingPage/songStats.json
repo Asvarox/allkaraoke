@@ -36,6 +36,7 @@
     "The Black Eyed Peas",
     "Avenged Sevenfold",
     "Avril Lavigne",
+    "Bad Religion",
     "Beyoncé",
     "Elton John",
     "INXS",
@@ -148,8 +149,7 @@
     "KoRn",
     "Natasha Bedingfield",
     "Ne-Yo",
-    "Nelly Furtado",
-    "Ozzy Osbourne"
+    "Nelly Furtado"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5248
+  "songs": 5282
 }
