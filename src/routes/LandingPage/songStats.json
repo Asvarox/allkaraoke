@@ -22,6 +22,7 @@
     "Ghost",
     "Madonna",
     "Muse",
+    "Westlife",
     "Adele",
     "Bruno Mars",
     "Demi Lovato",
@@ -148,8 +149,7 @@
     "KISS",
     "KoRn",
     "Natasha Bedingfield",
-    "Ne-Yo",
-    "Nelly Furtado"
+    "Ne-Yo"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5282
+  "songs": 5300
 }
