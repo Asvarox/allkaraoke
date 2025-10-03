@@ -2728,11 +2728,11 @@
     "language": [
       "English"
     ],
-    "bpm": 240,
+    "bpm": 240.1,
     "gap": 12740,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-06-25T04:56:49.797Z",
+    "lastUpdate": "2025-09-29T06:07:28.673Z",
     "genre": "R&B",
     "realBpm": 71,
     "volume": 0.5,
@@ -3514,7 +3514,7 @@
     "gap": 188.76404494382018,
     "year": "2020",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-06-29T00:10:13.303Z",
+    "lastUpdate": "2025-09-30T04:53:45.685Z",
     "realBpm": 178,
     "volume": 0.5,
     "manualVolume": 0.81,
@@ -6898,6 +6898,92 @@
     "local": false
   },
   {
+    "id": "alphabeat-10000-nights-of-thunder",
+    "title": "10.000 Nights Of Thunder",
+    "artist": "Alphabeat",
+    "video": "Sc5knQTmmEs",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 3462.1428571428573,
+    "year": "09",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-09-30T20:55:02.512Z",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "NikNak",
+    "sourceUrl": "Alphabeat - 10.000 Nights Of Thunder [DUET]",
+    "tracks": [
+      {
+        "start": 19
+      },
+      {
+        "start": 146
+      }
+    ],
+    "shortId": 5303,
+    "tracksCount": 2,
+    "search": "alphabeat10000nightsofthunder",
+    "local": false
+  },
+  {
+    "id": "alphabeat-boyfriend",
+    "title": "Boyfriend",
+    "artist": "Alphabeat",
+    "video": "0NOFVjjQ_2c",
+    "language": [
+      "English"
+    ],
+    "bpm": 428.4,
+    "gap": 18164.593837535012,
+    "year": "2008",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-09-30T20:55:15.210Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "jalkazar",
+    "sourceUrl": "Alphabeat - Boyfriend",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 5304,
+    "tracksCount": 1,
+    "search": "alphabeatboyfriend",
+    "local": false
+  },
+  {
+    "id": "alphabeat-fantastic-6",
+    "title": "Fantastic 6",
+    "artist": "Alphabeat",
+    "video": "lp9Niwt9I3o",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 3141.5966386554624,
+    "year": "2007",
+    "artistOrigin": "DK",
+    "lastUpdate": "2025-09-30T20:54:38.658Z",
+    "genre": "Dance Pop",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Alphabeat - Fantastic 6",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5302,
+    "tracksCount": 1,
+    "search": "alphabeatfantastic6",
+    "local": false
+  },
+  {
     "id": "alphabeat-fascination",
     "title": "Fascination",
     "artist": "Alphabeat",
@@ -6909,7 +6995,7 @@
     "gap": 4704.547461368653,
     "year": "2007",
     "artistOrigin": "DK",
-    "lastUpdate": "2025-09-29T00:13:07.854Z",
+    "lastUpdate": "2025-09-28T20:54:58.865Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "flokuep",
@@ -20500,6 +20586,32 @@
     "shortId": 644,
     "tracksCount": 1,
     "search": "bobmarleythewailersthreelittlebirds",
+    "local": false
+  },
+  {
+    "id": "bob-marley-vs-funkstar-de-luxe-sun-is-shining",
+    "title": "Sun Is Shining",
+    "artist": "Bob Marley vs. Funkstar De Luxe",
+    "video": "9kPQV64eNrk",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.5,
+    "gap": 1771.5966386554624,
+    "year": "1999",
+    "lastUpdate": "2025-09-30T20:56:03.239Z",
+    "realBpm": -19,
+    "volume": 0.5,
+    "author": "Spaggi",
+    "sourceUrl": "Bob Marley vs. Funkstar De Luxe - Sun Is Shining",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5306,
+    "tracksCount": 1,
+    "search": "bobmarleyvsfunkstardeluxesunisshining",
     "local": false
   },
   {
@@ -35433,7 +35545,7 @@
     "gap": 5491.935483870968,
     "year": "1969",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-29T00:13:06.621Z",
+    "lastUpdate": "2025-09-28T20:52:10.374Z",
     "genre": "Soul",
     "realBpm": 26,
     "volume": 0.5,
@@ -63601,6 +63713,118 @@
     "local": false
   },
   {
+    "id": "jamelia-beware-of-the-dog",
+    "title": "Beware Of The Dog",
+    "artist": "Jamelia",
+    "video": "xMs172JU30Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": -870.7692307692308,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-30T21:02:19.766Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamelia - Beware Of The Dog",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5309,
+    "tracksCount": 1,
+    "search": "jameliabewareofthedog",
+    "local": false
+  },
+  {
+    "id": "jamelia-stop",
+    "title": "Stop",
+    "artist": "Jamelia",
+    "video": "u4Zk6EWgHLw",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.8,
+    "gap": 11729.183346677342,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-30T21:00:45.321Z",
+    "genre": "R&B",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamelia - Stop",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5307,
+    "tracksCount": 1,
+    "search": "jameliastop",
+    "local": false
+  },
+  {
+    "id": "jamelia-superstar",
+    "title": "Superstar",
+    "artist": "Jamelia",
+    "video": "n_Y7Nyh0NEU",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 16987.272727272728,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-30T21:02:39.771Z",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamelia - Superstar",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5310,
+    "tracksCount": 1,
+    "search": "jameliasuperstar",
+    "local": false
+  },
+  {
+    "id": "jamelia-thank-you",
+    "title": "Thank You",
+    "artist": "Jamelia",
+    "video": "uXasJAew4hQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 350,
+    "gap": 2424.285714285714,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-09-30T21:01:26.932Z",
+    "genre": "R&B",
+    "realBpm": 13,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jamelia - Thank You",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5308,
+    "tracksCount": 1,
+    "search": "jameliathankyou",
+    "local": false
+  },
+  {
     "id": "james-arthur-impossible",
     "title": "Impossible",
     "artist": "James Arthur",
@@ -75449,7 +75673,7 @@
     "bpm": 243.92,
     "gap": 9346.070842899311,
     "year": "2021",
-    "lastUpdate": "2025-09-29T00:13:07.691Z",
+    "lastUpdate": "2025-09-28T20:54:35.718Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "Tracks",
@@ -133085,7 +133309,7 @@
     "gap": 404.2902208201893,
     "year": "1989",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-29T00:13:07.518Z",
+    "lastUpdate": "2025-09-28T20:53:50.074Z",
     "genre": "New Wave",
     "realBpm": 19,
     "volume": 0.5,
@@ -140533,6 +140757,33 @@
     "local": false
   },
   {
+    "id": "three-6-mafia-vs-tiesto-with-sean-kingston-flo-rida-feel-it",
+    "title": "Feel It",
+    "artist": "Three 6 Mafia vs. Tiësto with Sean Kingston & Flo Rida",
+    "video": "RDUfuKlEhfI",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.02,
+    "gap": 20085.038718893316,
+    "year": "2010",
+    "lastUpdate": "2025-09-30T20:55:36.079Z",
+    "genre": "Hip-Hop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "klops_007",
+    "sourceUrl": "Three 6 Mafia vs. Tiësto with Sean Kingston & Flo Rida - Feel It",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5305,
+    "tracksCount": 1,
+    "search": "three6mafiavstiestowithseankingstonfloridafeelit",
+    "local": false
+  },
+  {
     "id": "three-days-grace-animal-i-have-become",
     "title": "Animal I Have Become",
     "artist": "Three Days Grace",
@@ -147712,7 +147963,7 @@
     "gap": 10524.358974358975,
     "year": "2001",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.600Z",
+    "lastUpdate": "2025-09-28T17:27:57.771Z",
     "genre": "Pop",
     "realBpm": 20,
     "volume": 0.5,
@@ -147740,7 +147991,7 @@
     "gap": 3130,
     "year": "2019",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.616Z",
+    "lastUpdate": "2025-09-28T17:30:07.221Z",
     "genre": "Pop",
     "realBpm": 29,
     "volume": 0.5,
@@ -147768,7 +148019,7 @@
     "gap": 10574.640657084188,
     "year": "1999",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.582Z",
+    "lastUpdate": "2025-09-27T10:15:07.817Z",
     "genre": "Pop",
     "realBpm": 15,
     "volume": 0.5,
@@ -147824,7 +148075,7 @@
     "gap": 5589.98041562398,
     "year": "1999",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.603Z",
+    "lastUpdate": "2025-09-28T17:28:27.713Z",
     "genre": "Pop",
     "realBpm": 34,
     "volume": 0.5,
@@ -147852,7 +148103,7 @@
     "gap": 260,
     "year": "2003",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.594Z",
+    "lastUpdate": "2025-09-27T10:16:43.434Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "Su-Metal",
@@ -147907,7 +148158,7 @@
     "gap": 4157.272727272727,
     "year": "2001",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.614Z",
+    "lastUpdate": "2025-09-28T17:29:39.729Z",
     "genre": "Pop",
     "realBpm": 30,
     "volume": 0.5,
@@ -147935,7 +148186,7 @@
     "gap": 15450,
     "year": "2000",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.591Z",
+    "lastUpdate": "2025-09-27T10:15:49.839Z",
     "genre": "Pop",
     "realBpm": 34,
     "volume": 0.5,
@@ -147963,7 +148214,7 @@
     "gap": 5695.294117647059,
     "year": "1999",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.589Z",
+    "lastUpdate": "2025-09-27T10:15:26.504Z",
     "genre": "Pop",
     "realBpm": 14,
     "volume": 0.5,
@@ -147991,7 +148242,7 @@
     "gap": 5862.4107054679525,
     "year": "2006",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.618Z",
+    "lastUpdate": "2025-09-28T17:30:36.681Z",
     "realBpm": 27,
     "volume": 0.5,
     "author": "Su-Metal",
@@ -148018,7 +148269,7 @@
     "gap": 51771.16798510935,
     "year": "2001",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.593Z",
+    "lastUpdate": "2025-09-27T10:16:20.998Z",
     "genre": "Pop",
     "realBpm": 8,
     "volume": 0.5,
@@ -148046,7 +148297,7 @@
     "gap": 6732.0470109198595,
     "year": "2009",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.612Z",
+    "lastUpdate": "2025-09-28T17:29:22.132Z",
     "genre": "Pop",
     "realBpm": 27,
     "volume": 0.5,
@@ -148074,7 +148325,7 @@
     "gap": 5666.486486486487,
     "year": "2000",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.597Z",
+    "lastUpdate": "2025-09-28T17:27:19.301Z",
     "genre": "Pop",
     "realBpm": 29,
     "volume": 0.5,
@@ -148130,7 +148381,7 @@
     "gap": 7870.309278350515,
     "year": "2005",
     "artistOrigin": "IE",
-    "lastUpdate": "2025-09-29T00:13:06.607Z",
+    "lastUpdate": "2025-09-28T17:28:48.855Z",
     "genre": "Pop",
     "realBpm": 30,
     "volume": 0.5,
@@ -150154,7 +150405,7 @@
     "gap": 24540,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2025-09-29T00:13:07.689Z",
+    "lastUpdate": "2025-09-28T20:54:12.541Z",
     "genre": "Dance & Electronic",
     "realBpm": 20,
     "volume": 0.5,
