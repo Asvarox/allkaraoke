@@ -11636,6 +11636,60 @@
     "local": false
   },
   {
+    "id": "atomic-kitten-eternal-flame",
+    "title": "Eternal Flame",
+    "artist": "Atomic Kitten",
+    "video": "jF-N_xJYYAc",
+    "language": [
+      "English"
+    ],
+    "bpm": 333.2,
+    "gap": 11589.603841536615,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-10-05T00:13:34.864Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Atomic Kitten - Eternal Flame",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5317,
+    "tracksCount": 1,
+    "search": "atomickitteneternalflame",
+    "local": false
+  },
+  {
+    "id": "atomic-kitten-the-last-goodbye",
+    "title": "The Last Goodbye",
+    "artist": "Atomic Kitten",
+    "video": "2cKUwE4GAi4",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 6766.024096385542,
+    "year": "2002",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-10-05T00:13:34.704Z",
+    "realBpm": 70,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Atomic Kitten - The Last Goodbye",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5315,
+    "tracksCount": 1,
+    "search": "atomickittenthelastgoodbye",
+    "local": false
+  },
+  {
     "id": "audioslave-be-yourself",
     "title": "Be Yourself",
     "artist": "Audioslave",
@@ -36262,6 +36316,33 @@
     "shortId": 4909,
     "tracksCount": 1,
     "search": "defleppardpoursomesugaronme",
+    "local": false
+  },
+  {
+    "id": "def-leppard-rock-of-ages",
+    "title": "Rock Of Ages",
+    "artist": "Def Leppard",
+    "video": "nhSdljm909Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.6,
+    "gap": 2705.0536955148455,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-10-05T00:13:34.861Z",
+    "genre": "Hard Rock",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5316,
+    "tracksCount": 1,
+    "search": "defleppardrockofages",
     "local": false
   },
   {
@@ -64022,6 +64103,116 @@
     "shortId": 2058,
     "tracksCount": 1,
     "search": "jamesbluntyourebeautiful",
+    "local": false
+  },
+  {
+    "id": "james-brown-and-the-famous-flames-i-got-you-i-feel-good",
+    "title": "I Got You (I Feel Good)",
+    "artist": "James Brown And The Famous Flames",
+    "video": "W-rn7i_ETYc",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.45,
+    "gap": -98.01872074882999,
+    "year": "1965",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-05T00:13:33.967Z",
+    "genre": "Soul",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "James Brown And The Famous Flames - I Got You (I Feel Good",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 5311,
+    "tracksCount": 1,
+    "search": "jamesbrownandthefamousflamesigotyouifeelgood",
+    "local": false
+  },
+  {
+    "id": "james-brown-get-up-i-feel-like-being-like-a-sex-machine",
+    "title": "Get Up (I Feel Like Being Like A) Sex Machine",
+    "artist": "James Brown",
+    "video": "Fuw5zrwfaiU",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.16,
+    "gap": 708.8340141106574,
+    "year": "1970",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-05T00:13:34.526Z",
+    "genre": "Soul",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Eggman",
+    "sourceUrl": "James Brown - Get Up (I Feel Like Being Like A) Sex Machine",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5312,
+    "tracksCount": 1,
+    "search": "jamesbrowngetupifeellikebeinglikeasexmachine",
+    "local": false
+  },
+  {
+    "id": "james-brown-its-a-mans-mans-mans-world",
+    "title": "It’s A Man’s Man’s Man’s World",
+    "artist": "James Brown",
+    "video": "H77fRz1rybs",
+    "language": [
+      "English"
+    ],
+    "bpm": 322.36,
+    "gap": 9852.83161682591,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-05T00:13:34.697Z",
+    "genre": "R&B",
+    "realBpm": 14,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "James Brown - It’s A Man’s Man’s Man’s World",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5313,
+    "tracksCount": 1,
+    "search": "jamesbrownitsamansmansmansworld",
+    "local": false
+  },
+  {
+    "id": "james-brown-living-in-america",
+    "title": "Living In America",
+    "artist": "James Brown",
+    "video": "c5BL4RNFr58",
+    "language": [
+      "English"
+    ],
+    "bpm": 227.6,
+    "gap": 1111.4235500878735,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-05T00:13:34.700Z",
+    "realBpm": 9,
+    "volume": 0.5,
+    "sourceUrl": "James Brown - Living In America",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5314,
+    "tracksCount": 1,
+    "search": "jamesbrownlivinginamerica",
     "local": false
   },
   {
