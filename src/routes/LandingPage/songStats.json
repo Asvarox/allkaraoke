@@ -47,6 +47,7 @@
     "Marilyn Manson",
     "Metallica",
     "Radiohead",
+    "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
     "Fall Out Boy",
@@ -134,6 +135,7 @@
     "AC/DC",
     "Alanis Morissette",
     "Amy Winehouse",
+    "Atomic Kitten",
     "Black Veil Brides",
     "Bullet For My Valentine",
     "Dire Straits",
@@ -147,9 +149,7 @@
     "Justin Timberlake",
     "Keane",
     "KISS",
-    "KoRn",
-    "Natasha Bedingfield",
-    "Ne-Yo"
+    "KoRn"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5316
+  "songs": 5333
 }
