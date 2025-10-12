@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:DK
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Alphabeat - Fantastic 6
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,6
 #MP3:Alphabeat - Fantastic 6.mp3
 #COVER:Alphabeat - Fantastic 6 [CO].jpg
 #BACKGROUND:Alphabeat - Fantastic 6 [BG].jpg

@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Atomic Kitten - Right Now
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #MP3:Atomic Kitten - Right Now.mp3
 #COVER:Atomic Kitten - Right Now [CO].jpg
 #BACKGROUND:Atomic Kitten - Right Now [BG].jpg
