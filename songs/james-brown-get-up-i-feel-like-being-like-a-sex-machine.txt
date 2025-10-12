@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:James Brown - Get Up (I Feel Like Being Like A) Sex Machine
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:1
 #MP3:James Brown - Get Up (I Feel Like Being Like A) Sex Machine.mp3
 F 22 4 17 One 
 F 29 4 17 two 

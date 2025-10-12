@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:52
 #ALLKARAOKE_SOURCEURL:Jax Jones feat. Raye - You Don’t Know Me
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,53
 #MP3:Jax Jones feat. Raye - You Don’t Know Me.mp3
 : 17 3 11 Ooh, 
 : 25 2 -1 na 

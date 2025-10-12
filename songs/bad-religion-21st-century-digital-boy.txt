@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:38
 #ALLKARAOKE_SOURCEURL:Bad Religion - 21st Century (Digital Boy)
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,8
 #MP3:Bad Religion - 21st Century (Digital Boy).mp3
 : 18 2 4 I 
 : 22 2 4 can’t 

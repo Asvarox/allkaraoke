@@ -13,7 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:David Ruffin - Put A Little Love In Your Heart
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,89
 #MP3:David Ruffin - Put A Little Love In Your Heart.mp3
 : 25 7 4 Think 
 : 33 7 7 of 
