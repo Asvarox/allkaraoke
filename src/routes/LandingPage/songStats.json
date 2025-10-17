@@ -1,7 +1,7 @@
 {
   "artists": [
-    "Linkin Park",
     "Lady Gaga",
+    "Linkin Park",
     "Britney Spears",
     "Ariana Grande",
     "Queen",
@@ -55,18 +55,18 @@
     "High School Musical",
     "Mariah Carey",
     "Panic! at the Disco",
+    "Rise Against",
     "Slipknot",
+    "Three Days Grace",
     "Volbeat",
     "Ava Max",
     "Dua Lipa",
     "Foo Fighters",
     "Marina and the Diamonds",
     "Red Hot Chili Peppers",
-    "Rise Against",
     "Rod Stewart",
     "Sabaton",
     "Thirty Seconds to Mars",
-    "Three Days Grace",
     "5 Seconds of Summer",
     "Arctic Monkeys",
     "Céline Dion",
@@ -108,6 +108,7 @@
     "Shinedown",
     "Sia",
     "Spice Girls",
+    "The Offspring",
     "Wham!",
     "ZZ Top",
     "3 Doors Down",
@@ -148,8 +149,7 @@
     "Heart",
     "Hollywood Undead",
     "Justin Bieber",
-    "Justin Timberlake",
-    "Keane"
+    "Justin Timberlake"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5347
+  "songs": 5363
 }

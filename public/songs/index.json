@@ -2064,10 +2064,10 @@
       "English"
     ],
     "bpm": 339.3,
-    "gap": 7203.2007073386385,
+    "gap": 7303.2007073386385,
     "year": "1974",
     "artistOrigin": "SE",
-    "lastUpdate": "2024-04-13T05:30:17.705Z",
+    "lastUpdate": "2025-10-16T05:36:19.416Z",
     "edition": "ESC 1974",
     "genre": "Pop",
     "realBpm": 148,
@@ -29578,6 +29578,33 @@
     "local": false
   },
   {
+    "id": "cher-lloyd-want-u-back",
+    "title": "Want U Back",
+    "artist": "Cher Lloyd",
+    "video": "LPgvNlrBfb0",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 2105.1020408163263,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2025-10-17T00:13:27.877Z",
+    "genre": "Pop",
+    "realBpm": 98,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5356,
+    "tracksCount": 1,
+    "search": "cherlloydwantuback",
+    "local": false
+  },
+  {
     "id": "cher-the-shoop-shoop-song-its-in-his-kiss",
     "title": "The Shoop Shoop Song (It's in his kiss)",
     "artist": "Cher",
@@ -42064,6 +42091,38 @@
     "local": false
   },
   {
+    "id": "dodger-ben-briggs-besso0-undertale-from-undertale",
+    "title": "Undertale (from Undertale)",
+    "artist": "Dodger, Ben Briggs & Besso0",
+    "video": "ipluRrCyxlY",
+    "language": [
+      "English"
+    ],
+    "bpm": 207.5,
+    "gap": 111807.95180722892,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.019Z",
+    "edition": "Undertale",
+    "genre": "Film Score",
+    "realBpm": 103.75,
+    "previewStart": 111,
+    "previewEnd": 150,
+    "volume": 1,
+    "author": "Oddbrother",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=123811",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27615",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5357,
+    "tracksCount": 1,
+    "search": "dodgerbenbriggsbesso0undertalefromundertale",
+    "local": false
+  },
+  {
     "id": "doe-maar-sinds-1-dag-of-2-32-jaar",
     "title": "Sinds 1 dag of 2 (32 jaar)",
     "artist": "Doe Maar",
@@ -50469,6 +50528,33 @@
     "local": false
   },
   {
+    "id": "finger-eleven-stay-in-shadow",
+    "title": "Stay In Shadow",
+    "artist": "Finger Eleven",
+    "video": "VLAFzxdAqoY",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 11431.486486486487,
+    "year": "2003",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-10-17T00:13:28.020Z",
+    "genre": "Alternative Rock",
+    "realBpm": 156,
+    "volume": 0.5,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5358,
+    "tracksCount": 1,
+    "search": "fingerelevenstayinshadow",
+    "local": false
+  },
+  {
     "id": "finnel-dorfkinder",
     "title": "Dorfkinder",
     "artist": "Finnel",
@@ -51840,6 +51926,32 @@
     "shortId": 1659,
     "tracksCount": 1,
     "search": "foreignerwaitingforagirllikeyou",
+    "local": false
+  },
+  {
+    "id": "fort-minor-feat-holly-brook-jonah-matranga-whered-you-go",
+    "title": "Where’d You Go",
+    "artist": "Fort Minor feat. Holly Brook & Jonah Matranga",
+    "video": "zQdglLeGQXM",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.06,
+    "gap": 72900.24993751562,
+    "year": "2005",
+    "lastUpdate": "2025-10-17T00:13:27.730Z",
+    "genre": "Hip-Hop",
+    "realBpm": 90,
+    "volume": 0.5,
+    "author": "macgyver2809, mancer",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5355,
+    "tracksCount": 1,
+    "search": "fortminorfeathollybrookjonahmatrangawheredyougo",
     "local": false
   },
   {
@@ -69310,6 +69422,32 @@
     "local": false
   },
   {
+    "id": "jordin-sparks-battlefield",
+    "title": "Battlefield",
+    "artist": "Jordin Sparks",
+    "video": "suPlYwJ3YvM",
+    "language": [
+      "English"
+    ],
+    "bpm": 217.51,
+    "gap": 5975.564801618317,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:27.725Z",
+    "realBpm": 145,
+    "volume": 0.5,
+    "author": "snake84",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5354,
+    "tracksCount": 1,
+    "search": "jordinsparksbattlefield",
+    "local": false
+  },
+  {
     "id": "jordin-sparks-feat-chris-brown-no-air",
     "title": "No Air",
     "artist": "Jordin Sparks feat. Chris Brown",
@@ -77856,6 +77994,58 @@
     "local": false
   },
   {
+    "id": "lady-gaga-dont-call-tonight",
+    "title": "Don't Call Tonight",
+    "artist": "Lady Gaga",
+    "video": "BeUOuvJEaBM",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.02,
+    "gap": 3135.097490250975,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:27.092Z",
+    "genre": "Pop",
+    "realBpm": 99,
+    "volume": 0.77,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5351,
+    "tracksCount": 1,
+    "search": "ladygagadontcalltonight",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-dope",
+    "title": "Dope",
+    "artist": "Lady Gaga",
+    "video": "1iSd_wTuA3U",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 16387.5,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:27.094Z",
+    "realBpm": 128,
+    "volume": 0.62,
+    "author": "LittleK.",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5352,
+    "tracksCount": 1,
+    "search": "ladygagadope",
+    "local": false
+  },
+  {
     "id": "lady-gaga-eh-eh-nothing-else-i-can-say",
     "title": "Eh, Eh (Nothing Else I Can Say)",
     "artist": "Lady Gaga",
@@ -78345,6 +78535,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-shadow-of-a-man",
+    "title": "Shadow Of A Man",
+    "artist": "Lady Gaga",
+    "video": "LJEED4n1dP4",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": -54.23728813559322,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:27.082Z",
+    "genre": "Pop",
+    "realBpm": 118,
+    "volume": 0.69,
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 5349,
+    "tracksCount": 1,
+    "search": "ladygagashadowofaman",
+    "local": false
+  },
+  {
     "id": "lady-gaga-speechless",
     "title": "Speechless",
     "artist": "Lady Gaga",
@@ -78481,6 +78697,32 @@
     "shortId": 2490,
     "tracksCount": 1,
     "search": "ladygagathequeen",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-vanish-into-you",
+    "title": "Vanish Into You",
+    "artist": "Lady Gaga",
+    "video": "tQHLIRCcfio",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": -34.821428571428555,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:27.088Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 0.71,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 5350,
+    "tracksCount": 1,
+    "search": "ladygagavanishintoyou",
     "local": false
   },
   {
@@ -115828,6 +116070,33 @@
     "local": false
   },
   {
+    "id": "rise-against-swing-life-away",
+    "title": "Swing Life Away",
+    "artist": "Rise Against",
+    "video": "BblV6AQsd2s",
+    "language": [
+      "English"
+    ],
+    "bpm": 350,
+    "gap": 27374.285714285714,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.167Z",
+    "genre": "Punk",
+    "realBpm": 185,
+    "volume": 0.5,
+    "author": "_cesc_",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5360,
+    "tracksCount": 1,
+    "search": "riseagainstswinglifeaway",
+    "local": false
+  },
+  {
     "id": "riva-feat-dannii-minogue-who-do-you-love-now",
     "title": "Who Do You Love Now?",
     "artist": "Riva feat. Dannii Minogue",
@@ -127186,6 +127455,31 @@
     "local": false
   },
   {
+    "id": "starbomb-minecraft-is-for-everyone",
+    "title": "Minecraft is for EVERYONE!",
+    "artist": "Starbomb",
+    "video": "jVIxe3YLNs8",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7000,
+    "year": "2015",
+    "lastUpdate": "2025-10-17T00:13:27.095Z",
+    "realBpm": 170,
+    "volume": 0.5,
+    "author": "Lenschow, amro98",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5353,
+    "tracksCount": 1,
+    "search": "starbombminecraftisforeveryone",
+    "local": false
+  },
+  {
     "id": "starish-maji-love-1000",
     "title": "Maji Love 1000%",
     "artist": "STARISH",
@@ -134196,6 +134490,32 @@
     "local": false
   },
   {
+    "id": "the-ataris-the-boys-of-summer",
+    "title": "The Boys Of Summer",
+    "artist": "The Ataris",
+    "video": "Qt6Lkgs0kiU",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.03,
+    "gap": 25090.519737527342,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.022Z",
+    "realBpm": 191,
+    "volume": 0.5,
+    "author": "_cesc_",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5359,
+    "tracksCount": 1,
+    "search": "theataristheboysofsummer",
+    "local": false
+  },
+  {
     "id": "the-b-52s-roam",
     "title": "Roam",
     "artist": "The B-52’s",
@@ -138224,6 +138544,58 @@
     "local": false
   },
   {
+    "id": "the-offspring-all-i-want",
+    "title": "All I Want",
+    "artist": "The Offspring",
+    "video": "us8OhI-OTHg",
+    "language": [
+      "English"
+    ],
+    "bpm": 362,
+    "gap": -30.11049723756912,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.169Z",
+    "realBpm": 173,
+    "volume": 0.5,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5362,
+    "tracksCount": 1,
+    "search": "theoffspringalliwant",
+    "local": false
+  },
+  {
+    "id": "the-offspring-change-the-world",
+    "title": "Change The World",
+    "artist": "The Offspring",
+    "video": "CRJ1CG-uKIs",
+    "language": [
+      "English"
+    ],
+    "bpm": 333.2,
+    "gap": 62538.60384153661,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.168Z",
+    "realBpm": 166,
+    "volume": 0.5,
+    "author": "FaKK",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5361,
+    "tracksCount": 1,
+    "search": "theoffspringchangetheworld",
+    "local": false
+  },
+  {
     "id": "the-offspring-pretty-fly-for-a-white-guy",
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
@@ -138278,6 +138650,32 @@
     "shortId": 4373,
     "tracksCount": 1,
     "search": "theoffspringthekidsarentalright",
+    "local": false
+  },
+  {
+    "id": "the-offspring-way-down-the-line",
+    "title": "Way Down The Line",
+    "artist": "The Offspring",
+    "video": "nig8KZA4kG4",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": -4.375,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-10-17T00:13:28.170Z",
+    "realBpm": 169,
+    "volume": 0.5,
+    "author": "FaKK",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 5363,
+    "tracksCount": 1,
+    "search": "theoffspringwaydowntheline",
     "local": false
   },
   {
@@ -141737,6 +142135,32 @@
     "shortId": 4803,
     "tracksCount": 1,
     "search": "threedaysgracebreak",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-gone-forever",
+    "title": "Gone Forever",
+    "artist": "Three Days Grace",
+    "video": "GbfOBGhRbe0",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.1,
+    "gap": 5590.708106376162,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2025-10-17T00:13:28.171Z",
+    "realBpm": 156,
+    "volume": 0.5,
+    "author": "Wüstenpfeil",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5364,
+    "tracksCount": 1,
+    "search": "threedaysgracegoneforever",
     "local": false
   },
   {
