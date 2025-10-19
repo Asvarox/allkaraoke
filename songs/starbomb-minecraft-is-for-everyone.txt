@@ -1,0 +1,527 @@
+#ARTIST:Starbomb
+#TITLE:Minecraft is for EVERYONE!
+#CREATOR:Lenschow, amro98
+#BPM:300
+#YEAR:2015
+#VIDEO:v=jVIxe3YLNs8
+#LANGUAGE:English
+#GAP:7000
+#ALLKARAOKE_ID:starbomb-minecraft-is-for-everyone
+#ALLKARAOKE_SID:5353
+#ALLKARAOKE_LASTUPDATE:2025-10-16T14:02:04.041Z
+#ALLKARAOKE_REALBPM:170
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Starbomb - Minecraft is for EVERYONE!.mp3
+F 20 1 1 Stroll
+F 22 1 4 ~
+F 24 2 -4 ing,
+- 26
+F 42 2 5 Down 
+F 46 2 5 the 
+F 50 4 -4 street,
+- 54
+F 62 2 5 The 
+F 66 4 7 square 
+F 74 6 5 street
+- 80
+F 86 2 5 A 
+F 90 4 7 fair 
+F 98 4 5 sheet
+- 102
+F 110 2 5 Of 
+F 114 4 6 square 
+F 122 2 6 sleep 
+F 126 2 8 be
+F 130 2 8 low 
+F 134 2 10 my 
+F 138 4 10 feet
+- 142
+F 146 2 12 Creep
+F 150 2 12 er’s 
+F 154 2 12 what 
+F 158 2 12 they 
+F 162 6 12 call 
+F 170 6 12 me,
+- 176
+F 182 2 0 But 
+F 188 1 0 e
+F 190 2 0 ven 
+F 194 4 12 I 
+F 202 4 12 see,
+- 206
+F 210 2 12 That 
+F 214 2 12 all 
+F 218 2 12 of 
+F 222 2 12 this 
+F 226 6 12 beau
+F 234 6 12 ty
+- 240
+F 244 2 12 Can 
+F 248 2 12 fill 
+F 252 1 12 me 
+F 254 2 12 with 
+F 258 2 12 such 
+F 264 2 12 a 
+F 268 8 12 glee
+- 276
+F 278 2 12 Look 
+F 282 2 12 at 
+F 286 2 12 this 
+F 290 6 12 tall 
+F 298 6 12 tree,
+- 304
+F 310 2 12 It’s 
+F 314 2 12 na
+F 318 2 12 ture’s 
+F 322 2 12 ma
+F 326 2 12 jes
+F 332 6 12 ty
+- 338
+F 348 2 12 Would 
+F 352 1 12 it 
+F 354 2 12 be 
+F 358 2 12 so 
+F 362 2 12 bad 
+F 366 2 12 if 
+F 370 2 12 some
+F 374 2 12 one
+- 376
+F 378 2 12 BLEW 
+F 382 2 12 THE 
+F 386 4 12 F*** 
+F 392 2 12 OUT 
+F 396 2 12 OF 
+F 400 4 12 IT?
+- 404
+F 406 2 12 This 
+F 410 4 12 sweet 
+F 418 4 12 pig 
+F 426 4 12 here,
+- 430
+F 438 2 12 A
+F 442 4 12 lone 
+F 450 2 12 walk
+F 454 2 12 ing 
+F 458 2 12 a
+F 462 6 12 round,
+- 468
+F 470 2 12 He 
+F 474 2 12 has 
+F 478 2 12 the 
+F 482 2 12 per
+F 486 2 12 fect 
+F 490 2 12 face 
+F 494 2 12 for
+- 496
+F 498 1 12 GET
+F 500 2 12 TING 
+F 504 2 12 RIPPED 
+F 508 1 12 FROM 
+F 510 1 12 THE 
+F 512 2 12 IN
+F 518 1 12 SIDE
+- 519
+F 520 2 12 F***
+F 524 2 12 ING 
+F 528 4 12 OUT
+- 532
+: 536 2 1 Hey 
+: 540 2 0 Mis
+: 544 2 -2 ter 
+: 548 2 -2 Creep
+: 553 1 -4 er
+- 554
+F 555 7 0 WHAT!?
+- 562
+: 566 4 -4 There’s 
+: 572 2 0 no 
+: 576 2 3 need 
+: 580 2 3 for 
+: 584 2 3 that 
+: 588 2 0 kind 
+: 592 2 -2 of 
+: 596 6 -2 lan
+: 604 6 -4 guage
+- 610
+F 612 2 0 F*** 
+F 618 6 0 YOU!
+- 624
+: 630 2 0 The 
+: 636 2 0 on
+: 640 2 -2 ly 
+: 644 2 -2 "F" 
+: 648 2 -4 word 
+* 652 1 -2 is 
+: 655 5 -4 "Fun"
+- 660
+: 662 2 0 Life’s 
+: 668 2 0 e
+: 672 2 -2 ven 
+: 676 4 -2 sweet
+: 682 8 -4 er
+- 690
+: 696 1 -4 With
+: 700 2 0 out 
+: 703 2 3 ex
+: 708 2 3 plo
+: 712 2 5 ~
+: 716 6 3 si
+: 724 10 -2 ons
+- 734
+* 748 2 1 Mine
+* 751 4 3 ~
+: 756 6 3 craft 
+: 764 2 3 is 
+: 768 4 5 for 
+: 776 2 8 eve
+: 780 2 7 ry
+: 784 6 8 one
+- 790
+F 792 2 0 Hur
+F 798 6 8 ray
+- 804
+: 812 2 -9 Let’s 
+: 816 2 -9 all 
+: 820 2 -7 be 
+: 824 2 -4 nice 
+: 828 2 -2 to
+: 832 8 -4 day
+- 840
+: 844 2 -9 Eve
+: 848 2 -9 ry
+: 852 4 -7 one 
+: 858 1 -4 is 
+: 860 2 -2 at 
+: 864 6 -4 play
+- 870
+: 872 1 -9 And 
+: 874 2 -9 there’s 
+: 880 2 0 no
+: 884 2 1 ~ 
+: 888 4 0 need 
+: 896 2 0 to 
+: 900 2 -2 blow 
+: 904 2 -4 them 
+: 908 2 -2 a
+: 912 6 -4 way
+- 918
+F 922 2 0 Oh, 
+F 926 6 0 hi
+- 932
+: 940 2 -9 Let’s 
+: 945 2 -9 go 
+: 948 2 -7 help 
+: 952 2 -4 those 
+: 956 3 -2 two 
+: 960 6 -4 guys
+- 966
+: 972 2 -9 Build 
+: 976 2 -9 a 
+: 980 2 -6 house 
+: 985 2 -4 and...
+- 987
+F 994 2 0 Nope,
+- 996
+F 1001 2 0 No,
+- 1003
+F 1004 1 0 See, 
+F 1006 2 0 this 
+F 1010 2 0 is 
+F 1014 1 0 e
+F 1016 2 0 xact
+F 1020 1 0 ly 
+F 1022 1 0 what 
+F 1024 1 0 I’m 
+F 1026 3 0 talk
+F 1030 1 0 ing 
+F 1032 1 0 a
+F 1034 4 0 bout
+- 1038
+: 1044 2 3 If 
+: 1048 2 3 you’ve 
+: 1052 2 6 got
+: 1056 2 3 ta 
+: 1060 4 0 curse,
+- 1064
+: 1068 2 -2 Just 
+: 1072 4 -4 say 
+: 1078 2 -6 the 
+: 1084 4 -2 word 
+: 1091 6 -4 fudge,
+- 1097
+: 1100 2 -9 That 
+: 1104 2 -9 way 
+: 1108 2 -7 no 
+: 1112 3 -4 one 
+: 1116 2 -2 will 
+: 1120 6 -4 judge
+- 1126
+F 1138 8 0 Stop
+- 1146
+: 1160 2 3 No 
+: 1164 2 3 more 
+: 1168 2 3 ex
+: 1172 4 5 plo
+: 1178 1 3 ding 
+: 1180 2 3 or 
+: 1184 3 0 cur
+: 1189 5 -4 sing,
+- 1194
+: 1196 2 0 No 
+: 1200 4 0 one 
+: 1206 2 0 else 
+: 1210 1 0 has 
+: 1212 2 0 to 
+: 1216 8 1 die
+: 1226 4 3 ~
+* 1232 2 6 ~
+* 1236 16 8 ~
+- 1252
+F 1254 2 0 O
+F 1258 8 0 kay?
+- 1266
+F 1282 2 0 F*** 
+F 1286 2 0 it, 
+F 1290 2 0 I’ll 
+F 1298 2 0 try
+- 1300
+F 1312 1 0 O
+F 1314 2 0 kay, 
+F 1318 1 0 we’re 
+F 1320 2 0 off 
+F 1324 1 0 to 
+F 1326 1 0 a 
+F 1328 1 0 bad 
+F 1330 4 0 start, 
+F 1338 2 0 but 
+F 1344 2 0 that’s 
+F 1348 4 0 fine
+- 1352
+F 1366 2 0 I’m 
+F 1370 2 0 on 
+F 1374 2 0 a 
+F 1378 4 0 nice 
+F 1388 4 0 kick,
+- 1392
+F 1398 2 0 I’ll 
+F 1402 2 0 make 
+F 1406 2 0 some 
+F 1410 6 0 friends 
+F 1418 4 0 quick
+- 1422
+F 1432 1 0 I 
+F 1434 2 0 don’t 
+F 1438 2 0 have 
+F 1442 2 0 ma
+F 1446 2 0 ny 
+F 1450 2 0 be
+F 1454 2 0 cause
+- 1456
+F 1460 1 0 Eve
+F 1462 2 0 ry
+F 1466 2 0 one’s 
+F 1472 1 0 a 
+F 1474 6 0 huge 
+F 1482 8 0 diii-
+- 1490
+F 1494 2 0 I 
+F 1498 2 0 have 
+F 1504 2 0 to 
+F 1508 4 0 ad
+F 1514 4 0 mit,
+- 1518
+F 1526 2 0 I 
+F 1530 2 0 just 
+F 1534 2 0 might 
+F 1538 4 0 lose 
+F 1548 4 0 it,
+- 1552
+F 1556 2 0 Ha
+F 1560 2 0 ving 
+F 1564 2 0 to 
+F 1568 2 0 give 
+F 1572 2 0 up 
+F 1576 2 0 my 
+F 1580 2 0 favo
+F 1584 2 0 rite 
+F 1588 1 0 things
+- 1589
+F 1590 2 0 Is 
+F 1594 2 0 fun
+F 1598 2 0 ky 
+F 1604 2 0 bull
+F 1610 4 0 shrimp
+- 1614
+F 1628 2 0 Man, 
+F 1634 2 0 it’s 
+F 1638 2 0 hard 
+F 1642 2 0 not 
+F 1646 2 0 to 
+F 1650 1 0 be 
+F 1652 6 0 mean
+- 1658
+F 1668 1 0 Hey 
+F 1670 6 0 guys, 
+F 1682 1 0 do 
+F 1684 1 0 you 
+F 1686 2 0 need 
+F 1690 2 0 help 
+F 1694 1 0 wri
+F 1696 2 0 ting 
+F 1700 1 0 ly
+F 1702 4 0 rics?
+- 1706
+F 1710 10 0 No,
+- 1720
+F 1728 1 0 You 
+F 1730 1 0 don’t 
+F 1732 1 0 know 
+F 1734 1 0 any
+F 1736 1 0 thing 
+F 1738 2 0 about
+- 1740
+F 1744 3 0 Mine
+F 1748 6 0 craft 
+F 1756 3 0 mu
+F 1760 6 0 sic
+- 1766
+F 1768 4 0 But 
+F 1776 2 0 but 
+F 1780 1 0 I’m 
+F 1782 6 0 Notch
+- 1788
+F 1792 1 0 More 
+F 1794 2 0 like 
+F 1800 4 0 NOTCH-
+F 1806 4 0 your 
+F 1812 12 0 song
+- 1824
+F 1826 2 0 Oh 
+F 1832 14 0 shhh
+F 1848 4 0 snap 
+F 1856 4 0 peas 
+F 1862 4 0 I 
+F 1868 4 0 went 
+F 1874 6 0 there
+- 1880
+: 1884 2 9 Tee 
+: 1888 2 9 Hee
+: 1891 1 8 ~
+- 1892
+: 1900 2 -9 We’re 
+: 1904 2 -9 so 
+: 1908 4 -7 hap
+: 1913 2 -4 py 
+: 1916 2 -2 and 
+: 1920 6 -4 free
+- 1926
+: 1928 2 -9 Let’s 
+: 1934 2 -9 clear 
+: 1938 2 -7 a
+: 1942 2 -4 way 
+: 1946 2 -2 the 
+: 1950 2 -2 de
+: 1954 4 -4 bris
+- 1958
+: 1960 4 -9 From 
+: 1965 3 -9 all 
+: 1970 2 -7 the 
+: 1974 2 0 ru
+: 1978 2 1 ined 
+: 1982 2 0 lives 
+: 1986 2 0 of 
+: 1990 2 -2 your 
+: 1994 2 -4 kil
+: 1997 1 -2 ling 
+: 2002 6 -4 spree
+- 2008
+F 2012 2 10 It’s 
+F 2016 4 10 fun
+- 2020
+: 2026 2 -9 To 
+: 2030 2 -9 be 
+: 2033 3 -6 nice 
+: 2040 1 -4 to 
+: 2043 7 -2 some
+: 2052 4 -4 one,
+- 2056
+* 2058 2 -7 They’ll 
+: 2062 2 -9 real
+: 2066 2 -9 ly 
+: 2070 2 -7 love 
+: 2074 2 -4 you 
+: 2078 1 -2 a 
+: 2080 4 -4 ton
+- 2084
+F 2086 1 0 You 
+F 2088 2 0 know 
+F 2092 2 0 what
+- 2094
+F 2096 1 0 Why 
+F 2098 1 0 don’t 
+F 2100 2 0 you 
+F 2104 2 0 kneel 
+F 2108 2 0 down
+- 2110
+F 2112 1 0 And 
+F 2114 4 0 kiss 
+F 2120 2 0 my 
+F 2124 2 0 cree
+F 2128 1 0 py...
+- 2129
+* 2132 2 8 BUNS
+- 2134
+: 2140 2 3 You’ll 
+: 2144 2 3 feel 
+: 2148 2 5 so 
+: 2152 2 3 much 
+: 2157 2 0 love 
+* 2160 1 -4 and 
+* 2163 2 -9 ma
+: 2168 2 -7 gic 
+: 2173 1 -4 and 
+: 2175 5 -2 rap
+: 2183 5 -4 ture,
+- 2188
+: 2197 2 -7 Hearts 
+: 2201 2 -4 will 
+: 2204 2 -7 be 
+: 2209 2 -2 cap
+: 2213 3 -4 tured
+- 2216
+F 2218 2 0 Mon
+F 2222 2 0 key 
+F 2226 2 0 Fight
+F 2230 2 0 ing 
+F 2234 4 0 Glass 
+F 2240 2 0 Bowl
+- 2242
+F 2244 1 0 Mot
+F 2246 2 0 her 
+F 2250 4 0 Scrat
+F 2256 2 0 cher
+- 2258
+: 2260 2 3 We 
+: 2264 2 3 just 
+: 2268 2 5 learned 
+: 2272 2 3 a 
+: 2276 2 0 les
+: 2281 2 -4 son,
+- 2283
+: 2292 2 0 Cree
+: 2296 2 0 pers 
+: 2300 3 0 can 
+: 2304 4 1 make 
+: 2312 4 3 a
+: 2320 2 6 mends
+: 2324 16 8 ~
+- 2340
+* 2349 1 -4 Guess
+* 2351 1 -2 ~ 
+: 2356 4 -9 what
+- 2360
+F 2370 2 0 You’re 
+F 2374 2 0 my 
+F 2378 2 0 new 
+F 2386 6 0 Frie...
+E
