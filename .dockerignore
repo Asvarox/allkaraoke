@@ -1,0 +1,69 @@
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+build/
+dist/
+
+# Test and development files
+coverage/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+__snapshots__/
+.eslintcache
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Development tools
+.storybook/
+storybook-static/
+
+# Temporary files
+.tmp/
+.temp/
+
+# Documentation
+docs/
+README.md
+*.md
+
+# CI/CD
+.github/
+
+# Other
+stats.html
+test-results.json
+.wrangler/
