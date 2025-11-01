@@ -57686,6 +57686,33 @@
     "local": false
   },
   {
+    "id": "gwen-stefani-let-me-reintroduce-myself",
+    "title": "Let Me Reintroduce Myself",
+    "artist": "Gwen Stefani",
+    "video": "vZvkyfwD8mI",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.04,
+    "gap": 34547.20962678758,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-11-01T00:14:49.866Z",
+    "realBpm": 11,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Gwen Stefani - Let Me Reintroduce Myself",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5366,
+    "tracksCount": 1,
+    "search": "gwenstefaniletmereintroducemyself",
+    "local": false
+  },
+  {
     "id": "gwen-stefani-what-you-waiting-for",
     "title": "What You Waiting For?",
     "artist": "Gwen Stefani",
@@ -95544,6 +95571,32 @@
     "shortId": 3034,
     "tracksCount": 1,
     "search": "mobchoir99",
+    "local": false
+  },
+  {
+    "id": "moby-feat-gwen-stefani-south-side",
+    "title": "South Side",
+    "artist": "Moby feat. Gwen Stefani",
+    "video": "GXKg0sNTKXE",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.56,
+    "gap": 27136.294008647314,
+    "year": "2000",
+    "lastUpdate": "2025-11-01T00:14:49.322Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "kaim21",
+    "sourceUrl": "Moby feat. Gwen Stefani - South Side",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5365,
+    "tracksCount": 1,
+    "search": "mobyfeatgwenstefanisouthside",
     "local": false
   },
   {
