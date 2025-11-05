@@ -91,6 +91,8 @@ export default function SongsTable({
           const isSelected = selectedSongs.includes(row.original.shortId);
           return (
             <Checkbox
+              data-test={'toggle-selection'}
+              data-song={row.original.id}
               size="small"
               onClick={() =>
                 onSelect?.(
