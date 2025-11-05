@@ -57575,6 +57575,33 @@
     "local": false
   },
   {
+    "id": "gwen-stefani-crash",
+    "title": "Crash",
+    "artist": "Gwen Stefani",
+    "video": "xPtJj0EIQdY",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.42,
+    "gap": 4039.7789398621344,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-11-05T00:13:36.197Z",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Gwen Stefani - Crash",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5369,
+    "tracksCount": 1,
+    "search": "gwenstefanicrash",
+    "local": false
+  },
+  {
     "id": "gwen-stefani-early-winter",
     "title": "Early Winter",
     "artist": "Gwen Stefani",
@@ -57658,6 +57685,32 @@
     "local": false
   },
   {
+    "id": "gwen-stefani-feat-johnny-vulture-bubble-pop-electric",
+    "title": "Bubble Pop Electric",
+    "artist": "Gwen Stefani feat. Johnny Vulture",
+    "video": "xIF0Me8j0dg",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 18694.845360824744,
+    "year": "2004",
+    "lastUpdate": "2025-11-05T00:13:35.370Z",
+    "realBpm": 10,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Gwen Stefani feat. Johnny Vulture - Bubble Pop Electric",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5367,
+    "tracksCount": 1,
+    "search": "gwenstefanifeatjohnnyvulturebubblepopelectric",
+    "local": false
+  },
+  {
     "id": "gwen-stefani-hollaback-girl",
     "title": "Hollaback Girl",
     "artist": "Gwen Stefani",
@@ -57710,6 +57763,34 @@
     "shortId": 5366,
     "tracksCount": 1,
     "search": "gwenstefaniletmereintroducemyself",
+    "local": false
+  },
+  {
+    "id": "gwen-stefani-make-me-like-you",
+    "title": "Make Me Like You",
+    "artist": "Gwen Stefani",
+    "video": "0uljUDtv1Kw",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 613.0508474576271,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2025-11-05T00:13:36.194Z",
+    "genre": "Pop",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Gwen Stefani - Make Me Like You",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5368,
+    "tracksCount": 1,
+    "search": "gwenstefanimakemelikeyou",
     "local": false
   },
   {
