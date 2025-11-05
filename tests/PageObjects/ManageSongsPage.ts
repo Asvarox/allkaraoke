@@ -14,4 +14,12 @@ export class ManageSongsPagePO {
   public async goToSelectSongLanguage() {
     await this.page.getByTestId('exclude-languages').click();
   }
+
+  public get manageSetlistsButton() {
+    return this.page.getByTestId('edit-setlists');
+  }
+
+  public async goToManageSetlists() {
+    await this.manageSetlistsButton.click();
+  }
 }
