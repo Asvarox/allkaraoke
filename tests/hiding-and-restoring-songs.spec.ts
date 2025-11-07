@@ -12,7 +12,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 const song = {
   ID: 'e2e-christmas-english-1995',
   language: 'English',
-};
+} as const;
 
 test('Hiding and restoring songs works', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -27,7 +27,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(song.language, 'selected');
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 

@@ -28,7 +28,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
   });
 
   await test.step('Play the song', async () => {
@@ -108,7 +108,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('Ensure all languages are selected', async () => {
     await pages.computersMicConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -213,7 +213,7 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected('Spanish');
+    await pages.songLanguagesPage.ensureLanguageStateToBe('Spanish', 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
