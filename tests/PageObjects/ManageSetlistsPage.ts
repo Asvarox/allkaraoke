@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, Page, expect } from '@playwright/test';
+import { Checkboxes, checkboxesStateType } from '../components/checkboxes';
 import { Dialog } from '../components/dialog';
 import { SongsTable } from '../components/songs-table';
 
@@ -68,7 +69,6 @@ export class ManageSetlistsPagePO {
     const editModeAttribute = await setlistElement
       .getByTestId(/^make-setlist-(not-)?editable$/)
       .getAttribute('data-test');
-
     return editModeAttribute === this.makeNotEditableSelector;
   }
 
@@ -134,46 +134,40 @@ export class ManageSetlistsPagePO {
     await expect(this.getCopySetlistLinkButton(setlistName)).toBeVisible();
   }
 
-  public getSongCheckbox(songID: string) {
+  public getSongToggle(songID: string) {
     return this.page.locator(`[data-song="${songID}"][data-test="toggle-selection"]`);
   }
 
-  public async clickToSelectSongCheckbox(songID: string) {
-    await this.getSongCheckbox(songID).click();
+  private getSongCheckboxComponent(songID: string) {
+    const songCheckbox = this.getSongToggle(songID).locator('svg');
+    return new Checkboxes(this.page, this.context, this.browser, songCheckbox);
+  }
+
+  public async isSongSelected(songID: string) {
+    return await this.getSongCheckboxComponent(songID).isCheckboxSelected();
   }
 
   public async addSongToSetlist(songID: string) {
     await this.songsTable.searchSongs(songID);
-    if (!(await this.isSongCheckboxSelected(songID))) {
-      await this.clickToSelectSongCheckbox(songID);
+    if (!(await this.isSongSelected(songID))) {
+      await this.getSongToggle(songID).click();
     }
   }
 
   public async removeSongFromSetlist(songID: string) {
     await this.songsTable.searchSongs(songID);
-    if (await this.isSongCheckboxSelected(songID)) {
-      await this.getSongCheckbox(songID).click();
+    if (await this.isSongSelected(songID)) {
+      await this.getSongToggle(songID).click();
     }
   }
 
-  selectedCheckboxIDSelector = 'CheckBoxIcon';
-  unselectedCheckboxIDSelector = 'CheckBoxOutlineBlankIcon';
-
-  public async expectSongCheckboxStateToBe(songID: string, expectedState: 'selected' | 'unselected') {
-    const stateToIdMap = {
-      selected: this.selectedCheckboxIDSelector,
-      unselected: this.unselectedCheckboxIDSelector,
-    } as const;
-
+  public async ensureSongStateToBe(songID: string, state: checkboxesStateType) {
     await this.songsTable.searchSongs(songID);
-    await expect(this.getSongCheckbox(songID).locator('svg')).toHaveAttribute(
-      'data-testid',
-      stateToIdMap[expectedState],
-    );
+    await this.getSongCheckboxComponent(songID).ensureCheckboxStateToBe(state);
   }
 
-  public async isSongCheckboxSelected(songID: string) {
-    const songCheckboxAttribute = await this.getSongCheckbox(songID).locator('svg').getAttribute('data-testid');
-    return songCheckboxAttribute === this.selectedCheckboxIDSelector;
+  public async expectSongStateToBe(songID: string, expectedState: checkboxesStateType) {
+    await this.songsTable.searchSongs(songID);
+    await this.getSongCheckboxComponent(songID).expectCheckboxStateToBe(expectedState);
   }
 }
