@@ -127,6 +127,18 @@ export class ManageSetlistsPagePO {
     await this.getCopySetlistLinkButton(setlistName).click();
   }
 
+  public async getSetlistURL() {
+    await this.songsTable.searchInput.clear();
+    await this.songsTable.searchInput.press('Meta+V');
+    return (await this.songsTable.searchInput.getAttribute('value'))!;
+  }
+
+  public async copyAndOpenLinkToSetlist(setlistName: string) {
+    await this.clickToCopyLinkToSetlist(setlistName);
+    const setlistURL = await this.getSetlistURL();
+    await this.page.goto(setlistURL);
+  }
+
   public async expectDefaultSetlistButtonsToBeVisible(setlistName: string) {
     await expect(this.getEditSetlistButton(setlistName)).toBeVisible();
     await expect(this.getNotEditableSetlistButton(setlistName)).toBeVisible();
