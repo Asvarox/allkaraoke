@@ -149,13 +149,14 @@ export class ManageSetlistsPagePO {
     await expect(this.getCopySetlistLinkButton(setlistName)).toBeVisible();
   }
 
-  public getSongToggle(songID: string) {
+  public getSongElement(songID: string) {
+    const songSelector = this.songsTable.getSongIDSelector(songID);
     this.songsTable.searchSongs(songID);
-    return this.page.locator(`[data-song="${songID}"][data-test="toggle-selection"]`);
+    return this.page.locator(`${songSelector}[data-test="toggle-selection"]`);
   }
 
   private getSongCheckboxComponent(songID: string) {
-    const songCheckbox = this.getSongToggle(songID).locator('svg');
+    const songCheckbox = this.getSongElement(songID).locator('svg');
     return new Checkboxes(this.page, this.context, this.browser, songCheckbox);
   }
 
@@ -166,14 +167,14 @@ export class ManageSetlistsPagePO {
   public async addSongToSetlist(songID: string) {
     await this.songsTable.searchSongs(songID);
     if (!(await this.isSongSelected(songID))) {
-      await this.getSongToggle(songID).click();
+      await this.getSongElement(songID).click();
     }
   }
 
   public async removeSongFromSetlist(songID: string) {
     await this.songsTable.searchSongs(songID);
     if (await this.isSongSelected(songID)) {
-      await this.getSongToggle(songID).click();
+      await this.getSongElement(songID).click();
     }
   }
 

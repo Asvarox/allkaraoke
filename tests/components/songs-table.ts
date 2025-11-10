@@ -18,8 +18,8 @@ export class SongsTable {
     private browser: Browser,
   ) {}
 
-  public getSongElement(songID: string) {
-    return this.page.locator(`[data-song="${songID}"]`).first();
+  public getSongIDSelector(songID: string) {
+    return `[data-song="${songID}"]`;
   }
 
   public get searchInput() {

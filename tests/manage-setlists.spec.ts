@@ -100,7 +100,7 @@ test.describe('New user`s setlist', async () => {
       await pages.manageSetlists.expectSongStateToBe(songs.num1.id, 'selected');
       await pages.manageSetlists.expectSongStateToBe(songs.num2.id, 'selected');
       await pages.manageSetlists.expectSongStateToBe(songs.num3.id, 'selected');
-      await expect(pages.manageSetlists.getSongToggle(songs.num4.id)).not.toBeVisible();
+      await expect(pages.manageSetlists.getSongElement(songs.num4.id)).not.toBeVisible();
 
       await pages.manageSetlists.removeSongFromSetlist(songs.num3.id);
       await pages.manageSetlists.expectSongStateToBe(songs.num3.id, 'unselected');
@@ -133,9 +133,9 @@ test.describe('New user`s setlist', async () => {
       await pages.songListPage.goBackToMainMenu();
       await pages.mainMenuPage.goToManageSongs();
       await pages.manageSongsPage.goToEditSongs();
-      await expect(pages.editSongsPage.songsTable.getSongElement(songs.num1.id)).toBeVisible();
-      await expect(pages.editSongsPage.songsTable.getSongElement(songs.num2.id)).toBeVisible();
-      await expect(pages.editSongsPage.songsTable.getSongElement(songs.num3.id)).not.toBeVisible();
+      await expect(pages.editSongsPage.getSongElement(songs.num1.id)).toBeVisible();
+      await expect(pages.editSongsPage.getSongElement(songs.num2.id)).toBeVisible();
+      await expect(pages.editSongsPage.getSongElement(songs.num3.id)).not.toBeVisible();
     });
 
     await test.step('When setlist edit mode is off, user has no access to Manage-Setlist and Edit-Songs Page', async () => {

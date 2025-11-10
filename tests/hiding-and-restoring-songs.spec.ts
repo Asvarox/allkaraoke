@@ -38,6 +38,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
 
   await test.step('The song, after hiding, should not be visible in song list', async () => {
     await pages.editSongsPage.hideSong(song.ID);
+    await pages.editSongsPage.expectSongToBeHidden(song.ID);
     await pages.editSongsPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await expect(await pages.songListPage.getSongElement(song.ID)).not.toBeVisible();
@@ -51,6 +52,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
 
   await test.step('After restoring, the song should be visible again in song list', async () => {
     await pages.editSongsPage.restoreSong(song.ID);
+    await pages.editSongsPage.expectSongToBeVisible(song.ID);
     await pages.editSongsPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await expect(await pages.songListPage.getSongElement(song.ID)).toBeVisible();
