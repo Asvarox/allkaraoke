@@ -14,8 +14,8 @@ runs:
   steps:
     # https://github.com/actions/runner-images/issues/10977#issuecomment-2810713336
     - run: |
-        echo "set man-db/auto-update false" | debconf-communicate
-        dpkg-reconfigure man-db
+        echo "set man-db/auto-update false" | sudo debconf-communicate
+        sudo dpkg-reconfigure man-db
       shell: bash
       name: 'Disable installing package docs'
 
