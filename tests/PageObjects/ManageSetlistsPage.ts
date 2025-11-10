@@ -127,7 +127,10 @@ export class ManageSetlistsPagePO {
     await this.getCopySetlistLinkButton(setlistName).click();
   }
 
-  public async getSetlistURL() {
+  public async getSetlistURL(setlistName: string) {
+    if (await this.songsTable.searchInput.isHidden()) {
+      await this.goToEditSetlist(setlistName);
+    }
     await this.songsTable.searchInput.clear();
     await this.songsTable.searchInput.press('Meta+V');
     return (await this.songsTable.searchInput.getAttribute('value'))!;
@@ -135,7 +138,7 @@ export class ManageSetlistsPagePO {
 
   public async copyAndOpenLinkToSetlist(setlistName: string) {
     await this.clickToCopyLinkToSetlist(setlistName);
-    const setlistURL = await this.getSetlistURL();
+    const setlistURL = await this.getSetlistURL(setlistName);
     await this.page.goto(setlistURL);
   }
 
@@ -147,6 +150,7 @@ export class ManageSetlistsPagePO {
   }
 
   public getSongToggle(songID: string) {
+    this.songsTable.searchSongs(songID);
     return this.page.locator(`[data-song="${songID}"][data-test="toggle-selection"]`);
   }
 
