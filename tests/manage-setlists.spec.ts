@@ -9,8 +9,8 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test.describe('New user`s setlist', async () => {
-  test('Adding/removing songs and copying link to setlist - works', async ({ page }) => {
+test.describe('New setlist', async () => {
+  test('User`s setlist works', async ({ page }) => {
     const setlistName = 'My setlist #1 - Allkaraoke';
 
     const songs = {
@@ -37,6 +37,8 @@ test.describe('New user`s setlist', async () => {
       num2: '',
     };
 
+    test.slow();
+
     await test.step('Go to Manage-Setlists Page', async () => {
       await page.goto('/?e2e-test');
       await pages.landingPage.enterTheGame();
@@ -46,8 +48,9 @@ test.describe('New user`s setlist', async () => {
     });
 
     await test.step('Create new setlist - its details and setlist buttons should appear', async () => {
+      await expect(pages.manageSetlists.noSetlistCreatedInfo).toBeVisible();
       await pages.manageSetlists.goToCreateNewSetlist(setlistName);
-      await expect(pages.manageSetlists.getCreatedSetlistElement(setlistName)).toBeVisible();
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).toBeVisible();
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 0);
       await pages.manageSetlists.expectDefaultSetlistButtonsToBeVisible(setlistName);
       await pages.manageSetlists.expectSetlistEditModeStateToBe(setlistName, 'on');
@@ -126,7 +129,7 @@ test.describe('New user`s setlist', async () => {
       await expect(await pages.songListPage.getSongElement(songs.num1.id)).toBeVisible();
       await expect(await pages.songListPage.getSongElement(songs.num2.id)).toBeVisible();
       await expect(await pages.songListPage.getSongElement(songs.num3.id)).not.toBeVisible();
-      await expect(pages.songListPage.addSongIfMissingButton).toBeVisible();
+      await expect(pages.songListPage.addMissingSongButton).toBeVisible();
     });
 
     await test.step('Only selected songs should be visible in Edit-Songs Page as well', async () => {
@@ -156,7 +159,18 @@ test.describe('New user`s setlist', async () => {
       await expect(await pages.songListPage.getSongElement(songs.num1.id)).toBeVisible();
       await expect(await pages.songListPage.getSongElement(songs.num2.id)).toBeVisible();
       await expect(await pages.songListPage.getSongElement(songs.num3.id)).not.toBeVisible();
-      await expect(pages.songListPage.addSongIfMissingButton).not.toBeVisible();
+      await expect(pages.songListPage.addMissingSongButton).not.toBeVisible();
+    });
+
+    await test.step('After deleting setlist, it is no longer visible', async () => {
+      await page.goto('/?e2e-test');
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToManageSongs();
+      await pages.manageSongsPage.goToManageSetlists();
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).toBeVisible();
+      await pages.manageSetlists.removeSetlist(setlistName);
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).not.toBeVisible();
+      await expect(pages.manageSetlists.noSetlistCreatedInfo).toBeVisible();
     });
   });
 });

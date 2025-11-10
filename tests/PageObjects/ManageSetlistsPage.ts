@@ -29,21 +29,25 @@ export class ManageSetlistsPagePO {
     return this.page.getByTestId('create-new-setlist');
   }
 
+  public get noSetlistCreatedInfo() {
+    return this.page.getByTestId('no-setlist-created');
+  }
+
   public async goToCreateNewSetlist(setlistName: string) {
     await this.dialog.enterMessageWhenDialogAppears(setlistName);
     await this.createNewSetlistButton.click();
   }
 
-  public getCreatedSetlistElement(setlistName: string) {
+  public getSetlistElement(setlistName: string) {
     return this.page.getByTestId(`setlist-${setlistName}`);
   }
 
   public async expectSetlistSongCountToBe(setlistName: string, songsAmount: number) {
-    await expect(this.getCreatedSetlistElement(setlistName)).toContainText(`(${songsAmount} songs)`);
+    await expect(this.getSetlistElement(setlistName)).toContainText(`(${songsAmount} songs)`);
   }
 
   public getEditSetlistButton(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('edit-setlist');
   }
 
@@ -54,17 +58,17 @@ export class ManageSetlistsPagePO {
   makeNotEditableSelector = 'make-setlist-not-editable';
 
   public getNotEditableSetlistButton(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId(this.makeNotEditableSelector);
   }
 
   public getEditableSetlistButton(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('make-setlist-editable');
   }
 
   public async isSetlistEditModeTurnedOn(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
 
     const editModeAttribute = await setlistElement
       .getByTestId(/^make-setlist-(not-)?editable$/)
@@ -95,7 +99,7 @@ export class ManageSetlistsPagePO {
       closed: 'Outlined',
     } as const;
 
-    return this.getCreatedSetlistElement(setlistName).locator(`[data-testid="Lock${lockStateNameMap[lockState]}Icon"]`);
+    return this.getSetlistElement(setlistName).locator(`[data-testid="Lock${lockStateNameMap[lockState]}Icon"]`);
   }
 
   public async expectSetlistEditModeStateToBe(setlistName: string, expectedState: 'on' | 'off') {
@@ -110,7 +114,7 @@ export class ManageSetlistsPagePO {
   }
 
   public getRemoveSetlistButton(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('remove-setlist');
   }
 
@@ -118,8 +122,13 @@ export class ManageSetlistsPagePO {
     await this.getRemoveSetlistButton(setlistName).click();
   }
 
+  public async removeSetlist(setlistName: string) {
+    await this.dialog.acceptWhenDialogAppears();
+    await this.clickToRemoveSetlist(setlistName);
+  }
+
   public getCopySetlistLinkButton(setlistName: string) {
-    const setlistElement = this.getCreatedSetlistElement(setlistName);
+    const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('copy-setlist-link');
   }
 
