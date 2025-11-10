@@ -116,7 +116,7 @@
     "@types/dom-view-transitions": "^1.0.5",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/latinize": "^0.2.18",
-    "@types/node": "^22.12.0",
+  "@types/node": "^24.0.0",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@types/react-helmet": "^6.1.11",
