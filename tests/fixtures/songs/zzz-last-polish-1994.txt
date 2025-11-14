@@ -5,6 +5,7 @@
 #VIDEO:v=koBUXESJZ8g
 #LANGUAGE:Polish
 #GAP:1000
+#ALLKARAOKE_SID:10
 #ALLKARAOKE_ID:zzz-last-polish-1994
 : 5 10 9 Track 1 
 : 20 10 10 Section 1

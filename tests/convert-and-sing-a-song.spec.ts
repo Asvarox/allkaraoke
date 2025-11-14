@@ -73,7 +73,7 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Select song language', async () => {
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(songLanguage, 'selected');
   });
 
   await test.step('Search and pick up converted song', async () => {

@@ -27,7 +27,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Go to select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(polishLang, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -93,7 +93,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(spanishLang);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(spanishLang, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

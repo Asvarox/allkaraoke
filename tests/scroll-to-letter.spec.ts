@@ -23,7 +23,7 @@ test('Scrolling to letter works', async ({ page }) => {
   });
 
   await test.step('Pick up at least 1 song language', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(language, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

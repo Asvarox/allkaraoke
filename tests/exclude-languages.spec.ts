@@ -23,8 +23,8 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
   await test.step('Include all', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
+    await pages.songLanguagesPage.expectLanguageStateToBe(language1, 'selected');
+    await pages.songLanguagesPage.expectLanguageStateToBe(language2, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.goToPlaylist(allPlaylist);
     await expect(await pages.songListPage.getSongElement(song1)).toBeVisible();
@@ -36,8 +36,8 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(language1, 'unselected');
+    await pages.songLanguagesPage.ensureLanguageStateToBe(language2, 'selected');
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
@@ -50,8 +50,8 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language2);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(language1, 'selected');
+    await pages.songLanguagesPage.ensureLanguageStateToBe(language2, 'unselected');
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
@@ -64,7 +64,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureAllLanguagesAreDeselected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('unselected');
     await expect(pages.songLanguagesPage.allLanguagesExcludedAlert).toBeVisible();
   });
 

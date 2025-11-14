@@ -13,13 +13,13 @@ test.beforeEach(async ({ page, context, browser }) => {
 const song1 = {
   ID: 'e2e-single-english-1995',
   language: 'English',
-};
+} as const;
 
 const song2 = {
   ID: 'e2e-multitrack-polish-1994',
   language: 'Polish',
   playlistName: 'Polish',
-};
+} as const;
 
 const player1 = {
   number: 0,
@@ -49,8 +49,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Ensure song languages are selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song1.language);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song2.language);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(song1.language, 'selected');
+    await pages.songLanguagesPage.ensureLanguageStateToBe(song2.language, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

@@ -7,11 +7,27 @@ export class ManageSongsPagePO {
     private browser: Browser,
   ) {}
 
+  public get editSongsButton() {
+    return this.page.getByTestId('edit-songs');
+  }
+
   public async goToEditSongs() {
-    await this.page.getByTestId('edit-songs').click();
+    await this.editSongsButton.click();
   }
 
   public async goToSelectSongLanguage() {
     await this.page.getByTestId('exclude-languages').click();
+  }
+
+  public get manageSetlistsButton() {
+    return this.page.getByTestId('edit-setlists');
+  }
+
+  public async goToManageSetlists() {
+    await this.manageSetlistsButton.click();
+  }
+
+  public async goBackToMainMenu() {
+    await this.page.getByTestId('back-button').click();
   }
 }

@@ -64,8 +64,8 @@ test.skip('Filters - PlayLists', async ({ page }) => {
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Make sure proper song languages are selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(englishLang);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(polishLang, 'selected');
+    await pages.songLanguagesPage.ensureLanguageStateToBe(englishLang, 'selected');
   });
 
   await test.step('Check if songs are visible in all songs', async () => {
@@ -153,9 +153,9 @@ test('Filters - PlayLists (Eurovision)', async ({ page }) => {
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Make sure proper song languages are selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(englishLang);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(frenchLang);
+    await pages.songLanguagesPage.expectLanguageStateToBe(polishLang, 'selected');
+    await pages.songLanguagesPage.expectLanguageStateToBe(englishLang, 'selected');
+    await pages.songLanguagesPage.expectLanguageStateToBe(frenchLang, 'selected');
   });
 
   await test.step('Check if songs are visible in all songs', async () => {
@@ -291,7 +291,7 @@ test('Song List - Random song', async ({ page }) => {
 
   await test.step('Random song is selected on song list open', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureLanguageStateToBe(polishLang, 'selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.expectSelectedSongToBe(lastSong);
   });

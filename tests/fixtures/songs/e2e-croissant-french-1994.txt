@@ -5,6 +5,7 @@
 #LANGUAGE:French
 #GAP:1000
 #EDITION:Halloween
+#ALLKARAOKE_SID:3
 #ALLKARAOKE_ID:e2e-croissant-french-1994
 #VIDEO:v=koBUXESJZ8g
 : 15 2 -3 It

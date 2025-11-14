@@ -9,6 +9,7 @@ import { JoinExistingGamePagePO } from './JoinExistingGamePage';
 import { JukeboxPagePO } from './JukeboxPage';
 import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
+import { ManageSetlistsPagePO } from './ManageSetlistsPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
 import { PostGameHighScoresPagePO } from './PostGameHighScoresPage';
 import { PostGameResultsPagePO } from './PostGameResultsPage';
@@ -52,5 +53,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     settingsPage: new SettingsPagePO(page, context, browser),
     rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
     calibration: new Calibration(page, context, browser),
+    manageSetlists: new ManageSetlistsPagePO(page, context, browser),
   };
 }
