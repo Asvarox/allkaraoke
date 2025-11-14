@@ -5,6 +5,7 @@
 #VIDEO:v=Vueyx9TBEqE
 #LANGUAGE:Polish
 #GAP:27000
+#ALLKARAOKE_SID:9
 #ALLKARAOKE_ID:e2e-skip-intro-polish
 : 5 10 9 Second 
 : 20 10 10 Third 
