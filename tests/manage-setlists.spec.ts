@@ -40,15 +40,15 @@ test.describe('New user`s setlist', async () => {
       await pages.manageSetlists.addSongToSetlist(songID.num1);
       await pages.manageSetlists.addSongToSetlist(songID.num2);
       await pages.manageSetlists.addSongToSetlist(songID.num3);
-      await pages.manageSetlists.expectSongCheckboxStateToBe(songID.num1, 'selected');
-      await pages.manageSetlists.expectSongCheckboxStateToBe(songID.num2, 'selected');
-      await pages.manageSetlists.expectSongCheckboxStateToBe(songID.num3, 'selected');
+      await pages.manageSetlists.expectSongToBeSelected(songID.num1);
+      await pages.manageSetlists.expectSongToBeSelected(songID.num2);
+      await pages.manageSetlists.expectSongToBeSelected(songID.num3);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
     });
 
     await test.step('After unselecting the song, it should be removed from the setlist', async () => {
       await pages.manageSetlists.removeSongFromSetlist(songID.num3);
-      await pages.manageSetlists.expectSongCheckboxStateToBe(songID.num3, 'unselected');
+      await pages.manageSetlists.expectSongToBeUnselected(songID.num3);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 2);
     });
   });
