@@ -79,6 +79,7 @@ export default function Setlists() {
                 <h5 className="flex items-center gap-2">
                   Your setlists
                   <Button
+                    data-test={'create-new-setlist'}
                     onClick={() => {
                       const name = prompt('Enter setlist name');
                       if (name) {
@@ -91,12 +92,16 @@ export default function Setlists() {
                 {setlists.map((setlist) => {
                   const isSelected = setlist.name === selectedSetlist;
                   return (
-                    <div className={`flex ${isSelected ? 'bg-blue-100' : ''} items-center gap-4`} key={setlist.name}>
+                    <div
+                      className={`flex ${isSelected ? 'bg-blue-100' : ''} items-center gap-4`}
+                      key={setlist.name}
+                      data-test={`setlist-${setlist.name}`}>
                       <span className="pl-2">
                         {setlist.isEditable ? <LockOpen /> : <LockOutlined />}&nbsp;
                         <strong>{setlist.name}</strong> ({setlist.songList?.length} songs)
                       </span>
                       <Button
+                        data-test={'edit-setlist'}
                         variant={isSelected ? 'contained' : 'outlined'}
                         className="ml-auto!"
                         onClick={() => {
@@ -105,6 +110,7 @@ export default function Setlists() {
                         Edit
                       </Button>
                       <Button
+                        data-test={setlist.isEditable ? 'make-setlist-not-editable' : 'make-setlist-editable'}
                         onClick={() =>
                           setSetlists(
                             setlists.map((s) => (s.name === setlist.name ? { ...s, isEditable: !s.isEditable } : s)),
@@ -114,6 +120,7 @@ export default function Setlists() {
                       </Button>
                       <Button
                         color="error"
+                        data-test={'remove-setlist'}
                         onClick={() => {
                           const confirmed = confirm(`Are you sure you want to delete the setlist "${setlist.name}"?`);
                           if (confirmed) {
@@ -128,6 +135,7 @@ export default function Setlists() {
                       <Button
                         color="secondary"
                         variant="contained"
+                        data-test={'copy-setlist-link'}
                         onClick={() => {
                           const url = new URL(window.location.href);
                           url.pathname = '';

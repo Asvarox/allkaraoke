@@ -5,6 +5,7 @@
 #LANGUAGE:French
 #GAP:1000
 #EDITION:Halloween
+#ALLKARAOKE_SID:2
 #ALLKARAOKE_ID:e2e-cote-dazur-french-1994
 #VIDEO:v=koBUXESJZ8g
 : 15 2 -3 It
