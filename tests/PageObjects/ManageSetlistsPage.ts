@@ -57,58 +57,56 @@ export class ManageSetlistsPagePO {
 
   makeNotEditableSelector = 'make-setlist-not-editable';
 
-  public getNotEditableSetlistButton(setlistName: string) {
+  public getMakeSetlistNotEditableButton(setlistName: string) {
     const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId(this.makeNotEditableSelector);
   }
 
-  public getEditableSetlistButton(setlistName: string) {
+  public getMakeSetlistEditableButton(setlistName: string) {
     const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('make-setlist-editable');
   }
 
   public async isSetlistEditModeTurnedOn(setlistName: string) {
-    const setlistElement = this.getSetlistElement(setlistName);
-
-    const editModeAttribute = await setlistElement
+    const editModeAttribute = await this.getSetlistElement(setlistName)
       .getByTestId(/^make-setlist-(not-)?editable$/)
       .getAttribute('data-test');
     return editModeAttribute === this.makeNotEditableSelector;
   }
 
-  public async clickToSetSetlistEditMode(setlistName: string, expectedMode: 'editable' | 'not editable') {
-    const isEditModeON = this.isSetlistEditModeTurnedOn(setlistName);
+  public async setSetlistEditMode(setlistName: string, expectedMode: 'editable' | 'not editable') {
+    await expect(this.getSetlistElement(setlistName)).toBeVisible();
+    const isEditModeON = await this.isSetlistEditModeTurnedOn(setlistName);
 
     if (expectedMode === 'editable') {
       if (!isEditModeON) {
-        await this.getEditableSetlistButton(setlistName).click();
+        await this.getMakeSetlistEditableButton(setlistName).click();
       }
-      await expect(this.getNotEditableSetlistButton(setlistName)).toBeVisible();
+      await expect(this.getMakeSetlistNotEditableButton(setlistName)).toBeVisible();
     }
     if (expectedMode === 'not editable') {
-      if (await isEditModeON) {
-        await this.getNotEditableSetlistButton(setlistName).click();
+      if (isEditModeON) {
+        await this.getMakeSetlistNotEditableButton(setlistName).click();
       }
-      await expect(this.getEditableSetlistButton(setlistName)).toBeVisible();
+      await expect(this.getMakeSetlistEditableButton(setlistName)).toBeVisible();
     }
   }
 
   public getSetlistLockStateIcon(setlistName: string, lockState: 'open' | 'closed') {
     const lockStateNameMap = {
-      open: 'Open',
-      closed: 'Outlined',
+      open: 'LockOpenIcon',
+      closed: 'LockOutlinedIcon',
     } as const;
-
-    return this.getSetlistElement(setlistName).locator(`[data-testid="Lock${lockStateNameMap[lockState]}Icon"]`);
+    return this.getSetlistElement(setlistName).locator(`[data-testid="${lockStateNameMap[lockState]}"]`);
   }
 
   public async expectSetlistEditModeStateToBe(setlistName: string, expectedState: 'on' | 'off') {
     if (expectedState === 'on') {
-      await expect(this.getNotEditableSetlistButton(setlistName)).toBeVisible();
+      await expect(this.getMakeSetlistNotEditableButton(setlistName)).toBeVisible();
       await expect(this.getSetlistLockStateIcon(setlistName, 'open')).toBeVisible();
     }
     if (expectedState === 'off') {
-      await expect(this.getEditableSetlistButton(setlistName)).toBeVisible();
+      await expect(this.getMakeSetlistEditableButton(setlistName)).toBeVisible();
       await expect(this.getSetlistLockStateIcon(setlistName, 'closed')).toBeVisible();
     }
   }
@@ -153,7 +151,7 @@ export class ManageSetlistsPagePO {
 
   public async expectDefaultSetlistButtonsToBeVisible(setlistName: string) {
     await expect(this.getEditSetlistButton(setlistName)).toBeVisible();
-    await expect(this.getNotEditableSetlistButton(setlistName)).toBeVisible();
+    await expect(this.getMakeSetlistNotEditableButton(setlistName)).toBeVisible();
     await expect(this.getRemoveSetlistButton(setlistName)).toBeVisible();
     await expect(this.getCopySetlistLinkButton(setlistName)).toBeVisible();
   }
@@ -166,6 +164,7 @@ export class ManageSetlistsPagePO {
 
   private getSongCheckboxComponent(songID: string) {
     const songCheckbox = this.getSongElement(songID).locator('svg');
+    // const songCheckbox = this.getSongElement(setlistName, songID);
     return new Checkboxes(this.page, this.context, this.browser, songCheckbox);
   }
 
@@ -173,7 +172,10 @@ export class ManageSetlistsPagePO {
     return await this.getSongCheckboxComponent(songID).isCheckboxSelected();
   }
 
-  public async addSongToSetlist(songID: string) {
+  public async addSongToSetlist(setlistName: string, songID: string) {
+    if (await this.songsTable.searchInput.isHidden()) {
+      await this.goToEditSetlist(setlistName);
+    }
     await this.songsTable.searchSongs(songID);
     if (!(await this.isSongSelected(songID))) {
       await this.getSongElement(songID).click();
@@ -195,5 +197,13 @@ export class ManageSetlistsPagePO {
   public async expectSongStateToBe(songID: string, expectedState: checkboxesStateType) {
     await this.songsTable.searchSongs(songID);
     await this.getSongCheckboxComponent(songID).expectCheckboxStateToBe(expectedState);
+  }
+
+  public async expectSongToBeSelected(songID: string) {
+    await this.expectSongStateToBe(songID, 'selected');
+  }
+
+  public async expectSongToBeUnselected(songID: string) {
+    await this.expectSongStateToBe(songID, 'unselected');
   }
 }

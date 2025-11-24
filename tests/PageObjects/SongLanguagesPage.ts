@@ -32,8 +32,24 @@ export class SongLanguagesPagePO {
     await this.getLanguageCheckboxComponent(language).ensureCheckboxStateToBe(state);
   }
 
+  public async ensureLanguageToBeSelected(language: languagesType) {
+    await this.ensureLanguageStateToBe(language, 'selected');
+  }
+
+  public async ensureLanguageToBeUnselected(language: languagesType) {
+    await this.ensureLanguageStateToBe(language, 'unselected');
+  }
+
   public async expectLanguageStateToBe(language: languagesType, expectedState: checkboxesStateType) {
     await this.getLanguageCheckboxComponent(language).expectCheckboxStateToBe(expectedState);
+  }
+
+  public async expectLanguageToBeSelected(language: languagesType) {
+    await this.expectLanguageStateToBe(language, 'selected');
+  }
+
+  public async expectLanguageToBeUnselected(language: languagesType) {
+    await this.expectLanguageStateToBe(language, 'unselected');
   }
 
   public async getAllLanguageCheckboxes() {

@@ -14,13 +14,8 @@ runs:
   steps:
     # https://github.com/actions/runner-images/issues/10977#issuecomment-2810713336
     - run: |
-        # Skip installing pacakge docs {makes the man-db trigger much faster) 
-        # (I disabled `/doc` and `/info` too, just in case.)
-        sudo tee /etc/dpkg/dpkg.cfg.d/01_nodoc > /dev/null << 'EOF'
-        path-exclude /usr/share/doc/*
-        path-exclude /usr/share/man/*
-        path-exclude /usr/share/info/*
-        EOF
+        echo "set man-db/auto-update false" | sudo debconf-communicate
+        sudo dpkg-reconfigure man-db
       shell: bash
       name: 'Disable installing package docs'
 
