@@ -13,9 +13,12 @@ export class Checkboxes {
   selectedCheckboxIDSelector = 'CheckBoxIcon';
   unselectedCheckboxIDSelector = 'CheckBoxOutlineBlankIcon';
 
+  public get checkboxElement() {
+    return this.checkboxLocator.locator('svg');
+  }
+
   public async isCheckboxSelected() {
-    const checkboxAttribute = await this.checkboxLocator.getAttribute('data-testid');
-    return checkboxAttribute === this.selectedCheckboxIDSelector;
+    return await this.checkboxLocator.locator(`svg[data-testid="${this.selectedCheckboxIDSelector}"]`).isVisible();
   }
 
   public async ensureCheckboxStateToBe(state: checkboxesStateType) {
@@ -33,10 +36,10 @@ export class Checkboxes {
 
   public async expectCheckboxStateToBe(state: checkboxesStateType) {
     if (state === 'selected') {
-      await expect(this.checkboxLocator).toHaveAttribute('data-testid', this.selectedCheckboxIDSelector);
+      await expect(this.checkboxElement).toHaveAttribute('data-testid', this.selectedCheckboxIDSelector);
     }
     if (state === 'unselected') {
-      await expect(this.checkboxLocator).toHaveAttribute('data-testid', this.unselectedCheckboxIDSelector);
+      await expect(this.checkboxElement).toHaveAttribute('data-testid', this.unselectedCheckboxIDSelector);
     }
   }
 }

@@ -61,16 +61,16 @@ test.describe('New setlist', async () => {
       await pages.manageSetlists.addSongToSetlist(setlistName, songs.num2.id);
       await pages.manageSetlists.addSongToSetlist(setlistName, songs.num3.id);
       await pages.manageSetlists.addSongToSetlist(setlistName, songs.num4.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num1.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num2.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num3.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num4.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num1.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num2.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num4.id);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 4);
     });
 
     await test.step('After unselecting the song, it should be removed from the setlist', async () => {
-      await pages.manageSetlists.removeSongFromSetlist(songs.num4.id);
-      await pages.manageSetlists.expectSongToBeUnselected(songs.num4.id);
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num4.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num4.id);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
     });
 
@@ -99,23 +99,23 @@ test.describe('New setlist', async () => {
       await pages.manageSongsPage.goToManageSetlists();
       await pages.manageSetlists.goToEditSetlist(setlistName);
       await pages.manageSetlists.expectSetlistEditModeStateToBe(setlistName, 'on');
-      await pages.manageSetlists.expectSongToBeSelected(songs.num1.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num2.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num3.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num1.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num2.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
       await expect(pages.manageSetlists.getSongElement(songs.num4.id)).not.toBeVisible();
 
-      await pages.manageSetlists.removeSongFromSetlist(songs.num3.id);
-      await pages.manageSetlists.expectSongToBeUnselected(songs.num3.id);
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num3.id);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 2);
 
       await pages.manageSetlists.addSongToSetlist(setlistName, songs.num3.id);
-      await pages.manageSetlists.expectSongToBeSelected(songs.num3.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
     });
 
     await test.step('2 - After modifying setlist, generated link should be different then before and removed song should be excluded', async () => {
-      await pages.manageSetlists.removeSongFromSetlist(songs.num3.id);
-      await pages.manageSetlists.expectSongToBeUnselected(songs.num3.id);
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num3.id);
 
       await pages.manageSetlists.clickToCopyLinkToSetlist(setlistName);
       setlistURL.num2 = await pages.manageSetlists.getSetlistURL(setlistName);

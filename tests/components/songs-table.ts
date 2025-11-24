@@ -80,8 +80,12 @@ export class SongsTable {
     return this.getTableRow(rowNumber).locator('td').nth(cellNumber);
   }
 
+  public get showHideColumnButton() {
+    return this.page.locator('[aria-label="Show/Hide columns"]');
+  }
+
   public async expandShowOrHideColumnList() {
-    await this.page.locator('[aria-label="Show/Hide columns"]').click();
+    await this.showHideColumnButton.click();
   }
 
   public async toggleColumnVisibility(columnName: columnNameType) {
@@ -98,8 +102,12 @@ export class SongsTable {
     await this.page.locator('.MuiButton-textPrimary').getByText('Hide all', { exact: true }).click();
   }
 
+  public get filtersIconButton() {
+    return this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]');
+  }
+
   public async showFiltersVisibility() {
-    await this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]').click();
+    await this.filtersIconButton.click();
   }
 
   public async filterByColumnName(columnName: columnNameType, phrase: string) {

@@ -55,11 +55,9 @@ export class ManageSetlistsPagePO {
     await this.getEditSetlistButton(setlistName).click();
   }
 
-  makeNotEditableSelector = 'make-setlist-not-editable';
-
   public getMakeSetlistNotEditableButton(setlistName: string) {
     const setlistElement = this.getSetlistElement(setlistName);
-    return setlistElement.getByTestId(this.makeNotEditableSelector);
+    return setlistElement.getByTestId('make-setlist-not-editable');
   }
 
   public getMakeSetlistEditableButton(setlistName: string) {
@@ -68,10 +66,7 @@ export class ManageSetlistsPagePO {
   }
 
   public async isSetlistEditModeTurnedOn(setlistName: string) {
-    const editModeAttribute = await this.getSetlistElement(setlistName)
-      .getByTestId(/^make-setlist-(not-)?editable$/)
-      .getAttribute('data-test');
-    return editModeAttribute === this.makeNotEditableSelector;
+    return await this.getMakeSetlistNotEditableButton(setlistName).isVisible();
   }
 
   public async setSetlistEditMode(setlistName: string, expectedMode: 'editable' | 'not editable') {
@@ -111,6 +106,24 @@ export class ManageSetlistsPagePO {
     }
   }
 
+  public async ensureSetlistEditorOpened(setlistName: string, editElement: 'search' | 'filters' | 'columns') {
+    const editNameToLocatorMap = {
+      search: this.songsTable.searchInput,
+      filters: this.songsTable.filtersIconButton,
+      columns: this.songsTable.showHideColumnButton,
+    };
+
+    if (await editNameToLocatorMap[editElement].isHidden()) {
+      await this.goToEditSetlist(setlistName);
+    }
+    await expect(editNameToLocatorMap[editElement]).toBeVisible();
+  }
+
+  public async searchSetlistSong(setlistName: string, songID: string) {
+    await this.ensureSetlistEditorOpened(setlistName, 'search');
+    await this.songsTable.searchSongs(songID);
+  }
+
   public getRemoveSetlistButton(setlistName: string) {
     const setlistElement = this.getSetlistElement(setlistName);
     return setlistElement.getByTestId('remove-setlist');
@@ -135,9 +148,7 @@ export class ManageSetlistsPagePO {
   }
 
   public async getSetlistURL(setlistName: string) {
-    if (await this.songsTable.searchInput.isHidden()) {
-      await this.goToEditSetlist(setlistName);
-    }
+    await this.ensureSetlistEditorOpened(setlistName, 'search');
     await this.songsTable.searchInput.clear();
     await this.songsTable.searchInput.press('Meta+V');
     return (await this.songsTable.searchInput.getAttribute('value'))!;
@@ -163,8 +174,7 @@ export class ManageSetlistsPagePO {
   }
 
   private getSongCheckboxComponent(songID: string) {
-    const songCheckbox = this.getSongElement(songID).locator('svg');
-    // const songCheckbox = this.getSongElement(setlistName, songID);
+    const songCheckbox = this.getSongElement(songID);
     return new Checkboxes(this.page, this.context, this.browser, songCheckbox);
   }
 
@@ -172,38 +182,29 @@ export class ManageSetlistsPagePO {
     return await this.getSongCheckboxComponent(songID).isCheckboxSelected();
   }
 
-  public async addSongToSetlist(setlistName: string, songID: string) {
-    if (await this.songsTable.searchInput.isHidden()) {
-      await this.goToEditSetlist(setlistName);
-    }
-    await this.songsTable.searchSongs(songID);
-    if (!(await this.isSongSelected(songID))) {
-      await this.getSongElement(songID).click();
-    }
-  }
-
-  public async removeSongFromSetlist(songID: string) {
-    await this.songsTable.searchSongs(songID);
-    if (await this.isSongSelected(songID)) {
-      await this.getSongElement(songID).click();
-    }
-  }
-
-  public async ensureSongStateToBe(songID: string, state: checkboxesStateType) {
-    await this.songsTable.searchSongs(songID);
+  private async ensureSongStateToBe(setlistName: string, songID: string, state: checkboxesStateType) {
+    await this.searchSetlistSong(setlistName, songID);
     await this.getSongCheckboxComponent(songID).ensureCheckboxStateToBe(state);
   }
 
-  public async expectSongStateToBe(songID: string, expectedState: checkboxesStateType) {
-    await this.songsTable.searchSongs(songID);
+  public async addSongToSetlist(setlistName: string, songID: string) {
+    await this.ensureSongStateToBe(setlistName, songID, 'selected');
+  }
+
+  public async removeSongFromSetlist(setlistName: string, songID: string) {
+    await this.ensureSongStateToBe(setlistName, songID, 'unselected');
+  }
+
+  private async expectSongStateToBe(setlistName: string, songID: string, expectedState: checkboxesStateType) {
+    await this.searchSetlistSong(setlistName, songID);
     await this.getSongCheckboxComponent(songID).expectCheckboxStateToBe(expectedState);
   }
 
-  public async expectSongToBeSelected(songID: string) {
-    await this.expectSongStateToBe(songID, 'selected');
+  public async expectSongToBeSelected(setlistName: string, songID: string) {
+    await this.expectSongStateToBe(setlistName, songID, 'selected');
   }
 
-  public async expectSongToBeUnselected(songID: string) {
-    await this.expectSongStateToBe(songID, 'unselected');
+  public async expectSongToBeUnselected(setlistName: string, songID: string) {
+    await this.expectSongStateToBe(setlistName, songID, 'unselected');
   }
 }

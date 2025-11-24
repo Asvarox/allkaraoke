@@ -12,7 +12,7 @@ export class SongLanguagesPagePO {
   ) {}
 
   public getLanguageCheckbox(language: languagesType) {
-    return this.page.getByTestId(`lang-${language}`).locator(`svg`);
+    return this.page.getByTestId(`lang-${language}`);
   }
 
   private getLanguageCheckboxComponent(language: languagesType) {
