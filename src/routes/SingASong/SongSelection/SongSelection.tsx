@@ -321,7 +321,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 Footer={
                   selectedPlaylistData?.footerComponent ??
                   (setlist.isEditable ? (
-                    <AddSongs data-test={'add-new-song'}>
+                    <AddSongs data-test="add-new-song">
                       Missing a song? Try{' '}
                       <Link to="convert/">
                         <a>adding one</a>

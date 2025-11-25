@@ -93,7 +93,7 @@ test.describe('New setlist', async () => {
       await expect(await pages.songListPage.getSongElement(songs.num4.id)).not.toBeVisible();
     });
 
-    await test.step('1 - When setlist edit mode is on, user with link is able only to - remove/remove and restore - songs from the setlist', async () => {
+    await test.step('1 - When setlist edit mode is on, user with link is able only to remove and restore songs from the setlist', async () => {
       await pages.songListPage.goBackToMainMenu();
       await pages.mainMenuPage.goToManageSongs();
       await pages.manageSongsPage.goToManageSetlists();
@@ -113,7 +113,7 @@ test.describe('New setlist', async () => {
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
     });
 
-    await test.step('2 - After modifying setlist, generated link should be different then before and removed song should be excluded', async () => {
+    await test.step('2 - After modifying setlist, generated link should be different than before and removed song should be excluded', async () => {
       await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num3.id);
       await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num3.id);
 

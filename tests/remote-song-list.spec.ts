@@ -301,8 +301,8 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   await test.step('Set other song languages on remoteMic app', async () => {
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureLanguageStateToBe(languages.spanish, 'selected');
-    await pages.songLanguagesPage.ensureLanguageStateToBe(languages.french, 'selected');
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.spanish);
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.french);
   });
 
   await test.step('Songs selected on remoteMic should be visible on desktop`s app preview, despite the different languages set between them', async () => {
