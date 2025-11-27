@@ -30,7 +30,7 @@ test('skip the intro from the song', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureLanguageStateToBe(song.language, 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

@@ -287,8 +287,8 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureLanguageStateToBe(languages.polish, 'selected');
-    await pages.songLanguagesPage.ensureLanguageStateToBe(languages.english, 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.polish);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.english);
   });
 
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {

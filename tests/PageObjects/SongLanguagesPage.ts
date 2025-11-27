@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import { Checkboxes, checkboxesStateType } from '../components/checkboxes';
+import { SongListPagePO } from '../PageObjects/SongListPage';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export type languagesType = 'Polish' | 'English' | 'Spanish' | 'French';
@@ -11,8 +12,12 @@ export class SongLanguagesPagePO {
     private browser: Browser,
   ) {}
 
-  public getLanguageCheckbox(language: languagesType) {
-    return this.page.getByTestId(`lang-${language}`);
+  public getLanguageCheckbox(language: languagesType | 'any') {
+    if (language === 'any') {
+      return this.page.locator('[data-test^="lang-"]');
+    } else {
+      return this.page.getByTestId(`lang-${language}`);
+    }
   }
 
   private getLanguageCheckboxComponent(language: languagesType) {
@@ -23,12 +28,7 @@ export class SongLanguagesPagePO {
     return await this.getLanguageCheckboxComponent(language).isCheckboxSelected();
   }
 
-  public async unselectLanguage(language: languagesType) {
-    await this.getLanguageCheckboxComponent(language).expectCheckboxStateToBe('selected');
-    await this.getLanguageCheckbox(language).click();
-  }
-
-  public async ensureLanguageStateToBe(language: languagesType, state: checkboxesStateType) {
+  private async ensureLanguageStateToBe(language: languagesType, state: checkboxesStateType) {
     await this.getLanguageCheckboxComponent(language).ensureCheckboxStateToBe(state);
   }
 
@@ -40,7 +40,7 @@ export class SongLanguagesPagePO {
     await this.ensureLanguageStateToBe(language, 'unselected');
   }
 
-  public async expectLanguageStateToBe(language: languagesType, expectedState: checkboxesStateType) {
+  private async expectLanguageStateToBe(language: languagesType, expectedState: checkboxesStateType) {
     await this.getLanguageCheckboxComponent(language).expectCheckboxStateToBe(expectedState);
   }
 
@@ -53,7 +53,7 @@ export class SongLanguagesPagePO {
   }
 
   public async getAllLanguageCheckboxes() {
-    const languageCheckbox = this.page.locator('[data-test^="lang-"] svg');
+    const languageCheckbox = this.getLanguageCheckbox('any');
     await expect(languageCheckbox.first()).toBeVisible();
     return languageCheckbox.all();
   }
@@ -77,17 +77,26 @@ export class SongLanguagesPagePO {
     }
   }
 
+  returnToMenuSelector = 'close-exclude-languages';
+
+  public get returnToMenuButton() {
+    return this.page.getByTestId(this.returnToMenuSelector);
+  }
+
   public async goBackToMainMenu() {
-    await this.page.getByTestId('close-exclude-languages').click();
+    await this.returnToMenuButton.click();
   }
 
   public async continueAndGoToSongList() {
-    await this.page.getByTestId('close-exclude-languages').click();
-    await expect(this.page.getByTestId('song-preview')).toBeVisible();
+    const songList = new SongListPagePO(this.page, this.context, this.browser);
+
+    await this.returnToMenuButton.click();
+    await expect(songList.songPreviewElement).toBeVisible();
+    return songList;
   }
 
   public async navigateToSongListWithKeyboard(remoteMic?: Page) {
-    await navigateWithKeyboard(this.page, 'close-exclude-languages', remoteMic);
+    await navigateWithKeyboard(this.page, this.returnToMenuSelector, remoteMic);
   }
 
   public get allLanguagesExcludedAlert() {

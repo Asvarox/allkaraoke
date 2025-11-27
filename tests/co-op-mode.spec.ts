@@ -30,7 +30,7 @@ test('Cooperation mode', async ({ page }) => {
   });
 
   await test.step('Make sure song language is selected', async () => {
-    await pages.songLanguagesPage.ensureLanguageStateToBe(polishLang, 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

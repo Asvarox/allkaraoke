@@ -22,6 +22,8 @@ export class Checkboxes {
   }
 
   public async ensureCheckboxStateToBe(state: checkboxesStateType) {
+    await expect(this.checkboxElement).toBeVisible();
+
     if (state === 'selected') {
       if (!(await this.isCheckboxSelected())) {
         await this.checkboxLocator.click();
@@ -32,6 +34,7 @@ export class Checkboxes {
         await this.checkboxLocator.click();
       }
     }
+    await this.expectCheckboxStateToBe(state);
   }
 
   public async expectCheckboxStateToBe(state: checkboxesStateType) {

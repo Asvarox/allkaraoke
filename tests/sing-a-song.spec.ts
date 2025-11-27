@@ -49,8 +49,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Ensure song languages are selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureLanguageStateToBe(song1.language, 'selected');
-    await pages.songLanguagesPage.ensureLanguageStateToBe(song2.language, 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song1.language);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song2.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

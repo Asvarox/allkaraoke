@@ -213,7 +213,7 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureLanguageStateToBe('Spanish', 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected('Spanish');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

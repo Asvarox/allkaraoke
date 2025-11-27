@@ -27,7 +27,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureLanguageStateToBe(song.language, 'selected');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 
