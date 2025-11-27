@@ -80,7 +80,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await expect(await pages.songListPage.getSongElement(songs.english.modern, false)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.polish.old.duet)).toBeVisible();
-    await pages.songListPage.focusSong(songs.polish.pol);
+    await pages.songListPage.ensureSongToBeSelected(songs.polish.pol);
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {
@@ -171,7 +171,7 @@ test('Filters - PlayLists (Eurovision)', async ({ page }) => {
     await expect(await pages.songListPage.getSongElement(songs.english.modern)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.xmas)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.polish.old.duet)).toBeVisible();
-    await pages.songListPage.focusSong(songs.polish.pol);
+    await pages.songListPage.ensureSongToBeSelected(songs.polish.pol);
   });
 
   await test.step('Going to Eurovision-playlist and check songs visibility', async () => {
@@ -305,7 +305,7 @@ test('Song List - Random song', async ({ page }) => {
   });
 
   await test.step('Random song is selected on shortcut', async () => {
-    await pages.songListPage.focusSong(songs.polish.old.duet);
+    await pages.songListPage.ensureSongToBeSelected(songs.polish.old.duet);
     await pages.songListPage.expectSelectedSongNotToBe(songs.last);
     await page.keyboard.press('Shift+R');
     await pages.songListPage.expectSelectedSongToBe(songs.last);
@@ -313,7 +313,7 @@ test('Song List - Random song', async ({ page }) => {
 
   await test.step('Random song is selected on random song button click', async () => {
     await page.waitForTimeout(500); // trying to focus song mid-scroll can make it not exist in the virtual list
-    await pages.songListPage.focusSong(songs.polish.old.duet);
+    await pages.songListPage.ensureSongToBeSelected(songs.polish.old.duet);
     await pages.songListPage.expectSelectedSongNotToBe(songs.last);
     await pages.songListPage.pickRandomButton.click();
     // Second random selects next-to-last song as there's mechanism that prevents selecting the same song twice

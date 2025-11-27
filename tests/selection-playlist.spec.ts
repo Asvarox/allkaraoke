@@ -56,10 +56,10 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
 
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
+    await pages.songListPage.closeSelectionPlaylistTip();
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
-    await pages.songListPage.focusSong(unpopularSong.ID);
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
@@ -93,8 +93,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.goToPlaylist(engPlaylist);
-    await pages.songListPage.focusSong(unpopularSong.ID);
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
   });
 
   await test.step('Select Advanced setup', async () => {
@@ -134,13 +133,13 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('Search the song - expect song is not visible in Selection playlist yet', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
-    await pages.songListPage.closeTheSelectionPlaylistTip();
+    await pages.songListPage.closeSelectionPlaylistTip();
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
   });
 
   await test.step('Toggle game mode to `Cooperation`', async () => {
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
     await pages.songPreviewPage.toggleGameMode();
     await pages.songPreviewPage.toggleGameMode();
   });
@@ -259,8 +258,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Check if the selection-playlist tip is visible and can be closed', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await expect(pages.songListPage.selectionPlaylistTip).toBeVisible();
-    await pages.songListPage.closeTheSelectionPlaylistTip();
-    await expect(pages.songListPage.selectionPlaylistTip).not.toBeVisible();
+    await pages.songListPage.closeSelectionPlaylistTip();
   });
 
   await test.step('After singing, the song indicator should be changed from `popular` to `played today`', async () => {

@@ -33,7 +33,7 @@ test('should restart the song and the scores', async ({ page }) => {
 
   await test.step('Choose the song', async () => {
     await expect(await pages.songListPage.getSongElement(song.ID)).toBeVisible();
-    await pages.songListPage.focusSong(song.ID);
+    await pages.songListPage.ensureSongToBeSelected(song.ID);
     await pages.songListPage.approveSelectedSongByKeyboard();
   });
 

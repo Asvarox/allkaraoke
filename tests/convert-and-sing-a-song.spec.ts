@@ -79,7 +79,7 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Search and pick up converted song', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.searchSong(`${songArtist} ${songTitle}`);
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
   });
 

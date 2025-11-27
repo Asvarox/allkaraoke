@@ -63,7 +63,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Check visibility of duet icon in duet song', async () => {
-    await pages.songListPage.focusSong(song2.ID);
+    await pages.songListPage.ensureSongToBeSelected(song2.ID);
     await expect(await pages.songListPage.getDuetSongIcon(song2.ID)).toBeVisible();
     await expect(await pages.songListPage.getDuetSongIcon(song1.ID)).not.toBeVisible();
   });

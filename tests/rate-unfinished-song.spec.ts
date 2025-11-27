@@ -38,7 +38,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
       await pages.songListPage.toolbar.ensureFullscreenIsOff();
     }
     await expect(pages.songListPage.songPreviewElement).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
@@ -85,7 +85,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   const navigateAndPlayNextSong = async () => {
     await goBackToSongList();
     await test.step('Play the song', async () => {
-      await pages.songListPage.openPreviewForSong(songsID.french);
+      await pages.songListPage.openSongPreview(songsID.french);
       await pages.songPreviewPage.goNext();
       await pages.songPreviewPage.playTheSong(true, false);
     });
@@ -116,7 +116,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     if (browserName === 'firefox') {
       await pages.songListPage.toolbar.ensureFullscreenIsOff();
     }
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
@@ -161,7 +161,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await goBackToSongList();
 
   await test.step('Choose the song and change input to Smartphones mic', async () => {
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
 
     await pages.songPreviewPage.goToInputSelectionPage();
@@ -203,7 +203,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
     await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.spanish);
+    await pages.songListPage.ensureSongToBeSelected(songsID.spanish);
     await pages.songListPage.expectSelectedSongToBe(songsID.spanish);
   });
 });
@@ -219,7 +219,7 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
 
   await test.step('Select computer`s mic and play the song', async () => {
     await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.spanish);
+    await pages.songListPage.openSongPreview(songsID.spanish);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();

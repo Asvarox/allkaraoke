@@ -92,7 +92,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(await pages.songListPage.getSongElement(song1ID)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
 
-    await pages.songListPage.focusSong(song2.ID);
+    await pages.songListPage.ensureSongToBeSelected(song2.ID);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
     await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
