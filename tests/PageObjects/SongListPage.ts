@@ -169,4 +169,8 @@ export class SongListPagePO {
   public get remoteMicPlaylistTip() {
     return this.page.getByTestId('remote-mic-playlist-tip');
   }
+
+  public get addMissingSongButton() {
+    return this.page.getByTestId('add-new-song');
+  }
 }
