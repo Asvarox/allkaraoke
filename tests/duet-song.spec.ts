@@ -27,17 +27,17 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Go to select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Go to duets-playlist and pick up the song', async () => {
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await pages.songListPage.focusSong(duetPolSong);
+    await pages.songListPage.ensureSongToBeSelected(duetPolSong);
     await expect(await pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishIsoCode);
-    await pages.songListPage.openPreviewForSong(duetPolSong);
+    await pages.songListPage.openSongPreview(duetPolSong);
   });
 
   await test.step('Select computer`s mic', async () => {
@@ -93,7 +93,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(spanishLang);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(spanishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -105,8 +105,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Check visibility of song language flag and open song', async () => {
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetSpanSong, spanishIsoCode);
-    await pages.songListPage.focusSong(duetSpanSong);
-    await pages.songListPage.openPreviewForSong(duetSpanSong);
+    await pages.songListPage.openSongPreview(duetSpanSong);
   });
 
   await test.step('Set Pass-The-Mic game mode', async () => {

@@ -40,7 +40,7 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   await test.step('Go to open song preview', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
   });
 
@@ -78,7 +78,7 @@ test('Source selection in in-game menu', async ({ page }) => {
   await test.step('Go to play the song', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);

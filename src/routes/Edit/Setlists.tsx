@@ -147,7 +147,7 @@ export default function Setlists() {
                     </div>
                   );
                 })}
-                {setlists.length === 0 && <h6>No setlists created yet</h6>}
+                {setlists.length === 0 && <h6 data-test={'no-setlist-created'}>No setlists created yet</h6>}
               </div>
             </Grid>
             <Grid item xs={12}>

@@ -7,8 +7,12 @@ export class ManageSongsPagePO {
     private browser: Browser,
   ) {}
 
+  public get editSongsButton() {
+    return this.page.getByTestId('edit-songs');
+  }
+
   public async goToEditSongs() {
-    await this.page.getByTestId('edit-songs').click();
+    await this.editSongsButton.click();
   }
 
   public async goToSelectSongLanguage() {
@@ -21,5 +25,9 @@ export class ManageSongsPagePO {
 
   public async goToManageSetlists() {
     await this.manageSetlistsButton.click();
+  }
+
+  public async goBackToMainMenu() {
+    await this.page.getByTestId('back-button').click();
   }
 }

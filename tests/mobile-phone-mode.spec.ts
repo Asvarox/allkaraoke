@@ -104,7 +104,7 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await page.waitForTimeout(500); // let the list with virtualization load
-    await pages.songListPage.focusSong(songID);
+    await pages.songListPage.ensureSongToBeSelected(songID);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);

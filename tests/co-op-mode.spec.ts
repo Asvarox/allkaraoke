@@ -30,13 +30,13 @@ test('Cooperation mode', async ({ page }) => {
   });
 
   await test.step('Make sure song language is selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Navigate to song', async () => {
     await expect(await pages.songListPage.getSongElement(polSong)).toBeVisible();
-    await pages.songListPage.focusSong(polSong);
+    await pages.songListPage.ensureSongToBeSelected(polSong);
     await pages.songListPage.approveSelectedSongByKeyboard();
     await expect(pages.songPreviewPage.nextButton).toBeVisible();
   });

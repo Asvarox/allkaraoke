@@ -73,13 +73,13 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Select song language', async () => {
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(songLanguage);
   });
 
   await test.step('Search and pick up converted song', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.searchSong(`${songArtist} ${songTitle}`);
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
   });
 
