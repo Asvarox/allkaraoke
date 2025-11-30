@@ -1,4 +1,4 @@
-import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import { VideoState } from 'modules/Elements/VideoPlayer';
 import CanvasDrawing from 'modules/GameEngine/Drawing';

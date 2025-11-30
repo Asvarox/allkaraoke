@@ -12,8 +12,12 @@ const config: StorybookConfig = {
   core: {},
   async viteFinal(config) {
     return mergeConfig(config, {
-      // @ts-expect-error for some reason the default import is not working
-      plugins: [tsconfigPaths.default()],
+      plugins: [tsconfigPaths()],
+      build: {
+        rollupOptions: {
+          external: ['nano-css/addon/vcssom'],
+        },
+      },
     });
   },
 };
