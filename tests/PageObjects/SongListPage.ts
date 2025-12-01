@@ -47,11 +47,11 @@ export class SongListPagePO {
   }
 
   public async ensureSongToBeSelected(songID: string) {
+    await expect(await this.getSongElement(songID)).toBeVisible();
+
     if (!(await this.isSongSelected(songID))) {
       await this.ensureSongIsScrolledTo(songID);
     }
-    await expect(await this.getSongElement(songID)).toBeInViewport();
-
     if (!(await this.isSongSelected(songID))) {
       const songElement = await this.getSongElement(songID, false);
       await songElement.click();
