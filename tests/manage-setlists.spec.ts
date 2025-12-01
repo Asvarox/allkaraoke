@@ -9,17 +9,37 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test.describe('New user`s setlist', async () => {
-  test('Adding and removing songs in setlist - works', async ({ page }) => {
+test.describe('New setlist', async () => {
+  test('User`s setlist works', async ({ page }) => {
     const setlistName = 'My setlist #1 - Allkaraoke';
 
-    const songID = {
-      num1: 'zzz-last-polish-1994',
-      num2: 'e2e-single-english-1995',
-      num3: 'e2e-croissant-french-1994',
+    const songs = {
+      num1: {
+        id: 'zzz-last-polish-1994',
+        language: 'Polish',
+      },
+      num2: {
+        id: 'e2e-single-english-1995',
+        language: 'English',
+      },
+      num3: {
+        id: 'e2e-pass-test-spanish-1994',
+        language: 'Spanish',
+      },
+      num4: {
+        id: 'e2e-cote-dazur-french-1994',
+        language: 'French',
+      },
     } as const;
 
-    await test.step('Go to Manage Setlists Page', async () => {
+    const setlistURL = {
+      num1: '',
+      num2: '',
+    };
+
+    test.slow();
+
+    await test.step('Go to Manage-Setlists Page', async () => {
       await page.goto('/?e2e-test');
       await pages.landingPage.enterTheGame();
       await pages.mainMenuPage.goToManageSongs();
@@ -28,28 +48,128 @@ test.describe('New user`s setlist', async () => {
     });
 
     await test.step('Create new setlist - its details and setlist buttons should appear', async () => {
+      await expect(pages.manageSetlists.noSetlistCreatedInfo).toBeVisible();
       await pages.manageSetlists.goToCreateNewSetlist(setlistName);
-      await expect(pages.manageSetlists.getCreatedSetlistElement(setlistName)).toBeVisible();
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).toBeVisible();
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 0);
       await pages.manageSetlists.expectDefaultSetlistButtonsToBeVisible(setlistName);
       await pages.manageSetlists.expectSetlistEditModeStateToBe(setlistName, 'on');
     });
 
     await test.step('Go to edit setlist and select some songs - songs should be added to the setlist', async () => {
-      await pages.manageSetlists.goToEditSetlist(setlistName);
-      await pages.manageSetlists.addSongToSetlist(songID.num1);
-      await pages.manageSetlists.addSongToSetlist(songID.num2);
-      await pages.manageSetlists.addSongToSetlist(songID.num3);
-      await pages.manageSetlists.expectSongToBeSelected(songID.num1);
-      await pages.manageSetlists.expectSongToBeSelected(songID.num2);
-      await pages.manageSetlists.expectSongToBeSelected(songID.num3);
-      await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
+      await pages.manageSetlists.addSongToSetlist(setlistName, songs.num1.id);
+      await pages.manageSetlists.addSongToSetlist(setlistName, songs.num2.id);
+      await pages.manageSetlists.addSongToSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.addSongToSetlist(setlistName, songs.num4.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num1.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num2.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num4.id);
+      await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 4);
     });
 
     await test.step('After unselecting the song, it should be removed from the setlist', async () => {
-      await pages.manageSetlists.removeSongFromSetlist(songID.num3);
-      await pages.manageSetlists.expectSongToBeUnselected(songID.num3);
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num4.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num4.id);
+      await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
+    });
+
+    await test.step('After copying link, url should be generated correctly and lead to setlist containing only selected songs', async () => {
+      await pages.manageSetlists.clickToCopyLinkToSetlist(setlistName);
+      setlistURL.num1 = await pages.manageSetlists.getSetlistURL(setlistName);
+
+      await page.goto(setlistURL.num1);
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToSingSong();
+      await pages.songLanguagesPage.expectLanguageToBeSelected(songs.num1.language);
+      await pages.songLanguagesPage.expectLanguageToBeSelected(songs.num2.language);
+      await pages.songLanguagesPage.ensureLanguageToBeSelected(songs.num3.language);
+      await expect(pages.songLanguagesPage.getLanguageCheckbox(songs.num4.language)).not.toBeVisible();
+
+      await pages.songLanguagesPage.continueAndGoToSongList();
+      await expect(await pages.songListPage.getSongElement(songs.num1.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num2.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num3.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num4.id)).not.toBeVisible();
+    });
+
+    await test.step('1 - When setlist edit mode is on, user with link is able only to remove and restore songs from the setlist', async () => {
+      await pages.songListPage.goBackToMainMenu();
+      await pages.mainMenuPage.goToManageSongs();
+      await pages.manageSongsPage.goToManageSetlists();
+      await pages.manageSetlists.goToEditSetlist(setlistName);
+      await pages.manageSetlists.expectSetlistEditModeStateToBe(setlistName, 'on');
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num1.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num2.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
+      await expect(pages.manageSetlists.getSongElement(songs.num4.id)).not.toBeVisible();
+
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num3.id);
       await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 2);
+
+      await pages.manageSetlists.addSongToSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeSelected(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSetlistSongCountToBe(setlistName, 3);
+    });
+
+    await test.step('2 - After modifying setlist, generated link should be different than before and removed song should be excluded', async () => {
+      await pages.manageSetlists.removeSongFromSetlist(setlistName, songs.num3.id);
+      await pages.manageSetlists.expectSongToBeUnselected(setlistName, songs.num3.id);
+
+      await pages.manageSetlists.clickToCopyLinkToSetlist(setlistName);
+      setlistURL.num2 = await pages.manageSetlists.getSetlistURL(setlistName);
+
+      await expect(setlistURL.num1).not.toEqual(setlistURL.num2);
+
+      await page.goto(setlistURL.num2);
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToSingSong();
+      await expect(await pages.songListPage.getSongElement(songs.num1.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num2.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num3.id)).not.toBeVisible();
+      await expect(pages.songListPage.addMissingSongButton).toBeVisible();
+    });
+
+    await test.step('Only selected songs should be visible in Edit-Songs Page as well', async () => {
+      await pages.songListPage.goBackToMainMenu();
+      await pages.mainMenuPage.goToManageSongs();
+      await pages.manageSongsPage.goToEditSongs();
+      await expect(pages.editSongsPage.getSongElement(songs.num1.id)).toBeVisible();
+      await expect(pages.editSongsPage.getSongElement(songs.num2.id)).toBeVisible();
+      await expect(pages.editSongsPage.getSongElement(songs.num3.id)).not.toBeVisible();
+    });
+
+    await test.step('When setlist edit mode is off, user has no access to Manage-Setlist and Edit-Songs Page', async () => {
+      await pages.editSongsPage.goToMainMenu();
+      await pages.mainMenuPage.goToManageSongs();
+      await pages.manageSongsPage.goToManageSetlists();
+      await pages.manageSetlists.setSetlistEditMode(setlistName, 'not editable');
+      await pages.manageSetlists.expectSetlistEditModeStateToBe(setlistName, 'off');
+
+      await pages.manageSetlists.copyAndOpenLinkToSetlist(setlistName);
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToManageSongs();
+      await expect(pages.manageSongsPage.manageSetlistsButton).not.toBeVisible();
+      await expect(pages.manageSongsPage.editSongsButton).not.toBeVisible();
+
+      await pages.manageSongsPage.goBackToMainMenu();
+      await pages.mainMenuPage.goToSingSong();
+      await expect(await pages.songListPage.getSongElement(songs.num1.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num2.id)).toBeVisible();
+      await expect(await pages.songListPage.getSongElement(songs.num3.id)).not.toBeVisible();
+      await expect(pages.songListPage.addMissingSongButton).not.toBeVisible();
+    });
+
+    await test.step('After deleting setlist, it is no longer visible', async () => {
+      await page.goto('/?e2e-test');
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToManageSongs();
+      await pages.manageSongsPage.goToManageSetlists();
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).toBeVisible();
+      await pages.manageSetlists.removeSetlist(setlistName);
+      await expect(pages.manageSetlists.getSetlistElement(setlistName)).not.toBeVisible();
+      await expect(pages.manageSetlists.noSetlistCreatedInfo).toBeVisible();
     });
   });
 });

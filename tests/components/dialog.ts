@@ -12,4 +12,10 @@ export class Dialog {
       await dialog.accept(message);
     });
   }
+
+  public async acceptWhenDialogAppears() {
+    this.page.once('dialog', async (dialog) => {
+      dialog.accept().catch();
+    });
+  }
 }
