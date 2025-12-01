@@ -106,7 +106,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Play the song and after above 80% complete - exit the song', async () => {
     await pages.songPreviewPage.playTheSong();
     await page.waitForTimeout(3_500);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
   });
 
   await test.step('Skip to the Song list', async () => {
@@ -154,7 +154,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('After reach the expected score - exit the game', async () => {
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
   });
 

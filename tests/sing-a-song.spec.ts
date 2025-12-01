@@ -168,7 +168,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await pages.songPreviewPage.playTheSong(true, false);
     await expect(page.locator(p1CL)).toBeVisible();
     await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
-    await pages.gamePage.goToPauseMenu(); // another pause-menu opening method
+    await pages.gamePage.openPauseMenuByClick();
   });
 
   // test.step - Get current players scores
@@ -176,13 +176,13 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   const currentP2score: null | string = await pages.gamePage.getCurrentPlayerScore(player2.number);
 
   await test.step('When the song resumes, the players score values should be the same as before', async () => {
-    await pages.gamePage.resumeSongButton.click();
+    await pages.pauseMenuPage.resumeSong();
     await pages.gamePage.expectPlayerScoreValueToBe(player1.number, currentP1score!);
     await pages.gamePage.expectPlayerScoreValueToBe(player2.number, currentP2score!);
   });
 
   await test.step('After game is ended, properly players score values should be displayed', async () => {
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player1.number, currentP1score!);
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player2.number, currentP2score!);

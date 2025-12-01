@@ -45,7 +45,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
 
   await test.step('After exiting an unfinished song, the user sees a window where they can provide a reason for stopping', async () => {
     await page.waitForTimeout(1000);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.lyricsSyncIssueButton).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.wrongLyricsIssueButton).toBeVisible();
@@ -59,7 +59,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
   });
 
   await test.step('User can skip the song rating container and go to pick up another song', async () => {
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSongWithKeyboard();
     await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
@@ -93,7 +93,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await test.step('Exit the song before its end', async () => {
       await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
       await page.waitForTimeout(500);
-      await pages.gamePage.exitSong();
+      await pages.gamePage.openPauseMenuAndExitSong();
     });
   };
 
@@ -124,7 +124,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
     await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
     await page.waitForTimeout(500);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
   });
 
@@ -193,7 +193,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
     await page.waitForTimeout(500);
     await remoteMic.remoteMicMainPage.goToPauseMenuWithKeyboard();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-exit-song', remoteMic._page);
+    await pages.pauseMenuPage.exitSongWithKeyboard(remoteMic._page);
   });
 
   await test.step('Only 1 volume issue (too quiet/too loud) can be selected at the same time - after clicking also on 2nd option, 1st is unselected', async () => {
@@ -246,7 +246,7 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
 
   await test.step('Exit the song - the `too quiet` issue should not be displayed for selection, when song has max vol = 1', async () => {
     await page.waitForTimeout(1000);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.tooQuietIssueButton).not.toBeVisible();
     await expect(pages.rateUnfinishedSongPage.asLoudAsItCouldBeInfo).toBeVisible();

@@ -44,7 +44,7 @@ test('should restart the song and the scores', async ({ page }) => {
   });
 
   await test.step('After restarting, the song should be played from the beginning - with score 0', async () => {
-    await pages.gamePage.restartSong();
+    await pages.gamePage.openPauseMenuAndRestartSong();
     await pages.gamePage.expectPlayersCoopScoreValueToBe(0);
   });
 });

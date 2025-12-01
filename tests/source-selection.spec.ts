@@ -85,8 +85,7 @@ test('Source selection in in-game menu', async ({ page }) => {
   });
 
   await test.step('Changing input is possible in-game', async () => {
-    await page.keyboard.press('Backspace');
-    await pages.gamePage.microphonesSettings();
+    await pages.gamePage.openPauseMenuAndSelectMicSettingsWithKeyboard();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMic.num);
     await pages.advancedConnectionPage.goToSongPreview();
     await expectMonitoringToBeEnabled(page);
