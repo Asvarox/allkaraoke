@@ -69,12 +69,12 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
   });
 
   await test.step('Player name and score are displayed for 1 player', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
-    await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1Name);
 
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player2)).not.toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p1')).toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p2')).not.toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 });
 
@@ -112,6 +112,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
     await pages.songPreviewPage.toggleGameMode(); // Duel
     await pages.songPreviewPage.toggleGameMode(); // Pass the mic
+    // wrzucic ensure do toggle xD
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
   });
 
@@ -155,9 +156,9 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Player name and score are displayed for 1 player', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
-    await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1Name);
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p1')).toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 });

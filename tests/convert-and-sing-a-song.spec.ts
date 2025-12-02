@@ -98,12 +98,12 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Check if the entered players names are displayed', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectCoopPlayersNameToBe(player1Name, player2Name);
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();

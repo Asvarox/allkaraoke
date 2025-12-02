@@ -55,16 +55,16 @@ test('Cooperation mode', async ({ page }) => {
   });
 
   await test.step('Names of cooperating players are visible', async () => {
-    await expect(pages.postGameResultsPage.playersNamesCoopElement).toBeVisible({ timeout: 30_000 });
-    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
-    await expect(pages.postGameResultsPage.getPlayerNameElement(redMicNum)).not.toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerNameElement('coop')).toBeVisible({ timeout: 30_000 });
+    await pages.postGameResultsPage.expectCoopPlayersNameToBe(player1Name, player2Name);
+    await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 
   await test.step('Skip to high scores - players names are visible', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible();
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(100);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
-    await expect(pages.postGameHighScoresPage.getPlayersNamesCoopInput(player1Name, player2Name)).toBeVisible();
+    await expect(pages.postGameHighScoresPage.getCoopPlayersInput(player1Name, player2Name)).toBeVisible();
   });
 });

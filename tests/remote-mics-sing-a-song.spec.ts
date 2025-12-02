@@ -151,14 +151,14 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
 
   await test.step('Check if players names are displayed in results', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 15_000 });
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(100);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1.name);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p2', player2.name);
   });
 
   await test.step('Go to select new song', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();

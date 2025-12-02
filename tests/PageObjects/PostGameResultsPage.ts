@@ -1,5 +1,13 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
+export type playerSideType = 'p1' | 'p2' | 'coop';
+
+const playerSideToIndexMap: Record<playerSideType, number> = {
+  p1: 0,
+  p2: 1,
+  coop: 0,
+};
+
 export class PostGameResultsPagePO {
   constructor(
     private page: Page,
@@ -7,48 +15,12 @@ export class PostGameResultsPagePO {
     private browser: Browser,
   ) {}
 
-  public get skipScoreElement() {
+  public get skipScoresButton() {
     return this.page.getByTestId('skip-animation-button');
   }
 
   public async skipScoresAnimation() {
-    await this.skipScoreElement.click({ timeout: 20_000 });
-  }
-
-  public getPlayerNameElement(playerNumber: number) {
-    return this.page.getByTestId(`player-${playerNumber}-name`);
-  }
-
-  public async expectPlayerNameToBeDisplayed(playerNumber: number, playerName: string) {
-    await expect(this.getPlayerNameElement(playerNumber)).toHaveText(`${playerName}`);
-  }
-
-  public get playersNamesCoopElement() {
-    return this.page.getByTestId(`player-0-name`);
-  }
-
-  public async expectPlayersNamesCoopToBeDisplayed(player1Name: string, player2Name: string) {
-    await expect(this.playersNamesCoopElement).toHaveText(`${player1Name}, ${player2Name}`);
-  }
-
-  public getPlayerScoreElement(playerNumber: number) {
-    return this.page.getByTestId(`player-${playerNumber}-score`);
-  }
-
-  public async expectPlayerScoreValueToBe(playerNumber: number, expectedValue: string) {
-    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedValue);
-  }
-
-  public get playersCoopScoreElement() {
-    return this.page.getByTestId(`player-0-score`);
-  }
-
-  public async waitForPlayersScoreToBeGreaterThan(expected: number) {
-    await expect(async () => {
-      const p1score = await this.playersCoopScoreElement.getAttribute('data-score');
-
-      expect(parseInt(p1score!, 10)).toBeGreaterThan(expected);
-    }).toPass();
+    await this.skipScoresButton.click({ timeout: 20_000 });
   }
 
   public get nextButton() {
@@ -57,5 +29,36 @@ export class PostGameResultsPagePO {
 
   public async goToHighScoresStep() {
     await this.nextButton.click();
+  }
+
+  public getPlayerScoreElement(playerSide: playerSideType) {
+    return this.page.getByTestId(`player-${playerSideToIndexMap[playerSide]}-score`);
+  }
+
+  public async expectPlayerScoreToBe(playerSide: playerSideType, expectedScore: string) {
+    await expect(this.getPlayerScoreElement(playerSide)).toHaveAttribute('data-score', expectedScore);
+  }
+
+  public async expectCoopPlayersScoreToBe(expectedScore: string) {
+    await expect(this.getPlayerScoreElement('coop')).toHaveAttribute('data-score', expectedScore);
+  }
+
+  public getPlayerNameElement(playerSide: playerSideType) {
+    return this.getPlayerScoreElement(playerSide).getByTestId(`player-${playerSideToIndexMap[playerSide]}-name`);
+  }
+
+  public async expectPlayerNameToBe(playerSide: playerSideType, playerName: string) {
+    await expect(this.getPlayerNameElement(playerSide)).toHaveText(playerName);
+  }
+
+  public async expectCoopPlayersNameToBe(playerName_1: string, playerName_2: string) {
+    await expect(this.getPlayerNameElement('coop')).toHaveText(`${playerName_1}, ${playerName_2}`);
+  }
+
+  public async waitForPlayerScoreToBeGreaterThan(expected: number) {
+    await expect(async () => {
+      const coopScore = await this.getPlayerScoreElement('p1').getAttribute('data-score');
+      expect(parseInt(coopScore!, 10)).toBeGreaterThan(expected);
+    }).toPass();
   }
 }

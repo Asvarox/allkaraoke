@@ -131,18 +131,18 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('After the game, players names and scores should be displayed in Results', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 30_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.number, player1.name);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.number, player2.name);
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player1.number)).toBeVisible();
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player2.number)).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 30_000 });
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1.name);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p2', player2.name);
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p1')).toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p2')).toBeVisible();
   });
 
   await test.step('Skip to High Scores - check names visibility and update one of them', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
-    await expect(pages.postGameHighScoresPage.getPlayerNameInput(player1.name)).toBeVisible();
-    await expect(pages.postGameHighScoresPage.getPlayerNameInput(player2.name)).toBeVisible();
+    await expect(pages.postGameHighScoresPage.getPlayerInput(player1.name)).toBeVisible();
+    await expect(pages.postGameHighScoresPage.getPlayerInput(player2.name)).toBeVisible();
     await pages.postGameHighScoresPage.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
   });
 
@@ -184,8 +184,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await test.step('After game is ended, properly players score values should be displayed', async () => {
     await pages.gamePage.openPauseMenuAndExitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
-    await pages.postGameResultsPage.expectPlayerScoreValueToBe(player1.number, currentP1score!);
-    await pages.postGameResultsPage.expectPlayerScoreValueToBe(player2.number, currentP2score!);
+    await pages.postGameResultsPage.expectPlayerScoreToBe('p1', currentP1score!);
+    await pages.postGameResultsPage.expectPlayerScoreToBe('p2', currentP2score!);
   });
 
   await test.step('Check if the already updated name is still save in High Scores', async () => {
