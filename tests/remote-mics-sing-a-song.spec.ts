@@ -101,22 +101,22 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   await test.step('Check if the mics are reselected after they refresh', async () => {
     // Blue microphone
     await remoteMic1._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p1')).toBeVisible();
     await remoteMic1.remoteMicMainPage.enterPlayerName(player1.name);
 
     await connectRemoteMic(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p1')).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player1.name);
 
     // Red microphone
     await remoteMic2._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p2')).toBeVisible();
     await remoteMic2.remoteMicMainPage.enterPlayerName(player2.name);
 
     await connectRemoteMic(remoteMic2._page);
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p2')).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
     await pages.calibration.approveDefaultCalibrationSetting();

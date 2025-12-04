@@ -1,12 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
-
-export type playerSideType = 'p1' | 'p2' | 'coop';
-
-const playerSideToIndexMap: Record<playerSideType, number> = {
-  p1: 0,
-  p2: 1,
-  coop: 0,
-};
+import { playerSideToIndexMap, playerSideType } from '../PageObjects/SongPreviewPage';
 
 export class PostGameResultsPagePO {
   constructor(

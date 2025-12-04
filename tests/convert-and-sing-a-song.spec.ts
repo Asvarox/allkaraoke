@@ -84,10 +84,10 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Set players names', async () => {
-    await pages.songPreviewPage.getPlayerNameInput(player1).click();
+    await pages.songPreviewPage.getPlayerNameInput('p1').click();
     await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1Name);
 
-    await pages.songPreviewPage.getPlayerNameInput(player2).click();
+    await pages.songPreviewPage.getPlayerNameInput('p2').click();
     await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2Name);
   });
 

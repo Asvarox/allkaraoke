@@ -1,6 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import { Toolbar } from '../components/Toolbar';
-import { SongPreviewPagePO } from '../PageObjects/SongPreviewPage';
 
 export class SongListPagePO {
   constructor(
@@ -62,7 +61,6 @@ export class SongListPagePO {
   public async openSongPreview(songID: string) {
     await this.ensureSongToBeSelected(songID);
     await this.songPreviewElement.click({ force: true });
-    return new SongPreviewPagePO(this.page, this.context, this.browser);
   }
 
   public get songListContainer() {

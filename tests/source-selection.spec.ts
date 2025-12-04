@@ -55,7 +55,7 @@ test('Source selection in sing settings', async ({ page, browser }) => {
     await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(names.player1);
     await pages.advancedConnectionPage.goToSongPreview();
     await expect(pages.advancedConnectionPage.saveButton).not.toBeVisible();
-    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMic.num, names.player1);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith('p1', names.player1);
     // microphone of new device is being monitored
     await remoteMic.remoteMicMainPage.expectMicInputStateToBe('on');
   });

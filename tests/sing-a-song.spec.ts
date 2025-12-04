@@ -33,8 +33,6 @@ const player2 = {
 const updatedName = 'Updated name';
 const gameMode = 'Pass The Mic';
 const gameLevel = 'Easy';
-const track1 = 1;
-const track2 = 2;
 
 test('Sing a song', async ({ page, browserName }, testInfo) => {
   test.slow();
@@ -90,18 +88,18 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('After entering players names and setting tracks, play the song', async () => {
     // Player 1
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1.number)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1.number, player1.name);
-    await pages.songPreviewPage.expectEnteredPlayerNameToBe(player1.number, player1.name);
-    await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player1.number);
-    await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1.number, track2);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p1')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p1', player1.name);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBe('p1', player1.name);
+    await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard('p1');
+    await pages.songPreviewPage.expectPlayerTrackNumberToBe('p1', 'Track 2');
 
     // Player 2
-    await expect(pages.songPreviewPage.getPlayerNameInput(player2.number)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player2.number, player2.name);
-    await pages.songPreviewPage.expectEnteredPlayerNameToBe(player2.number, player2.name);
-    await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player2.number);
-    await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2.number, track1);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p2')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p2', player2.name);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBe('p2', player2.name);
+    await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard('p2');
+    await pages.songPreviewPage.expectPlayerTrackNumberToBe('p2', 'Track 1');
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
     await pages.calibration.approveDefaultCalibrationSetting();
   });
@@ -159,8 +157,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Players names should be already prefilled and updated name visible on recent player list', async () => {
-    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player1.number, player1.name);
-    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player2.number, player2.name);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith('p1', player1.name);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith('p2', player2.name);
     await pages.songPreviewPage.expectRecentPlayerListToContainName(updatedName);
   });
 

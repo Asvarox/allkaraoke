@@ -48,9 +48,9 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Enter player name and play the song with 1 player', async () => {
     await pages.computersMicConnectionPage.continueToTheSong();
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
-    await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getPlayerNameInput('p1')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p1', player1Name);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p2')).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
 
@@ -112,7 +112,6 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
     await pages.songPreviewPage.toggleGameMode(); // Duel
     await pages.songPreviewPage.toggleGameMode(); // Pass the mic
-    // wrzucic ensure do toggle xD
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
   });
 
@@ -124,9 +123,9 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Enter player name and play the song with 1 player', async () => {
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
-    await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getPlayerNameInput('p1')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p1', player1Name);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p2')).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
 
