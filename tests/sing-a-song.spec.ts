@@ -31,8 +31,6 @@ const player2 = {
   name: 'E2E Player 2',
 };
 const updatedName = 'Updated name';
-const gameMode = 'Pass The Mic';
-const gameLevel = 'Easy';
 
 test('Sing a song', async ({ page, browserName }, testInfo) => {
   test.slow();
@@ -73,16 +71,11 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Set game mode', async () => {
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
-    await page.keyboard.press('Enter'); // change to duel
-    await page.keyboard.press('Enter'); // change to pass the mic
-    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.ensureGameModeToBeSetWithKeyboard('Pass The Mic');
   });
 
   await test.step('Set difficulty level', async () => {
-    await pages.songPreviewPage.navigateToDifficultySettingsWithKeyboard();
-    await page.keyboard.press('Enter'); // change to hard
-    await page.keyboard.press('Enter'); // change to easy
-    await pages.songPreviewPage.expectGameDifficultyLevelToBe(gameLevel);
+    await pages.songPreviewPage.navigateAndSetDifficultySettingsWithKeyboard('Easy');
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
   });
 

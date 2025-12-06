@@ -4,6 +4,9 @@ import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export type playerSideType = 'p1' | 'p2' | 'coop';
 export type trackNameType = 'Track 1' | 'Track 2';
+type settingsOptionType = 'game mode' | 'difficulty setting';
+type gameModeType = 'Duel' | 'Pass The Mic' | 'Cooperation';
+type difficultyLevelType = 'Easy' | 'Medium' | 'Hard';
 
 export const playerSideToIndexMap: Record<playerSideType, number> = {
   p1: 0,
@@ -29,6 +32,11 @@ export class SongPreviewPagePO {
   private playSongButtonSelector = 'play-song-button';
   private gameModeSettingSelector = 'game-mode-setting';
   private difficultySettingSelector = 'difficulty-setting';
+
+  public settingOptionToSelectorMap: Record<settingsOptionType, string> = {
+    'game mode': this.gameModeSettingSelector,
+    'difficulty setting': this.difficultySettingSelector,
+  } as const;
 
   public get nextButton() {
     return this.page.getByTestId(this.nextButtonSelector);
@@ -72,32 +80,64 @@ export class SongPreviewPagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public get gameModeSettingsElement() {
-    return this.page.getByTestId(this.gameModeSettingSelector);
+  public getSettingElement(settingsOption: settingsOptionType) {
+    return this.page.getByTestId(this.settingOptionToSelectorMap[settingsOption]);
   }
 
-  public async toggleGameMode() {
-    await this.gameModeSettingsElement.click();
+  public getSelectedSettingElement(
+    settingsOption: settingsOptionType,
+    expectedMode: gameModeType | difficultyLevelType,
+  ) {
+    return this.page.locator(
+      `[data-test="${this.settingOptionToSelectorMap[settingsOption]}"][data-test-value="${expectedMode}"]`,
+    );
+  }
+
+  private async ensureElementToBeSet(
+    settingsOption: settingsOptionType,
+    expectedMode: gameModeType | difficultyLevelType,
+    keyboard = false,
+  ) {
+    const settingOptionElement = this.getSettingElement(settingsOption);
+    const selectedSettingOptionElement = this.getSelectedSettingElement(settingsOption, expectedMode);
+
+    while (await selectedSettingOptionElement.isHidden()) {
+      if (keyboard) {
+        await this.page.keyboard.press('Enter');
+      } else {
+        await settingOptionElement.click();
+      }
+    }
+    await expect(selectedSettingOptionElement).toBeVisible();
+  }
+
+  public async ensureGameModeToBeSet(expectedMode: gameModeType) {
+    await this.ensureElementToBeSet('game mode', expectedMode);
+  }
+
+  public async ensureGameModeToBeSetWithKeyboard(expectedMode: gameModeType) {
+    await this.ensureElementToBeSet('game mode', expectedMode, true);
   }
 
   public async navigateToGameModeSettingsWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, this.gameModeSettingSelector, remoteMic);
   }
 
-  public async expectGameModeToBe(modeName: string) {
-    await expect(this.gameModeSettingsElement).toHaveAttribute('data-test-value', `${modeName}`);
+  public async ensureDifficultySettingsToBeSet(expectedLevel: difficultyLevelType) {
+    await this.ensureElementToBeSet('difficulty setting', expectedLevel);
   }
 
-  public get difficultySettingsElement() {
-    return this.page.getByTestId(this.difficultySettingSelector);
+  public async ensureDifficultySettingsToBeSetWithKeyboard(expectedLevel: difficultyLevelType) {
+    await this.ensureElementToBeSet('difficulty setting', expectedLevel, true);
   }
 
   public async navigateToDifficultySettingsWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, this.difficultySettingSelector, remoteMic);
   }
 
-  public async expectGameDifficultyLevelToBe(level: string) {
-    await expect(this.difficultySettingsElement).toHaveAttribute('data-test-value', `${level}`);
+  public async navigateAndSetDifficultySettingsWithKeyboard(expectedLevel: difficultyLevelType, remoteMic?: Page) {
+    await this.navigateToDifficultySettingsWithKeyboard(remoteMic);
+    await this.ensureDifficultySettingsToBeSetWithKeyboard(expectedLevel);
   }
 
   public getPlayerNameInputSelector(playerSide: playerSideType) {

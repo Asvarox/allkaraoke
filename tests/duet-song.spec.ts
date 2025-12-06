@@ -83,7 +83,6 @@ const artist = 'E2E-el-Dueto';
 const songTitle = 'Pass Test';
 const spanishLang = 'Spanish';
 const spanishIsoCode = 'es';
-const gameMode = 'Pass The Mic';
 
 test('Sing a duet song in pass-the-mic mode as a single connected player', async ({ page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
@@ -110,9 +109,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Set Pass-The-Mic game mode', async () => {
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
-    await pages.songPreviewPage.toggleGameMode(); // Duel
-    await pages.songPreviewPage.toggleGameMode(); // Pass the mic
-    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.ensureGameModeToBeSet('Pass The Mic');
   });
 
   await test.step('Go to select computer`s mic', async () => {

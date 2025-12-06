@@ -140,8 +140,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('Toggle game mode to `Cooperation`', async () => {
     await pages.songListPage.openSongPreview(unpopularSong.ID);
-    await pages.songPreviewPage.toggleGameMode();
-    await pages.songPreviewPage.toggleGameMode();
+    await pages.songPreviewPage.ensureGameModeToBeSet('Cooperation');
   });
 
   await test.step('Go to select Advanced setup and play the song', async () => {

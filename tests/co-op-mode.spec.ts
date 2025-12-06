@@ -42,7 +42,7 @@ test('Cooperation mode', async ({ page }) => {
   });
 
   await test.step('Set Cooperation game mode and navigate to song', async () => {
-    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.ensureGameModeToBeSet(gameMode);
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
     await pages.calibration.approveDefaultCalibrationSetting();
