@@ -27,17 +27,17 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Go to select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Go to duets-playlist and pick up the song', async () => {
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await pages.songListPage.focusSong(duetPolSong);
+    await pages.songListPage.ensureSongToBeSelected(duetPolSong);
     await expect(await pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishIsoCode);
-    await pages.songListPage.openPreviewForSong(duetPolSong);
+    await pages.songListPage.openSongPreview(duetPolSong);
   });
 
   await test.step('Select computer`s mic', async () => {
@@ -48,9 +48,9 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Enter player name and play the song with 1 player', async () => {
     await pages.computersMicConnectionPage.continueToTheSong();
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
-    await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getPlayerNameInput('p1')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p1', player1Name);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p2')).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
 
@@ -69,12 +69,12 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
   });
 
   await test.step('Player name and score are displayed for 1 player', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
-    await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1Name);
 
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player2)).not.toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p1')).toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p2')).not.toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 });
 
@@ -83,7 +83,6 @@ const artist = 'E2E-el-Dueto';
 const songTitle = 'Pass Test';
 const spanishLang = 'Spanish';
 const spanishIsoCode = 'es';
-const gameMode = 'Pass The Mic';
 
 test('Sing a duet song in pass-the-mic mode as a single connected player', async ({ page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
@@ -93,7 +92,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Select song language', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(spanishLang);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(spanishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -105,15 +104,12 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Check visibility of song language flag and open song', async () => {
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetSpanSong, spanishIsoCode);
-    await pages.songListPage.focusSong(duetSpanSong);
-    await pages.songListPage.openPreviewForSong(duetSpanSong);
+    await pages.songListPage.openSongPreview(duetSpanSong);
   });
 
   await test.step('Set Pass-The-Mic game mode', async () => {
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
-    await pages.songPreviewPage.toggleGameMode(); // Duel
-    await pages.songPreviewPage.toggleGameMode(); // Pass the mic
-    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.ensureGameModeToBeSet('Pass The Mic');
   });
 
   await test.step('Go to select computer`s mic', async () => {
@@ -124,9 +120,9 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Enter player name and play the song with 1 player', async () => {
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
-    await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getPlayerNameInput('p1')).toBeVisible();
+    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard('p1', player1Name);
+    await expect(pages.songPreviewPage.getPlayerNameInput('p2')).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
 
@@ -156,9 +152,9 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Player name and score are displayed for 1 player', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
-    await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
-    await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1Name);
+    await expect(pages.postGameResultsPage.getPlayerScoreElement('p1')).toBeVisible();
+    await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 });

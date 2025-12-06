@@ -73,21 +73,21 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Select song language', async () => {
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(songLanguage);
   });
 
   await test.step('Search and pick up converted song', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.searchSong(`${songArtist} ${songTitle}`);
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
   });
 
   await test.step('Set players names', async () => {
-    await pages.songPreviewPage.getPlayerNameInput(player1).click();
+    await pages.songPreviewPage.getPlayerNameInput('p1').click();
     await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1Name);
 
-    await pages.songPreviewPage.getPlayerNameInput(player2).click();
+    await pages.songPreviewPage.getPlayerNameInput('p2').click();
     await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2Name);
   });
 
@@ -98,12 +98,12 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Check if the entered players names are displayed', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectCoopPlayersNameToBe(player1Name, player2Name);
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();

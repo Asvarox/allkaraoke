@@ -40,7 +40,7 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   await test.step('Go to open song preview', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
   });
 
@@ -55,7 +55,7 @@ test('Source selection in sing settings', async ({ page, browser }) => {
     await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(names.player1);
     await pages.advancedConnectionPage.goToSongPreview();
     await expect(pages.advancedConnectionPage.saveButton).not.toBeVisible();
-    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMic.num, names.player1);
+    await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith('p1', names.player1);
     // microphone of new device is being monitored
     await remoteMic.remoteMicMainPage.expectMicInputStateToBe('on');
   });
@@ -78,15 +78,14 @@ test('Source selection in in-game menu', async ({ page }) => {
   await test.step('Go to play the song', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.openSongPreview(songID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
   });
 
   await test.step('Changing input is possible in-game', async () => {
-    await page.keyboard.press('Backspace');
-    await pages.gamePage.microphonesSettings();
+    await pages.gamePage.openPauseMenuAndSelectMicSettingsWithKeyboard();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMic.num);
     await pages.advancedConnectionPage.goToSongPreview();
     await expectMonitoringToBeEnabled(page);

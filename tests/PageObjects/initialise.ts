@@ -11,6 +11,7 @@ import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
 import { ManageSetlistsPagePO } from './ManageSetlistsPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
+import { PauseMenuPagePO } from './PauseMenuPage';
 import { PostGameHighScoresPagePO } from './PostGameHighScoresPage';
 import { PostGameResultsPagePO } from './PostGameResultsPage';
 import { RateUnfinishedSongPagePO } from './RateUnfinishedSongPage';
@@ -54,5 +55,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
     calibration: new Calibration(page, context, browser),
     manageSetlists: new ManageSetlistsPagePO(page, context, browser),
+    pauseMenuPage: new PauseMenuPagePO(page, context, browser),
   };
 }

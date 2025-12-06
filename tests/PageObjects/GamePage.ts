@@ -1,5 +1,5 @@
 import { Browser, BrowserContext, Page, expect } from '@playwright/test';
-import navigateWithKeyboard from '../steps/navigateWithKeyboard';
+import { PauseMenuPagePO, settingsActionType, songActionType } from '../PageObjects/PauseMenuPage';
 
 export class GamePagePO {
   constructor(
@@ -8,13 +8,17 @@ export class GamePagePO {
     private browser: Browser,
   ) {}
 
+  pauseMenu = new PauseMenuPagePO(this.page, this.context, this.browser);
+
+  private skipIntroSelector = 'skip-intro-info';
+
   public get skipIntroElement() {
-    return this.page.getByTestId('skip-intro-info');
+    return this.page.getByTestId(this.skipIntroSelector);
   }
 
   public async skipIntroIfPossible() {
     try {
-      const skipIntroEl = await this.page.waitForSelector('[data-test="skip-intro-info"]', { timeout: 5_000 });
+      const skipIntroEl = await this.page.waitForSelector(`[data-test=${this.skipIntroSelector}`, { timeout: 5_000 });
 
       if (skipIntroEl) {
         await this.page.keyboard.press('Enter');
@@ -24,53 +28,55 @@ export class GamePagePO {
     }
   }
 
-  public async goToPauseMenu() {
+  public async openPauseMenuByClick() {
     await this.page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
+    await expect(this.pauseMenu.menuContainer).toBeVisible();
   }
 
-  public async goToPauseMenuByKeyboard() {
+  public async openPauseMenuByKeyboard() {
     await this.page.keyboard.press('Backspace');
+    await expect(this.pauseMenu.menuContainer).toBeVisible();
   }
 
-  public get restartButton() {
-    return this.page.getByTestId('button-restart-song');
+  private async openPauseMenuAndSelectAction(actionName: songActionType | settingsActionType) {
+    await this.openPauseMenuByKeyboard();
+    await this.pauseMenu.selectAction(actionName);
   }
 
-  public async restartSong() {
-    await this.goToPauseMenuByKeyboard();
-    await this.restartButton.click();
+  public async openPauseMenuAndResumeSong() {
+    await this.openPauseMenuAndSelectAction('resume');
   }
 
-  public get resumeSongButton() {
-    return this.page.getByTestId('button-resume-song');
+  public async openPauseMenuAndRestartSong() {
+    await this.openPauseMenuAndSelectAction('restart');
   }
 
-  public async resumeSong() {
-    await this.goToPauseMenuByKeyboard();
-    await this.resumeSongButton.click();
+  public async openPauseMenuAndExitSong() {
+    await this.openPauseMenuAndSelectAction('exit');
   }
 
-  public async exitSong() {
-    await this.goToPauseMenuByKeyboard();
-    await this.page.getByTestId('button-exit-song').click();
-  }
-
-  public async navigateAndApproveWithKeyboard(
-    buttonName:
-      | 'button-resume-song'
-      | 'button-restart-song'
-      | 'button-exit-song'
-      | 'input-settings'
-      | 'input-lag'
-      | 'edit-song',
+  private async openPauseMenuAndSelectActionWithKeyboard(
+    actionName: songActionType | settingsActionType,
     remoteMic?: Page,
   ) {
-    await navigateWithKeyboard(this.page, buttonName, remoteMic);
-    await this.page.keyboard.press('Enter');
+    await this.openPauseMenuByKeyboard();
+    await this.pauseMenu.confirmActionWithKeyboard(actionName, remoteMic);
   }
 
-  public async microphonesSettings() {
-    await this.page.getByTestId('input-settings').click();
+  public async openPauseMenuAndResumeSongWithKeyboard(remoteMic?: Page) {
+    await this.openPauseMenuAndSelectActionWithKeyboard('resume', remoteMic);
+  }
+
+  public async openPauseMenuAndRestartSongWithKeyboard(remoteMic?: Page) {
+    await this.openPauseMenuAndSelectActionWithKeyboard('restart', remoteMic);
+  }
+
+  public async openPauseMenuAndExitSongWithKeyboard(remoteMic?: Page) {
+    await this.openPauseMenuAndSelectActionWithKeyboard('exit', remoteMic);
+  }
+
+  public async openPauseMenuAndSelectMicSettingsWithKeyboard(remoteMic?: Page) {
+    await this.openPauseMenuAndSelectActionWithKeyboard('mic settings', remoteMic);
   }
 
   public getPlayerScoreElement(playerNumber: number) {

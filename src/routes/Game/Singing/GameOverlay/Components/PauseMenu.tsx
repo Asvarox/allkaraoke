@@ -48,7 +48,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     <>
       {!rateSongOpen && (
         <>
-          <Menu>
+          <Menu data-test="menu-container">
             <MenuButton {...register('button-resume-song', onResume)} ref={menuRef}>
               Resume song
             </MenuButton>
@@ -61,7 +61,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
             {}
             <InputLag ref={inputLagRef} {...register('input-lag', onInputLagActive)} />
             <MenuButton
-              {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
+              {...register('button-edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
               size="small">
               Edit song
             </MenuButton>

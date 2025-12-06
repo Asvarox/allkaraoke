@@ -7,12 +7,16 @@ export class PostGameHighScoresPagePO {
     private browser: Browser,
   ) {}
 
-  public getPlayerNameInput(playerName: string) {
-    return this.page.locator(`[data-test="input-edit-highscore"][data-original-name="${playerName}"]`);
+  public get highScoresContainer() {
+    return this.page.getByTestId('highscores-container');
   }
 
-  public getPlayersNamesCoopInput(player1Name: string, player2Name: string) {
-    return this.page.locator(`[data-test="input-edit-highscore"][data-original-name="${player1Name}, ${player2Name}"]`);
+  public getPlayerInput(playerName: string) {
+    return this.highScoresContainer.getByPlaceholder(playerName);
+  }
+
+  public getCoopPlayersInput(playerName_1: string, playerName_2: string) {
+    return this.highScoresContainer.getByPlaceholder(`${playerName_1}, ${playerName_2}`);
   }
 
   public async navigateAndUpdateHighestScorePlayerNameByKeyboard(newName: string) {
@@ -21,10 +25,6 @@ export class PostGameHighScoresPagePO {
     await this.page.keyboard.press('Enter');
     await this.page.keyboard.press('ArrowUp');
     await this.page.waitForTimeout(500); // It takes 300ms to save the score
-  }
-
-  public get highScoresContainer() {
-    return this.page.getByTestId('highscores-container');
   }
 
   public get selectSongButton() {
