@@ -31,7 +31,7 @@ const convertedSong = {
   author: 'Selection txt',
   sourceURL: 'https://example.com/source-url',
   videoID: 'koBUXESJZ8g',
-};
+} as const;
 
 const unpopularSong = {
   ID: 'e2e-christmas-english-1995',
@@ -188,7 +188,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
     await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
     await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
 
-    await pages.songEditAuthorAndVideoPage.enterAuthorName(convertedSong.author);
+    await pages.songEditAuthorAndVideoPage.enterLyricsFileAuthorName(convertedSong.author);
     await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${convertedSong.videoID}`);
     await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
 

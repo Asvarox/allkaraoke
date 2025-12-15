@@ -54,7 +54,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
 
   await test.step('After pressing Escape the user returns to game mode', async () => {
     await page.keyboard.press('Escape');
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
 
@@ -91,7 +91,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     });
 
     await test.step('Exit the song before its end', async () => {
-      await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+      await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
       await page.waitForTimeout(500);
       await pages.gamePage.openPauseMenuAndExitSong();
     });
@@ -122,7 +122,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await page.waitForTimeout(500);
     await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
@@ -190,7 +190,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await page.waitForTimeout(500);
     await remoteMic.remoteMicMainPage.goToPauseMenuWithKeyboard();
     await pages.pauseMenuPage.exitSongWithKeyboard(remoteMic._page);

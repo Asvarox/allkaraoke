@@ -10,9 +10,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const player1 = 0;
-const player2 = 1;
-
 const song = {
   ID: 'e2e-skip-intro-polish',
   language: 'Polish',
@@ -46,8 +43,8 @@ test('skip the intro from the song', async ({ page }) => {
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await pages.gamePage.skipIntroIfPossible();
     await expect(pages.gamePage.skipIntroElement).toBeVisible({ timeout: 6_000 });
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p2')).toBeVisible();
     await pages.postGameResultsPage.skipScoresAnimation();
   });
 });

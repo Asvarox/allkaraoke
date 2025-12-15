@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, Page, expect } from '@playwright/test';
 import { PauseMenuPagePO, settingsActionType, songActionType } from '../PageObjects/PauseMenuPage';
+import { playerSideToIndexMap, playerSideType } from '../PageObjects/SongPreviewPage';
 
 export class GamePagePO {
   constructor(
@@ -79,40 +80,42 @@ export class GamePagePO {
     await this.openPauseMenuAndSelectActionWithKeyboard('mic settings', remoteMic);
   }
 
-  public getPlayerScoreElement(playerNumber: number) {
-    return this.page.getByTestId(`player-${playerNumber}-score`);
+  public getPlayerScoreElement(playerSide: playerSideType) {
+    if (playerSide === 'coop') {
+      return this.page.getByTestId('players-score');
+    } else {
+      return this.page.getByTestId(`player-${playerSideToIndexMap[playerSide]}-score`);
+    }
   }
 
-  public async getCurrentPlayerScore(playerNumber: number) {
-    return this.getPlayerScoreElement(playerNumber).getAttribute('data-score');
+  public getCurrentPlayerScore(playerSide: playerSideType) {
+    return this.getPlayerScoreElement(playerSide).getAttribute('data-score');
   }
 
-  public async expectPlayerScoreValueToBe(playerNumber: number, expectedScore: string) {
-    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedScore);
+  public async expectPlayerScoreToBe(playerSide: playerSideType, expectedScore: string) {
+    await expect(this.getPlayerScoreElement(playerSide)).toHaveAttribute('data-score', expectedScore);
   }
 
-  public get playersCoopScoreElement() {
-    return this.page.getByTestId('players-score');
-  }
-
-  public get currentPlayersCoopScore() {
-    return this.playersCoopScoreElement.getAttribute('data-score');
+  public get currentCoopPlayersScore() {
+    return this.getCurrentPlayerScore('coop');
   }
 
   public async waitForPlayersScoreToBeGreaterThan(expected: number) {
     await expect(async () => {
-      const p1score = await this.currentPlayersCoopScore;
+      const p1score = await this.currentCoopPlayersScore;
 
       expect(parseInt(p1score!, 10)).toBeGreaterThan(expected);
     }).toPass({ timeout: 15_000 });
   }
 
-  public async expectPlayersCoopScoreValueToBe(expected: number) {
-    await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
+  public async expectCoopPlayersScoreToBe(expected: number) {
+    await expect(this.getPlayerScoreElement('coop')).toHaveAttribute('data-score', `${expected}`, {
+      timeout: 15_000,
+    });
   }
 
-  public getSongLyricsForPlayerElement(playerNumber: number) {
-    return this.page.getByTestId(`lyrics-container-player-${playerNumber}`);
+  public getPlayerLyricsContainer(playerSide: playerSideType) {
+    return this.page.getByTestId(`lyrics-container-player-${playerSideToIndexMap[playerSide]}`);
   }
 
   public get songArtistAndTitleContainer() {

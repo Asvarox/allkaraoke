@@ -12,10 +12,8 @@ test.beforeEach(async ({ page, context, browser }) => {
 const polishLang = 'Polish';
 const polSong = 'e2e-multitrack-polish-1994';
 const gameMode = 'Cooperation';
-const blueMicNum = 0;
-const redMicNum = 1;
-const player1Name = 'Player #1';
-const player2Name = 'Player #2';
+const player1_name = 'Player #1';
+const player2_name = 'Player #2';
 
 test('Cooperation mode', async ({ page }) => {
   test.slow();
@@ -49,14 +47,14 @@ test('Cooperation mode', async ({ page }) => {
   });
 
   await test.step('Players cooperation score is visible', async () => {
-    await expect(pages.gamePage.playersCoopScoreElement).toBeVisible({ timeout: 15_000 });
-    await expect(pages.gamePage.getPlayerScoreElement(blueMicNum)).not.toBeVisible();
-    await expect(pages.gamePage.getPlayerScoreElement(redMicNum)).not.toBeVisible();
+    await expect(pages.gamePage.getPlayerScoreElement('coop')).toBeVisible({ timeout: 15_000 });
+    await expect(pages.gamePage.getPlayerScoreElement('p1')).not.toBeVisible();
+    await expect(pages.gamePage.getPlayerScoreElement('p2')).not.toBeVisible();
   });
 
   await test.step('Names of cooperating players are visible', async () => {
     await expect(pages.postGameResultsPage.getPlayerNameElement('coop')).toBeVisible({ timeout: 30_000 });
-    await pages.postGameResultsPage.expectCoopPlayersNameToBe(player1Name, player2Name);
+    await pages.postGameResultsPage.expectCoopPlayersNamesToBe(player1_name, player2_name);
     await expect(pages.postGameResultsPage.getPlayerNameElement('p2')).not.toBeVisible();
   });
 
@@ -65,6 +63,6 @@ test('Cooperation mode', async ({ page }) => {
     await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(100);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
-    await expect(pages.postGameHighScoresPage.getCoopPlayersInput(player1Name, player2Name)).toBeVisible();
+    await expect(pages.postGameHighScoresPage.getCoopPlayersInput(player1_name, player2_name)).toBeVisible();
   });
 });

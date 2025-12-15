@@ -44,7 +44,7 @@ export class PostGameResultsPagePO {
     await expect(this.getPlayerNameElement(playerSide)).toHaveText(playerName);
   }
 
-  public async expectCoopPlayersNameToBe(playerName_1: string, playerName_2: string) {
+  public async expectCoopPlayersNamesToBe(playerName_1: string, playerName_2: string) {
     await expect(this.getPlayerNameElement('coop')).toHaveText(`${playerName_1}, ${playerName_2}`);
   }
 

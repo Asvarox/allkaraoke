@@ -32,7 +32,7 @@ const player2 = {
   num: 1,
 } as const;
 
-const song1ID = 'e2e-multitrack-polish-1994';
+const song1_ID = 'e2e-multitrack-polish-1994';
 
 const song2 = {
   ID: 'e2e-skip-intro-polish',
@@ -89,7 +89,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
   await test.step('Search song remotely and navigate', async () => {
     await remoteMic1.remoteMicMainPage.searchTheSong(song2.title);
-    await expect(await pages.songListPage.getSongElement(song1ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1_ID)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
 
     await pages.songListPage.ensureSongToBeSelected(song2.ID);
@@ -130,7 +130,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   });
 
   await test.step('Check if restart song is possible', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1.num)).toBeVisible({ timeout: 10_000 });
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible({ timeout: 10_000 });
     await expect(remoteMic1.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled();
     await remoteMic1.remoteMicMainPage.goBackByKeyboard();
     await pages.pauseMenuPage.restartSongWithKeyboard(remoteMic2._page);

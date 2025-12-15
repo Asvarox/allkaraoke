@@ -79,8 +79,8 @@ test('Convert song', async ({ page }) => {
   await test.step('Enter inputs in author and video step', async () => {
     await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
     await expect(pages.songEditAuthorAndVideoPage.videoLookupButton).toBeEnabled();
-    await pages.songEditAuthorAndVideoPage.enterAuthorName(FINAL_AUTHOR);
-    await pages.songEditAuthorAndVideoPage.enterAuthorURL(FINAL_AUTHOR_URL);
+    await pages.songEditAuthorAndVideoPage.enterLyricsFileAuthorName(FINAL_AUTHOR);
+    await pages.songEditAuthorAndVideoPage.enterLyricsFileAuthorURL(FINAL_AUTHOR_URL);
     await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
   });
 
