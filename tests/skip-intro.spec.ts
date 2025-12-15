@@ -16,7 +16,7 @@ const player2 = 1;
 const song = {
   ID: 'e2e-skip-intro-polish',
   language: 'Polish',
-};
+} as const;
 
 test('skip the intro from the song', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -30,7 +30,7 @@ test('skip the intro from the song', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

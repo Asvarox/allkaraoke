@@ -1,6 +1,8 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import { SongsTable } from '../components/songs-table';
 
+type songActionsType = 'hide' | 'restore' | 'edit' | 'download' | 'delete';
+
 export class EditSongsPagePO {
   constructor(
     private page: Page,
@@ -10,43 +12,49 @@ export class EditSongsPagePO {
 
   songsTable = new SongsTable(this.page, this.context, this.browser);
 
+  public getSongElement(songID: string) {
+    const songSelector = this.songsTable.getSongIDSelector(songID);
+    return this.page.locator(`${songSelector}`).first();
+  }
+
+  public getSongActionButton(songID: string, action: songActionsType) {
+    const songSelector = this.songsTable.getSongIDSelector(songID);
+    return this.page.locator(`${songSelector}[data-test="${action}-song"]`);
+  }
+
   public async hideSong(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`).click();
+    await this.getSongActionButton(songID, 'hide').click();
   }
 
   public async expectSongToBeHidden(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await expect(this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`)).toBeVisible();
+    await expect(this.getSongActionButton(songID, 'restore')).toBeVisible();
   }
 
   public async restoreSong(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`).click();
+    await this.getSongActionButton(songID, 'restore').click();
   }
 
   public async expectSongToBeVisible(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
+    await expect(this.getSongActionButton(songID, 'hide')).toBeVisible();
   }
 
   public async editSong(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await this.page.locator(`[data-test="edit-song"][data-song="${songID}"]`).click();
+    await this.getSongActionButton(songID, 'edit').click();
   }
 
   public async downloadSong(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await this.page.locator(`[data-test="download-song"][data-song="${songID}"]`).click();
-  }
-
-  public deleteSongButton(songID: string) {
-    return this.page.locator(`[data-test="delete-song"][data-song="${songID}"]`);
+    await this.getSongActionButton(songID, 'download').click();
   }
 
   public async deleteSong(songID: string) {
     await this.songsTable.searchSongs(songID);
-    await this.deleteSongButton(songID).click();
+    await this.getSongActionButton(songID, 'delete').click();
   }
 
   public async goToMainMenu() {
