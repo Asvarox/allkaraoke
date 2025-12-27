@@ -28,7 +28,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
   });
 
   await test.step('Play the song', async () => {
@@ -38,14 +38,14 @@ test('window for rating unfinished song is visible and can be skipped by the use
       await pages.songListPage.toolbar.ensureFullscreenIsOff();
     }
     await expect(pages.songListPage.songPreviewElement).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
 
   await test.step('After exiting an unfinished song, the user sees a window where they can provide a reason for stopping', async () => {
     await page.waitForTimeout(1000);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.lyricsSyncIssueButton).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.wrongLyricsIssueButton).toBeVisible();
@@ -54,12 +54,12 @@ test('window for rating unfinished song is visible and can be skipped by the use
 
   await test.step('After pressing Escape the user returns to game mode', async () => {
     await page.keyboard.press('Escape');
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
 
   await test.step('User can skip the song rating container and go to pick up another song', async () => {
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSongWithKeyboard();
     await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
@@ -85,15 +85,15 @@ test('user can correctly select all of the shown reasons why the song was not co
   const navigateAndPlayNextSong = async () => {
     await goBackToSongList();
     await test.step('Play the song', async () => {
-      await pages.songListPage.openPreviewForSong(songsID.french);
+      await pages.songListPage.openSongPreview(songsID.french);
       await pages.songPreviewPage.goNext();
       await pages.songPreviewPage.playTheSong(true, false);
     });
 
     await test.step('Exit the song before its end', async () => {
-      await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+      await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
       await page.waitForTimeout(500);
-      await pages.gamePage.exitSong();
+      await pages.gamePage.openPauseMenuAndExitSong();
     });
   };
 
@@ -108,7 +108,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('Ensure all languages are selected', async () => {
     await pages.computersMicConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -116,52 +116,67 @@ test('user can correctly select all of the shown reasons why the song was not co
     if (browserName === 'firefox') {
       await pages.songListPage.toolbar.ensureFullscreenIsOff();
     }
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
 
   await test.step('After exiting a song before its end, a container with the song`s rating appears', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await page.waitForTimeout(500);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
   });
 
   await test.step('User can select `lyrics synchronization issue` as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('wrong lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too loud');
+
+    await pages.rateUnfinishedSongPage.ensureIssueToBeSelected('lyrics not sync');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
+    await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
 
   await navigateAndPlayNextSong();
 
   await test.step('User can select `wrong lyrics issue` as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('lyrics not sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too loud');
+
+    await pages.rateUnfinishedSongPage.ensureIssueToBeSelected('wrong lyrics');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
   await navigateAndPlayNextSong();
 
   await test.step('User can select `too quiet` song issue as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectTooQuietIssue();
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('lyrics not sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('wrong lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too loud');
+
+    await pages.rateUnfinishedSongPage.ensureIssueToBeSelected('too quiet');
     await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
   });
 
   await navigateAndPlayNextSong();
 
   await test.step('User can select `too loud` song issue as a reason of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud');
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('lyrics not sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('wrong lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too quiet');
+
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
     await pages.rateUnfinishedSongPage.submitIssueWithKeyboard();
+    await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
 
   await goBackToSongList();
 
   await test.step('Choose the song and change input to Smartphones mic', async () => {
-    await pages.songListPage.openPreviewForSong(songsID.french);
+    await pages.songListPage.openSongPreview(songsID.french);
     await pages.songPreviewPage.goNext();
 
     await pages.songPreviewPage.goToInputSelectionPage();
@@ -175,27 +190,29 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Exit the song before its end', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
     await page.waitForTimeout(500);
     await remoteMic.remoteMicMainPage.goToPauseMenuWithKeyboard();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-exit-song', remoteMic._page);
+    await pages.pauseMenuPage.exitSongWithKeyboard(remoteMic._page);
   });
 
   await test.step('Only 1 volume issue (too quiet/too loud) can be selected at the same time - after clicking also on 2nd option, 1st is unselected', async () => {
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-quiet', remoteMic._page);
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud', remoteMic._page);
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
-    await pages.rateUnfinishedSongPage.expectIssueNotToBeSelected('too-quiet');
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too quiet', remoteMic._page);
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too quiet');
+
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too loud', remoteMic._page);
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
+    await pages.rateUnfinishedSongPage.expectIssueToBeUnselected('too quiet');
   });
 
   await test.step('Select 2 more issues - user can select all 3 category issues as a reasons of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('not-in-sync', remoteMic._page);
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('bad-lyrics', remoteMic._page);
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
-    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('lyrics not sync', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('wrong lyrics', remoteMic._page);
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('lyrics not sync');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('wrong lyrics');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too loud');
     await pages.rateUnfinishedSongPage.submitIssueWithKeyboard(remoteMic._page);
+    await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
 
   await test.step('User can return to Song List to choose another song', async () => {
@@ -203,7 +220,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
     await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.spanish);
+    await pages.songListPage.ensureSongToBeSelected(songsID.spanish);
     await pages.songListPage.expectSelectedSongToBe(songsID.spanish);
   });
 });
@@ -213,13 +230,13 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected('Spanish');
+    await pages.songLanguagesPage.ensureLanguageToBeSelected('Spanish');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Select computer`s mic and play the song', async () => {
     await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
-    await pages.songListPage.openPreviewForSong(songsID.spanish);
+    await pages.songListPage.openSongPreview(songsID.spanish);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectComputersMicrophone();
@@ -229,7 +246,7 @@ test('If a song has volume = 1, the `too quiet` issue cannot be selected', async
 
   await test.step('Exit the song - the `too quiet` issue should not be displayed for selection, when song has max vol = 1', async () => {
     await page.waitForTimeout(1000);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.tooQuietIssueButton).not.toBeVisible();
     await expect(pages.rateUnfinishedSongPage.asLoudAsItCouldBeInfo).toBeVisible();

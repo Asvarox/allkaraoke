@@ -1,7 +1,15 @@
-import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Checkboxes, checkboxesStateType } from '../components/checkboxes';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
-type issueType = 'not-in-sync' | 'bad-lyrics' | 'too-quiet' | 'too-loud';
+type issueType = 'lyrics not sync' | 'wrong lyrics' | 'too quiet' | 'too loud';
+
+const issueNameToTechMap: Record<issueType, string> = {
+  'lyrics not sync': 'not-in-sync',
+  'wrong lyrics': 'bad-lyrics',
+  'too quiet': 'too-quiet',
+  'too loud': 'too-loud',
+} as const;
 
 export class RateUnfinishedSongPagePO {
   constructor(
@@ -14,40 +22,58 @@ export class RateUnfinishedSongPagePO {
     return this.page.getByTestId('rate-song-container');
   }
 
-  public get lyricsSyncIssueButton() {
-    return this.page.getByTestId('button-not-in-sync');
+  private getIssueCheckbox(issue: issueType) {
+    return this.page.getByTestId(`button-${issueNameToTechMap[issue]}`);
   }
 
-  public async selectLyricsSyncIssue() {
-    await this.lyricsSyncIssueButton.click();
+  public get lyricsSyncIssueButton() {
+    return this.getIssueCheckbox('lyrics not sync');
   }
 
   public get wrongLyricsIssueButton() {
-    return this.page.getByTestId('button-bad-lyrics');
-  }
-
-  public async selectWrongLyricsIssue() {
-    await this.wrongLyricsIssueButton.click();
+    return this.getIssueCheckbox('wrong lyrics');
   }
 
   public get tooQuietIssueButton() {
-    return this.page.getByTestId('button-too-quiet');
-  }
-
-  public async selectTooQuietIssue() {
-    await this.tooQuietIssueButton.click();
+    return this.getIssueCheckbox('too quiet');
   }
 
   public get tooLoudIssueButton() {
-    return this.page.getByTestId('button-too-loud');
+    return this.getIssueCheckbox('too loud');
   }
 
-  public async selectTooLoudIssue() {
-    await this.tooLoudIssueButton.click();
+  private getIssueCheckboxComponent(issue: issueType) {
+    return new Checkboxes(this.page, this.context, this.browser, this.getIssueCheckbox(issue));
   }
+
+  private async ensureIssueStateToBe(issue: issueType, state: checkboxesStateType) {
+    await this.getIssueCheckboxComponent(issue).ensureCheckboxStateToBe(state);
+  }
+
+  public async ensureIssueToBeSelected(issue: issueType) {
+    await this.ensureIssueStateToBe(issue, 'selected');
+  }
+
+  public async ensureIssueToBeUnselected(issue: issueType) {
+    await this.ensureIssueStateToBe(issue, 'unselected');
+  }
+
+  private async expectIssueStateToBe(issue: issueType, state: checkboxesStateType) {
+    await this.getIssueCheckboxComponent(issue).expectCheckboxStateToBe(state);
+  }
+
+  public async expectIssueToBeSelected(issue: issueType) {
+    await this.expectIssueStateToBe(issue, 'selected');
+  }
+
+  public async expectIssueToBeUnselected(issue: issueType) {
+    await this.expectIssueStateToBe(issue, 'unselected');
+  }
+
+  private exitSongSelector = 'button-song-ok';
 
   public get exitSongButton() {
-    return this.page.getByTestId('button-song-ok');
+    return this.page.getByTestId(this.exitSongSelector);
   }
 
   public async skipSongRating() {
@@ -58,29 +84,17 @@ export class RateUnfinishedSongPagePO {
     await this.exitSongButton.click();
   }
 
-  public getIssueCheckbox(issue: issueType) {
-    return this.page.getByTestId(`button-${issue}`).locator('svg');
-  }
-
-  public async expectIssueToBeSelected(issue: issueType) {
-    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
-  }
-
-  public async expectIssueNotToBeSelected(issue: issueType) {
-    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
-  }
-
   public get asLoudAsItCouldBeInfo() {
     return this.page.getByText('Too quiet').locator('~span', { hasText: '(already as loud as it could be)' });
   }
 
   public async selectIssueWithKeyboard(issue: issueType, remoteMic?: Page) {
-    await navigateWithKeyboard(this.page, `button-${issue}`, remoteMic);
+    await navigateWithKeyboard(this.page, `button-${issueNameToTechMap[issue]}`, remoteMic);
     await this.page.keyboard.press('Enter');
   }
 
   public async submitIssueWithKeyboard(remoteMic?: Page) {
-    await navigateWithKeyboard(this.page, 'button-song-ok', remoteMic);
+    await navigateWithKeyboard(this.page, this.exitSongSelector, remoteMic);
     await this.page.keyboard.press('Enter');
   }
 }

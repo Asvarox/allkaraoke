@@ -41,20 +41,26 @@ export class SongListPagePO {
     return this.songPreviewElement.getAttribute('data-song');
   }
 
-  public async focusSong(songID: string) {
-    const currentlyFocused = await this.songPreviewElement.getAttribute('data-song');
-    if (currentlyFocused !== songID) {
-      await this.ensureSongIsScrolledTo(songID);
-      const song = await this.getSongElement(songID, false);
-      await song.click();
-    }
+  public async isSongSelected(songID: string) {
+    return this.page.locator(`[data-song="${songID}"][data-test="song-preview"]`).isVisible();
   }
 
-  public async openPreviewForSong(songID: string) {
-    const locator = await this.getSongElement(songID);
-    await locator.click();
-    await expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
-    await locator.click({ force: true });
+  public async ensureSongToBeSelected(songID: string) {
+    await expect(await this.getSongElement(songID)).toBeVisible();
+
+    if (!(await this.isSongSelected(songID))) {
+      await this.ensureSongIsScrolledTo(songID);
+    }
+    if (!(await this.isSongSelected(songID))) {
+      const songElement = await this.getSongElement(songID, false);
+      await songElement.click();
+    }
+    await this.expectSelectedSongToBe(songID);
+  }
+
+  public async openSongPreview(songID: string) {
+    await this.ensureSongToBeSelected(songID);
+    await this.songPreviewElement.click({ force: true });
   }
 
   public get songListContainer() {
@@ -135,11 +141,16 @@ export class SongListPagePO {
   }
 
   public get selectionPlaylistTip() {
-    return this.page.getByRole('tooltip');
+    return this.page.getByRole('tooltip', {
+      name: 'A combination of songs you might like and popular with other players.',
+    });
   }
 
-  public async closeTheSelectionPlaylistTip() {
-    await this.page.getByTestId('close-tooltip-button').click();
+  public async closeSelectionPlaylistTip() {
+    if (await this.selectionPlaylistTip.isVisible()) {
+      await this.selectionPlaylistTip.getByTestId('close-tooltip-button').click();
+    }
+    await expect(this.selectionPlaylistTip).toBeHidden();
   }
 
   public get popularityIcon() {
@@ -168,5 +179,9 @@ export class SongListPagePO {
 
   public get remoteMicPlaylistTip() {
     return this.page.getByTestId('remote-mic-playlist-tip');
+  }
+
+  public get addMissingSongButton() {
+    return this.page.getByTestId('add-new-song');
   }
 }

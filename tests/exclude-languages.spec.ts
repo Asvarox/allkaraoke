@@ -10,12 +10,18 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const language1 = 'Polish';
-const language2 = 'English';
+const languages = {
+  polish: 'Polish',
+  english: 'English',
+} as const;
+
+const songsID = {
+  pol: 'e2e-multitrack-polish-1994',
+  eng: 'e2e-single-english-1995',
+  pol_eng: 'e2e-english-polish-1994',
+} as const;
+
 const allPlaylist = 'All';
-const song1 = 'e2e-single-english-1995';
-const song2 = 'e2e-english-polish-1994';
-const song3 = 'e2e-multitrack-polish-1994';
 
 test('exclude languages from first start and menu', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -23,48 +29,48 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
   await test.step('Include all', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
+    await pages.songLanguagesPage.expectLanguageToBeSelected(languages.polish);
+    await pages.songLanguagesPage.expectLanguageToBeSelected(languages.english);
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(await pages.songListPage.getSongElement(song1)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song3)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.eng)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol_eng)).toBeVisible();
   });
 
   await test.step('Exclude Polish', async () => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
+    await pages.songLanguagesPage.ensureLanguageToBeUnselected(languages.polish);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.english);
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(await pages.songListPage.getSongElement(song1)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song3)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.eng)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol_eng)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol)).not.toBeVisible();
   });
 
   await test.step('Exclude English', async () => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language1);
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language2);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.polish);
+    await pages.songLanguagesPage.ensureLanguageToBeUnselected(languages.english);
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song3)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song1)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.pol_eng)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(songsID.eng)).not.toBeVisible();
   });
 
   await test.step('Exclude all languages - excluded alert should be visible', async () => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureAllLanguagesAreDeselected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('unselected');
     await expect(pages.songLanguagesPage.allLanguagesExcludedAlert).toBeVisible();
   });
 

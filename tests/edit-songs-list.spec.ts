@@ -116,10 +116,10 @@ test('Filtering songs shows proper results', async ({ page }) => {
 
   await test.step('Searching when filtering is enabled only works for filtered songs', async () => {
     await pages.editSongsPage.songsTable.searchSongs(year3.songID);
-    await expect(pages.editSongsPage.songsTable.getSongElement(year3.songID)).not.toBeVisible();
+    await expect(pages.editSongsPage.getSongElement(year3.songID)).not.toBeVisible();
     await expect(pages.editSongsPage.songsTable.noSongResultsFoundElement).toBeVisible();
 
     await pages.editSongsPage.songsTable.searchSongs(filteredYear.songID);
-    await expect(pages.editSongsPage.songsTable.getSongElement(filteredYear.songID)).toBeVisible();
+    await expect(pages.editSongsPage.getSongElement(filteredYear.songID)).toBeVisible();
   });
 });

@@ -31,7 +31,7 @@ export class SongEditAuthorAndVideoPagePO {
     return this.page.locator('[data-test="author-name"] input');
   }
 
-  public async enterAuthorName(name: string) {
+  public async enterLyricsFileAuthorName(name: string) {
     await this.authorNameInput.fill(name);
   }
 
@@ -39,7 +39,7 @@ export class SongEditAuthorAndVideoPagePO {
     return this.page.locator('[data-test="author-url"] input');
   }
 
-  public async enterAuthorURL(authorUrl: string) {
+  public async enterLyricsFileAuthorURL(authorUrl: string) {
     await this.authorUrlInput.fill(authorUrl);
   }
 

@@ -31,12 +31,12 @@ const convertedSong = {
   author: 'Selection txt',
   sourceURL: 'https://example.com/source-url',
   videoID: 'koBUXESJZ8g',
-};
+} as const;
 
 const unpopularSong = {
   ID: 'e2e-christmas-english-1995',
   title: 'New Christmas',
-};
+} as const;
 
 test('Adding completed song to the Selection playlist', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -50,16 +50,16 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
+    await pages.songListPage.closeSelectionPlaylistTip();
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
-    await pages.songListPage.focusSong(unpopularSong.ID);
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
   });
@@ -84,7 +84,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Go to the Song languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.expectLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 
@@ -93,8 +93,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.goToPlaylist(engPlaylist);
-    await pages.songListPage.focusSong(unpopularSong.ID);
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
   });
 
   await test.step('Select Advanced setup', async () => {
@@ -107,7 +106,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Play the song and after above 80% complete - exit the song', async () => {
     await pages.songPreviewPage.playTheSong();
     await page.waitForTimeout(3_500);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
   });
 
   await test.step('Skip to the Song list', async () => {
@@ -128,21 +127,20 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Search the song - expect song is not visible in Selection playlist yet', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
-    await pages.songListPage.closeTheSelectionPlaylistTip();
+    await pages.songListPage.closeSelectionPlaylistTip();
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
   });
 
   await test.step('Toggle game mode to `Cooperation`', async () => {
-    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
-    await pages.songPreviewPage.toggleGameMode();
-    await pages.songPreviewPage.toggleGameMode();
+    await pages.songListPage.openSongPreview(unpopularSong.ID);
+    await pages.songPreviewPage.ensureGameModeToBeSet('Cooperation');
   });
 
   await test.step('Go to select Advanced setup and play the song', async () => {
@@ -155,7 +153,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('After reach the expected score - exit the game', async () => {
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.openPauseMenuAndExitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
   });
 
@@ -190,7 +188,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
     await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
     await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
 
-    await pages.songEditAuthorAndVideoPage.enterAuthorName(convertedSong.author);
+    await pages.songEditAuthorAndVideoPage.enterLyricsFileAuthorName(convertedSong.author);
     await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${convertedSong.videoID}`);
     await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
 
@@ -207,7 +205,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
   });
 
   await test.step('Ensure song language is selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -229,7 +227,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Go to the Song Languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 
@@ -259,8 +257,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Check if the selection-playlist tip is visible and can be closed', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await expect(pages.songListPage.selectionPlaylistTip).toBeVisible();
-    await pages.songListPage.closeTheSelectionPlaylistTip();
-    await expect(pages.songListPage.selectionPlaylistTip).not.toBeVisible();
+    await pages.songListPage.closeSelectionPlaylistTip();
   });
 
   await test.step('After singing, the song indicator should be changed from `popular` to `played today`', async () => {

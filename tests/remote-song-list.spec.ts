@@ -251,7 +251,7 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   await test.step('On the desktop app - ensure all languages are selected', async () => {
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -287,8 +287,8 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(languages.polish);
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(languages.english);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.polish);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(languages.english);
   });
 
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
@@ -329,7 +329,7 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
   await test.step('Ensure all languages are selected and go to the Song List', async () => {
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

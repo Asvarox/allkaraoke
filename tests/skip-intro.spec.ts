@@ -10,13 +10,10 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const player1 = 0;
-const player2 = 1;
-
 const song = {
   ID: 'e2e-skip-intro-polish',
   language: 'Polish',
-};
+} as const;
 
 test('skip the intro from the song', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -30,13 +27,13 @@ test('skip the intro from the song', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Choose the song and play it', async () => {
     await expect(await pages.songListPage.getSongElement(song.ID)).toBeVisible();
-    await pages.songListPage.focusSong(song.ID);
+    await pages.songListPage.ensureSongToBeSelected(song.ID);
     await pages.songListPage.approveSelectedSongByKeyboard();
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong(false);
@@ -46,8 +43,8 @@ test('skip the intro from the song', async ({ page }) => {
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await pages.gamePage.skipIntroIfPossible();
     await expect(pages.gamePage.skipIntroElement).toBeVisible({ timeout: 6_000 });
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p2')).toBeVisible();
     await pages.postGameResultsPage.skipScoresAnimation();
   });
 });

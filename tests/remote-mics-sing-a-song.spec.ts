@@ -32,7 +32,7 @@ const player2 = {
   num: 1,
 } as const;
 
-const song1ID = 'e2e-multitrack-polish-1994';
+const song1_ID = 'e2e-multitrack-polish-1994';
 
 const song2 = {
   ID: 'e2e-skip-intro-polish',
@@ -89,10 +89,10 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
   await test.step('Search song remotely and navigate', async () => {
     await remoteMic1.remoteMicMainPage.searchTheSong(song2.title);
-    await expect(await pages.songListPage.getSongElement(song1ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1_ID)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
 
-    await pages.songListPage.focusSong(song2.ID);
+    await pages.songListPage.ensureSongToBeSelected(song2.ID);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
     await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
@@ -101,22 +101,22 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   await test.step('Check if the mics are reselected after they refresh', async () => {
     // Blue microphone
     await remoteMic1._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p1')).toBeVisible();
     await remoteMic1.remoteMicMainPage.enterPlayerName(player1.name);
 
     await connectRemoteMic(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p1')).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player1.name);
 
     // Red microphone
     await remoteMic2._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p2')).toBeVisible();
     await remoteMic2.remoteMicMainPage.enterPlayerName(player2.name);
 
     await connectRemoteMic(remoteMic2._page);
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
+    await expect(pages.songPreviewPage.getUnavailableStatusPlayer('p2')).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
     await pages.calibration.approveDefaultCalibrationSetting();
@@ -130,11 +130,10 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   });
 
   await test.step('Check if restart song is possible', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1.num)).toBeVisible({ timeout: 10_000 });
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible({ timeout: 10_000 });
     await expect(remoteMic1.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled();
     await remoteMic1.remoteMicMainPage.goBackByKeyboard();
-    await expect(pages.gamePage.restartButton).toBeVisible();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song', remoteMic2._page);
+    await pages.pauseMenuPage.restartSongWithKeyboard(remoteMic2._page);
   });
 
   await test.step('Play song', async () => {
@@ -152,14 +151,14 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
 
   await test.step('Check if players names are displayed in results', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 15_000 });
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(100);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1.name);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p2', player2.name);
   });
 
   await test.step('Go to select new song', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();

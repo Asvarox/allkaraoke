@@ -10,19 +10,21 @@ test.beforeEach(async ({ page, context, browser }) => {
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
-const authorName = 'allKaraoke Test';
-const sourceURL = 'https://example.com/source-url';
-const videoID = 'koBUXESJZ8g';
-const songArtist = 'convert';
-const songTitle = 'test';
-const songYear = '1992';
-const songLanguage = 'English';
-const songID = 'convert-test';
-const player1 = 0;
-const player2 = 1;
-const player1Name = 'All';
-const player2Name = 'Karaoke';
-const englishPlaylist = 'English';
+
+const player1_name = 'All';
+const player2_name = 'Karaoke';
+const engPlaylist = 'English';
+
+const song = {
+  ID: 'convert-test',
+  year: '1992',
+  artist: 'convert',
+  title: 'test',
+  language: 'English',
+  sourceURL: 'https://example.com/source-url',
+  lyricsFileAuthor: 'allKaraoke Test',
+  videoID: 'koBUXESJZ8g',
+} as const;
 
 test('Convert and sing a song', async ({ page }) => {
   test.slow();
@@ -37,15 +39,15 @@ test('Convert and sing a song', async ({ page }) => {
 
   await test.step('Enter basic song info', async () => {
     await expect(pages.songEditBasicInfoPage.pageContainer).toBeVisible();
-    await pages.songEditBasicInfoPage.enterSourceURL(sourceURL);
+    await pages.songEditBasicInfoPage.enterSourceURL(song.sourceURL);
     await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
   });
 
   await test.step('Enter info about author and video', async () => {
     await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
     await expect(pages.songEditAuthorAndVideoPage.pageContainer).toBeVisible();
-    await pages.songEditAuthorAndVideoPage.enterAuthorName(authorName);
-    await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${videoID}`);
+    await pages.songEditAuthorAndVideoPage.enterLyricsFileAuthorName(song.lyricsFileAuthor);
+    await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${song.videoID}`);
   });
 
   await test.step('Go to metadata and check the song info', async () => {
@@ -53,10 +55,10 @@ test('Convert and sing a song', async ({ page }) => {
     await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
     await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
     await expect(pages.songEditMetadataPage.pageContainer).toBeVisible();
-    await expect(pages.songEditMetadataPage.songTitleInput).toHaveValue(songTitle);
-    await expect(pages.songEditMetadataPage.songArtistInput).toHaveValue(songArtist);
-    await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(songYear);
-    await expect(pages.songEditMetadataPage.songLanguageElement).toContainText(songLanguage);
+    await expect(pages.songEditMetadataPage.songTitleInput).toHaveValue(song.title);
+    await expect(pages.songEditMetadataPage.songArtistInput).toHaveValue(song.artist);
+    await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(song.year);
+    await expect(pages.songEditMetadataPage.songLanguageElement).toContainText(song.language);
   });
 
   await test.step('Go back to main menu', async () => {
@@ -73,51 +75,51 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Select song language', async () => {
     await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
   });
 
   await test.step('Search and pick up converted song', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.searchSong(`${songArtist} ${songTitle}`);
-    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.searchSong(`${song.artist} ${song.title}`);
+    await pages.songListPage.openSongPreview(song.ID);
     await pages.songPreviewPage.goNext();
   });
 
   await test.step('Set players names', async () => {
-    await pages.songPreviewPage.getPlayerNameInput(player1).click();
-    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1Name);
+    await pages.songPreviewPage.getPlayerNameInput('p1').click();
+    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1_name);
 
-    await pages.songPreviewPage.getPlayerNameInput(player2).click();
-    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2Name);
+    await pages.songPreviewPage.getPlayerNameInput('p2').click();
+    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2_name);
   });
 
   await test.step('Play the song', async () => {
     await pages.songPreviewPage.playTheSong();
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p1')).toBeVisible();
+    await expect(pages.gamePage.getPlayerLyricsContainer('p2')).toBeVisible();
   });
 
   await test.step('Check if the entered players names are displayed', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 20_000 });
+    await pages.postGameResultsPage.expectCoopPlayersNamesToBe(player1_name, player2_name);
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
-    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
+    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(song.ID);
   });
 
   await test.step('Go to language playlist and check visibility', async () => {
-    await pages.songListPage.goToPlaylist(englishPlaylist);
-    await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
-    await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
-    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
+    await pages.songListPage.goToPlaylist(engPlaylist);
+    await pages.songListPage.expectPlaylistToBeSelected(engPlaylist);
+    await expect(await pages.songListPage.getSongElement(song.ID)).toBeVisible();
+    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(song.ID);
   });
 
   await test.step('Song should be marked as played today', async () => {
-    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(songID);
+    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(song.ID);
   });
 });

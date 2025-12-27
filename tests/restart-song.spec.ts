@@ -13,7 +13,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 const song = {
   ID: 'e2e-multitrack-polish-1994',
   language: 'Polish',
-};
+} as const;
 
 test('should restart the song and the scores', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -27,13 +27,13 @@ test('should restart the song and the scores', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
   await test.step('Choose the song', async () => {
     await expect(await pages.songListPage.getSongElement(song.ID)).toBeVisible();
-    await pages.songListPage.focusSong(song.ID);
+    await pages.songListPage.ensureSongToBeSelected(song.ID);
     await pages.songListPage.approveSelectedSongByKeyboard();
   });
 
@@ -44,7 +44,7 @@ test('should restart the song and the scores', async ({ page }) => {
   });
 
   await test.step('After restarting, the song should be played from the beginning - with score 0', async () => {
-    await pages.gamePage.restartSong();
-    await pages.gamePage.expectPlayersCoopScoreValueToBe(0);
+    await pages.gamePage.openPauseMenuAndRestartSong();
+    await pages.gamePage.expectCoopPlayersScoreToBe(0);
   });
 });

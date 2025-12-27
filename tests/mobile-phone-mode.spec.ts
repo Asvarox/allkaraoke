@@ -104,7 +104,7 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await page.waitForTimeout(500); // let the list with virtualization load
-    await pages.songListPage.focusSong(songID);
+    await pages.songListPage.ensureSongToBeSelected(songID);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
@@ -117,18 +117,18 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await expect(remoteMic2.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled({ timeout: 8_000 });
     await page.waitForTimeout(500);
     await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible({ timeout: 15_000 });
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
   await test.step('Once the song is finished, the player`s names should be visible on results', async () => {
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
+    await pages.postGameResultsPage.waitForPlayerScoreToBeGreaterThan(100);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p1', player1.name);
+    await pages.postGameResultsPage.expectPlayerNameToBe('p2', player2.name);
   });
 
   await test.step('User can select next song', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+    await expect(pages.postGameResultsPage.skipScoresButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
