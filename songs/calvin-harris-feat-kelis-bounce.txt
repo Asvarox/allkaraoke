@@ -1,0 +1,235 @@
+#ARTIST:Calvin Harris feat. Kelis
+#TITLE:Bounce
+#CREATOR:lozboorman
+#BPM:255,92
+#YEAR:2011
+#VIDEO:v=ooZwmeUfuXg
+#LANGUAGE:English
+#GAP:25453,59487339794
+#ALLKARAOKE_ID:calvin-harris-feat-kelis-bounce
+#ALLKARAOKE_SID:5376
+#ALLKARAOKE_LASTUPDATE:2026-01-09T00:14:37.609Z
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:Calvin Harris feat. Kelis - Bounce
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Calvin Harris feat. Kelis - Bounce.mp3
+: 17 2 9 I 
+: 21 2 9 can’t 
+: 25 2 9 be
+: 29 2 9 lieve 
+: 33 2 7 that
+- 35
+: 37 2 7 Ev
+: 41 2 4 ery 
+: 45 2 4 day 
+* 49 2 7 and 
+* 53 2 4 ev
+* 57 2 2 ery 
+* 61 2 2 night 
+* 65 2 4 ~
+- 67
+: 81 2 9 It’s 
+: 85 2 9 get
+: 89 2 9 ting 
+: 93 2 9 bet
+: 97 2 7 ter 
+: 101 2 7 with 
+: 105 2 9 you
+- 107
+: 109 2 12 Out 
+: 113 2 9 of 
+: 117 2 12 my 
+: 125 4 9 life
+- 129
+: 145 2 9 It’s 
+: 149 2 9 like 
+: 153 2 9 I 
+: 157 2 9 flicked 
+: 161 2 7 a 
+: 165 2 7 switch
+- 167
+: 169 2 4 And 
+: 173 2 4 now 
+* 177 2 7 I’m 
+* 181 2 4 feel
+* 185 2 2 ing 
+* 189 2 2 good 
+* 193 2 4 ~
+- 195
+: 209 2 9 No 
+: 213 2 9 way 
+: 217 2 9 to 
+: 221 2 9 stop 
+: 225 2 7 it
+- 227
+: 229 2 7 Now 
+: 233 2 9 you 
+: 237 2 12 wish 
+: 241 2 9 that 
+: 245 2 12 you 
+: 253 5 9 could
+- 258
+* 261 2 7 When 
+* 265 2 9 the 
+* 269 2 12 week
+: 277 2 9 end 
+: 285 3 7 comes
+- 288
+: 293 2 9 I 
+: 301 2 4 know 
+: 305 2 7 I’ll 
+: 309 2 4 feel 
+: 313 2 2 a
+: 317 2 2 live 
+: 321 2 4 ~
+- 323
+: 333 2 12 You 
+: 341 2 9 will 
+: 349 2 7 be 
+: 357 2 9 the
+- 359
+: 365 2 4 Last 
+: 369 2 7 thing 
+: 373 2 4 on 
+: 377 2 2 my 
+: 381 2 2 mind 
+: 385 2 0 ~
+- 387
+: 397 2 12 No 
+: 405 2 9 re
+: 413 2 7 grets
+- 415
+* 421 2 7 Do 
+* 425 2 9 you 
+* 429 2 12 know 
+* 433 2 9 what 
+* 437 2 12 that 
+* 445 4 9 means
+- 449 1012
+- 1012
+: 1029 2 7 Well 
+: 1033 2 9 it’s 
+: 1037 2 12 hot, 
+: 1049 2 9 it’s 
+: 1053 3 7 loud
+- 1056
+: 1065 2 9 It’s 
+: 1069 3 4 wild
+- 1072
+: 1081 2 7 We 
+: 1085 2 5 bounce 
+: 1089 2 5 to 
+: 1093 2 4 this 
+: 1101 5 4 track
+- 1106
+: 1113 2 2 And 
+: 1117 2 4 I 
+: 1121 2 4 don’t 
+: 1125 2 4 care 
+* 1129 2 7 what 
+* 1133 2 5 an
+* 1137 2 5 y
+* 1141 2 4 bo
+* 1145 2 4 dy
+- 1147
+: 1149 2 2 Thinks 
+: 1153 2 2 a
+: 1157 2 0 bout 
+: 1165 4 -3 that
+- 1169
+: 1181 2 4 Hands 
+: 1189 2 4 to 
+: 1193 2 7 the 
+: 1197 2 5 sky 
+: 1205 2 4 And 
+: 1213 2 2 throw 
+: 1217 2 2 your 
+: 1221 2 0 hair 
+: 1229 4 -3 back
+- 1233 1268
+- 1268
+: 1285 2 7 I 
+: 1289 2 9 can 
+: 1293 2 12 love 
+: 1305 2 9 a
+: 1309 3 7 gain
+- 1312
+: 1321 2 9 To
+: 1325 4 4 night
+- 1329
+: 1337 2 7 We 
+: 1341 2 5 bounce 
+: 1345 2 5 to 
+: 1349 2 4 this 
+: 1357 5 4 track
+- 1362
+: 1369 2 2 And 
+: 1373 2 4 I 
+: 1377 2 4 don’t 
+: 1381 2 4 care 
+: 1385 2 7 what 
+: 1389 2 5 an
+: 1393 2 5 y
+: 1397 2 4 bo
+: 1401 2 4 dy
+- 1403
+: 1405 2 2 Thinks 
+: 1409 2 2 a
+: 1413 2 0 bout 
+: 1421 4 4 that
+- 1425
+: 1437 2 4 Hands 
+: 1445 2 4 to 
+: 1449 2 7 the 
+: 1453 2 5 sky 
+: 1461 2 4 And 
+* 1469 2 2 throw 
+* 1473 2 2 your 
+* 1477 2 0 hair 
+* 1485 4 -3 back
+- 1489 2292
+- 2292
+: 2309 2 7 Well 
+: 2313 2 9 it’s 
+: 2317 2 12 hot, 
+: 2329 2 9 it’s 
+: 2333 3 7 loud
+- 2336
+: 2345 2 9 It’s 
+: 2349 3 4 wild
+- 2352
+* 2361 2 7 We 
+* 2365 2 5 bounce 
+* 2369 2 5 to 
+* 2373 2 4 this 
+* 2381 5 4 track
+- 2386
+: 2393 2 2 And 
+: 2397 2 4 I 
+: 2401 2 4 don’t 
+: 2405 2 4 care 
+: 2409 2 7 what 
+: 2413 2 5 an
+: 2417 2 5 y
+: 2421 2 4 bo
+: 2425 2 4 dy
+- 2427
+: 2429 2 2 Thinks 
+: 2433 2 2 a
+: 2437 2 0 bout 
+: 2445 4 -3 that
+- 2449
+: 2461 2 4 I 
+: 2465 2 4 don’t 
+: 2469 2 4 care 
+: 2473 2 7 what 
+: 2477 2 5 an
+: 2481 2 5 y
+: 2485 2 4 bod
+: 2489 2 4 y
+- 2491
+* 2493 2 2 Thinks 
+* 2497 2 2 a
+* 2501 2 0 bout 
+* 2509 4 -3 that
+E

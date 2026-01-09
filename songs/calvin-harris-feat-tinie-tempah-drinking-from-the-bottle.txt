@@ -1,0 +1,596 @@
+#ARTIST:Calvin Harris feat. Tinie Tempah
+#TITLE:Drinking From The Bottle
+#CREATOR:RetroGirl
+#BPM:255,96
+#YEAR:2012
+#VIDEO:v=uztCqjxrkjQ
+#GENRE:EDM
+#LANGUAGE:English
+#GAP:82503,75058602907
+#ALLKARAOKE_ID:calvin-harris-feat-tinie-tempah-drinking-from-the-bottle
+#ALLKARAOKE_SID:5374
+#ALLKARAOKE_LASTUPDATE:2026-01-09T00:14:37.177Z
+#ALLKARAOKE_REALBPM:8
+#ALLKARAOKE_SOURCEURL:Calvin Harris feat. Tinie Tempah - Drinking From The Bottle
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Calvin Harris feat. Tinie Tempah - Drinking From The Bottle.mp3
+#START:70.25
+F 17 2 12 I-
+F 21 2 12 I-
+F 25 2 12 I-
+F 29 2 12 I-
+F 33 2 12 I-
+F 37 1 12 I
+- 38
+F 41 2 12 I 
+F 45 1 12 could 
+F 47 3 12 pay 
+F 51 1 12 for 
+F 53 1 12 e
+F 55 1 12 very
+F 57 1 12 thing 
+F 59 1 12 that’s 
+F 61 3 12 on 
+F 65 3 12 you
+- 68
+F 83 1 12 So 
+F 85 1 12 e
+F 87 1 12 very
+F 89 1 12 thing 
+F 91 1 12 is 
+F 93 3 12 on 
+F 97 3 12 me
+- 100
+F 117 1 12 Got 
+F 119 1 12 them 
+F 121 3 12 girls 
+F 125 3 12 going 
+F 129 3 12 Cin
+F 133 1 12 dy 
+F 135 3 12 Lau
+F 139 1 12 per
+- 140
+F 143 1 12 Ga
+F 145 3 12 ga 
+F 149 1 12 and 
+F 151 1 12 a 
+F 153 1 12 lit
+F 155 1 12 tle 
+F 157 3 12 Blon
+F 161 3 12 die
+- 164
+F 169 1 12 If 
+F 171 1 12 you 
+F 173 3 12 ain’t 
+F 177 1 12 drunk
+- 178
+F 181 1 12 Then 
+F 183 1 12 you’re 
+F 185 1 12 in 
+F 187 1 12 the 
+F 189 3 12 wrong 
+F 193 3 12 club
+- 196
+F 201 3 12 Don’t 
+F 205 3 12 feel 
+F 209 3 12 se
+F 213 1 12 xy
+- 214
+F 215 1 12 You’re 
+F 217 1 12 on 
+F 219 1 12 the 
+F 221 3 12 wrong 
+F 225 3 12 beat
+- 228
+F 233 3 12 Tell 
+F 237 1 12 the 
+F 239 3 12 bar 
+F 243 1 12 that 
+F 245 1 12 we 
+F 247 1 12 don’t 
+F 249 3 12 want 
+F 253 3 12 no 
+F 257 1 12 glass
+- 258
+F 261 3 12 Just 
+F 265 1 12 bot
+F 267 1 12 tles 
+F 269 1 12 and 
+F 271 1 12 I’m 
+F 273 1 12 buying
+- 274
+F 277 1 12 E
+F 279 1 12 very
+F 281 1 12 bo
+F 283 1 12 dy 
+F 285 3 12 one 
+F 289 3 12 each
+- 292
+F 297 3 12 Yeah, 
+F 301 3 12 so 
+F 305 3 12 bring 
+F 309 1 12 the 
+F 311 5 12 Veuve 
+F 317 3 12 Clic
+F 321 5 12 quot
+- 326
+F 329 1 12 D 
+F 331 1 12 a
+F 333 1 12 bout 
+F 335 1 12 to 
+F 337 3 12 hit 
+F 341 1 12 the 
+F 343 5 12 big 
+F 349 3 12 3-
+F 353 5 12 0
+- 358
+F 361 1 12 Par
+F 363 1 12 ty 
+F 365 1 12 like 
+F 367 1 12 it’s 
+F 369 3 12 car
+F 373 1 12 ni
+F 375 3 12 val 
+F 379 1 12 in 
+F 381 3 12 Ri
+F 385 3 12 o
+- 388
+F 393 3 12 Life’s 
+F 397 3 12 too 
+F 401 3 12 short
+- 404
+F 407 1 12 Dan
+F 409 1 12 ny 
+F 411 1 12 De
+F 413 3 12 Vi
+F 417 5 12 to
+- 422
+F 425 3 12 Yo, 
+F 429 3 12 we 
+F 433 7 12 live
+- 440
+F 445 3 12 We 
+F 449 7 12 die
+- 456
+F 461 3 12 We 
+F 465 7 12 give
+- 472
+F 477 3 12 We 
+F 481 7 12 try
+- 488
+F 493 3 12 We 
+F 497 7 12 kiss
+- 504
+F 509 3 12 We 
+F 513 7 12 fight
+- 520
+F 527 3 12 All 
+F 531 1 12 so 
+F 533 1 12 we 
+F 535 1 12 can 
+F 537 1 12 have 
+F 539 1 12 a 
+F 541 3 12 good 
+F 545 7 12 time, 
+F 553 1 12 yeah
+- 554
+: 557 2 11 I’m 
+: 561 3 12 in 
+: 565 2 12 here 
+: 569 3 12 bu
+: 573 2 12 sy 
+: 577 3 12 look
+: 581 1 12 ing
+- 582
+: 585 3 12 For 
+: 589 2 12 the 
+: 593 5 12 next 
+: 601 5 12 top 
+: 609 3 12 mo
+: 613 3 9 del
+- 616
+: 621 2 11 Who’s 
+: 625 3 12 wear
+: 629 2 12 ing 
+: 633 3 12 some
+: 637 2 12 thing 
+: 641 1 12 new
+- 642
+: 645 2 12 And 
+: 649 3 12 some
+: 653 2 12 thing 
+: 657 1 12 old
+- 658
+: 661 2 12 And 
+: 665 3 12 some
+: 669 2 12 thing 
+: 673 3 12 bor
+: 677 3 9 rowed
+- 680
+: 685 2 11 I 
+: 689 3 12 know 
+: 693 2 12 this 
+* 697 3 12 cra
+* 701 2 12 zy 
+* 705 1 12 life
+- 706
+: 709 2 12 Can 
+: 713 3 12 be 
+: 717 2 12 a 
+: 721 3 12 bit
+: 725 2 12 ter 
+: 729 3 12 pill 
+: 733 2 12 to 
+: 737 3 12 swal
+: 741 1 12 low
+- 742
+: 745 3 12 So 
+: 749 2 12 for
+: 753 3 16 get 
+: 757 2 12 a
+: 761 3 12 bout 
+: 765 2 12 to
+: 769 3 12 mor
+: 773 3 12 row
+- 776
+: 781 2 12 To
+: 785 5 12 night
+- 790
+: 797 2 12 We’re 
+: 801 3 12 drink
+: 805 2 12 ing 
+: 809 3 12 from 
+: 813 2 12 the 
+: 817 7 12 bottle
+- 824 1036
+- 1036
+: 1053 2 12 We’re 
+: 1057 3 12 drink
+: 1061 2 12 ing 
+* 1065 3 12 from 
+* 1069 2 12 the 
+* 1073 7 12 bottle
+- 1080 1368
+- 1368
+F 1385 1 12 Yeah 
+F 1387 1 12 I 
+F 1389 1 12 was 
+F 1391 1 12 done 
+F 1393 1 12 with 
+F 1395 1 12 this 
+F 1397 1 12 thing
+- 1398
+F 1401 1 12 Get
+F 1403 1 12 ting 
+F 1405 3 12 it 
+F 1409 3 12 wrong
+- 1412
+F 1427 1 12 Then 
+F 1429 1 12 e
+F 1431 1 12 very
+F 1433 1 12 thing 
+F 1435 1 12 is 
+F 1437 3 12 al
+F 1441 3 12 right
+- 1444
+F 1461 1 12 Got 
+F 1463 1 12 them 
+F 1465 3 12 girls 
+F 1469 3 12 going 
+F 1473 3 12 Hei
+F 1477 1 12 di 
+F 1479 1 12 Klum
+- 1480
+F 1483 1 12 The 
+F 1485 3 12 Kar
+F 1489 3 12 da
+F 1493 1 12 shians
+- 1494
+F 1497 1 12 Rihan
+F 1499 1 12 na 
+F 1501 3 12 all 
+F 1505 3 12 types
+- 1508
+F 1513 1 12 If 
+F 1515 1 12 you 
+F 1517 3 12 ain’t 
+F 1521 1 12 lean
+- 1522
+F 1525 1 12 Then 
+F 1527 1 12 you’re 
+F 1529 1 12 in 
+F 1531 1 12 the 
+F 1533 3 12 wrong 
+F 1537 3 12 scene
+- 1540
+F 1545 1 12 If 
+F 1547 1 12 you 
+F 1549 3 12 ain’t 
+F 1553 1 12 high
+- 1554
+F 1557 1 12 Then 
+F 1559 1 12 you’re 
+F 1561 1 12 not 
+F 1563 1 12 on 
+F 1565 3 12 my 
+F 1569 3 12 vibe
+- 1572
+F 1577 3 12 Tell 
+F 1581 1 12 the 
+F 1583 1 12 bar
+- 1584
+F 1587 1 12 That 
+F 1589 1 12 we 
+F 1591 1 12 don’t 
+F 1593 3 12 need 
+F 1597 3 12 no 
+F 1601 3 12 spark
+F 1605 1 12 lers 
+F 1607 1 12 or 
+F 1609 1 12 no
+F 1611 1 12 thing
+- 1612
+F 1615 1 12 Just 
+F 1617 1 12 keep 
+F 1619 1 12 the 
+F 1621 1 12 bot
+F 1623 1 12 tles 
+F 1625 1 12 com
+F 1627 1 12 ing 
+F 1629 3 12 all 
+F 1633 3 12 night
+- 1636
+F 1641 3 12 Yeah, 
+F 1645 3 12 so 
+F 1649 3 12 bring 
+F 1653 1 12 the 
+F 1655 5 12 Veuve 
+F 1661 3 12 Clic
+F 1665 5 12 quot
+- 1670
+F 1673 1 12 D 
+F 1675 1 12 a
+F 1677 1 12 bout 
+F 1679 1 12 to 
+F 1681 3 12 hit 
+F 1685 1 12 the 
+F 1687 5 12 big 
+F 1693 3 12 3-
+F 1697 5 12 0
+- 1702
+F 1705 1 12 Par
+F 1707 1 12 ty 
+F 1709 1 12 like 
+F 1711 1 12 it’s 
+F 1713 3 12 car
+F 1717 1 12 ni
+F 1719 3 12 val 
+F 1723 1 12 in 
+F 1725 3 12 Ri
+F 1729 3 12 o
+- 1732
+F 1737 3 12 Life’s 
+F 1741 3 12 too 
+F 1745 3 12 short
+- 1748
+F 1751 1 12 Dan
+F 1753 1 12 ny 
+F 1755 1 12 De
+F 1757 3 12 Vi
+F 1761 5 12 to
+- 1766
+F 1769 3 12 Yo, 
+F 1773 3 12 we 
+F 1777 7 12 live
+- 1784
+F 1789 3 12 We 
+F 1793 7 12 die
+- 1800
+F 1805 3 12 We 
+F 1809 7 12 give
+- 1816
+F 1821 3 12 We 
+F 1825 7 12 try
+- 1832
+F 1837 3 12 We 
+F 1841 7 12 kiss
+- 1848
+F 1853 3 12 We 
+F 1857 7 12 fight
+- 1864
+F 1871 3 12 All 
+F 1875 1 12 so 
+F 1877 1 12 we 
+F 1879 1 12 can 
+F 1881 1 12 have 
+F 1883 1 12 a 
+F 1885 3 12 good 
+F 1889 7 12 time, 
+F 1897 1 12 yeah
+- 1898
+: 1901 2 11 I’m 
+: 1905 3 12 in 
+: 1909 2 12 here 
+: 1913 3 12 bu
+: 1917 2 12 sy 
+: 1921 3 12 look
+: 1925 1 12 ing
+- 1926
+: 1929 3 12 For 
+: 1933 2 12 the 
+: 1937 5 12 next 
+: 1945 5 12 top 
+: 1953 3 12 mo
+: 1957 3 9 del
+- 1960
+: 1965 2 11 Who’s 
+: 1969 3 12 wear
+: 1973 2 12 ing 
+: 1977 3 12 some
+: 1981 2 12 thing 
+: 1985 1 12 new
+- 1986
+: 1989 2 12 And 
+* 1993 3 12 some
+* 1997 2 12 thing 
+* 2001 1 12 old
+- 2002
+: 2005 2 12 And 
+: 2009 3 12 some
+: 2013 2 12 thing 
+: 2017 3 12 bor
+: 2021 3 9 rowed
+- 2024
+: 2029 2 11 I 
+: 2033 3 12 know 
+: 2037 2 12 this 
+: 2041 3 12 cra
+: 2045 2 12 zy 
+: 2049 1 12 life
+- 2050
+: 2053 2 12 Can 
+: 2057 3 12 be 
+: 2061 2 12 a 
+: 2065 3 12 bit
+: 2069 2 12 ter 
+: 2073 3 12 pill 
+: 2077 2 12 to 
+: 2081 3 12 swal
+: 2085 1 12 low
+- 2086
+: 2089 3 12 So 
+: 2093 2 12 for
+: 2097 3 16 get 
+: 2101 2 12 a
+: 2105 3 12 bout 
+: 2109 2 12 to
+: 2113 3 12 mor
+: 2117 3 12 row
+- 2120
+* 2125 2 12 To
+* 2129 5 12 night
+- 2134
+: 2141 2 12 We’re 
+: 2145 3 12 drink
+: 2149 2 12 ing 
+: 2153 3 12 from 
+: 2157 2 12 the 
+: 2161 7 12 bottle
+- 2168 2380
+- 2380
+: 2397 2 12 We’re 
+: 2401 3 12 drink
+: 2405 2 12 ing 
+: 2409 3 12 from 
+: 2413 2 12 the 
+: 2417 7 12 bottle
+- 2424 2716
+- 2716
+F 2733 2 11 I’m 
+F 2737 3 12 in 
+F 2741 2 12 here 
+F 2745 3 12 bu
+F 2749 2 12 sy 
+F 2753 3 12 look
+F 2757 1 12 ing
+- 2758
+F 2761 3 12 For 
+F 2765 2 12 the 
+F 2769 5 12 next 
+F 2777 5 12 top 
+F 2785 3 12 mo
+F 2789 3 9 del
+- 2792
+F 2797 2 11 I’m 
+F 2801 3 12 in 
+F 2805 2 12 here 
+F 2809 3 12 bu
+F 2813 2 12 sy 
+F 2817 3 12 look
+F 2821 1 12 ing
+- 2822
+F 2825 3 12 For 
+F 2829 2 12 the 
+F 2833 5 12 next 
+F 2841 5 12 top 
+F 2849 3 12 mo
+F 2853 3 9 del
+- 2856
+F 2861 2 11 I’m 
+F 2865 3 12 in 
+F 2869 2 12 here 
+F 2873 3 12 bu
+F 2877 2 12 sy 
+F 2881 3 12 look
+F 2885 1 12 ing
+- 2886
+F 2889 3 12 For 
+F 2893 2 12 the 
+F 2897 5 12 next 
+F 2905 5 12 top 
+F 2913 3 12 mo
+F 2917 3 9 del
+- 2920
+F 2925 2 12 The 
+F 2929 5 12 next 
+F 2937 5 12 top 
+F 2945 3 12 mo
+F 2949 3 9 del
+- 2952
+F 2957 2 12 The 
+F 2961 5 12 next 
+F 2969 5 12 top 
+F 2977 3 12 mo
+F 2981 3 9 del
+- 2984
+F 2989 2 11 I’m 
+F 2993 3 12 in 
+F 2997 2 12 here 
+F 3001 3 12 bu
+F 3005 2 12 sy 
+F 3009 3 12 look
+F 3013 1 12 ing
+- 3014
+F 3017 3 12 For 
+F 3021 2 12 the 
+F 3025 5 12 next 
+F 3033 5 12 top 
+F 3041 3 12 mo
+F 3045 3 9 del
+- 3048
+F 3053 2 12 The 
+F 3057 5 12 next 
+F 3065 5 12 top 
+F 3073 3 12 mo
+F 3077 3 9 del
+- 3080
+F 3085 2 12 The 
+F 3089 5 12 next 
+F 3097 5 12 top 
+F 3105 3 12 mo
+F 3109 3 9 del
+- 3112
+F 3117 2 12 The 
+F 3121 5 12 next 
+F 3129 5 12 top, 
+F 3137 5 12 next 
+F 3145 1 12 top
+- 3146
+: 3149 2 12 To
+: 3153 5 12 night
+- 3158
+: 3165 2 12 We’re 
+: 3169 3 12 drink
+: 3173 2 12 ing 
+: 3177 3 12 from 
+: 3181 2 12 the 
+: 3185 7 12 bottle
+- 3192 3404
+- 3404
+: 3421 2 12 We’re 
+: 3425 3 12 drink
+: 3429 2 12 ing 
+: 3433 3 12 from 
+: 3437 2 12 the 
+: 3441 7 12 bottle.
+E
