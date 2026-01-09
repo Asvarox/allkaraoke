@@ -4216,6 +4216,33 @@
     "local": false
   },
   {
+    "id": "aimer-brave-shine",
+    "title": "Brave Shine",
+    "artist": "Aimer",
+    "video": "7vZp3yGxZXE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 342.04,
+    "gap": 15751.346041398667,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-01-09T00:14:35.767Z",
+    "genre": "Anime",
+    "realBpm": 171,
+    "volume": 0.5,
+    "author": "Snimax",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5370,
+    "tracksCount": 1,
+    "search": "aimerbraveshine",
+    "local": false
+  },
+  {
     "id": "aimer-escalate-tv",
     "title": "Escalate (TV)",
     "artist": "Aimer",
@@ -27257,6 +27284,139 @@
     "local": false
   },
   {
+    "id": "calvin-harris-acceptable-in-the-80s",
+    "title": "Acceptable In The 80s",
+    "artist": "Calvin Harris",
+    "video": "qysUfuoW1jg",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.94,
+    "gap": 30513.672735797452,
+    "year": "2007",
+    "lastUpdate": "2026-01-09T00:14:35.772Z",
+    "genre": "Disco",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Calvin Harris - Acceptable In The 80s",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5371,
+    "tracksCount": 1,
+    "search": "calvinharrisacceptableinthe80s",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-alesso-feat-hurts-under-control",
+    "title": "Under Control",
+    "artist": "Calvin Harris & Alesso feat. Hurts",
+    "video": "yZqmarGShxg",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.06,
+    "gap": 30368.336110449894,
+    "year": "2013",
+    "lastUpdate": "2026-01-09T00:14:37.971Z",
+    "genre": "Dance",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "snake84, fepo",
+    "sourceUrl": "Calvin Harris & Alesso feat. Hurts - Under Control",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5378,
+    "tracksCount": 1,
+    "search": "calvinharrisalessofeathurtsundercontrol",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-dua-lipa-one-kiss",
+    "title": "One Kiss",
+    "artist": "Calvin Harris & Dua Lipa",
+    "video": "DkeiKbqa02g",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 7481.774193548387,
+    "year": "2018",
+    "lastUpdate": "2026-01-09T00:14:47.391Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "AkaMisaki",
+    "sourceUrl": "Calvin Harris & Dua Lipa - One Kiss",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5390,
+    "tracksCount": 1,
+    "search": "calvinharrisdualipaonekiss",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-ellie-goulding-miracle",
+    "title": "Miracle",
+    "artist": "Calvin Harris / Ellie Goulding",
+    "video": "961v0E3b01g",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.05,
+    "gap": -27.315154693235428,
+    "year": "2023",
+    "lastUpdate": "2026-01-09T00:14:47.734Z",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Tracks",
+    "sourceUrl": "Calvin Harris / Ellie Goulding - Miracle",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 5392,
+    "tracksCount": 1,
+    "search": "calvinharriselliegouldingmiracle",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-ayah-marar-thinking-about-you",
+    "title": "Thinking About You",
+    "artist": "Calvin Harris feat. Ayah Marar",
+    "video": "cl3b7dDBLpo",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 49303.90625,
+    "year": "2012",
+    "lastUpdate": "2026-01-09T00:14:37.339Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris feat. Ayah Marar - Thinking About You",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5375,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatayahmararthinkingaboutyou",
+    "local": false
+  },
+  {
     "id": "calvin-harris-feat-ellie-goulding-i-need-your-love",
     "title": "I Need Your Love",
     "artist": "Calvin Harris feat. Ellie Goulding",
@@ -27285,6 +27445,192 @@
     "shortId": 852,
     "tracksCount": 1,
     "search": "calvinharrisfeatelliegouldingineedyourlove",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-ellie-goulding-outside",
+    "title": "Outside",
+    "artist": "Calvin Harris feat. Ellie Goulding",
+    "video": "J9NQFACZYEU",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.04,
+    "gap": 9024.061865333542,
+    "year": "2014",
+    "lastUpdate": "2026-01-09T00:14:38.648Z",
+    "genre": "Electrodance",
+    "realBpm": 60,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "sourceUrl": "Calvin Harris feat. Ellie Goulding - Outside",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5382,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatelliegouldingoutside",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-florence-welch-sweet-nothing",
+    "title": "Sweet Nothing",
+    "artist": "Calvin Harris feat. Florence Welch",
+    "video": "17ozSeGw-fY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.04,
+    "gap": 54964.06186533354,
+    "year": "2012",
+    "lastUpdate": "2026-01-09T00:14:36.731Z",
+    "genre": "Pop",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "sourceUrl": "Calvin Harris feat. Florence Welch - Sweet Nothing",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5372,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatflorencewelchsweetnothing",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-haim-pray-to-god",
+    "title": "Pray To God",
+    "artist": "Calvin Harris feat. Haim",
+    "video": "8FOBxcluXdk",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 15270,
+    "year": "2014",
+    "lastUpdate": "2026-01-09T00:14:38.816Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris feat. Haim - Pray To God",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5383,
+    "tracksCount": 1,
+    "search": "calvinharrisfeathaimpraytogod",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-john-newman-blame",
+    "title": "Blame",
+    "artist": "Calvin Harris feat. John Newman",
+    "video": "6ACl8s_tBzE",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.7,
+    "gap": 48222.737583105205,
+    "year": "2014",
+    "lastUpdate": "2026-01-09T00:14:38.456Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "field3",
+    "sourceUrl": "Calvin Harris feat. John Newman - Blame",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5381,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatjohnnewmanblame",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-kehlani-lil-yachty-faking-it",
+    "title": "Faking It",
+    "artist": "Calvin Harris feat. Kehlani & Lil Yachty",
+    "video": "5mPflmNE4ag",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 16250,
+    "year": "2017",
+    "lastUpdate": "2026-01-09T00:14:39.341Z",
+    "genre": "R&B",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Johhny2424",
+    "sourceUrl": "Calvin Harris feat. Kehlani & Lil Yachty - Faking It",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5386,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatkehlanililyachtyfakingit",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-kelis-bounce",
+    "title": "Bounce",
+    "artist": "Calvin Harris feat. Kelis",
+    "video": "ooZwmeUfuXg",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.92,
+    "gap": 25453.59487339794,
+    "year": "2011",
+    "lastUpdate": "2026-01-09T00:14:37.609Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris feat. Kelis - Bounce",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5376,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatkelisbounce",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-feat-ne-yo-lets-go",
+    "title": "Let’s Go",
+    "artist": "Calvin Harris feat. Ne-Yo",
+    "video": "LYZ6gXWZfZM",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.96,
+    "gap": 26223.750586029066,
+    "year": "2012",
+    "lastUpdate": "2026-01-09T00:14:47.223Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris feat. Ne-Yo - Let’s Go",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5389,
+    "tracksCount": 1,
+    "search": "calvinharrisfeatneyoletsgo",
     "local": false
   },
   {
@@ -27342,6 +27688,165 @@
     "local": false
   },
   {
+    "id": "calvin-harris-feat-tinie-tempah-drinking-from-the-bottle",
+    "title": "Drinking From The Bottle",
+    "artist": "Calvin Harris feat. Tinie Tempah",
+    "video": "uztCqjxrkjQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.96,
+    "gap": 82503.75058602907,
+    "year": "2012",
+    "lastUpdate": "2026-01-09T00:14:37.177Z",
+    "genre": "EDM",
+    "realBpm": 8,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Calvin Harris feat. Tinie Tempah - Drinking From The Bottle",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5374,
+    "tracksCount": 1,
+    "search": "calvinharrisfeattinietempahdrinkingfromthebottle",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-flashback",
+    "title": "Flashback",
+    "artist": "Calvin Harris",
+    "video": "c1y_wo_4fuQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.1,
+    "gap": 19164.2951971886,
+    "year": "2009",
+    "lastUpdate": "2026-01-09T00:14:38.308Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris - Flashback",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5380,
+    "tracksCount": 1,
+    "search": "calvinharrisflashback",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-im-not-alone",
+    "title": "I’m Not Alone",
+    "artist": "Calvin Harris",
+    "video": "a8TPXFoXO5A",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": -57.25190839694656,
+    "year": "2009",
+    "lastUpdate": "2026-01-09T00:14:38.159Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris - I’m Not Alone",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 5379,
+    "tracksCount": 1,
+    "search": "calvinharrisimnotalone",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-my-way",
+    "title": "My Way",
+    "artist": "Calvin Harris",
+    "video": "b4Bj7Zb-YD4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 15370,
+    "year": "2016",
+    "lastUpdate": "2026-01-09T00:14:47.075Z",
+    "genre": "Dance & Electronic",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Calvin Harris - My Way",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5388,
+    "tracksCount": 1,
+    "search": "calvinharrismyway",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-ready-for-the-weekend",
+    "title": "Ready For The Weekend",
+    "artist": "Calvin Harris",
+    "video": "KRP9M_xF5SY",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.02,
+    "gap": 13721.810013767119,
+    "year": "2009",
+    "lastUpdate": "2026-01-09T00:14:37.801Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris - Ready For The Weekend",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5377,
+    "tracksCount": 1,
+    "search": "calvinharrisreadyfortheweekend",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-sam-smith-promises",
+    "title": "Promises",
+    "artist": "Calvin Harris & Sam Smith",
+    "video": "kkLk2XWMBf8",
+    "language": [
+      "English"
+    ],
+    "bpm": 246.38,
+    "gap": 33085.894959006415,
+    "year": "2018",
+    "lastUpdate": "2026-01-09T00:14:36.979Z",
+    "genre": "Pop",
+    "realBpm": 7,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Calvin Harris & Sam Smith - Promises",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5373,
+    "tracksCount": 1,
+    "search": "calvinharrissamsmithpromises",
+    "local": false
+  },
+  {
     "id": "calvin-harris-summer",
     "title": "Summer",
     "artist": "Calvin Harris",
@@ -27368,6 +27873,59 @@
     "shortId": 855,
     "tracksCount": 1,
     "search": "calvinharrissummer",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-the-girls",
+    "title": "The Girls",
+    "artist": "Calvin Harris",
+    "video": "DwZVZ5qZnoA",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.9,
+    "gap": -17.549824150058612,
+    "year": "2007",
+    "lastUpdate": "2026-01-09T00:14:46.925Z",
+    "genre": "Electro House",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "GunnerXero",
+    "sourceUrl": "Calvin Harris - The Girls",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 5387,
+    "tracksCount": 1,
+    "search": "calvinharristhegirls",
+    "local": false
+  },
+  {
+    "id": "calvin-harris-you-used-to-hold-me",
+    "title": "You Used To Hold Me",
+    "artist": "Calvin Harris",
+    "video": "mf58RAPR8Ws",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.8,
+    "gap": 34.52288595810711,
+    "year": "2009",
+    "lastUpdate": "2026-01-09T00:14:39.006Z",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Calvin Harris - You Used To Hold Me",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 5384,
+    "tracksCount": 1,
+    "search": "calvinharrisyouusedtoholdme",
     "local": false
   },
   {
@@ -30918,6 +31476,33 @@
     "shortId": 973,
     "tracksCount": 1,
     "search": "chumbawambatubthumping",
+    "local": false
+  },
+  {
+    "id": "ciara-feat-missy-elliott-1-2-step",
+    "title": "1, 2 Step",
+    "artist": "Ciara feat. Missy Elliott",
+    "video": "iBHNgV6_znU",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 2474.424778761062,
+    "year": "2004",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-09T00:14:47.896Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Ciara feat. Missy Elliott - 1, 2 Step",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5393,
+    "tracksCount": 1,
+    "search": "ciarafeatmissyelliott12step",
     "local": false
   },
   {
@@ -41723,6 +42308,35 @@
     "shortId": 1324,
     "tracksCount": 1,
     "search": "dixiechickslandslide",
+    "local": false
+  },
+  {
+    "id": "dizzee-rascal-feat-calvin-harris-chrome-dance-wiv-me",
+    "title": "Dance Wiv Me",
+    "artist": "Dizzee Rascal feat. Calvin Harris & Chrome",
+    "video": "c2MiyZx8MTY",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.25,
+    "gap": 3186.655518394649,
+    "year": "2008",
+    "lastUpdate": "2026-01-09T00:14:39.166Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET]",
+    "tracks": [
+      {
+        "start": 209
+      },
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5385,
+    "tracksCount": 2,
+    "search": "dizzeerascalfeatcalvinharrischromedancewivme",
     "local": false
   },
   {
@@ -62100,6 +62714,34 @@
     "shortId": 1980,
     "tracksCount": 1,
     "search": "imageslesdemonsdeminuit",
+    "local": false
+  },
+  {
+    "id": "imagination-just-an-illusion",
+    "title": "Just An Illusion",
+    "artist": "Imagination",
+    "video": "_QEdh1tcLtw",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.7,
+    "gap": 31623.322259136214,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-09T00:14:48.583Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "Imagination - Just An Illusion",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5406,
+    "tracksCount": 1,
+    "search": "imaginationjustanillusion",
     "local": false
   },
   {
@@ -95484,6 +96126,61 @@
     "local": false
   },
   {
+    "id": "missy-higgins-scar",
+    "title": "Scar",
+    "artist": "Missy Higgins",
+    "video": "qKn7XAMNV-g",
+    "language": [
+      "English"
+    ],
+    "bpm": 364.68,
+    "gap": 10262.833168805528,
+    "year": "2004",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-09T00:14:47.898Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Missy Higgins - Scar",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5394,
+    "tracksCount": 1,
+    "search": "missyhigginsscar",
+    "local": false
+  },
+  {
+    "id": "missy-higgins-where-i-stood",
+    "title": "Where I Stood",
+    "artist": "Missy Higgins",
+    "video": "c9QNRvXH1HI",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 4700,
+    "year": "2007",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-09T00:14:48.059Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "REL",
+    "sourceUrl": "Missy Higgins - Where I Stood",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5395,
+    "tracksCount": 1,
+    "search": "missyhigginswhereistood",
+    "local": false
+  },
+  {
     "id": "mitski-a-pearl",
     "title": "A Pearl",
     "artist": "Mitski",
@@ -110249,6 +110946,33 @@
     "local": false
   },
   {
+    "id": "powderfinger-baby-ive-got-you-on-my-mind",
+    "title": "(Baby I’ve Got You) On My Mind",
+    "artist": "Powderfinger",
+    "video": "fZeuWoIBuo8",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 33203.97260273973,
+    "year": "2003",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-09T00:14:48.761Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "a224",
+    "sourceUrl": "Powderfinger - (Baby I’ve Got You) On My Mind",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5407,
+    "tracksCount": 1,
+    "search": "powderfingerbabyivegotyouonmymind",
+    "local": false
+  },
+  {
     "id": "powerwolf-demons-are-a-girls-best-friend",
     "title": "Demons Are A Girl’s Best Friend",
     "artist": "Powerwolf",
@@ -119101,6 +119825,33 @@
     "shortId": 3777,
     "tracksCount": 1,
     "search": "samryderspaceman",
+    "local": false
+  },
+  {
+    "id": "sam-smith-calvin-harris-jessie-reyez-im-not-here-to-make-friends",
+    "title": "I’m Not Here To Make Friends",
+    "artist": "Sam Smith, Calvin Harris & Jessie Reyez",
+    "video": "hYjHhqLSiN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 24901.739130434784,
+    "year": "2023",
+    "lastUpdate": "2026-01-09T00:14:47.569Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "sourceUrl": "Sam Smith, Calvin Harris & Jessie Reyez - I’m Not Here To Make Friends",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5391,
+    "tracksCount": 1,
+    "search": "samsmithcalvinharrisjessiereyezimnotheretomakefriends",
     "local": false
   },
   {
@@ -139359,6 +140110,171 @@
     "local": false
   },
   {
+    "id": "the-pussycat-dolls-bad-girl",
+    "title": "Bad Girl",
+    "artist": "The Pussycat Dolls",
+    "video": "3XtGPwe7GXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 364,
+    "gap": 209.12087912087907,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.228Z",
+    "genre": "R&B",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "michas17j",
+    "sourceUrl": "The Pussycat Dolls - Bad Girl",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 5398,
+    "tracksCount": 1,
+    "search": "thepussycatdollsbadgirl",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-bottle-pop",
+    "title": "Bottle Pop",
+    "artist": "The Pussycat Dolls",
+    "video": "73z_CI1Ic9U",
+    "language": [
+      "English"
+    ],
+    "bpm": 232,
+    "gap": -119.82758620689663,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.402Z",
+    "genre": "R&B",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "michas17j",
+    "sourceUrl": "The Pussycat Dolls - Bottle Pop",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5402,
+    "tracksCount": 1,
+    "search": "thepussycatdollsbottlepop",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-dont-cha-radio-edit",
+    "title": "Don’t Cha (Radio Edit)",
+    "artist": "The Pussycat Dolls",
+    "video": "QbzbcglUvhQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.4,
+    "gap": 881.6638935108153,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.226Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "The Pussycat Dolls - Don’t Cha (Radio Edit)",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5397,
+    "tracksCount": 1,
+    "search": "thepussycatdollsdontcharadioedit",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-feat-missy-elliott-whatcha-think-about-that",
+    "title": "Whatcha Think About That",
+    "artist": "The Pussycat Dolls feat. Missy Elliott",
+    "video": "LpGFhuokOXw",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.02,
+    "gap": -179.91667361053237,
+    "year": "2008",
+    "lastUpdate": "2026-01-09T00:14:48.231Z",
+    "genre": "R&B",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "michas17j",
+    "sourceUrl": "The Pussycat Dolls feat. Missy Elliott - Whatcha Think About That",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5399,
+    "tracksCount": 1,
+    "search": "thepussycatdollsfeatmissyelliottwhatchathinkaboutthat",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-feat-snoop-dogg-buttons",
+    "title": "Buttons",
+    "artist": "The Pussycat Dolls feat. Snoop Dogg",
+    "video": "VCLxJd1d84s",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.2,
+    "gap": -34.96669838249295,
+    "year": "2006",
+    "lastUpdate": "2026-01-09T00:14:48.063Z",
+    "genre": "R&B",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "The Pussycat Dolls feat. Snoop Dogg - Buttons",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 5396,
+    "tracksCount": 1,
+    "search": "thepussycatdollsfeatsnoopdoggbuttons",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-feat-timbaland-wait-a-minute",
+    "title": "Wait A Minute",
+    "artist": "The Pussycat Dolls feat. Timbaland",
+    "video": "iWyvMerss4w",
+    "language": [
+      "English"
+    ],
+    "bpm": 272.92,
+    "gap": 5740.699105965118,
+    "year": "2005",
+    "lastUpdate": "2026-01-09T00:14:48.406Z",
+    "genre": "R&B",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "michas17j",
+    "sourceUrl": "The Pussycat Dolls feat. Timbaland - Wait A Minute",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5403,
+    "tracksCount": 1,
+    "search": "thepussycatdollsfeattimbalandwaitaminute",
+    "local": false
+  },
+  {
     "id": "the-pussycat-dolls-hush-hush-hush-hush",
     "title": "Hush Hush; Hush Hush",
     "artist": "The Pussycat Dolls",
@@ -139389,6 +140305,90 @@
     "local": false
   },
   {
+    "id": "the-pussycat-dolls-i-dont-need-a-man",
+    "title": "I Don’t Need A Man",
+    "artist": "The Pussycat Dolls",
+    "video": "qBsEF7Qx09o",
+    "language": [
+      "English"
+    ],
+    "bpm": 211.85,
+    "gap": -111.26740618362055,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.579Z",
+    "genre": "R&B",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "The Pussycat Dolls - I Don’t Need A Man",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5404,
+    "tracksCount": 1,
+    "search": "thepussycatdollsidontneedaman",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-i-hate-this-part",
+    "title": "I Hate This Part",
+    "artist": "The Pussycat Dolls",
+    "video": "S97MaG3kOMY",
+    "language": [
+      "English"
+    ],
+    "bpm": 334.8,
+    "gap": 5434.336917562724,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.397Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "macgyver2809",
+    "sourceUrl": "The Pussycat Dolls - I Hate This Part",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5400,
+    "tracksCount": 1,
+    "search": "thepussycatdollsihatethispart",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-stickwitu",
+    "title": "Stickwitu",
+    "artist": "The Pussycat Dolls",
+    "video": "K1uNjmxJQUo",
+    "language": [
+      "English"
+    ],
+    "bpm": 319.8,
+    "gap": 4645.009380863039,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.399Z",
+    "edition": "Singstar Boy Bands Vs Girl Bands",
+    "genre": "R&B",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "britneyblisswilliams",
+    "sourceUrl": "The Pussycat Dolls feat. Avant - Stickwitu",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5401,
+    "tracksCount": 1,
+    "search": "thepussycatdollsstickwitu",
+    "local": false
+  },
+  {
     "id": "the-pussycat-dolls-sway",
     "title": "Sway",
     "artist": "The Pussycat Dolls",
@@ -139415,6 +140415,34 @@
     "shortId": 4388,
     "tracksCount": 1,
     "search": "thepussycatdollssway",
+    "local": false
+  },
+  {
+    "id": "the-pussycat-dolls-when-i-grow-up",
+    "title": "When I Grow Up",
+    "artist": "The Pussycat Dolls",
+    "video": "K0K46C82v9o",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.94,
+    "gap": 9507.085338060268,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-09T00:14:48.582Z",
+    "genre": "R&B",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "perzu25",
+    "sourceUrl": "The Pussycat Dolls - When I Grow Up",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5405,
+    "tracksCount": 1,
+    "search": "thepussycatdollswhenigrowup",
     "local": false
   },
   {

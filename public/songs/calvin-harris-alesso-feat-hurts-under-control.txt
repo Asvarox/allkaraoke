@@ -1,0 +1,297 @@
+#ARTIST:Calvin Harris & Alesso feat. Hurts
+#TITLE:Under Control
+#CREATOR:snake84, fepo
+#BPM:252,06
+#YEAR:2013
+#VIDEO:v=yZqmarGShxg
+#GENRE:Dance
+#LANGUAGE:English
+#GAP:30368,336110449894
+#ALLKARAOKE_ID:calvin-harris-alesso-feat-hurts-under-control
+#ALLKARAOKE_SID:5378
+#ALLKARAOKE_LASTUPDATE:2026-01-09T00:14:37.971Z
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:Calvin Harris & Alesso feat. Hurts - Under Control
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Calvin Harris & Alesso feat. Hurts - Under Control.mp3
+: 17 2 5 I 
+: 21 6 8 might 
+: 29 8 5 be
+- 37
+: 53 2 8 A
+: 57 2 10 ny
+: 61 6 10 one
+- 67
+: 81 2 8 A 
+* 85 6 12 lone 
+: 93 6 8 fool
+- 99
+: 113 2 8 Out 
+: 117 2 7 in 
+: 121 2 5 the 
+: 125 6 5 sun
+- 131
+: 145 2 5 Your 
+: 149 6 8 heart
+: 157 6 5 beat
+- 163
+: 177 2 5 Of 
+: 181 2 8 so
+: 185 2 10 lid 
+* 189 6 10 gold
+- 195
+: 210 2 5 I 
+: 213 6 12 love 
+: 221 3 8 you
+: 225 6 7 ~
+- 231
+: 241 2 7 You’ll 
+: 245 2 7 ne
+: 249 2 5 ver 
+: 253 6 5 know
+- 259
+: 269 2 10 When 
+: 273 2 8 the 
+: 277 6 10 day
+: 285 6 10 light 
+: 293 6 10 comes 
+: 301 6 10 you 
+: 309 6 10 feel 
+: 317 3 12 so
+: 321 2 12 ~ 
+: 325 3 8 co
+: 329 3 7 ~
+: 333 14 5 ~ld
+- 347
+: 353 2 7 You 
+: 357 3 7 know
+* 361 3 5 ~
+: 365 14 3 ~
+- 379
+: 393 2 8 I’m 
+: 397 2 10 too 
+: 401 2 8 a
+: 405 6 10 fraid 
+: 413 2 10 of 
+: 417 2 8 my 
+: 421 6 10 heart 
+: 429 6 10 to 
+: 437 6 10 let 
+: 445 6 12 you 
+: 453 3 8 go
+: 457 3 7 ~
+: 461 12 5 ~
+- 473
+: 481 6 7 Wai
+: 489 2 7 ting 
+: 493 2 7 for 
+: 497 2 8 the 
+: 501 2 7 fi
+: 505 2 5 re 
+* 509 6 3 to 
+: 517 22 8 light
+- 539
+: 545 6 10 Fee
+: 553 2 10 ling 
+: 557 2 10 like 
+: 561 2 12 we 
+: 565 6 10 could 
+: 573 6 8 do 
+: 581 3 5 ri
+: 585 16 3 ~ght
+- 601
+* 609 6 10 Be 
+: 617 2 10 the 
+: 621 2 10 one 
+: 625 2 12 that 
+: 629 6 8 makes 
+: 637 6 8 to
+: 645 20 8 night
+- 665
+: 669 2 3 ’Cause 
+: 673 6 10 free
+: 681 2 10 dom 
+: 685 2 10 is 
+: 689 2 12 a 
+: 693 3 10 lo
+: 697 2 8 ~ne
+: 701 6 5 ly 
+: 709 3 5 roa
+: 713 16 3 ~d
+- 729
+: 737 2 3 We’re 
+: 741 2 5 un
+: 745 2 8 der 
+: 749 2 8 con
+: 753 14 8 trol
+- 767 1232
+- 1232
+: 1249 2 3 We’re 
+* 1253 2 5 un
+: 1257 2 8 der 
+: 1261 2 8 con
+: 1265 14 8 trol
+- 1279 1408
+- 1408
+: 1425 2 5 I 
+: 1429 6 8 might 
+: 1437 8 5 be
+- 1445
+: 1461 2 8 A
+: 1465 2 10 ny
+: 1469 6 10 one
+- 1475
+: 1489 2 5 A 
+: 1493 6 12 lone 
+: 1501 6 8 fool
+- 1507
+: 1521 2 8 Out 
+: 1525 2 8 in 
+* 1529 2 5 the 
+: 1533 6 5 sun
+- 1539
+: 1553 2 5 Your 
+: 1557 6 8 heart
+: 1565 6 5 beat
+- 1571
+: 1585 2 5 Of 
+: 1589 2 8 so
+: 1593 2 10 lid 
+: 1597 6 10 gold
+- 1603
+: 1618 2 5 I 
+* 1621 6 12 love 
+: 1629 3 8 you
+: 1633 6 7 ~
+- 1639
+: 1649 2 7 You’ll 
+: 1653 2 7 ne
+: 1657 2 5 ver 
+: 1661 6 5 know
+- 1667
+: 1677 2 10 When 
+: 1681 2 8 the 
+: 1685 6 10 day
+: 1693 6 10 light 
+: 1701 6 10 comes 
+: 1709 6 10 you 
+: 1717 6 10 feel 
+: 1725 3 12 so
+: 1729 2 12 ~ 
+: 1733 3 8 co
+: 1737 3 7 ~
+: 1741 14 5 ~ld
+- 1755
+: 1761 2 7 You 
+: 1765 3 7 know
+: 1769 3 5 ~
+* 1773 14 3 ~
+- 1787
+: 1801 2 8 I’m 
+: 1805 2 10 too 
+: 1809 2 8 a
+: 1813 6 10 fraid 
+: 1821 2 10 of 
+: 1825 2 8 my 
+: 1829 6 10 heart 
+: 1837 6 10 to 
+: 1845 6 10 let 
+: 1853 6 12 you 
+: 1861 3 8 go
+* 1865 3 7 ~
+: 1869 12 5 ~
+- 1881
+: 1889 6 7 Wai
+: 1897 2 7 ting 
+: 1901 2 7 for 
+: 1905 2 8 the 
+: 1909 2 7 fi
+: 1913 2 5 re 
+: 1917 6 3 to 
+: 1925 22 8 light
+- 1947
+* 1953 6 10 Fee
+: 1961 2 10 ling 
+: 1965 2 10 like 
+: 1969 2 12 we 
+: 1973 6 10 could 
+: 1981 6 8 do 
+: 1989 3 5 ri
+: 1993 16 3 ~ght
+- 2009
+: 2017 6 10 Be 
+: 2025 2 10 the 
+* 2029 2 10 one 
+: 2033 2 12 that 
+: 2037 6 8 makes 
+: 2045 6 8 to
+: 2053 20 8 night
+- 2073
+: 2077 2 3 ’Cause 
+: 2081 6 10 free
+: 2089 2 10 dom 
+: 2093 2 10 is 
+: 2097 2 12 a 
+: 2101 3 10 lo
+: 2105 2 8 ~ne
+: 2109 6 5 ly 
+: 2117 3 5 roa
+: 2121 16 3 ~d
+- 2137
+: 2145 2 3 We’re 
+: 2149 2 5 un
+: 2153 2 8 der 
+: 2157 2 8 con
+: 2161 14 8 trol
+- 2175 2384
+- 2384
+: 2401 6 7 Wai
+: 2409 2 7 ting 
+: 2413 2 7 for 
+: 2417 2 8 the 
+: 2421 2 7 fi
+: 2425 2 5 re 
+: 2429 6 3 to 
+: 2437 22 8 light
+- 2459
+: 2465 6 10 Fee
+: 2473 2 10 ling 
+: 2477 2 10 like 
+: 2481 2 12 we 
+* 2485 6 10 could 
+: 2493 6 8 do 
+: 2501 3 5 ri
+: 2505 16 3 ~ght
+- 2521
+: 2529 6 10 Be 
+: 2537 2 10 the 
+: 2541 2 10 one 
+: 2545 2 12 that 
+: 2549 6 8 makes 
+: 2557 6 8 to
+: 2565 20 8 night
+- 2585
+: 2589 2 3 ’Cause 
+: 2593 6 10 free
+: 2601 2 10 dom 
+: 2605 2 10 is 
+: 2609 2 12 a 
+: 2613 3 10 lo
+: 2617 2 8 ~ne
+: 2621 6 5 ly 
+: 2629 3 5 roa
+: 2633 16 3 ~d
+- 2649
+: 2657 2 3 We’re 
+: 2661 2 5 un
+: 2665 2 8 der 
+: 2669 2 8 con
+* 2673 14 8 trol
+- 2687 2896
+- 2896
+: 2913 2 3 We’re 
+: 2917 2 5 un
+: 2921 2 8 der 
+: 2925 2 8 con
+: 2929 14 8 trol
+E

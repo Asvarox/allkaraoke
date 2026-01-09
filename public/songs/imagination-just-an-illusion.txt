@@ -1,0 +1,41 @@
+#ARTIST:Imagination
+#TITLE:Just An Illusion
+#CREATOR:Diddlmaus30mg
+#BPM:210,7
+#YEAR:1981
+#VIDEO:v=_QEdh1tcLtw
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:31623,322259136214
+#ALLKARAOKE_ID:imagination-just-an-illusion
+#ALLKARAOKE_SID:5406
+#ALLKARAOKE_LASTUPDATE:2026-01-09T00:14:48.583Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:24
+#ALLKARAOKE_SOURCEURL:Imagination - Just An Illusion
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Imagination - Just An Illusion.mp3
+: 14 2 6 Sear
+: 17 2 8 ching 
+: 20 2 9 for
+- 22
+: 24 2 11 A 
+: 28 4 13 des
+: 33 2 11 ti
+: 36 4 9 ny 
+: 42 3 6 that’s 
+: 46 9 11 mine
+- 55 64
+- 64
+: 78 2 6 There’s 
+: 81 1 8 a
+: 84 3 9 no
+: 88 2 11 ther 
+: 92 5 13 place
+- 97
+: 98 3 9 A
+: 102 3 13 no
+: 106 2 18 ther 
+* 110 11 18 ti
+: 122 1 20 ~
+E

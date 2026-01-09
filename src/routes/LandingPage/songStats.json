@@ -79,8 +79,10 @@
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
+    "The Pussycat Dolls",
     "Whitney Houston",
     "Bon Jovi",
+    "Calvin Harris",
     "Depeche Mode",
     "Electric Light Orchestra",
     "Lorde",
@@ -147,9 +149,7 @@
     "Gorillaz",
     "Guns N' Roses",
     "Heart",
-    "Hollywood Undead",
-    "Justin Bieber",
-    "Justin Timberlake"
+    "Hollywood Undead"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5368
+  "songs": 5406
 }

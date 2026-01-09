@@ -1,0 +1,955 @@
+#ARTIST:Dizzee Rascal feat. Calvin Harris & Chrome
+#TITLE:Dance Wiv Me
+#CREATOR:bohning
+#BPM:224,25
+#YEAR:2008
+#VIDEO:v=c2MiyZx8MTY
+#LANGUAGE:English
+#GAP:3186,655518394649
+#ALLKARAOKE_ID:dizzee-rascal-feat-calvin-harris-chrome-dance-wiv-me
+#ALLKARAOKE_SID:5385
+#ALLKARAOKE_LASTUPDATE:2026-01-09T00:14:39.166Z
+#ALLKARAOKE_REALBPM:15
+#ALLKARAOKE_SOURCEURL:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET]
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET].mp3
+#COVER:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET] [CO].jpg
+#BACKGROUND:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET] [BG].jpg
+- 0 194
+- 194
+R 209 1 13 What’s 
+R 211 2 13 up 
+R 215 2 13 dar
+R 219 2 13 lin’?
+- 221
+R 227 1 13 I 
+R 229 1 13 been 
+R 231 1 13 kee
+R 233 1 13 pin’ 
+R 235 1 13 my 
+R 239 2 13 eye
+- 241
+R 243 1 13 On 
+R 245 1 13 your 
+R 247 2 13 move
+R 251 2 13 ment
+- 253
+R 257 1 13 I 
+R 259 2 13 can’t 
+R 263 2 13 see 
+R 267 2 13 no
+- 269
+R 271 2 13 Room 
+R 275 1 13 for 
+R 277 1 13 im
+R 279 3 13 prove
+R 283 2 13 ment
+- 285
+R 289 1 13 Ah 
+R 291 1 13 why 
+R 293 1 13 you 
+R 295 2 13 all 
+R 299 1 13 o
+R 301 1 13 ver 
+R 303 2 13 there
+- 305
+G 307 1 13 On 
+R 309 1 13 your 
+R 311 2 13 Jack 
+R 315 2 13 Jones?
+- 317
+R 321 1 13 You 
+R 323 1 13 need 
+R 325 1 13 to 
+R 327 1 13 let 
+R 329 1 13 me 
+R 331 2 13 get
+- 333
+R 335 1 13 Be
+R 337 2 13 hind 
+R 341 1 13 your 
+R 343 1 13 back
+R 347 2 13 bone
+- 349
+R 353 1 15 ’Cause 
+R 355 1 15 I’m 
+R 357 1 15 the 
+R 359 2 15 man 
+R 363 1 15 for 
+R 365 1 15 the 
+R 367 2 15 job
+- 369
+R 371 1 15 Let 
+R 373 1 15 me 
+R 375 2 15 work 
+R 379 1 15 it
+- 380
+R 385 1 15 I 
+R 387 1 15 won’t 
+R 391 1 15 waste 
+R 395 1 15 no 
+R 399 1 15 time
+- 400
+R 401 1 15 I’ll 
+R 403 1 15 make 
+R 405 1 15 it 
+R 407 2 15 worth 
+R 411 2 15 it
+- 413
+R 419 1 15 One 
+R 423 1 15 hun
+R 425 1 15 dred 
+R 427 1 15 per
+R 429 1 15 cent
+- 430
+R 433 1 15 I’ll 
+R 435 1 15 make 
+R 437 1 15 it 
+R 439 1 15 worth 
+R 443 2 15 it
+- 445
+R 449 1 15 You 
+R 451 1 15 got 
+R 453 1 15 a 
+R 455 1 15 bo
+R 457 1 15 dy 
+R 459 1 15 to 
+R 461 2 15 die 
+R 465 1 15 for
+- 466
+R 467 1 15 Let 
+R 469 1 15 me 
+R 471 2 15 merk 
+R 475 2 15 it
+- 477
+R 483 1 16 Now 
+R 485 1 16 it’s 
+R 487 1 16 mur
+R 489 1 16 der 
+R 491 1 16 on 
+R 493 1 16 the 
+R 495 1 16 dance
+R 499 2 16 floor
+- 501
+R 505 1 16 I 
+R 507 1 16 wan
+R 509 1 16 na 
+R 511 2 16 take 
+R 515 2 16 this
+- 517
+G 519 1 16 Fur
+R 521 1 16 ther 
+R 523 1 16 than 
+R 525 1 16 the 
+R 527 1 16 dance
+R 531 2 16 floor
+- 533
+R 537 1 16 I 
+R 539 1 16 ain’t 
+R 543 1 16 force
+R 547 1 16 ful
+- 548
+R 551 1 16 But 
+R 553 1 16 I’m 
+R 555 1 16 still 
+R 559 1 16 hard
+R 563 1 16 core
+- 564
+R 569 1 16 You’re 
+R 571 1 16 gon
+R 573 1 16 na 
+R 575 1 16 give 
+R 579 1 16 me
+- 580
+R 583 1 16 Eve
+R 585 1 16 ry
+R 587 1 16 thing 
+R 589 1 16 I 
+R 591 2 16 ask 
+R 595 2 16 for
+- 597
+R 601 1 17 It’s 
+R 603 1 17 not 
+R 605 1 17 a 
+R 607 1 17 long 
+R 611 1 17 ting
+- 612
+R 619 1 17 You’re 
+R 621 1 17 the 
+R 623 1 17 boom 
+R 627 2 17 ting
+- 629
+G 635 1 17 May
+R 637 1 17 be 
+R 639 3 17 more 
+R 643 1 17 than 
+R 645 1 17 a 
+R 647 2 17 ho
+R 651 2 17 tel 
+R 655 2 17 room 
+R 659 2 17 ting
+- 661
+R 665 1 17 I’ll 
+R 667 1 17 ne
+R 669 1 17 ver 
+R 671 2 17 know 
+R 675 1 17 if 
+R 677 1 17 I 
+R 679 2 17 just 
+R 683 1 17 walk 
+R 687 3 17 past
+- 690
+R 693 1 17 I 
+R 695 1 17 real
+R 697 1 17 ly 
+R 699 1 17 wan
+R 701 1 17 na 
+R 703 2 17 dance
+- 705
+R 707 1 17 So 
+R 709 1 17 I 
+R 711 1 17 guess 
+R 713 1 17 I’ll 
+R 715 1 17 just 
+R 719 2 17 ask
+- 721 836
+- 836
+R 851 1 13 Come 
+R 853 1 13 and 
+R 855 2 13 dance 
+R 859 1 13 with 
+R 861 2 13 me
+- 863
+R 867 1 13 Come 
+R 869 1 13 and 
+R 871 2 13 dance 
+R 875 1 13 with 
+R 877 2 13 me
+- 879
+R 883 1 13 Come 
+R 885 1 13 and 
+R 887 2 13 dance 
+R 891 1 13 with 
+R 893 2 13 me
+- 895
+R 899 2 13 Come 
+R 903 2 13 dance 
+R 907 1 13 with 
+R 909 2 13 me
+- 911
+R 913 1 13 I 
+R 915 1 13 see 
+R 917 1 13 you 
+R 919 1 13 glance 
+R 923 1 13 at 
+R 925 2 13 me
+- 927
+R 929 1 13 That’s 
+R 931 1 13 why 
+R 933 1 13 I’m 
+R 935 1 13 as
+R 939 1 13 kin’ 
+R 941 1 13 B
+- 942
+R 945 1 13 So 
+R 947 1 13 let’s 
+R 951 1 13 par
+R 955 1 13 ty 
+R 957 2 13 B
+- 959
+R 963 1 13 Come 
+R 965 1 13 and 
+R 967 1 13 dance 
+R 971 1 13 with 
+R 973 2 13 me
+- 975 1154
+- 1154
+R 1169 1 25 I 
+R 1171 1 25 see 
+R 1173 1 25 you 
+R 1175 2 25 glance 
+R 1179 1 25 at 
+R 1181 2 25 me
+- 1183
+R 1185 1 25 That’s 
+R 1187 1 25 why 
+R 1189 1 25 I’m 
+R 1191 2 25 as
+R 1195 1 25 kin’ 
+R 1197 2 25 B
+- 1199
+R 1201 1 25 So 
+R 1203 2 25 let’s 
+R 1207 2 25 par
+R 1211 1 25 ty 
+R 1213 2 25 B
+- 1215
+R 1219 1 25 Come 
+R 1221 1 25 and 
+R 1223 2 25 dance 
+R 1227 1 25 with 
+R 1229 2 25 me
+- 1231
+R 1243 2 13 Yo
+- 1245
+R 1249 1 13 It 
+R 1251 2 13 goes 
+R 1255 2 13 on 
+R 1259 2 13 and 
+R 1263 2 13 on
+- 1265
+R 1269 1 13 I 
+R 1271 1 13 see 
+R 1273 1 13 you 
+R 1275 1 13 get 
+R 1277 1 13 ex
+R 1279 1 13 ci
+R 1281 1 13 ted
+- 1282
+R 1283 1 13 Like 
+R 1287 1 13 this 
+R 1289 1 13 is 
+R 1291 1 13 my 
+R 1295 3 13 song
+- 1298
+R 1301 1 13 You 
+R 1303 1 13 think 
+R 1305 1 13 I 
+R 1307 1 13 wan
+R 1309 1 13 na 
+R 1311 1 13 get 
+R 1313 1 13 in
+R 1315 1 13 volved
+- 1316
+R 1319 1 13 You 
+R 1321 1 13 are 
+R 1323 1 13 not 
+R 1327 1 13 wrong
+- 1328
+R 1333 1 13 ’Cause 
+R 1335 1 13 I 
+R 1337 1 13 been 
+R 1339 1 13 wai
+R 1341 1 13 ting 
+R 1343 1 13 for 
+R 1345 1 13 this 
+R 1347 1 13 mo
+R 1349 1 13 ment
+- 1350
+R 1351 1 13 All 
+R 1355 1 13 night 
+R 1359 2 13 long
+- 1361
+R 1363 1 15 So 
+R 1365 1 15 I 
+R 1367 2 15 creep, 
+R 1371 1 15 creep, 
+R 1375 2 15 creep
+- 1377
+R 1379 2 15 Back 
+R 1383 1 15 to 
+R 1385 1 15 your 
+R 1387 1 15 seat
+- 1388
+R 1393 1 15 I 
+R 1395 1 15 got 
+R 1397 1 15 my 
+R 1399 1 15 left 
+R 1403 2 15 eye
+- 1405
+R 1407 1 15 Chec
+R 1409 1 15 kin’ 
+R 1411 1 15 out 
+R 1413 1 15 your 
+R 1415 1 15 sce
+R 1417 1 15 ne
+R 1419 1 15 ry
+- 1420
+R 1425 1 15 I 
+R 1427 1 15 got 
+R 1429 1 15 my 
+R 1431 2 15 right 
+R 1435 2 15 eye
+- 1437
+R 1439 1 15 Right 
+R 1443 1 15 where 
+R 1445 1 15 it 
+R 1447 1 15 needs 
+R 1449 1 15 to 
+R 1451 1 15 be
+- 1452
+R 1457 1 15 No 
+R 1459 1 15 mat
+R 1461 1 15 ter 
+R 1463 1 15 how 
+R 1465 1 15 I 
+R 1467 1 15 look 
+R 1471 1 15 at 
+R 1473 1 15 it
+- 1474
+R 1475 1 15 You 
+R 1477 1 15 look 
+R 1479 1 15 good 
+R 1481 1 15 to 
+R 1483 3 15 me
+- 1486
+R 1491 3 16 Still
+- 1494
+R 1501 1 16 I’m 
+R 1503 1 16 loo
+R 1505 1 16 kin’ 
+R 1507 1 16 for 
+R 1509 1 16 the 
+R 1511 2 16 per
+R 1515 2 16 fect 
+R 1519 2 16 view
+- 1521
+R 1525 1 16 The 
+R 1527 1 16 way 
+R 1529 1 16 I 
+R 1531 1 16 see 
+R 1533 1 16 it
+- 1534
+R 1535 2 16 That’s 
+R 1539 2 16 right 
+R 1543 2 16 next 
+R 1547 2 16 to 
+R 1551 3 16 you
+- 1554
+R 1557 1 16 I 
+R 1559 1 16 know 
+R 1561 1 16 you’ve 
+R 1563 1 16 pro
+R 1565 1 16 bab
+R 1567 1 16 ly
+- 1568
+R 1569 1 16 Heard 
+R 1571 1 16 it 
+R 1573 1 16 be
+R 1575 1 16 fore 
+R 1579 1 16 but 
+R 1583 2 16 still
+- 1585
+R 1589 1 16 I 
+R 1591 1 16 love 
+R 1593 1 16 it 
+R 1595 1 16 when 
+R 1597 1 16 you 
+R 1599 2 16 flex
+- 1601
+R 1603 1 16 Like 
+R 1607 2 16 that 
+R 1611 1 16 for 
+R 1615 3 16 real
+- 1618
+R 1619 2 16 So 
+R 1623 2 16 don’t 
+R 1627 2 16 stop 
+R 1631 1 16 do
+R 1633 1 16 in’
+- 1634
+R 1635 1 16 What 
+R 1637 1 16 you 
+R 1639 2 16 do 
+R 1643 1 16 when 
+R 1645 1 16 you 
+R 1647 1 16 do 
+R 1649 1 16 it
+- 1650
+R 1655 1 16 I 
+R 1657 1 16 just 
+R 1659 1 16 wan
+R 1661 1 16 na 
+R 1663 1 16 be 
+R 1665 1 16 a 
+R 1667 2 16 part 
+R 1671 1 16 of 
+R 1673 1 16 it
+- 1674
+R 1675 1 16 When 
+R 1677 1 16 you 
+R 1679 1 16 do 
+R 1681 2 16 it
+- 1683
+G 1685 1 18 I’ll 
+R 1687 2 18 feel 
+R 1691 1 18 like 
+R 1693 1 18 a 
+R 1695 1 18 wal
+R 1697 1 18 ly
+- 1698
+R 1699 1 18 If 
+R 1701 1 18 I 
+R 1703 1 18 don’t 
+R 1707 1 18 pur
+R 1711 1 18 sue 
+R 1713 1 18 it
+- 1714
+R 1715 1 18 And 
+R 1717 1 18 I 
+R 1719 1 18 can’t 
+R 1723 2 18 go 
+R 1727 1 18 through 
+R 1729 1 18 it
+- 1730
+R 1733 1 18 So 
+R 1735 1 18 let’s 
+R 1739 1 18 get 
+R 1743 1 18 to 
+R 1745 2 18 it
+- 1747 1860
+- 1860
+R 1875 1 13 Come 
+R 1877 1 13 and 
+R 1879 2 13 dance 
+R 1883 1 13 with 
+R 1885 2 13 me
+- 1887
+R 1891 1 13 Come 
+R 1893 1 13 and 
+R 1895 2 13 dance 
+R 1899 1 13 with 
+R 1901 2 13 me
+- 1903
+G 1907 1 13 Come 
+R 1909 1 13 and 
+R 1911 2 13 dance 
+R 1915 1 13 with 
+R 1917 2 13 me
+- 1919
+R 1923 2 13 Come 
+R 1927 2 13 dance 
+R 1931 1 13 with 
+R 1933 2 13 me
+- 1935
+R 1937 1 13 I 
+R 1939 1 13 see 
+R 1941 1 13 you 
+R 1943 1 13 glance 
+R 1947 1 13 at 
+R 1949 2 13 me
+- 1951
+R 1953 1 13 That’s 
+R 1955 1 13 why 
+R 1957 1 13 I’m 
+R 1959 1 13 as
+R 1963 1 13 kin’ 
+R 1965 1 13 B
+- 1966
+R 1969 1 13 So 
+R 1971 1 13 let’s 
+R 1975 1 13 par
+R 1979 1 13 ty 
+R 1981 2 13 B
+- 1983
+R 1987 1 13 Come 
+R 1989 1 13 and 
+R 1991 1 13 dance 
+R 1995 1 13 with 
+R 1997 2 13 me
+- 1999
+R 2005 1 22 I 
+R 2007 1 22 know 
+R 2009 1 22 you 
+R 2011 1 22 did
+R 2013 1 22 n’t 
+R 2015 1 22 come 
+R 2017 2 22 out
+- 2019
+R 2021 1 22 To 
+R 2023 1 22 stand 
+R 2027 2 22 and 
+R 2031 2 22 stare
+- 2033
+G 2037 1 22 You 
+R 2039 2 22 bought 
+R 2043 2 22 new 
+R 2047 2 22 shoes
+- 2049
+R 2051 1 22 And 
+R 2053 1 22 you 
+R 2055 1 22 did 
+R 2057 1 22 up 
+R 2061 1 22 your 
+R 2063 2 22 hair
+- 2065
+R 2069 1 22 You 
+R 2071 1 22 made 
+R 2073 1 22 a 
+R 2075 2 22 real 
+R 2079 1 22 ef
+R 2081 1 22 fort 
+R 2085 1 22 to
+R 2087 1 22 night
+- 2088
+R 2091 1 22 And 
+R 2093 1 22 it 
+R 2095 2 22 shows
+- 2097
+R 2099 1 22 I 
+R 2101 1 22 can 
+R 2103 2 22 tell 
+R 2107 1 22 by 
+R 2109 1 22 your 
+R 2111 2 22 face
+- 2113
+R 2115 1 22 You 
+R 2117 1 22 don’t 
+R 2119 1 22 wan
+R 2121 1 22 na 
+R 2123 1 22 be 
+R 2125 1 22 a
+R 2127 3 22 lone
+- 2130
+G 2131 1 23 ’Cause 
+R 2133 1 23 the 
+R 2135 2 23 mood 
+R 2139 2 23 is 
+R 2143 2 23 right
+- 2145
+R 2147 1 23 And 
+R 2149 1 23 the 
+R 2151 2 23 time 
+R 2155 2 23 is 
+R 2159 2 23 now
+- 2161
+R 2166 1 23 And 
+R 2168 1 23 if 
+R 2170 1 23 you 
+R 2172 1 23 can’t 
+R 2175 1 23 do 
+R 2177 1 23 it
+- 2178
+R 2179 2 23 I’ll 
+R 2183 2 23 show 
+R 2187 2 23 you 
+R 2191 2 23 how
+- 2193
+R 2199 1 23 All 
+R 2201 1 23 you 
+R 2203 1 23 got
+R 2205 1 23 ta 
+R 2207 1 23 do
+- 2208
+R 2209 1 23 Is 
+R 2211 1 23 get 
+R 2215 2 23 loose 
+R 2219 1 23 let 
+R 2223 2 23 go
+- 2225
+G 2227 1 23 Just 
+R 2231 1 23 throw 
+R 2233 1 23 a 
+R 2235 1 23 cou
+R 2237 1 23 ple 
+R 2239 1 23 of 
+R 2241 1 23 shapes
+- 2242
+R 2243 1 23 Put 
+R 2245 1 23 your 
+R 2247 2 23 skills 
+R 2251 2 23 on 
+R 2255 3 23 show
+- 2258
+R 2263 6 25 Oh
+- 2269 2356
+- 2356
+G 2371 1 20 Put 
+R 2373 1 20 your 
+R 2375 1 20 skills 
+R 2379 2 20 on 
+R 2383 2 20 show
+- 2385 2690
+- 2690
+R 2705 1 25 I 
+R 2707 1 25 see 
+R 2709 1 25 you 
+R 2711 3 25 glance 
+R 2715 1 25 at 
+R 2717 2 25 me
+- 2719
+R 2721 1 25 That’s 
+R 2723 1 25 why 
+R 2725 1 25 I’m 
+R 2727 2 25 as
+R 2731 1 25 kin’ 
+R 2733 2 25 B
+- 2735
+G 2737 1 25 So 
+R 2739 2 25 let’s 
+R 2743 2 25 par
+R 2747 1 25 ty 
+R 2749 2 25 B
+- 2751
+R 2755 1 25 Come 
+R 2757 1 25 - 
+R 2759 2 25 and 
+R 2763 1 25 dance 
+R 2765 2 25 with me
+: 15 7 23 Oh
+: 23 9 20 ~
+- 32 64
+- 64
+: 79 5 30 Ooh
+: 85 3 25 ~ 
+* 89 7 28 ba
+: 97 2 25 by
+- 99 116
+- 116
+: 131 1 20 Come 
+: 133 1 20 and 
+: 135 5 20 dance 
+: 143 6 23 with 
+: 151 5 20 me
+- 156 700
+- 700
+: 715 2 20 She 
+: 719 2 20 ain’t 
+: 723 2 20 no
+- 725
+F 727 8 23 Hoe
+- 735
+: 747 2 20 Look 
+: 751 2 20 at 
+: 755 2 18 those 
+: 759 3 20 thighs
+- 762
+: 765 2 18 It’s 
+: 769 2 20 in 
+: 772 2 18 her 
+: 775 3 20 eyes
+- 778
+: 780 2 19 She’s 
+: 783 2 20 good 
+: 788 2 20 to
+- 790
+F 791 9 23 Go
+- 800
+: 811 1 20 She 
+: 813 1 20 can 
+: 815 2 20 sa
+: 819 2 20 tis
+: 823 4 20 fy 
+: 829 1 18 my 
+* 831 5 20 mind
+- 836
+: 839 4 20 Bo
+: 845 1 18 dy 
+: 847 4 20 and
+- 851
+F 855 7 20 Soul
+- 862 968
+- 968
+: 983 1 13 If 
+: 985 1 13 I’m 
+: 987 1 13 out 
+: 991 2 13 on 
+: 995 3 15 my 
+* 999 4 16 own
+- 1003
+: 1007 1 16 Then 
+: 1009 1 16 I 
+: 1011 2 18 can 
+: 1015 2 20 look 
+: 1019 2 16 at 
+: 1023 3 13 you
+- 1026
+: 1031 1 13 Loo
+: 1033 1 13 kin’ 
+: 1035 3 11 at 
+: 1039 3 13 me
+- 1042
+: 1047 1 13 If 
+: 1049 1 13 I’m 
+: 1051 2 13 out 
+: 1055 2 13 on 
+: 1059 2 15 a 
+: 1063 3 16 date
+- 1066
+: 1071 1 16 Then 
+: 1073 1 16 I 
+: 1075 2 18 just 
+: 1079 2 20 shut 
+: 1083 2 16 my 
+: 1087 3 13 eyes
+- 1090
+: 1095 1 13 Then 
+: 1097 1 13 I 
+: 1099 3 11 can’t 
+: 1103 3 13 see
+- 1106
+: 1111 1 13 Get 
+: 1113 1 13 a
+: 1115 2 13 way 
+: 1119 2 13 from 
+: 1123 2 11 the 
+* 1127 4 10 bar
+- 1131
+: 1139 1 10 Tell 
+: 1141 1 10 your 
+: 1143 2 9 boy
+: 1147 2 9 friend 
+: 1151 2 9 hold 
+: 1155 1 11 the 
+: 1157 4 8 jar
+- 1161
+: 1163 2 8 And 
+: 1167 2 8 dance 
+: 1171 2 8 with 
+: 1175 3 13 me
+- 1178 1724
+- 1724
+: 1739 2 20 She 
+: 1743 2 20 ain’t 
+: 1747 2 20 no
+- 1749
+F 1751 8 23 Hoe
+- 1759
+: 1771 2 20 Look 
+: 1775 2 20 at 
+: 1779 2 18 those 
+* 1783 3 20 thighs
+- 1786
+: 1789 2 18 It’s 
+: 1793 2 20 in 
+: 1796 2 18 her 
+: 1799 3 20 eyes
+- 1802
+: 1804 2 19 She’s 
+: 1807 2 20 good 
+: 1812 2 20 to
+- 1814
+F 1815 9 23 Go
+- 1824
+: 1835 1 20 She 
+: 1837 1 20 can 
+: 1839 2 20 sa
+: 1843 2 20 tis
+: 1847 4 20 fy 
+: 1853 1 18 my 
+: 1855 5 20 mind
+- 1860
+: 1863 4 20 Bo
+: 1869 1 18 dy 
+: 1871 4 20 and
+- 1875
+F 1879 7 20 Soul
+- 1886 2504
+- 2504
+: 2519 1 13 If 
+: 2521 1 13 I’m 
+: 2523 1 13 out 
+: 2527 2 13 on 
+: 2531 3 15 my 
+: 2535 4 16 own
+- 2539
+: 2543 1 16 Then 
+: 2545 1 16 I 
+: 2547 2 18 can 
+* 2551 2 20 look 
+: 2555 2 16 at 
+: 2559 3 13 you
+- 2562
+: 2567 1 13 Loo
+: 2569 1 13 kin’ 
+: 2571 3 11 at 
+: 2575 3 13 me
+- 2578
+: 2583 1 13 If 
+: 2585 1 13 I’m 
+: 2587 2 13 out 
+: 2591 2 13 on 
+: 2595 2 15 a 
+: 2599 3 16 date
+- 2602
+: 2607 1 16 Then 
+: 2609 1 16 I 
+: 2611 2 18 just 
+: 2615 2 20 shut 
+: 2619 2 16 my 
+: 2623 3 13 eyes
+- 2626
+: 2631 1 13 Then 
+: 2633 1 13 I 
+: 2635 3 11 can’t 
+: 2639 3 13 see
+- 2642
+: 2647 1 13 Get 
+: 2649 1 13 a
+: 2651 2 13 way 
+: 2655 2 13 from 
+: 2659 2 11 the 
+: 2663 4 10 bar
+- 2667
+: 2675 1 10 Tell 
+: 2677 1 10 your 
+: 2679 2 9 boy
+: 2683 2 9 friend 
+: 2687 2 9 hold 
+: 2691 1 11 the 
+* 2693 4 8 jar
+- 2697
+: 2699 2 8 And 
+: 2703 2 8 dance 
+: 2707 2 8 with 
+: 2711 3 13 me
+- 2714 2760
+- 2760
+: 2775 1 13 If 
+: 2777 1 13 I’m 
+: 2779 1 13 out 
+: 2783 2 13 on 
+: 2787 3 15 my 
+: 2791 4 16 own
+- 2795
+: 2799 1 16 Then 
+: 2801 1 16 I 
+: 2803 2 18 can 
+: 2807 2 20 look 
+: 2811 2 16 at 
+: 2815 3 13 you
+- 2818
+: 2823 1 13 Loo
+: 2825 1 13 kin’ 
+: 2827 3 11 at 
+* 2831 3 13 me
+- 2834
+: 2839 1 13 If 
+: 2841 1 13 I’m 
+: 2843 2 13 out 
+: 2847 2 13 on 
+: 2851 2 15 a 
+: 2855 3 16 date
+- 2858
+: 2863 1 16 Then 
+: 2865 1 16 I 
+: 2867 2 18 just 
+: 2871 2 20 shut 
+: 2875 2 16 my 
+* 2879 3 13 eyes
+- 2882
+: 2887 1 13 Then 
+: 2889 1 13 I 
+: 2891 3 11 can’t 
+: 2895 3 13 see
+- 2898
+: 2903 1 13 Get 
+: 2905 1 13 a
+: 2907 2 13 way 
+: 2911 2 13 from 
+: 2915 2 11 the 
+: 2919 4 10 bar
+- 2923
+: 2931 1 10 Tell 
+: 2933 1 10 your 
+: 2935 2 9 boy
+: 2939 2 9 friend 
+: 2943 2 9 hold 
+: 2947 1 11 the 
+: 2949 4 8 jar
+- 2953
+: 2955 2 8 And 
+: 2959 2 8 dance 
+: 2963 2 8 with 
+* 2967 3 13 me
+E
