@@ -1,5 +1,3 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
 import { EurovisionBackground } from 'modules/Elements/Background/Eurovision';
 import { BackgroundContext as BackgroundContext1 } from 'modules/Elements/BackgroundContext';
 import Snow from 'modules/Elements/Snow';
@@ -34,7 +32,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   return (
     <BackgroundContext1 value={{ visible, setVisibility: setVisible, setTheme, theme }}>
       {visible && (
-        <div className="fixed z-[-1]">
+        <div className="fixed inset-0 z-[-1] h-screen w-screen">
           {theme === 'eurovision' && <EurovisionBackground />}
           {theme === 'regular' && (
             <Background
@@ -58,33 +56,19 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   );
 }
 
-const escBarAnimation = css`
-  animation: escGradient 46s linear infinite;
-  flex: 1;
-
-  @keyframes escGradient {
-    0% {
-      background-position: 0% 800%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
+const EscBar = twc.div`
+  scale-y-[4] h-full
+  [background-size:100%_50%]
+  data-[animate=true]:animate-[escGradient_46s_linear_infinite]
+  data-[animate=true]:flex-1
 `;
 
-const EscBar = styled.div`
-  transform: scale(1, 4);
-
-  background-image: url(${eurovisionBg});
-  background-size: 100% 50%;
-  height: 100%;
-
-  &[data-animate='true'] {
-    ${escBarAnimation};
-  }
-`;
-
-export const EurovisionTheme = () => <EscBar data-animate={!global.location?.href.includes('/remote-mic')} />;
+export const EurovisionTheme = () => (
+  <EscBar
+    data-animate={!global.location?.href.includes('/remote-mic')}
+    style={{ backgroundImage: `url(${eurovisionBg})` }}
+  />
+);
 
 export const BackgroundStatic = twc.div`bg-white w-full h-full`;
 

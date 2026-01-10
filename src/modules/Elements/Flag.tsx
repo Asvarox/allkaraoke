@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Song } from 'interfaces';
 import languageNameToIsoCode from 'modules/utils/languageNameToIsoCode';
 import { ComponentProps, useLayoutEffect, useState } from 'react';
@@ -13,7 +12,7 @@ type Props =
       isocode: string;
     };
 
-export const Flag = (props: Props & Omit<ComponentProps<typeof Img>, 'src' | 'alt'>) => {
+export const Flag = (props: Props & Omit<ComponentProps<'img'>, 'src' | 'alt'>) => {
   const [isoCodeOverride, setIsoCodeOverride] = useState<string | null>(null);
   const isoCode =
     'isocode' in props
@@ -31,7 +30,7 @@ export const Flag = (props: Props & Omit<ComponentProps<typeof Img>, 'src' | 'al
   const customFlag = overrides[`./Flag/flags/${isoCode}.svg`];
 
   return (
-    <Img
+    <img
       data-isocode={isoCode}
       src={customFlag ?? `https://flagcdn.com/${isoCodeOverride ?? isoCode}.svg`}
       alt={isoCode}
@@ -40,5 +39,3 @@ export const Flag = (props: Props & Omit<ComponentProps<typeof Img>, 'src' | 'al
     />
   );
 };
-
-const Img = styled.img``;

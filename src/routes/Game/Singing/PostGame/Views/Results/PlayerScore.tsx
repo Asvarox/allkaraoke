@@ -1,13 +1,11 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import { HighScoreEntity, SingSetup } from 'interfaces';
 import { Badge } from 'modules/Elements/Badge';
-import { buttonFocused } from 'modules/Elements/Button';
 import styles from 'modules/GameEngine/Drawing/styles';
 import CountUp from 'react-countup';
 import { formatter } from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
 import PlayerDetailedScore from 'routes/Game/Singing/PostGame/Views/Results/PlayerDetailedScore';
-import { ContentElement } from 'routes/Game/SongPage';
 
 interface Props {
   player: PlayerScore;
@@ -49,82 +47,38 @@ function PlayerScoreView({
     highScores.some((score) => score.singSetupId === singSetup.id && score.name === playerName);
 
   return (
-    <Container>
-      <ScoreTextContainer>
-        <ScoreTextScore
+    <div className="mobile:gap-0 relative flex flex-col items-center gap-2 rounded-2xl bg-black/50 px-4 py-2">
+      <div className="flex w-full flex-1">
+        <div
           data-win={revealHighScore && playerScore === highestScore}
           data-test={`player-${playerNumber}-score`}
-          data-score={Math.floor(playerScore)}>
-          <ScoreTextPlayer
-            color={useColors ? styles.colors.players[playerNumber].text : ``}
+          data-score={Math.floor(playerScore)}
+          className={clsx(
+            'typography items-between mobile:text-md flex flex-1 justify-between bg-transparent text-xl text-white transition-[font-size,color] duration-[400ms] ease-in-out',
+            revealHighScore && playerScore === highestScore ? 'text-active mobile:text-lg text-2xl' : '',
+          )}>
+          <span
+            style={{ color: useColors ? styles.colors.players[playerNumber].text : undefined }}
             data-test={`player-${playerNumber}-name`}
-            className="ph-no-capture">
+            className="ph-no-capture mobile:text-lg text-2xl">
             {player.name}
-          </ScoreTextPlayer>
+          </span>
           <CountUp preserveValue end={playerScore} formattingFn={formatter.format} duration={segment < 5 ? 1 : 0.5} />
-        </ScoreTextScore>
-      </ScoreTextContainer>
+        </div>
+      </div>
       <PlayerDetailedScore playerNumber={playerNumber} player={player} segment={segment} />
-      <HighScoreBadge data-highscore={revealHighScore && isHighScore(player.name)}>High score!</HighScoreBadge>
-    </Container>
+      <Badge
+        data-highscore={revealHighScore && isHighScore(player.name)}
+        className={clsx(
+          'text-md mobile:text-sm z-2 opacity-0 transition-opacity duration-[400ms]',
+          revealHighScore && isHighScore(player.name)
+            ? 'animate-focused bg-active scale-[1.025] opacity-100 shadow-none'
+            : '',
+        )}>
+        High score!
+      </Badge>
+    </div>
   );
 }
-const Container = styled.div`
-  background: rgba(0, 0, 0, 0.5);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1rem;
-  gap: 1rem;
-  padding: 1rem 2rem;
-  position: relative;
-`;
-
-const ScoreTextPlayer = styled.span<{ color: string }>`
-  color: ${(props) => props.color};
-  font-size: 3.5rem;
-`;
-
-const ScoreTextScore = styled(ContentElement)`
-  background: transparent;
-  font-size: 4.5rem;
-  color: white;
-  transition: 400ms ease-in-out;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  margin: 0;
-  padding: 0;
-
-  &[data-win='true'] {
-    font-size: 7.5rem;
-    color: ${styles.colors.text.active};
-  }
-`;
-
-const ScoreTextContainer = styled.div`
-  display: flex;
-  flex: 1;
-  width: 100%;
-  height: 7.5rem;
-`;
-
-const HighScoreBadge = styled(Badge)`
-  font-size: 3rem;
-  opacity: 0;
-  z-index: 2;
-
-  &[data-highscore='true'] {
-    top: -2.5rem;
-    right: -4rem;
-    ${buttonFocused};
-    opacity: 1;
-  }
-
-  transition: 400ms;
-`;
 
 export default PlayerScoreView;

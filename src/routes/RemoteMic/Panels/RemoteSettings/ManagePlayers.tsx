@@ -1,14 +1,13 @@
-import styled from '@emotion/styled';
 import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { MenuButton } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
-import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { NetworkRemoteMicListMessage } from 'modules/RemoteMic/Network/messages';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { useEffect, useState } from 'react';
+import { twc } from 'react-twc';
 import PlayerChangeModal from 'routes/RemoteMic/Components/PlayerChangeModal';
 import PlayerNumberCircle from 'routes/RemoteMic/Components/PlayerNumberCircle';
 import { ValuesType } from 'utility-types';
@@ -26,7 +25,7 @@ function ManagePlayers() {
 
   return (
     <>
-      <h3>Manage Players</h3>
+      <span className="typography text-lg">Manage Players</span>
       {list.map((mic) => (
         <Entry mic={mic} key={mic.id} />
       ))}
@@ -63,34 +62,18 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
         size="small">
         <PlayerNumberCircle number={mic.number} />
         <RemoteMicId>{mic.id?.slice(-4) ?? '????'}</RemoteMicId>
-        <RemoteMicName className="ph-no-capture" isSelf={mic.id === RemoteMicClient.getClientId()}>
+        <div
+          className={`ph-no-capture truncate ${mic.id === RemoteMicClient.getClientId() ? 'text-active' : 'text-inherit'}`}>
           {mic.name}
-        </RemoteMicName>
+        </div>
       </RemoteMicEntry>
     </Container>
   );
 };
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
+const Container = twc.div`flex flex-col gap-2.5`;
 
-const RemoteMicEntry = styled(MenuButton)`
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-`;
+const RemoteMicEntry = twc(MenuButton)`flex items-center px-5`;
 
-const RemoteMicName = styled.div<{ isSelf: boolean }>`
-  color: ${(props) => (props.isSelf ? `${styles.colors.text.active}` : 'auto')};
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-`;
-const RemoteMicId = styled.span`
-  font-size: 1.5rem;
-  padding: 0 1rem;
-`;
+const RemoteMicId = twc.span`text-sm px-2.5`;
 export default ManagePlayers;

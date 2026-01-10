@@ -1,6 +1,4 @@
-import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import { focused } from 'modules/Elements/cssMixins';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
@@ -40,33 +38,13 @@ function ConfirmReadiness({ onConfirm }: Props) {
   };
 
   return visible ? (
-    <Form className="animate-blink">
+    <div className="animate-blink absolute inset-0 z-[1000] flex flex-col items-center justify-center backdrop-blur-md">
       <MenuContainer>
-        <ReadyButton data-test="ready-button" onClick={confirm}>
+        <MenuButton className="animate-focused aspect-square" data-test="ready-button" onClick={confirm}>
           Ready
-        </ReadyButton>
+        </MenuButton>
       </MenuContainer>
-    </Form>
+    </div>
   ) : null;
 }
 export default ConfirmReadiness;
-
-const Form = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-`;
-
-const ReadyButton = styled(MenuButton)`
-  aspect-ratio: 1;
-
-  ${focused};
-`;

@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useEffect, useState } from 'react';
+import { twc } from 'react-twc';
 import PlayerChange from 'routes/RemoteMic/Panels/Microphone/PlayerChange';
 import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 
@@ -35,7 +35,7 @@ export default function VolumeIndicator({
     <IndicatorContainer
       className="rounded-md"
       data-is-mic-on={isMicOn}
-      color={backgroundColor}
+      style={{ background: backgroundColor }}
       data-player-number={`${playerNumber ?? 'none'}`}
       data-test="indicator">
       {isMicOn && (
@@ -51,28 +51,10 @@ export default function VolumeIndicator({
   );
 }
 
-const Debug = styled.span`
-  position: absolute;
-  color: white;
-  opacity: 0.125;
-`;
+const Debug = twc.span`absolute text-white opacity-[0.125]`;
 
-const Indicator = styled.div`
-  width: 100%;
-  min-height: 200px;
-  max-height: 100vw;
-  background-color: rgba(0, 0, 0, 0.25);
-  transition: 200ms;
-  transform-origin: top;
-`;
+const Indicator = twc.div`w-full min-h-[200px] max-h-[300px] bg-black/25 transition-[200ms] origin-top`;
 
-const IndicatorContainer = styled.div<{ color: string }>`
-  position: relative;
-  border: 0.1rem solid white;
-  flex: 1;
-  min-height: 200px;
-  max-height: 100vw;
-  transition: 300ms;
-
-  background: ${(props) => props.color};
+const IndicatorContainer = twc.div`
+  relative border-[1px] border-white flex-1 min-h-[200px] max-h-[300px] transition-[300ms]
 `;

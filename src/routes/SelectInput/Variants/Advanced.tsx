@@ -49,7 +49,8 @@ function Advanced(props: Props) {
 
   return (
     <>
-      <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can show them.</h2>}>
+      <UserMediaEnabled
+        fallback={<div className="typography text-lg">Please allow access to the microphone so we can show them.</div>}>
         <ConnectRemoteMic />
         {players.map((player, index) => (
           <PlayerSelector

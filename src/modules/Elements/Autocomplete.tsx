@@ -1,8 +1,5 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
 import { Input } from 'modules/Elements/Input';
 import { nextIndex } from 'modules/Elements/Utils/indexes';
-import styles from 'modules/GameEngine/Drawing/styles';
 import {
   ComponentProps,
   ComponentRef,
@@ -13,6 +10,7 @@ import {
   useRef,
   useState,
 } from 'react';
+import { twc, TwcComponentProps } from 'react-twc';
 
 interface Props extends ComponentProps<typeof Input> {
   label: ReactNode;
@@ -110,7 +108,7 @@ export const Autocomplete = ({
               data-focused={index === focusedOption}
               data-e2e-focused={index === focusedOption}
               key={option}
-              focused={index === focusedOption}
+              $focused={index === focusedOption}
               onClick={() => {
                 onChange(option);
                 setFocusedOption(-1);
@@ -127,29 +125,16 @@ export const Autocomplete = ({
 
 Autocomplete.displayName = 'Autocomplete';
 
-const Container = styled.div`
-  position: relative;
+const Container = twc.div`relative`;
+
+const AutocompleteMenu = twc.div`
+  mt-[0.1em] absolute w-full bg-black max-h-[6.4em] overflow-y-auto z-2
 `;
 
-const AutocompleteMenu = styled.div`
-  margin-top: 0.1em;
-  position: absolute;
-  width: 100%;
-  background: black;
-  max-height: ${(1 + 2 * 0.3) * 4}em;
-  overflow-y: auto;
-  z-index: 2;
-`;
-
-const AutocompleteMenuitem = styled.div<{ focused: boolean }>`
-  ${typography};
-  padding: 0.3em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: ${(props) => (props.focused ? styles.colors.text.active : 'white')};
-  cursor: pointer;
-`;
+const AutocompleteMenuitem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
+  'typography p-[0.3em] whitespace-nowrap overflow-hidden truncate cursor-pointer',
+  props.$focused ? 'text-active' : 'text-white',
+]);
 
 interface TestWrapperProps {
   label: string;

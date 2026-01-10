@@ -1,8 +1,6 @@
-import styled from '@emotion/styled';
 import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
 import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
-import Ping from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
+import { PlayerEntity } from 'modules/Players/PlayersManager';
 import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
 interface Props {
@@ -10,33 +8,14 @@ interface Props {
 }
 export default function SinglePlayer({ player }: Props) {
   const status = usePlayerMicStatus(player.number);
-
   return (
-    <Indicator key={player.number} data-test={`indicator-player-${player.number}`}>
-      <Ping playerNumber={player.number} />
-      <PlayerStatus status={status} />
-      {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} />}
-      <PlayerName className="ph-no-capture">{player.getName()}</PlayerName>
-    </Indicator>
+    <div
+      key={player.number}
+      data-test={`indicator-player-${player.number}`}
+      className="relative flex h-16 w-120 items-center gap-5 border border-white bg-black px-2 py-2 text-center text-xl text-white">
+      <span className="ph-no-capture absolute inset-0 z-[1] flex items-center justify-center">{player.getName()}</span>
+      <PlayerStatus playerNumber={player.number} className="z-1" />
+      {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} className="z-0" />}
+    </div>
   );
 }
-
-const Indicator = styled.div`
-  position: relative;
-  border: 0.1rem solid white;
-  padding: 1rem 3rem;
-  background: black;
-  width: 80%;
-
-  text-align: center;
-  gap: 1.25rem;
-  font-size: 2.3rem;
-  color: white;
-
-  -webkit-text-stroke: 1px black;
-`;
-
-const PlayerName = styled.span`
-  position: relative;
-  z-index: 1;
-`;

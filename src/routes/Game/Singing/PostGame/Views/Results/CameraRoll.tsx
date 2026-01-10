@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { captureException } from '@sentry/react';
 import CameraManager from 'modules/Camera/CameraManager';
 import Typography from 'modules/Elements/AKUI/Primitives/Typography';
@@ -28,20 +27,19 @@ function CameraRoll() {
   }, [videoSrc]);
 
   return (
-    <div className={`flex flex-col`}>
-      <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />
-      <Typography className="mt-4 text-center">
+    <div className="flex flex-col">
+      <video
+        src={videoSrc}
+        ref={video}
+        loop
+        autoPlay
+        className="ph-no-capture aspect-[4/3] w-full rounded-2xl bg-black object-cover"
+      />
+      <Typography className="text-md text-center">
         You can disable camera mode in <strong>Settings</strong>.
       </Typography>
     </div>
   );
 }
-
-const Video = styled.video`
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 1rem;
-`;
 
 export default CameraRoll;

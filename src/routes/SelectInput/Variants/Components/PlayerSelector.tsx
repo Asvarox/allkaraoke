@@ -1,8 +1,9 @@
-import styled from '@emotion/styled';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { Switcher } from 'modules/Elements/Switcher';
 import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
+import { twc } from 'react-twc';
 import { useMicrophoneList } from 'routes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'routes/SelectInput/hooks/usePlayerInput';
 
@@ -22,8 +23,8 @@ export const PlayerSelector = (props: Props) => {
     <>
       {props.blockSourceChange ? (
         <Header>
-          <h3 className="ph-no-capture">{player.getName()} Input</h3>
-          <h4>(click to change)</h4>
+          <span className="ph-no-capture typography text-lg">{player.getName()} Input</span>
+          <Menu.HelpText>(click to change)</Menu.HelpText>
         </Header>
       ) : (
         <SwitcherWithPlayerHeader
@@ -38,30 +39,21 @@ export const PlayerSelector = (props: Props) => {
         label="Input"
         disabled={props.readonly}
         value={input?.label}>
-        <MicCheck playerNumber={player.number} />
+        <PlayerMicCheck playerNumber={player.number} className="m-[2.5px] !h-[calc(100%-5px)] w-1/2 opacity-75" />
       </SwitcherWithMicCheck>
     </>
   );
 };
 
-const MicCheck = styled(PlayerMicCheck)`
-  opacity: 0.75;
-  width: 50%;
-  height: calc(100% - 0.5rem);
-  margin: 0.25rem;
+const SwitcherWithMicCheck = twc(Switcher)`
+  relative
 `;
 
-const SwitcherWithMicCheck = styled(Switcher)`
-  position: relative;
+const SwitcherWithPlayerHeader = twc(Switcher)`
+  bg-none
 `;
 
-const SwitcherWithPlayerHeader = styled(Switcher)`
-  background: none;
-`;
-
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+const Header = twc.div`
+  flex justify-between items-end
 `;
 export default PlayerSelector;

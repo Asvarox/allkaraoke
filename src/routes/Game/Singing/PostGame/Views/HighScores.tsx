@@ -1,9 +1,7 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import dayjs from 'dayjs';
 import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import { Button } from 'modules/Elements/Button';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { useEditScore } from 'modules/Songs/stats/hooks';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import ScoreText from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
@@ -22,12 +20,21 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
 
   return (
     <>
-      <ScoresContainer data-test="highscores-container">
+      <div
+        className="mobile:top-30 mobile:px-0 absolute top-62 box-border w-full px-40 text-center"
+        data-test="highscores-container">
         {highScores.map((score, index) => (
-          <ScoreContainer isCurrentSing={score.singSetupId === singSetup.id} key={index}>
-            <ScorePosition>{index + 1}</ScorePosition>
+          <div
+            className={clsx(
+              'typography mobile:mb-1 mobile:text-sm relative mb-5 flex items-center text-xl',
+              score.singSetupId === singSetup.id
+                ? 'mobile:px-2 bg-black/90 px-4 py-0'
+                : 'mobile:px-4 mobile:py-0 bg-black/50 px-8 py-2',
+            )}
+            key={index}>
+            <div className="text-active mobile:px-2 px-4">{index + 1}</div>
 
-            <ScorePlayerName className="ph-no-capture">
+            <div className="ph-no-capture mobile:p-1 flex-1 p-4 text-left">
               {score.singSetupId === singSetup.id ? (
                 <HighScoreRename
                   index={index}
@@ -39,67 +46,23 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
               ) : (
                 score.name
               )}
-            </ScorePlayerName>
-            <ScoreScore>
+            </div>
+            <div className="mobile:px-1 px-2">
               <ScoreText score={score.score} />
-            </ScoreScore>
-            <ScoreDate>{dayjs(score.date).format('MMMM D, YYYY')}</ScoreDate>
-          </ScoreContainer>
+            </div>
+            <div className="text-md mobile:text-xs mobile:p-0.5 absolute -right-4 -bottom-3 bg-black p-1.5">
+              {dayjs(score.date).format('MMMM D, YYYY')}
+            </div>
+          </div>
         ))}
-      </ScoresContainer>
-      <SongSelectionButton {...register('play-next-song-button', onNextStep, undefined, true)}>
+      </div>
+      <Button
+        className="mobile:bottom-5 mobile:h-10 mobile:right-0 absolute right-5 bottom-32 px-8 text-xl"
+        {...register('play-next-song-button', onNextStep, undefined, true)}>
         Select song
-      </SongSelectionButton>
+      </Button>
     </>
   );
 }
-
-const ScoresContainer = styled.div`
-  position: absolute;
-  top: 20rem;
-  width: 100%;
-  text-align: center;
-  padding: 0 16rem;
-  box-sizing: border-box;
-`;
-
-const ScoreContainer = styled.div<{ isCurrentSing: boolean }>`
-  position: relative;
-  ${typography};
-  font-size: 3.2rem;
-  display: flex;
-  background: ${(props) => (props.isCurrentSing ? 'rgba(0,0,0,.9)' : 'rgba(0,0,0,.5)')};
-  margin-bottom: 2rem;
-  padding: ${(props) => (props.isCurrentSing ? `0 1.5rem` : `1rem 3.2rem`)};
-  align-items: center;
-`;
-const ScorePosition = styled.div`
-  padding: 0 1.6rem;
-  color: ${styles.colors.text.active};
-`;
-const ScorePlayerName = styled.div`
-  text-align: left;
-  flex: 1;
-  padding: 1.6rem;
-`;
-const ScoreScore = styled.div`
-  padding: 0 1rem;
-`;
-const ScoreDate = styled.div`
-  position: absolute;
-  font-size: 2rem;
-  bottom: -1rem;
-  right: -1.6rem;
-  background: black;
-  padding: 0.5rem;
-`;
-
-const SongSelectionButton = styled(Button)<{ focused: boolean }>`
-  position: absolute;
-  bottom: 13rem;
-  right: 2rem;
-  padding: 0 3rem;
-  font-size: 1.9vw;
-`;
 
 export default HighScoresView;

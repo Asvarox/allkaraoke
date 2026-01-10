@@ -1,4 +1,10 @@
 import { milliseconds, seconds, SingSetup, Song } from 'interfaces';
+import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
+import useKeyboard from 'modules/hooks/useKeyboard';
+import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
+import usePrevious from 'modules/hooks/usePrevious';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   RefAttributes,
@@ -10,20 +16,13 @@ import {
   useRef,
   useState,
 } from 'react';
-
-import styled from '@emotion/styled';
-import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
-import usePrevious from 'modules/hooks/usePrevious';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
+import { cn } from 'utils/cn';
 import GameState from '../../../modules/GameEngine/GameState/GameState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 
-interface Props extends Omit<ComponentProps<typeof Container>, 'ref'>, RefAttributes<PlayerRef> {
+interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<PlayerRef> {
   singSetup: SingSetup;
   song: Song;
   width: number;
@@ -81,6 +80,8 @@ function Player({
   const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const player = useRef<VideoPlayerRef | null>(null);
   const [pauseMenuVisible, setPauseMenuVisible] = useState(false);
+
+  const { className, ...containerProps } = restProps;
 
   const updateGameState = useCallback(
     (time: milliseconds) => {
@@ -173,10 +174,11 @@ function Player({
   );
   useKeyboardHelp(help, effectsEnabled);
   return (
-    <Container {...restProps}>
+    <div className={cn('relative', className)} {...containerProps}>
       <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} open={pauseMenuVisible} />
       {currentStatus !== VideoState.UNSTARTED && (
-        <Overlay
+        <div
+          className="pointer-events-none absolute inset-0 z-10 bg-black/20"
           style={{
             width: `${width}px`,
             height: `${height}px`,
@@ -193,9 +195,9 @@ function Player({
             playerSetups={singSetup.players}
             videoPlayerRef={player}
           />
-        </Overlay>
+        </div>
       )}
-      <PlayerContainer>
+      <div className="h-full overflow-hidden">
         <VideoPlayer
           ref={player}
           video={song.video}
@@ -209,46 +211,17 @@ function Player({
           onStateChange={onStateChangeCallback}
         />
         {currentStatus === VideoState.PLAYING && (
-          <GoFastButton
+          <div
+            className="absolute top-1/2 left-0 h-8 w-8 -translate-y-1/2 bg-black opacity-0"
             data-test="make-song-go-fast"
             onClick={() => {
               player.current?.setPlaybackSpeed(2);
             }}
           />
         )}
-      </PlayerContainer>
-    </Container>
+      </div>
+    </div>
   );
 }
-
-const Container = styled.div`
-  position: relative;
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-`;
-
-const PlayerContainer = styled.div`
-  overflow: hidden;
-  height: 100%;
-`;
-
-const GoFastButton = styled.div`
-  width: 30px;
-  height: 30px;
-  opacity: 0.01;
-  background: black;
-  position: absolute;
-  bottom: calc(100vh / 2 - 15px);
-  left: 0;
-`;
 
 export default Player;

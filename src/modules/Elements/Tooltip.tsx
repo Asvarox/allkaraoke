@@ -1,30 +1,16 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import storage from 'modules/utils/storage';
 import { cloneElement, ComponentProps, ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
+import { twc } from 'react-twc';
 
-export const StyledTooltip = styled(ReactTooltip)`
-  &&& {
-    background: rgba(0, 0, 0, 0.85);
-    font-size: 2rem;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    max-width: 45rem;
-    ${typography};
-    .MuiTooltip-arrow {
-      &::before {
-        background: rgba(0, 0, 0, 0.85);
-      }
-    }
-
-    strong {
-      color: ${styles.colors.text.active};
-    }
-  }
-  z-index: 10000;
+export const StyledTooltip = twc(ReactTooltip)`
+  !bg-black/85 !py-2.5 !px-4 !rounded-2.5 !max-w-[450px]
+  typography
+  [&_.MuiTooltip-arrow::before]:!bg-black/85
+  [&_strong]:text-active
+  z-[10000]
+  !text-lg
 `;
 interface Props {
   clickable?: boolean;
@@ -102,29 +88,10 @@ export const ClosableTooltip = ({
   );
 };
 
-const OkButtonWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-`;
+const OkButtonWrapper = twc.div`flex justify-end mt-2.5`;
 
-const OkButton = styled.button`
-  padding: 0.25rem 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: white;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  background: none;
-  font-size: 1.75rem;
-  &:hover {
-    color: ${styles.colors.text.active};
-    border-color: ${styles.colors.text.active};
-  }
-
-  &:active {
-    color: white;
-    background: ${styles.colors.text.active};
-    border-color: none;
-  }
+const OkButton = twc.button`
+  px-5 py-0.5 font-bold cursor-pointer text-white border border-white rounded-1 bg-none text-md
+  hover:text-active hover:border-active
+  active:text-white active:bg-active active:border-none
 `;

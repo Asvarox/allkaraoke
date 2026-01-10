@@ -1,5 +1,3 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
 import ScoreBar from 'routes/Game/Singing/PostGame/Views/Results/ScoreBar';
@@ -14,7 +12,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
   const [detailedScore, maxScore] = player.detailedScore;
 
   return (
-    <ScoreBarContainer>
+    <div className="mobile:h-10 mobile:p-1 mobile:gap-1 mobile:rounded-xl relative box-border flex h-14 w-full flex-row gap-2 rounded-2xl bg-black/50 p-2">
       <ScoreBar
         score={segment > -1 ? detailedScore.rap + detailedScore.freestyle + detailedScore.normal : 0}
         maxScore={maxScore.rap + maxScore.freestyle + maxScore.normal}
@@ -38,7 +36,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
         maxScore={maxScore.vibrato}
         color={styles.colors.players[playerNumber].perfect.stroke}
       />
-      <ScoreDescription>
+      <span className="typography mobile:text-sm absolute top-14 left-4 block text-right text-xl whitespace-nowrap">
         {segment < 5 && (
           <Typewriter
             options={{
@@ -59,33 +57,9 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
             }}
           />
         )}
-      </ScoreDescription>
-    </ScoreBarContainer>
+      </span>
+    </div>
   );
 }
-
-const ScoreBarContainer = styled.div`
-  position: relative;
-  height: 5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  border-radius: 1rem;
-  gap: 0.5rem;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem;
-`;
-
-const ScoreDescription = styled.span`
-  position: absolute;
-  ${typography};
-  font-size: 3rem;
-  text-align: right;
-  white-space: nowrap;
-  top: 6rem;
-  left: 1rem;
-  display: block;
-`;
 
 export default PlayerDetailedScore;

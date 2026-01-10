@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
 import { MAX_NAME_LENGTH } from 'consts';
 import { Input } from 'modules/Elements/Input';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import useDebounce from 'modules/hooks/useDebounce';
 import { ComponentRef, useEffect, useRef, useState } from 'react';
+import { twc } from 'react-twc';
 import { usePrevious, useUnmount } from 'react-use';
 
 interface Props {
@@ -43,8 +43,5 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
   );
 }
 
-const SearchInput = styled(Input)`
-  width: 100%;
-  margin-bottom: 1rem;
-`;
+const SearchInput = twc(Input)`w-full mb-2`;
 export default RemoteSongSearch;

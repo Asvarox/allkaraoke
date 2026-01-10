@@ -53,16 +53,16 @@ export default function AdditionalListControls({ onRandom, setFilters, filters, 
 const RoundButton = styled(Button)`
   box-shadow: inset 0 0 2px 2px ${styles.colors.text.active};
   background: black;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 
   svg {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 `;
 
@@ -74,8 +74,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   //bottom: 50%;
-  bottom: 2.5rem;
-  right: 2.5rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
   z-index: 100;
-  gap: 2rem;
+  gap: 1.5rem;
 `;

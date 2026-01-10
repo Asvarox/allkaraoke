@@ -1,7 +1,5 @@
-import styled from '@emotion/styled';
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
-import Box from 'modules/Elements/AKUI/Primitives/Box';
 import { Button } from 'modules/Elements/Button';
 import { Switcher } from 'modules/Elements/Switcher';
 import { nextIndex, nextValue } from 'modules/Elements/Utils/indexes';
@@ -67,52 +65,36 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 
   return (
     <>
-      <GSSwitcher
+      <Switcher
         {...register('difficulty-setting', changeTolerance, 'Change difficulty')}
         label="Difficulty"
         value={difficultyNames[tolerance]}
         data-test-value={difficultyNames[tolerance]}
+        className="w-full"
       />
-      <GSSwitcher
+      <Switcher
         {...register('game-mode-setting', changeMode, 'Change mode')}
         label="Mode"
         value={gameModeNames[mode]}
         data-test-value={gameModeNames[mode]}
+        className="w-full"
       />
-      <ModeDescription>
-        <h3>
-          {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
-          {mode === GAME_MODE.CO_OP && 'Join forces and sing together - your points will be added up to a single pool.'}
-          {mode === GAME_MODE.PASS_THE_MIC && (
-            <>
-              For more than 2 players - split into groups and pass the microphone within the group when prompted with{' '}
-              <SwapHorizIcon /> symbol.
-            </>
-          )}
-        </h3>
-      </ModeDescription>
-      <PlayButton {...register('next-step-button', handleNextButton, undefined, true)}>Next ➤</PlayButton>
+      <div className="typography mobile:text-sm mobile:mt-0 -mt-3 w-full bg-black/70 px-3 py-2 text-lg">
+        {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
+        {mode === GAME_MODE.CO_OP && 'Join forces and sing together - your points will be added up to a single pool.'}
+        {mode === GAME_MODE.PASS_THE_MIC && (
+          <>
+            For more than 2 players - split into groups and pass the microphone within the group when prompted with{' '}
+            <SwapHorizIcon /> symbol.
+          </>
+        )}
+      </div>
+      <Button
+        size="large"
+        {...register('next-step-button', handleNextButton, undefined, true)}
+        className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1">
+        Next ➤
+      </Button>
     </>
   );
 }
-
-const PlayButton = styled(Button)`
-  padding: 0.5rem 9rem;
-  font-size: 4.3rem;
-  width: 50rem;
-`;
-
-const ModeDescription = styled(Box)`
-  max-width: 50rem;
-  margin: -1rem 0 1rem !important;
-  padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.7);
-  box-sizing: border-box;
-`;
-
-const GSSwitcher = styled(Switcher)`
-  font-size: 4.3rem;
-  padding: 1rem;
-  min-width: 50rem;
-  box-sizing: border-box;
-`;

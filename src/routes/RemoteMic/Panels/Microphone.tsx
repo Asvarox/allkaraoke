@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
 import isDev from 'modules/utils/isDev';
@@ -46,16 +46,17 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
   const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
 
   return (
-    <div className="landscap:flex-row text-md flex h-full flex-col items-center justify-center gap-8">
+    <div className="landscap:flex-row text-md landscap:gap-0 flex h-full flex-col items-center justify-center gap-8">
       <UserMediaEnabled
         showImages={false}
         fallback={
           <>
             {micPreview}
-            <h2>Please allow access to the microphone.</h2>
+            <span className="typography text-xl">Please allow access to the microphone.</span>
           </>
         }>
-        <Panel collapse={searchActive} className="flex flex-col gap-8 px-8">
+        <div
+          className={`landscap:mt-0 landscap:flex landscap:flex-col flex-1.5 flex flex-col justify-center gap-8 px-4 transition-all duration-300 ease-in-out ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
           <MicPreview
             isVisible={isConnected}
             isMicOn={monitoringStarted}
@@ -69,36 +70,18 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             onConnect={onConnect}
             connectionError={connectionError}
           />
-        </Panel>
-        <Panel className="px-8">
+        </div>
+        <div className="px-4">
           {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
           {permissions === 'read' && (
-            <NoPermissionsMsg data-test="no-permissions-message">
+            <Menu.HelpText className="pb-12" data-test="no-permissions-message">
               No permission to control the game. Go to in-game <strong>Settings</strong> menu ➔{' '}
               <strong>Remote Microphones Settings</strong> to manage them.
-            </NoPermissionsMsg>
+            </Menu.HelpText>
           )}
-        </Panel>
+        </div>
       </UserMediaEnabled>
     </div>
   );
 }
 export default Microphone;
-
-const Panel = styled.div<{ collapse?: boolean }>`
-  flex: 1;
-  transition: 300ms ease-in-out;
-
-  margin-top: ${(props) => (props.collapse ? '-100%' : '0')};
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-`;
-
-const NoPermissionsMsg = styled.h5`
-  padding-bottom: 5rem;
-`;

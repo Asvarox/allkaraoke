@@ -1,3 +1,4 @@
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { MenuButton } from 'modules/Elements/Menu';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from 'modules/GameEvents/hooks';
@@ -52,8 +53,10 @@ function RemoteMics(props: Props) {
   return (
     <>
       <ConnectRemoteMic />
-      <h4>You can connect multiple phones in advance.</h4>
-      <h4>You will be able to connect phones later.</h4>
+      <div className="flex flex-col gap-2">
+        <Menu.HelpText>You can connect multiple phones in advance.</Menu.HelpText>
+        <Menu.HelpText>You will be able to connect phones later.</Menu.HelpText>
+      </div>
       <MicCheck />
       <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
       <MenuButton {...register('save-button', onContinue, undefined, true)}>{props.closeButtonText}</MenuButton>

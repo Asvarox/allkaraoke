@@ -1,7 +1,5 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import { Song, SongPreview } from 'interfaces';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 
 interface Props {
   width: number;
@@ -13,98 +11,44 @@ interface Props {
 
 export default function SongPage({ songData, background, width, height, children, ...restProps }: Props) {
   return (
-    <FocusedSongContainer video={songData.video} width={width} height={height} {...restProps}>
+    <div className="relative overflow-y-hidden bg-black" style={{ width, height }} {...restProps}>
       <BackgroundImage video={songData.video} blur />
-      {background && <Background>{background}</Background>}
-      <ContentLayer>
-        <FocusedSongData>
-          <SongTitle>{songData.title}</SongTitle>
+      {background && <div className="absolute inset-0 z-10">{background}</div>}
+
+      <div className="pointer-events-none absolute inset-0 z-20">
+        <div className="pointer-events-none relative mx-auto h-full max-w-[80vw] text-white">
+          <ContentElement className="text-active mobile:mt-2 mobile:text-lg mt-5 text-5xl">
+            {songData.title}
+          </ContentElement>
           <br />
-          <SongArtist>{songData.artist}</SongArtist>
+          <ContentElement className="mobile:text-md text-4xl">{songData.artist}</ContentElement>
           <br />
           {songData.author && (
-            <SongCreator>
+            <ContentElement className="mobile:text-sm text-xl">
               by&nbsp;
               {songData.authorUrl ? <a href={songData.authorUrl}>{songData.author}</a> : songData.author}
-            </SongCreator>
+            </ContentElement>
           )}
           {children}
-        </FocusedSongData>
-      </ContentLayer>
-    </FocusedSongContainer>
+        </div>
+      </div>
+    </div>
   );
 }
 
-const FocusedSongContainer = styled.div<{ video: string; width: number; height: number }>`
-  width: ${(props) => props.width}px;
-  top: 0;
-  height: ${(props) => props.height}px;
-  overflow-y: hidden;
-  background: black;
-  position: relative;
-`;
-
-const Background = styled.div`
-  z-index: 1;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-`;
-
-const BaseBackgroundImage = styled(Background)<{ blur: boolean; video: string }>`
-  background-size: cover;
-  background-position: center center;
-
-  filter: ${(props) => (props.blur ? 'blur(0.5rem)' : 'none')};
-`;
-
-const BackgroundImage = (props: { blur: boolean; video: string }) => (
-  <BaseBackgroundImage
-    style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')` }}
-    {...props}
+export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
+  <span
+    className={clsx(
+      'typography mobile:mb-1 mobile:py-0.5 mb-2.5 inline-block bg-black/50 px-5 py-1.5 backdrop-blur-sm',
+      className,
+    )}
+    {...restProps}
   />
 );
 
-const ContentLayer = styled.div`
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  pointer-events: none;
-`;
-
-const FocusedSongData = styled.div`
-  position: relative;
-  margin: 0 auto;
-  color: white;
-  max-width: 80vw;
-  height: 100%;
-  pointer-events: none;
-`;
-
-export const ContentElement = styled.span`
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  backdrop-filter: blur(0.5rem);
-  ${typography};
-  padding: 0.5rem 2rem;
-  margin: 0 0 1rem 0;
-`;
-
-const SongTitle = styled(ContentElement)`
-  color: ${styles.colors.text.active};
-  margin-top: 2rem;
-  font-size: 4.5rem;
-`;
-
-const SongArtist = styled(ContentElement)`
-  font-size: 3.5rem;
-`;
-
-const SongCreator = styled(ContentElement)`
-  font-size: 2rem;
-`;
+const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (
+  <div
+    className={clsx('absolute inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
+    style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${video}/hqdefault.jpg')` }}
+  />
+);

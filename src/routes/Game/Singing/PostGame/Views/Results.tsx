@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
 import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/Button';
@@ -62,9 +62,14 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   };
 
   return (
-    <Container>
-      <div className="flex flex-row gap-10">
-        <ScoresContainer data-collapse={revealHighScore}>
+    <div className="mobile:pt-30 mobile:pb-0 absolute inset-0 box-border flex h-full w-full flex-col pt-80 pb-36">
+      <div className="mobile:gap-4 flex h-full flex-row gap-10">
+        <div
+          className={clsx(
+            'flex flex-1 flex-col text-center transition-[gap] duration-500',
+            revealHighScore ? 'mobile:gap-2 gap-5' : 'mobile:gap-6 gap-12',
+          )}
+          data-collapse={revealHighScore}>
           {finalPlayers.map((player, number) => (
             <PlayerScoreView
               playerNumber={player.playerNumber}
@@ -78,8 +83,12 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
               singSetup={singSetup}
             />
           ))}
-        </ScoresContainer>
-        <div className={`duration-300 ${initialCameraPermission && revealHighScore ? 'w-[43%]' : 'w-[28%]'}`}>
+        </div>
+        <div
+          className={clsx(
+            'shrink-0 transition-[width] duration-300',
+            initialCameraPermission && revealHighScore ? 'w-5/12' : 'w-1/4',
+          )}>
           {initialCameraPermission ? (
             <CameraRoll />
           ) : (
@@ -87,44 +96,14 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
           )}
         </div>
       </div>
-      <SongSelectionButton
+      <Button
         {...register('next-button', () => nextStep(), undefined, true)}
-        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}>
+        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
+        className="mt-auto ml-auto w-96 text-2xl lg:text-3xl xl:text-4xl">
         {isAnimFinished ? 'Next' : 'Skip'}
-      </SongSelectionButton>
-    </Container>
+      </Button>
+    </div>
   );
 }
-const Container = styled.div`
-  position: absolute;
-  padding: 20rem 5rem 15rem 5rem;
-  top: 0;
-  height: 100%;
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
-const ScoresContainer = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  flex: 1;
-
-  &[data-collapse='true'] {
-    gap: 2rem;
-  }
-
-  transition: gap 0.5s;
-`;
-
-const SongSelectionButton = styled(Button)`
-  width: 40rem;
-  font-size: 1.9vw;
-  margin-left: auto;
-  margin-top: auto;
-`;
 
 export default ResultsView;

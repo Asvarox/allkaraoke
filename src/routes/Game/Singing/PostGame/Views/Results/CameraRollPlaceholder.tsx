@@ -26,8 +26,8 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
   }, [loading]);
 
   return (
-    <div className={`relative flex aspect-4/3 justify-center ${!permissionStatus ? `items-center` : `items-end`}`}>
-      <div className="rounded-2xl bg-black">
+    <div className={`flex aspect-4/3 items-start justify-end`}>
+      <div className="relative rounded-2xl bg-black">
         <video
           autoPlay
           loop
@@ -35,23 +35,23 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
           className={`rounded-2xl ${!permissionStatus && 'opacity-25'}`}
           ref={videoRef}
         />
-      </div>
-      <div className="absolute flex flex-col gap-4 p-4">
-        {!permissionStatus ? (
-          <>
-            <h2>
-              Get a <strong>timelapse</strong> of you singing
-            </h2>
-            <Button
-              className="animate-focused w-full p-4"
-              {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
-              Enable camera
-            </Button>
-            <Typography className="text-sm">The recording is not sent nor stored anywhere.</Typography>
-          </>
-        ) : (
-          <h3>Adjust the camera position</h3>
-        )}
+        <div className="absolute right-0 bottom-0 left-0 flex flex-col items-center gap-4 p-2">
+          {!permissionStatus ? (
+            <>
+              <h2>
+                Get a <strong>timelapse</strong> of you singing
+              </h2>
+              <Button
+                className="animate-focused w-full p-4"
+                {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
+                Enable camera
+              </Button>
+              <Typography className="text-sm">The recording is not sent nor stored anywhere.</Typography>
+            </>
+          ) : (
+            <h3>Adjust the camera position</h3>
+          )}
+        </div>
       </div>
       {!permissionStatus && (
         <Typography className="absolute right-0 bottom-0 p-4 text-sm">

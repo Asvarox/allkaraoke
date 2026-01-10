@@ -1,9 +1,9 @@
-import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
 import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
+import { twx } from 'utils/twx';
 
 const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   return useMemo(() => {
@@ -13,16 +13,8 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   }, [playerNumber]);
 };
 
-const VolumeIndicatorBase = styled.div`
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-repeat: repeat-y;
-  transform-origin: right;
-  z-index: 1;
-  pointer-events: none;
+const VolumeIndicatorBase = twx.div`
+  h-full w-full absolute right-0 top-0 bg-repeat-y origin-right z-1 pointer-events-none
 `;
 
 interface Props {

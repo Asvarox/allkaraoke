@@ -23,13 +23,13 @@ const InputLag = ({ onClick, focused, ...restProps }: Props) => {
 
   return (
     <Menu.ButtonGroup {...restProps}>
-      <Menu.Button onClick={() => setInputLag(inputLag - 50)} className="aspect-square" focused={focused}>
+      <Menu.Button onClick={() => setInputLag(inputLag - 50)} className="aspect-square" size="small" focused={focused}>
         ←
       </Menu.Button>
-      <Menu.Button readOnly className="flex-1" data-test="input-lag-value" data-value={inputLag}>
+      <Menu.Button readOnly className="flex-1" data-test="input-lag-value" data-value={inputLag} size="small">
         {inputLag} ms
       </Menu.Button>
-      <Menu.Button onClick={() => setInputLag(inputLag + 50)} className="aspect-square" focused={focused}>
+      <Menu.Button onClick={() => setInputLag(inputLag + 50)} className="aspect-square" size="small" focused={focused}>
         →
       </Menu.Button>
     </Menu.ButtonGroup>

@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import { Check, Error } from '@mui/icons-material';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
 import { Switcher } from 'modules/Elements/Switcher';
@@ -116,53 +116,60 @@ function BuiltIn(props: Props) {
 
   return (
     <>
-      <UserMediaEnabled fallback={<h2>Please allow access to the microphone so the default one can be selected.</h2>}>
-        {!selectedMic && <h3>The default device is being selected.</h3>}
+      <UserMediaEnabled
+        fallback={
+          <span className="typography text-lg">
+            Please allow access to the microphone so the default one can be selected.
+          </span>
+        }>
+        {!selectedMic && <span className="typography text-lg">The default device is being selected.</span>}
         {selectedMic && (
           <>
-            <Header>
-              <h3>You&#39;ll sing using</h3>
-              <h4>(click to change)</h4>
-            </Header>
+            <div className="flex items-end justify-between">
+              <span className="typography text-lg">You&#39;ll sing using</span>
+              <Menu.HelpText>(click to change)</Menu.HelpText>
+            </div>
             <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
-            <AudibleStatus>
+            <div className="flex items-center justify-end">
               {isAudible === true && (
                 <>
-                  <h3>Microphone is audible</h3>
-                  <AudibleIconContainer>
-                    <SuccessIcon />
-                  </AudibleIconContainer>
+                  <span className="typography text-lg">Microphone is audible</span>
+                  <div className="flex h-8 w-10 items-center justify-end">
+                    <Check className="h-8 w-8 text-white" />
+                  </div>
                 </>
               )}
               {isAudible === false && (
                 <>
-                  <h3>Microphone is not audible</h3>
-                  <AudibleIconContainer>
-                    <ErrorIcon />
-                  </AudibleIconContainer>
+                  <span className="typography text-lg">Microphone is not audible</span>
+                  <div className="flex h-8 w-10 items-center justify-end">
+                    <Error className="h-8 w-8 text-red-500" />
+                  </div>
                 </>
               )}
               {isAudible === null && (
                 <>
-                  <h3>Make some noise to the microphone</h3>
-                  <AudibleIconContainer>
+                  <span className="typography text-lg">Make some noise to the microphone</span>
+                  <div className="flex h-8 w-10 items-center justify-end">
                     <Loader size="1em" />
-                  </AudibleIconContainer>
+                  </div>
                 </>
               )}
-            </AudibleStatus>
+            </div>
             {isAudible === false && (
-              <h4>Make some noise to the microphone. If that doesn&#39;t work, try using another microphone.</h4>
+              <Menu.HelpText>
+                Make some noise to the microphone. If that doesn&#39;t work, try using another microphone.
+              </Menu.HelpText>
             )}
           </>
         )}
         <MicCheck />
 
         {isAudible === true && (
-          <h4>
+          <Menu.HelpText>
             Built-in microphones can pick up music from the game. For more accurate scores, try using your{' '}
             <button onClick={() => props.changePreference('remoteMics')}>smartphone as a microphone</button>.
-          </h4>
+          </Menu.HelpText>
         )}
       </UserMediaEnabled>
       <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
@@ -174,40 +181,5 @@ function BuiltIn(props: Props) {
     </>
   );
 }
-
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
-
-const AudibleStatus = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
-
-const AudibleIconContainer = styled.div`
-  width: 4rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
-
-const ErrorIcon = styled(Error)`
-  && {
-    width: 2em;
-    height: 2em;
-  }
-  color: red;
-`;
-const SuccessIcon = styled(Check)`
-  && {
-    width: 2em;
-    height: 2em;
-  }
-  color: white;
-`;
 
 export default BuiltIn;

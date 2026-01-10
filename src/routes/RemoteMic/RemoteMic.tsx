@@ -1,8 +1,6 @@
-import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { useBackground } from 'modules/Elements/BackgroundContext';
-import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
 import { switchToTheme } from 'modules/GameEngine/Drawing/styles';
 import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'modules/GameEvents/hooks';
@@ -65,7 +63,7 @@ function RemoteMic() {
     <LayoutGame
       toolbarContent={
         activeTab !== 'song-list' ? (
-          <div className="flex flex-col">
+          <div className="flex w-[50vw] max-w-[150px] flex-col">
             <Typography className="text-xs">CONNECTION STATUS:</Typography>
             <Typography className="mr-auto text-sm">
               <strong data-test="connection-status">{connectionStatus?.toUpperCase()}</strong>{' '}
@@ -79,8 +77,9 @@ function RemoteMic() {
         ) : undefined
       }>
       <ConfirmReadiness onConfirm={onConfirm} />
-      <NormalizeFontSize size={10} />
-      <Container id="phone-ui-container" className="flex flex-col gap-[1px]">
+      <div
+        id="phone-ui-container"
+        className="landscap:max-w-[60rem] mx-auto flex h-screen w-full max-w-[25rem] flex-col gap-[1px] bg-black/50">
         <div className="flex flex-1 flex-col justify-center overflow-hidden">
           {activeTab === 'microphone' && (
             <Microphone
@@ -117,24 +116,8 @@ function RemoteMic() {
           )}
         </div>
         <BottomBar setActiveTab={setActiveTab} active={activeTab} />
-      </Container>
+      </div>
     </LayoutGame>
   );
 }
 export default RemoteMic;
-
-const Container = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
-  min-height: 100vh;
-  max-height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-
-  @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-    max-width: 960px;
-  }
-`;

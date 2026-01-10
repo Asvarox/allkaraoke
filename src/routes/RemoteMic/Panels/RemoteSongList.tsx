@@ -1,12 +1,10 @@
-import styled from '@emotion/styled';
 import { ArrowRight, Search } from '@mui/icons-material';
 import { groupBy, uniqBy } from 'es-toolkit';
 import { SongPreview } from 'interfaces';
+import { Button } from 'modules/Elements/AKUI/Button';
 import { Badge } from 'modules/Elements/Badge';
 import { Flag } from 'modules/Elements/Flag';
 import { Input } from 'modules/Elements/Input';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
@@ -17,8 +15,7 @@ import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import isE2E from 'modules/utils/isE2E';
-import { ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import { twc } from 'react-twc';
+import { ComponentProps, ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import LanguageFilter from 'routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
 import { useMySongList } from 'routes/RemoteMic/Panels/RemoteSongList/useMySongList';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
@@ -26,6 +23,7 @@ import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
 import { searchList } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 import createPersistedState from 'use-persisted-state';
+import { cn } from 'utils/cn';
 
 interface Props {
   roomId: string | null;
@@ -134,39 +132,52 @@ function RemoteSongList({ connectionStatus }: Props) {
   const unit = useBaseUnitPx();
 
   return (
-    <Container className="overflow-hidden">
-      <TopBar className="pt-1">
+    <div className="relative flex h-[calc(100vh-6rem)] flex-auto flex-col overflow-hidden">
+      <div className={`typography flex flex-col bg-black/75 p-1`}>
         <Input
+          size="mini"
+          className="text-sm"
           focused={false}
-          label={<Search />}
+          label={<Search className="h-4! w-4!" />}
           placeholder="Search the list…"
           value={search}
           onChange={(value) => setSearch(value)}
           data-test="search-input"
         />
-        <Tabs>
-          <Tab data-test="all-songs-button" data-active={tab === 'list'} onClick={() => changeTab('list')}>
+        <div className="flex w-full gap-1">
+          <Button
+            size="mini"
+            className="flex-1 animate-none"
+            focused={tab === 'list'}
+            data-test="all-songs-button"
+            onClick={() => changeTab('list')}>
             All songs
-          </Tab>
-          <Tab data-test="your-list-button" data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
+          </Button>
+          <Button
+            size="mini"
+            className="flex-1 animate-none"
+            focused={tab === 'queue'}
+            data-test="your-list-button"
+            onClick={() => changeTab('queue')}>
             Your list ({savedSongList.length})
-          </Tab>
+          </Button>
           <LanguageFilter
             excludedLanguages={excludedLanguages}
             languageList={languages}
             onListChange={setExcludedLanguages}>
             {({ open }) => (
-              <Tab
-                className="flex-grow-[0.3]!"
+              <Button
+                size="mini"
                 onClick={open}
-                data-test="song-language-filter"
-                data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
+                focused={excludedLanguages.length > 0 && tab === 'list'}
+                className="scale-100 animate-none"
+                data-test="song-language-filter">
                 🇺🇳{selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
-              </Tab>
+              </Button>
             )}
           </LanguageFilter>
-        </Tabs>
-      </TopBar>
+        </div>
+      </div>
       <CustomVirtualization
         forceRenderItem={-1}
         overScan={200}
@@ -175,7 +186,7 @@ function RemoteSongList({ connectionStatus }: Props) {
         groupSizes={[itemsToRender.length]}
         groupHeaderHeight={1}
         groupContent={() => null}
-        itemHeight={unit * 7}
+        itemHeight={unit * 3.75}
         itemContent={(index, _groupIndex, itemProps) => {
           const song = itemsToRender[index];
 
@@ -192,190 +203,114 @@ function RemoteSongList({ connectionStatus }: Props) {
             };
 
             return (
-              <SongItemContainer
-                role="button"
-                className="bg-opacity-75! active:bg-opacity-100! cursor-pointer bg-black!"
+              <SongListItem
+                className="overflow-hidden border-b border-black bg-black/75 active:bg-black/100"
                 data-test={`song-group-${mainArtistName}`}
                 onClick={onClick}
-                {...itemProps}>
-                <Language>
+                left={
                   <ArrowRight
-                    className={`text-white transition-transform! duration-200! ${isExpanded ? 'rotate-90' : ''}`}
+                    className={`text-white transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
                   />
-                </Language>
-                <ArtistTitle>
-                  <Title>{mainArtistName}</Title>
-                  <Artist data-test={'songs-count'} data-value={`${song.length}`}>
-                    {song.length} songs
-                  </Artist>
-                </ArtistTitle>
-                <Action>
-                  {isExpanded ? (
-                    <ActiveButton data-test="remove-song-button">CLOSE</ActiveButton>
+                }
+                topText={mainArtistName}
+                bottomText={`${song.length} songs`}
+                action={
+                  isExpanded ? (
+                    <button
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      data-test="remove-song-button">
+                      CLOSE
+                    </button>
                   ) : (
-                    <AddButton data-test="add-song-button">EXPAND</AddButton>
-                  )}
-                </Action>
-              </SongItemContainer>
+                    <button
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      data-test="add-song-button">
+                      EXPAND
+                    </button>
+                  )
+                }
+                {...itemProps}
+              />
             );
           }
 
           const isExpanded = isArtistPresent(getMainArtistName(song.artist), expandedArtists);
-          const isOnList = savedSongList.includes(song.id);
+          const isOnSavedList = savedSongList.includes(song.id);
 
           return (
-            <SongItemContainer
-              className={isOnList ? 'bg-opacity-35! bg-black!' : ''}
+            <SongListItem
+              className={`${isOnSavedList ? 'bg-black/40' : ''} ${isExpanded ? 'pl-16' : ''}`}
               data-test={song.id}
-              {...itemProps}>
-              {isExpanded && <Language />}
-              <Language>
-                <Flag language={song.language} />
-              </Language>
-              <ArtistTitle>
-                <Title>{song.title}</Title>
-                <Artist>{song.artist}</Artist>
-              </ArtistTitle>
-              <Action>
-                {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
-                  <ActiveButton
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      RemoteMicClient.selectSong(song.id);
-                    }}
-                    data-test="select-song-button">
-                    SELECT
-                  </ActiveButton>
-                )}
-                {isOnList ? (
-                  <ActiveButton
-                    data-test="remove-song-button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleSong(song.id);
-                    }}>
-                    -
-                  </ActiveButton>
-                ) : (
-                  <AddButton
-                    data-test="add-song-button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleSong(song.id);
-                    }}>
-                    +
-                  </AddButton>
-                )}
-              </Action>
-            </SongItemContainer>
+              left={<Flag language={song.language} className="h-8 w-8 rounded-full object-cover" />}
+              topText={song.title}
+              bottomText={song.artist}
+              {...itemProps}
+              action={
+                <>
+                  {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
+                    <button
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        RemoteMicClient.selectSong(song.id);
+                      }}
+                      data-test="select-song-button">
+                      SELECT
+                    </button>
+                  )}
+                  {isOnSavedList ? (
+                    <button
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      data-test="remove-song-button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleSong(song.id);
+                      }}>
+                      -
+                    </button>
+                  ) : (
+                    <button
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      data-test="add-song-button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleSong(song.id);
+                      }}>
+                      +
+                    </button>
+                  )}
+                </>
+              }
+            />
           );
         }}
       />
-    </Container>
+    </div>
   );
 }
 export default RemoteSongList;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  flex: 1 1 auto;
-  min-height: calc(100vh - 6rem);
-  max-height: calc(100vh - 6rem);
-`;
+interface ItemProps extends ComponentProps<'div'> {
+  left: React.ReactNode;
+  action: React.ReactNode;
+  topText: React.ReactNode;
+  bottomText: React.ReactNode;
+}
 
-const TopBar = styled.div`
-  ${typography};
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-`;
-
-const Tabs = styled.div`
-  display: flex;
-  width: 100%;
-`;
-const Tab = styled.button`
-  border: none;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 4rem;
-  height: 4rem;
-  background: rgba(0, 0, 0, 0.75);
-  ${typography};
-  font-size: 2rem;
-  position: relative;
-
-  transition: 300ms;
-  &[data-active='true'] {
-    background: ${styles.colors.text.active};
-  }
-
-  &[data-active='false'] {
-    box-shadow: inset 0px 0px 0px 2px orange;
-  }
-`;
-
-const SongItemContainer = styled.div`
-  background: rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  height: 7rem;
-  padding: 0 1rem;
-  gap: 1rem;
-  border-bottom: 1px solid black;
-  overflow: hidden;
-
-  position: relative;
-  transition: 100ms;
-`;
-
-const Language = styled.div`
-  min-width: 3rem;
-  img,
-  svg {
-    height: 3rem;
-    width: 3rem;
-    object-fit: cover;
-    border-radius: 3rem;
-    aspect-ratio: 1;
-  }
-`;
-
-const ArtistTitle = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  overflow: hidden;
-`;
-
-const Artist = styled.span`
-  color: ${styles.colors.text.default};
-  font-size: 1.25rem;
-  white-space: nowrap;
-`;
-const Title = styled.span`
-  color: ${styles.colors.text.active};
-
-  font-size: 1.5rem;
-  white-space: nowrap;
-`;
-
-const Action = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  height: 7rem;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-right: 1rem;
-`;
-
-const AddButton = twc.button`transition-all duration-300 active:text-text-default active:bg-active typography p-[1rem] min-w-[4rem] h-[4rem] rounded-full text-center bg-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
-const ActiveButton = twc(AddButton)`text-active`;
+const SongListItem = ({ className, left, action, topText, bottomText, ...props }: ItemProps) => {
+  return (
+    <div
+      className={cn(
+        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/15 px-4 transition-all duration-100`,
+        className,
+      )}
+      {...props}>
+      <div className="flex min-w-8 items-center justify-center">{left}</div>
+      <div className="flex flex-col justify-center gap-1 overflow-hidden">
+        <span className="text-active text-sm whitespace-nowrap">{topText}</span>
+        <span className="text-default text-sm whitespace-nowrap">{bottomText}</span>
+      </div>
+      <div className="absolute top-0 right-0 bottom-0 flex items-center justify-center gap-4 pr-4">{action}</div>
+    </div>
+  );
+};

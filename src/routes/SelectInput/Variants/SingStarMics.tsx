@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
 import InputManager from 'modules/GameEngine/Input/InputManager';
@@ -95,32 +95,37 @@ function SingStarMics(props: Props) {
       <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can find SingStar ones.</h2>}>
         {!isSetup && (
           <>
-            <h3>
+            <span className="typography block text-lg">
               <Loader size="0.85em" /> Connect your SingStar microphones.
-            </h3>
-            <h4 data-test="setup-not-completed">It can take a couple of seconds to detect after you connect them.</h4>
+            </span>
+            <Menu.HelpText data-test="setup-not-completed">
+              It can take a couple of seconds to detect after you connect them.
+            </Menu.HelpText>
             {listChanged && (
-              <h4>
-                <h4 data-test="list-change-info">
-                  Available microphones list has changed, but no SingStar mics were found. Try{' '}
-                  <button onClick={() => props.changePreference('advanced')}>Advanced</button> setup.
-                </h4>
-              </h4>
+              <Menu.HelpText data-test="list-change-info">
+                Available microphones list has changed, but no SingStar mics were found. Try{' '}
+                <button className="text-active cursor-pointer" onClick={() => props.changePreference('advanced')}>
+                  Advanced
+                </button>{' '}
+                setup.
+              </Menu.HelpText>
             )}
             {showAdvancedTip && (
               <>
                 {!listChanged && (
-                  <ChromeIssue data-test="advanced-tip">
+                  <Menu.HelpText className="bg-red-900 p-2.5" data-test="advanced-tip">
                     If they don&#39;t get detected, try{' '}
-                    <button onClick={() => props.changePreference('advanced')}>Advanced</button> section in the previous
-                    menu.
-                  </ChromeIssue>
+                    <button className="text-active cursor-pointer" onClick={() => props.changePreference('advanced')}>
+                      Advanced
+                    </button>{' '}
+                    section in the previous menu.
+                  </Menu.HelpText>
                 )}
                 {isChromium() && isWindows() && (
-                  <ChromeIssue>
+                  <Menu.HelpText className="bg-red-900 p-2.5">
                     <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any problems,
                     try using an alternative browser (eg. <strong>MS Edge</strong> or <strong>Firefox</strong>)
-                  </ChromeIssue>
+                  </Menu.HelpText>
                 )}
               </>
             )}
@@ -146,10 +151,5 @@ function SingStarMics(props: Props) {
     </>
   );
 }
-
-const ChromeIssue = styled.h4`
-  background: darkred;
-  padding: 1rem;
-`;
 
 export default SingStarMics;

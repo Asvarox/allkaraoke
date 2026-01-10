@@ -1,4 +1,5 @@
 import { QrCode2 } from '@mui/icons-material';
+import { Kbd } from 'modules/Elements/AKUI/Kbd';
 import { randomInt } from 'modules/utils/randomValue';
 import { HTMLProps, ReactNode, useMemo } from 'react';
 
@@ -45,10 +46,10 @@ const data = [
     Entire game (besides add/edit song) is navigable with <strong>Keyboard</strong>
   </>,
   <>
-    You can hide or show keyboard navigation help with <kbd>H</kbd> key
+    You can hide or show keyboard navigation help with <Kbd>H</Kbd> key
   </>,
   <>
-    In Song Selection, hold <kbd>↑</kbd> or <kbd>↓</kbd> to jump to the next letter
+    In Song Selection, hold <Kbd>↑</Kbd> or <Kbd>↓</Kbd> to jump to the next letter
   </>,
   <>
     Add <strong>vibrato</strong> to the notes you sing to get additional <strong>bonus points</strong>

@@ -1,3 +1,4 @@
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
 import SmoothLink from 'modules/Elements/SmoothLink';
@@ -18,7 +19,7 @@ function ManageSongs() {
       <Helmet>
         <title>Manage Songs | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      <h1>Manage Songs</h1>
+      <Menu.Header>Manage Songs</Menu.Header>
       <SmoothLink to="exclude-languages/">
         <MenuButton {...register('exclude-languages', () => navigate('exclude-languages/'))}>
           Select Song Languages

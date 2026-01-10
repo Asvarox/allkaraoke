@@ -1,6 +1,5 @@
 import CameraManager from 'modules/Camera/CameraManager';
 import { Menu } from 'modules/Elements/AKUI/Menu';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
@@ -62,7 +61,7 @@ function Settings() {
       <Helmet>
         <title>Settings | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      <h1>Settings</h1>
+      <Menu.Header>Settings</Menu.Header>
       <Switcher
         {...register('graphics-level', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}
         label="Graphics"
@@ -73,15 +72,12 @@ function Settings() {
         label="FPS Count"
         value={fpsCount}
       />
-      {}
-      <div className="flex flex-col">
-        <Menu.Button {...register('calibration-settings', () => navigate('settings/calibration/'))} size="small">
-          Calibrate input lag
-        </Menu.Button>
-        <Typography className="text-sm">
-          If the sound is not synchronised with the lyrics, use this to compensate it.
-        </Typography>
-      </div>
+      <Menu.Button
+        {...register('calibration-settings', () => navigate('settings/calibration/'))}
+        size="small"
+        info="If the sound is not synchronised with the lyrics, use this to compensate it.">
+        Calibrate input lag
+      </Menu.Button>
       <hr />
       <Switcher
         {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}

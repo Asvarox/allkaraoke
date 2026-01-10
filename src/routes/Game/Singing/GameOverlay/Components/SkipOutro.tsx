@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
+import { Kbd } from 'modules/Elements/AKUI/Kbd';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
 import { getLastNoteEnd } from 'modules/Songs/utils/notesSelectors';
@@ -61,41 +61,14 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
   useKeyboardHelp(help, shouldBeVisible);
 
   return !mobilePhoneMode && canSkip ? (
-    <Container visible={shouldBeVisible} data-test="skip-outro-info" data-visible={shouldBeVisible}>
+    <Menu.HelpText
+      className={`pointer-events-none fixed bottom-[15rem] z-[4] w-full p-2 text-center text-2xl transition-all duration-500 [text-shadow:0_0_2rem_black] ${shouldBeVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} `}
+      style={{ textShadow: '0 0 2rem black' }}
+      data-test="skip-outro-info"
+      data-visible={shouldBeVisible}>
       Press <Kbd>Enter</Kbd> to skip the outro
-    </Container>
+    </Menu.HelpText>
   ) : null;
 }
-
-const Container = styled.div<{ visible: boolean }>`
-  ${typography};
-  pointer-events: none;
-  position: fixed;
-  bottom: 29rem;
-  transform: scale(${(props) => (props.visible ? 1 : 0)});
-  opacity: ${(props) => (props.visible ? 1 : 0)};
-  text-align: center;
-  font-size: 5rem;
-  text-shadow: 0 0 3.5rem black;
-  width: 100%;
-  z-index: 4;
-  padding: 0.5rem;
-  transition: ease 500ms;
-`;
-
-const Kbd = styled.kbd<{ disabled?: boolean }>`
-  margin: 0.2rem;
-  padding: 0.2rem 2rem;
-  border-radius: 1.3rem;
-  border: 0.5rem solid rgb(204, 204, 204);
-  border-bottom-color: rgb(150, 150, 150);
-  border-right-color: rgb(150, 150, 150);
-  line-height: 1.4;
-  display: inline-block;
-  background-color: rgb(247, 247, 247);
-  text-shadow: 0 1rem 0 #fff;
-
-  opacity: ${(props) => (props.disabled ? 0.25 : 1)};
-`;
 
 export default React.memo(SkipOutro);

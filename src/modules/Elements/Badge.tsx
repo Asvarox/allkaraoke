@@ -1,18 +1,7 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
+import { twx } from 'utils/twx';
 
-export const Badge = styled.span`
-  position: absolute;
-  transform: translate(40%, -50%);
-  top: 0;
-  right: 0;
-  background: ${styles.colors.text.active};
-
-  font-size: 1.75rem;
-  ${typography};
-  color: ${styles.colors.text.default};
-  padding: 0.25rem 0.75rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+export const Badge = twx.span`
+  absolute translate-x-[40%] -translate-y-[50%] top-0 right-0 bg-active
+  text-sm typography text-default px-[6px] rounded-full
+  shadow-[0_0_2px_1px_rgba(0,0,0,0.5)]
 `;

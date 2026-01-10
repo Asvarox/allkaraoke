@@ -50,6 +50,9 @@ importers:
       bezier-easing:
         specifier: ^2.1.0
         version: 2.1.0
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       curtainsjs:
         specifier: ^8.1.6
         version: 8.1.6

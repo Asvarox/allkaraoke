@@ -1,11 +1,8 @@
 import dotparty from 'modules/Elements/dotparty.gif';
 import logoMp4 from 'modules/Elements/logo.mp4';
 import logoWebm from 'modules/Elements/logo.webm';
-import pride from 'modules/Elements/pride.png';
 import santaHat from 'modules/Elements/santas-hat.webp';
-import { FeatureFlags } from 'modules/utils/featureFlags';
 import storage from 'modules/utils/storage';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, useContext } from 'react';
 import { twc } from 'react-twc';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -19,7 +16,7 @@ if (global.location?.search.includes('pride')) {
 }
 
 export default function Logo(props: ComponentProps<typeof StyledLogo>) {
-  const isEurovision = useFeatureFlag(FeatureFlags.Eurovision);
+  const isEurovision = false; //useFeatureFlag(FeatureFlags.Eurovision);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const { theme } = useContext(BackgroundContext);
 
@@ -27,36 +24,24 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
     return null;
   }
   return (
-    <div className="relative h-[16.4rem] [view-transition-name:logo]">
-      {storage.session.getItem('pride') === 'true' && (
-        <StyledLogo asChild>
-          <img className="absolute" src={pride} alt="AllKaraoke Pride logo part 1" />
-        </StyledLogo>
-      )}
+    <div className="relative h-[1.1em] [view-transition-name:logo]">
       <StyledLogo {...props} autoPlay loop muted playsInline>
         <source src={logoWebm} type="video/webm" />
         <source src={logoMp4} type="video/mp4" />
       </StyledLogo>
-      <img
-        className="absolute right-[-1rem] bottom-[-0.5rem] h-[5.1rem] w-[13.7rem]"
-        src={dotparty}
-        alt="AllKaraoke Pride logo part 2"
-      />
+      <img className="absolute right-[-0.1em] bottom-0 h-[0.3em]" src={dotparty} alt="AllKaraoke Pride logo part 2" />
       {theme === 'christmas' && (
         <img
-          className="absolute top-[-3rem] right-[-7rem] h-[11.1rem] w-[13.7rem] rotate-[30deg] object-contain"
+          className="absolute top-[-0.3em] right-[-0.55em] h-[1.1em] w-[1.1em] rotate-[30deg] object-contain"
           src={santaHat}
           alt="AllKaraoke Pride logo part 2"
         />
       )}
       {isEurovision && (
-        <EurovisionLogo
-          src={eurovisionIcon}
-          className="absolute top-[12rem] right-[-10rem] h-[5.1rem]! w-[13.7rem]! object-contain"
-        />
+        <EurovisionLogo src={eurovisionIcon} className="absolute top-[0.15em] right-[-1em] h-[0.9em]! object-contain" />
       )}
     </div>
   );
 }
 
-const StyledLogo = twc.video`w-[66rem] h-[16.4rem]`;
+const StyledLogo = twc.video`w-[4em] h-[1.1em]`;

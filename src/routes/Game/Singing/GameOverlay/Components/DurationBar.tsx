@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
 import { uniq } from 'es-toolkit';
 import { PlayerSetup } from 'interfaces';
 import { VideoState } from 'modules/Elements/VideoPlayer';
 import styles from 'modules/GameEngine/Drawing/styles';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
+import type { Ref } from 'react';
 import { memo, useEffect, useMemo, useRef } from 'react';
 
 interface Props {
@@ -58,7 +58,7 @@ function DurationBar({ players, duration }: Props) {
   if (!duration) return null;
 
   return (
-    <Bar>
+    <div className="absolute top-1/2 left-0 h-2.5 w-full -translate-y-1/2 bg-black/50">
       {firstNotes.map((note) => (
         <Marker key={note} position={note / durationMs} />
       ))}
@@ -66,39 +66,22 @@ function DurationBar({ players, duration }: Props) {
         <Marker key={note} position={note / durationMs} />
       ))}
       <BarFill ref={barFillRef} />
-    </Bar>
+    </div>
   );
 }
 
-const Bar = styled.div`
-  position: absolute;
-  height: 0.6rem;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  left: 0;
-  top: calc(50% - 0.3rem);
-`;
-
-const BaseMarker = styled(Bar)`
-  top: 0;
-  margin-left: -0.25rem;
-  width: 0.5rem;
-  background: ${styles.colors.text.active};
-  opacity: 75%;
-`;
-
 const Marker = (props: { position: number }) => (
-  <BaseMarker style={{ left: `${Math.min(props.position * 100, 100)}%` }} />
+  <div
+    className="absolute top-0 -ml-1 h-full w-2 opacity-75"
+    style={{
+      left: `${Math.min(props.position * 100, 100)}%`,
+      backgroundColor: styles.colors.text.active,
+    }}
+  />
 );
 
-const BaseBarFill = styled(Bar)`
-  top: 0;
-  background: white;
-  opacity: 50%;
-  width: 100%;
-  transform-origin: left center;
-`;
-
-const BarFill = styled(BaseBarFill)``;
+const BarFill = ({ ref }: { ref: Ref<HTMLDivElement> }) => (
+  <div ref={ref} className="absolute top-0 left-0 h-full w-full origin-left bg-white/50" />
+);
 
 export default memo(DurationBar);

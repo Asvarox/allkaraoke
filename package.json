@@ -17,6 +17,7 @@
     "@uriopass/nosleep.js": "^0.12.2",
     "aubiojs": "0.1.0",
     "bezier-easing": "^2.1.0",
+    "clsx": "^2.1.1",
     "curtainsjs": "^8.1.6",
     "dayjs": "^1.11.10",
     "es-toolkit": "^1.39.8",

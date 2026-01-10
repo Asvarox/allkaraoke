@@ -1,7 +1,6 @@
-import styled from '@emotion/styled';
 import { PlayerSetup, SongPreview } from 'interfaces';
+import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { Button } from 'modules/Elements/Button';
-import { typography } from 'modules/Elements/cssMixins';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import gameEvents from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
@@ -95,47 +94,34 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         />
       </AnimatePresence>
       {playerList.map((setup, index) => (
-        <PlayerSettingContainer key={setup.number}>
-          <PlayerSettingTitle>Player {index + 1}</PlayerSettingTitle>
-          <div>
-            <SinglePlayer
-              multipleTracks={multipleTracks}
-              player={PlayersManager.getPlayer(setup.number)}
-              setup={setup}
-              onChange={updatePlayer(setup.number)}
-              playerNames={playerNames}
-              register={register}
-              songPreview={songPreview}
-            />
-          </div>
-        </PlayerSettingContainer>
+        <div key={setup.number} className="mobile:flex-col flex flex-row justify-stretch">
+          <Typography className="mobile:text-md px-3 py-1 text-right text-xl">Player {index + 1}</Typography>
+
+          <SinglePlayer
+            multipleTracks={multipleTracks}
+            player={PlayersManager.getPlayer(setup.number)}
+            setup={setup}
+            onChange={updatePlayer(setup.number)}
+            playerNames={playerNames}
+            register={register}
+            songPreview={songPreview}
+          />
+        </div>
       ))}
       {areInputsConfigured && (
-        <PlayButton {...register('play-song-button', startSong, undefined, true)}>Play</PlayButton>
+        <Button
+          {...register('play-song-button', startSong, undefined, true)}
+          className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
+          size="large">
+          Play
+        </Button>
       )}
-      <PlayButton {...register('select-inputs-button', () => setShowModal(true), undefined, false)}>
+      <Button
+        {...register('select-inputs-button', () => setShowModal(true), undefined, false)}
+        className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
+        size="large">
         Setup mics
-      </PlayButton>
+      </Button>
     </>
   );
 }
-
-const PlayerSettingContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 80rem;
-`;
-
-const PlayButton = styled(Button)<{ focused: boolean }>`
-  padding: 0.5rem 9rem;
-  font-size: 4.3rem;
-`;
-
-const PlayerSettingTitle = styled.span`
-  ${typography};
-  padding: 1.3rem;
-  font-size: 4.5rem;
-  width: 20rem;
-  text-align: right;
-`;

@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { QrCode2, Wifi } from '@mui/icons-material';
 import { MAX_NAME_LENGTH } from 'consts';
 import { Menu } from 'modules/Elements/AKUI/Menu';
@@ -100,7 +99,8 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
       )}
       <form className="flex flex-col gap-8" onSubmit={handleConnect}>
         {!connected && (
-          <GCInput
+          <Input
+            className="[&_input]:text-center [&_input]:tracking-[1.25rem] [&_input]:uppercase"
             ref={gameCodeInputRef}
             placeholder="_____"
             label="Game code"
@@ -141,7 +141,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
           data-test="player-name-input"
         />
         {!connected && (
-          <MenuButton className="h-28" type="submit" disabled={disabled} data-test="connect-button">
+          <MenuButton className="h-24" type="submit" disabled={disabled} data-test="connect-button">
             {connectionStatus === 'connecting' && <Loader size={'1em'} />}
             {connectionStatus === 'uninitialised' || errorReset ? 'Connect' : connectionStatus.toUpperCase()}
           </MenuButton>
@@ -190,11 +190,3 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   ) : null;
 }
 export default Connect;
-
-const GCInput = styled(Input)`
-  input {
-    letter-spacing: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-`;
