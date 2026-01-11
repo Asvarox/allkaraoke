@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "paths": { "*": ["./src/*"] },
+    "paths": { "*": ["./src/*"], "~/*": ["./src/*"] },
     "types": ["vitest/globals", "@types/dom-view-transitions"]
   },
   "include": ["src", "tests", "scripts"],

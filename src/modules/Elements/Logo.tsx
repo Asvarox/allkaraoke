@@ -10,12 +10,13 @@ import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/Setting
 import { BackgroundContext } from 'modules/Elements/BackgroundContext';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { EurovisionLogo } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
+import { twx } from 'utils/twx';
 
 if (global.location?.search.includes('pride')) {
   storage.session.setItem('pride', 'true');
 }
 
-export default function Logo(props: ComponentProps<typeof StyledLogo>) {
+export default function Logo(props: ComponentProps<'div'>) {
   const isEurovision = false; //useFeatureFlag(FeatureFlags.Eurovision);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const { theme } = useContext(BackgroundContext);
@@ -24,24 +25,24 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
     return null;
   }
   return (
-    <div className="relative h-[1.1em] [view-transition-name:logo]">
-      <StyledLogo {...props} autoPlay loop muted playsInline>
-        <source src={logoWebm} type="video/webm" />
-        <source src={logoMp4} type="video/mp4" />
-      </StyledLogo>
-      <img className="absolute right-[-0.1em] bottom-0 h-[0.3em]" src={dotparty} alt="AllKaraoke Pride logo part 2" />
-      {theme === 'christmas' && (
-        <img
-          className="absolute top-[-0.3em] right-[-0.55em] h-[1.1em] w-[1.1em] rotate-[30deg] object-contain"
-          src={santaHat}
-          alt="AllKaraoke Pride logo part 2"
-        />
-      )}
-      {isEurovision && (
-        <EurovisionLogo src={eurovisionIcon} className="absolute top-[0.15em] right-[-1em] h-[0.9em]! object-contain" />
-      )}
+    <div className="relative h-[1.1em] [view-transition-name:logo]" {...props}>
+      <LetterBase>
+        <span className="-rotate-2">A</span>
+        <span className="rotate-10">l</span>
+        <span className="-rotate-4">l</span>
+        <span className="rotate-4">K</span>
+        <span className="-rotate-4">a</span>
+        <span className="-rotate-6">r</span>
+        <span className="rotate-10">a</span>
+        <span className="rotate-2">o</span>
+        <span className="rotate-4">k</span>
+        <span className="-rotate-16">e</span>
+      <DotParty>.party</DotParty>
+      </LetterBase>
     </div>
   );
 }
 
-const StyledLogo = twc.video`h-[1.1em] w-[4em]`;
+const LetterBase = twx.span`typography relative top-[-0.15em] left-[-0.1em] text-[1em] leading-0.5 -tracking-[0.15em] [-webkit-text-stroke:0.02em_black] [font-variant:small-caps] [&_span]:inline-block`;
+
+const DotParty = twc.span`text-[0.4em] -tracking-[0.1em] absolute bottom-[0.8em] right-[-0.3em]`;

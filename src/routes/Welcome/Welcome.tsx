@@ -7,6 +7,7 @@ import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
 import { twc } from 'react-twc';
+import { Icon } from '@iconify-icon/react';
 
 function Welcome() {
   useBackground(true);
@@ -47,6 +48,9 @@ function Welcome() {
             <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
           </SmoothLink>
         </>
+        <Menu.HelpText className="flex justify-between">
+          Get in touch: <span><a href=""><Icon icon="cib:facebook" width="0.8em" height="0.8em" /> Facebook</a> • <a href="https://github.com/"><Icon icon="cib:github" width="0.8em" height="0.8em" /> Github</a></span>
+        </Menu.HelpText>
       </MenuWithLogo>
       <BackgroundMusicCredit>
         <span>
