@@ -64,7 +64,7 @@ export default function SongPreviewComponent({
   const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
   const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
   const songPreviewVolume = newVolumeFFEnabled
-    ? songPreview.volume ?? songPreview.manualVolume
+    ? (songPreview.volume ?? songPreview.manualVolume)
     : songPreview.manualVolume;
   const undebounced = useMemo(
     () => [songPreview.video, start, end, songPreviewVolume] as const,
@@ -213,7 +213,8 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
 `;
 
 interface SongPreviewContainerProps
-  extends ComponentProps<typeof BaseSongPreviewContainer>,
+  extends
+    ComponentProps<typeof BaseSongPreviewContainer>,
     PropsWithChildren<{
       top: number;
       left: number;

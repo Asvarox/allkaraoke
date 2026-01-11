@@ -25,7 +25,7 @@ export default function RateSong({ register, onExit, song }: Props) {
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const [issues, setIssues] = useState<reportTypes[]>([]);
 
-  const volume = newVolumeFFEnabled ? song?.volume ?? song?.manualVolume : song?.manualVolume;
+  const volume = newVolumeFFEnabled ? (song?.volume ?? song?.manualVolume) : song?.manualVolume;
 
   const toggleIssue = (issue: reportTypes) => {
     setIssues((current) => {

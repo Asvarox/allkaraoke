@@ -5,7 +5,7 @@ const currentSetlist = storage.session.getItem<SetlistEntity | null>('currentSet
 
 const urlParams = new URLSearchParams(window.location.search);
 const setlistParam = urlParams.get('setlist');
-const setlist = setlistParam ? decodeSongList(setlistParam) : currentSetlist ?? null;
+const setlist = setlistParam ? decodeSongList(setlistParam) : (currentSetlist ?? null);
 
 if (setlist && !currentSetlist) {
   storage.session.setItem('currentSetlist', setlist);

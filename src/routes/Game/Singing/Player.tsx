@@ -204,7 +204,7 @@ function Player({
           controls={showControls}
           autoplay={autoplay}
           disablekb={process.env.NODE_ENV !== 'development'}
-          volume={newVolumeFFEnabled ? song.volume ?? song.manualVolume : song.manualVolume}
+          volume={newVolumeFFEnabled ? (song.volume ?? song.manualVolume) : song.manualVolume}
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
         />

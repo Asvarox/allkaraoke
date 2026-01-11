@@ -47,7 +47,7 @@ export default function calculateData({
 
   const lastNote = isNotesSection(currentSection) ? currentSection?.notes?.at(-1) : undefined;
   const sectionEndBeat = isNotesSection(currentSection)
-    ? nextSection?.start ?? lastNote!.start + lastNote!.length
+    ? (nextSection?.start ?? lastNote!.start + lastNote!.length)
     : currentSection.end;
   const timeSectionGap = currentSection.start * songBeatLength;
   const maxTime = (sectionEndBeat - currentSection.start) * songBeatLength;

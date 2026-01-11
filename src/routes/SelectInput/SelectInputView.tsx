@@ -60,7 +60,7 @@ function SelectInputView({ onFinish, closeButtonText, onBack, skipText, smooth =
   const onSave = (pref: ValuesType<typeof MicSetupPreference>) => () => {
     // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
     // skip is needed to mark that user explicitly didn't select anything
-    setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
+    setStoredPreference(pref === 'skip' ? (storedPreference ?? 'skip') : pref);
 
     if (pref) {
       storage.local.setItem(LAST_SELECTED_KEY, pref);

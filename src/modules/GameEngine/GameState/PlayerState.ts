@@ -130,13 +130,13 @@ class PlayerState {
   public getNextSection = (index = 1) => {
     const sectionIndex = this.getCurrentSectionIndex();
 
-    return sectionIndex > -1 ? this.getTrack().sections[sectionIndex + index] ?? null : null;
+    return sectionIndex > -1 ? (this.getTrack().sections[sectionIndex + index] ?? null) : null;
   };
 
   public getPreviousSection = (index = 1) => {
     const sectionIndex = this.getCurrentSectionIndex();
 
-    return sectionIndex > -1 ? this.getTrack().sections[sectionIndex - index] ?? null : null;
+    return sectionIndex > -1 ? (this.getTrack().sections[sectionIndex - index] ?? null) : null;
   };
 
   public getLastNotesSection = () => {

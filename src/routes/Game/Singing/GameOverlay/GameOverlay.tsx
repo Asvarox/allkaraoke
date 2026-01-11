@@ -57,16 +57,12 @@ const GameOverlay = forwardRef(function (
 
   const overlayScaleFactor = overlayHeight / height;
 
-  useImperativeHandle(
-    fRef,
-    () => {
-      return {
-        pause: () => drawer.current?.pause(),
-        resume: () => drawer.current?.resume(),
-      };
-    },
-    [],
-  );
+  useImperativeHandle(fRef, () => {
+    return {
+      pause: () => drawer.current?.pause(),
+      resume: () => drawer.current?.resume(),
+    };
+  }, []);
 
   useEffect(() => {
     GameState.startInputMonitoring();

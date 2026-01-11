@@ -11,8 +11,10 @@ interface InputRef {
   element: HTMLInputElement | null;
   triggerValidationError: (message: string) => void;
 }
-interface Props
-  extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange' | 'ref'> {
+interface Props extends Omit<
+  DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
+  'onChange' | 'ref'
+> {
   focused: boolean;
   label: ReactNode;
   value: string;
