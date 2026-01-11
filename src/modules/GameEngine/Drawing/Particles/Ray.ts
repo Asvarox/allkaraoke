@@ -1,4 +1,4 @@
-import ray from 'modules/GameEngine/Drawing/Elements/ray';
+import ray from '~/modules/GameEngine/Drawing/Elements/ray';
 import Particle from '../interfaces';
 
 const initialTtl = (50 / 60) * 1000;

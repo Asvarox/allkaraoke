@@ -1,4 +1,4 @@
-import { Song, SongPreview } from 'interfaces';
+import { Song, SongPreview } from '~/interfaces';
 import clearString from '../utils/clearString';
 import getSongId from './utils/getSongId';
 import { getFirstNoteStartFromSections } from './utils/notesSelectors';

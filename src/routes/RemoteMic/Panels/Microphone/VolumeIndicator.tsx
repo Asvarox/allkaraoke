@@ -1,8 +1,8 @@
-import styles from 'modules/GameEngine/Drawing/styles';
 import { useEffect, useState } from 'react';
 import { twc } from 'react-twc';
-import PlayerChange from 'routes/RemoteMic/Panels/Microphone/PlayerChange';
-import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import PlayerChange from '~/routes/RemoteMic/Panels/Microphone/PlayerChange';
+import usePermissions from '~/routes/RemoteMic/hooks/usePermissions';
 
 interface Props {
   volume: number;

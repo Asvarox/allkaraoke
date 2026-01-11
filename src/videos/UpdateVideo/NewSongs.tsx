@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { SongPreview } from 'interfaces';
 import React, { HTMLProps, PropsWithChildren, ReactNode, useEffect, useState } from 'react';
 import {
   AbsoluteFill,
@@ -13,9 +12,10 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { Fade, Scale } from 'remotion-animated';
-import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
-import { CenterAbsoluteFill, SAnimated } from 'videos/support/Components/common';
-import { flexCenter, flexVertical } from 'videos/support/cssMixins';
+import { SongPreview } from '~/interfaces';
+import useAbsoluteFrame from '~/videos/support/AbsoluteFrame/useAbsoluteFrame';
+import { CenterAbsoluteFill, SAnimated } from '~/videos/support/Components/common';
+import { flexCenter, flexVertical } from '~/videos/support/cssMixins';
 
 const SONG_PRESENTATION_FRAMES = 70;
 const TITLE_PRESENTATION_FRAMES = SONG_PRESENTATION_FRAMES;

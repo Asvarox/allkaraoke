@@ -1,6 +1,6 @@
-import { FrequencyRecord, Note, NoteFrequencyRecord, PlayerNote, Section, Song, SongPreview } from 'interfaces';
-import { getSongPreview } from 'modules/Songs/utils';
-import range from 'modules/utils/range';
+import { FrequencyRecord, Note, NoteFrequencyRecord, PlayerNote, Section, Song, SongPreview } from '~/interfaces';
+import { getSongPreview } from '~/modules/Songs/utils';
+import range from '~/modules/utils/range';
 
 export const generateNote = (start: number, length = 1, data: Partial<Note> = {}): Note => ({
   start,

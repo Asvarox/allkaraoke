@@ -1,6 +1,6 @@
-import { BIG_NOTE_HEIGHT, NOTE_HEIGHT } from 'modules/GameEngine/Drawing/calculateData';
-import drawRawNote from 'modules/GameEngine/Drawing/Elements/Cache/Elements/note';
-import drawRawPlayerNote from 'modules/GameEngine/Drawing/Elements/Cache/Elements/playerNote';
+import { BIG_NOTE_HEIGHT, NOTE_HEIGHT } from '~/modules/GameEngine/Drawing/calculateData';
+import drawRawNote from '~/modules/GameEngine/Drawing/Elements/Cache/Elements/note';
+import drawRawPlayerNote from '~/modules/GameEngine/Drawing/Elements/Cache/Elements/playerNote';
 
 const SHADOW_PAD = 10;
 

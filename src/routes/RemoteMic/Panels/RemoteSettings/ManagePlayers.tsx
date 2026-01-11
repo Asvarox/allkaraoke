@@ -1,16 +1,16 @@
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { MenuButton } from 'modules/Elements/Menu';
-import Modal from 'modules/Elements/Modal';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { NetworkRemoteMicListMessage } from 'modules/RemoteMic/Network/messages';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { useEffect, useState } from 'react';
 import { twc } from 'react-twc';
-import PlayerChangeModal from 'routes/RemoteMic/Components/PlayerChangeModal';
-import PlayerNumberCircle from 'routes/RemoteMic/Components/PlayerNumberCircle';
 import { ValuesType } from 'utility-types';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { MenuButton } from '~/modules/Elements/Menu';
+import Modal from '~/modules/Elements/Modal';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { NetworkRemoteMicListMessage } from '~/modules/RemoteMic/Network/messages';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import PlayerChangeModal from '~/routes/RemoteMic/Components/PlayerChangeModal';
+import PlayerNumberCircle from '~/routes/RemoteMic/Components/PlayerNumberCircle';
 
 function ManagePlayers() {
   useEffect(() => {

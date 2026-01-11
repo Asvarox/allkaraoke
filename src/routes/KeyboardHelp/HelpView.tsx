@@ -1,11 +1,15 @@
-import { Kbd } from 'modules/Elements/AKUI/Kbd';
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc, TwcComponentProps } from 'react-twc';
-import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { supportsEscAsBack } from '~/modules/hooks/useKeyboard';
+import {
+  KeyboardHelpVisibilitySetting,
+  MobilePhoneModeSetting,
+  useSettingValue,
+} from '~/routes/Settings/SettingsState';
 import { RegularHelpEntry } from './Context';
 
 interface Props {

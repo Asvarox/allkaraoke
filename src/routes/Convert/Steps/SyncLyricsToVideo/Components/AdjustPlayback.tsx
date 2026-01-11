@@ -1,9 +1,9 @@
 import { Box, Button, ButtonGroup, Divider, Typography } from '@mui/material';
 import { useEffect, useRef } from 'react';
-import { Pre } from 'routes/Convert/Elements';
-import ShortcutIndicator from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShortcutIndicator';
-import formatMs from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
-import { PlayerRef } from 'routes/Game/Singing/Player';
+import { Pre } from '~/routes/Convert/Elements';
+import ShortcutIndicator from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/ShortcutIndicator';
+import formatMs from '~/routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import { PlayerRef } from '~/routes/Game/Singing/Player';
 
 interface Props {
   player: PlayerRef;

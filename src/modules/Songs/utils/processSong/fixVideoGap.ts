@@ -1,5 +1,5 @@
-import { Song } from 'interfaces';
-import getSongFirstNoteMs from 'modules/Songs/utils/getSongFirstNoteMs';
+import { Song } from '~/interfaces';
+import getSongFirstNoteMs from '~/modules/Songs/utils/getSongFirstNoteMs';
 
 export default function fixVideoGap(song: Song) {
   const firstNote = getSongFirstNoteMs(song);

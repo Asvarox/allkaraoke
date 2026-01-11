@@ -1,4 +1,4 @@
-import styles from 'modules/GameEngine/Drawing/styles';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 export const focused = {
   animation: `focusAnimation 1000ms ease-in-out infinite both`,

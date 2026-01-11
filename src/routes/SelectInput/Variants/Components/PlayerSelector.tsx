@@ -1,11 +1,11 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { Switcher } from 'modules/Elements/Switcher';
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { twc } from 'react-twc';
-import { useMicrophoneList } from 'routes/SelectInput/hooks/useMicrophoneList';
-import { usePlayerInput } from 'routes/SelectInput/hooks/usePlayerInput';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { Switcher } from '~/modules/Elements/Switcher';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { useMicrophoneList } from '~/routes/SelectInput/hooks/useMicrophoneList';
+import { usePlayerInput } from '~/routes/SelectInput/hooks/usePlayerInput';
 
 interface Props {
   player: PlayerEntity;

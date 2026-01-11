@@ -1,14 +1,14 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
-import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
-import isDev from 'modules/utils/isDev';
 import { useState } from 'react';
-import Connect from 'routes/RemoteMic/Panels/Microphone/Connect';
-import RemoteMicKeyboard from 'routes/RemoteMic/Panels/Microphone/Keyboard';
-import MicPreview from 'routes/RemoteMic/Panels/Microphone/MicPreview';
-import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
-import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
-import { AutoEnableFullscreenSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import UserMediaEnabled from '~/modules/UserMedia/UserMediaEnabled';
+import isDev from '~/modules/utils/isDev';
+import Connect from '~/routes/RemoteMic/Panels/Microphone/Connect';
+import RemoteMicKeyboard from '~/routes/RemoteMic/Panels/Microphone/Keyboard';
+import MicPreview from '~/routes/RemoteMic/Panels/Microphone/MicPreview';
+import { ConnectionStatuses } from '~/routes/RemoteMic/RemoteMic';
+import usePermissions from '~/routes/RemoteMic/hooks/usePermissions';
+import { AutoEnableFullscreenSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   roomId: string | null;

@@ -1,16 +1,16 @@
-import { MenuButton } from 'modules/Elements/Menu';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
-import { useMicrophoneStatus } from 'modules/UserMedia/hooks';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { useEffect } from 'react';
-import { PlayerSelector } from 'routes/SelectInput/Variants/Components/PlayerSelector';
-import { useMicrophoneList } from 'routes/SelectInput/hooks/useMicrophoneList';
-import usePlayerNumberPreset from 'routes/SelectInput/hooks/usePlayerNumberPreset';
-import { MicSetupPreference } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { MenuButton } from '~/modules/Elements/Menu';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import UserMediaEnabled from '~/modules/UserMedia/UserMediaEnabled';
+import { useMicrophoneStatus } from '~/modules/UserMedia/hooks';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { PlayerSelector } from '~/routes/SelectInput/Variants/Components/PlayerSelector';
+import { useMicrophoneList } from '~/routes/SelectInput/hooks/useMicrophoneList';
+import usePlayerNumberPreset from '~/routes/SelectInput/hooks/usePlayerNumberPreset';
+import { MicSetupPreference } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;

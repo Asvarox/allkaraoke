@@ -1,5 +1,5 @@
-import calculateData, { DrawingData } from 'modules/GameEngine/Drawing/calculateData';
-import styles from 'modules/GameEngine/Drawing/styles';
+import calculateData, { DrawingData } from '~/modules/GameEngine/Drawing/calculateData';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 export const drawPlayerCanvas = (drawingData: DrawingData) => {
   const ctx = drawingData.canvas.getContext('2d')!;

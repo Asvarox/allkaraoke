@@ -1,5 +1,5 @@
-import InputInterface from 'modules/GameEngine/Input/Interface';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
+import InputInterface from '~/modules/GameEngine/Input/Interface';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 
 class RemoteMicInput implements InputInterface {
   private frequencies: [number] = [0];

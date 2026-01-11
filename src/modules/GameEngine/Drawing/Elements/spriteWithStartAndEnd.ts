@@ -1,5 +1,5 @@
-import { drawSprite, getSprite } from 'modules/GameEngine/Drawing/Elements/Cache/cachedSprites';
-import { SpriteNames } from 'modules/GameEngine/Drawing/Elements/Cache/spriteMap';
+import { drawSprite, getSprite } from '~/modules/GameEngine/Drawing/Elements/Cache/cachedSprites';
+import { SpriteNames } from '~/modules/GameEngine/Drawing/Elements/Cache/spriteMap';
 
 export default function drawSpriteWithStartAndEnd(
   ctx: CanvasRenderingContext2D,

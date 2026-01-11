@@ -9,12 +9,12 @@ import {
   Select,
   TextField,
 } from '@mui/material';
-import { Flag } from 'modules/Elements/Flag';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import { countryMap } from 'modules/utils/countryList';
 import { useEffect, useMemo, useState } from 'react';
-import { inputAction } from 'routes/Convert/Elements';
-import PreviewAndVolumeAdjustment from 'routes/Convert/Steps/PreviewAndVolumeAdjustment';
+import { Flag } from '~/modules/Elements/Flag';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import { countryMap } from '~/modules/utils/countryList';
+import { inputAction } from '~/routes/Convert/Elements';
+import PreviewAndVolumeAdjustment from '~/routes/Convert/Steps/PreviewAndVolumeAdjustment';
 
 export interface SongMetadataEntity {
   artist: string;

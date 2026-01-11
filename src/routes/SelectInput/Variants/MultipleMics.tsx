@@ -1,7 +1,7 @@
-import { MenuButton } from 'modules/Elements/Menu';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { MicSetupPreference } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { MenuButton } from '~/modules/Elements/Menu';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { MicSetupPreference } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;

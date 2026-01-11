@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Input } from 'modules/Elements/Input';
 import { ComponentRef, Ref, useImperativeHandle, useRef } from 'react';
-import { InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Input } from '~/modules/Elements/Input';
+import { InputLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   focused: boolean;

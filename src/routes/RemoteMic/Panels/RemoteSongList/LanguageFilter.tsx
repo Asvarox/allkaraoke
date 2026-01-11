@@ -1,10 +1,10 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { Flag } from 'modules/Elements/Flag';
-import Modal from 'modules/Elements/Modal';
-import isE2E from 'modules/utils/isE2E';
 import { useState } from 'react';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { Flag } from '~/modules/Elements/Flag';
+import Modal from '~/modules/Elements/Modal';
+import isE2E from '~/modules/utils/isE2E';
 
-import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
+import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
 
 interface Props {
   excludedLanguages: string[];

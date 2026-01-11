@@ -1,7 +1,7 @@
-import { Note } from 'interfaces';
-import roundRect from 'modules/GameEngine/Drawing/Elements/roundRect';
-import applyColor from 'modules/GameEngine/Drawing/applyColor';
-import styles from 'modules/GameEngine/Drawing/styles';
+import { Note } from '~/interfaces';
+import roundRect from '~/modules/GameEngine/Drawing/Elements/roundRect';
+import applyColor from '~/modules/GameEngine/Drawing/applyColor';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 export default function drawRawNote(
   ctx: CanvasRenderingContext2D,

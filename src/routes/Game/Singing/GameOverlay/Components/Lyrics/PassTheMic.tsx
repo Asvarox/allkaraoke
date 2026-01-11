@@ -1,5 +1,5 @@
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
-import styles from 'modules/GameEngine/Drawing/styles';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 export function PassTheMicProgress(props: { progress: number; color: string }) {
   return (

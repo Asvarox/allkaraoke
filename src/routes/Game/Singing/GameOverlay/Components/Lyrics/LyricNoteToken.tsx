@@ -1,5 +1,5 @@
-import { Note, songBeat } from 'interfaces';
 import { ComponentProps, PropsWithChildren } from 'react';
+import { Note, songBeat } from '~/interfaces';
 import { getNoteFill, hasLyricTrailingSpace } from './utils';
 
 function LyricTrailingSpace({ lyrics }: { lyrics: string }) {

@@ -1,8 +1,8 @@
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import isE2E from 'modules/utils/isE2E';
 import { ComponentProps, ComponentType, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { twx } from 'utils/twx';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import isE2E from '~/modules/utils/isE2E';
+import { twx } from '~/utils/twx';
 
 const sizeToClass = {
   mini: 'h-10 text-sm',

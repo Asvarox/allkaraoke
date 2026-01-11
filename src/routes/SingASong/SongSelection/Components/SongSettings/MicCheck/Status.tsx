@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
-import { mobileMQ, typography } from 'modules/Elements/cssMixins';
-import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
 import { ComponentProps } from 'react';
+import { mobileMQ, typography } from '~/modules/Elements/cssMixins';
+import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
 import Ping from './Ping';
 
 interface Props extends ComponentProps<'div'> {

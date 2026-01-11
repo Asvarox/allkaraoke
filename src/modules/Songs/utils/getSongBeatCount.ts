@@ -1,6 +1,6 @@
-import { Song } from 'interfaces';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getLastNoteEnd } from 'modules/Songs/utils/notesSelectors';
+import { Song } from '~/interfaces';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getLastNoteEnd } from '~/modules/Songs/utils/notesSelectors';
 
 export default function getSongBeatCount(song: Song) {
   return Math.max(

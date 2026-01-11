@@ -1,5 +1,4 @@
 import { chunk } from 'es-toolkit';
-import isE2E from 'modules/utils/isE2E';
 import {
   ComponentType,
   CSSProperties,
@@ -12,13 +11,14 @@ import {
   useMemo,
   useRef,
 } from 'react';
+import isE2E from '~/modules/utils/isE2E';
 import {
   Components,
   CustomVirtualization,
   CustomVirtualizedListMethods,
-} from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
-import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
-import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
+} from '~/routes/SingASong/SongSelection/Components/CustomVirtualization';
+import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
+import { getSongIdWithNew } from '~/routes/SingASong/SongSelection/utils/getSongIdWithNew';
 
 export interface VirtualizedListMethods {
   getSongPosition: (songId: string) => { y: number } | undefined;

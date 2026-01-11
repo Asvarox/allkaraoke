@@ -1,7 +1,7 @@
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
-import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
+import PlayerStatus from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
 interface Props {
   player: PlayerEntity;

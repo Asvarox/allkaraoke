@@ -1,20 +1,20 @@
-import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
-import { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
-import PlayersManager from 'modules/Players/PlayersManager';
 import { forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef } from 'react';
-import SkipIntro from 'routes/Game/Singing/GameOverlay/Components/SkipIntro';
-import SkipOutro from 'routes/Game/Singing/GameOverlay/Components/SkipOutro';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { GAME_MODE, PlayerSetup, Song } from '~/interfaces';
+import { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import SkipIntro from '~/routes/Game/Singing/GameOverlay/Components/SkipIntro';
+import SkipOutro from '~/routes/Game/Singing/GameOverlay/Components/SkipOutro';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import GameState from '../../../../modules/GameEngine/GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 
-import CanvasDrawing from 'modules/GameEngine/Drawing';
 import fragShader from 'modules/GameEngine/Drawing/Shaders/shader.frag?raw';
 import vertShader from 'modules/GameEngine/Drawing/Shaders/shader.vert?raw';
-import tuple from 'modules/utils/tuple';
-import getPlayerScoreData from 'routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
+import CanvasDrawing from '~/modules/GameEngine/Drawing';
+import tuple from '~/modules/utils/tuple';
+import getPlayerScoreData from '~/routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
 
 interface Props {
   song: Song;

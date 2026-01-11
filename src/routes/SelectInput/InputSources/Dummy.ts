@@ -1,4 +1,4 @@
-import { getInputId } from 'modules/Players/utils';
+import { getInputId } from '~/modules/Players/utils';
 import { InputSource } from './interfaces';
 
 const inputList = [

@@ -1,6 +1,7 @@
-import { SingSetup, Song, SongPreview } from 'interfaces';
-import { PlayerEntity, SelectedPlayerInput } from 'modules/Players/PlayersManager';
-import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
+import posthog from 'posthog-js';
+import { SingSetup, Song, SongPreview } from '~/interfaces';
+import { PlayerEntity, SelectedPlayerInput } from '~/modules/Players/PlayersManager';
+import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
 import {
   keyStrokes,
   NetworkRemoteMicListMessage,
@@ -8,10 +9,9 @@ import {
   NetworkSetPermissionsMessage,
   NetworkStyleChangeMessage,
   NetworkSubscribeMessage,
-} from 'modules/RemoteMic/Network/messages';
-import { SongStats } from 'modules/Songs/stats/common';
-import posthog from 'posthog-js';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
+} from '~/modules/RemoteMic/Network/messages';
+import { SongStats } from '~/modules/Songs/stats/common';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
 
 export class GameEvent<T extends (...args: any[]) => void> {
   protected subscribers: Array<T> = [];

@@ -1,4 +1,4 @@
-import { SongPreview } from 'interfaces';
+import { SongPreview } from '~/interfaces';
 
 const index: SongPreview[] = require('../public/songs/index.json');
 

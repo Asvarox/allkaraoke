@@ -1,7 +1,7 @@
-import events from 'modules/GameEvents/GameEvents';
-import { getInputId } from 'modules/Players/utils';
-import { RemoteMic } from 'modules/RemoteMic/RemoteMicInput';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
+import events from '~/modules/GameEvents/GameEvents';
+import { getInputId } from '~/modules/Players/utils';
+import { RemoteMic } from '~/modules/RemoteMic/RemoteMicInput';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 import { InputSource } from './interfaces';
 
 const mapRemoteMicToInput = (remoteMic: RemoteMic): InputSource => ({

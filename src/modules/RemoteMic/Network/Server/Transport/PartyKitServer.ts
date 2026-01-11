@@ -2,10 +2,10 @@ import {
   SenderInterface,
   ServerTransport,
   transportCloseReason,
-} from 'modules/RemoteMic/Network/Server/Transport/interface';
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import { getPingTime, pack, unpack } from 'modules/RemoteMic/Network/utils';
-import Listener from 'modules/utils/Listener';
+} from '~/modules/RemoteMic/Network/Server/Transport/interface';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import { getPingTime, pack, unpack } from '~/modules/RemoteMic/Network/utils';
+import Listener from '~/modules/utils/Listener';
 
 export interface ForwardedMessage {
   t: 'forward';

@@ -8,13 +8,13 @@ import {
   KeyboardArrowUp,
   Shuffle,
 } from '@mui/icons-material';
-import { Kbd } from 'modules/Elements/AKUI/Kbd';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { keyStrokes } from 'modules/RemoteMic/Network/messages';
 import { twc, TwcComponentProps } from 'react-twc';
-import RemoteSongSearch from 'routes/RemoteMic/Panels/Microphone/RemoteSongSearch';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { keyStrokes } from '~/modules/RemoteMic/Network/messages';
+import RemoteSongSearch from '~/routes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
 interface Props {
   onSearchStateChange?: (isActive: boolean) => void;

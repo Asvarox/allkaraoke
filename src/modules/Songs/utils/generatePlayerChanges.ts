@@ -1,4 +1,4 @@
-import { NotesSection, Section, Song, SongTrack } from 'interfaces';
+import { NotesSection, Section, Song, SongTrack } from '~/interfaces';
 import range from '../../utils/range';
 import getSongBeatLength from './getSongBeatLength';
 import isNotesSection from './isNotesSection';

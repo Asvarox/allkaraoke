@@ -1,6 +1,6 @@
 import localForage from 'localforage';
-import events from 'modules/GameEvents/GameEvents';
-import { getSongKey, SongStats, storeSongStats } from 'modules/Songs/stats/common';
+import events from '~/modules/GameEvents/GameEvents';
+import { getSongKey, SongStats, storeSongStats } from '~/modules/Songs/stats/common';
 
 events.songEnded.subscribe(async (song, setup, scores, progress) => {
   if (scores.every((score) => score.score === 0)) {

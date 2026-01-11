@@ -1,10 +1,10 @@
-import { SingSetup, Song } from 'interfaces';
-import PlayersManager from 'modules/Players/PlayersManager';
 import { useMemo } from 'react';
-import PostGameView from 'routes/Game/Singing/PostGame/PostGameView';
-import useHighScores from 'routes/Game/Singing/PostGame/hooks/useHighScores';
-import LayoutGame from 'routes/LayoutGame';
-import { UnassignOnSongFinishedSetting } from 'routes/Settings/SettingsState';
+import { SingSetup, Song } from '~/interfaces';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import PostGameView from '~/routes/Game/Singing/PostGame/PostGameView';
+import useHighScores from '~/routes/Game/Singing/PostGame/hooks/useHighScores';
+import LayoutGame from '~/routes/LayoutGame';
+import { UnassignOnSongFinishedSetting } from '~/routes/Settings/SettingsState';
 import GameState from '../../../../modules/GameEngine/GameState/GameState';
 
 interface Props {

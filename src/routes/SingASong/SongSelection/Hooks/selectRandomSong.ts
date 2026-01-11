@@ -1,4 +1,4 @@
-import { randomInt } from 'modules/utils/randomValue';
+import { randomInt } from '~/modules/utils/randomValue';
 
 const MAX_REMEMBERED_SONGS_COUNT = 30;
 export default function selectRandomSong(

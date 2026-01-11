@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { Button } from 'modules/Elements/Button';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { MutableRefObject, useEffect, useState } from 'react';
-import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { Button } from '~/modules/Elements/Button';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
 
 interface Props {
   groupedSongList: SongGroup[];

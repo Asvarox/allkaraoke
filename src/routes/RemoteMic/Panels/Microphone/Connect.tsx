@@ -1,21 +1,21 @@
 import { QrCode2, Wifi } from '@mui/icons-material';
-import { MAX_NAME_LENGTH } from 'consts';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { Input } from 'modules/Elements/Input';
-import Loader from 'modules/Elements/Loader';
-import { MenuButton } from 'modules/Elements/Menu';
-import Modal from 'modules/Elements/Modal';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
-import { GAME_CODE_LENGTH } from 'modules/RemoteMic/Network/Server/NetworkServer';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { ComponentRef, FormEventHandler, useCallback, useEffect, useRef, useState } from 'react';
-import ConfirmWifiModal from 'routes/RemoteMic/Components/ConfrimWifiModal';
-import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import createPersistedState from 'use-persisted-state';
+import { MAX_NAME_LENGTH } from '~/consts';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { Input } from '~/modules/Elements/Input';
+import Loader from '~/modules/Elements/Loader';
+import { MenuButton } from '~/modules/Elements/Menu';
+import Modal from '~/modules/Elements/Modal';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { GAME_CODE_LENGTH } from '~/modules/RemoteMic/Network/Server/NetworkServer';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import storage from '~/modules/utils/storage';
+import ConfirmWifiModal from '~/routes/RemoteMic/Components/ConfrimWifiModal';
+import { ConnectionStatuses } from '~/routes/RemoteMic/RemoteMic';
 
 interface Props {
   roomId: string | null;

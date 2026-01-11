@@ -1,5 +1,5 @@
-import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
 import { ValuesType } from 'utility-types';
+import { ExtractOptional, NotesSection, Section, Song } from '~/interfaces';
 import notFalsy from '../../utils/notFalsy';
 import { generatePlayerChangesForTrack } from './generatePlayerChanges';
 import getSongId from './getSongId';

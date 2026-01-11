@@ -1,8 +1,8 @@
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
 import { useEffect } from 'react';
-import inputSourceListManager from 'routes/SelectInput/InputSources';
-import { InputSourceNames } from 'routes/SelectInput/InputSources/interfaces';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import inputSourceListManager from '~/routes/SelectInput/InputSources';
+import { InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';
 
 export function useMicrophoneList(load = false, focus?: InputSourceNames) {
   const inputs = useEventListenerSelector(events.inputListChanged, () => {

@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
 import * as process from 'process';
+import { Song } from '~/interfaces';
 import songIndex from '../public/songs/index.json';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';

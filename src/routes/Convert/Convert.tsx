@@ -1,10 +1,10 @@
 import { Paper } from '@mui/material';
-import PageLoader from 'modules/Elements/PageLoader';
 import { ComponentProps, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
+import PageLoader from '~/modules/Elements/PageLoader';
 
 export const LazyConvert = lazy(() =>
-  import('routes/ManageSongs/SongManagement').then((modules) => {
+  import('~/routes/ManageSongs/SongManagement').then((modules) => {
     return { default: modules.Convert };
   }),
 );

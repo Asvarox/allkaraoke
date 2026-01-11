@@ -1,5 +1,5 @@
-import { typesMap } from 'modules/Songs/utils/convertTxtToSong';
 import { ValuesType } from 'utility-types';
+import { typesMap } from '~/modules/Songs/utils/convertTxtToSong';
 
 export type NoteType = ValuesType<typeof typesMap>;
 export interface Note {

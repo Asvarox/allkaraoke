@@ -1,6 +1,6 @@
-import { DummyInputSource } from 'routes/SelectInput/InputSources/Dummy';
-import { MicrophoneInputSource } from 'routes/SelectInput/InputSources/Microphone';
-import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
+import { DummyInputSource } from '~/routes/SelectInput/InputSources/Dummy';
+import { MicrophoneInputSource } from '~/routes/SelectInput/InputSources/Microphone';
+import { RemoteMicrophoneInputSource } from '~/routes/SelectInput/InputSources/Remote';
 
 export interface InputSource {
   label: string;

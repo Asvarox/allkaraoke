@@ -1,15 +1,15 @@
 /* eslint-disable storybook/context-in-play-function */
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
-import { GAME_MODE, SingSetup } from 'interfaces';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import PlayersManager from 'modules/Players/PlayersManager';
-import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
-import { processSong } from 'modules/Songs/utils/processSong/processSong';
 import 'modules/utils/exposeSingletons';
 import { ComponentProps, useEffect, useRef } from 'react';
-import Player, { PlayerRef } from 'routes/Game/Singing/Player';
-import { txtfile } from 'stories/songFixture';
 import { ValuesType } from 'utility-types';
+import { GAME_MODE, SingSetup } from '~/interfaces';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
+import { processSong } from '~/modules/Songs/utils/processSong/processSong';
+import Player, { PlayerRef } from '~/routes/Game/Singing/Player';
+import { txtfile } from '~/stories/songFixture';
 
 interface StoryArgs {
   tolerance: number;

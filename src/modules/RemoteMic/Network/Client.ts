@@ -1,4 +1,4 @@
-import { NetworkClient } from 'modules/RemoteMic/Network/Client/NetworkClient';
+import { NetworkClient } from '~/modules/RemoteMic/Network/Client/NetworkClient';
 
 const client: NetworkClient = new NetworkClient();
 

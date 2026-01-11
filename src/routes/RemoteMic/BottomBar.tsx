@@ -1,7 +1,7 @@
 import { List as ListIcon, Settings as SettingsIcon } from '@mui/icons-material';
-import { MicIcon } from 'modules/Elements/MicIcon';
 import { twc, TwcComponentProps } from 'react-twc';
-import { PhoneTabs } from 'routes/RemoteMic/RemoteMic';
+import { MicIcon } from '~/modules/Elements/MicIcon';
+import { PhoneTabs } from '~/routes/RemoteMic/RemoteMic';
 
 interface Props {
   active: PhoneTabs;

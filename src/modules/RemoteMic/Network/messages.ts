@@ -1,9 +1,9 @@
-import { SongPreview } from 'interfaces';
-import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
-import { Params } from 'modules/hooks/useKeyboard';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
-import { RemoteMicPermissions } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { SongPreview } from '~/interfaces';
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
+import { Params } from '~/modules/hooks/useKeyboard';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+import { RemoteMicPermissions } from '~/routes/Settings/SettingsState';
 
 export interface NetworkRegisterMessage {
   t: 'register';

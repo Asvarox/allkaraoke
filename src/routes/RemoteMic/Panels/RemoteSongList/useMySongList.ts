@@ -1,7 +1,7 @@
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import posthog from 'posthog-js';
 import { useCallback } from 'react';
 import createPersistedState from 'use-persisted-state';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 
 export const useSavedSongs = createPersistedState<string[]>('remote-mic-saved-songs');
 

@@ -1,10 +1,10 @@
-import { woosh } from 'modules/SoundManager';
-import { randomInt } from 'modules/utils/randomValue';
-import startViewTransition from 'modules/utils/startViewTransition';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
-import useSongList from 'routes/SingASong/SongSelection/Hooks/useSongList';
-import { useSongSelectionKeyboardNavigation } from 'routes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
+import { woosh } from '~/modules/SoundManager';
+import { randomInt } from '~/modules/utils/randomValue';
+import startViewTransition from '~/modules/utils/startViewTransition';
+import useSongList from '~/routes/SingASong/SongSelection/Hooks/useSongList';
+import { useSongSelectionKeyboardNavigation } from '~/routes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 
 export default function useSongSelection(additionalSong: string | null, songsPerRow: number) {
   const cleanAdditionalSong = additionalSong?.replace('-new-group', '') ?? null;

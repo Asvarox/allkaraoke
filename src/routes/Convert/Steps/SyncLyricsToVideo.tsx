@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import { Song } from 'interfaces';
-import EditSong from 'routes/Convert/Steps/SyncLyricsToVideo/EditSong';
+import { Song } from '~/interfaces';
+import EditSong from '~/routes/Convert/Steps/SyncLyricsToVideo/EditSong';
 
 interface Props {
   onChange: (data: Song) => void;

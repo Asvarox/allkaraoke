@@ -1,6 +1,6 @@
-import { Song } from 'interfaces';
-import SongsService from 'modules/Songs/SongsService';
-import storage from 'modules/utils/storage';
+import { Song } from '~/interfaces';
+import SongsService from '~/modules/Songs/SongsService';
+import storage from '~/modules/utils/storage';
 import { importSongsFromPostHogBase } from './importSongsFromPostHogBase';
 
 const importSongsFromPostHog = async () => {

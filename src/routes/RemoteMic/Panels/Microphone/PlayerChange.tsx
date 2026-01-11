@@ -1,12 +1,12 @@
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
-import { Button } from 'modules/Elements/AKUI/Button';
-import { MenuButton } from 'modules/Elements/AKUI/Menu/MenuButton';
-import Modal from 'modules/Elements/Modal';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { memo, useState } from 'react';
-import PlayerChangeModal from 'routes/RemoteMic/Components/PlayerChangeModal';
-import PlayerNumberCircle from 'routes/RemoteMic/Components/PlayerNumberCircle';
-import useServerEvent from 'routes/RemoteMic/hooks/useServerEvent';
+import { Button } from '~/modules/Elements/AKUI/Button';
+import { MenuButton } from '~/modules/Elements/AKUI/Menu/MenuButton';
+import Modal from '~/modules/Elements/Modal';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import PlayerChangeModal from '~/routes/RemoteMic/Components/PlayerChangeModal';
+import PlayerNumberCircle from '~/routes/RemoteMic/Components/PlayerNumberCircle';
+import useServerEvent from '~/routes/RemoteMic/hooks/useServerEvent';
 
 interface Props {
   playerNumber: 0 | 1 | 2 | 3 | null;

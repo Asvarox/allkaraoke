@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
-import { mobileMQ } from 'modules/Elements/cssMixins';
-import { Input } from 'modules/Elements/Input';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
 import { ComponentRef, Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { mobileMQ } from '~/modules/Elements/cssMixins';
+import { Input } from '~/modules/Elements/Input';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/useKeyboard';
 
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface Props {
   setFilters: Dispatch<SetStateAction<AppliedFilters>>;

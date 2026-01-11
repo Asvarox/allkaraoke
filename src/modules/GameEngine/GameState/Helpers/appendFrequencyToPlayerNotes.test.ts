@@ -1,6 +1,6 @@
-import { FrequencyRecord, Note, PlayerNote } from 'interfaces';
-import { appendFrequencyToPlayerNotes } from 'modules/GameEngine/GameState/Helpers/appendFrequencyToPlayerNotes';
-import { generateNote } from 'modules/utils/testUtils';
+import { FrequencyRecord, Note, PlayerNote } from '~/interfaces';
+import { appendFrequencyToPlayerNotes } from '~/modules/GameEngine/GameState/Helpers/appendFrequencyToPlayerNotes';
+import { generateNote } from '~/modules/utils/testUtils';
 
 describe('appendFrequencyToPlayerNotes', () => {
   it('should create a new note if the playerNote array is empty', () => {

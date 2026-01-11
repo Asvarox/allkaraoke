@@ -1,5 +1,5 @@
-import userMediaService from 'modules/UserMedia/userMediaService';
 import { useEffect, useState } from 'react';
+import userMediaService from '~/modules/UserMedia/userMediaService';
 
 export const useMicrophoneStatus = () => {
   const [status, setStatus] = useState(userMediaService.getStatus());

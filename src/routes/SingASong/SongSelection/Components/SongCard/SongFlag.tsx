@@ -1,7 +1,7 @@
-import { SongPreview } from 'interfaces';
-import { Flag } from 'modules/Elements/Flag';
-import langMap from 'modules/Elements/Flag/mapping';
 import { ComponentProps, useMemo } from 'react';
+import { SongPreview } from '~/interfaces';
+import { Flag } from '~/modules/Elements/Flag';
+import langMap from '~/modules/Elements/Flag/mapping';
 
 // skipping US and GB songs as there are a lot of them making the list look messy
 const SKIPPED_ORIGINS = ['US', 'GB'];

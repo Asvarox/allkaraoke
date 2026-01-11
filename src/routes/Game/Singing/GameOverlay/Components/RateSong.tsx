@@ -1,14 +1,14 @@
-import { Song } from 'interfaces';
-import { Checkbox } from 'modules/Elements/AKUI/Checkbox';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton } from 'modules/Elements/Menu';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
-import { InputLagSetting } from 'routes/Settings/SettingsState';
+import { Song } from '~/interfaces';
+import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton } from '~/modules/Elements/Menu';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { InputLagSetting } from '~/routes/Settings/SettingsState';
 
 interface Props {
   song: Song | null;

@@ -1,6 +1,6 @@
-import { GameScreens } from 'modules/Elements/GameScreens';
-import Toolbar from 'modules/Toolbar/Toolbar';
 import { PropsWithChildren } from 'react';
+import { GameScreens } from '~/modules/Elements/GameScreens';
+import Toolbar from '~/modules/Toolbar/Toolbar';
 
 interface Props extends PropsWithChildren {
   toolbar?: boolean;

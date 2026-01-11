@@ -1,6 +1,6 @@
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import isChromium from 'modules/utils/isChromium';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import isChromium from '~/modules/utils/isChromium';
 
 function RecommendedBrowsers() {
   return (

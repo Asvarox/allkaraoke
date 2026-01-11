@@ -1,18 +1,18 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
-import { GAME_MODE, SingSetup } from 'interfaces';
-import { VideoState } from 'modules/Elements/VideoPlayer';
-import CanvasDrawing from 'modules/GameEngine/Drawing';
-import ParticleManager from 'modules/GameEngine/Drawing/ParticleManager';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import PlayersManager from 'modules/Players/PlayersManager';
-import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
-import { processSong } from 'modules/Songs/utils/processSong/processSong';
 import 'modules/utils/exposeSingletons';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
-import GameOverlay from 'routes/Game/Singing/GameOverlay/GameOverlay';
-import { txtfile } from 'stories/songFixture';
 import { ValuesType } from 'utility-types';
+import { GAME_MODE, SingSetup } from '~/interfaces';
+import { VideoState } from '~/modules/Elements/VideoPlayer';
+import CanvasDrawing from '~/modules/GameEngine/Drawing';
+import ParticleManager from '~/modules/GameEngine/Drawing/ParticleManager';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
+import { processSong } from '~/modules/Songs/utils/processSong/processSong';
+import GameOverlay from '~/routes/Game/Singing/GameOverlay/GameOverlay';
+import { txtfile } from '~/stories/songFixture';
 
 interface StoryArgs {
   tolerance: number;

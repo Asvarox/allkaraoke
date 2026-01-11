@@ -1,12 +1,12 @@
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { Badge } from 'modules/Elements/Badge';
-import { MenuButton } from 'modules/Elements/Menu';
-import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { twc } from 'react-twc';
-import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { Badge } from '~/modules/Elements/Badge';
+import { MenuButton } from '~/modules/Elements/Menu';
+import { MicIconBlue, MicIconRed } from '~/modules/Elements/MicIcon';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onPreferenceSelected: (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => void;

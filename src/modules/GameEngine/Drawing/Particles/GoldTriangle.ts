@@ -1,5 +1,5 @@
-import debris from 'modules/GameEngine/Drawing/Elements/debris';
-import spreadValue from 'modules/GameEngine/Drawing/Particles/utils';
+import debris from '~/modules/GameEngine/Drawing/Elements/debris';
+import spreadValue from '~/modules/GameEngine/Drawing/Particles/utils';
 import Particle from '../interfaces';
 
 const baseTtlMs = 700;

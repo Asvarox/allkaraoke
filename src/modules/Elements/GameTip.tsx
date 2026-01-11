@@ -1,7 +1,7 @@
 import { QrCode2 } from '@mui/icons-material';
-import { Kbd } from 'modules/Elements/AKUI/Kbd';
-import { randomInt } from 'modules/utils/randomValue';
 import { HTMLProps, ReactNode, useMemo } from 'react';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
+import { randomInt } from '~/modules/utils/randomValue';
 
 const data = [
   <>

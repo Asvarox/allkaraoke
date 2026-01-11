@@ -1,11 +1,11 @@
-import { NotesSection, songBeat } from 'interfaces';
-import styles from 'modules/GameEngine/Drawing/styles';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
 import { motion } from 'motion/react';
 import { Fragment } from 'react';
-import { cn } from 'utils/cn';
+import { NotesSection, songBeat } from '~/interfaces';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from '~/modules/Songs/utils/notesSelectors';
+import { cn } from '~/utils/cn';
 import AnimatedLine from './AnimatedLine';
 import Headstart from './Headstart';
 import LyricNoteToken from './LyricNoteToken';

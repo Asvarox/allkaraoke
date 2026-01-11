@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unused-vars */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
+import { Song } from '~/interfaces';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 import clearString from '../src/modules/utils/clearString';

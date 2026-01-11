@@ -1,9 +1,9 @@
-import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'modules/hooks/players/consts';
+import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from '~/modules/hooks/players/consts';
 
-import events from 'modules/GameEvents/GameEvents';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { isNonNull } from 'modules/utils/isNonNull';
-import storage from 'modules/utils/storage';
+import events from '~/modules/GameEvents/GameEvents';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { isNonNull } from '~/modules/utils/isNonNull';
+import storage from '~/modules/utils/storage';
 
 events.songStarted.subscribe((_, singSetup) => {
   let currentNames = JSON.parse(storage.session.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];

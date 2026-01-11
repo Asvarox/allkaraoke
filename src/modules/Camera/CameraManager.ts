@@ -1,5 +1,5 @@
-import Listener from 'modules/utils/Listener';
-import storage from 'modules/utils/storage';
+import Listener from '~/modules/utils/Listener';
+import storage from '~/modules/utils/storage';
 
 const CAMERA_GRANT_KEY = 'CAMERA_GRANT_KEY';
 

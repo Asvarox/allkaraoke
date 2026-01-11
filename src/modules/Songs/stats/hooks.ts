@@ -1,8 +1,8 @@
-import { SongPreview } from 'interfaces';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import { SongStats, fetchSongStats, getSongKey, storeSongStats } from 'modules/Songs/stats/common';
 import { useEffect, useState } from 'react';
+import { SongPreview } from '~/interfaces';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import { SongStats, fetchSongStats, getSongKey, storeSongStats } from '~/modules/Songs/stats/common';
 
 export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
   const [stats, setStats] = useState<SongStats | null>(null);

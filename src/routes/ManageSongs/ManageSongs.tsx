@@ -1,11 +1,11 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import SmoothLink from 'modules/Elements/SmoothLink';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { useSetlist } from 'modules/Songs/hooks/useSetlist';
 import { Helmet } from 'react-helmet';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import SmoothLink from '~/modules/Elements/SmoothLink';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import { useSetlist } from '~/modules/Songs/hooks/useSetlist';
 
 function ManageSongs() {
   const navigate = useSmoothNavigate();

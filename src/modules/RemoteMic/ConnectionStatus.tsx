@@ -1,6 +1,6 @@
-import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
 import { useState } from 'react';
 import { twc } from 'react-twc';
+import useRemoteMicServerStatus from '~/modules/RemoteMic/hooks/useRemoteMicServerStatus';
 
 export default function ConnectionStatus() {
   const [display, setDisplay] = useState<boolean | null>(null);

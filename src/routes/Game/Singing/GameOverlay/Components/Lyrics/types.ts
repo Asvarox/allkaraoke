@@ -1,5 +1,5 @@
-import { GAME_MODE, songBeat } from 'interfaces';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
+import { GAME_MODE, songBeat } from '~/interfaces';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
 
 export interface LyricsProps {
   player: PlayerEntity;

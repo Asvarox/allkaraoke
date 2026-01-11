@@ -1,6 +1,6 @@
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import { inputStatus } from 'modules/GameEngine/Input/Interface';
 import { useEffect, useState } from 'react';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import { inputStatus } from '~/modules/GameEngine/Input/Interface';
 
 const usePlayerMicStatus = (
   playerNumber: 0 | 1 | 2 | 3,

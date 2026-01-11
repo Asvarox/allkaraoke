@@ -1,4 +1,4 @@
-import range from 'modules/utils/range';
+import range from '~/modules/utils/range';
 
 describe('range', () => {
   it('should generate 10 element array', () => {

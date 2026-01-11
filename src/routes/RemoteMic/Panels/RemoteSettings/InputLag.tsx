@@ -1,7 +1,7 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
-import NumericInput from 'routes/RemoteMic/Components/NumericInput';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
 
 function RemoteInputLag() {
   const [currentValue, setCurrentValue] = useState(0);

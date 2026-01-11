@@ -1,5 +1,5 @@
-import { backgroundMusic } from 'modules/SoundManager';
 import { useEffect } from 'react';
+import { backgroundMusic } from '~/modules/SoundManager';
 
 export default function useBackgroundMusic(play: boolean) {
   useEffect(() => {

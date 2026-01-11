@@ -1,10 +1,10 @@
-import { EurovisionBackground } from 'modules/Elements/Background/Eurovision';
-import { BackgroundContext as BackgroundContext1 } from 'modules/Elements/BackgroundContext';
-import Snow from 'modules/Elements/Snow';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import React, { CSSProperties, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
-import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { EurovisionBackground } from '~/modules/Elements/Background/Eurovision';
+import { BackgroundContext as BackgroundContext1 } from '~/modules/Elements/BackgroundContext';
+import Snow from '~/modules/Elements/Snow';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
+import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import eurovisionBg from './eurovisionbg.svg';
 
 export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'halloween';

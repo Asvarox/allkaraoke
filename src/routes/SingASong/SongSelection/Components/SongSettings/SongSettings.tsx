@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
-import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
-import { mobileMQ } from 'modules/Elements/cssMixins';
-import events from 'modules/GameEvents/GameEvents';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
-import GameSettings from 'routes/SingASong/SongSelection/Components/SongSettings/GameSettings';
-import MicCheck from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck';
-import PlayerSettings from 'routes/SingASong/SongSelection/Components/SongSettings/PlayerSettings';
+import { PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
+import { mobileMQ } from '~/modules/Elements/cssMixins';
+import events from '~/modules/GameEvents/GameEvents';
+import GameSettings from '~/routes/SingASong/SongSelection/Components/SongSettings/GameSettings';
+import MicCheck from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck';
+import PlayerSettings from '~/routes/SingASong/SongSelection/Components/SongSettings/PlayerSettings';
 
 interface Props {
   songPreview: SongPreview;

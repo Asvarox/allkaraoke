@@ -1,11 +1,11 @@
 import clsx from 'clsx';
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
-import PlayersManager, { PlayerEntity } from 'modules/Players/PlayersManager';
 import { ComponentProps, memo } from 'react';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
+import PlayersManager, { PlayerEntity } from '~/modules/Players/PlayersManager';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import PlayerStatus from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
 export default function LyricsVolumeIndicators({
   player,

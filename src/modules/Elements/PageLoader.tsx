@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import LogoIcon from 'routes/LandingPage/LogoIcon';
+import LogoIcon from '~/routes/LandingPage/LogoIcon';
 
 export default function PageLoader() {
   const [visible, setVisible] = useState(false);

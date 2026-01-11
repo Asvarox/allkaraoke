@@ -1,8 +1,8 @@
-import { HighScoreEntity, SingSetup, Song } from 'interfaces';
-import { useSongStats } from 'modules/Songs/stats/hooks';
-import isE2E from 'modules/utils/isE2E';
-import seededRandom from 'modules/utils/seededRandom';
 import { useMemo } from 'react';
+import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
+import { useSongStats } from '~/modules/Songs/stats/hooks';
+import isE2E from '~/modules/utils/isE2E';
+import seededRandom from '~/modules/utils/seededRandom';
 
 const fakePlayerNames = [
   'Lysa Arryn',

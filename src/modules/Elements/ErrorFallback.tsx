@@ -1,10 +1,10 @@
 import { Warning } from '@mui/icons-material';
 import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import storage from 'modules/utils/storage';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import storage from '~/modules/utils/storage';
 
 export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
   const errorObj = error as object;

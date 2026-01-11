@@ -1,7 +1,7 @@
-import { milliseconds } from 'interfaces';
-import { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import { RefObject, useEffect, useState } from 'react';
-import { FPSCountSetting, InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { milliseconds } from '~/interfaces';
+import { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
+import { FPSCountSetting, InputLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 export const useVideoPlayer = (
   playerRef: RefObject<VideoPlayerRef | null>,

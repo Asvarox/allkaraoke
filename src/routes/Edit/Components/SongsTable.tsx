@@ -1,10 +1,10 @@
 import { Checkbox } from '@mui/material';
 import dayjs from 'dayjs';
-import { SongPreview } from 'interfaces';
 import { MaterialReactTable, MaterialReactTableProps, MRT_ColumnDef } from 'material-react-table';
-import { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import { useMemo } from 'react';
 import { Link } from 'wouter';
+import { SongPreview } from '~/interfaces';
+import { buildUrl } from '~/modules/hooks/useSmoothNavigate';
 
 interface Props {
   globalFilter?: string | null;

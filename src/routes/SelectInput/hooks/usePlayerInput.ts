@@ -1,11 +1,11 @@
-import { nextIndex, nextValue } from 'modules/Elements/Utils/indexes';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import tuple from 'modules/utils/tuple';
 import { useEffect } from 'react';
-import InputSources from 'routes/SelectInput/InputSources';
-import { InputSourceList, InputSourceNames } from 'routes/SelectInput/InputSources/interfaces';
+import { nextIndex, nextValue } from '~/modules/Elements/Utils/indexes';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import tuple from '~/modules/utils/tuple';
+import InputSources from '~/routes/SelectInput/InputSources';
+import { InputSourceList, InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';
 
 export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<string, InputSourceList>) {
   const sourceList = Object.keys(sources) as Array<InputSourceNames>;

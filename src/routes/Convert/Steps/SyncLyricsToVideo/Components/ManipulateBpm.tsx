@@ -1,10 +1,10 @@
 import { Button, TextField } from '@mui/material';
-import { Song } from 'interfaces';
-import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
-import { getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
 import { useState } from 'react';
-import { Pre } from 'routes/Convert/Elements';
-import calculateProperBPM from 'routes/Convert/calculateProperBpm';
+import { Song } from '~/interfaces';
+import beatToMs from '~/modules/GameEngine/GameState/Helpers/beatToMs';
+import { getLastNoteEndFromSections } from '~/modules/Songs/utils/notesSelectors';
+import { Pre } from '~/routes/Convert/Elements';
+import calculateProperBPM from '~/routes/Convert/calculateProperBpm';
 import ShortcutIndicator from './ShortcutIndicator';
 
 interface Props {

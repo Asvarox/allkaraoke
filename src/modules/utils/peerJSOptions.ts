@@ -1,5 +1,5 @@
-import isE2E from 'modules/utils/isE2E';
 import { PeerJSOption } from 'peerjs';
+import isE2E from '~/modules/utils/isE2E';
 
 const e2eOverrides: PeerJSOption = isE2E()
   ? {

@@ -1,8 +1,8 @@
-import RemoteMicServer from 'modules/RemoteMic/Network/Server';
-import useQueryParam from 'modules/hooks/useQueryParam';
 import * as qrcode from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
+import useQueryParam from '~/modules/hooks/useQueryParam';
 
 const { QRCodeSVG } = qrcode;
 

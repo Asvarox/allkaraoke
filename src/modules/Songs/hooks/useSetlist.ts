@@ -1,5 +1,5 @@
-import { decodeSongList, SetlistEntity } from 'modules/Songs/utils/setlists';
-import storage from 'modules/utils/storage';
+import { decodeSongList, SetlistEntity } from '~/modules/Songs/utils/setlists';
+import storage from '~/modules/utils/storage';
 
 const currentSetlist = storage.session.getItem<SetlistEntity | null>('currentSetlist');
 

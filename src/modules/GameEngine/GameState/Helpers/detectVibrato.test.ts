@@ -1,5 +1,5 @@
-import detectVibrato from 'modules/GameEngine/GameState/Helpers/detectVibrato';
-import { createDataSequence, generateFrequencyRecords } from 'modules/utils/testUtils';
+import detectVibrato from '~/modules/GameEngine/GameState/Helpers/detectVibrato';
+import { createDataSequence, generateFrequencyRecords } from '~/modules/utils/testUtils';
 
 const data = [
   {

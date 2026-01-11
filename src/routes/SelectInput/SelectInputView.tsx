@@ -1,21 +1,21 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { CompletedAnim } from 'modules/Elements/Menu/Heading';
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import startViewTransition from 'modules/utils/startViewTransition';
-import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
-import SelectPreference from 'routes/SelectInput/SelectPreference';
-import Advanced from 'routes/SelectInput/Variants/Advanced';
-import BuiltIn from 'routes/SelectInput/Variants/BuiltIn';
-import DifferentMics from 'routes/SelectInput/Variants/DifferentMics';
-import MultipleMics from 'routes/SelectInput/Variants/MultipleMics';
-import RemoteMics from 'routes/SelectInput/Variants/RemoteMics';
-import SingStarMics from 'routes/SelectInput/Variants/SingStarMics';
-import Skip from 'routes/SelectInput/Variants/Skip';
-import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { CompletedAnim } from '~/modules/Elements/Menu/Heading';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import startViewTransition from '~/modules/utils/startViewTransition';
+import storage from '~/modules/utils/storage';
+import SelectPreference from '~/routes/SelectInput/SelectPreference';
+import Advanced from '~/routes/SelectInput/Variants/Advanced';
+import BuiltIn from '~/routes/SelectInput/Variants/BuiltIn';
+import DifferentMics from '~/routes/SelectInput/Variants/DifferentMics';
+import MultipleMics from '~/routes/SelectInput/Variants/MultipleMics';
+import RemoteMics from '~/routes/SelectInput/Variants/RemoteMics';
+import SingStarMics from '~/routes/SelectInput/Variants/SingStarMics';
+import Skip from '~/routes/SelectInput/Variants/Skip';
+import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onFinish?: (pref: ValuesType<typeof MicSetupPreference>) => void;

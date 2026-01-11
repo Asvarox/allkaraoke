@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import dayjs from 'dayjs';
-import { HighScoreEntity, SingSetup, Song } from 'interfaces';
-import { Button } from 'modules/Elements/Button';
-import { useEditScore } from 'modules/Songs/stats/hooks';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import ScoreText from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
+import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
+import { Button } from '~/modules/Elements/Button';
+import { useEditScore } from '~/modules/Songs/stats/hooks';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import ScoreText from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';
 import HighScoreRename from './HighScoreRename';
 
 interface Props {

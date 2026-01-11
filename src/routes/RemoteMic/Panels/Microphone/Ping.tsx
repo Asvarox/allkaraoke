@@ -1,6 +1,6 @@
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { getPingTime } from 'modules/RemoteMic/Network/utils';
 import { useEffect, useState } from 'react';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { getPingTime } from '~/modules/RemoteMic/Network/utils';
 
 function Ping() {
   const [latency, setLatency] = useState(RemoteMicClient.latency);

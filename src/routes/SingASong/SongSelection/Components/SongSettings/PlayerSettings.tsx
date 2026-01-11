@@ -1,19 +1,19 @@
-import { PlayerSetup, SongPreview } from 'interfaces';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { Button } from 'modules/Elements/Button';
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import gameEvents from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'modules/hooks/players/consts';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import storage from 'modules/utils/storage';
 import { AnimatePresence } from 'motion/react';
 import { useEffect, useMemo, useState } from 'react';
-import SelectInputModal from 'routes/SelectInput/SelectInputModal';
-import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import SinglePlayer from 'routes/SingASong/SongSelection/Components/SongSettings/PlayerSettings/SinglePlayer';
+import { PlayerSetup, SongPreview } from '~/interfaces';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { Button } from '~/modules/Elements/Button';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import gameEvents from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import { PLAYER_NAMES_SESSION_STORAGE_KEY } from '~/modules/hooks/players/consts';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import storage from '~/modules/utils/storage';
+import SelectInputModal from '~/routes/SelectInput/SelectInputModal';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/PlayerSettings/SinglePlayer';
 
 interface Props {
   songPreview: SongPreview;

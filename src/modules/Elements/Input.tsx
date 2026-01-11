@@ -1,4 +1,3 @@
-import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
 import { AnimatePresence, motion } from 'motion/react';
 import {
   ComponentProps,
@@ -11,7 +10,8 @@ import {
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc } from 'react-twc';
-import { cn } from 'utils/cn';
+import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/useKeyboard';
+import { cn } from '~/utils/cn';
 import { Menu } from './AKUI/Menu';
 
 interface InputRef {

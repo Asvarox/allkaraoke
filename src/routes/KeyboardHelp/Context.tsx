@@ -1,10 +1,10 @@
 import { omit } from 'es-toolkit';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import ConnectionStatus from 'modules/RemoteMic/ConnectionStatus';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
-import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import ConnectionStatus from '~/modules/RemoteMic/ConnectionStatus';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import { KeyboardHelpContext } from '~/routes/KeyboardHelp/KeyboardHelpContext';
 import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR' | 'alphanumeric';

@@ -1,6 +1,6 @@
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { ComponentProps, HTMLAttributes, MouseEventHandler } from 'react';
 import { Link } from 'wouter';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 
 interface Props extends Omit<ComponentProps<typeof Link>, 'href' | 'to'> {
   to: string;

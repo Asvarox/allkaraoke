@@ -1,10 +1,10 @@
 import { Fullscreen, FullscreenExit } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
-import { Tooltip } from 'modules/Elements/Tooltip';
 import 'modules/RemoteMic/eventListeners';
 import 'modules/Stats';
 import { useEffect, useState } from 'react';
-import { AutoEnableFullscreenSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Tooltip } from '~/modules/Elements/Tooltip';
+import { AutoEnableFullscreenSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function FullscreenButton() {
   const [, setAutoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);

@@ -1,9 +1,9 @@
-import styles from 'modules/GameEngine/Drawing/styles';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
 import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
-import { twx } from 'utils/twx';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { usePlayerMicData } from '~/modules/hooks/players/usePlayerMic';
+import { twx } from '~/utils/twx';
 
 const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   return useMemo(() => {

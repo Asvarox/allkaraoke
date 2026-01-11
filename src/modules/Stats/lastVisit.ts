@@ -1,4 +1,4 @@
-import storage from 'modules/utils/storage';
+import storage from '~/modules/utils/storage';
 
 const CURRENT_VISIT_KEY = 'CURRENT_VISIT_KEY';
 const LAST_VISIT_KEY = 'LAST_VISIT_KEY';

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
 
 export const KeyboardHelpContext = createContext({
   setKeyboard: (_name: string, _helpEntry: HelpEntry): void => {},

@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { usePlayerMicData } from '~/modules/hooks/players/usePlayerMic';
 
 export default memo(function NoiseDetection() {
   const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());

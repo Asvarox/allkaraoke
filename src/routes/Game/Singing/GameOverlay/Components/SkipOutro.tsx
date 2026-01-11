@@ -1,15 +1,15 @@
-import { Kbd } from 'modules/Elements/AKUI/Kbd';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
-import { getLastNoteEnd } from 'modules/Songs/utils/notesSelectors';
-import useDebounce from 'modules/hooks/useDebounce';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import posthog from 'posthog-js';
 import React, { useMemo, useState } from 'react';
 import { useInterval } from 'react-use';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import beatToMs from '~/modules/GameEngine/GameState/Helpers/beatToMs';
+import { getLastNoteEnd } from '~/modules/Songs/utils/notesSelectors';
+import useDebounce from '~/modules/hooks/useDebounce';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSongEnd?: () => void;

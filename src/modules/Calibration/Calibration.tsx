@@ -1,7 +1,7 @@
-import { CalibrationTool } from 'modules/Calibration/CalibrationTool';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { useRef } from 'react';
+import { CalibrationTool } from '~/modules/Calibration/CalibrationTool';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import InputLag from './InputLag';
 
 type Props = {

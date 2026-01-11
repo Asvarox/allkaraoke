@@ -1,8 +1,8 @@
-import { HighScoreEntity } from 'interfaces';
-import { Autocomplete } from 'modules/Elements/Autocomplete';
-import useRecentPlayerNames from 'modules/hooks/players/useRecentPlayerNames';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { ComponentRef, useRef, useState } from 'react';
+import { HighScoreEntity } from '~/interfaces';
+import { Autocomplete } from '~/modules/Elements/Autocomplete';
+import useRecentPlayerNames from '~/modules/hooks/players/useRecentPlayerNames';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 
 interface Props {
   index: number;

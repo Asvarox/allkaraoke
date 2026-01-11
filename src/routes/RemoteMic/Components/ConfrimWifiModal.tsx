@@ -1,11 +1,11 @@
 import { Laptop, PhoneAndroid, Wifi } from '@mui/icons-material';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import Modal from 'modules/Elements/Modal';
-import styles from 'modules/GameEngine/Drawing/styles';
-import storage from 'modules/utils/storage';
 import React, { useEffect } from 'react';
 import { twc } from 'react-twc';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
+import Modal from '~/modules/Elements/Modal';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import storage from '~/modules/utils/storage';
 
 interface Props {
   onClose?: () => void;

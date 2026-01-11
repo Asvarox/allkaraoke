@@ -1,9 +1,9 @@
 import { readdirSync, readFileSync } from 'fs';
-import { Note, Section, Song } from 'interfaces';
-import convertSongToTxt from 'modules/Songs/utils/convertSongToTxt';
-import convertTxtToSong, { txtTypesMap } from 'modules/Songs/utils/convertTxtToSong';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { generateNote } from 'modules/utils/testUtils';
+import { Note, Section, Song } from '~/interfaces';
+import convertSongToTxt from '~/modules/Songs/utils/convertSongToTxt';
+import convertTxtToSong, { txtTypesMap } from '~/modules/Songs/utils/convertTxtToSong';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { generateNote } from '~/modules/utils/testUtils';
 
 const notesToText = (notes: Note[]) =>
   notes.map((note) => `${txtTypesMap[note.type]} ${note.start} ${note.length} ${note.pitch} ${note.lyrics}`).join('\n');

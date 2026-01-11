@@ -1,27 +1,27 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
-import { GAME_MODE, Note, seconds, SingSetup, Song } from 'interfaces';
-import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
+import { useWindowSize } from 'react-use';
+import { GAME_MODE, Note, seconds, SingSetup, Song } from '~/interfaces';
+import getCurrentBeat from '~/modules/GameEngine/GameState/Helpers/getCurrentBeat';
+import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
 import {
   getFirstNoteFromSection,
   getFirstNoteStartFromSections,
   getLastNotesSection,
-} from 'modules/Songs/utils/notesSelectors';
-import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
-import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
-import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
-import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
-import { useWindowSize } from 'react-use';
-import AdjustPlayback from 'routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
-import EditSection, { ChangeRecord } from 'routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
-import ManipulateBpm from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
-import ShiftGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
-import ShiftVideoGap from 'routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
-import Player, { PlayerRef } from 'routes/Game/Singing/Player';
+} from '~/modules/Songs/utils/notesSelectors';
+import addHeadstart from '~/modules/Songs/utils/processSong/addHeadstart';
+import normaliseGap from '~/modules/Songs/utils/processSong/normaliseGap';
+import normaliseLyricSpaces from '~/modules/Songs/utils/processSong/normaliseLyricSpaces';
+import normaliseSectionPaddings from '~/modules/Songs/utils/processSong/normaliseSectionPaddings';
+import AdjustPlayback from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
+import EditSection, { ChangeRecord } from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
+import ManipulateBpm from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
+import ShiftGap from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
+import ShiftVideoGap from '~/routes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
+import Player, { PlayerRef } from '~/routes/Game/Singing/Player';
 import ShortcutIndicator from './Components/ShortcutIndicator';
 
 interface Props {

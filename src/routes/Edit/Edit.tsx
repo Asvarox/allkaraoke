@@ -3,16 +3,16 @@ import { Delete } from '@mui/icons-material';
 import { IconButton, Paper } from '@mui/material';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import SongDao from 'modules/Songs/SongsService';
-import useSong from 'modules/Songs/hooks/useSong';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useQueryParam from 'modules/hooks/useQueryParam';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
-import { LazyConvert } from 'routes/Convert/Convert';
-import { useShareSongs } from 'routes/Edit/ShareSongsModal';
 import { Link } from 'wouter';
+import SongDao from '~/modules/Songs/SongsService';
+import useSong from '~/modules/Songs/hooks/useSong';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useQueryParam from '~/modules/hooks/useQueryParam';
+import { LazyConvert } from '~/routes/Convert/Convert';
+import { useShareSongs } from '~/routes/Edit/ShareSongsModal';
 
 dayjs.extend(relativeTime);
 

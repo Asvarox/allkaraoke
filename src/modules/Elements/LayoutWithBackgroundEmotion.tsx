@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import React, { useState } from 'react';
-import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
+import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import { BackgroundContext } from './BackgroundContext';
 import eurovisionBg from './eurovisionbg.svg';
 

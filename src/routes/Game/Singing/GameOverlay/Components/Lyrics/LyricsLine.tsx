@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ComponentProps } from 'react';
-import { cn } from 'utils/cn';
+import { cn } from '~/utils/cn';
 
 type LyricsLineProps = ComponentProps<typeof motion.div> & { nextLine?: boolean; effectsEnabled: boolean };
 

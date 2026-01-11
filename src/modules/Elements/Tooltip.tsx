@@ -1,8 +1,8 @@
-import storage from 'modules/utils/storage';
 import { cloneElement, ComponentProps, ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
 import { twc } from 'react-twc';
+import storage from '~/modules/utils/storage';
 
 export const StyledTooltip = twc(
   ReactTooltip,

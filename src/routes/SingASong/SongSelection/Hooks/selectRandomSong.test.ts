@@ -1,8 +1,8 @@
-import { randomInt } from 'modules/utils/randomValue';
-import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { afterEach, Mock, vitest } from 'vitest';
+import { randomInt } from '~/modules/utils/randomValue';
+import selectRandomSong from '~/routes/SingASong/SongSelection/Hooks/selectRandomSong';
 
-vitest.mock('modules/utils/randomValue');
+vitest.mock('~/modules/utils/randomValue');
 
 describe('selectRandomSong', function () {
   it('should not select songs from previously selected list and add new value to the list', () => {

@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { SongPreview } from 'interfaces';
+import { SongPreview } from '~/interfaces';
 
 const after = dayjs().subtract(31, 'days');
 export default function isSongRecentlyUpdated(song: SongPreview): boolean {

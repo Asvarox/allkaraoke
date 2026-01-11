@@ -1,8 +1,8 @@
 import { Warning } from '@mui/icons-material';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useMicrophoneStatus } from 'modules/UserMedia/hooks';
-import isOpera from 'modules/utils/isOpera';
 import { PropsWithChildren, ReactNode } from 'react';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { useMicrophoneStatus } from '~/modules/UserMedia/hooks';
+import isOpera from '~/modules/utils/isOpera';
 import allowMic from './allow-mic.png';
 import enableMicOpera from './enable-mic-opera.png';
 import enableMic from './enable-mic.png';

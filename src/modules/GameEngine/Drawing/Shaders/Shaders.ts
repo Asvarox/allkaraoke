@@ -1,5 +1,5 @@
 import { Curtains, Plane, PlaneParams } from 'curtainsjs';
-import GameState from 'modules/GameEngine/GameState/GameState';
+import GameState from '~/modules/GameEngine/GameState/GameState';
 
 export class Shaders {
   private curtains: Curtains;

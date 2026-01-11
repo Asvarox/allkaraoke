@@ -1,13 +1,13 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import SmoothLink from 'modules/Elements/SmoothLink';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
+import { Icon } from '@iconify-icon/react';
 import { Helmet } from 'react-helmet';
 import { twc } from 'react-twc';
-import { Icon } from '@iconify-icon/react';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import SmoothLink from '~/modules/Elements/SmoothLink';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 
 function Welcome() {
   useBackground(true);
@@ -49,7 +49,16 @@ function Welcome() {
           </SmoothLink>
         </>
         <Menu.HelpText className="flex justify-between">
-          Get in touch: <span><a href=""><Icon icon="cib:facebook" width="0.8em" height="0.8em" /> Facebook</a> • <a href="https://github.com/"><Icon icon="cib:github" width="0.8em" height="0.8em" /> Github</a></span>
+          Get in touch:{' '}
+          <span>
+            <a href="">
+              <Icon icon="cib:facebook" width="0.8em" height="0.8em" /> Facebook
+            </a>{' '}
+            •{' '}
+            <a href="https://github.com/">
+              <Icon icon="cib:github" width="0.8em" height="0.8em" /> Github
+            </a>
+          </span>
         </Menu.HelpText>
       </MenuWithLogo>
       <BackgroundMusicCredit>

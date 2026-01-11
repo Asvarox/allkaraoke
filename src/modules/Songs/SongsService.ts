@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
-import { Song, SongPreview } from 'interfaces';
-import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
-import { generatePlayerChangesForTrack } from 'modules/Songs/utils/generatePlayerChanges';
-import getSongId from 'modules/Songs/utils/getSongId';
-import mergeTracks from 'modules/Songs/utils/mergeTracks';
-import { lastVisit } from 'modules/Stats/lastVisit';
-import storage from 'modules/utils/storage';
+import { Song, SongPreview } from '~/interfaces';
+import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
+import { generatePlayerChangesForTrack } from '~/modules/Songs/utils/generatePlayerChanges';
+import getSongId from '~/modules/Songs/utils/getSongId';
+import mergeTracks from '~/modules/Songs/utils/mergeTracks';
+import { lastVisit } from '~/modules/Stats/lastVisit';
+import storage from '~/modules/utils/storage';
 import { getSongPreview } from './utils';
 
 let store: Promise<LocalForage | typeof storage.memory> | null = null;

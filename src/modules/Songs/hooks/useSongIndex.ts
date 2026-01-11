@@ -1,6 +1,6 @@
-import { useSetlist } from 'modules/Songs/hooks/useSetlist';
-import SongDao from 'modules/Songs/SongsService';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useSetlist } from '~/modules/Songs/hooks/useSetlist';
+import SongDao from '~/modules/Songs/SongsService';
 
 export default function useSongIndex(includeDeleted = false) {
   const currentIndex = SongDao.getCurrentIndex();

@@ -1,5 +1,5 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 
 type Props = {
   onContinue: () => void;

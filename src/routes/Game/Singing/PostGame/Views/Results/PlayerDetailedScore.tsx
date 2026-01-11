@@ -1,7 +1,7 @@
-import styles from 'modules/GameEngine/Drawing/styles';
-import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
-import ScoreBar from 'routes/Game/Singing/PostGame/Views/Results/ScoreBar';
 import Typewriter from 'typewriter-effect';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';
+import ScoreBar from '~/routes/Game/Singing/PostGame/Views/Results/ScoreBar';
 
 interface Props {
   playerNumber: 0 | 1 | 2 | 3;

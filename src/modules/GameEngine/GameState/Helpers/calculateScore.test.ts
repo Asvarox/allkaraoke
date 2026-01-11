@@ -1,6 +1,6 @@
-import { PlayerNote } from 'interfaces';
-import calculateScore, { MAX_POINTS } from 'modules/GameEngine/GameState/Helpers/calculateScore';
-import { generateNote, generatePlayerNote, generateSong } from 'modules/utils/testUtils';
+import { PlayerNote } from '~/interfaces';
+import calculateScore, { MAX_POINTS } from '~/modules/GameEngine/GameState/Helpers/calculateScore';
+import { generateNote, generatePlayerNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('calculateScore', () => {
   const note1 = generateNote(0, 5, { type: 'normal' });

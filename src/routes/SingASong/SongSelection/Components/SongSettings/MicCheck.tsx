@@ -1,10 +1,10 @@
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener, useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
 import { ComponentProps, useEffect } from 'react';
-import NoiseDetection from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/NoiseDetection';
-import SinglePlayer from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener, useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import NoiseDetection from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/NoiseDetection';
+import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
 
 export default function MicCheck(props: ComponentProps<'div'>) {
   // Force update when the name changes

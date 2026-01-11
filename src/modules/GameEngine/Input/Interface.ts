@@ -1,4 +1,4 @@
-import { SelectedPlayerInput } from 'modules/Players/PlayersManager';
+import { SelectedPlayerInput } from '~/modules/Players/PlayersManager';
 
 export default interface InputInterface {
   startMonitoring: (deviceId?: string, allInputs?: SelectedPlayerInput[]) => Promise<void>;

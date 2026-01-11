@@ -1,6 +1,6 @@
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
 import { useHotkeys } from 'react-hotkeys-hook';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
 
 type Callback = (e?: KeyboardEvent) => void;
 

@@ -1,4 +1,4 @@
-import InputInterface from 'modules/GameEngine/Input/Interface';
+import InputInterface from '~/modules/GameEngine/Input/Interface';
 
 class DummyInput implements InputInterface {
   private frequencies: [number, number] = [410, 210];

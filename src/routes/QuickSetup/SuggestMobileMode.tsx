@@ -1,7 +1,7 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import LayoutGame from 'routes/LayoutGame';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
+import LayoutGame from '~/routes/LayoutGame';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function SuggestMobilePhone() {
   const [, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

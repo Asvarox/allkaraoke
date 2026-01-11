@@ -1,17 +1,17 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { MenuButton } from 'modules/Elements/Menu';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { useEffect } from 'react';
-import ConnectRemoteMic from 'routes/ConnectRemoteMic/ConnectRemoteMic';
-import InputSources from 'routes/SelectInput/InputSources';
-import MicCheck from 'routes/SelectInput/MicCheck';
-import usePlayerNumberPreset from 'routes/SelectInput/hooks/usePlayerNumberPreset';
-import { useRemoteMicAutoselect } from 'routes/SelectInput/hooks/useRemoteMicAutoselect';
-import { MicSetupPreference } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { MenuButton } from '~/modules/Elements/Menu';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import ConnectRemoteMic from '~/routes/ConnectRemoteMic/ConnectRemoteMic';
+import InputSources from '~/routes/SelectInput/InputSources';
+import MicCheck from '~/routes/SelectInput/MicCheck';
+import usePlayerNumberPreset from '~/routes/SelectInput/hooks/usePlayerNumberPreset';
+import { useRemoteMicAutoselect } from '~/routes/SelectInput/hooks/useRemoteMicAutoselect';
+import { MicSetupPreference } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { Song, SongPreview } from 'interfaces';
+import { Song, SongPreview } from '~/interfaces';
 
 interface Props {
   width: number;

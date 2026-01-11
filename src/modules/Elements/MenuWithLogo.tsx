@@ -1,10 +1,10 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import Logo from 'modules/Elements/Logo';
-import RecommendedBrowsers from 'modules/Elements/RecommendedBrowsers';
 import { PropsWithChildren } from 'react';
-import LayoutGame from 'routes/LayoutGame';
-import GithubRibbon from 'routes/Welcome/GithubRibbon';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import Logo from '~/modules/Elements/Logo';
+import RecommendedBrowsers from '~/modules/Elements/RecommendedBrowsers';
+import LayoutGame from '~/routes/LayoutGame';
+import GithubRibbon from '~/routes/Welcome/GithubRibbon';
 
 type Props = PropsWithChildren<{
   supportedBrowsers?: boolean;

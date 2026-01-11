@@ -1,5 +1,5 @@
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import { SenderInterface } from 'modules/RemoteMic/Network/Server/Transport/interface';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import { SenderInterface } from '~/modules/RemoteMic/Network/Server/Transport/interface';
 
 function sendMessage<T extends NetworkMessages>(
   connection: SenderInterface | null | undefined,

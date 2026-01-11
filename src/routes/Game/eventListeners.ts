@@ -1,13 +1,13 @@
 import { captureException } from '@sentry/react';
-import { SingSetup, Song, SongPreview } from 'interfaces';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import getPlayerNoteDistance from 'modules/GameEngine/Helpers/getPlayerNoteDistance';
-import events from 'modules/GameEvents/GameEvents';
-import PlayersManager from 'modules/Players/PlayersManager';
 import { pack } from 'msgpackr';
 import posthog from 'posthog-js';
-import { InputSourceNames } from 'routes/SelectInput/InputSources/interfaces';
-import { MobilePhoneModeSetting } from 'routes/Settings/SettingsState';
+import { SingSetup, Song, SongPreview } from '~/interfaces';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import getPlayerNoteDistance from '~/modules/GameEngine/Helpers/getPlayerNoteDistance';
+import events from '~/modules/GameEvents/GameEvents';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';
+import { MobilePhoneModeSetting } from '~/routes/Settings/SettingsState';
 
 const trackSongData =
   (event: keyof typeof events) =>

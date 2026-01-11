@@ -1,11 +1,11 @@
 import clsx from 'clsx';
-import { HighScoreEntity, SingSetup } from 'interfaces';
-import { Badge } from 'modules/Elements/Badge';
-import styles from 'modules/GameEngine/Drawing/styles';
 import CountUp from 'react-countup';
-import { formatter } from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
-import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
-import PlayerDetailedScore from 'routes/Game/Singing/PostGame/Views/Results/PlayerDetailedScore';
+import { HighScoreEntity, SingSetup } from '~/interfaces';
+import { Badge } from '~/modules/Elements/Badge';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { formatter } from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';
+import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';
+import PlayerDetailedScore from '~/routes/Game/Singing/PostGame/Views/Results/PlayerDetailedScore';
 
 interface Props {
   player: PlayerScore;

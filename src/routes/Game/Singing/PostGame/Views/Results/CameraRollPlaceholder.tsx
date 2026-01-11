@@ -1,8 +1,8 @@
-import CameraManager from 'modules/Camera/CameraManager';
-import { Button } from 'modules/Elements/AKUI/Button';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { RegisterFunc } from 'modules/hooks/useKeyboardNav';
 import { useEffect, useRef } from 'react';
+import CameraManager from '~/modules/Camera/CameraManager';
+import { Button } from '~/modules/Elements/AKUI/Button';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
 import timelapse from './timelapse.webm';
 
 interface Props {

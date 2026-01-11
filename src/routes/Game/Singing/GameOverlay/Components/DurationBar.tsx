@@ -1,11 +1,11 @@
 import { uniq } from 'es-toolkit';
-import { PlayerSetup } from 'interfaces';
-import { VideoState } from 'modules/Elements/VideoPlayer';
-import styles from 'modules/GameEngine/Drawing/styles';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'modules/Songs/utils/notesSelectors';
 import type { Ref } from 'react';
 import { memo, useEffect, useMemo, useRef } from 'react';
+import { PlayerSetup } from '~/interfaces';
+import { VideoState } from '~/modules/Elements/VideoPlayer';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '~/modules/Songs/utils/notesSelectors';
 
 interface Props {
   players: PlayerSetup[];

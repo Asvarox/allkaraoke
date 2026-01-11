@@ -1,14 +1,14 @@
 import clsx from 'clsx';
-import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
-import CameraManager from 'modules/Camera/CameraManager';
-import { Button } from 'modules/Elements/Button';
-import { sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { useEffect, useMemo, useState } from 'react';
-import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
-import CameraRoll from 'routes/Game/Singing/PostGame/Views/Results/CameraRoll';
-import { CameraRollPlaceholder } from 'routes/Game/Singing/PostGame/Views/Results/CameraRollPlaceholder';
-import PlayerScoreView from 'routes/Game/Singing/PostGame/Views/Results/PlayerScore';
+import { GAME_MODE, HighScoreEntity, SingSetup } from '~/interfaces';
+import CameraManager from '~/modules/Camera/CameraManager';
+import { Button } from '~/modules/Elements/Button';
+import { sumDetailedScore } from '~/modules/GameEngine/GameState/Helpers/calculateScore';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';
+import CameraRoll from '~/routes/Game/Singing/PostGame/Views/Results/CameraRoll';
+import { CameraRollPlaceholder } from '~/routes/Game/Singing/PostGame/Views/Results/CameraRollPlaceholder';
+import PlayerScoreView from '~/routes/Game/Singing/PostGame/Views/Results/PlayerScore';
 
 interface Props {
   onNextStep: () => void;

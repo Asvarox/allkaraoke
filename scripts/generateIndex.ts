@@ -1,5 +1,5 @@
 import fs, { readdirSync, readFileSync } from 'fs';
-import { Song, SongPreview } from 'interfaces';
+import { Song, SongPreview } from '~/interfaces';
 import { getSongPreview } from '../src/modules/Songs/utils';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 

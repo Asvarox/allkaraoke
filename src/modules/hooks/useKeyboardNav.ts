@@ -1,7 +1,7 @@
-import { menuBack, menuEnter, menuNavigate } from 'modules/SoundManager';
-import useKeyboard from 'modules/hooks/useKeyboard';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
+import { menuBack, menuEnter, menuNavigate } from '~/modules/SoundManager';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
 import useKeyboardHelp from './useKeyboardHelp';
 
 /**

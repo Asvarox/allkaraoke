@@ -1,6 +1,6 @@
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import { useEffect } from 'react';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
 
 interface GetSongBpmSearchEntry {
   song_id: string;

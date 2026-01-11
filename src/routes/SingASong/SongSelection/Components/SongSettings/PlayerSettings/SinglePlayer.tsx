@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
-import { MAX_NAME_LENGTH } from 'consts';
-import { PlayerSetup, SongPreview } from 'interfaces';
-import { Autocomplete } from 'modules/Elements/Autocomplete';
-import { Switcher } from 'modules/Elements/Switcher';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { ComponentRef, useCallback, useRef, useState } from 'react';
+import { MAX_NAME_LENGTH } from '~/consts';
+import { PlayerSetup, SongPreview } from '~/interfaces';
+import { Autocomplete } from '~/modules/Elements/Autocomplete';
+import { Switcher } from '~/modules/Elements/Switcher';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 
 interface Props {
   multipleTracks: boolean;

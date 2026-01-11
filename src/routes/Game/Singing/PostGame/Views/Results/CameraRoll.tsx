@@ -1,7 +1,7 @@
 import { captureException } from '@sentry/react';
-import CameraManager from 'modules/Camera/CameraManager';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { useEffect, useRef, useState } from 'react';
+import CameraManager from '~/modules/Camera/CameraManager';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 
 function CameraRoll() {
   const [videoSrc, setVideoSrc] = useState('');

@@ -1,12 +1,12 @@
 import isMobile from 'is-mobile';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import isDev from 'modules/utils/isDev';
 import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
-import SuggestMobileMode from 'routes/QuickSetup/SuggestMobileMode';
-import SelectInputView from 'routes/SelectInput/SelectInputView';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import isDev from '~/modules/utils/isDev';
+import SuggestMobileMode from '~/routes/QuickSetup/SuggestMobileMode';
+import SelectInputView from '~/routes/SelectInput/SelectInputView';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function QuickSetup() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

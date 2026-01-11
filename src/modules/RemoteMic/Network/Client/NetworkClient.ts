@@ -1,9 +1,11 @@
 import { throttle } from 'es-toolkit';
-import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
-import events from 'modules/GameEvents/GameEvents';
-import { PartyKitClientTransport } from 'modules/RemoteMic/Network/Client/Transport/PartyKitClient';
-import { WebSocketClientTransport } from 'modules/RemoteMic/Network/Client/Transport/WebSocketClient';
-import { ClientTransport } from 'modules/RemoteMic/Network/Client/Transport/interface';
+import posthog from 'posthog-js';
+import { v4 } from 'uuid';
+import SimplifiedMic from '~/modules/GameEngine/Input/SimplifiedMic';
+import events from '~/modules/GameEvents/GameEvents';
+import { PartyKitClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/PartyKitClient';
+import { WebSocketClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/WebSocketClient';
+import { ClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/interface';
 import {
   keyStrokes,
   NetworkGetGameInputLagResponseMessage,
@@ -15,15 +17,13 @@ import {
   NetworkSongListMessage,
   NetworkSubscribeMessage,
   NetworkUnsubscribeMessage,
-} from 'modules/RemoteMic/Network/messages';
-import sendMessage from 'modules/RemoteMic/Network/sendMessage';
-import { getPingTime } from 'modules/RemoteMic/Network/utils';
-import Listener from 'modules/utils/Listener';
-import { roundTo } from 'modules/utils/roundTo';
-import storage from 'modules/utils/storage';
-import posthog from 'posthog-js';
-import { RemoteMicrophoneLagSetting } from 'routes/Settings/SettingsState';
-import { v4 } from 'uuid';
+} from '~/modules/RemoteMic/Network/messages';
+import sendMessage from '~/modules/RemoteMic/Network/sendMessage';
+import { getPingTime } from '~/modules/RemoteMic/Network/utils';
+import Listener from '~/modules/utils/Listener';
+import { roundTo } from '~/modules/utils/roundTo';
+import storage from '~/modules/utils/storage';
+import { RemoteMicrophoneLagSetting } from '~/routes/Settings/SettingsState';
 
 export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 

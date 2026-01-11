@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
 import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
 import { Button, FormControlLabel, Grid, IconButton, Switch } from '@mui/material';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import NoPrerender from 'modules/Elements/NoPrerender';
-import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
-import SongDao from 'modules/Songs/SongsService';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import convertSongToTxt from 'modules/Songs/utils/convertSongToTxt';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useQueryParam from 'modules/hooks/useQueryParam';
-import { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
-import SongsTable from 'routes/Edit/Components/SongsTable';
-import ShareSongsModal, { useShareSongs } from 'routes/Edit/ShareSongsModal';
 import { Link } from 'wouter';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import NoPrerender from '~/modules/Elements/NoPrerender';
+import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
+import SongDao from '~/modules/Songs/SongsService';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import convertSongToTxt from '~/modules/Songs/utils/convertSongToTxt';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useQueryParam from '~/modules/hooks/useQueryParam';
+import { buildUrl } from '~/modules/hooks/useSmoothNavigate';
+import SongsTable from '~/routes/Edit/Components/SongsTable';
+import ShareSongsModal, { useShareSongs } from '~/routes/Edit/ShareSongsModal';
 
 export default function SongList() {
   useBackground(false);

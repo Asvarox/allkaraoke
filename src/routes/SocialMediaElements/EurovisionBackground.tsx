@@ -1,4 +1,4 @@
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
 
 const WIDTH = 2500;
 

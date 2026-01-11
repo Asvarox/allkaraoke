@@ -1,6 +1,6 @@
-import { NotesSection, Section, Song, SongTrack } from 'interfaces';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
+import { NotesSection, Section, Song, SongTrack } from '~/interfaces';
+import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
 
 export const HEADSTART_MS = 1000;
 

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AbsoluteFrameContext } from 'videos/support/AbsoluteFrame/Provider';
+import { AbsoluteFrameContext } from '~/videos/support/AbsoluteFrame/Provider';
 
 export default function useAbsoluteFrame() {
   const context = useContext(AbsoluteFrameContext);

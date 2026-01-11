@@ -1,16 +1,16 @@
 import { chunk, throttle } from 'es-toolkit';
-import { menuBack, menuEnter, menuNavigate } from 'modules/SoundManager';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
-import usePrevious from 'modules/hooks/usePrevious';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import tuple from 'modules/utils/tuple';
 import { useCallback, useLayoutEffect, useMemo, useState } from 'react';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
-import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
-import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
-import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
+import { menuBack, menuEnter, menuNavigate } from '~/modules/SoundManager';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
+import usePrevious from '~/modules/hooks/usePrevious';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import tuple from '~/modules/utils/tuple';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+import selectRandomSong from '~/routes/SingASong/SongSelection/Hooks/selectRandomSong';
+import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import { getSongIdWithNew } from '~/routes/SingASong/SongSelection/utils/getSongIdWithNew';
 
 const previouslySelectedSongs: number[] = [];
 

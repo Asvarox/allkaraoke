@@ -1,5 +1,5 @@
-import useViewportSize from 'modules/hooks/useViewportSize';
 import { useMemo } from 'react';
+import useViewportSize from '~/modules/hooks/useViewportSize';
 
 export default function useBaseUnitPx() {
   const { width, height } = useViewportSize();

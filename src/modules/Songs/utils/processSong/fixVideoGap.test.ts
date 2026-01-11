@@ -1,5 +1,5 @@
-import fixVideoGap from 'modules/Songs/utils/processSong/fixVideoGap';
-import { generateNote, generateSong } from 'modules/utils/testUtils';
+import fixVideoGap from '~/modules/Songs/utils/processSong/fixVideoGap';
+import { generateNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('fixVideoGap', () => {
   it('should change the video gap if its more than the start of the song', () => {

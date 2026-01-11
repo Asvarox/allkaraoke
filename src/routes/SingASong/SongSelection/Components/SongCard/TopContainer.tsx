@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 import { FiberNewOutlined, PeopleAlt as PeopleAltIcon, Star } from '@mui/icons-material';
 import dayjs from 'dayjs';
-import { SongPreview } from 'interfaces';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { useSongStats } from 'modules/Songs/stats/hooks';
-import { getEurovisionYear, isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { ReactNode, useMemo } from 'react';
-import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { SongPreview } from '~/interfaces';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { useSongStats } from '~/modules/Songs/stats/hooks';
+import { getEurovisionYear, isEurovisionSong } from '~/modules/Songs/utils/specialSongsThemeChecks';
+import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 
-import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
+import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
 
 export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
   return (

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from 'react';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
-import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+import { KeyboardHelpContext } from '~/routes/KeyboardHelp/KeyboardHelpContext';
 
 let id = 0;
 

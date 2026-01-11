@@ -1,5 +1,5 @@
-import { Note, Song, SongTrack } from 'interfaces';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
+import { Note, Song, SongTrack } from '~/interfaces';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
 
 const normaliseSpaces = (notes: Note[]): Note[] => {
   notes.forEach((note, index) => {

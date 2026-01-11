@@ -1,13 +1,13 @@
 import { Box, Button, TextField } from '@mui/material';
-import { Song } from 'interfaces';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getSectionStartInMs } from 'modules/Songs/utils/notesSelectors';
 import { ChangeEventHandler, useMemo } from 'react';
-import importUltrastarEsSong from 'routes/Convert/importUltrastarEsSong';
-import { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
-import formatMs from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
-import { fixDiacritics } from 'routes/Convert/Steps/utils/fixDiacritics';
-import isValidUltrastarTxtFormat from 'routes/Convert/Steps/utils/validateUltrastar';
+import { Song } from '~/interfaces';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getSectionStartInMs } from '~/modules/Songs/utils/notesSelectors';
+import importUltrastarEsSong from '~/routes/Convert/importUltrastarEsSong';
+import { AuthorAndVidEntity } from '~/routes/Convert/Steps/AuthorAndVideo';
+import formatMs from '~/routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import { fixDiacritics } from '~/routes/Convert/Steps/utils/fixDiacritics';
+import isValidUltrastarTxtFormat from '~/routes/Convert/Steps/utils/validateUltrastar';
 import { Pre } from '../Elements';
 
 export interface BasicDataEntity {

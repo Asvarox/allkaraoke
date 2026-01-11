@@ -1,15 +1,15 @@
-import { Kbd } from 'modules/Elements/AKUI/Kbd';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { VideoPlayerRef } from 'modules/Elements/VideoPlayer';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import getSkipIntroTime, { SKIP_INTRO_MS } from 'modules/Songs/utils/getSkipIntroTime';
-import getSongFirstNoteMs from 'modules/Songs/utils/getSongFirstNoteMs';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
-import songHasLongIntro from 'modules/utils/songHasLongIntro';
 import posthog from 'posthog-js';
 import { MutableRefObject, useMemo } from 'react';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { VideoPlayerRef } from '~/modules/Elements/VideoPlayer';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import getSkipIntroTime, { SKIP_INTRO_MS } from '~/modules/Songs/utils/getSkipIntroTime';
+import getSongFirstNoteMs from '~/modules/Songs/utils/getSongFirstNoteMs';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
+import songHasLongIntro from '~/modules/utils/songHasLongIntro';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   playerRef: MutableRefObject<VideoPlayerRef | null>;

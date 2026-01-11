@@ -1,13 +1,13 @@
+import { DataConnection, Peer } from 'peerjs';
 import {
   SenderInterface,
   ServerTransport,
   transportCloseReason,
-} from 'modules/RemoteMic/Network/Server/Transport/interface';
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import Listener from 'modules/utils/Listener';
-import peerJSOptions from 'modules/utils/peerJSOptions';
-import { DataConnection, Peer } from 'peerjs';
+} from '~/modules/RemoteMic/Network/Server/Transport/interface';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import Listener from '~/modules/utils/Listener';
+import peerJSOptions from '~/modules/utils/peerJSOptions';
 
 export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInterface]> implements ServerTransport {
   public readonly name = 'PeerJS';

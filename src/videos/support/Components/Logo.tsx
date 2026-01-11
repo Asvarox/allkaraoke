@@ -1,9 +1,9 @@
 import { Gif } from '@remotion/gif';
-import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
-import dotParty from 'modules/Elements/dotparty.gif';
-import allKaraokeLogo from 'modules/Elements/logo.gif';
 import { Fade, Move, Scale } from 'remotion-animated';
-import { SAnimated } from 'videos/support/Components/common';
+import { MicIconBlue, MicIconRed } from '~/modules/Elements/MicIcon';
+import dotParty from '~/modules/Elements/dotparty.gif';
+import allKaraokeLogo from '~/modules/Elements/logo.gif';
+import { SAnimated } from '~/videos/support/Components/common';
 
 export const Logo: React.FC = () => {
   const micStyles = {

@@ -1,5 +1,5 @@
-import normaliseLyricSpaces from 'modules/Songs/utils/processSong/normaliseLyricSpaces';
-import { generateNote, generateSong } from 'modules/utils/testUtils';
+import normaliseLyricSpaces from '~/modules/Songs/utils/processSong/normaliseLyricSpaces';
+import { generateNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('normaliseLyricSpaces', () => {
   it('should move prefix spaces to end of previous syllabe', () => {

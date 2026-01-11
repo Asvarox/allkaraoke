@@ -1,6 +1,6 @@
 import { ComponentProps, ForwardedRef, forwardRef } from 'react';
 
-import DirectVideo from 'modules/Elements/VideoPlayer/DirectVideo';
+import DirectVideo from '~/modules/Elements/VideoPlayer/DirectVideo';
 import Youtube, { VideoPlayerRef } from './Youtube';
 import dummyLongVideo from './dummy-video-long.webm';
 import dummyVideo from './dummy-video.webm';

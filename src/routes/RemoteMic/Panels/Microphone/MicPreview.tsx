@@ -1,9 +1,9 @@
 import { throttle } from 'es-toolkit';
-import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
 import { useEffect, useMemo, useState } from 'react';
-import VolumeIndicator from 'routes/RemoteMic/Panels/Microphone/VolumeIndicator';
+import SimplifiedMic from '~/modules/GameEngine/Input/SimplifiedMic';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import VolumeIndicator from '~/routes/RemoteMic/Panels/Microphone/VolumeIndicator';
 
 interface Props {
   isVisible: boolean;

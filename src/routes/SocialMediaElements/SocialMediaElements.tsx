@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import { EurovisionTheme } from 'modules/Elements/LayoutWithBackground';
-import Logo from 'modules/Elements/Logo';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import LayoutGame from 'routes/LayoutGame';
-import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
-import EurovisionBgSvg from 'routes/SocialMediaElements/EurovisionBackground';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import { EurovisionTheme } from '~/modules/Elements/LayoutWithBackground';
+import Logo from '~/modules/Elements/Logo';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
+import LayoutGame from '~/routes/LayoutGame';
+import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import EurovisionBgSvg from '~/routes/SocialMediaElements/EurovisionBackground';
 // @ts-expect-error import from /public/ folder
 import logo from '/logo.svg?url&raw';
 

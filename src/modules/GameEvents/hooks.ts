@@ -1,5 +1,5 @@
-import { GameEvent } from 'modules/GameEvents/GameEvents';
 import { useEffect, useState } from 'react';
+import { GameEvent } from '~/modules/GameEvents/GameEvents';
 
 export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>, getLast = false) {
   const [value, setValue] = useState<Parameters<T> | null>(null);

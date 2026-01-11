@@ -1,6 +1,6 @@
-import { Note, PlayerNote } from 'interfaces';
-import { SpriteNames } from 'modules/GameEngine/Drawing/Elements/Cache/spriteMap';
-import drawSpriteWithStartAndEnd from 'modules/GameEngine/Drawing/Elements/spriteWithStartAndEnd';
+import { Note, PlayerNote } from '~/interfaces';
+import { SpriteNames } from '~/modules/GameEngine/Drawing/Elements/Cache/spriteMap';
+import drawSpriteWithStartAndEnd from '~/modules/GameEngine/Drawing/Elements/spriteWithStartAndEnd';
 
 const getSpriteName = (playerNumber: 0 | 1 | 2 | 3, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
   let spriteName = `p${playerNumber}`;
