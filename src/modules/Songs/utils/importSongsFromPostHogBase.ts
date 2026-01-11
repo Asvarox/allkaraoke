@@ -27,6 +27,9 @@ const normalizeSong = (song: Song): Song => {
     return lang;
   });
 
+  // North K -> South Korea fix
+  song.artistOrigin = song.artistOrigin?.toLowerCase() === 'kp' ? 'KR' : song.artistOrigin;
+
   song.lastUpdate = new Date().toISOString();
 
   // @ts-expect-error reset id before generating a new one
