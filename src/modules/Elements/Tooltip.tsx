@@ -4,14 +4,9 @@ import { createPortal } from 'react-dom';
 import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
 import { twc } from 'react-twc';
 
-export const StyledTooltip = twc(ReactTooltip)`
-  !bg-black/85 !py-2.5 !px-4 !rounded-2.5 !max-w-[450px]
-  typography
-  [&_.MuiTooltip-arrow::before]:!bg-black/85
-  [&_strong]:text-active
-  z-[10000]
-  !text-lg
-`;
+export const StyledTooltip = twc(
+  ReactTooltip,
+)`!rounded-2.5 typography [&_strong]:text-active z-[10000] !max-w-[450px] !bg-black/85 !px-4 !py-2.5 !text-lg [&_.MuiTooltip-arrow::before]:!bg-black/85`;
 interface Props {
   clickable?: boolean;
   open?: boolean;
@@ -88,10 +83,6 @@ export const ClosableTooltip = ({
   );
 };
 
-const OkButtonWrapper = twc.div`flex justify-end mt-2.5`;
+const OkButtonWrapper = twc.div`mt-2.5 flex justify-end`;
 
-const OkButton = twc.button`
-  px-5 py-0.5 font-bold cursor-pointer text-white border border-white rounded-1 bg-none text-md
-  hover:text-active hover:border-active
-  active:text-white active:bg-active active:border-none
-`;
+const OkButton = twc.button`rounded-1 text-md hover:text-active hover:border-active active:bg-active cursor-pointer border border-white bg-none px-5 py-0.5 font-bold text-white active:border-none active:text-white`;

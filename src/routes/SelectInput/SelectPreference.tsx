@@ -155,10 +155,6 @@ const InputOptionButton = ({
   );
 };
 
-const OptionIconContainer = twc.div`
-  relative
-  [&_svg]:transition-[300ms] [&_svg]:w-[1em] [&_svg]:h-[1em] [&_svg]:text-[#ff3636]
-  [&_svg:first-of-type]:mt-[0.2em] [&_svg:first-of-type]:ml-[0.35em] [&_svg:first-of-type]:absolute [&_svg:first-of-type]:text-[#0099ff] [&_svg:first-of-type]:z-100 [&_svg:first-of-type]:-scale-x-100
-`;
+const OptionIconContainer = twc.div`relative [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&_svg:first-of-type]:absolute [&_svg:first-of-type]:z-100 [&_svg:first-of-type]:mt-[0.2em] [&_svg:first-of-type]:ml-[0.35em] [&_svg:first-of-type]:-scale-x-100 [&_svg:first-of-type]:text-[#0099ff]`;
 
 export default SelectPreference;

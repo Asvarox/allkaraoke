@@ -148,18 +148,12 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
   );
 }
 
-const NextButtonContainer = twc.div`
-  flex flex-col gap-2.5
-`;
+const NextButtonContainer = twc.div`flex flex-col gap-2.5`;
 
-const LanguageName = twc.span`
-  transition-[300ms]
-`;
+const LanguageName = twc.span`transition-[300ms]`;
 
-const LanguageEntry = twc(MenuButton)`
-  data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50
-  data-[excluded=true]:data-[focused=false]:bg-black/55
-  justify-start m-0 relative w-full
-`;
+const LanguageEntry = twc(
+  MenuButton,
+)`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50 data-[excluded=true]:data-[focused=false]:bg-black/55`;
 
 export default ExcludeLanguagesView;

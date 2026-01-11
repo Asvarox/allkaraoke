@@ -26,8 +26,6 @@ export default function Modal({ children, open, onClose }: Props) {
   );
 }
 
-const Backdrop = twc(motion.div)`
-  fixed top-0 left-0 bg-black/75 [background-size:10px_10px]
-  w-screen h-screen z-[20000] backdrop-blur-[20px]
-  [background-image:radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)]
-`;
+const Backdrop = twc(
+  motion.div,
+)`fixed top-0 left-0 z-[20000] h-screen w-screen bg-black/75 [background-image:radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] [background-size:10px_10px] backdrop-blur-[20px]`;

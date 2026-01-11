@@ -13,14 +13,14 @@ const sizeToClass = {
 
 export const ButtonBase = twx(Box)((props) => {
   return [
-    `px-4 relative flex-row! duration-300 typography cursor-pointer justify-center border-0 bg-black/75 text-white uppercase shadow-focusable pointer-events-auto gap-4`,
+    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-4 border-0 bg-black/75 px-4 text-white uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
-      ? 'bg-active shadow-none animate-button-focused scale-[1.025]'
+      ? 'bg-active animate-button-focused scale-[1.025] shadow-none'
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
     !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? 'animate-focused' : '',
     props['disabled']
-      ? 'cursor-default text-gray-300! bg-gray-500 pointer-events-none animate-none! scale-100!'
+      ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500 text-gray-300!'
       : 'active:bg-active',
     props['data-inactive'] ? 'line-through! decoration-white opacity-25' : 'no-underline!',
     props['data-read-only'] ? 'cursor-default! active:bg-black/75' : '',

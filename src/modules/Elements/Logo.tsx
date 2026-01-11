@@ -44,4 +44,4 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
   );
 }
 
-const StyledLogo = twc.video`w-[4em] h-[1.1em]`;
+const StyledLogo = twc.video`h-[1.1em] w-[4em]`;

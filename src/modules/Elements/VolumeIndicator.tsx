@@ -13,9 +13,7 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   }, [playerNumber]);
 };
 
-const VolumeIndicatorBase = twx.div`
-  h-full w-full absolute right-0 top-0 bg-repeat-y origin-right z-1 pointer-events-none
-`;
+const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right bg-repeat-y`;
 
 interface Props {
   playerNumber: 0 | 1 | 2 | 3;

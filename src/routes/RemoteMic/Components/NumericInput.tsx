@@ -35,10 +35,6 @@ function NumericInput({ unit = '', value, onChange, step = 50, disabled = false,
 }
 export default NumericInput;
 
-const Button = twc.button`
-h-14
-  py-1 px-5 border-none text-xl typography
-  disabled:opacity-50
-`;
+const Button = twc.button`typography h-14 border-none px-5 py-1 text-xl disabled:opacity-50`;
 
 const Container = twc.div`typography flex items-center justify-self-center bg-black`;

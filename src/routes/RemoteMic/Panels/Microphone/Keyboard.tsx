@@ -101,14 +101,14 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   ) : null;
 }
 
-const ArrowsContainer = twc.div`flex justify-center flex-1 text-white text-xl`;
+const ArrowsContainer = twc.div`flex flex-1 justify-center text-xl text-white`;
 
 const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolean }>((props) => [
-  'flex flex-col flex-1 justify-between',
+  'flex flex-1 flex-col justify-between',
   props.$disabled ? 'opacity-0' : 'opacity-100',
 ]);
 
-const Break = twc.div`basis-full h-0`;
+const Break = twc.div`h-0 basis-full`;
 
 const ArrowButton = twc(Kbd)`m-0.5 text-lg`;
 

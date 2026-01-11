@@ -31,11 +31,6 @@ export default function ConnectionStatus() {
   );
 }
 
-const Container = twc.div`
-  opacity-75 fixed bottom-0 right-0
-  typography text-sm
-  sm:p-1 flex gap-2.5 z-[100000]
-  pointer-events-none
-`;
+const Container = twc.div`typography pointer-events-none fixed right-0 bottom-0 z-[100000] flex gap-2.5 text-sm opacity-75 sm:p-1`;
 
 const Row = twc.div``;

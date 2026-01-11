@@ -152,13 +152,13 @@ function LandingPage() {
   );
 }
 
-const StatText = twc.div`text-lg mobile:text-md`;
-const StatSubText = twc.div`pt-1 text-right text-md mobile:text-sm [&_.Typewriter]:inline`;
+const StatText = twc.div`mobile:text-md text-lg`;
+const StatSubText = twc.div`text-md mobile:text-sm pt-1 text-right [&_.Typewriter]:inline`;
 
-const StatSegment = twc.div`flex flex-col flex-1 justify-center typography text-xl `;
+const StatSegment = twc.div`typography flex flex-1 flex-col justify-center text-xl`;
 
-const Screenshot = twc.img`w-full aspect-video object-cover shadow-5 border-1 border-black/50 rounded-2xl mobile:w-[calc(50vw_-_1rem)]`;
+const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-2xl border-1 border-black/50 object-cover`;
 
-const PlayButton = twx(ButtonLink)`text-5xl mobile:text-2xl bg-black w-full px-4 py-4 animate-focused`;
+const PlayButton = twx(ButtonLink)`mobile:text-2xl animate-focused w-full bg-black px-4 py-4 text-5xl`;
 
 export default LandingPage;

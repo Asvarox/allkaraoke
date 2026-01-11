@@ -127,12 +127,10 @@ Autocomplete.displayName = 'Autocomplete';
 
 const Container = twc.div`relative`;
 
-const AutocompleteMenu = twc.div`
-  mt-[0.1em] absolute w-full bg-black max-h-[6.4em] overflow-y-auto z-2
-`;
+const AutocompleteMenu = twc.div`absolute z-2 mt-[0.1em] max-h-[6.4em] w-full overflow-y-auto bg-black`;
 
 const AutocompleteMenuitem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
-  'typography p-[0.3em] whitespace-nowrap overflow-hidden truncate cursor-pointer',
+  'typography cursor-pointer truncate overflow-hidden p-[0.3em] whitespace-nowrap',
   props.$focused ? 'text-active' : 'text-white',
 ]);
 

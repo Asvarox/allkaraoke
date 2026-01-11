@@ -68,8 +68,6 @@ function Welcome() {
   );
 }
 
-const BackgroundMusicCredit = twc.div`
-  no-underline flex flex-col opacity-85 text-sm typography [view-transition-name:background-music-credit]
-`;
+const BackgroundMusicCredit = twc.div`typography flex flex-col text-sm no-underline opacity-85 [view-transition-name:background-music-credit]`;
 
 export default Welcome;

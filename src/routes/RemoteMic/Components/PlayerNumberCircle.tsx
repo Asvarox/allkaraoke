@@ -26,4 +26,4 @@ export default function PlayerNumberCircle({ number, ...restProps }: Props) {
   );
 }
 
-const PlayerColorCircle = twc.div`inline-block w-[1em] h-[1em] aspect-square rounded-[1em]`;
+const PlayerColorCircle = twc.div`inline-block aspect-square h-[1em] w-[1em] rounded-[1em]`;

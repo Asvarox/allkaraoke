@@ -53,8 +53,6 @@ export default function VolumeIndicator({
 
 const Debug = twc.span`absolute text-white opacity-[0.125]`;
 
-const Indicator = twc.div`w-full min-h-[200px] max-h-[300px] bg-black/25 transition-[200ms] origin-top`;
+const Indicator = twc.div`max-h-[300px] min-h-[200px] w-full origin-top bg-black/25 transition-[200ms]`;
 
-const IndicatorContainer = twc.div`
-  relative border-[1px] border-white flex-1 min-h-[200px] max-h-[300px] transition-[300ms]
-`;
+const IndicatorContainer = twc.div`relative max-h-[300px] min-h-[200px] flex-1 border-[1px] border-white transition-[300ms]`;

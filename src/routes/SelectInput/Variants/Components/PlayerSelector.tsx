@@ -45,15 +45,9 @@ export const PlayerSelector = (props: Props) => {
   );
 };
 
-const SwitcherWithMicCheck = twc(Switcher)`
-  relative
-`;
+const SwitcherWithMicCheck = twc(Switcher)`relative`;
 
-const SwitcherWithPlayerHeader = twc(Switcher)`
-  bg-none
-`;
+const SwitcherWithPlayerHeader = twc(Switcher)`bg-none`;
 
-const Header = twc.div`
-  flex justify-between items-end
-`;
+const Header = twc.div`flex items-end justify-between`;
 export default PlayerSelector;

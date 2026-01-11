@@ -43,5 +43,5 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
   );
 }
 
-const SearchInput = twc(Input)`w-full mb-2`;
+const SearchInput = twc(Input)`mb-2 w-full`;
 export default RemoteSongSearch;

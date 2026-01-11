@@ -75,5 +75,5 @@ const Container = twc.div`flex flex-col gap-2.5`;
 
 const RemoteMicEntry = twc(MenuButton)`flex items-center px-5`;
 
-const RemoteMicId = twc.span`text-sm px-2.5`;
+const RemoteMicId = twc.span`px-2.5 text-sm`;
 export default ManagePlayers;

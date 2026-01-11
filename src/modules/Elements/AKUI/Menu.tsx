@@ -6,7 +6,7 @@ import { twc } from 'react-twc';
 
 const MenuContainer = twc(
   Box,
-)`w-[100vw] bg-black/60 sm:max-w-[45rem] lg:max-w-[45rem] 2xl:max-w-[60rem] rounded-none md:rounded-md [view-transition-name:menu-container] items-stretch pointer-events-auto`;
+)`pointer-events-auto w-[100vw] items-stretch rounded-none bg-black/60 [view-transition-name:menu-container] sm:max-w-[45rem] md:rounded-md lg:max-w-[45rem] 2xl:max-w-[60rem]`;
 
 export const MenuHelpText = twc(Typography)`text-md mobile:text-xs`;
 const MenuSubHeader = twc(Typography)`text-lg`;
@@ -22,7 +22,7 @@ export const Menu = ({ title, children, className, spacing = 'regular', ref, ...
   </MenuContainer>
 );
 
-Menu.Header = twc(Typography)`text-2xl mobile:text-xl text-active flex items-center justify-center`;
+Menu.Header = twc(Typography)`mobile:text-xl text-active flex items-center justify-center text-2xl`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;

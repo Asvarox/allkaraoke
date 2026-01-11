@@ -41,12 +41,10 @@ export default function BottomBar({ active, setActiveTab }: Props) {
 
 const ItemContainer = twc.div<{ $active?: boolean } & TwcComponentProps<'div'>>((props) =>
   [
-    'cursor-pointer flex-1 flex flex-col items-center justify-center bg-black p-2.5 text-sm gap-1',
+    'flex flex-1 cursor-pointer flex-col items-center justify-center gap-1 bg-black p-2.5 text-sm',
     props.$active ? 'text-active' : 'text-[#cecece]',
   ].join(' '),
 );
 
-const ItemIcon = twc.div`
-  [&_svg]:w-6 [&_svg]:h-6 text-sm
-`;
+const ItemIcon = twc.div`text-sm [&_svg]:h-6 [&_svg]:w-6`;
 const ItemTitle = twc.div``;

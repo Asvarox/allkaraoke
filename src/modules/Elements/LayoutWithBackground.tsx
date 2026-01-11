@@ -56,12 +56,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   );
 }
 
-const EscBar = twc.div`
-  scale-y-[4] h-full
-  [background-size:100%_50%]
-  data-[animate=true]:animate-[escGradient_46s_linear_infinite]
-  data-[animate=true]:flex-1
-`;
+const EscBar = twc.div`h-full scale-y-[4] [background-size:100%_50%] data-[animate=true]:flex-1 data-[animate=true]:animate-[escGradient_46s_linear_infinite]`;
 
 export const EurovisionTheme = () => (
   <EscBar
@@ -70,7 +65,7 @@ export const EurovisionTheme = () => (
   />
 );
 
-export const BackgroundStatic = twc.div`bg-white w-full h-full`;
+export const BackgroundStatic = twc.div`h-full w-full bg-white`;
 
 type BGProps = TwcComponentProps<'div'> & {
   'data-theme': backgroundTheme;
@@ -78,7 +73,7 @@ type BGProps = TwcComponentProps<'div'> & {
 };
 
 export const Background = twc(BackgroundStatic)((props: BGProps) => [
-  'w-screen h-screen',
+  'h-screen w-screen',
   props['data-theme'] === 'halloween' ? 'bg-black' : '',
   props['data-graphic-level'] === 'high' ? 'animate-gradient' : '',
 ]);

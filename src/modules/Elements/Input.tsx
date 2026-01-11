@@ -105,13 +105,6 @@ export const Input = ({
 
 const Adornment = twc.span``;
 
-const Label = twc.span`
-  inline-flex items-center justify-center whitespace-nowrap w-auto pointer-events-none
-  [&_svg]:text-[1em]
-`;
+const Label = twc.span`pointer-events-none inline-flex w-auto items-center justify-center whitespace-nowrap [&_svg]:text-[1em]`;
 
-const StyledInput = twc.input`
-  p-0 border-0 bg-transparent [caret-shape:underscore]
-  typography text-active w-full text-[1em]
-  focus:outline-none
-`;
+const StyledInput = twc.input`typography text-active w-full border-0 bg-transparent p-0 text-[1em] [caret-shape:underscore] focus:outline-none`;

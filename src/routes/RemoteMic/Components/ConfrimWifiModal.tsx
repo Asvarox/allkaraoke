@@ -74,10 +74,4 @@ const MenuComponent = twc(MenuContainer)`gap-2.5`;
 
 const Wrapper = twc.div`flex flex-col items-center gap-5`;
 
-const IconsWrapper = twc.div`
-  my-5 flex text-white items-center gap-5
-  [&_svg]:text-7xl
-  [&_svg:nth-of-type(1)]:animate-[pulse_2s_infinite_0s]
-  [&_svg:nth-of-type(2)]:animate-[pulse_2s_infinite_0.5s]
-  [&_svg:nth-of-type(3)]:animate-[pulse_2s_infinite_1s]
-`;
+const IconsWrapper = twc.div`my-5 flex items-center gap-5 text-white [&_svg]:text-7xl [&_svg:nth-of-type(1)]:animate-[pulse_2s_infinite_0s] [&_svg:nth-of-type(2)]:animate-[pulse_2s_infinite_0.5s] [&_svg:nth-of-type(3)]:animate-[pulse_2s_infinite_1s]`;
