@@ -13,8 +13,8 @@ export class PartyKitClientTransport extends Listener<[NetworkMessages]> impleme
     clientId: string,
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
-    onError: (error: transportErrorReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: Event) => void,
+    onError: (error: transportErrorReason, originalEvent: Event) => void,
   ): void {
     this.roomId = roomId;
     // this.connection = new PartySocket({ host: PARTYKIT_SERVER, room: roomId });

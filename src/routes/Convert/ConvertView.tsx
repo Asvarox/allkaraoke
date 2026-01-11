@@ -90,7 +90,7 @@ export default function ConvertView({ song }: Props) {
       );
 
       return result;
-    } catch (e: any) {
+    } catch (e: unknown) {
       console.error(e);
     }
     return undefined;

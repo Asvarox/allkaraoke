@@ -10,12 +10,12 @@ export class PeerJSClientTransport extends Listener<[NetworkMessages]> implement
   private connection: DataConnection | null = null;
 
   private unavailableIdRetries = 0;
-  private unavailableIdRetryTimeout: any = null;
+  private unavailableIdRetryTimeout: ReturnType<typeof setTimeout> | null = null;
 
   private connectToRoom = (
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: unknown) => void,
   ) => {
     this.connection = this.peer!.connect(`allkaraoke-party-room-${roomId}`);
 
@@ -35,8 +35,8 @@ export class PeerJSClientTransport extends Listener<[NetworkMessages]> implement
     clientId: string,
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
-    onError: (error: transportErrorReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: unknown) => void,
+    onError: (error: transportErrorReason, originalEvent: unknown) => void,
   ): void {
     if (this.peer && !this.peer.disconnected) {
       this.connectToRoom(roomId, onConnect, onClose);

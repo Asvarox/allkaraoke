@@ -168,7 +168,7 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
 }
 
 async function setEurovisionEdition(songData: Omit<Song, 'tracks'>) {
-  const escSong = (escSongs as any[]).find((escSong) =>
+  const escSong = (escSongs as unknown as Array<{ artist: string; song: string; year: string }>).find((escSong) =>
     clearString(songData.id).endsWith(clearString(escSong.artist?.replaceAll(' and ', '') + escSong.song)),
   );
   if (escSong) {

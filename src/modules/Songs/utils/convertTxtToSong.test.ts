@@ -73,7 +73,7 @@ describe('convertTxtToSong', () => {
       ...songStub,
       tracks: [{ sections, changes: expect.anything() }],
       video: 'videoUrl',
-    } as any;
+    } as unknown as Song;
 
     expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
   });
@@ -96,7 +96,7 @@ describe('convertTxtToSong', () => {
           { sections, changes },
         ],
         unsupportedProps: unknownProps,
-      } as any;
+      } as unknown as Song;
 
       expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl).tracks).toEqual(
         expectedSong.tracks,
@@ -116,7 +116,7 @@ describe('convertTxtToSong', () => {
         ...songStub,
         tracks: [{ sections, changes: expect.anything() }],
         video: videoId,
-      } as any;
+      } as unknown as Song;
       const result = convertTxtToSong(inputSongTxt, videoId, author, authorUrl, sourceUrl);
 
       expect(result.tracks).toHaveLength(1);

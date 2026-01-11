@@ -47,6 +47,6 @@ Button.Icon = ({
   className,
   ...rest
 }: {
-  Icon: ComponentType<any>;
+  Icon: ComponentType<{ className?: ComponentProps<'svg'>['className'] }>;
   className?: ComponentProps<'svg'>['className'];
 }) => <Icon {...rest} className={twMerge('h-8! w-8!', className)} />;

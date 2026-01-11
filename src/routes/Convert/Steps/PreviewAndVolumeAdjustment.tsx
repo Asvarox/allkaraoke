@@ -46,7 +46,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
   const [isReferencePlaying, setIsReferencePlaying] = useState(false);
 
-  const handleSliderChange = async (_e: any, value: number | number[]) => {
+  const handleSliderChange = async (_e: unknown, value: number | number[]) => {
     await player.current?.getInternalPlayer()?.setVolume(+value * 100);
     onChange({ ...data, volume: +value });
   };

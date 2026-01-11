@@ -41,7 +41,7 @@ const accents = {
 };
 
 export function fixDiacritics(txt: string, language: string): string {
-  const accentSet = accents[language as any as keyof typeof accents];
+  const accentSet = accents[language as unknown as keyof typeof accents];
   if (accentSet === undefined) return txt;
 
   let fixedTxt = txt;

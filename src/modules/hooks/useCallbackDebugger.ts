@@ -1,23 +1,31 @@
 import usePrevious from 'modules/hooks/usePrevious';
 import { useCallback } from 'react';
 
-export default function useCallbackDebugger(callback: any, dependencies: any[], dependencyNames: any[] = []) {
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+export default function useCallbackDebugger<T extends Function>(
+  callback: T,
+  dependencies: unknown[],
+  dependencyNames: string[] = [],
+) {
   const previousDeps = usePrevious(dependencies);
 
-  const changedDeps = dependencies.reduce((accum, dependency, index) => {
-    if (dependency !== previousDeps[index]) {
-      const keyName = dependencyNames[index] || index;
-      return {
-        ...accum,
-        [keyName]: {
-          before: previousDeps[index],
-          after: dependency,
-        },
-      };
-    }
+  const changedDeps = dependencies.reduce<Record<string, { before: unknown; after: unknown }>>(
+    (accum, dependency, index) => {
+      if (dependency !== previousDeps[index]) {
+        const keyName = dependencyNames[index] || index;
+        return {
+          ...accum,
+          [keyName]: {
+            before: previousDeps[index],
+            after: dependency,
+          },
+        };
+      }
 
-    return accum;
-  }, {});
+      return accum;
+    },
+    {},
+  );
 
   if (Object.keys(changedDeps).length) {
     console.log('[use-callback-debugger] ', changedDeps);

@@ -1,11 +1,21 @@
 import useViewportSize from 'modules/hooks/useViewportSize';
 import { useEffect, useRef } from 'react';
 
+interface Snowflake {
+  x: number;
+  y: number;
+  opacity: number;
+  radius: number;
+  color: string;
+  speed: number;
+  sway: number;
+}
+
 const NUMBER_OF_SNOWFLAKES = 45;
 const MAX_SNOWFLAKE_SIZE = 7;
 const MAX_SNOWFLAKE_SPEED = 0.005;
 const SNOWFLAKE_COLOUR = '#ddd';
-const snowflakes: any[] = [];
+const snowflakes: Snowflake[] = [];
 
 // from https://codepen.io/codebubb/pen/LYqovoV
 export default function Snow() {
@@ -18,7 +28,7 @@ export default function Snow() {
     }
     const ctx = canvas.getContext('2d');
 
-    const createSnowflake = (yRatio = 1) => ({
+    const createSnowflake = (yRatio = 1): Snowflake => ({
       x: Math.random() * canvas.width,
       y: (Math.random() / yRatio) * canvas.height,
       opacity: 0,
@@ -28,7 +38,7 @@ export default function Snow() {
       sway: Math.random() - 0.5, // next
     });
 
-    const drawSnowflake = (snowflake: any) => {
+    const drawSnowflake = (snowflake: Snowflake) => {
       if (!ctx) {
         return;
       }
@@ -41,7 +51,7 @@ export default function Snow() {
       ctx.globalAlpha = 1;
     };
 
-    const updateSnowflake = (snowflake: any) => {
+    const updateSnowflake = (snowflake: Snowflake) => {
       snowflake.y += snowflake.speed;
       snowflake.opacity = Math.min(1, snowflake.opacity + snowflake.speed - 1);
       snowflake.x += snowflake.sway; // next

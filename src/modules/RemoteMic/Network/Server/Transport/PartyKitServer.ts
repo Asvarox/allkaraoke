@@ -39,7 +39,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
   public connect(
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: CloseEvent) => void,
   ) {
     this.connection = new WebSocket(`${PARTYKIT_SERVER}/party/${roomId}`);
     this.connection.binaryType = 'arraybuffer';
@@ -104,7 +104,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
   }
 }
 
-type callback = (data: any) => void;
+type callback = (data: NetworkMessages) => void;
 
 class SenderWrapper implements SenderInterface {
   private currentPing = 0;
@@ -119,11 +119,11 @@ class SenderWrapper implements SenderInterface {
     this.socket.send(pack(data));
   };
 
-  private callbacksMap: Map<callback, callback> = new Map();
+  private callbacksMap: Map<callback, (message: MessageEvent) => void> = new Map();
 
-  public on = (event: string, callback: (data: any) => void) => {
+  public on = (event: string, callback: (data: NetworkMessages) => void) => {
     if (event === 'data') {
-      this.callbacksMap.set(callback, (message) => {
+      this.callbacksMap.set(callback, (message: MessageEvent) => {
         const data: WebsocketMessage = unpack(message.data);
         if (data.t === 'forward') {
           const { sender, payload } = data;
@@ -136,7 +136,7 @@ class SenderWrapper implements SenderInterface {
     }
   };
 
-  public off = (event: string, callback: (data: any) => void) => {
+  public off = (event: string, callback: (data: NetworkMessages) => void) => {
     if (event === 'data') {
       const actualCallback = this.callbacksMap.get(callback);
       this.socket.removeEventListener('message', actualCallback!);

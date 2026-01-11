@@ -19,7 +19,7 @@ const lastUpdate = dayjs('2023-09-01T09:26:15.631Z');
 const data = {
   date: new Date('2023-09-22T09:26:15.631Z'),
   songPack: null,
-  newSongs: (songIndex as any as SongPreview[]).filter(
+  newSongs: (songIndex as unknown as SongPreview[]).filter(
     (song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(lastUpdate),
   ),
   updates: [

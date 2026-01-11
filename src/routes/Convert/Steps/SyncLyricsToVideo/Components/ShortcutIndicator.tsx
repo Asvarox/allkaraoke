@@ -3,7 +3,7 @@ import React from 'react';
 
 interface Props {
   shortcutKey: string;
-  children: React.ReactElement<unknown, any>;
+  children: React.ComponentProps<typeof Tooltip>['children'];
 }
 
 export default function ShortcutIndicator({ shortcutKey, children }: Props) {

@@ -41,7 +41,7 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     tracks: tracks.map((sections) => ({ sections, changes: [] })),
     mergedTrack: { sections: [], changes: [] },
     ...data,
-  }) as any as Song;
+  }) as unknown as Song;
 
 export const generateSongPreview = (tracks: Section[][], data: Partial<Song> = {}): SongPreview =>
   getSongPreview(generateSong(tracks, data));

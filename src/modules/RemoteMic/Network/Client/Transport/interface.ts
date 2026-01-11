@@ -7,8 +7,8 @@ export interface ClientTransport extends Listener<[NetworkMessages]> {
     clientId: string,
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
-    onError: (error: transportErrorReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: unknown) => void,
+    onError: (error: transportErrorReason, originalEvent: unknown) => void,
   ): void;
 
   sendEvent(event: NetworkMessages): void;
