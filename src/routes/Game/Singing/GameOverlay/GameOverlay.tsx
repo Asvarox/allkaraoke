@@ -106,7 +106,7 @@ const GameOverlay = forwardRef(function (
   const showMultipleLines = !mobilePhoneMode && players.length > 1;
 
   return (
-    <div className="relative flex h-full flex-col font-bold text-white [-webkit-text-stroke:0.125rem_black]">
+    <div className="relative flex h-full flex-col font-bold text-white">
       {graphicLevel === 'high' && (
         <>
           <script type={'x-shader/x-fragment'} id={'plane-fs'}>
@@ -155,7 +155,7 @@ const GameOverlay = forwardRef(function (
 
                 return (
                   <span
-                    className="relative"
+                    className="typography relative"
                     key={player.number}
                     data-test={`player-${player.number}-score`}
                     data-score={Math.floor(score)}>

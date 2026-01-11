@@ -5,6 +5,7 @@ import isNotesSection from 'modules/Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
 import { motion } from 'motion/react';
 import { Fragment } from 'react';
+import { cn } from 'utils/cn';
 import AnimatedLine from './AnimatedLine';
 import Headstart from './Headstart';
 import LyricNoteToken from './LyricNoteToken';
@@ -151,7 +152,7 @@ export default function Lyrics({ player, bottom = false, effectsEnabled, showSta
 
   return (
     <motion.div
-      className="box-border w-full p-3 text-center leading-none"
+      className={cn(!effectsEnabled ? `h-8` : 'mobile:h-20 h-30', 'box-border w-full p-3 text-center leading-none')}
       style={{ position: 'relative' }}
       data-test={`lyrics-container-player-${player.number}`}
       animate={

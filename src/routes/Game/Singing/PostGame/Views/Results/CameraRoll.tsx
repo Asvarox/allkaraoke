@@ -33,9 +33,9 @@ function CameraRoll() {
         ref={video}
         loop
         autoPlay
-        className="ph-no-capture aspect-[4/3] w-full rounded-2xl bg-black object-cover"
+        className="ph-no-capture aspect-4/3 w-full rounded-2xl bg-black object-cover"
       />
-      <Typography className="text-md text-center">
+      <Typography className="text-md mobile:text-xs text-center">
         You can disable camera mode in <strong>Settings</strong>.
       </Typography>
     </div>

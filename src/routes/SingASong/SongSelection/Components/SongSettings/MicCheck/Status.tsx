@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
-import { typography } from 'modules/Elements/cssMixins';
+import { mobileMQ, typography } from 'modules/Elements/cssMixins';
 import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
 import { ComponentProps } from 'react';
 import Ping from './Ping';
@@ -46,8 +46,12 @@ export default PlayerStatus;
 
 const OkIcon = styled.div`
   margin: 0.15rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  ${mobileMQ} {
+    width: 1rem;
+    height: 1rem;
+  }
   display: inline-block;
   background: #ffffff;
   border: 1px solid black;

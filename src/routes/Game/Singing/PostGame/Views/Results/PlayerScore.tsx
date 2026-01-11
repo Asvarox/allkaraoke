@@ -47,7 +47,7 @@ function PlayerScoreView({
     highScores.some((score) => score.singSetupId === singSetup.id && score.name === playerName);
 
   return (
-    <div className="mobile:gap-0 relative flex flex-col items-center gap-2 rounded-2xl bg-black/50 px-4 py-2">
+    <div className="mobile:gap-0 mobile:px-2 mobile:py-1 relative flex flex-col items-center gap-2 rounded-2xl bg-black/50 px-4 py-2">
       <div className="flex w-full flex-1">
         <div
           data-win={revealHighScore && playerScore === highestScore}

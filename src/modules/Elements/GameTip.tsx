@@ -68,5 +68,5 @@ export const GameTip = (props: HTMLProps<HTMLHeadingElement>): ReactNode => {
   const randomValue = useMemo(() => randomInt(0, data.length - 1), []);
   // const randomValue = useMemo(() => randomInt(0, 0), []);
 
-  return <h4 {...props}>{data[randomValue]}</h4>;
+  return <span {...props}>{data[randomValue]}</span>;
 };

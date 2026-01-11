@@ -52,7 +52,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         <GameTip
           data-active="true"
           className={
-            'absolute bottom-10 box-border w-full bg-black/75 px-24 py-5 text-center text-3xl leading-tight text-white ' +
+            'mobile:text-xs mobile:px-2 mobile:py-2 absolute bottom-10 box-border w-full bg-black/75 px-24 py-5 text-center text-3xl leading-tight text-white ' +
             'scale-0 transition-transform duration-300 data-[active=true]:scale-100'
           }
         />
