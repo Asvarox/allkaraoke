@@ -1,8 +1,8 @@
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import isE2E from 'modules/utils/isE2E';
 import { ComponentProps, ComponentType, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twc } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import isE2E from '~/modules/utils/isE2E';
 
 export const ButtonBase = twc(Box)((props) => {
   return [

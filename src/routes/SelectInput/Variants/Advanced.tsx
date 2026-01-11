@@ -1,21 +1,21 @@
-import { MenuButton } from 'modules/Elements/Menu';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import UserMediaEnabled from 'modules/UserMedia/UserMediaEnabled';
-import { useMicrophoneStatus } from 'modules/UserMedia/hooks';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import isChromium from 'modules/utils/isChromium';
-import isWindows from 'modules/utils/isWindows';
 import { useEffect } from 'react';
-import ConnectRemoteMic from 'routes/ConnectRemoteMic/ConnectRemoteMic';
-import { MicrophoneInputSource } from 'routes/SelectInput/InputSources/Microphone';
-import PlayerSelector from 'routes/SelectInput/Variants/Components/PlayerSelector';
-import { useMicrophoneList } from 'routes/SelectInput/hooks/useMicrophoneList';
-import usePlayerNumberPreset from 'routes/SelectInput/hooks/usePlayerNumberPreset';
-import { useRemoteMicAutoselect } from 'routes/SelectInput/hooks/useRemoteMicAutoselect';
-import { MicSetupPreference } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { MenuButton } from '~/modules/Elements/Menu';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import UserMediaEnabled from '~/modules/UserMedia/UserMediaEnabled';
+import { useMicrophoneStatus } from '~/modules/UserMedia/hooks';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import isChromium from '~/modules/utils/isChromium';
+import isWindows from '~/modules/utils/isWindows';
+import ConnectRemoteMic from '~/routes/ConnectRemoteMic/ConnectRemoteMic';
+import { MicrophoneInputSource } from '~/routes/SelectInput/InputSources/Microphone';
+import PlayerSelector from '~/routes/SelectInput/Variants/Components/PlayerSelector';
+import { useMicrophoneList } from '~/routes/SelectInput/hooks/useMicrophoneList';
+import usePlayerNumberPreset from '~/routes/SelectInput/hooks/usePlayerNumberPreset';
+import { useRemoteMicAutoselect } from '~/routes/SelectInput/hooks/useRemoteMicAutoselect';
+import { MicSetupPreference } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;

@@ -1,7 +1,7 @@
 import { uniq } from 'es-toolkit';
-import events from 'modules/GameEvents/GameEvents';
-import { NetworkRemoteMicMyListMessage } from 'modules/RemoteMic/Network/messages';
-import Listener from 'modules/utils/Listener';
+import events from '~/modules/GameEvents/GameEvents';
+import { NetworkRemoteMicMyListMessage } from '~/modules/RemoteMic/Network/messages';
+import Listener from '~/modules/utils/Listener';
 
 class RemoteMicSongList extends Listener<[string[]]> {
   private lists: Record<string, string[]> = {};

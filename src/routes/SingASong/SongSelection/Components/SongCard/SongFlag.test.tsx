@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { generateSong } from 'modules/utils/testUtils';
-import SongFlag from 'routes/SingASong/SongSelection/Components/SongCard/SongFlag';
+import { generateSong } from '~/modules/utils/testUtils';
+import SongFlag from '~/routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 
 describe('SongCard', () => {
   it('SongFlag should not render for GB', async () => {

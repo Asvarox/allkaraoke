@@ -1,4 +1,4 @@
-import { Song, SongPreview } from 'interfaces';
+import { Song, SongPreview } from '~/interfaces';
 import convertTxtToSong from './convertTxtToSong';
 import getSongId from './getSongId';
 

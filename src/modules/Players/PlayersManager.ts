@@ -1,12 +1,12 @@
 import { debounce } from 'es-toolkit';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import events from 'modules/GameEvents/GameEvents';
-import RemoteMicServer from 'modules/RemoteMic/Network/Server';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import storage from 'modules/utils/storage';
-import inputSourceListManager from 'routes/SelectInput/InputSources';
-import { InputSourceNames } from 'routes/SelectInput/InputSources/interfaces';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import events from '~/modules/GameEvents/GameEvents';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import storage from '~/modules/utils/storage';
+import inputSourceListManager from '~/routes/SelectInput/InputSources';
+import { InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';
 
 const SELECTED_INPUTS_KEY = 'playerselectedinputs';
 export const MAX_PLAYERS = 4;

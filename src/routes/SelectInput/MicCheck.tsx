@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import PlayersManager from 'modules/Players/PlayersManager';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import PlayersManager from '~/modules/Players/PlayersManager';
 
 interface Props {
   names?: string[];

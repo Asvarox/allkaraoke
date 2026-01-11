@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import storage from 'modules/utils/storage';
 import { cloneElement, ComponentProps, ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import storage from '~/modules/utils/storage';
 
 export const StyledTooltip = styled(ReactTooltip)`
   &&& {

@@ -1,9 +1,9 @@
-import { transportCloseReason, transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
-import { ClientTransport } from 'modules/RemoteMic/Network/Client/Transport/interface';
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import Listener from 'modules/utils/Listener';
-import peerJSOptions from 'modules/utils/peerJSOptions';
 import { DataConnection, Peer } from 'peerjs';
+import { transportCloseReason, transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { ClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/interface';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import Listener from '~/modules/utils/Listener';
+import peerJSOptions from '~/modules/utils/peerJSOptions';
 
 export class PeerJSClientTransport extends Listener<[NetworkMessages]> implements ClientTransport {
   private peer: Peer | null = null;

@@ -1,9 +1,9 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
 import { ComponentProps } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { HelpEntry } from 'routes/KeyboardHelp/Context';
-import { InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+import { InputLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props extends ComponentProps<typeof Menu.ButtonGroup> {
   focused: boolean;

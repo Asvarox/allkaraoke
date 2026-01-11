@@ -1,6 +1,6 @@
-import { milliseconds, Song, SongPreview } from 'interfaces';
-import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
+import { milliseconds, Song, SongPreview } from '~/interfaces';
+import beatToMs from '~/modules/GameEngine/GameState/Helpers/beatToMs';
+import { getFirstNoteStartFromSections } from '~/modules/Songs/utils/notesSelectors';
 
 export default function getSongFirstNoteMs(song: Song | SongPreview): milliseconds {
   const firstNote = Math.min(

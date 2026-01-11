@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
-import { SongPreview } from 'interfaces';
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import { BackgroundContext } from 'modules/Elements/BackgroundContext';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { useSongStats } from 'modules/Songs/stats/hooks';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, ReactNode, use, useCallback } from 'react';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import SongFlag from 'routes/SingASong/SongSelection/Components/SongCard/SongFlag';
-import { TopContainer } from 'routes/SingASong/SongSelection/Components/SongCard/TopContainer';
+import { SongPreview } from '~/interfaces';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import { BackgroundContext } from '~/modules/Elements/BackgroundContext';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { useSongStats } from '~/modules/Songs/stats/hooks';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import SongFlag from '~/routes/SingASong/SongSelection/Components/SongCard/SongFlag';
+import { TopContainer } from '~/routes/SingASong/SongSelection/Components/SongCard/TopContainer';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;

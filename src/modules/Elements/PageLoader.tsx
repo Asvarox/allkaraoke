@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
-import LogoIcon from 'routes/LandingPage/LogoIcon';
+import LogoIcon from '~/routes/LandingPage/LogoIcon';
 
 export default function PageLoader() {
   const [visible, setVisible] = useState(false);

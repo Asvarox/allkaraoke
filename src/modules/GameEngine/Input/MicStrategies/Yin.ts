@@ -1,4 +1,4 @@
-import { FrequencyDetectionStrategy } from 'modules/GameEngine/Input/MicStrategies/interfaces';
+import { FrequencyDetectionStrategy } from '~/modules/GameEngine/Input/MicStrategies/interfaces';
 
 export default class YinStrategy implements FrequencyDetectionStrategy {
   private detector: ReturnType<typeof YIN> | undefined;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { MenuContainer } from 'modules/Elements/Menu';
 import { useCallback, useEffect, useState } from 'react';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { MenuContainer } from '~/modules/Elements/Menu';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 const FBEmbedCode = (width: number, height: number) => {
   const settings = {

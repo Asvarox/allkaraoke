@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
-import { MAX_NAME_LENGTH } from 'consts';
-import { Input } from 'modules/Elements/Input';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import useDebounce from 'modules/hooks/useDebounce';
 import { ComponentRef, useEffect, useRef, useState } from 'react';
 import { usePrevious, useUnmount } from 'react-use';
+import { MAX_NAME_LENGTH } from '~/consts';
+import { Input } from '~/modules/Elements/Input';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import useDebounce from '~/modules/hooks/useDebounce';
 
 interface Props {
   // children: (props: { onClick: () => void }) => ReactNode;

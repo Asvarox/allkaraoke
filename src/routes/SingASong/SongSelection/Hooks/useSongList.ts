@@ -1,9 +1,9 @@
 import { captureException } from '@sentry/react';
-import { SongPreview } from 'interfaces';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import { ReactNode, useMemo } from 'react';
-import useRecommendedSongs from 'routes/SingASong/SongSelection/Hooks/useRecommendedSongs';
-import { useSongListFilter } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import { SongPreview } from '~/interfaces';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useRecommendedSongs from '~/routes/SingASong/SongSelection/Hooks/useRecommendedSongs';
+import { useSongListFilter } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 export interface SongGroup {
   name: string;

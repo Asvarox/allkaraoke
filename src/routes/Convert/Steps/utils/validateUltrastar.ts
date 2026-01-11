@@ -1,4 +1,4 @@
-import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
+import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
 
 export default function isValidUltrastarTxtFormat(songTxt: string) {
   const lines = songTxt.split('\n');

@@ -1,5 +1,5 @@
-import startViewTransition from 'modules/utils/startViewTransition';
 import { useLocation } from 'wouter';
+import startViewTransition from '~/modules/utils/startViewTransition';
 
 interface Options {
   replace?: boolean;

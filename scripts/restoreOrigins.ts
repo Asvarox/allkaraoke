@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
+import { Song } from '~/interfaces';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 // @ts-ignore file might not exist

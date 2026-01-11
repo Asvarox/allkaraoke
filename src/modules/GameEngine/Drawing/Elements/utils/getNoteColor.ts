@@ -1,4 +1,4 @@
-import { PlayerNote } from 'interfaces';
+import { PlayerNote } from '~/interfaces';
 import styles from '../../styles';
 
 export function getColor(

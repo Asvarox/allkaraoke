@@ -1,11 +1,11 @@
 import { Button } from '@mui/material';
 import dayjs from 'dayjs';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useQueryParam from 'modules/hooks/useQueryParam';
-import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import { useEffect, useMemo } from 'react';
-import { useShareSongs } from 'routes/Edit/ShareSongsModal';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useQueryParam from '~/modules/hooks/useQueryParam';
+import useSmoothNavigate, { buildUrl } from '~/modules/hooks/useSmoothNavigate';
+import { useShareSongs } from '~/routes/Edit/ShareSongsModal';
 
 export default function RedirectToFirstLocalSong() {
   const [, setShareSongs] = useShareSongs();

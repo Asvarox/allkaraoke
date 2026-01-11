@@ -1,17 +1,17 @@
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
-import { Flag } from 'modules/Elements/Flag';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import isE2E from 'modules/utils/isE2E';
-import languageNameToIsoCode from 'modules/utils/languageNameToIsoCode';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
-import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Flag } from '~/modules/Elements/Flag';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import isE2E from '~/modules/utils/isE2E';
+import languageNameToIsoCode from '~/modules/utils/languageNameToIsoCode';
+import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onClose: () => void;

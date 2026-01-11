@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import { ClosableTooltip } from 'modules/Elements/Tooltip';
 import { act } from 'react';
 import { afterEach } from 'vitest';
+import { ClosableTooltip } from '~/modules/Elements/Tooltip';
 
 describe('Tooltip', () => {
   const baseProps = {

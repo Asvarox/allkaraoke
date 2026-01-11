@@ -1,17 +1,17 @@
 import { css, Global } from '@emotion/react';
-import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
 import dayjs from 'dayjs';
-import { SongPreview } from 'interfaces';
-import { GameScreens } from 'modules/Elements/GameScreens';
 import React from 'react';
 import { AbsoluteFill, Audio, interpolate, Series, useVideoConfig } from 'remotion';
 import { Fade, Move } from 'remotion-animated';
-import AbsoluteFrameProvider from 'videos/support/AbsoluteFrame/Provider';
-import { SAnimated } from 'videos/support/Components/common';
-import { Logo } from 'videos/support/Components/Logo';
-import { Scene } from 'videos/support/Components/Scene';
-import { getNewSongsSequenceLength, NewSongs } from 'videos/UpdateVideo/NewSongs';
-import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
+import music from '~/assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
+import { SongPreview } from '~/interfaces';
+import { GameScreens } from '~/modules/Elements/GameScreens';
+import AbsoluteFrameProvider from '~/videos/support/AbsoluteFrame/Provider';
+import { SAnimated } from '~/videos/support/Components/common';
+import { Logo } from '~/videos/support/Components/Logo';
+import { Scene } from '~/videos/support/Components/Scene';
+import { getNewSongsSequenceLength, NewSongs } from '~/videos/UpdateVideo/NewSongs';
+import { getUpdatesSequenceLength, Updates } from '~/videos/UpdateVideo/Updates';
 import songIndex from '../../public/songs/index.json';
 
 const lastUpdate = dayjs('2023-09-01T09:26:15.631Z');

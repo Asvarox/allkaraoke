@@ -15,22 +15,22 @@ import {
   thirdPartyErrorFilterIntegration,
   withProfiler,
 } from '@sentry/react';
-import App from 'App';
 import 'index.css';
-import NoPrerender from 'modules/Elements/NoPrerender';
-import { normalizeSting } from 'modules/Songs/utils/getSongId';
-import isDev from 'modules/utils/isDev';
-import isE2E from 'modules/utils/isE2E';
-import isPreRendering from 'modules/utils/isPreRendering';
-import { randomInt } from 'modules/utils/randomValue';
-import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
-import storage from 'modules/utils/storage';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
-import songStats from 'routes/LandingPage/songStats.json';
 import { v4 } from 'uuid';
+import App from '~/App';
+import NoPrerender from '~/modules/Elements/NoPrerender';
+import { normalizeSting } from '~/modules/Songs/utils/getSongId';
+import isDev from '~/modules/utils/isDev';
+import isE2E from '~/modules/utils/isE2E';
+import isPreRendering from '~/modules/utils/isPreRendering';
+import { randomInt } from '~/modules/utils/randomValue';
+import sentryIgnoreErrors from '~/modules/utils/sentryIgnoreErrors';
+import storage from '~/modules/utils/storage';
+import songStats from '~/routes/LandingPage/songStats.json';
 
 const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
 

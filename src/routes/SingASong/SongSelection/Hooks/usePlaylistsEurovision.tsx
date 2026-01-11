@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { Flag } from 'modules/Elements/Flag';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import { getEurovisionYear } from 'modules/Songs/utils/specialSongsThemeChecks';
-import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
-import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
-import { PlaylistEntry } from 'routes/SingASong/SongSelection/Hooks/usePlaylists';
+import { Flag } from '~/modules/Elements/Flag';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
+import { getEurovisionYear } from '~/modules/Songs/utils/specialSongsThemeChecks';
+import isoCodeToCountry from '~/modules/utils/isoCodeToCountry';
+import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 const EurovisionDisplay = styled.span`
   background-image: linear-gradient(

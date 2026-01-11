@@ -1,6 +1,6 @@
-import InputInterface from 'modules/GameEngine/Input/Interface';
-import { MicInput } from 'modules/GameEngine/Input/MicInput';
-import { SelectedPlayerInput } from 'modules/Players/PlayersManager';
+import InputInterface from '~/modules/GameEngine/Input/Interface';
+import { MicInput } from '~/modules/GameEngine/Input/MicInput';
+import { SelectedPlayerInput } from '~/modules/Players/PlayersManager';
 
 const isDeviceSelectedForMultipleChannels = (allInputs: SelectedPlayerInput[] = [], deviceId: string | undefined) => {
   const playerInputs = allInputs.filter((input) => input.deviceId === deviceId).map((input) => input.channel);

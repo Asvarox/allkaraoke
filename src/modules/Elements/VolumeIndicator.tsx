@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import styles from 'modules/GameEngine/Drawing/styles';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
 import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { usePlayerMicData } from '~/modules/hooks/players/usePlayerMic';
 
 const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   return useMemo(() => {

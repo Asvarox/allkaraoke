@@ -1,6 +1,6 @@
-import { SingSetup, SongPreview } from 'interfaces';
-import SongsService from 'modules/Songs/SongsService';
-import storage from 'modules/utils/storage';
+import { SingSetup, SongPreview } from '~/interfaces';
+import SongsService from '~/modules/Songs/SongsService';
+import storage from '~/modules/utils/storage';
 
 let store: Promise<LocalForage | typeof storage.memory> | null = null;
 

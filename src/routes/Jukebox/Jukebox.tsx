@@ -1,19 +1,19 @@
 import styled from '@emotion/styled';
 import { shuffle } from 'es-toolkit';
-import { SongPreview } from 'interfaces';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import { Button } from 'modules/Elements/Button';
-import NoPrerender from 'modules/Elements/NoPrerender';
-import SmoothLink from 'modules/Elements/SmoothLink';
-import VideoPlayer, { VideoState } from 'modules/Elements/VideoPlayer';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
-import useViewportSize from 'modules/hooks/useViewportSize';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import LayoutGame from 'routes/LayoutGame';
+import { SongPreview } from '~/interfaces';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import { Button } from '~/modules/Elements/Button';
+import NoPrerender from '~/modules/Elements/NoPrerender';
+import SmoothLink from '~/modules/Elements/SmoothLink';
+import VideoPlayer, { VideoState } from '~/modules/Elements/VideoPlayer';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate, { buildUrl } from '~/modules/hooks/useSmoothNavigate';
+import useViewportSize from '~/modules/hooks/useViewportSize';
+import LayoutGame from '~/routes/LayoutGame';
 import SongPage from '../Game/SongPage';
 
 function Jukebox() {

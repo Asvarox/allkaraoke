@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { Switcher } from 'modules/Elements/Switcher';
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { useMicrophoneList } from 'routes/SelectInput/hooks/useMicrophoneList';
-import { usePlayerInput } from 'routes/SelectInput/hooks/usePlayerInput';
+import { Switcher } from '~/modules/Elements/Switcher';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { useMicrophoneList } from '~/routes/SelectInput/hooks/useMicrophoneList';
+import { usePlayerInput } from '~/routes/SelectInput/hooks/usePlayerInput';
 
 interface Props {
   player: PlayerEntity;

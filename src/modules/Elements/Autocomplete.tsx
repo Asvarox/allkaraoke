@@ -1,8 +1,4 @@
 import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
-import { Input } from 'modules/Elements/Input';
-import { nextIndex } from 'modules/Elements/Utils/indexes';
-import styles from 'modules/GameEngine/Drawing/styles';
 import {
   ComponentProps,
   ComponentRef,
@@ -13,6 +9,10 @@ import {
   useRef,
   useState,
 } from 'react';
+import { typography } from '~/modules/Elements/cssMixins';
+import { Input } from '~/modules/Elements/Input';
+import { nextIndex } from '~/modules/Elements/Utils/indexes';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 interface Props extends ComponentProps<typeof Input> {
   label: ReactNode;

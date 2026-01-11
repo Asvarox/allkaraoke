@@ -1,14 +1,14 @@
-import events from 'modules/GameEvents/GameEvents';
-import { SenderInterface } from 'modules/RemoteMic/Network/Server/Transport/interface';
+import events from '~/modules/GameEvents/GameEvents';
+import { SenderInterface } from '~/modules/RemoteMic/Network/Server/Transport/interface';
 import {
   NetworkMessages,
   NetworkSetPermissionsMessage,
   NetworkSubscribeMessage,
-} from 'modules/RemoteMic/Network/messages';
-import { RemoteMic } from 'modules/RemoteMic/RemoteMicInput';
-import Listener from 'modules/utils/Listener';
-import storage from 'modules/utils/storage';
-import { DefaultRemoteMicPermission } from 'routes/Settings/SettingsState';
+} from '~/modules/RemoteMic/Network/messages';
+import { RemoteMic } from '~/modules/RemoteMic/RemoteMicInput';
+import Listener from '~/modules/utils/Listener';
+import storage from '~/modules/utils/storage';
+import { DefaultRemoteMicPermission } from '~/routes/Settings/SettingsState';
 
 const RememberedAccessesKey = 'RememberedAccessesKey';
 const RememberedSubscriptionsKey = 'rememberedSubscriptionsKey';

@@ -1,6 +1,6 @@
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
-import { MenuButton } from 'modules/Elements/Menu';
 import { twMerge } from 'tailwind-merge';
+import { MenuButton } from '~/modules/Elements/Menu';
 
 export const Checkbox = ({
   checked = false,

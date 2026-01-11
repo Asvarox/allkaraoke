@@ -1,6 +1,6 @@
-import { MIDDLEA, SEMITONE } from 'consts';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import pitchToFrequency from 'modules/utils/pitchToFrequency';
+import { MIDDLEA, SEMITONE } from '~/consts';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import pitchToFrequency from '~/modules/utils/pitchToFrequency';
 
 export const pitchFromFrequency = (freq: number) =>
   Math.round(12 * (Math.log(freq / MIDDLEA) / Math.log(2))) + SEMITONE;

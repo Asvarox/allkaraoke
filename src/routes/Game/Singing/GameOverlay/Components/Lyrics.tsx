@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
-import { GAME_MODE, Note } from 'interfaces';
-import styles from 'modules/GameEngine/Drawing/styles';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import PlayersManager, { PlayerEntity } from 'modules/Players/PlayersManager';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, Fragment, PropsWithChildren, useMemo } from 'react';
-import LyricsVolumeIndicator from 'routes/Game/Singing/GameOverlay/Components/LyricsVolumeIndicator';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import tinycolor from 'tinycolor2';
+import { GAME_MODE, Note } from '~/interfaces';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import PlayersManager, { PlayerEntity } from '~/modules/Players/PlayersManager';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from '~/modules/Songs/utils/notesSelectors';
+import LyricsVolumeIndicator from '~/routes/Game/Singing/GameOverlay/Components/LyricsVolumeIndicator';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   player: PlayerEntity;

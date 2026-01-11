@@ -1,6 +1,6 @@
 import { uniq } from 'es-toolkit';
 import { writeFileSync } from 'fs';
-import { SongPreview } from 'interfaces';
+import { SongPreview } from '~/interfaces';
 
 const songStats = {
   artists: [] as string[],

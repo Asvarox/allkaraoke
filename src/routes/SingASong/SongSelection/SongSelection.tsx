@@ -1,18 +1,4 @@
 import styled from '@emotion/styled';
-import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
-import { BackgroundContext, useBackground } from 'modules/Elements/BackgroundContext';
-import { focused, typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import { useSetlist } from 'modules/Songs/hooks/useSetlist';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
-import useBlockScroll from 'modules/hooks/useBlockScroll';
-import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
-import useViewportSize from 'modules/hooks/useViewportSize';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   memo,
@@ -25,19 +11,33 @@ import {
   useState,
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import LayoutGame from 'routes/LayoutGame';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import AdditionalListControls from 'routes/SingASong/SongSelection/Components/AdditionalListControls';
-import BackgroundThumbnail from 'routes/SingASong/SongSelection/Components/BackgroundThumbnail';
-import { Components } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
-import Playlists from 'routes/SingASong/SongSelection/Components/Playlists';
-import { FinalSongCard } from 'routes/SingASong/SongSelection/Components/SongCard';
-import SongGroupsNavigation from 'routes/SingASong/SongSelection/Components/SongGroupsNavigation';
-import SongPreview from 'routes/SingASong/SongSelection/Components/SongPreview';
-import { VirtualizedList, VirtualizedListMethods } from 'routes/SingASong/SongSelection/Components/VirtualizedList';
-import useSongSelection from 'routes/SingASong/SongSelection/Hooks/useSongSelection';
-import { getSongIdWithNew } from 'routes/SingASong/SongSelection/utils/getSongIdWithNew';
 import { Link } from 'wouter';
+import { SingSetup, SongPreview as SongPreviewEntity } from '~/interfaces';
+import { BackgroundContext, useBackground } from '~/modules/Elements/BackgroundContext';
+import { focused, typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import { useSetlist } from '~/modules/Songs/hooks/useSetlist';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useBaseUnitPx from '~/modules/hooks/useBaseUnitPx';
+import useBlockScroll from '~/modules/hooks/useBlockScroll';
+import useSmoothNavigate, { buildUrl } from '~/modules/hooks/useSmoothNavigate';
+import useViewportSize from '~/modules/hooks/useViewportSize';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import LayoutGame from '~/routes/LayoutGame';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import AdditionalListControls from '~/routes/SingASong/SongSelection/Components/AdditionalListControls';
+import BackgroundThumbnail from '~/routes/SingASong/SongSelection/Components/BackgroundThumbnail';
+import { Components } from '~/routes/SingASong/SongSelection/Components/CustomVirtualization';
+import Playlists from '~/routes/SingASong/SongSelection/Components/Playlists';
+import { FinalSongCard } from '~/routes/SingASong/SongSelection/Components/SongCard';
+import SongGroupsNavigation from '~/routes/SingASong/SongSelection/Components/SongGroupsNavigation';
+import SongPreview from '~/routes/SingASong/SongSelection/Components/SongPreview';
+import { VirtualizedList, VirtualizedListMethods } from '~/routes/SingASong/SongSelection/Components/VirtualizedList';
+import useSongSelection from '~/routes/SingASong/SongSelection/Hooks/useSongSelection';
+import { getSongIdWithNew } from '~/routes/SingASong/SongSelection/utils/getSongIdWithNew';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;

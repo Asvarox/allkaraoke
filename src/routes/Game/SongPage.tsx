@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Song, SongPreview } from 'interfaces';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
+import { Song, SongPreview } from '~/interfaces';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 interface Props {
   width: number;

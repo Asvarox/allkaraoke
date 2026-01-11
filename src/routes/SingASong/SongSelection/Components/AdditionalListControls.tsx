@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import { Casino, Search } from '@mui/icons-material';
-import { Button } from 'modules/Elements/Button';
-import { Tooltip } from 'modules/Elements/Tooltip';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { Dispatch, SetStateAction, useState } from 'react';
-import QuickSearch from 'routes/SingASong/SongSelection/Components/QuickSearch';
+import { Button } from '~/modules/Elements/Button';
+import { Tooltip } from '~/modules/Elements/Tooltip';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import QuickSearch from '~/routes/SingASong/SongSelection/Components/QuickSearch';
 
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface Props {
   onRandom: () => void;

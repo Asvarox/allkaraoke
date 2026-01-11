@@ -1,8 +1,8 @@
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import PlayersManager, { MAX_PLAYERS } from 'modules/Players/PlayersManager';
 import { useRef } from 'react';
-import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import PlayersManager, { MAX_PLAYERS } from '~/modules/Players/PlayersManager';
+import { RemoteMicrophoneInputSource } from '~/routes/SelectInput/InputSources/Remote';
 
 export function useRemoteMicAutoselect() {
   const nextPlayerToAutoSwitch = useRef<0 | 1 | 2 | 3>(0);

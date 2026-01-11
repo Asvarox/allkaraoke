@@ -1,4 +1,4 @@
-import { atPolyfill } from 'modules/utils/array-at-polyfill';
+import { atPolyfill } from '~/modules/utils/array-at-polyfill';
 
 describe('Array.at polyfill', () => {
   it('should return the element at the given index', () => {

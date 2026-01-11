@@ -1,10 +1,10 @@
-import { SongPreview } from 'interfaces';
-import { getAllStats } from 'modules/Songs/stats/common';
 import { useMemo } from 'react';
 import { useAsync } from 'react-use';
-import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { SongPreview } from '~/interfaces';
+import { getAllStats } from '~/modules/Songs/stats/common';
+import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
-import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
+import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
 
 const POPULAR_SONGS_MIN_COUNT = 250;
 const POPULAR_SONGS_MAX_COUNT = 750;

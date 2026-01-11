@@ -1,6 +1,6 @@
-import spriteMap, { smallNoteFragments, SpriteNames } from 'modules/GameEngine/Drawing/Elements/Cache/spriteMap';
-import createCanvas from 'modules/GameEngine/Drawing/Elements/Cache/utils/createCanvas';
-import events from 'modules/GameEvents/GameEvents';
+import spriteMap, { smallNoteFragments, SpriteNames } from '~/modules/GameEngine/Drawing/Elements/Cache/spriteMap';
+import createCanvas from '~/modules/GameEngine/Drawing/Elements/Cache/utils/createCanvas';
+import events from '~/modules/GameEvents/GameEvents';
 
 const maxWidth = Math.max(...Object.values(spriteMap).map((sprite) => sprite.padding * 2 + sprite.width));
 const height = Object.values(spriteMap)

@@ -9,11 +9,11 @@ import {
   KeyboardArrowUp,
   Shuffle,
 } from '@mui/icons-material';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { keyStrokes } from 'modules/RemoteMic/Network/messages';
-import RemoteSongSearch from 'routes/RemoteMic/Panels/Microphone/RemoteSongSearch';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { keyStrokes } from '~/modules/RemoteMic/Network/messages';
+import RemoteSongSearch from '~/routes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
 interface Props {
   onSearchStateChange?: (isActive: boolean) => void;

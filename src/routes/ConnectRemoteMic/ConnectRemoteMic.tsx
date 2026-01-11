@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { focused, typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import RemoteMicServer from 'modules/RemoteMic/Network/Server';
-import useQueryParam from 'modules/hooks/useQueryParam';
 import * as qrcode from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
+import { focused, typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
+import useQueryParam from '~/modules/hooks/useQueryParam';
 
 const { QRCodeSVG } = qrcode;
 

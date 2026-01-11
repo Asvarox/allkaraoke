@@ -1,17 +1,17 @@
 import styled from '@emotion/styled';
 import { LockOpen, LockOutlined } from '@mui/icons-material';
 import { Button, Grid } from '@mui/material';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import NoPrerender from 'modules/Elements/NoPrerender';
-import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
-import useSongIndex from 'modules/Songs/hooks/useSongIndex';
-import { encodeSongList } from 'modules/Songs/utils/setlists';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import SongsTable from 'routes/Edit/Components/SongsTable';
 import createPersistedState from 'use-persisted-state';
 import { Link } from 'wouter';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import NoPrerender from '~/modules/Elements/NoPrerender';
+import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
+import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
+import { encodeSongList } from '~/modules/Songs/utils/setlists';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import SongsTable from '~/routes/Edit/Components/SongsTable';
 
 const MAX_SONGS_PER_SETLIST = 300;
 

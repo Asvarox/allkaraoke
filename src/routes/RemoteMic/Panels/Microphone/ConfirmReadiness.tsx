@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import { focused } from 'modules/Elements/cssMixins';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect } from 'modules/GameEvents/hooks';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import storage from 'modules/utils/storage';
 import { useEffect, useState } from 'react';
+import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
+import { focused } from '~/modules/Elements/cssMixins';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import storage from '~/modules/utils/storage';
 
 interface Props {
   onConfirm: () => void;

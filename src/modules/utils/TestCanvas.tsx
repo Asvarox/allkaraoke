@@ -1,15 +1,15 @@
-import { GAME_MODE } from 'interfaces';
-import CanvasDrawing from 'modules/GameEngine/Drawing/CanvasDrawing';
-import { drawSprite, getSprite } from 'modules/GameEngine/Drawing/Elements/Cache/cachedSprites';
-import drawPlayerNote from 'modules/GameEngine/Drawing/Elements/playerNote';
-import roundRect from 'modules/GameEngine/Drawing/Elements/roundRect';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';
-import DrawingTestInput from 'modules/GameEngine/Input/DrawingTestInput';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { mulitrack } from 'modules/Songs/utils/song-fixture';
-import pitchToFrequency from 'modules/utils/pitchToFrequency';
 import { useEffect } from 'react';
+import { GAME_MODE } from '~/interfaces';
+import CanvasDrawing from '~/modules/GameEngine/Drawing/CanvasDrawing';
+import { drawSprite, getSprite } from '~/modules/GameEngine/Drawing/Elements/Cache/cachedSprites';
+import drawPlayerNote from '~/modules/GameEngine/Drawing/Elements/playerNote';
+import roundRect from '~/modules/GameEngine/Drawing/Elements/roundRect';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import beatToMs from '~/modules/GameEngine/GameState/Helpers/beatToMs';
+import DrawingTestInput from '~/modules/GameEngine/Input/DrawingTestInput';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { mulitrack } from '~/modules/Songs/utils/song-fixture';
+import pitchToFrequency from '~/modules/utils/pitchToFrequency';
 
 // Add needed stuff here
 const CanvasTestApi = {

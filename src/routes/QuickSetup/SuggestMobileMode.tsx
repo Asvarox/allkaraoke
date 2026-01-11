@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import LayoutGame from 'routes/LayoutGame';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
+import LayoutGame from '~/routes/LayoutGame';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function SuggestMobilePhone() {
   const [, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

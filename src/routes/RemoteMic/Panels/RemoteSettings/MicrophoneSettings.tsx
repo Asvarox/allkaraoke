@@ -1,10 +1,10 @@
-import { MenuButton } from 'modules/Elements/Menu';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { MIC_ID_KEY } from 'modules/RemoteMic/Network/Client/NetworkClient';
-import storage from 'modules/utils/storage';
 import { useEffect, useState } from 'react';
-import NumericInput from 'routes/RemoteMic/Components/NumericInput';
-import { RemoteMicrophoneLagSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { MenuButton } from '~/modules/Elements/Menu';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { MIC_ID_KEY } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import storage from '~/modules/utils/storage';
+import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
+import { RemoteMicrophoneLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function MicrophoneSettings() {
   const [currentValue, setCurrentValue] = useSettingValue(RemoteMicrophoneLagSetting);

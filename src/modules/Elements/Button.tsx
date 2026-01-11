@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
-import styles from 'modules/GameEngine/Drawing/styles';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
-import { Button as AKUIButton } from 'modules/Elements/AKUI/Button';
-import isE2E from 'modules/utils/isE2E';
+import { Button as AKUIButton } from '~/modules/Elements/AKUI/Button';
+import isE2E from '~/modules/utils/isE2E';
 
 /* eslint-disable react-refresh/only-export-components */
 export const buttonFocusedAnimated = css`

@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-react';
-import { AutocompleteTestWrapper } from 'modules/Elements/Autocomplete';
+import { AutocompleteTestWrapper } from '~/modules/Elements/Autocomplete';
 
 test.use({ viewport: { width: 500, height: 500 } });
 

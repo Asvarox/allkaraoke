@@ -1,7 +1,7 @@
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import tuple from 'modules/utils/tuple';
 import { useEffect, useState } from 'react';
-import { FPSCountSetting } from 'routes/Settings/SettingsState';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import tuple from '~/modules/utils/tuple';
+import { FPSCountSetting } from '~/routes/Settings/SettingsState';
 
 export const usePlayerMicData = (
   playerNumber: 0 | 1 | 2 | 3,

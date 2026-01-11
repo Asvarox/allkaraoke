@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import SmoothLink from 'modules/Elements/SmoothLink';
-import { typography } from 'modules/Elements/cssMixins';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
-import FacebookLink from 'routes/Welcome/FacebookLink';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import SmoothLink from '~/modules/Elements/SmoothLink';
+import { typography } from '~/modules/Elements/cssMixins';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import FacebookLink from '~/routes/Welcome/FacebookLink';
 
 function Welcome() {
   useBackground(true);

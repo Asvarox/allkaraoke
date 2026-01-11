@@ -1,5 +1,5 @@
-import PlayersManager, { MAX_PLAYERS } from 'modules/Players/PlayersManager';
 import { useEffect } from 'react';
+import PlayersManager, { MAX_PLAYERS } from '~/modules/Players/PlayersManager';
 
 export default function usePlayerNumberPreset(targetPlayerCount: number, maxPlayerCount: number = MAX_PLAYERS) {
   useEffect(() => {

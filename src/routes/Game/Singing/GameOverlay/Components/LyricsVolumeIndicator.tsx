@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
-import { PlayerEntity } from 'modules/Players/PlayersManager';
-import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
 import { ComponentProps, memo } from 'react';
-import Ping from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
-import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
+import { PlayerMicCheck } from '~/modules/Elements/VolumeIndicator';
+import { PlayerEntity } from '~/modules/Players/PlayersManager';
+import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
+import Ping from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
+import PlayerStatus from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
 interface Props extends ComponentProps<typeof Container> {
   player: PlayerEntity;

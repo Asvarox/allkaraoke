@@ -1,14 +1,14 @@
-import DrawingTestInput from 'modules/GameEngine/Input/DrawingTestInput';
-import dummyInput from 'modules/GameEngine/Input/DummyInput';
-import InputInterface from 'modules/GameEngine/Input/Interface';
-import MicInput from 'modules/GameEngine/Input/MultiMicInput';
-import RemoteMicInput from 'modules/GameEngine/Input/RemoteMicInput';
-import events from 'modules/GameEvents/GameEvents';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { DrawingTestInputSource } from 'routes/SelectInput/InputSources/DrawingTest';
-import { MicrophoneInputSource } from 'routes/SelectInput/InputSources/Microphone';
-import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
-import { InputSourceNames } from 'routes/SelectInput/InputSources/interfaces';
+import DrawingTestInput from '~/modules/GameEngine/Input/DrawingTestInput';
+import dummyInput from '~/modules/GameEngine/Input/DummyInput';
+import InputInterface from '~/modules/GameEngine/Input/Interface';
+import MicInput from '~/modules/GameEngine/Input/MultiMicInput';
+import RemoteMicInput from '~/modules/GameEngine/Input/RemoteMicInput';
+import events from '~/modules/GameEvents/GameEvents';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { DrawingTestInputSource } from '~/routes/SelectInput/InputSources/DrawingTest';
+import { MicrophoneInputSource } from '~/routes/SelectInput/InputSources/Microphone';
+import { RemoteMicrophoneInputSource } from '~/routes/SelectInput/InputSources/Remote';
+import { InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';
 
 class InputManager {
   private isMonitoring = false;

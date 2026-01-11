@@ -1,10 +1,10 @@
 import uFuzzy from '@leeoniya/ufuzzy';
-import { SongPreview } from 'interfaces';
-import isSongRecentlyUpdated from 'modules/Songs/utils/isSongRecentlyUpdated';
-import clearString, { removeAccents } from 'modules/utils/clearString';
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
-import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import { usePlaylists } from 'routes/SingASong/SongSelection/Hooks/usePlaylists';
+import { SongPreview } from '~/interfaces';
+import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
+import clearString, { removeAccents } from '~/modules/utils/clearString';
+import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import { usePlaylists } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 type FilterFunc = (
   songList: SongPreview[],

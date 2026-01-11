@@ -1,11 +1,11 @@
-import { FrequencyRecord, NotesSection, PlayerNote, songBeat } from 'interfaces';
-import { GameStateClass } from 'modules/GameEngine/GameState/GameState';
-import { appendFrequencyToPlayerNotes } from 'modules/GameEngine/GameState/Helpers/appendFrequencyToPlayerNotes';
-import calculateScore, { calculateDetailedScoreData } from 'modules/GameEngine/GameState/Helpers/calculateScore';
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import events from 'modules/GameEvents/GameEvents';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getNoteAtBeat } from 'modules/Songs/utils/notesSelectors';
+import { FrequencyRecord, NotesSection, PlayerNote, songBeat } from '~/interfaces';
+import { GameStateClass } from '~/modules/GameEngine/GameState/GameState';
+import { appendFrequencyToPlayerNotes } from '~/modules/GameEngine/GameState/Helpers/appendFrequencyToPlayerNotes';
+import calculateScore, { calculateDetailedScoreData } from '~/modules/GameEngine/GameState/Helpers/calculateScore';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import events from '~/modules/GameEvents/GameEvents';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getNoteAtBeat } from '~/modules/Songs/utils/notesSelectors';
 
 class PlayerState {
   private frequencyRecords: FrequencyRecord[] = [];

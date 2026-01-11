@@ -1,11 +1,4 @@
 import styled from '@emotion/styled';
-import { SingSetup, SongPreview } from 'interfaces';
-import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
-import useDebounce from 'modules/hooks/useDebounce';
-import useViewportSize from 'modules/hooks/useViewportSize';
-import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
   PropsWithChildren,
@@ -16,15 +9,22 @@ import {
   useRef,
   useState,
 } from 'react';
-import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { SingSetup, SongPreview } from '~/interfaces';
+import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
+import useDebounce from '~/modules/hooks/useDebounce';
+import useViewportSize from '~/modules/hooks/useViewportSize';
+import { isEurovisionSong } from '~/modules/Songs/utils/specialSongsThemeChecks';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
-} from 'routes/SingASong/SongSelection/Components/SongCard';
-import SongSettings from 'routes/SingASong/SongSelection/Components/SongSettings';
-import { useSpecialTheme } from 'routes/SingASong/SongSelection/Hooks/useSpecialTheme';
+} from '~/routes/SingASong/SongSelection/Components/SongCard';
+import SongSettings from '~/routes/SingASong/SongSelection/Components/SongSettings';
+import { useSpecialTheme } from '~/routes/SingASong/SongSelection/Hooks/useSpecialTheme';
 
 interface Props {
   songPreview: SongPreview;

@@ -1,9 +1,9 @@
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect, useEventListenerSelector } from 'modules/GameEvents/hooks';
-import server from 'modules/RemoteMic/Network/Server';
-import remoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { useState } from 'react';
 import { useInterval } from 'react-use';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect, useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import server from '~/modules/RemoteMic/Network/Server';
+import remoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 
 export default function useRemoteMicServerStatus() {
   const [isOnline, setIsOnline] = useState(() => server.isStarted());

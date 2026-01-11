@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 import { CheckCircleOutline } from '@mui/icons-material';
-import Loader from 'modules/Elements/Loader';
-import { typography } from 'modules/Elements/cssMixins';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventEffect, useEventListenerSelector } from 'modules/GameEvents/hooks';
-import PlayersManager from 'modules/Players/PlayersManager';
-import { waitFinished, waitForReadinessMusic } from 'modules/SoundManager';
-import isE2E from 'modules/utils/isE2E';
-import sleep from 'modules/utils/sleep';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
-import SinglePlayer from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
+import Loader from '~/modules/Elements/Loader';
+import { typography } from '~/modules/Elements/cssMixins';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventEffect, useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { waitFinished, waitForReadinessMusic } from '~/modules/SoundManager';
+import isE2E from '~/modules/utils/isE2E';
+import sleep from '~/modules/utils/sleep';
+import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
 
 interface Props {
   onFinish: () => void;

@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import { Help, HelpOutline, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
-import { Tooltip } from 'modules/Elements/Tooltip';
-import FullscreenButton from 'modules/Toolbar/Fullscreen';
-import QRCodeModal from 'modules/Toolbar/QRCodeModal';
 import { PropsWithChildren, useContext, useState } from 'react';
-import { KeyboardHelpContext } from 'routes/KeyboardHelp/KeyboardHelpContext';
-import { KeyboardHelpVisibilitySetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { Tooltip } from '~/modules/Elements/Tooltip';
+import FullscreenButton from '~/modules/Toolbar/Fullscreen';
+import QRCodeModal from '~/modules/Toolbar/QRCodeModal';
+import { KeyboardHelpContext } from '~/routes/KeyboardHelp/KeyboardHelpContext';
+import { KeyboardHelpVisibilitySetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function Toolbar({ children }: PropsWithChildren) {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { InputWrapper } from 'modules/Elements/AKUI/InputWrapper';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
 import { AnimatePresence, motion } from 'motion/react';
 import { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useImperativeHandle, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { InputWrapper } from '~/modules/Elements/AKUI/InputWrapper';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/useKeyboard';
 
 interface InputRef {
   element: HTMLInputElement | null;

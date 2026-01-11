@@ -1,5 +1,5 @@
-import { SongPreview } from 'interfaces';
 import { useMemo } from 'react';
+import { SongPreview } from '~/interfaces';
 
 export const useLanguageList = (list: Pick<SongPreview, 'language'>[]) => {
   return useMemo(() => {

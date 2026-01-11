@@ -1,4 +1,4 @@
-import { Note, Song } from 'interfaces';
+import { Note, Song } from '~/interfaces';
 import notFalsy from '../../utils/notFalsy';
 import { knownSongTxtKeys, txtTypesMap } from './convertTxtToSong';
 import isNotesSection from './isNotesSection';

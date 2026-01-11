@@ -1,9 +1,9 @@
-import { transportCloseReason, transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
-import { ClientTransport } from 'modules/RemoteMic/Network/Client/Transport/interface';
-import { ForwardedMessage, WEBSOCKETS_SERVER } from 'modules/RemoteMic/Network/Server/Transport/WebSocketServer';
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import { pack, unpack } from 'modules/RemoteMic/Network/utils';
-import Listener from 'modules/utils/Listener';
+import { transportCloseReason, transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { ClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/interface';
+import { ForwardedMessage, WEBSOCKETS_SERVER } from '~/modules/RemoteMic/Network/Server/Transport/WebSocketServer';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import { pack, unpack } from '~/modules/RemoteMic/Network/utils';
+import Listener from '~/modules/utils/Listener';
 
 export class WebSocketClientTransport extends Listener<[NetworkMessages]> implements ClientTransport {
   private connection: WebSocket | null = null;

@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import dayjs from 'dayjs';
-import { HighScoreEntity, SingSetup, Song } from 'interfaces';
-import { Button } from 'modules/Elements/Button';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { useEditScore } from 'modules/Songs/stats/hooks';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import ScoreText from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
+import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
+import { Button } from '~/modules/Elements/Button';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { useEditScore } from '~/modules/Songs/stats/hooks';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import ScoreText from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';
 import HighScoreRename from './HighScoreRename';
 
 interface Props {

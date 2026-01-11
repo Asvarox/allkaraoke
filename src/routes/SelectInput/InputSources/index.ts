@@ -1,11 +1,11 @@
-import events from 'modules/GameEvents/GameEvents';
-import { SelectedPlayerInput } from 'modules/Players/PlayersManager';
-import { DrawingTestInputSource } from 'routes/SelectInput/InputSources/DrawingTest';
+import events from '~/modules/GameEvents/GameEvents';
+import { SelectedPlayerInput } from '~/modules/Players/PlayersManager';
+import { DrawingTestInputSource } from '~/routes/SelectInput/InputSources/DrawingTest';
 import {
   InputSourceList,
   InputSourceManagerInterface,
   InputSourceNames,
-} from 'routes/SelectInput/InputSources/interfaces';
+} from '~/routes/SelectInput/InputSources/interfaces';
 import { DummyInputSource } from './Dummy';
 import { MicrophoneInputSource } from './Microphone';
 import { RemoteMicrophoneInputSource } from './Remote';

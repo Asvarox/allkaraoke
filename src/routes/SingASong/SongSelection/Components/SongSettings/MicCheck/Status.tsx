@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
-import { typography } from 'modules/Elements/cssMixins';
-import { inputStatus } from 'modules/GameEngine/Input/Interface';
 import { ComponentProps } from 'react';
+import { typography } from '~/modules/Elements/cssMixins';
+import { inputStatus } from '~/modules/GameEngine/Input/Interface';
 
 interface Props extends ComponentProps<typeof StatusContainer> {
   status: inputStatus;

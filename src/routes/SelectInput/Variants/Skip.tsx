@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { MicSetupPreference } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { MicSetupPreference } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;

@@ -1,18 +1,18 @@
-import dotparty from 'modules/Elements/dotparty.gif';
-import logoMp4 from 'modules/Elements/logo.mp4';
-import logoWebm from 'modules/Elements/logo.webm';
-import pride from 'modules/Elements/pride.png';
-import santaHat from 'modules/Elements/santas-hat.webp';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import storage from 'modules/utils/storage';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, useContext } from 'react';
 import { twc } from 'react-twc';
-import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import dotparty from '~/modules/Elements/dotparty.gif';
+import logoMp4 from '~/modules/Elements/logo.mp4';
+import logoWebm from '~/modules/Elements/logo.webm';
+import pride from '~/modules/Elements/pride.png';
+import santaHat from '~/modules/Elements/santas-hat.webp';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import storage from '~/modules/utils/storage';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
-import { BackgroundContext } from 'modules/Elements/BackgroundContext';
-import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
-import { EurovisionLogo } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
+import { BackgroundContext } from '~/modules/Elements/BackgroundContext';
+import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { EurovisionLogo } from '~/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
 
 if (global.location?.search.includes('pride')) {
   storage.session.setItem('pride', 'true');

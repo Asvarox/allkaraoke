@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-react';
-import { GAME_MODE } from 'interfaces';
+import { GAME_MODE } from '~/interfaces';
 import { GameOverlayStory } from './GameOverlay.stories';
 
 // This is the way https://playwright.dev/docs/test-parameterize#parameterized-tests

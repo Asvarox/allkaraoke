@@ -1,5 +1,5 @@
-import addHeadstart from 'modules/Songs/utils/processSong/addHeadstart';
-import { generateNote, generateSong } from 'modules/utils/testUtils';
+import addHeadstart from '~/modules/Songs/utils/processSong/addHeadstart';
+import { generateNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('addHeadstart', () => {
   it('should add desired headstart if theres enough gap of it', () => {

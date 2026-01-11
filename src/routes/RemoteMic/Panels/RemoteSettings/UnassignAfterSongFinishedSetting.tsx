@@ -1,6 +1,6 @@
-import { Checkbox } from 'modules/Elements/AKUI/Checkbox';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
+import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 
 function UnassignAfterSongFinishedSetting() {
   const [currentValue, setCurrentValue] = useState(false);

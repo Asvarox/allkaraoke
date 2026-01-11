@@ -1,5 +1,5 @@
-import normaliseGap from 'modules/Songs/utils/processSong/normaliseGap';
-import { generateNote, generateSong } from 'modules/utils/testUtils';
+import normaliseGap from '~/modules/Songs/utils/processSong/normaliseGap';
+import { generateNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('normaliseGap', () => {
   it('should normalise when first section and note doesnt start at 0', () => {

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import PlayersManager from 'modules/Players/PlayersManager';
 import { ComponentProps } from 'react';
-import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import { useDevicePing } from '~/routes/SelectInput/hooks/useDevicePing';
 
 interface Props extends ComponentProps<typeof PingContainer> {
   playerNumber: 0 | 1 | 2 | 3;

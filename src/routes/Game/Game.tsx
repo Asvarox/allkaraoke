@@ -1,14 +1,14 @@
-import { SingSetup, SongPreview } from 'interfaces';
-import CameraManager from 'modules/Camera/CameraManager';
-import NoPrerender from 'modules/Elements/NoPrerender';
-import { woosh } from 'modules/SoundManager';
-import useFullscreen from 'modules/hooks/useFullscreen';
-import useQueryParam from 'modules/hooks/useQueryParam';
-import startViewTransition from 'modules/utils/startViewTransition';
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { Helmet } from 'react-helmet';
-import SingASong from 'routes/SingASong/SingASong';
+import { SingSetup, SongPreview } from '~/interfaces';
+import CameraManager from '~/modules/Camera/CameraManager';
+import NoPrerender from '~/modules/Elements/NoPrerender';
+import { woosh } from '~/modules/SoundManager';
+import useFullscreen from '~/modules/hooks/useFullscreen';
+import useQueryParam from '~/modules/hooks/useQueryParam';
+import startViewTransition from '~/modules/utils/startViewTransition';
+import SingASong from '~/routes/SingASong/SingASong';
 import Singing from './Singing/Singing';
 
 function Game() {

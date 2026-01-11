@@ -1,21 +1,21 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';
-import { switchToTheme } from 'modules/GameEngine/Drawing/styles';
-import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';
-import { useEventEffect, useEventListener } from 'modules/GameEvents/hooks';
-import useQueryParam from 'modules/hooks/useQueryParam';
 import { useLayoutEffect, useState } from 'react';
-import LayoutGame from 'routes/LayoutGame';
-import BottomBar from 'routes/RemoteMic/BottomBar';
-import Microphone from 'routes/RemoteMic/Panels/Microphone';
-import ConfirmReadiness from 'routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
-import Ping from 'routes/RemoteMic/Panels/Microphone/Ping';
-import RemoteSettings from 'routes/RemoteMic/Panels/RemoteSettings';
-import RemoteSongList from 'routes/RemoteMic/Panels/RemoteSongList';
-import useSendInitialSongList from 'routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
+import { switchToTheme } from '~/modules/GameEngine/Drawing/styles';
+import { default as events, default as gameEvents } from '~/modules/GameEvents/GameEvents';
+import { useEventEffect, useEventListener } from '~/modules/GameEvents/hooks';
+import useQueryParam from '~/modules/hooks/useQueryParam';
+import LayoutGame from '~/routes/LayoutGame';
+import BottomBar from '~/routes/RemoteMic/BottomBar';
+import Microphone from '~/routes/RemoteMic/Panels/Microphone';
+import ConfirmReadiness from '~/routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
+import Ping from '~/routes/RemoteMic/Panels/Microphone/Ping';
+import RemoteSettings from '~/routes/RemoteMic/Panels/RemoteSettings';
+import RemoteSongList from '~/routes/RemoteMic/Panels/RemoteSongList';
+import useSendInitialSongList from '~/routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
 
 const noSleep = new NoSleep();
 

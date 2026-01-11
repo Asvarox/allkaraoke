@@ -1,5 +1,5 @@
-import { Song, SongPreview } from 'interfaces';
-import getSongFirstNoteMs from 'modules/Songs/utils/getSongFirstNoteMs';
+import { Song, SongPreview } from '~/interfaces';
+import getSongFirstNoteMs from '~/modules/Songs/utils/getSongFirstNoteMs';
 
 const SKIP_INTRO_THRESHOLD_MS = 20_000;
 

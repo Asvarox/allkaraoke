@@ -1,10 +1,10 @@
-import { seconds } from 'interfaces';
-import { VideoState } from 'modules/Elements/VideoPlayer/VideoState';
-import usePlayerVolume from 'modules/hooks/usePlayerVolume';
-import useUnstuckYouTubePlayer from 'modules/hooks/useUnstuckYouTubePlayer';
 import { ForwardedRef, forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
+import { seconds } from '~/interfaces';
+import { VideoState } from '~/modules/Elements/VideoPlayer/VideoState';
+import usePlayerVolume from '~/modules/hooks/usePlayerVolume';
+import useUnstuckYouTubePlayer from '~/modules/hooks/useUnstuckYouTubePlayer';
 
 const stateMap = {
   [YouTube.PlayerState.UNSTARTED]: VideoState.UNSTARTED,

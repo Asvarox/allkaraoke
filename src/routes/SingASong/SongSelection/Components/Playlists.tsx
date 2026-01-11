@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { Button } from 'modules/Elements/Button';
-import { focusedStatic, typography } from 'modules/Elements/cssMixins';
-import { useOnClickOutside } from 'modules/hooks/onClickOutside';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import { useEffect, useRef } from 'react';
-import { PlaylistEntry } from 'routes/SingASong/SongSelection/Hooks/usePlaylists';
+import { Button } from '~/modules/Elements/Button';
+import { focusedStatic, typography } from '~/modules/Elements/cssMixins';
+import { useOnClickOutside } from '~/modules/hooks/onClickOutside';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 interface Props {
   selectedPlaylist: string | null;

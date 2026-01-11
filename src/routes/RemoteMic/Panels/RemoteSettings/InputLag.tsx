@@ -1,7 +1,7 @@
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
-import NumericInput from 'routes/RemoteMic/Components/NumericInput';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
 
 function RemoteInputLag() {
   const [currentValue, setCurrentValue] = useState(0);

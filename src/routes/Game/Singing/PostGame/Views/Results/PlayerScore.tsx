@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
-import { HighScoreEntity, SingSetup } from 'interfaces';
-import { Badge } from 'modules/Elements/Badge';
-import { buttonFocused } from 'modules/Elements/Button';
-import styles from 'modules/GameEngine/Drawing/styles';
 import CountUp from 'react-countup';
-import { formatter } from 'routes/Game/Singing/GameOverlay/Components/ScoreText';
-import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
-import PlayerDetailedScore from 'routes/Game/Singing/PostGame/Views/Results/PlayerDetailedScore';
-import { ContentElement } from 'routes/Game/SongPage';
+import { HighScoreEntity, SingSetup } from '~/interfaces';
+import { Badge } from '~/modules/Elements/Badge';
+import { buttonFocused } from '~/modules/Elements/Button';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { formatter } from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';
+import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';
+import PlayerDetailedScore from '~/routes/Game/Singing/PostGame/Views/Results/PlayerDetailedScore';
+import { ContentElement } from '~/routes/Game/SongPage';
 
 interface Props {
   player: PlayerScore;

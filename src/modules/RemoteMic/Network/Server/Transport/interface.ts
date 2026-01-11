@@ -1,5 +1,5 @@
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import Listener from 'modules/utils/Listener';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import Listener from '~/modules/utils/Listener';
 
 export interface SenderInterface {
   peer: string;

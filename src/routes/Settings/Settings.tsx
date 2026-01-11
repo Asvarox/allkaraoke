@@ -1,16 +1,16 @@
-import CameraManager from 'modules/Camera/CameraManager';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import Loader from 'modules/Elements/Loader';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { Switcher } from 'modules/Elements/Switcher';
-import { nextValue } from 'modules/Elements/Utils/indexes';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { ReactNode, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import CameraManager from '~/modules/Camera/CameraManager';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import Loader from '~/modules/Elements/Loader';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import { Switcher } from '~/modules/Elements/Switcher';
+import { nextValue } from '~/modules/Elements/Utils/indexes';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 import {
   FpsCount,
   FPSCountSetting,
@@ -18,7 +18,7 @@ import {
   GraphicsLevel,
   MobilePhoneModeSetting,
   useSettingValue,
-} from 'routes/Settings/SettingsState';
+} from '~/routes/Settings/SettingsState';
 
 function Settings() {
   useBackgroundMusic(false);

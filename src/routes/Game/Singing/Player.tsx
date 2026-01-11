@@ -1,4 +1,3 @@
-import { milliseconds, seconds, SingSetup, Song } from 'interfaces';
 import {
   ComponentProps,
   RefAttributes,
@@ -10,15 +9,16 @@ import {
   useRef,
   useState,
 } from 'react';
+import { milliseconds, seconds, SingSetup, Song } from '~/interfaces';
 
 import styled from '@emotion/styled';
-import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
-import useKeyboard from 'modules/hooks/useKeyboard';
-import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
-import usePrevious from 'modules/hooks/usePrevious';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
-import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
+import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
+import useKeyboard from '~/modules/hooks/useKeyboard';
+import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
+import usePrevious from '~/modules/hooks/usePrevious';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { useVideoPlayer } from '~/routes/Game/Singing/Hooks/useVideoPlayer';
 import GameState from '../../../modules/GameEngine/GameState/GameState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';

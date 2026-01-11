@@ -1,4 +1,4 @@
-import getPlayerScoreData from 'routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
+import getPlayerScoreData from '~/routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
 
 describe('getPlayerScoreData', () => {
   it('should return isFirst = true if the player has the biggest score', () => {

@@ -1,4 +1,4 @@
-import { Song } from 'interfaces';
+import { Song } from '~/interfaces';
 
 export const mulitrack: Song = {
   id: 'multitrack',

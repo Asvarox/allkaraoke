@@ -1,11 +1,11 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 import { captureException } from '@sentry/react';
-import SongDao from 'modules/Songs/SongsService';
-import convertSongToTxt from 'modules/Songs/utils/convertSongToTxt';
-import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { useState } from 'react';
 import createPersistedState from 'use-persisted-state';
+import SongDao from '~/modules/Songs/SongsService';
+import convertSongToTxt from '~/modules/Songs/utils/convertSongToTxt';
+import storage from '~/modules/utils/storage';
 
 interface Props {
   id?: string | null;

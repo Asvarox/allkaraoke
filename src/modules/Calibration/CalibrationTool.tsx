@@ -1,9 +1,9 @@
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import { useEffect, useRef, useState } from 'react';
 import { useMeasure } from 'react-use';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
 
-import { useVideoPlayer } from 'routes/Game/Singing/Hooks/useVideoPlayer';
+import { useVideoPlayer } from '~/routes/Game/Singing/Hooks/useVideoPlayer';
 
 export const CalibrationTool = () => {
   const [playerContainer, { width }] = useMeasure<HTMLDivElement>();

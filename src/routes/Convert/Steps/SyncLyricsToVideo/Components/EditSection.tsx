@@ -11,14 +11,14 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { Song } from 'interfaces';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections, getSectionStartInMs } from 'modules/Songs/utils/notesSelectors';
 import { useEffect, useState } from 'react';
-import { msec } from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
-import useCurrentSectionIndex from 'routes/Game/Singing/Hooks/useCurrentSectionIndex';
-import { PlayerRef } from 'routes/Game/Singing/Player';
+import { Song } from '~/interfaces';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections, getSectionStartInMs } from '~/modules/Songs/utils/notesSelectors';
+import { msec } from '~/routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import useCurrentSectionIndex from '~/routes/Game/Singing/Hooks/useCurrentSectionIndex';
+import { PlayerRef } from '~/routes/Game/Singing/Player';
 
 interface Props {
   song: Song;

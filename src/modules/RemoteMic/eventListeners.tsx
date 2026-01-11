@@ -1,9 +1,9 @@
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import events from 'modules/GameEvents/GameEvents';
-import PlayersManager from 'modules/Players/PlayersManager';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import isPreRendering from 'modules/utils/isPreRendering';
-import { RemoteMicrophoneInputSource } from 'routes/SelectInput/InputSources/Remote';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import events from '~/modules/GameEvents/GameEvents';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import isPreRendering from '~/modules/utils/isPreRendering';
+import { RemoteMicrophoneInputSource } from '~/routes/SelectInput/InputSources/Remote';
 
 events.playerRemoved.subscribe((player) => {
   if (player.input.source === RemoteMicrophoneInputSource.inputName) {

@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { DetailedScore, SingSetup, Song } from 'interfaces';
-import { GameTip } from 'modules/Elements/GameTip';
-import { typography } from 'modules/Elements/cssMixins';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import { useState } from 'react';
-import ResultsView from 'routes/Game/Singing/PostGame/Views/Results';
-import { BackgroundThemeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { DetailedScore, SingSetup, Song } from '~/interfaces';
+import { GameTip } from '~/modules/Elements/GameTip';
+import { typography } from '~/modules/Elements/cssMixins';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import ResultsView from '~/routes/Game/Singing/PostGame/Views/Results';
+import { BackgroundThemeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import SongPage from '../../SongPage';
 import HighScoresView from './Views/HighScores';
 

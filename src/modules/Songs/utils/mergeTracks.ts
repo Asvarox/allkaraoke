@@ -1,4 +1,4 @@
-import { NotesSection, Song, SongTrack } from 'interfaces';
+import { NotesSection, Song, SongTrack } from '~/interfaces';
 import clearString from '../../utils/clearString';
 import { generatePlayerChangesForTrack } from './generatePlayerChanges';
 import isNotesSection from './isNotesSection';

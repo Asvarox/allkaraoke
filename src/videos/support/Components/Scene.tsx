@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { BackgroundStatic } from 'modules/Elements/LayoutWithBackground';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import { PropsWithChildren } from 'react';
 import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
-import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
-import { TransitionCircles } from 'videos/support/Components/TransitionCircles';
+import { BackgroundStatic } from '~/modules/Elements/LayoutWithBackground';
+import { colorSets } from '~/modules/GameEngine/Drawing/styles';
+import useAbsoluteFrame from '~/videos/support/AbsoluteFrame/useAbsoluteFrame';
+import { TransitionCircles } from '~/videos/support/Components/TransitionCircles';
 
 const BackgroundVariant = styled(BackgroundStatic)`
   &[data-red='true'] {

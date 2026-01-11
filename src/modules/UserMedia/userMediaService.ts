@@ -1,4 +1,4 @@
-import Listener from 'modules/utils/Listener';
+import Listener from '~/modules/utils/Listener';
 
 type accessStatus = 'uninitialised' | 'requested' | 'accepted' | 'declined';
 class UserMediaService extends Listener<[accessStatus]> {

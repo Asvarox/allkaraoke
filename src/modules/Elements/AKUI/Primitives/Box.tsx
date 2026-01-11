@@ -1,6 +1,6 @@
-import { PolymorphicProps } from 'modules/Elements/AKUI/types';
 import { ElementType } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { PolymorphicProps } from '~/modules/Elements/AKUI/types';
 
 type Props<T extends ElementType> = PolymorphicProps<T>;
 

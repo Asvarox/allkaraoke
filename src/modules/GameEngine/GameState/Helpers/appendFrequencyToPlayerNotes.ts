@@ -1,7 +1,7 @@
-import { noDistanceNoteTypes } from 'consts';
-import { FrequencyRecord, Note, PlayerNote } from 'interfaces';
-import { calcDistance } from 'modules/GameEngine/GameState/Helpers/calcDistance';
-import detectVibrato from 'modules/GameEngine/GameState/Helpers/detectVibrato';
+import { noDistanceNoteTypes } from '~/consts';
+import { FrequencyRecord, Note, PlayerNote } from '~/interfaces';
+import { calcDistance } from '~/modules/GameEngine/GameState/Helpers/calcDistance';
+import detectVibrato from '~/modules/GameEngine/GameState/Helpers/detectVibrato';
 
 const SINGING_BREAK_TOLERANCE_MS = 100;
 

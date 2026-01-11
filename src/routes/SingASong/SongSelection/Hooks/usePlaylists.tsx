@@ -1,19 +1,19 @@
-import { SongPreview } from 'interfaces';
-import { ClosableTooltip } from 'modules/Elements/Tooltip';
-// import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
-// import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { SongPreview } from '~/interfaces';
+import { ClosableTooltip } from '~/modules/Elements/Tooltip';
+// import isoCodeToCountry from '~/modules/utils/isoCodeToCountry';
+// import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { List } from '@mui/icons-material';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
-import useRemoteMicServerStatus from 'modules/RemoteMic/hooks/useRemoteMicServerStatus';
-import { useLanguageList } from 'modules/Songs/hooks/useLanguageList';
-import useRemoteMicSongList from 'modules/Songs/hooks/useRemoteMicSongList';
-import { useSetlist } from 'modules/Songs/hooks/useSetlist';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
-import { eurovisionPlaylist } from 'routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
-import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import useRemoteMicServerStatus from '~/modules/RemoteMic/hooks/useRemoteMicServerStatus';
+import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
+import useRemoteMicSongList from '~/modules/Songs/hooks/useRemoteMicSongList';
+import { useSetlist } from '~/modules/Songs/hooks/useSetlist';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import useFeatureFlag from '~/modules/utils/useFeatureFlag';
+import { eurovisionPlaylist } from '~/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
+import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 export interface PlaylistEntry {
   name: string;

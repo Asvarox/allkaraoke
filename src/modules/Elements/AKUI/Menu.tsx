@@ -1,8 +1,8 @@
-import { MenuButton } from 'modules/Elements/AKUI/Menu/MenuButton';
-import Box from 'modules/Elements/AKUI/Primitives/Box';
-import Typography from 'modules/Elements/AKUI/Primitives/Typography';
 import { HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twc } from 'react-twc';
+import { MenuButton } from '~/modules/Elements/AKUI/Menu/MenuButton';
+import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 
 const MenuContainer = twc(
   Box,

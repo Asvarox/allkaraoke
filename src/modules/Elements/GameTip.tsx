@@ -1,6 +1,6 @@
 import { QrCode2 } from '@mui/icons-material';
-import { randomInt } from 'modules/utils/randomValue';
 import { HTMLProps, ReactNode, useMemo } from 'react';
+import { randomInt } from '~/modules/utils/randomValue';
 
 const data = [
   <>

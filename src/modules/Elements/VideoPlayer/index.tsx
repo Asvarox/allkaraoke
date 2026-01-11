@@ -1,5 +1,5 @@
-import isE2E from 'modules/utils/isE2E';
 import { ComponentProps, ForwardedRef, forwardRef } from 'react';
+import isE2E from '~/modules/utils/isE2E';
 import OfflineVideoPlayer from './Offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './Youtube';
 
@@ -15,5 +15,5 @@ const VideoPlayer = forwardRef(
 
 export default VideoPlayer;
 
-export { VideoState } from 'modules/Elements/VideoPlayer/VideoState';
+export { VideoState } from '~/modules/Elements/VideoPlayer/VideoState';
 export type { VideoPlayerRef } from './Youtube';

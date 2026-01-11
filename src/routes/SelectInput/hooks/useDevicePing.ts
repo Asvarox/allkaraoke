@@ -1,5 +1,5 @@
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { useEffect, useState } from 'react';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 
 export const useDevicePing = (deviceId?: string) => {
   const [latency, setLatency] = useState<number | null>(null);

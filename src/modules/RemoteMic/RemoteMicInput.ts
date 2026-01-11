@@ -1,7 +1,7 @@
-import { SenderInterface } from 'modules/RemoteMic/Network/Server/Transport/interface';
-import { NetworkMessages, NetworkSetPermissionsMessage } from 'modules/RemoteMic/Network/messages';
-import sendMessage from 'modules/RemoteMic/Network/sendMessage';
-import { getPingTime } from 'modules/RemoteMic/Network/utils';
+import { SenderInterface } from '~/modules/RemoteMic/Network/Server/Transport/interface';
+import { NetworkMessages, NetworkSetPermissionsMessage } from '~/modules/RemoteMic/Network/messages';
+import sendMessage from '~/modules/RemoteMic/Network/sendMessage';
+import { getPingTime } from '~/modules/RemoteMic/Network/utils';
 
 class RemoteMicInput {
   private frequencies: number[] | number[][] = [0];

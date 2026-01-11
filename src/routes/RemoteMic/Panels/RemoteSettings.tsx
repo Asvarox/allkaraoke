@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
-import Modal from 'modules/Elements/Modal';
-import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
-import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import { useState } from 'react';
-import RemoteInputLag from 'routes/RemoteMic/Panels/RemoteSettings/InputLag';
-import ManagePlayers from 'routes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
-import MicrophoneSettings from 'routes/RemoteMic/Panels/RemoteSettings/MicrophoneSettings';
-import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
-import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
+import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
+import Modal from '~/modules/Elements/Modal';
+import SimplifiedMic from '~/modules/GameEngine/Input/SimplifiedMic';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import RemoteInputLag from '~/routes/RemoteMic/Panels/RemoteSettings/InputLag';
+import ManagePlayers from '~/routes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
+import MicrophoneSettings from '~/routes/RemoteMic/Panels/RemoteSettings/MicrophoneSettings';
+import { ConnectionStatuses } from '~/routes/RemoteMic/RemoteMic';
+import usePermissions from '~/routes/RemoteMic/hooks/usePermissions';
 import UnassignAfterSongFinishedSetting from './RemoteSettings/UnassignAfterSongFinishedSetting';
 
 interface Props {

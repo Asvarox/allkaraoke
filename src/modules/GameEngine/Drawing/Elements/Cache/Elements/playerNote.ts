@@ -1,6 +1,6 @@
-import applyColor from 'modules/GameEngine/Drawing/applyColor';
-import roundRect from 'modules/GameEngine/Drawing/Elements/roundRect';
-import * as test from 'modules/GameEngine/Drawing/Elements/utils/getNoteColor';
+import applyColor from '~/modules/GameEngine/Drawing/applyColor';
+import roundRect from '~/modules/GameEngine/Drawing/Elements/roundRect';
+import * as test from '~/modules/GameEngine/Drawing/Elements/utils/getNoteColor';
 
 export default function drawRawPlayerNote(
   ctx: CanvasRenderingContext2D,

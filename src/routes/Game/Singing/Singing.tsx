@@ -1,26 +1,26 @@
 import styled from '@emotion/styled';
-import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
-import { Calibration } from 'modules/Calibration/Calibration';
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { useBackground } from 'modules/Elements/BackgroundContext';
-import Modal from 'modules/Elements/Modal';
-import { VideoState } from 'modules/Elements/VideoPlayer';
-import GameState from 'modules/GameEngine/GameState/GameState';
-import events from 'modules/GameEvents/GameEvents';
-import PlayersManager from 'modules/Players/PlayersManager';
-import useSong from 'modules/Songs/hooks/useSong';
-import useBlockScroll from 'modules/hooks/useBlockScroll';
-import useFullscreen from 'modules/hooks/useFullscreen';
-import useViewportSize from 'modules/hooks/useViewportSize';
 import { useEffect, useRef, useState } from 'react';
-import { CalibrationIntro } from 'routes/Game/Singing/CalibrationIntro';
-import WaitForReadiness from 'routes/Game/Singing/WaitForReadiness';
-import LayoutGame from 'routes/LayoutGame';
-import { IsCalibratedSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import { GAME_MODE, SingSetup, SongPreview } from '~/interfaces';
+import { Calibration } from '~/modules/Calibration/Calibration';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { useBackground } from '~/modules/Elements/BackgroundContext';
+import Modal from '~/modules/Elements/Modal';
+import { VideoState } from '~/modules/Elements/VideoPlayer';
+import GameState from '~/modules/GameEngine/GameState/GameState';
+import events from '~/modules/GameEvents/GameEvents';
+import PlayersManager from '~/modules/Players/PlayersManager';
+import useSong from '~/modules/Songs/hooks/useSong';
+import useBlockScroll from '~/modules/hooks/useBlockScroll';
+import useFullscreen from '~/modules/hooks/useFullscreen';
+import useViewportSize from '~/modules/hooks/useViewportSize';
+import { CalibrationIntro } from '~/routes/Game/Singing/CalibrationIntro';
+import WaitForReadiness from '~/routes/Game/Singing/WaitForReadiness';
+import LayoutGame from '~/routes/LayoutGame';
+import { IsCalibratedSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import {
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
-} from 'routes/SingASong/SongSelection/Components/SongCard';
+} from '~/routes/SingASong/SongSelection/Components/SongCard';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 

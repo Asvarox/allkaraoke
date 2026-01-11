@@ -1,9 +1,9 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import Modal from 'modules/Elements/Modal';
 import 'modules/RemoteMic/eventListeners';
 import 'modules/Stats';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import ConnectRemoteMic from 'routes/ConnectRemoteMic/ConnectRemoteMic';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import Modal from '~/modules/Elements/Modal';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import ConnectRemoteMic from '~/routes/ConnectRemoteMic/ConnectRemoteMic';
 
 interface Props {
   open: boolean;

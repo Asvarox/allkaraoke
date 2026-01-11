@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
 import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import storage from 'modules/utils/storage';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import storage from '~/modules/utils/storage';
 
 export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
   const errorObj = error as object;

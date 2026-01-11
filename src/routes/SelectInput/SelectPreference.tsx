@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
-import { Badge } from 'modules/Elements/Badge';
-import { MenuButton } from 'modules/Elements/Menu';
-import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
-import { focused, typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import { Badge } from '~/modules/Elements/Badge';
+import { MenuButton } from '~/modules/Elements/Menu';
+import { MicIconBlue, MicIconRed } from '~/modules/Elements/MicIcon';
+import { focused, typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   onPreferenceSelected: (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => void;

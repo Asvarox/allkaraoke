@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { List as ListIcon, Settings as SettingsIcon } from '@mui/icons-material';
-import { MicIcon } from 'modules/Elements/MicIcon';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { PhoneTabs } from 'routes/RemoteMic/RemoteMic';
+import { MicIcon } from '~/modules/Elements/MicIcon';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { PhoneTabs } from '~/routes/RemoteMic/RemoteMic';
 
 interface Props {
   active: PhoneTabs;

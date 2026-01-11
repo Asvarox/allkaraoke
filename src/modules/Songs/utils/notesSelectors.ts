@@ -1,4 +1,4 @@
-import { milliseconds, NotesSection, Section, Song, songBeat } from 'interfaces';
+import { milliseconds, NotesSection, Section, Song, songBeat } from '~/interfaces';
 import getSongBeatLength from './getSongBeatLength';
 import isNotesSection from './isNotesSection';
 

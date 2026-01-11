@@ -1,10 +1,10 @@
-import { Menu } from 'modules/Elements/AKUI/Menu';
-import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
-import styles from 'modules/GameEngine/Drawing/styles';
-import { default as events, default as gameEvents } from 'modules/GameEvents/GameEvents';
-import { useEventListener } from 'modules/GameEvents/hooks';
-import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import React, { useEffect } from 'react';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
+import styles from '~/modules/GameEngine/Drawing/styles';
+import { default as events, default as gameEvents } from '~/modules/GameEvents/GameEvents';
+import { useEventListener } from '~/modules/GameEvents/hooks';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 
 interface Props {
   id: string;

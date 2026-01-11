@@ -1,6 +1,6 @@
 import { isEqual } from 'es-toolkit';
-import usePrevious from 'modules/hooks/usePrevious';
 import { EffectCallback, useEffect } from 'react';
+import usePrevious from '~/modules/hooks/usePrevious';
 
 export default function useEffectDebugger(
   effectHook: EffectCallback,

@@ -1,15 +1,15 @@
-import { GAME_MODE, milliseconds, seconds, SingSetup, Song, songBeat } from 'interfaces';
+import { GAME_MODE, milliseconds, seconds, SingSetup, Song, songBeat } from '~/interfaces';
 import {
   addDetailedScores,
   beatsToPoints,
   divideDetailedScores,
-} from 'modules/GameEngine/GameState/Helpers/calculateScore';
-import getCurrentBeat from 'modules/GameEngine/GameState/Helpers/getCurrentBeat';
-import PlayerState from 'modules/GameEngine/GameState/PlayerState';
-import InputManager from 'modules/GameEngine/Input/InputManager';
-import getSongBeatCount from 'modules/Songs/utils/getSongBeatCount';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
-import tuple from 'modules/utils/tuple';
+} from '~/modules/GameEngine/GameState/Helpers/calculateScore';
+import getCurrentBeat from '~/modules/GameEngine/GameState/Helpers/getCurrentBeat';
+import PlayerState from '~/modules/GameEngine/GameState/PlayerState';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import getSongBeatCount from '~/modules/Songs/utils/getSongBeatCount';
+import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
+import tuple from '~/modules/utils/tuple';
 
 export class GameStateClass {
   private song: Song | null = null;

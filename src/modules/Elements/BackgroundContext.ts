@@ -1,5 +1,5 @@
-import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
 import { createContext, useContext, useEffect } from 'react';
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
 
 export const BackgroundContext = createContext({
   visible: true,

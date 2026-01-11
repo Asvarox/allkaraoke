@@ -1,7 +1,7 @@
-import { Section, Song, SongTrack } from 'interfaces';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { HEADSTART_MS } from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
+import { Section, Song, SongTrack } from '~/interfaces';
+import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { HEADSTART_MS } from '~/modules/Songs/utils/processSong/normaliseSectionPaddings';
 
 const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
   sections.map((section, index) => {

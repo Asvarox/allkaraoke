@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { InputWrapper } from 'modules/Elements/AKUI/InputWrapper';
-import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, ReactNode } from 'react';
+import { InputWrapper } from '~/modules/Elements/AKUI/InputWrapper';
+import { typography } from '~/modules/Elements/cssMixins';
+import styles from '~/modules/GameEngine/Drawing/styles';
 
 interface Props extends PropsWithChildren, ComponentProps<typeof ConfigurationPosition> {
   focused?: boolean;

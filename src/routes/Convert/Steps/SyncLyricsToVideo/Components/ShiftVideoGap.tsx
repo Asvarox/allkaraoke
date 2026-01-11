@@ -1,7 +1,7 @@
 import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
-import { seconds } from 'interfaces';
-import { msec } from 'routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
-import { PlayerRef } from 'routes/Game/Singing/Player';
+import { seconds } from '~/interfaces';
+import { msec } from '~/routes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import { PlayerRef } from '~/routes/Game/Singing/Player';
 
 interface Props {
   onChange: (shift: seconds) => void;

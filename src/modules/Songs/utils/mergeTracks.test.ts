@@ -1,10 +1,10 @@
 import { readFileSync } from 'fs';
-import { Song, SongTrack } from 'interfaces';
-import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import mergeTracks from 'modules/Songs/utils/mergeTracks';
-import { getLastNoteEnd } from 'modules/Songs/utils/notesSelectors';
-import { generateSong } from 'modules/utils/testUtils';
+import { Song, SongTrack } from '~/interfaces';
+import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import mergeTracks from '~/modules/Songs/utils/mergeTracks';
+import { getLastNoteEnd } from '~/modules/Songs/utils/notesSelectors';
+import { generateSong } from '~/modules/utils/testUtils';
 
 const trackToLyrics = (track: SongTrack) =>
   track.sections

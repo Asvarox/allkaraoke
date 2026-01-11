@@ -1,4 +1,4 @@
-import { calcDistanceBetweenPitches } from 'modules/GameEngine/GameState/Helpers/calcDistance';
+import { calcDistanceBetweenPitches } from '~/modules/GameEngine/GameState/Helpers/calcDistance';
 
 describe('calcDistanceBetweenPitches', () => {
   it.each`

@@ -1,5 +1,5 @@
-import normaliseSectionPaddings from 'modules/Songs/utils/processSong/normaliseSectionPaddings';
-import { generateNote, generateSong } from 'modules/utils/testUtils';
+import normaliseSectionPaddings from '~/modules/Songs/utils/processSong/normaliseSectionPaddings';
+import { generateNote, generateSong } from '~/modules/utils/testUtils';
 
 describe('normaliseSectionPaddings', () => {
   it('should add max possible padding to the next section if theres no space to optimal one', () => {

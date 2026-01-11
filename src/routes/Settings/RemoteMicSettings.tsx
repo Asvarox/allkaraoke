@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { MenuButton } from 'modules/Elements/Menu';
-import MenuWithLogo from 'modules/Elements/MenuWithLogo';
-import { Switcher } from 'modules/Elements/Switcher';
-import events from 'modules/GameEvents/GameEvents';
-import { useEventListenerSelector } from 'modules/GameEvents/hooks';
-import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
-import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
+import { MenuButton } from '~/modules/Elements/Menu';
+import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
+import { Switcher } from '~/modules/Elements/Switcher';
+import events from '~/modules/GameEvents/GameEvents';
+import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
+import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
+import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 import {
   DefaultRemoteMicPermission,
   RemoteMicConnectionType,
@@ -17,12 +17,12 @@ import {
   RemoteMicPermissions,
   UnassignOnSongFinishedSetting,
   useSettingValue,
-} from 'routes/Settings/SettingsState';
+} from '~/routes/Settings/SettingsState';
 
-import { Checkbox } from 'modules/Elements/AKUI/Checkbox';
-import { nextValue } from 'modules/Elements/Utils/indexes';
-import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
-import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
+import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
+import { nextValue } from '~/modules/Elements/Utils/indexes';
+import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/RemoteMic/Network/Server/NetworkServer';
+import { useDevicePing } from '~/routes/SelectInput/hooks/useDevicePing';
 
 function RemoteMicSettings() {
   useBackgroundMusic(false);

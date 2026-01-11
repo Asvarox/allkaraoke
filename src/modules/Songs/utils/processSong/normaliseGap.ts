@@ -1,7 +1,7 @@
-import { Section, Song, SongTrack } from 'interfaces';
-import getSongBeatLength from 'modules/Songs/utils/getSongBeatLength';
-import isNotesSection from 'modules/Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'modules/Songs/utils/notesSelectors';
+import { Section, Song, SongTrack } from '~/interfaces';
+import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
+import isNotesSection from '~/modules/Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from '~/modules/Songs/utils/notesSelectors';
 
 const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
   sections

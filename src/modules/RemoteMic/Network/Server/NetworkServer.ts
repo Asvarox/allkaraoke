@@ -1,16 +1,16 @@
-import events from 'modules/GameEvents/GameEvents';
-import { PartyKitServerTransport } from 'modules/RemoteMic/Network/Server/Transport/PartyKitServer';
-import { WebSocketServerTransport } from 'modules/RemoteMic/Network/Server/Transport/WebSocketServer';
-import { ServerTransport } from 'modules/RemoteMic/Network/Server/Transport/interface';
-import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
-import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
-import SongDao from 'modules/Songs/SongsService';
-import storage from 'modules/utils/storage';
+import events from '~/modules/GameEvents/GameEvents';
+import { PartyKitServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/PartyKitServer';
+import { WebSocketServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/WebSocketServer';
+import { ServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/interface';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
+import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import SongDao from '~/modules/Songs/SongsService';
+import storage from '~/modules/utils/storage';
 import {
   InputLagSetting,
   RemoteMicConnectionTypeSetting,
   UnassignOnSongFinishedSetting,
-} from 'routes/Settings/SettingsState';
+} from '~/routes/Settings/SettingsState';
 
 export const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;

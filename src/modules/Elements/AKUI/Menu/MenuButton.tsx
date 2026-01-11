@@ -1,6 +1,6 @@
-import { Button, ButtonLink } from 'modules/Elements/AKUI/Button';
-import { InputWrapper } from 'modules/Elements/AKUI/InputWrapper';
 import { ComponentProps, ReactNode } from 'react';
+import { Button, ButtonLink } from '~/modules/Elements/AKUI/Button';
+import { InputWrapper } from '~/modules/Elements/AKUI/InputWrapper';
 
 type Props = Omit<ComponentProps<typeof Button> | ComponentProps<typeof ButtonLink>, 'size'> & {
   info?: ReactNode;

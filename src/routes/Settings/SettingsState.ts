@@ -1,12 +1,12 @@
-import { milliseconds } from 'interfaces';
-import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
-import { ServerTransport } from 'modules/RemoteMic/Network/Server/Transport/interface';
-import Listener from 'modules/utils/Listener';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { useLayoutEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
+import { milliseconds } from '~/interfaces';
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
+import { ServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/interface';
+import Listener from '~/modules/utils/Listener';
+import { FeatureFlags } from '~/modules/utils/featureFlags';
+import storage from '~/modules/utils/storage';
 
 class Setting<T> extends Listener<[T]> {
   private value: T | undefined = undefined;
