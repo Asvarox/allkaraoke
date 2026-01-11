@@ -64,6 +64,7 @@
     "Foo Fighters",
     "Gwen Stefani",
     "Marina and the Diamonds",
+    "No Doubt",
     "Red Hot Chili Peppers",
     "Rod Stewart",
     "Sabaton",
@@ -148,8 +149,7 @@
     "Fleetwood Mac",
     "Gorillaz",
     "Guns N' Roses",
-    "Heart",
-    "Hollywood Undead"
+    "Heart"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5406
+  "songs": 5418
 }
