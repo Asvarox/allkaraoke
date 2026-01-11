@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react-vite';
 import { Autocomplete } from 'modules/Elements/Autocomplete';
 import { ComponentProps, useState } from 'react';
 

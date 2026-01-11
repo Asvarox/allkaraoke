@@ -1,4 +1,5 @@
-import { Meta, StoryFn, StoryObj } from '@storybook/react';
+/* eslint-disable storybook/context-in-play-function */
+import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import PlayersManager from 'modules/Players/PlayersManager';

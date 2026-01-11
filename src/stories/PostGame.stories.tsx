@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react-vite';
 import { DetailedScore, GAME_MODE, SingSetup } from 'interfaces';
 import { MAX_POINTS, beatsToPoints, sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
 import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';

@@ -1,5 +1,3 @@
-import { mergeConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
@@ -10,12 +8,6 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {},
-  async viteFinal(config) {
-    return mergeConfig(config, {
-      // @ts-expect-error for some reason the default import is not working
-      plugins: [tsconfigPaths.default()],
-    });
-  },
 };
 
 export default config;
