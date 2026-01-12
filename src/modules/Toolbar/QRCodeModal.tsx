@@ -1,8 +1,8 @@
-import 'modules/RemoteMic/eventListeners';
-import 'modules/Stats';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import Modal from '~/modules/Elements/Modal';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import '~/modules/RemoteMic/eventListeners';
+import '~/modules/Stats';
 import ConnectRemoteMic from '~/routes/ConnectRemoteMic/ConnectRemoteMic';
 
 interface Props {

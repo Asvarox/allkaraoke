@@ -54,16 +54,16 @@
         "node_modules/@welldone-software/why-did-you-render/dist/whyDidYouRender.js"
       ]
     ],
-    "modules/GameEngine/Drawing/Shaders/shader.frag?raw",
+    "~/modules/GameEngine/Drawing/Shaders/shader.frag?raw",
     [
-      "modules/GameEngine/Drawing/Shaders/shader.frag?raw",
+      "~/modules/GameEngine/Drawing/Shaders/shader.frag?raw",
       [
         "src/routes/Game/Singing/GameOverlay/GameOverlay.tsx"
       ]
     ],
-    "modules/GameEngine/Drawing/Shaders/shader.vert?raw",
+    "~/modules/GameEngine/Drawing/Shaders/shader.vert?raw",
     [
-      "modules/GameEngine/Drawing/Shaders/shader.vert?raw",
+      "~/modules/GameEngine/Drawing/Shaders/shader.vert?raw",
       [
         "src/routes/Game/Singing/GameOverlay/GameOverlay.tsx"
       ]
