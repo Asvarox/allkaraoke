@@ -1,0 +1,48 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "peerJSServer.js",
+    "src/main.tsx",
+    "vite-plugin-html-prerender/src/**/*.ts",
+    "scripts/**/*.ts"
+  ],
+  "project": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "vite-plugin-html-prerender/src/**/*.ts",
+    "!src/**/*.{test,spec,tests,ct-story,stories}.{js,jsx,ts,tsx}",
+    "!src/__tests__/**",
+    "!src/**/*.d.ts"
+  ],
+  "ignore": [
+    "src/modules/Elements/LayoutWithBackgroundEmotion.tsx",
+    "src/modules/GameEngine/Input/MicStrategies/Yin.ts",
+    "src/modules/RemoteMic/Network/Client/Transport/PeerJSClient.ts",
+    "src/modules/RemoteMic/Network/Server/Transport/PeerJSServer.ts",
+    "src/modules/Songs/utils/song-fixture.ts",
+    "src/modules/hooks/useCallbackDebugger.ts",
+    "src/modules/hooks/useEffectDebugger.ts",
+    "src/modules/hooks/useMemoDebugger.ts",
+    "src/modules/utils/TestCanvas.tsx",
+    "src/modules/utils/delayPromise.ts",
+    "src/modules/utils/isoCodeToCountry.ts",
+    "src/modules/utils/peerJSOptions.ts",
+    "src/modules/utils/testUtils.ts",
+    "src/modules/utils/useFeatureFlag.ts",
+    "src/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision.tsx",
+    "src/setupTests.ts",
+    "src/stories/songFixture.ts",
+    "src/routes/SocialMediaElements/SocialMediaElements.tsx:10"
+  ],
+  "ignoreDependencies": [
+    "@mui/system",
+    "peerjs",
+    "tailwindcss-motion",
+    "html-minifier",
+    "@cloudflare/workers-types",
+    "wrangler"
+  ],
+  "ignoreExportsUsedInFile": true,
+  "paths": {
+    "~/*": ["src/*"]
+  }
+}
