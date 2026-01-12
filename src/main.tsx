@@ -1,10 +1,10 @@
-import 'modules/GameEvents/eventListeners';
-import 'modules/RemoteMic/eventListeners';
-import 'modules/Stats';
-import 'modules/utils/array-at-polyfill';
-import 'modules/utils/array-findLastIndex-polyfill';
-import 'modules/utils/exposeSingletons';
-import 'modules/utils/wdyr';
+import '~/modules/GameEvents/eventListeners';
+import '~/modules/RemoteMic/eventListeners';
+import '~/modules/Stats';
+import '~/modules/utils/array-at-polyfill';
+import '~/modules/utils/array-findLastIndex-polyfill';
+import '~/modules/utils/exposeSingletons';
+import '~/modules/utils/wdyr';
 
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
@@ -15,13 +15,13 @@ import {
   thirdPartyErrorFilterIntegration,
   withProfiler,
 } from '@sentry/react';
-import 'index.css';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { v4 } from 'uuid';
 import App from '~/App';
+import '~/index.css';
 import NoPrerender from '~/modules/Elements/NoPrerender';
 import { normalizeSting } from '~/modules/Songs/utils/getSongId';
 import isDev from '~/modules/utils/isDev';

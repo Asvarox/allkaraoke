@@ -1,27 +1,30 @@
-import express, { Express } from 'express';
 import http from 'http';
 import { AddressInfo } from 'net';
-import path from 'path';
+import handler from 'serve-handler';
 
 export default class Server {
   runningPort = 0;
 
   private readonly _port: number;
-  private readonly _server: Express;
   private _instance?: http.Server;
 
   constructor(port: number) {
     this._port = port;
-    this._server = express();
   }
 
-  init(dir: string, basePath: string): Promise<void> {
-    this._server.use(basePath, express.static(dir, { dotfiles: 'allow' }));
-    this._server.get('*', (_req, res) => res.sendFile(path.join(dir, 'index.html')));
+  init(dir: string): Promise<void> {
+    this._instance = http.createServer((request, response) => {
+      return handler(request, response, {
+        public: dir,
+        rewrites: [{ source: '/**', destination: '/index.html' }],
+      });
+    });
 
     return new Promise((resolve) => {
-      this._instance = this._server.listen(this._port, () => {
+      this._instance?.listen(this._port, () => {
         this.runningPort = (this._instance?.address() as AddressInfo).port;
+        console.log(`Running at http://localhost:${this.runningPort}`);
+
         resolve();
       });
     });

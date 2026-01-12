@@ -33,10 +33,10 @@ export default defineConfig({
     react({
       babel: {
         plugins: [
-          '@emotion',
+          '@emotion/babel-plugin',
           // https://mui.com/material-ui/guides/minimizing-bundle-size/
           [
-            'transform-imports',
+            'babel-plugin-transform-imports',
             {
               '@mui/icons-material': {
                 transform: '@mui/icons-material/${member}',

@@ -10,9 +10,9 @@ import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 
-import fragShader from 'modules/GameEngine/Drawing/Shaders/shader.frag?raw';
-import vertShader from 'modules/GameEngine/Drawing/Shaders/shader.vert?raw';
 import CanvasDrawing from '~/modules/GameEngine/Drawing';
+import fragShader from '~/modules/GameEngine/Drawing/Shaders/shader.frag?raw';
+import vertShader from '~/modules/GameEngine/Drawing/Shaders/shader.vert?raw';
 import tuple from '~/modules/utils/tuple';
 import getPlayerScoreData from '~/routes/Game/Singing/GameOverlay/helpers/getPlayerScoreData';
 

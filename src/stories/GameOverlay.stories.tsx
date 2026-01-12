@@ -1,5 +1,4 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
-import 'modules/utils/exposeSingletons';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
 import { ValuesType } from 'utility-types';
@@ -11,6 +10,7 @@ import GameState from '~/modules/GameEngine/GameState/GameState';
 import PlayersManager from '~/modules/Players/PlayersManager';
 import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
 import { processSong } from '~/modules/Songs/utils/processSong/processSong';
+import '~/modules/utils/exposeSingletons';
 import GameOverlay from '~/routes/Game/Singing/GameOverlay/GameOverlay';
 import { txtfile } from '~/stories/songFixture';
 
