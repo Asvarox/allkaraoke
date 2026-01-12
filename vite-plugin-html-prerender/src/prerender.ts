@@ -30,7 +30,7 @@ const emitRendered = async (options: HtmlPrerenderOptions, config: ResolvedConfi
   const basePath = config?.base && path.isAbsolute(config.base) ? config.base : '/';
 
   await server
-    .init(options.staticDir, basePath)
+    .init(options.staticDir)
     // for some reason initializing the renderer here results in quicker build times than if it was started before the build
     .then(async () => renderer.init())
     .then(async () => {
