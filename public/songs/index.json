@@ -2548,6 +2548,34 @@
     "local": false
   },
   {
+    "id": "ace-of-base-wheel-of-fortune",
+    "title": "Wheel Of Fortune",
+    "artist": "Ace of Base",
+    "video": "qoybSNHMtMY",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.8,
+    "gap": -33.87237128353877,
+    "year": "1992",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-13T00:12:20.962Z",
+    "genre": "Dance Pop",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "fepo",
+    "sourceUrl": "Ace of Base - Wheel Of Fortune",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 5421,
+    "tracksCount": 1,
+    "search": "aceofbasewheeloffortune",
+    "local": false
+  },
+  {
     "id": "achim-reichel-aloha-heja-he",
     "title": "Aloha heja he",
     "artist": "Achim Reichel",
@@ -38512,6 +38540,61 @@
     "local": false
   },
   {
+    "id": "destinys-child-8-days-of-christmas",
+    "title": "8 Days Of Christmas",
+    "artist": "Destiny's Child",
+    "video": "MKdndMXIVXw",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.68,
+    "gap": 30286.689351481185,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:20.979Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "michas17j",
+    "sourceUrl": "Destiny’s Child - 8 Days Of Christmas",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5426,
+    "tracksCount": 1,
+    "search": "destinyschild8daysofchristmas",
+    "local": false
+  },
+  {
+    "id": "destinys-child-bills-bills-bills",
+    "title": "Bills, Bills, Bills",
+    "artist": "Destiny’s Child",
+    "video": "NiF6-0UTqtc",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 28253.90625,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:20.975Z",
+    "genre": "R&B",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Destiny’s Child - Bills, Bills, Bills",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5425,
+    "tracksCount": 1,
+    "search": "destinyschildbillsbillsbills",
+    "local": false
+  },
+  {
     "id": "destinys-child-bootylicious",
     "title": "Bootylicious",
     "artist": "Destiny’s Child",
@@ -38538,6 +38621,34 @@
     "shortId": 1198,
     "tracksCount": 1,
     "search": "destinyschildbootylicious",
+    "local": false
+  },
+  {
+    "id": "destinys-child-bug-a-boo",
+    "title": "Bug A Boo",
+    "artist": "Destiny’s Child",
+    "video": "9i-y0G8nNA8",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.79,
+    "gap": 7534.204703290387,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:21.963Z",
+    "genre": "R&B",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "thursday",
+    "sourceUrl": "Destiny’s Child - Bug A Boo",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5428,
+    "tracksCount": 1,
+    "search": "destinyschildbugaboo",
     "local": false
   },
   {
@@ -38569,6 +38680,63 @@
     "local": false
   },
   {
+    "id": "destinys-child-feat-wyclef-jean-no-no-no-part-2",
+    "title": "No No No (Part 2)",
+    "artist": "Destiny’s Child feat. Wyclef Jean",
+    "video": "-0wbtk6_vpE",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.7,
+    "gap": -41.93147463889824,
+    "year": "1998",
+    "lastUpdate": "2026-01-13T00:12:21.802Z",
+    "genre": "R&B",
+    "realBpm": 43,
+    "volume": 0.5,
+    "author": "bohning, daggeg",
+    "sourceUrl": "Destiny’s Child feat. Wyclef Jean - No No No (Part 2) [DUET]",
+    "tracks": [
+      {
+        "start": 5
+      },
+      {
+        "start": 81
+      }
+    ],
+    "shortId": 5427,
+    "tracksCount": 2,
+    "search": "destinyschildfeatwyclefjeannononopart2",
+    "local": false
+  },
+  {
+    "id": "destinys-child-independent-women-part-1",
+    "title": "Independent Women Part 1",
+    "artist": "Destiny’s Child",
+    "video": "0lPQZni7I18",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 20215.102040816328,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:20.970Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "DoubleDee",
+    "sourceUrl": "Destiny’s Child - Independent Women Part 1",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5423,
+    "tracksCount": 1,
+    "search": "destinyschildindependentwomenpart1",
+    "local": false
+  },
+  {
     "id": "destinys-child-lose-my-breath",
     "title": "Lose My Breath",
     "artist": "Destiny’s Child",
@@ -38597,6 +38765,33 @@
     "local": false
   },
   {
+    "id": "destinys-child-rudolph-the-red-nosed-reindeer",
+    "title": "Rudolph The Red-Nosed Reindeer",
+    "artist": "Destiny’s Child",
+    "video": "nYRxt0i9g8o",
+    "language": [
+      "English"
+    ],
+    "bpm": 207.72,
+    "gap": 1139.0236857307914,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:20.972Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Destiny’s Child - Rudolph The Red-Nosed Reindeer",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5424,
+    "tracksCount": 1,
+    "search": "destinyschildrudolphtherednosedreindeer",
+    "local": false
+  },
+  {
     "id": "destinys-child-say-my-name",
     "title": "Say My Name",
     "artist": "Destiny’s Child",
@@ -38622,6 +38817,34 @@
     "shortId": 1201,
     "tracksCount": 1,
     "search": "destinyschildsaymyname",
+    "local": false
+  },
+  {
+    "id": "destinys-child-survivor",
+    "title": "Survivor",
+    "artist": "Destiny’s Child",
+    "video": "Wmc8bQoL-J0",
+    "language": [
+      "English"
+    ],
+    "bpm": 322.4,
+    "gap": 27472.952853598013,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:21.966Z",
+    "genre": "Urban",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Destiny’s Child - Survivor",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5429,
+    "tracksCount": 1,
+    "search": "destinyschildsurvivor",
     "local": false
   },
   {
@@ -69134,7 +69357,7 @@
     "gap": 18250,
     "year": "1989",
     "artistOrigin": "ZA",
-    "lastUpdate": "2026-01-11T00:16:16.163Z",
+    "lastUpdate": "2026-01-10T17:01:23.964Z",
     "genre": "Soundtrack",
     "realBpm": 20,
     "volume": 0.5,
@@ -69162,7 +69385,7 @@
     "gap": 976.2044288951616,
     "year": "1987",
     "artistOrigin": "ZA",
-    "lastUpdate": "2026-01-11T00:16:15.470Z",
+    "lastUpdate": "2026-01-10T17:01:03.104Z",
     "genre": "Pop",
     "realBpm": 33,
     "volume": 0.5,
@@ -70512,7 +70735,7 @@
     "gap": 9672.04439417503,
     "year": "2004",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-11T00:16:16.167Z",
+    "lastUpdate": "2026-01-10T17:01:49.037Z",
     "realBpm": 32,
     "volume": 0.5,
     "author": "ai-chan",
@@ -70567,7 +70790,7 @@
     "gap": 16247.35294117647,
     "year": "2004",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-11T00:16:16.169Z",
+    "lastUpdate": "2026-01-10T17:02:02.826Z",
     "genre": "Soul, Funk",
     "realBpm": 14,
     "volume": 0.5,
@@ -76713,6 +76936,118 @@
     "shortId": 2398,
     "tracksCount": 1,
     "search": "kombipokolenie",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-celebration",
+    "title": "Celebration",
+    "artist": "Kool & The Gang",
+    "video": "3GwjfUFyY6M",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.9,
+    "gap": 19743.73599003736,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:22.136Z",
+    "genre": "Dance",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Celebration",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5432,
+    "tracksCount": 1,
+    "search": "koolthegangcelebration",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-cherish",
+    "title": "Cherish",
+    "artist": "Kool & The Gang",
+    "video": "s09LuDYX12g",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 29013.157894736843,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:21.968Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "sourceUrl": "Kool & The Gang - Cherish",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5430,
+    "tracksCount": 1,
+    "search": "koolthegangcherish",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-emergency",
+    "title": "Emergency",
+    "artist": "Kool & The Gang",
+    "video": "zE-fRgJBVrc",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.78,
+    "gap": 24619.101609416288,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:22.137Z",
+    "genre": "Funk",
+    "realBpm": 43,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Emergency",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5433,
+    "tracksCount": 1,
+    "search": "koolthegangemergency",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-get-down-on-it",
+    "title": "Get Down On It",
+    "artist": "Kool & The Gang",
+    "video": "qchPLaiKocI",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.11,
+    "gap": 8367.78383535505,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:22.133Z",
+    "genre": "Funk",
+    "realBpm": -25,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Get Down On It",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5431,
+    "tracksCount": 1,
+    "search": "kooltheganggetdownonit",
     "local": false
   },
   {
@@ -103177,7 +103512,7 @@
     "gap": 11268.225757728325,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.312Z",
+    "lastUpdate": "2026-01-10T17:12:15.811Z",
     "genre": "Pop",
     "realBpm": 16,
     "volume": 0.5,
@@ -103205,7 +103540,7 @@
     "gap": 5385.549273021002,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.314Z",
+    "lastUpdate": "2026-01-10T17:12:46.000Z",
     "genre": "Pop",
     "realBpm": 26,
     "volume": 0.5,
@@ -103232,7 +103567,7 @@
     "bpm": 280.83,
     "gap": 2555.151159064202,
     "year": "2001",
-    "lastUpdate": "2026-01-11T00:16:16.175Z",
+    "lastUpdate": "2026-01-10T17:03:32.995Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "general2000",
@@ -103273,6 +103608,34 @@
     "shortId": 3245,
     "tracksCount": 1,
     "search": "nodoubtfeatladysawunderneathitall",
+    "local": false
+  },
+  {
+    "id": "no-doubt-hella-good",
+    "title": "Hella Good",
+    "artist": "No Doubt",
+    "video": "QtTj4cramPM",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.8,
+    "gap": 18881.900452488688,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-13T00:12:20.956Z",
+    "genre": "Pop",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "No Doubt - Hella Good",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5420,
+    "tracksCount": 1,
+    "search": "nodoubthellagood",
     "local": false
   },
   {
@@ -103342,7 +103705,7 @@
     "gap": 15874.52974951734,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.172Z",
+    "lastUpdate": "2026-01-10T17:02:56.438Z",
     "genre": "Pop",
     "realBpm": 14,
     "volume": 0.5,
@@ -103370,7 +103733,7 @@
     "gap": 8335.877403846154,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.310Z",
+    "lastUpdate": "2026-01-10T17:11:35.071Z",
     "edition": "[Sc]-Songs",
     "genre": "Pop",
     "realBpm": 19,
@@ -103398,7 +103761,7 @@
     "gap": 28844.155712841253,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.316Z",
+    "lastUpdate": "2026-01-10T17:13:03.336Z",
     "edition": "[Sc]-Songs",
     "genre": "Pop",
     "realBpm": 25,
@@ -103427,7 +103790,7 @@
     "gap": 2822.3681205754738,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-11T00:16:16.307Z",
+    "lastUpdate": "2026-01-10T17:11:18.837Z",
     "edition": "[Sc]-Songs",
     "realBpm": 32,
     "volume": 0.5,
@@ -104591,6 +104954,34 @@
     "shortId": 3285,
     "tracksCount": 1,
     "search": "olivianewtonjohnhopelesslydevotedtoyou",
+    "local": false
+  },
+  {
+    "id": "olivia-newton-john-physical",
+    "title": "Physical",
+    "artist": "Olivia Newton-John",
+    "video": "vWz9VN40nCA",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.7,
+    "gap": 15174.668275030157,
+    "year": "1981",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-13T00:12:20.965Z",
+    "genre": "Pop",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "DoubleDee73",
+    "sourceUrl": "Olivia Newton-John - Physical",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5422,
+    "tracksCount": 1,
+    "search": "olivianewtonjohnphysical",
     "local": false
   },
   {
@@ -111290,7 +111681,7 @@
     "gap": 22400,
     "year": "2007",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-11T00:16:15.464Z",
+    "lastUpdate": "2026-01-10T16:59:23.204Z",
     "genre": "Rock",
     "realBpm": 22,
     "volume": 0.5,

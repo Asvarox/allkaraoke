@@ -54,6 +54,7 @@
     "Glee Cast",
     "High School Musical",
     "Mariah Carey",
+    "No Doubt",
     "Panic! at the Disco",
     "Rise Against",
     "Slipknot",
@@ -64,7 +65,6 @@
     "Foo Fighters",
     "Gwen Stefani",
     "Marina and the Diamonds",
-    "No Doubt",
     "Red Hot Chili Peppers",
     "Rod Stewart",
     "Sabaton",
@@ -74,6 +74,7 @@
     "Céline Dion",
     "Christina Aguilera",
     "Deftones",
+    "Destiny’s Child",
     "Jonas Brothers",
     "Melanie Martinez",
     "Oasis",
@@ -148,8 +149,7 @@
     "DragonForce",
     "Fleetwood Mac",
     "Gorillaz",
-    "Guns N' Roses",
-    "Heart"
+    "Guns N' Roses"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5418
+  "songs": 5432
 }
