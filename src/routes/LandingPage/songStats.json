@@ -21,6 +21,7 @@
     "ABBA",
     "Ghost",
     "Madonna",
+    "Kylie Minogue",
     "Muse",
     "Westlife",
     "Adele",
@@ -64,6 +65,7 @@
     "Dua Lipa",
     "Foo Fighters",
     "Gwen Stefani",
+    "Kool & The Gang",
     "Marina and the Diamonds",
     "Red Hot Chili Peppers",
     "Rod Stewart",
@@ -106,7 +108,6 @@
     "Jason Derulo",
     "Johnny Cash",
     "Jonathan Coulton",
-    "Kylie Minogue",
     "Nicki Minaj",
     "Sabrina Carpenter",
     "Shinedown",
@@ -148,8 +149,7 @@
     "Dire Straits",
     "DragonForce",
     "Fleetwood Mac",
-    "Gorillaz",
-    "Guns N' Roses"
+    "Gorillaz"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5432
+  "songs": 5447
 }

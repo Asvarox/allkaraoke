@@ -1,0 +1,382 @@
+#ARTIST:Kylie Minogue
+#TITLE:Your Disco Needs You
+#CREATOR:s_rockt
+#BPM:250
+#YEAR:2000
+#VIDEO:v=iqtzMue6Izw
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:17180
+#ALLKARAOKE_ID:kylie-minogue-your-disco-needs-you
+#ALLKARAOKE_SID:5440
+#ALLKARAOKE_LASTUPDATE:2026-01-15T00:14:24.360Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:24
+#ALLKARAOKE_SOURCEURL:Kylie Minogue - Your Disco Needs You
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Kylie Minogue - Your Disco Needs You.mp3
+: 17 5 4 Your 
+: 23 5 4 dis
+: 29 10 -1 co, 
+: 49 3 0 your 
+: 53 7 0 dis
+: 61 8 -5 co,
+- 69
+: 79 5 -5 Your 
+: 85 5 -5 dis
+: 91 8 -5 co 
+: 103 12 -6 needs 
+: 119 12 -1 you!
+- 131
+: 143 3 -1 Des
+: 147 7 4 perate
+: 155 5 -1 ly 
+: 161 9 2 seek
+: 171 5 0 ing 
+: 177 7 -1 some
+: 185 12 0 one
+- 197
+: 205 3 -1 Will
+: 209 7 4 ing 
+: 217 5 -1 to 
+: 223 9 2 trav
+: 233 12 0 el
+- 245 252
+- 252
+: 269 5 -1 You’re 
+: 275 5 4 lost 
+: 281 5 -1 in 
+: 287 7 2 con
+: 295 5 0 ver
+: 301 7 -1 sa
+: 309 7 0 tion 
+: 317 8 0 and
+- 325
+: 329 5 -1 Use
+: 335 7 4 less 
+: 343 5 0 at 
+: 349 7 2 Scrab
+: 357 6 0 ble
+- 363
+: 369 3 4 Hap
+: 373 11 6 pi
+: 385 7 6 ness 
+: 393 3 6 will 
+: 397 7 6 nev
+: 405 5 4 er 
+* 411 16 7 last
+- 427
+: 431 5 4 Dark
+: 437 5 6 ness 
+: 443 11 6 comes 
+: 455 3 6 to 
+: 459 7 6 kick 
+: 467 10 4 your 
+: 481 20 0 ass
+- 501 506
+- 506
+: 523 5 4 So 
+: 529 11 6 let’s 
+* 541 7 9 dance 
+: 549 3 7 through 
+: 553 7 7 all 
+: 561 5 6 our 
+: 567 16 7 fears
+- 583
+: 587 5 4 War 
+: 593 8 6 is 
+* 605 5 9 o
+: 611 3 7 ver 
+: 615 7 7 for 
+: 623 7 6 a 
+: 631 16 2 bit
+- 647
+: 651 3 0 The 
+: 655 11 -1 whole 
+: 667 10 -3 world 
+: 679 5 4 should 
+: 685 4 4 be
+- 689
+: 693 7 6 Mov
+: 701 7 4 ing 
+: 709 11 7 to 
+: 721 5 6 your 
+: 727 30 3 heart
+- 757
+: 765 7 3 You’re 
+: 773 4 3 a 
+: 779 5 3 lone
+: 785 5 3 ly 
+: 791 6 4 heart
+- 797
+: 799 3 4 Your 
+: 803 9 4 dis
+: 813 10 -1 co, 
+: 831 3 0 your 
+: 835 7 0 dis
+: 843 8 -5 co,
+- 851
+: 861 3 -5 Your 
+: 865 7 -5 dis
+: 873 10 -5 co 
+: 885 14 -6 needs 
+: 901 12 -1 you!
+- 913
+: 923 3 7 Your 
+: 927 7 7 dis
+: 935 10 4 co, 
+: 955 3 7 your 
+: 959 4 7 dis
+: 964 10 4 co,
+- 974
+: 984 5 3 Your 
+: 990 7 3 dis
+: 998 8 2 co 
+: 1008 12 3 needs 
+: 1024 12 6 you!
+- 1036
+: 1046 5 -1 We’re 
+: 1052 7 4 sold 
+: 1060 5 -1 on 
+: 1066 9 2 va
+: 1076 5 0 ni
+: 1082 12 -1 ty
+- 1094
+: 1110 3 -1 But 
+: 1114 7 4 that’s 
+: 1122 5 -1 so 
+: 1128 9 2 see 
+: 1138 10 0 through
+- 1148 1154
+- 1154
+: 1171 3 -1 Take 
+: 1175 4 -1 your 
+* 1181 3 4 bo
+: 1185 4 -1 dy 
+: 1191 7 2 to 
+: 1199 5 0 the 
+: 1205 20 -1 floor,
+- 1225
+: 1233 5 -1 Your 
+: 1239 7 4 dis
+: 1247 5 1 co 
+: 1253 9 2 needs 
+: 1263 6 0 you
+- 1269
+: 1273 3 4 From 
+: 1277 11 6 So
+: 1289 7 6 ho 
+: 1297 3 6 to 
+: 1301 7 6 Sin
+: 1309 7 6 ga
+* 1317 14 7 pore,
+- 1331
+: 1335 3 4 From 
+: 1339 7 6 the 
+: 1347 9 6 main
+: 1357 9 6 lands 
+: 1367 3 6 to 
+: 1371 6 6 the 
+: 1381 20 0 shore
+- 1401 1411
+- 1411
+: 1428 5 4 So 
+: 1434 11 6 let’s 
+* 1446 7 9 dance 
+: 1454 5 7 through 
+: 1460 5 7 all 
+: 1466 5 6 our 
+: 1472 16 7 fears
+- 1488
+: 1492 5 4 War 
+: 1498 8 6 is 
+* 1510 5 9 o
+: 1516 3 7 ver 
+: 1520 7 7 for 
+: 1528 7 6 a 
+: 1536 16 2 bit,
+- 1552
+: 1554 5 0 You’re 
+: 1560 5 -1 a 
+: 1566 16 -3 slave
+- 1582
+: 1586 5 4 To 
+: 1592 5 4 the 
+: 1598 7 6 rhyt
+: 1606 7 4 hm 
+: 1614 9 7 to 
+: 1624 9 6 your 
+: 1634 32 3 heart
+- 1666
+: 1672 5 3 You’re 
+: 1678 4 3 a 
+: 1684 5 3 lone
+: 1690 5 3 ly 
+: 1696 31 4 heart
+- 1727
+: 1728 11 10 Oooh 
+: 1740 9 8 Oooh 
+: 1750 9 6 Oooh 
+: 1760 24 7 Oooh
+- 1784
+* 1790 11 12 Oooh 
+: 1802 11 10 Oooh 
+: 1814 7 8 Oooh 
+: 1822 28 6 Oooh
+- 1850
+: 1854 11 10 Oooh 
+: 1866 11 8 Oooh 
+: 1878 7 6 Oooh 
+: 1886 20 4 Oooh
+- 1906
+: 1910 19 10 Haha 
+: 1930 14 8 aaahhh
+- 1944 1957
+- 1957
+: 1974 15 10 Oooh 
+: 1990 11 8 Oooh 
+: 2002 7 6 Oooh 
+: 2010 20 7 Oooh
+- 2030
+* 2040 11 12 Oooh 
+: 2052 11 10 Oooh 
+: 2064 7 8 Oooh 
+: 2072 24 6 Oooh
+- 2096
+: 2102 13 10 Oooh 
+: 2116 11 8 Oooh 
+: 2128 5 6 Oooh 
+: 2134 24 4 Oooh
+- 2158
+: 2162 17 10 Haha 
+: 2180 12 8 aaahhh
+- 2192 2207
+- 2207
+: 2224 17 18 Haha 
+: 2242 12 16 aaahhh
+- 2254 2255
+- 2255
+: 2272 1 5 Vous 
+: 2274 2 5 n’etes 
+: 2278 2 5 ja
+: 2282 2 5 mais 
+: 2288 4 3 seuls
+- 2292 2305
+- 2305
+: 2322 2 5 Vous 
+: 2326 2 5 sa
+: 2330 2 5 vez 
+: 2334 2 5 ce 
+: 2338 2 5 qu’il 
+: 2342 2 3 faut 
+: 2346 4 3 faire
+- 2350 2369
+- 2369
+: 2386 1 5 Ne 
+: 2388 3 5 lais
+: 2392 2 5 sez 
+: 2396 2 5 pas 
+: 2400 3 5 tom
+: 2404 2 7 ber 
+: 2408 1 5 vot
+: 2410 3 5 re 
+: 2414 1 5 na
+: 2416 6 5 tion
+- 2422
+: 2438 3 7 La 
+: 2442 3 5 dis
+: 2446 4 5 co 
+: 2458 1 7 a 
+: 2460 1 7 be
+: 2462 4 7 soin 
+: 2468 2 7 de 
+: 2472 4 9 vous
+- 2476
+: 2490 5 5 So 
+: 2496 9 7 lets 
+: 2506 7 10 dance 
+: 2514 5 8 through 
+: 2520 5 8 all 
+: 2526 7 7 our 
+: 2534 14 8 fears
+- 2548
+: 2553 6 5 War 
+: 2561 6 7 is 
+* 2571 5 10 o
+: 2577 3 8 ver 
+: 2581 9 8 for 
+: 2591 5 7 a 
+: 2597 14 3 bit,
+- 2611
+: 2617 3 1 The 
+: 2621 11 0 whole 
+* 2633 13 -2 world 
+: 2647 5 5 should 
+: 2653 4 5 be
+- 2657
+: 2659 9 7 Mov
+: 2669 5 5 ing 
+: 2675 11 8 to 
+: 2687 7 7 your 
+: 2695 28 4 heart
+- 2723
+: 2731 9 4 You’re 
+: 2741 3 4 a 
+: 2745 7 4 lone
+: 2753 3 4 ly 
+: 2757 6 4 heart
+- 2763
+: 2765 5 4 Your 
+: 2771 5 4 dis
+: 2777 10 -1 co, 
+: 2795 5 0 your 
+: 2801 7 0 dis
+: 2809 8 -5 co,
+- 2817
+: 2829 3 -5 Your 
+: 2833 7 -5 dis
+: 2841 8 -5 co 
+: 2851 14 -6 needs 
+: 2867 10 -1 you!
+- 2877
+: 2889 5 7 Your 
+: 2895 7 7 dis
+: 2903 10 4 co, 
+: 2921 5 7 your 
+: 2927 5 7 dis
+: 2933 10 4 co,
+- 2943
+: 2953 3 2 Your 
+: 2957 7 2 dis
+: 2965 8 2 co 
+: 2977 12 3 needs 
+: 2991 12 6 you!
+- 3003
+: 3015 3 7 Your 
+: 3019 7 7 dis
+: 3027 10 4 co, 
+: 3045 5 7 your 
+: 3051 7 7 dis
+: 3059 8 4 co,
+- 3067
+: 3077 5 2 Your 
+: 3083 5 2 dis
+: 3089 10 2 co 
+: 3101 12 3 needs 
+: 3117 8 6 you!
+- 3125
+: 3139 5 7 Your 
+: 3145 7 7 dis
+: 3153 10 4 co, 
+: 3171 5 7 your 
+: 3177 5 7 dis
+: 3183 10 4 co,
+- 3193
+: 3201 5 2 Your 
+: 3207 7 2 dis
+: 3215 9 2 co 
+: 3225 59 3 nee
+: 3285 3 5 ~ds 
+* 3289 3 8 you
+: 3293 4 4 ~
+E

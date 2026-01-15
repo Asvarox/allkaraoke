@@ -2559,7 +2559,7 @@
     "gap": -33.87237128353877,
     "year": "1992",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-01-13T00:12:20.962Z",
+    "lastUpdate": "2026-01-11T13:50:30.131Z",
     "genre": "Dance Pop",
     "realBpm": 38,
     "volume": 0.5,
@@ -38551,7 +38551,7 @@
     "gap": 30286.689351481185,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:20.979Z",
+    "lastUpdate": "2026-01-12T07:55:54.531Z",
     "realBpm": 25,
     "volume": 0.5,
     "author": "michas17j",
@@ -38578,7 +38578,7 @@
     "gap": 28253.90625,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:20.975Z",
+    "lastUpdate": "2026-01-12T07:55:23.305Z",
     "genre": "R&B",
     "realBpm": 31,
     "volume": 0.5,
@@ -38635,7 +38635,7 @@
     "gap": 7534.204703290387,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:21.963Z",
+    "lastUpdate": "2026-01-12T07:56:42.723Z",
     "genre": "R&B",
     "realBpm": 16,
     "volume": 0.5,
@@ -38690,7 +38690,7 @@
     "bpm": 297.7,
     "gap": -41.93147463889824,
     "year": "1998",
-    "lastUpdate": "2026-01-13T00:12:21.802Z",
+    "lastUpdate": "2026-01-12T07:56:26.058Z",
     "genre": "R&B",
     "realBpm": 43,
     "volume": 0.5,
@@ -38721,7 +38721,7 @@
     "gap": 20215.102040816328,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:20.970Z",
+    "lastUpdate": "2026-01-12T07:54:41.315Z",
     "realBpm": 23,
     "volume": 0.5,
     "author": "DoubleDee",
@@ -38776,7 +38776,7 @@
     "gap": 1139.0236857307914,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:20.972Z",
+    "lastUpdate": "2026-01-12T07:55:07.898Z",
     "realBpm": 25,
     "volume": 0.5,
     "author": "lozboorman",
@@ -38831,7 +38831,7 @@
     "gap": 27472.952853598013,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:21.966Z",
+    "lastUpdate": "2026-01-12T07:57:01.319Z",
     "genre": "Urban",
     "realBpm": 26,
     "volume": 0.5,
@@ -76950,7 +76950,7 @@
     "gap": 19743.73599003736,
     "year": "1980",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:22.136Z",
+    "lastUpdate": "2026-01-12T07:58:38.532Z",
     "genre": "Dance",
     "realBpm": 35,
     "volume": 0.5,
@@ -76978,7 +76978,7 @@
     "gap": 29013.157894736843,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:21.968Z",
+    "lastUpdate": "2026-01-12T07:57:17.179Z",
     "genre": "Pop",
     "realBpm": 100,
     "volume": 0.5,
@@ -77006,7 +77006,7 @@
     "gap": 24619.101609416288,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:22.137Z",
+    "lastUpdate": "2026-01-12T07:59:08.876Z",
     "genre": "Funk",
     "realBpm": 43,
     "volume": 0.5,
@@ -77023,6 +77023,34 @@
     "local": false
   },
   {
+    "id": "kool-the-gang-fresh",
+    "title": "Fresh",
+    "artist": "Kool & The Gang",
+    "video": "sTJ1XwGDcA4",
+    "language": [
+      "English"
+    ],
+    "bpm": 235,
+    "gap": 17208.72340425532,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.355Z",
+    "genre": "Pop",
+    "realBpm": 42,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Fresh",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5438,
+    "tracksCount": 1,
+    "search": "koolthegangfresh",
+    "local": false
+  },
+  {
     "id": "kool-the-gang-get-down-on-it",
     "title": "Get Down On It",
     "artist": "Kool & The Gang",
@@ -77034,7 +77062,7 @@
     "gap": 8367.78383535505,
     "year": "1981",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:22.133Z",
+    "lastUpdate": "2026-01-12T07:57:50.398Z",
     "genre": "Funk",
     "realBpm": -25,
     "volume": 0.5,
@@ -77048,6 +77076,144 @@
     "shortId": 5431,
     "tracksCount": 1,
     "search": "kooltheganggetdownonit",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-joanna",
+    "title": "Joanna",
+    "artist": "Kool & The Gang",
+    "video": "hsklsxReSe0",
+    "language": [
+      "English"
+    ],
+    "bpm": 209.83,
+    "gap": 22469.189820330743,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.358Z",
+    "genre": "R&B",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Joanna",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5439,
+    "tracksCount": 1,
+    "search": "koolthegangjoanna",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-jungle-boogie",
+    "title": "Jungle Boogie",
+    "artist": "Kool & The Gang",
+    "video": "QGKiC2suCHQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.6,
+    "gap": 531.3883299798795,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.344Z",
+    "genre": "Funk",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Jungle Boogie",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5435,
+    "tracksCount": 1,
+    "search": "koolthegangjungleboogie",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-ladies-night-single-version",
+    "title": "Ladies Night’ (Single Version)",
+    "artist": "Kool & The Gang",
+    "video": "bSOlP9FImgE",
+    "language": [
+      "English"
+    ],
+    "bpm": 449,
+    "gap": 9247.772828507796,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.353Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "BadNewsBarett",
+    "sourceUrl": "Kool & The Gang - Ladies Night’ (Single Version)",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "shortId": 5437,
+    "tracksCount": 1,
+    "search": "koolthegangladiesnightsingleversion",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-misled",
+    "title": "Misled",
+    "artist": "Kool & The Gang",
+    "video": "1O8jsxj9Dqo",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.95,
+    "gap": 22030.208205756277,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.351Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Misled",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5436,
+    "tracksCount": 1,
+    "search": "koolthegangmisled",
+    "local": false
+  },
+  {
+    "id": "kool-the-gang-too-hot",
+    "title": "Too Hot",
+    "artist": "Kool & The Gang",
+    "video": "Nft_k__sBPQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 209.88,
+    "gap": 18379.428244711264,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-15T00:14:24.338Z",
+    "genre": "Funk",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kool & The Gang - Too Hot",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5434,
+    "tracksCount": 1,
+    "search": "koolthegangtoohot",
     "local": false
   },
   {
@@ -77976,6 +78142,34 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-give-me-just-a-little-more-time",
+    "title": "Give Me Just A Little More Time",
+    "artist": "Kylie Minogue",
+    "video": "ouKHSSEOWig",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 326.06299212598424,
+    "year": "1991",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.368Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Give Me Just A Little More Time",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5444,
+    "tracksCount": 1,
+    "search": "kylieminoguegivemejustalittlemoretime",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-i-should-be-so-lucky",
     "title": "I Should Be So Lucky",
     "artist": "Kylie Minogue",
@@ -78034,6 +78228,62 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-into-the-blue",
+    "title": "Into The Blue",
+    "artist": "Kylie Minogue",
+    "video": "fL6FaI-wJxs",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 19231.739130434784,
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.369Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Kylie Minogue - Into The Blue",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5445,
+    "tracksCount": 1,
+    "search": "kylieminogueintotheblue",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-its-the-most-wonderful-time-of-the-year",
+    "title": "It’s The Most Wonderful Time Of The Year",
+    "artist": "Kylie Minogue",
+    "video": "4pPpxsbqxR8",
+    "language": [
+      "English"
+    ],
+    "bpm": 219.82,
+    "gap": 19555.503141790366,
+    "year": "2015",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.363Z",
+    "edition": "Christmas",
+    "realBpm": 45,
+    "volume": 0.5,
+    "author": "claudio bertozzi",
+    "sourceUrl": "Kylie Minogue - It’s The Most Wonderful Time Of The Year",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5442,
+    "tracksCount": 1,
+    "search": "kylieminogueitsthemostwonderfultimeoftheyear",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-love-at-first-sight",
     "title": "Love At First Sight",
     "artist": "Kylie Minogue",
@@ -78060,6 +78310,60 @@
     "shortId": 2431,
     "tracksCount": 1,
     "search": "kylieminogueloveatfirstsight",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-magic",
+    "title": "Magic",
+    "artist": "Kylie Minogue",
+    "video": "vzZn31gd_Jc",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 18039.43396226415,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.371Z",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Magic",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5446,
+    "tracksCount": 1,
+    "search": "kylieminoguemagic",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-miss-a-thing",
+    "title": "Miss A Thing",
+    "artist": "Kylie Minogue",
+    "video": "H-kHF9QXM8w",
+    "language": [
+      "English"
+    ],
+    "bpm": 230.02,
+    "gap": 18491.82418920094,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.375Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Miss A Thing",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5448,
+    "tracksCount": 1,
+    "search": "kylieminoguemissathing",
     "local": false
   },
   {
@@ -78114,6 +78418,115 @@
     "shortId": 2433,
     "tracksCount": 1,
     "search": "kylieminoguethelocomotion",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-timebomb",
+    "title": "Timebomb",
+    "artist": "Kylie Minogue",
+    "video": "zL2wGYCINwY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.4,
+    "gap": 25135.460218408738,
+    "year": "2012",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.362Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "ChrissyLeggs",
+    "sourceUrl": "Kylie Minogue - Timebomb",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5441,
+    "tracksCount": 1,
+    "search": "kylieminoguetimebomb",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-too-much",
+    "title": "Too Much",
+    "artist": "Kylie Minogue",
+    "video": "g4agQlmQwJI",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.02,
+    "gap": -24.40508487714132,
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.366Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Too Much",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 5443,
+    "tracksCount": 1,
+    "search": "kylieminoguetoomuch",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-where-does-the-dj-go",
+    "title": "Where Does The DJ Go?",
+    "artist": "Kylie Minogue",
+    "video": "4LN4rA5JDLk",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 18814.962406015038,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.373Z",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Where Does The DJ Go?",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5447,
+    "tracksCount": 1,
+    "search": "kylieminoguewheredoesthedjgo",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-your-disco-needs-you",
+    "title": "Your Disco Needs You",
+    "artist": "Kylie Minogue",
+    "video": "iqtzMue6Izw",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 17180,
+    "year": "2000",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-15T00:14:24.360Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "s_rockt",
+    "sourceUrl": "Kylie Minogue - Your Disco Needs You",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5440,
+    "tracksCount": 1,
+    "search": "kylieminogueyourdisconeedsyou",
     "local": false
   },
   {
@@ -103622,7 +104035,7 @@
     "gap": 18881.900452488688,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-13T00:12:20.956Z",
+    "lastUpdate": "2026-01-11T13:48:42.893Z",
     "genre": "Pop",
     "realBpm": 20,
     "volume": 0.5,
@@ -104968,7 +105381,7 @@
     "gap": 15174.668275030157,
     "year": "1981",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-13T00:12:20.965Z",
+    "lastUpdate": "2026-01-11T13:50:47.770Z",
     "genre": "Pop",
     "realBpm": 31,
     "volume": 0.5,
