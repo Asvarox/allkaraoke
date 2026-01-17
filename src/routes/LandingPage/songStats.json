@@ -3,6 +3,7 @@
     "Lady Gaga",
     "Linkin Park",
     "Britney Spears",
+    "Kylie Minogue",
     "Ariana Grande",
     "Queen",
     "Taylor Swift",
@@ -21,7 +22,6 @@
     "ABBA",
     "Ghost",
     "Madonna",
-    "Kylie Minogue",
     "Muse",
     "Westlife",
     "Adele",
@@ -89,6 +89,7 @@
     "Calvin Harris",
     "Depeche Mode",
     "Electric Light Orchestra",
+    "Guns N’ Roses",
     "Lorde",
     "★N Sync",
     "Nickelback",
@@ -148,8 +149,7 @@
     "Bullet For My Valentine",
     "Dire Straits",
     "DragonForce",
-    "Fleetwood Mac",
-    "Gorillaz"
+    "Fleetwood Mac"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5447
+  "songs": 5470
 }

@@ -57943,6 +57943,60 @@
     "local": false
   },
   {
+    "id": "guns-n-roses-estranged",
+    "title": "Estranged",
+    "artist": "Guns N’ Roses",
+    "video": "dpmAY059TTY",
+    "language": [
+      "English"
+    ],
+    "bpm": 357.84000000000003,
+    "gap": 12523.682562755073,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-17T00:14:04.608Z",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "Eggman",
+    "sourceUrl": "Guns N’ Roses - Estranged",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5468,
+    "tracksCount": 1,
+    "search": "gunsnrosesestranged",
+    "local": false
+  },
+  {
+    "id": "guns-n-roses-its-so-easy",
+    "title": "It’s So Easy",
+    "artist": "Guns N’ Roses",
+    "video": "BZjP3NaLoCQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 304,
+    "gap": 13423.157894736842,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-17T00:14:04.612Z",
+    "realBpm": 54,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "Guns N’ Roses - It’s So Easy",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5471,
+    "tracksCount": 1,
+    "search": "gunsnrosesitssoeasy",
+    "local": false
+  },
+  {
     "id": "guns-n-roses-knocking-on-heavens-door",
     "title": "Knocking On Heavens Door",
     "artist": "Guns N' Roses",
@@ -57968,6 +58022,33 @@
     "shortId": 1823,
     "tracksCount": 1,
     "search": "gunsnrosesknockingonheavensdoor",
+    "local": false
+  },
+  {
+    "id": "guns-n-roses-live-and-let-die",
+    "title": "Live And Let Die",
+    "artist": "Guns N’ Roses",
+    "video": "6D9vAItORgE",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.1,
+    "gap": 10183.482407102927,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-17T00:14:04.610Z",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "Guns N’ Roses - Live And Let Die",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5470,
+    "tracksCount": 1,
+    "search": "gunsnrosesliveandletdie",
     "local": false
   },
   {
@@ -58090,6 +58171,34 @@
     "local": false
   },
   {
+    "id": "guns-n-roses-this-i-love",
+    "title": "This I Love",
+    "artist": "Guns N’ Roses",
+    "video": "aOkiG53ituQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.7,
+    "gap": 11984.404852160727,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-17T00:14:04.609Z",
+    "genre": "Power Ballad",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Guns N’ Roses - This I Love",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5469,
+    "tracksCount": 1,
+    "search": "gunsnrosesthisilove",
+    "local": false
+  },
+  {
     "id": "guns-n-roses-welcome-to-the-jungle",
     "title": "Welcome to the jungle",
     "artist": "Guns N' Roses",
@@ -58117,6 +58226,33 @@
     "shortId": 1828,
     "tracksCount": 1,
     "search": "gunsnroseswelcometothejungle",
+    "local": false
+  },
+  {
+    "id": "guns-n-roses-you-could-be-mine",
+    "title": "You Could Be Mine",
+    "artist": "Guns N’ Roses",
+    "video": "MXx9S2nDouY",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.35,
+    "gap": 65970.72792557532,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-17T00:14:04.607Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "ckone",
+    "sourceUrl": "Guns N’ Roses - You Could Be Mine",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5467,
+    "tracksCount": 1,
+    "search": "gunsnrosesyoucouldbemine",
     "local": false
   },
   {
@@ -77034,7 +77170,7 @@
     "gap": 17208.72340425532,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.355Z",
+    "lastUpdate": "2026-01-14T21:45:06.703Z",
     "genre": "Pop",
     "realBpm": 42,
     "volume": 0.5,
@@ -77090,7 +77226,7 @@
     "gap": 22469.189820330743,
     "year": "1983",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.358Z",
+    "lastUpdate": "2026-01-14T21:45:28.030Z",
     "genre": "R&B",
     "realBpm": 33,
     "volume": 0.5,
@@ -77118,7 +77254,7 @@
     "gap": 531.3883299798795,
     "year": "1973",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.344Z",
+    "lastUpdate": "2026-01-13T08:10:20.482Z",
     "genre": "Funk",
     "realBpm": 31,
     "volume": 0.5,
@@ -77146,7 +77282,7 @@
     "gap": 9247.772828507796,
     "year": "1979",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.353Z",
+    "lastUpdate": "2026-01-14T21:44:52.525Z",
     "realBpm": 27,
     "volume": 0.5,
     "author": "BadNewsBarett",
@@ -77173,7 +77309,7 @@
     "gap": 22030.208205756277,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.351Z",
+    "lastUpdate": "2026-01-14T21:44:33.281Z",
     "realBpm": 25,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -77200,7 +77336,7 @@
     "gap": 18379.428244711264,
     "year": "1979",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-15T00:14:24.338Z",
+    "lastUpdate": "2026-01-13T08:09:52.129Z",
     "genre": "Funk",
     "realBpm": 17,
     "volume": 0.5,
@@ -78087,6 +78223,33 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-cant-beat-the-feeling",
+    "title": "Can’t Beat The Feeling",
+    "artist": "Kylie Minogue",
+    "video": "WruW36eYyt0",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.62,
+    "gap": 23440.578734858682,
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:03.676Z",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Can’t Beat The Feeling",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5453,
+    "tracksCount": 1,
+    "search": "kylieminoguecantbeatthefeeling",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-cant-get-you-out-of-my-head",
     "title": "Can't Get You Out Of My Head",
     "artist": "Kylie Minogue",
@@ -78111,6 +78274,114 @@
     "shortId": 2427,
     "tracksCount": 1,
     "search": "kylieminoguecantgetyououtofmyhead",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-come-into-my-world",
+    "title": "Come Into My World",
+    "artist": "Kylie Minogue",
+    "video": "63vqob-MljQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.95,
+    "gap": 7739.795959191839,
+    "year": "2001",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.604Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Kylie Minogue - Come Into My World",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5465,
+    "tracksCount": 1,
+    "search": "kylieminoguecomeintomyworld",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-cupid-boy",
+    "title": "Cupid Boy",
+    "artist": "Kylie Minogue",
+    "video": "PI5yx6OmiTU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.02,
+    "gap": 5630.081593472522,
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:03.672Z",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Cupid Boy",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5451,
+    "tracksCount": 1,
+    "search": "kylieminoguecupidboy",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-dancing",
+    "title": "Dancing",
+    "artist": "Kylie Minogue",
+    "video": "-BDImdAfodA",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 17777.272727272728,
+    "year": "2018",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.450Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Kylie Minogue - Dancing",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5461,
+    "tracksCount": 1,
+    "search": "kylieminoguedancing",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-everything-is-beautiful",
+    "title": "Everything Is Beautiful",
+    "artist": "Kylie Minogue",
+    "video": "k0XjpTeVFNk",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 25,
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.451Z",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Everything Is Beautiful",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 5462,
+    "tracksCount": 1,
+    "search": "kylieminogueeverythingisbeautiful",
     "local": false
   },
   {
@@ -78153,7 +78424,7 @@
     "gap": 326.06299212598424,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.368Z",
+    "lastUpdate": "2026-01-14T21:50:32.067Z",
     "genre": "Pop",
     "realBpm": 26,
     "volume": 0.5,
@@ -78167,6 +78438,61 @@
     "shortId": 5444,
     "tracksCount": 1,
     "search": "kylieminoguegivemejustalittlemoretime",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-green-light",
+    "title": "Green Light",
+    "artist": "Kylie Minogue",
+    "video": "ZqMyOJnKcTQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 228.02,
+    "gap": 8095.2444522410315,
+    "year": "2023",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.443Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "Rubn4",
+    "sourceUrl": "Kylie Minogue - Green Light",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5459,
+    "tracksCount": 1,
+    "search": "kylieminoguegreenlight",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-i-believe-in-you",
+    "title": "I Believe In You",
+    "artist": "Kylie Minogue",
+    "video": "HZp2bk4YHFY",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 32108.26446280992,
+    "year": "2004",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.441Z",
+    "genre": "Pop",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - I Believe In You",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5457,
+    "tracksCount": 1,
+    "search": "kylieminogueibelieveinyou",
     "local": false
   },
   {
@@ -78239,7 +78565,7 @@
     "gap": 19231.739130434784,
     "year": "2014",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.369Z",
+    "lastUpdate": "2026-01-14T21:50:52.472Z",
     "genre": "Pop",
     "realBpm": 26,
     "volume": 0.5,
@@ -78267,7 +78593,7 @@
     "gap": 19555.503141790366,
     "year": "2015",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.363Z",
+    "lastUpdate": "2026-01-14T21:49:43.352Z",
     "edition": "Christmas",
     "realBpm": 45,
     "volume": 0.5,
@@ -78281,6 +78607,64 @@
     "shortId": 5442,
     "tracksCount": 1,
     "search": "kylieminogueitsthemostwonderfultimeoftheyear",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-jason-donovan-especially-for-you",
+    "title": "Especially For You",
+    "artist": "Kylie Minogue & Jason Donovan",
+    "video": "pOpdzS0CY8M",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 13485.625,
+    "year": "1988",
+    "lastUpdate": "2026-01-17T00:14:03.680Z",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "RES",
+    "sourceUrl": "Kylie Minogue & Jason Donovan - Especially For You [DUET]",
+    "tracks": [
+      {
+        "start": 21
+      },
+      {
+        "start": 533
+      }
+    ],
+    "shortId": 5454,
+    "tracksCount": 2,
+    "search": "kylieminoguejasondonovanespeciallyforyou",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-let-it-snow",
+    "title": "Let It Snow",
+    "artist": "Kylie Minogue",
+    "video": "cRwmoBdG0Pk",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 13932.142857142857,
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.442Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Let It Snow",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5458,
+    "tracksCount": 1,
+    "search": "kylieminogueletitsnow",
     "local": false
   },
   {
@@ -78324,7 +78708,7 @@
     "gap": 18039.43396226415,
     "year": "2020",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.371Z",
+    "lastUpdate": "2026-01-14T21:51:12.059Z",
     "realBpm": 38,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -78351,7 +78735,7 @@
     "gap": 18491.82418920094,
     "year": "2020",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.375Z",
+    "lastUpdate": "2026-01-14T21:52:32.749Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -78364,6 +78748,61 @@
     "shortId": 5448,
     "tracksCount": 1,
     "search": "kylieminoguemissathing",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-monday-blues",
+    "title": "Monday Blues",
+    "artist": "Kylie Minogue",
+    "video": "LsrM3ENwLgM",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.98,
+    "gap": 5073.828424095633,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:03.658Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Monday Blues",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5449,
+    "tracksCount": 1,
+    "search": "kylieminoguemondayblues",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-never-too-late",
+    "title": "Never Too Late",
+    "artist": "Kylie Minogue",
+    "video": "jWDNMmzvNB4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.02,
+    "gap": 9750.083326389467,
+    "year": "1989",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.448Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Never Too Late",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5460,
+    "tracksCount": 1,
+    "search": "kylieminoguenevertoolate",
     "local": false
   },
   {
@@ -78391,6 +78830,144 @@
     "shortId": 2432,
     "tracksCount": 1,
     "search": "kylieminoguepadampadam",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-real-groove",
+    "title": "Real Groove",
+    "artist": "Kylie Minogue",
+    "video": "KDhVbdSug2Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 5134.358974358975,
+    "year": "2020",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:03.674Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Real Groove",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5452,
+    "tracksCount": 1,
+    "search": "kylieminoguerealgroove",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-red-blooded-woman",
+    "title": "Red Blooded Woman",
+    "artist": "Kylie Minogue",
+    "video": "nZaLpZue7us",
+    "language": [
+      "English"
+    ],
+    "bpm": 278,
+    "gap": 10844.820143884892,
+    "year": "2003",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:03.665Z",
+    "edition": "Ultrastar",
+    "genre": "Pop",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "justjack",
+    "sourceUrl": "Kylie Minogue - Red Blooded Woman",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5450,
+    "tracksCount": 1,
+    "search": "kylieminogueredbloodedwoman",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-spinning-around",
+    "title": "Spinning Around",
+    "artist": "Kylie Minogue",
+    "video": "t1DWBKk5xHQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.06,
+    "gap": 11600.24993751562,
+    "year": "2000",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.605Z",
+    "realBpm": 103,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Spinning Around",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5466,
+    "tracksCount": 1,
+    "search": "kylieminoguespinningaround",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-step-back-in-time",
+    "title": "Step Back In Time",
+    "artist": "Kylie Minogue",
+    "video": "6ykq-E_7TZA",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.89,
+    "gap": 27679.968148964843,
+    "year": "1990",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.438Z",
+    "genre": "Pop",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Step Back In Time",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5455,
+    "tracksCount": 1,
+    "search": "kylieminoguestepbackintime",
+    "local": false
+  },
+  {
+    "id": "kylie-minogue-stop-me-from-falling",
+    "title": "Stop Me From Falling",
+    "artist": "Kylie Minogue",
+    "video": "6_DgXvcfhYg",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.02,
+    "gap": 7234.512874966817,
+    "year": "2018",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.452Z",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Kylie Minogue - Stop Me From Falling",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5463,
+    "tracksCount": 1,
+    "search": "kylieminoguestopmefromfalling",
     "local": false
   },
   {
@@ -78432,7 +79009,7 @@
     "gap": 25135.460218408738,
     "year": "2012",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.362Z",
+    "lastUpdate": "2026-01-14T21:48:50.233Z",
     "realBpm": 30,
     "volume": 0.5,
     "author": "ChrissyLeggs",
@@ -78459,7 +79036,7 @@
     "gap": -24.40508487714132,
     "year": "2010",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.366Z",
+    "lastUpdate": "2026-01-14T21:50:02.374Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "lozboorman",
@@ -78486,7 +79063,7 @@
     "gap": 18814.962406015038,
     "year": "2020",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.373Z",
+    "lastUpdate": "2026-01-14T21:51:58.290Z",
     "realBpm": 29,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -78502,6 +79079,34 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-wouldnt-change-a-thing",
+    "title": "Wouldn’t Change A Thing",
+    "artist": "Kylie Minogue",
+    "video": "Or_rCFLQJcQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.58,
+    "gap": 2379.961918578294,
+    "year": "1989",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-17T00:14:04.440Z",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Kylie Minogue - Wouldn’t Change A Thing",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5456,
+    "tracksCount": 1,
+    "search": "kylieminoguewouldntchangeathing",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-your-disco-needs-you",
     "title": "Your Disco Needs You",
     "artist": "Kylie Minogue",
@@ -78513,7 +79118,7 @@
     "gap": 17180,
     "year": "2000",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-15T00:14:24.360Z",
+    "lastUpdate": "2026-01-14T21:47:45.698Z",
     "genre": "Pop",
     "realBpm": 24,
     "volume": 0.5,
@@ -81192,6 +81797,33 @@
     "shortId": 2519,
     "tracksCount": 1,
     "search": "laurapausiniencambiono",
+    "local": false
+  },
+  {
+    "id": "laura-pausini-kylie-minogue-limpido",
+    "title": "Limpido",
+    "artist": "Laura Pausini & Kylie Minogue",
+    "video": "8mybkLc0-Eo",
+    "language": [
+      "English",
+      "Italian"
+    ],
+    "bpm": 392,
+    "gap": 30625.102040816328,
+    "year": "2013",
+    "lastUpdate": "2026-01-17T00:14:04.453Z",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "Leroidukitch",
+    "sourceUrl": "Laura Pausini & Kylie Minogue - Limpido",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5464,
+    "tracksCount": 1,
+    "search": "laurapausinikylieminoguelimpido",
     "local": false
   },
   {
