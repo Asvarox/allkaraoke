@@ -55498,6 +55498,33 @@
     "local": false
   },
   {
+    "id": "gin-blossoms-hey-jealousy",
+    "title": "Hey Jealousy",
+    "artist": "Gin Blossoms",
+    "video": "ah5gAkna3jI",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.75,
+    "gap": 11518.80621422731,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.911Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Gin Blossoms - Hey Jealousy",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5494,
+    "tracksCount": 1,
+    "search": "ginblossomsheyjealousy",
+    "local": false
+  },
+  {
     "id": "gina-g-ooh-aah-just-a-little-bit",
     "title": "Ooh Aah… Just A Little Bit",
     "artist": "Gina G",
@@ -55582,6 +55609,205 @@
     "shortId": 1747,
     "tracksCount": 1,
     "search": "girlinredwefellinloveinoctober",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-biology",
+    "title": "Biology",
+    "artist": "Girls Aloud",
+    "video": "bBPtP4t2J1k",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 5223.972602739726,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.542Z",
+    "edition": "Singstar Anthems",
+    "genre": "Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "desperate",
+    "sourceUrl": "Girls Aloud - Biology",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5503,
+    "tracksCount": 1,
+    "search": "girlsaloudbiology",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-call-the-shots",
+    "title": "Call The Shots",
+    "artist": "Girls Aloud",
+    "video": "-zD2ID-YQiU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 14940,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.545Z",
+    "edition": "Singstar Summer Party",
+    "genre": "Pop",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Girls Aloud - Call The Shots",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5504,
+    "tracksCount": 1,
+    "search": "girlsaloudcalltheshots",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-love-machine",
+    "title": "Love Machine",
+    "artist": "Girls Aloud",
+    "video": "owJHNSF9bm0",
+    "language": [
+      "English"
+    ],
+    "bpm": 232,
+    "gap": 24710.172413793105,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.549Z",
+    "edition": "SingStar Popworld",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "desperate",
+    "sourceUrl": "Girls Aloud - Love Machine",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5506,
+    "tracksCount": 1,
+    "search": "girlsaloudlovemachine",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-no-good-advice",
+    "title": "No Good Advice",
+    "artist": "Girls Aloud",
+    "video": "mNeO5a5tM4s",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 8016.486486486487,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.547Z",
+    "edition": "Singstar Pop Hits",
+    "genre": "Pop",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "desperate",
+    "sourceUrl": "Girls Aloud - No Good Advice",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5505,
+    "tracksCount": 1,
+    "search": "girlsaloudnogoodadvice",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-revolution-in-the-head",
+    "title": "Revolution In The Head",
+    "artist": "Girls Aloud",
+    "video": "NZTbrJztsbg",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.84,
+    "gap": 14015.334523684487,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.559Z",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Revolution In The Head",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5509,
+    "tracksCount": 1,
+    "search": "girlsaloudrevolutioninthehead",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-the-show",
+    "title": "The Show",
+    "artist": "Girls Aloud",
+    "video": "eGUIE844hxk",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 4106.062992125984,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.552Z",
+    "edition": "Singstar Boy Bands Vs Girl Bands",
+    "genre": "Pop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Ultrastar-Songs",
+    "sourceUrl": "Girls Aloud - The Show",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5507,
+    "tracksCount": 1,
+    "search": "girlsaloudtheshow",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-waiting",
+    "title": "Waiting",
+    "artist": "Girls Aloud",
+    "video": "dLs9g_Uaaks",
+    "language": [
+      "English"
+    ],
+    "bpm": 342.08,
+    "gap": 10591.46398503274,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-19T00:15:22.557Z",
+    "realBpm": 8,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Waiting",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5508,
+    "tracksCount": 1,
+    "search": "girlsaloudwaiting",
     "local": false
   },
   {
@@ -56610,6 +56836,32 @@
     "local": false
   },
   {
+    "id": "good-charlotte-feat-m-shadows-and-synyster-gates-the-river",
+    "title": "The River",
+    "artist": "Good Charlotte feat. M. Shadows and Synyster Gates",
+    "video": "yVm8PjWCvLg",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 20281.48148148148,
+    "year": "2007",
+    "lastUpdate": "2026-01-19T00:15:22.373Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Good Charlotte feat. M. Shadows and Synyster Gates - The River",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5496,
+    "tracksCount": 1,
+    "search": "goodcharlottefeatmshadowsandsynystergatestheriver",
+    "local": false
+  },
+  {
     "id": "good-charlotte-girls-and-boys",
     "title": "Girls And Boys",
     "artist": "Good Charlotte",
@@ -56639,6 +56891,90 @@
     "local": false
   },
   {
+    "id": "good-charlotte-i-dont-want-to-be-in-love-dance-floor-anthem",
+    "title": "I Don’t Want To Be In Love (Dance Floor Anthem)",
+    "artist": "Good Charlotte",
+    "video": "_Pjs-QkjmkM",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 20880,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.531Z",
+    "edition": "Singstar Amped [Us]",
+    "genre": "Punk",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Good Charlotte - I Don’t Want To Be In Love (Dance Floor Anthem)",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5497,
+    "tracksCount": 1,
+    "search": "goodcharlotteidontwanttobeinlovedanceflooranthem",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-i-just-wanna-live",
+    "title": "I Just Wanna Live",
+    "artist": "Good Charlotte",
+    "video": "rISYCquFeI8",
+    "language": [
+      "English"
+    ],
+    "bpm": 222,
+    "gap": 27056.486486486487,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.540Z",
+    "edition": "Singstar The Dome",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Good Charlotte - I Just Wanna Live",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5502,
+    "tracksCount": 1,
+    "search": "goodcharlotteijustwannalive",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-keep-your-hands-off-my-girl",
+    "title": "Keep Your Hands Off My Girl",
+    "artist": "Good Charlotte",
+    "video": "2lP5Og2tyVQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 552,
+    "gap": 8394.565217391304,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.372Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Ceptic",
+    "sourceUrl": "Good Charlotte - Keep Your Hands Off My Girl",
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "shortId": 5495,
+    "tracksCount": 1,
+    "search": "goodcharlottekeepyourhandsoffmygirl",
+    "local": false
+  },
+  {
     "id": "good-charlotte-lifestyles-of-the-rich-and-famous",
     "title": "Lifestyles Of The Rich And Famous",
     "artist": "Good Charlotte",
@@ -56664,6 +57000,114 @@
     "shortId": 1782,
     "tracksCount": 1,
     "search": "goodcharlottelifestylesoftherichandfamous",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-movin-on",
+    "title": "Movin’ On",
+    "artist": "Good Charlotte",
+    "video": "Z7uCBgxfUsA",
+    "language": [
+      "English"
+    ],
+    "bpm": 358.3199999999998,
+    "gap": 15147.549565604812,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.533Z",
+    "realBpm": 81,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "Good Charlotte - Movin’ On",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5498,
+    "tracksCount": 1,
+    "search": "goodcharlottemovinon",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-predictable",
+    "title": "Predictable",
+    "artist": "Good Charlotte",
+    "video": "js8pCCxcVuc",
+    "language": [
+      "English"
+    ],
+    "bpm": 336.25,
+    "gap": 11508.587360594796,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.534Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Good Charlotte - Predictable",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5499,
+    "tracksCount": 1,
+    "search": "goodcharlottepredictable",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-the-anthem",
+    "title": "The Anthem",
+    "artist": "Good Charlotte",
+    "video": "desJKYvdq9A",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.4,
+    "gap": 14907.056837366348,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.536Z",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Good Charlotte - The Anthem",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5500,
+    "tracksCount": 1,
+    "search": "goodcharlottetheanthem",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-we-believe",
+    "title": "We Believe",
+    "artist": "Good Charlotte",
+    "video": "cb03p-dHVaA",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 17779.43396226415,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:22.537Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Julia92",
+    "sourceUrl": "Good Charlotte - We Believe",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5501,
+    "tracksCount": 1,
+    "search": "goodcharlottewebelieve",
     "local": false
   },
   {
@@ -57100,6 +57544,35 @@
     "local": false
   },
   {
+    "id": "green-day-american-eulogy",
+    "title": "American Eulogy",
+    "artist": "Green Day",
+    "video": "K7dYYYVOoxU",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.71,
+    "gap": 29166.765404918566,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.140Z",
+    "genre": "Rock",
+    "videoGap": 25,
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - American Eulogy",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5475,
+    "tracksCount": 1,
+    "search": "greendayamericaneulogy",
+    "local": false
+  },
+  {
     "id": "green-day-american-idiot",
     "title": "American Idiot",
     "artist": "Green Day",
@@ -57126,6 +57599,33 @@
     "shortId": 1797,
     "tracksCount": 1,
     "search": "greendayamericanidiot",
+    "local": false
+  },
+  {
+    "id": "green-day-are-we-the-waiting",
+    "title": "Are We The Waiting",
+    "artist": "Green Day",
+    "video": "gvTUFTKCbbA",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.04,
+    "gap": 16375.715050883771,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.133Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Green Day - Are We The Waiting",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5473,
+    "tracksCount": 1,
+    "search": "greendayarewethewaiting",
     "local": false
   },
   {
@@ -57187,6 +57687,34 @@
     "local": false
   },
   {
+    "id": "green-day-before-the-lobotomy",
+    "title": "Before The Lobotomy",
+    "artist": "Green Day",
+    "video": "wzJf2PPbJeQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 231,
+    "gap": 14575.974025974027,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.146Z",
+    "genre": "Punk",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "jdogk",
+    "sourceUrl": "Green Day - Before The Lobotomy",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5478,
+    "tracksCount": 1,
+    "search": "greendaybeforethelobotomy",
+    "local": false
+  },
+  {
     "id": "green-day-boulevard-of-broken-dreams",
     "title": "Boulevard of Broken Dreams",
     "artist": "Green Day",
@@ -57214,6 +57742,89 @@
     "shortId": 1800,
     "tracksCount": 1,
     "search": "greendayboulevardofbrokendreams",
+    "local": false
+  },
+  {
+    "id": "green-day-brain-stew",
+    "title": "Brain Stew",
+    "artist": "Green Day",
+    "video": "IPeJ7iM55hc",
+    "language": [
+      "English"
+    ],
+    "bpm": 304,
+    "gap": 12163.157894736842,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.152Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Green Day - Brain Stew",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5483,
+    "tracksCount": 1,
+    "search": "greendaybrainstew",
+    "local": false
+  },
+  {
+    "id": "green-day-emenius-sleepus",
+    "title": "Emenius Sleepus",
+    "artist": "Green Day",
+    "video": "BWq5TbRa7Ro",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.0099999999999,
+    "gap": 5276.164834881985,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.151Z",
+    "genre": "Rock",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Emenius Sleepus",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5482,
+    "tracksCount": 1,
+    "search": "greendayemeniussleepus",
+    "local": false
+  },
+  {
+    "id": "green-day-fod",
+    "title": "F.O.D.",
+    "artist": "Green Day",
+    "video": "UKU-LZh6r2o",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.06,
+    "gap": -544.8849797023004,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.144Z",
+    "genre": "Rock",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - F.O.D.",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5477,
+    "tracksCount": 1,
+    "search": "greendayfod",
     "local": false
   },
   {
@@ -57246,6 +57857,34 @@
     "local": false
   },
   {
+    "id": "green-day-give-me-novacaine-shes-a-rebel",
+    "title": "Give Me Novacaine / She’s A Rebel",
+    "artist": "Green Day",
+    "video": "r1-YMsOUE2I",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.58,
+    "gap": 17921.337089390814,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.137Z",
+    "genre": "Rock",
+    "realBpm": 33,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Green Day - Give Me Novacaine / She’s A Rebel",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5474,
+    "tracksCount": 1,
+    "search": "greendaygivemenovacaineshesarebel",
+    "local": false
+  },
+  {
     "id": "green-day-holiday",
     "title": "Holiday",
     "artist": "Green Day",
@@ -57275,6 +57914,34 @@
     "local": false
   },
   {
+    "id": "green-day-homecoming",
+    "title": "Homecoming",
+    "artist": "Green Day",
+    "video": "KevdP2uJOZ0",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 8477.5,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.907Z",
+    "genre": "Rock",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Homecoming",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5492,
+    "tracksCount": 1,
+    "search": "greendayhomecoming",
+    "local": false
+  },
+  {
     "id": "green-day-jesus-of-suburbia",
     "title": "Jesus Of Suburbia",
     "artist": "Green Day",
@@ -57300,6 +57967,33 @@
     "shortId": 1803,
     "tracksCount": 1,
     "search": "greendayjesusofsuburbia",
+    "local": false
+  },
+  {
+    "id": "green-day-king-for-a-day",
+    "title": "King For A Day",
+    "artist": "Green Day",
+    "video": "u9KJ-oJ_gU0",
+    "language": [
+      "English"
+    ],
+    "bpm": 295.4000000000003,
+    "gap": 6409.591836734694,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.154Z",
+    "realBpm": 65,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "Green Day - King For A Day",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5484,
+    "tracksCount": 1,
+    "search": "greendaykingforaday",
     "local": false
   },
   {
@@ -57360,6 +58054,34 @@
     "local": false
   },
   {
+    "id": "green-day-letterbomb",
+    "title": "Letterbomb",
+    "artist": "Green Day",
+    "video": "sX3ve_1vRA8",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.69,
+    "gap": 4481.618848852121,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.150Z",
+    "genre": "Rock",
+    "realBpm": 98,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Letterbomb",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5481,
+    "tracksCount": 1,
+    "search": "greendayletterbomb",
+    "local": false
+  },
+  {
     "id": "green-day-longview",
     "title": "Longview",
     "artist": "Green Day",
@@ -57414,6 +58136,34 @@
     "shortId": 1807,
     "tracksCount": 1,
     "search": "greendayminority",
+    "local": false
+  },
+  {
+    "id": "green-day-murder-city",
+    "title": "Murder City",
+    "artist": "Green Day",
+    "video": "O3B8k8wzwZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.15,
+    "gap": 4300.3844675124965,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.897Z",
+    "genre": "Rock",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Murder City",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5491,
+    "tracksCount": 1,
+    "search": "greendaymurdercity",
     "local": false
   },
   {
@@ -57504,6 +58254,145 @@
     "local": false
   },
   {
+    "id": "green-day-sassafras-roots",
+    "title": "Sassafras Roots",
+    "artist": "Green Day",
+    "video": "pcs9vJn0-UI",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.54999999999984,
+    "gap": 16273.306137818501,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.148Z",
+    "genre": "Rock",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Sassafras Roots",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5480,
+    "tracksCount": 1,
+    "search": "greendaysassafrasroots",
+    "local": false
+  },
+  {
+    "id": "green-day-see-the-light",
+    "title": "See The Light",
+    "artist": "Green Day",
+    "video": "9qhXs0pkmEw",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.08,
+    "gap": 12595.052566481138,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.895Z",
+    "genre": "Rock",
+    "realBpm": 34,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - See The Light",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5490,
+    "tracksCount": 1,
+    "search": "greendayseethelight",
+    "local": false
+  },
+  {
+    "id": "green-day-she",
+    "title": "She",
+    "artist": "Green Day",
+    "video": "cXGSKEjR6_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 371.20000000000016,
+    "gap": 4548.127361036158,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.157Z",
+    "genre": "Punk",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "schokobaer69",
+    "sourceUrl": "Green Day - She",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5486,
+    "tracksCount": 1,
+    "search": "greendayshe",
+    "local": false
+  },
+  {
+    "id": "green-day-song-of-the-century",
+    "title": "Song Of The Century",
+    "artist": "Green Day",
+    "video": "XTWUD4mi_GE",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.77,
+    "gap": 6832.0829850292575,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.894Z",
+    "genre": "Rock",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Green Day - Song Of The Century",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5489,
+    "tracksCount": 1,
+    "search": "greendaysongofthecentury",
+    "local": false
+  },
+  {
+    "id": "green-day-stray-heart",
+    "title": "Stray Heart",
+    "artist": "Green Day",
+    "video": "sN0b-adUt9I",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.16,
+    "gap": 5131.160645657187,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.142Z",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Hurricana07",
+    "sourceUrl": "Green Day - Stray Heart",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5476,
+    "tracksCount": 1,
+    "search": "greendaystrayheart",
+    "local": false
+  },
+  {
     "id": "green-day-time-of-your-life-good-riddance",
     "title": "Time Of Your Life (Good Riddance)",
     "artist": "Green Day",
@@ -57529,6 +58418,34 @@
     "shortId": 1811,
     "tracksCount": 1,
     "search": "greendaytimeofyourlifegoodriddance",
+    "local": false
+  },
+  {
+    "id": "green-day-viva-la-gloria-little-girl",
+    "title": "¡Viva La Gloria! (Little Girl)",
+    "artist": "Green Day",
+    "video": "gkKL3goX0WY",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.2,
+    "gap": 28195.36321483771,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.156Z",
+    "genre": "Rock",
+    "realBpm": 37,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - ¡Viva La Gloria! (Little Girl)",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5485,
+    "tracksCount": 1,
+    "search": "greendayvivalaglorialittlegirl",
     "local": false
   },
   {
@@ -57558,6 +58475,33 @@
     "shortId": 1812,
     "tracksCount": 1,
     "search": "greendaywaiting",
+    "local": false
+  },
+  {
+    "id": "green-day-wake-me-up-when-september-ends-short-version",
+    "title": "Wake Me Up When September Ends (Short Version)",
+    "artist": "Green Day",
+    "video": "R1JXYgwwDeY",
+    "language": [
+      "English"
+    ],
+    "bpm": 315,
+    "gap": 90390,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.147Z",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Green Day - Wake Me Up When September Ends (Short Version)",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5479,
+    "tracksCount": 1,
+    "search": "greendaywakemeupwhenseptemberendsshortversion",
     "local": false
   },
   {
@@ -57618,6 +58562,62 @@
     "shortId": 1814,
     "tracksCount": 1,
     "search": "greendaywalkingcontradiction",
+    "local": false
+  },
+  {
+    "id": "green-day-welcome-to-paradise",
+    "title": "Welcome To Paradise",
+    "artist": "Green Day",
+    "video": "iOcrKFiB_ts",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.41999999999996,
+    "gap": 10814.390891453078,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.158Z",
+    "genre": "Rock",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Green Day - Welcome To Paradise",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5487,
+    "tracksCount": 1,
+    "search": "greendaywelcometoparadise",
+    "local": false
+  },
+  {
+    "id": "green-day-whatsername",
+    "title": "Whatsername",
+    "artist": "Green Day",
+    "video": "Z2LC1xrdOaM",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.09,
+    "gap": 20495.191310230774,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.910Z",
+    "genre": "Rock",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "sourceUrl": "Green Day - Whatsername",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5493,
+    "tracksCount": 1,
+    "search": "greendaywhatsername",
     "local": false
   },
   {
@@ -57954,7 +58954,7 @@
     "gap": 12523.682562755073,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T00:14:04.608Z",
+    "lastUpdate": "2026-01-16T20:39:28.971Z",
     "realBpm": 31,
     "volume": 0.5,
     "author": "Eggman",
@@ -57981,7 +58981,7 @@
     "gap": 13423.157894736842,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T00:14:04.612Z",
+    "lastUpdate": "2026-01-16T20:41:23.781Z",
     "realBpm": 54,
     "volume": 0.5,
     "author": "jockel1974",
@@ -58036,7 +59036,7 @@
     "gap": 10183.482407102927,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T00:14:04.610Z",
+    "lastUpdate": "2026-01-16T20:40:12.670Z",
     "realBpm": 35,
     "volume": 0.5,
     "author": "jockel1974",
@@ -58049,6 +59049,33 @@
     "shortId": 5470,
     "tracksCount": 1,
     "search": "gunsnrosesliveandletdie",
+    "local": false
+  },
+  {
+    "id": "guns-n-roses-mr-brownstone",
+    "title": "Mr. Brownstone",
+    "artist": "Guns N’ Roses",
+    "video": "-CmMFRr9RMo",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 30990,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-19T00:15:21.129Z",
+    "realBpm": 42,
+    "volume": 0.5,
+    "author": "ultrastarsongs",
+    "sourceUrl": "Guns N’ Roses - Mr. Brownstone",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5472,
+    "tracksCount": 1,
+    "search": "gunsnrosesmrbrownstone",
     "local": false
   },
   {
@@ -58182,7 +59209,7 @@
     "gap": 11984.404852160727,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T00:14:04.609Z",
+    "lastUpdate": "2026-01-16T20:39:53.465Z",
     "genre": "Power Ballad",
     "realBpm": 12,
     "volume": 0.5,
@@ -58240,7 +59267,7 @@
     "gap": 65970.72792557532,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T00:14:04.607Z",
+    "lastUpdate": "2026-01-16T20:38:31.500Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "ckone",
@@ -78234,7 +79261,7 @@
     "gap": 23440.578734858682,
     "year": "2010",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:03.676Z",
+    "lastUpdate": "2026-01-15T21:24:04.679Z",
     "realBpm": 32,
     "volume": 0.5,
     "author": "lozboorman",
@@ -78288,7 +79315,7 @@
     "gap": 7739.795959191839,
     "year": "2001",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.604Z",
+    "lastUpdate": "2026-01-16T20:37:52.365Z",
     "realBpm": 30,
     "volume": 0.5,
     "author": "justjack",
@@ -78315,7 +79342,7 @@
     "gap": 5630.081593472522,
     "year": "2010",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:03.672Z",
+    "lastUpdate": "2026-01-15T21:23:19.388Z",
     "realBpm": 32,
     "volume": 0.5,
     "author": "lozboorman",
@@ -78342,7 +79369,7 @@
     "gap": 17777.272727272728,
     "year": "2018",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.450Z",
+    "lastUpdate": "2026-01-15T21:28:14.177Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "justjack",
@@ -78369,7 +79396,7 @@
     "gap": 25,
     "year": "2010",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.451Z",
+    "lastUpdate": "2026-01-15T21:28:44.739Z",
     "realBpm": 33,
     "volume": 0.5,
     "author": "lozboorman",
@@ -78452,7 +79479,7 @@
     "gap": 8095.2444522410315,
     "year": "2023",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.443Z",
+    "lastUpdate": "2026-01-15T21:27:26.391Z",
     "realBpm": 23,
     "volume": 0.5,
     "author": "Rubn4",
@@ -78479,7 +79506,7 @@
     "gap": 32108.26446280992,
     "year": "2004",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.441Z",
+    "lastUpdate": "2026-01-15T21:26:11.183Z",
     "genre": "Pop",
     "realBpm": 29,
     "volume": 0.5,
@@ -78620,7 +79647,7 @@
     "bpm": 320,
     "gap": 13485.625,
     "year": "1988",
-    "lastUpdate": "2026-01-17T00:14:03.680Z",
+    "lastUpdate": "2026-01-15T21:24:18.989Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "RES",
@@ -78650,7 +79677,7 @@
     "gap": 13932.142857142857,
     "year": "2010",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.442Z",
+    "lastUpdate": "2026-01-15T21:26:55.173Z",
     "edition": "Christmas",
     "genre": "Christmas",
     "realBpm": 30,
@@ -78762,7 +79789,7 @@
     "gap": 5073.828424095633,
     "year": "2020",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:03.658Z",
+    "lastUpdate": "2026-01-15T05:48:35.767Z",
     "realBpm": 27,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -78789,7 +79816,7 @@
     "gap": 9750.083326389467,
     "year": "1989",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.448Z",
+    "lastUpdate": "2026-01-15T21:27:54.272Z",
     "genre": "Pop",
     "realBpm": 32,
     "volume": 0.5,
@@ -78844,7 +79871,7 @@
     "gap": 5134.358974358975,
     "year": "2020",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:03.674Z",
+    "lastUpdate": "2026-01-15T21:23:45.202Z",
     "realBpm": 20,
     "volume": 0.5,
     "author": "RetroGirl",
@@ -78871,7 +79898,7 @@
     "gap": 10844.820143884892,
     "year": "2003",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:03.665Z",
+    "lastUpdate": "2026-01-15T05:48:56.893Z",
     "edition": "Ultrastar",
     "genre": "Pop",
     "realBpm": 30,
@@ -78900,7 +79927,7 @@
     "gap": 11600.24993751562,
     "year": "2000",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.605Z",
+    "lastUpdate": "2026-01-16T20:38:07.423Z",
     "realBpm": 103,
     "volume": 0.5,
     "author": "lozboorman",
@@ -78927,7 +79954,7 @@
     "gap": 27679.968148964843,
     "year": "1990",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.438Z",
+    "lastUpdate": "2026-01-15T21:25:02.336Z",
     "genre": "Pop",
     "realBpm": 22,
     "volume": 0.5,
@@ -78955,7 +79982,7 @@
     "gap": 7234.512874966817,
     "year": "2018",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.452Z",
+    "lastUpdate": "2026-01-15T21:29:28.016Z",
     "realBpm": 32,
     "volume": 0.5,
     "author": "lozboorman",
@@ -79090,7 +80117,7 @@
     "gap": 2379.961918578294,
     "year": "1989",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-01-17T00:14:04.440Z",
+    "lastUpdate": "2026-01-15T21:25:57.019Z",
     "genre": "Pop",
     "realBpm": 32,
     "volume": 0.5,
@@ -81811,7 +82838,7 @@
     "bpm": 392,
     "gap": 30625.102040816328,
     "year": "2013",
-    "lastUpdate": "2026-01-17T00:14:04.453Z",
+    "lastUpdate": "2026-01-16T20:37:27.560Z",
     "realBpm": 29,
     "volume": 0.5,
     "author": "Leroidukitch",
@@ -148901,6 +149928,32 @@
     "shortId": 4585,
     "tracksCount": 1,
     "search": "ukiss0330",
+    "local": false
+  },
+  {
+    "id": "u2-and-green-day-the-saints-are-coming",
+    "title": "The Saints Are Coming",
+    "artist": "U2 and Green Day",
+    "video": "PD_0fqvT32g",
+    "language": [
+      "English"
+    ],
+    "bpm": 295.9,
+    "gap": 14166.143967556607,
+    "year": "2006",
+    "lastUpdate": "2026-01-19T00:15:21.159Z",
+    "realBpm": 31,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "U2 and Green Day - The Saints Are Coming",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5488,
+    "tracksCount": 1,
+    "search": "u2andgreendaythesaintsarecoming",
     "local": false
   },
   {

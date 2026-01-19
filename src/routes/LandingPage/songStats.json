@@ -1,5 +1,6 @@
 {
   "artists": [
+    "Green Day",
     "Lady Gaga",
     "Linkin Park",
     "Britney Spears",
@@ -15,7 +16,6 @@
     "Michael Jackson",
     "Nirvana",
     "Rihanna",
-    "Green Day",
     "My Chemical Romance",
     "Billie Eilish",
     "Disturbed",
@@ -77,6 +77,8 @@
     "Christina Aguilera",
     "Deftones",
     "Destiny’s Child",
+    "Good Charlotte",
+    "Guns N’ Roses",
     "Jonas Brothers",
     "Melanie Martinez",
     "Oasis",
@@ -89,7 +91,6 @@
     "Calvin Harris",
     "Depeche Mode",
     "Electric Light Orchestra",
-    "Guns N’ Roses",
     "Lorde",
     "★N Sync",
     "Nickelback",
@@ -105,6 +106,7 @@
     "Creed",
     "Eminem",
     "Genesis",
+    "Girls Aloud",
     "Hamilton",
     "Jason Derulo",
     "Johnny Cash",
@@ -147,9 +149,7 @@
     "Atomic Kitten",
     "Black Veil Brides",
     "Bullet For My Valentine",
-    "Dire Straits",
-    "DragonForce",
-    "Fleetwood Mac"
+    "Dire Straits"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5470
+  "songs": 5508
 }
