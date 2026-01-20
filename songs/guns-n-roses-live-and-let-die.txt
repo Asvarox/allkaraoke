@@ -1,0 +1,204 @@
+#ARTIST:Guns N’ Roses
+#TITLE:Live And Let Die
+#CREATOR:jockel1974
+#BPM:304,1
+#YEAR:1991
+#VIDEO:v=6D9vAItORgE
+#LANGUAGE:English
+#GAP:10183,482407102927
+#ALLKARAOKE_ID:guns-n-roses-live-and-let-die
+#ALLKARAOKE_SID:5470
+#ALLKARAOKE_LASTUPDATE:2026-01-16T20:40:12.670Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:35
+#ALLKARAOKE_SOURCEURL:Guns N’ Roses - Live And Let Die
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Guns N’ Roses - Live And Let Die.mp3
+: 20 2 -6 When 
+: 24 3 -2 you 
+: 29 2 -1 were 
+: 34 16 1 young
+- 50
+: 54 4 3 And 
+: 60 4 5 your 
+: 69 3 1 hea
+: 74 8 3 ~rt
+- 82
+: 100 5 -1 Was 
+: 107 2 -1 an 
+: 112 8 -2 o
+: 122 3 -2 pen 
+: 127 3 -2 boo
+: 131 10 -4 ~k
+- 141 156
+- 156
+: 176 2 1 You 
+: 180 4 6 used 
+: 185 2 6 to 
+: 190 13 5 say
+- 203
+: 208 3 1 Live 
+: 213 2 -2 and 
+: 218 5 1 let 
+: 228 3 -2 li
+* 233 12 -6 ~ve
+- 245
+: 252 3 10 You 
+: 257 3 10 know 
+: 262 3 10 you 
+: 267 3 10 did,
+- 270
+: 272 3 6 You 
+: 278 3 6 know 
+: 283 2 6 you 
+: 288 3 6 did,
+- 291
+: 293 3 2 You 
+: 298 3 2 know 
+: 303 3 2 you 
+: 308 4 2 di
+: 313 14 1 ~d
+- 327
+: 332 3 -6 But 
+: 337 3 -4 if 
+: 342 2 -2 this 
+: 347 6 1 e
+: 356 2 1 ver 
+: 361 10 3 chan
+: 375 2 5 gin’ 
+: 380 4 5 wo
+* 385 9 6 ~rld
+- 394
+: 398 3 3 In 
+: 403 3 3 which 
+: 410 3 1 we 
+: 415 4 6 live 
+: 422 9 3 in
+- 431
+: 445 5 8 Makes 
+: 455 6 6 you 
+: 465 7 5 give 
+: 475 6 6 in 
+: 484 6 8 and 
+: 495 26 1 cry,
+- 521 572
+- 572
+: 592 3 -6 Then 
+: 598 3 3 live 
+: 603 3 1 and 
+: 608 5 -2 let 
+: 617 4 -4 die
+: 622 18 -6 ~
+- 640 724
+- 724
+: 744 3 3 Live 
+: 749 3 1 and 
+: 754 4 -2 let 
+: 762 4 -4 die
+* 767 18 -6 ~
+- 785 1558
+- 1558
+: 1578 3 1 What 
+: 1582 2 3 does 
+: 1586 3 6 it 
+: 1594 6 9 mat
+: 1602 2 9 ter 
+: 1606 4 6 to 
+: 1614 9 3 ya
+- 1623
+: 1643 2 -2 When 
+: 1647 2 -2 you 
+: 1651 2 1 got 
+: 1655 2 1 a 
+: 1659 6 4 job 
+: 1667 2 4 to 
+: 1671 5 1 do,
+- 1676
+: 1679 2 1 You 
+: 1683 2 1 got
+: 1687 2 1 ta 
+: 1691 2 -1 do 
+: 1695 3 -2 it 
+: 1703 10 -4 well,
+- 1713 1722
+- 1722
+: 1742 2 1 You 
+: 1746 2 1 got
+: 1750 2 1 ta 
+: 1754 3 3 give 
+: 1758 2 6 the 
+: 1762 2 6 o
+: 1766 2 3 ther 
+: 1770 2 6 fel
+: 1774 2 3 low 
+* 1778 96 11 hell!
+- 1874
+: 1883 122 9 Ah!
+- 2005 2290
+- 2290
+: 2310 3 1 You 
+: 2315 3 6 used 
+: 2320 2 6 to 
+: 2325 10 5 say
+- 2335
+: 2341 4 1 Live 
+: 2346 2 -2 and 
+: 2350 5 1 let 
+: 2359 4 -2 li
+: 2364 13 -6 ~ve
+- 2377
+: 2383 3 6 You 
+: 2388 3 6 know 
+: 2393 2 6 you 
+: 2397 3 5 did,
+- 2400
+: 2402 3 5 You 
+: 2406 3 5 know 
+: 2411 3 5 you 
+: 2416 3 5 did,
+- 2419
+: 2421 3 2 You 
+: 2426 2 2 know 
+: 2430 3 2 you 
+: 2435 3 1 di
+: 2440 3 3 ~
+: 2445 11 1 ~d
+- 2456
+: 2458 3 -6 But 
+: 2463 3 -4 if 
+: 2468 3 -2 this 
+: 2473 8 1 e
+: 2482 2 1 ver 
+: 2487 12 3 chan
+: 2501 2 5 gin’ 
+: 2506 3 5 wo
+: 2511 7 6 ~rld
+- 2518
+: 2522 3 3 In 
+: 2528 3 3 which 
+: 2534 2 1 we 
+: 2539 4 6 live 
+: 2545 10 3 in
+- 2555
+: 2567 5 8 Makes 
+: 2576 6 6 you 
+: 2586 7 5 give 
+: 2596 5 6 in 
+* 2606 5 8 and 
+: 2616 25 1 cry,
+- 2641 2680
+- 2680
+: 2700 3 -6 Then 
+: 2706 3 3 live 
+: 2711 3 1 and 
+: 2715 5 -2 let 
+: 2724 4 -4 die
+: 2729 18 -6 ~
+- 2747 2835
+- 2835
+: 2855 3 3 Live 
+: 2860 3 1 and 
+: 2866 4 -2 let 
+: 2874 4 -4 die
+: 2879 24 -6 ~
+E
