@@ -1,0 +1,134 @@
+#ARTIST:Green Day
+#TITLE:Song Of The Century
+#CREATOR:RetroGirl
+#BPM:394,77
+#YEAR:2009
+#VIDEO:v=XTWUD4mi_GE
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:6832,0829850292575
+#ALLKARAOKE_ID:green-day-song-of-the-century
+#ALLKARAOKE_SID:5489
+#ALLKARAOKE_LASTUPDATE:2026-01-19T00:15:21.894Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:35
+#ALLKARAOKE_SOURCEURL:Green Day - Song Of The Century
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Green Day - Song Of The Century.mp3
+: 26 12 12 Sing 
+: 39 5 12 us 
+: 49 1 14 a 
+: 55 6 14 song
+: 62 7 16 ~ 
+: 71 6 14 of 
+: 80 3 12 the 
+: 90 6 7 cen
+: 97 7 9 ~
+: 111 7 7 tu
+: 120 17 7 ry
+- 137
+F 150 1 7 That’s 
+: 154 11 12 lou
+: 166 6 12 der 
+: 174 4 14 than 
+* 183 2 14 bombs
+: 186 5 16 ~ 
+: 195 7 14 and 
+* 205 4 12 e
+: 214 17 14 ter
+* 234 7 16 ni
+: 244 15 14 ty
+- 259
+: 269 2 4 The 
+: 276 9 12 e
+: 286 7 12 ra 
+: 295 2 14 of 
+: 304 3 14 sta
+: 308 6 16 ~
+: 316 4 14 tic 
+: 324 4 12 and 
+: 333 5 7 con
+: 339 8 9 ~
+: 353 6 7 tra
+: 363 16 7 band
+- 379
+F 394 1 0 That’s 
+: 397 7 12 lea
+* 406 7 12 ding 
+: 415 5 14 us 
+* 425 3 14 in
+: 429 4 16 ~
+: 437 6 14 to 
+: 445 3 12 the 
+: 454 18 14 Pro
+* 476 4 16 mised 
+: 486 15 14 Land
+- 501
+: 520 9 9 Tell 
+: 531 5 12 us 
+: 540 1 11 a 
+: 545 13 12 sto
+: 560 8 7 ry 
+: 570 4 7 that’s 
+: 581 8 5 by 
+: 592 8 12 can
+: 602 5 11 dle
+: 609 15 12 light
+- 624
+: 644 7 9 Wa
+: 655 8 12 ging 
+* 664 3 11 a 
+* 669 14 12 war
+: 684 8 7 ~ 
+* 694 4 7 and 
+* 702 6 5 lo
+* 713 5 12 sing 
+: 720 2 12 the 
+: 727 14 14 fight
+- 741
+: 762 3 4 They’re 
+: 771 11 12 play
+: 783 4 12 ing 
+: 790 5 14 a 
+: 801 3 14 song
+: 805 6 16 ~ 
+: 813 7 14 of 
+: 823 3 12 the 
+: 832 4 7 cen
+: 837 10 9 ~
+: 855 8 7 tu
+: 864 15 7 ry
+- 879
+: 895 9 12 Pa
+: 906 4 12 nic 
+: 916 3 14 and 
+: 924 4 14 pro
+: 929 6 16 ~
+: 937 4 14 mise 
+: 946 4 12 and 
+: 955 6 14 pro
+: 966 8 14 spe
+: 975 6 16 ri
+: 983 17 14 ty
+- 1000
+: 1021 10 9 Tell 
+: 1034 7 12 me 
+: 1042 1 11 a 
+: 1050 12 12 sto
+: 1064 11 7 ry 
+: 1076 2 7 in
+: 1085 8 5 to 
+: 1095 7 12 that 
+: 1108 4 11 good 
+: 1117 17 12 night
+- 1134 1138
+- 1138
+: 1164 8 7 Sing 
+: 1175 6 12 us 
+: 1185 1 12 a 
+: 1192 6 12 song
+: 1199 42 14 ~
+: 1242 2 12 ~ 
+: 1249 13 12 for 
+: 1267 32 12 me
+E

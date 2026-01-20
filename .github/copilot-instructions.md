@@ -90,4 +90,4 @@ pnpm e2e --project="chromium" --headed tests/sing-a-song.spec.ts
 
 ## Path Aliases
 
-TypeScript paths resolve from `./src` (e.g., `import X from 'modules/...'`).
+TypeScript paths resolve from `./src` (e.g., `import X from '~/modules/...'`).

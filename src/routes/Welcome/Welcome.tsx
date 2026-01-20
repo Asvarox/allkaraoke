@@ -49,13 +49,17 @@ function Welcome() {
           </SmoothLink>
         </>
         <Menu.HelpText className="flex justify-between">
-          Get in touch:{' '}
-          <span>
-            <a href="">
+          Get in touch{' '}
+          <span className="flex gap-3">
+            <a href="https://www.facebook.com/allkaraoke.party" target="_blank" rel="noreferrer">
               <Icon icon="cib:facebook" width="0.8em" height="0.8em" /> Facebook
-            </a>{' '}
-            •{' '}
-            <a href="https://github.com/">
+            </a>
+            •
+            <a href="https://www.instagram.com/allkaraoke.party" target="_blank" rel="noreferrer">
+              <Icon icon="cib:instagram" width="0.8em" height="0.8em" /> Instagram
+            </a>
+            •
+            <a href="https://github.com/Asvarox/allkaraoke" target="_blank" rel="noreferrer">
               <Icon icon="cib:github" width="0.8em" height="0.8em" /> Github
             </a>
           </span>

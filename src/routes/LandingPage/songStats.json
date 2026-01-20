@@ -1,8 +1,10 @@
 {
   "artists": [
+    "Green Day",
     "Lady Gaga",
     "Linkin Park",
     "Britney Spears",
+    "Kylie Minogue",
     "Ariana Grande",
     "Queen",
     "Taylor Swift",
@@ -14,7 +16,6 @@
     "Michael Jackson",
     "Nirvana",
     "Rihanna",
-    "Green Day",
     "My Chemical Romance",
     "Billie Eilish",
     "Disturbed",
@@ -54,6 +55,7 @@
     "Glee Cast",
     "High School Musical",
     "Mariah Carey",
+    "No Doubt",
     "Panic! at the Disco",
     "Rise Against",
     "Slipknot",
@@ -63,8 +65,8 @@
     "Dua Lipa",
     "Foo Fighters",
     "Gwen Stefani",
+    "Kool & The Gang",
     "Marina and the Diamonds",
-    "No Doubt",
     "Red Hot Chili Peppers",
     "Rod Stewart",
     "Sabaton",
@@ -74,6 +76,9 @@
     "Céline Dion",
     "Christina Aguilera",
     "Deftones",
+    "Destiny’s Child",
+    "Good Charlotte",
+    "Guns N’ Roses",
     "Jonas Brothers",
     "Melanie Martinez",
     "Oasis",
@@ -101,11 +106,11 @@
     "Creed",
     "Eminem",
     "Genesis",
+    "Girls Aloud",
     "Hamilton",
     "Jason Derulo",
     "Johnny Cash",
     "Jonathan Coulton",
-    "Kylie Minogue",
     "Nicki Minaj",
     "Sabrina Carpenter",
     "Shinedown",
@@ -144,12 +149,7 @@
     "Atomic Kitten",
     "Black Veil Brides",
     "Bullet For My Valentine",
-    "Dire Straits",
-    "DragonForce",
-    "Fleetwood Mac",
-    "Gorillaz",
-    "Guns N' Roses",
-    "Heart"
+    "Dire Straits"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5418
+  "songs": 5508
 }

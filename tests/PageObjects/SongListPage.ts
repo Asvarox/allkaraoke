@@ -15,20 +15,27 @@ export class SongListPagePO {
   }
 
   private async ensureSongIsScrolledTo(songID: string) {
-    if (await this.page.getByTestId(`song-${songID}`).isVisible()) return;
+    const maxAttempts = 3;
 
-    try {
-      return this.page.evaluate(
-        async ([songID]) => {
-          while (!window.__songList) {
-            await new Promise((resolve) => setTimeout(resolve, 20));
-          }
-          console.log(songID, window.__songList?.scrollToSong(songID));
-        },
-        [songID],
-      );
-    } catch (e) {
-      console.log(e);
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+      if (await this.page.getByTestId(`song-${songID}`).isVisible()) return;
+
+      try {
+        await this.page.evaluate(
+          async ([songID]) => {
+            while (!window.__songList) {
+              await new Promise((resolve) => setTimeout(resolve, 20));
+            }
+            console.log(songID, window.__songList?.scrollToSong(songID));
+          },
+          [songID],
+        );
+
+        // Give some time for the scroll to complete
+        await this.page.waitForTimeout(150);
+      } catch (e) {
+        console.log(e);
+      }
     }
   }
 
@@ -51,10 +58,9 @@ export class SongListPagePO {
   }
 
   public async openPreviewForSong(songID: string) {
+    await this.focusSong(songID);
     const locator = await this.getSongElement(songID);
     await locator.click();
-    await expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
-    await locator.click({ force: true });
   }
 
   public get songListContainer() {

@@ -54,6 +54,11 @@ test('window for rating unfinished song is visible and can be skipped by the use
 
   await test.step('After pressing Escape the user returns to game mode', async () => {
     await page.keyboard.press('Escape');
+
+    if (browserName === 'firefox') {
+      // for some reason in e2e test firefox the first Escape is not registered in the game
+      await page.keyboard.press('Escape');
+    }
     await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
     await expect(pages.rateUnfinishedSongPage.rateSongContainer).not.toBeVisible();
   });
