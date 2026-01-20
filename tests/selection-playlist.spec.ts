@@ -55,6 +55,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
   });
 
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
+    await pages.songListPage.closeTheSelectionPlaylistTip();
     await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);

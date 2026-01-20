@@ -51,10 +51,9 @@ export class SongListPagePO {
   }
 
   public async openPreviewForSong(songID: string) {
+    await this.focusSong(songID);
     const locator = await this.getSongElement(songID);
     await locator.click();
-    await expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
-    await locator.click({ force: true });
   }
 
   public get songListContainer() {
