@@ -1,0 +1,518 @@
+#ARTIST:Kool & The Gang
+#TITLE:Jungle Boogie
+#CREATOR:RetroGirl
+#BPM:397,6
+#YEAR:1973
+#VIDEO:v=QGKiC2suCHQ
+#GENRE:Funk
+#LANGUAGE:English
+#GAP:531,3883299798795
+#ALLKARAOKE_ID:kool-the-gang-jungle-boogie
+#ALLKARAOKE_SID:5435
+#ALLKARAOKE_LASTUPDATE:2026-01-13T08:10:20.482Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:31
+#ALLKARAOKE_SOURCEURL:Kool & The Gang - Jungle Boogie
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Kool & The Gang - Jungle Boogie.mp3
+: 27 2 7 Get 
+: 34 7 7 down, 
+: 50 3 10 get 
+* 58 4 7 do
+* 63 6 9 ~wn
+- 69
+: 88 2 5 Get 
+: 96 7 7 down, 
+* 111 3 10 get 
+: 120 4 7 do
+: 125 5 9 ~wn
+- 130
+: 150 3 7 Get 
+: 158 8 7 down, 
+: 174 2 10 get 
+: 183 4 7 do
+: 188 5 9 ~wn
+- 193
+: 212 2 7 Get 
+: 220 9 7 down, 
+: 235 3 10 get 
+: 243 3 7 do
+: 247 6 9 ~wn
+- 253
+* 274 2 7 Get 
+: 281 11 7 down, 
+: 297 2 10 get 
+: 304 3 7 do
+: 308 6 9 ~wn
+- 314
+: 334 2 7 Get 
+: 341 8 7 down, 
+: 357 3 10 get 
+: 365 3 7 do
+: 369 6 9 ~wn
+- 375
+: 395 2 7 Get 
+: 402 9 7 down, 
+: 418 2 10 get 
+: 426 3 7 do
+: 430 6 9 ~wn
+- 436
+: 454 2 7 Get 
+: 462 8 7 down, 
+: 477 3 10 get 
+: 485 4 7 do
+: 490 5 9 ~wn
+- 495
+F 515 103 19 Hey! 
+F 621 15 19 Hey
+- 636 970
+- 970
+: 997 4 13 Jun
+: 1005 5 12 gle 
+* 1013 5 10 boo
+* 1020 4 12 gie
+- 1024
+F 1027 7 12 Down 
+F 1035 2 12 with 
+F 1038 2 12 the 
+F 1041 2 12 boo
+F 1044 8 12 gie
+- 1052
+: 1057 4 13 Jun
+* 1065 6 12 gle 
+: 1073 6 10 boo
+: 1080 5 12 gie
+- 1085
+F 1094 3 12 Get 
+F 1099 2 12 it 
+F 1103 8 12 on
+- 1111
+* 1117 4 13 Jun
+* 1125 4 12 gle 
+: 1132 5 10 boo
+: 1139 4 12 gie
+- 1143
+F 1146 6 12 Down 
+F 1155 1 12 with 
+F 1157 3 12 the 
+F 1161 2 12 boo
+F 1165 8 12 gie
+- 1173
+: 1177 5 13 Jun
+: 1184 5 12 gle 
+: 1192 6 10 boo
+: 1199 6 12 gie
+- 1205
+F 1213 2 12 Get 
+F 1217 2 12 it 
+F 1222 6 12 on
+- 1228
+: 1236 4 13 Jun
+: 1244 5 12 gle 
+: 1252 5 10 boo
+* 1259 3 12 gie
+- 1262
+F 1265 3 12 Up 
+F 1272 2 12 with 
+F 1277 2 12 the 
+F 1281 2 12 boo
+F 1285 4 12 gie
+- 1289
+: 1296 5 13 Jun
+: 1304 5 12 gle 
+: 1312 5 10 boo
+: 1319 3 12 gie
+- 1322
+F 1325 2 12 Up 
+F 1332 2 12 with 
+F 1338 2 12 the 
+F 1342 2 12 get 
+F 1349 4 12 down
+- 1353
+: 1357 5 13 Jun
+: 1364 4 12 gle 
+: 1372 5 10 boo
+: 1379 3 12 gie
+- 1382
+F 1385 8 12 Down 
+F 1394 2 12 with 
+F 1398 2 12 the 
+F 1402 3 12 boo
+F 1406 7 12 gie
+- 1413
+: 1417 4 13 Jun
+: 1424 5 12 gle 
+: 1432 4 10 boo
+: 1439 4 12 gie
+- 1443
+F 1447 2 12 Shake 
+F 1451 2 12 it 
+F 1454 2 12 a
+F 1458 9 12 round
+- 1467 1554
+- 1554
+F 1581 9 13 Huh!
+- 1590 1928
+- 1928
+: 1955 5 13 Jun
+: 1964 5 12 gle 
+: 1971 5 10 boo
+: 1979 4 12 gie
+- 1983
+F 1986 3 12 Up 
+F 1991 4 12 with 
+F 1996 2 12 the 
+F 2000 4 12 get 
+F 2008 3 12 down
+- 2011
+: 2016 4 13 Jun
+: 2023 5 12 gle 
+: 2032 5 10 boo
+: 2039 4 12 gie
+- 2043
+F 2053 3 12 Boog
+F 2057 2 12 gie 
+F 2060 3 12 ba
+F 2065 3 12 by
+- 2068
+: 2075 4 13 Jun
+: 2082 6 12 gle 
+: 2093 4 10 boo
+: 2098 5 12 gie
+- 2103
+F 2112 2 12 Get 
+F 2115 2 12 the 
+F 2120 2 12 boo
+F 2124 5 12 gie
+- 2129
+: 2135 5 13 Jun
+: 2142 5 12 gle 
+: 2151 4 10 boo
+: 2158 4 12 gie 
+F 2165 22 12 huh
+- 2187
+: 2193 5 13 Jun
+: 2201 6 12 gle 
+: 2209 5 10 boo
+: 2216 3 12 gie
+- 2219
+F 2222 3 12 Up 
+F 2231 2 12 with 
+F 2236 2 12 the 
+F 2240 4 12 get 
+F 2247 4 12 down
+- 2251
+: 2255 4 13 Jun
+: 2262 6 12 gle 
+: 2270 5 10 boo
+: 2277 5 12 gie
+- 2282
+F 2289 2 12 Get 
+F 2295 2 12 the 
+F 2300 3 12 boo
+F 2304 5 12 gie
+- 2309
+: 2314 4 13 Jun
+: 2322 5 12 gle 
+: 2329 6 10 boo
+: 2337 5 12 gie
+- 2342
+F 2349 3 12 In 
+F 2354 3 12 the 
+F 2359 2 12 jun
+F 2362 6 12 gle
+- 2368
+: 2374 5 13 Jun
+: 2381 5 12 gle 
+: 2390 5 10 boo
+: 2396 5 12 gie
+- 2401
+F 2404 6 12 Down 
+F 2412 2 12 with 
+F 2415 2 12 the 
+F 2419 2 12 boo
+F 2423 6 12 gie
+- 2429
+: 2434 2 14 Get 
+: 2441 9 14 down, 
+: 2456 3 17 get 
+: 2465 3 14 do
+: 2469 7 16 ~wn
+- 2476
+: 2494 2 17 Get 
+: 2502 10 17 down, 
+: 2517 3 17 get 
+: 2524 3 17 do
+: 2528 2 19 ~wn
+- 2530
+F 2533 2 19 With 
+F 2536 2 19 the 
+F 2539 3 19 boo
+F 2544 5 19 gie
+- 2549
+: 2555 2 17 Get 
+: 2562 10 17 down 
+: 2577 2 17 get
+- 2579
+F 2585 5 17 Jun
+F 2592 5 19 gle 
+F 2600 4 19 boo
+F 2607 4 19 gie
+- 2611
+: 2615 2 17 Get 
+: 2623 9 17 down, 
+: 2637 3 17 get 
+: 2645 2 17 do
+: 2648 2 19 ~wn
+- 2650
+F 2653 2 19 With 
+F 2656 2 19 the 
+F 2660 4 19 boo
+F 2665 2 19 gie
+- 2667
+: 2675 2 17 Get 
+: 2682 8 17 down, 
+: 2698 2 17 get 
+: 2705 4 17 do
+: 2710 2 19 ~wn
+- 2712
+F 2713 2 19 It’s 
+F 2717 2 19 the 
+F 2720 3 19 boo
+F 2724 5 19 gie
+- 2729
+: 2735 2 17 Get 
+: 2743 9 17 down, 
+: 2757 2 17 get 
+: 2765 2 17 do
+: 2768 3 19 ~wn
+- 2771
+F 2773 2 19 Jun
+F 2777 2 19 gle 
+F 2781 3 19 boo
+F 2785 5 19 gie
+- 2790
+: 2795 2 17 Get 
+: 2803 9 17 down, 
+: 2818 2 17 get 
+: 2825 4 17 do
+: 2830 2 19 ~wn
+- 2832
+F 2833 2 19 With 
+F 2836 2 19 the 
+F 2840 3 19 boo
+F 2844 3 19 gie
+- 2847
+: 2855 2 17 Get 
+: 2862 7 17 down, 
+: 2877 3 17 get 
+: 2884 3 17 do
+: 2888 3 19 ~wn
+- 2891
+F 2893 2 19 With 
+F 2896 2 19 the 
+F 2900 3 19 boo
+F 2904 4 19 gie
+- 2908
+: 2914 2 17 Get 
+: 2922 8 17 down, 
+: 2938 2 17 get 
+: 2945 3 17 do
+: 2949 2 19 ~wn
+- 2951
+F 2953 2 19 Jun
+F 2956 2 19 gle 
+F 2960 3 19 boo
+F 2964 5 19 gie
+- 2969
+: 2975 2 17 Get 
+: 2982 11 17 down, 
+: 2997 2 17 get 
+: 3004 4 17 do
+: 3009 5 19 ~wn
+- 3014
+F 3018 12 19 Yeah
+- 3030
+: 3034 2 17 Get 
+: 3041 7 17 down, 
+: 3056 3 17 get 
+: 3064 3 17 do
+: 3068 2 19 ~wn
+- 3070
+F 3072 2 19 It’s 
+F 3075 2 19 the 
+F 3079 4 19 boo
+F 3084 3 19 gie
+- 3087
+: 3094 2 17 Get 
+: 3101 10 17 down, 
+: 3116 3 17 get 
+* 3124 2 17 do
+* 3127 7 19 ~wn
+- 3134 3170
+- 3170
+F 3197 4 19 Uh
+- 3201 3229
+- 3229
+F 3256 14 17 Huh!
+- 3270 3401
+- 3401
+F 3428 6 7 Ugh 
+F 3442 2 7 get 
+F 3446 3 7 it
+- 3449 3460
+- 3460
+F 3487 3 7 Feel 
+F 3491 2 7 the 
+F 3495 4 7 funk 
+F 3501 26 7 y’all
+- 3527
+F 3546 2 7 Let 
+F 3550 2 7 it 
+F 3554 27 7 flow
+- 3581
+F 3606 3 7 Huh
+- 3609
+F 3620 2 7 Chik 
+F 3624 2 7 a 
+F 3628 4 7 ugh 
+F 3635 7 7 ugh
+- 3642
+F 3666 12 7 Huh 
+F 3684 1 7 a 
+F 3688 2 7 tuk 
+F 3695 2 7 tok
+- 3697
+F 3710 2 7 Chik 
+F 3714 2 7 eh 
+F 3721 2 7 uh 
+F 3731 4 7 uh 
+F 3738 11 7 uh
+- 3749 3758
+- 3758
+F 3785 3 7 Huh 
+F 3799 2 7 kit 
+F 3803 2 7 chi 
+F 3807 3 7 doh 
+F 3814 3 7 ugh
+- 3817
+F 3828 2 7 Chi 
+F 3832 2 7 chi 
+F 3837 2 7 tuk 
+F 3844 2 7 tok
+- 3846
+F 3854 2 7 Ga 
+F 3858 2 7 chik 
+F 3865 6 7 ugh 
+F 3873 2 7 get 
+F 3877 5 7 down
+- 3882
+F 3903 2 7 Get 
+F 3910 6 7 down 
+F 3918 2 7 with 
+F 3921 2 7 the 
+F 3925 2 7 boo
+F 3929 4 7 gie 
+F 3936 2 7 ha
+- 3938
+F 3947 2 7 Chik 
+F 3951 2 7 ah 
+F 3962 2 7 talk 
+F 3970 3 7 tal
+F 3977 9 7 kin’
+- 3986
+F 3992 2 7 I’m 
+F 4000 2 7 tal
+F 4003 3 7 kin’ 
+F 4007 2 7 ’bout 
+F 4010 2 7 the 
+F 4014 6 7 jun
+F 4022 2 7 gle 
+F 4026 5 7 boo
+F 4033 2 7 gie 
+F 4037 2 7 get 
+F 4040 7 7 down
+- 4047
+F 4051 4 7 Huh 
+F 4059 4 7 uh 
+F 4065 5 7 get 
+F 4073 5 7 down 
+F 4081 1 7 with 
+F 4083 2 7 the 
+F 4087 3 7 boo
+F 4091 1 7 gie 
+F 4093 3 7 say 
+F 4102 9 7 uh!
+- 4111
+F 4125 3 7 Huh 
+F 4138 2 7 get 
+F 4146 5 7 down 
+F 4153 3 7 say 
+F 4161 8 7 uh! 
+F 4174 2 7 Huh 
+F 4181 4 7 uh
+- 4185
+F 4196 2 7 Get 
+F 4204 5 7 down 
+F 4212 2 7 say 
+F 4219 4 7 uh
+- 4223
+F 4240 4 7 Huh 
+F 4255 2 7 get 
+F 4262 2 7 down 
+F 4270 3 7 say 
+F 4278 4 7 uh
+- 4282
+F 4300 5 7 Ha
+- 4305
+F 4314 2 7 Till 
+F 4318 2 7 you 
+F 4322 2 7 feel 
+F 4325 2 7 it 
+F 4329 5 7 y’all 
+F 4336 5 7 uh
+- 4341
+F 4352 2 7 Tik 
+F 4358 5 7 ha 
+F 4374 2 7 get 
+F 4381 5 7 down 
+F 4388 4 7 y’all 
+F 4395 5 7 uh!
+- 4400
+F 4418 5 7 Ha 
+F 4433 2 7 get 
+F 4440 12 7 down 
+F 4455 5 7 uh
+- 4460
+F 4469 2 7 Huh 
+F 4476 5 7 ah 
+F 4491 2 7 get 
+F 4498 2 7 up 
+F 4505 5 7 y’all
+- 4510
+F 4513 5 7 Uh 
+F 4528 2 7 ha 
+F 4534 5 7 ah
+- 4539
+F 4550 2 7 With 
+F 4553 2 7 the 
+F 4557 2 7 get 
+F 4564 4 7 down 
+F 4571 6 7 uh
+- 4577
+F 4585 38 7 Huh
+- 4623
+F 4630 6 7 Uh
+- 4636
+F 4652 5 7 Ha 
+F 4665 3 7 get 
+F 4674 9 7 down 
+F 4689 5 7 uh
+- 4694 4711
+- 4711
+F 4738 6 7 Whoa 
+F 4746 7 7 ee 
+F 4755 12 7 ah 
+F 4769 5 7 ee 
+F 4776 29 7 oh!
+E
