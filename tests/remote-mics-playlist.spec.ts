@@ -129,7 +129,7 @@ test('Adding and removing song from the remote mic playlist on desktop app works
     await remoteMic2.remoteMicSongListPage.expectSongToBeVisible(songs.french.ID);
   });
 
-  await test.step('After removes that song from Player1`s favourites, it should still be visible in remoteMics playlist', async () => {
+  await test.step('After removing that song from Player1`s favourites, it should still be visible in remoteMics playlist', async () => {
     await remoteMic.remoteMicSongListPage.removeSongFromFavouriteList(songs.french.ID);
     await expect(await pages.songListPage.getSongElement(songs.french.ID)).toBeVisible();
   });
