@@ -220,7 +220,7 @@ export default function ConvertView({ song }: Props) {
   return (
     <StyledEngineProvider injectFirst>
       <NormalizeFontSize />
-      <Grid container gap={2} p={1} pb={10}>
+      <Grid container gap={2} p={1} pt={0} pb={10}>
         <Grid item xs={12}>
           {!isEdit && (
             <div style={{ marginBottom: '1rem' }}>
@@ -230,26 +230,26 @@ export default function ConvertView({ song }: Props) {
             </div>
           )}
         </Grid>
-        <Grid item xs={12}>
-          <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={isEdit}>
+        <Grid item xs={12} className="md:py-4">
+          <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
               <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
-                Basic Info
+                <span className="hidden md:block">Basic Info</span>
               </StepButton>
             </Step>
             <Step key={1} completed={isAuthorAndVidCompleted}>
               <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
-                Author and video data
+                <span className="hidden md:block">Author and video data</span>
               </StepButton>
             </Step>
             <Step key={2}>
               <StepButton color="inherit" onClick={() => setCurrentStep(2)}>
-                Sync lyrics to video
+                <span className="hidden md:block">Sync lyrics to video</span>
               </StepButton>
             </Step>
             <Step key={3}>
               <StepButton color="inherit" onClick={() => setCurrentStep(3)}>
-                Fill song metadata
+                <span className="hidden md:block">Fill song metadata</span>
               </StepButton>
             </Step>
           </Stepper>
