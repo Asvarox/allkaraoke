@@ -55509,7 +55509,7 @@
     "gap": 11518.80621422731,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.911Z",
+    "lastUpdate": "2026-01-18T21:10:07.295Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "Canni",
@@ -55623,7 +55623,7 @@
     "gap": 5223.972602739726,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.542Z",
+    "lastUpdate": "2026-01-18T21:14:50.154Z",
     "edition": "Singstar Anthems",
     "genre": "Pop",
     "realBpm": 19,
@@ -55641,6 +55641,33 @@
     "local": false
   },
   {
+    "id": "girls-aloud-black-jacks",
+    "title": "Black Jacks",
+    "artist": "Girls Aloud",
+    "video": "nqxKY-X6XbA",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.06,
+    "gap": 13465.191310230775,
+    "year": "209",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.943Z",
+    "realBpm": 82,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Black Jacks",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5510,
+    "tracksCount": 1,
+    "search": "girlsaloudblackjacks",
+    "local": false
+  },
+  {
     "id": "girls-aloud-call-the-shots",
     "title": "Call The Shots",
     "artist": "Girls Aloud",
@@ -55652,7 +55679,7 @@
     "gap": 14940,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.545Z",
+    "lastUpdate": "2026-01-18T21:15:19.842Z",
     "edition": "Singstar Summer Party",
     "genre": "Pop",
     "realBpm": 31,
@@ -55670,6 +55697,250 @@
     "local": false
   },
   {
+    "id": "girls-aloud-cant-speak-french",
+    "title": "Can’t Speak French",
+    "artist": "Girls Aloud",
+    "video": "IuPL_Bgmvvs",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.75,
+    "gap": 13381.233243967828,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.952Z",
+    "genre": "Pop",
+    "realBpm": 71,
+    "volume": 0.5,
+    "author": "magigram",
+    "sourceUrl": "Girls Aloud - Can’t Speak French",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5513,
+    "tracksCount": 1,
+    "search": "girlsaloudcantspeakfrench",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-control-of-the-knife",
+    "title": "Control Of The Knife",
+    "artist": "Girls Aloud",
+    "video": "YP3CZATerZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.04,
+    "gap": 13930.163173892177,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.949Z",
+    "realBpm": 43,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Control Of The Knife",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5511,
+    "tracksCount": 1,
+    "search": "girlsaloudcontroloftheknife",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-crocodile-tears",
+    "title": "Crocodile Tears",
+    "artist": "Girls Aloud",
+    "video": "PEuuhfyStxE",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.02,
+    "gap": 30221.857108297718,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:12.698Z",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Crocodile Tears",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5524,
+    "tracksCount": 1,
+    "search": "girlsaloudcrocodiletears",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-dog-without-a-bone",
+    "title": "Dog Without A Bone",
+    "artist": "Girls Aloud",
+    "video": "-s1hs-gJ4VY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.05,
+    "gap": 22254.100761570007,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.957Z",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Dog Without A Bone",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5515,
+    "tracksCount": 1,
+    "search": "girlsalouddogwithoutabone",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-girl-overboard",
+    "title": "Girl Overboard",
+    "artist": "Girls Aloud",
+    "video": "vOIW3uI-nEc",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.02,
+    "gap": 6846.142036060152,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:12.701Z",
+    "realBpm": 89,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Girl Overboard",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5525,
+    "tracksCount": 1,
+    "search": "girlsaloudgirloverboard",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-i-think-were-alone-now",
+    "title": "I Think We’re Alone Now",
+    "artist": "Girls Aloud",
+    "video": "lvMM72RFfv8",
+    "language": [
+      "English"
+    ],
+    "bpm": 265.96,
+    "gap": 17584.80974582644,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:12.703Z",
+    "realBpm": 78,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - I Think We’re Alone Now",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5526,
+    "tracksCount": 1,
+    "search": "girlsaloudithinkwerealonenow",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-jump",
+    "title": "Jump",
+    "artist": "Girls Aloud",
+    "video": "rk7zhB_m4gc",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.08,
+    "gap": 14146.58094247064,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:12.704Z",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "macgyver2809",
+    "sourceUrl": "Girls Aloud - Jump",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5527,
+    "tracksCount": 1,
+    "search": "girlsaloudjump",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-life-got-cold",
+    "title": "Life Got Cold",
+    "artist": "Girls Aloud",
+    "video": "wurjnwmtrqk",
+    "language": [
+      "English"
+    ],
+    "bpm": 356.08,
+    "gap": 10888.991237924061,
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.962Z",
+    "realBpm": 64,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Life Got Cold",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5517,
+    "tracksCount": 1,
+    "search": "girlsaloudlifegotcold",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-long-hot-summer",
+    "title": "Long Hot Summer",
+    "artist": "Girls Aloud",
+    "video": "7-72xwJ4ytY",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.04,
+    "gap": 7279.381633594831,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.969Z",
+    "realBpm": 78,
+    "volume": 0.5,
+    "author": "magigram",
+    "sourceUrl": "Girls Aloud - Long Hot Summer",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5519,
+    "tracksCount": 1,
+    "search": "girlsaloudlonghotsummer",
+    "local": false
+  },
+  {
     "id": "girls-aloud-love-machine",
     "title": "Love Machine",
     "artist": "Girls Aloud",
@@ -55681,7 +55952,7 @@
     "gap": 24710.172413793105,
     "year": "2004",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.549Z",
+    "lastUpdate": "2026-01-18T21:16:13.778Z",
     "edition": "SingStar Popworld",
     "genre": "Pop",
     "realBpm": 17,
@@ -55699,6 +55970,60 @@
     "local": false
   },
   {
+    "id": "girls-aloud-miss-you-bow-wow",
+    "title": "Miss You Bow Wow",
+    "artist": "Girls Aloud",
+    "video": "aECFWiouIoo",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.02,
+    "gap": 17440.481684453418,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.973Z",
+    "realBpm": 80,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Miss You Bow Wow",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5521,
+    "tracksCount": 1,
+    "search": "girlsaloudmissyoubowwow",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-models",
+    "title": "Models",
+    "artist": "Girls Aloud",
+    "video": "PsHImxDN8o4",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.02,
+    "gap": 6045.686519592526,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:12.696Z",
+    "realBpm": 53,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Models",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5523,
+    "tracksCount": 1,
+    "search": "girlsaloudmodels",
+    "local": false
+  },
+  {
     "id": "girls-aloud-no-good-advice",
     "title": "No Good Advice",
     "artist": "Girls Aloud",
@@ -55710,7 +56035,7 @@
     "gap": 8016.486486486487,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.547Z",
+    "lastUpdate": "2026-01-18T21:15:46.608Z",
     "edition": "Singstar Pop Hits",
     "genre": "Pop",
     "realBpm": 31,
@@ -55728,6 +56053,33 @@
     "local": false
   },
   {
+    "id": "girls-aloud-on-the-metro",
+    "title": "On The Metro",
+    "artist": "Girls Aloud",
+    "video": "-eAWTnp8k_8",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": -8.59375,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.965Z",
+    "realBpm": 7,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - On The Metro",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 5518,
+    "tracksCount": 1,
+    "search": "girlsaloudonthemetro",
+    "local": false
+  },
+  {
     "id": "girls-aloud-revolution-in-the-head",
     "title": "Revolution In The Head",
     "artist": "Girls Aloud",
@@ -55739,7 +56091,7 @@
     "gap": 14015.334523684487,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.559Z",
+    "lastUpdate": "2026-01-18T21:17:16.996Z",
     "realBpm": 9,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55755,6 +56107,115 @@
     "local": false
   },
   {
+    "id": "girls-aloud-something-kinda-ooooh",
+    "title": "Something Kinda Ooooh",
+    "artist": "Girls Aloud",
+    "video": "Wy3SV2fvoG8",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 22.727272727272748,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.972Z",
+    "realBpm": 5,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Girls Aloud - Something Kinda Ooooh",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 5520,
+    "tracksCount": 1,
+    "search": "girlsaloudsomethingkindaooooh",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-something-new",
+    "title": "Something New",
+    "artist": "Girls Aloud",
+    "video": "ZHSFTrcJYmM",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.06,
+    "gap": -567.2656835791051,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.960Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "magigram",
+    "sourceUrl": "Girls Aloud - Something New",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5516,
+    "tracksCount": 1,
+    "search": "girlsaloudsomethingnew",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-sound-of-the-underground",
+    "title": "Sound Of The Underground",
+    "artist": "Girls Aloud",
+    "video": "V9Wv4SCBiTE",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 8313.90243902439,
+    "year": "2002",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.955Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "magigram, DoubleDee",
+    "sourceUrl": "Girls Aloud - Sound Of The Underground",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5514,
+    "tracksCount": 1,
+    "search": "girlsaloudsoundoftheunderground",
+    "local": false
+  },
+  {
+    "id": "girls-aloud-the-loving-kind",
+    "title": "The Loving Kind",
+    "artist": "Girls Aloud",
+    "video": "lFY4DxiHzTI",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.5,
+    "gap": 22171.596638655465,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-21T00:15:11.951Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "magigram",
+    "sourceUrl": "Girls Aloud - The Loving Kind",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5512,
+    "tracksCount": 1,
+    "search": "girlsaloudthelovingkind",
+    "local": false
+  },
+  {
     "id": "girls-aloud-the-show",
     "title": "The Show",
     "artist": "Girls Aloud",
@@ -55766,7 +56227,7 @@
     "gap": 4106.062992125984,
     "year": "2004",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.552Z",
+    "lastUpdate": "2026-01-18T21:16:39.812Z",
     "edition": "Singstar Boy Bands Vs Girl Bands",
     "genre": "Pop",
     "realBpm": 32,
@@ -55795,7 +56256,7 @@
     "gap": 10591.46398503274,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-19T00:15:22.557Z",
+    "lastUpdate": "2026-01-18T21:16:56.709Z",
     "realBpm": 8,
     "volume": 0.5,
     "author": "lozboorman",
@@ -56846,7 +57307,7 @@
     "bpm": 324,
     "gap": 20281.48148148148,
     "year": "2007",
-    "lastUpdate": "2026-01-19T00:15:22.373Z",
+    "lastUpdate": "2026-01-18T21:10:33.470Z",
     "realBpm": 20,
     "volume": 0.5,
     "author": "IC",
@@ -56902,7 +57363,7 @@
     "gap": 20880,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.531Z",
+    "lastUpdate": "2026-01-18T21:10:49.679Z",
     "edition": "Singstar Amped [Us]",
     "genre": "Punk",
     "realBpm": 18,
@@ -56931,7 +57392,7 @@
     "gap": 27056.486486486487,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.540Z",
+    "lastUpdate": "2026-01-18T21:14:28.883Z",
     "edition": "Singstar The Dome",
     "realBpm": 36,
     "volume": 0.5,
@@ -56959,7 +57420,7 @@
     "gap": 8394.565217391304,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.372Z",
+    "lastUpdate": "2026-01-18T21:10:20.755Z",
     "realBpm": 21,
     "volume": 0.5,
     "author": "Ceptic",
@@ -57014,7 +57475,7 @@
     "gap": 15147.549565604812,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.533Z",
+    "lastUpdate": "2026-01-18T21:12:11.639Z",
     "realBpm": 81,
     "volume": 0.5,
     "author": "Diddlmaus30mg",
@@ -57041,7 +57502,7 @@
     "gap": 11508.587360594796,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.534Z",
+    "lastUpdate": "2026-01-18T21:12:42.947Z",
     "realBpm": 23,
     "volume": 0.5,
     "author": "Canni",
@@ -57068,7 +57529,7 @@
     "gap": 14907.056837366348,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.536Z",
+    "lastUpdate": "2026-01-18T21:12:59.709Z",
     "realBpm": 22,
     "volume": 0.5,
     "author": "Canni",
@@ -57095,7 +57556,7 @@
     "gap": 17779.43396226415,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:22.537Z",
+    "lastUpdate": "2026-01-18T21:14:02.772Z",
     "realBpm": 26,
     "volume": 0.5,
     "author": "Julia92",
@@ -57555,7 +58016,7 @@
     "gap": 29166.765404918566,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.140Z",
+    "lastUpdate": "2026-01-17T18:55:23.148Z",
     "genre": "Rock",
     "videoGap": 25,
     "realBpm": 27,
@@ -57613,7 +58074,7 @@
     "gap": 16375.715050883771,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.133Z",
+    "lastUpdate": "2026-01-17T17:24:54.495Z",
     "realBpm": 23,
     "volume": 0.5,
     "author": "Canni",
@@ -57698,7 +58159,7 @@
     "gap": 14575.974025974027,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.146Z",
+    "lastUpdate": "2026-01-17T18:56:42.756Z",
     "genre": "Punk",
     "realBpm": 36,
     "volume": 0.5,
@@ -57756,7 +58217,7 @@
     "gap": 12163.157894736842,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.152Z",
+    "lastUpdate": "2026-01-17T19:28:19.718Z",
     "realBpm": 17,
     "volume": 0.5,
     "author": "Canni",
@@ -57783,7 +58244,7 @@
     "gap": 5276.164834881985,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.151Z",
+    "lastUpdate": "2026-01-17T18:59:28.287Z",
     "genre": "Rock",
     "realBpm": 38,
     "volume": 0.5,
@@ -57811,7 +58272,7 @@
     "gap": -544.8849797023004,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.144Z",
+    "lastUpdate": "2026-01-17T18:56:16.999Z",
     "genre": "Rock",
     "realBpm": 21,
     "volume": 0.5,
@@ -57868,7 +58329,7 @@
     "gap": 17921.337089390814,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.137Z",
+    "lastUpdate": "2026-01-17T17:25:31.006Z",
     "genre": "Rock",
     "realBpm": 33,
     "volume": 0.5,
@@ -57925,7 +58386,7 @@
     "gap": 8477.5,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.907Z",
+    "lastUpdate": "2026-01-18T21:09:24.926Z",
     "genre": "Rock",
     "realBpm": 21,
     "volume": 0.5,
@@ -57981,7 +58442,7 @@
     "gap": 6409.591836734694,
     "year": "1997",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.154Z",
+    "lastUpdate": "2026-01-17T19:29:03.144Z",
     "realBpm": 65,
     "volume": 0.5,
     "author": "jockel1974",
@@ -58065,7 +58526,7 @@
     "gap": 4481.618848852121,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.150Z",
+    "lastUpdate": "2026-01-17T18:58:26.903Z",
     "genre": "Rock",
     "realBpm": 98,
     "volume": 0.5,
@@ -58150,7 +58611,7 @@
     "gap": 4300.3844675124965,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.897Z",
+    "lastUpdate": "2026-01-18T21:08:54.337Z",
     "genre": "Rock",
     "realBpm": 29,
     "volume": 0.5,
@@ -58265,7 +58726,7 @@
     "gap": 16273.306137818501,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.148Z",
+    "lastUpdate": "2026-01-17T18:58:04.953Z",
     "genre": "Rock",
     "realBpm": 16,
     "volume": 0.5,
@@ -58293,7 +58754,7 @@
     "gap": 12595.052566481138,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.895Z",
+    "lastUpdate": "2026-01-17T19:32:36.142Z",
     "genre": "Rock",
     "realBpm": 34,
     "volume": 0.5,
@@ -58321,7 +58782,7 @@
     "gap": 4548.127361036158,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.157Z",
+    "lastUpdate": "2026-01-17T19:30:28.541Z",
     "genre": "Punk",
     "realBpm": 32,
     "volume": 0.5,
@@ -58349,7 +58810,7 @@
     "gap": 6832.0829850292575,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.894Z",
+    "lastUpdate": "2026-01-17T19:32:19.585Z",
     "genre": "Rock",
     "realBpm": 35,
     "volume": 0.5,
@@ -58377,7 +58838,7 @@
     "gap": 5131.160645657187,
     "year": "2012",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.142Z",
+    "lastUpdate": "2026-01-17T18:55:42.755Z",
     "realBpm": 28,
     "volume": 0.5,
     "author": "Hurricana07",
@@ -58432,7 +58893,7 @@
     "gap": 28195.36321483771,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.156Z",
+    "lastUpdate": "2026-01-17T19:29:35.447Z",
     "genre": "Rock",
     "realBpm": 37,
     "volume": 0.5,
@@ -58489,7 +58950,7 @@
     "gap": 90390,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.147Z",
+    "lastUpdate": "2026-01-17T18:57:03.891Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "bohning",
@@ -58576,7 +59037,7 @@
     "gap": 10814.390891453078,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.158Z",
+    "lastUpdate": "2026-01-17T19:31:32.118Z",
     "genre": "Rock",
     "realBpm": 28,
     "volume": 0.5,
@@ -58604,7 +59065,7 @@
     "gap": 20495.191310230774,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.910Z",
+    "lastUpdate": "2026-01-18T21:09:47.748Z",
     "genre": "Rock",
     "realBpm": 32,
     "volume": 0.5,
@@ -59063,7 +59524,7 @@
     "gap": 30990,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-19T00:15:21.129Z",
+    "lastUpdate": "2026-01-17T17:24:40.871Z",
     "realBpm": 42,
     "volume": 0.5,
     "author": "ultrastarsongs",
@@ -68659,6 +69120,194 @@
     "local": false
   },
   {
+    "id": "jennifer-lopez-feat-ja-rule-im-real",
+    "title": "I’m Real",
+    "artist": "Jennifer Lopez feat. Ja Rule",
+    "video": "Sjx9oSJDAVQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 334,
+    "gap": 1081.9760479041915,
+    "year": "2001",
+    "lastUpdate": "2026-01-21T00:15:12.709Z",
+    "realBpm": 46,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Jennifer Lopez feat. Ja Rule - I’m Real",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5529,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatjaruleimreal",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-feat-jadakiss-and-styles-jenny-from-the-block",
+    "title": "Jenny From The Block",
+    "artist": "Jennifer Lopez feat. Jadakiss and Styles",
+    "video": "RciKM866Rhk",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 36347.5,
+    "year": "2002",
+    "lastUpdate": "2026-01-21T00:15:12.869Z",
+    "genre": "R&B",
+    "realBpm": 7,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "Jennifer Lopez feat. Jadakiss and Styles - Jenny From The Block",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5531,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatjadakissandstylesjennyfromtheblock",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-feat-lil-wayne-im-into-you",
+    "title": "I’m Into You",
+    "artist": "Jennifer Lopez feat. Lil Wayne",
+    "video": "IgLcQmlN2Xg",
+    "language": [
+      "English"
+    ],
+    "bpm": 336.04,
+    "gap": 24897.97405070825,
+    "year": "2011",
+    "lastUpdate": "2026-01-21T00:15:13.170Z",
+    "genre": "R&B",
+    "realBpm": 78,
+    "volume": 0.5,
+    "author": "Victorin",
+    "sourceUrl": "Jennifer Lopez feat. Lil Wayne - I’m Into You",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5536,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatlilwayneimintoyou",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-feat-r-kelly-baby-i-u",
+    "title": "Baby I ♡ U!",
+    "artist": "Jennifer Lopez feat. R. Kelly",
+    "video": "YwL3LQTbDf8",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.95,
+    "gap": 345.3114534494306,
+    "year": "2002",
+    "lastUpdate": "2026-01-21T00:15:13.026Z",
+    "realBpm": 71,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Jennifer Lopez feat. R. Kelly - Baby I ♡ U!",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5535,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatrkellybabyiu",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-if-you-had-my-love",
+    "title": "If You Had My Love",
+    "artist": "Jennifer Lopez",
+    "video": "lYfkl-HXfuU",
+    "language": [
+      "English"
+    ],
+    "bpm": 282.36,
+    "gap": 34050.650233744156,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:13.022Z",
+    "genre": "Pop",
+    "realBpm": 78,
+    "volume": 0.5,
+    "author": "pauldiddy",
+    "sourceUrl": "Jennifer Lopez - If You Had My Love",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5533,
+    "tracksCount": 1,
+    "search": "jenniferlopezifyouhadmylove",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-im-real",
+    "title": "I’m Real",
+    "artist": "Jennifer Lopez",
+    "video": "VWXmLePDOW8",
+    "language": [
+      "English"
+    ],
+    "bpm": 218.2,
+    "gap": 26158.835930339137,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:13.019Z",
+    "realBpm": 78,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Jennifer Lopez - I’m Real",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5532,
+    "tracksCount": 1,
+    "search": "jenniferlopezimreal",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-lets-get-loud",
+    "title": "Let’s Get Loud",
+    "artist": "Jennifer Lopez",
+    "video": "kmyYgkhBs7o",
+    "language": [
+      "English"
+    ],
+    "bpm": 261.6,
+    "gap": 14535.229357798165,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:12.706Z",
+    "realBpm": 76,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Jennifer Lopez - Let’s Get Loud",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5528,
+    "tracksCount": 1,
+    "search": "jenniferlopezletsgetloud",
+    "local": false
+  },
+  {
     "id": "jennifer-lopez-love-dont-cost-a-thing",
     "title": "Love Don’t Cost A Thing",
     "artist": "Jennifer Lopez",
@@ -68684,6 +69333,33 @@
     "shortId": 2100,
     "tracksCount": 1,
     "search": "jenniferlopezlovedontcostathing",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-loving-you",
+    "title": "Loving You",
+    "artist": "Jennifer Lopez",
+    "video": "lUDe5B3Uqg8",
+    "language": [
+      "English"
+    ],
+    "bpm": 389.88,
+    "gap": 28029.69221298861,
+    "year": "400",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:12.866Z",
+    "realBpm": 6,
+    "volume": 0.5,
+    "author": "Lozboorman",
+    "sourceUrl": "Jennifer Lopez - Loving You",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5530,
+    "tracksCount": 1,
+    "search": "jenniferlopezlovingyou",
     "local": false
   },
   {
@@ -77268,6 +77944,61 @@
     "shortId": 2370,
     "tracksCount": 1,
     "search": "kidrockfeatsherylcrowpicture",
+    "local": false
+  },
+  {
+    "id": "killswitch-engage-rose-of-sharyn",
+    "title": "Rose of Sharyn",
+    "artist": "Killswitch Engage",
+    "video": "PgMsACFMIq8",
+    "language": [
+      "English"
+    ],
+    "bpm": 363.37,
+    "gap": 4546.2742934199305,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:11.974Z",
+    "genre": "Metalcore",
+    "realBpm": 91,
+    "volume": 0.5,
+    "author": "DoubleD",
+    "sourceUrl": "https://www.youtube.com/watch?v=PgMsACFMIq8",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5522,
+    "tracksCount": 1,
+    "search": "killswitchengageroseofsharyn",
+    "local": false
+  },
+  {
+    "id": "killswitch-engage-the-end-of-heartache",
+    "title": "The End Of Heartache",
+    "artist": "Killswitch Engage",
+    "video": "JiDnB-CrrNs",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 7091.774193548387,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-21T00:15:13.023Z",
+    "genre": "Metalcore",
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "Hoanzl",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5534,
+    "tracksCount": 1,
+    "search": "killswitchengagetheendofheartache",
     "local": false
   },
   {
@@ -149941,7 +150672,7 @@
     "bpm": 295.9,
     "gap": 14166.143967556607,
     "year": "2006",
-    "lastUpdate": "2026-01-19T00:15:21.159Z",
+    "lastUpdate": "2026-01-17T19:31:52.609Z",
     "realBpm": 31,
     "volume": 0.5,
     "author": "jockel1974",

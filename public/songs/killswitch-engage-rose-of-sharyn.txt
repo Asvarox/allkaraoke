@@ -1,0 +1,363 @@
+#ARTIST:Killswitch Engage
+#TITLE:Rose of Sharyn
+#CREATOR:DoubleD
+#BPM:363,37
+#YEAR:2004
+#VIDEO:v=PgMsACFMIq8
+#GENRE:Metalcore
+#LANGUAGE:English
+#GAP:4546,2742934199305
+#ALLKARAOKE_ID:killswitch-engage-rose-of-sharyn
+#ALLKARAOKE_SID:5522
+#ALLKARAOKE_LASTUPDATE:2026-01-21T00:15:11.974Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=PgMsACFMIq8
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Killswitch Engage - Rose of Sharyn.mp3
+#COVER:Killswitch Engage - Rose of Sharyn.jpg
+#MEDLEYSTARTBEAT:3359
+#MEDLEYENDBEAT:4376
+F 24 15 0 Numb 
+F 49 2 0 and 
+F 53 7 0 bro
+F 61 12 0 ken
+- 73
+F 84 6 0 Here 
+F 93 4 0 I 
+F 101 5 0 stand 
+F 109 4 0 a
+F 117 18 0 lone
+- 135
+F 152 6 0 Won
+F 159 3 0 der
+F 163 10 0 ing
+- 173
+F 180 6 0 what 
+F 188 16 0 were
+- 204
+F 212 5 0 The 
+F 220 5 0 last 
+F 228 5 0 words 
+F 236 5 0 I 
+F 244 7 0 said 
+F 253 4 0 to 
+F 259 15 0 you
+- 274
+F 281 6 0 Hop
+F 289 14 0 ing, 
+F 309 6 0 pray
+F 317 17 0 ing
+- 334
+F 348 3 0 That 
+F 352 5 0 I'll 
+F 361 5 0 find 
+F 368 3 0 a 
+F 373 4 0 way 
+F 380 5 0 to 
+F 388 5 0 turn 
+F 396 4 0 back 
+F 404 22 0 time
+- 426 448
+- 448
+F 472 9 0 Can 
+F 487 10 0 I 
+F 503 9 0 turn 
+F 520 6 0 back 
+F 536 66 0 time?
+- 602 936
+- 936
+: 960 4 8 What 
+: 967 2 8 would 
+: 972 4 8 I 
+: 979 12 7 give
+: 992 4 5 ~
+- 996 1005
+- 1005
+: 1029 4 9 to 
+: 1035 7 8 be
+: 1044 3 7 hold
+: 1048 5 8 ~
+: 1054 3 7 ~
+: 1058 2 5 ~
+- 1060 1077
+- 1077
+F 1101 4 0 The 
+F 1110 16 0 smile
+- 1126
+F 1134 5 0 the 
+F 1143 4 0 face 
+F 1149 2 0 of 
+F 1154 19 0 love?
+- 1173 1191
+- 1191
+: 1215 4 9 You 
+: 1223 4 8 nev
+: 1228 4 8 er 
+: 1235 3 8 left 
+: 1244 10 7 me
+: 1255 4 6 ~
+- 1259
+F 1281 2 0 The 
+F 1288 4 0 ris
+F 1293 3 0 ing 
+F 1300 16 0 sun
+- 1316
+F 1324 7 0 will 
+F 1335 5 0 al
+F 1343 10 0 ways
+- 1353
+F 1365 7 0 Speak 
+F 1382 9 0 your 
+F 1398 54 0 name
+- 1452 1645
+- 1645
+F 1669 31 0 Yeah!
+- 1700
+F 1709 2 0 Numb 
+F 1712 1 0 and 
+F 1715 4 0 bro
+F 1722 12 0 ken
+- 1734
+F 1746 6 0 Here 
+F 1754 4 0 I 
+F 1762 5 0 stand 
+F 1770 4 0 a
+F 1778 18 0 lone
+- 1796
+F 1814 5 0 Won
+F 1821 3 0 der
+F 1825 9 0 ing
+- 1834
+F 1841 6 0 what 
+F 1849 16 0 were
+- 1865
+F 1874 5 0 The 
+F 1882 5 0 last 
+F 1890 5 0 words 
+F 1898 5 0 I 
+F 1908 9 0 said 
+F 1926 8 0 to 
+F 1940 91 0 you
+- 2031 2117
+- 2117
+F 2141 4 0 It 
+F 2148 5 0 won't 
+F 2157 5 0 be 
+F 2165 18 0 long
+- 2183 2212
+- 2212
+F 2236 6 0 we'll 
+F 2246 5 0 meet 
+F 2254 4 0 a
+F 2261 25 0 gain
+- 2286 2349
+- 2349
+: 2373 4 8 What 
+: 2380 2 8 would 
+: 2385 5 8 I 
+: 2392 12 7 give
+: 2405 5 5 ~
+- 2410 2413
+- 2413
+: 2437 3 7 to 
+: 2446 10 8 be
+: 2458 3 7 hold
+: 2462 10 8 ~
+: 2473 3 7 ~
+: 2477 4 5 ~
+- 2481 2491
+- 2491
+F 2515 4 0 The 
+F 2524 16 0 smile
+- 2540
+F 2548 4 0 the 
+F 2557 3 0 face 
+F 2562 2 0 of 
+F 2568 19 0 love?
+- 2587 2605
+- 2605
+: 2629 4 9 You 
+: 2637 4 8 nev
+: 2642 4 8 er 
+: 2649 2 8 left 
+: 2658 10 7 me
+: 2669 5 6 ~
+- 2674
+F 2693 2 0 The 
+F 2700 4 0 ris
+F 2705 3 0 ing 
+F 2712 16 0 sun
+- 2728
+F 2740 7 0 will 
+F 2749 5 0 al
+F 2756 12 0 ways
+- 2768
+F 2780 7 0 Speak 
+F 2796 9 0 your 
+F 2813 53 0 name
+- 2866
+: 2869 4 -4 It 
+: 2876 12 8 won't 
+: 2893 8 7 be 
+: 2905 18 3 long
+- 2923
+: 2933 4 -4 we'll 
+: 2941 13 8 meet 
+: 2956 8 7 a
+: 2967 32 3 gain
+- 2999 3004
+- 3004
+: 3028 4 -4 Your 
+: 3035 4 8 me
+: 3040 7 8 mo
+: 3048 6 8 ry 
+: 3056 4 7 is 
+: 3064 5 7 nev
+: 3072 4 5 er 
+* 3080 4 5 pass
+* 3089 14 3 ing
+- 3103
+: 3125 4 -4 It 
+: 3132 12 8 won't 
+: 3149 7 7 be 
+: 3161 17 3 long
+- 3178
+: 3187 5 -4 we'll 
+: 3196 13 8 meet 
+* 3212 8 7 a
+* 3223 4 7 gain
+* 3228 3 8 ~
+* 3232 3 7 ~
+* 3236 29 5 ~
+- 3265
+: 3284 2 -2 My 
+: 3291 2 8 love 
+: 3296 2 8 for 
+: 3300 3 8 you
+: 3304 7 8 ~ 
+: 3313 3 7 is 
+: 3320 5 8 ev
+: 3326 8 7 er
+: 3336 4 7 last
+: 3344 36 8 ing
+- 3380
+: 3383 6 -4 I 
+: 3391 9 1 mourn 
+: 3406 4 0 for 
+: 3414 14 -2 those
+- 3428 3438
+- 3438
+: 3462 17 -2 who 
+: 3485 9 -4 nev
+: 3497 9 -5 er 
+: 3509 7 -4 knew
+: 3517 5 -5 ~ 
+: 3524 23 -9 you
+- 3547 3612
+- 3612
+: 3636 4 -4 I 
+: 3645 11 1 mourn 
+: 3661 7 0 for 
+: 3671 14 -2 those
+- 3685 3702
+- 3702
+: 3726 12 -2 who 
+* 3740 3 -2 nev
+* 3744 5 0 ~
+* 3751 8 -4 er 
+: 3764 9 -5 knew 
+: 3775 4 -4 you
+: 3780 2 -5 ~
+: 3783 2 -7 ~
+: 3786 17 -9 ~
+- 3803 3867
+- 3867
+: 3891 4 -4 It 
+: 3899 12 8 won't 
+: 3915 8 7 be 
+: 3927 18 3 long
+- 3945
+: 3955 4 -4 we'll 
+: 3963 14 8 meet 
+: 3979 7 7 a
+: 3991 31 3 gain
+- 4022 4026
+- 4026
+: 4050 3 -4 Your 
+: 4058 4 8 me
+: 4063 7 8 mo
+: 4071 6 8 ry 
+: 4079 3 7 is 
+: 4086 6 7 ne
+: 4095 4 5 ver 
+: 4103 4 5 pass
+: 4112 14 3 ing
+- 4126
+: 4146 4 -4 It 
+: 4154 12 8 won't 
+: 4172 6 7 be 
+: 4183 19 3 long
+- 4202
+: 4211 4 -4 we'll 
+: 4219 14 8 meet 
+: 4235 6 7 a
+: 4246 3 7 gain
+: 4250 3 8 ~
+: 4254 4 7 ~
+: 4259 29 5 ~
+- 4288
+: 4306 3 -2 My 
+: 4313 3 8 love 
+: 4319 2 8 for 
+: 4323 2 8 you
+: 4326 7 8 ~ 
+: 4335 3 7 is 
+: 4342 7 8 e
+: 4350 7 7 ver
+: 4358 4 7 last
+: 4367 33 8 ing
+- 4400
+: 4403 3 -4 It 
+: 4411 12 8 won't 
+: 4427 8 7 be 
+: 4439 17 3 long
+- 4456
+: 4467 3 -4 we'll 
+: 4475 14 8 meet 
+: 4491 8 7 a
+* 4501 32 3 gain
+- 4533 4634
+- 4634
+: 4658 3 -4 It 
+: 4666 13 8 won't 
+: 4683 7 7 be 
+: 4694 17 3 long
+- 4711
+: 4723 3 -4 we'll 
+: 4730 15 8 meet 
+: 4747 8 7 a
+: 4757 33 3 gain
+- 4790 4890
+- 4890
+: 4914 3 -4 It 
+: 4922 13 8 won't 
+: 4939 7 7 be 
+: 4950 17 3 long
+- 4967
+: 4978 3 -4 we'll 
+: 4986 14 8 meet 
+: 5002 7 7 a
+: 5013 32 3 gain
+- 5045 5145
+- 5145
+: 5169 3 -4 It 
+: 5177 13 8 won't 
+: 5194 7 7 be 
+: 5205 16 3 long
+- 5221
+: 5234 3 -4 we'll 
+: 5241 16 8 meet 
+: 5259 6 7 a
+: 5269 32 3 gain
+E

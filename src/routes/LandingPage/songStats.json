@@ -11,6 +11,7 @@
     "Take That",
     "The Beatles",
     "System of a Down",
+    "Girls Aloud",
     "One Direction",
     "Imagine Dragons",
     "Michael Jackson",
@@ -106,9 +107,9 @@
     "Creed",
     "Eminem",
     "Genesis",
-    "Girls Aloud",
     "Hamilton",
     "Jason Derulo",
+    "Jennifer Lopez",
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
@@ -148,8 +149,7 @@
     "Amy Winehouse",
     "Atomic Kitten",
     "Black Veil Brides",
-    "Bullet For My Valentine",
-    "Dire Straits"
+    "Bullet For My Valentine"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5508
+  "songs": 5535
 }
