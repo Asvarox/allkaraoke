@@ -36,7 +36,7 @@ const convertedSong = {
 const unpopularSong = {
   ID: 'e2e-christmas-english-1995',
   title: 'New Christmas',
-};
+} as const;
 
 test('Adding completed song to the Selection playlist', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -50,7 +50,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -85,7 +85,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Go to the Song languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.expectLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 
@@ -129,7 +129,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('Ensure song language is selected', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -208,7 +208,7 @@ test('Selection playlist contain songs marked as new and popular as well', async
   });
 
   await test.step('Ensure song language is selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -230,7 +230,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Go to the Song Languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.ensureLanguageToBeSelected(engLanguage);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 

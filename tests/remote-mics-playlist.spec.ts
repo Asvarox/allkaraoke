@@ -56,7 +56,7 @@ test('Adding and removing song from the remote mic playlist on desktop app works
     await page.goto('/');
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.ensureAllLanguagesToBe('selected');
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 

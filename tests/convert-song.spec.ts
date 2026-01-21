@@ -310,6 +310,6 @@ test('Convert song', async ({ page }) => {
   await test.step('Delete converted song', async () => {
     page.on('dialog', (dialog) => dialog.accept());
     await pages.editSongsPage.deleteSong(convertedSongId);
-    await expect(pages.editSongsPage.deleteSongButton(convertedSongId)).not.toBeVisible();
+    await expect(pages.editSongsPage.getSongActionButton(convertedSongId, 'delete')).not.toBeVisible();
   });
 });
