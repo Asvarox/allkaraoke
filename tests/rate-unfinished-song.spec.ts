@@ -57,6 +57,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
 
     if (browserName === 'firefox') {
       // for some reason in e2e test firefox the first Escape is not registered in the game
+      await page.waitForTimeout(200);
       await page.keyboard.press('Escape');
     }
     await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
