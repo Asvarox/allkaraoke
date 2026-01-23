@@ -1,0 +1,372 @@
+#ARTIST:Fountains Of Wayne
+#TITLE:Mexican Wine
+#CREATOR:Viktor1234678
+#BPM:388
+#YEAR:2003
+#VIDEO:v=_a90ObpSqXE
+#LANGUAGE:English
+#GAP:-75,87628865979389
+#ALLKARAOKE_ID:fountains-of-wayne-mexican-wine
+#ALLKARAOKE_SID:5546
+#ALLKARAOKE_LASTUPDATE:2026-01-23T00:15:30.661Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:30
+#ALLKARAOKE_SOURCEURL:Fountains Of Wayne - Mexican Wine
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Fountains Of Wayne - Mexican Wine.mp3
+#COVER:Fountains Of Wayne - Mexican Wine [CO].jpg
+#BACKGROUND:Fountains Of Wayne - Mexican Wine [BG].jpg
+: 18 6 -2 He 
+: 26 6 -1 was 
+: 34 8 1 killed 
+: 51 5 -2 by 
+: 59 5 -1 a 
+: 67 5 1 cel
+: 75 5 -1 lu
+: 83 5 -2 lar 
+: 91 9 -2 phone 
+: 106 7 -4 ex
+: 121 10 -2 plo
+: 137 10 -4 sion
+- 147
+: 154 4 -9 They 
+: 161 4 -6 scat
+: 169 4 -4 tered 
+: 176 4 -2 his 
+: 185 11 -2 a
+: 200 6 -4 shes 
+: 208 5 -6 a
+: 216 9 -6 cross 
+: 232 9 -9 the 
+: 248 9 -4 o
+: 264 10 -6 cean
+- 274
+: 281 5 -6 The 
+: 288 5 -2 wa
+: 295 6 -1 ter 
+: 303 6 1 was 
+: 311 9 1 used 
+: 326 5 -1 to 
+: 334 6 -2 make 
+: 343 10 -2 ba
+: 358 9 -4 by 
+: 374 10 -2 lo
+: 389 11 -4 tion
+- 400
+: 406 5 -4 The 
+: 413 5 -2 wheels 
+: 421 6 -6 of 
+: 430 5 -4 pro
+: 438 8 -2 mo
+: 452 10 -6 tion, 
+: 469 5 -6 were 
+: 477 5 -2 set 
+: 484 5 -6 in
+: 491 6 -4 to 
+: 500 10 -2 mo
+: 515 6 -6 tion
+- 521
+: 524 5 -9 But 
+: 532 5 -6 the 
+: 540 10 -2 sun 
+: 557 10 -2 still 
+: 573 10 -4 shines 
+: 588 5 -4 in 
+: 596 5 -6 the 
+: 604 5 -4 sum
+: 612 9 -2 mer 
+: 628 14 -6 time
+- 642 644
+- 644
+: 670 6 -2 I’ll 
+: 678 9 -2 be 
+: 693 9 -4 yours 
+: 708 7 -6 if 
+: 725 8 -4 you’ll 
+: 739 9 -2 be 
+: 755 15 -6 mine
+- 770
+: 787 4 -9 I 
+: 793 7 -2 tried 
+: 802 9 -2 to 
+: 817 10 -4 change, 
+: 834 5 -6 but 
+: 841 5 -4 I 
+: 850 10 -4 changed 
+: 865 11 -2 my 
+: 881 12 -6 mind
+- 893
+: 898 4 -9 I 
+: 905 5 -6 think 
+: 913 4 -4 I’ll 
+: 921 4 -2 have 
+: 928 5 -2 a
+: 937 5 -2 no
+: 945 4 -2 ther 
+: 953 9 -4 glass 
+: 970 6 -4 of 
+: 985 4 -4 Me
+: 992 5 -2 xi
+: 1000 6 -4 can 
+: 1009 12 -2 Wine
+- 1021 1402
+- 1402
+: 1428 5 -2 She 
+: 1435 5 -1 lived 
+: 1443 5 1 a
+: 1451 8 1 lone 
+: 1467 4 -1 in 
+: 1474 5 -2 a 
+: 1483 9 -2 small 
+: 1498 10 -4 a
+: 1514 11 -1 part
+: 1530 11 -2 ment
+- 1541
+: 1553 5 -6 A
+: 1561 5 -4 cross 
+: 1569 5 -2 the 
+: 1577 8 -2 street 
+: 1593 5 -4 from 
+: 1601 5 -6 the 
+: 1610 7 -6 health 
+: 1625 8 -9 de
+: 1641 9 -4 part
+: 1657 9 -6 ment
+- 1666
+: 1681 5 -2 She 
+: 1688 5 -1 left 
+: 1696 5 1 her 
+: 1705 8 1 pills 
+: 1720 4 -1 in 
+: 1727 6 -2 the 
+: 1737 9 -2 glove 
+: 1752 10 -4 com
+: 1768 11 -1 part
+: 1784 11 -2 ment
+- 1795
+: 1808 4 -6 That 
+: 1815 5 -4 was 
+: 1823 5 -2 the 
+: 1831 8 -2 af
+: 1847 6 -6 ter
+: 1862 8 -6 noon 
+: 1879 8 -9 her 
+: 1894 9 -4 heart 
+: 1910 8 -6 went
+- 1918
+: 1919 5 -9 And 
+: 1926 5 -9 the 
+: 1934 9 -2 sun 
+: 1950 9 -2 still 
+: 1966 8 -4 shines 
+: 1982 4 -4 in 
+: 1989 5 -6 the 
+: 1998 4 -4 sum
+: 2005 8 -2 mer 
+: 2021 11 -6 time
+- 2032 2034
+- 2034
+: 2060 6 -2 I’ll 
+: 2069 9 -2 be 
+: 2085 8 -4 yours 
+: 2101 7 -6 if 
+: 2116 8 -4 you’ll 
+: 2132 9 -2 be 
+: 2148 12 -6 mine
+- 2160
+: 2178 6 -6 I 
+: 2186 6 -2 tried 
+: 2195 8 -2 to 
+: 2210 8 -4 change, 
+: 2227 4 -6 but 
+: 2234 5 -4 I 
+: 2243 9 -4 changed 
+: 2257 10 -2 my 
+: 2275 9 -6 mind
+- 2284
+: 2299 5 -9 Think 
+: 2307 5 -6 I’ll 
+: 2315 5 -2 have 
+: 2323 5 -2 a
+: 2330 6 -2 no
+: 2338 6 -2 ther 
+: 2347 8 -4 glass 
+: 2362 9 -4 of 
+: 2377 5 -4 Me
+: 2385 5 -2 xi
+: 2393 5 -4 can 
+: 2401 10 -2 Wine
+- 2411
+: 2425 5 -9 Think 
+: 2433 5 -6 I’ll 
+: 2441 5 -2 have 
+: 2449 5 -2 a
+: 2456 6 -2 no
+: 2464 6 -2 ther 
+: 2473 8 -4 glass 
+: 2488 9 -4 of 
+: 2503 5 -4 Me
+: 2511 5 -2 xi
+: 2519 5 -4 can 
+: 2526 11 -2 Wine
+- 2537 3048
+- 3048
+: 3074 5 0 I 
+: 3082 5 1 used 
+: 3090 5 3 to 
+: 3098 8 3 fly 
+: 3114 4 1 for 
+: 3121 5 0 U
+: 3130 9 0 ni
+: 3147 8 -2 ted 
+: 3162 10 1 Air
+: 3178 9 0 lines
+- 3187
+: 3202 4 -4 Then 
+: 3209 5 -2 I 
+: 3217 5 0 got 
+: 3226 10 5 fi
+: 3239 8 0 red 
+: 3249 6 -2 for 
+: 3257 9 -4 rea
+: 3272 8 -7 ding 
+: 3288 10 -2 High 
+: 3304 10 -4 Times
+- 3314
+: 3320 4 -2 My 
+: 3328 4 0 li
+: 3336 5 1 cense 
+: 3343 5 3 ex
+: 3351 9 3 pi
+: 3366 5 1 red 
+: 3374 5 0 in 
+: 3382 10 0 al
+: 3399 9 -2 most 
+: 3415 11 1 no 
+: 3430 9 0 time
+- 3439
+: 3455 4 -4 Now 
+: 3463 5 -2 I’m 
+: 3471 4 0 re
+: 3479 9 5 ti
+: 3494 5 0 red 
+: 3502 5 -2 and 
+: 3510 7 -4 I 
+: 3526 7 -7 think 
+: 3541 8 -2 that’s 
+: 3566 28 -4 fine
+- 3594
+: 3620 7 -9 Be
+: 3629 5 -7 cause 
+: 3637 5 -9 the 
+: 3645 10 0 sun 
+: 3660 10 0 still 
+: 3678 10 -2 shines 
+: 3693 5 -2 in 
+: 3701 5 -4 the 
+: 3709 5 -2 sum
+: 3717 9 0 mer 
+: 3733 14 -4 time
+- 3747
+: 3773 6 0 I’ll 
+: 3781 9 0 be 
+: 3796 9 -2 yours 
+: 3811 7 -4 if 
+: 3828 8 -2 you’ll 
+: 3843 9 0 be 
+: 3858 15 -4 mine
+- 3873
+: 3890 4 -4 I 
+: 3896 7 0 tried 
+: 3905 9 0 to 
+: 3920 10 -2 change, 
+: 3937 5 -4 but 
+: 3944 5 -2 I 
+: 3953 10 -2 changed 
+: 3968 11 0 my 
+: 3984 12 -4 mind
+- 3996
+: 4009 5 -7 Think 
+: 4017 5 -4 I’ll 
+: 4025 5 0 have 
+: 4033 5 0 a
+: 4040 6 0 no
+: 4048 6 0 ther 
+: 4057 8 -2 glass 
+: 4072 9 -2 of 
+: 4089 5 -2 Me
+: 4097 5 0 xi
+: 4105 5 -2 can 
+: 4113 10 0 Wine
+- 4123
+: 4128 5 -9 Be
+: 4136 5 -7 cause 
+: 4144 4 -9 the 
+: 4152 8 0 sun 
+: 4168 9 0 still 
+: 4184 8 -2 shines 
+: 4199 4 -2 in 
+: 4207 4 -4 the 
+: 4215 6 -2 sum
+: 4223 8 0 mer 
+: 4238 13 -4 time
+- 4251 4252
+- 4252
+: 4278 5 -4 I’ll 
+: 4286 8 -4 be 
+: 4301 8 -5 yours 
+: 4318 8 -7 if 
+: 4334 9 -5 you’ll 
+: 4350 8 -4 be 
+: 4365 10 -7 mine
+: 4381 11 -9 ~
+- 4392
+: 4398 4 -8 I 
+: 4404 7 -4 tried 
+: 4413 9 -4 to 
+: 4428 10 -5 change, 
+: 4445 5 -7 but 
+: 4452 5 -5 I 
+: 4461 10 -5 changed 
+: 4476 11 -4 my 
+: 4492 12 -7 mind
+- 4504
+: 4516 5 -9 Think 
+: 4524 5 -7 I’ll 
+: 4532 5 0 have 
+: 4540 5 0 a
+: 4547 6 0 no
+: 4555 6 0 ther 
+: 4564 8 -2 glass 
+: 4579 9 -2 of 
+: 4594 5 -2 Me
+: 4602 5 0 xi
+: 4610 5 -2 can 
+: 4618 10 0 Wine
+- 4628
+: 4642 5 -9 Think 
+: 4650 5 -7 I’ll 
+: 4658 5 0 have 
+: 4666 5 0 a
+: 4673 6 0 no
+: 4681 6 0 ther 
+: 4690 8 -2 glass 
+: 4705 9 -2 of 
+: 4722 5 -2 Me
+: 4730 5 0 xi
+: 4738 5 -2 can 
+: 4746 10 0 Wine
+- 4756
+: 4770 5 -9 Won’t 
+: 4778 5 -7 you 
+: 4786 5 0 have 
+: 4793 5 0 a
+: 4801 5 0 no
+: 4809 5 0 ther 
+: 4817 8 -2 glass 
+: 4833 8 -2 of 
+: 4849 4 -2 Me
+: 4856 5 0 xi
+: 4864 5 -2 can 
+: 4874 40 1 Wine
+E

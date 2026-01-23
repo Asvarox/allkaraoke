@@ -42,6 +42,7 @@
     "Bad Religion",
     "Beyoncé",
     "Elton John",
+    "George Michael",
     "INXS",
     "Paramore",
     "The Weeknd",
@@ -55,6 +56,7 @@
     "Fall Out Boy",
     "Glee Cast",
     "High School Musical",
+    "Jennifer Lopez",
     "Mariah Carey",
     "No Doubt",
     "Panic! at the Disco",
@@ -109,7 +111,6 @@
     "Genesis",
     "Hamilton",
     "Jason Derulo",
-    "Jennifer Lopez",
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
@@ -128,7 +129,6 @@
     "Daft Punk",
     "Duran Duran",
     "Frank Sinatra",
-    "George Michael",
     "Hilary Duff",
     "HIM",
     "Huey Lewis & The News",
@@ -145,11 +145,11 @@
     "Weezer",
     "“Weird Al” Yankovic",
     "AC/DC",
+    "Ace of Base",
     "Alanis Morissette",
     "Amy Winehouse",
     "Atomic Kitten",
-    "Black Veil Brides",
-    "Bullet For My Valentine"
+    "Black Veil Brides"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5535
+  "songs": 5582
 }

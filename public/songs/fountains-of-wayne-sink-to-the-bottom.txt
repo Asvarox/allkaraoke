@@ -1,0 +1,314 @@
+#ARTIST:Fountains Of Wayne
+#TITLE:Sink To The Bottom
+#CREATOR:Viktor1234678
+#BPM:194
+#YEAR:1996
+#VIDEO:v=FgLZMvnWxRU
+#LANGUAGE:English
+#GAP:58,8453608247421
+#ALLKARAOKE_ID:fountains-of-wayne-sink-to-the-bottom
+#ALLKARAOKE_SID:5545
+#ALLKARAOKE_LASTUPDATE:2026-01-23T00:15:30.659Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:Fountains Of Wayne - Sink To The Bottom
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Fountains Of Wayne - Sink To The Bottom.mp3
+#COVER:Fountains Of Wayne - Sink To The Bottom [CO].jpg
+#BACKGROUND:Fountains Of Wayne - Sink To The Bottom [BG].jpg
+: 13 3 -8 I 
+: 17 3 -8 wan
+: 21 3 -6 na 
+: 25 4 -4 sink 
+: 33 3 -6 to 
+: 37 3 -8 the 
+: 41 3 -6 bot
+: 45 3 -4 tom 
+: 49 3 -3 with 
+: 53 8 -4 you
+- 61 64
+- 64
+: 77 3 -8 I 
+: 81 3 -8 wan
+: 85 3 -6 na 
+: 89 4 -4 sink 
+: 96 3 -6 to 
+: 100 3 -8 the 
+: 104 3 -6 bot
+: 108 3 -4 tom 
+: 112 3 -3 with 
+: 116 8 -4 you
+- 124 135
+- 135
+: 148 3 -6 The 
+: 152 5 -4 o
+: 160 3 -6 cean 
+: 164 3 -8 is 
+: 168 3 -6 big 
+: 172 3 -4 and
+: 176 3 -3 ~ 
+: 180 7 -4 blue
+- 187
+: 200 3 -8 I 
+: 204 3 -8 just 
+: 208 3 -8 wan
+: 212 3 -6 na 
+: 216 5 -4 sink 
+: 224 3 -6 to 
+: 228 3 -8 the 
+: 232 3 -6 bot
+: 236 3 -4 tom 
+: 240 3 -3 with 
+: 244 7 -4 you
+- 251
+: 264 3 1 Cars 
+: 268 3 -1 on 
+: 272 3 1 the 
+: 276 6 -1 high
+: 283 7 -8 way, 
+: 295 3 -6 planes 
+: 299 3 -4 in 
+: 303 3 -3 the 
+: 307 7 -4 air
+- 314
+: 327 3 1 E
+: 331 3 -1 very
+: 335 3 1 one 
+: 339 7 -1 else 
+: 347 7 -8 is 
+: 358 3 -6 go
+: 362 3 -4 ing 
+: 366 3 -3 some
+: 370 7 -4 where
+- 377
+: 388 1 -1 But 
+: 390 3 1 I'm 
+: 394 3 -1 go
+: 398 3 1 ing 
+: 402 7 -1 no
+: 410 7 -8 where, 
+: 422 3 -6 get
+: 426 3 -4 ting 
+: 430 7 -3 there 
+: 438 7 -4 soon
+- 445
+: 454 3 1 I 
+: 458 3 -1 might 
+: 462 3 1 as 
+: 466 7 -1 well 
+: 474 7 -8 just 
+: 486 3 -6 sink 
+: 490 3 -4 down 
+: 494 3 -3 with 
+: 498 7 -4 you
+- 505 508
+- 508
+: 521 3 -8 I 
+: 525 3 -8 wan
+: 529 3 -6 na 
+: 533 4 -4 sink 
+: 541 3 -6 to 
+: 545 3 -8 the 
+: 549 3 -6 bot
+: 553 3 -4 tom 
+: 557 3 -3 with 
+: 561 8 -4 you
+- 569 572
+- 572
+: 585 3 -8 I 
+: 589 3 -8 wan
+: 593 3 -6 na 
+: 597 4 -4 sink 
+: 605 3 -6 to 
+: 609 3 -8 the 
+: 613 3 -6 bot
+: 617 3 -4 tom 
+: 621 3 -3 with 
+: 625 8 -4 you
+- 633 643
+- 643
+: 656 3 -6 The 
+: 660 5 -4 o
+: 668 3 -6 cean 
+: 672 3 -8 is 
+: 676 3 -6 big 
+: 680 3 -4 and
+: 684 3 -3 ~ 
+: 688 7 -4 blue
+- 695
+: 708 3 -8 I 
+: 712 3 -8 just 
+: 716 3 -8 wan
+: 720 3 -6 na 
+: 724 5 -4 sink 
+: 732 3 -6 to 
+: 736 3 -8 the 
+: 740 3 -6 bot
+: 744 3 -4 tom 
+: 748 3 -3 with 
+: 752 7 -4 you
+- 759
+: 769 1 -1 And 
+: 771 3 1 I 
+: 775 3 -1 just 
+: 779 3 1 wan
+: 783 6 -1 na
+- 789 1008
+- 1008
+: 1021 3 1 Out 
+: 1025 3 -1 on 
+: 1029 3 1 the 
+: 1033 7 -1 high
+: 1041 7 -8 way, 
+: 1053 3 -6 up 
+: 1057 3 -4 in 
+: 1061 3 -3 the 
+: 1065 7 -4 air
+- 1072
+: 1085 3 1 E
+: 1089 3 -1 very
+: 1093 3 1 one 
+: 1097 7 -1 else 
+: 1105 7 -8 is 
+: 1117 3 -6 go
+: 1121 3 -4 ing 
+: 1125 3 -3 some
+: 1129 7 -4 where
+- 1136
+: 1149 3 1 They're 
+: 1153 3 -1 go
+: 1157 3 1 ing 
+: 1161 7 -1 no
+: 1169 7 -8 where 
+: 1179 1 -6 and 
+: 1181 3 -6 I'll 
+: 1185 3 -4 be 
+: 1189 7 -3 there 
+: 1197 7 -4 too
+- 1204
+: 1213 3 1 I 
+: 1217 3 -1 might 
+: 1221 3 1 as 
+: 1225 7 -1 well 
+: 1233 7 -8 go 
+: 1246 3 -6 un
+: 1250 3 -4 der 
+: 1254 3 -3 with 
+: 1258 7 -4 you
+- 1265 1300
+- 1300
+: 1313 3 -8 I 
+: 1317 3 -8 wan
+: 1321 3 -6 na 
+: 1325 4 -4 sink 
+: 1334 3 -6 to 
+: 1338 3 -8 the 
+: 1342 3 -6 bot
+: 1346 3 -4 tom 
+: 1350 3 -3 with 
+: 1354 8 -4 you
+- 1362 1366
+- 1366
+: 1379 3 -8 I 
+: 1383 3 -8 wan
+: 1387 3 -6 na 
+: 1391 4 -4 sink 
+: 1399 3 -6 to 
+: 1403 3 -8 the 
+: 1407 3 -6 bot
+: 1411 3 -4 tom 
+: 1415 3 -3 with 
+: 1419 8 -4 you
+- 1427 1438
+- 1438
+: 1451 3 -6 The 
+: 1455 5 -4 o
+: 1463 3 -6 cean 
+: 1467 3 -8 is 
+: 1471 3 -6 big 
+: 1475 3 -4 and
+: 1479 3 -3 ~ 
+: 1483 7 -4 blue
+- 1490 1491
+- 1491
+: 1504 3 -8 I 
+: 1508 3 -8 just 
+: 1512 3 -8 wan
+: 1516 3 -6 na 
+: 1520 5 -4 sink 
+: 1528 3 -6 to 
+: 1532 3 -8 the 
+: 1536 3 -6 bot
+: 1540 3 -4 tom 
+: 1544 3 -3 with 
+: 1548 7 -4 you
+- 1555
+: 1568 3 -8 I 
+: 1572 3 -8 just 
+: 1576 3 -8 wan
+: 1580 3 -6 na 
+: 1584 5 -4 sink 
+: 1592 3 -6 to 
+: 1596 3 -8 the 
+: 1600 3 -6 bot
+: 1604 3 -4 tom 
+: 1608 3 -3 with 
+: 1612 7 -4 you
+- 1619 1623
+- 1623
+: 1636 3 -8 I 
+: 1640 3 -8 wan
+: 1644 3 -6 na 
+: 1648 5 -4 sink 
+: 1656 3 -6 to 
+: 1660 3 -8 the 
+: 1664 3 -6 bot
+: 1668 3 -4 tom 
+: 1672 3 -3 with 
+: 1676 7 -4 you
+- 1683 1696
+- 1696
+: 1709 3 -6 The 
+: 1713 5 -4 o
+: 1721 3 -6 cean 
+: 1725 3 -8 is 
+: 1729 3 -6 big 
+: 1733 3 -4 and
+: 1737 3 -3 ~ 
+: 1741 7 -4 blue
+- 1748
+: 1761 3 -8 I 
+: 1765 3 -8 just 
+: 1769 3 -8 wan
+: 1773 3 -6 na 
+: 1777 5 -4 sink 
+: 1785 3 -6 to 
+: 1789 3 -8 the 
+: 1793 3 -6 bot
+: 1797 3 -4 tom 
+: 1801 3 -3 with 
+: 1805 7 -4 you
+- 1812
+: 1825 3 1 I 
+: 1829 3 -1 just 
+: 1833 3 1 wan
+: 1837 6 -1 na
+- 1843 1875
+- 1875
+: 1888 3 1 I 
+: 1892 3 -1 just 
+: 1896 3 1 wan
+: 1900 6 -1 na
+- 1906 1938
+- 1938
+: 1951 3 1 I 
+: 1955 3 -1 just 
+: 1959 3 1 wan
+: 1963 6 -1 na
+- 1969 2000
+- 2000
+: 2013 3 1 I 
+: 2017 3 -1 just 
+: 2021 3 1 wan
+: 2025 6 -1 na
+E
