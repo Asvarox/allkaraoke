@@ -1,0 +1,106 @@
+#ARTIST:Franz Ferdinand
+#TITLE:This fffire
+#CREATOR:Currymalker (ultrastar-es.org)
+#BPM:292,18
+#YEAR:2022
+#VIDEO:v=OifiVCnFKzM
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:9054,573892805805
+#ALLKARAOKE_ID:franz-ferdinand-this-fffire
+#ALLKARAOKE_SID:5570
+#ALLKARAOKE_LASTUPDATE:2026-01-23T00:15:42.510Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:17
+#ALLKARAOKE_SOURCEURL:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening)
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening).mp3
+#COVER:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening) [CO].jpg
+#BACKGROUND:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening) [BG].jpg
+: 19 39 -5 Eyes 
+: 68 4 -3 burn
+: 74 3 -5 ing 
+: 79 3 -10 a 
+: 84 9 -10 way 
+: 96 2 -7 through 
+: 100 23 -7 me
+- 123 128
+- 128
+: 147 38 -5 Eyes
+: 187 2 -7 ~ 
+: 191 2 -8 de
+: 195 6 -3 stroy
+* 203 3 -5 ing 
+: 209 2 -8 so
+: 213 2 -10 ~ 
+: 217 3 -10 sweet
+: 222 3 -7 ~
+: 227 13 -7 ly
+- 240 256
+- 256
+: 275 45 2 Now 
+: 322 5 5 there 
+: 329 3 4 is 
+: 334 1 2 a 
+* 338 1 4 fire
+* 341 2 5 ~
+* 345 1 4 ~
+* 348 2 2 ~ 
+: 352 2 2 in 
+: 356 17 2 me
+- 373
+: 383 2 -3 A 
+: 387 3 4 fire
+: 392 1 2 ~ 
+: 395 3 5 that 
+: 403 58 4 burns
+* 463 2 3 ~
+: 467 66 2 ~
+- 533 1030
+- 1030
+: 1049 4 7 This 
+: 1057 3 7 fire
+: 1062 4 5 ~
+- 1066
+: 1070 2 5 Is 
+: 1074 2 7 out 
+: 1078 1 5 of 
+: 1081 2 5 con
+: 1085 3 7 trol
+: 1090 6 5 ~
+- 1096
+: 1100 3 4 I'll 
+: 1105 3 5 burn 
+: 1110 3 4 it
+- 1113
+* 1117 3 4 I'll 
+: 1122 3 5 burn 
+: 1127 2 4 it
+- 1129
+: 1133 3 4 I'll 
+: 1138 6 5 burn
+- 1144
+: 1149 2 4 I'll 
+: 1153 2 5 burn 
+: 1157 2 5 it 
+* 1161 5 5 down
+* 1168 4 2 ~
+- 1172 1340
+- 1340
+: 1359 3 4 I'll 
+: 1364 2 5 burn 
+: 1368 3 4 it
+- 1371
+: 1376 2 4 I'll 
+: 1380 3 5 burn 
+: 1385 3 4 it
+- 1388
+: 1393 2 4 I'll 
+* 1397 7 5 burn
+- 1404
+: 1408 2 4 I'll 
+: 1412 2 5 burn 
+: 1416 2 5 it 
+: 1420 5 5 down
+: 1427 2 2 ~
+E

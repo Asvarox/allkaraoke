@@ -2493,6 +2493,34 @@
     "local": false
   },
   {
+    "id": "ace-of-base-dont-turn-around",
+    "title": "Don’t Turn Around",
+    "artist": "Ace of Base",
+    "video": "B_gs4gCyGKs",
+    "language": [
+      "English"
+    ],
+    "bpm": 480,
+    "gap": 3750,
+    "year": "1993",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-23T00:15:32.654Z",
+    "genre": "Dance",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Ace of Base - Don’t Turn Around",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 5561,
+    "tracksCount": 1,
+    "search": "aceofbasedontturnaround",
+    "local": false
+  },
+  {
     "id": "ace-of-base-life-is-a-flower",
     "title": "Life Is A Flower",
     "artist": "Ace of Base",
@@ -4073,6 +4101,115 @@
     "shortId": 121,
     "tracksCount": 1,
     "search": "afromanbecauseigothigh",
+    "local": false
+  },
+  {
+    "id": "after-forever-between-love-and-fire",
+    "title": "Between Love And Fire",
+    "artist": "After Forever",
+    "video": "fjSZG0n6VSg",
+    "language": [
+      "English"
+    ],
+    "bpm": 251.94,
+    "gap": 25057.854251012144,
+    "year": "2004",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-01-23T00:15:32.656Z",
+    "genre": "Metal",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "SsX",
+    "sourceUrl": "After Forever - Between Love And Fire",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5562,
+    "tracksCount": 1,
+    "search": "afterforeverbetweenloveandfire",
+    "local": false
+  },
+  {
+    "id": "after-forever-emphasis",
+    "title": "Emphasis",
+    "artist": "After Forever",
+    "video": "apfn2VceBYI",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.1,
+    "gap": 33058.49662832209,
+    "year": "2001",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-01-23T00:15:32.799Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "After Forever - Emphasis",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5564,
+    "tracksCount": 1,
+    "search": "afterforeveremphasis",
+    "local": false
+  },
+  {
+    "id": "after-forever-energize-me",
+    "title": "Energize Me",
+    "artist": "After Forever",
+    "video": "fjm4BrNAf6s",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 2019.230769230769,
+    "year": "2007",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-01-23T00:15:32.798Z",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Eazee",
+    "sourceUrl": "After Forever - Energize Me",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5563,
+    "tracksCount": 1,
+    "search": "afterforeverenergizeme",
+    "local": false
+  },
+  {
+    "id": "after-forever-follow-in-the-cry",
+    "title": "Follow In The Cry",
+    "artist": "After Forever",
+    "video": "G10vWTOd3zQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.44,
+    "gap": 14199.85897639043,
+    "year": "2000",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-01-23T00:15:32.800Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "After Forever - Follow In The Cry",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5565,
+    "tracksCount": 1,
+    "search": "afterforeverfollowinthecry",
     "local": false
   },
   {
@@ -35264,6 +35401,33 @@
     "local": false
   },
   {
+    "id": "dan-fogelberg-run-for-the-roses",
+    "title": "Run For The Roses",
+    "artist": "Dan Fogelberg",
+    "video": "58Dr6O77BOY",
+    "language": [
+      "English"
+    ],
+    "bpm": 353.60000000000036,
+    "gap": 32719.88636363636,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:31.454Z",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Dan Fogelberg - Run For The Roses",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5555,
+    "tracksCount": 1,
+    "search": "danfogelbergrunfortheroses",
+    "local": false
+  },
+  {
     "id": "dana-international-diva",
     "title": "Diva",
     "artist": "Dana International",
@@ -35470,6 +35634,34 @@
     "local": false
   },
   {
+    "id": "daniel-lindstrom-coming-true",
+    "title": "Coming True",
+    "artist": "Daniel Lindström",
+    "video": "Rftyt9gvWdo",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.36,
+    "gap": 5469.810996563574,
+    "year": "2004",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-23T00:15:31.584Z",
+    "genre": "Pop",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Daniel Lindström - Coming True",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5556,
+    "tracksCount": 1,
+    "search": "daniellindstromcomingtrue",
+    "local": false
+  },
+  {
     "id": "daniel-powter-bad-day",
     "title": "Bad Day",
     "artist": "Daniel Powter",
@@ -35669,6 +35861,35 @@
     "shortId": 1105,
     "tracksCount": 1,
     "search": "daokoxkenshiyonezuuchiagehanabi",
+    "local": false
+  },
+  {
+    "id": "darin-money-for-nothing",
+    "title": "Money For Nothing",
+    "artist": "Darin",
+    "video": "lkMDMM0uy_s",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 3044.375,
+    "year": "2005",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-23T00:15:31.717Z",
+    "edition": "SingStar",
+    "genre": "Pop",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Darin - Money For Nothing",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5557,
+    "tracksCount": 1,
+    "search": "darinmoneyfornothing",
     "local": false
   },
   {
@@ -36128,6 +36349,34 @@
     "shortId": 1120,
     "tracksCount": 1,
     "search": "davidbowieheroes",
+    "local": false
+  },
+  {
+    "id": "david-bowie-life-on-mars",
+    "title": "Life On Mars?",
+    "artist": "David Bowie",
+    "video": "ft3b1-Cm-0M",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 2400,
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:31.719Z",
+    "edition": "Singstar Legends",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "David Bowie - Life On Mars?",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5558,
+    "tracksCount": 1,
+    "search": "davidbowielifeonmars",
     "local": false
   },
   {
@@ -36688,6 +36937,63 @@
     "shortId": 1140,
     "tracksCount": 1,
     "search": "davidkushnerdaylight",
+    "local": false
+  },
+  {
+    "id": "david-lee-roth-just-a-gigolo-i-aint-got-nobody",
+    "title": "Just a Gigolo / I Ain’t Got Nobody",
+    "artist": "David Lee Roth",
+    "video": "rkdhhEjX-I0",
+    "language": [
+      "English"
+    ],
+    "bpm": 249.35,
+    "gap": 108337.34108682575,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:31.721Z",
+    "edition": "Singstar Party",
+    "genre": "Swing",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "David Lee Roth - Just a Gigolo / I Ain’t Got Nobody",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5559,
+    "tracksCount": 1,
+    "search": "davidleerothjustagigoloiaintgotnobody",
+    "local": false
+  },
+  {
+    "id": "david-pedersen-wild-at-heart",
+    "title": "Wild At Heart",
+    "artist": "David Pedersen",
+    "video": "nUUcKytjJBQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 353.52,
+    "gap": 10341.670061099796,
+    "year": "2003",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-01-23T00:15:31.853Z",
+    "edition": "Singstar",
+    "realBpm": 18,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "David Pedersen - Wild At Heart",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5560,
+    "tracksCount": 1,
+    "search": "davidpedersenwildatheart",
     "local": false
   },
   {
@@ -49956,6 +50262,34 @@
     "local": false
   },
   {
+    "id": "faker-this-heart-attack",
+    "title": "This Heart Attack",
+    "artist": "Faker",
+    "video": "5Qgh3WNKSRY",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 3266.3934426229507,
+    "year": "2007",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-23T00:15:32.802Z",
+    "edition": "Singstar Amped [Au]",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "dgmo5046",
+    "sourceUrl": "Faker - This Heart Attack",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5566,
+    "tracksCount": 1,
+    "search": "fakerthisheartattack",
+    "local": false
+  },
+  {
     "id": "falco-der-kommissar",
     "title": "Der Kommissar",
     "artist": "Falco",
@@ -51013,6 +51347,33 @@
     "shortId": 1604,
     "tracksCount": 1,
     "search": "fexsubwaysofyourmind",
+    "local": false
+  },
+  {
+    "id": "ffs-franz-ferdinand-sparks-johnny-delusional",
+    "title": "Johnny Delusional",
+    "artist": "FFS (Franz Ferdinand & Sparks)",
+    "video": "rCxLpte5loY",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 14051.739130434782,
+    "year": "2015",
+    "lastUpdate": "2026-01-23T00:15:42.372Z",
+    "genre": "Pop",
+    "realBpm": 35,
+    "volume": 0.5,
+    "author": "Leroidukitch",
+    "sourceUrl": "FFS (Franz Ferdinand & Sparks) - Johnny Delusional",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5568,
+    "tracksCount": 1,
+    "search": "ffsfranzferdinandsparksjohnnydelusional",
     "local": false
   },
   {
@@ -52848,6 +53209,60 @@
     "local": false
   },
   {
+    "id": "fountains-of-wayne-mexican-wine",
+    "title": "Mexican Wine",
+    "artist": "Fountains Of Wayne",
+    "video": "_a90ObpSqXE",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": -75.87628865979389,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.661Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "Viktor1234678",
+    "sourceUrl": "Fountains Of Wayne - Mexican Wine",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5546,
+    "tracksCount": 1,
+    "search": "fountainsofwaynemexicanwine",
+    "local": false
+  },
+  {
+    "id": "fountains-of-wayne-sink-to-the-bottom",
+    "title": "Sink To The Bottom",
+    "artist": "Fountains Of Wayne",
+    "video": "FgLZMvnWxRU",
+    "language": [
+      "English"
+    ],
+    "bpm": 194,
+    "gap": 58.8453608247421,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.659Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Viktor1234678",
+    "sourceUrl": "Fountains Of Wayne - Sink To The Bottom",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5545,
+    "tracksCount": 1,
+    "search": "fountainsofwaynesinktothebottom",
+    "local": false
+  },
+  {
     "id": "fountains-of-wayne-stacys-mom",
     "title": "Stacy's Mom",
     "artist": "Fountains Of Wayne",
@@ -53458,6 +53873,60 @@
     "local": false
   },
   {
+    "id": "franz-ferdinand-love-illumination",
+    "title": "Love Illumination",
+    "artist": "Franz Ferdinand",
+    "video": "qTh4IysL4dY",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.75,
+    "gap": 18362.00488997555,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.512Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "rafallus",
+    "sourceUrl": "Franz Ferdinand - Love Illumination",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5571,
+    "tracksCount": 1,
+    "search": "franzferdinandloveillumination",
+    "local": false
+  },
+  {
+    "id": "franz-ferdinand-no-you-girls",
+    "title": "No You Girls",
+    "artist": "Franz Ferdinand",
+    "video": "25sBhhOR4lw",
+    "language": [
+      "English"
+    ],
+    "bpm": 314.31,
+    "gap": 11597.804715090198,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.370Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "Lesla",
+    "sourceUrl": "Franz Ferdinand - No You Girls",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5567,
+    "tracksCount": 1,
+    "search": "franzferdinandnoyougirls",
+    "local": false
+  },
+  {
     "id": "franz-ferdinand-take-me-out",
     "title": "Take Me Out",
     "artist": "Franz Ferdinand",
@@ -53485,6 +53954,62 @@
     "shortId": 1681,
     "tracksCount": 1,
     "search": "franzferdinandtakemeout",
+    "local": false
+  },
+  {
+    "id": "franz-ferdinand-this-fffire",
+    "title": "This fffire",
+    "artist": "Franz Ferdinand",
+    "video": "OifiVCnFKzM",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.18,
+    "gap": 9054.573892805805,
+    "year": "2022",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.510Z",
+    "genre": "Rock",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Currymalker (ultrastar-es.org)",
+    "sourceUrl": "Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening)",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5570,
+    "tracksCount": 1,
+    "search": "franzferdinandthisfffire",
+    "local": false
+  },
+  {
+    "id": "franz-ferdinand-ulysses",
+    "title": "Ulysses",
+    "artist": "Franz Ferdinand",
+    "video": "31sZ9xZr_Ew",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.22,
+    "gap": 10467.23921409763,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.509Z",
+    "genre": "Rock",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "rafallus",
+    "sourceUrl": "Franz Ferdinand - Ulysses",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5569,
+    "tracksCount": 1,
+    "search": "franzferdinandulysses",
     "local": false
   },
   {
@@ -53666,6 +54191,198 @@
     "local": false
   },
   {
+    "id": "free-all-right-now",
+    "title": "All Right Now",
+    "artist": "Free",
+    "video": "5wiF6b4rxno",
+    "language": [
+      "English"
+    ],
+    "bpm": 241,
+    "gap": 6954.149377593361,
+    "year": "1970",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-01-23T00:15:30.664Z",
+    "edition": "Singstar Amped [Au]",
+    "genre": "Classic Rock",
+    "realBpm": 48,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Free - All Right Now",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5547,
+    "tracksCount": 1,
+    "search": "freeallrightnow",
+    "local": false
+  },
+  {
+    "id": "free-deejays-around-the-world",
+    "title": "Around The World",
+    "artist": "Free Deejays",
+    "video": "Hyed6khow1A",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.31,
+    "gap": 22661.214210175865,
+    "year": "2010",
+    "artistOrigin": "RO",
+    "lastUpdate": "2026-01-23T00:15:31.188Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Angeloffate",
+    "sourceUrl": "Free Deejays - Around The World",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5552,
+    "tracksCount": 1,
+    "search": "freedeejaysaroundtheworld",
+    "local": false
+  },
+  {
+    "id": "freedom-call-farewell",
+    "title": "Farewell",
+    "artist": "Freedom Call",
+    "video": "-yD-yHNAGHo",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": -16.666666666666657,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-01-23T00:15:30.790Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Freedom Call - Farewell",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 5549,
+    "tracksCount": 1,
+    "search": "freedomcallfarewell",
+    "local": false
+  },
+  {
+    "id": "freeez-iou",
+    "title": "I.O.U.",
+    "artist": "Freeez",
+    "video": "y7ab3PSbvvU",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.3000000000001,
+    "gap": 8446.486486486487,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:30.923Z",
+    "genre": "Electronic",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "Zevac",
+    "sourceUrl": "Freeez - I.O.U.",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5550,
+    "tracksCount": 1,
+    "search": "freeeziou",
+    "local": false
+  },
+  {
+    "id": "freemasons-feat-katherine-ellis-when-you-touch-me",
+    "title": "When You Touch Me",
+    "artist": "Freemasons feat. Katherine Ellis",
+    "video": "psDjgxwo-nU",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.02,
+    "gap": 596.1420360601528,
+    "year": "2008",
+    "lastUpdate": "2026-01-23T00:15:30.666Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Freemasons feat. Katherine Ellis - When You Touch Me",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5548,
+    "tracksCount": 1,
+    "search": "freemasonsfeatkatherineelliswhenyoutouchme",
+    "local": false
+  },
+  {
+    "id": "freemasons-feat-sophie-ellis-bextor-heartbreak-make-me-a-dancer",
+    "title": "Heartbreak (Make Me A Dancer)",
+    "artist": "Freemasons feat. Sophie Ellis-Bextor",
+    "video": "bWkP-mt_bOk",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.19,
+    "gap": 17825.857607359532,
+    "year": "2009",
+    "lastUpdate": "2026-01-23T00:15:31.324Z",
+    "genre": "Dance",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "NicoSierra91",
+    "sourceUrl": "Freemasons feat. Sophie Ellis-Bextor - Heartbreak (Make Me A Dancer)",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5554,
+    "tracksCount": 1,
+    "search": "freemasonsfeatsophieellisbextorheartbreakmakemeadancer",
+    "local": false
+  },
+  {
+    "id": "freestyle-fantasi",
+    "title": "Fantasi",
+    "artist": "Freestyle",
+    "video": "ucj9-fnzKYs",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 300,
+    "gap": 17650,
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-01-23T00:15:31.323Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "bohning",
+    "sourceUrl": "Freestyle - Fantasi",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5553,
+    "tracksCount": 1,
+    "search": "freestylefantasi",
+    "local": false
+  },
+  {
     "id": "fripside-only-my-railgun",
     "title": "Only my Railgun",
     "artist": "FripSide",
@@ -53746,6 +54463,34 @@
     "shortId": 1690,
     "tracksCount": 1,
     "search": "fugeeskillingmesoftlywithhissong",
+    "local": false
+  },
+  {
+    "id": "fun-carry-on",
+    "title": "Carry On",
+    "artist": "Fun.",
+    "video": "q7yCLn-O-Y0",
+    "language": [
+      "English"
+    ],
+    "bpm": 416,
+    "gap": 69030.38461538461,
+    "year": "2012",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-01-23T00:15:42.514Z",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "gun8",
+    "sourceUrl": "Fun. - Carry On",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 5572,
+    "tracksCount": 1,
+    "search": "funcarryon",
     "local": false
   },
   {
@@ -54265,6 +55010,33 @@
     "local": false
   },
   {
+    "id": "gazebo-i-like-chopin",
+    "title": "I Like Chopin",
+    "artist": "Gazebo",
+    "video": "Dtrgwqei7ww",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 36627.77777777778,
+    "year": "1982",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-01-23T00:15:42.530Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Gazebo - I Like Chopin",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5581,
+    "tracksCount": 1,
+    "search": "gazeboilikechopin",
+    "local": false
+  },
+  {
     "id": "geier-sturzflug-bruttosozialprodukt",
     "title": "Bruttosozialprodukt",
     "artist": "Geier Sturzflug",
@@ -54639,6 +55411,33 @@
     "local": false
   },
   {
+    "id": "george-michael-a-different-corner",
+    "title": "A Different Corner",
+    "artist": "George Michael",
+    "video": "IPWHkK-_a_A",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.42,
+    "gap": 52996.65645687185,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.523Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "sourceUrl": "George Michael - A Different Corner",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5576,
+    "tracksCount": 1,
+    "search": "georgemichaeladifferentcorner",
+    "local": false
+  },
+  {
     "id": "george-michael-careless-whisper",
     "title": "Careless Whisper",
     "artist": "George Michael",
@@ -54733,6 +55532,35 @@
     "local": false
   },
   {
+    "id": "george-michael-faith",
+    "title": "Faith",
+    "artist": "George Michael",
+    "video": "6Cs3Pvmmv0E",
+    "language": [
+      "English"
+    ],
+    "bpm": 382.9,
+    "gap": 58631.45729955602,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.516Z",
+    "edition": "Singstar Party",
+    "genre": "Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "George Michael - Faith",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5573,
+    "tracksCount": 1,
+    "search": "georgemichaelfaith",
+    "local": false
+  },
+  {
     "id": "george-michael-fastlove",
     "title": "Fastlove",
     "artist": "George Michael",
@@ -54786,6 +55614,145 @@
     "shortId": 1721,
     "tracksCount": 1,
     "search": "georgemichaelfatherfigure",
+    "local": false
+  },
+  {
+    "id": "george-michael-freedom-90",
+    "title": "Freedom! ’90",
+    "artist": "George Michael",
+    "video": "diYAc7gB-0A",
+    "language": [
+      "English"
+    ],
+    "bpm": 378.73,
+    "gap": 24489.848704882104,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.520Z",
+    "genre": "Pop",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "sourceUrl": "George Michael - Freedom! ’90",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5574,
+    "tracksCount": 1,
+    "search": "georgemichaelfreedom90",
+    "local": false
+  },
+  {
+    "id": "george-michael-i-cant-make-you-love-me",
+    "title": "I Can’t Make You Love Me",
+    "artist": "George Michael",
+    "video": "5zKGoNCJdMA",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 33948.09523809524,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.528Z",
+    "genre": "Pop",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "znxineohp",
+    "sourceUrl": "George Michael - I Can’t Make You Love Me",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5579,
+    "tracksCount": 1,
+    "search": "georgemichaelicantmakeyouloveme",
+    "local": false
+  },
+  {
+    "id": "george-michael-jesus-to-a-child",
+    "title": "Jesus To A Child",
+    "artist": "George Michael",
+    "video": "zNBj4EV_hAo",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.34,
+    "gap": 51619.58833323764,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.525Z",
+    "genre": "Ballad",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Zevac",
+    "sourceUrl": "George Michael - Jesus To A Child",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5577,
+    "tracksCount": 1,
+    "search": "georgemichaeljesustoachild",
+    "local": false
+  },
+  {
+    "id": "george-michael-killer-papa-was-a-rollin-stone",
+    "title": "Killer / Papa Was A Rollin’ Stone",
+    "artist": "George Michael",
+    "video": "Jj9kfqKOgSo",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 19876.39344262295,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.523Z",
+    "genre": "Dance",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Fepo",
+    "sourceUrl": "George Michael - Killer / Papa Was A Rollin’ Stone",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5575,
+    "tracksCount": 1,
+    "search": "georgemichaelkillerpapawasarollinstone",
+    "local": false
+  },
+  {
+    "id": "george-michael-kissing-a-fool",
+    "title": "Kissing A Fool",
+    "artist": "George Michael",
+    "video": "omsBhh8vA7c",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.68,
+    "gap": 10772.954467648065,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.527Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "PowerOric",
+    "sourceUrl": "George Michael - Kissing A Fool",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5578,
+    "tracksCount": 1,
+    "search": "georgemichaelkissingafool",
     "local": false
   },
   {
@@ -55652,7 +56619,7 @@
     "gap": 13465.191310230775,
     "year": "209",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.943Z",
+    "lastUpdate": "2026-01-19T07:54:39.105Z",
     "realBpm": 82,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55708,7 +56675,7 @@
     "gap": 13381.233243967828,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.952Z",
+    "lastUpdate": "2026-01-19T07:56:11.304Z",
     "genre": "Pop",
     "realBpm": 71,
     "volume": 0.5,
@@ -55736,7 +56703,7 @@
     "gap": 13930.163173892177,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.949Z",
+    "lastUpdate": "2026-01-19T07:55:02.468Z",
     "realBpm": 43,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55763,7 +56730,7 @@
     "gap": 30221.857108297718,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:12.698Z",
+    "lastUpdate": "2026-01-19T08:02:09.700Z",
     "realBpm": 38,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55790,7 +56757,7 @@
     "gap": 22254.100761570007,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.957Z",
+    "lastUpdate": "2026-01-19T07:56:47.387Z",
     "realBpm": 16,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55817,7 +56784,7 @@
     "gap": 6846.142036060152,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:12.701Z",
+    "lastUpdate": "2026-01-19T08:02:25.841Z",
     "realBpm": 89,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55844,7 +56811,7 @@
     "gap": 17584.80974582644,
     "year": "2006",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:12.703Z",
+    "lastUpdate": "2026-01-19T08:03:39.859Z",
     "realBpm": 78,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55871,7 +56838,7 @@
     "gap": 14146.58094247064,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:12.704Z",
+    "lastUpdate": "2026-01-19T08:04:00.878Z",
     "realBpm": 23,
     "volume": 0.5,
     "author": "macgyver2809",
@@ -55898,7 +56865,7 @@
     "gap": 10888.991237924061,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.962Z",
+    "lastUpdate": "2026-01-19T07:57:50.878Z",
     "realBpm": 64,
     "volume": 0.5,
     "author": "lozboorman",
@@ -55925,7 +56892,7 @@
     "gap": 7279.381633594831,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.969Z",
+    "lastUpdate": "2026-01-19T07:58:45.314Z",
     "realBpm": 78,
     "volume": 0.5,
     "author": "magigram",
@@ -55981,7 +56948,7 @@
     "gap": 17440.481684453418,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.973Z",
+    "lastUpdate": "2026-01-19T07:59:39.065Z",
     "realBpm": 80,
     "volume": 0.5,
     "author": "lozboorman",
@@ -56008,7 +56975,7 @@
     "gap": 6045.686519592526,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:12.696Z",
+    "lastUpdate": "2026-01-19T08:01:38.559Z",
     "realBpm": 53,
     "volume": 0.5,
     "author": "lozboorman",
@@ -56064,7 +57031,7 @@
     "gap": -8.59375,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.965Z",
+    "lastUpdate": "2026-01-19T07:58:09.551Z",
     "realBpm": 7,
     "volume": 0.5,
     "author": "lozboorman",
@@ -56118,7 +57085,7 @@
     "gap": 22.727272727272748,
     "year": "2006",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.972Z",
+    "lastUpdate": "2026-01-19T07:59:08.434Z",
     "realBpm": 5,
     "volume": 0.5,
     "author": "lozboorman",
@@ -56145,7 +57112,7 @@
     "gap": -567.2656835791051,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.960Z",
+    "lastUpdate": "2026-01-19T07:57:13.917Z",
     "genre": "Pop",
     "realBpm": 25,
     "volume": 0.5,
@@ -56173,7 +57140,7 @@
     "gap": 8313.90243902439,
     "year": "2002",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.955Z",
+    "lastUpdate": "2026-01-19T07:56:23.398Z",
     "realBpm": 30,
     "volume": 0.5,
     "author": "magigram, DoubleDee",
@@ -56200,7 +57167,7 @@
     "gap": 22171.596638655465,
     "year": "2008",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-01-21T00:15:11.951Z",
+    "lastUpdate": "2026-01-19T07:55:37.469Z",
     "realBpm": 21,
     "volume": 0.5,
     "author": "magigram",
@@ -68257,6 +69224,33 @@
     "local": false
   },
   {
+    "id": "jason-derulo-feat-jennifer-lopez-matoma-try-me",
+    "title": "Try Me",
+    "artist": "Jason Derulo feat. Jennifer Lopez & Matoma",
+    "video": "C3Z8tsI8RrM",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.6,
+    "gap": -28.438438438438425,
+    "year": "2015",
+    "lastUpdate": "2026-01-23T00:15:30.521Z",
+    "genre": "Pop",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Jason Derulo feat. Jennifer Lopez & Matoma - Try Me",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5542,
+    "tracksCount": 1,
+    "search": "jasonderulofeatjenniferlopezmatomatryme",
+    "local": false
+  },
+  {
     "id": "jason-derulo-feat-snoop-dogg-wiggle",
     "title": "Wiggle",
     "artist": "Jason Derulo feat. Snoop Dogg",
@@ -69008,6 +70002,33 @@
     "local": false
   },
   {
+    "id": "jeffree-star-get-away-with-murder",
+    "title": "Get Away With Murder",
+    "artist": "Jeffree Star",
+    "video": "86lXqHh1-uk",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.28,
+    "gap": 13593.159697445411,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:31.059Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "ChrissyLeggs",
+    "sourceUrl": "Jeffree Star - Get Away With Murder",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5551,
+    "tracksCount": 1,
+    "search": "jeffreestargetawaywithmurder",
+    "local": false
+  },
+  {
     "id": "jelly-roll-need-a-favor",
     "title": "Need A Favor",
     "artist": "Jelly Roll",
@@ -69120,6 +70141,61 @@
     "local": false
   },
   {
+    "id": "jennifer-lopez-aint-your-mama",
+    "title": "Ain’t Your Mama",
+    "artist": "Jennifer Lopez",
+    "video": "Pgmx7z49OEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 84340,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.657Z",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "simoncsn, Volodia, amro98",
+    "sourceUrl": "Jennifer Lopez - Ain’t Your Mama",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5544,
+    "tracksCount": 1,
+    "search": "jenniferlopezaintyourmama",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-feat-flo-rida-goin-in",
+    "title": "Goin’ In",
+    "artist": "Jennifer Lopez feat. Flo Rida",
+    "video": "z5W7DVFKrcs",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 13599.23076923077,
+    "year": "2012",
+    "lastUpdate": "2026-01-23T00:15:30.270Z",
+    "genre": "Pop",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "sourceUrl": "Jennifer Lopez feat. Flo Rida - Goin’ In",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5538,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatfloridagoinin",
+    "local": false
+  },
+  {
     "id": "jennifer-lopez-feat-ja-rule-im-real",
     "title": "I’m Real",
     "artist": "Jennifer Lopez feat. Ja Rule",
@@ -69130,7 +70206,7 @@
     "bpm": 334,
     "gap": 1081.9760479041915,
     "year": "2001",
-    "lastUpdate": "2026-01-21T00:15:12.709Z",
+    "lastUpdate": "2026-01-20T07:35:52.519Z",
     "realBpm": 46,
     "volume": 0.5,
     "author": "lozboorman",
@@ -69156,7 +70232,7 @@
     "bpm": 400,
     "gap": 36347.5,
     "year": "2002",
-    "lastUpdate": "2026-01-21T00:15:12.869Z",
+    "lastUpdate": "2026-01-20T07:36:58.377Z",
     "genre": "R&B",
     "realBpm": 7,
     "volume": 0.5,
@@ -69183,7 +70259,7 @@
     "bpm": 336.04,
     "gap": 24897.97405070825,
     "year": "2011",
-    "lastUpdate": "2026-01-21T00:15:13.170Z",
+    "lastUpdate": "2026-01-20T07:38:52.011Z",
     "genre": "R&B",
     "realBpm": 78,
     "volume": 0.5,
@@ -69200,6 +70276,60 @@
     "local": false
   },
   {
+    "id": "jennifer-lopez-feat-pitbull-dance-again",
+    "title": "Dance Again",
+    "artist": "Jennifer Lopez feat. Pitbull",
+    "video": "bjgFH01k0gU",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 2863.90625,
+    "year": "2012",
+    "lastUpdate": "2026-01-23T00:15:29.602Z",
+    "genre": "Pop",
+    "realBpm": 91,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "sourceUrl": "Jennifer Lopez feat. Pitbull - Dance Again",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5537,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatpitbulldanceagain",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-feat-pitbull-live-it-up",
+    "title": "Live It Up",
+    "artist": "Jennifer Lopez feat. Pitbull",
+    "video": "BofL1AaiTjo",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 21873.90625,
+    "year": "2013",
+    "lastUpdate": "2026-01-23T00:15:30.399Z",
+    "genre": "Pop",
+    "realBpm": 12,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Jennifer Lopez feat. Pitbull - Live It Up",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5539,
+    "tracksCount": 1,
+    "search": "jenniferlopezfeatpitbullliveitup",
+    "local": false
+  },
+  {
     "id": "jennifer-lopez-feat-r-kelly-baby-i-u",
     "title": "Baby I ♡ U!",
     "artist": "Jennifer Lopez feat. R. Kelly",
@@ -69210,7 +70340,7 @@
     "bpm": 223.95,
     "gap": 345.3114534494306,
     "year": "2002",
-    "lastUpdate": "2026-01-21T00:15:13.026Z",
+    "lastUpdate": "2026-01-20T07:38:17.654Z",
     "realBpm": 71,
     "volume": 0.5,
     "author": "lozboorman",
@@ -69226,6 +70356,33 @@
     "local": false
   },
   {
+    "id": "jennifer-lopez-get-right",
+    "title": "Get Right",
+    "artist": "Jennifer Lopez",
+    "video": "1WIsnC-h1d0",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 103744.84536082474,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.517Z",
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "Lozboorman",
+    "sourceUrl": "Jennifer Lopez - Get Right",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5540,
+    "tracksCount": 1,
+    "search": "jenniferlopezgetright",
+    "local": false
+  },
+  {
     "id": "jennifer-lopez-if-you-had-my-love",
     "title": "If You Had My Love",
     "artist": "Jennifer Lopez",
@@ -69237,7 +70394,7 @@
     "gap": 34050.650233744156,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:13.022Z",
+    "lastUpdate": "2026-01-20T07:37:39.655Z",
     "genre": "Pop",
     "realBpm": 78,
     "volume": 0.5,
@@ -69265,7 +70422,7 @@
     "gap": 26158.835930339137,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:13.019Z",
+    "lastUpdate": "2026-01-20T07:37:18.695Z",
     "realBpm": 78,
     "volume": 0.5,
     "author": "lozboorman",
@@ -69292,7 +70449,7 @@
     "gap": 14535.229357798165,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:12.706Z",
+    "lastUpdate": "2026-01-20T07:34:57.678Z",
     "realBpm": 76,
     "volume": 0.5,
     "author": "Canni",
@@ -69347,7 +70504,7 @@
     "gap": 28029.69221298861,
     "year": "400",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:12.866Z",
+    "lastUpdate": "2026-01-20T07:36:32.301Z",
     "realBpm": 6,
     "volume": 0.5,
     "author": "Lozboorman",
@@ -69360,6 +70517,34 @@
     "shortId": 5530,
     "tracksCount": 1,
     "search": "jenniferlopezlovingyou",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-papi",
+    "title": "Papi",
+    "artist": "Jennifer Lopez",
+    "video": "6XbIuSLaCnk",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.08,
+    "gap": 75510.33322225924,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.520Z",
+    "genre": "Pop",
+    "realBpm": 9,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "sourceUrl": "Jennifer Lopez - Papi",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5541,
+    "tracksCount": 1,
+    "search": "jenniferlopezpapi",
     "local": false
   },
   {
@@ -69388,6 +70573,33 @@
     "shortId": 2101,
     "tracksCount": 1,
     "search": "jenniferlopezpitbullonthefloor",
+    "local": false
+  },
+  {
+    "id": "jennifer-lopez-play",
+    "title": "Play",
+    "artist": "Jennifer Lopez",
+    "video": "tFuw-YZaTNo",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 30250,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:30.653Z",
+    "realBpm": 38,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "sourceUrl": "Jennifer Lopez - Play",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5543,
+    "tracksCount": 1,
+    "search": "jenniferlopezplay",
     "local": false
   },
   {
@@ -77958,7 +79170,7 @@
     "gap": 4546.2742934199305,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:11.974Z",
+    "lastUpdate": "2026-01-19T08:01:05.324Z",
     "genre": "Metalcore",
     "realBpm": 91,
     "volume": 0.5,
@@ -77986,7 +79198,7 @@
     "gap": 7091.774193548387,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-01-21T00:15:13.023Z",
+    "lastUpdate": "2026-01-20T07:37:51.798Z",
     "genre": "Metalcore",
     "realBpm": 124,
     "volume": 0.5,
@@ -156458,6 +157670,34 @@
     "local": false
   },
   {
+    "id": "yeah-yeah-yeahs-gold-lion",
+    "title": "Gold Lion",
+    "artist": "Yeah Yeah Yeahs",
+    "video": "w0XWeyOZxI8",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.6,
+    "gap": 44875.05369551484,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-01-23T00:15:42.529Z",
+    "edition": "Singstar Amped [Us]",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Yeah Yeah Yeahs - Gold Lion",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5580,
+    "tracksCount": 1,
+    "search": "yeahyeahyeahsgoldlion",
+    "local": false
+  },
+  {
     "id": "years-years-king",
     "title": "King",
     "artist": "Years & Years",
@@ -157665,6 +158905,33 @@
     "local": false
   },
   {
+    "id": "zebrahead-playmate-of-the-year",
+    "title": "Playmate Of The Year",
+    "artist": "Zebrahead",
+    "video": "3ZsqnG0L86M",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": 25286.717557251908,
+    "year": "2000",
+    "lastUpdate": "2026-01-23T00:15:42.665Z",
+    "videoGap": 10,
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Sabu",
+    "sourceUrl": "Zebrahead - Playmate Of The Year",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5582,
+    "tracksCount": 1,
+    "search": "zebraheadplaymateoftheyear",
+    "local": false
+  },
+  {
     "id": "zedd-alessia-cara-stay",
     "title": "Stay",
     "artist": "Zedd & Alessia Cara",
@@ -157824,6 +159091,33 @@
     "shortId": 4792,
     "tracksCount": 1,
     "search": "zendayabellathornewatchme",
+    "local": false
+  },
+  {
+    "id": "zero-7-distractions",
+    "title": "Distractions",
+    "artist": "Zero 7",
+    "video": "dQZ7JUhQR-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.79999999999995,
+    "gap": 17259.666555518506,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-01-23T00:15:42.789Z",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "lava",
+    "sourceUrl": "Zero 7 - Distractions",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5583,
+    "tracksCount": 1,
+    "search": "zero7distractions",
     "local": false
   },
   {
