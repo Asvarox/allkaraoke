@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Delete } from '@mui/icons-material';
 import { IconButton, Paper } from '@mui/material';
 import dayjs from 'dayjs';
@@ -26,16 +25,15 @@ export default function Edit() {
   if (!song.data) return <>Loading</>;
 
   return (
-    <Paper elevation={2} sx={{ minHeight: '100vh', maxWidth: '1260px', margin: '0 auto', paddingTop: '30px' }}>
+    <Paper elevation={2} sx={{ minHeight: '100vh', maxWidth: '1260px', margin: '0 auto' }} className="pt-4 md:pt-8">
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      <TopBar>
+      <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
         <Link to="edit/list/">
           <a>Return to the song list</a>
         </Link>
         <span>
-          Editing:{' '}
           <b>
             {song.data.artist} - {song.data.title}
           </b>
@@ -59,18 +57,10 @@ export default function Edit() {
           )}
         </span>
         <abbr title={song.data.lastUpdate}>
-          Last updated: <b>{song.data.lastUpdate ? dayjs(song.data.lastUpdate).fromNow() : '-'}</b>
+          Updated: <b>{song.data.lastUpdate ? dayjs(song.data.lastUpdate).fromNow() : '-'}</b>
         </abbr>
-      </TopBar>
+      </div>
       <LazyConvert song={song.data} />
     </Paper>
   );
 }
-
-const TopBar = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 0 8px;
-`;

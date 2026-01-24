@@ -1,0 +1,307 @@
+#ARTIST:Freemasons feat. Sophie Ellis-Bextor
+#TITLE:Heartbreak (Make Me A Dancer)
+#CREATOR:NicoSierra91
+#BPM:252,19
+#YEAR:2009
+#VIDEO:v=bWkP-mt_bOk
+#GENRE:Dance
+#LANGUAGE:English
+#GAP:17825,857607359532
+#ALLKARAOKE_ID:freemasons-feat-sophie-ellis-bextor-heartbreak-make-me-a-dancer
+#ALLKARAOKE_SID:5554
+#ALLKARAOKE_LASTUPDATE:2026-01-23T00:15:31.324Z
+#ALLKARAOKE_REALBPM:22
+#ALLKARAOKE_SOURCEURL:Freemasons feat. Sophie Ellis-Bextor - Heartbreak (Make Me A Dancer)
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Freemasons feat. Sophie Ellis-Bextor - Heartbreak (Make Me A Dancer).mp3
+: 17 4 7 I've 
+: 25 6 7 tried 
+: 34 2 2 to 
+: 38 4 -2 hold 
+: 45 4 2 my
+: 53 7 7 self 
+: 64 4 9 to
+: 70 3 9 ge
+: 74 7 6 ther
+- 81 127
+- 127
+: 144 6 7 Tried 
+: 153 5 7 to 
+: 161 3 2 for
+: 166 4 7 get 
+: 173 5 2 you've 
+: 181 9 7 gone 
+: 193 3 9 a
+: 198 3 9 way
+: 203 5 6 ~
+- 208 239
+- 239
+: 256 6 2 The 
+: 264 8 7 tears 
+: 277 9 9 I've 
+: 288 10 10 cried, 
+: 320 4 7 they
+: 325 3 6 ~ 
+: 329 9 6 won't 
+: 341 7 7 sub
+: 353 10 9 side
+- 363 383
+- 383
+: 400 6 7 Un
+: 407 5 7 less 
+: 417 2 2 the 
+: 420 6 7 mu
+: 428 5 2 sic 
+: 437 7 7 starts 
+: 449 3 9 to 
+: 454 4 9 play
+: 459 7 6 ~
+- 466 504
+- 504
+: 521 4 7 Heart
+: 528 5 7 break, 
+: 536 3 7 make 
+: 541 3 7 me 
+: 545 2 7 a 
+: 548 4 9 dan
+: 553 2 7 ~
+: 557 4 7 cer, 
+: 564 4 9 dan
+: 569 2 7 ~
+: 573 4 7 cer
+- 577
+: 584 7 9 D
+: 592 6 9 J, 
+: 601 3 9 give 
+: 605 3 9 me 
+: 609 3 9 the 
+: 613 3 10 ans
+: 617 2 9 ~
+: 621 4 9 wer, 
+: 628 4 10 ans
+: 633 2 9 ~
+: 637 4 9 wer
+- 641
+: 648 4 10 Love, 
+: 656 5 10 stop 
+: 664 3 10 get
+: 668 3 10 ting 
+: 672 3 10 me 
+: 676 10 12 down, 
+: 692 10 10 down, 
+: 708 4 10 down
+: 713 6 9 ~
+- 719 759
+- 759
+: 776 5 7 Heart
+: 784 5 7 break, 
+: 792 3 7 make 
+: 797 3 7 me 
+: 801 2 7 a 
+: 804 4 9 dan
+: 809 2 7 ~
+: 813 5 7 cer, 
+: 820 4 9 dan
+: 825 2 7 ~
+: 829 3 7 cer
+- 832
+: 840 6 9 Keep 
+: 848 6 9 my 
+: 856 4 9 heart 
+: 861 2 9 bea
+: 864 3 9 ting 
+: 869 3 10 fas
+: 873 2 9 ~
+: 877 4 9 ter, 
+: 884 3 10 fas
+: 888 2 9 ~
+: 892 5 9 ter
+- 897
+: 904 4 10 Love, 
+: 912 4 10 stop 
+: 919 4 10 brin
+: 924 3 10 ging 
+: 928 3 10 me 
+: 932 10 12 down, 
+: 948 11 10 down, 
+: 964 5 10 down
+: 970 5 9 ~
+- 975 1023
+- 1023
+: 1040 5 7 I 
+: 1048 5 7 need 
+: 1056 1 2 to 
+: 1061 4 -2 feel 
+: 1068 5 2 I'm 
+: 1076 5 7 get
+: 1084 5 9 ting 
+: 1092 6 9 stron
+: 1100 2 5 ger
+: 1103 4 6 ~
+- 1107 1150
+- 1150
+: 1167 6 7 Long 
+: 1175 4 7 as 
+: 1181 4 2 I'm 
+: 1188 4 7 mo
+: 1193 2 2 ~
+: 1196 6 2 ving 
+: 1204 3 7 it 
+: 1212 5 9 feels 
+: 1221 3 9 true
+: 1225 6 6 ~
+- 1231 1262
+- 1262
+: 1279 6 2 And 
+: 1288 7 7 with 
+: 1299 6 9 each 
+: 1311 5 10 step, 
+: 1343 3 7 I
+: 1347 3 6 ~ 
+: 1352 8 6 will 
+: 1364 10 7 for
+: 1376 2 7 get
+: 1379 4 9 ~
+- 1383 1394
+- 1394
+: 1411 2 2 For
+: 1415 4 7 get 
+: 1420 5 2 all 
+: 1427 6 7 of 
+: 1436 4 2 those 
+: 1443 5 7 me
+: 1452 5 2 mo
+: 1459 9 7 ries 
+: 1470 4 9 of 
+: 1476 4 9 you
+: 1482 5 6 ~
+- 1487 1558
+- 1558
+: 1575 15 7 Keep 
+: 1593 9 7 it 
+: 1607 8 6 co
+: 1616 3 7 ming 
+: 1620 11 6 on 
+: 1632 3 7 and 
+: 1636 11 6 on 
+: 1648 3 7 and 
+: 1652 4 6 on
+: 1657 4 2 ~
+- 1661
+: 1672 4 7 Heart
+: 1679 5 7 break, 
+: 1687 3 7 make 
+: 1692 3 7 me 
+: 1696 2 7 a 
+: 1699 4 9 dan
+: 1704 2 7 ~
+: 1708 4 7 cer, 
+: 1715 4 9 dan
+: 1720 2 7 ~
+: 1724 4 7 cer
+- 1728
+: 1735 7 9 D
+: 1743 6 9 J, 
+: 1752 3 9 give 
+: 1756 3 9 me 
+: 1760 3 9 the 
+: 1764 3 10 ans
+: 1768 2 9 ~
+: 1772 4 9 wer, 
+: 1779 4 10 ans
+: 1784 2 9 ~
+: 1788 4 9 wer
+- 1792
+: 1799 4 10 Love, 
+: 1807 5 10 stop 
+: 1815 3 10 get
+: 1819 3 10 ting 
+: 1823 3 10 me 
+: 1827 10 12 down, 
+: 1843 10 10 down, 
+: 1859 4 10 down
+: 1864 6 9 ~
+- 1870 1910
+- 1910
+: 1927 5 7 Heart
+: 1935 5 7 break, 
+: 1943 3 7 make 
+: 1948 3 7 me 
+: 1952 2 7 a 
+: 1955 4 9 dan
+: 1960 2 7 ~
+: 1964 5 7 cer, 
+: 1971 4 9 dan
+: 1976 2 7 ~
+: 1980 3 7 cer
+- 1983
+: 1991 6 9 Keep 
+: 1999 6 9 my 
+: 2007 4 9 heart 
+: 2012 2 9 bea
+: 2015 3 9 ting 
+: 2020 3 10 fas
+: 2024 2 9 ~
+: 2028 4 9 ter, 
+: 2035 3 10 fas
+: 2039 2 9 ~
+: 2043 5 9 ter
+- 2048
+: 2055 4 10 Love, 
+: 2063 4 10 stop 
+: 2070 4 10 brin
+: 2075 3 10 ging 
+: 2079 3 10 me 
+: 2083 10 12 down, 
+: 2099 11 10 down, 
+: 2115 5 10 down
+: 2121 5 9 ~
+- 2126 2678
+- 2678
+: 2695 4 7 Heart
+: 2702 5 7 break, 
+: 2710 3 7 make 
+: 2715 3 7 me 
+: 2719 2 7 a 
+: 2722 4 9 dan
+: 2727 2 7 ~
+: 2731 4 7 cer, 
+: 2738 4 9 dan
+: 2743 2 7 ~
+: 2747 4 7 cer
+- 2751
+: 2758 7 9 D
+: 2766 6 9 J, 
+: 2775 3 9 give 
+: 2779 3 9 me 
+: 2783 3 9 the 
+: 2787 3 10 ans
+: 2791 2 9 ~
+: 2795 4 9 wer, 
+: 2802 4 10 ans
+: 2807 2 9 ~
+: 2811 4 9 wer
+- 2815
+: 2822 4 10 Love, 
+: 2830 5 10 stop 
+: 2838 3 10 get
+: 2842 3 10 ting 
+: 2846 3 10 me 
+: 2850 10 12 down, 
+: 2866 10 10 down, 
+: 2882 4 10 down
+: 2887 6 9 ~
+- 2893 2997
+- 2997
+: 3014 3 7 Do 
+: 3019 2 6 it 
+: 3022 3 4 a
+: 3026 6 6 lone, 
+: 3034 3 6 I 
+: 3038 3 6 could
+: 3042 3 6 n't 
+: 3046 3 7 do 
+: 3051 2 6 it 
+: 3054 3 4 a
+: 3058 9 6 lone
+E

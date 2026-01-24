@@ -1,0 +1,44 @@
+#ARTIST:Girls Aloud
+#TITLE:Miss You Bow Wow
+#CREATOR:lozboorman
+#BPM:208,02
+#YEAR:2008
+#VIDEO:v=aECFWiouIoo
+#LANGUAGE:English
+#GAP:17440,481684453418
+#ALLKARAOKE_ID:girls-aloud-miss-you-bow-wow
+#ALLKARAOKE_SID:5521
+#ALLKARAOKE_LASTUPDATE:2026-01-19T07:59:39.065Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_SOURCEURL:Girls Aloud - Miss You Bow Wow
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Girls Aloud - Miss You Bow Wow.mp3
+: 14 2 2 Ev
+: 18 1 2 ery
+: 20 1 2 bod
+: 22 1 2 y 
+: 24 2 0 love, 
+: 28 2 0 love, 
+: 32 2 0 loves
+- 34
+: 38 2 3 Ev
+: 42 1 3 ery
+: 44 1 3 bod
+: 46 1 2 y
+- 47
+: 48 1 2 Ev
+: 50 1 2 ery
+: 52 1 2 bod
+: 54 1 2 y 
+: 56 2 0 love, 
+: 60 2 0 love, 
+: 64 2 0 loves
+- 66
+* 70 2 3 Ev
+: 74 1 3 ery
+: 76 1 3 bod
+: 78 1 5 y
+- 79
+: 80 1 2 Ev
+E

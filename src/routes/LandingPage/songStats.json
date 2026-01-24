@@ -11,6 +11,7 @@
     "Take That",
     "The Beatles",
     "System of a Down",
+    "Girls Aloud",
     "One Direction",
     "Imagine Dragons",
     "Michael Jackson",
@@ -41,6 +42,7 @@
     "Bad Religion",
     "Beyoncé",
     "Elton John",
+    "George Michael",
     "INXS",
     "Paramore",
     "The Weeknd",
@@ -54,6 +56,7 @@
     "Fall Out Boy",
     "Glee Cast",
     "High School Musical",
+    "Jennifer Lopez",
     "Mariah Carey",
     "No Doubt",
     "Panic! at the Disco",
@@ -106,7 +109,6 @@
     "Creed",
     "Eminem",
     "Genesis",
-    "Girls Aloud",
     "Hamilton",
     "Jason Derulo",
     "Johnny Cash",
@@ -127,7 +129,6 @@
     "Daft Punk",
     "Duran Duran",
     "Frank Sinatra",
-    "George Michael",
     "Hilary Duff",
     "HIM",
     "Huey Lewis & The News",
@@ -144,12 +145,11 @@
     "Weezer",
     "“Weird Al” Yankovic",
     "AC/DC",
+    "Ace of Base",
     "Alanis Morissette",
     "Amy Winehouse",
     "Atomic Kitten",
-    "Black Veil Brides",
-    "Bullet For My Valentine",
-    "Dire Straits"
+    "Black Veil Brides"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5508
+  "songs": 5582
 }

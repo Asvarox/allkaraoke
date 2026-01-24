@@ -1,0 +1,794 @@
+#ARTIST:Jennifer Lopez feat. Pitbull
+#TITLE:Live It Up
+#CREATOR:lozboorman
+#BPM:256
+#YEAR:2013
+#VIDEO:v=BofL1AaiTjo
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:21873,90625
+#ALLKARAOKE_ID:jennifer-lopez-feat-pitbull-live-it-up
+#ALLKARAOKE_SID:5539
+#ALLKARAOKE_LASTUPDATE:2026-01-23T00:15:30.399Z
+#ALLKARAOKE_REALBPM:12
+#ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Pitbull - Live It Up
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Jennifer Lopez feat. Pitbull - Live It Up.mp3
+F 17 1 6 From 
+F 19 1 6 the 
+F 21 3 6 streets 
+F 25 1 6 of 
+F 27 1 6 mi
+F 29 3 6 a
+F 33 3 6 mi,
+- 36
+F 49 1 6 To 
+F 51 1 6 pre
+F 53 1 6 sen
+F 55 1 6 ting 
+F 57 1 6 at 
+F 59 1 6 the 
+F 61 5 6 Gram
+F 67 3 6 mys
+- 70
+F 83 1 6 Con 
+F 85 1 6 el 
+F 87 1 6 mus
+F 89 1 6 li
+F 91 1 6 to 
+F 93 3 6 de 
+F 97 1 6 Jen
+F 99 1 6 ni
+F 101 3 6 fer
+- 104
+F 115 1 6 May
+F 117 1 6 be 
+F 119 1 6 now 
+F 121 1 6 you 
+F 123 1 6 un
+F 125 3 6 ders
+F 129 3 6 tand 
+F 133 3 6 me
+- 136 140
+- 140
+F 157 3 6 Mr 
+F 161 3 6 World
+F 165 9 6 wide,
+- 174
+F 185 3 6 Red
+F 189 7 6 One,
+- 196
+F 209 1 6 And 
+F 211 1 6 the 
+F 213 1 6 beau
+F 215 3 6 ti
+F 219 1 6 ful 
+F 221 3 6 Jen
+F 225 1 6 ni
+F 227 1 6 fer 
+F 229 1 6 Lo
+F 231 3 6 pez,
+- 234 236
+- 236
+F 253 3 6 Da
+F 257 3 6 le
+- 260
+F 269 1 6 We 
+F 271 3 6 don’t 
+F 275 1 6 be
+F 277 3 6 lieve 
+F 281 3 6 in 
+F 285 3 6 de
+F 289 3 6 feat,
+- 292
+F 301 3 6 That’s 
+F 305 3 6 why 
+F 309 1 6 we’re 
+F 311 1 6 back 
+F 313 1 6 for 
+F 315 1 6 a 
+F 317 3 6 three-
+F 321 3 6 peat
+- 324
+F 329 3 6 Hi 
+F 333 1 6 Jen
+F 335 2 6 ny,
+- 337
+F 341 1 6 Mi
+F 343 1 6 ra 
+F 345 1 6 que es
+F 347 1 6 ta 
+F 349 3 6 lo
+F 353 2 6 co,
+- 355
+F 359 1 6 Yo 
+F 361 1 6 me 
+F 363 1 6 lo 
+F 365 1 6 co
+F 367 1 6 mo 
+F 369 1 6 co
+F 371 1 6 mo 
+F 373 1 6 pas
+F 375 1 6 te
+F 377 1 6 li
+F 379 1 6 to 
+F 381 3 6 co
+F 385 2 6 co
+- 387
+F 391 1 6 I 
+F 393 3 6 get 
+F 397 1 6 on 
+F 399 1 6 stu
+F 401 1 6 pid 
+F 403 1 6 on 
+F 405 1 6 a 
+F 407 1 6 beach, 
+F 409 3 6 she 
+F 413 3 6 wo
+F 417 1 6 wo
+- 418
+F 421 3 6 I 
+F 425 3 6 got 
+F 429 1 6 ma
+F 431 3 6 mi, 
+F 437 1 6 ma
+F 439 1 6 mis 
+F 441 1 6 by 
+F 443 1 6 the 
+F 445 3 6 boa
+F 449 3 6 tload
+- 452
+F 457 3 6 Yo 
+F 461 1 6 ten
+F 463 1 6 go 
+F 465 3 6 la 
+F 469 3 6 car
+F 473 1 6 ne, 
+F 475 1 6 y 
+F 477 1 6 e
+F 479 1 6 lla 
+F 481 3 6 el 
+F 485 3 6 mo
+F 489 1 6 jo
+- 490
+F 493 1 6 I’m 
+F 495 1 6 sa
+F 497 3 6 ying 
+F 501 1 6 da
+F 503 3 6 le, 
+F 509 1 6 she’s 
+F 511 1 6 screa
+F 513 3 6 ming 
+F 517 3 6 YO
+F 521 1 6 LO
+- 522
+F 525 3 6 She’s 
+F 529 1 6 lit
+F 531 1 6 tle 
+F 533 3 6 red 
+F 537 1 6 ri
+F 539 1 6 ding 
+F 541 1 6 hood,
+- 542
+F 545 3 6 And 
+F 549 1 6 guess 
+F 551 1 6 who’s 
+F 553 3 6 the 
+F 557 3 6 lo
+F 561 2 6 bo,
+- 563
+F 567 1 6 Me 
+F 569 1 6 la 
+F 571 3 6 co
+F 575 1 6 mo
+- 576
+F 577 3 6 Who’s 
+F 581 3 6 name 
+F 585 3 6 is 
+F 589 1 6 glo
+F 591 1 6 ba
+F 593 1 6 lly 
+F 595 2 6 known,
+- 597
+F 601 3 6 Who’s 
+F 605 1 6 name’s
+- 606
+F 609 1 6 On 
+F 611 1 6 a 
+F 613 1 6 check, 
+F 615 1 6 and 
+F 617 1 6 they 
+F 619 1 6 ad
+F 621 1 6 ding 
+F 623 1 6 an 
+F 625 4 6 O
+- 629
+F 633 3 6 Who’s 
+F 637 3 6 name 
+F 641 1 6 is
+- 642
+F 643 1 6 On 
+F 645 1 6 the 
+F 647 1 6 Blimp 
+F 649 1 6 with 
+F 651 1 6 the 
+F 653 1 6 world 
+F 655 1 6 is 
+F 657 4 6 yours
+- 661
+F 665 3 6 Who’s 
+F 669 3 6 name 
+F 673 1 6 is 
+F 675 1 6 on 
+F 677 7 6 schools, 
+F 685 3 6 huh
+- 688
+F 693 3 6 Slam 
+F 697 3 6 for 
+F 701 7 6 sure,
+- 708
+F 713 3 6 I 
+F 717 1 6 know 
+F 719 2 6 it’s
+- 721
+F 725 1 6 Hard 
+F 727 1 6 to 
+F 729 1 6 un
+F 731 1 6 ders
+F 733 3 6 tand 
+F 737 1 6 how 
+F 739 1 6 a 
+F 741 3 6 boy 
+F 745 1 6 grew 
+F 747 1 6 to 
+F 749 3 6 a 
+F 753 1 6 man
+- 754
+F 757 3 6 Man 
+F 761 1 6 tur
+F 763 1 6 ned 
+F 765 1 6 to 
+F 767 1 6 a 
+F 769 3 6 brand
+- 772
+F 783 1 6 But 
+F 785 3 6 guess 
+F 789 3 6 what 
+F 793 1 6 here 
+F 795 1 6 I 
+F 797 4 6 am
+- 801
+F 805 1 6 Jen
+F 807 1 6 ny 
+F 809 1 6 from 
+F 811 1 6 the 
+F 813 3 6 block, 
+F 817 3 6 let’s 
+F 821 1 6 rock
+- 822
+: 825 3 6 You 
+: 829 1 6 push 
+: 833 1 6 me 
+: 837 3 6 har
+: 841 3 6 der,
+- 844
+: 857 3 6 I 
+: 861 3 6 do 
+: 865 1 5 the 
+: 869 7 3 same
+- 876
+: 889 3 6 Boy 
+* 893 3 6 wan
+: 897 1 6 na 
+: 901 3 6 feel 
+: 905 5 6 ya,
+- 910
+: 921 3 6 In 
+: 925 3 6 e
+: 929 3 5 very 
+: 933 5 3 way
+- 938
+: 953 3 6 Don’t 
+: 957 3 6 e
+: 961 3 6 ven 
+: 965 3 8 won
+: 969 5 8 der,
+- 974
+: 985 1 6 It’s 
+: 989 1 6 just 
+: 993 1 6 a 
+: 997 5 8 game
+- 1002
+: 1017 3 3 We 
+: 1021 3 3 ro
+: 1025 3 6 cking 
+: 1029 3 10 bo
+: 1033 3 10 dy 
+: 1037 1 6 to 
+: 1041 3 8 bo
+: 1045 1 8 dy,
+- 1046
+: 1049 1 8 Let’s 
+: 1053 3 8 go 
+: 1057 1 6 in
+: 1061 5 3 sane
+- 1066
+: 1081 3 6 I 
+* 1085 3 6 hit 
+: 1089 1 6 the 
+: 1093 5 6 spo
+: 1101 3 3 tlight,
+- 1104
+: 1109 5 6 All 
+: 1117 4 3 night,
+- 1121
+: 1125 2 6 Rea
+: 1129 2 6 dy 
+: 1133 2 6 to 
+: 1137 2 6 go
+- 1139
+: 1145 3 6 Give 
+: 1149 3 6 you 
+: 1153 1 6 a 
+: 1157 5 6 hard 
+: 1165 3 3 night,
+- 1168
+: 1173 5 6 So 
+: 1181 3 3 tight,
+- 1184
+: 1189 2 6 Rea
+: 1193 2 6 dy 
+: 1197 2 6 to 
+: 1201 2 6 blow
+- 1203
+: 1209 3 6 I’m 
+: 1213 3 6 in 
+: 1217 1 6 the 
+: 1221 5 6 spo
+* 1229 3 3 tlight,
+- 1232
+: 1237 5 6 All 
+: 1245 4 3 night,
+- 1249
+: 1253 2 6 Rea
+: 1257 2 6 dy 
+: 1261 2 6 to 
+: 1265 2 6 go
+- 1267
+: 1273 3 6 Give 
+: 1277 3 6 you 
+: 1281 1 6 a 
+: 1285 5 6 hard 
+: 1293 3 3 night,
+- 1296
+: 1301 5 6 So 
+: 1309 3 3 tight,
+- 1312
+: 1317 3 3 Rea
+: 1321 3 3 dy 
+: 1325 1 6 to
+- 1326
+F 1329 16 10 Blow
+- 1345
+: 1349 11 6 Oh
+: 1361 4 1 ~
+- 1365
+: 1369 3 10 We 
+: 1373 3 10 can 
+: 1377 3 10 do 
+* 1381 3 11 a
+: 1385 3 10 ny
+: 1389 3 8 thing 
+: 1393 3 6 we 
+: 1397 4 6 want
+- 1401
+: 1405 3 8 Live 
+: 1409 3 8 it 
+: 1413 5 8 up,
+- 1418
+: 1433 3 6 So 
+: 1437 3 6 live 
+: 1441 3 8 it 
+* 1445 4 8 up,
+- 1449
+: 1453 3 6 Live 
+: 1457 3 8 it 
+: 1461 5 10 up, 
+: 1469 4 6 go,
+- 1473
+: 1477 11 6 Oh
+: 1489 3 1 ~
+- 1492
+: 1497 3 10 And 
+* 1501 3 10 we 
+* 1505 1 10 ain’t 
+: 1509 3 11 stop
+: 1513 3 10 ping 
+: 1517 3 8 till 
+: 1521 3 6 we 
+: 1525 4 6 done,
+- 1529
+: 1533 3 8 Live 
+* 1537 3 8 it 
+: 1541 5 8 up
+- 1546
+: 1561 3 6 So 
+: 1565 3 6 live 
+: 1569 3 8 it 
+: 1573 4 8 up,
+- 1577
+: 1581 3 6 Live 
+: 1585 3 8 it 
+: 1589 4 10 up,
+- 1593
+: 1597 5 6 Go 
+: 1605 5 6 go 
+: 1613 5 6 go 
+: 1621 5 6 go 
+: 1629 5 6 go 
+: 1637 5 6 go 
+: 1645 5 6 go 
+: 1653 5 6 go 
+: 1661 5 6 go
+- 1666
+F 1681 3 6 Make 
+F 1685 3 6 love,
+- 1688
+F 1697 3 6 Don’t 
+F 1701 3 6 fight,
+- 1704 1712
+- 1712
+F 1729 3 6 Let’s 
+F 1733 3 6 hook 
+F 1737 1 6 to
+F 1739 3 6 night
+- 1742 1840
+- 1840
+F 1857 3 6 Let’s 
+F 1861 3 6 hook 
+F 1865 1 6 to
+F 1867 3 6 night
+- 1870 1976
+- 1976
+: 1993 3 6 Turn 
+: 1997 3 6 up 
+: 2001 1 6 this 
+: 2005 3 6 mu
+: 2009 3 6 tha
+- 2012
+: 2025 3 6 And 
+: 2029 3 6 let 
+: 2033 3 5 it 
+: 2037 5 3 play
+- 2042
+: 2055 1 6 I 
+: 2057 1 6 know 
+: 2059 1 6 you 
+: 2061 3 6 like 
+: 2065 3 6 my 
+* 2069 3 6 bum
+: 2073 5 6 per
+- 2078
+: 2089 3 6 Don’t 
+: 2093 3 6 be 
+: 2097 1 5 a
+: 2101 5 3 shamed
+- 2106
+: 2121 3 6 Don’t 
+: 2125 3 6 e
+* 2129 3 6 ven 
+: 2133 3 8 won
+: 2137 5 8 der
+- 2142
+: 2153 1 6 It’s 
+: 2157 1 6 just 
+: 2161 1 6 a 
+: 2165 7 8 game
+- 2172
+: 2185 3 3 We 
+: 2189 3 3 ro
+: 2193 3 6 cking 
+* 2197 3 10 bo
+: 2201 3 10 dy 
+* 2205 3 6 to 
+: 2209 3 8 bo
+: 2213 1 8 dy,
+- 2214
+: 2217 1 8 Let’s 
+: 2221 3 8 go 
+: 2225 1 6 in
+: 2229 5 3 sane
+- 2234
+: 2249 3 6 I 
+* 2253 3 6 hit 
+* 2257 1 6 the 
+: 2261 5 6 spo
+: 2269 3 3 tlight,
+- 2272
+: 2277 5 6 All 
+: 2285 4 3 night,
+- 2289
+: 2293 2 6 Rea
+: 2297 2 6 dy 
+: 2301 2 6 to 
+: 2305 2 6 go
+- 2307
+: 2313 3 6 Give 
+: 2317 3 6 you 
+: 2321 1 6 a 
+: 2325 5 6 hard 
+: 2333 3 3 night,
+- 2336
+: 2341 5 6 So 
+: 2349 3 3 tight,
+- 2352
+: 2357 2 6 Rea
+: 2361 2 6 dy 
+: 2365 2 6 to 
+: 2369 2 6 blow
+- 2371
+: 2377 3 6 I’m 
+: 2381 3 6 in 
+: 2385 1 6 the 
+: 2389 5 6 spo
+: 2397 3 3 tlight,
+- 2400
+: 2405 5 6 All 
+: 2413 4 3 night,
+- 2417
+: 2421 2 6 Rea
+: 2425 2 6 dy 
+: 2429 2 6 to 
+: 2433 2 6 go
+- 2435
+: 2441 3 6 Give 
+* 2445 3 6 you 
+: 2449 1 6 a 
+: 2453 5 6 hard 
+: 2461 3 3 night,
+- 2464
+: 2469 5 6 So 
+: 2477 3 3 tight,
+- 2480
+: 2485 3 3 Rea
+: 2489 3 3 dy 
+: 2493 1 6 to
+- 2494
+F 2497 16 10 Blow
+- 2513
+: 2517 11 6 Oh
+: 2529 4 1 ~
+- 2533
+: 2537 3 10 We 
+: 2541 3 10 can 
+* 2545 3 10 do 
+: 2549 3 11 a
+: 2553 3 10 ny
+: 2557 3 8 thing 
+: 2561 3 6 we 
+: 2565 4 6 want
+- 2569
+: 2573 3 8 Live 
+: 2577 3 8 it 
+: 2581 5 8 up,
+- 2586
+: 2601 3 6 So 
+: 2605 3 6 live 
+: 2609 3 8 it 
+: 2613 4 8 up,
+- 2617
+: 2621 3 6 Live 
+: 2625 3 8 it 
+: 2629 5 10 up, 
+: 2637 4 6 go,
+- 2641
+: 2645 11 6 Oh
+: 2657 3 1 ~
+- 2660
+: 2665 3 10 And 
+: 2669 3 10 we 
+: 2673 1 10 ain’t 
+: 2677 3 11 stop
+: 2681 3 10 ping 
+: 2685 3 8 till 
+: 2689 3 6 we 
+: 2693 4 6 done,
+- 2697
+: 2701 3 8 Live 
+: 2705 3 8 it 
+: 2709 5 8 up
+- 2714
+* 2729 3 6 So 
+: 2733 3 6 live 
+: 2737 3 8 it 
+: 2741 4 8 up,
+- 2745
+: 2749 3 6 Live 
+: 2753 3 8 it 
+: 2757 4 10 up,
+- 2761
+: 2765 5 6 Go 
+: 2773 5 6 go 
+: 2781 5 6 go 
+: 2789 5 6 go 
+: 2797 5 6 go 
+: 2805 5 6 go 
+: 2813 5 6 go 
+: 2821 5 6 go 
+: 2829 5 6 go
+- 2834
+F 2849 3 6 Make 
+F 2853 3 6 love,
+- 2856
+F 2865 3 6 Don’t 
+F 2869 3 6 fight,
+- 2872 2880
+- 2880
+F 2897 3 6 Let’s 
+F 2901 3 6 hook 
+F 2905 1 6 to
+F 2907 3 6 night
+- 2910 3008
+- 3008
+F 3025 3 6 Let’s 
+F 3029 3 6 hook 
+F 3033 1 6 to
+F 3035 3 6 night
+- 3038 3170
+- 3170
+F 3187 1 6 You 
+F 3189 3 6 name 
+F 3193 1 6 it 
+F 3195 3 6 she’s 
+F 3199 1 6 done 
+F 3201 3 6 it
+- 3204
+F 3219 1 6 She’s 
+F 3221 1 6 the 
+F 3223 3 6 rea
+F 3227 1 6 son 
+F 3229 1 6 that 
+F 3231 1 6 wo
+F 3233 1 6 men 
+F 3235 1 6 run 
+F 3237 3 6 it
+- 3240
+F 3251 3 6 Bet 
+F 3255 3 6 this 
+F 3259 1 6 on 
+F 3261 1 6 a 
+F 3263 3 6 gram
+F 3267 3 6 my
+- 3270
+F 3281 3 6 Maybe 
+F 3285 1 6 now 
+F 3287 1 6 you 
+F 3289 1 6 un
+F 3291 1 6 ders
+F 3293 3 6 tand 
+F 3297 1 6 me
+- 3298
+F 3301 3 6 Clap 
+F 3305 1 6 your 
+F 3307 2 6 hands,
+- 3309
+F 3313 3 6 Go 
+F 3317 3 6 clap 
+F 3321 1 6 your 
+F 3323 2 6 hands,
+- 3325
+F 3329 3 6 Go 
+F 3333 3 6 clap 
+F 3337 1 6 your 
+F 3339 2 6 hands,
+- 3341
+F 3345 1 6 To 
+F 3347 1 6 the 
+F 3349 5 6 beat
+- 3354
+F 3365 3 6 Clap 
+F 3369 1 6 your 
+F 3371 2 6 hands,
+- 3373
+F 3377 3 6 Go 
+F 3381 3 6 clap 
+F 3385 1 6 your 
+F 3387 2 6 hands,
+- 3389
+F 3393 3 6 Go 
+F 3397 3 6 clap 
+F 3401 1 6 your 
+F 3403 2 6 hands,
+- 3405
+F 3409 1 6 To 
+F 3411 1 6 the 
+F 3413 5 6 beat
+- 3418
+F 3429 3 6 Clap 
+F 3433 1 6 your 
+F 3435 2 6 hands,
+- 3437
+F 3441 3 6 Go 
+F 3445 3 6 clap 
+F 3449 1 6 your 
+F 3451 2 6 hands,
+- 3453
+F 3457 3 6 Go 
+F 3461 3 6 clap 
+F 3465 1 6 your 
+F 3467 2 6 hands,
+- 3469
+F 3473 1 6 To 
+F 3475 1 6 the 
+F 3477 5 6 beat
+- 3482
+: 3493 11 6 Oh
+: 3505 4 1 ~
+- 3509
+: 3513 3 10 We 
+* 3517 3 10 can 
+: 3521 3 10 do 
+* 3525 3 11 a
+: 3529 3 10 ny
+: 3533 3 8 thing 
+* 3537 3 6 we 
+: 3541 4 6 want
+- 3545
+: 3549 3 8 Live 
+: 3553 3 8 it 
+: 3557 5 8 up,
+- 3562
+: 3577 3 6 So 
+* 3581 3 6 live 
+: 3585 3 8 it 
+: 3589 4 8 up,
+- 3593
+: 3597 3 6 Live 
+: 3601 3 8 it 
+: 3605 5 10 up, 
+: 3613 4 6 go,
+- 3617
+: 3621 11 6 Oh
+: 3633 3 1 ~
+- 3636
+: 3641 3 10 And 
+: 3645 3 10 we 
+: 3649 1 10 ain’t 
+: 3653 3 11 stop
+: 3657 3 10 ping 
+* 3661 3 8 till 
+: 3665 3 6 we 
+: 3669 4 6 done,
+- 3673
+: 3677 3 8 Live 
+: 3681 3 8 it 
+: 3685 5 8 up
+- 3690
+: 3705 3 6 So 
+: 3709 3 6 live 
+: 3713 3 8 it 
+: 3717 4 8 up,
+- 3721
+: 3725 3 6 Live 
+: 3729 3 8 it 
+: 3733 4 10 up,
+- 3737
+: 3741 5 6 Go 
+: 3749 5 6 go 
+: 3757 5 6 go 
+: 3765 5 6 go 
+: 3773 5 6 go 
+: 3781 5 6 go 
+* 3789 1 6 go
+- 3790
+F 3793 3 6 Let’s 
+F 3797 3 6 hook 
+F 3801 1 6 to
+F 3803 7 6 night
+- 3810 3904
+- 3904
+F 3921 3 6 Let’s 
+F 3925 3 6 hook 
+F 3929 1 6 to
+F 3931 7 6 night
+E
