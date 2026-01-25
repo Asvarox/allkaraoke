@@ -187,12 +187,13 @@ export default function ConvertView({ song }: Props) {
 
   const saveSong = async () => {
     setIsSaving(true);
-    await SongDao.store(finalSong!);
     if (redirect) {
       // dont wait for the share to finish if redirect is set
+      SongDao.store(finalSong!);
       shareSong(finalSong!.id);
-      navigate(redirect);
+      navigate(`${redirect}?previousSongId=${finalSong!.id}`);
     } else {
+      await SongDao.store(finalSong!);
       await shareSong(finalSong!.id);
       navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
     }
