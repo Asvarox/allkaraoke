@@ -1,0 +1,204 @@
+#ARTIST:Michael Jackson
+#TITLE:Ben
+#CREATOR:ultrastarsongs
+#BPM:273,2
+#YEAR:1972
+#VIDEO:v=i7TTSzfs2kw
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:13601,713030746705
+#ALLKARAOKE_ID:michael-jackson-ben
+#ALLKARAOKE_SID:5584
+#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:33.244Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:Michael Jackson - Ben
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Michael Jackson - Ben.mp3
+: 18 17 12 Ben 
+: 40 4 14 the 
+: 50 6 12 two 
+: 58 4 11 of 
+: 63 3 12 us 
+: 71 6 14 need 
+: 81 5 12 look 
+: 90 6 19 no 
+: 98 30 19 more
+- 128
+: 146 16 12 We 
+: 168 5 14 both 
+: 178 6 12 found 
+: 186 5 11 what 
+: 194 3 12 we 
+: 199 6 14 were 
+: 210 5 12 look
+: 219 5 22 ing 
+* 227 27 22 for
+- 254 258
+- 258
+: 276 15 9 With 
+: 299 4 10 a 
+: 307 6 9 friend 
+: 315 3 8 to 
+: 320 6 9 call 
+: 328 11 10 my 
+: 344 11 9 own
+- 355
+: 363 5 10 I’ll 
+: 371 4 9 ne
+: 377 5 8 ver 
+: 385 6 9 be 
+: 393 5 10 a
+: 403 14 9 lone
+- 417
+: 427 4 10 And 
+: 435 5 9 you 
+: 443 4 8 my 
+: 451 5 9 friend 
+: 459 7 10 will 
+: 472 12 7 see
+- 484
+: 491 4 9 You’ve 
+: 499 4 7 got 
+: 505 3 6 a 
+: 511 6 7 friend 
+* 520 14 9 in 
+: 539 3 9 me
+: 543 3 7 ~
+: 547 25 5 ~
+- 572 640
+- 640
+: 658 17 12 Ben 
+: 682 5 13 you’re 
+: 690 6 12 al
+: 698 5 11 ways 
+: 706 4 12 run
+: 711 7 13 ning 
+: 722 6 12 here 
+: 730 5 19 and 
+* 738 24 19 there
+- 762 767
+- 767
+: 785 18 12 You 
+: 808 5 13 feel 
+: 816 5 12 you’re 
+: 824 4 11 not 
+: 832 4 12 wan
+: 840 4 13 ted 
+: 857 3 12 an
+: 861 8 22 y
+: 871 33 22 where
+- 904
+: 914 18 9 If 
+: 936 5 10 you 
+: 944 5 9 e
+: 952 5 8 ver 
+: 960 4 9 look 
+: 967 3 10 be
+: 972 16 9 hind
+- 988
+: 999 4 10 And 
+: 1007 4 9 don’t 
+: 1015 5 8 like 
+: 1023 4 9 what 
+* 1031 8 14 you 
+: 1043 10 9 find
+- 1053
+: 1063 4 10 There’s 
+: 1071 3 9 some
+: 1078 3 8 thing 
+: 1083 3 9 you 
+: 1090 6 10 should 
+: 1101 14 7 know
+- 1115
+: 1125 4 9 You’ve 
+: 1133 5 7 got 
+: 1140 3 6 a 
+: 1145 5 7 place 
+: 1154 17 9 to 
+: 1174 3 9 go
+: 1178 3 7 ~
+: 1182 20 5 ~
+- 1202 1269
+- 1269
+: 1287 5 5 I 
+: 1295 4 7 used 
+: 1303 5 12 to 
+* 1311 37 12 say, 
+: 1359 7 4 I 
+: 1367 5 9 and 
+: 1375 34 9 me
+- 1409
+: 1423 7 2 Now 
+: 1432 4 7 it’s 
+: 1440 32 7 us, 
+: 1488 6 0 now 
+: 1496 4 5 it’s 
+* 1504 32 5 we
+- 1536 1795
+- 1795
+: 1813 14 12 Ben 
+: 1833 5 14 most 
+: 1844 5 12 peo
+: 1852 4 11 ple 
+: 1860 4 12 would 
+: 1868 5 14 turn 
+: 1876 4 12 you 
+: 1884 5 19 a
+: 1892 26 19 way
+- 1918 1922
+- 1922
+: 1940 16 12 I 
+: 1961 5 14 don’t 
+: 1971 4 12 lis
+: 1979 4 11 ten 
+: 1988 3 12 to 
+: 1995 5 14 a 
+: 2003 5 12 word 
+: 2012 4 22 they 
+: 2020 45 22 say
+- 2065
+* 2068 17 12 They 
+: 2090 5 14 don’t 
+: 2100 5 12 see 
+: 2108 4 11 you 
+: 2115 4 12 as 
+: 2122 5 14 I
+: 2129 5 12 ~ 
+: 2137 8 12 do
+- 2145
+: 2156 5 14 I 
+: 2164 4 12 wish 
+: 2172 4 11 they 
+: 2179 5 12 would 
+: 2187 7 14 try
+: 2195 5 10 ~ 
+: 2203 10 10 to
+- 2213
+: 2219 5 12 I’m 
+: 2227 6 10 sure 
+: 2236 7 9 they’d 
+: 2248 4 10 think 
+: 2253 4 12 a
+* 2259 9 9 gain
+- 2268
+: 2275 5 5 If 
+: 2284 6 8 they 
+: 2294 6 7 had 
+: 2303 5 7 a 
+: 2313 6 7 friend 
+: 2324 5 0 like 
+: 2335 18 5 Ben
+- 2353 2428
+- 2428
+: 2446 6 9 Like
+: 2455 4 7 ~ 
+: 2463 3 7 Ben
+: 2468 14 5 ~
+- 2482 2577
+- 2577
+: 2595 6 7 Like 
+* 2606 11 9 Ben
+: 2618 3 7 ~
+: 2622 22 5 ~
+E

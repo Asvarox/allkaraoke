@@ -1,0 +1,144 @@
+#ARTIST:Groove Coverage
+#TITLE:Last Unicorn
+#CREATOR:karmidi
+#BPM:280,6
+#YEAR:2002
+#VIDEO:v=IBtvAA0o3sY
+#LANGUAGE:English
+#GAP:2484,3193157519604
+#ALLKARAOKE_ID:groove-coverage-last-unicorn
+#ALLKARAOKE_SID:5625
+#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:44.377Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:30
+#ALLKARAOKE_SOURCEURL:Groove Coverage - Last Unicorn
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Groove Coverage - Last Unicorn.mp3
+: 19 3 15 When 
+: 24 2 17 the 
+: 30 9 18 last 
+: 47 6 17 ea
+: 55 2 15 gle 
+: 61 8 15 flies
+- 69
+: 77 4 15 O
+: 82 2 13 ver 
+: 85 3 17 the 
+: 92 11 15 last 
+: 110 5 15 crum
+: 119 2 13 bling 
+: 123 6 17 moun
+: 133 8 13 tain
+- 141
+: 149 2 15 And 
+: 153 2 17 the 
+: 158 9 18 last 
+: 173 6 17 li
+: 183 4 15 on 
+: 189 8 15 roars
+- 197
+: 213 2 13 At 
+: 217 2 17 the 
+: 222 9 15 last 
+: 239 4 15 dus
+: 246 2 13 ty 
+: 251 6 17 foun
+: 261 6 13 tain
+- 267
+: 277 2 15 In 
+: 281 2 17 the 
+: 287 4 18 sha
+: 293 4 18 dows 
+: 301 4 18 of 
+: 310 3 17 the 
+: 318 4 13 fo
+: 325 4 13 rest
+- 329
+: 343 2 10 Though 
+: 347 2 13 she 
+: 351 6 15 may 
+: 359 4 15 be 
+: 365 4 15 old 
+: 375 4 13 and 
+: 381 8 13 worn
+- 389
+: 407 2 10 They 
+: 410 2 11 will 
+: 415 8 13 stare 
+: 427 6 15 un
+: 435 2 11 be
+: 439 6 13 lie
+: 447 6 13 ving
+- 453
+: 471 2 10 At 
+: 475 2 11 the 
+: 481 7 13 last 
+: 491 6 18 u
+: 499 2 20 ni
+* 505 22 20 corn
+- 527 2472
+- 2472
+: 2491 2 15 When 
+: 2495 2 17 the 
+: 2500 7 18 first 
+: 2515 4 17 breath 
+: 2523 4 15 of 
+: 2531 4 15 win
+: 2541 4 15 ter
+- 2545
+: 2555 2 13 To 
+: 2559 2 17 the 
+: 2564 11 15 flo
+: 2579 4 15 wers 
+: 2587 2 13 is 
+: 2591 6 17 ic
+: 2601 8 13 y
+- 2609
+: 2619 2 15 And 
+: 2623 2 17 you 
+: 2627 8 18 look 
+: 2641 6 17 to 
+: 2651 2 15 the 
+: 2657 8 15 north
+- 2665
+: 2683 2 13 And 
+: 2687 2 17 a 
+: 2692 11 15 pale 
+: 2707 6 15 moon 
+: 2715 2 13 is 
+: 2721 4 17 ri
+: 2731 6 13 sing
+- 2737
+: 2747 2 15 And 
+: 2751 2 17 it 
+: 2757 4 18 seems 
+: 2765 4 18 like 
+: 2773 4 18 all 
+: 2781 2 17 is 
+: 2789 4 13 dy
+: 2796 5 13 ing
+- 2801
+: 2811 2 10 And 
+: 2815 2 13 would 
+: 2821 4 15 leave 
+: 2827 4 15 the 
+: 2833 4 15 world 
+: 2847 2 13 to 
+: 2853 8 13 mourn
+- 2861
+: 2875 2 10 In 
+: 2879 2 11 the 
+: 2884 3 13 dis
+* 2891 4 6 tance 
+: 2899 4 10 hear 
+: 2906 2 11 the 
+: 2911 5 13 laugh
+: 2921 6 13 ter
+- 2927
+: 2939 2 10 Of 
+: 2944 2 11 the 
+: 2950 6 13 last 
+: 2961 4 15 u
+: 2969 2 13 ni
+* 2975 20 13 corn
+E

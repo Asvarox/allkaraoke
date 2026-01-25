@@ -1,0 +1,293 @@
+#ARTIST:T.Rex
+#TITLE:Ride A White Swan
+#CREATOR:Fepo
+#BPM:297,26
+#YEAR:1971
+#VIDEO:v=tHom-7eL_DA
+#GENRE:Glam Rock
+#LANGUAGE:English
+#GAP:3280,7824799838527
+#ALLKARAOKE_ID:trex-ride-a-white-swan
+#ALLKARAOKE_SID:5592
+#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:34.005Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:27
+#ALLKARAOKE_SOURCEURL:T.Rex - Ride A White Swan
+#ALLKARAOKE_VOLUME:0,5
+#MP3:T.Rex - Ride A White Swan.mp3
+#COVER:T.Rex - Ride A White Swan [CO].jpg
+#BACKGROUND:T.Rex - Ride A White Swan [BG].jpg
+: 20 44 8 Uh
+- 64
+: 68 4 3 Ride 
+: 74 2 6 it 
+: 78 4 8 on 
+: 84 7 8 out 
+: 93 3 8 like 
+: 98 2 3 a 
+: 101 7 8 bird 
+: 110 3 8 in 
+: 115 2 3 the 
+: 118 6 5 sky 
+: 126 6 8 ways
+- 132
+: 133 5 -4 Ride 
+: 140 2 -4 it 
+: 143 2 -4 on 
+: 147 6 -4 out 
+: 157 4 -4 like 
+: 163 2 -4 it 
+: 167 3 -1 you 
+: 172 2 0 were 
+: 176 2 0 a 
+: 180 10 0 bird
+- 190
+: 200 3 3 Fly 
+: 205 2 5 it 
+: 209 3 7 all 
+: 214 6 8 out 
+: 224 4 8 like 
+: 230 2 8 an 
+: 233 2 8 ea
+: 237 2 8 gle 
+: 241 2 8 in 
+: 245 2 3 a 
+: 249 6 5 sun
+: 257 5 8 beam
+- 262
+: 265 4 -4 Ride 
+: 271 2 -4 it 
+: 274 3 -4 on 
+: 279 8 0 out 
+: 289 3 0 like 
+: 294 2 -4 that 
+: 297 2 -2 you 
+: 301 3 -2 were 
+: 306 2 -2 a 
+: 310 20 -4 bird
+- 330 406
+- 406
+: 426 3 -9 Wear 
+: 431 2 -7 a 
+: 435 4 -6 tall 
+: 441 5 -4 hat 
+: 450 3 -4 like 
+: 455 2 -4 a 
+: 459 2 -4 dru
+: 463 2 -4 id 
+: 467 2 -4 in 
+: 471 2 -7 the 
+: 475 5 -7 old 
+: 482 6 -4 days
+- 488
+: 492 2 -4 Wear 
+: 496 2 -4 a 
+: 500 2 -4 tall 
+: 504 5 -4 hat
+- 509
+: 517 2 -4 And 
+: 521 2 -4 a 
+: 525 2 -2 ta
+* 529 6 0 tooed 
+: 537 14 0 gown
+- 551
+: 557 2 -9 Ride 
+: 561 2 -9 a 
+* 565 4 -7 white 
+* 572 7 -4 swan 
+: 581 2 -4 like 
+: 585 2 -4 the 
+: 589 2 -4 peo
+: 593 2 -4 ple 
+: 597 2 -4 of 
+: 601 2 -9 the 
+: 605 5 -7 Bel
+: 612 7 -4 tane
+- 619
+: 621 2 -4 Wear 
+: 625 2 -4 your 
+: 629 2 -4 hair 
+* 633 10 0 long, 
+: 645 3 0 babe 
+: 650 2 -4 you 
+: 653 3 -2 can't 
+: 658 6 -2 go 
+: 666 18 -4 wrong
+- 684 762
+- 762
+: 782 2 -4 Catch 
+: 786 2 -4 a 
+: 790 6 -7 bright 
+: 798 7 -4 star 
+: 807 3 -4 and 
+: 811 2 -4 you 
+: 815 3 -4 place 
+: 820 2 -4 it 
+: 823 3 -4 on 
+: 827 2 -9 your 
+: 831 3 -9 fo
+: 835 2 -7 ~re
+: 839 5 -4 head
+- 844
+: 847 2 -4 Say 
+: 851 2 -4 a 
+: 855 3 -4 few 
+: 860 6 -4 spells 
+: 868 2 -4 and 
+: 872 2 -4 ba
+: 876 2 -4 by, 
+: 880 3 -2 there 
+: 884 3 0 you 
+: 888 15 0 go
+- 903
+: 912 2 3 Take 
+: 916 2 3 a 
+: 920 6 5 black 
+: 928 6 8 cat 
+: 937 6 8 and 
+: 945 2 8 sit 
+: 949 2 8 it 
+: 953 2 8 on 
+: 957 2 5 your 
+: 961 6 5 shoul
+: 969 7 8 der
+- 976
+: 980 2 8 And 
+: 984 2 8 in 
+: 988 2 8 the 
+: 992 2 10 mor
+: 996 2 12 ning 
+: 1000 2 12 you'll 
+: 1004 2 12 know 
+: 1008 2 10 all 
+: 1012 6 10 you 
+: 1020 20 8 know,
+- 1040
+* 1052 17 8 Oh
+- 1069 1356
+- 1356
+: 1376 109 8 Uh
+- 1485
+: 1489 2 8 Wear 
+: 1493 2 5 a 
+: 1497 6 8 tall 
+: 1505 6 8 hat 
+: 1514 3 8 like 
+: 1519 2 5 a 
+: 1522 3 8 dru
+: 1526 2 8 id 
+: 1530 2 8 in 
+: 1534 2 5 the 
+: 1538 6 5 old 
+: 1546 5 8 days
+- 1551
+: 1555 2 -4 Wear 
+: 1559 2 -4 a 
+: 1563 4 -4 tall 
+: 1569 3 -4 hat 
+: 1578 3 -4 and 
+: 1583 2 -4 a 
+: 1587 2 -2 ta
+: 1591 4 0 tooed 
+: 1597 14 0 gown
+- 1611
+: 1617 2 3 Ride 
+: 1621 2 3 a 
+: 1625 4 5 white 
+: 1633 7 8 swan 
+: 1642 2 8 like 
+: 1646 2 8 the 
+: 1650 2 8 peo
+: 1654 2 8 ple 
+: 1658 2 8 of 
+: 1662 2 8 the 
+: 1666 5 5 Bel
+: 1673 6 8 tane
+- 1679
+: 1683 2 8 Wear 
+: 1687 2 8 your 
+: 1691 3 8 hair 
+: 1696 2 10 lo
+: 1700 3 12 ~ng, 
+: 1706 3 12 babe 
+: 1711 2 8 you 
+: 1715 2 10 can't 
+: 1719 6 10 go 
+: 1727 17 8 wrong
+- 1744 1941
+- 1941
+: 1961 2 -4 Da 
+: 1964 2 -4 da 
+: 1968 4 -2 di 
+: 1974 4 0 di 
+: 1980 16 -4 da
+- 1996 2004
+- 2004
+: 2024 2 -4 Da 
+: 2027 2 -4 da 
+: 2031 4 -2 di 
+: 2037 4 0 di 
+: 2043 16 -4 da
+- 2059 2065
+- 2065
+: 2085 2 -4 Da 
+: 2088 2 -4 da 
+: 2092 4 -2 di 
+: 2098 4 0 di 
+: 2104 8 -4 da
+- 2112
+: 2117 2 -4 Da 
+: 2120 2 -4 da 
+: 2124 4 -2 di 
+: 2130 4 0 di 
+: 2136 9 -4 da
+- 2145
+: 2149 2 -4 Da 
+: 2152 2 -4 da 
+: 2156 4 -2 di 
+: 2162 4 0 di 
+: 2168 6 -4 da
+- 2174
+: 2179 2 -4 Da 
+: 2182 2 -4 da 
+: 2186 4 -2 di 
+: 2192 4 0 di 
+: 2198 7 -4 da
+- 2205
+: 2210 2 -4 Da 
+: 2213 2 -4 da 
+: 2217 4 -2 di 
+: 2223 4 0 di 
+: 2229 10 -4 da
+- 2239
+: 2241 2 -4 Da 
+: 2244 2 -4 da 
+: 2248 4 -2 di 
+: 2254 4 0 di 
+: 2260 10 -4 da
+- 2270
+: 2273 2 -4 Da 
+: 2276 2 -4 da 
+: 2280 4 -2 di 
+: 2286 4 0 di 
+: 2292 9 -4 da
+- 2301
+: 2303 2 -4 Da 
+: 2306 2 -4 da 
+: 2310 4 -2 di 
+: 2316 4 0 di 
+: 2322 8 -4 da
+- 2330
+: 2333 2 -4 Da 
+: 2336 2 -4 da 
+: 2340 4 -2 di 
+: 2346 4 0 di 
+: 2352 8 -4 da
+- 2360 2375
+- 2375
+: 2395 2 -4 Da 
+: 2398 2 -4 da 
+: 2402 4 -2 di 
+: 2408 4 0 di 
+: 2414 9 -4 da
+E
