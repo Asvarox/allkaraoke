@@ -1,0 +1,747 @@
+#ARTIST:Scatman John
+#TITLE:Scatman (Ski-Ba-Bop-Ba-Dop-Bop)
+#CREATOR:rafallus
+#BPM:272,02
+#YEAR:1994
+#VIDEO:v=Hy8kmNEo1i8
+#LANGUAGE:English
+#GAP:4797,42592456437
+#ALLKARAOKE_ID:scatman-john-scatman-ski-ba-bop-ba-dop-bop
+#ALLKARAOKE_SID:5611
+#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:35.750Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:Scatman John - Scatman (Ski-Ba-Bop-Ba-Dop-Bop)
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Scatman John - Scatman (Ski-Ba-Bop-Ba-Dop-Bop).mp3
+: 18 2 5 I’m 
+: 22 2 7 the 
+: 26 4 8 Scat
+: 34 4 5 man!
+- 38
+: 42 2 10 Ski 
+: 45 1 10 ba 
+: 47 1 10 bop 
+: 49 1 10 da 
+: 51 1 10 bop 
+: 55 2 10 da 
+: 59 1 10 bop 
+: 61 3 10 da 
+: 66 2 10 bop,
+- 68
+: 86 2 10 Ba 
+: 90 1 10 dop 
+: 92 3 10 ba 
+: 97 2 10 dop,
+- 99
+: 106 2 10 Ski 
+: 109 1 10 ba 
+: 111 1 10 bop 
+: 113 1 10 da 
+: 115 1 10 bop 
+: 119 2 10 da 
+: 123 1 10 bop 
+: 125 3 10 da 
+: 130 2 10 bop,
+- 132 144
+- 144
+: 162 2 5 I’m 
+: 166 2 7 the 
+: 170 4 8 Scat
+: 178 6 5 man!
+- 184 196
+- 196
+: 214 2 10 Ba 
+: 218 1 10 dop 
+: 220 3 10 ba 
+: 225 2 10 dop,
+- 227
+: 234 2 10 Ski 
+: 237 1 10 ba 
+: 239 1 10 bop 
+: 241 1 10 da 
+: 243 1 10 bop 
+: 247 2 10 da 
+: 251 1 10 bop 
+: 253 3 10 da 
+: 258 2 10 bop,
+- 260
+: 278 2 10 Ba 
+: 282 1 10 dop 
+: 284 3 10 ba 
+: 289 2 10 dop,
+- 291
+: 298 6 8 Ski 
+: 306 2 7 ba 
+: 310 2 8 dop 
+: 314 2 7 ba 
+: 317 2 5 dop 
+: 322 2 0 bop,
+- 324
+: 338 2 7 Ba 
+: 342 2 8 dop 
+: 346 2 7 ba 
+: 349 2 5 dop 
+: 354 2 0 bop,
+- 356
+: 362 6 8 Ski 
+: 370 2 7 ba 
+: 374 2 8 dop 
+: 378 2 7 ba 
+: 381 2 3 dop 
+: 386 2 -2 bop,
+- 388
+: 402 2 7 Ba 
+: 406 2 8 dop 
+: 410 2 7 ba 
+: 413 2 5 dop,
+- 415
+: 426 6 8 Ski 
+: 434 2 7 ba 
+: 438 2 8 dop 
+: 442 2 7 ba 
+: 445 2 5 dop 
+: 450 2 0 bop,
+- 452
+: 466 2 7 Ba 
+: 470 2 8 dop 
+: 474 2 7 ba 
+: 477 2 5 dop 
+: 482 2 0 bop,
+- 484
+: 490 6 8 Ski 
+: 498 2 7 ba 
+: 502 2 8 dop 
+: 506 2 7 ba 
+: 509 2 3 dop 
+: 514 2 -2 bop,
+- 516
+: 530 2 7 Ba 
+: 534 2 8 dop 
+: 538 2 7 ba 
+: 541 2 3 dop 
+: 546 2 -2 bop,
+- 548 664
+- 664
+F 682 1 4 Eve
+F 684 1 4 ry
+F 686 1 4 bo
+F 688 1 4 dy 
+F 690 1 4 stutt
+F 692 1 4 ers 
+F 694 2 4 one 
+F 698 1 4 way 
+F 700 1 4 or 
+F 702 1 4 the 
+F 704 2 4 o
+F 708 1 4 ther,
+- 709
+F 710 1 4 So 
+F 712 2 4 check 
+F 716 2 4 out 
+F 720 1 4 my 
+F 722 1 4 mess
+F 724 2 4 age 
+F 728 1 4 to 
+F 730 2 4 you!
+- 732
+F 742 1 4 As 
+F 744 1 4 a 
+F 746 1 4 matt
+F 748 1 4 er 
+F 750 1 4 of 
+F 752 2 4 fact,
+- 754
+F 758 1 4 Don’t 
+F 760 1 4 let 
+F 762 1 4 no
+F 764 1 4 thin’ 
+F 766 1 4 hold 
+F 768 1 4 you 
+F 770 2 4 back,
+- 772
+F 774 1 4 If 
+F 776 1 4 the 
+F 778 2 4 Scat
+F 782 2 4 man 
+F 786 1 4 can 
+F 788 1 4 do 
+F 790 2 4 it,
+- 792
+F 794 2 4 So 
+F 798 2 4 can 
+F 802 2 4 you!
+- 804
+F 810 1 4 Eve
+F 812 1 4 ry
+F 814 1 4 bo
+F 816 1 4 dy’s 
+F 818 1 4 say
+F 820 1 4 in’, 
+F 822 1 4 that 
+F 824 1 4 the 
+F 826 2 4 Scat
+F 830 2 4 man 
+F 834 1 4 stutt
+F 836 1 4 ers,
+- 837
+F 838 1 4 But 
+F 840 2 4 does
+F 844 1 4 n’t 
+F 846 1 4 ev
+F 848 1 4 er 
+F 850 1 4 stutt
+F 852 1 4 er, 
+F 854 1 4 when 
+F 856 1 4 he 
+F 858 6 4 sings!
+- 864
+F 872 1 4 But 
+F 874 1 4 what 
+F 876 1 4 you 
+F 878 2 4 don’t 
+F 882 2 4 know, 
+F 886 1 4 I’m 
+F 888 1 4 gon
+F 890 1 4 na 
+F 892 1 4 tell 
+F 894 1 4 you 
+F 896 1 4 right 
+F 898 2 4 now,
+- 900
+F 902 1 4 That 
+F 904 1 4 the 
+F 906 1 4 stutt
+F 908 1 4 er 
+F 910 1 4 and 
+F 912 1 4 the 
+F 914 2 4 scat 
+F 918 1 4 is 
+F 920 1 4 the 
+F 922 2 4 same 
+F 926 2 4 thing!
+- 928
+F 932 1 4 Yo, 
+F 934 1 4 I’m 
+F 936 2 4 the 
+F 940 2 4 Scat
+F 944 6 4 man!
+- 950 976
+- 976
+F 994 2 4 Where’s 
+F 998 2 4 the 
+F 1002 6 4 Scat
+F 1010 6 4 man?
+- 1016
+F 1026 2 4 I’m 
+F 1030 2 4 the 
+F 1034 6 4 Scat
+F 1042 6 4 man!
+- 1048
+F 1066 1 4 Why 
+F 1068 1 4 should 
+F 1070 1 4 we 
+F 1072 1 4 be 
+F 1074 1 4 pleas
+F 1076 1 4 in’ 
+F 1078 1 4 all 
+F 1080 1 4 the 
+F 1082 1 4 po
+F 1084 1 4 li
+F 1086 1 4 ti
+F 1088 1 4 cian 
+F 1090 1 4 heath
+F 1092 1 4 ens,
+- 1093
+F 1094 1 4 Who 
+F 1096 1 4 would 
+F 1098 1 4 try 
+F 1100 1 4 to 
+F 1102 1 4 change 
+F 1104 1 4 the 
+F 1106 1 4 sea
+F 1108 1 4 sons, 
+F 1110 1 4 if 
+F 1112 2 4 they 
+F 1116 6 4 could?
+- 1122
+F 1128 1 4 The 
+F 1130 1 4 state 
+F 1132 1 4 of 
+F 1134 1 4 the 
+F 1136 1 4 con
+F 1138 1 4 di
+F 1140 1 4 tion 
+F 1142 1 4 in
+F 1144 2 4 sults 
+F 1148 1 4 my 
+F 1150 1 4 in
+F 1152 1 4 tu
+F 1154 1 4 i
+F 1156 1 4 tions,
+- 1157
+F 1158 1 4 And 
+F 1160 1 4 it 
+F 1162 1 4 on
+F 1164 1 4 ly 
+F 1166 1 4 makes 
+F 1168 1 4 me 
+F 1170 1 4 cra
+F 1172 1 4 zy 
+F 1174 1 4 and 
+F 1176 1 4 my 
+F 1178 2 4 heart 
+F 1182 2 4 like 
+F 1186 4 4 wood!
+- 1190
+F 1194 1 4 Eve
+F 1196 1 4 ry
+F 1198 1 4 bo
+F 1200 1 4 dy 
+F 1202 1 4 stutt
+F 1204 1 4 ers 
+F 1206 2 4 one 
+F 1210 1 4 way 
+F 1212 1 4 or 
+F 1214 1 4 the 
+F 1216 2 4 o
+F 1220 1 4 ther,
+- 1221
+F 1222 1 4 So 
+F 1224 2 4 check 
+F 1228 2 4 out 
+F 1232 1 4 my 
+F 1234 1 4 mess
+F 1236 2 4 age 
+F 1240 1 4 to 
+F 1242 2 4 you!
+- 1244
+F 1254 1 4 As 
+F 1256 1 4 a 
+F 1258 1 4 matt
+F 1260 1 4 er 
+F 1262 1 4 of 
+F 1264 2 4 fact,
+- 1266
+F 1268 1 4 Don’t 
+F 1270 2 4 let 
+F 1274 1 4 no
+F 1276 1 4 thin’ 
+F 1278 1 4 hold 
+F 1280 1 4 you 
+F 1282 2 4 back,
+- 1284
+F 1286 1 4 If 
+F 1288 1 4 the 
+F 1290 2 4 Scat
+F 1294 1 4 man 
+F 1296 1 4 can 
+F 1298 1 4 do 
+F 1300 1 4 it, 
+F 1302 1 4 broth
+F 1304 1 4 er, 
+F 1306 2 4 so 
+F 1310 2 4 can 
+F 1314 2 4 you,
+- 1316
+F 1318 1 4 I’m 
+F 1320 2 4 the 
+F 1324 2 4 Scat
+F 1328 8 4 man!
+- 1336
+: 1354 6 8 Ski 
+: 1362 2 7 ba 
+: 1366 2 8 dop 
+: 1370 2 7 ba 
+: 1373 2 5 dop 
+: 1378 2 0 bop,
+- 1380
+: 1394 2 7 Ba 
+: 1398 2 8 dop 
+: 1402 2 7 ba 
+: 1405 2 5 dop 
+: 1410 2 0 bop,
+- 1412
+: 1418 6 8 Ski 
+: 1426 2 7 ba 
+: 1430 2 8 dop 
+: 1434 2 7 ba 
+: 1437 2 3 dop 
+: 1442 2 -2 bop,
+- 1444
+: 1458 2 7 Ba 
+: 1462 2 8 dop 
+: 1466 2 7 ba 
+: 1469 2 5 dop,
+- 1471
+: 1482 6 8 Ski 
+: 1490 2 7 ba 
+: 1494 2 8 dop 
+: 1498 2 7 ba 
+: 1501 2 5 dop 
+: 1506 2 0 bop,
+- 1508
+: 1522 2 7 Ba 
+: 1526 2 8 dop 
+: 1530 2 7 ba 
+: 1533 2 5 dop 
+: 1538 2 0 bop,
+- 1540
+: 1546 6 8 Ski 
+: 1554 2 7 ba 
+: 1558 2 8 dop 
+: 1562 2 7 ba 
+: 1565 2 3 dop 
+: 1570 2 -2 bop,
+- 1572
+: 1586 2 7 Ba 
+: 1590 2 8 dop 
+: 1594 2 7 ba 
+: 1597 2 3 dop 
+: 1602 2 -2 bop,
+- 1604
+: 1610 2 10 Ski 
+: 1613 1 10 ba 
+: 1615 1 10 bop 
+: 1617 1 10 da 
+: 1619 1 10 bop 
+: 1623 2 10 da 
+: 1627 1 10 bop 
+: 1629 3 10 da 
+: 1634 2 10 bop,
+- 1636
+: 1654 2 10 Ba 
+: 1658 1 10 dop 
+: 1660 3 10 ba 
+: 1665 2 10 dop,
+- 1667
+: 1674 2 10 Ski 
+: 1677 1 10 ba 
+: 1679 1 10 bop 
+: 1681 1 10 da 
+: 1683 1 10 bop 
+: 1687 2 10 da 
+: 1691 1 10 bop 
+: 1693 3 10 da 
+: 1698 2 10 bop,
+- 1700
+: 1718 2 10 Ba 
+: 1722 1 10 dop 
+: 1724 3 10 ba 
+: 1729 2 10 dop,
+- 1731
+: 1738 2 10 Ski 
+: 1741 1 10 ba 
+: 1743 1 10 bop 
+: 1745 1 10 da 
+: 1747 1 10 bop 
+: 1751 2 10 da 
+: 1755 1 10 bop 
+: 1757 3 10 da 
+: 1762 2 10 bop,
+- 1764
+: 1782 2 10 Ba 
+: 1786 1 10 dop 
+: 1788 3 10 ba 
+: 1793 2 10 dop,
+- 1795
+: 1802 2 10 Ski 
+: 1805 1 10 ba 
+: 1807 1 10 bop 
+: 1809 1 10 da 
+: 1811 1 10 bop 
+: 1815 2 10 da 
+: 1819 1 10 bop 
+: 1821 3 10 da 
+: 1826 2 10 bop,
+- 1828
+: 1846 2 10 Ba 
+: 1850 1 10 dop 
+: 1852 3 10 ba 
+: 1857 2 10 dop,
+- 1859
+F 1866 1 4 Eve
+F 1868 1 4 ry
+F 1870 1 4 bo
+F 1872 1 4 dy 
+F 1874 1 4 stutt
+F 1876 1 4 ers 
+F 1878 2 4 one 
+F 1882 1 4 way 
+F 1884 1 4 or 
+F 1886 1 4 the 
+F 1888 2 4 o
+F 1892 1 4 ther,
+- 1893
+F 1894 1 4 So 
+F 1896 2 4 check 
+F 1900 2 4 out 
+F 1904 1 4 my 
+F 1906 1 4 mess
+F 1908 2 4 age 
+F 1912 1 4 to 
+F 1914 2 4 you!
+- 1916
+F 1926 1 4 As 
+F 1928 1 4 a 
+F 1930 1 4 mat
+F 1932 1 4 ter 
+F 1934 1 4 of 
+F 1936 4 4 fact,
+- 1940
+F 1942 1 4 Don’t 
+F 1944 1 4 let 
+F 1946 1 4 no
+F 1948 1 4 thin’ 
+F 1950 1 4 hold 
+F 1952 1 4 you 
+F 1954 2 4 back,
+- 1956
+F 1958 1 4 If 
+F 1960 1 4 the 
+F 1962 2 4 Scat
+F 1966 2 4 man 
+F 1970 1 4 can 
+F 1972 1 4 do 
+F 1974 2 4 it,
+- 1976
+F 1978 2 4 So 
+F 1982 2 4 can 
+F 1986 2 4 you!
+- 1988
+F 1992 1 4 I 
+F 1994 1 4 hear 
+F 1996 1 4 you 
+F 1998 2 4 all 
+F 2002 2 4 ask 
+F 2006 1 4 ’bout 
+F 2008 1 4 the 
+F 2010 1 4 mean
+F 2012 1 4 ing 
+F 2014 1 4 of 
+F 2016 4 4 scat,
+- 2020
+F 2022 1 4 Well, 
+F 2024 2 4 I’m 
+F 2028 1 4 the 
+F 2030 2 4 pro
+F 2034 2 4 fess
+F 2038 1 4 or, 
+F 2040 1 4 and 
+F 2042 1 4 all 
+F 2044 1 4 I 
+F 2046 1 4 can 
+F 2048 2 4 tell 
+F 2052 2 4 you,
+- 2054
+F 2058 1 4 Is 
+F 2060 1 4 while 
+F 2062 1 4 you’re 
+F 2064 1 4 still 
+F 2066 1 4 sleep
+F 2068 1 4 in’,
+- 2069
+F 2070 2 4 The 
+F 2074 1 4 saints 
+F 2076 1 4 are 
+F 2078 2 4 still 
+F 2082 1 4 weep
+F 2084 2 4 in’,
+- 2086
+F 2088 1 4 Cause 
+F 2090 1 4 things, 
+F 2092 2 4 you 
+F 2096 2 4 call 
+F 2100 1 4 dead,
+- 2101
+F 2102 1 4 Have
+F 2104 1 4 n’t 
+F 2106 1 4 yet 
+F 2108 1 4 had 
+F 2110 1 4 the 
+F 2112 2 4 chance 
+F 2116 1 4 to 
+F 2118 2 4 be 
+F 2122 6 4 born,
+- 2128
+F 2146 2 4 I’m 
+F 2150 2 4 the 
+F 2154 4 4 Scat
+F 2160 6 4 man!
+- 2166 2168
+- 2168
+: 2186 6 8 Ski 
+: 2194 2 7 ba 
+: 2198 2 8 dop 
+: 2202 2 7 ba 
+: 2205 2 5 dop 
+: 2210 2 0 bop,
+- 2212
+: 2226 2 7 Ba 
+: 2230 2 8 dop 
+: 2234 2 7 ba 
+: 2237 2 5 dop 
+: 2242 2 0 bop,
+- 2244
+: 2250 6 8 Ski 
+: 2258 2 7 ba 
+: 2262 2 8 dop 
+: 2266 2 7 ba 
+: 2269 2 3 dop 
+: 2274 2 -2 bop,
+- 2276
+: 2290 2 7 Ba 
+: 2294 2 8 dop 
+: 2298 2 7 ba 
+: 2301 2 5 dop,
+- 2303
+: 2314 6 8 Ski 
+: 2322 2 7 ba 
+: 2326 2 8 dop 
+: 2330 2 7 ba 
+: 2333 2 5 dop 
+: 2338 2 0 bop,
+- 2340
+: 2354 2 7 Ba 
+: 2358 2 8 dop 
+: 2362 2 7 ba 
+: 2365 2 5 dop 
+: 2370 2 0 bop,
+- 2372
+: 2378 6 8 Ski 
+: 2386 2 7 ba 
+: 2390 2 8 dop 
+: 2394 2 7 ba 
+: 2397 2 3 dop 
+: 2402 2 -2 bop,
+- 2404
+: 2418 2 7 Ba 
+: 2422 2 8 dop 
+: 2426 2 7 ba 
+: 2429 2 3 dop 
+: 2434 2 -2 bop,
+- 2436
+: 2442 2 10 Ski 
+: 2445 1 10 ba 
+: 2447 1 10 bop 
+: 2449 1 10 da 
+: 2451 1 10 bop 
+: 2455 2 10 da 
+: 2459 1 10 bop 
+: 2461 3 10 da 
+: 2466 2 10 bop,
+- 2468
+: 2486 2 10 Ba 
+: 2490 1 10 dop 
+: 2492 3 10 ba 
+: 2497 2 10 dop,
+- 2499
+: 2506 2 10 Ski 
+: 2509 1 10 ba 
+: 2511 1 10 bop 
+: 2513 1 10 da 
+: 2515 1 10 bop 
+: 2519 2 10 da 
+: 2523 1 10 bop 
+: 2525 3 10 da 
+: 2530 2 10 bop,
+- 2532
+: 2550 2 10 Ba 
+: 2554 1 10 dop 
+: 2556 3 10 ba 
+: 2561 2 10 dop,
+- 2563
+: 2570 2 10 Ski 
+: 2573 1 10 ba 
+: 2575 1 10 bop 
+: 2577 1 10 da 
+: 2579 1 10 bop 
+: 2583 2 10 da 
+: 2587 1 10 bop 
+: 2589 3 10 da 
+: 2594 2 10 bop,
+- 2596
+: 2614 2 10 Ba 
+: 2618 1 10 dop 
+: 2620 3 10 ba 
+: 2625 2 10 dop,
+- 2627
+: 2634 2 10 Ski 
+: 2637 1 10 ba 
+: 2639 1 10 bop 
+: 2641 1 10 da 
+: 2643 1 10 bop 
+: 2647 2 10 da 
+: 2651 1 10 bop 
+: 2653 3 10 da 
+: 2658 2 10 bop,
+- 2660 2674
+- 2674
+: 2692 2 5 I’m 
+: 2696 2 7 the 
+: 2700 4 10 Scat
+: 2708 6 8 man!
+- 2714 2784
+- 2784
+F 2802 2 4 Where’s 
+F 2806 2 4 the 
+F 2810 6 4 Scat
+F 2818 6 4 man!
+- 2824 2928
+- 2928
+: 2946 2 5 I’m 
+: 2950 2 7 the 
+: 2954 4 8 Scat
+: 2962 8 5 man!
+- 2970 3056
+- 3056
+: 3074 2 5 I’m 
+: 3078 2 7 the 
+: 3082 4 10 Scat
+: 3090 10 8 man!
+- 3100 3176
+- 3176
+: 3194 6 8 Yeah, 
+: 3202 2 5 I’m 
+: 3206 2 7 the 
+: 3210 4 8 Scat
+: 3218 8 5 man!
+- 3226 3232
+- 3232
+: 3250 2 7 Ba 
+: 3254 2 8 dop 
+: 3258 2 7 ba 
+: 3261 2 5 dop 
+: 3266 2 0 bop,
+- 3268
+: 3274 6 8 Ski 
+: 3282 2 7 ba 
+: 3286 2 8 dop 
+: 3290 2 7 ba 
+: 3293 2 3 dop 
+: 3298 2 -2 bop,
+- 3300
+: 3314 2 7 Ba 
+: 3318 2 8 dop 
+: 3322 2 7 ba 
+: 3325 2 5 dop,
+- 3327
+: 3330 2 5 I’m 
+: 3334 2 7 the 
+: 3338 4 10 Scat
+: 3346 10 8 man!
+- 3356 3360
+- 3360
+: 3378 2 7 Ba 
+: 3382 2 8 dop 
+: 3386 2 7 ba 
+: 3389 2 5 dop 
+: 3394 2 0 bop,
+- 3396
+: 3402 6 8 Ski 
+: 3410 2 7 ba 
+: 3414 2 8 dop 
+: 3418 2 7 ba 
+: 3421 2 3 dop 
+: 3426 2 -2 bop …
+E

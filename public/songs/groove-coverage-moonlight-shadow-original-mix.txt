@@ -1,0 +1,192 @@
+#ARTIST:Groove Coverage
+#TITLE:Moonlight Shadow (Original Mix)
+#CREATOR:Canni
+#BPM:281
+#YEAR:2002
+#VIDEO:v=_-fr5i2dtME
+#LANGUAGE:English
+#GAP:2105,76512455516
+#ALLKARAOKE_ID:groove-coverage-moonlight-shadow-original-mix
+#ALLKARAOKE_SID:5623
+#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:44.184Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:26
+#ALLKARAOKE_SOURCEURL:Groove Coverage - Moonlight Shadow (Original Mix)
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Groove Coverage - Moonlight Shadow (Original Mix).mp3
+: 19 3 -1 The
+: 23 2 1 ~ 
+: 28 6 2 last 
+: 39 2 2 that 
+: 44 2 2 e
+: 48 2 4 ver 
+: 52 3 2 she
+: 56 2 1 ~ 
+: 60 14 -1 saw 
+: 77 5 -1 him,
+- 82
+: 92 3 1 Car
+: 96 3 1 ried 
+: 100 3 2 a
+* 104 3 4 way
+* 109 3 2 ~ 
+: 117 3 2 by 
+: 121 2 4 a 
+: 125 5 6 moon
+: 132 5 6 light 
+: 140 3 4 sha
+: 144 5 -3 dow,
+- 149
+: 153 3 -3 He 
+: 157 5 2 passed 
+: 165 5 2 on 
+: 173 3 2 wor
+: 177 3 4 ried 
+: 181 3 2 and
+: 185 3 1 ~ 
+: 189 13 -1 war
+: 205 5 -1 ning,
+- 210
+: 221 3 1 Car
+: 225 3 1 ried 
+: 229 3 2 a
+* 233 3 4 way
+* 237 3 2 ~ 
+: 245 3 2 by 
+: 249 3 4 a 
+: 253 6 6 moon
+: 261 6 6 light 
+: 269 3 4 sha
+: 273 6 -3 dow,
+- 279
+: 285 5 6 Lost 
+: 293 3 6 in 
+: 297 3 9 a 
+: 301 3 7 rid
+: 305 3 7 dle 
+: 309 4 6 that 
+: 317 3 4 Sa
+: 321 3 4 tur
+: 325 3 6 day 
+: 329 5 4 night,
+- 334
+* 349 10 6 Far 
+: 360 3 4 a
+: 364 6 2 way 
+: 373 3 2 on 
+: 377 2 -1 the 
+: 381 3 4 o
+: 385 4 6 ther 
+: 393 3 4 side
+: 397 3 2 ~,
+- 400
+: 406 2 2 He 
+: 409 3 4 was 
+: 413 6 6 caught 
+: 421 2 6 in 
+: 425 3 9 the 
+: 429 3 7 mid
+: 433 3 7 dle
+- 436
+: 437 3 6 Of 
+: 441 3 2 a 
+: 445 3 4 des
+: 449 3 4 pe
+: 453 3 6 rate 
+: 457 3 4 fight
+: 461 4 2 ~,
+- 465
+: 470 3 2 And 
+: 474 3 4 she 
+: 478 3 6 coul
+: 482 2 6 dn’t 
+: 486 5 4 find 
+: 493 3 2 how 
+: 497 3 1 to 
+: 502 5 -1 push 
+: 510 11 4 through.
+- 521 1544
+- 1544
+: 1563 12 2 Four 
+: 1579 3 2 a.
+: 1583 3 4 m. 
+: 1587 3 2 in 
+: 1591 3 1 the 
+* 1595 14 -1 mor
+: 1611 6 -1 ning,
+- 1617
+: 1627 3 1 Car
+: 1631 3 1 ried 
+: 1635 3 2 a
+: 1639 7 4 way 
+: 1651 3 2 by 
+: 1655 2 4 a 
+: 1659 6 6 moon
+: 1667 5 6 light 
+: 1675 3 4 sha
+: 1679 4 -3 dow,
+- 1683
+: 1687 3 -3 I 
+: 1691 5 2 watched 
+: 1699 5 2 your 
+* 1707 3 2 v
+* 1711 3 4 i
+* 1715 3 2 si
+* 1719 3 1 on 
+: 1723 8 -1 for
+: 1740 7 -1 ming,
+- 1747
+: 1756 3 1 Car
+: 1760 3 1 ried 
+: 1764 3 2 a
+: 1768 6 4 way 
+: 1780 3 2 by 
+: 1784 3 4 a 
+: 1788 6 6 moon
+: 1796 5 6 light 
+: 1803 3 4 sha
+: 1807 5 -3 dow,
+- 1812
+: 1819 5 6 Star 
+: 1827 4 9 was 
+: 1836 3 7 glo
+: 1840 3 7 win’ 
+: 1844 2 6 in 
+: 1848 2 2 a 
+: 1852 3 4 sil
+: 1856 3 4 ve
+: 1860 3 6 ry 
+: 1864 7 4 night,
+- 1871
+: 1884 9 6 Far 
+: 1895 3 4 a
+: 1899 7 2 way 
+: 1908 3 2 on 
+: 1912 3 -1 the 
+: 1916 3 4 o
+: 1920 6 6 ther 
+: 1928 3 4 side
+: 1932 4 2 ~,
+- 1936
+: 1940 3 2 Will 
+: 1944 3 4 you 
+: 1948 6 6 come 
+: 1956 6 9 to 
+: 1964 6 7 talk 
+: 1972 4 6 to 
+: 1977 8 4 me 
+: 1988 4 1 this 
+: 1996 4 -3 night,
+- 2000
+: 2004 3 -1 But 
+: 2008 3 1 she 
+: 2012 3 2 coul
+: 2016 2 2 dn’t 
+: 2020 3 1 fi
+: 2024 2 -1 ~nd
+- 2026
+: 2028 3 -1 How 
+: 2032 3 1 to 
+: 2036 6 2 push 
+: 2044 12 4 through.
+E
