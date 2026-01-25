@@ -11,15 +11,18 @@ export default function RedirectToFirstLocalSong() {
   const [, setShareSongs] = useShareSongs();
   const navigate = useSmoothNavigate();
   const { data, isLoading } = useSongIndex(true);
-  const manual = useQueryParam('manual');
+  const previousSongId = useQueryParam('previousSongId');
   useBackgroundMusic(false);
 
   const song = useMemo(() => {
     if (data.length) {
-      return data.filter((s) => !s.isBuiltIn).sort((a, b) => dayjs(a.lastUpdate).diff(dayjs(b.lastUpdate)))[0];
+      return data
+        .filter((s) => !s.isBuiltIn)
+        .sort((a, b) => dayjs(a.lastUpdate).diff(dayjs(b.lastUpdate)))
+        .filter((s) => s.id !== previousSongId)[0];
     }
     return null;
-  }, [data]);
+  }, [data, previousSongId]);
 
   const navigateToSong = () => {
     navigate(
@@ -36,12 +39,9 @@ export default function RedirectToFirstLocalSong() {
   useEffect(() => {
     if (song) {
       setShareSongs(true);
-
-      if (!manual) {
-        navigateToSong();
-      }
+      navigateToSong();
     }
-  }, [song, manual]);
+  }, [song]);
 
   if (isLoading) return <>Loading...</>;
   if (!song) return <>No local songs found.</>;

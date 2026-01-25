@@ -6,6 +6,7 @@
     "Britney Spears",
     "Kylie Minogue",
     "Ariana Grande",
+    "Michael Jackson",
     "Queen",
     "Taylor Swift",
     "Take That",
@@ -14,7 +15,6 @@
     "Girls Aloud",
     "One Direction",
     "Imagine Dragons",
-    "Michael Jackson",
     "Nirvana",
     "Rihanna",
     "My Chemical Romance",
@@ -99,6 +99,7 @@
     "Nickelback",
     "Olivia Rodrigo",
     "Phil Collins",
+    "Sean Paul",
     "Selena Gomez",
     "Skillet",
     "The Killers",
@@ -127,6 +128,7 @@
     "Blind Guardian",
     "Chris Brown",
     "Daft Punk",
+    "Delta Goodrem",
     "Duran Duran",
     "Frank Sinatra",
     "Hilary Duff",
@@ -147,9 +149,7 @@
     "AC/DC",
     "Ace of Base",
     "Alanis Morissette",
-    "Amy Winehouse",
-    "Atomic Kitten",
-    "Black Veil Brides"
+    "Amy Winehouse"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5582
+  "songs": 5626
 }

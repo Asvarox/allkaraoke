@@ -3,7 +3,9 @@ import { cloneDeep } from 'es-toolkit';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
+import createPersistedState from 'use-persisted-state';
 import { GAME_MODE, Note, seconds, SingSetup, Song } from '~/interfaces';
+import { VideoState } from '~/modules/Elements/VideoPlayer';
 import getCurrentBeat from '~/modules/GameEngine/GameState/Helpers/getCurrentBeat';
 import getSongBeatLength from '~/modules/Songs/utils/getSongBeatLength';
 import isNotesSection from '~/modules/Songs/utils/isNotesSection';
@@ -90,9 +92,12 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
   }),
 });
 
+const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
+
 export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
-  const [playbackSpeed, setPlaybackSpeed] = useState(1);
+  const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
+  const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
   const playerHeight = (playerWidth / 16) * 9;
@@ -149,7 +154,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
 
   useEffect(() => {
     player.current?.setPlaybackSpeed(playbackSpeed);
-  }, [playbackSpeed]);
+  }, [playbackSpeed, playerState]);
 
   const seekToNote = (note?: Note, padding: seconds = 0.5 * playbackSpeed) => {
     if (note && player.current) {
@@ -262,6 +267,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
       <Grid item xs={12} sm={8} data-test="player-container">
         <Box sx={{ width: playerWidth, height: playerHeight }}>
           <Player
+            onStatusChange={setPlayerState}
             key={0}
             song={newSong}
             showControls
@@ -308,7 +314,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
       {player.current && (
         <>
           <Grid item xs={12} sm={8}>
-            <div className="flex flex-1 flex-col gap-5 sm:flex-row">
+            <div className="flex flex-1 flex-col-reverse gap-5 sm:flex-row">
               <ShiftVideoGap
                 player={player.current}
                 onChange={(newShift) => {
