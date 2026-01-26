@@ -60,16 +60,16 @@ function Jukebox() {
               }}
             />
           }>
-          <Button {...register('skip-button', playNext)} className="absolute right-0 bottom-44 px-20">
-            Skip
-          </Button>
-          <SmoothLink to={navigateUrl}>
-            <Button
-              {...register('sing-button', () => navigate(navigateUrl), undefined, true)}
-              className="absolute right-0 bottom-16 px-20">
-              Sing this song
+          <div className="absolute right-10 bottom-10 flex flex-col items-end gap-10">
+            <Button {...register('skip-button', playNext)} className="px-20">
+              Skip
             </Button>
-          </SmoothLink>
+            <SmoothLink to={navigateUrl}>
+              <Button {...register('sing-button', () => navigate(navigateUrl), undefined, true)} className="px-20">
+                Sing this song
+              </Button>
+            </SmoothLink>
+          </div>
         </SongPage>
       </NoPrerender>
     </LayoutGame>

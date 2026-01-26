@@ -176,8 +176,8 @@ body {
   /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
   /* -ms-overflow-style: none; IE and Edge */
   /* scrollbar-width: none; Firefox */
-  /* overflow-y: auto; */
-  /* overflow:hidden; */
+  overflow-y: auto;
+  overflow:hidden;
 }
 
 body,
@@ -192,7 +192,7 @@ html {
 
   font-size: 16px;
   @media (min-width: 3840px) {
-    font-size: 20px;
+    font-size: 32px;
   }
 
   /*font-size: calc(min(0.9259259259259vh, 0.5208333333333vw) * var(--zoom-multipler, 1));*/

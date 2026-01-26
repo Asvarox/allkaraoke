@@ -26,7 +26,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
   }, [loading]);
 
   return (
-    <div className={`flex aspect-4/3 items-start justify-end`}>
+    <div className={`typography flex aspect-4/3 flex-col items-end`}>
       <div className="relative rounded-2xl bg-black">
         <video
           autoPlay
@@ -35,29 +35,32 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
           className={`rounded-2xl ${!permissionStatus && 'opacity-25'}`}
           ref={videoRef}
         />
-        <div className="absolute right-0 bottom-0 left-0 flex flex-col items-center gap-4 p-2">
+        <div className="absolute right-0 bottom-0 left-0 flex h-full flex-col items-center justify-center gap-4 p-2 sm:gap-2">
           {!permissionStatus ? (
             <>
-              <h2>
+              <span className="text-md sm:text-sm lg:text-lg">
                 Get a <strong>timelapse</strong> of you singing
-              </h2>
+              </span>
               <Button
-                className="animate-focused w-full p-4"
+                subtleFocused
+                className="w-full p-4"
                 {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
                 Enable camera
               </Button>
-              <Typography className="text-sm">The recording is not sent nor stored anywhere.</Typography>
+              <Typography className="text-sm sm:text-xs lg:text-sm">
+                The recording is not sent nor stored anywhere.
+              </Typography>
             </>
           ) : (
-            <h3>Adjust the camera position</h3>
+            <span className="text-md md:text-md sm:text-sm lg:text-lg 2xl:text-xl">Adjust the camera position</span>
           )}
         </div>
       </div>
       {!permissionStatus && (
-        <Typography className="absolute right-0 bottom-0 p-4 text-sm">
+        <Typography className="text-sm sm:text-xs md:text-sm">
           Placeholder video from{' '}
           <a href="https://www.storyblocks.com/" target="_blank" rel="noreferrer">
-            Storyblocks.com
+            Storyblocks
           </a>
         </Typography>
       )}

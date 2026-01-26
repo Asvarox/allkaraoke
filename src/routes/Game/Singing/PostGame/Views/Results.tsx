@@ -62,14 +62,9 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   };
 
   return (
-    <div className="mobile:pt-30 mobile:pb-0 absolute inset-0 box-border flex h-full w-full flex-col pt-80 pb-36">
-      <div className="mobile:gap-4 flex h-full flex-row gap-10">
-        <div
-          className={clsx(
-            'flex flex-1 flex-col text-center transition-[gap] duration-500',
-            revealHighScore ? 'mobile:gap-2 gap-5' : 'mobile:gap-6 gap-12',
-          )}
-          data-collapse={revealHighScore}>
+    <>
+      <div className="flex flex-col gap-2 sm:flex-row md:gap-6">
+        <div className="flex flex-col gap-2 sm:flex-1" data-collapse={revealHighScore}>
           {finalPlayers.map((player, number) => (
             <PlayerScoreView
               playerNumber={player.playerNumber}
@@ -86,12 +81,13 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
         </div>
         <div
           className={clsx(
-            'shrink-0 transition-[width] duration-300',
-            initialCameraPermission && revealHighScore ? 'w-5/12' : 'w-1/4',
+            'transition-[width] duration-300',
+            initialCameraPermission && revealHighScore ? 'sm:w-1/3 md:w-5/14' : 'sm:w-1/4 md:w-1/3',
           )}>
           {initialCameraPermission ? (
             <CameraRoll />
           ) : (
+            // <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
             <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
           )}
         </div>
@@ -99,10 +95,11 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
       <Button
         {...register('next-button', () => nextStep(), undefined, true)}
         data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
-        className="mt-auto ml-auto w-96 text-2xl lg:text-3xl xl:text-4xl">
+        size="small"
+        className="w-full text-2xl lg:ml-auto lg:w-5/14 lg:text-3xl xl:text-4xl 2xl:mt-auto">
         {isAnimFinished ? 'Next' : 'Skip'}
       </Button>
-    </div>
+    </>
   );
 }
 

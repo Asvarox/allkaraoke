@@ -37,7 +37,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
 
   return (
     <SongPage songData={song} width={width} height={height}>
-      <div className="pointer-events-auto">
+      <div className="flex flex-col gap-2">
         {step === 'results' && (
           <ResultsView
             onNextStep={() => setStep('highscores')}
@@ -52,17 +52,18 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         <GameTip
           data-active="true"
           className={
-            'mobile:text-xs mobile:px-2 mobile:py-2 absolute bottom-10 box-border w-full bg-black/75 px-24 py-5 text-center text-3xl leading-tight text-white ' +
-            'scale-0 transition-transform duration-300 data-[active=true]:scale-100'
+            'typography mt-2 block w-full bg-black/75 px-2 py-2 text-center text-xs leading-tight md:text-sm 2xl:text-lg'
           }
         />
+        {backgroundTheme !== 'christmas' && (
+          <span className="typography text-xs 2xl:text-sm">
+            Background music by{' '}
+            <a href="https://www.FesliyanStudios.com" target="_blank" rel="noopener noreferrer">
+              www.FesliyanStudios.com
+            </a>
+          </span>
+        )}
       </div>
-      {backgroundTheme === 'christmas' && (
-        <span className="typography fixed bottom-5 left-5 text-sm">
-          Credit to <a href="https://www.FesliyanStudios.com">https://www.FesliyanStudios.com</a> for the background
-          music.
-        </span>
-      )}
     </SongPage>
   );
 }

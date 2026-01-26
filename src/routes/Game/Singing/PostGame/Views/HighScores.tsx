@@ -20,21 +20,19 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
 
   return (
     <>
-      <div
-        className="mobile:top-30 mobile:px-0 absolute top-62 box-border w-full px-40 text-center"
-        data-test="highscores-container">
+      <div className="flex flex-col gap-3 sm:gap-2 lg:gap-4" data-test="highscores-container">
         {highScores.map((score, index) => (
           <div
             className={clsx(
-              'typography mobile:mb-1 mobile:text-sm relative mb-5 flex items-center text-xl',
+              'typography lg:text-md relative flex items-center text-sm 2xl:text-lg',
               score.singSetupId === singSetup.id
-                ? 'mobile:px-2 bg-black/90 px-4 py-0'
-                : 'mobile:px-4 mobile:py-0 bg-black/50 px-8 py-2',
+                ? 'bg-black/90 px-4 py-1 sm:py-0 2xl:py-2'
+                : 'bg-black/50 px-4 py-2 sm:py-1 2xl:py-4',
             )}
             key={index}>
-            <div className="text-active mobile:px-2 px-4">{index + 1}</div>
+            <div className="text-active px-2">{index + 1}</div>
 
-            <div className="ph-no-capture mobile:p-1 flex-1 p-4 text-left">
+            <div className="ph-no-capture flex-1 p-1 text-left">
               {score.singSetupId === singSetup.id ? (
                 <HighScoreRename
                   index={index}
@@ -47,17 +45,18 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
                 score.name
               )}
             </div>
-            <div className="mobile:px-1 px-2">
+            <div className="px-1">
               <ScoreText score={score.score} />
             </div>
-            <div className="text-md mobile:text-xs mobile:p-0.5 absolute -right-4 -bottom-3 bg-black p-1.5">
+            <div className="2xl:text-md absolute -right-2 -bottom-2 bg-black px-1 text-xs">
               {dayjs(score.date).format('MMMM D, YYYY')}
             </div>
           </div>
         ))}
       </div>
       <Button
-        className="mobile:bottom-5 mobile:h-10 mobile:right-0 absolute right-5 bottom-32 px-8 text-xl"
+        className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
+        size="small"
         {...register('play-next-song-button', onNextStep, undefined, true)}>
         Select song
       </Button>

@@ -11,44 +11,36 @@ interface Props {
 
 export default function SongPage({ songData, background, width, height, children, ...restProps }: Props) {
   return (
-    <div className="relative overflow-y-hidden bg-black" style={{ width, height }} {...restProps}>
+    <div className="relative overflow-y-auto bg-black" style={{ width, height }} {...restProps}>
       <BackgroundImage video={songData.video} blur />
-      {background && <div className="absolute inset-0 z-10">{background}</div>}
+      {background && <div className="fixed inset-0">{background}</div>}
 
-      <div className="pointer-events-none absolute inset-0 z-20">
-        <div className="pointer-events-none relative mx-auto h-full max-w-[80vw] text-white">
-          <ContentElement className="text-active mobile:mt-2 mobile:text-lg mt-5 text-5xl">
+      <div className="relative mx-auto h-full max-w-440 px-4 text-white">
+        <div className="pointer-events-none mb-4 flex flex-col items-start gap-1 text-white">
+          <ContentElement className="text-active mt-2 text-lg lg:text-xl 2xl:mt-5 2xl:text-5xl">
             {songData.title}
           </ContentElement>
-          <br />
-          <ContentElement className="mobile:text-md text-4xl">{songData.artist}</ContentElement>
-          <br />
+          <ContentElement className="text-md lg:text-lg 2xl:text-4xl">{songData.artist}</ContentElement>
           {songData.author && (
-            <ContentElement className="mobile:text-sm text-xl">
+            <ContentElement className="lg:text-md text-sm 2xl:text-xl">
               by&nbsp;
               {songData.authorUrl ? <a href={songData.authorUrl}>{songData.author}</a> : songData.author}
             </ContentElement>
           )}
-          {children}
         </div>
+        {children}
       </div>
     </div>
   );
 }
 
 export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
-  <span
-    className={clsx(
-      'typography mobile:mb-1 mobile:py-0.5 mb-2.5 inline-block bg-black/50 px-5 py-1.5 backdrop-blur-sm',
-      className,
-    )}
-    {...restProps}
-  />
+  <span className={clsx('typography inline-block bg-black/50 px-5 py-0.5', className)} {...restProps} />
 );
 
 const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (
   <div
-    className={clsx('absolute inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
+    className={clsx('fixed inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
     style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${video}/hqdefault.jpg')` }}
   />
 );

@@ -91,7 +91,6 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           )}
         </ActionButton>
       </ActionsContainer>
-      <Break />
       <ActionsContainer $disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
         <ActionButton onClick={onPress('random')}>
           <Shuffle /> {keyboard?.shiftR || 'Random Song'}
@@ -107,8 +106,6 @@ const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolea
   'flex flex-1 flex-col justify-between',
   props.$disabled ? 'opacity-0' : 'opacity-100',
 ]);
-
-const Break = twc.div`h-0 basis-full`;
 
 const ArrowButton = twc(Kbd)`m-0.5 text-lg`;
 

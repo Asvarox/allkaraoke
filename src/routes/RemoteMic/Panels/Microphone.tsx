@@ -46,7 +46,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
   const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
 
   return (
-    <div className="landscap:flex-row text-md landscap:gap-0 flex h-full flex-col items-center justify-center gap-8">
+    <div className="landscap:flex-row landscap:pt-0 text-md landscap:gap-4 flex h-full flex-col items-center justify-center gap-4 overflow-auto px-4 pt-16">
       <UserMediaEnabled
         showImages={false}
         fallback={
@@ -56,7 +56,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
           </>
         }>
         <div
-          className={`landscap:mt-0 landscap:flex landscap:flex-col flex-1.5 flex flex-col justify-center gap-8 px-4 transition-all duration-300 ease-in-out ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
+          className={`landscap:mt-0 landscap:flex flex-1.5 landscap:flex-col flex w-full flex-col justify-center gap-4 transition-all duration-300 ease-in-out ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
           <MicPreview
             isVisible={isConnected}
             isMicOn={monitoringStarted}
@@ -71,7 +71,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             connectionError={connectionError}
           />
         </div>
-        <div className="px-4">
+        <div>
           {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
           {permissions === 'read' && (
             <Menu.HelpText className="pb-12" data-test="no-permissions-message">

@@ -76,10 +76,13 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
   });
 
-  await test.step('Search and pick up converted song', async () => {
+  await test.step('Search and pick ', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.closeTheSelectionPlaylistTip();
+    await pages.songListPage.toolbar.toggleHelp();
     await pages.songListPage.searchSong(`${songArtist} ${songTitle}`);
     await pages.songListPage.openPreviewForSong(songID);
+    await pages.songPreviewPage.expectGameModeToBe('Cooperation');
     await pages.songPreviewPage.goNext();
   });
 

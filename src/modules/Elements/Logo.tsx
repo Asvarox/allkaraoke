@@ -23,14 +23,16 @@ export default function Logo(props: ComponentProps<'div'>) {
         <span className="-rotate-2">A</span>
         <span className="rotate-10">l</span>
         <span className="-rotate-4">l</span>
-        <span className="rotate-4">K</span>
-        <span className="-rotate-4">a</span>
+        <span className="text-text-player-0 rotate-4">K</span>
+        <span className="-rotate-0">a</span>
         <span className="-rotate-6">r</span>
         <span className="rotate-10">a</span>
-        <span className="rotate-2">o</span>
+        <span className="text-active rotate-2">o</span>
         <span className="rotate-4">k</span>
         <span className="-rotate-16">e</span>
-        <DotParty>.party</DotParty>
+        <DotParty>
+          .par<span className="text-text-player-1">t</span>y
+        </DotParty>
       </LetterBase>
     </div>
   );

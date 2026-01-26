@@ -35,7 +35,7 @@ function CameraRoll() {
         autoPlay
         className="ph-no-capture aspect-4/3 w-full rounded-2xl bg-black object-cover"
       />
-      <Typography className="text-md mobile:text-xs text-center">
+      <Typography className="2xl:text-md text-center text-xs lg:text-sm">
         You can disable camera mode in <strong>Settings</strong>.
       </Typography>
     </div>

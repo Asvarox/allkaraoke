@@ -32,7 +32,7 @@ function Toolbar({ children }: PropsWithChildren) {
         {hasContent && (
           <Tooltip title="Toggle help" place="bottom-end">
             <IconButton
-              className="scale-90 text-white"
+              className="hidden! scale-90 text-white md:block!"
               size="small"
               onClick={() => setIsHelpVisible(!isHelpVisible)}
               data-test="toggle-help">

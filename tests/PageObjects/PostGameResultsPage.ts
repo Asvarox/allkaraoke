@@ -48,7 +48,7 @@ export class PostGameResultsPagePO {
       const p1score = await this.playersCoopScoreElement.getAttribute('data-score');
 
       expect(parseInt(p1score!, 10)).toBeGreaterThan(expected);
-    }).toPass();
+    }).toPass({ timeout: 10_000 });
   }
 
   public get nextButton() {

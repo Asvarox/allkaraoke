@@ -19,7 +19,7 @@ function SuggestMobilePhone() {
 
   return (
     <LayoutGame>
-      <div className="fixed inset-0 flex items-center justify-center">
+      <div className="fixed inset-0 flex items-center justify-center overflow-auto">
         <MenuContainer className="m-auto max-w-[94rem] p-8">
           <Menu.Header>Use Mobile Phone Mode?</Menu.Header>
           <span className="typography mb-4 block text-lg">

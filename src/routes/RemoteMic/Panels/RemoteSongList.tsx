@@ -180,6 +180,7 @@ function RemoteSongList({ connectionStatus }: Props) {
       </div>
       <CustomVirtualization
         forceRenderItem={-1}
+        Footer={<div style={{ height: unit * 3.75 }} className="landscap:block hidden" />}
         overScan={200}
         components={{}}
         context={{}}

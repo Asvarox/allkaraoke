@@ -97,7 +97,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
           }}
         />
       )}
-      <form className="flex flex-col gap-8" onSubmit={handleConnect}>
+      <form className="flex flex-col gap-4 md:gap-8" onSubmit={handleConnect}>
         {!connected && (
           <Input
             className="[&_input]:text-center [&_input]:tracking-[1.25rem] [&_input]:uppercase"
