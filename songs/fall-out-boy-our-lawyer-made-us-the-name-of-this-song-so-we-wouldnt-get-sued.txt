@@ -1,0 +1,330 @@
+#ARTIST:Fall Out Boy
+#TITLE:Our Lawyer Made Us The Name Of This Song So We Wouldn’t Get Sued
+#CREATOR:jdogk
+#BPM:232
+#YEAR:2005
+#VIDEO:v=3uOGQhGd0M8
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:20230,172413793105
+#ALLKARAOKE_ID:fall-out-boy-our-lawyer-made-us-the-name-of-this-song-so-we-wouldnt-get-sued
+#ALLKARAOKE_SID:5655
+#ALLKARAOKE_LASTUPDATE:2026-01-27T00:15:59.568Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:Fall Out Boy - Our Lawyer Made Us The Name Of This Song So We Wouldn’t Get Sued
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Fall Out Boy - Our Lawyer Made Us The Name Of This Song So We Wouldn’t Get Sued.mp3
+: 15 3 19 Broth
+: 19 3 21 ers 
+: 23 3 24 and 
+: 27 3 19 sis
+: 31 3 17 ters
+- 34
+: 35 3 14 Put 
+: 39 3 19 this 
+: 43 3 21 rec
+: 47 3 24 ord 
+: 51 10 19 down
+- 61
+: 63 3 19 Take 
+: 67 3 21 my 
+: 71 3 24 ad
+: 75 8 19 vice
+- 83
+: 85 1 14 (Cause 
+: 87 5 21 we 
+: 93 5 21 are 
+: 99 5 21 bad 
+: 105 5 21 news)
+- 110
+: 111 5 29 We 
+: 117 5 29 will 
+: 123 5 29 leave 
+: 129 5 24 you 
+: 135 5 29 high 
+: 141 5 29 and 
+: 147 6 29 dry
+- 153
+: 159 5 29 It’s 
+: 165 5 29 not 
+: 171 8 29 worth 
+: 181 1 24 the 
+: 183 5 29 hear
+: 189 5 29 ing 
+: 195 5 29 you’ll 
+: 201 5 24 lose
+- 206
+: 207 8 22 It’s 
+: 216 6 26 just 
+: 223 7 24 past 
+: 231 9 21 eight
+- 240
+: 241 5 21 And 
+: 247 7 21 I’m 
+: 255 5 21 feel
+: 261 5 21 ing 
+: 267 5 21 young 
+: 273 5 21 and 
+: 279 5 21 reck
+: 285 14 17 less
+- 299
+: 301 1 14 The 
+: 303 3 17 rib
+: 307 5 14 bon 
+: 313 5 24 on 
+: 319 7 24 my 
+: 327 5 24 wrist 
+: 333 5 21 says
+- 338
+: 339 5 21 "Do 
+: 345 5 21 not 
+: 351 5 21 o
+: 357 5 21 pen 
+: 363 5 21 be
+: 369 5 21 fore 
+: 375 5 21 Christ
+: 381 12 17 mas"
+- 393
+: 397 1 17 We’re 
+: 399 11 24 on
+: 411 5 27 ly
+: 417 5 29 -y 
+* 423 5 29 li
+* 429 9 24 ars 
+: 439 4 21 but 
+: 445 7 24 we’re 
+: 453 3 24 the 
+: 457 18 21 best
+- 475 478
+- 478
+: 493 1 17 We’re 
+* 495 11 24 on
+* 507 5 27 ly
+* 513 5 29 -y 
+* 519 9 29 good 
+: 529 5 21 for 
+: 535 4 22 the 
+: 541 5 24 lat
+: 547 5 24 est 
+: 553 26 17 trend
+- 579
+: 589 1 17 We’re 
+: 591 11 24 on
+: 603 5 27 ly
+: 609 5 29 -y 
+: 615 5 29 good
+- 620
+: 621 3 22 Cause 
+: 625 5 22 you 
+: 631 5 21 can 
+: 637 5 19 have 
+: 643 3 22 al
+: 647 3 24 most 
+: 651 3 19 fa
+: 655 3 17 mous 
+: 659 3 19 frie
+: 663 12 21 nds
+- 675
+: 685 1 17 Be
+: 687 11 24 sides, 
+: 699 5 27 we
+: 705 5 29 ’ve 
+: 711 8 29 got 
+: 721 5 21 such 
+: 727 5 22 good 
+: 733 5 26 fash
+: 739 5 24 ion 
+: 745 38 17 sense
+- 783 912
+- 912
+: 927 3 19 Broth
+: 931 3 21 ers 
+: 935 3 24 and 
+: 939 3 19 sis
+: 943 3 17 ters
+- 946
+: 947 3 14 Yeah 
+: 951 3 19 put 
+: 955 3 21 these 
+* 959 3 24 words 
+* 963 10 19 down
+- 973
+: 975 3 19 In
+: 979 3 21 to 
+: 983 3 24 your 
+: 987 5 19 note
+: 993 6 17 book
+- 999 1008
+- 1008
+: 1023 5 29 We’re 
+: 1029 5 29 friends 
+: 1035 5 29 when 
+: 1041 5 24 you’re 
+: 1047 5 29 on 
+: 1053 5 29 your 
+: 1059 5 29 knees
+- 1064
+: 1065 3 24 Make 
+: 1069 1 26 them 
+: 1071 5 29 dance 
+: 1077 5 29 like 
+: 1083 8 29 we
+- 1091
+: 1093 1 24 Were 
+: 1095 5 29 shoot
+: 1101 5 29 ing 
+: 1107 5 29 their 
+: 1113 5 24 fe
+: 1119 8 22 et
+- 1127
+: 1129 5 26 Just 
+: 1135 7 24 past 
+: 1143 9 21 eight
+- 1152
+: 1153 7 21 And 
+: 1161 5 21 I’m 
+: 1167 5 21 feel
+: 1173 5 21 ing 
+: 1179 5 21 young 
+: 1185 5 21 and 
+: 1191 5 21 reck
+: 1197 14 17 less
+- 1211
+: 1213 1 14 The 
+: 1215 3 17 rib
+: 1219 5 14 bon 
+: 1225 5 24 on 
+: 1231 7 24 my 
+: 1239 5 24 wrist 
+: 1245 5 21 says
+- 1250
+: 1251 5 21 "Do 
+: 1257 5 21 not 
+: 1263 5 21 o
+: 1269 5 21 pen 
+: 1275 5 21 be
+: 1281 5 21 fore 
+: 1287 5 21 Christ
+: 1293 12 17 mas"
+- 1305
+: 1309 1 17 We’re 
+: 1311 11 24 on
+: 1323 5 27 ly
+: 1329 5 29 -y 
+: 1335 5 29 li
+: 1341 10 24 ars 
+: 1352 4 21 but 
+* 1357 7 24 we’re 
+* 1365 3 24 the 
+* 1369 24 21 best
+- 1393
+: 1405 1 17 We’re 
+: 1407 11 24 on
+: 1419 5 27 ly
+: 1425 5 29 -y 
+: 1431 9 29 good 
+: 1441 5 21 for 
+: 1447 4 22 the 
+: 1453 5 24 lat
+: 1459 5 24 est 
+: 1465 26 17 trend
+- 1491
+: 1501 1 17 We’re 
+: 1503 13 24 on
+: 1517 3 27 ly
+: 1521 5 29 -y 
+: 1527 5 29 good
+- 1532
+: 1533 3 22 Cause 
+: 1537 5 22 you 
+: 1543 5 21 can 
+: 1549 6 19 have 
+: 1556 2 22 al
+: 1559 5 24 most 
+: 1565 5 19 fam
+: 1571 2 17 ous 
+: 1574 1 19 frie
+: 1576 19 21 nds
+- 1595
+: 1597 1 17 Be
+: 1599 11 24 sides 
+: 1611 5 27 we
+: 1617 5 29 ’ve 
+: 1623 8 29 got 
+: 1633 5 21 such 
+: 1639 5 22 good 
+* 1645 5 26 fash
+* 1651 5 24 ion 
+* 1657 34 17 sense
+- 1691 1870
+- 1870
+: 1885 1 17 We’re 
+: 1887 14 24 on
+: 1902 2 27 ly
+: 1905 7 29 -y 
+: 1913 5 29 li
+: 1919 9 24 ars 
+: 1929 4 21 but 
+: 1934 9 24 we’re 
+: 1944 2 24 the 
+: 1947 23 21 best
+- 1970
+: 1981 1 17 We’re 
+: 1983 14 24 on
+: 1998 2 27 ly
+: 2001 6 29 -y 
+: 2008 8 29 good 
+: 2017 8 21 for 
+: 2026 2 22 the 
+: 2029 5 24 lat
+: 2035 6 24 est 
+: 2042 25 17 trend
+- 2067
+: 2079 5 24 We’re 
+: 2085 8 24 on
+: 2094 7 31 ly
+: 2102 4 29 -y 
+: 2107 6 24 li
+: 2114 6 21 ars 
+: 2124 4 26 but 
+: 2129 5 26 we’re 
+: 2135 3 24 the 
+: 2139 35 21 best
+- 2174
+: 2175 5 24 We’re 
+: 2181 11 24 on
+: 2193 5 31 ly
+: 2199 5 29 -y 
+: 2205 6 21 good 
+: 2212 7 22 for 
+: 2220 4 26 the 
+: 2225 7 24 lat
+: 2233 2 22 est 
+* 2236 34 17 trend
+- 2270
+: 2272 5 24 We’re 
+: 2278 9 24 on
+: 2288 7 31 ly
+: 2296 5 29 -y 
+: 2302 2 24 good
+- 2304
+: 2305 4 24 Cause 
+: 2310 4 22 you 
+: 2315 4 21 can 
+: 2320 5 22 have 
+: 2326 3 24 al
+: 2330 4 21 most 
+: 2335 3 17 fam
+: 2339 4 21 ous 
+: 2344 19 21 friends
+- 2363
+* 2370 12 24 Besides 
+* 2384 12 31 we’ve 
+* 2397 9 29 got 
+* 2407 5 21 such 
+* 2413 5 22 good 
+* 2419 5 26 fash
+* 2425 5 24 ion 
+* 2431 39 24 sense
+E

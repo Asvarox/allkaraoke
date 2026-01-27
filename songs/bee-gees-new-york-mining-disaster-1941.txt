@@ -1,0 +1,262 @@
+#ARTIST:Bee Gees
+#TITLE:New York Mining Disaster 1941
+#CREATOR:Ich,werdennsonst?
+#BPM:358,92
+#YEAR:1967
+#VIDEO:v=S43YhQ_eGTw
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:4586,990972918757
+#ALLKARAOKE_ID:bee-gees-new-york-mining-disaster-1941
+#ALLKARAOKE_SID:5685
+#ALLKARAOKE_LASTUPDATE:2026-01-27T00:16:08.421Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:24
+#ALLKARAOKE_SOURCEURL:Bee Gees - New York Mining Disaster 1941
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Bee Gees - New York Mining Disaster 1941.mp3
+: 24 7 4 In 
+: 34 8 9 the 
+: 43 4 11 e
+: 48 10 12 vent 
+: 61 6 12 of 
+: 68 10 12 some
+: 79 9 12 thing 
+: 89 7 14 hap
+: 97 6 12 pe
+: 104 10 11 ning 
+: 117 7 9 to 
+: 125 12 11 me
+- 137 157
+- 157
+: 181 9 9 There 
+: 191 6 11 is 
+: 198 9 12 some
+: 208 8 12 thing 
+: 217 7 12 I 
+: 225 7 12 would 
+: 233 11 14 like 
+: 245 6 12 you 
+: 252 9 11 all 
+: 262 4 9 to 
+: 267 15 12 see
+- 282 295
+- 295
+: 319 7 14 It’s 
+: 328 8 14 just 
+: 337 3 12 a 
+: 341 10 11 pho
+: 352 6 11 to
+: 359 9 11 graph 
+: 369 5 11 of 
+: 375 12 14 some
+: 388 8 14 one 
+: 397 5 12 that 
+: 403 4 11 I 
+: 408 10 9 knew
+- 418 433
+- 433
+: 457 8 -1 Have 
+: 466 5 0 you 
+: 472 24 2 seen 
+: 498 8 2 my 
+: 507 13 4 wife, 
+: 522 10 2 Mr. 
+: 533 23 2 Jones?
+- 556 564
+- 564
+: 588 6 -1 Do 
+: 595 6 0 you 
+: 602 13 2 know 
+: 618 6 2 what 
+: 626 7 2 it’s 
+: 635 13 4 like 
+: 651 8 2 on 
+: 662 6 0 the 
+: 669 8 -1 out
+: 678 18 -3 side?
+- 696
+: 715 8 -3 Don’t 
+: 724 7 -1 go 
+: 732 11 0 tal
+: 744 10 0 king 
+: 755 8 0 too 
+: 764 11 4 loud, 
+: 778 8 0 you’ll 
+: 787 9 -1 cause 
+: 797 8 -3 a 
+: 806 9 -3 land
+: 816 20 -4 slide, 
+: 838 19 -3 Mr. 
+: 858 23 0 Jones
+- 881 955
+- 955
+: 979 7 4 I 
+: 987 9 9 keep 
+: 997 14 12 strai
+: 1012 10 12 ning 
+: 1025 9 12 my 
+: 1035 10 14 ears 
+: 1047 7 12 to 
+: 1055 7 11 hear 
+: 1063 3 9 a 
+: 1067 13 11 sound
+- 1080 1101
+- 1101
+: 1125 8 9 May
+: 1134 7 11 be 
+: 1142 12 12 some
+: 1155 13 12 one 
+: 1169 8 12 is 
+: 1179 6 14 dig
+: 1186 8 12 ging 
+: 1196 8 11 un
+: 1205 4 9 der
+: 1210 18 12 ground
+- 1228 1239
+- 1239
+: 1263 8 14 Or 
+: 1272 8 14 have 
+: 1281 8 12 they 
+: 1290 4 11 gi
+: 1295 8 11 ven 
+: 1304 6 11 up 
+: 1313 5 11 and 
+: 1319 10 14 all 
+: 1330 8 14 gone 
+: 1339 6 12 home 
+: 1346 5 11 to 
+: 1352 12 9 bed
+- 1364 1375
+- 1375
+: 1399 7 0 Thin
+: 1407 7 -1 king 
+: 1415 11 -3 those 
+: 1427 5 -3 who 
+: 1433 8 -3 once 
+: 1442 5 -1 e
+: 1448 7 0 xis
+: 1456 9 0 ted 
+: 1466 9 -1 must 
+: 1476 3 -3 be 
+: 1480 12 -5 dead
+- 1492 1505
+- 1505
+: 1529 7 -1 Have 
+: 1537 6 0 you 
+: 1544 23 2 seen 
+: 1568 9 2 my 
+: 1578 14 4 wife, 
+: 1593 9 0 Mr 
+: 1603 21 2 Jones?
+- 1624 1634
+- 1634
+: 1658 6 -1 Do 
+: 1665 5 0 you 
+: 1671 13 2 know 
+: 1685 8 2 what 
+: 1696 7 2 it’s 
+: 1704 15 4 like 
+: 1721 9 2 on 
+: 1732 6 0 the 
+: 1739 9 -1 out
+: 1749 17 -3 side?
+- 1766
+: 1784 8 -1 Don’t 
+: 1793 8 -1 go 
+: 1802 11 0 tal
+: 1814 10 0 king 
+: 1825 7 0 too 
+: 1833 13 4 loud, 
+: 1847 10 0 you’ll 
+: 1858 8 -1 cause 
+: 1868 5 -3 a 
+: 1874 10 -3 land
+: 1885 19 -4 slide, 
+: 1911 12 -3 Mr. 
+: 1924 20 0 Jones
+- 1944 2020
+- 2020
+: 2044 8 4 In 
+: 2053 8 9 the 
+: 2062 4 11 e
+: 2067 11 12 vent 
+: 2080 5 12 of 
+: 2086 10 12 some
+: 2097 9 12 thing 
+: 2107 9 14 hap
+: 2117 6 12 pe
+: 2124 13 11 ning 
+: 2138 7 9 to 
+: 2146 17 12 me
+- 2163 2181
+- 2181
+: 2205 12 9 There 
+: 2218 5 11 is 
+: 2225 9 12 some
+: 2235 11 12 thing 
+: 2247 7 12 I 
+: 2255 6 12 would 
+: 2262 12 14 like 
+: 2275 6 12 you 
+: 2282 11 11 all 
+: 2294 5 9 to 
+: 2300 15 12 see
+- 2315 2327
+- 2327
+: 2351 8 14 It’s 
+: 2360 9 14 just 
+: 2370 4 12 a 
+: 2375 12 11 pho
+: 2388 4 11 to
+: 2393 11 11 graph 
+: 2405 5 11 of 
+: 2411 10 14 some
+: 2422 11 14 one 
+: 2434 7 12 that 
+: 2442 9 11 I 
+: 2452 18 9 knew
+- 2470 2481
+- 2481
+: 2505 8 -1 Have 
+: 2514 5 0 you 
+: 2520 25 2 seen 
+: 2546 8 2 my 
+: 2555 16 4 wife, 
+: 2572 10 2 Mr. 
+: 2583 19 2 Jones?
+- 2602 2612
+- 2612
+: 2636 6 -1 Do 
+: 2643 6 0 you 
+: 2650 17 2 know 
+: 2668 5 2 what 
+: 2674 8 0 it’s 
+: 2683 17 4 like 
+: 2701 9 2 on 
+: 2711 8 0 the 
+: 2720 9 -1 out
+: 2730 16 -3 side?
+- 2746
+: 2765 7 -1 Don’t 
+: 2773 7 -1 go 
+: 2781 11 0 tal
+: 2793 12 0 king 
+: 2806 8 0 too 
+: 2815 12 4 loud, 
+: 2828 7 0 you’ll 
+: 2836 9 -1 cause 
+: 2846 6 -3 a 
+: 2853 12 -3 land
+: 2866 18 -4 slide,
+- 2884
+: 2891 13 -1 Mr. 
+: 2905 19 0 Jo
+: 2925 5 -1 ~
+: 2931 2 0 ~
+: 2934 6 -1 ~
+: 2941 18 -3 ~
+: 2960 9 -5 ~
+: 2970 21 -7 ~
+: 2992 16 -8 ~nes
+E

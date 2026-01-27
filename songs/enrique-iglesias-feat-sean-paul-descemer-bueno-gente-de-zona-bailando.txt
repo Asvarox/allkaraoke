@@ -9,7 +9,7 @@
 #GAP:11767,5
 #ALLKARAOKE_ID:enrique-iglesias-feat-sean-paul-descemer-bueno-gente-de-zona-bailando
 #ALLKARAOKE_SID:5603
-#ALLKARAOKE_LASTUPDATE:2026-01-25T00:16:35.341Z
+#ALLKARAOKE_LASTUPDATE:2026-01-24T14:48:57.220Z
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Enrique Iglesias feat. Sean Paul, Descemer Bueno, Gente De Zona - Bailando
 #ALLKARAOKE_VOLUME:0,5

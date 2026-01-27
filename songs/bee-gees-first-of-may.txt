@@ -1,0 +1,255 @@
+#ARTIST:Bee Gees
+#TITLE:First Of May
+#CREATOR:lukethedonkey
+#BPM:200,45
+#YEAR:1969
+#VIDEO:v=yGxDx8ftX1I
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:14637,188825143427
+#ALLKARAOKE_ID:bee-gees-first-of-may
+#ALLKARAOKE_SID:5684
+#ALLKARAOKE_LASTUPDATE:2026-01-27T00:16:08.421Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:40
+#ALLKARAOKE_SOURCEURL:Bee Gees - First Of May
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Bee Gees - First Of May.mp3
+: 13 1 2 When 
+: 15 3 2 I 
+: 20 4 9 was 
+: 25 10 9 small 
+: 45 4 9 and 
+: 50 4 6 Christ
+: 55 3 2 mas 
+: 59 9 1 trees 
+: 69 3 9 were 
+: 73 13 9 tall
+- 86 104
+- 104
+: 117 2 7 We 
+: 120 4 7 used 
+: 125 2 9 to 
+: 128 6 11 love 
+: 136 3 7 while 
+: 140 3 6 oth
+: 144 5 7 ers 
+: 150 9 9 used 
+: 160 3 6 to 
+: 164 14 4 play
+- 178 204
+- 204
+: 217 3 2 Don’t 
+: 221 6 2 ask 
+: 228 3 9 me 
+: 232 9 9 why 
+: 252 2 9 but 
+: 255 5 11 time 
+: 261 2 14 has 
+: 264 5 13 passed 
+: 270 3 11 us 
+: 274 16 9 by
+- 290 313
+- 313
+: 326 5 7 Some
+: 332 2 9 one 
+: 335 4 11 else 
+: 340 4 7 moved 
+: 345 9 6 in 
+: 355 4 7 from 
+: 360 5 9 far 
+: 366 3 6 a
+: 370 16 4 way
+- 386 409
+- 409
+: 422 4 11 Now 
+: 427 3 11 we 
+: 431 4 14 are 
+: 436 10 14 tall 
+: 458 5 14 and 
+: 464 4 13 Christ
+: 469 4 11 mas 
+: 474 6 9 trees 
+: 481 5 14 are 
+: 487 10 14 small
+- 497 511
+- 511
+: 524 2 11 And 
+: 527 5 9 you 
+: 533 5 14 don’t 
+: 539 18 14 ask 
+: 558 2 11 the 
+: 561 10 9 time 
+: 572 1 7 o
+: 574 5 9 of 
+: 580 20 9 day
+- 600 611
+- 611
+: 624 5 14 But 
+: 630 5 14 you 
+: 636 6 19 and 
+: 643 9 19 I 
+: 662 5 19 our 
+: 668 5 18 love 
+: 674 5 16 will 
+: 680 7 14 ne
+: 688 3 18 ver 
+: 692 10 18 die
+- 702 715
+- 715
+: 728 2 11 But 
+: 731 7 11 guess 
+: 739 5 16 we’ll 
+: 745 11 16 cry 
+: 766 10 14 come 
+: 777 1 11 fi
+: 779 5 9 irst 
+: 785 1 6 o
+: 787 4 4 of 
+: 792 16 2 May
+- 808 825
+- 825
+: 838 9 2 The 
+: 848 2 6 app
+: 851 3 9 le 
+: 855 12 9 tree 
+: 874 2 9 that 
+: 877 14 11 grew 
+: 892 4 6 for 
+: 897 4 9 you 
+: 902 6 11 and 
+: 909 12 6 me
+- 921 929
+- 929
+: 942 2 7 I 
+: 945 4 7 watched 
+: 952 2 9 the 
+: 955 3 11 app
+: 959 4 7 les 
+: 966 4 6 fall
+: 971 6 7 ing 
+: 978 6 9 one 
+: 985 1 6 by
+: 987 4 4 y 
+: 992 12 4 one
+- 1004 1011
+- 1011
+: 1024 2 4 A
+: 1027 6 6 a
+: 1034 1 4 a
+: 1036 8 2 and 
+: 1045 3 6 I 
+: 1049 2 9 re
+: 1052 10 9 call 
+: 1076 3 9 the 
+: 1080 4 11 mo
+: 1085 4 14 ment 
+: 1090 6 13 of 
+: 1097 2 11 them 
+: 1100 12 9 all
+- 1112 1132
+- 1132
+: 1145 2 7 The 
+: 1148 7 7 day 
+: 1156 4 9 I 
+: 1161 4 11 kissed 
+: 1166 3 7 your 
+: 1170 6 6 cheek 
+: 1185 3 7 and 
+: 1189 4 9 you 
+: 1194 3 6 were 
+: 1198 12 4 gone
+- 1210 1233
+- 1233
+: 1246 3 11 Now 
+: 1250 2 11 we 
+: 1253 5 14 are 
+: 1259 8 14 tall 
+: 1281 5 14 and 
+: 1287 4 13 Christ
+: 1292 3 11 mas 
+: 1296 6 9 trees 
+: 1303 4 14 are 
+: 1308 12 14 small
+- 1320 1329
+- 1329
+: 1342 3 9 And 
+: 1346 4 11 you 
+: 1351 6 14 don’t 
+: 1358 10 14 ask 
+: 1376 2 14 the 
+: 1379 5 13 ti
+: 1385 6 11 ime 
+: 1392 3 11 of 
+: 1396 12 9 day
+- 1408 1423
+- 1423
+: 1436 5 14 But 
+: 1442 5 14 you 
+: 1448 5 19 and 
+: 1454 8 19 I 
+: 1473 5 19 our 
+: 1479 5 18 love 
+: 1485 5 16 will 
+: 1491 7 14 ne
+: 1499 3 18 ver 
+: 1503 10 18 die
+- 1513 1525
+- 1525
+: 1538 2 11 But 
+: 1541 5 11 guess 
+: 1547 5 16 we’ll 
+: 1553 8 16 cry 
+: 1576 6 14 come 
+: 1583 1 11 fi
+: 1585 6 9 irst 
+: 1592 1 6 o
+: 1594 4 4 of 
+: 1599 14 2 May
+- 1613 1637
+- 1637
+: 1650 1 6 When 
+: 1652 2 6 I 
+: 1655 3 9 was 
+: 1659 10 9 small 
+: 1696 2 9 and 
+: 1699 2 6 Christ
+: 1702 3 2 mas 
+: 1706 4 1 trees 
+: 1711 2 9 were 
+: 1714 8 9 tall
+- 1722 1739
+- 1739
+: 1752 1 7 Do 
+: 1754 1 9 do 
+: 1756 6 11 do 
+: 1763 2 7 do 
+: 1766 10 6 do 
+: 1791 2 7 do 
+: 1795 9 9 do 
+: 1807 2 6 do 
+: 1810 10 4 do
+- 1820 1859
+- 1859
+: 1872 1 2 Don’t 
+: 1874 5 6 ask 
+: 1880 2 9 me 
+: 1883 10 9 why 
+: 1914 2 9 but 
+: 1917 5 11 time 
+: 1923 2 14 has 
+: 1926 5 13 passed 
+: 1932 2 11 us 
+: 1935 10 9 by
+- 1945 1959
+- 1959
+: 1972 4 7 Some
+: 1977 2 9 one 
+: 1980 5 11 else 
+: 1986 4 7 moved 
+: 1991 6 6 in 
+: 2008 2 7 from 
+: 2011 5 9 far 
+: 2017 1 6 a
+: 2019 8 4 way
+E

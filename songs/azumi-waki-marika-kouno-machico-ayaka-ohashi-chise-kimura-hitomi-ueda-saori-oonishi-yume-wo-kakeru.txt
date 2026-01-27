@@ -1,0 +1,299 @@
+#ARTIST:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi
+#TITLE:Yume wo Kakeru!
+#CREATOR:Currymalker
+#BPM:389,76
+#YEAR:2021
+#VIDEO:v=6zQ0myS_o60
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:3431,384236453202
+#ALLKARAOKE_ID:azumi-waki-marika-kouno-machico-ayaka-ohashi-chise-kimura-hitomi-ueda-saori-oonishi-yume-wo-kakeru
+#ALLKARAOKE_SID:5650
+#ALLKARAOKE_LASTUPDATE:2026-01-27T00:15:59.178Z
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6zQ0myS_o60&ab_channel=%E3%81%B1%E3%81%8B%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96%E3%81%A3%21
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi - Yume wo Kakeru! (TV).mp3
+#COVER:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi - Yume wo Kakeru! (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1311
+#MEDLEYENDBEAT:1938
+: 26 2 1 Ki
+: 30 2 1 mi 
+: 34 2 1 to 
+: 38 2 6 yu
+: 42 2 6 me 
+: 46 2 8 o 
+: 50 2 6 ka
+: 54 2 11 ke
+: 58 6 13 ~
+: 66 2 6 ru 
+: 70 6 6 yo
+- 76
+: 82 5 1 Nan
+: 90 6 6 kai 
+: 98 4 8 da
+: 106 5 10 tte 
+: 114 2 10 ka
+: 118 5 10 chi
+: 126 2 8 su
+* 130 6 7 su
+: 138 4 8 me 
+: 146 2 10 sho
+: 150 6 11 ~
+: 158 6 10 u
+: 166 6 4 ri 
+: 174 4 5 no
+- 178
+: 182 2 6 So
+: 186 2 8 ~
+: 190 2 6 no 
+: 194 6 5 sa
+: 202 6 6 ki 
+: 210 2 8 e
+: 214 48 10 ~
+- 262 516
+- 516
+: 542 4 5 Sun
+: 550 5 5 shine
+- 555
+: 561 3 5 Ma
+: 566 2 5 e 
+: 570 5 0 o 
+* 578 5 -3 mu
+: 586 5 -2 ke
+: 594 3 0 ba
+- 597
+: 606 3 5 Pas
+: 614 3 5 sion
+- 617
+: 626 2 0 Ta
+: 630 2 5 ka
+: 634 5 7 na
+: 642 3 9 ru 
+: 650 2 9 fan
+: 654 5 10 ~
+: 662 2 7 fa
+: 666 5 9 ~
+: 674 2 7 ~
+: 678 10 7 re 
+: 690 2 5 a
+: 694 2 4 o
+: 698 6 5 ~
+: 706 2 2 zo
+: 710 5 2 ra
+- 715
+: 722 4 0 I
+* 730 4 7 cchoku
+: 738 10 5 sen
+- 748 771
+- 771
+: 797 4 5 Cho
+: 806 5 5 tto
+- 811
+: 818 2 7 He
+: 822 2 5 ko
+: 826 4 0 mu 
+: 834 5 -3 to
+: 842 6 -2 ki 
+: 850 2 0 wa
+- 852
+: 861 4 7 Pat 
+: 870 5 5 to
+- 875
+: 882 2 0 Mi
+: 886 2 5 mi 
+: 890 5 7 su
+: 898 4 9 ma
+: 906 4 10 se
+: 914 2 10 te 
+* 918 10 12 feel
+: 930 2 5 ~ 
+: 934 4 5 me
+- 938
+: 946 2 0 So
+: 950 2 10 no 
+: 954 5 9 se
+: 962 4 7 na
+: 969 5 9 ka
+- 974
+: 977 3 9 O
+: 982 4 7 shi
+: 989 2 7 te
+: 993 5 7 tai
+: 1001 2 5 ka
+: 1005 13 5 ra
+- 1018
+: 1030 2 5 Ki
+: 1034 2 7 mo
+: 1038 2 9 chi 
+: 1042 2 10 i
+* 1046 8 9 chi
+: 1057 3 5 ma
+: 1062 17 5 tsu
+- 1079
+: 1089 7 5 So
+: 1098 2 7 re
+: 1102 2 9 zo
+: 1106 2 10 re 
+: 1110 6 12 ni
+- 1116
+: 1122 1 10 Tsu
+: 1124 3 12 ~
+: 1130 2 10 zu
+: 1134 2 9 ku 
+: 1138 5 7 chi
+* 1146 2 9 he
+* 1150 2 10 i
+: 1154 4 9 sen 
+: 1162 3 7 ke
+: 1170 16 5 tte
+- 1186
+: 1197 3 0 Ma
+: 1202 6 5 yo
+: 1210 5 7 wa
+: 1218 2 7 na
+: 1222 2 9 ~
+: 1226 6 10 i
+: 1234 16 9 de
+- 1250
+: 1262 2 0 To
+: 1266 5 5 ma
+: 1273 6 7 ra
+: 1282 6 9 zu 
+: 1290 5 10 i
+: 1298 2 10 kou
+: 1302 27 12 ~
+- 1329
+: 1337 2 1 Ki
+: 1341 2 1 mi 
+: 1345 2 1 to 
+: 1349 2 6 yu
+: 1353 2 6 me 
+: 1357 2 8 o 
+: 1361 2 6 ka
+* 1365 2 11 ke
+* 1369 6 13 ~
+: 1377 2 6 ru 
+: 1381 6 6 yo
+- 1387
+: 1393 5 1 Nan
+: 1401 6 6 kai 
+: 1409 4 8 da
+: 1417 6 10 tte 
+: 1425 2 10 ma
+: 1429 5 10 ki
+: 1437 2 8 o
+: 1441 5 7 ko
+: 1449 5 8 se 
+: 1457 4 11 spark
+- 1461
+: 1465 2 1 A
+: 1469 2 1 ki
+: 1473 2 1 ra
+: 1477 2 6 me
+: 1481 2 6 na
+: 1485 2 8 i
+: 1489 2 6 de 
+: 1493 2 11 I
+: 1497 6 13 ~ 
+: 1505 2 6 be
+: 1509 7 6 lieve!
+- 1516
+: 1521 2 1 I
+: 1525 2 11 tsu
+: 1529 5 10 ka 
+: 1537 6 8 ki
+: 1545 5 10 me
+: 1553 2 10 ta 
+: 1557 2 6 goo
+: 1561 6 8 ~
+: 1569 2 6 ru 
+: 1573 30 6 ni
+- 1603
+: 1621 8 6 Try
+- 1629
+: 1633 2 5 To
+: 1637 2 6 ~
+: 1641 2 5 do
+: 1645 2 3 ke 
+* 1649 5 1 zen
+: 1657 4 8 soku 
+: 1665 4 7 de
+- 1669
+: 1673 2 7 Ha
+: 1677 2 8 shi
+: 1681 2 10 ri
+: 1685 2 10 ma
+: 1689 2 11 ~
+: 1693 2 10 ku 
+: 1697 5 6 no 
+: 1705 4 3 o 
+: 1713 2 6 nev
+: 1717 2 5 er
+: 1721 6 6 ~ 
+: 1729 2 8 give 
+: 1733 12 8 up
+- 1745
+: 1753 2 2 Ka
+: 1757 2 2 ze 
+: 1761 2 2 mo 
+: 1765 2 7 o
+: 1769 2 7 to 
+: 1773 2 9 mo 
+: 1777 2 7 hi
+* 1781 2 12 ka
+* 1785 6 14 ~
+: 1793 2 7 ri 
+: 1797 6 7 mo
+- 1803
+* 1809 5 2 Oi
+* 1817 4 7 koshi
+: 1825 4 9 cha
+: 1833 5 11 tte
+- 1838
+: 1841 2 11 Da
+: 1845 6 11 re 
+: 1853 2 9 mo 
+: 1857 6 8 shi
+: 1865 4 9 ra
+: 1873 2 11 na
+: 1877 6 12 ~
+: 1885 4 11 i 
+* 1893 4 5 a
+* 1901 5 6 shi
+: 1909 6 9 ta 
+: 1917 2 7 e 
+: 1921 4 6 su
+: 1929 6 7 su
+: 1937 2 9 me
+: 1941 23 11 ~
+- 1964
+: 1981 2 7 Ki
+: 1985 2 7 mi 
+: 1989 2 7 to 
+: 1993 2 7 yu
+: 1997 2 7 me 
+: 2001 2 7 o 
+: 2005 2 7 ka
+: 2009 2 7 sa
+: 2013 2 7 ne
+: 2017 6 9 te
+: 2025 5 11 ru
+- 2030
+: 2044 2 7 So
+: 2048 2 7 no 
+: 2052 2 7 su
+: 2056 2 7 ga
+: 2060 2 7 ta 
+: 2064 2 7 ko
+: 2068 2 12 no 
+: 2072 5 11 hi
+* 2080 6 9 to
+: 2088 6 11 mi 
+: 2096 2 11 u
+: 2100 6 9 tsu
+: 2108 3 9 tte
+: 2113 5 9 ru
+: 2121 2 7 ka
+: 2125 32 7 ra
+E
