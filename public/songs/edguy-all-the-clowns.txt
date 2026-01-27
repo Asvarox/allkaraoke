@@ -1,0 +1,354 @@
+#ARTIST:Edguy
+#TITLE:All The Clowns
+#CREATOR:ultrastarsongs
+#BPM:207,24
+#YEAR:2001
+#VIDEO:v=kEp8zzCofV0
+#LANGUAGE:English
+#GAP:23886,682107701217
+#ALLKARAOKE_ID:edguy-all-the-clowns
+#ALLKARAOKE_SID:5673
+#ALLKARAOKE_LASTUPDATE:2026-01-27T00:16:07.667Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:25
+#ALLKARAOKE_SOURCEURL:Edguy - All The Clowns
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Edguy - All The Clowns.mp3
+: 14 3 8 When 
+: 18 3 8 you’re 
+: 22 3 11 walk
+: 26 3 8 ing 
+: 30 3 8 down 
+: 34 3 11 the 
+: 38 5 13 emp
+: 44 5 15 ty 
+: 50 12 8 road
+- 62 64
+- 64
+: 78 3 9 Feel 
+: 82 3 9 like 
+: 86 3 9 creep
+: 90 3 8 ing, 
+: 94 3 6 crawl
+: 98 3 4 ing, 
+: 102 7 6 cold 
+: 110 7 8 and 
+: 118 12 6 bare
+- 130
+: 138 3 8 And 
+: 142 3 8 you 
+: 146 1 8 are 
+: 148 5 11 afraid 
+: 154 3 8 of 
+: 158 3 8 Mis
+: 162 3 11 tery 
+: 166 5 13 Sca
+: 172 5 15 ry 
+: 178 12 16 face
+- 190
+: 202 3 9 Don’t 
+: 206 3 9 turn 
+: 210 1 9 a
+: 212 5 9 round 
+: 218 3 8 since 
+: 222 3 6 you 
+: 226 3 4 may 
+: 230 7 6 find 
+: 238 7 8 him 
+: 246 16 6 there
+- 262
+: 274 3 9 A 
+: 278 5 11 fire 
+: 284 5 9 of 
+: 290 3 8 ho
+: 294 11 9 pe 
+: 306 3 9 has 
+: 310 5 11 turned 
+: 316 5 9 into 
+: 322 3 8 smo
+: 326 4 9 ke,
+- 330
+: 338 3 9 The 
+: 342 5 6 child 
+: 348 5 3 to 
+: 354 3 -1 a 
+: 358 32 4 man
+- 390
+: 402 3 4 It’s 
+: 406 5 4 noth
+: 412 5 6 ing 
+: 418 3 8 but 
+: 422 12 6 grey 
+: 438 5 6 paint
+: 444 5 4 ing 
+: 450 3 6 your 
+: 454 4 8 way
+- 458
+: 466 3 8 And 
+: 470 5 8 no 
+: 476 5 8 one 
+: 482 3 8 could 
+: 486 7 6 ev
+: 494 7 10 er 
+: 502 16 8 tell...
+- 518
+: 526 3 8 Tell 
+: 530 3 8 me 
+: 534 5 8 why 
+: 540 5 6 all 
+: 546 3 5 the 
+: 550 11 5 clowns 
+: 562 3 3 have 
+: 566 16 3 gone
+- 582
+: 590 3 8 Tell 
+: 594 3 8 me 
+: 598 5 10 where 
+: 604 5 6 did 
+: 610 3 5 they 
+: 614 16 3 run
+- 630
+: 638 3 5 Just 
+: 642 3 6 when 
+: 646 5 5 I 
+: 652 5 5 close 
+: 658 3 5 my 
+: 662 5 6 eyes 
+: 668 5 6 I 
+: 674 3 5 can 
+: 678 5 5 see 
+: 684 5 3 them 
+: 690 3 1 a
+: 694 8 3 rise
+- 702
+: 710 5 6 Fool 
+: 716 5 6 tell 
+: 722 3 6 me 
+: 726 5 5 where 
+: 732 5 5 did 
+: 738 3 5 you 
+: 742 20 3 go
+- 762
+: 774 5 6 Foll 
+: 780 5 6 tell 
+: 786 3 6 me 
+: 790 5 5 why 
+: 796 5 5 did 
+: 802 3 5 you 
+: 806 15 10 go 
+: 822 15 8 a
+: 838 24 6 way,
+- 862
+: 870 15 10 All 
+: 886 15 11 the 
+: 902 28 8 clowns
+- 930 992
+- 992
+: 1006 3 1 On 
+: 1010 3 1 and 
+: 1014 3 4 on, 
+: 1018 3 1 to
+: 1022 3 1 mor
+: 1026 3 4 row’s 
+: 1030 5 6 yes
+: 1036 5 8 ter
+: 1042 12 1 day
+- 1054 1056
+- 1056
+: 1070 3 1 No 
+: 1074 3 1 more 
+: 1078 3 4 tears 
+: 1082 3 1 al
+: 1086 3 1 lowed, 
+: 1090 3 3 you’ll 
+: 1094 7 6 stand 
+: 1102 7 6 your 
+: 1110 12 11 pain
+- 1122
+: 1130 3 8 The 
+: 1134 3 8 child 
+: 1138 1 8 in
+: 1140 5 11 side 
+: 1146 3 8 will 
+: 1150 3 8 die 
+: 1154 3 6 for 
+: 1158 1 6 lib
+: 1160 3 8 er
+: 1164 20 8 ty
+- 1184
+: 1194 3 9 Hope 
+: 1198 3 9 you 
+: 1202 1 9 don’t 
+: 1204 5 9 mind 
+: 1210 3 8 that 
+: 1214 3 6 they 
+: 1218 3 4 will 
+: 1222 7 6 nail 
+: 1230 7 6 a 
+: 1238 16 11 frame
+- 1254
+: 1266 3 9 A 
+: 1270 5 11 spark 
+: 1276 5 9 of 
+: 1282 3 8 a 
+: 1286 4 9 ’no’
+- 1290
+: 1298 3 9 Re
+: 1302 5 11 bel
+: 1308 5 9 lion 
+: 1314 3 8 and 
+: 1318 4 8 hope
+- 1322
+: 1330 3 8 The 
+: 1334 5 6 fi
+: 1340 5 3 re 
+: 1346 3 -1 of 
+: 1350 32 8 life
+- 1382
+: 1390 3 9 I 
+: 1394 3 9 don’t 
+: 1398 5 11 mind 
+: 1404 5 9 if 
+: 1410 3 8 you 
+: 1414 8 9 blame
+- 1422
+: 1430 5 9 Don’t 
+: 1436 5 11 feel 
+: 1442 3 13 ash
+: 1446 8 15 amed
+- 1454
+: 1462 7 15 Still 
+: 1470 7 15 I 
+: 1478 7 13 know 
+: 1486 7 17 them 
+: 1494 16 15 well
+- 1510
+: 1518 3 8 Tell 
+: 1522 3 8 me 
+: 1526 5 8 why 
+: 1532 5 6 all 
+: 1538 3 5 the 
+: 1542 11 5 clowns 
+: 1554 3 3 have 
+: 1558 16 3 gone
+- 1574
+: 1582 3 8 Tell 
+: 1586 3 8 me 
+: 1590 5 10 where 
+: 1596 5 6 did 
+: 1602 3 5 they 
+: 1606 16 3 run
+- 1622
+: 1630 3 5 Just 
+: 1634 3 6 when 
+: 1638 5 5 I 
+: 1644 5 5 close 
+: 1650 3 5 my 
+: 1654 5 6 eyes 
+: 1660 5 6 I 
+: 1666 3 5 can 
+: 1670 5 5 see 
+: 1676 5 3 them 
+: 1682 3 1 a
+: 1686 8 3 rise
+- 1694
+: 1702 5 6 Fool 
+: 1708 5 6 tell 
+: 1714 3 6 me 
+: 1718 5 5 where 
+: 1724 5 5 did 
+: 1730 3 5 you 
+: 1734 16 3 go
+- 1750 1752
+- 1752
+: 1766 5 6 Foll 
+: 1772 5 6 tell 
+: 1778 3 6 me 
+: 1782 5 5 why 
+: 1788 5 5 did 
+: 1794 3 5 you 
+: 1798 15 10 go 
+: 1814 15 8 a
+: 1830 24 6 way,
+- 1854
+: 1862 15 10 All 
+: 1878 15 11 the 
+: 1894 32 8 clowns
+- 1926 2432
+- 2432
+: 2446 3 8 Tell 
+: 2450 3 8 me 
+: 2454 5 8 why 
+: 2460 5 6 all 
+: 2466 3 5 the 
+: 2470 11 5 clowns 
+: 2482 3 3 have 
+: 2486 16 3 gone
+- 2502
+: 2510 3 8 Tell 
+: 2514 3 8 me 
+: 2518 5 10 where 
+: 2524 5 6 did 
+: 2530 3 5 they 
+: 2534 16 3 run
+- 2550
+: 2558 3 5 Just 
+: 2562 3 6 when 
+: 2566 5 5 I 
+: 2572 5 5 close 
+: 2578 3 5 my 
+: 2582 5 6 eyes 
+: 2588 5 6 I 
+: 2594 3 5 can 
+: 2598 5 5 see 
+: 2604 5 3 them 
+: 2610 3 1 a
+: 2614 8 3 rise
+- 2622
+: 2630 5 6 Fool 
+: 2636 5 6 tell 
+: 2642 3 6 me 
+: 2646 5 5 where 
+: 2652 5 5 did 
+: 2658 3 5 you 
+: 2662 16 3 go
+- 2678 2688
+- 2688
+: 2702 3 8 Tell 
+: 2706 3 8 me 
+: 2710 5 8 why 
+: 2716 5 6 all 
+: 2722 3 5 the 
+: 2726 11 5 clowns 
+: 2738 3 3 have 
+: 2742 16 3 gone
+- 2758
+: 2766 3 8 Tell 
+: 2770 3 8 me 
+: 2774 5 10 where 
+: 2780 5 6 did 
+: 2786 3 5 they 
+: 2790 16 3 run
+- 2806
+: 2814 3 5 Just 
+: 2818 3 6 when 
+: 2822 5 5 I 
+: 2828 5 5 close 
+: 2834 3 5 my 
+: 2838 5 6 eyes 
+: 2844 5 6 I 
+: 2850 3 5 can 
+: 2854 5 5 see 
+: 2860 5 3 them 
+: 2866 3 1 a
+: 2870 8 3 rise
+- 2878
+: 2886 5 6 Fool 
+: 2892 5 6 tell 
+: 2898 3 6 me 
+: 2902 5 8 where 
+: 2908 5 8 did 
+: 2914 3 8 you 
+: 2918 3 10 go
+: 2922 12 8 o
+E
