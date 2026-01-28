@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
 import { useState } from 'react';
-import { typography } from '~/modules/Elements/cssMixins';
+import { twc } from 'react-twc';
 import useRemoteMicServerStatus from '~/modules/RemoteMic/hooks/useRemoteMicServerStatus';
 
 export default function ConnectionStatus() {
@@ -32,21 +31,6 @@ export default function ConnectionStatus() {
   );
 }
 
-const Container = styled.div`
-  opacity: 0.75;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+const Container = twc.div`typography pointer-events-none fixed right-0 bottom-0 z-[100000] flex gap-2.5 text-sm opacity-75 sm:p-1`;
 
-  ${typography};
-  font-size: 1.5rem;
-
-  padding: 0.5rem;
-  display: flex;
-  gap: 1rem;
-  z-index: 100000;
-
-  pointer-events: none;
-`;
-
-const Row = styled.div``;
+const Row = twc.div``;

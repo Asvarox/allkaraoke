@@ -16,8 +16,10 @@ function MenuWithLogo({ children, supportedBrowsers }: Props) {
   return (
     <LayoutGame>
       <GithubRibbon />
-      <div className="flex h-screen w-screen flex-col items-center gap-8">
-        <Logo />
+      <div className="mobile:gap-4 flex w-screen flex-col items-center gap-8 pt-8">
+        <div className="mobile:text-5xl text-6xl">
+          <Logo />
+        </div>
         {supportedBrowsers && <RecommendedBrowsers />}
         <Menu>{children}</Menu>
       </div>

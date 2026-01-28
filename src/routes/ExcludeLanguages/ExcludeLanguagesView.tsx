@@ -1,8 +1,10 @@
-import styled from '@emotion/styled';
-import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
+import { Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
+import { twc } from 'react-twc';
+import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { Flag } from '~/modules/Elements/Flag';
 import { MenuButton } from '~/modules/Elements/Menu';
 import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
@@ -80,11 +82,11 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
 
   return (
     <MenuWithLogo>
-      <h1>Select Song Languages</h1>
-      <LanguageListContainer>
+      <Menu.Header>Select Song Languages</Menu.Header>
+      <>
         {isLoading &&
           new Array(6).fill(0).map((_, i) => (
-            <Skeleton variant="rectangular" width="100%" height="10rem" key={i}>
+            <Skeleton variant="rectangular" width="100%" height="100px" key={i}>
               <LanguageEntry data-excluded focused={false}>
                 <Flag language={['English']} />
               </LanguageEntry>
@@ -93,29 +95,32 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         {languageList.map(({ name, count }) => {
           const excluded = excludedLanguages?.includes(name) ?? false;
           return (
-            <LanguageEntry
+            <Checkbox
+              size="regular"
+              className={`relative transition-all ${excluded ? 'opacity-50' : 'opacity-100'} duration-300`}
+              checked={!excluded}
               key={name}
               data-excluded={excluded}
               {...register(`lang-${name}`, () => toggleLanguage(name))}>
-              <Check>{excluded ? <CheckBoxOutlineBlank /> : <CheckBox />}</Check>
               <span>
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
-              <LanguageFlagBackground data-excluded={excluded}>
-                <Flag language={[name]} />
-              </LanguageFlagBackground>
-            </LanguageEntry>
+              <div
+                className={`absolute top-0 right-0 bottom-0 w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
+                <Flag language={[name]} className="h-full w-full object-cover" />
+              </div>
+            </Checkbox>
           );
         })}
         {otherSongCount > 0 && (
-          <Disclaimer>
+          <Menu.HelpText className="text-right">
             …and <strong>{otherSongCount} songs</strong> in other languages
-          </Disclaimer>
+          </Menu.HelpText>
         )}
-      </LanguageListContainer>
-      <h3>
+      </>
+      <Menu.HelpText>
         You can always update the selection in <strong>Manage Songs</strong> menu
-      </h3>
+      </Menu.HelpText>
       <NextButtonContainer>
         <MenuButton
           {...register('close-exclude-languages', onClose, undefined, true, {
@@ -123,92 +128,32 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
           })}>
           {closeText}
         </MenuButton>
-        <Disclaimer>
+        <Menu.HelpText className="text-right">
           The list will contain{' '}
           <strong>
             <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
           </strong>{' '}
           songs
-        </Disclaimer>
+        </Menu.HelpText>
         {areAllLanguagesExcluded && (
-          <Disclaimer data-test="all-languages-excluded-warning">
+          <Menu.HelpText data-test="all-languages-excluded-warning">
             <strong>
               <Warning />
             </strong>{' '}
             You excluded all the languages, pick at least one
-          </Disclaimer>
+          </Menu.HelpText>
         )}
       </NextButtonContainer>
     </MenuWithLogo>
   );
 }
 
-const NextButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
+const NextButtonContainer = twc.div`flex flex-col gap-2.5`;
 
-const Disclaimer = styled.h4`
-  text-align: right;
-`;
+const LanguageName = twc.span`transition-[300ms]`;
 
-const Check = styled.div`
-  svg {
-    width: 3rem;
-    height: 3rem;
-  }
-`;
-
-const LanguageListContainer = styled.div`
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-const LanguageName = styled.span`
-  transition: 300ms;
-`;
-
-const LanguageFlagBackground = styled.div`
-  transition: 300ms;
-  opacity: 0.95;
-  &[data-excluded='true'] {
-    filter: grayscale(0.6);
-    opacity: 0.5;
-  }
-
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  img {
-    width: 14rem;
-    height: 8rem;
-    object-fit: cover;
-  }
-  overflow: hidden;
-  width: 14rem;
-  height: 8rem;
-`;
-
-const LanguageEntry = styled(MenuButton)`
-  &[data-excluded='true'] {
-    text-decoration: line-through white;
-    opacity: 0.5;
-    &[data-focused='false'] {
-      background: rgba(0, 0, 0, 0.55);
-    }
-  }
-  justify-content: flex-start;
-  gap: 2rem;
-  font-size: 2.5rem;
-  padding-left: 3rem;
-  margin: 0;
-  height: 8rem;
-
-  position: relative;
-
-  width: 100%;
-`;
+const LanguageEntry = twc(
+  MenuButton,
+)`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50 data-[excluded=true]:data-[focused=false]:bg-black/55`;
 
 export default ExcludeLanguagesView;

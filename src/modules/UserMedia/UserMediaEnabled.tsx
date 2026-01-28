@@ -1,7 +1,6 @@
-import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
 import { PropsWithChildren, ReactNode } from 'react';
-import styles from '~/modules/GameEngine/Drawing/styles';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { useMicrophoneStatus } from '~/modules/UserMedia/hooks';
 import isOpera from '~/modules/utils/isOpera';
 import allowMic from './allow-mic.png';
@@ -16,58 +15,38 @@ interface Props extends PropsWithChildren {
 }
 const UserMediaEnabled = ({ children, fallback, showImages = true }: Props) => {
   const status = useMicrophoneStatus();
+
+  const imageClassName = 'box-border max-w-full rounded-2xl border-8 border-white shadow-lg mt-6 mb-2';
+
   return (
     <>
       {status === 'accepted' && children}
       {status !== 'accepted' && (
         <>
-          <WarningContainer>
-            <WarningIcon />
-          </WarningContainer>
+          <div className="flex w-full justify-center">
+            <Warning className="text-active text-3xl" />
+          </div>
           {fallback}
-          <AdditionalInfo>
-            {status === 'requested' && showImages && <img src={allowMic} alt="how-to-allow" />}
+          <div className="text-center">
+            {status === 'requested' && showImages && (
+              <img className={imageClassName} src={allowMic} alt="how-to-allow" />
+            )}
             {status === 'declined' && (
               <>
-                <h3>Access is blocked, you can unblock it here</h3>
-                {showImages && <img src={getProperEnableMicImage()} alt="how-to-enable" />}
+                <span className="typography text-lg">Access is blocked, you can unblock it here</span>
+                {showImages && <img className={imageClassName} src={getProperEnableMicImage()} alt="how-to-enable" />}
               </>
             )}
             {isOpera() && (
-              <h4>
+              <Menu.HelpText className="text-lg">
                 <strong>Opera</strong> is buggy regarding microphone access - if you encounter issue (e.g. this message
                 stays even after the access to microphone was granted), consider other browsers.
-              </h4>
+              </Menu.HelpText>
             )}
-          </AdditionalInfo>
+          </div>
         </>
       )}
     </>
   );
 };
-
-const AdditionalInfo = styled.div`
-  text-align: center;
-
-  img {
-    margin: 1.5rem 0 0.5rem;
-    box-shadow:
-      0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5),
-      inset 0 0 0.5rem 0.5rem rgba(255, 255, 255, 0.5);
-    border: 0.5rem solid white;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-`;
-
-const WarningContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-`;
-const WarningIcon = styled(Warning)`
-  color: ${styles.colors.text.active};
-  font-size: 3rem;
-`;
 export default UserMediaEnabled;

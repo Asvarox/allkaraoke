@@ -9,9 +9,9 @@ export const InputWrapper = (props: React.PropsWithChildren<{ info?: ReactNode }
   }
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       {children}
-      <Typography className="pl-2 text-sm leading-8">{info}</Typography>
+      <Typography className="pl-2 text-sm leading-6">{info}</Typography>
     </div>
   );
 };

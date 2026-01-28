@@ -103,7 +103,7 @@ const Container = styled.div<{ active: boolean }>`
 `;
 
 const Playlist = styled(Button)`
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   justify-self: stretch;
   flex-grow: 1;
   &[data-focused='false'][data-active='true'] {
@@ -115,5 +115,5 @@ const Playlist = styled(Button)`
   &[data-selected='false'][data-active='false'] {
     opacity: 0.75;
   }
-  padding: 1.5rem 1rem;
+  padding: 1rem 0.75rem;
 `;

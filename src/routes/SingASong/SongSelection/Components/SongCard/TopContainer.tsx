@@ -103,11 +103,11 @@ const SongCardTopRightContainer = styled.div`
 `;
 
 const SongIndicator = styled.div`
-  height: 2.75rem;
-  min-width: 2.75rem;
+  height: 2rem;
+  min-width: 2rem;
   box-sizing: border-box;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,8 +125,8 @@ const SongIndicatorIcon = styled(SongIndicator)<{ white?: boolean }>`
   svg,
   img {
     fill: ${(props) => (props.white ? 'white' : styles.colors.text.active)};
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 `;
 
@@ -137,14 +137,14 @@ const EurovisionIcon = styled.img`
 `;
 
 const SongIndicatorStat = styled(SongIndicator)`
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 `;
 
 const MultiTrackIndicator = styled(SongIndicatorStat)`
   margin-right: auto;
 
   svg {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 `;

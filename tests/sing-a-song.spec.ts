@@ -156,6 +156,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await expect(await pages.songListPage.getSongElement(song1.ID)).not.toBeVisible();
     await pages.songListPage.approveSelectedSongByKeyboard();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
+    await pages.songListPage.toolbar.toggleHelp();
   });
 
   await test.step('Players names should be already prefilled and updated name visible on recent player list', async () => {

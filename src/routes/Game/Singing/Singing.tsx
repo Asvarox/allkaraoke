@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { useEffect, useRef, useState } from 'react';
 import { GAME_MODE, SingSetup, SongPreview } from '~/interfaces';
 import { Calibration } from '~/modules/Calibration/Calibration';
@@ -17,10 +16,6 @@ import { CalibrationIntro } from '~/routes/Game/Singing/CalibrationIntro';
 import WaitForReadiness from '~/routes/Game/Singing/WaitForReadiness';
 import LayoutGame from '~/routes/LayoutGame';
 import { IsCalibratedSetting, useSettingValue } from '~/routes/Settings/SettingsState';
-import {
-  SongListEntryDetailsArtist,
-  SongListEntryDetailsTitle,
-} from '~/routes/SingASong/SongSelection/Components/SongCard';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 
@@ -72,11 +67,30 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   } else {
     return (
       <LayoutGame>
-        <Container>
-          <BackgroundContainer visible={isOverlayVisible} data-test="background-container">
-            <Overlay video={songPreview.video} width={width} height={height} />
-            <Artist data-test="song-artist">{songPreview.artist}</Artist>
-            <Title data-test="song-title">{songPreview.title}</Title>
+        <div className="relative">
+          <div
+            className={`pointer-events-none fixed inset-0 z-10 flex h-full w-full flex-col items-stretch px-10 py-10 transition-opacity duration-500 [view-transition-name:song-preview] ${
+              isOverlayVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+            data-test="background-container">
+            <div
+              className="absolute inset-0 scale-105 bg-black bg-cover bg-center blur-[10px]"
+              style={{
+                backgroundImage: `url('https://i3.ytimg.com/vi/${songPreview.video}/hqdefault.jpg')`,
+                width: `${width}px`,
+                height: `${height}px`,
+              }}
+            />
+            <span
+              className="typography text-2xl [view-transition-name:song-preview-artist] 2xl:text-3xl"
+              data-test="song-artist">
+              {songPreview.artist}
+            </span>
+            <span
+              className="typography text-active text-3xl [view-transition-name:song-preview-title] 2xl:text-5xl"
+              data-test="song-title">
+              {songPreview.title}
+            </span>
             <Modal open={showCalibration}>
               {showCalibration && (
                 <Menu>
@@ -96,7 +110,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                 }}
               />
             )}
-          </BackgroundContainer>
+          </div>
           {song.data && !showCalibration && (
             <Player
               pauseMenu
@@ -129,58 +143,10 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
               restartSong={restartSong}
             />
           )}
-        </Container>
+        </div>
       </LayoutGame>
     );
   }
 }
-
-const Container = styled.div`
-  position: relative;
-`;
-
-const BackgroundContainer = styled.div<{ visible: boolean }>`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  pointer-events: none;
-  background-color: black;
-  view-transition-name: song-preview;
-  opacity: ${(props) => (props.visible ? 1 : 0)};
-  transition: 500ms;
-`;
-
-const BaseOverlay = styled.div`
-  background-size: cover;
-  background-position: center center;
-  filter: blur(10px);
-`;
-
-const Overlay = (props: { video: string; width: number; height: number }) => (
-  <BaseOverlay
-    style={{
-      backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-      width: `${props.width}px`,
-      height: `${props.height}px`,
-    }}
-  />
-);
-
-const Artist = styled(SongListEntryDetailsArtist)`
-  view-transition-name: song-preview-artist;
-  position: absolute;
-  top: 10rem;
-  left: 10rem;
-  font-size: 7rem;
-`;
-const Title = styled(SongListEntryDetailsTitle)`
-  view-transition-name: song-preview-title;
-  position: absolute;
-
-  font-size: 8rem;
-  top: 19rem;
-  left: 10rem;
-`;
 
 export default Singing;

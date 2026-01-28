@@ -1,6 +1,7 @@
-import styled from '@emotion/styled';
 import { Laptop, PhoneAndroid, Wifi } from '@mui/icons-material';
 import React, { useEffect } from 'react';
+import { twc } from 'react-twc';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
 import Modal from '~/modules/Elements/Modal';
 import styles from '~/modules/GameEngine/Drawing/styles';
@@ -40,75 +41,37 @@ export default function ConfirmWifiModal({ onClose }: Props) {
 
   return (
     <Modal onClose={closeModal} open={!closed}>
-      <Menu>
+      <style>{`
+        @keyframes pulse {
+          0% { color: ${styles.colors.text.default}; transform: scale(1); }
+          25% { color: ${styles.colors.text.active}; transform: scale(1.1); }
+          50% { color: ${styles.colors.text.default}; transform: scale(1); }
+        }
+      `}</style>
+      <MenuComponent>
         <Wrapper>
-          <h3>
+          <span className="typography text-lg">
             Connect to the <strong>same Wi-Fi</strong>
-          </h3>
+          </span>
           <IconsWrapper>
             <PhoneAndroid />
-            ...
             <Wifi />
-            ...
             <Laptop />
           </IconsWrapper>
 
-          <h4>Connect to the same Wi-Fi as the game.</h4>
+          <Menu.HelpText>Connect to the same Wi-Fi as the game.</Menu.HelpText>
         </Wrapper>
-        <h6>Otherwise microphones might not work properly.</h6>
+        <Menu.HelpText>Otherwise microphones might not work properly.</Menu.HelpText>
         <MenuButton onClick={closeModal} focused data-test="confirm-wifi-connection">
           I&#39;m connected, continue
         </MenuButton>
-      </Menu>
+      </MenuComponent>
     </Modal>
   );
 }
 
-const Menu = styled(MenuContainer)`
-  gap: 1rem;
-`;
+const MenuComponent = twc(MenuContainer)`gap-2.5`;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-`;
+const Wrapper = twc.div`flex flex-col items-center gap-5`;
 
-const IconsWrapper = styled.div`
-  margin: 2rem 0;
-  display: flex;
-  color: white;
-  align-items: center;
-  gap: 2rem;
-
-  @keyframes pulse {
-    0% {
-      color: ${styles.colors.text.default};
-      transform: scale(1);
-    }
-    25% {
-      color: ${styles.colors.text.active};
-      transform: scale(1.1);
-    }
-    50% {
-      color: ${styles.colors.text.default};
-      transform: scale(1);
-    }
-  }
-
-  svg {
-    animation: pulse 2s infinite;
-    font-size: 7rem;
-
-    :nth-of-type(1) {
-      animation-delay: 0s;
-    }
-    :nth-of-type(2) {
-      animation-delay: 0.5s;
-    }
-    :nth-of-type(3) {
-      animation-delay: 1s;
-    }
-  }
-`;
+const IconsWrapper = twc.div`my-5 flex items-center gap-5 text-white [&_svg]:text-7xl [&_svg:nth-of-type(1)]:animate-[pulse_2s_infinite_0s] [&_svg:nth-of-type(2)]:animate-[pulse_2s_infinite_0.5s] [&_svg:nth-of-type(3)]:animate-[pulse_2s_infinite_1s]`;

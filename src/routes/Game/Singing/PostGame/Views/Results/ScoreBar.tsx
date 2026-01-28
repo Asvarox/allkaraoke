@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 
 interface Props {
   score: number;
@@ -15,30 +15,23 @@ function easing(x: number): number {
 }
 
 function ScoreBar({ color, maxScore, score }: Props) {
+  const rawProgress = maxScore > 0 ? score / maxScore : 0;
+  const progress = Math.max(0, Math.min(1, rawProgress));
+
   return (
-    <SScoreBar
+    <div
+      className={clsx(
+        'box-border h-full rounded-lg transition-all duration-1000',
+        score === 0 ? 'border-0' : 'border border-black',
+      )}
       style={{
-        border: score === 0 ? 0 : undefined,
-        width: `${easing(score / maxScore) * 24}%`,
+        width: `${easing(progress) * 24}%`,
         backgroundColor: color,
+        backgroundImage:
+          'linear-gradient(180deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.18) 51%, rgba(0, 0, 0, 0.18) 100%)',
       }}
     />
   );
 }
-
-const SScoreBar = styled.div`
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.17) 0%,
-    rgba(0, 0, 0, 0.03) 50%,
-    rgba(0, 0, 0, 0.18) 51%,
-    rgba(0, 0, 0, 0.18) 100%
-  );
-  transition: 1s;
-  border-radius: 0.5rem;
-  height: 100%;
-  border: solid 0.1rem black;
-  box-sizing: border-box;
-`;
 
 export default ScoreBar;

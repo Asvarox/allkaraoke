@@ -23,7 +23,7 @@
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs",
-        "moduleResolution": "node",
+      "moduleResolution": "node",
       "baseUrl": "./src"
     },
     "transpileOnly": true

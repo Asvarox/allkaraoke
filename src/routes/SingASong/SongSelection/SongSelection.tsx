@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { useMediaQuery } from '@mui/material';
+import isMobile from 'is-mobile';
 import {
   ComponentProps,
   memo,
@@ -14,7 +16,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import { Link } from 'wouter';
 import { SingSetup, SongPreview as SongPreviewEntity } from '~/interfaces';
 import { BackgroundContext, useBackground } from '~/modules/Elements/BackgroundContext';
-import { focused, typography } from '~/modules/Elements/cssMixins';
+import { focused, mobileMQ, typography } from '~/modules/Elements/cssMixins';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';
@@ -24,10 +26,7 @@ import useBaseUnitPx from '~/modules/hooks/useBaseUnitPx';
 import useBlockScroll from '~/modules/hooks/useBlockScroll';
 import useSmoothNavigate, { buildUrl } from '~/modules/hooks/useSmoothNavigate';
 import useViewportSize from '~/modules/hooks/useViewportSize';
-import { FeatureFlags } from '~/modules/utils/featureFlags';
-import useFeatureFlag from '~/modules/utils/useFeatureFlag';
 import LayoutGame from '~/routes/LayoutGame';
-import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import AdditionalListControls from '~/routes/SingASong/SongSelection/Components/AdditionalListControls';
 import BackgroundThumbnail from '~/routes/SingASong/SongSelection/Components/BackgroundThumbnail';
 import { Components } from '~/routes/SingASong/SongSelection/Components/CustomVirtualization';
@@ -53,12 +52,8 @@ declare global {
 }
 
 const focusMultiplier = 1.15;
-const MAX_SONGS_PER_ROW = 4;
 
-const LIST_SIDEBAR_WEIGHT_REM = 7;
-const LIST_PADDING_RIGHT_REM = 4.5;
-const LIST_PADDING_LEFT_REM = LIST_SIDEBAR_WEIGHT_REM + LIST_PADDING_RIGHT_REM;
-const LIST_GAP_REM = 3.5;
+const LIST_SIDEBAR_WEIGHT_REM = 5;
 
 const components: Components<{
   songPreviewProps: Omit<ComponentProps<typeof SongPreview>, 'songPreview'> & { songPreview?: SongPreviewEntity };
@@ -77,11 +72,14 @@ const components: Components<{
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
   const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
-  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
+  const isMobileDevice = useMemo(() => isMobile(), []);
+  const isLandscape = useMediaQuery('(orientation: landscape)');
 
   // Mobile mode always shows 3 songs per row, regardless of feature flag
-  const songsPerRow = mobilePhoneMode || fewerSongsPerRowEnabled ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
+  const songsPerRow = !isLandscape && isMobileDevice ? 1 : isMobileDevice && isLandscape ? 2 : 3;
+  const LIST_GAP_REM = isMobileDevice ? 1 : 2.5;
+  const LIST_PADDING_RIGHT_REM = isMobileDevice ? 1 : 2;
+  const LIST_PADDING_LEFT_REM = LIST_SIDEBAR_WEIGHT_REM + LIST_PADDING_RIGHT_REM;
 
   useBackgroundMusic(false);
   useBackground(true);
@@ -349,8 +347,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 const AddSongs = styled.div`
   ${typography};
   text-align: center;
-  font-size: 5rem;
-  padding: 10rem 0;
+  font-size: 3rem;
+  padding: 8rem 0;
 `;
 
 const Container = styled.div<{ songsPerRow: number }>`
@@ -386,7 +384,7 @@ const NoSongsFound = styled.div`
   flex: 1;
   height: 75vh;
 
-  font-size: 10rem;
+  font-size: 8rem;
 `;
 const SongListContainer = styled.div<{ active?: boolean; dim?: boolean }>`
   position: relative;
@@ -456,13 +454,17 @@ const ListRow = styled(BaseRow)`
 const SongsGroupHeader = styled.div`
   ${typography};
   display: flex;
-  padding: 0.5rem 1rem;
-  font-size: 5.4rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 3rem;
+
+  ${mobileMQ} {
+    font-size: 2rem;
+  }
   z-index: 1;
   color: ${styles.colors.text.active};
   background: rgba(0, 0, 0, 0.7);
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 `;
 
 const SongsGroupContainer = styled.div`

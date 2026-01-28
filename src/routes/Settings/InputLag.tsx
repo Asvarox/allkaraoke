@@ -15,7 +15,6 @@ const InputLag = ({ ref, ...restProps }: Props) => {
 
   return (
     <InputLagField
-      className="text-[2.7rem]"
       ref={inputRef}
       label="Input lag"
       value={String(inputLag)}

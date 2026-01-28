@@ -1,17 +1,24 @@
 import styled from '@emotion/styled';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { ComponentProps } from 'react';
-import { typography } from '~/modules/Elements/cssMixins';
-import { inputStatus } from '~/modules/GameEngine/Input/Interface';
+import { mobileMQ, typography } from '~/modules/Elements/cssMixins';
+import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
+import Ping from './Ping';
 
-interface Props extends ComponentProps<typeof StatusContainer> {
-  status: inputStatus;
+interface Props extends ComponentProps<'div'> {
+  playerNumber: 0 | 1 | 2 | 3;
   tooltipPosition?: 'start' | 'end';
 }
 
-function PlayerStatus({ status, tooltipPosition = 'end', ...restProps }: Props) {
+function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...restProps }: Props) {
+  const status = usePlayerMicStatus(playerNumber);
+
   return (
-    <StatusContainer {...restProps}>
+    <div
+      {...restProps}
+      className={`relative flex w-full items-center justify-end gap-2 ${className}`}
+      data-test="player-mic-status">
+      <Ping playerNumber={playerNumber} />
       {status === 'ok' ? (
         <OkIcon data-test="status-ok" />
       ) : status === 'unavailable' ? (
@@ -32,28 +39,19 @@ function PlayerStatus({ status, tooltipPosition = 'end', ...restProps }: Props) 
           </span>
         </StatusDescription>
       ) : null}
-    </StatusContainer>
+    </div>
   );
 }
 export default PlayerStatus;
 
-const StatusContainer = styled.span`
-  position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
-  font-size: 3rem;
-  z-index: 10;
-  svg {
-    width: 3rem;
-    height: 3rem;
-    text-shadow: black;
-  }
-`;
-
 const OkIcon = styled.div`
   margin: 0.15rem;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  ${mobileMQ} {
+    width: 1rem;
+    height: 1rem;
+  }
   display: inline-block;
   background: #ffffff;
   border: 1px solid black;
@@ -73,14 +71,12 @@ const StatusDescription = styled.div<{ position: Props['tooltipPosition'] }>`
   ${typography};
   position: absolute;
   left: ${(props) => (props.position === 'end' ? '100%' : 'auto')};
-  right: ${(props) => (props.position === 'end' ? 'auto' : '150%')};
-  top: -0.5rem;
-  font-size: 1.5rem;
-  height: 100%;
+  right: ${(props) => (props.position === 'end' ? 'auto' : '100%')};
+  top: 0;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  width: 25rem;
+  width: 20rem;
   background: rgba(0, 0, 0, 0.75);
   padding: 0.5rem;
-  margin-left: 2rem;
 `;

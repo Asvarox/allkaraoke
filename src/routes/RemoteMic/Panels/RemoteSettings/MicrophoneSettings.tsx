@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { MenuButton } from '~/modules/Elements/Menu';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import { MIC_ID_KEY } from '~/modules/RemoteMic/Network/Client/NetworkClient';
 import storage from '~/modules/utils/storage';
@@ -34,14 +34,14 @@ function MicrophoneSettings() {
   };
   return (
     <>
-      <MenuButton onClick={reset} size="small" data-test="reset-microphone">
+      <Menu.Button onClick={reset} size="small" data-test="reset-microphone">
         Reset microphone
-      </MenuButton>
-      <h6 data-test={'reset-mic-info'}>
+      </Menu.Button>
+      <Menu.HelpText data-test={'reset-mic-info'}>
         <strong>Note:</strong> removes all persisted microphone data (your name, ID etc.)
-      </h6>
+      </Menu.HelpText>
       <hr />
-      <h3>Adjust microphone lag</h3>
+      <Menu.SubHeader>Adjust microphone lag</Menu.SubHeader>
       <NumericInput
         value={currentValue}
         onChange={changeValue}
@@ -50,7 +50,9 @@ function MicrophoneSettings() {
         step={25}
         data-test="microphone-delay"
       />
-      <h6>Adjust the microphone input delay (e.g. if the game doesn&#39;t detect you hitting the note on time)</h6>
+      <Menu.HelpText>
+        Adjust the microphone input delay (e.g. if the game doesn&#39;t detect you hitting the note on time)
+      </Menu.HelpText>
     </>
   );
 }
