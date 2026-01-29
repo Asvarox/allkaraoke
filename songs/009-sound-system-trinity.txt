@@ -1,0 +1,146 @@
+#ARTIST:009 Sound System
+#TITLE:Trinity
+#CREATOR:aac
+#BPM:242
+#YEAR:2009
+#VIDEO:v=kBVDRgbg_MU
+#GENRE:Dance & Electronic
+#LANGUAGE:English
+#GAP:46728,264462809915
+#ALLKARAOKE_ID:009-sound-system-trinity
+#ALLKARAOKE_SID:5733
+#ALLKARAOKE_LASTUPDATE:2026-01-29T00:17:08.788Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:009 Sound System - Trinity
+#ALLKARAOKE_VOLUME:0,5
+#MP3:009 Sound System - Trinity.mp3
+: 16 38 8 I
+- 54
+: 60 2 8 Yeah 
+: 64 2 8 I’m 
+: 70 2 8 co
+: 76 2 10 ming 
+* 80 8 10 home 
+: 92 2 8 a
+: 96 2 8 gain
+: 100 26 6 ~
+- 126
+: 140 2 4 To 
+* 144 18 11 you
+- 162
+: 172 2 9 Cuz 
+* 176 4 9 you’re 
+: 184 2 9 my 
+* 188 8 11 on
+: 200 2 9 ly 
+* 204 6 8 friend
+* 212 18 6 ~
+- 230 248
+- 248
+: 264 4 8 I’ll 
+: 272 36 8 lean
+- 308
+: 320 2 8 In
+: 326 2 8 to 
+: 332 2 10 the 
+: 336 8 10 spi
+: 346 2 8 rits 
+: 350 4 8 hands
+: 356 24 6 ~
+- 380
+: 396 2 6 Be
+: 400 20 11 lieve
+- 420
+: 428 2 9 In 
+: 432 6 9 tri
+: 440 2 9 ni
+* 444 8 11 ty 
+: 456 2 9 a
+: 460 4 8 gain
+* 466 22 6 ~
+- 488
+: 492 2 6 Like 
+: 496 2 5 it’
+: 500 2 6 ll 
+: 504 2 5 ne
+: 508 2 6 ver 
+: 512 12 5 end
+- 524 568
+- 568
+: 584 4 6 Black 
+: 592 12 5 stars
+- 604
+: 616 4 6 Big 
+* 624 12 5 night
+- 636
+: 644 2 5 Were 
+: 648 4 6 you 
+: 656 2 5 run
+: 660 2 5 nin’ 
+: 664 6 5 fast
+- 670
+: 672 2 5 All 
+: 676 2 5 of 
+: 680 2 8 your 
+* 684 4 8 life
+- 688
+: 700 2 8 I 
+: 704 4 8 know 
+: 712 4 10 that 
+: 720 8 8 fee
+: 732 12 6 lin’
+- 744 748
+- 748
+: 764 2 8 I 
+: 768 2 8 know 
+: 772 2 8 it 
+: 776 4 10 ain’t 
+* 784 8 8 ea
+: 796 12 6 sy
+- 808
+: 820 2 8 No 
+: 824 2 8 mat
+: 828 2 8 ter 
+: 832 2 8 if 
+: 836 2 8 you 
+: 840 6 8 try
+- 846
+: 848 2 5 Li
+: 852 2 5 vin’ 
+: 856 4 5 for 
+: 864 2 5 just 
+: 868 4 6 one 
+: 876 8 8 day
+- 884 892
+- 892
+: 908 2 6 Or 
+: 912 2 6 sa
+: 916 2 6 vin’ 
+: 920 2 6 up 
+: 924 2 6 the 
+: 928 2 6 ho
+: 932 4 8 ly 
+* 940 6 10 grace
+: 948 6 8 ~
+- 954
+: 968 2 6 Ne
+: 972 2 6 ver 
+: 976 4 11 be 
+: 988 2 6 as
+: 1000 6 11 hamed
+- 1006
+: 1020 2 11 To 
+: 1024 2 11 call 
+* 1028 4 13 his 
+: 1036 4 13 name
+: 1044 6 11 ~
+- 1050 1056
+- 1056
+: 1072 2 8 Tri
+: 1076 2 8 ni
+: 1080 2 8 ty’s 
+: 1084 2 8 a 
+* 1088 4 8 friend
+: 1096 4 8 ~
+E

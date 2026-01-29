@@ -1,0 +1,203 @@
+#ARTIST:The Notting Hillbillies
+#TITLE:Your Own Sweet Way
+#CREATOR:mustangfred et mlef
+#BPM:208,11
+#YEAR:1990
+#VIDEO:v=__yJN2TuBCo
+#GENRE:Blues
+#LANGUAGE:English
+#GAP:17930,918264379416
+#ALLKARAOKE_ID:the-notting-hillbillies-your-own-sweet-way
+#ALLKARAOKE_SID:5727
+#ALLKARAOKE_LASTUPDATE:2026-01-29T00:17:08.187Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:The Notting Hillbillies - Your Own Sweet Way
+#ALLKARAOKE_VOLUME:0,5
+#MP3:The Notting Hillbillies - Your Own Sweet Way.mp3
+#COVER:The Notting Hillbillies - Your Own Sweet Way [CO].jpg
+#BACKGROUND:The Notting Hillbillies - Your Own Sweet Way [BG].jpg
+: 14 1 -3 There's 
+: 16 1 2 noth
+: 18 1 2 ing 
+: 20 2 2 I 
+: 23 4 2 can 
+: 28 4 6 do
+- 32
+: 45 3 2 Noth
+: 49 1 2 ing 
+: 51 3 6 I 
+: 56 2 2 can 
+: 61 2 2 say
+- 63 70
+- 70
+: 84 1 2 You'll 
+: 86 2 2 do 
+: 89 1 2 what 
+: 92 2 6 you 
+: 95 2 2 want 
+: 99 2 2 to, 
+: 103 1 2 you'll 
+: 105 2 6 go 
+: 108 1 2 your 
+: 111 4 9 own 
+: 118 3 7 sweet 
+: 123 1 4 way
+: 125 2 2 ~
+- 127
+: 132 2 2 You'll 
+: 135 3 5 go 
+: 139 3 2 your 
+* 143 8 9 own 
+: 155 3 5 sweet
+- 158
+: 171 3 2 Your 
+: 175 13 7 own 
+: 199 5 7 sweet 
+* 207 3 5 way
+* 211 3 2 ~
+- 214 246
+- 246
+: 260 1 2 You'll 
+: 262 4 5 go 
+: 267 2 2 your 
+: 270 10 9 own 
+: 284 3 5 sweet
+- 287
+: 300 3 2 Your 
+: 304 9 7 own
+: 314 1 9 ~
+: 316 2 7 ~
+: 319 3 5 ~ 
+: 327 2 5 sweet
+: 330 2 7 ~ 
+: 335 2 5 way
+: 338 4 2 ~
+- 342 374
+- 374
+: 388 1 0 Now 
+: 390 4 0 I 
+: 395 1 0 can 
+: 398 3 2 talk 
+: 403 2 2 to 
+: 406 1 0 you 
+: 410 2 5 se
+: 413 1 5 ri
+: 415 1 5 ous
+- 416
+: 426 1 0 I 
+: 428 1 0 can 
+: 430 4 2 talk 
+: 435 1 2 to 
+: 438 3 0 you 
+: 443 2 5 nice
+- 445
+: 453 1 0 But 
+: 455 1 2 when 
+: 457 1 0 it 
+: 459 7 2 comes 
+: 470 4 0 to 
+: 475 7 5 love 
+: 483 2 2 you 
+: 486 3 2 won't 
+* 491 3 9 take 
+: 497 1 7 good 
+: 499 2 7 ad
+: 502 3 5 vice
+- 505
+: 515 2 2 You'll 
+: 518 3 5 go 
+: 523 1 2 your 
+: 526 9 9 own 
+: 539 3 5 sweet
+- 542
+: 555 2 2 Your 
+: 558 16 7 own 
+* 582 6 7 sweet 
+: 591 3 5 way
+: 595 3 2 ~
+- 598 620
+- 620
+: 634 6 2 Yeah, 
+: 643 2 2 you'll 
+: 646 3 5 go 
+: 651 2 2 your 
+: 654 8 9 own 
+: 667 3 5 sweet
+- 670
+: 683 2 2 Your 
+: 686 11 7 own
+: 698 1 9 ~
+: 700 2 7 ~
+: 703 2 5 ~ 
+: 710 1 5 sweet
+: 712 4 7 ~ 
+: 718 3 5 way
+: 722 3 2 ~
+- 725 1044
+- 1044
+: 1058 2 7 It 
+: 1061 4 7 does
+: 1066 1 5 n't 
+* 1069 2 9 mat
+* 1072 2 2 ter 
+: 1076 5 2 what 
+: 1082 1 0 I 
+: 1085 3 2 say
+- 1088
+: 1093 3 2 What 
+: 1097 1 0 I 
+: 1099 2 2 do 
+: 1102 1 0 or 
+: 1104 2 2 what 
+: 1107 3 2 I 
+: 1113 2 5 think
+- 1115
+: 1129 2 0 You 
+: 1132 1 2 can 
+: 1134 1 2 lead 
+: 1136 1 0 a 
+: 1138 2 2 horse 
+: 1142 3 0 to 
+* 1146 3 5 wa
+* 1150 2 5 ter
+- 1152
+: 1162 2 2 You 
+: 1165 3 9 can't 
+: 1170 3 9 make 
+: 1175 2 7 him 
+: 1178 1 5 drink
+: 1180 1 2 ~
+- 1181
+: 1187 1 2 You'll 
+: 1189 3 5 go 
+: 1193 2 2 your 
+: 1197 9 9 own 
+: 1211 2 5 sweet
+- 1213
+: 1227 2 2 Your 
+: 1230 18 7 own 
+: 1253 4 7 sweet 
+: 1262 3 5 way
+: 1266 1 2 ~
+- 1267 1287
+- 1287
+: 1301 2 5 I 
+: 1306 3 2 say
+- 1309
+: 1314 1 2 You'll 
+: 1317 3 5 go 
+: 1322 2 2 your 
+: 1325 9 9 own 
+: 1338 4 5 sweet
+- 1342
+: 1355 2 2 Your 
+: 1358 9 7 own
+: 1368 1 9 ~
+: 1370 2 7 ~
+: 1373 4 5 ~ 
+: 1381 2 5 sweet
+: 1384 2 7 ~ 
+: 1389 4 5 way
+: 1394 2 2 ~
+E
