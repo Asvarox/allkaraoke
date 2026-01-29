@@ -21,6 +21,7 @@
     "My Chemical Romance",
     "Bee Gees",
     "Billie Eilish",
+    "Elton John",
     "Disturbed",
     "ABBA",
     "Ghost",
@@ -35,7 +36,6 @@
     "Kelly Clarkson",
     "Lana Del Rey",
     "Backstreet Boys",
-    "Elton John",
     "Jamiroquai",
     "Maroon 5",
     "Miley Cyrus",
@@ -130,6 +130,7 @@
     "Aerosmith",
     "Black Sabbath",
     "Blind Guardian",
+    "Cheryl Cole",
     "Chris Brown",
     "Daft Punk",
     "Delta Goodrem",
@@ -148,8 +149,7 @@
     "Texas",
     "The Smashing Pumpkins",
     "The Who",
-    "twenty øne piløts",
-    "Weezer"
+    "twenty øne piløts"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5705
+  "songs": 5748
 }

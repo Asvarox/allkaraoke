@@ -1,0 +1,96 @@
+#ARTIST:Counting Crows
+#TITLE:Walkaways
+#CREATOR:mancer
+#BPM:392
+#YEAR:1996
+#VIDEO:v=oedzYv-jybk
+#LANGUAGE:English
+#GAP:14505,102040816326
+#ALLKARAOKE_ID:counting-crows-walkaways
+#ALLKARAOKE_SID:5724
+#ALLKARAOKE_LASTUPDATE:2026-01-29T00:17:07.813Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:19
+#ALLKARAOKE_SOURCEURL:Counting Crows - Walkaways
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Counting Crows - Walkaways.mp3
+#COVER:Counting Crows - Walkaways [CO].jpg
+#BACKGROUND:Counting Crows - Walkaways [BG].jpg
+: 26 3 2 "Got
+: 30 3 4 ta 
+: 36 8 6 rush 
+: 46 4 9 a
+: 50 15 7 way"
+: 65 13 11 ~ 
+: 115 11 11 she 
+: 135 14 9 said
+: 149 24 7 ~
+- 173 175
+- 175
+: 201 18 9 Been 
+: 220 2 2 to 
+: 224 15 11 Bos
+: 243 14 7 ton 
+: 267 13 9 be 
+: 288 15 4 fore
+: 303 19 2 ~
+- 322 359
+- 359
+: 385 6 11 A
+: 392 3 2 ny
+: 395 12 9 wa
+: 407 10 9 y~ 
+: 448 4 7 this 
+: 463 8 9 change
+: 471 7 9 ~ 
+: 482 2 7 I’ve 
+: 485 14 9 been 
+: 505 16 11 fee
+: 525 18 7 ling
+- 543
+: 549 4 2 Doe
+: 553 6 11 sn't 
+: 563 12 7 make 
+: 588 4 7 the 
+: 595 12 9 rain
+: 607 20 7 ~ 
+: 638 13 4 fall 
+: 651 16 2 ~
+- 667 699
+- 699
+: 725 20 2 No 
+* 749 14 4 big
+* 765 33 2 ~ 
+: 805 4 2 dif
+: 810 4 9 fe
+: 815 16 7 ren
+: 837 14 7 ces 
+: 855 9 9 the
+: 864 3 9 se 
+: 870 21 4 days
+- 891
+: 895 11 9 Just 
+: 907 2 2 the 
+: 911 12 7 same 
+: 925 14 7 old 
+: 941 10 7 walk
+: 952 3 9 a
+: 959 10 4 ways 
+: 969 22 2 ~
+- 991 1073
+- 1073
+: 1099 18 7 Some 
+: 1119 16 6 day, 
+: 1173 4 9 I’m 
+: 1179 4 7 gon
+: 1183 2 7 na 
+: 1191 12 9 stay 
+: 1203 8 4 ~
+- 1211 1249
+- 1249
+: 1275 5 2 But 
+: 1281 10 7 not 
+: 1293 4 7 today 
+: 1299 12 4  
+: 1311 20 2 
+E

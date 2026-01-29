@@ -1,0 +1,210 @@
+#ARTIST:The Human League
+#TITLE:Human
+#CREATOR:Buberatz
+#BPM:202,7
+#YEAR:1986
+#VIDEO:v=s1ysoohV_zA
+#LANGUAGE:English
+#GAP:37103,986186482485
+#ALLKARAOKE_ID:the-human-league-human
+#ALLKARAOKE_SID:5729
+#ALLKARAOKE_LASTUPDATE:2026-01-29T00:17:08.586Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:26
+#ALLKARAOKE_SOURCEURL:The Human League - Human
+#ALLKARAOKE_VOLUME:0,5
+#MP3:The Human League - Human.mp3
+: 14 3 13 Come 
+: 18 3 13 on 
+: 22 3 13 ba
+: 26 3 12 by 
+: 30 3 8 dry
+: 34 3 3 yy 
+: 38 3 3 your 
+: 42 15 10 e
+: 58 8 12 eeyes
+- 66
+: 74 3 3 Wipe 
+: 78 11 10 your 
+: 90 1 7 te
+: 92 1 5 e
+: 94 16 3 ears
+- 110 128
+- 128
+: 142 3 13 Ne
+: 146 3 13 ver 
+: 150 3 13 like 
+: 154 3 12 to 
+: 158 3 8 se
+: 162 3 3 ee 
+: 166 4 3 you 
+: 172 13 10 cry
+: 186 8 12 yy
+- 194 268
+- 268
+: 282 3 15 I 
+: 286 3 15 would
+: 290 3 17 n’t 
+: 294 3 19 e
+: 298 3 20 ver 
+: 302 3 19 try
+: 306 3 17 yy 
+: 310 3 17 to
+: 314 3 15 oo 
+: 318 7 15 hurt 
+: 326 8 12 you
+- 334 336
+- 336
+: 350 3 15 I 
+: 354 3 17 just 
+: 358 3 19 nee
+: 362 3 20 ded 
+: 366 3 19 some
+: 370 3 17 ee
+: 374 3 17 o
+: 378 3 15 oone 
+: 382 3 15 to
+: 386 3 8 oo 
+: 390 3 8 hold 
+: 394 6 15 me
+- 400
+: 410 3 15 To 
+: 414 3 15 fill 
+: 418 3 17 the 
+: 422 3 19 void 
+: 426 3 20 while 
+: 430 6 19 you 
+: 438 3 17 we
+: 442 3 15 re 
+: 446 8 15 gone
+- 454
+: 458 3 8 To 
+: 462 3 15 fill 
+: 466 3 15 this 
+: 470 3 13 space 
+: 474 3 12 o
+: 478 3 8 oof 
+: 482 3 3 emp
+: 486 3 3 ti
+: 490 26 10 ness
+- 516 532
+- 532
+: 546 3 13 I’m 
+: 550 3 13 on
+: 554 3 12 ly 
+: 558 11 10 hu
+: 570 12 12 man
+- 582
+: 586 3 8 Of 
+: 590 7 10 flesh 
+: 598 3 10 and 
+: 602 10 10 blood 
+: 614 3 5 I’m 
+: 618 3 5 ma
+: 622 20 3 aade
+- 642 672
+- 672
+: 686 11 10 Hu
+: 698 16 12 man
+- 714
+: 718 7 8 Born 
+: 726 3 8 to 
+: 730 10 10 make 
+: 742 3 8 mis
+: 746 24 15 takes
+- 770 780
+- 780
+: 794 3 8 So 
+: 798 3 15 ma
+: 802 3 17 ny 
+: 806 3 19 nights 
+: 810 3 20 I 
+: 814 3 19 lo
+: 818 3 17 oonged 
+: 822 3 17 to
+: 826 3 15 oo 
+: 830 7 15 hold 
+: 838 8 12 you
+- 846
+: 858 3 8 So 
+: 862 3 15 ma
+: 866 3 17 ny 
+: 870 3 19 times 
+: 874 3 20 I 
+: 878 7 19 lo
+: 886 3 17 oked 
+: 890 3 15 and 
+: 894 3 15 sa
+: 898 3 8 aaw 
+: 902 3 8 your 
+: 906 10 15 face
+- 916
+: 922 3 8 No
+: 926 3 15 thing 
+: 930 3 17 could 
+: 934 3 19 change 
+: 938 3 20 the 
+: 942 6 19 way 
+: 950 7 17 I 
+: 958 8 15 feel
+- 966
+: 974 7 13 No 
+: 982 7 15 one 
+: 990 7 17 else 
+: 998 5 20 can 
+: 1004 8 23 e
+: 1014 7 24 ver 
+: 1022 7 20 take 
+: 1030 5 15 your 
+: 1036 1 21 pla
+: 1038 16 22 aace
+- 1054
+: 1058 3 13 I’m 
+: 1062 3 13 on
+: 1066 3 12 ly 
+: 1070 11 10 hu
+: 1082 12 12 man
+- 1094
+: 1098 3 8 Of 
+: 1102 7 10 flesh 
+: 1110 3 10 and 
+: 1114 10 10 blood 
+: 1126 3 5 I’m 
+: 1130 3 5 ma
+: 1134 20 3 aade
+- 1154 1184
+- 1184
+: 1198 11 10 Hu
+: 1210 16 12 man
+- 1226
+: 1230 7 8 Born 
+: 1238 3 8 to 
+: 1242 10 10 make 
+: 1254 3 8 mis
+: 1258 24 15 takes
+- 1282 2068
+- 2068
+: 2082 3 13 I’m 
+: 2086 3 13 on
+: 2090 3 12 ly 
+: 2094 11 10 hu
+: 2106 12 12 man
+- 2118
+: 2122 3 8 Of 
+: 2126 7 10 flesh 
+: 2134 3 10 and 
+: 2138 10 10 blood 
+: 2150 3 5 I’m 
+: 2154 3 5 ma
+: 2158 20 3 aade
+- 2178 2208
+- 2208
+: 2222 11 10 Hu
+: 2234 16 12 man
+- 2250
+: 2254 7 8 Born 
+: 2262 3 8 to 
+: 2266 10 10 make 
+: 2278 3 8 mis
+: 2282 34 15 takes
+E
