@@ -61,7 +61,7 @@ function isValidImport(importPath: string, _fromFile: string): boolean {
 // Process a single file
 function processFile(filePath: string): number {
   const content = fs.readFileSync(filePath, 'utf-8');
-  let modified = content;
+  let modified;
   let changeCount = 0;
 
   // Regex to match from 'path'; or from "path";

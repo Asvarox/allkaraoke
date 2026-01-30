@@ -10,9 +10,7 @@ if (global.location?.search.includes('pride')) {
 }
 
 export default function Logo(props: ComponentProps<'div'>) {
-  //   const isEurovision = false; //useFeatureFlag(FeatureFlags.Eurovision);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  //   const { theme } = useContext(BackgroundContext);
 
   if (mobilePhoneMode) {
     return null;

@@ -50,7 +50,7 @@ function WaitForReadiness({ onFinish }: Props) {
       if (waitForReadinessMusic.playing()) waitFinished.play();
       await sleep(500);
       waitForReadinessMusic.stop();
-      //   await sleep(10000000);
+      await sleep(1000);
       onFinish();
     })();
   }, []);
@@ -78,7 +78,7 @@ function WaitForReadiness({ onFinish }: Props) {
             data-confirmed={confirmed}>
             {!areAllPlayersReady && (
               <span className="h-12 w-12 text-2xl [&_svg]:h-12! [&_svg]:w-12! [&_svg]:stroke-black">
-                {!confirmed ? <CheckCircleOutline /> : <Loader color="info" size="auto" />}
+                {confirmed ? <CheckCircleOutline /> : <Loader color="info" size="auto" />}
               </span>
             )}{' '}
             <SinglePlayer player={player} />

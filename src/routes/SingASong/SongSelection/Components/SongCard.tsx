@@ -240,7 +240,7 @@ export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
 
 export const SongAuthor = styled(SongListEntryDetailsTitle)`
   font-size: 1.5rem;
-  margin-top: 0%.5;
+  margin-top: 0.5rem;
 `;
 
 export const SongListEntryStats = ({ song }: { song: SongPreview }) => {

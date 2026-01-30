@@ -99,6 +99,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Go to duet playlist and pick up the song', async () => {
+    await pages.songListPage.closeTheSelectionPlaylistTip();
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
     await expect(await pages.songListPage.getDuetSongIcon(duetSpanSong)).toBeVisible();

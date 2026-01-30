@@ -207,6 +207,7 @@ function RemoteSongList({ connectionStatus }: Props) {
               <SongListItem
                 className="overflow-hidden border-b border-black bg-black/75 active:bg-black/100"
                 data-test={`song-group-${mainArtistName}`}
+                data-song-count={song.length}
                 onClick={onClick}
                 left={
                   <ArrowRight

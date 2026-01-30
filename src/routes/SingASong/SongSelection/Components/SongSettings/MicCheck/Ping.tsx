@@ -8,7 +8,6 @@ interface Props extends ComponentProps<'span'> {
 
 function Ping({ playerNumber, ...restProps }: Props) {
   const latency = useDevicePing(PlayersManager.getPlayer(playerNumber)?.input?.deviceId);
-  //   const latency = 100; //useDevicePing(PlayersManager.getPlayer(playerNumber)?.input?.deviceId);
 
   return <>{latency !== null ? <span {...restProps}>{latency}ms</span> : ''}</>;
 }
