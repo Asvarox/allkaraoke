@@ -207,29 +207,29 @@ code {
 }
 
 .Toastify {
-  font-size: 1.5rem;
-  --toastify-toast-width: 32rem;
-  --toastify-toast-min-height: 6.4rem;
-  --toastify-toast-max-height: 80rem;
+  font-size: 1rem;
+  --toastify-toast-width: 22rem;
+  --toastify-toast-min-height: 3rem;
+  --toastify-toast-max-height: 40rem;
 }
 
 .Toastify__toast {
-  padding: 0.8rem;
-  border-radius: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .Toastify__toast-body {
-  padding: 0.6rem;
+  padding: 0.25rem;
 }
 
 .Toastify__toast-icon {
-  width: 1.5rem;
-  margin-inline-end: 1rem;
+  width: 1rem;
+  margin-inline-end: 0.5rem;
 }
 
 .Toastify__close-button > svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .Toastify__progress-bar {
