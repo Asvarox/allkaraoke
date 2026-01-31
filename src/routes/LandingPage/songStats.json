@@ -23,8 +23,8 @@
     "Billie Eilish",
     "Elton John",
     "Disturbed",
-    "ABBA",
     "Ghost",
+    "ABBA",
     "Madonna",
     "Muse",
     "Westlife",
@@ -95,6 +95,7 @@
     "Calvin Harris",
     "Depeche Mode",
     "Electric Light Orchestra",
+    "Elvis Presley",
     "Groove Coverage",
     "Lorde",
     "★N Sync",
@@ -105,6 +106,7 @@
     "Selena Gomez",
     "Skillet",
     "The Killers",
+    "UB40",
     "Avicii",
     "Billy Talent",
     "blink-182",
@@ -114,7 +116,9 @@
     "Eminem",
     "Faith No More",
     "Genesis",
+    "Goo Goo Dolls",
     "Hamilton",
+    "Iron Maiden",
     "Jason Derulo",
     "Johnny Cash",
     "Jonathan Coulton",
@@ -139,17 +143,13 @@
     "Hilary Duff",
     "HIM",
     "Huey Lewis & The News",
-    "Iron Maiden",
     "Lewis Capaldi",
     "OneRepublic",
     "Papa Roach",
     "P!nk",
     "Robbie Williams",
-    "Simon & Garfunkel",
-    "Texas",
-    "The Smashing Pumpkins",
-    "The Who",
-    "twenty øne piløts"
+    "Shakira",
+    "Simon & Garfunkel"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5748
+  "songs": 5806
 }

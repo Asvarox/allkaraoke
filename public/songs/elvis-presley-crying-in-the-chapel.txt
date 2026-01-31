@@ -1,0 +1,216 @@
+#ARTIST:Elvis Presley
+#TITLE:Crying In The Chapel
+#CREATOR:Canni
+#BPM:280
+#YEAR:1965
+#VIDEO:v=CYOUcV7nlN8
+#LANGUAGE:English
+#GAP:24,285714285714334
+#ALLKARAOKE_ID:elvis-presley-crying-in-the-chapel
+#ALLKARAOKE_SID:5774
+#ALLKARAOKE_LASTUPDATE:2026-01-31T00:17:03.532Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:Elvis Presley - Crying In The Chapel
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Elvis Presley - Crying In The Chapel.mp3
+: 10 3 12 You 
+: 14 11 14 saw 
+: 26 7 15 me 
+: 34 7 16 cry
+: 42 7 19 ing 
+: 50 7 21 in 
+: 58 7 24 the 
+: 66 31 26 cha
+: 98 36 26 pel
+- 134
+: 142 7 26 The 
+: 150 7 26 tears 
+: 158 7 28 I 
+: 166 11 26 shed 
+: 178 11 24 were 
+: 190 7 21 tears 
+: 198 3 24 of 
+: 202 32 24 joy
+- 234 255
+- 255
+: 274 3 19 I 
+: 278 7 19 know 
+: 286 3 21 the 
+: 290 7 24 mean
+: 298 7 21 ing 
+: 306 11 19 of 
+: 318 7 16 con
+: 326 27 14 tent
+: 354 20 16 ment
+- 374 383
+- 383
+: 402 7 12 Now 
+: 410 3 12 I 
+: 414 3 14 am 
+: 418 7 15 hap
+: 426 11 16 py 
+: 438 7 9 with 
+: 446 7 12 the 
+: 454 40 12 Lord
+- 494 511
+- 511
+: 530 11 12 Just 
+: 542 3 14 a 
+: 546 11 16 plain 
+: 558 3 19 and 
+: 562 3 21 sim
+: 566 7 24 ple 
+: 574 31 26 cha
+: 606 40 26 pel
+- 646
+: 654 11 26 Where 
+: 666 3 26 all 
+: 670 3 27 good 
+: 674 7 26 peo
+: 682 15 24 ple 
+: 698 3 21 go 
+: 702 3 24 to 
+: 706 36 24 pray
+- 742 763
+- 763
+: 782 7 19 I 
+: 790 7 19 prayed 
+: 798 3 21 the 
+: 802 11 24 Lord 
+: 814 3 21 that 
+: 818 11 19 I’ll 
+: 830 3 16 grow 
+: 834 31 14 stro
+: 866 20 12 nger
+- 886 899
+- 899
+: 918 7 12 As 
+: 926 7 14 I 
+: 934 11 16 live 
+: 946 7 12 from 
+: 954 7 9 day 
+: 962 3 12 to 
+: 966 32 12 day
+- 998 1063
+- 1063
+: 1082 7 12 I 
+: 1090 7 20 sear
+: 1098 11 21 ched 
+: 1110 7 21 and 
+: 1118 3 21 I 
+: 1122 11 20 search
+: 1134 11 22 ed 
+: 1146 7 20 but 
+: 1154 19 19 I 
+: 1174 7 21 could
+: 1182 3 23 ’nt 
+: 1186 20 24 find
+- 1206
+: 1210 7 24 No 
+: 1218 11 24 way 
+: 1230 3 24 on 
+: 1234 7 24 earth 
+: 1242 7 24 to 
+: 1250 15 24 give 
+: 1266 7 23 peace 
+: 1274 7 24 of 
+: 1282 12 26 mind
+- 1294
+: 1298 7 12 Now 
+: 1306 7 14 I’m 
+: 1314 3 16 hap
+: 1318 7 19 py 
+: 1326 7 20 in 
+: 1334 7 21 the 
+: 1342 31 24 cha
+: 1374 20 24 pel
+- 1394 1399
+- 1399
+: 1418 11 26 Where 
+: 1430 3 27 peo
+: 1434 3 28 ple 
+: 1438 11 26 are 
+: 1450 7 24 of 
+: 1458 3 21 one 
+: 1462 7 24 ac
+: 1470 36 24 cord
+- 1506 1535
+- 1535
+: 1554 7 19 Yes, 
+: 1562 3 21 we 
+: 1566 7 24 ga
+: 1574 7 21 ther 
+: 1582 11 19 in 
+: 1594 3 16 the 
+: 1598 31 14 cha
+: 1630 32 14 pel
+- 1662
+: 1678 11 12 Just 
+: 1690 3 14 to 
+: 1694 7 16 sing 
+: 1702 11 12 and 
+: 1714 11 9 praise 
+: 1726 7 12 the 
+: 1734 36 12 Lord
+- 1770 1823
+- 1823
+: 1842 7 12 You’ll 
+: 1850 7 20 sea
+: 1858 15 21 rch 
+: 1874 3 21 and 
+: 1878 3 21 you’ll 
+: 1882 11 20 sea
+: 1894 11 22 rch 
+: 1906 7 20 but 
+: 1914 15 19 you’ll 
+: 1930 7 21 nev
+: 1938 3 23 er 
+: 1942 20 24 find
+- 1962
+: 1970 7 24 No 
+: 1978 7 24 way 
+: 1986 7 24 on 
+: 1994 7 24 earth 
+: 2002 3 24 to 
+: 2006 19 24 give 
+: 2026 7 23 peace 
+: 2034 3 24 of 
+: 2038 12 26 mind
+- 2050
+: 2054 11 12 Take 
+: 2066 3 14 your 
+: 2070 7 16 trou
+: 2078 7 19 bles 
+: 2086 7 21 to 
+: 2094 7 24 the 
+: 2102 31 26 cha
+: 2134 32 26 pel
+- 2166
+: 2182 7 26 Get 
+: 2190 7 27 down 
+: 2198 3 26 on 
+: 2202 11 24 your 
+: 2214 7 21 knees 
+: 2222 7 24 and 
+: 2230 36 24 pray
+- 2266 2287
+- 2287
+: 2306 7 19 Then 
+: 2314 7 21 your 
+: 2322 7 24 bur
+: 2330 7 21 dens 
+: 2338 7 19 will 
+: 2346 3 16 be 
+: 2350 31 14 ligh
+: 2382 16 12 ter
+- 2398 2419
+- 2419
+: 2438 7 24 And 
+: 2446 7 26 you’ll 
+: 2454 11 28 sure
+: 2466 3 24 ly 
+: 2470 24 21 find 
+: 2502 15 24 a 
+: 2518 64 24 way
+E

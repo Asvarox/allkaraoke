@@ -1,0 +1,444 @@
+#ARTIST:Iron Maiden
+#TITLE:Rainmaker
+#CREATOR:RetroGirl
+#BPM:300
+#YEAR:2003
+#VIDEO:v=Kul7ZY_KknQ
+#GENRE:Classic British Metal
+#LANGUAGE:English
+#GAP:11000
+#ALLKARAOKE_ID:iron-maiden-rainmaker
+#ALLKARAOKE_SID:5777
+#ALLKARAOKE_LASTUPDATE:2026-01-31T00:17:03.536Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:86
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Iron Maiden - Rainmaker.mp3
+: 20 1 9 When 
+: 23 2 9 I 
+: 29 2 9 was 
+: 36 8 12 wan
+: 46 4 9 dering 
+: 54 2 7 in 
+: 60 1 5 the 
+: 64 2 5 de
+: 70 5 7 sert
+- 75
+: 79 1 5 And 
+: 84 2 4 was 
+: 90 3 4 sear
+: 97 3 5 ching 
+: 104 3 4 for 
+: 111 1 2 the 
+: 114 4 2 truth
+- 118
+: 128 2 9 I 
+: 135 2 9 heard 
+: 141 2 9 a 
+: 145 7 9 choir 
+: 155 2 5 of 
+: 159 4 5 a
+: 167 2 5 ngels 
+: 174 5 5 ca
+: 183 3 7 lling 
+: 190 3 5 out 
+: 196 2 4 my 
+: 200 11 4 name
+- 211 218
+- 218
+: 238 2 9 I 
+: 245 2 9 had 
+: 250 2 9 the 
+: 254 8 12 fee
+: 265 2 9 ling 
+: 271 2 7 that 
+: 277 2 5 my 
+: 281 6 5 life
+- 287
+: 292 3 7 Would 
+: 299 2 5 ne
+: 305 2 4 ver 
+: 309 4 4 be 
+: 316 3 5 the 
+: 322 3 4 same 
+: 328 1 2 a
+: 332 6 2 gain
+- 338
+: 346 3 9 I 
+: 353 3 9 turned 
+: 360 2 9 my 
+: 367 2 9 face 
+: 374 1 9 to
+: 378 6 9 wards 
+: 391 2 5 the 
+: 395 1 5 ba
+: 398 4 7 rren 
+: 406 10 7 sun
+- 416 420
+- 420
+: 440 1 5 And 
+: 443 1 4 I 
+: 446 12 2 know 
+: 468 1 5 of 
+: 471 1 4 the 
+: 474 13 5 pain
+- 487
+: 497 1 5 That 
+: 499 1 5 you 
+: 503 5 9 feel 
+: 510 3 7 the 
+: 517 2 5 same 
+: 524 2 7 as 
+: 530 12 7 me
+- 542
+: 552 1 5 And 
+: 555 2 4 I 
+: 559 11 2 dream 
+: 580 1 5 of 
+: 583 1 4 the 
+: 587 12 5 rain
+- 599
+: 608 1 5 As 
+: 611 1 4 it 
+: 614 10 9 falls 
+: 627 1 7 u
+: 631 4 5 pon 
+: 638 2 4 the 
+: 642 13 4 leaves
+- 655
+: 662 1 5 And 
+: 665 1 4 the 
+: 668 8 2 cracks 
+: 690 1 5 in 
+: 693 1 4 our 
+: 696 12 5 lives
+- 708
+: 719 1 5 Like 
+: 722 1 4 the 
+: 725 4 9 cracks 
+: 732 2 7 u
+: 738 3 5 pon 
+: 745 2 7 the 
+: 752 11 7 ground
+- 763
+: 772 1 5 They 
+: 776 1 4 are 
+: 779 11 2 sealed 
+: 801 1 5 and 
+: 804 1 4 are 
+: 807 12 5 now
+- 819
+: 829 1 5 Washed 
+: 832 1 7 a
+* 835 39 7 way
+- 874 881
+- 881
+: 901 1 9 You 
+: 904 7 9 tell 
+: 914 1 9 me 
+: 918 6 12 we 
+: 928 2 9 can 
+: 934 3 7 start 
+: 942 1 5 the 
+: 945 6 5 rain
+- 951
+: 958 1 9 You 
+: 961 7 9 tell 
+: 971 1 9 me 
+: 975 6 12 that 
+: 985 2 9 we 
+: 989 6 7 all 
+: 999 2 2 can 
+: 1003 5 2 change
+- 1008
+: 1014 1 9 You 
+: 1018 8 9 tell 
+: 1029 1 9 me 
+: 1032 6 12 we 
+: 1042 2 9 can 
+: 1048 3 7 find 
+: 1054 2 5 some
+: 1058 6 5 thing
+- 1064
+: 1069 1 7 To 
+: 1073 7 5 wash 
+: 1082 1 4 the 
+: 1086 6 4 tears 
+: 1095 1 4 a
+: 1099 10 5 way
+- 1109
+: 1121 2 9 You 
+: 1125 8 9 tell 
+: 1136 1 9 me 
+: 1139 7 12 we 
+: 1149 3 9 can 
+: 1156 3 7 start 
+: 1163 2 5 the 
+: 1167 6 5 rain
+- 1173
+: 1179 1 9 You 
+: 1183 7 9 tell 
+: 1193 1 9 me 
+: 1196 7 12 that 
+: 1206 1 9 we 
+: 1211 5 7 all 
+: 1220 1 2 can 
+: 1223 5 2 change
+- 1228
+: 1234 1 9 You 
+: 1238 7 9 tell 
+: 1248 1 9 me 
+: 1252 5 12 we 
+: 1261 2 9 can 
+: 1268 3 7 find 
+: 1275 1 5 some
+: 1279 4 5 thing 
+: 1288 1 7 to 
+: 1292 6 5 wash 
+: 1301 2 4 the 
+* 1305 14 4 tears
+- 1319
+: 1327 1 5 And 
+: 1330 1 4 I 
+: 1334 12 2 know 
+: 1355 1 5 of 
+: 1358 2 4 the 
+: 1362 13 5 pain
+- 1375
+: 1384 1 5 That 
+: 1387 1 5 you 
+: 1391 4 9 feel 
+: 1398 2 7 the 
+: 1404 3 5 same 
+: 1411 2 7 as 
+: 1418 12 7 me
+- 1430
+: 1439 1 5 And 
+: 1442 1 4 I 
+: 1446 11 2 dream 
+: 1467 1 5 of 
+: 1470 1 4 the 
+: 1474 12 5 rain
+- 1486
+: 1495 1 5 As 
+: 1498 1 4 it 
+: 1501 7 9 falls 
+: 1514 1 7 u
+: 1517 6 5 pon 
+: 1526 1 4 the 
+: 1529 12 4 leaves
+- 1541
+: 1549 1 5 And 
+: 1552 1 4 the 
+: 1556 8 2 cracks 
+: 1578 1 5 in 
+: 1581 1 4 the 
+: 1584 11 5 ground
+- 1595
+: 1605 1 5 Like 
+: 1608 1 4 the 
+: 1612 3 9 cracks 
+: 1619 3 7 are 
+: 1626 3 5 in 
+: 1633 2 7 our 
+: 1639 12 7 lives
+- 1651
+: 1660 1 5 They 
+: 1663 1 4 are 
+: 1666 10 2 sealed 
+: 1688 1 5 and 
+: 1691 1 4 are 
+: 1695 12 5 now
+- 1707
+: 1716 1 5 Far 
+* 1719 1 7 a
+* 1722 38 7 way
+- 1760 1766
+- 1766
+: 1786 1 9 You 
+: 1790 7 9 tell 
+: 1800 1 9 me 
+: 1803 7 12 we 
+: 1813 3 9 can 
+: 1821 4 7 start 
+: 1828 2 5 the 
+: 1832 5 5 rain
+- 1837
+: 1843 1 9 You 
+: 1847 8 9 tell 
+: 1858 1 9 me 
+: 1862 6 12 that 
+: 1871 2 9 we 
+: 1875 7 7 all 
+: 1886 1 2 can 
+: 1889 6 2 change
+- 1895
+: 1900 1 9 You 
+: 1904 8 9 tell 
+: 1914 1 9 me 
+: 1918 7 12 we 
+: 1928 3 9 can 
+: 1935 4 7 find 
+: 1942 1 5 some
+: 1946 5 5 thing
+- 1951
+: 1957 1 7 To 
+: 1960 6 5 wash 
+: 1970 1 4 the 
+: 1974 6 4 tears 
+: 1983 1 4 a
+: 1986 10 5 way
+- 1996
+: 2010 1 9 You 
+: 2014 7 9 tell 
+: 2025 1 9 me 
+: 2028 6 12 we 
+: 2038 2 9 can 
+: 2044 3 7 start 
+: 2051 1 5 the 
+: 2055 5 5 rain
+- 2060
+: 2066 1 9 You 
+: 2070 7 9 tell 
+: 2079 2 9 me 
+: 2083 6 12 that 
+: 2093 1 9 we 
+: 2097 6 7 all 
+: 2107 1 2 can 
+: 2110 5 2 change
+- 2115
+: 2121 1 9 You 
+: 2124 8 9 tell 
+: 2135 1 9 me 
+: 2138 6 12 we 
+: 2147 3 9 can 
+: 2154 3 7 find 
+: 2162 1 5 some
+: 2165 5 5 thing 
+: 2174 2 7 to 
+: 2178 5 5 wash 
+: 2187 1 4 the 
+: 2191 16 4 tears
+- 2207 3079
+- 3079
+: 3099 1 9 You 
+: 3103 8 9 tell 
+: 3114 1 9 me 
+: 3118 6 12 we 
+: 3128 3 9 can 
+: 3135 3 7 start 
+: 3142 1 5 the 
+: 3146 5 5 rain
+- 3151
+: 3157 1 9 You 
+: 3161 8 9 tell 
+: 3171 1 9 me 
+: 3174 7 12 that 
+: 3185 1 9 we 
+: 3189 6 7 all 
+: 3198 2 2 can 
+: 3202 6 2 change
+- 3208
+: 3213 1 9 You 
+: 3217 7 9 tell 
+: 3227 1 9 me 
+: 3231 6 12 we 
+: 3240 3 9 can 
+: 3247 3 7 find 
+: 3255 1 5 some
+: 3259 4 5 thing 
+: 3267 1 7 to 
+: 3271 5 5 wash 
+: 3281 1 4 the 
+: 3285 5 4 tears 
+: 3295 1 4 a
+: 3299 12 5 way
+- 3311
+: 3324 1 9 You 
+: 3328 7 9 tell 
+: 3338 1 9 me 
+: 3342 6 12 we 
+: 3351 3 9 can 
+: 3358 4 7 start 
+: 3366 1 5 the 
+: 3370 5 5 rain
+- 3375
+: 3380 2 9 You 
+: 3385 7 9 tell 
+: 3395 1 9 me 
+: 3398 6 12 that 
+: 3408 2 9 we 
+: 3413 5 7 all 
+: 3421 2 2 can 
+: 3425 5 2 change
+- 3430
+: 3435 1 9 You 
+: 3439 7 9 tell 
+: 3449 1 9 me 
+: 3453 6 12 we 
+: 3463 3 9 can 
+: 3470 3 7 find 
+: 3477 1 5 some
+: 3481 4 5 thing
+- 3485
+: 3491 1 7 To 
+: 3495 6 5 wash 
+: 3505 1 4 the 
+: 3509 15 4 tears
+- 3524
+: 3530 1 5 And 
+: 3533 1 4 I 
+: 3536 13 2 know 
+: 3558 1 5 of 
+: 3561 2 4 the 
+: 3565 13 5 pain
+- 3578
+: 3585 2 5 That 
+: 3589 1 5 you 
+: 3593 4 9 feel 
+: 3600 2 7 the 
+: 3606 3 5 same 
+: 3613 2 7 as 
+: 3620 12 7 me
+- 3632
+: 3641 1 5 And 
+: 3644 1 4 I 
+: 3648 12 2 dream 
+: 3669 1 5 of 
+: 3672 1 4 the 
+: 3676 12 5 rain
+- 3688
+: 3698 1 5 As 
+: 3701 1 4 it 
+: 3704 10 9 falls 
+: 3718 1 7 u
+: 3721 5 5 pon 
+: 3729 1 4 the 
+: 3732 13 4 leaves
+- 3745
+: 3751 1 5 And 
+: 3754 2 4 the 
+: 3758 8 2 cracks 
+: 3779 1 5 in 
+: 3782 1 4 the 
+: 3785 12 5 ground
+- 3797
+: 3806 2 5 Like 
+: 3809 1 4 the 
+: 3813 4 9 cracks 
+: 3820 3 7 are 
+: 3827 3 5 in 
+: 3834 2 7 our 
+: 3840 13 7 lives
+- 3853
+: 3862 1 5 They 
+: 3865 1 4 are 
+: 3869 9 2 sealed 
+: 3889 2 5 and 
+: 3893 1 4 are 
+: 3896 14 5 now
+- 3910
+: 3918 1 5 Far 
+: 3921 2 7 a 
+: 3925 52 7 way
+E
