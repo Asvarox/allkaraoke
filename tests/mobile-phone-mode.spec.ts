@@ -116,9 +116,12 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
     await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
     await expect(remoteMic2.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled({ timeout: 8_000 });
-    await page.waitForTimeout(500);
+    // Mobile phone mode - skip intro should be possible but not displayed in-game
+    await expect(pages.gamePage.skipIntroElement).not.toBeVisible();
+    await expect(remoteMic2.remoteMicMainPage.enterKeyboardButton).toContainText('Skip Intro');
     await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
+    await pages.gamePage.makeSongGoFastButton.click();
+    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 5_000 });
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
