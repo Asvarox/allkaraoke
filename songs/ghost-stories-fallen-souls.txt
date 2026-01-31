@@ -1,0 +1,208 @@
+#ARTIST:Ghost Stories
+#TITLE:Fallen Souls
+#CREATOR:omgwtfbbq
+#BPM:304
+#YEAR:2019
+#VIDEO:v=scdYtwEPYmA
+#GENRE:Hardstyle
+#LANGUAGE:English
+#GAP:4683,157894736842
+#ALLKARAOKE_ID:ghost-stories-fallen-souls
+#ALLKARAOKE_SID:5772
+#ALLKARAOKE_LASTUPDATE:2026-01-31T00:17:02.789Z
+#ALLKARAOKE_REALBPM:32
+#ALLKARAOKE_SOURCEURL:Ghost Stories - Fallen Souls
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Ghost Stories - Fallen Souls.mp3
+: 20 5 -4 In 
+: 28 4 -5 a 
+: 37 7 -7 place 
+: 47 2 5 not 
+: 51 9 5 far 
+: 63 2 3 from 
+: 68 14 0 home
+- 82
+: 92 2 0 There’s 
+: 96 2 0 a 
+: 101 4 0 haun
+: 108 4 5 ted 
+: 116 10 3 house 
+: 129 2 0 a
+: 133 9 -2 long 
+: 145 2 -4 an 
+: 150 8 -2 emp
+: 160 2 -4 ty 
+: 165 3 0 ro
+: 170 2 -4 -o
+: 175 18 -7 -oad
+- 193
+* 205 6 8 And 
+* 214 5 8 if 
+: 223 4 7 you 
+: 230 7 5 li
+: 241 2 3 sten 
+: 246 10 5 clo
+: 258 2 3 -o
+: 263 13 0 -ose
+- 276
+* 286 2 -4 You 
+: 290 2 -2 can 
+: 294 5 0 hear 
+: 302 6 5 the 
+: 311 7 3 whis
+: 321 2 0 pers 
+: 326 9 -2 of 
+: 339 2 -4 the 
+: 343 8 -2 fa
+: 353 2 -4 llen 
+: 358 3 0 so
+: 363 2 -4 -o
+: 367 24 -7 -ouls
+- 391
+: 410 3 -4 Are 
+: 416 5 0 you 
+: 424 11 -2 brave 
+: 438 2 -4 e
+: 442 8 -2 nough 
+: 452 2 -4 to 
+: 456 11 -2 go 
+: 469 3 -4 there 
+: 474 8 -2 on 
+: 485 3 0 your 
+: 490 2 0 o
+: 494 2 -4 -o
+: 498 18 -7 -own?
+- 516 518
+- 518
+* 538 6 1 Are 
+: 546 5 0 you 
+: 555 9 -2 brave 
+: 566 2 -4 at 
+: 570 10 -2 heart 
+: 582 2 -4 to 
+: 586 10 -2 meet 
+: 598 2 -4 the 
+: 603 7 -2 fa
+: 613 2 0 llen 
+: 620 2 0 so
+: 623 2 -4 -o
+* 627 7 -7 -ouls?
+- 634
+: 644 5 -4 And 
+: 652 12 -5 take 
+: 668 13 -8 them 
+: 687 28 -7 home
+- 715 2528
+- 2528
+: 2548 6 -7 In 
+: 2557 5 -9 a 
+: 2565 8 -12 place 
+: 2576 2 -7 not 
+: 2581 8 -7 far 
+: 2592 2 -9 from 
+: 2597 15 -7 home
+- 2612
+: 2621 2 -9 There’s 
+: 2625 2 -7 a 
+: 2629 5 -7 haun
+* 2638 3 -5 ted 
+* 2644 11 -4 house 
+: 2658 2 0 a
+: 2662 9 -2 long 
+: 2673 3 -4 an 
+: 2678 8 -2 emp
+: 2688 2 -4 ty 
+: 2693 3 0 ro
+: 2698 2 -4 -o
+: 2702 21 -7 -oad
+- 2723
+* 2735 5 -7 And 
+* 2742 6 -7 if 
+: 2751 5 -9 you 
+: 2758 9 -4 li
+: 2770 2 -4 sten 
+: 2775 11 -4 clo
+: 2788 2 -5 -o
+: 2792 13 -7 -ose
+- 2805
+: 2816 2 -4 You 
+: 2820 2 -4 can 
+* 2824 5 -4 hear 
+* 2831 6 -2 the 
+: 2840 8 0 whis
+: 2851 2 -2 pers 
+: 2856 9 -5 of 
+: 2867 2 -7 the 
+: 2873 8 -5 fa
+: 2883 2 -7 llen 
+: 2888 3 -4 so
+: 2893 2 -5 -o
+: 2897 24 -7 -ouls
+- 2921
+: 2938 4 -4 Are 
+: 2945 5 0 you 
+: 2954 10 -2 brave 
+: 2967 2 -4 e
+: 2971 8 -2 nough 
+: 2982 2 -4 to 
+: 2986 10 -2 go 
+: 2998 3 -4 there 
+: 3003 8 -2 on 
+: 3015 2 0 your 
+: 3019 2 0 o
+: 3023 2 -4 -o
+: 3027 22 -7 -own?
+- 3049
+* 3068 5 1 Are 
+: 3076 5 0 you 
+: 3084 9 -2 brave 
+: 3095 2 -4 at 
+: 3099 11 -2 heart 
+: 3112 2 -4 to 
+: 3116 10 -2 meet 
+: 3128 2 -4 the 
+: 3133 8 -2 fa
+: 3143 2 0 llen 
+: 3148 3 0 so
+: 3153 2 -4 -o
+: 3157 7 -7 -ouls?
+- 3164
+: 3173 4 -4 And 
+: 3180 14 -5 take 
+: 3198 13 -8 them 
+: 3216 54 -7 home
+- 3270 3697
+- 3697
+: 3717 5 -4 Are 
+: 3724 5 0 you 
+: 3731 11 -2 brave 
+: 3744 2 -4 e
+: 3748 10 -2 nough 
+: 3760 2 -4 to 
+: 3764 10 -2 go 
+: 3776 3 -4 there 
+: 3781 8 -2 on 
+: 3791 3 0 your 
+: 3796 3 0 o
+: 3801 2 -4 -o
+: 3805 25 -7 -own?
+- 3830
+* 3845 5 1 Are 
+: 3854 5 0 you 
+: 3862 10 -2 brave 
+: 3874 2 -4 at 
+: 3878 10 -2 heart 
+: 3890 2 -4 to 
+: 3894 10 -2 meet 
+: 3906 2 -4 the 
+: 3910 9 -2 fa
+: 3921 2 0 llen 
+: 3927 2 0 so
+: 3931 2 -4 -o
+: 3935 8 -7 -ouls?
+- 3943
+: 3953 3 -4 And 
+: 3959 12 -5 take 
+: 3975 14 -8 them 
+: 3993 33 -7 home
+E

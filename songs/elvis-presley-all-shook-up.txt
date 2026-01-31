@@ -1,0 +1,327 @@
+#ARTIST:Elvis Presley
+#TITLE:All Shook Up
+#CREATOR:Relisch
+#BPM:300
+#YEAR:1957
+#VIDEO:v=23zLefwiii4
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:5760
+#ALLKARAOKE_ID:elvis-presley-all-shook-up
+#ALLKARAOKE_SID:5775
+#ALLKARAOKE_LASTUPDATE:2026-01-31T00:17:03.533Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Elvis Presley - All Shook Up
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Elvis Presley - All Shook Up.mp3
+#COVER:Elvis Presley - All Shook Up [CO].jpg
+#BACKGROUND:Elvis Presley - All Shook Up [BG].jpg
+: 20 2 5 A 
+: 23 3 7 well 
+: 27 2 5 I 
+: 30 6 10 bless 
+: 38 7 10 my 
+: 46 3 10 sou
+: 50 1 5 ~l
+- 51
+: 54 6 7 What’s 
+: 62 7 14 wrong 
+: 70 4 13 with 
+: 75 6 14 me?
+- 81
+: 92 2 5 I’m 
+: 95 4 10 it
+: 100 2 10 ching 
+: 103 3 10 like 
+: 107 2 10 a 
+: 111 2 10 ma
+: 115 2 5 ~n 
+: 118 4 7 on 
+: 123 2 5 a 
+: 126 5 14 fuz
+: 132 4 13 zy 
+: 138 6 14 tree
+- 144
+: 154 3 5 My 
+: 158 6 10 friends 
+: 165 6 10 say 
+: 172 1 10 I’m 
+: 174 4 10 ac
+: 179 7 5 tin’ 
+: 190 3 14 wild 
+: 194 3 14 as 
+: 198 3 13 a 
+: 202 6 14 bug
+- 208
+: 211 1 5 I’m 
+: 214 5 7 in 
+: 221 11 10 love
+- 232
+* 252 2 5 I’m 
+* 255 6 14 all 
+* 262 3 13 shook 
+* 267 5 14 up
+- 272
+: 275 7 5 Mm
+: 283 15 7 ~ 
+: 316 2 10 mm 
+: 319 2 12 oh, 
+: 322 10 12 oh, 
+: 343 13 10 yeah, 
+: 357 22 7 yeah, 
+: 380 9 10 yeah!
+- 389
+: 406 5 5 Well, 
+: 412 3 5 my 
+: 416 6 10 hands 
+: 423 3 10 are 
+: 427 7 10 sha
+: 435 4 5 ky 
+: 440 3 7 and 
+: 444 3 5 my 
+: 448 6 14 knees 
+: 456 2 13 are 
+: 460 8 14 weak
+- 468
+: 476 2 5 I 
+: 480 6 10 can’t 
+: 488 4 10 seem 
+: 493 2 10 to 
+: 496 6 10 sta
+: 503 1 5 ~nd 
+: 505 3 7 on 
+: 509 2 5 my 
+: 512 5 14 own 
+: 519 3 13 two 
+: 524 6 14 feet
+- 530
+: 543 6 10 Who 
+: 551 4 10 do 
+: 556 2 10 you 
+: 560 6 10 thank 
+: 568 4 7 when 
+: 573 2 5 you 
+: 576 5 14 have 
+: 583 4 13 such 
+: 589 6 14 luck?
+- 595
+: 598 2 5 I’m 
+: 601 5 7 in 
+: 608 12 10 love
+- 620
+: 640 2 5 I’m 
+: 643 6 14 all 
+: 651 2 13 shook 
+: 655 6 14 up
+- 661
+: 664 7 5 Mm
+: 672 15 7 ~ 
+: 705 2 10 mm 
+: 708 2 12 oh, 
+: 711 10 12 oh, 
+: 732 13 10 yeah, 
+: 746 22 7 yeah, 
+: 769 9 10 yeah!
+- 778
+: 796 3 12 Well, 
+: 800 13 12 please 
+: 814 3 10 don’t 
+: 818 8 12 ask 
+: 827 2 10 me 
+: 830 3 10 wha
+: 834 2 12 ~t’s 
+: 837 7 13 on 
+: 845 3 10 my 
+: 850 7 12 mind
+- 857
+* 860 1 10 I’m 
+* 863 4 10 a 
+* 869 4 14 lit
+* 874 2 14 tle 
+* 878 5 13 mixed 
+: 885 4 14 up, 
+: 892 4 10 but 
+: 898 2 10 I’m 
+: 902 6 14 fee
+: 909 4 13 lin’ 
+: 915 9 14 fine
+- 924
+: 932 2 10 When 
+: 935 5 10 I’m 
+: 941 3 12 near 
+: 945 2 10 that 
+: 948 6 12 girl 
+: 958 7 10 that 
+: 966 3 12 I 
+: 971 6 10 love 
+: 978 7 12 best
+- 985
+: 988 8 10 My 
+: 997 6 12 heart 
+: 1006 6 12 beats 
+: 1014 4 12 so 
+: 1019 5 5 it 
+: 1025 10 7 scares 
+: 1036 5 7 me 
+: 1043 2 5 to 
+: 1046 4 7 death!
+- 1050
+: 1054 2 5 She 
+: 1057 11 10 touched 
+: 1069 5 10 my 
+: 1076 7 10 hand 
+: 1085 4 10 what 
+: 1090 2 5 a 
+: 1093 3 14 chill 
+: 1098 6 13 I 
+: 1105 7 14 got
+- 1112
+: 1121 2 5 Her 
+: 1125 7 10 lips 
+: 1133 2 10 are 
+: 1136 8 5 like 
+: 1145 3 7 a 
+: 1149 5 5 vol
+: 1156 3 14 ca
+: 1161 3 14 no 
+: 1165 3 13 that’s 
+: 1169 6 14 hot
+- 1175
+: 1187 3 5 I’m 
+: 1192 7 10 proud 
+: 1201 2 10 to 
+: 1204 4 10 say 
+: 1209 1 10 that 
+: 1211 5 7 she’s 
+: 1217 2 5 my 
+: 1224 4 14 but
+: 1229 3 13 ter
+: 1233 5 14 cup
+- 1238
+: 1241 2 5 I’m 
+: 1244 5 7 in 
+: 1252 11 10 love
+- 1263 1264
+- 1264
+: 1284 1 5 I’m 
+: 1287 5 14 all 
+: 1293 4 13 shook 
+: 1298 5 14 up
+- 1303
+: 1307 7 5 Mm
+: 1315 15 7 ~ 
+: 1348 2 10 mm 
+: 1351 2 12 oh, 
+: 1354 10 12 oh, 
+* 1375 13 10 yeah
+* 1389 22 7 ~, 
+* 1412 9 10 yeah!
+- 1421
+: 1438 3 12 My 
+: 1442 6 10 tongue 
+: 1449 6 12 gets 
+: 1456 8 10 tied 
+: 1465 4 10 when 
+: 1470 2 12 I 
+: 1474 6 13 try 
+: 1481 3 10 to 
+: 1485 8 12 speak
+- 1493
+: 1505 3 10 My 
+: 1509 5 10 in
+: 1516 6 14 sides 
+: 1523 7 13 shake 
+: 1531 5 14 like 
+: 1537 2 10 a 
+: 1540 4 10 leaf 
+: 1545 2 14 on 
+: 1548 3 13 a 
+: 1552 9 14 tree
+- 1561
+: 1569 2 10 There’s 
+: 1572 4 10 on
+: 1577 2 12 ly 
+: 1580 5 12 one 
+: 1587 7 10 cure 
+: 1595 4 12 for 
+: 1600 3 10 this 
+: 1604 4 10 bo
+: 1609 2 12 dy 
+: 1612 3 10 of 
+: 1616 6 12 mine
+- 1622
+: 1625 4 10 That’s 
+: 1630 2 12 to 
+: 1633 7 12 have 
+: 1641 4 10 the 
+: 1647 9 12 girl 
+: 1657 4 10 that 
+: 1662 2 10 I 
+: 1665 6 12 love 
+: 1672 6 10 so 
+: 1680 7 12 fine!
+- 1687
+: 1692 3 6 She 
+: 1696 7 6 touched 
+: 1707 5 6 my 
+: 1714 6 6 hand 
+: 1722 5 6 what 
+: 1728 2 6 a 
+: 1731 4 6 chill 
+: 1736 5 6 I 
+: 1742 9 6 got
+- 1751
+: 1760 2 5 Her 
+: 1763 8 10 lips 
+: 1772 2 10 are 
+: 1775 7 5 like 
+: 1784 1 7 a 
+: 1787 7 5 vol
+: 1795 3 14 ca
+: 1799 2 14 no 
+: 1802 4 13 that’s 
+: 1807 6 14 hot
+- 1813
+: 1823 3 5 I’m 
+: 1830 7 10 proud 
+: 1838 2 10 to 
+: 1842 4 10 say 
+: 1847 1 10 that 
+: 1849 5 7 she’s 
+: 1855 3 5 my 
+* 1862 4 14 but
+* 1867 3 13 ter
+* 1871 5 14 cup
+- 1876
+: 1880 1 5 I’m 
+: 1882 4 7 in 
+: 1888 12 10 love
+- 1900
+: 1919 2 5 I’m 
+: 1922 6 14 all 
+: 1930 3 13 shook 
+: 1935 4 14 up
+- 1939
+: 1943 7 5 Mm
+: 1951 15 7 ~ 
+: 1984 2 10 mm 
+: 1987 2 12 oh, 
+: 1990 10 12 oh, 
+: 2011 13 10 yeah
+: 2025 22 7 ~, 
+: 2048 9 10 yeah!
+- 2057
+: 2064 7 5 Mm
+: 2072 15 7 ~ 
+: 2105 2 10 mm 
+: 2108 2 12 oh, 
+: 2111 10 12 oh, 
+: 2132 13 10 yeah
+: 2146 23 7 ~
+- 2169
+: 2177 1 5 I’m 
+: 2179 6 7 all 
+: 2186 3 10 shook 
+: 2190 4 12 up
+E

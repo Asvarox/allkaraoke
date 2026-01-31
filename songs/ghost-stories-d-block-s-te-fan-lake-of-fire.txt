@@ -1,0 +1,205 @@
+#ARTIST:Ghost Stories (D-Block & S-te-Fan)
+#TITLE:Lake Of Fire
+#BPM:300
+#YEAR:2020
+#VIDEO:v=pbXMsLFimsw
+#GENRE:Hardstyle
+#LANGUAGE:English
+#GAP:11240
+#ALLKARAOKE_ID:ghost-stories-d-block-s-te-fan-lake-of-fire
+#ALLKARAOKE_SID:5770
+#ALLKARAOKE_LASTUPDATE:2026-01-31T00:17:02.357Z
+#ALLKARAOKE_REALBPM:29
+#ALLKARAOKE_SOURCEURL:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire.mp3
+#COVER:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire [CO].jpg
+#BACKGROUND:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire [BG].jpg
+: 20 3 22 They 
+: 24 3 22 try
+: 27 3 22 na 
+: 31 7 22 take 
+: 44 3 22 me 
+: 50 9 29 to 
+: 60 4 25 the 
+: 65 7 27 o
+: 72 9 22 ther 
+: 82 18 25 side
+- 100
+: 106 2 22 Put 
+: 109 3 22 me 
+: 113 4 30 un
+: 117 3 30 der 
+: 121 3 30 in 
+: 125 2 30 a 
+: 128 9 29 Lake 
+: 138 6 25 Of 
+: 145 15 27 Fire
+- 160
+: 178 1 29 Is 
+: 180 3 29 this 
+: 184 4 29 rea
+: 188 3 29 lly 
+: 192 4 29 ha
+: 196 4 27 ~
+: 200 4 25 ppe
+: 204 4 27 ning
+- 208
+: 213 2 25 Or 
+: 216 3 27 am 
+: 220 3 25 I 
+: 224 14 29 lo
+: 238 3 30 ~
+: 241 12 29 ~
+: 253 3 30 ~
+: 256 21 29 sing 
+: 281 2 25 my 
+: 284 9 22 mind?
+- 293
+F 296 1 22 My 
+F 300 1 22 mind 
+F 312 1 22 my 
+F 316 1 22 mind 
+F 328 1 22 my 
+F 332 1 22 mind 
+F 344 1 22 my 
+F 348 1 22 mind
+- 349
+F 360 1 22 My 
+F 364 1 22 mind 
+F 376 1 22 my 
+F 380 1 22 mind 
+F 392 1 22 my 
+F 396 1 22 mind 
+F 408 1 22 my 
+F 412 1 22 mind
+- 413 967
+- 967
+: 987 1 25 Or 
+: 989 2 27 am 
+: 992 2 25 I 
+: 995 11 29 lo
+: 1006 4 30 ~
+: 1010 10 29 ~
+: 1020 4 30 ~
+: 1024 15 29 sing 
+: 1049 5 29 my 
+* 1055 6 34 mind?
+- 1061 1223
+- 1223
+: 1243 1 25 Or 
+: 1245 2 27 am 
+: 1248 2 25 I 
+: 1251 9 29 lo
+: 1260 4 30 ~
+: 1264 11 29 ~
+: 1275 6 30 ~
+: 1281 10 29 sing 
+: 1304 3 25 my 
+: 1308 10 22 mind?
+- 1318
+F 1321 1 22 My 
+F 1325 1 22 mind 
+F 1336 1 22 my 
+F 1340 1 22 mind 
+F 1352 1 22 my 
+F 1356 1 22 mind 
+F 1368 1 22 my 
+F 1372 1 22 mind
+- 1373
+F 1383 1 22 My 
+F 1387 1 22 mind 
+F 1399 1 22 my 
+F 1403 1 22 mind 
+F 1415 1 22 my 
+F 1418 1 22 mind 
+F 1432 1 22 my 
+F 1435 1 22 mind
+- 1436 1537
+- 1537
+: 1557 3 22 They 
+: 1561 2 22 try
+: 1563 3 22 na 
+: 1568 11 22 take 
+: 1580 3 22 me 
+: 1584 9 29 to 
+: 1595 4 25 the 
+: 1601 8 27 o
+: 1609 6 22 ther 
+: 1617 17 25 side
+- 1634
+: 1642 2 22 Put 
+: 1645 2 22 me 
+: 1648 4 30 un
+: 1652 4 30 der 
+: 1657 2 30 in 
+: 1661 2 30 a 
+: 1664 8 29 Lake 
+: 1674 5 25 Of 
+: 1680 20 27 Fire
+- 1700
+: 1713 2 29 Is 
+: 1716 3 29 this 
+: 1720 4 29 rea
+: 1724 3 29 lly 
+: 1728 4 29 ha
+: 1732 5 27 ~
+: 1737 3 25 ppe
+: 1740 4 27 ning
+- 1744
+: 1748 2 25 Or 
+: 1752 3 27 am 
+: 1756 3 25 I 
+: 1760 12 29 lo
+: 1772 4 30 ~
+: 1776 12 29 ~
+: 1788 4 30 ~
+: 1792 11 29 sing 
+: 1816 4 29 my 
+* 1822 9 34 mind?
+- 1831 2465
+- 2465
+: 2485 1 29 Is 
+: 2487 1 29 this 
+: 2490 6 29 rea
+: 2496 1 29 lly 
+: 2500 2 29 ha
+: 2502 3 27 ~
+: 2505 6 25 ppe
+: 2511 3 27 ning
+- 2514
+: 2517 2 25 Or 
+: 2520 3 27 am 
+: 2525 2 25 I 
+: 2531 12 29 lo
+: 2543 4 30 ~
+: 2547 11 29 ~
+: 2558 4 30 ~
+: 2562 13 29 sing 
+: 2583 4 29 my 
+* 2589 10 34 mind?
+- 2599 3012
+- 3012
+: 3032 2 25 Or 
+: 3035 3 27 am 
+: 3039 3 25 I 
+: 3043 12 29 lo
+: 3055 4 30 ~
+: 3059 11 29 ~
+: 3070 4 30 ~
+: 3074 13 29 sing 
+: 3097 4 29 my 
+* 3101 10 34 mind?
+- 3111 3264
+- 3264
+: 3284 2 25 Or 
+: 3287 3 27 am 
+: 3291 3 25 I 
+: 3295 14 29 lo
+: 3309 3 30 ~
+: 3312 12 29 ~
+: 3324 3 30 ~
+: 3327 21 29 sing 
+: 3352 3 25 my 
+: 3356 8 22 mind?
+E
