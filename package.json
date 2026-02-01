@@ -148,7 +148,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-tsconfig-paths": "^6.0.4",
     "vitest": "^4.0.16",
-    "wrangler": "^4.58.0"
+    "wrangler": "^4.59.1"
   },
   "homepage": "./",
   "dependenciesMeta": {
