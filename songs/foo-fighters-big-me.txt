@@ -1,0 +1,238 @@
+#ARTIST:Foo Fighters
+#TITLE:Big Me
+#CREATOR:Canni
+#BPM:260
+#YEAR:1994
+#VIDEO:v=pLdJQFTnZfA
+#LANGUAGE:English
+#GAP:13839,23076923077
+#EDITION:[Sc]-Songs
+#ALLKARAOKE_ID:foo-fighters-big-me
+#ALLKARAOKE_SID:5829
+#ALLKARAOKE_LASTUPDATE:2026-02-03T00:18:58.065Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:6
+#ALLKARAOKE_SOURCEURL:Foo Fighters - Big Me
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Foo Fighters - Big Me.mp3
+: 17 4 0 When 
+: 22 5 2 I 
+: 29 5 4 talk 
+: 35 5 2 a
+: 41 7 0 bout 
+: 49 5 -3 it
+- 54
+: 61 3 3 Car
+: 65 8 2 ries 
+: 75 10 2 on
+- 85
+: 93 3 3 Rea
+: 97 8 2 sons 
+: 106 6 0 on
+: 113 7 2 ly 
+: 121 12 0 knew
+- 133
+: 145 3 0 When 
+: 149 6 2 I 
+: 157 4 4 talk 
+: 162 6 2 a
+: 169 7 0 bout 
+: 177 4 -3 it
+- 181
+: 189 3 3 A
+: 193 8 2 ries 
+: 202 7 2 or 
+: 221 3 3 trea
+: 225 8 2 sons 
+: 234 6 0 all 
+: 241 7 2 re
+: 249 11 0 new
+- 260 276
+- 276
+: 293 7 -1 Big 
+: 301 10 -1 me 
+: 313 2 -1 to 
+: 316 5 0 talk 
+: 322 5 2 a
+: 328 7 0 bout 
+: 336 5 -3 it
+- 341
+: 349 3 4 I 
+: 353 6 2 could 
+: 360 8 0 stand 
+: 370 4 -3 to 
+: 375 12 4 prove
+- 387 404
+- 404
+: 421 7 -1 If 
+: 429 9 -1 we 
+: 439 4 -1 can 
+: 444 4 0 get 
+: 449 4 2 a
+: 454 8 0 round 
+: 463 5 -3 it
+- 468
+: 475 3 0 I 
+: 479 6 2 know 
+: 486 11 0 that 
+: 498 3 -3 it’s 
+: 502 12 -5 true
+- 514
+: 526 3 0 Well 
+: 530 6 2 I 
+: 537 6 4 talked 
+: 544 5 2 a
+: 550 7 0 bout 
+: 558 5 -3 it
+- 563
+: 569 5 3 Car
+: 575 7 2 ried 
+: 583 10 2 on
+- 593
+: 600 5 3 Rea
+: 606 8 2 sons 
+: 615 6 0 on
+: 622 7 2 ly 
+: 630 10 0 knew
+- 640
+: 653 4 0 But 
+: 658 3 2 it’s 
+: 662 12 4 you
+- 674 685
+- 685
+: 702 5 4 I 
+: 708 8 2 fell 
+: 718 5 2 in
+: 724 11 0 to
+- 735 763
+- 763
+: 780 4 0 Well 
+: 785 5 2 I 
+: 791 6 4 talked 
+: 798 5 2 a
+: 804 7 0 bout 
+: 812 5 -3 it
+- 817
+: 824 3 3 Car
+: 828 8 2 ries 
+: 837 9 2 on
+- 846
+: 855 3 3 Rea
+: 859 9 2 sons 
+: 869 6 0 on
+: 876 8 2 ly 
+: 885 10 0 knew
+- 895
+: 908 4 0 When 
+: 913 5 2 I 
+: 919 7 4 talk 
+: 927 4 2 a
+: 932 9 0 bout 
+: 942 4 -3 it
+- 946
+: 953 3 3 A
+: 957 7 2 ries 
+: 965 8 2 or 
+: 983 5 3 trea
+: 989 6 2 sons 
+: 996 8 0 all 
+: 1005 6 2 re
+: 1012 15 0 new
+- 1027 1039
+- 1039
+: 1056 6 -1 Big 
+: 1063 11 -1 me 
+: 1076 2 -1 to 
+: 1079 6 0 talk 
+: 1086 5 2 a
+: 1092 7 0 bout 
+: 1100 5 -3 it
+- 1105
+: 1114 3 3 I 
+: 1118 4 2 could 
+: 1123 12 0 stand 
+: 1136 3 -3 to 
+: 1140 14 4 prove
+- 1154 1169
+- 1169
+: 1186 6 -1 If 
+: 1193 10 -1 we 
+: 1204 4 -1 can 
+: 1209 4 0 get 
+: 1214 4 2 a
+: 1219 7 0 round 
+: 1227 4 -3 it
+- 1231
+: 1240 2 0 I 
+: 1243 7 2 know 
+: 1251 11 0 that 
+: 1263 3 -3 it’s 
+: 1267 12 -5 true
+- 1279
+: 1291 3 0 Well 
+: 1295 6 2 I 
+: 1302 7 4 talked 
+: 1310 3 2 a
+: 1314 9 0 bout 
+: 1324 5 -3 it
+- 1329
+: 1334 5 3 Put 
+: 1340 7 2 it 
+: 1348 10 2 on
+- 1358
+: 1366 3 3 Ne
+: 1370 7 2 ver 
+: 1378 7 0 was 
+: 1386 6 2 it 
+: 1393 12 0 true
+- 1405
+: 1417 3 0 But 
+: 1421 3 2 it’s 
+: 1425 12 4 you
+- 1437 1448
+- 1448
+: 1465 6 3 I 
+: 1472 8 0 fell 
+: 1481 6 2 in
+: 1488 13 0 to
+- 1501 1527
+- 1527
+: 1544 3 0 Well 
+: 1548 6 2 I 
+: 1555 6 4 talked 
+: 1562 4 2 a
+: 1567 8 0 bout 
+: 1576 4 -3 it
+- 1580
+: 1588 3 3 Put 
+: 1592 7 2 it 
+: 1600 10 2 on
+- 1610
+: 1617 5 3 Ne
+: 1623 7 2 ver 
+: 1631 8 0 was 
+: 1640 6 2 it 
+: 1647 12 0 true
+- 1659
+: 1670 3 0 But 
+: 1674 3 2 it’s 
+: 1678 12 4 you
+- 1690 1701
+- 1701
+: 1718 6 3 I 
+: 1725 7 0 fell 
+: 1733 8 2 in
+: 1742 12 0 to
+- 1754 1765
+- 1765
+: 1782 6 3 I 
+: 1789 8 0 fell 
+: 1798 7 2 in
+: 1806 12 0 to
+- 1818 1829
+- 1829
+: 1846 8 3 I 
+: 1856 8 0 fell 
+: 1865 29 2 in
+: 1895 11 0 to
+E

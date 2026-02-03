@@ -1,0 +1,92 @@
+#ARTIST:Owl City
+#TITLE:Meteor Shower
+#CREATOR:aac
+#BPM:380
+#YEAR:2009
+#VIDEO:v=TdQZaCPNw6M
+#GENRE:Dance & Electronic
+#LANGUAGE:English
+#GAP:44383,15789473684
+#ALLKARAOKE_ID:owl-city-meteor-shower
+#ALLKARAOKE_SID:5816
+#ALLKARAOKE_LASTUPDATE:2026-02-03T00:18:57.778Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:29
+#ALLKARAOKE_SOURCEURL:Owl City - Meteor Shower
+#ALLKARAOKE_VOLUME:0,5
+#MP3:Owl City - Meteor Shower.mp3
+: 25 8 -2 I 
+: 37 8 -5 can 
+: 49 8 -3 final
+: 65 4 -7 ly 
+: 73 4 -7 see
+: 81 32 -5 ~
+- 113
+: 137 4 -5 That 
+: 145 4 -7 you’re 
+: 153 8 -10 right 
+: 165 8 -7 there 
+: 177 4 -3 be
+: 185 8 -5 side 
+* 201 40 -7 me
+- 241 256
+- 256
+: 281 8 2 I 
+: 293 8 5 am 
+* 305 8 7 not 
+: 317 8 5 my 
+* 329 40 0 own
+- 369 376
+- 376
+: 401 4 0 For 
+: 409 8 2 I 
+: 421 8 0 have 
+: 433 8 4 been 
+: 445 8 0 made 
+: 457 32 5 new
+- 489 512
+- 512
+: 537 8 2 Please 
+: 549 8 5 don’t 
+: 561 8 7 let 
+: 573 8 5 me 
+: 585 40 0 go
+- 625 632
+- 632
+: 657 4 0 I 
+: 665 8 2 des
+: 677 8 5 perate
+* 689 4 9 ly 
+: 697 8 7 need 
+* 713 48 5 you
+- 761 1408
+- 1408
+: 1433 8 2 I 
+: 1445 8 5 am 
+: 1457 8 7 not 
+: 1469 8 5 my 
+: 1481 40 0 own
+- 1521 1528
+- 1528
+: 1553 4 0 For 
+: 1561 8 2 I 
+: 1573 8 0 have 
+: 1585 8 4 been 
+: 1597 8 0 made 
+: 1609 32 5 new
+- 1641 1664
+- 1664
+: 1689 8 2 Please 
+: 1701 8 5 don’t 
+: 1713 8 7 let 
+* 1725 8 5 me 
+: 1737 40 0 go
+- 1777 1784
+- 1784
+: 1809 4 0 I 
+: 1817 8 2 des
+: 1829 8 5 perate
+: 1841 4 9 ly 
+: 1849 8 7 need 
+: 1865 48 5 you
+E
