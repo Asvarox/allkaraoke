@@ -1,7 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
 import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 import '../src/index.css';
-import { GameScreens } from '../src/modules/Elements/GameScreens';
 
 export const parameters: Preview = {
   parameters: {
@@ -31,9 +30,7 @@ export const parameters: Preview = {
     (Story) => {
       return (
         <>
-          <GameScreens>
-            <Story />
-          </GameScreens>
+          <Story />
         </>
       );
     },

@@ -75,7 +75,7 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           </ArrowsContainer>
         </ActionsContainer>
       )}
-      <ActionsContainer>
+      <ActionsContainer className="gap-4">
         <ActionButton onClick={onPress('back')} disabled={keyboard?.back === undefined} data-test="keyboard-backspace">
           {keyboard?.back || (
             <>
@@ -91,7 +91,10 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           )}
         </ActionButton>
       </ActionsContainer>
-      <ActionsContainer $disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
+      <ActionsContainer
+        $disabled={keyboard?.shiftR === undefined}
+        data-test="keyboard-shift-r"
+        className="w-full basis-full">
         <ActionButton onClick={onPress('random')}>
           <Shuffle /> {keyboard?.shiftR || 'Random Song'}
         </ActionButton>

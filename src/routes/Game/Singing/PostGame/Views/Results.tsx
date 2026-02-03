@@ -82,7 +82,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
         <div
           className={clsx(
             'transition-[width] duration-300',
-            initialCameraPermission && revealHighScore ? 'sm:w-1/3 md:w-5/14' : 'sm:w-1/4 md:w-1/3',
+            initialCameraPermission && revealHighScore ? 'sm:w-2/5 md:w-5/14' : 'sm:w-1/3 md:w-1/3',
           )}>
           {initialCameraPermission ? (
             <CameraRoll />

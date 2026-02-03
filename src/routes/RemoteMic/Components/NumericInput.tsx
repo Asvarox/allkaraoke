@@ -19,7 +19,7 @@ function NumericInput({ unit = '', value, onChange, step = 50, disabled = false,
         className="rounded-l-md">
         -
       </Button>
-      <div className="mobile:text-sm flex-1 text-center text-lg">
+      <div className="mobile:text-md flex-1 text-center text-lg">
         <strong data-test="numeric-input-value">{value}</strong>
         {unit}
       </div>

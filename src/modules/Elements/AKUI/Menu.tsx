@@ -16,7 +16,10 @@ interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, '
   spacing?: 'regular' | 'tight';
 }
 export const Menu = ({ title, children, className, spacing = 'regular', ref, ...props }: MenuProps) => (
-  <MenuContainer {...props} className={`${className} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-7'}`} ref={ref}>
+  <MenuContainer
+    {...props}
+    className={`${className} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-7'}`}
+    ref={ref}>
     {title && <MenuHeader>{title}</MenuHeader>}
     {children}
   </MenuContainer>

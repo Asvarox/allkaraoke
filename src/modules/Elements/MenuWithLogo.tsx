@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { ComponentProps, PropsWithChildren } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import Logo from '~/modules/Elements/Logo';
@@ -8,9 +8,10 @@ import GithubRibbon from '~/routes/Welcome/GithubRibbon';
 
 type Props = PropsWithChildren<{
   supportedBrowsers?: boolean;
-}>;
+}> &
+  ComponentProps<typeof Menu>;
 
-function MenuWithLogo({ children, supportedBrowsers }: Props) {
+function MenuWithLogo({ children, supportedBrowsers, ...props }: Props) {
   useBackground(true);
 
   return (
@@ -21,7 +22,7 @@ function MenuWithLogo({ children, supportedBrowsers }: Props) {
           <Logo />
         </div>
         {supportedBrowsers && <RecommendedBrowsers />}
-        <Menu>{children}</Menu>
+        <Menu {...props}>{children}</Menu>
       </div>
     </LayoutGame>
   );

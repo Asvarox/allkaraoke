@@ -79,7 +79,7 @@ function RemoteMic() {
       <ConfirmReadiness onConfirm={onConfirm} />
       <div
         id="phone-ui-container"
-        className="landscap:max-w-[60rem] mx-auto flex h-screen w-full max-w-[25rem] flex-col gap-[1px] bg-black/50">
+        className="landscap:max-w-[60rem] mx-auto flex h-dvh w-full max-w-[25rem] flex-col gap-[1px] bg-black/50">
         <div className="flex flex-1 flex-col justify-center overflow-hidden">
           {activeTab === 'microphone' && (
             <Microphone

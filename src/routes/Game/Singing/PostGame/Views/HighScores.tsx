@@ -54,12 +54,14 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           </div>
         ))}
       </div>
-      <Button
-        className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
-        size="small"
-        {...register('play-next-song-button', onNextStep, undefined, true)}>
-        Select song
-      </Button>
+      <div className="mt-auto">
+        <Button
+          className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
+          size="small"
+          {...register('play-next-song-button', onNextStep, undefined, true)}>
+          Select song
+        </Button>
+      </div>
     </>
   );
 }

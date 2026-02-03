@@ -47,6 +47,8 @@ function PlayerScoreView({
   const isHighScore = (playerName: string) =>
     highScores.some((score) => score.singSetupId === singSetup.id && score.name === playerName);
 
+  const isWinner = revealHighScore && playerScore === highestScore;
+
   return (
     <div
       className={cn(
@@ -60,10 +62,10 @@ function PlayerScoreView({
           data-score={Math.floor(playerScore)}
           className={cn(
             'typography text-md flex flex-1 justify-between bg-transparent text-white transition-[font-size,color] duration-400 ease-in-out 2xl:text-xl',
-            isHighScore(player.name) ? 'text-active text-lg 2xl:text-2xl' : '',
+            isWinner ? 'text-active text-lg 2xl:text-2xl' : '',
           )}>
           <span
-            style={{ color: useColors ? styles.colors.players[playerNumber].text : undefined }}
+            style={useColors ? { color: styles.colors.players[playerNumber].text } : undefined}
             data-test={`player-${playerNumber}-name`}
             className="ph-no-capture">
             {player.name}

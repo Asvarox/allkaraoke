@@ -6,8 +6,8 @@ import { twx } from '~/utils/twx';
 
 const sizeToClass = {
   mini: 'h-10 text-sm',
-  small: 'h-14 text-lg mobile:h-12 mobile:text-sm landscap:text-md',
-  regular: 'text-lg h-20 mobile:text-sm mobile:h-16 landscap:text-md',
+  small: 'h-14 text-lg mobile:h-12 mobile:text-md landscap:text-md',
+  regular: 'text-lg h-20 mobile:text-md mobile:h-16 landscap:text-md',
   large: 'h-20 text-xl',
 };
 

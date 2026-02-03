@@ -37,7 +37,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
 
   return (
     <SongPage songData={song} width={width} height={height}>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-1 flex-col gap-2">
         {step === 'results' && (
           <ResultsView
             onNextStep={() => setStep('highscores')}
@@ -52,7 +52,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         <GameTip
           data-active="true"
           className={
-            'typography mt-2 block w-full bg-black/75 px-2 py-2 text-center text-xs leading-tight md:text-sm 2xl:text-lg'
+            'typography block w-full bg-black/75 px-2 py-2 text-center text-xs leading-tight md:text-sm 2xl:text-lg'
           }
         />
         {backgroundTheme !== 'christmas' && (
