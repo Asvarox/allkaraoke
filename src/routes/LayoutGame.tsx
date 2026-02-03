@@ -1,5 +1,4 @@
 import { PropsWithChildren } from 'react';
-import { GameScreens } from '~/modules/Elements/GameScreens';
 import Toolbar from '~/modules/Toolbar/Toolbar';
 
 interface Props extends PropsWithChildren {
@@ -9,10 +8,10 @@ interface Props extends PropsWithChildren {
 
 function LayoutGame({ children, toolbarContent, toolbar = true }: Props) {
   return (
-    <GameScreens>
+    <>
       {toolbar && <Toolbar>{toolbarContent}</Toolbar>}
       {children}
-    </GameScreens>
+    </>
   );
 }
 

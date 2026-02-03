@@ -42,7 +42,7 @@ const config: PlaywrightTestConfig = {
     locale: 'pl',
     testIdAttribute: 'data-test',
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
-    actionTimeout: 0,
+    actionTimeout: 14_000,
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: prodRun ? 'https://localhost:3010/?e2e-test' : 'https://localhost:3000/?e2e-test',
 

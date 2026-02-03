@@ -46,21 +46,19 @@ export default memo(function NoiseDetection() {
 
   return (
     <NoiseWarningContainer visible={noiseDetected}>
-      <h2>
-        <strong>
-          <Warning />
-        </strong>{' '}
+      <div className="flex items-center gap-2 text-lg">
+        <Warning className="text-active" />
         Noise detected
-      </h2>
+      </div>
       <hr />
-      <h4>
+      <div className="text-md">
         This might make singing inaccurate. Make sure your microphone doesn&#39;t pick up the music.{' '}
         {isBuiltIn && (
           <>
             Alternatively, use your <strong>smartphone as a microphone</strong> instead.
           </>
         )}
-      </h4>
+      </div>
     </NoiseWarningContainer>
   );
 });
@@ -70,7 +68,7 @@ const NoiseWarningContainer = styled.div<{ visible: boolean }>`
   transition: 300ms;
   background: rgba(0, 0, 0, 0.75);
   padding: 1rem;
-  max-width: 50rem;
+  max-width: 40rem;
   position: relative;
   top: -1rem;
   left: -0.5rem;

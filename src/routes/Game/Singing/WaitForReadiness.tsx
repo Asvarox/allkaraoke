@@ -1,9 +1,8 @@
-import styled from '@emotion/styled';
 import { CheckCircleOutline } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
+import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 import Loader from '~/modules/Elements/Loader';
-import { typography } from '~/modules/Elements/cssMixins';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from '~/modules/GameEvents/hooks';
 import PlayersManager from '~/modules/Players/PlayersManager';
@@ -44,7 +43,7 @@ function WaitForReadiness({ onFinish }: Props) {
       // Only start the music if waiting for readiness takes some time
       await sleep(250);
       if (!allInputsReady) {
-        await waitForReadinessMusic.play();
+        await waitForReadinessMusic.play(false);
       }
 
       await Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]);
@@ -63,85 +62,39 @@ function WaitForReadiness({ onFinish }: Props) {
   }));
 
   return (
-    <>
-      <WaitingForReady>
-        {!areAllPlayersReady && (
-          <span>
-            Waiting for all players to click <strong>&quot;Ready&quot;</strong>
-          </span>
-        )}
-        <PlayerList>
-          {playerStatuses.map(({ confirmed, name, player }, index) => (
-            <PlayerEntry
-              className="ph-no-capture"
-              key={index}
-              data-test="player-confirm-status"
-              data-name={name}
-              data-confirmed={confirmed}>
-              {!areAllPlayersReady && (
-                <ConfirmStatus>{confirmed ? <CheckCircleOutline /> : <Loader color="info" size="1em" />}</ConfirmStatus>
-              )}{' '}
-              <SinglePlayer player={player} />
-            </PlayerEntry>
-          ))}
-        </PlayerList>
-        {!areAllPlayersReady && (
-          <TimeoutMessage>
-            The song will start automatically in{' '}
-            <strong>
-              <CountUp end={0} start={AUTOSTART_TIMEOUT_S} duration={AUTOSTART_TIMEOUT_S} useEasing={false} />
-            </strong>
-          </TimeoutMessage>
-        )}
-      </WaitingForReady>
-    </>
+    <div className="typography absolute inset-0 z-[1000] flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
+      {!areAllPlayersReady && (
+        <Typography className="text-2xl">
+          Waiting for all players to click <strong>&quot;Ready&quot;</strong>
+        </Typography>
+      )}
+      <div className="flex flex-col gap-4 [view-transition-name:player-mic-check-container]">
+        {playerStatuses.map(({ confirmed, name, player }, index) => (
+          <div
+            className="ph-no-capture flex items-center gap-5"
+            key={index}
+            data-test="player-confirm-status"
+            data-name={name}
+            data-confirmed={confirmed}>
+            {!areAllPlayersReady && (
+              <span className="h-12 w-12 text-2xl [&_svg]:h-12! [&_svg]:w-12! [&_svg]:stroke-black">
+                {confirmed ? <CheckCircleOutline /> : <Loader color="info" size="auto" />}
+              </span>
+            )}{' '}
+            <SinglePlayer player={player} />
+          </div>
+        ))}
+      </div>
+      {!areAllPlayersReady && (
+        <Typography className="text-2xl">
+          The song will start automatically in{' '}
+          <strong>
+            <CountUp end={0} start={AUTOSTART_TIMEOUT_S} duration={AUTOSTART_TIMEOUT_S} useEasing={false} />
+          </strong>
+        </Typography>
+      )}
+    </div>
   );
 }
-
-const WaitingForReady = styled.div`
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  gap: 5rem;
-
-  font-size: 5rem;
-  ${typography};
-`;
-
-const TimeoutMessage = styled.span`
-  font-size: 5rem;
-`;
-
-const PlayerList = styled.div`
-  //margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  width: 50rem;
-  view-transition-name: player-mic-check-container;
-`;
-
-const PlayerEntry = styled.div`
-  display: flex;
-  align-items: center;
-  //justify-content: center;
-  gap: 2rem;
-  transform: scale(1.5);
-`;
-
-const ConfirmStatus = styled.span`
-  svg {
-    width: 5rem;
-    height: 5rem;
-    stroke: black;
-  }
-`;
 
 export default WaitForReadiness;

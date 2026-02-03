@@ -10,6 +10,7 @@ import {
   useState,
 } from 'react';
 import { SingSetup, SongPreview } from '~/interfaces';
+import { landscapeMQ, mobileMQ } from '~/modules/Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
 import useDebounce from '~/modules/hooks/useDebounce';
 import useViewportSize from '~/modules/hooks/useViewportSize';
@@ -17,12 +18,7 @@ import { isEurovisionSong } from '~/modules/Songs/utils/specialSongsThemeChecks'
 import { FeatureFlags } from '~/modules/utils/featureFlags';
 import useFeatureFlag from '~/modules/utils/useFeatureFlag';
 import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
-import {
-  ExpandedData,
-  FinalSongCard,
-  SongListEntryDetailsArtist,
-  SongListEntryDetailsTitle,
-} from '~/routes/SingASong/SongSelection/Components/SongCard';
+import { FinalSongCard } from '~/routes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from '~/routes/SingASong/SongSelection/Components/SongSettings';
 import { useSpecialTheme } from '~/routes/SingASong/SongSelection/Hooks/useSpecialTheme';
 
@@ -160,7 +156,11 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
   width: number;
   height: number;
 }>`
-  --preview-padding: 5rem;
+  --preview-padding: 3rem;
+
+  ${mobileMQ} {
+    --preview-padding: 1.5rem;
+  }
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   position: absolute;
@@ -178,6 +178,14 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
     border: 0;
     position: fixed;
     padding: var(--preview-padding);
+
+    ${mobileMQ} {
+      top: 5rem !important;
+
+      ${landscapeMQ} {
+        top: 1rem !important;
+      }
+    }
   }
   &[data-expanded='false'] {
     pointer-events: none;
@@ -199,16 +207,11 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
   }
   view-transition-name: song-preview;
 
-  ${SongListEntryDetailsArtist} {
+  [data-name='artist'] {
     view-transition-name: song-preview-artist;
   }
-
-  ${SongListEntryDetailsTitle} {
+  [data-name='title'] {
     view-transition-name: song-preview-title;
-  }
-
-  ${ExpandedData} {
-    view-transition-name: song-preview-expanded-data;
   }
 `;
 

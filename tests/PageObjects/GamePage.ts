@@ -8,6 +8,10 @@ export class GamePagePO {
     private browser: Browser,
   ) {}
 
+  public get makeSongGoFastButton() {
+    return this.page.getByTestId('make-song-go-fast');
+  }
+
   public get skipIntroElement() {
     return this.page.getByTestId('skip-intro-info');
   }

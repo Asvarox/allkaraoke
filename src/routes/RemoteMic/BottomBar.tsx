@@ -1,7 +1,6 @@
-import styled from '@emotion/styled';
 import { List as ListIcon, Settings as SettingsIcon } from '@mui/icons-material';
+import { twc, TwcComponentProps } from 'react-twc';
 import { MicIcon } from '~/modules/Elements/MicIcon';
-import styles from '~/modules/GameEngine/Drawing/styles';
 import { PhoneTabs } from '~/routes/RemoteMic/RemoteMic';
 
 interface Props {
@@ -13,7 +12,7 @@ export default function BottomBar({ active, setActiveTab }: Props) {
   return (
     <div className="landscap:fixed landscap:max-w-[400px] landscap:scale-75 right-0 bottom-0 flex w-full origin-bottom-right items-stretch gap-[1px]">
       <ItemContainer
-        active={active === 'microphone'}
+        $active={active === 'microphone'}
         onClick={() => setActiveTab('microphone')}
         data-test="menu-microphone">
         <ItemIcon>
@@ -22,7 +21,7 @@ export default function BottomBar({ active, setActiveTab }: Props) {
         <ItemTitle>Microphone</ItemTitle>
       </ItemContainer>
       <ItemContainer
-        active={active === 'song-list'}
+        $active={active === 'song-list'}
         onClick={() => setActiveTab('song-list')}
         data-test="menu-song-list">
         <ItemIcon>
@@ -30,7 +29,7 @@ export default function BottomBar({ active, setActiveTab }: Props) {
         </ItemIcon>
         <ItemTitle>Song list</ItemTitle>
       </ItemContainer>
-      <ItemContainer active={active === 'settings'} onClick={() => setActiveTab('settings')} data-test="menu-settings">
+      <ItemContainer $active={active === 'settings'} onClick={() => setActiveTab('settings')} data-test="menu-settings">
         <ItemIcon>
           <SettingsIcon />
         </ItemIcon>
@@ -40,25 +39,12 @@ export default function BottomBar({ active, setActiveTab }: Props) {
   );
 }
 
-const ItemContainer = styled.div<{ active?: boolean }>`
-  cursor: pointer;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  padding: 1rem;
-  font-size: 1.5rem;
-  gap: 0.5rem;
-  color: ${(props) => (props.active ? styles.colors.text.active : '#cecece')};
-`;
+const ItemContainer = twc.div<{ $active?: boolean } & TwcComponentProps<'div'>>((props) =>
+  [
+    'flex flex-1 cursor-pointer flex-col items-center justify-center gap-1 bg-black p-2.5 text-sm',
+    props.$active ? 'text-active' : 'text-[#cecece]',
+  ].join(' '),
+);
 
-const ItemIcon = styled.div`
-  svg {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  font-size: 2rem;
-`;
-const ItemTitle = styled.div``;
+const ItemIcon = twc.div`text-sm [&_svg]:h-6 [&_svg]:w-6`;
+const ItemTitle = twc.div``;

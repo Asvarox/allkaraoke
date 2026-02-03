@@ -83,10 +83,11 @@ const Container = styled.div`
   justify-content: flex-start;
   top: 0;
   left: var(--song-sidebar-weight);
-  padding: 1rem 0 1.5rem 2rem;
+  padding: 0 0 0 2rem;
+  height: 4rem;
   width: 100%;
   z-index: 100;
-  gap: 1rem;
+  gap: 0.75rem;
   background: rgba(0, 0, 0, 0.75);
 `;
 
@@ -97,9 +98,9 @@ const SongsGroupButton = styled(Button)`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.3rem;
-  padding: 0.5rem 1.25rem;
-  font-size: 2.3rem;
+  height: 2rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.5rem;
   z-index: 1;
   color: ${styles.colors.text.default};
 

@@ -53,10 +53,10 @@ export default function SinglePlayer({
   const currentName = player.getName();
 
   return (
-    <>
+    <div className="flex flex-1 flex-col gap-2">
       <PlayerName
         maxLength={MAX_NAME_LENGTH}
-        className="ph-no-capture"
+        className="ph-no-capture w-full"
         value={isDefaultName ? '' : currentName}
         placeholder={isDefaultName ? currentName : undefined}
         options={playerNames}
@@ -73,20 +73,18 @@ export default function SinglePlayer({
           data-test-value={setup.track + 1}
         />
       )}
-    </>
+    </div>
   );
 }
 
 const PlayerName = styled(Autocomplete)`
-  input {
-    font-size: 4.5rem;
+  button {
+    width: 100%;
   }
-
   [role='listbox'] {
-    max-height: ${6 * (4.5 + 0.3)}rem;
+    max-height: ${6 * (3 + 0.3)}rem;
   }
 `;
 const Track = styled(Switcher)`
-  font-size: 4.5rem;
-  padding: 1.1rem;
+  width: 100%;
 `;

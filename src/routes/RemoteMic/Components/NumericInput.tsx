@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
 import { ComponentProps } from 'react';
-import { typography } from '~/modules/Elements/cssMixins';
+import { twc } from 'react-twc';
 
 interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
   unit?: string;
@@ -20,10 +19,10 @@ function NumericInput({ unit = '', value, onChange, step = 50, disabled = false,
         className="rounded-l-md">
         -
       </Button>
-      <Value>
+      <div className="mobile:text-md flex-1 text-center text-lg">
         <strong data-test="numeric-input-value">{value}</strong>
         {unit}
-      </Value>
+      </div>
       <Button
         onClick={() => onChange(value + step)}
         disabled={disabled}
@@ -36,24 +35,6 @@ function NumericInput({ unit = '', value, onChange, step = 50, disabled = false,
 }
 export default NumericInput;
 
-const Button = styled.button`
-  padding: 0.5rem 2rem;
-  border: none;
-  font-size: 3rem;
-  ${typography};
-  :disabled {
-    opacity: 0.5;
-  }
-`;
+const Button = twc.button`typography h-14 border-none px-5 py-1 text-xl disabled:opacity-50`;
 
-const Value = styled.div`
-  flex: 1;
-  text-align: center;
-`;
-const Container = styled.div`
-  ${typography};
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  background: black;
-`;
+const Container = twc.div`typography flex items-center justify-self-center bg-black`;

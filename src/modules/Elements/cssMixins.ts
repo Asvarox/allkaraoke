@@ -10,7 +10,7 @@ export const focusedStatic = {
 
 export const typography = {
   fontWeight: 'bold',
-  WebkitTextStroke: '0.1rem black',
+  WebkitTextStroke: '0.5px black',
   color: 'white',
   '& strong': {
     color: styles.colors.text.active,

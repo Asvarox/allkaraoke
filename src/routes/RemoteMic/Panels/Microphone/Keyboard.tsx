@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import {
   ArrowBack,
   ArrowForward,
@@ -9,6 +8,8 @@ import {
   KeyboardArrowUp,
   Shuffle,
 } from '@mui/icons-material';
+import { twc, TwcComponentProps } from 'react-twc';
+import { Kbd } from '~/modules/Elements/AKUI/Kbd';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventListener } from '~/modules/GameEvents/hooks';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
@@ -74,7 +75,7 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           </ArrowsContainer>
         </ActionsContainer>
       )}
-      <ActionsContainer>
+      <ActionsContainer className="gap-4">
         <ActionButton onClick={onPress('back')} disabled={keyboard?.back === undefined} data-test="keyboard-backspace">
           {keyboard?.back || (
             <>
@@ -90,8 +91,10 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
           )}
         </ActionButton>
       </ActionsContainer>
-      <Break />
-      <ActionsContainer disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
+      <ActionsContainer
+        $disabled={keyboard?.shiftR === undefined}
+        data-test="keyboard-shift-r"
+        className="w-full basis-full">
         <ActionButton onClick={onPress('random')}>
           <Shuffle /> {keyboard?.shiftR || 'Random Song'}
         </ActionButton>
@@ -100,73 +103,13 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   ) : null;
 }
 
-const ArrowsContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  color: white;
-  font-size: 2rem;
-`;
+const ArrowsContainer = twc.div`flex flex-1 justify-center text-xl text-white`;
 
-const ActionsContainer = styled.div<{ disabled?: boolean }>`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
-  opacity: ${(props) => (props.disabled ? 0 : 1)};
-`;
+const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolean }>((props) => [
+  'flex flex-1 flex-col justify-between',
+  props.$disabled ? 'opacity-0' : 'opacity-100',
+]);
 
-const Break = styled.div`
-  flex-basis: 100%;
-  height: 0;
-`;
+const ArrowButton = twc(Kbd)`m-0.5 text-lg`;
 
-const ButtonBase = styled.button<{ disabled?: boolean }>`
-  background: none;
-  border: none;
-  box-sizing: border-box;
-  margin: 0.25rem;
-  width: 4.5rem;
-  height: 4.5rem;
-
-  svg {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  opacity: ${(props) => (props.disabled ? 0.25 : 1)};
-`;
-
-const ArrowButton = styled(ButtonBase)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.3rem;
-  border: 0.3rem solid rgb(204, 204, 204);
-  border-bottom-color: rgb(130, 130, 130);
-  border-right-color: rgb(130, 130, 130);
-  gap: 0.5rem;
-
-  &[data-disabled='false'] {
-    cursor: pointer;
-
-    &:active {
-      border: 0.3rem solid rgb(130, 130, 130);
-      border-bottom-color: rgb(204, 204, 204);
-      border-right-color: rgb(204, 204, 204);
-    }
-  }
-
-  color: rgb(51, 51, 51);
-  font-weight: normal;
-  font-size: 2.5rem;
-  box-shadow:
-    0 0.1rem 0 rgba(0, 0, 0, 0.2),
-    inset 0 0 0 0.2rem #ffffff;
-  background-color: rgb(247, 247, 247);
-  text-shadow: 0 0.1rem 0 #fff;
-`;
-
-const ActionButton = styled(ArrowButton)<{ disabled?: boolean }>`
-  width: 100%;
-`;
+const ActionButton = twc(ArrowButton)`w-full`;

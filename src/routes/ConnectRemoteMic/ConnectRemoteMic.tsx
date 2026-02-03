@@ -1,9 +1,6 @@
-import styled from '@emotion/styled';
 import * as qrcode from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
-import { focused, typography } from '~/modules/Elements/cssMixins';
-import styles from '~/modules/GameEngine/Drawing/styles';
 import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
 import useQueryParam from '~/modules/hooks/useQueryParam';
 
@@ -11,11 +8,11 @@ const { QRCodeSVG } = qrcode;
 
 function RoomCode({ gameCode, ...props }: { gameCode: string }) {
   return (
-    <GameCode {...props}>
+    <strong className="animate-focused inline-flex gap-4 rounded-md px-4 py-1 uppercase" {...props}>
       {gameCode.split('').map((letter, i) => (
         <span key={i}>{letter}</span>
       ))}
-    </GameCode>
+    </strong>
   );
 }
 
@@ -37,164 +34,58 @@ function ConnectRemoteMic() {
   }, [match]);
 
   return (
-    <Container>
-      <DescriptionMobile>
-        <h1>
-          Code: <RoomCode gameCode={gameCode} />
-        </h1>
-      </DescriptionMobile>
-      <QRCode>
+    <div className="flex flex-1 flex-row flex-nowrap items-stretch gap-8 max-[560px]:flex-col">
+      <div className="mb-8 hidden max-[560px]:mb-0 max-[560px]:block">
+        <span className="typography flex justify-center text-2xl">
+          <RoomCode gameCode={gameCode} />
+        </span>
+      </div>
+      <div className="flex-[0.6] max-[560px]:flex-none">
         <QRCodeSVG value={link} width="100%" height="100%" includeMargin />
-      </QRCode>
-      <Description>
-        <QRCodeInstruction>
-          <h3>
+      </div>
+      <div className="flex flex-1 flex-col max-[560px]:hidden">
+        <div className="flex-1">
+          <span className="typography mb-2.5 text-xl">
             Game code: <RoomCode gameCode={gameCode} data-test="game-code" />
-          </h3>
-          <ol>
-            <li>
+          </span>
+          <ol className="mb-3 list-inside list-decimal pl-6">
+            <li className="text-md leading-8 text-white">
               Go to{' '}
               <a href={linkObject.origin} target="_blank" rel="noreferrer">
                 allkaraoke.party
               </a>{' '}
               on your phone
             </li>
-            <li>
-              Click on <b>Join game</b>
+            <li className="text-md leading-8 text-white">
+              Click on <b className="text-active typography font-bold">Join game</b>
             </li>
-            <li>
+            <li className="text-md leading-8 text-white">
               Enter the code <RoomCode gameCode={gameCode} />
             </li>
-            <li>Follow the instructions</li>
+            <li className="text-md leading-8 text-white">Follow the instructions</li>
           </ol>
-        </QRCodeInstruction>
-        <CopyLinkInstruction>
-          <h4>Or copy and send the link</h4>
-          <InputCopyContainer>
-            <InputCopy disabled value={link} data-test="server-link-input" />
-            <CopyButton
+        </div>
+        <div className="flex-none">
+          <span className="typography text-md my-2.5">Or copy and send the link</span>
+          <div className="flex w-full items-stretch">
+            <input
+              className="box-border w-full border-none bg-gray-600 p-3 text-sm text-white"
+              disabled
+              value={link}
+              data-test="server-link-input"
+            />
+            <button
+              className="bg-active typography text-md box-border cursor-pointer border-0 px-5 font-bold active:bg-black"
               onClick={() => {
                 navigator.clipboard.writeText(link);
               }}>
               Copy
-            </CopyButton>
-          </InputCopyContainer>
-        </CopyLinkInstruction>
-      </Description>
-    </Container>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-const QRCodeInstruction = styled.div`
-  flex: 1;
-`;
-
-const CopyLinkInstruction = styled.div`
-  flex: 0;
-`;
-
-const InputCopyContainer = styled.div`
-  position: relative;
-  margin-top: 0.5rem;
-`;
-
-const CopyButton = styled.button`
-  cursor: pointer;
-  position: absolute;
-  padding: 0 2rem;
-  right: 0;
-  height: 100%;
-  box-sizing: border-box;
-
-  background: ${styles.colors.text.active};
-
-  ${typography};
-  font-weight: bold;
-  font-size: 2.2rem;
-  border: 0;
-
-  :active {
-    background-color: black;
-  }
-`;
-
-const GameCode = styled.strong`
-  text-transform: uppercase;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.5rem;
-  display: inline-flex;
-  gap: 1.5rem;
-
-  ${focused};
-`;
-
-const InputCopy = styled.input`
-  padding: 1rem;
-  box-sizing: border-box;
-  background: grey;
-  border: none;
-  width: 100%;
-  font-size: 1.3rem;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  flex: 1;
-  gap: 2%;
-
-  @media (max-width: 560px) {
-    flex-direction: column;
-  }
-`;
-
-const QRCode = styled.div`
-  flex: 0.6;
-  @media (max-width: 560px) {
-    flex: 0;
-  }
-`;
-
-const DescriptionMobile = styled.div`
-  display: none;
-  @media (max-width: 560px) {
-    display: block;
-  }
-  margin-bottom: 2rem;
-`;
-const Description = styled.div`
-  @media (max-width: 560px) {
-    display: none;
-  }
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  b {
-    font-weight: bold;
-    ${typography};
-    color: ${styles.colors.text.active};
-  }
-
-  h3 {
-    margin-bottom: 1rem;
-  }
-  h4 {
-    margin: 1rem 0;
-  }
-
-  ol {
-    padding-left: 2.3rem;
-    margin: 0 0 1.25rem 0;
-    list-style: decimal inside;
-  }
-  li {
-    color: white;
-    font-size: 2rem;
-    line-height: 3.2rem;
-  }
-`;
 
 export default ConnectRemoteMic;
