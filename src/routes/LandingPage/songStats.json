@@ -26,6 +26,7 @@
     "Ghost",
     "ABBA",
     "Madonna",
+    "Foo Fighters",
     "Muse",
     "Westlife",
     "Adele",
@@ -67,10 +68,10 @@
     "Volbeat",
     "Ava Max",
     "Dua Lipa",
-    "Foo Fighters",
     "Gwen Stefani",
     "Kool & The Gang",
     "Marina and the Diamonds",
+    "Owl City",
     "Red Hot Chili Peppers",
     "Rod Stewart",
     "Sabaton",
@@ -148,8 +149,7 @@
     "Papa Roach",
     "P!nk",
     "Robbie Williams",
-    "Shakira",
-    "Simon & Garfunkel"
+    "Shakira"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5810
+  "songs": 5830
 }

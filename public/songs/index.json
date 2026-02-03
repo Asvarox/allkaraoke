@@ -56031,6 +56031,62 @@
     "local": false
   },
   {
+    "id": "foo-fighters-big-me",
+    "title": "Big Me",
+    "artist": "Foo Fighters",
+    "video": "pLdJQFTnZfA",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 13839.23076923077,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.065Z",
+    "edition": "[Sc]-Songs",
+    "realBpm": 6,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Foo Fighters - Big Me",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5829,
+    "tracksCount": 1,
+    "search": "foofightersbigme",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-enough-space",
+    "title": "Enough Space",
+    "artist": "Foo Fighters",
+    "video": "6VOu-Zq1L1M",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.54,
+    "gap": 51876.33428442709,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.064Z",
+    "genre": "Alternative Rock",
+    "realBpm": 23,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Foo Fighters - Enough Space",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5828,
+    "tracksCount": 1,
+    "search": "foofightersenoughspace",
+    "local": false
+  },
+  {
     "id": "foo-fighters-everlong",
     "title": "Everlong",
     "artist": "Foo Fighters",
@@ -56089,6 +56145,33 @@
     "local": false
   },
   {
+    "id": "foo-fighters-long-road-to-ruin",
+    "title": "Long Road To Ruin",
+    "artist": "Foo Fighters",
+    "video": "lMsO8JU_huY",
+    "language": [
+      "English"
+    ],
+    "bpm": 294,
+    "gap": 9119.591836734693,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.067Z",
+    "realBpm": 36,
+    "volume": 0.5,
+    "author": "MacSteve",
+    "sourceUrl": "Foo Fighters - Long Road To Ruin",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5831,
+    "tracksCount": 1,
+    "search": "foofighterslongroadtoruin",
+    "local": false
+  },
+  {
     "id": "foo-fighters-monkey-wrench",
     "title": "Monkey Wrench",
     "artist": "Foo Fighters",
@@ -56117,6 +56200,62 @@
     "shortId": 4965,
     "tracksCount": 1,
     "search": "foofightersmonkeywrench",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-my-hero",
+    "title": "My Hero",
+    "artist": "Foo Fighters",
+    "video": "EqWRaAF6_WY",
+    "language": [
+      "English"
+    ],
+    "bpm": 394,
+    "gap": 34430.15228426396,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.062Z",
+    "genre": "Alternative Rock",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Foo Fighters - My Hero",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5826,
+    "tracksCount": 1,
+    "search": "foofightersmyhero",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-stranger-things-have-happened",
+    "title": "Stranger Things Have Happened",
+    "artist": "Foo Fighters",
+    "video": "GWaQTpv-R-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 31675.102040816328,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.063Z",
+    "genre": "Acoustic Rock",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "bohning, Hoanzl",
+    "sourceUrl": "Foo Fighters - Stranger Things Have Happened",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5827,
+    "tracksCount": 1,
+    "search": "foofightersstrangerthingshavehappened",
     "local": false
   },
   {
@@ -56231,6 +56370,34 @@
     "shortId": 1655,
     "tracksCount": 1,
     "search": "foofighterswalk",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-walking-after-you",
+    "title": "Walking After You",
+    "artist": "Foo Fighters",
+    "video": "Ui_OD-bgFJE",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.7,
+    "gap": 17144.198645598193,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.066Z",
+    "genre": "Alternative Rock",
+    "realBpm": 51,
+    "volume": 0.5,
+    "author": "Gollum",
+    "sourceUrl": "Foo Fighters - Walking After You",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5830,
+    "tracksCount": 1,
+    "search": "foofighterswalkingafteryou",
     "local": false
   },
   {
@@ -67823,6 +67990,34 @@
     "shortId": 1929,
     "tracksCount": 1,
     "search": "hiroyukisawanomikakobayashibauklotze",
+    "local": false
+  },
+  {
+    "id": "hole-celebrity-skin",
+    "title": "Celebrity Skin",
+    "artist": "Hole",
+    "video": "O3dWBLoU--E",
+    "language": [
+      "English"
+    ],
+    "bpm": 268.7,
+    "gap": 3145.1618905842947,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.061Z",
+    "genre": "Rock",
+    "realBpm": 45,
+    "volume": 0.5,
+    "author": "Canni",
+    "sourceUrl": "Hole - Celebrity Skin",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5825,
+    "tracksCount": 1,
+    "search": "holecelebrityskin",
     "local": false
   },
   {
@@ -81748,7 +81943,7 @@
     "gap": 16935.876194811106,
     "year": "1975",
     "artistOrigin": "US",
-    "lastUpdate": "2026-02-01T00:20:06.643Z",
+    "lastUpdate": "2025-07-27T06:31:24.400Z",
     "genre": "Disco, Funk",
     "realBpm": 21,
     "volume": 0.5,
@@ -81776,7 +81971,7 @@
     "gap": 43063.86132695756,
     "year": "1982",
     "artistOrigin": "US",
-    "lastUpdate": "2026-02-01T00:20:05.817Z",
+    "lastUpdate": "2025-07-27T06:31:24.393Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "snake84, fepo",
@@ -81803,7 +81998,7 @@
     "gap": 4230.684606252473,
     "year": "1979",
     "artistOrigin": "US",
-    "lastUpdate": "2026-02-01T00:20:06.640Z",
+    "lastUpdate": "2025-07-27T06:31:24.396Z",
     "realBpm": 10,
     "volume": 0.5,
     "author": "The Dark, Fepo",
@@ -81830,7 +82025,7 @@
     "gap": 15247.984588569856,
     "year": "1975",
     "artistOrigin": "US",
-    "lastUpdate": "2026-02-01T00:20:06.649Z",
+    "lastUpdate": "2025-07-27T06:31:24.403Z",
     "genre": "Dance",
     "volume": 0.5,
     "author": "RetroGirl",
@@ -83243,6 +83438,33 @@
     "shortId": 2368,
     "tracksCount": 1,
     "search": "kidcudifeatmgmtratatatpursuitofhappinesssteveaokiremix",
+    "local": false
+  },
+  {
+    "id": "kid-cudi-feat-mgmt-ratatat-pursuit-of-happiness",
+    "title": "Pursuit Of Happiness",
+    "artist": "Kid Cudi feat. MGMT & Ratatat",
+    "video": "7xzU9Qqdqww",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.5,
+    "gap": 9119.963702359346,
+    "year": "2009",
+    "lastUpdate": "2026-02-03T00:18:56.634Z",
+    "genre": "Hip-Hop",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Mircosoft93",
+    "sourceUrl": "Kid Cudi feat. MGMT & Ratatat - Pursuit Of Happiness",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5812,
+    "tracksCount": 1,
+    "search": "kidcudifeatmgmtratatatpursuitofhappiness",
     "local": false
   },
   {
@@ -102270,6 +102492,62 @@
     "local": false
   },
   {
+    "id": "mgmt-electric-feel",
+    "title": "Electric Feel",
+    "artist": "MGMT",
+    "video": "MmZexg8sxyk",
+    "language": [
+      "English"
+    ],
+    "bpm": 411.94,
+    "gap": 29802.847113657328,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:57.300Z",
+    "genre": "Pop",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "krasserdude",
+    "sourceUrl": "MGMT - Electric Feel",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5813,
+    "tracksCount": 1,
+    "search": "mgmtelectricfeel",
+    "local": false
+  },
+  {
+    "id": "mgmt-time-to-pretend",
+    "title": "Time To Pretend",
+    "artist": "MGMT",
+    "video": "B9dSYgd5Elk",
+    "language": [
+      "English"
+    ],
+    "bpm": 404.26,
+    "gap": 28888.169494879534,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:57.775Z",
+    "genre": "Indie",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "FaStMinD85 & pauldiddy",
+    "sourceUrl": "MGMT - Time To Pretend",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5814,
+    "tracksCount": 1,
+    "search": "mgmttimetopretend",
+    "local": false
+  },
+  {
     "id": "mia-paper-planes",
     "title": "Paper Planes",
     "artist": "M.I.A.",
@@ -115213,6 +115491,34 @@
     "local": false
   },
   {
+    "id": "owl-city-alligator-sky",
+    "title": "Alligator Sky",
+    "artist": "Owl City",
+    "video": "wODs-_AkQgE",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 1087.5,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.060Z",
+    "genre": "Blues",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "Huggybaer",
+    "sourceUrl": "Owl City - Alligator Sky (Album Version)",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5824,
+    "tracksCount": 1,
+    "search": "owlcityalligatorsky",
+    "local": false
+  },
+  {
     "id": "owl-city-carly-rae-jepsen-good-time",
     "title": "Good Time",
     "artist": "Owl City & Carly Rae Jepsen",
@@ -115241,6 +115547,33 @@
     "shortId": 3342,
     "tracksCount": 1,
     "search": "owlcitycarlyraejepsengoodtime",
+    "local": false
+  },
+  {
+    "id": "owl-city-feat-lindsey-stirling-beautiful-times",
+    "title": "Beautiful Times",
+    "artist": "Owl City feat. Lindsey Stirling",
+    "video": "gfA-tPKPoNs",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 6307.35294117647,
+    "year": "2014",
+    "lastUpdate": "2026-02-03T00:18:57.780Z",
+    "genre": "Pop",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Owl City feat. Lindsey Stirling - Beautiful Times",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5817,
+    "tracksCount": 1,
+    "search": "owlcityfeatlindseystirlingbeautifultimes",
     "local": false
   },
   {
@@ -115273,6 +115606,224 @@
     "shortId": 3343,
     "tracksCount": 1,
     "search": "owlcityfireflies",
+    "local": false
+  },
+  {
+    "id": "owl-city-hot-air-balloon",
+    "title": "Hot Air Balloon",
+    "artist": "Owl City",
+    "video": "BRwBa4ahWqM",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.5,
+    "gap": 18001.59663865546,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.048Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Usdx",
+    "sourceUrl": "Owl City - Hot Air Balloon",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5819,
+    "tracksCount": 1,
+    "search": "owlcityhotairballoon",
+    "local": false
+  },
+  {
+    "id": "owl-city-meteor-shower",
+    "title": "Meteor Shower",
+    "artist": "Owl City",
+    "video": "TdQZaCPNw6M",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 44383.15789473684,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:57.778Z",
+    "genre": "Dance & Electronic",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Owl City - Meteor Shower",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5816,
+    "tracksCount": 1,
+    "search": "owlcitymeteorshower",
+    "local": false
+  },
+  {
+    "id": "owl-city-to-the-sky",
+    "title": "To The Sky",
+    "artist": "Owl City",
+    "video": "ukgvTE3A0Ic",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.27,
+    "gap": 13117.129036064027,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.050Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Usdx",
+    "sourceUrl": "Owl City - To The Sky",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5821,
+    "tracksCount": 1,
+    "search": "owlcitytothesky",
+    "local": false
+  },
+  {
+    "id": "owl-city-umbrella-beach",
+    "title": "Umbrella Beach",
+    "artist": "Owl City",
+    "video": "yRpkRf99tz0",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.65,
+    "gap": 13758.702021138513,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.049Z",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "Usdx",
+    "sourceUrl": "Owl City - Umbrella Beach",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5820,
+    "tracksCount": 1,
+    "search": "owlcityumbrellabeach",
+    "local": false
+  },
+  {
+    "id": "owl-city-up-all-night",
+    "title": "Up All Night",
+    "artist": "Owl City",
+    "video": "8JNg8I6IjwY",
+    "language": [
+      "English"
+    ],
+    "bpm": 366,
+    "gap": 20026.39344262295,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.053Z",
+    "genre": "Pop",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "aac",
+    "sourceUrl": "Owl City - Up All Night",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5822,
+    "tracksCount": 1,
+    "search": "owlcityupallnight",
+    "local": false
+  },
+  {
+    "id": "owl-city-vanilla-twilight",
+    "title": "Vanilla Twilight",
+    "artist": "Owl City",
+    "video": "pIz2K3ArrWk",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.04,
+    "gap": 32.72135887242507,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:57.777Z",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "gaspar17",
+    "sourceUrl": "Owl City - Vanilla Twilight",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5815,
+    "tracksCount": 1,
+    "search": "owlcityvanillatwilight",
+    "local": false
+  },
+  {
+    "id": "owl-city-west-coast-friendship",
+    "title": "West Coast Friendship",
+    "artist": "Owl City",
+    "video": "UTi7fuaQyxI",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 285.625,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.046Z",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "KimonoThief",
+    "sourceUrl": "Owl City - West Coast Friendship",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5818,
+    "tracksCount": 1,
+    "search": "owlcitywestcoastfriendship",
+    "local": false
+  },
+  {
+    "id": "owl-city-when-can-i-see-you-again",
+    "title": "When Can I See You Again?",
+    "artist": "Owl City",
+    "video": "R7eajYbsjQc",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.12,
+    "gap": 3204.3729501796033,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-02-03T00:18:58.054Z",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Jach",
+    "sourceUrl": "Owl City - When Can I See You Again?",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5823,
+    "tracksCount": 1,
+    "search": "owlcitywhencaniseeyouagain",
     "local": false
   },
   {
