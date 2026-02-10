@@ -41,7 +41,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
 
   return (
     <Menu>
-      {header && <h2>{header}</h2>}
+      {header && <Menu.Header>{header}</Menu.Header>}
       {([0, 1, 2, 3] as const).map((number) => {
         const occupant = list.find((mic) => mic.number === number);
         const isOwn = number === playerNumber;
@@ -51,8 +51,9 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
             key={number}
             size="small"
             data-test={`change-to-player-${number}`}
-            onClick={() => selectPlayer(number)}
-            disabled={isOwn}
+            onClick={isOwn ? onModalClose : () => selectPlayer(number)}
+            // disabled={isOwn}
+            data-focused={isOwn}
             className="gap-2"
             style={{ color: styles.colors.players[number].perfect.fill }}>
             {colorNames[style][number]}

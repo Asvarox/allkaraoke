@@ -3,12 +3,10 @@ import { ComponentProps, ReactNode, use, useCallback } from 'react';
 import { SongPreview } from '~/interfaces';
 import Box from '~/modules/Elements/AKUI/Primitives/Box';
 import { BackgroundContext } from '~/modules/Elements/BackgroundContext';
-import { typography } from '~/modules/Elements/cssMixins';
+import { mobileMQ, typography } from '~/modules/Elements/cssMixins';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import { useSongStats } from '~/modules/Songs/stats/hooks';
-import { FeatureFlags } from '~/modules/utils/featureFlags';
-import useFeatureFlag from '~/modules/utils/useFeatureFlag';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 import SongFlag from '~/routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 import { TopContainer } from '~/routes/SingASong/SongSelection/Components/SongCard/TopContainer';
 
@@ -62,8 +60,12 @@ export const FinalSongCard = ({
       )}
       <SongInfo data-expanded={expanded}>
         {!expanded && <TopContainer song={song} isPopular={isPopular} video={video} />}
-        <SongListEntryDetailsArtist data-expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
-        <SongListEntryDetailsTitle data-expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
+        <SongListEntryDetailsArtist data-name="artist" data-expanded={expanded}>
+          {song.artist}
+        </SongListEntryDetailsArtist>
+        <SongListEntryDetailsTitle data-name="title" data-expanded={expanded}>
+          {song.title}
+        </SongListEntryDetailsTitle>
         <ExpandedData data-expanded={expanded}>
           {expanded && (
             <>
@@ -93,6 +95,10 @@ export const FinalSongCard = ({
 
 export const Language = styled(SongFlag)`
   height: 2.75rem;
+
+  ${mobileMQ} {
+    height: 1.5rem;
+  }
   object-fit: cover;
   border-top-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
@@ -128,7 +134,7 @@ const SongInfo = styled.div`
 `;
 
 export const SongCardContainer = styled.div`
-  font-size: 4.5rem;
+  font-size: 2rem;
 
   display: flex;
   align-items: flex-end;
@@ -136,6 +142,9 @@ export const SongCardContainer = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
+  ${mobileMQ} {
+    padding: 0.25rem;
+  }
   padding: 0.5rem;
 
   border: 0.1rem black solid;
@@ -185,23 +194,23 @@ export const SongListEntryDetails = styled(Box)<{ expanded?: boolean }>`
 
   width: auto;
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   ${typography};
 
-  text-align: right;
-  font-size: ${(props) => {
-    if (props.expanded) return '6rem';
-    // Use feature flag hook to determine font size
-    const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
-    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-    // Only increase font size for desktop users with feature flag enabled
-    const shouldUseLargerFont = !mobilePhoneMode && fewerSongsPerRowEnabled;
-    return shouldUseLargerFont ? '3.5rem' : '2.7rem';
-  }};
-
   &[data-expanded='true'] {
-    font-size: 6rem;
+    font-size: 3.5rem;
+    ${mobileMQ} {
+      font-size: 1.25rem;
+    }
   }
+
+  font-size: 2rem;
+  ${mobileMQ} {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  text-align: right;
 `;
 
 export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
@@ -209,22 +218,29 @@ export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
 `;
 
 export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
-  margin-top: ${(props) => (props.expanded ? '1.5rem' : '0.5rem')};
   color: white;
-  font-size: ${(props) => {
-    if (props.expanded) return '6rem';
-    // Use feature flag hook to determine font size - title gets 4rem when flag is enabled on desktop
-    const fewerSongsPerRowEnabled = useFeatureFlag(FeatureFlags.FewerSongsPerRow);
-    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-    // Only increase font size for desktop users with feature flag enabled
-    const shouldUseLargerFont = !mobilePhoneMode && fewerSongsPerRowEnabled;
-    return shouldUseLargerFont ? '4rem' : '2.7rem';
-  }};
+
+  &[data-expanded='true'] {
+    font-size: 3rem;
+    margin-top: 1rem;
+    ${mobileMQ} {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  margin-top: 0.5rem;
+
+  font-size: 2rem;
+  ${mobileMQ} {
+    margin-top: 0;
+    font-size: 1rem;
+  }
 `;
 
 export const SongAuthor = styled(SongListEntryDetailsTitle)`
-  font-size: 3rem;
-  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 `;
 
 export const SongListEntryStats = ({ song }: { song: SongPreview }) => {

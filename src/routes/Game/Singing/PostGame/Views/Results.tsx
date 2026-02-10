@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import { useEffect, useMemo, useState } from 'react';
 import { GAME_MODE, HighScoreEntity, SingSetup } from '~/interfaces';
 import CameraManager from '~/modules/Camera/CameraManager';
@@ -62,9 +62,9 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   };
 
   return (
-    <Container>
-      <div className="flex flex-row gap-10">
-        <ScoresContainer data-collapse={revealHighScore}>
+    <>
+      <div className="flex flex-col gap-2 sm:flex-row md:gap-6">
+        <div className="flex flex-col gap-2 sm:flex-1" data-collapse={revealHighScore}>
           {finalPlayers.map((player, number) => (
             <PlayerScoreView
               playerNumber={player.playerNumber}
@@ -78,53 +78,29 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
               singSetup={singSetup}
             />
           ))}
-        </ScoresContainer>
-        <div className={`duration-300 ${initialCameraPermission && revealHighScore ? 'w-[43%]' : 'w-[28%]'}`}>
+        </div>
+        <div
+          className={clsx(
+            'transition-[width] duration-300',
+            initialCameraPermission && revealHighScore ? 'sm:w-2/5 md:w-5/14' : 'sm:w-1/3 md:w-1/3',
+          )}>
           {initialCameraPermission ? (
             <CameraRoll />
           ) : (
+            // <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
             <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
           )}
         </div>
       </div>
-      <SongSelectionButton
+      <Button
         {...register('next-button', () => nextStep(), undefined, true)}
-        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}>
+        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
+        size="small"
+        className="w-full text-2xl lg:ml-auto lg:w-5/14 lg:text-3xl xl:text-4xl 2xl:mt-auto">
         {isAnimFinished ? 'Next' : 'Skip'}
-      </SongSelectionButton>
-    </Container>
+      </Button>
+    </>
   );
 }
-const Container = styled.div`
-  position: absolute;
-  padding: 20rem 5rem 15rem 5rem;
-  top: 0;
-  height: 100%;
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
-const ScoresContainer = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  flex: 1;
-
-  &[data-collapse='true'] {
-    gap: 2rem;
-  }
-
-  transition: gap 0.5s;
-`;
-
-const SongSelectionButton = styled(Button)`
-  width: 40rem;
-  font-size: 1.9vw;
-  margin-left: auto;
-  margin-top: auto;
-`;
 
 export default ResultsView;

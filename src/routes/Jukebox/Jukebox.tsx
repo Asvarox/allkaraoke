@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { shuffle } from 'es-toolkit';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
@@ -61,32 +60,20 @@ function Jukebox() {
               }}
             />
           }>
-          <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
-          <SmoothLink to={navigateUrl}>
-            <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
-              Sing this song
-            </PlayThisSongButton>
-          </SmoothLink>
+          <div className="absolute right-10 bottom-10 flex flex-col items-end gap-10">
+            <Button {...register('skip-button', playNext)} className="px-20">
+              Skip
+            </Button>
+            <SmoothLink to={navigateUrl}>
+              <Button {...register('sing-button', () => navigate(navigateUrl), undefined, true)} className="px-20">
+                Sing this song
+              </Button>
+            </SmoothLink>
+          </div>
         </SongPage>
       </NoPrerender>
     </LayoutGame>
   );
 }
-
-const PlayThisSongButton = styled(Button)<{ focused: boolean }>`
-  bottom: 7rem;
-  right: 2rem;
-  width: 50rem;
-  position: absolute;
-  font-size: 1.9vw;
-`;
-
-const SkipSongButton = styled(Button)<{ focused: boolean }>`
-  bottom: 15rem;
-  right: 2rem;
-  width: 30rem;
-  position: absolute;
-  font-size: 1.9vw;
-`;
 
 export default Jukebox;

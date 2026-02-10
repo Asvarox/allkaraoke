@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef } from 'react';
 import { GAME_MODE, PlayerSetup, Song } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/Elements/VideoPlayer';
@@ -107,7 +106,7 @@ const GameOverlay = forwardRef(function (
   const showMultipleLines = !mobilePhoneMode && players.length > 1;
 
   return (
-    <Screen>
+    <div className="relative flex h-full flex-col font-bold text-white">
       {graphicLevel === 'high' && (
         <>
           <script type={'x-shader/x-fragment'} id={'plane-fs'}>
@@ -116,12 +115,18 @@ const GameOverlay = forwardRef(function (
           <script id="plane-vs" type="x-shader/x-vertex">
             {vertShader}
           </script>
-          <Curtains id="canvas" style={{ zIndex: 10000 }} />
+          <div id="canvas" className="absolute inset-0 z-[10000] h-full w-full" />
         </>
       )}
-      <GameCanvas id="plane" style={!effectsEnabled ? { opacity: 0 } : undefined}>
-        <canvas ref={canvas} width={overlayWidth} height={overlayHeight} data-sampler="planeTexture" />
-      </GameCanvas>
+      <div id="plane" className="absolute inset-0 h-full w-full" style={!effectsEnabled ? { opacity: 0 } : undefined}>
+        <canvas
+          ref={canvas}
+          width={overlayWidth}
+          height={overlayHeight}
+          data-sampler="planeTexture"
+          className="h-full w-full"
+        />
+      </div>
       {effectsEnabled && (
         <>
           <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
@@ -129,18 +134,18 @@ const GameOverlay = forwardRef(function (
         </>
       )}
       <DurationBar players={playerSetups} currentStatus={currentStatus} duration={duration} />
-      <LyricsWrapper>
+      <div className="py-5">
         {showMultipleLines && (
           <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showStatusForAllPlayers={players.length > 2} />
         )}
-      </LyricsWrapper>
-      <Scores>
+      </div>
+      <div className="mobile:text-xl z-10 flex h-full flex-1 flex-col justify-around pr-4 text-right text-3xl">
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
-              <Score data-test="players-score" data-score={Math.floor(GameState.getPlayerScore(0))}>
+              <span data-test="players-score" data-score={Math.floor(GameState.getPlayerScore(0))}>
                 <ScoreText score={GameState.getPlayerScore(0)} />
-              </Score>
+              </span>
             ) : (
               PlayersManager.getPlayers().map((player) => {
                 const scores = PlayersManager.getPlayers().map((player) =>
@@ -149,84 +154,33 @@ const GameOverlay = forwardRef(function (
                 const { score, isFirst } = getPlayerScoreData(scores, player.number);
 
                 return (
-                  <Score
-                    className="relative"
+                  <span
+                    className="typography relative"
                     key={player.number}
                     data-test={`player-${player.number}-score`}
                     data-score={Math.floor(score)}>
                     <ScoreText score={score} />
                     <div
-                      className={`absolute top-12 rotate-12 text-xl transition-all duration-200 ${isFirst ? '-right-10' : '-right-36'}`}>
+                      className={`mobile:top-6 mobile:text-lg absolute top-10 rotate-12 text-xl transition-all duration-200 ${isFirst ? '-right-2' : '-right-36'}`}>
                       {isFirst ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
                     </div>
-                  </Score>
+                  </span>
                 );
               })
             )}
           </>
         )}
-      </Scores>
-      <LyricsWrapper ref={lyrics}>
+      </div>
+      <div className="py-5" ref={lyrics}>
         <Lyrics
           showStatusForAllPlayers={players.length > 2}
           player={players.length > 2 ? players[0] : players.at(-1)!}
           bottom
           effectsEnabled={effectsEnabled}
         />
-      </LyricsWrapper>
-    </Screen>
+      </div>
+    </div>
   );
 });
 
 export default GameOverlay;
-
-const LyricsWrapper = styled.div`
-  padding: 2rem 0;
-  box-sizing: border-box;
-`;
-
-const Screen = styled.div`
-  height: 100%;
-  color: white;
-  -webkit-text-stroke: 0.2rem black;
-  font-weight: bold;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-`;
-
-const GameCanvas = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  canvas {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const Curtains = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`;
-
-const Scores = styled.div`
-  flex: 1;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 5.5rem;
-  display: flex;
-  justify-content: space-around;
-  padding-right: 4rem;
-  flex-direction: column;
-  text-align: right;
-  z-index: 1;
-`;
-
-const Score = styled.span``;

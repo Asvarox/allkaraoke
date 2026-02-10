@@ -338,7 +338,7 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french1.ID)).not.toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.french2.ID)).not.toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getGroupedArtistSongsElement(artistInfo.name)).toBeVisible();
-    await remoteMic.remoteMicSongListPage.expectArtistSongCountToBe(artistInfo.songsCount);
+    await remoteMic.remoteMicSongListPage.expectArtistSongCountToBe(artistInfo.name, artistInfo.songsCount);
   });
 
   await test.step('After expanding the group tile, all artist`s songs should be visible', async () => {

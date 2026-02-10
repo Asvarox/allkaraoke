@@ -18,7 +18,7 @@ export const Calibration = ({ onClose, onSave }: Props) => {
 
   return (
     <>
-      <Menu.Header>Sync video with sound </Menu.Header>
+      <Menu.Header>Sync video with sound</Menu.Header>
       <Menu.HelpText>
         Make sure the <strong>circle</strong> appears at the same time as the <strong>click sound</strong>.
       </Menu.HelpText>

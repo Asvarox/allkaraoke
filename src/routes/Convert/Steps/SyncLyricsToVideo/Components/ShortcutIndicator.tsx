@@ -1,5 +1,6 @@
 import { Tooltip, useMediaQuery } from '@mui/material';
 import React from 'react';
+import isE2E from '~/modules/utils/isE2E';
 
 interface Props {
   shortcutKey: string;
@@ -9,7 +10,7 @@ interface Props {
 export default function ShortcutIndicator({ shortcutKey, children }: Props) {
   const hidden = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
-  if (hidden) {
+  if (hidden || isE2E()) {
     return children;
   }
   return (

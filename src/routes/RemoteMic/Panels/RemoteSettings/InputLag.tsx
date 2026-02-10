@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
 
@@ -25,7 +25,7 @@ function RemoteInputLag() {
 
   return (
     <>
-      <h3>Adjust game input lag</h3>
+      <Menu.SubHeader>Adjust game input lag</Menu.SubHeader>
       <NumericInput
         value={currentValue}
         onChange={changeValue}
@@ -33,9 +33,7 @@ function RemoteInputLag() {
         unit="ms"
         data-test="game-input-lag"
       />
-      <Typography className="text-sm">
-        If the sound is not synchronised with the lyrics, use this to compensate it.
-      </Typography>
+      <Menu.HelpText>If the sound is not synchronised with the lyrics, use this to compensate it.</Menu.HelpText>
     </>
   );
 }

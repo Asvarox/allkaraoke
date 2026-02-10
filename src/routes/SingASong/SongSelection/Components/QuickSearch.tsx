@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { ComponentRef, Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { mobileMQ } from '~/modules/Elements/cssMixins';
 import { Input } from '~/modules/Elements/Input';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';
@@ -100,6 +101,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
             searchInput.current?.element?.blur();
           }}>
           <Input
+            className="w-full"
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             onKeyDown={(e) => {
@@ -124,17 +126,23 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
 
 const Container = styled.div`
   background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  font-size: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  ${mobileMQ} {
+    font-size: 1rem;
+    width: 100vw;
+    left: 0;
+    z-index: 1000;
+  }
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   position: fixed;
   z-index: 200;
-  top: 4.5rem;
-  left: 30rem;
-  right: 30rem;
+  top: 3.5rem;
+  left: calc(50% - 30rem);
+  width: 60rem;
 `;
 
 const FilterItem = styled.div<{ large?: boolean }>`

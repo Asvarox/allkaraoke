@@ -3,6 +3,7 @@ import { ComponentProps } from 'react';
 import { ValuesType } from 'utility-types';
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
 import { MAX_POINTS, beatsToPoints, sumDetailedScore } from '~/modules/GameEngine/GameState/Helpers/calculateScore';
+import useViewportSize from '~/modules/hooks/useViewportSize';
 import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
 import tuple from '~/modules/utils/tuple';
 import PostGameView, { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';
@@ -41,10 +42,14 @@ export default {
     player2Score: 70,
     player3Score: 71,
   },
+  parameters: {
+    layout: 'fullscreen',
+  },
 } as Meta<ComponentProps<typeof PostGameView>>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryFn<StoryArgs> = (args) => {
+  const { width, height } = useViewportSize();
   // GameState.setSong(song as Song);
 
   const singSetup: SingSetup = {
@@ -92,8 +97,8 @@ const Template: StoryFn<StoryArgs> = (args) => {
     <PostGameView
       singSetup={singSetup}
       players={players}
-      width={1980}
-      height={1080}
+      width={width}
+      height={height}
       onClickSongSelection={() => undefined}
       song={convertTxtToSong(song)}
       highScores={[

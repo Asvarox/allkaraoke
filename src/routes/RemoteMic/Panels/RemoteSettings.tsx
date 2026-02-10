@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import { useState } from 'react';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { MenuButton, MenuContainer } from '~/modules/Elements/Menu';
 import Modal from '~/modules/Elements/Modal';
 import SimplifiedMic from '~/modules/GameEngine/Input/SimplifiedMic';
@@ -28,11 +28,11 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
     permissions === 'write' ? null : 'microphone',
   );
   return (
-    <Container>
-      <h3>
+    <div className="flex flex-grow flex-col justify-center gap-2.5 px-4 pt-12 pb-4 text-[1.625rem]">
+      <span className="typography text-lg">
         Remote mic ID:{' '}
         <strong data-test="remote-mic-id">{RemoteMicClient.getClientId()?.slice(-4).toUpperCase() ?? '----'}</strong>
-      </h3>
+      </span>
       <hr />
       {permissions === 'write' && openedPanel === null && (
         <>
@@ -55,7 +55,7 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
       {permissions !== 'write' && <MicrophoneSettings />}
       <Modal onClose={() => setOpenedPanel(null)} open={openedPanel !== null && permissions === 'write'}>
         <MenuContainer>
-          <ModalHeader>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</ModalHeader>
+          <Menu.Header>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</Menu.Header>
           {openedPanel === 'microphone' && <MicrophoneSettings />}
           {openedPanel === 'manage' && (
             <>
@@ -79,23 +79,8 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
         onClick={() => (monitoringStarted ? SimplifiedMic.stopMonitoring() : SimplifiedMic.startMonitoring())}>
         Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
       </div>
-    </Container>
+    </div>
   );
 }
 
 export default RemoteSettings;
-
-const Container = styled.div`
-  flex-grow: 1;
-  font-size: 2.6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5rem 1.5rem 1.5rem;
-  box-sizing: border-box;
-  gap: 1rem;
-`;
-
-const ModalHeader = styled.h1`
-  font-size: 3.25rem !important;
-`;

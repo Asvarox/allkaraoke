@@ -47,7 +47,7 @@ function FullscreenButton() {
             console.info(e);
           }
         }}>
-        {isFullScreen ? <FullscreenExit /> : <Fullscreen />}
+        {isFullScreen ? <FullscreenExit className="fill-white!" /> : <Fullscreen className="fill-white!" />}
       </IconButton>
     </Tooltip>
   );

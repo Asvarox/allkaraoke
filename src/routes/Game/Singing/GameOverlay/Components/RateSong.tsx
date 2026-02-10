@@ -1,9 +1,7 @@
-import styled from '@emotion/styled';
-import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
-import { twc } from 'react-twc';
 import { Song } from '~/interfaces';
+import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { MenuButton } from '~/modules/Elements/Menu';
 import GameState from '~/modules/GameEngine/GameState/GameState';
@@ -69,27 +67,33 @@ export default function RateSong({ register, onExit, song }: Props) {
   return (
     <>
       <Menu data-test={'rate-song-container'} title="Is the song OK?">
-        <h4>If there&#39;s something wrong with the song, let me know so I can fix it</h4>
-        <Checkbox {...register('button-not-in-sync', () => toggleIssue('not-in-sync'))} size={'small'}>
-          <Check>{isSelected('not-in-sync') ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
+        <Menu.SubHeader>If there&#39;s something wrong with the song, let me know so I can fix it</Menu.SubHeader>
+        <Checkbox
+          checked={isSelected('not-in-sync')}
+          {...register('button-not-in-sync', () => toggleIssue('not-in-sync'))}
+          size={'small'}>
           <span>Lyrics are not in sync</span>
         </Checkbox>
-        <Checkbox {...register('button-bad-lyrics', () => toggleIssue('bad-lyrics'))} size={'small'}>
-          <Check>{isSelected('bad-lyrics') ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
+        <Checkbox
+          checked={isSelected('bad-lyrics')}
+          {...register('button-bad-lyrics', () => toggleIssue('bad-lyrics'))}
+          size={'small'}>
           <span>Wrong lyrics, missing spaces etc.</span>
         </Checkbox>
         <Checkbox
+          checked={isSelected('too-quiet')}
           {...register('button-too-quiet', () => toggleIssue('too-quiet'), undefined, false, {
             disabled: isTooQuietDisabled,
           })}
           size={'small'}
           disabled={isTooQuietDisabled}>
-          <Check>{isSelected('too-quiet') ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
           <span className={isTooQuietDisabled ? 'line-through' : ''}>Too quiet</span>{' '}
-          {isTooQuietDisabled && <span className="text-2xl"> (already as loud as it could be)</span>}
+          {isTooQuietDisabled && <span className="text-sm"> (already as loud as it could be)</span>}
         </Checkbox>
-        <Checkbox {...register('button-too-loud', () => toggleIssue('too-loud'))} size={'small'}>
-          <Check>{isSelected('too-loud') ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
+        <Checkbox
+          checked={isSelected('too-loud')}
+          {...register('button-too-loud', () => toggleIssue('too-loud'))}
+          size={'small'}>
           <span>Too loud</span>
         </Checkbox>
         <hr />
@@ -100,16 +104,3 @@ export default function RateSong({ register, onExit, song }: Props) {
     </>
   );
 }
-
-// todo make it a generic component
-const Checkbox = twc(MenuButton)`gap-4 justify-start pl-4`;
-
-const Check = styled.div`
-  svg {
-    width: 3rem;
-    height: 3rem;
-  }
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;

@@ -1,62 +1,41 @@
-import { ComponentProps, useContext } from 'react';
+import { ComponentProps } from 'react';
 import { twc } from 'react-twc';
-import dotparty from '~/modules/Elements/dotparty.gif';
-import logoMp4 from '~/modules/Elements/logo.mp4';
-import logoWebm from '~/modules/Elements/logo.webm';
-import pride from '~/modules/Elements/pride.png';
-import santaHat from '~/modules/Elements/santas-hat.webp';
-import { FeatureFlags } from '~/modules/utils/featureFlags';
 import storage from '~/modules/utils/storage';
-import useFeatureFlag from '~/modules/utils/useFeatureFlag';
 import { MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
-import { BackgroundContext } from '~/modules/Elements/BackgroundContext';
-import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
-import { EurovisionLogo } from '~/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision';
+import { twx } from '~/utils/twx';
 
 if (global.location?.search.includes('pride')) {
   storage.session.setItem('pride', 'true');
 }
 
-export default function Logo(props: ComponentProps<typeof StyledLogo>) {
-  const isEurovision = useFeatureFlag(FeatureFlags.Eurovision);
+export default function Logo(props: ComponentProps<'div'>) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const { theme } = useContext(BackgroundContext);
 
   if (mobilePhoneMode) {
     return null;
   }
   return (
-    <div className="relative h-[16.4rem] [view-transition-name:logo]">
-      {storage.session.getItem('pride') === 'true' && (
-        <StyledLogo asChild>
-          <img className="absolute" src={pride} alt="AllKaraoke Pride logo part 1" />
-        </StyledLogo>
-      )}
-      <StyledLogo {...props} autoPlay loop muted playsInline>
-        <source src={logoWebm} type="video/webm" />
-        <source src={logoMp4} type="video/mp4" />
-      </StyledLogo>
-      <img
-        className="absolute right-[-1rem] bottom-[-0.5rem] h-[5.1rem] w-[13.7rem]"
-        src={dotparty}
-        alt="AllKaraoke Pride logo part 2"
-      />
-      {theme === 'christmas' && (
-        <img
-          className="absolute top-[-3rem] right-[-7rem] h-[11.1rem] w-[13.7rem] rotate-[30deg] object-contain"
-          src={santaHat}
-          alt="AllKaraoke Pride logo part 2"
-        />
-      )}
-      {isEurovision && (
-        <EurovisionLogo
-          src={eurovisionIcon}
-          className="absolute top-[12rem] right-[-10rem] h-[5.1rem]! w-[13.7rem]! object-contain"
-        />
-      )}
+    <div className="relative h-[1.1em] [view-transition-name:logo]" {...props}>
+      <LetterBase>
+        <span className="-rotate-2">A</span>
+        <span className="rotate-10">l</span>
+        <span className="-rotate-4">l</span>
+        <span className="text-text-player-0 rotate-4">K</span>
+        <span className="-rotate-0">a</span>
+        <span className="-rotate-6">r</span>
+        <span className="rotate-10">a</span>
+        <span className="text-active rotate-2">o</span>
+        <span className="rotate-4">k</span>
+        <span className="-rotate-16">e</span>
+        <DotParty>
+          .par<span className="text-text-player-1">t</span>y
+        </DotParty>
+      </LetterBase>
     </div>
   );
 }
 
-const StyledLogo = twc.video`w-[66rem] h-[16.4rem]`;
+const LetterBase = twx.span`typography relative top-[-0.15em] left-[-0.1em] text-[1em] leading-0.5 -tracking-[0.15em] [-webkit-text-stroke:0.02em_black] [font-variant:small-caps] [&_span]:inline-block`;
+
+const DotParty = twc.span`absolute right-[-0.3em] bottom-[0.8em] text-[0.4em] -tracking-[0.1em]`;

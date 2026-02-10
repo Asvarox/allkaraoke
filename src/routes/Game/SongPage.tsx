@@ -1,7 +1,5 @@
-import styled from '@emotion/styled';
+import clsx from 'clsx';
 import { Song, SongPreview } from '~/interfaces';
-import { typography } from '~/modules/Elements/cssMixins';
-import styles from '~/modules/GameEngine/Drawing/styles';
 
 interface Props {
   width: number;
@@ -13,98 +11,36 @@ interface Props {
 
 export default function SongPage({ songData, background, width, height, children, ...restProps }: Props) {
   return (
-    <FocusedSongContainer video={songData.video} width={width} height={height} {...restProps}>
+    <div className="relative overflow-y-auto bg-black" style={{ width, height }} {...restProps}>
       <BackgroundImage video={songData.video} blur />
-      {background && <Background>{background}</Background>}
-      <ContentLayer>
-        <FocusedSongData>
-          <SongTitle>{songData.title}</SongTitle>
-          <br />
-          <SongArtist>{songData.artist}</SongArtist>
-          <br />
+      {background && <div className="fixed inset-0">{background}</div>}
+
+      <div className="relative mx-auto flex h-full max-w-440 flex-col px-4 text-white">
+        <div className="pointer-events-none mb-4 flex flex-col items-start gap-1 text-white">
+          <ContentElement className="text-active mt-2 text-lg lg:text-xl 2xl:mt-5 2xl:text-5xl">
+            {songData.title}
+          </ContentElement>
+          <ContentElement className="text-md lg:text-lg 2xl:text-4xl">{songData.artist}</ContentElement>
           {songData.author && (
-            <SongCreator>
+            <ContentElement className="lg:text-md text-sm 2xl:text-xl">
               by&nbsp;
               {songData.authorUrl ? <a href={songData.authorUrl}>{songData.author}</a> : songData.author}
-            </SongCreator>
+            </ContentElement>
           )}
-          {children}
-        </FocusedSongData>
-      </ContentLayer>
-    </FocusedSongContainer>
+        </div>
+        {children}
+      </div>
+    </div>
   );
 }
 
-const FocusedSongContainer = styled.div<{ video: string; width: number; height: number }>`
-  width: ${(props) => props.width}px;
-  top: 0;
-  height: ${(props) => props.height}px;
-  overflow-y: hidden;
-  background: black;
-  position: relative;
-`;
-
-const Background = styled.div`
-  z-index: 1;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-`;
-
-const BaseBackgroundImage = styled(Background)<{ blur: boolean; video: string }>`
-  background-size: cover;
-  background-position: center center;
-
-  filter: ${(props) => (props.blur ? 'blur(0.5rem)' : 'none')};
-`;
-
-const BackgroundImage = (props: { blur: boolean; video: string }) => (
-  <BaseBackgroundImage
-    style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')` }}
-    {...props}
-  />
+export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
+  <span className={clsx('typography inline-block bg-black/50 px-5 py-0.5', className)} {...restProps} />
 );
 
-const ContentLayer = styled.div`
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  pointer-events: none;
-`;
-
-const FocusedSongData = styled.div`
-  position: relative;
-  margin: 0 auto;
-  color: white;
-  max-width: 80vw;
-  height: 100%;
-  pointer-events: none;
-`;
-
-export const ContentElement = styled.span`
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  backdrop-filter: blur(0.5rem);
-  ${typography};
-  padding: 0.5rem 2rem;
-  margin: 0 0 1rem 0;
-`;
-
-const SongTitle = styled(ContentElement)`
-  color: ${styles.colors.text.active};
-  margin-top: 2rem;
-  font-size: 4.5rem;
-`;
-
-const SongArtist = styled(ContentElement)`
-  font-size: 3.5rem;
-`;
-
-const SongCreator = styled(ContentElement)`
-  font-size: 2rem;
-`;
+const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (
+  <div
+    className={clsx('fixed inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
+    style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${video}/hqdefault.jpg')` }}
+  />
+);

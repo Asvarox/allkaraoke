@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
 import { PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
+import { mobileMQ } from '~/modules/Elements/cssMixins';
 import events from '~/modules/GameEvents/GameEvents';
 import GameSettings from '~/routes/SingASong/SongSelection/Components/SongSettings/GameSettings';
 import MicCheck from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck';
@@ -85,13 +86,30 @@ const Container = styled.div`
     margin: 1rem;
     opacity: 0.25;
   }
+  ${mobileMQ} {
+    position: fixed;
+    bottom: 1rem;
+    height: 50vh;
+    padding: 0 1rem;
+    max-width: 30rem;
+    width: 100vw;
+
+    left: auto;
+    right: 0;
+  }
 `;
 
 const GameConfiguration = styled(motion.div)`
-  width: auto;
+  width: 100%;
+  max-width: 40%;
+  ${mobileMQ} {
+    max-width: 100%;
+    gap: 0.5rem;
+    position: static;
+  }
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   gap: 1.25rem;
   position: absolute;
   right: 0;

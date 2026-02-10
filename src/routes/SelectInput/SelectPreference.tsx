@@ -1,11 +1,10 @@
-import styled from '@emotion/styled';
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
+import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
+import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { Badge } from '~/modules/Elements/Badge';
 import { MenuButton } from '~/modules/Elements/Menu';
 import { MicIconBlue, MicIconRed } from '~/modules/Elements/MicIcon';
-import { focused, typography } from '~/modules/Elements/cssMixins';
-import styles from '~/modules/GameEngine/Drawing/styles';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
@@ -22,20 +21,22 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
   const { register } = useKeyboardNav({ onBackspace: onBack });
   return (
     <>
-      <Option
+      <InputOptionButton
         {...register(
           'remote-mics',
           () => onPreferenceSelected('remoteMics'),
           undefined,
           previouslySelected === 'remoteMics',
-        )}>
-        <OptionIconContainer>
-          <PhoneAndroid />
-          <PhoneIphone />
-        </OptionIconContainer>
-        <div>
-          {mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones'}
-          <OptionDescription>
+        )}
+        icon={
+          <>
+            <PhoneAndroid />
+            <PhoneIphone />
+          </>
+        }
+        name={mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones'}
+        description={
+          <>
             Use{' '}
             <strong>
               <PhotoCamera />
@@ -46,75 +47,71 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
               <QrCode /> QR code
             </strong>{' '}
             that will open Remote Mic website - no need to download an app!
-          </OptionDescription>
-        </div>
-        <Badge>Recommended</Badge>
-        <PlayersNumber>
-          <PeopleAlt />
-          <strong>1-4</strong>
-        </PlayersNumber>
-      </Option>
-      <Option
-        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}>
-        <OptionIconContainer>
-          <Person />
-          {mobilePhoneMode ? <PhoneIphone /> : <Laptop />}
-        </OptionIconContainer>
-        <div>
-          This {mobilePhoneMode ? "device's" : "computer's"} microphone
-          <OptionDescription>
+          </>
+        }
+        recommended
+        numOfPlayers="1-4"
+      />
+      <InputOptionButton
+        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}
+        icon={
+          <>
+            <Person />
+            {mobilePhoneMode ? <PhoneIphone /> : <Laptop />}
+          </>
+        }
+        name={`This ${mobilePhoneMode ? "device's" : "computer's"} microphone`}
+        description={
+          <>
             Great to <strong>test</strong> the app, <strong>sing alone</strong> or don&#39;t care about the rivalry at
             the party
-          </OptionDescription>
-        </div>
-        <PlayersNumber>
-          <Person />
-          <strong>1</strong>
-        </PlayersNumber>
-      </Option>
+          </>
+        }
+        numOfPlayers="1"
+      />
       <hr />
       {!mobilePhoneMode && (
-        <Option
+        <InputOptionButton
           {...register(
             'multiple-mics',
             () => onPreferenceSelected('multiple-mics'),
             undefined,
             previouslySelected === 'multiple-mics',
-          )}>
-          <OptionIconContainer>
-            <MicIconBlue />
-            <MicIconRed />
-          </OptionIconContainer>
-          <div>
-            Multiple microphones
-            <OptionDescription>
+          )}
+          icon={
+            <>
+              <MicIconBlue />
+              <MicIconRed />
+            </>
+          }
+          name="Multiple microphones"
+          description={
+            <>
               Use either <strong>SingStar</strong> or <strong>multiple microphones</strong> connected to the device for
               each player
-            </OptionDescription>
-          </div>
-          <PlayersNumber>
-            <PeopleAlt />
-            <strong>2</strong>
-          </PlayersNumber>
-        </Option>
+            </>
+          }
+          numOfPlayers="2"
+        />
       )}
-      <Option
-        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced')}>
-        <OptionIconContainer>
-          <MicIconBlue />
-          <PhoneIphone />
-        </OptionIconContainer>
-        <div>
-          Advanced (manual) setup
-          <OptionDescription>
+
+      <InputOptionButton
+        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced')}
+        icon={
+          <>
+            <MicIconBlue />
+            <PhoneIphone />
+          </>
+        }
+        name="Advanced (manual) setup"
+        description={
+          <>
+            {' '}
             Assign the specific device to a player manually, e.g. if you don&#39;t have regular SingStar microphones.
-          </OptionDescription>
-        </div>
-        <PlayersNumber>
-          <PeopleAlt />
-          <strong>1-4</strong>
-        </PlayersNumber>
-      </Option>
+          </>
+        }
+        numOfPlayers="1-4"
+      />
       <hr />
       <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
         {skipText || 'Skip'}
@@ -123,78 +120,41 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
   );
 }
 
-const PlayersNumber = styled.div`
-  ${typography};
-  //width: 15rem;
-  position: absolute;
-  inset: auto 0.5rem 0.5rem auto;
-  svg {
-    font-size: 0.9em;
-  }
+const InputOptionButton = ({
+  icon,
+  name,
+  description,
+  numOfPlayers,
+  recommended,
+  ...props
+}: {
+  icon: React.ReactNode;
+  name: React.ReactNode;
+  description: React.ReactNode;
+  numOfPlayers: string;
+  recommended?: boolean;
+}) => {
+  return (
+    <Menu.Button
+      {...props}
+      className="group relative justify-stretch hover:h-30 data-[focused=true]:h-30"
+      subtleFocused>
+      <OptionIconContainer className="flex w-20 items-center pl-4">{icon}</OptionIconContainer>
+      <div className="flex w-full flex-col group-data-[focused=true]:gap-1">
+        {name}
+        <span className="description mobile:text-xs max-h-0 overflow-clip text-sm transition-all duration-300 group-hover:max-h-10 group-data-[focused=true]:max-h-10">
+          {description}
+        </span>
+      </div>
+      {recommended && <Badge className="right-8">Recommended</Badge>}
+      <div className="text-md mobile:text-sm flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right">
+        <PeopleAlt className="!text-md !mobile:text-sm" />
+        <strong>{numOfPlayers}</strong>
+      </div>
+    </Menu.Button>
+  );
+};
 
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
-
-const OptionDescription = styled.div<{ focused?: boolean }>`
-  padding: 0 3rem 0 6rem;
-  font-size: 1.6rem;
-  max-height: 0;
-  overflow: clip;
-  transition: 300ms;
-
-  svg {
-    font-size: 1.4rem;
-  }
-  opacity: 0;
-`;
-
-const OptionIconContainer = styled.div`
-  position: relative;
-  margin: 0rem 0.6rem 0 2.5rem;
-  transition: 300ms;
-
-  svg {
-    transition: 300ms;
-    width: 3.6rem;
-    height: 3.6rem;
-    color: ${styles.colors.players[1].text};
-  }
-
-  svg:first-of-type {
-    top: 0.6rem;
-    left: 1.25rem;
-    position: absolute;
-    color: ${styles.colors.players[0].text};
-    z-index: 100;
-    transform: scaleX(-1);
-  }
-`;
-
-const Option = styled(MenuButton)<{ focused?: boolean }>`
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  &:hover,
-  &[data-focused='true'] {
-    height: 16.5rem;
-    background: black;
-    ${focused};
-
-    ${OptionDescription} {
-      padding-top: 1.6rem;
-      max-height: 10rem;
-      opacity: 1;
-      opacity: 1;
-    }
-
-    ${OptionIconContainer} {
-      transform: scale(1.75);
-    }
-  }
-`;
+const OptionIconContainer = twc.div`relative [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&_svg:first-of-type]:absolute [&_svg:first-of-type]:z-100 [&_svg:first-of-type]:mt-[0.2em] [&_svg:first-of-type]:ml-[0.35em] [&_svg:first-of-type]:-scale-x-100 [&_svg:first-of-type]:text-[#0099ff]`;
 
 export default SelectPreference;

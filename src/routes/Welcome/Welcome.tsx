@@ -1,14 +1,13 @@
-import styled from '@emotion/styled';
+import { Icon } from '@iconify-icon/react';
 import { Helmet } from 'react-helmet';
+import { twc } from 'react-twc';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
 import SmoothLink from '~/modules/Elements/SmoothLink';
-import { typography } from '~/modules/Elements/cssMixins';
 import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
-import FacebookLink from '~/routes/Welcome/FacebookLink';
 
 function Welcome() {
   useBackground(true);
@@ -18,12 +17,54 @@ function Welcome() {
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav();
   return (
-    <MenuWithLogo>
-      <Helmet>
-        <title>Main Menu | AllKaraoke.Party - Free Online Karaoke Party Game</title>
-        <link rel="preload" href="/songs/index.json" as="fetch" type="application/json" crossOrigin="anonymous" />
-        <link rel="preload" href="/mostPopularSongs.json" as="fetch" type="application/json" crossOrigin="anonymous" />
-      </Helmet>
+    <>
+      <MenuWithLogo>
+        <Helmet>
+          <title>Main Menu | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+          <link rel="preload" href="/songs/index.json" as="fetch" type="application/json" crossOrigin="anonymous" />
+          <link
+            rel="preload"
+            href="/mostPopularSongs.json"
+            as="fetch"
+            type="application/json"
+            crossOrigin="anonymous"
+          />
+        </Helmet>
+        {/* <FacebookLink /> */}
+        <>
+          <SmoothLink to="game/">
+            <Menu.Button {...register('sing-a-song', () => navigate('game/'))}>Sing a song</Menu.Button>
+          </SmoothLink>
+          <SmoothLink to="select-input/">
+            <Menu.Button {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</Menu.Button>
+          </SmoothLink>
+          <SmoothLink to="settings/">
+            <Menu.Button {...register('settings', () => navigate('settings/'))}>Settings</Menu.Button>
+          </SmoothLink>
+          <SmoothLink to="jukebox/">
+            <Menu.Button {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</Menu.Button>
+          </SmoothLink>
+          <SmoothLink to="manage-songs/">
+            <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
+          </SmoothLink>
+        </>
+        <Menu.HelpText className="flex justify-between">
+          Get in touch{' '}
+          <span className="flex gap-3">
+            <a href="https://www.facebook.com/allkaraoke.party" target="_blank" rel="noreferrer">
+              <Icon icon="cib:facebook" width="0.8em" height="0.8em" /> Facebook
+            </a>
+            •
+            <a href="https://www.instagram.com/allkaraoke.party" target="_blank" rel="noreferrer">
+              <Icon icon="cib:instagram" width="0.8em" height="0.8em" /> Instagram
+            </a>
+            •
+            <a href="https://github.com/Asvarox/allkaraoke" target="_blank" rel="noreferrer">
+              <Icon icon="cib:github" width="0.8em" height="0.8em" /> Github
+            </a>
+          </span>
+        </Menu.HelpText>
+      </MenuWithLogo>
       <BackgroundMusicCredit>
         <span>
           Bpm data and release year provided by{' '}
@@ -40,41 +81,10 @@ function Welcome() {
           </a>
         </span>
       </BackgroundMusicCredit>
-      <FacebookLink />
-      <>
-        <SmoothLink to="game/">
-          <Menu.Button {...register('sing-a-song', () => navigate('game/'))}>Sing a song</Menu.Button>
-        </SmoothLink>
-        <SmoothLink to="select-input/">
-          <Menu.Button {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</Menu.Button>
-        </SmoothLink>
-        <SmoothLink to="settings/">
-          <Menu.Button {...register('settings', () => navigate('settings/'))}>Settings</Menu.Button>
-        </SmoothLink>
-        <SmoothLink to="jukebox/">
-          <Menu.Button {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</Menu.Button>
-        </SmoothLink>
-        <SmoothLink to="manage-songs/">
-          <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
-        </SmoothLink>
-      </>
-    </MenuWithLogo>
+    </>
   );
 }
 
-const BackgroundMusicCredit = styled.div`
-  ${typography};
-  text-decoration: none;
-  flex-direction: column;
-  display: flex;
-  font-size: 1.5rem;
-  gap: 1.25rem;
-  opacity: 0.85;
-  position: absolute;
-  bottom: 4rem;
-  left: 1rem;
-
-  view-transition-name: background-music-credit;
-`;
+const BackgroundMusicCredit = twc.div`typography flex flex-col text-sm no-underline opacity-85 [view-transition-name:background-music-credit]`;
 
 export default Welcome;

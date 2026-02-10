@@ -49,7 +49,7 @@ export class RemoteMicSongListPagePO {
   }
 
   public async expectFavouriteListToBeSelected() {
-    await expect(this.yourListButton).toHaveAttribute('data-active', 'true');
+    await expect(this.yourListButton).toHaveAttribute('data-focused', 'true');
   }
 
   public async expectFavouriteListToContainNumberOfSongs(numberOfSongs: string) {
@@ -65,7 +65,7 @@ export class RemoteMicSongListPagePO {
   }
 
   public async expectAllSongsPlaylistToBeSelected() {
-    await expect(this.allSongsButton).toHaveAttribute('data-active', 'true');
+    await expect(this.allSongsButton).toHaveAttribute('data-focused', 'true');
   }
 
   public get searchInput() {
@@ -117,7 +117,7 @@ export class RemoteMicSongListPagePO {
     await this.getExpandedArtistSongsGroupElement(artistName).click();
   }
 
-  public async expectArtistSongCountToBe(count: string) {
-    await expect(this.page.getByTestId('songs-count')).toHaveAttribute('data-value', count);
+  public async expectArtistSongCountToBe(artistName: string, count: string) {
+    await expect(this.getGroupedArtistSongsElement(artistName)).toHaveAttribute('data-song-count', count);
   }
 }

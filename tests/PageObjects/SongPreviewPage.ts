@@ -65,7 +65,7 @@ export class SongPreviewPagePO {
     await navigateWithKeyboard(this.page, 'game-mode-setting', remoteMic);
   }
 
-  public async expectGameModeToBe(modeName: string) {
+  public async expectGameModeToBe(modeName: 'Pass The Mic' | 'Duel' | 'Cooperation') {
     await expect(this.gameModeSettingsElement).toHaveAttribute('data-test-value', `${modeName}`);
   }
 

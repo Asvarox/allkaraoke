@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
 import { ComponentRef, useEffect, useRef, useState } from 'react';
+import { twc } from 'react-twc';
 import { usePrevious, useUnmount } from 'react-use';
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Input } from '~/modules/Elements/Input';
@@ -43,8 +43,5 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
   );
 }
 
-const SearchInput = styled(Input)`
-  width: 100%;
-  margin-bottom: 1rem;
-`;
+const SearchInput = twc(Input)`mb-2 w-full`;
 export default RemoteSongSearch;
