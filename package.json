@@ -45,7 +45,7 @@
     "tinycolor2": "^1.6.0",
     "typewriter-effect": "^2.22.0",
     "use-persisted-state": "^0.3.3",
-    "uuid": "^9.0.1",
+    "uuid": "^13.0.0",
     "wouter": "^2.12.1"
   },
   "scripts": {
