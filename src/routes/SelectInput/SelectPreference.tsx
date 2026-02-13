@@ -1,8 +1,8 @@
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
 import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
+import { Badge } from '~/modules/Elements/AKUI/Badge';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
-import { Badge } from '~/modules/Elements/Badge';
 import { MenuButton } from '~/modules/Elements/Menu';
 import { MicIconBlue, MicIconRed } from '~/modules/Elements/MicIcon';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';

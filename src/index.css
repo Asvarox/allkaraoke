@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@plugin "tailwindcss-motion";
+@plugin 'tailwindcss-motion';
 
 @config '../tailwind.config.js';
 

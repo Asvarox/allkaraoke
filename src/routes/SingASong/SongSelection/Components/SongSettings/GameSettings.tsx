@@ -3,10 +3,10 @@ import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import { v4 } from 'uuid';
 import { GAME_MODE, SingSetup, SongPreview } from '~/interfaces';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { Switcher } from '~/modules/Elements/Switcher';
-import { nextIndex, nextValue } from '~/modules/Elements/Utils/indexes';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/isDev';
 
 interface Props {

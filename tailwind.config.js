@@ -22,8 +22,8 @@ module.exports = {
         focusable: 'inset 0 0 0 1px rgba(255,165,0,.25)',
       },
       colors: {
-          'default': styles.colors.text.default,
-          'inactive': styles.colors.text.inactive,
+        default: styles.colors.text.default,
+        inactive: styles.colors.text.inactive,
         text: {
           'player-0': styles.colors.players[0].text,
           'player-0-christmas': styles.colorSets.christmasGreen.text,

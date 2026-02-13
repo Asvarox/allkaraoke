@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Casino, Search } from '@mui/icons-material';
 import { Dispatch, SetStateAction, useState } from 'react';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { Tooltip } from '~/modules/Elements/Tooltip';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import QuickSearch from '~/routes/SingASong/SongSelection/Components/QuickSearch';

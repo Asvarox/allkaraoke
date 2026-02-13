@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useEffect, useRef } from 'react';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { focusedStatic, typography } from '~/modules/Elements/cssMixins';
 import { useOnClickOutside } from '~/modules/hooks/onClickOutside';
 import useKeyboard from '~/modules/hooks/useKeyboard';

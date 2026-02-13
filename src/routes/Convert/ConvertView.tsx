@@ -6,7 +6,6 @@ import { ValuesType } from 'utility-types';
 import { Link } from 'wouter';
 import { Song } from '~/interfaces';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
-import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
 import SongDao from '~/modules/Songs/SongsService';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import convertTxtToSong, { getVideoId } from '~/modules/Songs/utils/convertTxtToSong';
@@ -220,7 +219,6 @@ export default function ConvertView({ song }: Props) {
 
   return (
     <StyledEngineProvider injectFirst>
-      <NormalizeFontSize />
       <Grid container gap={2} p={1} pt={0} pb={10}>
         <Grid item xs={12}>
           {!isEdit && (

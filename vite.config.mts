@@ -1,5 +1,7 @@
+import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
+import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
 import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
@@ -8,8 +10,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
-import { sentryVitePlugin } from '@sentry/vite-plugin';
-import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';

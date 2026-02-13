@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import CountUp from 'react-countup';
 import { HighScoreEntity, SingSetup } from '~/interfaces';
-import { Badge } from '~/modules/Elements/Badge';
+import { Badge } from '~/modules/Elements/AKUI/Badge';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import { formatter } from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';
 import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';

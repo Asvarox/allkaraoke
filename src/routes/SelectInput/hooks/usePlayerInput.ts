@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { nextIndex, nextValue } from '~/modules/Elements/Utils/indexes';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from '~/modules/GameEvents/hooks';
 import PlayersManager from '~/modules/Players/PlayersManager';
+import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import tuple from '~/modules/utils/tuple';
 import InputSources from '~/routes/SelectInput/InputSources';
 import { InputSourceList, InputSourceNames } from '~/routes/SelectInput/InputSources/interfaces';

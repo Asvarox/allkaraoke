@@ -10,7 +10,7 @@ import {
 } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { Input } from '~/modules/Elements/Input';
-import { nextIndex } from '~/modules/Elements/Utils/indexes';
+import { nextIndex } from '~/modules/utils/indexes';
 
 interface Props extends ComponentProps<typeof Input> {
   label: ReactNode;

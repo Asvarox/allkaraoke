@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import dayjs from 'dayjs';
 import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { useEditScore } from '~/modules/Songs/stats/hooks';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import ScoreText from '~/routes/Game/Singing/GameOverlay/Components/ScoreText';

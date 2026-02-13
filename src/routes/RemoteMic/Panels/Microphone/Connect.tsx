@@ -142,7 +142,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
         />
         {!connected && (
           <MenuButton className="h-24" type="submit" disabled={disabled} data-test="connect-button">
-            {connectionStatus === 'connecting' && <Loader size={'1em'} />}
+            {connectionStatus === 'connecting' && <Loader />}
             {connectionStatus === 'uninitialised' || errorReset ? 'Connect' : connectionStatus.toUpperCase()}
           </MenuButton>
         )}

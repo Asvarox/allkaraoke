@@ -6,10 +6,10 @@ import Loader from '~/modules/Elements/Loader';
 import { MenuButton } from '~/modules/Elements/Menu';
 import MenuWithLogo from '~/modules/Elements/MenuWithLogo';
 import { Switcher } from '~/modules/Elements/Switcher';
-import { nextValue } from '~/modules/Elements/Utils/indexes';
 import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
+import { nextValue } from '~/modules/utils/indexes';
 import {
   FpsCount,
   FPSCountSetting,
@@ -47,7 +47,7 @@ function Settings() {
   let cameraDisplayValue: ReactNode = 'Disabled';
   if (isRequestInProgress) {
     cameraValue = 'loading';
-    cameraDisplayValue = <Loader size="0.9em" />;
+    cameraDisplayValue = <Loader />;
   } else if (camera === null) {
     cameraValue = 'click-to-enable';
     cameraDisplayValue = 'Click to enable';

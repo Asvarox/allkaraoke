@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { MutableRefObject, useEffect, useState } from 'react';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { typography } from '~/modules/Elements/cssMixins';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';

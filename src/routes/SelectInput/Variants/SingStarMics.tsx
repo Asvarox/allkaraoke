@@ -96,7 +96,7 @@ function SingStarMics(props: Props) {
         {!isSetup && (
           <>
             <span className="typography block text-lg">
-              <Loader size="0.85em" /> Connect your SingStar microphones.
+              <Loader /> Connect your SingStar microphones.
             </span>
             <Menu.HelpText data-test="setup-not-completed">
               It can take a couple of seconds to detect after you connect them.

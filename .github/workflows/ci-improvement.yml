@@ -23,9 +23,9 @@ jobs:
       fail-fast: false
       matrix:
         # browser: [ 'chromium', 'firefox' ]
-        browser: [ 'chromium' ]
-        shardIndex: [ 1, 2, 3 ]
-        shardTotal: [ 3 ]
+        browser: ['chromium']
+        shardIndex: [1, 2, 3]
+        shardTotal: [3]
     runs-on: ubuntu-latest
     env:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
@@ -91,7 +91,7 @@ jobs:
         with:
           commit_message: '[ci-skip] chore: update visual regression snapshots'
           commit_options: '--no-verify'
-      - name: "Comment on PR to request a review of visual changes"
+      - name: 'Comment on PR to request a review of visual changes'
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
         uses: actions/github-script@v7
         with:
@@ -151,7 +151,7 @@ jobs:
             https://eu.posthog.com/api/projects/281/annotations/
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
-      - name: "Start monitoring"
+      - name: 'Start monitoring'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}

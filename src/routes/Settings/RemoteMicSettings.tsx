@@ -20,8 +20,8 @@ import {
 
 import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
-import { nextValue } from '~/modules/Elements/Utils/indexes';
 import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/RemoteMic/Network/Server/NetworkServer';
+import { nextValue } from '~/modules/utils/indexes';
 import { useDevicePing } from '~/routes/SelectInput/hooks/useDevicePing';
 
 function RemoteMicSettings() {

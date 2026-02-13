@@ -5,7 +5,6 @@ import { Menu } from '~/modules/Elements/AKUI/Menu';
 import Loader from '~/modules/Elements/Loader';
 import { MenuButton } from '~/modules/Elements/Menu';
 import { Switcher } from '~/modules/Elements/Switcher';
-import { nextIndex } from '~/modules/Elements/Utils/indexes';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from '~/modules/GameEvents/hooks';
 import PlayersManager from '~/modules/Players/PlayersManager';
@@ -13,6 +12,7 @@ import { getInputId } from '~/modules/Players/utils';
 import UserMediaEnabled from '~/modules/UserMedia/UserMediaEnabled';
 import { usePlayerMicData } from '~/modules/hooks/players/usePlayerMic';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
+import { nextIndex } from '~/modules/utils/indexes';
 import inputSourceListManager from '~/routes/SelectInput/InputSources';
 import { MicrophoneInputSource } from '~/routes/SelectInput/InputSources/Microphone';
 import MicCheck from '~/routes/SelectInput/MicCheck';
@@ -130,10 +130,10 @@ function BuiltIn(props: Props) {
               <Menu.HelpText>(click to change)</Menu.HelpText>
             </div>
             <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end text-lg">
               {isAudible === true && (
                 <>
-                  <span className="typography text-lg">Microphone is audible</span>
+                  <span className="typography">Microphone is audible</span>
                   <div className="flex h-8 w-10 items-center justify-end">
                     <Check className="h-8 w-8 text-white" />
                   </div>
@@ -141,7 +141,7 @@ function BuiltIn(props: Props) {
               )}
               {isAudible === false && (
                 <>
-                  <span className="typography text-lg">Microphone is not audible</span>
+                  <span className="typography">Microphone is not audible</span>
                   <div className="flex h-8 w-10 items-center justify-end">
                     <Error className="h-8 w-8 text-red-500" />
                   </div>
@@ -149,9 +149,9 @@ function BuiltIn(props: Props) {
               )}
               {isAudible === null && (
                 <>
-                  <span className="typography text-lg">Make some noise to the microphone</span>
+                  <span className="typography">Make some noise to the microphone</span>
                   <div className="flex h-8 w-10 items-center justify-end">
-                    <Loader size="1em" />
+                    <Loader />
                   </div>
                 </>
               )}

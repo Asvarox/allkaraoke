@@ -1,8 +1,8 @@
 import { AnimatePresence } from 'motion/react';
 import { useEffect, useMemo, useState } from 'react';
 import { PlayerSetup, SongPreview } from '~/interfaces';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
-import { Button } from '~/modules/Elements/Button';
 import InputManager from '~/modules/GameEngine/Input/InputManager';
 import gameEvents from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';

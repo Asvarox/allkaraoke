@@ -1,11 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": [
-    "peerJSServer.js",
-    "src/main.tsx",
-    "vite-plugin-html-prerender/src/**/*.ts",
-    "scripts/**/*.ts"
-  ],
+  "entry": ["peerJSServer.js", "src/main.tsx", "vite-plugin-html-prerender/src/**/*.ts", "scripts/**/*.ts"],
   "project": [
     "src/**/*.{js,jsx,ts,tsx}",
     "vite-plugin-html-prerender/src/**/*.ts",

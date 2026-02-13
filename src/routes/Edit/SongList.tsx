@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import NoPrerender from '~/modules/Elements/NoPrerender';
-import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
 import SongDao from '~/modules/Songs/SongsService';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import convertSongToTxt from '~/modules/Songs/utils/convertSongToTxt';
@@ -35,7 +34,7 @@ export default function SongList() {
       <NoPrerender>
         <Container>
           {created && <ShareSongsModal id={songId} />}
-          <NormalizeFontSize />
+
           <Grid container rowGap={2}>
             <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
               <Link to="menu/">

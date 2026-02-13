@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useEffect, useMemo, useState } from 'react';
 import { GAME_MODE, HighScoreEntity, SingSetup } from '~/interfaces';
 import CameraManager from '~/modules/Camera/CameraManager';
-import { Button } from '~/modules/Elements/Button';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { sumDetailedScore } from '~/modules/GameEngine/GameState/Helpers/calculateScore';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import { PlayerScore } from '~/routes/Game/Singing/PostGame/PostGameView';

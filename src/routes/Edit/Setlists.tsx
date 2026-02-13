@@ -7,7 +7,6 @@ import createPersistedState from 'use-persisted-state';
 import { Link } from 'wouter';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import NoPrerender from '~/modules/Elements/NoPrerender';
-import NormalizeFontSize from '~/modules/Elements/NormalizeFontSize';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import { encodeSongList } from '~/modules/Songs/utils/setlists';
 import useBackgroundMusic from '~/modules/hooks/useBackgroundMusic';
@@ -50,7 +49,6 @@ export default function Setlists() {
       </Helmet>
       <NoPrerender>
         <Container>
-          <NormalizeFontSize />
           <Grid container rowGap={2}>
             <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
               <Link to="menu/">
