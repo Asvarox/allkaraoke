@@ -6,7 +6,7 @@ import storage from '~/modules/utils/storage';
 
 export const StyledTooltip = twc(
   ReactTooltip,
-)`!rounded-2.5 typography [&_strong]:text-active z-[10000] !max-w-[450px] !bg-black/85 !px-4 !py-2.5 !text-lg [&_.MuiTooltip-arrow::before]:!bg-black/85`;
+)`rounded-2.5! typography [&_strong]:text-active z-10000 w-auto! max-w-[75vw]! bg-black/85! px-4! py-2.5! text-sm! sm:w-max! sm:max-w-[450px]! sm:text-lg! [&_.MuiTooltip-arrow::before]:bg-black/85!`;
 interface Props {
   clickable?: boolean;
   open?: boolean;

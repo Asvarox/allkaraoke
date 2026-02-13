@@ -187,9 +187,6 @@ input {
 }
 
 html {
-  /* overflow: overlay; */
-  overflow-x: hidden;
-
   font-size: 16px;
   @media (min-width: 3840px) {
     font-size: 32px;
