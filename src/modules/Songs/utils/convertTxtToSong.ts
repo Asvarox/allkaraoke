@@ -243,8 +243,11 @@ export default function convertTxtToSong(
     }
   });
 
-  if (trackNames[song.tracks.length]) song.tracks.push({ sections, name: trackNames[song.tracks.length], changes: [] });
-  else song.tracks.push({ sections, changes: [] });
+  if (trackNames?.[song.tracks.length]) {
+    song.tracks.push({ sections, name: trackNames[song.tracks.length], changes: [] });
+  } else {
+    song.tracks.push({ sections, changes: [] });
+  }
 
   song.tracks = song.tracks
     .map((track) => ({
