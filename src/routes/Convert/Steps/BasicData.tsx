@@ -1,6 +1,7 @@
-import { Box, Button, TextField } from '@mui/material';
-import { ChangeEventHandler, useMemo } from 'react';
+import { Box, Button, ButtonGroup, TextField } from '@mui/material';
+import { ChangeEventHandler, useMemo, useState } from 'react';
 import { Song } from '~/interfaces';
+import convertSongToTxt from '~/modules/Songs/utils/convertSongToTxt';
 import isNotesSection from '~/modules/Songs/utils/isNotesSection';
 import { getSectionStartInMs } from '~/modules/Songs/utils/notesSelectors';
 import importUltrastarEsSong from '~/routes/Convert/importUltrastarEsSong';
@@ -44,6 +45,8 @@ export default function BasicData(props: Props) {
   const isValidTxt = useMemo(() => isValidUltrastarTxtFormat(props.data.txtInput), [props.data.txtInput]);
 
   const isTxtInputValid = !isValidTxt && props.data.txtInput.length > 0;
+
+  const [selectedTrack, setSelectedTrack] = useState(0);
 
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
@@ -111,20 +114,55 @@ export default function BasicData(props: Props) {
           </Box>
         </>
       ) : (
-        <div className="flex h-150 w-full gap-1 overflow-auto">
-          {props.finalSong?.tracks?.map((track, index) => (
-            <div key={index} className="flex flex-1 flex-col gap-1">
-              <h4 className="py-3">{track.name ?? `Track #${index + 1}`}</h4>
-              {track.sections.filter(isNotesSection).map((section) => (
-                <p key={section.start}>
-                  <span className="text-[0.75rem]">
-                    [<Pre>{formatMs(getSectionStartInMs(section, props.finalSong))}</Pre>]
-                  </span>{' '}
-                  {section.notes.map((note) => note.lyrics).join('')}
-                </p>
-              ))}
+        <div className="flex w-full flex-col gap-2">
+          {props.finalSong.tracks.length > 1 && (
+            <div className="flex items-center gap-1">
+              <span className="text-lg">Tracks: </span>
+              <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
+                {props.finalSong.tracks.map((_, index) => (
+                  <Button
+                    key={index}
+                    onClick={() => setSelectedTrack(index)}
+                    disabled={selectedTrack === index}
+                    data-test={`track-${index + 1}`}>
+                    {props.finalSong.tracks[index].name ?? `Track #${index + 1}`}
+                  </Button>
+                ))}
+              </ButtonGroup>
             </div>
-          ))}
+          )}
+          <div className="flex h-150 w-full gap-1 overflow-auto">
+            <div className="basis-1/2">
+              <span className="text-md">Lyrics</span>
+              <div className="mt-2">
+                {props.finalSong?.tracks?.[selectedTrack].sections.filter(isNotesSection).map((section) => (
+                  <p key={section.start}>
+                    <span className="text-xs">
+                      [<Pre>{formatMs(getSectionStartInMs(section, props.finalSong))}</Pre>]
+                    </span>{' '}
+                    {section.notes.map((note) => note.lyrics).join('')}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="basis-1/2 text-sm">
+              <div className="flex items-center gap-4">
+                <span className="text-md">Original .txt file </span>
+                <Button
+                  variant="contained"
+                  className="text-md"
+                  size="small"
+                  onClick={() => {
+                    navigator.clipboard.writeText(convertSongToTxt(props.finalSong));
+                  }}>
+                  Copy to clipboard
+                </Button>
+              </div>
+              <Pre asChild className="mt-2 text-wrap">
+                <pre>{convertSongToTxt(props.finalSong)}</pre>
+              </Pre>
+            </div>
+          </div>
         </div>
       )}
     </Box>
