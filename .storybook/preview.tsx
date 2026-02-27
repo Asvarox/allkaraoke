@@ -1,6 +1,11 @@
 import type { Preview } from '@storybook/react-vite';
+import isChromatic from 'chromatic/isChromatic';
 import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 import '../src/index.css';
+
+if (isChromatic()) {
+  Math.random = () => 0.2;
+}
 
 export const parameters: Preview = {
   parameters: {

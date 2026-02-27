@@ -117,6 +117,7 @@
     "@welldone-software/why-did-you-render": "^10.0.1",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
     "babel-plugin-transform-imports": "^2.0.0",
+    "chromatic": "^15.1.0",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.2",
     "eslint-plugin-no-only-tests": "^3.3.0",

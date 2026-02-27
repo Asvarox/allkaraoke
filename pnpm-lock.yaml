@@ -231,6 +231,9 @@ importers:
       babel-plugin-transform-imports:
         specifier: ^2.0.0
         version: 2.0.0
+      chromatic:
+        specifier: ^15.1.0
+        version: 15.1.0
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
@@ -3024,6 +3027,18 @@ packages:
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
+
+  chromatic@15.1.0:
+    resolution: {integrity: sha512-XODNgiczeX5SpaWsCQLEwGpXrF2QVPb9bka7nHa8NQssyRRTt9EI8jVH8BRDUPcrQKqQqmXmxOy2Cq4IK1ydFQ==}
+    hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
 
   chrome-trace-event@1.0.4:
     resolution: {integrity: sha512-rNjApaLzuwaOTjCiT8lSDdGN1APCiqkChLMJxJPWLunPAt5fy8xgU9/jNOchV84wfIxrA0lRQB7oCT8jrn/wrQ==}
@@ -8723,6 +8738,8 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
+
+  chromatic@15.1.0: {}
 
   chrome-trace-event@1.0.4:
     optional: true
