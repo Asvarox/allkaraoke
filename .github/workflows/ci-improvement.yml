@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 200 # needed to detect changed snapshots
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run Chromatic
@@ -126,7 +128,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 30 # needed for Sentry to get list of commits released
+          fetch-depth: 200 # needed for Sentry to get list of commits released
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
