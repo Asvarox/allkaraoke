@@ -1,15 +1,74 @@
-import { MutableRefObject, useEffect, useState } from 'react';
+import { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
+import { ScrollableRow } from '~/modules/Elements/AKUI/Selector';
+import useDebounce from '~/modules/hooks/useDebounce';
+import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
 import { SongGroup } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongList';
+
+const SCROLL_DEBOUNCE_MS = 200;
 
 interface Props {
   groupedSongList: SongGroup[];
   onScrollToGroup: (group: SongGroup) => void;
   containerRef: MutableRefObject<HTMLDivElement | null>;
+  keyboardNavRegister?: RegisterFunc;
 }
 
-export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, containerRef }: Props) {
+interface GroupNavItemProps {
+  group: SongGroup;
+  isFirstActive: boolean;
+  active: boolean;
+  onScrollToGroup: (group: SongGroup) => void;
+  'data-test': string;
+  keyboardNavRegister?: RegisterFunc;
+}
+
+// GroupNavItem replicates the scroll-to-center behavior of Selector.Item manually because
+// SongGroupsNavigation highlights *multiple* active groups at once (activeGroups: number[]),
+// so it can't use the Selector component which is designed for a single selected value.
+function GroupNavItem({
+  group,
+  isFirstActive,
+  active,
+  onScrollToGroup,
+  'data-test': dataTest,
+  keyboardNavRegister,
+}: GroupNavItemProps) {
+  const ref = useRef<HTMLButtonElement>(null);
+  const keyboardNavProps = keyboardNavRegister?.(group.name, () => onScrollToGroup(group));
+
+  useEffect(() => {
+    if (isFirstActive && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }, [isFirstActive]);
+
+  return (
+    <Button
+      ref={ref}
+      size="mini"
+      onClick={() => onScrollToGroup(group)}
+      {...keyboardNavProps}
+      // focused must come after the spread so the active-group highlight isn't
+      // overwritten by keyboardNavProps.focused (which is false when not keyboard-navigating)
+      focused={active || (keyboardNavProps?.focused ?? false)}
+      // Override register-provided values that should not change
+      data-active={active}
+      data-test={dataTest}
+      className="text-md shrink-0 animate-none whitespace-nowrap">
+      {group.displayShort ?? group.name}
+    </Button>
+  );
+}
+
+export default function SongGroupsNavigation({
+  groupedSongList,
+  onScrollToGroup,
+  containerRef,
+  keyboardNavRegister,
+}: Props) {
   const [activeGroups, setActiveGroups] = useState<number[]>([]);
+  const debouncedActiveGroups = useDebounce(activeGroups, SCROLL_DEBOUNCE_MS);
 
   useEffect(() => {
     // This is slightly complicated logic needed due to virtualization of the list
@@ -52,23 +111,24 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     }
   }, [groupedSongList, containerRef]);
 
+  const firstActiveGroup = debouncedActiveGroups.length > 0 ? Math.min(...debouncedActiveGroups) : -1;
+
   return (
-    <div className="fixed top-16 right-0 left-0 z-99 flex h-10 flex-row flex-nowrap items-center gap-3 overflow-x-auto bg-black/75 px-4">
+    <ScrollableRow className="items-center">
       {groupedSongList.map((group, index) => {
-        const active = activeGroups.includes(index);
+        const active = debouncedActiveGroups.includes(index);
         return (
-          <Button
+          <GroupNavItem
             key={group.name}
-            onClick={() => onScrollToGroup(group)}
-            data-active={active}
+            group={group}
+            active={active}
+            isFirstActive={index === firstActiveGroup}
+            onScrollToGroup={onScrollToGroup}
+            keyboardNavRegister={keyboardNavRegister}
             data-test={`group-navigation-${group.name}`}
-            className={`inline-flex h-8 shrink-0 cursor-pointer items-center justify-center border-none px-3 text-2xl ${
-              active ? 'bg-[rgb(255,165,0)] text-black' : 'bg-black/70 text-white'
-            }`}>
-            {group.displayShort ?? group.name}
-          </Button>
+          />
         );
       })}
-    </div>
+    </ScrollableRow>
   );
 }

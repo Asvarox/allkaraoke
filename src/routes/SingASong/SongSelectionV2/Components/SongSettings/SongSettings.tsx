@@ -1,10 +1,7 @@
-import { AnimatePresence, motion } from 'motion/react';
-import { useState } from 'react';
-import { PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
+import { SingSetup, SongPreview } from '~/interfaces';
 import events from '~/modules/GameEvents/GameEvents';
 import GameSettings from '~/routes/SingASong/SongSelectionV2/Components/SongSettings/GameSettings';
 import MicCheck from '~/routes/SingASong/SongSelectionV2/Components/SongSettings/MicCheck';
-import PlayerSettings from '~/routes/SingASong/SongSelectionV2/Components/SongSettings/PlayerSettings';
 
 interface Props {
   songPreview: SongPreview;
@@ -14,62 +11,22 @@ interface Props {
 }
 
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
-  const [singSetup, setSingSetup] = useState<SingSetup | null>(null);
-  const [step, setStep] = useState<'song' | 'players'>('song');
+  const handlePlay = (setup: SingSetup) => {
+    events.songStarted.dispatch(songPreview, setup);
+    onPlay({ song: songPreview, ...setup });
+  };
 
-  const onSongStepFinish = (setup: SingSetup) => {
-    setSingSetup(setup);
-    setStep('players');
-  };
-  const startSong = (players: PlayerSetup[]) => {
-    if (!singSetup) return;
-    const finalSetup = {
-      ...singSetup,
-      players: players,
-    };
-    events.songStarted.dispatch(songPreview, finalSetup);
-    onPlay({ song: songPreview, ...finalSetup });
-  };
   return (
-    <div className="mobile:fixed mobile:bottom-4 mobile:h-[50vh] mobile:px-4 mobile:max-w-120 mobile:w-screen mobile:left-auto mobile:right-0 flex w-full flex-row items-end justify-between [&_hr]:m-4 [&_hr]:opacity-25">
-      <MicCheck style={step === 'players' ? undefined : undefined} />
-      <AnimatePresence>
-        <motion.div
-          className="mobile:max-w-full mobile:gap-2 mobile:static absolute right-0 flex w-full max-w-[40%] flex-col gap-5"
-          key={step}
-          transition={{
-            duration: 0.2,
-          }}
-          initial={{
-            opacity: 0,
-            translateX: 200,
-          }}
-          animate={{
-            opacity: 1,
-            translateX: 0,
-          }}
-          exit={{
-            opacity: 0,
-            translateX: 200,
-          }}>
-          {step === 'song' && (
-            <GameSettings
-              songPreview={songPreview}
-              onNextStep={onSongStepFinish}
-              keyboardControl={keyboardControl}
-              onExitKeyboardControl={onExitKeyboardControl}
-            />
-          )}
-          {step === 'players' && (
-            <PlayerSettings
-              songPreview={songPreview}
-              onNextStep={startSong}
-              keyboardControl={keyboardControl}
-              onExitKeyboardControl={() => setStep('song')}
-            />
-          )}
-        </motion.div>
-      </AnimatePresence>
+    <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
+      <MicCheck className="w-full shrink-0 sm:w-2/5" />
+      <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4">
+        <GameSettings
+          songPreview={songPreview}
+          onNextStep={handlePlay}
+          keyboardControl={keyboardControl}
+          onExitKeyboardControl={onExitKeyboardControl}
+        />
+      </div>
     </div>
   );
 }

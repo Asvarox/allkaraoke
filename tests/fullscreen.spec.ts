@@ -25,6 +25,10 @@ test('Fullscreen is turning on automatically, if user doesnt turn off fullscreen
   });
 
   await test.step('Turning off fullscreen makes that mode is not getting on automatically', async () => {
+    // In v2 song selection, the first Backspace enters toolbar focus mode;
+    // the second navigates back to the main menu.
+    await page.keyboard.press('Backspace');
+    await page.waitForTimeout(200);
     await page.keyboard.press('Backspace');
     await pages.mainMenuPage.toolbar.toggleFullscreen();
     await pages.mainMenuPage.toolbar.expectFullscreenToBeOff();

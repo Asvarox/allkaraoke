@@ -1,10 +1,9 @@
 import { chunk, throttle } from 'es-toolkit';
-import { useCallback, useLayoutEffect, useMemo, useState } from 'react';
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from '~/modules/SoundManager';
 import useKeyboard from '~/modules/hooks/useKeyboard';
 import useKeyboardHelp from '~/modules/hooks/useKeyboardHelp';
 import usePrevious from '~/modules/hooks/usePrevious';
-import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 import tuple from '~/modules/utils/tuple';
 import { HelpEntry } from '~/routes/KeyboardHelp/Context';
 import selectRandomSong from '~/routes/SingASong/SongSelectionV2/Hooks/selectRandomSong';
@@ -75,7 +74,8 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
         newY = y + delta;
       } else {
         if (songIdMatrix[y] === undefined) {
-          debugger;
+          // This should never happen — cursorPosition.y is always within songIdMatrix bounds
+          return [0, 0];
         }
         const maxXInRow = (songIdMatrix[y]?.length ?? 1) - 1;
         newX = Math.min(x, maxXInRow) + delta;
@@ -101,8 +101,9 @@ export const useSongSelectionKeyboardNavigation = (
   songCount: number,
   appliedFilters: AppliedFilters,
   songsPerRow: number,
+  onEnterToolbar: () => void,
+  onEnterSongGroupsNav: (groupName: string) => void,
 ) => {
-  const navigate = useSmoothNavigate();
   // We need to record how user entered (from which "side") and how left and based on that update the selection.
   // Eg if user was at the last column, entered playlists, and returned to the last column (by clicking left)
   // then effectively the selection shouldn't change
@@ -116,7 +117,14 @@ export const useSongSelectionKeyboardNavigation = (
   );
   const isAtFirstColumn = cursorPosition[0] === 0;
 
+  // Ref that always reflects the current enabled state so stale hotkey closures
+  // (react-hotkeys-hook v3 unbinds via useEffect, which fires after paint) can
+  // still bail out immediately rather than running stale navigation logic.
+  const enabledRef = useRef(enabled);
+  enabledRef.current = enabled;
+
   const handleEnter = () => {
+    if (!enabledRef.current) return;
     menuEnter.play();
     onEnter();
   };
@@ -136,9 +144,10 @@ export const useSongSelectionKeyboardNavigation = (
   }, [appliedFilters.search]);
 
   const handleBackspace = () => {
+    if (!enabledRef.current) return;
     if (!blockBack && !appliedFilters.search) {
       menuBack.play();
-      navigate('menu/');
+      onEnterToolbar();
     }
   };
 
@@ -158,6 +167,15 @@ export const useSongSelectionKeyboardNavigation = (
   );
 
   const navigateVertically = (e: KeyboardEvent | undefined, direction: 1 | -1) => {
+    if (!enabledRef.current) return;
+    if (direction === -1 && !e?.repeat && cursorPosition[1] === 0) {
+      // First row, single press up → enter Song Groups nav in toolbar
+      const currentGroup = groupedSongs.find((group) =>
+        group.songs.some((song) => getSongIdWithNew(song, group) === selectedSongId),
+      );
+      onEnterSongGroupsNav(currentGroup?.name ?? groupedSongs[0]?.name ?? '');
+      return;
+    }
     if (!e?.repeat) {
       moveCursor('y', direction);
     } else {
@@ -168,19 +186,13 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const navigateHorizontally = (direction: 1 | -1, ignoreFilters = false) => {
-    // Disable navigation to filters by going right since the filters are on the left
-    // if (!ignoreFilters && direction === 1 && isAtLastColumn && !arePlaylistsVisible) {
-    //   setShowPlaylistsState([true, 'right']);
-    // } else
-    if (!ignoreFilters && direction === -1 && isAtFirstColumn && !arePlaylistsVisible) {
-      setShowPlaylistsState([true, 'left']);
-    } else {
-      moveCursor('x', direction);
-    }
+  const navigateHorizontally = (direction: 1 | -1) => {
+    if (!enabledRef.current) return;
+    moveCursor('x', direction);
   };
 
   const randomSong = () => {
+    if (!enabledRef.current) return;
     const newIndex = selectRandomSong(songCount, previouslySelectedSongs);
     for (const group of groupedSongs) {
       for (const song of group.songs) {
@@ -203,7 +215,15 @@ export const useSongSelectionKeyboardNavigation = (
       random: randomSong,
     },
     enabled && !arePlaylistsVisible,
-    [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters, blockBack],
+    [
+      groupedSongs,
+      cursorPosition,
+      arePlaylistsVisible,
+      appliedFilters,
+      blockBack,
+      onEnterToolbar,
+      onEnterSongGroupsNav,
+    ],
   );
 
   const help = useMemo<HelpEntry>(
@@ -230,7 +250,7 @@ export const useSongSelectionKeyboardNavigation = (
   useLayoutEffect(() => {
     const [previousShowFilters, enteringKey] = previousPlaylistsState;
     if (previousShowFilters && !arePlaylistsVisible) {
-      if (enteringKey === leavingKey) navigateHorizontally(leavingKey === 'right' ? 1 : -1, true);
+      if (enteringKey === leavingKey) navigateHorizontally(leavingKey === 'right' ? 1 : -1);
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 

@@ -55,7 +55,7 @@ export const EurovisionLogo = ({ src, alt }: { src: string; alt: string }) => (
 );
 
 const SFlag = ({ isocode }: { isocode: string }) => (
-  <Flag isocode={isocode} style={{ width: '1em', objectFit: 'contain' }} />
+  <Flag isocode={isocode} style={{ width: '1em', height: '1em', objectFit: 'contain' }} />
 );
 
 // eslint-disable-next-line react-refresh/only-export-components

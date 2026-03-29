@@ -107,6 +107,9 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     const additionalSongs = list.filter((song) => additionalSongIds.includes(song.id));
     return [...songList, ...additionalSongs.filter((song) => !songList.includes(song))];
   },
+  // Language exclusion is applied separately before playlist filtering (in useSongListFilter's prefilteredList),
+  // so by the time playlist filters run, excluded songs are already removed. This entry exists to satisfy
+  // the AppliedFilters type but intentionally does nothing here.
   skipExcludedLanguages: (songList) => songList,
 };
 
@@ -145,6 +148,13 @@ export const useSongListFilter = (
 
   const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
   const [filters, setFilters] = useState<AppliedFilters>(() => emptyFilters);
+
+  // Auto-select the first playlist when none is set in the URL yet.
+  useEffect(() => {
+    if (selectedPlaylist === null && playlists.length > 0) {
+      setPlaylist(playlists[0].name);
+    }
+  }, [selectedPlaylist, playlists]);
 
   useEffect(() => {
     setFilters(emptyFilters);

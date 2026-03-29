@@ -53,14 +53,27 @@ export class SongListPagePO {
     if (currentlyFocused !== songID) {
       await this.ensureSongIsScrolledTo(songID);
       const song = await this.getSongElement(songID, false);
-      await song.click();
+      // force:true bypasses the song-preview overlay when showVideo=true intercepts pointer events.
+      await song.click({ force: true });
     }
   }
 
   public async openPreviewForSong(songID: string) {
-    await this.focusSong(songID);
-    const locator = await this.getSongElement(songID);
-    await locator.click();
+    // If the game settings are already visible (e.g. focusSong triggered expansion), skip clicking.
+    if (await this.page.getByTestId('game-mode-setting').isVisible()) return;
+    await this.ensureSongIsScrolledTo(songID);
+    const song = await this.getSongElement(songID, false);
+    // force:true bypasses Playwright's "element intercepts pointer events" check when the
+    // song-preview overlay is visible (showVideo=true). The click triggers expansion directly
+    // or focuses the song so Enter can expand it.
+    await song.click({ force: true });
+    // Wait briefly for any React state update from the click, then check if settings are visible.
+    await this.page.waitForTimeout(100);
+    // If the preview isn't expanded yet (e.g. the song wasn't focused before the click),
+    // press Enter via keyboard navigation to expand it.
+    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
+      await this.page.keyboard.press('Enter');
+    }
   }
 
   public get songListContainer() {
@@ -96,13 +109,14 @@ export class SongListPagePO {
   }
 
   public get searchInput() {
-    return this.page.getByTestId('filters-search');
+    // In v2 song selection the search input always stays visible; it uses 'search-input' test ID.
+    return this.page.getByTestId('search-input');
   }
 
-  public async searchSong(songID: string) {
-    await this.searchButton.click();
+  public async searchSong(songTitle: string) {
+    // In v2 the search input is always visible. Typing triggers a hotkey that populates the search filter.
+    await this.page.keyboard.type(songTitle);
     await expect(this.searchInput).toBeVisible();
-    await this.page.keyboard.type(songID);
   }
 
   public get pickRandomButton() {
@@ -110,7 +124,8 @@ export class SongListPagePO {
   }
 
   public async expectPlaylistToBeSelected(name: string) {
-    await expect(this.getPlaylistElement(name)).toHaveAttribute('data-selected', 'true');
+    // In v2, the selected playlist button receives data-focused="true" (via the Button component's focused prop).
+    await expect(this.getPlaylistElement(name)).toHaveAttribute('data-focused', 'true');
   }
 
   public async getDuetSongIcon(songID: string) {
@@ -137,6 +152,9 @@ export class SongListPagePO {
 
   public async goBackToMainMenu() {
     await this.page.waitForTimeout(500);
+    // In v2, the first Backspace enters toolbar focus mode; the second navigates to the main menu.
+    await this.page.keyboard.press('Backspace');
+    await this.page.waitForTimeout(200);
     await this.page.keyboard.press('Backspace');
   }
 
@@ -145,17 +163,24 @@ export class SongListPagePO {
   }
 
   public async closeTheSelectionPlaylistTip() {
-    await this.page.getByTestId('close-tooltip-button').click();
+    // In v2 the Selection playlist tooltip (ClosableTooltip Wrapper) is never rendered in the Toolbar,
+    // so this is a no-op. If the tooltip exists (v1 behaviour) it will be closed.
+    const button = this.page.getByTestId('close-tooltip-button');
+    if (await button.isVisible()) {
+      await button.click();
+    }
   }
 
   public get popularityIcon() {
-    return this.page.locator('[data-testid="StarIcon"]');
+    // In v1 (non-compact), popular English songs show StarIcon.
+    // In v2 (compact song list), popular English songs show a chip with data-test="popular-chip".
+    return this.songListContainer.locator('[data-testid="StarIcon"], [data-test="popular-chip"]');
   }
 
   public async expectPlaylistContainSongsMarkedAsPopular() {
-    const popSongs = this.songListContainer.locator(this.popularityIcon).last();
-    await expect(popSongs).toBeVisible();
-    await popSongs.click();
+    const popSong = this.popularityIcon.last();
+    await expect(popSong).toBeVisible();
+    await popSong.click();
   }
 
   public async expectSongToBeMarkedAsNewInNewGroup(songID: string) {
@@ -163,9 +188,13 @@ export class SongListPagePO {
   }
 
   public async expectPlaylistContainSongsMarkedAsNew() {
-    const newSongs = this.songListContainer.locator('[data-testid="FiberNewOutlinedIcon"]').first();
-    await expect(newSongs).toBeVisible();
-    await newSongs.click();
+    // In v1 (non-compact), recently-updated songs show FiberNewOutlinedIcon.
+    // In v2 (compact song list), recently-updated songs show a chip with data-test="new-chip".
+    const newSong = this.songListContainer
+      .locator('[data-testid="FiberNewOutlinedIcon"], [data-test="new-chip"]')
+      .first();
+    await expect(newSong).toBeVisible();
+    await newSong.click();
   }
 
   public get emptyPlaylistAlert() {

@@ -12,16 +12,20 @@ export class SongPreviewPagePO {
   calibration = new Calibration(this.page, this.context, this.browser);
 
   public get nextButton() {
-    return this.page.getByTestId('next-step-button');
+    // In v2 song selection, 'game-mode-setting' is always visible in the expanded preview settings,
+    // regardless of whether inputs are configured. 'play-song-button' only appears when inputs are set up.
+    return this.page.getByTestId('game-mode-setting');
   }
 
   public async goNext() {
-    await this.nextButton.click();
+    // In v2, just wait for the settings panel to be visible (game-mode-setting is always rendered).
+    await expect(this.nextButton).toBeVisible();
   }
 
-  public async navigateToGoNextWithKeyboard(remoteMic?: Page) {
-    await navigateWithKeyboard(this.page, 'next-step-button', remoteMic);
-    await this.page.keyboard.press('Enter', { delay: 40 });
+  public async navigateToGoNextWithKeyboard(_remoteMic?: Page) {
+    // In v2, the song settings are shown inline after expanding the preview.
+    // No keyboard navigation is needed to reach settings — just verify they are visible.
+    await expect(this.nextButton).toBeVisible();
     await this.page.waitForTimeout(300); // force wait for the animation to finish
   }
 
@@ -128,11 +132,13 @@ export class SongPreviewPagePO {
   }
 
   public async goToInputSelectionPage() {
-    await expect(this.page.getByTestId('select-inputs-button')).toBeVisible();
-    // there can be some weird issues on Firefox where the button is obscured by <html /> element
+    const button = this.page.getByTestId('select-inputs-button');
+    await button.waitFor({ state: 'attached' });
+    // In v2 the settings panel may have overflow:hidden which prevents scrollIntoView.
+    // Using evaluate to call the native click() method bypasses Playwright's viewport constraints.
     // https://github.com/microsoft/playwright/issues/12298
     await this.page.waitForTimeout(100);
-    await this.page.getByTestId('select-inputs-button').click({ force: true });
+    await button.evaluate((el) => (el as HTMLElement).click());
   }
 
   public getUnavailableStatusPlayer(playerNumber: number) {

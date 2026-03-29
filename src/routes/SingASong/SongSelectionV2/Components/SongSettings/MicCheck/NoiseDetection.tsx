@@ -22,8 +22,9 @@ export default memo(function NoiseDetection() {
       () => {
         const noDetection = measures.current.filter(([, freq]) => freq === 0);
         const detection = measures.current.filter(([, freq]) => freq > 0);
-        const avgNoDetectionVolume = noDetection.reduce((acc, [volume]) => acc + volume, 0) / (noDetection.length + 1);
-        const avgDetectionVolume = detection.reduce((acc, [volume]) => acc + volume, 0) / (detection.length + 1);
+        const avgNoDetectionVolume =
+          noDetection.reduce((acc, [volume]) => acc + volume, 0) / Math.max(noDetection.length, 1);
+        const avgDetectionVolume = detection.reduce((acc, [volume]) => acc + volume, 0) / Math.max(detection.length, 1);
 
         // The logic is that if the singing measures and non-singing measures have similar volume, then there's
         // something playing in the background that is picked up as singing. If someone is singing into the mic
@@ -45,8 +46,8 @@ export default memo(function NoiseDetection() {
 
   return (
     <div
-      className={`relative -top-4 -left-2 max-w-[40rem] bg-black/75 p-4 transition-opacity duration-300 ${
-        noiseDetected ? 'opacity-100' : 'opacity-0'
+      className={`max-w-[40rem] bg-black/75 p-4 transition-opacity duration-300 ${
+        noiseDetected ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}>
       <div className="flex items-center gap-2 text-lg">
         <Warning className="text-active" />

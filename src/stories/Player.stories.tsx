@@ -51,7 +51,6 @@ const Template: StoryFn<StoryArgs> = (args) => {
   PlayersManager.getPlayers().forEach((player) => PlayersManager.removePlayer(player.number));
   singSetup.players.map((player) => PlayersManager.addPlayer(player.number));
 
-  console.log(singSetup, PlayersManager.getPlayers());
   useEffect(() => {
     GameState.resetSingSetup();
     GameState.setSingSetup(singSetup);

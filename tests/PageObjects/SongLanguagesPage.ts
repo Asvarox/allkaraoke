@@ -41,12 +41,23 @@ export class SongLanguagesPagePO {
   }
 
   private async isLanguageSelected(languageCheckbox: Locator) {
-    const languageCheckboxValue = await languageCheckbox.getAttribute('data-testid');
-    return languageCheckboxValue === 'CheckBoxIcon';
+    // languageCheckbox may be either:
+    //  - an SVG element (when called from isLanguageSelectedStr via getCheckbox)
+    //  - a parent button element (when called from ensureAllLanguagesAreSelected via getAllLanguageCheckboxes)
+    const testId = await languageCheckbox.getAttribute('data-testid');
+    if (testId !== null) {
+      // Direct SVG locator: the attribute is on the element itself.
+      return testId === 'CheckBoxIcon';
+    }
+    // Parent element locator: look for the CheckBoxIcon SVG inside it.
+    const svgTestId = await languageCheckbox.locator('svg').getAttribute('data-testid');
+    return svgTestId === 'CheckBoxIcon';
   }
 
   public async getAllLanguageCheckboxes() {
-    const languageCheckbox = this.page.locator('[data-test^="lang-"] svg');
+    // Use the parent button element (data-test^="lang-") rather than the child SVG so that React
+    // replacing the checked/unchecked SVG during iteration does not invalidate the locator.
+    const languageCheckbox = this.page.locator('[data-test^="lang-"]');
     await expect(languageCheckbox.first()).toBeVisible();
 
     return languageCheckbox.all();

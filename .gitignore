@@ -137,3 +137,5 @@ storybook-static/
 .wrangler/*
 
 /build-storybook.log
+
+.playwright-cli/

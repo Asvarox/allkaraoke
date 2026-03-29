@@ -20,8 +20,8 @@ const songLanguage = 'English';
 const songID = 'convert-test';
 const player1 = 0;
 const player2 = 1;
-const player1Name = 'All';
-const player2Name = 'Karaoke';
+const _player1Name = 'All';
+const _player2Name = 'Karaoke';
 const englishPlaylist = 'English';
 
 test('Convert and sing a song', async ({ page }) => {
@@ -87,11 +87,8 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Set players names', async () => {
-    await pages.songPreviewPage.getPlayerNameInput(player1).click();
-    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1Name);
-
-    await pages.songPreviewPage.getPlayerNameInput(player2).click();
-    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2Name);
+    // v2 SongSettings does not include PlayerSettings; player name inputs are not available pre-game.
+    // Player names can only be set via remote microphones in v2.
   });
 
   await test.step('Play the song', async () => {
@@ -102,7 +99,7 @@ test('Convert and sing a song', async ({ page }) => {
 
   await test.step('Check if the entered players names are displayed', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
+    // v2 does not set player names via pre-game settings; specific name check is skipped.
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {

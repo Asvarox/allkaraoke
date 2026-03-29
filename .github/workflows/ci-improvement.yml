@@ -159,7 +159,7 @@ jobs:
           curl \
             -H 'Content-Type: application/json' \
             -H "Authorization: Bearer ${{ secrets.POSTHOG_PAT_KEY }}" \
-            -d '{"content":"Deployment https://github.com/Asvarox/allkaraoke/actions/runs/${{ github.run_id }}","date_marker":"'$(date --iso-8601=seconds)'","scope":"project","creation_type":"GIT"}' \
+            -d '{"content":"[Deployment](https://github.com/Asvarox/allkaraoke/actions/runs/${{ github.run_id }}) - ${{ github.event.head_commit.message || github.event.workflow_run.head_commit.message || github.event.pull_request.title || github.sha }}","date_marker":"'$(date --iso-8601=seconds)'","scope":"project","creation_type":"GIT"}' \
             https://eu.posthog.com/api/projects/281/annotations/
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}

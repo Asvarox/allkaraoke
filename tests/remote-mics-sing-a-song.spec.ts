@@ -95,7 +95,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await pages.songListPage.focusSong(song2.ID);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
+    // In v2, pressing Enter here (via remoteMic2) would trigger play-song-button (the default-focused
+    // element when inputs are configured), which would start the game prematurely.
+    // The next step verifies mic reconnection on the settings screen, so we don't press Enter here.
   });
 
   await test.step('Check if the mics are reselected after they refresh', async () => {

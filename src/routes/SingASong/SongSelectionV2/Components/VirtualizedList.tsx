@@ -40,6 +40,7 @@ interface Props<T> {
   groupHeight: number;
   focusedSong: string;
   Footer: ReactNode;
+  topPadding?: number;
   ref?: ForwardedRef<VirtualizedListMethods>;
 }
 
@@ -130,6 +131,7 @@ export function VirtualizedList<T>(props: Props<T>) {
         groupHeaderHeight={props.groupHeight}
         components={props.components}
         context={props.context}
+        topPadding={props.topPadding}
         groupContent={(index, groupProps) => (
           <GroupRowWrapper group={groupedRows[index].group} {...groupProps}>
             {props.renderGroup(groupedRows[index].group)}

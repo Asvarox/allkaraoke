@@ -3,23 +3,23 @@ import { generateSong } from '~/modules/utils/testUtils';
 import SongFlag from '~/routes/SingASong/SongSelectionV2/Components/SongCard/SongFlag';
 
 describe('SongCard', () => {
-  it('SongFlag should not render for GB', async () => {
+  it('SongFlag should render GB flag for GB origin with English language', async () => {
     const song = generateSong([], {
       artistOrigin: 'GB',
       language: ['English'],
     });
     render(<SongFlag song={song} />);
 
-    expect(screen.queryByRole('img')).toBeNull();
+    expect(await screen.findByRole('img')).toHaveAttribute('alt', 'gb');
   });
-  it('SongFlag should not render for US', async () => {
+  it('SongFlag should render US flag for US origin with English language', async () => {
     const song = generateSong([], {
       artistOrigin: 'US',
       language: ['English'],
     });
     render(<SongFlag song={song} />);
 
-    expect(screen.queryByRole('img')).toBeNull();
+    expect(await screen.findByRole('img')).toHaveAttribute('alt', 'us');
   });
 
   it('SongFlag should render for US origin if the language is not English', async () => {

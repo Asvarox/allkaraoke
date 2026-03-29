@@ -58,7 +58,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
       ),
       display: (
         <span>
-          <strong>★</strong>&nbsp;Selection&nbsp;<strong>★</strong>
+          <strong>★</strong>&nbsp;Selection
         </span>
       ),
       filters: {
@@ -121,5 +121,13 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     ];
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
-  }, [songLanguages, isLoading, recommended, remoteSongList, connected.length]);
+  }, [
+    songLanguages,
+    isLoading,
+    recommended,
+    remoteSongList,
+    connected.length,
+    isSetlistInPlace,
+    isSpecialThemeEnabled,
+  ]);
 };
