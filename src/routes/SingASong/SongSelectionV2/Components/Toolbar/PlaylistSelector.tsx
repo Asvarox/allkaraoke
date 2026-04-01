@@ -1,7 +1,7 @@
 import { ExpandMore } from '@mui/icons-material';
 import { useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
-import { ScrollableRow } from '~/modules/Elements/AKUI/Selector';
+import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
 import PlaylistBottomSheet from '~/routes/SingASong/SongSelectionV2/Components/PlaylistBottomSheet';
 import { PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
@@ -55,7 +55,7 @@ export default function PlaylistSelector({
   }
 
   return (
-    <ScrollableRow className="ml-auto flex-1">
+    <Selector value={selectedPlaylist ?? ''} onChange={setSelectedPlaylist} className="ml-auto flex-1">
       {playlists.map((playlist) => {
         const playlistNavProps = keyboardNavRegister?.(
           `playlist-${playlist.name}`,
@@ -63,20 +63,20 @@ export default function PlaylistSelector({
             setSelectedPlaylist(playlist.name);
             onPlaylistSelected?.();
           },
-          String(playlist.display ?? playlist.name),
+          String(playlist.name),
         );
         return (
-          <Button
+          <Selector.Item
             key={playlist.name}
+            value={playlist.name}
             size="small"
-            className="shrink-0 scale-100! animate-none px-3"
-            focused={playlist.name === selectedPlaylist || (playlistNavProps?.focused ?? false)}
+            className="shrink-0 animate-none px-3"
             data-test={`playlist-${playlist.name}`}
-            onClick={() => setSelectedPlaylist(playlist.name)}>
+            {...playlistNavProps}>
             {playlist.display ?? playlist.name}
-          </Button>
+          </Selector.Item>
         );
       })}
-    </ScrollableRow>
+    </Selector>
   );
 }
