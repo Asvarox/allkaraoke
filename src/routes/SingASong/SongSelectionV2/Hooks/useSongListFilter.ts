@@ -92,7 +92,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     const cleanEdition = clearString(edition);
 
     return cleanEdition.length
-      ? songList.filter((song) => clearString(song.edition ?? '').includes(edition))
+      ? songList.filter((song) => clearString(song.edition ?? '').includes(cleanEdition))
       : songList;
   },
   recentlyUpdated: (songList) => {

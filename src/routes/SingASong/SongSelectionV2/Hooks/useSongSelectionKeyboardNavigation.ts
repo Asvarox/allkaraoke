@@ -156,8 +156,9 @@ export const useSongSelectionKeyboardNavigation = (
       throttle(
         (direction: 1 | -1, currentGroup: number) => {
           const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
+          const nextGroup = groupedSongs[nextGroupIndex];
 
-          moveToSong(groupedSongs[nextGroupIndex].songs[0].song.id);
+          moveToSong(getSongIdWithNew(nextGroup.songs[0], nextGroup));
           menuNavigate.play();
         },
         700,
@@ -179,8 +180,8 @@ export const useSongSelectionKeyboardNavigation = (
     if (!e?.repeat) {
       moveCursor('y', direction);
     } else {
-      const currentlySelectedGroupIndex = groupedSongs.findIndex(
-        (group) => !!group.songs.find((song) => song.song.id === selectedSongId),
+      const currentlySelectedGroupIndex = groupedSongs.findIndex((group) =>
+        group.songs.some((song) => getSongIdWithNew(song, group) === selectedSongId),
       );
       navigateToGroup(direction, currentlySelectedGroupIndex);
     }

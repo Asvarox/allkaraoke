@@ -19,16 +19,11 @@ const useSpecialSongTheme = (
   useEffect(() => {
     if (isSpecialThemeSong) {
       setBackgroundTheme(theme);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (backgroundTheme !== theme && isSpecialThemeSong) {
-      setBackgroundTheme(theme);
-    } else if (backgroundTheme === theme && !isSpecialThemeSong) {
+    } else if (backgroundTheme === theme) {
+      // Background is set to this special theme but the song is no longer special — reset to regular
       setBackgroundTheme('regular');
     }
-  }, [theme, backgroundTheme, songPreview]);
+  }, [isSpecialThemeSong, theme, backgroundTheme, setBackgroundTheme]);
 
   return isSpecialThemeSong;
 };
@@ -40,7 +35,7 @@ export const useSpecialTheme = (
   theme: backgroundTheme,
 ) => {
   const isSpecialThemeEnabled = useFeatureFlag(feature);
-  const _isSpecialSong = useSpecialSongTheme(
+  useSpecialSongTheme(
     songPreview,
     isSpecialThemeEnabled ? theme : 'regular',
     isSpecialThemeEnabled ? check : () => false,
