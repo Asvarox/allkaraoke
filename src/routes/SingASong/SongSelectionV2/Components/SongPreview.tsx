@@ -133,16 +133,12 @@ export default function SongPreviewComponent({
         data-test="song-preview"
         className={
           expanded
-            ? 'fixed inset-0 z-202 overflow-y-auto rounded-none border-0 p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-xl sm:p-4'
-            : `mobile:scale-0 absolute z-3 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] transition-opacity ${
+            ? 'fixed inset-0 z-202 overflow-y-auto rounded-none border-2 border-amber-400 p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-xl sm:p-4'
+            : `mobile:scale-0 absolute z-202 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
               }`
         }
-        style={
-          expanded
-            ? { viewTransitionName: 'song-preview' }
-            : { width, height, top, left, viewTransitionName: 'song-preview' }
-        }>
+        style={expanded ? {} : { width, height, top, left }}>
         {/* Click-capture overlay — collapsed only */}
         {!expanded && <div className="absolute inset-0 z-10 cursor-pointer" onClick={onExpand} />}
 
@@ -172,7 +168,9 @@ export default function SongPreviewComponent({
               <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
             </div>
           )}
-          <SongCard.Thumbnail ref={thumbnailRef} className={expanded ? 'w-full shrink-0 sm:w-2/5' : undefined}>
+          <SongCard.Thumbnail
+            ref={thumbnailRef}
+            className={`[view-transition-name:song-preview-thumbnail] ${expanded ? 'w-full shrink-0 sm:w-2/5' : undefined}`}>
             <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
               <VideoPlayer
                 width={0}

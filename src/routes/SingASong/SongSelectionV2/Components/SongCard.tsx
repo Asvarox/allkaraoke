@@ -115,7 +115,7 @@ function SongCardRoot({ song, isPopular, forceFlag = false, children, className,
     <SongCardContext.Provider value={{ song, isPopular, forceFlag }}>
       <div
         className={cn(
-          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl border bg-slate-900/80 p-1.5 backdrop-blur-sm transition-all duration-300',
+          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl border bg-slate-900/80 p-1.5 transition-all duration-300',
           className,
         )}
         {...props}>
