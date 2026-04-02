@@ -132,11 +132,12 @@ export default function SongPreviewComponent({
         data-song={songPreview.id}
         data-test="song-preview"
         className={
-          expanded
+          '' +
+          (expanded
             ? 'fixed inset-0 z-202 overflow-y-auto rounded-none border-2 border-amber-400 p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-xl sm:p-4'
-            : `mobile:scale-0 absolute z-202 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] transition-opacity ${
+            : `mobile:scale-0 absolute z-3 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
-              }`
+              }`)
         }
         style={expanded ? {} : { width, height, top, left }}>
         {/* Click-capture overlay — collapsed only */}

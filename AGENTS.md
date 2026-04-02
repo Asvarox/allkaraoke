@@ -1,4 +1,5 @@
 # Agent Instructions
+* The baseline branch is called `master` (not `main`, not `trunk` etc)
 
 ## Commands
 
