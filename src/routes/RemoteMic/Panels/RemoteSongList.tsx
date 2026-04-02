@@ -5,6 +5,7 @@ import createPersistedState from 'use-persisted-state';
 import { SongPreview } from '~/interfaces';
 import { Badge } from '~/modules/Elements/AKUI/Badge';
 import { Button } from '~/modules/Elements/AKUI/Button';
+import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { Flag } from '~/modules/Elements/Flag';
 import { Input } from '~/modules/Elements/Input';
 import events from '~/modules/GameEvents/GameEvents';
@@ -145,22 +146,14 @@ function RemoteSongList({ connectionStatus }: Props) {
           data-test="search-input"
         />
         <div className="flex w-full gap-1">
-          <Button
-            size="mini"
-            className="flex-1 animate-none"
-            focused={tab === 'list'}
-            data-test="all-songs-button"
-            onClick={() => changeTab('list')}>
-            All songs
-          </Button>
-          <Button
-            size="mini"
-            className="flex-1 animate-none"
-            focused={tab === 'queue'}
-            data-test="your-list-button"
-            onClick={() => changeTab('queue')}>
-            Your list ({savedSongList.length})
-          </Button>
+          <Selector value={tab} onChange={(value) => changeTab(value as 'list' | 'queue')} className="flex-1">
+            <Selector.Item value="list" size="mini" className="flex-1" data-test="all-songs-button">
+              All songs
+            </Selector.Item>
+            <Selector.Item value="queue" size="mini" className="flex-1" data-test="your-list-button">
+              Your list ({savedSongList.length})
+            </Selector.Item>
+          </Selector>
           <LanguageFilter
             excludedLanguages={excludedLanguages}
             languageList={languages}

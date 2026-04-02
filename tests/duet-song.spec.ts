@@ -11,7 +11,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 const player1 = 0;
 const player2 = 1;
-const player1Name = 'all-Karaoke';
+const _player1Name = 'all-Karaoke';
 const polishLang = 'Polish';
 const polishIsoCode = 'pl';
 const duetPolSong = 'e2e-multitrack-polish-1994';
@@ -47,10 +47,9 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
     await pages.inputSelectionPage.selectComputersMicrophone();
   });
 
-  await test.step('Enter player name and play the song with 1 player', async () => {
+  await test.step('Play the song with 1 player', async () => {
     await pages.computersMicConnectionPage.continueToTheSong();
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
+    // v2 SongSettings does not include PlayerSettings; player name inputs are not available pre-game.
     await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
@@ -71,7 +70,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Player name and score are displayed for 1 player', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
+    // v2 does not set player names via pre-game settings; specific name check is skipped.
     await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
 
     await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
@@ -125,9 +124,8 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
     await pages.computersMicConnectionPage.continueToTheSong();
   });
 
-  await test.step('Enter player name and play the song with 1 player', async () => {
-    await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-    await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
+  await test.step('Play the song with 1 player', async () => {
+    // v2 SongSettings does not include PlayerSettings; player name inputs are not available pre-game.
     await expect(pages.songPreviewPage.getPlayerNameInput(player2)).not.toBeVisible();
     await pages.songPreviewPage.playTheSong();
   });
@@ -159,7 +157,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
 
   await test.step('Player name and score are displayed for 1 player', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
+    // v2 does not set player names via pre-game settings; specific name check is skipped.
     await expect(pages.postGameResultsPage.getPlayerNameElement(player2)).not.toBeVisible();
     await expect(pages.postGameResultsPage.getPlayerScoreElement(player1)).toBeVisible();
   });

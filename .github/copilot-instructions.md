@@ -91,3 +91,7 @@ pnpm e2e --project="chromium" --headed tests/sing-a-song.spec.ts
 ## Path Aliases
 
 TypeScript paths resolve from `./src` (e.g., `import X from '~/modules/...'`).
+
+## Coding style
+- Avoid using shortened variable names (e.g., `btn`, `img`, `cfg`) - prefer descriptive names (`button`, `image`, `config`)
+- If a piece of code is not obviously clear, add a comment explaining the intent and any non-trivial logic - this applies also to a prop passed to a component
