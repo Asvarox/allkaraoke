@@ -19,6 +19,19 @@ pnpm install
 pnpm start
 ```
 
+### Docker Setup
+
+If you prefer to use Docker, see [DOCKER.md](./DOCKER.md) for complete instructions. Quick start:
+
+```bash
+# Build and run with Docker
+./docker-build.sh
+docker run -p 3010:3010 allkaraoke:latest
+
+# Or use Docker Compose
+docker-compose up
+```
+
 #### Run in offline mode
 
 Plays dummy local video instead of YouTube to work properly in offline environments (eg. planes).

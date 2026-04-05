@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  allkaraoke:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_VERSION: "${NODE_VERSION:-20}"
+    ports:
+      - "3010:3010"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3010/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
