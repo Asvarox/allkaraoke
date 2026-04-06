@@ -108,7 +108,7 @@ const components: Components<{
     </>
   ),
   EmptyPlaceholder: () => (
-    <div className="flex h-[75vh] flex-1 items-center justify-center text-8xl font-(--font-family) text-white">
+    <div className="typography flex h-[30vh] flex-1 items-center justify-center text-xl text-white sm:text-4xl">
       No songs found
     </div>
   ),
@@ -290,6 +290,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               groupedSongList={loading ? [] : groupedSongList}
               keyboardNavRegister={row2Register}
               onScrollToGroup={(group) => {
+                if (group.songs.length === 0) return;
+
                 moveToSong(getSongIdWithNew(group.songs[0], group));
                 // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
                 setTimeout(() => list.current?.scrollToGroup(group.name), 20);
@@ -414,7 +416,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               Footer={
                 selectedPlaylistData?.footerComponent ??
                 (setlist.isEditable ? (
-                  <div className="py-32 text-center text-5xl font-(--font-family) text-white">
+                  <div className="typography mt-auto pt-20 text-center text-lg text-white sm:text-xl">
                     Missing a song? Try{' '}
                     <Link to="convert/">
                       <a>adding one</a>
