@@ -1,16 +1,13 @@
 import { switchToTheme } from '~/modules/GameEngine/Drawing/styles';
 import events from '~/modules/GameEvents/GameEvents';
-import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
 import { BackgroundThemeSetting } from '~/routes/Settings/SettingsState';
 
 BackgroundThemeSetting.addListener((style) => {
   switchToTheme(style);
-  RemoteMicManager.broadcast({ t: 'style-change', style });
+  RemoteMicServer.callAllClients('setStyle', style);
 });
 
 events.remoteMicConnected.subscribe((remoteMic) => {
-  RemoteMicManager.getRemoteMicById(remoteMic.id)?.connection.send({
-    t: 'style-change',
-    style: BackgroundThemeSetting.get(),
-  });
+  RemoteMicServer.callClient(remoteMic.id, 'setStyle', BackgroundThemeSetting.get());
 });

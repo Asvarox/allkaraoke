@@ -8,17 +8,20 @@ import {
   KeyboardArrowUp,
   Shuffle,
 } from '@mui/icons-material';
+import { captureException } from '@sentry/react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { Kbd } from '~/modules/Elements/AKUI/Kbd';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventListener } from '~/modules/GameEvents/hooks';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { keyStrokes } from '~/modules/RemoteMic/Network/messages';
 import RemoteSongSearch from '~/routes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
 interface Props {
   onSearchStateChange?: (isActive: boolean) => void;
 }
+
+let exceptionCaptured = false;
 
 export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
@@ -27,8 +30,17 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   const isVertical = keyboard?.vertical !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
 
   const onPress = (key: keyStrokes) => () => {
-    // navigator?.vibrate?.(200);
-    RemoteMicClient.sendKeyStroke(key);
+    try {
+      navigator?.vibrate?.(100);
+    } catch (e) {
+      if (!exceptionCaptured) {
+        captureException(e, {
+          level: 'warning',
+        });
+        exceptionCaptured = true;
+      }
+    }
+    void serverRpc.input.keystroke(key);
   };
 
   return keyboard !== undefined ? (

@@ -1,32 +1,24 @@
-import { useEffect, useState } from 'react';
 import { Checkbox } from '~/modules/Elements/AKUI/Checkbox';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
+import { useServerMutation } from '~/modules/RemoteMic/Network/Client/hooks/useServerMutation';
+import { useServerQuery } from '~/modules/RemoteMic/Network/Client/hooks/useServerQuery';
 
 function UnassignAfterSongFinishedSetting() {
-  const [currentValue, setCurrentValue] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    RemoteMicClient.getUnassignPlayersAfterSongFinishedSetting()
-      .then(({ state }) => setCurrentValue(state))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  }, []);
-
-  const changeValue = (newValue: boolean) => {
-    setIsLoading(true);
-    RemoteMicClient.setUnassignPlayersAfterSongFinishedSetting(newValue)
-      .then(({ state }) => setCurrentValue(state))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  };
+  const {
+    data: currentValue = false,
+    loading: queryLoading,
+    refetch,
+  } = useServerQuery(() => serverRpc.settings.getUnassignAfterSong());
+  const { mutate, loading: mutating } = useServerMutation(async (newValue: boolean) => {
+    await serverRpc.settings.setUnassignAfterSong(newValue);
+    refetch();
+  });
 
   return (
     <Checkbox
-      disabled={isLoading}
+      disabled={queryLoading || mutating}
       checked={currentValue}
-      onClick={() => changeValue(!currentValue)}
+      onClick={() => void mutate(!currentValue)}
       size="small"
       info="Unassign players after they finish singing">
       Reset players

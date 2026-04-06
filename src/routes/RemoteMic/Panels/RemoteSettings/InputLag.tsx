@@ -1,35 +1,27 @@
-import { useEffect, useState } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
+import { useServerMutation } from '~/modules/RemoteMic/Network/Client/hooks/useServerMutation';
+import { useServerQuery } from '~/modules/RemoteMic/Network/Client/hooks/useServerQuery';
 import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
 
 function RemoteInputLag() {
-  const [currentValue, setCurrentValue] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    RemoteMicClient.getGameInputLag()
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  }, []);
-
-  const changeValue = (newValue: number) => {
-    setIsLoading(true);
-    RemoteMicClient.setGameInputLag(newValue)
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  };
+  const {
+    data: currentValue = 0,
+    loading: queryLoading,
+    refetch,
+  } = useServerQuery(() => serverRpc.settings.getInputLag());
+  const { mutate, loading: mutating } = useServerMutation(async (newValue: number) => {
+    await serverRpc.settings.setInputLag(newValue);
+    refetch();
+  });
 
   return (
     <>
       <Menu.SubHeader>Adjust game input lag</Menu.SubHeader>
       <NumericInput
         value={currentValue}
-        onChange={changeValue}
-        disabled={isLoading}
+        onChange={(value) => void mutate(value)}
+        disabled={queryLoading || mutating}
         unit="ms"
         data-test="game-input-lag"
       />

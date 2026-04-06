@@ -1,6 +1,5 @@
 import { uniq } from 'es-toolkit';
 import events from '~/modules/GameEvents/GameEvents';
-import { NetworkRemoteMicMyListMessage } from '~/modules/RemoteMic/Network/messages';
 import Listener from '~/modules/utils/Listener';
 
 class RemoteMicSongList extends Listener<[string[]]> {
@@ -14,7 +13,7 @@ class RemoteMicSongList extends Listener<[string[]]> {
     });
   }
 
-  private updateList = (from: string, delta: Omit<NetworkRemoteMicMyListMessage, 't'>) => {
+  private updateList = (from: string, delta: { added?: string[]; deleted?: string[] }) => {
     if (!this.lists[from]) {
       this.lists[from] = [];
     }

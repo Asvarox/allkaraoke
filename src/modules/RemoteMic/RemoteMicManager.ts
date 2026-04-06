@@ -1,23 +1,19 @@
 import events from '~/modules/GameEvents/GameEvents';
+import { ChannelName } from '~/modules/RemoteMic/Network/Client/subscriptions';
 import { SenderInterface } from '~/modules/RemoteMic/Network/Server/Transport/interface';
-import {
-  NetworkMessages,
-  NetworkSetPermissionsMessage,
-  NetworkSubscribeMessage,
-} from '~/modules/RemoteMic/Network/messages';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
 import { RemoteMic } from '~/modules/RemoteMic/RemoteMicInput';
 import Listener from '~/modules/utils/Listener';
 import storage from '~/modules/utils/storage';
-import { DefaultRemoteMicPermission } from '~/routes/Settings/SettingsState';
+import { DefaultRemoteMicPermission, RemoteMicPermission } from '~/routes/Settings/SettingsState';
 
 const RememberedAccessesKey = 'RememberedAccessesKey';
 const RememberedSubscriptionsKey = 'rememberedSubscriptionsKey';
-type subscriptionChannels = NetworkSubscribeMessage['channel'];
+type subscriptionChannels = ChannelName;
 
-class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['level']]> {
+class RemoteMicManager extends Listener<[string, RemoteMicPermission]> {
   private remoteMics: RemoteMic[] = [];
-  private micAccessMap: Record<string, NetworkSetPermissionsMessage['level']> =
-    storage.local?.getItem(RememberedAccessesKey) ?? {};
+  private micAccessMap: Record<string, RemoteMicPermission> = storage.local?.getItem(RememberedAccessesKey) ?? {};
 
   private subscriptions: Record<subscriptionChannels, string[]> = storage.session?.getItem(
     RememberedSubscriptionsKey,
@@ -54,7 +50,7 @@ class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['l
 
   public getPermission = (id: string) => this.micAccessMap[id] ?? DefaultRemoteMicPermission.get();
 
-  public setPermission = (id: string, permission: NetworkSetPermissionsMessage['level']) => {
+  public setPermission = (id: string, permission: RemoteMicPermission) => {
     this.getRemoteMicById(id)?.setPermission(permission);
 
     this.micAccessMap[id] = permission;

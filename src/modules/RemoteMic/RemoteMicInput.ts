@@ -1,7 +1,13 @@
+import events from '~/modules/GameEvents/GameEvents';
 import { SenderInterface } from '~/modules/RemoteMic/Network/Server/Transport/interface';
-import { NetworkMessages, NetworkSetPermissionsMessage } from '~/modules/RemoteMic/Network/messages';
-import sendMessage from '~/modules/RemoteMic/Network/sendMessage';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
 import { getPingTime } from '~/modules/RemoteMic/Network/utils';
+import { RemoteMicPermission } from '~/routes/Settings/SettingsState';
+
+// Helper to send an rpc-call to a connected client (server-initiated call)
+const sendRpcCall = (connection: SenderInterface, method: string, args: unknown[] = []) => {
+  connection.send({ t: 'rpc-call', method, args } as NetworkMessages);
+};
 
 class RemoteMicInput {
   private frequencies: number[] | number[][] = [0];
@@ -38,31 +44,53 @@ class RemoteMicInput {
   requestReadiness = () => {
     console.log('requestReadiness');
     if (!this.requestReadinessPromise) {
-      this.requestReadinessPromise = new Promise<boolean>((resolve) => {
-        const listener = (data: NetworkMessages) => {
-          if (data.t === 'confirm-readiness') {
+      this.requestReadinessPromise = new Promise<boolean>((resolve, reject) => {
+        const deviceId = this.connection.peer;
+
+        const cleanup = () => {
+          clearTimeout(timeoutId);
+          events.readinessConfirmed.unsubscribe(handleReadinessConfirmed);
+          events.remoteMicDisconnected.unsubscribe(handleDisconnect);
+          this.requestReadinessPromise = null;
+        };
+
+        const handleReadinessConfirmed = (confirmedDeviceId: string) => {
+          if (confirmedDeviceId === deviceId) {
+            cleanup();
             resolve(true);
-            this.connection.off('data', listener);
-            this.requestReadinessPromise = null;
           }
         };
 
-        this.connection.on('data', listener);
+        const handleDisconnect = ({ id }: { id: string }) => {
+          if (id === deviceId) {
+            cleanup();
+            reject(new Error(`Remote mic ${deviceId} disconnected before confirming readiness`));
+          }
+        };
 
-        sendMessage(this.connection, 'request-readiness');
+        const timeoutId = setTimeout(() => {
+          cleanup();
+          reject(new Error(`Readiness confirmation timed out for ${deviceId}`));
+        }, 30_000);
+
+        events.readinessConfirmed.subscribe(handleReadinessConfirmed);
+        events.remoteMicDisconnected.subscribe(handleDisconnect);
+
+        sendRpcCall(this.connection, 'requestReadiness');
       });
     }
     return this.requestReadinessPromise!;
   };
+
   startMonitoring = async () => {
     this.connection?.off('data', this.handleRTCData);
-    sendMessage(this.connection, 'start-monitor');
+    sendRpcCall(this.connection, 'startMonitor');
 
     this.connection?.on('data', this.handleRTCData);
   };
 
   stopMonitoring = async () => {
-    sendMessage(this.connection, 'stop-monitor');
+    sendRpcCall(this.connection, 'stopMonitor');
 
     this.connection?.off('data', this.handleRTCData);
   };
@@ -93,7 +121,7 @@ export class RemoteMic {
   public getInput = () => this.input;
 
   public setPlayerNumber = (playerNumber: 0 | 1 | 2 | 3 | null) => {
-    sendMessage(this.connection, 'set-player-number', { playerNumber });
+    sendRpcCall(this.connection, 'setPlayerNumber', [playerNumber]);
   };
 
   public onDisconnect = () => {
@@ -102,8 +130,8 @@ export class RemoteMic {
     }
   };
 
-  public setPermission = (level: NetworkSetPermissionsMessage['level']) => {
-    sendMessage<NetworkSetPermissionsMessage>(this.connection, 'set-permissions', { level });
+  public setPermission = (level: RemoteMicPermission) => {
+    sendRpcCall(this.connection, 'setPermissions', [level]);
   };
 
   private isPinging = false;
@@ -120,7 +148,7 @@ export class RemoteMic {
     this.pingInterval = setTimeout(() => {
       this.pingTime = getPingTime();
       this.isPinging = true;
-      sendMessage(this.connection, 'ping');
+      this.connection.send({ t: 'ping' } as NetworkMessages);
     }, 1000);
   };
 

@@ -1,17 +1,13 @@
 import posthog from 'posthog-js';
 import { SingSetup, Song, SongPreview } from '~/interfaces';
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
 import { PlayerEntity, SelectedPlayerInput } from '~/modules/Players/PlayersManager';
 import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
-import {
-  keyStrokes,
-  NetworkRemoteMicListMessage,
-  NetworkRemoteMicMyListMessage,
-  NetworkSetPermissionsMessage,
-  NetworkStyleChangeMessage,
-  NetworkSubscribeMessage,
-} from '~/modules/RemoteMic/Network/messages';
+import { ChannelName } from '~/modules/RemoteMic/Network/Client/subscriptions';
+import { keyStrokes } from '~/modules/RemoteMic/Network/messages';
 import { SongStats } from '~/modules/Songs/stats/common';
 import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+import { RemoteMicPermission } from '~/routes/Settings/SettingsState';
 
 export class GameEvent<T extends (...args: any[]) => void> {
   protected subscribers: Array<T> = [];
@@ -109,22 +105,17 @@ export const events = {
     () => undefined,
   ),
 
-  remoteMicSubscribed: new GameEvent<(id: string, channel: NetworkSubscribeMessage['channel']) => void>(
-    'remoteMicSubscribed',
-  ),
+  remoteMicSubscribed: new GameEvent<(id: string, channel: ChannelName) => void>('remoteMicSubscribed'),
   remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
   remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch'),
   remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
-  remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
-  remoteMicSongListUpdated: new GameEvent<(id: string, delta: Omit<NetworkRemoteMicMyListMessage, 't'>) => void>(
+  remoteMicSongListUpdated: new GameEvent<(id: string, delta: { added?: string[]; deleted?: string[] }) => void>(
     'remoteMicSongListUpdate',
   ),
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
   remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
-  remoteStyleChanged: new GameEvent<(style: NetworkStyleChangeMessage['style']) => void>('remoteStyleChanged'),
-  remoteMicPermissionsSet: new GameEvent<(level: NetworkSetPermissionsMessage['level']) => void>(
-    'remoteMicPermissionsSet',
-  ),
+  remoteStyleChanged: new GameEvent<(style: backgroundTheme) => void>('remoteStyleChanged'),
+  remoteMicPermissionsSet: new GameEvent<(level: RemoteMicPermission) => void>('remoteMicPermissionsSet'),
   readinessConfirmed: new GameEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),
   minPlayerNumberChanged: new GameEvent<(previous: number, current: number) => void>('minPlayerNumberChanged'),
 

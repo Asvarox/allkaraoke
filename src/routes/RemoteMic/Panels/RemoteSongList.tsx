@@ -10,9 +10,8 @@ import { Flag } from '~/modules/Elements/Flag';
 import { Input } from '~/modules/Elements/Input';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventListener } from '~/modules/GameEvents/hooks';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
-import { NetworkSongListMessage } from '~/modules/RemoteMic/Network/messages';
 import SongDao from '~/modules/Songs/SongsService';
 import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
@@ -51,10 +50,11 @@ function RemoteSongList({ connectionStatus }: Props) {
   const [excludedLanguages, setExcludedLanguages] = useExcludedLanguages([]);
   const { savedSongList, toggleSong } = useMySongList();
 
-  const [overrides, setOverrides] = useState<NetworkSongListMessage | undefined>();
+  type SongListOverrides = Awaited<ReturnType<typeof serverRpc.songs.getSongList>>;
+  const [overrides, setOverrides] = useState<SongListOverrides | undefined>();
   useEffect(() => {
     if (connectionStatus === 'connected' && overrides === undefined) {
-      RemoteMicClient.getSongList().then(setOverrides).catch(console.warn);
+      serverRpc.songs.getSongList().then(setOverrides).catch(console.warn);
     }
   }, [overrides, connectionStatus]);
 
@@ -73,7 +73,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                 video: song.video,
                 language: song.language,
                 search: song.search,
-              }) as NetworkSongListMessage['custom'][number] & Pick<SongPreview, 'id'>,
+              }) as SongListOverrides['custom'][number] & Pick<SongPreview, 'id'>,
           )
           .concat(...(overrides?.custom ?? []).map((song) => ({ ...song, id: SongDao.generateSongFile(song) }))),
         (song) => song.id,
@@ -91,7 +91,9 @@ function RemoteSongList({ connectionStatus }: Props) {
       if (searchedList.length !== songList.length) {
         return searchedList;
       } else {
-        return songList.filter((song) => !song.language.every((songLang) => excludedLanguages.includes(songLang!)));
+        return songList.filter(
+          (song) => !song.language.every((songLang: string | null) => excludedLanguages.includes(songLang!)),
+        );
       }
     } else {
       const addedSongList = savedSongList.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
@@ -247,7 +249,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                       className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
                       onClick={(e) => {
                         e.stopPropagation();
-                        RemoteMicClient.selectSong(song.id);
+                        void serverRpc.songs.select(song.id);
                       }}
                       data-test="select-song-button">
                       SELECT

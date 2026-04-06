@@ -4,7 +4,7 @@ import { twc } from 'react-twc';
 import { usePrevious, useUnmount } from 'react-use';
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Input } from '~/modules/Elements/Input';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import useDebounce from '~/modules/hooks/useDebounce';
 
 interface Props {
@@ -21,7 +21,7 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
   const previousSearch = usePrevious(debouncedSearch);
   useEffect(() => {
     if (previousSearch !== debouncedSearch) {
-      RemoteMicClient.searchSong(debouncedSearch.trim());
+      void serverRpc.songs.search(debouncedSearch.trim());
     }
   }, [previousSearch, debouncedSearch]);
 

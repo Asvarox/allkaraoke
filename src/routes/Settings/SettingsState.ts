@@ -72,10 +72,8 @@ export const InputLagSetting = new Setting<milliseconds>(
 export const RemoteMicrophoneLagSetting = new Setting<milliseconds>('REMOTE_MIC_INPUT_LAG', 0, 'session');
 
 export const RemoteMicPermissions = ['write', 'read'] as const;
-export const DefaultRemoteMicPermission = new Setting<ValuesType<typeof RemoteMicPermissions>>(
-  'DefaultRemoteMicPermission',
-  'write',
-);
+export type RemoteMicPermission = ValuesType<typeof RemoteMicPermissions>;
+export const DefaultRemoteMicPermission = new Setting<RemoteMicPermission>('DefaultRemoteMicPermission', 'write');
 
 export const BackgroundThemeSetting = new Setting<backgroundTheme>('BackgroundThemeSetting', 'regular', 'memory');
 export const AutoEnableFullscreenSetting = new Setting<boolean>(

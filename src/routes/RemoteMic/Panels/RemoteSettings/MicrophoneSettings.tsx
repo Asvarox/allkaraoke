@@ -1,30 +1,21 @@
-import { useEffect, useState } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import RemoteMicClient, { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { MIC_ID_KEY } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { useServerMutation } from '~/modules/RemoteMic/Network/Client/hooks/useServerMutation';
+import { useServerQuery } from '~/modules/RemoteMic/Network/Client/hooks/useServerQuery';
 import storage from '~/modules/utils/storage';
 import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
-import { RemoteMicrophoneLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function MicrophoneSettings() {
-  const [currentValue, setCurrentValue] = useSettingValue(RemoteMicrophoneLagSetting);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    RemoteMicClient.getMicrophoneInputLag()
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  }, []);
-
-  const changeValue = (newValue: number) => {
-    setIsLoading(true);
-    RemoteMicClient.setMicrophoneInputLag(newValue)
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  };
+  const {
+    data: currentValue = 0,
+    loading: queryLoading,
+    refetch,
+  } = useServerQuery(() => serverRpc.settings.getMicrophoneLag());
+  const { mutate, loading: mutating } = useServerMutation(async (newValue: number) => {
+    await serverRpc.settings.setMicrophoneLag(newValue);
+    refetch();
+  });
 
   const reset = () => {
     RemoteMicClient.disconnect();
@@ -44,9 +35,9 @@ function MicrophoneSettings() {
       <Menu.SubHeader>Adjust microphone lag</Menu.SubHeader>
       <NumericInput
         value={currentValue}
-        onChange={changeValue}
+        onChange={(value) => void mutate(value)}
         unit="ms"
-        disabled={isLoading}
+        disabled={queryLoading || mutating}
         step={25}
         data-test="microphone-delay"
       />

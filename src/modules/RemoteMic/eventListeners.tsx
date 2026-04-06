@@ -1,6 +1,7 @@
 import InputManager from '~/modules/GameEngine/Input/InputManager';
 import events from '~/modules/GameEvents/GameEvents';
 import PlayersManager from '~/modules/Players/PlayersManager';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
 import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 import isPreRendering from '~/modules/utils/isPreRendering';
 import { RemoteMicrophoneInputSource } from '~/routes/SelectInput/InputSources/Remote';
@@ -100,10 +101,12 @@ const sendPlayerStates = () => {
     number: PlayersManager.getPlayers().find((player) => player.input.deviceId === mic.id)?.number ?? null,
   }));
 
-  RemoteMicManager.broadcastToChannel('remote-mics', { t: 'remote-mics-list', list: remoteMics });
+  RemoteMicServer.publish('remote-mics', remoteMics);
 };
 
 events.playerRemoved.subscribe(sendPlayerStates);
 events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
-events.remoteMicSubscribed.subscribe(sendPlayerStates);
+events.remoteMicSubscribed.subscribe((_id, channel) => {
+  if (channel === 'remote-mics') sendPlayerStates();
+});

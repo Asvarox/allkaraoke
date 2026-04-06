@@ -3,7 +3,7 @@ import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';
 import ConnectionStatus from '~/modules/RemoteMic/ConnectionStatus';
-import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
+import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
 import { KeyboardHelpContext } from '~/routes/KeyboardHelp/KeyboardHelpContext';
 import KeyboardHelpView from './HelpView';
 
@@ -31,17 +31,11 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
   const [name, help] = Object.entries(keyboards).at(-1) ?? [];
 
   useEventEffect(events.remoteMicConnected, ({ id }) => {
-    RemoteMicManager.getRemoteMicById(id)?.connection.send({
-      t: 'keyboard-layout',
-      help,
-    });
+    RemoteMicServer.callClient(id, 'setKeyboardLayout', help);
   });
 
   useEffect(() => {
-    RemoteMicManager.broadcast({
-      t: 'keyboard-layout',
-      help,
-    });
+    RemoteMicServer.callAllClients('setKeyboardLayout', help);
   }, [name]);
 
   const { remote, ...rest } = help ?? {};

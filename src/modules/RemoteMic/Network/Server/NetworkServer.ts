@@ -1,16 +1,14 @@
 import events from '~/modules/GameEvents/GameEvents';
+import { ChannelName } from '~/modules/RemoteMic/Network/Client/subscriptions';
+import { RpcServer } from '~/modules/RemoteMic/Network/Rpc/RpcServer';
 import { PartyKitServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/PartyKitServer';
 import { WebSocketServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/WebSocketServer';
 import { ServerTransport } from '~/modules/RemoteMic/Network/Server/Transport/interface';
 import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
 import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
-import SongDao from '~/modules/Songs/SongsService';
 import storage from '~/modules/utils/storage';
-import {
-  InputLagSetting,
-  RemoteMicConnectionTypeSetting,
-  UnassignOnSongFinishedSetting,
-} from '~/routes/Settings/SettingsState';
+import { RemoteMicConnectionTypeSetting } from '~/routes/Settings/SettingsState';
+import { serverHandlers } from './serverHandlers';
 
 export const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -23,6 +21,13 @@ export class NetworkServer {
   private gameCode = storage.session.getItem(GAME_CODE_KEY)!;
   private started = false;
   private transport: ServerTransport | undefined;
+
+  private rpcServer = new RpcServer(
+    serverHandlers,
+    (peerId) => RemoteMicManager.getPermission(peerId),
+    (channel, message) => RemoteMicManager.broadcastToChannel(channel as ChannelName, message),
+    (peerId) => this.transport?.removePlayer(peerId),
+  );
 
   public constructor() {
     if (!this.gameCode) {
@@ -59,73 +64,21 @@ export class NetworkServer {
         console.log('connected', this.getGameCode());
         this.transport!.addListener((event, sender) => {
           const type = event.t;
+
           if (type === 'register') {
             RemoteMicManager.addRemoteMic(event.id, event.name, sender, event.silent, event.lag);
           } else if (type === 'unregister') {
             RemoteMicManager.removeRemoteMic(sender.peer);
-          } else if (type === 'subscribe-event') {
-            RemoteMicManager.addSubscription(sender.peer, event.channel);
-          } else if (type === 'unsubscribe-event') {
-            RemoteMicManager.removeSubscription(sender.peer, event.channel);
+          } else if (type === 'rpc-sub') {
+            RemoteMicManager.addSubscription(sender.peer, event.channel as ChannelName);
+          } else if (type === 'rpc-unsub') {
+            RemoteMicManager.removeSubscription(sender.peer, event.channel as ChannelName);
           } else if (type === 'ping') {
             sender.send({ t: 'pong' } as NetworkMessages);
           } else if (type === 'pong') {
             RemoteMicManager.getRemoteMicById(sender.peer)?.onPong();
-          } else if (type === 'request-songlist') {
-            Promise.all([SongDao.getLocalIndex(), SongDao.getDeletedSongsList()]).then(([custom, deleted]) => {
-              sender.send({
-                t: 'songlist',
-                custom: custom.map((song) => ({
-                  artist: song.artist,
-                  title: song.title,
-                  video: song.video,
-                  language: song.language,
-                  search: song.search,
-                })),
-                deleted,
-              });
-            });
-          } else if (type === 'get-microphone-lag-request') {
-            const microphone = RemoteMicManager.getRemoteMicById(sender.peer);
-            if (microphone) {
-              sender.send({ t: 'get-microphone-lag-response', value: microphone.getInput().getInputLag() });
-            }
-          } else if (type === 'set-microphone-lag-request') {
-            const microphone = RemoteMicManager.getRemoteMicById(sender.peer);
-            if (microphone) {
-              microphone.getInput().setInputLag(event.value);
-              sender.send({ t: 'get-microphone-lag-response', value: microphone.getInput().getInputLag() });
-            }
-          } else if (RemoteMicManager.getPermission(sender.peer) === 'write') {
-            if (type === 'keystroke') {
-              events.remoteKeyboardPressed.dispatch(event.key);
-            } else if (type === 'search-song') {
-              events.remoteSongSearch.dispatch(event.search);
-            } else if (type === 'select-song') {
-              events.remoteSongSelected.dispatch(event.id);
-            } else if (type === 'request-mic-select') {
-              events.playerChangeRequested.dispatch(event.id, event.playerNumber);
-            } else if (type === 'get-game-input-lag-request') {
-              sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
-            } else if (type === 'set-game-input-lag-request') {
-              InputLagSetting.set(event.value);
-              sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
-            } else if (type === 'get-unassign-players-after-song-finished-setting-request') {
-              sender.send({
-                t: 'get-unassign-players-after-song-finished-setting-response',
-                state: UnassignOnSongFinishedSetting.get(),
-              });
-            } else if (type === 'set-unassign-players-after-song-finished-setting-request') {
-              UnassignOnSongFinishedSetting.set(event.state);
-              sender.send({
-                t: 'get-unassign-players-after-song-finished-setting-response',
-                state: UnassignOnSongFinishedSetting.get(),
-              });
-            } else if (type === 'remove-player') {
-              this.transport?.removePlayer(event.id);
-            } else if (type === 'my-list') {
-              events.remoteMicSongListUpdated.dispatch(sender.peer, event);
-            }
+          } else if (type === 'rpc') {
+            this.rpcServer.handleMessage(event, sender);
           }
         });
 
@@ -144,6 +97,24 @@ export class NetworkServer {
   public isStarted = () => this.started;
 
   public getLatency = () => this.transport?.getCurrentPing() ?? 0;
+
+  // Publish data to all clients subscribed to a named channel
+  public publish = (channel: string, data: unknown): void => {
+    this.rpcServer.publish(channel, data);
+  };
+
+  // Send a server-initiated call to every currently connected client
+  public callAllClients = (method: string, ...args: unknown[]): void => {
+    this.rpcServer.broadcastClientCall(RemoteMicManager.getRemoteMics(), method, ...args);
+  };
+
+  // Send a server-initiated call to a single connected client
+  public callClient = (micId: string, method: string, ...args: unknown[]): void => {
+    const mic = RemoteMicManager.getRemoteMicById(micId);
+    if (mic) {
+      this.rpcServer.callClient(mic.connection, method, ...args);
+    }
+  };
 
   public getGameCode = (): string => {
     const type = RemoteMicConnectionTypeSetting.get();
