@@ -25,5 +25,11 @@ export function dispatchClientCall(method: string, args: any[]): void {
     console.warn(`RPC: No client handler registered for '${method}'`);
     return;
   }
-  handlers.forEach((handler) => handler(...args));
+  handlers.forEach((handler) => {
+    try {
+      handler(...args);
+    } catch (error) {
+      console.error(`RPC: Handler for '${method}' threw an error:`, error);
+    }
+  });
 }

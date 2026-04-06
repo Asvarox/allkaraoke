@@ -14,6 +14,14 @@ export function useServerQuery<T>(
   const queryFnRef = useRef(queryFn);
   queryFnRef.current = queryFn;
 
+  const mountedRef = useRef(false);
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+    };
+  }, []);
+
   const connectionStatus = useEventListener(events.karaokeConnectionStatusChange, true);
   const isConnected = connectionStatus?.[0] === 'connected';
 
@@ -24,12 +32,14 @@ export function useServerQuery<T>(
     queryFnRef
       .current()
       .then((result) => {
-        setData(result);
+        if (mountedRef.current) setData(result);
       })
       .catch((err) => {
-        setError(err instanceof Error ? err : new Error(String(err)));
+        if (mountedRef.current) setError(err instanceof Error ? err : new Error(String(err)));
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (mountedRef.current) setLoading(false);
+      });
   };
 
   useEffect(() => {

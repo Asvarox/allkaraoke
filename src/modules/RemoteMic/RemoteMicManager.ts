@@ -15,9 +15,12 @@ class RemoteMicManager extends Listener<[string, RemoteMicPermission]> {
   private remoteMics: RemoteMic[] = [];
   private micAccessMap: Record<string, RemoteMicPermission> = storage.local?.getItem(RememberedAccessesKey) ?? {};
 
-  private subscriptions: Record<subscriptionChannels, string[]> = storage.session?.getItem(
-    RememberedSubscriptionsKey,
-  ) ?? { 'remote-mics': [] };
+  private subscriptions: Record<subscriptionChannels, string[]> = {
+    'remote-mics': [],
+    'keyboard-layout': [],
+    style: [],
+    ...storage.session?.getItem(RememberedSubscriptionsKey),
+  };
 
   public addRemoteMic = (id: string, name: string, connection: SenderInterface, silent: boolean, lag: number) => {
     this.remoteMics = this.remoteMics.filter((remoteMic) => remoteMic.id !== id);
@@ -62,7 +65,6 @@ class RemoteMicManager extends Listener<[string, RemoteMicPermission]> {
   public addSubscription = (id: string, channel: subscriptionChannels) => {
     this.subscriptions[channel] = [...new Set([...this.subscriptions[channel], id])];
     storage.session?.setItem(RememberedSubscriptionsKey, this.subscriptions);
-    events.remoteMicSubscribed.dispatch(id, channel);
   };
 
   public removeSubscription = (id: string, channel: subscriptionChannels) => {

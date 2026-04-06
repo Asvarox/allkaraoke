@@ -107,6 +107,3 @@ const sendPlayerStates = () => {
 events.playerRemoved.subscribe(sendPlayerStates);
 events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
-events.remoteMicSubscribed.subscribe((_id, channel) => {
-  if (channel === 'remote-mics') sendPlayerStates();
-});

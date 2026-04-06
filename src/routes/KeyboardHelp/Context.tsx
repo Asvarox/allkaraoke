@@ -1,7 +1,5 @@
 import { omit } from 'es-toolkit';
 import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
-import events from '~/modules/GameEvents/GameEvents';
-import { useEventEffect } from '~/modules/GameEvents/hooks';
 import ConnectionStatus from '~/modules/RemoteMic/ConnectionStatus';
 import RemoteMicServer from '~/modules/RemoteMic/Network/Server';
 import { KeyboardHelpContext } from '~/routes/KeyboardHelp/KeyboardHelpContext';
@@ -30,12 +28,8 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
 
   const [name, help] = Object.entries(keyboards).at(-1) ?? [];
 
-  useEventEffect(events.remoteMicConnected, ({ id }) => {
-    RemoteMicServer.callClient(id, 'setKeyboardLayout', help);
-  });
-
   useEffect(() => {
-    RemoteMicServer.callAllClients('setKeyboardLayout', help);
+    RemoteMicServer.publish('keyboard-layout', help);
   }, [name]);
 
   const { remote, ...rest } = help ?? {};

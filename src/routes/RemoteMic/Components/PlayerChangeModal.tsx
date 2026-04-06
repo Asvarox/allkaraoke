@@ -2,8 +2,6 @@ import React from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
 import styles from '~/modules/GameEngine/Drawing/styles';
-import { default as gameEvents } from '~/modules/GameEvents/GameEvents';
-import { useEventListener } from '~/modules/GameEvents/hooks';
 import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 
@@ -24,7 +22,7 @@ const colorNames: Record<backgroundTheme, string[]> = {
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header, showRemoveButton = false }: Props) {
   const list = useSubscription('remote-mics') ?? [];
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
+  const style = useSubscription('style') ?? 'regular';
   const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
     void serverRpc.players.requestMicSelect(id, player);
     onModalClose();

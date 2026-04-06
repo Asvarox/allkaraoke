@@ -8,10 +8,9 @@ import { Button } from '~/modules/Elements/AKUI/Button';
 import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { Flag } from '~/modules/Elements/Flag';
 import { Input } from '~/modules/Elements/Input';
-import events from '~/modules/GameEvents/GameEvents';
-import { useEventListener } from '~/modules/GameEvents/hooks';
 import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 import SongDao from '~/modules/Songs/SongsService';
 import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
@@ -42,7 +41,7 @@ const getMainArtistName = (artist: string) => artist.split(' feat')[0];
 const isArtistPresent = (a: string, b: string[]) => b.some((artist) => artist.toLowerCase() === a.toLowerCase());
 
 function RemoteSongList({ connectionStatus }: Props) {
-  const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
+  const keyboard = useSubscription('keyboard-layout');
   const permissions = usePermissions();
   const originalSongList = useSongIndex();
   const [tab, setTab] = useSelectedList('list');
@@ -52,11 +51,18 @@ function RemoteSongList({ connectionStatus }: Props) {
 
   type SongListOverrides = Awaited<ReturnType<typeof serverRpc.songs.getSongList>>;
   const [overrides, setOverrides] = useState<SongListOverrides | undefined>();
+  const [fetchError, setFetchError] = useState(false);
   useEffect(() => {
-    if (connectionStatus === 'connected' && overrides === undefined) {
-      serverRpc.songs.getSongList().then(setOverrides).catch(console.warn);
+    if (connectionStatus === 'connected' && overrides === undefined && !fetchError) {
+      serverRpc.songs
+        .getSongList()
+        .then(setOverrides)
+        .catch((err) => {
+          console.warn(err);
+          setFetchError(true);
+        });
     }
-  }, [overrides, connectionStatus]);
+  }, [overrides, connectionStatus, fetchError]);
 
   const songList = useMemo(
     () =>

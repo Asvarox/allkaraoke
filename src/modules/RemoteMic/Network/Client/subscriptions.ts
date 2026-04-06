@@ -1,6 +1,11 @@
+import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
+import { HelpEntry } from '~/routes/KeyboardHelp/Context';
+
 /** Typed subscription channels and the data type pushed for each channel. */
 export interface SubscriptionChannels {
   'remote-mics': Array<{ id: string; name: string; number: 0 | 1 | 2 | 3 | null }>;
+  'keyboard-layout': HelpEntry | undefined;
+  style: backgroundTheme;
 }
 
 export type ChannelName = keyof SubscriptionChannels;
@@ -47,9 +52,8 @@ export class ClientSubscriptionManager {
     }
     this.callbacks.get(channel)!.add(callback as ChannelCallback<any>);
 
-    const latest = this.latestData[channel];
-    if (latest !== undefined) {
-      callback(latest as ChannelData<C>);
+    if (channel in this.latestData) {
+      callback(this.latestData[channel] as ChannelData<C>);
     }
 
     return () => this.unsubscribeInternal(channel, callback);

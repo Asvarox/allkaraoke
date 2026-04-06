@@ -1,5 +1,3 @@
-import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
-import { HelpEntry } from '~/routes/KeyboardHelp/Context';
 import { RemoteMicPermission } from '~/routes/Settings/SettingsState';
 
 // Defines all methods the server can call on the client via rpc-call messages.
@@ -9,8 +7,6 @@ export interface ClientContract {
   stopMonitor: () => void;
   setPlayerNumber: (playerNumber: 0 | 1 | 2 | 3 | null) => void;
   setPermissions: (level: RemoteMicPermission) => void;
-  setKeyboardLayout: (help: HelpEntry | undefined) => void;
-  setStyle: (style: backgroundTheme) => void;
   reload: () => void;
   requestReadiness: () => void;
   // Sent by the host when the player settings screen is shown, so unassigned phones can auto-open the player picker

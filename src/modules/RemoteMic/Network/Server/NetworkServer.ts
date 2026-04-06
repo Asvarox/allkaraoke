@@ -29,6 +29,10 @@ export class NetworkServer {
     (peerId) => this.transport?.removePlayer(peerId),
   );
 
+  // Stores the most-recently published value per channel so newly subscribing clients
+  // can receive the current state immediately without waiting for the next change.
+  private channelLastValues: Record<string, unknown> = {};
+
   public constructor() {
     if (!this.gameCode) {
       this.gameCode = '';
@@ -71,6 +75,15 @@ export class NetworkServer {
             RemoteMicManager.removeRemoteMic(sender.peer);
           } else if (type === 'rpc-sub') {
             RemoteMicManager.addSubscription(sender.peer, event.channel as ChannelName);
+            // If there is a cached value for this channel, push it immediately to the new subscriber
+            // so they don't have to wait for the next change to receive the current state.
+            if (event.channel in this.channelLastValues) {
+              sender.send({
+                t: 'rpc-pub',
+                channel: event.channel,
+                data: this.channelLastValues[event.channel],
+              } as NetworkMessages);
+            }
           } else if (type === 'rpc-unsub') {
             RemoteMicManager.removeSubscription(sender.peer, event.channel as ChannelName);
           } else if (type === 'ping') {
@@ -100,6 +113,7 @@ export class NetworkServer {
 
   // Publish data to all clients subscribed to a named channel
   public publish = (channel: string, data: unknown): void => {
+    this.channelLastValues[channel] = data;
     this.rpcServer.publish(channel, data);
   };
 

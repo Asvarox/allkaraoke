@@ -48,8 +48,26 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.sendFrequencies(volume);
   }, 1_000 / 60);
 
-  // RPC proxy — call server methods as if they were local async functions
-  public readonly rpc: ServerRpc = createRpcProxy<typeof serverHandlers>(() => this.transport);
+  // RPC proxy — call server methods as if they were local async functions.
+  // The onDisconnect callback rejects any in-flight request immediately when the connection drops,
+  // rather than waiting for the 10-second timeout.
+  public readonly rpc: ServerRpc = createRpcProxy<typeof serverHandlers>(
+    () => this.transport,
+    (callback) => {
+      const handler = (status: string) => {
+        if (status === 'disconnected' || status === 'reconnecting' || status === 'error') {
+          callback();
+        }
+      };
+      events.karaokeConnectionStatusChange.subscribe(
+        handler as Parameters<typeof events.karaokeConnectionStatusChange.subscribe>[0],
+      );
+      return () =>
+        events.karaokeConnectionStatusChange.unsubscribe(
+          handler as Parameters<typeof events.karaokeConnectionStatusChange.subscribe>[0],
+        );
+    },
+  );
 
   public getClientId = () => this.clientId;
   private setClientId = (id: string) => {
@@ -105,7 +123,8 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         }
 
         events.remoteMicPlayerSet.dispatch(null);
-        events.remoteKeyboardLayout.dispatch(undefined);
+        // Clear the cached keyboard layout so the subscription-based consumers show nothing while disconnected
+        subscriptionManager.handlePublish('keyboard-layout', undefined);
 
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.stopMonitoring();
@@ -191,12 +210,6 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     });
     registerClientHandler('setPermissions', (level) => {
       events.remoteMicPermissionsSet.dispatch(level);
-    });
-    registerClientHandler('setKeyboardLayout', (help) => {
-      events.remoteKeyboardLayout.dispatch(help);
-    });
-    registerClientHandler('setStyle', (style) => {
-      events.remoteStyleChanged.dispatch(style);
     });
     registerClientHandler('requestReadiness', () => {
       events.remoteReadinessRequested.dispatch();
