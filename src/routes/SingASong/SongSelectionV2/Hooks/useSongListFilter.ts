@@ -4,7 +4,7 @@ import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
 import clearString, { removeAccents } from '~/modules/utils/clearString';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/Settings/SettingsState';
-import { usePlaylists } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
+import { LANGUAGE_PLAYLIST_PREFIX, usePlaylists } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
 
 type FilterFunc = (
   songList: SongPreview[],
@@ -131,11 +131,17 @@ export const useSongListFilter = (
     [list, excludedLanguages],
   );
 
-  const playlists = usePlaylists(prefilteredList, popular, isLoading);
-
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
     new URLSearchParams(global.location?.search).get('playlist') ?? null,
   );
+
+  // Derive the language selected via the "more-languages" picker from the URL-persisted playlist name.
+  // e.g. 'language-Polish' → 'Polish', anything else → null
+  const extraLanguage = selectedPlaylist?.startsWith(LANGUAGE_PLAYLIST_PREFIX)
+    ? selectedPlaylist.slice(LANGUAGE_PLAYLIST_PREFIX.length)
+    : null;
+
+  const playlists = usePlaylists(prefilteredList, popular, isLoading, extraLanguage);
 
   const setPlaylist = (name: string) => {
     /// push query param to url containing playlist name

@@ -158,6 +158,15 @@ export class SongListPagePO {
     await this.page.keyboard.press('Backspace');
   }
 
+  public getLanguagePickerEntry(language: string) {
+    return this.page.getByTestId(`language-picker-${language}`);
+  }
+
+  public async selectLanguageFromPicker(language: string) {
+    await expect(this.getLanguagePickerEntry(language)).toBeVisible();
+    await this.getLanguagePickerEntry(language).click();
+  }
+
   public get selectionPlaylistTip() {
     return this.page.getByRole('tooltip');
   }
