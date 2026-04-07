@@ -15,10 +15,14 @@ import { eurovisionPlaylist } from '~/routes/SingASong/SongSelectionV2/Hooks/use
 import { SongGroup } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongList';
 import { AppliedFilters } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongListFilter';
 
+export const LANGUAGE_PLAYLIST_PREFIX = 'language-';
+
 export interface PlaylistEntry {
   name: string;
   display?: ReactNode;
   hideNew?: boolean;
+  /** True when this entry opens the language picker sheet rather than directly activating a playlist. */
+  isLanguagePicker?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
   groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong'>;
@@ -27,7 +31,12 @@ export interface PlaylistEntry {
   footerComponent?: ReactNode;
 }
 
-export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
+export const usePlaylists = (
+  songs: SongPreview[],
+  recommended: string[],
+  isLoading: boolean,
+  extraLanguage: string | null,
+): PlaylistEntry[] => {
   const { isSetlistInPlace } = useSetlist();
   const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Eurovision);
   const songLanguages = useLanguageList(songs);
@@ -118,6 +127,23 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             ),
           }
         : null,
+      // If the user has previously picked a language via the picker, show that language as the active entry.
+      // Otherwise, show the "More languages" placeholder that will open the picker.
+      extraLanguage !== null
+        ? ({
+            name: `${LANGUAGE_PLAYLIST_PREFIX}${extraLanguage}`,
+            display: extraLanguage,
+            isLanguagePicker: true,
+            filters: { language: extraLanguage, skipExcludedLanguages: true },
+          } as PlaylistEntry)
+        : ({
+            name: 'more-languages',
+            display: '🌐 More languages',
+            isLanguagePicker: true,
+            // Empty filters are a safe fallback — the playlist name 'more-languages' is never persisted
+            // because clicking it opens the language picker instead of activating it directly.
+            filters: {},
+          } as PlaylistEntry),
     ];
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
@@ -129,5 +155,6 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     connected.length,
     isSetlistInPlace,
     isSpecialThemeEnabled,
+    extraLanguage,
   ]);
 };

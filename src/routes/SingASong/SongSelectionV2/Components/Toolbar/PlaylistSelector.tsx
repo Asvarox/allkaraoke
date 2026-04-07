@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
 import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
+import LanguagePickerBottomSheet from '~/routes/SingASong/SongSelectionV2/Components/LanguagePickerBottomSheet';
 import PlaylistBottomSheet from '~/routes/SingASong/SongSelectionV2/Components/PlaylistBottomSheet';
-import { PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
+import { LANGUAGE_PLAYLIST_PREFIX, PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
 
 interface PlaylistSelectorProps {
   playlists: PlaylistEntry[];
@@ -25,6 +26,28 @@ export default function PlaylistSelector({
   onPlaylistSelected,
 }: PlaylistSelectorProps) {
   const [playlistSheetOpen, setPlaylistSheetOpen] = useState(false);
+  const [languagePickerOpen, setLanguagePickerOpen] = useState(false);
+
+  // Derive the currently selected language from the active playlist name (e.g. 'language-Polish' → 'Polish')
+  const selectedLanguage = selectedPlaylist?.startsWith(LANGUAGE_PLAYLIST_PREFIX)
+    ? selectedPlaylist.slice(LANGUAGE_PLAYLIST_PREFIX.length)
+    : null;
+
+  const handlePlaylistSelect = (name: string) => {
+    const playlist = playlists.find((p) => p.name === name);
+    if (playlist?.isLanguagePicker) {
+      // Open the language picker sheet instead of activating the playlist directly
+      setLanguagePickerOpen(true);
+      return;
+    }
+    setSelectedPlaylist(name);
+    onPlaylistSelected?.();
+  };
+
+  const handleLanguageSelected = (language: string) => {
+    setSelectedPlaylist(`${LANGUAGE_PLAYLIST_PREFIX}${language}`);
+    onPlaylistSelected?.();
+  };
 
   if (mobile) {
     return (
@@ -43,40 +66,52 @@ export default function PlaylistSelector({
           playlists={playlists}
           selectedPlaylist={selectedPlaylist}
           onSelect={(name) => {
-            setSelectedPlaylist(name);
+            handlePlaylistSelect(name);
             setPlaylistSheetOpen(false);
-            onPlaylistSelected?.();
           }}
           open={playlistSheetOpen}
           onClose={() => setPlaylistSheetOpen(false)}
+        />
+        <LanguagePickerBottomSheet
+          open={languagePickerOpen}
+          onClose={() => setLanguagePickerOpen(false)}
+          onSelect={handleLanguageSelected}
+          selectedLanguage={selectedLanguage}
         />
       </>
     );
   }
 
   return (
-    <Selector value={selectedPlaylist ?? ''} onChange={setSelectedPlaylist} className="ml-auto flex-1">
-      {playlists.map((playlist) => {
-        const playlistNavProps = keyboardNavRegister?.(
-          `playlist-${playlist.name}`,
-          () => {
-            setSelectedPlaylist(playlist.name);
-            onPlaylistSelected?.();
-          },
-          String(playlist.name),
-        );
-        return (
-          <Selector.Item
-            key={playlist.name}
-            value={playlist.name}
-            size="small"
-            className="shrink-0 animate-none px-3"
-            data-test={`playlist-${playlist.name}`}
-            {...playlistNavProps}>
-            {playlist.display ?? playlist.name}
-          </Selector.Item>
-        );
-      })}
-    </Selector>
+    <>
+      <Selector value={selectedPlaylist ?? ''} onChange={handlePlaylistSelect} className="ml-auto flex-1">
+        {playlists.map((playlist) => {
+          const playlistNavProps = keyboardNavRegister?.(
+            `playlist-${playlist.name}`,
+            () => {
+              handlePlaylistSelect(playlist.name);
+            },
+            String(playlist.name),
+          );
+          return (
+            <Selector.Item
+              key={playlist.name}
+              value={playlist.name}
+              size="small"
+              className="shrink-0 animate-none px-3"
+              data-test={`playlist-${playlist.name}`}
+              {...playlistNavProps}>
+              {playlist.display ?? playlist.name}
+            </Selector.Item>
+          );
+        })}
+      </Selector>
+      <LanguagePickerBottomSheet
+        open={languagePickerOpen}
+        onClose={() => setLanguagePickerOpen(false)}
+        onSelect={handleLanguageSelected}
+        selectedLanguage={selectedLanguage}
+      />
+    </>
   );
 }
