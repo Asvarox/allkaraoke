@@ -24,8 +24,8 @@ function RemoteInputLag() {
         disabled={queryLoading || mutating}
         unit="ms"
         data-test="game-input-lag"
+        info="If the sound is not synchronised with the lyrics, use this to compensate it."
       />
-      <Menu.HelpText>If the sound is not synchronised with the lyrics, use this to compensate it.</Menu.HelpText>
     </>
   );
 }
