@@ -73,6 +73,33 @@ export class SongPreviewPagePO {
     await expect(this.gameModeSettingsElement).toHaveAttribute('data-test-value', `${modeName}`);
   }
 
+  public async setGameModeReliably(targetMode: 'Pass The Mic' | 'Duel' | 'Cooperation') {
+    await this.navigateToGameModeSettingsWithKeyboard();
+    // Ensure button is properly focused before interacting
+    await expect(this.gameModeSettingsElement).toHaveAttribute('data-e2e-focused', 'true');
+
+    const maxClicks = 5;
+    let clickCount = 0;
+
+    // Use direct clicking instead of keyboard to avoid timing issues
+    // Click until we reach the target mode
+    let currentMode = await this.gameModeSettingsElement.getAttribute('data-test-value');
+    while (currentMode !== targetMode && clickCount < maxClicks) {
+      await this.gameModeSettingsElement.click();
+      await expect(this.gameModeSettingsElement).not.toHaveAttribute('data-test-value', currentMode ?? '');
+      currentMode = await this.gameModeSettingsElement.getAttribute('data-test-value');
+      clickCount++;
+    }
+
+    if (clickCount >= maxClicks && currentMode !== targetMode) {
+      throw new Error(
+        `Failed to set game mode to "${targetMode}" after ${maxClicks} clicks. Current mode: "${currentMode}"`,
+      );
+    }
+
+    await this.expectGameModeToBe(targetMode);
+  }
+
   public get difficultySettingsElement() {
     return this.page.getByTestId('difficulty-setting');
   }
