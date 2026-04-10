@@ -102,6 +102,7 @@ export class SongListPagePO {
 
   public async goToPlaylist(name: string) {
     await this.getPlaylistElement(name).click();
+    await this.page.waitForTimeout(200); // Wait for the playlist to load and the first song to be rendered
   }
 
   public get searchButton() {
