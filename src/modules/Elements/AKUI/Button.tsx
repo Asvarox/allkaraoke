@@ -1,11 +1,13 @@
 import { ComponentProps, ComponentType, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
+import useResponsiveValue from '~/modules/Elements/AKUI/hooks/useResponsiveValue';
 import Box from '~/modules/Elements/AKUI/Primitives/Box';
+import { ResponsiveValue } from '~/modules/Elements/AKUI/types';
 import isE2E from '~/modules/utils/isE2E';
 import { twx } from '~/utils/twx';
 
 const sizeToClass = {
-  mini: 'h-10 text-sm',
+  mini: 'h-10 text-md px-2.5',
   small: 'h-14 text-lg mobile:h-12 mobile:text-md landscap:text-md',
   regular: 'text-lg h-20 mobile:text-md mobile:h-16 landscap:text-md',
   large: 'h-20 text-xl',
@@ -26,13 +28,15 @@ export const ButtonBase = twx(Box)((props) => {
   ];
 });
 
+export type ButtonSize = 'large' | 'regular' | 'small' | 'mini';
+
 interface Props extends PropsWithChildren {
   title?: ReactNode;
   inactive?: boolean;
   readOnly?: boolean;
   focused?: boolean;
   subtleFocused?: boolean;
-  size?: 'large' | 'regular' | 'small' | 'mini';
+  size?: ResponsiveValue<ButtonSize>;
 }
 
 const additionalProps = ({ inactive, readOnly, focused, subtleFocused, ...props }: Props) => ({
@@ -48,21 +52,27 @@ export const Button = ({
   size = 'regular',
   className,
   ...props
-}: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => (
-  <ButtonBase data-size={size} className={className} {...additionalProps(props)} as="button">
-    {children}
-  </ButtonBase>
-);
+}: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => {
+  const resolvedSize = useResponsiveValue(size);
+  return (
+    <ButtonBase data-size={resolvedSize} className={className} {...additionalProps(props)} as="button">
+      {children}
+    </ButtonBase>
+  );
+};
 export const ButtonLink = ({
   children,
   size = 'regular',
   className,
   ...props
-}: Props & Omit<HTMLProps<HTMLAnchorElement>, 'size'>) => (
-  <ButtonBase data-size={size} className={className} {...additionalProps(props)} as="a">
-    {children}
-  </ButtonBase>
-);
+}: Props & Omit<HTMLProps<HTMLAnchorElement>, 'size'>) => {
+  const resolvedSize = useResponsiveValue(size);
+  return (
+    <ButtonBase data-size={resolvedSize} className={className} {...additionalProps(props)} as="a">
+      {children}
+    </ButtonBase>
+  );
+};
 
 Button.Icon = ({
   Icon,

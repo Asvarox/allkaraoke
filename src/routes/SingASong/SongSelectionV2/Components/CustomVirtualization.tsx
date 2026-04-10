@@ -186,7 +186,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
   const pt = groupToRender !== -1 ? paddingTop - props.groupHeaderHeight : paddingTop;
 
   return (
-    <div ref={viewportElementRef} className="h-full w-full overflow-auto">
+    <div ref={viewportElementRef} className="h-full w-full overflow-auto overflow-x-hidden">
       <div
         className="relative box-border"
         style={{

@@ -45,7 +45,7 @@ export default function Toolbar({
   const [searchExpanded, setSearchExpanded] = useState(false);
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="mr-20 flex items-center gap-2 min-[1600px]:mr-0 md:max-[1600px]:mr-30">
       <SearchBar
         filters={filters}
         setFilters={setFilters}
@@ -60,7 +60,7 @@ export default function Toolbar({
       {!searchExpanded && (
         <>
           <Button
-            size="small"
+            size={{ xs: 'mini', sm: 'small' }}
             type="button"
             aria-label="Random song"
             data-test="random-song-button"
@@ -68,7 +68,7 @@ export default function Toolbar({
             {...keyboardNavRegister?.('random-song-button', onRandom, 'Random song')}
             onClick={onRandom}>
             <Casino className="h-5! w-5!" />
-            <span className="mobile:hidden">Random</span>
+            <span className="hidden lg:block">Random</span>
           </Button>
 
           <div className="h-6 w-px shrink-0 bg-white/20" aria-hidden="true" />

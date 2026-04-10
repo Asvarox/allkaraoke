@@ -19,6 +19,7 @@ import Toolbar from '~/routes/SingASong/SongSelectionV2/Components/Toolbar';
 import { VirtualizedList, VirtualizedListMethods } from '~/routes/SingASong/SongSelectionV2/Components/VirtualizedList';
 import useSongSelection from '~/routes/SingASong/SongSelectionV2/Hooks/useSongSelection';
 import { getSongIdWithNew } from '~/routes/SingASong/SongSelectionV2/utils/getSongIdWithNew';
+import { cn } from '~/utils/cn';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -65,16 +66,13 @@ const SongListEntry = memo(({ focused: isFocused, songId, groupLetter, handleCli
   return (
     <SongCard
       {...props}
+      focused={isFocused}
       onClick={handleClick ? onClickCallback : undefined}
-      className={[
+      className={cn(
         'flex-none cursor-pointer transition-all duration-300',
-        isFocused
-          ? 'mobile:scale-100 z-2 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)]'
-          : 'border-white/10 hover:border-white/20',
-        props.className ?? '',
-      ]
-        .join(' ')
-        .trim()}
+        isFocused ? 'z-2' : 'hover:border-white/20',
+        props.className,
+      )}
       style={{
         flexBasis: 'var(--song-entry-width)',
         width: 'var(--song-entry-width)',
@@ -121,7 +119,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const { width, handleResize } = useViewportSize();
 
   // Breakpoints: <640px → 1 card, 640–1100px → 2 cards, ≥1100px → 3 cards (max 3 per row)
-  const songsPerRow = width < 640 ? 1 : width < 1100 ? 2 : 3;
+  const songsPerRow = width < 640 ? 1 : width < 720 ? 2 : 3;
   // Gap and padding scale linearly with viewport width (capped at 1440px content width)
   const effectiveWidth = Math.min(width, 1440);
   const LIST_GAP_PX = Math.max(8, Math.round(effectiveWidth * 0.02));
@@ -203,7 +201,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     };
   }, [groupedSongList]);
 
-  const [{ previewTop, previewLeft }, setPositions] = useState(() => ({
+  const [{ previewTop, previewLeft }, setPreviewPosition] = useState(() => ({
     previewTop: 0,
     previewLeft: 0,
   }));
@@ -211,7 +209,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const song = document.querySelector<HTMLDivElement>(`[data-song-id="${focusedSong}"]`);
     if (!isLoading && song) {
       const position = list.current?.getSongPosition(focusedSong);
-      setPositions({
+      setPreviewPosition({
         previewTop: position?.y ?? 0,
         previewLeft: song.offsetLeft,
       });
@@ -271,7 +269,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             '--song-list-padding-right': `${LIST_PADDING_PX}px`,
           } as React.CSSProperties
         }>
-        <div className="fixed top-0 right-0 left-0 z-100 flex flex-col border-b border-white/10 bg-slate-950/50 pt-2 pb-2 backdrop-blur-md max-[1680px]:pt-10">
+        <div className="fixed top-0 right-0 left-0 z-100 flex flex-col border-b border-white/10 bg-slate-950/50 pt-2 pb-2 backdrop-blur-md">
           <div className="mx-auto flex w-full max-w-360 flex-col gap-2 pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
             <Toolbar
               filters={filters}

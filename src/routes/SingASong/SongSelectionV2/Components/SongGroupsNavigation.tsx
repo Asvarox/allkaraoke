@@ -55,7 +55,7 @@ function GroupNavItem({
       // Override register-provided values that should not change
       data-active={active}
       data-test={dataTest}
-      className="text-md shrink-0 animate-none whitespace-nowrap">
+      className="text-md min-w-10 shrink-0 animate-none whitespace-nowrap">
       {group.displayShort ?? group.name}
     </Button>
   );
