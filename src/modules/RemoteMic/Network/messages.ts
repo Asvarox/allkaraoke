@@ -33,6 +33,11 @@ export interface NetworkPongMessageEvent {
   t: 'pong';
 }
 
+export interface NetworkRemovePlayerMessage {
+  t: 'remove-player';
+  id: string;
+}
+
 export type NetworkMessages =
   | NetworkRegisterMessage
   | NetworkUnregisterMessage
@@ -40,4 +45,5 @@ export type NetworkMessages =
   | NetworkNewFrequencyMessage
   | NetworkPingMessageEvent
   | NetworkPongMessageEvent
+  | NetworkRemovePlayerMessage
   | RpcMessages;

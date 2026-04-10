@@ -52,6 +52,12 @@ function RemoteSongList({ connectionStatus }: Props) {
   type SongListOverrides = Awaited<ReturnType<typeof serverRpc.songs.getSongList>>;
   const [overrides, setOverrides] = useState<SongListOverrides | undefined>();
   const [fetchError, setFetchError] = useState(false);
+  // Reset the error flag when the connection is re-established so fetch is retried
+  useEffect(() => {
+    if (connectionStatus === 'connected') {
+      setFetchError(false);
+    }
+  }, [connectionStatus]);
   useEffect(() => {
     if (connectionStatus === 'connected' && overrides === undefined && !fetchError) {
       serverRpc.songs

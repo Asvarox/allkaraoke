@@ -8,7 +8,7 @@ const useSendInitialSongList = (send: boolean) => {
     if (send) {
       void serverRpc.songs.sendMyList({ added: savedSongList });
     }
-  }, [send]);
+  }, [send, savedSongList]);
 };
 
 export default useSendInitialSongList;

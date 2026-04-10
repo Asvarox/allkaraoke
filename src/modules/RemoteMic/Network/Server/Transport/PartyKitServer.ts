@@ -101,7 +101,7 @@ export class PartyKitServerTransport extends Listener<[NetworkMessages, SenderIn
 
   public removePlayer(playerId: string) {
     // This sends a transport-level control message to PartyKit to disconnect the peer
-    this.sendEvent({ t: 'remove-player', id: playerId } as unknown as NetworkMessages);
+    this.sendEvent({ t: 'remove-player', id: playerId });
   }
 }
 

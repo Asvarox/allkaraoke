@@ -44,7 +44,7 @@ class RemoteMicInput {
   requestReadiness = () => {
     console.log('requestReadiness');
     if (!this.requestReadinessPromise) {
-      this.requestReadinessPromise = new Promise<boolean>((resolve, reject) => {
+      this.requestReadinessPromise = new Promise<boolean>((resolve) => {
         const deviceId = this.connection.peer;
 
         const cleanup = () => {
@@ -64,13 +64,13 @@ class RemoteMicInput {
         const handleDisconnect = ({ id }: { id: string }) => {
           if (id === deviceId) {
             cleanup();
-            reject(new Error(`Remote mic ${deviceId} disconnected before confirming readiness`));
+            resolve(false);
           }
         };
 
         const timeoutId = setTimeout(() => {
           cleanup();
-          reject(new Error(`Readiness confirmation timed out for ${deviceId}`));
+          resolve(false);
         }, 30_000);
 
         events.readinessConfirmed.subscribe(handleReadinessConfirmed);

@@ -107,3 +107,8 @@ const sendPlayerStates = () => {
 events.playerRemoved.subscribe(sendPlayerStates);
 events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
+events.remoteMicConnected.subscribe(sendPlayerStates);
+events.remoteMicDisconnected.subscribe(sendPlayerStates);
+// Publish the current state immediately so new channel subscribers receive
+// the latest list without waiting for the next player/input event.
+sendPlayerStates();

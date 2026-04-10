@@ -1,13 +1,14 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, ReactNode } from 'react';
 import { twc } from 'react-twc';
 import { InputWrapper } from '~/modules/Elements/AKUI/InputWrapper';
 
-interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'>, ComponentProps<typeof InputWrapper> {
+interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
   unit?: string;
   value: number;
   onChange: (newValue: number) => void;
   step?: number;
   disabled?: boolean;
+  info?: ReactNode;
 }
 
 function NumericInput({

@@ -104,8 +104,8 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
   };
 
   public removePlayer(playerId: string) {
-    // This sends a transport-level control message to the server to disconnect the peer
-    this.sendEvent({ t: 'remove-player', id: playerId } as unknown as NetworkMessages);
+    // This sends a transport-level control message to the relay server to disconnect the peer
+    this.sendEvent({ t: 'remove-player', id: playerId });
   }
 }
 

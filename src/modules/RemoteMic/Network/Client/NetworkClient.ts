@@ -28,6 +28,7 @@ export type ServerRpc = ExtractContract<typeof serverHandlers>;
 export class NetworkClient extends Listener<[NetworkMessages]> {
   private transport: ClientTransport | undefined;
   private clientId = storage.getItem(MIC_ID_KEY);
+
   private roomId: string | null = null;
 
   private reconnecting = false;
@@ -47,6 +48,45 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.frequencies.push(freq);
     this.sendFrequencies(volume);
   }, 1_000 / 60);
+
+  constructor() {
+    super();
+
+    // Register imperative client handlers once so they are not duplicated on reconnect.
+    // These use a Set internally, so registering the same function reference is idempotent,
+    // but since arrow functions inside connectToServer would create new references each time,
+    // we register them here with stable references.
+    registerClientHandler('startMonitor', () => {
+      SimplifiedMic.removeListener(this.onFrequencyUpdate);
+      SimplifiedMic.addListener(this.onFrequencyUpdate);
+      SimplifiedMic.startMonitoring();
+      events.remoteMicMonitoringStarted.dispatch();
+    });
+    registerClientHandler('stopMonitor', () => {
+      SimplifiedMic.removeListener(this.onFrequencyUpdate);
+      SimplifiedMic.stopMonitoring();
+      events.remoteMicMonitoringStopped.dispatch();
+    });
+    registerClientHandler('reload', () => {
+      global.removeEventListener('beforeunload', this.disconnect);
+      this.transport?.sendEvent({ t: 'unregister' } as NetworkMessages);
+      storage.session.setItem('reload-mic-request', '1');
+      document.getElementById('phone-ui-container')?.remove();
+      global.location?.reload();
+    });
+
+    // Bridge handlers: dispatch old GameEvents so legacy consumers keep working.
+    // These will be removed once all consumers are migrated to useClientHandler (Phase 6).
+    registerClientHandler('setPlayerNumber', (playerNumber) => {
+      events.remoteMicPlayerSet.dispatch(playerNumber);
+    });
+    registerClientHandler('setPermissions', (level) => {
+      events.remoteMicPermissionsSet.dispatch(level);
+    });
+    registerClientHandler('requestReadiness', () => {
+      events.remoteReadinessRequested.dispatch();
+    });
+  }
 
   // RPC proxy — call server methods as if they were local async functions.
   // The onDisconnect callback rejects any in-flight request immediately when the connection drops,
@@ -182,38 +222,6 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel } as NetworkMessages),
       (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel } as NetworkMessages),
     );
-
-    // Register imperative client handlers (server-initiated calls that don't need React lifecycle)
-    registerClientHandler('startMonitor', () => {
-      SimplifiedMic.removeListener(this.onFrequencyUpdate);
-      SimplifiedMic.addListener(this.onFrequencyUpdate);
-      SimplifiedMic.startMonitoring();
-      events.remoteMicMonitoringStarted.dispatch();
-    });
-    registerClientHandler('stopMonitor', () => {
-      SimplifiedMic.removeListener(this.onFrequencyUpdate);
-      SimplifiedMic.stopMonitoring();
-      events.remoteMicMonitoringStopped.dispatch();
-    });
-    registerClientHandler('reload', () => {
-      global.removeEventListener('beforeunload', this.disconnect);
-      this.transport?.sendEvent({ t: 'unregister' } as NetworkMessages);
-      storage.session.setItem('reload-mic-request', '1');
-      document.getElementById('phone-ui-container')?.remove();
-      global.location?.reload();
-    });
-
-    // Bridge handlers: dispatch old GameEvents so legacy consumers keep working.
-    // These will be removed once all consumers are migrated to useClientHandler (Phase 6).
-    registerClientHandler('setPlayerNumber', (playerNumber) => {
-      events.remoteMicPlayerSet.dispatch(playerNumber);
-    });
-    registerClientHandler('setPermissions', (level) => {
-      events.remoteMicPermissionsSet.dispatch(level);
-    });
-    registerClientHandler('requestReadiness', () => {
-      events.remoteReadinessRequested.dispatch();
-    });
 
     this.transport!.addListener((data) => {
       const type = data.t;
