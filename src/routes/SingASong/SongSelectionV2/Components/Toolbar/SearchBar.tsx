@@ -119,6 +119,7 @@ export default function SearchBar({
             transition={{ duration: 0.15 }}>
             <Input
               ref={searchInput}
+              size={{ xs: 'mini', sm: 'small' }}
               focused={false}
               label={<Search className="h-5! w-5!" />}
               value={filters.search ?? ''}
@@ -154,7 +155,7 @@ export default function SearchBar({
             exit={{ opacity: 0, x: 8 }}
             transition={{ duration: 0.15 }}>
             <Button
-              size="small"
+              size={{ xs: 'mini', sm: 'small' }}
               type="button"
               aria-label="Search songs"
               className="shrink-0 animate-none"

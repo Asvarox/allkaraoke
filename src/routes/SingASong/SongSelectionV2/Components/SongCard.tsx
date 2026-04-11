@@ -108,14 +108,27 @@ interface SongCardProps extends ComponentProps<'div'> {
   song: SongPreview;
   isPopular: boolean;
   forceFlag?: boolean;
+  /** When true, applies the focused scale/border/shadow style (scale-100 md:scale-[1.075] + amber border + glow) */
+  focused?: boolean;
 }
 
-function SongCardRoot({ song, isPopular, forceFlag = false, children, className, ...props }: SongCardProps) {
+function SongCardRoot({
+  song,
+  isPopular,
+  forceFlag = false,
+  focused = false,
+  children,
+  className,
+  ...props
+}: SongCardProps) {
   return (
     <SongCardContext.Provider value={{ song, isPopular, forceFlag }}>
       <div
         className={cn(
-          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl border bg-slate-900/80 p-1.5 transition-all duration-300',
+          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl bg-slate-900/80 p-1.5 transition-all duration-300',
+          focused
+            ? 'scale-100 border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] md:scale-[1.075]'
+            : 'border border-white/10',
           className,
         )}
         {...props}>

@@ -53,7 +53,7 @@ export default function PlaylistSelector({
     return (
       <>
         <Button
-          size="small"
+          size={{ xs: 'mini', sm: 'small' }}
           type="button"
           className="ml-auto flex-1 animate-none justify-between"
           data-test="playlist-picker-trigger"

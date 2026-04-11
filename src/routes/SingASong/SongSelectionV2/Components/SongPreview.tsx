@@ -113,8 +113,35 @@ export default function SongPreviewComponent({
     [start],
   );
 
+  const animationDurationSec =
+    60 /
+    (songPreview.realBpm && songPreview.realBpm > 40
+      ? songPreview.realBpm
+      : songPreview.bpm > 300
+        ? songPreview.bpm / 4
+        : songPreview.bpm / 2);
+
   return (
     <>
+      {/* BPM rhythm shadow — sibling to SongCard so its scale animation isn't clipped by overflow-hidden */}
+      {!expanded && showVideo && (
+        <div
+          className="pointer-events-none absolute z-2 hidden rounded-xl bg-white opacity-0 blur-xs md:block"
+          style={{
+            width,
+            height,
+            top,
+            left,
+
+            animationName: 'bpm',
+            animationDelay: `${Math.ceil(0.3 / animationDurationSec) * animationDurationSec}s`, // sync to beat, starting on an even iteration
+            animationDuration: `${animationDurationSec}s`,
+            animationIterationCount: 'infinite',
+            animationTimingFunction: 'ease-out',
+          }}
+        />
+      )}
+
       {/* Backdrop — only shown when expanded */}
       {expanded && (
         <div
@@ -131,11 +158,12 @@ export default function SongPreviewComponent({
         data-expanded={expanded || undefined}
         data-song={songPreview.id}
         data-test="song-preview"
+        focused={!expanded}
         className={
-          '' +
+          'bg-slate-900 ' +
           (expanded
             ? 'fixed inset-0 z-202 overflow-y-auto rounded-none border-2 border-amber-400 p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-xl sm:p-4'
-            : `mobile:scale-0 absolute z-3 scale-[1.075] border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] transition-opacity ${
+            : `absolute z-3 transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
               }`)
         }
