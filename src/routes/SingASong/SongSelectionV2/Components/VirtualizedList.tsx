@@ -30,6 +30,7 @@ interface Props<T> {
   components: Components<T>;
   context: T;
   groups: SongGroup[];
+  /** Placeholder for item in a row (in case the row is not fully occupied) */
   placeholder?: ReactNode;
   renderGroup: (group: SongGroup) => ReactNode;
   renderItem: (item: SongGroup['songs'][number], group: SongGroup, props?: { style: CSSProperties }) => ReactNode;

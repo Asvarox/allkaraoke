@@ -180,5 +180,13 @@ export const useSongListFilter = (
     [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
   );
 
-  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };
+  return {
+    filters,
+    filteredList: filteredList,
+    setFilters,
+    selectedPlaylist,
+    setSelectedPlaylist: setPlaylist,
+    playlists,
+    playlist,
+  };
 };

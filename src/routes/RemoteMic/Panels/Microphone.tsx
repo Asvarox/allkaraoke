@@ -43,15 +43,12 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
 
   const isConnected = connectionStatus === 'connected';
 
-  const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
-
   return (
     <div className="landscap:flex-row landscap:pt-0 text-md landscap:gap-4 flex h-full flex-col items-center justify-center gap-4 overflow-auto px-4 pt-16">
       <UserMediaEnabled
-        showImages={false}
+        showImages={true}
         fallback={
           <>
-            {micPreview}
             <span className="typography text-xl">Please allow access to the microphone.</span>
           </>
         }>

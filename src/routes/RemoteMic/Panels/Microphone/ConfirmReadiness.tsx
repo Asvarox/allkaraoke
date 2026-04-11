@@ -4,6 +4,7 @@ import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import storage from '~/modules/utils/storage';
+import vibrate from '~/modules/utils/vibrate';
 
 interface Props {
   onConfirm: () => void;
@@ -27,6 +28,23 @@ function ConfirmReadiness({ onConfirm }: Props) {
       setVisible(true);
     }
   });
+
+  useEffect(() => {
+    if (!visible) {
+      vibrate(0); // cancel any ongoing vibration
+      return;
+    }
+
+    vibrate([100, 900, 100, 900, 100]);
+    const intervalId = setInterval(() => {
+      vibrate([100, 900, 100, 900, 100]);
+    }, 3000);
+
+    return () => {
+      clearInterval(intervalId);
+      vibrate(0);
+    };
+  }, [visible]);
 
   useEventEffect(events.remoteReadinessRequested, () => {
     setVisible(true);
