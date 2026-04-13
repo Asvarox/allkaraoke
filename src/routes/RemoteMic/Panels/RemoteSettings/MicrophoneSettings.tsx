@@ -1,29 +1,24 @@
-import { useEffect, useState } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import RemoteMicClient, { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { MIC_ID_KEY } from '~/modules/RemoteMic/Network/Client/NetworkClient';
+import { useServerMutation } from '~/modules/RemoteMic/Network/Client/hooks/useServerMutation';
 import storage from '~/modules/utils/storage';
 import NumericInput from '~/routes/RemoteMic/Components/NumericInput';
 import { RemoteMicrophoneLagSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 function MicrophoneSettings() {
+  // Client is the source of truth — value is read from sessionStorage and sent to the server
+  // on each connection via the register message, so it survives page refreshes
   const [currentValue, setCurrentValue] = useSettingValue(RemoteMicrophoneLagSetting);
-  const [isLoading, setIsLoading] = useState(false);
+  const { mutate, loading: mutating } = useServerMutation(async (newValue: number) => {
+    await serverRpc.settings.setMicrophoneLag(newValue);
+  });
 
-  useEffect(() => {
-    setIsLoading(true);
-    RemoteMicClient.getMicrophoneInputLag()
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
-  }, []);
-
-  const changeValue = (newValue: number) => {
-    setIsLoading(true);
-    RemoteMicClient.setMicrophoneInputLag(newValue)
-      .then(({ value }) => setCurrentValue(value))
-      .catch((e) => console.warn(e))
-      .finally(() => setIsLoading(false));
+  const handleChange = (value: number) => {
+    // Persist locally first so it's sent on the next reconnect
+    setCurrentValue(value);
+    // Also apply immediately on the server for the current session
+    void mutate(value);
   };
 
   const reset = () => {
@@ -44,15 +39,13 @@ function MicrophoneSettings() {
       <Menu.SubHeader>Adjust microphone lag</Menu.SubHeader>
       <NumericInput
         value={currentValue}
-        onChange={changeValue}
+        onChange={handleChange}
         unit="ms"
-        disabled={isLoading}
+        disabled={mutating}
         step={25}
         data-test="microphone-delay"
+        info="Adjust the microphone input delay (e.g. if the game doesn&#39;t detect you hitting the note on time)."
       />
-      <Menu.HelpText>
-        Adjust the microphone input delay (e.g. if the game doesn&#39;t detect you hitting the note on time)
-      </Menu.HelpText>
     </>
   );
 }

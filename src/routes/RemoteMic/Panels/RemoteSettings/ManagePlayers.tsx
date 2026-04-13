@@ -1,27 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
 import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 import { MenuButton } from '~/modules/Elements/Menu';
 import Modal from '~/modules/Elements/Modal';
-import events from '~/modules/GameEvents/GameEvents';
-import { useEventListener } from '~/modules/GameEvents/hooks';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
-import { NetworkRemoteMicListMessage } from '~/modules/RemoteMic/Network/messages';
+import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
+import { SubscriptionChannels } from '~/modules/RemoteMic/Network/Client/subscriptions';
 import RemoteMicManager from '~/modules/RemoteMic/RemoteMicManager';
 import PlayerChangeModal from '~/routes/RemoteMic/Components/PlayerChangeModal';
 import PlayerNumberCircle from '~/routes/RemoteMic/Components/PlayerNumberCircle';
 
 function ManagePlayers() {
-  useEffect(() => {
-    RemoteMicClient.subscribe('remote-mics');
-
-    return () => {
-      RemoteMicClient.unsubscribe('remote-mics');
-    };
-  }, []);
-
-  const [list] = useEventListener(events.remoteMicListUpdated) ?? [[]];
+  const list = useSubscription('remote-mics') ?? [];
 
   return (
     <>
@@ -34,7 +25,7 @@ function ManagePlayers() {
   );
 }
 
-const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }) => {
+const Entry = ({ mic }: { mic: ValuesType<SubscriptionChannels['remote-mics']> }) => {
   const [open, setOpen] = useState(false);
   const permission = RemoteMicManager.getPermission(mic.id);
 

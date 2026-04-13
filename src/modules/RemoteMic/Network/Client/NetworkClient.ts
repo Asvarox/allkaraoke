@@ -6,35 +6,29 @@ import events from '~/modules/GameEvents/GameEvents';
 import { PartyKitClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/PartyKitClient';
 import { WebSocketClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/WebSocketClient';
 import { ClientTransport } from '~/modules/RemoteMic/Network/Client/Transport/interface';
-import {
-  keyStrokes,
-  NetworkGetGameInputLagResponseMessage,
-  NetworkGetMicrophoneLagResponseMessage,
-  NetworkGetUnassignPlayersAfterSongFinishedResponseMessage,
-  NetworkMessages,
-  NetworkRemovePlayerMessage,
-  NetworkRequestMicSelectMessage,
-  NetworkSongListMessage,
-  NetworkSubscribeMessage,
-  NetworkUnsubscribeMessage,
-} from '~/modules/RemoteMic/Network/messages';
-import sendMessage from '~/modules/RemoteMic/Network/sendMessage';
+import { createRpcProxy } from '~/modules/RemoteMic/Network/Rpc/RpcClient';
+import { ExtractContract } from '~/modules/RemoteMic/Network/Rpc/types';
+import { serverHandlers } from '~/modules/RemoteMic/Network/Server/serverHandlers';
+import { NetworkMessages } from '~/modules/RemoteMic/Network/messages';
 import { getPingTime } from '~/modules/RemoteMic/Network/utils';
 import Listener from '~/modules/utils/Listener';
 import { roundTo } from '~/modules/utils/roundTo';
 import storage from '~/modules/utils/storage';
 import { RemoteMicrophoneLagSetting } from '~/routes/Settings/SettingsState';
+import { dispatchClientCall, registerClientHandler } from './ClientHandlers';
+import { subscriptionManager } from './subscriptions';
 
 export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
-const channelSubscribers: Record<string, number> = {};
+export type ServerRpc = ExtractContract<typeof serverHandlers>;
 
 export class NetworkClient extends Listener<[NetworkMessages]> {
   private transport: ClientTransport | undefined;
   private clientId = storage.getItem(MIC_ID_KEY);
+
   private roomId: string | null = null;
 
   private reconnecting = false;
@@ -45,16 +39,75 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   private sendFrequencies = throttle((volume: number) => {
     const freqs = this.frequencies.map((freq) => roundTo(freq, 2));
     this.frequencies.length = 0;
-    this.sendEvent('freq', [freqs, roundTo(volume, 4)]);
+    this.transport?.sendEvent({ t: 'freq', 0: freqs, 1: roundTo(volume, 4) } as NetworkMessages);
   }, 50);
 
   // Chunk frequencies and send them in packages
-  // One package throttled with 75ms contains ~10 frequencies
+  // One package throttled with ~60Hz contains ~10 frequencies
   private onFrequencyUpdate = throttle((freq: number, volume: number) => {
     this.frequencies.push(freq);
-
     this.sendFrequencies(volume);
   }, 1_000 / 60);
+
+  constructor() {
+    super();
+
+    // Register imperative client handlers once so they are not duplicated on reconnect.
+    // These use a Set internally, so registering the same function reference is idempotent,
+    // but since arrow functions inside connectToServer would create new references each time,
+    // we register them here with stable references.
+    registerClientHandler('startMonitor', () => {
+      SimplifiedMic.removeListener(this.onFrequencyUpdate);
+      SimplifiedMic.addListener(this.onFrequencyUpdate);
+      SimplifiedMic.startMonitoring();
+      events.remoteMicMonitoringStarted.dispatch();
+    });
+    registerClientHandler('stopMonitor', () => {
+      SimplifiedMic.removeListener(this.onFrequencyUpdate);
+      SimplifiedMic.stopMonitoring();
+      events.remoteMicMonitoringStopped.dispatch();
+    });
+    registerClientHandler('reload', () => {
+      global.removeEventListener('beforeunload', this.disconnect);
+      this.transport?.sendEvent({ t: 'unregister' } as NetworkMessages);
+      storage.session.setItem('reload-mic-request', '1');
+      document.getElementById('phone-ui-container')?.remove();
+      global.location?.reload();
+    });
+
+    // Bridge handlers: dispatch old GameEvents so legacy consumers keep working.
+    // These will be removed once all consumers are migrated to useClientHandler (Phase 6).
+    registerClientHandler('setPlayerNumber', (playerNumber) => {
+      events.remoteMicPlayerSet.dispatch(playerNumber);
+    });
+    registerClientHandler('setPermissions', (level) => {
+      events.remoteMicPermissionsSet.dispatch(level);
+    });
+    registerClientHandler('requestReadiness', () => {
+      events.remoteReadinessRequested.dispatch();
+    });
+  }
+
+  // RPC proxy — call server methods as if they were local async functions.
+  // The onDisconnect callback rejects any in-flight request immediately when the connection drops,
+  // rather than waiting for the 10-second timeout.
+  public readonly rpc: ServerRpc = createRpcProxy<typeof serverHandlers>(
+    () => this.transport,
+    (callback) => {
+      const handler = (status: string) => {
+        if (status === 'disconnected' || status === 'reconnecting' || status === 'error') {
+          callback();
+        }
+      };
+      events.karaokeConnectionStatusChange.subscribe(
+        handler as Parameters<typeof events.karaokeConnectionStatusChange.subscribe>[0],
+      );
+      return () =>
+        events.karaokeConnectionStatusChange.unsubscribe(
+          handler as Parameters<typeof events.karaokeConnectionStatusChange.subscribe>[0],
+        );
+    },
+  );
 
   public getClientId = () => this.clientId;
   private setClientId = (id: string) => {
@@ -110,7 +163,8 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         }
 
         events.remoteMicPlayerSet.dispatch(null);
-        events.remoteKeyboardLayout.dispatch(undefined);
+        // Clear the cached keyboard layout so the subscription-based consumers show nothing while disconnected
+        subscriptionManager.handlePublish('keyboard-layout', undefined);
 
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.stopMonitoring();
@@ -135,7 +189,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.pinging = true;
     this.pingStart = getPingTime();
 
-    this.sendEvent('ping', { p: this.pingStart });
+    this.transport?.sendEvent({ t: 'ping' } as NetworkMessages);
   };
 
   private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 60_000);
@@ -153,44 +207,38 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
     posthog.capture('remote_mic_connection_successful', { transport: this.roomId?.charAt(0) });
-    this.sendEvent('register', { name, id: this.clientId!, silent, lag: RemoteMicrophoneLagSetting.get() });
+    this.transport?.sendEvent({
+      t: 'register',
+      name,
+      id: this.clientId!,
+      silent,
+      lag: RemoteMicrophoneLagSetting.get(),
+    } as NetworkMessages);
     this.ping();
     global?.addEventListener('beforeunload', this.disconnect);
 
+    // Wire subscription manager to send rpc-sub/rpc-unsub via the current transport
+    subscriptionManager.setSendFunctions(
+      (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel } as NetworkMessages),
+      (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel } as NetworkMessages),
+    );
+
     this.transport!.addListener((data) => {
       const type = data.t;
-
       this.onUpdate(data);
-      if (type === 'start-monitor') {
-        SimplifiedMic.removeListener(this.onFrequencyUpdate);
-        SimplifiedMic.addListener(this.onFrequencyUpdate);
-        SimplifiedMic.startMonitoring();
-      } else if (type === 'stop-monitor') {
-        SimplifiedMic.removeListener(this.onFrequencyUpdate);
-        SimplifiedMic.stopMonitoring();
-      } else if (type === 'set-player-number') {
-        events.remoteMicPlayerSet.dispatch(data.playerNumber);
-      } else if (type === 'keyboard-layout') {
-        events.remoteKeyboardLayout.dispatch(data.help);
-      } else if (type === 'reload-mic') {
-        global.removeEventListener('beforeunload', this.disconnect);
-        this.sendEvent('unregister');
-        storage.session.setItem('reload-mic-request', '1');
-        document.getElementById('phone-ui-container')?.remove();
-        global.location?.reload();
-      } else if (type === 'request-readiness') {
-        events.remoteReadinessRequested.dispatch();
+
+      if (type === 'rpc-call') {
+        // Server-initiated call — dispatch to registered handlers
+        dispatchClientCall(data.method, data.args);
+      } else if (type === 'rpc-pub') {
+        // Server pushed subscription data
+        subscriptionManager.handlePublish(data.channel as any, data.data);
       } else if (type === 'pong') {
         this.onPong();
       } else if (type === 'ping') {
-        this.sendEvent('pong');
-      } else if (type === 'set-permissions') {
-        events.remoteMicPermissionsSet.dispatch(data.level);
-      } else if (type === 'remote-mics-list') {
-        events.remoteMicListUpdated.dispatch(data.list);
-      } else if (type === 'style-change') {
-        events.remoteStyleChanged.dispatch(data.style);
+        this.transport?.sendEvent({ t: 'pong' } as NetworkMessages);
       }
+      // rpc-res messages are handled internally by createRpcProxy listeners — no action needed here
     });
   };
 
@@ -200,120 +248,6 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       this.connect(roomId, name, false);
       setTimeout(() => this.reconnect(roomId, name), 2000);
     }
-  };
-
-  public sendKeyStroke = (key: keyStrokes) => {
-    this.sendEvent('keystroke', { key });
-  };
-
-  public searchSong = (search: string) => {
-    this.sendEvent('search-song', { search });
-  };
-
-  public sendMySongList = (delta: { added?: string[]; deleted?: string[] }) => {
-    this.sendEvent('my-list', delta);
-  };
-
-  public selectSong = (songId: string) => {
-    this.sendEvent('select-song', { id: songId });
-  };
-
-  public requestPlayerChange = (id: string, playerNumber: 0 | 1 | 2 | 3 | null) => {
-    this.sendEvent<NetworkRequestMicSelectMessage>('request-mic-select', { id, playerNumber });
-  };
-
-  public confirmReadiness = () => {
-    this.sendEvent('confirm-readiness');
-  };
-
-  public subscribe = (channel: NetworkSubscribeMessage['channel']) => {
-    if (channelSubscribers[channel] === undefined) {
-      channelSubscribers[channel] = 0;
-    }
-    if (channelSubscribers[channel] === 0) {
-      this.sendEvent<NetworkSubscribeMessage>('subscribe-event', { channel });
-    }
-    channelSubscribers[channel]++;
-  };
-
-  public unsubscribe = (channel: NetworkSubscribeMessage['channel']) => {
-    if (channelSubscribers[channel] === undefined) {
-      channelSubscribers[channel] = 0;
-    }
-    if (channelSubscribers[channel] === 1) {
-      this.sendEvent<NetworkUnsubscribeMessage>('unsubscribe-event', { channel });
-    }
-    channelSubscribers[channel] = Math.max(0, channelSubscribers[channel] - 1);
-  };
-
-  public getSongList = () => this.sendRequest<NetworkSongListMessage>({ t: 'request-songlist' }, 'songlist');
-
-  public getGameInputLag = () =>
-    this.sendRequest<NetworkGetGameInputLagResponseMessage>(
-      { t: 'get-game-input-lag-request' },
-      'get-game-input-lag-response',
-    );
-
-  public setGameInputLag = (value: number) =>
-    this.sendRequest<NetworkGetGameInputLagResponseMessage>(
-      { t: 'set-game-input-lag-request', value },
-      'get-game-input-lag-response',
-    );
-  public getMicrophoneInputLag = () =>
-    this.sendRequest<NetworkGetMicrophoneLagResponseMessage>(
-      { t: 'get-microphone-lag-request' },
-      'get-microphone-lag-response',
-    );
-
-  public setMicrophoneInputLag = (value: number) =>
-    this.sendRequest<NetworkGetMicrophoneLagResponseMessage>(
-      { t: 'set-microphone-lag-request', value },
-      'get-microphone-lag-response',
-    );
-  public getUnassignPlayersAfterSongFinishedSetting = () =>
-    this.sendRequest<NetworkGetUnassignPlayersAfterSongFinishedResponseMessage>(
-      { t: 'get-unassign-players-after-song-finished-setting-request' },
-      'get-unassign-players-after-song-finished-setting-response',
-    );
-
-  public setUnassignPlayersAfterSongFinishedSetting = (state: boolean) =>
-    this.sendRequest<NetworkGetUnassignPlayersAfterSongFinishedResponseMessage>(
-      { t: 'set-unassign-players-after-song-finished-setting-request', state },
-      'get-unassign-players-after-song-finished-setting-response',
-    );
-
-  public removePlayer = (playerId: string) =>
-    this.sendEvent<NetworkRemovePlayerMessage>('remove-player', { id: playerId });
-
-  private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
-    if (!this.transport?.isConnected()) {
-      console.debug('not connected, skipping', type, payload);
-    } else {
-      this.transport!.sendEvent({ t: type, ...payload } as T);
-    }
-  };
-
-  private sendRequest = <T extends NetworkMessages>(
-    { t, ...payload }: NetworkMessages,
-    response: T['t'],
-  ): Promise<T> => {
-    return new Promise<T>((resolve, reject) => {
-      const timeout = setTimeout(() => {
-        this.transport?.removeListener(callback);
-        reject(`${t} timed out waiting for ${response}`);
-      }, 10_000);
-
-      const callback = (event: NetworkMessages) => {
-        if (event.t === response) {
-          clearTimeout(timeout);
-          this.transport?.removeListener(callback);
-          resolve(event as T);
-        }
-      };
-      this.transport?.addListener(callback);
-
-      this.sendEvent(t, payload);
-    });
   };
 
   public disconnect = () => {

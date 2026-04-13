@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
 import styles from '~/modules/GameEngine/Drawing/styles';
-import { default as events, default as gameEvents } from '~/modules/GameEvents/GameEvents';
-import { useEventListener } from '~/modules/GameEvents/hooks';
-import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
+import { serverRpc } from '~/modules/RemoteMic/Network/Client';
+import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 
 interface Props {
   id: string;
@@ -22,18 +21,10 @@ const colorNames: Record<backgroundTheme, string[]> = {
 };
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header, showRemoveButton = false }: Props) {
-  useEffect(() => {
-    RemoteMicClient.subscribe('remote-mics');
-
-    return () => {
-      RemoteMicClient.unsubscribe('remote-mics');
-    };
-  }, []);
-
-  const [list] = useEventListener(events.remoteMicListUpdated) ?? [[]];
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
+  const list = useSubscription('remote-mics') ?? [];
+  const style = useSubscription('style') ?? 'regular';
   const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
-    RemoteMicClient.requestPlayerChange(id, player);
+    void serverRpc.players.requestMicSelect(id, player);
     onModalClose();
   };
 
@@ -73,7 +64,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
       </Menu.Button>
       <hr />
       {showRemoveButton && (
-        <Menu.Button size="small" onClick={() => RemoteMicClient.removePlayer(id)} data-test="remove-player">
+        <Menu.Button size="small" onClick={() => void serverRpc.players.removePlayer(id)} data-test="remove-player">
           Remove
         </Menu.Button>
       )}

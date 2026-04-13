@@ -13,6 +13,7 @@ import useViewportSize from '~/modules/hooks/useViewportSize';
 import LayoutGame from '~/routes/LayoutGame';
 import { Components } from '~/routes/SingASong/SongSelectionV2/Components/CustomVirtualization';
 import { SongCard } from '~/routes/SingASong/SongSelectionV2/Components/SongCard';
+import { SongGroupHeader } from '~/routes/SingASong/SongSelectionV2/Components/SongGroupHeader';
 import SongGroupsNavigation from '~/routes/SingASong/SongSelectionV2/Components/SongGroupsNavigation';
 import SongPreview from '~/routes/SingASong/SongSelectionV2/Components/SongPreview';
 import Toolbar from '~/routes/SingASong/SongSelectionV2/Components/Toolbar';
@@ -33,84 +34,6 @@ declare global {
       }
     | undefined;
 }
-
-const ListRow = ({ children, ...props }: ComponentProps<'div'>) => (
-  <div {...props} className={`relative mb-(--song-list-gap) ${props.className ?? ''}`}>
-    <div className="mx-auto flex max-w-360 flex-nowrap gap-(--song-list-gap) pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
-      {children}
-    </div>
-  </div>
-);
-
-const GroupRow = ({ children, ...props }: ComponentProps<'div'>) => (
-  <div {...props} className={`mb-(--song-list-gap) ${props.className ?? ''}`}>
-    <div className="mx-auto flex max-w-360 flex-nowrap gap-(--song-list-gap) pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
-      {children}
-    </div>
-  </div>
-);
-
-interface SongListEntryProps extends ComponentProps<typeof SongCard> {
-  focused: boolean;
-  songId?: string;
-  groupLetter?: string;
-  handleClick?: (songId: string, groupLetter?: string) => void;
-}
-
-const SongListEntry = memo(({ focused: isFocused, songId, groupLetter, handleClick, ...props }: SongListEntryProps) => {
-  const onClickCallback = useCallback(
-    () => (handleClick ? handleClick(songId!, groupLetter) : undefined),
-    [handleClick, songId, groupLetter],
-  );
-
-  return (
-    <SongCard
-      {...props}
-      focused={isFocused}
-      onClick={handleClick ? onClickCallback : undefined}
-      className={cn(
-        'flex-none cursor-pointer transition-all duration-300',
-        isFocused ? 'z-2' : 'hover:border-white/20',
-        props.className,
-      )}
-      style={{
-        flexBasis: 'var(--song-entry-width)',
-        width: 'var(--song-entry-width)',
-        height: 'var(--song-entry-height)',
-        ...props.style,
-      }}>
-      <SongCard.Thumbnail />
-      <SongCard.Footer>
-        <SongCard.SongTitle />
-        <SongCard.Artist />
-        <SongCard.Badges>
-          <SongCard.Badges.Flag />
-          <SongCard.Badges.Duet />
-          <SongCard.Badges.Stats compact />
-        </SongCard.Badges>
-      </SongCard.Footer>
-    </SongCard>
-  );
-});
-SongListEntry.displayName = 'SongListEntry';
-
-const components: Components<{
-  songPreviewProps: Omit<ComponentProps<typeof SongPreview>, 'songPreview'> & { songPreview?: SongPreviewEntity };
-}> = {
-  Header: ({ context }) => (
-    <>
-      <div />
-      {context?.songPreviewProps.songPreview && (
-        <SongPreview {...context.songPreviewProps} songPreview={context.songPreviewProps.songPreview} />
-      )}
-    </>
-  ),
-  EmptyPlaceholder: () => (
-    <div className="typography flex h-[30vh] flex-1 items-center justify-center text-xl text-white sm:text-4xl">
-      No songs found
-    </div>
-  ),
-};
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
   const setlist = useSetlist();
@@ -168,7 +91,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   // Portrait card: 16:9 thumbnail on top + fixed-height text section below
   const CARD_METADATA_HEIGHT_PX = 120;
   const songEntryHeight = songEntryWidth * (9 / 16) + CARD_METADATA_HEIGHT_PX;
-  const songGroupHeight = songEntryHeight / 2;
+  const songGroupHeight = songEntryHeight / 2.5;
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
@@ -304,11 +227,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
           {loading ? (
             <div style={{ paddingTop: 80 }}>
               <GroupRow>
-                <div className="flex h-(--song-group-header-height) items-end">
-                  <div className="rounded-md bg-black/70 px-3 py-1 text-4xl font-(--font-family) text-white">
-                    &nbsp;&nbsp;&nbsp;
-                  </div>
-                </div>
+                <SongGroupHeader />
               </GroupRow>
               {new Array(4).fill(0).map((_, i) => (
                 <ListRow key={i}>
@@ -338,31 +257,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               itemHeight={Math.floor(songEntryHeight) + LIST_GAP_PX}
               groupHeight={Math.floor(songGroupHeight) + LIST_GAP_PX}
               components={components}
-              renderGroup={(group) => {
-                const isNew = group.name === 'New';
-                return (
-                  <div
-                    key={group.name}
-                    className="flex h-(--song-group-header-height) items-end"
-                    data-highlight={isNew}>
-                    {isNew && (
-                      <style>{`@keyframes new-song-group-header { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }`}</style>
-                    )}
-                    <div
-                      data-group-name={group.name}
-                      className="z-1 flex items-center gap-3 rounded-md px-3 py-1 text-4xl font-(--font-family)"
-                      style={{
-                        background: isNew ? '#ffffff' : 'rgba(2,6,23,0.5)',
-                        color: isNew ? '#000' : '#fff',
-                        backdropFilter: isNew ? undefined : 'blur(8px)',
-                        border: isNew ? undefined : '1px solid rgba(255,255,255,0.1)',
-                        animation: isNew ? 'new-song-group-header 600ms ease-in-out infinite both' : undefined,
-                      }}>
-                      {group.displayLong ?? group.name}
-                    </div>
-                  </div>
-                );
-              }}
+              renderGroup={(group) => <SongGroupHeader key={group.name} group={group} />}
               perRow={songsPerRow}
               renderItem={(songItem, group) => {
                 const songId = getSongIdWithNew(songItem, group);
@@ -430,3 +325,81 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     </LayoutGame>
   );
 }
+
+const ListRow = ({ children, ...props }: ComponentProps<'div'>) => (
+  <div {...props} className={`relative mb-(--song-list-gap) ${props.className ?? ''}`}>
+    <div className="mx-auto flex max-w-360 flex-nowrap gap-(--song-list-gap) pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
+      {children}
+    </div>
+  </div>
+);
+
+const GroupRow = ({ children, ...props }: ComponentProps<'div'>) => (
+  <div {...props} className={`mb-(--song-list-gap) ${props.className ?? ''}`}>
+    <div className="mx-auto flex max-w-360 flex-nowrap gap-(--song-list-gap) pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
+      {children}
+    </div>
+  </div>
+);
+
+interface SongListEntryProps extends ComponentProps<typeof SongCard> {
+  focused: boolean;
+  songId?: string;
+  groupLetter?: string;
+  handleClick?: (songId: string, groupLetter?: string) => void;
+}
+
+const SongListEntry = memo(({ focused: isFocused, songId, groupLetter, handleClick, ...props }: SongListEntryProps) => {
+  const onClickCallback = useCallback(
+    () => (handleClick ? handleClick(songId!, groupLetter) : undefined),
+    [handleClick, songId, groupLetter],
+  );
+
+  return (
+    <SongCard
+      {...props}
+      focused={isFocused}
+      onClick={handleClick ? onClickCallback : undefined}
+      className={cn(
+        'flex-none cursor-pointer transition-all duration-300',
+        isFocused ? 'z-2' : 'hover:border-white/20',
+        props.className,
+      )}
+      style={{
+        flexBasis: 'var(--song-entry-width)',
+        width: 'var(--song-entry-width)',
+        height: 'var(--song-entry-height)',
+        ...props.style,
+      }}>
+      <SongCard.Thumbnail />
+      <SongCard.Footer>
+        <SongCard.SongTitle />
+        <SongCard.Artist />
+        <SongCard.Badges>
+          <SongCard.Badges.Flag />
+          <SongCard.Badges.Duet />
+          <SongCard.Badges.Stats compact />
+        </SongCard.Badges>
+      </SongCard.Footer>
+    </SongCard>
+  );
+});
+SongListEntry.displayName = 'SongListEntry';
+
+const components: Components<{
+  songPreviewProps: Omit<ComponentProps<typeof SongPreview>, 'songPreview'> & { songPreview?: SongPreviewEntity };
+}> = {
+  Header: ({ context }) => (
+    <>
+      <div />
+      {context?.songPreviewProps.songPreview && (
+        <SongPreview {...context.songPreviewProps} songPreview={context.songPreviewProps.songPreview} />
+      )}
+    </>
+  ),
+  EmptyPlaceholder: () => (
+    <div className="typography flex h-[30vh] flex-1 items-center justify-center text-xl text-white sm:text-4xl">
+      No songs found
+    </div>
+  ),
+};

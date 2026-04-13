@@ -1,4 +1,4 @@
-import { Warning } from '@mui/icons-material';
+import { Icon } from '@iconify-icon/react';
 import { PropsWithChildren, ReactNode } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
 import { useMicrophoneStatus } from '~/modules/UserMedia/hooks';
@@ -24,7 +24,7 @@ const UserMediaEnabled = ({ children, fallback, showImages = true }: Props) => {
       {status !== 'accepted' && (
         <>
           <div className="flex w-full justify-center">
-            <Warning className="text-active text-3xl" />
+            <Icon icon="mdi:warning" className="text-active text-3xl" />
           </div>
           {fallback}
           <div className="text-center">

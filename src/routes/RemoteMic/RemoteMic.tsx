@@ -3,8 +3,9 @@ import { useLayoutEffect, useState } from 'react';
 import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import { switchToTheme } from '~/modules/GameEngine/Drawing/styles';
-import { default as events, default as gameEvents } from '~/modules/GameEvents/GameEvents';
+import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from '~/modules/GameEvents/hooks';
+import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 import useQueryParam from '~/modules/hooks/useQueryParam';
 import LayoutGame from '~/routes/LayoutGame';
 import BottomBar from '~/routes/RemoteMic/BottomBar';
@@ -23,7 +24,7 @@ export type PhoneTabs = 'microphone' | 'song-list' | 'settings';
 
 function RemoteMic() {
   const roomId = useQueryParam('room');
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
+  const style = useSubscription('style') ?? 'regular';
   useLayoutEffect(() => {
     switchToTheme(style);
   }, [style]);

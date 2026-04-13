@@ -70,14 +70,12 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Go to playlist and open preview of the song', async () => {
     await pages.songListPage.goToPlaylist(song2.playlistName);
+    await pages.songListPage.focusSong(song2.ID);
     await pages.songListPage.approveSelectedSongByKeyboard();
   });
 
   await test.step('Set game mode', async () => {
-    await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
-    await page.keyboard.press('Enter'); // change to duel
-    await page.keyboard.press('Enter'); // change to pass the mic
-    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.setGameModeReliably(gameMode);
   });
 
   await test.step('Set difficulty level', async () => {
@@ -89,16 +87,17 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('After setting tracks, play the song', async () => {
-    // v2 SongSettings does not include PlayerSettings; player name inputs are not available pre-game.
-    // Player track settings (player-${n}-track-setting) still work in v2.
+    await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1.number, track1);
+    await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2.number, track2);
 
-    // Player 1
+    // Player 1 -> switch to Track 2
     await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player1.number);
     await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1.number, track2);
 
-    // Player 2
+    // Player 2 -> switch to Track 1
     await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player2.number);
     await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2.number, track1);
+
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
     await pages.calibration.approveDefaultCalibrationSetting();
   });
