@@ -36,8 +36,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
       global.setTimeout(() => storage.session.removeItem('reload-mic-request'), 1);
       setIsAutoReconnecting(true);
       setWizardComplete(true);
-      const persistedName = localStorage.getItem('remote_mic_name');
-      const name = persistedName ? JSON.parse(persistedName) : '';
+      const name = storage.local.getItem<string>('remote_mic_name') ?? '';
       RemoteMicClient.connect(roomId ?? '', name, true);
     }
   }, []);

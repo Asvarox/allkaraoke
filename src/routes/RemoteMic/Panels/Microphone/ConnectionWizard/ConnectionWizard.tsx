@@ -53,7 +53,8 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
         setCurrentStep(1);
       }) // already granted → skip mic step
       .catch(() => {
-        cachedInitialStep = 0;
+        // Don't cache denial — re-mounting will re-probe, allowing recovery
+        // after the user grants mic permission in browser settings
         setCurrentStep(0);
       }); // denied → show blocked instructions
   }, []);
