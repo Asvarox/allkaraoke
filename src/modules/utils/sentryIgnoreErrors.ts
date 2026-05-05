@@ -31,5 +31,7 @@ const errors = [
   'EBCallBackMessageReceived',
   // See http://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx
   'conduitPage',
+  'Transition was aborted because of invalid state',
+  'NotFoundError: Requested device not found',
 ];
 export default errors;

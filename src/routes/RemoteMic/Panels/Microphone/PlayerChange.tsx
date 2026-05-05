@@ -1,8 +1,8 @@
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { memo, useState } from 'react';
+import { BottomSheet } from '~/modules/Elements/AKUI/BottomSheet';
 import { Button } from '~/modules/Elements/AKUI/Button';
 import { MenuButton } from '~/modules/Elements/AKUI/Menu/MenuButton';
-import Modal from '~/modules/Elements/Modal';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import { useClientHandler } from '~/modules/RemoteMic/Network/Client/hooks/useClientHandler';
 import PlayerChangeModal from '~/routes/RemoteMic/Components/PlayerChangeModal';
@@ -10,11 +10,10 @@ import PlayerNumberCircle from '~/routes/RemoteMic/Components/PlayerNumberCircle
 
 interface Props {
   playerNumber: 0 | 1 | 2 | 3 | null;
-  defaultOpen?: boolean;
 }
 
-export default memo(function PlayerChange({ playerNumber, defaultOpen = false }: Props) {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+export default memo(function PlayerChange({ playerNumber }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
 
@@ -43,16 +42,9 @@ export default memo(function PlayerChange({ playerNumber, defaultOpen = false }:
         )}{' '}
         <Button.Icon Icon={SwapHorizIcon} />
       </MenuButton>
-      <Modal onClose={closeModal} open={isOpen}>
-        {isOpen && (
-          <PlayerChangeModal
-            header="Your color"
-            id={RemoteMicClient.getClientId()!}
-            playerNumber={playerNumber}
-            onModalClose={closeModal}
-          />
-        )}
-      </Modal>
+      <BottomSheet open={isOpen} onClose={closeModal} title="Your color">
+        <PlayerChangeModal id={RemoteMicClient.getClientId()!} playerNumber={playerNumber} onModalClose={closeModal} />
+      </BottomSheet>
     </>
   );
 });

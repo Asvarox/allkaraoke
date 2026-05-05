@@ -45,14 +45,17 @@ export class RemoteMicSongListPagePO {
   }
 
   public async goToFavouriteList() {
+    await this.clearSearch();
     await this.yourListButton.click();
   }
 
   public async expectFavouriteListToBeSelected() {
+    await this.clearSearch();
     await expect(this.yourListButton).toHaveAttribute('data-focused', 'true');
   }
 
   public async expectFavouriteListToContainNumberOfSongs(numberOfSongs: string) {
+    await this.clearSearch();
     await expect(this.yourListButton).toContainText(numberOfSongs);
   }
 
@@ -61,10 +64,12 @@ export class RemoteMicSongListPagePO {
   }
 
   public async goToAllSongsPlaylist() {
+    await this.clearSearch();
     await this.allSongsButton.click();
   }
 
   public async expectAllSongsPlaylistToBeSelected() {
+    await this.clearSearch();
     await expect(this.allSongsButton).toHaveAttribute('data-focused', 'true');
   }
 
@@ -72,7 +77,31 @@ export class RemoteMicSongListPagePO {
     return this.page.getByTestId('search-input');
   }
 
+  public get searchButton() {
+    return this.page.getByTestId('search-button');
+  }
+
+  public get searchCloseButton() {
+    return this.page.getByTestId('search-close-button');
+  }
+
+  private async ensureSearchInputVisible() {
+    if (await this.searchInput.isVisible()) {
+      return;
+    }
+
+    await this.searchButton.click();
+    await expect(this.searchInput).toBeVisible();
+  }
+
+  private async clearSearch() {
+    if (await this.searchCloseButton.isVisible()) {
+      await this.searchCloseButton.click();
+    }
+  }
+
   public async searchTheSong(songName: string) {
+    await this.ensureSearchInputVisible();
     await this.searchInput.fill(songName);
   }
 
@@ -81,6 +110,7 @@ export class RemoteMicSongListPagePO {
   }
 
   public async goToSelectSongLanguage() {
+    await this.clearSearch();
     await this.songLanguageFilter.click();
   }
 
@@ -98,7 +128,7 @@ export class RemoteMicSongListPagePO {
       await expect(this.getSongElement(songID)).toBeVisible();
     }
     await selectTheSong;
-    await this.searchInput.clear();
+    await this.clearSearch();
   }
 
   public getGroupedArtistSongsElement(artistName: string) {

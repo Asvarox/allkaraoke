@@ -10,7 +10,7 @@ export interface BottomSheetProps extends PropsWithChildren {
   title?: ReactNode;
 }
 
-const Backdrop = twc(motion.div)`fixed inset-0 z-19999 bg-black/60 backdrop-blur-sm`;
+const Backdrop = twc(motion.div)`fixed inset-0 z-[20002] bg-black/60 backdrop-blur-sm`;
 
 export function BottomSheet({ open, onClose, title, children }: BottomSheetProps) {
   const sheet = (
@@ -31,7 +31,7 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 bottom-0 left-0 z-20000 rounded-t-2xl bg-black/95"
+            className="fixed right-0 bottom-0 left-0 z-[20003] rounded-t-2xl bg-black/95"
             style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}>
             {/* Handle bar */}
             <div className="flex justify-center pt-3 pb-2">

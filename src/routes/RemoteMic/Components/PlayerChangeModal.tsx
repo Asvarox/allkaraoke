@@ -1,5 +1,4 @@
-import React from 'react';
-import { Menu } from '~/modules/Elements/AKUI/Menu';
+import { Button } from '~/modules/Elements/AKUI/Button';
 import { backgroundTheme } from '~/modules/Elements/LayoutWithBackground';
 import styles from '~/modules/GameEngine/Drawing/styles';
 import { serverRpc } from '~/modules/RemoteMic/Network/Client';
@@ -9,7 +8,6 @@ interface Props {
   id: string;
   playerNumber: 0 | 1 | 2 | 3 | null;
   onModalClose: () => void;
-  header?: React.ReactNode;
   showRemoveButton?: boolean;
 }
 
@@ -20,7 +18,7 @@ const colorNames: Record<backgroundTheme, string[]> = {
   halloween: ['Orange', 'Violet', 'Red', 'Green'],
 };
 
-export default function PlayerChangeModal({ playerNumber, id, onModalClose, header, showRemoveButton = false }: Props) {
+export default function PlayerChangeModal({ playerNumber, id, onModalClose, showRemoveButton = false }: Props) {
   const list = useSubscription('remote-mics') ?? [];
   const style = useSubscription('style') ?? 'regular';
   const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
@@ -31,14 +29,13 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
   const joined = playerNumber !== null;
 
   return (
-    <Menu>
-      {header && <Menu.Header>{header}</Menu.Header>}
+    <div className="flex flex-col gap-2 pb-2">
       {([0, 1, 2, 3] as const).map((number) => {
         const occupant = list.find((mic) => mic.number === number);
         const isOwn = number === playerNumber;
 
         return (
-          <Menu.Button
+          <Button
             key={number}
             size="small"
             data-test={`change-to-player-${number}`}
@@ -56,21 +53,21 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
             ) : (
               ''
             )}
-          </Menu.Button>
+          </Button>
         );
       })}
-      <Menu.Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
+      <Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
         Unassign
-      </Menu.Button>
+      </Button>
       <hr />
       {showRemoveButton && (
-        <Menu.Button size="small" onClick={() => void serverRpc.players.removePlayer(id)} data-test="remove-player">
+        <Button size="small" onClick={() => void serverRpc.players.removePlayer(id)} data-test="remove-player">
           Remove
-        </Menu.Button>
+        </Button>
       )}
-      <Menu.Button onClick={onModalClose} size="small" data-test="close-menu">
+      <Button onClick={onModalClose} size="small" data-test="close-menu">
         Close
-      </Menu.Button>
-    </Menu>
+      </Button>
+    </div>
   );
 }

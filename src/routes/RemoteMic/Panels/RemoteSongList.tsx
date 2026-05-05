@@ -1,13 +1,9 @@
-import { ArrowRight, Search } from '@mui/icons-material';
+import { ArrowRight } from '@mui/icons-material';
 import { groupBy, uniqBy } from 'es-toolkit';
 import { ComponentProps, ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
 import { SongPreview } from '~/interfaces';
-import { Badge } from '~/modules/Elements/AKUI/Badge';
-import { Button } from '~/modules/Elements/AKUI/Button';
-import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { Flag } from '~/modules/Elements/Flag';
-import { Input } from '~/modules/Elements/Input';
 import { serverRpc } from '~/modules/RemoteMic/Network/Client';
 import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
 import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
@@ -16,7 +12,7 @@ import { useLanguageList } from '~/modules/Songs/hooks/useLanguageList';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from '~/modules/hooks/useBaseUnitPx';
 import isE2E from '~/modules/utils/isE2E';
-import LanguageFilter from '~/routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
+import SongListToolbar from '~/routes/RemoteMic/Panels/RemoteSongList/SongListToolbar';
 import { useMySongList } from '~/routes/RemoteMic/Panels/RemoteSongList/useMySongList';
 import { ConnectionStatuses } from '~/routes/RemoteMic/RemoteMic';
 import usePermissions from '~/routes/RemoteMic/hooks/usePermissions';
@@ -142,49 +138,21 @@ function RemoteSongList({ connectionStatus }: Props) {
   }, [groupedSongList, expandedArtists]);
 
   const languages = useLanguageList(songList);
-  const selectedLanguages = languages.length - excludedLanguages.length;
 
   const unit = useBaseUnitPx();
 
   return (
     <div className="relative flex h-[calc(100vh-6rem)] flex-auto flex-col overflow-hidden">
-      <div className={`typography flex flex-col bg-black/75 p-1`}>
-        <Input
-          size="mini"
-          className="text-sm"
-          focused={false}
-          label={<Search className="h-4! w-4!" />}
-          placeholder="Search the list…"
-          value={search}
-          onChange={(value) => setSearch(value)}
-          data-test="search-input"
-        />
-        <div className="flex w-full gap-1">
-          <Selector value={tab} onChange={(value) => changeTab(value as 'list' | 'queue')} className="flex-1">
-            <Selector.Item value="list" size="mini" className="flex-1" data-test="all-songs-button">
-              All songs
-            </Selector.Item>
-            <Selector.Item value="queue" size="mini" className="flex-1" data-test="your-list-button">
-              Your list ({savedSongList.length})
-            </Selector.Item>
-          </Selector>
-          <LanguageFilter
-            excludedLanguages={excludedLanguages}
-            languageList={languages}
-            onListChange={setExcludedLanguages}>
-            {({ open }) => (
-              <Button
-                size="mini"
-                onClick={open}
-                focused={excludedLanguages.length > 0 && tab === 'list'}
-                className="scale-100 animate-none"
-                data-test="song-language-filter">
-                🇺🇳{selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
-              </Button>
-            )}
-          </LanguageFilter>
-        </div>
-      </div>
+      <SongListToolbar
+        search={search}
+        onSearchChange={setSearch}
+        tab={tab}
+        onTabChange={changeTab}
+        savedSongCount={savedSongList.length}
+        excludedLanguages={excludedLanguages}
+        onExcludedLanguagesChange={setExcludedLanguages}
+        languages={languages}
+      />
       <CustomVirtualization
         forceRenderItem={-1}
         Footer={<div style={{ height: unit * 3.75 }} className="landscap:block hidden" />}
@@ -212,7 +180,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
             return (
               <SongListItem
-                className="overflow-hidden border-b border-black bg-black/75 active:bg-black/100"
+                className="overflow-hidden border-b border-black bg-black/60 active:bg-black/100"
                 data-test={`song-group-${mainArtistName}`}
                 data-song-count={song.length}
                 onClick={onClick}
@@ -248,7 +216,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
           return (
             <SongListItem
-              className={`${isOnSavedList ? 'bg-black/40' : ''} ${isExpanded ? 'pl-16' : ''}`}
+              className={`${isOnSavedList ? 'bg-black/50' : 'bg-black/30'} ${isExpanded ? 'pl-16' : ''}`}
               data-test={song.id}
               left={<Flag language={song.language} className="h-8 w-8 rounded-full object-cover" />}
               topText={song.title}
@@ -310,7 +278,7 @@ const SongListItem = ({ className, left, action, topText, bottomText, ...props }
   return (
     <div
       className={cn(
-        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/15 px-4 transition-all duration-100`,
+        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/15 px-3 transition-all duration-100`,
         className,
       )}
       {...props}>
@@ -319,7 +287,7 @@ const SongListItem = ({ className, left, action, topText, bottomText, ...props }
         <span className="text-active text-sm whitespace-nowrap">{topText}</span>
         <span className="text-default text-sm whitespace-nowrap">{bottomText}</span>
       </div>
-      <div className="absolute top-0 right-0 bottom-0 flex items-center justify-center gap-4 pr-4">{action}</div>
+      <div className="absolute top-0 right-0 bottom-0 flex items-center justify-center gap-4 pr-3">{action}</div>
     </div>
   );
 };
