@@ -44,6 +44,9 @@ function Welcome() {
           <SmoothLink to="jukebox/">
             <Menu.Button {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</Menu.Button>
           </SmoothLink>
+          <SmoothLink to="history/">
+            <Menu.Button {...register('history', () => navigate('history/'))}>History</Menu.Button>
+          </SmoothLink>
           <SmoothLink to="manage-songs/">
             <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
           </SmoothLink>
