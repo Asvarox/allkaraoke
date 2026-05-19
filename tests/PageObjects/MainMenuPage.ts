@@ -39,6 +39,14 @@ export class MainMenuPagePO {
     await this.page.getByTestId('jukebox').click();
   }
 
+  public async goToHistory() {
+    await this.page.getByTestId('history').click();
+  }
+
+  public async waitForContainer() {
+    await this.singSongButton.waitFor();
+  }
+
   public get manageButton() {
     return this.page.getByTestId('manage-songs');
   }

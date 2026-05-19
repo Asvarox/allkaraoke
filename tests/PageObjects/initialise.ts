@@ -4,6 +4,7 @@ import { AdvancedConnectionPagePO } from './AdvancedConnectionPage';
 import { ComputersMicConnectionPagePO } from './ComputersMicConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
 import { GamePagePO } from './GamePage';
+import { HistoryPagePO } from './HistoryPage';
 import { InputSelectionPagePO } from './InputSelectionPage';
 import { JoinExistingGamePagePO } from './JoinExistingGamePage';
 import { JukeboxPagePO } from './JukeboxPage';
@@ -46,6 +47,7 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     postGameResultsPage: new PostGameResultsPagePO(page, context, browser),
     postGameHighScoresPage: new PostGameHighScoresPagePO(page, context, browser),
     jukeboxPage: new JukeboxPagePO(page, context, browser),
+    historyPage: new HistoryPagePO(page, context, browser),
     remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
     singstarConnectionPage: new SingstarConnectionPagePO(page, context, browser),
     computersMicConnectionPage: new ComputersMicConnectionPagePO(page, context, browser),
