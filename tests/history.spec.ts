@@ -27,3 +27,55 @@ test('History page', async ({ page }) => {
     await pages.mainMenuPage.waitForContainer();
   });
 });
+
+test('History entry appears after a play is recorded', async ({ page }) => {
+  await page.goto('/?e2e-test');
+
+  await test.step('Load the app to ensure LocalForage is initialised', async () => {
+    await pages.landingPage.enterTheGame();
+  });
+
+  await test.step('Seed a play entry directly into LocalForage', async () => {
+    // Write a fake SongStats entry directly via IndexedDB to avoid playing a full song in the test.
+    // The key 'e2e-single-english-1995' matches the mock song fixture ID used by getSongKey().
+    await page.evaluate(async () => {
+      await new Promise<void>((resolve, reject) => {
+        const request = indexedDB.open('localforage');
+        request.onsuccess = () => {
+          const db = request.result;
+          try {
+            const transaction = db.transaction('keyvaluepairs', 'readwrite');
+            transaction.objectStore('keyvaluepairs').put(
+              {
+                plays: 1,
+                scores: [
+                  {
+                    setup: { id: 'test-id', players: [{ track: 0, number: 0 }], mode: 'DUEL', tolerance: 2 },
+                    scores: [{ name: 'TestPlayer', score: 100000 }],
+                    date: new Date().toISOString(),
+                    progress: 1,
+                  },
+                ],
+              },
+              'e2e-single-english-1995',
+            );
+            transaction.oncomplete = () => resolve();
+            transaction.onerror = () => reject(new Error('IndexedDB transaction failed'));
+          } catch (error) {
+            reject(error);
+          }
+        };
+        request.onerror = () => reject(new Error('Failed to open IndexedDB'));
+      });
+    });
+  });
+
+  await test.step('Navigate to History', async () => {
+    await pages.mainMenuPage.goToHistory();
+    await pages.historyPage.container.waitFor();
+  });
+
+  await test.step('The play entry appears in the history', async () => {
+    await pages.historyPage.expectEntryCount(1);
+  });
+});
