@@ -1,4 +1,4 @@
-import { Box, Slider } from '@mui/material';
+import { Slider } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import backgroundMusic from '~/assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
@@ -78,12 +78,12 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const internalPlayer = player.current?.getInternalPlayer();
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }} gap={1}>
+    <div className="flex w-full flex-col gap-2">
       <h4>
         Set song preview (start: {msec(previewStart * 1000, internalPlayer)}, end:{' '}
         {msec(previewEnd * 1000, internalPlayer)})
       </h4>
-      <Box sx={{ display: 'flex', gap: 5 }}>
+      <div className="px-5">
         <Slider
           data-test="song-preview"
           disabled={duration === null}
@@ -101,13 +101,16 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
             }
           }}
         />
-      </Box>
+      </div>
 
       <h4>Adjust volume</h4>
-      <Box sx={{ display: 'flex', gap: 5 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+      <div className="flex flex-col gap-10 lg:flex-row">
+        <div className="flex flex-1 flex-col gap-2">
           <h5>Song</h5>
           <YouTube
+            opts={{
+              width: '100%',
+            }}
             videoId={videoId}
             ref={player}
             onPlay={() => {
@@ -122,8 +125,8 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
               setIsReferencePlaying(false);
             }}
           />
-        </Box>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+        </div>
+        <div className="flex flex-1 flex-col gap-2">
           <h5>Reference sound</h5>
           <p>Use the slider below to make the video volume roughly the same as this music.</p>
           <br />
@@ -148,10 +151,10 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
               }
             }}
           />
-        </Box>
-      </Box>
+        </div>
+      </div>
       <h5>Final Song Volume ({data.volume * 100})</h5>
-      <Box>
+      <div className="px-5">
         <Slider
           data-test="volume"
           min={0.1}
@@ -161,7 +164,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           value={data.volume}
           onChange={handleSliderChange}
         />
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
