@@ -92583,6 +92583,33 @@
     "local": false
   },
   {
+    "id": "little-mix-dna",
+    "title": "DNA",
+    "artist": "Little Mix",
+    "video": "D3h-lLj3xv4",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 16767.5,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-05-25T00:37:47.957Z",
+    "realBpm": 15,
+    "volume": 0.5,
+    "author": "Sing-Girl",
+    "sourceUrl": "Little Mix - DNA",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5835,
+    "tracksCount": 1,
+    "search": "littlemixdna",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-jason-derulo-secret-love-song",
     "title": "Secret Love Song",
     "artist": "Little Mix feat. Jason Derulo",
