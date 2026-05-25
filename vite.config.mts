@@ -21,10 +21,6 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  experimental: {
-    // @ts-expect-error missing types for the lib
-    enableNativePlugin: true,
-  },
   plugins: [
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
