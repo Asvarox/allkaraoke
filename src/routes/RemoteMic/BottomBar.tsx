@@ -41,7 +41,7 @@ export default function BottomBar({ active, setActiveTab }: Props) {
 
 const ItemContainer = twc.div<{ $active?: boolean } & TwcComponentProps<'div'>>((props) =>
   [
-    'flex flex-1 cursor-pointer flex-col items-center justify-center gap-1 border-t-2 bg-black p-2 text-xs',
+    'flex flex-1 cursor-pointer flex-col items-center justify-center gap-1 border-t-2 bg-black p-1 text-xs',
     props.$active ? 'text-active border-active' : 'border-transparent text-[#cecece]',
   ].join(' '),
 );
