@@ -52,6 +52,8 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
           <img
             src={thumbnailUrl}
             alt=""
+            loading="lazy"
+            decoding="async"
             className="mt-1 mr-1 aspect-video w-32 shrink-0 self-start rounded-r-[4px] object-cover"
           />
         ) : (

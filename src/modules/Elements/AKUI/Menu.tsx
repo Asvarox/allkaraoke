@@ -33,5 +33,5 @@ Menu.ButtonGroup = twc.div`flex`;
 Menu.HelpText = MenuHelpText;
 Menu.SubHeader = MenuSubHeader;
 Menu.Divider = ({ className, ...props }: ComponentProps<'hr'>) => (
-  <hr className={`border-white/20 ${className}`} {...props} />
+  <hr className={['border-white/20', className].filter(Boolean).join(' ')} {...props} />
 );

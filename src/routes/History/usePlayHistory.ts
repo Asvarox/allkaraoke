@@ -57,8 +57,13 @@ export function usePlayHistory(): { groups: PlayHistoryGroup[]; loading: boolean
   const statsAsync = useAsync(() => getAllStats(), []);
   const songIndexAsync = useAsync(() => SongsService.getIndex(), []);
 
-  if (statsAsync.loading || songIndexAsync.loading || !statsAsync.value || !songIndexAsync.value) {
+  if (statsAsync.loading || songIndexAsync.loading) {
     return { groups: [], loading: true };
+  }
+
+  // Treat errors or missing values as empty (e.g. IndexedDB unavailable)
+  if (statsAsync.error || songIndexAsync.error || !statsAsync.value || !songIndexAsync.value) {
+    return { groups: [], loading: false };
   }
 
   // Build hash → SongPreview lookup map
