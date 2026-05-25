@@ -10,6 +10,7 @@ const routePaths = {
   GAME: 'game',
   MENU: 'menu',
   JUKEBOX: 'jukebox',
+  HISTORY: 'history',
   SELECT_INPUT: 'select-input',
   SETTINGS: 'settings',
   SETTINGS_REMOTE_MICS: 'settings/remote-mics',

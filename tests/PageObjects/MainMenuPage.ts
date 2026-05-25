@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import { Toolbar } from '../components/Toolbar';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
@@ -37,6 +37,14 @@ export class MainMenuPagePO {
 
   public async goToJukebox() {
     await this.page.getByTestId('jukebox').click();
+  }
+
+  public async goToHistory() {
+    await this.page.getByTestId('history').click();
+  }
+
+  public async waitForContainer() {
+    await expect(this.singSongButton).toBeVisible();
   }
 
   public get manageButton() {

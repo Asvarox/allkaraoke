@@ -30,6 +30,7 @@ import Welcome from '~/routes/Welcome/Welcome';
 const LazySongList = lazy(() =>
   import('~/routes/ManageSongs/SongManagement').then((modules) => ({ default: modules.SongList })),
 );
+const LazyHistory = lazy(() => import('~/routes/History/HistoryPage'));
 const LazySetlist = lazy(() => import('~/routes/Edit/Setlists').then((modules) => ({ default: modules.default })));
 
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
@@ -61,6 +62,14 @@ function App() {
                 <Route path={routePaths.MENU} component={Welcome} />
                 <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
                 <Route path={routePaths.JUKEBOX} component={Jukebox} />
+                <Route
+                  path={routePaths.HISTORY}
+                  component={() => (
+                    <Suspense fallback={<PageLoader />}>
+                      <LazyHistory />
+                    </Suspense>
+                  )}
+                />
                 <Route path={routePaths.GAME}>
                   {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
                   <Game />
