@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { useEffect, useState } from 'react';
 import { Menu } from '~/modules/Elements/AKUI/Menu';
+import Loader from '~/modules/Elements/Loader';
+import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import { transportErrorReason } from '~/modules/RemoteMic/Network/Client/NetworkClient';
-import UserMediaEnabled from '~/modules/UserMedia/UserMediaEnabled';
 import isDev from '~/modules/utils/isDev';
-import Connect from '~/routes/RemoteMic/Panels/Microphone/Connect';
+import storage from '~/modules/utils/storage';
+import ConnectionWizard from '~/routes/RemoteMic/Panels/Microphone/ConnectionWizard';
 import RemoteMicKeyboard from '~/routes/RemoteMic/Panels/Microphone/Keyboard';
 import MicPreview from '~/routes/RemoteMic/Panels/Microphone/MicPreview';
 import { ConnectionStatuses } from '~/routes/RemoteMic/RemoteMic';
@@ -24,10 +27,31 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
   const permissions = usePermissions();
   const [searchActive, setSearchActive] = useState(false);
   const [autoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);
-  const [triggerPlayerChangeModal, setTriggerPlayerChangeModal] = useState(false);
+  const [wizardComplete, setWizardComplete] = useState(() => connectionStatus === 'connected');
+  const [isAutoReconnecting, setIsAutoReconnecting] = useState(false);
 
-  const onConnect = async () => {
-    setTriggerPlayerChangeModal(true);
+  // Auto-reconnect: if the host requested a page reload, skip the wizard and reconnect silently
+  useEffect(() => {
+    if (storage.session.getItem('reload-mic-request') !== null) {
+      global.setTimeout(() => storage.session.removeItem('reload-mic-request'), 1);
+      setIsAutoReconnecting(true);
+      setWizardComplete(true);
+      const name = storage.local.getItem<string>('remote_mic_name') ?? '';
+      RemoteMicClient.connect(roomId ?? '', name, true);
+    }
+  }, []);
+
+  const isConnected = connectionStatus === 'connected';
+
+  // Clear auto-reconnecting state once connected
+  useEffect(() => {
+    if (isConnected && isAutoReconnecting) {
+      setIsAutoReconnecting(false);
+    }
+  }, [isConnected, isAutoReconnecting]);
+
+  const onWizardComplete = async () => {
+    setWizardComplete(true);
     setIsKeepAwakeOn(true);
 
     try {
@@ -41,35 +65,42 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
     }
   };
 
-  const isConnected = connectionStatus === 'connected';
-  const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
+  // The wizard controls its own completion via onWizardComplete — do not unmount
+  // it early based on connection status, or the minimum display timer in StepConnecting is bypassed
+  const showWizard = !wizardComplete;
+
+  if (showWizard) {
+    return (
+      <div className="flex h-full flex-col overflow-auto">
+        <ConnectionWizard
+          roomId={roomId}
+          connectionStatus={connectionStatus}
+          connectionError={connectionError}
+          onWizardComplete={onWizardComplete}
+        />
+      </div>
+    );
+  }
+
+  if (isAutoReconnecting && !isConnected) {
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-4">
+        <Loader />
+        <span className="typography text-xl text-white">Reconnecting…</span>
+      </div>
+    );
+  }
+
+  const isReconnecting = connectionStatus === 'reconnecting' || connectionStatus === 'disconnected';
+
   return (
-    <div className="landscap:flex-row landscap:pt-0 text-md landscap:gap-4 flex h-full flex-col items-center justify-center gap-4 overflow-auto px-4 pt-16">
-      <UserMediaEnabled
-        showImages={true}
-        fallback={
-          <>
-            <div className="opacity-0">{micPreview}</div>
-            <span className="typography text-xl">Please allow access to the microphone.</span>
-          </>
-        }>
+    <div className="relative flex h-full flex-col">
+      <div className="text-md flex h-full flex-col items-center justify-center gap-4 overflow-auto px-4 pt-4 md:flex-row">
         <div
-          className={`landscap:mt-0 landscap:flex flex-1.5 landscap:flex-col flex w-full flex-col justify-center gap-4 transition-all duration-300 ease-in-out ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
-          <MicPreview
-            isVisible={isConnected}
-            isMicOn={monitoringStarted}
-            isConnected={isConnected}
-            showPlayerChangeModal={triggerPlayerChangeModal}
-          />
-          <Connect
-            roomId={roomId}
-            isVisible={true}
-            connectionStatus={connectionStatus}
-            onConnect={onConnect}
-            connectionError={connectionError}
-          />
+          className={`flex w-full flex-1 flex-col justify-center gap-4 transition-all duration-300 ease-in-out md:mt-0 md:flex md:flex-col ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
+          <MicPreview isVisible={isConnected} isMicOn={monitoringStarted} isConnected={isConnected} />
         </div>
-        <div>
+        <div className="flex-1">
           {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
           {permissions === 'read' && (
             <Menu.HelpText className="pb-12" data-test="no-permissions-message">
@@ -78,7 +109,20 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             </Menu.HelpText>
           )}
         </div>
-      </UserMediaEnabled>
+      </div>
+
+      <AnimatePresence>
+        {isReconnecting && (
+          <motion.div
+            className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/60"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1, transition: { duration: 0.25 } }}
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
+            <Loader />
+            <span className="typography text-xl text-white">Reconnecting…</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

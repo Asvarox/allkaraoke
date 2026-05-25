@@ -35,6 +35,10 @@ export class RemoteMicChangeMicColorPagePO {
   }
 
   public async goBackToMainMenu() {
-    await this.page.getByTestId('close-menu').click();
+    const closeButton = this.page.getByTestId('close-menu');
+
+    if (await closeButton.isVisible()) {
+      await closeButton.click();
+    }
   }
 }

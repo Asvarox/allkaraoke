@@ -1,20 +1,18 @@
 import NoSleep from '@uriopass/nosleep.js';
 import { useLayoutEffect, useState } from 'react';
-import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 import { useBackground } from '~/modules/Elements/BackgroundContext';
 import { switchToTheme } from '~/modules/GameEngine/Drawing/styles';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from '~/modules/GameEvents/hooks';
 import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 import useQueryParam from '~/modules/hooks/useQueryParam';
-import LayoutGame from '~/routes/LayoutGame';
 import BottomBar from '~/routes/RemoteMic/BottomBar';
 import Microphone from '~/routes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from '~/routes/RemoteMic/Panels/Microphone/ConfirmReadiness';
-import Ping from '~/routes/RemoteMic/Panels/Microphone/Ping';
 import RemoteSettings from '~/routes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from '~/routes/RemoteMic/Panels/RemoteSongList';
 import useSendInitialSongList from '~/routes/RemoteMic/Panels/RemoteSongList/useSendInitialSongList';
+import TopBar from '~/routes/RemoteMic/TopBar';
 
 const noSleep = new NoSleep();
 
@@ -61,26 +59,10 @@ function RemoteMic() {
   };
 
   return (
-    <LayoutGame
-      toolbarContent={
-        activeTab !== 'song-list' ? (
-          <div className="flex w-[50vw] max-w-[150px] flex-col">
-            <Typography className="text-xs">CONNECTION STATUS:</Typography>
-            <Typography className="mr-auto text-sm">
-              <strong data-test="connection-status">{connectionStatus?.toUpperCase()}</strong>{' '}
-              {connectionStatus === 'connected' && (
-                <>
-                  (<Ping />)
-                </>
-              )}
-            </Typography>
-          </div>
-        ) : undefined
-      }>
+    <>
       <ConfirmReadiness onConfirm={onConfirm} />
-      <div
-        id="phone-ui-container"
-        className="landscap:max-w-[60rem] mx-auto flex h-dvh w-full max-w-[25rem] flex-col gap-[1px] bg-black/50">
+      <div id="phone-ui-container" className="mx-auto flex h-dvh w-full max-w-[45rem] flex-col">
+        <TopBar connectionStatus={connectionStatus} />
         <div className="flex flex-1 flex-col justify-center overflow-hidden">
           {activeTab === 'microphone' && (
             <Microphone
@@ -118,7 +100,7 @@ function RemoteMic() {
         </div>
         <BottomBar setActiveTab={setActiveTab} active={activeTab} />
       </div>
-    </LayoutGame>
+    </>
   );
 }
 export default RemoteMic;

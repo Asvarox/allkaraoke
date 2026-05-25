@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
+import { BottomSheet } from '~/modules/Elements/AKUI/BottomSheet';
 import Typography from '~/modules/Elements/AKUI/Primitives/Typography';
 import { MenuButton } from '~/modules/Elements/Menu';
-import Modal from '~/modules/Elements/Modal';
 import RemoteMicClient from '~/modules/RemoteMic/Network/Client';
 import { useSubscription } from '~/modules/RemoteMic/Network/Client/hooks/useSubscription';
 import { SubscriptionChannels } from '~/modules/RemoteMic/Network/Client/subscriptions';
@@ -31,21 +31,23 @@ const Entry = ({ mic }: { mic: ValuesType<SubscriptionChannels['remote-mics']> }
 
   return (
     <Container data-test="manage-players">
-      <Modal open={open} onClose={() => setOpen(false)}>
-        {permission === 'write' && open && (
+      <BottomSheet
+        open={open}
+        onClose={() => setOpen(false)}
+        title={
+          <>
+            Change <strong className="ph-no-capture">{mic.name}</strong>
+          </>
+        }>
+        {permission === 'write' && (
           <PlayerChangeModal
             showRemoveButton={true}
             id={mic.id}
             playerNumber={mic.number}
             onModalClose={() => setOpen(false)}
-            header={
-              <>
-                Change <strong className="ph-no-capture">{mic.name}</strong>:
-              </>
-            }
           />
         )}
-      </Modal>
+      </BottomSheet>
       <RemoteMicEntry
         onClick={() => setOpen(true)}
         data-test="remote-mic-entry"

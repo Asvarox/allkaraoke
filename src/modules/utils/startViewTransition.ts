@@ -11,6 +11,8 @@ export default function startViewTransition(callback: (isTransitioning: boolean)
       previousTransition = document.startViewTransition(async () => {
         await callback(true);
       });
+
+      return previousTransition;
     } catch (e) {
       console.error(e);
     }

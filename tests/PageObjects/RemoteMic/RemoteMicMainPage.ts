@@ -84,7 +84,7 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('connection-status');
   }
   public async expectPlayerToBeConnected() {
-    await expect(this.connectionStatusElement).toContainText('CONNECTED', { ignoreCase: true });
+    await expect(this.connectionStatusElement).toHaveText(/(?:connected|\d+ms)/i);
   }
 
   public async expectPlayerToBeDisconnected() {
@@ -93,6 +93,16 @@ export class RemoteMicMainPagePO {
 
   public async connect() {
     await this.connectButton.click();
+    await this.expectPlayerToBeConnected();
+  }
+
+  public async expectConnectActionToBeUnavailable() {
+    if (await this.connectButton.isVisible()) {
+      await expect(this.connectButton).toBeDisabled();
+      return;
+    }
+
+    await expect(this.connectButton).not.toBeVisible();
   }
 
   public get searchSongInput() {

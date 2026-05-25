@@ -1,13 +1,17 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { PropsWithChildren } from 'react';
+import { createPortal } from 'react-dom';
 import { twc } from 'react-twc';
 interface Props extends PropsWithChildren {
   open: boolean;
   onClose?: () => void;
+  // When true, renders the modal inside a React portal attached to document.body,
+  // which ensures it escapes any parent stacking contexts or overflow:hidden containers.
+  withPortal?: boolean;
 }
 
-export default function Modal({ children, open, onClose }: Props) {
-  return (
+export default function Modal({ children, open, onClose, withPortal = false }: Props) {
+  const content = (
     <AnimatePresence>
       {open && (
         <>
@@ -33,6 +37,8 @@ export default function Modal({ children, open, onClose }: Props) {
       )}
     </AnimatePresence>
   );
+
+  return withPortal ? createPortal(content, document.body) : content;
 }
 
 const Backdrop = twc(

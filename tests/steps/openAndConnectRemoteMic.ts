@@ -1,12 +1,22 @@
-import { Browser, BrowserContext, Page, devices, test } from '@playwright/test';
+import { Browser, BrowserContext, devices, expect, Page, test } from '@playwright/test';
 import initialiseRemoteMic from '../PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from '../PageObjects/initialise';
 import { initTestMode, mockSongs } from '../helpers';
 
 export async function connectRemoteMic(remoteMicPage: Page, closeMicSelectionMenu = true) {
   await remoteMicPage.getByTestId('connect-button').click();
+
+  await expect(remoteMicPage.getByTestId('connection-status')).toHaveText(/\d+ms/i, { timeout: 14_000 });
+
   if (closeMicSelectionMenu) {
-    await remoteMicPage.getByTestId('close-menu').click();
+    const closeButton = remoteMicPage.getByTestId('close-menu');
+
+    try {
+      await closeButton.waitFor({ state: 'visible', timeout: 2_000 });
+      await closeButton.click();
+    } catch {
+      // The connect flow does not always open the player-change sheet.
+    }
   }
 }
 export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser) {

@@ -28,7 +28,7 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
     permissions === 'write' ? null : 'microphone',
   );
   return (
-    <div className="flex flex-grow flex-col justify-center gap-2.5 px-4 pt-12 pb-4 text-[1.625rem]">
+    <div className="flex flex-grow flex-col justify-center gap-2.5 px-3 pt-12 pb-4 text-[1.625rem]">
       <span className="typography text-lg">
         Remote mic ID:{' '}
         <strong data-test="remote-mic-id">{RemoteMicClient.getClientId()?.slice(-4).toUpperCase() ?? '----'}</strong>
