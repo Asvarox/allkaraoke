@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class HistoryPagePO {
   constructor(
@@ -20,9 +20,7 @@ export class HistoryPagePO {
   }
 
   public async expectEntryCount(count: number) {
-    await this.entries.nth(count - 1).waitFor();
-    const actual = await this.entries.count();
-    if (actual !== count) throw new Error(`Expected ${count} entries, got ${actual}`);
+    await expect(this.entries).toHaveCount(count);
   }
 
   public async navigateToEntry(index: number) {

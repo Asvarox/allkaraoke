@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import { Toolbar } from '../components/Toolbar';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
@@ -44,7 +44,7 @@ export class MainMenuPagePO {
   }
 
   public async waitForContainer() {
-    await this.singSongButton.waitFor();
+    await expect(this.singSongButton).toBeVisible();
   }
 
   public get manageButton() {

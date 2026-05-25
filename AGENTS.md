@@ -1,6 +1,7 @@
 # Agent Instructions
-* The baseline branch is called `master` (not `main`, not `trunk` etc)
-* This project uses React Compiler and thus callbacks and values don't need to be manually memoized
+
+- The baseline branch is called `master` (not `main`, not `trunk` etc)
+- This project uses React Compiler and thus callbacks and values don't need to be manually memoized
 
 ## Commands
 

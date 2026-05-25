@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './PageObjects/initialise';
 
@@ -15,16 +15,16 @@ test('History page', async ({ page }) => {
   await test.step('Navigate from main menu to History', async () => {
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToHistory();
-    await pages.historyPage.container.waitFor();
+    await expect(pages.historyPage.container).toBeVisible();
   });
 
   await test.step('Shows empty state when no songs have been sung', async () => {
-    await pages.historyPage.emptyState.waitFor();
+    await expect(pages.historyPage.emptyState).toBeVisible();
   });
 
   await test.step('Back to menu via backspace', async () => {
     await page.keyboard.press('Backspace');
-    await pages.mainMenuPage.waitForContainer();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
   });
 });
 
@@ -41,6 +41,13 @@ test('History entry appears after a play is recorded', async ({ page }) => {
     await page.evaluate(async () => {
       await new Promise<void>((resolve, reject) => {
         const request = indexedDB.open('localforage');
+        // Create the 'keyvaluepairs' store if the DB is being opened for the first time
+        // (i.e. before LocalForage has initialised it by visiting the History page).
+        // LocalForage checks objectStoreNames before creating, so this is safe even if it later
+        // upgrades the DB version.
+        request.onupgradeneeded = () => {
+          request.result.createObjectStore('keyvaluepairs');
+        };
         request.onsuccess = () => {
           const db = request.result;
           try {
@@ -72,7 +79,7 @@ test('History entry appears after a play is recorded', async ({ page }) => {
 
   await test.step('Navigate to History', async () => {
     await pages.mainMenuPage.goToHistory();
-    await pages.historyPage.container.waitFor();
+    await expect(pages.historyPage.container).toBeVisible();
   });
 
   await test.step('The play entry appears in the history', async () => {

@@ -13,6 +13,7 @@
 ### Task 1: Add route path
 
 **Files:**
+
 - Modify: `src/routes/routePaths.ts`
 
 **Step 1: Add the HISTORY route key**
@@ -26,7 +27,7 @@ const routePaths = {
   GAME: 'game',
   MENU: 'menu',
   JUKEBOX: 'jukebox',
-  HISTORY: 'history',           // ← add this
+  HISTORY: 'history', // ← add this
   SELECT_INPUT: 'select-input',
   // ... rest unchanged
 } as const;
@@ -44,6 +45,7 @@ git commit -m "feat(history): add HISTORY route path"
 ### Task 2: Write a failing E2E navigation test
 
 **Files:**
+
 - Create: `tests/PageObjects/HistoryPage.ts`
 - Create: `tests/history.spec.ts`
 
@@ -154,6 +156,7 @@ git commit -m "test(history): add failing E2E test for history page navigation"
 ### Task 3: Register the route in App.tsx and add menu button
 
 **Files:**
+
 - Modify: `src/App.tsx`
 - Modify: `src/routes/Welcome/Welcome.tsx`
 
@@ -234,6 +237,7 @@ git commit -m "feat(history): add route, menu button, and page stub"
 ### Task 4: Implement `usePlayHistory` hook
 
 **Files:**
+
 - Create: `src/routes/History/usePlayHistory.ts`
 
 **Step 1: Write a unit test for the data transformation logic**
@@ -389,17 +393,20 @@ git commit -m "feat(history): add usePlayHistory data hook with unit tests"
 ### Task 5: Implement `PlayEntryCard` component
 
 **Files:**
+
 - Create: `src/routes/History/PlayEntryCard.tsx`
 
 **Step 1: Understand how scores are displayed**
 
 The `scores` array in a `PlayHistoryEntry` already has the right shape for display:
+
 - In co-op mode it has one entry like `{ name: "Alex, Sam", score: 1240000 }`
 - In duel/duet mode it has one entry per player
 
 Score numbers should be formatted with `toLocaleString()` (e.g. `1,240,000`).
 
 Game mode should be rendered as human-readable text:
+
 - `DUEL` → "Duel"
 - `CO_OP` → "Co-op"
 - `PASS_THE_MIC` → "Pass the Mic"
@@ -470,16 +477,12 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, ...rest }: 
   );
 }
 
-const Card = twc.div`
-  cursor-pointer rounded-lg px-6 py-4
-  data-[focused=true]:bg-active data-[focused=true]:scale-[1.025]
-  transition-transform
-`;
+const Card = twc.div`data-[focused=true]:bg-active cursor-pointer rounded-lg px-6 py-4 transition-transform data-[focused=true]:scale-[1.025]`;
 const CollapsedRow = twc.div`flex items-center justify-between gap-4`;
 const SongInfo = twc.div`flex flex-col`;
 const Title = twc.span`typography font-bold`;
 const Artist = twc.span`typography text-sm opacity-70`;
-const Time = twc.span`typography text-sm opacity-70 shrink-0`;
+const Time = twc.span`typography shrink-0 text-sm opacity-70`;
 const Details = twc.div`mt-3 flex flex-col gap-1 border-t border-white/20 pt-3`;
 const DetailRow = twc.div`typography flex justify-between text-sm`;
 ```
@@ -498,6 +501,7 @@ git commit -m "feat(history): add PlayEntryCard expandable component"
 ### Task 6: Implement `HistoryPage` component
 
 **Files:**
+
 - Modify: `src/routes/History/HistoryPage.tsx`
 
 **Step 1: Look at a settings page for layout reference**
@@ -538,9 +542,7 @@ function HistoryPage() {
       <Container data-test="history-page">
         <Header>History</Header>
         {loading && <Message>Loading…</Message>}
-        {isEmpty && (
-          <Message data-test="history-empty-state">No songs sung yet — go sing something!</Message>
-        )}
+        {isEmpty && <Message data-test="history-empty-state">No songs sung yet — go sing something!</Message>}
         {groups.map((group) => (
           <section key={group.label}>
             <DateHeader>{group.label}</DateHeader>
@@ -555,9 +557,7 @@ function HistoryPage() {
                   entry={entry}
                   isExpanded={isExpanded}
                   data-test="history-entry"
-                  {...register(entryKey, () =>
-                    setExpandedKey(isExpanded ? null : entryKey),
-                  )}
+                  {...register(entryKey, () => setExpandedKey(isExpanded ? null : entryKey))}
                 />
               );
             })}
@@ -568,9 +568,9 @@ function HistoryPage() {
   );
 }
 
-const Container = twc.div`flex flex-col gap-2 overflow-y-auto p-8 h-full`;
-const Header = twc.h1`typography text-3xl font-bold mb-4`;
-const DateHeader = twc.h2`typography text-lg font-semibold opacity-70 mt-6 mb-2 first:mt-0`;
+const Container = twc.div`flex h-full flex-col gap-2 overflow-y-auto p-8`;
+const Header = twc.h1`typography mb-4 text-3xl font-bold`;
+const DateHeader = twc.h2`typography mt-6 mb-2 text-lg font-semibold opacity-70 first:mt-0`;
 const Message = twc.p`typography opacity-70`;
 
 export default HistoryPage;
@@ -596,6 +596,7 @@ git commit -m "feat(history): implement history page with date groups and keyboa
 ### Task 7: E2E test — entry appears after singing
 
 **Files:**
+
 - Modify: `tests/history.spec.ts`
 
 **Step 1: Add a test that sings a song and checks history**
@@ -673,21 +674,21 @@ git commit -m "fix(history): resolve type and lint issues"
 
 ## Summary of new files
 
-| File | Purpose |
-|------|---------|
-| `src/routes/History/HistoryPage.tsx` | Main page component |
-| `src/routes/History/PlayEntryCard.tsx` | Expandable song play card |
-| `src/routes/History/usePlayHistory.ts` | Data hook (load, flatten, group) |
-| `src/routes/History/usePlayHistory.test.ts` | Unit tests for grouping logic |
-| `tests/PageObjects/HistoryPage.ts` | Page object for E2E tests |
-| `tests/history.spec.ts` | E2E tests |
+| File                                        | Purpose                          |
+| ------------------------------------------- | -------------------------------- |
+| `src/routes/History/HistoryPage.tsx`        | Main page component              |
+| `src/routes/History/PlayEntryCard.tsx`      | Expandable song play card        |
+| `src/routes/History/usePlayHistory.ts`      | Data hook (load, flatten, group) |
+| `src/routes/History/usePlayHistory.test.ts` | Unit tests for grouping logic    |
+| `tests/PageObjects/HistoryPage.ts`          | Page object for E2E tests        |
+| `tests/history.spec.ts`                     | E2E tests                        |
 
 ## Modified files
 
-| File | Change |
-|------|--------|
-| `src/routes/routePaths.ts` | Add `HISTORY: 'history'` |
-| `src/App.tsx` | Register lazy-loaded `HistoryPage` route |
-| `src/routes/Welcome/Welcome.tsx` | Add History menu button |
-| `tests/PageObjects/initialise.ts` | Register `historyPage` page object |
-| `tests/PageObjects/MainMenuPage.ts` | Add `goToHistory()` method |
+| File                                | Change                                   |
+| ----------------------------------- | ---------------------------------------- |
+| `src/routes/routePaths.ts`          | Add `HISTORY: 'history'`                 |
+| `src/App.tsx`                       | Register lazy-loaded `HistoryPage` route |
+| `src/routes/Welcome/Welcome.tsx`    | Add History menu button                  |
+| `tests/PageObjects/initialise.ts`   | Register `historyPage` page object       |
+| `tests/PageObjects/MainMenuPage.ts` | Add `goToHistory()` method               |

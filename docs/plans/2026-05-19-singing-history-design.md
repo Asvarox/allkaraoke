@@ -35,9 +35,9 @@ If a song has since been removed from the library, the entry still appears with 
 ```typescript
 interface PlayHistoryEntry {
   songKey: string;
-  song: SongPreview | null;       // null = song removed from library
-  date: string;                   // ISO timestamp
-  progress: number | undefined;   // 0–1 completion
+  song: SongPreview | null; // null = song removed from library
+  date: string; // ISO timestamp
+  progress: number | undefined; // 0–1 completion
   mode: GAME_MODE;
   scores: Array<{ name: string; score: number }>;
 }
@@ -67,11 +67,11 @@ This matches the existing storage format — no transformation needed.
 
 All in `src/routes/History/`:
 
-| File | Responsibility |
-|------|---------------|
-| `HistoryPage.tsx` | Main page, calls `usePlayHistory()`, renders date groups |
+| File                | Responsibility                                             |
+| ------------------- | ---------------------------------------------------------- |
+| `HistoryPage.tsx`   | Main page, calls `usePlayHistory()`, renders date groups   |
 | `PlayEntryCard.tsx` | Single expandable card; click/Enter toggles expanded state |
-| `usePlayHistory.ts` | Data hook — flatten, sort, group by day |
+| `usePlayHistory.ts` | Data hook — flatten, sort, group by day                    |
 
 Styling uses existing AKUI components (Tailwind, consistent with the rest of the app).
 

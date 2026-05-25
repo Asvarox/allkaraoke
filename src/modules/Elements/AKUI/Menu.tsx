@@ -1,4 +1,4 @@
-import { HTMLProps, PropsWithChildren, ReactNode } from 'react';
+import { ComponentProps, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { twc } from 'react-twc';
 import { MenuButton } from '~/modules/Elements/AKUI/Menu/MenuButton';
 import Box from '~/modules/Elements/AKUI/Primitives/Box';
@@ -32,4 +32,6 @@ Menu.Button = MenuButton;
 Menu.ButtonGroup = twc.div`flex`;
 Menu.HelpText = MenuHelpText;
 Menu.SubHeader = MenuSubHeader;
-Menu.Divider = () => <hr />;
+Menu.Divider = ({ className, ...props }: ComponentProps<'hr'>) => (
+  <hr className={`border-white/20 ${className}`} {...props} />
+);
