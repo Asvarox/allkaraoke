@@ -120,16 +120,20 @@ export class RemoteMicSongListPagePO {
 
   public async chooseSongForPreview(songID: string) {
     const songElement = this.getSongElement(songID);
+    let searchWasUsedToRevealSong = false;
 
     // Used to find grouped song
     if (await songElement.isHidden()) {
       const songNameFromID = songID.split('-')[1];
       await this.searchTheSong(songNameFromID);
       await expect(songElement).toBeVisible();
+      searchWasUsedToRevealSong = true;
     }
 
     await songElement.locator(this.selectSongButton).click();
-    await this.clearSearch();
+    if (searchWasUsedToRevealSong) {
+      await this.clearSearch();
+    }
   }
 
   public getGroupedArtistSongsElement(artistName: string) {
