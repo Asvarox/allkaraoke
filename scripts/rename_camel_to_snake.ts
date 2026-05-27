@@ -31,7 +31,19 @@ const IMPORTABLE_EXTENSIONS = [
 ];
 const UPDATABLE_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.jsx', '.mjs', '.mts', '.cjs', '.cts', '.css', '.scss']);
 
-const dryRun = process.argv.includes('--dry-run');
+const args = process.argv.slice(2);
+const dryRun = args.includes('--dry-run');
+const showHelp = args.includes('--help') || args.includes('-h');
+const unknownArgs = args.filter((arg) => !['--dry-run', '--help', '-h'].includes(arg));
+
+if (showHelp) {
+  console.log('Usage: pnpm ts-node scripts/rename_camel_to_snake.ts [--dry-run]');
+  process.exit(0);
+}
+
+if (unknownArgs.length > 0) {
+  throw new Error(`Unknown arguments: ${unknownArgs.join(', ')}`);
+}
 const skippedRenames: Array<{ source: string; reason: string }> = [];
 
 const allFiles = walkFiles(REPO_ROOT);
@@ -41,7 +53,7 @@ for (const file of allFiles) {
   const parsed = path.parse(file);
   const snakeName = toSnakeCase(parsed.name);
 
-  if (!snakeName || snakeName === parsed.name) continue;
+  if (snakeName === parsed.name) continue;
 
   const target = path.join(parsed.dir, `${snakeName}${parsed.ext}`);
   if (target === file) continue;
@@ -93,7 +105,7 @@ for (const file of filesAfterRename) {
   const content = fs.readFileSync(file, 'utf8');
 
   const updated = content.replace(
-    /((?:from|import|require)\s*\(?\s*['"])([^'"]+)(['"]\)?)/g,
+    /((?:from|import)\s+['"]|(?:require|import)\s*\(\s*['"])([^'"]+)(['"](?:\s*\))?)/g,
     (match, start, specifier, end) => {
       const rewritten = rewriteSpecifier(specifier, file, oldImporterPath, oldFilesSet, renameMap);
       if (!rewritten || rewritten === specifier) return match;
@@ -144,7 +156,7 @@ function walkFiles(rootDir: string): string[] {
 }
 
 function toSnakeCase(name: string): string {
-  if (!/[A-Z]/.test(name)) return '';
+  if (!/[A-Z]/.test(name)) return name;
 
   return name
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
