@@ -4,10 +4,35 @@ import path from 'node:path';
 const REPO_ROOT = path.resolve(__dirname, '..');
 const SRC_ROOT = path.join(REPO_ROOT, 'src');
 const IGNORED_DIRS = new Set(['.git', 'node_modules', 'build', 'dist', 'coverage', '.next', '.turbo']);
-const IMPORTABLE_EXTENSIONS = ['.ts', '.tsx', '.js', '.jsx', '.mjs', '.mts', '.cjs', '.cts', '.json'];
+const IMPORTABLE_EXTENSIONS = [
+  '.ts',
+  '.tsx',
+  '.js',
+  '.jsx',
+  '.mjs',
+  '.mts',
+  '.cjs',
+  '.cts',
+  '.json',
+  '.css',
+  '.scss',
+  '.svg',
+  '.png',
+  '.jpg',
+  '.jpeg',
+  '.gif',
+  '.webp',
+  '.avif',
+  '.mp3',
+  '.ogg',
+  '.wav',
+  '.mp4',
+  '.webm',
+];
 const UPDATABLE_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.jsx', '.mjs', '.mts', '.cjs', '.cts', '.css', '.scss']);
 
 const dryRun = process.argv.includes('--dry-run');
+const skippedRenames: Array<{ source: string; reason: string }> = [];
 
 const allFiles = walkFiles(REPO_ROOT);
 const renameMap = new Map<string, string>();
@@ -22,7 +47,11 @@ for (const file of allFiles) {
   if (target === file) continue;
   if (renameMap.has(file)) continue;
   if (fs.existsSync(target) && !renameMap.has(target)) {
-    throw new Error(`Cannot rename ${toRepoPath(file)} -> ${toRepoPath(target)} because target already exists`);
+    skippedRenames.push({
+      source: file,
+      reason: `target ${toRepoPath(target)} already exists`,
+    });
+    continue;
   }
 
   renameMap.set(file, target);
@@ -32,7 +61,12 @@ const targetUsage = new Map<string, string>();
 for (const [oldPath, newPath] of renameMap) {
   const existing = targetUsage.get(newPath);
   if (existing) {
-    throw new Error(`Rename collision: ${toRepoPath(existing)} and ${toRepoPath(oldPath)} -> ${toRepoPath(newPath)}`);
+    skippedRenames.push({
+      source: oldPath,
+      reason: `rename collision with ${toRepoPath(existing)} -> ${toRepoPath(newPath)}`,
+    });
+    renameMap.delete(oldPath);
+    continue;
   }
   targetUsage.set(newPath, oldPath);
 }
@@ -76,13 +110,17 @@ for (const file of filesAfterRename) {
 }
 
 console.log(
-  `Renamed ${renameMap.size} files${dryRun ? ' (dry run)' : ''} and updated imports in ${touchedFiles} files.`,
+  `Renamed ${renameMap.size} files${dryRun ? ' (dry run)' : ''} and updated imports in ${touchedFiles} files. Skipped ${skippedRenames.length} renames.`,
 );
 
 if (dryRun) {
   for (const [oldPath, newPath] of renameMap) {
     console.log(`${toRepoPath(oldPath)} -> ${toRepoPath(newPath)}`);
   }
+}
+
+for (const { source, reason } of skippedRenames) {
+  console.warn(`Skipped ${toRepoPath(source)}: ${reason}`);
 }
 
 function walkFiles(rootDir: string): string[] {
@@ -137,7 +175,7 @@ function rewriteSpecifier(
   const resolvedNew = renameMap.get(resolvedOld) ?? resolvedOld;
   if (resolvedNew === resolvedOld && !renamedTargetSet.has(importerNewPath)) return null;
 
-  const keepExtension = Boolean(path.posix.extname(specifier));
+  const keepExtension = hasKnownImportExtension(specifier);
   if (specifier.startsWith('~/')) {
     if (!resolvedNew.startsWith(SRC_ROOT)) return null;
     let aliasPath = toPosix(path.relative(SRC_ROOT, resolvedNew));
@@ -153,7 +191,7 @@ function rewriteSpecifier(
 }
 
 function resolveSpecifier(importerPath: string, specifier: string, oldFilesSet: Set<string>): string | null {
-  const hasExtension = Boolean(path.posix.extname(specifier));
+  const hasExtension = hasKnownImportExtension(specifier);
   const basePath = specifier.startsWith('~/')
     ? path.resolve(SRC_ROOT, specifier.slice(2))
     : path.resolve(path.dirname(importerPath), specifier);
@@ -175,6 +213,10 @@ function resolveSpecifier(importerPath: string, specifier: string, oldFilesSet: 
   }
 
   return null;
+}
+
+function hasKnownImportExtension(specifier: string): boolean {
+  return IMPORTABLE_EXTENSIONS.some((extension) => specifier.endsWith(extension));
 }
 
 function stripExtension(value: string): string {
