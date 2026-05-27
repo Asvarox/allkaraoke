@@ -93,6 +93,17 @@ function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
   );
 }
 
+function BadgeUnverified({ className, ...props }: ComponentProps<typeof Chip>) {
+  const { song } = useSongCardContext();
+  if (!song.isUnverifiedSharedSong) return null;
+
+  return (
+    <Chip variant="orange" className={className} {...props}>
+      <span>Unverified</span>
+    </Chip>
+  );
+}
+
 function BadgeStats({
   focused = false,
   compact = false,
@@ -147,6 +158,7 @@ export const SongCard = Object.assign(SongCardRoot, {
   Badges: Object.assign(Badges, {
     Flag: BadgeFlag,
     Duet: BadgeDuet,
+    Unverified: BadgeUnverified,
     Stats: BadgeStats,
   }),
 });

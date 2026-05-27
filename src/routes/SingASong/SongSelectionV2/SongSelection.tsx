@@ -378,6 +378,7 @@ const SongListEntry = memo(({ focused: isFocused, songId, groupLetter, handleCli
         <SongCard.Badges>
           <SongCard.Badges.Flag />
           <SongCard.Badges.Duet />
+          <SongCard.Badges.Unverified />
           <SongCard.Badges.Stats compact />
         </SongCard.Badges>
       </SongCard.Footer>

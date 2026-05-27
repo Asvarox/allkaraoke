@@ -19,8 +19,12 @@ export default function Edit() {
   const { data } = useSongIndex(true);
   const [shareSongs] = useShareSongs(null);
   const songId = useQueryParam('song');
+  const externalSongId = useQueryParam('externalSong');
   useBackgroundMusic(false);
-  const song = useSong(songId ?? '');
+  const song = useSong(songId ?? '', {
+    sourceType: externalSongId ? 'shared' : 'library',
+    externalSongId: externalSongId ?? undefined,
+  });
 
   if (!song.data) return <>Loading</>;
 

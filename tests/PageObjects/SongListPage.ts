@@ -76,6 +76,40 @@ export class SongListPagePO {
     }
   }
 
+  public getSharedSongSearchResult(songTitle: string) {
+    return this.page.getByRole('button', { name: songTitle, exact: true });
+  }
+
+  public async openPreviewForSharedSong(songTitle: string) {
+    const song = this.getSharedSongSearchResult(songTitle);
+    await expect(song).toBeVisible();
+    await song.click();
+    await this.page.waitForTimeout(100);
+
+    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
+      await this.page.keyboard.press('Enter');
+    }
+  }
+
+  public async openSharedSongSearchResultCard(songTitle: string, artist: string) {
+    const sharedSongCard = this.songListContainer
+      .locator('div.cursor-pointer', {
+        has: this.page.getByText(songTitle, { exact: true }),
+      })
+      .filter({ hasText: artist })
+      .first();
+
+    await expect(sharedSongCard).toBeVisible();
+    await sharedSongCard.click();
+    await this.page.waitForTimeout(100);
+
+    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
+      await this.page.keyboard.press('Enter');
+    }
+
+    await expect(this.page.getByTestId('game-mode-setting')).toBeVisible();
+  }
+
   public get songListContainer() {
     return this.page.locator('[data-test="song-list-container"]');
   }

@@ -4,6 +4,7 @@ import { SongPreview } from '~/interfaces';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import useRecommendedSongs from '~/routes/SingASong/SongSelectionV2/Hooks/useRecommendedSongs';
 import { useSongListFilter } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongListFilter';
+import useSharedSongsSearch from '~/routes/SingASong/SongSelectionV2/Hooks/useSharedSongsSearch';
 
 export interface SongGroup {
   name: string;
@@ -36,6 +37,19 @@ export default function useSongList(additionalSong: string | null) {
   const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist } =
     useSongListFilter(songList.data, popular, isLoading, additionalSong);
 
+  const existingSongIds = useMemo(() => new Set(songList.data.map((song) => song.id)), [songList.data]);
+  const sharedSongs = useSharedSongsSearch({
+    searchText: filters.search ?? '',
+    regularResultsCount: filteredList.length,
+    fallbackThreshold: 8,
+    existingSongIds,
+  });
+
+  const mergedSearchList = useMemo(
+    () => (filters.search ? [...filteredList, ...sharedSongs] : filteredList),
+    [filters.search, filteredList, sharedSongs],
+  );
+
   const groupedSongList = useMemo(() => {
     const groups: SongGroup[] = [];
 
@@ -44,6 +58,17 @@ export default function useSongList(additionalSong: string | null) {
         name: 'Search results',
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
+
+      if (sharedSongs.length > 0) {
+        groups.push({
+          name: 'Shared songs (unverified)',
+          songs: sharedSongs.map((song, index) => ({
+            index: filteredList.length + index,
+            song,
+            isPopular: false,
+          })),
+        });
+      }
 
       return groups;
     } else {
@@ -89,11 +114,11 @@ export default function useSongList(additionalSong: string | null) {
 
       return finalGroups;
     }
-  }, [filteredList, filters.search, popular, playlist]);
+  }, [filteredList, filters.search, popular, playlist, sharedSongs]);
 
   return {
     groupedSongList,
-    songList: filteredList,
+    songList: mergedSearchList,
     filters,
     setFilters,
     isLoading,

@@ -231,6 +231,7 @@ export default function SongPreviewComponent({
             <SongCard.Badges>
               <SongCard.Badges.Flag />
               <SongCard.Badges.Duet />
+              <SongCard.Badges.Unverified />
               <SongCard.Badges.Stats focused compact />
             </SongCard.Badges>
           </SongCard.Footer>

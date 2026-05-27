@@ -1,0 +1,12 @@
+name = "allkaraoke-party"
+compatibility_date = "2026-05-27"
+
+pages_build_output_dir = "build"
+
+[[kv_namespaces]]
+binding = "SHARED_SONGS_KV"
+id = "0d4f3c2b1a9e8d7c6b5a4f3c2b1a9e8d"
+preview_id = "0d4f3c2b1a9e8d7c6b5a4f3c2b1a9e8d"
+
+[vars]
+SHARED_SONGS_ADMIN_TOKEN = "local-shared-songs-admin-token"

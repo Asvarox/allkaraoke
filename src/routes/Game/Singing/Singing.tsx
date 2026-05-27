@@ -29,7 +29,10 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   useFullscreen();
   useBlockScroll();
   const player = useRef<PlayerRef | null>(null);
-  const song = useSong(songPreview.id);
+  const song = useSong(songPreview.id, {
+    sourceType: songPreview.sourceType,
+    externalSongId: songPreview.externalSongId,
+  });
   const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
 
   const { width, height } = useViewportSize();

@@ -5,6 +5,7 @@ import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../../src/modules/Songs/utils/convertTxtToSong';
 import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtubeDurationClient';
+import { isSharedSongsAdminConfigured, removeSharedSongRecord } from './sharedSongsAdminClient';
 
 dotenv.config({ path: '.env.local' });
 
@@ -24,48 +25,50 @@ dotenv.config({ path: '.env.local' });
   if (isNaN(daysFrom)) {
     throw new Error(`Invalid day from: "${argDaysFrom}"`);
   }
-
   const daysTo = argDaysTo !== '' ? +argDaysTo : 0;
   if (isNaN(daysTo)) {
     throw new Error(`Invalid day to: "${argDaysTo}"`);
   }
-
   const dateFrom = new Date();
   dateFrom.setDate(dateFrom.getDate() - daysFrom);
 
   const dateTo = new Date();
   dateTo.setDate(dateTo.getDate() - daysTo);
 
-  try {
-    const response = await requestPostHog(`query`, {
-      method: 'POST',
-      body: JSON.stringify({
-        query: {
-          kind: 'HogQLQuery',
-          query: `
+  const userIds = userId.split(',').map((s) => s.trim());
+  const invalidUserId = userIds.find((id) => !/^[a-zA-Z0-9@._:-]+$/.test(id));
+  if (invalidUserId) {
+    throw new Error(`Invalid user ID: ${invalidUserId}`);
+  }
+
+  const response = await requestPostHog(`query`, {
+    method: 'POST',
+    body: JSON.stringify({
+      query: {
+        kind: 'HogQLQuery',
+        query: `
             select events.properties.song, events.properties.songId, events.created_at
             from events
             where events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
-              and events.properties.$user_id IN(${userId
-                .split(',')
-                .map((s) => `'${s.trim()}'`)
-                .join(',')})
+              and events.properties.$user_id IN(${userIds.map((id) => `'${id}'`).join(',')})
               and event IN ('share-song', 'unshare-song')
             ORDER BY events.created_at ASC
             LIMIT 500
         `,
-        },
-      }),
-    });
+      },
+    }),
+  });
 
-    const addedSongs: string[] = [];
+  const addedSongs: string[] = [];
+  const promotedSongs = new Set<string>();
 
+  try {
     for (const [songTxt, songId] of response.results as [string, string][]) {
       try {
         if (!songTxt && songId) {
           if (addedSongs.includes(songId)) {
-            fs.rmSync(`./public/songs/${songId}.txt`);
+            fs.rmSync(`./public/songs/${songId}.txt`, { force: true });
             console.log(`Deleting song ${songId}`);
           } else {
             console.log(`Song ${songId} marked as deleted, but not found in added songs, leaving as is`);
@@ -79,6 +82,8 @@ dotenv.config({ path: '.env.local' });
           continue;
         }
 
+        promotedSongs.add(song.id);
+
         song.tracks.forEach((track) => {
           track.sections.forEach((section) => {
             if ('notes' in section) {
@@ -89,9 +94,9 @@ dotenv.config({ path: '.env.local' });
           });
         });
 
-        const existingSongPath = `./public/songs/${song.id}.txt`;
-        if (fs.existsSync(existingSongPath)) {
-          const oldSong = convertTxtToSong(fs.readFileSync(existingSongPath, 'utf-8'));
+        const songFilePath = `./public/songs/${song.id}.txt`;
+        if (fs.existsSync(songFilePath)) {
+          const oldSong = convertTxtToSong(fs.readFileSync(songFilePath, 'utf-8'));
           // keep old last update time if the song exists
           // song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
           song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
@@ -115,20 +120,33 @@ dotenv.config({ path: '.env.local' });
           }
         }
 
-        fs.writeFileSync(existingSongPath, convertSongToTxt(song));
+        fs.writeFileSync(songFilePath, convertSongToTxt(song));
         console.log(`Added/updated song ${song.id} - SID ${song.shortId}`);
-      } catch (error) {
-        console.warn(`Couldn't convert song`, songId, error, songTxt);
+      } catch (e) {
+        console.warn(`Couldn't convert song`, songId, e, songTxt);
       }
     }
 
     console.log('Updating song data');
-    execSync(
-      `pnpm ts-node scripts/updateLastUpdate.ts ${addedSongs.map((songId) => `./public/songs/${songId}.txt`).join(' ')}`,
-    );
+    execSync(`pnpm ts-node scripts/updateLastUpdate.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`, {
+      stdio: 'inherit',
+    });
 
     console.log('Updating song stats');
-    execSync(`pnpm ts-node scripts/generateSongStats.ts`);
+    execSync(`pnpm ts-node scripts/generateSongStats.ts`, { stdio: 'inherit' });
+
+    if (isSharedSongsAdminConfigured()) {
+      console.log('Cleaning up promoted shared songs from Cloudflare pending pool');
+      for (const songId of promotedSongs) {
+        try {
+          await removeSharedSongRecord(songId);
+        } catch (error) {
+          console.warn(`Failed to remove shared song ${songId} from Cloudflare pending pool`, error);
+        }
+      }
+    } else {
+      console.warn('Skipping shared songs cleanup: SHARED_SONGS_ADMIN_URL or SHARED_SONGS_ADMIN_TOKEN is missing');
+    }
 
     require('../generateIndex');
   } finally {

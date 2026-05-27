@@ -66,6 +66,8 @@
     "prepare": "husky",
     "e2e": "pnpm playwright test",
     "e2e:prod": "PROD_RUN=true pnpm playwright test",
+    "e2e:cf": "pnpm playwright test -c playwright.cloudflare.config.ts tests/shared-songs-cloudflare-*.spec.ts",
+    "shared-song:upsert-fixture": "pnpm ts-node scripts/cicd/upsertSharedSongFixture.ts tests/fixtures/songs/shared-cloudflare-e2e.txt",
     "test-ct": "pnpm playwright test -c playwright-ct.config.mts",
     "peerjs": "pnpm node peerJSServer.js",
     "storybook": "storybook dev -p 6006",

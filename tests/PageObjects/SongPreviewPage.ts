@@ -52,6 +52,46 @@ export class SongPreviewPagePO {
     }
   }
 
+    public async playTheSongAndWaitForGameplay() {
+      const playButton = this.page.getByTestId('play-song-button');
+      await expect(playButton).toBeVisible();
+
+      await playButton.click();
+
+      const confirmPlayButton = this.page.getByTestId('confirm-play-unverified-song');
+      await confirmPlayButton
+        .waitFor({ state: 'visible', timeout: 2_000 })
+        .then(async () => {
+          await confirmPlayButton.click();
+        })
+        .catch(() => undefined);
+
+      try {
+        await expect(this.page).toHaveURL(/\/game(?:\/|$|\?)/, { timeout: 5_000 });
+      } catch {
+        // In Cloudflare local mode, preview overlays can occasionally swallow the first Playwright click.
+        // Native click() is a resilient fallback that triggers the same button handler.
+        await playButton.evaluate((element) => (element as HTMLElement).click());
+      }
+
+      await expect(this.page).toHaveURL(/\/game(?:\/|$|\?)/, { timeout: 30_000 });
+
+      const calibrationContinueButton = this.page.getByTestId('continue');
+      if (await calibrationContinueButton.isVisible()) {
+        await calibrationContinueButton.click();
+      }
+
+      const calibrationSaveButton = this.page.getByTestId('save');
+      if (await calibrationSaveButton.isVisible()) {
+        await calibrationSaveButton.click();
+      }
+
+      const makeSongGoFastButton = this.page.getByTestId('make-song-go-fast');
+      if (await makeSongGoFastButton.isVisible()) {
+        await makeSongGoFastButton.click();
+      }
+    }
+
   public async navigateToPlayTheSongWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, 'play-song-button', remoteMic);
     await this.page.keyboard.press('Enter');

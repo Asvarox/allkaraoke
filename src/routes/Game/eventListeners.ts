@@ -20,7 +20,13 @@ const trackSongData =
     const sameScores = scores.length > 1 && scores.every((score) => score.score === scores[0].score);
 
     const inputs: Record<string, InputSourceNames> = {};
-    PlayersManager.getPlayers().forEach((player, index) => (inputs[`input${index}`] = player.input.source));
+    PlayersManager.getPlayers().forEach((player, index) => {
+      if (!player.input) {
+        return;
+      }
+
+      inputs[`input${index}`] = player.input.source;
+    });
 
     if (event === 'songEnded') {
       try {
