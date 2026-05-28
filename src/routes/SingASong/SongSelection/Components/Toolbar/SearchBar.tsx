@@ -17,7 +17,7 @@ import events from '~/modules/GameEvents/GameEvents';
 import { useEventEffect } from '~/modules/GameEvents/hooks';
 import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/useKeyboard';
 import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
-import { AppliedFilters } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongListFilter';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface SearchBarProps {
   filters: AppliedFilters;

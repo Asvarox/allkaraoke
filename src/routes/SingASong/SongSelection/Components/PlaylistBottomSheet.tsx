@@ -1,6 +1,6 @@
 import { BottomSheet } from '~/modules/Elements/AKUI/BottomSheet';
 import { Button } from '~/modules/Elements/AKUI/Button';
-import { PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
+import { PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 interface PlaylistBottomSheetProps {
   playlists: PlaylistEntry[];

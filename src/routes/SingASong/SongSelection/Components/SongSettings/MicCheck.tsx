@@ -3,8 +3,8 @@ import InputManager from '~/modules/GameEngine/Input/InputManager';
 import events from '~/modules/GameEvents/GameEvents';
 import { useEventListener, useEventListenerSelector } from '~/modules/GameEvents/hooks';
 import PlayersManager from '~/modules/Players/PlayersManager';
+import MicCheckSlot from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/MicCheckSlot';
 import NoiseDetection from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/NoiseDetection';
-import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
 
 export default function MicCheck(props: ComponentProps<'div'>) {
   // Force update when the name changes
@@ -16,24 +16,24 @@ export default function MicCheck(props: ComponentProps<'div'>) {
 
   const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
   const isSetup = inputs.some((input) => input.source !== 'Dummy');
+  const players = PlayersManager.getPlayers();
 
   return (
-    <div {...props} className={`typography mobile:hidden mb-20 flex gap-8 text-2xl ${props.className ?? ''}`}>
-      <div className="flex flex-col items-center gap-3">
-        Microphone Check
-        {isSetup ? (
-          PlayersManager.getPlayers().map((player) => <SinglePlayer key={player.number} player={player} />)
-        ) : (
-          <>
-            <div className="relative w-4/5 gap-3 border border-white bg-black px-12 py-2 text-center text-lg text-white">
-              Mic not setup
-            </div>
-            <span className={`mobile:text-sm text-lg`}>Singing will be emulated</span>
-            <span className={`mobile:text-sm text-lg`}>You can setup in the Next step</span>
-          </>
+    <div {...props} className={`typography flex flex-col gap-3 text-2xl ${props.className ?? ''}`}>
+      <div className="relative grid w-full grid-cols-2 gap-3 md:grid-cols-1">
+        <div className="absolute right-0 bottom-full left-0 z-30">
+          <NoiseDetection />
+        </div>
+        {([0, 1, 2, 3] as const).map((i) => (
+          <MicCheckSlot key={i} playerIndex={i} player={players.find((p) => p.number === i)} />
+        ))}
+        {!isSetup && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/80 text-center text-white">
+            <span className="text-lg font-semibold">Microphones are not set up yet</span>
+            <span className="text-base opacity-75">You can set them up in the next step</span>
+          </div>
         )}
       </div>
-      <NoiseDetection />
     </div>
   );
 }

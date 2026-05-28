@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
+import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 import { woosh } from '~/modules/SoundManager';
 import { randomInt } from '~/modules/utils/randomValue';
 import startViewTransition from '~/modules/utils/startViewTransition';
 import useSongList from '~/routes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from '~/routes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
+import useToolbarKeyboardNav from '~/routes/SingASong/SongSelection/Hooks/useToolbarKeyboardNav';
 
 export default function useSongSelection(additionalSong: string | null, songsPerRow: number) {
   const cleanAdditionalSong = additionalSong?.replace('-new-group', '') ?? null;
@@ -19,6 +21,8 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     playlists,
   } = useSongList(cleanAdditionalSong);
   const [keyboardControl, setKeyboardControl] = useState(true);
+  const [toolbarFocusMode, setToolbarFocusMode] = useState(false);
+  const navigate = useSmoothNavigate();
 
   const handleKeyboardControl = (value: boolean, additionalUpdates?: () => void) => {
     startViewTransition(() => {
@@ -30,13 +34,41 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     woosh.play(false);
   };
 
+  const { row1Register, row2Register, focusRow1Element, focusRow2Element, setActiveRow } = useToolbarKeyboardNav({
+    enabled: toolbarFocusMode,
+    onExitDown: () => {
+      // keyboardControl was never changed when entering toolbar mode,
+      // so we only need to clear the toolbar flag to re-enable song list nav.
+      setToolbarFocusMode(false);
+    },
+    onExitBackspace: () => navigate('menu/'),
+  });
+
+  const onEnterToolbar = () => {
+    // Do NOT call handleKeyboardControl(false) here — that would expand the song preview.
+    // Disabling song list keyboard nav is done by passing keyboardControl && !toolbarFocusMode
+    // to useSongSelectionKeyboardNavigation below.
+    setToolbarFocusMode(true);
+    setActiveRow(1);
+    focusRow1Element('search');
+  };
+
+  const onEnterSongGroupsNav = (groupName: string) => {
+    setToolbarFocusMode(true);
+    setActiveRow(2);
+    focusRow2Element(groupName);
+  };
+
   const [selectedSongId, moveToSong, showFilters, setShowFilters, randomSong] = useSongSelectionKeyboardNavigation(
-    keyboardControl,
+    // Disable song list nav while toolbar is focused, without affecting keyboardControl
+    keyboardControl && !toolbarFocusMode,
     groupedSongList,
     () => handleKeyboardControl(false),
     songList.length,
     filters,
     songsPerRow,
+    onEnterToolbar,
+    onEnterSongGroupsNav,
   );
   const cleanSelectedSongId = selectedSongId.replace('-new-group', '');
 
@@ -74,6 +106,13 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     moveToSong,
     setKeyboardControl: handleKeyboardControl,
     keyboardControl,
+    toolbarFocusMode,
+    row1Register,
+    row2Register,
+    onPlaylistSelectedInToolbar: () => {
+      // Same as onExitDown: keyboardControl was never changed, just clear the toolbar flag.
+      setToolbarFocusMode(false);
+    },
     songPreview,
     songList: songList ?? [],
     filters,

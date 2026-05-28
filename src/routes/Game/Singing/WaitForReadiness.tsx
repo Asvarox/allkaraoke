@@ -9,7 +9,7 @@ import PlayersManager from '~/modules/Players/PlayersManager';
 import { waitFinished, waitForReadinessMusic } from '~/modules/SoundManager';
 import isE2E from '~/modules/utils/isE2E';
 import sleep from '~/modules/utils/sleep';
-import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
+import MicCheckSlot from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/MicCheckSlot';
 
 interface Props {
   onFinish: () => void;
@@ -62,7 +62,7 @@ function WaitForReadiness({ onFinish }: Props) {
   }));
 
   return (
-    <div className="typography absolute inset-0 z-[1000] flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
+    <div className="typography absolute inset-0 z-1000 flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
       {!areAllPlayersReady && (
         <Typography className="text-2xl">
           Waiting for all players to click <strong>&quot;Ready&quot;</strong>
@@ -81,7 +81,7 @@ function WaitForReadiness({ onFinish }: Props) {
                 {confirmed ? <CheckCircleOutline /> : <Loader />}
               </span>
             )}{' '}
-            <SinglePlayer player={player} />
+            <MicCheckSlot player={player} playerIndex={index as 0 | 1 | 2 | 3} />
           </div>
         ))}
       </div>

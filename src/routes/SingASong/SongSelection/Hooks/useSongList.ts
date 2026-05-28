@@ -50,6 +50,9 @@ export default function useSongList(additionalSong: string | null) {
       if (filteredList.length === 0) return [];
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
 
+      // Precompute a map from song id to its index in filteredList to avoid O(n²) indexOf calls
+      const songIndexMap = new Map(filteredList.map((song, index) => [song.id, index]));
+
       sortedList.forEach((song) => {
         try {
           const { name, ...rest } = (playlist?.groupData ?? groupSongsByLetter)(song);
@@ -59,7 +62,7 @@ export default function useSongList(additionalSong: string | null) {
             groups.push(group);
           }
 
-          group.songs.push({ index: filteredList.indexOf(song), song, isPopular: popular.includes(song.id) });
+          group.songs.push({ index: songIndexMap.get(song.id) ?? 0, song, isPopular: popular.includes(song.id) });
         } catch (e) {
           console.error(e);
           captureException(e);
@@ -77,8 +80,7 @@ export default function useSongList(additionalSong: string | null) {
             isNew: true,
             songs: newSongs.map((song) => ({
               song,
-              index: filteredList.indexOf(song),
-
+              index: songIndexMap.get(song.id) ?? 0,
               isPopular: popular.includes(song.id),
             })),
           });

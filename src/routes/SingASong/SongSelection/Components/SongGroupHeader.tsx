@@ -1,4 +1,4 @@
-import { SongGroup } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongList';
+import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
 
 interface Props {
   // When omitted, renders a skeleton/placeholder version for loading state

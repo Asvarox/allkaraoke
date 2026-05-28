@@ -3,10 +3,10 @@ import { Dispatch, SetStateAction, useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
 import useBreakpoint from '~/modules/hooks/useBreakpoint';
 import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
-import PlaylistSelector from '~/routes/SingASong/SongSelectionV2/Components/Toolbar/PlaylistSelector';
-import SearchBar from '~/routes/SingASong/SongSelectionV2/Components/Toolbar/SearchBar';
-import { PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
-import { AppliedFilters } from '~/routes/SingASong/SongSelectionV2/Hooks/useSongListFilter';
+import PlaylistSelector from '~/routes/SingASong/SongSelection/Components/Toolbar/PlaylistSelector';
+import SearchBar from '~/routes/SingASong/SongSelection/Components/Toolbar/SearchBar';
+import { PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
+import { AppliedFilters } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface ToolbarProps {
   filters: AppliedFilters;
