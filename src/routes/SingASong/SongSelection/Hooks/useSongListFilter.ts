@@ -4,7 +4,7 @@ import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
 import clearString, { removeAccents } from '~/modules/utils/clearString';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/Settings/SettingsState';
-import { usePlaylists } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
+import { LANGUAGE_PLAYLIST_PREFIX, usePlaylists } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 type FilterFunc = (
   songList: SongPreview[],
@@ -92,7 +92,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     const cleanEdition = clearString(edition);
 
     return cleanEdition.length
-      ? songList.filter((song) => clearString(song.edition ?? '').includes(edition))
+      ? songList.filter((song) => clearString(song.edition ?? '').includes(cleanEdition))
       : songList;
   },
   recentlyUpdated: (songList) => {
@@ -107,6 +107,9 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     const additionalSongs = list.filter((song) => additionalSongIds.includes(song.id));
     return [...songList, ...additionalSongs.filter((song) => !songList.includes(song))];
   },
+  // Language exclusion is applied separately before playlist filtering (in useSongListFilter's prefilteredList),
+  // so by the time playlist filters run, excluded songs are already removed. This entry exists to satisfy
+  // the AppliedFilters type but intentionally does nothing here.
   skipExcludedLanguages: (songList) => songList,
 };
 
@@ -128,11 +131,17 @@ export const useSongListFilter = (
     [list, excludedLanguages],
   );
 
-  const playlists = usePlaylists(prefilteredList, popular, isLoading);
-
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
     new URLSearchParams(global.location?.search).get('playlist') ?? null,
   );
+
+  // Derive the language selected via the "more-languages" picker from the URL-persisted playlist name.
+  // e.g. 'language-Polish' → 'Polish', anything else → null
+  const extraLanguage = selectedPlaylist?.startsWith(LANGUAGE_PLAYLIST_PREFIX)
+    ? selectedPlaylist.slice(LANGUAGE_PLAYLIST_PREFIX.length)
+    : null;
+
+  const playlists = usePlaylists(prefilteredList, popular, isLoading, extraLanguage);
 
   const setPlaylist = (name: string) => {
     /// push query param to url containing playlist name
@@ -145,6 +154,13 @@ export const useSongListFilter = (
 
   const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
   const [filters, setFilters] = useState<AppliedFilters>(() => emptyFilters);
+
+  // Auto-select the first playlist when none is set in the URL yet.
+  useEffect(() => {
+    if (selectedPlaylist === null && playlists.length > 0) {
+      setPlaylist(playlists[0].name);
+    }
+  }, [selectedPlaylist, playlists]);
 
   useEffect(() => {
     setFilters(emptyFilters);
@@ -164,5 +180,13 @@ export const useSongListFilter = (
     [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
   );
 
-  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };
+  return {
+    filters,
+    filteredList: filteredList,
+    setFilters,
+    selectedPlaylist,
+    setSelectedPlaylist: setPlaylist,
+    playlists,
+    playlist,
+  };
 };

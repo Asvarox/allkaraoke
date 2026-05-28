@@ -1,6 +1,11 @@
 import { randomInt } from '~/modules/utils/randomValue';
 
 const MAX_REMEMBERED_SONGS_COUNT = 30;
+/**
+ * Picks a random song index that hasn't been played recently.
+ * Intentionally mutates `previouslySelectedSongs` in place so the caller's array
+ * acts as a circular history buffer across calls without needing to re-assign it.
+ */
 export default function selectRandomSong(
   songCount: number,
   previouslySelectedSongs: number[],

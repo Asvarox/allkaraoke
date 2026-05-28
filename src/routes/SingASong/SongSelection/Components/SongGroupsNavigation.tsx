@@ -1,18 +1,74 @@
-import styled from '@emotion/styled';
-import { MutableRefObject, useEffect, useState } from 'react';
+import { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
-import { typography } from '~/modules/Elements/cssMixins';
-import styles from '~/modules/GameEngine/Drawing/styles';
+import { ScrollableRow } from '~/modules/Elements/AKUI/Selector';
+import useDebounce from '~/modules/hooks/useDebounce';
+import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
 import { SongGroup } from '~/routes/SingASong/SongSelection/Hooks/useSongList';
+
+const SCROLL_DEBOUNCE_MS = 200;
 
 interface Props {
   groupedSongList: SongGroup[];
   onScrollToGroup: (group: SongGroup) => void;
   containerRef: MutableRefObject<HTMLDivElement | null>;
+  keyboardNavRegister?: RegisterFunc;
 }
 
-export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, containerRef }: Props) {
+interface GroupNavItemProps {
+  group: SongGroup;
+  isFirstActive: boolean;
+  active: boolean;
+  onScrollToGroup: (group: SongGroup) => void;
+  'data-test': string;
+  keyboardNavRegister?: RegisterFunc;
+}
+
+// GroupNavItem replicates the scroll-to-center behavior of Selector.Item manually because
+// SongGroupsNavigation highlights *multiple* active groups at once (activeGroups: number[]),
+// so it can't use the Selector component which is designed for a single selected value.
+function GroupNavItem({
+  group,
+  isFirstActive,
+  active,
+  onScrollToGroup,
+  'data-test': dataTest,
+  keyboardNavRegister,
+}: GroupNavItemProps) {
+  const ref = useRef<HTMLButtonElement>(null);
+  const keyboardNavProps = keyboardNavRegister?.(group.name, () => onScrollToGroup(group));
+
+  useEffect(() => {
+    if (isFirstActive && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }, [isFirstActive]);
+
+  return (
+    <Button
+      ref={ref}
+      size="mini"
+      onClick={() => onScrollToGroup(group)}
+      {...keyboardNavProps}
+      // focused must come after the spread so the active-group highlight isn't
+      // overwritten by keyboardNavProps.focused (which is false when not keyboard-navigating)
+      focused={active || (keyboardNavProps?.focused ?? false)}
+      // Override register-provided values that should not change
+      data-active={active}
+      data-test={dataTest}
+      className="text-md min-w-10 shrink-0 animate-none whitespace-nowrap">
+      {group.displayShort ?? group.name}
+    </Button>
+  );
+}
+
+export default function SongGroupsNavigation({
+  groupedSongList,
+  onScrollToGroup,
+  containerRef,
+  keyboardNavRegister,
+}: Props) {
   const [activeGroups, setActiveGroups] = useState<number[]>([]);
+  const debouncedActiveGroups = useDebounce(activeGroups, SCROLL_DEBOUNCE_MS);
 
   useEffect(() => {
     // This is slightly complicated logic needed due to virtualization of the list
@@ -55,59 +111,24 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     }
   }, [groupedSongList, containerRef]);
 
+  const firstActiveGroup = debouncedActiveGroups.length > 0 ? Math.min(...debouncedActiveGroups) : -1;
+
   return (
-    <>
-      <Container>
-        {groupedSongList.map((group, index) => {
-          const active = activeGroups.includes(index);
-          return (
-            <SongsGroupButton
-              key={group.name}
-              onClick={() => onScrollToGroup(group)}
-              data-active={active}
-              data-test={`group-navigation-${group.name}`}>
-              {group.displayShort ?? group.name}
-            </SongsGroupButton>
-          );
-        })}
-      </Container>
-    </>
+    <ScrollableRow className="items-center">
+      {groupedSongList.map((group, index) => {
+        const active = debouncedActiveGroups.includes(index);
+        return (
+          <GroupNavItem
+            key={group.name}
+            group={group}
+            active={active}
+            isFirstActive={index === firstActiveGroup}
+            onScrollToGroup={onScrollToGroup}
+            keyboardNavRegister={keyboardNavRegister}
+            data-test={`group-navigation-${group.name}`}
+          />
+        );
+      })}
+    </ScrollableRow>
   );
 }
-
-const Container = styled.div`
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  top: 0;
-  left: var(--song-sidebar-weight);
-  padding: 0 0 0 2rem;
-  height: 4rem;
-  width: 100%;
-  z-index: 100;
-  gap: 0.75rem;
-  background: rgba(0, 0, 0, 0.75);
-`;
-
-const SongsGroupButton = styled(Button)`
-  border: none;
-  cursor: pointer;
-  ${typography};
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  padding: 0.25rem 0.75rem;
-  font-size: 1.5rem;
-  z-index: 1;
-  color: ${styles.colors.text.default};
-
-  &[data-active='true'] {
-    background: ${styles.colors.text.active};
-  }
-  &[data-active='false'] {
-    background: rgba(0, 0, 0, 0.7);
-  }
-`;

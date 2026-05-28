@@ -1,254 +1,152 @@
-import styled from '@emotion/styled';
-import { ComponentProps, ReactNode, use, useCallback } from 'react';
+import { Icon } from '@iconify-icon/react';
+import { ComponentProps, createContext, forwardRef, useContext } from 'react';
 import { SongPreview } from '~/interfaces';
-import Box from '~/modules/Elements/AKUI/Primitives/Box';
-import { BackgroundContext } from '~/modules/Elements/BackgroundContext';
-import { mobileMQ, typography } from '~/modules/Elements/cssMixins';
-import styles from '~/modules/GameEngine/Drawing/styles';
-import { useSongStats } from '~/modules/Songs/stats/hooks';
-import { GraphicSetting, useSettingValue } from '~/routes/Settings/SettingsState';
+import { Chip } from '~/modules/Elements/AKUI/Chip';
 import SongFlag from '~/routes/SingASong/SongSelection/Components/SongCard/SongFlag';
-import { TopContainer } from '~/routes/SingASong/SongSelection/Components/SongCard/TopContainer';
+import { SongCardStatsIndicator } from '~/routes/SingASong/SongSelection/Components/SongCard/TopContainer';
+import { cn } from '~/utils/cn';
 
-interface Props extends ComponentProps<typeof SongCardContainer> {
+interface SongCardContextValue {
   song: SongPreview;
-  focused: boolean;
-  songId?: string;
-  groupLetter?: string;
-  expanded?: boolean;
-  background?: boolean;
-  handleClick?: (songId: string, groupLetter?: string) => void;
-  video?: ReactNode;
   isPopular: boolean;
   forceFlag: boolean;
-  'data-expanded'?: boolean;
 }
 
-export const FinalSongCard = ({
+const SongCardContext = createContext<SongCardContextValue | null>(null);
+
+function useSongCardContext() {
+  const ctx = useContext(SongCardContext);
+  if (!ctx) throw new Error('SongCard compound components must be used within <SongCard>');
+  return ctx;
+}
+
+// --- Sub-components ---
+
+const Thumbnail = forwardRef<HTMLDivElement, ComponentProps<'div'>>(function Thumbnail(
+  { children, className, ...props },
+  ref,
+) {
+  const { song } = useSongCardContext();
+  return (
+    <div
+      ref={ref}
+      className={`relative isolate aspect-video shrink-0 overflow-hidden rounded bg-[#2b2b2b] ${className ?? ''}`}
+      {...props}>
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')` }}
+      />
+      {children && <div className="absolute inset-0 z-20">{children}</div>}
+    </div>
+  );
+});
+
+function Footer({ className, ...props }: ComponentProps<'div'>) {
+  return <div className={`flex min-h-0 flex-1 flex-col gap-1 px-2 pt-2 pb-1.5 ${className ?? ''}`} {...props} />;
+}
+
+function SongTitle({ className, ...props }: ComponentProps<'span'>) {
+  const { song } = useSongCardContext();
+  return (
+    <span
+      data-name="title"
+      className={`text-active truncate text-lg leading-tight font-bold ${className ?? ''}`}
+      {...props}>
+      {props.children ?? song.title}
+    </span>
+  );
+}
+
+function Artist({ className, ...props }: ComponentProps<'span'>) {
+  const { song } = useSongCardContext();
+  return (
+    <span
+      data-name="artist"
+      className={`truncate text-[20px] leading-tight text-slate-300 ${className ?? ''}`}
+      {...props}>
+      {props.children ?? song.artist}
+    </span>
+  );
+}
+
+function Badges({ className, ...props }: ComponentProps<'div'>) {
+  return <div className={`mt-auto flex items-center gap-1 overflow-hidden ${className ?? ''}`} {...props} />;
+}
+
+function BadgeFlag({ className, ...props }: Omit<ComponentProps<typeof SongFlag>, 'song' | 'forceFlag'>) {
+  const { song, forceFlag } = useSongCardContext();
+  return <SongFlag song={song} forceFlag={forceFlag} chip className={className} {...props} />;
+}
+
+function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
+  const { song } = useSongCardContext();
+  if (song.tracksCount <= 1) return null;
+  return (
+    <Chip
+      variant="zinc"
+      data-test="multitrack-indicator"
+      className={`[&_svg]:h-4 [&_svg]:w-4 ${className ?? ''}`}
+      {...props}>
+      <Icon icon="ic:round-people-alt" width="1rem" height="1rem" />
+      <span>Duet</span>
+    </Chip>
+  );
+}
+
+function BadgeStats({
+  focused = false,
+  compact = false,
+  ...props
+}: Partial<Pick<ComponentProps<typeof SongCardStatsIndicator>, 'focused' | 'compact'>>) {
+  const { song, isPopular } = useSongCardContext();
+  return <SongCardStatsIndicator song={song} isPopular={isPopular} focused={focused} compact={compact} {...props} />;
+}
+
+// --- Main SongCard ---
+
+interface SongCardProps extends ComponentProps<'div'> {
+  song: SongPreview;
+  isPopular: boolean;
+  forceFlag?: boolean;
+  /** When true, applies the focused scale/border/shadow style (scale-100 md:scale-[1.075] + amber border + glow) */
+  focused?: boolean;
+}
+
+function SongCardRoot({
   song,
-  focused,
-  video,
-  children,
-  songId,
-  groupLetter,
-  handleClick,
   isPopular,
-  background = true,
   forceFlag = false,
-  ...restProps
-}: Props) => {
-  const { theme } = use(BackgroundContext);
-  const expanded = restProps['data-expanded'] ?? false;
-  const onClickCallback = useCallback(
-    () => (handleClick ? handleClick(songId!, groupLetter) : undefined),
-    [handleClick, songId, groupLetter],
-  );
-  const [graphicSetting] = useSettingValue(GraphicSetting);
-
+  focused = false,
+  children,
+  className,
+  ...props
+}: SongCardProps) {
   return (
-    <SongCardContainer {...restProps} onClick={handleClick ? onClickCallback : undefined}>
-      {background && (
-        <SongCardBackground
-          style={{
-            backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
-          }}
-          data-focused={expanded ? false : focused}
-          data-expanded={restProps['data-expanded']}
-          data-graphic-setting={graphicSetting}
-          data-theme={theme}
-        />
-      )}
-      <SongInfo data-expanded={expanded}>
-        {!expanded && <TopContainer song={song} isPopular={isPopular} video={video} />}
-        <SongListEntryDetailsArtist data-name="artist" data-expanded={expanded}>
-          {song.artist}
-        </SongListEntryDetailsArtist>
-        <SongListEntryDetailsTitle data-name="title" data-expanded={expanded}>
-          {song.title}
-        </SongListEntryDetailsTitle>
-        <ExpandedData data-expanded={expanded}>
-          {expanded && (
-            <>
-              {song.author && (
-                <SongAuthor expanded={expanded}>
-                  by&nbsp;
-                  {song.authorUrl ? (
-                    <a href={song.authorUrl} target="_blank" rel="noreferrer">
-                      {song.author}
-                    </a>
-                  ) : (
-                    song.author
-                  )}
-                </SongAuthor>
-              )}
-              <SongListEntryStats song={song} />
-            </>
-          )}
-          {!expanded && <Language song={song} forceFlag={forceFlag} />}
-        </ExpandedData>
-      </SongInfo>
-      {children}
-      {video}
-    </SongCardContainer>
+    <SongCardContext.Provider value={{ song, isPopular, forceFlag }}>
+      <div
+        className={cn(
+          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl bg-slate-900/80 p-1.5 transition-all duration-300',
+          focused
+            ? 'scale-100 border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] md:scale-[1.075]'
+            : 'border border-white/10',
+          className,
+        )}
+        {...props}>
+        {children}
+      </div>
+    </SongCardContext.Provider>
   );
-};
+}
 
-export const Language = styled(SongFlag)`
-  height: 2.75rem;
-
-  ${mobileMQ} {
-    height: 1.5rem;
-  }
-  object-fit: cover;
-  border-top-right-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-  position: absolute;
-  z-index: -1;
-  left: 0rem;
-  bottom: 0rem;
-  opacity: 0.95;
-`;
-
-export const ExpandedData = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-`;
-
-const SongInfo = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  z-index: 1;
-  box-sizing: border-box;
-
-  flex-direction: column;
-
-  &[data-expanded='true'] {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-`;
-
-export const SongCardContainer = styled.div`
-  font-size: 2rem;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-  ${mobileMQ} {
-    padding: 0.25rem;
-  }
-  padding: 0.5rem;
-
-  border: 0.1rem black solid;
-  border-radius: 0.5rem;
-`;
-
-export const SongCardBackground = styled.div`
-  background-color: #2b2b2b;
-  border-radius: 0.4rem;
-  &[data-expanded='true'] {
-    border-radius: 0;
-  }
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-
-  &[data-graphic-setting='high'] {
-    transition: 300ms;
-    &[data-focused='true'] {
-      background-size: 100%;
-      opacity: 1;
-    }
-    &[data-focused='false'] {
-      background-size: 110%;
-      filter: grayscale(90%);
-      opacity: 0.8;
-    }
-    &[data-expanded='true'] {
-      filter: blur(10px);
-    }
-    &[data-theme='eurovision'] {
-      opacity: 0.95;
-    }
-  }
-  &[data-graphic-setting='low'] {
-    background-size: 100%;
-    opacity: 0.6;
-    &[data-focused='true'] {
-      opacity: 1;
-    }
-  }
-  background-position: center center;
-`;
-
-export const SongListEntryDetails = styled(Box)<{ expanded?: boolean }>`
-  background: rgba(0, 0, 0, 0.7);
-
-  width: auto;
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  ${typography};
-
-  &[data-expanded='true'] {
-    font-size: 3.5rem;
-    ${mobileMQ} {
-      font-size: 1.25rem;
-    }
-  }
-
-  font-size: 2rem;
-  ${mobileMQ} {
-    font-size: 1rem;
-    padding: 0rem 0.5rem;
-  }
-
-  text-align: right;
-`;
-
-export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
-  color: ${styles.colors.text.active};
-`;
-
-export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
-  color: white;
-
-  &[data-expanded='true'] {
-    font-size: 3rem;
-    margin-top: 1rem;
-    ${mobileMQ} {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-  }
-
-  margin-top: 0.5rem;
-
-  font-size: 2rem;
-  ${mobileMQ} {
-    margin-top: 0;
-    font-size: 1rem;
-  }
-`;
-
-export const SongAuthor = styled(SongListEntryDetailsTitle)`
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-`;
-
-export const SongListEntryStats = ({ song }: { song: SongPreview }) => {
-  const stats = useSongStats(song);
-
-  return (
-    <SongAuthor>
-      {stats?.plays ? `Played ${stats.plays} time${stats.plays > 1 ? 's' : ''}` : 'Never played yet'}
-    </SongAuthor>
-  );
-};
+// Compose the public API
+export const SongCard = Object.assign(SongCardRoot, {
+  Thumbnail,
+  Footer,
+  SongTitle,
+  Artist,
+  Badges: Object.assign(Badges, {
+    Flag: BadgeFlag,
+    Duet: BadgeDuet,
+    Stats: BadgeStats,
+  }),
+});

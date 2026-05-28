@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Flag } from '~/modules/Elements/Flag';
 import { colorSets } from '~/modules/GameEngine/Drawing/styles';
 import { getEurovisionYear } from '~/modules/Songs/utils/specialSongsThemeChecks';
@@ -6,65 +5,58 @@ import isoCodeToCountry from '~/modules/utils/isoCodeToCountry';
 import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
-const EurovisionDisplay = styled.span`
-  background-image: linear-gradient(
-    90deg,
-    ${colorSets.eurovisionRed.text},
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionBlue.text},
-    ${colorSets.eurovisionGreen.text},
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionRed.text}
-  );
+const eurovisionGradient = [
+  colorSets.eurovisionRed.text,
+  colorSets.eurovisionPink.text,
+  colorSets.eurovisionBlue.text,
+  colorSets.eurovisionGreen.text,
+  colorSets.eurovisionPink.text,
+  colorSets.eurovisionRed.text,
+].join(', ');
 
-  background-size: 200% 200%;
-  background-clip: text;
-  color: transparent;
-  display: flex;
-  align-items: center;
-    animation: playlist-gradient 15s linear infinite;
-    
+const EurovisionDisplay = ({ children }: { children: React.ReactNode }) => (
+  <>
+    <style>{`
+      @keyframes playlist-gradient {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 400% 400%; }
+      }
+    `}</style>
+    <span
+      style={{
+        backgroundImage: `linear-gradient(90deg, ${eurovisionGradient})`,
+        backgroundSize: '200% 200%',
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        display: 'flex',
+        alignItems: 'center',
+        animation: 'playlist-gradient 15s linear infinite',
+      }}>
+      {children}
+    </span>
+  </>
+);
 
-    @keyframes playlist-gradient {
-        0% {
-            background-position: 0% 0%;
-        }
-        100% {
-            background-position: 400% 400%;
-        }
-`;
+export const EurovisionLogo = ({ src, alt }: { src: string; alt: string }) => (
+  <>
+    <style>{`
+      @keyframes heartbeat {
+        0%  { transform: scale(0.85); }
+        10% { transform: scale(1); }
+        20% { transform: scale(0.85); }
+        30% { transform: scale(1); }
+        40% { transform: scale(0.85); }
+        100% { transform: scale(0.85); }
+      }
+    `}</style>
+    <img src={src} alt={alt} style={{ width: '1em', height: '1em', animation: 'heartbeat 1.5s infinite' }} />
+  </>
+);
 
-export const EurovisionLogo = styled.img`
-  width: 1em;
-  height: 1em;
-  animation: heartbeat 1.5s infinite;
-
-  @keyframes heartbeat {
-    0% {
-      transform: scale(0.85);
-    }
-    10% {
-      transform: scale(1);
-    }
-    20% {
-      transform: scale(0.85);
-    }
-    30% {
-      transform: scale(1);
-    }
-    40% {
-      transform: scale(0.85);
-    }
-    100% {
-      transform: scale(0.85);
-    }
-  }
-`;
-
-const SFlag = styled(Flag)`
-  width: 1em;
-  object-fit: contain;
-`;
+const SFlag = ({ isocode }: { isocode: string }) => (
+  <Flag isocode={isocode} style={{ width: '1em', height: '1em', objectFit: 'contain' }} />
+);
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const eurovisionPlaylist: PlaylistEntry = {

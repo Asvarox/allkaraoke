@@ -1,26 +1,41 @@
-import styled from '@emotion/styled';
 import { FiberNewOutlined, PeopleAlt as PeopleAltIcon, Star } from '@mui/icons-material';
 import dayjs from 'dayjs';
 import { ReactNode, useMemo } from 'react';
 import { SongPreview } from '~/interfaces';
-import styles from '~/modules/GameEngine/Drawing/styles';
+import { Chip } from '~/modules/Elements/AKUI/Chip';
 import { useSongStats } from '~/modules/Songs/stats/hooks';
+import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
 import { getEurovisionYear, isEurovisionSong } from '~/modules/Songs/utils/specialSongsThemeChecks';
 import eurovisionIcon from '~/routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import SongFlag from '~/routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 
-import isSongRecentlyUpdated from '~/modules/Songs/utils/isSongRecentlyUpdated';
+// Base indicator pill shared by all badge variants
+const indicatorBase =
+  'h-8 min-w-8 box-border text-white text-base flex items-center justify-center uppercase bg-black/75 rounded-lg';
+export const indicatorCompact =
+  'h-6 min-w-6 box-border text-xs flex items-center justify-center uppercase rounded px-1.5 shrink-0 font-semibold';
 
-export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
+export const TopContainer = (props: {
+  song: SongPreview;
+  isPopular: boolean;
+  video?: ReactNode;
+  forceFlag?: boolean;
+}) => {
   return (
-    <SongCardTopRightContainer>
+    <div className="absolute top-2 left-0 z-10 box-border flex w-full items-center justify-end gap-2 px-2">
       {props.song.tracksCount > 1 && (
-        <MultiTrackIndicator data-test="multitrack-indicator">
+        <div data-test="multitrack-indicator" className={`${indicatorBase} mr-auto px-2 [&_svg]:h-6 [&_svg]:w-6`}>
           <PeopleAltIcon />
           &nbsp; Duet
-        </MultiTrackIndicator>
+        </div>
       )}
       <SongCardStatsIndicator song={props.song} isPopular={props.isPopular} focused={!!props.video} />
-    </SongCardTopRightContainer>
+      <SongFlag
+        song={props.song}
+        forceFlag={props.forceFlag}
+        className="h-8 w-auto rounded-lg object-cover opacity-95"
+      />
+    </div>
   );
 };
 
@@ -28,11 +43,14 @@ export const SongCardStatsIndicator = ({
   song,
   isPopular,
   focused,
+  compact = false,
 }: {
   song: SongPreview;
   isPopular: boolean;
   focused: boolean;
+  compact?: boolean;
 }) => {
+  const base = compact ? indicatorCompact : indicatorBase;
   const isRecentlyUpdated = useMemo(() => isSongRecentlyUpdated(song), [song]);
   const isESCSong = isEurovisionSong(song);
 
@@ -41,110 +59,65 @@ export const SongCardStatsIndicator = ({
   const playedToday = lastPlayed && dayjs(lastPlayed).isAfter(dayjs().subtract(1, 'days'));
 
   return stats?.plays ? (
-    <SongIndicatorStat data-test="song-stat-indicator">
-      {playedToday ? (
-        'Played today'
-      ) : (
-        <>
-          {focused ? (
-            <>
-              Played {stats.plays} time{stats.plays > 1 && 's'}
-            </>
-          ) : (
-            stats.plays
-          )}
-        </>
-      )}
-    </SongIndicatorStat>
+    compact ? (
+      <Chip variant="blue" data-test="song-stat-indicator">
+        {playedToday ? (
+          'Played today'
+        ) : focused ? (
+          <>
+            Played {stats.plays} time{stats.plays > 1 && 's'}
+          </>
+        ) : (
+          stats.plays
+        )}
+      </Chip>
+    ) : (
+      <div data-test="song-stat-indicator" className={`${base} px-2`}>
+        {playedToday ? (
+          'Played today'
+        ) : focused ? (
+          <>
+            Played {stats.plays} time{stats.plays > 1 && 's'}
+          </>
+        ) : (
+          stats.plays
+        )}
+      </div>
+    )
   ) : isESCSong ? (
-    <SongIndicatorIcon white>
-      {
-        <SongIndicatorLabel>
+    compact ? (
+      <Chip variant="esc">
+        <img src={eurovisionIcon} alt={song.edition} className="h-3.5 w-3.5 shrink-0" />
+        <span>{focused ? `Eurovision ${getEurovisionYear(song)}` : getEurovisionYear(song)}</span>
+      </Chip>
+    ) : (
+      <div className={`${base} overflow-hidden [&_img]:h-7 [&_img]:w-7 [&_svg]:fill-white`}>
+        <span className="mt-0.5 px-2 leading-none [&+img]:-ml-1">
           {focused ? `Eurovision ${getEurovisionYear(song)}` : getEurovisionYear(song)}
-        </SongIndicatorLabel>
-      }
-      <EurovisionIcon src={eurovisionIcon} alt={song.edition} />
-    </SongIndicatorIcon>
+        </span>
+        <img src={eurovisionIcon} alt={song.edition} className="mr-0.5 -ml-1.5 box-border p-1.5" />
+      </div>
+    )
   ) : isRecentlyUpdated ? (
-    <SongIndicatorIcon white>
-      {focused ? <SongIndicatorLabel>Added recently</SongIndicatorLabel> : <FiberNewOutlined />}
-    </SongIndicatorIcon>
+    compact ? (
+      <Chip variant="green" data-test="new-chip">
+        New
+      </Chip>
+    ) : (
+      <div className={`${base} overflow-hidden [&_svg]:h-7 [&_svg]:w-7 [&_svg]:fill-white`}>
+        {focused ? <span className="mt-0.5 px-2 leading-none">Added recently</span> : <FiberNewOutlined />}
+      </div>
+    )
   ) : isPopular && song.language.includes('English') ? (
-    <>
-      <SongIndicatorIcon>
-        {focused && <SongIndicatorLabel>Popular</SongIndicatorLabel>}
+    compact ? (
+      <Chip variant="orange" data-test="popular-chip">
+        Popular
+      </Chip>
+    ) : (
+      <div className={`${base} overflow-hidden [&_svg]:h-7 [&_svg]:w-7 [&_svg]:fill-[rgb(255,165,0)]`}>
+        {focused && <span className="mt-0.5 px-2 leading-none">Popular</span>}
         <Star />
-      </SongIndicatorIcon>
-    </>
+      </div>
+    )
   ) : null;
 };
-
-const SongIndicatorLabel = styled.div`
-  padding: 0 0.5rem;
-  line-height: 0;
-  margin-top: 0.2rem;
-
-  & + svg {
-    margin-left: -0.25rem;
-  }
-`;
-
-const SongCardTopRightContainer = styled.div`
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  padding: 0 0.5rem;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  width: 100%;
-`;
-
-const SongIndicator = styled.div`
-  height: 2rem;
-  min-width: 2rem;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  //transition: 500ms;
-`;
-
-const SongIndicatorIcon = styled(SongIndicator)<{ white?: boolean }>`
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  svg,
-  img {
-    fill: ${(props) => (props.white ? 'white' : styles.colors.text.active)};
-    width: 1.75rem;
-    height: 1.75rem;
-  }
-`;
-
-const EurovisionIcon = styled.img`
-  padding: 0.35rem;
-  margin: 0 0.15rem 0 -0.35rem;
-  box-sizing: border-box;
-`;
-
-const SongIndicatorStat = styled(SongIndicator)`
-  padding: 0 0.5rem;
-`;
-
-const MultiTrackIndicator = styled(SongIndicatorStat)`
-  margin-right: auto;
-
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-`;

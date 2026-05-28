@@ -30,6 +30,7 @@ interface Props<T> {
   components: Components<T>;
   context: T;
   groups: SongGroup[];
+  /** Placeholder for item in a row (in case the row is not fully occupied) */
   placeholder?: ReactNode;
   renderGroup: (group: SongGroup) => ReactNode;
   renderItem: (item: SongGroup['songs'][number], group: SongGroup, props?: { style: CSSProperties }) => ReactNode;
@@ -40,6 +41,7 @@ interface Props<T> {
   groupHeight: number;
   focusedSong: string;
   Footer: ReactNode;
+  topPadding?: number;
   ref?: ForwardedRef<VirtualizedListMethods>;
 }
 
@@ -130,6 +132,7 @@ export function VirtualizedList<T>(props: Props<T>) {
         groupHeaderHeight={props.groupHeight}
         components={props.components}
         context={props.context}
+        topPadding={props.topPadding}
         groupContent={(index, groupProps) => (
           <GroupRowWrapper group={groupedRows[index].group} {...groupProps}>
             {props.renderGroup(groupedRows[index].group)}

@@ -1,13 +1,20 @@
-import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import { v4 } from 'uuid';
-import { GAME_MODE, SingSetup, SongPreview } from '~/interfaces';
+import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
 import { Button } from '~/modules/Elements/AKUI/Button';
 import { Switcher } from '~/modules/Elements/Switcher';
+import InputManager from '~/modules/GameEngine/Input/InputManager';
+import gameEvents from '~/modules/GameEvents/GameEvents';
+import { useEventEffect } from '~/modules/GameEvents/hooks';
+import PlayersManager from '~/modules/Players/PlayersManager';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/isDev';
+import SelectInputModal from '~/routes/SelectInput/SelectInputModal';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/Settings/SettingsState';
 
 interface Props {
   songPreview: SongPreview;
@@ -34,37 +41,69 @@ if (isDev()) {
 const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE> | null>('song_settings-game_mode-v3');
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance-v2');
 
+const getTrackName = (tracks: SongPreview['tracks'], index: number) => tracks[index]?.name ?? `Track ${index + 1}`;
+
 export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
+  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
   const [rememberedMode, setMode] = useSetGameMode(null);
   const mode = rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL);
   const [tolerance, setTolerance] = useSetTolerance(1);
 
-  const handleNextButton = () => {
-    const singSetup = {
-      id: v4(),
-      players: [],
-      mode,
-      tolerance: tolerance + 1,
-    };
-    onNextStep(singSetup);
-  };
+  const players = PlayersManager.getPlayers();
+  const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
 
-  const changeMode = () => {
-    setMode(nextValue(Object.values(GAME_MODE), mode));
-  };
+  const initialisePlayerSetup = () => {
+    const currentPlayers = PlayersManager.getPlayers();
+    const hasMultipleTracks = !mobilePhoneMode && currentPlayers.length === 2 && songPreview.tracksCount > 1;
 
+    return currentPlayers.map((player, index) => ({
+      number: player.number,
+      track: hasMultipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
+    }));
+  };
+  const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(initialisePlayerSetup());
+  useEventEffect([gameEvents.playerAdded, gameEvents.playerRemoved], () => setPlayerSetup(initialisePlayerSetup()), [
+    mobilePhoneMode,
+    songPreview.tracksCount,
+  ]);
+
+  const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    if (!showModal) InputManager.startMonitoring();
+  }, [showModal]);
+
+  const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
+
+  const handlePlay = () => onNextStep({ id: v4(), players: playerSetup, mode, tolerance: tolerance + 1 });
+
+  const changeMode = () => setMode(nextValue(Object.values(GAME_MODE), mode));
   const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
 
-  const { register } = useKeyboardNav({
-    enabled: keyboardControl,
+  const toggleTrack = (playerNumber: 0 | 1 | 2 | 3) => () =>
+    setPlayerSetup((current) =>
+      current.map((s) => (s.number === playerNumber ? { ...s, track: (s.track + 1) % songPreview.tracksCount } : s)),
+    );
+
+  const { register, focusElement } = useKeyboardNav({
+    enabled: keyboardControl && !showModal,
     onBackspace: onExitKeyboardControl,
-    additionalHelp: {
-      remote: ['select-song'],
-    },
+    additionalHelp: { remote: ['select-song'] },
   });
 
   return (
     <>
+      {createPortal(
+        <SelectInputModal
+          open={showModal}
+          closeButtonText="Continue to the song"
+          onClose={() => {
+            setShowModal(false);
+            if (areInputsConfigured) focusElement('play-song-button');
+          }}
+        />,
+        document.body,
+      )}
       <Switcher
         {...register('difficulty-setting', changeTolerance, 'Change difficulty')}
         label="Difficulty"
@@ -79,22 +118,40 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
         data-test-value={gameModeNames[mode]}
         className="w-full"
       />
-      <div className="typography mobile:text-sm mobile:mt-0 -mt-3 w-full bg-black/70 px-3 py-2 text-lg">
-        {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
-        {mode === GAME_MODE.CO_OP && 'Join forces and sing together - your points will be added up to a single pool.'}
-        {mode === GAME_MODE.PASS_THE_MIC && (
-          <>
-            For more than 2 players - split into groups and pass the microphone within the group when prompted with{' '}
-            <SwapHorizIcon /> symbol.
-          </>
-        )}
-      </div>
+      <hr />
+      {multipleTracks &&
+        players.map((player, index) => {
+          const setup = playerSetup.find((s) => s.number === player.number) ?? { track: 0 };
+          return (
+            <Switcher
+              key={player.number}
+              {...register(
+                `player-${player.number}-track-setting`,
+                toggleTrack(player.number as 0 | 1 | 2 | 3),
+                'Change track',
+              )}
+              label={`P${index + 1} Track`}
+              value={getTrackName(songPreview.tracks, setup.track)}
+              data-test-value={setup.track + 1}
+              className="w-full"
+            />
+          );
+        })}
+      {multipleTracks && <hr />}
       <Button
-        size="large"
-        {...register('next-step-button', handleNextButton, undefined, true)}
-        className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1">
-        Next ➤
+        {...register('select-inputs-button', () => setShowModal(true), undefined, false)}
+        className="mobile:px-6"
+        size="small">
+        Setup mics
       </Button>
+      {areInputsConfigured && (
+        <Button
+          size="large"
+          {...register('play-song-button', handlePlay, undefined, true)}
+          className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1">
+          Play
+        </Button>
+      )}
     </>
   );
 }

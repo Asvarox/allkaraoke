@@ -9,7 +9,7 @@ import PlayersManager from '~/modules/Players/PlayersManager';
 import { waitFinished, waitForReadinessMusic } from '~/modules/SoundManager';
 import isE2E from '~/modules/utils/isE2E';
 import sleep from '~/modules/utils/sleep';
-import SinglePlayer from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
+import MicCheckSlot from '~/routes/SingASong/SongSelection/Components/SongSettings/MicCheck/MicCheckSlot';
 
 interface Props {
   onFinish: () => void;
@@ -62,17 +62,17 @@ function WaitForReadiness({ onFinish }: Props) {
   }));
 
   return (
-    <div className="typography absolute inset-0 z-[1000] flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
+    <div className="typography absolute inset-0 z-1000 flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
       {!areAllPlayersReady && (
         <Typography className="text-2xl">
           Waiting for all players to click <strong>&quot;Ready&quot;</strong>
         </Typography>
       )}
       <div className="flex flex-col gap-4 [view-transition-name:player-mic-check-container]">
-        {playerStatuses.map(({ confirmed, name, player }, index) => (
+        {playerStatuses.map(({ confirmed, name, player }) => (
           <div
             className="ph-no-capture flex items-center gap-5"
-            key={index}
+            key={player.number}
             data-test="player-confirm-status"
             data-name={name}
             data-confirmed={confirmed}>
@@ -81,7 +81,7 @@ function WaitForReadiness({ onFinish }: Props) {
                 {confirmed ? <CheckCircleOutline /> : <Loader />}
               </span>
             )}{' '}
-            <SinglePlayer player={player} />
+            <MicCheckSlot player={player} playerIndex={player.number} />
           </div>
         ))}
       </div>
