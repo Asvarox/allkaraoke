@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:82
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Black Jacks
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:261
 #MP3:Girls Aloud - Black Jacks.mp3
 #COVER:Girls Aloud - Black Jacks [CO].jpg
 #BACKGROUND:Girls Aloud - Black Jacks [BG].jpg

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Franz Ferdinand - Ulysses
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:Franz Ferdinand - Ulysses.mp3
 : 20 2 -1 Do 
 : 26 2 -3 do 

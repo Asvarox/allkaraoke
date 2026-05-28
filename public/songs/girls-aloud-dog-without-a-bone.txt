@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Dog Without A Bone
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:240
 #MP3:Girls Aloud - Dog Without A Bone.mp3
 : 17 2 1 A 
 : 21 4 8 five 

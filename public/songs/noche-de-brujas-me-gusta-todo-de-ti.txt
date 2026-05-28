@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,79
+#ALLKARAOKE_DURATION:274
 #MP3:Noche de Brujas - Me gusta todo de ti.mp3
 #COVER:Noche de Brujas - Me gusta todo de ti.jpg
 #BACKGROUND:Noche de Brujas - Me gusta todo de ti [BG].jpg

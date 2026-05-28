@@ -14,6 +14,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=wolf359
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Sawano%20Hiroyuki&cancion=PARAGON
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:166
 #MP3:Sawano Hiroyuki - PARAGON.mp3
 #COVER:Sawano Hiroyuki - PARAGON.jpg
 #MEDLEYSTARTBEAT:1052

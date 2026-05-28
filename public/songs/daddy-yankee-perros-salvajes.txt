@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:86
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:214
 #MP3:Daddy Yankee - Perros salvajes.mp3
 #COVER:Daddy Yankee - Perros salvajes.jpeg
 F 23 6 1 Pre 

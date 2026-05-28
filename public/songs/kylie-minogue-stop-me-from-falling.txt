@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Stop Me From Falling
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:181
 #MP3:Kylie Minogue - Stop Me From Falling.mp3
 : 15 2 22 Some
 : 19 2 17 ~

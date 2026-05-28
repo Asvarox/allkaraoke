@@ -17,6 +17,7 @@
 #ALLKARAOKE_PREVIEWEND:80
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:295
 #MP3:Damien Rice - The Blower’s Daughter.mp3
 #COVER:Damien Rice - The Blower’s Daughter [CO].jpg
 #BACKGROUND:Damien Rice - The Blower’s Daughter [BG].jpg

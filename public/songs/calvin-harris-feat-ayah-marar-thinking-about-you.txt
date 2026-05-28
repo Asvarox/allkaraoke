@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Ayah Marar - Thinking About You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:277
 #MP3:Calvin Harris feat. Ayah Marar - Thinking About You.mp3
 : 17 1 3 If 
 : 19 3 5 I 

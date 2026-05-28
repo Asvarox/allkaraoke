@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Charlotte Church - Crazy Chick
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:191
 #MP3:Charlotte Church - Crazy Chick.mp3
 : 18 2 7 I 
 : 22 3 9 think 

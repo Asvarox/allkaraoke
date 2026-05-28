@@ -13,6 +13,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/-fKXmuN6Ivo?si=uyeD3txbU7_zN1nP
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,67
+#ALLKARAOKE_DURATION:181
 #MP3:Lauv feat. BTS - Who.mp3
 #COVER:Lauv feat. BTS - Who [CO].jpg
 #BACKGROUND:Lauv feat. BTS - Who [BG].jpg

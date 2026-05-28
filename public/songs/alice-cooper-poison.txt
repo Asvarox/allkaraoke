@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alice%20Cooper&cancion=Poison
 #ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_DURATION:269
 : 16 4 53 Your
 : 24 9 53  cruel
 - 33

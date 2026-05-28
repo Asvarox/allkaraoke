@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=mamonas
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:52
 #MP3:Mamonas Assassinas - Sabão cra cra.mp3
 #COVER:Mamonas Assassinas - Sabão cra cra.jpg
 #BACKGROUND:Mamonas Assassinas - Sabão cra cra [BG].jpg

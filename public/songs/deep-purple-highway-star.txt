@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Deep%20Purple&cancion=Highway%20Star
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,6
+#ALLKARAOKE_DURATION:354
 : 14 3 31 No
 : 19 1 31 bod
 : 21 1 31 y 

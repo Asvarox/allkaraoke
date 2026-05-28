@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Natasha Bedingfield - Soulmate
 #ALLKARAOKE_VOLUME:0,71
+#ALLKARAOKE_DURATION:215
 #MP3:Natasha Bedingfield - Soulmate.mp3
 : 20 5 15 In
 : 26 5 17 com

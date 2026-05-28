@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:5
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Something Kinda Ooooh
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:Girls Aloud - Something Kinda Ooooh.mp3
 : 4 2 7 I’ve 
 : 8 2 7 got 

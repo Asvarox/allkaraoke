@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Jethro Tull - Bungle In The Jungle
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:217
 #MP3:Jethro Tull - Bungle In The Jungle.mp3
 : 14 3 14 Walk
 : 18 2 13 ing 

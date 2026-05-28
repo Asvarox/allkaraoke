@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4v4cRy25Xaw&ab_channel=ThreeDaysGraceVEVO
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:206
 #MP3:Three Days Grace - Wake Up.mp3
 : 21 2 9 I’m
 : 25 6 13 ~ 

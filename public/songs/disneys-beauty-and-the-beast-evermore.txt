@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:79
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:173
 #MP3:Disney’s Beauty and the Beast (2017) (Dan Stevens) - Evermore.mp3
 : 20 3 12 I 
 : 25 2 12 was 

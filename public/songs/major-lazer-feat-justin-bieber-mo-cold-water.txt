@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/fMvIARf_SUU
 #ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,64
+#ALLKARAOKE_DURATION:185
 #MP3:Major Lazer feat. Justin Bieber & MØ - Cold Water.mp3
 : 25 2 13 Eve
 : 29 2 13 ry

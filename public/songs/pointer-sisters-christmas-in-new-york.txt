@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pointer%20Sisters&cancion=Christmas%20in%20New%20York
 #ALLKARAOKE_VOLUME:0,67
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:240
 F 17 1 7 Oh
 F 19 3 9 ~, 
 F 25 1 4 yeah

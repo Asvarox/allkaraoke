@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:The Human League - Don’t You Want Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:207
 #MP3:The Human League - Don’t You Want Me.mp3
 : 16 3 0 You 
 : 20 3 -3 were 

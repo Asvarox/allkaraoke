@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Elvis Presley vs. JXL - A Little Less Conversation (Lyrics Video)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:212
 #MP3:Elvis Presley vs. JXL - A Little Less Conversation (Lyrics Video).mp3
 : 31 2 1 A 
 : 35 2 1 little 

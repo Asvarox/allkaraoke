@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:P!nk - Get The Party Started (Radio Mix)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:193
 #MP3:P!nk - Get The Party Started (Radio Mix).mp3
 : 17 35 -1 I’m 
 : 57 2 2 co

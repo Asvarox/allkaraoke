@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Nelly Furtado feat. Elton John - Crocodile Rock
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:207
 #MP3:Nelly Furtado feat. Elton John - Crocodile Rock.mp3
 : 20 40 3 La,
 - 60

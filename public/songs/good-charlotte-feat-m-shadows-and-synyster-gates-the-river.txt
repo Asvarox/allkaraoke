@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Good Charlotte feat. M. Shadows and Synyster Gates - The River
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:196
 #MP3:Good Charlotte feat. M. Shadows and Synyster Gates - The River.mp3
 #COVER:Good Charlotte feat. M. Shadows and Synyster Gates - The River [CO].jpg
 #BACKGROUND:Good Charlotte feat. M. Shadows and Synyster Gates - The River [BG].jpg

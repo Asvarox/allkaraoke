@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Fatboy Slim - Praise You
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:227
 #MP3:Fatboy Slim - Praise You.mp3
 #COVER:Fatboy Slim - Praise You [CO].jpg
 #BACKGROUND:Fatboy Slim - Praise You [BG].jpg

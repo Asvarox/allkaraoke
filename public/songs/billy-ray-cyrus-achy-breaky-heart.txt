@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Billy Ray Cyrus - Achy Breaky Heart
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:234
 #MP3:Billy Ray Cyrus - Achy Breaky Heart.mp3
 #START:10.0
 : 23 3 11 You 

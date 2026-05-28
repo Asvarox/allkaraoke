@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:9
 #ALLKARAOKE_SOURCEURL:James Brown - Living In America
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:239
 #MP3:James Brown - Living In America.mp3
 #COVER:James Brown - Living In America [CO].jpg
 #BACKGROUND:James Brown - Living In America [BG].jpg

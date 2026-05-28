@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Seven Days In Sunny June
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:222
 #MP3:Jamiroquai - Seven Days In Sunny June.mp3
 #COVER:Jamiroquai - Seven Days In Sunny June [CO].jpg
 #BACKGROUND:Jamiroquai - Seven Days In Sunny June [BG].jpg

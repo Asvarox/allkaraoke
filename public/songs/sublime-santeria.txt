@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1598
 #ALLKARAOKE_VOLUME:0,57
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:196
 : 23 3 16 I 
 : 27 4 16 don’t 
 : 35 5 16 prac

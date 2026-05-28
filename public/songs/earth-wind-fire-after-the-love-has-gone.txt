@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:34
 #ALLKARAOKE_SOURCEURL:Earth, Wind & Fire - After The Love Has Gone
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:280
 #MP3:Earth, Wind & Fire - After The Love Has Gone.mp3
 : 16 2 -12 For 
 : 20 2 -10 a 

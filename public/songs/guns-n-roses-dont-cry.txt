@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Don't%20Cry
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:314
 : 16 51 9 Uh
 : 68 6 9 ~
 : 75 6 9 ~

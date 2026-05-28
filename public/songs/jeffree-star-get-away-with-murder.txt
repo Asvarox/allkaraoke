@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Jeffree Star - Get Away With Murder
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:222
 #MP3:Jeffree Star - Get Away With Murder.mp3
 : 19 3 8 I’m 
 : 23 3 8 gon

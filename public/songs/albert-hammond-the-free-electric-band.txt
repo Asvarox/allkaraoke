@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Albert Hammond - The Free Electric Band
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:203
 #MP3:Albert Hammond - The Free Electric Band.mp3
 : 26 10 7 My 
 : 38 4 7 fa

@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:310
 #ALLKARAOKE_VOLUME:0,64
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:377
 #P1:En la Ciudad de la Furia
 #MP3:Soda Stereo - En la ciudad de la furia.mp3
 #COVER:Soda Stereo - En la ciudad de la furia [CO].jpg

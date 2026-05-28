@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Franz Ferdinand - Love Illumination
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:225
 #MP3:Franz Ferdinand - Love Illumination.mp3
 : 20 2 4 When 
 : 24 2 4 you’re 

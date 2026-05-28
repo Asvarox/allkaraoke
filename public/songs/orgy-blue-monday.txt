@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Orgy&cancion=Blue%20Monday
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:267
 #MP3:Orgy - Blue Monday.mp3
 #COVER:Orgy - Blue Monday.jpg
 #START:3

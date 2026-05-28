@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Bob Marley & The Wailers - No Woman No Cry
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:431
 #MP3:Bob Marley & The Wailers - No Woman No Cry.mp3
 : 20 8 13 No 
 : 29 8 12 wo

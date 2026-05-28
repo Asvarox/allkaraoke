@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/e5lt_BgJK9Y?si=LCmingN78IJywRCw
 #ALLKARAOKE_VOLUME:0,76
 #ALLKARAOKE_OLDVOLUME:0,87
+#ALLKARAOKE_DURATION:197
 #MP3:Olivia Newton-John - Banks Of The Ohio.mp3
 : 14 4 0 I 
 : 21 3 0 asked 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Powderfinger - (Baby I’ve Got You) On My Mind
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:220
 #MP3:Powderfinger - (Baby I’ve Got You) On My Mind.mp3
 : 19 7 17 Ba
 : 28 5 15 by 

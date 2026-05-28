@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Michael Jackson - Earth Song
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:403
 #MP3:Michael Jackson - Earth Song.mp3
 : 18 4 3 What 
 : 25 2 1 a

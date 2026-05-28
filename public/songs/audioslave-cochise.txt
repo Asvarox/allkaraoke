@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Cochise
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_DURATION:237
 : 21 7 71 Well 
 : 29 4 71 I've 
 : 37 4 71 been 

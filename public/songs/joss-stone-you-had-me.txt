@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Joss Stone - You Had Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:240
 #MP3:Joss Stone - You Had Me.mp3
 #COVER:Joss Stone - You Had Me [CO].jpg
 #BACKGROUND:Joss Stone - You Had Me [BG].jpg

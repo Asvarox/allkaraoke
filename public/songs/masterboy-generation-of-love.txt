@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=M8GlWPkzWsA&ab_channel=MasterboyVEVO
 #ALLKARAOKE_VOLUME:0,66
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:220
 #MP3:Masterboy - Generation Of Love.mp3
 : 19 5 5 Boys 
 : 27 5 4 and 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:usdb.animux.de
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:219
 #MP3:Herbert Grönemeyer - Mein Konzert.m4a
 #COVER:Herbert Grönemeyer - Mein Konzert [CO].jpg
 #BACKGROUND:Herbert Grönemeyer - Mein Konzert [BG].jpg

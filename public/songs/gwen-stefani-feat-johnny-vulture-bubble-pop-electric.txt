@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:10
 #ALLKARAOKE_SOURCEURL:Gwen Stefani feat. Johnny Vulture - Bubble Pop Electric
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:223
 #MP3:Gwen Stefani feat. Johnny Vulture - Bubble Pop Electric.mp3
 : 26 2 1 I’m 
 : 30 4 1 emp

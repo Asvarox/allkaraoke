@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:107
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:191
 #MP3:Zedd, Maren Morris, Grey - The Middle.mp3
 #COVER:Zedd, Maren Morris, Grey - The Middle [CO].jpg
 #BACKGROUND:Zedd, Maren Morris, Grey - The Middle [BG].jpg

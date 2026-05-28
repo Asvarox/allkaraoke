@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Freemasons feat. Sophie Ellis-Bextor - Heartbreak (Make Me A Dancer)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:216
 #MP3:Freemasons feat. Sophie Ellis-Bextor - Heartbreak (Make Me A Dancer).mp3
 : 17 4 7 I've 
 : 25 6 7 tried 

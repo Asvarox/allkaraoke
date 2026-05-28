@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettx
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:230
 #MP3:Hellogoodbye - Here (In Your Arms).mp3
 : 17 2 21 I 
 : 21 6 19 like

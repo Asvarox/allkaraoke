@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=v08qmr8m_-w
 #ALLKARAOKE_VOLUME:0,59
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:249
 #MP3:Imagine Dragons - Eyes Closed.mp3
 #COVER:Imagine Dragons - Eyes Closed [CO].jpg
 #BACKGROUND:Imagine Dragons - Eyes Closed [BG].jpg

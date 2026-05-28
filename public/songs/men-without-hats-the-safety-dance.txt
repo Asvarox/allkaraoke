@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Men Without Hats - The Safety Dance
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:164
 #MP3:Men Without Hats - The Safety Dance.mp3
 : 13 1 7 We 
 : 15 1 7 can 

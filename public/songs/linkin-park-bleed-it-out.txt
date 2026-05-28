@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:169
 - -25 1
 - 1
 F 26 5 0 Yeah 

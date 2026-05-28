@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:John Lennon & The Plastic Ono Band - Imagine
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:John Lennon & The Plastic Ono Band - Imagine.mp3
 : 23 3 4 I
 : 28 5 7 ma

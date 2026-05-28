@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Frozen
 #ALLKARAOKE_VOLUME:0,83
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:329
 : 14 2 8 You 
 : 18 3 8 on
 : 22 2 8 ly 

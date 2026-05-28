@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=This%20Love
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:206
 : 0 2 59 I
 : 3 4 59  was
 : 7 4 59  so

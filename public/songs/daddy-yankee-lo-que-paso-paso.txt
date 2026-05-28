@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:97
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:212
 #MP3:Daddy Yankee - Lo que pasó, pasó.mp3
 #COVER:Daddy Yankee - Lo que pasó, pasó.jpg
 #END:181570

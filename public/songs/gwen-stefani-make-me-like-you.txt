@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Gwen Stefani - Make Me Like You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:228
 #MP3:Gwen Stefani - Make Me Like You.mp3
 : 16 7 7 Ah 
 : 24 3 8 ~ 

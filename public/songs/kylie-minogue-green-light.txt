@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Green Light
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:200
 #MP3:Kylie Minogue - Green Light.mp3
 #COVER:Kylie Minogue - Green Light [CO].jpg
 #BACKGROUND:Kylie Minogue - Green Light [BG].jpg

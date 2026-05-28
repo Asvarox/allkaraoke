@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Bad Religion - Sorrow
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:202
 #MP3:Bad Religion - Sorrow.mp3
 #COVER:Bad Religion - Sorrow [CO].jpg
 #BACKGROUND:Bad Religion - Sorrow [BG].jpg

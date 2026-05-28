@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Destiny’s Child - Survivor
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:251
 #MP3:Destiny’s Child - Survivor.mp3
 : 21 6 8 Now 
 : 29 3 8 that 

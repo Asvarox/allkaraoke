@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:284
 : 18 6 11 You
 - 24
 : 38 3 11 change 

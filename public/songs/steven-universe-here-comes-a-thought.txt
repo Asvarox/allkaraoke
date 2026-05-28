@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/dHg50mdODFM
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:213
 #MP3:Steven Universe - Here Comes A Thought.mp3
 #COVER:Steven Universe - Here Comes A Thought [CO].jpg
 #BACKGROUND:Steven Universe - Here Comes A Thought [BG].jpg

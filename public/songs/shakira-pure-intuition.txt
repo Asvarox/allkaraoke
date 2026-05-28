@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Shakira - Pure Intuition
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:220
 #MP3:Shakira - Pure Intuition.mp3
 : 17 4 0 Let 
 : 23 2 -2 us 

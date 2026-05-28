@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_VOLUME:0,62
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:132
 #MP3:SIRA, badchieff, Bausa - 9 bis 9.mp3
 #COVER:SIRA, badchieff, Bausa - 9 bis 9 [CO].jpg
 #BACKGROUND:SIRA, badchieff, Bausa - 9 bis 9 [BG].jpg

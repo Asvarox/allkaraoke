@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Adam Pascal - One Song Glory (Rent OST)
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:167
 #MP3:Adam Pascal - One Song Glory (Rent OST).mp3
 : 19 5 8 One 
 : 26 11 10 song. 

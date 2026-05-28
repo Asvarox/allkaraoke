@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:50
 #ALLKARAOKE_SOURCEURL:Vanessa Amorosi - Absolutely Everybody
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:235
 #MP3:Vanessa Amorosi - Absolutely Everybody.mp3
 : 16 2 5 Ab
 : 20 2 5 so

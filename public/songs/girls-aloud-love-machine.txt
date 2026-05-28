@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Love Machine
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:218
 #MP3:Girls Aloud - Love Machine.mp3
 : 15 2 -5 La
 : 19 3 -3 dies 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Real Groove
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:173
 #MP3:Kylie Minogue - Real Groove.mp3
 : 16 2 8 Feel 
 : 20 1 8 my 

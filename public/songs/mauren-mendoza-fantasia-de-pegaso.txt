@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_VOLUME:0,55
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:86
 #MP3:Mauren Mendoza - Fantasía de Pegaso (TV).mp3
 #COVER:Mauren Mendoza - Fantasía de Pegaso (TV).jpg
 : 22 3 0 Siem

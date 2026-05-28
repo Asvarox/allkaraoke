@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17224
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:206
 #MP3:SEBalter - Hunter Of Stars (ESC 2014 Swizerland).mp3
 : 24 2 23 ~
 : 28 4 26 ~

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Everybody’s Going To The Moon
 #ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_DURATION:326
 #MP3:Jamiroquai - Everybody’s Going To The Moon.mp3
 : 17 2 15 Kick 
 : 21 2 16 that 

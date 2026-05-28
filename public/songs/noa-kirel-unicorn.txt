@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Noa+Kirel
 #ALLKARAOKE_VOLUME:0,74
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:193
 #MP3:Noa Kirel - Unicorn.mp3
 #COVER:Noa Kirel - Unicorn.png
 #MEDLEYSTARTBEAT:484

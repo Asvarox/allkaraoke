@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:The Saturdays feat. Sean Paul - What About Us
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:222
 #MP3:The Saturdays feat. Sean Paul - What About Us.mp3
 : 14 1 -1 Well 
 : 16 2 2 in 

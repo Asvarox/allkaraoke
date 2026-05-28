@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Joss Stone - Snakes And Ladders
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:216
 #MP3:Joss Stone - Snakes And Ladders.mp3
 : 24 3 0 In 
 : 30 3 2 the 

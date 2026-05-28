@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:147
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Physical
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:244
 : 20 3 0 Com
 : 24 2 0 mon 
 : 28 3 0 love

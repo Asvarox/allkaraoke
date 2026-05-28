@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:Elvis Presley - All Shook Up
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:119
 #MP3:Elvis Presley - All Shook Up.mp3
 #COVER:Elvis Presley - All Shook Up [CO].jpg
 #BACKGROUND:Elvis Presley - All Shook Up [BG].jpg

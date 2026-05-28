@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Taylor Swift feat. Fall Out Boy - Electric Touch
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:271
 #MP3:Taylor Swift feat. Fall Out Boy - Electric Touch.mp3
 #COVER:Taylor Swift feat. Fall Out Boy - Electric Touch [CO].jpg
 #BACKGROUND:Taylor Swift feat. Fall Out Boy - Electric Touch [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Bad Religion - American Jesus
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:199
 #MP3:Bad Religion - American Jesus.mp3
 : 24 2 4 I 
 : 27 3 4 don’t 

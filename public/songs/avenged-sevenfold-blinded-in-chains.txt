@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12897
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:395
 #MP3:Avenged Sevenfold - Blinded In Chains.mp3
 : 26 3 3 And 
 : 30 7 5 we’re 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:81
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=James%20Blunt&cancion=You're%20Beautiful
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_DURATION:203
 : 0 7 55 My
 : 8 4 58  life
 : 14 3 55  is

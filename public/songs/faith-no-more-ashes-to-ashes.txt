@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Faith No More - Ashes To Ashes
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:204
 #MP3:Faith No More - Ashes To Ashes.mp3
 : 26 6 -6 I 
 : 34 6 -6 want 

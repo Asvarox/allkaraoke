@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8329
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:280
 : 25 14 7 Hmm 
 : 41 2 5 hmm 
 : 45 2 3 hmm 

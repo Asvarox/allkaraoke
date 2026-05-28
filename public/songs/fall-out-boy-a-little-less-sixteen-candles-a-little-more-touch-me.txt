@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - A Little Less Sixteen Candles, A Little More “Touch Me”
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:170
 #MP3:Fall Out Boy - A Little Less Sixteen Candles, A Little More “Touch Me”.mp3
 : 18 3 2 I 
 : 22 3 4 con

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Take That - What Do You Want From Me?
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:278
 #MP3:Take That - What Do You Want From Me?.mp3
 : 18 5 6 My 
 : 24 7 8 grea

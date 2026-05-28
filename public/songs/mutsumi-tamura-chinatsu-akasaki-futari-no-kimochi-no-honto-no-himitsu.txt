@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,88
+#ALLKARAOKE_DURATION:91
 #MP3:Mutsumi Tamura & Chinatsu Akasaki - Futari no Kimochi no Honto no Himitsu (TV).mp3
 #COVER:Mutsumi Tamura & Chinatsu Akasaki - Futari no Kimochi no Honto no Himitsu (TV).jpg
 * 17 5 6 A

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:118
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Fountains%20Of%20Wayne&cancion=Stacy's%20Mom
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:197
 - -15 1
 - 1
 : 16 2 56 Sta

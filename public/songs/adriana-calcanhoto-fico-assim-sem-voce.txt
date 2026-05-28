@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5248
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:190
 #P1:Fico Assim Sem Você
 #MP3:Adriana Calcanhoto - Fico Assim Sem Você.mp3
 : 16 3 5 A

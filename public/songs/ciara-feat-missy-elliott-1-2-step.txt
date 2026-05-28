@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Ciara feat. Missy Elliott - 1, 2 Step
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:205
 #MP3:Ciara feat. Missy Elliott - 1, 2 Step.mp3
 F 15 1 7 La
 F 17 1 7 dies 

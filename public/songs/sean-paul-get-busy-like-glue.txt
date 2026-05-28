@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Sean Paul - Get Busy / Like Glue
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:265
 #MP3:Sean Paul - Get Busy / Like Glue.mp3
 : 25 4 5 Shake 
 : 35 4 5 that 

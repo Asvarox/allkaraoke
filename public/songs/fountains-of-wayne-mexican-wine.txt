@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Fountains Of Wayne - Mexican Wine
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:203
 #MP3:Fountains Of Wayne - Mexican Wine.mp3
 #COVER:Fountains Of Wayne - Mexican Wine [CO].jpg
 #BACKGROUND:Fountains Of Wayne - Mexican Wine [BG].jpg

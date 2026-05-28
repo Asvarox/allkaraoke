@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=Blinding+Lights
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:204
 : 23 3 12 I 
 : 27 1 10 been 
 : 32 2 12 try

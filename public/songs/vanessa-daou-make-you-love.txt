@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Vanessa Daou - Make You Love
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:267
 #MP3:Vanessa Daou - Make You Love.mp3
 : 24 6 2 It’s 
 : 32 16 2 four 

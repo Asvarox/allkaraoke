@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Duration Probe</title>
+  </head>
+  <body>
+    <div id="status" data-status="pending">pending</div>
+    <div id="duration-seconds"></div>
+    <div id="error-message"></div>
+    <div id="player" style="position: absolute; left: -9999px; width: 1px; height: 1px"></div>
+
+    <script>
+      (function () {
+        var statusElement = document.getElementById('status');
+        var durationElement = document.getElementById('duration-seconds');
+        var errorElement = document.getElementById('error-message');
+        var params = new URLSearchParams(window.location.search);
+        var videoId = params.get('videoId');
+        var timeoutMs = Number(params.get('timeoutMs') || '15000');
+        var player;
+
+        function markError(message) {
+          statusElement.setAttribute('data-status', 'error');
+          statusElement.textContent = 'error';
+          errorElement.textContent = message;
+          window.__youtubeDurationProbe = { ok: false, error: message };
+        }
+
+        function markDone(durationSeconds) {
+          statusElement.setAttribute('data-status', 'done');
+          statusElement.textContent = 'done';
+          durationElement.textContent = String(durationSeconds);
+          window.__youtubeDurationProbe = {
+            ok: true,
+            durationSeconds: durationSeconds,
+          };
+        }
+
+        if (!videoId) {
+          markError('Missing query parameter: videoId');
+          return;
+        }
+
+        function waitForDuration() {
+          var startedAt = Date.now();
+          var intervalId = setInterval(function () {
+            var durationSeconds = player && player.getDuration ? player.getDuration() : 0;
+            if (Number.isFinite(durationSeconds) && durationSeconds > 0) {
+              clearInterval(intervalId);
+              markDone(Math.round(durationSeconds));
+              return;
+            }
+
+            if (Date.now() - startedAt > timeoutMs) {
+              clearInterval(intervalId);
+              markError('Timed out waiting for a valid video duration');
+            }
+          }, 250);
+        }
+
+        window.onYouTubeIframeAPIReady = function () {
+          player = new YT.Player('player', {
+            height: '1',
+            width: '1',
+            videoId: videoId,
+            playerVars: {
+              autoplay: 0,
+              controls: 0,
+              playsinline: 1,
+              rel: 0,
+            },
+            events: {
+              onReady: function () {
+                waitForDuration();
+              },
+              onError: function (event) {
+                markError('YouTube player error code: ' + event.data);
+              },
+            },
+          });
+        };
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://www.youtube.com/iframe_api';
+        scriptElement.async = true;
+        scriptElement.onerror = function () {
+          markError('Failed to load YouTube IFrame API script');
+        };
+        document.head.appendChild(scriptElement);
+      })();
+    </script>
+  </body>
+</html>

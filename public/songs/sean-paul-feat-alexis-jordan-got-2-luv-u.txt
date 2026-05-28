@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Sean Paul feat. Alexis Jordan - Got 2 Luv U
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Sean Paul feat. Alexis Jordan - Got 2 Luv U.mp3
 : 18 3 22 Got 
 : 24 2 22 2 

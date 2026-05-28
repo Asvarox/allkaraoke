@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:229
 F 15 3 70 Ow
 - 18 78
 - 78

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Simple Plan feat. Natasha Bedingfield - Jet Lag
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_DURATION:210
 #MP3:Simple Plan feat. Natasha Bedingfield - Jet Lag.mp3
 F 19 10 11 Oh
 F 33 37 18 ~ 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Christopher Cross - Ride Like The Wind
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:241
 #MP3:Christopher Cross - Ride Like The Wind.mp3
 : 17 2 5 It 
 : 21 2 5 is 

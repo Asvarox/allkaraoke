@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=3BBsF7VIQyo
 #ALLKARAOKE_VOLUME:0,52
 #ALLKARAOKE_OLDVOLUME:0,65
+#ALLKARAOKE_DURATION:253
 #P1:The Pussycat Dolls - Hush Hush
 #MP3:The Pussycat Dolls - Hush Hush; Hush Hush.mp3
 : 17 2 -2 O 

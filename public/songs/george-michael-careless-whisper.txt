@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:301
 : 20 2 -3 Whoah
 : 24 2 0 ~,
 : 28 2 2  whoah

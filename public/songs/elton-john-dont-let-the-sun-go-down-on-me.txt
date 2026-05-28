@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Elton John - Don’t Let The Sun Go Down On Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:337
 #MP3:Elton John - Don’t Let The Sun Go Down On Me.mp3
 : 26 6 -1 I 
 : 33 8 -1 can’t 

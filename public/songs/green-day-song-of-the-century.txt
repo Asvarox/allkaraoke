@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:Green Day - Song Of The Century
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:58
 #MP3:Green Day - Song Of The Century.mp3
 : 26 12 12 Sing 
 : 39 5 12 us 

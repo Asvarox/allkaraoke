@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Warriors
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:171
 : 0 1 -13 As
 : 4 1 -10  a
 : 9 11 -8  child

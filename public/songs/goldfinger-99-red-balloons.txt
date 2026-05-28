@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Goldfinger - 99 Red Balloons
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:219
 #MP3:Goldfinger - 99 Red Balloons.mp3
 : 26 3 6 You 
 : 30 7 8 and 

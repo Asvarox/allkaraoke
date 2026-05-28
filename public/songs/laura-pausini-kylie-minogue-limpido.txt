@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Laura Pausini & Kylie Minogue - Limpido
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:229
 #MP3:Laura Pausini & Kylie Minogue - Limpido.mp3
 : 26 20 4 For
 : 50 6 6 se 

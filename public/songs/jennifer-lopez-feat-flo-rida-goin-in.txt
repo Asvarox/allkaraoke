@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Flo Rida - Goin’ In
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:249
 #MP3:Jennifer Lopez feat. Flo Rida - Goin’ In.mp3
 : 17 3 3 To
 : 21 3 8 night

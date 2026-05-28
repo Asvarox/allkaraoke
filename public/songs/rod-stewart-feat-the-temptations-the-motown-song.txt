@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:Rod Stewart feat. The Temptations - The Motown Song
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:253
 #MP3:Rod Stewart feat. The Temptations - The Motown Song.mp3
 #COVER:Rod Stewart feat. The Temptations - The Motown Song [CO].jpg
 #BACKGROUND:Rod Stewart feat. The Temptations - The Motown Song [BG].jpg

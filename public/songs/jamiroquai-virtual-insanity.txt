@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:235
 : 25 7 22 Ooh
 : 33 22 20 ~,
 - 55

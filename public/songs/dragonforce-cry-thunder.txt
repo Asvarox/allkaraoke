@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Cry+Thunder
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,95
+#ALLKARAOKE_DURATION:320
 #COVER:DragonForce - Cry Thunder.jpg
 #MP3:DragonForce - Cry Thunder.mp3
 : 17 5 -1 Time 

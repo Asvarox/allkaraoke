@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=3yy-dKTmyOo
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:188
 #MP3:Milo Manheim & Meg Donnelly - Someday (De ZOMBIES).mp3
 #COVER:Milo Manheim & Meg Donnelly - Someday (De ZOMBIES).jpg
 #MEDLEYSTARTBEAT:624

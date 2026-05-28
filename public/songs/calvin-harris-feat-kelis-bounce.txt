@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Kelis - Bounce
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:231
 #MP3:Calvin Harris feat. Kelis - Bounce.mp3
 : 17 2 9 I 
 : 21 2 9 can’t 

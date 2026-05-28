@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Atomic Kitten - Eternal Flame
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_DURATION:196
 #MP3:Atomic Kitten - Eternal Flame.mp3
 : 22 9 -1 Close 
 : 32 3 0 your 

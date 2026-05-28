@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:Bad Religion - Change Of Ideas
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:56
 #MP3:Bad Religion - Change Of Ideas.mp3
 : 40 3 13 Well 
 : 44 2 13 the 

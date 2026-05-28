@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:usdb.animux.de
 #ALLKARAOKE_VOLUME:0,92
 #ALLKARAOKE_OLDVOLUME:0,84
+#ALLKARAOKE_DURATION:263
 #MP3:Ozzy Osbourne - Mama, I’m Coming Home.mp3
 : 25 9 10 Times 
 : 36 3 7 have 

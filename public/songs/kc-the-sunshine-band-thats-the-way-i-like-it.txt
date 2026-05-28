@@ -13,6 +13,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_SOURCEURL:KC & The Sunshine Band - That’s The Way (I Like It)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:183
 #MP3:KC & The Sunshine Band - That’s The Way (I Like It).mp3
 : 15 2 -2 Oh
 : 18 18 0 ~ 

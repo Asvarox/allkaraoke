@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Vanessa Amorosi - Every Time I Close My Eyes
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:270
 #MP3:Vanessa Amorosi - Every Time I Close My Eyes.mp3
 #COVER:Vanessa Amorosi - Every Time I Close My Eyes [CO].jpg
 #BACKGROUND:Vanessa Amorosi - Every Time I Close My Eyes [BG].jpg

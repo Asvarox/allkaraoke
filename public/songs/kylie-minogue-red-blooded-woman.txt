@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Red Blooded Woman
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:253
 #MP3:Kylie Minogue - Red Blooded Woman.mp3
 : 19 3 5 Yeah
 : 23 3 7 ~ 

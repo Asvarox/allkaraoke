@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Alright
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:227
 #MP3:Jamiroquai - Alright.mp3
 : 23 4 0 Need 
 : 30 2 -2 your 

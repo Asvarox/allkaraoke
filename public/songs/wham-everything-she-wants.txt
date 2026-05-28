@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Yf_Lwe6p-Cg
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:398
 #MP3:Wham! - Everything She Wants.mp3
 : 15 1 11 Uh
 : 17 4 13 ~, 

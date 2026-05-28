@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=WefxVZLhm9U
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:219
 #MP3:Ridan - Ulysse.mp3
 #COVER:Ridan - Ulysse.jpg
 : 27 4 9 Heu

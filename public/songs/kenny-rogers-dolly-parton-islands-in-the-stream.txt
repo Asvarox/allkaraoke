@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_VOLUME:0,95
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:251
 #P1:Kenny Rogers
 #P2:Dolly Parton
 #MP3:Kenny Rogers & Dolly Parton - Islands In The Stream [DUET].mp3

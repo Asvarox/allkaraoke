@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=The%20Show%20Must%20Go%20On
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:263
 : 0 4 62 Emp
 : 7 3 62 ty
 : 14 4 61  spa

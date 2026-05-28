@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:71
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. R. Kelly - Baby I ♡ U!
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:252
 #MP3:Jennifer Lopez feat. R. Kelly - Baby I ♡ U!.mp3
 : 15 4 11 Ba
 : 23 2 11 by 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,79
+#ALLKARAOKE_DURATION:229
 #P1:Beautiful
 #MP3:Akon feat. Kardinal Offishall & Colby O’Donis - Beautiful.mp3
 : 17 2 10 When 

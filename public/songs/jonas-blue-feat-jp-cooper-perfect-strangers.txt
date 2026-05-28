@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Jonas Blue feat. JP. Cooper - Perfect Strangers
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:208
 #MP3:Jonas Blue feat. JP. Cooper - Perfect Strangers.mp3
 : 16 1 -4 You 
 : 18 1 -4 were 

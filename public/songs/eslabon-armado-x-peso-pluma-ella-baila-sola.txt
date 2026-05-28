@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:166
 #P1:Ella Baila Sola
 #MP3:Ella Baila Sola - (Video Con Letras).mp3
 #COVER:Eslabon Armado x Peso Pluma - Ella baila sola [CO].jpg

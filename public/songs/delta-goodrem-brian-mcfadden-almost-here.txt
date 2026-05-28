@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Delta Goodrem & Brian McFadden - Almost Here [DUET]
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Delta Goodrem & Brian McFadden - Almost Here [DUET].mp3
 : 21 14 -3 Did 
 : 37 12 -1 I 

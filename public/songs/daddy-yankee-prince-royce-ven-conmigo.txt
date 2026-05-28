@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:120
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,67
+#ALLKARAOKE_DURATION:220
 #MP3:Daddy Yankee & Prince Royce - Ven conmigo.mp3
 #COVER:Daddy Yankee & Prince Royce - Ven conmigo [CO].jpg
 F 16 2 22 D-

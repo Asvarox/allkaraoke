@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:The Human League - Open Your Heart
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:The Human League - Open Your Heart.mp3
 : 18 8 12 And 
 : 27 5 12 when 

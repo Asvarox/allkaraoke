@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Guns N’ Roses - Estranged
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:588
 #MP3:Guns N’ Roses - Estranged.mp3
 : 24 2 -5 When 
 : 28 2 -5 you’re 

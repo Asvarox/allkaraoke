@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:124
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:93
 #MP3:Hiroaki TOMMY Tominaga - Jojo ~Sono Chi no Sadame~ (TV).mp3
 #COVER:Hiroaki TOMMY Tominaga - Jojo ~Sono Chi no Sadame~ (TV).jpg
 F 20 2 -3 (Jo

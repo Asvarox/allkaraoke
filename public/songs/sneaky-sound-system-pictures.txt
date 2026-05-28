@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Sneaky Sound System - Pictures
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:Sneaky Sound System - Pictures.mp3
 : 16 10 23 Light 
 : 28 3 19 of 

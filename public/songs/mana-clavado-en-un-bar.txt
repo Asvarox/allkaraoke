@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Man%C3%A1&cancion=Clavado%20en%20un%20bar
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:262
 - 0 147
 - 147
 : 167 3 18 A

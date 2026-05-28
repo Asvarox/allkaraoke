@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Under%20the%20bridge
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:268
 : 27 10 20 Some
 : 39 9 20 times 
 : 50 5 20 I

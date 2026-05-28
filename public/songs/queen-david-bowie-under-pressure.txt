@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen%20%26%20David%20Bowie&cancion=Under%20Pressure
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:254
 : 0 7 9 Boom
 : 8 3 7  boom
 : 12 4 6  bah

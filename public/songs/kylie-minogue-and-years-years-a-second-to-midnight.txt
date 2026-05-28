@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Kylie Minogue and Years & Years - A Second To Midnight
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:209
 #MP3:Kylie Minogue and Years & Years - A Second To Midnight.mp3
 : 16 3 5 Re
 : 20 11 5 mem

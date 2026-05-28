@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:36
 #ALLKARAOKE_SOURCEURL:Céline Dion with the Bee Gees - Immortality
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:250
 #MP3:Céline Dion with the Bee Gees - Immortality.mp3
 : 17 5 9 So 
 : 23 2 9 this 

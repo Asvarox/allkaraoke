@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Ronan Keating & Jeanette - We’ve Got Tonight
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:216
 #MP3:Ronan Keating & Jeanette - We’ve Got Tonight.mp3
 : 16 4 1 I 
 : 22 4 -1 know 

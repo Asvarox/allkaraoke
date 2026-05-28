@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Cheryl Cole feat. will.i.am - 3 Words
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:286
 #MP3:Cheryl Cole feat. will.i.am - 3 Words.mp3
 : 17 2 23 I 
 : 21 2 23 met 

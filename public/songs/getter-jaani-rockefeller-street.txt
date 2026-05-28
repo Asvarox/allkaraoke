@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28439
 #ALLKARAOKE_VOLUME:0,63
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:193
 #MP3:Getter Jaani - Rockefeller Street (ESC 2011 Estonia).mp3
 #COVER:Getter Jaani - Rockefeller Street (ESC 2011 Estonia) [CO].jpg
 #BACKGROUND:Getter Jaani - Rockefeller Street (ESC 2011 Estonia) [BG].jpg

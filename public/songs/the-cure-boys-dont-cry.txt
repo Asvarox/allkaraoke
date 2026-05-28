@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Boys%20Don't%20Cry
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:175
 : 45 8 13 I 
 : 61 4 13 would 
 : 69 12 14 say 

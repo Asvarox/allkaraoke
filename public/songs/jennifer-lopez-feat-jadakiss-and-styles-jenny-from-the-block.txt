@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:7
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Jadakiss and Styles - Jenny From The Block
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Jennifer Lopez feat. Jadakiss and Styles - Jenny From The Block.mp3
 #START:35.0
 : 27 6 18 Chil

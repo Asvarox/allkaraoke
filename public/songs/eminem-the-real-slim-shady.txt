@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:272
 #MP3:Eminem - The Real Slim Shady.mp3
 #COVER:Eminem - The Real Slim Shady [CO].jpg
 #BACKGROUND:Eminem - The Real Slim Shady [BG].jpg

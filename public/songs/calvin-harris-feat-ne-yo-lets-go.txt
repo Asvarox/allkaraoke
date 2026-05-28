@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Ne-Yo - Let’s Go
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:247
 #MP3:Calvin Harris feat. Ne-Yo - Let’s Go.mp3
 : 17 4 -1 Let’s 
 : 25 4 -1 go!

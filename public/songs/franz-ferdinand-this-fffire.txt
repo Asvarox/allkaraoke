@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:105
 #MP3:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening).mp3
 #COVER:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening) [CO].jpg
 #BACKGROUND:Cyberpunk Edgerunners (Franz Ferdinand) - This fffire (Opening) [BG].jpg

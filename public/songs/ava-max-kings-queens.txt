@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ava%20Max&cancion=Kings%20%26%20Queens
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:163
 : 9 3 1 If 
 : 14 1 6 all
 : 16 2 8 ~ 

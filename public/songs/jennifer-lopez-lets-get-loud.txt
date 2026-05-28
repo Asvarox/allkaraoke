@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez - Let’s Get Loud
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:240
 #MP3:Jennifer Lopez - Let’s Get Loud.mp3
 : 17 7 3 Let’s 
 : 25 5 2 get 

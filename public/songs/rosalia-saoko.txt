@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6o7bCAZSxsg
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:141
 #MP3:Rosalía - Saoko.mp3
 #COVER:Rosalía - Saoko.jpg
 #START:0.1

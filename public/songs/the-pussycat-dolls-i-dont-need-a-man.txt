@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls - I Don’t Need A Man
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:220
 #MP3:The Pussycat Dolls - I Don’t Need A Man.mp3
 : 14 1 5 No
 : 16 1 4 ~

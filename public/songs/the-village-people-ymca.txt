@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:242
 : 17 3 61 Young 
 : 21 4 58 man
 - 25

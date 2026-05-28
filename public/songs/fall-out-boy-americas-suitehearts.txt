@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - America’s Suitehearts
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:Fall Out Boy - America’s Suitehearts.mp3
 : 21 7 5 You 
 : 29 6 1 could 

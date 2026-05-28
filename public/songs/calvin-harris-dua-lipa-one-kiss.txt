@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Calvin Harris & Dua Lipa - One Kiss
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:Calvin Harris & Dua Lipa - One Kiss.mp3
 : 17 6 16 One 
 : 24 4 14 kiss 

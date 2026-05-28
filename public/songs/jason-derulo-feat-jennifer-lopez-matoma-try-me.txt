@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Jason Derulo feat. Jennifer Lopez & Matoma - Try Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:201
 #MP3:Jason Derulo feat. Jennifer Lopez & Matoma - Try Me.mp3
 : 25 4 -2 Whoa
 : 33 8 0 ~

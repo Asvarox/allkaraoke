@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=ado
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:277
 #MP3:Ado - Giragira.mp3
 #COVER:Ado - Giragira [CO].jpg
 #MEDLEYSTARTBEAT:1660

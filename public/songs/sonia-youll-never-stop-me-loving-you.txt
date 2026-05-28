@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:Sonia - You’ll Never Stop Me Loving You
 #ALLKARAOKE_VOLUME:0,57
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:201
 #MP3:Sonia - You’ll Never Stop Me Loving You.mp3
 #COVER:Sonia - You’ll Never Stop Me Loving You [CO].jpg
 #BACKGROUND:Sonia - You’ll Never Stop Me Loving You [BG].jpg

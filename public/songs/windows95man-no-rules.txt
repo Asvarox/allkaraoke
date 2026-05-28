@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28752
 #ALLKARAOKE_VOLUME:0,99
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:184
 #MP3:Windows95man - No Rules! (ESC 2024 Finland).mp3
 #COVER:Windows95man - No Rules! (ESC 2024 Finland) [CO].jpg
 #BACKGROUND:Windows95man - No Rules! (ESC 2024 Finland) [BG].jpg

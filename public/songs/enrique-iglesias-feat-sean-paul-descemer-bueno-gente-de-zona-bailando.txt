@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Enrique Iglesias feat. Sean Paul, Descemer Bueno, Gente De Zona - Bailando
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:272
 #MP3:Enrique Iglesias feat. Sean Paul, Descemer Bueno, Gente De Zona - Bailando.mp3
 : 27 6 14 Bless 
 : 35 2 12 them 

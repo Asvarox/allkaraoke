@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:The Saturdays - Disco Love
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:204
 #MP3:The Saturdays - Disco Love.mp3
 : 16 2 19 What 
 : 19 3 19 you 

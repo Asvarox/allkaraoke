@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=8CrRd4hcAeE
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,97
+#ALLKARAOKE_DURATION:264
 #P1:   
 #MP3:Ultravox - Dancing With Tears In My Eyes.mp3
 : 19 4 9 Da

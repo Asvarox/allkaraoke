@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Green Day - Wake Me Up When September Ends (Short Version)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:410
 #MP3:Green Day - Wake Me Up When September Ends (Short Version).mp3
 #START:82.0
 : 21 13 9 Sum

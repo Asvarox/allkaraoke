@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Jukebox the Ghost - Under My Skin
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:200
 #MP3:Jukebox the Ghost - Under My Skin.mp3
 #COVER:Jukebox the Ghost - Under My Skin [CO].jpg
 #BACKGROUND:Jukebox the Ghost - Under My Skin [BG].jpg

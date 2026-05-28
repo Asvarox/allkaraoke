@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:Sniff ’n’ the Tears - Driver’s Seat
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:224
 #MP3:Sniff ’n’ the Tears - Driver’s Seat.mp3
 : 18 3 18 Do
 : 22 3 18 ing 

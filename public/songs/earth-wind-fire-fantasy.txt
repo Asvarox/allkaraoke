@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Earth, Wind & Fire - Fantasy
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:279
 #MP3:Earth, Wind & Fire - Fantasy.mp3
 : 24 2 4 Eve
 : 29 2 6 ry 

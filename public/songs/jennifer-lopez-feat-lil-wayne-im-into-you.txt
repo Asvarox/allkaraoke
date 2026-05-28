@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:78
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Lil Wayne - I’m Into You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:260
 #MP3:Jennifer Lopez feat. Lil Wayne - I’m Into You.mp3
 : 22 6 8 Na, 
 : 30 2 13 na, 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - Alone Together
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:203
 #MP3:Fall Out Boy - Alone Together.mp3
 : 16 4 8 I 
 : 23 2 8 don’t 

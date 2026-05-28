@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Londonbeat - You Bring On The Sun
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:216
 #MP3:Londonbeat - You Bring On The Sun.mp3
 #COVER:Londonbeat - You Bring On The Sun [CO].jpg
 #BACKGROUND:Londonbeat - You Bring On The Sun [BG].jpg

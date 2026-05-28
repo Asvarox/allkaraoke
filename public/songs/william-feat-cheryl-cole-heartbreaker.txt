@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:41
 #ALLKARAOKE_SOURCEURL:will.i.am feat. Cheryl Cole - Heartbreaker
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:will.i.am feat. Cheryl Cole - Heartbreaker.mp3
 #COVER:will.i.am feat. Cheryl Cole - Heartbreaker [CO].jpg
 #BACKGROUND:will.i.am feat. Cheryl Cole - Heartbreaker [BG].jpg

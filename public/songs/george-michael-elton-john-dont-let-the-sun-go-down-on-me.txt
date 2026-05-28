@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_VOLUME:0,72
 #ALLKARAOKE_OLDVOLUME:0,98
+#ALLKARAOKE_DURATION:352
 #P1:George Michael
 #P2:Elton John
 #MP3:George Michael & Elton John - Don’t Let The Sun Go Down On Me [DUET].mp3

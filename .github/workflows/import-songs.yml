@@ -31,6 +31,10 @@ jobs:
           token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - name: Prepare Playwright
+        uses: './.github/templates/prepare-playwright'
+        with:
+          project: 'chromium'
       - name: Get songs
         if: github.event_name == 'workflow_dispatch'
         run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"

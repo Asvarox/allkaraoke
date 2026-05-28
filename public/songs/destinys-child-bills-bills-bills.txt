@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Destiny’s Child - Bills, Bills, Bills
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:246
 #MP3:Destiny’s Child - Bills, Bills, Bills.mp3
 : 17 2 -6 At 
 : 21 2 -1 first 

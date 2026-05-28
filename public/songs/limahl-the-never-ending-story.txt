@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=1109
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:210
 #MP3:Limahl - The Never Ending Story.mp3
 : 16 10 4 Turn 
 : 28 2 -5 a

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_VOLUME:0,99
 #ALLKARAOKE_OLDVOLUME:0,69
+#ALLKARAOKE_DURATION:228
 #P1:Who’s That Chick?
 #MP3:David Guetta feat. Rihanna - Who’s That Chick? (Day Video).mp3
 : 17 6 2 Feel 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Scatman John - Scatman (Ski-Ba-Bop-Ba-Dop-Bop)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:211
 #MP3:Scatman John - Scatman (Ski-Ba-Bop-Ba-Dop-Bop).mp3
 : 18 2 5 I’m 
 : 22 2 7 the 

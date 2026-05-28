@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls feat. Missy Elliott - Whatcha Think About That
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:The Pussycat Dolls feat. Missy Elliott - Whatcha Think About That.mp3
 F 16 2 11 Lai
 F 20 2 9 dys

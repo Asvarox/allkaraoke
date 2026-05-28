@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Smells%20Like%20Teen%20Spirit
 #ALLKARAOKE_VOLUME:0,52
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:279
 : 23 6 60 Load 
 : 30 7 63 up 
 : 41 6 65 on 

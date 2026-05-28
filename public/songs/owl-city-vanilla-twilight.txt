@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Owl City - Vanilla Twilight
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:232
 #MP3:Owl City - Vanilla Twilight.mp3
 : 13 4 6 The 
 : 21 4 11 stars 

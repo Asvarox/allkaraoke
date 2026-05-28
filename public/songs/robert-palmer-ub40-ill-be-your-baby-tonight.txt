@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Robert Palmer & UB40 - I’ll Be Your Baby Tonight
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:205
 #MP3:Robert Palmer & UB40 - I’ll Be Your Baby Tonight.mp3
 #COVER:Robert Palmer & UB40 - I’ll Be Your Baby Tonight [CO].jpg
 #BACKGROUND:Robert Palmer & UB40 - I’ll Be Your Baby Tonight [BG].jpg

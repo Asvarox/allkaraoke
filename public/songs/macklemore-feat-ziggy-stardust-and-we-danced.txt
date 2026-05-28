@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Macklemore feat. Ziggy Stardust - And We Danced
 #ALLKARAOKE_VOLUME:0,62
+#ALLKARAOKE_DURATION:363
 #MP3:Macklemore feat. Ziggy Stardust - And We Danced.mp3
 #START:86.0
 : 17 3 2 Ooh 

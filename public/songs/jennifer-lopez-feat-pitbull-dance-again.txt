@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:91
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Pitbull - Dance Again
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:267
 #MP3:Jennifer Lopez feat. Pitbull - Dance Again.mp3
 F 17 7 18 Dance
 - 24

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:105
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,88
+#ALLKARAOKE_DURATION:317
 #P1:I would do anything for love
 #MP3:Meatloaf - I'd Do Anything for Love (But I Won't Do That).mp3
 #COVER:Meatloaf - I'd Do Anything for Love (But I Won't Do That) [CO].jpg

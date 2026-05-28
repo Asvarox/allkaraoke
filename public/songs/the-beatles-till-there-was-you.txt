@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:The Beatles - Till There Was You
 #ALLKARAOKE_VOLUME:0,99
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:134
 #MP3:The Beatles - Till There Was You.mp3
 : 16 2 9 There 
 : 20 2 10 were 

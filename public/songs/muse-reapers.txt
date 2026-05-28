@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:96
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Reapers
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:360
 * 0 20 5 Home
 - 30
 : 40 3 -3 It's

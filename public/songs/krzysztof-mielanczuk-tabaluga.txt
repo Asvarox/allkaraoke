@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Krzysztof%20Miela%C5%84czuk&cancion=Tabaluga
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:90
 : 19 1 -5 O
 : 21 2 0 ~
 : 25 1 2 to 

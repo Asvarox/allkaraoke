@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21904
 #ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:295
 #MP3:Avenged Sevenfold - Unholy Confessions.mp3
 F 25 3 15 I’ll 
 F 33 32 15 try

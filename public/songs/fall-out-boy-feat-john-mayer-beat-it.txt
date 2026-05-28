@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:12
 #ALLKARAOKE_SOURCEURL:Fall Out Boy feat. John Mayer - Beat It
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Fall Out Boy feat. John Mayer - Beat It.mp3
 : 20 2 9 They 
 : 24 2 9 told 

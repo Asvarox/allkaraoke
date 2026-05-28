@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Take That - How Did It Come To This
 #ALLKARAOKE_VOLUME:0,52
+#ALLKARAOKE_DURATION:191
 #MP3:Take That - How Did It Come To This.mp3
 : 15 3 7 Just 
 : 19 3 11 the 

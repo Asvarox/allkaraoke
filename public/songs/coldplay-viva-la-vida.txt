@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:243
 : 18 3 8 I 
 : 22 3 12 used 
 : 30 4 12 to 

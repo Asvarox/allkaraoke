@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=10956
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,69
+#ALLKARAOKE_DURATION:233
 #MP3:Indochine - L’aventurier.mp3
 : 22 5 15 E
 : 28 8 15 ga

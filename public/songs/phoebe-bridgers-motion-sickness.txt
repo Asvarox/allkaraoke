@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=9sfYpolGCu8
 #ALLKARAOKE_VOLUME:0,81
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:238
 #MP3:Phoebe Bridgers - Motion Sickness.mp3
 : 14 4 13 I 
 : 22 7 20 h

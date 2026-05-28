@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Cheryl Cole - Fight For This Love
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Cheryl Cole - Fight For This Love.mp3
 : 16 2 0 Too 
 : 20 2 0 much 

@@ -46,6 +46,7 @@ export default function convertSongToTxt(song: Song) {
     previewEnd: toTxtValue('ALLKARAOKE_PREVIEWEND', song.previewEnd),
     volume: toTxtValue('ALLKARAOKE_VOLUME', song.volume),
     manualVolume: toTxtValue('ALLKARAOKE_OLDVOLUME', song.manualVolume),
+    duration: toTxtValue('ALLKARAOKE_DURATION', song.duration),
   };
   const trackNames = song.tracks.map((track) => track.name ?? null);
 

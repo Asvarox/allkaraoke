@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Take That - A Million Love Songs
 #ALLKARAOKE_VOLUME:0,97
+#ALLKARAOKE_DURATION:229
 #MP3:Take That - A Million Love Songs.mp3
 : 18 4 15 Oh 
 : 23 10 13 yeah

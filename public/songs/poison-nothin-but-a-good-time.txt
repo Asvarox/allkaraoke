@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=_88L-CU7PD4
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:226
 #MP3:Poison - Nothin’ But A Good Time.mp3
 F 26 11 12 Woo, 
 F 38 3 12 ah

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Europe&cancion=Final%20Countdown
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_DURATION:297
 : 0 2 73 Da
 : 2 2 71  da
 : 4 7 73  da

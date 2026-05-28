@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
 #ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_DURATION:237
 : 0 6 6 Some
 : 8 3 13 bo
 * 12 3 10 dy

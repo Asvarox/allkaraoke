@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Kool & The Gang - Ladies Night’ (Single Version)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:184
 #MP3:Kool & The Gang - Ladies Night’ (Single Version).mp3
 #COVER:Kool & The Gang - Ladies Night’ (Single Version) [CO].jpg
 #BACKGROUND:Kool & The Gang - Ladies Night’ (Single Version) [BG].jpg

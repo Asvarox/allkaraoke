@@ -17,6 +17,7 @@
 #ALLKARAOKE_PREVIEWEND:187
 #ALLKARAOKE_VOLUME:0,92
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:293
 #P1:Making Love Out Of Nothing At All
 #MP3:Air Supply - Making love out of nothing at all.mp3
 #COVER:Air Supply - Making love out of nothing at all.jpg

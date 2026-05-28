@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:The Temper Trap - Sweet Disposition
 #ALLKARAOKE_VOLUME:0,8
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:235
 #MP3:The Temper Trap - Sweet Disposition.mp3
 : 17 52 6 Sweet 
 : 82 26 6 Dis

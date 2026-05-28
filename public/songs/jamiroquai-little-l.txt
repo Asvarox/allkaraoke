@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Little L
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:237
 #MP3:Jamiroquai - Little L.mp3
 #COVER:Jamiroquai - Little L [CO].jpg
 #BACKGROUND:Jamiroquai - Little L [BG].jpg

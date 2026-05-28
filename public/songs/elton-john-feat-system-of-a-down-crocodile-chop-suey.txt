@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:7
 #ALLKARAOKE_SOURCEURL:Elton John feat. System of a Down - Crocodile Chop Suey
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:Elton John feat. System of a Down - Crocodile Chop Suey.mp3
 : 17 2 -4 Wake 
 : 20 2 -5 up

@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=PSROm-vgVRk
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,83
+#ALLKARAOKE_DURATION:304
 #MP3:Alan Jackson - Good Time.mp3
 : 18 3 23 Work, 
 : 26 3 23 work 

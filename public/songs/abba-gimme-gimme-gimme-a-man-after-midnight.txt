@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:197
 : 16 7 74 Half 
 : 24 8 72 past 
 : 33 4 69 twelve

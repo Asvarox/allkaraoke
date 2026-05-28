@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_VOLUME:0,9
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:337
 #MP3:Schandmaul & Orchester - Der Clown (Live aus dem Circus Krone).mp3
 : 20 2 9 Flugs 
 : 23 2 9 hebt 

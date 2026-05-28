@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars
 #ALLKARAOKE_VOLUME:0,66
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:271
 : 15 3 5 This 
 : 21 3 5 hit 
 : 27 2 0 that 
