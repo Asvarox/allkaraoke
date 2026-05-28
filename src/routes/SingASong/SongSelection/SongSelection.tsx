@@ -41,7 +41,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const list = useRef<VirtualizedListMethods | null>(null);
   const { width, handleResize } = useViewportSize();
 
-  // Breakpoints: <640px → 1 card, 640–1100px → 2 cards, ≥1100px → 3 cards (max 3 per row)
+  // Breakpoints: <640px → 1 card, 640–719px → 2 cards, ≥720px → 3 cards (max 3 per row)
   const songsPerRow = width < 640 ? 1 : width < 720 ? 2 : 3;
   // Gap and padding scale linearly with viewport width (capped at 1440px content width)
   const effectiveWidth = Math.min(width, 1440);

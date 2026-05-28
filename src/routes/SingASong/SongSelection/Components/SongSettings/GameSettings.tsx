@@ -53,13 +53,20 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
   const players = PlayersManager.getPlayers();
   const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
 
-  const initialisePlayerSetup = () =>
-    players.map((player, index) => ({
+  const initialisePlayerSetup = () => {
+    const currentPlayers = PlayersManager.getPlayers();
+    const hasMultipleTracks = !mobilePhoneMode && currentPlayers.length === 2 && songPreview.tracksCount > 1;
+
+    return currentPlayers.map((player, index) => ({
       number: player.number,
-      track: multipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
+      track: hasMultipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
     }));
+  };
   const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(initialisePlayerSetup());
-  useEventEffect([gameEvents.playerAdded, gameEvents.playerRemoved], () => setPlayerSetup(initialisePlayerSetup()));
+  useEventEffect([gameEvents.playerAdded, gameEvents.playerRemoved], () => setPlayerSetup(initialisePlayerSetup()), [
+    mobilePhoneMode,
+    songPreview.tracksCount,
+  ]);
 
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
