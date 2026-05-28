@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:Paul McCartney and the Frog Chorus - We All Stand Together
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:207
 #MP3:Paul McCartney and the Frog Chorus - We All Stand Together.mp3
 : 13 7 17 Win 
 : 21 4 20 or 

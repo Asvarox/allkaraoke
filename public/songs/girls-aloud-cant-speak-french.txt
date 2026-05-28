@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:71
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Can’t Speak French
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:199
 #MP3:Girls Aloud - Can’t Speak French.mp3
 : 19 5 11 I 
 : 26 7 8 wa

@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ERA&cancion=Ameno
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,66
+#ALLKARAOKE_DURATION:222
 : 16 3 10 Do
 : 21 2 11 ri
 : 25 5 11 me

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Counting Crows - Colorblind
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:204
 #MP3:Counting Crows - Colorblind.mp3
 : 17 2 19 I 
 : 21 6 19 am 

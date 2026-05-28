@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Evermore - Light Surrounding You
 #ALLKARAOKE_VOLUME:0,81
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:238
 #MP3:Evermore - Light Surrounding You.mp3
 : 22 3 19 I 
 : 26 7 22 see 

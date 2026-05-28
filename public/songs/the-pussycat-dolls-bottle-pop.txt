@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls - Bottle Pop
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:179
 #MP3:The Pussycat Dolls - Bottle Pop.mp3
 : 15 2 18 Boy 
 : 19 2 21 you 

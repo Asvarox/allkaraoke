@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Freemasons feat. Katherine Ellis - When You Touch Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:200
 #MP3:Freemasons feat. Katherine Ellis - When You Touch Me.mp3
 : 17 4 9 Ba
 : 25 2 12 by, 

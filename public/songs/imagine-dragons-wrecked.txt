@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:94
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Wrecked
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:277
 : 23 1 -7 Days
 : 25 1 -5 ~ 
 : 31 1 -7 pass

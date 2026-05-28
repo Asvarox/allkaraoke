@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Sam Smith, Calvin Harris & Jessie Reyez - I’m Not Here To Make Friends
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:Sam Smith, Calvin Harris & Jessie Reyez - I’m Not Here To Make Friends.mp3
 #COVER:Sam Smith, Calvin Harris & Jessie Reyez - I’m Not Here To Make Friends [CO].jpg
 #BACKGROUND:Sam Smith, Calvin Harris & Jessie Reyez - I’m Not Here To Make Friends [BG].jpg

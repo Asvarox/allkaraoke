@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Kylie Minogue & Jason Donovan - Especially For You [DUET]
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:225
 #MP3:Kylie Minogue & Jason Donovan - Especially For You [DUET].mp3
 : 21 4 17 Es
 : 27 4 17 pec

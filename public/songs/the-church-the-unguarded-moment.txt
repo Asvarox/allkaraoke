@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:The Church - The Unguarded Moment
 #ALLKARAOKE_VOLUME:0,86
+#ALLKARAOKE_DURATION:254
 #MP3:The Church - The Unguarded Moment.mp3
 : 18 3 14 So
 : 22 3 12 ~ 

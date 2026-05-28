@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Green Day - Give Me Novacaine / She’s A Rebel
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:327
 #MP3:Green Day - Give Me Novacaine / She’s A Rebel.mp3
 : 27 4 11 Take
 : 32 6 13 ~ 

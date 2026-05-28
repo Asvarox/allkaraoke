@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:92
 #COVER:Ricardo Silva - Impacto Rojo (TV) [CO].jpg
 #MP3:Ricardo Silva - Impacto Rojo (TV).mp3
 : 21 6 2 Vol

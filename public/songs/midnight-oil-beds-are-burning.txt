@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ejorQVy3m8E
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,93
+#ALLKARAOKE_DURATION:277
 #MP3:Midnight Oil - Beds Are Burning.mp3
 : 16 5 4 Out 
 : 24 7 4 where 

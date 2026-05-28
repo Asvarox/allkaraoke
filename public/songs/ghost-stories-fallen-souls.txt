@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Ghost Stories - Fallen Souls
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Ghost Stories - Fallen Souls.mp3
 : 20 5 -4 In 
 : 28 4 -5 a 

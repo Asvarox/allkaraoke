@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Missy Higgins - Where I Stood
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:263
 #MP3:Missy Higgins - Where I Stood.mp3
 : 20 3 2 I 
 : 26 4 1 don’t 

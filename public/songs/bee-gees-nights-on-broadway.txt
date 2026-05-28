@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Bee Gees - Nights On Broadway
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:274
 #MP3:Bee Gees - Nights On Broadway.mp3
 : 27 60 14 Here 
 : 88 4 14 we 

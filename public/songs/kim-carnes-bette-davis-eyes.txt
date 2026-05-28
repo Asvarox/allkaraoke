@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Kim Carnes - Bette Davis Eyes
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Kim Carnes - Bette Davis Eyes.mp3
 : 15 2 2 Her 
 : 19 2 5 hair 

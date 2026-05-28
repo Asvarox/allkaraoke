@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Free Deejays - Around The World
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:241
 #MP3:Free Deejays - Around The World.mp3
 : 17 5 1 Please 
 : 25 4 1 to

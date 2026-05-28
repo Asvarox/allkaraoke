@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=karina
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:180
 #MP3:Karina - Corazón mentiroso.mp3
 #COVER:Karina - Corazón mentiroso.jpg
 #MEDLEYSTARTBEAT:1073

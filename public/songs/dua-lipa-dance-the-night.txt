@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Dance%20The%20Night
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,55
+#ALLKARAOKE_DURATION:212
 : 15 2 7 Ba
 : 18 3 9 ~
 : 24 5 7 by, 

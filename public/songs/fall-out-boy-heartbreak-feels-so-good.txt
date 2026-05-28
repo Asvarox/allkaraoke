@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - Heartbreak Feels So Good
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:297
 #MP3:Fall Out Boy - Heartbreak Feels So Good.mp3
 #COVER:Fall Out Boy - Heartbreak Feels So Good [CO].jpg
 #BACKGROUND:Fall Out Boy - Heartbreak Feels So Good [BG].jpg

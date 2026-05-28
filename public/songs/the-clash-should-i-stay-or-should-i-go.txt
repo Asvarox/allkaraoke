@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:113
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Clash&cancion=Should%20I%20Stay%20Or%20Should%20I%20GO
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:189
 - -19 1
 - 1
 F 20 8 74 Woo

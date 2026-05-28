@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:42
 #ALLKARAOKE_SOURCEURL:Guns N’ Roses - Mr. Brownstone
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Guns N’ Roses - Mr. Brownstone.mp3
 : 14 3 4 I 
 : 18 3 7 get 

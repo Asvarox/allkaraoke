@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:41
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:51
 #MP3:Disney’s Wizards of the Waverly Place (Selena Gomez) - Everything Is Not What It Seems.mp3
 : 17 1 1 Well, 
 : 19 1 1 you 

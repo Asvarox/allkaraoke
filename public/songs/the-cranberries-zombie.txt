@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cranberries&cancion=Zombie
 #ALLKARAOKE_VOLUME:0,62
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:308
 : 23 5 64 A
 : 29 14 62 no
 : 46 7 59 ther

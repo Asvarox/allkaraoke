@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=El+Cuarteto+de+Nos
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:240
 #MP3:El Cuarteto de Nos - El hijo de Hernández.mp3
 #COVER:El Cuarteto de Nos - El hijo de Hernández.jpg
 #BACKGROUND:El Cuarteto de Nos - El hijo de Hernández [BG].jpg

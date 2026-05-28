@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. John Newman - Blame
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:255
 #MP3:Calvin Harris feat. John Newman - Blame.mp3
 : 17 2 7 Can’t 
 : 21 2 7 be 

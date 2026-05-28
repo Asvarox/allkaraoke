@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Owl City - West Coast Friendship
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:247
 #MP3:Owl City - West Coast Friendship.mp3
 : 21 4 11 Are 
 : 29 2 13 you 

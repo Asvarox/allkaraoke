@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Tasmin Archer - Sleeping Satellite
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:270
 #MP3:Tasmin Archer - Sleeping Satellite.mp3
 : 26 5 12 I 
 : 32 11 19 blame 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=28993
 #ALLKARAOKE_VOLUME:0,77
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:176
 #P1:Love is Gone
 #MP3:SLANDER feat. Dylan Matthews - Love is Gone.mp3
 #COVER:SLANDER feat. Dylan Matthews - Love is Gone [CO].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Girl Overboard
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:250
 #MP3:Girls Aloud - Girl Overboard.mp3
 : 17 2 7 No 
 : 21 2 7 doubt 

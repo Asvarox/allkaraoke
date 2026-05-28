@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:David Lee Roth - Just a Gigolo / I Ain’t Got Nobody
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:387
 #MP3:David Lee Roth - Just a Gigolo / I Ain’t Got Nobody.mp3
 #START:100
 #END:357500

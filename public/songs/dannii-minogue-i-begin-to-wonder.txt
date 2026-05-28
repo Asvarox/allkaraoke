@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Dannii Minogue - I Begin To Wonder
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:213
 #MP3:Dannii Minogue - I Begin To Wonder.mp3
 : 17 1 23 When 
 : 19 1 23 I’m 

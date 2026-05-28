@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Jimmy Cliff - I Can See Clearly Now
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:201
 #MP3:Jimmy Cliff - I Can See Clearly Now.mp3
 : 16 2 2 I 
 : 20 2 4 can 

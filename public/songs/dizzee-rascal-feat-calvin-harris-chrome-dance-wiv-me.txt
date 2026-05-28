@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET]
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:218
 #MP3:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET].mp3
 #COVER:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET] [CO].jpg
 #BACKGROUND:Dizzee Rascal feat. Calvin Harris & Chrome - Dance Wiv Me [DUET] [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Gin Blossoms - Hey Jealousy
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:233
 #MP3:Gin Blossoms - Hey Jealousy.mp3
 : 20 2 6 Well 
 : 23 4 14 tell 

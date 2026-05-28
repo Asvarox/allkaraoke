@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - Love From The Other Side
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:328
 #MP3:Fall Out Boy - Love From The Other Side.mp3
 #COVER:Fall Out Boy - Love From The Other Side [CO].jpg
 #BACKGROUND:Fall Out Boy - Love From The Other Side [BG].jpg

@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Claris&cancion=Connect%20(TV)
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,95
+#ALLKARAOKE_DURATION:90
 #P1:Connect
 #MP3:Claris - Connect (TV).mp3
 #COVER:Claris - Connect (TV).jpg

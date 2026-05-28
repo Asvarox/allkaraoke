@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Natasha Bedingfield - Single
 #ALLKARAOKE_VOLUME:0,77
+#ALLKARAOKE_DURATION:210
 #MP3:Natasha Bedingfield - Single.mp3
 : 22 11 2 Ah 
 : 34 10 2 yeah

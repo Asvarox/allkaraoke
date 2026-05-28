@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:9
 #ALLKARAOKE_SOURCEURL:Corinne Bailey Rae - I’d Like To
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:211
 #MP3:Corinne Bailey Rae - I’d Like To.mp3
 : 23 8 14 Mmm 
 : 37 5 14 mmm

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10301
 #ALLKARAOKE_VOLUME:0,57
+#ALLKARAOKE_DURATION:234
 : 17 2 0 Do 
 : 21 2 3 you 
 : 25 2 3 e

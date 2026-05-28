@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Delta Goodrem - In This Life
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:225
 #MP3:Delta Goodrem - In This Life.mp3
 : 22 3 -3 I 
 : 26 4 -1 was 

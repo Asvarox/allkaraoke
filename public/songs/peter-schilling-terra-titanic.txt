@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=m212MgaibXY&t
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:184
 #MP3:Peter Schilling - Terra Titanic.mp3
 : 16 4 21 Das 
 : 24 5 19 Ra

@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ebXbLfLACGM
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:234
 #P1:Summer
 #MP3:Calvin Harris - Summer.mp3
 #COVER:Calvin Harris - Summer [CO].jpg

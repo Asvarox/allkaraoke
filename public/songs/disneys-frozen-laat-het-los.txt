@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,99
+#ALLKARAOKE_DURATION:220
 #MP3:Disney’s Frozen (Willemijn Verkaik) - Laat het los.mp3
 : 18 2 10 De 
 : 22 5 12 sneeuw 

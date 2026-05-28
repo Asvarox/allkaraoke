@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jason%20Mraz&cancion=I'm%20yours
 #ALLKARAOKE_VOLUME:0,98
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:222
 : 20 3 13 Well
 : 24 4 15 ~, 
 : 32 3 15 you 

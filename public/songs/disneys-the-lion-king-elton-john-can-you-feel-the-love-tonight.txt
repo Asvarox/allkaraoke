@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Disney’s The Lion King (Elton John) - Can You Feel The Love Tonight
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:247
 #MP3:Disney’s The Lion King (Elton John) - Can You Feel The Love Tonight.mp3
 : 16 7 7 There’s 
 : 24 3 9 a 

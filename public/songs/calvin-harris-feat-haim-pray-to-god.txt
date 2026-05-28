@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Haim - Pray To God
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:Calvin Harris feat. Haim - Pray To God.mp3
 : 16 5 7 Oh
 : 22 1 5 ~

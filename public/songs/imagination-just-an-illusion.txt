@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Imagination - Just An Illusion
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:232
 #MP3:Imagination - Just An Illusion.mp3
 : 14 2 6 Sear
 : 17 2 8 ching 

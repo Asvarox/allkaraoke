@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Zebrahead - Playmate Of The Year
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:217
 #MP3:Zebrahead - Playmate Of The Year.mp3
 : 17 3 11 There’s 
 : 21 3 11 this 

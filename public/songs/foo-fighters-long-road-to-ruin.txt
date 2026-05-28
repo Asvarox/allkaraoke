@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:36
 #ALLKARAOKE_SOURCEURL:Foo Fighters - Long Road To Ruin
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:227
 #MP3:Foo Fighters - Long Road To Ruin.mp3
 : 20 7 19 Here 
 : 28 7 19 now 

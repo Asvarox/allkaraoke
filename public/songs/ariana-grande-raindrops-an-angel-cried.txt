@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/k-pqPHc5jdg?si=ZYIkUUiA_D-EWKmS
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:32
 #MP3:Ariana Grande - Raindrops (An Angel Cried).mp3
 : 5 6 1 When 
 : 13 2 11 rain

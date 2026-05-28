@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:36
 #ALLKARAOKE_SOURCEURL:Marvin Gaye & Kim Weston - It Takes Two
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:177
 #MP3:Marvin Gaye & Kim Weston - It Takes Two.mp3
 : 20 3 14 One 
 : 24 3 17 can 

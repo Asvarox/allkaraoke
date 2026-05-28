@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=rhut5oqT5io&t=35s
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,93
+#ALLKARAOKE_DURATION:109
 #MP3:Dragon Ball GT - Abertura.mp3
 #COVER:Dragon Ball GT - Abertura.jpg
 #MEDLEYSTARTBEAT:1409

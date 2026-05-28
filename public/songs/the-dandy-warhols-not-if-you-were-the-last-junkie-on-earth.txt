@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:The Dandy Warhols - Not If You Were The Last Junkie On Earth
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:233
 #MP3:The Dandy Warhols - Not If You Were The Last Junkie On Earth.mp3
 : 24 4 9 I 
 : 31 5 9 nev

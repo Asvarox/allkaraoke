@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nicki%20Taylor&cancion=Worlds%20Collide
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:217
 : 0 6 10 Ah
 : 8 12 9 ~
 : 24 6 7 ~

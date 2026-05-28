@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Calvin Harris / Ellie Goulding - Miracle
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:186
 #MP3:Calvin Harris / Ellie Goulding - Miracle.mp3
 #COVER:Calvin Harris / Ellie Goulding - Miracle [CO].jpg
 #BACKGROUND:Calvin Harris / Ellie Goulding - Miracle [BG].jpg

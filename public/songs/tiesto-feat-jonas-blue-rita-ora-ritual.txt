@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Tiësto feat. Jonas Blue & Rita Ora - Ritual
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:198
 #MP3:Tiësto feat. Jonas Blue & Rita Ora - Ritual.mp3
 : 15 2 22 Too 
 : 19 2 15 high

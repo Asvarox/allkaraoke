@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Brandy - Right Here (Departed)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:223
 #MP3:Brandy - Right Here (Departed).mp3
 : 25 2 19 When 
 : 29 2 19 you 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Bee Gees - This Is Where I Came In
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:280
 #MP3:Bee Gees - This Is Where I Came In.mp3
 : 25 10 9 I’ve 
 : 37 10 7 seen 

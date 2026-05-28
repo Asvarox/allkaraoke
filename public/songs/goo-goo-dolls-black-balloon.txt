@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Goo Goo Dolls - Black Balloon
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:247
 #MP3:Goo Goo Dolls - Black Balloon.mp3
 : 14 2 5 Ba
 : 17 3 5 by’s 

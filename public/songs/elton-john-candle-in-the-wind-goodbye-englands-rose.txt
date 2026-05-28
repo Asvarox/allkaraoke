@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Elton John - Candle In The Wind (Goodbye England’s Rose)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:238
 #MP3:Elton John - Candle In The Wind (Goodbye England’s Rose).mp3
 : 17 2 8 Good
 : 21 9 8 bye 

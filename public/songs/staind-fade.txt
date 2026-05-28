@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=_-9VnIba_qQ
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:252
 #P1:fade
 #MP3:Staind - Fade.mp3
 : 16 2 -6 I 

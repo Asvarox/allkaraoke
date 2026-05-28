@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:Steppenwolf - Born To Be Wild
 #ALLKARAOKE_VOLUME:0,84
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:211
 #MP3:Steppenwolf - Born To Be Wild.mp3
 : 19 3 4 Get 
 : 23 3 4 your 

@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bee%20Gees&cancion=Stayin'%20Alive
 #ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:250
 : 26 6 17 Well 
 : 33 2 20 you 
 : 37 5 22 can 

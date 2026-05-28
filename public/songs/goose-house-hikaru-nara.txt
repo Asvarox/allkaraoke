@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=Hikaru+Nara
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:93
 #P1:Hikaru Nara
 #MP3:Goose house - Hikaru Nara (TV).mp3
 #COVER:Goose house - Hikaru Nara (TV).jpg

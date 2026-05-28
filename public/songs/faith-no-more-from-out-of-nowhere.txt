@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Faith No More - From Out Of Nowhere
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:202
 #MP3:Faith No More - From Out Of Nowhere.mp3
 : 26 8 5 Tossed
 : 35 1 7 ~ 

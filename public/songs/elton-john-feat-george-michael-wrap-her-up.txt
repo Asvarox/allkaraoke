@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Elton John feat. George Michael - Wrap Her Up
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:252
 #MP3:Elton John feat. George Michael - Wrap Her Up.mp3
 : 19 4 7 There 
 : 24 4 9 are 

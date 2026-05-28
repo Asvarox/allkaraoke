@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Benny Benassi - Satisfaction
 #ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_DURATION:147
 #MP3:Benny Benassi - Satisfaction.mp3
 : 17 3 9 Push 
 : 24 3 8 me

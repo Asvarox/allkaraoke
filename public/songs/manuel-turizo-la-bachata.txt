@@ -19,6 +19,7 @@
 #ALLKARAOKE_PREVIEWEND:86
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:195
 #MP3:Manuel Turizo - La bachata.mp3
 #COVER:Manuel Turizo - La bachata [CO].jpg
 #BACKGROUND:Manuel Turizo - La bachata [BG].jpg

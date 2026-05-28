@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Snow%20Patrol&cancion=Chasing%20Cars
 #ALLKARAOKE_VOLUME:0,59
+#ALLKARAOKE_DURATION:222
 - -13 1
 - 1
 : 14 3 52 We'll 

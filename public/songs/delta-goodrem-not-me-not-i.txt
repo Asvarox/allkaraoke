@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Delta Goodrem - Not Me, Not I
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:277
 #MP3:Delta Goodrem - Not Me, Not I.mp3
 : 20 3 -4 You 
 : 24 6 -2 mixed 

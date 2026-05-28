@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:43
 #ALLKARAOKE_SOURCEURL:Kool & The Gang - Emergency
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:256
 #MP3:Kool & The Gang - Emergency.mp3
 : 17 2 -8 I 
 : 21 2 -6 need 

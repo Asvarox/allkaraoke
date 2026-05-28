@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Goo Goo Dolls - So Alive
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:192
 #MP3:Goo Goo Dolls - So Alive.mp3
 #COVER:Goo Goo Dolls - So Alive [CO].jpg
 #BACKGROUND:Goo Goo Dolls - So Alive [BG].jpg

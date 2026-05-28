@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=W_HHn83JL4w
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:236
 #MP3:Duncan Dhu - En algún lugar.mp3
 #COVER:Duncan Dhu - En algún lugar.jpg
 : 20 3 59 En 

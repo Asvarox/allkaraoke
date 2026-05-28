@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:122
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:220
 #MP3:Floricienta - Flores amarillas.mp3
 #COVER:Floricienta - Flores amarillas [CO].jpg
 #BACKGROUND:Floricienta - Flores amarillas [BG].jpg

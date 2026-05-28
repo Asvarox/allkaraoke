@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/sqgxcCjD04s?si=xNxOlg_jzGN-rWzz
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:220
 #MP3:IU - strawberry moon.mp3
 #COVER:IU - strawberry moon [CO].jpg
 #BACKGROUND:IU - strawberry moon [BG].jpg

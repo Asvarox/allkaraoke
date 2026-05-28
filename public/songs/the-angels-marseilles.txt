@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:The Angels - Marseilles
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:458
 #MP3:The Angels - Marseilles.mp3
 #COVER:The Angels - Marseilles [CO].jpg
 #BACKGROUND:The Angels - Marseilles [BG].jpg

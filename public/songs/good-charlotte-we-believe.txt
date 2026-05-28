@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Good Charlotte - We Believe
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:232
 #MP3:Good Charlotte - We Believe.mp3
 : 14 2 10 There’s 
 : 17 1 10 a 

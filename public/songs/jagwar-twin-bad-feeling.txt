@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:134
 #MP3:Jagwar Twin - Bad Feeling.mp3
 #COVER:Jagwar Twin - Bad Feeling [CO].jpg
 #BACKGROUND:Jagwar Twin - Bad Feeling [BG].jpg

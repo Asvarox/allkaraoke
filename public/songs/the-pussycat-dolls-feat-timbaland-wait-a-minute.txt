@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls feat. Timbaland - Wait A Minute
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:The Pussycat Dolls feat. Timbaland - Wait A Minute.mp3
 : 18 14 -2 A
 : 34 14 1 ~

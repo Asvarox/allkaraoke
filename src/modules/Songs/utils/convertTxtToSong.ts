@@ -54,6 +54,7 @@ export const songTXTKeys = [
   'ALLKARAOKE_SOURCEURL',
   'ALLKARAOKE_ARTISTORIGIN',
   'ALLKARAOKE_VIDEOID',
+  'ALLKARAOKE_DURATION',
 ] as const;
 
 export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2' | 'AUDIOURL' | 'VIDEOURL';
@@ -151,6 +152,7 @@ export default function convertTxtToSong(
     author: getPropertyValueFromTxt(text, ['CREATOR']) ?? author,
     authorUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_CREATORURL', 'CREATORURL']) ?? authorUrl,
     sourceUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_SOURCEURL', 'SOURCEURL']) ?? sourceUrl,
+    duration: getPropertyValueFromTxt(text, ['ALLKARAOKE_DURATION'], 'number'),
   } satisfies ExtractOptional<Song>;
 
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);

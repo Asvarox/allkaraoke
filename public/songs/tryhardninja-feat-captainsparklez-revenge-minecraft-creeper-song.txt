@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:265
 #P1:Revenge (Minecraft Creeper Song)
 #MP3:TryHardNinja feat. CaptainSparklez - Revenge (Minecraft Creeper Song).mp3
 : 16 2 2 So 

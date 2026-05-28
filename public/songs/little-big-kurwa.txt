@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:Little Big - Kurwa
 #ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:119
 #MP3:Little Big - Kurwa.mp3
 #COVER:Little Big - Kurwa [CO].jpg
 #BACKGROUND:Little Big - Kurwa [BG].jpg

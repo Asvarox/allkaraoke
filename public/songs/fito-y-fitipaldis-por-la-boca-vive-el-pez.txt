@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:151
 #ALLKARAOKE_VOLUME:0,81
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:271
 #MP3:Fito Y Fitipaldis - Por La Boca Vive El Pez.mp3
 #COVER:Fito Y Fitipaldis - Por La Boca Vive El Pez [CO].jpg
 #BACKGROUND:Fito Y Fitipaldis - Por La Boca Vive El Pez [BG].jpg

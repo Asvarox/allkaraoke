@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:A★Teens - I Promised Myself
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:212
 #MP3:A★Teens - I Promised Myself.mp3
 : 26 3 8 I 
 : 32 3 8 pro

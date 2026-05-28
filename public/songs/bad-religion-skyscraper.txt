@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Bad Religion - Skyscraper
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:196
 #MP3:Bad Religion - Skyscraper.mp3
 : 27 4 4 Come 
 : 35 4 1 let 

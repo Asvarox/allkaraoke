@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:A★Teens - A Perfect Match
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:189
 #MP3:A★Teens - A Perfect Match.mp3
 : 18 2 -3 You 
 : 22 2 -3 spend 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:76
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5607
 #ALLKARAOKE_VOLUME:0,55
+#ALLKARAOKE_DURATION:263
 F 0 4 4 Let
 F 4 2 1  me
 F 8 4 4  be

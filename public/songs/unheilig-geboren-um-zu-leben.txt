@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8992
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,6
+#ALLKARAOKE_DURATION:237
 : 18 2 -1 Es 
 : 24 3 -1 fällt 
 : 30 2 -1 mir 

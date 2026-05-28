@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:A★Teens - Halfway Around The World
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:240
 #MP3:A★Teens - Halfway Around The World.mp3
 : 17 2 0 Ba
 : 21 2 0 by 

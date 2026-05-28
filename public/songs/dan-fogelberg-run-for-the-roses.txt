@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Dan Fogelberg - Run For The Roses
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:259
 #MP3:Dan Fogelberg - Run For The Roses.mp3
 : 23 19 12 Born 
 : 43 19 12 in 

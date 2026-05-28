@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:T.Rex - Ride A White Swan
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:128
 #MP3:T.Rex - Ride A White Swan.mp3
 #COVER:T.Rex - Ride A White Swan [CO].jpg
 #BACKGROUND:T.Rex - Ride A White Swan [BG].jpg

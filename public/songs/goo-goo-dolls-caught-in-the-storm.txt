@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Goo Goo Dolls - Caught In The Storm
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:Goo Goo Dolls - Caught In The Storm.mp3
 : 16 1 3 When 
 : 18 1 0 you 

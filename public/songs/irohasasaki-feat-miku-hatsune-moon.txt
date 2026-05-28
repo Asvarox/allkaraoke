@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:193
 #MP3:iroha(sasaki) feat. Miku Hatsune - Moon.mp3
 #COVER:iroha(sasaki) feat. Miku Hatsune - Moon [CO].jpg
 #MEDLEYSTARTBEAT:1072

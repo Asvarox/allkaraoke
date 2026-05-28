@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:Take That feat. Lulu - Relight My Fire
 #ALLKARAOKE_VOLUME:0,68
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:283
 #MP3:Take That feat. Lulu - Relight My Fire.mp3
 #END:259000
 : 16 4 6 Help 

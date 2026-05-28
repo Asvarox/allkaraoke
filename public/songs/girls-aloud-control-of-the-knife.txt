@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:43
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Control Of The Knife
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Girls Aloud - Control Of The Knife.mp3
 : 17 4 0 Won’t 
 : 26 2 -2 climb 

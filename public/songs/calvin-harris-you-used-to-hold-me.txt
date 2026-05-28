@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:Calvin Harris - You Used To Hold Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:216
 #MP3:Calvin Harris - You Used To Hold Me.mp3
 : 8 4 -1 Knocked 
 : 16 8 -3 down

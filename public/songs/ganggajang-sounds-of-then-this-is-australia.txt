@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:GANGgajang - Sounds Of Then (This Is Australia)
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:236
 #MP3:GANGgajang - Sounds Of Then (This Is Australia).mp3
 : 17 3 11 I 
 : 21 3 11 think 

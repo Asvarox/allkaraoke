@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:162
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_DURATION:234
 : 16 2 48 Jit
 : 20 1 48 ter
 : 22 3 48 bug

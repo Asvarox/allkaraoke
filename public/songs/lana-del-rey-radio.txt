@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=CFjqZpZZ5jI
 #ALLKARAOKE_VOLUME:0,99
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:218
 #MP3:Lana Del Rey - Radio.mp3
 #COVER:Lana Del Rey - Radio [CO].jpg
 #BACKGROUND:Lana Del Rey - Radio [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_VOLUME:0,73
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:197
 #MP3:Americo - Que levante la mano.mp3
 #COVER:Americo - Que levante la mano.jpg
 F 25 2 0 Que 

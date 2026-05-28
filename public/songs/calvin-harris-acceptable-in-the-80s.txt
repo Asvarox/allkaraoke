@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Calvin Harris - Acceptable In The 80s
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:294
 #MP3:Calvin Harris - Acceptable In The 80s.mp3
 : 17 2 28 It 
 : 21 2 28 was 

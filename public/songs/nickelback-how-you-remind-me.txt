@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:86
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=How%20You%20Remind%20Me
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:229
 : 23 3 62 Ne
 : 27 3 62 ver 
 : 31 3 60 made 

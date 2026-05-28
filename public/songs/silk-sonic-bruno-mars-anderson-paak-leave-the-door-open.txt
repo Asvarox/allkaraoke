@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:249
 #MP3:Silk Sonic - Bruno Mars & Anderson .Paak - Leave The Door Open.mp3
 : 20 3 0 Said 
 : 25 5 -3 ba

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Let It Snow
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:140
 #MP3:Kylie Minogue - Let It Snow.mp3
 : 19 2 -4 Oh, 
 : 23 2 -4 the 

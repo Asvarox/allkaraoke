@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:No Doubt - Simple Kind Of Life
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:255
 #MP3:No Doubt - Simple Kind Of Life.mp3
 #COVER:No Doubt - Simple Kind Of Life [CO].jpg
 #BACKGROUND:No Doubt - Simple Kind Of Life [BG].jpg

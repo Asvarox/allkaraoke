@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Olivia Newton-John - Physical
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:Olivia Newton-John - Physical.mp3
 : 17 2 4 I’m 
 : 21 3 11 say

@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=f5_wn8mexmM
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:232
 #P1:The Feels - TWICE
 #MP3:TWICE - The Feels.mp3
 #COVER:TWICE - The Feels.jpg

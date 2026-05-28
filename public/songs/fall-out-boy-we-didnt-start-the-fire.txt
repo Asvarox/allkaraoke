@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - We Didn’t Start The Fire
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:223
 #MP3:Fall Out Boy - We Didn’t Start The Fire.mp3
 #COVER:Fall Out Boy - We Didn’t Start The Fire [CO].jpg
 #BACKGROUND:Fall Out Boy - We Didn’t Start The Fire [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:73
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Cry%20Me%20A%20River
 #ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_DURATION:291
 : 20 2 8 You 
 : 24 2 11 were 
 : 28 2 8 my 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:257
 #MP3:Elton John & Kiki Dee - Don't Go Breaking My Heart.mp3
 #COVER:Elton John & Kiki Dee - Don't Go Breaking My Heart [CO].jpg
 #BACKGROUND:Elton John & Kiki Dee - Don't Go Breaking My Heart [BG].jpg

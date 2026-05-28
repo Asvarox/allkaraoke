@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=SWdtF1ll8ac
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:192
 #MP3:Leo Dan - Cómo te extraño mi amor.mp3
 #COVER:Leo Dan - Cómo te extraño mi amor [CO].jpg
 #MEDLEYSTARTBEAT:726

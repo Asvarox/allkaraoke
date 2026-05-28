@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Sean Paul - Temperature / Breakout
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:217
 #MP3:Sean Paul - Temperature / Breakout.mp3
 : 17 2 10 Well 
 : 21 1 10 wo

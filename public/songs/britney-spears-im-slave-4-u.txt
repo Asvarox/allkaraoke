@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
 #ALLKARAOKE_VOLUME:0,53
+#ALLKARAOKE_DURATION:204
 F 29 2 -1 I 
 F 32 5 -1 know 
 F 38 1 -1 I 

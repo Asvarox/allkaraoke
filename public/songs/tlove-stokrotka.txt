@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=13182
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:262
 : 0 2 2 Po
 : 4 2 2 dejdź
 : 8 2 0  do

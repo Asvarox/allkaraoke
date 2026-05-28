@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:After Forever - Emphasis
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:258
 #MP3:After Forever - Emphasis.mp3
 : 17 4 5 The 
 : 22 22 7 game 

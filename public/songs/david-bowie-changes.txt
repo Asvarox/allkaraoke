@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bowie&cancion=Changes
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:220
 F 15 3 58 Oh 
 F 19 2 51 yeah
 - 36 71

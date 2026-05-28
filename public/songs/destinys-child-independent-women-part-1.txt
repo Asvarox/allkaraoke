@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Destiny’s Child - Independent Women Part 1
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:239
 #MP3:Destiny’s Child - Independent Women Part 1.mp3
 #COVER:Destiny’s Child - Independent Women Part 1 [CO].jpg
 #BACKGROUND:Destiny’s Child - Independent Women Part 1 [BG].jpg

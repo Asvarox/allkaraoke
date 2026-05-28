@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Jet - Cold Hard Bitch
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:246
 #MP3:Jet - Cold Hard Bitch.mp3
 #COVER:Jet - Cold Hard Bitch [CO].jpg
 #BACKGROUND:Jet - Cold Hard Bitch [BG].jpg

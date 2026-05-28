@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=7245
 #ALLKARAOKE_VOLUME:0,55
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:256
 : 25 2 10 I’m 
 : 29 2 14 still 
 : 33 2 14 a

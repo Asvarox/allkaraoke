@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Bionic Ghost Kids - Poison Ivy
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Bionic Ghost Kids - Poison Ivy.mp3
 #COVER:Bionic Ghost Kids - Poison Ivy [CO].jpg
 #BACKGROUND:Bionic Ghost Kids - Poison Ivy [BG].jpg

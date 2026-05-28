@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:36
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls feat. Snoop Dogg - Buttons
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:236
 #MP3:The Pussycat Dolls feat. Snoop Dogg - Buttons.mp3
 F 11 1 -7 What 
 F 13 1 -7 it 

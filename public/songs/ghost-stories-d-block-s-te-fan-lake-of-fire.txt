@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:190
 #MP3:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire.mp3
 #COVER:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire [CO].jpg
 #BACKGROUND:Ghost Stories (D-Block & S-te-Fan) - Lake Of Fire [BG].jpg

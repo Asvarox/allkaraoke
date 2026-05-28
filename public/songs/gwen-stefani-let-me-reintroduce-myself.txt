@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:11
 #ALLKARAOKE_SOURCEURL:Gwen Stefani - Let Me Reintroduce Myself
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:221
 #MP3:Gwen Stefani - Let Me Reintroduce Myself.mp3
 #START:24
 : 23 2 -4 The 

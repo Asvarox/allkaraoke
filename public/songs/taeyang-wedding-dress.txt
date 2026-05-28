@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=8453
 #ALLKARAOKE_VOLUME:0,59
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:285
 #P1:Wedding Dress
 #MP3:Taeyang - Wedding Dress.mp3
 #START:20.0

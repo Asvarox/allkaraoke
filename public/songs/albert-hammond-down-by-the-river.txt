@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Albert Hammond - Down By The River
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:187
 #MP3:Albert Hammond - Down By The River.mp3
 : 26 4 2 Ci
 : 32 6 2 ty 

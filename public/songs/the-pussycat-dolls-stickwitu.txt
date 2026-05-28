@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls feat. Avant - Stickwitu
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:212
 #MP3:The Pussycat Dolls feat. Avant - Stickwitu.mp3
 : 21 7 13 Mmm
 : 29 2 11 ~

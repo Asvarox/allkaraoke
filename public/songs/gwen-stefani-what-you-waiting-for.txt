@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Gwen Stefani - What You Waiting For?
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:319
 #MP3:Gwen Stefani - What You Waiting For?.mp3
 #START:92.0
 : 18 2 14 Tick 

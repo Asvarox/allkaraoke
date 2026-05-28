@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,69
+#ALLKARAOKE_DURATION:176
 #MP3:Stephen Sanchez - Until I Found You.mp3
 #COVER:Stephen Sanchez - Until I Found You [CO].jpg
 #BACKGROUND:Stephen Sanchez - Until I Found You [BG].jpg

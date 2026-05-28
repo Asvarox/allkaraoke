@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_SOURCEURL:Bros - When Will I Be Famous
 #ALLKARAOKE_VOLUME:0,61
+#ALLKARAOKE_DURATION:242
 #MP3:Bros - When Will I Be Famous.mp3
 #COVER:Bros - When Will I Be Famous [CO].jpg
 #BACKGROUND:Bros - When Will I Be Famous [BG].jpg

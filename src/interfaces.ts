@@ -59,6 +59,7 @@ export interface Song {
   edition: string | undefined;
   language: string[];
   sourceUrl: string | undefined;
+  duration?: number;
   videoGap: seconds | undefined;
   artist: string;
   artistOrigin: string | undefined;

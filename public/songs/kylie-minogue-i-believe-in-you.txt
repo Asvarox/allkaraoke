@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - I Believe In You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Kylie Minogue - I Believe In You.mp3
 : 16 1 -5 I 
 : 18 2 -1 don’t 

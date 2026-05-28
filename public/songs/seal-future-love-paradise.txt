@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:Seal - Future Love Paradise
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,79
+#ALLKARAOKE_DURATION:280
 #MP3:Seal - Future Love Paradise.mp3
 #COVER:Seal - Future Love Paradise [CO].jpg
 #BACKGROUND:Seal - Future Love Paradise [BG].jpg

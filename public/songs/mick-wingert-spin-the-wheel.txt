@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_VOLUME:0,72
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:156
 #MP3:Mick Wingert - Spin The Wheel.mp3
 #COVER:Mick Wingert - Spin The Wheel [CO].jpg
 #BACKGROUND:Mick Wingert - Spin The Wheel [BG].jpg

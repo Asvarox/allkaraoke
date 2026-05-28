@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=14402
 #ALLKARAOKE_VOLUME:0,67
 #ALLKARAOKE_OLDVOLUME:0,87
+#ALLKARAOKE_DURATION:309
 #MP3:Green Day - Oh Love.mp3
 * 17 4 3 Oh 
 * 25 5 3 lo

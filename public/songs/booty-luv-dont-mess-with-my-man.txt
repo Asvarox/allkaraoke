@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Booty Luv - Don’t Mess With My Man
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:174
 #MP3:Booty Luv - Don’t Mess With My Man.mp3
 : 20 1 13 He 
 * 22 8 11 ~ 

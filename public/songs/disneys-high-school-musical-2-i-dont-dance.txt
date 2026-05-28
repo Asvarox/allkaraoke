@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,98
+#ALLKARAOKE_DURATION:242
 #MP3:Disney’s High School Musical 2 - I Don’t Dance.mp3
 #COVER:Disney’s High School Musical 2 - I Don’t Dance [CO].jpg
 #BACKGROUND:Disney’s High School Musical 2 - I Don’t Dance [BG].jpg

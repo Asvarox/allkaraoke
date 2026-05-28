@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:218
 : 22 4 11 Uh
 : 28 3 10 ~ 
 : 34 8 10 hey

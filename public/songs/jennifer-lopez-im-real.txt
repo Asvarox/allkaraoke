@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:78
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez - I’m Real
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:284
 #MP3:Jennifer Lopez - I’m Real.mp3
 : 15 3 0 Called 
 : 19 2 2 you 

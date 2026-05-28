@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Counting Crows - Angels Of The Silences
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:221
 #MP3:Counting Crows - Angels Of The Silences.mp3
 : 21 2 3 Well 
 : 25 2 3 I 

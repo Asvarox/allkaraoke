@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:Justice Crew - Que sera (Australian Version)
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:214
 #MP3:Justice Crew - Que sera (Australian Version).mp3
 : 10 2 0 At 
 : 14 1 3 the 

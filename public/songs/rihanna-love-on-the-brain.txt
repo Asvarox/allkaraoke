@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:172
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Love%20On%20The%20Brain
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 : 11 2 2 And 
 : 15 2 6 you 
 : 19 3 11 got 

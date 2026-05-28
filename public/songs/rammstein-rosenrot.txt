@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Rammstein&cancion=Rosenrot
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:239
 #MP3:Rammstein - Rosenrot.mp3
 #COVER:Rammstein - Rosenrot [CO].jpg
 #MEDLEYSTARTBEAT:1028

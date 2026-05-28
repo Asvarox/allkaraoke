@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:251
 : 0 7 52 I'm
 : 8 7 52  not
 : 16 10 54  a

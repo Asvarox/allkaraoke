@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:60
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Ellie Goulding - Outside
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Calvin Harris feat. Ellie Goulding - Outside.mp3
 : 17 3 0 Look 
 : 21 2 2 at 

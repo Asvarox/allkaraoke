@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:52
 #ALLKARAOKE_SOURCEURL:Stardust - Music Sounds Better With You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:263
 #MP3:Stardust - Music Sounds Better With You.mp3
 : 17 10 5 Ooh 
 : 29 6 1 ba

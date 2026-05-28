@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:12
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Pitbull - Live It Up
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:271
 #MP3:Jennifer Lopez feat. Pitbull - Live It Up.mp3
 F 17 1 6 From 
 F 19 1 6 the 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_VOLUME:0,71
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:162
 #VERSION:1.2.0
 #COVER:BURGERPOMMES SONG - LukasBS, iCrimax, MarvinVlogt, Kleiner Junge .jpg
 #COVERURL:https://i.ytimg.com/vi_webp/ueqInmVvP1E/maxresdefault.webp

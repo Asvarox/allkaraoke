@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=6545
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,67
+#ALLKARAOKE_DURATION:195
 : 20 3 14 Ba
 : 28 3 11 by 
 : 36 2 14 you 

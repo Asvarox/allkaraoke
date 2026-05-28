@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Good Charlotte - Predictable
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:193
 #MP3:Good Charlotte - Predictable.mp3
 : 22 5 8 Some
 : 28 3 10 thing 

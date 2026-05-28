@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:6
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez - Loving You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Jennifer Lopez - Loving You.mp3
 #COVER:Jennifer Lopez - Loving You [CO].jpg
 #BACKGROUND:Jennifer Lopez - Loving You [BG].jpg

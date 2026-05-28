@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=17564
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:262
 #MP3:Shrek 2 (Jennifer Saunders) - Holding Out For A Hero.mp3
 : 20 5 7 Where 
 : 26 6 7 have 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Marvin Gaye - What’s Going On
 #ALLKARAOKE_VOLUME:0,89
+#ALLKARAOKE_DURATION:237
 #MP3:Marvin Gaye - What’s Going On.mp3
 : 13 7 13 Mo
 : 21 3 8 ther, 

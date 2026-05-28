@@ -13,6 +13,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=juJkNKodgdE
 #ALLKARAOKE_VOLUME:0,59
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:163
 #P1:Insane
 #MP3:Hazbin Hotel (Black Gryph0n & Baasik) - Insane.mp3
 #COVER:Hazbin Hotel (Black Gryph0n & Baasik) - Insane [CO].jpg

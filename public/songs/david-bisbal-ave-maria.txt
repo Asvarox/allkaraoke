@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bisbal&cancion=Ave%20Mar%C3%ADa
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:210
 : 18 3 67 A
 : 22 3 65 ve 
 : 26 3 63 Ma

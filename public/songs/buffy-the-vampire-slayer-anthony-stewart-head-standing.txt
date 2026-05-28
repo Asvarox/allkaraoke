@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:Buffy The Vampire Slayer (Anthony Stewart Head) - Standing
 #ALLKARAOKE_VOLUME:0,74
+#ALLKARAOKE_DURATION:221
 #MP3:Buffy The Vampire Slayer (Anthony Stewart Head) - Standing.mp3
 #END:135000
 : 22 6 10 You’re 

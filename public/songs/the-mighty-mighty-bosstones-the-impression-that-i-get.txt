@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:The Mighty Mighty BossTones - The Impression That I Get
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:194
 #MP3:The Mighty Mighty BossTones - The Impression That I Get.mp3
 : 23 2 11 Have 
 : 27 2 11 you 

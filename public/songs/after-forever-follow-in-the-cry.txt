@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:After Forever - Follow In The Cry
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:247
 #MP3:After Forever - Follow In The Cry.mp3
 : 17 15 -8 A
 : 33 23 -4 ~

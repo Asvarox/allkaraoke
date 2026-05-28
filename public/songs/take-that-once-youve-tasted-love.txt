@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Take That - Once You’ve Tasted Love
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:225
 #MP3:Take That - Once You’ve Tasted Love.mp3
 : 17 7 13 Love
 : 25 3 10 ~

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Calvin Harris - I’m Not Alone
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:211
 #MP3:Calvin Harris - I’m Not Alone.mp3
 : 1 2 -4 Can 
 : 5 2 -2 you 

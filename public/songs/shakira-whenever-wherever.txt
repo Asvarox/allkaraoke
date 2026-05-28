@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Whenever%20wherever
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_DURATION:197
 : 28 4 20 Lu
 : 33 3 20 cky 
 : 37 3 20 you 

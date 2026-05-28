@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:169
 : 18 7 -8 I 
 : 27 2 -6 am
 : 30 1 -8 ~ 

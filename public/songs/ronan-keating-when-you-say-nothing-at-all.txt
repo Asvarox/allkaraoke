@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Ronan Keating - When You Say Nothing At All
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:254
 #MP3:Ronan Keating - When You Say Nothing At All.mp3
 : 17 4 11 It’s 
 : 23 2 11 a

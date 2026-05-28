@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Clean Bandit feat. Sean Paul & Anne-Marie - Rockabye
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:254
 #MP3:Clean Bandit feat. Sean Paul & Anne-Marie - Rockabye.mp3
 F 14 1 2 Call 
 F 16 1 2 it 

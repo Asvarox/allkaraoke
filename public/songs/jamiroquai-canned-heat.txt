@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Canned Heat
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:235
 #MP3:Jamiroquai - Canned Heat.mp3
 #COVER:Jamiroquai - Canned Heat [CO].jpg
 #BACKGROUND:Jamiroquai - Canned Heat [BG].jpg

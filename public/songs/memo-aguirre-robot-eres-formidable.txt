@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:0,77
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:84
 #MP3:Memo Aguirre - Robot, eres formidable.mp3
 #COVER:Memo Aguirre - Robot, eres formidable.jpg
 #END:71000.0

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Franz Ferdinand - No You Girls
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Franz Ferdinand - No You Girls.mp3
 : 21 4 14 O
 : 27 6 16 ~h, 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Calvin Harris & Alesso feat. Hurts - Under Control
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:211
 #MP3:Calvin Harris & Alesso feat. Hurts - Under Control.mp3
 : 17 2 5 I 
 : 21 6 8 might 

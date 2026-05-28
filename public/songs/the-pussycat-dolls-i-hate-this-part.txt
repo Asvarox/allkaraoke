@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls - I Hate This Part
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:217
 #MP3:The Pussycat Dolls - I Hate This Part.mp3
 : 22 3 12 We’re 
 : 28 4 14 dri

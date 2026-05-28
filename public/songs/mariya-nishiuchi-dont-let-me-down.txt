@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:77
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:107
 #MP3:Mariya Nishiuchi - Don't let me down (TV).mp3
 #COVER:Mariya Nishiuchi - Don't let me down (TV) [CO].jpg
 #MEDLEYSTARTBEAT:596

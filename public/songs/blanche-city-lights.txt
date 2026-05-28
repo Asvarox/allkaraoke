@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=20841
 #ALLKARAOKE_VOLUME:0,58
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:182
 #MP3:Blanche - City Lights.mp3
 #START:5.8
 : 26 3 7 All 

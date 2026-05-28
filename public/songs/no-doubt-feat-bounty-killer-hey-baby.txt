@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:No Doubt feat. Bounty Killer - Hey Baby
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:208
 #MP3:No Doubt feat. Bounty Killer - Hey Baby.mp3
 : 19 3 31 Hey 
 : 25 3 28 ba

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:34
 #ALLKARAOKE_SOURCEURL:Jimmy Ruffin - What Becomes Of The Brokenhearted
 #ALLKARAOKE_VOLUME:0,82
+#ALLKARAOKE_DURATION:178
 #MP3:Jimmy Ruffin - What Becomes Of The Brokenhearted.mp3
 : 26 7 -2 Ooh
 : 34 7 0 ~

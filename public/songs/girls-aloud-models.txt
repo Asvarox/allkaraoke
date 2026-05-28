@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:53
 #ALLKARAOKE_SOURCEURL:Girls Aloud - Models
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:208
 #MP3:Girls Aloud - Models.mp3
 : 21 3 -2 Girls, 
 : 29 3 -2 girls, 

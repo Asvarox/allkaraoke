@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:8
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Tinie Tempah - Drinking From The Bottle
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:334
 #MP3:Calvin Harris feat. Tinie Tempah - Drinking From The Bottle.mp3
 #START:70.25
 F 17 2 12 I-

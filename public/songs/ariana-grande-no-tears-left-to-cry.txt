@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Ariana%20Grande
 #ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:239
 : 23 8 12 Right 
 : 36 10 12 now, 
 : 51 3 11 I'm 

@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Jonas Blue feat. Dakota - Fast Car
 #ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_DURATION:216
 #MP3:Jonas Blue feat. Dakota - Fast Car.mp3
 : 15 3 4 Oh 
 : 19 3 1 oh 

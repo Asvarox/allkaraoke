@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Jethro Tull - Living In The Past
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_DURATION:203
 #MP3:Jethro Tull - Living In The Past.mp3
 : 20 8 12 Hap
 : 32 8 12 py 

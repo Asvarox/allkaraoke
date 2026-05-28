@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Groove Coverage - 7 Years And 50 Days
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Groove Coverage - 7 Years And 50 Days.mp3
 : 19 6 12 Se
 : 27 6 12 ven 

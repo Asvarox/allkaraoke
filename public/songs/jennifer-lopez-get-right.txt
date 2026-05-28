@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:1
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez - Get Right
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:304
 #MP3:Jennifer Lopez - Get Right.mp3
 #COVER:Jennifer Lopez - Get Right [CO].jpg
 #BACKGROUND:Jennifer Lopez - Get Right [BG].jpg

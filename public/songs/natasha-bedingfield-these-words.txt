@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Natasha Bedingfield - These Words
 #ALLKARAOKE_VOLUME:0,59
+#ALLKARAOKE_DURATION:221
 #MP3:Natasha Bedingfield - These Words.mp3
 F 26 4 5 These 
 F 34 4 5 words 

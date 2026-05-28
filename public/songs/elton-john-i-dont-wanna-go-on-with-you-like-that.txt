@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Elton John - I Don’t Wanna Go On With You Like That
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:276
 #MP3:Elton John - I Don’t Wanna Go On With You Like That.mp3
 : 18 2 4 I’ve 
 : 23 2 12 al
