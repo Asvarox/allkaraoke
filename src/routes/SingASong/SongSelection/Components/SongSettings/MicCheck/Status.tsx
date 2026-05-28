@@ -1,7 +1,5 @@
-import styled from '@emotion/styled';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { ComponentProps } from 'react';
-import { mobileMQ, typography } from '~/modules/Elements/cssMixins';
 import usePlayerMicStatus from '~/modules/hooks/players/usePlayerMicStatus';
 import Ping from './Ping';
 
@@ -20,63 +18,35 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
       data-test="player-mic-status">
       <Ping playerNumber={playerNumber} />
       {status === 'ok' ? (
-        <OkIcon data-test="status-ok" />
+        <div
+          data-test="status-ok"
+          className="mobile:w-4 mobile:h-4 m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white"
+        />
       ) : status === 'unavailable' ? (
-        <UnavailableIcon data-test="status-unavailable" />
+        <ErrorIcon data-test="status-unavailable" style={{ fill: '#ff0000' }} />
       ) : (
-        <UnstableIcon data-test="status-unstable" />
+        <WarningIcon data-test="status-unstable" style={{ fill: '#f89400', stroke: 'black' }} />
       )}
       {status === 'unavailable' ? (
-        <StatusDescription position={tooltipPosition}>
+        <div
+          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
+            tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
+          }`}>
           <span>
             The device is <strong>disconnected</strong>. Reconnect it, please.
           </span>
-        </StatusDescription>
+        </div>
       ) : status === 'unstable' ? (
-        <StatusDescription position={tooltipPosition}>
+        <div
+          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
+            tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
+          }`}>
           <span>
             The connection seems <strong>unstable</strong>. Connect to the same Wifi.
           </span>
-        </StatusDescription>
+        </div>
       ) : null}
     </div>
   );
 }
 export default PlayerStatus;
-
-const OkIcon = styled.div`
-  margin: 0.15rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  ${mobileMQ} {
-    width: 1rem;
-    height: 1rem;
-  }
-  display: inline-block;
-  background: #ffffff;
-  border: 1px solid black;
-  border-radius: 50%;
-`;
-
-const UnavailableIcon = styled(ErrorIcon)`
-  fill: #ff0000;
-`;
-
-const UnstableIcon = styled(WarningIcon)`
-  fill: #f89400;
-  stroke: black;
-`;
-
-const StatusDescription = styled.div<{ position: Props['tooltipPosition'] }>`
-  ${typography};
-  position: absolute;
-  left: ${(props) => (props.position === 'end' ? '100%' : 'auto')};
-  right: ${(props) => (props.position === 'end' ? 'auto' : '100%')};
-  top: 0;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  width: 20rem;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 0.5rem;
-`;

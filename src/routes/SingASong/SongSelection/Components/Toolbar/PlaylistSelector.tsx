@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { Button } from '~/modules/Elements/AKUI/Button';
 import { Selector } from '~/modules/Elements/AKUI/Selector';
 import { RegisterFunc } from '~/modules/hooks/useKeyboardNav';
-import LanguagePickerBottomSheet from '~/routes/SingASong/SongSelectionV2/Components/LanguagePickerBottomSheet';
-import PlaylistBottomSheet from '~/routes/SingASong/SongSelectionV2/Components/PlaylistBottomSheet';
-import { LANGUAGE_PLAYLIST_PREFIX, PlaylistEntry } from '~/routes/SingASong/SongSelectionV2/Hooks/usePlaylists';
+import LanguagePickerBottomSheet from '~/routes/SingASong/SongSelection/Components/LanguagePickerBottomSheet';
+import PlaylistBottomSheet from '~/routes/SingASong/SongSelection/Components/PlaylistBottomSheet';
+import { LANGUAGE_PLAYLIST_PREFIX, PlaylistEntry } from '~/routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 interface PlaylistSelectorProps {
   playlists: PlaylistEntry[];

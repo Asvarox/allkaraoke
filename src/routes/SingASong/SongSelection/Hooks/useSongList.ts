@@ -3,6 +3,7 @@ import { ReactNode, useMemo } from 'react';
 import { SongPreview } from '~/interfaces';
 import useSongIndex from '~/modules/Songs/hooks/useSongIndex';
 import useRecommendedSongs from '~/routes/SingASong/SongSelection/Hooks/useRecommendedSongs';
+import useSharedSongsSearch from '~/routes/SingASong/SongSelection/Hooks/useSharedSongsSearch';
 import { useSongListFilter } from '~/routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 export interface SongGroup {
@@ -36,6 +37,19 @@ export default function useSongList(additionalSong: string | null) {
   const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist } =
     useSongListFilter(songList.data, popular, isLoading, additionalSong);
 
+  const existingSongIds = useMemo(() => new Set(songList.data.map((song) => song.id)), [songList.data]);
+  const sharedSongs = useSharedSongsSearch({
+    searchText: filters.search ?? '',
+    regularResultsCount: filteredList.length,
+    fallbackThreshold: 8,
+    existingSongIds,
+  });
+
+  const mergedSearchList = useMemo(
+    () => (filters.search ? [...filteredList, ...sharedSongs] : filteredList),
+    [filters.search, filteredList, sharedSongs],
+  );
+
   const groupedSongList = useMemo(() => {
     const groups: SongGroup[] = [];
 
@@ -45,10 +59,24 @@ export default function useSongList(additionalSong: string | null) {
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
 
+      if (sharedSongs.length > 0) {
+        groups.push({
+          name: 'Shared songs (unverified)',
+          songs: sharedSongs.map((song, index) => ({
+            index: filteredList.length + index,
+            song,
+            isPopular: false,
+          })),
+        });
+      }
+
       return groups;
     } else {
       if (filteredList.length === 0) return [];
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
+
+      // Precompute a map from song id to its index in filteredList to avoid O(n²) indexOf calls
+      const songIndexMap = new Map(filteredList.map((song, index) => [song.id, index]));
 
       sortedList.forEach((song) => {
         try {
@@ -59,7 +87,7 @@ export default function useSongList(additionalSong: string | null) {
             groups.push(group);
           }
 
-          group.songs.push({ index: filteredList.indexOf(song), song, isPopular: popular.includes(song.id) });
+          group.songs.push({ index: songIndexMap.get(song.id) ?? 0, song, isPopular: popular.includes(song.id) });
         } catch (e) {
           console.error(e);
           captureException(e);
@@ -77,8 +105,7 @@ export default function useSongList(additionalSong: string | null) {
             isNew: true,
             songs: newSongs.map((song) => ({
               song,
-              index: filteredList.indexOf(song),
-
+              index: songIndexMap.get(song.id) ?? 0,
               isPopular: popular.includes(song.id),
             })),
           });
@@ -87,11 +114,11 @@ export default function useSongList(additionalSong: string | null) {
 
       return finalGroups;
     }
-  }, [filteredList, filters.search, popular, playlist]);
+  }, [filteredList, filters.search, popular, playlist, sharedSongs]);
 
   return {
     groupedSongList,
-    songList: filteredList,
+    songList: mergedSearchList,
     filters,
     setFilters,
     isLoading,

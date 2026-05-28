@@ -4,7 +4,7 @@ import { SongPreview } from '~/interfaces';
 import DrawingTestInput from '~/modules/GameEngine/Input/DrawingTestInput';
 import InputManager from '~/modules/GameEngine/Input/InputManager';
 import PlayersManager from '~/modules/Players/PlayersManager';
-import SongPreviewComponent from '~/routes/SingASong/SongSelectionV2/Components/SongPreview';
+import SongPreviewComponent from '~/routes/SingASong/SongSelection/Components/SongPreview';
 
 // ---------------------------------------------------------------------------
 // Fixture

@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import {
   CSSProperties,
   ForwardedRef,
@@ -36,6 +35,7 @@ interface Props<T> {
   overScan: number;
   groupHeaderHeight: number;
   itemHeight: number;
+  topPadding?: number;
   itemContent: (
     index: number,
     groupIndex: number,
@@ -86,15 +86,17 @@ export function CustomVirtualization<T>(props: Props<T>) {
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
       const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
-      const firstVisibleItem = itemsPositions.findIndex((item) => item.bottom > scrollTop - props.overScan);
+      // Subtract topPadding so range is computed in content-space coordinates (itemsPositions start from 0)
+      const contentScrollTop = Math.max(0, scrollTop - (props.topPadding ?? 0));
+      const firstVisibleItem = itemsPositions.findIndex((item) => item.bottom > contentScrollTop - props.overScan);
       // todo subtract item height from bottom
       const lastVisibleItem = itemsPositions.findIndex(
-        (item) => item.bottom > scrollTop + viewportHeight + props.overScan,
+        (item) => item.bottom > contentScrollTop + viewportHeight + props.overScan,
       );
 
       return [firstVisibleItem, lastVisibleItem === -1 ? itemsPositions.length : lastVisibleItem];
     },
-    [itemsPositions, props.overScan],
+    [itemsPositions, props.overScan, props.topPadding],
   );
 
   const [[rangeFrom, rangeTo], setItemsRange] = useState(() => computeVisibleItemsRange(0));
@@ -151,7 +153,9 @@ export function CustomVirtualization<T>(props: Props<T>) {
 
   useImperativeHandle(props.ref, () => ({
     getItemPositionY: (index) =>
-      (itemsPositions.find((item) => item.type === 'item' && item.index === index)?.bottom ?? -1) - props.itemHeight,
+      (itemsPositions.find((item) => item.type === 'item' && item.index === index)?.bottom ?? -1) -
+      props.itemHeight +
+      (props.topPadding ?? 0),
     scrollTo: (pos: number) => {
       viewportElementRef.current?.scrollTo({ top: pos });
     },
@@ -159,13 +163,16 @@ export function CustomVirtualization<T>(props: Props<T>) {
       const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
       if (item) {
         const scrollPos = (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
-        viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
+        viewportElementRef.current?.scrollTo({ top: (props.topPadding ?? 0) + item.bottom - scrollPos, behavior });
       }
     },
     scrollToGroup: async (groupIndex, behavior = 'auto') => {
       const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
       if (item) {
-        viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });
+        viewportElementRef.current?.scrollTo({
+          top: (props.topPadding ?? 0) + item.bottom - props.groupHeaderHeight,
+          behavior,
+        });
       }
     },
   }));
@@ -179,10 +186,12 @@ export function CustomVirtualization<T>(props: Props<T>) {
   const pt = groupToRender !== -1 ? paddingTop - props.groupHeaderHeight : paddingTop;
 
   return (
-    <Viewport ref={viewportElementRef}>
-      <Wrapper
+    <div ref={viewportElementRef} className="h-full w-full overflow-auto overflow-x-hidden">
+      <div
+        className="relative box-border"
         style={{
-          height: totalHeight,
+          height: totalHeight + (props.topPadding ?? 0),
+          paddingTop: props.topPadding ?? 0,
         }}>
         {Header && <Header context={props.context} />}
         {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
@@ -191,7 +200,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
               style: {
                 width: '100%',
                 position: 'absolute',
-                top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
+                top: itemsPositions[forcedItemIndex].bottom - props.itemHeight + (props.topPadding ?? 0),
                 left: 0,
                 boxSizing: 'border-box',
               },
@@ -222,20 +231,9 @@ export function CustomVirtualization<T>(props: Props<T>) {
             </div>
           ))}
         </div>
-      </Wrapper>
+      </div>
       {isEmptyList && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
       {Footer && Footer}
-    </Viewport>
+    </div>
   );
 }
-
-const Wrapper = styled.div`
-  box-sizing: border-box;
-  position: relative;
-`;
-
-const Viewport = styled.div`
-  overflow: auto;
-  height: 100%;
-  width: 100%;
-`;

@@ -59,4 +59,14 @@ describe('useSongListFilter', () => {
     expect(result.current.filteredList).not.toContainEqual(list[1]);
     expect(result.current.filteredList).toContainEqual(list[0]);
   });
+
+  it('should create a language-specific playlist entry when URL has language playlist', () => {
+    global.location.search = '?playlist=language-Polish';
+
+    const { result } = renderHook(() => useSongListFilter(list, [], false, null));
+
+    const languagePlaylist = result.current.playlists.find((p) => p.name === 'language-Polish');
+    expect(languagePlaylist).toBeDefined();
+    expect(languagePlaylist?.filters).toMatchObject({ language: 'Polish', skipExcludedLanguages: true });
+  });
 });

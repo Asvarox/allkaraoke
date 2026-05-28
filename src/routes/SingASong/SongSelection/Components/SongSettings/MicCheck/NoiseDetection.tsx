@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import events from '~/modules/GameEvents/GameEvents';
@@ -23,8 +22,9 @@ export default memo(function NoiseDetection() {
       () => {
         const noDetection = measures.current.filter(([, freq]) => freq === 0);
         const detection = measures.current.filter(([, freq]) => freq > 0);
-        const avgNoDetectionVolume = noDetection.reduce((acc, [volume]) => acc + volume, 0) / (noDetection.length + 1);
-        const avgDetectionVolume = detection.reduce((acc, [volume]) => acc + volume, 0) / (detection.length + 1);
+        const avgNoDetectionVolume =
+          noDetection.reduce((acc, [volume]) => acc + volume, 0) / Math.max(noDetection.length, 1);
+        const avgDetectionVolume = detection.reduce((acc, [volume]) => acc + volume, 0) / Math.max(detection.length, 1);
 
         // The logic is that if the singing measures and non-singing measures have similar volume, then there's
         // something playing in the background that is picked up as singing. If someone is singing into the mic
@@ -45,7 +45,10 @@ export default memo(function NoiseDetection() {
   }, [noiseDetected]);
 
   return (
-    <NoiseWarningContainer visible={noiseDetected}>
+    <div
+      className={`max-w-[40rem] bg-black/75 p-4 transition-opacity duration-300 ${
+        noiseDetected ? 'opacity-100' : 'pointer-events-none opacity-0'
+      }`}>
       <div className="flex items-center gap-2 text-lg">
         <Warning className="text-active" />
         Noise detected
@@ -59,17 +62,6 @@ export default memo(function NoiseDetection() {
           </>
         )}
       </div>
-    </NoiseWarningContainer>
+    </div>
   );
 });
-
-const NoiseWarningContainer = styled.div<{ visible: boolean }>`
-  opacity: ${(props) => (props.visible ? 1 : 0)};
-  transition: 300ms;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 1rem;
-  max-width: 40rem;
-  position: relative;
-  top: -1rem;
-  left: -0.5rem;
-`;
