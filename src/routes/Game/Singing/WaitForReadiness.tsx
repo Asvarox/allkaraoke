@@ -69,10 +69,10 @@ function WaitForReadiness({ onFinish }: Props) {
         </Typography>
       )}
       <div className="flex flex-col gap-4 [view-transition-name:player-mic-check-container]">
-        {playerStatuses.map(({ confirmed, name, player }, index) => (
+        {playerStatuses.map(({ confirmed, name, player }) => (
           <div
             className="ph-no-capture flex items-center gap-5"
-            key={index}
+            key={player.number}
             data-test="player-confirm-status"
             data-name={name}
             data-confirmed={confirmed}>
@@ -81,7 +81,7 @@ function WaitForReadiness({ onFinish }: Props) {
                 {confirmed ? <CheckCircleOutline /> : <Loader />}
               </span>
             )}{' '}
-            <MicCheckSlot player={player} playerIndex={index as 0 | 1 | 2 | 3} />
+            <MicCheckSlot player={player} playerIndex={player.number} />
           </div>
         ))}
       </div>
