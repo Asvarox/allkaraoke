@@ -91,7 +91,8 @@
     ]
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260111.0",
+    "@cloudflare/vite-plugin": "^1.39.0",
+    "@cloudflare/workers-types": "^4.20260529.1",
     "@emotion/babel-plugin": "^11.13.5",
     "@playwright/experimental-ct-react": "1.57.0",
     "@playwright/test": "1.57.0",
@@ -150,9 +151,8 @@
     "typescript-eslint": "^8.52.0",
     "utility-types": "^3.11.0",
     "vite": "^8.0.14",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.7",
-    "wrangler": "^4.58.0"
+    "wrangler": "^4.95.0"
   },
   "homepage": "./",
   "dependenciesMeta": {

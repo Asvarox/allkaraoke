@@ -117,7 +117,7 @@ const config: PlaywrightTestConfig = {
       ? {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
           command: process.env.CI
-            ? 'wrangler pages dev build --port 3010 --local --local-protocol=https'
+            ? 'wrangler dev --port 3010 --local --local-protocol=https'
             : 'pnpm build:serve:e2e:fast',
           port: 3010,
           timeout: 60_000 * 3,

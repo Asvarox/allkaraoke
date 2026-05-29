@@ -76,7 +76,7 @@ The sync job:
 
 ## 5) KV namespace setup (prod + preview)
 
-The project expects this binding in `wrangler.toml`:
+The project expects this binding in `wrangler.jsonc`:
 
 - `binding = "SHARED_SONGS_KV"`
 - `id = "<production namespace id>"`
@@ -90,7 +90,7 @@ Run:
 pnpm wrangler kv namespace create SHARED_SONGS_KV
 ```
 
-Copy the returned namespace `id` into `wrangler.toml` under `[[kv_namespaces]]` as `id`.
+Copy the returned namespace `id` into `wrangler.jsonc` under `kv_namespaces` as `id`.
 
 ### 5.2 Create preview namespace
 
@@ -100,7 +100,7 @@ Run:
 pnpm wrangler kv namespace create SHARED_SONGS_KV --preview
 ```
 
-Copy the returned namespace `id` into `wrangler.toml` as `preview_id`.
+Copy the returned namespace `id` into `wrangler.jsonc` as `preview_id`.
 
 ### 5.3 Verify bindings
 
@@ -110,7 +110,7 @@ Run:
 pnpm wrangler kv namespace list
 ```
 
-Confirm both production and preview namespaces exist and match `wrangler.toml`.
+Confirm both production and preview namespaces exist and match `wrangler.jsonc`.
 
 ## 6) Secrets management
 
@@ -176,7 +176,7 @@ Where used:
 ## 7) Bootstrapping checklist for a new environment
 
 1. Create KV namespace for production and preview.
-2. Put resulting IDs into `wrangler.toml` (`id` and `preview_id`).
+2. Put resulting IDs into `wrangler.jsonc` (`id` and `preview_id`).
 3. Set runtime secret `SHARED_SONGS_ADMIN_TOKEN` for Cloudflare.
 4. Set GitHub repository secrets (`SHARED_SONGS_ADMIN_URL`, `SHARED_SONGS_ADMIN_TOKEN`, `POSTHOG_PAT_KEY`).
 5. Run local fixture upsert to validate:
@@ -205,7 +205,7 @@ curl -s "http://127.0.0.1:8788/shared-song?id=shared-cloudflare-e2e-song"
 - `401 Unauthorized` on admin endpoint:
   - Check `x-shared-songs-admin-token` header value against runtime secret.
 - `Shared songs storage is not configured`:
-  - Verify `SHARED_SONGS_KV` binding and namespace IDs in `wrangler.toml`.
+  - Verify `SHARED_SONGS_KV` binding and namespace IDs in `wrangler.jsonc`.
 - CI sync not writing data:
   - Verify GitHub secrets and target admin URL.
   - Check workflow logs in `.github/workflows/sync-shared-songs.yml`.

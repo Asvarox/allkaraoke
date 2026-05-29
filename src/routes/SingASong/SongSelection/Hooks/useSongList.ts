@@ -61,7 +61,7 @@ export default function useSongList(additionalSong: string | null) {
 
       if (sharedSongs.length > 0) {
         groups.push({
-          name: 'Shared songs (unverified)',
+          name: 'Unverified',
           songs: sharedSongs.map((song, index) => ({
             index: filteredList.length + index,
             song,
