@@ -106,34 +106,6 @@ const config: PlaywrightTestConfig = {
         },
       },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //     name: 'Microsoft Edge',
-    //     use: {
-    //         channel: 'msedge',
-    //     },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: {
-    //     channel: 'chrome',
-    //   },
-    // },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
@@ -144,7 +116,9 @@ const config: PlaywrightTestConfig = {
     prodRun
       ? {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
-          command: process.env.CI ? 'pnpm start:production' : 'pnpm build:serve:e2e:fast',
+          command: process.env.CI
+            ? 'wrangler pages dev build --port 3010 --local --local-protocol=https'
+            : 'pnpm build:serve:e2e:fast',
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,

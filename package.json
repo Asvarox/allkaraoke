@@ -70,6 +70,8 @@
     "shared-song:upsert-fixture": "pnpm ts-node scripts/cicd/upsertSharedSongFixture.ts tests/fixtures/songs/shared-cloudflare-e2e.txt",
     "test-ct": "pnpm playwright test -c playwright-ct.config.mts",
     "peerjs": "pnpm node peerJSServer.js",
+    "youtube:duration": "pnpm ts-node scripts/getYoutubeVideoDuration.ts",
+    "songs:backfill-duration": "pnpm ts-node scripts/backfillSongDurations.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "knip": "knip --exclude exports,types,nsExports,nsTypes,classMembers,enumMembers,duplicates,unresolved --no-config-hints",

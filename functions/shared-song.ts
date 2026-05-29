@@ -29,7 +29,7 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
 
     const sharedSong = await getSharedSong(env.SHARED_SONGS_KV, songId);
 
-    if (!sharedSong || sharedSong.verificationStatus !== 'valid' || sharedSong.removedAt !== null) {
+    if (!sharedSong) {
       return new Response(JSON.stringify({ error: 'Song not found' }), {
         status: 404,
         headers: responseHeaders,

@@ -31,7 +31,6 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
 
     const normalizedQuery = query.toLowerCase();
     const songs = (await listSharedSongs(env.SHARED_SONGS_KV))
-      .filter((song) => song.verificationStatus === 'valid' && song.removedAt === null)
       .filter(
         (song) =>
           song.artist.toLowerCase().includes(normalizedQuery) ||
@@ -54,7 +53,8 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
   } catch (error) {
     console.error('Failed to fetch shared songs', error);
 
-    return new Response(JSON.stringify([]), {
+    return new Response(JSON.stringify({ error: 'Failed to fetch shared songs' }), {
+      status: 500,
       headers: responseHeaders,
     });
   }

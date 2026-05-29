@@ -35,4 +35,4 @@ jobs:
           DAYS_TO="${{ github.event.inputs.days_to }}"
           CURSOR="${{ github.event.inputs.cursor }}"
 
-          pnpm ts-node scripts/cicd/githubActionSyncSharedSongs.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+          pnpm ts-node scripts/cicd/githubActionUploadSharedSongsToCloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"

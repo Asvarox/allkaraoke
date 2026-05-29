@@ -38,13 +38,10 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
     language: song.language,
     videoId: song.video,
     verifiedAt: now,
-    verificationStatus: 'valid',
-    verificationErrors: [],
     firstSeenAt: now,
     lastSeenAt: now,
     sourceUserId: 'cloudflare-local-e2e',
     sourceEventAt: now,
-    removedAt: null,
   });
 
   console.log(`Upserted shared song fixture: ${song.id}`);

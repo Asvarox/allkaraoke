@@ -1,7 +1,7 @@
+import { Page } from '@playwright/test';
 import { execSync } from 'child_process';
 import { readFileSync } from 'fs';
 import path from 'path';
-import { Page } from '@playwright/test';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 
 const FIXTURE_PATH = 'tests/fixtures/songs/shared-cloudflare-e2e.txt';
@@ -13,7 +13,7 @@ export const upsertCloudflareSharedSongFixtureOrMock = async (page: Page) => {
     execSync('pnpm shared-song:upsert-fixture', {
       env: {
         ...process.env,
-        SHARED_SONGS_ADMIN_URL: 'http://127.0.0.1:8788',
+        SHARED_SONGS_ADMIN_URL: process.env.PROD_RUN ? 'https://localhost:3010' : 'http://127.0.0.1:8788',
         SHARED_SONGS_ADMIN_TOKEN: 'local-shared-songs-admin-token',
       },
       stdio: 'inherit',

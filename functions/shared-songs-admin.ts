@@ -24,13 +24,10 @@ const isSharedSongRecord = (payload: unknown): payload is SharedSongRecord => {
     Array.isArray(record.language) &&
     typeof record.videoId === 'string' &&
     typeof record.verifiedAt === 'number' &&
-    typeof record.verificationStatus === 'string' &&
-    Array.isArray(record.verificationErrors) &&
     typeof record.firstSeenAt === 'number' &&
     typeof record.lastSeenAt === 'number' &&
     typeof record.sourceUserId === 'string' &&
-    typeof record.sourceEventAt === 'number' &&
-    (typeof record.removedAt === 'number' || record.removedAt === null)
+    typeof record.sourceEventAt === 'number'
   );
 };
 

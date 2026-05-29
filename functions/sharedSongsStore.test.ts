@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { getSharedSong, listSharedSongs, removeSharedSong, SharedSongRecord, upsertSharedSong } from './sharedSongsStore';
+import {
+  getSharedSong,
+  listSharedSongs,
+  removeSharedSong,
+  SharedSongRecord,
+  upsertSharedSong,
+} from './sharedSongsStore';
 
 class MockKVNamespace implements KVNamespace {
   private storage = new Map<string, string>();
@@ -48,13 +54,10 @@ const createRecord = (overrides: Partial<SharedSongRecord> = {}): SharedSongReco
   language: ['English'],
   videoId: 'koBUXESJZ8g',
   verifiedAt: 1,
-  verificationStatus: 'valid',
-  verificationErrors: [],
   firstSeenAt: 1,
   lastSeenAt: 1,
   sourceUserId: 'user-1',
   sourceEventAt: 1,
-  removedAt: null,
   ...overrides,
 });
 
@@ -91,14 +94,16 @@ describe('sharedSongsStore KV behavior', () => {
     expect(storedRecord?.sourceUserId).toBe('user-2');
   });
 
-  it('marks record as removed', async () => {
+  it('removes record from storage and index', async () => {
     const kv = new MockKVNamespace();
     await upsertSharedSong(kv, createRecord());
 
     const removed = await removeSharedSong(kv, 'song-1');
     const storedRecord = await getSharedSong(kv, 'song-1');
+    const list = await listSharedSongs(kv);
 
     expect(removed).toBe(true);
-    expect(storedRecord?.removedAt).not.toBeNull();
+    expect(storedRecord).toBeNull();
+    expect(list).toHaveLength(0);
   });
 });

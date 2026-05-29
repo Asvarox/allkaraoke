@@ -5,8 +5,10 @@ pages_build_output_dir = "build"
 
 [[kv_namespaces]]
 binding = "SHARED_SONGS_KV"
-id = "0d4f3c2b1a9e8d7c6b5a4f3c2b1a9e8d"
-preview_id = "0d4f3c2b1a9e8d7c6b5a4f3c2b1a9e8d"
+id = "3bf3f3ab4c0e4d30b5b9faf5b6d0ebda"
+preview_id = "4c32b3f25d73438390962814c3c1ed5a"
 
+# Secrets (SHARED_SONGS_ADMIN_TOKEN) must NOT be committed here.
+# Production: set via `wrangler secret put SHARED_SONGS_ADMIN_TOKEN`
+# Local dev: add to .dev.vars (gitignored), e.g. SHARED_SONGS_ADMIN_TOKEN=your-local-token
 [vars]
-SHARED_SONGS_ADMIN_TOKEN = "local-shared-songs-admin-token"

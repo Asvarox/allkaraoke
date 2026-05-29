@@ -39,13 +39,10 @@ export interface SharedSongRecord {
   language: string[];
   videoId: string;
   verifiedAt: number;
-  verificationStatus: 'pending' | 'valid' | 'invalid';
-  verificationErrors: string[];
   firstSeenAt: number;
   lastSeenAt: number;
   sourceUserId: string;
   sourceEventAt: number;
-  removedAt: number | null;
 }
 
 export const upsertSharedSongRecord = async (record: SharedSongRecord) => {

@@ -1,34 +1,14 @@
 import { Song, SongPreview } from '~/interfaces';
 import convertTxtToSong from './convertTxtToSong';
 import getSongId from './getSongId';
+import { applyCommonSharedSongImportProcessing, normalizeSharedSongTxt } from './sharedSongImportProcessing';
 
 const API_URL = 'https://eu.posthog.com';
 const PROJECT_ID = '281';
 const AFTER_DATE = new Date(Date.now() - 1000 * 3600 * 24 * 28).toISOString();
 
-const suffixes = ['(tv)', '(album version)', '(movie version)', '[duet]'];
-
 const normalizeSong = (song: Song): Song => {
-  suffixes.forEach((suffix) => {
-    if (song.title.toLowerCase().endsWith(suffix)) {
-      song.title = song.title.slice(0, -suffix.length);
-    }
-  });
-  song.title = song.title.trim();
-
-  song.language = song.language.map((lang) => {
-    if (lang.toLowerCase().startsWith('espa')) {
-      return 'Spanish';
-    } else if (lang.toLowerCase().endsWith('(romanized)')) {
-      return lang.slice(0, -11).trim();
-    } else if (lang.toLowerCase().endsWith('(brazil)')) {
-      return 'Portuguese';
-    }
-    return lang;
-  });
-
-  // North K -> South Korea fix
-  song.artistOrigin = song.artistOrigin?.toLowerCase() === 'kp' ? 'KR' : song.artistOrigin;
+  applyCommonSharedSongImportProcessing(song);
 
   song.lastUpdate = new Date().toISOString();
 
@@ -45,7 +25,11 @@ type RequestOptions = {
   headers?: HeadersInit;
 };
 
-type RequestFunc = (url: string, options: RequestOptions) => Promise<any>;
+type SharedSongsQueryResponse = {
+  results: Array<[songTxt: string | null, songId: string | null, createdAt: string]>;
+};
+
+type RequestFunc = (url: string, options: RequestOptions) => Promise<SharedSongsQueryResponse>;
 
 export const importSongsFromPostHogBase = async (
   mkRequest: RequestFunc,
@@ -77,17 +61,22 @@ export const importSongsFromPostHogBase = async (
 
   const songsAdded: string[] = [];
 
-  for (const [songTxt, songId, createdAt] of sharedSongs.results as Array<[string, string, string]>) {
+  for (const [songTxt, songId, createdAt] of sharedSongs.results) {
     try {
       if (!songTxt && songId && songsAdded.includes(songId)) {
         await onSongRemoved(songId);
         console.log(`Deleting song ${songId}`);
+        continue;
       }
 
-      const song = convertTxtToSong(songTxt.replaceAll('\\n', '\n').replaceAll('\\"', '"'));
+      if (!songTxt) {
+        continue;
+      }
+
+      const song = convertTxtToSong(normalizeSharedSongTxt(songTxt));
       if (!song.id) {
         console.log('Song has no ID', song);
-        return;
+        continue;
       }
       normalizeSong(song);
 

@@ -4,6 +4,10 @@ import fs from 'fs';
 import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../../src/modules/Songs/utils/convertTxtToSong';
+import {
+  applyCommonSharedSongImportProcessing,
+  normalizeSharedSongTxt,
+} from '../../src/modules/Songs/utils/sharedSongImportProcessing';
 import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtubeDurationClient';
 import { isSharedSongsAdminConfigured, removeSharedSongRecord } from './sharedSongsAdminClient';
 
@@ -76,23 +80,15 @@ dotenv.config({ path: '.env.local' });
           continue;
         }
 
-        const song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
+        const song = convertTxtToSong(normalizeSharedSongTxt(songTxt));
         if (!song.id) {
           console.log('Song has no ID', song, songId);
           continue;
         }
 
-        promotedSongs.add(song.id);
+        applyCommonSharedSongImportProcessing(song);
 
-        song.tracks.forEach((track) => {
-          track.sections.forEach((section) => {
-            if ('notes' in section) {
-              section.notes.forEach((note) => {
-                note.lyrics = note.lyrics?.replaceAll(/\\+"/g, '"');
-              });
-            }
-          });
-        });
+        promotedSongs.add(song.id);
 
         const songFilePath = `./public/songs/${song.id}.txt`;
         if (fs.existsSync(songFilePath)) {
@@ -104,19 +100,19 @@ dotenv.config({ path: '.env.local' });
         } else {
           addedSongs.push(song.id);
           song.shortId = ++maxId;
+        }
 
-          if (song.video && song.duration === undefined) {
-            try {
-              if (!durationProbeClient) {
-                durationProbeClient = await createYoutubeDurationProbeClient(8000);
-              }
-
-              song.duration = await durationProbeClient.getDuration(song.video);
-              console.log(`Fetched duration for ${song.id}: ${song.duration}s`);
-            } catch (error) {
-              const errorMessage = error instanceof Error ? error.message : String(error);
-              console.warn(`Could not fetch duration for ${song.id}: ${errorMessage}`);
+        if (song.video) {
+          try {
+            if (!durationProbeClient) {
+              durationProbeClient = await createYoutubeDurationProbeClient(8000);
             }
+
+            song.duration = await durationProbeClient.getDuration(song.video);
+            console.log(`Fetched duration for ${song.id}: ${song.duration}s`);
+          } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
+            console.warn(`Could not fetch duration for ${song.id}: ${errorMessage}`);
           }
         }
 

@@ -1,5 +1,14 @@
 import dotenv from 'dotenv';
+import currentSongs from '../../public/songs/index.json';
+import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../../src/modules/Songs/utils/convertTxtToSong';
+import {
+  applyCommonSharedSongImportProcessing,
+  FALLBACK_VIDEO_DURATION_SECONDS,
+  lyricsFitWithinVideoDuration,
+  normalizeSharedSongTxt,
+} from '../../src/modules/Songs/utils/sharedSongImportProcessing';
+import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtubeDurationClient';
 import {
   isSharedSongsAdminConfigured,
   removeSharedSongRecord,
@@ -17,8 +26,6 @@ type PostHogEventRow = [
   userId: string | null,
 ];
 
-const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\\n', '\n');
-
 const isValidYouTubeId = (videoId?: string) => {
   if (!videoId) {
     return false;
@@ -27,7 +34,7 @@ const isValidYouTubeId = (videoId?: string) => {
 };
 
 const validateSong = (songTxt: string) => {
-  const normalizedSongTxt = normalizeSongTxt(songTxt);
+  const normalizedSongTxt = normalizeSharedSongTxt(songTxt);
   const song = convertTxtToSong(normalizedSongTxt);
   const validationErrors: string[] = [];
 
@@ -57,7 +64,6 @@ const validateSong = (songTxt: string) => {
 
   return {
     song,
-    normalizedSongTxt,
     validationErrors: [...new Set(validationErrors)],
   };
 };
@@ -111,6 +117,8 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
+  let durationProbeClient: YoutubeDurationProbeClient | null = null;
+  const builtInSongIds = new Set(currentSongs.map((song) => song.id));
 
   const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
 
@@ -151,59 +159,99 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   let upsertedCount = 0;
   let removedCount = 0;
   let failedCount = 0;
+  let discardedByDurationCount = 0;
+  let skippedExistingInLibraryCount = 0;
   let maxCreatedAt = cursor ?? '';
 
-  for (const [songTxt, songId, eventName, createdAt, userId] of response.results as PostHogEventRow[]) {
-    processedCount += 1;
+  try {
+    for (const [songTxt, songId, eventName, createdAt, userId] of response.results as PostHogEventRow[]) {
+      processedCount += 1;
 
-    if (!maxCreatedAt || new Date(createdAt).getTime() > new Date(maxCreatedAt).getTime()) {
-      maxCreatedAt = createdAt;
-    }
+      if (!maxCreatedAt || new Date(createdAt).getTime() > new Date(maxCreatedAt).getTime()) {
+        maxCreatedAt = createdAt;
+      }
 
-    try {
-      if (eventName === 'unshare-song') {
-        if (!songId) {
+      try {
+        if (eventName === 'unshare-song') {
+          if (!songId) {
+            console.warn('Skipping unshare-song event with missing songId', { eventName, createdAt, userId });
+            failedCount += 1;
+            continue;
+          }
+          await removeSharedSongRecord(songId);
+          removedCount += 1;
           continue;
         }
-        await removeSharedSongRecord(songId);
-        removedCount += 1;
-        continue;
-      }
 
-      if (!songTxt) {
-        continue;
-      }
+        if (!songTxt) {
+          console.warn('Skipping share-song event with missing songTxt', { songId, createdAt, userId });
+          continue;
+        }
 
-      const { song, normalizedSongTxt, validationErrors } = validateSong(songTxt);
-      if (!song.id) {
+        const { song, validationErrors } = validateSong(songTxt);
+        if (!song.id || validationErrors.length) {
+          failedCount += 1;
+          continue;
+        }
+
+        if (builtInSongIds.has(song.id)) {
+          skippedExistingInLibraryCount += 1;
+          continue;
+        }
+
+        applyCommonSharedSongImportProcessing(song);
+
+        let loadedVideoDurationSeconds: number | undefined;
+        if (song.video) {
+          try {
+            if (!durationProbeClient) {
+              durationProbeClient = await createYoutubeDurationProbeClient(8000);
+            }
+            loadedVideoDurationSeconds = await durationProbeClient.getDuration(song.video);
+          } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
+            console.warn(`Could not fetch duration for ${song.id}: ${errorMessage}`);
+          }
+        }
+
+        const maxAllowedDurationSeconds = loadedVideoDurationSeconds ?? FALLBACK_VIDEO_DURATION_SECONDS;
+        if (!lyricsFitWithinVideoDuration(song, maxAllowedDurationSeconds)) {
+          failedCount += 1;
+          discardedByDurationCount += 1;
+          console.warn('Discarding shared song because lyrics exceed video duration cap', {
+            songId: song.id,
+            loadedVideoDurationSeconds,
+            maxAllowedDurationSeconds,
+          });
+          continue;
+        }
+
+        const now = Date.now();
+        const record: SharedSongRecord = {
+          externalSongId: song.id,
+          songId: song.id,
+          songTxt: convertSongToTxt(song),
+          artist: song.artist,
+          title: song.title,
+          language: song.language,
+          videoId: song.video,
+          verifiedAt: now,
+          firstSeenAt: now,
+          lastSeenAt: now,
+          sourceUserId: userId ?? '',
+          sourceEventAt: new Date(createdAt).getTime(),
+        };
+
+        await upsertSharedSongRecord(record);
+        upsertedCount += 1;
+      } catch (error) {
         failedCount += 1;
-        continue;
+        console.warn('Failed to process shared song event', { songId, eventName, createdAt, error });
       }
-
-      const now = Date.now();
-      const record: SharedSongRecord = {
-        externalSongId: song.id,
-        songId: song.id,
-        songTxt: normalizedSongTxt,
-        artist: song.artist,
-        title: song.title,
-        language: song.language,
-        videoId: song.video,
-        verifiedAt: now,
-        verificationStatus: validationErrors.length ? 'invalid' : 'valid',
-        verificationErrors: validationErrors,
-        firstSeenAt: now,
-        lastSeenAt: now,
-        sourceUserId: userId ?? '',
-        sourceEventAt: new Date(createdAt).getTime(),
-        removedAt: null,
-      };
-
-      await upsertSharedSongRecord(record);
-      upsertedCount += 1;
-    } catch (error) {
-      failedCount += 1;
-      console.warn('Failed to process shared song event', { songId, eventName, createdAt, error });
+    }
+  } finally {
+    if (durationProbeClient) {
+      await durationProbeClient.close();
     }
   }
 
@@ -214,6 +262,8 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
         upsertedCount,
         removedCount,
         failedCount,
+        discardedByDurationCount,
+        skippedExistingInLibraryCount,
         maxCreatedAt,
       },
       null,
