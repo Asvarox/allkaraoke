@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:11
 #ALLKARAOKE_SOURCEURL:Gwen Stefani - Baby Don’t Lie
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:203
 #MP3:Gwen Stefani - Baby Don’t Lie.mp3
 : 13 1 -4 We’ve 
 : 15 1 -2 been 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=You%20Give%20Love%20A%20Bad%20Name
 #ALLKARAOKE_VOLUME:0,73
+#ALLKARAOKE_DURATION:231
 : 0 5 7 Shot
 : 6 3 7  through
 : 10 3 7  the

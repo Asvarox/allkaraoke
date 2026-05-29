@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Good Charlotte - I Don’t Want To Be In Love (Dance Floor Anthem)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Good Charlotte - I Don’t Want To Be In Love (Dance Floor Anthem).mp3
 : 17 3 1 She’s 
 : 21 3 3 go

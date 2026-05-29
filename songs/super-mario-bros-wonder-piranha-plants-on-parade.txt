@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Super Mario Bros. Wonder - Piranha Plants On Parade
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:57
 #MP3:Super Mario Bros. Wonder - Piranha Plants On Parade.mp3
 #COVER:Super Mario Bros. Wonder - Piranha Plants On Parade [CO].jpg
 #BACKGROUND:Super Mario Bros. Wonder - Piranha Plants On Parade [BG].jpg

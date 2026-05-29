@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=NbxqtbqyoRk
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:228
 #MP3:Adele - Million Years Ago.mp3
 #COVER:Adele - Million Years Ago.jpg
 #MEDLEYSTARTBEAT:2505

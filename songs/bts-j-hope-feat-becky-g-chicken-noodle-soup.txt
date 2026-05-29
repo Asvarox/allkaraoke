@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=i23NEQEFpgQ
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:269
 #P1:BTS J-Hope (feat. Becky G) - Chicken Noodle Soup
 #MP3:J-Hope feat. Becky G - Chicken Noodle Soup.mp3
 #COVER:J-Hope feat. Becky G - Chicken Noodle Soup.jpg

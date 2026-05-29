@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Fountains Of Wayne - Sink To The Bottom
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:193
 #MP3:Fountains Of Wayne - Sink To The Bottom.mp3
 #COVER:Fountains Of Wayne - Sink To The Bottom [CO].jpg
 #BACKGROUND:Fountains Of Wayne - Sink To The Bottom [BG].jpg

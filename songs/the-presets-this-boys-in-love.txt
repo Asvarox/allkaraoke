@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:36
 #ALLKARAOKE_SOURCEURL:The Presets - This Boy’s In Love
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:251
 #MP3:The Presets - This Boy’s In Love.mp3
 : 16 4 5 I 
 : 24 3 3 sto

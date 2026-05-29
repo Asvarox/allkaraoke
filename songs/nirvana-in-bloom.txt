@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=In%20Bloom
 #ALLKARAOKE_VOLUME:0,61
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:298
 : 27 25 17 Sell 
 : 54 3 10 the 
 : 61 30 13 kids 

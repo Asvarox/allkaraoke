@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=uAVUl0cAKpo
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:227
 #P1:Thumbs - Sabrina Carpenter
 #MP3:Sabrina Carpenter - Thumbs.mp3
 #COVER:Sabrina Carpenter - Thumbs.jpg

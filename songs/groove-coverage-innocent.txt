@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Groove Coverage - Innocent
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:174
 #MP3:Groove Coverage - Innocent.mp3
 : 17 4 8 I 
 : 25 6 4 know 

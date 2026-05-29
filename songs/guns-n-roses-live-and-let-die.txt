@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:Guns N’ Roses - Live And Let Die
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:Guns N’ Roses - Live And Let Die.mp3
 : 20 2 -6 When 
 : 24 3 -2 you 

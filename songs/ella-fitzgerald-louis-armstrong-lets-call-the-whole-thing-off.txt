@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:16
 #ALLKARAOKE_SOURCEURL:Ella Fitzgerald & Louis Armstrong - Let’s Call The Whole Thing Off
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:252
 #MP3:Ella Fitzgerald & Louis Armstrong - Let’s Call The Whole Thing Off.mp3
 : 19 8 26 Things 
 : 28 5 27 have 

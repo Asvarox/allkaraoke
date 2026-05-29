@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:92
 #ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,65
+#ALLKARAOKE_DURATION:266
 #MP3:Lunay, Daddy Yankee, Bad Bunny - Soltera (Remix).mp3
 #COVER:Lunay, Daddy Yankee, Bad Bunny - Soltera (Remix).jpg
 #MEDLEYSTARTBEAT:2811

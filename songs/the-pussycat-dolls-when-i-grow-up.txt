@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls - When I Grow Up
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:The Pussycat Dolls - When I Grow Up.mp3
 : 16 2 7 Boys 
 : 20 2 7 call 

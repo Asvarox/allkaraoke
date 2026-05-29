@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=ariana+grande
 #ALLKARAOKE_VOLUME:0,65
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:242
 : 26 5 8 You
 : 33 10 10 ~
 - 43

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:172
 #P1:Hero - Alan Walker & Sasha Alex Sloan
 #MP3:Alan Walker & Sasha Alex Sloan - Hero.mp3
 #COVER:Alan Walker & Sasha Alex Sloan - Hero [CO].jpg

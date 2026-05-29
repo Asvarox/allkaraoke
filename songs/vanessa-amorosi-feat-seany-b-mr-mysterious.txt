@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:41
 #ALLKARAOKE_SOURCEURL:Vanessa Amorosi feat. Seany B - Mr. Mysterious
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Vanessa Amorosi feat. Seany B - Mr. Mysterious.mp3
 : 16 2 5 Mis
 : 21 2 5 ter 

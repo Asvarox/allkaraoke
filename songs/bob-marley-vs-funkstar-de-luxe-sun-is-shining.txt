@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:-19
 #ALLKARAOKE_SOURCEURL:Bob Marley vs. Funkstar De Luxe - Sun Is Shining
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:221
 #MP3:Bob Marley vs. Funkstar De Luxe - Sun Is Shining.mp3
 F 20 2 14 Itch 
 F 23 2 14 it 

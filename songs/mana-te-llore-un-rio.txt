@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=z4HvWIJp62U
 #ALLKARAOKE_VOLUME:0,92
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:296
 #MP3:Maná - Te lloré un río.mp3
 #COVER:Maná - Te lloré un río [CO].jpg
 #END:295000

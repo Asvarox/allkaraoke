@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3815
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:273
 : 11 2 -1 Za
 : 15 4 6 bio
 : 21 2 4 rę 

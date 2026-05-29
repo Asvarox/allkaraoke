@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:61
 #ALLKARAOKE_SOURCEURL:GhostAffectsGhost - Dropout
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:199
 #MP3:GhostAffectsGhost - Dropout.mp3
 : 27 1 1 I 
 : 32 2 1 take 

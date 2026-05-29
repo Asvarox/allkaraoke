@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Jamiroquai - Deeper Underground
 #ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_DURATION:287
 #MP3:Jamiroquai - Deeper Underground.mp3
 : 28 8 4 Yeah 
 : 40 6 4 you 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Editors&cancion=Munich
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:223
 #MP3:Editors - Munich.mp3
 #COVER:Editors - Munich [CO].jpg
 #START:2

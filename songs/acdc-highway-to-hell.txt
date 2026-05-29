@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell
 #ALLKARAOKE_VOLUME:0,61
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:208
 : 15 1 2 Liv
 : 17 1 4 ~
 : 19 1 7 ~

@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=cher&idioma=en
 #ALLKARAOKE_VOLUME:0,99
+#ALLKARAOKE_DURATION:169
 : 6 1 5 Does
 : 8 4 7 ~ 
 : 14 2 7 he

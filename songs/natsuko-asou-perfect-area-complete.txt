@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:183
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:90
 #MP3:Natsuko Asou - Perfect Area Complete (TV).mp3
 #COVER:Natsuko Asou - Perfect Area Complete (TV).jpg
 : 24 15 0 Hou

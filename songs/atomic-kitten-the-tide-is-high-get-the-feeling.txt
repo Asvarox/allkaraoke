@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Atomic Kitten - The Tide Is High (Get The Feeling)
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:209
 #MP3:Atomic Kitten - The Tide Is High (Get The Feeling).mp3
 : 14 2 7 The 
 : 18 4 12 tide 

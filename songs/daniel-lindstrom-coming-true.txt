@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:18
 #ALLKARAOKE_SOURCEURL:Daniel Lindström - Coming True
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:221
 #MP3:Daniel Lindström - Coming True.mp3
 : 19 3 2 To
 : 23 10 9 night

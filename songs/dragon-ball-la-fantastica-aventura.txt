@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=9Hbd1QeI1Og
 #ALLKARAOKE_VOLUME:0,9
 #ALLKARAOKE_OLDVOLUME:0,86
+#ALLKARAOKE_DURATION:106
 #MP3:Dragon Ball - La fantástica aventura.mp3
 #COVER:Dragon Ball - La fantástica aventura.jpg
 : 18 3 5 Va

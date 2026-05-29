@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_VOLUME:0,63
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:257
 #MP3:Chayanne - Cuidarte el alma.mp3
 #COVER:Chayanne - Cuidarte el alma.jpg
 #BACKGROUND:Chayanne - Cuidarte el alma [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Bad Religion - Generator
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:198
 #MP3:Bad Religion - Generator.mp3
 : 11 6 -3 Like 
 : 19 2 -3 a 

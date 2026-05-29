@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Jukebox the Ghost - Hollywood
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:264
 #MP3:Jukebox the Ghost - Hollywood.mp3
 #COVER:Jukebox the Ghost - Hollywood [CO].jpg
 #BACKGROUND:Jukebox the Ghost - Hollywood [BG].jpg

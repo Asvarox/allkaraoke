@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=24674
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:299
 #MP3:OutKast - Ms. Jackson.mp3
 F 25 4 0 Yeah 
 F 31 2 0 this 

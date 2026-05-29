@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:191
 F 0 8 48 Unos
 F 16 6 48  dos
 F 32 7 48  tres

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:En Vogue - My Lovin’ (You’re Never Gonna Get It)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:250
 #MP3:En Vogue - My Lovin’ (You’re Never Gonna Get It).mp3
 : 26 40 10 Ooh 
 : 72 4 10 bop

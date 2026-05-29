@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Counting Crows feat. Vanessa Carlton - Big Yellow Taxi
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Counting Crows feat. Vanessa Carlton - Big Yellow Taxi.mp3
 : 23 3 -9 They 
 : 31 4 -7 paved 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Michael Jackson - Heal The World
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:383
 #MP3:Michael Jackson - Heal The World.mp3
 : 22 6 4 There’s 
 : 30 2 6 a 

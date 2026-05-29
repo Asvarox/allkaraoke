@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Goldfrapp - Strict Machine
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:221
 #MP3:Goldfrapp - Strict Machine.mp3
 : 17 2 -2 I 
 : 20 3 10 get 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:0,62
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:329
 #MP3:Polimá Westcoast, Pailita, Paloma Mami, Feid, De la Ghetto - Ultra Solo Remix.mp3
 #COVER:Polimá Westcoast, Pailita, Paloma Mami, Feid, De la Ghetto - Ultra Solo Remix.jpg
 #MEDLEYSTARTBEAT:1670

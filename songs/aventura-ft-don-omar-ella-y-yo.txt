@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:176
 #ALLKARAOKE_VOLUME:0,86
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:275
 #MP3:Aventura ft. Don Omar - Ella y yo.mp3
 #COVER:Aventura ft. Don Omar - Ella y yo.jpg
 : 23 4 -3 E

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:31
 #ALLKARAOKE_SOURCEURL:Example - Changed The Way You Kiss Me
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:195
 #MP3:Example - Changed The Way You Kiss Me.mp3
 : 23 3 4 I've 
 : 29 3 4 nev

@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:293
 : 28 3 9 This
 F 32 2 9  is
 F 35 2 9  the

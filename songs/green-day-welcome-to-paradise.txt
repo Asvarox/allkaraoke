@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Green Day - Welcome To Paradise
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:225
 #MP3:Green Day - Welcome To Paradise.mp3
 : 26 4 10 Dear 
 : 35 3 10 Mo

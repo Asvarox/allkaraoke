@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=A%20Dios%20le%20pido
 #ALLKARAOKE_VOLUME:0,57
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:211
 : 26 7 64 Que 
 : 34 7 64 mis 
 : 42 7 64 o

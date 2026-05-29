@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Elvis Presley - Don’t Be Cruel
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:123
 #MP3:Elvis Presley - Don’t Be Cruel.mp3
 : 23 4 9 You
 : 29 2 11 ~

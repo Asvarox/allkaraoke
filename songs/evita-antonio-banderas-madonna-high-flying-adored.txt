@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Evita (Antonio Banderas & Madonna) - High Flying, Adore
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:213
 #MP3:Evita (Antonio Banderas & Madonna) - High Flying, Adored.mp3
 : 17 11 10 High 
 : 35 4 3 fly

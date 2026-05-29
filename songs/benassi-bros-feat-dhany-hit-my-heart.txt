@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Benassi Bros. feat. Dhany - Hit My Heart
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:199
 #MP3:Benassi Bros. feat. Dhany - Hit My Heart.mp3
 : 18 6 16 Hey 
 : 26 9 16 boy

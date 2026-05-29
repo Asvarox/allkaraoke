@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:FFS (Franz Ferdinand & Sparks) - Johnny Delusional
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:203
 #MP3:FFS (Franz Ferdinand & Sparks) - Johnny Delusional.mp3
 : 18 2 5 Words 
 : 22 2 5 are 

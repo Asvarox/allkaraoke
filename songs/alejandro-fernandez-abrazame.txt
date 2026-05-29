@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Alejandro%20Fern%C3%A1ndez&cancion=Abr%C3%A1zame
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,79
+#ALLKARAOKE_DURATION:201
 #P1:Abrazame
 #MP3:Alejandro Fernández - Abrázame.mp3
 #COVER:Alejandro Fernández - Abrázame [CO].jpg

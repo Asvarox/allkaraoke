@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=lAhUScrPC7Y
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:286
 #MP3:Mother Mother - Ghosting.mp3
 : 27 14 3 I’ve 
 : 43 12 11 been 

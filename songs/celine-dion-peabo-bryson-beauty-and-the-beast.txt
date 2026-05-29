@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Disney’s Beauty and the Beast (Céline Dion & Peabo Bryson) - Beauty And The Beast
 #ALLKARAOKE_VOLUME:0,68
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:246
 #MP3:Disney’s Beauty and the Beast (Céline Dion & Peabo Bryson) - Beauty And The Beast.mp3
 : 21 9 -3 Tale 
 : 31 7 0 as 

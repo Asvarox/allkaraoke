@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28801
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,68
+#ALLKARAOKE_DURATION:194
 #MP3:Nemo - The Code (ESC 2024 Switzerland).mp3
 #COVER:Nemo - The Code (ESC 2024 Switzerland) [CO].jpg
 #BACKGROUND:Nemo - The Code (ESC 2024 Switzerland) [BG].jpg

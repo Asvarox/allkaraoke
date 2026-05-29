@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:The Cheeky Girls - Cheeky Song (Touch My Bum)
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,95
+#ALLKARAOKE_DURATION:206
 #MP3:The Cheeky Girls - Cheeky Song (Touch My Bum).mp3
 : 17 2 12 Chee
 : 21 2 12 ky 

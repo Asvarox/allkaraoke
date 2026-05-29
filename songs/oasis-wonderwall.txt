@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Oasis&cancion=Wonderwall
 #ALLKARAOKE_VOLUME:0,79
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:280
 : 23 6 13 To
 : 31 10 11 day
 : 44 2 9  is

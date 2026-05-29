@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:133
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:270
 #MP3:Alex Ubago y Amaia Montero - Sin miedo a nada.mp3
 #COVER:Alex Ubago y Amaia Montero - Sin miedo a nada.jpg
 #MEDLEYSTARTBEAT:1602

@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Pork%20and%20beans
 #ALLKARAOKE_VOLUME:0,68
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:197
 #MP3:Weezer - Pork and beans.mp3
 #COVER:Weezer - Pork and beans.jpg
 : 16 3 -2 They 

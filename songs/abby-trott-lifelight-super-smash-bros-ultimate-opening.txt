@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,99
+#ALLKARAOKE_DURATION:138
 #MP3:Abby Trott - Lifelight (Super Smash Bros Ultimate Opening).mp3
 : 24 9 2 Co
 : 34 7 4 lours 

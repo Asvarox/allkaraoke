@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:The Saturdays - My Heart Takes Over
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:The Saturdays - My Heart Takes Over.mp3
 : 14 3 13 What’s 
 : 19 2 13 it 

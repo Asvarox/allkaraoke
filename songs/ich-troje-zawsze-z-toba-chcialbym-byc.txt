@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11657
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:227
 F 0 3 4  Kaś
 F 4 3 4 ka!
 - 9

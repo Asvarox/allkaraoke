@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra
 #ALLKARAOKE_VOLUME:0,7
 #ALLKARAOKE_OLDVOLUME:0,73
+#ALLKARAOKE_DURATION:187
 #COVER:Electric Light Orchestra - Hold on tight [CO].jpg
 #MP3:Electric Light Orchestra - Hold on tight.mp3
 #MEDLEYSTARTBEAT:576

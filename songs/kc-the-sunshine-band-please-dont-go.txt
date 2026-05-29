@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:10
 #ALLKARAOKE_SOURCEURL:KC & The Sunshine Band - Please Don’t Go
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:224
 #MP3:KC & The Sunshine Band - Please Don’t Go.mp3
 F 20 3 8 I 
 F 24 3 8 love 

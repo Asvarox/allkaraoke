@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://youtu.be/a1Femq4NPxs?si=QcFYg07xyNuKTDfm
 #ALLKARAOKE_VOLUME:0,54
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:179
 #MP3:Bad Bunny & Chencho Corleone - Me porto bonito.mp3
 #COVER:Bad Bunny & Chencho Corleone - Me porto bonito [CO].jpg
 #BACKGROUND:Bad Bunny & Chencho Corleone - Me porto bonito [BG].jpg

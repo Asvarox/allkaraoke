@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Bad Religion - Punk Rock Song
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:149
 #MP3:Bad Religion - Punk Rock Song.mp3
 : 18 2 4 Have 
 : 21 2 3 you 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Elvis Presley - Viva Las Vegas
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:151
 #MP3:Elvis Presley - Viva Las Vegas.mp3
 : 19 7 2 Bright 
 : 27 7 2 light 

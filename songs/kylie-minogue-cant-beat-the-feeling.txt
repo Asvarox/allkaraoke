@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Can’t Beat The Feeling
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:251
 #MP3:Kylie Minogue - Can’t Beat The Feeling.mp3
 : 17 2 9 There 
 : 21 2 9 does

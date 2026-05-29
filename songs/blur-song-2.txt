@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Blur&cancion=Song%202
 #ALLKARAOKE_VOLUME:0,57
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:123
 : 17 1 73 Whoo
 : 18 1 74 ~
 : 20 3 75 ~ 

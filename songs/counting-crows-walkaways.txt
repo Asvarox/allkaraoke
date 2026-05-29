@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:Counting Crows - Walkaways
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:73
 #MP3:Counting Crows - Walkaways.mp3
 #COVER:Counting Crows - Walkaways [CO].jpg
 #BACKGROUND:Counting Crows - Walkaways [BG].jpg

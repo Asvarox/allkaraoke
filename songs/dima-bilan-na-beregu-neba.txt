@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ELxV-1DLTbI&ab_channel=bilanofficial
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:262
 #MP3:Dima Bilan - Na beregu neba.mp3
 : 25 6 2 Vot 
 : 33 2 2 i 

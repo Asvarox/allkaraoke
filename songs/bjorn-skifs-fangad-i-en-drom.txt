@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=26367
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,97
+#ALLKARAOKE_DURATION:207
 #MP3:Björn Skifs - Fångad i en dröm (ESC 1981 Sweden).mp3
 : 17 3 -4 I 
 : 21 2 -2 mitt 

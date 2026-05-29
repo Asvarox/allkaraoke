@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:27
 #ALLKARAOKE_SOURCEURL:Deep Blue Something - Breakfast At Tiffany’s
 #ALLKARAOKE_VOLUME:0,56
+#ALLKARAOKE_DURATION:254
 #MP3:Deep Blue Something - Breakfast At Tiffany’s.mp3
 #END:252500
 : 15 6 9 You’ll 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Haddaway&cancion=What%20is%20love
 #ALLKARAOKE_VOLUME:0,74
 #ALLKARAOKE_OLDVOLUME:0,91
+#ALLKARAOKE_DURATION:231
 : 0 3 2 What
 : 4 2 5  is
 : 7 10 7  love

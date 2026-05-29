@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Owl City feat. Lindsey Stirling - Beautiful Times
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:213
 #MP3:Owl City feat. Lindsey Stirling - Beautiful Times.mp3
 : 18 2 9 A 
 : 22 4 13 spark 

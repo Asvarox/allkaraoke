@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mecano&cancion=Hijo%20de%20la%20luna
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:259
 : 16 2 61 Ton
 : 19 2 63 to el 
 : 22 2 64 que 

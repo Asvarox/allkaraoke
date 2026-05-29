@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Johnny Clegg & Savuka - Dela (I Know Why The Dog Howls At The Moon)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:254
 #MP3:Johnny Clegg & Savuka - Dela (I Know Why The Dog Howls At The Moon).mp3
 : 20 4 6 One 
 : 25 5 6 day 

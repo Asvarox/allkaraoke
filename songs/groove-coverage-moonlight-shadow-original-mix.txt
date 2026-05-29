@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Groove Coverage - Moonlight Shadow (Original Mix)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:175
 #MP3:Groove Coverage - Moonlight Shadow (Original Mix).mp3
 : 19 3 -1 The
 : 23 2 1 ~ 

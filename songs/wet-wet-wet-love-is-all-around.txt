@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://youtu.be/h3gEkwhdXUE
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:255
 #MP3:Wet Wet Wet - Love Is All Around.mp3
 : 23 4 -7 I 
 : 31 6 2 feel 

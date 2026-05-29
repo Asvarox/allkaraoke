@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:26
 #ALLKARAOKE_SOURCEURL:Michael Jackson - The Way You Make Me Feel (Album Version)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:299
 #MP3:Michael Jackson - The Way You Make Me Feel (Album Version).mp3
 : 24 6 21 Hee, 
 : 34 6 17 hee!

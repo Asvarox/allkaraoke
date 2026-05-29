@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:80
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,78
+#ALLKARAOKE_DURATION:223
 #MP3:Disney’s Beauty and the Beast (2017) (Céline Dion) - How Does A Moment Last Forever.mp3
 : 20 7 12 How
 : 28 5 14 ~ 

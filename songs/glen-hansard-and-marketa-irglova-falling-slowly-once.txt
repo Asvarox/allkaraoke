@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:137
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:243
 #P1:Glen Hansard
 #P2:Markéta Irglová
 #MP3:Glen Hansard And Markéta Irglová - Falling Slowly (Once OST) [DUET].mp3

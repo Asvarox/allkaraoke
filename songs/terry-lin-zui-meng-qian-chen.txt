@@ -17,6 +17,7 @@
 #ALLKARAOKE_PREVIEWEND:157
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,92
+#ALLKARAOKE_DURATION:272
 #MP3:Terry Lin - Zuì Mèng Qián Chén.mp3
 #COVER:Terry Lin - Zuì Mèng Qián Chén [CO].jpg
 #BACKGROUND:Terry Lin - Zuì Mèng Qián Chén [BG].jpg

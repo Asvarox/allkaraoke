@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence
 #ALLKARAOKE_VOLUME:0,77
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:263
 : 14 1 -6 Hel
 : 18 4 -6 lo 
 : 26 3 -3 dark

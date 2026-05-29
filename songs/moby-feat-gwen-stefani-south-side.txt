@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Moby feat. Gwen Stefani - South Side
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:229
 #MP3:Moby feat. Gwen Stefani - South Side.mp3
 : 26 3 0 See 
 : 31 3 0 my

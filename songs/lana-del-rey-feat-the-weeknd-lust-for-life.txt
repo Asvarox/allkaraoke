@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_VOLUME:0,51
 #ALLKARAOKE_OLDVOLUME:0,61
+#ALLKARAOKE_DURATION:319
 #MP3:Lana Del Rey feat. The Weeknd - Lust for Life.mp3
 #COVER:Lana Del Rey feat. The Weeknd - Lust for Life.jpg
 #MEDLEYENDBEAT:2486

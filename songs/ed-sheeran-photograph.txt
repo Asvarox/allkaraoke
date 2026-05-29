@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:108
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Photograph
 #ALLKARAOKE_VOLUME:0,65
+#ALLKARAOKE_DURATION:275
 : 14 1 8 Lov
 : 17 1 8 ing 
 : 21 1 6 can 

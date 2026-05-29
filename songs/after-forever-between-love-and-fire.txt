@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:After Forever - Between Love And Fire
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:297
 #MP3:After Forever - Between Love And Fire.mp3
 : 17 27 11 Here 
 : 45 7 6 I 

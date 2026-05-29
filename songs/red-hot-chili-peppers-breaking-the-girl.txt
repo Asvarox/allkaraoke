@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12299
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:277
 #P1:Breaking The Girl
 #MP3:Red Hot Chili Peppers - Breaking The Girl.mp3
 : 25 30 -4 I 

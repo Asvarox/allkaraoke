@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=37zAeB_x2EM
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,74
+#ALLKARAOKE_DURATION:253
 #MP3:Nickelback - Too Bad.mp3
 : 17 3 14 Fa
 : 21 3 14 ther’s 

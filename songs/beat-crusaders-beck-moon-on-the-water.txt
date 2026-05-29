@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:34
 #ALLKARAOKE_SOURCEURL:Beat Crusaders (Beck) - Moon On The Water
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:296
 #MP3:Beat Crusaders (Beck) - Moon On The Water.mp3
 : 19 30 11 Full 
 : 51 26 13 moon 

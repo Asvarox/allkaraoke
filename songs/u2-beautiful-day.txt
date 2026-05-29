@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Beautiful%20Day
 #ALLKARAOKE_VOLUME:0,6
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:244
 : 0 4 45 The
 : 4 2 52  heart
 : 8 4 52  is

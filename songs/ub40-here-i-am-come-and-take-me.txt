@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:UB40 - Here I Am (Come And Take Me)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:UB40 - Here I Am (Come And Take Me).mp3
 #COVER:UB40 - Here I Am (Come And Take Me) [CO].jpg
 #BACKGROUND:UB40 - Here I Am (Come And Take Me) [BG].jpg

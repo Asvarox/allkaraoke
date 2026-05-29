@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Californication
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,76
+#ALLKARAOKE_DURATION:322
 : 26 4 2 Psy
 : 34 2 2 chic 
 : 41 6 4 spies 

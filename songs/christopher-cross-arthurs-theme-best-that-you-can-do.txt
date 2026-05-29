@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Christopher Cross - Arthur’s Theme (Best That You Can Do)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:Christopher Cross - Arthur’s Theme (Best That You Can Do).mp3
 #COVER:Christopher Cross - Arthur’s Theme (Best That You Can Do) [CO].jpg
 #BACKGROUND:Christopher Cross - Arthur’s Theme (Best That You Can Do) [BG].jpg

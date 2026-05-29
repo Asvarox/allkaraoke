@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:7
 #ALLKARAOKE_SOURCEURL:Calvin Harris & Sam Smith - Promises
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:246
 #MP3:Calvin Harris & Sam Smith - Promises.mp3
 : 16 1 -2 Are 
 : 18 1 -2 you 

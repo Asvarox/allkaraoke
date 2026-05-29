@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Spinning Around
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:212
 #MP3:Kylie Minogue - Spinning Around.mp3
 * 16 4 21 Ooh 
 * 22 5 20 ~ 

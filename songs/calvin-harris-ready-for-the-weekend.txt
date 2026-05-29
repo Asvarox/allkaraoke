@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Calvin Harris - Ready For The Weekend
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:226
 #MP3:Calvin Harris - Ready For The Weekend.mp3
 : 18 2 4 Coun
 : 22 2 4 ter

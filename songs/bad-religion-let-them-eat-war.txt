@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Bad Religion - Let Them Eat War
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:178
 #MP3:Bad Religion - Let Them Eat War.mp3
 : 14 3 14 There’s 
 : 18 1 14 a 

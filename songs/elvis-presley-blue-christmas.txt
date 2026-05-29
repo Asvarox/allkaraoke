@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Elvis%20Presley&cancion=Blue%20Christmas
 #ALLKARAOKE_VOLUME:0,85
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:128
 : 3 2 -4 I'll
 : 6 4 -1 ~
 : 12 2 -1 ~ 

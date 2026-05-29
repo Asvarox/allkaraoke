@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Dusty Springfield - Son-Of-A Preacher Man
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:150
 #MP3:Dusty Springfield - Son-Of-A Preacher Man.mp3
 : 23 2 16 Bil
 : 27 2 16 ly 

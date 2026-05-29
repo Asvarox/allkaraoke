@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12870
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:220
 #MP3:Cliff Richard - Devil Woman.mp3
 : 15 3 15 I’ve 
 : 19 2 16 had 

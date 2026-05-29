@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=2283
 #ALLKARAOKE_VOLUME:0,95
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:213
 #MP3:Bowling For Soup - 1985.mp3
 : 0 2 18 Woo
 : 4 2 20 hoo

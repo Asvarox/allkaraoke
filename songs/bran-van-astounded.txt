@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:6
 #ALLKARAOKE_SOURCEURL:Bran Van 3000 feat. Curtis Mayfield - Astounded
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:357
 #MP3:Bran Van 3000 feat. Curtis Mayfield - Astounded.mp3
 F 20 3 -3 Ooh 
 F 24 8 -1 ooh 

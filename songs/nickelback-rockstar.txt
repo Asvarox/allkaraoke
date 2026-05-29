@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Rockstar
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:255
 : 27 4 11 I'm 
 : 33 4 9 through 
 : 38 2 7 with 

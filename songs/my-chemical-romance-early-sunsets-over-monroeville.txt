@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:101
 #ALLKARAOKE_VOLUME:0,84
 #ALLKARAOKE_OLDVOLUME:0,82
+#ALLKARAOKE_DURATION:306
 #P1:Early Sunsets Over Monroeville
 #MP3:My Chemical Romance - Early Sunsets Over Monroeville.mp3
 * 24 4 2 Late 

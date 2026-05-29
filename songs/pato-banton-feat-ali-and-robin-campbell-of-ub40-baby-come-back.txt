@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Pato Banton feat. Ali and Robin Campbell of UB40 - Baby Come Back
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:231
 #MP3:Pato Banton feat. Ali and Robin Campbell of UB40 - Baby Come Back.mp3
 : 17 4 5 Come 
 : 25 4 4 back

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:George Michael - A Different Corner
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:273
 #MP3:George Michael - A Different Corner.mp3
 : 13 3 11 I’d 
 : 17 3 12 say 

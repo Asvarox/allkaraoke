@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=X%20Japan&cancion=Forever%20Love
 #ALLKARAOKE_VOLUME:0,86
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:282
 #MP3:X Japan - Forever Love.mp3
 #COVER:X Japan - Forever Love [CO].jpg
 : 25 16 2 Mou 

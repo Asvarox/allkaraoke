@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Sarah Connor - Skin On Skin
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:245
 #MP3:Sarah Connor - Skin On Skin.mp3
 : 18 3 -2 Just 
 : 22 3 -2 a 

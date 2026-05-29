@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Four Tops - I Can’t Help Myself (Sugar Pie Honey Bunch)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:161
 #MP3:Four Tops - I Can’t Help Myself (Sugar Pie Honey Bunch).mp3
 : 17 7 9 Ooh
 : 25 1 8 ~

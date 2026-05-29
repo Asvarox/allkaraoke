@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:46
 #ALLKARAOKE_SOURCEURL:Jennifer Lopez feat. Ja Rule - I’m Real
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:246
 #MP3:Jennifer Lopez feat. Ja Rule - I’m Real.mp3
 #START:2.0
 F 22 4 2 What’s 

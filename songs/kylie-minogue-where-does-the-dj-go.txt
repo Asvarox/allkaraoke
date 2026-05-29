@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:29
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Where Does The DJ Go?
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:182
 #MP3:Kylie Minogue - Where Does The DJ Go?.mp3
 : 18 2 2 Look
 : 22 2 2 ing 

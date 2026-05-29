@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:98
 #ALLKARAOKE_VOLUME:0,93
 #ALLKARAOKE_OLDVOLUME:0,9
+#ALLKARAOKE_DURATION:113
 #COVER:Maximum the Hormone - What's up, people! (TV).jpg
 #MP3:Maximum the Hormone - What's up, people! (TV).mp3
 #MEDLEYSTARTBEAT:389

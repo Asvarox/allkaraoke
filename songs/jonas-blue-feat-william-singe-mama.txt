@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Jonas Blue feat. William Singe - Mama
 #ALLKARAOKE_VOLUME:0,52
+#ALLKARAOKE_DURATION:184
 #MP3:Jonas Blue feat. William Singe - Mama.mp3
 : 14 2 6 Where 
 : 18 1 6 should 

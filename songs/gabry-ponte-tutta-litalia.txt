@@ -19,6 +19,7 @@
 #ALLKARAOKE_PREVIEWEND:99
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:180
 #MP3:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino).mp3
 #COVER:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino) [CO].jpg
 #BACKGROUND:Gabry Ponte - Tutta l’Italia (ESC 2025 San Marino) [BG].jpg

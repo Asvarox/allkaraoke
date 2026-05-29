@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:22
 #ALLKARAOKE_SOURCEURL:Good Charlotte - The Anthem
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:174
 #MP3:Good Charlotte - The Anthem.mp3
 : 24 2 17 It’s 
 : 28 2 17 a 

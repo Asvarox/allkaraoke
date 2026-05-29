@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:35
 #ALLKARAOKE_SOURCEURL:Daryl Braithwaite - One Summer
 #ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_DURATION:205
 #MP3:Daryl Braithwaite - One Summer.mp3
 : 22 2 17 Start
 : 26 2 20 ed 

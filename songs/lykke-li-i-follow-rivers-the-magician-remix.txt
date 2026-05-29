@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:usdb.animux.de
 #ALLKARAOKE_VOLUME:0,72
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:283
 #MP3:Lykke Li - I Follow Rivers (The Magician Remix).m4a
 #COVER:Lykke Li - I Follow Rivers (The Magician Remix) [CO].jpg
 #BACKGROUND:Lykke Li - I Follow Rivers (The Magician Remix) [BG].jpg

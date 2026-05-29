@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:51
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:184
 #P1:Nothing Matters
 #MP3:The Last Dinner Party - Nothing Matters.mp3
 #COVER:The Last Dinner Party - Nothing Matters [CO].jpg

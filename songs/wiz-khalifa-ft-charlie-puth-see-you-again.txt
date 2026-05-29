@@ -11,6 +11,7 @@
 #ALLKARAOKE_REALBPM:80
 #ALLKARAOKE_VOLUME:0,58
 #ALLKARAOKE_OLDVOLUME:0,71
+#ALLKARAOKE_DURATION:238
 #MP3:Wiz Khalifa ft. Charlie Puth - See you again.mp3
 #COVER:Wiz Khalifa ft. Charlie Puth - See you again [CO].jpg
 #MEDLEYSTARTBEAT:1344

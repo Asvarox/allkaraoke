@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=rihanna&idioma=en
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:252
 : 17 3 13 La, 
 : 21 3 11 la, 
 : 29 3 9 la,

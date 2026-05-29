@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity
 #ALLKARAOKE_VOLUME:0,67
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:225
 : 26 6 14 Con
 : 33 6 14 ver
 : 40 5 12 ~

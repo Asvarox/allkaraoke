@@ -14,6 +14,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=RvuVFHTvdaY
 #ALLKARAOKE_VOLUME:0,84
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:258
 #MP3:No Doubt feat. Lady Saw - Underneath It All.mp3
 : 18 3 1 There’s 
 : 26 4 4 times 

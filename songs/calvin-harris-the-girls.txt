@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:12
 #ALLKARAOKE_SOURCEURL:Calvin Harris - The Girls
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:235
 #MP3:Calvin Harris - The Girls.mp3
 #COVER:Calvin Harris - The Girls [CO].jpg
 #BACKGROUND:Calvin Harris - The Girls [BG].jpg

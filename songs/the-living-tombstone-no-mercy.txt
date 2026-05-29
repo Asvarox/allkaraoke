@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://docs.google.com/document/d/1MUYMbLcruufjdnJS0bxhhids8vM5DpCbl8zAYyUiYEY/edit?pli=1
 #ALLKARAOKE_VOLUME:0,58
 #ALLKARAOKE_OLDVOLUME:0,87
+#ALLKARAOKE_DURATION:171
 #P1:No Mercy
 #MP3:The Living Tombstone - No Mercy.mp3
 #COVER:The Living Tombstone - No Mercy - Cover.jpg

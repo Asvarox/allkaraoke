@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:172
 #MP3:Roxy Dekker - Anne-Fleur Vakantie.mp3
 #COVER:Roxy Dekker - Anne-Fleur Vakantie [CO].jpg
 #BACKGROUND:Roxy Dekker - Anne-Fleur Vakantie [BG].jpg

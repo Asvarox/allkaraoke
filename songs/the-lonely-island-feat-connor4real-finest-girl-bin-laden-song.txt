@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_VOLUME:0,9
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:164
 #MP3:The Lonely Island feat. Connor4real - Finest Girl (Bin Laden Song).mp3
 : 26 3 5 Fin
 : 30 2 5 est 

@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:92
 #ALLKARAOKE_VOLUME:0,62
 #ALLKARAOKE_OLDVOLUME:0,7
+#ALLKARAOKE_DURATION:231
 #MP3:Charlie Puth & Selena Gomez - We don't talk anymore.mp3
 #COVER:Charlie Puth & Selena Gomez - We don't talk anymore.jpg
 #END:220012

@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=25541
 #ALLKARAOKE_VOLUME:0,84
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:229
 #MP3:Bring Me The Horizon feat. Nova Twins - 1x1.mp3
 #START:19.0
 : 22 7 4 Dis

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Foo Fighters - Stranger Things Have Happened
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:322
 #MP3:Foo Fighters - Stranger Things Have Happened.mp3
 #COVER:Foo Fighters - Stranger Things Have Happened [CO].jpg
 #BACKGROUND:Foo Fighters - Stranger Things Have Happened [BG].jpg

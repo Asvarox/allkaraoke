@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep
 #ALLKARAOKE_VOLUME:0,71
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:237
 : 23 2 57 When 
 : 26 3 57 you 
 : 30 3 54 were 

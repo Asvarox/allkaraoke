@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:Calvin Harris - Flashback
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:233
 #MP3:Calvin Harris - Flashback.mp3
 : 17 2 0 I’m 
 : 21 2 0 com

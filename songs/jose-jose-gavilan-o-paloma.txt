@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:126
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,89
+#ALLKARAOKE_DURATION:236
 #MP3:José José - Gavilán o paloma.mp3
 #COVER:José José - Gavilán o paloma.jpg
 : 16 3 7 No 

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:40
 #ALLKARAOKE_SOURCEURL:Benassi Bros. feat. Dhany - Every Single Day
 #ALLKARAOKE_VOLUME:0,76
+#ALLKARAOKE_DURATION:213
 #MP3:Benassi Bros. feat. Dhany - Every Single Day.mp3
 #COVER:Benassi Bros. feat. Dhany - Every Single Day [CO].jpg
 #BACKGROUND:Benassi Bros. feat. Dhany - Every Single Day [BG].jpg

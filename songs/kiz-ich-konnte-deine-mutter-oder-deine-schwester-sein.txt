@@ -15,6 +15,7 @@
 #ALLKARAOKE_PREVIEWEND:132
 #ALLKARAOKE_VOLUME:0,56
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:268
 #MP3:K.I.Z - Ich könnte deine Mutter oder deine Schwester sein.mp3
 : 18 2 23 Geld
 : 21 6 22 schei

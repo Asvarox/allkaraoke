@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4-43lLKaqBQ
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,93
+#ALLKARAOKE_DURATION:249
 #MP3:The Animals - The House of the Rising Sun.mp3
 #COVER:The Animals - The House of the Rising Sun.jpg
 #MEDLEYSTARTBEAT:3143

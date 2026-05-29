@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=lizzo
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:201
 : 16 1 7 Mir
 : 19 1 9 ror, 
 : 24 1 7 mir

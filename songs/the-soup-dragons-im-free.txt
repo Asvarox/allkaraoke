@@ -13,6 +13,7 @@
 #ALLKARAOKE_SOURCEURL:The Soup Dragons - I’m Free
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,79
+#ALLKARAOKE_DURATION:232
 #MP3:The Soup Dragons - I’m Free.mp3
 #COVER:The Soup Dragons - I’m Free [CO].jpg
 #BACKGROUND:The Soup Dragons - I’m Free [BG].jpg

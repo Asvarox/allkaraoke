@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Girls Aloud - The Loving Kind
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:238
 #MP3:Girls Aloud - The Loving Kind.mp3
 : 20 12 0 Some
 : 34 20 1 times 

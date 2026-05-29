@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:Destiny’s Child - 8 Days Of Christmas
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:211
 #MP3:Destiny’s Child - 8 Days Of Christmas.mp3
 : 27 2 -5 On 
 : 31 2 -3 the 

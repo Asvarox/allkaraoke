@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:103
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Crawling
 #ALLKARAOKE_VOLUME:0,58
+#ALLKARAOKE_DURATION:217
 - -13 1
 - 1
 : 14 12 20 Crawl

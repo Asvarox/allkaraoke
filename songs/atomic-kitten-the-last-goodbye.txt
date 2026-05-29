@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:70
 #ALLKARAOKE_SOURCEURL:Atomic Kitten - The Last Goodbye
 #ALLKARAOKE_VOLUME:0,81
+#ALLKARAOKE_DURATION:189
 #MP3:Atomic Kitten - The Last Goodbye.mp3
 : 22 3 3 Ain’t 
 : 26 3 3 no 

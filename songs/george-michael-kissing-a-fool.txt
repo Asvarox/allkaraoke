@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:19
 #ALLKARAOKE_SOURCEURL:George Michael - Kissing A Fool
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:274
 #MP3:George Michael - Kissing A Fool.mp3
 : 16 2 10 You 
 : 20 2 12 are 

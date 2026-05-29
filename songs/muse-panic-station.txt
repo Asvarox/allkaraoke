@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Panic%20Station
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:298
 : 0 6 4 You
 : 8 6 2  won't
 : 16 6 4  get

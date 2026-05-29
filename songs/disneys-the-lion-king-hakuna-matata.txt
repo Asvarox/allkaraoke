@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:85
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18284
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:230
 #P1:Timon
 #P2:Pumba & Simba
 F 17 3 -24 Ha

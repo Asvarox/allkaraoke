@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:32
 #ALLKARAOKE_SOURCEURL:Kid Cudi feat. MGMT & Ratatat - Pursuit Of Happiness
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:284
 #MP3:Kid Cudi feat. MGMT & Ratatat - Pursuit Of Happiness.mp3
 : 18 2 -12 Crush 
 * 22 2 -12 a 

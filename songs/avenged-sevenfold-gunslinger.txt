@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=13120
 #ALLKARAOKE_VOLUME:0,82
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:273
 #MP3:Avenged Sevenfold - Gunslinger.mp3
 : 22 44 5 Yeah, 
 : 69 5 2 you’ve 

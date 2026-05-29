@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:78
 #ALLKARAOKE_SOURCEURL:Girls Aloud - I Think We’re Alone Now
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:219
 #MP3:Girls Aloud - I Think We’re Alone Now.mp3
 : 18 2 5 Chil
 : 24 2 5 dren 

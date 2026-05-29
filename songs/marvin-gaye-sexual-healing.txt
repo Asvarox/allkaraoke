@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=rjlSiASsUIs
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,75
+#ALLKARAOKE_DURATION:246
 #MP3:Marvin Gaye - Sexual Healing.mp3
 F 25 2 10 Get 
 F 29 4 10 up, 

@@ -16,6 +16,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me
 #ALLKARAOKE_VOLUME:0,62
 #ALLKARAOKE_OLDVOLUME:0,77
+#ALLKARAOKE_DURATION:244
 : 22 11 62 Talk
 : 34 7 62 ing 
 : 42 3 61 a

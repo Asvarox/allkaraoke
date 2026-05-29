@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Calvin Harris feat. Kehlani & Lil Yachty - Faking It
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:231
 #MP3:Calvin Harris feat. Kehlani & Lil Yachty - Faking It.mp3
 : 16 1 0 Pray
 : 17 1 2 ~

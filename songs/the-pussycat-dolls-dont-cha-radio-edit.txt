@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:25
 #ALLKARAOKE_SOURCEURL:The Pussycat Dolls - Don’t Cha (Radio Edit)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:The Pussycat Dolls - Don’t Cha (Radio Edit).mp3
 F 16 8 0 Ha
 - 24 33

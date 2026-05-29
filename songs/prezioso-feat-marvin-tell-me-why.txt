@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:14
 #ALLKARAOKE_SOURCEURL:Prezioso feat. Marvin - Tell Me Why
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:194
 #MP3:Prezioso feat. Marvin - Tell Me Why.mp3
 : 3 5 0 Tell 
 : 11 3 2 me

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Ace of Base - Don’t Turn Around
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:231
 #MP3:Ace of Base - Don’t Turn Around.mp3
 F 32 4 11 I 
 F 38 6 11 will 

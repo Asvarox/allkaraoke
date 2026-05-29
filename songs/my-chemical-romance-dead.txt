@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9501
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:196
 #MP3:My Chemical Romance - Dead!.mp3
 * 27 27 23 YEAH!
 - 54 299

@@ -16,6 +16,7 @@
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:176
 : 20 2 -1 How 
 : 24 3 1 dare 
 : 28 1 1 you 

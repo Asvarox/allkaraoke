@@ -11,6 +11,7 @@
 #ALLKARAOKE_REALBPM:84
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,85
+#ALLKARAOKE_DURATION:279
 #P1:Shape of my Heart
 #MP3:Sting - Shape of My Heart.mp3
 #COVER:Sting - Shape of My Heart [CO].jpg

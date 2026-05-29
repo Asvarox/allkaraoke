@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:Yazz And The Plastic Population - The Only Way Is Up
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,5
+#ALLKARAOKE_DURATION:243
 #MP3:Yazz And The Plastic Population - The Only Way Is Up.mp3
 : 17 77 23 Oh 
 : 95 1 20 yeah

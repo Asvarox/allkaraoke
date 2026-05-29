@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Gym Class Heroes feat. Neon Hitch - Ass Back Home
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:241
 #MP3:Gym Class Heroes feat. Neon Hitch - Ass Back Home.mp3
 F 17 16 0 Oh, 
 F 51 3 0 so 

@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Owl City - Alligator Sky (Album Version)
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:196
 #MP3:Owl City - Alligator Sky (Album Version).mp3
 : 27 4 11 Where 
 : 34 6 13 was 

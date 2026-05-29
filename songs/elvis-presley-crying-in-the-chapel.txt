@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:21
 #ALLKARAOKE_SOURCEURL:Elvis Presley - Crying In The Chapel
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:144
 #MP3:Elvis Presley - Crying In The Chapel.mp3
 : 10 3 12 You 
 : 14 11 14 saw 

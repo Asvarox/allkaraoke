@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1097
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:1
+#ALLKARAOKE_DURATION:478
 #MP3:Led Zeppelin - Stairway To Heaven.mp3
 : 17 7 -3 There’s 
 : 25 3 -1 a 

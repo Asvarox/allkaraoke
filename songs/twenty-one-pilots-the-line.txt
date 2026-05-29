@@ -17,6 +17,7 @@
 #ALLKARAOKE_PREVIEWEND:110
 #ALLKARAOKE_VOLUME:0,58
 #ALLKARAOKE_OLDVOLUME:0,8
+#ALLKARAOKE_DURATION:235
 #MP3:twenty øne piløts - The Line.mp3
 #COVER:twenty øne piløts - The Line [CO].jpg
 #BACKGROUND:twenty øne piløts - The Line [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Atomic Kitten - Right Now
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:218
 #MP3:Atomic Kitten - Right Now.mp3
 #COVER:Atomic Kitten - Right Now [CO].jpg
 #BACKGROUND:Atomic Kitten - Right Now [BG].jpg

@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Pitbull feat. Christina Aguilera - Feel This Moment
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:230
 #MP3:Pitbull feat. Christina Aguilera - Feel This Moment.mp3
 R 18 3 4 Ask 
 R 22 3 4 for 

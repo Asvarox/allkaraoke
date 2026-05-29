@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Westlife - Queen Of My Heart
 #ALLKARAOKE_VOLUME:0,68
+#ALLKARAOKE_DURATION:260
 #MP3:Westlife - Queen Of My Heart.mp3
 : 18 6 3 So 
 : 28 6 1 here 

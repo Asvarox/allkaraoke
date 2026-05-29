@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:15
 #ALLKARAOKE_SOURCEURL:Little Mix feat. Missy Elliott - How Ya Doin’?
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:214
 #MP3:Little Mix feat. Missy Elliott - How Ya Doin’?.mp3
 : 13 8 5 Hey, 
 : 23 2 5 how 

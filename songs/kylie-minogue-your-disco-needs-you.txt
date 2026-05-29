@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:24
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Your Disco Needs You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:227
 #MP3:Kylie Minogue - Your Disco Needs You.mp3
 : 17 5 4 Your 
 : 23 5 4 dis

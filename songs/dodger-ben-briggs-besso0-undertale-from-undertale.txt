@@ -18,6 +18,7 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27615
 #ALLKARAOKE_PREVIEWEND:150
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:201
 #MP3:Dodger, Ben Briggs & Besso0 - Undertale (from Undertale).mp3
 #COVER:Dodger, Ben Briggs & Besso0 - Undertale (from Undertale) [CO].jpg
 #BACKGROUND:Dodger, Ben Briggs & Besso0 - Undertale (from Undertale) [BG].jpg

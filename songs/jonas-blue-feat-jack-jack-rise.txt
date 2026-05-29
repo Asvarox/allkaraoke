@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:28
 #ALLKARAOKE_SOURCEURL:Jonas Blue feat. Jack & Jack - Rise
 #ALLKARAOKE_VOLUME:0,51
+#ALLKARAOKE_DURATION:219
 #MP3:Jonas Blue feat. Jack & Jack - Rise.mp3
 : 14 1 1 We’re 
 : 16 1 1 gon

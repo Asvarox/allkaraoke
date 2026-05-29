@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:23
 #ALLKARAOKE_SOURCEURL:UB40 - (I Can’t Help) Falling In Love With You
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:216
 #MP3:UB40 - (I Can’t Help) Falling In Love With You.mp3
 : 17 16 2 Wise 
 : 41 20 9 men 

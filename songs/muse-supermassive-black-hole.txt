@@ -15,6 +15,7 @@
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Supermassive%20Black%20Hole
 #ALLKARAOKE_VOLUME:0,75
+#ALLKARAOKE_DURATION:211
 : 16 3 11 Oh,
 : 20 3 9 ~ 
 : 24 2 9 ba

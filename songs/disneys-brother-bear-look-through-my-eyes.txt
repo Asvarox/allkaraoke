@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:158
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:241
 #MP3:Disney’s Brother Bear (Phil Collins) - Look Through My Eyes.mp3
 : 21 4 14 There 
 : 29 4 16 are 

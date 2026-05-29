@@ -17,6 +17,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Hysteria
 #ALLKARAOKE_VOLUME:0,79
 #ALLKARAOKE_OLDVOLUME:0,81
+#ALLKARAOKE_DURATION:249
 : 0 2 11 It's
 : 9 6 12  bug
 * 17 6 9 ~

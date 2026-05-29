@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=no+title
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,69
+#ALLKARAOKE_DURATION:247
 #P1:No Title
 #MP3:Reol - No title.mp3
 #COVER:Reol - No title.jpg

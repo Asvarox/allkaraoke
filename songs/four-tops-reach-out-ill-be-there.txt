@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:17
 #ALLKARAOKE_SOURCEURL:Four Tops - Reach Out I’ll Be There
 #ALLKARAOKE_VOLUME:0,87
+#ALLKARAOKE_DURATION:174
 #MP3:Four Tops - Reach Out I’ll Be There.mp3
 #COVER:Four Tops - Reach Out I’ll Be There [CO].jpg
 #BACKGROUND:Four Tops - Reach Out I’ll Be There [BG].jpg

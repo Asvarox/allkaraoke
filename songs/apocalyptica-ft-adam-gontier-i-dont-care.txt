@@ -12,6 +12,7 @@
 #ALLKARAOKE_REALBPM:179
 #ALLKARAOKE_VOLUME:0,5
 #ALLKARAOKE_OLDVOLUME:0,94
+#ALLKARAOKE_DURATION:220
 #MP3:Apocalyptica ft. Adam Gontier - I Don't Care.mp3
 #COVER:Apocalyptica ft. Adam Gontier - I Don't Care.jpg
 : 20 3 -11 I 

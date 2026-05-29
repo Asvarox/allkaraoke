@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:152
 #ALLKARAOKE_VOLUME:0,58
 #ALLKARAOKE_OLDVOLUME:0,72
+#ALLKARAOKE_DURATION:302
 #P1:E.T.
 #MP3:Katy Perry feat. Kanye West - E.T. (Remix).mp3
 #COVER:Katy Perry feat. Kanye West - E.T. (Remix) [CO].jpg

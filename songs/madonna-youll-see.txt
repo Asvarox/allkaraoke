@@ -15,6 +15,7 @@
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=zyFzpBAZICc
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_OLDVOLUME:0,83
+#ALLKARAOKE_DURATION:260
 #MP3:Madonna - You’ll See.mp3
 : 16 3 -1 You 
 : 20 8 4 think 

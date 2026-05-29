@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:20
 #ALLKARAOKE_SOURCEURL:Fall Out Boy - Our Lawyer Made Us The Name Of This Song So We Wouldn’t Get Sued
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:189
 #MP3:Fall Out Boy - Our Lawyer Made Us The Name Of This Song So We Wouldn’t Get Sued.mp3
 : 15 3 19 Broth
 : 19 3 21 ers 

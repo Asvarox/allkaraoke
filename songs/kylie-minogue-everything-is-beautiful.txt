@@ -13,6 +13,7 @@
 #ALLKARAOKE_REALBPM:33
 #ALLKARAOKE_SOURCEURL:Kylie Minogue - Everything Is Beautiful
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:206
 #MP3:Kylie Minogue - Everything Is Beautiful.mp3
 : 3 2 2 Beaut
 : 7 2 4 i

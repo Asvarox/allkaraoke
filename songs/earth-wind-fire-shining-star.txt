@@ -14,6 +14,7 @@
 #ALLKARAOKE_REALBPM:30
 #ALLKARAOKE_SOURCEURL:Earth, Wind & Fire - Shining Star
 #ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:172
 #MP3:Earth, Wind & Fire - Shining Star.mp3
 : 27 3 25 Yeah
 : 31 14 28 ~
