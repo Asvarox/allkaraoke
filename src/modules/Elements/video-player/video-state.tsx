@@ -1,8 +1,0 @@
-export enum VideoState {
-  UNSTARTED = 'UNSTARTED',
-  ENDED = 'ENDED',
-  PLAYING = 'PLAYING',
-  PAUSED = 'PAUSED',
-  BUFFERING = 'BUFFERING',
-  CUED = 'CUED',
-}
