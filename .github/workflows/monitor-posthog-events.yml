@@ -16,7 +16,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: Run script
-        run: node scripts/monitorPosthogEvents.mjs
+        run: node scripts/monitor-posthog-events.mjs
       - name: 'Decrease attempts count'
         uses: actions/github-script@v8
         with:

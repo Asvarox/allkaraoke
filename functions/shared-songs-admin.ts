@@ -1,4 +1,4 @@
-import { removeSharedSong, SharedSongRecord, upsertSharedSong } from './sharedSongsStore';
+import { removeSharedSong, SharedSongRecord, upsertSharedSong } from './shared-songs-store';
 
 interface Env {
   SHARED_SONGS_ADMIN_TOKEN?: string;

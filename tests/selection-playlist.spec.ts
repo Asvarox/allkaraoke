@@ -1,15 +1,15 @@
 import { expect, test } from '@playwright/test';
 
-import initialise from './PageObjects/initialise';
 import { txtfile } from './fixtures/newsongselectiontxt';
 import { initTestMode, mockRandom, mockSongs } from './helpers';
+import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
   pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
-  await page.route('/mostPopularSongs.json', (route) =>
+  await page.route('/most-popular-songs.json', (route) =>
     route.fulfill({
       status: 200,
       body: JSON.stringify({

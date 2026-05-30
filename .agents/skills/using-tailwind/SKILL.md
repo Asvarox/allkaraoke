@@ -33,9 +33,9 @@ const Card = twc.div((props: { 'data-focused'?: boolean }) => [
 
 ## AKUI Primitives
 
-Prefer components from `src/modules/Elements/AKUI/` over raw HTML + classes:
+Prefer components from `src/modules/elements/AKUI/` over raw HTML + classes:
 
-- **`Typography`** (`~/modules/Elements/AKUI/Primitives/Typography`) — for any text. Accepts `as` for element type (`h1`, `h2`, `p`, `div`…). Adds the `typography` CSS class automatically. Supports `active` prop for accent colour.
-- **`Box`** (`~/modules/Elements/AKUI/Primitives/Box`) — polymorphic container with `flex flex-col items-center justify-center rounded-md bg-black/50`. Override with `className`. Not suitable where those defaults are unwanted.
+- **`Typography`** (`~/modules/elements/AKUI/Primitives/Typography`) — for any text. Accepts `as` for element type (`h1`, `h2`, `p`, `div`…). Adds the `typography` CSS class automatically. Supports `active` prop for accent colour.
+- **`Box`** (`~/modules/elements/AKUI/Primitives/Box`) — polymorphic container with `flex flex-col items-center justify-center rounded-md bg-black/50`. Override with `className`. Not suitable where those defaults are unwanted.
 - **`Menu` / `Menu.Button` / `Menu.Header`** — for menu screens (main menu, settings).
 - Use `twc(Typography)` or `twc(Box)` to create reusable AKUI-based TWC variants.

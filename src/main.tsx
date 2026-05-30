@@ -1,9 +1,9 @@
-import '~/modules/GameEvents/eventListeners';
-import '~/modules/RemoteMic/eventListeners';
-import '~/modules/Stats';
+import '~/modules/game-events/event-listeners';
+import '~/modules/remote-mic/event-listeners';
+import '~/modules/stats/index';
 import '~/modules/utils/array-at-polyfill';
-import '~/modules/utils/array-findLastIndex-polyfill';
-import '~/modules/utils/exposeSingletons';
+import '~/modules/utils/array-find-last-index-polyfill';
+import '~/modules/utils/expose-singletons';
 import '~/modules/utils/wdyr';
 
 import createCache from '@emotion/cache';
@@ -20,17 +20,17 @@ import posthog from 'posthog-js';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { v4 } from 'uuid';
-import App from '~/App';
+import App from '~/app';
 import '~/index.css';
-import NoPrerender from '~/modules/Elements/NoPrerender';
-import { normalizeSting } from '~/modules/Songs/utils/getSongId';
-import isDev from '~/modules/utils/isDev';
-import isE2E from '~/modules/utils/isE2E';
-import isPreRendering from '~/modules/utils/isPreRendering';
-import { randomInt } from '~/modules/utils/randomValue';
-import sentryIgnoreErrors from '~/modules/utils/sentryIgnoreErrors';
+import NoPrerender from '~/modules/elements/no-prerender';
+import { normalizeSting } from '~/modules/songs/utils/get-song-id';
+import isDev from '~/modules/utils/is-dev';
+import isE2E from '~/modules/utils/is-e2-e';
+import isPreRendering from '~/modules/utils/is-pre-rendering';
+import { randomInt } from '~/modules/utils/random-value';
+import sentryIgnoreErrors from '~/modules/utils/sentry-ignore-errors';
 import storage from '~/modules/utils/storage';
-import songStats from '~/routes/LandingPage/songStats.json';
+import songStats from '~/routes/landing-page/song-stats.json';
 
 const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
 

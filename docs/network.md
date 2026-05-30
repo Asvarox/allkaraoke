@@ -4,7 +4,7 @@ This document describes the networking layer that connects phone microphones to 
 
 ## Overview
 
-The network layer lives in `src/modules/RemoteMic/Network/`. It is split into a **client** side (the phone) and a **server** side (the game host, running in the host browser tab). Messages flow over a WebSocket-like transport and are dispatched through a typed RPC system.
+The network layer lives in `src/modules/remote-mic/network/`. It is split into a **client** side (the phone) and a **server** side (the game host, running in the host browser tab). Messages flow over a WebSocket-like transport and are dispatched through a typed RPC system.
 
 ```
 Phone (browser)                        Host (browser)
@@ -20,11 +20,11 @@ NetworkClient                          NetworkServer
 
 The actual WebSocket connection is provided by a swappable adapter. Both the client and server have matching adapter pairs:
 
-| Adapter | Client | Server | When used |
-|---|---|---|---|
-| **PartyKit** | `PartyKitClient.ts` | `PartyKitServer.ts` | Default; room IDs starting with `k` (Cloudflare Workers / PartyKit) |
-| **WebSocket** | `WebSocketClient.ts` | `WebSocketServer.ts` | Room IDs starting with `w`; direct WebSocket server |
-| **PeerJS** | `PeerJSClient.ts` | `PeerJSServer.ts` | Legacy peer-to-peer WebRTC |
+| Adapter       | Client               | Server               | When used                                                           |
+| ------------- | -------------------- | -------------------- | ------------------------------------------------------------------- |
+| **PartyKit**  | `PartyKitClient.ts`  | `PartyKitServer.ts`  | Default; room IDs starting with `k` (Cloudflare Workers / PartyKit) |
+| **WebSocket** | `WebSocketClient.ts` | `WebSocketServer.ts` | Room IDs starting with `w`; direct WebSocket server                 |
+| **PeerJS**    | `PeerJSClient.ts`    | `PeerJSServer.ts`    | Legacy peer-to-peer WebRTC                                          |
 
 The client selects an adapter based on the room ID prefix in `NetworkClient.connect()`. The server side uses whichever transport is registered for the active session.
 
@@ -79,13 +79,13 @@ For server-pushed state (e.g. the live list of connected mics), the phone subscr
 
 A handful of message types bypass RPC entirely because they are sent at high frequency and latency matters:
 
-| Message | Direction | Purpose |
-|---|---|---|
-| `freq` | phone → host | Batched pitch/frequency data; throttled to ~60 Hz, sent every ~50 ms |
-| `ping` / `pong` | bidirectional | Round-trip latency measurement |
-| `register` | phone → host | Initial handshake on connect |
-| `unregister` | phone → host | Clean disconnect |
-| `register-room` | host → phone | Associates the connection with a room |
+| Message         | Direction     | Purpose                                                              |
+| --------------- | ------------- | -------------------------------------------------------------------- |
+| `freq`          | phone → host  | Batched pitch/frequency data; throttled to ~60 Hz, sent every ~50 ms |
+| `ping` / `pong` | bidirectional | Round-trip latency measurement                                       |
+| `register`      | phone → host  | Initial handshake on connect                                         |
+| `unregister`    | phone → host  | Clean disconnect                                                     |
+| `register-room` | host → phone  | Associates the connection with a room                                |
 
 These are defined as plain interfaces in `Network/messages.ts` and handled directly in `NetworkClient` / `NetworkServer` without going through the RPC dispatcher.
 
@@ -93,9 +93,9 @@ These are defined as plain interfaces in `Network/messages.ts` and handled direc
 
 Four hooks wrap the RPC layer for use in React components (all in `Client/hooks/`):
 
-| Hook | Purpose |
-|---|---|
-| `useServerQuery(fn, deps)` | Runs a query on mount and reconnect; returns `{ data, loading, error, refetch }` |
-| `useServerMutation(fn)` | Returns a stable `mutate` function with `loading`/`error` state |
-| `useSubscription(channel)` | Subscribes to a push channel; returns the latest data |
-| `useClientHandler(method, fn)` | Registers a handler for a server → client call; auto-unregisters on unmount |
+| Hook                           | Purpose                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------- |
+| `useServerQuery(fn, deps)`     | Runs a query on mount and reconnect; returns `{ data, loading, error, refetch }` |
+| `useServerMutation(fn)`        | Returns a stable `mutate` function with `loading`/`error` state                  |
+| `useSubscription(channel)`     | Subscribes to a push channel; returns the latest data                            |
+| `useClientHandler(method, fn)` | Registers a handler for a server → client call; auto-unregisters on unmount      |

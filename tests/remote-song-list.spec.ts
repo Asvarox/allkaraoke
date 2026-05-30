@@ -6,10 +6,10 @@ import {
   openAndConnectRemoteMicDirectly,
   openAndConnectRemoteMicWithCode,
   openRemoteMic,
-} from './steps/openAndConnectRemoteMic';
+} from './steps/open-and-connect-remote-mic';
 
-import initialise from './PageObjects/initialise';
-import { RemoteMicPages } from './PageObjects/RemoteMic/initialiseRemoteMic';
+import initialise from './page-objects/initialise';
+import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {

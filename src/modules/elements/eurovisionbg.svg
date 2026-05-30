@@ -1,0 +1,173 @@
+<svg width="501" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad0" x1="0%" x2="0%" y1="0%" y2="100%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad1" x1="0%" x2="0%" y1="2%" y2="102%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" x2="0%" y1="4%" y2="104%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad3" x1="0%" x2="0%" y1="6%" y2="106%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad4" x1="0%" x2="0%" y1="8%" y2="108%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad5" x1="0%" x2="0%" y1="10%" y2="110%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad6" x1="0%" x2="0%" y1="12%" y2="112%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad7" x1="0%" x2="0%" y1="14%" y2="114%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad8" x1="0%" x2="0%" y1="16%" y2="116%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad9" x1="0%" x2="0%" y1="18%" y2="118%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad10" x1="0%" x2="0%" y1="20%" y2="120%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad11" x1="0%" x2="0%" y1="22%" y2="122%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad12" x1="0%" x2="0%" y1="24%" y2="124%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad13" x1="0%" x2="0%" y1="26%" y2="126%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad14" x1="0%" x2="0%" y1="28%" y2="128%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad15" x1="0%" x2="0%" y1="30%" y2="130%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad16" x1="0%" x2="0%" y1="32%" y2="132%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad17" x1="0%" x2="0%" y1="34%" y2="134%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad18" x1="0%" x2="0%" y1="36%" y2="136%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad19" x1="0%" x2="0%" y1="38%" y2="138%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+        <linearGradient id="grad20" x1="0%" x2="0%" y1="40%" y2="140%" spreadMethod="repeat">
+            <stop offset="0%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="25%" stop-color="rgb(245, 220, 21)"></stop>
+            <stop offset="50%" stop-color="rgb(255, 70, 223)"></stop>
+            <stop offset="75%" stop-color="rgb(255, 119, 20)"></stop>
+            <stop offset="100%" stop-color="rgb(255, 70, 223)"></stop>
+        </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="49" height="100%" fill="url(#grad0)"></rect>
+    <rect x="39" y="0" width="48" height="100%" fill="url(#grad1)"></rect>
+    <rect x="77" y="0" width="44" height="100%" fill="url(#grad2)"></rect>
+    <rect x="111" y="0" width="39" height="100%" fill="url(#grad3)"></rect>
+    <rect x="140" y="0" width="31" height="100%" fill="url(#grad4)"></rect>
+    <rect x="161" y="0" width="24" height="100%" fill="url(#grad5)"></rect>
+    <rect x="175" y="0" width="19" height="100%" fill="url(#grad6)"></rect>
+    <rect x="184" y="0" width="15" height="100%" fill="url(#grad7)"></rect>
+    <rect x="189" y="0" width="14" height="100%" fill="url(#grad8)"></rect>
+    <rect x="193" y="0" width="15" height="100%" fill="url(#grad9)"></rect>
+    <rect x="198" y="0" width="19" height="100%" fill="url(#grad10)"></rect>
+    <rect x="207" y="0" width="24" height="100%" fill="url(#grad11)"></rect>
+    <rect x="221" y="0" width="31" height="100%" fill="url(#grad12)"></rect>
+    <rect x="242" y="0" width="39" height="100%" fill="url(#grad13)"></rect>
+    <rect x="271" y="0" width="44" height="100%" fill="url(#grad14)"></rect>
+    <rect x="305" y="0" width="48" height="100%" fill="url(#grad15)"></rect>
+    <rect x="343" y="0" width="49" height="100%" fill="url(#grad16)"></rect>
+    <rect x="382" y="0" width="48" height="100%" fill="url(#grad17)"></rect>
+    <rect x="420" y="0" width="44" height="100%" fill="url(#grad18)"></rect>
+    <rect x="454" y="0" width="37" height="100%" fill="url(#grad19)"></rect>
+    <rect x="481" y="0" width="30" height="100%" fill="url(#grad20)"></rect>
+    <rect x="501" y="0" width="10" height="100%" fill="url(#grad21)"></rect>
+</svg>

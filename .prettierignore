@@ -2,6 +2,6 @@ build
 node_modules
 public/songs
 tests/fixtures
-src/Elements/Menu/completed-animation.json
+src/elements/menu/completed-animation.json
 .pnp.cjs
 .pnp.loader.mjs

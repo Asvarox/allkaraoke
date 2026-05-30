@@ -1,5 +1,5 @@
-import { sentryVitePlugin } from '@sentry/vite-plugin';
 import { cloudflare } from '@cloudflare/vite-plugin';
+import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
@@ -8,7 +8,7 @@ import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vitest/config';
-import routePaths from './src/routes/routePaths';
+import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
 const certPath = './config/crt/server.pem';
@@ -92,6 +92,6 @@ export default defineConfig({
     include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     globals: true,
     environment: 'happy-dom',
-    setupFiles: 'src/setupTests.ts',
+    setupFiles: 'src/setup-tests.ts',
   },
 });

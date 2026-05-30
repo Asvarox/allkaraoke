@@ -1,4 +1,4 @@
-import { getSharedSong } from './sharedSongsStore';
+import { getSharedSong } from './shared-songs-store';
 
 interface Env {
   SHARED_SONGS_KV?: KVNamespace;

@@ -46,7 +46,7 @@ git commit -m "feat(history): add HISTORY route path"
 
 **Files:**
 
-- Create: `tests/PageObjects/HistoryPage.ts`
+- Create: `tests/page-objects/HistoryPage.ts`
 - Create: `tests/history.spec.ts`
 
 **Step 1: Read the e2e-playwright skill to understand the project's test conventions**
@@ -55,7 +55,7 @@ Read file: `.agents/skills/e2e-playwright/SKILL.md`
 
 **Step 2: Create the page object**
 
-Create `tests/PageObjects/HistoryPage.ts`:
+Create `tests/page-objects/HistoryPage.ts`:
 
 ```typescript
 import { Page } from '@playwright/test';
@@ -98,9 +98,9 @@ export class HistoryPage {
 }
 ```
 
-**Step 3: Look at tests/PageObjects/initialise.ts to understand how to register the new page object**
+**Step 3: Look at tests/page-objects/initialise.ts to understand how to register the new page object**
 
-Open and read `tests/PageObjects/initialise.ts` — find how other page objects like `jukeboxPage` are registered, then add `historyPage` in the same pattern.
+Open and read `tests/page-objects/initialise.ts` — find how other page objects like `jukeboxPage` are registered, then add `historyPage` in the same pattern.
 
 **Step 4: Create the test file**
 
@@ -108,7 +108,7 @@ Create `tests/history.spec.ts`:
 
 ```typescript
 import { expect, test } from '@playwright/test';
-import initialise from './PageObjects/initialise';
+import initialise from './page-objects/initialise';
 import { initTestMode, mockSongs } from './helpers';
 
 let pages: ReturnType<typeof initialise>;
@@ -147,7 +147,7 @@ Expected output: test failure mentioning missing navigation or page not found.
 **Step 6: Commit the failing test**
 
 ```bash
-git add tests/PageObjects/HistoryPage.ts tests/history.spec.ts tests/PageObjects/initialise.ts
+git add tests/page-objects/HistoryPage.ts tests/history.spec.ts tests/page-objects/initialise.ts
 git commit -m "test(history): add failing E2E test for history page navigation"
 ```
 
@@ -193,7 +193,7 @@ In `src/routes/Welcome/Welcome.tsx`, add a new `SmoothLink` + `Menu.Button` entr
 
 **Step 3: Add `goToHistory()` to the main menu page object**
 
-Open `tests/PageObjects/MainMenuPage.ts` (or equivalent). Find the existing navigation methods (e.g. `goToJukebox()`). Add:
+Open `tests/page-objects/MainMenuPage.ts` (or equivalent). Find the existing navigation methods (e.g. `goToJukebox()`). Add:
 
 ```typescript
 public async goToHistory() {
@@ -228,7 +228,7 @@ Expected: navigation works, but `history-empty-state` element is not found.
 **Step 7: Commit**
 
 ```bash
-git add src/App.tsx src/routes/Welcome/Welcome.tsx src/routes/History/HistoryPage.tsx tests/PageObjects/MainMenuPage.ts
+git add src/App.tsx src/routes/Welcome/Welcome.tsx src/routes/History/HistoryPage.tsx tests/page-objects/MainMenuPage.ts
 git commit -m "feat(history): add route, menu button, and page stub"
 ```
 
@@ -477,7 +477,7 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, ...rest }: 
   );
 }
 
-const Card = twc.div`data-[focused=true]:bg-active cursor-pointer rounded-lg px-6 py-4 transition-transform data-[focused=true]:scale-[1.025]`;
+const Card = twc.div`cursor-pointer rounded-lg px-6 py-4 transition-transform data-[focused=true]:scale-[1.025] data-[focused=true]:bg-active`;
 const CollapsedRow = twc.div`flex items-center justify-between gap-4`;
 const SongInfo = twc.div`flex flex-col`;
 const Title = twc.span`typography font-bold`;
@@ -487,7 +487,7 @@ const Details = twc.div`mt-3 flex flex-col gap-1 border-t border-white/20 pt-3`;
 const DetailRow = twc.div`typography flex justify-between text-sm`;
 ```
 
-> Note: `data-[focused=true]:bg-active` is the Tailwind pattern used in other AKUI components for focus state. Check the Button component (`src/modules/Elements/AKUI/Button.tsx`) to confirm the exact class names used and align styling.
+> Note: `data-[focused=true]:bg-active` is the Tailwind pattern used in other AKUI components for focus state. Check the Button component (`src/modules/elements/AKUI/Button.tsx`) to confirm the exact class names used and align styling.
 
 **Step 3: Commit**
 
@@ -506,7 +506,7 @@ git commit -m "feat(history): add PlayEntryCard expandable component"
 
 **Step 1: Look at a settings page for layout reference**
 
-Open `src/routes/Settings/RemoteMicSettings.tsx` to see how a non-game page uses `useKeyboardNav` + `onBackspace` + a back button. Use it as a structural reference for `HistoryPage`.
+Open `src/routes/settings/RemoteMicSettings.tsx` to see how a non-game page uses `useKeyboardNav` + `onBackspace` + a back button. Use it as a structural reference for `HistoryPage`.
 
 Also open `src/routes/Welcome/Welcome.tsx` to see how `MenuWithLogo` wraps a vertical list — consider whether to use `MenuWithLogo` or a custom layout. For a scrollable history list (potentially many items), a custom layout inside `LayoutGame` is more appropriate.
 
@@ -516,7 +516,7 @@ Also open `src/routes/Welcome/Welcome.tsx` to see how `MenuWithLogo` wraps a ver
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { twc } from 'react-twc';
-import { useBackground } from '~/modules/Elements/BackgroundContext';
+import { useBackground } from '~/modules/elements/BackgroundContext';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import useSmoothNavigate from '~/modules/hooks/useSmoothNavigate';
 import LayoutGame from '~/routes/LayoutGame';
@@ -570,7 +570,7 @@ function HistoryPage() {
 
 const Container = twc.div`flex h-full flex-col gap-2 overflow-y-auto p-8`;
 const Header = twc.h1`typography mb-4 text-3xl font-bold`;
-const DateHeader = twc.h2`typography mt-6 mb-2 text-lg font-semibold opacity-70 first:mt-0`;
+const DateHeader = twc.h2`typography mb-2 mt-6 text-lg font-semibold opacity-70 first:mt-0`;
 const Message = twc.p`typography opacity-70`;
 
 export default HistoryPage;
@@ -680,15 +680,15 @@ git commit -m "fix(history): resolve type and lint issues"
 | `src/routes/History/PlayEntryCard.tsx`      | Expandable song play card        |
 | `src/routes/History/usePlayHistory.ts`      | Data hook (load, flatten, group) |
 | `src/routes/History/usePlayHistory.test.ts` | Unit tests for grouping logic    |
-| `tests/PageObjects/HistoryPage.ts`          | Page object for E2E tests        |
+| `tests/page-objects/HistoryPage.ts`         | Page object for E2E tests        |
 | `tests/history.spec.ts`                     | E2E tests                        |
 
 ## Modified files
 
-| File                                | Change                                   |
-| ----------------------------------- | ---------------------------------------- |
-| `src/routes/routePaths.ts`          | Add `HISTORY: 'history'`                 |
-| `src/App.tsx`                       | Register lazy-loaded `HistoryPage` route |
-| `src/routes/Welcome/Welcome.tsx`    | Add History menu button                  |
-| `tests/PageObjects/initialise.ts`   | Register `historyPage` page object       |
-| `tests/PageObjects/MainMenuPage.ts` | Add `goToHistory()` method               |
+| File                                 | Change                                   |
+| ------------------------------------ | ---------------------------------------- |
+| `src/routes/routePaths.ts`           | Add `HISTORY: 'history'`                 |
+| `src/App.tsx`                        | Register lazy-loaded `HistoryPage` route |
+| `src/routes/Welcome/Welcome.tsx`     | Add History menu button                  |
+| `tests/page-objects/initialise.ts`   | Register `historyPage` page object       |
+| `tests/page-objects/MainMenuPage.ts` | Add `goToHistory()` method               |

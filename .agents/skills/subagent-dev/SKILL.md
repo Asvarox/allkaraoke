@@ -4,9 +4,12 @@ description: Use when executing implementation plans with independent tasks in t
 ---
 
 # Skill: subagent-driven-development
+
 ---
+
 name: subagent-driven-development
 description: Use when executing implementation plans with independent tasks in the current session
+
 ---
 
 # Subagent-Driven Development
@@ -36,6 +39,7 @@ digraph when_to_use {
 ```
 
 **vs. Executing Plans (parallel session):**
+
 - Same session (no context switch)
 - Fresh subagent per task (no context pollution)
 - Two-stage review after each task: spec compliance first, then code quality
@@ -49,6 +53,7 @@ Read plan, extract all tasks with full text, note context, create TodoWrite with
 2. **Code quality review** - Is implementation well-built?
 
 For each task:
+
 - Mark as in_progress
 - Dispatch implementer subagent
 - Handle subagent questions
@@ -62,23 +67,27 @@ For each task:
 ## Advantages
 
 **vs. Manual execution:**
+
 - Subagents follow TDD naturally
 - Fresh context per task (no confusion)
 - Parallel-safe (subagents don't interfere)
 - Subagent can ask questions (before AND during work)
 
 **vs. Executing Plans:**
+
 - Same session (no handoff)
 - Continuous progress (no waiting)
 - Review checkpoints automatic
 
 **Efficiency gains:**
+
 - No file reading overhead (controller provides full text)
 - Controller curates exactly what context is needed
 - Subagent gets complete information upfront
 - Questions surfaced before work begins (not after)
 
 **Quality gates:**
+
 - Self-review catches issues before handoff
 - Two-stage review: spec compliance, then code quality
 - Review loops ensure fixes actually work
@@ -88,6 +97,7 @@ For each task:
 ## Red Flags
 
 **Never:**
+
 - Start implementation on main/master branch without explicit user consent
 - Skip reviews (spec compliance OR code quality)
 - Proceed with unfixed issues
@@ -102,30 +112,36 @@ For each task:
 - Move to next task while either review has open issues
 
 **If subagent asks questions:**
+
 - Answer clearly and completely
 - Provide additional context if needed
 - Don't rush them into implementation
 
 **If reviewer finds issues:**
+
 - Implementer (same subagent) fixes them
 - Reviewer reviews again
 - Repeat until approved
 - Don't skip the re-review
 
 **If subagent fails task:**
+
 - Dispatch fix subagent with specific instructions
 - Don't try to fix manually (context pollution)
 
 ## Integration
 
 **Required workflow skills:**
+
 - **superpowers:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
 - **superpowers:writing-plans** - Creates the plan this skill executes
 - **superpowers:requesting-code-review** - Code review template for reviewer subagents
 - **superpowers:finishing-a-development-branch** - Complete development after all tasks
 
 **Subagents should use:**
+
 - **superpowers:test-driven-development** - Subagents follow TDD for each task
 
 **Alternative workflow:**
+
 - **superpowers:executing-plans** - Use for parallel session instead of same-session execution

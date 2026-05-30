@@ -1,4 +1,4 @@
-const styles = require('./src/modules/GameEngine/Drawing/styles');
+const styles = require('./src/modules/game-engine/drawing/styles');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
