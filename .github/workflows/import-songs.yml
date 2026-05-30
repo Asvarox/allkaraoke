@@ -47,6 +47,6 @@ jobs:
         run: pnpm ts-node scripts/generateSongPopularityIndex.ts
       - name: Auto commit songs
         id: auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'

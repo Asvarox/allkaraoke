@@ -98,7 +98,7 @@ jobs:
           packagescript: 'test-ct -u'
       - name: Auto commit updated snapshots
         id: auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         if: github.ref != 'refs/heads/master'
         with:
           commit_message: '[ci-skip] chore: update visual regression snapshots'
