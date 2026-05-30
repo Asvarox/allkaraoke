@@ -29,8 +29,14 @@ export class SongPreviewPagePO {
     await this.page.waitForTimeout(300); // force wait for the animation to finish
   }
 
-  public async playTheSong(skipIntro = true, calibration = true) {
-    await this.page.getByTestId('play-song-button').click();
+  public async playTheSong(skipIntro = true, calibration = true, unverifiedSong = false) {
+    const playButton = this.page.getByTestId('play-song-button');
+    await playButton.click();
+
+    if (unverifiedSong) {
+      const confirmPlayButton = this.page.getByTestId('confirm-play-unverified-song');
+      await confirmPlayButton.click();
+    }
 
     if (calibration) {
       await this.calibration.approveDefaultCalibrationSetting();

@@ -1,24 +1,21 @@
-import {
-  ComponentProps,
-  ForwardedRef,
-  forwardRef,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import { ComponentProps, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 
 import { VideoState } from '~/modules/Elements/VideoPlayer/VideoState';
 import sleep from '~/modules/utils/sleep';
 import Youtube, { VideoPlayerRef } from './Youtube';
 
-type Props = ComponentProps<typeof Youtube>;
+type Props = ComponentProps<typeof Youtube> & { ref?: React.Ref<VideoPlayerRef> };
 
-export default forwardRef(function DirectVideoPlayer(
-  { video, autoplay = true, startAt, controls, width, height, onStateChange }: Props,
-  ref: ForwardedRef<VideoPlayerRef>,
-) {
+export default function DirectVideoPlayer({
+  video,
+  autoplay = true,
+  startAt,
+  controls,
+  width,
+  height,
+  onStateChange,
+  ref,
+}: Props) {
   const player = useRef<HTMLVideoElement | null>(null);
   const [size, setSize] = useState({ w: width, h: height });
   const [status, setStatus] = useState(VideoState.UNSTARTED);
@@ -58,7 +55,6 @@ export default forwardRef(function DirectVideoPlayer(
         if (player.current) {
           player.current.currentTime = time;
         }
-
         return time;
       },
       setPlaybackSpeed: (speed: number) => {
@@ -102,4 +98,4 @@ export default forwardRef(function DirectVideoPlayer(
       <source src={video} />
     </video>
   );
-});
+}

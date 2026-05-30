@@ -1,4 +1,5 @@
 import { sentryVitePlugin } from '@sentry/vite-plugin';
+import { cloudflare } from '@cloudflare/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
@@ -6,7 +7,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
@@ -21,7 +21,11 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
+  },
   plugins: [
+    process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(),
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
     }),
@@ -48,13 +52,12 @@ export default defineConfig({
       },
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),
-    tsconfigPaths(),
     visualizer(),
     !customCert && basicSsl(),
 
     process.env.VITE_APP_PRERENDER
       ? htmlPrerender({
-          staticDir: path.join(__dirname, 'build'),
+          staticDir: path.join(__dirname, 'build/client'),
           routes: Object.values(routePaths).map((route) => `/${route}`),
           minify: {
             collapseBooleanAttributes: true,
@@ -74,12 +77,15 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: 'https://localhost:3000',
+    open: false,
     https: {
       // Generated via https://letsencrypt.org/docs/certificates-for-localhost/#making-and-trusting-your-own-certificates
       key: fs.readFileSync(customCert ? keyPath : './config/crt/dummy.key'),
       cert: fs.readFileSync(customCert ? certPath : './config/crt/dummy.pem'),
     },
+  },
+  preview: {
+    open: false,
   },
 
   test: {

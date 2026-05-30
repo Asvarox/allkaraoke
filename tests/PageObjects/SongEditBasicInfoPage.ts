@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class SongEditBasicInfoPagePO {
   constructor(
@@ -41,5 +41,13 @@ export class SongEditBasicInfoPagePO {
 
   public get duplicateSongAlert() {
     return this.page.getByTestId('possible-duplicate');
+  }
+
+  public get editedSongHeader() {
+    return this.page.getByTestId('edit-song-heading');
+  }
+
+  public async expectEditedSongHeaderToBe(artist: string, title: string) {
+    await expect(this.editedSongHeader).toHaveText(`${artist} - ${title}`);
   }
 }

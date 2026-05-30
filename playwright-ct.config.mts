@@ -1,7 +1,6 @@
 import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/experimental-ct-react';
 import react from '@vitejs/plugin-react';
-import * as process from 'process';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import * as process from 'process';import tsconfigPaths from 'vite-tsconfig-paths';
 // playwright.config.ts
 
 /**
@@ -41,8 +40,7 @@ const config: PlaywrightTestConfig = defineConfig({
           babel: {
             plugins: ['@emotion'],
           },
-        }),
-        tsconfigPaths(),
+        }),        tsconfigPaths(),
       ],
       build: {
         sourcemap: false,

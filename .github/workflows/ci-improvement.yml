@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 200 # needed to detect changed snapshots
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
@@ -28,14 +28,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - run: pnpm npm-run-all --continue-on-error prettier-check lint type-check test build-storybook knip
   e2e-tests-run:
     strategy:
       fail-fast: false
       matrix:
         # browser: [ 'chromium', 'firefox' ]
-        browser: ['chromium']
+        browser: ["chromium"]
         shardIndex: [1, 2, 3]
         shardTotal: [3]
     runs-on: ubuntu-latest
@@ -45,20 +45,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - name: Prepare Playwright
-        uses: './.github/templates/prepare-playwright'
+        uses: "./.github/templates/prepare-playwright"
         with:
-          project: '${{ matrix.browser }}'
+          project: "${{ matrix.browser }}"
+        timeout-minutes: 5
       - name: Build app
         run: pnpm build
       - name: Run E2E tests
-        uses: './.github/templates/run-playwright'
+        uses: "./.github/templates/run-playwright"
         with:
-          project: '${{ matrix.browser }}'
-          packagescript: 'e2e'
-          shard: '${{ matrix.shardIndex }}'
-          shardTotal: '${{ matrix.shardTotal }}'
+          project: "${{ matrix.browser }}"
+          packagescript: "e2e"
+          shard: "${{ matrix.shardIndex }}"
+          shardTotal: "${{ matrix.shardTotal }}"
   e2e-tests-add-summary:
     runs-on: ubuntu-latest
     if: ${{ failure() }}
@@ -69,7 +70,7 @@ jobs:
           script: |
             core.summary.addRaw(`
             # E2E tests reports
-            | Name                    | Result |
+            | Name          | Result |
             | ----------------------- | - |
             | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
             `
@@ -83,27 +84,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - name: Prepare Playwright
-        uses: './.github/templates/prepare-playwright'
+        uses: "./.github/templates/prepare-playwright"
+        timeout-minutes: 5
       - name: Run Component Tests
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: './.github/templates/run-playwright'
+        uses: "./.github/templates/run-playwright"
         with:
-          packagescript: 'test-ct'
+          packagescript: "test-ct"
       - name: Run Component Tests and update snapshots
         if: github.ref != 'refs/heads/master'
-        uses: './.github/templates/run-playwright'
+        uses: "./.github/templates/run-playwright"
         with:
-          packagescript: 'test-ct -u'
+          packagescript: "test-ct -u"
       - name: Auto commit updated snapshots
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
         if: github.ref != 'refs/heads/master'
         with:
-          commit_message: '[ci-skip] chore: update visual regression snapshots'
-          commit_options: '--no-verify'
-      - name: 'Comment on PR to request a review of visual changes'
+          commit_message: "[ci-skip] chore: update visual regression snapshots"
+          commit_options: "--no-verify"
+      - name: "Comment on PR to request a review of visual changes"
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
         uses: actions/github-script@v7
         with:
@@ -118,7 +120,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: ['e2e-tests-run', 'ct-tests-run', 'quick-checks']
+    needs: ["e2e-tests-run", "ct-tests-run", "quick-checks"]
     environment:
       name: production
       url: https://allkaraoke.party/
@@ -130,8 +132,9 @@ jobs:
         with:
           fetch-depth: 200 # needed for Sentry to get list of commits released
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - run: npx playwright install chromium
+        timeout-minutes: 3
       - run: pnpm build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
@@ -143,7 +146,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy build --project-name=allkaraoke-party
+          command: deploy
 
       - name: Create Sentry release
         uses: getsentry/action-release@v1
@@ -153,28 +156,28 @@ jobs:
           SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
         with:
           environment: production
-          sourcemaps: './build'
+          sourcemaps: "./build"
       - name: Add Deployment PostHog Annotation
         run: |
           curl \
             -H 'Content-Type: application/json' \
             -H "Authorization: Bearer ${{ secrets.POSTHOG_PAT_KEY }}" \
             -d '{"content":"[Deployment](https://github.com/Asvarox/allkaraoke/actions/runs/${{ github.run_id }}) - ${{ github.event.head_commit.message || github.event.workflow_run.head_commit.message || github.event.pull_request.title || github.sha }}","date_marker":"'$(date --iso-8601=seconds)'","scope":"project","creation_type":"GIT"}' \
-            https://eu.posthog.com/api/projects/281/annotations/
+          https://eu.posthog.com/api/projects/281/annotations/
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
-      - name: 'Start monitoring'
+      - name: "Start monitoring"
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
           script: |
             github.rest.actions.updateRepoVariable({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: 'MONITORING_ATTEMPTS',
-              value: '4'
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            name: 'MONITORING_ATTEMPTS',
+            value: '4'
             });
-            github.rest.actions.enableWorkflow({
+              github.rest.actions.enableWorkflow({
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'monitor-posthog-events.yml',
@@ -192,8 +195,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
-        uses: './.github/templates/setup-node'
+        uses: "./.github/templates/setup-node"
       - run: npx playwright install chromium
+        timeout-minutes: 3
       - run: pnpm build
         shell: bash
       - name: Upload to Cloudflare
@@ -202,4 +206,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy build --project-name=allkaraoke-party --branch=${{ github.ref_name }}
+          command: deploy --name=allkaraoke-party-pr-${{ github.run_id }}
