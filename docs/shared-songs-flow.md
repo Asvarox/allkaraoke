@@ -18,7 +18,7 @@ At runtime, the app:
 - Public search endpoint: `functions/shared-songs.ts`
 - Public fetch-by-id endpoint: `functions/shared-song.ts`
 - Admin mutating endpoint (token-protected): `functions/shared-songs-admin.ts`
-- CI sync script (PostHog -> KV): `scripts/cicd/githubActionSyncSharedSongs.ts`
+- CI sync script (PostHog -> KV): `scripts/cicd/githubActionUploadSharedSongsToCloudflare.ts`
 - Admin API client for scripts: `scripts/cicd/sharedSongsAdminClient.ts`
 - Fixture upsert script for local testing: `scripts/cicd/upsertSharedSongFixture.ts`
 
@@ -43,7 +43,7 @@ Notes:
 
 - Upsert semantics are full replacement for the record.
 - Record keys are stored under `shared-song:<externalSongId>`.
-- A separate index key `shared-songs-index` stores the list of external IDs for listing/filtering.
+- Listing/search iterate KV keys by `shared-song:` prefix.
 
 ## 4) End-to-end lifecycle
 
@@ -150,7 +150,7 @@ SHARED_SONGS_ADMIN_TOKEN=your-local-token
 
 For script-driven local fixture upserts, defaults are in `.env`:
 
-- `SHARED_SONGS_ADMIN_URL=http://127.0.0.1:8788`
+- `SHARED_SONGS_ADMIN_URL=http://127.0.0.1:3010`
 - `SHARED_SONGS_ADMIN_TOKEN=local-shared-songs-admin-token`
 
 You can override with `.env.local`.
@@ -188,8 +188,8 @@ pnpm shared-song:upsert-fixture
 Optional: override the admin base URL directly from CLI (useful when test target differs from local default):
 
 ```bash
-pnpm shared-song:upsert-fixture -- --base-url http://127.0.0.1:8788
-pnpm shared-song:upsert-fixture -- --base-url https://localhost:3010
+pnpm shared-song:upsert-fixture http://127.0.0.1:3000
+pnpm shared-song:upsert-fixture https://localhost:3010
 ```
 
 6. Verify APIs manually:
@@ -218,4 +218,4 @@ curl -s "http://127.0.0.1:8788/shared-song?id=shared-cloudflare-e2e-song"
   - Check workflow logs in `.github/workflows/sync-shared-songs.yml`.
 - Local fixture script fails env checks:
   - Ensure `.env` or `.env.local` has `SHARED_SONGS_ADMIN_TOKEN`.
-  - Ensure admin URL is available either from `.env`/`.env.local` (`SHARED_SONGS_ADMIN_URL`) or via `--base-url`.
+  - Ensure admin URL is available either from `.env`/`.env.local` (`SHARED_SONGS_ADMIN_URL`) or as the first CLI argument.

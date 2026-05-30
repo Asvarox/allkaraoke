@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { SingSetup, SongPreview } from '~/interfaces';
-import { Menu } from '~/modules/Elements/AKUI/Menu';
-import Modal from '~/modules/Elements/Modal';
+import ConfirmModal from '~/modules/Elements/AKUI/ConfirmModal';
 import events from '~/modules/GameEvents/GameEvents';
 import useKeyboardNav from '~/modules/hooks/useKeyboardNav';
 import GameSettings from '~/routes/SingASong/SongSelection/Components/SongSettings/GameSettings';
@@ -56,24 +55,17 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
 
   return (
     <>
-      <Modal onClose={cancelPlayUnverifiedSong} open={isConfirmModalOpen} withPortal>
-        {pendingSetup && (
-          <Menu spacing="tight" data-test="unverified-shared-song-confirm-modal">
-            <Menu.Header>Unverified Shared Song</Menu.Header>
-            <Menu.HelpText>This shared song is unverified and might not work correctly. Continue anyway?</Menu.HelpText>
-            <Menu.ButtonGroup className="flex-col gap-2 sm:flex-row">
-              <Menu.Button {...registerConfirm('cancel-play-unverified-song', cancelPlayUnverifiedSong)} size="small">
-                Cancel
-              </Menu.Button>
-              <Menu.Button
-                {...registerConfirm('confirm-play-unverified-song', confirmPlayUnverifiedSong, undefined, true)}
-                size="small">
-                Continue
-              </Menu.Button>
-            </Menu.ButtonGroup>
-          </Menu>
-        )}
-      </Modal>
+      <ConfirmModal
+        open={isConfirmModalOpen}
+        onClose={cancelPlayUnverifiedSong}
+        title="Unverified Shared Song"
+        description="This shared song is unverified and might not work correctly. Continue anyway?"
+        cancelLabel="Cancel"
+        confirmLabel="Continue"
+        dataTestPrefix="unverified-shared-song-confirm"
+        cancelButtonProps={registerConfirm('cancel-play-unverified-song', cancelPlayUnverifiedSong)}
+        confirmButtonProps={registerConfirm('confirm-play-unverified-song', confirmPlayUnverifiedSong, undefined, true)}
+      />
       <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
         <MicCheck className="w-full shrink-0 sm:w-2/5" />
         <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4">

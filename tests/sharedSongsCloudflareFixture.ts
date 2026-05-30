@@ -20,7 +20,11 @@ export const upsertCloudflareSharedSongFixtureOrMock = async (page: Page, playwr
       stdio: 'inherit',
     });
     return;
-  } catch {
+  } catch (error) {
+    if (process.env.CI) {
+      throw error;
+    }
+
     const fixtureAbsolutePath = path.resolve(process.cwd(), FIXTURE_PATH);
     const songTxt = normalizeSongTxt(readFileSync(fixtureAbsolutePath, 'utf-8'));
     const song = convertTxtToSong(songTxt);

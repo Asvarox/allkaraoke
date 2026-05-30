@@ -2,7 +2,7 @@ import { ComponentProps } from 'react';
 
 import DirectVideo from '~/modules/Elements/VideoPlayer/DirectVideo';
 import Youtube, { VideoPlayerRef } from './Youtube';
-// THe videos need to be inlined, vite preview underlying dev server
+// The videos need to be inlined, vite preview underlying dev server
 // doesn't support video seeking requests breaking skip intro tests.
 // See https://github.com/vitejs/vite/issues/10744
 import dummyLongVideo from './dummy-video-long.webm?inline';
