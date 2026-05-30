@@ -37,7 +37,7 @@ export default function Edit() {
         <Link to="edit/list/">
           <a>Return to the song list</a>
         </Link>
-        <span>
+        <span data-test="edit-song-heading">
           <b>
             {song.data.artist} - {song.data.title}
           </b>

@@ -50,6 +50,7 @@ jobs:
         uses: "./.github/templates/prepare-playwright"
         with:
           project: "${{ matrix.browser }}"
+        timeout-minutes: 5
       - name: Build app
         run: pnpm build
       - name: Run E2E tests
@@ -86,6 +87,7 @@ jobs:
         uses: "./.github/templates/setup-node"
       - name: Prepare Playwright
         uses: "./.github/templates/prepare-playwright"
+        timeout-minutes: 5
       - name: Run Component Tests
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: "./.github/templates/run-playwright"

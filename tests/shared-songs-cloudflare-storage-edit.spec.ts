@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
 import initialise from './PageObjects/initialise';
 import { initTestMode } from './helpers';
 import { upsertCloudflareSharedSongFixtureOrMock } from './sharedSongsCloudflareFixture';
@@ -34,12 +34,12 @@ test('shared song fixture is upserted, searchable, and loadable in edit route', 
     await pages.songLanguagesPage.continueAndGoToSongList();
 
     await pages.songListPage.searchSong(sharedSong.title);
-    await expect(page.locator('[data-group-name="Unverified"]')).toBeVisible();
-    await expect(pages.songListPage.songListContainer.getByText(sharedSong.title).first()).toBeVisible();
+    await pages.songListPage.expectUnverifiedSharedSongsGroupToBeVisible();
+    await pages.songListPage.expectSharedSongCardToBeVisible(sharedSong.id);
   });
 
   await test.step('Open edit screen with externalSong param and verify shared song loaded', async () => {
     await page.goto(`/edit/song/?externalSong=${sharedSong.id}&e2e-test`);
-    await expect(page.getByText(`${sharedSong.artist} - ${sharedSong.title}`)).toBeVisible({ timeout: 15000 });
+    await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedSong.artist, sharedSong.title);
   });
 });

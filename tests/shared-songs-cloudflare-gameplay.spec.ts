@@ -40,14 +40,15 @@ test('shared song can transition from Song Selection to active gameplay', async 
   await pages.songLanguagesPage.continueAndGoToSongList();
 
   await pages.songListPage.searchSong(sharedSong.title);
-  await expect(page.locator('[data-group-name="Unverified"]')).toBeVisible();
-  await expect(pages.songListPage.songListContainer.getByText(sharedSong.title).first()).toBeVisible();
 
-  await pages.songListPage.openSharedSongSearchResultCard(sharedSong.title, sharedSong.artist);
+  await pages.songListPage.expectUnverifiedSharedSongsGroupToBeVisible();
+  await pages.songListPage.expectSharedSongCardToBeVisible(sharedSong.id);
+  await pages.songListPage.expectSelectedSongToBe(sharedSong.id);
+  await pages.songListPage.songPreviewElement.click();
   await pages.songPreviewPage.goToInputSelectionPage();
   await pages.computersMicConnectionPage.continueToTheSong();
   await pages.songPreviewPage.goNext();
-  await pages.songPreviewPage.playTheSongAndWaitForGameplay();
+  await pages.songPreviewPage.playTheSong(true, true, true);
 
   await expect(pages.gamePage.getPlayerScoreElement(0)).toBeVisible({ timeout: 30000 });
 });

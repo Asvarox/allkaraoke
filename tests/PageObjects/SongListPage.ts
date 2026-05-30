@@ -80,24 +80,24 @@ export class SongListPagePO {
     return this.page.getByRole('button', { name: songTitle, exact: true });
   }
 
-  public async openPreviewForSharedSong(songTitle: string) {
-    const song = this.getSharedSongSearchResult(songTitle);
-    await expect(song).toBeVisible();
-    await song.click();
-    await this.page.waitForTimeout(100);
-
-    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
-      await this.page.keyboard.press('Enter');
-    }
+  public get unverifiedSharedSongsGroup() {
+    return this.page.locator('[data-group-name="Unverified"]');
   }
 
-  public async openSharedSongSearchResultCard(songTitle: string, artist: string) {
-    const sharedSongCard = this.songListContainer
-      .locator('div.cursor-pointer', {
-        has: this.page.getByText(songTitle, { exact: true }),
-      })
-      .filter({ hasText: artist })
-      .first();
+  public getSharedSongCardById(sharedSongId: string) {
+    return this.page.getByTestId(`song-${sharedSongId}`);
+  }
+
+  public async expectUnverifiedSharedSongsGroupToBeVisible() {
+    await expect(this.unverifiedSharedSongsGroup).toBeVisible();
+  }
+
+  public async expectSharedSongCardToBeVisible(sharedSongId: string) {
+    await expect(this.getSharedSongCardById(sharedSongId)).toBeVisible();
+  }
+
+  public async openSharedSongSearchResultCard(sharedSongId: string) {
+    const sharedSongCard = this.getSharedSongCardById(sharedSongId);
 
     await expect(sharedSongCard).toBeVisible();
     await sharedSongCard.click();
