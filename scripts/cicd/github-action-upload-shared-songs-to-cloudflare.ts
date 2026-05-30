@@ -9,12 +9,7 @@ import {
   normalizeSharedSongTxt,
 } from '../../src/modules/songs/utils/shared-song-import-processing';
 import { createYoutubeDurationProbeClient } from '../youtube-duration-client';
-import {
-  isSharedSongsAdminConfigured,
-  removeSharedSongRecord,
-  SharedSongRecord,
-  upsertSharedSongRecord,
-} from './shared-songs-admin-client';
+import { isSharedSongsAdminConfigured, SharedSongRecord, upsertSharedSongRecord } from './shared-songs-admin-client';
 
 dotenv.config({ path: '.env.local' });
 
@@ -158,7 +153,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
   let processedCount = 0;
   let upsertedCount = 0;
-  let removedCount = 0;
+  const removedCount = 0;
   let failedCount = 0;
   let discardedByDurationCount = 0;
   let skippedExistingInLibraryCount = 0;
@@ -174,13 +169,13 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
       try {
         if (eventName === 'unshare-song') {
-          if (!songId) {
-            console.warn('Skipping unshare-song event with missing songId', { eventName, createdAt, userId });
-            failedCount += 1;
-            continue;
-          }
-          await removeSharedSongRecord(songId);
-          removedCount += 1;
+          //   if (!songId) {
+          //     console.warn('Skipping unshare-song event with missing songId', { eventName, createdAt, userId });
+          //     failedCount += 1;
+          //     continue;
+          //   }
+          //   await removeSharedSongRecord(songId);
+          //   removedCount += 1;
           continue;
         }
 
