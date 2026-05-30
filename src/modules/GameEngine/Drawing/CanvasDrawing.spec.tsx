@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-react';
+import type { Page } from '@playwright/test';
 import { NotesSection } from '../../../interfaces';
 import { mulitrack } from '../../Songs/utils/song-fixture';
 import { TestCanvas } from '../../utils/TestCanvas';
@@ -6,8 +7,34 @@ import tuple from '../../utils/tuple';
 
 test.use({ viewport: { width: 800, height: 650 } });
 
+const waitForCanvasFixtureSetup = async (page: Page) => {
+  await page.waitForFunction(() => {
+    const { GameState } = global.canvasTestApi;
+
+    return Boolean(GameState.getSong() && GameState.isPlaying() && GameState.getPlayer(0) && GameState.getPlayer(1));
+  });
+};
+
+const waitForCanvasToDraw = async (page: Page) => {
+  await page.waitForFunction(() => {
+    const canvas = document.getElementById('canvas');
+    if (!(canvas instanceof HTMLCanvasElement)) {
+      return false;
+    }
+
+    const context = canvas.getContext('2d');
+    if (!context) {
+      return false;
+    }
+
+    const pixels = context.getImageData(0, 0, canvas.width, canvas.height).data;
+    return pixels.some((channelValue, index) => index % 4 !== 3 && channelValue !== 255);
+  });
+};
+
 test('Should properly draw game state', async ({ mount, page }) => {
   const component = await mount(<TestCanvas width={800} height={650} />);
+  await waitForCanvasFixtureSetup(page);
 
   await page.evaluate(() => {
     const { CanvasDrawing, GameState, DrawingTestInput } = global.canvasTestApi;
@@ -30,11 +57,14 @@ test('Should properly draw game state', async ({ mount, page }) => {
     }
   });
 
+  await waitForCanvasToDraw(page);
+
   await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });
 });
 
 test('should draw missed note above the target note if the distance is positive', async ({ mount, page }) => {
   const component = await mount(<TestCanvas width={800} height={650} />);
+  await waitForCanvasFixtureSetup(page);
 
   await page.evaluate(
     ([mulitrack]) => {
@@ -63,6 +93,8 @@ test('should draw missed note above the target note if the distance is positive'
     },
     tuple([mulitrack]),
   );
+
+  await waitForCanvasToDraw(page);
 
   // Expected - red should be below, blue above the target note
   await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });

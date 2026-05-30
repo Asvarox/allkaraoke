@@ -28,7 +28,7 @@ jobs:
       SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
       SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
       - name: Setup Node
@@ -49,6 +49,6 @@ jobs:
         run: pnpm ts-node scripts/generateSongPopularityIndex.ts
       - name: Auto commit songs
         id: auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
