@@ -119,6 +119,7 @@ stats.html
 /playwright-report/
 /playwright/.cache/
 /blob-report/
+/all-blobs-reports/
 scripts/scraped-bpm-data.json
 scripts/fetchedSongIds.json
 test-results.json

@@ -8,12 +8,13 @@ const FIXTURE_PATH = 'tests/fixtures/songs/shared-cloudflare-e2e.txt';
 
 const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
 
-export const upsertCloudflareSharedSongFixtureOrMock = async (page: Page) => {
+export const upsertCloudflareSharedSongFixtureOrMock = async (page: Page, playwrightBaseUrl?: string) => {
   try {
-    execSync('pnpm shared-song:upsert-fixture', {
+    const baseUrl = playwrightBaseUrl ? new URL(playwrightBaseUrl).origin : 'https://localhost:3000';
+
+    execSync(`pnpm shared-song:upsert-fixture ${baseUrl}`, {
       env: {
         ...process.env,
-        SHARED_SONGS_ADMIN_URL: process.env.PROD_RUN ? 'https://localhost:3010' : 'http://127.0.0.1:8788',
         SHARED_SONGS_ADMIN_TOKEN: 'local-shared-songs-admin-token',
       },
       stdio: 'inherit',

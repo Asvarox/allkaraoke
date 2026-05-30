@@ -24,7 +24,7 @@ const requestSharedSongsAdmin = async (path: string, options: RequestInit) => {
   });
 
   if (!response.ok) {
-    throw new Error(`Shared songs admin request failed (${response.status}): ${await response.text()}`);
+    throw new Error(`Shared songs admin request failed (${url} ${response.status}): ${await response.text()}`);
   }
 
   return response;

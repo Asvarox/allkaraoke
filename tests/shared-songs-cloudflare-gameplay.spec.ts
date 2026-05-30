@@ -21,11 +21,11 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 test.use({ serviceWorkers: 'block' });
 
-test('shared song can transition from Song Selection to active gameplay', async ({ page }) => {
+test('shared song can transition from Song Selection to active gameplay', async ({ page, baseURL }) => {
   test.slow();
 
   await test.step('Upsert shared song fixture into local Cloudflare storage', async () => {
-    await upsertCloudflareSharedSongFixtureOrMock(page);
+    await upsertCloudflareSharedSongFixtureOrMock(page, baseURL);
   });
 
   await page.goto('/?e2e-test');
@@ -40,7 +40,7 @@ test('shared song can transition from Song Selection to active gameplay', async 
   await pages.songLanguagesPage.continueAndGoToSongList();
 
   await pages.songListPage.searchSong(sharedSong.title);
-  await expect(page.locator('[data-group-name="Shared songs (unverified)"]')).toBeVisible();
+  await expect(page.locator('[data-group-name="Unverified"]')).toBeVisible();
   await expect(pages.songListPage.songListContainer.getByText(sharedSong.title).first()).toBeVisible();
 
   await pages.songListPage.openSharedSongSearchResultCard(sharedSong.title, sharedSong.artist);

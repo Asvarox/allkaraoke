@@ -10,11 +10,13 @@ dotenv.config({ path: '.env.local', override: true });
 const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
 
 (async () => {
-  const [fixturePathArg] = process.argv.slice(2);
+  const [fixturePathArg, baseUrlArg] = process.argv.slice(2);
 
   if (!fixturePathArg) {
     throw new Error('Missing fixture path argument');
   }
+
+  process.env.SHARED_SONGS_ADMIN_URL = baseUrlArg ?? 'https://localhost:3000';
 
   const fixturePath = path.resolve(process.cwd(), fixturePathArg);
   if (!fs.existsSync(fixturePath)) {

@@ -28,8 +28,10 @@ runs:
         restore-keys: |
           ${{ runner.os }}-playwright-${{ inputs.project }}
     - run: pnpm playwright install --with-deps chromium ${{ inputs.project }}
+      timeout-minutes: 3
       if: steps.playwright-cache.outputs.cache-hit != 'true'
       shell: bash
     - run: pnpm playwright install-deps ${{ inputs.project }}
+      timeout-minutes: 3
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash

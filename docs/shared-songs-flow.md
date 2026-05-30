@@ -72,7 +72,7 @@ The sync job:
 
 - Search API: `src/modules/Songs/sharedSongs/api.ts` -> `/shared-songs`
 - Song selection merge logic: `src/routes/SingASong/SongSelection/Hooks/useSongList.ts`
-- Shared songs are presented in group: `Shared songs (unverified)`
+- Shared songs are presented in group: `Unverified`
 
 ## 5) KV namespace setup (prod + preview)
 
@@ -185,6 +185,13 @@ Where used:
 pnpm shared-song:upsert-fixture
 ```
 
+Optional: override the admin base URL directly from CLI (useful when test target differs from local default):
+
+```bash
+pnpm shared-song:upsert-fixture -- --base-url http://127.0.0.1:8788
+pnpm shared-song:upsert-fixture -- --base-url https://localhost:3010
+```
+
 6. Verify APIs manually:
 
 ```bash
@@ -210,4 +217,5 @@ curl -s "http://127.0.0.1:8788/shared-song?id=shared-cloudflare-e2e-song"
   - Verify GitHub secrets and target admin URL.
   - Check workflow logs in `.github/workflows/sync-shared-songs.yml`.
 - Local fixture script fails env checks:
-  - Ensure `.env` or `.env.local` has `SHARED_SONGS_ADMIN_URL` and `SHARED_SONGS_ADMIN_TOKEN`.
+  - Ensure `.env` or `.env.local` has `SHARED_SONGS_ADMIN_TOKEN`.
+  - Ensure admin URL is available either from `.env`/`.env.local` (`SHARED_SONGS_ADMIN_URL`) or via `--base-url`.
