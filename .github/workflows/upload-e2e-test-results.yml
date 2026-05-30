@@ -60,7 +60,7 @@ jobs:
               echo "Removing ${#matching_entries[@]} page screenshots from $zip_file"
               zip -d "$zip_file" "${matching_entries[@]}" >/dev/null
             fi
-          done < <(find ./playwright-report -type f -name '*.zip' -print0)
+          done < <(find ./playwright-report -type f -name '*.zip' -size +25M -print0)
 
       - name: Remove files larger than 25MB (limit of Cloudflare Pages)
         if: steps.reports_check.outputs.reports == 'true'
