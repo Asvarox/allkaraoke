@@ -68,7 +68,7 @@ function WaitForReadiness({ onFinish }: Props) {
           Waiting for all players to click <strong>&quot;Ready&quot;</strong>
         </Typography>
       )}
-      <div className="flex flex-col gap-4 [view-transition-name:player-mic-check-container]">
+      <div className="flex w-120 flex-col gap-4 [view-transition-name:player-mic-check-container]">
         {playerStatuses.map(({ confirmed, name, player }) => (
           <div
             className="ph-no-capture flex items-center gap-5"

@@ -77,12 +77,15 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: 'https://localhost:3000',
+    open: false,
     https: {
       // Generated via https://letsencrypt.org/docs/certificates-for-localhost/#making-and-trusting-your-own-certificates
       key: fs.readFileSync(customCert ? keyPath : './config/crt/dummy.key'),
       cert: fs.readFileSync(customCert ? certPath : './config/crt/dummy.pem'),
     },
+  },
+  preview: {
+    open: false,
   },
 
   test: {

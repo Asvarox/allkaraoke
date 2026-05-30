@@ -1,4 +1,4 @@
-import { ForwardedRef, forwardRef, useImperativeHandle, useRef, useState } from 'react';
+import { ForwardedRef, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
 import { seconds } from '~/interfaces';
@@ -25,6 +25,7 @@ interface Props {
   onStateChange?: (state: VideoState) => void;
   width: number;
   height: number;
+  ref?: ForwardedRef<VideoPlayerRef>;
 }
 
 export interface LoadVideByIdOpts {
@@ -46,10 +47,18 @@ export interface VideoPlayerRef {
   getDuration: () => Promise<number>;
 }
 
-export default forwardRef(function YoutubeVideoPlayer(
-  { video, autoplay, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
-  ref: ForwardedRef<VideoPlayerRef>,
-) {
+export default function YoutubeVideoPlayer({
+  video,
+  autoplay,
+  startAt,
+  controls,
+  disablekb,
+  volume,
+  width,
+  height,
+  onStateChange,
+  ref,
+}: Props) {
   const player = useRef<YouTube | null>(null);
   const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
@@ -104,4 +113,4 @@ export default forwardRef(function YoutubeVideoPlayer(
       }}
     />
   );
-});
+}

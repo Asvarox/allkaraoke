@@ -44,12 +44,12 @@ export class SongPreviewPagePO {
 
     await this.page.getByTestId('make-song-go-fast').click();
     if (skipIntro) {
-      const skipIntroInfo = this.page.locator('[data-test="skip-intro-info"]');
+      const locator = this.page.locator('[data-test="skip-intro-info"]');
 
-      await expect(skipIntroInfo)
-        .toBeVisible({ timeout: 5_000 })
+      locator
+        .waitFor({ timeout: 5_000 })
         .then(async () => {
-          const isVisible = await skipIntroInfo.isVisible();
+          const isVisible = await locator.isVisible();
           if (isVisible) {
             await this.page.keyboard.press('Enter');
           }
