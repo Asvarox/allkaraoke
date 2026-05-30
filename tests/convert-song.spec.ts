@@ -1,10 +1,10 @@
 import { expect, test } from '@playwright/test';
-import convertTxtToSong from '~/modules/Songs/utils/convertTxtToSong';
-import getSongId from '~/modules/Songs/utils/getSongId';
+import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
+import getSongId from '~/modules/songs/utils/get-song-id';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 
-import initialise from './PageObjects/initialise';
+import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {

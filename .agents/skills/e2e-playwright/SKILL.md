@@ -64,7 +64,7 @@ Every test file follows this pattern:
 ```ts
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import initialise from './PageObjects/initialise';
+import initialise from './page-objects/initialise';
 
 // All page objects for the test, set up before each test
 let pages: ReturnType<typeof initialise>;

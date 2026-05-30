@@ -11,27 +11,19 @@
     "github": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-github"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
       }
     },
     "chrome-devtools": {
       "command": "npx",
-      "args": [
-        "chrome-devtools-mcp@latest"
-      ]
+      "args": ["chrome-devtools-mcp@latest"]
     },
     "playwright-test": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "playwright",
-        "run-test-mcp-server"
-      ]
+      "args": ["playwright", "run-test-mcp-server"]
     }
   }
 }

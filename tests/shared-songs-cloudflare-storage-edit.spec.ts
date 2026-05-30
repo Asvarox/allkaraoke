@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
-import initialise from './PageObjects/initialise';
 import { initTestMode } from './helpers';
-import { upsertCloudflareSharedSongFixtureOrMock } from './sharedSongsCloudflareFixture';
+import initialise from './page-objects/initialise';
+import { upsertCloudflareSharedSongFixtureOrMock } from './shared-songs-cloudflare-fixture';
 
 const sharedSong = {
   id: 'shared-cloudflare-e2e-song',

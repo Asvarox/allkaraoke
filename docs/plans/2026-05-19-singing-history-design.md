@@ -101,7 +101,7 @@ src/
       usePlayHistory.ts
   routes/routePaths.ts        ← add HISTORY route
   App.tsx                     ← register route
-  routes/Menu/                ← add History button
+  routes/menu/                ← add History button
 ```
 
 ## Out of Scope

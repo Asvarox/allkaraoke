@@ -26,7 +26,7 @@ export const mockSongs = async ({ page }: { page: Page; context: BrowserContext 
   await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
 
   // Return empty popularity data
-  await page.route('/mostPopularSongs.json', (route) => route.fulfill({ status: 200, body: JSON.stringify({}) }));
+  await page.route('/most-popular-songs.json', (route) => route.fulfill({ status: 200, body: JSON.stringify({}) }));
 
   // Intercept each individual song route: /songs/<id>.txt
   for (const song of songs) {

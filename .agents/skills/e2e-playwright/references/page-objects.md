@@ -11,8 +11,8 @@ Convention: class names end with `PO` (e.g. `SongListPagePO`, `GamePagePO`).
 All Page Objects are created in one call at the top of each test file:
 
 ```ts
-// tests/PageObjects/initialise.ts
-import initialise from './PageObjects/initialise';
+// tests/page-objects/initialise.ts
+import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;
 
@@ -99,7 +99,7 @@ Shared step functions live in `tests/steps/` (e.g. `navigateWithKeyboard.ts`, `o
 
 ```
 tests/
-  PageObjects/
+  page-objects/
     initialise.ts        ← creates all POs
     LandingPage.ts
     MainMenuPage.ts
@@ -120,6 +120,6 @@ tests/
 
 ## Adding a New Page Object
 
-1. Create `tests/PageObjects/MyNewPage.ts` following the class structure above.
-2. Import and add it to `tests/PageObjects/initialise.ts`.
+1. Create `tests/page-objects/MyNewPage.ts` following the class structure above.
+2. Import and add it to `tests/page-objects/initialise.ts`.
 3. Access it in tests via `pages.myNewPage`.

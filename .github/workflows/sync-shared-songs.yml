@@ -1,42 +1,42 @@
-name: "Sync shared songs"
+name: 'Sync shared songs'
 
 on:
-    workflow_dispatch:
-        inputs:
-            days_from:
-                description: "How many days back to fetch when cursor is not set"
-                required: false
-                default: ""
-            days_to:
-                description: "How many days back as upper bound when cursor is not set"
-                required: false
-                default: ""
-            cursor:
-                description: "Optional created_at cursor override (ISO date)"
-                required: false
-                default: ""
-    schedule:
-        - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      days_from:
+        description: 'How many days back to fetch when cursor is not set'
+        required: false
+        default: ''
+      days_to:
+        description: 'How many days back as upper bound when cursor is not set'
+        required: false
+        default: ''
+      cursor:
+        description: 'Optional created_at cursor override (ISO date)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '0 */6 * * *'
 
 concurrency:
-    group: sync-shared-songs
-    cancel-in-progress: false
+  group: sync-shared-songs
+  cancel-in-progress: false
 
 jobs:
-    run_script:
-        runs-on: ubuntu-latest
-        env:
-            VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
-            SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
-            SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
-        steps:
-            - uses: actions/checkout@v4
-            - name: Setup Node
-              uses: "./.github/templates/setup-node"
-            - name: Sync shared songs
-              run: |
-                  DAYS_FROM="${{ github.event.inputs.days_from }}"
-                  DAYS_TO="${{ github.event.inputs.days_to }}"
-                  CURSOR="${{ github.event.inputs.cursor }}"
+  run_script:
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+      SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
+      SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Sync shared songs
+        run: |
+          DAYS_FROM="${{ github.event.inputs.days_from }}"
+          DAYS_TO="${{ github.event.inputs.days_to }}"
+          CURSOR="${{ github.event.inputs.cursor }}"
 
-                  pnpm ts-node scripts/cicd/githubActionUploadSharedSongsToCloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+          pnpm ts-node scripts/cicd/github-action-upload-shared-songs-to-cloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"

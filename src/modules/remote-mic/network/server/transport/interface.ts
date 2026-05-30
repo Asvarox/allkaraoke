@@ -1,0 +1,33 @@
+import { NetworkMessages } from '~/modules/remote-mic/network/messages';
+import Listener from '~/modules/utils/listener';
+
+export interface SenderInterface {
+  peer: string;
+
+  send(payload: NetworkMessages): void;
+
+  on(event: string, callback: (data: any) => void): void;
+
+  off(event: string, callback: (data: any) => void): void;
+
+  close(): void;
+}
+
+export type transportCloseReason = string;
+export type transportErrorReason = string;
+
+export interface ServerTransport extends Listener<[NetworkMessages, SenderInterface]> {
+  name: 'WebSockets' | 'PeerJS' | 'PartyKit';
+
+  connect(
+    roomId: string,
+    onConnect: () => void,
+    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+  ): void;
+
+  disconnect(): void;
+
+  getCurrentPing(): number;
+
+  removePlayer(playerId: string): void;
+}

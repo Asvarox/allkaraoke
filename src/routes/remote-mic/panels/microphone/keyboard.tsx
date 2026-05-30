@@ -1,0 +1,126 @@
+import {
+  ArrowBack,
+  ArrowForward,
+  Games,
+  KeyboardArrowDown,
+  KeyboardArrowLeft,
+  KeyboardArrowRight,
+  KeyboardArrowUp,
+  Shuffle,
+} from '@mui/icons-material';
+import { captureException } from '@sentry/react';
+import { twc, TwcComponentProps } from 'react-twc';
+import { Kbd } from '~/modules/elements/akui/kbd';
+import { serverRpc } from '~/modules/remote-mic/network/client';
+import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-subscription';
+import { keyStrokes } from '~/modules/remote-mic/network/messages';
+import RemoteSongSearch from '~/routes/remote-mic/panels/microphone/remote-song-search';
+
+interface Props {
+  onSearchStateChange?: (isActive: boolean) => void;
+}
+
+let exceptionCaptured = false;
+
+export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
+  const keyboard = useSubscription('keyboard-layout');
+
+  const isHorizontal = keyboard?.horizontal !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
+  const isVertical = keyboard?.vertical !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
+
+  const onPress = (key: keyStrokes) => () => {
+    try {
+      navigator?.vibrate?.(100);
+    } catch (e) {
+      if (!exceptionCaptured) {
+        captureException(e, {
+          level: 'warning',
+        });
+        exceptionCaptured = true;
+      }
+    }
+    void serverRpc.input.keystroke(key);
+  };
+
+  return keyboard !== undefined ? (
+    <div data-test="remote-keyboard" className="flex flex-wrap justify-center gap-4">
+      {keyboard?.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
+      {(isHorizontal || isVertical) && (
+        <ActionsContainer>
+          <ArrowsContainer>
+            <ArrowButton
+              onClick={onPress('up')}
+              disabled={!isVertical}
+              data-disabled={!isVertical}
+              data-test="arrow-up">
+              <KeyboardArrowUp />
+            </ArrowButton>
+          </ArrowsContainer>
+          <ArrowsContainer>
+            <ArrowButton
+              onClick={onPress('left')}
+              disabled={!isHorizontal}
+              data-disabled={!isHorizontal}
+              data-test="arrow-left">
+              <KeyboardArrowLeft />
+            </ArrowButton>
+            <ArrowButton disabled data-disabled>
+              <Games />
+            </ArrowButton>
+            <ArrowButton
+              onClick={onPress('right')}
+              disabled={!isHorizontal}
+              data-disabled={!isHorizontal}
+              data-test="arrow-right">
+              <KeyboardArrowRight />
+            </ArrowButton>
+          </ArrowsContainer>
+          <ArrowsContainer>
+            <ArrowButton
+              onClick={onPress('down')}
+              disabled={!isVertical}
+              data-disabled={!isVertical}
+              data-test="arrow-down">
+              <KeyboardArrowDown />
+            </ArrowButton>
+          </ArrowsContainer>
+        </ActionsContainer>
+      )}
+      <ActionsContainer className="gap-4">
+        <ActionButton onClick={onPress('back')} disabled={keyboard?.back === undefined} data-test="keyboard-backspace">
+          {keyboard?.back || (
+            <>
+              <ArrowBack /> Back
+            </>
+          )}
+        </ActionButton>
+        <ActionButton onClick={onPress('accept')} disabled={keyboard?.accept === undefined} data-test="keyboard-enter">
+          {keyboard?.accept || (
+            <>
+              Enter <ArrowForward />
+            </>
+          )}
+        </ActionButton>
+      </ActionsContainer>
+      <ActionsContainer
+        $disabled={keyboard?.shiftR === undefined}
+        data-test="keyboard-shift-r"
+        className="w-full basis-full">
+        <ActionButton onClick={onPress('random')}>
+          <Shuffle /> {keyboard?.shiftR || 'Random Song'}
+        </ActionButton>
+      </ActionsContainer>
+    </div>
+  ) : null;
+}
+
+const ArrowsContainer = twc.div`flex flex-1 justify-center text-xl text-white`;
+
+const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolean }>((props) => [
+  'flex flex-1 flex-col justify-between',
+  props.$disabled ? 'opacity-0' : 'opacity-100',
+]);
+
+const ArrowButton = twc(Kbd)`m-0.5 text-lg`;
+
+const ActionButton = twc(ArrowButton)`w-full`;

@@ -28,8 +28,8 @@ Phones connect via PartyKit (built on Cloudflare Workers). The phone detects pit
 
 - `src/routes/` - Page components matching URL paths defined in `routePaths.ts`
 - `src/modules/` - Reusable modules (GameEngine, Songs, Elements, hooks)
-- `src/modules/Elements/AKUI/` - Custom UI component library (uses `react-twc` for Tailwind variants)
-- `tests/PageObjects/` - Page Object pattern for E2E tests
+- `src/modules/elements/AKUI/` - Custom UI component library (uses `react-twc` for Tailwind variants)
+- `tests/page-objects/` - Page Object pattern for E2E tests
 
 ### Styling
 
@@ -40,7 +40,7 @@ Phones connect via PartyKit (built on Cloudflare Workers). The phone detects pit
 ### Testing Patterns
 
 - **E2E (Playwright)**: Use `data-test` attribute for selectors (`testIdAttribute: 'data-test'`)
-- **Page Objects**: All E2E page interactions go through `tests/PageObjects/*.ts`
+- **Page Objects**: All E2E page interactions go through `tests/page-objects/*.ts`
 - **Mock songs**: Tests use fixtures from `tests/fixtures/songs/*.txt` via `mockSongs()` helper
 - **Simulated devices**: Use `stubUserMedia()` to mock microphone/media devices
 
@@ -93,5 +93,6 @@ pnpm e2e --project="chromium" --headed tests/sing-a-song.spec.ts
 TypeScript paths resolve from `./src` (e.g., `import X from '~/modules/...'`).
 
 ## Coding style
+
 - Avoid using shortened variable names (e.g., `btn`, `img`, `cfg`) - prefer descriptive names (`button`, `image`, `config`)
 - If a piece of code is not obviously clear, add a comment explaining the intent and any non-trivial logic - this applies also to a prop passed to a component

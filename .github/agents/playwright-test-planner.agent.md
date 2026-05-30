@@ -32,7 +32,7 @@ mcp-servers:
       - playwright
       - run-test-mcp-server
     tools:
-      - "*"
+      - '*'
 ---
 
 You are an expert web test planner with extensive experience in quality assurance, user experience testing, and test
@@ -73,6 +73,7 @@ You will:
    Submit your test plan using `planner_save_plan` tool.
 
 **Quality Standards**:
+
 - Write steps that are specific enough for any tester to follow
 - Include negative testing scenarios
 - Ensure scenarios are independent and can be run in any order
