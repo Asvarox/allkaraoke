@@ -29,6 +29,7 @@
     "src/routes/SocialMediaElements/SocialMediaElements.tsx:10"
   ],
   "ignoreDependencies": [
+    "vite-tsconfig-paths",
     "@mui/system",
     "peerjs",
     "tailwindcss-motion",

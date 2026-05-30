@@ -1,17 +1,15 @@
-import { ComponentProps, ForwardedRef, forwardRef } from 'react';
+import { ComponentProps, ForwardedRef } from 'react';
 import isE2E from '~/modules/utils/isE2E';
 import OfflineVideoPlayer from './Offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './Youtube';
 
-const VideoPlayer = forwardRef(
-  (props: ComponentProps<typeof YoutubeVideoPlayer>, ref: ForwardedRef<VideoPlayerRef>) => {
-    if (import.meta.env.VITE_APP_OFFLINE || isE2E()) {
-      return <OfflineVideoPlayer {...props} ref={ref} />;
-    } else {
-      return <YoutubeVideoPlayer {...props} ref={ref} />;
-    }
-  },
-);
+const VideoPlayer = (props: ComponentProps<typeof YoutubeVideoPlayer> & { ref?: ForwardedRef<VideoPlayerRef> }) => {
+  if (import.meta.env.VITE_APP_OFFLINE || isE2E()) {
+    return <OfflineVideoPlayer {...props} />;
+  } else {
+    return <YoutubeVideoPlayer {...props} />;
+  }
+};
 
 export default VideoPlayer;
 

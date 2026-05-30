@@ -4,8 +4,10 @@ import { getSongPreview } from '../src/modules/Songs/utils';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 
+const EXCLUDED_SONGS = ['shared-cloudflare-e2e'];
 const songs = readdirSync('./tests/fixtures/songs/')
   .filter((file) => file.endsWith('.txt'))
+  .filter((file) => !EXCLUDED_SONGS.includes(file.replace('.txt', '')))
   .map((file) => ({
     song: convertTxtToSong(readFileSync(`./tests/fixtures/songs/${file}`, { encoding: 'utf-8' })),
   }));

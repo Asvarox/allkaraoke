@@ -14,11 +14,12 @@ interface Props {
   song: Song | null;
   onExit?: () => void;
   register: ReturnType<typeof useKeyboardNav>['register'];
+  isUnverifiedSharedSong?: boolean;
 }
 
 type reportTypes = 'not-in-sync' | 'too-loud' | 'too-quiet' | 'bad-lyrics';
 
-export default function RateSong({ register, onExit, song }: Props) {
+export default function RateSong({ register, onExit, song, isUnverifiedSharedSong = false }: Props) {
   const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const [issues, setIssues] = useState<reportTypes[]>([]);
@@ -52,10 +53,20 @@ export default function RateSong({ register, onExit, song }: Props) {
     const song = GameState.getSong();
     const properties = {
       songId: song?.id,
+      externalSongId: song?.externalSongId,
       songLastUpdated: song?.lastUpdate,
       inputLag: InputLagSetting.get(),
+      completionPercentage: GameState.getSongCompletionProgress(),
     };
-    if (issues.length) {
+
+    if (isUnverifiedSharedSong) {
+      posthog.capture('rate-unverified-song', {
+        issues,
+        feedbackType: issues.length ? 'bad' : 'ok',
+        isExternalSharedSong: true,
+        ...properties,
+      });
+    } else if (issues.length) {
       posthog.capture('rate-song', { issues, ...properties });
     }
     onExit?.();

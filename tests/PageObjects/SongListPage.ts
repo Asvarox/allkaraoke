@@ -76,6 +76,40 @@ export class SongListPagePO {
     }
   }
 
+  public getSharedSongSearchResult(songTitle: string) {
+    return this.page.getByRole('button', { name: songTitle, exact: true });
+  }
+
+  public get unverifiedSharedSongsGroup() {
+    return this.page.locator('[data-group-name="Unverified"]');
+  }
+
+  public getSharedSongCardById(sharedSongId: string) {
+    return this.page.getByTestId(`song-${sharedSongId}`);
+  }
+
+  public async expectUnverifiedSharedSongsGroupToBeVisible() {
+    await expect(this.unverifiedSharedSongsGroup).toBeVisible();
+  }
+
+  public async expectSharedSongCardToBeVisible(sharedSongId: string) {
+    await expect(this.getSharedSongCardById(sharedSongId)).toBeVisible();
+  }
+
+  public async openSharedSongSearchResultCard(sharedSongId: string) {
+    const sharedSongCard = this.getSharedSongCardById(sharedSongId);
+
+    await expect(sharedSongCard).toBeVisible();
+    await sharedSongCard.click();
+    await this.page.waitForTimeout(100);
+
+    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
+      await this.page.keyboard.press('Enter');
+    }
+
+    await expect(this.page.getByTestId('game-mode-setting')).toBeVisible();
+  }
+
   public get songListContainer() {
     return this.page.locator('[data-test="song-list-container"]');
   }

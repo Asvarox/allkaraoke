@@ -18,6 +18,10 @@ const htmlPrerender = (options: HtmlPrerenderOptions): Plugin => {
     apply: 'build',
     enforce: 'post',
     async closeBundle() {
+      const outDirectoryName = path.basename(config?.build.outDir ?? '');
+      if (outDirectoryName !== 'client') {
+        return;
+      }
       await emitRendered(options, config);
     },
   };
