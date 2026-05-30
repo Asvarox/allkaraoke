@@ -15,6 +15,21 @@
       "preview_id": "4c32b3f25d73438390962814c3c1ed5a",
     },
   ],
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true,
+    },
+    "traces": {
+      "enabled": false,
+      "persist": true,
+      "head_sampling_rate": 1,
+    },
+  },
   // Secrets (SHARED_SONGS_ADMIN_TOKEN) must NOT be committed here.
   // Production: set via `wrangler secret put SHARED_SONGS_ADMIN_TOKEN`
   // Local dev: add to .dev.vars (gitignored), e.g. SHARED_SONGS_ADMIN_TOKEN=your-local-token
