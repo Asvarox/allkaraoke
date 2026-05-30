@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
+          package-manager-cache: false
       - name: Run script
         run: node scripts/monitor-posthog-events.mjs
       - name: 'Decrease attempts count'
