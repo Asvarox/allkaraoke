@@ -1,0 +1,8 @@
+{
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.mjs",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true
+  }
+}
