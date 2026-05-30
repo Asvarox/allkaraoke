@@ -143,6 +143,7 @@
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "rollup-plugin-visualizer": "^6.0.5",
+    "serve": "^14.2.6",
     "serve-handler": "^6.1.6",
     "storybook": "^10.4.1",
     "tailwindcss": "^4.1.18",

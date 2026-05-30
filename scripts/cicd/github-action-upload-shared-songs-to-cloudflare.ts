@@ -8,7 +8,7 @@ import {
   lyricsFitWithinVideoDuration,
   normalizeSharedSongTxt,
 } from '../../src/modules/songs/utils/shared-song-import-processing';
-import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtube-duration-client';
+import { createYoutubeDurationProbeClient } from '../youtube-duration-client';
 import {
   isSharedSongsAdminConfigured,
   removeSharedSongRecord,
@@ -117,7 +117,6 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
-  let durationProbeClient: YoutubeDurationProbeClient | null = null;
   const builtInSongIds = new Set(currentSongs.map((song) => song.id));
 
   const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
@@ -154,6 +153,8 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
       },
     }),
   });
+
+  const durationProbeClient = await createYoutubeDurationProbeClient(8000);
 
   let processedCount = 0;
   let upsertedCount = 0;
@@ -204,9 +205,6 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
         let loadedVideoDurationSeconds: number | undefined;
         if (song.video) {
           try {
-            if (!durationProbeClient) {
-              durationProbeClient = await createYoutubeDurationProbeClient(8000);
-            }
             loadedVideoDurationSeconds = await durationProbeClient.getDuration(song.video);
           } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
@@ -250,9 +248,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
       }
     }
   } finally {
-    if (durationProbeClient) {
-      await durationProbeClient.close();
-    }
+    await durationProbeClient.close();
   }
 
   console.log(

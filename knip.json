@@ -35,7 +35,8 @@
     "tailwindcss-motion",
     "html-minifier",
     "@cloudflare/workers-types",
-    "wrangler"
+    "wrangler",
+    "serve"
   ],
   "ignoreExportsUsedInFile": true,
   "paths": {
