@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useFormContext, useWatch } from 'react-hook-form';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
@@ -18,6 +19,7 @@ import addHeadstart from '~/modules/songs/utils/process-song/add-headstart';
 import normaliseGap from '~/modules/songs/utils/process-song/normalise-gap';
 import normaliseLyricSpaces from '~/modules/songs/utils/process-song/normalise-lyric-spaces';
 import normaliseSectionPaddings from '~/modules/songs/utils/process-song/normalise-section-paddings';
+import { ConvertFormValues, SyncLyricChanges } from '~/routes/convert/convert-form-context';
 import AdjustPlayback from '~/routes/convert/steps/sync-lyrics-to-video/components/adjust-playback';
 import EditSection, { ChangeRecord } from '~/routes/convert/steps/sync-lyrics-to-video/components/edit-section';
 import ManipulateBpm from '~/routes/convert/steps/sync-lyrics-to-video/components/manipulate-bpm';
@@ -28,7 +30,6 @@ import ShortcutIndicator from './components/shortcut-indicator';
 
 interface Props {
   song: Song;
-  onUpdate?: (song: Song) => void;
   visible: boolean;
 }
 
@@ -94,7 +95,8 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
-export default function EditSong({ song, onUpdate, visible }: Props) {
+export default function EditSong({ song, visible }: Props) {
+  const { control, setValue } = useFormContext<ConvertFormValues>();
   const player = useRef<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
@@ -102,12 +104,24 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   const playerWidth = Math.min(width - 16, 824);
   const playerHeight = (playerWidth / 16) * 9;
 
-  const [gapShift, setGapShift] = useState<string>('0');
-  const [videoGapShift, setVideoGapShift] = useState<number>(0);
-  const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
-  const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
-  const [trackNames, setTrackNames] = useState(song.tracks.map((track) => track.name ?? undefined));
-  const [lyricChanges, setLyricChanges] = useState<Record<number, Record<number, Record<number, string>>>>({});
+  const gapShift = useWatch({ control, name: 'sync.gapShift' });
+  const videoGapShift = useWatch({ control, name: 'sync.videoGapShift' });
+  const overrideBpm = useWatch({ control, name: 'sync.overrideBpm' });
+  const changeRecords = (useWatch({ control, name: 'sync.changeRecords' }) ?? []) as ChangeRecord[];
+  const trackNames = useWatch({ control, name: 'sync.trackNames' }) ?? [];
+  const lyricChanges = (useWatch({ control, name: 'sync.lyricChanges' }) ?? {}) as SyncLyricChanges;
+
+  useEffect(() => {
+    if (trackNames.length === song.tracks.length) {
+      return;
+    }
+
+    setValue(
+      'sync.trackNames',
+      song.tracks.map((track) => track.name ?? undefined),
+      { shouldDirty: true },
+    );
+  }, [setValue, song.tracks, trackNames.length]);
 
   const newSong = useMemo(() => {
     let processed = cloneDeep(song);
@@ -128,8 +142,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   }, [gapShift, videoGapShift, song, overrideBpm, changeRecords, trackNames, lyricChanges]);
 
   useEffect(() => {
-    onUpdate?.(newSong);
-  }, [onUpdate, newSong]);
+    setValue('editedSong', newSong, { shouldDirty: true });
+  }, [newSong, setValue]);
 
   const singSetup = useMemo<SingSetup>(
     () => ({
@@ -248,19 +262,35 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     },
     [newSong],
   );
-  useHotkeys('a', () => {
-    setGapShift((current) => String(Number(current) - 50));
-  });
-  useHotkeys('s', () => {
-    setGapShift((current) => String(Number(current) + 50));
-  });
+  useHotkeys(
+    'a',
+    () => {
+      setValue('sync.gapShift', String(Number(gapShift) - 50), { shouldDirty: true });
+    },
+    [gapShift, setValue],
+  );
+  useHotkeys(
+    's',
+    () => {
+      setValue('sync.gapShift', String(Number(gapShift) + 50), { shouldDirty: true });
+    },
+    [gapShift, setValue],
+  );
 
-  useHotkeys('z', () => {
-    setOverrideBpm((current) => current - 0.1);
-  });
-  useHotkeys('x', () => {
-    setOverrideBpm((current) => current + 0.1);
-  });
+  useHotkeys(
+    'z',
+    () => {
+      setValue('sync.overrideBpm', overrideBpm - 0.1, { shouldDirty: true });
+    },
+    [overrideBpm, setValue],
+  );
+  useHotkeys(
+    'x',
+    () => {
+      setValue('sync.overrideBpm', overrideBpm + 0.1, { shouldDirty: true });
+    },
+    [overrideBpm, setValue],
+  );
 
   return (
     <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
@@ -319,16 +349,21 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 player={player.current}
                 onChange={(newShift) => {
                   const delta = newShift - videoGapShift;
-                  setVideoGapShift(newShift);
+                  setValue('sync.videoGapShift', newShift, { shouldDirty: true });
                   // video gap is not automatically added to gap, need to adjust it here directly
-                  setGapShift((current) =>
-                    !isNaN(Number(current)) ? String(Number(current) + delta * 1000) : current,
-                  );
+                  if (!isNaN(Number(gapShift))) {
+                    setValue('sync.gapShift', String(Number(gapShift) + delta * 1000), { shouldDirty: true });
+                  }
                 }}
                 current={videoGapShift}
                 finalGap={newSong.videoGap}
               />
-              <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
+              <ShiftGap
+                player={player.current}
+                onChange={(nextValue) => setValue('sync.gapShift', nextValue, { shouldDirty: true })}
+                current={gapShift}
+                finalGap={newSong.gap}
+              />
             </div>
           </Grid>
           <Grid item xs={0} sm={4} className="hidden sm:block">
@@ -344,7 +379,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <Typography variant={'h5'} mb={2}>
               Advanced
             </Typography>
-            <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
+            <ManipulateBpm
+              onChange={(nextValue) => setValue('sync.overrideBpm', nextValue, { shouldDirty: true })}
+              current={overrideBpm}
+              song={newSong}
+              key={newSong.gap}
+            />
           </Grid>
           <Grid item xs={0} sm={4} className="hidden sm:block">
             <div className="mb-2 text-xs">
@@ -365,27 +405,35 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               song={newSong}
               beatLength={beatLength}
               player={player.current}
-              onRecordChange={setChangeRecords}
+              onRecordChange={(records) => setValue('sync.changeRecords', records, { shouldDirty: true })}
               onTrackNameChange={(track, newName) =>
-                setTrackNames((current) => {
-                  const newNames = [...current];
-                  newNames[track] = newName === '' ? undefined : newName;
+                setValue(
+                  'sync.trackNames',
+                  (() => {
+                    const newNames = [...trackNames];
+                    newNames[track] = newName === '' ? undefined : newName;
 
-                  return newNames;
-                })
+                    return newNames;
+                  })(),
+                  { shouldDirty: true },
+                )
               }
               lyricChanges={lyricChanges}
               onLyricChange={(change) =>
-                setLyricChanges((current) => ({
-                  ...current,
-                  [change.track]: {
-                    ...current[change.track],
-                    [change.section]: {
-                      ...current[change.track]?.[change.section],
-                      [change.noteIndex]: change.newLyric,
+                setValue(
+                  'sync.lyricChanges',
+                  {
+                    ...lyricChanges,
+                    [change.track]: {
+                      ...lyricChanges[change.track],
+                      [change.section]: {
+                        ...lyricChanges[change.track]?.[change.section],
+                        [change.noteIndex]: change.newLyric,
+                      },
                     },
                   },
-                }))
+                  { shouldDirty: true },
+                )
               }
             />
           </Grid>

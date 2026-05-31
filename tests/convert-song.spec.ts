@@ -84,6 +84,17 @@ test('Convert song', async ({ page }) => {
     await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
   });
 
+  await test.step('Discard unapplied txt draft after a structured edit', async () => {
+    await pages.songEditAuthorAndVideoPage.goBackToBasicInfoStep();
+    await pages.songEditBasicInfoPage.enterSongTXT(txtfile.replace('#TITLE:test', '#TITLE:Discarded Draft'));
+    await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
+    await pages.songEditAuthorAndVideoPage.enterAuthorName(`${FINAL_AUTHOR} Updated`);
+    await pages.songEditAuthorAndVideoPage.goBackToBasicInfoStep();
+    await pages.songEditBasicInfoPage.expectSongTXTNotToContain('Discarded Draft');
+    await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
+    await pages.songEditAuthorAndVideoPage.enterAuthorName(FINAL_AUTHOR);
+  });
+
   await test.step('Make sure entered in previous step data stays', async () => {
     await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
     await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
@@ -246,7 +257,7 @@ test('Convert song', async ({ page }) => {
   });
 
   await test.step('Set song volume', async () => {
-    const autoGenVolume = '1';
+    const autoGenVolume = '0.25';
 
     await expect(pages.songEditMetadataPage.currentSongVolumeLevel).toHaveValue(autoGenVolume);
     await pages.songEditMetadataPage.setTheVolumeOfTheSong(FINAL_VOLUME);

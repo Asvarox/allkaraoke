@@ -104,9 +104,6 @@ export default function YoutubeVideoPlayer({
           modestbranding: 1,
         },
       }}
-      onPlaybackRateChange={(e) => {
-        console.log('onPlaybackRateChange', e.data);
-      }}
       onStateChange={(e) => {
         setCurrentStatus(e.data);
         onStateChange?.(stateMap[e.data]);

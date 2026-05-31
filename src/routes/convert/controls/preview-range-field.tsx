@@ -1,79 +1,66 @@
 import { Slider } from '@mui/material';
-import { useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
+import { useFormContext, useWatch } from 'react-hook-form';
 import YouTube from 'react-youtube';
 import backgroundMusic from '~/assets/funk-cool-groove-(no-copyright-music)-by-anwar-amr.ogg';
-import { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
+import { ConvertFormValues } from '~/routes/convert/convert-form-context';
 import { msec } from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';
-
-interface Props {
-  onChange: (data: SongMetadataEntity) => void;
-  data: SongMetadataEntity;
-  videoId: string;
-  videoGap?: number;
-}
 
 const MIN_PREVIEW_LENGTH = 10;
 
-export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, videoGap = 0 }: Props) {
+interface PreviewRangeFieldProps {
+  videoGap?: number;
+  videoId: string;
+}
+
+function PreviewRangeField({ videoId, videoGap = 0 }: PreviewRangeFieldProps) {
+  const { control, setValue } = useFormContext<ConvertFormValues>();
+  const previewStartValue = useWatch({ control, name: 'metadata.previewStart' });
+  const previewEndValue = useWatch({ control, name: 'metadata.previewEnd' });
   const player = useRef<YouTube | null>(null);
   const reference = useRef<HTMLAudioElement | null>(null);
-
-  const [initialised, setInitialised] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      if (!initialised) {
-        if (data.volume === 0) {
-          onChange({ ...data, volume: 0.7 });
-          await player.current?.getInternalPlayer()?.setVolume(70);
-        } else {
-          await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
-        }
-        setInitialised(true);
-      } else {
-        const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
-        if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
-          onChange({ ...data, volume: currentVolume / 100 });
-        }
-      }
-    }, 500);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [initialised, data, onChange]);
-
+  const [duration, setDuration] = useState<number | null>(null);
   const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
   const [isReferencePlaying, setIsReferencePlaying] = useState(false);
 
-  const handleSliderChange = async (_e: unknown, value: number | number[]) => {
-    await player.current?.getInternalPlayer()?.setVolume(+value * 100);
-    onChange({ ...data, volume: +value });
-  };
+  const previewStart = previewStartValue ?? videoGap + 60;
+  const previewEnd = previewEndValue ?? previewStart + 30;
 
-  const previewStart = data.previewStart ?? videoGap + 60;
-  const previewEnd = data.previewEnd ?? previewStart + 30;
-  const [duration, setDuration] = useState<number | null>(null);
-  useEffect(() => {
+  const syncReferenceAndDuration = (internalPlayer: { getDuration?: () => number | Promise<number> } | null) => {
     if (reference.current) {
       reference.current.currentTime = 35;
     }
-    player.current?.getInternalPlayer()?.getDuration().then(setDuration);
-  }, []);
+
+    if (!internalPlayer || typeof internalPlayer.getDuration !== 'function') {
+      return;
+    }
+
+    const durationResult = internalPlayer.getDuration();
+
+    if (typeof durationResult === 'number') {
+      setDuration(durationResult);
+      return;
+    }
+
+    if (durationResult && typeof durationResult.then === 'function') {
+      durationResult.then((nextDuration) => {
+        if (typeof nextDuration === 'number') {
+          setDuration(nextDuration);
+        }
+      });
+    }
+  };
 
   useEffect(() => {
     if (duration !== null && duration < previewEnd) {
       const singableLength = Math.max(duration - videoGap - MIN_PREVIEW_LENGTH, 0) / 2;
       const start = Math.max(videoGap + singableLength, 0);
-      const end = Math.max(start + MIN_PREVIEW_LENGTH, duration);
+      const end = Math.min(start + MIN_PREVIEW_LENGTH, duration);
 
-      onChange({
-        ...data,
-        previewStart: start,
-        previewEnd: end,
-      });
+      setValue('metadata.previewStart', start, { shouldDirty: true });
+      setValue('metadata.previewEnd', end, { shouldDirty: true });
     }
-  }, [duration, data, previewEnd, onChange, videoGap]);
+  }, [duration, previewEnd, setValue, videoGap]);
 
   const internalPlayer = player.current?.getInternalPlayer();
 
@@ -90,20 +77,17 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           step={1}
           value={[previewStart, previewEnd]}
           max={(duration ?? 500) - MIN_PREVIEW_LENGTH}
-          onChange={(_e, value) => {
+          getAriaLabel={() => 'Preview'}
+          onChange={(_event, value) => {
             const [start, end] = value as number[];
             if (end - start > MIN_PREVIEW_LENGTH) {
-              onChange({
-                ...data,
-                previewStart: start,
-                previewEnd: end,
-              });
+              setValue('metadata.previewStart', start, { shouldDirty: true });
+              setValue('metadata.previewEnd', end, { shouldDirty: true });
             }
           }}
         />
       </div>
 
-      <h4>Adjust volume</h4>
       <div className="flex flex-col gap-10 lg:flex-row">
         <div className="flex flex-1 flex-col gap-2">
           <h5>Song</h5>
@@ -113,16 +97,20 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
             }}
             videoId={videoId}
             ref={player}
+            onReady={() => {
+              const internalPlayer = player.current?.getInternalPlayer();
+              syncReferenceAndDuration(internalPlayer ?? null);
+            }}
             onPlay={() => {
               setIsPlayerPlaying(true);
 
               if (isReferencePlaying) {
                 reference.current?.pause();
-                setTimeout(() => setIsReferencePlaying(true), 200);
+                setIsReferencePlaying(false);
               }
             }}
             onPause={() => {
-              setIsReferencePlaying(false);
+              setIsPlayerPlaying(false);
             }}
           />
         </div>
@@ -135,9 +123,9 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
             controls
             src={backgroundMusic}
             loop
-            onLoad={(e) => (e.currentTarget.currentTime = 35)}
-            onPlay={(e) => {
-              e.currentTarget.volume = 0.5;
+            onLoadedMetadata={(event) => (event.currentTarget.currentTime = 35)}
+            onPlay={(event) => {
+              event.currentTarget.volume = 0.5;
               setIsReferencePlaying(true);
               if (isPlayerPlaying) {
                 player.current?.getInternalPlayer()?.pauseVideo();
@@ -153,18 +141,8 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           />
         </div>
       </div>
-      <h5>Final Song Volume ({data.volume * 100})</h5>
-      <div className="px-5">
-        <Slider
-          data-test="volume"
-          min={0.1}
-          max={1}
-          step={0.01}
-          aria-label="Volume"
-          value={data.volume}
-          onChange={handleSliderChange}
-        />
-      </div>
     </div>
   );
 }
+
+export default memo(PreviewRangeField);

@@ -10,6 +10,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
+import { reactDevtools } from 'agent-react-devtools/vite';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';
@@ -25,6 +26,7 @@ export default defineConfig({
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
   plugins: [
+    reactDevtools(),
     process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(),
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
