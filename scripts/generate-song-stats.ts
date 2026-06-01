@@ -33,4 +33,4 @@ songStats.artists = Array.from(artistSongCounts.entries())
 
 songStats.songs = index.length;
 
-writeFileSync('./src/routes/LandingPage/songStats.json', JSON.stringify(songStats, undefined, 2));
+writeFileSync('./src/routes/landing-page/song-stats.json', JSON.stringify(songStats, undefined, 2));
