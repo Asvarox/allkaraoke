@@ -124,12 +124,15 @@ dotenv.config({ path: '.env.local' });
     }
 
     console.log('Updating song data');
-    execSync(`pnpm ts-node scripts/updateLastUpdate.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`, {
-      stdio: 'inherit',
-    });
+    execSync(
+      `pnpm ts-node scripts/update-last-update.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`,
+      {
+        stdio: 'inherit',
+      },
+    );
 
     console.log('Updating song stats');
-    execSync(`pnpm ts-node scripts/generateSongStats.ts`, { stdio: 'inherit' });
+    execSync(`pnpm ts-node scripts/generate-song-stats.ts`, { stdio: 'inherit' });
 
     if (isSharedSongsAdminConfigured()) {
       console.log('Cleaning up promoted shared songs from Cloudflare pending pool');
