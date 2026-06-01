@@ -111,6 +111,7 @@ export default function BasicData(props: Props) {
           <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
             <Button onClick={() => fixAccents('polish')}>Fix 🇵🇱 Polish accents</Button>
             <Button onClick={() => fixAccents('spanish')}>Fix 🇪🇸 Spanish accents</Button>
+            <Button onClick={() => fixAccents('french')}>Fix 🇫🇷 French accents</Button>
           </Box>
         </>
       ) : (
