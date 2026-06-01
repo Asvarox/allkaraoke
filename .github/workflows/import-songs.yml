@@ -5,7 +5,7 @@ on:
     inputs:
       user_id:
         description: 'PostHog user IDs (comma separated) to import songs from'
-        required: true
+        required: false
         default: ''
       days_from:
         description: 'The days from which to import songs. `2` (so NOW - 48h) by default'
@@ -39,7 +39,7 @@ jobs:
           project: 'chromium'
       - name: Get songs
         if: github.event_name == 'workflow_dispatch'
-        run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"
+        run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ github.event.inputs.user_id || secrets.DEFAULT_IMPORT_USER_IDS }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"
       - name: Get songs scheduled
         if: github.event_name == 'schedule'
         run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ secrets.DEFAULT_IMPORT_USER_IDS }}" "" ""
