@@ -87918,6 +87918,65 @@
     "local": false
   },
   {
+    "id": "kpop-demon-hunters-huntrx-golden",
+    "title": "Golden",
+    "artist": "KPop Demon Hunters (Huntr/x)",
+    "video": "yebNIHKAC4A",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 246,
+    "gap": 18534.39024390244,
+    "year": "2025",
+    "lastUpdate": "2026-06-01T15:00:34.710Z",
+    "genre": "Soundtrack, Pop",
+    "realBpm": 123,
+    "previewStart": 64,
+    "previewEnd": 96,
+    "volume": 0.77,
+    "author": "javinava, Dragon33",
+    "duration": 199,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5841,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntershuntrxgolden",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-huntrx-what-it-sounds-like",
+    "title": "What It Sounds Like",
+    "artist": "KPop Demon Hunters (Huntr/x)",
+    "video": "yYo9PA61RGU",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 658.2644628099173,
+    "year": "2025",
+    "lastUpdate": "2026-06-01T15:00:41.571Z",
+    "genre": "Soundtrack, Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Lara",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31090",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5842,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntershuntrxwhatitsoundslike",
+    "local": false
+  },
+  {
     "id": "kraftklub-feat-tokio-hotel-fahr-mit-mir-4x4",
     "title": "Fahr mit mir (4x4)",
     "artist": "Kraftklub feat. Tokio Hotel",
@@ -92254,6 +92313,33 @@
     "local": false
   },
   {
+    "id": "laufey-lover-girl",
+    "title": "Lover Girl",
+    "artist": "Laufey",
+    "video": "obLSGG-oEyw",
+    "language": [
+      "English"
+    ],
+    "bpm": 381.72,
+    "gap": 4125.60452687834,
+    "year": "2025",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-06-01T15:00:41.932Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "Djirtou",
+    "duration": 170,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5844,
+    "tracksCount": 1,
+    "search": "laufeylovergirl",
+    "local": false
+  },
+  {
     "id": "laura-pausini-en-cambio-no",
     "title": "En cambio no",
     "artist": "Laura Pausini",
@@ -95763,6 +95849,63 @@
     "local": false
   },
   {
+    "id": "little-mix-black-magic",
+    "title": "Black Magic",
+    "artist": "Little Mix",
+    "video": "MkElfR_NPBI",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.02,
+    "gap": 15115.625390590127,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-01T15:00:34.706Z",
+    "genre": "Pop",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "amro98",
+    "sourceUrl": "Little Mix - Black Magic",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5840,
+    "tracksCount": 1,
+    "search": "littlemixblackmagic",
+    "local": false
+  },
+  {
+    "id": "little-mix-change-your-life",
+    "title": "Change Your Life",
+    "artist": "Little Mix",
+    "video": "ifRoMGG8Wvs",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 18577.5,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-01T15:00:34.031Z",
+    "realBpm": 17,
+    "volume": 0.5,
+    "author": "Sing-Girl",
+    "sourceUrl": "Little Mix - Change Your Life",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5836,
+    "tracksCount": 1,
+    "search": "littlemixchangeyourlife",
+    "local": false
+  },
+  {
     "id": "little-mix-dna",
     "title": "DNA",
     "artist": "Little Mix",
@@ -95879,6 +96022,62 @@
     "local": false
   },
   {
+    "id": "little-mix-feat-ty-dolla-ign-think-about-us",
+    "title": "Think About Us",
+    "artist": "Little Mix feat. Ty Dolla $ign",
+    "video": "Ygiz-CPVrcM",
+    "language": [
+      "English"
+    ],
+    "bpm": 351.94,
+    "gap": 1579.7192703301698,
+    "year": "2019",
+    "lastUpdate": "2026-06-01T15:00:34.044Z",
+    "realBpm": 26,
+    "volume": 0.5,
+    "author": "Sing-Girl",
+    "sourceUrl": "Little Mix feat. Ty Dolla $ign - Think About Us",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5839,
+    "tracksCount": 1,
+    "search": "littlemixfeattydollaignthinkaboutus",
+    "local": false
+  },
+  {
+    "id": "little-mix-holiday",
+    "title": "Holiday",
+    "artist": "Little Mix",
+    "video": "kHMXNPkNTTQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 212,
+    "gap": 2259.433962264151,
+    "year": "2020",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-01T15:00:34.038Z",
+    "genre": "Pop",
+    "realBpm": 27,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "sourceUrl": "Little Mix - Holiday",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5837,
+    "tracksCount": 1,
+    "search": "littlemixholiday",
+    "local": false
+  },
+  {
     "id": "little-mix-silent-night",
     "title": "Silent Night",
     "artist": "Little Mix",
@@ -95911,6 +96110,34 @@
     "shortId": 2621,
     "tracksCount": 2,
     "search": "littlemixsilentnight",
+    "local": false
+  },
+  {
+    "id": "little-mix-you-gotta-not",
+    "title": "You Gotta Not",
+    "artist": "Little Mix",
+    "video": "j4_YpumVEcE",
+    "language": [
+      "English"
+    ],
+    "bpm": 359.57,
+    "gap": 3848.804127151876,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-01T15:00:34.041Z",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "Sing-Girl",
+    "sourceUrl": "Little Mix - You Gotta Not",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5838,
+    "tracksCount": 1,
+    "search": "littlemixyougottanot",
     "local": false
   },
   {
@@ -118124,6 +118351,34 @@
     "shortId": 5073,
     "tracksCount": 1,
     "search": "omchowbizarre",
+    "local": false
+  },
+  {
+    "id": "omi-cheerleader-felix-jaehn-remix",
+    "title": "Cheerleader (Felix Jaehn Remix)",
+    "artist": "OMI",
+    "video": "i1Jp-V4jalI",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 23853.050847457627,
+    "year": "2014",
+    "artistOrigin": "JM",
+    "lastUpdate": "2026-06-01T15:00:41.719Z",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "snake84, fepo",
+    "sourceUrl": "OMI - Cheerleader (Felix Jaehn Remix)",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5843,
+    "tracksCount": 1,
+    "search": "omicheerleaderfelixjaehnremix",
     "local": false
   },
   {
