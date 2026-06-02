@@ -1,6 +1,43 @@
+import { execSync } from 'child_process';
 import { uniq } from 'es-toolkit';
-import { writeFileSync } from 'fs';
+import { existsSync, statSync, writeFileSync } from 'fs';
 import { SongPreview } from '~/interfaces';
+
+const targetFile = './src/routes/landing-page/song-stats.json';
+
+// Skip running the script if the target file has been modified in the last 4 days
+if (existsSync(targetFile)) {
+  let lastModifiedTime = 0;
+
+  try {
+    const gitTimeStr = execSync(`git log -1 --format=%ct -- "${targetFile}"`, { encoding: 'utf-8' }).trim();
+    if (gitTimeStr) {
+      lastModifiedTime = parseInt(gitTimeStr, 10) * 1000;
+    }
+  } catch (error) {
+    console.warn('Failed to get last commit time via git:', error);
+  }
+
+  // Fallback to fs.stat mtime if git failed or returned nothing
+  if (!lastModifiedTime) {
+    try {
+      lastModifiedTime = statSync(targetFile).mtimeMs;
+    } catch (error) {
+      console.warn('Failed to get file mtime via stat:', error);
+    }
+  }
+
+  if (lastModifiedTime) {
+    const fourDaysInMs = 4 * 24 * 60 * 60 * 1000;
+    const timeSinceLastChange = Date.now() - lastModifiedTime;
+    if (timeSinceLastChange < fourDaysInMs) {
+      console.log(
+        `Skipping song stats generation: target file was modified ${(timeSinceLastChange / (24 * 60 * 60 * 1000)).toFixed(2)} days ago (limit is 4 days).`,
+      );
+      process.exit(0);
+    }
+  }
+}
 
 const songStats = {
   artists: [] as string[],
@@ -33,4 +70,4 @@ songStats.artists = Array.from(artistSongCounts.entries())
 
 songStats.songs = index.length;
 
-writeFileSync('./src/routes/landing-page/song-stats.json', JSON.stringify(songStats, undefined, 2));
+writeFileSync(targetFile, JSON.stringify(songStats, undefined, 2));
