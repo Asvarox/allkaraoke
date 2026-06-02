@@ -44,3 +44,4 @@ jobs:
           CURSOR="${{ github.event.inputs.cursor }}"
 
           pnpm ts-node scripts/cicd/github-action-upload-shared-songs-to-cloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+          pnpm ts-node scripts/cicd/regenerate-shared-songs-index.ts "${{ secrets.SHARED_SONGS_ADMIN_URL }}"

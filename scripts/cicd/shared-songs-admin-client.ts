@@ -58,3 +58,9 @@ export const removeSharedSongRecord = async (externalSongId: string) => {
     method: 'DELETE',
   });
 };
+
+export const regenerateSharedSongIndex = async () => {
+  await requestSharedSongsAdmin('/shared-songs-admin', {
+    method: 'PUT',
+  });
+};
