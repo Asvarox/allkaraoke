@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "fca1c7e784f30201eb70628bacedbc31129c9fca" };
+		e.SENTRY_RELEASE = { id: "d38b4a8551bcb5cc69eb75b1256244e1780e3d52" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0e6f90dd-b629-4388-b06e-e009843e7b7a", e._sentryDebugIdIdentifier = "sentry-dbid-0e6f90dd-b629-4388-b06e-e009843e7b7a");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "457bda49-b93d-4fe4-8bc4-9224399d6a62", e._sentryDebugIdIdentifier = "sentry-dbid-457bda49-b93d-4fe4-8bc4-9224399d6a62");
 	} catch (e) {}
 })();
 var API_HOST = "eu.i.posthog.com";
@@ -70,29 +70,47 @@ var SHARED_SONG_KEY_PREFIX = "shared-song:";
 var INDEX_KEY = "shared-songs-index";
 var getStorageKey = (externalSongId) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
 var getIndex = async (kvNamespace) => await kvNamespace.get(INDEX_KEY, "json") ?? [];
-var addToIndex = async (kvNamespace, externalSongId) => {
+var addToIndex = async (kvNamespace, entry) => {
 	const index = await getIndex(kvNamespace);
-	if (!index.includes(externalSongId)) await kvNamespace.put(INDEX_KEY, JSON.stringify([...index, externalSongId]));
+	if (!index.some(({ songId }) => songId === entry.songId)) await kvNamespace.put(INDEX_KEY, JSON.stringify([...index, entry]));
 };
 var removeFromIndex = async (kvNamespace, externalSongId) => {
 	const index = await getIndex(kvNamespace);
-	await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((id) => id !== externalSongId)));
+	await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter(({ songId }) => songId !== externalSongId)));
 };
 var listSharedSongs = async (kvNamespace) => {
-	const index = await getIndex(kvNamespace);
-	return (await Promise.all(index.map((id) => kvNamespace.get(getStorageKey(id), "json")))).filter((record) => record !== null);
+	return await getIndex(kvNamespace);
 };
 var getSharedSong = (kvNamespace, externalSongId) => kvNamespace.get(getStorageKey(externalSongId), "json");
 var upsertSharedSong = async (kvNamespace, record) => {
 	const storageKey = getStorageKey(record.externalSongId);
 	await kvNamespace.put(storageKey, JSON.stringify(record));
-	await addToIndex(kvNamespace, record.externalSongId);
+	await addToIndex(kvNamespace, {
+		songId: record.songId,
+		artist: record.artist,
+		title: record.title,
+		language: record.language,
+		videoId: record.videoId
+	});
 };
 var removeSharedSong = async (kvNamespace, externalSongId) => {
 	if (!await getSharedSong(kvNamespace, externalSongId)) return false;
 	await kvNamespace.delete(getStorageKey(externalSongId));
 	await removeFromIndex(kvNamespace, externalSongId);
 	return true;
+};
+var regenerateIndex = async (kvNamespace) => {
+	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
+	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
+		return await kvNamespace.get(name, "json");
+	}))).filter((record) => record !== null).map(({ songId, artist, title, language, videoId }) => ({
+		songId,
+		artist,
+		title,
+		language,
+		videoId
+	}));
+	await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));
 };
 //#endregion
 //#region functions/shared-song.ts
@@ -149,7 +167,7 @@ var onRequest$2 = async ({ request, env }) => {
 		});
 		const normalizedQuery = query.toLowerCase();
 		const songs = (await listSharedSongs(env.SHARED_SONGS_KV)).filter((song) => song.artist.toLowerCase().includes(normalizedQuery) || song.title.toLowerCase().includes(normalizedQuery) || song.language.some((language) => language.toLowerCase().includes(normalizedQuery))).slice(0, limit).map((song) => ({
-			externalSongId: song.externalSongId,
+			externalSongId: song.songId,
 			songId: song.songId,
 			artist: song.artist,
 			title: song.title,
@@ -204,6 +222,10 @@ var onRequest$1 = async ({ request, env }) => {
 				status: 404,
 				headers: responseHeaders
 			});
+			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders });
+		}
+		if (request.method === "PUT") {
+			await regenerateIndex(env.SHARED_SONGS_KV);
 			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders });
 		}
 		return new Response(JSON.stringify({ error: "Method not allowed" }), {
