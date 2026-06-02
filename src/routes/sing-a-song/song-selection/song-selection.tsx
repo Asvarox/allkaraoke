@@ -153,7 +153,33 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   }, [width, selectedPlaylist, filters.search, isLoading, handleResize]);
 
   const navigate = useSmoothNavigate();
-  useHotkeys('Shift + E', () => navigate(buildUrl(`edit/song/`, { playlist: null, step: 'metadata' })), [navigate]);
+  useHotkeys(
+    'Shift + E',
+    () => {
+      if (document.fullscreenElement !== null) {
+        document.exitFullscreen().catch(console.warn);
+      }
+      if (songPreview?.isUnverifiedSharedSong && songPreview.externalSongId) {
+        navigate(
+          buildUrl(`edit/song/`, {
+            playlist: null,
+            step: 'sync',
+            song: null,
+            externalSong: songPreview.externalSongId,
+          }),
+        );
+      } else {
+        navigate(
+          buildUrl(`edit/song/`, {
+            playlist: null,
+            step: 'metadata',
+            externalSong: null,
+          }),
+        );
+      }
+    },
+    [navigate, songPreview],
+  );
 
   useEventEffect(
     events.remoteSongSelected,
