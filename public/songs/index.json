@@ -4554,6 +4554,36 @@
     "local": false
   },
   {
+    "id": "agnieszka-chylinska-winna",
+    "title": "Winna",
+    "artist": "Agnieszka Chylińska",
+    "video": "n5vmk7FBbiI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 279.5999999999999,
+    "gap": 26342.14285714286,
+    "year": "2004",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-03T00:45:54.136Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 0.73,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30407",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5851,
+    "tracksCount": 1,
+    "search": "agnieszkachylinskawinna",
+    "local": false
+  },
+  {
     "id": "ahmad-band-aku-cinta-kau-dan-dia",
     "title": "Aku Cinta Kau Dan Dia",
     "artist": "Ahmad Band",
@@ -38807,6 +38837,34 @@
     "local": false
   },
   {
+    "id": "dara-bangaranga",
+    "title": "Bangaranga",
+    "artist": "DARA",
+    "video": "J3oGYo_mekw",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 5707.35294117647,
+    "year": "2026",
+    "artistOrigin": "BG",
+    "lastUpdate": "2026-06-03T00:45:53.758Z",
+    "edition": "ESC 2026",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 188,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5848,
+    "tracksCount": 1,
+    "search": "darabangaranga",
+    "local": false
+  },
+  {
     "id": "darin-money-for-nothing",
     "title": "Money For Nothing",
     "artist": "Darin",
@@ -46651,6 +46709,35 @@
     "shortId": 1336,
     "tracksCount": 1,
     "search": "doasinfinitymysteriousmagic",
+    "local": false
+  },
+  {
+    "id": "doda-bad-girls",
+    "title": "Bad Girls",
+    "artist": "Doda",
+    "video": "gfY74ogx1rI",
+    "language": [
+      "English"
+    ],
+    "bpm": 274,
+    "gap": 6524.598540145986,
+    "year": "2010",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-03T00:45:53.996Z",
+    "genre": "Rock",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "<span style=\"text-decoration:line-through;\">michas17j</span>",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=9838",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5849,
+    "tracksCount": 1,
+    "search": "dodabadgirls",
     "local": false
   },
   {
@@ -87929,7 +88016,7 @@
     "bpm": 246,
     "gap": 18534.39024390244,
     "year": "2025",
-    "lastUpdate": "2026-06-01T15:00:34.710Z",
+    "lastUpdate": "2026-05-31T17:14:11.144Z",
     "genre": "Soundtrack, Pop",
     "realBpm": 123,
     "previewStart": 64,
@@ -87948,6 +88035,64 @@
     "local": false
   },
   {
+    "id": "kpop-demon-hunters-huntrx-how-its-done",
+    "title": "How It’s Done",
+    "artist": "KPop Demon Hunters (Huntr/x)",
+    "video": "QGsevnbItdU",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 11685.625,
+    "year": "2025",
+    "lastUpdate": "2026-06-03T00:45:53.591Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 144,
+    "volume": 0.81,
+    "author": "Lara",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=103587",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31148",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5847,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntershuntrxhowitsdone",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-huntrx-takedown",
+    "title": "Takedown",
+    "artist": "KPop Demon Hunters (Huntr/x)",
+    "video": "om96KysABLM",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 280,
+    "gap": 4732.142857142857,
+    "year": "2025",
+    "lastUpdate": "2026-06-03T00:45:53.998Z",
+    "genre": "Kpop",
+    "realBpm": 140,
+    "volume": 0.79,
+    "author": "ZG",
+    "duration": 189,
+    "tracks": [
+      {
+        "name": "Takedown",
+        "start": 19
+      }
+    ],
+    "shortId": 5850,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntershuntrxtakedown",
+    "local": false
+  },
+  {
     "id": "kpop-demon-hunters-huntrx-what-it-sounds-like",
     "title": "What It Sounds Like",
     "artist": "KPop Demon Hunters (Huntr/x)",
@@ -87958,7 +88103,7 @@
     "bpm": 242,
     "gap": 658.2644628099173,
     "year": "2025",
-    "lastUpdate": "2026-06-01T15:00:41.571Z",
+    "lastUpdate": "2026-05-31T17:15:14.725Z",
     "genre": "Soundtrack, Pop",
     "realBpm": 120,
     "volume": 1,
@@ -87974,6 +88119,35 @@
     "shortId": 5842,
     "tracksCount": 1,
     "search": "kpopdemonhuntershuntrxwhatitsoundslike",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-saja-boys-your-idol",
+    "title": "Your Idol",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "cWppAbqm9I8",
+    "language": [
+      "English"
+    ],
+    "bpm": 365,
+    "gap": 11803.698630136987,
+    "year": "2025",
+    "lastUpdate": "2026-06-03T00:45:52.961Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 90,
+    "volume": 0.78,
+    "author": "Lara",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=103587",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31144",
+    "duration": 120,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5845,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboysyouridol",
     "local": false
   },
   {
@@ -92324,7 +92498,7 @@
     "gap": 4125.60452687834,
     "year": "2025",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-06-01T15:00:41.932Z",
+    "lastUpdate": "2026-05-31T20:33:25.337Z",
     "realBpm": 88,
     "volume": 1,
     "author": "Djirtou",
@@ -95860,7 +96034,7 @@
     "gap": 15115.625390590127,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-01T15:00:34.706Z",
+    "lastUpdate": "2025-07-27T06:31:24.504Z",
     "genre": "Pop",
     "realBpm": 17,
     "volume": 0.5,
@@ -95889,7 +96063,7 @@
     "gap": 18577.5,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-01T15:00:34.031Z",
+    "lastUpdate": "2025-07-27T06:31:24.487Z",
     "realBpm": 17,
     "volume": 0.5,
     "author": "Sing-Girl",
@@ -96032,7 +96206,7 @@
     "bpm": 351.94,
     "gap": 1579.7192703301698,
     "year": "2019",
-    "lastUpdate": "2026-06-01T15:00:34.044Z",
+    "lastUpdate": "2025-07-27T06:31:24.499Z",
     "realBpm": 26,
     "volume": 0.5,
     "author": "Sing-Girl",
@@ -96060,7 +96234,7 @@
     "gap": 2259.433962264151,
     "year": "2020",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-01T15:00:34.038Z",
+    "lastUpdate": "2025-07-27T06:31:24.490Z",
     "genre": "Pop",
     "realBpm": 27,
     "volume": 0.5,
@@ -96124,7 +96298,7 @@
     "gap": 3848.804127151876,
     "year": "2016",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-01T15:00:34.041Z",
+    "lastUpdate": "2025-07-27T06:31:24.495Z",
     "realBpm": 16,
     "volume": 0.5,
     "author": "Sing-Girl",
@@ -118365,7 +118539,7 @@
     "gap": 23853.050847457627,
     "year": "2014",
     "artistOrigin": "JM",
-    "lastUpdate": "2026-06-01T15:00:41.719Z",
+    "lastUpdate": "2025-07-27T06:31:24.507Z",
     "realBpm": 24,
     "volume": 0.5,
     "author": "snake84, fepo",
@@ -123596,6 +123770,36 @@
     "shortId": 3454,
     "tracksCount": 1,
     "search": "pietpiraathalloween",
+    "local": false
+  },
+  {
+    "id": "pimpinela-a-esa",
+    "title": "A esa",
+    "artist": "Pimpinela",
+    "video": "vdFCr0XOu7o",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 463.88,
+    "gap": 7228.585582478227,
+    "year": "1983",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-03T00:45:53.589Z",
+    "genre": "Ballad",
+    "realBpm": 172,
+    "previewStart": 46,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "kalel2010",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "shortId": 5846,
+    "tracksCount": 1,
+    "search": "pimpinelaaesa",
     "local": false
   },
   {
