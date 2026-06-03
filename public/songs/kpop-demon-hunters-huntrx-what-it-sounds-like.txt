@@ -9,7 +9,7 @@
 #GAP:658,2644628099173
 #ALLKARAOKE_ID:kpop-demon-hunters-huntrx-what-it-sounds-like
 #ALLKARAOKE_SID:5842
-#ALLKARAOKE_LASTUPDATE:2026-06-01T15:00:41.571Z
+#ALLKARAOKE_LASTUPDATE:2026-05-31T17:15:14.725Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=31090
