@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { SongPreview } from '~/interfaces';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { getSharedSongsSearch } from '~/modules/songs/shared-songs/api';
@@ -17,19 +17,39 @@ export default function useSharedSongsSearch({
   existingSongIds,
 }: Props) {
   const [sharedSongs, setSharedSongs] = useState<SongPreview[]>([]);
+  const [isFetching, setIsFetching] = useState(false);
   const trimmedSearch = searchText.trim();
   const shouldFetchSharedSongs = trimmedSearch.length > 0 && regularResultsCount < fallbackThreshold;
   const debouncedSearch = useDebounce(trimmedSearch, 350);
+  const isWaitingForDebounce = shouldFetchSharedSongs && debouncedSearch !== trimmedSearch;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let isActive = true;
+    const clearResults = () => {
+      if (sharedSongs.length > 0) {
+        setSharedSongs([]);
+      }
+
+      if (isFetching) {
+        setIsFetching(false);
+      }
+    };
 
     if (!shouldFetchSharedSongs || !debouncedSearch) {
-      setSharedSongs([]);
+      clearResults();
       return () => {
         isActive = false;
       };
     }
+
+    if (isWaitingForDebounce) {
+      clearResults();
+      return () => {
+        isActive = false;
+      };
+    }
+
+    setIsFetching(true);
 
     getSharedSongsSearch(debouncedSearch).then((songs) => {
       if (!isActive) return;
@@ -71,12 +91,16 @@ export default function useSharedSongsSearch({
         }));
 
       setSharedSongs(mappedSongs);
+      setIsFetching(false);
     });
 
     return () => {
       isActive = false;
     };
-  }, [debouncedSearch, shouldFetchSharedSongs, existingSongIds]);
+  }, [debouncedSearch, shouldFetchSharedSongs, existingSongIds, isWaitingForDebounce]);
 
-  return sharedSongs;
+  return {
+    sharedSongs,
+    isLoading: shouldFetchSharedSongs && (isWaitingForDebounce || isFetching),
+  };
 }

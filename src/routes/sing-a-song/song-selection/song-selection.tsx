@@ -69,6 +69,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     filters,
     showFilters,
     isLoading,
+    sharedSongsLoading,
     randomSong,
     selectedPlaylist,
     setSelectedPlaylist,
@@ -98,7 +99,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
-  const loading = isLoading || !groupedSongList || !width;
+  const loading = isLoading || sharedSongsLoading || !groupedSongList || !width;
   const forceFlag = selectedPlaylist === 'Eurovision';
 
   const container = useRef<HTMLDivElement>(null);
@@ -258,7 +259,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               <GroupRow>
                 <SongGroupHeader />
               </GroupRow>
-              {new Array(4).fill(0).map((_, i) => (
+              {new Array(sharedSongsLoading ? 1 : 4).fill(0).map((_, i) => (
                 <ListRow key={i}>
                   {new Array(songsPerRow).fill(0).map((_, j) => (
                     <div
