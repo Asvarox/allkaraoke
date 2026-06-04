@@ -9,7 +9,7 @@
 #GAP:11685,625
 #ALLKARAOKE_ID:kpop-demon-hunters-huntrx-how-its-done
 #ALLKARAOKE_SID:5847
-#ALLKARAOKE_LASTUPDATE:2026-06-03T00:45:53.591Z
+#ALLKARAOKE_LASTUPDATE:2026-06-02T07:13:30.567Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=103587
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=31148

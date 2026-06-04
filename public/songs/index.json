@@ -175,6 +175,35 @@
     "local": false
   },
   {
+    "id": "2-unlimited-no-limit-no-rap-version",
+    "title": "No Limit! (No Rap Version)",
+    "artist": "2 Unlimited",
+    "video": "exLG0XWM_Dg",
+    "language": [
+      "English"
+    ],
+    "bpm": 282,
+    "gap": 58289.36170212766,
+    "year": "1992",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-06-04T00:46:12.196Z",
+    "genre": "Eurodance",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "2 Unlimited - No Limit! (No Rap Version)",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5856,
+    "tracksCount": 1,
+    "search": "2unlimitednolimitnorapversion",
+    "local": false
+  },
+  {
     "id": "2-unlimited-no-limit",
     "title": "No limit",
     "artist": "2 Unlimited",
@@ -4565,7 +4594,7 @@
     "gap": 26342.14285714286,
     "year": "2004",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-06-03T00:45:54.136Z",
+    "lastUpdate": "2026-06-02T16:48:13.328Z",
     "genre": "Pop",
     "realBpm": 140,
     "volume": 0.73,
@@ -22645,6 +22674,35 @@
     "local": false
   },
   {
+    "id": "blue-system-sorry-little-sarah",
+    "title": "Sorry Little Sarah",
+    "artist": "Blue System",
+    "video": "fxCeAj6stf4",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.78,
+    "gap": 10688.138737422003,
+    "year": "1987",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-04T00:46:18.635Z",
+    "genre": "Dance",
+    "realBpm": 28,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "sourceUrl": "Blue System - Sorry Little Sarah",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5864,
+    "tracksCount": 1,
+    "search": "bluesystemsorrylittlesarah",
+    "local": false
+  },
+  {
     "id": "blur-girls-boys",
     "title": "Girls & Boys",
     "artist": "Blur",
@@ -23490,6 +23548,35 @@
     "shortId": 661,
     "tracksCount": 1,
     "search": "bonjoviyougiveloveabadname",
+    "local": false
+  },
+  {
+    "id": "boney-m-bahama-mama",
+    "title": "Bahama Mama",
+    "artist": "Boney M.",
+    "video": "y_J3OYH-AAo",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.9,
+    "gap": 29188.85340515583,
+    "year": "1979",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-04T00:46:16.234Z",
+    "genre": "Dance",
+    "realBpm": 16,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Boney M. - Bahama Mama",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5861,
+    "tracksCount": 1,
+    "search": "boneymbahamamama",
     "local": false
   },
   {
@@ -38848,7 +38935,7 @@
     "gap": 5707.35294117647,
     "year": "2026",
     "artistOrigin": "BG",
-    "lastUpdate": "2026-06-03T00:45:53.758Z",
+    "lastUpdate": "2026-06-02T11:13:52.137Z",
     "edition": "ESC 2026",
     "realBpm": 110,
     "volume": 1,
@@ -46723,7 +46810,7 @@
     "gap": 6524.598540145986,
     "year": "2010",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-06-03T00:45:53.996Z",
+    "lastUpdate": "2026-06-02T16:28:49.688Z",
     "genre": "Rock",
     "realBpm": 124,
     "volume": 1,
@@ -56911,6 +56998,34 @@
     "shortId": 1615,
     "tracksCount": 1,
     "search": "filterheymanniceshot",
+    "local": false
+  },
+  {
+    "id": "filterfunk-sos-message-in-a-bottle",
+    "title": "S.O.S. (Message In A Bottle)",
+    "artist": "Filterfunk",
+    "video": "kdg3r41khFY",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.33,
+    "gap": 4000.4740137517765,
+    "year": "2006",
+    "lastUpdate": "2026-06-04T00:46:16.104Z",
+    "genre": "Dance",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "Leroidukitch",
+    "sourceUrl": "Filterfunk - S.O.S. (Message In A Bottle)",
+    "duration": 183,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5860,
+    "tracksCount": 1,
+    "search": "filterfunksosmessageinabottle",
     "local": false
   },
   {
@@ -78317,6 +78432,34 @@
     "local": false
   },
   {
+    "id": "jj-wasted-love",
+    "title": "Wasted Love",
+    "artist": "JJ",
+    "video": "-ieSTNpxvio",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 5541.481481481482,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:19.960Z",
+    "edition": "ESC 2025",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5865,
+    "tracksCount": 1,
+    "search": "jjwastedlove",
+    "local": false
+  },
+  {
     "id": "joan-jett-bad-reputation",
     "title": "Bad reputation",
     "artist": "Joan Jett",
@@ -88045,7 +88188,7 @@
     "bpm": 320,
     "gap": 11685.625,
     "year": "2025",
-    "lastUpdate": "2026-06-03T00:45:53.591Z",
+    "lastUpdate": "2026-06-02T07:13:30.567Z",
     "genre": "Soundtrack, K-Pop",
     "realBpm": 144,
     "volume": 0.81,
@@ -88075,7 +88218,7 @@
     "bpm": 280,
     "gap": 4732.142857142857,
     "year": "2025",
-    "lastUpdate": "2026-06-03T00:45:53.998Z",
+    "lastUpdate": "2026-06-02T16:47:00.310Z",
     "genre": "Kpop",
     "realBpm": 140,
     "volume": 0.79,
@@ -88132,7 +88275,7 @@
     "bpm": 365,
     "gap": 11803.698630136987,
     "year": "2025",
-    "lastUpdate": "2026-06-03T00:45:52.961Z",
+    "lastUpdate": "2026-06-01T19:54:56.487Z",
     "genre": "Soundtrack, K-Pop",
     "realBpm": 90,
     "volume": 0.78,
@@ -90267,6 +90410,35 @@
     "shortId": 2450,
     "tracksCount": 1,
     "search": "lazarraevidemment",
+    "local": false
+  },
+  {
+    "id": "laban-love-in-siberia",
+    "title": "Love In Siberia",
+    "artist": "Laban",
+    "video": "2CWRDZGehWI",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.9,
+    "gap": 19738.28863346105,
+    "year": "1985",
+    "artistOrigin": "DK",
+    "lastUpdate": "2026-06-04T00:46:15.955Z",
+    "genre": "Dance",
+    "realBpm": 24,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Laban - Love In Siberia",
+    "duration": 290,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5859,
+    "tracksCount": 1,
+    "search": "labanloveinsiberia",
     "local": false
   },
   {
@@ -94158,6 +94330,35 @@
     "shortId": 2566,
     "tracksCount": 1,
     "search": "lilpeepfeatliltracyawfulthings",
+    "local": false
+  },
+  {
+    "id": "lil-suzy-take-me-in-your-arms",
+    "title": "Take Me In Your Arms",
+    "artist": "Lil Suzy",
+    "video": "jBSfQJM9scw",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.78,
+    "gap": 17819.136509930137,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:18.312Z",
+    "genre": "Dance",
+    "realBpm": 20,
+    "volume": 0.5,
+    "author": "shadowgnom",
+    "sourceUrl": "Lil Suzy - Take Me In Your Arms",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5862,
+    "tracksCount": 1,
+    "search": "lilsuzytakemeinyourarms",
     "local": false
   },
   {
@@ -103026,6 +103227,35 @@
     "local": false
   },
   {
+    "id": "mark-oh-love-song",
+    "title": "Love Song",
+    "artist": "Mark ’Oh",
+    "video": "8JOYfYXAtUM",
+    "language": [
+      "English"
+    ],
+    "bpm": 326,
+    "gap": 10277.730061349694,
+    "year": "1994",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-04T00:46:11.922Z",
+    "genre": "Eurodance",
+    "realBpm": 30,
+    "volume": 0.5,
+    "author": "fepo",
+    "sourceUrl": "Mark ’Oh - Love Song",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5854,
+    "tracksCount": 1,
+    "search": "markohlovesong",
+    "local": false
+  },
+  {
     "id": "mark-ronson-feat-bruno-mars-uptown-funk",
     "title": "Uptown Funk",
     "artist": "Mark Ronson feat. Bruno Mars",
@@ -103687,6 +103917,64 @@
     "shortId": 2862,
     "tracksCount": 1,
     "search": "marshmelloxjonasbrothersleavebeforeyouloveme",
+    "local": false
+  },
+  {
+    "id": "martha-reeves-the-vandellas-jimmy-mack",
+    "title": "Jimmy Mack",
+    "artist": "Martha Reeves & The Vandellas",
+    "video": "HupG0f2jnIA",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": 2176.7175572519086,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:11.267Z",
+    "genre": "R&B",
+    "realBpm": 25,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Martha Reeves & The Vandellas - Jimmy Mack",
+    "duration": 191,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5852,
+    "tracksCount": 1,
+    "search": "marthareevesthevandellasjimmymack",
+    "local": false
+  },
+  {
+    "id": "martha-reeves-the-vandellas-nowhere-to-run",
+    "title": "Nowhere To Run",
+    "artist": "Martha Reeves & The Vandellas",
+    "video": "WR9pvGtyiHg",
+    "language": [
+      "English"
+    ],
+    "bpm": 257,
+    "gap": 6007.782101167315,
+    "year": "1965",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:11.921Z",
+    "genre": "R&B",
+    "realBpm": 29,
+    "volume": 0.5,
+    "author": "IC",
+    "sourceUrl": "Martha Reeves & The Vandellas - Nowhere To Run",
+    "duration": 176,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5853,
+    "tracksCount": 1,
+    "search": "marthareevesthevandellasnowheretorun",
     "local": false
   },
   {
@@ -123784,7 +124072,7 @@
     "gap": 7228.585582478227,
     "year": "1983",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-03T00:45:53.589Z",
+    "lastUpdate": "2026-06-01T19:56:42.091Z",
     "genre": "Ballad",
     "realBpm": 172,
     "previewStart": 46,
@@ -144358,6 +144646,34 @@
     "local": false
   },
   {
+    "id": "steve-aoki-feat-walk-off-the-earth-home-well-go-take-my-hand",
+    "title": "Home We’ll Go (Take My Hand)",
+    "artist": "Steve Aoki feat. Walk off the Earth",
+    "video": "kAwSQq44O_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.07,
+    "gap": 16780.291581622027,
+    "year": "2015",
+    "lastUpdate": "2026-06-04T00:46:12.198Z",
+    "genre": "Dance",
+    "realBpm": 22,
+    "volume": 0.5,
+    "author": "Phoenix69",
+    "sourceUrl": "Steve Aoki feat. Walk off the Earth - Home We’ll Go (Take My Hand)",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5857,
+    "tracksCount": 1,
+    "search": "steveaokifeatwalkofftheearthhomewellgotakemyhand",
+    "local": false
+  },
+  {
     "id": "steve-lacy-bad-habit",
     "title": "Bad Habit",
     "artist": "Steve Lacy",
@@ -150061,6 +150377,36 @@
     "shortId": 4214,
     "tracksCount": 1,
     "search": "taylorswiftstyle",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-the-fate-of-ophelia",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "video": "ko70cExuzZM",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 17261.774193548386,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:15.952Z",
+    "genre": "Pop",
+    "videoGap": 3,
+    "realBpm": 124,
+    "volume": 0.85,
+    "author": "kolakao",
+    "sourceUrl": "https://www.youtube.com/watch?v=ko70cExuzZM",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5858,
+    "tracksCount": 1,
+    "search": "taylorswiftthefateofophelia",
     "local": false
   },
   {
@@ -166110,6 +166456,34 @@
     "local": false
   },
   {
+    "id": "venetian-princess-the-edge-of-glory",
+    "title": "The Edge Of Glory",
+    "artist": "Venetian Princess",
+    "video": "frUEyPtYH7c",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.98,
+    "gap": 7533.828424095633,
+    "year": "2011",
+    "lastUpdate": "2026-06-04T00:46:12.062Z",
+    "genre": "Dance Pop",
+    "realBpm": 19,
+    "volume": 0.5,
+    "author": "claudio bertozzi",
+    "sourceUrl": "Venetian Princess - The Edge Of Glory",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5855,
+    "tracksCount": 1,
+    "search": "venetianprincesstheedgeofglory",
+    "local": false
+  },
+  {
     "id": "vengaboys-boom-boom-boom-boom",
     "title": "Boom, Boom, Boom, Boom!!",
     "artist": "Vengaboys",
@@ -167512,6 +167886,34 @@
     "shortId": 4674,
     "tracksCount": 1,
     "search": "warrenzevonwerewolvesoflondon",
+    "local": false
+  },
+  {
+    "id": "was-not-was-spy-in-the-house-of-love",
+    "title": "Spy In The House Of Love",
+    "artist": "Was (Not Was)",
+    "video": "7eDJdfcDNKw",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.83,
+    "gap": 20862.31777127592,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-04T00:46:18.451Z",
+    "genre": "Funk, Soul, Dance",
+    "realBpm": 21,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "Was (Not Was) - Spy In The House Of Love",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5863,
+    "tracksCount": 1,
+    "search": "wasnotwasspyinthehouseoflove",
     "local": false
   },
   {
