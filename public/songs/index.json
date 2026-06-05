@@ -186,7 +186,7 @@
     "gap": 58289.36170212766,
     "year": "1992",
     "artistOrigin": "NL",
-    "lastUpdate": "2026-06-04T00:46:12.196Z",
+    "lastUpdate": "2025-07-27T06:31:24.524Z",
     "genre": "Eurodance",
     "realBpm": 21,
     "volume": 0.5,
@@ -22685,7 +22685,7 @@
     "gap": 10688.138737422003,
     "year": "1987",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-04T00:46:18.635Z",
+    "lastUpdate": "2025-07-27T06:31:24.546Z",
     "genre": "Dance",
     "realBpm": 28,
     "volume": 0.5,
@@ -23562,7 +23562,7 @@
     "gap": 29188.85340515583,
     "year": "1979",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-04T00:46:16.234Z",
+    "lastUpdate": "2025-07-27T06:31:24.535Z",
     "genre": "Dance",
     "realBpm": 16,
     "volume": 0.5,
@@ -39574,6 +39574,35 @@
     "shortId": 1123,
     "tracksCount": 1,
     "search": "davidbustamantealexdoshombresyundestino",
+    "local": false
+  },
+  {
+    "id": "david-christie-saddle-up",
+    "title": "Saddle Up",
+    "artist": "David Christie",
+    "video": "NDbEXC0Zedg",
+    "language": [
+      "English"
+    ],
+    "bpm": 222.18,
+    "gap": 8307.307588441805,
+    "year": "1982",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-06-05T00:38:49.353Z",
+    "genre": "Dance",
+    "realBpm": 32,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "sourceUrl": "David Christie - Saddle Up",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5866,
+    "tracksCount": 1,
+    "search": "davidchristiesaddleup",
     "local": false
   },
   {
@@ -57011,7 +57040,7 @@
     "bpm": 260.33,
     "gap": 4000.4740137517765,
     "year": "2006",
-    "lastUpdate": "2026-06-04T00:46:16.104Z",
+    "lastUpdate": "2025-07-27T06:31:24.532Z",
     "genre": "Dance",
     "realBpm": 32,
     "volume": 0.5,
@@ -78443,7 +78472,7 @@
     "gap": 5541.481481481482,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:19.960Z",
+    "lastUpdate": "2026-06-03T20:18:13.119Z",
     "edition": "ESC 2025",
     "realBpm": 81,
     "volume": 1,
@@ -80683,6 +80712,34 @@
     "shortId": 2189,
     "tracksCount": 1,
     "search": "josejoseamaryquerer",
+    "local": false
+  },
+  {
+    "id": "jose-jose-desesperado",
+    "title": "Desesperado",
+    "artist": "Jose Jose",
+    "video": "GSbQZVbQEfc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 283.0999999999998,
+    "gap": 13743.478873239437,
+    "year": "1982",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-05T00:38:50.052Z",
+    "realBpm": 64,
+    "volume": 1,
+    "author": "kaim21",
+    "sourceUrl": "https://www.youtube.com/watch?v=GSbQZVbQEfc",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5867,
+    "tracksCount": 1,
+    "search": "josejosedesesperado",
     "local": false
   },
   {
@@ -90424,7 +90481,7 @@
     "gap": 19738.28863346105,
     "year": "1985",
     "artistOrigin": "DK",
-    "lastUpdate": "2026-06-04T00:46:15.955Z",
+    "lastUpdate": "2025-07-27T06:31:24.529Z",
     "genre": "Dance",
     "realBpm": 24,
     "volume": 0.5,
@@ -94344,7 +94401,7 @@
     "gap": 17819.136509930137,
     "year": "1991",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:18.312Z",
+    "lastUpdate": "2025-07-27T06:31:24.537Z",
     "genre": "Dance",
     "realBpm": 20,
     "volume": 0.5,
@@ -103238,7 +103295,7 @@
     "gap": 10277.730061349694,
     "year": "1994",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-04T00:46:11.922Z",
+    "lastUpdate": "2025-07-27T06:31:24.519Z",
     "genre": "Eurodance",
     "realBpm": 30,
     "volume": 0.5,
@@ -103931,7 +103988,7 @@
     "gap": 2176.7175572519086,
     "year": "1966",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:11.267Z",
+    "lastUpdate": "2025-07-27T06:31:24.511Z",
     "genre": "R&B",
     "realBpm": 25,
     "volume": 0.5,
@@ -103960,7 +104017,7 @@
     "gap": 6007.782101167315,
     "year": "1965",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:11.921Z",
+    "lastUpdate": "2025-07-27T06:31:24.514Z",
     "genre": "R&B",
     "realBpm": 29,
     "volume": 0.5,
@@ -134615,6 +134672,35 @@
     "local": false
   },
   {
+    "id": "sabrina-carpenter-manchild",
+    "title": "Manchild",
+    "artist": "Sabrina Carpenter",
+    "video": "aSugSGCC12I",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 4084.3902439024387,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-05T00:38:50.054Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=31022",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5868,
+    "tracksCount": 1,
+    "search": "sabrinacarpentermanchild",
+    "local": false
+  },
+  {
     "id": "sabrina-carpenter-nonsense",
     "title": "Nonsense",
     "artist": "Sabrina Carpenter",
@@ -144656,7 +144742,7 @@
     "bpm": 240.07,
     "gap": 16780.291581622027,
     "year": "2015",
-    "lastUpdate": "2026-06-04T00:46:12.198Z",
+    "lastUpdate": "2025-07-27T06:31:24.526Z",
     "genre": "Dance",
     "realBpm": 22,
     "volume": 0.5,
@@ -150391,7 +150477,7 @@
     "gap": 17261.774193548386,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:15.952Z",
+    "lastUpdate": "2026-06-03T16:29:34.778Z",
     "genre": "Pop",
     "videoGap": 3,
     "realBpm": 124,
@@ -166466,7 +166552,7 @@
     "bpm": 255.98,
     "gap": 7533.828424095633,
     "year": "2011",
-    "lastUpdate": "2026-06-04T00:46:12.062Z",
+    "lastUpdate": "2025-07-27T06:31:24.522Z",
     "genre": "Dance Pop",
     "realBpm": 19,
     "volume": 0.5,
@@ -167900,7 +167986,7 @@
     "gap": 20862.31777127592,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-04T00:46:18.451Z",
+    "lastUpdate": "2025-07-27T06:31:24.543Z",
     "genre": "Funk, Soul, Dance",
     "realBpm": 21,
     "volume": 0.5,
