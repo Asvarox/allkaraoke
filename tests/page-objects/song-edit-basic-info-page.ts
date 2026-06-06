@@ -1,5 +1,7 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 export class SongEditBasicInfoPagePO {
   constructor(
     private page: Page,
@@ -37,6 +39,18 @@ export class SongEditBasicInfoPagePO {
 
   public async enterSongTXT(txtFile: string) {
     await this.txtInput.fill(txtFile);
+  }
+
+  public get applyTxtButton() {
+    return this.page.getByTestId('apply-txt-button');
+  }
+
+  public async applyTxt() {
+    await this.applyTxtButton.click();
+  }
+
+  public async expectSongTXTNotToContain(text: string) {
+    await expect(this.txtInput).not.toHaveValue(new RegExp(escapeRegExp(text)));
   }
 
   public get duplicateSongAlert() {

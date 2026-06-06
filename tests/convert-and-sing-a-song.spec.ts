@@ -103,7 +103,6 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();

@@ -1,4 +1,4 @@
-import { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
+import { ConvertFormValues } from '~/routes/convert/convert-form-context';
 
 export default async function importSongFromSource(url: string) {
   try {
@@ -14,7 +14,7 @@ export default async function importSongFromSource(url: string) {
   }
 }
 
-async function importUltrastarEsSong(url: string): Promise<AuthorAndVidEntity> {
+async function importUltrastarEsSong(url: string): Promise<ConvertFormValues['authorAndVideo']> {
   const response = await fetch(`/proxy?url=${encodeURIComponent(url)}`);
   const text = await response.text();
 
@@ -34,7 +34,7 @@ async function importUltrastarEsSong(url: string): Promise<AuthorAndVidEntity> {
   };
 }
 
-async function importUsDbAnimuxSong(url: string, obj: URL): Promise<AuthorAndVidEntity> {
+async function importUsDbAnimuxSong(url: string, obj: URL): Promise<ConvertFormValues['authorAndVideo']> {
   const response = await fetch(`/proxy?url=${encodeURIComponent(url)}`);
   const text = await response.text();
 

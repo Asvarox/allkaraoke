@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "react-devtools": {
+      "source": "callstackincubator/agent-react-devtools",
+      "sourceType": "github",
+      "skillPath": "packages/agent-react-devtools/skills/react-devtools/SKILL.md",
+      "computedHash": "f914845954227725e3a2e8504e10779e79c1adde046b43c9046bf49e7ef262d1"
+    }
+  }
+}
