@@ -14,6 +14,7 @@ import SongDao from '~/modules/songs/songs-service';
 import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
+import { updateAdminSharedSong } from '~/routes/admin/shared-songs-admin-api';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
 import SongMetadata, { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
@@ -22,6 +23,7 @@ import { shareSong } from '~/routes/edit/share-songs-modal';
 
 interface Props {
   song?: Song;
+  adminSharedSongExternalId?: string;
 }
 
 function isEmptyValue<T>(v: T | T[] | undefined) {
@@ -30,7 +32,7 @@ function isEmptyValue<T>(v: T | T[] | undefined) {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
-export default function ConvertView({ song }: Props) {
+export default function ConvertView({ song, adminSharedSongExternalId }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
@@ -39,6 +41,7 @@ export default function ConvertView({ song }: Props) {
   const initialStep = useQueryParam('step') as ValuesType<typeof steps> | null;
   const [currentStep, setCurrentStep] = useState(Math.max(0, steps.indexOf(initialStep!)));
   const [isSaving, setIsSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
 
   useEffect(() => {
@@ -186,24 +189,39 @@ export default function ConvertView({ song }: Props) {
 
   const saveSong = async () => {
     setIsSaving(true);
-    if (redirect) {
-      // dont wait for the share to finish if redirect is set
-      SongDao.store(finalSong!);
-      shareSong(finalSong!.id);
-      navigate(`${redirect}?previousSongId=${finalSong!.id}`);
-    } else {
+    setSaveError(null);
+
+    try {
+      if (redirect && !adminSharedSongExternalId) {
+        // dont wait for the share to finish if redirect is set
+        SongDao.store(finalSong!);
+        shareSong(finalSong!.id);
+        navigate(`${redirect}?previousSongId=${finalSong!.id}`);
+        return;
+      }
+
       await SongDao.store(finalSong!);
       await shareSong(finalSong!.id);
+
+      if (adminSharedSongExternalId) {
+        await updateAdminSharedSong(adminSharedSongExternalId, finalSong!);
+        navigate('admin/');
+        return;
+      }
+
       navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+    } catch (error) {
+      setSaveError(error instanceof Error ? error.message : 'Failed to save song');
+    } finally {
+      setIsSaving(false);
     }
-    setIsSaving(false);
   };
 
   const onNextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep((current) => current + 1);
     } else if (steps[currentStep] === 'metadata') {
-      saveSong();
+      void saveSong();
     }
   };
 
@@ -306,6 +324,7 @@ export default function ConvertView({ song }: Props) {
                 </b>
               </Alert>
             )}
+            {saveError && <Alert severity="error">{saveError}</Alert>}
             <Paper
               sx={{
                 position: 'fixed',
