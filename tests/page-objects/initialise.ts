@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { Calibration } from '../components/calibration';
+import { AdminSharedSongsPagePO } from './admin-shared-songs-page';
 import { AdvancedConnectionPagePO } from './advanced-connection-page';
 import { ComputersMicConnectionPagePO } from './computers-mic-connection-page';
 import { EditSongsPagePO } from './edit-songs-page';
@@ -30,6 +31,7 @@ import { SongPreviewPagePO } from './song-preview-page';
 export default function initialise(page: Page, context: BrowserContext, browser: Browser) {
   return {
     landingPage: new LandingPagePO(page, context, browser),
+    adminSharedSongsPage: new AdminSharedSongsPagePO(page, context, browser),
     inputSelectionPage: new InputSelectionPagePO(page, context, browser),
     mainMenuPage: new MainMenuPagePO(page, context, browser),
     songLanguagesPage: new SongLanguagesPagePO(page, context, browser),
