@@ -16,6 +16,6 @@ describe('TxtEditor', () => {
     );
 
     expect(screen.getByLabelText("Song's UltraStar .TXT file contents")).toBeVisible();
-    expect(screen.getAllByRole('button', { name: /fix/i })).toHaveLength(2);
+    expect(screen.getAllByRole('button', { name: /fix/i })).toHaveLength(3);
   });
 });

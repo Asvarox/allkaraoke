@@ -68,6 +68,7 @@ export default function TxtEditor() {
         )}
         <Button onClick={() => fixAccents('polish')}>Fix 🇵🇱 Polish accents</Button>
         <Button onClick={() => fixAccents('spanish')}>Fix 🇪🇸 Spanish accents</Button>
+        <Button onClick={() => fixAccents('french')}>Fix 🇫🇷 French accents</Button>
       </Box>
       <ApplyTxtWithDeltasDialog
         open={showApplyWithDeltasDialog}
