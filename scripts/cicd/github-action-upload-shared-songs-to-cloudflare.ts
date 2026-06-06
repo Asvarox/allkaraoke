@@ -190,12 +190,12 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
           continue;
         }
 
+        applyCommonSharedSongImportProcessing(song);
+
         if (builtInSongIds.has(song.id)) {
           skippedExistingInLibraryCount += 1;
           continue;
         }
-
-        applyCommonSharedSongImportProcessing(song);
 
         let loadedVideoDurationSeconds: number | undefined;
         if (song.video) {

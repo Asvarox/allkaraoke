@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { Song } from '~/interfaces';
 import {
+  applyCommonSharedSongImportProcessing,
   applyEscEditionFromTitle,
   FALLBACK_VIDEO_DURATION_SECONDS,
   getLyricsEndTimeMs,
@@ -95,5 +96,17 @@ describe('sharedSongProcessing', () => {
 
   it('uses 20 minutes as fallback duration cap', () => {
     expect(FALLBACK_VIDEO_DURATION_SECONDS).toBe(1200);
+  });
+
+  it('applies common shared song import processing including ID regeneration', () => {
+    const song = createSong();
+    song.id = 'song-kpop-demon-hunters-saja-boys-your-idol-movie-version';
+    song.artist = 'Demon Hunters';
+    song.title = 'Saja Boys - Your Idol (movie version)';
+
+    applyCommonSharedSongImportProcessing(song);
+
+    expect(song.title).toBe('Saja Boys - Your Idol');
+    expect(song.id).toBe('demon-hunters-saja-boys-your-idol');
   });
 });

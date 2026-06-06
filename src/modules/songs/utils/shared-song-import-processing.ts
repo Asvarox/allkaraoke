@@ -1,4 +1,5 @@
 import { Song } from '~/interfaces';
+import getSongId from './get-song-id';
 
 const ESC_TITLE_SUFFIX_REGEX = /\s*\(ESC\s+(\d+)\s+[^)]+\)\s*$/i;
 const LEGACY_TITLE_SUFFIXES = ['(tv)', '(album version)', '(movie version)', '[duet]'];
@@ -63,6 +64,8 @@ export function applyCommonSharedSongImportProcessing(song: Song): void {
   normalizeLegacyMetadata(song);
   applyEscEditionFromTitle(song);
   normalizeSongLyricsQuotes(song);
+
+  song.id = getSongId({ artist: song.artist, title: song.title });
 }
 
 export function getLyricsEndTimeMs(song: Song): number {
