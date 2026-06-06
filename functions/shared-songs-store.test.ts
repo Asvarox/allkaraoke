@@ -4,6 +4,7 @@ import {
   listSharedSongs,
   removeSharedSong,
   SharedSongRecord,
+  updateSharedSong,
   upsertSharedSong,
 } from './shared-songs-store';
 
@@ -71,6 +72,47 @@ describe('sharedSongsStore KV behavior', () => {
     const list = await listSharedSongs(kv);
     expect(list).toHaveLength(1);
     expect(list[0].songId).toBe('song-1');
+  });
+
+  it('lists records with stable external song ids', async () => {
+    const kv = new MockKVNamespace();
+    await upsertSharedSong(kv, createRecord({ externalSongId: 'external-1', songId: 'generated-1' }));
+
+    const list = await listSharedSongs(kv);
+
+    expect(list[0]).toMatchObject({
+      externalSongId: 'external-1',
+      songId: 'generated-1',
+    });
+  });
+
+  it('updates a shared song in place while preserving externalSongId', async () => {
+    const kv = new MockKVNamespace();
+    await upsertSharedSong(kv, createRecord({ externalSongId: 'external-1', songId: 'old-song' }));
+
+    const updated = await updateSharedSong(kv, 'external-1', {
+      songId: 'new-song',
+      songTxt: '#TITLE:New Song\nE',
+      artist: 'New Artist',
+      title: 'New Song',
+      language: ['Polish'],
+      videoId: 'newVideoId',
+    });
+
+    expect(updated).toBe(true);
+    expect(await getSharedSong(kv, 'external-1')).toMatchObject({
+      externalSongId: 'external-1',
+      songId: 'new-song',
+      title: 'New Song',
+    });
+    expect(await getSharedSong(kv, 'new-song')).toBeNull();
+    expect(await listSharedSongs(kv)).toEqual([
+      expect.objectContaining({
+        externalSongId: 'external-1',
+        songId: 'new-song',
+        title: 'New Song',
+      }),
+    ]);
   });
 
   it('replaces record on upsert even when hash matches', async () => {
