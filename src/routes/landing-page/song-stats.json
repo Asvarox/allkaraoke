@@ -5,10 +5,10 @@
     "Linkin Park",
     "Britney Spears",
     "Kylie Minogue",
+    "Taylor Swift",
     "Ariana Grande",
     "Michael Jackson",
     "Queen",
-    "Taylor Swift",
     "Take That",
     "The Beatles",
     "System of a Down",
@@ -103,6 +103,7 @@
     "Nickelback",
     "Olivia Rodrigo",
     "Phil Collins",
+    "Sabrina Carpenter",
     "Sean Paul",
     "Selena Gomez",
     "Skillet",
@@ -124,7 +125,6 @@
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
-    "Sabrina Carpenter",
     "Shinedown",
     "Sia",
     "Spice Girls",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5843
+  "songs": 5868
 }
