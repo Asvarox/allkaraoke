@@ -1,6 +1,5 @@
 import { Song, SongPreview } from '~/interfaces';
 import convertTxtToSong from './convert-txt-to-song';
-import getSongId from './get-song-id';
 import { applyCommonSharedSongImportProcessing, normalizeSharedSongTxt } from './shared-song-import-processing';
 
 const API_URL = 'https://eu.posthog.com';
@@ -11,10 +10,6 @@ const normalizeSong = (song: Song): Song => {
   applyCommonSharedSongImportProcessing(song);
 
   song.lastUpdate = new Date().toISOString();
-
-  // @ts-expect-error reset id before generating a new one
-  song.id = undefined;
-  song.id = getSongId(song);
 
   return song;
 };

@@ -1,4 +1,4 @@
-import { removeSharedSong, SharedSongRecord, upsertSharedSong } from './shared-songs-store';
+import { regenerateIndex, removeSharedSong, SharedSongRecord, upsertSharedSong } from './shared-songs-store';
 
 interface Env {
   SHARED_SONGS_ADMIN_TOKEN?: string;
@@ -85,6 +85,14 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
           headers: responseHeaders,
         });
       }
+
+      return new Response(JSON.stringify({ ok: true }), {
+        headers: responseHeaders,
+      });
+    }
+
+    if (request.method === 'PUT') {
+      await regenerateIndex(env.SHARED_SONGS_KV);
 
       return new Response(JSON.stringify({ ok: true }), {
         headers: responseHeaders,

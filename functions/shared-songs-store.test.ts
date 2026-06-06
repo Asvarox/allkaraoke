@@ -70,7 +70,7 @@ describe('sharedSongsStore KV behavior', () => {
 
     const list = await listSharedSongs(kv);
     expect(list).toHaveLength(1);
-    expect(list[0].externalSongId).toBe('song-1');
+    expect(list[0].songId).toBe('song-1');
   });
 
   it('replaces record on upsert even when hash matches', async () => {

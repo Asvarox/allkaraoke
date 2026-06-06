@@ -13,6 +13,7 @@ export default function useSongSelection(additionalSong: string | null, songsPer
   const {
     songList,
     groupedSongList,
+    sharedSongsLoading,
     setFilters,
     filters,
     isLoading,
@@ -115,6 +116,7 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     },
     songPreview,
     songList: songList ?? [],
+    sharedSongsLoading,
     filters,
     setFilters,
     showFilters,

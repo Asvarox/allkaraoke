@@ -1,0 +1,190 @@
+#ARTIST:Mark ’Oh
+#TITLE:Love Song
+#CREATOR:fepo
+#BPM:326
+#YEAR:1994
+#VIDEO:v=8JOYfYXAtUM
+#GENRE:Eurodance
+#LANGUAGE:English
+#GAP:10277,730061349694
+#ALLKARAOKE_ID:mark-oh-love-song
+#ALLKARAOKE_SID:5854
+#ALLKARAOKE_LASTUPDATE:2025-07-27T06:31:24.519Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:30
+#ALLKARAOKE_SOURCEURL:Mark ’Oh - Love Song
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:178
+#MP3:Mark ’Oh - Love Song.mp3
+: 22 4 -5 My 
+* 28 10 5 sweet 
+: 42 4 4 is 
+: 48 4 4 wel
+: 54 8 2 come 
+: 66 6 2 take 
+: 74 4 4 my 
+: 80 5 4 hand
+- 85
+: 86 6 -5 We’ll 
+: 94 10 5 tra
+: 106 4 4 vell 
+: 112 6 4 both 
+: 120 5 2 to 
+: 130 6 2 won
+: 138 2 4 der
+: 142 9 4 land.
+- 151
+: 154 4 -3 You 
+: 160 8 5 are 
+: 170 4 4 the 
+: 176 4 4 on
+: 182 3 2 ly 
+* 187 8 2 one
+- 195
+: 206 3 4 I 
+: 210 4 2 will 
+: 215 2 0 e
+: 218 2 0 ver 
+: 222 18 4 lo 
+: 241 4 5 ~ 
+: 246 3 4 ~ 
+: 250 12 2 ve
+- 262 1328
+- 1328
+: 1350 6 -5 My 
+: 1358 9 5 sweet 
+: 1369 4 4 is 
+: 1375 6 4 wel
+: 1382 10 2 come 
+: 1394 6 2 take 
+: 1402 3 4 my 
+: 1407 6 4 hand
+- 1413
+: 1415 5 -5 We 
+: 1422 8 5 tra
+: 1433 4 4 vell 
+: 1439 4 4 both 
+: 1446 7 2 to 
+: 1458 6 2 won
+: 1465 3 4 der
+: 1470 7 4 land.
+- 1477
+: 1479 5 -5 You 
+: 1488 9 5 are 
+: 1499 3 4 the 
+: 1503 5 4 on
+: 1510 3 2 ly 
+: 1515 8 2 one
+- 1523
+: 1534 3 4 I 
+: 1538 3 2 will 
+: 1543 2 0 e
+: 1546 2 0 ver 
+: 1550 18 4 lo 
+: 1570 3 5 ~ 
+: 1575 2 4 ~
+: 1579 16 2 ve
+- 1595
+: 1606 5 -5 My 
+* 1613 11 5 sweet 
+: 1626 4 4 is 
+: 1632 6 4 wel
+: 1640 6 2 come 
+: 1650 6 2 take 
+: 1658 4 4 my 
+: 1664 5 4 hand
+- 1669
+: 1673 3 -5 We 
+: 1678 9 5 tra
+: 1689 4 4 vell 
+: 1695 5 4 both 
+: 1703 5 2 to 
+: 1716 4 2 won
+: 1722 4 4 der
+: 1728 6 4 land.
+- 1734
+: 1738 4 -5 You 
+: 1744 8 5 are 
+: 1754 4 4 that 
+: 1760 4 4 kind 
+: 1766 4 2 of 
+: 1772 6 2 girl
+- 1778
+: 1790 3 4 I 
+: 1794 3 2 will 
+: 1798 2 0 ne
+: 1801 3 0 ver 
+: 1806 21 4 lea
+: 1828 3 5 ~
+: 1832 3 4 ~
+: 1836 18 2 ve
+- 1854 3026
+- 3026
+: 3048 5 -5 My 
+: 3055 11 5 sweet 
+: 3068 4 4 is 
+: 3074 4 4 wel
+* 3080 10 2 come 
+: 3092 5 2 take 
+: 3099 4 4 my 
+: 3105 5 4 hand
+- 3110
+: 3117 3 -5 We 
+: 3121 9 5 tra
+: 3132 4 4 vell 
+: 3138 6 4 both 
+: 3146 6 2 to 
+: 3158 6 2 won
+: 3166 3 4 der
+: 3170 6 4 land.
+- 3176
+: 3183 3 -5 You 
+: 3188 8 5 are 
+: 3198 2 4 the 
+: 3202 4 4 on
+: 3208 4 2 ly 
+: 3214 6 2 one
+- 3220
+: 3232 3 4 I 
+: 3236 3 2 will 
+: 3241 3 0 e
+: 3245 3 0 ver 
+: 3249 16 4 lo 
+: 3267 3 5 ~ 
+: 3272 3 4 ~ 
+: 3277 10 2 ve
+- 3287
+: 3306 4 -5 My 
+: 3312 10 5 sweet 
+: 3324 4 4 is 
+: 3330 4 4 wel
+: 3336 5 2 come 
+: 3349 5 2 take 
+: 3356 4 4 my 
+: 3362 6 4 hand
+- 3368
+: 3371 4 -5 We 
+: 3377 9 5 tra
+: 3388 4 4 vell 
+: 3394 6 4 both 
+: 3402 6 2 to 
+: 3412 6 2 won
+: 3420 2 4 der
+: 3424 8 4 land.
+- 3432
+: 3436 4 -5 You 
+: 3442 8 5 are 
+: 3452 4 4 that 
+: 3458 4 4 kind 
+: 3464 4 2 of 
+: 3470 4 2 girl
+- 3474
+: 3488 3 4 I 
+: 3492 3 2 will 
+: 3496 3 0 ne
+: 3500 3 0 ver 
+: 3504 18 4 lea 
+: 3524 3 5 ~ 
+: 3529 3 4 ~ 
+* 3534 16 2 ve
+E

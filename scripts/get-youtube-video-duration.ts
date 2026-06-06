@@ -55,7 +55,7 @@ function getVideoIdFromArgs(): string | undefined {
 async function main(): Promise<void> {
   const videoId = getVideoIdFromArgs();
   if (!videoId) {
-    console.error('Usage: pnpm ts-node scripts/getYoutubeVideoDuration.ts <youtubeVideoId>');
+    console.error('Usage: pnpm ts-node scripts/get-youtube-video-duration.ts <youtubeVideoId>');
     process.exitCode = 1;
     return;
   }

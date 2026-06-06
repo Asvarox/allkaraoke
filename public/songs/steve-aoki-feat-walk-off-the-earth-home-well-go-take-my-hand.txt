@@ -1,0 +1,255 @@
+#ARTIST:Steve Aoki feat. Walk off the Earth
+#TITLE:Home We’ll Go (Take My Hand)
+#CREATOR:Phoenix69
+#BPM:240,07
+#YEAR:2015
+#VIDEO:v=kAwSQq44O_U
+#GENRE:Dance
+#LANGUAGE:English
+#GAP:16780,291581622027
+#ALLKARAOKE_ID:steve-aoki-feat-walk-off-the-earth-home-well-go-take-my-hand
+#ALLKARAOKE_SID:5857
+#ALLKARAOKE_LASTUPDATE:2025-07-27T06:31:24.526Z
+#ALLKARAOKE_REALBPM:22
+#ALLKARAOKE_SOURCEURL:Steve Aoki feat. Walk off the Earth - Home We’ll Go (Take My Hand)
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:244
+#MP3:Steve Aoki feat. Walk off the Earth - Home We’ll Go (Take My Hand).mp3
+: 16 2 0 Don’t 
+: 20 2 -3 let 
+: 24 2 -4 your 
+: 28 4 -4 head 
+: 40 8 3 hang 
+: 52 9 0 low
+- 61 98
+- 98
+: 114 2 0 You’ve 
+: 117 2 0 seen 
+: 120 2 0 the 
+: 124 6 3 dark
+: 132 5 0 est 
+: 141 3 -3 skies 
+: 147 3 -3 I 
+: 153 6 3 know
+- 159 164
+- 164
+: 180 3 0 Let 
+: 184 2 0 your 
+: 188 6 3 heart 
+: 196 6 3 run 
+: 204 6 -3 child 
+: 213 5 -3 like 
+: 220 4 -3 hor
+: 225 2 0 ses 
+: 229 2 -3 in 
+: 232 2 -3 the 
+: 235 14 5 wild
+- 249 272
+- 272
+: 288 2 -3 So 
+: 292 2 -3 take 
+: 296 2 -3 my 
+: 300 5 -5 hand 
+: 308 6 3 and 
+: 316 7 3 home 
+: 324 4 0 we’ll 
+: 329 9 3 go
+- 338 369
+- 369
+: 385 2 5 The 
+: 388 2 -3 sun 
+: 392 2 5 it 
+: 396 5 -3 glows 
+: 408 9 3 like 
+: 420 12 0 gold
+- 432 467
+- 467
+: 483 4 -2 Fee
+: 488 3 0 ling 
+: 492 8 3 warm 
+: 501 4 0 as 
+: 506 2 0 a 
+: 509 5 6 bur
+: 515 4 -3 ning 
+: 521 9 -6 coal
+- 530 532
+- 532
+: 548 2 -3 Let 
+: 551 2 0 your 
+: 556 5 3 soul 
+: 564 5 3 shine 
+: 572 6 -3 bright 
+: 580 6 -3 like 
+: 589 2 -3 dia
+: 592 2 0 monds 
+: 596 2 -3 in 
+: 600 2 -3 the 
+: 604 14 5 sky
+- 618 640
+- 640
+: 656 3 -3 So 
+: 660 2 -3 take 
+: 664 2 -3 my 
+: 668 4 -3 hand 
+: 676 6 3 and 
+: 684 7 3 home 
+: 693 2 0 we’ll 
+: 696 10 3 go
+- 706 732
+- 732
+: 748 5 0 Home 
+: 756 5 0 we’ll 
+: 763 28 3 go
+: 792 16 0 ~, 
+: 812 6 -3 home 
+: 820 3 -3 we’ll 
+: 824 36 -3 go
+: 861 3 0 ~
+: 865 4 -3 ~
+- 869
+* 876 6 0 Home 
+* 884 5 0 we’ll 
+* 892 29 3 go
+* 922 10 0 ~, 
+: 940 6 -2 home 
+: 948 3 -3 we’ll 
+: 952 48 -3 go
+- 1000 1372
+- 1372
+: 1388 6 0 Home 
+: 1396 6 0 we’ll 
+: 1404 30 3 go
+: 1435 7 0 ~, 
+: 1453 5 -3 home 
+: 1460 3 6 we’ll 
+: 1464 34 -3 go
+: 1499 3 0 ~
+: 1503 4 -3 ~
+- 1507
+: 1516 6 0 Home 
+: 1524 5 0 we’ll 
+: 1532 28 3 go
+: 1561 13 0 ~, 
+: 1581 5 -3 home 
+: 1587 4 -3 we’ll 
+: 1593 56 -3 go
+- 1649 1761
+- 1761
+: 1777 2 -2 Don’t 
+: 1780 2 -2 let 
+: 1784 2 -3 your 
+: 1789 6 -3 head 
+: 1801 8 3 hang 
+: 1812 10 0 low
+- 1822 1858
+- 1858
+: 1874 2 2 You’ve 
+: 1877 2 0 seen 
+: 1881 2 0 the 
+: 1884 7 3 dark
+: 1892 3 0 est 
+: 1901 4 -3 skies 
+: 1907 3 -3 I 
+: 1913 8 3 know
+- 1921 1924
+- 1924
+: 1940 4 0 Let 
+: 1945 2 0 your 
+: 1948 7 3 heart 
+: 1957 5 3 run 
+: 1964 6 -3 child 
+: 1972 6 -3 like 
+: 1980 3 -3 hor
+: 1984 3 0 ses 
+* 1988 2 -3 in 
+* 1992 3 -3 the 
+* 1997 13 6 wild
+- 2010 2031
+- 2031
+: 2047 4 0 So 
+: 2052 2 -3 take 
+: 2056 2 -3 my 
+: 2061 4 -3 hand 
+: 2069 4 3 and 
+: 2076 7 3 home 
+: 2085 2 0 we’ll 
+: 2089 12 3 go
+- 2101 2128
+- 2128
+: 2144 2 0 The 
+: 2148 2 -3 sun 
+: 2152 2 -3 it 
+: 2157 3 -3 glows 
+: 2169 8 3 like 
+: 2181 8 0 gold
+- 2189 2228
+- 2228
+: 2244 4 -3 Fee
+: 2249 2 0 ling 
+: 2252 6 3 warm 
+: 2260 3 0 as 
+: 2265 3 0 a 
+: 2269 7 6 bur
+: 2277 3 -3 ning 
+: 2283 11 3 coal
+- 2294
+: 2308 2 0 Let 
+: 2312 2 0 your 
+: 2316 5 3 soul 
+: 2325 5 3 shine 
+: 2333 6 6 bright 
+: 2341 5 -3 like 
+: 2348 5 -3 dia
+: 2354 2 0 monds 
+: 2357 2 -3 in 
+: 2361 3 -6 the 
+: 2365 12 6 sky
+- 2377 2401
+- 2401
+: 2417 2 0 So 
+: 2421 2 -3 take 
+: 2424 2 -3 my 
+: 2429 4 -3 hand 
+: 2436 6 3 and 
+: 2444 7 3 home 
+: 2453 3 0 we’ll 
+: 2459 12 3 go
+- 2471 2493
+- 2493
+: 2509 6 0 Home 
+: 2517 5 0 we’ll 
+: 2524 31 3 go
+: 2556 9 0 ~, 
+: 2573 5 -3 home 
+: 2580 4 -3 we’ll 
+: 2586 34 -3 go
+: 2621 3 0 ~
+: 2625 4 -3 ~
+- 2629
+: 2636 6 0 Home 
+: 2644 5 0 we’ll 
+: 2652 30 3 go
+: 2683 9 0 ~, 
+: 2700 6 -3 home 
+: 2708 3 -3 we’ll 
+: 2713 61 -3 go
+- 2774 3133
+- 3133
+* 3149 5 0 Home 
+* 3157 4 0 we’ll 
+* 3164 31 3 go
+* 3196 7 0 ~, 
+: 3213 4 -3 home 
+: 3219 2 -3 we’ll 
+: 3224 35 -3 go
+: 3260 3 0 ~
+: 3264 5 -3 ~
+- 3269
+: 3278 5 0 Home 
+: 3285 5 0 we’ll 
+: 3292 29 3 go
+: 3322 9 0 ~, 
+: 3341 5 -3 home 
+: 3347 4 -3 we’ll 
+: 3353 56 -3 go
+E

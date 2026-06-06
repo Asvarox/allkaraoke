@@ -113,6 +113,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
   const builtInSongIds = new Set(currentSongs.map((song) => song.id));
+  const builtInVideoIds = new Set(currentSongs.map((song) => song.video).filter((video): video is string => !!video));
 
   const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
 
@@ -190,12 +191,12 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
           continue;
         }
 
-        if (builtInSongIds.has(song.id)) {
+        applyCommonSharedSongImportProcessing(song);
+
+        if (builtInSongIds.has(song.id) || (song.video && builtInVideoIds.has(song.video))) {
           skippedExistingInLibraryCount += 1;
           continue;
         }
-
-        applyCommonSharedSongImportProcessing(song);
 
         let loadedVideoDurationSeconds: number | undefined;
         if (song.video) {

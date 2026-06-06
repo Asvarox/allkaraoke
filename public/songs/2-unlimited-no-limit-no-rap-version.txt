@@ -1,0 +1,226 @@
+#ARTIST:2 Unlimited
+#TITLE:No Limit! (No Rap Version)
+#CREATOR:Diddlmaus30mg
+#BPM:282
+#YEAR:1992
+#VIDEO:v=exLG0XWM_Dg
+#GENRE:Eurodance
+#LANGUAGE:English
+#GAP:58289,36170212766
+#ALLKARAOKE_ID:2-unlimited-no-limit-no-rap-version
+#ALLKARAOKE_SID:5856
+#ALLKARAOKE_LASTUPDATE:2025-07-27T06:31:24.524Z
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_REALBPM:21
+#ALLKARAOKE_SOURCEURL:2 Unlimited - No Limit! (No Rap Version)
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:200
+#MP3:2 Unlimited - No Limit! (No Rap Version).mp3
+: 19 4 17 No 
+: 27 4 17 no 
+: 39 4 20 no 
+: 47 3 20 no 
+: 51 4 17 no 
+: 59 4 17 no 
+: 71 4 20 no 
+: 79 3 20 no 
+: 83 4 17 no 
+: 91 4 17 no
+- 95
+: 103 4 20 No 
+: 111 3 17 no 
+: 115 4 22 there’s 
+: 123 4 22 no 
+: 131 6 24 li
+: 139 5 24 mit!
+- 144
+: 147 4 17 No 
+: 155 4 17 no 
+: 167 4 20 no 
+: 175 3 20 no 
+: 179 4 17 no 
+: 187 4 17 no 
+: 199 4 20 no 
+: 207 3 20 no 
+: 211 4 17 no 
+: 219 4 17 no
+- 223
+: 231 4 20 No 
+: 239 3 17 no 
+: 243 4 22 there’s 
+: 251 4 22 no 
+: 259 6 24 li
+: 267 6 24 mit!
+- 273
+: 280 4 22 No 
+: 288 3 22 no 
+: 292 3 20 li
+: 296 4 22 mits, 
+: 304 3 20 we’ll 
+: 308 3 22 reach 
+: 312 3 20 for 
+: 316 3 22 the 
+* 320 10 25 sky!
+- 330
+: 336 3 17 No 
+: 340 3 20 val
+: 344 3 20 ley 
+: 348 3 17 to 
+: 352 8 20 deep, 
+: 368 3 17 no 
+: 372 3 20 moun
+: 376 3 19 tain 
+: 380 3 17 too 
+: 384 7 10 high
+: 392 12 13 ~
+- 404
+: 408 4 22 No 
+: 416 3 22 no 
+: 420 3 20 li
+: 424 4 22 mits, 
+: 432 3 20 won’t 
+: 436 3 22 give 
+: 440 3 20 up 
+: 444 2 22 the 
+* 448 10 25 fight!
+- 458
+: 464 3 17 We 
+: 468 2 20 do 
+: 472 3 20 what 
+: 476 3 17 we 
+: 480 6 20 want 
+: 492 2 17 and 
+: 496 3 17 we 
+: 500 3 20 do 
+: 504 2 19 it 
+: 508 3 17 with 
+: 512 7 10 pri
+: 520 10 13 ~de
+- 530 1570
+- 1570
+: 1589 4 17 No 
+: 1597 4 17 no 
+: 1609 4 20 no 
+: 1617 3 20 no 
+: 1621 4 17 no 
+: 1629 4 17 no 
+: 1641 4 20 no 
+: 1649 3 20 no 
+: 1653 4 17 no 
+: 1661 4 17 no
+- 1665
+: 1673 4 20 No 
+: 1681 3 17 no 
+: 1685 4 22 there’s 
+: 1693 4 22 no 
+: 1701 6 24 li
+: 1709 5 24 mit!
+- 1714
+: 1717 4 17 No 
+: 1725 4 17 no 
+: 1737 4 20 no 
+: 1745 3 20 no 
+: 1749 4 17 no 
+: 1757 4 17 no 
+: 1769 4 20 no 
+: 1777 3 20 no 
+: 1781 4 17 no 
+: 1789 4 17 no
+- 1793
+: 1801 4 20 No 
+: 1809 3 17 no 
+: 1813 4 22 there’s 
+: 1821 4 22 no 
+: 1829 6 24 li
+: 1837 6 24 mit!
+- 1843
+: 1849 4 22 No 
+: 1857 3 22 no 
+: 1861 3 20 li
+: 1865 2 22 mits, 
+: 1873 3 20 we’ll 
+: 1877 3 22 reach 
+: 1881 3 20 for 
+: 1885 3 22 the 
+: 1889 12 25 sky!
+- 1901
+: 1905 3 17 No 
+: 1909 3 20 val
+: 1913 2 20 ley 
+: 1917 3 17 to 
+: 1921 8 20 deep, 
+: 1937 3 17 no 
+: 1941 2 20 moun
+: 1945 2 19 tain 
+: 1949 2 17 too 
+: 1953 7 10 high
+: 1961 12 13 ~
+- 1973
+: 1977 4 22 No 
+: 1985 3 22 no 
+: 1989 3 20 li
+: 1993 4 22 mits, 
+: 2001 3 20 won’t 
+: 2005 3 22 give 
+: 2009 3 20 up 
+: 2013 2 22 the 
+* 2017 10 25 fight!
+- 2027
+: 2033 3 17 We 
+: 2037 2 20 do 
+: 2041 3 20 what 
+: 2045 3 17 we 
+: 2049 6 20 want 
+: 2061 2 17 and 
+: 2065 3 17 we 
+: 2069 3 20 do 
+: 2073 2 20 it 
+: 2077 3 17 with 
+* 2081 7 10 pri
+* 2089 10 13 ~de
+- 2099
+: 2105 4 22 No 
+: 2113 3 22 no 
+: 2117 3 20 li
+: 2121 2 22 mits, 
+: 2129 3 20 we’ll 
+: 2133 3 22 reach 
+: 2137 3 20 for 
+: 2141 3 22 the 
+: 2145 12 25 sky
+- 2157
+: 2161 3 17 No 
+: 2165 3 20 val
+: 2169 2 20 ley 
+: 2173 3 17 to 
+: 2177 8 20 deep, 
+: 2193 3 17 no 
+: 2197 2 20 mount
+: 2201 2 19 ain 
+: 2205 2 17 too 
+: 2209 7 10 high
+: 2217 12 13 ~
+- 2229
+: 2233 4 22 No 
+: 2241 3 22 no 
+: 2245 3 20 li
+: 2249 4 22 mits, 
+: 2257 3 20 won’t 
+: 2261 3 22 give 
+: 2265 3 20 up 
+: 2269 2 22 the 
+* 2273 10 25 fight!
+- 2283
+: 2289 3 17 We 
+: 2293 3 20 do 
+: 2297 3 20 what 
+: 2301 3 17 we 
+: 2305 6 20 want 
+: 2317 2 17 and 
+: 2321 3 17 we 
+: 2325 3 20 do 
+: 2329 2 19 it 
+: 2333 3 17 with 
+: 2337 7 10 pri
+: 2345 10 13 de
+E

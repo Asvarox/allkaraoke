@@ -38,7 +38,7 @@ export default function useSongList(additionalSong: string | null) {
     useSongListFilter(songList.data, popular, isLoading, additionalSong);
 
   const existingSongIds = useMemo(() => new Set(songList.data.map((song) => song.id)), [songList.data]);
-  const sharedSongs = useSharedSongsSearch({
+  const { sharedSongs, isLoading: sharedSongsLoading } = useSharedSongsSearch({
     searchText: filters.search ?? '',
     regularResultsCount: filteredList.length,
     fallbackThreshold: 8,
@@ -119,6 +119,7 @@ export default function useSongList(additionalSong: string | null) {
   return {
     groupedSongList,
     songList: mergedSearchList,
+    sharedSongsLoading: filteredList.length === 0 && sharedSongsLoading,
     filters,
     setFilters,
     isLoading,

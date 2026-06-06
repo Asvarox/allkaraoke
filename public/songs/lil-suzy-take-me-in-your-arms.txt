@@ -1,0 +1,280 @@
+#ARTIST:Lil Suzy
+#TITLE:Take Me In Your Arms
+#CREATOR:shadowgnom
+#BPM:254,78
+#YEAR:1991
+#VIDEO:v=jBSfQJM9scw
+#GENRE:Dance
+#LANGUAGE:English
+#GAP:17819,136509930137
+#ALLKARAOKE_ID:lil-suzy-take-me-in-your-arms
+#ALLKARAOKE_SID:5862
+#ALLKARAOKE_LASTUPDATE:2025-07-27T06:31:24.537Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:20
+#ALLKARAOKE_SOURCEURL:Lil Suzy - Take Me In Your Arms
+#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_DURATION:208
+#MP3:Lil Suzy - Take Me In Your Arms.mp3
+: 17 10 4 You 
+: 28 14 -3 came 
+: 43 4 -3 and 
+: 48 7 7 turned 
+: 56 3 5 and 
+: 60 6 4 looked 
+: 67 8 5 my 
+: 76 4 4 wa
+: 81 24 2 ~y
+- 105
+: 113 3 4 What 
+: 117 7 4 else 
+: 125 7 4 can 
+: 133 3 4 I
+: 137 2 2 ~ 
+: 140 4 2 say
+: 145 8 4 ~
+- 153 160
+- 160
+: 177 8 7 Love 
+: 186 3 5 was 
+: 190 6 4 in 
+: 197 7 5 my 
+: 205 5 4 eye
+: 211 27 2 ~s
+- 238 258
+- 258
+: 275 10 4 You 
+: 286 15 -3 came 
+: 302 4 -3 and 
+* 307 6 7 made 
+* 314 4 5 my 
+* 319 6 4 life 
+* 326 8 5 com
+* 335 4 4 ple
+: 340 21 2 ~te
+- 361
+: 371 4 4 With 
+: 376 5 4 your 
+: 382 6 4 love 
+: 389 6 4 so
+: 396 1 2 ~ 
+: 398 31 4 sweet
+- 429
+: 432 4 -3 You 
+: 437 7 7 gave 
+: 445 3 5 your 
+: 449 5 4 love 
+: 455 8 5 to 
+: 464 3 4 me
+: 468 21 2 ~
+- 489 516
+- 516
+: 533 11 4 Take 
+: 545 18 -3 me, 
+* 564 8 7 take 
+: 573 4 5 me 
+: 578 6 4 in 
+: 585 7 5 your 
+* 593 30 2 arms
+- 623
+: 626 3 4 And 
+: 630 3 4 don’t 
+: 634 5 4 you 
+: 640 8 4 let 
+: 649 7 4 me 
+: 657 32 4 go
+- 689
+: 690 3 -3 I 
+: 694 8 7 need 
+: 703 2 5 you 
+: 706 8 4 more 
+: 715 6 5 and 
+: 722 13 2 more
+- 735
+: 738 6 -1 I 
+: 745 2 -1 need 
+: 748 6 2 you 
+: 755 8 4 more 
+: 764 6 2 and 
+* 771 8 0 mo
+* 780 4 2 ~
+* 785 6 0 ~re
+- 791
+: 792 10 4 Your 
+: 803 15 -3 love 
+: 819 4 -3 is 
+: 824 7 7 all 
+: 832 4 5 I 
+: 837 6 4 e
+: 844 8 5 ver 
+: 853 3 4 nee
+: 857 28 2 ~d
+- 885
+: 889 6 4 You’re 
+: 896 4 4 my 
+: 901 7 4 des
+: 909 4 4 ti
+: 914 2 2 ~
+: 917 28 4 ny
+- 945
+: 949 4 -3 This 
+: 954 7 7 love 
+: 962 3 5 was 
+: 966 6 4 meant 
+: 973 7 5 to 
+: 981 4 4 be
+* 986 27 2 ~
+- 1013 1034
+- 1034
+: 1051 9 4 We’ll 
+: 1061 16 -3 find 
+: 1078 4 -3 a 
+: 1083 8 7 pa
+: 1092 3 5 ra
+: 1096 6 4 dise 
+: 1103 7 5 for 
+: 1111 4 4 two
+: 1116 25 2 ~
+- 1141
+: 1145 1 -3 A 
+: 1147 8 4 place 
+: 1156 3 4 for 
+: 1160 8 4 me 
+: 1169 3 4 a
+* 1173 2 2 ~nd 
+* 1176 3 2 you
+: 1180 25 4 ~
+- 1205
+: 1208 4 -3 We’ll 
+: 1213 7 7 make 
+: 1221 3 5 our 
+: 1225 7 4 dreams 
+: 1233 7 5 come 
+: 1241 3 4 true
+: 1245 28 2 ~
+- 1273 1293
+- 1293
+: 1310 11 4 Take 
+: 1322 19 -3 me
+- 1341
+: 1342 7 7 Take 
+: 1350 4 5 me 
+: 1355 7 4 in 
+: 1363 7 5 your 
+: 1371 30 2 arms
+- 1401
+: 1404 2 4 And 
+: 1407 3 4 don’t 
+: 1411 5 4 you 
+: 1417 9 4 let 
+: 1427 7 4 me 
+: 1435 30 4 go
+- 1465
+: 1467 2 -3 I 
+: 1470 9 7 need 
+: 1480 3 5 you 
+: 1484 6 4 more 
+: 1491 8 5 and 
+: 1500 11 2 more
+- 1511
+* 1513 7 -1 I 
+* 1521 6 -1 need 
+* 1528 3 2 you 
+: 1532 8 4 more 
+: 1541 6 2 and 
+: 1548 8 0 mo
+: 1557 6 2 ~re
+- 1563
+: 1568 12 4 Take 
+: 1581 18 -3 me, 
+* 1600 8 7 take 
+* 1609 4 5 me 
+: 1614 6 4 in 
+: 1621 7 5 your 
+: 1629 28 2 arms
+- 1657
+: 1661 3 4 And 
+: 1665 4 4 don’t 
+: 1670 6 4 you 
+: 1677 7 4 let 
+: 1685 7 4 me 
+: 1693 24 4 go
+- 1717
+: 1727 1 -3 I 
+: 1729 9 7 need 
+: 1739 3 5 you 
+: 1743 7 4 more 
+: 1751 6 5 and 
+* 1758 11 2 more
+- 1769
+: 1770 7 -1 I 
+: 1778 8 -1 need 
+: 1787 3 2 you 
+: 1791 8 4 more 
+: 1800 4 2 and 
+: 1805 9 0 mo
+: 1815 4 2 ~
+: 1820 9 0 ~re
+- 1829 2070
+- 2070
+: 2087 11 4 Take 
+: 2099 18 -3 me, 
+: 2118 9 7 take 
+: 2128 3 5 me 
+: 2132 6 4 in 
+: 2139 8 5 your 
+: 2148 31 2 arms
+- 2179
+: 2180 3 4 And 
+: 2184 3 4 don’t 
+: 2188 6 4 you 
+: 2195 8 4 let 
+: 2204 7 4 me 
+: 2212 31 4 go
+- 2243
+: 2245 2 -3 I 
+: 2248 8 7 need 
+: 2257 3 5 you 
+: 2261 7 4 more 
+: 2269 7 5 and 
+: 2277 12 2 more
+- 2289
+: 2290 6 -1 I 
+: 2297 4 -1 need 
+: 2302 5 2 you 
+* 2308 9 4 more 
+: 2318 7 2 and 
+: 2326 8 0 mo
+: 2335 9 2 ~re
+- 2344
+: 2345 12 4 Take 
+: 2358 18 -3 me, 
+: 2377 8 7 take 
+: 2386 4 5 me 
+: 2391 6 4 in 
+: 2398 8 5 your 
+: 2407 26 2 arms
+- 2433
+: 2439 3 4 And 
+: 2443 3 4 don’t 
+: 2447 6 4 you 
+: 2454 6 4 let 
+: 2461 9 4 me 
+: 2471 26 4 go
+- 2497
+: 2503 3 -3 I 
+: 2507 8 7 need 
+: 2516 3 5 you 
+: 2520 7 4 more 
+: 2528 7 5 and 
+: 2536 12 2 more
+- 2548
+: 2549 7 -1 I 
+: 2557 3 -1 need 
+: 2561 7 2 you 
+: 2569 7 4 more 
+: 2577 6 2 and 
+* 2584 8 0 mo
+* 2593 3 2 ~
+* 2597 4 0 ~re
+E

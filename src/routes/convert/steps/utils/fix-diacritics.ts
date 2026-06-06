@@ -38,6 +38,31 @@ const accents = {
     '˙': 'ú',
     ś: 'ú',
   },
+  french: {
+    // Lowercase fixes
+    È: 'é',
+    Ë: 'è',
+    '‡': 'à',
+    Í: 'ê',
+    ú: 'œ',
+    Á: 'ç',
+    '‚': 'â',
+    Ó: 'î',
+    Ô: 'ï',
+    Ù: 'ô',
+    '˚': 'û',
+    '˘': 'ù',
+    Î: 'ë',
+
+    // Uppercase fixes
+    '…': 'É',
+    '»': 'È', // Placed after 'È' to avoid chaining
+    '¿': 'À',
+    Ä: 'Œ',
+    '¬': 'Â',
+    '¥': 'Û',
+    '˜': 'Ù', // Placed after 'Ù' to avoid chaining
+  },
 };
 
 export function fixDiacritics(txt: string, language: string): string {

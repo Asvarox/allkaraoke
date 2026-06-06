@@ -1,0 +1,562 @@
+#ARTIST:KPop Demon Hunters (Huntr/x)
+#TITLE:Takedown
+#CREATOR:ZG
+#BPM:280
+#YEAR:2025
+#VIDEO:v=om96KysABLM
+#GENRE:Kpop
+#LANGUAGE:English, Korean
+#GAP:4732,142857142857
+#ALLKARAOKE_ID:kpop-demon-hunters-huntrx-takedown
+#ALLKARAOKE_SID:5850
+#ALLKARAOKE_LASTUPDATE:2026-06-02T16:47:00.310Z
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:0,79
+#ALLKARAOKE_DURATION:189
+#P1:Takedown
+#MP3:KPop Demon Hunters (Huntr/x) - Takedown.mp3
+#COVER:KPop Demon Hunters (Huntr/x) - Takedown [CO].jpg
+#BACKGROUND:KPop Demon Hunters (Huntr/x) - Takedown [BG].jpg
+#START:3.05
+#END:173291
+R 19 3 1 So 
+R 23 3 1 sweet, 
+R 27 3 1 so 
+R 31 1 1 ea
+R 33 1 3 sy 
+R 35 1 1 on 
+R 37 1 0 the 
+R 39 10 1 eyes, 
+R 53 3 1 but 
+R 57 1 1 hi
+R 59 1 3 de
+R 61 2 1 ous 
+R 65 1 1 on 
+R 67 1 3 the 
+R 69 1 1 in
+R 73 6 1 side
+- 79
+R 83 3 1 Whole 
+R 87 3 1 life 
+R 91 1 1 sprea
+R 93 1 1 din’ 
+R 95 7 1 lies, 
+R 103 1 1 but 
+R 105 1 1 you 
+R 107 3 1 can’t 
+R 111 8 1 hide, 
+R 121 3 1 ba
+R 125 3 1 by, 
+R 129 6 1 nice 
+R 137 3 1 try
+- 140
+R 143 3 4 I’m 
+R 147 3 4 ’bout 
+R 151 3 4 to 
+R 155 3 4 switch 
+R 159 3 4 up 
+R 163 3 4 these 
+R 167 7 4 vibes, 
+R 175 3 4 I 
+R 179 1 4 fi
+R 181 1 4 na
+R 183 3 4 lly 
+R 187 3 4 o
+R 191 3 4 pened 
+R 195 3 4 my 
+R 199 8 4 eyes
+- 207
+R 211 3 0 It’s 
+R 215 3 0 time 
+R 219 3 0 to 
+R 223 3 0 kick 
+R 227 3 0 you 
+R 231 3 0 straight 
+R 235 3 0 back 
+R 239 3 0 in
+R 243 3 0 to 
+R 247 3 0 the 
+R 251 7 0 night
+- 258
+: 263 3 3 ’Cause 
+: 267 3 3 I 
+: 271 3 4 see 
+: 275 3 4 your 
+* 279 3 1 re
+* 283 3 1 al 
+* 287 6 8 face, 
+: 295 3 3 and 
+: 299 3 3 it’s 
+* 303 3 4 u
+* 307 3 3 gly 
+: 311 3 1 as 
+: 315 8 1 sin
+- 323
+: 327 3 3 Time 
+: 331 3 3 to 
+: 335 3 4 put 
+: 339 3 4 you 
+: 343 3 1 in 
+: 347 3 1 your 
+* 351 6 8 place 
+: 359 3 3 ’cause 
+: 363 3 3 you’re 
+* 367 3 4 rot
+* 371 3 3 ten 
+: 375 3 1 wi
+: 379 8 1 thin
+- 387
+: 391 3 8 When 
+: 395 3 8 your 
+: 399 3 9 pat
+: 403 3 9 terns 
+: 407 3 8 start 
+: 411 3 8 to 
+: 415 3 6 show
+- 418
+: 419 3 6 It 
+: 423 3 4 makes 
+: 427 3 4 the 
+: 431 3 8 ha
+: 435 3 8 tred 
+: 439 3 6 wan
+: 443 3 6 na 
+: 447 3 4 grow 
+: 451 3 4 out
+: 455 3 3 ta 
+: 459 3 1 my 
+: 463 15 4 veins
+: 479 12 1 ~
+- 491
+: 495 3 11 I 
+: 499 3 8 don’t 
+: 503 3 11 think 
+: 507 3 8 you’re 
+: 511 3 11 rea
+: 515 3 8 dy 
+: 519 3 11 for 
+: 523 3 8 the 
+* 527 7 13 take
+* 535 12 8 down
+- 547
+* 559 3 16 Break 
+* 563 3 15 you 
+: 567 3 13 in
+: 571 3 11 to 
+: 575 3 8 pie
+: 579 3 6 ces 
+: 583 3 4 in 
+: 587 3 6 a 
+: 591 5 8 world 
+: 597 1 9 of 
+* 599 14 8 pain 
+: 615 3 4 ’cause 
+: 619 3 6 you’re 
+: 623 5 8 all 
+* 629 1 9 the 
+* 631 11 8 same
+- 642
+: 645 3 8 Yeah, 
+: 649 3 11 it’s 
+: 653 3 8 the 
+: 657 7 13 take
+: 665 15 8 down
+- 680
+: 683 3 8 A 
+: 687 3 16 de
+: 691 3 15 mon 
+: 695 3 13 with 
+: 699 3 11 no 
+: 703 3 8 fee
+: 707 3 6 lings 
+: 711 3 4 don’t 
+: 715 3 6 de
+: 719 5 8 serve 
+: 725 1 9 to 
+: 727 14 8 live, 
+: 743 3 4 it’s 
+: 747 3 6 so 
+* 751 5 8 ob
+* 757 1 9 vi
+* 759 18 8 ous
+- 777
+: 783 1 8 I’m
+: 785 5 8 a 
+: 791 7 8 gear 
+: 799 3 13 up 
+: 803 3 6 and 
+: 807 3 6 take 
+: 811 3 6 you
+: 815 14 1 down
+- 829 844
+- 844
+: 863 1 6 It’s 
+: 865 5 4 a 
+: 871 7 8 take-
+: 879 8 1 down
+- 887 908
+- 908
+: 927 1 4 I’m
+: 929 3 4 a 
+: 935 1 6 take 
+: 937 5 6 it
+: 943 14 1 down
+- 957 972
+- 972
+: 991 1 6 It’s 
+: 993 5 4 a 
+: 999 7 8 take
+: 1007 15 1 down, 
+F 1049 1 4 take 
+F 1051 4 3 it 
+F 1057 5 4 down
+- 1062
+R 1067 1 6 It’s 
+R 1069 2 6 a 
+G 1073 4 6 take
+G 1079 2 6 down, 
+R 1083 1 6 I’
+R 1085 1 6 ma 
+R 1087 2 6 take 
+R 1091 2 6 you 
+R 1095 2 6 out, 
+R 1099 2 6 you’ll 
+R 1103 7 6 break 
+R 1111 4 6 down 
+R 1117 2 6 like, 
+G 1121 3 6 “What?”
+- 1124
+R 1131 1 6 It’s 
+R 1133 3 6 a 
+R 1137 5 6 take
+R 1143 3 6 down, 
+R 1147 1 6 I’
+R 1149 3 6 ma 
+R 1153 3 6 take 
+R 1157 3 6 you 
+R 1161 3 6 out, 
+R 1165 1 6 and 
+R 1167 1 6 it 
+R 1169 5 6 ain’t 
+R 1175 3 6 gon
+R 1179 3 6 na 
+G 1183 4 6 stop
+- 1187
+R 1195 3 6 정
+R 1199 1 6 신
+R 1201 5 6 을 
+R 1207 5 6 놓
+R 1213 1 6 고, 
+R 1215 5 6 널 
+R 1221 1 6 짓
+R 1223 4 6 밟
+R 1229 3 6 고, 
+R 1233 1 6 칼
+R 1235 1 6 을 
+R 1237 5 6 새
+R 1243 3 6 겨
+R 1247 5 6 놔
+- 1252
+R 1255 3 6 You’ll 
+R 1259 3 6 be 
+R 1263 1 6 beg
+R 1265 1 6 gin’ 
+R 1267 3 6 and 
+R 1271 3 6 cry
+R 1275 3 6 in’, 
+R 1279 1 6 all 
+R 1281 1 6 of 
+R 1283 3 6 you 
+R 1287 3 6 dy
+R 1291 3 6 in’, 
+G 1295 2 6 ne
+G 1298 3 6 ver 
+R 1303 3 6 miss 
+R 1307 3 6 my 
+R 1311 4 6 shot
+- 1315
+: 1319 3 8 When 
+: 1323 3 8 your 
+: 1327 3 9 pat
+: 1331 3 9 terns 
+: 1335 3 8 start 
+: 1339 3 8 to 
+: 1343 1 6 show
+- 1344
+: 1347 3 6 It 
+: 1351 3 4 makes 
+: 1355 3 4 the 
+: 1359 3 8 ha
+: 1363 3 8 tred 
+: 1367 3 6 wan
+: 1371 3 6 na 
+: 1375 3 4 grow 
+: 1379 3 4 out
+: 1383 3 3 ta 
+: 1387 5 1 my 
+: 1393 13 4 veins
+: 1407 12 1 ~
+- 1419
+: 1423 3 11 I 
+: 1427 3 8 don’t 
+: 1431 3 11 think 
+: 1435 3 8 you’re 
+: 1439 3 11 rea
+: 1443 3 8 dy 
+: 1447 3 11 for 
+: 1451 3 8 the 
+: 1455 7 13 take
+: 1463 12 8 down
+- 1475
+: 1487 3 16 당
+: 1491 3 15 당
+: 1495 3 13 하
+: 1499 3 11 게 
+: 1503 3 8 어
+: 1507 3 6 둠 
+: 1511 3 4 앞
+: 1515 3 6 에 
+: 1519 5 8 다
+: 1525 1 9 가
+: 1527 14 8 서, 
+: 1543 3 4 다 
+: 1547 3 6 무
+: 1551 5 8 너
+: 1557 1 9 뜨
+: 1559 9 8 려
+- 1568
+: 1571 3 8 Yeah, 
+: 1575 3 11 it’s 
+: 1579 3 8 the 
+: 1583 7 13 take
+: 1591 15 8 down
+- 1606
+: 1609 3 8 A 
+: 1613 3 16 de
+: 1617 3 15 mon 
+: 1621 3 13 with 
+: 1625 3 11 no 
+: 1629 3 8 fee
+: 1633 3 6 lings 
+: 1637 3 4 don’t 
+: 1641 3 6 de
+: 1645 5 8 serve 
+: 1651 1 9 to 
+: 1653 14 8 live, 
+: 1669 3 4 it’s 
+: 1673 3 6 so 
+: 1677 5 8 ob
+: 1683 1 9 vi
+: 1685 18 8 ous
+- 1703
+: 1711 1 8 I’
+: 1713 5 8 ma 
+: 1719 7 8 gear 
+: 1727 3 13 up 
+: 1731 3 6 and 
+: 1735 3 6 take 
+: 1739 3 6 you 
+: 1743 14 1 down
+- 1757 1772
+- 1772
+: 1791 1 6 It’s 
+: 1793 5 4 a 
+: 1799 7 8 take
+: 1807 8 1 down
+- 1815 1836
+- 1836
+: 1855 1 4 I’
+: 1857 3 4 ma 
+: 1863 1 6 take 
+: 1865 5 6 it 
+: 1871 14 1 down
+- 1885 1900
+- 1900
+: 1919 1 6 It’s 
+: 1921 5 4 a 
+: 1927 7 8 take
+: 1935 15 1 down
+- 1950 1996
+- 1996
+: 2015 3 1 Oh
+: 2019 3 3 ~, 
+: 2023 3 4 you’re 
+: 2027 3 6 the 
+* 2031 11 11 mas
+* 2043 3 9 ter 
+: 2047 11 8 of 
+: 2059 3 6 i
+: 2063 7 8 llu
+* 2071 13 1 sion
+- 2084
+: 2087 3 1 나
+: 2091 3 4 를 
+: 2095 7 3 속
+: 2103 3 3 이
+: 2107 3 4 려 
+: 2111 7 3 하
+: 2119 7 1 지
+: 2127 12 -3 마
+- 2139
+: 2143 3 1 Look 
+: 2147 3 3 at 
+: 2151 3 4 all 
+: 2155 3 6 the 
+: 2159 11 11 mas
+: 2171 3 9 ses 
+: 2175 11 8 that 
+: 2187 3 6 you’re 
+: 2191 7 8 foo
+: 2199 12 1 lin’
+- 2211
+: 2215 3 1 But 
+: 2219 3 4 they’ll 
+: 2223 7 3 turn 
+: 2231 3 3 on 
+: 2235 3 4 you 
+: 2239 7 6 soon, 
+: 2247 7 4 so 
+: 2255 12 1 how
+- 2267
+: 2271 5 1 How 
+: 2277 5 3 can 
+: 2283 3 4 you 
+: 2287 6 3 sleep 
+: 2299 3 3 or 
+: 2303 5 3 live 
+: 2309 3 4 with 
+: 2313 5 6 your
+: 2319 8 4 self?
+- 2327
+: 2331 3 4 A 
+: 2335 5 9 bro
+: 2341 5 8 ken 
+: 2347 3 6 soul 
+: 2351 5 9 trapped 
+: 2357 5 8 in 
+: 2363 3 6 the 
+: 2367 5 3 nas
+: 2373 5 4 ti
+: 2379 3 6 est 
+: 2383 8 4 shell
+- 2391
+: 2395 3 8 영
+: 2399 10 13 혼 
+: 2411 3 8 없
+: 2415 10 8 는 
+: 2427 3 8 네 
+: 2431 10 15 목
+: 2443 3 8 숨
+: 2447 10 8 을 
+: 2463 11 18 끊
+: 2475 3 16 으
+: 2479 10 15 러, 
+: 2491 3 13 and 
+: 2495 10 12 watch 
+: 2507 5 8 you 
+: 2513 9 8 die
+: 2523 3 9 -i
+: 2527 11 8 e
+: 2539 3 9 -i
+: 2543 3 11 -e
+: 2547 3 9 -e
+: 2551 12 8 -e
+- 2563
+R 2567 3 4 You 
+R 2571 3 4 can 
+R 2575 3 4 try, 
+R 2579 3 4 but 
+R 2583 3 4 you 
+R 2587 3 4 can’t 
+R 2591 7 4 hide
+- 2598
+R 2605 1 6 It’s 
+R 2607 2 6 a 
+R 2611 4 6 take
+R 2617 2 6 down, 
+R 2621 1 6 I’m
+R 2623 1 6 a 
+R 2625 2 6 take 
+R 2629 2 6 you 
+R 2633 2 6 out, 
+R 2637 2 6 you’ll 
+R 2641 5 6 break 
+R 2647 4 6 down 
+R 2653 2 6 like, 
+R 2657 3 6 “What?”
+- 2660
+R 2667 1 6 It’s 
+R 2669 3 6 a 
+R 2673 5 6 take
+R 2679 3 6 down, 
+R 2683 1 6 I’m
+R 2685 3 6 a 
+R 2689 3 6 take 
+R 2693 3 6 you 
+R 2697 3 6 out, 
+R 2701 1 6 and 
+R 2703 1 6 it 
+R 2705 5 6 ain’t 
+R 2711 3 6 gon
+R 2715 5 6 na 
+R 2721 4 6 stop
+- 2725
+R 2731 1 6 I’m
+R 2733 3 6 a 
+R 2737 3 6 cut 
+R 2741 1 6 you 
+R 2743 3 6 op
+R 2747 3 6 en, 
+R 2751 3 6 lose 
+R 2755 1 6 con
+R 2757 5 6 trol, 
+R 2763 3 6 then 
+R 2767 3 6 rip 
+R 2771 7 6 out 
+R 2779 5 6 your 
+R 2785 3 6 heart
+- 2788
+R 2791 1 6 You’ll 
+R 2795 1 6 be 
+R 2799 1 6 beg
+R 2801 1 6 gin’ 
+R 2803 1 6 and 
+R 2807 1 6 cry
+R 2811 1 6 in’, 
+R 2815 1 6 all 
+R 2817 1 6 of 
+R 2819 1 6 you 
+R 2823 3 6 dy
+R 2827 1 6 in’
+- 2828
+: 2831 1 8 I’m
+: 2833 5 8 a 
+: 2839 7 8 gear 
+: 2847 3 13 up 
+: 2851 3 6 and 
+: 2855 3 6 take 
+: 2859 3 6 you 
+: 2863 14 1 down
+- 2877 2892
+- 2892
+: 2911 1 6 It’s 
+: 2913 5 4 a 
+: 2919 7 8 take
+: 2927 8 1 down
+- 2935 2956
+- 2956
+: 2975 1 4 I’m
+: 2977 3 4 a 
+: 2983 1 6 take 
+: 2985 5 6 it 
+: 2991 14 1 down
+- 3005 3020
+- 3020
+: 3039 1 6 It’s 
+: 3041 5 4 a 
+: 3047 7 8 take
+: 3055 15 1 down, 
+: 3111 1 6 take 
+: 3113 4 6 it 
+: 3119 16 1 down
+E
