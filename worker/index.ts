@@ -8,8 +8,8 @@ import { onRequest as sharedSongsAdminOnRequest } from '../functions/shared-song
 import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
 
 interface WorkerEnv {
+  ADMIN_PANEL_PASSWORD?: string;
   ASSETS?: Fetcher;
-  SHARED_SONGS_ADMIN_PASSWORD?: string;
   SHARED_SONGS_ADMIN_TOKEN?: string;
   SHARED_SONGS_KV?: KVNamespace;
 }

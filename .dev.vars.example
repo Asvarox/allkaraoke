@@ -1,4 +1,6 @@
 # Local development secrets for Wrangler (Pages Functions).
 # Copy this file to .dev.vars (gitignored) and fill in real values.
-# Production secrets must be set via: wrangler secret put SHARED_SONGS_ADMIN_TOKEN
+# Production secrets must be set via wrangler secret put.
 SHARED_SONGS_ADMIN_TOKEN=your-local-dev-token
+
+ADMIN_PANEL_PASSWORD=12345

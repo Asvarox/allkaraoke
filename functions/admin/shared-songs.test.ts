@@ -57,7 +57,7 @@ const createRecord = (overrides: Partial<SharedSongRecord> = {}): SharedSongReco
 });
 
 const createEnv = (kv = new MockKVNamespace()) => ({
-  SHARED_SONGS_ADMIN_PASSWORD: 'admin-password',
+  ADMIN_PANEL_PASSWORD: 'admin-password',
   SHARED_SONGS_KV: kv,
 });
 
@@ -65,7 +65,7 @@ const createRequest = (url: string, init: RequestInit = {}) =>
   new Request(url, {
     ...init,
     headers: {
-      'x-shared-songs-admin-password': 'admin-password',
+      'x-admin-panel-password': 'admin-password',
       ...init.headers,
     },
   });
@@ -80,7 +80,7 @@ describe('browser shared songs admin function', () => {
     } as EventContext<typeof env, string, unknown>);
     const wrongResponse = await onRequest({
       request: createRequest('https://example.com/admin/shared-songs', {
-        headers: { 'x-shared-songs-admin-password': 'wrong-password' },
+        headers: { 'x-admin-panel-password': 'wrong-password' },
       }),
       env,
     } as EventContext<typeof env, string, unknown>);

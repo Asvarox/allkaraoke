@@ -6,7 +6,7 @@ import {
 import { SharedSongUpdate, updateSharedSong } from '../shared-songs-store';
 
 interface Env {
-  SHARED_SONGS_ADMIN_PASSWORD?: string;
+  ADMIN_PANEL_PASSWORD?: string;
   SHARED_SONGS_KV?: KVNamespace;
 }
 

@@ -87,8 +87,8 @@ The hidden admin panel is available at `/admin`. It is not linked from the main 
 The browser admin flow:
 
 1. Admin enters the browser admin password.
-2. Frontend stores it in `sessionStorage` under `shared-songs-admin-password`.
-3. Frontend sends it to `/admin/*` endpoints as `x-shared-songs-admin-password`.
+2. Frontend stores it in `sessionStorage` under `admin-panel-password`.
+3. Frontend sends it to `/admin/*` endpoints as `x-admin-panel-password`.
 4. Admin can list, filter, sort, delete, regenerate the index, and open an unverified shared song in the existing editor.
 5. Admin edit saves update local song storage, share the corrected song locally, then update the stable KV record by `externalSongId`.
 
@@ -169,27 +169,27 @@ Guidelines:
 
 Secret name:
 
-- `SHARED_SONGS_ADMIN_PASSWORD`
+- `ADMIN_PANEL_PASSWORD`
 
 Set it for the deployed browser admin endpoints under `/admin/*`.
 
 If deployment is managed as a Worker:
 
 ```bash
-pnpm wrangler secret put SHARED_SONGS_ADMIN_PASSWORD
+pnpm wrangler secret put ADMIN_PANEL_PASSWORD
 ```
 
 If deployment is managed as a Pages project:
 
 ```bash
-pnpm wrangler pages secret put SHARED_SONGS_ADMIN_PASSWORD --project-name allkaraoke-party
+pnpm wrangler pages secret put ADMIN_PANEL_PASSWORD --project-name allkaraoke-party
 ```
 
 Guidelines:
 
 - Do not reuse `SHARED_SONGS_ADMIN_TOKEN`; keep browser-admin and CI credentials separate.
 - Do not commit this value to repo files.
-- Send it only as the `x-shared-songs-admin-password` request header.
+- Send it only as the `x-admin-panel-password` request header.
 
 ### 6.3 Local development secret
 
@@ -197,7 +197,7 @@ Use `.dev.vars` (gitignored), for example:
 
 ```env
 SHARED_SONGS_ADMIN_TOKEN=your-local-token
-SHARED_SONGS_ADMIN_PASSWORD=your-local-browser-admin-password
+ADMIN_PANEL_PASSWORD=your-local-browser-admin-password
 ```
 
 For script-driven local fixture upserts, defaults are in `.env`:
@@ -229,7 +229,7 @@ Where used:
 
 1. Create KV namespace for production and preview.
 2. Put resulting IDs into `wrangler.jsonc` (`id` and `preview_id`).
-3. Set runtime secrets `SHARED_SONGS_ADMIN_TOKEN` and `SHARED_SONGS_ADMIN_PASSWORD` for Cloudflare.
+3. Set runtime secrets `SHARED_SONGS_ADMIN_TOKEN` and `ADMIN_PANEL_PASSWORD` for Cloudflare.
 4. Set GitHub repository secrets (`SHARED_SONGS_ADMIN_URL`, `SHARED_SONGS_ADMIN_TOKEN`, `POSTHOG_PAT_KEY`).
 5. Run local fixture upsert to validate:
 
@@ -258,7 +258,7 @@ curl -s "http://127.0.0.1:8788/shared-song?id=shared-cloudflare-e2e-song"
 - `POST /shared-songs-admin` validates payload shape and upserts.
 - `DELETE /shared-songs-admin?id=<id>` removes song and index entry.
 - `PUT /shared-songs-admin` regenerates the index for CI/local scripts.
-- `/admin/*` endpoints require `x-shared-songs-admin-password`.
+- `/admin/*` endpoints require `x-admin-panel-password`.
 - The `/admin` frontend keeps the browser admin password in `sessionStorage` only.
 - If `SHARED_SONGS_KV` binding is missing, endpoints return 500 with configuration error.
 
@@ -267,7 +267,7 @@ curl -s "http://127.0.0.1:8788/shared-song?id=shared-cloudflare-e2e-song"
 - `401 Unauthorized` on CI admin endpoint:
   - Check `x-shared-songs-admin-token` header value against runtime secret.
 - `401 Unauthorized` on browser admin endpoint:
-  - Check `x-shared-songs-admin-password` header value against `SHARED_SONGS_ADMIN_PASSWORD`.
+  - Check `x-admin-panel-password` header value against `ADMIN_PANEL_PASSWORD`.
 - `Shared songs storage is not configured`:
   - Verify `SHARED_SONGS_KV` binding and namespace IDs in `wrangler.jsonc`.
 - CI sync not writing data:

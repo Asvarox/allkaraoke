@@ -33,7 +33,7 @@ const assertOk = async (response: Response) => {
 };
 
 const adminHeaders = (password: string) => ({
-  'x-shared-songs-admin-password': password,
+  'x-admin-panel-password': password,
 });
 
 export const listAdminSharedSongs = async (password: string) => {

@@ -1,4 +1,4 @@
-export const ADMIN_PASSWORD_STORAGE_KEY = 'shared-songs-admin-password';
+export const ADMIN_PASSWORD_STORAGE_KEY = 'admin-panel-password';
 
 export const getAdminPassword = () =>
   typeof sessionStorage === 'undefined' ? '' : (sessionStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY) ?? '');

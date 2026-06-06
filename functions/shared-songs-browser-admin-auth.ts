@@ -1,5 +1,5 @@
 interface AdminPasswordEnv {
-  SHARED_SONGS_ADMIN_PASSWORD?: string;
+  ADMIN_PANEL_PASSWORD?: string;
 }
 
 export const responseHeaders = {
@@ -7,8 +7,8 @@ export const responseHeaders = {
 };
 
 export const isAuthorizedSharedSongsAdmin = (request: Request, env: AdminPasswordEnv) => {
-  const expectedPassword = env.SHARED_SONGS_ADMIN_PASSWORD;
-  const password = request.headers.get('x-shared-songs-admin-password');
+  const expectedPassword = env.ADMIN_PANEL_PASSWORD;
+  const password = request.headers.get('x-admin-panel-password');
 
   return !!expectedPassword && password === expectedPassword;
 };

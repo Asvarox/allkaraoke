@@ -23,9 +23,17 @@ export class AdminSharedSongsPagePO {
     return this.page.getByRole('heading', { name: 'Shared Songs Admin' });
   }
 
+  public get searchInput() {
+    return this.page.getByRole('textbox', { name: 'Search' });
+  }
+
   public async signIn(password: string) {
     await this.passwordInput.fill(password);
     await this.signInButton.click();
+  }
+
+  public async search(text: string) {
+    await this.searchInput.fill(text);
   }
 
   public async logout() {
@@ -36,6 +44,10 @@ export class AdminSharedSongsPagePO {
     return this.page.getByText(text);
   }
 
+  public rowContaining(text: string) {
+    return this.page.getByRole('row').filter({ hasText: text });
+  }
+
   public deleteButtonFor(title: string) {
     return this.page.getByLabel(`Delete ${title}`);
   }
@@ -44,7 +56,13 @@ export class AdminSharedSongsPagePO {
     await this.deleteButtonFor(title).click();
   }
 
+  public async deleteSongByExternalId(externalSongId: string) {
+    await this.rowContaining(externalSongId)
+      .getByLabel(/Delete/)
+      .click();
+  }
+
   public async expectPasswordClearedFromSessionStorage() {
-    await expect.poll(() => this.page.evaluate(() => sessionStorage.getItem('shared-songs-admin-password'))).toBeNull();
+    await expect.poll(() => this.page.evaluate(() => sessionStorage.getItem('admin-panel-password'))).toBeNull();
   }
 }
