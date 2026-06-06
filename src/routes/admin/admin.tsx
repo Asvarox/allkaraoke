@@ -193,13 +193,15 @@ export default function Admin() {
                 renderRowActions={({ row }) => (
                   <Stack direction="row">
                     <Tooltip title="Edit shared song">
-                      <Link
-                        to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true`}
-                        aria-label={`Edit ${row.original.title}`}>
-                        <IconButton size="small">
-                          <Edit fontSize="small" />
-                        </IconButton>
-                      </Link>
+                      <span>
+                        <Link
+                          to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true`}
+                          aria-label={`Edit ${row.original.title}`}>
+                          <IconButton size="small">
+                            <Edit fontSize="small" />
+                          </IconButton>
+                        </Link>
+                      </span>
                     </Tooltip>
                     <Tooltip title="Delete shared song">
                       <IconButton
