@@ -142,7 +142,7 @@ export function SharedSongManagement({ password }: Props) {
             <Tooltip title="Edit shared song">
               <span>
                 <Link
-                  to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true`}
+                  to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true&step=sync`}
                   aria-label={`Edit ${row.original.title}`}>
                   <IconButton>
                     <Edit />
