@@ -53,6 +53,8 @@ jobs:
         timeout-minutes: 5
       - name: Build app
         run: pnpm build
+      - name: Configure local worker secrets for E2E
+        run: cp .dev.vars.example .dev.vars
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
