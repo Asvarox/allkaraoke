@@ -34,7 +34,7 @@ describe('browser shared songs admin function', () => {
 
   it('returns list data', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1' }));
+    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1', firstSeenAt: 123 }));
 
     const response = await fetchWorker('https://example.com/admin/shared-songs', createRequest());
 
@@ -43,6 +43,7 @@ describe('browser shared songs admin function', () => {
         externalSongId: 'external-1',
         songId: 'song-1',
         artist: 'Artist',
+        firstSeenAt: 123,
       }),
     ]);
   });
@@ -70,7 +71,10 @@ describe('browser shared songs admin function', () => {
 
   it('regenerates the shared songs index', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    await kv.put('shared-song:external-1', JSON.stringify(generateSharedSongRecord({ externalSongId: 'external-1' })));
+    await kv.put(
+      'shared-song:external-1',
+      JSON.stringify(generateSharedSongRecord({ externalSongId: 'external-1', firstSeenAt: 123 })),
+    );
 
     const response = await fetchWorker('https://example.com/admin/shared-songs', createRequest({ method: 'PUT' }));
 
@@ -81,6 +85,7 @@ describe('browser shared songs admin function', () => {
     await expect(listResponse.json()).resolves.toEqual([
       expect.objectContaining({
         externalSongId: 'external-1',
+        firstSeenAt: 123,
       }),
     ]);
   });

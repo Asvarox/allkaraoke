@@ -14,21 +14,24 @@ const editedSongId = 'cloudflare-artist-cloudflare-shared-unique-song';
 let pages: ReturnType<typeof initialise>;
 let currentExternalSongId = '';
 let currentVisibleTitle = '';
+let externalSongIdsToRemove: string[] = [];
 
 test.beforeEach(async ({ page, context, browser, request }, testInfo) => {
   pages = initialise(page, context, browser);
   currentExternalSongId = createExternalSongId(testInfo);
   currentVisibleTitle = `Admin Panel ${currentExternalSongId}`;
+  externalSongIdsToRemove = [currentExternalSongId];
   await upsertSharedSong(request, {
     externalSongId: currentExternalSongId,
     title: currentVisibleTitle,
+    firstSeenAt: Date.UTC(2025, 0, 15),
     sourceUserId: 'admin-panel-e2e',
   });
   await initTestMode({ page, context });
 });
 
 test.afterEach(async ({ request }) => {
-  await removeSharedSong(request, currentExternalSongId);
+  await Promise.all(externalSongIdsToRemove.map((externalSongId) => removeSharedSong(request, externalSongId)));
 });
 
 test.use({ serviceWorkers: 'block' });
@@ -40,7 +43,7 @@ test('stores the admin password, lists shared songs, and logs out', async ({ pag
   await test.step('Sign in and see the shared song', async () => {
     await pages.adminSharedSongsPage.signIn(adminPanelPassword);
     await pages.adminSharedSongsPage.search(currentVisibleTitle);
-    await expect(pages.adminSharedSongsPage.rowContaining(currentVisibleTitle)).toBeVisible();
+    await expect(pages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).toBeVisible();
   });
 
   await test.step('Logout clears the stored password', async () => {
@@ -50,6 +53,30 @@ test('stores the admin password, lists shared songs, and logs out', async ({ pag
   });
 });
 
+test('shows and sorts shared songs by added date', async ({ page, request }) => {
+  const olderExternalSongId = `${currentExternalSongId}-older`;
+  const olderVisibleTitle = `${currentVisibleTitle} Older`;
+  externalSongIdsToRemove.push(olderExternalSongId);
+  await upsertSharedSong(request, {
+    externalSongId: olderExternalSongId,
+    title: olderVisibleTitle,
+    firstSeenAt: Date.UTC(2024, 0, 2),
+    sourceUserId: 'admin-panel-e2e',
+  });
+
+  await page.goto('/admin?e2e-test');
+
+  await pages.adminSharedSongsPage.signIn(adminPanelPassword);
+  await pages.adminSharedSongsPage.search(currentExternalSongId);
+  await expect(pages.adminSharedSongsPage.table.columnHeader('Added')).toBeVisible();
+  await expect(pages.adminSharedSongsPage.table.rowWithTitle(currentVisibleTitle)).toContainText('Jan 15 2025,');
+  await expect(pages.adminSharedSongsPage.table.rowWithTitle(olderVisibleTitle)).toContainText('Jan 02 2024,');
+
+  await pages.adminSharedSongsPage.table.sortColumnDescending('Added');
+  await expect(pages.adminSharedSongsPage.table.tableRow(1)).toContainText(currentVisibleTitle);
+  await expect(pages.adminSharedSongsPage.table.tableRow(2)).toContainText(olderVisibleTitle);
+});
+
 test('deletes a shared song and refetches the list', async ({ page }) => {
   page.once('dialog', (dialog) => dialog.accept());
 
@@ -57,10 +84,10 @@ test('deletes a shared song and refetches the list', async ({ page }) => {
 
   await pages.adminSharedSongsPage.signIn(adminPanelPassword);
   await pages.adminSharedSongsPage.search(currentVisibleTitle);
-  await expect(pages.adminSharedSongsPage.rowContaining(currentVisibleTitle)).toBeVisible();
+  await expect(pages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).toBeVisible();
 
-  await pages.adminSharedSongsPage.deleteSongByExternalId(currentExternalSongId);
-  await expect(pages.adminSharedSongsPage.rowContaining(currentVisibleTitle)).not.toBeVisible();
+  await pages.adminSharedSongsPage.table.deleteSongByExternalId(currentExternalSongId);
+  await expect(pages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).not.toBeVisible();
 });
 
 test('admin edit save updates KV and returns to admin', async ({ page, request }) => {
@@ -68,7 +95,7 @@ test('admin edit save updates KV and returns to admin', async ({ page, request }
 
   await pages.adminSharedSongsPage.signIn(adminPanelPassword);
   await pages.adminSharedSongsPage.search(currentVisibleTitle);
-  await pages.adminSharedSongsPage.editSongByExternalId(currentExternalSongId);
+  await pages.adminSharedSongsPage.table.editSongByExternalId(currentExternalSongId);
   await expect(page).toHaveURL(/step=sync/);
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
   await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();

@@ -15,7 +15,7 @@ export interface SharedSongRecord {
 
 export type SharedSongIndexEntry = Pick<
   SharedSongRecord,
-  'externalSongId' | 'songId' | 'artist' | 'title' | 'language' | 'videoId'
+  'externalSongId' | 'songId' | 'artist' | 'title' | 'language' | 'videoId' | 'firstSeenAt'
 >;
 
 type StoredSharedSongIndexEntry =
@@ -34,6 +34,7 @@ const normalizeIndexEntry = (entry: StoredSharedSongIndexEntry): SharedSongIndex
   title: entry.title,
   language: entry.language,
   videoId: entry.videoId,
+  firstSeenAt: 'firstSeenAt' in entry ? entry.firstSeenAt : 0,
 });
 
 const getIndex = async (kvNamespace: KVNamespace): Promise<SharedSongIndexEntry[]> =>
@@ -69,6 +70,7 @@ export const upsertSharedSong = async (kvNamespace: KVNamespace, record: SharedS
     title: record.title,
     language: record.language,
     videoId: record.videoId,
+    firstSeenAt: record.firstSeenAt,
   });
 };
 
@@ -112,6 +114,7 @@ export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId:
     title: updatedRecord.title,
     language: updatedRecord.language,
     videoId: updatedRecord.videoId,
+    firstSeenAt: updatedRecord.firstSeenAt,
   });
 
   return true;
@@ -128,13 +131,14 @@ export const regenerateIndex = async (kvNamespace: KVNamespace) => {
 
   const indexEntries: SharedSongIndexEntry[] = records
     .filter((record): record is SharedSongRecord => record !== null)
-    .map(({ externalSongId, songId, artist, title, language, videoId }) => ({
+    .map(({ externalSongId, songId, artist, title, language, videoId, firstSeenAt }) => ({
       externalSongId,
       songId,
       artist,
       title,
       language,
       videoId,
+      firstSeenAt,
     }));
 
   await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));

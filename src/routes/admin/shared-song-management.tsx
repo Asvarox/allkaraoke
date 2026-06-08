@@ -2,6 +2,7 @@ import Delete from '@mui/icons-material/Delete';
 import Edit from '@mui/icons-material/Edit';
 import Refresh from '@mui/icons-material/Refresh';
 import { Alert, Button, IconButton, Tooltip } from '@mui/material';
+import dayjs from 'dayjs';
 import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table';
 import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
@@ -31,6 +32,15 @@ const columns: MRT_ColumnDef<AdminSharedSong>[] = [
     accessorFn: (song) => song.language.join(', '),
     id: 'language',
     header: 'Language',
+  },
+  {
+    accessorKey: 'firstSeenAt',
+    header: 'Added',
+    Cell: ({ cell }) => {
+      const val = cell.getValue<number>();
+
+      return val && <span>{dayjs(val).format('MMM DD YYYY, HH:mm')}</span>;
+    },
   },
 ];
 

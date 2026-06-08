@@ -9,6 +9,7 @@ export interface AdminSharedSong {
   title: string;
   language: string[];
   videoId: string;
+  firstSeenAt: number;
 }
 
 class AdminSharedSongsApiError extends Error {

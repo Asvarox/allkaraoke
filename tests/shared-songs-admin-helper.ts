@@ -32,6 +32,7 @@ export const createExternalSongId = (testInfo: TestInfo) =>
 
 type SharedSongFixtureOverrides = Partial<typeof sharedCloudflareSongFixture> & {
   externalSongId?: string;
+  firstSeenAt?: number;
   sourceUserId?: string;
 };
 

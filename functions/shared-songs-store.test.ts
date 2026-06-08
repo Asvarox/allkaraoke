@@ -4,6 +4,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import {
   getSharedSong,
   listSharedSongs,
+  regenerateIndex,
   removeSharedSong,
   updateSharedSong,
   upsertSharedSong,
@@ -23,7 +24,10 @@ describe('sharedSongsStore KV behavior', () => {
 
     const list = await listSharedSongs(kv);
     expect(list).toHaveLength(1);
-    expect(list[0].songId).toBe('song-1');
+    expect(list[0]).toMatchObject({
+      songId: 'song-1',
+      firstSeenAt: 1,
+    });
   });
 
   it('updates a shared song in place while preserving externalSongId', async () => {
@@ -51,6 +55,24 @@ describe('sharedSongsStore KV behavior', () => {
         externalSongId: 'external-1',
         songId: 'new-song',
         title: 'New Song',
+        firstSeenAt: 1,
+      }),
+    ]);
+  });
+
+  it('regenerates the index with first seen timestamps', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+    await kv.put(
+      'shared-song:external-1',
+      JSON.stringify(generateSharedSongRecord({ externalSongId: 'external-1', firstSeenAt: 123 })),
+    );
+
+    await regenerateIndex(kv);
+
+    expect(await listSharedSongs(kv)).toEqual([
+      expect.objectContaining({
+        externalSongId: 'external-1',
+        firstSeenAt: 123,
       }),
     ]);
   });

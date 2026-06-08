@@ -1,11 +1,16 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { AdminSharedSongsTablePO } from './admin-shared-songs-table';
 
 export class AdminSharedSongsPagePO {
+  public readonly table: AdminSharedSongsTablePO;
+
   constructor(
     private page: Page,
     private context: BrowserContext,
     private browser: Browser,
-  ) {}
+  ) {
+    this.table = new AdminSharedSongsTablePO(page);
+  }
 
   public get passwordInput() {
     return this.page.getByLabel('Admin password');
@@ -38,32 +43,6 @@ export class AdminSharedSongsPagePO {
 
   public async logout() {
     await this.logoutButton.click();
-  }
-
-  public rowText(text: string) {
-    return this.page.getByText(text);
-  }
-
-  public rowContaining(text: string) {
-    return this.page.getByRole('row').filter({ hasText: text });
-  }
-
-  public deleteButtonFor(title: string) {
-    return this.page.getByLabel(`Delete ${title}`);
-  }
-
-  public async deleteSong(title: string) {
-    await this.deleteButtonFor(title).click();
-  }
-
-  public async deleteSongByExternalId(externalSongId: string) {
-    await this.rowContaining(externalSongId)
-      .getByLabel(/Delete/)
-      .click();
-  }
-
-  public async editSongByExternalId(externalSongId: string) {
-    await this.rowContaining(externalSongId).getByLabel(/Edit/).click();
   }
 
   public async expectPasswordClearedFromSessionStorage() {
