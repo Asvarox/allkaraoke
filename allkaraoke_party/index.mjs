@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "7cf2fad6e6fc18fd8912c941397dc1a1ba465ebe" };
+		e.SENTRY_RELEASE = { id: "6ea724fb80b67b101b913491689f6fa9f0d8f667" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f13d83b3-4032-4156-987d-f10ff1ba19f3", e._sentryDebugIdIdentifier = "sentry-dbid-f13d83b3-4032-4156-987d-f10ff1ba19f3");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0df92389-03fb-4e5c-aca7-a9def692aa56", e._sentryDebugIdIdentifier = "sentry-dbid-0df92389-03fb-4e5c-aca7-a9def692aa56");
 	} catch (e) {}
 })();
 var responseHeaders$3 = { "Content-Type": "application/json" };
@@ -35,7 +35,8 @@ var normalizeIndexEntry = (entry) => ({
 	artist: entry.artist,
 	title: entry.title,
 	language: entry.language,
-	videoId: entry.videoId
+	videoId: entry.videoId,
+	firstSeenAt: "firstSeenAt" in entry ? entry.firstSeenAt : 0
 });
 var getIndex = async (kvNamespace) => (await kvNamespace.get(INDEX_KEY, "json") ?? []).map(normalizeIndexEntry);
 var addToIndex = async (kvNamespace, entry) => {
@@ -59,7 +60,8 @@ var upsertSharedSong = async (kvNamespace, record) => {
 		artist: record.artist,
 		title: record.title,
 		language: record.language,
-		videoId: record.videoId
+		videoId: record.videoId,
+		firstSeenAt: record.firstSeenAt
 	});
 };
 var removeSharedSong = async (kvNamespace, externalSongId) => {
@@ -84,7 +86,8 @@ var updateSharedSong = async (kvNamespace, externalSongId, update) => {
 		artist: updatedRecord.artist,
 		title: updatedRecord.title,
 		language: updatedRecord.language,
-		videoId: updatedRecord.videoId
+		videoId: updatedRecord.videoId,
+		firstSeenAt: updatedRecord.firstSeenAt
 	});
 	return true;
 };
@@ -92,13 +95,14 @@ var regenerateIndex = async (kvNamespace) => {
 	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
 	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
 		return await kvNamespace.get(name, "json");
-	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId }) => ({
+	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId, firstSeenAt }) => ({
 		externalSongId,
 		songId,
 		artist,
 		title,
 		language,
-		videoId
+		videoId,
+		firstSeenAt
 	}));
 	await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));
 };
