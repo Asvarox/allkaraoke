@@ -1,8 +1,8 @@
-//#region functions/ph-data/[[catchall]].ts
+//#region functions/shared-songs-browser-admin-auth.ts
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "3e6fe71bfa65d7958c231a2aa3888bc38bf8db14" };
+		e.SENTRY_RELEASE = { id: "7cf2fad6e6fc18fd8912c941397dc1a1ba465ebe" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,9 +11,181 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "457bda49-b93d-4fe4-8bc4-9224399d6a62", e._sentryDebugIdIdentifier = "sentry-dbid-457bda49-b93d-4fe4-8bc4-9224399d6a62");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f13d83b3-4032-4156-987d-f10ff1ba19f3", e._sentryDebugIdIdentifier = "sentry-dbid-f13d83b3-4032-4156-987d-f10ff1ba19f3");
 	} catch (e) {}
 })();
+var responseHeaders$3 = { "Content-Type": "application/json" };
+var isAuthorizedSharedSongsAdmin = (request, env) => {
+	const expectedPassword = env.ADMIN_PANEL_PASSWORD;
+	const password = request.headers.get("x-admin-panel-password");
+	return !!expectedPassword && password === expectedPassword;
+};
+var unauthorizedResponse = () => new Response(JSON.stringify({ error: "Unauthorized" }), {
+	status: 401,
+	headers: responseHeaders$3
+});
+//#endregion
+//#region functions/shared-songs-store.ts
+var SHARED_SONG_KEY_PREFIX = "shared-song:";
+var INDEX_KEY = "shared-songs-index";
+var getStorageKey = (externalSongId) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
+var normalizeIndexEntry = (entry) => ({
+	externalSongId: "externalSongId" in entry ? entry.externalSongId : entry.songId,
+	songId: entry.songId,
+	artist: entry.artist,
+	title: entry.title,
+	language: entry.language,
+	videoId: entry.videoId
+});
+var getIndex = async (kvNamespace) => (await kvNamespace.get(INDEX_KEY, "json") ?? []).map(normalizeIndexEntry);
+var addToIndex = async (kvNamespace, entry) => {
+	const nextIndex = [...(await getIndex(kvNamespace)).filter((song) => song.externalSongId !== entry.externalSongId), entry];
+	await kvNamespace.put(INDEX_KEY, JSON.stringify(nextIndex));
+};
+var removeFromIndex = async (kvNamespace, externalSongId) => {
+	const index = await getIndex(kvNamespace);
+	await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((song) => song.externalSongId !== externalSongId)));
+};
+var listSharedSongs = async (kvNamespace) => {
+	return await getIndex(kvNamespace);
+};
+var getSharedSong = (kvNamespace, externalSongId) => kvNamespace.get(getStorageKey(externalSongId), "json");
+var upsertSharedSong = async (kvNamespace, record) => {
+	const storageKey = getStorageKey(record.externalSongId);
+	await kvNamespace.put(storageKey, JSON.stringify(record));
+	await addToIndex(kvNamespace, {
+		externalSongId: record.externalSongId,
+		songId: record.songId,
+		artist: record.artist,
+		title: record.title,
+		language: record.language,
+		videoId: record.videoId
+	});
+};
+var removeSharedSong = async (kvNamespace, externalSongId) => {
+	if (!await getSharedSong(kvNamespace, externalSongId)) return false;
+	await kvNamespace.delete(getStorageKey(externalSongId));
+	await removeFromIndex(kvNamespace, externalSongId);
+	return true;
+};
+var updateSharedSong = async (kvNamespace, externalSongId, update) => {
+	const currentRecord = await getSharedSong(kvNamespace, externalSongId);
+	if (!currentRecord) return false;
+	const updatedRecord = {
+		...currentRecord,
+		...update,
+		externalSongId,
+		lastSeenAt: Date.now()
+	};
+	await kvNamespace.put(getStorageKey(externalSongId), JSON.stringify(updatedRecord));
+	await addToIndex(kvNamespace, {
+		externalSongId,
+		songId: updatedRecord.songId,
+		artist: updatedRecord.artist,
+		title: updatedRecord.title,
+		language: updatedRecord.language,
+		videoId: updatedRecord.videoId
+	});
+	return true;
+};
+var regenerateIndex = async (kvNamespace) => {
+	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
+	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
+		return await kvNamespace.get(name, "json");
+	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId }) => ({
+		externalSongId,
+		songId,
+		artist,
+		title,
+		language,
+		videoId
+	}));
+	await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));
+};
+//#endregion
+//#region functions/admin/shared-song.ts
+var isSharedSongUpdate = (payload) => {
+	if (!payload || typeof payload !== "object") return false;
+	const update = payload;
+	return typeof update.songId === "string" && typeof update.songTxt === "string" && typeof update.artist === "string" && typeof update.title === "string" && Array.isArray(update.language) && update.language.every((language) => typeof language === "string") && typeof update.videoId === "string";
+};
+var onRequest$7 = async ({ request, env }) => {
+	if (!isAuthorizedSharedSongsAdmin(request, env)) return unauthorizedResponse();
+	if (!env.SHARED_SONGS_KV) return new Response(JSON.stringify({ error: "Shared songs storage is not configured" }), {
+		status: 500,
+		headers: responseHeaders$3
+	});
+	try {
+		if (request.method !== "PUT") return new Response(JSON.stringify({ error: "Method not allowed" }), {
+			status: 405,
+			headers: responseHeaders$3
+		});
+		const externalSongId = new URL(request.url).searchParams.get("id")?.trim();
+		if (!externalSongId) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
+			status: 400,
+			headers: responseHeaders$3
+		});
+		const payload = await request.json();
+		if (!isSharedSongUpdate(payload)) return new Response(JSON.stringify({ error: "Invalid song payload" }), {
+			status: 400,
+			headers: responseHeaders$3
+		});
+		if (!await updateSharedSong(env.SHARED_SONGS_KV, externalSongId, payload)) return new Response(JSON.stringify({ error: "Song not found" }), {
+			status: 404,
+			headers: responseHeaders$3
+		});
+		return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+	} catch (error) {
+		console.error("Failed to update shared song", error);
+		return new Response(JSON.stringify({ error: "Internal server error" }), {
+			status: 500,
+			headers: responseHeaders$3
+		});
+	}
+};
+//#endregion
+//#region functions/admin/shared-songs.ts
+var onRequest$6 = async ({ request, env }) => {
+	if (!isAuthorizedSharedSongsAdmin(request, env)) return unauthorizedResponse();
+	if (!env.SHARED_SONGS_KV) return new Response(JSON.stringify({ error: "Shared songs storage is not configured" }), {
+		status: 500,
+		headers: responseHeaders$3
+	});
+	try {
+		if (request.method === "GET") {
+			const songs = await listSharedSongs(env.SHARED_SONGS_KV);
+			return new Response(JSON.stringify(songs), { headers: responseHeaders$3 });
+		}
+		if (request.method === "DELETE") {
+			const externalSongId = new URL(request.url).searchParams.get("id")?.trim();
+			if (!externalSongId) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
+				status: 400,
+				headers: responseHeaders$3
+			});
+			if (!await removeSharedSong(env.SHARED_SONGS_KV, externalSongId)) return new Response(JSON.stringify({ error: "Song not found" }), {
+				status: 404,
+				headers: responseHeaders$3
+			});
+			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+		}
+		if (request.method === "PUT") {
+			await regenerateIndex(env.SHARED_SONGS_KV);
+			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+		}
+		return new Response(JSON.stringify({ error: "Method not allowed" }), {
+			status: 405,
+			headers: responseHeaders$3
+		});
+	} catch (error) {
+		console.error("Failed to administer shared songs", error);
+		return new Response(JSON.stringify({ error: "Internal server error" }), {
+			status: 500,
+			headers: responseHeaders$3
+		});
+	}
+};
+//#endregion
+//#region functions/ph-data/[[catchall]].ts
 var API_HOST = "eu.i.posthog.com";
 var ASSET_HOST = "eu-assets.i.posthog.com";
 async function handleRequest(context) {
@@ -63,54 +235,6 @@ var onRequest$4 = async (context) => {
 		console.error(e);
 		return new Response();
 	}
-};
-//#endregion
-//#region functions/shared-songs-store.ts
-var SHARED_SONG_KEY_PREFIX = "shared-song:";
-var INDEX_KEY = "shared-songs-index";
-var getStorageKey = (externalSongId) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
-var getIndex = async (kvNamespace) => await kvNamespace.get(INDEX_KEY, "json") ?? [];
-var addToIndex = async (kvNamespace, entry) => {
-	const index = await getIndex(kvNamespace);
-	if (!index.some(({ songId }) => songId === entry.songId)) await kvNamespace.put(INDEX_KEY, JSON.stringify([...index, entry]));
-};
-var removeFromIndex = async (kvNamespace, externalSongId) => {
-	const index = await getIndex(kvNamespace);
-	await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter(({ songId }) => songId !== externalSongId)));
-};
-var listSharedSongs = async (kvNamespace) => {
-	return await getIndex(kvNamespace);
-};
-var getSharedSong = (kvNamespace, externalSongId) => kvNamespace.get(getStorageKey(externalSongId), "json");
-var upsertSharedSong = async (kvNamespace, record) => {
-	const storageKey = getStorageKey(record.externalSongId);
-	await kvNamespace.put(storageKey, JSON.stringify(record));
-	await addToIndex(kvNamespace, {
-		songId: record.songId,
-		artist: record.artist,
-		title: record.title,
-		language: record.language,
-		videoId: record.videoId
-	});
-};
-var removeSharedSong = async (kvNamespace, externalSongId) => {
-	if (!await getSharedSong(kvNamespace, externalSongId)) return false;
-	await kvNamespace.delete(getStorageKey(externalSongId));
-	await removeFromIndex(kvNamespace, externalSongId);
-	return true;
-};
-var regenerateIndex = async (kvNamespace) => {
-	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
-	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
-		return await kvNamespace.get(name, "json");
-	}))).filter((record) => record !== null).map(({ songId, artist, title, language, videoId }) => ({
-		songId,
-		artist,
-		title,
-		language,
-		videoId
-	}));
-	await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));
 };
 //#endregion
 //#region functions/shared-song.ts
@@ -167,7 +291,7 @@ var onRequest$2 = async ({ request, env }) => {
 		});
 		const normalizedQuery = query.toLowerCase();
 		const songs = (await listSharedSongs(env.SHARED_SONGS_KV)).filter((song) => song.artist.toLowerCase().includes(normalizedQuery) || song.title.toLowerCase().includes(normalizedQuery) || song.language.some((language) => language.toLowerCase().includes(normalizedQuery))).slice(0, limit).map((song) => ({
-			externalSongId: song.songId,
+			externalSongId: song.externalSongId,
 			songId: song.songId,
 			artist: song.artist,
 			title: song.title,
@@ -276,6 +400,8 @@ var worker_entry_default = { fetch(request, env, executionContext) {
 	if (pathname === "/shared-songs") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/shared-song") return callPagesHandler(onRequest$3, request, env, executionContext);
 	if (pathname === "/shared-songs-admin") return callPagesHandler(onRequest$1, request, env, executionContext);
+	if (pathname === "/admin/shared-songs") return callPagesHandler(onRequest$6, request, env, executionContext);
+	if (pathname === "/admin/shared-song") return callPagesHandler(onRequest$7, request, env, executionContext);
 	if (pathname === "/proxy") return callPagesHandler(onRequest$4, request, env, executionContext);
 	if (pathname === "/stry-tunnel") return callPagesHandler(onRequest, request, env, executionContext);
 	if (pathname === "/ph-data" || pathname.startsWith("/ph-data/")) return callPagesHandler(onRequest$5, request, env, executionContext, { catchall: pathname.slice(8).split("/").filter(Boolean) });
