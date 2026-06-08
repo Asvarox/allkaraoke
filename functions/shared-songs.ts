@@ -39,7 +39,7 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
       )
       .slice(0, limit)
       .map((song) => ({
-        externalSongId: song.songId,
+        externalSongId: song.externalSongId,
         songId: song.songId,
         artist: song.artist,
         title: song.title,

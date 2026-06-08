@@ -1,3 +1,4 @@
+import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
 import { cloudflare } from '@cloudflare/vite-plugin';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
@@ -7,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
-import { defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from 'vitest/config';
 import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
@@ -89,9 +90,36 @@ export default defineConfig({
   },
 
   test: {
-    include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     globals: true,
     environment: 'happy-dom',
     setupFiles: 'src/setup-tests.ts',
+    projects: [
+      {
+        extends: true,
+        test: {
+          name: 'app',
+          include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts'],
+        },
+      },
+      {
+        plugins: [
+          cloudflareTest({
+            main: './worker/index.ts',
+            miniflare: {
+              compatibilityDate: '2026-05-27',
+              kvNamespaces: ['SHARED_SONGS_KV'],
+              bindings: {
+                ADMIN_PANEL_PASSWORD: 'admin-password',
+              },
+            },
+          }),
+        ],
+        test: {
+          name: 'functions',
+          include: ['functions/**/*.test.ts'],
+        },
+      },
+    ],
   },
 });

@@ -20,6 +20,7 @@ export default function Edit() {
   const [shareSongs] = useShareSongs(null);
   const songId = useQueryParam('song');
   const externalSongId = useQueryParam('externalSong');
+  const isAdminEdit = useQueryParam('admin') === 'true';
   useBackgroundMusic(false);
   const song = useSong(songId ?? '', {
     sourceType: externalSongId ? 'shared' : 'library',
@@ -64,7 +65,10 @@ export default function Edit() {
           Updated: <b>{song.data.lastUpdate ? dayjs(song.data.lastUpdate).fromNow() : '-'}</b>
         </abbr>
       </div>
-      <LazyConvert song={song.data} />
+      <LazyConvert
+        song={song.data}
+        adminSharedSongExternalId={isAdminEdit && externalSongId ? externalSongId : undefined}
+      />
     </Paper>
   );
 }

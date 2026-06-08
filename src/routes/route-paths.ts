@@ -17,6 +17,7 @@ const routePaths = {
   SETTINGS_CALIBRATION: 'settings/calibration',
   REMOTE_MIC: 'remote-mic',
   MANAGE_SONGS: 'manage-songs',
+  ADMIN: 'admin',
   EXCLUDE_LANGUAGES: 'exclude-languages',
   CONVERT: 'convert',
   EDIT_SONGS_LIST: 'edit/list',

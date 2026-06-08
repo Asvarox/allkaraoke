@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Unit Tests"
+  short_description: "Vitest unit test guidance"
+  default_prompt: "Use $writing-unit-tests when adding or updating unit tests."

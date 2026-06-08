@@ -30,7 +30,9 @@
       "head_sampling_rate": 1,
     },
   },
-  // Secrets (SHARED_SONGS_ADMIN_TOKEN) must NOT be committed here.
+  // Secrets (SHARED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.
   // Production: set via `wrangler secret put SHARED_SONGS_ADMIN_TOKEN`
+  // Production: set via `wrangler secret put ADMIN_PANEL_PASSWORD`
   // Local dev: add to .dev.vars (gitignored), e.g. SHARED_SONGS_ADMIN_TOKEN=your-local-token
+  // Local dev: add to .dev.vars (gitignored), e.g. ADMIN_PANEL_PASSWORD=your-local-admin-password
 }

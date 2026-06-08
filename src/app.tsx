@@ -30,6 +30,7 @@ import Welcome from '~/routes/welcome/welcome';
 const LazySongList = lazy(() =>
   import('~/routes/manage-songs/song-management').then((modules) => ({ default: modules.SongList })),
 );
+const LazyAdmin = lazy(() => import('~/routes/admin/admin'));
 const LazyHistory = lazy(() => import('~/routes/history/history-page'));
 const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) => ({ default: modules.default })));
 
@@ -80,6 +81,14 @@ function App() {
                 <Route path={routePaths.SETTINGS_CALIBRATION} component={CalibrationSettings} />
                 <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
                 <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
+                <Route
+                  path={routePaths.ADMIN}
+                  component={() => (
+                    <Suspense fallback={<PageLoader />}>
+                      <LazyAdmin />
+                    </Suspense>
+                  )}
+                />
                 <Route path="social-media-elements" component={SocialMediaElements} />
                 <Route path={routePaths.CONVERT} component={() => <Convert />} />
                 <Route

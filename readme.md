@@ -66,6 +66,7 @@ pnpm e2e --project="chromium" --headed --debug tests/song-list.spec.ts
 It's also possible to run the tests against prod build (same as in CI) - it makes the tests run slightly faster:
 
 ```
+cp .dev.vars.example .dev.vars
 pnpm e2e:prod
 ```
 

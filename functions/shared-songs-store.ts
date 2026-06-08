@@ -13,26 +13,41 @@ export interface SharedSongRecord {
   sourceEventAt: number;
 }
 
-export type SharedSongIndexEntry = Pick<SharedSongRecord, 'songId' | 'artist' | 'title' | 'language' | 'videoId'>;
+export type SharedSongIndexEntry = Pick<
+  SharedSongRecord,
+  'externalSongId' | 'songId' | 'artist' | 'title' | 'language' | 'videoId'
+>;
+
+type StoredSharedSongIndexEntry =
+  | SharedSongIndexEntry
+  | Pick<SharedSongRecord, 'songId' | 'artist' | 'title' | 'language' | 'videoId'>;
 
 const SHARED_SONG_KEY_PREFIX = 'shared-song:';
 const INDEX_KEY = 'shared-songs-index';
 
 const getStorageKey = (externalSongId: string) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
 
+const normalizeIndexEntry = (entry: StoredSharedSongIndexEntry): SharedSongIndexEntry => ({
+  externalSongId: 'externalSongId' in entry ? entry.externalSongId : entry.songId,
+  songId: entry.songId,
+  artist: entry.artist,
+  title: entry.title,
+  language: entry.language,
+  videoId: entry.videoId,
+});
+
 const getIndex = async (kvNamespace: KVNamespace): Promise<SharedSongIndexEntry[]> =>
-  (await kvNamespace.get<SharedSongIndexEntry[]>(INDEX_KEY, 'json')) ?? [];
+  ((await kvNamespace.get<StoredSharedSongIndexEntry[]>(INDEX_KEY, 'json')) ?? []).map(normalizeIndexEntry);
 
 const addToIndex = async (kvNamespace: KVNamespace, entry: SharedSongIndexEntry) => {
   const index = await getIndex(kvNamespace);
-  if (!index.some(({ songId }) => songId === entry.songId)) {
-    await kvNamespace.put(INDEX_KEY, JSON.stringify([...index, entry]));
-  }
+  const nextIndex = [...index.filter((song) => song.externalSongId !== entry.externalSongId), entry];
+  await kvNamespace.put(INDEX_KEY, JSON.stringify(nextIndex));
 };
 
 const removeFromIndex = async (kvNamespace: KVNamespace, externalSongId: string) => {
   const index = await getIndex(kvNamespace);
-  await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter(({ songId }) => songId !== externalSongId)));
+  await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((song) => song.externalSongId !== externalSongId)));
 };
 
 export const listSharedSongs = async (kvNamespace: KVNamespace) => {
@@ -48,6 +63,7 @@ export const upsertSharedSong = async (kvNamespace: KVNamespace, record: SharedS
   const storageKey = getStorageKey(record.externalSongId);
   await kvNamespace.put(storageKey, JSON.stringify(record));
   await addToIndex(kvNamespace, {
+    externalSongId: record.externalSongId,
     songId: record.songId,
     artist: record.artist,
     title: record.title,
@@ -69,6 +85,38 @@ export const removeSharedSong = async (kvNamespace: KVNamespace, externalSongId:
   return true;
 };
 
+export type SharedSongUpdate = Pick<
+  SharedSongRecord,
+  'songId' | 'songTxt' | 'artist' | 'title' | 'language' | 'videoId'
+>;
+
+export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId: string, update: SharedSongUpdate) => {
+  const currentRecord = await getSharedSong(kvNamespace, externalSongId);
+
+  if (!currentRecord) {
+    return false;
+  }
+
+  const updatedRecord: SharedSongRecord = {
+    ...currentRecord,
+    ...update,
+    externalSongId,
+    lastSeenAt: Date.now(),
+  };
+
+  await kvNamespace.put(getStorageKey(externalSongId), JSON.stringify(updatedRecord));
+  await addToIndex(kvNamespace, {
+    externalSongId,
+    songId: updatedRecord.songId,
+    artist: updatedRecord.artist,
+    title: updatedRecord.title,
+    language: updatedRecord.language,
+    videoId: updatedRecord.videoId,
+  });
+
+  return true;
+};
+
 export const regenerateIndex = async (kvNamespace: KVNamespace) => {
   const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
   const records = await Promise.all(
@@ -80,7 +128,8 @@ export const regenerateIndex = async (kvNamespace: KVNamespace) => {
 
   const indexEntries: SharedSongIndexEntry[] = records
     .filter((record): record is SharedSongRecord => record !== null)
-    .map(({ songId, artist, title, language, videoId }) => ({
+    .map(({ externalSongId, songId, artist, title, language, videoId }) => ({
+      externalSongId,
       songId,
       artist,
       title,

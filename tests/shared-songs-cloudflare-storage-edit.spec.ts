@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { initTestMode } from './helpers';
 import initialise from './page-objects/initialise';
-import { upsertCloudflareSharedSongFixtureOrMock } from './shared-songs-cloudflare-fixture';
+import { upsertCloudflareSharedSongFixture } from './shared-songs-cloudflare-fixture';
 
 const sharedSong = {
   id: 'shared-cloudflare-e2e-song',
@@ -18,11 +18,11 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 test.use({ serviceWorkers: 'block' });
 
-test('shared song fixture is upserted, searchable, and loadable in edit route', async ({ page, baseURL }) => {
+test('shared song fixture is upserted, searchable, and loadable in edit route', async ({ page, request }) => {
   test.slow();
 
   await test.step('Upsert shared song fixture into local Cloudflare storage', async () => {
-    await upsertCloudflareSharedSongFixtureOrMock(page, baseURL);
+    await upsertCloudflareSharedSongFixture(request);
   });
 
   await page.goto('/?e2e-test');

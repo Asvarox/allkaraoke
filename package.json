@@ -40,6 +40,7 @@
     "react-twc": "^1.5.1",
     "react-use": "^17.6.0",
     "react-youtube": "^10.1.0",
+    "swr": "^2.4.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-motion": "^1.1.1",
     "tinycolor2": "^1.6.0",
@@ -92,6 +93,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.39.0",
+    "@cloudflare/vitest-pool-workers": "^0.16.13",
     "@cloudflare/workers-types": "^4.20260529.1",
     "@emotion/babel-plugin": "^11.13.5",
     "@playwright/experimental-ct-react": "1.60.0",

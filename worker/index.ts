@@ -1,3 +1,5 @@
+import { onRequest as sharedSongBrowserAdminOnRequest } from '../functions/admin/shared-song';
+import { onRequest as sharedSongsBrowserAdminOnRequest } from '../functions/admin/shared-songs';
 import { onRequest as phDataOnRequest } from '../functions/ph-data/[[catchall]]';
 import { onRequest as proxyOnRequest } from '../functions/proxy';
 import { onRequest as sharedSongOnRequest } from '../functions/shared-song';
@@ -6,6 +8,7 @@ import { onRequest as sharedSongsAdminOnRequest } from '../functions/shared-song
 import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
 
 interface WorkerEnv {
+  ADMIN_PANEL_PASSWORD?: string;
   ASSETS?: Fetcher;
   SHARED_SONGS_ADMIN_TOKEN?: string;
   SHARED_SONGS_KV?: KVNamespace;
@@ -68,6 +71,14 @@ export default {
 
     if (pathname === '/shared-songs-admin') {
       return callPagesHandler(sharedSongsAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/admin/shared-songs') {
+      return callPagesHandler(sharedSongsBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/admin/shared-song') {
+      return callPagesHandler(sharedSongBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
     if (pathname === '/proxy') {

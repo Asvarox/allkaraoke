@@ -1,70 +1,23 @@
-import { describe, expect, it } from 'vitest';
+import { reset } from 'cloudflare:test';
+import { env as workerEnv } from 'cloudflare:workers';
+import { afterEach, describe, expect, it } from 'vitest';
 import {
   getSharedSong,
   listSharedSongs,
   removeSharedSong,
-  SharedSongRecord,
+  updateSharedSong,
   upsertSharedSong,
 } from './shared-songs-store';
+import { generateSharedSongRecord } from './test-utils';
 
-class MockKVNamespace implements KVNamespace {
-  private storage = new Map<string, string>();
-
-  get(key: string, type: 'json'): Promise<any | null>;
-  get(key: string, type?: 'text'): Promise<string | null>;
-  async get(key: string, type: 'json' | 'text' = 'text') {
-    const value = this.storage.get(key);
-    if (!value) return null;
-    return type === 'json' ? JSON.parse(value) : value;
-  }
-
-  async put(key: string, value: string): Promise<void> {
-    this.storage.set(key, value);
-  }
-
-  async delete(key: string): Promise<void> {
-    this.storage.delete(key);
-  }
-
-  async list<Metadata = unknown>(options?: KVListOptions): Promise<KVNamespaceListResult<Metadata>> {
-    const prefix = options?.prefix ?? '';
-    const keys = [...this.storage.keys()]
-      .filter((key) => key.startsWith(prefix))
-      .map((key) => ({ name: key, expiration: undefined, metadata: undefined as Metadata | undefined }));
-
-    return {
-      list_complete: true,
-      cursor: '',
-      keys,
-      cacheStatus: null,
-    };
-  }
-
-  getWithMetadata(): Promise<any> {
-    throw new Error('Not implemented in test mock');
-  }
-}
-
-const createRecord = (overrides: Partial<SharedSongRecord> = {}): SharedSongRecord => ({
-  externalSongId: 'song-1',
-  songId: 'song-1',
-  songTxt: '#TITLE:Song\nE',
-  artist: 'Artist',
-  title: 'Title',
-  language: ['English'],
-  videoId: 'koBUXESJZ8g',
-  verifiedAt: 1,
-  firstSeenAt: 1,
-  lastSeenAt: 1,
-  sourceUserId: 'user-1',
-  sourceEventAt: 1,
-  ...overrides,
+afterEach(async () => {
+  await reset();
 });
 
 describe('sharedSongsStore KV behavior', () => {
   it('stores and lists records', async () => {
-    const kv = new MockKVNamespace();
-    const record = createRecord();
+    const kv = workerEnv.SHARED_SONGS_KV;
+    const record = generateSharedSongRecord();
 
     await upsertSharedSong(kv, record);
 
@@ -73,13 +26,42 @@ describe('sharedSongsStore KV behavior', () => {
     expect(list[0].songId).toBe('song-1');
   });
 
-  it('replaces record on upsert even when hash matches', async () => {
-    const kv = new MockKVNamespace();
+  it('updates a shared song in place while preserving externalSongId', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1', songId: 'old-song' }));
 
-    await upsertSharedSong(kv, createRecord({ songTxt: 'first', lastSeenAt: 100 }));
+    const updated = await updateSharedSong(kv, 'external-1', {
+      songId: 'new-song',
+      songTxt: '#TITLE:New Song\nE',
+      artist: 'New Artist',
+      title: 'New Song',
+      language: ['Polish'],
+      videoId: 'newVideoId',
+    });
+
+    expect(updated).toBe(true);
+    expect(await getSharedSong(kv, 'external-1')).toMatchObject({
+      externalSongId: 'external-1',
+      songId: 'new-song',
+      title: 'New Song',
+    });
+    expect(await getSharedSong(kv, 'new-song')).toBeNull();
+    expect(await listSharedSongs(kv)).toEqual([
+      expect.objectContaining({
+        externalSongId: 'external-1',
+        songId: 'new-song',
+        title: 'New Song',
+      }),
+    ]);
+  });
+
+  it('replaces record on upsert even when hash matches', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+
+    await upsertSharedSong(kv, generateSharedSongRecord({ songTxt: 'first', lastSeenAt: 100 }));
     await upsertSharedSong(
       kv,
-      createRecord({
+      generateSharedSongRecord({
         songTxt: 'second',
         lastSeenAt: 200,
         sourceEventAt: 300,
@@ -95,8 +77,8 @@ describe('sharedSongsStore KV behavior', () => {
   });
 
   it('removes record from storage and index', async () => {
-    const kv = new MockKVNamespace();
-    await upsertSharedSong(kv, createRecord());
+    const kv = workerEnv.SHARED_SONGS_KV;
+    await upsertSharedSong(kv, generateSharedSongRecord());
 
     const removed = await removeSharedSong(kv, 'song-1');
     const storedRecord = await getSharedSong(kv, 'song-1');
