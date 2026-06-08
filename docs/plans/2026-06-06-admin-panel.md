@@ -15,7 +15,7 @@
 - Baseline branch is `master`.
 - React Compiler is enabled, so do not add manual memoization unless the surrounding code already requires it.
 - The existing CI admin endpoint is `functions/shared-songs-admin.ts`; keep it token-protected and CI-oriented.
-- The new browser admin password should be separate from `SHARED_SONGS_ADMIN_TOKEN`, for example `SHARED_SONGS_ADMIN_PASSWORD`.
+- The new browser admin password should be separate from `SHARED_SONGS_ADMIN_TOKEN`, for example `ADMIN_PANEL_PASSWORD`.
 - The current shared-song index does not store `externalSongId`; it currently infers it from `songId`. Admin edits must keep `externalSongId` stable even when a corrected song gets a new `songId`, so the index must be extended first.
 
 ## Task 1: Extend Shared-Song Store for Stable External IDs
@@ -134,11 +134,7 @@ export type SharedSongUpdate = Pick<
   'songId' | 'songTxt' | 'artist' | 'title' | 'language' | 'videoId'
 >;
 
-export const updateSharedSong = async (
-  kvNamespace: KVNamespace,
-  externalSongId: string,
-  update: SharedSongUpdate,
-) => {
+export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId: string, update: SharedSongUpdate) => {
   const currentRecord = await getSharedSong(kvNamespace, externalSongId);
 
   if (!currentRecord) {
@@ -229,7 +225,7 @@ Use a test env:
 
 ```ts
 const env = {
-  SHARED_SONGS_ADMIN_PASSWORD: 'admin-password',
+  ADMIN_PANEL_PASSWORD: 'admin-password',
   SHARED_SONGS_KV: kv,
 };
 ```
@@ -258,7 +254,7 @@ Create `functions/shared-songs-browser-admin-auth.ts`:
 
 ```ts
 interface AdminPasswordEnv {
-  SHARED_SONGS_ADMIN_PASSWORD?: string;
+  ADMIN_PANEL_PASSWORD?: string;
 }
 
 export const responseHeaders = {
@@ -266,7 +262,7 @@ export const responseHeaders = {
 };
 
 export const isAuthorizedSharedSongsAdmin = (request: Request, env: AdminPasswordEnv) => {
-  const expectedPassword = env.SHARED_SONGS_ADMIN_PASSWORD;
+  const expectedPassword = env.ADMIN_PANEL_PASSWORD;
   const password = request.headers.get('x-shared-songs-admin-password');
 
   return !!expectedPassword && password === expectedPassword;
@@ -347,7 +343,7 @@ Create `src/routes/admin/admin-password.ts`:
 export const ADMIN_PASSWORD_STORAGE_KEY = 'shared-songs-admin-password';
 
 export const getAdminPassword = () =>
-  typeof sessionStorage === 'undefined' ? '' : sessionStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY) ?? '';
+  typeof sessionStorage === 'undefined' ? '' : (sessionStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY) ?? '');
 
 export const setAdminPassword = (password: string) => {
   sessionStorage.setItem(ADMIN_PASSWORD_STORAGE_KEY, password);
@@ -514,10 +510,7 @@ const isAdminEdit = useQueryParam('admin') === 'true';
 Pass it to `LazyConvert` only when both admin mode and `externalSongId` are present:
 
 ```tsx
-<LazyConvert
-  song={song.data}
-  adminSharedSongExternalId={isAdminEdit && externalSongId ? externalSongId : undefined}
-/>
+<LazyConvert song={song.data} adminSharedSongExternalId={isAdminEdit && externalSongId ? externalSongId : undefined} />
 ```
 
 **Step 2: Change save flow for admin shared-song edits**
@@ -552,7 +545,9 @@ const [saveError, setSaveError] = useState<string | null>(null);
 Clear it before save attempts and render an `Alert` above the fixed footer when present:
 
 ```tsx
-{saveError && <Alert severity="error">{saveError}</Alert>}
+{
+  saveError && <Alert severity="error">{saveError}</Alert>;
+}
 ```
 
 **Step 4: Run type-check**
@@ -671,7 +666,7 @@ In `docs/shared-songs-flow.md`, add:
 
 - browser admin route: `/admin`
 - admin API endpoints under `/admin/*`
-- `SHARED_SONGS_ADMIN_PASSWORD`
+- `ADMIN_PANEL_PASSWORD`
 - password is sent as `x-shared-songs-admin-password`
 - frontend stores it in `sessionStorage`
 - admin edit keeps `externalSongId` stable while updating KV content

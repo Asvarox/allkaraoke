@@ -20,3 +20,7 @@ When asked to find or remove unused files, run:
 ```bash
 pnpm knip
 ```
+
+## Styling
+
+- Do not use Material UI or Emotion for new styles or new UI components. Use Tailwind utility classes and existing AKUI primitives instead.

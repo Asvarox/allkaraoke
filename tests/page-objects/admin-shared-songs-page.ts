@@ -20,7 +20,7 @@ export class AdminSharedSongsPagePO {
   }
 
   public get adminHeading() {
-    return this.page.getByRole('heading', { name: 'Shared Songs Admin' });
+    return this.page.getByRole('heading', { name: 'Shared Songs Management' });
   }
 
   public get searchInput() {
@@ -60,6 +60,10 @@ export class AdminSharedSongsPagePO {
     await this.rowContaining(externalSongId)
       .getByLabel(/Delete/)
       .click();
+  }
+
+  public async editSongByExternalId(externalSongId: string) {
+    await this.rowContaining(externalSongId).getByLabel(/Edit/).click();
   }
 
   public async expectPasswordClearedFromSessionStorage() {

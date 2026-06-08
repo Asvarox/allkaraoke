@@ -20,7 +20,7 @@ The existing edit route can already load shared songs through `/edit/song/?exter
 Add a dedicated browser-admin API instead of expanding the CI admin endpoint:
 
 - Keep `/shared-songs-admin` token-protected for CI automation.
-- Add a new browser-admin function protected by a separate password, for example `SHARED_SONGS_ADMIN_PASSWORD`.
+- Add a new browser-admin function protected by a separate password, for example `ADMIN_PANEL_PASSWORD`.
 - Reuse and extend `functions/shared-songs-store.ts` so both admin surfaces share KV behavior without duplicating storage logic.
 
 This keeps human admin behavior separate from automation while giving the frontend one simple contract.

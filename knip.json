@@ -26,7 +26,8 @@
     "src/routes/sing-a-song/song-selection/hooks/use-playlists-eurovision.tsx",
     "src/setup-tests.ts",
     "src/stories/song-fixture.ts",
-    "src/routes/social-media-elements/social-media-elements.tsx:10"
+    "src/routes/social-media-elements/social-media-elements.tsx:10",
+    "functions/**/*.test.ts"
   ],
   "ignoreDependencies": [
     "vite-tsconfig-paths",

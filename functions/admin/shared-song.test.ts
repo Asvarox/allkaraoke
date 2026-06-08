@@ -1,64 +1,17 @@
-import { describe, expect, it } from 'vitest';
-import { getSharedSong, SharedSongRecord, upsertSharedSong } from '../shared-songs-store';
+import { reset } from 'cloudflare:test';
+import { env as workerEnv } from 'cloudflare:workers';
+import { afterEach, describe, expect, it } from 'vitest';
+import { getSharedSong, upsertSharedSong } from '../shared-songs-store';
+import { generateSharedSongRecord } from '../test-utils';
 import { onRequest } from './shared-song';
 
-class MockKVNamespace implements KVNamespace {
-  private storage = new Map<string, string>();
-
-  get(key: string, type: 'json'): Promise<any | null>;
-  get(key: string, type?: 'text'): Promise<string | null>;
-  async get(key: string, type: 'json' | 'text' = 'text') {
-    const value = this.storage.get(key);
-    if (!value) return null;
-    return type === 'json' ? JSON.parse(value) : value;
-  }
-
-  async put(key: string, value: string): Promise<void> {
-    this.storage.set(key, value);
-  }
-
-  async delete(key: string): Promise<void> {
-    this.storage.delete(key);
-  }
-
-  async list<Metadata = unknown>(options?: KVListOptions): Promise<KVNamespaceListResult<Metadata>> {
-    const prefix = options?.prefix ?? '';
-    const keys = [...this.storage.keys()]
-      .filter((key) => key.startsWith(prefix))
-      .map((key) => ({ name: key, expiration: undefined, metadata: undefined as Metadata | undefined }));
-
-    return {
-      list_complete: true,
-      cursor: '',
-      keys,
-      cacheStatus: null,
-    };
-  }
-
-  getWithMetadata(): Promise<any> {
-    throw new Error('Not implemented in test mock');
-  }
-}
-
-const createRecord = (overrides: Partial<SharedSongRecord> = {}): SharedSongRecord => ({
-  externalSongId: 'external-1',
-  songId: 'song-1',
-  songTxt: '#TITLE:Song\nE',
-  artist: 'Artist',
-  title: 'Title',
-  language: ['English'],
-  videoId: 'koBUXESJZ8g',
-  verifiedAt: 1,
-  firstSeenAt: 1,
-  lastSeenAt: 1,
-  sourceUserId: 'user-1',
-  sourceEventAt: 1,
-  ...overrides,
-});
-
-const createEnv = (kv = new MockKVNamespace()) => ({
+const createEnv = (kv = workerEnv.SHARED_SONGS_KV) => ({
   ADMIN_PANEL_PASSWORD: 'admin-password',
   SHARED_SONGS_KV: kv,
+});
+
+afterEach(async () => {
+  await reset();
 });
 
 const createRequest = (url: string, body: unknown) =>
@@ -105,9 +58,9 @@ describe('browser shared song admin function', () => {
   });
 
   it('updates an existing shared song', async () => {
-    const kv = new MockKVNamespace();
+    const kv = workerEnv.SHARED_SONGS_KV;
     const env = createEnv(kv);
-    await upsertSharedSong(kv, createRecord());
+    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1' }));
 
     const response = await onRequest({
       request: createRequest('https://example.com/admin/shared-song?id=external-1', updatePayload),
