@@ -53520,6 +53520,35 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-talya-sindel-done-for",
+    "title": "Done For",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel)",
+    "video": "2_vn-CHWac4",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 10137.5,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-09T00:34:11.714Z",
+    "genre": "Musical",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Andore",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=32035",
+    "duration": 146,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5875,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranstalyasindeldonefor",
+    "local": false
+  },
+  {
     "id": "era-ameno",
     "title": "Ameno",
     "artist": "ERA",
@@ -62363,6 +62392,36 @@
     "local": false
   },
   {
+    "id": "gilda-no-es-mi-despedida",
+    "title": "No es mi despedida",
+    "artist": "Gilda",
+    "video": "y4Rtfp0Nx4k",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 378.53,
+    "gap": 31965.325548833647,
+    "year": "1997",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-09T00:34:11.412Z",
+    "genre": "Cumbia",
+    "realBpm": 378.53,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=No%20es%20mi%20despedida",
+    "duration": 190,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5872,
+    "tracksCount": 1,
+    "search": "gildanoesmidespedida",
+    "local": false
+  },
+  {
     "id": "gin-blossoms-hey-jealousy",
     "title": "Hey Jealousy",
     "artist": "Gin Blossoms",
@@ -64741,6 +64800,33 @@
     "local": false
   },
   {
+    "id": "gooseworx-the-one-whos-running-the-show",
+    "title": "The One Who's Running The Show",
+    "artist": "Gooseworx",
+    "video": "aAg3bwzSuLk",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 5946.157894736842,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-09T00:34:10.850Z",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "Djirtou",
+    "duration": 152,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5870,
+    "tracksCount": 1,
+    "search": "gooseworxtheonewhosrunningtheshow",
+    "local": false
+  },
+  {
     "id": "gorillaz-19-2000",
     "title": "19-2000",
     "artist": "Gorillaz",
@@ -65683,6 +65769,34 @@
     "shortId": 1804,
     "tracksCount": 1,
     "search": "greendayknowyourenemy",
+    "local": false
+  },
+  {
+    "id": "green-day-last-night-on-earth",
+    "title": "Last Night On Earth",
+    "artist": "Green Day",
+    "video": "xg_Y7Or_hWM",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.02,
+    "gap": 15452.708217305453,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-09T00:34:11.713Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5874,
+    "tracksCount": 1,
+    "search": "greendaylastnightonearth",
     "local": false
   },
   {
@@ -90079,6 +90193,35 @@
     "local": false
   },
   {
+    "id": "la-konga-y-los-huayra-la-noche-sin-ti",
+    "title": "La noche sin ti",
+    "artist": "La Konga y Los Huayra",
+    "video": "LYGANlKELhg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 387.98,
+    "gap": 20289.793546059074,
+    "year": "2013",
+    "lastUpdate": "2026-06-09T00:34:11.555Z",
+    "genre": "Cuarteto",
+    "realBpm": 387.98,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Konga%20y%20Los%20Huayra&cancion=La%20noche%20sin%20ti",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5873,
+    "tracksCount": 1,
+    "search": "lakongayloshuayralanochesinti",
+    "local": false
+  },
+  {
     "id": "la-la-land-ryan-gosling-emma-stone-city-of-stars",
     "title": "City Of Stars",
     "artist": "La La Land (Ryan Gosling & Emma Stone)",
@@ -97506,6 +97649,35 @@
     "shortId": 2650,
     "tracksCount": 1,
     "search": "loslobosgipsykingslabamba",
+    "local": false
+  },
+  {
+    "id": "los-nocheros-roja-boca",
+    "title": "Roja boca",
+    "artist": "Los Nocheros",
+    "video": "IGdoDCT9HFk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 200.43,
+    "gap": 37913.09175273163,
+    "year": "1999",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-09T00:34:11.283Z",
+    "genre": "Folclore",
+    "realBpm": 200.43,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Nocheros&cancion=Roja%20boca",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5871,
+    "tracksCount": 1,
+    "search": "losnocherosrojaboca",
     "local": false
   },
   {

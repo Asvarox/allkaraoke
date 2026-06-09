@@ -1,0 +1,528 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel)
+#TITLE:Done For
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#VIDEO:v=2_vn-CHWac4
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:10137,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-talya-sindel-done-for
+#ALLKARAOKE_SID:5875
+#ALLKARAOKE_LASTUPDATE:2026-06-09T00:34:11.714Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=32035
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:146
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel) - Done For.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel) - Done For [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel) - Done For [BG].jpg
+: 27 4 6 La
+: 33 2 4 dy 
+: 36 4 2 of 
+: 42 2 1 the 
+: 47 4 2 pa
+: 52 4 4 ~
+: 57 1 3 ~
+: 59 3 2 lace, 
+: 67 5 2 Sor
+: 73 4 1 ry 
+: 78 4 -1 that 
+: 84 4 -2 I 
+: 89 5 1 ask 
+: 99 4 -1 this
+- 103
+: 108 4 -1 But 
+: 113 3 -3 I 
+: 117 4 -5 hope 
+: 124 4 -6 that 
+: 129 2 -5 I’ve
+: 132 4 -3 ~ 
+: 139 4 -5 been 
+: 148 5 -6 mis
+: 157 7 -8 in
+: 169 8 -11 formed
+- 177
+: 187 3 6 I 
+: 193 3 4 sent 
+: 198 2 2 out 
+: 203 3 1 some 
+: 208 5 4 scouts 
+: 218 7 2 to 
+: 228 3 2 take 
+: 234 3 1 a 
+: 238 2 -1 look 
+: 243 4 -2 a
+: 248 1 -2 round
+: 250 1 -1 ~
+: 252 1 0 ~
+: 254 2 1 ~ 
+: 259 6 -1 through 
+: 269 4 -1 here
+- 273
+: 277 3 -7 And 
+: 283 4 -6 they 
+: 289 8 -5 wound 
+: 300 4 -3 up 
+: 308 6 -5 at 
+: 318 7 -8 your 
+: 328 9 -6 doors
+- 337
+: 347 5 6 Through 
+: 353 3 4 the 
+: 357 4 2 years 
+: 363 2 1 we 
+: 368 8 4 sel
+: 379 6 2 dom 
+: 388 5 2 get 
+: 394 2 1 a 
+: 398 4 -1 warm 
+: 409 6 1 wel
+: 418 6 -1 come
+- 424
+: 428 2 -1 So
+: 431 1 -2 ~
+: 433 2 -3 ~
+: 436 1 -4 ~ 
+: 439 2 -5 I 
+: 442 4 -6 must 
+: 449 5 -3 ask 
+: 459 4 -5 just 
+: 468 8 -6 to 
+: 478 4 -8 be 
+: 488 9 -11 sure
+- 497
+F 506 1 -6 Did 
+F 509 2 3 you 
+F 514 3 -3 do 
+F 520 3 -4 some
+F 525 4 -4 thing 
+F 530 1 -5 to 
+F 533 4 -3 them?
+- 537
+F 556 4 3 Who, 
+F 566 2 -1 me?
+F 569 3 0 ~
+- 572
+: 597 4 -1 All 
+: 602 3 1 I 
+: 610 2 1 did 
+: 615 5 4 was 
+: 621 5 6 re
+: 629 1 6 veal
+: 631 2 7 ~ 
+: 635 5 6 their 
+: 642 3 1 true 
+: 651 12 1 forms
+- 663
+F 667 2 -5 You 
+F 673 2 4 turned 
+F 678 2 -4 them 
+F 683 1 -4 in
+F 687 1 -4 to 
+F 690 10 -1 pigs
+- 700
+F 725 4 -10 Huh
+- 729 736
+- 736
+: 763 1 -1 I 
+: 769 4 -1 don’t 
+: 774 3 1 know 
+: 780 3 -1 who 
+: 784 4 1 you 
+: 789 4 2 are 
+: 794 3 4 nor 
+: 798 5 2 why 
+: 804 4 4 you’re 
+: 812 22 6 here
+- 834
+: 842 4 -1 But 
+: 847 2 -1 let 
+: 853 4 1 me 
+: 859 2 -1 make 
+: 864 1 -1 this 
+: 869 5 2 one 
+: 877 3 6 thing
+: 881 4 7 ~ 
+: 888 13 6 clear
+- 901
+: 908 2 9 I’ve 
+: 914 5 9 got 
+: 923 6 11 peo
+: 932 2 6 ple 
+: 937 4 6 to 
+: 943 2 5 pro
+: 948 4 3 tect
+- 952
+: 963 6 11 Nymphs 
+: 973 2 6 I 
+: 978 3 6 can’t 
+: 984 2 4 ne
+: 988 9 2 glect
+- 997
+: 1003 4 -1 So 
+: 1008 2 6 I’m 
+: 1013 3 6 not 
+: 1019 2 6 ta
+: 1023 4 7 king 
+: 1030 6 6 chan
+: 1039 4 2 ces, 
+: 1049 11 1 dear
+- 1060
+: 1069 2 -1 If 
+: 1074 4 -1 you 
+: 1080 4 -1 make 
+: 1088 4 4 one 
+: 1097 7 6 wrong 
+: 1108 6 6 move, 
+: 1117 4 1 then 
+: 1122 4 2 you’re 
+: 1129 4 1 done 
+: 1139 5 -1 for
+- 1144
+: 1148 3 -1 A
+: 1153 3 -1 ny
+: 1158 3 -1 thing 
+: 1162 4 -1 I 
+: 1169 2 4 don’t
+: 1172 1 5 ~
+: 1174 2 6 ~ 
+: 1178 3 6 ap
+: 1185 9 6 prove, 
+: 1198 2 5 then 
+: 1202 3 6 you’re 
+: 1209 4 1 done 
+: 1219 5 -1 for
+- 1224
+: 1228 3 13 I 
+: 1233 2 13 could 
+: 1238 3 13 put 
+: 1242 1 13 a 
+: 1249 3 13 spell
+: 1253 1 12 ~
+: 1255 2 11 ~ 
+: 1259 4 11 on 
+: 1266 10 11 you, 
+: 1278 2 4 and 
+: 1282 4 6 you’re 
+: 1289 4 5 done 
+: 1299 5 2 for
+- 1304
+: 1308 4 4 Boy, 
+: 1313 3 6 you 
+: 1318 2 4 bet
+: 1322 3 6 ter 
+: 1327 6 4 run 
+: 1338 6 2 or 
+: 1348 4 4 soon 
+: 1353 4 6 you 
+: 1358 2 4 will 
+: 1362 4 6 be 
+: 1369 4 4 done 
+: 1378 5 2 for
+- 1383
+: 1387 3 3 I 
+: 1393 3 4 don’t 
+: 1398 3 2 mean 
+: 1402 3 1 to 
+: 1408 4 4 tip 
+: 1418 5 2 your 
+: 1428 4 1 scale
+: 1433 2 -1 ~
+- 1435
+: 1439 5 -1 But 
+: 1449 2 3 you
+: 1452 1 5 ~
+: 1454 3 4 ~ 
+: 1459 5 2 will 
+: 1468 3 2 fail
+: 1472 1 1 ~
+: 1474 4 -1 ~ 
+: 1479 4 -1 at 
+: 1487 5 4 pla
+: 1494 3 2 cing 
+: 1498 3 1 a
+: 1502 2 2 ny 
+: 1509 3 1 spells
+: 1513 4 -1 ~ 
+: 1520 5 -1 on 
+: 1528 10 -6 me
+- 1538
+: 1547 4 6 I 
+: 1553 3 4 just 
+: 1558 3 2 ate 
+: 1563 1 1 a 
+: 1568 2 3 flow
+: 1571 5 4 ~
+: 1579 6 2 er, 
+: 1588 4 2 one 
+: 1593 2 1 that 
+: 1598 4 -1 claims 
+: 1604 2 -2 your 
+: 1609 2 -1 pow
+: 1612 1 0 ~
+: 1614 3 1 ~
+: 1618 5 -1 er
+- 1623
+: 1628 3 -1 So 
+: 1633 3 -3 you 
+: 1638 4 -5 bet
+: 1643 3 -6 ter 
+: 1649 2 -5 cow
+: 1652 5 -3 ~
+: 1658 5 -5 er 
+: 1668 4 -6 now
+: 1673 1 -7 ~
+: 1675 2 -8 ~ 
+: 1679 4 -8 and 
+: 1686 13 -6 flee
+- 1699
+: 1707 3 0 You 
+: 1712 1 2 must 
+: 1717 5 2 be 
+: 1723 4 4 a 
+: 1728 4 2 li
+: 1733 1 3 ~
+: 1735 4 4 ~
+: 1741 3 2 ar
+- 1744
+: 1748 3 2 Mor
+: 1753 2 1 tals 
+: 1758 2 2 can’t 
+: 1763 3 4 ac
+: 1768 3 8 qui
+: 1772 6 9 ~
+: 1779 5 6 re 
+: 1788 4 6 Mo
+: 1794 2 4 ly 
+: 1798 3 6 with
+: 1803 3 7 out 
+: 1810 3 9 di
+: 1814 4 11 ~
+: 1820 1 9 re
+: 1822 3 8 ~ 
+: 1830 5 7 con
+: 1839 4 6 se
+: 1847 10 6 quence
+- 1857
+: 1862 3 -1 Then 
+: 1868 4 6 I 
+: 1873 2 4 must 
+: 1878 3 2 be
+: 1882 3 1 ~ 
+: 1886 1 1 a 
+: 1888 7 4 god 
+: 1897 7 2 like 
+: 1909 5 1 you
+- 1914
+: 1918 4 -1 Cause 
+: 1923 2 -1 I 
+: 1929 5 4 got 
+: 1938 5 2 this 
+: 1948 6 1 root 
+: 1958 3 -1 from 
+: 1962 2 -1 the 
+: 1968 2 5 ground
+: 1971 5 4 ~ 
+: 1979 4 2 with 
+: 1988 8 1 my 
+: 1998 3 0 bare
+: 2002 4 1 ~ 
+: 2009 4 1 hands
+- 2013
+F 2017 3 5 Her
+F 2021 1 5 mes 
+F 2026 2 -1 gave 
+F 2030 1 0 it 
+F 2035 2 -2 to 
+F 2038 2 0 you, 
+F 2042 3 1 did
+F 2046 3 3 n’t 
+F 2051 2 0 he?
+- 2053
+F 2062 1 -6 O
+F 2064 2 -6 kay, 
+F 2074 3 -5 fine, 
+F 2083 3 -11 yes 
+F 2091 1 -8 But 
+F 2093 1 -5 re
+F 2096 3 1 gard
+F 2103 3 1 less!
+- 2106
+: 2128 4 -1 You 
+: 2134 3 1 and 
+: 2139 3 -1 I 
+: 2144 3 1 are 
+: 2149 4 2 now 
+: 2155 2 4 e
+: 2158 4 2 ven
+: 2163 4 4 ly 
+: 2170 6 6 matched
+- 2176
+: 2202 2 -1 Our 
+: 2207 5 -1 fates 
+: 2213 4 1 are 
+: 2219 2 -1 in
+: 2223 2 1 ter
+: 2228 9 2 twined 
+: 2238 4 2 they’re 
+: 2243 2 4 at
+: 2248 6 6 tached
+- 2254
+: 2267 4 6 I’ve 
+: 2276 3 6 got 
+: 2284 4 9 peo
+: 2292 2 4 ple 
+: 2298 2 3 to 
+: 2303 1 3 pro
+: 2308 3 2 tect
+- 2311
+: 2323 4 9 Friends 
+: 2333 1 5 I 
+: 2338 3 2 can’t 
+: 2343 2 1 ne
+: 2349 2 2 glect
+- 2351
+: 2364 1 -1 So 
+: 2369 2 6 now 
+: 2374 2 6 there 
+: 2380 1 7 is 
+: 2383 3 7 no 
+: 2391 5 5 tur
+: 2399 6 5 ning 
+: 2410 6 4 back!
+- 2416
+: 2430 2 6 You’ve 
+: 2436 3 5 made 
+: 2443 3 4 your 
+: 2450 3 11 one 
+: 2457 5 9 wrong 
+: 2469 5 10 move 
+: 2479 3 5 now 
+: 2484 1 6 you’re 
+: 2490 4 1 done 
+: 2499 7 -1 for
+- 2506
+: 2510 2 2 I 
+: 2514 2 6 will 
+: 2519 3 6 be 
+: 2524 1 4 the 
+: 2529 3 5 one 
+: 2539 4 9 to 
+: 2548 7 9 prove 
+: 2559 1 -2 that 
+: 2564 2 6 you’re 
+: 2569 4 1 done 
+: 2579 3 -1 for
+- 2582
+: 2589 2 1 Not 
+: 2594 3 1 e
+: 2599 3 1 ven 
+: 2603 1 1 a 
+: 2609 5 1 spell 
+: 2621 5 -1 saves 
+: 2630 6 -3 you 
+: 2639 2 1 ’cause 
+: 2643 3 6 you’re 
+: 2648 5 5 done 
+: 2658 3 2 for
+- 2661
+: 2669 3 3 Oh, 
+: 2675 2 4 you 
+: 2679 3 6 bet
+: 2684 4 6 ter 
+: 2689 5 3 run 
+: 2701 3 3 or 
+: 2709 3 1 soon 
+: 2714 2 2 you 
+: 2719 2 3 will 
+: 2724 2 4 be 
+: 2730 4 1 done 
+: 2740 9 -1 for!
+- 2749 2856
+- 2856
+F 2883 4 -12 You’ve 
+F 2890 8 -12 lost
+- 2898
+: 2919 1 5 My
+: 2921 4 6 ~ 
+: 2927 5 6 nymphs 
+: 2938 6 7 are 
+: 2949 4 6 like 
+: 2959 5 7 my 
+: 2968 6 6 daugh
+: 2979 6 7 ters 
+: 2990 5 6 I 
+: 2998 4 7 pro
+: 3007 4 6 tect 
+: 3017 5 7 them 
+: 3024 6 9 at 
+: 3031 3 9 all
+: 3035 1 10 ~
+: 3037 7 11 ~ 
+: 3049 7 6 costs
+- 3056
+: 3082 6 -1 The 
+: 3089 6 -1 last 
+: 3100 8 1 time 
+: 3109 6 2 we 
+: 3117 4 4 let 
+: 3128 8 6 stran
+: 3138 4 7 gers 
+: 3145 8 6 live, 
+: 3156 6 7 we 
+: 3168 4 8 faced
+: 3173 7 9 ~ 
+: 3184 1 7 a 
+: 3189 3 6 hea
+: 3194 3 4 vy 
+: 3198 8 1 loss
+- 3206 3212
+- 3212
+: 3239 5 6 You’ve 
+: 3249 6 6 gi
+: 3259 4 7 ven 
+: 3269 6 6 me 
+: 3279 4 7 no
+: 3284 3 6 ~ 
+: 3288 8 6 rea
+: 3298 5 7 son
+- 3303
+: 3309 7 6 To 
+: 3318 2 7 be
+: 3325 1 18 stow 
+: 3329 7 6 stow 
+: 3338 6 7 you 
+: 3345 3 9 with 
+: 3355 4 9 my
+: 3360 1 10 ~
+: 3362 10 11 ~ 
+: 3377 9 6 trust
+- 3386
+: 3403 3 -1 But 
+: 3414 4 -1 eve
+: 3419 5 1 ry
+: 3428 6 -1 one’s 
+: 3439 4 1 true 
+: 3448 4 2 col
+: 3454 10 3 ors 
+: 3469 6 2 are 
+: 3477 4 4 re
+: 3485 4 4 vealed
+: 3490 1 5 ~
+: 3492 3 6 ~ 
+: 3503 6 4 in 
+: 3510 4 2 acts 
+: 3519 4 2 of
+: 3524 1 3 ~
+: 3526 7 4 ~ 
+: 3537 10 1 lust
+- 3547
+F 3570 2 -12 I’m 
+F 3573 2 -12 not 
+F 3579 4 -12 sure 
+F 3584 1 -11 I 
+F 3587 4 -10 fol
+F 3592 4 -9 low
+E
