@@ -50,4 +50,6 @@ await pages.historyPage.container.waitFor();
 await this.entries.nth(count - 1).waitFor();
 ```
 
+Prefer assertions against what the user can see on screen over URL-based checks.
+
 Import `expect` from `@playwright/test` in page objects that use it.
