@@ -7,9 +7,13 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
+import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useSong from '~/modules/songs/hooks/use-song';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import SongDao from '~/modules/songs/songs-service';
+import { getAdminPassword } from '~/routes/admin/admin-password';
+import { getNextAdminSharedSongProcessingUrl } from '~/routes/admin/shared-song-processing-queue';
+import { deleteAdminSharedSong, listAdminSharedSongs } from '~/routes/admin/shared-songs-admin-api';
 import { LazyConvert } from '~/routes/convert/convert';
 import { useShareSongs } from '~/routes/edit/share-songs-modal';
 
@@ -21,6 +25,8 @@ export default function Edit() {
   const songId = useQueryParam('song');
   const externalSongId = useQueryParam('externalSong');
   const isAdminEdit = useQueryParam('admin') === 'true';
+  const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
+  const navigate = useSmoothNavigate();
   useBackgroundMusic(false);
   const song = useSong(songId ?? '', {
     sourceType: externalSongId ? 'shared' : 'library',
@@ -28,6 +34,35 @@ export default function Edit() {
   });
 
   if (!song.data) return <>Loading</>;
+
+  const adminSharedSongExternalId = isAdminEdit && externalSongId ? externalSongId : undefined;
+
+  const deleteAdminSong = async () => {
+    if (!adminSharedSongExternalId) return;
+    const proceed = global.confirm('Remove this shared song from Cloudflare KV?');
+
+    if (!proceed) return;
+
+    try {
+      const password = getAdminPassword();
+
+      if (isAdminProcessingQueue) {
+        const songs = await listAdminSharedSongs(password);
+        const nextUrl = getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId);
+
+        void deleteAdminSharedSong(password, adminSharedSongExternalId).catch((error) => {
+          console.error('Failed to delete admin shared song', error);
+        });
+        navigate(nextUrl);
+        return;
+      }
+
+      await deleteAdminSharedSong(password, adminSharedSongExternalId);
+      navigate('admin/');
+    } catch (error) {
+      global.alert(error instanceof Error ? error.message : 'Failed to delete shared song');
+    }
+  };
 
   return (
     <Paper elevation={2} sx={{ minHeight: '100vh', maxWidth: '1260px', margin: '0 auto' }} className="pt-4 md:pt-8">
@@ -42,7 +77,16 @@ export default function Edit() {
           <b>
             {song.data.artist} - {song.data.title}
           </b>
-          {song.data.local && (
+          {adminSharedSongExternalId && (
+            <IconButton
+              title="Delete shared song"
+              aria-label="Delete shared song"
+              onClick={() => void deleteAdminSong()}
+              data-test="delete-admin-shared-song">
+              <Delete />
+            </IconButton>
+          )}
+          {!adminSharedSongExternalId && song.data.local && (
             <IconButton
               title="Delete the song"
               onClick={async () => {
@@ -66,8 +110,9 @@ export default function Edit() {
         </abbr>
       </div>
       <LazyConvert
+        key={adminSharedSongExternalId ?? song.data.id}
         song={song.data}
-        adminSharedSongExternalId={isAdminEdit && externalSongId ? externalSongId : undefined}
+        adminSharedSongExternalId={adminSharedSongExternalId}
       />
     </Paper>
   );

@@ -14,7 +14,9 @@ import SongDao from '~/modules/songs/songs-service';
 import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
-import { updateAdminSharedSong } from '~/routes/admin/shared-songs-admin-api';
+import { getAdminPassword } from '~/routes/admin/admin-password';
+import { getNextAdminSharedSongProcessingUrl } from '~/routes/admin/shared-song-processing-queue';
+import { listAdminSharedSongs, updateAdminSharedSong } from '~/routes/admin/shared-songs-admin-api';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
 import SongMetadata, { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
@@ -43,12 +45,21 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
+  const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
 
   useEffect(() => {
     if (steps[currentStep]) {
       setQueryParam({ step: steps[currentStep] });
     }
   }, [currentStep]);
+
+  useEffect(() => {
+    const queryStepIndex = steps.indexOf(initialStep!);
+
+    if (queryStepIndex >= 0) {
+      setCurrentStep((current) => (current === queryStepIndex ? current : queryStepIndex));
+    }
+  }, [initialStep]);
 
   const [basicData, setBasicData] = useState<BasicDataEntity>({ sourceUrl: song?.sourceUrl ?? '', txtInput: '' });
   const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>({
@@ -187,11 +198,38 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
     id: getSongId(metadataEntity),
   };
 
+  const getAdminProcessingQueueRedirect = async () => {
+    const songs = await listAdminSharedSongs(getAdminPassword());
+
+    return getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId!);
+  };
+
   const saveSong = async () => {
     setIsSaving(true);
     setSaveError(null);
 
     try {
+      if (adminSharedSongExternalId) {
+        const saveAdminSharedSong = async () => {
+          await SongDao.store(finalSong!);
+          await shareSong(finalSong!.id);
+          await updateAdminSharedSong(adminSharedSongExternalId, finalSong!);
+        };
+
+        if (isAdminProcessingQueue) {
+          const nextUrl = await getAdminProcessingQueueRedirect();
+          void saveAdminSharedSong().catch((error) => {
+            console.error('Failed to save admin shared song', error);
+          });
+          navigate(nextUrl);
+          return;
+        }
+
+        await saveAdminSharedSong();
+        navigate('admin/');
+        return;
+      }
+
       if (redirect && !adminSharedSongExternalId) {
         // dont wait for the share to finish if redirect is set
         SongDao.store(finalSong!);
@@ -202,12 +240,6 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
 
       await SongDao.store(finalSong!);
       await shareSong(finalSong!.id);
-
-      if (adminSharedSongExternalId) {
-        await updateAdminSharedSong(adminSharedSongExternalId, finalSong!);
-        navigate('admin/');
-        return;
-      }
 
       navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
     } catch (error) {
