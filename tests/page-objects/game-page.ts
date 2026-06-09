@@ -16,6 +16,43 @@ export class GamePagePO {
     return this.page.getByTestId('skip-intro-info');
   }
 
+  public get gameVolumeControl() {
+    return this.page.getByTestId('game-volume-control');
+  }
+
+  public get gameVolumeSlider() {
+    return this.gameVolumeControl.getByRole('slider', { name: 'Game volume' });
+  }
+
+  public get gameVolumeSliderRoot() {
+    return this.page.getByTestId('game-volume-slider');
+  }
+
+  public async setGameVolume(volume: number) {
+    const sliderBox = await this.gameVolumeSliderRoot.boundingBox();
+
+    if (!sliderBox) {
+      throw new Error('Game volume slider is not visible');
+    }
+
+    await this.page.mouse.click(sliderBox.x + sliderBox.width / 2, sliderBox.y + sliderBox.height * (1 - volume));
+  }
+
+  public async expectGameVolumeSliderValueToBe(volume: number) {
+    await expect(this.gameVolumeSlider).toHaveAttribute('aria-valuenow', `${Math.round(volume * 100)}`);
+  }
+
+  public async expectDirectVideoVolumeToBe(expectedVolume: number) {
+    await expect
+      .poll(async () =>
+        this.page
+          .locator('video')
+          .first()
+          .evaluate((video) => (video as HTMLVideoElement).volume),
+      )
+      .toBeCloseTo(expectedVolume, 2);
+  }
+
   public async skipIntroIfPossible() {
     try {
       const skipIntroEl = await this.page.waitForSelector('[data-test="skip-intro-info"]', { timeout: 5_000 });

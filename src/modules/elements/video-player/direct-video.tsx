@@ -11,6 +11,7 @@ export default function DirectVideoPlayer({
   autoplay = true,
   startAt,
   controls,
+  volume,
   width,
   height,
   onStateChange,
@@ -62,7 +63,11 @@ export default function DirectVideoPlayer({
           player.current.playbackRate = speed;
         }
       },
-      setVolume: () => undefined,
+      setVolume: (newVolume: number) => {
+        if (player.current) {
+          player.current.volume = Math.min(1, Math.max(0, newVolume / 100));
+        }
+      },
       getCurrentTime: () => {
         return Promise.resolve(player.current?.currentTime ?? 0);
       },
@@ -92,6 +97,12 @@ export default function DirectVideoPlayer({
   useEffect(() => {
     startAt !== undefined && playerApi.seekTo(startAt);
   }, [startAt, playerApi]);
+
+  useEffect(() => {
+    if (player.current) {
+      player.current.volume = Math.min(1, Math.max(0, volume ?? 0.5));
+    }
+  }, [volume]);
 
   return (
     <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={player}>
