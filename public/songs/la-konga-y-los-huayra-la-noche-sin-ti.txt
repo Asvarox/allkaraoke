@@ -9,7 +9,7 @@
 #GAP:20289,793546059074
 #ALLKARAOKE_ID:la-konga-y-los-huayra-la-noche-sin-ti
 #ALLKARAOKE_SID:5873
-#ALLKARAOKE_LASTUPDATE:2026-06-09T00:34:11.555Z
+#ALLKARAOKE_LASTUPDATE:2026-06-08T19:55:35.487Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pelu5
 #ALLKARAOKE_REALBPM:387,98
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=La%20Konga%20y%20Los%20Huayra&cancion=La%20noche%20sin%20ti
