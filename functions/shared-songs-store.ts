@@ -40,17 +40,6 @@ const normalizeIndexEntry = (entry: StoredSharedSongIndexEntry): SharedSongIndex
 const getIndex = async (kvNamespace: KVNamespace): Promise<SharedSongIndexEntry[]> =>
   ((await kvNamespace.get<StoredSharedSongIndexEntry[]>(INDEX_KEY, 'json')) ?? []).map(normalizeIndexEntry);
 
-const addToIndex = async (kvNamespace: KVNamespace, entry: SharedSongIndexEntry) => {
-  const index = await getIndex(kvNamespace);
-  const nextIndex = [...index.filter((song) => song.externalSongId !== entry.externalSongId), entry];
-  await kvNamespace.put(INDEX_KEY, JSON.stringify(nextIndex));
-};
-
-const removeFromIndex = async (kvNamespace: KVNamespace, externalSongId: string) => {
-  const index = await getIndex(kvNamespace);
-  await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((song) => song.externalSongId !== externalSongId)));
-};
-
 export const listSharedSongs = async (kvNamespace: KVNamespace) => {
   const index = await getIndex(kvNamespace);
 
@@ -63,27 +52,19 @@ export const getSharedSong = (kvNamespace: KVNamespace, externalSongId: string) 
 export const upsertSharedSong = async (kvNamespace: KVNamespace, record: SharedSongRecord) => {
   const storageKey = getStorageKey(record.externalSongId);
   await kvNamespace.put(storageKey, JSON.stringify(record));
-  await addToIndex(kvNamespace, {
-    externalSongId: record.externalSongId,
-    songId: record.songId,
-    artist: record.artist,
-    title: record.title,
-    language: record.language,
-    videoId: record.videoId,
-    firstSeenAt: record.firstSeenAt,
-  });
+  await regenerateIndex(kvNamespace);
 };
 
 export const removeSharedSong = async (kvNamespace: KVNamespace, externalSongId: string) => {
   const currentRecord = await getSharedSong(kvNamespace, externalSongId);
 
   if (!currentRecord) {
-    await removeFromIndex(kvNamespace, externalSongId);
+    await regenerateIndex(kvNamespace);
     return false;
   }
 
   await kvNamespace.delete(getStorageKey(externalSongId));
-  await removeFromIndex(kvNamespace, externalSongId);
+  await regenerateIndex(kvNamespace);
 
   return true;
 };
@@ -108,23 +89,35 @@ export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId:
   };
 
   await kvNamespace.put(getStorageKey(externalSongId), JSON.stringify(updatedRecord));
-  await addToIndex(kvNamespace, {
-    externalSongId,
-    songId: updatedRecord.songId,
-    artist: updatedRecord.artist,
-    title: updatedRecord.title,
-    language: updatedRecord.language,
-    videoId: updatedRecord.videoId,
-    firstSeenAt: updatedRecord.firstSeenAt,
-  });
+  await regenerateIndex(kvNamespace);
 
   return true;
 };
 
 export const regenerateIndex = async (kvNamespace: KVNamespace) => {
-  const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
+  const keys: { name: string }[] = [];
+  const seenCursors = new Set<string>();
+  let cursor: string | undefined;
+
+  do {
+    const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX, cursor });
+    keys.push(...listResponse.keys);
+    const nextCursor = listResponse.cursor;
+
+    if (listResponse.list_complete || !nextCursor) {
+      break;
+    }
+
+    if (seenCursors.has(nextCursor)) {
+      throw new Error(`Shared song index regeneration pagination did not advance at cursor: ${nextCursor}`);
+    }
+
+    seenCursors.add(nextCursor);
+    cursor = nextCursor;
+  } while (true);
+
   const records = await Promise.all(
-    listResponse.keys.map(async ({ name }) => {
+    keys.map(async ({ name }) => {
       const record = await kvNamespace.get<SharedSongRecord>(name, 'json');
       return record;
     }),

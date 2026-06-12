@@ -77,6 +77,86 @@ describe('sharedSongsStore KV behavior', () => {
     ]);
   });
 
+  it('regenerates the index from all KV list pages', async () => {
+    const records = new Map([
+      [
+        'shared-song:external-1',
+        generateSharedSongRecord({ externalSongId: 'external-1', songId: 'song-1', firstSeenAt: 123 }),
+      ],
+      [
+        'shared-song:external-2',
+        generateSharedSongRecord({ externalSongId: 'external-2', songId: 'song-2', firstSeenAt: 456 }),
+      ],
+    ]);
+    let capturedIndex: unknown;
+    const fakeKv = {
+      list: async ({ cursor, prefix }: KVNamespaceListOptions) => {
+        expect(prefix).toBe('shared-song:');
+        return cursor
+          ? {
+              keys: [{ name: 'shared-song:external-2' }],
+              list_complete: true,
+            }
+          : {
+              keys: [{ name: 'shared-song:external-1' }],
+              list_complete: false,
+              cursor: 'next-page',
+            };
+      },
+      get: async (key: string) => records.get(key) ?? null,
+      put: async (key: string, value: string) => {
+        if (key === 'shared-songs-index') {
+          capturedIndex = JSON.parse(value);
+        }
+      },
+    };
+
+    await regenerateIndex(fakeKv as unknown as KVNamespace);
+
+    expect(capturedIndex).toEqual([
+      expect.objectContaining({
+        externalSongId: 'external-1',
+        songId: 'song-1',
+        firstSeenAt: 123,
+      }),
+      expect.objectContaining({
+        externalSongId: 'external-2',
+        songId: 'song-2',
+        firstSeenAt: 456,
+      }),
+    ]);
+  });
+
+  it('fails without writing the index when KV pagination does not advance', async () => {
+    let readRecord = false;
+    let wroteIndex = false;
+    const fakeKv = {
+      list: async ({ prefix }: KVNamespaceListOptions) => {
+        expect(prefix).toBe('shared-song:');
+        return {
+          keys: [{ name: 'shared-song:external-1' }],
+          list_complete: false,
+          cursor: 'same-page',
+        };
+      },
+      get: async () => {
+        readRecord = true;
+        return null;
+      },
+      put: async (key: string) => {
+        if (key === 'shared-songs-index') {
+          wroteIndex = true;
+        }
+      },
+    };
+
+    await expect(regenerateIndex(fakeKv as unknown as KVNamespace)).rejects.toThrow(
+      'Shared song index regeneration pagination did not advance at cursor: same-page',
+    );
+    expect(readRecord).toBe(false);
+    expect(wroteIndex).toBe(false);
+  });
+
   it('replaces record on upsert even when hash matches', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
 
@@ -109,5 +189,32 @@ describe('sharedSongsStore KV behavior', () => {
     expect(removed).toBe(true);
     expect(storedRecord).toBeNull();
     expect(list).toHaveLength(0);
+  });
+
+  it('cleans stale index entries when removing a missing record', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+    await kv.put(
+      'shared-songs-index',
+      JSON.stringify([
+        {
+          externalSongId: 'missing-id',
+          songId: 'missing-song',
+          artist: 'Missing Artist',
+          title: 'Missing Title',
+          language: ['English'],
+          videoId: 'missingVideoId',
+          firstSeenAt: 123,
+        },
+      ]),
+    );
+
+    const removed = await removeSharedSong(kv, 'missing-id');
+
+    expect(removed).toBe(false);
+    expect(await listSharedSongs(kv)).not.toContainEqual(
+      expect.objectContaining({
+        externalSongId: 'missing-id',
+      }),
+    );
   });
 });
