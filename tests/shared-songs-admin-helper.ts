@@ -6,7 +6,9 @@ dotenv.config({ path: '.env' });
 dotenv.config({ path: '.env.local', override: true });
 dotenv.config({ path: '.dev.vars', override: true });
 
-const songTxt = readFileSync('./tests/fixtures/songs/shared-cloudflare-e2e.txt', { encoding: 'utf-8' });
+export const sharedCloudflareSongTxt = readFileSync('./tests/fixtures/songs/shared-cloudflare-e2e.txt', {
+  encoding: 'utf-8',
+});
 const sharedSongsAdminToken = process.env.SHARED_SONGS_ADMIN_TOKEN ?? 'local-shared-songs-admin-token';
 
 export const adminPanelPassword = process.env.ADMIN_PANEL_PASSWORD ?? '12345';
@@ -33,6 +35,7 @@ export const createExternalSongId = (testInfo: TestInfo) =>
 type SharedSongFixtureOverrides = Partial<typeof sharedCloudflareSongFixture> & {
   externalSongId?: string;
   firstSeenAt?: number;
+  songTxt?: string;
   sourceUserId?: string;
 };
 
@@ -48,7 +51,7 @@ export const upsertSharedSong = async (
   const payload = {
     externalSongId,
     songId: sharedCloudflareSongFixture.songId,
-    songTxt,
+    songTxt: sharedCloudflareSongTxt,
     artist: sharedCloudflareSongFixture.artist,
     title: sharedCloudflareSongFixture.title,
     language: sharedCloudflareSongFixture.language,

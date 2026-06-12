@@ -78,6 +78,7 @@ export const removeSharedSong = async (kvNamespace: KVNamespace, externalSongId:
   const currentRecord = await getSharedSong(kvNamespace, externalSongId);
 
   if (!currentRecord) {
+    await removeFromIndex(kvNamespace, externalSongId);
     return false;
   }
 

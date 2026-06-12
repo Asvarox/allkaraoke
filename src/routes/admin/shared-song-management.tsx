@@ -7,7 +7,9 @@ import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table';
 import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
+import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { RegenerateIndexButton } from './regenerate-index-button';
+import { buildAdminSharedSongProcessingUrl, getOldestAdminSharedSong } from './shared-song-processing-queue';
 import {
   AdminSharedSong,
   deleteAdminSharedSong,
@@ -45,6 +47,7 @@ const columns: MRT_ColumnDef<AdminSharedSong>[] = [
 ];
 
 export function SharedSongManagement({ password }: Props) {
+  const navigate = useSmoothNavigate();
   const sharedSongsKey = password ? (['admin-shared-songs', password] as const) : null;
   const {
     data: songs = [],
@@ -83,6 +86,7 @@ export function SharedSongManagement({ password }: Props) {
     },
   });
 
+  const oldestSongToProcess = getOldestAdminSharedSong(songs);
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
   const errorMessage = error instanceof Error ? error.message : null;
@@ -117,6 +121,16 @@ export function SharedSongManagement({ password }: Props) {
           <p className="mt-1 text-sm">{songs.length} shared songs in Cloudflare KV</p>
         </div>
         <div className="flex flex-wrap gap-2">
+          <Button
+            variant="contained"
+            onClick={() => {
+              if (oldestSongToProcess) {
+                navigate(buildAdminSharedSongProcessingUrl(oldestSongToProcess.externalSongId, true));
+              }
+            }}
+            disabled={isBusy || !oldestSongToProcess}>
+            Process oldest unverified
+          </Button>
           <RegenerateIndexButton disabled={isBusy} onRegenerate={() => void handleRegenerateIndex()} />
           <Button
             startIcon={<Refresh />}
@@ -152,7 +166,7 @@ export function SharedSongManagement({ password }: Props) {
             <Tooltip title="Edit shared song">
               <span>
                 <Link
-                  to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true&step=sync`}
+                  to={buildAdminSharedSongProcessingUrl(row.original.externalSongId)}
                   aria-label={`Edit ${row.original.title}`}>
                   <IconButton>
                     <Edit />

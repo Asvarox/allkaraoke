@@ -24,6 +24,10 @@ export class AdminSharedSongsPagePO {
     return this.page.getByRole('button', { name: 'Logout' });
   }
 
+  public get processOldestUnverifiedButton() {
+    return this.page.getByRole('button', { name: 'Process oldest unverified' });
+  }
+
   public get adminHeading() {
     return this.page.getByRole('heading', { name: 'Shared Songs Management' });
   }
@@ -43,6 +47,10 @@ export class AdminSharedSongsPagePO {
 
   public async logout() {
     await this.logoutButton.click();
+  }
+
+  public async processOldestUnverifiedSong() {
+    await this.processOldestUnverifiedButton.click();
   }
 
   public async expectPasswordClearedFromSessionStorage() {

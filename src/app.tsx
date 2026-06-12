@@ -14,7 +14,6 @@ import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
-import RedirectToFirstLocalSong from '~/routes/edit/redirect-to-first-local-song';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
 import LandingPage from '~/routes/landing-page/landing-page';
@@ -100,7 +99,6 @@ function App() {
                   )}
                 />
                 <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
-                <Route path="edit/redirect-to-first-local-song" component={RedirectToFirstLocalSong} />
                 <Route path={routePaths.EDIT_SONG}>
                   <Edit />
                 </Route>

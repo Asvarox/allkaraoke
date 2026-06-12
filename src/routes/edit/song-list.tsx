@@ -50,9 +50,7 @@ export default function SongList() {
                   }}>
                   {data.length}
                 </span>{' '}
-                <Link to="edit/redirect-to-first-local-song">
-                  <span>songs</span>
-                </Link>
+                songs
               </h4>
             </Grid>
             <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>

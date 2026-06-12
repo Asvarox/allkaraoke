@@ -11,6 +11,14 @@ export class SongEditSyncLyricsToVideoPagePO {
     return this.page.getByTestId('sync-lyrics');
   }
 
+  public get deleteAdminSharedSongButton() {
+    return this.page.getByTestId('delete-admin-shared-song');
+  }
+
+  public async deleteAdminSharedSong() {
+    await this.deleteAdminSharedSongButton.click();
+  }
+
   public get previousButton() {
     return this.page.getByTestId('previous-button');
   }
