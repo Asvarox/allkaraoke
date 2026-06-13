@@ -118864,6 +118864,34 @@
     "local": false
   },
   {
+    "id": "olivia-rodrigo-the-cure",
+    "title": "the cure",
+    "artist": "Olivia Rodrigo",
+    "video": "B402rKl4bUg",
+    "language": [
+      "English"
+    ],
+    "bpm": 291,
+    "gap": 17460.618556701033,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-13T00:41:38.667Z",
+    "realBpm": 145,
+    "previewStart": 63,
+    "previewEnd": 109,
+    "volume": 1,
+    "duration": 315,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5876,
+    "tracksCount": 1,
+    "search": "oliviarodrigothecure",
+    "local": false
+  },
+  {
     "id": "olivia-rodrigo-traitor",
     "title": "traitor",
     "artist": "Olivia Rodrigo",
