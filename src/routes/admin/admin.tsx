@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useBackground } from '~/modules/elements/background-context';
 import NoPrerender from '~/modules/elements/no-prerender';
@@ -30,9 +30,9 @@ export default function Admin() {
     }
   }, []);
 
-  const handleLogin = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setAdminPassword(password);
+  const handleLogin = (nextPassword: string, rememberPassword: boolean) => {
+    setPassword(nextPassword);
+    setAdminPassword(nextPassword, rememberPassword);
     setIsAuthenticated(true);
   };
 
@@ -62,7 +62,7 @@ export default function Admin() {
             )}
             <div className="flex flex-col gap-4 px-2 md:px-4">
               {!isAuthenticated ? (
-                <LoginScreen password={password} onPasswordChange={setPassword} onSubmit={handleLogin} />
+                <LoginScreen onSubmit={handleLogin} />
               ) : (
                 activeModule === 'shared-songs' && <SharedSongManagement password={password} />
               )}
