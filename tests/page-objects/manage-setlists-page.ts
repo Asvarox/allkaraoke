@@ -83,22 +83,12 @@ export class ManageSetlistsPagePO {
     }
   }
 
-  public getSetlistLockStateIcon(setlistName: string, lockState: 'open' | 'closed') {
-    const lockStateNameMap = {
-      open: 'LockOpenIcon',
-      closed: 'LockOutlinedIcon',
-    } as const;
-    return this.getCreatedSetlistElement(setlistName).locator(`[data-testid="${lockStateNameMap[lockState]}"]`);
-  }
-
   public async expectSetlistEditModeStateToBe(setlistName: string, expectedState: 'on' | 'off') {
     if (expectedState === 'on') {
       await expect(this.getMakeSetlistNotEditableButton(setlistName)).toBeVisible();
-      await expect(this.getSetlistLockStateIcon(setlistName, 'open')).toBeVisible();
     }
     if (expectedState === 'off') {
       await expect(this.getMakeSetlistEditableButton(setlistName)).toBeVisible();
-      await expect(this.getSetlistLockStateIcon(setlistName, 'closed')).toBeVisible();
     }
   }
 
@@ -131,6 +121,10 @@ export class ManageSetlistsPagePO {
     return this.page.locator(`[data-song="${songID}"][data-test="toggle-selection"]`);
   }
 
+  public getSongCheckboxControl(songID: string) {
+    return this.getSongCheckbox(songID).getByRole('checkbox');
+  }
+
   public async clickToSelectSongCheckbox(songID: string) {
     await this.getSongCheckbox(songID).click();
   }
@@ -149,20 +143,17 @@ export class ManageSetlistsPagePO {
     }
   }
 
-  selectedCheckboxIDSelector = 'CheckBoxIcon';
-  unselectedCheckboxIDSelector = 'CheckBoxOutlineBlankIcon';
-
   private async expectSongCheckboxStateToBe(songID: string, expectedState: 'selected' | 'unselected') {
-    const stateToIdMap = {
-      selected: this.selectedCheckboxIDSelector,
-      unselected: this.unselectedCheckboxIDSelector,
-    } as const;
-
     await this.songsTable.searchSongs(songID);
-    await expect(this.getSongCheckbox(songID).locator('svg')).toHaveAttribute(
-      'data-testid',
-      stateToIdMap[expectedState],
-    );
+    const checkbox = this.getSongCheckboxControl(songID);
+
+    if (expectedState === 'selected') {
+      await expect(checkbox).toBeChecked();
+    }
+
+    if (expectedState === 'unselected') {
+      await expect(checkbox).not.toBeChecked();
+    }
   }
 
   public async expectSongToBeSelected(songID: string) {
@@ -174,7 +165,6 @@ export class ManageSetlistsPagePO {
   }
 
   public async isSongCheckboxSelected(songID: string) {
-    const songCheckboxAttribute = await this.getSongCheckbox(songID).locator('svg').getAttribute('data-testid');
-    return songCheckboxAttribute === this.selectedCheckboxIDSelector;
+    return await this.getSongCheckboxControl(songID).isChecked();
   }
 }

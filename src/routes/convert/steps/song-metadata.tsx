@@ -125,7 +125,7 @@ export default function SongMetadata(props: Props) {
 
   return (
     <Grid container spacing={2} data-test="song-metadata">
-      <Grid item xs={6}>
+      <Grid size={6}>
         <TextField
           value={props.data.artist}
           onChange={(e) => props.onChange({ ...props.data, artist: e.target.value })}
@@ -136,7 +136,7 @@ export default function SongMetadata(props: Props) {
           fullWidth
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid size={6}>
         <TextField
           value={props.data.title}
           onChange={(e) => props.onChange({ ...props.data, title: e.target.value })}
@@ -147,7 +147,7 @@ export default function SongMetadata(props: Props) {
           data-test="song-title"
         />
       </Grid>
-      <Grid item xs={3}>
+      <Grid size={3}>
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -171,7 +171,7 @@ export default function SongMetadata(props: Props) {
           )}
         />
       </Grid>
-      <Grid item xs={3}>
+      <Grid size={3}>
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -196,7 +196,7 @@ export default function SongMetadata(props: Props) {
           )}
         />
       </Grid>
-      <Grid item xs={3}>
+      <Grid size={3}>
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -226,7 +226,7 @@ export default function SongMetadata(props: Props) {
           )}
         />
       </Grid>
-      <Grid item xs={3}>
+      <Grid size={3}>
         <FormControl fullWidth>
           <InputLabel id="song-origin-select-label" size="small">
             Song/artist origin (optional)
@@ -251,7 +251,7 @@ export default function SongMetadata(props: Props) {
           <FormHelperText>Used to show the flag on the list</FormHelperText>
         </FormControl>
       </Grid>
-      <Grid item xs={6}>
+      <Grid size={6}>
         <TextField
           data-test="release-year"
           value={props.data.year}
@@ -264,7 +264,7 @@ export default function SongMetadata(props: Props) {
           {...inputAction(() => searchGoogle('release year'), isSearchableForVideo)}
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid size={6}>
         <TextField
           data-test="song-bpm"
           value={props.data.realBpm}
@@ -292,8 +292,8 @@ export default function SongMetadata(props: Props) {
           }, isSearchableForVideo)}
         />
       </Grid>
-      <Grid item xs={12}></Grid>
-      <Grid item xs={12}>
+      <Grid size={12}></Grid>
+      <Grid size={12}>
         <PreviewAndVolumeAdjustment {...props} />
       </Grid>
     </Grid>

@@ -60,8 +60,8 @@ export default function ManipulateBpm({ current, onChange, song }: Props) {
           onChange={(e) => !isNaN(+e.target.value) && onChange(+e.target.value)}
           label="Tempo (BPM) of the lyrics"
           sx={{ flex: 1 }}
-          InputProps={{
-            inputProps: {
+          slotProps={{
+            htmlInput: {
               step: '0.1',
             },
           }}

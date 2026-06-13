@@ -111,7 +111,7 @@ export default function EditSection({
   return (
     <SectionEdtiorContainer>
       <Stack direction="row">
-        <Typography variant={'h6'} mb={0} sx={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+        <Typography variant={'h6'} sx={{ mb: 0, flex: 1, display: 'flex', alignItems: 'center' }}>
           Edit verses
           {song.tracks.length > 1 && (
             <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
@@ -152,8 +152,12 @@ export default function EditSection({
               }}>
               <ListItemButton onClick={() => onSectionClick(index)} selected={selectedSection === index}>
                 <ListItemText
-                  primaryTypographyProps={{
-                    fontWeight: index === currentSectionIndex ? 'bold' : 'normal',
+                  slotProps={{
+                    primary: {
+                      sx: {
+                        fontWeight: index === currentSectionIndex ? 'bold' : 'normal',
+                      },
+                    },
                   }}
                   primary={
                     isNotesSection(section)
@@ -180,8 +184,8 @@ export default function EditSection({
                     onChange={(e) => shiftSection(+e.target.value)}
                     value={getFirstNoteStartFromSections([sections[selectedSection]])}
                     label="Change start beat"
-                    InputProps={{
-                      inputProps: {
+                    slotProps={{
+                      htmlInput: {
                         step: 1,
                       },
                     }}

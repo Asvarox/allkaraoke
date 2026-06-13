@@ -49,16 +49,16 @@ export default function Setlists() {
       </Helmet>
       <NoPrerender>
         <Container>
-          <Grid container rowGap={2}>
-            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
+          <Grid container rowSpacing={2}>
+            <Grid size={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
               <Link to="menu/">
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
             </Grid>
-            <Grid item xs={6} display="flex" alignItems="center" justifyContent="center">
+            <Grid size={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <h4>Manage setlists</h4>
             </Grid>
-            <Grid item xs={12}>
+            <Grid size={12}>
               <div className="flex flex-col items-stretch gap-4">
                 <p className="leading-6">
                   This feature allows you to create a custom game link that includes only a selected subset of songs.
@@ -148,7 +148,7 @@ export default function Setlists() {
                 {setlists.length === 0 && <h6>No setlists created yet</h6>}
               </div>
             </Grid>
-            <Grid item xs={12}>
+            <Grid size={12}>
               {selectedSetlist && (
                 <SongsTable onSelect={onSelect} selectedSongs={selectedSongs} selectable data={data} />
               )}

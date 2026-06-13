@@ -1,5 +1,6 @@
-import { Alert, AlertTitle, Button, Grid, Paper, Step, StepButton, StyledEngineProvider } from '@mui/material';
+import { Alert, AlertTitle, Button, Grid, Paper, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
+import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { ValuesType } from 'utility-types';
@@ -269,8 +270,8 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
 
   return (
     <StyledEngineProvider injectFirst>
-      <Grid container gap={2} p={1} pt={0} pb={10}>
-        <Grid item xs={12}>
+      <Grid container spacing={2} sx={{ p: 1, pt: 0, pb: 10 }}>
+        <Grid size={12}>
           {!isEdit && (
             <div style={{ marginBottom: '1rem' }}>
               <Link to="menu/">
@@ -279,7 +280,7 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
             </div>
           )}
         </Grid>
-        <Grid item xs={12} className="md:py-4">
+        <Grid size={12} className="md:py-4">
           <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
               <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
@@ -303,7 +304,7 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
             </Step>
           </Stepper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid size={12}>
           <form
             onSubmit={async (e) => {
               e.preventDefault();

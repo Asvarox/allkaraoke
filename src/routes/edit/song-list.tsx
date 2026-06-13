@@ -35,13 +35,13 @@ export default function SongList() {
         <Container>
           {created && <ShareSongsModal id={songId} />}
 
-          <Grid container rowGap={2}>
-            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
+          <Grid container rowSpacing={2}>
+            <Grid size={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
               <Link to="menu/">
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
             </Grid>
-            <Grid item xs={6} display="flex" alignItems="center" justifyContent="center">
+            <Grid size={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <h4>
                 <span
                   onClick={() => {
@@ -53,14 +53,14 @@ export default function SongList() {
                 songs
               </h4>
             </Grid>
-            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
+            <Grid size={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
               <Link to="convert/">
                 <Button data-test="convert-song" variant={'contained'}>
                   Import UltraStar .TXT
                 </Button>
               </Link>
             </Grid>
-            <Grid item xs={12}>
+            <Grid size={12}>
               <SongsTable
                 globalFilter={songId}
                 data={data}
@@ -137,7 +137,7 @@ export default function SongList() {
               />
             </Grid>
             {shareSongs !== null && (
-              <Grid item xs={12}>
+              <Grid size={12}>
                 <FormControlLabel
                   control={
                     <Switch

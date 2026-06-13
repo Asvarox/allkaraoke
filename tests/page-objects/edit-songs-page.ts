@@ -66,6 +66,6 @@ export class EditSongsPagePO {
   }
 
   public get shareSongSwitch() {
-    return this.page.getByTestId('share-songs-switch').getByRole('checkbox');
+    return this.page.getByRole('switch', { name: 'Share added songs (so they can be played by others)' });
   }
 }

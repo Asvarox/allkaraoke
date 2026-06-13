@@ -101,10 +101,16 @@ export default function BasicData(props: Props) {
             value={props.data.txtInput}
             maxRows={15}
             minRows={15}
-            InputProps={{
-              inputProps: {
+            slotProps={{
+              htmlInput: {
                 'data-test': 'input-txt',
-                sx: { fontFamily: 'monospace' },
+              },
+              input: {
+                sx: {
+                  '& textarea': {
+                    fontFamily: 'monospace',
+                  },
+                },
               },
             }}
           />
