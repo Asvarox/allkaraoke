@@ -13,7 +13,7 @@ export class ManageSetlistsPagePO {
   songsTable = new SongsTable(this.page, this.context, this.browser);
 
   public get setlistUserInfo() {
-    return this.page.locator('.MuiGrid-container');
+    return this.page.getByTestId('manage-setlists-page');
   }
 
   public get mainMenuButton() {

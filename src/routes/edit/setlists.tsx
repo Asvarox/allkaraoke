@@ -49,7 +49,7 @@ export default function Setlists() {
       </Helmet>
       <NoPrerender>
         <Container>
-          <div className="grid grid-cols-12 items-center gap-y-4">
+          <div className="grid grid-cols-12 items-center gap-y-4" data-test="manage-setlists-page">
             <div className="col-span-3 flex items-center justify-start">
               <Link to="menu/">
                 <Button data-test="main-menu-link">Return to main menu</Button>
