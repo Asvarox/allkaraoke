@@ -8,7 +8,7 @@ export class RemoteToolbar {
   ) {}
 
   public get fullscreenElement() {
-    return this.page.locator('[data-test="toggle-fullscreen"] svg');
+    return this.page.getByTestId('toggle-fullscreen');
   }
 
   public async toggleFullscreen() {
@@ -16,17 +16,15 @@ export class RemoteToolbar {
   }
 
   public async expectFullscreenToBeOn() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
+    await expect.poll(() => this.page.evaluate(() => document.fullscreenElement !== null)).toBe(true);
   }
 
   public async expectFullscreenToBeOff() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
+    await expect.poll(() => this.page.evaluate(() => document.fullscreenElement !== null)).toBe(false);
   }
 
   public async ensureFullscreenIsOff() {
-    const fullscreenStatus = await this.fullscreenElement.getAttribute('data-testid');
-
-    if (fullscreenStatus === 'FullscreenExitIcon') {
+    if (await this.page.evaluate(() => document.fullscreenElement !== null)) {
       await this.toggleFullscreen();
       await this.expectFullscreenToBeOff();
     }

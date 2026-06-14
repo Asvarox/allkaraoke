@@ -1,4 +1,4 @@
-import { CheckCircleOutline } from '@mui/icons-material';
+import { CheckCircleOutlined } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import Typography from '~/modules/elements/akui/primitives/typography';
@@ -78,7 +78,7 @@ function WaitForReadiness({ onFinish }: Props) {
             data-confirmed={confirmed}>
             {!areAllPlayersReady && (
               <span className="h-12 w-12 text-2xl [&_svg]:h-12! [&_svg]:w-12! [&_svg]:stroke-black">
-                {confirmed ? <CheckCircleOutline /> : <Loader />}
+                {confirmed ? <CheckCircleOutlined /> : <Loader />}
               </span>
             )}{' '}
             <MicCheckSlot player={player} playerIndex={player.number} />

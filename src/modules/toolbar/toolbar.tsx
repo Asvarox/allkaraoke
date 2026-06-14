@@ -1,4 +1,4 @@
-import { Help, HelpOutline, QrCode2 } from '@mui/icons-material';
+import { Help, HelpOutlined, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { type CSSProperties, PropsWithChildren, useContext, useState } from 'react';
 import { Tooltip } from '~/modules/elements/tooltip';
@@ -36,7 +36,7 @@ function Toolbar({ children }: PropsWithChildren) {
               size="small"
               onClick={() => setIsHelpVisible(!isHelpVisible)}
               data-test="toggle-help">
-              {isHelpVisible ? <Help className="fill-white!" /> : <HelpOutline className="fill-white!" />}
+              {isHelpVisible ? <Help className="fill-white!" /> : <HelpOutlined className="fill-white!" />}
             </IconButton>
           </Tooltip>
         )}

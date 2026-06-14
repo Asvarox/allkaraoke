@@ -59,15 +59,15 @@ export class RateUnfinishedSongPagePO {
   }
 
   public getIssueCheckbox(issue: issueType) {
-    return this.page.getByTestId(`button-${issue}`).locator('svg');
+    return this.page.getByTestId(`button-${issue}`);
   }
 
   public async expectIssueToBeSelected(issue: issueType) {
-    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxIcon');
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-checked', 'true');
   }
 
   public async expectIssueNotToBeSelected(issue: issueType) {
-    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
+    await expect(this.getIssueCheckbox(issue)).toHaveAttribute('data-checked', 'false');
   }
 
   public get asLoudAsItCouldBeInfo() {

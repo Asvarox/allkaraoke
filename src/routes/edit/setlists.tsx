@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { LockOpen, LockOutlined } from '@mui/icons-material';
-import { Button, Grid } from '@mui/material';
+import { Button } from '@mui/material';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import createPersistedState from 'use-persisted-state';
@@ -49,16 +49,16 @@ export default function Setlists() {
       </Helmet>
       <NoPrerender>
         <Container>
-          <Grid container rowGap={2}>
-            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
+          <div className="grid grid-cols-12 items-center gap-y-4" data-test="manage-setlists-page">
+            <div className="col-span-3 flex items-center justify-start">
               <Link to="menu/">
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
-            </Grid>
-            <Grid item xs={6} display="flex" alignItems="center" justifyContent="center">
+            </div>
+            <div className="col-span-6 flex items-center justify-center">
               <h4>Manage setlists</h4>
-            </Grid>
-            <Grid item xs={12}>
+            </div>
+            <div className="col-span-12">
               <div className="flex flex-col items-stretch gap-4">
                 <p className="leading-6">
                   This feature allows you to create a custom game link that includes only a selected subset of songs.
@@ -147,13 +147,13 @@ export default function Setlists() {
                 })}
                 {setlists.length === 0 && <h6>No setlists created yet</h6>}
               </div>
-            </Grid>
-            <Grid item xs={12}>
+            </div>
+            <div className="col-span-12">
               {selectedSetlist && (
                 <SongsTable onSelect={onSelect} selectedSongs={selectedSongs} selectable data={data} />
               )}
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         </Container>
       </NoPrerender>
     </>

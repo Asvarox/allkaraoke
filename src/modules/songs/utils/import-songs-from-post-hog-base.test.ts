@@ -91,4 +91,48 @@ describe('importSongsFromPostHogBase', () => {
     expect(onSongAdded).not.toHaveBeenCalled();
     expect(onSongRemoved).not.toHaveBeenCalled();
   });
+
+  it('skips malformed shared songs', async () => {
+    const onSongAdded = vi.fn(async () => {});
+    const onSongRemoved = vi.fn(async () => {});
+
+    await importSongsFromPostHogBase(
+      async () => ({
+        results: [
+          [
+            `
+#ARTIST:Victorious Cast
+#TITLE:Shut Up n' Dance
+#BPM:223
+#LANGUAGE:English
+#GAP:6353,031390134529
+#VIDEO:https://www.youtube.com/watch?v=video-1
+: 15 7 80 It's nine on the dot
+R 15 9 24 And we just talk and we talk
+: 15 10 93 And I just want it to stop
+: NaN NaN NaN we here for the music?
+- 40
+: 40 1 0 la
+- 50
+: 50 1 0 la
+- 60
+: 60 1 0 la
+- 70
+: 70 1 0 la
+E
+`,
+            'song-1',
+            '2026-01-01T00:00:00.000Z',
+          ],
+        ],
+      }),
+      [] as SongPreview[],
+      [],
+      onSongAdded,
+      onSongRemoved,
+    );
+
+    expect(onSongAdded).not.toHaveBeenCalled();
+    expect(onSongRemoved).not.toHaveBeenCalled();
+  });
 });

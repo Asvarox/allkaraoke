@@ -37,16 +37,15 @@ export class SongsTable {
   }
 
   public getColumnDefaultSortingIcon(columnName: columnNameType) {
-    return this.page.locator(`[aria-label="Sort by ${columnName} descending"] [data-testid="SyncAltIcon"]`);
+    return this.page.getByRole('button', { name: `Sort by ${columnName} descending` });
   }
 
   public getColumnArrowDownwardSortingIcon(columnName: columnNameType) {
-    return this.page.locator(`[aria-label="Sorted by ${columnName} descending"] [data-testid="ArrowDownwardIcon"]`);
+    return this.getColumnHeader(columnName);
   }
 
   public getColumnArrowUpwardSortingIcon(columnName: columnNameType) {
-    // data-testid for this up arrow selector is also "ArrowDownwardIcon", which seems incorrect, so I use svg instead
-    return this.page.locator(`[aria-label="Sorted by ${columnName} ascending"] svg`);
+    return this.page.getByRole('button', { name: `Sort by ${columnName} ascending` });
   }
 
   public async sortColumnDESC(columnName: columnNameType) {
@@ -81,7 +80,7 @@ export class SongsTable {
   }
 
   public async expandShowOrHideColumnList() {
-    await this.page.locator('[aria-label="Show/Hide columns"]').click();
+    await this.page.getByRole('button', { name: 'Show/Hide columns' }).click();
   }
 
   public async toggleColumnVisibility(columnName: columnNameType) {
@@ -95,11 +94,11 @@ export class SongsTable {
 
   public async hideAllColumns() {
     await this.expandShowOrHideColumnList();
-    await this.page.locator('.MuiButton-textPrimary').getByText('Hide all', { exact: true }).click();
+    await this.page.getByRole('button', { name: 'Hide all', exact: true }).click();
   }
 
   public async showFiltersVisibility() {
-    await this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]').click();
+    await this.page.getByRole('button', { name: 'Show/Hide filters' }).click();
   }
 
   public async filterByColumnName(columnName: columnNameType, phrase: string) {

@@ -21,7 +21,7 @@ export class AdminSharedSongsPagePO {
   }
 
   public get rememberMeToggle() {
-    return this.page.getByRole('checkbox', { name: /remember me/i });
+    return this.page.getByRole('switch', { name: /remember me/i });
   }
 
   public get logoutButton() {

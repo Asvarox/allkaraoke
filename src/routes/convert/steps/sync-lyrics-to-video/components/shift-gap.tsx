@@ -18,7 +18,7 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
   };
 
   return (
-    <Box flex="1">
+    <Box sx={{ flex: 1 }}>
       <Typography>Lyrics Gap shift (final: {msec(finalGap, player)})</Typography>
       <div className="mt-1 flex gap-1">
         <ButtonGroup sx={{ flex: 1 }}>

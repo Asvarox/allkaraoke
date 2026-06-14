@@ -1,6 +1,7 @@
 import { Song, SongPreview } from '~/interfaces';
 import convertTxtToSong from './convert-txt-to-song';
 import { applyCommonSharedSongImportProcessing, normalizeSharedSongTxt } from './shared-song-import-processing';
+import isValidUltrastarTxtFormat from './validate-ultrastar';
 
 const API_URL = 'https://eu.posthog.com';
 const PROJECT_ID = '281';
@@ -68,7 +69,13 @@ export const importSongsFromPostHogBase = async (
         continue;
       }
 
-      const song = convertTxtToSong(normalizeSharedSongTxt(songTxt));
+      const normalizedSongTxt = normalizeSharedSongTxt(songTxt);
+      if (!isValidUltrastarTxtFormat(normalizedSongTxt)) {
+        console.log('Skipping malformed shared song');
+        continue;
+      }
+
+      const song = convertTxtToSong(normalizedSongTxt);
       if (!song.id) {
         console.log('Song has no ID', song);
         continue;
