@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
-import { Button, FormControlLabel, Grid, IconButton, Switch } from '@mui/material';
+import { Button, FormControlLabel, IconButton, Switch } from '@mui/material';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
@@ -35,13 +35,13 @@ export default function SongList() {
         <Container>
           {created && <ShareSongsModal id={songId} />}
 
-          <Grid container rowSpacing={2}>
-            <Grid size={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+          <div className="grid grid-cols-12 items-center gap-y-4">
+            <div className="col-span-3 flex items-center justify-start">
               <Link to="menu/">
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
-            </Grid>
-            <Grid size={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            </div>
+            <div className="col-span-6 flex items-center justify-center">
               <h4>
                 <span
                   onClick={() => {
@@ -52,15 +52,15 @@ export default function SongList() {
                 </span>{' '}
                 songs
               </h4>
-            </Grid>
-            <Grid size={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+            </div>
+            <div className="col-span-3 flex items-center justify-end">
               <Link to="convert/">
                 <Button data-test="convert-song" variant={'contained'}>
                   Import UltraStar .TXT
                 </Button>
               </Link>
-            </Grid>
-            <Grid size={12}>
+            </div>
+            <div className="col-span-12">
               <SongsTable
                 globalFilter={songId}
                 data={data}
@@ -135,9 +135,9 @@ export default function SongList() {
                   </>
                 )}
               />
-            </Grid>
+            </div>
             {shareSongs !== null && (
-              <Grid size={12}>
+              <div className="col-span-12">
                 <FormControlLabel
                   control={
                     <Switch
@@ -149,9 +149,9 @@ export default function SongList() {
                   }
                   label="Share added songs (so they can be played by others)"
                 />
-              </Grid>
+              </div>
             )}
-          </Grid>
+          </div>
         </Container>
       </NoPrerender>
     </>

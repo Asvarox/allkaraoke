@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -263,9 +263,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   });
 
   return (
-    <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
-      <Grid size={{ xs: 12, sm: 8 }} data-test="player-container">
-        <Box sx={{ width: playerWidth, height: playerHeight }}>
+    <div className={visible ? 'grid grid-cols-12 gap-4' : 'hidden'}>
+      <div className="col-span-12 sm:col-span-8" data-test="player-container">
+        <div style={{ width: playerWidth, height: playerHeight }}>
           <Player
             onStatusChange={setPlayerState}
             key={0}
@@ -279,9 +279,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             singSetup={singSetup}
             onSongEnd={() => undefined}
           />
-        </Box>
-      </Grid>
-      <Grid size={{ xs: 12, sm: 4 }} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        </div>
+      </div>
+      <div className="col-span-12 flex flex-col gap-4 sm:col-span-4">
         {player.current && (
           <>
             <AdjustPlayback player={player.current} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
@@ -310,10 +310,10 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           </>
         )}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
-      </Grid>
+      </div>
       {player.current && (
         <>
-          <Grid size={{ xs: 12, sm: 8 }}>
+          <div className="col-span-12 sm:col-span-8">
             <div className="flex flex-1 flex-col-reverse gap-5 sm:flex-row">
               <ShiftVideoGap
                 player={player.current}
@@ -330,8 +330,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               />
               <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
             </div>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 4 }} className="hidden sm:block">
+          </div>
+          <div className="hidden sm:col-span-4 sm:block">
             <div className="mb-2 text-xs">
               Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an intro.
             </div>
@@ -339,14 +339,14 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               Use <strong>Lyrics shift gap</strong> to sync the start of the lyrics to the video. You can lower the{' '}
               <strong>Playback speed</strong> above to make sure you got it just right.{' '}
             </div>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 8 }}>
+          </div>
+          <div className="col-span-12 sm:col-span-8">
             <Typography variant={'h5'} sx={{ mb: 2 }}>
               Advanced
             </Typography>
             <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
-          </Grid>
-          <Grid size={{ xs: 12, sm: 4 }} className="hidden sm:block">
+          </div>
+          <div className="hidden sm:col-span-4 sm:block">
             <div className="mb-2 text-xs">
               If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.
             </div>
@@ -358,8 +358,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <div className="mb-2 text-xs">
               <strong>Tempo (BPM)</strong> field allows to fine-tune the tempo.
             </div>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 8 }}>
+          </div>
+          <div className="col-span-12 sm:col-span-8">
             <EditSection
               playbackSpeed={playbackSpeed}
               song={newSong}
@@ -388,8 +388,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 }))
               }
             />
-          </Grid>
-          <Grid size={{ xs: 12, sm: 4 }} className="hidden sm:block">
+          </div>
+          <div className="hidden sm:col-span-4 sm:block">
             <div className="mb-2 text-xs">
               If the lyrics there are more lyrics than in the video or there are longer/shorter interludes between
               verses, you can <strong>Edit verses</strong>.
@@ -403,9 +403,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <div className="mb-2 text-xs">
               <strong>List of changes</strong> on the right allows you to see and undo the actions one by one.
             </div>
-          </Grid>
+          </div>
         </>
       )}
-    </Grid>
+    </div>
   );
 }

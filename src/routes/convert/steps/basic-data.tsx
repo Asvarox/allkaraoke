@@ -4,11 +4,11 @@ import { Song } from '~/interfaces';
 import convertSongToTxt from '~/modules/songs/utils/convert-song-to-txt';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getSectionStartInMs } from '~/modules/songs/utils/notes-selectors';
+import isValidUltrastarTxtFormat from '~/modules/songs/utils/validate-ultrastar';
 import importUltrastarEsSong from '~/routes/convert/import-ultrastar-es-song';
 import { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import formatMs from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';
 import { fixDiacritics } from '~/routes/convert/steps/utils/fix-diacritics';
-import isValidUltrastarTxtFormat from '~/routes/convert/steps/utils/validate-ultrastar';
 import { Pre } from '../elements';
 
 export interface BasicDataEntity {

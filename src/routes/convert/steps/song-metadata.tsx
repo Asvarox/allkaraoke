@@ -1,14 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  Autocomplete,
-  FormControl,
-  FormHelperText,
-  Grid,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-} from '@mui/material';
+import { Autocomplete, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useEffect, useMemo, useState } from 'react';
 import { Flag } from '~/modules/elements/flag';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
@@ -124,8 +115,8 @@ export default function SongMetadata(props: Props) {
   const [hasSearchedBpm, setHasSearchedBpm] = useState(false);
 
   return (
-    <Grid container spacing={2} data-test="song-metadata">
-      <Grid size={6}>
+    <div className="grid grid-cols-12 gap-4" data-test="song-metadata">
+      <div className="col-span-6">
         <TextField
           value={props.data.artist}
           onChange={(e) => props.onChange({ ...props.data, artist: e.target.value })}
@@ -135,8 +126,8 @@ export default function SongMetadata(props: Props) {
           required
           fullWidth
         />
-      </Grid>
-      <Grid size={6}>
+      </div>
+      <div className="col-span-6">
         <TextField
           value={props.data.title}
           onChange={(e) => props.onChange({ ...props.data, title: e.target.value })}
@@ -146,8 +137,8 @@ export default function SongMetadata(props: Props) {
           required
           data-test="song-title"
         />
-      </Grid>
-      <Grid size={3}>
+      </div>
+      <div className="col-span-3">
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -170,8 +161,8 @@ export default function SongMetadata(props: Props) {
             />
           )}
         />
-      </Grid>
-      <Grid size={3}>
+      </div>
+      <div className="col-span-3">
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -195,8 +186,8 @@ export default function SongMetadata(props: Props) {
             />
           )}
         />
-      </Grid>
-      <Grid size={3}>
+      </div>
+      <div className="col-span-3">
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -225,8 +216,8 @@ export default function SongMetadata(props: Props) {
             />
           )}
         />
-      </Grid>
-      <Grid size={3}>
+      </div>
+      <div className="col-span-3">
         <FormControl fullWidth>
           <InputLabel id="song-origin-select-label" size="small">
             Song/artist origin (optional)
@@ -250,8 +241,8 @@ export default function SongMetadata(props: Props) {
           </Select>
           <FormHelperText>Used to show the flag on the list</FormHelperText>
         </FormControl>
-      </Grid>
-      <Grid size={6}>
+      </div>
+      <div className="col-span-6">
         <TextField
           data-test="release-year"
           value={props.data.year}
@@ -263,8 +254,8 @@ export default function SongMetadata(props: Props) {
           required
           {...inputAction(() => searchGoogle('release year'), isSearchableForVideo)}
         />
-      </Grid>
-      <Grid size={6}>
+      </div>
+      <div className="col-span-6">
         <TextField
           data-test="song-bpm"
           value={props.data.realBpm}
@@ -291,12 +282,11 @@ export default function SongMetadata(props: Props) {
             searchGoogle('tempo');
           }, isSearchableForVideo)}
         />
-      </Grid>
-      <Grid size={12}></Grid>
-      <Grid size={12}>
+      </div>
+      <div className="col-span-12">
         <PreviewAndVolumeAdjustment {...props} />
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   );
 }
 
