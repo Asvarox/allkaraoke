@@ -108,7 +108,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Play the song and after above 80% complete - exit the song', async () => {
     await pages.songPreviewPage.playTheSong();
     await page.waitForTimeout(3_500);
-    await pages.gamePage.exitSong();
+    await pages.gamePage.exitSongIfStillPlaying();
   });
 
   await test.step('Skip to the Song list', async () => {

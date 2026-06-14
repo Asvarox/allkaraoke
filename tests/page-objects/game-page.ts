@@ -59,6 +59,23 @@ export class GamePagePO {
     await this.page.getByTestId('button-exit-song').click();
   }
 
+  public async exitSongIfStillPlaying() {
+    await this.goToPauseMenuByKeyboard();
+
+    try {
+      await this.page.getByTestId('button-exit-song').click({ timeout: 3_000 });
+    } catch (error) {
+      const postGameResultsVisible = await this.page
+        .getByTestId('skip-animation-button')
+        .isVisible()
+        .catch(() => false);
+
+      if (!postGameResultsVisible) {
+        throw error;
+      }
+    }
+  }
+
   public async navigateAndApproveWithKeyboard(
     buttonName:
       | 'button-resume-song'
