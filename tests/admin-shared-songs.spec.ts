@@ -91,11 +91,12 @@ test.afterEach(async ({ request }) => {
 test.use({ serviceWorkers: 'block' });
 test.describe.configure({ mode: 'serial' });
 
-test('stores the admin password, lists shared songs, and logs out', async ({ page }) => {
+test('stores the admin password in session storage, lists shared songs, and logs out', async ({ page }) => {
   await page.goto('/admin?e2e-test');
 
   await test.step('Sign in and see the shared song', async () => {
     await pages.adminSharedSongsPage.signIn(adminPanelPassword);
+    await pages.adminSharedSongsPage.expectPasswordStoredInSessionStorage(adminPanelPassword);
     await pages.adminSharedSongsPage.search(currentVisibleTitle);
     await expect(pages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).toBeVisible();
   });
@@ -103,8 +104,29 @@ test('stores the admin password, lists shared songs, and logs out', async ({ pag
   await test.step('Logout clears the stored password', async () => {
     await pages.adminSharedSongsPage.logout();
     await expect(pages.adminSharedSongsPage.passwordInput).toBeVisible();
-    await pages.adminSharedSongsPage.expectPasswordClearedFromSessionStorage();
+    await pages.adminSharedSongsPage.expectPasswordClearedFromStorage();
   });
+});
+
+test('remember me stores the admin password in local storage and skips the login form on a new page', async ({
+  page,
+}) => {
+  await page.goto('/admin?e2e-test');
+
+  await pages.adminSharedSongsPage.signIn(adminPanelPassword, true);
+  await pages.adminSharedSongsPage.expectPasswordStoredInLocalStorage(adminPanelPassword);
+  await pages.adminSharedSongsPage.search(currentVisibleTitle);
+  await expect(pages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).toBeVisible();
+
+  const secondPage = await page.context().newPage();
+  const secondPages = initialise(secondPage, secondPage.context(), secondPage.context().browser()!);
+
+  await secondPage.goto('/admin?e2e-test');
+  await expect(secondPages.adminSharedSongsPage.passwordInput).not.toBeVisible();
+  await expect(secondPages.adminSharedSongsPage.adminHeading).toBeVisible();
+  await secondPages.adminSharedSongsPage.expectPasswordStoredInLocalStorage(adminPanelPassword);
+  await secondPages.adminSharedSongsPage.search(currentVisibleTitle);
+  await expect(secondPages.adminSharedSongsPage.table.rowContaining(currentVisibleTitle)).toBeVisible();
 });
 
 test('shows and sorts shared songs by added date', async ({ page, request }) => {

@@ -20,6 +20,10 @@ export class AdminSharedSongsPagePO {
     return this.page.getByRole('button', { name: 'Sign in' });
   }
 
+  public get rememberMeToggle() {
+    return this.page.getByRole('checkbox', { name: /remember me/i });
+  }
+
   public get logoutButton() {
     return this.page.getByRole('button', { name: 'Logout' });
   }
@@ -36,9 +40,18 @@ export class AdminSharedSongsPagePO {
     return this.page.getByRole('textbox', { name: 'Search' });
   }
 
-  public async signIn(password: string) {
+  public async signIn(password: string, rememberMe = false) {
     await this.passwordInput.fill(password);
+    await this.setRememberMe(rememberMe);
     await this.signInButton.click();
+  }
+
+  public async setRememberMe(rememberMe: boolean) {
+    const isRemembered = await this.rememberMeToggle.isChecked();
+
+    if (isRemembered !== rememberMe) {
+      await this.rememberMeToggle.click();
+    }
   }
 
   public async search(text: string) {
@@ -53,7 +66,36 @@ export class AdminSharedSongsPagePO {
     await this.processOldestUnverifiedButton.click();
   }
 
-  public async expectPasswordClearedFromSessionStorage() {
-    await expect.poll(() => this.page.evaluate(() => sessionStorage.getItem('admin-panel-password'))).toBeNull();
+  public async expectPasswordStoredInSessionStorage(password: string) {
+    await expect
+      .poll(() =>
+        this.page.evaluate(() => ({
+          local: localStorage.getItem('admin-panel-password'),
+          session: sessionStorage.getItem('admin-panel-password'),
+        })),
+      )
+      .toEqual({ local: null, session: password });
+  }
+
+  public async expectPasswordStoredInLocalStorage(password: string) {
+    await expect
+      .poll(() =>
+        this.page.evaluate(() => ({
+          local: localStorage.getItem('admin-panel-password'),
+          session: sessionStorage.getItem('admin-panel-password'),
+        })),
+      )
+      .toEqual({ local: password, session: null });
+  }
+
+  public async expectPasswordClearedFromStorage() {
+    await expect
+      .poll(() =>
+        this.page.evaluate(() => ({
+          local: localStorage.getItem('admin-panel-password'),
+          session: sessionStorage.getItem('admin-panel-password'),
+        })),
+      )
+      .toEqual({ local: null, session: null });
   }
 }
