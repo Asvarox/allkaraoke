@@ -1,0 +1,316 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Mason Olshavsky)
+#TITLE:No Longer You
+#CREATOR:Andore
+#BPM:397,42
+#YEAR:2024
+#PREVIEWSTART:47
+#VIDEO:v=p_3IGTwcRik
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:4498,670424236324
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-mason-olshavsky-no-longer-you
+#ALLKARAOKE_SID:5879
+#ALLKARAOKE_LASTUPDATE:2026-06-15T00:41:59.601Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_PREVIEWEND:65
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:176
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Mason Olshavsky) - No Longer You.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Mason Olshavsky) - No Longer You [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Mason Olshavsky) - No Longer You [BG].jpg
+: 26 28 -5 I 
+: 56 8 -7 am 
+: 65 2 -4 the 
+: 72 5 -5 pro
+: 79 5 -7 phet
+- 84
+: 106 4 -5 With 
+: 114 6 -4 the 
+: 122 14 -3 ans
+: 138 13 -4 wers 
+: 154 7 -7 you 
+: 168 24 -5 seek
+- 192 193
+- 193
+: 219 28 -5 Time 
+: 251 5 -7 I’ve 
+: 258 3 -4 un
+: 262 8 -5 locked 
+: 274 2 -7 it
+- 276
+: 295 3 -5 I 
+: 301 6 -4 see 
+: 313 4 -2 past
+: 322 1 -2 ~ 
+: 326 3 -4 and 
+: 331 7 -4 fu
+: 340 17 -5 ture 
+: 358 4 -10 runn
+: 365 5 -9 ing 
+: 376 14 -7 free
+- 390
+: 408 31 0 There 
+: 442 3 0 is 
+: 447 2 0 a 
+: 451 26 -2 world
+- 477
+: 486 7 -5 Where 
+: 495 3 -2 I 
+: 504 8 5 help 
+: 517 14 2 you 
+: 534 11 5 get 
+: 549 27 0 home
+- 576
+: 591 2 -4 But 
+: 600 27 -4 that’s 
+: 629 5 -5 not 
+: 637 3 -4 a 
+: 642 24 -5 world 
+: 669 12 0 I 
+: 684 28 0 know
+- 712
+F 719 3 0 What?
+- 722 738
+- 738
+: 764 5 -5 I 
+: 771 8 -1 see 
+: 780 4 2 a 
+: 789 15 5 song 
+: 805 3 3 of 
+: 812 8 3 past
+: 822 2 3 ~ 
+: 827 8 0 ro
+: 837 13 0 mance
+- 850
+: 859 5 0 I 
+: 867 8 3 see 
+: 876 4 7 the 
+: 884 9 8 sac
+: 898 5 7 ri
+: 908 9 7 fice
+: 918 3 7 ~ 
+: 925 4 3 of 
+: 934 9 2 man
+- 943
+: 956 3 2 I 
+: 962 5 3 see 
+: 970 5 5 port
+: 979 13 7 ray
+: 993 6 5 als 
+: 1003 11 3 of 
+: 1019 4 2 be
+: 1025 6 4 tray
+: 1032 5 5 ~
+: 1039 8 2 al
+- 1047
+: 1051 14 2 And 
+: 1067 3 0 a 
+: 1074 15 -4 brot
+: 1091 7 -4 her’s 
+: 1100 12 -4 fi
+: 1114 3 -2 nal 
+: 1123 14 -5 stand
+- 1137
+: 1146 5 -5 I 
+: 1154 7 -1 see 
+: 1162 6 2 you 
+: 1171 11 5 on 
+: 1185 3 3 the 
+: 1191 16 3 brink 
+: 1209 3 2 of 
+: 1217 12 0 death
+- 1229
+: 1242 5 0 I 
+: 1249 6 3 see 
+: 1256 5 7 you 
+* 1265 14 10 draw 
+* 1280 5 8 your 
+* 1291 7 8 fi
+* 1299 4 7 ~
+* 1305 4 7 nal 
+: 1314 8 5 breath
+- 1322
+: 1337 5 5 I 
+: 1347 6 7 see 
+: 1355 3 8 you 
+: 1360 1 8 a 
+: 1362 14 8 man
+: 1378 3 8 who 
+: 1384 12 7 gets 
+: 1399 6 5 to 
+: 1408 4 5 make
+: 1413 7 7 ~ 
+: 1423 6 3 it 
+: 1433 10 2 home
+- 1443
+: 1449 4 0 A
+: 1454 34 2 live
+- 1488
+: 1496 8 -5 But 
+: 1505 7 -5 it’s 
+: 1517 9 3 no 
+: 1527 11 2 lon
+: 1541 12 2 ger
+- 1553
+: 1558 53 0 You
+- 1611 1655
+- 1655
+: 1681 3 -5 This 
+: 1686 5 -5 can’t 
+: 1697 13 -5 be
+- 1710
+: 1734 4 3 We’ve 
+: 1744 3 2 suf
+: 1751 6 2 fered 
+: 1758 2 3 and 
+: 1762 2 2 sai
+: 1766 4 2 led 
+: 1773 6 0 through 
+: 1780 5 3 the 
+: 1788 12 2 thoughest 
+: 1804 4 3 of 
+: 1812 5 2 hells
+- 1817
+: 1821 5 0 Now 
+: 1829 3 3 you 
+: 1835 6 2 tell 
+: 1845 3 0 us 
+: 1853 7 3 our 
+: 1861 4 2 ef
+: 1868 4 2 forts
+- 1872
+: 1876 4 3 For 
+: 1886 5 7 not
+: 1896 9 5 hing
+- 1905 1907
+- 1907
+: 1933 19 0 I 
+: 1955 13 -5 see 
+: 1973 5 0 your 
+: 1981 20 2 pal
+: 2004 14 -2 ace
+- 2018
+: 2028 1 14 Cov
+: 2030 12 17 ~
+: 2046 12 3 ered 
+: 2060 11 2 in 
+: 2075 9 3 red
+: 2085 21 0 ~
+- 2106
+: 2124 15 0 Fa
+: 2143 17 -5 ces 
+: 2164 4 2 of 
+: 2172 12 2 men
+- 2184
+: 2194 13 -2 Who 
+: 2209 6 2 had 
+: 2219 12 8 long 
+: 2235 5 7 be
+: 2242 11 7 lieved 
+: 2258 5 5 you’re 
+: 2267 15 7 dead
+- 2282 2289
+- 2289
+: 2315 16 0 I 
+: 2340 11 -5 see 
+: 2353 5 0 your 
+: 2364 6 -1 wife
+- 2370
+: 2388 7 -5 With 
+: 2400 4 -5 a 
+: 2409 11 -4 man 
+: 2427 11 -5 who 
+: 2441 13 -7 is 
+: 2458 11 -5 haunt
+: 2473 16 -12 ing
+- 2489
+: 2497 4 -12 A 
+: 2505 21 -9 man 
+: 2537 6 -10 with 
+: 2545 2 -10 a 
+: 2549 30 -7 trail
+- 2579
+: 2592 5 -9 Of 
+: 2602 15 -5 bo
+: 2618 23 -5 dies
+- 2641
+F 2648 17 8 WHO?!
+- 2665
+: 2672 5 -5 I 
+: 2679 7 -1 see 
+: 2688 3 2 a 
+: 2695 15 5 song 
+: 2712 3 3 of 
+: 2720 11 3 past 
+: 2735 6 0 ro
+: 2745 10 0 mance
+: 2757 2 0 ~
+- 2759
+: 2767 6 0 I 
+: 2776 4 3 see 
+: 2784 3 7 the 
+: 2792 9 8 sac
+: 2806 4 7 ri
+: 2815 13 7 fice 
+: 2830 3 3 of 
+: 2837 15 2 man
+- 2852
+: 2862 5 2 I 
+: 2870 4 3 see 
+: 2878 5 5 por
+: 2886 9 7 tray
+: 2897 10 5 als 
+: 2911 11 3 of 
+: 2926 3 5 be
+: 2931 15 5 tray
+: 2947 9 5 al 
+: 2958 12 2 and
+: 2973 2 2 ~
+- 2975
+: 2979 15 -4 Brot
+: 2997 5 -4 her’s 
+: 3006 13 -4 fi
+: 3021 3 -4 nal 
+: 3031 11 -5 stand
+- 3042
+: 3053 5 -5 I 
+: 3060 7 -1 see 
+: 3071 5 2 you 
+: 3078 10 5 on 
+: 3092 4 3 the 
+: 3099 13 3 brink 
+: 3116 2 2 of 
+: 3124 10 0 death
+- 3134
+: 3150 3 0 I 
+: 3155 5 3 see 
+: 3162 6 7 you 
+* 3174 10 10 draw 
+* 3185 6 10 your 
+: 3195 14 8 fi
+: 3210 5 7 nal 
+: 3221 10 5 breath
+- 3231
+: 3244 4 5 I 
+: 3252 7 7 see 
+: 3262 2 7 a 
+: 3268 14 8 man 
+: 3284 6 7 who 
+: 3292 12 7 gets 
+: 3308 5 5 to 
+: 3316 14 7 make 
+: 3332 4 3 it 
+: 3341 14 2 home 
+: 3357 6 2 a
+: 3364 28 2 live
+- 3392
+: 3403 8 -5 But 
+: 3413 7 -5 it’s 
+: 3425 12 7 no 
+: 3441 9 5 lon
+: 3457 28 14 ger
+- 3485 3517
+- 3517
+* 3543 170 0 You
+E
