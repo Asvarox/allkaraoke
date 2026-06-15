@@ -18934,6 +18934,34 @@
     "local": false
   },
   {
+    "id": "beyonce-711",
+    "title": "7/11",
+    "artist": "Beyoncé",
+    "video": "k4YRWT_Aldo",
+    "language": [
+      "English"
+    ],
+    "bpm": 271.94,
+    "gap": 3057.133926601456,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-15T00:41:59.599Z",
+    "genre": "R&B",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "R",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5878,
+    "tracksCount": 1,
+    "search": "beyonce711",
+    "local": false
+  },
+  {
     "id": "beyonce-blow",
     "title": "Blow",
     "artist": "Beyoncé",
@@ -53520,6 +53548,36 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-mason-olshavsky-no-longer-you",
+    "title": "No Longer You",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Mason Olshavsky)",
+    "video": "p_3IGTwcRik",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.42,
+    "gap": 4498.670424236324,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-15T00:41:59.601Z",
+    "genre": "Musical",
+    "realBpm": 200,
+    "previewStart": 47,
+    "previewEnd": 65,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 176,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5879,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransmasonolshavskynolongeryou",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-talya-sindel-done-for",
     "title": "Done For",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel)",
@@ -53546,6 +53604,35 @@
     "shortId": 5875,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranstalyasindeldonefor",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-talya-sindel-there-are-other-ways",
+    "title": "There Are Other Ways",
+    "artist": "EPIC The Musical (Jorge Rivera-Herrans, Talya Sindel)",
+    "video": "NM_Kg0I29Bs",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 3137.5,
+    "year": "2024",
+    "lastUpdate": "2026-06-15T00:41:59.603Z",
+    "genre": "Musical",
+    "realBpm": 120,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.7,
+    "author": "Andore",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5880,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranstalyasindelthereareotherways",
     "local": false
   },
   {
@@ -97736,6 +97823,36 @@
     "shortId": 2652,
     "tracksCount": 1,
     "search": "losronaldosnopuedovivirsinti",
+    "local": false
+  },
+  {
+    "id": "los-tipitos-campanas-en-la-noche",
+    "title": "Campanas en la noche",
+    "artist": "Los Tipitos",
+    "video": "FRJxbJCsAvA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 292.25,
+    "gap": 25359.80752780154,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-15T00:41:58.998Z",
+    "genre": "Rock Nacional",
+    "realBpm": 292.25,
+    "volume": 1,
+    "author": "lcquiel",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=lcquiel",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Tipitos&cancion=Campanas%20en%20la%20noche",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5877,
+    "tracksCount": 1,
+    "search": "lostipitoscampanasenlanoche",
     "local": false
   },
   {
