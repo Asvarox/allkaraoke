@@ -1,4 +1,5 @@
 const styles = require('./src/modules/game-engine/drawing/styles');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -130,15 +131,12 @@ module.exports = {
         'lyrics-pop': 'lyrics-pop 500ms ease-in-out 0s 1 both',
         'lyrics-shake': 'lyrics-shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0s infinite both',
       },
-      screens: {
-        mobile: {
-          raw: '(max-width: 900px)',
-        },
-        landscap: {
-          raw: '(max-height: 500px) and (min-aspect-ratio: 16/10)',
-        },
-      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('mobile', '@media (max-width: 900px)');
+      addVariant('landscap', '@media (max-height: 500px) and (min-aspect-ratio: 16/10)');
+    }),
+  ],
 };

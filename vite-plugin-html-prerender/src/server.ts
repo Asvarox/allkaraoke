@@ -4,6 +4,7 @@ import handler from 'serve-handler';
 
 export default class Server {
   runningPort = 0;
+  private static readonly HOST = '127.0.0.1';
 
   private readonly _port: number;
   private _instance?: http.Server;
@@ -20,10 +21,12 @@ export default class Server {
       });
     });
 
-    return new Promise((resolve) => {
-      this._instance?.listen(this._port, () => {
+    return new Promise((resolve, reject) => {
+      this._instance?.once('error', reject);
+      this._instance?.listen(this._port, Server.HOST, () => {
         this.runningPort = (this._instance?.address() as AddressInfo).port;
-        console.log(`Running at http://localhost:${this.runningPort}`);
+        console.log(`Running at http://${Server.HOST}:${this.runningPort}`);
+        this._instance?.off('error', reject);
 
         resolve();
       });
