@@ -37,6 +37,7 @@
     "Kelly Clarkson",
     "Lana Del Rey",
     "Backstreet Boys",
+    "Beyoncé",
     "Jamiroquai",
     "Maroon 5",
     "Miley Cyrus",
@@ -44,7 +45,6 @@
     "Avenged Sevenfold",
     "Avril Lavigne",
     "Bad Religion",
-    "Beyoncé",
     "George Michael",
     "INXS",
     "Paramore",
@@ -87,6 +87,7 @@
     "Jonas Brothers",
     "Melanie Martinez",
     "Oasis",
+    "Olivia Rodrigo",
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
@@ -101,7 +102,6 @@
     "Lorde",
     "★N Sync",
     "Nickelback",
-    "Olivia Rodrigo",
     "Phil Collins",
     "Sabrina Carpenter",
     "Sean Paul",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5874
+  "songs": 5879
 }
