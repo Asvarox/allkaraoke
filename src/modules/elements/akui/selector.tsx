@@ -132,7 +132,7 @@ export function ScrollableRow({ children, className }: PropsWithChildren<{ class
             transition: '--sel-mask-left 100ms ease, --sel-mask-right 100ms ease',
           } as React.CSSProperties
         }
-        className="flex items-center gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        className="flex [scrollbar-width:none] items-center gap-1 overflow-x-auto [&::-webkit-scrollbar]:hidden">
         {children}
       </div>
     </div>
