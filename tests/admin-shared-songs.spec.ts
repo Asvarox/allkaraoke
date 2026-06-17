@@ -42,6 +42,9 @@ const removeStaleQueueFixtures = async (request: APIRequestContext) => {
 const makeSharedSongTxtWithTitle = (title: string) =>
   sharedCloudflareSongTxt.replace(`#TITLE:${sharedCloudflareSongFixture.title}`, `#TITLE:${title}`);
 
+const makeSharedSongTxtWithTitleAndVideo = (title: string, videoId: string) =>
+  makeSharedSongTxtWithTitle(title).replace(`#VIDEO:v=${sharedCloudflareSongFixture.videoId}`, `#VIDEO:v=${videoId}`);
+
 const seedQueueSongs = async (request: APIRequestContext) => {
   await removeStaleQueueFixtures(request);
   const olderExternalSongId = `${currentExternalSongId}-oldest`;
@@ -53,14 +56,15 @@ const seedQueueSongs = async (request: APIRequestContext) => {
   await upsertSharedSong(request, {
     externalSongId: currentExternalSongId,
     title: currentVisibleTitle,
-    songTxt: makeSharedSongTxtWithTitle(currentVisibleTitle),
+    songTxt: makeSharedSongTxtWithTitleAndVideo(currentVisibleTitle, sharedCloudflareSongFixture.videoId),
     firstSeenAt: queueCurrentFirstSeenAt,
     sourceUserId: 'admin-panel-e2e',
   });
   await upsertSharedSong(request, {
     externalSongId: olderExternalSongId,
     title: olderVisibleTitle,
-    songTxt: makeSharedSongTxtWithTitle(olderVisibleTitle),
+    songTxt: makeSharedSongTxtWithTitleAndVideo(olderVisibleTitle, 'Vueyx9TBEqE'),
+    videoId: 'Vueyx9TBEqE',
     firstSeenAt: queueOlderFirstSeenAt,
     sourceUserId: 'admin-panel-e2e',
   });
@@ -167,12 +171,15 @@ test('saving during oldest-first processing redirects to the next unverified sha
   await pages.adminSharedSongsPage.processOldestUnverifiedSong();
   await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedCloudflareSongFixture.artist, olderVisibleTitle);
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
+  const olderSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
+  expect(olderSongVideoSource).not.toBeNull();
   await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
   await pages.songEditMetadataPage.enterSongTitle(syncedTitle);
   await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
 
   await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedCloudflareSongFixture.artist, currentVisibleTitle);
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
+  await expect(pages.songEditSyncLyricsToVideoPage.videoPlayerSource).not.toHaveAttribute('src', olderSongVideoSource!);
 
   await expect
     .poll(async () => {

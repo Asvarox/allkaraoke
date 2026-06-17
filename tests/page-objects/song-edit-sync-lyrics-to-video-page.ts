@@ -11,6 +11,14 @@ export class SongEditSyncLyricsToVideoPagePO {
     return this.page.getByTestId('sync-lyrics');
   }
 
+  public get videoPlayerSource() {
+    return this.page.locator('[data-test="player-container"] video source');
+  }
+
+  public async getVideoPlayerSource() {
+    return this.videoPlayerSource.getAttribute('src');
+  }
+
   public get deleteAdminSharedSongButton() {
     return this.page.getByTestId('delete-admin-shared-song');
   }
