@@ -231,6 +231,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
           videoId: song.video,
           verifiedAt: now,
           firstSeenAt: now,
+          updated: now,
           lastSeenAt: now,
           sourceUserId: userId ?? '',
           sourceEventAt: new Date(createdAt).getTime(),

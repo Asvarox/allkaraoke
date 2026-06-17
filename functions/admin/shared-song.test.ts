@@ -1,6 +1,6 @@
 import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { getSharedSong, upsertSharedSong } from '../shared-songs-store';
 import { generateSharedSongRecord } from '../test-utils';
 import { onRequest } from './shared-song';
@@ -11,6 +11,8 @@ const createEnv = (kv = workerEnv.SHARED_SONGS_KV) => ({
 });
 
 afterEach(async () => {
+  vi.useRealTimers();
+  vi.restoreAllMocks();
   await reset();
 });
 
@@ -61,6 +63,8 @@ describe('browser shared song admin function', () => {
     const kv = workerEnv.SHARED_SONGS_KV;
     const env = createEnv(kv);
     await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1' }));
+    vi.useFakeTimers();
+    vi.setSystemTime(999);
 
     const response = await onRequest({
       request: createRequest('https://example.com/admin/shared-song?id=external-1', updatePayload),
@@ -72,6 +76,7 @@ describe('browser shared song admin function', () => {
       externalSongId: 'external-1',
       songId: 'new-song',
       title: 'New Song',
+      updated: 999,
     });
   });
 

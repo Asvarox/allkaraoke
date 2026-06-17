@@ -35,6 +35,31 @@ function isEmptyValue<T>(v: T | T[] | undefined) {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
+const getBasicDataFromSong = (song?: Song): BasicDataEntity => ({
+  sourceUrl: song?.sourceUrl ?? '',
+  txtInput: '',
+});
+
+const getAuthorAndVideoFromSong = (song?: Song): AuthorAndVidEntity => ({
+  author: song?.author ?? '',
+  authorUrl: song?.authorUrl ?? '',
+  video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
+});
+
+const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
+  artist: song?.artist ?? '',
+  title: song?.title ?? '',
+  realBpm: song?.realBpm ? String(song.realBpm) : '',
+  year: song?.year ?? '',
+  language: song?.language ?? [],
+  volume: song?.volume ?? 70,
+  previewStart: song?.previewStart ?? undefined,
+  previewEnd: song?.previewEnd ?? undefined,
+  genre: song?.genre,
+  edition: song?.edition,
+  artistOrigin: song?.artistOrigin,
+});
+
 export default function ConvertView({ song, adminSharedSongExternalId }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
@@ -62,27 +87,18 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
     }
   }, [initialStep]);
 
-  const [basicData, setBasicData] = useState<BasicDataEntity>({ sourceUrl: song?.sourceUrl ?? '', txtInput: '' });
-  const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>({
-    author: song?.author ?? '',
-    authorUrl: song?.authorUrl ?? '',
-    video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
-  });
-  const [metadataEntity, setMetadataEntity] = useState<SongMetadataEntity>({
-    artist: song?.artist ?? '',
-    title: song?.title ?? '',
-    realBpm: song?.realBpm ? String(song.realBpm) : '',
-    year: song?.year ?? '',
-    language: song?.language ?? [],
-    volume: song?.volume ?? 70,
-    previewStart: song?.previewStart ?? undefined,
-    previewEnd: song?.previewEnd ?? undefined,
-    genre: song?.genre,
-    edition: song?.edition,
-    artistOrigin: song?.artistOrigin,
-  });
+  const [basicData, setBasicData] = useState<BasicDataEntity>(() => getBasicDataFromSong(song));
+  const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>(() => getAuthorAndVideoFromSong(song));
+  const [metadataEntity, setMetadataEntity] = useState<SongMetadataEntity>(() => getMetadataEntityFromSong(song));
 
   const [editedSong, setEditedSong] = useState<Song | undefined>(song);
+
+  useEffect(() => {
+    setBasicData(getBasicDataFromSong(song));
+    setAuthorAndVid(getAuthorAndVideoFromSong(song));
+    setMetadataEntity(getMetadataEntityFromSong(song));
+    setEditedSong(song);
+  }, [song]);
 
   const conversionResult: Song | undefined = useMemo(() => {
     try {
@@ -218,10 +234,8 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
         };
 
         if (isAdminProcessingQueue) {
+          await saveAdminSharedSong();
           const nextUrl = await getAdminProcessingQueueRedirect();
-          void saveAdminSharedSong().catch((error) => {
-            console.error('Failed to save admin shared song', error);
-          });
           navigate(nextUrl);
           return;
         }

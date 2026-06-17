@@ -44,6 +44,7 @@ describe('browser shared songs admin function', () => {
         songId: 'song-1',
         artist: 'Artist',
         firstSeenAt: 123,
+        updated: 123,
       }),
     ]);
   });
@@ -86,6 +87,7 @@ describe('browser shared songs admin function', () => {
       expect.objectContaining({
         externalSongId: 'external-1',
         firstSeenAt: 123,
+        updated: 123,
       }),
     ]);
   });
