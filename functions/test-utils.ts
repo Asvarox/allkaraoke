@@ -10,7 +10,7 @@ export const generateSharedSongRecord = (overrides: Partial<SharedSongRecord> = 
   videoId: 'koBUXESJZ8g',
   verifiedAt: 1,
   firstSeenAt: overrides.firstSeenAt ?? 1,
-  updated: overrides.updated ?? overrides.firstSeenAt ?? 1,
+  updated: overrides.updated ?? 1,
   lastSeenAt: 1,
   sourceUserId: 'user-1',
   sourceEventAt: 1,
