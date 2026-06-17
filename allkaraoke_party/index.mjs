@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "0c7067e6d9c18eb721299ee0fe7000404e92653c" };
+		e.SENTRY_RELEASE = { id: "ba45e7a25ff5a63e184003bda5338e2ce2017e9a" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a875833-424b-4899-a821-6aca4fdd5266", e._sentryDebugIdIdentifier = "sentry-dbid-4a875833-424b-4899-a821-6aca4fdd5266");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e9edadc1-a5bd-4367-8346-7e278e65e699", e._sentryDebugIdIdentifier = "sentry-dbid-e9edadc1-a5bd-4367-8346-7e278e65e699");
 	} catch (e) {}
 })();
 var responseHeaders$3 = { "Content-Type": "application/json" };
@@ -29,6 +29,10 @@ var unauthorizedResponse = () => new Response(JSON.stringify({ error: "Unauthori
 var SHARED_SONG_KEY_PREFIX = "shared-song:";
 var INDEX_KEY = "shared-songs-index";
 var getStorageKey = (externalSongId) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
+var normalizeRecord = (record) => ({
+	...record,
+	updated: "updated" in record ? record.updated : record.firstSeenAt
+});
 var normalizeIndexEntry = (entry) => ({
 	externalSongId: "externalSongId" in entry ? entry.externalSongId : entry.songId,
 	songId: entry.songId,
@@ -36,7 +40,8 @@ var normalizeIndexEntry = (entry) => ({
 	title: entry.title,
 	language: entry.language,
 	videoId: entry.videoId,
-	firstSeenAt: "firstSeenAt" in entry ? entry.firstSeenAt : 0
+	firstSeenAt: "firstSeenAt" in entry ? entry.firstSeenAt : 0,
+	updated: ("updated" in entry ? entry.updated : void 0) ?? ("firstSeenAt" in entry ? entry.firstSeenAt : 0)
 });
 var getIndex = async (kvNamespace) => (await kvNamespace.get(INDEX_KEY, "json") ?? []).map(normalizeIndexEntry);
 var addToIndex = async (kvNamespace, entry) => {
@@ -50,18 +55,23 @@ var removeFromIndex = async (kvNamespace, externalSongId) => {
 var listSharedSongs = async (kvNamespace) => {
 	return await getIndex(kvNamespace);
 };
-var getSharedSong = (kvNamespace, externalSongId) => kvNamespace.get(getStorageKey(externalSongId), "json");
+var getSharedSong = async (kvNamespace, externalSongId) => {
+	const record = await kvNamespace.get(getStorageKey(externalSongId), "json");
+	return record ? normalizeRecord(record) : null;
+};
 var upsertSharedSong = async (kvNamespace, record) => {
-	const storageKey = getStorageKey(record.externalSongId);
-	await kvNamespace.put(storageKey, JSON.stringify(record));
+	const normalizedRecord = normalizeRecord(record);
+	const storageKey = getStorageKey(normalizedRecord.externalSongId);
+	await kvNamespace.put(storageKey, JSON.stringify(normalizedRecord));
 	await addToIndex(kvNamespace, {
-		externalSongId: record.externalSongId,
-		songId: record.songId,
-		artist: record.artist,
-		title: record.title,
-		language: record.language,
-		videoId: record.videoId,
-		firstSeenAt: record.firstSeenAt
+		externalSongId: normalizedRecord.externalSongId,
+		songId: normalizedRecord.songId,
+		artist: normalizedRecord.artist,
+		title: normalizedRecord.title,
+		language: normalizedRecord.language,
+		videoId: normalizedRecord.videoId,
+		firstSeenAt: normalizedRecord.firstSeenAt,
+		updated: normalizedRecord.updated
 	});
 };
 var removeSharedSong = async (kvNamespace, externalSongId) => {
@@ -76,11 +86,13 @@ var removeSharedSong = async (kvNamespace, externalSongId) => {
 var updateSharedSong = async (kvNamespace, externalSongId, update) => {
 	const currentRecord = await getSharedSong(kvNamespace, externalSongId);
 	if (!currentRecord) return false;
+	const now = Date.now();
 	const updatedRecord = {
 		...currentRecord,
 		...update,
 		externalSongId,
-		lastSeenAt: Date.now()
+		updated: now,
+		lastSeenAt: now
 	};
 	await kvNamespace.put(getStorageKey(externalSongId), JSON.stringify(updatedRecord));
 	await addToIndex(kvNamespace, {
@@ -90,22 +102,25 @@ var updateSharedSong = async (kvNamespace, externalSongId, update) => {
 		title: updatedRecord.title,
 		language: updatedRecord.language,
 		videoId: updatedRecord.videoId,
-		firstSeenAt: updatedRecord.firstSeenAt
+		firstSeenAt: updatedRecord.firstSeenAt,
+		updated: updatedRecord.updated
 	});
 	return true;
 };
 var regenerateIndex = async (kvNamespace) => {
 	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
 	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
-		return await kvNamespace.get(name, "json");
-	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId, firstSeenAt }) => ({
+		const record = await kvNamespace.get(name, "json");
+		return record ? normalizeRecord(record) : null;
+	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId, firstSeenAt, updated }) => ({
 		externalSongId,
 		songId,
 		artist,
 		title,
 		language,
 		videoId,
-		firstSeenAt
+		firstSeenAt,
+		updated
 	}));
 	await kvNamespace.put(INDEX_KEY, JSON.stringify(indexEntries));
 };
@@ -320,7 +335,7 @@ var responseHeaders = { "Content-Type": "application/json" };
 var isSharedSongRecord = (payload) => {
 	if (!payload || typeof payload !== "object") return false;
 	const record = payload;
-	return typeof record.externalSongId === "string" && typeof record.songId === "string" && typeof record.songTxt === "string" && typeof record.artist === "string" && typeof record.title === "string" && Array.isArray(record.language) && typeof record.videoId === "string" && typeof record.verifiedAt === "number" && typeof record.firstSeenAt === "number" && typeof record.lastSeenAt === "number" && typeof record.sourceUserId === "string" && typeof record.sourceEventAt === "number";
+	return typeof record.externalSongId === "string" && typeof record.songId === "string" && typeof record.songTxt === "string" && typeof record.artist === "string" && typeof record.title === "string" && Array.isArray(record.language) && typeof record.videoId === "string" && typeof record.verifiedAt === "number" && typeof record.firstSeenAt === "number" && (typeof record.updated === "number" || typeof record.updated === "undefined") && typeof record.lastSeenAt === "number" && typeof record.sourceUserId === "string" && typeof record.sourceEventAt === "number";
 };
 var onRequest$1 = async ({ request, env }) => {
 	const expectedToken = env.SHARED_SONGS_ADMIN_TOKEN;
@@ -340,7 +355,10 @@ var onRequest$1 = async ({ request, env }) => {
 				status: 400,
 				headers: responseHeaders
 			});
-			await upsertSharedSong(env.SHARED_SONGS_KV, payload);
+			await upsertSharedSong(env.SHARED_SONGS_KV, {
+				...payload,
+				updated: payload.updated ?? payload.firstSeenAt
+			});
 			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders });
 		}
 		if (request.method === "DELETE") {
