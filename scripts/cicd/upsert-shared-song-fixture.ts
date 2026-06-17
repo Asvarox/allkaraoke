@@ -41,6 +41,7 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
     videoId: song.video,
     verifiedAt: now,
     firstSeenAt: now,
+    updated: now,
     lastSeenAt: now,
     sourceUserId: 'cloudflare-local-e2e',
     sourceEventAt: now,

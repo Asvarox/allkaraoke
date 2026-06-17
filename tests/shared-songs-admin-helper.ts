@@ -35,6 +35,7 @@ export const createExternalSongId = (testInfo: TestInfo) =>
 type SharedSongFixtureOverrides = Partial<typeof sharedCloudflareSongFixture> & {
   externalSongId?: string;
   firstSeenAt?: number;
+  updated?: number;
   songTxt?: string;
   sourceUserId?: string;
 };
@@ -48,6 +49,8 @@ export const upsertSharedSong = async (
   }: SharedSongFixtureOverrides = {},
 ) => {
   const now = Date.now();
+  const firstSeenAt = overrides.firstSeenAt ?? now;
+  const updated = overrides.updated ?? firstSeenAt;
   const payload = {
     externalSongId,
     songId: sharedCloudflareSongFixture.songId,
@@ -57,7 +60,8 @@ export const upsertSharedSong = async (
     language: sharedCloudflareSongFixture.language,
     videoId: sharedCloudflareSongFixture.videoId,
     verifiedAt: now,
-    firstSeenAt: now,
+    firstSeenAt,
+    updated,
     lastSeenAt: now,
     sourceUserId,
     sourceEventAt: now,

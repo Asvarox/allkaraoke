@@ -5,11 +5,13 @@ interface Env {
   SHARED_SONGS_KV?: KVNamespace;
 }
 
+type IncomingSharedSongRecord = SharedSongRecord | Omit<SharedSongRecord, 'updated'>;
+
 const responseHeaders = {
   'Content-Type': 'application/json',
 };
 
-const isSharedSongRecord = (payload: unknown): payload is SharedSongRecord => {
+const isSharedSongRecord = (payload: unknown): payload is IncomingSharedSongRecord => {
   if (!payload || typeof payload !== 'object') {
     return false;
   }
@@ -25,6 +27,7 @@ const isSharedSongRecord = (payload: unknown): payload is SharedSongRecord => {
     typeof record.videoId === 'string' &&
     typeof record.verifiedAt === 'number' &&
     typeof record.firstSeenAt === 'number' &&
+    (typeof record.updated === 'number' || typeof record.updated === 'undefined') &&
     typeof record.lastSeenAt === 'number' &&
     typeof record.sourceUserId === 'string' &&
     typeof record.sourceEventAt === 'number'
@@ -60,7 +63,10 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
         });
       }
 
-      await upsertSharedSong(env.SHARED_SONGS_KV, payload);
+      await upsertSharedSong(env.SHARED_SONGS_KV, {
+        ...payload,
+        updated: payload.updated ?? payload.firstSeenAt,
+      });
 
       return new Response(JSON.stringify({ ok: true }), {
         headers: responseHeaders,

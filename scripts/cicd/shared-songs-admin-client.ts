@@ -40,6 +40,7 @@ export interface SharedSongRecord {
   videoId: string;
   verifiedAt: number;
   firstSeenAt: number;
+  updated: number;
   lastSeenAt: number;
   sourceUserId: string;
   sourceEventAt: number;

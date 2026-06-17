@@ -149,6 +149,7 @@ test('shows and sorts shared songs by added date', async ({ page, request }) => 
   await pages.adminSharedSongsPage.signIn(adminPanelPassword);
   await pages.adminSharedSongsPage.search(currentExternalSongId);
   await expect(pages.adminSharedSongsPage.table.columnHeader('Added')).toBeVisible();
+  await expect(pages.adminSharedSongsPage.table.columnHeader('Updated')).toBeVisible();
   await expect(pages.adminSharedSongsPage.table.rowWithTitle(currentVisibleTitle)).toContainText('Jan 15 2025,');
   await expect(pages.adminSharedSongsPage.table.rowWithTitle(olderVisibleTitle)).toContainText('Jan 02 2024,');
 
@@ -266,6 +267,8 @@ test('admin edit save updates KV and returns to admin', async ({ page, request }
     externalSongId: string;
     songId: string;
     title: string;
+    firstSeenAt: number;
+    updated: number;
   }>;
   const editedSong = songs.find((song) => song.externalSongId === currentExternalSongId);
 
@@ -273,4 +276,6 @@ test('admin edit save updates KV and returns to admin', async ({ page, request }
     songId: editedSongId,
     title: sharedCloudflareSongFixture.title,
   });
+  expect(editedSong).toBeDefined();
+  expect(editedSong!.updated).toBeGreaterThan(editedSong!.firstSeenAt);
 });

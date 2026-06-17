@@ -44,6 +44,15 @@ const columns: MRT_ColumnDef<AdminSharedSong>[] = [
       return val && <span>{dayjs(val).format('MMM DD YYYY, HH:mm')}</span>;
     },
   },
+  {
+    accessorKey: 'updated',
+    header: 'Updated',
+    Cell: ({ cell }) => {
+      const val = cell.getValue<number>();
+
+      return val && <span>{dayjs(val).format('MMM DD YYYY, HH:mm')}</span>;
+    },
+  },
 ];
 
 export function SharedSongManagement({ password }: Props) {
