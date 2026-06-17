@@ -234,10 +234,8 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
         };
 
         if (isAdminProcessingQueue) {
+          await saveAdminSharedSong();
           const nextUrl = await getAdminProcessingQueueRedirect();
-          void saveAdminSharedSong().catch((error) => {
-            console.error('Failed to save admin shared song', error);
-          });
           navigate(nextUrl);
           return;
         }

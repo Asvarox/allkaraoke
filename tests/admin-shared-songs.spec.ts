@@ -47,29 +47,33 @@ const makeSharedSongTxtWithTitleAndVideo = (title: string, videoId: string) =>
 
 const seedQueueSongs = async (request: APIRequestContext) => {
   await removeStaleQueueFixtures(request);
-  const olderExternalSongId = `${currentExternalSongId}-oldest`;
-  const olderVisibleTitle = `${currentVisibleTitle} Oldest`;
-  const queueOlderFirstSeenAt = -Date.now() * 1000;
-  const queueCurrentFirstSeenAt = queueOlderFirstSeenAt + 1;
-  externalSongIdsToRemove.push(olderExternalSongId);
+  const oldestUpdatedExternalSongId = `${currentExternalSongId}-oldest`;
+  const oldestUpdatedVisibleTitle = `${currentVisibleTitle} Oldest`;
+  const queueCurrentFirstSeenAt = -Date.now() * 1000;
+  const queueOldestUpdatedFirstSeenAt = queueCurrentFirstSeenAt + 1;
+  const queueOldestUpdatedValue = queueCurrentFirstSeenAt + 10;
+  const queueCurrentUpdatedValue = queueCurrentFirstSeenAt + 20;
+  externalSongIdsToRemove.push(oldestUpdatedExternalSongId);
 
   await upsertSharedSong(request, {
     externalSongId: currentExternalSongId,
     title: currentVisibleTitle,
     songTxt: makeSharedSongTxtWithTitleAndVideo(currentVisibleTitle, sharedCloudflareSongFixture.videoId),
     firstSeenAt: queueCurrentFirstSeenAt,
+    updated: queueCurrentUpdatedValue,
     sourceUserId: 'admin-panel-e2e',
   });
   await upsertSharedSong(request, {
-    externalSongId: olderExternalSongId,
-    title: olderVisibleTitle,
-    songTxt: makeSharedSongTxtWithTitleAndVideo(olderVisibleTitle, 'Vueyx9TBEqE'),
+    externalSongId: oldestUpdatedExternalSongId,
+    title: oldestUpdatedVisibleTitle,
+    songTxt: makeSharedSongTxtWithTitleAndVideo(oldestUpdatedVisibleTitle, 'Vueyx9TBEqE'),
     videoId: 'Vueyx9TBEqE',
-    firstSeenAt: queueOlderFirstSeenAt,
+    firstSeenAt: queueOldestUpdatedFirstSeenAt,
+    updated: queueOldestUpdatedValue,
     sourceUserId: 'admin-panel-e2e',
   });
 
-  return { olderExternalSongId, olderVisibleTitle };
+  return { oldestUpdatedExternalSongId, oldestUpdatedVisibleTitle };
 };
 
 test.beforeEach(async ({ page, context, browser, request }, testInfo) => {
@@ -163,24 +167,30 @@ test('saving during oldest-first processing redirects to the next unverified sha
   request,
 }, testInfo) => {
   test.skip(testInfo.project.name !== 'chromium', 'Oldest-first queue tests share one KV namespace.');
-  const { olderExternalSongId, olderVisibleTitle } = await seedQueueSongs(request);
-  const syncedTitle = `${olderVisibleTitle} Synced`;
+  const { oldestUpdatedExternalSongId, oldestUpdatedVisibleTitle } = await seedQueueSongs(request);
+  const syncedTitle = `${oldestUpdatedVisibleTitle} Synced`;
 
   await page.goto('/admin?e2e-test');
 
   await pages.adminSharedSongsPage.signIn(adminPanelPassword);
   await pages.adminSharedSongsPage.processOldestUnverifiedSong();
-  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedCloudflareSongFixture.artist, olderVisibleTitle);
+  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
+    sharedCloudflareSongFixture.artist,
+    oldestUpdatedVisibleTitle,
+  );
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
-  const olderSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
-  expect(olderSongVideoSource).not.toBeNull();
+  const oldestUpdatedSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
+  expect(oldestUpdatedSongVideoSource).not.toBeNull();
   await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
   await pages.songEditMetadataPage.enterSongTitle(syncedTitle);
   await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
 
   await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedCloudflareSongFixture.artist, currentVisibleTitle);
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
-  await expect(pages.songEditSyncLyricsToVideoPage.videoPlayerSource).not.toHaveAttribute('src', olderSongVideoSource!);
+  await expect(pages.songEditSyncLyricsToVideoPage.videoPlayerSource).not.toHaveAttribute(
+    'src',
+    oldestUpdatedSongVideoSource!,
+  );
 
   await expect
     .poll(async () => {
@@ -189,7 +199,7 @@ test('saving during oldest-first processing redirects to the next unverified sha
       });
       const songs = (await response.json()) as Array<{ externalSongId: string; title: string }>;
 
-      return songs.find((song) => song.externalSongId === olderExternalSongId)?.title;
+      return songs.find((song) => song.externalSongId === oldestUpdatedExternalSongId)?.title;
     })
     .toBe(syncedTitle);
 
@@ -203,14 +213,17 @@ test('deleting during oldest-first processing redirects to the next unverified s
   request,
 }, testInfo) => {
   test.skip(testInfo.project.name !== 'chromium', 'Oldest-first queue tests share one KV namespace.');
-  const { olderExternalSongId, olderVisibleTitle } = await seedQueueSongs(request);
+  const { oldestUpdatedExternalSongId, oldestUpdatedVisibleTitle } = await seedQueueSongs(request);
   page.once('dialog', (dialog) => dialog.accept());
 
   await page.goto('/admin?e2e-test');
 
   await pages.adminSharedSongsPage.signIn(adminPanelPassword);
   await pages.adminSharedSongsPage.processOldestUnverifiedSong();
-  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(sharedCloudflareSongFixture.artist, olderVisibleTitle);
+  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
+    sharedCloudflareSongFixture.artist,
+    oldestUpdatedVisibleTitle,
+  );
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
   await pages.songEditSyncLyricsToVideoPage.deleteAdminSharedSong();
 
@@ -223,13 +236,13 @@ test('deleting during oldest-first processing redirects to the next unverified s
       });
       const songs = (await response.json()) as Array<{ externalSongId: string }>;
 
-      return songs.some((song) => song.externalSongId === olderExternalSongId);
+      return songs.some((song) => song.externalSongId === oldestUpdatedExternalSongId);
     })
     .toBe(false);
 
   await page.goto('/admin?e2e-test');
-  await pages.adminSharedSongsPage.search(olderVisibleTitle);
-  await expect(pages.adminSharedSongsPage.table.rowWithTitle(olderVisibleTitle)).not.toBeVisible();
+  await pages.adminSharedSongsPage.search(oldestUpdatedVisibleTitle);
+  await expect(pages.adminSharedSongsPage.table.rowWithTitle(oldestUpdatedVisibleTitle)).not.toBeVisible();
 });
 
 test('deletes a shared song and refetches the list', async ({ page }) => {

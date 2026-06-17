@@ -37,6 +37,12 @@ export default function Edit() {
 
   const adminSharedSongExternalId = isAdminEdit && externalSongId ? externalSongId : undefined;
 
+  const getAdminProcessingQueueRedirect = async (password: string) => {
+    const songs = await listAdminSharedSongs(password);
+
+    return getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId!);
+  };
+
   const deleteAdminSong = async () => {
     if (!adminSharedSongExternalId) return;
     const proceed = global.confirm('Remove this shared song from Cloudflare KV?');
@@ -47,12 +53,8 @@ export default function Edit() {
       const password = getAdminPassword();
 
       if (isAdminProcessingQueue) {
-        const songs = await listAdminSharedSongs(password);
-        const nextUrl = getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId);
-
-        void deleteAdminSharedSong(password, adminSharedSongExternalId).catch((error) => {
-          console.error('Failed to delete admin shared song', error);
-        });
+        await deleteAdminSharedSong(password, adminSharedSongExternalId);
+        const nextUrl = await getAdminProcessingQueueRedirect(password);
         navigate(nextUrl);
         return;
       }

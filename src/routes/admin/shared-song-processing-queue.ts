@@ -6,9 +6,7 @@ export const getOldestAdminSharedSong = (
   songs: AdminSharedSong[],
   currentExternalSongId?: string,
 ): AdminSharedSong | undefined =>
-  [...songs]
-    .filter((song) => song.externalSongId !== currentExternalSongId)
-    .sort((a, b) => a.firstSeenAt - b.firstSeenAt)[0];
+  [...songs].filter((song) => song.externalSongId !== currentExternalSongId).sort((a, b) => a.updated - b.updated)[0];
 
 export const buildAdminSharedSongProcessingUrl = (externalSongId: string, processQueue = false) => {
   const searchParams = new URLSearchParams({
