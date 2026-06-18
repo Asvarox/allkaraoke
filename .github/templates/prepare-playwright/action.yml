@@ -19,17 +19,17 @@ runs:
       shell: bash
       name: 'Disable installing package docs'
 
-    - uses: actions/cache@v5
-      id: playwright-cache
-      with:
-        path: |
-          ~/.cache/ms-playwright
-        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ inputs.project }}
-        restore-keys: |
-          ${{ runner.os }}-playwright-${{ inputs.project }}
-    - run: pnpm playwright install --with-deps chromium ${{ inputs.project }}
-      if: steps.playwright-cache.outputs.cache-hit != 'true'
-      shell: bash
-    - run: pnpm playwright install-deps ${{ inputs.project }}
-      if: steps.playwright-cache.outputs.cache-hit == 'true'
-      shell: bash
+    # - uses: actions/cache@v5
+    #   id: playwright-cache
+    #   with:
+    #     path: |
+    #       ~/.cache/ms-playwright
+    #     key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ inputs.project }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-playwright-${{ inputs.project }}
+    # - run: pnpm playwright install --with-deps chromium ${{ inputs.project }}
+    #   if: steps.playwright-cache.outputs.cache-hit != 'true'
+    #   shell: bash
+    # - run: pnpm playwright install-deps ${{ inputs.project }}
+    #   if: steps.playwright-cache.outputs.cache-hit == 'true'
+    #   shell: bash

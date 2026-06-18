@@ -59,7 +59,7 @@ jobs:
         uses: './.github/templates/run-playwright'
         with:
           project: '${{ matrix.browser }}'
-          packagescript: 'e2e'
+          config: 'playwright.config.ts'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
   e2e-tests-add-summary:
@@ -94,12 +94,13 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'test-ct'
+          config: 'playwright-ct.config.mts'
       - name: Run Component Tests and update snapshots
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'test-ct -u'
+          config: 'playwright-ct.config.mts'
+          updateSnapshots: 'true'
       - name: Auto commit updated snapshots
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v7

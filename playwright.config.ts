@@ -118,18 +118,18 @@ const config: PlaywrightTestConfig = {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
           command: process.env.CI
             ? 'wrangler dev --port 3010 --local --local-protocol=https'
-            : 'pnpm build:serve:e2e:fast',
+            : 'VITE_APP_PRERENDER=true vite build && vite preview --port 3010',
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,
         }
       : undefined,
-    {
-      command: 'pnpm peerjs',
-      port: 3001,
-      timeout: 60_000 * 3,
-      reuseExistingServer: true,
-    },
+    // {
+    //   command: 'pnpm peerjs',
+    //   port: 3001,
+    //   timeout: 60_000 * 3,
+    //   reuseExistingServer: true,
+    // },
   ].filter(Boolean) as PlaywrightTestConfig['webServer'],
 };
 
