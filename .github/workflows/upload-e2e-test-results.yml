@@ -17,7 +17,7 @@ jobs:
         with:
           github-token: ${{ github.token }}
           path: all-blob-reports
-          pattern: test-results-blob-e2e-*
+          pattern: test-results-blob-playwright.*
           merge-multiple: true
           run-id: ${{ github.event.workflow_run.id }}
       - name: Check if there are any reports to merge
