@@ -27,13 +27,9 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
-      with:
-        args: >-
-          npx playwright test -c ${{ inputs.config }}
-          ${{ inputs.updateSnapshots == 'true' && '-u' || '' }}
-          --shard=${{ inputs.shard }}/${{ inputs.shardTotal }}
-          --project=${{ inputs.project }}
+    - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }}
+      shell: bash
+      name: 'Run Playwright tests'
     - uses: actions/upload-artifact@v4
       if: failure()
       with:

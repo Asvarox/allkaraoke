@@ -42,19 +42,14 @@ jobs:
     env:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+    container:
+      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - name: Prepare Playwright
-        uses: './.github/templates/prepare-playwright'
-        with:
-          project: '${{ matrix.browser }}'
-        timeout-minutes: 5
-      - uses: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
-        with:
-          args: >-
-            VITE_APP_PRERENDER=true npx vite build
+      - name: Build app
+        run: pnpm build
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
       - name: Run E2E tests
@@ -81,6 +76,8 @@ jobs:
             ).write();
 
   ct-tests-run:
+    container:
+      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
@@ -89,9 +86,6 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - name: Prepare Playwright
-        uses: './.github/templates/prepare-playwright'
-        timeout-minutes: 5
       - name: Run Component Tests
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: './.github/templates/run-playwright'
