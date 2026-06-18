@@ -155,7 +155,7 @@ class PlayerState {
     this.gameState.getSingSetup()!.players.find((player) => player.number === this.number)!.track;
   public getTrack = () => {
     if (this.gameState.isMergedTrack()) {
-      return this.gameState.getSong()?.mergedTrack!;
+      return this.gameState.getSong()!.mergedTrack!;
     } else {
       return this.gameState.getSong()!.tracks[this.getTrackIndex()];
     }

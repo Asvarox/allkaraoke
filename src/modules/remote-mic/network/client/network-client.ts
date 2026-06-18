@@ -139,7 +139,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       events.karaokeConnectionStatusChange.dispatch('connecting');
     }
     this.transport.connect(
-      this.clientId,
+      this.clientId!,
       this.roomId,
       () => {
         this.connectToServer(lcRoomId, name, silent);
@@ -213,14 +213,14 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       id: this.clientId!,
       silent,
       lag: RemoteMicrophoneLagSetting.get(),
-    } as NetworkMessages);
+    });
     this.ping();
     global?.addEventListener('beforeunload', this.disconnect);
 
     // Wire subscription manager to send rpc-sub/rpc-unsub via the current transport
     subscriptionManager.setSendFunctions(
-      (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel } as NetworkMessages),
-      (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel } as NetworkMessages),
+      (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel }),
+      (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel }),
     );
 
     this.transport!.addListener((data) => {
@@ -232,7 +232,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         dispatchClientCall(data.method, data.args);
       } else if (type === 'rpc-pub') {
         // Server pushed subscription data
-        subscriptionManager.handlePublish(data.channel as any, data.data);
+        subscriptionManager.handlePublish(data.channel, data.data);
       } else if (type === 'pong') {
         this.onPong();
       } else if (type === 'ping') {

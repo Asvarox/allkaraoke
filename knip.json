@@ -37,6 +37,10 @@
     "html-minifier",
     "@cloudflare/workers-types",
     "wrangler",
+    "eslint-plugin-no-only-tests",
+    "eslint-plugin-storybook",
+    "eslint-plugin-react-compiler",
+    "eslint-plugin-react-refresh",
     "serve"
   ],
   "ignoreExportsUsedInFile": true,

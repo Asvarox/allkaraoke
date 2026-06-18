@@ -19,6 +19,10 @@ declare namespace globalThis {
   }
 
   interface Navigator {
-    connection: any;
+    connection?: {
+      type: 'wifi' | 'cellular' | 'ethernet' | 'none' | 'unknown';
+      addEventListener?: (event: 'change', listener: () => void) => void;
+      removeEventListener?: (event: 'change', listener: () => void) => void;
+    };
   }
 }
