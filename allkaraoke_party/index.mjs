@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "a6620cedac7c730638b898b5383463cf70fe2add" };
+		e.SENTRY_RELEASE = { id: "fe53c823fd1b28ca4f9540d0e73e092c5c85b7fc" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e9edadc1-a5bd-4367-8346-7e278e65e699", e._sentryDebugIdIdentifier = "sentry-dbid-e9edadc1-a5bd-4367-8346-7e278e65e699");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8fe30bd0-5a11-415c-96ff-af215d55043f", e._sentryDebugIdIdentifier = "sentry-dbid-8fe30bd0-5a11-415c-96ff-af215d55043f");
 	} catch (e) {}
 })();
 var responseHeaders$3 = { "Content-Type": "application/json" };
@@ -29,21 +29,7 @@ var unauthorizedResponse = () => new Response(JSON.stringify({ error: "Unauthori
 var SHARED_SONG_KEY_PREFIX = "shared-song:";
 var INDEX_KEY = "shared-songs-index";
 var getStorageKey = (externalSongId) => `${SHARED_SONG_KEY_PREFIX}${externalSongId}`;
-var normalizeRecord = (record) => ({
-	...record,
-	updated: "updated" in record ? record.updated : record.firstSeenAt
-});
-var normalizeIndexEntry = (entry) => ({
-	externalSongId: "externalSongId" in entry ? entry.externalSongId : entry.songId,
-	songId: entry.songId,
-	artist: entry.artist,
-	title: entry.title,
-	language: entry.language,
-	videoId: entry.videoId,
-	firstSeenAt: "firstSeenAt" in entry ? entry.firstSeenAt : 0,
-	updated: ("updated" in entry ? entry.updated : void 0) ?? ("firstSeenAt" in entry ? entry.firstSeenAt : 0)
-});
-var getIndex = async (kvNamespace) => (await kvNamespace.get(INDEX_KEY, "json") ?? []).map(normalizeIndexEntry);
+var getIndex = async (kvNamespace) => await kvNamespace.get(INDEX_KEY, "json") ?? [];
 var addToIndex = async (kvNamespace, entry) => {
 	const nextIndex = [...(await getIndex(kvNamespace)).filter((song) => song.externalSongId !== entry.externalSongId), entry];
 	await kvNamespace.put(INDEX_KEY, JSON.stringify(nextIndex));
@@ -56,22 +42,20 @@ var listSharedSongs = async (kvNamespace) => {
 	return await getIndex(kvNamespace);
 };
 var getSharedSong = async (kvNamespace, externalSongId) => {
-	const record = await kvNamespace.get(getStorageKey(externalSongId), "json");
-	return record ? normalizeRecord(record) : null;
+	return kvNamespace.get(getStorageKey(externalSongId), "json");
 };
 var upsertSharedSong = async (kvNamespace, record) => {
-	const normalizedRecord = normalizeRecord(record);
-	const storageKey = getStorageKey(normalizedRecord.externalSongId);
-	await kvNamespace.put(storageKey, JSON.stringify(normalizedRecord));
+	const storageKey = getStorageKey(record.externalSongId);
+	await kvNamespace.put(storageKey, JSON.stringify(record));
 	await addToIndex(kvNamespace, {
-		externalSongId: normalizedRecord.externalSongId,
-		songId: normalizedRecord.songId,
-		artist: normalizedRecord.artist,
-		title: normalizedRecord.title,
-		language: normalizedRecord.language,
-		videoId: normalizedRecord.videoId,
-		firstSeenAt: normalizedRecord.firstSeenAt,
-		updated: normalizedRecord.updated
+		externalSongId: record.externalSongId,
+		songId: record.songId,
+		artist: record.artist,
+		title: record.title,
+		language: record.language,
+		videoId: record.videoId,
+		firstSeenAt: record.firstSeenAt,
+		updated: record.updated
 	});
 };
 var removeSharedSong = async (kvNamespace, externalSongId) => {
@@ -110,8 +94,7 @@ var updateSharedSong = async (kvNamespace, externalSongId, update) => {
 var regenerateIndex = async (kvNamespace) => {
 	const listResponse = await kvNamespace.list({ prefix: SHARED_SONG_KEY_PREFIX });
 	const indexEntries = (await Promise.all(listResponse.keys.map(async ({ name }) => {
-		const record = await kvNamespace.get(name, "json");
-		return record ? normalizeRecord(record) : null;
+		return kvNamespace.get(name, "json");
 	}))).filter((record) => record !== null).map(({ externalSongId, songId, artist, title, language, videoId, firstSeenAt, updated }) => ({
 		externalSongId,
 		songId,
@@ -335,7 +318,7 @@ var responseHeaders = { "Content-Type": "application/json" };
 var isSharedSongRecord = (payload) => {
 	if (!payload || typeof payload !== "object") return false;
 	const record = payload;
-	return typeof record.externalSongId === "string" && typeof record.songId === "string" && typeof record.songTxt === "string" && typeof record.artist === "string" && typeof record.title === "string" && Array.isArray(record.language) && typeof record.videoId === "string" && typeof record.verifiedAt === "number" && typeof record.firstSeenAt === "number" && (typeof record.updated === "number" || typeof record.updated === "undefined") && typeof record.lastSeenAt === "number" && typeof record.sourceUserId === "string" && typeof record.sourceEventAt === "number";
+	return typeof record.externalSongId === "string" && typeof record.songId === "string" && typeof record.songTxt === "string" && typeof record.artist === "string" && typeof record.title === "string" && Array.isArray(record.language) && typeof record.videoId === "string" && typeof record.verifiedAt === "number" && typeof record.firstSeenAt === "number" && typeof record.updated === "number" && typeof record.lastSeenAt === "number" && typeof record.sourceUserId === "string" && typeof record.sourceEventAt === "number";
 };
 var onRequest$1 = async ({ request, env }) => {
 	const expectedToken = env.SHARED_SONGS_ADMIN_TOKEN;
@@ -355,10 +338,7 @@ var onRequest$1 = async ({ request, env }) => {
 				status: 400,
 				headers: responseHeaders
 			});
-			await upsertSharedSong(env.SHARED_SONGS_KV, {
-				...payload,
-				updated: payload.updated ?? payload.firstSeenAt
-			});
+			await upsertSharedSong(env.SHARED_SONGS_KV, payload);
 			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders });
 		}
 		if (request.method === "DELETE") {
