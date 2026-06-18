@@ -4,13 +4,18 @@ import { PlayerRef } from '../player';
 
 export default function useCurrentSectionIndex(
   sections: Section[],
-  player: PlayerRef,
+  player: PlayerRef | null,
   beatLength: number,
   gap: number,
 ) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(-1);
 
   useEffect(() => {
+    if (!player) {
+      setCurrentSectionIndex(-1);
+      return;
+    }
+
     const interval = setInterval(async () => {
       const currentTime = await player.getCurrentTime();
       const currentBeat = (currentTime - gap) / beatLength;
