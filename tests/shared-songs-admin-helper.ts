@@ -50,7 +50,6 @@ export const upsertSharedSong = async (
 ) => {
   const now = Date.now();
   const firstSeenAt = overrides.firstSeenAt ?? now;
-  const updated = overrides.updated ?? firstSeenAt;
   const payload = {
     externalSongId,
     songId: sharedCloudflareSongFixture.songId,
@@ -61,7 +60,7 @@ export const upsertSharedSong = async (
     videoId: sharedCloudflareSongFixture.videoId,
     verifiedAt: now,
     firstSeenAt,
-    updated,
+    updated: overrides.updated ?? now,
     lastSeenAt: now,
     sourceUserId,
     sourceEventAt: now,

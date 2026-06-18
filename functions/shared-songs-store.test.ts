@@ -68,50 +68,12 @@ describe('sharedSongsStore KV behavior', () => {
     ]);
   });
 
-  it('backfills updated from firstSeenAt for legacy records and index entries', async () => {
+  it('regenerates the index from stored records', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    const { updated: _, ...legacyRecord } = generateSharedSongRecord({
-      externalSongId: 'external-1',
-      firstSeenAt: 123,
-    });
-
-    await kv.put('shared-song:external-1', JSON.stringify(legacyRecord));
     await kv.put(
-      'shared-songs-index',
-      JSON.stringify([
-        {
-          externalSongId: 'external-1',
-          songId: 'song-1',
-          artist: 'Artist',
-          title: 'Title',
-          language: ['English'],
-          videoId: 'koBUXESJZ8g',
-          firstSeenAt: 123,
-        },
-      ]),
+      'shared-song:external-1',
+      JSON.stringify(generateSharedSongRecord({ externalSongId: 'external-1', firstSeenAt: 123, updated: 456 })),
     );
-
-    await expect(getSharedSong(kv, 'external-1')).resolves.toMatchObject({
-      externalSongId: 'external-1',
-      firstSeenAt: 123,
-      updated: 123,
-    });
-    await expect(listSharedSongs(kv)).resolves.toEqual([
-      expect.objectContaining({
-        externalSongId: 'external-1',
-        firstSeenAt: 123,
-        updated: 123,
-      }),
-    ]);
-  });
-
-  it('regenerates the index with first seen timestamps', async () => {
-    const kv = workerEnv.SHARED_SONGS_KV;
-    const { updated: _, ...legacyRecord } = generateSharedSongRecord({
-      externalSongId: 'external-1',
-      firstSeenAt: 123,
-    });
-    await kv.put('shared-song:external-1', JSON.stringify(legacyRecord));
 
     await regenerateIndex(kv);
 
@@ -119,7 +81,7 @@ describe('sharedSongsStore KV behavior', () => {
       expect.objectContaining({
         externalSongId: 'external-1',
         firstSeenAt: 123,
-        updated: 123,
+        updated: 456,
       }),
     ]);
   });
