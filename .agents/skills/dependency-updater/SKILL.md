@@ -92,6 +92,11 @@ User Request
 │ Step 7: FINALIZE                                    │
 │ • Run install command                               │
 │ • Run security audit                                │
+├─────────────────────────────────────────────────────┤
+│ Step 8: DOCUMENT                                    │
+│ • Update docs/dependency-updates-report.md          │
+│ • Explain every override/resolution added           │
+│ • Record unresolved audit or peer follow-up         │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -121,6 +126,18 @@ taze -r  # recursive
 npm audit
 npm audit fix
 ```
+
+### Documentation Requirement
+
+For Node.js projects that add or keep `pnpm.overrides`, `overrides`, `resolutions`, or other transitive pins, you MUST update `docs/dependency-updates-report.md` as part of the same task.
+
+That report must include:
+
+- only the overrides/resolutions that are currently present
+- for each one: why it is needed
+- for each one: the installed dependency chain and versions that prevent a clean upstream update
+
+If the file does not exist yet, create it.
 
 ### Python
 
@@ -226,6 +243,7 @@ When dependencies are broken, run diagnosis:
 | **Security Vuln** | `npm audit` shows issues | `npm audit fix` or manual update |
 | **Unused Deps** | Bloated bundle | Run `depcheck` (Node) or equivalent |
 | **Duplicate Deps** | Multiple versions installed | Run `npm dedupe` or equivalent |
+| **Temporary Override Drift** | Nobody remembers why an override exists | Update `docs/dependency-updates-report.md` in the same change |
 
 ### Emergency Fixes
 
@@ -308,6 +326,7 @@ After updates:
 - [ ] Lock file updated
 - [ ] Install command ran
 - [ ] Security audit passed (or issues noted)
+- [ ] `docs/dependency-updates-report.md` updated if overrides or resolutions remain, and it only lists the currently present overrides/resolutions with rationale and dependency chains
 
 ---
 
