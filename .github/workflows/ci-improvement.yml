@@ -51,8 +51,10 @@ jobs:
         with:
           project: '${{ matrix.browser }}'
         timeout-minutes: 5
-      - name: Build app
-        run: pnpm build
+      - uses: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
+        with:
+          args: >-
+            VITE_APP_PRERENDER=true npx vite build
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
       - name: Run E2E tests
