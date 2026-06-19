@@ -10379,6 +10379,36 @@
     "local": false
   },
   {
+    "id": "arctic-monkeys-cornerstone",
+    "title": "Cornerstone",
+    "artist": "Arctic Monkeys",
+    "video": "LIQz6zZi7R0",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.70000000000675,
+    "gap": 8175.2941176470595,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-19T00:46:38.009Z",
+    "genre": "Alternative rock, Garage rock",
+    "realBpm": 169,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5883,
+    "tracksCount": 1,
+    "search": "arcticmonkeyscornerstone",
+    "local": false
+  },
+  {
     "id": "arctic-monkeys-crying-lightning",
     "title": "Crying Lightning",
     "artist": "Arctic Monkeys",
@@ -45041,6 +45071,33 @@
     "shortId": 1278,
     "tracksCount": 1,
     "search": "disneyskimpossiblechristinamiliancallmebeepme",
+    "local": false
+  },
+  {
+    "id": "disneys-la-sirenita-bajo-el-mar",
+    "title": "Bajo el Mar",
+    "artist": "Disney’s La Sirenita",
+    "video": "DDSerADikPg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 399.79999999999995,
+    "gap": 8807.5,
+    "year": "1989",
+    "lastUpdate": "2026-06-19T00:46:38.011Z",
+    "genre": "Soundtrack",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "carcalina",
+    "sourceUrl": "https://www.youtube.com/watch?v=PmxDgZVenJ8&list=RDPmxDgZVenJ8&start_radio=1",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5884,
+    "tracksCount": 1,
+    "search": "disneyslasirenitabajoelmar",
     "local": false
   },
   {
@@ -143955,6 +144012,34 @@
     "shortId": 4033,
     "tracksCount": 1,
     "search": "soundgardenblackholesun",
+    "local": false
+  },
+  {
+    "id": "soundgarden-burden-in-my-hand",
+    "title": "Burden In My Hand",
+    "artist": "Soundgarden",
+    "video": "XmIqIVxUuKs",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.20000000000005,
+    "gap": 11630.238976775496,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-19T00:46:38.003Z",
+    "genre": "Rock",
+    "realBpm": 183,
+    "volume": 1,
+    "author": "Unknown",
+    "duration": 301,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5882,
+    "tracksCount": 1,
+    "search": "soundgardenburdeninmyhand",
     "local": false
   },
   {
