@@ -29,7 +29,7 @@ jobs:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
       SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
       SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
-      SHARED_SONGS_SUMMARY_PATH: ${{ runner.temp }}/sync-shared-songs-summary.json
+      SHARED_SONGS_SUMMARY_PATH: ${{ github.workspace }}/sync-shared-songs-summary.json
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
