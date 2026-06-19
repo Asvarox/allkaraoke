@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import { writeFile } from 'node:fs/promises';
 import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
@@ -20,6 +21,13 @@ type PostHogEventRow = [
   createdAt: string,
   userId: string | null,
 ];
+
+type AnalyzedSongStatus = 'ADDED' | 'BROKEN' | 'SKIPPED';
+
+type AnalyzedSongSummary = {
+  id: string;
+  status: AnalyzedSongStatus;
+};
 
 const isValidYouTubeId = (videoId?: string) => {
   if (!videoId) {
@@ -114,6 +122,8 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   const { requestPostHog } = require('../utils.cjs');
   const builtInSongIds = new Set(currentSongs.map((song) => song.id));
   const builtInVideoIds = new Set(currentSongs.map((song) => song.video).filter((video): video is string => !!video));
+  const summaryOutputPath = process.env.SHARED_SONGS_SUMMARY_PATH;
+  const analyzedSongs = new Map<string, AnalyzedSongSummary>();
 
   const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
 
@@ -140,18 +150,6 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   }
   const cursor = sanitizeCursor(cursorArg.trim() || undefined);
 
-  const response = await requestPostHog('query', {
-    method: 'POST',
-    body: JSON.stringify({
-      query: {
-        kind: 'HogQLQuery',
-        query: buildQuery({ userIds, daysFrom, daysTo, cursor }),
-      },
-    }),
-  });
-
-  const durationProbeClient = await createYoutubeDurationProbeClient(8000);
-
   let processedCount = 0;
   let upsertedCount = 0;
   const removedCount = 0;
@@ -159,10 +157,36 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   let discardedByDurationCount = 0;
   let skippedExistingInLibraryCount = 0;
   let maxCreatedAt = cursor ?? '';
+  let durationProbeClient: Awaited<ReturnType<typeof createYoutubeDurationProbeClient>> | undefined;
+
+  const rememberSongStatus = (id: string | undefined, status: AnalyzedSongStatus) => {
+    const normalizedId = id?.trim();
+    if (!normalizedId) {
+      return;
+    }
+
+    analyzedSongs.set(normalizedId, {
+      id: normalizedId,
+      status,
+    });
+  };
 
   try {
+    const response = await requestPostHog('query', {
+      method: 'POST',
+      body: JSON.stringify({
+        query: {
+          kind: 'HogQLQuery',
+          query: buildQuery({ userIds, daysFrom, daysTo, cursor }),
+        },
+      }),
+    });
+
+    durationProbeClient = await createYoutubeDurationProbeClient(8000);
+
     for (const [songTxt, songId, eventName, createdAt, userId] of response.results as PostHogEventRow[]) {
       processedCount += 1;
+      let currentSongId = songId ?? undefined;
 
       if (!maxCreatedAt || new Date(createdAt).getTime() > new Date(maxCreatedAt).getTime()) {
         maxCreatedAt = createdAt;
@@ -181,13 +205,16 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
         }
 
         if (!songTxt) {
+          rememberSongStatus(currentSongId, 'BROKEN');
           console.warn('Skipping share-song event with missing songTxt', { songId, createdAt, userId });
           continue;
         }
 
         const { song, validationErrors } = validateSong(songTxt);
+        currentSongId = song.id || currentSongId;
         if (!song.id || validationErrors.length) {
           failedCount += 1;
+          rememberSongStatus(currentSongId, 'BROKEN');
           continue;
         }
 
@@ -195,6 +222,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
         if (builtInSongIds.has(song.id) || (song.video && builtInVideoIds.has(song.video))) {
           skippedExistingInLibraryCount += 1;
+          rememberSongStatus(song.id, 'SKIPPED');
           continue;
         }
 
@@ -212,6 +240,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
         if (!lyricsFitWithinVideoDuration(song, maxAllowedDurationSeconds)) {
           failedCount += 1;
           discardedByDurationCount += 1;
+          rememberSongStatus(song.id, 'BROKEN');
           console.warn('Discarding shared song because lyrics exceed video duration cap', {
             songId: song.id,
             loadedVideoDurationSeconds,
@@ -239,28 +268,41 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
 
         await upsertSharedSongRecord(record);
         upsertedCount += 1;
+        rememberSongStatus(song.id, 'ADDED');
       } catch (error) {
         failedCount += 1;
+        rememberSongStatus(currentSongId, 'BROKEN');
         console.warn('Failed to process shared song event', { songId, eventName, createdAt, error });
       }
     }
   } finally {
-    await durationProbeClient.close();
-  }
+    if (durationProbeClient) {
+      try {
+        await durationProbeClient.close();
+      } catch (error) {
+        console.warn('Failed to close YouTube duration probe client', { error });
+      }
+    }
 
-  console.log(
-    JSON.stringify(
-      {
-        processedCount,
-        upsertedCount,
-        removedCount,
-        failedCount,
-        discardedByDurationCount,
-        skippedExistingInLibraryCount,
-        maxCreatedAt,
-      },
-      null,
-      2,
-    ),
-  );
+    const summary = {
+      processedCount,
+      upsertedCount,
+      removedCount,
+      failedCount,
+      discardedByDurationCount,
+      skippedExistingInLibraryCount,
+      maxCreatedAt,
+      analyzedSongs: Array.from(analyzedSongs.values()),
+    };
+
+    if (summaryOutputPath) {
+      try {
+        await writeFile(summaryOutputPath, JSON.stringify(summary, null, 2));
+      } catch (error) {
+        console.warn('Failed to write shared songs summary output', { summaryOutputPath, error });
+      }
+    }
+
+    console.log(JSON.stringify(summary, null, 2));
+  }
 })();

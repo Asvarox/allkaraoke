@@ -29,6 +29,7 @@ jobs:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
       SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
       SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      SHARED_SONGS_SUMMARY_PATH: ${{ runner.temp }}/sync-shared-songs-summary.json
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
@@ -42,4 +43,28 @@ jobs:
           CURSOR="${{ github.event.inputs.cursor }}"
 
           pnpm ts-node scripts/cicd/github-action-upload-shared-songs-to-cloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+      - name: Regenerate shared songs index
+        run: |
           pnpm ts-node scripts/cicd/regenerate-shared-songs-index.ts "${{ secrets.SHARED_SONGS_ADMIN_URL }}"
+      - name: Add sync shared songs summary
+        if: ${{ always() }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const summaryPath = process.env.SHARED_SONGS_SUMMARY_PATH;
+            let analyzedSongs = [];
+
+            if (summaryPath && fs.existsSync(summaryPath)) {
+              const parsedSummary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+              analyzedSongs = Array.isArray(parsedSummary.analyzedSongs) ? parsedSummary.analyzedSongs : [];
+            }
+
+            const songLines = analyzedSongs.length
+              ? analyzedSongs.map(({ id, status }) => `* ${id} - ${status}`).join('\n')
+              : '* No songs analyzed';
+            const markdown = ['# Shared songs sync summary', '', songLines].join('\n');
+
+            await core.summary
+              .addRaw(markdown)
+              .write();
