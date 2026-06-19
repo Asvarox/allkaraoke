@@ -9,11 +9,7 @@ import { VideoState } from '~/modules/elements/video-player/index';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
-import {
-  getFirstNoteFromSection,
-  getFirstNoteStartFromSections,
-  getLastNotesSection,
-} from '~/modules/songs/utils/notes-selectors';
+import { getFirstNoteStartFromSections } from '~/modules/songs/utils/notes-selectors';
 import addHeadstart from '~/modules/songs/utils/process-song/add-headstart';
 import normaliseGap from '~/modules/songs/utils/process-song/normalise-gap';
 import normaliseLyricSpaces from '~/modules/songs/utils/process-song/normalise-lyric-spaces';
@@ -21,8 +17,10 @@ import normaliseSectionPaddings from '~/modules/songs/utils/process-song/normali
 import AdjustPlayback from '~/routes/convert/steps/sync-lyrics-to-video/components/adjust-playback';
 import EditSection, { ChangeRecord } from '~/routes/convert/steps/sync-lyrics-to-video/components/edit-section';
 import ManipulateBpm from '~/routes/convert/steps/sync-lyrics-to-video/components/manipulate-bpm';
+import SectionSlider from '~/routes/convert/steps/sync-lyrics-to-video/components/section-slider';
 import ShiftGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-gap';
 import ShiftVideoGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-video-gap';
+import useCurrentSectionIndex from '~/routes/game/singing/hooks/use-current-section-index';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import ShortcutIndicator from './components/shortcut-indicator';
 
@@ -145,6 +143,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   );
 
   const beatLength = getSongBeatLength(newSong);
+  const notesSections = useMemo(() => newSong.tracks[0].sections.filter(isNotesSection), [newSong]);
+  const currentSectionIndex = useCurrentSectionIndex(notesSections, player.current, beatLength, newSong.gap);
 
   useEffect(() => {
     if (!visible) {
@@ -164,19 +164,24 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   };
 
   const seekToFirstSection = (padding?: seconds) => {
-    const firstNote = getFirstNoteFromSection(newSong.tracks[0].sections);
-    seekToNote(firstNote, padding);
+    seekToSection(0, padding);
+  };
+
+  const seekToSection = (sectionIndex: number, padding?: seconds) => {
+    if (notesSections.length === 0) return;
+
+    const finalSectionIndex = Math.max(Math.min(sectionIndex, notesSections.length - 1), 0);
+    seekToNote(notesSections[finalSectionIndex].notes[0], padding);
   };
 
   const seekToSubsequentSection = async (direction: -1 | 1, padding?: seconds) => {
     if (!player.current) return;
     const currentBeat = getCurrentBeat(await player.current!.getCurrentTime!(), beatLength, newSong.gap);
-    const notesSections = newSong.tracks[0].sections.filter(isNotesSection);
     const targetSectionIndex = notesSections.filter((section) => section.start <= currentBeat).length - 1 + direction;
 
     const finalSectionIndex = Math.max(Math.min(targetSectionIndex, notesSections.length - 1), 0);
 
-    seekToNote(notesSections[finalSectionIndex].notes[0], padding);
+    seekToSection(finalSectionIndex, padding);
   };
 
   const seekToNextSection = (padding?: seconds) => {
@@ -187,8 +192,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   };
 
   const seekToLastSection = (padding?: seconds) => {
-    const lastNoteStart = getLastNotesSection(newSong.tracks[0].sections)?.notes[0];
-    seekToNote(lastNoteStart, padding);
+    seekToSection(notesSections.length - 1, padding);
   };
 
   useHotkeys(
@@ -287,7 +291,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <AdjustPlayback player={player.current} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
             <div className="flex justify-between">
               <ShortcutIndicator shortcutKey="q">
-                <Button variant="outlined" size="small" onClick={() => seekToFirstSection()}>
+                <Button variant="outlined" size="small" onClick={() => seekToSection(0)}>
                   First section
                 </Button>
               </ShortcutIndicator>
@@ -307,6 +311,11 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 </Button>
               </ShortcutIndicator>
             </div>
+            <SectionSlider
+              notesSections={notesSections}
+              currentSectionIndex={currentSectionIndex}
+              onSeekSection={seekToSection}
+            />
           </>
         )}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
