@@ -4,9 +4,9 @@ name: run-playwright
 description: 'Runs and stores artifacts of Playwright'
 
 inputs:
-  packagescript:
+  config:
     required: true
-    description: 'Script from package.json to run'
+    description: 'Playwright config filename'
   shard:
     required: false
     description: 'which shard to run'
@@ -19,21 +19,26 @@ inputs:
     required: false
     description: 'Playwright project (browser)'
     default: 'chromium'
+  updateSnapshots:
+    required: false
+    description: 'Whether to pass -u to Playwright'
+    default: 'false'
 
 runs:
   using: 'composite'
   steps:
-    - run: pnpm ${{ inputs.packagescript }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }}
+    - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }}
       shell: bash
+      name: 'Run Playwright tests'
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: test-results-blob-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
+        name: test-results-blob-${{ inputs.config }}-${{ inputs.project }}-${{ inputs.shard }}
         path: |
           blob-report
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: test-results-report-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
+        name: test-results-report-${{ inputs.config }}-${{ inputs.project }}-${{ inputs.shard }}
         path: |
           playwright-report

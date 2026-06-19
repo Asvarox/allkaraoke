@@ -74,7 +74,7 @@ export class NetworkServer {
           } else if (type === 'unregister') {
             RemoteMicManager.removeRemoteMic(sender.peer);
           } else if (type === 'rpc-sub') {
-            RemoteMicManager.addSubscription(sender.peer, event.channel as ChannelName);
+            RemoteMicManager.addSubscription(sender.peer, event.channel);
             // If there is a cached value for this channel, push it immediately to the new subscriber
             // so they don't have to wait for the next change to receive the current state.
             if (event.channel in this.channelLastValues) {
@@ -85,7 +85,7 @@ export class NetworkServer {
               } as NetworkMessages);
             }
           } else if (type === 'rpc-unsub') {
-            RemoteMicManager.removeSubscription(sender.peer, event.channel as ChannelName);
+            RemoteMicManager.removeSubscription(sender.peer, event.channel);
           } else if (type === 'ping') {
             sender.send({ t: 'pong' } as NetworkMessages);
           } else if (type === 'pong') {

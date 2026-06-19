@@ -68,7 +68,7 @@ class PlayersManager {
   private minPlayerNumber = 2;
 
   private players: PlayerEntity[] = [];
-  private requestingPromise: Promise<any> | null = null;
+  private requestingPromise: Promise<boolean> | null = null;
   public constructor() {
     const storedPlayers = storage.session.getItem<ReturnType<PlayerEntity['toJSON']>[]>(SELECTED_INPUTS_KEY) ?? [];
     if (storedPlayers.length) {

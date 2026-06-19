@@ -34,10 +34,8 @@ jobs:
           fetch-depth: 100
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - name: Prepare Playwright
-        uses: './.github/templates/prepare-playwright'
-        with:
-          project: 'chromium'
+      - run: npx playwright install chromium
+        timeout-minutes: 3
       - name: Get songs
         if: github.event_name == 'workflow_dispatch'
         run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ github.event.inputs.user_id || secrets.DEFAULT_IMPORT_USER_IDS }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"

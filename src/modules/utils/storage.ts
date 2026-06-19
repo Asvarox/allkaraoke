@@ -2,7 +2,7 @@ const abstractStorage = (type: typeof sessionStorage | typeof localStorage) => (
   setItem: <T>(key: string, value: T) => {
     type.setItem(key, JSON.stringify(value));
   },
-  getItem: <T = any>(key: string): T | null => {
+  getItem: <T = string>(key: string): T | null => {
     const val = type.getItem(key);
 
     if (val === null) {

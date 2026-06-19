@@ -1,3 +1,5 @@
+import { SubscriptionChannels } from '../client/subscriptions';
+
 /** Context passed to every server-side handler, scoped to the calling peer. */
 export interface RpcContext {
   senderId: string;
@@ -65,20 +67,20 @@ export interface RpcCall {
 /** Client → Server: subscribe to a named push channel. */
 export interface RpcSubscribe {
   t: 'rpc-sub';
-  channel: string;
+  channel: keyof SubscriptionChannels;
 }
 
 /** Server → Client: push updated data to all subscribers of a channel. */
 export interface RpcPublish {
   t: 'rpc-pub';
-  channel: string;
-  data: any;
+  channel: keyof SubscriptionChannels;
+  data: SubscriptionChannels[keyof SubscriptionChannels];
 }
 
 /** Client → Server: unsubscribe from a named push channel. */
 export interface RpcUnsubscribe {
   t: 'rpc-unsub';
-  channel: string;
+  channel: keyof SubscriptionChannels;
 }
 
 export type RpcMessages = RpcRequest | RpcResponse | RpcCall | RpcSubscribe | RpcPublish | RpcUnsubscribe;

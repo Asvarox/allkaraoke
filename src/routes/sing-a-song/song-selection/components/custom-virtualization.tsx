@@ -162,7 +162,8 @@ export function CustomVirtualization<T>(props: Props<T>) {
     scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
       const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
       if (item) {
-        const scrollPos = (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
+        const scrollPos =
+          (props.itemHeight + (align === 'center' ? (viewportElementRef.current?.clientHeight ?? 0) : 0)) / 2;
         viewportElementRef.current?.scrollTo({ top: (props.topPadding ?? 0) + item.bottom - scrollPos, behavior });
       }
     },
