@@ -1,0 +1,310 @@
+#ARTIST:Karel Gott und Darinka
+#TITLE:Fang das Licht
+#CREATOR:Su-Metal
+#BPM:232,86
+#YEAR:1985
+#VIDEO:v=BBgw-Hsy1Bk
+#LANGUAGE:German
+#GAP:5159,3377995362025
+#ALLKARAOKE_ID:karel-gott-und-darinka-fang-das-licht
+#ALLKARAOKE_SID:5885
+#ALLKARAOKE_LASTUPDATE:2026-06-20T00:37:15.368Z
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:178
+#MP3:Karel Gott und Darinka - Fang das Licht.mp3
+#COVER:Karel Gott und Darinka - Fang das Licht [CO].jpg
+#BACKGROUND:Karel Gott und Darinka - Fang das Licht [BG].jpg
+: 16 5 0 Fang 
+: 25 3 2 das 
+: 32 14 4 Licht 
+: 59 2 2 von 
+: 63 2 4 ei
+: 66 3 2 nem 
+: 71 4 4 Tag 
+: 78 4 2 voll 
+: 84 3 5 Son
+: 89 3 4 nen
+: 94 22 2 schein
+- 116 123
+- 123
+: 139 5 9 Halt 
+: 147 3 11 es 
+: 155 3 11 fe
+: 159 14 12 ~st, 
+: 183 3 11 schließ’ 
+: 187 2 12 es 
+: 191 2 11 in 
+: 194 3 12 dei
+: 198 2 11 nem 
+: 202 1 12 He
+: 204 4 14 ~r
+: 210 2 12 zen 
+: 215 22 7 ein
+- 237 245
+- 245
+: 261 6 9 Heb’ 
+: 269 3 11 es 
+: 274 2 11 au
+: 277 18 12 ~f 
+: 303 3 11 und 
+: 307 3 12 wenn 
+: 311 2 11 du 
+: 314 4 12 ein
+: 319 3 11 mal 
+: 325 3 14 trau
+: 329 3 12 ~
+: 333 2 12 rig 
+: 337 20 7 bist
+- 357 369
+- 369
+: 385 5 0 Dann 
+: 393 5 5 ver
+: 399 3 4 giss 
+: 406 12 2 nicht, 
+: 427 2 4 dass 
+: 432 2 5 ir
+: 435 3 4 gend
+: 439 3 5 wo 
+: 443 3 4 noch 
+: 450 4 5 Son
+: 457 3 -1 ne 
+: 462 23 0 ist
+- 485 492
+- 492
+: 508 4 0 Fang 
+: 515 3 2 das 
+: 523 2 2 Li
+: 526 5 4 ~cht 
+: 550 2 2 von 
+: 553 3 4 ei
+: 557 2 2 ner 
+: 560 3 4 Nacht 
+: 566 4 2 voll 
+: 573 5 5 Ster
+: 579 3 4 nen
+: 584 12 2 schein
+- 596 613
+- 613
+* 629 6 9 Halt 
+* 638 4 11 es 
+* 645 9 12 fest, 
+: 671 4 11 schließ’ 
+: 676 2 12 es 
+: 680 3 11 in 
+: 684 2 12 dei
+: 687 2 11 ne 
+: 691 7 14 Träu
+: 699 3 12 me 
+: 703 12 7 ein
+- 715 737
+- 737
+: 753 6 9 Heb’ 
+: 761 3 11 es 
+: 768 11 12 auf 
+: 795 3 11 und 
+: 799 3 12 wenn 
+: 803 3 11 die 
+: 807 2 12 Dun
+: 810 3 11 kel
+: 814 6 14 heit 
+: 823 4 12 be
+: 828 10 7 ginnt
+- 838 860
+- 860
+: 876 5 0 Dann 
+: 884 2 2 ve
+: 887 3 5 ~r
+: 891 3 4 giss 
+: 897 6 2 nicht, 
+: 917 2 4 dass 
+: 921 3 5 ir
+: 925 3 4 gend
+: 930 2 5 wo 
+: 933 2 4 noch 
+: 938 3 5 Ste
+: 942 2 -1 ~r
+: 945 3 -1 ne 
+: 951 12 0 sind
+- 963 983
+- 983
+: 999 6 -5 Fang 
+: 1007 4 0 das 
+: 1014 12 2 Licht
+- 1026
+: 1029 4 17 Fa
+: 1034 2 12 ~ng 
+: 1038 3 12 das 
+: 1044 3 12 Li
+: 1048 6 11 ~cht
+- 1054
+: 1059 6 4 Halt 
+: 1067 4 -1 es 
+: 1075 12 0 fest
+- 1087
+* 1091 3 16 Ha
+* 1095 3 11 ~lt 
+* 1099 3 11 es 
+* 1106 5 9 fest
+- 1111
+: 1121 6 -1 Für 
+: 1129 5 0 den 
+: 1137 8 2 Tag, 
+: 1147 3 2 an 
+: 1152 3 2 de
+: 1156 3 0 ~m 
+: 1161 3 0 die 
+: 1166 4 -1 Hoff
+: 1174 4 0 nung 
+: 1181 4 0 dich 
+: 1189 5 -3 ver
+: 1198 2 -3 lä
+: 1201 20 -5 ~sst
+- 1221 1227
+- 1227
+: 1243 5 -3 Und 
+: 1251 7 -1 glaubst 
+: 1260 20 0 du, 
+: 1286 3 -1 dass 
+: 1291 2 0 es 
+: 1295 2 -1 für 
+: 1298 2 0 dich 
+: 1302 3 -1 kein 
+: 1307 6 2 Wun
+: 1314 2 0 de
+: 1317 2 -5 ~r 
+: 1321 21 -5 gibt
+- 1342 1350
+- 1350
+: 1366 5 0 Dann 
+: 1374 5 5 ver
+: 1381 3 4 giss 
+: 1387 12 2 nicht, 
+: 1408 2 4 dass 
+: 1412 3 5 je
+: 1416 3 4 mand 
+: 1420 2 5 da 
+: 1423 2 4 ist, 
+: 1428 3 5 de
+: 1432 2 -1 ~r 
+: 1435 3 -1 dich 
+: 1440 2 -1 lie
+: 1443 28 0 ~bt
+- 1471 1596
+- 1596
+: 1612 5 0 Fang 
+: 1621 3 2 das 
+: 1628 17 4 Licht 
+: 1654 3 2 von 
+: 1658 3 4 ei
+: 1662 2 2 nem 
+: 1666 4 4 Tag 
+: 1672 4 2 voll 
+: 1678 2 5 Son
+: 1681 5 4 nen
+: 1689 32 2 schein
+- 1721
+: 1734 7 9 Halt 
+: 1743 3 11 es 
+: 1750 20 12 fest, 
+: 1777 3 11 schließ’ 
+: 1782 2 12 es 
+: 1786 2 11 in 
+: 1789 4 12 dei
+: 1794 2 11 nem 
+: 1798 6 14 Her
+: 1806 4 12 zen 
+: 1812 32 7 ein
+- 1844
+: 1857 7 9 Heb’ 
+: 1866 3 11 es 
+: 1871 2 11 au
+: 1874 18 12 ~f 
+: 1899 3 11 und 
+: 1903 3 12 wenn 
+: 1907 2 11 du 
+: 1910 4 12 ein
+: 1915 3 11 mal 
+* 1920 7 14 trau
+* 1928 3 12 rig 
+* 1933 25 7 bist
+- 1958 1965
+- 1965
+: 1981 4 0 Dann 
+: 1988 6 5 ver
+: 1996 3 4 giss 
+: 2001 12 2 nicht, 
+: 2022 2 4 dass 
+: 2026 3 5 ir
+: 2030 3 4 gend
+: 2034 2 5 wo 
+: 2037 3 4 noch 
+: 2043 5 5 Son
+: 2050 3 -1 ne 
+: 2055 2 -1 i
+: 2058 22 0 ~st
+- 2080 2088
+- 2088
+: 2104 5 -5 Fang 
+: 2111 3 0 das 
+: 2118 13 2 Licht
+- 2131
+* 2134 3 17 Fa
+* 2138 2 12 ~ng 
+* 2142 4 12 das 
+* 2149 2 12 Li
+* 2152 6 11 ~cht
+- 2158
+: 2164 6 4 Halt 
+: 2173 3 -1 es 
+: 2180 13 0 fest
+- 2193
+: 2196 2 16 Ha
+: 2199 3 11 ~lt 
+: 2204 3 11 es 
+: 2211 6 9 fest
+- 2217
+: 2226 6 11 Für 
+: 2234 4 12 den 
+: 2241 8 14 Tag, 
+: 2252 3 14 an 
+: 2256 4 14 de
+: 2261 2 12 ~m 
+: 2265 4 12 die 
+: 2271 4 11 Hoff
+: 2278 4 12 nung 
+: 2286 4 11 dich 
+: 2293 5 9 ver
+: 2302 3 9 lä
+: 2306 22 7 ~sst
+- 2328 2332
+- 2332
+: 2348 5 -3 Und 
+: 2356 7 -1 glaubst 
+: 2365 18 0 du, 
+: 2391 3 -1 dass 
+: 2396 2 0 es 
+: 2400 2 -1 für 
+: 2403 2 0 dich 
+: 2407 3 -1 kein 
+: 2412 2 2 Wu
+: 2415 3 0 ~n
+: 2419 1 0 de
+: 2421 2 -5 ~r 
+: 2426 23 -5 gibt
+- 2449 2456
+- 2456
+: 2472 5 0 Dann 
+: 2480 6 5 ver
+: 2488 3 4 giss 
+: 2493 17 2 nicht, 
+: 2518 4 4 dass 
+: 2524 5 5 je
+: 2530 3 4 mand 
+: 2535 3 5 da 
+: 2539 3 4 ist, 
+: 2545 5 5 de
+: 2551 3 -1 ~r 
+: 2557 4 -1 dich 
+: 2567 48 0 liebt
+E
