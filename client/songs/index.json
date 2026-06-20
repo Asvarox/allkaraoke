@@ -386,6 +386,66 @@
     "local": false
   },
   {
+    "id": "2pm-hands-up",
+    "title": "Hands Up",
+    "artist": "2PM",
+    "video": "KgrB2KBZws4",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 250.10000000000016,
+    "gap": 38110.16317389218,
+    "year": "2011",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-20T00:37:15.885Z",
+    "genre": "K-Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "zaha",
+    "sourceUrl": "https://www.youtube.com/watch?v=KgrB2KBZws4",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5886,
+    "tracksCount": 1,
+    "search": "2pmhandsup",
+    "local": false
+  },
+  {
+    "id": "2pm-without-u",
+    "title": "Without U",
+    "artist": "2PM",
+    "video": "pB4920B2l5g",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 264.00000000000017,
+    "gap": 47727.27272727273,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-20T00:37:16.116Z",
+    "genre": "Kpop",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "lop",
+    "sourceUrl": "https://www.youtube.com/watch?v=pB4920B2l5g",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5887,
+    "tracksCount": 1,
+    "search": "2pmwithoutu",
+    "local": false
+  },
+  {
     "id": "2raumwohnung-36-grad",
     "title": "36 Grad",
     "artist": "2raumwohnung",
@@ -10390,7 +10450,7 @@
     "gap": 8175.2941176470595,
     "year": "2009",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-19T00:46:38.009Z",
+    "lastUpdate": "2026-06-18T03:15:50.455Z",
     "genre": "Alternative rock, Garage rock",
     "realBpm": 169,
     "previewStart": 60,
@@ -45084,7 +45144,7 @@
     "bpm": 399.79999999999995,
     "gap": 8807.5,
     "year": "1989",
-    "lastUpdate": "2026-06-19T00:46:38.011Z",
+    "lastUpdate": "2026-06-18T10:42:20.428Z",
     "genre": "Soundtrack",
     "realBpm": 100,
     "volume": 1,
@@ -84214,6 +84274,32 @@
     "shortId": 2285,
     "tracksCount": 1,
     "search": "karelgottkdepaktyptackuhnizdomas",
+    "local": false
+  },
+  {
+    "id": "karel-gott-und-darinka-fang-das-licht",
+    "title": "Fang das Licht",
+    "artist": "Karel Gott und Darinka",
+    "video": "BBgw-Hsy1Bk",
+    "language": [
+      "German"
+    ],
+    "bpm": 232.86,
+    "gap": 5159.3377995362025,
+    "year": "1985",
+    "lastUpdate": "2026-06-20T00:37:15.368Z",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "Su-Metal",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5885,
+    "tracksCount": 1,
+    "search": "karelgottunddarinkafangdaslicht",
     "local": false
   },
   {
@@ -144026,7 +144112,7 @@
     "gap": 11630.238976775496,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-19T00:46:38.003Z",
+    "lastUpdate": "2026-06-18T03:11:57.759Z",
     "genre": "Rock",
     "realBpm": 183,
     "volume": 1,
