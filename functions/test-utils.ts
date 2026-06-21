@@ -1,14 +1,14 @@
-import { SharedSongRecord } from './shared-songs-store';
+import { UnverifiedSongRecord } from './unverified-songs-store';
 
-export const generateSharedSongRecord = (overrides: Partial<SharedSongRecord> = {}): SharedSongRecord => ({
-  externalSongId: 'song-1',
+export const generateUnverifiedSongRecord = (overrides: Partial<UnverifiedSongRecord> = {}): UnverifiedSongRecord => ({
+  sharedSongId: 'song-1',
   songId: 'song-1',
   songTxt: '#TITLE:Song\nE',
   artist: 'Artist',
   title: 'Title',
   language: ['English'],
   videoId: 'koBUXESJZ8g',
-  verifiedAt: 1,
+  validatedAt: 1,
   firstSeenAt: overrides.firstSeenAt ?? 1,
   updated: overrides.updated ?? 1,
   lastSeenAt: 1,

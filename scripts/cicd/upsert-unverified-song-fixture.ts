@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
-import { upsertSharedSongRecord } from './shared-songs-admin-client';
+import { upsertUnverifiedSongRecord } from './unverified-songs-admin-client';
 
 dotenv.config({ path: '.env' });
 dotenv.config({ path: '.env.local', override: true });
@@ -16,7 +16,7 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
     throw new Error('Missing fixture path argument');
   }
 
-  process.env.SHARED_SONGS_ADMIN_URL = baseUrlArg ?? 'https://localhost:3000';
+  process.env.UNVERIFIED_SONGS_ADMIN_URL = baseUrlArg ?? 'https://localhost:3000';
 
   const fixturePath = path.resolve(process.cwd(), fixturePathArg);
   if (!fs.existsSync(fixturePath)) {
@@ -31,15 +31,15 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
   }
 
   const now = Date.now();
-  await upsertSharedSongRecord({
-    externalSongId: song.id,
+  await upsertUnverifiedSongRecord({
+    sharedSongId: song.id,
     songId: song.id,
     songTxt,
     artist: song.artist,
     title: song.title,
     language: song.language,
     videoId: song.video,
-    verifiedAt: now,
+    validatedAt: now,
     firstSeenAt: now,
     updated: now,
     lastSeenAt: now,
@@ -47,5 +47,5 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
     sourceEventAt: now,
   });
 
-  console.log(`Upserted shared song fixture: ${song.id}`);
+  console.log(`Upserted unverified song fixture: ${song.id}`);
 })();

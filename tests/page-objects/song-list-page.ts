@@ -76,31 +76,31 @@ export class SongListPagePO {
     }
   }
 
-  public getSharedSongSearchResult(songTitle: string) {
+  public getUnverifiedSongSearchResult(songTitle: string) {
     return this.page.getByRole('button', { name: songTitle, exact: true });
   }
 
-  public get unverifiedSharedSongsGroup() {
-    return this.page.locator('[data-group-name="Unverified"]');
+  public get unverifiedSongsGroup() {
+    return this.page.locator('[data-group-name="Unverified songs"]');
   }
 
-  public getSharedSongCardById(sharedSongId: string) {
-    return this.page.getByTestId(`song-${sharedSongId}`);
+  public getUnverifiedSongCardById(unverifiedSongId: string) {
+    return this.page.getByTestId(`song-${unverifiedSongId}`);
   }
 
-  public async expectUnverifiedSharedSongsGroupToBeVisible() {
-    await expect(this.unverifiedSharedSongsGroup).toBeVisible();
+  public async expectUnverifiedSongsGroupToBeVisible() {
+    await expect(this.unverifiedSongsGroup).toBeVisible();
   }
 
-  public async expectSharedSongCardToBeVisible(sharedSongId: string) {
-    await expect(this.getSharedSongCardById(sharedSongId)).toBeVisible();
+  public async expectUnverifiedSongCardToBeVisible(unverifiedSongId: string) {
+    await expect(this.getUnverifiedSongCardById(unverifiedSongId)).toBeVisible();
   }
 
-  public async openSharedSongSearchResultCard(sharedSongId: string) {
-    const sharedSongCard = this.getSharedSongCardById(sharedSongId);
+  public async openUnverifiedSongSearchResultCard(unverifiedSongId: string) {
+    const unverifiedSongCard = this.getUnverifiedSongCardById(unverifiedSongId);
 
-    await expect(sharedSongCard).toBeVisible();
-    await sharedSongCard.click();
+    await expect(unverifiedSongCard).toBeVisible();
+    await unverifiedSongCard.click();
     await this.page.waitForTimeout(100);
 
     if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {

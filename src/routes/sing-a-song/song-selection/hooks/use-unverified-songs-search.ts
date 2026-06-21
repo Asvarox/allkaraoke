@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from 'react';
 import { SongPreview } from '~/interfaces';
 import useDebounce from '~/modules/hooks/use-debounce';
-import { getSharedSongsSearch } from '~/modules/songs/shared-songs/api';
+import { getUnverifiedSongsSearch } from '~/modules/songs/unverified-songs/api';
 
 interface Props {
   searchText: string;
@@ -10,24 +10,24 @@ interface Props {
   existingSongIds: Set<string>;
 }
 
-export default function useSharedSongsSearch({
+export default function useUnverifiedSongsSearch({
   searchText,
   fallbackThreshold,
   regularResultsCount,
   existingSongIds,
 }: Props) {
-  const [sharedSongs, setSharedSongs] = useState<SongPreview[]>([]);
+  const [unverifiedSongs, setUnverifiedSongs] = useState<SongPreview[]>([]);
   const [isFetching, setIsFetching] = useState(false);
   const trimmedSearch = searchText.trim();
-  const shouldFetchSharedSongs = trimmedSearch.length > 0 && regularResultsCount < fallbackThreshold;
+  const shouldFetchUnverifiedSongs = trimmedSearch.length > 0 && regularResultsCount < fallbackThreshold;
   const debouncedSearch = useDebounce(trimmedSearch, 350);
-  const isWaitingForDebounce = shouldFetchSharedSongs && debouncedSearch !== trimmedSearch;
+  const isWaitingForDebounce = shouldFetchUnverifiedSongs && debouncedSearch !== trimmedSearch;
 
   useLayoutEffect(() => {
     let isActive = true;
     const clearResults = () => {
-      if (sharedSongs.length > 0) {
-        setSharedSongs([]);
+      if (unverifiedSongs.length > 0) {
+        setUnverifiedSongs([]);
       }
 
       if (isFetching) {
@@ -35,7 +35,7 @@ export default function useSharedSongsSearch({
       }
     };
 
-    if (!shouldFetchSharedSongs || !debouncedSearch) {
+    if (!shouldFetchUnverifiedSongs || !debouncedSearch) {
       clearResults();
       return () => {
         isActive = false;
@@ -51,7 +51,7 @@ export default function useSharedSongsSearch({
 
     setIsFetching(true);
 
-    getSharedSongsSearch(debouncedSearch).then((songs) => {
+    getUnverifiedSongsSearch(debouncedSearch).then((songs) => {
       if (!isActive) return;
 
       const mappedSongs: SongPreview[] = songs
@@ -81,26 +81,26 @@ export default function useSharedSongsSearch({
           volume: undefined,
           manualVolume: undefined,
           id: song.songId,
-          sourceType: 'shared',
-          externalSongId: song.externalSongId,
-          isUnverifiedSharedSong: true,
+          sourceType: 'unverified',
+          sharedSongId: song.sharedSongId,
+          isUnverifiedSong: true,
           tracksCount: 1,
           tracks: [{ start: 0 }],
           search: `${song.artist} ${song.title}`,
           bar: 4,
         }));
 
-      setSharedSongs(mappedSongs);
+      setUnverifiedSongs(mappedSongs);
       setIsFetching(false);
     });
 
     return () => {
       isActive = false;
     };
-  }, [debouncedSearch, shouldFetchSharedSongs, existingSongIds, isWaitingForDebounce]);
+  }, [debouncedSearch, shouldFetchUnverifiedSongs, existingSongIds, isWaitingForDebounce]);
 
   return {
-    sharedSongs,
-    isLoading: shouldFetchSharedSongs && (isWaitingForDebounce || isFetching),
+    unverifiedSongs,
+    isLoading: shouldFetchUnverifiedSongs && (isWaitingForDebounce || isFetching),
   };
 }

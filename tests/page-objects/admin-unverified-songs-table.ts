@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 
-export class AdminSharedSongsTablePO {
+export class AdminUnverifiedSongsTablePO {
   constructor(private page: Page) {}
 
   public rowContaining(text: string) {
@@ -33,13 +33,13 @@ export class AdminSharedSongsTablePO {
     }
   }
 
-  public async deleteSongByExternalId(externalSongId: string) {
-    await this.rowContaining(externalSongId)
+  public async deleteSongBySharedSongId(sharedSongId: string) {
+    await this.rowContaining(sharedSongId)
       .getByLabel(/Delete/)
       .click();
   }
 
-  public async editSongByExternalId(externalSongId: string) {
-    await this.rowContaining(externalSongId).getByLabel(/Edit/).click();
+  public async editSongBySharedSongId(sharedSongId: string) {
+    await this.rowContaining(sharedSongId).getByLabel(/Edit/).click();
   }
 }

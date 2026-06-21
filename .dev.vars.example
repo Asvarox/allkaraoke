@@ -1,2 +1,2 @@
-SHARED_SONGS_ADMIN_TOKEN=local-shared-songs-admin-token
+UNVERIFIED_SONGS_ADMIN_TOKEN=local-unverified-songs-admin-token
 ADMIN_PANEL_PASSWORD=12345

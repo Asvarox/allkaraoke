@@ -2,7 +2,7 @@
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Build a hidden `/admin` panel for listing, deleting, reindexing, and editing unverified shared songs stored in Cloudflare KV.
+**Goal:** Build a hidden `/admin` panel for listing, deleting, reindexing, and editing unverified songs stored in Cloudflare KV.
 
 **Architecture:** Add a dedicated browser-admin API under `/admin/*`, protected by a separate password header and backed by the existing shared-song KV store helpers. Add a hidden React route that stores the password in `sessionStorage`, shows a client-filtered/sorted `MaterialReactTable`, and opens the existing song editor in admin mode so saves update both local storage and the stable KV record.
 
@@ -14,33 +14,33 @@
 
 - Baseline branch is `master`.
 - React Compiler is enabled, so do not add manual memoization unless the surrounding code already requires it.
-- The existing CI admin endpoint is `functions/shared-songs-admin.ts`; keep it token-protected and CI-oriented.
-- The new browser admin password should be separate from `SHARED_SONGS_ADMIN_TOKEN`, for example `ADMIN_PANEL_PASSWORD`.
-- The current shared-song index does not store `externalSongId`; it currently infers it from `songId`. Admin edits must keep `externalSongId` stable even when a corrected song gets a new `songId`, so the index must be extended first.
+- The existing CI admin endpoint is `functions/unverified-songs-admin.ts`; keep it token-protected and CI-oriented.
+- The new browser admin password should be separate from `UNVERIFIED_SONGS_ADMIN_TOKEN`, for example `ADMIN_PANEL_PASSWORD`.
+- The current shared-song index does not store `sharedSongId`; it currently infers it from `songId`. Admin edits must keep `sharedSongId` stable even when a corrected song gets a new `songId`, so the index must be extended first.
 
 ## Task 1: Extend Shared-Song Store for Stable External IDs
 
 **Files:**
 
-- Modify: `functions/shared-songs-store.ts`
-- Modify: `functions/shared-songs-store.test.ts`
-- Modify: `functions/shared-songs.ts`
+- Modify: `functions/unverified-songs-store.ts`
+- Modify: `functions/unverified-songs-store.test.ts`
+- Modify: `functions/unverified-songs.ts`
 
 **Step 1: Write failing store tests**
 
-Add tests that prove the index carries `externalSongId` and that updates preserve the original KV key.
+Add tests that prove the index carries `sharedSongId` and that updates preserve the original KV key.
 
-In `functions/shared-songs-store.test.ts`, import the future update helper:
+In `functions/unverified-songs-store.test.ts`, import the future update helper:
 
 ```ts
 import {
-  getSharedSong,
-  listSharedSongs,
-  removeSharedSong,
-  SharedSongRecord,
-  updateSharedSong,
-  upsertSharedSong,
-} from './shared-songs-store';
+  getUnverifiedSong,
+  listUnverifiedSongs,
+  removeUnverifiedSong,
+  UnverifiedSongRecord,
+  updateUnverifiedSong,
+  upsertUnverifiedSong,
+} from './unverified-songs-store';
 ```
 
 Add tests:
@@ -48,21 +48,21 @@ Add tests:
 ```ts
 it('lists records with stable external song ids', async () => {
   const kv = new MockKVNamespace();
-  await upsertSharedSong(kv, createRecord({ externalSongId: 'external-1', songId: 'generated-1' }));
+  await upsertUnverifiedSong(kv, createRecord({ sharedSongId: 'external-1', songId: 'generated-1' }));
 
-  const list = await listSharedSongs(kv);
+  const list = await listUnverifiedSongs(kv);
 
   expect(list[0]).toMatchObject({
-    externalSongId: 'external-1',
+    sharedSongId: 'external-1',
     songId: 'generated-1',
   });
 });
 
-it('updates a shared song in place while preserving externalSongId', async () => {
+it('updates a shared song in place while preserving sharedSongId', async () => {
   const kv = new MockKVNamespace();
-  await upsertSharedSong(kv, createRecord({ externalSongId: 'external-1', songId: 'old-song' }));
+  await upsertUnverifiedSong(kv, createRecord({ sharedSongId: 'external-1', songId: 'old-song' }));
 
-  const updated = await updateSharedSong(kv, 'external-1', {
+  const updated = await updateUnverifiedSong(kv, 'external-1', {
     songId: 'new-song',
     songTxt: '#TITLE:New Song\nE',
     artist: 'New Artist',
@@ -72,15 +72,15 @@ it('updates a shared song in place while preserving externalSongId', async () =>
   });
 
   expect(updated).toBe(true);
-  expect(await getSharedSong(kv, 'external-1')).toMatchObject({
-    externalSongId: 'external-1',
+  expect(await getUnverifiedSong(kv, 'external-1')).toMatchObject({
+    sharedSongId: 'external-1',
     songId: 'new-song',
     title: 'New Song',
   });
-  expect(await getSharedSong(kv, 'new-song')).toBeNull();
-  expect(await listSharedSongs(kv)).toEqual([
+  expect(await getUnverifiedSong(kv, 'new-song')).toBeNull();
+  expect(await listUnverifiedSongs(kv)).toEqual([
     expect.objectContaining({
-      externalSongId: 'external-1',
+      sharedSongId: 'external-1',
       songId: 'new-song',
       title: 'New Song',
     }),
@@ -93,64 +93,64 @@ it('updates a shared song in place while preserving externalSongId', async () =>
 Run:
 
 ```bash
-pnpm test functions/shared-songs-store.test.ts
+pnpm test functions/unverified-songs-store.test.ts
 ```
 
-Expected: fail because `updateSharedSong` does not exist and `SharedSongIndexEntry` does not expose `externalSongId`.
+Expected: fail because `updateUnverifiedSong` does not exist and `UnverifiedSongIndexEntry` does not expose `sharedSongId`.
 
 **Step 3: Implement the store changes**
 
-In `functions/shared-songs-store.ts`, change the index type:
+In `functions/unverified-songs-store.ts`, change the index type:
 
 ```ts
-export type SharedSongIndexEntry = Pick<
-  SharedSongRecord,
-  'externalSongId' | 'songId' | 'artist' | 'title' | 'language' | 'videoId'
+export type UnverifiedSongIndexEntry = Pick<
+  UnverifiedSongRecord,
+  'sharedSongId' | 'songId' | 'artist' | 'title' | 'language' | 'videoId'
 >;
 ```
 
-Update index helpers so they match by `externalSongId`, not `songId`:
+Update index helpers so they match by `sharedSongId`, not `songId`:
 
 ```ts
-const addToIndex = async (kvNamespace: KVNamespace, entry: SharedSongIndexEntry) => {
+const addToIndex = async (kvNamespace: KVNamespace, entry: UnverifiedSongIndexEntry) => {
   const index = await getIndex(kvNamespace);
-  const nextIndex = [...index.filter((song) => song.externalSongId !== entry.externalSongId), entry];
+  const nextIndex = [...index.filter((song) => song.sharedSongId !== entry.sharedSongId), entry];
   await kvNamespace.put(INDEX_KEY, JSON.stringify(nextIndex));
 };
 
-const removeFromIndex = async (kvNamespace: KVNamespace, externalSongId: string) => {
+const removeFromIndex = async (kvNamespace: KVNamespace, sharedSongId: string) => {
   const index = await getIndex(kvNamespace);
-  await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((song) => song.externalSongId !== externalSongId)));
+  await kvNamespace.put(INDEX_KEY, JSON.stringify(index.filter((song) => song.sharedSongId !== sharedSongId)));
 };
 ```
 
-When creating index entries in `upsertSharedSong` and `regenerateIndex`, include `externalSongId`.
+When creating index entries in `upsertUnverifiedSong` and `regenerateIndex`, include `sharedSongId`.
 
 Add the update helper:
 
 ```ts
-export type SharedSongUpdate = Pick<
-  SharedSongRecord,
+export type UnverifiedSongUpdate = Pick<
+  UnverifiedSongRecord,
   'songId' | 'songTxt' | 'artist' | 'title' | 'language' | 'videoId'
 >;
 
-export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId: string, update: SharedSongUpdate) => {
-  const currentRecord = await getSharedSong(kvNamespace, externalSongId);
+export const updateUnverifiedSong = async (kvNamespace: KVNamespace, sharedSongId: string, update: UnverifiedSongUpdate) => {
+  const currentRecord = await getUnverifiedSong(kvNamespace, sharedSongId);
 
   if (!currentRecord) {
     return false;
   }
 
-  const updatedRecord: SharedSongRecord = {
+  const updatedRecord: UnverifiedSongRecord = {
     ...currentRecord,
     ...update,
-    externalSongId,
+    sharedSongId,
     lastSeenAt: Date.now(),
   };
 
-  await kvNamespace.put(getStorageKey(externalSongId), JSON.stringify(updatedRecord));
+  await kvNamespace.put(getStorageKey(sharedSongId), JSON.stringify(updatedRecord));
   await addToIndex(kvNamespace, {
-    externalSongId,
+    sharedSongId,
     songId: updatedRecord.songId,
     artist: updatedRecord.artist,
     title: updatedRecord.title,
@@ -162,15 +162,15 @@ export const updateSharedSong = async (kvNamespace: KVNamespace, externalSongId:
 };
 ```
 
-Handle old deployed indexes defensively. If `listSharedSongs` reads an older entry without `externalSongId`, normalize it with `externalSongId: song.songId`.
+Handle old deployed indexes defensively. If `listUnverifiedSongs` reads an older entry without `sharedSongId`, normalize it with `sharedSongId: song.songId`.
 
 **Step 4: Update the public search endpoint**
 
-In `functions/shared-songs.ts`, return the real external id:
+In `functions/unverified-songs.ts`, return the real external id:
 
 ```ts
 .map((song) => ({
-  externalSongId: song.externalSongId,
+  sharedSongId: song.sharedSongId,
   songId: song.songId,
   artist: song.artist,
   title: song.title,
@@ -186,7 +186,7 @@ If using a compatibility type for old index entries, keep the fallback in the st
 Run:
 
 ```bash
-pnpm test functions/shared-songs-store.test.ts
+pnpm test functions/unverified-songs-store.test.ts
 ```
 
 Expected: pass.
@@ -194,7 +194,7 @@ Expected: pass.
 **Step 6: Commit**
 
 ```bash
-git add functions/shared-songs-store.ts functions/shared-songs-store.test.ts functions/shared-songs.ts
+git add functions/unverified-songs-store.ts functions/unverified-songs-store.test.ts functions/unverified-songs.ts
 git commit -m "Support stable shared song external ids"
 ```
 
@@ -202,23 +202,23 @@ git commit -m "Support stable shared song external ids"
 
 **Files:**
 
-- Create: `functions/shared-songs-browser-admin-auth.ts`
-- Create: `functions/admin/shared-songs.ts`
-- Create: `functions/admin/shared-song.ts`
-- Create: `functions/admin/shared-songs.test.ts`
-- Create: `functions/admin/shared-song.test.ts`
+- Create: `functions/unverified-songs-browser-admin-auth.ts`
+- Create: `functions/admin/unverified-songs.ts`
+- Create: `functions/admin/unverified-song.ts`
+- Create: `functions/admin/unverified-songs.test.ts`
+- Create: `functions/admin/unverified-song.test.ts`
 
 **Step 1: Write failing admin function tests**
 
-Create tests with a small `MockKVNamespace` similar to `functions/shared-songs-store.test.ts`.
+Create tests with a small `MockKVNamespace` similar to `functions/unverified-songs-store.test.ts`.
 
 Cover:
 
 - missing/wrong password returns `401`
-- `GET /admin/shared-songs` returns list data
-- `DELETE /admin/shared-songs?id=<externalSongId>` deletes and returns `{ ok: true }`
-- `PUT /admin/shared-songs` regenerates the index
-- `PUT /admin/shared-song?id=<externalSongId>` updates an existing record
+- `GET /admin/unverified-songs` returns list data
+- `DELETE /admin/unverified-songs?id=<sharedSongId>` deletes and returns `{ ok: true }`
+- `PUT /admin/unverified-songs` regenerates the index
+- `PUT /admin/unverified-song?id=<sharedSongId>` updates an existing record
 - updating a missing record returns `404`
 
 Use a test env:
@@ -233,7 +233,7 @@ const env = {
 Use requests like:
 
 ```ts
-new Request('https://example.com/admin/shared-songs', {
+new Request('https://example.com/admin/unverified-songs', {
   headers: { 'x-shared-songs-admin-password': 'admin-password' },
 });
 ```
@@ -243,14 +243,14 @@ new Request('https://example.com/admin/shared-songs', {
 Run:
 
 ```bash
-pnpm test functions/admin/shared-songs.test.ts functions/admin/shared-song.test.ts
+pnpm test functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts
 ```
 
 Expected: fail because the functions do not exist.
 
 **Step 3: Add shared password auth helper**
 
-Create `functions/shared-songs-browser-admin-auth.ts`:
+Create `functions/unverified-songs-browser-admin-auth.ts`:
 
 ```ts
 interface AdminPasswordEnv {
@@ -261,7 +261,7 @@ export const responseHeaders = {
   'Content-Type': 'application/json',
 };
 
-export const isAuthorizedSharedSongsAdmin = (request: Request, env: AdminPasswordEnv) => {
+export const isAuthorizedUnverifiedSongsAdmin = (request: Request, env: AdminPasswordEnv) => {
   const expectedPassword = env.ADMIN_PANEL_PASSWORD;
   const password = request.headers.get('x-shared-songs-admin-password');
 
@@ -275,7 +275,7 @@ export const unauthorizedResponse = () =>
   });
 ```
 
-**Step 4: Implement `functions/admin/shared-songs.ts`**
+**Step 4: Implement `functions/admin/unverified-songs.ts`**
 
 Support:
 
@@ -283,11 +283,11 @@ Support:
 - `DELETE`: remove by query `id`
 - `PUT`: regenerate index
 
-Use `listSharedSongs`, `removeSharedSong`, and `regenerateIndex`.
+Use `listUnverifiedSongs`, `removeUnverifiedSong`, and `regenerateIndex`.
 
 Return `500` if `SHARED_SONGS_KV` is missing. Return `400` for missing `id` on delete. Return `404` when delete target is missing.
 
-**Step 5: Implement `functions/admin/shared-song.ts`**
+**Step 5: Implement `functions/admin/unverified-song.ts`**
 
 Support:
 
@@ -306,14 +306,14 @@ Validate the JSON body shape:
 }
 ```
 
-Call `updateSharedSong`. Return `404` if the record does not exist.
+Call `updateUnverifiedSong`. Return `404` if the record does not exist.
 
 **Step 6: Run admin function tests**
 
 Run:
 
 ```bash
-pnpm test functions/admin/shared-songs.test.ts functions/admin/shared-song.test.ts
+pnpm test functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts
 ```
 
 Expected: pass.
@@ -321,7 +321,7 @@ Expected: pass.
 **Step 7: Commit**
 
 ```bash
-git add functions/shared-songs-browser-admin-auth.ts functions/admin/shared-songs.ts functions/admin/shared-song.ts functions/admin/shared-songs.test.ts functions/admin/shared-song.test.ts
+git add functions/unverified-songs-browser-admin-auth.ts functions/admin/unverified-songs.ts functions/admin/unverified-song.ts functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts
 git commit -m "Add browser shared songs admin API"
 ```
 
@@ -330,7 +330,7 @@ git commit -m "Add browser shared songs admin API"
 **Files:**
 
 - Create: `src/routes/admin/admin-password.ts`
-- Create: `src/routes/admin/shared-songs-admin-api.ts`
+- Create: `src/routes/admin/unverified-songs-admin-api.ts`
 - Create: `src/routes/admin/admin.tsx`
 - Modify: `src/routes/route-paths.ts`
 - Modify: `src/app.tsx`
@@ -356,16 +356,16 @@ export const clearAdminPassword = () => {
 
 **Step 2: Add admin API client**
 
-Create `src/routes/admin/shared-songs-admin-api.ts`.
+Create `src/routes/admin/unverified-songs-admin-api.ts`.
 
 Export:
 
-- `listAdminSharedSongs(password: string)`
-- `deleteAdminSharedSong(password: string, externalSongId: string)`
-- `regenerateAdminSharedSongsIndex(password: string)`
-- `updateAdminSharedSong(externalSongId: string, song: Song)`
+- `listAdminUnverifiedSongs(password: string)`
+- `deleteAdminUnverifiedSong(password: string, sharedSongId: string)`
+- `regenerateAdminUnverifiedSongsIndex(password: string)`
+- `updateAdminUnverifiedSong(sharedSongId: string, song: Song)`
 
-`updateAdminSharedSong` should read the password via `getAdminPassword`, convert the song with `convertSongToTxt`, and send:
+`updateAdminUnverifiedSong` should read the password via `getAdminPassword`, convert the song with `convertSongToTxt`, and send:
 
 ```ts
 {
@@ -441,20 +441,20 @@ Table behavior:
 
 - client-side sorting and filtering enabled
 - `initialState` includes compact density and visible global filter
-- default columns: artist, title, language, videoId, songId, externalSongId
+- default columns: artist, title, language, videoId, songId, sharedSongId
 - row actions: edit and delete
 
 Edit link:
 
 ```tsx
-<Link to={`edit/song/?externalSong=${encodeURIComponent(row.original.externalSongId)}&admin=true`}>
+<Link to={`edit/song/?externalSong=${encodeURIComponent(row.original.sharedSongId)}&admin=true`}>
 ```
 
 Delete flow:
 
 ```ts
-if (!global.confirm('Remove this shared song from Cloudflare KV?')) return;
-await deleteAdminSharedSong(password, row.original.externalSongId);
+if (!global.confirm('Remove this unverified song from Cloudflare KV?')) return;
+await deleteAdminUnverifiedSong(password, row.original.sharedSongId);
 await loadSongs(password);
 ```
 
@@ -488,7 +488,7 @@ git commit -m "Add shared songs admin page"
 
 - Modify: `src/routes/edit/edit.tsx`
 - Modify: `src/routes/convert/convert-view.tsx`
-- Modify if needed: `src/routes/admin/shared-songs-admin-api.ts`
+- Modify if needed: `src/routes/admin/unverified-songs-admin-api.ts`
 
 **Step 1: Add admin edit props**
 
@@ -497,7 +497,7 @@ In `src/routes/convert/convert-view.tsx`, extend props:
 ```ts
 interface Props {
   song?: Song;
-  adminSharedSongExternalId?: string;
+  adminUnverifiedSongExternalId?: string;
 }
 ```
 
@@ -507,10 +507,10 @@ In `src/routes/edit/edit.tsx`, detect admin context:
 const isAdminEdit = useQueryParam('admin') === 'true';
 ```
 
-Pass it to `LazyConvert` only when both admin mode and `externalSongId` are present:
+Pass it to `LazyConvert` only when both admin mode and `sharedSongId` are present:
 
 ```tsx
-<LazyConvert song={song.data} adminSharedSongExternalId={isAdminEdit && externalSongId ? externalSongId : undefined} />
+<LazyConvert song={song.data} adminUnverifiedSongExternalId={isAdminEdit && sharedSongId ? sharedSongId : undefined} />
 ```
 
 **Step 2: Change save flow for admin shared-song edits**
@@ -523,8 +523,8 @@ Expected behavior:
 await SongDao.store(finalSong!);
 await shareSong(finalSong!.id);
 
-if (adminSharedSongExternalId) {
-  await updateAdminSharedSong(adminSharedSongExternalId, finalSong!);
+if (adminUnverifiedSongExternalId) {
+  await updateAdminUnverifiedSong(adminUnverifiedSongExternalId, finalSong!);
   navigate('admin/');
   return;
 }
@@ -532,7 +532,7 @@ if (adminSharedSongExternalId) {
 
 Keep existing `redirect` and normal edit/list behavior for non-admin saves.
 
-If `updateAdminSharedSong` throws, keep the user on the editor and show an error near the fixed bottom action bar. Do not redirect.
+If `updateAdminUnverifiedSong` throws, keep the user on the editor and show an error near the fixed bottom action bar. Do not redirect.
 
 **Step 3: Add save error UI**
 
@@ -563,7 +563,7 @@ Expected: pass.
 **Step 5: Commit**
 
 ```bash
-git add src/routes/edit/edit.tsx src/routes/convert/convert-view.tsx src/routes/admin/shared-songs-admin-api.ts
+git add src/routes/edit/edit.tsx src/routes/convert/convert-view.tsx src/routes/admin/unverified-songs-admin-api.ts
 git commit -m "Update KV from admin song edits"
 ```
 
@@ -581,7 +581,7 @@ git commit -m "Update KV from admin song edits"
 
 Mock:
 
-- `GET **/admin/shared-songs`
+- `GET **/admin/unverified-songs`
 
 Test flow:
 
@@ -597,9 +597,9 @@ Test flow:
 
 Mock:
 
-- first `GET /admin/shared-songs` returns one song
-- `DELETE /admin/shared-songs?id=external-1` returns `{ ok: true }`
-- second `GET /admin/shared-songs` returns `[]`
+- first `GET /admin/unverified-songs` returns one song
+- `DELETE /admin/unverified-songs?id=external-1` returns `{ ok: true }`
+- second `GET /admin/unverified-songs` returns `[]`
 
 Test:
 
@@ -612,9 +612,9 @@ Test:
 
 Mock:
 
-- `GET /shared-song?id=external-1` returns a full shared-song payload with `songTxt`
-- `PUT /admin/shared-song?id=external-1` captures the JSON body and returns `{ ok: true }`
-- `GET /admin/shared-songs` returns the edited row after redirect
+- `GET /unverified-song?id=external-1` returns a full shared-song payload with `songTxt`
+- `PUT /admin/unverified-song?id=external-1` captures the JSON body and returns `{ ok: true }`
+- `GET /admin/unverified-songs` returns the edited row after redirect
 
 Set session storage before navigation:
 
@@ -657,19 +657,19 @@ git commit -m "Test shared songs admin workflow"
 
 **Files:**
 
-- Modify: `docs/shared-songs-flow.md`
+- Modify: `docs/unverified-songs-flow.md`
 - Modify if needed: `wrangler.jsonc`
 
 **Step 1: Update shared songs docs**
 
-In `docs/shared-songs-flow.md`, add:
+In `docs/unverified-songs-flow.md`, add:
 
 - browser admin route: `/admin`
 - admin API endpoints under `/admin/*`
 - `ADMIN_PANEL_PASSWORD`
 - password is sent as `x-shared-songs-admin-password`
 - frontend stores it in `sessionStorage`
-- admin edit keeps `externalSongId` stable while updating KV content
+- admin edit keeps `sharedSongId` stable while updating KV content
 
 **Step 2: Check Cloudflare env config**
 
@@ -680,7 +680,7 @@ Inspect `wrangler.jsonc`. If this project documents vars there, add a non-secret
 Run:
 
 ```bash
-pnpm test functions/shared-songs-store.test.ts functions/admin/shared-songs.test.ts functions/admin/shared-song.test.ts
+pnpm test functions/unverified-songs-store.test.ts functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts
 pnpm playwright test tests/admin-shared-songs.spec.ts
 pnpm type-check
 ```
@@ -690,7 +690,7 @@ Expected: all pass.
 **Step 4: Commit docs/config**
 
 ```bash
-git add docs/shared-songs-flow.md wrangler.jsonc
+git add docs/unverified-songs-flow.md wrangler.jsonc
 git commit -m "Document shared songs admin panel"
 ```
 

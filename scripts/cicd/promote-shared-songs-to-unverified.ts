@@ -10,7 +10,11 @@ import {
   normalizeSharedSongTxt,
 } from '../../src/modules/songs/utils/shared-song-import-processing';
 import { createYoutubeDurationProbeClient } from '../youtube-duration-client';
-import { isSharedSongsAdminConfigured, SharedSongRecord, upsertSharedSongRecord } from './shared-songs-admin-client';
+import {
+  isUnverifiedSongsAdminConfigured,
+  UnverifiedSongRecord,
+  upsertUnverifiedSongRecord,
+} from './unverified-songs-admin-client';
 
 dotenv.config({ path: '.env.local' });
 
@@ -122,12 +126,12 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   const { requestPostHog } = require('../utils.cjs');
   const builtInSongIds = new Set(currentSongs.map((song) => song.id));
   const builtInVideoIds = new Set(currentSongs.map((song) => song.video).filter((video): video is string => !!video));
-  const summaryOutputPath = process.env.SHARED_SONGS_SUMMARY_PATH;
+  const summaryOutputPath = process.env.UNVERIFIED_SONGS_SUMMARY_PATH;
   const analyzedSongs = new Map<string, AnalyzedSongSummary>();
 
   const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
 
-  if (!isSharedSongsAdminConfigured()) {
+  if (!isUnverifiedSongsAdminConfigured()) {
     throw new Error('Shared songs admin endpoint env is not configured');
   }
 
@@ -199,7 +203,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
           //     failedCount += 1;
           //     continue;
           //   }
-          //   await removeSharedSongRecord(songId);
+          //   await removeUnverifiedSongRecord(songId);
           //   removedCount += 1;
           continue;
         }
@@ -250,15 +254,15 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
         }
 
         const now = Date.now();
-        const record: SharedSongRecord = {
-          externalSongId: song.id,
+        const record: UnverifiedSongRecord = {
+          sharedSongId: song.id,
           songId: song.id,
           songTxt: convertSongToTxt(song),
           artist: song.artist,
           title: song.title,
           language: song.language,
           videoId: song.video,
-          verifiedAt: now,
+          validatedAt: now,
           firstSeenAt: now,
           updated: now,
           lastSeenAt: now,
@@ -266,7 +270,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
           sourceEventAt: new Date(createdAt).getTime(),
         };
 
-        await upsertSharedSongRecord(record);
+        await upsertUnverifiedSongRecord(record);
         upsertedCount += 1;
         rememberSongStatus(song.id, 'ADDED');
       } catch (error) {
@@ -299,7 +303,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
       try {
         await writeFile(summaryOutputPath, JSON.stringify(summary, null, 2));
       } catch (error) {
-        console.warn('Failed to write shared songs summary output', { summaryOutputPath, error });
+        console.warn('Failed to write unverified songs summary output', { summaryOutputPath, error });
       }
     }
 

@@ -1,15 +1,15 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
-import { AdminSharedSongsTablePO } from './admin-shared-songs-table';
+import { AdminUnverifiedSongsTablePO } from './admin-unverified-songs-table';
 
-export class AdminSharedSongsPagePO {
-  public readonly table: AdminSharedSongsTablePO;
+export class AdminUnverifiedSongsPagePO {
+  public readonly table: AdminUnverifiedSongsTablePO;
 
   constructor(
     private page: Page,
     private context: BrowserContext,
     private browser: Browser,
   ) {
-    this.table = new AdminSharedSongsTablePO(page);
+    this.table = new AdminUnverifiedSongsTablePO(page);
   }
 
   public get passwordInput() {
@@ -33,7 +33,7 @@ export class AdminSharedSongsPagePO {
   }
 
   public get adminHeading() {
-    return this.page.getByRole('heading', { name: 'Shared Songs Management' });
+    return this.page.getByRole('heading', { name: 'Unverified Songs Management' });
   }
 
   public get searchInput() {

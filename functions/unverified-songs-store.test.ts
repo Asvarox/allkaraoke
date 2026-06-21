@@ -1,15 +1,15 @@
 import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { generateUnverifiedSongRecord } from './test-utils';
 import {
-  getSharedSong,
-  listSharedSongs,
+  getUnverifiedSong,
+  listUnverifiedSongs,
   regenerateIndex,
-  removeSharedSong,
-  updateSharedSong,
-  upsertSharedSong,
-} from './shared-songs-store';
-import { generateSharedSongRecord } from './test-utils';
+  removeUnverifiedSong,
+  updateUnverifiedSong,
+  upsertUnverifiedSong,
+} from './unverified-songs-store';
 
 afterEach(async () => {
   vi.useRealTimers();
@@ -17,14 +17,14 @@ afterEach(async () => {
   await reset();
 });
 
-describe('sharedSongsStore KV behavior', () => {
+describe('unverifiedSongsStore KV behavior', () => {
   it('stores and lists records', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    const record = generateSharedSongRecord();
+    const record = generateUnverifiedSongRecord();
 
-    await upsertSharedSong(kv, record);
+    await upsertUnverifiedSong(kv, record);
 
-    const list = await listSharedSongs(kv);
+    const list = await listUnverifiedSongs(kv);
     expect(list).toHaveLength(1);
     expect(list[0]).toMatchObject({
       songId: 'song-1',
@@ -33,13 +33,13 @@ describe('sharedSongsStore KV behavior', () => {
     });
   });
 
-  it('updates a shared song in place while preserving externalSongId', async () => {
+  it('updates an unverified song in place while preserving sharedSongId', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1', songId: 'old-song' }));
+    await upsertUnverifiedSong(kv, generateUnverifiedSongRecord({ sharedSongId: 'external-1', songId: 'old-song' }));
     vi.useFakeTimers();
     vi.setSystemTime(777);
 
-    const updated = await updateSharedSong(kv, 'external-1', {
+    const updated = await updateUnverifiedSong(kv, 'external-1', {
       songId: 'new-song',
       songTxt: '#TITLE:New Song\nE',
       artist: 'New Artist',
@@ -49,17 +49,17 @@ describe('sharedSongsStore KV behavior', () => {
     });
 
     expect(updated).toBe(true);
-    expect(await getSharedSong(kv, 'external-1')).toMatchObject({
-      externalSongId: 'external-1',
+    expect(await getUnverifiedSong(kv, 'external-1')).toMatchObject({
+      sharedSongId: 'external-1',
       songId: 'new-song',
       title: 'New Song',
       updated: 777,
       lastSeenAt: 777,
     });
-    expect(await getSharedSong(kv, 'new-song')).toBeNull();
-    expect(await listSharedSongs(kv)).toEqual([
+    expect(await getUnverifiedSong(kv, 'new-song')).toBeNull();
+    expect(await listUnverifiedSongs(kv)).toEqual([
       expect.objectContaining({
-        externalSongId: 'external-1',
+        sharedSongId: 'external-1',
         songId: 'new-song',
         title: 'New Song',
         firstSeenAt: 1,
@@ -72,14 +72,14 @@ describe('sharedSongsStore KV behavior', () => {
     const kv = workerEnv.SHARED_SONGS_KV;
     await kv.put(
       'shared-song:external-1',
-      JSON.stringify(generateSharedSongRecord({ externalSongId: 'external-1', firstSeenAt: 123, updated: 456 })),
+      JSON.stringify(generateUnverifiedSongRecord({ sharedSongId: 'external-1', firstSeenAt: 123, updated: 456 })),
     );
 
     await regenerateIndex(kv);
 
-    expect(await listSharedSongs(kv)).toEqual([
+    expect(await listUnverifiedSongs(kv)).toEqual([
       expect.objectContaining({
-        externalSongId: 'external-1',
+        sharedSongId: 'external-1',
         firstSeenAt: 123,
         updated: 456,
       }),
@@ -89,10 +89,10 @@ describe('sharedSongsStore KV behavior', () => {
   it('replaces record on upsert even when hash matches', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
 
-    await upsertSharedSong(kv, generateSharedSongRecord({ songTxt: 'first', lastSeenAt: 100 }));
-    await upsertSharedSong(
+    await upsertUnverifiedSong(kv, generateUnverifiedSongRecord({ songTxt: 'first', lastSeenAt: 100 }));
+    await upsertUnverifiedSong(
       kv,
-      generateSharedSongRecord({
+      generateUnverifiedSongRecord({
         songTxt: 'second',
         lastSeenAt: 200,
         sourceEventAt: 300,
@@ -100,7 +100,7 @@ describe('sharedSongsStore KV behavior', () => {
       }),
     );
 
-    const storedRecord = await getSharedSong(kv, 'song-1');
+    const storedRecord = await getUnverifiedSong(kv, 'song-1');
     expect(storedRecord?.songTxt).toBe('second');
     expect(storedRecord?.lastSeenAt).toBe(200);
     expect(storedRecord?.sourceEventAt).toBe(300);
@@ -109,11 +109,11 @@ describe('sharedSongsStore KV behavior', () => {
 
   it('removes record from storage and index', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
-    await upsertSharedSong(kv, generateSharedSongRecord());
+    await upsertUnverifiedSong(kv, generateUnverifiedSongRecord());
 
-    const removed = await removeSharedSong(kv, 'song-1');
-    const storedRecord = await getSharedSong(kv, 'song-1');
-    const list = await listSharedSongs(kv);
+    const removed = await removeUnverifiedSong(kv, 'song-1');
+    const storedRecord = await getUnverifiedSong(kv, 'song-1');
+    const list = await listUnverifiedSongs(kv);
 
     expect(removed).toBe(true);
     expect(storedRecord).toBeNull();

@@ -9,7 +9,7 @@ import {
   normalizeSharedSongTxt,
 } from '../../src/modules/songs/utils/shared-song-import-processing';
 import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtube-duration-client';
-import { isSharedSongsAdminConfigured, removeSharedSongRecord } from './shared-songs-admin-client';
+import { isUnverifiedSongsAdminConfigured, removeUnverifiedSongRecord } from './unverified-songs-admin-client';
 
 dotenv.config({ path: '.env.local' });
 
@@ -134,17 +134,19 @@ dotenv.config({ path: '.env.local' });
     console.log('Updating song stats');
     execSync(`pnpm ts-node scripts/generate-song-stats.ts`, { stdio: 'inherit' });
 
-    if (isSharedSongsAdminConfigured()) {
+    if (isUnverifiedSongsAdminConfigured()) {
       console.log('Cleaning up promoted shared songs from Cloudflare pending pool');
       for (const songId of promotedSongs) {
         try {
-          await removeSharedSongRecord(songId);
+          await removeUnverifiedSongRecord(songId);
         } catch (error) {
           console.warn(`Failed to remove shared song ${songId} from Cloudflare pending pool`, error);
         }
       }
     } else {
-      console.warn('Skipping shared songs cleanup: SHARED_SONGS_ADMIN_URL or SHARED_SONGS_ADMIN_TOKEN is missing');
+      console.warn(
+        'Skipping shared songs cleanup: UNVERIFIED_SONGS_ADMIN_URL or UNVERIFIED_SONGS_ADMIN_TOKEN is missing',
+      );
     }
 
     require('../generate-index');

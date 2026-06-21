@@ -19,12 +19,12 @@ export class SongEditSyncLyricsToVideoPagePO {
     return this.videoPlayerSource.getAttribute('src');
   }
 
-  public get deleteAdminSharedSongButton() {
-    return this.page.getByTestId('delete-admin-shared-song');
+  public get deleteAdminUnverifiedSongButton() {
+    return this.page.getByTestId('delete-admin-unverified-song');
   }
 
-  public async deleteAdminSharedSong() {
-    await this.deleteAdminSharedSongButton.click();
+  public async deleteAdminUnverifiedSong() {
+    await this.deleteAdminUnverifiedSongButton.click();
   }
 
   public get previousButton() {

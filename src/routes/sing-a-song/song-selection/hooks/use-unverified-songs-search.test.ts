@@ -2,13 +2,13 @@ import { renderHook } from '@testing-library/react';
 import { act } from 'react';
 import type { Mock } from 'vitest';
 import { afterEach, vitest } from 'vitest';
-import { getSharedSongsSearch } from '~/modules/songs/shared-songs/api';
-import type { SharedSongSearchResult } from '~/modules/songs/shared-songs/types';
-import useSharedSongsSearch from '~/routes/sing-a-song/song-selection/hooks/use-shared-songs-search';
+import { getUnverifiedSongsSearch } from '~/modules/songs/unverified-songs/api';
+import type { UnverifiedSongSearchResult } from '~/modules/songs/unverified-songs/types';
+import useUnverifiedSongsSearch from '~/routes/sing-a-song/song-selection/hooks/use-unverified-songs-search';
 
-vitest.mock('~/modules/songs/shared-songs/api');
+vitest.mock('~/modules/songs/unverified-songs/api');
 
-describe('useSharedSongsSearch', () => {
+describe('useUnverifiedSongsSearch', () => {
   afterEach(() => {
     vitest.useRealTimers();
     vitest.resetAllMocks();
@@ -18,17 +18,17 @@ describe('useSharedSongsSearch', () => {
     vitest.useFakeTimers();
     const existingSongIds = new Set<string>();
 
-    let resolveRequest: (value: SharedSongSearchResult[]) => void = () => {};
-    (getSharedSongsSearch as Mock).mockImplementation(
+    let resolveRequest: (value: UnverifiedSongSearchResult[]) => void = () => {};
+    (getUnverifiedSongsSearch as Mock).mockImplementation(
       () =>
-        new Promise<SharedSongSearchResult[]>((resolve) => {
+        new Promise<UnverifiedSongSearchResult[]>((resolve) => {
           resolveRequest = resolve;
         }),
     );
 
     const { result, rerender } = renderHook(
       ({ searchText, regularResultsCount }) =>
-        useSharedSongsSearch({
+        useUnverifiedSongsSearch({
           searchText,
           fallbackThreshold: 8,
           regularResultsCount,
@@ -50,20 +50,20 @@ describe('useSharedSongsSearch', () => {
     });
 
     expect(result.current.isLoading).toBe(true);
-    expect(result.current.sharedSongs).toEqual([]);
+    expect(result.current.unverifiedSongs).toEqual([]);
 
     await act(async () => {
       await vitest.advanceTimersByTimeAsync(350);
     });
 
     expect(result.current.isLoading).toBe(true);
-    expect(result.current.sharedSongs).toEqual([]);
+    expect(result.current.unverifiedSongs).toEqual([]);
 
     await act(async () => {
       resolveRequest([
         {
           artist: 'Queen',
-          externalSongId: 'external-1',
+          sharedSongId: 'external-1',
           language: ['English'],
           songId: 'shared-queen',
           title: 'Queen Song',
@@ -73,12 +73,12 @@ describe('useSharedSongsSearch', () => {
     });
 
     expect(result.current.isLoading).toBe(false);
-    expect(result.current.sharedSongs).toHaveLength(1);
-    expect(result.current.sharedSongs[0]).toMatchObject({
+    expect(result.current.unverifiedSongs).toHaveLength(1);
+    expect(result.current.unverifiedSongs[0]).toMatchObject({
       id: 'shared-queen',
       artist: 'Queen',
       title: 'Queen Song',
-      isUnverifiedSharedSong: true,
+      isUnverifiedSong: true,
     });
   });
 });

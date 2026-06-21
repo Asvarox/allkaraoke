@@ -22,7 +22,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
   };
 
   const handlePlay = (setup: SingSetup) => {
-    if (songPreview.isUnverifiedSharedSong) {
+    if (songPreview.isUnverifiedSong) {
       setPendingSetup(setup);
       return;
     }

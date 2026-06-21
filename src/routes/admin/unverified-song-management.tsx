@@ -9,19 +9,22 @@ import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { RegenerateIndexButton } from './regenerate-index-button';
-import { buildAdminSharedSongProcessingUrl, getOldestAdminSharedSong } from './shared-song-processing-queue';
 import {
-  AdminSharedSong,
-  deleteAdminSharedSong,
-  listAdminSharedSongs,
-  regenerateAdminSharedSongsIndex,
-} from './shared-songs-admin-api';
+  buildAdminUnverifiedSongProcessingUrl,
+  getOldestAdminUnverifiedSong,
+} from './unverified-song-processing-queue';
+import {
+  AdminUnverifiedSong,
+  deleteAdminUnverifiedSong,
+  listAdminUnverifiedSongs,
+  regenerateAdminUnverifiedSongsIndex,
+} from './unverified-songs-admin-api';
 
 interface Props {
   password: string;
 }
 
-const columns: MRT_ColumnDef<AdminSharedSong>[] = [
+const columns: MRT_ColumnDef<AdminUnverifiedSong>[] = [
   {
     accessorKey: 'artist',
     header: 'Artist',
@@ -55,16 +58,16 @@ const columns: MRT_ColumnDef<AdminSharedSong>[] = [
   },
 ];
 
-export function SharedSongManagement({ password }: Props) {
+export function UnverifiedSongManagement({ password }: Props) {
   const navigate = useSmoothNavigate();
-  const sharedSongsKey = password ? (['admin-shared-songs', password] as const) : null;
+  const unverifiedSongsKey = password ? (['admin-unverified-songs', password] as const) : null;
   const {
     data: songs = [],
     error: listError,
     isLoading,
     isValidating,
     mutate,
-  } = useSWR(sharedSongsKey, ([, adminPassword]) => listAdminSharedSongs(adminPassword), {
+  } = useSWR(unverifiedSongsKey, ([, adminPassword]) => listAdminUnverifiedSongs(adminPassword), {
     keepPreviousData: true,
   });
 
@@ -74,9 +77,9 @@ export function SharedSongManagement({ password }: Props) {
     isMutating: isDeleting,
     reset: resetDeleteError,
   } = useSWRMutation(
-    sharedSongsKey,
-    ([, adminPassword], { arg: externalSongId }: { arg: string }) =>
-      deleteAdminSharedSong(adminPassword, externalSongId),
+    unverifiedSongsKey,
+    ([, adminPassword], { arg: sharedSongId }: { arg: string }) =>
+      deleteAdminUnverifiedSong(adminPassword, sharedSongId),
     {
       onSuccess: () => {
         void mutate();
@@ -89,24 +92,24 @@ export function SharedSongManagement({ password }: Props) {
     error: regenerateError,
     isMutating: isRegenerating,
     reset: resetRegenerateError,
-  } = useSWRMutation(sharedSongsKey, ([, adminPassword]) => regenerateAdminSharedSongsIndex(adminPassword), {
+  } = useSWRMutation(unverifiedSongsKey, ([, adminPassword]) => regenerateAdminUnverifiedSongsIndex(adminPassword), {
     onSuccess: () => {
       void mutate();
     },
   });
 
-  const oldestSongToProcess = getOldestAdminSharedSong(songs);
+  const oldestSongToProcess = getOldestAdminUnverifiedSong(songs);
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
   const errorMessage = error instanceof Error ? error.message : null;
 
-  const handleDelete = async (externalSongId: string) => {
-    if (!global.confirm('Remove this shared song from Cloudflare KV?')) return;
+  const handleDelete = async (sharedSongId: string) => {
+    if (!global.confirm('Remove this unverified song from Cloudflare KV?')) return;
 
     resetRegenerateError();
 
     try {
-      await deleteSong(externalSongId);
+      await deleteSong(sharedSongId);
     } catch {
       // SWR stores the error for the alert above.
     }
@@ -126,15 +129,15 @@ export function SharedSongManagement({ password }: Props) {
     <section className="flex flex-col gap-2">
       <div className="flex flex-col gap-3 pb-4 md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-lg!">Shared Songs Management</h1>
-          <p className="mt-1 text-sm">{songs.length} shared songs in Cloudflare KV</p>
+          <h1 className="text-lg!">Unverified Songs Management</h1>
+          <p className="mt-1 text-sm">{songs.length} unverified songs in Cloudflare KV</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Button
             variant="contained"
             onClick={() => {
               if (oldestSongToProcess) {
-                navigate(buildAdminSharedSongProcessingUrl(oldestSongToProcess.externalSongId, true));
+                navigate(buildAdminUnverifiedSongProcessingUrl(oldestSongToProcess.sharedSongId, true));
               }
             }}
             disabled={isBusy || !oldestSongToProcess}>
@@ -161,7 +164,7 @@ export function SharedSongManagement({ password }: Props) {
         columns={columns}
         data={songs}
         state={{ isLoading: isBusy }}
-        getRowId={(song) => song.externalSongId}
+        getRowId={(song) => song.sharedSongId}
         enableRowActions
         positionActionsColumn="last"
         initialState={{
@@ -172,10 +175,10 @@ export function SharedSongManagement({ password }: Props) {
         enableFullScreenToggle={false}
         renderRowActions={({ row }) => (
           <div className="flex items-center gap-1">
-            <Tooltip title="Edit shared song">
+            <Tooltip title="Edit unverified song">
               <span>
                 <Link
-                  to={buildAdminSharedSongProcessingUrl(row.original.externalSongId)}
+                  to={buildAdminUnverifiedSongProcessingUrl(row.original.sharedSongId)}
                   aria-label={`Edit ${row.original.title}`}>
                   <IconButton>
                     <Edit />
@@ -183,10 +186,10 @@ export function SharedSongManagement({ password }: Props) {
                 </Link>
               </span>
             </Tooltip>
-            <Tooltip title="Delete shared song">
+            <Tooltip title="Delete unverified song">
               <IconButton
                 aria-label={`Delete ${row.original.title}`}
-                onClick={() => void handleDelete(row.original.externalSongId)}>
+                onClick={() => void handleDelete(row.original.sharedSongId)}>
                 <Delete />
               </IconButton>
             </Tooltip>

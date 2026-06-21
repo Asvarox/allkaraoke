@@ -12,8 +12,8 @@ import useSong from '~/modules/songs/hooks/use-song';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import SongDao from '~/modules/songs/songs-service';
 import { getAdminPassword } from '~/routes/admin/admin-password';
-import { getNextAdminSharedSongProcessingUrl } from '~/routes/admin/shared-song-processing-queue';
-import { deleteAdminSharedSong, listAdminSharedSongs } from '~/routes/admin/shared-songs-admin-api';
+import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import { deleteAdminUnverifiedSong, listAdminUnverifiedSongs } from '~/routes/admin/unverified-songs-admin-api';
 import { LazyConvert } from '~/routes/convert/convert';
 import { useShareSongs } from '~/routes/edit/share-songs-modal';
 
@@ -23,29 +23,29 @@ export default function Edit() {
   const { data } = useSongIndex(true);
   const [shareSongs] = useShareSongs(null);
   const songId = useQueryParam('song');
-  const externalSongId = useQueryParam('externalSong');
+  const sharedSongId = useQueryParam('externalSong');
   const isAdminEdit = useQueryParam('admin') === 'true';
   const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
   const navigate = useSmoothNavigate();
   useBackgroundMusic(false);
   const song = useSong(songId ?? '', {
-    sourceType: externalSongId ? 'shared' : 'library',
-    externalSongId: externalSongId ?? undefined,
+    sourceType: sharedSongId ? 'unverified' : 'library',
+    sharedSongId: sharedSongId ?? undefined,
   });
 
   if (!song.data) return <>Loading</>;
 
-  const adminSharedSongExternalId = isAdminEdit && externalSongId ? externalSongId : undefined;
+  const adminUnverifiedSongId = isAdminEdit && sharedSongId ? sharedSongId : undefined;
 
   const getAdminProcessingQueueRedirect = async (password: string) => {
-    const songs = await listAdminSharedSongs(password);
+    const songs = await listAdminUnverifiedSongs(password);
 
-    return getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId!);
+    return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
   };
 
   const deleteAdminSong = async () => {
-    if (!adminSharedSongExternalId) return;
-    const proceed = global.confirm('Remove this shared song from Cloudflare KV?');
+    if (!adminUnverifiedSongId) return;
+    const proceed = global.confirm('Remove this unverified song from Cloudflare KV?');
 
     if (!proceed) return;
 
@@ -53,16 +53,16 @@ export default function Edit() {
       const password = getAdminPassword();
 
       if (isAdminProcessingQueue) {
-        await deleteAdminSharedSong(password, adminSharedSongExternalId);
+        await deleteAdminUnverifiedSong(password, adminUnverifiedSongId);
         const nextUrl = await getAdminProcessingQueueRedirect(password);
         navigate(nextUrl);
         return;
       }
 
-      await deleteAdminSharedSong(password, adminSharedSongExternalId);
+      await deleteAdminUnverifiedSong(password, adminUnverifiedSongId);
       navigate('admin/');
     } catch (error) {
-      global.alert(error instanceof Error ? error.message : 'Failed to delete shared song');
+      global.alert(error instanceof Error ? error.message : 'Failed to delete unverified song');
     }
   };
 
@@ -79,16 +79,16 @@ export default function Edit() {
           <b>
             {song.data.artist} - {song.data.title}
           </b>
-          {adminSharedSongExternalId && (
+          {adminUnverifiedSongId && (
             <IconButton
-              title="Delete shared song"
-              aria-label="Delete shared song"
+              title="Delete unverified song"
+              aria-label="Delete unverified song"
               onClick={() => void deleteAdminSong()}
-              data-test="delete-admin-shared-song">
+              data-test="delete-admin-unverified-song">
               <Delete />
             </IconButton>
           )}
-          {!adminSharedSongExternalId && song.data.local && (
+          {!adminUnverifiedSongId && song.data.local && (
             <IconButton
               title="Delete the song"
               onClick={async () => {
@@ -112,9 +112,9 @@ export default function Edit() {
         </abbr>
       </div>
       <LazyConvert
-        key={adminSharedSongExternalId ?? song.data.id}
+        key={adminUnverifiedSongId ?? song.data.id}
         song={song.data}
-        adminSharedSongExternalId={adminSharedSongExternalId}
+        adminUnverifiedSongId={adminUnverifiedSongId}
       />
     </Paper>
   );

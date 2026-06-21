@@ -1,4 +1,4 @@
-name: 'Sync shared songs'
+name: 'Promote shared songs to unverified songs'
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ on:
     - cron: '0 */6 * * *'
 
 concurrency:
-  group: sync-shared-songs
+  group: promote-shared-songs-to-unverified
   cancel-in-progress: false
 
 jobs:
@@ -27,32 +27,32 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
-      SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
-      SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
-      SHARED_SONGS_SUMMARY_PATH: ${{ github.workspace }}/sync-shared-songs-summary.json
+      UNVERIFIED_SONGS_ADMIN_URL: ${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}
+      UNVERIFIED_SONGS_ADMIN_TOKEN: ${{ secrets.UNVERIFIED_SONGS_ADMIN_TOKEN || secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      UNVERIFIED_SONGS_SUMMARY_PATH: ${{ github.workspace }}/promote-shared-songs-to-unverified-summary.json
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
         timeout-minutes: 3
-      - name: Sync shared songs
+      - name: Promote shared songs to unverified songs
         run: |
           DAYS_FROM="${{ github.event.inputs.days_from }}"
           DAYS_TO="${{ github.event.inputs.days_to }}"
           CURSOR="${{ github.event.inputs.cursor }}"
 
-          pnpm ts-node scripts/cicd/github-action-upload-shared-songs-to-cloudflare.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
-      - name: Regenerate shared songs index
+          pnpm ts-node scripts/cicd/promote-shared-songs-to-unverified.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+      - name: Regenerate unverified songs index
         run: |
-          pnpm ts-node scripts/cicd/regenerate-shared-songs-index.ts "${{ secrets.SHARED_SONGS_ADMIN_URL }}"
-      - name: Add sync shared songs summary
+          pnpm ts-node scripts/cicd/regenerate-unverified-songs-index.ts "${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}"
+      - name: Add unverified songs promotion summary
         if: ${{ always() }}
         uses: actions/github-script@v8
         with:
           script: |
             const fs = require('node:fs');
-            const summaryPath = process.env.SHARED_SONGS_SUMMARY_PATH;
+            const summaryPath = process.env.UNVERIFIED_SONGS_SUMMARY_PATH;
             let analyzedSongs = [];
 
             if (summaryPath && fs.existsSync(summaryPath)) {
@@ -63,7 +63,7 @@ jobs:
             const songLines = analyzedSongs.length
               ? analyzedSongs.map(({ id, status }) => `* ${id} - ${status}`).join('\n')
               : '* No songs analyzed';
-            const markdown = ['# Shared songs sync summary', '', songLines].join('\n');
+            const markdown = ['# Shared songs to unverified songs promotion summary', '', songLines].join('\n');
 
             await core.summary
               .addRaw(markdown)
