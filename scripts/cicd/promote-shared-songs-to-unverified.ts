@@ -16,7 +16,8 @@ import {
   upsertUnverifiedSongRecord,
 } from './unverified-songs-admin-client';
 
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
+dotenv.config({ path: '.env.local', override: true });
 
 type PostHogEventRow = [
   songTxt: string | null,
@@ -32,6 +33,9 @@ type AnalyzedSongSummary = {
   id: string;
   status: AnalyzedSongStatus;
 };
+
+const DEFAULT_HOURS_FROM = 14;
+const DEFAULT_HOURS_TO = 0;
 
 const isValidYouTubeId = (videoId?: string) => {
   if (!videoId) {
@@ -75,11 +79,7 @@ const validateSong = (songTxt: string) => {
   };
 };
 
-const getDateLimit = (daysBack: number) => {
-  const date = new Date();
-  date.setDate(date.getDate() - daysBack);
-  return date.toISOString();
-};
+const getHoursAgoDateLimit = (hoursBack: number) => new Date(Date.now() - hoursBack * 60 * 60 * 1000).toISOString();
 
 const sanitizeUserIds = (userIds: string[]) => {
   const invalidUserId = userIds.find((id) => !/^[a-zA-Z0-9@._:-]+$/.test(id));
@@ -89,27 +89,12 @@ const sanitizeUserIds = (userIds: string[]) => {
   return userIds;
 };
 
-const sanitizeCursor = (cursor?: string) => {
-  if (!cursor) {
-    return undefined;
-  }
-
-  const parsedDate = new Date(cursor);
-  if (Number.isNaN(parsedDate.getTime())) {
-    throw new Error(`Invalid cursor format: ${cursor}`);
-  }
-
-  return parsedDate.toISOString();
-};
-
-const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number; cursor?: string }) => {
+const buildQuery = (opts: { userIds: string[]; hoursFrom: number; hoursTo: number }) => {
   const userFilter = opts.userIds.length
     ? `and events.properties.$user_id IN(${opts.userIds.map((id) => `'${id.trim()}'`).join(',')})`
     : '';
-  const cursorFilter = opts.cursor
-    ? `and events.created_at > toDateTime('${opts.cursor}')`
-    : `and events.created_at > toDateTime('${getDateLimit(opts.daysFrom)}')
-              and events.created_at < toDateTime('${getDateLimit(opts.daysTo)}')`;
+  const cursorFilter = `and events.created_at > toDateTime('${getHoursAgoDateLimit(opts.hoursFrom)}')
+              and events.created_at < toDateTime('${getHoursAgoDateLimit(opts.hoursTo)}')`;
 
   return `
     select events.properties.song, events.properties.songId, events.event, events.created_at, events.properties.$user_id
@@ -129,17 +114,17 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   const summaryOutputPath = process.env.UNVERIFIED_SONGS_SUMMARY_PATH;
   const analyzedSongs = new Map<string, AnalyzedSongSummary>();
 
-  const [daysFromArg = '', daysToArg = '', cursorArg = '', userIdsArg = ''] = process.argv.slice(2);
+  const [hoursFromArg = '', hoursToArg = '', userIdsArg = ''] = process.argv.slice(2);
 
   if (!isUnverifiedSongsAdminConfigured()) {
     throw new Error('Shared songs admin endpoint env is not configured');
   }
 
-  const daysFrom = daysFromArg !== '' ? Number(daysFromArg) : 4;
-  const daysTo = daysToArg !== '' ? Number(daysToArg) : 0;
+  const hoursFrom = hoursFromArg !== '' ? Number(hoursFromArg) : DEFAULT_HOURS_FROM;
+  const hoursTo = hoursToArg !== '' ? Number(hoursToArg) : DEFAULT_HOURS_TO;
 
-  if (Number.isNaN(daysFrom) || Number.isNaN(daysTo)) {
-    throw new Error(`Invalid days range: days_from="${daysFromArg}" days_to="${daysToArg}"`);
+  if (Number.isNaN(hoursFrom) || Number.isNaN(hoursTo)) {
+    throw new Error(`Invalid hours range: hours_from="${hoursFromArg}" hours_to="${hoursToArg}"`);
   }
 
   const userIds = userIdsArg
@@ -152,7 +137,6 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   if (userIds.length > 0) {
     sanitizeUserIds(userIds);
   }
-  const cursor = sanitizeCursor(cursorArg.trim() || undefined);
 
   let processedCount = 0;
   let upsertedCount = 0;
@@ -160,7 +144,7 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
   let failedCount = 0;
   let discardedByDurationCount = 0;
   let skippedExistingInLibraryCount = 0;
-  let maxCreatedAt = cursor ?? '';
+  let maxCreatedAt = '';
   let durationProbeClient: Awaited<ReturnType<typeof createYoutubeDurationProbeClient>> | undefined;
 
   const rememberSongStatus = (id: string | undefined, status: AnalyzedSongStatus) => {
@@ -181,7 +165,11 @@ const buildQuery = (opts: { userIds: string[]; daysFrom: number; daysTo: number;
       body: JSON.stringify({
         query: {
           kind: 'HogQLQuery',
-          query: buildQuery({ userIds, daysFrom, daysTo, cursor }),
+          query: buildQuery({
+            userIds,
+            hoursFrom,
+            hoursTo,
+          }),
         },
       }),
     });

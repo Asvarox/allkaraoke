@@ -154,7 +154,7 @@ test('shows and sorts unverified songs by added date', async ({ page, request })
   await page.goto('/admin?e2e-test');
 
   await pages.adminUnverifiedSongsPage.signIn(adminPanelPassword);
-  await pages.adminUnverifiedSongsPage.search(currentSharedSongId);
+  await pages.adminUnverifiedSongsPage.search(currentVisibleTitle);
   await expect(pages.adminUnverifiedSongsPage.table.columnHeader('Added')).toBeVisible();
   await expect(pages.adminUnverifiedSongsPage.table.columnHeader('Updated')).toBeVisible();
   await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(currentVisibleTitle)).toContainText('Jan 15 2025,');

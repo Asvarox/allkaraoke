@@ -180,7 +180,7 @@ export function UnverifiedSongManagement({ password }: Props) {
                 <Link
                   to={buildAdminUnverifiedSongProcessingUrl(row.original.sharedSongId)}
                   aria-label={`Edit ${row.original.title}`}>
-                  <IconButton>
+                  <IconButton data-test="edit-unverified-song" data-song={row.original.sharedSongId}>
                     <Edit />
                   </IconButton>
                 </Link>
@@ -188,6 +188,8 @@ export function UnverifiedSongManagement({ password }: Props) {
             </Tooltip>
             <Tooltip title="Delete unverified song">
               <IconButton
+                data-test="delete-unverified-song"
+                data-song={row.original.sharedSongId}
                 aria-label={`Delete ${row.original.title}`}
                 onClick={() => void handleDelete(row.original.sharedSongId)}>
                 <Delete />

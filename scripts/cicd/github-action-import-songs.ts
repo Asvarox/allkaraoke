@@ -11,7 +11,8 @@ import {
 import { createYoutubeDurationProbeClient, type YoutubeDurationProbeClient } from '../youtube-duration-client';
 import { isUnverifiedSongsAdminConfigured, removeUnverifiedSongRecord } from './unverified-songs-admin-client';
 
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
+dotenv.config({ path: '.env.local', override: true });
 
 (async () => {
   let maxId = currentSongs.reduce((acc, song) => Math.max(acc, song.shortId ?? 0), 0);

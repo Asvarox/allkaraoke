@@ -3,12 +3,20 @@ import { Page } from '@playwright/test';
 export class AdminUnverifiedSongsTablePO {
   constructor(private page: Page) {}
 
+  public deleteButtonForSharedSongId(sharedSongId: string) {
+    return this.page.locator(`[data-test="delete-unverified-song"][data-song="${sharedSongId}"]`);
+  }
+
+  public editButtonForSharedSongId(sharedSongId: string) {
+    return this.page.locator(`[data-test="edit-unverified-song"][data-song="${sharedSongId}"]`);
+  }
+
   public rowContaining(text: string) {
     return this.page.getByRole('row').filter({ hasText: text });
   }
 
   public rowWithTitle(title: string) {
-    return this.page.getByRole('row').filter({ has: this.page.getByRole('cell', { name: title, exact: true }) });
+    return this.page.getByRole('row').filter({ has: this.page.getByRole('cell', { name: title.trim(), exact: true }) });
   }
 
   public tableRow(rowNumber: number) {
@@ -34,12 +42,10 @@ export class AdminUnverifiedSongsTablePO {
   }
 
   public async deleteSongBySharedSongId(sharedSongId: string) {
-    await this.rowContaining(sharedSongId)
-      .getByLabel(/Delete/)
-      .click();
+    await this.deleteButtonForSharedSongId(sharedSongId).click();
   }
 
   public async editSongBySharedSongId(sharedSongId: string) {
-    await this.rowContaining(sharedSongId).getByLabel(/Edit/).click();
+    await this.editButtonForSharedSongId(sharedSongId).click();
   }
 }

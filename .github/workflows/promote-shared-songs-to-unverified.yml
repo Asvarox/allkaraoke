@@ -3,20 +3,16 @@ name: 'Promote shared songs to unverified songs'
 on:
   workflow_dispatch:
     inputs:
-      days_from:
-        description: 'How many days back to fetch when cursor is not set'
+      hours_from:
+        description: 'How many hours back to fetch when cursor is not set; blank keeps the default 14h lookback'
         required: false
         default: ''
-      days_to:
-        description: 'How many days back as upper bound when cursor is not set'
-        required: false
-        default: ''
-      cursor:
-        description: 'Optional created_at cursor override (ISO date)'
+      hours_to:
+        description: 'How many hours back as upper bound when cursor is not set'
         required: false
         default: ''
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */12 * * *'
 
 concurrency:
   group: promote-shared-songs-to-unverified
@@ -38,11 +34,10 @@ jobs:
         timeout-minutes: 3
       - name: Promote shared songs to unverified songs
         run: |
-          DAYS_FROM="${{ github.event.inputs.days_from }}"
-          DAYS_TO="${{ github.event.inputs.days_to }}"
-          CURSOR="${{ github.event.inputs.cursor }}"
+          HOURS_FROM="${{ github.event.inputs.hours_from }}"
+          HOURS_TO="${{ github.event.inputs.hours_to }}"
 
-          pnpm ts-node scripts/cicd/promote-shared-songs-to-unverified.ts "$DAYS_FROM" "$DAYS_TO" "$CURSOR"
+          pnpm ts-node scripts/cicd/promote-shared-songs-to-unverified.ts "$HOURS_FROM" "$HOURS_TO"
       - name: Regenerate unverified songs index
         run: |
           pnpm ts-node scripts/cicd/regenerate-unverified-songs-index.ts "${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}"

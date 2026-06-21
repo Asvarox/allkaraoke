@@ -67,6 +67,8 @@ Workflow: `.github/workflows/promote-shared-songs-to-unverified.yml`
 The sync job:
 
 1. Queries PostHog events in a time window
+   Default scheduled/manual no-input run: last 14 hours
+   Manual override: `hours_from` and `hours_to`
 2. Validates parsed song structure and required metadata
 3. Normalizes ESC suffix in titles when applicable
 4. Validates lyric timing against YouTube duration (with fallback cap)
@@ -74,6 +76,8 @@ The sync job:
    - `POST /unverified-songs-admin` to upsert
    - `DELETE /unverified-songs-admin?id=<id>` to remove
    - `PUT /unverified-songs-admin` to regenerate the index
+
+The GitHub Actions schedule runs twice a day.
 
 ### 4.3 Runtime usage in app
 
