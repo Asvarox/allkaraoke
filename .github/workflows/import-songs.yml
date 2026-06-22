@@ -27,6 +27,7 @@ jobs:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
       UNVERIFIED_SONGS_ADMIN_URL: ${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}
       UNVERIFIED_SONGS_ADMIN_TOKEN: ${{ secrets.UNVERIFIED_SONGS_ADMIN_TOKEN || secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      IMPORT_SONGS_SUMMARY_PATH: /tmp/import-songs-summary-${{ github.run_id }}-${{ github.run_attempt }}.json
     steps:
       - uses: actions/checkout@v5
         with:
@@ -51,3 +52,25 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
+      - name: Add import songs summary
+        if: ${{ always() }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const summaryPath = process.env.IMPORT_SONGS_SUMMARY_PATH;
+            let importedSongs = [];
+
+            if (summaryPath && fs.existsSync(summaryPath)) {
+              const parsedSummary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+              importedSongs = Array.isArray(parsedSummary.importedSongs) ? parsedSummary.importedSongs : [];
+            }
+
+            const songLines = importedSongs.length
+              ? importedSongs.map(({ id, status }) => `* ${id} - ${status}`).join('\n')
+              : '* No songs processed';
+            const markdown = ['# Import songs summary', '', songLines].join('\n');
+
+            await core.summary
+              .addRaw(markdown)
+              .write();

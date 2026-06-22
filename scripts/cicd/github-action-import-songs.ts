@@ -1,6 +1,7 @@
 import { execSync } from 'child_process';
 import dotenv from 'dotenv';
 import fs from 'fs';
+import { writeFile } from 'node:fs/promises';
 import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
@@ -14,9 +15,18 @@ import { isUnverifiedSongsAdminConfigured, removeUnverifiedSongRecord } from './
 dotenv.config({ path: '.env' });
 dotenv.config({ path: '.env.local', override: true });
 
+type ImportedSongStatus = 'ADDED' | 'UPDATED' | 'DELETED' | 'SKIPPED' | 'BROKEN';
+
+type ImportedSongSummary = {
+  id: string;
+  status: ImportedSongStatus;
+};
+
 (async () => {
   let maxId = currentSongs.reduce((acc, song) => Math.max(acc, song.shortId ?? 0), 0);
   let durationProbeClient: YoutubeDurationProbeClient | null = null;
+  const summaryOutputPath = process.env.IMPORT_SONGS_SUMMARY_PATH;
+  const importedSongs = new Map<string, ImportedSongSummary>();
 
   const { requestPostHog } = require('../utils.cjs');
 
@@ -67,22 +77,45 @@ dotenv.config({ path: '.env.local', override: true });
 
   const addedSongs: string[] = [];
   const promotedSongs = new Set<string>();
+  const rememberSongStatus = (id: string | undefined, status: ImportedSongStatus) => {
+    const normalizedId = id?.trim();
+    if (!normalizedId) {
+      return;
+    }
+
+    importedSongs.set(normalizedId, {
+      id: normalizedId,
+      status,
+    });
+  };
 
   try {
-    for (const [songTxt, songId] of response.results as [string, string][]) {
+    for (const [songTxt, songId] of response.results as [string | null, string | null][]) {
+      let currentSongId = songId ?? undefined;
+
       try {
         if (!songTxt && songId) {
           if (addedSongs.includes(songId)) {
             fs.rmSync(`./public/songs/${songId}.txt`, { force: true });
+            rememberSongStatus(songId, 'DELETED');
             console.log(`Deleting song ${songId}`);
           } else {
+            rememberSongStatus(songId, 'SKIPPED');
             console.log(`Song ${songId} marked as deleted, but not found in added songs, leaving as is`);
           }
           continue;
         }
 
+        if (!songTxt) {
+          rememberSongStatus(currentSongId, 'SKIPPED');
+          console.log('Skipping song event without song contents', songId);
+          continue;
+        }
+
         const song = convertTxtToSong(normalizeSharedSongTxt(songTxt));
+        currentSongId = song.id || currentSongId;
         if (!song.id) {
+          rememberSongStatus(currentSongId, 'BROKEN');
           console.log('Song has no ID', song, songId);
           continue;
         }
@@ -98,9 +131,11 @@ dotenv.config({ path: '.env.local', override: true });
           // song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
           song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
           song.shortId = oldSong.shortId;
+          rememberSongStatus(song.id, 'UPDATED');
         } else {
           addedSongs.push(song.id);
           song.shortId = ++maxId;
+          rememberSongStatus(song.id, 'ADDED');
         }
 
         if (song.video) {
@@ -120,6 +155,7 @@ dotenv.config({ path: '.env.local', override: true });
         fs.writeFileSync(songFilePath, convertSongToTxt(song));
         console.log(`Added/updated song ${song.id} - SID ${song.shortId}`);
       } catch (e) {
+        rememberSongStatus(currentSongId, 'BROKEN');
         console.warn(`Couldn't convert song`, songId, e, songTxt);
       }
     }
@@ -155,5 +191,19 @@ dotenv.config({ path: '.env.local', override: true });
     if (durationProbeClient) {
       await durationProbeClient.close();
     }
+
+    const summary = {
+      importedSongs: Array.from(importedSongs.values()),
+    };
+
+    if (summaryOutputPath) {
+      try {
+        await writeFile(summaryOutputPath, JSON.stringify(summary, null, 2));
+      } catch (error) {
+        console.warn('Failed to write import songs summary output', { summaryOutputPath, error });
+      }
+    }
+
+    console.log(JSON.stringify(summary, null, 2));
   }
 })();
