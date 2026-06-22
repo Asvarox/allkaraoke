@@ -1,0 +1,65 @@
+name: 'Promote shared songs to unverified songs'
+
+on:
+  workflow_dispatch:
+    inputs:
+      hours_from:
+        description: 'How many hours back to fetch when cursor is not set; blank keeps the default 14h lookback'
+        required: false
+        default: ''
+      hours_to:
+        description: 'How many hours back as upper bound when cursor is not set'
+        required: false
+        default: ''
+  schedule:
+    - cron: '0 */12 * * *'
+
+concurrency:
+  group: promote-shared-songs-to-unverified
+  cancel-in-progress: false
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+      UNVERIFIED_SONGS_ADMIN_URL: ${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}
+      UNVERIFIED_SONGS_ADMIN_TOKEN: ${{ secrets.UNVERIFIED_SONGS_ADMIN_TOKEN || secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      UNVERIFIED_SONGS_SUMMARY_PATH: ${{ github.workspace }}/promote-shared-songs-to-unverified-summary.json
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: npx playwright install chromium
+        timeout-minutes: 3
+      - name: Promote shared songs to unverified songs
+        run: |
+          HOURS_FROM="${{ github.event.inputs.hours_from }}"
+          HOURS_TO="${{ github.event.inputs.hours_to }}"
+
+          pnpm ts-node scripts/cicd/promote-shared-songs-to-unverified.ts "$HOURS_FROM" "$HOURS_TO"
+      - name: Regenerate unverified songs index
+        run: |
+          pnpm ts-node scripts/cicd/regenerate-unverified-songs-index.ts "${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}"
+      - name: Add unverified songs promotion summary
+        if: ${{ always() }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const summaryPath = process.env.UNVERIFIED_SONGS_SUMMARY_PATH;
+            let analyzedSongs = [];
+
+            if (summaryPath && fs.existsSync(summaryPath)) {
+              const parsedSummary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+              analyzedSongs = Array.isArray(parsedSummary.analyzedSongs) ? parsedSummary.analyzedSongs : [];
+            }
+
+            const songLines = analyzedSongs.length
+              ? analyzedSongs.map(({ id, status }) => `* ${id} - ${status}`).join('\n')
+              : '* No songs analyzed';
+            const markdown = ['# Shared songs to unverified songs promotion summary', '', songLines].join('\n');
+
+            await core.summary
+              .addRaw(markdown)
+              .write();

@@ -6,12 +6,12 @@ import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { clearAdminPassword, getAdminPassword, setAdminPassword } from './admin-password';
 import { LoginScreen } from './login-screen';
-import { SharedSongManagement } from './shared-song-management';
 import { TopBar } from './top-bar';
+import { UnverifiedSongManagement } from './unverified-song-management';
 
-type AdminModule = 'shared-songs';
+type AdminModule = 'unverified-songs';
 
-const modules: { id: AdminModule; label: string }[] = [{ id: 'shared-songs', label: 'Shared Songs' }];
+const modules: { id: AdminModule; label: string }[] = [{ id: 'unverified-songs', label: 'Unverified Songs' }];
 
 export default function Admin() {
   useBackground(false);
@@ -19,7 +19,7 @@ export default function Admin() {
   const navigate = useSmoothNavigate();
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [activeModule, setActiveModule] = useState<AdminModule>('shared-songs');
+  const [activeModule, setActiveModule] = useState<AdminModule>('unverified-songs');
 
   useEffect(() => {
     const storedPassword = getAdminPassword();
@@ -40,7 +40,7 @@ export default function Admin() {
     clearAdminPassword();
     setPassword('');
     setIsAuthenticated(false);
-    setActiveModule('shared-songs');
+    setActiveModule('unverified-songs');
     navigate('admin/');
   };
 
@@ -64,7 +64,7 @@ export default function Admin() {
               {!isAuthenticated ? (
                 <LoginScreen onSubmit={handleLogin} />
               ) : (
-                activeModule === 'shared-songs' && <SharedSongManagement password={password} />
+                activeModule === 'unverified-songs' && <UnverifiedSongManagement password={password} />
               )}
             </div>
           </div>

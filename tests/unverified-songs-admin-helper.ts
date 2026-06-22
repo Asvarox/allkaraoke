@@ -6,14 +6,17 @@ dotenv.config({ path: '.env' });
 dotenv.config({ path: '.env.local', override: true });
 dotenv.config({ path: '.dev.vars', override: true });
 
-export const sharedCloudflareSongTxt = readFileSync('./tests/fixtures/songs/shared-cloudflare-e2e.txt', {
+export const unverifiedCloudflareSongTxt = readFileSync('./tests/fixtures/songs/shared-cloudflare-e2e.txt', {
   encoding: 'utf-8',
 });
-const sharedSongsAdminToken = process.env.SHARED_SONGS_ADMIN_TOKEN ?? 'local-shared-songs-admin-token';
+const unverifiedSongsAdminToken =
+  process.env.UNVERIFIED_SONGS_ADMIN_TOKEN ??
+  process.env.SHARED_SONGS_ADMIN_TOKEN ??
+  'local-unverified-songs-admin-token';
 
 export const adminPanelPassword = process.env.ADMIN_PANEL_PASSWORD ?? '12345';
 
-export const sharedCloudflareSongFixture = {
+export const unverifiedCloudflareSongFixture = {
   songId: 'shared-cloudflare-e2e-song',
   title: 'Cloudflare Shared Unique Song',
   artist: 'Cloudflare Artist',
@@ -23,42 +26,42 @@ export const sharedCloudflareSongFixture = {
 
 const adminTokenHeaders = {
   'Content-Type': 'application/json',
-  'x-shared-songs-admin-token': sharedSongsAdminToken,
+  'x-unverified-songs-admin-token': unverifiedSongsAdminToken,
 };
 
-export const createExternalSongId = (testInfo: TestInfo) =>
+export const createSharedSongId = (testInfo: TestInfo) =>
   `admin-${testInfo.project.name}-${testInfo.title}`
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
-type SharedSongFixtureOverrides = Partial<typeof sharedCloudflareSongFixture> & {
-  externalSongId?: string;
+type UnverifiedSongFixtureOverrides = Partial<typeof unverifiedCloudflareSongFixture> & {
+  sharedSongId?: string;
   firstSeenAt?: number;
   updated?: number;
   songTxt?: string;
   sourceUserId?: string;
 };
 
-export const upsertSharedSong = async (
+export const upsertUnverifiedSong = async (
   request: APIRequestContext,
   {
-    externalSongId = sharedCloudflareSongFixture.songId,
+    sharedSongId = unverifiedCloudflareSongFixture.songId,
     sourceUserId = 'e2e',
     ...overrides
-  }: SharedSongFixtureOverrides = {},
+  }: UnverifiedSongFixtureOverrides = {},
 ) => {
   const now = Date.now();
   const firstSeenAt = overrides.firstSeenAt ?? now;
   const payload = {
-    externalSongId,
-    songId: sharedCloudflareSongFixture.songId,
-    songTxt: sharedCloudflareSongTxt,
-    artist: sharedCloudflareSongFixture.artist,
-    title: sharedCloudflareSongFixture.title,
-    language: sharedCloudflareSongFixture.language,
-    videoId: sharedCloudflareSongFixture.videoId,
-    verifiedAt: now,
+    sharedSongId,
+    songId: unverifiedCloudflareSongFixture.songId,
+    songTxt: unverifiedCloudflareSongTxt,
+    artist: unverifiedCloudflareSongFixture.artist,
+    title: unverifiedCloudflareSongFixture.title,
+    language: unverifiedCloudflareSongFixture.language,
+    videoId: unverifiedCloudflareSongFixture.videoId,
+    validatedAt: now,
     firstSeenAt,
     updated: overrides.updated ?? now,
     lastSeenAt: now,
@@ -67,7 +70,7 @@ export const upsertSharedSong = async (
     ...overrides,
   };
 
-  const response = await request.post('/shared-songs-admin', {
+  const response = await request.post('/unverified-songs-admin', {
     headers: adminTokenHeaders,
     data: payload,
   });
@@ -76,8 +79,8 @@ export const upsertSharedSong = async (
   return payload;
 };
 
-export const removeSharedSong = async (request: APIRequestContext, externalSongId: string) => {
-  await request.delete(`/shared-songs-admin?id=${encodeURIComponent(externalSongId)}`, {
+export const removeUnverifiedSong = async (request: APIRequestContext, sharedSongId: string) => {
+  await request.delete(`/unverified-songs-admin?id=${encodeURIComponent(sharedSongId)}`, {
     headers: adminTokenHeaders,
   });
 };

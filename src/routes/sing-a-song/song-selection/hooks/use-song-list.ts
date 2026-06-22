@@ -3,8 +3,8 @@ import { ReactNode, useMemo } from 'react';
 import { SongPreview } from '~/interfaces';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import useRecommendedSongs from '~/routes/sing-a-song/song-selection/hooks/use-recommended-songs';
-import useSharedSongsSearch from '~/routes/sing-a-song/song-selection/hooks/use-shared-songs-search';
 import { useSongListFilter } from '~/routes/sing-a-song/song-selection/hooks/use-song-list-filter';
+import useUnverifiedSongsSearch from '~/routes/sing-a-song/song-selection/hooks/use-unverified-songs-search';
 
 export interface SongGroup {
   name: string;
@@ -38,7 +38,7 @@ export default function useSongList(additionalSong: string | null) {
     useSongListFilter(songList.data, popular, isLoading, additionalSong);
 
   const existingSongIds = useMemo(() => new Set(songList.data.map((song) => song.id)), [songList.data]);
-  const { sharedSongs, isLoading: sharedSongsLoading } = useSharedSongsSearch({
+  const { unverifiedSongs, isLoading: unverifiedSongsLoading } = useUnverifiedSongsSearch({
     searchText: filters.search ?? '',
     regularResultsCount: filteredList.length,
     fallbackThreshold: 8,
@@ -46,8 +46,8 @@ export default function useSongList(additionalSong: string | null) {
   });
 
   const mergedSearchList = useMemo(
-    () => (filters.search ? [...filteredList, ...sharedSongs] : filteredList),
-    [filters.search, filteredList, sharedSongs],
+    () => (filters.search ? [...filteredList, ...unverifiedSongs] : filteredList),
+    [filters.search, filteredList, unverifiedSongs],
   );
 
   const groupedSongList = useMemo(() => {
@@ -59,10 +59,10 @@ export default function useSongList(additionalSong: string | null) {
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
 
-      if (sharedSongs.length > 0) {
+      if (unverifiedSongs.length > 0) {
         groups.push({
-          name: 'Unverified',
-          songs: sharedSongs.map((song, index) => ({
+          name: 'Unverified songs',
+          songs: unverifiedSongs.map((song, index) => ({
             index: filteredList.length + index,
             song,
             isPopular: false,
@@ -114,12 +114,12 @@ export default function useSongList(additionalSong: string | null) {
 
       return finalGroups;
     }
-  }, [filteredList, filters.search, popular, playlist, sharedSongs]);
+  }, [filteredList, filters.search, popular, playlist, unverifiedSongs]);
 
   return {
     groupedSongList,
     songList: mergedSearchList,
-    sharedSongsLoading: filteredList.length === 0 && sharedSongsLoading,
+    unverifiedSongsLoading: filteredList.length === 0 && unverifiedSongsLoading,
     filters,
     setFilters,
     isLoading,

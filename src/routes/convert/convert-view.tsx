@@ -16,8 +16,8 @@ import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
 import { getAdminPassword } from '~/routes/admin/admin-password';
-import { getNextAdminSharedSongProcessingUrl } from '~/routes/admin/shared-song-processing-queue';
-import { listAdminSharedSongs, updateAdminSharedSong } from '~/routes/admin/shared-songs-admin-api';
+import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
 import SongMetadata, { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
@@ -26,7 +26,7 @@ import { shareSong } from '~/routes/edit/share-songs-modal';
 
 interface Props {
   song?: Song;
-  adminSharedSongExternalId?: string;
+  adminUnverifiedSongId?: string;
 }
 
 function isEmptyValue<T>(v: T | T[] | undefined) {
@@ -60,7 +60,7 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   artistOrigin: song?.artistOrigin,
 });
 
-export default function ConvertView({ song, adminSharedSongExternalId }: Props) {
+export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
@@ -216,9 +216,9 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
   };
 
   const getAdminProcessingQueueRedirect = async () => {
-    const songs = await listAdminSharedSongs(getAdminPassword());
+    const songs = await listAdminUnverifiedSongs(getAdminPassword());
 
-    return getNextAdminSharedSongProcessingUrl(songs, adminSharedSongExternalId!);
+    return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
   };
 
   const saveSong = async () => {
@@ -226,26 +226,26 @@ export default function ConvertView({ song, adminSharedSongExternalId }: Props) 
     setSaveError(null);
 
     try {
-      if (adminSharedSongExternalId) {
-        const saveAdminSharedSong = async () => {
+      if (adminUnverifiedSongId) {
+        const saveAdminUnverifiedSong = async () => {
           await SongDao.store(finalSong!);
           await shareSong(finalSong!.id);
-          await updateAdminSharedSong(adminSharedSongExternalId, finalSong!);
+          await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
         };
 
         if (isAdminProcessingQueue) {
-          await saveAdminSharedSong();
+          await saveAdminUnverifiedSong();
           const nextUrl = await getAdminProcessingQueueRedirect();
           navigate(nextUrl);
           return;
         }
 
-        await saveAdminSharedSong();
+        await saveAdminUnverifiedSong();
         navigate('admin/');
         return;
       }
 
-      if (redirect && !adminSharedSongExternalId) {
+      if (redirect && !adminUnverifiedSongId) {
         // dont wait for the share to finish if redirect is set
         SongDao.store(finalSong!);
         shareSong(finalSong!.id);

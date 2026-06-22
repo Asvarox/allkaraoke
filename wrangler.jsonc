@@ -10,6 +10,7 @@
   },
   "kv_namespaces": [
     {
+      // Legacy binding name kept to avoid KV namespace migration. Runtime also accepts UNVERIFIED_SONGS_KV.
       "binding": "SHARED_SONGS_KV",
       "id": "3bf3f3ab4c0e4d30b5b9faf5b6d0ebda",
       "preview_id": "4c32b3f25d73438390962814c3c1ed5a",
@@ -30,9 +31,10 @@
       "head_sampling_rate": 1,
     },
   },
-  // Secrets (SHARED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.
-  // Production: set via `wrangler secret put SHARED_SONGS_ADMIN_TOKEN`
+  // Secrets (UNVERIFIED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.
+  // Production: set via `wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN`
+  // Legacy SHARED_SONGS_ADMIN_TOKEN remains accepted as a fallback.
   // Production: set via `wrangler secret put ADMIN_PANEL_PASSWORD`
-  // Local dev: add to .dev.vars (gitignored), e.g. SHARED_SONGS_ADMIN_TOKEN=your-local-token
+  // Local dev: add to .dev.vars (gitignored), e.g. UNVERIFIED_SONGS_ADMIN_TOKEN=your-local-token
   // Local dev: add to .dev.vars (gitignored), e.g. ADMIN_PANEL_PASSWORD=your-local-admin-password
 }

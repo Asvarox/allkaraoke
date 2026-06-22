@@ -1,16 +1,18 @@
-import { onRequest as sharedSongBrowserAdminOnRequest } from '../functions/admin/shared-song';
-import { onRequest as sharedSongsBrowserAdminOnRequest } from '../functions/admin/shared-songs';
+import { onRequest as unverifiedSongBrowserAdminOnRequest } from '../functions/admin/unverified-song';
+import { onRequest as unverifiedSongsBrowserAdminOnRequest } from '../functions/admin/unverified-songs';
 import { onRequest as phDataOnRequest } from '../functions/ph-data/[[catchall]]';
 import { onRequest as proxyOnRequest } from '../functions/proxy';
-import { onRequest as sharedSongOnRequest } from '../functions/shared-song';
-import { onRequest as sharedSongsOnRequest } from '../functions/shared-songs';
-import { onRequest as sharedSongsAdminOnRequest } from '../functions/shared-songs-admin';
 import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
+import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
+import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
+import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverified-songs-admin';
 
 interface WorkerEnv {
   ADMIN_PANEL_PASSWORD?: string;
   ASSETS?: Fetcher;
+  UNVERIFIED_SONGS_ADMIN_TOKEN?: string;
   SHARED_SONGS_ADMIN_TOKEN?: string;
+  UNVERIFIED_SONGS_KV?: KVNamespace;
   SHARED_SONGS_KV?: KVNamespace;
 }
 
@@ -61,24 +63,24 @@ export default {
   fetch(request, env, executionContext) {
     const { pathname } = new URL(request.url);
 
-    if (pathname === '/shared-songs') {
-      return callPagesHandler(sharedSongsOnRequest as PagesLikeHandler, request, env, executionContext);
+    if (pathname === '/unverified-songs' || pathname === '/shared-songs') {
+      return callPagesHandler(unverifiedSongsOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
-    if (pathname === '/shared-song') {
-      return callPagesHandler(sharedSongOnRequest as PagesLikeHandler, request, env, executionContext);
+    if (pathname === '/unverified-song' || pathname === '/shared-song') {
+      return callPagesHandler(unverifiedSongOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
-    if (pathname === '/shared-songs-admin') {
-      return callPagesHandler(sharedSongsAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    if (pathname === '/unverified-songs-admin' || pathname === '/shared-songs-admin') {
+      return callPagesHandler(unverifiedSongsAdminOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
-    if (pathname === '/admin/shared-songs') {
-      return callPagesHandler(sharedSongsBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    if (pathname === '/admin/unverified-songs' || pathname === '/admin/shared-songs') {
+      return callPagesHandler(unverifiedSongsBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
-    if (pathname === '/admin/shared-song') {
-      return callPagesHandler(sharedSongBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    if (pathname === '/admin/unverified-song' || pathname === '/admin/shared-song') {
+      return callPagesHandler(unverifiedSongBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
     if (pathname === '/proxy') {

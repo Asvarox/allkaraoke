@@ -2,7 +2,7 @@
 
 > For Claude: REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-Goal: Build a hybrid shared-song workflow where PostHog remains submission intake, GitHub Actions verifies and syncs shared songs into Cloudflare every 6 hours, and the app can discover, play, rate, and edit unverified shared songs.
+Goal: Build a hybrid shared-song workflow where PostHog remains submission intake, GitHub Actions verifies and syncs shared songs into Cloudflare every 6 hours, and the app can discover, play, rate, and edit unverified songs.
 
 Architecture: Keep the current share action unchanged and treat PostHog as source intake. A scheduled CI workflow processes event deltas, validates each candidate, and upserts searchable records into Cloudflare storage. Runtime search fetches from Cloudflare only as a fallback, while gameplay and editor both use the same single-song Cloudflare fetch endpoint for full song content.
 
@@ -19,8 +19,8 @@ In scope:
 - Show Cloudflare shared songs in Song Selection V2 only when regular result count is below 8
 - Render shared songs as a separate result group below regular results
 - Allow selecting and playing shared songs through the normal game path
-- Add warning before playing an unverified shared song
-- Force feedback after singing unverified shared songs regardless of completion percentage
+- Add warning before playing an unverified song
+- Force feedback after singing unverified songs regardless of completion percentage
 - Emit separate PostHog event rate-unverified-song with explicit ok and bad states
 - Support edit deep-link with externalSong query parameter
 - Remove Cloudflare pending copies when songs are promoted into library by import workflow
@@ -41,12 +41,12 @@ Submission source:
 
 Cloudflare shared-song record (suggested fields):
 
-- externalSongId: stable Cloudflare key for shared pool (recommend same as parsed song id)
+- sharedSongId: stable Cloudflare key for shared pool (recommend same as parsed song id)
 - songId: parsed song id from txt
 - songTxt: full UltraStar content
 - songTxtHash: hash of normalized txt to detect exact duplicates
 - artist, title, language, videoId: extracted fields for search cards
-- verifiedAt: timestamp of latest verification run
+- validatedAt: timestamp of latest verification run
 - verificationStatus: pending, valid, invalid
 - verificationErrors: list of failed checks
 - firstSeenAt, lastSeenAt: timestamps from PostHog processing
@@ -108,14 +108,14 @@ Case C: different songId but semantically similar title and artist
 Files likely edited:
 
 - Modify: src/interfaces.ts
-- Create: src/modules/Songs/sharedSongs/types.ts
+- Create: src/modules/Songs/unverifiedSongs/types.ts
 
 Changes:
 
 - Extend SongPreview shape with optional fields:
   - sourceType with values library or shared
-  - externalSongId
-  - isUnverifiedSharedSong
+  - sharedSongId
+  - isUnverifiedSong
 - Add dedicated types for shared search result and shared full-song payload.
 
 Edge cases handled:
@@ -126,13 +126,13 @@ Edge cases handled:
 
 Files likely edited:
 
-- Create: src/modules/Songs/sharedSongs/api.ts
-- Create: src/modules/Songs/sharedSongs/normalize.ts
+- Create: src/modules/Songs/unverifiedSongs/api.ts
+- Create: src/modules/Songs/unverifiedSongs/normalize.ts
 
 Changes:
 
-- Add getSharedSongsSearch(query, limit)
-- Add getSharedSongById(externalSongId)
+- Add getUnverifiedSongsSearch(query, limit)
+- Add getUnverifiedSongById(sharedSongId)
 - Normalize API payload into SongPreview-compatible objects.
 
 Edge cases handled:
@@ -144,9 +144,9 @@ Edge cases handled:
 
 Files likely edited:
 
-- Create: functions/shared-songs.ts
-- Create: functions/shared-song.ts
-- Create: functions/shared-songs-admin.ts
+- Create: functions/unverified-songs.ts
+- Create: functions/unverified-song.ts
+- Create: functions/unverified-songs-admin.ts
 - Modify: functions/tsconfig.json
 
 Changes:
@@ -171,7 +171,7 @@ Edge cases handled:
 
 Files likely edited:
 
-- Create: scripts/cicd/githubActionSyncSharedSongs.ts
+- Create: scripts/cicd/githubActionSyncUnverifiedSongs.ts
 - Modify: scripts/utils.cjs
 
 Changes:
@@ -195,7 +195,7 @@ Edge cases handled:
 
 Files likely edited:
 
-- Create: .github/workflows/sync-shared-songs.yml
+- Create: .github/workflows/promote-shared-songs-to-unverified.yml
 
 Changes:
 
@@ -247,7 +247,7 @@ Changes:
 
 - Before onPlay, if song is shared unverified, show warning modal.
 - On accept, continue to play.
-- Ensure selected song setup carries sourceType and externalSongId.
+- Ensure selected song setup carries sourceType and sharedSongId.
 
 Edge cases handled:
 
@@ -265,7 +265,7 @@ Changes:
 
 - Extend useSong input so it can load either:
   - library song by songId using current SongDao flow
-  - shared song by externalSongId through shared-song endpoint
+  - shared song by sharedSongId through shared-song endpoint
 - Keep parser and processSong pipeline the same after txt is loaded.
 
 Reason this task is required:
@@ -277,7 +277,7 @@ Edge cases handled:
 - If shared fetch fails before play starts, show non-blocking error and return to selection.
 - If shared payload is malformed despite prior verification, fail gracefully and log telemetry.
 
-### Task 9: Split and force feedback behavior for unverified shared songs
+### Task 9: Split and force feedback behavior for unverified songs
 
 Files likely edited:
 
@@ -292,7 +292,7 @@ Changes:
 - Payload rules:
   - no issues selected: feedbackType ok and issues []
   - issues selected: feedbackType bad and issues list
-- Force showing RateSong for unverified shared songs regardless of completion percentage.
+- Force showing RateSong for unverified songs regardless of completion percentage.
 - Exception: do not force if same song id exists in user regular index.
 
 Edge cases handled:
@@ -367,9 +367,9 @@ Manual checks:
 Core frontend:
 
 - src/interfaces.ts
-- src/modules/Songs/sharedSongs/types.ts (new)
-- src/modules/Songs/sharedSongs/api.ts (new)
-- src/modules/Songs/sharedSongs/normalize.ts (new)
+- src/modules/Songs/unverifiedSongs/types.ts (new)
+- src/modules/Songs/unverifiedSongs/api.ts (new)
+- src/modules/Songs/unverifiedSongs/normalize.ts (new)
 - src/routes/SingASong/SongSelectionV2/Hooks/useSongList.ts
 - src/routes/SingASong/SongSelectionV2/Hooks/useSongListFilter.ts
 - src/routes/SingASong/SongSelectionV2/Components/SongCard.tsx
@@ -384,14 +384,14 @@ Core frontend:
 
 Backend and CI:
 
-- functions/shared-songs.ts (new)
-- functions/shared-song.ts (new)
-- functions/shared-songs-admin.ts (new)
+- functions/unverified-songs.ts (new)
+- functions/unverified-song.ts (new)
+- functions/unverified-songs-admin.ts (new)
 - functions/tsconfig.json
-- scripts/cicd/githubActionSyncSharedSongs.ts (new)
+- scripts/cicd/githubActionSyncUnverifiedSongs.ts (new)
 - scripts/cicd/githubActionImportSongs.ts
 - scripts/utils.cjs
-- .github/workflows/sync-shared-songs.yml (new)
+- .github/workflows/promote-shared-songs-to-unverified.yml (new)
 - .github/workflows/import-songs.yml
 
 ---

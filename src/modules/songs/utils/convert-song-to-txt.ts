@@ -30,8 +30,8 @@ export default function convertSongToTxt(song: Song) {
       | 'local'
       | 'isBuiltIn'
       | 'sourceType'
-      | 'externalSongId'
-      | 'isUnverifiedSharedSong'
+      | 'sharedSongId'
+      | 'isUnverifiedSong'
     >,
     string | undefined
   > = {

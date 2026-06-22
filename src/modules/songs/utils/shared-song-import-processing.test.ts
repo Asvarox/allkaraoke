@@ -59,7 +59,7 @@ const createSong = (): Song => ({
   ],
 });
 
-describe('sharedSongProcessing', () => {
+describe('unverifiedSongProcessing', () => {
   it('extracts ESC edition from title suffix', () => {
     const song = createSong();
     song.title = 'My Song (ESC 2026 Bulgaria)';

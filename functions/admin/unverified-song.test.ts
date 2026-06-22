@@ -1,9 +1,9 @@
 import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { getSharedSong, upsertSharedSong } from '../shared-songs-store';
-import { generateSharedSongRecord } from '../test-utils';
-import { onRequest } from './shared-song';
+import { generateUnverifiedSongRecord } from '../test-utils';
+import { getUnverifiedSong, upsertUnverifiedSong } from '../unverified-songs-store';
+import { onRequest } from './unverified-song';
 
 const createEnv = (kv = workerEnv.SHARED_SONGS_KV) => ({
   ADMIN_PANEL_PASSWORD: 'admin-password',
@@ -35,19 +35,19 @@ const updatePayload = {
   videoId: 'newVideoId',
 };
 
-describe('browser shared song admin function', () => {
+describe('browser unverified song admin function', () => {
   it('returns unauthorized for missing or wrong password', async () => {
     const env = createEnv();
 
     const missingResponse = await onRequest({
-      request: new Request('https://example.com/admin/shared-song?id=external-1', {
+      request: new Request('https://example.com/admin/unverified-song?id=external-1', {
         method: 'PUT',
         body: JSON.stringify(updatePayload),
       }),
       env,
     } as EventContext<typeof env, string, unknown>);
     const wrongResponse = await onRequest({
-      request: new Request('https://example.com/admin/shared-song?id=external-1', {
+      request: new Request('https://example.com/admin/unverified-song?id=external-1', {
         method: 'PUT',
         headers: { 'x-admin-panel-password': 'wrong-password' },
         body: JSON.stringify(updatePayload),
@@ -59,32 +59,32 @@ describe('browser shared song admin function', () => {
     expect(wrongResponse.status).toBe(401);
   });
 
-  it('updates an existing shared song', async () => {
+  it('updates an existing unverified song', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
     const env = createEnv(kv);
-    await upsertSharedSong(kv, generateSharedSongRecord({ externalSongId: 'external-1' }));
+    await upsertUnverifiedSong(kv, generateUnverifiedSongRecord({ sharedSongId: 'external-1' }));
     vi.useFakeTimers();
     vi.setSystemTime(999);
 
     const response = await onRequest({
-      request: createRequest('https://example.com/admin/shared-song?id=external-1', updatePayload),
+      request: createRequest('https://example.com/admin/unverified-song?id=external-1', updatePayload),
       env,
     } as EventContext<typeof env, string, unknown>);
 
     await expect(response.json()).resolves.toEqual({ ok: true });
-    await expect(getSharedSong(kv, 'external-1')).resolves.toMatchObject({
-      externalSongId: 'external-1',
+    await expect(getUnverifiedSong(kv, 'external-1')).resolves.toMatchObject({
+      sharedSongId: 'external-1',
       songId: 'new-song',
       title: 'New Song',
       updated: 999,
     });
   });
 
-  it('returns not found when updating a missing shared song', async () => {
+  it('returns not found when updating a missing unverified song', async () => {
     const env = createEnv();
 
     const response = await onRequest({
-      request: createRequest('https://example.com/admin/shared-song?id=missing', updatePayload),
+      request: createRequest('https://example.com/admin/unverified-song?id=missing', updatePayload),
       env,
     } as EventContext<typeof env, string, unknown>);
 

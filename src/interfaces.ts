@@ -75,9 +75,9 @@ export interface Song {
   volume: number | undefined;
   manualVolume: number | undefined;
   id: string;
-  sourceType?: 'library' | 'shared';
-  externalSongId?: string;
-  isUnverifiedSharedSong?: boolean;
+  sourceType?: 'library' | 'unverified';
+  sharedSongId?: string;
+  isUnverifiedSong?: boolean;
   unsupportedProps: string[];
   mergedTrack: SongTrack;
 }

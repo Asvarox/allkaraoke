@@ -31,21 +31,21 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
   const { register } = useKeyboardNav({ enabled: !isInputModalOpen });
 
   const [rateSongOpen, setRateSongOpen] = useState(false);
-  const [isUnverifiedSharedSongFlow, setIsUnverifiedSharedSongFlow] = useState(false);
+  const [isUnverifiedSongFlow, setIsUnverifiedSongFlow] = useState(false);
   const handleExit = async () => {
     const progress = GameState.getSongCompletionProgress();
     const currentSong = GameState.getSong();
     const songPreview = (await SongsService.getIndex()).find((song) => song.id === currentSong?.id);
-    const shouldForceSharedRating = !!currentSong?.isUnverifiedSharedSong && !songPreview;
+    const shouldForceSharedRating = !!currentSong?.isUnverifiedSong && !songPreview;
 
     if (shouldForceSharedRating) {
-      setIsUnverifiedSharedSongFlow(true);
+      setIsUnverifiedSongFlow(true);
       setRateSongOpen(true);
       return;
     }
 
     if (!songPreview?.local && progress < 0.7) {
-      setIsUnverifiedSharedSongFlow(false);
+      setIsUnverifiedSongFlow(false);
       setRateSongOpen(true);
     } else {
       onExit?.();
@@ -88,7 +88,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
           onExit={onExit}
           register={register}
           song={GameState.getSong()}
-          isUnverifiedSharedSong={isUnverifiedSharedSongFlow}
+          isUnverifiedSong={isUnverifiedSongFlow}
         />
       )}
     </>

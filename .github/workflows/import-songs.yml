@@ -25,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
-      SHARED_SONGS_ADMIN_URL: ${{ secrets.SHARED_SONGS_ADMIN_URL }}
-      SHARED_SONGS_ADMIN_TOKEN: ${{ secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      UNVERIFIED_SONGS_ADMIN_URL: ${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}
+      UNVERIFIED_SONGS_ADMIN_TOKEN: ${{ secrets.UNVERIFIED_SONGS_ADMIN_TOKEN || secrets.SHARED_SONGS_ADMIN_TOKEN }}
     steps:
       - uses: actions/checkout@v5
         with:
