@@ -36,6 +36,8 @@ export default function Edit() {
   if (!song.data) return <>Loading</>;
 
   const adminUnverifiedSongId = isAdminEdit && sharedSongId ? sharedSongId : undefined;
+  const returnLink = adminUnverifiedSongId ? 'admin/' : 'edit/list/';
+  const returnLinkLabel = adminUnverifiedSongId ? 'Return to the unverified songs list' : 'Return to the song list';
 
   const getAdminProcessingQueueRedirect = async (password: string) => {
     const songs = await listAdminUnverifiedSongs(password);
@@ -72,8 +74,8 @@ export default function Edit() {
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
-        <Link to="edit/list/">
-          <a>Return to the song list</a>
+        <Link to={returnLink}>
+          <a>{returnLinkLabel}</a>
         </Link>
         <span data-test="edit-song-heading">
           <b>

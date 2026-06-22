@@ -19,7 +19,7 @@ export default function ManipulateBpm({ current, onChange, song }: Props) {
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
 
   return (
-    <div className="mb-2 flex items-start gap-2">
+    <div className="mb-2 flex flex-col items-stretch gap-6 md:flex-row md:gap-2">
       <TextField
         data-test="desired-end"
         size={'small'}
