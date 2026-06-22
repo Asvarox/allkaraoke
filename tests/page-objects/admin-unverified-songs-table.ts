@@ -31,6 +31,10 @@ export class AdminUnverifiedSongsTablePO {
     return this.page.getByRole('combobox', { name: /rows per page/i });
   }
 
+  public async rowsPerPageTagName() {
+    return this.rowsPerPageSelect().evaluate((element) => element.tagName);
+  }
+
   public async sortColumnDescending(name: string) {
     const defaultSortIcon = this.page.locator(`[aria-label="Sort by ${name} descending"] [data-testid="SyncAltIcon"]`);
     const ascendingSortIcon = this.page.locator(`[aria-label="Sorted by ${name} ascending"] svg`);
@@ -50,11 +54,21 @@ export class AdminUnverifiedSongsTablePO {
   }
 
   public async setRowsPerPage(pageSize: number) {
+    if ((await this.rowsPerPageTagName()) === 'SELECT') {
+      await this.rowsPerPageSelect().selectOption(String(pageSize));
+      return;
+    }
+
     await this.rowsPerPageSelect().click();
     await this.page.getByRole('option', { name: String(pageSize), exact: true }).click();
   }
 
   public async expectRowsPerPage(pageSize: number) {
+    if ((await this.rowsPerPageTagName()) === 'SELECT') {
+      await expect(this.rowsPerPageSelect()).toHaveValue(String(pageSize));
+      return;
+    }
+
     await expect(this.rowsPerPageSelect()).toContainText(String(pageSize));
   }
 

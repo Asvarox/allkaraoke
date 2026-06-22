@@ -191,8 +191,8 @@ test('persists unverified songs table page size and sorting after reload', async
   await pages.adminUnverifiedSongsPage.search(currentVisibleTitle);
   await pages.adminUnverifiedSongsPage.table.expectRowsPerPage(25);
   await pages.adminUnverifiedSongsPage.table.expectSortedDescending('Added');
-  await expect(pages.adminUnverifiedSongsPage.table.tableRow(1)).toContainText(currentVisibleTitle);
-  await expect(pages.adminUnverifiedSongsPage.table.tableRow(2)).toContainText(olderVisibleTitle);
+  await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(currentVisibleTitle)).toBeVisible();
+  await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(olderVisibleTitle)).toBeVisible();
 });
 
 test('saving during oldest-first processing redirects to the next unverified song', async ({

@@ -9,7 +9,7 @@ import {
   type MRT_PaginationState,
   type MRT_SortingState,
 } from 'material-react-table';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
@@ -77,7 +77,7 @@ const isValidSorting = (value: unknown): value is MRT_SortingState =>
 
 export function UnverifiedSongManagement({ password }: Props) {
   const navigate = useSmoothNavigate();
-  const isFirstRender = useRef(true);
+  const [hasHydratedPersistedState, setHasHydratedPersistedState] = useState(false);
   const [sorting, setSorting] = useState<MRT_SortingState>([]);
   const [pagination, setPagination] = useState<MRT_PaginationState>({
     pageIndex: 0,
@@ -127,10 +127,7 @@ export function UnverifiedSongManagement({ password }: Props) {
   const errorMessage = error instanceof Error ? error.message : null;
 
   useEffect(() => {
-    if (typeof localStorage === 'undefined') {
-      isFirstRender.current = false;
-      return;
-    }
+    if (typeof localStorage === 'undefined') return;
 
     try {
       const pageSizeValue = localStorage.getItem(UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY);
@@ -158,20 +155,20 @@ export function UnverifiedSongManagement({ password }: Props) {
       // Ignore malformed persisted settings and keep defaults.
     }
 
-    isFirstRender.current = false;
+    setHasHydratedPersistedState(true);
   }, []);
 
   useEffect(() => {
-    if (isFirstRender.current || typeof localStorage === 'undefined') return;
+    if (!hasHydratedPersistedState || typeof localStorage === 'undefined') return;
 
     localStorage.setItem(UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY, JSON.stringify(pagination.pageSize));
-  }, [pagination.pageSize]);
+  }, [hasHydratedPersistedState, pagination.pageSize]);
 
   useEffect(() => {
-    if (isFirstRender.current || typeof localStorage === 'undefined') return;
+    if (!hasHydratedPersistedState || typeof localStorage === 'undefined') return;
 
     localStorage.setItem(UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY, JSON.stringify(sorting));
-  }, [sorting]);
+  }, [hasHydratedPersistedState, sorting]);
 
   const handleDelete = async (sharedSongId: string) => {
     if (!global.confirm('Remove this unverified song from Cloudflare KV?')) return;
