@@ -196,7 +196,7 @@ export const regenerateIndex = async (kvNamespace: KVNamespace) => {
       language,
       videoId,
       firstSeenAt,
-      updated,
+      updated: updated ?? firstSeenAt,
     }));
 
   await kvNamespace.put(LEGACY_SHARED_SONGS_INDEX_KEY, JSON.stringify(indexEntries));

@@ -94,4 +94,25 @@ describe('browser unverified songs admin function', () => {
       }),
     ]);
   });
+
+  it('falls back to firstSeenAt when regenerating an index entry without updated', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+    const legacyRecord = generateUnverifiedSongRecord({ sharedSongId: 'external-1', firstSeenAt: 123 });
+    delete (legacyRecord as Partial<typeof legacyRecord>).updated;
+    await kv.put('shared-song:external-1', JSON.stringify(legacyRecord));
+
+    const response = await fetchWorker('https://example.com/admin/unverified-songs', createRequest({ method: 'PUT' }));
+
+    await expect(response.json()).resolves.toEqual({ ok: true });
+
+    const listResponse = await fetchWorker('https://example.com/admin/unverified-songs', createRequest());
+
+    await expect(listResponse.json()).resolves.toEqual([
+      expect.objectContaining({
+        sharedSongId: 'external-1',
+        firstSeenAt: 123,
+        updated: 123,
+      }),
+    ]);
+  });
 });

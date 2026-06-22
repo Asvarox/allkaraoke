@@ -86,6 +86,23 @@ describe('unverifiedSongsStore KV behavior', () => {
     ]);
   });
 
+  it('falls back to firstSeenAt when regenerated index record has no updated timestamp', async () => {
+    const kv = workerEnv.SHARED_SONGS_KV;
+    const legacyRecord = generateUnverifiedSongRecord({ sharedSongId: 'external-1', firstSeenAt: 123 });
+    delete (legacyRecord as Partial<typeof legacyRecord>).updated;
+    await kv.put('shared-song:external-1', JSON.stringify(legacyRecord));
+
+    await regenerateIndex(kv);
+
+    expect(await listUnverifiedSongs(kv)).toEqual([
+      expect.objectContaining({
+        sharedSongId: 'external-1',
+        firstSeenAt: 123,
+        updated: 123,
+      }),
+    ]);
+  });
+
   it('replaces record on upsert even when hash matches', async () => {
     const kv = workerEnv.SHARED_SONGS_KV;
 
