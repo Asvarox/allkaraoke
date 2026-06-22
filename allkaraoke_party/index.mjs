@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "50d3062bae71f9ad508e3c23cdd71dd21084a28f" };
+		e.SENTRY_RELEASE = { id: "a453499b8140f41a0915a09bac9d2b756152155f" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "66fef4e2-c7db-4273-ae13-349c093cff79", e._sentryDebugIdIdentifier = "sentry-dbid-66fef4e2-c7db-4273-ae13-349c093cff79");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "87c6c9fc-895f-40e7-9a15-5ae82948631d", e._sentryDebugIdIdentifier = "sentry-dbid-87c6c9fc-895f-40e7-9a15-5ae82948631d");
 	} catch (e) {}
 })();
 var responseHeaders$3 = { "Content-Type": "application/json" };
@@ -143,7 +143,7 @@ var regenerateIndex = async (kvNamespace) => {
 		language,
 		videoId,
 		firstSeenAt,
-		updated
+		updated: updated ?? firstSeenAt
 	}));
 	await kvNamespace.put(LEGACY_SHARED_SONGS_INDEX_KEY, JSON.stringify(indexEntries));
 };
