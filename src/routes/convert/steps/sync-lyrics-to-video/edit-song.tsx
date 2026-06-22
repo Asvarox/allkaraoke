@@ -353,7 +353,13 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <Typography variant={'h5'} sx={{ mb: 2 }}>
               Advanced
             </Typography>
-            <ManipulateBpm onChange={setOverrideBpm} current={overrideBpm} song={newSong} key={newSong.gap} />
+            <ManipulateBpm
+              onChange={setOverrideBpm}
+              onUseCurrentTime={async () => Math.round((await player.current?.getCurrentTime()) ?? 0)}
+              current={overrideBpm}
+              song={newSong}
+              key={newSong.gap}
+            />
           </div>
           <div className="hidden sm:col-span-4 sm:block">
             <div className="mb-2 text-xs">

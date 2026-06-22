@@ -1,4 +1,5 @@
-import { Button, TextField } from '@mui/material';
+import { AccessTime } from '@mui/icons-material';
+import { Button, TextField, Tooltip } from '@mui/material';
 import { useState } from 'react';
 import { Song } from '~/interfaces';
 import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
@@ -9,14 +10,26 @@ import ShortcutIndicator from './shortcut-indicator';
 
 interface Props {
   onChange: (bpm: number) => void;
+  onUseCurrentTime: () => Promise<number>;
   current: number;
   song: Song;
 }
 
-export default function ManipulateBpm({ current, onChange, song }: Props) {
+export default function ManipulateBpm({ current, onChange, onUseCurrentTime, song }: Props) {
   const lastNoteEndBeat = Math.max(...song.tracks.map((track) => getLastNoteEndFromSections(track.sections)));
   const lastNoteEndMs = beatToMs(lastNoteEndBeat, song) + song.gap;
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
+  const estimatedBpm = desiredLastNoteEnd ? calculateProperBPM(desiredLastNoteEnd, song) : undefined;
+
+  const setDesiredLastNoteEndToCurrentPlayerTime = async () => {
+    setDesiredLastNoteEnd(Math.round(await onUseCurrentTime()));
+  };
+
+  const applyEstimatedBpm = () => {
+    if (estimatedBpm && !isNaN(estimatedBpm)) {
+      onChange(estimatedBpm);
+    }
+  };
 
   return (
     <div className="mb-2 flex flex-col items-stretch gap-6 md:flex-row md:gap-2">
@@ -28,11 +41,36 @@ export default function ManipulateBpm({ current, onChange, song }: Props) {
         onChange={(e) => setDesiredLastNoteEnd(+e.target.value)}
         label="Target last note end time (ms)"
         sx={{ flex: 1 }}
+        slotProps={{
+          input: {
+            endAdornment: (
+              <Tooltip title="Use the current player time">
+                <Button
+                  data-test="desired-end-current-time"
+                  sx={{ mr: -1 }}
+                  endIcon={<AccessTime />}
+                  color="secondary"
+                  variant="text"
+                  onClick={setDesiredLastNoteEndToCurrentPlayerTime}>
+                  Current
+                </Button>
+              </Tooltip>
+            ),
+          },
+        }}
         helperText={
           !!desiredLastNoteEnd ? (
             <>
               Estimated proper Tempo (BPM) of the lyrics:{' '}
-              <Pre data-test="desired-bpm">{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
+              <Button
+                data-test="desired-bpm"
+                size="small"
+                color="secondary"
+                variant="text"
+                onClick={applyEstimatedBpm}
+                sx={{ minWidth: 0, p: 0, verticalAlign: 'baseline' }}>
+                <Pre>{estimatedBpm}</Pre>
+              </Button>
             </>
           ) : (
             ' '

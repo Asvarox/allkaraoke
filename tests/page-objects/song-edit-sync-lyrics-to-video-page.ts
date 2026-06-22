@@ -87,8 +87,37 @@ export class SongEditSyncLyricsToVideoPagePO {
     await this.desiredSongEndTimeInput.fill(value);
   }
 
+  public get desiredSongEndTimeCurrentTimeButton() {
+    return this.page.getByTestId('desired-end-current-time');
+  }
+
+  public async setDesiredSongEndTimeToCurrentPlayerTime() {
+    await this.desiredSongEndTimeCurrentTimeButton.click();
+  }
+
+  public get currentPlaybackTimeElement() {
+    return this.page.getByTestId('current-time');
+  }
+
+  public async getCurrentPlaybackTimeMs() {
+    await expect(this.currentPlaybackTimeElement).toContainText(/ms\)/);
+
+    const text = await this.currentPlaybackTimeElement.innerText();
+    const match = text.match(/\((\d+) ms\)/);
+
+    if (!match) {
+      throw new Error(`Could not parse current playback time from "${text}"`);
+    }
+
+    return match[1];
+  }
+
   public get estProperTempoBpmElement() {
     return this.page.getByTestId('desired-bpm');
+  }
+
+  public async applyEstimatedTempoBpm() {
+    await this.estProperTempoBpmElement.click();
   }
 
   public get changeLyricsBpmInput() {

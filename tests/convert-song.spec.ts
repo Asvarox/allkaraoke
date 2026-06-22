@@ -141,12 +141,20 @@ test('Convert song', async ({ page }) => {
     await pages.songEditSyncLyricsToVideoPage.enterLyricsGapShift(lyricsGapShift);
   });
 
-  await test.step('Entering desired song end time indicates estimated tempo BPM of the lyrics', async () => {
+  await test.step('Current player time can populate desired song end time', async () => {
+    await pages.songEditSyncLyricsToVideoPage.timeSeekControls('+10');
+    const currentTime = await pages.songEditSyncLyricsToVideoPage.getCurrentPlaybackTimeMs();
+    await pages.songEditSyncLyricsToVideoPage.setDesiredSongEndTimeToCurrentPlayerTime();
+    await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(currentTime);
+  });
+
+  await test.step('Estimated tempo BPM can be applied directly to the lyrics BPM field', async () => {
     const endTime = '29575';
 
     await pages.songEditSyncLyricsToVideoPage.enterDesiredSongEndTime(endTime); // Initial value + final gap / 2
     await expect(pages.songEditSyncLyricsToVideoPage.estProperTempoBpmElement).toContainText(FINAL_BPM);
-    await pages.songEditSyncLyricsToVideoPage.enterLyricsBPM(FINAL_BPM);
+    await pages.songEditSyncLyricsToVideoPage.applyEstimatedTempoBpm();
+    await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(FINAL_BPM);
   });
 
   await test.step('Go to track number 2', async () => {
