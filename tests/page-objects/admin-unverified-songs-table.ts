@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 
 export class AdminUnverifiedSongsTablePO {
   constructor(private page: Page) {}
@@ -27,6 +27,10 @@ export class AdminUnverifiedSongsTablePO {
     return this.page.getByRole('columnheader').filter({ hasText: name });
   }
 
+  public rowsPerPageSelect() {
+    return this.page.getByRole('combobox', { name: /rows per page/i });
+  }
+
   public async sortColumnDescending(name: string) {
     const defaultSortIcon = this.page.locator(`[aria-label="Sort by ${name} descending"] [data-testid="SyncAltIcon"]`);
     const ascendingSortIcon = this.page.locator(`[aria-label="Sorted by ${name} ascending"] svg`);
@@ -39,6 +43,23 @@ export class AdminUnverifiedSongsTablePO {
       await ascendingSortIcon.click();
       await defaultSortIcon.click();
     }
+  }
+
+  public sortedDescendingIcon(name: string) {
+    return this.page.locator(`[aria-label="Sorted by ${name} descending"] svg`);
+  }
+
+  public async setRowsPerPage(pageSize: number) {
+    await this.rowsPerPageSelect().click();
+    await this.page.getByRole('option', { name: String(pageSize), exact: true }).click();
+  }
+
+  public async expectRowsPerPage(pageSize: number) {
+    await expect(this.rowsPerPageSelect()).toContainText(String(pageSize));
+  }
+
+  public async expectSortedDescending(name: string) {
+    await expect(this.sortedDescendingIcon(name)).toBeVisible();
   }
 
   public async deleteSongBySharedSongId(sharedSongId: string) {

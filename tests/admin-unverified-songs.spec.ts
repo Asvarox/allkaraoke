@@ -165,6 +165,36 @@ test('shows and sorts unverified songs by added date', async ({ page, request })
   await expect(pages.adminUnverifiedSongsPage.table.tableRow(2)).toContainText(olderVisibleTitle);
 });
 
+test('persists unverified songs table page size and sorting after reload', async ({ page, request }) => {
+  const olderSharedSongId = `${currentSharedSongId}-older`;
+  const olderVisibleTitle = `${currentVisibleTitle} Older`;
+  sharedSongIdsToRemove.push(olderSharedSongId);
+  await upsertUnverifiedSong(request, {
+    sharedSongId: olderSharedSongId,
+    title: olderVisibleTitle,
+    firstSeenAt: Date.UTC(2024, 0, 2),
+    sourceUserId: 'admin-panel-e2e',
+  });
+
+  await page.goto('/admin?e2e-test');
+
+  await pages.adminUnverifiedSongsPage.signIn(adminPanelPassword);
+  await pages.adminUnverifiedSongsPage.search(currentVisibleTitle);
+  await pages.adminUnverifiedSongsPage.table.setRowsPerPage(25);
+  await pages.adminUnverifiedSongsPage.table.sortColumnDescending('Added');
+  await pages.adminUnverifiedSongsPage.table.expectRowsPerPage(25);
+  await pages.adminUnverifiedSongsPage.table.expectSortedDescending('Added');
+
+  await page.reload();
+
+  await expect(pages.adminUnverifiedSongsPage.adminHeading).toBeVisible();
+  await pages.adminUnverifiedSongsPage.search(currentVisibleTitle);
+  await pages.adminUnverifiedSongsPage.table.expectRowsPerPage(25);
+  await pages.adminUnverifiedSongsPage.table.expectSortedDescending('Added');
+  await expect(pages.adminUnverifiedSongsPage.table.tableRow(1)).toContainText(currentVisibleTitle);
+  await expect(pages.adminUnverifiedSongsPage.table.tableRow(2)).toContainText(olderVisibleTitle);
+});
+
 test('saving during oldest-first processing redirects to the next unverified song', async ({
   page,
   request,

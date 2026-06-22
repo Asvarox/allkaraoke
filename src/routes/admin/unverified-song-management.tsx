@@ -3,7 +3,13 @@ import Edit from '@mui/icons-material/Edit';
 import Refresh from '@mui/icons-material/Refresh';
 import { Alert, Button, IconButton, Tooltip } from '@mui/material';
 import dayjs from 'dayjs';
-import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table';
+import {
+  MaterialReactTable,
+  type MRT_ColumnDef,
+  type MRT_PaginationState,
+  type MRT_SortingState,
+} from 'material-react-table';
+import { useEffect, useRef, useState } from 'react';
 import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
@@ -23,6 +29,10 @@ import {
 interface Props {
   password: string;
 }
+
+const DEFAULT_PAGE_SIZE = 10;
+const UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY = 'admin-unverified-songs-table-page-size';
+const UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY = 'admin-unverified-songs-table-sorting';
 
 const columns: MRT_ColumnDef<AdminUnverifiedSong>[] = [
   {
@@ -58,8 +68,21 @@ const columns: MRT_ColumnDef<AdminUnverifiedSong>[] = [
   },
 ];
 
+const isValidSorting = (value: unknown): value is MRT_SortingState =>
+  Array.isArray(value) &&
+  value.every(
+    (entry) =>
+      typeof entry === 'object' && entry !== null && typeof entry.id === 'string' && typeof entry.desc === 'boolean',
+  );
+
 export function UnverifiedSongManagement({ password }: Props) {
   const navigate = useSmoothNavigate();
+  const isFirstRender = useRef(true);
+  const [sorting, setSorting] = useState<MRT_SortingState>([]);
+  const [pagination, setPagination] = useState<MRT_PaginationState>({
+    pageIndex: 0,
+    pageSize: DEFAULT_PAGE_SIZE,
+  });
   const unverifiedSongsKey = password ? (['admin-unverified-songs', password] as const) : null;
   const {
     data: songs = [],
@@ -102,6 +125,53 @@ export function UnverifiedSongManagement({ password }: Props) {
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
   const errorMessage = error instanceof Error ? error.message : null;
+
+  useEffect(() => {
+    if (typeof localStorage === 'undefined') {
+      isFirstRender.current = false;
+      return;
+    }
+
+    try {
+      const pageSizeValue = localStorage.getItem(UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY);
+      const sortingValue = localStorage.getItem(UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY);
+
+      if (pageSizeValue) {
+        const parsedPageSize = JSON.parse(pageSizeValue);
+
+        if (typeof parsedPageSize === 'number' && Number.isInteger(parsedPageSize) && parsedPageSize > 0) {
+          setPagination((currentPagination) => ({
+            ...currentPagination,
+            pageSize: parsedPageSize,
+          }));
+        }
+      }
+
+      if (sortingValue) {
+        const parsedSorting = JSON.parse(sortingValue);
+
+        if (isValidSorting(parsedSorting)) {
+          setSorting(parsedSorting);
+        }
+      }
+    } catch {
+      // Ignore malformed persisted settings and keep defaults.
+    }
+
+    isFirstRender.current = false;
+  }, []);
+
+  useEffect(() => {
+    if (isFirstRender.current || typeof localStorage === 'undefined') return;
+
+    localStorage.setItem(UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY, JSON.stringify(pagination.pageSize));
+  }, [pagination.pageSize]);
+
+  useEffect(() => {
+    if (isFirstRender.current || typeof localStorage === 'undefined') return;
+
+    localStorage.setItem(UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY, JSON.stringify(sorting));
+  }, [sorting]);
 
   const handleDelete = async (sharedSongId: string) => {
     if (!global.confirm('Remove this unverified song from Cloudflare KV?')) return;
@@ -163,7 +233,7 @@ export function UnverifiedSongManagement({ password }: Props) {
       <MaterialReactTable
         columns={columns}
         data={songs}
-        state={{ isLoading: isBusy }}
+        state={{ isLoading: isBusy, pagination, sorting }}
         getRowId={(song) => song.sharedSongId}
         enableRowActions
         positionActionsColumn="last"
@@ -171,6 +241,8 @@ export function UnverifiedSongManagement({ password }: Props) {
           density: 'compact',
           showGlobalFilter: true,
         }}
+        onPaginationChange={setPagination}
+        onSortingChange={setSorting}
         enableDensityToggle={false}
         enableFullScreenToggle={false}
         renderRowActions={({ row }) => (
