@@ -3,6 +3,10 @@ import { expect, Page } from '@playwright/test';
 export class AdminUnverifiedSongsTablePO {
   constructor(private page: Page) {}
 
+  private sortControl(label: string) {
+    return this.page.locator(`[aria-label="${label}"]`).first();
+  }
+
   public deleteButtonForSharedSongId(sharedSongId: string) {
     return this.page.locator(`[data-test="delete-unverified-song"][data-song="${sharedSongId}"]`);
   }
@@ -36,21 +40,24 @@ export class AdminUnverifiedSongsTablePO {
   }
 
   public async sortColumnDescending(name: string) {
-    const defaultSortIcon = this.page.locator(`[aria-label="Sort by ${name} descending"] [data-testid="SyncAltIcon"]`);
-    const ascendingSortIcon = this.page.locator(`[aria-label="Sorted by ${name} ascending"] svg`);
+    const defaultSortControl = this.sortControl(`Sort by ${name} descending`);
+    const ascendingSortControl = this.sortControl(`Sorted by ${name} ascending`);
+    const descendingSortControl = this.sortControl(`Sorted by ${name} descending`);
 
-    if (await defaultSortIcon.isVisible()) {
-      await defaultSortIcon.click();
+    if (await descendingSortControl.isVisible()) {
+      return;
     }
 
-    if (await ascendingSortIcon.isVisible()) {
-      await ascendingSortIcon.click();
-      await defaultSortIcon.click();
+    if (await defaultSortControl.isVisible()) {
+      await defaultSortControl.click();
+      return;
     }
+
+    await ascendingSortControl.click();
   }
 
-  public sortedDescendingIcon(name: string) {
-    return this.page.locator(`[aria-label="Sorted by ${name} descending"] svg`);
+  public sortedDescendingControl(name: string) {
+    return this.sortControl(`Sorted by ${name} descending`);
   }
 
   public async setRowsPerPage(pageSize: number) {
@@ -73,7 +80,7 @@ export class AdminUnverifiedSongsTablePO {
   }
 
   public async expectSortedDescending(name: string) {
-    await expect(this.sortedDescendingIcon(name)).toBeVisible();
+    await expect(this.sortedDescendingControl(name)).toBeVisible();
   }
 
   public async deleteSongBySharedSongId(sharedSongId: string) {
