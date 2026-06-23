@@ -1,0 +1,217 @@
+#ARTIST:Adrián Barba
+#TITLE:ﾁngeles fuimos
+#CREATOR:Bastián
+#BPM:300
+#YEAR:1995
+#VIDEO:v=UzDaY7V_yaE
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:16450
+#ALLKARAOKE_ID:adrian-barba-ngeles-fuimos
+#ALLKARAOKE_SID:5888
+#ALLKARAOKE_LASTUPDATE:2026-06-23T00:37:26.162Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=basti%C3%A1n
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=angeles+fuimos
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:98
+#MP3:Adri疣 Barba - ﾁngeles fuimos.mp3
+#COVER:Adri疣 Barba - ﾁngeles fuimos.jpg
+: 20 1 6 Pa
+: 24 1 6 sa el 
+: 28 2 8 tiem
+: 35 4 9 po
+- 39
+: 48 1 6 Y 
+: 52 1 6 los 
+: 55 1 6 re
+: 60 3 8 cuer
+: 68 4 9 dos
+- 72
+: 83 2 8 Se 
+: 88 1 8 van 
+: 92 5 9 a
+: 100 2 11 le
+: 105 4 9 jan
+: 113 1 6 do 
+: 117 6 6 ya.
+- 123 125
+- 125
+: 145 2 6 án
+: 149 1 6 ge
+: 153 1 6 les 
+: 157 3 8 fui
+: 165 5 9 mos
+- 170
+: 177 2 6 Y 
+: 181 2 6 des
+: 185 1 6 de el 
+: 189 3 8 cie
+: 197 5 9 lo
+- 202
+: 214 4 8 Se
+: 222 3 9 mi
+: 229 2 11 llas 
+: 234 4 9 di
+: 242 2 6 mos 
+: 246 2 6 de a
+: 250 6 6 mor.
+- 256
+: 275 1 4 La 
+: 278 1 4 tris
+: 283 4 4 te
+: 291 1 4 za 
+: 295 1 4 de es
+: 299 1 4 te 
+: 304 2 4 mun
+: 311 1 6 do 
+: 316 3 2 se 
+: 324 3 1 bo
+: 332 8 -1 rró
+- 340
+: 352 2 -1 Y 
+: 357 3 1 vien
+: 364 1 2 do el 
+: 369 4 2 cie
+: 377 1 1 lo a 
+: 381 13 1 zul,
+- 394
+: 408 2 -3 La a
+: 413 1 -3 mis
+: 417 1 -3 tad 
+: 421 1 -3 y el 
+: 425 1 -3 a
+: 429 4 1 mor 
+: 437 3 -1 siem
+: 445 3 -1 pre 
+: 453 3 -3 bri
+: 462 5 1 lla
+: 470 1 -1 ron
+- 471
+: 474 1 -1 Y hoy 
+: 477 2 1 tam
+: 482 3 -1 bién 
+: 490 1 -3 lo ha
+: 494 7 -3 rán.
+- 501 511
+- 511
+: 531 6 -3 Mis 
+: 546 2 -3 a
+: 551 3 -1 las 
+: 558 2 0 no 
+: 563 10 -1 ten
+: 579 7 -5 go,
+- 586
+: 596 3 0 De
+: 603 2 0 sa
+: 608 4 0 pa
+: 616 3 2 re
+: 624 3 4 cie
+: 632 3 5 ron 
+: 641 8 2 ya,
+- 649
+: 669 3 -3 Pe
+: 676 4 -1 ro 
+: 684 2 0 con
+: 689 5 -1 mi
+: 697 1 -1 go
+- 698
+: 701 1 -1 Ten
+: 705 1 -1 go aún 
+: 709 3 0 el 
+* 717 1 2 po
+* 723 32 4 der.
+- 755
+: 774 2 4 En 
+: 778 1 1 tu 
+: 782 1 6 pu
+: 786 2 4 pi
+: 794 3 4 la
+- 797
+: 807 1 4 El 
+: 811 1 4 ar
+: 814 2 2 co
+: 819 3 1 i
+: 827 3 1 ris
+- 830
+: 839 2 1 Se 
+: 843 1 2 re
+: 847 1 4 fle
+: 852 9 6 jó
+- 861
+: 873 4 2 Y el 
+: 880 2 1 a
+: 884 5 -1 mor 
+: 892 2 -1 flo
+: 896 2 -1 re
+: 900 1 -1 ce en 
+: 904 1 -1 tu 
+: 908 1 -1 co
+: 912 1 4 ra
+: 916 9 1 zón.
+- 925
+: 936 2 1 Si
+: 941 7 -1 gue
+- 948
+: 962 4 -3 Te
+: 969 2 -4 nien
+: 977 1 -3 do 
+: 982 5 -3 fe
+- 987
+: 990 1 -3 Y es
+: 993 2 -3 pe
+: 998 4 -4 ran
+: 1005 2 -3 za en 
+: 1009 1 -3 que el
+- 1010
+: 1013 1 -3 Ma
+: 1018 5 1 ña
+: 1026 1 -1 na 
+: 1030 3 -1 va a 
+: 1038 3 -3 cam
+: 1047 8 -1 biar.
+- 1055
+: 1067 1 4 Es
+: 1071 1 4 te 
+: 1074 2 2 de
+: 1078 4 1 sier
+: 1086 3 1 to
+- 1089
+: 1096 1 1 Se 
+: 1099 1 1 trans
+: 1102 2 2 for
+: 1106 1 4 ma
+: 1111 10 6 rá
+- 1121
+: 1132 5 6 Pa
+: 1140 1 6 ra
+: 1145 4 5 í
+: 1152 2 5 so es 
+: 1156 1 5 lo 
+: 1159 2 5 que 
+: 1163 2 5 pron
+: 1167 2 6 to 
+* 1171 2 8 se
+* 1176 9 9 rá
+- 1185
+: 1196 2 9 A
+: 1201 7 8 bre
+- 1208
+: 1222 3 6 Tu 
+: 1229 3 8 co
+: 1236 2 9 ra
+: 1241 7 4 zón, 
+: 1253 1 4 la 
+: 1257 3 8 ma
+: 1265 7 9 gia
+- 1272
+: 1278 9 2 Y el 
+: 1289 2 1 a
+: 1293 16 -1 mor
+- 1309 1310
+- 1310
+: 1330 1 4 Son 
+: 1334 1 1 ver
+: 1340 82 6 dad!
+E
