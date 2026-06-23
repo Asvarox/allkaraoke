@@ -4059,6 +4059,36 @@
     "local": false
   },
   {
+    "id": "adrian-barba-ngeles-fuimos",
+    "title": "ﾁngeles fuimos",
+    "artist": "Adrián Barba",
+    "video": "UzDaY7V_yaE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 16450,
+    "year": "1995",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-06-23T00:37:26.162Z",
+    "genre": "Anime",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "Bastián",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=basti%C3%A1n",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=angeles+fuimos",
+    "duration": 98,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5888,
+    "tracksCount": 1,
+    "search": "adrianbarbangelesfuimos",
+    "local": false
+  },
+  {
     "id": "adrian-barba-quiero-gritar-te-amo",
     "title": "Quiero gritar te amo",
     "artist": "Adrián Barba",
@@ -4640,6 +4670,36 @@
     "shortId": 123,
     "tracksCount": 1,
     "search": "againstthecurrentweapon",
+    "local": false
+  },
+  {
+    "id": "agnieszka-chylinska-nie-moge-cie-zapomniec",
+    "title": "Nie mogę cię zapomnieć",
+    "artist": "Agnieszka Chylińska",
+    "video": "yOZ7Q_ixifY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 252.74,
+    "gap": 58881.05800427317,
+    "year": "2009",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-23T00:37:26.780Z",
+    "genre": "Pop",
+    "realBpm": 149,
+    "volume": 1,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30406",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5892,
+    "tracksCount": 1,
+    "search": "agnieszkachylinskaniemogeciezapomniec",
     "local": false
   },
   {
@@ -27035,6 +27095,39 @@
     "local": false
   },
   {
+    "id": "bruno-mars-risk-it-all",
+    "title": "Risk It All",
+    "artist": "Bruno Mars",
+    "video": "lY5V4hSLWY8",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.1,
+    "gap": 26277.38448125545,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-23T00:37:26.167Z",
+    "genre": "Bossa",
+    "videoGap": 12,
+    "realBpm": 86,
+    "previewStart": 26,
+    "previewEnd": 195,
+    "volume": 0.8,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=32021",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5889,
+    "tracksCount": 1,
+    "search": "brunomarsriskitall",
+    "local": false
+  },
+  {
     "id": "bruno-mars-runaway-baby",
     "title": "Runaway Baby",
     "artist": "Bruno Mars",
@@ -29594,6 +29687,34 @@
     "shortId": 850,
     "tracksCount": 1,
     "search": "calle13atrevetetete",
+    "local": false
+  },
+  {
+    "id": "calum-scott-dancing-on-my-own",
+    "title": "Dancing On My Own",
+    "artist": "Calum Scott",
+    "video": "q31tGyBJhRY",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 15347.5,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-23T00:37:26.779Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5891,
+    "tracksCount": 1,
+    "search": "calumscottdancingonmyown",
     "local": false
   },
   {
@@ -44367,6 +44488,35 @@
     "shortId": 1251,
     "tracksCount": 1,
     "search": "disneysducktales2017feliciabartonthemesong",
+    "local": false
+  },
+  {
+    "id": "disneys-encanto-no-se-habla-de-bruno",
+    "title": "No se habla de Bruno",
+    "artist": "Disney’s Encanto",
+    "video": "wTi8yLyHeb8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 205.93,
+    "gap": 5667.8431087178,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-23T00:37:26.916Z",
+    "genre": "Soundtrack",
+    "videoGap": 4,
+    "realBpm": 103,
+    "volume": 1,
+    "author": "Volodia",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 5895,
+    "tracksCount": 1,
+    "search": "disneysencantonosehabladebruno",
     "local": false
   },
   {
@@ -139119,6 +139269,32 @@
     "local": false
   },
   {
+    "id": "shaggy-feat-rayvon-angel",
+    "title": "Angel",
+    "artist": "Shaggy feat. Rayvon",
+    "video": "uGdU88MUYNU",
+    "language": [
+      "English"
+    ],
+    "bpm": 336.75,
+    "gap": 24580.044543429845,
+    "year": "2000",
+    "lastUpdate": "2026-06-23T00:37:26.783Z",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "Peschi",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5893,
+    "tracksCount": 1,
+    "search": "shaggyfeatrayvonangel",
+    "local": false
+  },
+  {
     "id": "shaggy-feat-rikrok-it-wasnt-me",
     "title": "It Wasn’t Me",
     "artist": "Shaggy feat. RikRok",
@@ -140935,6 +141111,33 @@
     "shortId": 3934,
     "tracksCount": 1,
     "search": "siafeatkendricklamarthegreatest",
+    "local": false
+  },
+  {
+    "id": "sia-gimme-love",
+    "title": "Gimme Love",
+    "artist": "Sia",
+    "video": "TYxhB-oLNU8",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 10324.845360824742,
+    "year": "2023",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-06-23T00:37:26.913Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5894,
+    "tracksCount": 1,
+    "search": "siagimmelove",
     "local": false
   },
   {
@@ -145947,6 +146150,34 @@
     "shortId": 4089,
     "tracksCount": 1,
     "search": "strawberryalarmclockincenseandpeppermints",
+    "local": false
+  },
+  {
+    "id": "stray-kids-chk-chk-boom",
+    "title": "Chk Chk Boom",
+    "artist": "Stray Kids",
+    "video": "T17AR8cVmto",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 204.91,
+    "gap": 6058.362695817676,
+    "year": "2024",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-23T00:37:26.169Z",
+    "genre": "K-Pop",
+    "realBpm": 102,
+    "volume": 0.93,
+    "author": "betaDemon & Gemini",
+    "duration": 151,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5890,
+    "tracksCount": 1,
+    "search": "straykidschkchkboom",
     "local": false
   },
   {
