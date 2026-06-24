@@ -1,0 +1,293 @@
+#ARTIST:Megumi Hayashibara & Masami Okui
+#TITLE:Get Along
+#CREATOR:subkei
+#BPM:302,02
+#YEAR:1995
+#VIDEO:v=C9oo-ZPB5oI
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:14941,68829878816
+#ALLKARAOKE_ID:megumi-hayashibara-masami-okui-get-along
+#ALLKARAOKE_SID:5904
+#ALLKARAOKE_LASTUPDATE:2026-06-24T00:32:06.867Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Megumi%20Hayashibara%20&%20Masami%20Okui&cancion=Get%20Along%20(TV)
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:98
+#MP3:Megumi Hayashibara & Masami Okui - Get Along (TV).mp3
+#COVER:Megumi Hayashibara & Masami Okui - Get Along (TV) [CO].jpg
+* 20 3 -4 Ta
+* 24 3 -1 chi 
+* 28 6 1 mu
+: 36 3 1 ka
+: 40 3 4 u 
+: 44 3 1 sa
+: 48 3 4 ki 
+: 52 4 1 ni
+- 56
+: 60 6 1 ka
+: 68 3 1 wa
+: 72 3 4 i
+: 76 3 1 ta 
+: 80 3 4 ka
+: 84 4 1 ze
+- 88
+: 92 6 1 Ha
+: 100 3 1 ge
+: 104 3 4 shi
+: 108 3 1 ku 
+: 112 3 6 fu
+: 116 3 4 ki 
+: 120 3 1 a
+: 124 6 -1 re
+: 132 3 1 te
+: 136 3 -1 mo
+: 140 2 1 ~
+- 142
+: 148 3 -4 Ju
+: 152 3 -1 mo
+: 156 6 1 n 
+: 164 3 1 no 
+: 168 3 4 hi
+: 172 3 1 to
+: 176 3 4 tsu 
+: 180 4 1 mo
+- 184
+: 188 6 1 to
+: 196 3 1 ra
+: 200 3 4 e
+: 204 3 1 ta
+: 208 3 4 na
+: 212 4 6 ra
+- 216
+: 220 6 8 Wa
+: 228 3 8 ta
+: 232 3 11 shi 
+: 236 3 8 no 
+* 240 3 13 pe
+* 244 3 11 e
+: 248 3 8 su 
+: 252 6 6 ni 
+: 260 3 8 na
+: 264 6 8 ru
+- 270
+: 276 3 -4 Da
+: 280 3 -1 re 
+: 284 6 1 mo 
+: 292 3 1 ga 
+: 296 3 4 u
+: 300 3 1 ra
+: 304 3 4 ya
+: 308 4 1 mu
+- 312
+: 316 6 1 ko
+: 324 3 1 no 
+: 328 3 4 pa
+: 332 3 1 wa
+: 336 3 4 a 
+: 340 4 1 to
+- 344
+: 348 6 1 Bi
+: 356 3 1 bo
+: 360 3 4 u 
+* 364 3 1 ga 
+: 368 3 6 yu
+: 372 3 4 ru
+: 376 3 1 se
+: 380 6 -1 na
+: 388 3 1 i 
+: 392 6 1 wa
+- 398
+: 404 3 -4 Do
+: 408 3 -1 n
+: 412 6 1 na 
+: 420 3 1 a
+: 424 3 4 i
+: 428 3 1 te 
+: 432 3 4 de
+: 436 4 1 mo
+- 440
+: 444 6 1 hi
+: 452 3 1 ru
+: 456 3 4 ma
+: 460 3 1 na
+* 464 3 4 i 
+: 468 4 6 de
+- 472
+: 476 6 8 Ma
+: 484 3 8 n
+* 488 3 11 to 
+: 492 3 8 o 
+: 496 3 13 na
+: 500 3 11 bi
+: 504 3 8 ka
+: 508 6 6 se
+: 516 3 8 ru 
+: 520 3 6 no
+: 524 8 8 ~
+- 532
+: 540 6 4 A
+: 548 3 4 re 
+: 552 3 6 mo 
+: 556 3 4 shi
+: 560 3 6 ta
+: 564 4 8 i
+- 568
+: 572 6 4 ko
+: 580 3 4 re 
+: 584 3 6 mo 
+: 588 3 4 shi
+: 592 3 6 ta
+: 596 4 8 i
+- 600
+: 604 3 4 O
+: 608 3 6 ~
+: 612 3 4 n
+: 616 3 6 na 
+: 620 3 4 no 
+: 624 3 6 ko 
+: 628 3 4 ni 
+: 632 3 6 mi
+* 636 3 8 e
+* 640 3 6 ta
+* 644 6 4 ~
+* 652 4 4 tte
+- 656
+: 660 3 4 Yu
+: 664 3 3 da
+* 668 4 1 n 
+: 676 3 3 shi
+: 680 3 4 ta
+: 684 4 3 ra
+- 688
+: 692 3 4 ji
+: 696 3 6 go
+: 700 4 4 ku 
+: 708 3 6 i
+: 712 3 8 ki 
+: 716 4 6 yo
+- 720
+: 724 3 8 Ja
+: 728 3 9 ma 
+: 732 6 8 wa 
+: 740 3 8 sa
+: 744 3 8 se
+: 748 3 9 na
+: 752 5 11 i
+: 758 5 9 ka
+: 764 36 8 ra
+- 800
+: 820 3 4 Far 
+: 824 3 6 a
+: 828 4 8 way
+- 832
+: 836 3 8 O
+: 840 3 8 mo
+: 844 3 8 u 
+: 848 6 8 ma
+: 856 3 8 ma 
+: 860 6 8 wa 
+* 868 4 1 ga
+- 872
+: 876 3 1 ma
+: 880 6 3 ma 
+: 888 3 4 ni 
+: 892 3 4 ta
+: 896 3 6 ~
+* 900 3 6 bi 
+* 904 3 6 o 
+: 908 3 6 tsu
+: 912 6 6 zu
+: 920 3 6 ke 
+: 924 4 6 te
+- 928
+: 932 6 -1 yu
+: 940 3 -1 ki
+: 944 6 1 ta
+: 952 6 3 i
+- 958
+: 968 6 4 Tsu
+: 976 6 6 ra
+: 984 3 8 i 
+: 988 6 11 hi
+* 996 6 9 bi 
+: 1004 4 9 mo
+- 1008
+: 1012 3 13 e
+: 1016 3 13 ga
+: 1020 5 13 o 
+: 1028 3 11 de 
+: 1032 3 11 pi
+: 1036 6 11 ri
+: 1044 3 8 o
+: 1048 3 6 do 
+: 1052 3 6 yo
+: 1056 14 8 ~
+- 1070
+* 1076 3 4 Far 
+* 1080 3 6 a
+* 1084 5 8 way
+- 1089
+: 1092 3 8 I
+: 1096 3 8 ku
+: 1100 3 8 tsu 
+: 1104 6 8 mo 
+: 1112 3 8 no 
+: 1116 3 8 ma
+: 1120 3 8 ryo
+: 1124 4 1 ku
+- 1128
+: 1132 3 1 da
+: 1136 6 3 i
+: 1144 3 4 te 
+: 1148 6 6 kyo
+: 1156 3 6 u 
+: 1160 3 6 o 
+: 1164 3 6 ko
+: 1168 6 6 e
+: 1176 2 6 te 
+: 1180 6 6 yu
+: 1188 6 -1 ki
+: 1196 3 -1 ta
+: 1200 6 1 i 
+: 1208 6 3 no
+- 1214
+: 1224 6 4 Yu
+: 1232 6 6 me 
+: 1240 3 8 ni 
+: 1244 6 11 mu
+: 1252 6 9 ka
+: 1260 4 9 i
+- 1264
+* 1268 3 13 a
+: 1272 3 13 ru
+: 1276 3 11 ki
+: 1280 2 13 ~ 
+: 1284 3 11 tsu
+* 1288 3 11 zu
+: 1292 6 11 ke
+: 1300 3 8 te 
+: 1304 3 6 yu
+: 1308 3 6 ku
+: 1312 46 8 ~
+- 1358
+: 1364 3 8 Ka
+: 1368 3 6 gi
+: 1372 8 4 ri
+: 1388 6 3 na
+: 1396 3 -1 i 
+* 1400 3 3 ho
+: 1404 12 3 do
+- 1416
+: 1428 3 6 Get 
+* 1432 3 6 a
+* 1436 10 4 long
+- 1446
+: 1452 3 8 Try
+: 1456 3 8 ~
+: 1460 3 6 ~ 
+: 1464 3 3 a
+: 1468 3 3 gain
+: 1472 58 4 ~
+E

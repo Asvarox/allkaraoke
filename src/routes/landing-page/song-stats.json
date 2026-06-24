@@ -24,13 +24,13 @@
     "Elton John",
     "Disturbed",
     "Ghost",
+    "Madonna",
     "ABBA",
     "Foo Fighters",
-    "Madonna",
+    "Bruno Mars",
     "Muse",
     "Westlife",
     "Adele",
-    "Bruno Mars",
     "Demi Lovato",
     "Ed Sheeran",
     "Katy Perry",
@@ -106,6 +106,7 @@
     "Sabrina Carpenter",
     "Sean Paul",
     "Selena Gomez",
+    "Sia",
     "Skillet",
     "The Killers",
     "UB40",
@@ -126,7 +127,6 @@
     "Jonathan Coulton",
     "Nicki Minaj",
     "Shinedown",
-    "Sia",
     "Spice Girls",
     "The Offspring",
     "Wham!",
@@ -144,12 +144,12 @@
     "Hilary Duff",
     "HIM",
     "Huey Lewis & The News",
+    "Justin Bieber",
     "Lewis Capaldi",
     "Little Mix",
     "OneRepublic",
     "Papa Roach",
-    "P!nk",
-    "Robbie Williams"
+    "P!nk"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5883
+  "songs": 5904
 }
