@@ -1,4 +1,9 @@
 import { APIRequestContext, expect, test } from '@playwright/test';
+import { Song } from '~/interfaces';
+import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
+import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
+import { getLastNoteEndFromSections } from '~/modules/songs/utils/notes-selectors';
+import { processSong } from '~/modules/songs/utils/process-song/process-song';
 import { initTestMode } from './helpers';
 import initialise from './page-objects/initialise';
 import {
@@ -42,11 +47,30 @@ const removeStaleQueueFixtures = async (request: APIRequestContext) => {
 const makeUnverifiedSongTxtWithTitle = (title: string) =>
   unverifiedCloudflareSongTxt.replace(`#TITLE:${unverifiedCloudflareSongFixture.title}`, `#TITLE:${title}`);
 
-const makeUnverifiedSongTxtWithTitleAndVideo = (title: string, videoId: string) =>
-  makeUnverifiedSongTxtWithTitle(title).replace(
-    `#VIDEO:v=${unverifiedCloudflareSongFixture.videoId}`,
-    `#VIDEO:v=${videoId}`,
-  );
+const getProcessedSong = (songTxt: string): Song => processSong(convertTxtToSong(songTxt));
+
+const getDesiredEndTimeValue = (song: Song) => {
+  const lastNoteEndBeat = Math.max(...song.tracks.map((track) => getLastNoteEndFromSections(track.sections)));
+
+  return String(Math.round(beatToMs(lastNoteEndBeat, song) + song.gap));
+};
+
+const makeUnverifiedSongTxt = ({
+  title,
+  videoId = unverifiedCloudflareSongFixture.videoId,
+  bpm = '180',
+  gap = '1000',
+}: {
+  title: string;
+  videoId?: string;
+  bpm?: string;
+  gap?: string;
+}) =>
+  makeUnverifiedSongTxtWithTitle(title)
+    .replace(`#VIDEO:v=${unverifiedCloudflareSongFixture.videoId}`, `#VIDEO:v=${videoId}`)
+    .replace('#BPM:180', `#BPM:${bpm}`)
+    .replace('#ALLKARAOKE_REALBPM:180', `#ALLKARAOKE_REALBPM:${bpm}`)
+    .replace('#GAP:1000', `#GAP:${gap}`);
 
 const seedQueueSongs = async (request: APIRequestContext) => {
   await removeStaleQueueFixtures(request);
@@ -61,7 +85,7 @@ const seedQueueSongs = async (request: APIRequestContext) => {
   await upsertUnverifiedSong(request, {
     sharedSongId: currentSharedSongId,
     title: currentVisibleTitle,
-    songTxt: makeUnverifiedSongTxtWithTitleAndVideo(currentVisibleTitle, unverifiedCloudflareSongFixture.videoId),
+    songTxt: makeUnverifiedSongTxt({ title: currentVisibleTitle }),
     firstSeenAt: queueCurrentFirstSeenAt,
     updated: queueCurrentUpdatedValue,
     sourceUserId: 'admin-panel-e2e',
@@ -69,7 +93,12 @@ const seedQueueSongs = async (request: APIRequestContext) => {
   await upsertUnverifiedSong(request, {
     sharedSongId: oldestUpdatedSharedSongId,
     title: oldestUpdatedVisibleTitle,
-    songTxt: makeUnverifiedSongTxtWithTitleAndVideo(oldestUpdatedVisibleTitle, 'Vueyx9TBEqE'),
+    songTxt: makeUnverifiedSongTxt({
+      title: oldestUpdatedVisibleTitle,
+      videoId: 'Vueyx9TBEqE',
+      bpm: '240',
+      gap: '1500',
+    }),
     videoId: 'Vueyx9TBEqE',
     firstSeenAt: queueOldestUpdatedFirstSeenAt,
     updated: queueOldestUpdatedValue,
@@ -202,6 +231,23 @@ test('saving during oldest-first processing redirects to the next unverified son
   test.skip(testInfo.project.name !== 'chromium', 'Oldest-first queue tests share one KV namespace.');
   const { oldestUpdatedSharedSongId, oldestUpdatedVisibleTitle } = await seedQueueSongs(request);
   const syncedTitle = `${oldestUpdatedVisibleTitle} Synced`;
+  const syncedBpm = '190';
+  const syncedLyricsGap = '1234';
+  const syncedDesiredEnd = '9999';
+  const syncedTrackName = 'Queue Track Name';
+  const currentQueueSongTxt = makeUnverifiedSongTxt({ title: currentVisibleTitle });
+  const oldestQueueSongTxt = makeUnverifiedSongTxt({
+    title: oldestUpdatedVisibleTitle,
+    videoId: 'Vueyx9TBEqE',
+    bpm: '240',
+    gap: '1500',
+  });
+  const currentQueueSong = getProcessedSong(currentQueueSongTxt);
+  const oldestQueueSong = getProcessedSong(oldestQueueSongTxt);
+  const queueSongDefaultBpm = String(currentQueueSong.bpm);
+  const queueSongDefaultDesiredEnd = getDesiredEndTimeValue(currentQueueSong);
+  const oldestQueueSongDefaultBpm = String(oldestQueueSong.bpm);
+  const oldestQueueSongDefaultDesiredEnd = getDesiredEndTimeValue(oldestQueueSong);
 
   await page.goto('/admin?e2e-test');
 
@@ -214,6 +260,14 @@ test('saving during oldest-first processing redirects to the next unverified son
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
   const oldestUpdatedSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
   expect(oldestUpdatedSongVideoSource).not.toBeNull();
+  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(oldestQueueSongDefaultBpm);
+  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(
+    oldestQueueSongDefaultDesiredEnd,
+  );
+  await pages.songEditSyncLyricsToVideoPage.enterLyricsBPM(syncedBpm);
+  await pages.songEditSyncLyricsToVideoPage.enterLyricsGapShift(syncedLyricsGap);
+  await pages.songEditSyncLyricsToVideoPage.enterDesiredSongEndTime(syncedDesiredEnd);
+  await pages.songEditSyncLyricsToVideoPage.enterSongTrackName(syncedTrackName);
   await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
   await pages.songEditMetadataPage.enterSongTitle(syncedTitle);
   await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
@@ -227,6 +281,10 @@ test('saving during oldest-first processing redirects to the next unverified son
     'src',
     oldestUpdatedSongVideoSource!,
   );
+  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(queueSongDefaultBpm);
+  await expect(pages.songEditSyncLyricsToVideoPage.lyricsGapShiftInput).toHaveValue('0');
+  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(queueSongDefaultDesiredEnd);
+  await expect(pages.songEditSyncLyricsToVideoPage.trackNameInput).toHaveValue('');
 
   await expect
     .poll(async () => {
@@ -238,6 +296,19 @@ test('saving during oldest-first processing redirects to the next unverified son
       return songs.find((song) => song.sharedSongId === oldestUpdatedSharedSongId)?.title;
     })
     .toBe(syncedTitle);
+
+  const savedSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(oldestUpdatedSharedSongId)}`);
+  await expect(savedSongResponse).toBeOK();
+
+  const savedSong = (await savedSongResponse.json()) as { title: string; songTxt: string };
+  expect(savedSong.title).toBe(syncedTitle);
+  expect(savedSong.songTxt).toContain(`#BPM:${syncedBpm}`);
+
+  const nextSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(currentSharedSongId)}`);
+  await expect(nextSongResponse).toBeOK();
+
+  const nextSong = (await nextSongResponse.json()) as { songTxt: string };
+  expect(nextSong.songTxt).toContain(`#BPM:${queueSongDefaultBpm}`);
 
   await page.goto('/admin?e2e-test');
   await pages.adminUnverifiedSongsPage.search(syncedTitle);

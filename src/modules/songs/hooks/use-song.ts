@@ -14,6 +14,8 @@ export default function useSong(songId: string, options?: UseSongOptions) {
   const [song, setSong] = useState<Song | null>(null);
 
   useEffect(() => {
+    setSong(null);
+
     const loadSong = async () => {
       if (options?.sourceType === 'unverified' && options.sharedSongId) {
         const unverifiedSong = await getUnverifiedSongById(options.sharedSongId);

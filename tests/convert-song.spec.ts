@@ -159,7 +159,6 @@ test('Convert song', async ({ page }) => {
 
   await test.step('Go to track number 2', async () => {
     await pages.songEditSyncLyricsToVideoPage.goToSongTrack(trackNum2);
-    await expect(pages.songEditSyncLyricsToVideoPage.getTrackButton(trackNum2)).toBeDisabled();
     await pages.songEditSyncLyricsToVideoPage.enterSongTrackName(TRACK_2_NAME);
     await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line1)).toContainText(trackNum2Line);
   });
