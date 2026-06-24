@@ -4070,7 +4070,7 @@
     "gap": 16450,
     "year": "1995",
     "artistOrigin": "MX",
-    "lastUpdate": "2026-06-23T00:37:26.162Z",
+    "lastUpdate": "2026-06-22T05:23:22.253Z",
     "genre": "Anime",
     "realBpm": 148,
     "volume": 1,
@@ -4684,7 +4684,7 @@
     "gap": 58881.05800427317,
     "year": "2009",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-06-23T00:37:26.780Z",
+    "lastUpdate": "2026-06-22T07:04:58.059Z",
     "genre": "Pop",
     "realBpm": 149,
     "volume": 1,
@@ -6546,6 +6546,33 @@
     "shortId": 179,
     "tracksCount": 1,
     "search": "alexubagoyamaiamonterosinmiedoanada",
+    "local": false
+  },
+  {
+    "id": "alex-warren-eternity",
+    "title": "Eternity",
+    "artist": "Alex Warren",
+    "video": "jXqf3uqLkkU",
+    "language": [
+      "English"
+    ],
+    "bpm": 552,
+    "gap": 14944.565217391304,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-24T00:32:06.739Z",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "DS",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "shortId": 5903,
+    "tracksCount": 1,
+    "search": "alexwarreneternity",
     "local": false
   },
   {
@@ -17446,6 +17473,66 @@
     "local": false
   },
   {
+    "id": "beast-bad-girl",
+    "title": "Bad Girl",
+    "artist": "Beast",
+    "video": "fA_rXpyF67s",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 250.02,
+    "gap": 6230.081593472522,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-24T00:32:06.555Z",
+    "genre": "Kpop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Akiharu",
+    "sourceUrl": "https://www.youtube.com/watch?v=fA_rXpyF67s",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5898,
+    "tracksCount": 1,
+    "search": "beastbadgirl",
+    "local": false
+  },
+  {
+    "id": "beast-beautiful",
+    "title": "Beautiful",
+    "artist": "Beast",
+    "video": "Iotmv9f-xMU",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 273.97,
+    "gap": 18.243238310764013,
+    "year": "2011",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-24T00:32:06.728Z",
+    "genre": "Kpop",
+    "realBpm": 137,
+    "previewStart": 145,
+    "previewEnd": 189,
+    "volume": 1,
+    "author": "Fuirusa",
+    "sourceUrl": "https://www.youtube.com/watch?v=Ur7mtOA1ST4",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5899,
+    "tracksCount": 1,
+    "search": "beastbeautiful",
+    "local": false
+  },
+  {
     "id": "beast-in-black-blind-and-frozen",
     "title": "Blind And Frozen",
     "artist": "Beast In Black",
@@ -17476,6 +17563,66 @@
     "shortId": 486,
     "tracksCount": 1,
     "search": "beastinblackblindandfrozen",
+    "local": false
+  },
+  {
+    "id": "beast-shock",
+    "title": "Shock",
+    "artist": "Beast",
+    "video": "JXxGo1MvNls",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 269.98,
+    "gap": 10589.92592043855,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-24T00:32:06.732Z",
+    "genre": "Kpop",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "zaha",
+    "sourceUrl": "https://www.youtube.com/watch?v=JXxGo1MvNls",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5900,
+    "tracksCount": 1,
+    "search": "beastshock",
+    "local": false
+  },
+  {
+    "id": "beast-sum",
+    "title": "Sum [숨]",
+    "artist": "Beast",
+    "video": "HTbC1UsBtek",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 512.04,
+    "gap": 43023.98406374502,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-06-24T00:32:06.734Z",
+    "genre": "Kpop",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "zaha",
+    "sourceUrl": "https://www.youtube.com/watch?v=HTbC1UsBtek",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 34
+      }
+    ],
+    "shortId": 5901,
+    "tracksCount": 1,
+    "search": "beastsum",
     "local": false
   },
   {
@@ -27106,7 +27253,7 @@
     "gap": 26277.38448125545,
     "year": "2026",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-23T00:37:26.167Z",
+    "lastUpdate": "2026-06-22T05:29:46.208Z",
     "genre": "Bossa",
     "videoGap": 12,
     "realBpm": 86,
@@ -29701,7 +29848,7 @@
     "gap": 15347.5,
     "year": "2016",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-23T00:37:26.779Z",
+    "lastUpdate": "2026-06-22T05:33:47.078Z",
     "genre": "Pop",
     "realBpm": 112,
     "volume": 1,
@@ -44502,7 +44649,7 @@
     "gap": 5667.8431087178,
     "year": "2021",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-23T00:37:26.916Z",
+    "lastUpdate": "2026-06-22T19:55:41.859Z",
     "genre": "Soundtrack",
     "videoGap": 4,
     "realBpm": 103,
@@ -44517,6 +44664,60 @@
     "shortId": 5895,
     "tracksCount": 1,
     "search": "disneysencantonosehabladebruno",
+    "local": false
+  },
+  {
+    "id": "disneys-encanto-olga-lucia-vives-isabel-garces-inspiracion",
+    "title": "Inspiración",
+    "artist": "Disney’s Encanto (Olga Lucía Vives, Isabel Garcés)",
+    "video": "FklTtTtAljg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 240,
+    "gap": 2690,
+    "year": "2021",
+    "lastUpdate": "2026-06-24T00:32:05.968Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5896,
+    "tracksCount": 1,
+    "search": "disneysencantoolgaluciavivesisabelgarcesinspiracion",
+    "local": false
+  },
+  {
+    "id": "disneys-encanto-sugey-torres-en-lo-profundopeso",
+    "title": "En lo profundo/Peso",
+    "artist": "Disney’s Encanto (Sugey Torres)",
+    "video": "7JXVgNvIXcI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 359.87999999999994,
+    "gap": 8050.222172850477,
+    "year": "2021",
+    "lastUpdate": "2026-06-24T00:32:06.419Z",
+    "genre": "Soundtrack",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5897,
+    "tracksCount": 1,
+    "search": "disneysencantosugeytorresenloprofundopeso",
     "local": false
   },
   {
@@ -83138,6 +83339,33 @@
     "local": false
   },
   {
+    "id": "justin-bieber-ghost",
+    "title": "Ghost",
+    "artist": "Justin Bieber",
+    "video": "Fp8msa5uYsc",
+    "language": [
+      "English"
+    ],
+    "bpm": 308.1,
+    "gap": 45697.604673807204,
+    "year": "2021",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-06-24T00:32:06.736Z",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5902,
+    "tracksCount": 1,
+    "search": "justinbieberghost",
+    "local": false
+  },
+  {
     "id": "justin-bieber-love-yourself",
     "title": "Love Yourself",
     "artist": "Justin Bieber",
@@ -100129,6 +100357,33 @@
     "local": false
   },
   {
+    "id": "madonna-live-to-tell",
+    "title": "Live To Tell",
+    "artist": "Madonna",
+    "video": "qrlytbdWpt0",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 34877.27272727273,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-24T00:32:06.998Z",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "blewmaxx",
+    "duration": 319,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5905,
+    "tracksCount": 1,
+    "search": "madonnalivetotell",
+    "local": false
+  },
+  {
     "id": "madonna-material-girl",
     "title": "Material Girl",
     "artist": "Madonna",
@@ -106117,6 +106372,35 @@
     "shortId": 2902,
     "tracksCount": 1,
     "search": "meghantrainorno",
+    "local": false
+  },
+  {
+    "id": "megumi-hayashibara-masami-okui-get-along",
+    "title": "Get Along",
+    "artist": "Megumi Hayashibara & Masami Okui",
+    "video": "C9oo-ZPB5oI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 302.02,
+    "gap": 14941.68829878816,
+    "year": "1995",
+    "lastUpdate": "2026-06-24T00:32:06.867Z",
+    "genre": "Anime",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Megumi%20Hayashibara%20&%20Masami%20Okui&cancion=Get%20Along%20(TV)",
+    "duration": 98,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5904,
+    "tracksCount": 1,
+    "search": "megumihayashibaramasamiokuigetalong",
     "local": false
   },
   {
@@ -139279,7 +139563,7 @@
     "bpm": 336.75,
     "gap": 24580.044543429845,
     "year": "2000",
-    "lastUpdate": "2026-06-23T00:37:26.783Z",
+    "lastUpdate": "2026-06-22T07:05:30.048Z",
     "realBpm": 85,
     "volume": 1,
     "author": "Peschi",
@@ -141125,7 +141409,7 @@
     "gap": 10324.845360824742,
     "year": "2023",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-06-23T00:37:26.913Z",
+    "lastUpdate": "2026-06-22T07:06:13.414Z",
     "realBpm": 96,
     "volume": 1,
     "author": "DoubleDee",
@@ -146164,7 +146448,7 @@
     "gap": 6058.362695817676,
     "year": "2024",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-06-23T00:37:26.169Z",
+    "lastUpdate": "2026-06-22T05:33:14.070Z",
     "genre": "K-Pop",
     "realBpm": 102,
     "volume": 0.93,
