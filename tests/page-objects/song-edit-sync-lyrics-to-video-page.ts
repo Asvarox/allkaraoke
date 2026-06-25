@@ -137,7 +137,11 @@ export class SongEditSyncLyricsToVideoPagePO {
   }
 
   public async enterSongTrackName(name: string) {
-    await this.page.locator('[data-test=track-name] input').fill(name);
+    await this.trackNameInput.fill(name);
+  }
+
+  public get trackNameInput() {
+    return this.page.locator('[data-test=track-name] input');
   }
 
   public getTextLineElement(lineNumber: number) {
