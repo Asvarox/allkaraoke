@@ -4913,6 +4913,35 @@
     "local": false
   },
   {
+    "id": "aimer-zankyou-sanka",
+    "title": "Zankyou Sanka",
+    "artist": "Aimer",
+    "video": "tLQLa6lM3Us",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 342.2,
+    "gap": 8721.817650496785,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-06-25T00:38:18.033Z",
+    "realBpm": 171,
+    "previewStart": 47,
+    "previewEnd": 74,
+    "volume": 1,
+    "author": "DeinAlptraum",
+    "duration": 182,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5910,
+    "tracksCount": 1,
+    "search": "aimerzankyousanka",
+    "local": false
+  },
+  {
     "id": "air-supply-all-out-of-love",
     "title": "All Out Of Love",
     "artist": "Air Supply",
@@ -6560,7 +6589,7 @@
     "gap": 14944.565217391304,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-24T00:32:06.739Z",
+    "lastUpdate": "2026-06-23T20:39:07.653Z",
     "realBpm": 70,
     "volume": 1,
     "author": "DS",
@@ -17484,7 +17513,7 @@
     "gap": 6230.081593472522,
     "year": "2010",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-06-24T00:32:06.555Z",
+    "lastUpdate": "2026-06-23T16:43:51.070Z",
     "genre": "Kpop",
     "realBpm": 128,
     "volume": 1,
@@ -17513,7 +17542,7 @@
     "gap": 18.243238310764013,
     "year": "2011",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-06-24T00:32:06.728Z",
+    "lastUpdate": "2026-06-23T16:44:12.744Z",
     "genre": "Kpop",
     "realBpm": 137,
     "previewStart": 145,
@@ -17578,7 +17607,7 @@
     "gap": 10589.92592043855,
     "year": "2010",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-06-24T00:32:06.732Z",
+    "lastUpdate": "2026-06-23T16:45:00.175Z",
     "genre": "Kpop",
     "realBpm": 135,
     "volume": 1,
@@ -17608,7 +17637,7 @@
     "gap": 43023.98406374502,
     "year": "2010",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-06-24T00:32:06.734Z",
+    "lastUpdate": "2026-06-23T20:38:09.117Z",
     "genre": "Kpop",
     "realBpm": 129,
     "volume": 1,
@@ -30713,6 +30742,35 @@
     "shortId": 860,
     "tracksCount": 1,
     "search": "camiloindigo",
+    "local": false
+  },
+  {
+    "id": "camilo-sesto-quieres-ser-mi-amante",
+    "title": "¿Quieres ser mi amante?",
+    "artist": "Camilo Sesto",
+    "video": "hSab2GF_n_w",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 304.68,
+    "gap": 17137.360378101614,
+    "year": "1974",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-06-25T00:38:18.236Z",
+    "genre": "Balada",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "JaVar61",
+    "sourceUrl": "https://www.youtube.com/watch?v=w99-dVJQkX0",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5914,
+    "tracksCount": 1,
+    "search": "camilosestoquieressermiamante",
     "local": false
   },
   {
@@ -44677,7 +44735,7 @@
     "bpm": 240,
     "gap": 2690,
     "year": "2021",
-    "lastUpdate": "2026-06-24T00:32:05.968Z",
+    "lastUpdate": "2026-06-23T16:41:34.950Z",
     "genre": "Soundtrack",
     "realBpm": 120,
     "volume": 1,
@@ -44704,7 +44762,7 @@
     "bpm": 359.87999999999994,
     "gap": 8050.222172850477,
     "year": "2021",
-    "lastUpdate": "2026-06-24T00:32:06.419Z",
+    "lastUpdate": "2026-06-23T16:43:12.082Z",
     "genre": "Soundtrack",
     "realBpm": 90,
     "volume": 1,
@@ -79167,10 +79225,10 @@
       "English"
     ],
     "bpm": 324,
-    "gap": 5541.481481481482,
+    "gap": 5641.481481481482,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-03T20:18:13.119Z",
+    "lastUpdate": "2026-06-24T04:46:58.300Z",
     "edition": "ESC 2025",
     "realBpm": 81,
     "volume": 1,
@@ -81385,6 +81443,34 @@
     "local": false
   },
   {
+    "id": "jose-jose-almohada",
+    "title": "Almohada",
+    "artist": "Jose  Jose",
+    "video": "CAneHUXYTfY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 296,
+    "gap": 24411.486486486487,
+    "year": "1979",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-06-25T00:38:17.071Z",
+    "genre": "Alternative",
+    "realBpm": 74,
+    "volume": 1,
+    "author": "DaVIch0",
+    "sourceUrl": "https://www.youtube.com/watch?v=CAneHUXYTfY",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5907,
+    "tracksCount": 1,
+    "search": "josejosealmohada",
+    "local": false
+  },
+  {
     "id": "jose-jose-amar-y-querer",
     "title": "Amar y querer",
     "artist": "José José",
@@ -83350,7 +83436,7 @@
     "gap": 45697.604673807204,
     "year": "2021",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-06-24T00:32:06.736Z",
+    "lastUpdate": "2026-06-23T20:38:42.421Z",
     "realBpm": 77,
     "volume": 1,
     "author": "Tracks",
@@ -96557,6 +96643,34 @@
     "local": false
   },
   {
+    "id": "lionel-richie-hello",
+    "title": "Hello",
+    "artist": "Lionel Richie",
+    "video": "mHONNcZbwDY",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.7,
+    "gap": 56674.668275030155,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-25T00:38:18.234Z",
+    "genre": "Soft Rock",
+    "realBpm": 62,
+    "volume": 1,
+    "author": "Senfbussard",
+    "duration": 327,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5913,
+    "tracksCount": 1,
+    "search": "lionelrichiehello",
+    "local": false
+  },
+  {
     "id": "lionel-richie-my-destiny",
     "title": "My Destiny",
     "artist": "Lionel Richie",
@@ -100368,7 +100482,7 @@
     "gap": 34877.27272727273,
     "year": "1986",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-24T00:32:06.998Z",
+    "lastUpdate": "2026-06-23T20:40:08.645Z",
     "realBpm": 76,
     "volume": 1,
     "author": "blewmaxx",
@@ -106385,7 +106499,7 @@
     "bpm": 302.02,
     "gap": 14941.68829878816,
     "year": "1995",
-    "lastUpdate": "2026-06-24T00:32:06.867Z",
+    "lastUpdate": "2026-06-23T20:39:29.978Z",
     "genre": "Anime",
     "realBpm": 132,
     "volume": 1,
@@ -113948,6 +114062,37 @@
     "local": false
   },
   {
+    "id": "nana-mizuki-tm-revolution-preserved-roses",
+    "title": "Preserved Roses",
+    "artist": "Nana Mizuki & T.M. Revolution",
+    "video": "4GC5R_v-CFs",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360,
+    "gap": 4970,
+    "year": "2013",
+    "lastUpdate": "2026-06-25T00:38:18.040Z",
+    "genre": "J-Pop",
+    "realBpm": 167,
+    "volume": 1,
+    "author": "omega-xis",
+    "duration": 218,
+    "tracks": [
+      {
+        "name": "Valvrave the Liberator",
+        "start": 28
+      },
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5911,
+    "tracksCount": 2,
+    "search": "nanamizukitmrevolutionpreservedroses",
+    "local": false
+  },
+  {
     "id": "nancy-sinatra-these-boots-are-made-for-walkin",
     "title": "These Boots Are Made For Walkin'",
     "artist": "Nancy Sinatra",
@@ -116895,6 +117040,65 @@
     "shortId": 3222,
     "tracksCount": 1,
     "search": "nightwishwishmaster",
+    "local": false
+  },
+  {
+    "id": "nik-kershaw-i-wont-let-the-sun-go-down-on-me",
+    "title": "I Won’t Let The Sun Go Down On Me",
+    "artist": "Nik Kershaw",
+    "video": "F0JZiM74sQs",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.3,
+    "gap": 23759.276214042686,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-25T00:38:18.436Z",
+    "genre": "New Wave",
+    "realBpm": 111,
+    "volume": 1,
+    "author": "Caruso",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=733",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8178",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5916,
+    "tracksCount": 1,
+    "search": "nikkershawiwontletthesungodownonme",
+    "local": false
+  },
+  {
+    "id": "nik-kershaw-wouldnt-it-be-good",
+    "title": "Wouldn’t It Be Good",
+    "artist": "Nik Kershaw",
+    "video": "cTLTG4FTNBQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 294.5,
+    "gap": 63791.32427843803,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-25T00:38:18.239Z",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=5633",
+    "duration": 293,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5915,
+    "tracksCount": 1,
+    "search": "nikkershawwouldntitbegood",
     "local": false
   },
   {
@@ -136456,6 +136660,32 @@
     "local": false
   },
   {
+    "id": "sandro-porque-yo-te-amo",
+    "title": "Porque yo te amo",
+    "artist": "Sandro",
+    "video": "O26OMNf61Xg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 240.1,
+    "gap": 19050,
+    "year": "1968",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-25T00:38:17.841Z",
+    "realBpm": 81,
+    "volume": 1,
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5908,
+    "tracksCount": 1,
+    "search": "sandroporqueyoteamo",
+    "local": false
+  },
+  {
     "id": "sandro-te-propongo",
     "title": "Te propongo",
     "artist": "Sandro",
@@ -136837,6 +137067,34 @@
     "shortId": 3797,
     "tracksCount": 1,
     "search": "sarahmclachlanangel",
+    "local": false
+  },
+  {
+    "id": "sarah-mclachlan-building-a-mystery",
+    "title": "Building A Mystery",
+    "artist": "Sarah McLachlan",
+    "video": "_QUq72fla3o",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.06,
+    "gap": 11964.086447601048,
+    "year": "1997",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-06-25T00:38:17.065Z",
+    "genre": "Pop",
+    "realBpm": 65,
+    "volume": 1,
+    "author": "Scudder",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5906,
+    "tracksCount": 1,
+    "search": "sarahmclachlanbuildingamystery",
     "local": false
   },
   {
@@ -166379,6 +166637,36 @@
     "local": false
   },
   {
+    "id": "unison-square-garden-sugar-song-to-bitter-step",
+    "title": "Sugar Song To Bitter Step",
+    "artist": "UNISON SQUARE GARDEN",
+    "video": "l-B0WFJG8-Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 264,
+    "gap": 23227.272727272728,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-06-25T00:38:17.843Z",
+    "genre": "J-Pop",
+    "realBpm": 132,
+    "previewStart": 64,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "HansiMcKlaus",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5909,
+    "tracksCount": 1,
+    "search": "unisonsquaregardensugarsongtobitterstep",
+    "local": false
+  },
+  {
     "id": "urszula-konik-na-biegunach",
     "title": "Konik na biegunach",
     "artist": "Urszula",
@@ -168276,6 +168564,35 @@
     "shortId": 4648,
     "tracksCount": 1,
     "search": "virginszansa",
+    "local": false
+  },
+  {
+    "id": "virus-pronta-entrega",
+    "title": "Pronta Entrega",
+    "artist": "Virus",
+    "video": "yE3fvS3DpzU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 271.28,
+    "gap": 394.7183721616042,
+    "year": "1985",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-25T00:38:18.232Z",
+    "genre": "Rock",
+    "realBpm": 137,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "rote_rose",
+    "duration": 273,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5912,
+    "tracksCount": 1,
+    "search": "virusprontaentrega",
     "local": false
   },
   {
