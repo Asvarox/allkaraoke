@@ -314,6 +314,56 @@ code {
   }
 }
 
+@keyframes lyrics-rain-drop {
+  0% {
+    transform: translateY(0);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+}
+
+.lyrics-word-effect-fire {
+  display: inline-block;
+  background-image: linear-gradient(180deg, #fffc9e 0%, #ff8e2a 45%, #e1341e 100%);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 0.4rem rgba(255, 120, 20, 0.7);
+}
+
+.lyrics-word-effect-rain {
+  display: inline-flex;
+  position: relative;
+  color: #c7ecff;
+}
+
+.lyrics-word-effect-rain-droplets {
+  position: absolute;
+  left: calc(100% - 0.2rem);
+  top: -0.2rem;
+  display: inline-flex;
+  gap: 0.12rem;
+  pointer-events: none;
+}
+
+.lyrics-word-effect-rain-droplet {
+  width: 0.15rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #e9fbff 0%, #79d2ff 100%);
+  animation: lyrics-rain-drop 0.85s ease-in infinite;
+}
+
+.lyrics-word-effect-rain-droplet:nth-child(2) {
+  animation-delay: 0.14s;
+}
+
+.lyrics-word-effect-rain-droplet:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
 h1 {
   font-size: 2.5rem;
 }
