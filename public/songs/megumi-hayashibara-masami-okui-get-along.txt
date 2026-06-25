@@ -9,7 +9,7 @@
 #GAP:14941,68829878816
 #ALLKARAOKE_ID:megumi-hayashibara-masami-okui-get-along
 #ALLKARAOKE_SID:5904
-#ALLKARAOKE_LASTUPDATE:2026-06-24T00:32:06.867Z
+#ALLKARAOKE_LASTUPDATE:2026-06-23T20:39:29.978Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:132
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Megumi%20Hayashibara%20&%20Masami%20Okui&cancion=Get%20Along%20(TV)
