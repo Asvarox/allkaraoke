@@ -47,7 +47,6 @@ export default function ManipulateBpm({ current, onChange, onUseCurrentTime, son
               <Tooltip title="Use the current player time">
                 <Button
                   data-test="desired-end-current-time"
-                  sx={{ mr: -1 }}
                   endIcon={<AccessTime />}
                   color="secondary"
                   variant="text"

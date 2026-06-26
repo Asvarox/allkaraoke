@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Button, Paper, Step, StepButton } from '@mui/material';
+import { Alert, AlertTitle, Button, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useState } from 'react';
@@ -284,7 +284,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
 
   return (
     <StyledEngineProvider injectFirst>
-      <div className="grid grid-cols-12 gap-4 px-1 pt-0 pb-10">
+      <div className="position-relative grid grid-cols-12 gap-4 px-1 pt-0 pb-10">
         <div className="col-span-12">
           {!isEdit && (
             <div className="mb-4">
@@ -294,7 +294,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
             </div>
           )}
         </div>
-        <div className="col-span-12 md:py-4">
+        <div className="col-span-12 px-2 md:px-0 md:py-4">
           <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
               <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
@@ -372,35 +372,8 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
               </Alert>
             )}
             {saveError && <Alert severity="error">{saveError}</Alert>}
-            <Paper
-              sx={{
-                position: 'fixed',
-                bottom: 0,
-                left: '50%',
-                maxWidth: '1260px',
-                width: '100%',
-                padding: 1,
-                transform: 'translateX(-50%)',
-                display: 'flex',
-                gap: 2,
-                justifyContent: 'space-between',
-              }}
-              elevation={3}>
-              {redirect && (
-                <Button
-                  disabled={isSaving}
-                  sx={{ align: 'right' }}
-                  onClick={async () => {
-                    setIsSaving(true);
-                    await SongDao.store(finalSong!);
-                    setIsSaving(false);
-                    navigate(redirect);
-                  }}>
-                  Skip
-                </Button>
-              )}
-
-              <div className="flex items-end">
+            <div className="ml-autoitems-center fixed bottom-0 left-1/2 z-10 flex w-full max-w-[1260px] -translate-x-1/2 justify-between gap-2 border-t border-slate-200 bg-white px-4 py-3 shadow-lg">
+              <div className="flex w-full items-center justify-between">
                 <Button
                   data-test="previous-button"
                   sx={{ align: 'right' }}
@@ -428,7 +401,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                   </Button>
                 )}
               </div>
-            </Paper>
+            </div>
           </form>
         </div>
       </div>
