@@ -22,6 +22,9 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+//   experimental: {
+//     bundledDev: true,
+//   },
   resolve: {
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
