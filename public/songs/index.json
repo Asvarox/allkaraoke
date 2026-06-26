@@ -4924,7 +4924,7 @@
     "gap": 8721.817650496785,
     "year": "2021",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-06-25T00:38:18.033Z",
+    "lastUpdate": "2026-06-24T04:49:48.319Z",
     "realBpm": 171,
     "previewStart": 47,
     "previewEnd": 74,
@@ -30756,7 +30756,7 @@
     "gap": 17137.360378101614,
     "year": "1974",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-06-25T00:38:18.236Z",
+    "lastUpdate": "2026-06-24T11:18:34.817Z",
     "genre": "Balada",
     "realBpm": 152,
     "volume": 1,
@@ -81454,7 +81454,7 @@
     "gap": 24411.486486486487,
     "year": "1979",
     "artistOrigin": "MX",
-    "lastUpdate": "2026-06-25T00:38:17.071Z",
+    "lastUpdate": "2026-06-24T04:47:43.760Z",
     "genre": "Alternative",
     "realBpm": 74,
     "volume": 1,
@@ -91305,6 +91305,36 @@
     "local": false
   },
   {
+    "id": "la-union-lobo-hombre-en-paris",
+    "title": "Lobo-hombre en París",
+    "artist": "La Unión",
+    "video": "sl4GO6pgRas",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 292.7,
+    "gap": 30077.059788179024,
+    "year": "1984",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-06-26T00:38:31.882Z",
+    "videoGap": 16,
+    "realBpm": 146,
+    "previewStart": 72,
+    "previewEnd": 121,
+    "volume": 1,
+    "author": "Toarman",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5921,
+    "tracksCount": 1,
+    "search": "launionlobohombreenparis",
+    "local": false
+  },
+  {
     "id": "la-zarra-evidemment",
     "title": "Évidemment",
     "artist": "La Zarra",
@@ -94519,6 +94549,35 @@
     "local": false
   },
   {
+    "id": "leonardo-favio-fuiste-mia-un-verano",
+    "title": "Fuiste mía un verano",
+    "artist": "Leonardo Favio",
+    "video": "EcSvxG-AYes",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 248,
+    "gap": 5351.774193548387,
+    "year": "1969",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-26T00:38:32.024Z",
+    "realBpm": 113,
+    "previewStart": 51,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "DaVIch0",
+    "duration": 167,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5922,
+    "tracksCount": 1,
+    "search": "leonardofaviofuistemiaunverano",
+    "local": false
+  },
+  {
     "id": "leoneed-x-rin-kagamine-tokyo-teddy-bear",
     "title": "Tokyo Teddy Bear",
     "artist": "Leo/need x Rin Kagamine",
@@ -96654,7 +96713,7 @@
     "gap": 56674.668275030155,
     "year": "1983",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-25T00:38:18.234Z",
+    "lastUpdate": "2026-06-24T11:18:01.399Z",
     "genre": "Soft Rock",
     "realBpm": 62,
     "volume": 1,
@@ -114072,7 +114131,7 @@
     "bpm": 360,
     "gap": 4970,
     "year": "2013",
-    "lastUpdate": "2026-06-25T00:38:18.040Z",
+    "lastUpdate": "2026-06-24T11:17:02.236Z",
     "genre": "J-Pop",
     "realBpm": 167,
     "volume": 1,
@@ -117054,7 +117113,7 @@
     "gap": 23759.276214042686,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-25T00:38:18.436Z",
+    "lastUpdate": "2026-06-24T11:20:07.131Z",
     "genre": "New Wave",
     "realBpm": 111,
     "volume": 1,
@@ -117073,6 +117132,35 @@
     "local": false
   },
   {
+    "id": "nik-kershaw-the-riddle",
+    "title": "The Riddle",
+    "artist": "Nik Kershaw",
+    "video": "bDygS0a6Tgo",
+    "language": [
+      "English"
+    ],
+    "bpm": 203.7,
+    "gap": 34069.072164948455,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-26T00:38:31.424Z",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "Caruso",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=733",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8177",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5917,
+    "tracksCount": 1,
+    "search": "nikkershawtheriddle",
+    "local": false
+  },
+  {
     "id": "nik-kershaw-wouldnt-it-be-good",
     "title": "Wouldn’t It Be Good",
     "artist": "Nik Kershaw",
@@ -117084,7 +117172,7 @@
     "gap": 63791.32427843803,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-25T00:38:18.239Z",
+    "lastUpdate": "2026-06-24T11:19:43.265Z",
     "realBpm": 98,
     "volume": 1,
     "author": "IC",
@@ -127623,6 +127711,63 @@
     "local": false
   },
   {
+    "id": "purple-schulz-kleine-seen",
+    "title": "Kleine Seen",
+    "artist": "Purple Schulz",
+    "video": "2wYh7lyE0aU",
+    "language": [
+      "German"
+    ],
+    "bpm": 399.34,
+    "gap": 30985.826613912956,
+    "year": "1985",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-26T00:38:31.879Z",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Buberatz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=17959",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8618",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5920,
+    "tracksCount": 1,
+    "search": "purpleschulzkleineseen",
+    "local": false
+  },
+  {
+    "id": "purple-schulz-verliebte-jungs",
+    "title": "Verliebte Jungs",
+    "artist": "Purple Schulz",
+    "video": "DZHLIF2ChdI",
+    "language": [
+      "German"
+    ],
+    "bpm": 219.84,
+    "gap": 24.759825327511066,
+    "year": "1985",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-26T00:38:31.433Z",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Buberatz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=17959",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8619",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 5919,
+    "tracksCount": 1,
+    "search": "purpleschulzverliebtejungs",
+    "local": false
+  },
+  {
     "id": "q-lazzarus-goodbye-horses",
     "title": "Goodbye Horses",
     "artist": "Q Lazzarus",
@@ -129928,6 +130073,36 @@
     "shortId": 3589,
     "tracksCount": 1,
     "search": "raphaelhablemosdelamor",
+    "local": false
+  },
+  {
+    "id": "raphael-mi-gran-noche",
+    "title": "Mi gran noche",
+    "artist": "Raphael",
+    "video": "lJNtNOC81oA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 278.62,
+    "gap": 10077.101428468883,
+    "year": "1968",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-06-26T00:38:32.161Z",
+    "genre": "Balada",
+    "realBpm": 138,
+    "previewStart": 37,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "Paisano87",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5923,
+    "tracksCount": 1,
+    "search": "raphaelmigrannoche",
     "local": false
   },
   {
@@ -136671,7 +136846,7 @@
     "gap": 19050,
     "year": "1968",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-25T00:38:17.841Z",
+    "lastUpdate": "2026-06-24T04:48:24.566Z",
     "realBpm": 81,
     "volume": 1,
     "duration": 214,
@@ -137081,7 +137256,7 @@
     "gap": 11964.086447601048,
     "year": "1997",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-06-25T00:38:17.065Z",
+    "lastUpdate": "2026-06-24T04:47:17.178Z",
     "genre": "Pop",
     "realBpm": 65,
     "volume": 1,
@@ -166648,7 +166823,7 @@
     "gap": 23227.272727272728,
     "year": "2015",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-06-25T00:38:17.843Z",
+    "lastUpdate": "2026-06-24T04:49:26.826Z",
     "genre": "J-Pop",
     "realBpm": 132,
     "previewStart": 64,
@@ -168219,6 +168394,36 @@
     "local": false
   },
   {
+    "id": "vicky-leandros-ich-liebe-das-leben",
+    "title": "Ich liebe das Leben",
+    "artist": "Vicky Leandros",
+    "video": "KN6FN-a2pRg",
+    "language": [
+      "German"
+    ],
+    "bpm": 304.87,
+    "gap": 8295.974021714173,
+    "year": "1975",
+    "artistOrigin": "LU",
+    "lastUpdate": "2026-06-26T00:38:31.430Z",
+    "genre": "Pop",
+    "realBpm": 74,
+    "volume": 1,
+    "author": "Dynamic_Duo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=49073",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11929",
+    "duration": 299,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5918,
+    "tracksCount": 1,
+    "search": "vickyleandrosichliebedasleben",
+    "local": false
+  },
+  {
     "id": "victoria-justice-all-i-want-is-everything",
     "title": "All I Want Is Everything",
     "artist": "Victoria Justice",
@@ -168578,7 +168783,7 @@
     "gap": 394.7183721616042,
     "year": "1985",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-25T00:38:18.232Z",
+    "lastUpdate": "2026-06-24T11:17:37.052Z",
     "genre": "Rock",
     "realBpm": 137,
     "previewEnd": 90,
