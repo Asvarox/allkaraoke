@@ -33,6 +33,28 @@ export default function AdjustPlayback({ player, playbackSpeed, setPlaybackSpeed
   return (
     <>
       <Box>
+        <Typography>
+          Playback speed: <Pre data-test="current-speed">{playbackSpeed * 100}%</Pre>
+        </Typography>
+        <ShortcutIndicator shortcutKey="1/2/3/4">
+          <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1 }}>
+            {[0.25, 0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
+              <Button
+                size="small"
+                data-test={`speed-${speed}`}
+                key={speed}
+                sx={{ flex: 1 }}
+                onClick={() => {
+                  setPlaybackSpeed(speed);
+                }}
+                disabled={playbackSpeed === speed}>
+                {speed * 100}%
+              </Button>
+            ))}
+          </ButtonGroup>
+        </ShortcutIndicator>
+      </Box>
+      <Box>
         <Typography data-test="current-time">
           Current time: <Pre ref={currentTimeElementRef} />
         </Typography>
@@ -67,28 +89,6 @@ export default function AdjustPlayback({ player, playbackSpeed, setPlaybackSpeed
             </Button>
           </ButtonGroup>
         </Box>
-      </Box>
-      <Box>
-        <Typography>
-          Playback speed: <Pre data-test="current-speed">{playbackSpeed * 100}%</Pre>
-        </Typography>
-        <ShortcutIndicator shortcutKey="1/2/3/4">
-          <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1 }}>
-            {[0.25, 0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
-              <Button
-                size="small"
-                data-test={`speed-${speed}`}
-                key={speed}
-                sx={{ flex: 1 }}
-                onClick={() => {
-                  setPlaybackSpeed(speed);
-                }}
-                disabled={playbackSpeed === speed}>
-                {speed * 100}%
-              </Button>
-            ))}
-          </ButtonGroup>
-        </ShortcutIndicator>
       </Box>
     </>
   );

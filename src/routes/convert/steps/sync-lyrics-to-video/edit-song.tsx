@@ -289,33 +289,35 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         {player.current && (
           <>
             <AdjustPlayback player={player.current} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
-            <div className="flex justify-between">
-              <ShortcutIndicator shortcutKey="q">
-                <Button variant="outlined" size="small" onClick={() => seekToSection(0)}>
-                  First section
-                </Button>
-              </ShortcutIndicator>
-              <ShortcutIndicator shortcutKey="w">
-                <Button variant="outlined" size="small" onClick={() => seekToPreviousSection()}>
-                  Prev
-                </Button>
-              </ShortcutIndicator>
-              <ShortcutIndicator shortcutKey="e">
-                <Button variant="outlined" size="small" onClick={() => seekToNextSection()}>
-                  Next
-                </Button>
-              </ShortcutIndicator>
-              <ShortcutIndicator shortcutKey="r">
-                <Button variant="outlined" size="small" onClick={() => seekToLastSection()}>
-                  Last section
-                </Button>
-              </ShortcutIndicator>
+            <div className="flex flex-col gap-1">
+              <SectionSlider
+                notesSections={notesSections}
+                currentSectionIndex={currentSectionIndex}
+                onSeekSection={seekToSection}
+              />
+              <div className="flex justify-between">
+                <ShortcutIndicator shortcutKey="q">
+                  <Button variant="outlined" size="small" onClick={() => seekToSection(0)}>
+                    First section
+                  </Button>
+                </ShortcutIndicator>
+                <ShortcutIndicator shortcutKey="w">
+                  <Button variant="outlined" size="small" onClick={() => seekToPreviousSection()}>
+                    Prev
+                  </Button>
+                </ShortcutIndicator>
+                <ShortcutIndicator shortcutKey="e">
+                  <Button variant="outlined" size="small" onClick={() => seekToNextSection()}>
+                    Next
+                  </Button>
+                </ShortcutIndicator>
+                <ShortcutIndicator shortcutKey="r">
+                  <Button variant="outlined" size="small" onClick={() => seekToLastSection()}>
+                    Last section
+                  </Button>
+                </ShortcutIndicator>
+              </div>
             </div>
-            <SectionSlider
-              notesSections={notesSections}
-              currentSectionIndex={currentSectionIndex}
-              onSeekSection={seekToSection}
-            />
           </>
         )}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}

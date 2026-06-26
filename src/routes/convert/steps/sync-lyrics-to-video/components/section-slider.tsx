@@ -30,7 +30,7 @@ export default function SectionSlider({ notesSections, currentSectionIndex, onSe
   if (notesSections.length === 0) return null;
 
   return (
-    <div className="px-2">
+    <div className="px-5">
       <Slider
         data-test="section-slider"
         size="small"
