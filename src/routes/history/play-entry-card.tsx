@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { twc } from 'react-twc';
+import { twc, TwcComponentProps } from 'react-twc';
 import { GAME_MODE } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -32,7 +32,7 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
 
   return (
     <Button
-      className="h-auto flex-col! items-stretch gap-0 p-0 text-left normal-case"
+      className="h-auto flex-col! items-stretch gap-0 p-0 text-left font-normal normal-case"
       focused={focused}
       subtleFocused={focused}
       onClick={onClick}
@@ -40,25 +40,23 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
       {/* Top row: text content on the left, thumbnail on the right */}
       <div className="flex items-start">
         <div className="flex flex-1 flex-col gap-1 px-4 py-3">
-          <Typography className="text-active text-md">{songTitle}</Typography>
+          <Typography active className="text-md">
+            {songTitle}
+          </Typography>
           <div className="flex items-center justify-between gap-2">
             {isDeleted && <Typography className="block text-sm opacity-50">{entry.songKey}</Typography>}
-            {songArtist && <Typography className="block text-sm text-slate-300">{songArtist}</Typography>}
+            {songArtist && <Typography className="block text-sm">{songArtist}</Typography>}
             <Typography className="shrink-0 text-sm opacity-70">{time}</Typography>
           </div>
         </div>
         {thumbnailUrl ? (
           // self-start: stays at aspect-video height, does not grow when the card expands
-          <img
-            src={thumbnailUrl}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            className="mt-1 mr-1 aspect-video w-32 shrink-0 self-start rounded-r-[4px] object-cover"
-          />
+          <ThumbnailBase asChild $expanded={isExpanded}>
+            <img src={thumbnailUrl} alt="" loading="lazy" decoding="async" />
+          </ThumbnailBase>
         ) : (
           // Placeholder when song has been deleted or has no video
-          <div className="mt-1 mr-1 aspect-video w-32 shrink-0 self-start rounded-r-[4px] bg-white/10" />
+          <ThumbnailBase className="bg-white/10" $expanded={isExpanded} />
         )}
       </div>
       {/* Expandable section — sibling to the top row so the divider spans the full button width */}
@@ -73,12 +71,12 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
             <div className="flex flex-col gap-1 pr-3">
               <DetailRow>
                 <span>Mode</span>
-                <span>{GAME_MODE_LABELS[entry.mode] ?? entry.mode}</span>
+                <strong>{GAME_MODE_LABELS[entry.mode] ?? entry.mode}</strong>
               </DetailRow>
               {entry.progress !== undefined && (
                 <DetailRow>
                   <span>Completion</span>
-                  <span>{Math.round(entry.progress * 100)}%</span>
+                  <strong>{Math.round(entry.progress * 100)}%</strong>
                 </DetailRow>
               )}
             </div>
@@ -87,7 +85,7 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
               {entry.scores.map((score) => (
                 <DetailRow key={score.name}>
                   <span>{score.name}</span>
-                  <span>{score.score.toLocaleString()}</span>
+                  <strong>{score.score.toLocaleString()}</strong>
                 </DetailRow>
               ))}
             </div>
@@ -97,6 +95,11 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
     </Button>
   );
 }
+
+const ThumbnailBase = twc.div<{ $expanded: boolean } & TwcComponentProps<'div'>>((props) => [
+  'mt-1 mr-1 aspect-video w-32 shrink-0 self-start rounded-sm object-cover',
+  props.$expanded ? 'rounded-tr-md' : 'rounded-r-md',
+]);
 
 // Used multiple times (mode + completion + one per player score) → TWC
 const DetailRow = twc(Typography)`flex justify-between text-sm`;

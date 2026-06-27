@@ -29,7 +29,7 @@ function HistoryPage() {
           <Menu.SubHeader>{group.label}</Menu.SubHeader>
           {group.entries.map((entry) => {
             // Unique key per play: song hash + ISO timestamp
-            const entryKey = `${entry.songKey}-${entry.date}`;
+            const entryKey = `history-entry-${entry.songKey}-${entry.date}`;
             const isExpanded = expandedKey === entryKey;
 
             return (
@@ -38,7 +38,6 @@ function HistoryPage() {
                 entry={entry}
                 isExpanded={isExpanded}
                 {...register(entryKey, () => setExpandedKey(isExpanded ? null : entryKey))}
-                data-test="history-entry"
               />
             );
           })}

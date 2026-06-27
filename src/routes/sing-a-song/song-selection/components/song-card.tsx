@@ -2,6 +2,7 @@ import { Icon } from '@iconify-icon/react';
 import { ComponentProps, createContext, forwardRef, useContext } from 'react';
 import { SongPreview } from '~/interfaces';
 import { Chip } from '~/modules/elements/akui/chip';
+import Box from '~/modules/elements/akui/primitives/box';
 import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/song-flag';
 import { SongCardStatsIndicator } from '~/routes/sing-a-song/song-selection/components/song-card/top-container';
 import { cn } from '~/utils/cn';
@@ -30,7 +31,7 @@ const Thumbnail = forwardRef<HTMLDivElement, ComponentProps<'div'>>(function Thu
   return (
     <div
       ref={ref}
-      className={`relative isolate aspect-video shrink-0 overflow-hidden rounded bg-[#2b2b2b] ${className ?? ''}`}
+      className={`relative isolate aspect-video shrink-0 overflow-hidden rounded-xl bg-[#2b2b2b] ${className ?? ''}`}
       {...props}>
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -50,7 +51,7 @@ function SongTitle({ className, ...props }: ComponentProps<'span'>) {
   return (
     <span
       data-name="title"
-      className={`text-active truncate text-lg leading-tight font-bold ${className ?? ''}`}
+      className={`text-active typography truncate text-lg leading-tight font-bold ${className ?? ''}`}
       {...props}>
       {props.children ?? song.title}
     </span>
@@ -60,10 +61,7 @@ function SongTitle({ className, ...props }: ComponentProps<'span'>) {
 function Artist({ className, ...props }: ComponentProps<'span'>) {
   const { song } = useSongCardContext();
   return (
-    <span
-      data-name="artist"
-      className={`truncate text-[20px] leading-tight text-slate-300 ${className ?? ''}`}
-      {...props}>
+    <span data-name="artist" className={`typography truncate text-[20px] leading-tight ${className ?? ''}`} {...props}>
       {props.children ?? song.artist}
     </span>
   );
@@ -123,9 +121,9 @@ function SongCardRoot({
 }: SongCardProps) {
   return (
     <SongCardContext.Provider value={{ song, isPopular, forceFlag }}>
-      <div
+      <Box
         className={cn(
-          'relative box-border flex h-full w-full flex-col overflow-hidden rounded-xl bg-slate-900/80 p-1.5 transition-all duration-300',
+          'relative box-border flex h-full w-full flex-col items-stretch justify-normal overflow-hidden rounded-2xl p-1.5 transition-all duration-300',
           focused
             ? 'scale-100 border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] md:scale-[1.075]'
             : 'border border-white/10',
@@ -133,7 +131,7 @@ function SongCardRoot({
         )}
         {...props}>
         {children}
-      </div>
+      </Box>
     </SongCardContext.Provider>
   );
 }

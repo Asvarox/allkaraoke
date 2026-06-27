@@ -11,7 +11,7 @@ export function Typography<T extends ElementType = 'span'>({ as, className, chil
   return (
     <Component
       className={twMerge(
-        `typography [&_a]:typography [&_a]:text-active text-base ${active ? 'text-active' : ''}`,
+        `typography [&_a]:typography [&_a]:text-active text-base ${active ? 'text-active font-bold' : ''}`,
         className,
       )}
       {...props}>

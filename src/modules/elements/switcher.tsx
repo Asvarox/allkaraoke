@@ -32,7 +32,7 @@ export const Switcher = ({
     onClick={onClick}
     data-disabled={disabled}
     {...restProps}
-    className={`${className} shadow-focusable flex justify-start rounded-md`}>
+    className={`${className} shadow-focusable flex justify-start`}>
     <span>{label ? <>{label}:</> : ''}</span>{' '}
     <AnimatePresence>
       <motion.span

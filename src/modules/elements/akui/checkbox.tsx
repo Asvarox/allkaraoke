@@ -15,7 +15,11 @@ export const Checkbox = ({
       {...props}
       className={twMerge('justify-start gap-8 pl-8', className)}>
       <span className="flex h-4 w-4 items-center justify-center rounded">
-        {checked ? <CheckBox className="h-8! w-8!" /> : <CheckBoxOutlineBlank className="h-8! w-8!" />}
+        {checked ? (
+          <CheckBox className="h-8! w-8! stroke-black/50" />
+        ) : (
+          <CheckBoxOutlineBlank className="h-8! w-8! stroke-black/50" />
+        )}
       </span>
       {props.children}
     </MenuButton>

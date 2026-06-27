@@ -39,19 +39,16 @@ module.exports = {
           '0%': {
             backgroundPosition: '0% 50%',
           },
-          '50%': {
-            backgroundPosition: '100% 50%',
-          },
           '100%': {
             backgroundPosition: '0% 50%',
           },
         },
         focused: {
           '0%, 100%': {
-            'box-shadow': `inset 0px 0px 0px 2px ${styles.colors.text.active}`,
+            'box-shadow': `inset 0px 0px 0px 3px ${styles.colors.text.active}`,
           },
           '50%': {
-            'box-shadow': `inset 0px 0px 0px 4px ${styles.colors.text.active}`,
+            'box-shadow': `inset 0px 0px 0px 3px ${styles.colors.text.active}`,
           },
         },
         buttonFocused: {
