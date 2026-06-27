@@ -25320,6 +25320,33 @@
     "local": false
   },
   {
+    "id": "brenda-k-starr-i-still-believe",
+    "title": "I Still Believe",
+    "artist": "Brenda K. Starr",
+    "video": "CI8gsPnCISY",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 15786.393442622952,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-27T00:36:14.647Z",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "radioactiverice",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5933,
+    "tracksCount": 1,
+    "search": "brendakstarristillbelieve",
+    "local": false
+  },
+  {
     "id": "brenda-lee-rockin-around-the-christmas-tree",
     "title": "Rockin’ Around The Christmas Tree",
     "artist": "Brenda Lee",
@@ -32667,6 +32694,36 @@
     "shortId": 5739,
     "tracksCount": 1,
     "search": "charlottechurchcrazychick",
+    "local": false
+  },
+  {
+    "id": "charly-garcia-demoliendo-hoteles",
+    "title": "Demoliendo hoteles",
+    "artist": "Charly García",
+    "video": "Mm3IgrVsu24",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 312.77,
+    "gap": 8972.870160181603,
+    "year": "1984",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-27T00:36:14.453Z",
+    "genre": "Rock Latino",
+    "realBpm": 78,
+    "previewStart": 34,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "frippio",
+    "duration": 129,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5927,
+    "tracksCount": 1,
+    "search": "charlygarciademoliendohoteles",
     "local": false
   },
   {
@@ -53692,6 +53749,36 @@
     "shortId": 5679,
     "tracksCount": 1,
     "search": "envoguemylovinyourenevergonnagetit",
+    "local": false
+  },
+  {
+    "id": "enanitos-verdes-igual-que-ayer",
+    "title": "Igual que ayer",
+    "artist": "Enanitos Verdes",
+    "video": "ysrcBkoXr0U",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 274.43,
+    "gap": 16136.142550012753,
+    "year": "1992",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-27T00:36:14.323Z",
+    "genre": "Latin",
+    "realBpm": 137,
+    "previewStart": 57,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "rote_rose",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5926,
+    "tracksCount": 1,
+    "search": "enanitosverdesigualqueayer",
     "local": false
   },
   {
@@ -77536,6 +77623,35 @@
     "local": false
   },
   {
+    "id": "jeanette-porque-te-vas",
+    "title": "Porque te vas",
+    "artist": "Jeanette",
+    "video": "TjUhXbGdLYo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 299.79999999999995,
+    "gap": 10730,
+    "year": "1974",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-06-27T00:36:14.179Z",
+    "realBpm": 87,
+    "previewStart": 42,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5925,
+    "tracksCount": 1,
+    "search": "jeanetteporquetevas",
+    "local": false
+  },
+  {
     "id": "jeanne-die-kamikaze-diebin-intro",
     "title": "Intro",
     "artist": "Jeanne die Kamikaze Diebin",
@@ -91316,7 +91432,7 @@
     "gap": 30077.059788179024,
     "year": "1984",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-06-26T00:38:31.882Z",
+    "lastUpdate": "2026-06-25T08:25:32.613Z",
     "videoGap": 16,
     "realBpm": 146,
     "previewStart": 72,
@@ -94560,7 +94676,7 @@
     "gap": 5351.774193548387,
     "year": "1969",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-26T00:38:32.024Z",
+    "lastUpdate": "2026-06-25T10:59:27.178Z",
     "realBpm": 113,
     "previewStart": 51,
     "previewEnd": 90,
@@ -108143,6 +108259,36 @@
     "local": false
   },
   {
+    "id": "michael-jackson-another-part-of-me",
+    "title": "Another part of me",
+    "artist": "Michael Jackson",
+    "video": "kLukN4G1sSI",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 23399,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-27T00:36:14.641Z",
+    "edition": "Pop",
+    "genre": "Pop",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "asb",
+    "duration": 238,
+    "tracks": [
+      {
+        "name": "Another part of me",
+        "start": 13
+      }
+    ],
+    "shortId": 5930,
+    "tracksCount": 1,
+    "search": "michaeljacksonanotherpartofme",
+    "local": false
+  },
+  {
     "id": "michael-jackson-bad",
     "title": "Bad",
     "artist": "Michael Jackson",
@@ -108407,6 +108553,37 @@
     "shortId": 5589,
     "tracksCount": 1,
     "search": "michaeljacksonearthsong",
+    "local": false
+  },
+  {
+    "id": "michael-jackson-feat-akon-hold-my-hand",
+    "title": "Hold My Hand",
+    "artist": "Michael Jackson feat. Akon",
+    "video": "-oCCnxBos10",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 9080,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-27T00:36:14.638Z",
+    "edition": "Pop",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Michael Jackson",
+    "authorUrl": "https://www.youtube.com/@MichaelJackson",
+    "duration": 224,
+    "tracks": [
+      {
+        "name": "Hold My Hand",
+        "start": 18
+      }
+    ],
+    "shortId": 5929,
+    "tracksCount": 1,
+    "search": "michaeljacksonfeatakonholdmyhand",
     "local": false
   },
   {
@@ -108822,6 +108999,38 @@
     "local": false
   },
   {
+    "id": "michael-jackson-the-lady-in-my-life",
+    "title": "The Lady In My Life",
+    "artist": "Michael Jackson",
+    "video": "cJLH5yXoqi8",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.60000000000002,
+    "gap": 20137,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-27T00:36:14.635Z",
+    "edition": "Pop",
+    "genre": "Pop",
+    "realBpm": 73,
+    "volume": 1,
+    "author": "Michael Jackson",
+    "authorUrl": "https://www.youtube.com/@michaeljacksonVEVO",
+    "sourceUrl": "https://www.youtube.com/watch?v=cJLH5yXoqi8",
+    "duration": 302,
+    "tracks": [
+      {
+        "name": "The lady in my life",
+        "start": 16
+      }
+    ],
+    "shortId": 5928,
+    "tracksCount": 1,
+    "search": "michaeljacksontheladyinmylife",
+    "local": false
+  },
+  {
     "id": "michael-jackson-the-way-you-make-me-feel",
     "title": "The Way You Make Me Feel",
     "artist": "Michael Jackson",
@@ -108881,6 +109090,36 @@
     "shortId": 4991,
     "tracksCount": 1,
     "search": "michaeljacksontheydontcareaboutus",
+    "local": false
+  },
+  {
+    "id": "michael-jackson-this-is-it",
+    "title": "This is it",
+    "artist": "Michael Jackson",
+    "video": "W_SLU3m6uCA",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 8505,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-27T00:36:14.643Z",
+    "edition": "Pop",
+    "genre": "Pop Rock",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "bar_ney_",
+    "duration": 227,
+    "tracks": [
+      {
+        "name": "This is it",
+        "start": 13
+      }
+    ],
+    "shortId": 5931,
+    "tracksCount": 1,
+    "search": "michaeljacksonthisisit",
     "local": false
   },
   {
@@ -117143,7 +117382,7 @@
     "gap": 34069.072164948455,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-06-26T00:38:31.424Z",
+    "lastUpdate": "2026-06-25T08:23:30.147Z",
     "realBpm": 101,
     "volume": 1,
     "author": "Caruso",
@@ -127722,7 +127961,7 @@
     "gap": 30985.826613912956,
     "year": "1985",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-26T00:38:31.879Z",
+    "lastUpdate": "2026-06-25T08:24:58.796Z",
     "realBpm": 100,
     "volume": 1,
     "author": "Buberatz",
@@ -127750,7 +127989,7 @@
     "gap": 24.759825327511066,
     "year": "1985",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-26T00:38:31.433Z",
+    "lastUpdate": "2026-06-25T08:24:13.122Z",
     "realBpm": 110,
     "volume": 1,
     "author": "Buberatz",
@@ -130087,7 +130326,7 @@
     "gap": 10077.101428468883,
     "year": "1968",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-06-26T00:38:32.161Z",
+    "lastUpdate": "2026-06-25T11:00:27.574Z",
     "genre": "Balada",
     "realBpm": 138,
     "previewStart": 37,
@@ -130218,6 +130457,33 @@
     "shortId": 3593,
     "tracksCount": 1,
     "search": "rasmussenhigherground",
+    "local": false
+  },
+  {
+    "id": "rata-blanca-mujer-amante",
+    "title": "Mujer amante",
+    "artist": "Rata blanca",
+    "video": "V7q1jN7k5lg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 230.2,
+    "gap": 11581.739130434782,
+    "year": "1990",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-27T00:36:13.562Z",
+    "genre": "Rock",
+    "realBpm": 115,
+    "volume": 1,
+    "duration": 355,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5924,
+    "tracksCount": 1,
+    "search": "ratablancamujeramante",
     "local": false
   },
   {
@@ -149487,6 +149753,34 @@
     "local": false
   },
   {
+    "id": "takase-toya-doushite",
+    "title": "Doushite",
+    "artist": "Takase Toya",
+    "video": "Y9hvUf08tBM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 150,
+    "gap": 18300,
+    "year": "2022",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-06-27T00:36:14.645Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "juhgkoop",
+    "duration": 188,
+    "tracks": [
+      {
+        "name": "Doushite",
+        "start": 10
+      }
+    ],
+    "shortId": 5932,
+    "tracksCount": 1,
+    "search": "takasetoyadoushite",
+    "local": false
+  },
+  {
     "id": "takaya-kuroda-baka-mitai",
     "title": "Baka Mitai",
     "artist": "Takaya Kuroda",
@@ -168405,7 +168699,7 @@
     "gap": 8295.974021714173,
     "year": "1975",
     "artistOrigin": "LU",
-    "lastUpdate": "2026-06-26T00:38:31.430Z",
+    "lastUpdate": "2026-06-25T08:23:52.974Z",
     "genre": "Pop",
     "realBpm": 74,
     "volume": 1,
