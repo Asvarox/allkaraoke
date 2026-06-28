@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "7067e6313c8d05fb2735dcd3eef32ce7dd666ead" };
+		e.SENTRY_RELEASE = { id: "8b337b3dc1eb1f16321d7ae63da83ec0e6113c09" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
