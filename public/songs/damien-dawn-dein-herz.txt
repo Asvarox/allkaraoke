@@ -1,0 +1,318 @@
+#ARTIST:Damien Dawn
+#TITLE:Dein Herz
+#CREATOR:LittleK.
+#BPM:339,73
+#YEAR:2010
+#VIDEO:v=JVWHpWAHIMI
+#LANGUAGE:German
+#GAP:7834,487681394048
+#ALLKARAOKE_ID:damien-dawn-dein-herz
+#ALLKARAOKE_SID:5934
+#ALLKARAOKE_LASTUPDATE:2026-06-28T00:36:17.234Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=871
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=13152
+#ALLKARAOKE_VOLUME:0,6
+#ALLKARAOKE_DURATION:157
+#P1:Dein Herz
+#MP3:Damien Dawn - Dein Herz.mp3
+: 23 5 14 Auch 
+: 31 5 14 wenn 
+: 39 2 12 du 
+: 43 14 14 schläfst
+- 57
+: 71 5 14 Schau 
+: 79 12 13 ich 
+: 95 5 13 nach 
+: 103 10 11 dir
+- 113 129
+- 129
+: 152 4 14 Der 
+: 159 5 14 strahl’ 
+: 166 2 13 nde 
+: 171 8 14 eng 
+: 182 5 11 el
+- 187
+: 192 4 11 Lockt 
+: 199 5 14 den 
+: 207 5 13 dun 
+: 215 5 13 klen 
+: 223 5 13 vam 
+: 231 10 13 pir
+: 243 2 10 ~
+: 247 4 8 ~
+- 251 257
+- 257
+: 280 5 14 Du 
+: 288 5 14 bist 
+: 296 2 13 zum 
+: 300 5 14 gre 
+: 308 2 13 ifen 
+: 312 8 14 nah
+- 320
+: 327 5 1 Doch 
+: 335 5 0 un 
+: 343 4 -2 end 
+: 350 5 -4 lich 
+: 358 9 -2 fern
+- 367 368
+- 368
+: 391 5 -4 Du 
+: 399 13 -2 weckst 
+: 415 4 -2 den 
+* 422 14 5 Mensch 
+: 439 4 3 in
+: 446 5 -2 ~ 
+: 454 7 -2 mir
+- 461
+: 472 4 2 Du 
+: 479 5 2 bist 
+: 487 2 1 das 
+: 491 13 2 licht
+- 504
+: 519 2 0 In 
+: 523 2 1 der 
+: 528 12 0 finst 
+: 543 5 0 ren 
+: 551 14 -2 nacht
+- 565 577
+- 577
+: 600 4 0 Ich 
+: 607 4 1 bin 
+: 614 2 0 der 
+: 619 4 1 dun 
+: 626 2 0 kle 
+: 631 11 5 Held
+- 642
+: 647 4 1 Der 
+: 654 6 0 ü 
+: 663 4 -2 ber 
+: 670 5 -4 dich 
+: 678 10 -2 wacht
+- 688 705
+- 705
+: 728 4 1 Bleib 
+: 735 4 1 ich 
+: 742 2 1 bei 
+: 747 10 4 dir
+: 759 4 5 ~
+- 763
+: 766 5 1 Dann 
+: 774 5 1 weckst 
+: 782 10 3 du 
+: 795 8 5 den 
+: 806 2 5 mensch
+* 810 3 2 ~
+: 815 13 0 ~ 
+: 831 5 2 in
+: 838 7 0 ~ 
+: 847 24 0 mir
+- 871 880
+- 880
+: 903 5 -3 Ich 
+: 911 5 0 seh 
+: 919 5 -2 in 
+* 927 5 3 dein 
+: 935 13 2 herz 
+: 951 4 1 und 
+: 958 5 -3 er 
+: 966 13 0 ken 
+* 982 4 -3 ne 
+: 989 5 1 mich 
+: 997 12 0 selbst
+- 1009
+: 1031 4 -2 Und 
+: 1038 5 0 doch 
+: 1046 4 -2 werd 
+* 1053 6 5 ich 
+: 1062 14 4 nie 
+: 1079 4 2 mals 
+: 1086 4 -2 ein 
+: 1093 14 1 teil 
+: 1110 4 1 dei 
+: 1117 5 3 ner 
+: 1125 14 3 welt
+- 1139
+: 1159 3 1 Ich 
+* 1165 8 5 fühl 
+: 1176 6 1 dich
+- 1182
+* 1198 9 5 Spür 
+: 1210 8 1 dich
+- 1218
+: 1223 4 -1 Ich 
+: 1230 7 5 teil 
+: 1240 11 5 dein 
+: 1254 9 3 schmerz
+- 1263
+: 1271 4 -2 Wenn 
+: 1278 1 -2 du 
+: 1282 4 0 mich 
+: 1289 11 1 suchst
+- 1300
+: 1317 5 -2 Dann 
+: 1325 5 0 sieh 
+: 1333 6 1 in 
+: 1342 5 0 dein 
+* 1350 5 0 herz
+* 1358 11 -2 ~
+- 1369 1407
+- 1407
+: 1430 5 2 Du 
+: 1438 4 2 hälst 
+: 1445 2 1 mein 
+: 1450 9 2 herz
+- 1459
+: 1479 4 2 In 
+: 1486 13 1 dein 
+* 1502 5 1 er 
+: 1510 13 -1 hand
+- 1523 1535
+- 1535
+: 1558 5 2 So 
+: 1566 4 2 was 
+: 1573 2 1 wie 
+: 1578 9 2 lie 
+: 1590 5 -3 be
+- 1595
+: 1598 5 0 Hab 
+: 1606 4 2 ich 
+: 1613 9 4 nie 
+: 1625 11 6 ge 
+* 1639 2 6 kannt
+* 1643 2 3 ~
+* 1647 5 1 ~
+- 1652 1663
+- 1663
+: 1686 4 1 Hast 
+: 1693 5 1 mich 
+: 1701 2 1 ge 
+: 1706 9 4 zähmt
+: 1718 6 5 ~
+- 1724
+: 1734 4 1 Mein 
+: 1741 9 3 herz 
+: 1753 9 5 ge 
+: 1765 2 5 lehmt
+: 1770 2 3 ~
+: 1775 7 1 ~
+- 1782
+: 1798 5 -2 Du 
+: 1806 14 -1 weckst 
+: 1823 4 -1 denn 
+* 1830 13 5 mensch 
+: 1846 4 4 in
+: 1853 6 -1 ~ 
+: 1862 24 -1 mir
+- 1886 1935
+- 1935
+: 1958 4 -2 Ein 
+: 1965 14 -4 teil 
+: 1982 5 -1 von 
+* 1990 17 -7 dir
+- 2007 2063
+- 2063
+: 2086 5 -2 Nun 
+: 2094 14 -4 stehn 
+: 2111 4 -1 wir 
+: 2118 15 -6 hier
+- 2133 2181
+- 2181
+: 2204 6 -2 Doch 
+: 2213 4 -2 ich 
+: 2220 14 5 schen 
+: 2237 6 3 ke 
+: 2246 12 -2 dir
+- 2258 2270
+- 2270
+: 2293 5 3 Mein
+: 2300 6 2 ~ 
+: 2309 6 3 herz
+* 2317 35 5 ~
+- 2352 2353
+- 2353
+: 2376 4 -3 Ich 
+: 2383 4 0 seh 
+: 2390 4 -2 in 
+: 2397 5 3 dein 
+: 2405 12 2 herz 
+: 2420 5 1 und 
+* 2428 5 -3 er 
+: 2436 14 0 ken 
+: 2453 4 -3 ne 
+: 2460 6 1 mich 
+: 2469 13 0 selbst
+- 2482
+: 2500 5 -2 Und 
+: 2508 5 0 doch 
+: 2516 5 -2 werd 
+: 2524 6 5 ich 
+: 2533 12 4 nie 
+: 2548 5 2 mals 
+: 2556 6 -2 ein 
+: 2565 12 1 teil 
+: 2580 5 1 dei 
+: 2588 5 3 ner 
+: 2596 17 3 welt
+- 2613
+: 2629 4 1 Ich 
+: 2636 9 5 fühl 
+: 2648 5 1 dich
+- 2653
+: 2669 8 5 Spür 
+: 2680 8 1 dich
+- 2688
+: 2693 5 -1 Ich 
+: 2701 8 5 teil 
+: 2712 9 5 dein 
+: 2724 10 3 schmerz
+- 2734
+: 2741 7 -2 Wenn 
+: 2750 2 -2 du 
+: 2754 6 0 mich 
+: 2762 11 1 suchst
+- 2773
+: 2789 5 -2 Dann 
+: 2797 4 0 sieh 
+: 2804 6 1 in 
+: 2813 5 0 dein 
+* 2821 29 5 herz
+* 2853 30 1 ~
+* 2886 17 -3 ~
+- 2903 2918
+- 2918
+: 2941 5 2 Mich 
+: 2949 8 5 selbst
+: 2959 3 3 ~
+: 2964 10 1 ~
+- 2974 3005
+- 3005
+: 3028 4 5 Nie 
+: 3035 5 5 mals 
+: 3043 5 5 ein 
+: 3051 5 5 teil 
+: 3059 6 3 de 
+: 3068 6 2 iner 
+: 3077 9 5 welt
+- 3086 3111
+- 3111
+* 3134 2 2 Oh 
+: 3139 2 5 ich 
+: 3144 5 5 spür 
+: 3152 2 3 dich 
+: 3157 12 3 ba 
+: 3172 13 5 by
+- 3185
+: 3189 4 -2 Wenn 
+: 3196 3 -2 du 
+: 3202 3 0 mich 
+: 3208 11 1 suchst
+- 3219
+: 3236 5 -2 Dann 
+: 3244 5 0 sieh 
+: 3252 5 1 in 
+: 3260 6 0 dein 
+: 3269 5 0 herz
+* 3277 21 -2 ~
+E
