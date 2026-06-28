@@ -33,5 +33,8 @@ const errors = [
   'conduitPage',
   'Transition was aborted because of invalid state',
   'NotFoundError: Requested device not found',
+  /Transport disconnected during RPC: .+/,
+  /RPC timeout: .+/,
+  /Not connected \(calling .+\)/,
 ];
 export default errors;
