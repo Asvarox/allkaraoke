@@ -25331,7 +25331,7 @@
     "gap": 15786.393442622952,
     "year": "1988",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-27T00:36:14.647Z",
+    "lastUpdate": "2026-06-26T08:27:23.505Z",
     "realBpm": 76,
     "volume": 1,
     "author": "radioactiverice",
@@ -32708,7 +32708,7 @@
     "gap": 8972.870160181603,
     "year": "1984",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-27T00:36:14.453Z",
+    "lastUpdate": "2026-06-26T04:50:13.216Z",
     "genre": "Rock Latino",
     "realBpm": 78,
     "previewStart": 34,
@@ -38940,6 +38940,36 @@
     "shortId": 1092,
     "tracksCount": 1,
     "search": "damiimsoundofsilence",
+    "local": false
+  },
+  {
+    "id": "damien-dawn-dein-herz",
+    "title": "Dein Herz",
+    "artist": "Damien Dawn",
+    "video": "JVWHpWAHIMI",
+    "language": [
+      "German"
+    ],
+    "bpm": 339.73,
+    "gap": 7834.487681394048,
+    "year": "2010",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-28T00:36:17.234Z",
+    "realBpm": 120,
+    "volume": 0.6,
+    "author": "LittleK.",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=871",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13152",
+    "duration": 157,
+    "tracks": [
+      {
+        "name": "Dein Herz",
+        "start": 23
+      }
+    ],
+    "shortId": 5934,
+    "tracksCount": 1,
+    "search": "damiendawndeinherz",
     "local": false
   },
   {
@@ -53763,7 +53793,7 @@
     "gap": 16136.142550012753,
     "year": "1992",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-27T00:36:14.323Z",
+    "lastUpdate": "2026-06-26T04:49:50.588Z",
     "genre": "Latin",
     "realBpm": 137,
     "previewStart": 57,
@@ -77634,7 +77664,7 @@
     "gap": 10730,
     "year": "1974",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-06-27T00:36:14.179Z",
+    "lastUpdate": "2026-06-26T04:49:11.438Z",
     "realBpm": 87,
     "previewStart": 42,
     "previewEnd": 90,
@@ -108270,7 +108300,7 @@
     "gap": 23399,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-27T00:36:14.641Z",
+    "lastUpdate": "2026-06-26T08:26:09.878Z",
     "edition": "Pop",
     "genre": "Pop",
     "realBpm": 106,
@@ -108567,7 +108597,7 @@
     "gap": 9080,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-27T00:36:14.638Z",
+    "lastUpdate": "2026-06-26T08:25:47.348Z",
     "edition": "Pop",
     "genre": "Pop",
     "realBpm": 90,
@@ -109010,7 +109040,7 @@
     "gap": 20137,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-27T00:36:14.635Z",
+    "lastUpdate": "2026-06-26T04:51:13.299Z",
     "edition": "Pop",
     "genre": "Pop",
     "realBpm": 73,
@@ -109104,7 +109134,7 @@
     "gap": 8505,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-27T00:36:14.643Z",
+    "lastUpdate": "2026-06-26T08:26:32.739Z",
     "edition": "Pop",
     "genre": "Pop Rock",
     "realBpm": 96,
@@ -115251,6 +115281,33 @@
     "shortId": 3153,
     "tracksCount": 1,
     "search": "neffaprimadiandarevia",
+    "local": false
+  },
+  {
+    "id": "neil-diamond-sweet-caroline",
+    "title": "Sweet Caroline",
+    "artist": "Neil Diamond",
+    "video": "4F_RCWVoL4s",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.50000000000003,
+    "gap": 13784.97512437811,
+    "year": "1969",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-28T00:36:17.238Z",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "ultrastarsongs",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5935,
+    "tracksCount": 1,
+    "search": "neildiamondsweetcaroline",
     "local": false
   },
   {
@@ -130471,7 +130528,7 @@
     "gap": 11581.739130434782,
     "year": "1990",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-06-27T00:36:13.562Z",
+    "lastUpdate": "2026-06-26T04:47:59.065Z",
     "genre": "Rock",
     "realBpm": 115,
     "volume": 1,
@@ -149764,7 +149821,7 @@
     "gap": 18300,
     "year": "2022",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-06-27T00:36:14.645Z",
+    "lastUpdate": "2026-06-26T08:27:04.249Z",
     "realBpm": 150,
     "volume": 1,
     "author": "juhgkoop",
