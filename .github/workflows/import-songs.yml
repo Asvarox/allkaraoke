@@ -51,7 +51,7 @@ jobs:
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
+          commit_message: '[skip-release-notes] Update songs from user ${{ github.event.inputs.user_id }}'
       - name: Add import songs summary
         if: ${{ always() }}
         uses: actions/github-script@v8

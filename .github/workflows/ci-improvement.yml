@@ -102,7 +102,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         if: github.ref != 'refs/heads/master'
         with:
-          commit_message: '[ci-skip] chore: update visual regression snapshots'
+          commit_message: '[ci-skip][skip-release-notes] chore: update visual regression snapshots'
           commit_options: '--no-verify'
       - name: 'Comment on PR to request a review of visual changes'
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
@@ -129,7 +129,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 200 # needed for Sentry to get list of commits released
+          fetch-depth: 200 # needed for Sentry and release-note commit range collection
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
@@ -157,14 +157,67 @@ jobs:
           environment: production
           sourcemaps: './build'
       - name: Add Deployment PostHog Annotation
-        run: |
-          curl \
-            -H 'Content-Type: application/json' \
-            -H "Authorization: Bearer ${{ secrets.POSTHOG_PAT_KEY }}" \
-            -d '{"content":"[Deployment](https://github.com/Asvarox/allkaraoke/actions/runs/${{ github.run_id }}) - ${{ github.event.head_commit.message || github.event.workflow_run.head_commit.message || github.event.pull_request.title || github.sha }}","date_marker":"'$(date --iso-8601=seconds)'","scope":"project","creation_type":"GIT"}' \
-          https://eu.posthog.com/api/projects/281/annotations/
+        uses: actions/github-script@v8
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+        with:
+          github-token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
+          script: |
+            const { execFileSync } = require('node:child_process');
+
+            const previousSuccessfulRun = (
+              await github.paginate(github.rest.actions.listWorkflowRuns, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'ci-improvement.yml',
+                branch: 'master',
+                event: 'push',
+                status: 'completed',
+                per_page: 100,
+              })
+            ).find((run) => run.id !== context.runId && run.conclusion === 'success');
+
+            const releaseNotesJson = execFileSync(
+              'node',
+              [
+                'scripts/cicd/get-release-note-commits.mjs',
+                ...(previousSuccessfulRun?.head_sha ? [previousSuccessfulRun.head_sha] : []),
+                context.sha,
+              ],
+              { encoding: 'utf8' },
+            );
+            const { messages: includedSubjects } = JSON.parse(releaseNotesJson);
+
+            if (includedSubjects.length === 0) {
+              core.notice(
+                `Skipping PostHog release annotation. No release-note commits found between ${previousSuccessfulRun?.head_sha ?? 'repository start'} and ${context.sha}.`,
+              );
+              return;
+            }
+
+            const deployUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const content = [`[Deployment](${deployUrl})`, ...includedSubjects.map((subject) => `- ${subject}`)].join('\n');
+            const response = await fetch('https://eu.posthog.com/api/projects/281/annotations/', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${process.env.POSTHOG_PAT_KEY}`,
+              },
+              body: JSON.stringify({
+                content,
+                date_marker: new Date().toISOString(),
+                scope: 'project',
+                creation_type: 'GIT',
+              }),
+            });
+
+            if (!response.ok) {
+              throw new Error(`PostHog annotation failed with status ${response.status}: ${await response.text()}`);
+            }
+
+            core.info(
+              `Annotated PostHog with ${includedSubjects.length} commit message(s) from ${previousSuccessfulRun?.head_sha ?? 'repository start'}..${context.sha}.`,
+            );
       - name: 'Start monitoring'
         uses: actions/github-script@v8
         with:
