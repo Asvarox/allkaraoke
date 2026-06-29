@@ -5332,6 +5332,39 @@
     "local": false
   },
   {
+    "id": "akira-yamaoka-mary-elizabeth-mcglynn-waiting-for-you",
+    "title": "Waiting For You",
+    "artist": "Akira Yamaoka & Mary Elizabeth McGlynn",
+    "video": "dXuLZkKsNhs",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 33799.15789473684,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-29T00:37:48.773Z",
+    "edition": "Silent hill 4",
+    "genre": "Rock",
+    "realBpm": 92,
+    "previewStart": 75,
+    "previewEnd": 94,
+    "volume": 0.94,
+    "author": "Double D",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=double%20d",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=Waiting+For+You+Akira+Yamaoka+%26+Mary+Elizabeth+McGlynn",
+    "duration": 338,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5938,
+    "tracksCount": 1,
+    "search": "akirayamaokamaryelizabethmcglynnwaitingforyou",
+    "local": false
+  },
+  {
     "id": "akon-dont-matter",
     "title": "Don’t Matter",
     "artist": "Akon",
@@ -38954,7 +38987,7 @@
     "gap": 7834.487681394048,
     "year": "2010",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-28T00:36:17.234Z",
+    "lastUpdate": "2026-06-27T17:03:27.184Z",
     "realBpm": 120,
     "volume": 0.6,
     "author": "LittleK.",
@@ -47498,6 +47531,35 @@
     "local": false
   },
   {
+    "id": "doda-bad-girls-polish-version",
+    "title": "Bad Girls (Polish Version)",
+    "artist": "Doda",
+    "video": "V48zw8M-U4A",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 274,
+    "gap": 6454.598540145986,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-29T00:37:48.982Z",
+    "genre": "Rock, Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "mylordwaliza",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=201240",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31053",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5943,
+    "tracksCount": 1,
+    "search": "dodabadgirlspolishversion",
+    "local": false
+  },
+  {
     "id": "doda-bad-girls",
     "title": "Bad Girls",
     "artist": "Doda",
@@ -47553,6 +47615,35 @@
     "shortId": 1337,
     "tracksCount": 1,
     "search": "dodadzaga",
+    "local": false
+  },
+  {
+    "id": "doda-dziekuje",
+    "title": "Dziękuję",
+    "artist": "Doda",
+    "video": "NLEfayt8oYI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 364.12,
+    "gap": 21921.31495111502,
+    "year": "2007",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-29T00:37:48.984Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "<span style=\"text-decoration:line-through;\">michas17j</span>",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=6807",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5944,
+    "tracksCount": 1,
+    "search": "dodadziekuje",
     "local": false
   },
   {
@@ -98753,6 +98844,35 @@
     "local": false
   },
   {
+    "id": "louis-prima-che-la-luna-oh-mama",
+    "title": "Che La Luna (Oh Mama)",
+    "artist": "Louis Prima",
+    "video": "6q-7oI_h5t8",
+    "language": [
+      "English",
+      "Italian"
+    ],
+    "bpm": 255,
+    "gap": 2830,
+    "year": "1961",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-29T00:37:47.977Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 153,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5937,
+    "tracksCount": 1,
+    "search": "louisprimachelalunaohmama",
+    "local": false
+  },
+  {
     "id": "loverboy-working-for-the-weekend",
     "title": "Working For The Weekend",
     "artist": "Loverboy",
@@ -108141,6 +108261,37 @@
     "local": false
   },
   {
+    "id": "mia-hungriges-herz",
+    "title": "Hungriges Herz",
+    "artist": "MiA.",
+    "video": "_FjRy2TiztE",
+    "language": [
+      "German"
+    ],
+    "bpm": 269.97,
+    "gap": 9149.888876541838,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-29T00:37:47.972Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.7,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11659",
+    "duration": 220,
+    "tracks": [
+      {
+        "name": "Hungriges Herz",
+        "start": 18
+      }
+    ],
+    "shortId": 5936,
+    "tracksCount": 1,
+    "search": "miahungrigesherz",
+    "local": false
+  },
+  {
     "id": "mia-paper-planes",
     "title": "Paper Planes",
     "artist": "M.I.A.",
@@ -115295,7 +115446,7 @@
     "gap": 13784.97512437811,
     "year": "1969",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-28T00:36:17.238Z",
+    "lastUpdate": "2026-06-27T17:04:48.471Z",
     "realBpm": 124,
     "volume": 1,
     "author": "ultrastarsongs",
@@ -117309,6 +117460,63 @@
     "local": false
   },
   {
+    "id": "nightwish-amaranth",
+    "title": "Amaranth",
+    "artist": "Nightwish",
+    "video": "GdZn7k5rZLQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.9,
+    "gap": 33784.2951971886,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-29T00:37:48.776Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3448",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5940,
+    "tracksCount": 1,
+    "search": "nightwishamaranth",
+    "local": false
+  },
+  {
+    "id": "nightwish-bye-bye-beautiful",
+    "title": "Bye Bye Beautiful",
+    "artist": "Nightwish",
+    "video": "hTdhXxxWREo",
+    "language": [
+      "English"
+    ],
+    "bpm": 285.4999999999999,
+    "gap": 31003.496503496503,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-29T00:37:48.775Z",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=2688",
+    "duration": 260,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5939,
+    "tracksCount": 1,
+    "search": "nightwishbyebyebeautiful",
+    "local": false
+  },
+  {
     "id": "nightwish-elan",
     "title": "Élan",
     "artist": "Nightwish",
@@ -117335,6 +117543,35 @@
     "shortId": 3220,
     "tracksCount": 1,
     "search": "nightwishelan",
+    "local": false
+  },
+  {
+    "id": "nightwish-ever-dream",
+    "title": "Ever Dream",
+    "artist": "Nightwish",
+    "video": "lXqncMe3wew",
+    "language": [
+      "English"
+    ],
+    "bpm": 295.8,
+    "gap": -2.0689655172412813,
+    "year": "2002",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-29T00:37:48.778Z",
+    "realBpm": 147,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=568",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=4022",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5941,
+    "tracksCount": 1,
+    "search": "nightwisheverdream",
     "local": false
   },
   {
@@ -144700,6 +144937,38 @@
     "shortId": 4017,
     "tracksCount": 1,
     "search": "smokiewhothefisalice",
+    "local": false
+  },
+  {
+    "id": "smolasty-doda-nim-zajdzie-slonce",
+    "title": "Nim Zajdzie Słońce",
+    "artist": "Smolasty & Doda",
+    "video": "uNVBBXa6CB8",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 364,
+    "gap": 1420.989010989011,
+    "year": "2023",
+    "lastUpdate": "2026-06-29T00:37:48.783Z",
+    "genre": "Hip-Hop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "mylordwaliza",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=201240",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30607",
+    "duration": 149,
+    "tracks": [
+      {
+        "start": 24
+      },
+      {
+        "start": 887
+      }
+    ],
+    "shortId": 5942,
+    "tracksCount": 2,
+    "search": "smolastydodanimzajdzieslonce",
     "local": false
   },
   {
