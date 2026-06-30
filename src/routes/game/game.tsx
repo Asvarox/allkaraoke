@@ -8,11 +8,15 @@ import useFullscreen from '~/modules/hooks/use-fullscreen';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import { woosh } from '~/modules/sound-manager';
 import startViewTransition from '~/modules/utils/start-view-transition';
+import GameVolumeControl from '~/routes/game/components/game-volume-control';
+import { GameVolumeSetting, useSettingValue } from '~/routes/settings/settings-state';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
 import Singing from './singing/singing';
 
 function Game() {
   const songId = useQueryParam('song');
+  const [savedGameVolume, setSavedGameVolume] = useSettingValue(GameVolumeSetting);
+  const [gameVolume, setGameVolume] = useState(savedGameVolume);
 
   const [singSetup, setSingSetup] = useState<(SingSetup & { song: SongPreview }) | null>(null);
   const [preselectedSong, setPreselectedSong] = useState<string | null>(songId ?? null);
@@ -52,14 +56,16 @@ function Game() {
             key={resetKey}
             songPreview={singSetup.song}
             singSetup={singSetup}
+            gameVolume={gameVolume}
             returnToSongSelection={() => {
               setPreselectedSong(singSetup.song.id);
               setSingSetup(null);
             }}
           />
         ) : (
-          <SingASong onSongSelected={handleSelect} preselectedSong={preselectedSong} />
+          <SingASong gameVolume={gameVolume} onSongSelected={handleSelect} preselectedSong={preselectedSong} />
         )}
+        <GameVolumeControl volume={gameVolume} onChange={setGameVolume} onChangeCommitted={setSavedGameVolume} />
       </NoPrerender>
     </>
   );

@@ -22,6 +22,7 @@ interface Props {
   isPopular: boolean;
   forceFlag: boolean;
   onExpand: () => void;
+  gameVolume?: number;
 }
 
 const PREVIEW_LENGTH = 30;
@@ -38,6 +39,7 @@ export default function SongPreviewComponent({
   isPopular,
   forceFlag,
   onExpand,
+  gameVolume = 1,
 }: Props) {
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
@@ -73,9 +75,10 @@ export default function SongPreviewComponent({
   const songPreviewVolume = newVolumeFFEnabled
     ? (songPreview.volume ?? songPreview.manualVolume)
     : songPreview.manualVolume;
+  const effectiveVolume = (songPreviewVolume ?? 0.5) * gameVolume;
   const undebounced = useMemo(
-    () => [songPreview.video, start, end, songPreviewVolume] as const,
-    [songPreview.video, start, end, songPreviewVolume],
+    () => [songPreview.video, start, end, effectiveVolume] as const,
+    [songPreview.video, start, end, effectiveVolume],
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 

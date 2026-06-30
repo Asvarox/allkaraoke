@@ -28,6 +28,7 @@ import { cn } from '~/utils/cn';
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
   preselectedSong: string | null;
+  gameVolume: number;
 }
 
 declare global {
@@ -38,7 +39,7 @@ declare global {
     | undefined;
 }
 
-export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+export default function SongSelection({ onSongSelected, preselectedSong, gameVolume }: Props) {
   const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const list = useRef<VirtualizedListMethods | null>(null);
@@ -330,6 +331,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   onExitKeyboardControl: () => setKeyboardControl(true),
                   onExpand: expandSong,
                   songPreview,
+                  gameVolume,
                   top: previewTop,
                   left: previewLeft,
                   width: Math.floor(songEntryWidth),

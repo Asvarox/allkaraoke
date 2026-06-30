@@ -24,8 +24,9 @@ interface Props {
   songPreview: SongPreview;
   returnToSongSelection: () => void;
   restartSong: () => void;
+  gameVolume: number;
 }
-function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }: Props) {
+function Singing({ songPreview, singSetup, returnToSongSelection, restartSong, gameVolume }: Props) {
   useFullscreen();
   useBlockScroll();
   const player = useRef<PlayerRef | null>(null);
@@ -120,6 +121,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
               ref={player}
               onStatusChange={setPlayerState}
               song={song.data}
+              gameVolume={gameVolume}
               width={width}
               height={height}
               autoplay={false}

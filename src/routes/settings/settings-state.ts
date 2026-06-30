@@ -61,6 +61,7 @@ export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_L
 
 export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
 export const KeyboardHelpVisibilitySetting = new Setting<boolean>('keyboard-help-visibility', true);
+export const GameVolumeSetting = new Setting<number>('GameVolumeSetting', 1);
 
 const initialInputLag = posthog.getFeatureFlagPayload?.(FeatureFlags.InitialInputLag);
 export const InputLagSetting = new Setting<milliseconds>(

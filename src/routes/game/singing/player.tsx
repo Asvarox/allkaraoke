@@ -36,6 +36,7 @@ interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<Player
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
   restartSong?: () => void;
+  gameVolume?: number;
 }
 
 export interface PlayerRef {
@@ -73,6 +74,7 @@ function Player({
   effectsEnabled = true,
   singSetup,
   restartSong,
+  gameVolume = 1,
   pauseMenu = false,
   ref,
   ...restProps
@@ -123,6 +125,8 @@ function Player({
   );
 
   const isPauseMenuAvailable = pauseMenu;
+  const songVolume = newVolumeFFEnabled ? (song.volume ?? song.manualVolume) : song.manualVolume;
+  const effectiveVolume = (songVolume ?? 0.5) * gameVolume;
 
   const openPauseMenu = () => {
     setPauseMenuVisible(true);
@@ -206,7 +210,7 @@ function Player({
           controls={showControls}
           autoplay={autoplay}
           disablekb={process.env.NODE_ENV !== 'development'}
-          volume={newVolumeFFEnabled ? (song.volume ?? song.manualVolume) : song.manualVolume}
+          volume={effectiveVolume}
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
         />
