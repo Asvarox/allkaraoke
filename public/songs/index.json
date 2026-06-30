@@ -5343,7 +5343,7 @@
     "gap": 33799.15789473684,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-29T00:37:48.773Z",
+    "lastUpdate": "2026-06-28T12:14:31.900Z",
     "edition": "Silent hill 4",
     "genre": "Rock",
     "realBpm": 92,
@@ -15304,6 +15304,35 @@
     "shortId": 431,
     "tracksCount": 1,
     "search": "b52sloveshack",
+    "local": false
+  },
+  {
+    "id": "babasonicos-carismatico",
+    "title": "Carismático",
+    "artist": "Babasónicos",
+    "video": "Pmp08j843p0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 274,
+    "gap": 15814.598540145986,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-30T00:36:43.037Z",
+    "realBpm": 137,
+    "volume": 1,
+    "author": "motokero2",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=motokero2",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Babas%C3%B3nicos&cancion=Carism%C3%A1tico",
+    "duration": 165,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5945,
+    "tracksCount": 1,
+    "search": "babasonicoscarismatico",
     "local": false
   },
   {
@@ -32760,6 +32789,35 @@
     "local": false
   },
   {
+    "id": "charly-garcia-rezo-por-vos",
+    "title": "Rezo por vos",
+    "artist": "Charly García",
+    "video": "iTA75Z6E4eA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 241.15,
+    "gap": 51339.23178668906,
+    "year": "1985",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-30T00:36:43.829Z",
+    "genre": "Rock latino",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "aliciayeduardo",
+    "sourceUrl": "https://www.youtube.com/watch?v=iTA75Z6E4eA&list=RDiTA75Z6E4eA&start_radio=1&pp=ygUMcmV6byBwb3Igdm9zoAcB",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5946,
+    "tracksCount": 1,
+    "search": "charlygarciarezoporvos",
+    "local": false
+  },
+  {
     "id": "chave-douro-pai-da-crianca",
     "title": "Pai da criança",
     "artist": "Chave D’Ouro",
@@ -47542,7 +47600,7 @@
     "gap": 6454.598540145986,
     "year": "2011",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-06-29T00:37:48.982Z",
+    "lastUpdate": "2026-06-28T12:16:48.027Z",
     "genre": "Rock, Pop",
     "realBpm": 124,
     "volume": 1,
@@ -47629,7 +47687,7 @@
     "gap": 21921.31495111502,
     "year": "2007",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-06-29T00:37:48.984Z",
+    "lastUpdate": "2026-06-28T12:17:20.857Z",
     "genre": "Pop",
     "realBpm": 90,
     "volume": 1,
@@ -63269,6 +63327,36 @@
     "shortId": 5872,
     "tracksCount": 1,
     "search": "gildanoesmidespedida",
+    "local": false
+  },
+  {
+    "id": "gilda-no-me-arrepiento-de-este-amor",
+    "title": "No me arrepiento de este amor",
+    "artist": "Gilda",
+    "video": "8iUkmnLc1ec",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 235,
+    "gap": 19198.72340425532,
+    "year": "1994",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-30T00:36:43.831Z",
+    "genre": "Salsa",
+    "realBpm": 235,
+    "volume": 1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=No%20me%20arrepiento%20de%20este%20amor",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5947,
+    "tracksCount": 1,
+    "search": "gildanomearrepientodeesteamor",
     "local": false
   },
   {
@@ -98856,7 +98944,7 @@
     "gap": 2830,
     "year": "1961",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-29T00:37:47.977Z",
+    "lastUpdate": "2026-06-28T12:14:15.143Z",
     "genre": "Pop",
     "realBpm": 127,
     "volume": 1,
@@ -108272,7 +108360,7 @@
     "gap": 9149.888876541838,
     "year": "2004",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-29T00:37:47.972Z",
+    "lastUpdate": "2026-06-28T12:13:54.699Z",
     "genre": "Pop",
     "realBpm": 135,
     "volume": 0.7,
@@ -117471,7 +117559,7 @@
     "gap": 33784.2951971886,
     "year": "2007",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-06-29T00:37:48.776Z",
+    "lastUpdate": "2026-06-28T12:15:38.631Z",
     "realBpm": 128,
     "volume": 1,
     "author": "IC",
@@ -117500,7 +117588,7 @@
     "gap": 31003.496503496503,
     "year": "2007",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-06-29T00:37:48.775Z",
+    "lastUpdate": "2026-06-28T12:15:16.695Z",
     "realBpm": 148,
     "volume": 1,
     "author": "Wüstenpfeil",
@@ -117557,7 +117645,7 @@
     "gap": -2.0689655172412813,
     "year": "2002",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-06-29T00:37:48.778Z",
+    "lastUpdate": "2026-06-28T12:15:58.915Z",
     "realBpm": 147,
     "volume": 1,
     "author": "Wüstenpfeil",
@@ -144950,7 +145038,7 @@
     "bpm": 364,
     "gap": 1420.989010989011,
     "year": "2023",
-    "lastUpdate": "2026-06-29T00:37:48.783Z",
+    "lastUpdate": "2026-06-28T12:16:22.753Z",
     "genre": "Hip-Hop",
     "realBpm": 127,
     "volume": 1,

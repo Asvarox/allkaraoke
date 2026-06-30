@@ -1,0 +1,354 @@
+#ARTIST:Babasónicos
+#TITLE:Carismático
+#CREATOR:motokero2
+#BPM:274
+#YEAR:2005
+#VIDEO:v=Pmp08j843p0
+#LANGUAGE:Spanish
+#GAP:15814,598540145986
+#ALLKARAOKE_ID:babasonicos-carismatico
+#ALLKARAOKE_SID:5945
+#ALLKARAOKE_LASTUPDATE:2026-06-30T00:36:43.037Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=motokero2
+#ALLKARAOKE_REALBPM:137
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Babas%C3%B3nicos&cancion=Carism%C3%A1tico
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:165
+#COVER:Babasónicos - Carismático.jpg
+#MP3:Babasónicos - Carismático.mp3
+: 18 3 9 Me 
+: 22 3 6 pa
+: 26 3 9 re
+: 30 3 6 ció 
+: 34 3 9 ver 
+: 38 3 6 dos 
+: 42 3 9 pa
+: 46 6 11 ya
+: 53 3 6 sos
+- 56
+: 59 3 6 con 
+: 63 7 13 ca
+: 71 3 14 ra 
+: 75 2 13 de 
+: 78 7 11 sus
+: 86 6 9 to 
+: 93 4 9 ce
+: 98 3 6 rran
+: 102 4 2 do el 
+: 107 2 9 lo
+: 110 7 6 cal
+- 117
+: 133 3 7 di
+: 137 3 7 si
+: 141 4 6 mu
+: 146 6 2 lá 
+: 153 4 2 lle
+: 158 3 -1 van 
+: 162 3 2 los 
+: 166 3 4 tra
+: 170 3 6 jes 
+: 174 8 4 pues
+: 183 11 6 tos
+- 194
+: 199 3 7 van 
+: 203 3 7 pa
+: 207 3 6 ra el 
+: 211 7 2 cir
+: 219 3 2 co a
+: 223 3 -1 bus
+: 227 3 2 car 
+: 231 3 4 los 
+: 235 4 6 ca
+: 240 5 4 me
+: 246 12 6 llos
+- 258
+: 274 3 9 lu
+: 278 3 6 cen 
+: 282 3 9 un 
+: 286 3 6 po
+: 290 3 9 qui
+: 294 3 6 to es
+: 298 3 9 pan
+: 302 6 11 ta
+: 309 3 6 dos
+- 312
+: 315 2 6 sa
+: 318 7 13 li
+: 326 4 14 dos 
+: 331 3 13 de un 
+: 335 6 11 cua
+: 342 3 9 dro 
+: 346 2 6 que 
+: 349 4 6 se es
+: 354 3 6 tá 
+: 358 2 2 por 
+: 361 4 9 bo
+: 366 11 6 rrar
+- 377
+: 390 3 7 di
+: 394 3 7 si
+: 398 3 6 mu
+: 402 6 2 lá 
+: 409 4 2 que es
+: 414 3 -1 tán 
+: 418 3 2 muy 
+: 422 3 4 trans
+: 426 3 6 pi
+: 430 7 4 ra
+: 438 10 6 dos
+- 448
+: 454 3 7 lle
+: 458 4 7 van 
+: 463 3 6 un
+: 467 6 2 bal
+: 474 4 2 de 
+: 479 3 -1 con 
+: 483 3 2 pa
+: 487 3 4 pel 
+: 491 3 6 pi
+: 495 7 4 ca
+: 503 8 6 do
+- 511 513
+- 513
+* 531 11 9 ten
+* 543 3 6 go 
+* 547 3 9 que a
+* 551 7 11 pren
+* 559 14 9 der 
+* 574 3 11 a 
+* 578 4 9 fin
+* 583 7 6 gir 
+* 591 14 2 más
+- 605
+: 614 3 -1 y a 
+: 618 3 2 no 
+: 622 3 4 mos
+: 626 3 6 trar 
+: 630 3 4 lo 
+: 634 3 2 que 
+: 638 7 -1 sien
+: 646 5 2 to
+- 651
+: 659 11 9 ten
+: 671 3 6 go 
+: 675 3 9 que a
+: 679 7 11 pren
+: 687 14 9 der 
+: 702 3 11 a 
+: 706 4 9 fin
+: 711 7 6 gir 
+: 719 14 2 más
+- 733
+: 743 3 -1 y a 
+: 747 3 2 pi
+: 751 3 4 lo
+: 755 3 6 tear 
+: 759 3 4 lo 
+: 763 3 2 que 
+: 767 7 -1 pien
+: 775 5 2 so
+- 780
+: 786 3 9 tra
+: 790 3 6 to 
+: 794 3 9 de a
+: 798 3 6 cer
+: 802 3 9 car
+: 806 3 6 me a u
+: 810 3 9 na 
+: 814 6 11 puer
+: 821 3 6 ta
+- 824
+: 827 3 6 y es
+: 831 6 13 cu
+: 838 4 14 cho un 
+: 843 2 13 en
+: 846 6 11 jam
+: 853 7 9 bre 
+: 861 4 9 de 
+: 866 3 6 mos
+: 870 3 2 cas 
+: 874 4 9 sil
+: 879 6 6 bar
+- 885
+: 902 3 7 di
+: 906 3 7 si
+: 910 4 6 mu
+: 915 6 2 lá es
+: 922 4 2 tán 
+: 927 3 -1 zum
+: 931 3 2 ban
+: 935 3 4 do 
+: 939 3 6 mi 
+: 943 6 4 nom
+: 950 10 6 bre
+- 960
+: 967 3 7 de
+: 971 3 7 be
+: 975 3 6 mos 
+: 979 7 2 ir
+: 987 3 2 nos 
+: 991 3 -1 y 
+: 995 3 2 no 
+* 999 3 4 se 
+* 1003 3 6 por 
+* 1007 6 4 don
+* 1014 12 6 de
+- 1026
+: 1043 11 9 ten
+: 1055 3 6 go 
+: 1059 3 9 que a
+: 1063 7 11 pren
+: 1071 14 9 der 
+: 1086 3 11 a 
+: 1090 4 9 fin
+: 1095 7 6 gir 
+: 1103 14 2 más
+- 1117
+: 1126 3 -1 y a 
+: 1130 3 2 no 
+: 1134 3 4 mos
+: 1138 3 6 trar 
+: 1142 3 4 lo 
+: 1146 3 2 que 
+: 1150 7 -1 sien
+: 1158 5 2 to
+- 1163
+: 1170 11 9 ten
+: 1182 3 6 go 
+: 1186 3 9 que a
+: 1190 7 11 pren
+: 1198 14 9 der 
+: 1213 3 11 a 
+: 1217 4 9 fin
+: 1222 7 6 gir 
+: 1230 14 2 más
+- 1244
+: 1255 3 -1 y a 
+: 1259 3 2 pi
+: 1263 3 4 lo
+: 1267 3 6 tear 
+: 1271 3 4 lo 
+: 1275 3 2 que 
+* 1279 7 -1 pien
+* 1287 5 2 so
+- 1292 1537
+- 1537
+: 1555 11 9 ten
+: 1567 3 6 go 
+: 1571 3 9 que a
+: 1575 7 11 pren
+: 1583 14 9 der 
+: 1598 3 11 a 
+: 1602 4 9 fin
+: 1607 7 6 gir 
+: 1615 14 2 más
+- 1629
+: 1639 3 -1 y a 
+: 1643 3 2 no 
+: 1647 3 4 mos
+: 1651 3 6 trar 
+: 1655 3 4 lo 
+: 1659 3 2 que 
+: 1663 7 -1 sien
+: 1671 5 2 to
+- 1676
+: 1682 11 9 ten
+: 1694 3 6 go 
+: 1698 3 9 que a
+: 1702 7 11 pren
+: 1710 14 9 der 
+: 1725 3 11 a 
+: 1729 4 9 fin
+: 1734 7 6 gir 
+: 1742 14 2 más
+- 1756
+: 1767 3 -1 y a 
+: 1771 3 2 pi
+: 1775 3 4 lo
+: 1779 3 6 tear 
+: 1783 3 4 lo 
+: 1787 3 2 que 
+: 1791 7 -1 pien
+: 1799 5 2 so
+- 1804
+: 1810 11 9 ten
+: 1822 3 6 go 
+: 1826 3 9 que a
+: 1830 7 11 pren
+: 1838 14 9 der 
+: 1853 3 11 a 
+: 1857 4 9 fin
+: 1862 7 6 gir 
+: 1870 14 2 más
+- 1884
+: 1896 3 -1 y a 
+: 1900 3 2 no 
+: 1904 3 4 mos
+: 1908 3 6 trar 
+: 1912 3 4 lo 
+: 1916 3 2 que 
+: 1920 7 -1 sien
+: 1928 5 2 to
+- 1933
+: 1938 11 9 ten
+: 1950 3 6 go 
+: 1954 3 9 que a
+: 1958 7 11 pren
+: 1966 14 9 der 
+: 1981 3 11 a 
+: 1985 4 9 fin
+: 1990 7 6 gir 
+: 1998 14 2 más
+- 2012
+: 2022 3 -1 y a 
+: 2026 3 2 pi
+: 2030 3 4 lo
+: 2034 3 6 tear 
+: 2038 3 4 lo 
+: 2042 3 2 que 
+: 2046 7 -1 pien
+: 2054 5 2 so
+- 2059 2209
+- 2209
+: 2227 11 9 ten
+: 2239 3 6 go 
+: 2243 3 9 que a
+: 2247 7 11 pren
+: 2255 14 9 der 
+: 2270 3 11 a 
+: 2274 4 9 fin
+: 2279 7 6 gir 
+: 2287 14 2 más
+- 2301 2336
+- 2336
+: 2354 11 9 ten
+: 2366 3 6 go 
+: 2370 3 9 que a
+: 2374 7 11 pren
+: 2382 14 9 der 
+: 2397 3 11 a 
+: 2401 4 9 fin
+: 2406 7 6 gir 
+: 2414 14 2 más
+- 2428 2464
+- 2464
+: 2482 11 9 ten
+: 2494 3 6 go 
+: 2498 3 9 que a
+: 2502 7 11 pren
+: 2510 14 9 der 
+* 2525 3 11 a 
+* 2529 4 9 fin
+* 2534 7 6 gir 
+* 2542 14 2 más
+- 2556
+: 2566 3 -1 y a 
+: 2570 3 2 pi
+: 2574 3 4 lo
+: 2578 3 6 tear 
+: 2582 3 4 lo 
+: 2586 3 2 que 
+: 2590 7 -1 pien
+: 2598 5 2 so
+E
