@@ -1,0 +1,319 @@
+#ARTIST:Fenomenoide
+#TITLE:Fenomenoide
+#CREATOR:Pantero
+#BPM:281,8
+#YEAR:1995
+#PREVIEWSTART:28
+#VIDEO:v=OKdcJpuO63U
+#VIDEOGAP:4
+#LANGUAGE:Spanish
+#GAP:4663,644428672817
+#ALLKARAOKE_ID:fenomenoide-fenomenoide
+#ALLKARAOKE_SID:5965
+#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:40.232Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:1
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Fenomenoide&cancion=Fenomenoide
+#ALLKARAOKE_PREVIEWEND:66
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:66
+#MP3:Fenomenoide - Fenomenoide.mp3
+#COVER:Fenomenoide - Fenomenoide [CO].jpg
+#MEDLEYSTARTBEAT:383
+#MEDLEYENDBEAT:626
+: 19 3 -2 Sú
+: 23 2 -2 per 
+: 28 1 1 lo
+: 31 2 -2 co ex
+: 35 2 5 traor
+: 39 1 3 di
+: 41 2 1 na
+: 44 1 1 rio
+- 45
+: 48 2 -7 Fe
+: 52 2 -2 no
+: 55 1 -2 me
+: 57 3 -2 noi
+: 61 1 -2 de, 
+: 64 2 -7 Fe
+: 68 2 -2 no
+: 71 1 -2 me
+: 73 3 -2 noi
+: 77 1 -2 de
+- 78
+: 83 2 -2 Co
+: 87 3 0 rre has
+: 91 2 1 ta 
+: 95 2 -2 más 
+: 99 2 5 no 
+: 103 1 3 po
+: 105 3 1 der
+- 108
+: 111 2 -7 Fe
+: 115 2 -2 no
+: 118 1 -2 me
+: 120 3 -2 noi
+: 124 1 -2 de, 
+: 127 2 -7 Fe
+: 131 2 -2 no
+: 134 1 -2 me
+: 136 3 -2 noi
+: 140 1 -2 de
+- 141
+: 144 2 -2 Res
+: 147 2 3 ca
+: 151 2 5 ta a 
+: 155 2 6 Wa
+: 159 2 3 shing
+: 163 2 10 ton 
+: 167 2 8 D
+: 171 3 6 C
+- 174
+: 177 1 -2 Fe
+: 179 3 3 no
+: 183 1 3 me
+: 185 2 3 noi
+: 188 2 3 de, 
+: 191 3 -2 Fe
+: 195 2 3 no
+: 198 2 2 me
+: 201 3 3 noi
+: 205 1 3 de
+- 206
+: 209 2 -2 Cuan
+: 212 2 -2 do 
+: 215 3 -2 no hay 
+: 219 2 1 na
+: 222 2 -2 da en 
+: 225 4 5 la 
+: 231 3 3 T
+: 235 2 1 V
+- 237
+: 240 2 -7 Fe
+: 243 2 -2 no
+: 246 1 -2 me
+: 248 3 -2 noi
+: 252 1 -2 de, 
+: 255 2 -7 Fe
+: 259 2 -2 no
+: 262 1 -3 me
+: 264 3 -2 noi
+: 268 1 -2 de
+- 269
+: 272 1 -2 Su 
+: 274 4 5 men
+: 279 2 5 te es 
+: 283 2 3 de 
+: 287 2 1 sal
+: 290 2 3 chi
+: 293 3 5 cha
+- 296
+: 302 3 -2 y 
+: 306 3 4 mu
+: 311 2 4 cho 
+: 316 2 3 cho
+: 319 1 1 co
+: 321 2 -2 la
+: 325 2 -2 te
+- 327
+: 339 3 -2 Sig
+: 343 3 -2 mund 
+: 347 3 1 Freud 
+: 351 2 -2 lo a
+: 355 2 5 na
+: 358 2 3 li
+: 363 1 1 zó
+- 364
+: 367 2 -7 Fe
+: 371 2 -2 no
+: 374 1 -3 me
+: 376 3 -2 noi
+: 380 1 -2 de, 
+: 383 2 -7 Fe
+: 387 2 -2 no
+: 390 1 -2 me
+: 392 3 -2 noi
+: 396 1 -2 de
+- 397
+: 402 3 10 Dex
+: 407 3 12 ter 
+: 411 2 13 es 
+: 414 2 12 un 
+: 418 3 10 ge
+: 422 3 5 nio
+- 425
+: 430 2 5 con 
+: 435 2 3 su 
+: 438 2 5 má
+: 442 1 6 qui
+: 444 3 3 na, un 
+: 449 4 5 as
+- 453
+* 463 4 5 Fue a un 
+* 468 2 10 mun
+* 472 2 12 do 
+* 476 1 13 ci
+* 478 3 12 ber
+* 482 2 10 né
+* 485 1 10 ti
+* 487 1 10 co
+- 488
+* 491 3 5 por 
+* 495 3 5 un 
+* 500 3 7 gran 
+* 504 2 7 e
+* 508 2 7 rror 
+* 511 2 7 ca
+* 515 3 9 sual
+- 518
+: 528 2 9 Se 
+: 532 1 16 con
+: 534 3 16 vir
+: 538 2 16 tió en
+- 540
+: 543 2 13 Fe
+: 547 2 9 no
+: 550 2 10 me
+: 553 3 5 noi
+: 557 4 10 de, el 
+: 563 2 17 más 
+: 566 2 17 lo
+: 570 2 15 co 
+: 574 2 13 del 
+: 578 3 10 mun
+: 582 2 10 do
+- 584
+: 590 3 9 Con
+: 595 2 10 tra 
+: 599 2 12 los 
+: 604 2 13 cri
+: 607 1 15 mi
+: 609 2 15 na
+: 613 3 17 les
+- 616
+: 623 2 5 lo
+: 627 2 7 cu
+: 631 2 7 ras 
+: 635 2 8 a 
+: 639 2 8 gra
+: 642 3 9 nel
+- 645 667
+- 667
+: 686 2 -1 Lo
+: 690 2 -1 cu
+: 693 2 -1 ras 
+: 698 2 2 ha
+: 702 2 -1 ce 
+: 706 1 6 a 
+: 708 3 4 mon
+: 712 2 2 tón
+- 714
+: 719 2 -6 Fe
+: 722 2 -1 no
+: 725 1 -2 me
+: 727 3 -1 noi
+: 731 1 -1 de, 
+: 734 2 -6 Fe
+: 738 2 -1 no
+: 741 1 -2 me
+: 743 3 -1 noi
+: 747 1 -1 de
+- 748
+: 754 3 -1 Siem
+: 758 3 1 pre 
+: 762 2 2 bus
+: 766 1 -1 ca 
+: 770 1 6 ser 
+: 772 3 4 ac
+: 776 2 2 tual
+- 778
+: 781 2 -6 Fe
+: 785 2 -1 no
+: 788 1 -2 me
+: 790 3 -1 noi
+: 794 1 -1 de, 
+* 797 2 -6 qué 
+* 801 2 -1 mo
+* 804 1 -2 no 
+* 806 3 -1 es
+- 809
+: 818 3 4 Pi
+: 822 3 6 lo
+: 826 2 7 to 
+: 830 2 4 fe
+: 834 2 11 no
+: 837 1 9 me
+: 839 3 7 nal
+- 842
+: 847 1 -1 Fe
+: 849 3 4 no
+: 853 1 3 me
+: 855 2 4 noi
+: 858 2 4 de, 
+: 861 3 -1 Fe
+: 865 2 4 no
+: 868 2 3 me
+: 871 3 4 noi
+: 875 1 4 de
+- 876
+: 882 3 -1 Sus 
+: 886 1 1 pe
+: 888 3 2 lí
+: 892 1 2 cu
+: 894 1 -1 las 
+: 896 4 6 hay 
+: 902 3 4 que 
+: 906 1 2 ver
+- 907
+: 910 2 -6 Fe
+: 913 2 -1 no
+: 916 1 -2 me
+: 918 3 -1 noi
+: 922 1 -1 de, 
+: 925 2 -6 Fe
+: 929 2 -1 no
+: 932 1 -2 me
+: 934 3 -1 noi
+: 938 1 -1 de
+- 939
+: 942 2 -1 Sal
+: 945 4 6 var 
+: 950 3 6 al 
+: 954 2 4 mun
+: 957 2 2 do en
+: 960 3 4 te
+: 964 2 6 ro
+- 966
+: 974 2 -2 es 
+: 978 3 5 su 
+: 982 2 5 ma
+: 985 2 3 yor 
+: 988 3 1 em
+: 992 3 -2 pe
+: 996 2 -2 ño
+- 998
+: 1010 2 -2 Siem
+: 1013 3 0 pre 
+: 1017 2 1 nos 
+: 1021 2 -2 a
+: 1024 5 5 yu
+: 1030 3 3 da
+: 1034 1 1 rá
+- 1035
+: 1038 2 -6 Fe
+: 1041 2 -1 no
+: 1044 1 -2 me
+: 1046 3 -1 noi
+: 1050 1 -1 de, 
+: 1053 2 -6 Fe
+: 1057 2 -1 no
+: 1060 1 -2 me
+: 1062 3 -1 noi
+: 1066 1 -1 de
+- 1067
+: 1086 2 -6 Fe
+: 1089 3 -1 no
+: 1093 2 -2 me
+: 1096 3 -1 noi
+: 1100 4 -1 de
+E

@@ -1,0 +1,189 @@
+#ARTIST:Josafat Espinosa
+#TITLE:Vuela, pega y esquiva
+#CREATOR:asdFer
+#BPM:383,05
+#YEAR:2017
+#PREVIEWSTART:37,5
+#VIDEO:v=w9UbU07Zi6w
+#LANGUAGE:Spanish
+#GAP:9439,856154549014
+#ALLKARAOKE_ID:josafat-espinosa-vuela-pega-y-esquiva
+#ALLKARAOKE_SID:5953
+#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:38.675Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=asdfer
+#ALLKARAOKE_REALBPM:383,05
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Josafat%20Espinosa&cancion=Vuela,%20pega%20y%20esquiva%20(TV)
+#ALLKARAOKE_PREVIEWEND:85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:85
+#MP3:Josafat Espinosa - Vuela, pega y esquiva (TV).mp3
+#COVER:Josafat Espinosa - Vuela, pega y esquiva (TV).jpg
+#MEDLEYSTARTBEAT:765
+#MEDLEYENDBEAT:1262
+: 26 12 -3 Va
+: 42 5 -3 mos, 
+: 50 5 -3 si
+: 58 5 4 ga
+: 66 5 2 ~
+: 74 5 1 ~
+: 82 2 2 mos
+: 86 2 -1 ~ 
+: 90 28 -1 ya
+- 118
+: 136 6 -6 Con
+: 145 2 -5 ti
+: 149 2 -5 nue
+: 153 6 -3 ~
+: 162 5 -5 mos 
+: 170 5 -6 con 
+: 178 2 -8 los 
+: 182 2 -6 sue
+: 186 5 -5 ~
+: 194 5 -6 ños 
+: 203 5 -10 a 
+: 210 2 -10 lo
+: 214 18 -10 grar
+- 232 255
+- 255
+: 281 20 -3 Ca
+: 305 5 -3 da 
+* 313 2 2 puer
+* 316 2 4 ~
+* 321 5 2 ta 
+: 329 5 1 se a
+: 337 2 2 bri
+: 341 2 -1 ~
+: 345 28 -1 rá
+- 373
+: 393 2 -6 En 
+: 397 5 -5 el 
+: 405 2 -5 cie
+: 409 5 -3 ~
+: 417 5 -5 lo y 
+: 425 5 -8 las 
+: 433 2 -8 es
+: 437 2 -6 tre
+: 441 5 -5 ~
+: 449 5 -6 llas 
+: 458 5 -10 bri
+: 465 2 -10 lla
+: 469 18 -10 rán
+- 487 506
+- 506
+: 532 9 -3 La o
+: 544 6 -3 por
+: 553 2 -3 tu
+: 557 5 -3 ni
+: 565 8 -3 dad 
+: 576 6 -5 co
+: 585 2 -6 men
+: 589 6 -5 za
+: 597 24 -3 rá
+- 621 638
+- 638
+: 664 12 2 De
+: 681 4 0 sa
+: 688 4 -2 ~
+: 696 12 -2 fian
+: 712 6 -2 do 
+* 728 12 4 a 
+: 745 4 2 los
+: 752 4 0 ~ 
+* 760 12 0 dio
+* 775 6 2 ses
+- 781
+: 792 5 2 Vue
+: 800 5 2 la, 
+: 808 5 2 pe
+: 816 5 2 ga 
+: 824 5 2 y 
+: 832 2 2 es
+: 836 5 2 qui
+: 844 4 2 va
+- 848
+: 855 5 1 Va
+: 863 5 1 mos, 
+: 871 5 1 haz
+: 879 5 1 lo, 
+: 887 5 1 de
+: 895 2 1 ja el 
+: 899 5 1 mie
+: 906 2 1 do
+- 908
+: 911 6 1 Sé 
+* 920 4 2 fuer
+* 927 4 -1 ~
+: 935 10 -1 te, 
+: 951 5 2 nun
+: 959 5 2 ca 
+: 967 2 2 per
+: 972 2 1 de
+: 976 4 -1 ~
+: 983 30 -1 rás
+- 1013
+: 1031 5 -1 En 
+: 1039 5 1 un 
+: 1047 5 2 hé
+: 1055 5 -1 ~
+: 1063 10 -1 roe 
+: 1079 3 -1 te
+: 1084 8 1 ~ 
+: 1095 12 2 con
+: 1111 5 2 ver
+: 1119 5 -3 ~
+: 1127 5 -3 ti
+: 1135 5 -6 ~
+: 1143 15 -6 rás
+- 1158
+: 1174 5 2 No 
+: 1182 5 -1 lo 
+: 1190 2 1 du
+: 1194 8 2 des, 
+: 1207 5 2 las 
+: 1215 5 -1 ba
+: 1222 2 1 rre
+: 1226 8 2 ras 
+: 1238 14 2 rom
+: 1255 13 2 pe
+: 1271 20 1 rás
+- 1291
+* 1303 5 2 Vue
+* 1311 5 2 la, 
+* 1319 5 2 pe
+* 1327 5 2 ga 
+* 1335 5 2 y 
+* 1343 2 2 es
+* 1347 5 2 qui
+* 1355 4 2 va
+- 1359
+: 1366 5 1 Va
+: 1374 5 1 mos, 
+: 1382 5 1 haz
+: 1390 5 1 lo 
+: 1398 5 1 con 
+: 1406 2 1 más 
+: 1410 5 1 fuer
+: 1417 2 1 za
+- 1419
+: 1430 5 2 Tiem
+: 1438 5 -1 ~
+: 1446 8 -1 blo 
+: 1462 5 2 de 
+: 1470 5 2 la 
+: 1477 2 2 e
+: 1482 2 1 mo
+: 1486 6 -1 ~
+: 1495 30 -1 ción
+- 1525
+: 1541 5 -1 Lo in
+: 1549 5 1 cre
+: 1557 5 2 í
+: 1565 5 -1 ble 
+: 1573 5 -1 pron
+: 1581 5 2 to 
+: 1589 5 1 nos 
+: 1598 2 1 sor
+: 1602 8 1 pren
+: 1613 2 1 de
+: 1617 12 1 rá
+E
