@@ -8,7 +8,7 @@
 #GAP:8721,739130434784
 #ALLKARAOKE_ID:floricienta-mi-vestido-azul
 #ALLKARAOKE_SID:5966
-#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:40.405Z
+#ALLKARAOKE_LASTUPDATE:2026-06-30T13:26:53.235Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=davich0
 #ALLKARAOKE_REALBPM:276
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Floricienta&cancion=Mi%20vestido%20azul

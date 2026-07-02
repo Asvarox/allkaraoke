@@ -10,7 +10,7 @@
 #GAP:20282,537313432837
 #ALLKARAOKE_ID:floricienta-por-que
 #ALLKARAOKE_SID:5967
-#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:40.582Z
+#ALLKARAOKE_LASTUPDATE:2026-06-30T13:27:55.331Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=davich0
 #ALLKARAOKE_REALBPM:268
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Floricienta&cancion=Por%20que

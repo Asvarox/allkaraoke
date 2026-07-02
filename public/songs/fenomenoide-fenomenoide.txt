@@ -10,7 +10,7 @@
 #GAP:4663,644428672817
 #ALLKARAOKE_ID:fenomenoide-fenomenoide
 #ALLKARAOKE_SID:5965
-#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:40.232Z
+#ALLKARAOKE_LASTUPDATE:2026-06-30T13:26:09.556Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pantero
 #ALLKARAOKE_REALBPM:1
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Fenomenoide&cancion=Fenomenoide

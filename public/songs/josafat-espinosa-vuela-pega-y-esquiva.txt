@@ -9,7 +9,7 @@
 #GAP:9439,856154549014
 #ALLKARAOKE_ID:josafat-espinosa-vuela-pega-y-esquiva
 #ALLKARAOKE_SID:5953
-#ALLKARAOKE_LASTUPDATE:2026-07-01T00:37:38.675Z
+#ALLKARAOKE_LASTUPDATE:2026-06-30T07:26:58.619Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:383,05
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Josafat%20Espinosa&cancion=Vuela,%20pega%20y%20esquiva%20(TV)
