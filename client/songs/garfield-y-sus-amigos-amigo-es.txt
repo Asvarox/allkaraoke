@@ -1,0 +1,223 @@
+#ARTIST:Garfield y sus Amigos
+#TITLE:Amigo es
+#CREATOR:Pantero
+#BPM:396,86
+#YEAR:1988
+#PREVIEWSTART:25,5
+#VIDEO:v=MJmSmjBN-nU
+#LANGUAGE:Spanish
+#GAP:4801,2856926875975
+#ALLKARAOKE_ID:garfield-y-sus-amigos-amigo-es
+#ALLKARAOKE_SID:5968
+#ALLKARAOKE_LASTUPDATE:2026-06-30T13:28:17.207Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:396,86
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Garfield%20y%20sus%20Amigos&cancion=Amigo%20es
+#ALLKARAOKE_PREVIEWEND:61
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:61
+#MP3:Garfield y sus Amigos - Amigo es.mp3
+#COVER:Garfield y sus Amigos - Amigo es [CO].jpg
+#MEDLEYSTARTBEAT:795
+#MEDLEYENDBEAT:1282
+: 26 5 7 A
+: 34 4 9 mi
+: 43 5 0 go 
+: 49 9 2 es
+- 58
+: 61 2 9 quien 
+: 65 2 10 pue
+: 69 2 9 de a
+: 73 3 7 yu
+: 77 7 5 dar
+: 86 5 4 te
+- 91
+: 95 2 0 a 
+: 99 6 10 ver 
+: 107 2 9 más 
+: 113 6 5 lin
+: 121 2 4 da 
+: 125 7 7 la 
+: 135 2 0 vi
+: 138 7 0 da
+- 145
+: 165 3 7 A
+: 170 5 9 mi
+: 179 5 0 go 
+: 185 10 2 es
+- 195
+: 199 3 9 quien 
+: 204 2 10 pue
+: 208 3 9 de a
+: 213 3 7 yu
+: 217 6 5 dar
+: 226 5 4 te a em
+: 234 2 0 pe
+: 239 2 10 zar 
+: 242 4 9 op
+: 247 3 7 ti
+: 252 5 5 mis
+: 260 7 4 ta
+- 267
+: 270 1 0 un 
+: 273 5 10 nue
+: 280 4 12 vo 
+: 286 6 12 dí
+: 293 7 12 a
+- 300
+: 307 6 14 Y 
+: 316 4 5 te ha
+: 321 4 5 rá 
+: 329 4 5 co
+: 334 5 7 no
+: 343 1 7 cer
+: 346 19 12 ~
+- 365
+: 369 3 5 que 
+: 374 2 7 se 
+: 378 2 9 pue
+: 381 3 7 de al
+: 386 3 5 can
+: 391 9 5 zar
+- 400
+: 404 2 5 si 
+: 408 3 7 lo 
+: 412 3 9 quie
+: 416 3 7 res 
+: 421 2 5 lo
+: 425 6 5 grar
+- 431
+: 437 2 5 ha
+: 441 2 7 cer 
+: 445 3 9 de 
+: 450 5 7 tu 
+: 459 5 5 sue
+: 466 4 5 ño 
+: 471 3 2 u
+: 475 2 2 na 
+: 479 3 9 rea
+: 484 5 10 li
+: 491 44 12 dad
+- 535
+: 544 2 7 A
+: 548 2 9 mi
+: 553 3 0 go es 
+: 558 4 0 a
+: 565 4 2 quel 
+: 571 4 7 en 
+: 577 5 9 quien 
+: 584 3 10 pue
+: 589 3 9 des 
+: 595 4 7 con
+: 602 4 5 fiar
+- 606
+: 609 2 7 cuan
+: 613 2 9 do 
+: 618 2 10 so
+: 621 2 9 lo 
+: 625 4 7 que
+: 631 5 5 rí
+: 638 3 4 as 
+: 644 5 7 llo
+: 651 7 0 rar
+- 658 659
+- 659
+: 685 5 9 Cuan
+: 693 5 0 do el 
+: 700 5 2 mun
+: 707 3 2 do 
+: 713 2 7 se 
+: 716 3 9 te 
+: 722 3 10 vie
+: 727 4 9 ne en
+: 735 6 5 ci
+: 743 6 4 ma
+- 749
+* 754 5 10 tus 
+* 762 3 9 a
+* 767 5 5 mi
+* 774 3 5 gos 
+* 779 2 5 es
+* 783 2 5 ta
+* 787 3 9 rán 
+* 792 5 10 a
+* 799 8 12 hí
+- 807
+: 821 5 14 Siem
+: 828 2 14 pre 
+: 833 3 14 que 
+: 837 4 14 los 
+: 845 2 16 ne
+: 849 3 14 ce
+: 855 4 14 si
+: 862 12 12 tes
+- 874
+: 889 4 9 pue
+: 894 3 9 des 
+: 900 4 9 con
+: 906 4 9 tar 
+: 912 3 7 con 
+: 919 3 5 su a
+: 924 1 7 mor
+: 927 19 12 ~
+- 946
+: 949 2 5 Co
+: 953 4 7 mo el 
+: 958 3 9 a
+: 963 3 7 gua 
+: 967 4 5 re
+: 972 4 5 fres
+: 980 1 5 ca
+- 981
+: 984 2 9 co
+: 987 4 10 mo el 
+: 992 3 12 sol 
+: 997 2 10 que 
+: 1000 3 9 ca
+: 1005 7 9 lien
+: 1014 5 9 ta
+- 1019
+: 1023 2 9 A
+: 1027 7 10 mi
+: 1036 5 9 gos 
+: 1045 6 5 son
+- 1051
+* 1054 7 2 es
+* 1064 1 9 tán
+* 1066 4 10 ~ 
+* 1072 6 9 a
+* 1079 7 5 hí
+- 1086
+: 1089 2 5 preo
+: 1092 3 7 cu
+: 1097 7 10 pán
+: 1106 4 9 do
+: 1115 30 5 se
+- 1145
+: 1148 12 7 por 
+: 1166 31 5 ti
+: 1200 30 12 ~
+: 1232 65 17 ~
+: 1298 10 17 ~
+- 1308 1326
+- 1326
+F 1352 2 17 Su
+F 1355 3 17 pon
+F 1359 1 17 go 
+F 1361 2 17 que 
+F 1364 2 17 se 
+F 1367 2 17 pre
+F 1370 3 17 gun
+F 1374 2 17 ta
+F 1377 5 17 rán
+- 1382
+F 1385 2 17 pa
+F 1388 3 17 ra 
+F 1392 3 17 qué 
+F 1396 3 17 los 
+F 1400 2 17 ci
+F 1403 3 17 té 
+F 1407 2 17 hoy 
+F 1410 5 17 a
+F 1416 8 17 quí
+E
