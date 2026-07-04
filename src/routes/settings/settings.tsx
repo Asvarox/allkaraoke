@@ -1,4 +1,3 @@
-import { useFeatureFlagVariantKey } from 'posthog-js/react';
 import { ReactNode, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import CameraManager from '~/modules/camera/camera-manager';
@@ -9,8 +8,8 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import { Switcher } from '~/modules/elements/switcher';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
 import { nextValue } from '~/modules/utils/indexes';
 import {
   FpsCount,
@@ -31,10 +30,7 @@ function Settings() {
   const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
   const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
   const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  // Not using the shared useFeatureFlag helper: it force-enables flags in dev/e2e, which would
-  // hide this setting instead of showing it as expected there.
-  // This is an experiment (control/test variants), so control is the safe default if evaluation fails.
-  const mobileModeDisabled = useFeatureFlagVariantKey(FeatureFlags.DisableMobileMode) === 'test';
+  const mobileModeDisabled = useMobileModeDisabled();
 
   const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
   useEffect(() => {
