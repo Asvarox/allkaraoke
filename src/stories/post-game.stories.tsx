@@ -1,5 +1,6 @@
-import { Meta, StoryFn } from '@storybook/react-vite';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
+import { expect } from 'storybook/test';
 import { ValuesType } from 'utility-types';
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
 import { MAX_POINTS, beatsToPoints, sumDetailedScore } from '~/modules/game-engine/game-state/helpers/calculate-score';
@@ -18,37 +19,8 @@ interface StoryArgs {
   gameMode: ValuesType<typeof GAME_MODE>;
 }
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-export default {
-  title: 'PostGame',
-  component: PostGameView,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    gameMode: {
-      control: 'radio',
-      options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP],
-    },
-    playerNum: { control: { type: 'range', min: 1, max: 4, step: 1 } },
-    player0Score: { control: 'range', min: 0, max: 100 },
-    player1Score: { control: 'range', min: 0, max: 100 },
-    player2Score: { control: 'range', min: 0, max: 100 },
-    player3Score: { control: 'range', min: 0, max: 100 },
-  },
-  args: {
-    gameMode: GAME_MODE.DUEL,
-    playerNum: 2,
-    player0Score: 68,
-    player1Score: 69,
-    player2Score: 70,
-    player3Score: 71,
-  },
-  parameters: {
-    layout: 'fullscreen',
-  },
-} as Meta<ComponentProps<typeof PostGameView>>;
-
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: StoryFn<StoryArgs> = (args) => {
+const Template = (args: StoryArgs) => {
   const { width, height } = useViewportSize();
   // GameState.setSong(song as Song);
 
@@ -137,4 +109,41 @@ const Template: StoryFn<StoryArgs> = (args) => {
   );
 };
 
-export const PostGameStory = Template.bind({});
+// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+const meta = {
+  title: 'PostGame',
+  component: Template,
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  argTypes: {
+    gameMode: {
+      control: 'radio',
+      options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP],
+    },
+    playerNum: { control: { type: 'range', min: 1, max: 4, step: 1 } },
+    player0Score: { control: 'range', min: 0, max: 100 },
+    player1Score: { control: 'range', min: 0, max: 100 },
+    player2Score: { control: 'range', min: 0, max: 100 },
+    player3Score: { control: 'range', min: 0, max: 100 },
+  },
+  args: {
+    gameMode: GAME_MODE.DUEL,
+    playerNum: 2,
+    player0Score: 68,
+    player1Score: 69,
+    player2Score: 70,
+    player3Score: 71,
+  },
+  parameters: {
+    layout: 'fullscreen',
+  },
+} as Meta<ComponentProps<typeof Template>>;
+
+type Story = StoryObj<typeof meta>;
+
+export const PostGameStory: Story = {
+  play: async ({ canvas }) => {
+    await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
+  },
+};
+
+export default meta;

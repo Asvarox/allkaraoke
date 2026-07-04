@@ -27,23 +27,20 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
       ) : (
         <WarningIcon data-test="status-unstable" style={{ fill: '#f89400', stroke: 'black' }} />
       )}
-      {status === 'unavailable' ? (
+      {status !== 'ok' ? (
         <div
-          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
+          className={`absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 text-base ${
             tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
           }`}>
-          <span>
-            The device is <strong>disconnected</strong>. Reconnect it, please.
-          </span>
-        </div>
-      ) : status === 'unstable' ? (
-        <div
-          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
-            tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
-          }`}>
-          <span>
-            The connection seems <strong>unstable</strong>. Connect to the same Wifi.
-          </span>
+          {status === 'unavailable' ? (
+            <span>
+              The device is <strong>disconnected</strong>. Reconnect it, please.
+            </span>
+          ) : status === 'unstable' ? (
+            <span>
+              The device is <strong>disconnected</strong>. Reconnect it, please.
+            </span>
+          ) : null}
         </div>
       ) : null}
     </div>

@@ -12,15 +12,16 @@ const GAME_MODE_LABELS: Record<string, string> = {
   [GAME_MODE.PASS_THE_MIC]: 'Pass the Mic',
 };
 
-interface Props {
-  entry: PlayHistoryEntry;
-  isExpanded: boolean;
-  // Props from useKeyboardNav register() spread
+export interface PlayEntryCardInteractionProps {
   focused?: boolean;
   onClick?: () => void;
   'data-test'?: string;
-  // Destructured to prevent double-spreading; Button handles focus styling via the focused prop
   'data-focused'?: boolean;
+}
+
+interface Props extends PlayEntryCardInteractionProps {
+  entry: PlayHistoryEntry;
+  isExpanded: boolean;
 }
 
 export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focused': _dataFocused, ...rest }: Props) {

@@ -36,6 +36,10 @@
   }
 }
 
+@utility stroke-text {
+    -webkit-text-stroke: 0.015em black;
+}
+
 @utility animate-focused {
   animation: focusAnimation 1000ms ease-in-out infinite both;
 }

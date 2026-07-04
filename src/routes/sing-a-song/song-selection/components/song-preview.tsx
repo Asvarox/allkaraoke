@@ -160,7 +160,7 @@ export default function SongPreviewComponent({
         data-test="song-preview"
         focused={!expanded}
         className={
-          'bg-slate-900 ' +
+          'bg-slate-800 ' +
           (expanded
             ? 'fixed inset-0 z-202 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4'
             : `absolute z-3 transition-opacity ${

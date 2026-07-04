@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25)',
+        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25), inset 0px 0px 40px 2px rgba(0,0,0,0.2)',
       },
       colors: {
         default: styles.colors.text.default,
