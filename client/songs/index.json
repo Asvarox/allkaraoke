@@ -63449,6 +63449,35 @@
     "local": false
   },
   {
+    "id": "gilda-fuiste",
+    "title": "Fuiste",
+    "artist": "Gilda",
+    "video": "mm_SwD5PYvY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 392,
+    "gap": 32910.10204081633,
+    "year": "1995",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:15:07.967Z",
+    "realBpm": 392,
+    "volume": 1,
+    "author": "DaVIch0",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=davich0",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=Fuiste",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5969,
+    "tracksCount": 1,
+    "search": "gildafuiste",
+    "local": false
+  },
+  {
     "id": "gilda-no-es-mi-despedida",
     "title": "No es mi despedida",
     "artist": "Gilda",
@@ -63506,6 +63535,35 @@
     "shortId": 5947,
     "tracksCount": 1,
     "search": "gildanomearrepientodeesteamor",
+    "local": false
+  },
+  {
+    "id": "gilda-se-me-ha-perdido-un-corazon",
+    "title": "Se me ha perdido un corazón",
+    "artist": "Gilda",
+    "video": "8TB6oZMLhJQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 372.08,
+    "gap": 26020.152225327885,
+    "year": "1995",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:15:23.885Z",
+    "realBpm": 372.08,
+    "volume": 1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=Se%20me%20ha%20perdido%20un%20coraz%C3%B3n",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5970,
+    "tracksCount": 1,
+    "search": "gildasemehaperdidouncorazon",
     "local": false
   },
   {
@@ -67873,6 +67931,36 @@
     "shortId": 1817,
     "tracksCount": 1,
     "search": "grupofronteranosevaenvivo",
+    "local": false
+  },
+  {
+    "id": "grupo-play-llora-me-llama",
+    "title": "Llora, me llama",
+    "artist": "Grupo Play",
+    "video": "kPAdHrg8cSU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 392.15,
+    "gap": 27377.48259594543,
+    "year": "2010",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:17:40.636Z",
+    "genre": "Cumbia",
+    "realBpm": 392.15,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Grupo%20Play&cancion=Llora,%20me%20llama",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5971,
+    "tracksCount": 1,
+    "search": "grupoplaylloramellama",
     "local": false
   },
   {
@@ -74702,6 +74790,65 @@
     "local": false
   },
   {
+    "id": "intoxicados-esta-saliendo-el-sol",
+    "title": "Está Saliendo El Sol",
+    "artist": "Intoxicados",
+    "video": "_aAd2EIT9d0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 327,
+    "gap": 8421.825688073393,
+    "year": "2003",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:12.890Z",
+    "genre": "Rock Nacional",
+    "realBpm": 327,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Intoxicados&cancion=Est%C3%A1%20Saliendo%20El%20Sol",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5972,
+    "tracksCount": 1,
+    "search": "intoxicadosestasaliendoelsol",
+    "local": false
+  },
+  {
+    "id": "intoxicados-nunca-quise",
+    "title": "Nunca quise",
+    "artist": "Intoxicados",
+    "video": "bdqvUwn1tbE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 17226,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:33.308Z",
+    "genre": "Rock Argentino",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Intoxicados&cancion=Nunca%20quise",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5973,
+    "tracksCount": 1,
+    "search": "intoxicadosnuncaquise",
+    "local": false
+  },
+  {
     "id": "inxs-afterglow",
     "title": "Afterglow",
     "artist": "INXS",
@@ -76049,6 +76196,36 @@
     "local": false
   },
   {
+    "id": "jaf-maravillosa-esta-noche",
+    "title": "Maravillosa esta noche",
+    "artist": "JAF",
+    "video": "T1P2GNFxOEI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 21400,
+    "year": "1992",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:52.144Z",
+    "genre": "Rock",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=JAF&cancion=Maravillosa%20esta%20noche",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5974,
+    "tracksCount": 1,
+    "search": "jafmaravillosaestanoche",
+    "local": false
+  },
+  {
     "id": "jagwar-twin-bad-feeling",
     "title": "Bad Feeling",
     "artist": "Jagwar Twin",
@@ -77211,6 +77388,36 @@
     "shortId": 2067,
     "tracksCount": 1,
     "search": "janetjacksontogetheragain",
+    "local": false
+  },
+  {
+    "id": "jarabe-de-palo-bonito",
+    "title": "Bonito",
+    "artist": "Jarabe de Palo",
+    "video": "xxhET61yB1A",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 340,
+    "gap": 7255.294117647059,
+    "year": "2003",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-07-02T20:19:13.296Z",
+    "genre": "Pop",
+    "realBpm": 340,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Jarabe%20de%20Palo&cancion=Bonito",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5975,
+    "tracksCount": 1,
+    "search": "jarabedepalobonito",
     "local": false
   },
   {
@@ -85163,6 +85370,65 @@
     "local": false
   },
   {
+    "id": "kapanga-desearia",
+    "title": "Desearía",
+    "artist": "Kapanga",
+    "video": "unyiLDt8SXg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 260.05,
+    "gap": 15186.419342434147,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:19:45.564Z",
+    "realBpm": 260.05,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kapanga&cancion=Desear%C3%ADa",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5976,
+    "tracksCount": 1,
+    "search": "kapangadesearia",
+    "local": false
+  },
+  {
+    "id": "kapanga-el-mono-relojero",
+    "title": "El mono relojero",
+    "artist": "Kapanga",
+    "video": "aFwJ4SSOcj4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 360.02,
+    "gap": 21751.055552469308,
+    "year": "1998",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:20:00.212Z",
+    "genre": "Rock",
+    "realBpm": 360.02,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kapanga&cancion=El%20mono%20relojero",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5977,
+    "tracksCount": 1,
+    "search": "kapangaelmonorelojero",
+    "local": false
+  },
+  {
     "id": "kardinal-offishall-feat-akon-dangerous",
     "title": "Dangerous",
     "artist": "Kardinal Offishall feat. Akon",
@@ -86659,6 +86925,64 @@
     "shortId": 2326,
     "tracksCount": 1,
     "search": "kepersonajesfmkybigoneunfinde",
+    "local": false
+  },
+  {
+    "id": "ke-personajes-onda-sabanera-pobre-corazon-en-vivo",
+    "title": "Pobre corazón (en vivo)",
+    "artist": "Ke Personajes & Onda Sabanera",
+    "video": "Dcow-Jp3Ak4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 365.64,
+    "gap": 455.42500820479154,
+    "year": "2023",
+    "lastUpdate": "2026-07-02T20:25:45.472Z",
+    "genre": "Cumbia",
+    "realBpm": 365.64,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20&%20Onda%20Sabanera&cancion=Pobre%20coraz%C3%B3n%20(en%20vivo)",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5978,
+    "tracksCount": 1,
+    "search": "kepersonajesondasabanerapobrecorazonenvivo",
+    "local": false
+  },
+  {
+    "id": "ke-personajes-y-ulises-bueno-intento",
+    "title": "Intento",
+    "artist": "Ke Personajes y Ulises Bueno",
+    "video": "yCTMFmlgWU8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 309.8,
+    "gap": 7810.2149774047775,
+    "year": "2024",
+    "lastUpdate": "2026-07-02T20:26:24.493Z",
+    "genre": "Cumbia",
+    "realBpm": 309.8,
+    "volume": 1,
+    "author": "monomayordomo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=monomayordomo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20y%20Ulises%20Bueno&cancion=Intento",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5979,
+    "tracksCount": 1,
+    "search": "kepersonajesyulisesbuenointento",
     "local": false
   },
   {
@@ -90011,6 +90335,35 @@
     "local": false
   },
   {
+    "id": "kudai-escapar",
+    "title": "Escapar",
+    "artist": "Kudai",
+    "video": "yAkoQxjDfp8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 223.98,
+    "gap": 27679.446021966247,
+    "year": "2004",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-02T20:26:45.716Z",
+    "realBpm": 223.98,
+    "volume": 1,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kudai&cancion=Escapar",
+    "duration": 281,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5980,
+    "tracksCount": 1,
+    "search": "kudaiescapar",
+    "local": false
+  },
+  {
     "id": "kult-baranek",
     "title": "Baranek",
     "artist": "Kult",
@@ -91329,6 +91682,65 @@
     "shortId": 5440,
     "tracksCount": 1,
     "search": "kylieminogueyourdisconeedsyou",
+    "local": false
+  },
+  {
+    "id": "la-barra-tempestad",
+    "title": "Tempestad",
+    "artist": "La Barra",
+    "video": "Ht4SadJ5cdc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 315.73,
+    "gap": 25720.312102112566,
+    "year": "2003",
+    "lastUpdate": "2026-07-02T20:28:13.592Z",
+    "genre": "Cuarteto",
+    "realBpm": 315.73,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Barra&cancion=Tempestad",
+    "duration": 279,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5981,
+    "tracksCount": 1,
+    "search": "labarratempestad",
+    "local": false
+  },
+  {
+    "id": "la-beriso-madrugada",
+    "title": "Madrugada",
+    "artist": "La Beriso",
+    "video": "qkkG6g6vT34",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 294.16,
+    "gap": 15068.146858852326,
+    "year": "2014",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:28:28.240Z",
+    "genre": "Reggae",
+    "realBpm": 294.16,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Beriso&cancion=Madrugada",
+    "duration": 282,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5982,
+    "tracksCount": 1,
+    "search": "laberisomadrugada",
     "local": false
   },
   {
