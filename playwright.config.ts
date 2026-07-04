@@ -122,6 +122,7 @@ const config: PlaywrightTestConfig = {
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,
+          ignoreHTTPSErrors: true,
         }
       : undefined,
     // {
