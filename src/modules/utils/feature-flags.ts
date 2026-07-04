@@ -4,4 +4,5 @@ export const FeatureFlags = {
   RemoteMicConnectionType: 'remote_mics_connection_type',
   InitialInputLag: 'initial_input_lag',
   NewVolume: 'new_volume',
+  DisableMobileMode: 'disable_mobile_mode',
 } as const;

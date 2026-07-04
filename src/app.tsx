@@ -9,10 +9,11 @@ import Jukebox from './routes/jukebox/jukebox';
 import SelectInput from './routes/select-input/select-input';
 
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
-import { Suspense, lazy, useMemo } from 'react';
+import { Suspense, lazy, useEffect, useMemo } from 'react';
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
+import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
@@ -22,7 +23,7 @@ import QuickSetup from '~/routes/quick-setup/quick-setup';
 import routePaths from '~/routes/route-paths';
 import { CalibrationSettings } from '~/routes/settings/calibration';
 import RemoteMicSettings from '~/routes/settings/remote-mic-settings';
-import { GraphicSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
 import SocialMediaElements from '~/routes/social-media-elements/social-media-elements';
 import Welcome from '~/routes/welcome/welcome';
 
@@ -42,6 +43,16 @@ const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) =
 
 function App() {
   const [graphicSetting] = useSettingValue(GraphicSetting);
+
+  const mobileModeDisabled = useMobileModeDisabled();
+  const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  useEffect(() => {
+    // Force it off for users who opted in before the flag loaded, or in a previous session,
+    // while the disable-mobile-mode experiment is running.
+    if (mobileModeDisabled && mobilePhoneMode) {
+      setMobilePhoneMode(false);
+    }
+  }, [mobileModeDisabled, mobilePhoneMode, setMobilePhoneMode]);
 
   const theme = useMemo<Theme>(
     () =>
