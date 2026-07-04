@@ -9,7 +9,7 @@
 #GAP:7810,2149774047775
 #ALLKARAOKE_ID:ke-personajes-y-ulises-bueno-intento
 #ALLKARAOKE_SID:5979
-#ALLKARAOKE_LASTUPDATE:2026-07-03T02:11:21.926Z
+#ALLKARAOKE_LASTUPDATE:2026-07-02T20:26:24.493Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=monomayordomo
 #ALLKARAOKE_REALBPM:309,8
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20y%20Ulises%20Bueno&cancion=Intento

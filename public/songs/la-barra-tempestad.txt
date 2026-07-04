@@ -9,7 +9,7 @@
 #GAP:25720,312102112566
 #ALLKARAOKE_ID:la-barra-tempestad
 #ALLKARAOKE_SID:5981
-#ALLKARAOKE_LASTUPDATE:2026-07-03T02:11:22.312Z
+#ALLKARAOKE_LASTUPDATE:2026-07-02T20:28:13.592Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=tuadnuevo
 #ALLKARAOKE_REALBPM:315,73
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=La%20Barra&cancion=Tempestad

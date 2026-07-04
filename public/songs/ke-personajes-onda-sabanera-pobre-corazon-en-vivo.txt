@@ -9,7 +9,7 @@
 #GAP:455,42500820479154
 #ALLKARAOKE_ID:ke-personajes-onda-sabanera-pobre-corazon-en-vivo
 #ALLKARAOKE_SID:5978
-#ALLKARAOKE_LASTUPDATE:2026-07-03T02:11:20.707Z
+#ALLKARAOKE_LASTUPDATE:2026-07-02T20:25:45.472Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=pelu5
 #ALLKARAOKE_REALBPM:365,64
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20&%20Onda%20Sabanera&cancion=Pobre%20coraz%C3%B3n%20(en%20vivo)
