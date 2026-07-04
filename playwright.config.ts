@@ -117,12 +117,13 @@ const config: PlaywrightTestConfig = {
       ? {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
           command: process.env.CI
-            ? 'wrangler dev --port 3010 --local --local-protocol=https'
+            ? // workerd logs a benign "error accepting tls connection ... CERTIFICATE_UNKNOWN" for some of Chromium's
+              // parallel connections to its self-signed cert; tests pass regardless, so just filter the noise out.
+              `wrangler dev --port 3010 --local --local-protocol=https 2>&1 | awk '/error accepting tls connection.*CERTIFICATE_UNKNOWN/{skip=1;next} skip&&(/^[[:space:]]*$/||/stack:/){next} {skip=0;print}'`
             : 'VITE_APP_PRERENDER=true vite build && vite preview --port 3010',
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,
-          ignoreHTTPSErrors: true,
         }
       : undefined,
     // {
