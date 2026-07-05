@@ -1,5 +1,5 @@
-import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
 import { cloudflare } from '@cloudflare/vite-plugin';
+import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
@@ -22,9 +22,9 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-//   experimental: {
-//     bundledDev: true,
-//   },
+  //   experimental: {
+  //     bundledDev: true,
+  //   },
   resolve: {
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
@@ -102,7 +102,7 @@ export default defineConfig({
         test: {
           name: 'app',
           include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts'],
+          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts', '.claude/**/*'],
         },
       },
       {

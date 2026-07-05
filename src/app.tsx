@@ -13,6 +13,7 @@ import { Suspense, lazy, useMemo } from 'react';
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
+import DevScreenshots from '~/routes/dev-screenshots/dev-screenshots';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
@@ -89,6 +90,7 @@ function App() {
                   )}
                 />
                 <Route path="social-media-elements" component={SocialMediaElements} />
+                <Route path="dev/screenshots" component={DevScreenshots} />
                 <Route path={routePaths.CONVERT} component={() => <Convert />} />
                 <Route
                   path={routePaths.EDIT_SONGS_LIST}

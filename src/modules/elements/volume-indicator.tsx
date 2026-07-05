@@ -62,6 +62,7 @@ export const PlayerMicCheck = ({
   return (
     <VolumeIndicatorBase
       {...props}
+      data-test="mic-volume-indicator"
       ref={elemRef}
       style={{
         background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { twc } from 'react-twc';
 import useRemoteMicServerStatus from '~/modules/remote-mic/hooks/use-remote-mic-server-status';
+import isE2E from '~/modules/utils/is-e2-e';
 
 export default function ConnectionStatus() {
   const [display, setDisplay] = useState<boolean | null>(null);
@@ -10,7 +11,8 @@ export default function ConnectionStatus() {
     setDisplay(true);
   }
 
-  if (!display) {
+  // Debug-only overlay - its live latency/connection count would make e2e/visual screenshots flaky
+  if (!display || isE2E()) {
     return null;
   }
 
