@@ -91744,6 +91744,36 @@
     "local": false
   },
   {
+    "id": "la-beriso-tus-ojos",
+    "title": "Tus ojos",
+    "artist": "La Beriso",
+    "video": "3_6UKi65CHo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 13099,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T02:24:52.818Z",
+    "genre": "Rock",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Beriso&cancion=Tus%20ojos",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5983,
+    "tracksCount": 1,
+    "search": "laberisotusojos",
+    "local": false
+  },
+  {
     "id": "la-bouche-be-my-lover",
     "title": "Be My Lover",
     "artist": "La Bouche",
@@ -91838,6 +91868,36 @@
     "local": false
   },
   {
+    "id": "la-champions-liga-dime-si-eres-feliz",
+    "title": "Dime si eres feliz",
+    "artist": "La Champions Liga",
+    "video": "Er3amRbqlMM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 962,
+    "year": "2009",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T02:24:52.823Z",
+    "genre": "Cumbia",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Champions%20Liga&cancion=Dime%20si%20eres%20feliz",
+    "duration": 126,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 5984,
+    "tracksCount": 1,
+    "search": "lachampionsligadimesieresfeliz",
+    "local": false
+  },
+  {
     "id": "la-factoria-eddy-lover-perdoname",
     "title": "Perdóname",
     "artist": "La Factoria & Eddy Lover",
@@ -91863,6 +91923,65 @@
     "shortId": 2437,
     "tracksCount": 1,
     "search": "lafactoriaeddyloverperdoname",
+    "local": false
+  },
+  {
+    "id": "la-konga-el-mismo-aire",
+    "title": "El mismo aire",
+    "artist": "La Konga",
+    "video": "ILND0weAVA8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 16709,
+    "year": "2020",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T02:24:53.182Z",
+    "genre": "Cuarteto",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Konga&cancion=El%20mismo%20aire",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5985,
+    "tracksCount": 1,
+    "search": "lakongaelmismoaire",
+    "local": false
+  },
+  {
+    "id": "la-konga-luck-ra-y-ke-personajes-ya-no-vuelvas",
+    "title": "Ya no vuelvas",
+    "artist": "La Konga, Luck Ra y Ke Personajes",
+    "video": "Mroued07Z2U",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 12977,
+    "year": "2022",
+    "lastUpdate": "2026-07-05T02:24:53.328Z",
+    "genre": "Cuarteto",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Konga,%20Luck%20Ra%20y%20Ke%20Personajes&cancion=Ya%20no%20vuelvas",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5986,
+    "tracksCount": 1,
+    "search": "lakongaluckraykepersonajesyanovuelvas",
     "local": false
   },
   {
@@ -91927,6 +92046,126 @@
     "shortId": 2438,
     "tracksCount": 2,
     "search": "lalalandryangoslingemmastonecityofstars",
+    "local": false
+  },
+  {
+    "id": "la-ley-fuera-de-mi",
+    "title": "Fuera de mí",
+    "artist": "La Ley",
+    "video": "B_5Q-lV9Jug",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 275.22,
+    "gap": 34333.966644865926,
+    "year": "2000",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-05T02:24:53.467Z",
+    "genre": "Rock latino",
+    "realBpm": 275.22,
+    "volume": 1,
+    "author": "aliciayeduardo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=aliciayeduardo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=Fuera%20de%20m%C3%AD",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5987,
+    "tracksCount": 1,
+    "search": "laleyfuerademi",
+    "local": false
+  },
+  {
+    "id": "la-ley-mas-alla",
+    "title": "Más allá",
+    "artist": "La Ley",
+    "video": "vyufxiLt-6Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280.32,
+    "gap": 14742.304794520547,
+    "year": "2003",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-05T02:24:53.618Z",
+    "realBpm": 280.32,
+    "volume": 1,
+    "author": "Lorchen",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=lorchen",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=M%C3%A1s%20all%C3%A1",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5988,
+    "tracksCount": 1,
+    "search": "laleymasalla",
+    "local": false
+  },
+  {
+    "id": "la-ley-mentira",
+    "title": "Mentira",
+    "artist": "La Ley",
+    "video": "fDeEoUia4vE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 355.46,
+    "gap": 14026.227817475949,
+    "year": "2001",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-05T02:24:53.621Z",
+    "genre": "Acústico",
+    "videoGap": 1,
+    "realBpm": 355.46,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=Mentira",
+    "duration": 288,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5989,
+    "tracksCount": 1,
+    "search": "laleymentira",
+    "local": false
+  },
+  {
+    "id": "la-mancha-de-rolando-arde-la-ciudad",
+    "title": "Arde la ciudad",
+    "artist": "La Mancha de Rolando",
+    "video": "-8vxXsfbxj4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.25,
+    "gap": 13926.925069380204,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T02:24:53.623Z",
+    "genre": "Rock",
+    "realBpm": 270.25,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Mancha%20de%20Rolando&cancion=Arde%20la%20ciudad",
+    "duration": 250,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5990,
+    "tracksCount": 1,
+    "search": "lamanchaderolandoardelaciudad",
     "local": false
   },
   {
