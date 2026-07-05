@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useBackground } from '~/modules/elements/background-context';
 import isDev from '~/modules/utils/is-dev';
+import { clearAllSnapshots, getAllSnapshots, saveSnapshot } from './snapshot-store';
 
 const VIEWPORTS = ['desktop', 'tablet', 'mobile-portrait', 'mobile-landscape'] as const;
 type Viewport = (typeof VIEWPORTS)[number];
@@ -54,6 +55,59 @@ function useCacheBustToken() {
   }, []);
 
   return [token, useCallback(() => setToken((t) => t + 1), [])] as const;
+}
+
+const snapshotKey = (category: string, viewport: Viewport) => `${category}/${viewport}`;
+
+// Loads captured baseline snapshots from IndexedDB and exposes actions to (re)capture or clear them.
+function useSnapshots() {
+  const [snapshots, setSnapshots] = useState<Map<string, Blob>>(new Map());
+  const [isCapturing, setIsCapturing] = useState(false);
+
+  useEffect(() => {
+    getAllSnapshots().then(setSnapshots);
+  }, []);
+
+  const capture = useCallback(async () => {
+    setIsCapturing(true);
+    try {
+      for (const [category, urls] of sortedCategories) {
+        for (const viewport of VIEWPORTS) {
+          const url = urls[viewport];
+          if (!url) continue;
+          const blob = await fetch(url).then((res) => res.blob());
+          await saveSnapshot(snapshotKey(category, viewport), blob);
+        }
+      }
+      setSnapshots(await getAllSnapshots());
+    } finally {
+      setIsCapturing(false);
+    }
+  }, []);
+
+  const clear = useCallback(async () => {
+    await clearAllSnapshots();
+    setSnapshots(new Map());
+  }, []);
+
+  return { snapshots, isCapturing, capture, clear };
+}
+
+// Object URLs for Blobs must be created/revoked explicitly, they aren't garbage collected on their own.
+function useObjectUrl(blob: Blob | undefined) {
+  const [url, setUrl] = useState<string>();
+
+  useEffect(() => {
+    if (!blob) {
+      setUrl(undefined);
+      return;
+    }
+    const objectUrl = URL.createObjectURL(blob);
+    setUrl(objectUrl);
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [blob]);
+
+  return url;
 }
 
 // Focus state lives in the URL hash (not component state) so it survives HMR full-reloads, not just Fast Refresh.
@@ -111,6 +165,7 @@ function DevScreenshots() {
   useBackground(false);
   const [hash, setHash] = useHash();
   const [cacheBustToken, refresh] = useCacheBustToken();
+  const { snapshots, isCapturing, capture, clear } = useSnapshots();
 
   const withCacheBust = useMemo(
     () => (url: string) => `${url}${url.includes('?') ? '&' : '?'}t=${cacheBustToken}`,
@@ -125,11 +180,25 @@ function DevScreenshots() {
     <div className="min-h-screen bg-neutral-900 p-6 text-white">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold">Visual regression screenshots</h1>
-        <button
-          className="rounded border border-neutral-700 px-3 py-1 text-sm hover:border-neutral-500"
-          onClick={refresh}>
-          Refresh images
-        </button>
+        <div className="flex gap-2">
+          <button
+            className="rounded border border-neutral-700 px-3 py-1 text-sm hover:border-neutral-500 disabled:opacity-50"
+            disabled={isCapturing || sortedCategories.size === 0}
+            onClick={capture}>
+            {isCapturing ? 'Capturing…' : 'Capture snapshot'}
+          </button>
+          <button
+            className="rounded border border-neutral-700 px-3 py-1 text-sm hover:border-neutral-500 disabled:opacity-50"
+            disabled={snapshots.size === 0}
+            onClick={clear}>
+            Clear captured snapshots
+          </button>
+          <button
+            className="rounded border border-neutral-700 px-3 py-1 text-sm hover:border-neutral-500"
+            onClick={refresh}>
+            Refresh images
+          </button>
+        </div>
       </div>
 
       {sortedCategories.size === 0 && (
@@ -144,6 +213,7 @@ function DevScreenshots() {
           viewport={focused.viewport}
           setHash={setHash}
           withCacheBust={withCacheBust}
+          snapshots={snapshots}
         />
       )}
 
@@ -212,9 +282,12 @@ function ScreenView({
   viewport,
   setHash,
   withCacheBust,
-}: ViewProps & { category: string; viewport: Viewport }) {
+  snapshots,
+}: ViewProps & { category: string; viewport: Viewport; snapshots: Map<string, Blob> }) {
   const urls = sortedCategories.get(category);
   const url = urls?.[viewport];
+  const capturedBlob = snapshots.get(snapshotKey(category, viewport));
+  const capturedUrl = useObjectUrl(capturedBlob);
 
   return (
     <div>
@@ -224,11 +297,30 @@ function ScreenView({
       <h2 className="mb-4 text-xl font-semibold">{category}</h2>
 
       {url && (
-        <img
-          src={withCacheBust(url)}
-          alt={`${category} - ${viewport}`}
-          className="mb-4 max-w-full rounded border border-neutral-700"
-        />
+        <div className={`mb-4 grid items-start gap-4 ${capturedUrl ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+          {capturedUrl && (
+            <div className="min-w-0">
+              <p className="mb-1 text-sm text-neutral-400">Captured</p>
+              <img
+                src={capturedUrl}
+                alt={`${category} - ${viewport} - captured`}
+                className="w-full rounded border border-neutral-700"
+              />
+            </div>
+          )}
+          <div className="min-w-0">
+            {capturedUrl && <p className="mb-1 text-sm text-neutral-400">Current</p>}
+            <img
+              src={withCacheBust(url)}
+              alt={`${category} - ${viewport}`}
+              className={
+                capturedUrl
+                  ? 'w-full rounded border border-neutral-700'
+                  : 'max-w-full rounded border border-neutral-700'
+              }
+            />
+          </div>
+        </div>
       )}
 
       <div className="flex flex-wrap gap-3">
