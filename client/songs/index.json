@@ -91755,7 +91755,7 @@
     "gap": 13099,
     "year": "2005",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-05T02:24:52.818Z",
+    "lastUpdate": "2026-07-04T05:51:09.822Z",
     "genre": "Rock",
     "realBpm": 300,
     "volume": 1,
@@ -91879,7 +91879,7 @@
     "gap": 962,
     "year": "2009",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-05T02:24:52.823Z",
+    "lastUpdate": "2026-07-04T05:51:28.081Z",
     "genre": "Cumbia",
     "realBpm": 480,
     "volume": 1,
@@ -91937,7 +91937,7 @@
     "gap": 16709,
     "year": "2020",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-05T02:24:53.182Z",
+    "lastUpdate": "2026-07-04T05:51:52.303Z",
     "genre": "Cuarteto",
     "realBpm": 300,
     "volume": 1,
@@ -91966,7 +91966,7 @@
     "bpm": 300,
     "gap": 12977,
     "year": "2022",
-    "lastUpdate": "2026-07-05T02:24:53.328Z",
+    "lastUpdate": "2026-07-04T05:52:17.646Z",
     "genre": "Cuarteto",
     "realBpm": 300,
     "volume": 1,
@@ -92060,7 +92060,7 @@
     "gap": 34333.966644865926,
     "year": "2000",
     "artistOrigin": "CL",
-    "lastUpdate": "2026-07-05T02:24:53.467Z",
+    "lastUpdate": "2026-07-04T15:27:56.321Z",
     "genre": "Rock latino",
     "realBpm": 275.22,
     "volume": 1,
@@ -92090,7 +92090,7 @@
     "gap": 14742.304794520547,
     "year": "2003",
     "artistOrigin": "CL",
-    "lastUpdate": "2026-07-05T02:24:53.618Z",
+    "lastUpdate": "2026-07-04T15:28:10.476Z",
     "realBpm": 280.32,
     "volume": 1,
     "author": "Lorchen",
@@ -92119,7 +92119,7 @@
     "gap": 14026.227817475949,
     "year": "2001",
     "artistOrigin": "CL",
-    "lastUpdate": "2026-07-05T02:24:53.621Z",
+    "lastUpdate": "2026-07-04T15:28:48.868Z",
     "genre": "Acústico",
     "videoGap": 1,
     "realBpm": 355.46,
@@ -92150,7 +92150,7 @@
     "gap": 13926.925069380204,
     "year": "2005",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-05T02:24:53.623Z",
+    "lastUpdate": "2026-07-04T15:29:15.091Z",
     "genre": "Rock",
     "realBpm": 270.25,
     "volume": 1,
@@ -92195,6 +92195,36 @@
     "shortId": 2439,
     "tracksCount": 1,
     "search": "lamoscatsetseparanovertemas",
+    "local": false
+  },
+  {
+    "id": "la-mosca-tse-tse-yo-te-quiero-dar",
+    "title": "Yo te quiero dar",
+    "artist": "La mosca tse-tsé",
+    "video": "SYTQDyljg0Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250.46,
+    "gap": 46204.87335303042,
+    "year": "2000",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-06T02:29:45.911Z",
+    "genre": "Latina",
+    "realBpm": 250.46,
+    "volume": 1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20mosca%20tse-ts%C3%A9&cancion=Yo%20te%20quiero%20dar",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5991,
+    "tracksCount": 1,
+    "search": "lamoscatsetseyotequierodar",
     "local": false
   },
   {
@@ -92403,6 +92433,66 @@
     "shortId": 2446,
     "tracksCount": 1,
     "search": "laorejadevangoghrosas",
+    "local": false
+  },
+  {
+    "id": "la-renga-corazon-fugitivo",
+    "title": "Corazón fugitivo",
+    "artist": "La Renga",
+    "video": "rEETm_4BPDc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 264.57,
+    "gap": 14798.47613108062,
+    "year": "2014",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-06T02:29:46.350Z",
+    "genre": "Rock",
+    "realBpm": 264.57,
+    "volume": 1,
+    "author": "karakara",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=karakara",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Renga&cancion=Coraz%C3%B3n%20fugitivo",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5992,
+    "tracksCount": 1,
+    "search": "larengacorazonfugitivo",
+    "local": false
+  },
+  {
+    "id": "la-renga-el-revelde",
+    "title": "El revelde",
+    "artist": "La Renga",
+    "video": "IVMZE0Y2cxo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 1275,
+    "year": "2000",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-06T02:29:46.491Z",
+    "genre": "Rock Argentino",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Renga&cancion=El%20revelde",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 5993,
+    "tracksCount": 1,
+    "search": "larengaelrevelde",
     "local": false
   },
   {
