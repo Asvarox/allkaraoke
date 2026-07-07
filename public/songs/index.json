@@ -6638,6 +6638,33 @@
     "local": false
   },
   {
+    "id": "alex-warren-ordinary",
+    "title": "Ordinary",
+    "artist": "Alex Warren",
+    "video": "u2ah9tWTkmk",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 7325.535714285715,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-07T02:25:28.295Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "DS",
+    "duration": 187,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5996,
+    "tracksCount": 1,
+    "search": "alexwarrenordinary",
+    "local": false
+  },
+  {
     "id": "alexander-klaws-free-like-the-wind",
     "title": "Free Like The Wind",
     "artist": "Alexander Klaws",
@@ -39034,6 +39061,33 @@
     "local": false
   },
   {
+    "id": "damiano-david-born-with-a-broken-heart",
+    "title": "Born With a Broken Heart",
+    "artist": "Damiano David",
+    "video": "Z4-g8UXa944",
+    "language": [
+      "English"
+    ],
+    "bpm": 399,
+    "gap": 14614.962406015038,
+    "year": "2024",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-07-07T02:25:29.164Z",
+    "realBpm": 171.8,
+    "volume": 1,
+    "author": "DS",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5999,
+    "tracksCount": 1,
+    "search": "damianodavidbornwithabrokenheart",
+    "local": false
+  },
+  {
     "id": "damien-dawn-dein-herz",
     "title": "Dein Herz",
     "artist": "Damien Dawn",
@@ -52139,6 +52193,33 @@
     "shortId": 1470,
     "tracksCount": 1,
     "search": "elliegouldingburn",
+    "local": false
+  },
+  {
+    "id": "ellie-goulding-juice-wrld-hate-me",
+    "title": "Hate Me",
+    "artist": "Ellie Goulding & Juice WRLD",
+    "video": "UZwi9SHgzGY",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.1,
+    "gap": -89.73342219260235,
+    "year": "2019",
+    "lastUpdate": "2026-07-07T02:25:28.297Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5997,
+    "tracksCount": 1,
+    "search": "elliegouldingjuicewrldhateme",
     "local": false
   },
   {
@@ -85956,6 +86037,34 @@
     "local": false
   },
   {
+    "id": "katseye-gnarly",
+    "title": "Gnarly",
+    "artist": "KATSEYE",
+    "video": "R2-yomhYAj4",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.5,
+    "gap": -117.29083665338646,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-07T02:25:28.288Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.83,
+    "author": "Mircosoft93",
+    "duration": 142,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5994,
+    "tracksCount": 1,
+    "search": "katseyegnarly",
+    "local": false
+  },
+  {
     "id": "katseye-touch",
     "title": "Touch",
     "artist": "KATSEYE",
@@ -90021,6 +90130,33 @@
     "local": false
   },
   {
+    "id": "kpop-demon-hunters-rumi-jinu-free",
+    "title": "Free",
+    "artist": "KPop Demon Hunters (Rumi & Jinu)",
+    "video": "fjOeJssZX_Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 12992.142857142857,
+    "year": "2025",
+    "lastUpdate": "2026-07-07T02:25:28.966Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 121,
+    "volume": 0.84,
+    "author": "MylordWaliza, Dragon33",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5998,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntersrumijinufree",
+    "local": false
+  },
+  {
     "id": "kpop-demon-hunters-saja-boys-your-idol",
     "title": "Your Idol",
     "artist": "KPop Demon Hunters (Saja Boys)",
@@ -92209,7 +92345,7 @@
     "gap": 46204.87335303042,
     "year": "2000",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-06T02:29:45.911Z",
+    "lastUpdate": "2026-07-05T18:59:53.360Z",
     "genre": "Latina",
     "realBpm": 250.46,
     "volume": 1,
@@ -92447,7 +92583,7 @@
     "gap": 14798.47613108062,
     "year": "2014",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-06T02:29:46.350Z",
+    "lastUpdate": "2026-07-05T19:00:10.118Z",
     "genre": "Rock",
     "realBpm": 264.57,
     "volume": 1,
@@ -92477,7 +92613,7 @@
     "gap": 1275,
     "year": "2000",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-06T02:29:46.491Z",
+    "lastUpdate": "2026-07-05T19:00:30.865Z",
     "genre": "Rock Argentino",
     "realBpm": 480,
     "volume": 1,
@@ -94917,6 +95053,35 @@
     "shortId": 2518,
     "tracksCount": 1,
     "search": "lassoycamiodioquenoteodio",
+    "local": false
+  },
+  {
+    "id": "laufey-from-the-start",
+    "title": "From The Start",
+    "artist": "Laufey",
+    "video": "lSD_L-xic9o",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 4183.90243902439,
+    "year": "2023",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-07-07T02:25:28.292Z",
+    "genre": "Jazz Pop",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "LuMM04",
+    "duration": 170,
+    "tracks": [
+      {
+        "name": "From The Start",
+        "start": 22
+      }
+    ],
+    "shortId": 5995,
+    "tracksCount": 1,
+    "search": "laufeyfromthestart",
     "local": false
   },
   {
