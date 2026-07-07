@@ -1,0 +1,290 @@
+#ARTIST:Laufey
+#TITLE:From The Start
+#CREATOR:LuMM04
+#BPM:328
+#YEAR:2023
+#VIDEO:v=lSD_L-xic9o
+#GENRE:Jazz Pop
+#LANGUAGE:English
+#GAP:4183,90243902439
+#ALLKARAOKE_ID:laufey-from-the-start
+#ALLKARAOKE_SID:5995
+#ALLKARAOKE_LASTUPDATE:2026-07-07T02:25:28.292Z
+#ALLKARAOKE_ARTISTORIGIN:IS
+#ALLKARAOKE_REALBPM:82
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:170
+#P1:From The Start
+#MP3:Laufey - From The Start.mp3
+#COVER:Laufey - From The Start [CO].jpg
+#BACKGROUND:Laufey - From The Start [BG].jpg
+: 22 7 -3 Don’t 
+: 30 7 -2 you 
+: 38 19 5 no
+: 58 7 -2 tice 
+: 66 8 5 how
+- 74 76
+- 76
+: 98 7 5 I 
+: 106 7 3 get 
+: 114 7 1 qui
+: 122 7 0 et 
+: 130 7 3 when 
+: 138 7 1 there’s 
+: 146 7 0 no 
+: 154 8 -2 one 
+: 166 8 5 else 
+: 186 7 -2 a
+: 194 16 5 round
+- 210
+: 226 7 5 Me 
+: 234 7 3 and 
+: 242 7 1 you 
+: 250 7 0 and 
+: 258 7 3 awk
+: 266 7 1 ward 
+: 274 7 0 si
+: 282 11 -2 lence
+- 293
+: 294 11 -2 Don’t 
+: 306 11 10 you 
+: 318 23 8 dare 
+: 342 7 5 look 
+: 350 7 6 at 
+: 358 11 8 me 
+: 370 11 3 that 
+: 382 28 2 way
+- 410
+: 418 7 5 I 
+: 426 7 3 don’t 
+: 434 7 1 need 
+: 442 7 0 re
+: 450 7 3 min
+: 458 7 1 ders 
+: 466 7 0 of 
+: 474 7 -2 how 
+: 482 7 0 you 
+: 490 7 0 don’t 
+: 498 7 0 feel 
+: 506 7 1 the 
+: 514 8 3 same
+- 522
+: 538 7 -3 Oh, 
+: 546 7 -2 the 
+: 554 19 5 bur
+: 574 7 -2 ning 
+: 582 20 5 pain
+- 602
+: 610 7 5 Liste
+: 618 7 3 ning 
+: 626 7 1 to 
+: 634 7 0 you 
+: 642 7 3 harp 
+: 650 7 1 on 
+: 658 7 0 ’bout 
+: 666 11 -2 some 
+: 678 19 5 new 
+: 698 7 -2 soul
+: 706 20 5 mate
+- 726
+: 738 7 5 She’s 
+: 746 7 3 so 
+: 754 7 1 per
+: 762 7 0 fect
+- 769
+: 770 7 3 Blah, 
+: 778 7 1 blah, 
+: 786 7 0 blah
+- 793
+: 794 11 -2 Oh, 
+: 806 11 -2 how 
+: 818 11 10 I 
+: 830 23 8 wish 
+: 854 7 5 you’ll 
+: 862 7 6 wake 
+: 870 11 8 up 
+: 882 11 3 one 
+: 894 24 2 day
+- 918
+: 930 7 5 Run 
+: 938 7 3 to 
+: 946 7 1 me 
+: 954 7 0 con
+: 962 7 3 fess 
+: 970 7 1 your 
+: 978 7 0 love
+- 985
+: 986 7 -2 At 
+: 994 7 0 least 
+: 1002 7 0 just 
+: 1010 7 0 let 
+: 1018 7 1 me 
+: 1026 19 3 say
+- 1045
+: 1046 15 5 That 
+: 1062 11 3 when 
+: 1074 11 5 I 
+: 1086 11 3 talk 
+: 1098 11 5 to 
+: 1110 7 -2 you
+- 1117
+: 1118 7 5 Oh, 
+: 1126 11 3 Cu
+: 1138 11 5 pid 
+: 1150 11 3 walks 
+: 1162 11 5 right 
+: 1174 7 -2 through
+- 1181
+: 1182 7 5 And 
+: 1190 7 3 shoots 
+: 1198 11 5 an 
+: 1210 11 3 ar
+: 1222 11 5 row 
+: 1234 7 8 through 
+: 1242 7 5 my 
+: 1250 48 3 heart
+- 1298
+: 1310 7 1 And 
+: 1318 11 3 I 
+: 1330 11 5 sound 
+: 1342 11 3 like 
+: 1354 11 5 a 
+: 1366 7 -2 loon
+- 1373
+: 1374 7 5 But 
+: 1382 11 3 don’t 
+: 1394 11 5 you 
+: 1406 11 8 feel 
+: 1418 11 6 it, 
+: 1430 7 5 too?
+- 1437
+: 1438 7 5 Con
+: 1446 11 3 fess 
+: 1458 11 5 I 
+: 1470 11 3 loved 
+: 1482 7 5 you 
+: 1490 7 -4 from 
+: 1498 7 -2 the 
+: 1506 48 1 start
+- 1554 2048
+- 2048
+: 2070 7 -3 What’s 
+: 2078 7 -2 a 
+: 2086 19 5 girl 
+: 2106 7 -2 to 
+: 2114 20 5 do
+- 2134
+: 2142 7 5 Ly
+: 2150 7 3 ing 
+: 2158 7 1 on 
+: 2166 7 0 my 
+: 2174 7 3 bed 
+: 2182 7 1 sta
+: 2190 7 0 ring
+- 2197
+: 2198 11 -2 In
+: 2210 19 5 to 
+: 2230 7 -2 the 
+: 2238 20 5 blue
+- 2258
+: 2270 11 5 Un
+: 2282 7 3 re
+: 2290 7 1 qui
+: 2298 7 0 ted 
+: 2306 7 3 ter
+: 2314 7 1 ri
+: 2322 7 0 fy
+: 2330 11 -2 ing
+- 2341
+: 2342 11 -2 Love 
+: 2354 11 10 is 
+: 2366 11 8 dri
+: 2378 11 5 ving 
+: 2390 7 5 me 
+: 2398 7 6 a 
+: 2406 11 8 bit 
+: 2418 11 3 in
+: 2430 24 2 sane
+- 2454
+: 2466 7 5 Have 
+: 2474 7 3 to 
+: 2482 7 1 get 
+: 2490 7 0 this 
+: 2498 7 3 off 
+: 2506 7 1 my 
+: 2514 7 0 chest
+- 2521
+: 2522 7 -2 I’m 
+: 2530 7 0 tel
+: 2538 7 0 ling 
+: 2546 7 0 you 
+: 2554 7 1 to
+: 2562 19 3 day
+- 2581
+: 2582 15 5 That 
+: 2598 11 3 when 
+: 2610 11 5 I 
+: 2622 11 3 talk 
+: 2634 11 5 to 
+: 2646 7 -2 you
+- 2653
+: 2654 7 5 Oh, 
+: 2662 11 3 Cu
+: 2674 11 5 pid 
+: 2686 11 3 walks 
+: 2698 11 5 right 
+: 2710 7 -2 through
+- 2717
+: 2718 7 5 And 
+: 2726 7 3 shoots 
+: 2734 11 5 an 
+: 2746 11 3 ar
+: 2758 11 5 row 
+: 2770 7 8 through 
+: 2778 7 5 my 
+: 2786 48 3 heart
+- 2834
+: 2846 7 1 And 
+: 2854 11 3 I 
+: 2866 11 5 sound 
+: 2878 11 3 like 
+: 2890 11 5 a 
+: 2902 7 -2 loon
+- 2909
+: 2910 7 5 But 
+: 2918 11 3 don’t 
+: 2930 11 5 you 
+: 2942 11 8 feel 
+: 2954 11 6 it, 
+: 2966 7 5 too?
+- 2973
+: 2974 7 5 Con
+: 2982 11 3 fess 
+: 2994 11 5 I 
+: 3006 11 3 loved 
+: 3018 7 5 you 
+: 3026 7 -4 from 
+: 3034 7 -2 the 
+: 3042 48 1 start
+- 3090
+: 3102 7 5 Con
+: 3110 11 3 fess 
+: 3122 11 5 I 
+: 3134 11 3 loved 
+: 3146 12 5 you
+- 3158
+: 3166 7 5 Just 
+: 3174 11 6 thin
+: 3186 15 10 king 
+: 3202 19 11 of 
+: 3222 36 10 you
+- 3258
+: 3262 19 5 I 
+: 3282 27 3 know 
+: 3310 27 5 I’ve 
+: 3338 19 3 loved 
+: 3358 20 5 you 
+: 3386 16 -3 from 
+: 3406 11 -2 the 
+: 3418 64 1 start
+E
