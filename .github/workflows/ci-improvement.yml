@@ -48,6 +48,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - name: Install CA certificates
+        run: apt-get install -y ca-certificates && update-ca-certificates
       - name: Build app
         run: pnpm build
       - name: Configure local worker secrets for E2E
