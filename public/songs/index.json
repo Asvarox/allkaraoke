@@ -92750,6 +92750,67 @@
     "local": false
   },
   {
+    "id": "la-vela-puerca-el-gavilan",
+    "title": "El Gavilán",
+    "artist": "La Vela Puerca",
+    "video": "qhIfmNk8gEQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 3581,
+    "year": "1998",
+    "artistOrigin": "UY",
+    "lastUpdate": "2026-07-09T02:11:34.271Z",
+    "genre": "Rock Uruguayo",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Vela%20Puerca&cancion=El%20Gavil%C3%A1n",
+    "duration": 120,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 6000,
+    "tracksCount": 1,
+    "search": "lavelapuercaelgavilan",
+    "local": false
+  },
+  {
+    "id": "la-vela-puerca-un-frasco",
+    "title": "Un frasco",
+    "artist": "La Vela Puerca",
+    "video": "zM_kF1GHFCE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 224,
+    "gap": 28278.535714285714,
+    "year": "2004",
+    "artistOrigin": "UY",
+    "lastUpdate": "2026-07-09T02:11:34.933Z",
+    "genre": "Rock Uruguayo",
+    "videoGap": 7,
+    "realBpm": 224,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Vela%20Puerca&cancion=Un%20frasco",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6001,
+    "tracksCount": 1,
+    "search": "lavelapuercaunfrasco",
+    "local": false
+  },
+  {
     "id": "la-zarra-evidemment",
     "title": "Évidemment",
     "artist": "La Zarra",
