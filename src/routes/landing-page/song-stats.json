@@ -28,6 +28,7 @@
     "ABBA",
     "Foo Fighters",
     "Bruno Mars",
+    "Lana Del Rey",
     "Muse",
     "Westlife",
     "Adele",
@@ -35,7 +36,6 @@
     "Ed Sheeran",
     "Katy Perry",
     "Kelly Clarkson",
-    "Lana Del Rey",
     "Backstreet Boys",
     "Beyoncé",
     "Jamiroquai",
@@ -60,6 +60,7 @@
     "High School Musical",
     "Jennifer Lopez",
     "Mariah Carey",
+    "Marina and the Diamonds",
     "No Doubt",
     "Panic! at the Disco",
     "Rise Against",
@@ -71,7 +72,6 @@
     "Dua Lipa",
     "Gwen Stefani",
     "Kool & The Gang",
-    "Marina and the Diamonds",
     "Owl City",
     "Red Hot Chili Peppers",
     "Rod Stewart",
@@ -147,9 +147,9 @@
     "Justin Bieber",
     "Lewis Capaldi",
     "Little Mix",
-    "OneRepublic",
-    "Papa Roach",
-    "P!nk"
+    "Nelly Furtado",
+    "Nightwish",
+    "OneRepublic"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 5934
+  "songs": 5998
 }

@@ -5332,6 +5332,39 @@
     "local": false
   },
   {
+    "id": "akira-yamaoka-mary-elizabeth-mcglynn-waiting-for-you",
+    "title": "Waiting For You",
+    "artist": "Akira Yamaoka & Mary Elizabeth McGlynn",
+    "video": "dXuLZkKsNhs",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 33799.15789473684,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-28T12:14:31.900Z",
+    "edition": "Silent hill 4",
+    "genre": "Rock",
+    "realBpm": 92,
+    "previewStart": 75,
+    "previewEnd": 94,
+    "volume": 0.94,
+    "author": "Double D",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=double%20d",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=Waiting+For+You+Akira+Yamaoka+%26+Mary+Elizabeth+McGlynn",
+    "duration": 338,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5938,
+    "tracksCount": 1,
+    "search": "akirayamaokamaryelizabethmcglynnwaitingforyou",
+    "local": false
+  },
+  {
     "id": "akon-dont-matter",
     "title": "Don’t Matter",
     "artist": "Akon",
@@ -6602,6 +6635,33 @@
     "shortId": 5903,
     "tracksCount": 1,
     "search": "alexwarreneternity",
+    "local": false
+  },
+  {
+    "id": "alex-warren-ordinary",
+    "title": "Ordinary",
+    "artist": "Alex Warren",
+    "video": "u2ah9tWTkmk",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 7325.535714285715,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-07T02:25:28.295Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "DS",
+    "duration": 187,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5996,
+    "tracksCount": 1,
+    "search": "alexwarrenordinary",
     "local": false
   },
   {
@@ -15271,6 +15331,35 @@
     "shortId": 431,
     "tracksCount": 1,
     "search": "b52sloveshack",
+    "local": false
+  },
+  {
+    "id": "babasonicos-carismatico",
+    "title": "Carismático",
+    "artist": "Babasónicos",
+    "video": "Pmp08j843p0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 274,
+    "gap": 15814.598540145986,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-29T05:42:41.399Z",
+    "realBpm": 137,
+    "volume": 1,
+    "author": "motokero2",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=motokero2",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Babas%C3%B3nicos&cancion=Carism%C3%A1tico",
+    "duration": 165,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5945,
+    "tracksCount": 1,
+    "search": "babasonicoscarismatico",
     "local": false
   },
   {
@@ -32727,6 +32816,35 @@
     "local": false
   },
   {
+    "id": "charly-garcia-rezo-por-vos",
+    "title": "Rezo por vos",
+    "artist": "Charly García",
+    "video": "iTA75Z6E4eA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 241.15,
+    "gap": 51339.23178668906,
+    "year": "1985",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-29T05:49:30.501Z",
+    "genre": "Rock latino",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "aliciayeduardo",
+    "sourceUrl": "https://www.youtube.com/watch?v=iTA75Z6E4eA&list=RDiTA75Z6E4eA&start_radio=1&pp=ygUMcmV6byBwb3Igdm9zoAcB",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5946,
+    "tracksCount": 1,
+    "search": "charlygarciarezoporvos",
+    "local": false
+  },
+  {
     "id": "chave-douro-pai-da-crianca",
     "title": "Pai da criança",
     "artist": "Chave D’Ouro",
@@ -38943,6 +39061,33 @@
     "local": false
   },
   {
+    "id": "damiano-david-born-with-a-broken-heart",
+    "title": "Born With a Broken Heart",
+    "artist": "Damiano David",
+    "video": "Z4-g8UXa944",
+    "language": [
+      "English"
+    ],
+    "bpm": 399,
+    "gap": 14614.962406015038,
+    "year": "2024",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-07-07T02:25:29.164Z",
+    "realBpm": 171.8,
+    "volume": 1,
+    "author": "DS",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 5999,
+    "tracksCount": 1,
+    "search": "damianodavidbornwithabrokenheart",
+    "local": false
+  },
+  {
     "id": "damien-dawn-dein-herz",
     "title": "Dein Herz",
     "artist": "Damien Dawn",
@@ -38954,7 +39099,7 @@
     "gap": 7834.487681394048,
     "year": "2010",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-06-28T00:36:17.234Z",
+    "lastUpdate": "2026-06-27T17:03:27.184Z",
     "realBpm": 120,
     "volume": 0.6,
     "author": "LittleK.",
@@ -47498,6 +47643,35 @@
     "local": false
   },
   {
+    "id": "doda-bad-girls-polish-version",
+    "title": "Bad Girls (Polish Version)",
+    "artist": "Doda",
+    "video": "V48zw8M-U4A",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 274,
+    "gap": 6454.598540145986,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-28T12:16:48.027Z",
+    "genre": "Rock, Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "mylordwaliza",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=201240",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31053",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5943,
+    "tracksCount": 1,
+    "search": "dodabadgirlspolishversion",
+    "local": false
+  },
+  {
     "id": "doda-bad-girls",
     "title": "Bad Girls",
     "artist": "Doda",
@@ -47553,6 +47727,35 @@
     "shortId": 1337,
     "tracksCount": 1,
     "search": "dodadzaga",
+    "local": false
+  },
+  {
+    "id": "doda-dziekuje",
+    "title": "Dziękuję",
+    "artist": "Doda",
+    "video": "NLEfayt8oYI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 364.12,
+    "gap": 21921.31495111502,
+    "year": "2007",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-06-28T12:17:20.857Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "<span style=\"text-decoration:line-through;\">michas17j</span>",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=6807",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5944,
+    "tracksCount": 1,
+    "search": "dodadziekuje",
     "local": false
   },
   {
@@ -51993,6 +52196,33 @@
     "local": false
   },
   {
+    "id": "ellie-goulding-juice-wrld-hate-me",
+    "title": "Hate Me",
+    "artist": "Ellie Goulding & Juice WRLD",
+    "video": "UZwi9SHgzGY",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.1,
+    "gap": -89.73342219260235,
+    "year": "2019",
+    "lastUpdate": "2026-07-07T02:25:28.297Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5997,
+    "tracksCount": 1,
+    "search": "elliegouldingjuicewrldhateme",
+    "local": false
+  },
+  {
     "id": "ellie-goulding-lights",
     "title": "Lights",
     "artist": "Ellie Goulding",
@@ -55674,6 +55904,36 @@
     "local": false
   },
   {
+    "id": "fabiana-cantilo-pasaje-hasta-ahi",
+    "title": "Pasaje hasta ahí",
+    "artist": "Fabiana Cantilo",
+    "video": "-HCGBi4ChJg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 272,
+    "gap": 15376.35294117647,
+    "year": "1993",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-30T13:25:04.256Z",
+    "genre": "Pop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Fabiana%20Cantilo&cancion=Pasaje%20hasta%20ah%C3%AD",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5964,
+    "tracksCount": 1,
+    "search": "fabianacantilopasajehastaahi",
+    "local": false
+  },
+  {
     "id": "fabio-jr-alma-gemea",
     "title": "Alma Gêmea",
     "artist": "Fábio Jr.",
@@ -57274,6 +57534,37 @@
     "local": false
   },
   {
+    "id": "fenomenoide-fenomenoide",
+    "title": "Fenomenoide",
+    "artist": "Fenomenoide",
+    "video": "OKdcJpuO63U",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 281.8,
+    "gap": 4663.644428672817,
+    "year": "1995",
+    "lastUpdate": "2026-06-30T13:26:09.556Z",
+    "videoGap": 4,
+    "realBpm": 1,
+    "previewStart": 28,
+    "previewEnd": 66,
+    "volume": 1,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Fenomenoide&cancion=Fenomenoide",
+    "duration": 66,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5965,
+    "tracksCount": 1,
+    "search": "fenomenoidefenomenoide",
+    "local": false
+  },
+  {
     "id": "fergie-big-girls-dont-cry",
     "title": "Big Girls Don't Cry",
     "artist": "Fergie",
@@ -58676,6 +58967,64 @@
     "shortId": 1639,
     "tracksCount": 1,
     "search": "floricientafloresamarillas",
+    "local": false
+  },
+  {
+    "id": "floricienta-mi-vestido-azul",
+    "title": "Mi vestido azul",
+    "artist": "Floricienta",
+    "video": "5t0qckoXWhQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 276,
+    "gap": 8721.739130434784,
+    "year": "2005",
+    "lastUpdate": "2026-06-30T13:26:53.235Z",
+    "realBpm": 276,
+    "volume": 1,
+    "author": "DaVIch0",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=davich0",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Floricienta&cancion=Mi%20vestido%20azul",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5966,
+    "tracksCount": 1,
+    "search": "floricientamivestidoazul",
+    "local": false
+  },
+  {
+    "id": "floricienta-por-que",
+    "title": "Por que",
+    "artist": "Floricienta",
+    "video": "GcOuBxjSbOk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 268,
+    "gap": 20282.537313432837,
+    "year": "2004",
+    "lastUpdate": "2026-06-30T13:27:55.331Z",
+    "genre": "Other",
+    "videoGap": 7,
+    "realBpm": 268,
+    "volume": 1,
+    "author": "DaVIch0",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=davich0",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Floricienta&cancion=Por%20que",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5967,
+    "tracksCount": 1,
+    "search": "floricientaporque",
     "local": false
   },
   {
@@ -61384,6 +61733,36 @@
     "local": false
   },
   {
+    "id": "garfield-y-sus-amigos-amigo-es",
+    "title": "Amigo es",
+    "artist": "Garfield y sus Amigos",
+    "video": "MJmSmjBN-nU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 396.86,
+    "gap": 4801.2856926875975,
+    "year": "1988",
+    "lastUpdate": "2026-06-30T13:28:17.207Z",
+    "realBpm": 396.86,
+    "previewStart": 25.5,
+    "previewEnd": 61,
+    "volume": 1,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Garfield%20y%20sus%20Amigos&cancion=Amigo%20es",
+    "duration": 61,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5968,
+    "tracksCount": 1,
+    "search": "garfieldysusamigosamigoes",
+    "local": false
+  },
+  {
     "id": "garou-seul",
     "title": "Seul",
     "artist": "Garou",
@@ -63151,6 +63530,35 @@
     "local": false
   },
   {
+    "id": "gilda-fuiste",
+    "title": "Fuiste",
+    "artist": "Gilda",
+    "video": "mm_SwD5PYvY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 392,
+    "gap": 32910.10204081633,
+    "year": "1995",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:15:07.967Z",
+    "realBpm": 392,
+    "volume": 1,
+    "author": "DaVIch0",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=davich0",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=Fuiste",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5969,
+    "tracksCount": 1,
+    "search": "gildafuiste",
+    "local": false
+  },
+  {
     "id": "gilda-no-es-mi-despedida",
     "title": "No es mi despedida",
     "artist": "Gilda",
@@ -63178,6 +63586,65 @@
     "shortId": 5872,
     "tracksCount": 1,
     "search": "gildanoesmidespedida",
+    "local": false
+  },
+  {
+    "id": "gilda-no-me-arrepiento-de-este-amor",
+    "title": "No me arrepiento de este amor",
+    "artist": "Gilda",
+    "video": "8iUkmnLc1ec",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 235,
+    "gap": 19198.72340425532,
+    "year": "1994",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-06-29T05:49:59.430Z",
+    "genre": "Salsa",
+    "realBpm": 235,
+    "volume": 1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=No%20me%20arrepiento%20de%20este%20amor",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5947,
+    "tracksCount": 1,
+    "search": "gildanomearrepientodeesteamor",
+    "local": false
+  },
+  {
+    "id": "gilda-se-me-ha-perdido-un-corazon",
+    "title": "Se me ha perdido un corazón",
+    "artist": "Gilda",
+    "video": "8TB6oZMLhJQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 372.08,
+    "gap": 26020.152225327885,
+    "year": "1995",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:15:23.885Z",
+    "realBpm": 372.08,
+    "volume": 1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Gilda&cancion=Se%20me%20ha%20perdido%20un%20coraz%C3%B3n",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 5970,
+    "tracksCount": 1,
+    "search": "gildasemehaperdidouncorazon",
     "local": false
   },
   {
@@ -67545,6 +68012,36 @@
     "shortId": 1817,
     "tracksCount": 1,
     "search": "grupofronteranosevaenvivo",
+    "local": false
+  },
+  {
+    "id": "grupo-play-llora-me-llama",
+    "title": "Llora, me llama",
+    "artist": "Grupo Play",
+    "video": "kPAdHrg8cSU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 392.15,
+    "gap": 27377.48259594543,
+    "year": "2010",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:17:40.636Z",
+    "genre": "Cumbia",
+    "realBpm": 392.15,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Grupo%20Play&cancion=Llora,%20me%20llama",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5971,
+    "tracksCount": 1,
+    "search": "grupoplaylloramellama",
     "local": false
   },
   {
@@ -74374,6 +74871,65 @@
     "local": false
   },
   {
+    "id": "intoxicados-esta-saliendo-el-sol",
+    "title": "Está Saliendo El Sol",
+    "artist": "Intoxicados",
+    "video": "_aAd2EIT9d0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 327,
+    "gap": 8421.825688073393,
+    "year": "2003",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:12.890Z",
+    "genre": "Rock Nacional",
+    "realBpm": 327,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Intoxicados&cancion=Est%C3%A1%20Saliendo%20El%20Sol",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5972,
+    "tracksCount": 1,
+    "search": "intoxicadosestasaliendoelsol",
+    "local": false
+  },
+  {
+    "id": "intoxicados-nunca-quise",
+    "title": "Nunca quise",
+    "artist": "Intoxicados",
+    "video": "bdqvUwn1tbE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 17226,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:33.308Z",
+    "genre": "Rock Argentino",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Intoxicados&cancion=Nunca%20quise",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5973,
+    "tracksCount": 1,
+    "search": "intoxicadosnuncaquise",
+    "local": false
+  },
+  {
     "id": "inxs-afterglow",
     "title": "Afterglow",
     "artist": "INXS",
@@ -75721,6 +76277,36 @@
     "local": false
   },
   {
+    "id": "jaf-maravillosa-esta-noche",
+    "title": "Maravillosa esta noche",
+    "artist": "JAF",
+    "video": "T1P2GNFxOEI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 21400,
+    "year": "1992",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:18:52.144Z",
+    "genre": "Rock",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=JAF&cancion=Maravillosa%20esta%20noche",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5974,
+    "tracksCount": 1,
+    "search": "jafmaravillosaestanoche",
+    "local": false
+  },
+  {
     "id": "jagwar-twin-bad-feeling",
     "title": "Bad Feeling",
     "artist": "Jagwar Twin",
@@ -75746,6 +76332,40 @@
     "shortId": 2050,
     "tracksCount": 1,
     "search": "jagwartwinbadfeeling",
+    "local": false
+  },
+  {
+    "id": "jam-project-the-hero-okoreru-kobushi-ni-hi-wo-tsukero",
+    "title": "THE HERO !! ~Okoreru Kobushi ni Hi wo Tsukero~",
+    "artist": "JAM Project",
+    "video": "QImBolnTVH8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 260.2,
+    "gap": 8459.984627209838,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-06-30T13:19:53.040Z",
+    "edition": "Ultrastar",
+    "genre": "Rock",
+    "realBpm": 130,
+    "previewStart": 40,
+    "previewEnd": 77,
+    "volume": 1,
+    "author": "alhime",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=138444",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20676",
+    "duration": 227,
+    "tracks": [
+      {
+        "name": "JAM Project - THE HERO",
+        "start": 17
+      }
+    ],
+    "shortId": 5955,
+    "tracksCount": 1,
+    "search": "jamprojecttheherookorerukobushinihiwotsukero",
     "local": false
   },
   {
@@ -76849,6 +77469,36 @@
     "shortId": 2067,
     "tracksCount": 1,
     "search": "janetjacksontogetheragain",
+    "local": false
+  },
+  {
+    "id": "jarabe-de-palo-bonito",
+    "title": "Bonito",
+    "artist": "Jarabe de Palo",
+    "video": "xxhET61yB1A",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 340,
+    "gap": 7255.294117647059,
+    "year": "2003",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-07-02T20:19:13.296Z",
+    "genre": "Pop",
+    "realBpm": 340,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Jarabe%20de%20Palo&cancion=Bonito",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 5975,
+    "tracksCount": 1,
+    "search": "jarabedepalobonito",
     "local": false
   },
   {
@@ -81589,6 +82239,36 @@
     "local": false
   },
   {
+    "id": "josafat-espinosa-vuela-pega-y-esquiva",
+    "title": "Vuela, pega y esquiva",
+    "artist": "Josafat Espinosa",
+    "video": "w9UbU07Zi6w",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 383.05,
+    "gap": 9439.856154549014,
+    "year": "2017",
+    "lastUpdate": "2026-06-30T07:26:58.619Z",
+    "realBpm": 383.05,
+    "previewStart": 37.5,
+    "previewEnd": 85,
+    "volume": 1,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Josafat%20Espinosa&cancion=Vuela,%20pega%20y%20esquiva%20(TV)",
+    "duration": 85,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5953,
+    "tracksCount": 1,
+    "search": "josafatespinosavuelapegayesquiva",
+    "local": false
+  },
+  {
     "id": "jose-jose-almohada",
     "title": "Almohada",
     "artist": "Jose  Jose",
@@ -84771,6 +85451,65 @@
     "local": false
   },
   {
+    "id": "kapanga-desearia",
+    "title": "Desearía",
+    "artist": "Kapanga",
+    "video": "unyiLDt8SXg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 260.05,
+    "gap": 15186.419342434147,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:19:45.564Z",
+    "realBpm": 260.05,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kapanga&cancion=Desear%C3%ADa",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5976,
+    "tracksCount": 1,
+    "search": "kapangadesearia",
+    "local": false
+  },
+  {
+    "id": "kapanga-el-mono-relojero",
+    "title": "El mono relojero",
+    "artist": "Kapanga",
+    "video": "aFwJ4SSOcj4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 360.02,
+    "gap": 21751.055552469308,
+    "year": "1998",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:20:00.212Z",
+    "genre": "Rock",
+    "realBpm": 360.02,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kapanga&cancion=El%20mono%20relojero",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5977,
+    "tracksCount": 1,
+    "search": "kapangaelmonorelojero",
+    "local": false
+  },
+  {
     "id": "kardinal-offishall-feat-akon-dangerous",
     "title": "Dangerous",
     "artist": "Kardinal Offishall feat. Akon",
@@ -85295,6 +86034,34 @@
     "shortId": 2297,
     "tracksCount": 1,
     "search": "katrinaandthewaveswalkingonsunshine",
+    "local": false
+  },
+  {
+    "id": "katseye-gnarly",
+    "title": "Gnarly",
+    "artist": "KATSEYE",
+    "video": "R2-yomhYAj4",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.5,
+    "gap": -117.29083665338646,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-07T02:25:28.288Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.83,
+    "author": "Mircosoft93",
+    "duration": 142,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5994,
+    "tracksCount": 1,
+    "search": "katseyegnarly",
     "local": false
   },
   {
@@ -86267,6 +87034,64 @@
     "shortId": 2326,
     "tracksCount": 1,
     "search": "kepersonajesfmkybigoneunfinde",
+    "local": false
+  },
+  {
+    "id": "ke-personajes-onda-sabanera-pobre-corazon-en-vivo",
+    "title": "Pobre corazón (en vivo)",
+    "artist": "Ke Personajes & Onda Sabanera",
+    "video": "Dcow-Jp3Ak4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 365.64,
+    "gap": 455.42500820479154,
+    "year": "2023",
+    "lastUpdate": "2026-07-02T20:25:45.472Z",
+    "genre": "Cumbia",
+    "realBpm": 365.64,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20&%20Onda%20Sabanera&cancion=Pobre%20coraz%C3%B3n%20(en%20vivo)",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5978,
+    "tracksCount": 1,
+    "search": "kepersonajesondasabanerapobrecorazonenvivo",
+    "local": false
+  },
+  {
+    "id": "ke-personajes-y-ulises-bueno-intento",
+    "title": "Intento",
+    "artist": "Ke Personajes y Ulises Bueno",
+    "video": "yCTMFmlgWU8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 309.8,
+    "gap": 7810.2149774047775,
+    "year": "2024",
+    "lastUpdate": "2026-07-02T20:26:24.493Z",
+    "genre": "Cumbia",
+    "realBpm": 309.8,
+    "volume": 1,
+    "author": "monomayordomo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=monomayordomo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Ke%20Personajes%20y%20Ulises%20Bueno&cancion=Intento",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5979,
+    "tracksCount": 1,
+    "search": "kepersonajesyulisesbuenointento",
     "local": false
   },
   {
@@ -89305,6 +90130,33 @@
     "local": false
   },
   {
+    "id": "kpop-demon-hunters-rumi-jinu-free",
+    "title": "Free",
+    "artist": "KPop Demon Hunters (Rumi & Jinu)",
+    "video": "fjOeJssZX_Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 12992.142857142857,
+    "year": "2025",
+    "lastUpdate": "2026-07-07T02:25:28.966Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 121,
+    "volume": 0.84,
+    "author": "MylordWaliza, Dragon33",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5998,
+    "tracksCount": 1,
+    "search": "kpopdemonhuntersrumijinufree",
+    "local": false
+  },
+  {
     "id": "kpop-demon-hunters-saja-boys-your-idol",
     "title": "Your Idol",
     "artist": "KPop Demon Hunters (Saja Boys)",
@@ -89616,6 +90468,35 @@
     "shortId": 2415,
     "tracksCount": 1,
     "search": "kttunstallsuddenlyisee",
+    "local": false
+  },
+  {
+    "id": "kudai-escapar",
+    "title": "Escapar",
+    "artist": "Kudai",
+    "video": "yAkoQxjDfp8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 223.98,
+    "gap": 27679.446021966247,
+    "year": "2004",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-02T20:26:45.716Z",
+    "realBpm": 223.98,
+    "volume": 1,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Kudai&cancion=Escapar",
+    "duration": 281,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 5980,
+    "tracksCount": 1,
+    "search": "kudaiescapar",
     "local": false
   },
   {
@@ -90940,6 +91821,95 @@
     "local": false
   },
   {
+    "id": "la-barra-tempestad",
+    "title": "Tempestad",
+    "artist": "La Barra",
+    "video": "Ht4SadJ5cdc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 315.73,
+    "gap": 25720.312102112566,
+    "year": "2003",
+    "lastUpdate": "2026-07-02T20:28:13.592Z",
+    "genre": "Cuarteto",
+    "realBpm": 315.73,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Barra&cancion=Tempestad",
+    "duration": 279,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5981,
+    "tracksCount": 1,
+    "search": "labarratempestad",
+    "local": false
+  },
+  {
+    "id": "la-beriso-madrugada",
+    "title": "Madrugada",
+    "artist": "La Beriso",
+    "video": "qkkG6g6vT34",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 294.16,
+    "gap": 15068.146858852326,
+    "year": "2014",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-02T20:28:28.240Z",
+    "genre": "Reggae",
+    "realBpm": 294.16,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Beriso&cancion=Madrugada",
+    "duration": 282,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5982,
+    "tracksCount": 1,
+    "search": "laberisomadrugada",
+    "local": false
+  },
+  {
+    "id": "la-beriso-tus-ojos",
+    "title": "Tus ojos",
+    "artist": "La Beriso",
+    "video": "3_6UKi65CHo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 13099,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-04T05:51:09.822Z",
+    "genre": "Rock",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Beriso&cancion=Tus%20ojos",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5983,
+    "tracksCount": 1,
+    "search": "laberisotusojos",
+    "local": false
+  },
+  {
     "id": "la-bouche-be-my-lover",
     "title": "Be My Lover",
     "artist": "La Bouche",
@@ -91034,6 +92004,36 @@
     "local": false
   },
   {
+    "id": "la-champions-liga-dime-si-eres-feliz",
+    "title": "Dime si eres feliz",
+    "artist": "La Champions Liga",
+    "video": "Er3amRbqlMM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 962,
+    "year": "2009",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-04T05:51:28.081Z",
+    "genre": "Cumbia",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Champions%20Liga&cancion=Dime%20si%20eres%20feliz",
+    "duration": 126,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 5984,
+    "tracksCount": 1,
+    "search": "lachampionsligadimesieresfeliz",
+    "local": false
+  },
+  {
     "id": "la-factoria-eddy-lover-perdoname",
     "title": "Perdóname",
     "artist": "La Factoria & Eddy Lover",
@@ -91059,6 +92059,65 @@
     "shortId": 2437,
     "tracksCount": 1,
     "search": "lafactoriaeddyloverperdoname",
+    "local": false
+  },
+  {
+    "id": "la-konga-el-mismo-aire",
+    "title": "El mismo aire",
+    "artist": "La Konga",
+    "video": "ILND0weAVA8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 16709,
+    "year": "2020",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-04T05:51:52.303Z",
+    "genre": "Cuarteto",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "Pelu5",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pelu5",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Konga&cancion=El%20mismo%20aire",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5985,
+    "tracksCount": 1,
+    "search": "lakongaelmismoaire",
+    "local": false
+  },
+  {
+    "id": "la-konga-luck-ra-y-ke-personajes-ya-no-vuelvas",
+    "title": "Ya no vuelvas",
+    "artist": "La Konga, Luck Ra y Ke Personajes",
+    "video": "Mroued07Z2U",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 12977,
+    "year": "2022",
+    "lastUpdate": "2026-07-04T05:52:17.646Z",
+    "genre": "Cuarteto",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "Tuadnuevo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tuadnuevo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Konga,%20Luck%20Ra%20y%20Ke%20Personajes&cancion=Ya%20no%20vuelvas",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 5986,
+    "tracksCount": 1,
+    "search": "lakongaluckraykepersonajesyanovuelvas",
     "local": false
   },
   {
@@ -91126,6 +92185,126 @@
     "local": false
   },
   {
+    "id": "la-ley-fuera-de-mi",
+    "title": "Fuera de mí",
+    "artist": "La Ley",
+    "video": "B_5Q-lV9Jug",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 275.22,
+    "gap": 34333.966644865926,
+    "year": "2000",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-04T15:27:56.321Z",
+    "genre": "Rock latino",
+    "realBpm": 275.22,
+    "volume": 1,
+    "author": "aliciayeduardo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=aliciayeduardo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=Fuera%20de%20m%C3%AD",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5987,
+    "tracksCount": 1,
+    "search": "laleyfuerademi",
+    "local": false
+  },
+  {
+    "id": "la-ley-mas-alla",
+    "title": "Más allá",
+    "artist": "La Ley",
+    "video": "vyufxiLt-6Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280.32,
+    "gap": 14742.304794520547,
+    "year": "2003",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-04T15:28:10.476Z",
+    "realBpm": 280.32,
+    "volume": 1,
+    "author": "Lorchen",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=lorchen",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=M%C3%A1s%20all%C3%A1",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5988,
+    "tracksCount": 1,
+    "search": "laleymasalla",
+    "local": false
+  },
+  {
+    "id": "la-ley-mentira",
+    "title": "Mentira",
+    "artist": "La Ley",
+    "video": "fDeEoUia4vE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 355.46,
+    "gap": 14026.227817475949,
+    "year": "2001",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-07-04T15:28:48.868Z",
+    "genre": "Acústico",
+    "videoGap": 1,
+    "realBpm": 355.46,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Ley&cancion=Mentira",
+    "duration": 288,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5989,
+    "tracksCount": 1,
+    "search": "laleymentira",
+    "local": false
+  },
+  {
+    "id": "la-mancha-de-rolando-arde-la-ciudad",
+    "title": "Arde la ciudad",
+    "artist": "La Mancha de Rolando",
+    "video": "-8vxXsfbxj4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.25,
+    "gap": 13926.925069380204,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-04T15:29:15.091Z",
+    "genre": "Rock",
+    "realBpm": 270.25,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Mancha%20de%20Rolando&cancion=Arde%20la%20ciudad",
+    "duration": 250,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5990,
+    "tracksCount": 1,
+    "search": "lamanchaderolandoardelaciudad",
+    "local": false
+  },
+  {
     "id": "la-mosca-tse-tse-para-no-verte-mas",
     "title": "Para No Verte Más",
     "artist": "La Mosca Tse Tse",
@@ -91152,6 +92331,36 @@
     "shortId": 2439,
     "tracksCount": 1,
     "search": "lamoscatsetseparanovertemas",
+    "local": false
+  },
+  {
+    "id": "la-mosca-tse-tse-yo-te-quiero-dar",
+    "title": "Yo te quiero dar",
+    "artist": "La mosca tse-tsé",
+    "video": "SYTQDyljg0Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250.46,
+    "gap": 46204.87335303042,
+    "year": "2000",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T18:59:53.360Z",
+    "genre": "Latina",
+    "realBpm": 250.46,
+    "volume": 1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20mosca%20tse-ts%C3%A9&cancion=Yo%20te%20quiero%20dar",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5991,
+    "tracksCount": 1,
+    "search": "lamoscatsetseyotequierodar",
     "local": false
   },
   {
@@ -91360,6 +92569,66 @@
     "shortId": 2446,
     "tracksCount": 1,
     "search": "laorejadevangoghrosas",
+    "local": false
+  },
+  {
+    "id": "la-renga-corazon-fugitivo",
+    "title": "Corazón fugitivo",
+    "artist": "La Renga",
+    "video": "rEETm_4BPDc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 264.57,
+    "gap": 14798.47613108062,
+    "year": "2014",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T19:00:10.118Z",
+    "genre": "Rock",
+    "realBpm": 264.57,
+    "volume": 1,
+    "author": "karakara",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=karakara",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Renga&cancion=Coraz%C3%B3n%20fugitivo",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 5992,
+    "tracksCount": 1,
+    "search": "larengacorazonfugitivo",
+    "local": false
+  },
+  {
+    "id": "la-renga-el-revelde",
+    "title": "El revelde",
+    "artist": "La Renga",
+    "video": "IVMZE0Y2cxo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 1275,
+    "year": "2000",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-05T19:00:30.865Z",
+    "genre": "Rock Argentino",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Renga&cancion=El%20revelde",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 5993,
+    "tracksCount": 1,
+    "search": "larengaelrevelde",
     "local": false
   },
   {
@@ -93439,6 +94708,35 @@
     "local": false
   },
   {
+    "id": "lana-del-rey-say-yes-to-heaven",
+    "title": "Say Yes To Heaven",
+    "artist": "Lana Del Rey",
+    "video": "FgIHfLH9ZK0",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.81,
+    "gap": 18902.07261840792,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-30T13:19:22.362Z",
+    "genre": "Alternative",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "mus31",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=31523",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 5954,
+    "tracksCount": 1,
+    "search": "lanadelreysayyestoheaven",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-shades-of-cool",
     "title": "Shades Of Cool",
     "artist": "Lana Del Rey",
@@ -93755,6 +95053,35 @@
     "shortId": 2518,
     "tracksCount": 1,
     "search": "lassoycamiodioquenoteodio",
+    "local": false
+  },
+  {
+    "id": "laufey-from-the-start",
+    "title": "From The Start",
+    "artist": "Laufey",
+    "video": "lSD_L-xic9o",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 4183.90243902439,
+    "year": "2023",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-07-07T02:25:28.292Z",
+    "genre": "Jazz Pop",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "LuMM04",
+    "duration": 170,
+    "tracks": [
+      {
+        "name": "From The Start",
+        "start": 22
+      }
+    ],
+    "shortId": 5995,
+    "tracksCount": 1,
+    "search": "laufeyfromthestart",
     "local": false
   },
   {
@@ -94663,6 +95990,35 @@
     "shortId": 2541,
     "tracksCount": 1,
     "search": "leonalewisbleedinglove",
+    "local": false
+  },
+  {
+    "id": "leona-lewis-my-hands-final-fantasy-13",
+    "title": "My Hands (Final Fantasy 13)",
+    "artist": "Leona Lewis",
+    "video": "YfcSw14HXec",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.81,
+    "gap": 13978.932822070614,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-30T07:24:52.342Z",
+    "realBpm": 74,
+    "volume": 1,
+    "author": "ai-chan",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=45936",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=19159",
+    "duration": 255,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5948,
+    "tracksCount": 1,
+    "search": "leonalewismyhandsfinalfantasy13",
     "local": false
   },
   {
@@ -96128,6 +97484,39 @@
     "shortId": 2586,
     "tracksCount": 1,
     "search": "linkinparkillbegone",
+    "local": false
+  },
+  {
+    "id": "linkin-park-in-between",
+    "title": "In Between",
+    "artist": "Linkin Park",
+    "video": "ezZYH_TujqY",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 9719.102040816326,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-30T13:21:26.003Z",
+    "genre": "Rock",
+    "realBpm": 96,
+    "previewStart": 53,
+    "previewEnd": 72,
+    "volume": 1,
+    "author": "Linkin Park",
+    "authorUrl": "https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q",
+    "sourceUrl": "https://www.youtube.com/watch?v=YgVzhgygYfs&list=RDYgVzhgygYfs&start_radio=1",
+    "duration": 197,
+    "tracks": [
+      {
+        "name": "In Between",
+        "start": 26
+      }
+    ],
+    "shortId": 5958,
+    "tracksCount": 1,
+    "search": "linkinparkinbetween",
     "local": false
   },
   {
@@ -98750,6 +100139,35 @@
     "shortId": 2653,
     "tracksCount": 1,
     "search": "loureedperfectday",
+    "local": false
+  },
+  {
+    "id": "louis-prima-che-la-luna-oh-mama",
+    "title": "Che La Luna (Oh Mama)",
+    "artist": "Louis Prima",
+    "video": "6q-7oI_h5t8",
+    "language": [
+      "English",
+      "Italian"
+    ],
+    "bpm": 255,
+    "gap": 2830,
+    "year": "1961",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-28T12:14:15.143Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 153,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5937,
+    "tracksCount": 1,
+    "search": "louisprimachelalunaohmama",
     "local": false
   },
   {
@@ -104102,6 +105520,39 @@
     "local": false
   },
   {
+    "id": "marina-and-the-diamonds-i-am-not-a-robot",
+    "title": "I Am Not A Robot",
+    "artist": "Marina and the Diamonds",
+    "video": "L3nMfS10_1Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.06,
+    "gap": 160.24993751562113,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-06-30T07:26:09.678Z",
+    "genre": "Alternative",
+    "realBpm": 120,
+    "previewStart": 55,
+    "previewEnd": 90,
+    "volume": 0.9,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=9446",
+    "duration": 218,
+    "tracks": [
+      {
+        "name": "I Am Not a Robot",
+        "start": 16
+      }
+    ],
+    "shortId": 5952,
+    "tracksCount": 1,
+    "search": "marinaandthediamondsiamnotarobot",
+    "local": false
+  },
+  {
     "id": "marina-and-the-diamonds-lies",
     "title": "Lies",
     "artist": "Marina and the Diamonds",
@@ -105274,6 +106725,33 @@
     "shortId": 2864,
     "tracksCount": 1,
     "search": "martingarrixfeatbonnnosleep",
+    "local": false
+  },
+  {
+    "id": "martin-garrix-feat-clinton-kane-drown",
+    "title": "Drown",
+    "artist": "Martin Garrix feat. Clinton Kane",
+    "video": "iGS07iQaAcg",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.07,
+    "gap": 1246.291581622027,
+    "year": "2020",
+    "lastUpdate": "2026-06-30T13:20:07.266Z",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "josep101",
+    "sourceUrl": "https://www.youtube.com/watch?v=iGS07iQaAcg&list=RDiGS07iQaAcg&start_radio=1",
+    "duration": 174,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5956,
+    "tracksCount": 1,
+    "search": "martingarrixfeatclintonkanedrown",
     "local": false
   },
   {
@@ -108141,6 +109619,67 @@
     "local": false
   },
   {
+    "id": "mia-fallschirm",
+    "title": "Fallschirm",
+    "artist": "MiA.",
+    "video": "Sw17SX_PIxs",
+    "language": [
+      "German"
+    ],
+    "bpm": 222.75,
+    "gap": 5489.89898989899,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-30T07:25:46.195Z",
+    "genre": "Pop",
+    "realBpm": 84,
+    "volume": 0.9,
+    "author": "Sing-Girl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16294",
+    "tracks": [
+      {
+        "name": "Fallschirm",
+        "start": 15
+      }
+    ],
+    "shortId": 5951,
+    "tracksCount": 1,
+    "search": "miafallschirm",
+    "local": false
+  },
+  {
+    "id": "mia-hungriges-herz",
+    "title": "Hungriges Herz",
+    "artist": "MiA.",
+    "video": "_FjRy2TiztE",
+    "language": [
+      "German"
+    ],
+    "bpm": 269.97,
+    "gap": 9149.888876541838,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-28T12:13:54.699Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.7,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11659",
+    "duration": 220,
+    "tracks": [
+      {
+        "name": "Hungriges Herz",
+        "start": 18
+      }
+    ],
+    "shortId": 5936,
+    "tracksCount": 1,
+    "search": "miahungrigesherz",
+    "local": false
+  },
+  {
     "id": "mia-paper-planes",
     "title": "Paper Planes",
     "artist": "M.I.A.",
@@ -108168,6 +109707,73 @@
     "shortId": 2944,
     "tracksCount": 1,
     "search": "miapaperplanes",
+    "local": false
+  },
+  {
+    "id": "mia-tanz-der-molekuele",
+    "title": "Tanz der Moleküle",
+    "artist": "MiA.",
+    "video": "dhAs51kusLU",
+    "language": [
+      "German"
+    ],
+    "bpm": 252,
+    "gap": 25718.095238095237,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-30T07:25:06.599Z",
+    "edition": "Singstar Pop Hits",
+    "genre": "Pop",
+    "realBpm": 126,
+    "previewStart": 68,
+    "previewEnd": 86,
+    "volume": 0.75,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1197",
+    "duration": 241,
+    "tracks": [
+      {
+        "name": "Tanz der Moleküle",
+        "start": 17
+      }
+    ],
+    "shortId": 5949,
+    "tracksCount": 1,
+    "search": "miatanzdermolekuele",
+    "local": false
+  },
+  {
+    "id": "mia-zirkus",
+    "title": "Zirkus",
+    "artist": "MiA.",
+    "video": "I1RIG4bLKHA",
+    "language": [
+      "German"
+    ],
+    "bpm": 248,
+    "gap": 6881.774193548387,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-06-30T07:25:26.413Z",
+    "edition": "Singstar Deutsch Rock-Pop Vol. 2",
+    "genre": "Rock-Pop",
+    "realBpm": 110,
+    "previewStart": 66,
+    "previewEnd": 90,
+    "volume": 0.85,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=1198",
+    "duration": 217,
+    "tracks": [
+      {
+        "name": "Zirkus",
+        "start": 17
+      }
+    ],
+    "shortId": 5950,
+    "tracksCount": 1,
+    "search": "miazirkus",
     "local": false
   },
   {
@@ -115295,7 +116901,7 @@
     "gap": 13784.97512437811,
     "year": "1969",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-28T00:36:17.238Z",
+    "lastUpdate": "2026-06-27T17:04:48.471Z",
     "realBpm": 124,
     "volume": 1,
     "author": "ultrastarsongs",
@@ -115435,25 +117041,25 @@
       "English"
     ],
     "bpm": 228.6,
-    "gap": 43.832020997375366,
+    "gap": 29.448818897637807,
     "year": "2006",
-    "lastUpdate": "2023-07-26T20:10:02.039Z",
-    "edition": "SingStar Pop Hits",
+    "lastUpdate": "2026-06-30T07:26:33.185Z",
     "genre": "Urban",
-    "realBpm": 114,
-    "previewStart": 55,
-    "previewEnd": 90,
-    "volume": 0.5,
-    "manualVolume": 0.5,
-    "author": "Diddlmaus30mg",
+    "realBpm": 113,
+    "volume": 1,
+    "author": "Mooballs2",
+    "sourceUrl": "https://www.youtube.com/watch?v=0J3vgcE5i2o",
     "duration": 243,
     "tracks": [
       {
-        "start": 10
+        "start": 25
+      },
+      {
+        "start": 9
       }
     ],
     "shortId": 3157,
-    "tracksCount": 1,
+    "tracksCount": 2,
     "search": "nellyfurtadofeattimbalandpromiscuous",
     "local": false
   },
@@ -115581,6 +117187,35 @@
     "shortId": 3161,
     "tracksCount": 1,
     "search": "nellyfurtadosayitright",
+    "local": false
+  },
+  {
+    "id": "nelly-furtado-turn-off-the-light",
+    "title": "Turn Off The Light",
+    "artist": "Nelly Furtado",
+    "video": "kOL7aeIDruA",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.64,
+    "gap": 42341.77462289263,
+    "year": "2000",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-06-30T13:21:47.742Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://www.youtube.com/watch?v=kOL7aeIDruA",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 5959,
+    "tracksCount": 1,
+    "search": "nellyfurtadoturnoffthelight",
     "local": false
   },
   {
@@ -117309,6 +118944,63 @@
     "local": false
   },
   {
+    "id": "nightwish-amaranth",
+    "title": "Amaranth",
+    "artist": "Nightwish",
+    "video": "GdZn7k5rZLQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.9,
+    "gap": 33784.2951971886,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-28T12:15:38.631Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3448",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5940,
+    "tracksCount": 1,
+    "search": "nightwishamaranth",
+    "local": false
+  },
+  {
+    "id": "nightwish-bye-bye-beautiful",
+    "title": "Bye Bye Beautiful",
+    "artist": "Nightwish",
+    "video": "hTdhXxxWREo",
+    "language": [
+      "English"
+    ],
+    "bpm": 285.4999999999999,
+    "gap": 31003.496503496503,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-28T12:15:16.695Z",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=2688",
+    "duration": 260,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5939,
+    "tracksCount": 1,
+    "search": "nightwishbyebyebeautiful",
+    "local": false
+  },
+  {
     "id": "nightwish-elan",
     "title": "Élan",
     "artist": "Nightwish",
@@ -117335,6 +119027,35 @@
     "shortId": 3220,
     "tracksCount": 1,
     "search": "nightwishelan",
+    "local": false
+  },
+  {
+    "id": "nightwish-ever-dream",
+    "title": "Ever Dream",
+    "artist": "Nightwish",
+    "video": "lXqncMe3wew",
+    "language": [
+      "English"
+    ],
+    "bpm": 295.8,
+    "gap": -2.0689655172412813,
+    "year": "2002",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-06-28T12:15:58.915Z",
+    "realBpm": 147,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=568",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=4022",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 5941,
+    "tracksCount": 1,
+    "search": "nightwisheverdream",
     "local": false
   },
   {
@@ -119122,6 +120843,35 @@
     "shortId": 3259,
     "tracksCount": 1,
     "search": "nogizaka46tsukinoookisa",
+    "local": false
+  },
+  {
+    "id": "norah-jones-come-away-with-me",
+    "title": "Come Away With Me",
+    "artist": "Norah Jones",
+    "video": "lbjZPFBD6JU",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 22441.48148148148,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-30T13:20:20.254Z",
+    "genre": "Blues",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=lbjZPFBD6JU",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 5957,
+    "tracksCount": 1,
+    "search": "norahjonescomeawaywithme",
     "local": false
   },
   {
@@ -123798,6 +125548,34 @@
     "local": false
   },
   {
+    "id": "passion-pit-carried-away",
+    "title": "Carried Away",
+    "artist": "Passion Pit",
+    "video": "DiEwJTOderQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 35950,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-06-30T13:22:24.790Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "horrible",
+    "sourceUrl": "https://www.youtube.com/watch?v=DiEwJTOderQ",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 5960,
+    "tracksCount": 1,
+    "search": "passionpitcarriedaway",
+    "local": false
+  },
+  {
     "id": "pastora-soler-quedate-conmigo",
     "title": "Quédate conmigo",
     "artist": "Pastora Soler",
@@ -125986,6 +127764,34 @@
     "shortId": 3462,
     "tracksCount": 1,
     "search": "pinkpantheressicespiceboysaliarpt2",
+    "local": false
+  },
+  {
+    "id": "pinkpantheress-tonight",
+    "title": "Tonight",
+    "artist": "PinkPantheress",
+    "video": "IrEFKJnl1H8",
+    "language": [
+      "English"
+    ],
+    "bpm": 284.62,
+    "gap": 14198.664886515353,
+    "year": "2025",
+    "lastUpdate": "2026-06-30T13:24:18.826Z",
+    "genre": "Dance",
+    "realBpm": 141,
+    "volume": 1,
+    "author": "Mircosoft93",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=31642",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 5962,
+    "tracksCount": 1,
+    "search": "pinkpantheresstonight",
     "local": false
   },
   {
@@ -133418,6 +135224,37 @@
     "shortId": 3686,
     "tracksCount": 1,
     "search": "rinkagaminexlukamegurinedroppopcandy",
+    "local": false
+  },
+  {
+    "id": "ringo-sheena-honnou",
+    "title": "Honnou",
+    "artist": "Ringo Sheena",
+    "video": "Xz-qUcF6dIM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 193.98,
+    "gap": 9268.74172595113,
+    "year": "1999",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-06-30T13:24:01.945Z",
+    "genre": "Alternative rock",
+    "realBpm": 97,
+    "previewStart": 30,
+    "previewEnd": 73,
+    "volume": 1,
+    "author": "Subkei",
+    "sourceUrl": "https://www.youtube.com/watch?v=Xz-qUcF6dIM",
+    "duration": 256,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 5961,
+    "tracksCount": 1,
+    "search": "ringosheenahonnou",
     "local": false
   },
   {
@@ -144700,6 +146537,38 @@
     "shortId": 4017,
     "tracksCount": 1,
     "search": "smokiewhothefisalice",
+    "local": false
+  },
+  {
+    "id": "smolasty-doda-nim-zajdzie-slonce",
+    "title": "Nim Zajdzie Słońce",
+    "artist": "Smolasty & Doda",
+    "video": "uNVBBXa6CB8",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 364,
+    "gap": 1420.989010989011,
+    "year": "2023",
+    "lastUpdate": "2026-06-28T12:16:22.753Z",
+    "genre": "Hip-Hop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "mylordwaliza",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=201240",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30607",
+    "duration": 149,
+    "tracks": [
+      {
+        "start": 24
+      },
+      {
+        "start": 887
+      }
+    ],
+    "shortId": 5942,
+    "tracksCount": 2,
+    "search": "smolastydodanimzajdzieslonce",
     "local": false
   },
   {
@@ -156360,6 +158229,33 @@
     "shortId": 4326,
     "tracksCount": 1,
     "search": "theeagleshotelcalifornia",
+    "local": false
+  },
+  {
+    "id": "the-feelers-stand-up",
+    "title": "Stand Up",
+    "artist": "The Feelers",
+    "video": "ap7etFWLn-U",
+    "language": [
+      "English"
+    ],
+    "bpm": 315.48,
+    "gap": 12294.52149106124,
+    "year": "2005",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2026-06-30T13:24:34.961Z",
+    "genre": "Rock",
+    "realBpm": 78,
+    "volume": 70,
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 5963,
+    "tracksCount": 1,
+    "search": "thefeelersstandup",
     "local": false
   },
   {

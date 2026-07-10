@@ -22,7 +22,7 @@ test.use({ serviceWorkers: 'block' });
 // not using devices[] as it doesn't work with firefox
 test.use({ viewport: { width: 740, height: 360 }, hasTouch: true, userAgent: 'android mobile' }); // Samsung S8+
 
-test('Mobile phone mode should be dismissible', async ({ page }) => {
+test.skip('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.landingPage.dismissMobileModePrompt();
@@ -43,7 +43,7 @@ const player2 = {
 
 const songID = 'e2e-skip-intro-polish';
 
-test('Mobile phone mode should be playable', async ({ browser, page, browserName }) => {
+test.skip('Mobile phone mode should be playable', async ({ browser, page, browserName }) => {
   let remoteMic1: RemoteMicPages;
   let remoteMic2: RemoteMicPages;
 

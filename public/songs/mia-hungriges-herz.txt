@@ -1,0 +1,447 @@
+#ARTIST:MiA.
+#TITLE:Hungriges Herz
+#CREATOR:fepo
+#BPM:269,97
+#YEAR:2004
+#VIDEO:v=_FjRy2TiztE
+#GENRE:Pop
+#LANGUAGE:German
+#GAP:9149,888876541838
+#ALLKARAOKE_ID:mia-hungriges-herz
+#ALLKARAOKE_SID:5936
+#ALLKARAOKE_LASTUPDATE:2026-06-28T12:13:54.699Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=11659
+#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_DURATION:220
+#P1:Hungriges Herz
+#MP3:MiA. - Hungriges Herz.mp3
+: 18 3 0 Dein 
+: 23 3 2 zuc
+: 28 4 0 ker
+: 35 5 2 sü
+: 42 6 0 ßer 
+: 50 6 2 ro
+: 58 5 0 ter 
+: 66 7 2 Mund
+- 73
+: 82 3 -7 Lutscht 
+: 87 4 0 al
+: 93 3 -2 le 
+: 99 6 0 Wor
+: 107 4 -2 te 
+: 116 4 0 ku
+: 122 6 -2 gel
+: 130 6 0 rund
+- 136
+: 150 5 5 Selbst 
+: 157 3 4 im 
+: 162 8 5 Kampf 
+: 172 5 4 er
+: 179 6 5 ge
+: 187 6 4 ben 
+: 195 5 5 sich
+- 200
+: 215 2 2 Dei
+: 219 2 0 ne 
+: 223 2 0 Lip
+: 227 2 -2 pen 
+: 231 2 0 mei
+: 234 2 0 nen 
+: 238 8 0 nicht
+- 246 265
+- 265
+: 283 2 0 An 
+: 287 2 2 dei
+: 291 2 2 nen 
+: 295 2 2 glü
+: 299 2 0 hend 
+: 303 2 0 hei
+: 307 2 0 ßen 
+: 311 5 0 Wang
+: 318 3 -3 en
+- 321
+: 322 2 0 Ver
+: 326 2 0 brenn’ 
+: 330 2 0 ich 
+: 334 2 0 mei
+: 338 2 0 ne 
+: 342 7 0 Fing
+: 350 3 -3 er
+- 353 392
+- 392
+: 410 3 5 Selbst 
+: 415 2 5 wenn 
+: 419 2 5 du 
+: 423 2 5 mich 
+: 427 2 5 zu 
+: 431 3 5 Bo
+: 435 3 5 den 
+: 440 4 5 wirfst
+- 444
+: 447 3 0 Wähn’ 
+: 452 3 0 ich 
+: 458 3 0 mich 
+: 463 2 0 als 
+: 467 2 0 Ge
+: 471 2 0 win
+: 475 3 -3 ner
+- 478 512
+- 512
+: 530 3 0 Was 
+: 535 3 2 ist 
+: 540 4 0 mit 
+: 547 6 2 mei
+: 555 4 0 nem 
+: 562 7 2 Wil
+: 571 4 0 len 
+: 577 7 2 bloß
+- 584
+: 594 3 -5 Machst 
+: 599 3 0 mei
+: 604 3 -2 nen 
+: 611 6 0 Wil
+: 619 4 -2 len 
+: 626 7 0 wil
+: 635 5 -2 len
+: 642 6 0 los
+- 648
+: 650 4 4 Du 
+: 655 5 4 bist 
+: 671 4 5 eis, 
+: 718 5 2 eis
+: 726 5 0 kalt
+- 731 760
+- 760
+: 778 4 4 Du 
+: 783 7 4 bist 
+: 798 6 2 eis, 
+: 846 6 2 eis
+: 854 6 0 kalt
+- 860 895
+- 895
+: 913 5 5 Mein 
+: 920 9 9 hung
+: 931 11 7 ri
+: 944 4 5 ges 
+: 950 6 9 Herz 
+: 958 4 4 durch
+: 964 6 4 fährt 
+: 972 5 7 ein 
+: 979 6 7 bit
+: 987 5 5 ter
+: 994 6 5 sü
+: 1002 5 5 ßer 
+: 1009 13 5 Schmerz
+- 1022
+: 1038 2 4 Sag 
+: 1042 2 9 mir 
+: 1046 3 9 wie 
+: 1051 3 7 weit, 
+: 1058 3 9 wie 
+: 1063 3 7 weit, 
+: 1070 3 9 wie 
+: 1075 3 7 weit, 
+: 1082 3 9 wie 
+: 1087 3 7 weit
+- 1090
+: 1094 6 5 Willst 
+: 1102 3 4 du 
+: 1106 10 9 geh’n?
+- 1116 1148
+- 1148
+: 1166 7 5 Mein 
+: 1175 10 9 hung
+: 1187 9 7 ri
+: 1198 6 5 ges 
+: 1206 6 9 Herz 
+: 1214 3 7 durch
+: 1219 5 4 fährt 
+: 1227 6 7 ein 
+: 1236 5 7 bit
+: 1243 5 5 ter
+: 1250 6 5 sü
+: 1258 5 5 ßes 
+: 1265 14 5 Schwert
+- 1279
+: 1294 3 5 Sag 
+: 1298 3 9 nur 
+: 1303 3 9 wie 
+: 1307 5 7 weit, 
+: 1314 3 9 wie 
+: 1318 5 7 weit, 
+: 1325 3 9 wie 
+: 1330 5 7 weit, 
+: 1337 3 9 wie 
+: 1342 6 7 weit
+- 1348
+: 1350 7 4 Wirst 
+: 1359 2 7 du 
+: 1363 8 5 geh’n?
+- 1371 1477
+- 1477
+: 1495 3 2 Dei
+: 1499 4 0 ne 
+: 1507 5 2 Au
+: 1514 4 0 gen 
+: 1523 7 2 seh’n 
+: 1532 5 0 durch 
+: 1539 5 2 mich 
+: 1546 6 0 durch
+- 1552
+: 1558 3 2 Je
+: 1563 6 0 mand 
+: 1571 5 0 an
+: 1578 5 -3 d’ren 
+: 1586 6 0 an
+- 1592 1601
+- 1601
+: 1619 3 -3 Wenn 
+: 1623 3 -2 dei
+: 1627 3 -3 ne 
+: 1635 6 -2 Hän
+: 1643 3 -3 de 
+: 1650 6 -2 mich 
+: 1658 3 -3 be
+: 1662 5 -2 rühr’n
+- 1667
+: 1682 2 1 Ver
+: 1685 3 0 fol
+: 1690 3 0 gen 
+: 1695 2 -3 sie 
+: 1699 2 -2 ei
+: 1702 2 -3 nen 
+: 1706 8 0 Plan
+- 1714 1726
+- 1726
+: 1744 5 4 Mit 
+: 1751 4 5 dei
+: 1756 4 4 ner 
+: 1762 7 5 rau
+: 1771 5 4 en 
+: 1779 6 5 En
+: 1787 4 4 gels
+: 1793 7 5 zung
+: 1802 4 4 e
+- 1806
+: 1815 5 5 Dringst 
+: 1822 3 0 du 
+: 1827 3 0 in 
+: 1833 3 -2 mi
+: 1837 3 0 ~ch 
+: 1842 4 0 ein
+- 1846 1856
+- 1856
+: 1874 3 2 Du 
+: 1878 5 5 hältst 
+: 1884 4 -2 mich 
+* 1890 6 2 fest, 
+* 1898 5 0 was 
+* 1905 6 2 soll 
+: 1914 5 0 das 
+: 1922 9 2 bloß
+- 1931
+: 1937 3 -3 Drück’ 
+: 1942 2 0 ich 
+: 1946 3 -3 zu
+: 1951 4 0 rück, 
+: 1970 2 -3 lässt 
+: 1974 2 0 du 
+: 1978 2 -3 mich 
+: 1982 8 0 los
+- 1990
+: 1995 3 4 Du 
+: 2000 5 4 bist 
+: 2013 8 2 eis, 
+: 2062 5 2 eis
+: 2070 7 0 kalt
+- 2077 2104
+- 2104
+: 2122 3 4 Du 
+: 2127 5 4 bist 
+: 2142 6 4 eis, 
+: 2190 5 0 eis
+: 2198 4 -2 kalt
+- 2202 2236
+- 2236
+: 2254 6 5 Mein 
+: 2262 11 9 hung
+: 2275 8 7 ri
+: 2286 5 5 ges 
+: 2294 6 9 Herz 
+: 2302 4 7 durch
+: 2307 5 4 fährt 
+: 2314 3 5 ei
+: 2318 3 7 ~n 
+: 2323 5 7 bit
+: 2330 5 5 ter
+: 2338 5 4 sü
+: 2345 5 5 ßer 
+: 2353 12 5 Schmerz
+- 2365
+: 2381 4 5 Sag 
+: 2386 3 9 mir 
+: 2390 4 9 wie 
+: 2395 4 7 weit, 
+: 2402 3 9 wie 
+: 2406 4 7 weit, 
+: 2414 3 9 wie 
+: 2418 4 7 weit, 
+: 2426 3 9 wie 
+: 2430 4 7 weit
+- 2434
+: 2438 6 4 Willst 
+: 2446 4 5 du 
+: 2451 9 9 geh’n?
+- 2460 2492
+- 2492
+: 2510 6 5 Mein 
+: 2519 11 9 hung
+: 2532 8 7 ri
+: 2543 5 7 ges 
+: 2551 5 9 Herz 
+: 2558 4 7 durch
+: 2563 6 4 fährt 
+: 2572 5 7 ein 
+: 2579 6 9 bit
+: 2587 5 5 ter
+: 2594 5 5 sü
+: 2601 6 7 ßes 
+: 2609 11 5 Schwert
+- 2620
+: 2638 3 5 Sag 
+: 2642 3 9 nur 
+: 2647 3 9 wie 
+: 2651 4 7 weit, 
+: 2658 3 9 wie 
+: 2662 5 7 weit, 
+: 2670 3 9 wie 
+: 2674 5 7 weit, 
+: 2682 3 9 wie 
+: 2686 5 7 weit
+- 2691
+: 2694 5 9 Wirst 
+: 2701 3 7 du 
+: 2706 7 5 geh’n?
+- 2713 2748
+- 2748
+: 2766 4 5 Sag 
+: 2771 2 9 nur 
+: 2775 2 9 wie 
+: 2778 4 7 weit, 
+: 2786 3 9 wie 
+: 2790 5 7 weit, 
+: 2797 3 9 wie 
+: 2802 6 7 weit, 
+: 2810 3 9 wie 
+: 2815 5 7 weit, 
+: 2823 3 9 wie 
+: 2827 5 7 weit, 
+: 2834 3 9 wie 
+: 2839 5 7 weit
+- 2844
+: 2847 3 9 Wie 
+: 2851 4 7 weit, 
+: 2859 3 9 wie 
+: 2863 4 7 weit, 
+: 2871 3 9 wie 
+: 2875 4 7 weit, 
+: 2883 3 9 wie 
+: 2887 5 7 weit
+- 2892
+: 2894 3 5 Sag 
+: 2898 3 9 nur 
+* 2903 3 9 wie 
+* 2908 4 7 weit, 
+* 2915 3 9 wie 
+* 2920 4 7 weit, 
+* 2927 3 9 wie 
+* 2932 4 7 weit, 
+: 2939 3 9 wie 
+: 2943 4 7 weit
+- 2947
+: 2950 6 4 Wirst 
+: 2959 2 4 du 
+: 2963 10 9 geh’n?
+- 2973 3005
+- 3005
+: 3023 3 5 Sag 
+: 3027 3 9 mir 
+: 3031 3 9 wie 
+: 3035 4 7 weit, 
+: 3043 3 9 wie 
+: 3047 5 7 weit, 
+: 3055 3 9 wie 
+: 3059 6 7 weit, 
+: 3067 3 9 wie 
+: 3072 5 7 weit, 
+: 3079 3 9 wie 
+: 3084 5 7 weit, 
+: 3091 3 9 wie 
+: 3096 5 7 weit
+- 3101
+: 3102 3 9 Wie 
+: 3106 4 7 weit, 
+: 3114 3 9 wie 
+: 3118 4 7 weit, 
+: 3126 3 9 wie 
+: 3130 4 7 weit, 
+: 3138 3 9 wie 
+: 3142 5 7 weit
+- 3147
+: 3151 3 5 Sag 
+: 3155 3 9 mir 
+: 3159 3 9 wie 
+: 3164 4 7 weit, 
+: 3171 3 9 wie 
+: 3176 4 7 weit, 
+: 3183 3 9 wie 
+: 3188 4 7 weit, 
+: 3195 3 9 wie 
+: 3199 4 7 weit
+- 3203
+: 3206 6 4 Wirst 
+: 3215 2 4 du 
+: 3219 31 9 geh’n?
+- 3250 3260
+- 3260
+: 3278 3 5 Sag 
+: 3282 3 9 mir 
+: 3286 3 9 wie 
+: 3290 4 7 weit, 
+: 3298 3 9 wie 
+: 3302 5 7 weit, 
+: 3310 3 9 wie 
+: 3314 6 7 weit, 
+: 3322 3 9 wie 
+: 3327 5 7 weit, 
+: 3334 3 9 wie 
+: 3339 5 7 weit, 
+: 3346 3 9 wie 
+: 3351 5 7 weit
+- 3356
+: 3359 3 9 Wie 
+: 3364 4 7 weit, 
+: 3371 3 9 wie 
+: 3376 4 7 weit, 
+: 3383 3 9 wie 
+: 3388 4 7 weit, 
+: 3395 3 9 wie 
+: 3400 4 7 weit, 
+: 3407 3 9 wie 
+: 3412 4 7 weit, 
+: 3419 3 9 wie 
+: 3424 4 7 weit, 
+: 3430 3 9 wie 
+: 3435 4 7 weit
+- 3439
+: 3442 3 9 Wie 
+: 3447 6 7 weit, 
+: 3455 3 9 wie 
+: 3459 6 7 weit 
+: 3469 4 9 willst 
+: 3475 2 7 du 
+: 3479 10 5 geh’n?
+E
