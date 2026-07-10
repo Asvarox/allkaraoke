@@ -1,8 +1,9 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Note, PlayerNote } from '~/interfaces';
 import { SpriteNames } from '~/modules/game-engine/drawing/elements/cache/sprite-map';
 import drawSpriteWithStartAndEnd from '~/modules/game-engine/drawing/elements/sprite-with-start-and-end';
 
-const getSpriteName = (playerNumber: 0 | 1 | 2 | 3, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
+const getSpriteName = (playerNumber: PlayerNumber, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
   let spriteName = `p${playerNumber}`;
   if (isPerfect && isStar) {
     spriteName = `${spriteName}StarPerfect`;
@@ -28,7 +29,7 @@ export default function drawPlayerNote(
   x: number,
   y: number,
   width: number,
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   isHit: boolean,
   playerNote: PlayerNote,
 ) {

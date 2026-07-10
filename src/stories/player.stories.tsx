@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 /* eslint-disable storybook/context-in-play-function */
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { ComponentProps, useEffect, useRef } from 'react';
@@ -44,7 +45,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const singSetup: SingSetup = {
     tolerance: args.tolerance,
-    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as PlayerNumber, track: 0 })),
     id: 'storybook-id',
     mode: args.gameMode,
   };

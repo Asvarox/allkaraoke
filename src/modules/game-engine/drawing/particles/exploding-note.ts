@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import tinycolor from 'tinycolor2';
 import { Note } from '~/interfaces';
 import Particle from '../interfaces';
@@ -12,7 +13,7 @@ export default class ExplodingNoteParticle implements Particle {
     x: number,
     y: number,
     width: number,
-    playerNumber: 0 | 1 | 2 | 3,
+    playerNumber: PlayerNumber,
     note: Note,
     particleManager: typeof ParticleManager,
   ) {

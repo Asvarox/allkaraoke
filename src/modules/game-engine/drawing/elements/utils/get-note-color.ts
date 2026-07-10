@@ -1,9 +1,10 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerNote } from '~/interfaces';
 import styles from '../../styles';
 
 export function getColor(
   _ctx: CanvasRenderingContext2D,
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   isStar: boolean,
   isHit: boolean,
   isPerfect: boolean,
@@ -23,7 +24,7 @@ export function getColor(
 
 export default function getNoteColor(
   ctx: CanvasRenderingContext2D,
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   isHit: boolean,
   playerNote: PlayerNote,
 ) {

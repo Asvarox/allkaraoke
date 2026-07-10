@@ -1,10 +1,11 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import { PlayerEntity } from '~/modules/players/players-manager';
 import PlayerStatus from './status';
 
 interface Props {
-  playerIndex: 0 | 1 | 2 | 3;
+  playerIndex: PlayerNumber;
   player: PlayerEntity | undefined;
 }
 

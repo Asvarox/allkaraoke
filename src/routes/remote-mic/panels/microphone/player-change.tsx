@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { memo, useState } from 'react';
 import { BottomSheet } from '~/modules/elements/akui/bottom-sheet';
@@ -9,7 +10,7 @@ import PlayerChangeModal from '~/routes/remote-mic/components/player-change-moda
 import PlayerNumberCircle from '~/routes/remote-mic/components/player-number-circle';
 
 interface Props {
-  playerNumber: 0 | 1 | 2 | 3 | null;
+  playerNumber: PlayerNumber | null;
 }
 
 export default memo(function PlayerChange({ playerNumber }: Props) {

@@ -1,5 +1,3 @@
-import { SubscriptionChannels } from '../client/subscriptions';
-
 /** Context passed to every server-side handler, scoped to the calling peer. */
 export interface RpcContext {
   senderId: string;
@@ -38,6 +36,10 @@ export type ExtractContract<T extends HandlerMap> = {
   };
 };
 
+/** Map of channel name → data type pushed on that channel. Each feature (remote-mic, online)
+ * supplies its own map so the RPC core stays feature-agnostic. */
+export type AnySubscriptionChannels = Record<string, unknown>;
+
 // --- Wire message types ---
 
 /** Client → Server: invoke a server handler. */
@@ -65,22 +67,28 @@ export interface RpcCall {
 }
 
 /** Client → Server: subscribe to a named push channel. */
-export interface RpcSubscribe {
+export interface RpcSubscribe<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {
   t: 'rpc-sub';
-  channel: keyof SubscriptionChannels;
+  channel: keyof TChannels;
 }
 
 /** Server → Client: push updated data to all subscribers of a channel. */
-export interface RpcPublish {
+export interface RpcPublish<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {
   t: 'rpc-pub';
-  channel: keyof SubscriptionChannels;
-  data: SubscriptionChannels[keyof SubscriptionChannels];
+  channel: keyof TChannels;
+  data: TChannels[keyof TChannels];
 }
 
 /** Client → Server: unsubscribe from a named push channel. */
-export interface RpcUnsubscribe {
+export interface RpcUnsubscribe<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {
   t: 'rpc-unsub';
-  channel: keyof SubscriptionChannels;
+  channel: keyof TChannels;
 }
 
-export type RpcMessages = RpcRequest | RpcResponse | RpcCall | RpcSubscribe | RpcPublish | RpcUnsubscribe;
+export type RpcMessages<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> =
+  | RpcRequest
+  | RpcResponse
+  | RpcCall
+  | RpcSubscribe<TChannels>
+  | RpcPublish<TChannels>
+  | RpcUnsubscribe<TChannels>;

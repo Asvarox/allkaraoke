@@ -1,7 +1,14 @@
 import { v4 as uuid } from 'uuid';
-import { ClientTransport } from '~/modules/remote-mic/network/client/transport/interface';
-import { NetworkMessages } from '~/modules/remote-mic/network/messages';
 import { ExtractContract, HandlerMap, RpcRequest, RpcResponse } from './types';
+
+/** Minimal transport shape the RPC proxy needs. remote-mic's ClientTransport and the online
+ * room transport both satisfy it structurally, each with their own message unions. */
+export interface RpcClientTransport {
+  isConnected(): boolean;
+  addListener(listener: (message: any) => void): unknown;
+  removeListener(listener: (message: any) => void): void;
+  sendEvent(message: any): void;
+}
 
 /**
  * Creates a namespaced proxy that mirrors the server handler contract.
@@ -14,7 +21,7 @@ import { ExtractContract, HandlerMap, RpcRequest, RpcResponse } from './types';
  *   callback fires (e.g. when they already resolved via rpc-res).
  */
 export function createRpcProxy<T extends HandlerMap>(
-  getTransport: () => ClientTransport | undefined,
+  getTransport: () => RpcClientTransport | undefined,
   onDisconnect: (callback: () => void) => () => void,
 ): ExtractContract<T> {
   return new Proxy({} as ExtractContract<T>, {
@@ -42,7 +49,7 @@ export function createRpcProxy<T extends HandlerMap>(
                   reject(new Error(`Transport disconnected during RPC: ${ns}.${method}`));
                 });
 
-                const listener = (event: NetworkMessages) => {
+                const listener = (event: any) => {
                   if (event.t === 'rpc-res' && (event as RpcResponse).id === id) {
                     cleanup();
                     const response = event as RpcResponse;
@@ -64,7 +71,7 @@ export function createRpcProxy<T extends HandlerMap>(
 
                 const request: RpcRequest = { t: 'rpc', ns, method, args, id };
                 try {
-                  transport.sendEvent(request as NetworkMessages);
+                  transport.sendEvent(request);
                 } catch (err) {
                   cleanup();
                   reject(err instanceof Error ? err : new Error(String(err)));

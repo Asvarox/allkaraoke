@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import tinycolor from 'tinycolor2';
 import GoldTriangle from '~/modules/game-engine/drawing/particles/gold-triangle';
 import { randomInt } from '~/modules/utils/random-value';
@@ -12,7 +13,7 @@ export default class GoldNoteParticle implements Particle {
     x: number,
     y: number,
     width: number,
-    playerNumber: 0 | 1 | 2 | 3,
+    playerNumber: PlayerNumber,
     particleManager: typeof ParticleManager,
   ) {
     const color = styles.colors.players[playerNumber].starPerfect.fill;

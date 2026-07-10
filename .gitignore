@@ -143,3 +143,4 @@ storybook-static/
 /build-storybook.log
 
 .playwright-cli/
+.partykit

@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { BIG_NOTE_HEIGHT, NOTE_HEIGHT } from '~/modules/game-engine/drawing/calculate-data';
 import drawRawNote from '~/modules/game-engine/drawing/elements/cache/elements/note';
 import drawRawPlayerNote from '~/modules/game-engine/drawing/elements/cache/elements/player-note';
@@ -27,7 +28,7 @@ export const bigNoteFragments = {
 };
 
 const getPlayerSprite = (
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   isHit: boolean,
   isPerfect: boolean,
   isStar: boolean,
@@ -41,7 +42,7 @@ const getPlayerSprite = (
   fragments: isBig ? bigNoteFragments : smallNoteFragments,
 });
 
-type PlayerSpriteNames = `p${0 | 1 | 2 | 3}${
+type PlayerSpriteNames = `p${PlayerNumber}${
   | 'Normal'
   | 'Miss'
   | 'Hit'
@@ -50,7 +51,7 @@ type PlayerSpriteNames = `p${0 | 1 | 2 | 3}${
   | 'StarHit'
   | 'StarPerfect'}`;
 
-const getAllPlayerSprites = (playerNumber: 0 | 1 | 2 | 3) =>
+const getAllPlayerSprites = (playerNumber: PlayerNumber) =>
   ({
     [`p${playerNumber}Normal`]: {
       draw: (ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number) =>

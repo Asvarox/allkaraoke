@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
 import { ValuesType } from 'utility-types';
@@ -15,6 +16,8 @@ interface StoryArgs {
   player1Score: number;
   player2Score: number;
   player3Score: number;
+  player4Score: number;
+  player5Score: number;
   gameMode: ValuesType<typeof GAME_MODE>;
 }
 
@@ -28,11 +31,13 @@ export default {
       control: 'radio',
       options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP],
     },
-    playerNum: { control: { type: 'range', min: 1, max: 4, step: 1 } },
+    playerNum: { control: { type: 'range', min: 1, max: 6, step: 1 } },
     player0Score: { control: 'range', min: 0, max: 100 },
     player1Score: { control: 'range', min: 0, max: 100 },
     player2Score: { control: 'range', min: 0, max: 100 },
     player3Score: { control: 'range', min: 0, max: 100 },
+    player4Score: { control: 'range', min: 0, max: 100 },
+    player5Score: { control: 'range', min: 0, max: 100 },
   },
   args: {
     gameMode: GAME_MODE.DUEL,
@@ -41,6 +46,8 @@ export default {
     player1Score: 69,
     player2Score: 70,
     player3Score: 71,
+    player4Score: 72,
+    player5Score: 73,
   },
   parameters: {
     layout: 'fullscreen',
@@ -54,7 +61,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const singSetup: SingSetup = {
     tolerance: 2,
-    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as PlayerNumber, track: 0 })),
     id: 'storybook-id',
     mode: args.gameMode,
   };
@@ -73,7 +80,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const maxScores = beatsToPoints(maxPoints, pointsPerBeat);
   const players: PlayerScore[] = new Array(args.playerNum).fill(0).map((_t, i) => {
-    const playerNum = i as 0 | 1 | 2 | 3;
+    const playerNum = i as PlayerNumber;
 
     return {
       name: `Player #${i + 1}`,

@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import events from '~/modules/game-events/game-events';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
@@ -95,7 +96,7 @@ export const serverHandlers = {
   },
 
   players: {
-    requestMicSelect: defineMutation((_ctx: RpcContext, id: string, playerNumber: 0 | 1 | 2 | 3 | null) => {
+    requestMicSelect: defineMutation((_ctx: RpcContext, id: string, playerNumber: PlayerNumber | null) => {
       events.playerChangeRequested.dispatch(id, playerNumber);
     }),
 

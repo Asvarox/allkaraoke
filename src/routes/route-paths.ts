@@ -9,6 +9,8 @@ const routePaths = {
   QUICK_SETUP: 'quick-setup',
   GAME: 'game',
   MENU: 'menu',
+  // Room code travels via the `room` query param to avoid dynamic-segment prerender/404 handling
+  ONLINE: 'online',
   JUKEBOX: 'jukebox',
   HISTORY: 'history',
   SELECT_INPUT: 'select-input',

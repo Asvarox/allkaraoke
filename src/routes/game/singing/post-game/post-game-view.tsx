@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useState } from 'react';
 import { DetailedScore, SingSetup, Song } from '~/interfaces';
 import { GameTip } from '~/modules/elements/game-tip';
@@ -9,7 +10,7 @@ import HighScoresView from './views/high-scores';
 
 export interface PlayerScore {
   detailedScore: [DetailedScore, DetailedScore];
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   name: string;
 }
 

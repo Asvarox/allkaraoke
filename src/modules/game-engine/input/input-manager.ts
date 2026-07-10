@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
 import dummyInput from '~/modules/game-engine/input/dummy-input';
 import InputInterface from '~/modules/game-engine/input/interface';
@@ -22,7 +23,7 @@ class InputManager {
     });
   }
 
-  public getInputStatus = (playerNumber: 0 | 1 | 2 | 3) => {
+  public getInputStatus = (playerNumber: PlayerNumber) => {
     const player = PlayersManager.getPlayer(playerNumber);
     if (!player) return 'unavailable';
 
@@ -31,7 +32,7 @@ class InputManager {
     return source.getStatus(player.input.deviceId, player.input.channel);
   };
 
-  public getPlayerFrequency = (playerNumber: 0 | 1 | 2 | 3) => {
+  public getPlayerFrequency = (playerNumber: PlayerNumber) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     // Player got removed
     if (!input) return 0;
@@ -41,7 +42,7 @@ class InputManager {
     return frequencies[input.channel];
   };
 
-  public clearPlayerCachedFrequencies = (playerNumber: 0 | 1 | 2 | 3) => {
+  public clearPlayerCachedFrequencies = (playerNumber: PlayerNumber) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     // Player got removed
     if (!input) return 0;
@@ -49,7 +50,7 @@ class InputManager {
     this.sourceNameToInput(input.source).clearFrequencies(input.deviceId);
   };
 
-  public getPlayerVolume = (playerNumber: 0 | 1 | 2 | 3) => {
+  public getPlayerVolume = (playerNumber: PlayerNumber) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     if (!input) {
       return 0;
@@ -59,7 +60,7 @@ class InputManager {
     return volumes[input.channel];
   };
 
-  public getPlayerInputLag = (playerNumber: 0 | 1 | 2 | 3) => {
+  public getPlayerInputLag = (playerNumber: PlayerNumber) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     if (!input) {
       return 0;

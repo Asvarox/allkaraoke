@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Curtains, Plane, PlaneParams } from 'curtainsjs';
 import GameState from '~/modules/game-engine/game-state/game-state';
 
@@ -72,17 +73,17 @@ export class Shaders {
     this.canvas.style.visibility = 'hidden';
   }
 
-  public updatePlayerCenter = (playerNumber: 0 | 1 | 2 | 3, x: number, y: number) => {
+  public updatePlayerCenter = (playerNumber: PlayerNumber, x: number, y: number) => {
     if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}center`].value = [x / this.canvas.width, 1 - y / this.canvas.height];
   };
 
-  public updatePlayerForce = (playerNumber: 0 | 1 | 2 | 3, force: number) => {
+  public updatePlayerForce = (playerNumber: PlayerNumber, force: number) => {
     if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}force`].value = force;
   };
 
-  public getPlayerForce = (playerNumber: 0 | 1 | 2 | 3) => {
+  public getPlayerForce = (playerNumber: PlayerNumber) => {
     if (!this.plane) return;
     return this.plane.uniforms[`p${playerNumber}force`].value as number;
   };

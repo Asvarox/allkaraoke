@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import posthog from 'posthog-js';
 import { SingSetup, Song, SongPreview } from '~/interfaces';
 import { PlayerEntity, SelectedPlayerInput } from '~/modules/players/players-manager';
@@ -40,7 +41,7 @@ export class GameEvent<T extends (...args: any[]) => void> {
 }
 
 export const events = {
-  sectionChange: new GameEvent<(player: 0 | 1 | 2 | 3, previousSectionIndex: number) => void>(
+  sectionChange: new GameEvent<(player: PlayerNumber, previousSectionIndex: number) => void>(
     'sectionChange',
     false,
     false,
@@ -48,7 +49,7 @@ export const events = {
   // newPlayerNote: new GameEvent<(player: 0 | 1 |2 | 3, playerNote: PlayerNote) => void>('//', true),
   // playerNoteUpdate: new GameEvent<(player: 0 | 1 |2 | 3, playerNote: PlayerNote) => void>('//', true),
 
-  playerAdded: new GameEvent<(playerNumber: 0 | 1 | 2 | 3) => void>('playerAdded', false),
+  playerAdded: new GameEvent<(playerNumber: PlayerNumber) => void>('playerAdded', false),
   playerRemoved: new GameEvent<(player: PlayerEntity) => void>('playerRemoved', false),
 
   songStarted: new GameEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', false),
@@ -67,12 +68,12 @@ export const events = {
   remoteMicDisconnected: new GameEvent<(remoteMic: { id: string; name: string }, silent: boolean) => void>(
     'remoteMicDisconnected',
   ),
-  playerNameChanged: new GameEvent<(playerNumber: 0 | 1 | 2 | 3, oldName: string | undefined) => void>(
+  playerNameChanged: new GameEvent<(playerNumber: PlayerNumber, oldName: string | undefined) => void>(
     'playerNameChanged',
   ),
   playerInputChanged: new GameEvent<
     (
-      playerNumber: 0 | 1 | 2 | 3,
+      playerNumber: PlayerNumber,
       oldInput: SelectedPlayerInput | undefined,
       newInput: SelectedPlayerInput | undefined,
     ) => void
@@ -85,13 +86,13 @@ export const events = {
       e?: transportErrorReason,
     ) => void
   >('karaokeConnectionStatusChange'),
-  remoteMicPlayerSet: new GameEvent<(playerNumber: 0 | 1 | 2 | 3 | null) => void>('remoteMicPlayerSet'),
+  remoteMicPlayerSet: new GameEvent<(playerNumber: PlayerNumber | null) => void>('remoteMicPlayerSet'),
   remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),
   remoteMicMonitoringStopped: new GameEvent('remoteMicMonitoringStopped'),
 
   micMonitoringStarted: new GameEvent('micMonitoringStarted'),
   micMonitoringStopped: new GameEvent('micMonitoringStopped'),
-  playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: 0 | 1 | 2 | 3 | null) => void>(
+  playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: PlayerNumber | null) => void>(
     'playerChangeRequested',
     true,
   ),

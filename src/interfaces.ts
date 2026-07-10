@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { ValuesType } from 'utility-types';
 import { typesMap } from '~/modules/songs/utils/convert-txt-to-song';
 
@@ -34,7 +35,7 @@ export const GAME_MODE = {
 
 export interface PlayerSetup {
   track: number;
-  number: 0 | 1 | 2 | 3;
+  number: PlayerNumber;
 }
 
 export interface SingSetup {

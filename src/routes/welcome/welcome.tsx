@@ -35,6 +35,9 @@ function Welcome() {
           <SmoothLink to="game/">
             <Menu.Button {...register('sing-a-song', () => navigate('game/'))}>Sing a song</Menu.Button>
           </SmoothLink>
+          <SmoothLink to="online/">
+            <Menu.Button {...register('online', () => navigate('online/'))}>Sing Online</Menu.Button>
+          </SmoothLink>
           <SmoothLink to="select-input/">
             <Menu.Button {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</Menu.Button>
           </SmoothLink>

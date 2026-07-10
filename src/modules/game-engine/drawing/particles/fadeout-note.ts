@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Note } from '~/interfaces';
 import drawNote from '../elements/note';
 import Particle from '../interfaces';
@@ -13,7 +14,7 @@ export default class FadeoutNote implements Particle {
     private y: number,
     private width: number,
     private note: Note,
-    private playerNumber: 0 | 1 | 2 | 3,
+    private playerNumber: PlayerNumber,
   ) {}
 
   public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {

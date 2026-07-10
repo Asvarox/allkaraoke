@@ -124,6 +124,13 @@ const config: PlaywrightTestConfig = {
           reuseExistingServer: true,
         }
       : undefined,
+    {
+      // Online-mode room server (standalone PartyKit project, see partykit.json)
+      command: 'pnpm exec partykit dev --port 1999',
+      port: 1999,
+      timeout: 60_000 * 3,
+      reuseExistingServer: true,
+    },
     // {
     //   command: 'pnpm peerjs',
     //   port: 3001,

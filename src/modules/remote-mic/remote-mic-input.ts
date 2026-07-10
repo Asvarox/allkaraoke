@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import events from '~/modules/game-events/game-events';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
 import { SenderInterface } from '~/modules/remote-mic/network/server/transport/interface';
@@ -120,7 +121,7 @@ export class RemoteMic {
 
   public getInput = () => this.input;
 
-  public setPlayerNumber = (playerNumber: 0 | 1 | 2 | 3 | null) => {
+  public setPlayerNumber = (playerNumber: PlayerNumber | null) => {
     sendRpcCall(this.connection, 'setPlayerNumber', [playerNumber]);
   };
 

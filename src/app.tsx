@@ -31,6 +31,7 @@ const LazySongList = lazy(() =>
   import('~/routes/manage-songs/song-management').then((modules) => ({ default: modules.SongList })),
 );
 const LazyAdmin = lazy(() => import('~/routes/admin/admin'));
+const LazyOnline = lazy(() => import('~/routes/online/online'));
 const LazyHistory = lazy(() => import('~/routes/history/history-page'));
 const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) => ({ default: modules.default })));
 
@@ -85,6 +86,14 @@ function App() {
                   {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
                   <Game />
                 </Route>
+                <Route
+                  path={routePaths.ONLINE}
+                  component={() => (
+                    <Suspense fallback={<PageLoader />}>
+                      <LazyOnline />
+                    </Suspense>
+                  )}
+                />
                 <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
                 <Route path={routePaths.SETTINGS} component={Settings} />
                 <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />

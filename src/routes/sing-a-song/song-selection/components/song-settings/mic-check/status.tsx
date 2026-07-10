@@ -1,10 +1,11 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { ComponentProps } from 'react';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import Ping from './ping';
 
 interface Props extends ComponentProps<'div'> {
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   tooltipPosition?: 'start' | 'end';
 }
 

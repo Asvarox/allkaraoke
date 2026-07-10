@@ -1,8 +1,9 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import getPlayerScoreData from '~/routes/game/singing/game-overlay/helpers/get-player-score-data';
 
 describe('getPlayerScoreData', () => {
   it('should return isFirst = true if the player has the biggest score', () => {
-    const scores: [0 | 1 | 2 | 3, number][] = [
+    const scores: [PlayerNumber, number][] = [
       [3, 1],
       [2, 5],
       [1, 3],
@@ -13,7 +14,7 @@ describe('getPlayerScoreData', () => {
     expect(result.isFirst).toBe(true);
   });
   it('should return isFirst = false if the player has not the biggest score', () => {
-    const scores: [0 | 1 | 2 | 3, number][] = [
+    const scores: [PlayerNumber, number][] = [
       [3, 1],
       [2, 5],
       [1, 3],
@@ -24,7 +25,7 @@ describe('getPlayerScoreData', () => {
     expect(result.isFirst).toBe(false);
   });
   it('should return isFirst = false if there are 2 players with the biggest score', () => {
-    const scores: [0 | 1 | 2 | 3, number][] = [
+    const scores: [PlayerNumber, number][] = [
       [3, 1],
       [2, 5],
       [1, 10],

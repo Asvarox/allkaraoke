@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import createPersistedState from 'use-persisted-state';
@@ -10,6 +11,7 @@ import InputManager from '~/modules/game-engine/input/input-manager';
 import gameEvents from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
 import PlayersManager from '~/modules/players/players-manager';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/is-dev';
@@ -47,8 +49,16 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
   const [rememberedMode, setMode] = useSetGameMode(null);
-  const mode = rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL);
+  const online = useOnlineSongSelection();
+  // Online play only supports Duel for now
+  const mode = online
+    ? GAME_MODE.DUEL
+    : (rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL));
   const [tolerance, setTolerance] = useSetTolerance(1);
+
+  useEffect(() => {
+    online?.onPreviewSettingsChange(songPreview, difficultyNames[tolerance]);
+  }, [songPreview, tolerance, online]);
 
   const players = PlayersManager.getPlayers();
   const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
@@ -80,7 +90,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
   const changeMode = () => setMode(nextValue(Object.values(GAME_MODE), mode));
   const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
 
-  const toggleTrack = (playerNumber: 0 | 1 | 2 | 3) => () =>
+  const toggleTrack = (playerNumber: PlayerNumber) => () =>
     setPlayerSetup((current) =>
       current.map((s) => (s.number === playerNumber ? { ...s, track: (s.track + 1) % songPreview.tracksCount } : s)),
     );
@@ -112,7 +122,8 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
         className="w-full"
       />
       <Switcher
-        {...register('game-mode-setting', changeMode, 'Change mode')}
+        {...(online ? {} : register('game-mode-setting', changeMode, 'Change mode'))}
+        {...(online ? { 'data-test': 'game-mode-setting' } : {})}
         label="Mode"
         value={gameModeNames[mode]}
         data-test-value={gameModeNames[mode]}
@@ -127,7 +138,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
               key={player.number}
               {...register(
                 `player-${player.number}-track-setting`,
-                toggleTrack(player.number as 0 | 1 | 2 | 3),
+                toggleTrack(player.number as PlayerNumber),
                 'Change track',
               )}
               label={`P${index + 1} Track`}
@@ -138,13 +149,15 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
           );
         })}
       {multipleTracks && <hr />}
-      <Button
-        {...register('select-inputs-button', () => setShowModal(true), undefined, false)}
-        className="mobile:px-6"
-        size="small">
-        Setup mics
-      </Button>
-      {areInputsConfigured && (
+      {!online && (
+        <Button
+          {...register('select-inputs-button', () => setShowModal(true), undefined, false)}
+          className="mobile:px-6"
+          size="small">
+          Setup mics
+        </Button>
+      )}
+      {(areInputsConfigured || online !== null) && (
         <Button
           size="large"
           {...register('play-song-button', handlePlay, undefined, true)}

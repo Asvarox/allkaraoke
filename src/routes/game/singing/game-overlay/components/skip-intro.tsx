@@ -14,9 +14,11 @@ import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/setti
 interface Props {
   playerRef: MutableRefObject<VideoPlayerRef | null>;
   isEnabled: boolean;
+  /** Overrides the local seek — online mode routes the skip through the room server instead. */
+  onSkip?: (targetTimeSec: number) => void;
 }
 
-function SkipIntro({ playerRef, isEnabled }: Props) {
+function SkipIntro({ playerRef, isEnabled, onSkip }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const song = GameState.getSong()!;
   const hasLongIntro = useMemo(() => songHasLongIntro(song), [song]);
@@ -26,7 +28,12 @@ function SkipIntro({ playerRef, isEnabled }: Props) {
   const canSkip = isEnabled && shouldBeVisible && hasLongIntro;
 
   const skipIntro = () => {
-    playerRef.current?.seekTo(getSkipIntroTime(song));
+    const target = getSkipIntroTime(song);
+    if (onSkip) {
+      onSkip(target);
+    } else {
+      playerRef.current?.seekTo(target);
+    }
 
     const { artist, title } = GameState.getSong()!;
     posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });

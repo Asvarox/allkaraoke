@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { FrequencyRecord, NotesSection, PlayerNote, songBeat } from '~/interfaces';
 import { GameStateClass } from '~/modules/game-engine/game-state/game-state';
 import { appendFrequencyToPlayerNotes } from '~/modules/game-engine/game-state/helpers/append-frequency-to-player-notes';
@@ -18,7 +19,7 @@ class PlayerState {
   private storedSectionIndex = 0;
 
   public constructor(
-    private number: 0 | 1 | 2 | 3,
+    private number: PlayerNumber,
     private gameState: GameStateClass,
   ) {
     this.getTrack()

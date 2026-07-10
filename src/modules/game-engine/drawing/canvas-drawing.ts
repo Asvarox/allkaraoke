@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { captureException } from '@sentry/react';
 import bezier from 'bezier-easing';
 import { noDistanceNoteTypes } from '~/consts';
@@ -107,7 +108,7 @@ export default class CanvasDrawing {
 
   private currentPlayerNotes: Record<number, Note> = {};
 
-  private drawPlayer = (playerNumber: 0 | 1 | 2 | 3, ctx: CanvasRenderingContext2D) => {
+  private drawPlayer = (playerNumber: PlayerNumber, ctx: CanvasRenderingContext2D) => {
     // Skip rendering if playerState is undefined
     const playerState = GameState.getPlayer(playerNumber);
     if (!playerState) {
@@ -259,7 +260,7 @@ export default class CanvasDrawing {
     }
   };
 
-  private onSectionEnd = (playerNumber: 0 | 1 | 2 | 3) => {
+  private onSectionEnd = (playerNumber: PlayerNumber) => {
     if (GameState.isPlaying()) {
       const drawingData = this.getDrawingData(playerNumber, -1);
       if (!isNotesSection(drawingData.currentSection)) return;
@@ -337,7 +338,7 @@ export default class CanvasDrawing {
     return displacements;
   };
 
-  private getDrawingData = (playerNumber: 0 | 1 | 2 | 3, sectionShift = 0): DrawingData => {
+  private getDrawingData = (playerNumber: PlayerNumber, sectionShift = 0): DrawingData => {
     const players = PlayersManager.getPlayers();
     const playerIndex = players.findIndex((player) => player.number === playerNumber);
     const playerCount = players.length;

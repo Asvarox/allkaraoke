@@ -15,9 +15,11 @@ interface Props {
   players: PlayerScore[];
   highScores: HighScoreEntity[];
   singSetup: SingSetup;
+  /** Online mode hides the camera roll — the singers are not in the same room. */
+  cameraEnabled?: boolean;
 }
 
-function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
+function ResultsView({ onNextStep, players, highScores, singSetup, cameraEnabled = true }: Props) {
   // -1 so the animation starts from the first segment
   const [segment, setSegment] = useState<number>(-1);
 
@@ -79,18 +81,19 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
             />
           ))}
         </div>
-        <div
-          className={clsx(
-            'transition-[width] duration-300',
-            initialCameraPermission && revealHighScore ? 'sm:w-2/5 md:w-5/14' : 'sm:w-1/3 md:w-1/3',
-          )}>
-          {initialCameraPermission ? (
-            <CameraRoll />
-          ) : (
-            // <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
-            <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
-          )}
-        </div>
+        {cameraEnabled && (
+          <div
+            className={clsx(
+              'transition-[width] duration-300',
+              initialCameraPermission && revealHighScore ? 'sm:w-2/5 md:w-5/14' : 'sm:w-1/3 md:w-1/3',
+            )}>
+            {initialCameraPermission ? (
+              <CameraRoll />
+            ) : (
+              <CameraRollPlaceholder register={register} onConfirm={enableCamera} loading={isRequestInProgress} />
+            )}
+          </div>
+        )}
       </div>
       <Button
         {...register('next-button', () => nextStep(), undefined, true)}

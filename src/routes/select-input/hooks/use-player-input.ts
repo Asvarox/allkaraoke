@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect } from 'react';
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
@@ -7,7 +8,7 @@ import tuple from '~/modules/utils/tuple';
 import InputSources from '~/routes/select-input/input-sources/index';
 import { InputSourceList, InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
 
-export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<string, InputSourceList>) {
+export function usePlayerInput(playerNumber: PlayerNumber, sources: Record<string, InputSourceList>) {
   const sourceList = Object.keys(sources) as Array<InputSourceNames>;
   const [selectedPlayerInput, playerInputData, isPlayerInputInitialised] = useEventListenerSelector(
     [events.playerInputChanged, events.inputListChanged],

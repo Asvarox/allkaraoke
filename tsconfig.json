@@ -18,7 +18,7 @@
     "paths": { "~/*": ["./src/*"] },
     "types": ["vitest/globals", "@types/dom-view-transitions"]
   },
-  "include": ["src", "tests", "scripts"],
+  "include": ["src", "tests", "scripts", "partykit"],
   "exclude": ["functions"],
   "ts-node": {
     "compilerOptions": {

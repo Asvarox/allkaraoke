@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { FrequencyRecord, milliseconds, Note, PlayerNote, Section, Song, SongTrack } from '~/interfaces';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 
@@ -65,7 +66,7 @@ export default function calculateData({
 }
 
 export interface DrawingData {
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   playerIndex: number;
   playerCount: number;
   song: Song;

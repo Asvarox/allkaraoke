@@ -3,6 +3,7 @@ import { SingSetup, SongPreview } from '~/interfaces';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import events from '~/modules/game-events/game-events';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
 import GameSettings from '~/routes/sing-a-song/song-selection/components/song-settings/game-settings';
 import MicCheck from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check';
 
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
+  const online = useOnlineSongSelection();
   const [pendingSetup, setPendingSetup] = useState<SingSetup | null>(null);
 
   const startSong = (setup: SingSetup) => {
@@ -67,7 +69,11 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         confirmButtonProps={registerConfirm('confirm-play-unverified-song', confirmPlayUnverifiedSong, undefined, true)}
       />
       <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
-        <MicCheck className="w-full shrink-0 sm:w-2/5" />
+        {online ? (
+          <div className="w-full shrink-0 sm:w-2/5">{online.playersView}</div>
+        ) : (
+          <MicCheck className="w-full shrink-0 sm:w-2/5" />
+        )}
         <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4">
           <GameSettings
             songPreview={songPreview}

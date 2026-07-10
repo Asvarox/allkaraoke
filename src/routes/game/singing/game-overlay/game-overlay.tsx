@@ -27,6 +27,10 @@ interface Props {
   effectsEnabled: boolean;
   videoPlayerRef: MutableRefObject<VideoPlayerRef | null>;
   isPauseMenuVisible: boolean;
+  /** Online mode: only the host gets the skip-intro prompt. */
+  skipIntroEnabled?: boolean;
+  /** Online mode: routes the skip through the room server so it applies to everyone. */
+  onSkipIntro?: (targetTimeSec: number) => void;
 }
 
 const MAX_RENDER_RESOLUTION_W = 1920;
@@ -42,6 +46,8 @@ const GameOverlay = forwardRef(function (
     videoPlayerRef,
     isPauseMenuVisible,
     duration,
+    skipIntroEnabled = true,
+    onSkipIntro,
   }: Props,
   fRef,
 ) {
@@ -129,7 +135,9 @@ const GameOverlay = forwardRef(function (
       </div>
       {effectsEnabled && (
         <>
-          <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
+          {skipIntroEnabled && (
+            <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} onSkip={onSkipIntro} />
+          )}
           <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
         </>
       )}

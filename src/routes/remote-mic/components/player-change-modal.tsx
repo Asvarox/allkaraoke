@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { Button } from '~/modules/elements/akui/button';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import styles from '~/modules/game-engine/drawing/styles';
@@ -6,7 +7,7 @@ import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-s
 
 interface Props {
   id: string;
-  playerNumber: 0 | 1 | 2 | 3 | null;
+  playerNumber: PlayerNumber | null;
   onModalClose: () => void;
   showRemoveButton?: boolean;
 }
@@ -21,7 +22,7 @@ const colorNames: Record<backgroundTheme, string[]> = {
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, showRemoveButton = false }: Props) {
   const list = useSubscription('remote-mics') ?? [];
   const style = useSubscription('style') ?? 'regular';
-  const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
+  const selectPlayer = (player: PlayerNumber | null) => {
     void serverRpc.players.requestMicSelect(id, player);
     onModalClose();
   };

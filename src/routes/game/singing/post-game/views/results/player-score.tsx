@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import clsx from 'clsx';
 import CountUp from 'react-countup';
 import { HighScoreEntity, SingSetup } from '~/interfaces';
@@ -12,7 +13,7 @@ interface Props {
   player: PlayerScore;
   revealHighScore: boolean;
   useColors?: boolean;
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   segment: number;
   highestScore: number;
   highScores: HighScoreEntity[];

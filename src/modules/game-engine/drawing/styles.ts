@@ -79,9 +79,19 @@ export const colorSets = {
   eurovisionRed: colorSet(eurovisionRedFillBase, eurovisionRedStrokeBase),
   eurovisionBlue: colorSet(eurovisionBlueFillBase, eurovisionBlueStrokeBase),
   eurovisionViolet: colorSet(eurovisionVioletFillBase, eurovisionVioletStrokeBase),
+  eurovisionOrange: colorSet(tinycolor('#ff9d00'), tinycolor('#ff9d00').darken(15)),
+
+  pink: colorSet(tinycolor('rgb(255, 54, 201)'), tinycolor('rgb(128, 0, 96)')),
+  orange: colorSet(tinycolor('rgb(255, 146, 54)'), tinycolor('rgb(128, 62, 0)')),
+
+  christmasViolet: colorSet(tinycolor('rgb(130, 63, 168)'), tinycolor('rgb(76, 27, 105)')),
+  christmasSilver: colorSet(tinycolor('rgb(158, 176, 184)'), tinycolor('rgb(84, 100, 107)')),
+
+  halloweenBlue: colorSet(blueFillBase, blueStrokeBase),
+  halloweenGold: colorSet(goldFillBase, goldStrokeBase),
 };
 
-let playerColors = [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow];
+let playerColors = [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow, colorSets.pink, colorSets.orange];
 
 const styles = {
   colors: {
@@ -111,14 +121,36 @@ const styles = {
   },
 };
 
-const colorThemes: Record<
-  backgroundTheme,
-  [ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>]
-> = {
-  christmas: [colorSets.christmasGreen, colorSets.christmasRed, colorSets.christmasBlue, colorSets.christmasGold],
-  eurovision: [colorSets.eurovisionBlue, colorSets.eurovisionRed, colorSets.eurovisionGreen, colorSets.eurovisionPink],
-  halloween: [colorSets.halloweenOrange, colorSets.halloweenViolet, colorSets.halloweenRed, colorSets.halloweenGreen],
-  regular: [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow],
+type ColorSet = ReturnType<typeof colorSet>;
+// One color set per player, up to MAX_SUPPORTED_PLAYERS (6)
+type PlayerColorSets = [ColorSet, ColorSet, ColorSet, ColorSet, ColorSet, ColorSet];
+
+const colorThemes: Record<backgroundTheme, PlayerColorSets> = {
+  christmas: [
+    colorSets.christmasGreen,
+    colorSets.christmasRed,
+    colorSets.christmasBlue,
+    colorSets.christmasGold,
+    colorSets.christmasViolet,
+    colorSets.christmasSilver,
+  ],
+  eurovision: [
+    colorSets.eurovisionBlue,
+    colorSets.eurovisionRed,
+    colorSets.eurovisionGreen,
+    colorSets.eurovisionPink,
+    colorSets.eurovisionViolet,
+    colorSets.eurovisionOrange,
+  ],
+  halloween: [
+    colorSets.halloweenOrange,
+    colorSets.halloweenViolet,
+    colorSets.halloweenRed,
+    colorSets.halloweenGreen,
+    colorSets.halloweenBlue,
+    colorSets.halloweenGold,
+  ],
+  regular: [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow, colorSets.pink, colorSets.orange],
 };
 
 export const switchToTheme = (theme: backgroundTheme) => {

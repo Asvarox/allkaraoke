@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { RemoteMicPermission } from '~/routes/settings/settings-state';
 
 // Defines all methods the server can call on the client via rpc-call messages.
@@ -5,7 +6,7 @@ import { RemoteMicPermission } from '~/routes/settings/settings-state';
 export interface ClientContract {
   startMonitor: () => void;
   stopMonitor: () => void;
-  setPlayerNumber: (playerNumber: 0 | 1 | 2 | 3 | null) => void;
+  setPlayerNumber: (playerNumber: PlayerNumber | null) => void;
   setPermissions: (level: RemoteMicPermission) => void;
   reload: () => void;
   requestReadiness: () => void;

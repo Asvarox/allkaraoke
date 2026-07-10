@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
 import { twc } from 'react-twc';
 import styles from '~/modules/game-engine/drawing/styles';
@@ -6,7 +7,7 @@ import PlayerChange from '~/routes/remote-mic/panels/microphone/player-change';
 
 interface Props {
   volume: number;
-  playerNumber: 0 | 1 | 2 | 3 | null;
+  playerNumber: PlayerNumber | null;
   frequency: number | null;
   isMicOn: boolean;
   isConnected: boolean;

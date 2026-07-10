@@ -1,3 +1,4 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
 import styles from '~/modules/game-engine/drawing/styles';
@@ -5,7 +6,7 @@ import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
 import PlayersManager from '~/modules/players/players-manager';
 import { twx } from '~/utils/twx';
 
-const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
+const usePlayerColor = (playerNumber: PlayerNumber) => {
   return useMemo(() => {
     if (!styles.colors.players[playerNumber]) return '0, 0, 0';
     const rgb = tinycolor(styles.colors.players[playerNumber].text).toRgb();
@@ -16,7 +17,7 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
 const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right bg-repeat-y`;
 
 interface Props {
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   volume: number;
 }
 
@@ -45,7 +46,7 @@ export const VolumeIndicator = forwardRef(
 export const PlayerMicCheck = ({
   playerNumber,
   ...props
-}: { playerNumber: 0 | 1 | 2 | 3 } & ComponentProps<typeof VolumeIndicatorBase>) => {
+}: { playerNumber: PlayerNumber } & ComponentProps<typeof VolumeIndicatorBase>) => {
   const elemRef = useRef<HTMLDivElement | null>(null);
 
   const cb = useCallback(([volume]: [number, number]) => {

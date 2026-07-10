@@ -1,9 +1,10 @@
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
 
 const usePlayerMicStatus = (
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   intervalMs = 333,
   onMeasure?: ([volume, frequency]: [number, number]) => void,
 ) => {

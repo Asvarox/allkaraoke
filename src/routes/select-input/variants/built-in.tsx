@@ -7,6 +7,7 @@ import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect, useEventListenerSelector } from '~/modules/game-events/hooks';
+import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import PlayersManager from '~/modules/players/players-manager';
@@ -27,6 +28,9 @@ interface Props {
   onSave: () => void;
   changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
   closeButtonText: string;
+  /** Online-mode wizard variant: no input-type switching, no per-player mic boxes (the volume
+   * shows behind the mic switcher instead), no smartphone-as-mic suggestion. */
+  onlineSetup?: boolean;
 }
 
 function useIsPlayerMicAudible(inputLabel: string) {
@@ -129,7 +133,9 @@ function BuiltIn(props: Props) {
               <span className="typography text-lg">You&#39;ll sing using</span>
               <Menu.HelpText>(click to change)</Menu.HelpText>
             </div>
-            <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
+            <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic}>
+              {props.onlineSetup && <PlayerMicCheck playerNumber={0} className="rounded-md opacity-40" />}
+            </Switcher>
             <div className="flex items-center justify-end text-lg">
               {isAudible === true && (
                 <>
@@ -163,16 +169,16 @@ function BuiltIn(props: Props) {
             )}
           </>
         )}
-        <MicCheck />
+        {!props.onlineSetup && <MicCheck />}
 
-        {isAudible === true && (
+        {isAudible === true && !props.onlineSetup && (
           <Menu.HelpText>
             Built-in microphones can pick up music from the game. For more accurate scores, try using your{' '}
             <button onClick={() => props.changePreference('remoteMics')}>smartphone as a microphone</button>.
           </Menu.HelpText>
         )}
       </UserMediaEnabled>
-      <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
+      {!props.onlineSetup && <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>}
       <MenuButton
         {...register('save-button', props.onSave, undefined, true, { disabled: !selectedMic })}
         disabled={!selectedMic}>
