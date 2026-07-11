@@ -32,8 +32,8 @@ export const Switcher = ({
     onClick={onClick}
     data-disabled={disabled}
     {...restProps}
-    className={`${className} shadow-focusable flex justify-start rounded-md`}>
-    <span>{label ? <>{label}:</> : ''}</span>{' '}
+    className={`${className} shadow-focusable flex justify-start`}>
+    <span className="font-normal">{label ? <>{label}:</> : ''}</span>{' '}
     <AnimatePresence>
       <motion.span
         className="text-active absolute right-2.5 overflow-hidden pl-2.5 text-ellipsis whitespace-nowrap"

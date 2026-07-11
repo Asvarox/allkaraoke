@@ -11,7 +11,7 @@ export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'hallowee
 
 const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: CSSProperties } = {
   default: {
-    backgroundImage: `linear-gradient(-45deg, ${colorSets.red.stroke}, ${colorSets.blue.text}, ${colorSets.blue.stroke}, ${colorSets.red.stroke})`,
+    backgroundImage: 'linear-gradient(to bottom right, #2575cf, #1a5dab, #144a8a, #2575cf)',
     backgroundSize: '400% 400%',
   },
   christmas: {

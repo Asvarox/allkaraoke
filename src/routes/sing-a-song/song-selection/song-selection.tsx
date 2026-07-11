@@ -2,6 +2,7 @@ import { ComponentProps, memo, useCallback, useEffect, useLayoutEffect, useMemo,
 import { useHotkeys } from 'react-hotkeys-hook';
 import { Link } from 'wouter';
 import { SingSetup, SongPreview as SongPreviewEntity } from '~/interfaces';
+import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { useBackground } from '~/modules/elements/background-context';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
@@ -262,14 +263,13 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               {new Array(unverifiedSongsLoading ? 1 : 4).fill(0).map((_, i) => (
                 <ListRow key={i}>
                   {new Array(songsPerRow).fill(0).map((_, j) => (
-                    <div
+                    <Skeleton
                       key={j}
-                      className="flex-none animate-pulse rounded-2xl bg-black"
+                      className="flex-none rounded-2xl bg-black/45"
                       style={{
                         flexBasis: 'var(--song-entry-width)',
                         width: 'var(--song-entry-width)',
                         height: 'var(--song-entry-height)',
-                        opacity: 0.7,
                       }}
                     />
                   ))}

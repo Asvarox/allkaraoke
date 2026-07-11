@@ -139,7 +139,7 @@ const GameOverlay = forwardRef(function (
           <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showStatusForAllPlayers={players.length > 2} />
         )}
       </div>
-      <div className="mobile:text-xl z-10 flex h-full flex-1 flex-col justify-around pr-4 text-right text-3xl">
+      <div className="mobile:text-xl stroke-text z-10 flex h-full flex-1 flex-col justify-around pr-4 text-right text-3xl">
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (

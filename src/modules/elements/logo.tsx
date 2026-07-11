@@ -36,6 +36,6 @@ export default function Logo(props: ComponentProps<'div'>) {
   );
 }
 
-const LetterBase = twx.span`typography relative top-[-0.15em] left-[-0.1em] text-[1em] leading-0.5 -tracking-[0.15em] [-webkit-text-stroke:0.02em_black] [font-variant:small-caps] [&_span]:inline-block`;
+const LetterBase = twx.span`typography relative top-[-0.15em] left-[-0.1em] text-[1em] leading-0.5 font-bold -tracking-[0.15em] [-webkit-text-stroke:0.02em_black] [font-variant:small-caps] [&_span]:inline-block`;
 
 const DotParty = twc.span`absolute right-[-0.3em] bottom-[0.8em] text-[0.4em] -tracking-[0.1em]`;

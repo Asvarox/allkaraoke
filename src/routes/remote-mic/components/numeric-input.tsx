@@ -23,7 +23,7 @@ function NumericInput({
 }: Props) {
   return (
     <InputWrapper info={info}>
-      <Container className={`${className} shadow-focusable rounded-md`} {...props}>
+      <Container className={`${className} shadow-focusable rounded-xl`} {...props}>
         <Button
           onClick={() => onChange(value - step)}
           disabled={disabled}

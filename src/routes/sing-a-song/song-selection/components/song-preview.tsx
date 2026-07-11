@@ -126,7 +126,7 @@ export default function SongPreviewComponent({
       {/* BPM rhythm shadow — sibling to SongCard so its scale animation isn't clipped by overflow-hidden */}
       {!expanded && showVideo && (
         <div
-          className="pointer-events-none absolute z-2 hidden rounded-xl bg-white opacity-0 blur-xs md:block"
+          className="pointer-events-none absolute z-2 hidden rounded-2xl bg-white opacity-0 blur-md md:block"
           style={{
             width,
             height,
@@ -145,7 +145,7 @@ export default function SongPreviewComponent({
       {/* Backdrop — only shown when expanded */}
       {expanded && (
         <div
-          className="fixed inset-0 z-201 bg-black/75 bg-[radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] bg-size-[10px_10px] backdrop-blur-[20px]"
+          className="fixed inset-0 z-201 bg-black/50 bg-[radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] bg-size-[10px_10px] backdrop-blur-[20px]"
           onClick={onExitKeyboardControl}
         />
       )}
@@ -160,9 +160,9 @@ export default function SongPreviewComponent({
         data-test="song-preview"
         focused={!expanded}
         className={
-          'bg-slate-900 ' +
+          'bg-slate-800 ' +
           (expanded
-            ? 'fixed inset-0 z-202 overflow-y-auto rounded-none border-2 border-amber-400 p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-xl sm:p-4'
+            ? 'fixed inset-0 z-202 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4'
             : `absolute z-3 transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
               }`)

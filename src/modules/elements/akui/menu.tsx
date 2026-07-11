@@ -6,7 +6,7 @@ import Typography from '~/modules/elements/akui/primitives/typography';
 
 const MenuContainer = twc(
   Box,
-)`pointer-events-auto w-[100vw] items-stretch rounded-none bg-black/60 [view-transition-name:menu-container] sm:max-w-[45rem] md:rounded-md lg:max-w-[45rem] 2xl:max-w-[60rem]`;
+)`pointer-events-auto w-[100vw] items-stretch rounded-none [view-transition-name:menu-container] sm:max-w-[45rem] md:rounded-xl lg:max-w-[45rem] 2xl:max-w-[60rem]`;
 
 export const MenuHelpText = twc(Typography)`text-md mobile:text-xs`;
 const MenuSubHeader = twc(Typography)`text-lg`;
@@ -25,7 +25,7 @@ export const Menu = ({ title, children, className, spacing = 'regular', ref, ...
   </MenuContainer>
 );
 
-Menu.Header = twc(Typography)`mobile:text-xl text-active flex items-center justify-center text-2xl`;
+Menu.Header = twc(Typography)`mobile:text-xl text-active flex items-center justify-center text-2xl font-bold`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;

@@ -1,7 +1,10 @@
 import type { Preview } from '@storybook/react-vite';
 import isChromatic from 'chromatic/isChromatic';
+import { configure } from 'storybook/test';
 import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 import '../src/index.css';
+
+configure({ testIdAttribute: 'data-test' });
 
 if (isChromatic()) {
   Math.random = () => 0.2;
