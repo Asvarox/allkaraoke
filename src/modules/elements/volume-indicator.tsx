@@ -13,7 +13,7 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   }, [playerNumber]);
 };
 
-const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right bg-repeat-y`;
+const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right overflow-hidden bg-repeat-y`;
 
 interface Props {
   playerNumber: 0 | 1 | 2 | 3;
@@ -50,7 +50,7 @@ export const PlayerMicCheck = ({
 
   const cb = useCallback(([volume]: [number, number]) => {
     if (elemRef.current) {
-      const percent = `${Math.min(1, volume * 20)}`;
+      const percent = `${Math.round(Math.min(1, volume * 20) * 100) / 100}`;
 
       elemRef.current.style.transform = `scaleX(${percent})`;
     }
@@ -60,13 +60,14 @@ export const PlayerMicCheck = ({
   const color = usePlayerColor(playerNumber);
 
   return (
-    <VolumeIndicatorBase
-      {...props}
-      data-test="mic-volume-indicator"
-      ref={elemRef}
-      style={{
-        background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
-      }}
-    />
+    <VolumeIndicatorBase {...props} data-test="mic-volume-indicator">
+      <div
+        className="h-full w-full origin-right"
+        ref={elemRef}
+        style={{
+          background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+        }}
+      />
+    </VolumeIndicatorBase>
   );
 };
