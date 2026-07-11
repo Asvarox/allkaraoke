@@ -6649,7 +6649,7 @@
     "gap": 7325.535714285715,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-07T02:25:28.295Z",
+    "lastUpdate": "2026-07-06T20:43:43.123Z",
     "realBpm": 112,
     "volume": 1,
     "author": "DS",
@@ -39072,7 +39072,7 @@
     "gap": 14614.962406015038,
     "year": "2024",
     "artistOrigin": "IT",
-    "lastUpdate": "2026-07-07T02:25:29.164Z",
+    "lastUpdate": "2026-07-06T20:45:52.947Z",
     "realBpm": 171.8,
     "volume": 1,
     "author": "DS",
@@ -52206,7 +52206,7 @@
     "bpm": 300.1,
     "gap": -89.73342219260235,
     "year": "2019",
-    "lastUpdate": "2026-07-07T02:25:28.297Z",
+    "lastUpdate": "2026-07-06T20:44:14.417Z",
     "genre": "Pop",
     "realBpm": 75,
     "volume": 1,
@@ -86048,7 +86048,7 @@
     "gap": -117.29083665338646,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-07T02:25:28.288Z",
+    "lastUpdate": "2026-07-06T20:42:16.336Z",
     "genre": "Pop",
     "realBpm": 135,
     "volume": 0.83,
@@ -90140,7 +90140,7 @@
     "bpm": 280,
     "gap": 12992.142857142857,
     "year": "2025",
-    "lastUpdate": "2026-07-07T02:25:28.966Z",
+    "lastUpdate": "2026-07-06T20:45:01.873Z",
     "genre": "Soundtrack, K-Pop",
     "realBpm": 121,
     "volume": 0.84,
@@ -92750,6 +92750,67 @@
     "local": false
   },
   {
+    "id": "la-vela-puerca-el-gavilan",
+    "title": "El Gavilán",
+    "artist": "La Vela Puerca",
+    "video": "qhIfmNk8gEQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480,
+    "gap": 3581,
+    "year": "1998",
+    "artistOrigin": "UY",
+    "lastUpdate": "2026-07-08T20:45:27.457Z",
+    "genre": "Rock Uruguayo",
+    "realBpm": 480,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Vela%20Puerca&cancion=El%20Gavil%C3%A1n",
+    "duration": 120,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 6000,
+    "tracksCount": 1,
+    "search": "lavelapuercaelgavilan",
+    "local": false
+  },
+  {
+    "id": "la-vela-puerca-un-frasco",
+    "title": "Un frasco",
+    "artist": "La Vela Puerca",
+    "video": "zM_kF1GHFCE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 224,
+    "gap": 28278.535714285714,
+    "year": "2004",
+    "artistOrigin": "UY",
+    "lastUpdate": "2026-07-08T20:46:27.469Z",
+    "genre": "Rock Uruguayo",
+    "videoGap": 7,
+    "realBpm": 224,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=La%20Vela%20Puerca&cancion=Un%20frasco",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6001,
+    "tracksCount": 1,
+    "search": "lavelapuercaunfrasco",
+    "local": false
+  },
+  {
     "id": "la-zarra-evidemment",
     "title": "Évidemment",
     "artist": "La Zarra",
@@ -95067,7 +95128,7 @@
     "gap": 4183.90243902439,
     "year": "2023",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-07-07T02:25:28.292Z",
+    "lastUpdate": "2026-07-06T20:43:12.151Z",
     "genre": "Jazz Pop",
     "realBpm": 82,
     "volume": 1,

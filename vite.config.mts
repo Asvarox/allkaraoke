@@ -121,6 +121,7 @@ export default defineConfig({
         test: {
           name: 'functions',
           include: ['functions/**/*.test.ts'],
+          exclude: ['.claude/**/*']
         },
       },
     ],
