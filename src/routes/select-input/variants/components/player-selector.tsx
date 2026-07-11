@@ -39,7 +39,10 @@ export const PlayerSelector = (props: Props) => {
         label="Input"
         disabled={props.readonly}
         value={input?.label}>
-        <PlayerMicCheck playerNumber={player.number} className="m-[2.5px] !h-[calc(100%-5px)] w-1/2 opacity-75" />
+        <PlayerMicCheck
+          playerNumber={player.number}
+          className="m-[2.5px] h-[calc(100%-5px)]! w-1/2 rounded-xl opacity-75"
+        />
       </SwitcherWithMicCheck>
     </>
   );

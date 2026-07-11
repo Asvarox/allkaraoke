@@ -1,7 +1,7 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { ComponentProps } from 'react';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
+import { PlayerNumber } from '~/modules/players/player-number';
 import Ping from './ping';
 
 interface Props extends ComponentProps<'div'> {
@@ -28,23 +28,20 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
       ) : (
         <WarningIcon data-test="status-unstable" style={{ fill: '#f89400', stroke: 'black' }} />
       )}
-      {status === 'unavailable' ? (
+      {status !== 'ok' ? (
         <div
-          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
+          className={`absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 text-base ${
             tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
           }`}>
-          <span>
-            The device is <strong>disconnected</strong>. Reconnect it, please.
-          </span>
-        </div>
-      ) : status === 'unstable' ? (
-        <div
-          className={`absolute top-0 flex w-[20rem] items-center bg-black/75 p-2 text-base ${
-            tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
-          }`}>
-          <span>
-            The connection seems <strong>unstable</strong>. Connect to the same Wifi.
-          </span>
+          {status === 'unavailable' ? (
+            <span>
+              The device is <strong>disconnected</strong>. Reconnect it, please.
+            </span>
+          ) : status === 'unstable' ? (
+            <span>
+              The connection is <strong>unstable</strong>. Check your Wi-Fi signal.
+            </span>
+          ) : null}
         </div>
       ) : null}
     </div>

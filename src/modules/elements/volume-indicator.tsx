@@ -1,8 +1,8 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
 import styles from '~/modules/game-engine/drawing/styles';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import { twx } from '~/utils/twx';
 
@@ -14,7 +14,7 @@ const usePlayerColor = (playerNumber: PlayerNumber) => {
   }, [playerNumber]);
 };
 
-const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right bg-repeat-y`;
+const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right overflow-hidden bg-repeat-y`;
 
 interface Props {
   playerNumber: PlayerNumber;
@@ -51,7 +51,7 @@ export const PlayerMicCheck = ({
 
   const cb = useCallback(([volume]: [number, number]) => {
     if (elemRef.current) {
-      const percent = `${Math.min(1, volume * 20)}`;
+      const percent = `${Math.round(Math.min(1, volume * 20) * 100) / 100}`;
 
       elemRef.current.style.transform = `scaleX(${percent})`;
     }
@@ -61,12 +61,14 @@ export const PlayerMicCheck = ({
   const color = usePlayerColor(playerNumber);
 
   return (
-    <VolumeIndicatorBase
-      {...props}
-      ref={elemRef}
-      style={{
-        background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
-      }}
-    />
+    <VolumeIndicatorBase {...props} data-test="mic-volume-indicator">
+      <div
+        className="h-full w-full origin-right"
+        ref={elemRef}
+        style={{
+          background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+        }}
+      />
+    </VolumeIndicatorBase>
   );
 };

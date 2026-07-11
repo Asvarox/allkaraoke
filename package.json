@@ -67,6 +67,7 @@
     "prepare": "husky",
     "e2e": "pnpm playwright test",
     "e2e:prod": "PROD_RUN=true pnpm playwright test",
+    "e2e:visual": "pnpm playwright test ./tests/visual-regression/ --project=chromium --workers=5",
     "unverified-song:upsert-fixture": "NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm ts-node scripts/cicd/upsert-unverified-song-fixture.ts tests/fixtures/songs/shared-cloudflare-e2e.txt",
     "shared-song:upsert-fixture": "pnpm unverified-song:upsert-fixture",
     "test-ct": "pnpm playwright test -c playwright-ct.config.mts",

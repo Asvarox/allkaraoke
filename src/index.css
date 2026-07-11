@@ -29,12 +29,15 @@
 }
 
 @utility typography {
-  -webkit-text-stroke: 0.5px black;
-  color: white;
-  font-weight: bold;
+  @apply text-slate-100;
+
   strong {
-    color: orange;
+    @apply text-active;
   }
+}
+
+@utility stroke-text {
+    -webkit-text-stroke: 0.015em black;
 }
 
 @utility animate-focused {
@@ -305,9 +308,6 @@ code {
 @keyframes focusAnimation {
   100% {
     box-shadow: inset 0px 0px 0px 2px orange;
-  }
-  50% {
-    box-shadow: inset 0px 0px 0px 4px orange;
   }
   0% {
     box-shadow: inset 0px 0px 0px 2px orange;

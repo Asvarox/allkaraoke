@@ -58,7 +58,7 @@ function LandingPage() {
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <Box className="mobile:flex-col landscap:flex-1 mobile:p-4 mobile:rounded-[0] flex-row gap-6 bg-black/75 p-10 [&_hr]:my-3">
+        <Box className="mobile:flex-col landscap:flex-1 mobile:p-4 mobile:rounded-[0] flex-row gap-6 bg-black/60 p-10 [&_hr]:my-3">
           <StatSegment className="h-full justify-between">
             <div className="mobile:text-md text-justify text-lg leading-normal">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
@@ -157,8 +157,8 @@ const StatSubText = twc.div`text-md mobile:text-sm pt-1 text-right [&_.Typewrite
 
 const StatSegment = twc.div`typography flex flex-1 flex-col justify-center text-xl`;
 
-const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-2xl border-1 border-black/50 object-cover`;
+const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
 
-const PlayButton = twx(ButtonLink)`mobile:text-2xl animate-focused w-full bg-black px-4 py-4 text-5xl`;
+const PlayButton = twx(ButtonLink)`mobile:text-2xl animate-focused w-full bg-black/60 px-4 py-4 text-5xl`;
 
 export default LandingPage;

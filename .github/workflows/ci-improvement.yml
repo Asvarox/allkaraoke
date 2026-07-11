@@ -59,6 +59,7 @@ jobs:
           config: 'playwright.config.ts'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
+          grepInvert: '@visual'
   e2e-tests-add-summary:
     runs-on: ubuntu-latest
     if: ${{ failure() }}
@@ -109,13 +110,68 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
             github.rest.pulls.createReview({ // https://octokit.github.io/rest.js/v20#pulls
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
-              body: 'Changes detected in visual regression tests. Please review.',
+              body: `Changes detected in visual regression tests. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})`,
               event: 'COMMENT',
             })
+
+  visual-regression-tests-run:
+    if: github.ref != 'refs/heads/master'
+    container:
+      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
+    permissions:
+      contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
+      pull-requests: write # allows commenting on a PR
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+      VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          # Value already defaults to true, but `persist-credentials` is required to push new commits to the repository.
+          persist-credentials: true
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Build app
+        run: |
+          git config --global --add safe.directory /__w/allkaraoke/allkaraoke
+          pnpm build
+      - name: Configure local worker secrets for E2E
+        run: cp .dev.vars.example .dev.vars
+      - name: Run visual regression tests and update snapshots
+        uses: './.github/templates/run-playwright'
+        with:
+          config: 'playwright.config.ts'
+          grep: '@visual'
+          updateSnapshots: 'true'
+      - name: Auto commit updated snapshots
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: '[ci-skip][skip-release-notes] chore: update visual regression screenshots'
+          commit_options: '--no-verify'
+      - name: 'Comment on PR to request a review of visual changes'
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+            github.rest.pulls.createReview({ // https://octokit.github.io/rest.js/v20#pulls
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              body: `Changes detected in visual regression screenshots. Please review.\n\n[View the run that committed the updated screenshots](${runUrl})`,
+              event: 'COMMENT',
+            })
+
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'

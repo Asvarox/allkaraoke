@@ -16,7 +16,7 @@ export class HistoryPagePO {
   }
 
   public get entries() {
-    return this.page.getByTestId('history-entry');
+    return this.page.locator('[data-test^="history-entry-"]');
   }
 
   public async expectEntryCount(count: number) {
@@ -35,6 +35,6 @@ export class HistoryPagePO {
   }
 
   public get expandedDetails() {
-    return this.page.getByTestId('history-entry-details');
+    return this.page.getByTestId('entry-details');
   }
 }

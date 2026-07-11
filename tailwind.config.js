@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25)',
+        focusable: 'inset 0 0 0 1px rgba(255,165,0,.25), inset 0px 0px 40px 2px rgba(0,0,0,0.2)',
       },
       colors: {
         default: styles.colors.text.default,
@@ -39,19 +39,16 @@ module.exports = {
           '0%': {
             backgroundPosition: '0% 50%',
           },
-          '50%': {
-            backgroundPosition: '100% 50%',
-          },
           '100%': {
             backgroundPosition: '0% 50%',
           },
         },
         focused: {
           '0%, 100%': {
-            'box-shadow': `inset 0px 0px 0px 2px ${styles.colors.text.active}`,
+            'box-shadow': `inset 0px 0px 0px 3px ${styles.colors.text.active}`,
           },
           '50%': {
-            'box-shadow': `inset 0px 0px 0px 4px ${styles.colors.text.active}`,
+            'box-shadow': `inset 0px 0px 0px 3px ${styles.colors.text.active}`,
           },
         },
         buttonFocused: {
