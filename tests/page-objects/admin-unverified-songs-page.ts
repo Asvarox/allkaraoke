@@ -28,8 +28,8 @@ export class AdminUnverifiedSongsPagePO {
     return this.page.getByRole('button', { name: 'Logout' });
   }
 
-  public get processOldestUnverifiedButton() {
-    return this.page.getByRole('button', { name: 'Process oldest unverified' });
+  public get processRandomUnverifiedButton() {
+    return this.page.getByRole('button', { name: 'Process random unverified' });
   }
 
   public get adminHeading() {
@@ -62,8 +62,8 @@ export class AdminUnverifiedSongsPagePO {
     await this.logoutButton.click();
   }
 
-  public async processOldestUnverifiedSong() {
-    await this.processOldestUnverifiedButton.click();
+  public async processRandomUnverifiedSong() {
+    await this.processRandomUnverifiedButton.click();
   }
 
   public async expectPasswordStoredInSessionStorage(password: string) {

@@ -23,9 +23,11 @@ let currentVisibleTitle = '';
 let sharedSongIdsToRemove: string[] = [];
 
 const queueTestTitles = [
-  'saving during oldest-first processing redirects to the next unverified song',
-  'deleting during oldest-first processing redirects to the next unverified song',
+  'saving during queue processing redirects to the next unverified song',
+  'deleting during queue processing redirects to the next unverified song',
 ];
+
+const normalizeWhitespace = (value: string) => value.replace(/\s+/g, ' ').trim();
 
 const createSharedSongIdFromProjectAndTitle = (projectName: string, title: string) =>
   `admin-${projectName}-${title}`
@@ -104,6 +106,23 @@ const seedQueueSongs = async (request: APIRequestContext) => {
     updated: queueOldestUpdatedValue,
     sourceUserId: 'admin-panel-e2e',
   });
+
+  // Random queue selection picks from the whole queue, so any other unverified songs left over in the
+  // local KV store would make the "which song comes first" assertions non-deterministic. Scope the
+  // queue down to just the two songs these tests care about.
+  const response = await request.get('/admin/unverified-songs', {
+    headers: { 'x-admin-panel-password': adminPanelPassword },
+  });
+  const existingSongs = (await response.json()) as Array<{ sharedSongId: string }>;
+  const extraSharedSongIds = existingSongs
+    .map((song) => song.sharedSongId)
+    .filter((sharedSongId) => sharedSongId !== currentSharedSongId && sharedSongId !== oldestUpdatedSharedSongId);
+
+  // Deletes must run sequentially: removeUnverifiedSong does a read-modify-write of the shared
+  // index, so concurrent deletes race and can leave stale (already-deleted) entries in the index.
+  for (const sharedSongId of extraSharedSongIds) {
+    await removeUnverifiedSong(request, sharedSongId);
+  }
 
   return { oldestUpdatedSharedSongId, oldestUpdatedVisibleTitle };
 };
@@ -224,17 +243,9 @@ test('persists unverified songs table page size and sorting after reload', async
   await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(olderVisibleTitle)).toBeVisible();
 });
 
-test('saving during oldest-first processing redirects to the next unverified song', async ({
-  page,
-  request,
-}, testInfo) => {
-  test.skip(testInfo.project.name !== 'chromium', 'Oldest-first queue tests share one KV namespace.');
+test('saving during queue processing redirects to the next unverified song', async ({ page, request }, testInfo) => {
+  test.skip(testInfo.project.name !== 'chromium', 'Queue processing tests share one KV namespace.');
   const { oldestUpdatedSharedSongId, oldestUpdatedVisibleTitle } = await seedQueueSongs(request);
-  const syncedTitle = `${oldestUpdatedVisibleTitle} Synced`;
-  const syncedBpm = '190';
-  const syncedLyricsGap = '1234';
-  const syncedDesiredEnd = '9999';
-  const syncedTrackName = 'Queue Track Name';
   const currentQueueSongTxt = makeUnverifiedSongTxt({ title: currentVisibleTitle });
   const oldestQueueSongTxt = makeUnverifiedSongTxt({
     title: oldestUpdatedVisibleTitle,
@@ -244,26 +255,53 @@ test('saving during oldest-first processing redirects to the next unverified son
   });
   const currentQueueSong = getProcessedSong(currentQueueSongTxt);
   const oldestQueueSong = getProcessedSong(oldestQueueSongTxt);
-  const queueSongDefaultBpm = String(currentQueueSong.bpm);
-  const queueSongDefaultDesiredEnd = getDesiredEndTimeValue(currentQueueSong);
-  const oldestQueueSongDefaultBpm = String(oldestQueueSong.bpm);
-  const oldestQueueSongDefaultDesiredEnd = getDesiredEndTimeValue(oldestQueueSong);
+  const sharedSongIdsInQueue = [currentSharedSongId, oldestUpdatedSharedSongId];
+  const songSpecsBySharedSongId: Record<
+    string,
+    { visibleTitle: string; defaultBpm: string; defaultDesiredEnd: string }
+  > = {
+    [currentSharedSongId]: {
+      visibleTitle: currentVisibleTitle,
+      defaultBpm: String(currentQueueSong.bpm),
+      defaultDesiredEnd: getDesiredEndTimeValue(currentQueueSong),
+    },
+    [oldestUpdatedSharedSongId]: {
+      visibleTitle: oldestUpdatedVisibleTitle,
+      defaultBpm: String(oldestQueueSong.bpm),
+      defaultDesiredEnd: getDesiredEndTimeValue(oldestQueueSong),
+    },
+  };
 
   await page.goto('/admin?e2e-test');
 
   await pages.adminUnverifiedSongsPage.signIn(adminPanelPassword);
-  await pages.adminUnverifiedSongsPage.processOldestUnverifiedSong();
-  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
-    unverifiedCloudflareSongFixture.artist,
-    oldestUpdatedVisibleTitle,
+  await pages.adminUnverifiedSongsPage.processRandomUnverifiedSong();
+  await expect(pages.songEditBasicInfoPage.editedSongHeader).toBeVisible();
+
+  const firstHeaderText = normalizeWhitespace((await pages.songEditBasicInfoPage.editedSongHeader.textContent()) ?? '');
+  const firstSharedSongId = sharedSongIdsInQueue.find(
+    (sharedSongId) =>
+      firstHeaderText ===
+      normalizeWhitespace(
+        `${unverifiedCloudflareSongFixture.artist} - ${songSpecsBySharedSongId[sharedSongId].visibleTitle}`,
+      ),
   );
+  expect(firstSharedSongId, 'processing the queue should open one of the seeded unverified songs').toBeDefined();
+
+  const secondSharedSongId = sharedSongIdsInQueue.find((sharedSongId) => sharedSongId !== firstSharedSongId)!;
+  const firstSpec = songSpecsBySharedSongId[firstSharedSongId!];
+  const secondSpec = songSpecsBySharedSongId[secondSharedSongId];
+  const syncedTitle = `${firstSpec.visibleTitle} Synced`;
+  const syncedBpm = '190';
+  const syncedLyricsGap = '1234';
+  const syncedDesiredEnd = '9999';
+  const syncedTrackName = 'Queue Track Name';
+
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
-  const oldestUpdatedSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
-  expect(oldestUpdatedSongVideoSource).not.toBeNull();
-  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(oldestQueueSongDefaultBpm);
-  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(
-    oldestQueueSongDefaultDesiredEnd,
-  );
+  const firstSongVideoSource = await pages.songEditSyncLyricsToVideoPage.getVideoPlayerSource();
+  expect(firstSongVideoSource).not.toBeNull();
+  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(firstSpec.defaultBpm);
+  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(firstSpec.defaultDesiredEnd);
   await pages.songEditSyncLyricsToVideoPage.enterLyricsBPM(syncedBpm);
   await pages.songEditSyncLyricsToVideoPage.enterLyricsGapShift(syncedLyricsGap);
   await pages.songEditSyncLyricsToVideoPage.enterDesiredSongEndTime(syncedDesiredEnd);
@@ -274,16 +312,13 @@ test('saving during oldest-first processing redirects to the next unverified son
 
   await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
     unverifiedCloudflareSongFixture.artist,
-    currentVisibleTitle,
+    secondSpec.visibleTitle,
   );
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
-  await expect(pages.songEditSyncLyricsToVideoPage.videoPlayerSource).not.toHaveAttribute(
-    'src',
-    oldestUpdatedSongVideoSource!,
-  );
-  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(queueSongDefaultBpm);
+  await expect(pages.songEditSyncLyricsToVideoPage.videoPlayerSource).not.toHaveAttribute('src', firstSongVideoSource!);
+  await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(secondSpec.defaultBpm);
   await expect(pages.songEditSyncLyricsToVideoPage.lyricsGapShiftInput).toHaveValue('0');
-  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(queueSongDefaultDesiredEnd);
+  await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(secondSpec.defaultDesiredEnd);
   await expect(pages.songEditSyncLyricsToVideoPage.trackNameInput).toHaveValue('');
 
   await expect
@@ -293,50 +328,61 @@ test('saving during oldest-first processing redirects to the next unverified son
       });
       const songs = (await response.json()) as Array<{ sharedSongId: string; title: string }>;
 
-      return songs.find((song) => song.sharedSongId === oldestUpdatedSharedSongId)?.title;
+      return songs.find((song) => song.sharedSongId === firstSharedSongId)?.title;
     })
     .toBe(syncedTitle);
 
-  const savedSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(oldestUpdatedSharedSongId)}`);
+  const savedSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(firstSharedSongId!)}`);
   await expect(savedSongResponse).toBeOK();
 
   const savedSong = (await savedSongResponse.json()) as { title: string; songTxt: string };
   expect(savedSong.title).toBe(syncedTitle);
   expect(savedSong.songTxt).toContain(`#BPM:${syncedBpm}`);
 
-  const nextSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(currentSharedSongId)}`);
+  const nextSongResponse = await request.get(`/unverified-song?id=${encodeURIComponent(secondSharedSongId)}`);
   await expect(nextSongResponse).toBeOK();
 
   const nextSong = (await nextSongResponse.json()) as { songTxt: string };
-  expect(nextSong.songTxt).toContain(`#BPM:${queueSongDefaultBpm}`);
+  expect(nextSong.songTxt).toContain(`#BPM:${secondSpec.defaultBpm}`);
 
   await page.goto('/admin?e2e-test');
   await pages.adminUnverifiedSongsPage.search(syncedTitle);
   await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(syncedTitle)).toBeVisible();
 });
 
-test('deleting during oldest-first processing redirects to the next unverified song', async ({
-  page,
-  request,
-}, testInfo) => {
-  test.skip(testInfo.project.name !== 'chromium', 'Oldest-first queue tests share one KV namespace.');
+test('deleting during queue processing redirects to the next unverified song', async ({ page, request }, testInfo) => {
+  test.skip(testInfo.project.name !== 'chromium', 'Queue processing tests share one KV namespace.');
   const { oldestUpdatedSharedSongId, oldestUpdatedVisibleTitle } = await seedQueueSongs(request);
   page.once('dialog', (dialog) => dialog.accept());
+
+  const sharedSongIdsInQueue = [currentSharedSongId, oldestUpdatedSharedSongId];
+  const visibleTitleBySharedSongId: Record<string, string> = {
+    [currentSharedSongId]: currentVisibleTitle,
+    [oldestUpdatedSharedSongId]: oldestUpdatedVisibleTitle,
+  };
 
   await page.goto('/admin?e2e-test');
 
   await pages.adminUnverifiedSongsPage.signIn(adminPanelPassword);
-  await pages.adminUnverifiedSongsPage.processOldestUnverifiedSong();
-  await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
-    unverifiedCloudflareSongFixture.artist,
-    oldestUpdatedVisibleTitle,
+  await pages.adminUnverifiedSongsPage.processRandomUnverifiedSong();
+  await expect(pages.songEditBasicInfoPage.editedSongHeader).toBeVisible();
+
+  const firstHeaderText = normalizeWhitespace((await pages.songEditBasicInfoPage.editedSongHeader.textContent()) ?? '');
+  const firstSharedSongId = sharedSongIdsInQueue.find(
+    (sharedSongId) =>
+      firstHeaderText ===
+      normalizeWhitespace(`${unverifiedCloudflareSongFixture.artist} - ${visibleTitleBySharedSongId[sharedSongId]}`),
   );
+  expect(firstSharedSongId, 'processing the queue should open one of the seeded unverified songs').toBeDefined();
+
+  const secondSharedSongId = sharedSongIdsInQueue.find((sharedSongId) => sharedSongId !== firstSharedSongId)!;
+
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
   await pages.songEditSyncLyricsToVideoPage.deleteAdminUnverifiedSong();
 
   await pages.songEditBasicInfoPage.expectEditedSongHeaderToBe(
     unverifiedCloudflareSongFixture.artist,
-    currentVisibleTitle,
+    visibleTitleBySharedSongId[secondSharedSongId],
   );
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
   await expect
@@ -346,13 +392,15 @@ test('deleting during oldest-first processing redirects to the next unverified s
       });
       const songs = (await response.json()) as Array<{ sharedSongId: string }>;
 
-      return songs.some((song) => song.sharedSongId === oldestUpdatedSharedSongId);
+      return songs.some((song) => song.sharedSongId === firstSharedSongId);
     })
     .toBe(false);
 
   await page.goto('/admin?e2e-test');
-  await pages.adminUnverifiedSongsPage.search(oldestUpdatedVisibleTitle);
-  await expect(pages.adminUnverifiedSongsPage.table.rowWithTitle(oldestUpdatedVisibleTitle)).not.toBeVisible();
+  await pages.adminUnverifiedSongsPage.search(visibleTitleBySharedSongId[firstSharedSongId!]);
+  await expect(
+    pages.adminUnverifiedSongsPage.table.rowWithTitle(visibleTitleBySharedSongId[firstSharedSongId!]),
+  ).not.toBeVisible();
 });
 
 test('deletes an unverified song and refetches the list', async ({ page }) => {
