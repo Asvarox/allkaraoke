@@ -2,11 +2,14 @@ import { AdminUnverifiedSong } from './unverified-songs-admin-api';
 
 const adminEditSongPath = 'edit/song/';
 
-export const getOldestAdminUnverifiedSong = (
+export const getRandomAdminUnverifiedSong = (
   songs: AdminUnverifiedSong[],
   currentSharedSongId?: string,
-): AdminUnverifiedSong | undefined =>
-  [...songs].filter((song) => song.sharedSongId !== currentSharedSongId).sort((a, b) => a.updated - b.updated)[0];
+): AdminUnverifiedSong | undefined => {
+  const candidates = songs.filter((song) => song.sharedSongId !== currentSharedSongId);
+
+  return candidates[Math.floor(Math.random() * candidates.length)];
+};
 
 export const buildAdminUnverifiedSongProcessingUrl = (sharedSongId: string, processQueue = false) => {
   const searchParams = new URLSearchParams({
@@ -23,7 +26,7 @@ export const buildAdminUnverifiedSongProcessingUrl = (sharedSongId: string, proc
 };
 
 export const getNextAdminUnverifiedSongProcessingUrl = (songs: AdminUnverifiedSong[], currentSharedSongId: string) => {
-  const nextSong = getOldestAdminUnverifiedSong(songs, currentSharedSongId);
+  const nextSong = getRandomAdminUnverifiedSong(songs, currentSharedSongId);
 
   return nextSong ? buildAdminUnverifiedSongProcessingUrl(nextSong.sharedSongId, true) : 'admin/';
 };

@@ -17,7 +17,7 @@ import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { RegenerateIndexButton } from './regenerate-index-button';
 import {
   buildAdminUnverifiedSongProcessingUrl,
-  getOldestAdminUnverifiedSong,
+  getRandomAdminUnverifiedSong,
 } from './unverified-song-processing-queue';
 import {
   AdminUnverifiedSong,
@@ -121,7 +121,7 @@ export function UnverifiedSongManagement({ password }: Props) {
     },
   });
 
-  const oldestSongToProcess = getOldestAdminUnverifiedSong(songs);
+  const hasSongsToProcess = songs.length > 0;
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
   const errorMessage = error instanceof Error ? error.message : null;
@@ -203,12 +203,14 @@ export function UnverifiedSongManagement({ password }: Props) {
           <Button
             variant="contained"
             onClick={() => {
-              if (oldestSongToProcess) {
-                navigate(buildAdminUnverifiedSongProcessingUrl(oldestSongToProcess.sharedSongId, true));
+              const songToProcess = getRandomAdminUnverifiedSong(songs);
+
+              if (songToProcess) {
+                navigate(buildAdminUnverifiedSongProcessingUrl(songToProcess.sharedSongId, true));
               }
             }}
-            disabled={isBusy || !oldestSongToProcess}>
-            Process oldest unverified
+            disabled={isBusy || !hasSongsToProcess}>
+            Process random unverified
           </Button>
           <RegenerateIndexButton disabled={isBusy} onRegenerate={() => void handleRegenerateIndex()} />
           <Button
