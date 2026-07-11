@@ -132,11 +132,17 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          # Value already defaults to true, but `persist-credentials` is required to push new commits to the repository.
+          persist-credentials: true
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Build app
-        run: pnpm build
+        run: |
+          git config --global --add safe.directory /__w/allkaraoke/allkaraoke
+          pnpm build
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
       - name: Run visual regression tests and update snapshots
