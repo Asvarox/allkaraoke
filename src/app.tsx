@@ -14,7 +14,6 @@ import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
 import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
-import DevScreenshots from '~/routes/dev-screenshots/dev-screenshots';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
@@ -34,6 +33,9 @@ const LazySongList = lazy(() =>
 const LazyAdmin = lazy(() => import('~/routes/admin/admin'));
 const LazyHistory = lazy(() => import('~/routes/history/history-page'));
 const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) => ({ default: modules.default })));
+// import.meta.env.DEV is statically replaced at build time, so this whole branch (and the dev-screenshots
+// module's eager glob import of the test screenshot PNGs) is dead-code-eliminated from production builds.
+const LazyDevScreenshots = import.meta.env.DEV ? lazy(() => import('~/routes/dev-screenshots/dev-screenshots')) : null;
 
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
@@ -101,7 +103,16 @@ function App() {
                   )}
                 />
                 <Route path="social-media-elements" component={SocialMediaElements} />
-                <Route path="dev/screenshots" component={DevScreenshots} />
+                {LazyDevScreenshots && (
+                  <Route
+                    path="dev/screenshots"
+                    component={() => (
+                      <Suspense fallback={<PageLoader />}>
+                        <LazyDevScreenshots />
+                      </Suspense>
+                    )}
+                  />
+                )}
                 <Route path={routePaths.CONVERT} component={() => <Convert />} />
                 <Route
                   path={routePaths.EDIT_SONGS_LIST}
