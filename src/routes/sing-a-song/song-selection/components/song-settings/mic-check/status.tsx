@@ -38,7 +38,7 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
             </span>
           ) : status === 'unstable' ? (
             <span>
-              The device is <strong>disconnected</strong>. Reconnect it, please.
+              The connection is <strong>unstable</strong>. Check your Wi-Fi signal.
             </span>
           ) : null}
         </div>

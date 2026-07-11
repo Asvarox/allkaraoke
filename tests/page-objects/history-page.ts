@@ -35,6 +35,6 @@ export class HistoryPagePO {
   }
 
   public get expandedDetails() {
-    return this.page.getByTestId('history-entry-details');
+    return this.page.getByTestId('entry-details');
   }
 }

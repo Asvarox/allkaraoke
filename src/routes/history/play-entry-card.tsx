@@ -68,7 +68,7 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
         }`}>
         <div className="min-h-0 overflow-hidden">
           <Menu.Divider className="my-2" />
-          <div className="grid grid-cols-2 divide-x divide-white/20 px-4 pb-2" data-test="history-entry-details">
+          <div className="grid grid-cols-2 divide-x divide-white/20 px-4 pb-2" data-test="entry-details">
             <div className="flex flex-col gap-1 pr-3">
               <DetailRow>
                 <span>Mode</span>
