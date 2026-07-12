@@ -39,6 +39,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
       const name = storage.local.getItem<string>('remote_mic_name') ?? '';
       RemoteMicClient.connect(roomId ?? '', name, true);
     }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const isConnected = connectionStatus === 'connected';

@@ -35,36 +35,47 @@ type KeyboardsList = Record<string, HelpEntry>;
 
 export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
   const [keyboards, setKeyboards] = useState<KeyboardsList>({});
+  // Tracks registration order separately from `keyboards`. The *last newly-registered* entry is
+  // considered "active" - relying on Object.entries key order doesn't work since updating an
+  // existing key's value doesn't move it to the end. Only `setKeyboard`/`unsetKeyboard` (mounting,
+  // unmounting, or an `enabled` transition) touch `order`; `updateKeyboard` refreshes an already-
+  // registered entry's content without reshuffling it, so a background component's help text
+  // changing (e.g. mic level driven re-renders) can't steal "active" status from whichever screen
+  // the user is actually on.
+  const [order, setOrder] = useState<string[]>([]);
 
   const setKeyboard = (name: string, helpEntry: HelpEntry) => {
     setKeyboards((kbs) => ({
       ...kbs,
       [name]: helpEntry,
     }));
+    setOrder((current) => (current.includes(name) ? current : [...current, name]));
   };
 
-  const unsetKeyboard = (name: string) => setKeyboards((kbs) => omit(kbs, [name]));
+  const updateKeyboard = (name: string, helpEntry: HelpEntry) => {
+    setKeyboards((kbs) => (name in kbs ? { ...kbs, [name]: helpEntry } : kbs));
+  };
 
-  // Pick the active layout. Normally the most-recently-registered keyboard wins (`.at(-1)`), but a
-  // `mirror` screen is an unambiguous "this is the interactive screen" signal, so it takes priority
-  // over background keyboards (e.g. a menu left mounted underneath) whose focus churn would otherwise
-  // steal the selection. Classic/song-selection ordering is unaffected (they have no mirror entry).
-  const entries = Object.entries(keyboards);
-  const [, help] = entries.filter(([, entry]) => entry.mode === 'mirror').at(-1) ?? entries.at(-1) ?? [];
+  const unsetKeyboard = (name: string) => {
+    setKeyboards((kbs) => omit(kbs, [name]));
+    setOrder((current) => current.filter((entry) => entry !== name));
+  };
 
-  // Republish whenever the layout content changes (not just when the active keyboard changes),
-  // so mirrored control values (checked/unchecked, switch value, focus) stay live on the phone.
-  const serializedHelp = JSON.stringify(help ?? null);
+  const name = order.at(-1);
+  const help = name ? keyboards[name] : undefined;
+
+  // Republish whenever the active keyboard changes or its content is refreshed (`updateKeyboard`
+  // produces a new `help` object), so mirrored control values stay live on the phone.
   useEffect(() => {
     RemoteMicServer.publish('keyboard-layout', help);
-  }, [serializedHelp]);
+  }, [name, help]);
 
   const { mode, remote, controls, ...rest } = help ?? {};
 
   const hasContent = !!Object.values(rest).length;
 
   return (
-    <KeyboardHelpContext value={{ setKeyboard, unsetKeyboard, hasContent }}>
+    <KeyboardHelpContext value={{ setKeyboard, updateKeyboard, unsetKeyboard, hasContent }}>
       {children}
       <KeyboardHelpView help={rest} />
       <ConnectionStatus />

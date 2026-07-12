@@ -98,7 +98,7 @@ export default function useSongSelection(additionalSong: string | null, songsPer
       url.searchParams.set('song', selectedSongId!);
       global.history.replaceState(null, '', url.toString());
     }
-  }, [preselected, selectedSongId, songList, isLoading]);
+  }, [preselected, selectedSongId, songList, isLoading, cleanSelectedSongId]);
 
   const songPreview = songList?.find((song) => song.id === cleanSelectedSongId);
   return {

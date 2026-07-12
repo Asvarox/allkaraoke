@@ -6,6 +6,7 @@ interface Props {
 }
 
 function MicCheck({ names }: Props) {
+  'use no memo'; // React Compiler: PlayersManager.getPlayers() reads a mutable singleton directly in render (not via a hook), so the compiler treats it as non-reactive and caches a stale player list.
   return (
     <div className="flex gap-3">
       {PlayersManager.getPlayers().map((player) => (

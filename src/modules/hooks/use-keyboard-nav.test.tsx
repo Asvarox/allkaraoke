@@ -13,11 +13,15 @@ vitest.mock('~/modules/sound-manager', () => ({
 }));
 
 // Captures every HelpEntry the hook publishes so we can assert on the layout sent to remote mics.
+// useKeyboardHelp registers via setKeyboard and refreshes content via updateKeyboard, so we capture both.
 function setup(register: (nav: ReturnType<typeof useKeyboardNav>) => void) {
   const published: HelpEntry[] = [];
+  const record = (_name: string, help: HelpEntry) => {
+    published.push(help);
+  };
   const wrapper: FunctionComponent<PropsWithChildren> = ({ children }) => (
     <KeyboardHelpContext
-      value={{ setKeyboard: (_name, help) => published.push(help), unsetKeyboard: () => {}, hasContent: false }}>
+      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false }}>
       {children}
     </KeyboardHelpContext>
   );

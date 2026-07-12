@@ -55,7 +55,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
     ) {
       setIsOverlayVisible(false);
     }
-  }, [song.data, isTransitionTimeout, playerState, isOverlayVisible]);
+  }, [song.data, isTransitionTimeout, playerState, isOverlayVisible, showCalibration]);
 
   if (isEnded && song.data) {
     return (

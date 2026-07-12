@@ -64,9 +64,9 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             back: onBackspace ? backspaceHelp : undefined,
             ...additionalHelp,
           },
-    // NOTE: `additionalHelp` is intentionally excluded — callers pass a fresh object literal each
-    // render (e.g. `{ remote: [...] }` or the default `{}`), so including it would recompute `help`
-    // every render and cause an infinite publish→re-render loop. Its content is effectively static.
+    // NOTE: `onBackspace` and `additionalHelp` are intentionally excluded — callers pass fresh values
+    // each render (a new `() => …` and object literal), so including them would recompute `help`
+    // every render and, via updateKeyboard, spin an infinite re-render loop. Their content is static.
     [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls],
   );
   useKeyboardHelp(help, enabled);
@@ -162,6 +162,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [currentlySelected]);
 
+  // oxlint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
     debug && newElements.length && console.log('new elements', newElements);

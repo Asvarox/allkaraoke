@@ -9,6 +9,7 @@ interface Props {
 }
 
 export default function SyncLyricsToVideo(props: Props) {
+  'use no memo'; // React Compiler: this wrapper's own props are stable across most parent re-renders, so when compiled it bails out and stops the "incidental" re-renders that EditSong relies on to notice its player ref has been attached.
   return (
     <Box data-test="sync-lyrics">
       {props.data && props.data.video.length < 15 && !!props.data.tracks?.[0]?.sections?.length && (

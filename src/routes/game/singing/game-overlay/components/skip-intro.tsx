@@ -17,6 +17,7 @@ interface Props {
 }
 
 function SkipIntro({ playerRef, isEnabled }: Props) {
+  'use no memo'; // React Compiler: shouldBeVisible depends on GameState.getCurrentTime(), read directly during render, while playerRef/isEnabled props stay stable, so the compiler's auto-memo bails out and the skip-intro prompt freezes at its first computed visibility.
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const song = GameState.getSong()!;
   const hasLongIntro = useMemo(() => songHasLongIntro(song), [song]);
