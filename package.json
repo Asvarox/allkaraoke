@@ -61,6 +61,7 @@
     "build:serve:e2e:fast": "FAST_BUILD=1 pnpm build && pnpm start:production",
     "build:serve:e2e:watch": "FAST_BUILD=1 pnpm build --watch & pnpm start:production",
     "test": "vitest",
+    "test:staged": "vitest --watch=false --changed --passWithNoTests",
     "lint": "oxlint .",
     "generate-index": "pnpm ts-node scripts/generate-index.ts",
     "predeploy": "pnpm generate-index && pnpm build",
