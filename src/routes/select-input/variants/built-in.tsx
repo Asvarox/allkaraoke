@@ -34,26 +34,23 @@ function useIsPlayerMicAudible(inputLabel: string) {
 
   const previousMeasurements = useRef<number[]>([]);
   const attempts = useRef(0);
-  const onMeasure = useCallback(
-    ([volume]: [number, number]) => {
-      previousMeasurements.current.push(volume);
-      if (previousMeasurements.current.length > 35) {
-        const medianMeasurement =
-          previousMeasurements.current.sort()[Math.floor(previousMeasurements.current.length / 2)];
+  const onMeasure = useCallback(([volume]: [number, number]) => {
+    previousMeasurements.current.push(volume);
+    if (previousMeasurements.current.length > 35) {
+      const medianMeasurement =
+        previousMeasurements.current.sort()[Math.floor(previousMeasurements.current.length / 2)];
 
-        const audible = medianMeasurement > 0;
+      const audible = medianMeasurement > 0;
 
-        if (audible || attempts.current > 7) {
-          setIsAudible(audible);
-        } else {
-          attempts.current++;
-        }
-
-        previousMeasurements.current.length = 0;
+      if (audible || attempts.current > 7) {
+        setIsAudible(audible);
+      } else {
+        attempts.current++;
       }
-    },
-    [inputLabel],
-  );
+
+      previousMeasurements.current.length = 0;
+    }
+  }, []);
 
   usePlayerMicData(0, onMeasure, isAudible !== true);
 
@@ -66,7 +63,8 @@ function useIsPlayerMicAudible(inputLabel: string) {
   return isAudible;
 }
 
-function BuiltIn(props: Props) {
+function BuiltIn({ onSetupComplete, ...props }: Props) {
+  'use no memo'; // React Compiler: <MicCheck /> below is rendered with no props, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
@@ -97,7 +95,7 @@ function BuiltIn(props: Props) {
     }
   };
 
-  useEffect(autoselect, []);
+  useEffect(autoselect, [autoselect]);
   useEventEffect([events.inputListChanged, events.playerRemoved], autoselect);
 
   const cycleMic = () => {
@@ -111,8 +109,8 @@ function BuiltIn(props: Props) {
   const isAudible = useIsPlayerMicAudible(selectedMic);
 
   useEffect(() => {
-    props.onSetupComplete(!!selectedMic && !!isAudible);
-  }, [selectedMic, isAudible]);
+    onSetupComplete(!!selectedMic && !!isAudible);
+  }, [selectedMic, isAudible, onSetupComplete]);
 
   return (
     <>

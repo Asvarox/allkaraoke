@@ -77,6 +77,7 @@ function Player({
   ref,
   ...restProps
 }: Props) {
+  'use no memo'; // React Compiler: none of GameOverlay's props tick every frame (score comes from GameState, read at render time), so the compiler memoizes the <GameOverlay> element across renders and the score display never updates.
   const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const player = useRef<VideoPlayerRef | null>(null);
   const [pauseMenuVisible, setPauseMenuVisible] = useState(false);

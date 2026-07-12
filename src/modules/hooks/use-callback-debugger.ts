@@ -31,6 +31,6 @@ export default function useCallbackDebugger<T extends Function>(
     console.log('[use-callback-debugger] ', changedDeps);
   }
 
-  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-compiler/react-compiler react-hooks/exhaustive-deps
   return useCallback(callback, dependencies);
 }

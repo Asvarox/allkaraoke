@@ -185,6 +185,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         }
       });
     }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [
     conversionResult,
     metadataEntity.year,

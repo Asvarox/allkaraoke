@@ -40,7 +40,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       back: onBackspace ? backspaceHelp : undefined,
       ...additionalHelp,
     }),
-    [currentlySelectedActionLabel, actions, backspaceHelp, direction],
+    [currentlySelectedActionLabel, backspaceHelp, direction, onBackspace, additionalHelp],
   );
   useKeyboardHelp(help, enabled);
 
@@ -113,6 +113,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [currentlySelected]);
 
+  // oxlint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
     debug && newElements.length && console.log('new elements', newElements);

@@ -3,6 +3,7 @@ import { useSetlist } from '~/modules/songs/hooks/use-setlist';
 import SongDao from '~/modules/songs/songs-service';
 
 export default function useSongIndex(includeDeleted = false) {
+  'use no memo'; // React Compiler: SongDao.getCurrentIndex() reads mutable external state directly (not via useState/useSyncExternalStore), so the compiler caches it as non-reactive and `isLoading` gets stuck at its initial value.
   const currentIndex = SongDao.getCurrentIndex();
   const [songIndex, setSongIndex] = useState(() => currentIndex || []);
   const setlist = useSetlist();

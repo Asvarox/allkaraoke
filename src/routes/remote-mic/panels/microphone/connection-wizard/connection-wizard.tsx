@@ -40,6 +40,43 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
   // Mirrors connectionStatus but enforces a minimum display time for the connecting state,
   // so the "Connecting…" overlay isn't dismissed too abruptly before advancing or showing an error
   const [delayedConnectionStatus, setDelayedConnectionStatus] = useState<ConnectionStatuses>(connectionStatus);
+  const goToStep = (step: number) => {
+    stepDirectionRef.current = currentStep !== null && step < currentStep ? 'backward' : 'forward';
+
+    const directionClass = stepDirectionRef.current === 'forward' ? 'vt-forward' : 'vt-backward';
+    document.documentElement.classList.add(directionClass);
+    const transition = startViewTransition(() => {
+      flushSync(() => setCurrentStep(step));
+    });
+    if (transition) {
+      transition.finished.finally(() => {
+        document.documentElement.classList.remove('vt-forward', 'vt-backward');
+      });
+    } else {
+      document.documentElement.classList.remove('vt-forward', 'vt-backward');
+    }
+  };
+
+  // Completes the wizard with a forward view transition so the keyboard view animates in
+  const completeWizard = () => {
+    document.documentElement.classList.add('vt-forward');
+    const transition = startViewTransition(() => {
+      flushSync(onWizardComplete);
+    });
+    if (transition) {
+      transition.finished.finally(() => {
+        document.documentElement.classList.remove('vt-forward');
+      });
+    } else {
+      document.documentElement.classList.remove('vt-forward');
+    }
+  };
+
+  const handleConnect = (resolvedRoomId: string, name: string) => {
+    setConnectedRoomId(resolvedRoomId);
+    RemoteMicClient.connect(resolvedRoomId, name, false);
+    // Stay on step 1 — connection status changes will drive the transition to PickPlayer
+  };
 
   useEffect(() => {
     // Skip the probe if we already have a cached result from a previous mount
@@ -100,51 +137,14 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
         goToStep(2);
       }
     }
-  }, [delayedConnectionStatus, currentStep, permissions]);
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [delayedConnectionStatus, currentStep, permissions, goToStep, completeWizard]);
 
   useEffect(() => {
     if (!roomId && connectedRoomId && delayedConnectionStatus === 'connected') {
       navigate('remote-mic/', { room: connectedRoomId });
     }
   }, [connectedRoomId, delayedConnectionStatus, navigate, roomId]);
-
-  const goToStep = (step: number) => {
-    stepDirectionRef.current = currentStep !== null && step < currentStep ? 'backward' : 'forward';
-
-    const directionClass = stepDirectionRef.current === 'forward' ? 'vt-forward' : 'vt-backward';
-    document.documentElement.classList.add(directionClass);
-    const transition = startViewTransition(() => {
-      flushSync(() => setCurrentStep(step));
-    });
-    if (transition) {
-      transition.finished.finally(() => {
-        document.documentElement.classList.remove('vt-forward', 'vt-backward');
-      });
-    } else {
-      document.documentElement.classList.remove('vt-forward', 'vt-backward');
-    }
-  };
-
-  // Completes the wizard with a forward view transition so the keyboard view animates in
-  const completeWizard = () => {
-    document.documentElement.classList.add('vt-forward');
-    const transition = startViewTransition(() => {
-      flushSync(onWizardComplete);
-    });
-    if (transition) {
-      transition.finished.finally(() => {
-        document.documentElement.classList.remove('vt-forward');
-      });
-    } else {
-      document.documentElement.classList.remove('vt-forward');
-    }
-  };
-
-  const handleConnect = (resolvedRoomId: string, name: string) => {
-    setConnectedRoomId(resolvedRoomId);
-    RemoteMicClient.connect(resolvedRoomId, name, false);
-    // Stay on step 1 — connection status changes will drive the transition to PickPlayer
-  };
 
   const renderStep = () => {
     switch (currentStep ?? 0) {

@@ -93,6 +93,7 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
+  'use no memo'; // React Compiler: `player.current && (...)` reads a ref directly during render to decide what to show, which the compiler can't safely cache across renders (e.g. after the queue advances to the next song, the manipulation panel never reappears).
   const player = useRef<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
