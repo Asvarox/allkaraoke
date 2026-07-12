@@ -45,6 +45,7 @@ const GameOverlay = forwardRef(function (
   }: Props,
   fRef,
 ) {
+  'use no memo'; // React Compiler: reads GameState/PlayersManager mutable singletons directly during render (getPlayerScore, getSingSetup, getPlayers), so the compiler can cache stale JSX (e.g. the score display never updating).
   const [graphicLevel] = useSettingValue(GraphicSetting);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const canvas = useRef<HTMLCanvasElement | null>(null);

@@ -27,6 +27,7 @@ interface Props {
 }
 
 function SingStarMics(props: Props) {
+  'use no memo'; // React Compiler: <MicCheck names={[...]} /> below is passed a fresh-but-constant array each render, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(2);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
   const { Microphone } = useMicrophoneList(true, 'Microphone');

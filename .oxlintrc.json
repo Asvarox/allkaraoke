@@ -6,7 +6,6 @@
     "unicorn"
   ],
   "jsPlugins": [
-    "eslint-plugin-react-compiler",
     "eslint-plugin-no-only-tests",
     "eslint-plugin-react-refresh"
   ],
@@ -52,7 +51,8 @@
     "react/no-render-return-value": "error",
     "react/no-string-refs": "error",
     "react/no-unescaped-entities": "error",
-    "react-compiler/react-compiler": "error",
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
     "no-only-tests/no-only-tests": "error",
     "react-refresh/only-export-components": [
       "error",
