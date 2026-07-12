@@ -101,18 +101,27 @@ function ClassicKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   );
 }
 
-// Song-selection mode — the bespoke song browser: search widget on top of the arrow pad.
+// Song-selection mode — the bespoke song browser: search widget + arrow pad + "Random song".
 // Extend here (e.g. playlist controls) without touching the other modes.
 function SongSelectionKeyboard({ keyboard, onSearchStateChange }: { keyboard: HelpEntry } & Props) {
   return (
     <div data-test="remote-keyboard" data-mode="song-selection" className="flex flex-wrap justify-center gap-4">
       {keyboard.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
       <NavPad keyboard={keyboard} />
+      {/* "Random song" only makes sense while browsing songs, so it lives in this mode, not NavPad. */}
+      <ActionsContainer
+        $disabled={keyboard.shiftR === undefined}
+        data-test="keyboard-shift-r"
+        className="w-full basis-full">
+        <ActionButton onClick={onPress('random')}>
+          <Shuffle /> {keyboard.shiftR || 'Random Song'}
+        </ActionButton>
+      </ActionsContainer>
     </div>
   );
 }
 
-// Shared arrow pad + accept/back + random row, used by classic and song-selection modes.
+// Shared arrow pad + accept/back, used by classic and song-selection modes.
 function NavPad({ keyboard }: { keyboard: HelpEntry }) {
   const isHorizontal = keyboard.horizontal !== undefined || keyboard['horizontal-vertical'] !== undefined;
   const isVertical = keyboard.vertical !== undefined || keyboard['horizontal-vertical'] !== undefined;
@@ -174,14 +183,6 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
               Enter <ArrowForward />
             </>
           )}
-        </ActionButton>
-      </ActionsContainer>
-      <ActionsContainer
-        $disabled={keyboard.shiftR === undefined}
-        data-test="keyboard-shift-r"
-        className="w-full basis-full">
-        <ActionButton onClick={onPress('random')}>
-          <Shuffle /> {keyboard.shiftR || 'Random Song'}
         </ActionButton>
       </ActionsContainer>
     </>
