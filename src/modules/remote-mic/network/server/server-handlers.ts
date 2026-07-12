@@ -85,6 +85,12 @@ export const serverHandlers = {
       events.remoteKeyboardPressed.dispatch(key);
     }),
 
+    // Directly activate a mirrored control by its register() name (mirror mode). Same write
+    // permission as keystroke, since it drives the same on-screen actions.
+    activateControl: defineMutation((_ctx: RpcContext, name: string) => {
+      events.remoteControlActivated.dispatch(name);
+    }),
+
     // Any connected mic can confirm its readiness (no write permission required)
     confirmReadiness: defineMutation(
       (ctx: RpcContext) => {

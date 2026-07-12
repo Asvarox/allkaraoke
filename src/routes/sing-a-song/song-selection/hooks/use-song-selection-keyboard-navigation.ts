@@ -229,6 +229,7 @@ export const useSongSelectionKeyboardNavigation = (
 
   const help = useMemo<HelpEntry>(
     () => ({
+      mode: 'song-selection',
       'horizontal-vertical': null,
       accept: null,
       back: null,

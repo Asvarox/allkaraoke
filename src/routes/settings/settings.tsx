@@ -3,11 +3,10 @@ import { Helmet } from 'react-helmet';
 import CameraManager from '~/modules/camera/camera-manager';
 import { Menu } from '~/modules/elements/akui/menu';
 import Loader from '~/modules/elements/loader';
-import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import { Switcher } from '~/modules/elements/switcher';
+import { NavButton, NavSwitcher } from '~/modules/elements/nav-controls';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { nextValue } from '~/modules/utils/indexes';
@@ -48,13 +47,13 @@ function Settings() {
   let cameraValue = 'disabled';
   let cameraDisplayValue: ReactNode = 'Disabled';
   if (isRequestInProgress) {
-    cameraValue = 'loading';
+    cameraValue = 'Loading';
     cameraDisplayValue = <Loader />;
   } else if (camera === null) {
-    cameraValue = 'click-to-enable';
+    cameraValue = 'Click to enable';
     cameraDisplayValue = 'Click to enable';
   } else if (camera) {
-    cameraValue = 'enabled';
+    cameraValue = 'Enabled';
     cameraDisplayValue = 'Enabled';
   }
 
@@ -64,52 +63,61 @@ function Settings() {
         <title>Settings | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <Menu.Header>Settings</Menu.Header>
-      <Switcher
-        {...register('graphics-level', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}
-        label="Graphics"
-        value={graphicLevel.toUpperCase()}
-      />
-      <Switcher
-        {...register('fps-count-level', () => setFpsCount(nextValue(FpsCount, fpsCount)))}
-        label="FPS Count"
-        value={fpsCount}
-      />
-      <Menu.Button
-        {...register('calibration-settings', () => navigate('settings/calibration/'))}
-        size="small"
-        info="If the sound is not synchronised with the lyrics, use this to compensate it.">
-        Calibrate input lag
-      </Menu.Button>
-      <hr />
-      <Switcher
-        {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}
-        label="Enable camera mode"
-        value={cameraValue}
-        displayValue={cameraDisplayValue}
-        info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
-      />
-      {!mobileModeDisabled && (
-        <>
-          <hr />
-          <Switcher
-            {...register('mobile-phone-mode', () => setMobilePhoneMode(!mobilePhoneMode))}
-            label="Mobile Phone Mode"
-            value={mobilePhoneMode ? 'Yes' : 'No'}
-            info="Adjust the game to a smaller screen. Disables option to sing in duets."
-          />
-        </>
-      )}
-      <hr />
-      <MenuButton {...register('remote-mics-settings', () => navigate('settings/remote-mics/'))} size="small">
-        Remote Microphones Settings
-      </MenuButton>
-      <MenuButton {...register('setup-mics-button', () => navigate('select-input/'))} size="small">
-        Setup Microphones
-      </MenuButton>
-      <MenuButton {...register('manage-songs-button', () => navigate('manage-songs/'))} size="small">
-        Manage Songs
-      </MenuButton>
-      <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
+      <KeyboardNavContext value={register}>
+        <NavSwitcher
+          name="graphics-level"
+          label="Graphics"
+          value={graphicLevel.toUpperCase()}
+          onClick={() => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel))}
+        />
+        <NavSwitcher
+          name="fps-count-level"
+          label="FPS Count"
+          value={fpsCount}
+          onClick={() => setFpsCount(nextValue(FpsCount, fpsCount))}
+        />
+        <NavButton
+          name="calibration-settings"
+          size="small"
+          info="If the sound is not synchronised with the lyrics, use this to compensate it."
+          onClick={() => navigate('settings/calibration/')}>
+          Calibrate input lag
+        </NavButton>
+        <hr />
+        <NavSwitcher
+          name="camera-access"
+          label="Enable camera mode"
+          value={cameraValue}
+          displayValue={cameraDisplayValue}
+          info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
+          onClick={() => (camera ? CameraManager.disable() : enableCamera())}
+        />
+        {!mobileModeDisabled && (
+          <>
+            <hr />
+            <NavSwitcher
+              name="mobile-phone-mode"
+              label="Mobile Phone Mode"
+              value={mobilePhoneMode ? 'Yes' : 'No'}
+              info="Adjust the game to a smaller screen. Disables option to sing in duets."
+              onClick={() => setMobilePhoneMode(!mobilePhoneMode)}
+            />
+          </>
+        )}
+        <hr />
+        <NavButton name="remote-mics-settings" size="small" onClick={() => navigate('settings/remote-mics/')}>
+          Remote Microphones Settings
+        </NavButton>
+        <NavButton name="setup-mics-button" size="small" onClick={() => navigate('select-input/')}>
+          Setup Microphones
+        </NavButton>
+        <NavButton name="manage-songs-button" size="small" onClick={() => navigate('manage-songs/')}>
+          Manage Songs
+        </NavButton>
+        <NavButton name="back-button" onClick={goBack}>
+          Return To Main Menu
+        </NavButton>
+      </KeyboardNavContext>
     </MenuWithLogo>
   );
 }

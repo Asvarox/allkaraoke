@@ -103,6 +103,8 @@ export const events = {
   ),
 
   remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
+  // A mirrored control was tapped directly on the remote mic; `name` matches a useKeyboardNav register() name.
+  remoteControlActivated: new GameEvent<(name: string) => void>('remoteControlActivated'),
   remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch'),
   remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
   remoteMicSongListUpdated: new GameEvent<(id: string, delta: { added?: string[]; deleted?: string[] }) => void>(
