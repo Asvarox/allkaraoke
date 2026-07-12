@@ -25,7 +25,7 @@
     "localforage": "^1.10.0",
     "material-react-table": "^3.2.1",
     "motion": "^11.18.0",
-    "msgpackr": "^1.10.1",
+    "msgpackr": "^2.0.4",
     "peerjs": "2.0.0-beta.3",
     "posthog-js": "^1.390.1",
     "qrcode.react": "^3.1.0",
@@ -76,8 +76,8 @@
     "songs:backfill-duration": "pnpm ts-node scripts/backfill-song-durations.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "knip": "knip --exclude exports,types,nsExports,nsTypes,classMembers,enumMembers,duplicates,unresolved --no-config-hints",
-    "type-check": "tsgo --noEmit",
+    "knip": "knip --exclude exports,types,nsExports,nsTypes,enumMembers,duplicates,unresolved --no-config-hints",
+    "type-check": "tsc --noEmit",
     "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check"
   },
   "browserslist": {
@@ -93,9 +93,9 @@
     ]
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.42.3",
-    "@cloudflare/vitest-pool-workers": "^0.16.20",
-    "@cloudflare/workers-types": "^4.20260626.1",
+    "@cloudflare/vite-plugin": "^1.44.0",
+    "@cloudflare/vitest-pool-workers": "^0.18.4",
+    "@cloudflare/workers-types": "^5.20260712.1",
     "@emotion/babel-plugin": "^11.13.5",
     "@playwright/experimental-ct-react": "1.61.0",
     "@playwright/test": "1.61.0",
@@ -117,9 +117,8 @@
     "@types/tinycolor2": "^1.4.6",
     "@types/use-persisted-state": "^0.3.5",
     "@types/uuid": "^9.0.8",
-    "@typescript/native-preview": "7.0.0-dev.20260111.1",
     "@vitejs/plugin-basic-ssl": "^2.3.0",
-    "@vitejs/plugin-react": "^5.2.0",
+    "@vitejs/plugin-react": "^6.0.3",
     "@vitest/ui": "4.1.9",
     "@welldone-software/why-did-you-render": "^10.0.1",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
@@ -133,7 +132,7 @@
     "happy-dom": "^20.10.5",
     "html-minifier-terser": "^7.2.0",
     "husky": "^9.1.7",
-    "knip": "^5.45.0",
+    "knip": "^6.26.0",
     "lint-staged": "^17.0.7",
     "musicbrainz-api": "0.11.0",
     "npm-run-all": "^4.1.5",
@@ -150,10 +149,11 @@
     "storybook": "^10.4.6",
     "tailwindcss": "^4.3.1",
     "ts-node": "^10.9.2",
+    "typescript": "^7.0.2",
     "utility-types": "^3.11.0",
-    "vite": "^8.1.0",
-    "vitest": "^4.1.9",
-    "wrangler": "^4.105.0"
+    "vite": "^8.1.4",
+    "vitest": "^4.1.10",
+    "wrangler": "^4.110.0"
   },
   "homepage": "./",
   "dependenciesMeta": {
