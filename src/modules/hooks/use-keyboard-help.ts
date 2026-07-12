@@ -6,7 +6,7 @@ let id = 0;
 
 export default function useKeyboardHelp(help: HelpEntry, enabled: boolean) {
   const name = useRef(`${String(Math.random())}-${id++}`);
-  const { setKeyboard, unsetKeyboard } = useContext(KeyboardHelpContext);
+  const { setKeyboard, updateKeyboard, unsetKeyboard } = useContext(KeyboardHelpContext);
 
   const setHelp = (help: HelpEntry) => {
     setKeyboard(name.current, help);
@@ -14,13 +14,26 @@ export default function useKeyboardHelp(help: HelpEntry, enabled: boolean) {
 
   const clearHelp = () => unsetKeyboard(name.current);
 
+  const helpRef = useRef(help);
+  helpRef.current = help;
+
+  // Registers/unregisters presence - only reacts to `enabled` (plus mount/unmount), so becoming
+  // active isn't affected by `help` content refreshing while this stays enabled the whole time.
   useEffect(() => {
     if (enabled) {
-      setHelp(help);
+      setKeyboard(name.current, helpRef.current);
+      return () => unsetKeyboard(name.current);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- registration lifecycle is intentionally keyed on `enabled` only
+  }, [enabled]);
 
-    return clearHelp;
-  }, [help, enabled]);
+  // Keeps the registered help text/remote actions fresh without touching which entry is "active".
+  useEffect(() => {
+    if (enabled) {
+      updateKeyboard(name.current, help);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- content refresh is intentionally keyed on `help` only
+  }, [help]);
 
   return { setHelp, clearHelp };
 }
