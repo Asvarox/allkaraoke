@@ -37,7 +37,7 @@ export default defineConfig({
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),
     babel({
-      presets: [reactCompilerPreset()],
+    //   presets: [reactCompilerPreset()],
       plugins: [
         '@emotion/babel-plugin',
         // https://mui.com/material-ui/guides/minimizing-bundle-size/
