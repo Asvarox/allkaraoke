@@ -2,7 +2,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "9693cf8a15de514c21e2799ea658ef0039b36751" };
+		e.SENTRY_RELEASE = { id: "3e1ac38d9d387ed4b6377293b251c40feb1c90c2" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -11,7 +11,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "87c6c9fc-895f-40e7-9a15-5ae82948631d", e._sentryDebugIdIdentifier = "sentry-dbid-87c6c9fc-895f-40e7-9a15-5ae82948631d");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4b3f9cbf-f35c-43ab-9c45-6db23493fcfb", e._sentryDebugIdIdentifier = "sentry-dbid-4b3f9cbf-f35c-43ab-9c45-6db23493fcfb");
 	} catch (e) {}
 })();
 var responseHeaders$3 = { "Content-Type": "application/json" };
