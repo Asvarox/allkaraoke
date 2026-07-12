@@ -29,7 +29,19 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: pnpm npm-run-all --continue-on-error prettier-check lint type-check test build-storybook knip
+      - parallel:
+          - name: Prettier check
+            run: pnpm prettier-check
+          - name: Lint
+            run: pnpm lint
+          - name: Type check
+            run: pnpm type-check
+          - name: Test
+            run: pnpm test
+          - name: Build Storybook
+            run: pnpm build-storybook
+          - name: Knip
+            run: pnpm knip
   e2e-tests-run:
     strategy:
       fail-fast: false
