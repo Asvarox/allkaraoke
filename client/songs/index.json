@@ -10340,6 +10340,36 @@
     "local": false
   },
   {
+    "id": "apulanta-koneeseen-kadonnut",
+    "title": "Koneeseen kadonnut",
+    "artist": "Apulanta",
+    "video": "C6TziNqvVPs",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 364,
+    "gap": 48110.98901098901,
+    "year": "2006",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-07-13T04:14:31.539Z",
+    "genre": "Alternative Rock",
+    "realBpm": 182,
+    "previewStart": 48,
+    "previewEnd": 233,
+    "volume": 1,
+    "author": "Dorime",
+    "duration": 262,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6002,
+    "tracksCount": 1,
+    "search": "apulantakoneeseenkadonnut",
+    "local": false
+  },
+  {
     "id": "aqua-barbie-girl",
     "title": "Barbie Girl",
     "artist": "Aqua",
@@ -65135,10 +65165,10 @@
       "English"
     ],
     "bpm": 336,
-    "gap": 6197.857142857143,
+    "gap": 6097.857142857143,
     "year": "1978",
     "artistOrigin": "US",
-    "lastUpdate": "2023-07-23T11:39:19.749Z",
+    "lastUpdate": "2026-07-12T12:34:39.502Z",
     "edition": "SingStar Anthems",
     "genre": "Disco",
     "realBpm": 116,
@@ -114166,6 +114196,33 @@
     "local": false
   },
   {
+    "id": "mumford-sons-dust-bowl-dance",
+    "title": "Dust Bowl Dance",
+    "artist": "Mumford & Sons",
+    "video": "CSSWKzsOVnI",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 14330.384615384615,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-13T04:14:32.060Z",
+    "genre": "Folk",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6007,
+    "tracksCount": 1,
+    "search": "mumfordsonsdustbowldance",
+    "local": false
+  },
+  {
     "id": "mumford-sons-i-will-wait",
     "title": "I Will Wait",
     "artist": "Mumford & Sons",
@@ -114646,6 +114703,35 @@
     "shortId": 3087,
     "tracksCount": 1,
     "search": "musesupermassiveblackhole",
+    "local": false
+  },
+  {
+    "id": "muse-supremacy",
+    "title": "Supremacy",
+    "artist": "Muse",
+    "video": "avM_UsVo0IA",
+    "language": [
+      "English"
+    ],
+    "bpm": 316,
+    "gap": 59553.16455696202,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-13T04:14:31.547Z",
+    "genre": "Rock",
+    "realBpm": 158,
+    "volume": 1,
+    "author": "Hoanzl",
+    "duration": 292,
+    "tracks": [
+      {
+        "name": "Supremacy",
+        "start": 21
+      }
+    ],
+    "shortId": 6004,
+    "tracksCount": 1,
+    "search": "musesupremacy",
     "local": false
   },
   {
@@ -137618,6 +137704,37 @@
     "local": false
   },
   {
+    "id": "ryo-supercell-fthatsune-miku-love-is-war",
+    "title": "Love is War",
+    "artist": "Ryo (Supercell) ft.Hatsune Miku",
+    "video": "SmX5cnQ1YAg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 175.92,
+    "gap": 13006.80763983629,
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-07-13T04:14:31.545Z",
+    "genre": "Vocaloid",
+    "realBpm": 175,
+    "previewStart": 101,
+    "previewEnd": 136,
+    "volume": 1,
+    "author": "Subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "duration": 238,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6003,
+    "tracksCount": 1,
+    "search": "ryosupercellfthatsunemikuloveiswar",
+    "local": false
+  },
+  {
     "id": "ryokuoushoku-shakai-hana-ni-natte",
     "title": "Hana ni natte",
     "artist": "Ryokuoushoku Shakai",
@@ -138812,6 +138929,35 @@
     "shortId": 3781,
     "tracksCount": 1,
     "search": "samsmithtoogoodatgoodbyes",
+    "local": false
+  },
+  {
+    "id": "sam-smith-writings-on-the-wall",
+    "title": "Writing’s On The Wall",
+    "artist": "Sam Smith",
+    "video": "G9LxUQL_Ucg",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.82,
+    "gap": 16840.269873324767,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-13T04:14:31.549Z",
+    "genre": "Soundtrack",
+    "realBpm": 66,
+    "volume": 1,
+    "author": "riperrin",
+    "sourceUrl": "https://www.youtube.com/watch?v=G9LxUQL_Ucg&t=1s",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6005,
+    "tracksCount": 1,
+    "search": "samsmithwritingsonthewall",
     "local": false
   },
   {
@@ -146611,7 +146757,7 @@
     "bpm": 364,
     "gap": 1420.989010989011,
     "year": "2023",
-    "lastUpdate": "2026-06-28T12:16:22.753Z",
+    "lastUpdate": "2026-07-12T08:07:45.093Z",
     "genre": "Hip-Hop",
     "realBpm": 127,
     "volume": 1,
@@ -149120,6 +149266,37 @@
     "shortId": 4089,
     "tracksCount": 1,
     "search": "strawberryalarmclockincenseandpeppermints",
+    "local": false
+  },
+  {
+    "id": "stray-kids-bang-chan-hyunjin-red-lights",
+    "title": "Red Lights",
+    "artist": "Stray Kids (Bang Chan & Hyunjin)",
+    "video": "k8Y6ZTjmCXs",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 256.89,
+    "gap": 2797.357234614037,
+    "year": "2021",
+    "lastUpdate": "2026-07-13T04:14:31.552Z",
+    "genre": "K-Pop",
+    "realBpm": 128,
+    "previewStart": 54,
+    "previewEnd": 79,
+    "volume": 0.9,
+    "author": "lemon44",
+    "sourceUrl": "https://youtu.be/k8Y6ZTjmCXs?si=6CsVKR_dWMmuMDAF",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6006,
+    "tracksCount": 1,
+    "search": "straykidsbangchanhyunjinredlights",
     "local": false
   },
   {
