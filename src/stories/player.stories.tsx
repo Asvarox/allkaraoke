@@ -55,6 +55,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     GameState.resetSingSetup();
     GameState.setSingSetup(singSetup);
     GameState.setSong(song);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: reset game state only when the story args change
   }, [args.tolerance, args.playerNum, args.gameMode]);
 
   const ref = useRef<PlayerRef | null>(null);

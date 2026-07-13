@@ -15,6 +15,7 @@ export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
 
   useEffect(() => {
     setSongStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- refetch stats only when the song key changes
   }, [storageKey]);
 
   useEventEffect(events.songStatStored, setSongStats);

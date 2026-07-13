@@ -79,6 +79,7 @@ function SingStarMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(isSetup);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when the SingStar setup state changes
   }, [isSetup]);
 
   useEffect(() => {

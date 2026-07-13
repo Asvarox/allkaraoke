@@ -54,7 +54,7 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
     return {
       popular: [...new Set([...actuallySungSongs, ...finalPopularSongs, ...songsToAdd, ...recentlyUpdatedSongs])],
     };
-  }, [excludedLanguages, loading, popularSongs.value, songs, sungSongs.value]);
+  }, [excludedLanguages, loading, popularSongs.value, songs, sungSongs.value, recentlyUpdatedSongs]);
 
   const defaultValue = useMemo(() => ({ popular: [] }), []);
 
