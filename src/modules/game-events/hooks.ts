@@ -10,7 +10,7 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     }) as T;
     event.subscribe(subscriber, getLast);
     return () => event.unsubscribe(subscriber);
-  }, [event]);
+  }, [event, getLast]);
 
   return value;
 }
@@ -38,6 +38,7 @@ export function useEventEffect<T extends AnyFunc>(
     eventList.forEach((e) => e.subscribe(effect));
 
     return () => eventList.forEach((e) => e.unsubscribe(effect));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- generic hook: deps are composed from the caller-provided event(s) and `dependencies` and can't be statically verified
   }, [...eventList, effect, ...dependencies]);
 }
 
@@ -50,15 +51,18 @@ export function useEventListenerSelector<S>(
 
   const eventList = Array.isArray(event) ? event : [event];
 
+  /* eslint-disable react-hooks/exhaustive-deps -- generic hook: re-runs on the caller-provided `dependencies` (not a static array literal) */
   useEffect(() => {
     setValue(selector());
   }, dependencies);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   useEffect(() => {
     const subscriber = () => setValue(selector());
     eventList.forEach((e) => e.subscribe(subscriber));
 
     return () => eventList.forEach((e) => e.unsubscribe(subscriber));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- (re)subscribes only when the event list changes; `selector` is intentionally read latest
   }, [...eventList]);
 
   return value;

@@ -23,7 +23,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
         }
       });
     }
-  }, [loading]);
+  }, [loading, permissionStatus]);
 
   return (
     <div className={`typography flex aspect-4/3 flex-col items-end`}>

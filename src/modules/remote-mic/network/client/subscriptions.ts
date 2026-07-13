@@ -59,6 +59,12 @@ export class ClientSubscriptionManager {
     return () => this.unsubscribeInternal(channel, callback);
   };
 
+  /** Returns the latest cached data for a channel, or undefined before the first push. Stable
+   * reference between publishes, so it can back `useSyncExternalStore`'s `getSnapshot`. */
+  public getSnapshot = <C extends ChannelName>(channel: C): ChannelData<C> | undefined => {
+    return this.latestData[channel] as ChannelData<C> | undefined;
+  };
+
   private unsubscribeInternal = <C extends ChannelName>(channel: C, callback: ChannelCallback<C>): void => {
     this.callbacks.get(channel)?.delete(callback as ChannelCallback<any>);
     const count = this.subscriberCounts[channel] ?? 0;

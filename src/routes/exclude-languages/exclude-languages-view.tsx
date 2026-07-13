@@ -66,7 +66,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         setExcludedLanguages(toExclude);
       }
     }
-  }, [excludedLanguages, languageList]);
+  }, [excludedLanguages, languageList, setExcludedLanguages]);
 
   const areAllLanguagesExcluded = useMemo(
     () => languageList.every((language) => excludedLanguages?.includes(language.name)),

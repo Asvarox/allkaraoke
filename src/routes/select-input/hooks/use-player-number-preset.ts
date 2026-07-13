@@ -20,5 +20,5 @@ export default function usePlayerNumberPreset(targetPlayerCount: number, maxPlay
         PlayersManager.addPlayer(availableNumbers.shift()! as 0 | 1 | 2 | 3);
       }
     }
-  }, []);
+  }, [targetPlayerCount, maxPlayerCount]);
 }

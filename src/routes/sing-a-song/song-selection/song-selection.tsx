@@ -152,6 +152,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     if (!isLoading) {
       list.current?.scrollToSongInGroup(focusedSong, 'auto');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- recalculates layout on width/playlist/search changes; `focusedSong` is read latest and has its own scroll effect above
   }, [width, selectedPlaylist, filters.search, isLoading, handleResize]);
 
   const navigate = useSmoothNavigate();

@@ -13,7 +13,7 @@ export default function PlayerNumberCircle({ number, ...restProps }: Props) {
   const forceUpdate = useUpdate();
   useEffect(() => {
     forceUpdate();
-  }, [style]);
+  }, [style, forceUpdate]);
 
   return (
     <PlayerColorCircle

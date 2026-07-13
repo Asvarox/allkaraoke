@@ -58,6 +58,7 @@ export default function StepEnterDetails({ roomId, onConnect, connectionStatus, 
 
   useEffect(() => {
     focusNextInput(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- focus the first empty input once on mount
   }, []);
 
   const shouldShowError = connectionStatus === 'error' && !errorReset;

@@ -63,8 +63,8 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
         captureException(e);
         console.error(e);
       }
-    } catch (e: any) {
-      if (e.name !== 'NotAllowedError') {
+    } catch (e) {
+      if (!(e instanceof Error) || e.name !== 'NotAllowedError') {
         captureException(e, { level: 'warning', extra: { message: 'SimplifiedMic.startMonitoring' } });
       }
       console.warn(e);

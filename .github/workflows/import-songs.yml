@@ -39,14 +39,14 @@ jobs:
         timeout-minutes: 3
       - name: Get songs
         if: github.event_name == 'workflow_dispatch'
-        run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ github.event.inputs.user_id || secrets.DEFAULT_IMPORT_USER_IDS }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"
+        run: pnpm tsx scripts/cicd/github-action-import-songs.ts "${{ github.event.inputs.user_id || secrets.DEFAULT_IMPORT_USER_IDS }}" "${{ github.event.inputs.days_from }}" "${{ github.event.inputs.days_to }}"
       - name: Get songs scheduled
         if: github.event_name == 'schedule'
-        run: pnpm ts-node scripts/cicd/github-action-import-songs.ts "${{ secrets.DEFAULT_IMPORT_USER_IDS }}" "" ""
+        run: pnpm tsx scripts/cicd/github-action-import-songs.ts "${{ secrets.DEFAULT_IMPORT_USER_IDS }}" "" ""
       - name: Update stats
-        run: pnpm ts-node scripts/generate-song-stats.ts
+        run: pnpm tsx scripts/generate-song-stats.ts
       - name: Update popularity index
-        run: pnpm ts-node scripts/generate-song-popularity-index.ts
+        run: pnpm tsx scripts/generate-song-popularity-index.ts
       - name: Auto commit songs
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v7

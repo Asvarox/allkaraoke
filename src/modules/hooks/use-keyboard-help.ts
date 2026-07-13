@@ -20,9 +20,10 @@ export default function useKeyboardHelp(help: HelpEntry, enabled: boolean) {
   // Registers/unregisters presence - only reacts to `enabled` (plus mount/unmount), so becoming
   // active isn't affected by `help` content refreshing while this stays enabled the whole time.
   useEffect(() => {
+    const currentName = name.current;
     if (enabled) {
-      setKeyboard(name.current, helpRef.current);
-      return () => unsetKeyboard(name.current);
+      setKeyboard(currentName, helpRef.current);
+      return () => unsetKeyboard(currentName);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- registration lifecycle is intentionally keyed on `enabled` only
   }, [enabled]);

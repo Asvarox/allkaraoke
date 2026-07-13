@@ -53,6 +53,7 @@ function WaitForReadiness({ onFinish }: Props) {
       await sleep(1000);
       onFinish();
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- the readiness/autostart sequence runs once on mount
   }, []);
 
   const playerStatuses = players.map(([deviceId, name, player]) => ({

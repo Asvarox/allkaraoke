@@ -62,6 +62,7 @@ export default function SongMetadata(props: Props) {
       console.log('props.data.artistOrigin', defaultArtistOrigin);
       props.onChange({ ...props.data, artistOrigin: defaultArtistOrigin });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only fill the default origin in response to a resolved default or a data change; `props.onChange` is a fresh callback each render
   }, [defaultArtistOrigin, props.data]);
 
   const definedLanguages = useMemo(
