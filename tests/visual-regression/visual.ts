@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, expect, Page, test } from '@playwright/test';
+import { Browser, BrowserContext, expect, Locator, Page, test } from '@playwright/test';
 
 export const VIEWPORTS = {
   desktop: { width: 1600, height: 900 },
@@ -11,7 +11,10 @@ export type ViewportName = keyof typeof VIEWPORTS;
 
 const ALL_VIEWPORTS = Object.keys(VIEWPORTS) as ViewportName[];
 
-export type MakeScreenshot = (name?: string) => Promise<void>;
+// Remote mic screens are only ever used on a phone, so they're captured on the two mobile viewports.
+export const REMOTE_MIC_VIEWPORTS: ViewportName[] = ['mobile-portrait', 'mobile-landscape'];
+
+export type MakeScreenshot = (name?: string, extraMasks?: Locator[]) => Promise<void>;
 
 type VisualTestFn = (args: {
   page: Page;
@@ -58,7 +61,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
         });
 
-        const makeScreenshot: MakeScreenshot = async (name) => {
+        const makeScreenshot: MakeScreenshot = async (name, extraMasks = []) => {
           const fileName = name ? `${slug}-${name}-${viewportName}.png` : `${slug}-${viewportName}.png`;
           await expect(page).toHaveScreenshot(fileName, {
             fullPage: true,
@@ -69,6 +72,8 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
               // Live microphone level meters redraw continuously from the (fake) audio input in real
               // time via direct DOM mutation, so CSS animation-disabling has no effect on them.
               page.locator('[data-test="mic-volume-indicator"]'),
+              // Caller-supplied volatile regions (e.g. the remote mic's live ping counter).
+              ...extraMasks,
             ],
             // A masked iframe's own async layout can shift the mask box by a pixel or two - tolerate that jitter
             maxDiffPixelRatio: 0.02,
