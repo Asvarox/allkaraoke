@@ -1,76 +1,20 @@
 import { motion } from 'motion/react';
 import { Fragment } from 'react';
-import { NotesSection, songBeat } from '~/interfaces';
+import { NotesSection } from '~/interfaces';
 import styles from '~/modules/game-engine/drawing/styles';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
-import { getFirstNoteStartFromSections } from '~/modules/songs/utils/notes-selectors';
 import { cn } from '~/utils/cn';
 import AnimatedLine from './animated-line';
-import Headstart from './headstart';
-import LyricNoteToken from './lyric-note-token';
+import CurrentLyricsLine from './current-lyrics-line';
 import LyricsLine from './lyrics-line';
 import LyricsVolumeIndicators from './lyrics-volume-indicators';
 import { PassTheMicProgress, PassTheMicSymbol } from './pass-the-mic';
 import { LyricsProps } from './types';
-import { getHeadstartPercent, getPassTheMicUiState } from './utils';
+import { getPassTheMicUiState } from './utils';
 
 function PassTheMicProgressBar({ color, progressPercent }: { color: string; progressPercent: number }) {
   return <PassTheMicProgress color={color} progress={progressPercent} />;
-}
-
-function CurrentLyricsLine(props: {
-  playerNumber: number;
-  section: NotesSection | null;
-  currentBeat: songBeat;
-  playerColor: string;
-  headstartPercent: number;
-  effectsEnabled: boolean;
-  showSwap: boolean;
-}) {
-  return (
-    <LyricsLine layout effectsEnabled={props.effectsEnabled} data-test={`lyrics-current-player-${props.playerNumber}`}>
-      <AnimatedLine
-        motionKey={String(props.section?.start ?? 'no-section')}
-        effectsEnabled={props.effectsEnabled}
-        initial={{
-          opacity: 0,
-          y: 20,
-          scale: 0.9,
-        }}
-        animate={{
-          y: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        exit={{
-          opacity: 0,
-          y: -20,
-          scale: 0.9,
-        }}>
-        {props.section ? (
-          <>
-            <span className="relative h-0">
-              <Headstart color={props.playerColor} percent={props.headstartPercent} />
-            </span>
-            <span>
-              {props.section.notes.map((note) => (
-                <LyricNoteToken
-                  key={note.start}
-                  note={note}
-                  currentBeat={props.currentBeat}
-                  playerColor={props.playerColor}
-                />
-              ))}
-              {props.showSwap && <PassTheMicSymbol shouldShake />}
-            </span>
-          </>
-        ) : (
-          <>&nbsp;</>
-        )}
-      </AnimatedLine>
-    </LyricsLine>
-  );
 }
 
 function NextLyricsLine(props: {
@@ -123,6 +67,7 @@ export default function Lyrics({ player, bottom = false, effectsEnabled, showSta
   const section = playerState.getCurrentSection();
   const nextSection = playerState.getNextSection();
   const subsequentSection = playerState.getNextSection(2);
+  const playSessionId = GameState.getSingSetup()?.id;
   const currentBeat = GameState.getCurrentBeat();
   const beatLength = GameState.getSongBeatLength();
 
@@ -138,14 +83,6 @@ export default function Lyrics({ player, bottom = false, effectsEnabled, showSta
 
   const currentNotesSection = isNotesSection(section) ? section : null;
   const nextNotesSection = isNotesSection(nextSection) ? nextSection : null;
-
-  // todo these calculations should be inside Headstart component
-  const beatsBetweenSectionAndNote = currentNotesSection
-    ? getFirstNoteStartFromSections([currentNotesSection]) - currentNotesSection.start
-    : 0;
-  const headstartPercent = currentNotesSection
-    ? getHeadstartPercent(currentBeat, currentNotesSection.start, beatsBetweenSectionAndNote)
-    : 2;
 
   const baseBackground = bottom ? 'rgba(0,0,0,0.9)' : 'rgba(0,0,0,0.5)';
   const blinkDark = bottom ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.5)';
@@ -183,9 +120,9 @@ export default function Lyrics({ player, bottom = false, effectsEnabled, showSta
         section={currentNotesSection}
         currentBeat={currentBeat}
         playerColor={playerColor}
-        headstartPercent={headstartPercent}
         effectsEnabled={effectsEnabled}
         showSwap={passTheMicUi.showSwapOnCurrentLine}
+        playSessionId={playSessionId}
       />
 
       <NextLyricsLine
