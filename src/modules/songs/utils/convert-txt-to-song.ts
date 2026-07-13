@@ -188,8 +188,8 @@ export default function convertTxtToSong(
     try {
       const linkUrl = new URL(videoLink);
       song.video = linkUrl.searchParams.get('v') || 'Invalid link';
-    } catch (e: any) {
-      song.video = `Invalid link: ${e.message}`;
+    } catch (e) {
+      song.video = `Invalid link: ${e instanceof Error ? e.message : String(e)}`;
     }
   }
 

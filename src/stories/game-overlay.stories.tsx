@@ -3,7 +3,7 @@ import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
 import { ValuesType } from 'utility-types';
 import { GAME_MODE, SingSetup } from '~/interfaces';
-import { VideoState } from '~/modules/elements/video-player/index';
+import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import CanvasDrawing from '~/modules/game-engine/drawing/index';
 import ParticleManager from '~/modules/game-engine/drawing/particle-manager';
 import GameState from '~/modules/game-engine/game-state/game-state';
@@ -93,7 +93,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: redraw only when the progress arg changes
   }, [args.progress]);
 
-  const videoPlayerRef = useRef<any>(null);
+  const videoPlayerRef = useRef<VideoPlayerRef | null>(null);
 
   return (
     <div style={{ position: 'relative', width: 1280, height: 720 }}>

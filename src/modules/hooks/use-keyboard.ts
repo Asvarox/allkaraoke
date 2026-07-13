@@ -37,7 +37,7 @@ const cb = (callback?: Callback) => (e: KeyboardEvent) => {
 };
 
 // useHotkeys doesn't seem to be updatable to 4.0 due to https://github.com/JohannesKlauss/react-hotkeys-hook/issues/1074
-export default function useKeyboard(params: Params, enabled = true, deps?: any[]) {
+export default function useKeyboard(params: Params, enabled = true, deps?: unknown[]) {
   useEventEffect(events.remoteKeyboardPressed, (param) => {
     if (enabled) {
       if (param in params) {
