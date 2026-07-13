@@ -49,6 +49,7 @@ function RemoteMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(isComplete);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when the players' completeness changes
   }, [isComplete]);
 
   return (

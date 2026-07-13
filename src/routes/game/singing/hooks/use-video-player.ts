@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 import { milliseconds } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import { FPSCountSetting, InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
@@ -11,6 +11,11 @@ export const useVideoPlayer = (
   const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
   const [inputLag] = useSettingValue(InputLagSetting);
 
+  // Keep the latest onTimeUpdate in a ref so the interval isn't torn down and recreated when the
+  // caller passes a fresh callback each render.
+  const onTimeUpdateRef = useRef(onTimeUpdate);
+  onTimeUpdateRef.current = onTimeUpdate;
+
   useEffect(() => {
     if (!playerRef.current) {
       return;
@@ -21,7 +26,7 @@ export const useVideoPlayer = (
 
         const time = Math.max(0, (await playerRef.current.getCurrentTime()) * 1000 - inputLag);
         setCurrentTime(time);
-        onTimeUpdate?.(time);
+        onTimeUpdateRef.current?.(time);
       }, 1000 / FPSCountSetting.get());
 
       return () => clearInterval(interval);

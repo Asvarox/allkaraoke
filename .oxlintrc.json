@@ -52,7 +52,7 @@
     "react/no-string-refs": "error",
     "react/no-unescaped-entities": "error",
     "react/rules-of-hooks": "error",
-    "react/exhaustive-deps": "warn",
+    "react/exhaustive-deps": "error",
     "no-only-tests/no-only-tests": "error",
     "react-refresh/only-export-components": [
       "error",

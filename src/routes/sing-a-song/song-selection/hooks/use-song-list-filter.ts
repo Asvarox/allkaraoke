@@ -167,7 +167,6 @@ export const useSongListFilter = (
   }, [selectedPlaylist]);
 
   const deferredFilters = useDeferredValue(filters);
-  const isSearchApplied = !!deferredFilters.search;
 
   const filteredList = useMemo(
     () =>
@@ -177,7 +176,7 @@ export const useSongListFilter = (
         excludeLanguages: excludedLanguages ?? [],
         additionalSongs: additionalSong ? [additionalSong] : [],
       }),
-    [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
+    [list, deferredFilters, excludedLanguages, playlist, additionalSong],
   );
 
   return {

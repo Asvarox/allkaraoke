@@ -67,6 +67,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // NOTE: `onBackspace` and `additionalHelp` are intentionally excluded — callers pass fresh values
     // each render (a new `() => …` and object literal), so including them would recompute `help`
     // every render and, via updateKeyboard, spin an infinite re-render loop. Their content is static.
+    // `actions` is a stable ref, kept in the list for readability.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls],
   );
   useKeyboardHelp(help, enabled);

@@ -27,6 +27,7 @@ function DifferentMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(status === 'accepted');
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when mic permission status changes
   }, [status]);
 
   useEffect(() => {

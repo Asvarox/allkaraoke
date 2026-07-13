@@ -37,6 +37,7 @@ export default function ConfirmWifiModal({ onClose }: Props) {
         return () => navigator?.connection?.removeEventListener?.('change', onChange);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- runs the Wi-Fi connection check once on mount
   }, []);
 
   return (

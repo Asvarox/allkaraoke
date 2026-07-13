@@ -32,5 +32,6 @@ export default function useEffectDebugger(
     console.log('[use-effect-debugger] ', changedDeps);
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- debug wrapper: forwards the caller's effect and deps verbatim
   useEffect(effectHook, dependencies);
 }

@@ -67,6 +67,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     GameState.setSingSetup(setup);
 
     return setup;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: rebuild the setup only when the story args change
   }, [args.tolerance, args.playerNum, args.gameMode]);
 
   useEffect(() => {
@@ -89,6 +90,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
       ParticleManager.clearAll();
     }, 100);
     update();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: redraw only when the progress arg changes
   }, [args.progress]);
 
   const videoPlayerRef = useRef<any>(null);

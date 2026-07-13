@@ -28,6 +28,6 @@ export default function useMemoDebugger<T>(memoHook: () => T, dependencies: unkn
     console.log('[use-memo-debugger] ', changedDeps);
   }
 
-  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-compiler/react-compiler, react-hooks/exhaustive-deps -- debug wrapper: forwards the caller's memo fn and deps verbatim
   return useMemo(memoHook, dependencies);
 }

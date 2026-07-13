@@ -19,7 +19,7 @@ export const useMySongList = () => {
         void serverRpc.songs.sendMyList({ added: [songId] });
       }
     },
-    [savedSongList],
+    [savedSongList, setSavedSongList],
   );
 
   return { savedSongList, toggleSong };

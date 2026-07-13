@@ -13,6 +13,7 @@ interface Props {
 function Skip(props: Props) {
   useEffect(() => {
     props.onSave();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- save once on mount
   }, []);
 
   return null;

@@ -141,6 +141,7 @@ export const useSongSelectionKeyboardNavigation = (
         setBlockBack(false);
       };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- keyed on the search transition only; adding `previousSearch` would re-run the effect a render later and clear the block prematurely
   }, [appliedFilters.search]);
 
   const handleBackspace = () => {
@@ -241,19 +242,17 @@ export const useSongSelectionKeyboardNavigation = (
   );
   useKeyboardHelp(help, enabled);
 
-  const closePlaylist = useCallback(
-    (newLeavingKey?: 'left' | 'right') => {
-      setShowPlaylistsState([false, newLeavingKey ?? null]);
-      // if (leavingKey === 'right') navigateHorizontally(1);
-    },
-    [setShowPlaylistsState, navigateHorizontally, groupedSongs, cursorPosition],
-  );
+  const closePlaylist = useCallback((newLeavingKey?: 'left' | 'right') => {
+    setShowPlaylistsState([false, newLeavingKey ?? null]);
+    // if (leavingKey === 'right') navigateHorizontally(1);
+  }, []);
 
   useLayoutEffect(() => {
     const [previousShowFilters, enteringKey] = previousPlaylistsState;
     if (previousShowFilters && !arePlaylistsVisible) {
       if (enteringKey === leavingKey) navigateHorizontally(leavingKey === 'right' ? 1 : -1);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- keyed on the playlist-visibility/cursor transition; `navigateHorizontally` is recreated each render and `previousPlaylistsState` is read intentionally
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
   return [selectedSongId, moveToSong, arePlaylistsVisible, closePlaylist, randomSong] as const;
