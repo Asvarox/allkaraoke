@@ -6,6 +6,7 @@ import {
   SetStateAction,
   useCallback,
   useEffect,
+  useEffectEvent,
   useLayoutEffect,
   useRef,
   useState,
@@ -62,15 +63,16 @@ export default function SearchBar({
 
   const expanded = collapseSearch && mobileSearchVisible;
 
-  // Keep the latest callback in a ref so the layout effect fires only when `expanded` changes,
-  // not whenever the parent passes a fresh `onExpandedChange`.
-  const onExpandedChangeRef = useRef(onExpandedChange);
-  onExpandedChangeRef.current = onExpandedChange;
+  // Effect Event: notify the parent with the latest callback without making it a dependency, so the
+  // layout effect fires only when `expanded` changes, not whenever a fresh `onExpandedChange` arrives.
+  const notifyExpandedChange = useEffectEvent((value: boolean) => {
+    onExpandedChange?.(value);
+  });
 
   // useLayoutEffect so Toolbar hides random+playlists in the same paint frame SearchBar expands,
   // preventing a layout shift where both the expanding input and other buttons are briefly visible.
   useLayoutEffect(() => {
-    onExpandedChangeRef.current?.(expanded);
+    notifyExpandedChange(expanded);
   }, [expanded]);
 
   useHotkeys('down', () => searchInput.current?.element?.blur(), { enabled: isFocused, enableOnTags: ['INPUT'] });
