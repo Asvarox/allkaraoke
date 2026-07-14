@@ -10351,7 +10351,7 @@
     "gap": 48110.98901098901,
     "year": "2006",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-07-13T04:14:31.539Z",
+    "lastUpdate": "2026-07-12T08:07:30.092Z",
     "genre": "Alternative Rock",
     "realBpm": 182,
     "previewStart": 48,
@@ -90187,6 +90187,35 @@
     "local": false
   },
   {
+    "id": "kpop-demon-hunters-saja-boys-soda-pop",
+    "title": "Soda Pop",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "983bBbJx0Mk",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 252,
+    "gap": 17548.095238095237,
+    "year": "2025",
+    "lastUpdate": "2026-07-14T01:48:44.489Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31138",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6010,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboyssodapop",
+    "local": false
+  },
+  {
     "id": "kpop-demon-hunters-saja-boys-your-idol",
     "title": "Your Idol",
     "artist": "KPop Demon Hunters (Saja Boys)",
@@ -114207,7 +114236,7 @@
     "gap": 14330.384615384615,
     "year": "2009",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:32.060Z",
+    "lastUpdate": "2026-07-12T08:09:56.964Z",
     "genre": "Folk",
     "realBpm": 127,
     "volume": 1,
@@ -114717,7 +114746,7 @@
     "gap": 59553.16455696202,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:31.547Z",
+    "lastUpdate": "2026-07-12T08:08:36.352Z",
     "genre": "Rock",
     "realBpm": 158,
     "volume": 1,
@@ -130909,21 +130938,21 @@
       "English"
     ],
     "bpm": 189.8,
-    "gap": 5393.52,
+    "gap": 2065.6027397260277,
     "year": "1977",
     "artistOrigin": "GB",
+    "lastUpdate": "2026-07-13T04:21:34.796Z",
     "edition": "SingStar Queen",
-    "videoGap": 5,
     "realBpm": 46,
     "volume": 0.75,
     "manualVolume": 1,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions",
-    "duration": 191,
+    "duration": 185,
     "tracks": [
       {
-        "start": 0
+        "start": 13
       }
     ],
     "shortId": 3549,
@@ -137715,7 +137744,7 @@
     "gap": 13006.80763983629,
     "year": "2008",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-07-13T04:14:31.545Z",
+    "lastUpdate": "2026-07-12T08:08:09.576Z",
     "genre": "Vocaloid",
     "realBpm": 175,
     "previewStart": 101,
@@ -138943,7 +138972,7 @@
     "gap": 16840.269873324767,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:31.549Z",
+    "lastUpdate": "2026-07-12T08:09:15.683Z",
     "genre": "Soundtrack",
     "realBpm": 66,
     "volume": 1,
@@ -142501,6 +142530,36 @@
     "local": false
   },
   {
+    "id": "shakira-disney-zootopia-zoo",
+    "title": "Zoo",
+    "artist": "Shakira (Disney Zootopia)",
+    "video": "Kw3935PH01E",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": -195.11627906976742,
+    "year": "2025",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-07-14T01:48:44.481Z",
+    "genre": "Sountrack",
+    "realBpm": 129,
+    "volume": 0.85,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
+    "duration": 198,
+    "tracks": [
+      {
+        "name": "Shakira - Zoo",
+        "start": 8
+      }
+    ],
+    "shortId": 6008,
+    "tracksCount": 1,
+    "search": "shakiradisneyzootopiazoo",
+    "local": false
+  },
+  {
     "id": "shakira-dont-bother",
     "title": "Don't Bother",
     "artist": "Shakira",
@@ -142982,6 +143041,34 @@
     "shortId": 3893,
     "tracksCount": 1,
     "search": "shakirasitevas",
+    "local": false
+  },
+  {
+    "id": "shakira-suerte",
+    "title": "Suerte",
+    "artist": "Shakira",
+    "video": "a8Rwz6zBJSE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 428,
+    "gap": 15658.644859813085,
+    "year": "2001",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-07-14T01:48:44.487Z",
+    "realBpm": 108,
+    "volume": 0.86,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=pantero",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6009,
+    "tracksCount": 1,
+    "search": "shakirasuerte",
     "local": false
   },
   {
@@ -149280,7 +149367,7 @@
     "bpm": 256.89,
     "gap": 2797.357234614037,
     "year": "2021",
-    "lastUpdate": "2026-07-13T04:14:31.552Z",
+    "lastUpdate": "2026-07-12T08:09:36.661Z",
     "genre": "K-Pop",
     "realBpm": 128,
     "previewStart": 54,
