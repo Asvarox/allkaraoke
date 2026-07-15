@@ -1,9 +1,10 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import SongDao from '~/modules/songs/songs-service';
 import { InputLagSetting, UnassignOnSongFinishedSetting } from '~/routes/settings/settings-state';
+
 import { defineMutation, defineQuery } from '../rpc/define';
 import { RpcContext } from '../rpc/types';
 
@@ -84,6 +85,12 @@ export const serverHandlers = {
   input: {
     keystroke: defineMutation((_ctx: RpcContext, key: keyStrokes) => {
       events.remoteKeyboardPressed.dispatch(key);
+    }),
+
+    // Directly activate a mirrored control by its register() name (mirror mode). Same write
+    // permission as keystroke, since it drives the same on-screen actions.
+    activateControl: defineMutation((_ctx: RpcContext, name: string) => {
+      events.remoteControlActivated.dispatch(name);
     }),
 
     // Any connected mic can confirm its readiness (no write permission required)

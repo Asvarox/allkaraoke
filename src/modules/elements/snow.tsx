@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 
 interface Snowflake {

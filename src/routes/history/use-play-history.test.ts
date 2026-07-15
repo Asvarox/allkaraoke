@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+
 import { groupEntriesByDay } from './use-play-history';
 
 describe('groupEntriesByDay', () => {

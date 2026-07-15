@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+
 import usePrevious from '~/modules/hooks/use-previous';
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
@@ -31,6 +32,6 @@ export default function useCallbackDebugger<T extends Function>(
     console.log('[use-callback-debugger] ', changedDeps);
   }
 
-  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-compiler/react-compiler react-hooks/exhaustive-deps
   return useCallback(callback, dependencies);
 }

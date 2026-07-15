@@ -1,6 +1,7 @@
 import { uniq } from 'es-toolkit';
 import type { Ref } from 'react';
 import { memo, useEffect, useMemo, useRef } from 'react';
+
 import { PlayerSetup } from '~/interfaces';
 import { VideoState } from '~/modules/elements/video-player/index';
 import styles from '~/modules/game-engine/drawing/styles';

@@ -1,6 +1,7 @@
 import { Slider } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
+
 import backgroundMusic from '~/assets/funk-cool-groove-(no-copyright-music)-by-anwar-amr.ogg';
 import { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
 import { msec } from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';

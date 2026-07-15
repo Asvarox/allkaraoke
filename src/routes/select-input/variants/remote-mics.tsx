@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import events from '~/modules/game-events/game-events';
@@ -22,6 +23,7 @@ interface Props {
 }
 
 function RemoteMics(props: Props) {
+  'use no memo'; // React Compiler: <MicCheck /> below is rendered with no props, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(2);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
@@ -48,6 +50,7 @@ function RemoteMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(isComplete);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when the players' completeness changes
   }, [isComplete]);
 
   return (

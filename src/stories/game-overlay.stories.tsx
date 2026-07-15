@@ -1,13 +1,14 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
 import { ValuesType } from 'utility-types';
+
 import { GAME_MODE, SingSetup } from '~/interfaces';
-import { VideoState } from '~/modules/elements/video-player/index';
+import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import CanvasDrawing from '~/modules/game-engine/drawing/index';
 import ParticleManager from '~/modules/game-engine/drawing/particle-manager';
 import GameState from '~/modules/game-engine/game-state/game-state';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { processSong } from '~/modules/songs/utils/process-song/process-song';
@@ -68,6 +69,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     GameState.setSingSetup(setup);
 
     return setup;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: rebuild the setup only when the story args change
   }, [args.tolerance, args.playerNum, args.gameMode]);
 
   useEffect(() => {
@@ -90,9 +92,10 @@ const Template: StoryFn<StoryArgs> = (args) => {
       ParticleManager.clearAll();
     }, 100);
     update();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: redraw only when the progress arg changes
   }, [args.progress]);
 
-  const videoPlayerRef = useRef<any>(null);
+  const videoPlayerRef = useRef<VideoPlayerRef | null>(null);
 
   return (
     <div style={{ position: 'relative', width: 1280, height: 720 }}>

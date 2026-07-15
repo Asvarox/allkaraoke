@@ -2,6 +2,7 @@ import events from '~/modules/game-events/game-events';
 import { getInputId } from '~/modules/players/utils';
 import { RemoteMic } from '~/modules/remote-mic/remote-mic-input';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
+
 import { InputSource } from './interfaces';
 
 const mapRemoteMicToInput = (remoteMic: RemoteMic): InputSource => ({

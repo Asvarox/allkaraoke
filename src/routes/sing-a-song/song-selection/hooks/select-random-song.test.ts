@@ -1,4 +1,5 @@
 import { afterEach, Mock, vitest } from 'vitest';
+
 import { randomInt } from '~/modules/utils/random-value';
 import selectRandomSong from '~/routes/sing-a-song/song-selection/hooks/select-random-song';
 

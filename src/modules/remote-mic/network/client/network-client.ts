@@ -1,6 +1,7 @@
 import { throttle } from 'es-toolkit';
 import posthog from 'posthog-js';
 import { v4 } from 'uuid';
+
 import SimplifiedMic from '~/modules/game-engine/input/simplified-mic';
 import events from '~/modules/game-events/game-events';
 import { ClientTransport } from '~/modules/remote-mic/network/client/transport/interface';
@@ -15,6 +16,7 @@ import Listener from '~/modules/utils/listener';
 import { roundTo } from '~/modules/utils/round-to';
 import storage from '~/modules/utils/storage';
 import { RemoteMicrophoneLagSetting } from '~/routes/settings/settings-state';
+
 import { dispatchClientCall, registerClientHandler } from './client-handlers';
 import { subscriptionManager } from './subscriptions';
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { SongPreview } from '~/interfaces';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
@@ -15,6 +16,7 @@ export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
 
   useEffect(() => {
     setSongStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- refetch stats only when the song key changes
   }, [storageKey]);
 
   useEventEffect(events.songStatStored, setSongStats);

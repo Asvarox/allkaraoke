@@ -102,25 +102,26 @@ export function CustomVirtualization<T>(props: Props<T>) {
   const [[rangeFrom, rangeTo], setItemsRange] = useState(() => computeVisibleItemsRange(0));
 
   useLayoutEffect(() => {
-    if (viewportElementRef.current) {
+    const viewport = viewportElementRef.current;
+    if (viewport) {
       // if the new scrollTop would cause different changes the range to render, update it
       const onScroll = () => {
-        const newItemsRange = computeVisibleItemsRange(viewportElementRef.current?.scrollTop ?? 0);
+        const newItemsRange = computeVisibleItemsRange(viewport.scrollTop ?? 0);
         if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
           setItemsRange(newItemsRange);
         }
       };
 
-      viewportElementRef.current.addEventListener('scroll', onScroll);
+      viewport.addEventListener('scroll', onScroll);
 
-      if (viewportElementRef.current.scrollTop > totalHeight) {
-        viewportElementRef.current.scrollTo({ top: 0 });
+      if (viewport.scrollTop > totalHeight) {
+        viewport.scrollTo({ top: 0 });
       }
 
       onScroll(); // todo determine if this is needed?
 
       return () => {
-        viewportElementRef.current?.removeEventListener('scroll', onScroll);
+        viewport.removeEventListener('scroll', onScroll);
       };
     }
   }, [rangeFrom, rangeTo, computeVisibleItemsRange, totalHeight]);

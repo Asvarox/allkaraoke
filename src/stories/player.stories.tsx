@@ -1,10 +1,11 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 /* eslint-disable storybook/context-in-play-function */
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { ComponentProps, useEffect, useRef } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { GAME_MODE, SingSetup } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { processSong } from '~/modules/songs/utils/process-song/process-song';
@@ -56,6 +57,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     GameState.resetSingSetup();
     GameState.setSingSetup(singSetup);
     GameState.setSong(song);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- storybook template: reset game state only when the story args change
   }, [args.tolerance, args.playerNum, args.gameMode]);
 
   const ref = useRef<PlayerRef | null>(null);

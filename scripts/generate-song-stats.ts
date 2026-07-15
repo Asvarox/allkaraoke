@@ -1,6 +1,8 @@
 import { execSync } from 'child_process';
-import { uniq } from 'es-toolkit';
 import { existsSync, statSync, writeFileSync } from 'fs';
+
+import { uniq } from 'es-toolkit';
+
 import { SongPreview } from '~/interfaces';
 
 const targetFile = './src/routes/landing-page/song-stats.json';

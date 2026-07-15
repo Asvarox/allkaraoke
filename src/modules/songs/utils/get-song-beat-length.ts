@@ -1,4 +1,5 @@
 import { memoize } from 'es-toolkit';
+
 import { milliseconds, Song, SongPreview } from '~/interfaces';
 
 export default memoize(function getSongBeatLength(song: Song | SongPreview): milliseconds {

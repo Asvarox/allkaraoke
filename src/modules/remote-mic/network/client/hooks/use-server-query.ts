@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+
 import events from '~/modules/game-events/game-events';
 import { useEventListener } from '~/modules/game-events/hooks';
 
@@ -61,7 +62,7 @@ export function useServerQuery<T>(
     return () => {
       active = false;
     };
-    // queryFnRef is a stable ref and intentionally omitted from deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- queryFnRef is a stable ref and intentionally omitted; `deps` is a caller-provided passthrough
   }, [isConnected, ...deps]);
 
   return { data, loading, error, refetch };

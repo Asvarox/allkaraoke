@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { MenuButton } from '~/modules/elements/menu';
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
@@ -27,6 +28,7 @@ function DifferentMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(status === 'accepted');
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when mic permission status changes
   }, [status]);
 
   useEffect(() => {

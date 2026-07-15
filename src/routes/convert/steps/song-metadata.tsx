@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Autocomplete, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useEffect, useMemo, useState } from 'react';
+
 import { Flag } from '~/modules/elements/flag';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import { countryMap } from '~/modules/utils/country-list';
@@ -62,6 +63,7 @@ export default function SongMetadata(props: Props) {
       console.log('props.data.artistOrigin', defaultArtistOrigin);
       props.onChange({ ...props.data, artistOrigin: defaultArtistOrigin });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only fill the default origin in response to a resolved default or a data change; `props.onChange` is a fresh callback each render
   }, [defaultArtistOrigin, props.data]);
 
   const definedLanguages = useMemo(

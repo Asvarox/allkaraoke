@@ -1,11 +1,13 @@
 import { AccessTime } from '@mui/icons-material';
 import { Button, TextField, Tooltip } from '@mui/material';
 import { useState } from 'react';
+
 import { Song } from '~/interfaces';
 import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
 import { getLastNoteEndFromSections } from '~/modules/songs/utils/notes-selectors';
 import calculateProperBPM from '~/routes/convert/calculate-proper-bpm';
 import { Pre } from '~/routes/convert/elements';
+
 import ShortcutIndicator from './shortcut-indicator';
 
 interface Props {

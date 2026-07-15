@@ -1,5 +1,6 @@
 import { ArrowBack } from '@mui/icons-material';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+
 import { SingSetup, SongPreview } from '~/interfaces';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';

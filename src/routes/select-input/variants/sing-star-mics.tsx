@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
@@ -27,6 +28,7 @@ interface Props {
 }
 
 function SingStarMics(props: Props) {
+  'use no memo'; // React Compiler: <MicCheck names={[...]} /> below is passed a fresh-but-constant array each render, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(2);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
   const { Microphone } = useMicrophoneList(true, 'Microphone');
@@ -78,6 +80,7 @@ function SingStarMics(props: Props) {
 
   useEffect(() => {
     props.onSetupComplete(isSetup);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- report setup completion when the SingStar setup state changes
   }, [isSetup]);
 
   useEffect(() => {

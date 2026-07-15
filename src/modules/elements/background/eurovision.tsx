@@ -1,11 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { useWindowSize } from 'react-use';
+
 import {
   eurovisionBlueFillBase,
   eurovisionGreenFillBase,
   eurovisionPinkFillBase,
   eurovisionRedFillBase,
 } from '~/modules/game-engine/drawing/styles';
+
 import eurovisionIcon from './eurovision-icon.png';
 
 const icon = new Image();

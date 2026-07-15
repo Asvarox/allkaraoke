@@ -1,5 +1,7 @@
 import { ValuesType } from 'utility-types';
+
 import { ExtractOptional, NotesSection, Section, Song } from '~/interfaces';
+
 import notFalsy from '../../utils/not-falsy';
 import { generatePlayerChangesForTrack } from './generate-player-changes';
 import getSongId from './get-song-id';
@@ -188,8 +190,8 @@ export default function convertTxtToSong(
     try {
       const linkUrl = new URL(videoLink);
       song.video = linkUrl.searchParams.get('v') || 'Invalid link';
-    } catch (e: any) {
-      song.video = `Invalid link: ${e.message}`;
+    } catch (e) {
+      song.video = `Invalid link: ${e instanceof Error ? e.message : String(e)}`;
     }
   }
 

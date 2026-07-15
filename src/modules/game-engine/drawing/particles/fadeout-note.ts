@@ -1,5 +1,6 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { Note } from '~/interfaces';
+import { PlayerNumber } from '~/modules/players/player-number';
+
 import drawNote from '../elements/note';
 import Particle from '../interfaces';
 

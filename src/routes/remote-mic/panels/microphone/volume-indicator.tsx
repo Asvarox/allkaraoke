@@ -1,7 +1,8 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
 import { twc } from 'react-twc';
+
 import styles from '~/modules/game-engine/drawing/styles';
+import { PlayerNumber } from '~/modules/players/player-number';
 import usePermissions from '~/routes/remote-mic/hooks/use-permissions';
 import PlayerChange from '~/routes/remote-mic/panels/microphone/player-change';
 

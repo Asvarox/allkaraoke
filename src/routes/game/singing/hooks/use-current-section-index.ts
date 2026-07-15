@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+
 import { Section } from '~/interfaces';
+
 import { PlayerRef } from '../player';
 
 export default function useCurrentSectionIndex(

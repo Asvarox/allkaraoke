@@ -1,5 +1,7 @@
-import dotenv from 'dotenv';
 import fs from 'fs';
+
+import dotenv from 'dotenv';
+
 import currentSongs from '../public/songs/index.json';
 
 dotenv.config({ path: '.env.local' });

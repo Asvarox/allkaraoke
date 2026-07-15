@@ -1,9 +1,9 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import { v4 } from 'uuid';
+
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Switcher } from '~/modules/elements/switcher';
@@ -12,6 +12,7 @@ import gameEvents from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/is-dev';

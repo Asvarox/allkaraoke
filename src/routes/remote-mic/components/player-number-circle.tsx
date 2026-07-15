@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { twc } from 'react-twc';
 import { useUpdate } from 'react-use';
+
 import styles from '~/modules/game-engine/drawing/styles';
 import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-subscription';
 
@@ -13,7 +14,7 @@ export default function PlayerNumberCircle({ number, ...restProps }: Props) {
   const forceUpdate = useUpdate();
   useEffect(() => {
     forceUpdate();
-  }, [style]);
+  }, [style, forceUpdate]);
 
   return (
     <PlayerColorCircle

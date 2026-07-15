@@ -23,7 +23,7 @@ export default function useViewportSize() {
     handleResize();
 
     return () => global.removeEventListener('resize', handleResize);
-  }, []);
+  }, [handleResize]);
 
   return { ...windowSize, handleResize };
 }

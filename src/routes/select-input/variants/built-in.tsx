@@ -1,13 +1,14 @@
 import { Check, Error } from '@mui/icons-material';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
+import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect, useEventListenerSelector } from '~/modules/game-events/hooks';
-import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import PlayersManager from '~/modules/players/players-manager';
@@ -20,6 +21,7 @@ import inputSourceListManager from '~/routes/select-input/input-sources/index';
 import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
 import MicCheck from '~/routes/select-input/mic-check';
 import { MicSetupPreference } from '~/routes/settings/settings-state';
+
 import { InputSource } from '../input-sources/interfaces';
 
 interface Props {
@@ -38,26 +40,23 @@ function useIsPlayerMicAudible(inputLabel: string) {
 
   const previousMeasurements = useRef<number[]>([]);
   const attempts = useRef(0);
-  const onMeasure = useCallback(
-    ([volume]: [number, number]) => {
-      previousMeasurements.current.push(volume);
-      if (previousMeasurements.current.length > 35) {
-        const medianMeasurement =
-          previousMeasurements.current.sort()[Math.floor(previousMeasurements.current.length / 2)];
+  const onMeasure = useCallback(([volume]: [number, number]) => {
+    previousMeasurements.current.push(volume);
+    if (previousMeasurements.current.length > 35) {
+      const medianMeasurement =
+        previousMeasurements.current.sort()[Math.floor(previousMeasurements.current.length / 2)];
 
-        const audible = medianMeasurement > 0;
+      const audible = medianMeasurement > 0;
 
-        if (audible || attempts.current > 7) {
-          setIsAudible(audible);
-        } else {
-          attempts.current++;
-        }
-
-        previousMeasurements.current.length = 0;
+      if (audible || attempts.current > 7) {
+        setIsAudible(audible);
+      } else {
+        attempts.current++;
       }
-    },
-    [inputLabel],
-  );
+
+      previousMeasurements.current.length = 0;
+    }
+  }, []);
 
   usePlayerMicData(0, onMeasure, isAudible !== true);
 
@@ -70,7 +69,8 @@ function useIsPlayerMicAudible(inputLabel: string) {
   return isAudible;
 }
 
-function BuiltIn(props: Props) {
+function BuiltIn({ onSetupComplete, ...props }: Props) {
+  'use no memo'; // React Compiler: <MicCheck /> below is rendered with no props, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
@@ -101,7 +101,7 @@ function BuiltIn(props: Props) {
     }
   };
 
-  useEffect(autoselect, []);
+  useEffect(autoselect, [autoselect]);
   useEventEffect([events.inputListChanged, events.playerRemoved], autoselect);
 
   const cycleMic = () => {
@@ -115,8 +115,8 @@ function BuiltIn(props: Props) {
   const isAudible = useIsPlayerMicAudible(selectedMic);
 
   useEffect(() => {
-    props.onSetupComplete(!!selectedMic && !!isAudible);
-  }, [selectedMic, isAudible]);
+    onSetupComplete(!!selectedMic && !!isAudible);
+  }, [selectedMic, isAudible, onSetupComplete]);
 
   return (
     <>

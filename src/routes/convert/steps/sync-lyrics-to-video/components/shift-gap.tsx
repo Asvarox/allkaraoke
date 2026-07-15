@@ -1,7 +1,9 @@
 import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
+
 import { milliseconds } from '~/interfaces';
 import { msec } from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';
 import { PlayerRef } from '~/routes/game/singing/player';
+
 import ShortcutIndicator from './shortcut-indicator';
 
 interface Props {

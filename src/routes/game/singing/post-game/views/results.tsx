@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { useEffect, useMemo, useState } from 'react';
+
 import { GAME_MODE, HighScoreEntity, SingSetup } from '~/interfaces';
 import CameraManager from '~/modules/camera/camera-manager';
 import { Button } from '~/modules/elements/akui/button';

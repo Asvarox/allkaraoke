@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
-import { initTestMode, mockRandom, mockSongs } from './helpers';
 
+import { initTestMode, mockRandom, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;
@@ -12,9 +12,9 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 const polishPlaylist = 'Polish';
 const englishPlaylist = 'English';
+const allPlaylist = 'All';
 const duetsPlaylist = 'Duets';
 const newPlaylist = 'New';
-const allPlaylist = 'All';
 
 const _xmasPlaylist = 'Christmas';
 const xmasSong = 'e2e-christmas-english-1995';

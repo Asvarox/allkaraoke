@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+
 import { Calibration } from '../components/calibration';
 import navigateWithKeyboard from '../steps/navigate-with-keyboard';
 

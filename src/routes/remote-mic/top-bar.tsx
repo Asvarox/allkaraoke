@@ -1,6 +1,7 @@
 import { Icon } from '@iconify-icon/react';
 import { QrCode2 } from '@mui/icons-material';
 import { useState } from 'react';
+
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';
 import Ping from '~/routes/remote-mic/panels/microphone/ping';

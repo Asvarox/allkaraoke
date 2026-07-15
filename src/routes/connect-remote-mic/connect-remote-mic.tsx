@@ -1,6 +1,7 @@
 import * as qrcode from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
+
 import useQueryParam from '~/modules/hooks/use-query-param';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
 

@@ -1,4 +1,5 @@
 import { useLocation } from 'wouter';
+
 import startViewTransition from '~/modules/utils/start-view-transition';
 
 interface Options {

@@ -6,11 +6,13 @@ import {
   SetStateAction,
   useCallback,
   useEffect,
+  useEffectEvent,
   useLayoutEffect,
   useRef,
   useState,
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+
 import { Button } from '~/modules/elements/akui/button';
 import { Input } from '~/modules/elements/input';
 import events from '~/modules/game-events/game-events';
@@ -62,10 +64,16 @@ export default function SearchBar({
 
   const expanded = collapseSearch && mobileSearchVisible;
 
+  // Effect Event: notify the parent with the latest callback without making it a dependency, so the
+  // layout effect fires only when `expanded` changes, not whenever a fresh `onExpandedChange` arrives.
+  const notifyExpandedChange = useEffectEvent((value: boolean) => {
+    onExpandedChange?.(value);
+  });
+
   // useLayoutEffect so Toolbar hides random+playlists in the same paint frame SearchBar expands,
   // preventing a layout shift where both the expanding input and other buttons are briefly visible.
   useLayoutEffect(() => {
-    onExpandedChange?.(expanded);
+    notifyExpandedChange(expanded);
   }, [expanded]);
 
   useHotkeys('down', () => searchInput.current?.element?.blur(), { enabled: isFocused, enableOnTags: ['INPUT'] });
@@ -87,9 +95,9 @@ export default function SearchBar({
 
   const onRemoteSearch = useCallback(
     (search: string) => {
-      if (keyboardControl) setSearch(search);
+      if (keyboardControl) setFilters((current) => ({ ...current, search }));
     },
-    [keyboardControl],
+    [keyboardControl, setFilters],
   );
   useEventEffect(events.remoteSongSearch, onRemoteSearch);
 

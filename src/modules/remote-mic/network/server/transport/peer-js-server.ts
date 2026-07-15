@@ -1,4 +1,5 @@
 import { DataConnection, Peer } from 'peerjs';
+
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
 import {
   SenderInterface,

@@ -1,6 +1,7 @@
 import { Fullscreen, FullscreenExit } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { useEffect, useState } from 'react';
+
 import { Tooltip } from '~/modules/elements/tooltip';
 import '~/modules/remote-mic/event-listeners';
 import '~/modules/stats/index';

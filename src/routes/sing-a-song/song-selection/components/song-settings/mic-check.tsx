@@ -1,4 +1,5 @@
 import { ComponentProps, useEffect } from 'react';
+
 import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';
 import { useEventListener, useEventListenerSelector } from '~/modules/game-events/hooks';

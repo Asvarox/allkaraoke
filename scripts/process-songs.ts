@@ -1,16 +1,19 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unused-vars */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
+
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
+
 import { Song } from '~/interfaces';
+
+// @ts-ignore file might not exist
+import songIndex from '../public/songs/index.json';
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../src/modules/songs/utils/convert-txt-to-song';
 import clearString from '../src/modules/utils/clear-string';
 import { fixDiacritics } from '../src/routes/convert/steps/utils/fix-diacritics';
 // @ts-ignore file might not exist
 import escSongs from './escSongs.json';
-// @ts-ignore file might not exist
-import songIndex from '../public/songs/index.json';
 // @ts-ignore file might not exist
 import scrapedBpmData from './scraped-bpm-data.json';
 

@@ -1,8 +1,9 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { capitalize } from 'es-toolkit';
+
 import { Note } from '~/interfaces';
 import { SpriteNames } from '~/modules/game-engine/drawing/elements/cache/sprite-map';
 import drawSpriteWithStartAndEnd from '~/modules/game-engine/drawing/elements/sprite-with-start-and-end';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 const getSpriteName = (noteType: Note['type'], playerNumber?: PlayerNumber) => {
   return `${playerNumber !== undefined && noteType === 'normal' ? `p${playerNumber}` : 'note'}${capitalize(

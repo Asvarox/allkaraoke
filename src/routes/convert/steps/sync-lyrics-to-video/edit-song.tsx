@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
+
 import { GAME_MODE, Note, seconds, SingSetup, Song } from '~/interfaces';
 import { VideoState } from '~/modules/elements/video-player/index';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
@@ -22,6 +23,7 @@ import ShiftGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shi
 import ShiftVideoGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-video-gap';
 import useCurrentSectionIndex from '~/routes/game/singing/hooks/use-current-section-index';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
+
 import ShortcutIndicator from './components/shortcut-indicator';
 
 interface Props {
@@ -93,6 +95,7 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
+  'use no memo'; // React Compiler: `player.current && (...)` reads a ref directly during render to decide what to show, which the compiler can't safely cache across renders (e.g. after the queue advances to the next song, the manipulation panel never reappears).
   const player = useRef<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);

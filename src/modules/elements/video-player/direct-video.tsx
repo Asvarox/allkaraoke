@@ -2,6 +2,7 @@ import { ComponentProps, useEffect, useImperativeHandle, useMemo, useRef, useSta
 
 import { VideoState } from '~/modules/elements/video-player/video-state';
 import sleep from '~/modules/utils/sleep';
+
 import Youtube, { VideoPlayerRef } from './youtube';
 
 type Props = ComponentProps<typeof Youtube> & { ref?: React.Ref<VideoPlayerRef> };
@@ -19,6 +20,11 @@ export default function DirectVideoPlayer({
   const player = useRef<HTMLVideoElement | null>(null);
   const [size, setSize] = useState({ w: width, h: height });
   const [status, setStatus] = useState(VideoState.UNSTARTED);
+
+  // Read the latest status from a ref inside the stable `playerApi` memo, so exposing `getStatus`
+  // doesn't force the memo (and the imperative handle / seek effects) to rebuild on every status change.
+  const statusRef = useRef(status);
+  statusRef.current = status;
 
   useEffect(() => {
     const createCallback = (status: VideoState) => () => setStatus(status);
@@ -49,7 +55,7 @@ export default function DirectVideoPlayer({
   const loadVideoTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const playerApi = useMemo<VideoPlayerRef>(
     () => ({
-      getStatus: () => status,
+      getStatus: () => statusRef.current,
       setSize: (w, h) => setSize({ w, h }),
       seekTo: (time: number) => {
         if (player.current) {

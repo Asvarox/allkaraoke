@@ -1,5 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
+
 import { Song } from '~/interfaces';
+
 import convertTxtToSong from '../src/modules/songs/utils/convert-txt-to-song';
 
 const SONGS_FOLDER = './public/songs';

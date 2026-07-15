@@ -1,5 +1,6 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { ValuesType } from 'utility-types';
+
+import { PlayerNumber } from '~/modules/players/player-number';
 import { typesMap } from '~/modules/songs/utils/convert-txt-to-song';
 
 export type NoteType = ValuesType<typeof typesMap>;

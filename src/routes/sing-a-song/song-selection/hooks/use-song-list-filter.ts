@@ -1,5 +1,6 @@
 import uFuzzy from '@leeoniya/ufuzzy';
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+
 import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/songs/utils/is-song-recently-updated';
 import clearString, { removeAccents } from '~/modules/utils/clear-string';
@@ -167,7 +168,6 @@ export const useSongListFilter = (
   }, [selectedPlaylist]);
 
   const deferredFilters = useDeferredValue(filters);
-  const isSearchApplied = !!deferredFilters.search;
 
   const filteredList = useMemo(
     () =>
@@ -177,7 +177,7 @@ export const useSongListFilter = (
         excludeLanguages: excludedLanguages ?? [],
         additionalSongs: additionalSong ? [additionalSong] : [],
       }),
-    [list, deferredFilters, excludedLanguages, playlist, additionalSong, isSearchApplied],
+    [list, deferredFilters, excludedLanguages, playlist, additionalSong],
   );
 
   return {

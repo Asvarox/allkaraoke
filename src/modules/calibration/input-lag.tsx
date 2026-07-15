@@ -1,5 +1,6 @@
 import { ComponentProps } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import useKeyboardHelp from '~/modules/hooks/use-keyboard-help';
 import { HelpEntry } from '~/routes/keyboard-help/context';

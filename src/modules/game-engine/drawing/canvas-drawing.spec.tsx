@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/experimental-ct-react';
 import type { Page } from '@playwright/test';
+
 import { NotesSection } from '../../../interfaces';
 import { mulitrack } from '../../songs/utils/song-fixture';
 import { TestCanvas } from '../../utils/test-canvas';

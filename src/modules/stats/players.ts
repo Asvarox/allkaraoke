@@ -1,6 +1,5 @@
-import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from '~/modules/hooks/players/consts';
-
 import events from '~/modules/game-events/game-events';
+import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from '~/modules/hooks/players/consts';
 import PlayersManager from '~/modules/players/players-manager';
 import { isNonNull } from '~/modules/utils/is-non-null';
 import storage from '~/modules/utils/storage';

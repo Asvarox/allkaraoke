@@ -1,5 +1,6 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerNote } from '~/interfaces';
+import { PlayerNumber } from '~/modules/players/player-number';
+
 import styles from '../../styles';
 
 export function getColor(

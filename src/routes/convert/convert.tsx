@@ -1,6 +1,7 @@
 import { Paper } from '@mui/material';
 import { ComponentProps, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
+
 import PageLoader from '~/modules/elements/page-loader';
 
 export const LazyConvert = lazy(() =>

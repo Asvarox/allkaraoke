@@ -1,7 +1,9 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import tinycolor from 'tinycolor2';
+
 import GoldTriangle from '~/modules/game-engine/drawing/particles/gold-triangle';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { randomInt } from '~/modules/utils/random-value';
+
 import Particle from '../interfaces';
 import ParticleManager from '../particle-manager';
 import styles from '../styles';

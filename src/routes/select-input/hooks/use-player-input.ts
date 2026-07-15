@@ -1,7 +1,8 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect } from 'react';
+
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import tuple from '~/modules/utils/tuple';

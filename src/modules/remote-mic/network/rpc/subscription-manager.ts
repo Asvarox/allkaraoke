@@ -31,6 +31,12 @@ export class ClientSubscriptionManager<TChannels extends AnySubscriptionChannels
     }
   };
 
+  /** Returns the latest cached data for a channel, or undefined before the first push. Stable
+   * reference between publishes, so it can back `useSyncExternalStore`'s `getSnapshot`. */
+  public getSnapshot = <C extends keyof TChannels>(channel: C): TChannels[C] | undefined => {
+    return this.latestData[channel];
+  };
+
   /** Subscribe to a channel. Delivers cached data immediately if available. Returns an unsubscribe function. */
   public subscribe = <C extends keyof TChannels>(channel: C, callback: ChannelCallback<TChannels, C>): (() => void) => {
     const count = this.subscriberCounts[channel] ?? 0;

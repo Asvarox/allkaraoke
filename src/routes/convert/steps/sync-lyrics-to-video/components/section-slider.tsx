@@ -1,5 +1,6 @@
 import { Slider } from '@mui/material';
 import { useEffect, useState } from 'react';
+
 import { NotesSection } from '~/interfaces';
 
 interface Props {

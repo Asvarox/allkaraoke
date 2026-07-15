@@ -4,6 +4,7 @@ import { Button, FormControlLabel, IconButton, Switch } from '@mui/material';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
+
 import { useBackground } from '~/modules/elements/background-context';
 import NoPrerender from '~/modules/elements/no-prerender';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';

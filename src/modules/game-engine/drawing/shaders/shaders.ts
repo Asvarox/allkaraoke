@@ -1,6 +1,7 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { Curtains, Plane, PlaneParams } from 'curtainsjs';
+
 import GameState from '~/modules/game-engine/game-state/game-state';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 export class Shaders {
   private curtains: Curtains;

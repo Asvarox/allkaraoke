@@ -1,7 +1,9 @@
 import { execSync } from 'child_process';
-import dotenv from 'dotenv';
 import fs from 'fs';
 import { writeFile } from 'node:fs/promises';
+
+import dotenv from 'dotenv';
+
 import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
@@ -161,15 +163,12 @@ type ImportedSongSummary = {
     }
 
     console.log('Updating song data');
-    execSync(
-      `pnpm ts-node scripts/update-last-update.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`,
-      {
-        stdio: 'inherit',
-      },
-    );
+    execSync(`pnpm tsx scripts/update-last-update.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`, {
+      stdio: 'inherit',
+    });
 
     console.log('Updating song stats');
-    execSync(`pnpm ts-node scripts/generate-song-stats.ts`, { stdio: 'inherit' });
+    execSync(`pnpm tsx scripts/generate-song-stats.ts`, { stdio: 'inherit' });
 
     if (isUnverifiedSongsAdminConfigured()) {
       console.log('Cleaning up promoted shared songs from Cloudflare pending pool');

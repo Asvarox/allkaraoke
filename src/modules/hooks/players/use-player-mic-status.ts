@@ -1,7 +1,8 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
+
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 const usePlayerMicStatus = (
   playerNumber: PlayerNumber,

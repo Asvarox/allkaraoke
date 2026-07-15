@@ -1,6 +1,8 @@
 import { ComponentProps, Fragment } from 'react';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
+
 import { HistoryPageSkeleton } from './history-page-skeleton';
 import { PlayEntryCard, type PlayEntryCardInteractionProps } from './play-entry-card';
 import { PlayHistoryGroup } from './use-play-history';

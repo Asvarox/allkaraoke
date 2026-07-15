@@ -1,5 +1,7 @@
 import { ComponentProps, ForwardedRef } from 'react';
+
 import isE2E from '~/modules/utils/is-e2-e';
+
 import OfflineVideoPlayer from './offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './youtube';
 

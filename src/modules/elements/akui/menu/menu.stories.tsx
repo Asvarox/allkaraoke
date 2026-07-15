@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
+
 import { Menu } from '../menu';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

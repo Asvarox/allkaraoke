@@ -1,6 +1,7 @@
 import posthog from 'posthog-js';
 import { useCallback } from 'react';
 import createPersistedState from 'use-persisted-state';
+
 import { serverRpc } from '~/modules/remote-mic/network/client';
 
 export const useSavedSongs = createPersistedState<string[]>('remote-mic-saved-songs');
@@ -19,7 +20,7 @@ export const useMySongList = () => {
         void serverRpc.songs.sendMyList({ added: [songId] });
       }
     },
-    [savedSongList],
+    [savedSongList, setSavedSongList],
   );
 
   return { savedSongList, toggleSong };

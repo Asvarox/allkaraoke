@@ -1,4 +1,5 @@
 import { memoize } from 'es-toolkit';
+
 import { noPointsNoteTypes } from '~/consts';
 import { DetailedScore, PlayerNote, Song } from '~/interfaces';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';

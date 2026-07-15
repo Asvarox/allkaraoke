@@ -1,4 +1,5 @@
 import { captureException } from '@sentry/react';
+
 import InputInterface from '~/modules/game-engine/input/interface';
 import AubioStrategy from '~/modules/game-engine/input/mic-strategies/aubio';
 import events from '~/modules/game-events/game-events';

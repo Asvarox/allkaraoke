@@ -1,6 +1,9 @@
-import dotenv from 'dotenv';
 import fs from 'fs';
+
+import dotenv from 'dotenv';
+
 import { SongPreview } from '~/interfaces';
+
 import currentSongs from '../public/songs/index.json';
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
 import { importSongsFromPostHogBase } from '../src/modules/songs/utils/import-songs-from-post-hog-base';

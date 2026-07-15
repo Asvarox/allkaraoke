@@ -1,5 +1,6 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
+
 import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicChangeMicColorPagePO {

@@ -1,4 +1,5 @@
 import { ComponentRef, useRef, useState } from 'react';
+
 import { HighScoreEntity } from '~/interfaces';
 import { Autocomplete } from '~/modules/elements/autocomplete';
 import useRecentPlayerNames from '~/modules/hooks/players/use-recent-player-names';

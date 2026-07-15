@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+
 import { Song, SongPreview } from '~/interfaces';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { generatePlayerChangesForTrack } from '~/modules/songs/utils/generate-player-changes';
@@ -6,6 +7,7 @@ import getSongId from '~/modules/songs/utils/get-song-id';
 import mergeTracks from '~/modules/songs/utils/merge-tracks';
 import { lastVisit } from '~/modules/stats/last-visit';
 import storage from '~/modules/utils/storage';
+
 import { getSongPreview } from './utils';
 
 let store: Promise<LocalForage | typeof storage.memory> | null = null;

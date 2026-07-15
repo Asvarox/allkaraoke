@@ -1,5 +1,6 @@
 import { captureException } from '@sentry/react';
 import { useEffect, useRef, useState } from 'react';
+
 import CameraManager from '~/modules/camera/camera-manager';
 import Typography from '~/modules/elements/akui/primitives/typography';
 

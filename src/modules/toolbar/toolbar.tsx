@@ -1,6 +1,7 @@
 import { Help, HelpOutlined, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { type CSSProperties, PropsWithChildren, useContext, useState } from 'react';
+
 import { Tooltip } from '~/modules/elements/tooltip';
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';

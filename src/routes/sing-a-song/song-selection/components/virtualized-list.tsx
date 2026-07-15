@@ -11,6 +11,7 @@ import {
   useMemo,
   useRef,
 } from 'react';
+
 import isE2E from '~/modules/utils/is-e2-e';
 import {
   Components,

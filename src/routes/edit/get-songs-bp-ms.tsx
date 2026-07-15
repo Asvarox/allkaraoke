@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { SongPreview } from '~/interfaces';
 import { useBackground } from '~/modules/elements/background-context';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';

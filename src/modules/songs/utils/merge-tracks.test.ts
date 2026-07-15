@@ -1,4 +1,5 @@
 import { readFileSync } from 'fs';
+
 import { Song, SongTrack } from '~/interfaces';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';

@@ -1,6 +1,7 @@
 import { shuffle } from 'es-toolkit';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+
 import { SongPreview } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { useBackground } from '~/modules/elements/background-context';
@@ -13,6 +14,7 @@ import useSmoothNavigate, { buildUrl } from '~/modules/hooks/use-smooth-navigate
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import LayoutGame from '~/routes/layout-game';
+
 import SongPage from '../game/song-page';
 
 function Jukebox() {

@@ -21,7 +21,7 @@ function getCliArgument(name: string): string | undefined {
 function getScriptArguments(): string[] {
   const rawArguments = process.argv.slice(2);
 
-  // ts-node includes the script path as the first argument.
+  // tsx includes the script path as the first argument.
   if (rawArguments[0]?.endsWith('.ts') || rawArguments[0]?.endsWith('.js')) {
     return rawArguments.slice(1);
   }

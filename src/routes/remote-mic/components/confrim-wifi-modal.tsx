@@ -1,6 +1,7 @@
 import { Laptop, PhoneAndroid, Wifi } from '@mui/icons-material';
 import React, { useEffect } from 'react';
 import { twc } from 'react-twc';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton, MenuContainer } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
@@ -37,6 +38,7 @@ export default function ConfirmWifiModal({ onClose }: Props) {
         return () => navigator?.connection?.removeEventListener?.('change', onChange);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- runs the Wi-Fi connection check once on mount
   }, []);
 
   return (

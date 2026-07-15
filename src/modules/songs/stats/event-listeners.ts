@@ -1,4 +1,5 @@
 import localForage from 'localforage';
+
 import events from '~/modules/game-events/game-events';
 import { getSongKey, SongStats, storeSongStats } from '~/modules/songs/stats/common';
 

@@ -5,6 +5,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
+
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';

@@ -1,5 +1,6 @@
 import http from 'http';
 import { AddressInfo } from 'net';
+
 import handler from 'serve-handler';
 
 export default class Server {

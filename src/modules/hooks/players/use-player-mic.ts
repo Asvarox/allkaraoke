@@ -1,6 +1,7 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { useEffect, useState } from 'react';
+
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { PlayerNumber } from '~/modules/players/player-number';
 import tuple from '~/modules/utils/tuple';
 import { FPSCountSetting } from '~/routes/settings/settings-state';
 

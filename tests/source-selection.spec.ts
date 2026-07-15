@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';

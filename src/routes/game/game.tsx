@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { Helmet } from 'react-helmet';
+
 import { SingSetup, SongPreview } from '~/interfaces';
 import CameraManager from '~/modules/camera/camera-manager';
 import NoPrerender from '~/modules/elements/no-prerender';
@@ -9,6 +10,7 @@ import useQueryParam from '~/modules/hooks/use-query-param';
 import { woosh } from '~/modules/sound-manager';
 import startViewTransition from '~/modules/utils/start-view-transition';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
+
 import Singing from './singing/singing';
 
 function Game() {

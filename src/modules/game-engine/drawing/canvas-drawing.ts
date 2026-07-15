@@ -1,6 +1,6 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { captureException } from '@sentry/react';
 import bezier from 'bezier-easing';
+
 import { noDistanceNoteTypes } from '~/consts';
 import { Note, NotesSection, PlayerNote } from '~/interfaces';
 import { drawPlayerCanvas } from '~/modules/game-engine/drawing/elements/debug-player-canvas';
@@ -12,11 +12,13 @@ import GameState from '~/modules/game-engine/game-state/game-state';
 import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getLastNoteEnd } from '~/modules/songs/utils/notes-selectors';
 import { randomFloat } from '~/modules/utils/random-value';
 import { FPSCountSetting, GraphicSetting } from '~/routes/settings/settings-state';
+
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculate-data';
 import debugPitches from './elements/debug-pitches';
 import drawNote from './elements/note';

@@ -1,9 +1,9 @@
 import { cloudflare } from '@cloudflare/vite-plugin';
 import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
+import babel from '@rolldown/plugin-babel';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
-import react from '@vitejs/plugin-react';
-import ReactCompilerBabelPlugin from 'babel-plugin-react-compiler';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
@@ -22,9 +22,9 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  //   experimental: {
-  //     bundledDev: true,
-  //   },
+// experimental: {
+// bundledDev: true,
+// },
   resolve: {
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
@@ -33,28 +33,28 @@ export default defineConfig({
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
     }),
-    ReactCompilerBabelPlugin,
     react({
-      babel: {
-        plugins: [
-          '@emotion/babel-plugin',
-          // https://mui.com/material-ui/guides/minimizing-bundle-size/
-          [
-            'babel-plugin-transform-imports',
-            {
-              '@mui/icons-material': {
-                transform: '@mui/icons-material/${member}',
-                preventFullImport: true,
-              },
-              '@mui/material': {
-                transform: '@mui/material/${member}',
-                preventFullImport: true,
-              },
-            },
-          ],
-        ],
-      },
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
+    }),
+    babel({
+      presets: [reactCompilerPreset()],
+      plugins: [
+        '@emotion/babel-plugin',
+        // https://mui.com/material-ui/guides/minimizing-bundle-size/
+        [
+          'babel-plugin-transform-imports',
+          {
+            '@mui/icons-material': {
+              transform: '@mui/icons-material/${member}',
+              preventFullImport: true,
+            },
+            '@mui/material': {
+              transform: '@mui/material/${member}',
+              preventFullImport: true,
+            },
+          },
+        ],
+      ],
     }),
     visualizer(),
     !customCert && basicSsl(),

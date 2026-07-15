@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from 'react';
+
 import { SongPreview } from '~/interfaces';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { getUnverifiedSongsSearch } from '~/modules/songs/unverified-songs/api';
@@ -25,14 +26,12 @@ export default function useUnverifiedSongsSearch({
 
   useLayoutEffect(() => {
     let isActive = true;
+    // Use functional updaters so this effect doesn't depend on `unverifiedSongs`/`isFetching`
+    // (which would re-run it right after a successful fetch and loop). Returning the same value
+    // bails out of the state update, matching the previous guarded behaviour.
     const clearResults = () => {
-      if (unverifiedSongs.length > 0) {
-        setUnverifiedSongs([]);
-      }
-
-      if (isFetching) {
-        setIsFetching(false);
-      }
+      setUnverifiedSongs((current) => (current.length > 0 ? [] : current));
+      setIsFetching((current) => (current ? false : current));
     };
 
     if (!shouldFetchUnverifiedSongs || !debouncedSearch) {

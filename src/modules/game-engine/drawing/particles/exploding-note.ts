@@ -1,6 +1,8 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import tinycolor from 'tinycolor2';
+
 import { Note } from '~/interfaces';
+import { PlayerNumber } from '~/modules/players/player-number';
+
 import Particle from '../interfaces';
 import ParticleManager from '../particle-manager';
 import styles from '../styles';

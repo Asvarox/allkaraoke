@@ -1,6 +1,7 @@
 import { CheckCircleOutlined } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
+
 import Typography from '~/modules/elements/akui/primitives/typography';
 import Loader from '~/modules/elements/loader';
 import events from '~/modules/game-events/game-events';
@@ -53,6 +54,7 @@ function WaitForReadiness({ onFinish }: Props) {
       await sleep(1000);
       onFinish();
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- the readiness/autostart sequence runs once on mount
   }, []);
 
   const playerStatuses = players.map(([deviceId, name, player]) => ({

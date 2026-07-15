@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react';
+
 import CameraManager from '~/modules/camera/camera-manager';
 import { Button } from '~/modules/elements/akui/button';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+
 import timelapse from './timelapse.webm';
 
 interface Props {
@@ -23,7 +25,7 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
         }
       });
     }
-  }, [loading]);
+  }, [loading, permissionStatus]);
 
   return (
     <div className={`typography flex aspect-4/3 flex-col items-end`}>

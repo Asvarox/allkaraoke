@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 
 export const useDevicePing = (deviceId?: string) => {

@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
   /* Retry on CI only */
   retries: process.env.CI ? 1 : 0, // Retry with script that will rerun failed again on CI at the end
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 3,
+  workers: process.env.CI ? '50%' : 3,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['json', { outputFile: 'test-results.json' }],

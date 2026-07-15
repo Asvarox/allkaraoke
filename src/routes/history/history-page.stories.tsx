@@ -1,5 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
+
 import { GAME_MODE, SongPreview } from '~/interfaces';
+
 import { HistoryPageView } from './history-page-view';
 import { PlayHistoryGroup } from './use-play-history';
 

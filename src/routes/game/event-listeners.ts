@@ -1,6 +1,7 @@
 import { captureException } from '@sentry/react';
 import { pack } from 'msgpackr';
 import posthog from 'posthog-js';
+
 import { SingSetup, Song, SongPreview } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
