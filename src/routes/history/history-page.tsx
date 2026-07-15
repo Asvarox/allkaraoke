@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
+
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+
 import { HistoryPageView } from './history-page-view';
 import { usePlayHistory } from './use-play-history';
 

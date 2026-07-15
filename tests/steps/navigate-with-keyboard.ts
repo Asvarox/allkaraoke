@@ -1,5 +1,6 @@
 import { expect, Page, test } from '@playwright/test';
 import { partition } from 'es-toolkit';
+
 import tuple from '~/modules/utils/tuple';
 
 const findInMatrix = (matrix: string[][], name: string): [number, number] => {

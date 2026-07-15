@@ -1,6 +1,7 @@
 import posthog from 'posthog-js';
 import { useLayoutEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { milliseconds } from '~/interfaces';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { GameEvent } from '~/modules/game-events/game-events';
 
 export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>, getLast = false) {

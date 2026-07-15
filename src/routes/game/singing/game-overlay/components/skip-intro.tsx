@@ -1,5 +1,6 @@
 import posthog from 'posthog-js';
 import { MutableRefObject, useMemo } from 'react';
+
 import { Kbd } from '~/modules/elements/akui/kbd';
 import { Menu } from '~/modules/elements/akui/menu';
 import { VideoPlayerRef } from '~/modules/elements/video-player/index';

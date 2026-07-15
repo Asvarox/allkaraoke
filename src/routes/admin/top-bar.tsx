@@ -1,7 +1,9 @@
 import { Icon } from '@iconify-icon/react';
 import { Button, IconButton } from '@mui/material';
+
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import routePaths from '~/routes/route-paths';
+
 import { LogoutButton } from './logout-button';
 
 interface AdminModule<T extends string> {

@@ -1,6 +1,8 @@
 import { v4 as uuid } from 'uuid';
+
 import { ClientTransport } from '~/modules/remote-mic/network/client/transport/interface';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
+
 import { ExtractContract, HandlerMap, RpcRequest, RpcResponse } from './types';
 
 /**

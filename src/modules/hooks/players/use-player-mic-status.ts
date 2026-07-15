@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
 

@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+
 import { initTestMode, mockSongs } from '../helpers';
 import { visual } from './visual';
 

@@ -1,6 +1,7 @@
 import { renderHook } from '@testing-library/react';
 import { act, FunctionComponent, PropsWithChildren } from 'react';
 import { describe, expect, it, vitest } from 'vitest';
+
 import events from '~/modules/game-events/game-events';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { HelpEntry } from '~/routes/keyboard-help/context';

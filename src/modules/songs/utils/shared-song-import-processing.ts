@@ -1,4 +1,5 @@
 import { Song } from '~/interfaces';
+
 import getSongId from './get-song-id';
 
 const ESC_TITLE_SUFFIX_REGEX = /\s*\(ESC\s+(\d+)\s+[^)]+\)\s*$/i;

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+
 import { useBackground } from '~/modules/elements/background-context';
 import NoPrerender from '~/modules/elements/no-prerender';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+
 import { clearAdminPassword, getAdminPassword, setAdminPassword } from './admin-password';
 import { LoginScreen } from './login-screen';
 import { TopBar } from './top-bar';

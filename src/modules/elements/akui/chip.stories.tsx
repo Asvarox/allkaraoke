@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
+
 import { Chip } from './chip';
 
 export default {

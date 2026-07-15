@@ -1,4 +1,5 @@
 import { PlayerNote } from '~/interfaces';
+
 import roundRect from './round-rect';
 
 export default function drawPlayerFrequencyTrace(

@@ -5,7 +5,6 @@ import '~/modules/utils/array-at-polyfill';
 import '~/modules/utils/array-find-last-index-polyfill';
 import '~/modules/utils/expose-singletons';
 import '~/modules/utils/wdyr';
-
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import {
@@ -20,7 +19,9 @@ import posthog from 'posthog-js';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { v4 } from 'uuid';
+
 import App from '~/app';
+
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { normalizeSting } from '~/modules/songs/utils/get-song-id';

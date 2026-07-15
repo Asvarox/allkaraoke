@@ -1,9 +1,11 @@
 import { useState } from 'react';
+
 import { DetailedScore, SingSetup, Song } from '~/interfaces';
 import { GameTip } from '~/modules/elements/game-tip';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import ResultsView from '~/routes/game/singing/post-game/views/results';
 import { BackgroundThemeSetting, useSettingValue } from '~/routes/settings/settings-state';
+
 import SongPage from '../../song-page';
 import HighScoresView from './views/high-scores';
 

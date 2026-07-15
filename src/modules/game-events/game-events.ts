@@ -1,4 +1,5 @@
 import posthog from 'posthog-js';
+
 import { SingSetup, Song, SongPreview } from '~/interfaces';
 import { PlayerEntity, SelectedPlayerInput } from '~/modules/players/players-manager';
 import { transportErrorReason } from '~/modules/remote-mic/network/client/network-client';

@@ -1,15 +1,8 @@
-import { ErrorBoundary } from '@sentry/react';
-import { Route, Router, Switch } from 'wouter';
-import { KeyboardHelpProvider } from '~/routes/keyboard-help/context';
-import RemoteMic from '~/routes/remote-mic/remote-mic';
-import Settings from '~/routes/settings/settings';
-import Convert from './routes/convert/convert';
-import Edit from './routes/edit/edit';
-import Jukebox from './routes/jukebox/jukebox';
-import SelectInput from './routes/select-input/select-input';
-
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
+import { ErrorBoundary } from '@sentry/react';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
+import { Route, Router, Switch } from 'wouter';
+
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
@@ -17,15 +10,23 @@ import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
+import { KeyboardHelpProvider } from '~/routes/keyboard-help/context';
 import LandingPage from '~/routes/landing-page/landing-page';
 import ManageSongs from '~/routes/manage-songs/manage-songs';
 import QuickSetup from '~/routes/quick-setup/quick-setup';
+import RemoteMic from '~/routes/remote-mic/remote-mic';
 import routePaths from '~/routes/route-paths';
 import { CalibrationSettings } from '~/routes/settings/calibration';
 import RemoteMicSettings from '~/routes/settings/remote-mic-settings';
+import Settings from '~/routes/settings/settings';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
 import SocialMediaElements from '~/routes/social-media-elements/social-media-elements';
 import Welcome from '~/routes/welcome/welcome';
+
+import Convert from './routes/convert/convert';
+import Edit from './routes/edit/edit';
+import Jukebox from './routes/jukebox/jukebox';
+import SelectInput from './routes/select-input/select-input';
 
 const LazySongList = lazy(() =>
   import('~/routes/manage-songs/song-management').then((modules) => ({ default: modules.SongList })),

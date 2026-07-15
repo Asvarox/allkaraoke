@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test';
-import { mockSongs, stubUserMedia } from './helpers';
-import { openAndConnectRemoteMicWithCode } from './steps/open-and-connect-remote-mic';
 
+import { mockSongs, stubUserMedia } from './helpers';
 import initialise from './page-objects/initialise';
 import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
+import { openAndConnectRemoteMicWithCode } from './steps/open-and-connect-remote-mic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {

@@ -2,6 +2,7 @@ import posthog from 'posthog-js';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { ValuesType } from 'utility-types';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import { CompletedAnim } from '~/modules/elements/menu/heading';
 import InputManager from '~/modules/game-engine/input/input-manager';

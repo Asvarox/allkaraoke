@@ -1,5 +1,6 @@
 import { useFeatureFlagEnabled } from 'posthog-js/react';
 import { ValuesType } from 'utility-types';
+
 import { FeatureFlags } from '~/modules/utils/feature-flags';
 import isDev from '~/modules/utils/is-dev';
 import isE2E from '~/modules/utils/is-e2-e';

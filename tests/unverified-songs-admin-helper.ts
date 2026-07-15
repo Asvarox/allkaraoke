@@ -1,6 +1,7 @@
+import { readFileSync } from 'fs';
+
 import { APIRequestContext, expect, TestInfo } from '@playwright/test';
 import dotenv from 'dotenv';
-import { readFileSync } from 'fs';
 
 dotenv.config({ path: '.env' });
 dotenv.config({ path: '.env.local', override: true });

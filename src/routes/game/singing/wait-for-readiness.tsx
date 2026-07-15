@@ -1,6 +1,7 @@
 import { CheckCircleOutlined } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
+
 import Typography from '~/modules/elements/akui/primitives/typography';
 import Loader from '~/modules/elements/loader';
 import events from '~/modules/game-events/game-events';

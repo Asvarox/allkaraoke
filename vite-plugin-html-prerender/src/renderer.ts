@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+
 import { Browser, chromium, LaunchOptions } from 'playwright';
+
 import { RenderedRoute } from './types';
 
 export default class Renderer {

@@ -1,5 +1,6 @@
 import NoSleep from '@uriopass/nosleep.js';
 import { useLayoutEffect, useState } from 'react';
+
 import { useBackground } from '~/modules/elements/background-context';
 import { switchToTheme } from '~/modules/game-engine/drawing/styles';
 import events from '~/modules/game-events/game-events';

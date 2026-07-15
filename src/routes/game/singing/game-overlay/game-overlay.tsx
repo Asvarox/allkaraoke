@@ -1,20 +1,21 @@
 import { forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef } from 'react';
+
 import { GAME_MODE, PlayerSetup, Song } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
+import CanvasDrawing from '~/modules/game-engine/drawing/index';
+import fragShader from '~/modules/game-engine/drawing/shaders/shader.frag?raw';
+import vertShader from '~/modules/game-engine/drawing/shaders/shader.vert?raw';
 import PlayersManager from '~/modules/players/players-manager';
+import tuple from '~/modules/utils/tuple';
 import SkipIntro from '~/routes/game/singing/game-overlay/components/skip-intro';
 import SkipOutro from '~/routes/game/singing/game-overlay/components/skip-outro';
+import getPlayerScoreData from '~/routes/game/singing/game-overlay/helpers/get-player-score-data';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
+
 import GameState from '../../../../modules/game-engine/game-state/game-state';
 import DurationBar from './components/duration-bar';
 import Lyrics from './components/lyrics';
 import ScoreText from './components/score-text';
-
-import CanvasDrawing from '~/modules/game-engine/drawing/index';
-import fragShader from '~/modules/game-engine/drawing/shaders/shader.frag?raw';
-import vertShader from '~/modules/game-engine/drawing/shaders/shader.vert?raw';
-import tuple from '~/modules/utils/tuple';
-import getPlayerScoreData from '~/routes/game/singing/game-overlay/helpers/get-player-score-data';
 
 interface Props {
   song: Song;

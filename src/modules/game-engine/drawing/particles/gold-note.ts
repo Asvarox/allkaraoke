@@ -1,6 +1,8 @@
 import tinycolor from 'tinycolor2';
+
 import GoldTriangle from '~/modules/game-engine/drawing/particles/gold-triangle';
 import { randomInt } from '~/modules/utils/random-value';
+
 import Particle from '../interfaces';
 import ParticleManager from '../particle-manager';
 import styles from '../styles';

@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+
 import navigateWithKeyboard from '../steps/navigate-with-keyboard';
 
 type issueType = 'not-in-sync' | 'bad-lyrics' | 'too-quiet' | 'too-loud';

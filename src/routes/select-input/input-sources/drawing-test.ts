@@ -1,4 +1,5 @@
 import { getInputId } from '~/modules/players/utils';
+
 import { InputSource } from './interfaces';
 
 const inputs = [

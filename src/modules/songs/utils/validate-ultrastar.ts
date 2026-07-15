@@ -1,4 +1,5 @@
 import { Song } from '~/interfaces';
+
 import convertTxtToSong from './convert-txt-to-song';
 
 function hasOnlyFiniteSectionValues(song: Song) {

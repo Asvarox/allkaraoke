@@ -1,6 +1,7 @@
 import { Warning } from '@mui/icons-material';
 import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';

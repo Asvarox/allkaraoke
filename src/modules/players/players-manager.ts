@@ -1,4 +1,5 @@
 import { debounce } from 'es-toolkit';
+
 import GameState from '~/modules/game-engine/game-state/game-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';

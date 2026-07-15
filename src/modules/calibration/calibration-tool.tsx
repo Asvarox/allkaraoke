@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMeasure } from 'react-use';
+
 import Typography from '~/modules/elements/akui/primitives/typography';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
-
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
 
 export const CalibrationTool = () => {

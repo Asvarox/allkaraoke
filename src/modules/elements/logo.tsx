@@ -1,8 +1,8 @@
 import { ComponentProps } from 'react';
 import { twc } from 'react-twc';
+
 import storage from '~/modules/utils/storage';
 import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
-
 import { twx } from '~/utils/twx';
 
 if (global.location?.search.includes('pride')) {

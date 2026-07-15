@@ -1,6 +1,7 @@
 import { ForwardedRef, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
+
 import { seconds } from '~/interfaces';
 import { VideoState } from '~/modules/elements/video-player/video-state';
 import usePlayerVolume from '~/modules/hooks/use-player-volume';

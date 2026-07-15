@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-react';
+
 import { MicInputCtStory } from './mic-input.ct-story';
 
 test('Mic input should properly return frequencies', async ({ mount, page }) => {

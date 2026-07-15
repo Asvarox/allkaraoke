@@ -1,6 +1,7 @@
 import { Check, Error } from '@mui/icons-material';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ValuesType } from 'utility-types';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
@@ -19,6 +20,7 @@ import inputSourceListManager from '~/routes/select-input/input-sources/index';
 import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
 import MicCheck from '~/routes/select-input/mic-check';
 import { MicSetupPreference } from '~/routes/settings/settings-state';
+
 import { InputSource } from '../input-sources/interfaces';
 
 interface Props {

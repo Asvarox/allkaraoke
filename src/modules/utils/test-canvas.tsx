@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { GAME_MODE } from '~/interfaces';
 import CanvasDrawing from '~/modules/game-engine/drawing/canvas-drawing';
 import { drawSprite, getSprite } from '~/modules/game-engine/drawing/elements/cache/cached-sprites';

@@ -1,7 +1,9 @@
 import { captureException } from '@sentry/react';
 import { range } from 'es-toolkit';
+
 import { getInputId } from '~/modules/players/utils';
 import userMediaService from '~/modules/user-media/user-media-service';
+
 import { InputSource } from './interfaces';
 
 interface NameMapper {

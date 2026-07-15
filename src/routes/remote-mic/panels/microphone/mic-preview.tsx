@@ -1,5 +1,6 @@
 import { throttle } from 'es-toolkit';
 import { useEffect, useMemo, useState } from 'react';
+
 import SimplifiedMic from '~/modules/game-engine/input/simplified-mic';
 import events from '~/modules/game-events/game-events';
 import { useEventListener } from '~/modules/game-events/hooks';

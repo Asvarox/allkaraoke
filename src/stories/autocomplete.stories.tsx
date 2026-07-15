@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps, useState } from 'react';
+
 import { Autocomplete } from '~/modules/elements/autocomplete';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

@@ -1,4 +1,5 @@
 import { Curtains, Plane, PlaneParams } from 'curtainsjs';
+
 import GameState from '~/modules/game-engine/game-state/game-state';
 
 export class Shaders {

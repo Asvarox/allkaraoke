@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import PlayersManager, { MAX_PLAYERS } from '~/modules/players/players-manager';

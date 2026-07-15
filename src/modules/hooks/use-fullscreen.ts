@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { AutoEnableFullscreenSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 export default function useFullscreen() {

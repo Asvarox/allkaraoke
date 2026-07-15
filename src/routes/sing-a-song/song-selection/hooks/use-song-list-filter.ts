@@ -1,5 +1,6 @@
 import uFuzzy from '@leeoniya/ufuzzy';
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+
 import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/songs/utils/is-song-recently-updated';
 import clearString, { removeAccents } from '~/modules/utils/clear-string';

@@ -1,4 +1,5 @@
 import { GAME_MODE, songBeat } from '~/interfaces';
+
 import { PassTheMicUiArgs, PassTheMicUiState } from './types';
 
 export const clamp = (min: number, value: number, max: number) => Math.max(min, Math.min(max, value));

@@ -30,8 +30,8 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - parallel:
-          - name: Prettier check
-            run: pnpm prettier-check
+          - name: Format check
+            run: pnpm format-check
           - name: Lint
             run: pnpm lint
           - name: Type check

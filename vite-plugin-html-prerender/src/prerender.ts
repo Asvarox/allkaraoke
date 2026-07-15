@@ -1,6 +1,8 @@
-import { minify } from 'html-minifier-terser';
 import path from 'path';
+
+import { minify } from 'html-minifier-terser';
 import type { Plugin, ResolvedConfig } from 'vite';
+
 import Renderer from './renderer';
 import Server from './server';
 import { HtmlPrerenderOptions } from './types';

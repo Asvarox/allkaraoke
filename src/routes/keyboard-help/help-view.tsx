@@ -1,6 +1,7 @@
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc, TwcComponentProps } from 'react-twc';
+
 import { Kbd } from '~/modules/elements/akui/kbd';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
@@ -10,6 +11,7 @@ import {
   MobilePhoneModeSetting,
   useSettingValue,
 } from '~/routes/settings/settings-state';
+
 import { RegularHelpEntry } from './context';
 
 interface Props {

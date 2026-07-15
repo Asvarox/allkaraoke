@@ -2,6 +2,7 @@ import { Icon } from '@iconify-icon/react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentRef, FormEventHandler, useEffect, useRef, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
+
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Menu } from '~/modules/elements/akui/menu';
 import Typography from '~/modules/elements/akui/primitives/typography';

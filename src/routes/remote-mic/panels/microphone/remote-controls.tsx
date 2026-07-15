@@ -1,5 +1,6 @@
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import { twc, TwcComponentProps } from 'react-twc';
+
 import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
 
 interface Props {

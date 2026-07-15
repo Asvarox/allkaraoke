@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+
 import { regenerateUnverifiedSongIndex } from './unverified-songs-admin-client';
 
 dotenv.config({ path: '.env' });

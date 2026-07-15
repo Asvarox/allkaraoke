@@ -1,6 +1,7 @@
 import { ComponentProps, memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { Link } from 'wouter';
+
 import { SingSetup, SongPreview as SongPreviewEntity } from '~/interfaces';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { useBackground } from '~/modules/elements/background-context';

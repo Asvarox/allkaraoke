@@ -1,4 +1,5 @@
 import tinycolor from 'tinycolor2';
+
 import { randomInt } from '~/modules/utils/random-value';
 
 const cachedColors: Record<string, [string[], string[], string[]]> = {};

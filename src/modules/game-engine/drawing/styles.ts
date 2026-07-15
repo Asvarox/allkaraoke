@@ -1,4 +1,5 @@
 import tinycolor from 'tinycolor2';
+
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 
 export const christmasGreenFillBase = tinycolor('rgb(52, 166, 95)');

@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import CountUp from 'react-countup';
+
 import { HighScoreEntity, SingSetup } from '~/interfaces';
 import { Badge } from '~/modules/elements/akui/badge';
 import styles from '~/modules/game-engine/drawing/styles';

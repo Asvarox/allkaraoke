@@ -1,9 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { useEffect } from 'react';
+
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
 import PlayersManager, { PlayerEntity } from '~/modules/players/players-manager';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
+
 import MicCheckSlot from './mic-check-slot';
 
 const storyPlayers = [
