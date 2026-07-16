@@ -1,0 +1,220 @@
+#ARTIST:Syd Matters
+#TITLE:To All Of You
+#CREATOR:testguy12
+#BPM:258
+#YEAR:2008
+#VIDEO:v=YwJqUbd1vzs
+#GENRE:Indie
+#LANGUAGE:English
+#GAP:28961,627906976744
+#ALLKARAOKE_ID:syd-matters-to-all-of-you
+#ALLKARAOKE_SID:6011
+#ALLKARAOKE_LASTUPDATE:2026-07-16T01:55:09.157Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=AoHFCLxTkE4
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:284
+#MP3:Syd Matters - To All Of You.mp3
+#COVER:Syd Matters - To All Of You [CO].jpg
+#BACKGROUND:Syd Matters - To All Of You [BG].jpg
+: 17 4 6 To 
+: 22 6 6 all 
+: 30 4 4 of 
+: 35 16 3 you, 
+: 57 3 6 A
+: 62 6 6 me
+: 69 4 4 ri
+: 74 6 3 can 
+: 82 1 4 girls
+: 84 10 6 ~, 
+: 96 2 6 it’s 
+: 101 8 6 sad 
+: 111 16 4 to
+- 127
+: 135 4 6 I
+: 140 6 6 ma
+: 147 5 4 gine 
+: 154 3 3 a 
+: 159 1 4 world
+: 161 11 6 ~ 
+: 174 4 6 with
+: 179 9 6 out 
+: 190 16 3 you
+- 206
+: 214 4 6 A
+: 219 7 6 me
+: 227 4 4 ri
+: 232 6 3 can 
+: 239 2 4 girls
+: 242 11 6 ~ 
+: 254 3 6 I’d 
+: 259 8 6 like 
+: 268 16 4 to
+- 284
+: 293 3 6 Be 
+: 298 7 6 part 
+: 306 4 4 of 
+: 311 7 3 the 
+: 319 1 4 world
+: 321 10 6 ~ 
+: 333 2 6 a
+: 336 11 6 round 
+: 348 16 3 you
+- 364
+: 378 6 6 Dri
+: 385 4 4 ving 
+: 391 4 3 a 
+: 397 1 4 car
+: 399 7 6 ~ 
+: 408 3 6 by 
+: 412 2 6 the 
+: 416 9 6 sea
+: 427 16 4 side
+- 443
+: 456 5 6 Wat
+: 463 5 4 ching 
+: 469 4 3 the 
+: 474 2 4 world
+: 477 6 6 ~ 
+: 486 4 6 from 
+: 491 2 6 the 
+: 495 9 6 bright 
+: 506 20 3 side
+- 526 553
+- 553
+: 570 28 1 (Yeah)
+- 598 789
+- 789
+: 806 4 6 To 
+: 813 5 6 all 
+: 819 4 4 of 
+: 825 17 3 you, 
+: 846 4 6 A
+: 851 6 6 me
+: 858 4 4 ri
+: 863 6 3 can 
+: 871 1 4 girls
+: 873 8 6 ~ 
+: 882 3 6 in 
+: 886 3 6 the 
+: 890 9 6 mo
+: 900 17 4 vies
+- 917
+: 931 5 6 No
+: 937 4 4 one 
+: 943 4 3 can 
+: 950 1 4 tell
+: 952 7 6 ~ 
+: 960 3 6 where 
+: 964 4 6 your 
+: 969 11 6 heart 
+: 982 15 3 is
+- 997
+: 1005 2 6 A
+: 1009 7 6 me
+: 1017 3 4 ri
+: 1022 6 3 can 
+: 1029 1 4 girls
+: 1031 6 6 ~ 
+: 1039 6 6 like 
+: 1048 6 6 dol
+: 1055 16 4 lies
+- 1071
+: 1082 4 6 With 
+: 1088 5 6 shi
+: 1095 4 6 ny 
+: 1101 10 6 smiles 
+: 1112 4 3 and 
+: 1117 4 3 plas
+: 1122 4 4 tic 
+: 1127 1 4 bo
+: 1129 20 3 dies
+- 1149 1174
+- 1174
+: 1191 4 3 I 
+: 1196 3 4 wish 
+: 1200 3 3 I 
+: 1206 23 1 had 
+: 1278 1 -1 an 
+: 1280 2 -1 A
+: 1283 2 1 me
+: 1286 3 3 ri
+: 1291 30 -1 can 
+: 1359 9 3 girl
+: 1369 24 -1 friend
+- 1393 1816
+- 1816
+: 1833 4 6 I 
+: 1839 5 6 cry 
+: 1846 5 4 some 
+: 1853 16 3 times, 
+: 1878 4 6 wal
+: 1884 4 4 king 
+: 1890 4 3 a
+: 1895 2 4 round
+: 1898 13 6 ~ 
+: 1912 4 6 my 
+: 1917 8 6 own 
+: 1927 21 4 place
+- 1948
+: 1956 7 6 Won
+: 1964 3 4 de
+: 1968 7 3 ring 
+: 1976 1 4 why
+: 1978 10 6 ~ 
+: 1990 4 6 she 
+: 1996 6 6 cries 
+: 2004 4 4 some
+: 2009 17 3 times
+- 2026
+: 2035 5 6 Tal
+: 2042 4 4 king 
+: 2047 5 3 a
+: 2053 1 4 bout
+: 2055 13 6 ~ 
+: 2070 5 6 her 
+: 2076 7 6 own 
+: 2084 20 4 place
+- 2104
+: 2114 7 6 Some
+: 2122 4 4 where 
+: 2127 4 3 a
+: 2132 1 4 round
+: 2134 13 6 ~ 
+: 2148 2 6 the 
+: 2152 10 6 moun
+: 2164 20 3 tains
+- 2184
+: 2193 6 6 No
+: 2200 4 4 one 
+: 2206 6 3 could 
+: 2213 2 4 dry
+: 2216 5 6 ~ 
+: 2223 6 6 her 
+: 2233 8 6 foun
+: 2242 20 4 tain
+- 2262
+: 2272 5 6 Till 
+: 2279 4 4 she 
+: 2284 6 3 got 
+: 2292 1 4 ti
+: 2294 6 6 red 
+: 2301 4 6 to 
+: 2306 6 6 com
+: 2314 21 3 plain
+- 2335 2358
+- 2358
+: 2375 4 3 That’s 
+: 2380 2 4 when 
+: 2383 3 3 I 
+: 2390 33 1 fly 
+: 2462 1 -1 to 
+: 2464 1 -1 the 
+: 2466 3 1 wild
+: 2470 3 3 ~
+: 2477 28 -1 land, 
+: 2541 3 -1 to 
+: 2545 9 3 your 
+: 2556 29 -1 land
+E
