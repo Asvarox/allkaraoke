@@ -1,0 +1,393 @@
+#ARTIST:Provinz feat. Nina Chuba
+#TITLE:Zorn & Liebe
+#CREATOR:princetongirl98
+#BPM:398,78
+#YEAR:2022
+#VIDEO:v=peqEBOQ7m-8
+#GENRE:Indie
+#LANGUAGE:German
+#GAP:7774,402427403581
+#ALLKARAOKE_ID:provinz-feat-nina-chuba-zorn-liebe
+#ALLKARAOKE_SID:6013
+#ALLKARAOKE_LASTUPDATE:2026-07-17T01:59:08.339Z
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:200
+#VERSION:1.0.0
+#MP3:Provinz feat. Nina Chuba - Zorn & Liebe.m4a
+#COVER:Provinz feat. Nina Chuba - Zorn & Liebe [CO].jpg
+#BACKGROUND:Provinz feat. Nina Chuba - Zorn & Liebe [BG].jpg
+: 27 3 2 Her
+: 32 3 11 zen 
+: 37 4 2 bre
+: 43 2 2 chen,
+- 45
+: 49 3 2 Por
+: 54 3 2 zel
+: 60 9 2 lan,
+- 69
+: 72 6 1 Wir 
+: 86 3 11 sind 
+: 92 2 9 nicht 
+: 97 1 6 mehr, 
+: 104 3 2 was 
+: 109 3 11 wir 
+: 115 5 2 mal 
+: 121 9 2 war’n
+- 130
+: 133 8 4 Wir 
+: 149 3 9 wer
+: 156 2 2 fen 
+: 160 2 11 mit 
+: 166 2 2 Schat
+: 171 4 2 ten
+- 175
+: 178 3 1 Und 
+: 184 4 2 war
+: 191 3 11 ten 
+: 196 2 2 dar
+: 200 4 2 auf,
+- 204
+: 206 3 11 Dass 
+: 211 2 2 es 
+: 216 2 2 ir
+: 220 3 2 gend
+: 226 3 2 wann 
+: 232 3 2 mal 
+: 237 3 11 wie
+: 243 3 2 der 
+: 249 10 4 Tag 
+: 261 10 11 wird
+- 271
+: 279 4 6 Kipp 
+: 285 2 2 uns
+: 290 5 6 re 
+: 298 3 6 Trä
+: 303 3 4 nen 
+: 308 2 4 auf 
+: 312 7 4 Eis,
+- 319
+: 324 2 2 Ein 
+: 329 2 6 Hoch 
+: 334 3 4 auf 
+: 339 2 4 uns 
+: 344 7 4 zwei
+- 351
+: 354 3 2 Dar
+: 359 3 4 auf, 
+: 365 3 6 dass 
+: 370 2 6 es 
+: 375 2 6 ewig 
+: 380 4 6 und 
+: 388 3 6 im
+: 393 5 6 mer 
+: 401 2 6 so 
+: 405 9 6 bleibt
+- 414
+: 421 5 11 Schau 
+: 429 3 6 in 
+: 437 4 4 dei
+: 444 4 6 ne 
+: 450 4 1 Au
+: 456 4 1 gen, 
+: 463 4 1 kal
+: 470 2 2 tes 
+: 474 8 1 Blau
+- 482
+: 486 6 1 Ich 
+: 500 4 9 frie
+: 507 3 6 re 
+: 512 6 1 ein, 
+: 521 2 1 du 
+: 525 5 2 brennst 
+: 533 2 6 mich 
+: 538 5 2 aus
+- 543
+: 547 2 6 Du 
+: 551 4 4 weißt, 
+: 557 5 2 ich 
+: 565 14 11 brenn 
+: 588 3 6 für 
+: 594 11 6 dich
+- 605
+: 620 1 2 Seit 
+: 623 2 2 dem 
+: 628 5 6 ers
+: 636 2 9 ten 
+: 640 7 6 Mal 
+: 651 3 6 in 
+: 656 7 4 dei
+: 666 3 6 nem 
+: 670 8 4 Wa
+: 682 2 4 gen,
+- 684
+: 686 4 2 Das 
+: 692 14 11 Au
+: 715 3 7 to
+: 720 13 6 licht
+- 733
+: 750 2 2 In 
+: 754 8 6 dei’m 
+: 765 2 6 Ge
+: 769 8 6 sicht 
+: 780 2 7 sind 
+: 784 8 7 dunk
+: 794 4 4 le 
+: 800 4 6 Schat
+: 807 3 9 ten,
+- 810
+: 812 2 2 Die 
+: 817 7 2 se
+: 825 4 2 he 
+: 845 2 6 nur 
+: 849 9 6 ich
+- 858
+: 876 2 2 Wir 
+: 880 1 2 ver
+: 883 4 6 lie
+: 890 3 7 ren 
+: 896 3 6 die 
+: 902 5 6 Kon
+: 911 6 7 trol
+: 919 5 6 le, 
+: 928 4 4 sag,
+- 932
+: 936 6 2 Wo 
+: 945 13 2 soll’n 
+: 970 3 7 wir 
+: 976 13 6 hin?
+- 989 999
+- 999
+: 1026 2 1 Un
+: 1030 5 7 ser 
+: 1038 11 6 Zorn, 
+: 1052 5 6 uns
+: 1059 4 7 re 
+: 1066 10 6 Lie
+: 1078 11 2 be
+- 1089 1151
+- 1151
+: 1178 5 6 Wird 
+: 1186 11 4 nie 
+: 1199 3 1 ver
+: 1204 12 2 geh’n
+- 1216 1261
+- 1261
+: 1288 2 7 Un
+: 1293 1 2 ser 
+: 1298 10 6 Zorn, 
+: 1311 7 7 uns
+: 1319 7 6 re 
+: 1328 7 4 Lie
+: 1336 13 2 be
+- 1349 1404
+- 1404
+: 1431 6 6 Wird 
+: 1440 12 4 nie 
+: 1454 3 2 ver
+: 1459 17 2 geh’n
+- 1476 1511
+- 1511
+: 1538 2 2 Un
+: 1541 3 2 ser 
+: 1548 13 6 Zorn, 
+: 1564 7 7 uns
+: 1573 3 7 re 
+: 1583 7 4 Lie
+: 1592 8 2 be
+- 1600
+: 1601 3 2 Es 
+: 1605 6 2 ist 
+: 1614 7 2 kalt 
+: 1623 4 2 im 
+: 1630 2 2 Ok
+: 1634 6 4 to
+: 1642 4 6 ber,
+- 1646
+: 1649 3 4 Drü
+: 1654 6 4 cken 
+: 1664 11 4 uns 
+: 1679 4 4 auf 
+: 1685 6 4 den 
+: 1694 7 4 Bo
+: 1703 5 2 den
+- 1708
+: 1730 1 9 Uns
+: 1733 5 2 re 
+: 1742 5 6 Trä
+: 1750 5 6 nen 
+: 1757 3 1 auf 
+: 1763 11 2 Eis
+- 1774
+: 1786 3 7 Schau’n 
+: 1791 8 4 tief 
+: 1801 3 2 ins 
+: 1806 6 4 Glas 
+: 1815 5 4 in 
+: 1822 5 4 letz
+: 1830 4 2 ter 
+: 1837 11 2 Zeit
+- 1848
+: 1857 2 2 Ich 
+: 1862 4 2 will 
+: 1868 3 1 nicht 
+: 1874 2 2 wis
+: 1878 3 2 sen,
+- 1881
+: 1882 2 2 Wie 
+: 1886 2 2 dein 
+: 1890 5 4 Tag 
+: 1896 4 6 war
+- 1900
+: 1903 4 4 Will 
+: 1909 3 4 nur 
+: 1913 3 4 wis
+: 1918 7 4 sen,
+- 1925
+: 1928 3 4 Wie
+: 1932 4 4 so 
+: 1939 2 4 du 
+: 1943 2 4 nicht 
+: 1946 3 4 bei 
+: 1951 7 4 mir 
+: 1960 7 2 warst
+- 1967
+: 1982 2 1 Brauch 
+: 1986 2 2 dei
+: 1990 4 4 ne 
+: 1997 6 6 Au
+: 2005 4 4 gen 
+: 2012 4 4 um 
+: 2019 5 1 zu 
+: 2027 16 2 seh’n, 
+: 2058 7 2 ja
+- 2065
+: 2075 2 6 Du 
+: 2081 3 4 weißt, 
+: 2087 5 2 ich 
+: 2095 14 11 brenn 
+: 2122 1 9 für 
+: 2126 10 6 dich
+- 2136
+: 2151 1 2 Seit 
+: 2155 1 2 dem 
+: 2159 6 2 ers
+: 2167 4 9 ten 
+: 2172 7 6 Mal 
+: 2182 3 4 in 
+: 2188 8 4 dei
+: 2199 3 4 nem 
+: 2204 7 11 Wa
+: 2213 2 2 gen,
+- 2215
+: 2217 3 1 Das 
+: 2222 17 11 Au
+: 2249 2 11 to
+: 2254 11 6 licht
+- 2265
+: 2282 2 2 In 
+: 2286 8 6 dei’m 
+: 2296 2 6 Ge
+: 2300 9 6 sicht 
+: 2311 2 1 sind 
+: 2316 7 6 dunk
+: 2325 4 6 le 
+: 2332 4 6 Schat
+: 2338 2 4 ten, 
+: 2342 4 2 die 
+: 2349 14 2 seh 
+: 2377 1 7 nur 
+: 2381 12 6 ich
+- 2393
+: 2407 2 2 Wir 
+: 2411 2 2 ver
+: 2416 5 4 lie
+: 2423 4 6 ren 
+: 2429 6 6 die 
+: 2438 3 6 Kon
+: 2443 7 6 trol
+: 2452 5 4 le, 
+: 2460 5 6 sag,
+- 2465
+: 2468 5 9 Wo 
+: 2476 10 2 willst 
+: 2501 3 7 du 
+: 2508 8 7 hin?
+- 2516 2530
+- 2530
+: 2557 1 2 Un
+: 2561 6 7 ser 
+: 2569 12 6 Zorn, 
+: 2584 6 6 uns
+: 2593 6 7 re 
+: 2602 7 4 Lie
+: 2612 13 2 be
+- 2625 2682
+- 2682
+: 2709 4 6 Wird 
+: 2716 11 4 nie 
+: 2730 2 2 ver
+: 2734 15 2 geh’n
+- 2749 2787
+- 2787
+: 2814 2 2 Un
+: 2818 6 6 ser 
+: 2827 12 6 Zorn, 
+: 2841 7 7 uns
+: 2850 6 6 re 
+: 2859 7 4 Lie
+: 2868 13 2 be
+- 2881 2938
+- 2938
+: 2965 4 4 Wird 
+: 2972 10 4 nie 
+: 2985 3 2 ver
+: 2990 16 2 geh’n
+- 3006 3042
+- 3042
+: 3069 2 2 Un
+: 3073 6 9 ser 
+: 3082 12 9 Zorn, 
+: 3097 8 7 uns
+: 3107 5 6 re 
+: 3114 7 4 Lie
+: 3124 13 2 be
+- 3137 3298
+- 3298
+: 3325 1 2 Un
+: 3329 6 6 ser 
+: 3337 11 6 Zorn, 
+: 3352 7 7 uns
+: 3360 5 6 re 
+: 3368 8 4 Lie
+: 3378 13 2 be
+- 3391 3810
+- 3810
+: 3837 2 4 Un
+: 3841 3 7 ser 
+: 3848 11 6 Zorn, 
+: 3862 7 7 uns
+: 3871 6 6 re 
+: 3879 6 4 Lie
+: 3888 14 2 be
+- 3902 3968
+- 3968
+: 3995 2 9 Wird 
+: 3999 6 6 nie 
+: 4007 4 4 ver
+: 4014 2 7 ge
+: 4019 17 7 hen
+- 4036
+: 4057 2 7 Wo 
+: 4061 8 7 willst 
+: 4072 4 6 du 
+: 4079 10 4 hin?
+- 4089
+: 4098 2 9 Un
+: 4102 1 7 ser 
+: 4105 9 9 Zorn, 
+: 4117 8 9 uns
+: 4127 4 6 re 
+: 4134 5 4 Lie
+: 4141 15 2 be
+E
