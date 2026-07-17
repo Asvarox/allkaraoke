@@ -61265,6 +61265,34 @@
     "local": false
   },
   {
+    "id": "frightened-rabbit-swim-until-you-cant-see-land",
+    "title": "Swim Until You Can’t See Land",
+    "artist": "Frightened Rabbit",
+    "video": "SzjERZU3wbY",
+    "language": [
+      "English"
+    ],
+    "bpm": 648,
+    "gap": 16314.62962962963,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-17T01:59:09.112Z",
+    "genre": "Indie Rock",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "divmisc",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 43
+      }
+    ],
+    "shortId": 6014,
+    "tracksCount": 1,
+    "search": "frightenedrabbitswimuntilyoucantseeland",
+    "local": false
+  },
+  {
     "id": "fripside-only-my-railgun",
     "title": "Only my Railgun",
     "artist": "FripSide",
@@ -79936,7 +79964,7 @@
     "gap": 11736.486486486487,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-16T01:55:09.790Z",
+    "lastUpdate": "2026-07-15T06:06:16.116Z",
     "genre": "Rock",
     "realBpm": 160,
     "volume": 1,
@@ -97175,6 +97203,34 @@
     "local": false
   },
   {
+    "id": "limp-bizkit-my-generation",
+    "title": "My Generation",
+    "artist": "Limp Bizkit",
+    "video": "BE9CXWV1alg",
+    "language": [
+      "English"
+    ],
+    "bpm": 416,
+    "gap": -39.326923076923094,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-17T01:59:09.382Z",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "Way2Evil",
+    "sourceUrl": "https://www.youtube.com/watch?v=BE9CXWV1alg",
+    "duration": 221,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6015,
+    "tracksCount": 1,
+    "search": "limpbizkitmygeneration",
+    "local": false
+  },
+  {
     "id": "lindsey-stirling-feat-becky-g-christmas-cmon",
     "title": "Christmas C’mon",
     "artist": "Lindsey Stirling feat. Becky G",
@@ -100672,6 +100728,34 @@
     "shortId": 2664,
     "tracksCount": 1,
     "search": "lucyhaleliealittlebetter",
+    "local": false
+  },
+  {
+    "id": "luis-alberto-spinetta-seguir-viviendo-sin-tu-amor",
+    "title": "Seguir viviendo sin tu amor",
+    "artist": "Luis Alberto Spinetta",
+    "video": "y13ixMXCzzE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 279.82000000000005,
+    "gap": 16976.77990970655,
+    "year": "1991",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-17T01:59:09.385Z",
+    "genre": "Rock",
+    "realBpm": 103,
+    "volume": 1,
+    "sourceUrl": "https://youtu.be/BfYR6EH_9qg?si=vnjij0qij0ZagqTP",
+    "duration": 156,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6016,
+    "tracksCount": 1,
+    "search": "luisalbertospinettaseguirviviendosintuamor",
     "local": false
   },
   {
@@ -129781,6 +129865,33 @@
     "local": false
   },
   {
+    "id": "provinz-feat-nina-chuba-zorn-liebe",
+    "title": "Zorn & Liebe",
+    "artist": "Provinz feat. Nina Chuba",
+    "video": "peqEBOQ7m-8",
+    "language": [
+      "German"
+    ],
+    "bpm": 398.78,
+    "gap": 7774.402427403581,
+    "year": "2022",
+    "lastUpdate": "2026-07-17T01:59:08.339Z",
+    "genre": "Indie",
+    "realBpm": 99,
+    "volume": 1,
+    "author": "princetongirl98",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6013,
+    "tracksCount": 1,
+    "search": "provinzfeatninachubazornliebe",
+    "local": false
+  },
+  {
     "id": "psy-feat-cl-of-2ne1-daddy",
     "title": "DADDY",
     "artist": "PSY feat. CL of 2NE1",
@@ -150611,7 +150722,7 @@
     "gap": 28961.627906976744,
     "year": "2008",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-07-16T01:55:09.157Z",
+    "lastUpdate": "2026-07-15T06:04:46.989Z",
     "genre": "Indie",
     "realBpm": 104,
     "volume": 1,
