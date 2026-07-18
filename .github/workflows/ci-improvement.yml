@@ -110,6 +110,14 @@ jobs:
         with:
           config: 'playwright-ct.config.mts'
           updateSnapshots: 'true'
+      # Runs before the auto-commit so it can diff the freshly-updated (still
+      # unstaged) snapshots against their committed versions.
+      - name: Build visual diff thumbnails
+        id: visual-diff
+        if: github.ref != 'refs/heads/master'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          pnpm visual-diff:report
       - name: Auto commit updated snapshots
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v7
@@ -117,18 +125,38 @@ jobs:
         with:
           commit_message: '[ci-skip][skip-release-notes] chore: update visual regression snapshots'
           commit_options: '--no-verify'
+      - name: Upload visual diff thumbnails to Cloudflare Pages
+        id: deploy-visual-diff
+        if: steps.auto-commit-action.outputs.changes_detected == 'true' && steps.visual-diff.outputs.has_thumbnails == 'true'
+        continue-on-error: true # a hosting hiccup shouldn't block the review comment
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy test-results/visual-diff-report --project-name=allkaraoke-party-tests-results --branch=visual-diff-ct-${{ github.run_id }}
+      - name: Render visual diff comment
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        env:
+          BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
+        run: pnpm visual-diff:comment
       - name: 'Comment on PR to request a review of visual changes'
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
         uses: actions/github-script@v8
         with:
           script: |
+            const fs = require('node:fs');
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+            let gallery = '';
+            try {
+              gallery = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
+            } catch {}
 
             github.rest.pulls.createReview({ // https://octokit.github.io/rest.js/v20#pulls
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
-              body: `Changes detected in visual regression tests. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})`,
+              body: `Changes detected in visual regression tests. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})${gallery}`,
               event: 'COMMENT',
             })
 
@@ -163,24 +191,51 @@ jobs:
           config: 'playwright.config.ts'
           grep: '@visual'
           updateSnapshots: 'true'
+      # Runs before the auto-commit so it can diff the freshly-updated (still
+      # unstaged) snapshots against their committed versions.
+      - name: Build visual diff thumbnails
+        id: visual-diff
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          pnpm visual-diff:report
       - name: Auto commit updated snapshots
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: '[ci-skip][skip-release-notes] chore: update visual regression screenshots'
           commit_options: '--no-verify'
+      - name: Upload visual diff thumbnails to Cloudflare Pages
+        id: deploy-visual-diff
+        if: steps.auto-commit-action.outputs.changes_detected == 'true' && steps.visual-diff.outputs.has_thumbnails == 'true'
+        continue-on-error: true # a hosting hiccup shouldn't block the review comment
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy test-results/visual-diff-report --project-name=allkaraoke-party-tests-results --branch=visual-diff-vr-${{ github.run_id }}
+      - name: Render visual diff comment
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        env:
+          BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
+        run: pnpm visual-diff:comment
       - name: 'Comment on PR to request a review of visual changes'
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
         uses: actions/github-script@v8
         with:
           script: |
+            const fs = require('node:fs');
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+            let gallery = '';
+            try {
+              gallery = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
+            } catch {}
 
             github.rest.pulls.createReview({ // https://octokit.github.io/rest.js/v20#pulls
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
-              body: `Changes detected in visual regression screenshots. Please review.\n\n[View the run that committed the updated screenshots](${runUrl})`,
+              body: `Changes detected in visual regression screenshots. Please review.\n\n[View the run that committed the updated screenshots](${runUrl})${gallery}`,
               event: 'COMMENT',
             })
 
