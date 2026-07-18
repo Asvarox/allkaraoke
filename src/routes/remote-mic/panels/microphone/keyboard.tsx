@@ -196,13 +196,13 @@ const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolea
 function ArrowButton({ className, ...props }: ComponentProps<typeof Button>) {
   return (
     <Button
-      size="mini"
-      className={twMerge('m-0.5 aspect-square h-12! scale-100 animate-none px-0!', className)}
+      size="small"
+      className={twMerge('m-0.5 aspect-square scale-100 animate-none px-0!', className)}
       {...props}
     />
   );
 }
 
 function ActionButton({ className, ...props }: ComponentProps<typeof Button>) {
-  return <Button size="small" className={twMerge('m-0.5 h-12! w-full', className)} {...props} />;
+  return <Button size="small" className={twMerge('m-0.5 w-full', className)} {...props} />;
 }
