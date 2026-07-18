@@ -83,3 +83,39 @@ visual(
     });
   },
 );
+
+// Song-selection keyboard: when the host is on the actual song browser (not just any in-game
+// screen), the remote renders the bespoke song-selection layout - search box + arrow pad +
+// "Random Song" - instead of the generic classic nav pad.
+visual(
+  'Remote mic song-selection keyboard',
+  REMOTE_MIC_VIEWPORTS,
+  async ({ page, context, browser, viewport, makeScreenshot }) => {
+    await page.setViewportSize(VIEWPORTS.desktop);
+    await mockSongs({ page, context });
+    const pages = initialise(page, context, browser);
+
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+
+    const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+    await remoteMic._page.setViewportSize(viewport);
+
+    // Host opens the song browser, which publishes the song-selection layout to the remote.
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.continueAndGoToSongList();
+
+    await remoteMic.remoteMicMainPage.expectKeyboardModeToBe('song-selection');
+    await expect(remoteMic._page.getByTestId('keyboard-shift-r')).toBeVisible();
+
+    await makeScreenshot(undefined, {
+      page: remoteMic._page,
+      extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
+    });
+  },
+);
