@@ -88,6 +88,7 @@ function Settings() {
         <NavSwitcher
           name="camera-access"
           label="Enable camera mode"
+          remoteLabel="Camera mode"
           value={cameraValue}
           displayValue={cameraDisplayValue}
           info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
@@ -106,7 +107,11 @@ function Settings() {
           </>
         )}
         <hr />
-        <NavButton name="remote-mics-settings" size="small" onClick={() => navigate('settings/remote-mics/')}>
+        <NavButton
+          name="remote-mics-settings"
+          size="small"
+          remoteLabel="Remote mics settings"
+          onClick={() => navigate('settings/remote-mics/')}>
           Remote Microphones Settings
         </NavButton>
         <NavButton name="setup-mics-button" size="small" onClick={() => navigate('select-input/')}>

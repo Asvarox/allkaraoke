@@ -3,8 +3,9 @@
  *
  * A screen that opts into mirroring (via the `Nav.*` wrappers) describes each of its
  * navigable controls with one of these descriptors. The descriptor is derived from the
- * exact same props that render the on-screen control, so the phone and the screen cannot
- * drift (single source of truth).
+ * same props that render the on-screen control, so the phone and the screen cannot drift
+ * (single source of truth) — the one exception is `label`, which a screen may override
+ * with a shorter `remoteLabel` since the phone has much less horizontal room than a menu.
  *
  * The `type` discriminant is exhaustively handled on the phone via `assertNever`, so adding
  * a new control type here without a matching remote renderer fails the TypeScript build.
