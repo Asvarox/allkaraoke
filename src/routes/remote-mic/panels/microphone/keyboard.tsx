@@ -19,7 +19,7 @@ import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-s
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import { HelpEntry, KeyboardLayoutMode } from '~/routes/keyboard-help/context';
 import { assertNever } from '~/routes/keyboard-help/controls';
-import RemoteControl from '~/routes/remote-mic/panels/microphone/remote-controls';
+import RemoteControl, { remoteSelectorBackground } from '~/routes/remote-mic/panels/microphone/remote-controls';
 import RemoteSongSearch from '~/routes/remote-mic/panels/microphone/remote-song-search';
 
 interface Props {
@@ -197,12 +197,12 @@ function ArrowButton({ className, ...props }: ComponentProps<typeof Button>) {
   return (
     <Button
       size="small"
-      className={twMerge('m-0.5 aspect-square scale-100 animate-none px-0!', className)}
+      className={twMerge('m-0.5 aspect-square scale-100 animate-none px-0!', remoteSelectorBackground, className)}
       {...props}
     />
   );
 }
 
 function ActionButton({ className, ...props }: ComponentProps<typeof Button>) {
-  return <Button size="small" className={twMerge('m-0.5 w-full', className)} {...props} />;
+  return <Button size="small" className={twMerge('m-0.5 w-full', remoteSelectorBackground, className)} {...props} />;
 }
