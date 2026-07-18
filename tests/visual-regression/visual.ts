@@ -14,12 +14,13 @@ const ALL_VIEWPORTS = Object.keys(VIEWPORTS) as ViewportName[];
 // Remote mic screens are only ever used on a phone, so they're captured on the two mobile viewports.
 export const REMOTE_MIC_VIEWPORTS: ViewportName[] = ['mobile-portrait', 'mobile-landscape'];
 
-export type MakeScreenshot = (name?: string, extraMasks?: Locator[]) => Promise<void>;
+export type MakeScreenshot = (name?: string, options?: { page?: Page; extraMasks?: Locator[] }) => Promise<void>;
 
 type VisualTestFn = (args: {
   page: Page;
   context: BrowserContext;
   browser: Browser;
+  viewport: { width: number; height: number };
   makeScreenshot: MakeScreenshot;
 }) => Promise<void>;
 
@@ -61,17 +62,17 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
         });
 
-        const makeScreenshot: MakeScreenshot = async (name, extraMasks = []) => {
+        const makeScreenshot: MakeScreenshot = async (name, { page: targetPage = page, extraMasks = [] } = {}) => {
           const fileName = name ? `${slug}-${name}-${viewportName}.png` : `${slug}-${viewportName}.png`;
-          await expect(page).toHaveScreenshot(fileName, {
+          await expect(targetPage).toHaveScreenshot(fileName, {
             fullPage: true,
             mask: [
               // Embedded YouTube players (e.g. the song editor's "reference sound" step) load real,
               // ever-changing remote content - mask them rather than fighting that non-determinism.
-              page.locator('iframe[src*="youtube"]'),
+              targetPage.locator('iframe[src*="youtube"]'),
               // Live microphone level meters redraw continuously from the (fake) audio input in real
               // time via direct DOM mutation, so CSS animation-disabling has no effect on them.
-              page.locator('[data-test="mic-volume-indicator"]'),
+              targetPage.locator('[data-test="mic-volume-indicator"]'),
               // Caller-supplied volatile regions (e.g. the remote mic's live ping counter).
               ...extraMasks,
             ],
@@ -80,7 +81,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           });
         };
 
-        await testFn({ page, context, browser, makeScreenshot });
+        await testFn({ page, context, browser, viewport: VIEWPORTS[viewportName], makeScreenshot });
       });
     }
   });

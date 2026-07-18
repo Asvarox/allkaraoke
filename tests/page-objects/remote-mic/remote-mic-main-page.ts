@@ -44,6 +44,18 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('remote-keyboard');
   }
 
+  public async expectKeyboardModeToBe(mode: 'classic' | 'mirror' | 'song-selection') {
+    await expect(this.remoteKeyboardElement).toHaveAttribute('data-mode', mode);
+  }
+
+  public mirroredControl(name: string) {
+    return this.page.getByTestId(`control-${name}`);
+  }
+
+  public get arrowUpButton() {
+    return this.page.getByTestId('arrow-up');
+  }
+
   public get enterKeyboardButton() {
     return this.page.getByTestId('keyboard-enter');
   }

@@ -32,21 +32,23 @@ test('Mirrors in-game Options controls on the remote mic and toggles them direct
     await pages.mainMenuPage.goToSetting();
   });
 
-  const remotePage = remoteMic!._page;
-  const graphicsControl = remotePage.getByTestId('control-graphics-level');
-  const graphicsValue = remotePage.getByTestId('control-graphics-level-value');
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const graphicsControl = remoteMicMainPage.mirroredControl('graphics-level');
+  const backControl = remoteMicMainPage.mirroredControl('back-button');
 
   await test.step('Remote mic shows the mirrored controls instead of the arrow keyboard', async () => {
-    await expect(remotePage.getByTestId('remote-keyboard')).toHaveAttribute('data-mode', 'mirror');
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
     await expect(graphicsControl).toBeVisible();
-    await expect(remotePage.getByTestId('control-back-button')).toBeVisible();
-    // Arrow d-pad must not be present in mirror mode.
-    await expect(remotePage.getByTestId('arrow-up')).toBeHidden();
+    await expect(backControl).toBeVisible();
+    // Arrow d-pad must not be present in mirror mode, and there's no separate injected back button —
+    // the mirrored "Return To Main Menu" button (above) is the only way back.
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+    await expect(remoteMicMainPage.backArrowKeyboardButton).toBeHidden();
   });
 
   await test.step('Tapping the mirrored switch changes the setting in-game and reflects back on the remote', async () => {
-    const remoteBefore = await graphicsValue.textContent();
-    const hostGraphics = page.getByTestId('graphics-level');
+    const remoteBefore = await graphicsControl.textContent();
+    const hostGraphics = pages.settingsPage.graphicsLevelElement;
     const hostBefore = await hostGraphics.textContent();
 
     await graphicsControl.click();
@@ -54,6 +56,6 @@ test('Mirrors in-game Options controls on the remote mic and toggles them direct
     // The tap drives the exact same on-screen action…
     await expect(hostGraphics).not.toHaveText(hostBefore ?? '');
     // …and the new value is pushed back so the remote stays in sync.
-    await expect(graphicsValue).not.toHaveText(remoteBefore ?? '');
+    await expect(graphicsControl).not.toHaveText(remoteBefore ?? '');
   });
 });
