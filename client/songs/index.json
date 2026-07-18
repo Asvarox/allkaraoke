@@ -26244,6 +26244,35 @@
     "local": false
   },
   {
+    "id": "britney-spears-criminal",
+    "title": "Criminal",
+    "artist": "Britney Spears",
+    "video": "s6b33PTbGxk",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 102277.77777777778,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-18T01:48:36.165Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.76,
+    "author": "Luis",
+    "sourceUrl": "https://youtu.be/PvKw4ljBohA?si=ov1VdeDoHg3mzfTk",
+    "duration": 323,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6019,
+    "tracksCount": 1,
+    "search": "britneyspearscriminal",
+    "local": false
+  },
+  {
     "id": "britney-spears-do-somethin",
     "title": "Do Somethin'",
     "artist": "Britney Spears",
@@ -61276,7 +61305,7 @@
     "gap": 16314.62962962963,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-17T01:59:09.112Z",
+    "lastUpdate": "2026-07-16T12:20:14.793Z",
     "genre": "Indie Rock",
     "realBpm": 81,
     "volume": 1,
@@ -84221,6 +84250,34 @@
     "local": false
   },
   {
+    "id": "justin-bieber-boyfriend",
+    "title": "Boyfriend",
+    "artist": "Justin Bieber",
+    "video": "4GuqB1BQVr4",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.04,
+    "gap": 8294.948974332543,
+    "year": "2012",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-07-18T01:48:35.485Z",
+    "genre": "R&B",
+    "realBpm": 97,
+    "volume": 0.79,
+    "author": "vicktoben",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6017,
+    "tracksCount": 1,
+    "search": "justinbieberboyfriend",
+    "local": false
+  },
+  {
     "id": "justin-bieber-company",
     "title": "Company",
     "artist": "Justin Bieber",
@@ -90225,9 +90282,9 @@
       "English"
     ],
     "bpm": 280,
-    "gap": 12992.142857142857,
+    "gap": 12942.142857142857,
     "year": "2025",
-    "lastUpdate": "2026-07-06T20:45:01.873Z",
+    "lastUpdate": "2026-07-17T02:27:25.966Z",
     "genre": "Soundtrack, K-Pop",
     "realBpm": 121,
     "volume": 0.84,
@@ -97214,7 +97271,7 @@
     "gap": -39.326923076923094,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-17T01:59:09.382Z",
+    "lastUpdate": "2026-07-16T12:20:41.862Z",
     "realBpm": 104,
     "volume": 1,
     "author": "Way2Evil",
@@ -100173,6 +100230,36 @@
     "local": false
   },
   {
+    "id": "los-fabulosos-cadillacs-matador",
+    "title": "Matador",
+    "artist": "Los Fabulosos Cadillacs",
+    "video": "pjPA7CXutDw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 375.39999999999986,
+    "gap": 40192.65957446808,
+    "year": "1993",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-18T01:48:35.494Z",
+    "videoGap": 10,
+    "realBpm": 194,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Fabulosos%20Cadillacs&cancion=Matador",
+    "duration": 305,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6018,
+    "tracksCount": 1,
+    "search": "losfabulososcadillacsmatador",
+    "local": false
+  },
+  {
     "id": "los-lobos-gipsy-kings-la-bamba",
     "title": "La Bamba",
     "artist": "Los Lobos & Gipsy Kings",
@@ -100742,7 +100829,7 @@
     "gap": 16976.77990970655,
     "year": "1991",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-17T01:59:09.385Z",
+    "lastUpdate": "2026-07-16T12:21:48.109Z",
     "genre": "Rock",
     "realBpm": 103,
     "volume": 1,
@@ -129875,7 +129962,7 @@
     "bpm": 398.78,
     "gap": 7774.402427403581,
     "year": "2022",
-    "lastUpdate": "2026-07-17T01:59:08.339Z",
+    "lastUpdate": "2026-07-16T05:49:19.743Z",
     "genre": "Indie",
     "realBpm": 99,
     "volume": 1,
