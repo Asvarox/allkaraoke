@@ -4,16 +4,17 @@ import { join } from 'node:path';
 /**
  * Renders the thumbnail gallery markdown that gets appended to the "visual
  * changes" PR comment. Reads the report produced by {@link ./buildDiffReport}
- * and turns each changed snapshot into a collapsible `<details>` block with an
- * old / new / diff table. Image URLs are resolved against `BASE_URL` (where the
- * report was uploaded). Writes the markdown to `comment.md` next to the report.
+ * and turns the changed snapshots into a single old / new / diff table, one
+ * row per snapshot, inside one collapsible `<details>` block. Image URLs are
+ * resolved against `BASE_URL` (where the report was uploaded). Writes the
+ * markdown to `comment.md` next to the report.
  *
  * Kept separate from report generation because the upload URL is only known
  * after the images have been hosted.
  */
 
 const OUTPUT_DIR = 'test-results/visual-diff-report';
-const THUMBNAIL_WIDTH = 320;
+const THUMBNAIL_WIDTH = 240;
 
 interface ReportEntry {
   index: number;
@@ -41,28 +42,25 @@ function img(baseUrl: string, index: number, file: string, present: boolean): st
   return `<img src="${trimSlash(baseUrl)}/${index}/${file}" width="${THUMBNAIL_WIDTH}" />`;
 }
 
-function summaryLabel(entry: ReportEntry): string {
-  if (entry.status === 'added') return `${entry.name} — 🟢 new snapshot`;
-  if (entry.status === 'removed') return `${entry.name} — 🔴 removed`;
+function statusLabel(entry: ReportEntry): string {
+  if (entry.status === 'added') return '🟢 new';
+  if (entry.status === 'removed') return '🔴 removed';
 
   if (entry.ratio !== undefined && entry.mismatchedPixels !== undefined) {
     const percent = (entry.ratio * 100).toFixed(2);
-    return `${entry.name} — ${percent}% changed (${entry.mismatchedPixels.toLocaleString('en-US')} px)`;
+    return `${percent}% changed (${entry.mismatchedPixels.toLocaleString('en-US')} px)`;
   }
-  return `${entry.name} — changed`;
+  return 'changed';
 }
 
-function renderEntry(entry: ReportEntry, baseUrl: string): string {
-  return [
-    '<details>',
-    `<summary>${summaryLabel(entry)}</summary>`,
-    '',
-    '| Old | New | Diff |',
-    '| --- | --- | --- |',
-    `| ${img(baseUrl, entry.index, 'old.png', entry.hasOld)} | ${img(baseUrl, entry.index, 'new.png', entry.hasNew)} | ${img(baseUrl, entry.index, 'diff.png', entry.hasDiff)} |`,
-    '',
-    '</details>',
-  ].join('\n');
+function renderRow(entry: ReportEntry, baseUrl: string): string {
+  const cells = [
+    `**${entry.name}**<br/>${statusLabel(entry)}`,
+    img(baseUrl, entry.index, 'old.png', entry.hasOld),
+    img(baseUrl, entry.index, 'new.png', entry.hasNew),
+    img(baseUrl, entry.index, 'diff.png', entry.hasDiff),
+  ];
+  return `| ${cells.join(' | ')} |`;
 }
 
 function render(report: Report, baseUrl: string | undefined): string {
@@ -72,8 +70,18 @@ function render(report: Report, baseUrl: string | undefined): string {
 
   if (!report.hasThumbnails || !baseUrl) return '';
 
-  const header = `\n\n### Changed snapshots (${report.entries.length})\n`;
-  return header + '\n' + report.entries.map((entry) => renderEntry(entry, baseUrl)).join('\n\n');
+  return [
+    '',
+    '',
+    '<details>',
+    `<summary>Changed snapshots (${report.entries.length})</summary>`,
+    '',
+    '| Snapshot | Old | New | Diff |',
+    '| --- | --- | --- | --- |',
+    ...report.entries.map((entry) => renderRow(entry, baseUrl)),
+    '',
+    '</details>',
+  ].join('\n');
 }
 
 function main(): void {
