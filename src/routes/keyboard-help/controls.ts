@@ -16,8 +16,11 @@ interface ControlMeta {
   disabled?: boolean;
 }
 
+/** Marks a button's semantic role so the remote can add a visual cue (e.g. a leading back arrow). */
+export type ButtonVariant = 'back';
+
 export type ControlDescriptor =
-  | (ControlMeta & { type: 'button'; label: string })
+  | (ControlMeta & { type: 'button'; label: string; variant?: ButtonVariant })
   | (ControlMeta & { type: 'switch'; label: string; value: string })
   | (ControlMeta & { type: 'checkbox'; label: string; checked: boolean });
 
@@ -28,7 +31,7 @@ export type ControlType = ControlDescriptor['type'];
  * meta fields are added by `useKeyboardNav.register`.
  */
 export type ControlInput =
-  | { type: 'button'; label: string }
+  | { type: 'button'; label: string; variant?: ButtonVariant }
   | { type: 'switch'; label: string; value: string }
   | { type: 'checkbox'; label: string; checked: boolean };
 

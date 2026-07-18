@@ -32,11 +32,16 @@ export const Switcher = ({
     onClick={onClick}
     data-disabled={disabled}
     {...restProps}
-    className={`${className} shadow-focusable flex justify-start`}>
-    <span className="font-normal">{label ? <>{label}:</> : ''}</span>{' '}
-    <AnimatePresence>
+    className={`${className} shadow-focusable flex justify-start gap-2`}>
+    {/* A real 2-column flex row: the label takes exactly what's left after the value, so it only
+        truncates when the value actually needs the room (a short value like "NO" leaves the label
+        untouched). `popLayout` lets the value animate in/out with `position: absolute` applied only
+        to the exiting node, so the crossfade doesn't require constraining both sides to fixed guesses. */}
+    <span className="min-w-0 flex-1 truncate font-normal">{label ? <>{label}:</> : ''}</span>
+    <AnimatePresence mode="popLayout">
       <motion.span
-        className="text-active absolute right-2.5 overflow-hidden pl-2.5 text-ellipsis whitespace-nowrap"
+        layout
+        className="text-active max-w-[50%] flex-none overflow-hidden pl-2.5 text-ellipsis whitespace-nowrap"
         key={value ?? ''}
         initial={{ opacity: 0, translateY: 20 }}
         animate={{ opacity: 1, translateY: 0 }}

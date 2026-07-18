@@ -114,7 +114,7 @@ function Settings() {
         <NavButton name="manage-songs-button" size="small" onClick={() => navigate('manage-songs/')}>
           Manage Songs
         </NavButton>
-        <NavButton name="back-button" onClick={goBack}>
+        <NavButton name="back-button" variant="back" onClick={goBack}>
           Return To Main Menu
         </NavButton>
       </KeyboardNavContext>

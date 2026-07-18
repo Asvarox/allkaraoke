@@ -72,6 +72,9 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 }
 
 // Mirror mode — the active screen described its own controls; render them directly instead of arrows.
+// There's no injected "Back" button here: the mirrored screen must include its own back control
+// (e.g. Options' "Return To Main Menu", marked `variant="back"`) as one of its regular controls,
+// same as it would on-screen — no separate/duplicated back affordance to keep in sync.
 function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   const controls = keyboard.controls ?? [];
   return (
@@ -79,15 +82,6 @@ function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
       {controls.map((control) => (
         <RemoteControl key={control.name} control={control} onActivate={onActivateControl} />
       ))}
-      {keyboard.back !== undefined && (
-        <ActionButton onClick={onPress('back')} data-test="keyboard-backspace" className="mt-1">
-          {keyboard.back || (
-            <>
-              <ArrowBack /> Back
-            </>
-          )}
-        </ActionButton>
-      )}
     </div>
   );
 }
