@@ -12,6 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useEffect, useState } from 'react';
+
 import { Song } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';

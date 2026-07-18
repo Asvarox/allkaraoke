@@ -1,4 +1,5 @@
 import { capitalize } from 'es-toolkit';
+
 import { Note } from '~/interfaces';
 import { SpriteNames } from '~/modules/game-engine/drawing/elements/cache/sprite-map';
 import drawSpriteWithStartAndEnd from '~/modules/game-engine/drawing/elements/sprite-with-start-and-end';

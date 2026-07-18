@@ -1,9 +1,9 @@
-import { AdminUnverifiedSong } from './unverified-songs-admin-api';
 import {
   buildAdminUnverifiedSongProcessingUrl,
   getNextAdminUnverifiedSongProcessingUrl,
   getRandomAdminUnverifiedSong,
 } from './unverified-song-processing-queue';
+import { AdminUnverifiedSong } from './unverified-songs-admin-api';
 
 const makeSong = (
   overrides: Partial<AdminUnverifiedSong> & Pick<AdminUnverifiedSong, 'sharedSongId'>,

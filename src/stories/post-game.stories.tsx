@@ -2,12 +2,14 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
 import { expect } from 'storybook/test';
 import { ValuesType } from 'utility-types';
+
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
 import { MAX_POINTS, beatsToPoints, sumDetailedScore } from '~/modules/game-engine/game-state/helpers/calculate-score';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import tuple from '~/modules/utils/tuple';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
+
 import song from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt?raw';
 
 interface StoryArgs {

@@ -2,6 +2,7 @@ import Box from '~/modules/elements/akui/primitives/box';
 import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import { PlayerEntity } from '~/modules/players/players-manager';
+
 import PlayerStatus from './status';
 
 interface Props {

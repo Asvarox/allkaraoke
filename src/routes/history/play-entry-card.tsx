@@ -1,9 +1,11 @@
 import dayjs from 'dayjs';
 import { twc, TwcComponentProps } from 'react-twc';
+
 import { GAME_MODE } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Menu } from '~/modules/elements/akui/menu';
 import Typography from '~/modules/elements/akui/primitives/typography';
+
 import { PlayHistoryEntry } from './use-play-history';
 
 const GAME_MODE_LABELS: Record<string, string> = {

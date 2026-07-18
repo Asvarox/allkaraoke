@@ -27,9 +27,9 @@
     "Madonna",
     "ABBA",
     "Foo Fighters",
+    "Muse",
     "Bruno Mars",
     "Lana Del Rey",
-    "Muse",
     "Westlife",
     "Adele",
     "Demi Lovato",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6000
+  "songs": 6015
 }

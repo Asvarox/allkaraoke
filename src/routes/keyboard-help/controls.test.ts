@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+
 import { assertNever, ControlDescriptor, isValidControl } from '~/routes/keyboard-help/controls';
 
 describe('control descriptors', () => {

@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
+
 import { Kbd } from './kbd';
 import Typography from './primitives/typography';
 

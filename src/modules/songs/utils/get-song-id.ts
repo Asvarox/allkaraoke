@@ -1,4 +1,5 @@
 import { Song, SongPreview } from '~/interfaces';
+
 import { removeAccents } from '../../utils/clear-string';
 
 export function normalizeSting(str: string) {

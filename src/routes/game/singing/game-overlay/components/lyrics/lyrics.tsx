@@ -1,11 +1,13 @@
 import { motion } from 'motion/react';
 import { Fragment } from 'react';
+
 import { NotesSection, songBeat } from '~/interfaces';
 import styles from '~/modules/game-engine/drawing/styles';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getFirstNoteStartFromSections } from '~/modules/songs/utils/notes-selectors';
 import { cn } from '~/utils/cn';
+
 import AnimatedLine from './animated-line';
 import Headstart from './headstart';
 import LyricNoteToken from './lyric-note-token';

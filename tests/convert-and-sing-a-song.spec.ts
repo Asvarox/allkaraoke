@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
+
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
-
 import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;

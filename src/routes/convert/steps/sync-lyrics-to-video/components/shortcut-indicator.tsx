@@ -1,5 +1,6 @@
 import { Tooltip, useMediaQuery } from '@mui/material';
 import React from 'react';
+
 import isE2E from '~/modules/utils/is-e2-e';
 
 interface Props {

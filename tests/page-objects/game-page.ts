@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, Page, expect } from '@playwright/test';
+
 import navigateWithKeyboard from '../steps/navigate-with-keyboard';
 
 export class GamePagePO {

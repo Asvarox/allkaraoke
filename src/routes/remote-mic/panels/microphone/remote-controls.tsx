@@ -1,4 +1,5 @@
 import { ArrowBack } from '@mui/icons-material';
+
 import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';

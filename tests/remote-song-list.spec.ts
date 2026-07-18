@@ -1,15 +1,15 @@
 import { expect, test } from '@playwright/test';
+
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
+import initialise from './page-objects/initialise';
+import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 import {
   connectRemoteMic,
   openAndConnectRemoteMicDirectly,
   openAndConnectRemoteMicWithCode,
   openRemoteMic,
 } from './steps/open-and-connect-remote-mic';
-
-import initialise from './page-objects/initialise';
-import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {

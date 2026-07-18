@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+
 import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 
 interface Options {

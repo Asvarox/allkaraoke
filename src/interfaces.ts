@@ -1,4 +1,5 @@
 import { ValuesType } from 'utility-types';
+
 import { typesMap } from '~/modules/songs/utils/convert-txt-to-song';
 
 export type NoteType = ValuesType<typeof typesMap>;

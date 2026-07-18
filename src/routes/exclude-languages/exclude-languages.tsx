@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet';
+
 import NoPrerender from '~/modules/elements/no-prerender';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+
 import ExcludeLanguagesView from './exclude-languages-view';
 
 function ExcludeLanguages() {

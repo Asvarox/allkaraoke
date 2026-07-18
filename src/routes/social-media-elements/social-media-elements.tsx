@@ -1,4 +1,7 @@
+// @ts-expect-error import from /public/ folder
+import logo from '/logo.svg?url&raw';
 import styled from '@emotion/styled';
+
 import { useBackground } from '~/modules/elements/background-context';
 import { EurovisionTheme } from '~/modules/elements/layout-with-background';
 import Logo from '~/modules/elements/logo';
@@ -6,8 +9,6 @@ import { colorSets } from '~/modules/game-engine/drawing/styles';
 import LayoutGame from '~/routes/layout-game';
 import eurovisionIcon from '~/routes/sing-a-song/song-selection/components/song-card/eurovision-icon.svg';
 import EurovisionBgSvg from '~/routes/social-media-elements/eurovision-background';
-// @ts-expect-error import from /public/ folder
-import logo from '/logo.svg?url&raw';
 
 export default function SocialMediaElements() {
   useBackground(false);

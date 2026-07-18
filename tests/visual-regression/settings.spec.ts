@@ -1,4 +1,5 @@
 import { expect } from '@playwright/test';
+
 import { visual } from './visual';
 
 visual('Settings', async ({ page, makeScreenshot }) => {

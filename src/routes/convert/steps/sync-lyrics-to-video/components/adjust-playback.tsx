@@ -1,5 +1,6 @@
 import { Box, Button, ButtonGroup, Divider, Typography } from '@mui/material';
 import { useEffect, useRef } from 'react';
+
 import { Pre } from '~/routes/convert/elements';
 import ShortcutIndicator from '~/routes/convert/steps/sync-lyrics-to-video/components/shortcut-indicator';
 import formatMs from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';

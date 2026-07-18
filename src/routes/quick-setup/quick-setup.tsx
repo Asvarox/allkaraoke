@@ -1,6 +1,7 @@
 import isMobile from 'is-mobile';
 import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
+
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';

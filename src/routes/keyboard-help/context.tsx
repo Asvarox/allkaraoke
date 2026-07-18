@@ -1,9 +1,11 @@
 import { omit } from 'es-toolkit';
 import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
+
 import ConnectionStatus from '~/modules/remote-mic/connection-status';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
 import { ControlDescriptor } from '~/routes/keyboard-help/controls';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
+
 import KeyboardHelpView from './help-view';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR' | 'alphanumeric';

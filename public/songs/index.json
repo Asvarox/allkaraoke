@@ -10351,7 +10351,7 @@
     "gap": 48110.98901098901,
     "year": "2006",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-07-13T04:14:31.539Z",
+    "lastUpdate": "2026-07-12T08:07:30.092Z",
     "genre": "Alternative Rock",
     "realBpm": 182,
     "previewStart": 48,
@@ -26241,6 +26241,35 @@
     "shortId": 728,
     "tracksCount": 1,
     "search": "britneyspearscircus",
+    "local": false
+  },
+  {
+    "id": "britney-spears-criminal",
+    "title": "Criminal",
+    "artist": "Britney Spears",
+    "video": "s6b33PTbGxk",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 102277.77777777778,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-18T01:48:36.165Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.76,
+    "author": "Luis",
+    "sourceUrl": "https://youtu.be/PvKw4ljBohA?si=ov1VdeDoHg3mzfTk",
+    "duration": 323,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6019,
+    "tracksCount": 1,
+    "search": "britneyspearscriminal",
     "local": false
   },
   {
@@ -61265,6 +61294,34 @@
     "local": false
   },
   {
+    "id": "frightened-rabbit-swim-until-you-cant-see-land",
+    "title": "Swim Until You Can’t See Land",
+    "artist": "Frightened Rabbit",
+    "video": "SzjERZU3wbY",
+    "language": [
+      "English"
+    ],
+    "bpm": 648,
+    "gap": 16314.62962962963,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-16T12:20:14.793Z",
+    "genre": "Indie Rock",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "divmisc",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 43
+      }
+    ],
+    "shortId": 6014,
+    "tracksCount": 1,
+    "search": "frightenedrabbitswimuntilyoucantseeland",
+    "local": false
+  },
+  {
     "id": "fripside-only-my-railgun",
     "title": "Only my Railgun",
     "artist": "FripSide",
@@ -79925,6 +79982,35 @@
     "local": false
   },
   {
+    "id": "jimmy-eat-world-bleed-american",
+    "title": "Bleed American",
+    "artist": "Jimmy Eat World",
+    "video": "DnTQkKd8Wx0",
+    "language": [
+      "English"
+    ],
+    "bpm": 325.6,
+    "gap": 11736.486486486487,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-15T06:06:16.116Z",
+    "genre": "Rock",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "hamadad",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=5837",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6012,
+    "tracksCount": 1,
+    "search": "jimmyeatworldbleedamerican",
+    "local": false
+  },
+  {
     "id": "jimmy-eat-world-the-middle",
     "title": "The Middle",
     "artist": "Jimmy Eat World",
@@ -84161,6 +84247,34 @@
     "shortId": 2238,
     "tracksCount": 1,
     "search": "justinbieberbennyblancolonely",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-boyfriend",
+    "title": "Boyfriend",
+    "artist": "Justin Bieber",
+    "video": "4GuqB1BQVr4",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.04,
+    "gap": 8294.948974332543,
+    "year": "2012",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-07-18T01:48:35.485Z",
+    "genre": "R&B",
+    "realBpm": 97,
+    "volume": 0.79,
+    "author": "vicktoben",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6017,
+    "tracksCount": 1,
+    "search": "justinbieberboyfriend",
     "local": false
   },
   {
@@ -90168,9 +90282,9 @@
       "English"
     ],
     "bpm": 280,
-    "gap": 12992.142857142857,
+    "gap": 12942.142857142857,
     "year": "2025",
-    "lastUpdate": "2026-07-06T20:45:01.873Z",
+    "lastUpdate": "2026-07-17T02:27:25.966Z",
     "genre": "Soundtrack, K-Pop",
     "realBpm": 121,
     "volume": 0.84,
@@ -90184,6 +90298,35 @@
     "shortId": 5998,
     "tracksCount": 1,
     "search": "kpopdemonhuntersrumijinufree",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-saja-boys-soda-pop",
+    "title": "Soda Pop",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "983bBbJx0Mk",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 252,
+    "gap": 17548.095238095237,
+    "year": "2025",
+    "lastUpdate": "2026-07-13T15:53:41.186Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31138",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6010,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboyssodapop",
     "local": false
   },
   {
@@ -97117,6 +97260,34 @@
     "local": false
   },
   {
+    "id": "limp-bizkit-my-generation",
+    "title": "My Generation",
+    "artist": "Limp Bizkit",
+    "video": "BE9CXWV1alg",
+    "language": [
+      "English"
+    ],
+    "bpm": 416,
+    "gap": -39.326923076923094,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-16T12:20:41.862Z",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "Way2Evil",
+    "sourceUrl": "https://www.youtube.com/watch?v=BE9CXWV1alg",
+    "duration": 221,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6015,
+    "tracksCount": 1,
+    "search": "limpbizkitmygeneration",
+    "local": false
+  },
+  {
     "id": "lindsey-stirling-feat-becky-g-christmas-cmon",
     "title": "Christmas C’mon",
     "artist": "Lindsey Stirling feat. Becky G",
@@ -100059,6 +100230,36 @@
     "local": false
   },
   {
+    "id": "los-fabulosos-cadillacs-matador",
+    "title": "Matador",
+    "artist": "Los Fabulosos Cadillacs",
+    "video": "pjPA7CXutDw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 375.39999999999986,
+    "gap": 40192.65957446808,
+    "year": "1993",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-18T01:48:35.494Z",
+    "videoGap": 10,
+    "realBpm": 194,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Fabulosos%20Cadillacs&cancion=Matador",
+    "duration": 305,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6018,
+    "tracksCount": 1,
+    "search": "losfabulososcadillacsmatador",
+    "local": false
+  },
+  {
     "id": "los-lobos-gipsy-kings-la-bamba",
     "title": "La Bamba",
     "artist": "Los Lobos & Gipsy Kings",
@@ -100614,6 +100815,34 @@
     "shortId": 2664,
     "tracksCount": 1,
     "search": "lucyhaleliealittlebetter",
+    "local": false
+  },
+  {
+    "id": "luis-alberto-spinetta-seguir-viviendo-sin-tu-amor",
+    "title": "Seguir viviendo sin tu amor",
+    "artist": "Luis Alberto Spinetta",
+    "video": "y13ixMXCzzE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 279.82000000000005,
+    "gap": 16976.77990970655,
+    "year": "1991",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-16T12:21:48.109Z",
+    "genre": "Rock",
+    "realBpm": 103,
+    "volume": 1,
+    "sourceUrl": "https://youtu.be/BfYR6EH_9qg?si=vnjij0qij0ZagqTP",
+    "duration": 156,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6016,
+    "tracksCount": 1,
+    "search": "luisalbertospinettaseguirviviendosintuamor",
     "local": false
   },
   {
@@ -114207,7 +114436,7 @@
     "gap": 14330.384615384615,
     "year": "2009",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:32.060Z",
+    "lastUpdate": "2026-07-12T08:09:56.964Z",
     "genre": "Folk",
     "realBpm": 127,
     "volume": 1,
@@ -114717,7 +114946,7 @@
     "gap": 59553.16455696202,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:31.547Z",
+    "lastUpdate": "2026-07-12T08:08:36.352Z",
     "genre": "Rock",
     "realBpm": 158,
     "volume": 1,
@@ -129723,6 +129952,33 @@
     "local": false
   },
   {
+    "id": "provinz-feat-nina-chuba-zorn-liebe",
+    "title": "Zorn & Liebe",
+    "artist": "Provinz feat. Nina Chuba",
+    "video": "peqEBOQ7m-8",
+    "language": [
+      "German"
+    ],
+    "bpm": 398.78,
+    "gap": 7774.402427403581,
+    "year": "2022",
+    "lastUpdate": "2026-07-16T05:49:19.743Z",
+    "genre": "Indie",
+    "realBpm": 99,
+    "volume": 1,
+    "author": "princetongirl98",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6013,
+    "tracksCount": 1,
+    "search": "provinzfeatninachubazornliebe",
+    "local": false
+  },
+  {
     "id": "psy-feat-cl-of-2ne1-daddy",
     "title": "DADDY",
     "artist": "PSY feat. CL of 2NE1",
@@ -130909,21 +131165,21 @@
       "English"
     ],
     "bpm": 189.8,
-    "gap": 5393.52,
+    "gap": 2065.6027397260277,
     "year": "1977",
     "artistOrigin": "GB",
+    "lastUpdate": "2026-07-13T04:21:34.796Z",
     "edition": "SingStar Queen",
-    "videoGap": 5,
     "realBpm": 46,
     "volume": 0.75,
     "manualVolume": 1,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions",
-    "duration": 191,
+    "duration": 185,
     "tracks": [
       {
-        "start": 0
+        "start": 13
       }
     ],
     "shortId": 3549,
@@ -137715,7 +137971,7 @@
     "gap": 13006.80763983629,
     "year": "2008",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-07-13T04:14:31.545Z",
+    "lastUpdate": "2026-07-12T08:08:09.576Z",
     "genre": "Vocaloid",
     "realBpm": 175,
     "previewStart": 101,
@@ -138943,7 +139199,7 @@
     "gap": 16840.269873324767,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-13T04:14:31.549Z",
+    "lastUpdate": "2026-07-12T08:09:15.683Z",
     "genre": "Soundtrack",
     "realBpm": 66,
     "volume": 1,
@@ -142501,6 +142757,36 @@
     "local": false
   },
   {
+    "id": "shakira-disney-zootopia-zoo",
+    "title": "Zoo",
+    "artist": "Shakira (Disney Zootopia)",
+    "video": "Kw3935PH01E",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": -195.11627906976742,
+    "year": "2025",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-07-13T04:17:51.617Z",
+    "genre": "Sountrack",
+    "realBpm": 129,
+    "volume": 0.85,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
+    "duration": 198,
+    "tracks": [
+      {
+        "name": "Shakira - Zoo",
+        "start": 8
+      }
+    ],
+    "shortId": 6008,
+    "tracksCount": 1,
+    "search": "shakiradisneyzootopiazoo",
+    "local": false
+  },
+  {
     "id": "shakira-dont-bother",
     "title": "Don't Bother",
     "artist": "Shakira",
@@ -142982,6 +143268,34 @@
     "shortId": 3893,
     "tracksCount": 1,
     "search": "shakirasitevas",
+    "local": false
+  },
+  {
+    "id": "shakira-suerte",
+    "title": "Suerte",
+    "artist": "Shakira",
+    "video": "a8Rwz6zBJSE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 428,
+    "gap": 15658.644859813085,
+    "year": "2001",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-07-13T04:18:29.434Z",
+    "realBpm": 108,
+    "volume": 0.86,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=pantero",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6009,
+    "tracksCount": 1,
+    "search": "shakirasuerte",
     "local": false
   },
   {
@@ -149280,7 +149594,7 @@
     "bpm": 256.89,
     "gap": 2797.357234614037,
     "year": "2021",
-    "lastUpdate": "2026-07-13T04:14:31.552Z",
+    "lastUpdate": "2026-07-12T08:09:36.661Z",
     "genre": "K-Pop",
     "realBpm": 128,
     "previewStart": 54,
@@ -150481,6 +150795,35 @@
     "shortId": 4119,
     "tracksCount": 1,
     "search": "sxtnfotzenimclub",
+    "local": false
+  },
+  {
+    "id": "syd-matters-to-all-of-you",
+    "title": "To All Of You",
+    "artist": "Syd Matters",
+    "video": "YwJqUbd1vzs",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": 28961.627906976744,
+    "year": "2008",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-07-15T06:04:46.989Z",
+    "genre": "Indie",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "testguy12",
+    "sourceUrl": "https://www.youtube.com/watch?v=AoHFCLxTkE4",
+    "duration": 284,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6011,
+    "tracksCount": 1,
+    "search": "sydmatterstoallofyou",
     "local": false
   },
   {

@@ -1,4 +1,5 @@
 import { ValuesType } from 'utility-types';
+
 import { GraphicsLevel } from '~/routes/settings/settings-state';
 
 declare module '@emotion/react' {

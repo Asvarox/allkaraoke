@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+
 import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
 import { useSongStats } from '~/modules/songs/stats/hooks';
 import isE2E from '~/modules/utils/is-e2-e';

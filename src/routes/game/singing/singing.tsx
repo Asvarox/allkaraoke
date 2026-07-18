@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+
 import { GAME_MODE, SingSetup, SongPreview } from '~/interfaces';
 import { Calibration } from '~/modules/calibration/calibration';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -16,6 +17,7 @@ import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
 import WaitForReadiness from '~/routes/game/singing/wait-for-readiness';
 import LayoutGame from '~/routes/layout-game';
 import { IsCalibratedSetting, useSettingValue } from '~/routes/settings/settings-state';
+
 import Player, { PlayerRef } from './player';
 import PostGame from './post-game/post-game';
 

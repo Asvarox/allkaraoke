@@ -79,7 +79,8 @@
     "build-storybook": "storybook build",
     "knip": "knip --exclude exports,types,nsExports,nsTypes,enumMembers,duplicates,unresolved --no-config-hints",
     "type-check": "tsc --noEmit",
-    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check"
+    "format": "oxfmt",
+    "format-check": "oxfmt --config .oxfmtrc.ci.js src/**/*.{ts,tsx} --check"
   },
   "browserslist": {
     "production": [
@@ -138,13 +139,11 @@
     "knip": "^6.26.0",
     "lint-staged": "^17.0.7",
     "musicbrainz-api": "0.11.0",
+    "oxfmt": "^0.59.0",
     "oxlint": "^1.70.0",
     "peer": "^1.0.2",
     "playwright": "^1.61.0",
     "postcss": "^8.5.15",
-    "prettier": "^3.8.4",
-    "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-tailwindcss": "^0.7.2",
     "rollup-plugin-visualizer": "^6.0.5",
     "serve": "^14.2.6",
     "serve-handler": "^6.1.7",

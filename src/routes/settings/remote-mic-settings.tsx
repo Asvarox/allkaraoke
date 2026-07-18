@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
+
+import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import { Switcher } from '~/modules/elements/switcher';
@@ -8,7 +11,10 @@ import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/remote-mic/network/server/network-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
+import { nextValue } from '~/modules/utils/indexes';
+import { useDevicePing } from '~/routes/select-input/hooks/use-device-ping';
 import {
   DefaultRemoteMicPermission,
   RemoteMicConnectionType,
@@ -17,12 +23,6 @@ import {
   UnassignOnSongFinishedSetting,
   useSettingValue,
 } from '~/routes/settings/settings-state';
-
-import { Checkbox } from '~/modules/elements/akui/checkbox';
-import { Menu } from '~/modules/elements/akui/menu';
-import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/remote-mic/network/server/network-server';
-import { nextValue } from '~/modules/utils/indexes';
-import { useDevicePing } from '~/routes/select-input/hooks/use-device-ping';
 
 function RemoteMicSettings() {
   useBackgroundMusic(false);

@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import { MaterialReactTable, MaterialReactTableProps, MRT_ColumnDef } from 'material-react-table';
 import { useMemo } from 'react';
 import { Link } from 'wouter';
+
 import { SongPreview } from '~/interfaces';
 import { buildUrl } from '~/modules/hooks/use-smooth-navigate';
 

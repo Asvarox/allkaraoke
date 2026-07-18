@@ -1,11 +1,13 @@
 import { captureException } from '@sentry/react';
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import { menuBack, menuEnter, menuNavigate } from '~/modules/sound-manager';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 import { ControlDescriptor, ControlInput } from '~/routes/keyboard-help/controls';
+
 import useKeyboardHelp from './use-keyboard-help';
 
 /**

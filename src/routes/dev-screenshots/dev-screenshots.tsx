@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+
 import { useBackground } from '~/modules/elements/background-context';
 import isDev from '~/modules/utils/is-dev';
+
 import { clearAllSnapshots, getAllSnapshots, saveSnapshot } from './snapshot-store';
 
 const VIEWPORTS = ['desktop', 'tablet', 'mobile-portrait', 'mobile-landscape'] as const;

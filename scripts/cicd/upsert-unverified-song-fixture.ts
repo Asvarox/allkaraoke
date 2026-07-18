@@ -1,6 +1,8 @@
-import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+
+import dotenv from 'dotenv';
+
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
 import { upsertUnverifiedSongRecord } from './unverified-songs-admin-client';
 

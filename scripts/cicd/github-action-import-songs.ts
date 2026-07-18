@@ -1,7 +1,9 @@
 import { execSync } from 'child_process';
-import dotenv from 'dotenv';
 import fs from 'fs';
 import { writeFile } from 'node:fs/promises';
+
+import dotenv from 'dotenv';
+
 import currentSongs from '../../public/songs/index.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';

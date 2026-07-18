@@ -1,4 +1,5 @@
 import { RefObject, useEffect, useEffectEvent, useState } from 'react';
+
 import { milliseconds } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import { FPSCountSetting, InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';

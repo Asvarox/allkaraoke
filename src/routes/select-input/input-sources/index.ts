@@ -6,6 +6,7 @@ import {
   InputSourceManagerInterface,
   InputSourceNames,
 } from '~/routes/select-input/input-sources/interfaces';
+
 import { DummyInputSource } from './dummy';
 import { MicrophoneInputSource } from './microphone';
 import { RemoteMicrophoneInputSource } from './remote';

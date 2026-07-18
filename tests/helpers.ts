@@ -1,5 +1,7 @@
-import { BrowserContext, Page } from '@playwright/test';
 import { readFileSync, readdirSync } from 'fs';
+
+import { BrowserContext, Page } from '@playwright/test';
+
 import { getSongPreview } from '../src/modules/songs/utils';
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../src/modules/songs/utils/convert-txt-to-song';

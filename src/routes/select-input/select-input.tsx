@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import SelectInputView from '~/routes/select-input/select-input-view';

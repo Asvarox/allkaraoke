@@ -1,4 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
+
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
 
 const songs = readdirSync('./tests/fixtures/songs/')

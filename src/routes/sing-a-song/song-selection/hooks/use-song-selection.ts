@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
+
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { woosh } from '~/modules/sound-manager';
 import { randomInt } from '~/modules/utils/random-value';

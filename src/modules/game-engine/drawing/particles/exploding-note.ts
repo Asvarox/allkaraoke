@@ -1,5 +1,7 @@
 import tinycolor from 'tinycolor2';
+
 import { Note } from '~/interfaces';
+
 import Particle from '../interfaces';
 import ParticleManager from '../particle-manager';
 import styles from '../styles';

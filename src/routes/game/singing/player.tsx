@@ -9,6 +9,7 @@ import {
   useRef,
   useState,
 } from 'react';
+
 import { milliseconds, seconds, SingSetup, Song } from '~/interfaces';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useKeyboard from '~/modules/hooks/use-keyboard';
@@ -18,6 +19,7 @@ import { FeatureFlags } from '~/modules/utils/feature-flags';
 import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
 import { cn } from '~/utils/cn';
+
 import GameState from '../../../modules/game-engine/game-state/game-state';
 import PauseMenu from './game-overlay/components/pause-menu';
 import GameOverlay from './game-overlay/game-overlay';

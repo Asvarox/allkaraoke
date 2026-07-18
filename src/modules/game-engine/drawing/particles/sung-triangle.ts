@@ -1,5 +1,6 @@
 import debris from '~/modules/game-engine/drawing/elements/debris';
 import spreadValue from '~/modules/game-engine/drawing/particles/utils';
+
 import Particle from '../interfaces';
 
 const baseTtlMs = 300;

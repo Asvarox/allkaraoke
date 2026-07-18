@@ -1,5 +1,6 @@
 import debris from '~/modules/game-engine/drawing/elements/debris';
 import spreadValue, { randomSign } from '~/modules/game-engine/drawing/particles/utils';
+
 import Particle from '../interfaces';
 
 const baseTtl = (50 / 60) * 1000;

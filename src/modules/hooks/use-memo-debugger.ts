@@ -1,5 +1,6 @@
 import { isEqual } from 'es-toolkit';
 import { useMemo } from 'react';
+
 import usePrevious from '~/modules/hooks/use-previous';
 
 export default function useMemoDebugger<T>(memoHook: () => T, dependencies: unknown[], dependencyNames: string[] = []) {

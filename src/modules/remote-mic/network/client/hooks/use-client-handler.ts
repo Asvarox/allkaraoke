@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+
 import { ClientContract } from '../client-contract';
 import { registerClientHandler } from '../client-handlers';
 

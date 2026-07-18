@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+
 import events from '~/modules/game-events/game-events';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
@@ -8,6 +9,7 @@ import userMediaService from '~/modules/user-media/user-media-service';
 import startViewTransition from '~/modules/utils/start-view-transition';
 import usePermissions from '~/routes/remote-mic/hooks/use-permissions';
 import { ConnectionStatuses } from '~/routes/remote-mic/remote-mic';
+
 import StepAllowMic from './step-allow-mic';
 import StepEnterDetails from './step-enter-details';
 import StepPickPlayer from './step-pick-player';

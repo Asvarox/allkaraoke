@@ -1,10 +1,12 @@
 import clsx from 'clsx';
 import dayjs from 'dayjs';
+
 import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { useEditScore } from '~/modules/songs/stats/hooks';
 import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
+
 import HighScoreRename from './high-score-rename';
 
 interface Props {

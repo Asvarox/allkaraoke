@@ -1,6 +1,8 @@
 import { Icon } from '@iconify-icon/react';
 import { PropsWithChildren, ReactNode } from 'react';
+
 import { useMicrophoneStatus } from '~/modules/user-media/hooks';
+
 import MicAccessDeniedView from './mic-access-denied-view';
 
 interface Props extends PropsWithChildren {

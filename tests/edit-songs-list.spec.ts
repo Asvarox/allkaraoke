@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
-import { initTestMode, mockRandom, mockSongs } from './helpers';
 
+import { initTestMode, mockRandom, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;

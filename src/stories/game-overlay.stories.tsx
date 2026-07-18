@@ -2,6 +2,7 @@ import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
 import { ValuesType } from 'utility-types';
+
 import { GAME_MODE, SingSetup } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import CanvasDrawing from '~/modules/game-engine/drawing/index';

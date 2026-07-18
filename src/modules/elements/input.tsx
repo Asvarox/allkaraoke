@@ -10,8 +10,10 @@ import {
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc } from 'react-twc';
+
 import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/use-keyboard';
 import { cn } from '~/utils/cn';
+
 import { Menu } from './akui/menu';
 
 interface InputRef {

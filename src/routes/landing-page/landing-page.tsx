@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { twc } from 'react-twc';
 import Typewriter from 'typewriter-effect';
+
 import { ButtonLink } from '~/modules/elements/akui/button';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
@@ -12,6 +13,7 @@ import SmoothLink from '~/modules/elements/smooth-link';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import GithubRibbon from '~/routes/welcome/github-ribbon';
 import { twx } from '~/utils/twx';
+
 import LogoIcon from './logo-icon';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';

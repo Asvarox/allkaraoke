@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { act } from 'react';
 import { afterEach } from 'vitest';
+
 import { ClosableTooltip } from '~/modules/elements/tooltip';
 
 describe('Tooltip', () => {

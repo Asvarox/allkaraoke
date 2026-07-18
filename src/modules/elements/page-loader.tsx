@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
+
 import LogoIcon from '~/routes/landing-page/logo-icon';
 
 export default function PageLoader() {

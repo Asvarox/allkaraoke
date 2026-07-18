@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+
 import { Toolbar } from '../components/toolbar';
 
 export class SettingsPagePO {

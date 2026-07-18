@@ -1,5 +1,6 @@
 import { captureException } from '@sentry/react';
 import bezier from 'bezier-easing';
+
 import { noDistanceNoteTypes } from '~/consts';
 import { Note, NotesSection, PlayerNote } from '~/interfaces';
 import { drawPlayerCanvas } from '~/modules/game-engine/drawing/elements/debug-player-canvas';
@@ -16,6 +17,7 @@ import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getLastNoteEnd } from '~/modules/songs/utils/notes-selectors';
 import { randomFloat } from '~/modules/utils/random-value';
 import { FPSCountSetting, GraphicSetting } from '~/routes/settings/settings-state';
+
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculate-data';
 import debugPitches from './elements/debug-pitches';
 import drawNote from './elements/note';

@@ -1,4 +1,5 @@
 import { Note } from '~/interfaces';
+
 import drawNote from '../elements/note';
 import Particle from '../interfaces';
 

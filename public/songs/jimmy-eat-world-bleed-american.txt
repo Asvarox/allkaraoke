@@ -1,0 +1,358 @@
+#ARTIST:Jimmy Eat World
+#TITLE:Bleed American
+#CREATOR:hamadad
+#BPM:325,6
+#YEAR:2001
+#VIDEO:v=DnTQkKd8Wx0
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:11736,486486486487
+#ALLKARAOKE_ID:jimmy-eat-world-bleed-american
+#ALLKARAOKE_SID:6012
+#ALLKARAOKE_LASTUPDATE:2026-07-15T06:06:16.116Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=5837
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:189
+#MP3:Jimmy Eat World - Bleed American.mp3
+: 22 2 1 I’m 
+: 26 2 1 not 
+: 30 2 -1 a
+: 34 6 1 lone
+- 40
+: 42 2 1 ’Cause 
+: 46 2 1 the 
+: 50 6 4 T
+: 58 6 1 V’s 
+: 66 6 -1 on 
+: 74 10 1 yeah
+- 84 132
+- 132
+: 154 2 1 I’m 
+: 158 2 1 not 
+: 166 2 1 cra
+: 170 2 1 zy
+- 172
+: 174 2 1 ’Cause 
+: 178 2 1 I 
+: 182 2 4 take
+- 184
+: 190 2 6 The 
+: 196 6 1 right 
+: 208 8 -1 pills 
+: 230 2 1 eve
+: 234 6 -1 ry
+: 242 6 1 day
+- 248
+: 262 14 1 And 
+: 278 6 -2 rest
+- 284
+: 286 2 -2 Clean 
+: 290 2 -2 your 
+: 294 6 -2 con
+: 302 14 -2 scious
+- 316
+: 318 6 -2 Clear 
+: 326 6 -2 thoughts
+- 332
+: 334 6 -2 With 
+: 342 14 -1 spey
+: 358 14 -6 side
+- 372
+: 374 14 -1 With 
+: 390 14 1 your 
+: 406 8 -2 grain
+- 414
+: 416 2 -2 Clean 
+: 420 2 -2 your 
+: 424 6 -2 con
+: 432 8 -2 scious
+- 440
+: 448 6 -2 Clear 
+: 456 6 -2 thoughts
+- 462
+: 466 4 -2 With 
+: 472 12 -1 spey
+: 486 14 -6 side
+- 500 522
+- 522
+: 544 6 4 Salt, 
+: 552 6 6 sweat
+- 558
+: 570 2 6 Su
+: 574 2 6 gar 
+: 578 2 4 on 
+: 582 2 4 the 
+: 586 6 6 as
+: 594 6 4 phalt
+- 600
+: 610 6 4 Our 
+: 618 6 6 hearts 
+: 636 2 6 lit
+: 640 2 6 te
+: 644 2 4 ring 
+: 648 2 4 the 
+: 652 6 6 top
+: 660 6 4 soil
+- 666
+: 676 6 4 Tune 
+: 684 6 6 in
+- 690
+: 698 2 6 And 
+: 702 2 6 we 
+: 706 2 6 can 
+: 710 2 4 get 
+: 714 2 4 the 
+: 718 6 6 last 
+: 726 2 4 ca
+: 730 2 2 ll
+- 732
+: 740 6 4 Ou
+: 748 6 2 r 
+: 760 6 2 li
+: 768 6 1 ves, 
+: 778 6 -1 our 
+: 786 6 1 coal
+- 792
+: 806 4 4 Salt, 
+: 814 4 6 sweat
+- 818
+: 830 2 6 Su
+: 834 2 6 gar 
+: 838 2 4 on 
+: 842 2 4 the 
+: 846 6 6 as
+: 854 6 4 phalt
+- 860
+: 872 6 4 Our 
+: 880 6 6 hearts 
+: 896 2 6 lit
+: 900 2 6 te
+: 904 2 4 ring 
+: 908 2 4 the 
+: 912 6 6 top
+: 920 6 4 soil
+- 926
+: 936 6 4 Sign 
+: 944 6 6 up
+- 950
+: 956 1 6 It’s 
+: 958 1 6 the 
+: 960 2 6 pic
+: 964 2 6 ket 
+: 968 2 4 line
+- 970
+: 974 2 4 Or 
+: 978 2 6 the 
+: 982 2 6 pa
+: 986 6 4 rade
+- 992
+: 1000 6 4 Ou
+: 1008 8 2 r 
+: 1022 4 2 li
+: 1028 16 1 ves
+- 1044
+: 1064 2 1 I’m 
+: 1068 2 1 not 
+: 1072 2 -1 al
+: 1076 2 1 one
+- 1078
+: 1084 2 1 ’Cause 
+: 1088 2 1 the 
+: 1092 6 -1 T
+: 1100 6 1 V’s 
+: 1108 6 -1 on 
+: 1116 18 1 yeah
+- 1134 1170
+- 1170
+: 1192 4 1 I’m 
+: 1198 4 1 not 
+: 1204 4 1 cra
+: 1210 2 1 zy
+- 1212
+: 1214 2 1 ’Cause 
+: 1218 2 1 I 
+: 1222 4 4 take
+- 1226
+: 1232 2 6 The 
+: 1238 4 1 right 
+: 1246 10 -1 pills 
+: 1272 2 1 eve
+: 1276 6 -1 ry
+: 1284 16 1 day
+- 1300
+: 1302 14 1 And 
+: 1318 6 -2 rest
+- 1324
+: 1328 2 -2 Clean 
+: 1332 2 -2 your 
+: 1336 4 -2 con
+: 1342 8 -2 scious
+- 1350
+: 1360 6 -2 Clear 
+: 1368 6 -2 thoughts
+- 1374
+: 1376 6 -2 With 
+: 1384 14 -1 spey
+: 1400 14 -6 side
+- 1414
+: 1416 14 -1 With 
+: 1432 14 1 your 
+: 1448 6 -2 grain
+- 1454
+: 1456 2 -2 Clean 
+: 1460 2 -2 your 
+: 1464 6 -2 con
+: 1472 14 -2 scious
+- 1486
+: 1488 6 -2 Clear 
+: 1496 6 -2 thoughts
+- 1502
+: 1504 6 -2 With 
+: 1512 14 -1 spey
+: 1528 14 -6 side
+- 1542 1562
+- 1562
+: 1584 6 4 Salt, 
+: 1592 6 6 sweat
+- 1598
+: 1610 2 6 Su
+: 1614 2 6 gar 
+: 1620 2 4 on 
+: 1624 2 4 the 
+: 1628 6 6 as
+: 1636 6 4 phalt
+- 1642
+: 1650 6 4 Our 
+: 1658 6 6 hearts 
+: 1676 2 6 lit
+: 1680 2 6 te
+: 1684 2 4 ring 
+: 1688 2 4 the 
+: 1692 6 6 top
+: 1700 6 4 soil
+- 1706
+: 1716 6 4 Tune 
+: 1724 6 6 in
+- 1730
+: 1738 2 6 And 
+: 1742 2 6 we 
+: 1746 2 6 can 
+: 1750 2 4 get 
+: 1754 2 4 the 
+: 1758 6 6 last 
+: 1766 4 4 ca
+: 1772 2 2 ll
+- 1774
+: 1782 4 4 Ou
+: 1788 8 2 ~r 
+: 1800 4 2 li
+: 1806 8 1 ~ves 
+: 1818 6 -1 our 
+: 1826 6 1 coal
+- 1832
+: 1844 6 4 Salt, 
+: 1852 6 6 sweat
+- 1858
+: 1870 2 6 Su
+: 1874 2 6 gar 
+: 1878 2 4 on 
+: 1882 2 4 the 
+: 1886 6 6 as
+: 1894 6 4 phalt
+- 1900
+: 1902 4 4 Our, 
+: 1910 6 4 Our 
+: 1918 6 6 hearts 
+: 1926 4 6 they’re 
+: 1938 2 6 lit
+: 1942 2 6 te
+: 1946 2 4 ring 
+: 1950 2 4 the 
+: 1954 6 6 top
+: 1962 6 4 soil
+- 1968
+: 1978 6 4 Sign 
+: 1986 6 6 up
+- 1992
+: 1996 1 6 It’s 
+: 1998 1 6 the 
+: 2000 2 6 pic
+: 2004 2 6 ket 
+: 2008 2 4 line
+- 2010
+: 2014 2 6 Or 
+: 2018 2 6 the 
+: 2022 2 6 pa
+: 2026 6 6 rade
+- 2032
+: 2040 6 6 Ou
+: 2048 6 4 ~r 
+: 2060 6 4 li
+: 2068 144 6 ~ves
+- 2212 2336
+- 2336
+: 2358 30 6 Greed 
+: 2390 14 8 from 
+: 2406 14 9 my 
+: 2422 30 6 arm
+- 2452
+: 2454 2 6 Won’t 
+: 2462 2 6 they 
+: 2470 2 6 give 
+: 2474 2 6 it
+- 2476
+: 2480 2 4 A 
+: 2484 6 4 rest 
+: 2494 10 6 now? 
+: 2506 2 6 (give 
+: 2510 2 6 it 
+: 2514 2 4 a 
+: 2518 6 4 rest 
+: 2530 18 6 now?)
+- 2548
+: 2550 10 6 Now, 
+: 2566 12 6 Now, 
+: 2586 30 9 No
+: 2618 34 6 ~w
+- 2652 3124
+- 3124
+: 3146 6 4 Salt, 
+: 3154 6 6 sweat
+- 3160
+: 3170 2 6 Su
+: 3174 2 6 gar 
+: 3178 2 4 on 
+: 3182 2 4 the 
+: 3186 6 6 as
+: 3194 14 9 phalt
+- 3208
+: 3210 6 4 Our 
+: 3218 6 6 hearts 
+: 3234 2 6 lit
+: 3238 2 6 te
+: 3242 2 4 ring 
+: 3246 2 4 the 
+: 3250 6 6 top
+: 3258 14 9 soil
+- 3272
+: 3274 6 4 Tune 
+: 3282 6 6 in
+- 3288
+: 3296 2 6 And 
+: 3300 2 6 we 
+: 3304 2 6 can 
+: 3308 2 4 get 
+: 3312 2 4 the 
+: 3316 6 6 last 
+: 3324 4 4 ca
+: 3330 8 9 ll
+: 3340 8 6 [ca
+: 3350 6 9 ll]
+- 3356
+: 3358 6 4 (Our 
+: 3366 6 6 lives, 
+: 3374 6 4 our 
+: 3382 10 6 coal)
+E
