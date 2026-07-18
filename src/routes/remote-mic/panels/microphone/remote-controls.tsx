@@ -1,6 +1,8 @@
-import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
-import { twc, TwcComponentProps } from 'react-twc';
+import { ArrowBack } from '@mui/icons-material';
 
+import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { MenuButton } from '~/modules/elements/menu';
+import { Switcher } from '~/modules/elements/switcher';
 import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
 
 interface Props {
@@ -9,8 +11,12 @@ interface Props {
 }
 
 /**
- * Renders a single mirrored control on the remote mic. The exhaustive `switch` (with `assertNever`)
- * guarantees at build time that every control type the host can emit has a remote renderer.
+ * Renders a single mirrored control on the remote mic using the SAME components the host screen
+ * renders with (`MenuButton`/`Switcher`/`Checkbox`) — so the remote looks, truncates, and animates
+ * exactly like the in-game menu, with nothing to keep in sync by hand.
+ *
+ * The exhaustive `switch` (with `assertNever`) guarantees at build time that every control type the
+ * host can emit has a remote renderer.
  *
  * There is no "focused" state here on purpose: remote mics are touch-first, so a highlighted
  * "current" control would be misleading — every control is tapped directly.
@@ -21,47 +27,39 @@ export default function RemoteControl({ control, onActivate }: Props) {
   switch (control.type) {
     case 'button':
       return (
-        <ControlButton
+        <MenuButton
+          size="small"
           onClick={activate}
           disabled={control.disabled}
           data-test={`control-${control.name}`}
           data-control-type="button">
-          <Label>{control.label}</Label>
-        </ControlButton>
+          {control.variant === 'back' && <ArrowBack />}
+          {control.label}
+        </MenuButton>
       );
     case 'switch':
       return (
-        <ControlButton
+        <Switcher
+          label={control.label}
+          value={control.value}
           onClick={activate}
           disabled={control.disabled}
           data-test={`control-${control.name}`}
-          data-control-type="switch">
-          <Label>{control.label}</Label>
-          <Value data-test={`control-${control.name}-value`}>{control.value}</Value>
-        </ControlButton>
+          data-control-type="switch"
+        />
       );
     case 'checkbox':
       return (
-        <ControlButton
+        <Checkbox
+          checked={control.checked}
           onClick={activate}
           disabled={control.disabled}
-          data-checked={control.checked}
           data-test={`control-${control.name}`}
           data-control-type="checkbox">
-          {control.checked ? <CheckBox className="h-7! w-7!" /> : <CheckBoxOutlineBlank className="h-7! w-7!" />}
-          <Label>{control.label}</Label>
-        </ControlButton>
+          {control.label}
+        </Checkbox>
       );
     default:
       return assertNever(control);
   }
 }
-
-const ControlButton = twc.button<TwcComponentProps<'button'>>((props) => [
-  'typography flex w-full items-center gap-3 rounded-lg border-0 bg-black/45 px-4 py-3.5 text-left text-lg text-white transition-colors',
-  props.disabled ? 'pointer-events-none opacity-40' : 'active:bg-active/60 cursor-pointer',
-]);
-
-const Label = twc.span`flex-1 truncate font-bold`;
-
-const Value = twc.span`text-active max-w-[45%] truncate text-right font-bold`;

@@ -15,6 +15,10 @@ export class SettingsPagePO {
     await this.page.getByTestId('remote-mics-settings').click();
   }
 
+  public get graphicsLevelElement() {
+    return this.page.getByTestId('graphics-level');
+  }
+
   public get defaultPermissionElement() {
     return this.page.getByTestId('default-permission');
   }

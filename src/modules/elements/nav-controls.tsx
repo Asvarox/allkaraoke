@@ -4,6 +4,7 @@ import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import { RegisterFunc, useRegister } from '~/modules/hooks/use-keyboard-nav';
+import { ButtonVariant } from '~/routes/keyboard-help/controls';
 
 /**
  * `Nav.*` — single-source-of-truth wrappers that opt a screen into the "mirrored" remote-mic
@@ -27,6 +28,8 @@ interface NavSwitcherProps extends Omit<ComponentProps<typeof Switcher>, 'value'
   nav?: RegisterFunc;
   name: string;
   label: string;
+  /** Shorter label to show on the remote instead of `label`, e.g. "Camera mode" for "Enable camera mode". */
+  remoteLabel?: string;
   value: string | number;
   onClick: () => void;
   isDefault?: boolean;
@@ -37,6 +40,7 @@ export function NavSwitcher({
   nav,
   name,
   label,
+  remoteLabel,
   value,
   onClick,
   isDefault = false,
@@ -46,7 +50,7 @@ export function NavSwitcher({
   const register = useResolvedRegister(nav);
   const props = register(name, onClick, label, isDefault, {
     disabled,
-    control: { type: 'switch', label, value: String(value) },
+    control: { type: 'switch', label: remoteLabel ?? label, value: String(value) },
   });
   return <Switcher {...rest} {...props} label={label} value={value} />;
 }
@@ -55,6 +59,8 @@ interface NavCheckboxProps extends Omit<ComponentProps<typeof Checkbox>, 'checke
   nav?: RegisterFunc;
   name: string;
   label: string;
+  /** Shorter label to show on the remote instead of `label`. */
+  remoteLabel?: string;
   checked: boolean;
   onClick: () => void;
   isDefault?: boolean;
@@ -66,6 +72,7 @@ export function NavCheckbox({
   nav,
   name,
   label,
+  remoteLabel,
   checked,
   onClick,
   isDefault = false,
@@ -76,7 +83,7 @@ export function NavCheckbox({
   const register = useResolvedRegister(nav);
   const props = register(name, onClick, label, isDefault, {
     disabled,
-    control: { type: 'checkbox', label, checked },
+    control: { type: 'checkbox', label: remoteLabel ?? label, checked },
   });
   return (
     <Checkbox {...rest} {...props} checked={checked}>
@@ -88,8 +95,10 @@ export function NavCheckbox({
 interface NavButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClick'> {
   nav?: RegisterFunc;
   name: string;
-  /** Descriptor label sent to the phone. Defaults to `children` when it is a plain string. */
-  label?: string;
+  /** Shorter label to show on the remote. Defaults to `children` when it is a plain string. */
+  remoteLabel?: string;
+  /** Marks this button's semantic role, e.g. `'back'` shows a leading back arrow on the remote. */
+  variant?: ButtonVariant;
   onClick: () => void;
   isDefault?: boolean;
   disabled?: boolean;
@@ -99,7 +108,8 @@ interface NavButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClic
 export function NavButton({
   nav,
   name,
-  label,
+  remoteLabel,
+  variant,
   onClick,
   isDefault = false,
   disabled = false,
@@ -107,10 +117,10 @@ export function NavButton({
   ...rest
 }: NavButtonProps) {
   const register = useResolvedRegister(nav);
-  const resolvedLabel = label ?? (typeof children === 'string' ? children : '');
+  const resolvedLabel = remoteLabel ?? (typeof children === 'string' ? children : '');
   const props = register(name, onClick, resolvedLabel, isDefault, {
     disabled,
-    control: { type: 'button', label: resolvedLabel },
+    control: { type: 'button', label: resolvedLabel, variant },
   });
   return (
     <MenuButton {...rest} {...props}>

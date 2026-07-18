@@ -1,7 +1,9 @@
 import { expect } from '@playwright/test';
 
 import { mockSongs } from '../helpers';
-import { visual } from './visual';
+import initialise from '../page-objects/initialise';
+import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
+import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
 visual('Landing page', async ({ page, makeScreenshot }) => {
   await page.goto('/?e2e-test');
@@ -27,7 +29,7 @@ visual('History', async ({ page, makeScreenshot }) => {
   await makeScreenshot();
 });
 
-visual('Remote mic', async ({ page, context, makeScreenshot }) => {
+visual('Remote mic', REMOTE_MIC_VIEWPORTS, async ({ page, context, makeScreenshot }) => {
   await mockSongs({ page, context });
 
   await page.goto('/remote-mic/?e2e-test');
@@ -42,3 +44,42 @@ visual('Remote mic', async ({ page, context, makeScreenshot }) => {
   await expect(page.getByTestId('remote-mic-id')).toBeVisible();
   await makeScreenshot('settings');
 });
+
+// Mirrored keyboard: when the host is on an in-game screen that opts into mirroring (Options here),
+// the connected remote renders that screen's controls directly. `page` is the host, same as every
+// other remote-mic test, so it needs its normal desktop viewport back (the harness pins it to the
+// mobile size this test is named after, but that's meant for the remote); the remote connects via
+// the usual openAndConnectRemoteMicDirectly helper, with its viewport set to the mobile target size.
+visual(
+  'Remote mic mirrored keyboard',
+  REMOTE_MIC_VIEWPORTS,
+  async ({ page, context, browser, viewport, makeScreenshot }) => {
+    await page.setViewportSize(VIEWPORTS.desktop);
+    await mockSongs({ page, context });
+    const pages = initialise(page, context, browser);
+
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+
+    const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+    // The connection wizard auto-enters real browser fullscreen, which blocks resizing the viewport
+    // (Chromium refuses `setWindowBounds` while fullscreen) - back out of it first.
+    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+    await remoteMic._page.setViewportSize(viewport);
+
+    // Host opens the in-game Options screen, which publishes the mirrored layout to the remote.
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSetting();
+
+    await remoteMic.remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('graphics-level')).toBeVisible();
+
+    // Mask the live ping counter in the top bar so the screenshot stays deterministic.
+    await makeScreenshot(undefined, {
+      page: remoteMic._page,
+      extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
+    });
+  },
+);
