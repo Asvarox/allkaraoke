@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 
-import { diffImages } from './imageDiff';
+import { diffImages } from '../../src/modules/utils/image-diff';
 import { decodePng, writePng } from './pngIo';
 
 /**

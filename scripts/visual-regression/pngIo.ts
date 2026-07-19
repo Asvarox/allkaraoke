@@ -1,7 +1,8 @@
 import { readFileSync, writeFileSync } from 'node:fs';
+
 import { PNG } from 'pngjs';
 
-import type { RGBAImage } from './imageDiff';
+import type { RGBAImage } from '../../src/modules/utils/image-diff';
 
 /** Decodes a PNG file into raw RGBA data (Node-only, uses pngjs/zlib). */
 export function readPng(path: string): RGBAImage {
