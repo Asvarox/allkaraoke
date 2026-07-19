@@ -4,7 +4,7 @@ import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import { RegisterFunc, useRegister } from '~/modules/hooks/use-keyboard-nav';
-import { ButtonVariant } from '~/routes/keyboard-help/controls';
+import { ButtonVariant, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 
 /**
  * `Nav.*` — single-source-of-truth wrappers that opt a screen into the "mirrored" remote-mic
@@ -99,6 +99,11 @@ interface NavButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClic
   remoteLabel?: string;
   /** Marks this button's semantic role, e.g. `'back'` shows a leading back arrow on the remote. */
   variant?: ButtonVariant;
+  /**
+   * Trailing icon shown on the remote. Defaults to a forward arrow; pass another known name to
+   * override it (e.g. `'play'`), or `null` to show no trailing icon. Ignored for `variant="back"`.
+   */
+  remoteIcon?: RemoteButtonIcon | null;
   onClick: () => void;
   isDefault?: boolean;
   disabled?: boolean;
@@ -110,6 +115,7 @@ export function NavButton({
   name,
   remoteLabel,
   variant,
+  remoteIcon,
   onClick,
   isDefault = false,
   disabled = false,
@@ -120,7 +126,7 @@ export function NavButton({
   const resolvedLabel = remoteLabel ?? (typeof children === 'string' ? children : '');
   const props = register(name, onClick, resolvedLabel, isDefault, {
     disabled,
-    control: { type: 'button', label: resolvedLabel, variant },
+    control: { type: 'button', label: resolvedLabel, variant, icon: remoteIcon },
   });
   return (
     <MenuButton {...rest} {...props}>
