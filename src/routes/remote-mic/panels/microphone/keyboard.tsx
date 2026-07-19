@@ -9,9 +9,11 @@ import {
   Shuffle,
 } from '@mui/icons-material';
 import { captureException } from '@sentry/react';
+import { ComponentProps } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
+import { twMerge } from 'tailwind-merge';
 
-import { Kbd } from '~/modules/elements/akui/kbd';
+import { Button } from '~/modules/elements/akui/button';
 import { serverRpc } from '~/modules/remote-mic/network/client';
 import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-subscription';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
@@ -73,6 +75,9 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 }
 
 // Mirror mode — the active screen described its own controls; render them directly instead of arrows.
+// There's no injected "Back" button here: the mirrored screen must include its own back control
+// (e.g. Options' "Return To Main Menu", marked `variant="back"`) as one of its regular controls,
+// same as it would on-screen — no separate/duplicated back affordance to keep in sync.
 function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   const controls = keyboard.controls ?? [];
   return (
@@ -80,15 +85,6 @@ function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
       {controls.map((control) => (
         <RemoteControl key={control.name} control={control} onActivate={onActivateControl} />
       ))}
-      {keyboard.back !== undefined && (
-        <ActionButton onClick={onPress('back')} data-test="keyboard-backspace" className="mt-1">
-          {keyboard.back || (
-            <>
-              <ArrowBack /> Back
-            </>
-          )}
-        </ActionButton>
-      )}
     </div>
   );
 }
@@ -197,6 +193,16 @@ const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolea
   props.$disabled ? 'opacity-0' : 'opacity-100',
 ]);
 
-const ArrowButton = twc(Kbd)`m-0.5 text-lg`;
+function ArrowButton({ className, ...props }: ComponentProps<typeof Button>) {
+  return (
+    <Button
+      size="small"
+      className={twMerge('m-0.5 aspect-square scale-100 animate-none px-0!', className)}
+      {...props}
+    />
+  );
+}
 
-const ActionButton = twc(ArrowButton)`w-full`;
+function ActionButton({ className, ...props }: ComponentProps<typeof Button>) {
+  return <Button size="small" className={twMerge('m-0.5 w-full', className)} {...props} />;
+}
