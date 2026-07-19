@@ -30,7 +30,11 @@ runs:
   using: 'composite'
   steps:
     # Runs before the auto-commit so it can diff the freshly-updated (still
-    # unstaged) snapshots against their committed versions.
+    # unstaged) snapshots against their committed versions. The index is
+    # expected to already hold the PR's target branch's snapshots at this
+    # point (see the 'Reset snapshot baseline to target branch' step that runs
+    # before Playwright), so this diffs against the target branch, not just
+    # whatever a previous run on this branch already auto-committed.
     - name: Build visual diff thumbnails
       id: visual-diff
       shell: bash

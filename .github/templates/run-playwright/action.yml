@@ -35,6 +35,36 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    # When updating snapshots, reset the baseline to the PR's target branch
+    # first, so the status-based diff in commit-and-comment-snapshots always
+    # reflects the full diff against the target branch, not just the change
+    # since the last time this job auto-committed snapshots to the PR branch.
+    - name: Fetch target branch for visual diff baseline
+      if: inputs.updateSnapshots == 'true'
+      shell: bash
+      # Explicit destination refspec so this always lands in refs/remotes/origin/<base-ref>,
+      # regardless of the checkout's fetch-depth or configured refspecs. Some
+      # callers run this inside a container before anything else has told git
+      # to trust the checked-out workspace, hence the safe.directory config.
+      # Falls back to the repo's default branch (master) when github.base_ref
+      # is empty, e.g. if this action is ever invoked outside a pull_request.
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        BASE_REF="${{ github.base_ref }}"
+        echo "VISUAL_DIFF_BASE_REF=${BASE_REF:-master}" >> "$GITHUB_ENV"
+        git fetch --depth=1 origin "${BASE_REF:-master}:refs/remotes/origin/${BASE_REF:-master}"
+    - name: Reset snapshot baseline to target branch
+      if: inputs.updateSnapshots == 'true'
+      shell: bash
+      # Untrack + delete all snapshots, then restore only the ones the target
+      # branch has. Files the PR added (absent from the target branch) stay
+      # gone until Playwright re-renders them, so they always read as new -
+      # even if an earlier run on this branch already auto-committed them.
+      run: |
+        git rm -r --cached --ignore-unmatch -- ':(glob)**/*-snapshots/**' ':(glob)**/__snapshots__/**'
+        find . -type d \( -name node_modules -o -name .git \) -prune -o -type d \( -name '*-snapshots' -o -name '__snapshots__' \) -exec rm -rf {} +
+        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/*-snapshots/**' 2>/dev/null || true
+        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/__snapshots__/**' 2>/dev/null || true
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
