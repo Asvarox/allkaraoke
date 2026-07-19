@@ -21,7 +21,7 @@ interface Props {
  * plain (higher-priority) class that `twMerge` would otherwise let win even for disabled controls,
  * washing out the greyed-out look.
  */
-const remoteSelectorBackground = 'bg-black/70! disabled:bg-gray-500!';
+const remoteSelectorBackground = 'bg-black/65! disabled:bg-gray-500!';
 
 /**
  * Renders a single mirrored control on the remote mic using the SAME components the host screen
