@@ -1,14 +1,25 @@
-import { useState } from 'react';
+import { ComponentRef, useRef, useState } from 'react';
+
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
+import { Switcher } from '~/modules/elements/switcher';
+import events from '~/modules/game-events/game-events';
+import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { useOnlineLeaderboard, useOnlinePlayersStats } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineParticipant, OnlinePauseState } from '~/modules/online/protocol/types';
+import PlayersManager from '~/modules/players/players-manager';
+import { getInputId } from '~/modules/players/utils';
+import { nextIndex } from '~/modules/utils/indexes';
 import ParticipantStatsRow from '~/routes/online/components/participant-stats-row';
 import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
+import { useMicrophoneList } from '~/routes/select-input/hooks/use-microphone-list';
+import inputSourceListManager from '~/routes/select-input/input-sources/index';
+import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
+import InputLag from '~/routes/settings/input-lag';
 
 interface Props {
   pause: OnlinePauseState;
@@ -32,6 +43,24 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
   const modalOpen = confirmEndOpen || kickTarget !== null;
 
   const { register } = useKeyboardNav({ enabled: !modalOpen });
+
+  // Mic selection + input lag, adjustable mid-game like in the local pause menu
+  const inputLagRef = useRef<ComponentRef<typeof InputLag>>(null);
+  const { Microphone } = useMicrophoneList(true, 'Microphone');
+  const selectedMic = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
+    const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');
+    const mics = inputSourceListManager.getInputList().Microphone.list;
+    return selected ? (mics.find((mic) => mic.id === getInputId(selected))?.label ?? '') : '';
+  });
+  const cycleMic = () => {
+    const currentIndex = Microphone.list.findIndex((mic) => mic.label === selectedMic);
+    if (currentIndex > -1) {
+      const input = Microphone.list[nextIndex(Microphone.list, currentIndex)];
+      PlayersManager.getPlayers().forEach((player) =>
+        player.changeInput(MicrophoneInputSource.inputName, input.channel, input.deviceId),
+      );
+    }
+  };
 
   if (resumeCountdownEndsAt !== null) {
     return <CountdownOverlay endsAtServerTime={resumeCountdownEndsAt} label="Resuming in" />;
@@ -84,7 +113,10 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
           })}
         </div>
         <Menu.Divider />
-        <MenuButton {...register('online-resume-button', onResume)} data-test="online-resume-button">
+        <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic || '—'} />
+        <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.element?.focus())} />
+        <Menu.Divider />
+        <MenuButton {...register('online-resume-button', onResume, undefined, true)} data-test="online-resume-button">
           Resume song
         </MenuButton>
         {isHost && (

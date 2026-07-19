@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
+
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Menu } from '~/modules/elements/akui/menu';
 import { Stepper } from '~/modules/elements/akui/stepper';
@@ -78,7 +79,10 @@ function OnlineSetupWizard({ joinRoomCode, onComplete }: Props) {
   };
 
   const finish = () => {
-    const target = roomTarget.current ?? { roomCode: joinRoomCode ?? generateRoomCode(), create: false };
+    const target = roomTarget.current ?? {
+      roomCode: joinRoomCode ?? generateRoomCode(),
+      create: false,
+    };
     onComplete(target.roomCode, { create: target.create });
   };
 
@@ -92,10 +96,10 @@ function OnlineSetupWizard({ joinRoomCode, onComplete }: Props) {
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={step}
-          initial={{ opacity: 0, x: 40 }}
+          initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -40 }}
-          transition={{ duration: 0.25 }}
+          exit={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.12 }}
           className="flex flex-col gap-3">
           {step === 'room' &&
             (joinRoomCode ? (

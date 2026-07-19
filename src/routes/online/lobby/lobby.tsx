@@ -1,6 +1,8 @@
+import { Edit } from '@mui/icons-material';
 import { throttle } from 'es-toolkit';
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
+
 import { Song, SongPreview } from '~/interfaces';
 import { Calibration } from '~/modules/calibration/calibration';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
@@ -213,21 +215,38 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
               )}
               <div className="flex min-w-0 flex-1 flex-col gap-3">
                 {roomState.chart ? (
-                  <Menu.HelpText data-test="online-selected-song">
-                    Selected song:{' '}
-                    <strong>
-                      {roomState.chart.artist} - {roomState.chart.title}
-                    </strong>
-                    {!song && !songError && ' (loading…)'}
-                    {songError && ` (failed to load: ${songError})`}
-                  </Menu.HelpText>
+                  <div className="flex min-w-0 items-center gap-2">
+                    <span
+                      className="typography min-w-0 flex-1 truncate text-sm whitespace-nowrap"
+                      data-test="online-selected-song"
+                      title={`${roomState.chart.artist} - ${roomState.chart.title}`}>
+                      Selected song:{' '}
+                      <strong>
+                        {roomState.chart.artist} - {roomState.chart.title}
+                      </strong>
+                      {!song && !songError && ' (loading…)'}
+                      {songError && ` (failed to load: ${songError})`}
+                    </span>
+                    {isHost && (
+                      <button
+                        type="button"
+                        onClick={() => setSongSelectionOpen(true)}
+                        disabled={uploadState === 'uploading'}
+                        title="Change song"
+                        className="hover:text-active flex shrink-0 items-center opacity-75 hover:opacity-100 disabled:opacity-30"
+                        data-test="choose-song-button">
+                        <Edit className="h-5 w-5" />
+                      </button>
+                    )}
+                  </div>
                 ) : (
                   <Menu.HelpText data-test="online-selected-song">
                     {isHost ? 'Pick a song to get the party going.' : 'Waiting for the host to pick a song…'}
                   </Menu.HelpText>
                 )}
 
-                {!isHost && hostSongPreview && (
+                {/* Voting is only for the browsing phase — once the song is picked, the choice is made */}
+                {!isHost && hostSongPreview && !roomState.chart && (
                   <Menu.ButtonGroup>
                     <Menu.Button
                       {...register('online-vote-up', () => voteSong('up'))}
@@ -246,16 +265,12 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
                   </Menu.ButtonGroup>
                 )}
 
-                {isHost && (
+                {isHost && !roomState.chart && (
                   <Menu.Button
-                    {...register('choose-song', () => setSongSelectionOpen(true))}
+                    {...register('choose-song', () => setSongSelectionOpen(true), undefined, true)}
                     disabled={uploadState === 'uploading'}
                     data-test="choose-song-button">
-                    {uploadState === 'uploading'
-                      ? 'Transferring song…'
-                      : roomState.chart
-                        ? 'Change song'
-                        : 'Choose song'}
+                    {uploadState === 'uploading' ? 'Transferring song…' : 'Choose song'}
                   </Menu.Button>
                 )}
                 {uploadState === 'error' && (
@@ -264,7 +279,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
 
                 {roomState.chart && song && (
                   <Menu.Button
-                    {...register('ready-button', onReadyClick)}
+                    {...register('ready-button', onReadyClick, undefined, true)}
                     data-test="online-ready-button"
                     disabled={!self?.connected}>
                     {self?.ready ? 'Not ready after all' : 'I am ready to sing!'}

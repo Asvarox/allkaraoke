@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+
 import { GAME_MODE, SingSetup, Song } from '~/interfaces';
 import { VideoState } from '~/modules/elements/video-player/index';
 import GameState from '~/modules/game-engine/game-state/game-state';
@@ -11,8 +12,8 @@ import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import LayoutGame from '~/routes/layout-game';
-import LeaderboardOverlay from '~/routes/online/singing/leaderboard-overlay';
 import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
+import LeaderboardOverlay from '~/routes/online/singing/leaderboard-overlay';
 import PauseOverlay from '~/routes/online/singing/pause-overlay';
 
 interface Props {
@@ -164,14 +165,14 @@ function OnlineSinging({ roomState, song }: Props) {
     }
   };
 
-  const onSongEnd = () => {
+  const onSongEnd = useCallback(() => {
     if (hasFinished) return;
     setHasFinished(true);
     void OnlineClient.rpc.scoring.publishScore(GameState.getPlayerScore(selfNumber)).catch(() => undefined);
     void OnlineClient.rpc.scoring
       .publishFinal(GameState.getPlayerDetailedScore(selfNumber) as unknown as WireDetailedScore)
       .catch(() => undefined);
-  };
+  }, [hasFinished, selfNumber]);
 
   // The host ended the game — wrap up and publish the final score so the results can show
   const finishRequestedAt = roomState.finishRequestedAt;

@@ -192,6 +192,11 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+      - name: Deploy PartyKit online room
+        env:
+          PARTYKIT_LOGIN: ${{ secrets.PARTYKIT_LOGIN }}
+          PARTYKIT_TOKEN: ${{ secrets.PARTYKIT_TOKEN }}
+        run: pnpm exec partykit deploy
 
       - name: Create Sentry release
         uses: getsentry/action-release@v1
@@ -296,7 +301,16 @@ jobs:
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
         timeout-minutes: 3
-      - run: pnpm build
+      - name: Deploy PartyKit online room (preview)
+        env:
+          PARTYKIT_LOGIN: ${{ secrets.PARTYKIT_LOGIN }}
+          PARTYKIT_TOKEN: ${{ secrets.PARTYKIT_TOKEN }}
+        run: pnpm exec partykit deploy --preview pr-${{ github.run_id }}
+      - name: Build app
+        env:
+          # Points the build at the preview PartyKit room deployed above, instead of production
+          VITE_APP_ONLINE_PARTYKIT_URL: wss://pr-${{ github.run_id }}.allkaraoke-online.${{ secrets.PARTYKIT_LOGIN }}.partykit.dev
+        run: pnpm build
         shell: bash
       - name: Upload to Cloudflare
         id: deploy-report

@@ -1,4 +1,5 @@
 import { Browser, expect, Page, test } from '@playwright/test';
+
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 
@@ -51,7 +52,9 @@ const createRoom = async (page: Page, name: string) => {
   await page.goto('/online/?e2e-test');
   await page.getByTestId('create-room-button').click();
   await completeNameAndMicSteps(page, name);
-  await expect(page.getByTestId('online-lobby-header')).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByTestId('online-lobby-header')).toBeVisible({
+    timeout: 15_000,
+  });
   const roomCode = new URL(page.url()).searchParams.get('room');
   expect(roomCode).toBeTruthy();
   return roomCode!;
@@ -72,7 +75,9 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   await test.step('Host opens a room via the room → name → mic wizard', async () => {
     await page.getByTestId('create-room-button').click();
     await completeNameAndMicSteps(page, hostName);
-    await expect(page.getByTestId('online-lobby-header')).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId('online-lobby-header')).toBeVisible({
+      timeout: 15_000,
+    });
   });
   const roomCode = new URL(page.url()).searchParams.get('room')!;
 
@@ -83,7 +88,9 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await guestPage.getByTestId('join-room-button').click();
     await completeNameAndMicSteps(guestPage, guestName);
     // no extra "all set" step — mic setup drops the guest right into the lobby
-    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({
+      timeout: 15_000,
+    });
   });
 
   await test.step('Both singers see each other, host is marked', async () => {
@@ -129,6 +136,9 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     // the selected song stays visible (and previewable) as a card for everyone
     await expect(guestPage.getByTestId('online-host-browsing-title')).toHaveText(song.title);
     await expect(page.getByTestId('online-host-browsing-title')).toHaveText(song.title);
+    // voting disappears once the song is picked; the host keeps a compact change-song icon
+    await expect(guestPage.getByTestId('online-vote-up')).not.toBeVisible();
+    await expect(page.getByTestId('choose-song-button')).toBeVisible();
   });
 
   await test.step('Everyone readies up (with one-time calibration) — countdown starts', async () => {
@@ -137,13 +147,21 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await readyUp(guestPage, { calibrate: true });
 
     // all ready + all playback probes pass → synchronized countdown on both screens
-    await expect(page.getByTestId('online-countdown')).toBeVisible({ timeout: 15_000 });
-    await expect(guestPage.getByTestId('online-countdown')).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId('online-countdown')).toBeVisible({
+      timeout: 15_000,
+    });
+    await expect(guestPage.getByTestId('online-countdown')).toBeVisible({
+      timeout: 15_000,
+    });
   });
 
   await test.step('Singing starts with a live leaderboard for both singers', async () => {
-    await expect(guestPage.getByTestId('online-countdown')).not.toBeVisible({ timeout: 15_000 });
-    await expect(page.getByTestId('online-leaderboard')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-countdown')).not.toBeVisible({
+      timeout: 15_000,
+    });
+    await expect(page.getByTestId('online-leaderboard')).toBeVisible({
+      timeout: 15_000,
+    });
     await expect(page.getByTestId('online-leaderboard-entry-0')).toContainText(hostName);
     await expect(page.getByTestId('online-leaderboard-entry-1')).toContainText(guestName);
     await expect(guestPage.getByTestId('online-leaderboard')).toBeVisible();
@@ -155,20 +173,28 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
       if (!(await guestPage.getByTestId('online-pause-overlay').isVisible())) {
         await guestPage.keyboard.press('Escape');
       }
-      await expect(page.getByTestId('online-pause-overlay')).toBeVisible({ timeout: 3_000 });
+      await expect(page.getByTestId('online-pause-overlay')).toBeVisible({
+        timeout: 3_000,
+      });
     }).toPass({ timeout: 20_000 });
     await expect(page.getByTestId('online-pause-overlay')).toContainText(guestName);
     await expect(guestPage.getByTestId('online-pause-overlay')).toBeVisible();
 
     // the host (not the pauser) resumes
     await page.getByTestId('online-resume-button').click();
-    await expect(page.getByTestId('online-pause-overlay')).not.toBeVisible({ timeout: 10_000 });
+    await expect(page.getByTestId('online-pause-overlay')).not.toBeVisible({
+      timeout: 10_000,
+    });
     await expect(guestPage.getByTestId('online-pause-overlay')).not.toBeVisible({ timeout: 10_000 });
   });
 
   await test.step('Final screen shows the result breakdown for all singers', async () => {
-    await expect(page.getByTestId('online-results')).toBeVisible({ timeout: 60_000 });
-    await expect(guestPage.getByTestId('online-results')).toBeVisible({ timeout: 30_000 });
+    await expect(page.getByTestId('online-results')).toBeVisible({
+      timeout: 60_000,
+    });
+    await expect(guestPage.getByTestId('online-results')).toBeVisible({
+      timeout: 30_000,
+    });
 
     await expect(page.getByTestId('player-0-name')).toHaveText(hostName);
     await expect(page.getByTestId('player-1-name')).toHaveText(guestName);
@@ -178,8 +204,12 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   await test.step('No high-scores step — Next returns everyone to the lobby', async () => {
     await page.getByTestId('skip-animation-button').click();
     await page.getByTestId('highscores-button').click();
-    await expect(page.getByTestId('online-lobby-header')).toBeVisible({ timeout: 10_000 });
-    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({ timeout: 10_000 });
+    await expect(page.getByTestId('online-lobby-header')).toBeVisible({
+      timeout: 10_000,
+    });
+    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({
+      timeout: 10_000,
+    });
     // the finished song is no longer selected — the next round starts fresh
     await expect(page.getByTestId('online-selected-song')).not.toContainText(`${song.artist} - ${song.title}`);
     await expect(page.getByTestId('online-selected-song')).toContainText('Pick a song');
@@ -197,14 +227,18 @@ test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, br
   await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
   await guestPage.getByTestId('join-room-button').click();
   await completeNameAndMicSteps(guestPage, guestName);
-  await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({ timeout: 15_000 });
+  await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({
+    timeout: 15_000,
+  });
   await expect(page.getByTestId('online-participant-1')).toContainText(guestName);
 
   await test.step('Host kicks the guest from the lobby, with a confirmation', async () => {
     await page.getByTestId('online-kick-1').click();
     await page.getByTestId('online-kick-confirm-modal').getByRole('button', { name: 'Remove' }).click();
     await expect(page.getByTestId('online-participant-1')).not.toBeVisible();
-    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({
+      timeout: 15_000,
+    });
     await expect(guestPage.getByTestId('online-join-rejected')).toContainText('removed from this room');
   });
 
@@ -213,7 +247,9 @@ test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, br
     await guestPage.getByTestId('join-room-code-input').fill(roomCode);
     await guestPage.getByTestId('join-room-button').click();
     await completeNameAndMicSteps(guestPage, guestName);
-    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({
+      timeout: 15_000,
+    });
     await expect(guestPage.getByTestId('online-join-rejected')).toContainText('removed from this room');
   });
 
@@ -238,7 +274,9 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
     await guestPage.getByTestId('join-room-code-input').fill(roomCode);
     await guestPage.getByTestId('join-room-button').click();
     await completeNameAndMicSteps(guestPage, guestName);
-    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-lobby-header')).toBeVisible({
+      timeout: 15_000,
+    });
     await expect(guestPage.getByTestId('online-participant-0')).toContainText(hostName);
     await expect(guestPage.getByTestId('online-participant-1')).toContainText(guestName);
   });
