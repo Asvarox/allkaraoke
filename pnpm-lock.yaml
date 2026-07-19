@@ -101,6 +101,9 @@ importers:
       peerjs:
         specifier: 2.0.0-beta.3
         version: 2.0.0-beta.3
+      pixelmatch:
+        specifier: ^7.2.0
+        version: 7.2.0
       posthog-js:
         specifier: ^1.390.1
         version: 1.390.1
@@ -225,6 +228,9 @@ importers:
       '@types/node':
         specifier: ^24.0.0
         version: 24.10.7
+      '@types/pngjs':
+        specifier: ^6.0.5
+        version: 6.0.5
       '@types/react':
         specifier: ^19.2.17
         version: 19.2.17
@@ -309,6 +315,9 @@ importers:
       playwright:
         specifier: ^1.61.0
         version: 1.61.0
+      pngjs:
+        specifier: ^7.0.0
+        version: 7.0.0
       postcss:
         specifier: ^8.5.15
         version: 8.5.15
@@ -2746,6 +2755,9 @@ packages:
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
 
+  '@types/pngjs@6.0.5':
+    resolution: {integrity: sha512-0k5eKfrA83JOZPppLtS2C7OUtyNAl2wKNxfyYl9Q5g9lPkgBl/9hNyAu6HuEH2J4XmIv2znEpkDd0SaZVxW6iQ==}
+
   '@types/prop-types@15.7.15':
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
 
@@ -4729,6 +4741,10 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
+  pixelmatch@7.2.0:
+    resolution: {integrity: sha512-xhcb4yHu9sM/G7foGzoLtXYcC0zHEaOXXjRKhGup0fw78Nf2Tkiapv4EQyMzrbcmQPsllAI7DbFY2UT7PlI9Pg==}
+    hasBin: true
+
   playwright-core@1.61.0:
     resolution: {integrity: sha512-caX7TrY3Ml6egyDX0WUcTHDxodl/b51y5wJOdCEA36QviK/s2g081hvmGs8eaE3DWb6NYZQ6BjO/QkNRPenoPA==}
     engines: {node: '>=18'}
@@ -4738,6 +4754,10 @@ packages:
     resolution: {integrity: sha512-Z+7BeeqQPRRzklHsVFP4KTGIyMxKUmfeRA4WisM6G3/XW6nwGeX6fX9qYaDa+CiUqpOkb2f6X3nar05R3kSuJQ==}
     engines: {node: '>=18'}
     hasBin: true
+
+  pngjs@7.0.0:
+    resolution: {integrity: sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==}
+    engines: {node: '>=14.19.0'}
 
   postcss@8.5.15:
     resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
@@ -7659,6 +7679,10 @@ snapshots:
 
   '@types/parse-json@4.0.0': {}
 
+  '@types/pngjs@6.0.5':
+    dependencies:
+      '@types/node': 24.10.7
+
   '@types/prop-types@15.7.15': {}
 
   '@types/qs@6.9.18': {}
@@ -9722,6 +9746,10 @@ snapshots:
 
   picomatch@4.0.5: {}
 
+  pixelmatch@7.2.0:
+    dependencies:
+      pngjs: 7.0.0
+
   playwright-core@1.61.0: {}
 
   playwright@1.61.0:
@@ -9729,6 +9757,8 @@ snapshots:
       playwright-core: 1.61.0
     optionalDependencies:
       fsevents: 2.3.2
+
+  pngjs@7.0.0: {}
 
   postcss@8.5.15:
     dependencies:

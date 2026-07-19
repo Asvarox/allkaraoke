@@ -24,7 +24,10 @@ visual('Main menu', async ({ page, makeScreenshot }) => {
 visual('History', async ({ page, makeScreenshot }) => {
   await page.goto('/menu/?e2e-test');
   await page.getByTestId('history').click();
-  await expect(page.getByTestId('history-page')).toBeVisible();
+  // The history container mounts immediately but shows a loading skeleton while it reads play
+  // stats from IndexedDB - wait for the empty state (no plays are ever seeded here) rather than
+  // just the container, or the screenshot can race the skeleton under load.
+  await expect(page.getByTestId('history-empty-state')).toBeVisible();
 
   await makeScreenshot();
 });
@@ -45,13 +48,18 @@ visual('Remote mic', REMOTE_MIC_VIEWPORTS, async ({ page, context, makeScreensho
   await makeScreenshot('settings');
 });
 
-// Mirrored keyboard: when the host is on an in-game screen that opts into mirroring (Options here),
-// the connected remote renders that screen's controls directly. `page` is the host, same as every
-// other remote-mic test, so it needs its normal desktop viewport back (the harness pins it to the
-// mobile size this test is named after, but that's meant for the remote); the remote connects via
-// the usual openAndConnectRemoteMicDirectly helper, with its viewport set to the mobile target size.
+// Keyboard mirroring: what the connected remote renders depends on what screen the host is on.
+// On an in-game screen that opts into mirroring (Options here), the remote renders that screen's
+// controls directly. On the actual song browser, the remote instead renders the bespoke
+// song-selection layout - search box + arrow pad + "Random Song" - instead of either the mirrored
+// controls or the generic classic nav pad. Both are captured from a single paired remote mic
+// (pairing involves a real WS handshake, so reconnecting a second time per test would be wasteful).
+// `page` is the host, same as every other remote-mic test, so it needs its normal desktop viewport
+// back (the harness pins it to the mobile size this test is named after, but that's meant for the
+// remote); the remote connects via the usual openAndConnectRemoteMicDirectly helper, with its
+// viewport set to the mobile target size.
 visual(
-  'Remote mic mirrored keyboard',
+  'Remote mic mirrored & song-selection keyboards',
   REMOTE_MIC_VIEWPORTS,
   async ({ page, context, browser, viewport, makeScreenshot }) => {
     await page.setViewportSize(VIEWPORTS.desktop);
@@ -77,35 +85,13 @@ visual(
     await expect(remoteMic.remoteMicMainPage.mirroredControl('graphics-level')).toBeVisible();
 
     // Mask the live ping counter in the top bar so the screenshot stays deterministic.
-    await makeScreenshot(undefined, {
+    await makeScreenshot('mirrored-keyboard', {
       page: remoteMic._page,
       extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
     });
-  },
-);
 
-// Song-selection keyboard: when the host is on the actual song browser (not just any in-game
-// screen), the remote renders the bespoke song-selection layout - search box + arrow pad +
-// "Random Song" - instead of the generic classic nav pad.
-visual(
-  'Remote mic song-selection keyboard',
-  REMOTE_MIC_VIEWPORTS,
-  async ({ page, context, browser, viewport, makeScreenshot }) => {
-    await page.setViewportSize(VIEWPORTS.desktop);
-    await mockSongs({ page, context });
-    const pages = initialise(page, context, browser);
-
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.mainMenuPage.goToInputSelectionPage();
-    await pages.inputSelectionPage.selectSmartphones();
-
-    const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
-    await remoteMic._page.setViewportSize(viewport);
-
-    // Host opens the song browser, which publishes the song-selection layout to the remote.
-    await pages.smartphonesConnectionPage.goToMainMenu();
+    // Host moves on to the song browser, which publishes the song-selection layout to the remote.
+    await page.getByTestId('back-button').click();
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
     await pages.songLanguagesPage.continueAndGoToSongList();
@@ -113,7 +99,7 @@ visual(
     await remoteMic.remoteMicMainPage.expectKeyboardModeToBe('song-selection');
     await expect(remoteMic._page.getByTestId('keyboard-shift-r')).toBeVisible();
 
-    await makeScreenshot(undefined, {
+    await makeScreenshot('song-selection-keyboard', {
       page: remoteMic._page,
       extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
     });
