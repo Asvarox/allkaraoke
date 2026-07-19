@@ -1,0 +1,107 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
+name: commit-and-comment-snapshots
+description: >-
+  Commits Playwright snapshots updated by a preceding `playwright test -u` run and,
+  when fewer than 10 changed, posts a PR review comment with an old / new / diff
+  thumbnail gallery hosted on Cloudflare Pages.
+
+inputs:
+  commit-message:
+    required: true
+    description: 'Commit message for the auto-committed snapshot update'
+  comment-body:
+    required: true
+    description: 'Opening sentence of the PR review comment'
+  comment-link-text:
+    required: true
+    description: 'Link text for the link to the run that committed the snapshots'
+  cloudflare-branch-prefix:
+    required: true
+    description: 'Distinguishes this job''s thumbnail deployment from others in the same run (e.g. "ct", "vr")'
+  cloudflare-api-token:
+    required: true
+    description: 'Cloudflare API token used to deploy the thumbnail gallery'
+  cloudflare-account-id:
+    required: true
+    description: 'Cloudflare account id used to deploy the thumbnail gallery'
+
+runs:
+  using: 'composite'
+  steps:
+    # Runs before the auto-commit so it can diff the freshly-updated (still
+    # unstaged) snapshots against their committed versions.
+    - name: Build visual diff thumbnails
+      id: visual-diff
+      shell: bash
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        pnpm visual-diff:report
+    - name: Auto commit updated snapshots
+      id: auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: ${{ inputs.commit-message }}
+        commit_options: '--no-verify'
+    - name: Upload visual diff thumbnails to Cloudflare Pages
+      id: deploy-visual-diff
+      if: steps.auto-commit-action.outputs.changes_detected == 'true' && steps.visual-diff.outputs.has_thumbnails == 'true'
+      continue-on-error: true # a hosting hiccup shouldn't block the review comment
+      uses: cloudflare/wrangler-action@v4
+      with:
+        apiToken: ${{ inputs.cloudflare-api-token }}
+        accountId: ${{ inputs.cloudflare-account-id }}
+        command: pages deploy test-results/visual-diff-report --project-name=allkaraoke-party-tests-results --branch=visual-diff-${{ inputs.cloudflare-branch-prefix }}-${{ github.run_id }}
+    - name: Render visual diff comment
+      if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      shell: bash
+      env:
+        BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
+      run: pnpm visual-diff:comment
+    # A single "sticky" comment per job (identified by a hidden marker) is
+    # upserted so only the latest gallery is ever shown, and removed once the
+    # snapshots are back in sync - rather than stacking a new comment per run.
+    - name: Upsert or remove visual diff comment
+      uses: actions/github-script@v8
+      env:
+        COMMENT_BODY: ${{ inputs.comment-body }}
+        COMMENT_LINK_TEXT: ${{ inputs.comment-link-text }}
+        COMMENT_MARKER: '<!-- visual-diff-thumbnails:${{ inputs.cloudflare-branch-prefix }} -->'
+        CHANGES_DETECTED: ${{ steps.auto-commit-action.outputs.changes_detected }}
+      with:
+        script: |
+          const { owner, repo } = context.repo;
+          const issue_number = context.issue.number;
+          const marker = process.env.COMMENT_MARKER;
+
+          const comments = await github.paginate(github.rest.issues.listComments, {
+            owner,
+            repo,
+            issue_number,
+            per_page: 100,
+          });
+          const existing = comments.find((comment) => comment.body?.includes(marker));
+
+          // No changes this run: drop any stale gallery so the latest state is the only truth.
+          if (process.env.CHANGES_DETECTED !== 'true') {
+            if (existing) {
+              await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
+            }
+            return;
+          }
+
+          const fs = require('node:fs');
+          const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+
+          let gallery = '';
+          try {
+            gallery = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
+          } catch {}
+
+          const body = `${process.env.COMMENT_BODY}\n\n[${process.env.COMMENT_LINK_TEXT}](${runUrl})${gallery}\n\n${marker}`;
+
+          if (existing) {
+            await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+          } else {
+            await github.rest.issues.createComment({ owner, repo, issue_number, body });
+          }

@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { useBackground } from '~/modules/elements/background-context';
 import isDev from '~/modules/utils/is-dev';
 
+import type { DiffWorkerResponse } from './diff-worker';
 import { clearAllSnapshots, getAllSnapshots, saveSnapshot } from './snapshot-store';
 
 const VIEWPORTS = ['desktop', 'tablet', 'mobile-portrait', 'mobile-landscape'] as const;
@@ -24,26 +25,40 @@ const screenshotUrls = import.meta.glob<string>('/tests/visual-regression/**/*.s
   import: 'default',
 });
 
-// e.g. "edit-song-basic-info-mobile-portrait-chromium-darwin.png" -> category "edit-song-basic-info", viewport "mobile-portrait"
-const FILE_NAME_RE = new RegExp(`^(.*)-(${VIEWPORTS.join('|')})-[^/]+\\.png$`);
+// e.g. "edit-song-basic-info-mobile-portrait-chromium-darwin.png" -> category "edit-song-basic-info", viewport "mobile-portrait", platform "darwin"
+const FILE_NAME_RE = new RegExp(`^(.*)-(${VIEWPORTS.join('|')})-[^/]+-([a-z0-9]+)\\.png$`);
 
 function parseFileName(modulePath: string) {
   const fileName = modulePath.split('/').pop() ?? '';
   const match = fileName.match(FILE_NAME_RE);
   if (!match) return null;
-  return { category: match[1], viewport: match[2] as Viewport };
+  return { category: match[1], viewport: match[2] as Viewport, platform: match[3] };
 }
+
+// Snapshots are committed for both the platform devs run locally (darwin) and the one CI runs on
+// (linux), sharing the same category/viewport - keep only the ones matching this machine so CI's
+// baselines don't silently shadow freshly captured local ones.
+const localPlatform = navigator.platform.toLowerCase().includes('mac') ? 'darwin' : 'linux';
 
 const categories = new Map<string, Partial<Record<Viewport, string>>>();
 for (const [modulePath, url] of Object.entries(screenshotUrls)) {
   const parsed = parseFileName(modulePath);
-  if (!parsed) continue;
+  if (!parsed || parsed.platform !== localPlatform) continue;
 
   const bucket = categories.get(parsed.category) ?? {};
   bucket[parsed.viewport] = url;
   categories.set(parsed.category, bucket);
 }
 const sortedCategories = new Map([...categories.entries()].sort(([a], [b]) => a.localeCompare(b)));
+
+// key ("category/viewport") -> current screenshot url, for pairing captured baselines with their latest render.
+const currentUrlByKey = new Map<string, string>();
+for (const [category, urls] of sortedCategories) {
+  for (const viewport of VIEWPORTS) {
+    const url = urls[viewport];
+    if (url) currentUrlByKey.set(`${category}/${viewport}`, url);
+  }
+}
 
 // Bumped whenever the tab regains focus, so screenshots re-generated with the same file name (rather
 // than added/removed) get re-fetched instead of showing a browser-cached copy.
@@ -93,6 +108,122 @@ function useSnapshots() {
   }, []);
 
   return { snapshots, isCapturing, capture, clear };
+}
+
+export interface Diff {
+  status: 'pending' | 'equal' | 'changed' | 'error';
+  mismatchedPixels?: number;
+  ratio?: number;
+  diffUrl?: string;
+}
+
+const cacheBust = (url: string, token: number) => `${url}${url.includes('?') ? '&' : '?'}t=${token}`;
+
+// Diffing every screenshot is expensive and re-runs on every window focus, so results are memoised in
+// module scope (surviving remounts and route changes) and addressed by the *content* of the two images
+// they were computed from. A screenshot whose bytes haven't changed is served straight from here, and
+// the previous result stays on screen while a genuinely changed one is recomputed in the background.
+const diffCache = new Map<string, { signature: string; diff: Diff }>();
+
+const cachedDiffs = () => new Map([...diffCache].map(([key, entry]) => [key, entry.diff]));
+
+function cacheDiff(key: string, signature: string, diff: Diff) {
+  const previous = diffCache.get(key);
+  if (previous?.diff.diffUrl && previous.diff.diffUrl !== diff.diffUrl) {
+    URL.revokeObjectURL(previous.diff.diffUrl);
+  }
+  diffCache.set(key, { signature, diff });
+}
+
+async function hashBlob(blob: Blob): Promise<string> {
+  const digest = await crypto.subtle.digest('SHA-1', await blob.arrayBuffer());
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+}
+
+// Baselines only change when re-captured, and the Blob instances are stable between renders, so their
+// hashes are memoised per Blob rather than recomputed on every refresh.
+const baselineHashes = new WeakMap<Blob, Promise<string>>();
+function hashBaseline(blob: Blob): Promise<string> {
+  const existing = baselineHashes.get(blob);
+  if (existing) return existing;
+
+  const hash = hashBlob(blob);
+  baselineHashes.set(blob, hash);
+  return hash;
+}
+
+// Compares every captured baseline against its current screenshot in a worker, so the (potentially
+// many) diffs are computed off the main thread. Results stream in as they finish, letting the list
+// show a "changed" badge without blocking on the full set.
+function useDiffs(snapshots: Map<string, Blob>, cacheBustToken: number): Map<string, Diff> {
+  const [diffs, setDiffs] = useState<Map<string, Diff>>(cachedDiffs);
+  const workerRef = useRef<Worker | null>(null);
+
+  useEffect(() => {
+    const worker = new Worker(new URL('./diff-worker.ts', import.meta.url), { type: 'module' });
+    workerRef.current = worker;
+
+    worker.onmessage = (event: MessageEvent<DiffWorkerResponse>) => {
+      const message = event.data;
+      const diff: Diff = message.ok
+        ? {
+            status: message.mismatchedPixels > 0 ? 'changed' : 'equal',
+            mismatchedPixels: message.mismatchedPixels,
+            ratio: message.ratio,
+            diffUrl: URL.createObjectURL(message.diff),
+          }
+        : { status: 'error' };
+
+      cacheDiff(message.key, message.signature, diff);
+      setDiffs((prev) => new Map(prev).set(message.key, diff));
+    };
+
+    return () => {
+      worker.terminate();
+      workerRef.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    const worker = workerRef.current;
+    if (!worker) return;
+
+    let cancelled = false;
+    (async () => {
+      for (const [key, baseline] of snapshots) {
+        const url = currentUrlByKey.get(key);
+        if (!url) continue;
+
+        try {
+          const current = await fetch(cacheBust(url, cacheBustToken)).then((res) => res.blob());
+          if (cancelled) return;
+
+          const signature = `${await hashBaseline(baseline)}:${await hashBlob(current)}`;
+          if (cancelled) return;
+
+          const cached = diffCache.get(key);
+          if (cached?.signature === signature) {
+            setDiffs((prev) => (prev.get(key) === cached.diff ? prev : new Map(prev).set(key, cached.diff)));
+            continue;
+          }
+
+          // Only show a spinner for screenshots never diffed before; otherwise the stale result stays
+          // visible until the fresh one silently replaces it.
+          if (!cached) setDiffs((prev) => new Map(prev).set(key, { status: 'pending' }));
+
+          worker.postMessage({ key, signature, baseline, current });
+        } catch {
+          if (!cancelled) setDiffs((prev) => new Map(prev).set(key, { status: 'error' }));
+        }
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [snapshots, cacheBustToken]);
+
+  return diffs;
 }
 
 // Object URLs for Blobs must be created/revoked explicitly, they aren't garbage collected on their own.
@@ -149,6 +280,45 @@ function parseHash(hash: string): FocusState | null {
   return null;
 }
 
+function DiffBadge({ diff, className = '' }: { diff: Diff | undefined; className?: string }) {
+  if (!diff || diff.status === 'equal') return null;
+
+  const base = `pointer-events-none rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none ${className}`;
+  if (diff.status === 'pending') return <span className={`${base} bg-neutral-700 text-neutral-300`}>diffing…</span>;
+  if (diff.status === 'error') return <span className={`${base} bg-amber-600 text-white`}>diff error</span>;
+
+  const percent = diff.ratio !== undefined ? `${(diff.ratio * 100).toFixed(1)}%` : '';
+  return <span className={`${base} bg-red-600 text-white`}>Δ {percent}</span>;
+}
+
+// Stacks the diff image on top of the screenshot, hidden until the enclosing `group`-marked ancestor
+// (the thumbnail button) is hovered, so hovering a changed thumbnail previews what changed.
+function ThumbnailImage({
+  src,
+  diff,
+  alt,
+  className,
+}: {
+  src: string;
+  diff: Diff | undefined;
+  alt: string;
+  className: string;
+}) {
+  return (
+    <span className="relative block">
+      <img src={src} alt={alt} className={className} />
+      {diff?.diffUrl && (
+        <img
+          src={diff.diffUrl}
+          alt={`${alt} - diff`}
+          className={`${className} pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-150 group-hover:opacity-100`}
+        />
+      )}
+      <DiffBadge diff={diff} className="absolute top-1 right-1 shadow" />
+    </span>
+  );
+}
+
 function ViewportButton({ viewport, active, onClick }: { viewport: Viewport; active: boolean; onClick: () => void }) {
   return (
     <button
@@ -168,11 +338,9 @@ function DevScreenshots() {
   const [hash, setHash] = useHash();
   const [cacheBustToken, refresh] = useCacheBustToken();
   const { snapshots, isCapturing, capture, clear } = useSnapshots();
+  const diffs = useDiffs(snapshots, cacheBustToken);
 
-  const withCacheBust = useMemo(
-    () => (url: string) => `${url}${url.includes('?') ? '&' : '?'}t=${cacheBustToken}`,
-    [cacheBustToken],
-  );
+  const withCacheBust = useMemo(() => (url: string) => cacheBust(url, cacheBustToken), [cacheBustToken]);
 
   if (!isDev()) return null;
 
@@ -216,14 +384,15 @@ function DevScreenshots() {
           setHash={setHash}
           withCacheBust={withCacheBust}
           snapshots={snapshots}
+          diffs={diffs}
         />
       )}
 
       {focused?.mode === 'viewport' && (
-        <ViewportView viewport={focused.viewport} setHash={setHash} withCacheBust={withCacheBust} />
+        <ViewportView viewport={focused.viewport} setHash={setHash} withCacheBust={withCacheBust} diffs={diffs} />
       )}
 
-      {!focused && <GridView setHash={setHash} withCacheBust={withCacheBust} />}
+      {!focused && <GridView setHash={setHash} withCacheBust={withCacheBust} diffs={diffs} />}
     </div>
   );
 }
@@ -231,9 +400,10 @@ function DevScreenshots() {
 interface ViewProps {
   setHash: (value: string) => void;
   withCacheBust: (url: string) => string;
+  diffs: Map<string, Diff>;
 }
 
-function GridView({ setHash, withCacheBust }: ViewProps) {
+function GridView({ setHash, withCacheBust, diffs }: ViewProps) {
   return (
     <div>
       <div className="mb-6 flex flex-wrap items-center gap-2">
@@ -261,11 +431,12 @@ function GridView({ setHash, withCacheBust }: ViewProps) {
                     <button
                       key={viewport}
                       onClick={() => setHash(buildScreenHash(category, viewport))}
-                      className="flex flex-col items-center gap-1">
-                      <img
+                      className="group flex flex-col items-center gap-1">
+                      <ThumbnailImage
                         src={withCacheBust(urls[viewport])}
+                        diff={diffs.get(`${category}/${viewport}`)}
                         alt={`${category} - ${viewport}`}
-                        className="h-24 w-auto rounded border border-neutral-700 object-cover object-top hover:border-blue-400"
+                        className="h-24 w-auto rounded border border-neutral-700 object-cover object-top group-hover:border-blue-400"
                       />
                       <span className="text-xs text-neutral-400">{VIEWPORT_LABELS[viewport]}</span>
                     </button>
@@ -285,24 +456,33 @@ function ScreenView({
   setHash,
   withCacheBust,
   snapshots,
+  diffs,
 }: ViewProps & { category: string; viewport: Viewport; snapshots: Map<string, Blob> }) {
   const urls = sortedCategories.get(category);
   const url = urls?.[viewport];
   const capturedBlob = snapshots.get(snapshotKey(category, viewport));
   const capturedUrl = useObjectUrl(capturedBlob);
+  const diff = diffs.get(snapshotKey(category, viewport));
+
+  const panels = 1 + (capturedUrl ? 1 : 0) + (diff?.diffUrl ? 1 : 0);
+  const gridCols =
+    panels >= 3 ? 'grid-cols-1 lg:grid-cols-3' : panels === 2 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1';
 
   return (
     <div>
       <button className="mb-4 text-blue-400 underline" onClick={() => setHash('')}>
         ← Back to all screenshots
       </button>
-      <h2 className="mb-4 text-xl font-semibold">{category}</h2>
+      <h2 className="mb-4 flex items-center gap-3 text-xl font-semibold">
+        {category}
+        <DiffBadge diff={diff} />
+      </h2>
 
       {url && (
-        <div className={`mb-4 grid items-start gap-4 ${capturedUrl ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+        <div className={`mb-4 grid items-start gap-4 ${gridCols}`}>
           {capturedUrl && (
             <div className="min-w-0">
-              <p className="mb-1 text-sm text-neutral-400">Captured</p>
+              <p className="mb-1 text-sm text-neutral-400">Captured (baseline)</p>
               <img
                 src={capturedUrl}
                 alt={`${category} - ${viewport} - captured`}
@@ -322,6 +502,21 @@ function ScreenView({
               }
             />
           </div>
+          {diff?.diffUrl && (
+            <div className="min-w-0">
+              <p className="mb-1 flex items-center gap-2 text-sm text-neutral-400">
+                Diff
+                {diff.mismatchedPixels !== undefined && (
+                  <span className="text-neutral-500">{diff.mismatchedPixels.toLocaleString('en-US')} px</span>
+                )}
+              </p>
+              <img
+                src={diff.diffUrl}
+                alt={`${category} - ${viewport} - diff`}
+                className="w-full rounded border border-neutral-700"
+              />
+            </div>
+          )}
         </div>
       )}
 
@@ -351,7 +546,7 @@ function ScreenView({
   );
 }
 
-function ViewportView({ viewport, setHash, withCacheBust }: ViewProps & { viewport: Viewport }) {
+function ViewportView({ viewport, setHash, withCacheBust, diffs }: ViewProps & { viewport: Viewport }) {
   const entries = [...sortedCategories.entries()].filter(([, urls]) => urls[viewport]);
 
   return (
@@ -376,11 +571,12 @@ function ViewportView({ viewport, setHash, withCacheBust }: ViewProps & { viewpo
           <button
             key={category}
             onClick={() => setHash(buildScreenHash(category, viewport))}
-            className="flex flex-col items-center gap-1">
-            <img
+            className="group flex flex-col items-center gap-1">
+            <ThumbnailImage
               src={withCacheBust(urls[viewport]!)}
+              diff={diffs.get(`${category}/${viewport}`)}
               alt={`${category} - ${viewport}`}
-              className="h-64 w-auto rounded border border-neutral-700 object-cover object-top hover:border-blue-400"
+              className="h-64 w-auto rounded border border-neutral-700 object-cover object-top group-hover:border-blue-400"
             />
             <span className="max-w-48 truncate text-xs text-neutral-400" title={category}>
               {category}
