@@ -54,6 +54,7 @@
     "start": "vite",
     "dev": "pnpm start",
     "start:mock": "VITE_APP_OFFLINE=true vite",
+    "start:https": "HTTPS=true vite",
     "start:production": "vite preview --port 3010",
     "prod:serve": "pnpm start:production",
     "serve:prod": "pnpm start:production",

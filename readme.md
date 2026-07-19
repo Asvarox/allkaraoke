@@ -27,10 +27,22 @@ Plays dummy local video instead of YouTube to work properly in offline environme
 pnpm start:mock
 ```
 
-#### Localhost service worker
+#### Run over HTTPS
 
-Locally the app runs on HTTPS (with dummy cert) so remote microphones work. This makes the Service Worker not
-work due to untrusted origin. See [this document](config/crt/readme.md) how this can be fixed.
+```
+pnpm start:https
+```
+
+The app normally runs on plain `http://localhost:3000`. Browsers treat `localhost` as a secure context, so the Service
+Worker, microphone access and the clipboard all work there without any certificate setup.
+
+HTTPS mode is only needed when you want to open the dev server from **another device** - most notably a phone acting as
+a remote mic. Such a device reaches the app via the LAN IP (eg. `192.168.1.10:3000`), which is _not_ a secure context,
+so `getUserMedia` would be blocked. `pnpm start:https` therefore both enables TLS and exposes the server on the LAN
+(no need for an extra `--host` flag).
+
+It serves a self-signed certificate, so the phone will show a certificate warning that you have to accept. See
+[this document](config/crt/readme.md) how to generate a locally-trusted certificate and get rid of the warning.
 
 ### Build for production
 
@@ -44,10 +56,16 @@ By default, dummy (simulated) microphones are used. You can use whatever other m
 
 ### Connecting remote mic to dev server
 
-You can just copy the link and open it in a new browser tab or whole new browser. If you want to connect actual phone
-to the dev server, you need to run it with `--host` flag, eg `pnpm start --host` (and open the actual IP link).
+You can just copy the link and open it in a new browser tab or whole new browser - that stays on `localhost` and works
+with the default `pnpm start`.
+
+To connect an actual phone you need [HTTPS mode](#run-over-https) (`pnpm start:https`) and to open the LAN IP link.
+Over plain HTTP the phone isn't a secure context, so the browser blocks microphone access.
 
 > _Note_ that some songs won't work (YouTube will block the access), probably due to the host being an IP.
+
+> _Tip_: a tunnel (eg. `cloudflared tunnel --url http://localhost:3000`) is an alternative that gives the phone a real,
+> trusted HTTPS hostname - no certificate warning, and it avoids the YouTube-blocking issue above.
 
 ## E2E tests
 
