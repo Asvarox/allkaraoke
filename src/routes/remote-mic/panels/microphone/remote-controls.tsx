@@ -1,10 +1,10 @@
-import { ArrowBack, ArrowForward, Check, PlayArrow, Settings, Shuffle } from '@mui/icons-material';
-import { ComponentType } from 'react';
+import { ArrowBack } from '@mui/icons-material';
 
 import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
-import { assertNever, ControlDescriptor, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
+import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
+import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
 
 interface Props {
   control: ControlDescriptor;
@@ -12,28 +12,16 @@ interface Props {
 }
 
 /**
- * Slightly darker background for the remote-mic keyboard's tappable controls, so they stand out a
- * touch more against the panel than a regular in-game button. Applied to every control the remote
- * renders (here and the arrow/action buttons in `keyboard.tsx`).
+ * Slightly darker background for the remote-mic keyboard's switch/checkbox controls, so they stand
+ * out a touch more against the panel. Buttons keep the standard background — they already read as
+ * distinct controls via their icon/label layout, so the extra contrast is only needed on
+ * `Switcher`/`Checkbox`, which sit flush with the panel otherwise.
  *
  * `disabled:bg-gray-500!` re-asserts the base button's disabled colour: our darker background is a
  * plain (higher-priority) class that `twMerge` would otherwise let win even for disabled controls,
  * washing out the greyed-out look.
  */
-export const remoteSelectorBackground = 'bg-black/70! disabled:bg-gray-500!';
-
-/**
- * The glyphs the remote can render on the RIGHT of a mirrored button, keyed by the name the host
- * sends in the descriptor. This map is the phone-side counterpart of the `RemoteButtonIcon` union —
- * adding a name there without adding it here fails the TypeScript build (the `satisfies` guard).
- */
-const remoteButtonIcons = {
-  forward: ArrowForward,
-  play: PlayArrow,
-  confirm: Check,
-  shuffle: Shuffle,
-  settings: Settings,
-} satisfies Record<RemoteButtonIcon, ComponentType>;
+const remoteSelectorBackground = 'bg-black/70! disabled:bg-gray-500!';
 
 /**
  * Renders a single mirrored control on the remote mic using the SAME components the host screen
@@ -62,7 +50,6 @@ export default function RemoteControl({ control, onActivate }: Props) {
           disabled={control.disabled}
           leftIcon={isBack ? <ArrowBack /> : undefined}
           rightIcon={RightIcon ? <RightIcon /> : undefined}
-          className={remoteSelectorBackground}
           data-test={`control-${control.name}`}
           data-control-type="button">
           {control.label}
