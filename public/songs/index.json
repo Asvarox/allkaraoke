@@ -88329,6 +88329,34 @@
     "local": false
   },
   {
+    "id": "kenneth-s-schank-he-cares-for-me",
+    "title": "He Cares for Me",
+    "artist": "Kenneth S. Schank",
+    "video": "EKuj_Shh26I",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 10400.375,
+    "year": "2019",
+    "lastUpdate": "2026-07-20T02:14:18.602Z",
+    "genre": "Christian",
+    "volume": 1,
+    "author": "Kenneth S. Schank",
+    "sourceUrl": "https://www.youtube.com/watch?v=EKuj_Shh26I",
+    "duration": 145,
+    "tracks": [
+      {
+        "name": "He Cares for Me",
+        "start": 26
+      }
+    ],
+    "shortId": 6020,
+    "tracksCount": 1,
+    "search": "kennethsschankhecaresforme",
+    "local": false
+  },
+  {
     "id": "kenny-rogers-dolly-parton-islands-in-the-stream",
     "title": "Islands In The Stream",
     "artist": "Kenny Rogers & Dolly Parton",
