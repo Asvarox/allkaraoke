@@ -56,15 +56,19 @@ runs:
     - name: Reset snapshot baseline to target branch
       if: inputs.updateSnapshots == 'true'
       shell: bash
-      # Untrack + delete all snapshots, then restore only the ones the target
-      # branch has. Files the PR added (absent from the target branch) stay
-      # gone until Playwright re-renders them, so they always read as new -
-      # even if an earlier run on this branch already auto-committed them.
+      # Untrack + delete all snapshot PNGs, then restore only the ones the
+      # target branch has. Files the PR added (absent from the target branch)
+      # stay gone until Playwright re-renders them, so they always read as new
+      # - even if an earlier run on this branch already auto-committed them.
+      # Matches only *.png under a "-snapshots"/"__snapshots__" dir (same
+      # predicate as buildDiffReport.ts's isSnapshot) - a directory-name-only
+      # match would also catch unrelated dirs that happen to end in
+      # "-snapshots" (e.g. commit-and-comment-snapshots) and clobber them.
       run: |
-        git rm -r --cached --ignore-unmatch -- ':(glob)**/*-snapshots/**' ':(glob)**/__snapshots__/**'
-        find . -type d \( -name node_modules -o -name .git \) -prune -o -type d \( -name '*-snapshots' -o -name '__snapshots__' \) -exec rm -rf {} +
-        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/*-snapshots/**' 2>/dev/null || true
-        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/__snapshots__/**' 2>/dev/null || true
+        git rm -r --cached --ignore-unmatch -- ':(glob)**/*-snapshots/**/*.png' ':(glob)**/__snapshots__/**/*.png'
+        find . \( -path '*/node_modules/*' -o -path '*/.git/*' \) -prune -o -type f -name '*.png' \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
+        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/*-snapshots/**/*.png' 2>/dev/null || true
+        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/__snapshots__/**/*.png' 2>/dev/null || true
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
