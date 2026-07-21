@@ -110,6 +110,7 @@ jobs:
         with:
           config: 'playwright-ct.config.mts'
           updateSnapshots: 'true'
+          snapshotDir: '__snapshots__' # per playwright-ct.config.mts's snapshotDir
       - name: Commit snapshots and comment with diff thumbnails
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/commit-and-comment-snapshots'
@@ -152,6 +153,7 @@ jobs:
           config: 'playwright.config.ts'
           grep: '@visual'
           updateSnapshots: 'true'
+          snapshotDir: 'tests' # per playwright.config.ts's testDir
       - name: Commit snapshots and comment with diff thumbnails
         uses: './.github/templates/commit-and-comment-snapshots'
         with:

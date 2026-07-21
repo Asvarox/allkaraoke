@@ -31,10 +31,25 @@ inputs:
     required: false
     description: 'Skip tests matching this pattern/tag (--grep-invert)'
     default: ''
+  snapshotDir:
+    required: false
+    description: >-
+      Repo-relative path to this config's Playwright snapshot directory (e.g.
+      'tests' for playwright.config.ts, '__snapshots__' for
+      playwright-ct.config.mts). Required when updateSnapshots is 'true' -
+      scopes the target-branch baseline reset to just this directory, so
+      unrelated directories elsewhere in the repo are never touched.
+    default: ''
 
 runs:
   using: 'composite'
   steps:
+    - name: Validate snapshotDir is set when updating snapshots
+      if: inputs.updateSnapshots == 'true' && inputs.snapshotDir == ''
+      shell: bash
+      run: |
+        echo "::error::snapshotDir input is required when updateSnapshots is 'true'."
+        exit 1
     # When updating snapshots, reset the baseline to the PR's target branch
     # first, so the status-based diff in commit-and-comment-snapshots always
     # reflects the full diff against the target branch, not just the change
@@ -56,19 +71,17 @@ runs:
     - name: Reset snapshot baseline to target branch
       if: inputs.updateSnapshots == 'true'
       shell: bash
-      # Untrack + delete all snapshot PNGs, then restore only the ones the
-      # target branch has. Files the PR added (absent from the target branch)
-      # stay gone until Playwright re-renders them, so they always read as new
-      # - even if an earlier run on this branch already auto-committed them.
-      # Matches only *.png under a "-snapshots"/"__snapshots__" dir (same
-      # predicate as buildDiffReport.ts's isSnapshot) - a directory-name-only
-      # match would also catch unrelated dirs that happen to end in
-      # "-snapshots" (e.g. commit-and-comment-snapshots) and clobber them.
+      # Untrack + delete all PNGs under inputs.snapshotDir, then restore only
+      # the ones the target branch has. Files the PR added (absent from the
+      # target branch) stay gone until Playwright re-renders them, so they
+      # always read as new - even if an earlier run on this branch already
+      # auto-committed them. Scoped to snapshotDir so unrelated directories
+      # elsewhere in the repo are never touched (see commit 5f194b5c1 for what
+      # went wrong when this matched by name alone, repo-wide).
       run: |
-        git rm -r --cached --ignore-unmatch -- ':(glob)**/*-snapshots/**/*.png' ':(glob)**/__snapshots__/**/*.png'
-        find . \( -path '*/node_modules/*' -o -path '*/.git/*' \) -prune -o -type f -name '*.png' \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
-        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/*-snapshots/**/*.png' 2>/dev/null || true
-        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)**/__snapshots__/**/*.png' 2>/dev/null || true
+        git rm -r --cached --ignore-unmatch -- ':(glob)${{ inputs.snapshotDir }}/**/*.png'
+        [ -d '${{ inputs.snapshotDir }}' ] && find '${{ inputs.snapshotDir }}' -type f -name '*.png' -exec rm -f {} + || true
+        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)${{ inputs.snapshotDir }}/**/*.png' 2>/dev/null || true
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
