@@ -314,6 +314,55 @@ code {
   }
 }
 
+/*
+  Menu.tsx: the item directly above/below the focused one gets a slight glow on the edge touching
+  it, as if the active color were bleeding out of the focused item. Both directions stay mounted at
+  all times and only their opacity toggles, so the glow fades in/out smoothly as focus moves instead
+  of popping in/out instantly.
+
+  Which item is the nearest FOCUSABLE neighbour (skipping dividers, headers, disabled items, …) is
+  exactly what useKeyboardNav already tracks via its ordered registration list — `register()`
+  (use-keyboard-nav.ts) computes it once in JS and stamps `data-next-focusable` / `data-previous-
+  focusable` directly on the right item's own root element (the actual button), instead of this CSS
+  trying to rediscover "focusable" from the DOM shape.
+
+  That attribute always lands on the real interactive element itself — `MenuButton` may wrap it in
+  an extra div for `info` text, but the wrapping div never carries these attributes, only the button
+  does. So this targets `[data-focused]` etc. as a descendant (not `>`, a direct child) to reach past
+  that wrapper, which also means the glow box is sized to the button alone and never bleeds onto the
+  info text next to it.
+*/
+.menu-neighbour-glow [data-focused] {
+  position: relative;
+}
+
+.menu-neighbour-glow [data-focused]::before,
+.menu-neighbour-glow [data-focused]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.menu-neighbour-glow [data-focused]::before {
+  background-image: linear-gradient(to bottom, rgb(255 165 0 / 16%), transparent 55%);
+}
+
+.menu-neighbour-glow [data-focused]::after {
+  background-image: linear-gradient(to top, rgb(255 165 0 / 16%), transparent 55%);
+}
+
+.menu-neighbour-glow [data-next-focusable='true']::before {
+  opacity: 1;
+}
+
+.menu-neighbour-glow [data-previous-focusable='true']::after {
+  opacity: 1;
+}
+
 h1 {
   font-size: 2.5rem;
 }

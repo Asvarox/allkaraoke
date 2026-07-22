@@ -4,10 +4,15 @@ import { twc } from 'react-twc';
 import { MenuButton } from '~/modules/elements/akui/menu/menu-button';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
+import isE2E from '~/modules/utils/is-e2-e';
 
-const MenuContainer = twc(
-  Box,
-)`pointer-events-auto w-[100vw] items-stretch rounded-none [view-transition-name:menu-container] sm:max-w-[45rem] md:rounded-xl lg:max-w-[45rem] 2xl:max-w-[60rem]`;
+// Styling lives in the `menu-neighbour-glow` rules in index.css (needs a real CSS transition to
+// fade in/out, which arbitrary Tailwind variants can't express cleanly). Skipped in e2e so it
+// doesn't chase the same non-determinism the base focus styles avoid (see button.tsx).
+const MenuContainer = twc(Box)(() => [
+  'pointer-events-auto w-[100vw] items-stretch rounded-none [view-transition-name:menu-container] sm:max-w-[45rem] md:rounded-xl lg:max-w-[45rem] 2xl:max-w-[60rem]',
+  !isE2E() && 'menu-neighbour-glow',
+]);
 
 export const MenuHelpText = twc(Typography)`text-md mobile:text-xs`;
 const MenuSubHeader = twc(Typography)`text-lg`;
