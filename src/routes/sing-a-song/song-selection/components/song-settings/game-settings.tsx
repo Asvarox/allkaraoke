@@ -5,12 +5,11 @@ import { ValuesType } from 'utility-types';
 import { v4 } from 'uuid';
 
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
-import { Button } from '~/modules/elements/akui/button';
-import { Switcher } from '~/modules/elements/switcher';
+import { NavButton, NavRemoteControl, NavSwitcher } from '~/modules/elements/nav-controls';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import gameEvents from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import PlayersManager from '~/modules/players/players-manager';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/is-dev';
@@ -105,54 +104,68 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
         />,
         document.body,
       )}
-      <Switcher
-        {...register('difficulty-setting', changeTolerance, 'Change difficulty')}
-        label="Difficulty"
-        value={difficultyNames[tolerance]}
-        data-test-value={difficultyNames[tolerance]}
-        className="w-full"
-      />
-      <Switcher
-        {...register('game-mode-setting', changeMode, 'Change mode')}
-        label="Mode"
-        value={gameModeNames[mode]}
-        data-test-value={gameModeNames[mode]}
-        className="w-full"
-      />
-      <hr />
-      {multipleTracks &&
-        players.map((player, index) => {
-          const setup = playerSetup.find((s) => s.number === player.number) ?? { track: 0 };
-          return (
-            <Switcher
-              key={player.number}
-              {...register(
-                `player-${player.number}-track-setting`,
-                toggleTrack(player.number as 0 | 1 | 2 | 3),
-                'Change track',
-              )}
-              label={`P${index + 1} Track`}
-              value={getTrackName(songPreview.tracks, setup.track)}
-              data-test-value={setup.track + 1}
-              className="w-full"
-            />
-          );
-        })}
-      {multipleTracks && <hr />}
-      <Button
-        {...register('select-inputs-button', () => setShowModal(true), undefined, false)}
-        className="mobile:px-6"
-        size="small">
-        Setup mics
-      </Button>
-      {areInputsConfigured && (
-        <Button
-          size="large"
-          {...register('play-song-button', handlePlay, undefined, true)}
-          className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1">
-          Play
-        </Button>
-      )}
+      <KeyboardNavContext value={register}>
+        <NavSwitcher
+          name="difficulty-setting"
+          label="Difficulty"
+          value={difficultyNames[tolerance]}
+          data-test-value={difficultyNames[tolerance]}
+          className="w-full"
+          onClick={changeTolerance}
+        />
+        <NavSwitcher
+          name="game-mode-setting"
+          label="Mode"
+          value={gameModeNames[mode]}
+          data-test-value={gameModeNames[mode]}
+          className="w-full"
+          onClick={changeMode}
+        />
+        <hr />
+        {multipleTracks &&
+          players.map((player, index) => {
+            const setup = playerSetup.find((s) => s.number === player.number) ?? { track: 0 };
+            return (
+              <NavSwitcher
+                key={player.number}
+                name={`player-${player.number}-track-setting`}
+                label={`P${index + 1} Track`}
+                value={getTrackName(songPreview.tracks, setup.track)}
+                data-test-value={setup.track + 1}
+                className="w-full"
+                onClick={toggleTrack(player.number as 0 | 1 | 2 | 3)}
+              />
+            );
+          })}
+        {multipleTracks && <hr />}
+        <NavButton
+          name="select-inputs-button"
+          size="small"
+          className="mobile:px-6"
+          remoteIcon="settings"
+          onClick={() => setShowModal(true)}>
+          Setup mics
+        </NavButton>
+        {areInputsConfigured && (
+          <NavButton
+            name="play-song-button"
+            size="large"
+            className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
+            remoteIcon="play"
+            isDefault
+            onClick={handlePlay}>
+            Play
+          </NavButton>
+        )}
+        {/* Remote-only: the expanded song card has no back button on desktop (only the Backspace
+            handler and a mobile-only one in song-preview), so the phone would otherwise have no way
+            out of this screen once mirrored. */}
+        <NavRemoteControl
+          name="exit-song-settings"
+          control={{ type: 'button', label: 'Sing a song', variant: 'back' }}
+          onClick={onExitKeyboardControl}
+        />
+      </KeyboardNavContext>
     </>
   );
 }

@@ -7,6 +7,13 @@ import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import GameSettings from '~/routes/sing-a-song/song-selection/components/song-settings/game-settings';
 import MicCheck from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check';
 
+// Shared by the on-screen buttons and the mirrored descriptors sent to remote mics, so the two can't
+// drift. `ConfirmModal` is a generic akui component and renders its own buttons, so the `Nav.*`
+// wrappers (which render the control themselves) don't apply here — the descriptors go through
+// `register`'s `control` option instead.
+const CANCEL_UNVERIFIED_LABEL = 'Cancel';
+const CONFIRM_UNVERIFIED_LABEL = 'Continue';
+
 interface Props {
   songPreview: SongPreview;
   onPlay: (setup: SingSetup & { song: SongPreview }) => void;
@@ -61,11 +68,23 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         onClose={cancelPlayUnverifiedSong}
         title="Unverified Shared Song"
         description="This shared song is unverified and might not work correctly. Continue anyway?"
-        cancelLabel="Cancel"
-        confirmLabel="Continue"
+        cancelLabel={CANCEL_UNVERIFIED_LABEL}
+        confirmLabel={CONFIRM_UNVERIFIED_LABEL}
         dataTestPrefix="unverified-shared-song-confirm"
-        cancelButtonProps={registerConfirm('cancel-play-unverified-song', cancelPlayUnverifiedSong)}
-        confirmButtonProps={registerConfirm('confirm-play-unverified-song', confirmPlayUnverifiedSong, undefined, true)}
+        cancelButtonProps={registerConfirm(
+          'cancel-play-unverified-song',
+          cancelPlayUnverifiedSong,
+          CANCEL_UNVERIFIED_LABEL,
+          false,
+          { control: { type: 'button', label: CANCEL_UNVERIFIED_LABEL, variant: 'back' } },
+        )}
+        confirmButtonProps={registerConfirm(
+          'confirm-play-unverified-song',
+          confirmPlayUnverifiedSong,
+          CONFIRM_UNVERIFIED_LABEL,
+          true,
+          { control: { type: 'button', label: CONFIRM_UNVERIFIED_LABEL, icon: 'confirm' } },
+        )}
       />
       <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
         <MicCheck className="w-full shrink-0 sm:w-2/5" />

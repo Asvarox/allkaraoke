@@ -83,6 +83,48 @@ describe('useKeyboardNav mirror mode', () => {
     expect(help.vertical).toBeNull(); // classic navigation field present
   });
 
+  it('keeps full coverage when a remote-only control is added alongside the on-screen ones', () => {
+    const { published, result } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      // Remote-only: no on-screen element, so it must not count against the coverage tally.
+      nav.register('exit', () => {}, 'Exit', false, {
+        remoteOnly: true,
+        control: { type: 'button', label: 'Exit', variant: 'back' },
+      });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([
+      { type: 'switch', name: 'graphics', label: 'Graphics', value: 'HIGH' },
+      { type: 'button', name: 'exit', label: 'Exit', variant: 'back' },
+    ]);
+    // It takes no part in on-screen navigation, so focus stays on the single real element.
+    expect(result.current.focused).toBe('graphics');
+  });
+
+  it('fires a remote-only control without moving on-screen focus onto it', () => {
+    const onExit = vitest.fn();
+    const { result } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      nav.register('exit', onExit, 'Exit', false, {
+        remoteOnly: true,
+        control: { type: 'button', label: 'Exit', variant: 'back' },
+      });
+    });
+
+    act(() => {
+      events.remoteControlActivated.dispatch('exit');
+    });
+
+    expect(onExit).toHaveBeenCalledTimes(1);
+    expect(result.current.focused).toBe('graphics');
+  });
+
   it('activates the matching control callback on remoteControlActivated', () => {
     const onGraphics = vitest.fn();
     const onCamera = vitest.fn();
