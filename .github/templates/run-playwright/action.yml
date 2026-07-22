@@ -71,17 +71,52 @@ runs:
     - name: Reset snapshot baseline to target branch
       if: inputs.updateSnapshots == 'true'
       shell: bash
-      # Untrack + delete all PNGs under inputs.snapshotDir, then restore only
-      # the ones the target branch has. Files the PR added (absent from the
-      # target branch) stay gone until Playwright re-renders them, so they
-      # always read as new - even if an earlier run on this branch already
-      # auto-committed them. Scoped to snapshotDir so unrelated directories
-      # elsewhere in the repo are never touched (see commit 5f194b5c1 for what
-      # went wrong when this matched by name alone, repo-wide).
+      # Untrack + delete only genuine Playwright snapshot PNGs under
+      # inputs.snapshotDir - paths with a "*-snapshots" or "__snapshots__"
+      # directory segment (same convention as buildDiffReport.ts's
+      # isSnapshot), unless snapshotDir already IS such a directory (e.g.
+      # __snapshots__ itself), in which case everything under it qualifies.
+      # A directory-scope-only match would still catch a stray non-snapshot
+      # .png someone adds under snapshotDir later (e.g. a test fixture image)
+      # - see commit 5f194b5c1 for what happened the last time an overly
+      # broad match touched something it shouldn't have.
+      #
+      # Files the PR added (absent from the target branch) stay gone until
+      # Playwright re-renders them, so they always read as new - even if an
+      # earlier run on this branch already auto-committed them.
+      #
+      # The checkout's expected "no match" case (target branch has no
+      # qualifying files here) is tolerated; any other failure - bad pathspec,
+      # permissions, a corrupt ref - is surfaced and fails the step.
       run: |
-        git rm -r --cached --ignore-unmatch -- ':(glob)${{ inputs.snapshotDir }}/**/*.png'
-        [ -d '${{ inputs.snapshotDir }}' ] && find '${{ inputs.snapshotDir }}' -type f -name '*.png' -exec rm -f {} + || true
-        git checkout "origin/$VISUAL_DIFF_BASE_REF" -- ':(glob)${{ inputs.snapshotDir }}/**/*.png' 2>/dev/null || true
+        SNAPSHOT_DIR='${{ inputs.snapshotDir }}'
+        case "$(basename "$SNAPSHOT_DIR")" in
+          __snapshots__|*-snapshots) IS_SNAPSHOT_ROOT=1 ;;
+          *) IS_SNAPSHOT_ROOT=0 ;;
+        esac
+
+        if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*.png")
+        else
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*-snapshots/**/*.png" ":(glob)$SNAPSHOT_DIR/**/__snapshots__/**/*.png")
+        fi
+
+        git rm -r --cached --ignore-unmatch -- "${PATTERNS[@]}"
+
+        if [ -d "$SNAPSHOT_DIR" ]; then
+          if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
+            find "$SNAPSHOT_DIR" -type f -name '*.png' -exec rm -f {} +
+          else
+            find "$SNAPSHOT_DIR" -type f -name '*.png' \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
+          fi
+        fi
+
+        if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "${PATTERNS[@]}" 2>&1); then
+          if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
+            echo "$CHECKOUT_ERR" >&2
+            exit 1
+          fi
+        fi
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
