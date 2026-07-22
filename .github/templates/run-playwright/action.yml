@@ -40,15 +40,26 @@ inputs:
       scopes the target-branch baseline reset to just this directory, so
       unrelated directories elsewhere in the repo are never touched.
     default: ''
+  snapshotSuffix:
+    required: false
+    description: >-
+      Filename suffix (including extension) that this config's snapshotPathTemplate
+      gives files actually produced by *this* CI run - e.g. '-linux.png' for
+      playwright.config.ts (this job always renders on Linux, but the repo also
+      commits '-darwin.png' snapshots from local dev machines), '-ci.png' for
+      playwright-ct.config.mts. Required when updateSnapshots is 'true' - the
+      baseline reset only touches files ending in this suffix, so it never
+      untracks/reverts a snapshot variant this job doesn't itself render.
+    default: ''
 
 runs:
   using: 'composite'
   steps:
-    - name: Validate snapshotDir is set when updating snapshots
-      if: inputs.updateSnapshots == 'true' && inputs.snapshotDir == ''
+    - name: Validate snapshotDir/snapshotSuffix are set when updating snapshots
+      if: inputs.updateSnapshots == 'true' && (inputs.snapshotDir == '' || inputs.snapshotSuffix == '')
       shell: bash
       run: |
-        echo "::error::snapshotDir input is required when updateSnapshots is 'true'."
+        echo "::error::snapshotDir and snapshotSuffix inputs are required when updateSnapshots is 'true'."
         exit 1
     # When updating snapshots, reset the baseline to the PR's target branch
     # first, so the status-based diff in commit-and-comment-snapshots always
@@ -81,6 +92,12 @@ runs:
       # - see commit 5f194b5c1 for what happened the last time an overly
       # broad match touched something it shouldn't have.
       #
+      # Also requires inputs.snapshotSuffix, since this job only ever renders
+      # one variant (e.g. Linux) while the repo may commit others (e.g.
+      # locally-rendered Darwin snapshots) side by side in the same directory
+      # - without this, resetting+not-regenerating those other variants would
+      # silently revert any legitimate update to them.
+      #
       # Files the PR added (absent from the target branch) stay gone until
       # Playwright re-renders them, so they always read as new - even if an
       # earlier run on this branch already auto-committed them.
@@ -90,33 +107,40 @@ runs:
       # permissions, a corrupt ref - is surfaced and fails the step.
       run: |
         SNAPSHOT_DIR='${{ inputs.snapshotDir }}'
+        SNAPSHOT_SUFFIX='${{ inputs.snapshotSuffix }}'
         case "$(basename "$SNAPSHOT_DIR")" in
           __snapshots__|*-snapshots) IS_SNAPSHOT_ROOT=1 ;;
           *) IS_SNAPSHOT_ROOT=0 ;;
         esac
 
         if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
-          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*.png")
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*$SNAPSHOT_SUFFIX")
         else
-          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*-snapshots/**/*.png" ":(glob)$SNAPSHOT_DIR/**/__snapshots__/**/*.png")
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*-snapshots/**/*$SNAPSHOT_SUFFIX" ":(glob)$SNAPSHOT_DIR/**/__snapshots__/**/*$SNAPSHOT_SUFFIX")
         fi
 
         git rm -r --cached --ignore-unmatch -- "${PATTERNS[@]}"
 
         if [ -d "$SNAPSHOT_DIR" ]; then
           if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
-            find "$SNAPSHOT_DIR" -type f -name '*.png' -exec rm -f {} +
+            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" -exec rm -f {} +
           else
-            find "$SNAPSHOT_DIR" -type f -name '*.png' \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
+            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
           fi
         fi
 
-        if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "${PATTERNS[@]}" 2>&1); then
-          if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
-            echo "$CHECKOUT_ERR" >&2
-            exit 1
+        # One `git checkout` call per pattern, not one call with all patterns:
+        # unlike `git rm --ignore-unmatch`, checkout fails (and restores
+        # nothing at all, not even the patterns that did match) if *any*
+        # pathspec given to it matches zero files.
+        for pattern in "${PATTERNS[@]}"; do
+          if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "$pattern" 2>&1); then
+            if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
+              echo "$CHECKOUT_ERR" >&2
+              exit 1
+            fi
           fi
-        fi
+        done
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
