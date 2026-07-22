@@ -69,10 +69,6 @@ function listChangedSnapshots(): ChangedSnapshot[] {
     maxBuffer: 32 * 1024 * 1024,
   });
 
-  // A path that goes straight from tracked+committed to untracked (e.g. via
-  // `git rm --cached`) gets reported on two separate lines: a staged deletion
-  // and a fresh untracked file. Map dedupes those into a single 'added' entry
-  // rather than two conflicting ones.
   const changed = new Map<string, Status>();
   for (const line of output.split('\n')) {
     if (!line) continue;
@@ -81,12 +77,19 @@ function listChangedSnapshots(): ChangedSnapshot[] {
     const pathPart = line.slice(3).split(' -> ').pop()!.trim().replace(/^"|"$/g, '');
     if (!isSnapshot(pathPart)) continue;
 
-    let status: Status = 'modified';
-    if (code === '??' || code.includes('A')) status = 'added';
-    else if (code.includes('D')) status = 'removed';
+    // Only the worktree column (Y) reflects an actual diff against the index
+    // - which the CI sync step resets to the target branch before Playwright
+    // runs. The staged column (X) just reflects that reset's index-vs-HEAD
+    // noise: e.g. "M " means the index was rewritten to the target branch's
+    // content, but the fresh render still matches it - not a real change.
+    const worktreeStatus = code === '??' ? '?' : code[1];
+    if (worktreeStatus === ' ' || worktreeStatus === undefined) continue;
 
-    const existing = changed.get(pathPart);
-    changed.set(pathPart, existing && existing !== status ? 'added' : status);
+    let status: Status = 'modified';
+    if (worktreeStatus === '?') status = 'added';
+    else if (worktreeStatus === 'D') status = 'removed';
+
+    changed.set(pathPart, status);
   }
 
   return Array.from(changed, ([path, status]) => ({ path, status })).sort((a, b) => a.path.localeCompare(b.path));
