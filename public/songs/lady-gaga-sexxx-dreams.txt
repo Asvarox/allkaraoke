@@ -1,0 +1,522 @@
+#ARTIST:Lady Gaga
+#TITLE:Sexxx Dreams
+#CREATOR:LittleK.
+#BPM:228,22
+#YEAR:2013
+#VIDEO:v=_701WL_azrY
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:3284,109192884059
+#ALLKARAOKE_ID:lady-gaga-sexxx-dreams
+#ALLKARAOKE_SID:6034
+#ALLKARAOKE_LASTUPDATE:2026-07-22T01:56:14.043Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=871
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=17677
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:215
+#MP3:Lady Gaga - Sexxx Dreams.mp3
+F 15 4 0 Last 
+F 22 4 0 night
+- 26 30
+- 30
+: 45 7 0 Our 
+: 55 3 2 lo
+: 59 6 0 vers 
+: 68 11 3 quarrel
+- 79 92
+- 92
+F 107 2 0 I 
+F 110 1 0 was 
+F 112 1 0 thin
+F 115 1 0 king 
+F 117 1 0 a
+F 119 2 0 bout 
+F 122 4 0 you
+- 126
+* 136 9 0 Hurts
+- 145 161
+- 161
+: 176 5 5 More 
+: 183 2 3 than 
+: 187 5 2 I 
+: 194 4 0 can 
+: 201 13 3 say
+- 214
+F 221 1 0 And 
+F 224 2 0 it 
+F 228 6 0 was 
+F 248 2 0 kind 
+F 252 2 0 of 
+F 256 2 0 dir
+F 260 4 0 ty
+- 264
+: 272 6 0 All 
+: 280 12 2 night
+- 292
+F 307 1 0 And 
+F 309 1 0 the 
+F 312 2 0 way 
+F 316 1 0 that 
+F 318 1 0 you 
+F 320 2 0 looked 
+F 324 2 0 at 
+F 328 4 0 me
+- 332
+: 335 6 7 Help 
+: 343 2 8 me 
+: 347 7 7 here
+: 356 4 5 ~
+- 360
+F 370 1 0 It 
+F 373 1 0 was 
+F 376 2 0 kind 
+F 380 2 0 of 
+F 384 2 0 nas
+F 388 2 0 ty 
+F 392 4 0 oh
+- 396
+* 399 5 0 Help 
+: 406 3 0 me 
+: 411 7 0 here
+: 420 4 -2 ~
+- 424
+: 435 1 7 It 
+: 437 2 7 was 
+: 440 3 7 kind 
+: 444 2 7 of 
+: 448 2 7 tra
+: 452 4 7 shy
+- 456
+: 459 2 0 Cause 
+: 464 3 12 I 
+: 469 4 10 can’t 
+: 476 4 6 help 
+: 484 5 5 my 
+: 491 6 7 mind 
+: 500 5 5 from 
+: 508 5 3 go
+: 516 5 10 ing 
+: 524 2 10 there
+: 528 7 12 ~
+- 535
+: 536 2 7 Heard 
+: 540 2 5 your 
+: 544 2 7 boy
+: 548 2 5 friend 
+: 552 2 7 was 
+: 556 2 5 a
+: 560 3 7 way 
+: 565 5 7 this 
+: 572 6 7 week
+: 580 8 0 end
+- 588
+: 592 2 0 Wan
+: 596 2 -2 na 
+: 600 2 0 meet 
+: 604 2 -2 at 
+: 608 5 0 my 
+* 616 12 2 place
+- 628 640
+- 640
+: 655 3 7 Heard 
+: 660 2 5 that 
+: 664 2 7 we 
+: 668 2 5 both 
+: 672 5 7 got 
+: 679 6 7 no
+: 687 5 7 thing 
+: 695 2 7 to 
+: 699 2 7 do
+: 703 9 5 ~
+- 712
+: 724 2 0 When 
+: 727 1 0 I 
+: 729 2 0 lay 
+: 732 3 0 in 
+* 736 2 0 bed 
+: 740 2 0 I 
+: 744 3 0 touch 
+: 749 1 -2 my
+: 751 4 -2 self 
+: 756 1 -2 and 
+: 758 3 -2 think 
+: 762 1 0 of 
+: 764 8 0 you
+- 772
+: 776 6 0 Last 
+: 784 7 -2 night
+- 791 801
+- 801
+: 816 2 2 Damn 
+: 820 1 2 you 
+: 822 1 2 were 
+: 824 1 2 in 
+: 827 2 -2 my 
+* 831 7 -2 sex 
+: 840 9 2 dreams
+- 849 865
+- 865
+: 880 2 0 Do
+: 884 1 0 ing 
+: 886 3 0 real
+: 891 2 0 ly 
+: 895 2 0 nas
+: 899 2 -2 ty 
+: 903 8 -2 things
+- 911 929
+- 929
+: 944 2 0 Damn 
+: 947 2 2 you 
+: 950 1 2 were 
+: 952 2 2 in 
+: 956 2 -2 my 
+: 960 6 -2 sex 
+: 968 9 2 dreams
+- 977 992
+- 992
+: 1007 1 -2 Ma
+: 1009 1 0 king 
+: 1012 2 0 love 
+: 1016 2 0 in 
+: 1020 2 2 my 
+: 1024 2 0 sex 
+* 1028 8 -2 dreams
+- 1036
+: 1049 14 3 We 
+: 1068 18 2 could 
+: 1096 3 0 be 
+* 1101 12 -5 caught
+- 1113 1122
+- 1122
+F 1137 2 0 Want 
+F 1140 3 0 this 
+F 1146 1 0 to 
+F 1148 2 0 be 
+F 1152 2 0 per
+F 1155 3 0 fect
+- 1158
+: 1164 2 -5 We’re 
+: 1169 5 5 both 
+: 1177 4 3 con
+: 1184 5 5 vic
+: 1192 6 3 ted 
+: 1201 2 5 cri
+: 1205 4 3 mi
+: 1212 6 2 nals 
+: 1221 5 0 of 
+: 1228 13 3 thought
+- 1241
+F 1251 3 0 ’Cause 
+F 1255 6 0 I’m 
+F 1280 3 0 bro
+F 1285 4 0 ken
+- 1289
+: 1296 27 3 Let’s 
+: 1328 22 2 white 
+: 1361 3 7 glove 
+: 1367 3 8 the 
+: 1373 7 7 bed
+: 1382 3 5 ~
+- 1385
+F 1396 1 0 He 
+F 1398 2 0 was 
+F 1402 2 0 kin
+F 1405 1 0 da 
+F 1408 2 0 nas
+F 1412 2 0 ty 
+F 1416 3 0 oh
+- 1419
+: 1425 4 0 Help 
+* 1431 4 0 me 
+: 1437 7 0 here
+: 1446 4 -2 ~
+- 1450
+: 1460 1 6 And 
+: 1462 1 8 I 
+: 1464 2 8 feel 
+: 1468 2 8 so 
+: 1472 2 8 tra
+: 1476 4 8 shy
+- 1480
+: 1481 2 0 Cause 
+: 1485 2 0 we 
+* 1489 4 12 can’t 
+: 1495 3 10 hide 
+: 1500 6 7 the 
+: 1509 6 5 e
+: 1517 5 7 vi
+: 1524 8 5 dence 
+: 1534 4 3 in 
+: 1541 5 10 our 
+: 1548 2 10 heads
+: 1552 7 12 ~
+- 1559
+: 1560 2 7 Heard 
+: 1564 2 5 your 
+: 1568 2 7 boy
+: 1572 2 5 friend 
+: 1576 3 7 was 
+: 1581 2 5 a
+: 1585 2 7 way 
+: 1589 5 7 this 
+: 1597 6 7 week
+: 1605 7 0 end
+- 1612
+: 1616 2 0 Wan
+: 1620 2 -2 na 
+: 1624 3 0 meet 
+: 1629 2 -2 at 
+: 1633 4 0 my 
+: 1640 11 2 place
+- 1651 1666
+- 1666
+: 1681 2 7 Heard 
+: 1685 2 5 that 
+: 1689 2 7 we 
+: 1693 2 5 both 
+: 1697 5 7 got 
+: 1705 6 7 no
+: 1713 5 7 thing 
+: 1721 2 8 to 
+: 1725 2 7 do
+: 1729 9 5 ~
+- 1738
+: 1749 1 0 When 
+: 1751 1 0 I 
+: 1753 2 0 lay 
+: 1757 2 0 in 
+: 1761 2 0 bed 
+: 1765 2 0 I 
+: 1769 2 0 touch 
+: 1773 2 0 my
+: 1777 2 -2 self 
+: 1781 1 -2 and 
+* 1783 2 -2 think 
+: 1787 1 0 of 
+: 1789 7 0 you
+- 1796
+: 1801 6 0 Last 
+* 1809 8 -2 night
+- 1817 1826
+- 1826
+: 1841 2 2 Damn 
+: 1844 1 2 you 
+: 1846 2 2 were 
+: 1849 2 2 in 
+: 1853 2 -2 my 
+: 1857 6 -2 sex 
+: 1865 10 2 dreams
+- 1875 1890
+- 1890
+: 1905 2 0 Do
+: 1908 1 0 ing 
+: 1910 3 0 real
+: 1915 3 0 ly 
+: 1920 3 0 nas
+: 1925 2 -2 ty 
+: 1929 8 -2 things
+- 1937 1954
+- 1954
+* 1969 2 0 Damn 
+: 1973 1 2 you 
+: 1975 1 2 were 
+: 1977 2 2 in 
+: 1981 2 -2 my 
+: 1985 6 -2 sex 
+: 1993 9 2 dreams
+- 2002 2017
+- 2017
+: 2032 1 -4 Ma
+: 2034 1 0 king 
+: 2036 3 0 love 
+: 2041 2 0 in 
+: 2045 2 2 my 
+: 2049 2 0 sex 
+: 2053 8 -2 dreams
+- 2061 2081
+- 2081
+: 2096 2 -2 Ma
+: 2099 1 0 king 
+: 2101 3 0 love 
+: 2105 2 0 in 
+: 2109 2 2 my 
+: 2113 2 0 sex 
+: 2117 9 -2 dreams
+- 2126 2145
+- 2145
+: 2160 2 -2 Ma
+: 2163 1 0 king 
+: 2165 3 0 love 
+: 2169 2 0 in 
+: 2173 2 2 my 
+: 2177 2 0 sex 
+: 2181 9 -2 dreams
+- 2190 2209
+- 2209
+: 2224 2 -2 Ma
+: 2227 1 0 king 
+: 2229 3 0 love 
+: 2233 2 0 in 
+: 2237 2 2 my 
+: 2241 2 0 sex 
+: 2245 9 -2 dreams
+- 2254
+: 2255 1 -7 To
+: 2257 1 -4 mor
+: 2259 1 -4 row 
+: 2261 2 -4 when 
+* 2265 2 -4 I 
+: 2269 1 -4 run 
+: 2272 2 -4 in
+: 2275 1 -2 to 
+: 2277 6 -2 you
+- 2283
+: 2287 1 5 To
+: 2289 1 8 mor
+: 2291 1 8 row 
+: 2293 2 8 when 
+: 2297 2 8 I 
+: 2301 1 8 run 
+: 2304 2 8 in
+: 2307 1 10 to 
+: 2309 6 10 you
+- 2315
+: 2321 2 0 You 
+: 2325 1 0 could 
+: 2327 2 0 turn 
+: 2331 1 0 a 
+* 2333 8 7 stone
+- 2341
+: 2342 5 0 Or 
+: 2349 2 2 the 
+: 2353 2 2 co
+: 2357 1 -2 lour 
+: 2360 10 -2 of
+- 2370
+: 2380 1 0 A 
+: 2382 3 3 man 
+: 2386 3 2 pet
+: 2390 1 0 ri
+: 2392 7 0 fied
+- 2399 2402
+- 2402
+: 2417 5 0 By 
+: 2425 5 2 a 
+: 2433 6 3 wo
+: 2441 4 7 man
+- 2445
+* 2446 2 7 In 
+: 2450 2 0 love 
+: 2454 1 0 as 
+: 2456 3 0 I 
+: 2461 6 7 am 
+: 2469 6 7 when 
+: 2477 3 7 I 
+: 2482 2 6 lay 
+: 2486 2 5 with 
+: 2490 10 0 you
+- 2500
+: 2509 3 -2 I 
+: 2514 2 -1 think 
+: 2518 1 0 of 
+* 2520 8 0 him
+- 2528
+: 2541 3 -2 I 
+: 2546 3 -1 think 
+: 2550 1 0 of 
+: 2552 10 0 him
+- 2562
+F 2576 1 0 I 
+F 2579 1 0 can’t 
+F 2582 1 0 be
+F 2584 1 0 lieve 
+F 2586 1 0 I’m 
+F 2588 1 0 tel
+F 2590 1 0 ling 
+F 2592 1 0 you 
+F 2594 1 0 this
+- 2595
+F 2598 1 0 But 
+F 2600 1 0 I’ve 
+F 2602 1 0 had 
+F 2604 1 0 a 
+F 2606 1 0 cou
+F 2608 1 0 ple 
+F 2610 3 0 drinks 
+F 2614 4 0 and 
+F 2619 1 0 oh 
+F 2621 1 0 my 
+F 2623 5 0 god
+- 2628
+* 2634 5 0 Last 
+: 2642 8 -2 night
+- 2650 2659
+- 2659
+: 2674 2 2 Damn 
+: 2677 1 2 you 
+: 2679 2 2 were 
+: 2682 2 2 in 
+: 2686 2 -2 my 
+: 2690 5 -2 sex 
+: 2698 9 2 dreams
+- 2707 2723
+- 2723
+: 2738 3 0 Do
+: 2742 1 0 ing 
+: 2744 3 0 real
+: 2749 3 0 ly 
+: 2754 2 0 nas
+: 2758 2 -2 ty 
+: 2762 8 -2 things
+- 2770 2788
+- 2788
+: 2803 2 0 Damn 
+: 2806 1 2 you 
+: 2808 1 2 were 
+: 2810 2 2 in 
+: 2814 2 -2 my 
+: 2818 6 -2 sex 
+: 2827 9 2 dreams
+- 2836 2875
+- 2875
+: 2890 5 0 Last 
+* 2898 8 -2 night
+- 2906 2916
+- 2916
+: 2931 2 2 Damn 
+: 2934 1 2 you 
+: 2936 1 2 were 
+: 2938 2 2 in 
+: 2942 2 -2 my 
+: 2946 7 -2 sex 
+: 2955 9 2 dreams
+- 2964 2979
+- 2979
+* 2994 3 0 Do
+: 2998 1 0 ing 
+: 3000 4 0 real
+: 3006 2 0 ly 
+: 3010 2 0 nas
+: 3014 2 -2 ty 
+: 3018 8 -2 things
+- 3026 3043
+- 3043
+: 3058 2 0 Damn 
+: 3061 1 2 you 
+: 3063 1 2 were 
+: 3066 3 1 in 
+: 3071 1 -2 my 
+: 3074 7 -2 sex 
+: 3083 10 2 dreams
+- 3093 3107
+- 3107
+: 3122 1 -2 Ma
+: 3124 1 0 king 
+: 3126 2 0 love 
+: 3130 2 0 in 
+: 3134 2 2 my 
+* 3138 2 0 sex 
+* 3142 9 -2 dreams
+E

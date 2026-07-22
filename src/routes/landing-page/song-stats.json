@@ -48,11 +48,11 @@
     "George Michael",
     "INXS",
     "Paramore",
+    "Radiohead",
     "The Weeknd",
     "Breaking Benjamin",
     "Marilyn Manson",
     "Metallica",
-    "Radiohead",
     "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
@@ -99,6 +99,7 @@
     "Electric Light Orchestra",
     "Elvis Presley",
     "Groove Coverage",
+    "Justin Bieber",
     "Lorde",
     "★N Sync",
     "Nickelback",
@@ -144,7 +145,6 @@
     "Hilary Duff",
     "HIM",
     "Huey Lewis & The News",
-    "Justin Bieber",
     "Lewis Capaldi",
     "Little Mix",
     "Nelly Furtado",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6015
+  "songs": 6035
 }
