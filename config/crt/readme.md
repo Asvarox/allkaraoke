@@ -1,14 +1,18 @@
 # Certificates
 
-Some browser APIs (like WebRTC used for RemoteMics) require a site to be served with an SSL (especially when not using
-localhost as the address, e.g. on a mobile phone), this file describes how to set it up locally.
+These are only used by the **opt-in** HTTPS dev mode (`pnpm start:https`). The default `pnpm start` serves plain HTTP on
+`localhost`, which browsers already treat as a secure context - no certificate needed.
+
+HTTPS mode exists for opening the dev server from another device (e.g. a phone used as a remote mic). Such a device
+reaches the app via the LAN IP, which is not a secure context, so APIs like `getUserMedia` would otherwise be blocked.
 
 There are 2 types of certificates
 
 ## Development certificate
 
-This one you need to generate by yourself and add it to the trusted certificates on your computer. This allows a service
-worker to be registered locally.
+This one you need to generate by yourself and add it to the trusted certificates on your computer. It removes the
+certificate warning shown in HTTPS mode - otherwise a self-signed dummy certificate is used and you have to click
+through the warning on every device.
 
 It is not pre-generated and committed as it's probably not safe to trust such "publicly" available certs.
 
@@ -31,11 +35,11 @@ openssl req \
 ```
 
 2. Add `server.pem` to trusted certificates (Keychain App on MacOS)
-3. Run the app
+3. Run the app with `pnpm start:https`
 
 ## Dummy certificate
 
-Used to run the app and PeerJS server (that handles setting up connection between the game and remote mic) for E2E tests.
-Otherwise, PeerJS server doesn't offer SSL and the app remote mics aren't able to connect.
+Used by the PeerJS server (that handles setting up connection between the game and remote mic), and as the fallback for
+HTTPS mode when no development certificate has been generated.
 
 It is pre-generated for convenience and as such it shouldn't be trusted.
