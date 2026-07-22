@@ -7,14 +7,20 @@ import { decodePng, writePng } from './pngIo';
 
 /**
  * Builds a visual-diff thumbnail report for snapshots changed in the working
- * tree (relative to HEAD). For each changed snapshot it writes the old, new and
- * diff PNGs into a per-image folder under {@link OUTPUT_DIR}, plus a
+ * tree (relative to the index). For each changed snapshot it writes the old,
+ * new and diff PNGs into a per-image folder under {@link OUTPUT_DIR}, plus a
  * `report.json` describing them. The report is only populated when fewer than
  * {@link MAX_THUMBNAILS} snapshots changed — beyond that a gallery is noise.
  *
  * Meant to run in CI right after `playwright test -u`, before the snapshots are
  * committed. The output lives under `test-results/` (gitignored), so it is never
  * committed and can be uploaded to a static host and linked from the PR comment.
+ *
+ * The index is expected to already hold the PR's target branch's snapshots at
+ * this point (see the 'Reset snapshot baseline to target branch' CI step that
+ * runs before Playwright), so the "old" image here is the target branch's
+ * version - not just whatever a previous CI run on this branch happened to
+ * auto-commit.
  */
 
 /** Show thumbnails only when strictly fewer than this many snapshots changed. */
@@ -56,14 +62,14 @@ interface Report {
 const isSnapshot = (path: string) =>
   path.endsWith('.png') && (path.includes('-snapshots/') || path.includes('__snapshots__/'));
 
-/** Lists snapshot PNGs that differ from HEAD in the working tree. */
+/** Lists snapshot PNGs that differ from the index in the working tree. */
 function listChangedSnapshots(): ChangedSnapshot[] {
   const output = execFileSync('git', ['status', '--porcelain', '--untracked-files=all'], {
     encoding: 'utf8',
     maxBuffer: 32 * 1024 * 1024,
   });
 
-  const changed: ChangedSnapshot[] = [];
+  const changed = new Map<string, Status>();
   for (const line of output.split('\n')) {
     if (!line) continue;
     const code = line.slice(0, 2);
@@ -71,20 +77,28 @@ function listChangedSnapshots(): ChangedSnapshot[] {
     const pathPart = line.slice(3).split(' -> ').pop()!.trim().replace(/^"|"$/g, '');
     if (!isSnapshot(pathPart)) continue;
 
-    let status: Status = 'modified';
-    if (code === '??' || code.includes('A')) status = 'added';
-    else if (code.includes('D')) status = 'removed';
+    // Only the worktree column (Y) reflects an actual diff against the index
+    // - which the CI sync step resets to the target branch before Playwright
+    // runs. The staged column (X) just reflects that reset's index-vs-HEAD
+    // noise: e.g. "M " means the index was rewritten to the target branch's
+    // content, but the fresh render still matches it - not a real change.
+    const worktreeStatus = code === '??' ? '?' : code[1];
+    if (worktreeStatus === ' ' || worktreeStatus === undefined) continue;
 
-    changed.push({ path: pathPart, status });
+    let status: Status = 'modified';
+    if (worktreeStatus === '?') status = 'added';
+    else if (worktreeStatus === 'D') status = 'removed';
+
+    changed.set(pathPart, status);
   }
 
-  return changed.sort((a, b) => a.path.localeCompare(b.path));
+  return Array.from(changed, ([path, status]) => ({ path, status })).sort((a, b) => a.path.localeCompare(b.path));
 }
 
-/** Reads a file's committed contents at HEAD (the "before" snapshot), or null. */
-function readAtHead(path: string): Buffer | null {
+/** Reads a file's staged (index) contents (the "before" snapshot), or null. */
+function readFromIndex(path: string): Buffer | null {
   try {
-    return execFileSync('git', ['show', `HEAD:${path}`], {
+    return execFileSync('git', ['show', `:${path}`], {
       maxBuffer: 64 * 1024 * 1024,
       stdio: ['ignore', 'pipe', 'ignore'],
     });
@@ -127,7 +141,7 @@ function main(): void {
       const entryDir = join(OUTPUT_DIR, String(index));
       mkdirSync(entryDir, { recursive: true });
 
-      const oldBuffer = snapshot.status === 'added' ? null : readAtHead(snapshot.path);
+      const oldBuffer = snapshot.status === 'added' ? null : readFromIndex(snapshot.path);
       const newBuffer = snapshot.status === 'removed' ? null : readWorkingTree(snapshot.path);
 
       const entry: ReportEntry = {

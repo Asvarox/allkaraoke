@@ -31,10 +31,116 @@ inputs:
     required: false
     description: 'Skip tests matching this pattern/tag (--grep-invert)'
     default: ''
+  snapshotDir:
+    required: false
+    description: >-
+      Repo-relative path to this config's Playwright snapshot directory (e.g.
+      'tests' for playwright.config.ts, '__snapshots__' for
+      playwright-ct.config.mts). Required when updateSnapshots is 'true' -
+      scopes the target-branch baseline reset to just this directory, so
+      unrelated directories elsewhere in the repo are never touched.
+    default: ''
+  snapshotSuffix:
+    required: false
+    description: >-
+      Filename suffix (including extension) that this config's snapshotPathTemplate
+      gives files actually produced by *this* CI run - e.g. '-linux.png' for
+      playwright.config.ts (this job always renders on Linux, but the repo also
+      commits '-darwin.png' snapshots from local dev machines), '-ci.png' for
+      playwright-ct.config.mts. Required when updateSnapshots is 'true' - the
+      baseline reset only touches files ending in this suffix, so it never
+      untracks/reverts a snapshot variant this job doesn't itself render.
+    default: ''
 
 runs:
   using: 'composite'
   steps:
+    - name: Validate snapshotDir/snapshotSuffix are set when updating snapshots
+      if: inputs.updateSnapshots == 'true' && (inputs.snapshotDir == '' || inputs.snapshotSuffix == '')
+      shell: bash
+      run: |
+        echo "::error::snapshotDir and snapshotSuffix inputs are required when updateSnapshots is 'true'."
+        exit 1
+    # When updating snapshots, reset the baseline to the PR's target branch
+    # first, so the status-based diff in commit-and-comment-snapshots always
+    # reflects the full diff against the target branch, not just the change
+    # since the last time this job auto-committed snapshots to the PR branch.
+    - name: Fetch target branch for visual diff baseline
+      if: inputs.updateSnapshots == 'true'
+      shell: bash
+      # Explicit destination refspec so this always lands in refs/remotes/origin/<base-ref>,
+      # regardless of the checkout's fetch-depth or configured refspecs. Some
+      # callers run this inside a container before anything else has told git
+      # to trust the checked-out workspace, hence the safe.directory config.
+      # Falls back to the repo's default branch (master) when github.base_ref
+      # is empty, e.g. if this action is ever invoked outside a pull_request.
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        BASE_REF="${{ github.base_ref }}"
+        echo "VISUAL_DIFF_BASE_REF=${BASE_REF:-master}" >> "$GITHUB_ENV"
+        git fetch --depth=1 origin "${BASE_REF:-master}:refs/remotes/origin/${BASE_REF:-master}"
+    - name: Reset snapshot baseline to target branch
+      if: inputs.updateSnapshots == 'true'
+      shell: bash
+      # Untrack + delete only genuine Playwright snapshot PNGs under
+      # inputs.snapshotDir - paths with a "*-snapshots" or "__snapshots__"
+      # directory segment (same convention as buildDiffReport.ts's
+      # isSnapshot), unless snapshotDir already IS such a directory (e.g.
+      # __snapshots__ itself), in which case everything under it qualifies.
+      # A directory-scope-only match would still catch a stray non-snapshot
+      # .png someone adds under snapshotDir later (e.g. a test fixture image)
+      # - see commit 5f194b5c1 for what happened the last time an overly
+      # broad match touched something it shouldn't have.
+      #
+      # Also requires inputs.snapshotSuffix, since this job only ever renders
+      # one variant (e.g. Linux) while the repo may commit others (e.g.
+      # locally-rendered Darwin snapshots) side by side in the same directory
+      # - without this, resetting+not-regenerating those other variants would
+      # silently revert any legitimate update to them.
+      #
+      # Files the PR added (absent from the target branch) stay gone until
+      # Playwright re-renders them, so they always read as new - even if an
+      # earlier run on this branch already auto-committed them.
+      #
+      # The checkout's expected "no match" case (target branch has no
+      # qualifying files here) is tolerated; any other failure - bad pathspec,
+      # permissions, a corrupt ref - is surfaced and fails the step.
+      run: |
+        SNAPSHOT_DIR='${{ inputs.snapshotDir }}'
+        SNAPSHOT_SUFFIX='${{ inputs.snapshotSuffix }}'
+        case "$(basename "$SNAPSHOT_DIR")" in
+          __snapshots__|*-snapshots) IS_SNAPSHOT_ROOT=1 ;;
+          *) IS_SNAPSHOT_ROOT=0 ;;
+        esac
+
+        if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*$SNAPSHOT_SUFFIX")
+        else
+          PATTERNS=(":(glob)$SNAPSHOT_DIR/**/*-snapshots/**/*$SNAPSHOT_SUFFIX" ":(glob)$SNAPSHOT_DIR/**/__snapshots__/**/*$SNAPSHOT_SUFFIX")
+        fi
+
+        git rm -r --cached --ignore-unmatch -- "${PATTERNS[@]}"
+
+        if [ -d "$SNAPSHOT_DIR" ]; then
+          if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
+            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" -exec rm -f {} +
+          else
+            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
+          fi
+        fi
+
+        # One `git checkout` call per pattern, not one call with all patterns:
+        # unlike `git rm --ignore-unmatch`, checkout fails (and restores
+        # nothing at all, not even the patterns that did match) if *any*
+        # pathspec given to it matches zero files.
+        for pattern in "${PATTERNS[@]}"; do
+          if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "$pattern" 2>&1); then
+            if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
+              echo "$CHECKOUT_ERR" >&2
+              exit 1
+            fi
+          fi
+        done
     - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'

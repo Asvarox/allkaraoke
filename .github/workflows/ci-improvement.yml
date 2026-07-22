@@ -110,6 +110,8 @@ jobs:
         with:
           config: 'playwright-ct.config.mts'
           updateSnapshots: 'true'
+          snapshotDir: '__snapshots__' # per playwright-ct.config.mts's snapshotDir
+          snapshotSuffix: '-ci.png' # per playwright-ct.config.mts's snapshotPathTemplate
       - name: Commit snapshots and comment with diff thumbnails
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/commit-and-comment-snapshots'
@@ -152,6 +154,8 @@ jobs:
           config: 'playwright.config.ts'
           grep: '@visual'
           updateSnapshots: 'true'
+          snapshotDir: 'tests' # per playwright.config.ts's testDir
+          snapshotSuffix: '-linux.png' # this job always renders in the Linux Playwright container
       - name: Commit snapshots and comment with diff thumbnails
         uses: './.github/templates/commit-and-comment-snapshots'
         with:
