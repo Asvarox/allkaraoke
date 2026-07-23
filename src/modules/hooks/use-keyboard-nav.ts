@@ -119,6 +119,17 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
   let defaultSelection = '';
 
+  // The nearest registered (non-disabled, non-decorative) neighbours of the current selection, by
+  // registration order — not the wrap-around order `handleNavigation` uses, since a menu's "glow"
+  // effect (Menu.tsx / index.css `menu-neighbour-glow`) shouldn't visually link the last item back
+  // to the first. `null` at either end of the list, same as `elementList.current`'s own boundaries.
+  const selectedIndex = currentlySelected ? elementList.current.indexOf(currentlySelected) : -1;
+  const previousFocusableName = selectedIndex > 0 ? elementList.current[selectedIndex - 1] : null;
+  const nextFocusableName =
+    selectedIndex !== -1 && selectedIndex < elementList.current.length - 1
+      ? elementList.current[selectedIndex + 1]
+      : null;
+
   const register = (
     name: string,
     onActive: (e?: Event) => void,
@@ -156,7 +167,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       [propName]: onActive,
       $keyboardNavigationChangeFocus: handleNavigation,
       'data-test': name,
-      ...(enabled ? { 'data-focused': focused, 'data-e2e-focused': focused } : {}),
+      ...(enabled
+        ? {
+            'data-focused': focused,
+            'data-e2e-focused': focused,
+            'data-next-focusable': name === nextFocusableName,
+            'data-previous-focusable': name === previousFocusableName,
+          }
+        : {}),
     };
   };
 
