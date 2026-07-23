@@ -59,6 +59,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     enabled: isConfirmModalOpen,
     onBackspace: cancelPlayUnverifiedSong,
     direction: 'horizontal',
+    title: 'Unverified Shared Song',
   });
 
   return (

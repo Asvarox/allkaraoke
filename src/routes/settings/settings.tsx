@@ -25,7 +25,7 @@ function Settings() {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu/');
 
-  const { register } = useKeyboardNav({ onBackspace: goBack });
+  const { register } = useKeyboardNav({ onBackspace: goBack, title: 'Settings' });
 
   const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
   const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);

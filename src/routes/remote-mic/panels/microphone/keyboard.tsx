@@ -2,6 +2,7 @@ import {
   ArrowBack,
   ArrowForward,
   Games,
+  Keyboard,
   KeyboardArrowDown,
   KeyboardArrowLeft,
   KeyboardArrowRight,
@@ -9,7 +10,7 @@ import {
   Shuffle,
 } from '@mui/icons-material';
 import { captureException } from '@sentry/react';
-import { ComponentProps } from 'react';
+import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
 
@@ -78,13 +79,96 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 // There's no injected "Back" button here: the mirrored screen must include its own back control
 // (e.g. Options' "Return To Main Menu", marked `variant="back"`) as one of its regular controls,
 // same as it would on-screen — no separate/duplicated back affordance to keep in sync.
-function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
+//
+// A fixed header (keyboard glyph + the mirrored screen's `title`) sits above a scrollable control
+// column. The column fills the space the panel gives it (see the `flex`/`min-h-0` chain up through
+// microphone.tsx) and is the single scroll region, so long menus stay reachable above the bottom tab
+// bar without the whole panel scrolling; top/bottom shadows fade in to signal more content off-edge.
+export function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   const controls = keyboard.controls ?? [];
   return (
-    <div data-test="remote-keyboard" data-mode="mirror" className="flex w-full flex-col gap-3">
-      {controls.map((control) => (
-        <RemoteControl key={control.name} control={control} onActivate={onActivateControl} />
-      ))}
+    <div data-test="remote-keyboard" data-mode="mirror" className="flex h-full min-h-0 w-full flex-col gap-3">
+      {keyboard.title && (
+        <div
+          data-test="remote-keyboard-header"
+          className="text-active flex shrink-0 items-center justify-center gap-2 text-lg font-bold landscape:hidden">
+          <Keyboard className="text-xl!" />
+          <span className="min-w-0 truncate">{keyboard.title}</span>
+        </div>
+      )}
+      <ScrollShadowColumn className="flex-1">
+        {controls.map((control) => (
+          <RemoteControl key={control.name} control={control} onActivate={onActivateControl} />
+        ))}
+      </ScrollShadowColumn>
+    </div>
+  );
+}
+
+// Tracks whether a vertical scroll container is scrolled away from its top / bottom edge, so callers
+// can reveal directional affordances. Mirrors AKUI Selector's `useScrollArrows`, but on the Y axis.
+// Observes the content wrapper (not just the viewport) so adding/removing controls re-evaluates too.
+function useVerticalScrollShadows(
+  scrollRef: React.RefObject<HTMLElement | null>,
+  contentRef: React.RefObject<HTMLElement | null>,
+) {
+  const [showTop, setShowTop] = useState(false);
+  const [showBottom, setShowBottom] = useState(false);
+
+  const update = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setShowTop(el.scrollTop > 1);
+    setShowBottom(el.scrollTop + el.clientHeight < el.scrollHeight - 1);
+  }, [scrollRef]);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    update();
+    el.addEventListener('scroll', update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    if (contentRef.current) ro.observe(contentRef.current);
+    return () => {
+      el.removeEventListener('scroll', update);
+      ro.disconnect();
+    };
+  }, [scrollRef, contentRef, update]);
+
+  return { showTop, showBottom };
+}
+
+// A vertical scroll container with a soft shadow at whichever edge has more content out of view.
+// Sizes itself via flex (`className` controls its share of the parent) rather than a fixed height,
+// so it's the ONLY scroll region — the surrounding phone panel stays put, no nested/double scrolling.
+function ScrollShadowColumn({ children, className }: PropsWithChildren<{ className?: string }>) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const { showTop, showBottom } = useVerticalScrollShadows(scrollRef, contentRef);
+
+  return (
+    <div className={twMerge('relative flex min-h-0 flex-col', className)}>
+      {/* The mirror keyboard is only single-column in portrait, so the shadows bleed past the panel's
+          `px-4` (`-left-4 -right-4`) to span the full screen width; in landscape (two columns) they're
+          hidden entirely (`landscape:hidden`). */}
+      <div
+        className="pointer-events-none absolute top-0 -right-4 -left-4 z-10 h-8 bg-gradient-to-b from-black/70 to-transparent transition-opacity duration-150 landscape:hidden"
+        style={{ opacity: showTop ? 1 : 0 }}
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -right-4 bottom-0 -left-4 z-10 h-8 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-150 landscape:hidden"
+        style={{ opacity: showBottom ? 1 : 0 }}
+        aria-hidden="true"
+      />
+      <div
+        ref={scrollRef}
+        className="min-h-0 flex-1 [scrollbar-width:none] overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <div ref={contentRef} className="flex flex-col gap-3">
+          {children}
+        </div>
+      </div>
     </div>
   );
 }

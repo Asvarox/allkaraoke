@@ -31,6 +31,8 @@ export type HelpEntry = RegularHelpEntry & {
   mode?: KeyboardLayoutMode;
   remote?: remoteActions[];
   controls?: ControlDescriptor[];
+  /** Human-readable name of the mirrored screen, shown as the header above the remote-mic keyboard. */
+  title?: string;
 };
 
 type KeyboardsList = Record<string, HelpEntry>;
@@ -72,7 +74,9 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
     RemoteMicServer.publish('keyboard-layout', help);
   }, [name, help]);
 
-  const { mode, remote, controls, ...rest } = help ?? {};
+  // `title` is metadata for the remote-mic header only — keep it out of `rest` so it never leaks
+  // into the on-screen `KeyboardHelpView` (nor inflates its `hasContent` check).
+  const { mode, remote, controls, title, ...rest } = help ?? {};
 
   const hasContent = !!Object.values(rest).length;
 

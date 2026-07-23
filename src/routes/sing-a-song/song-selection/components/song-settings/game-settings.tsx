@@ -89,6 +89,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     enabled: keyboardControl && !showModal,
     onBackspace: onExitKeyboardControl,
     additionalHelp: { remote: ['select-song'] },
+    title: 'Song Settings',
   });
 
   return (
@@ -162,7 +163,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
             out of this screen once mirrored. */}
         <NavRemoteControl
           name="exit-song-settings"
-          control={{ type: 'button', label: 'Sing a song', variant: 'back' }}
+          control={{ type: 'button', label: 'Back to song list', variant: 'back' }}
           onClick={onExitKeyboardControl}
         />
       </KeyboardNavContext>
