@@ -4,7 +4,7 @@ import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import { RegisterFunc, useRegister } from '~/modules/hooks/use-keyboard-nav';
-import { ButtonVariant, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
+import { ButtonVariant, ControlInput, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 
 /**
  * `Nav.*` — single-source-of-truth wrappers that opt a screen into the "mirrored" remote-mic
@@ -17,6 +17,36 @@ import { ButtonVariant, RemoteButtonIcon } from '~/routes/keyboard-help/controls
  * enforced in useKeyboardNav). Screens out of scope (editors, admin) keep the raw components and
  * fall back to the classic arrow keyboard.
  */
+
+interface NavRemoteControlProps {
+  nav?: RegisterFunc;
+  name: string;
+  /** The descriptor sent to the phone — same shape every other `Nav.*` wrapper derives internally. */
+  control: ControlInput;
+  onClick: () => void;
+  disabled?: boolean;
+}
+
+/**
+ * A control that exists ONLY on the remote mic — it renders nothing on screen.
+ *
+ * Use it when the phone needs an affordance the screen legitimately doesn't show, the canonical case
+ * being "back": mirrored screens must supply their own back control (the phone injects none), but a
+ * screen reached as an overlay/dialog often has no visible back button of its own, only the
+ * Backspace/Escape handler. Placement in JSX decides where it lands in the mirrored list, so put a
+ * back control last.
+ *
+ * Being off-screen, it takes no part in arrow navigation and can never be focused — tapping it on
+ * the phone fires `onClick` directly, exactly like the keyboard handler would.
+ *
+ * Reach for this sparingly: a control the TV can't reach is invisible to anyone without a phone.
+ * Always back it with a real key handler (e.g. `onBackspace`) so both inputs stay usable.
+ */
+export function NavRemoteControl({ nav, name, control, onClick, disabled = false }: NavRemoteControlProps) {
+  const register = useResolvedRegister(nav);
+  register(name, onClick, control.label, false, { disabled, control, remoteOnly: true });
+  return null;
+}
 
 /** Register from the explicit `nav` prop when given, otherwise from the KeyboardNavProvider. */
 function useResolvedRegister(nav?: RegisterFunc): RegisterFunc {

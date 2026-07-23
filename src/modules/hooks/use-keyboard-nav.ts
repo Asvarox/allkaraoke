@@ -46,6 +46,10 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   // during the current render; the committed set lives in STATE (not a ref) so the `help` memo
   // derives from the exact value React rendered with — a ref would go stale and flap classic/mirror.
   const newControls = useRef<ControlDescriptor[]>([]);
+  // Names registered with `remoteOnly` — they live in `newControls` (so they keep the author's
+  // ordering on the phone) but have no on-screen element, so they're subtracted from the coverage
+  // count below. A Set, not a counter, so a double render can't inflate it.
+  const remoteOnlyNames = useRef<Set<string>>(new Set());
   const [committedControls, setCommittedControls] = useState<ControlDescriptor[]>([]);
 
   const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
@@ -81,7 +85,9 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     if (!enabled) return;
     const action = actions.current[name];
     if (action) {
-      setCurrentlySelected(name);
+      // Remote-only controls have no on-screen element, so there's nothing to focus (and focusing a
+      // name that isn't in `elementList` would strand arrow navigation).
+      if (elementList.current.includes(name)) setCurrentlySelected(name);
       action.callback();
       menuEnter.play();
     }
@@ -139,28 +145,37 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       propName = 'onClick',
       disabled = false,
       control,
-    }: { propName?: string; disabled?: boolean; control?: ControlInput } = {},
+      remoteOnly = false,
+    }: { propName?: string; disabled?: boolean; control?: ControlInput; remoteOnly?: boolean } = {},
   ) => {
     if (disabled) {
       return { disabled, focused: false };
     }
+
+    if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
+
+    // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
+    // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
+    if (control && !newControls.current.some((c) => c.name === name)) {
+      newControls.current.push({ ...control, name });
+      if (remoteOnly) remoteOnlyNames.current.add(name);
+    }
+
+    // A remote-only control exists solely on the phone (e.g. a "back" affordance the screen doesn't
+    // show), so it never joins the on-screen navigation list and has no props to hand back.
+    if (remoteOnly) {
+      return { disabled: false, focused: false };
+    }
+
     if (!newElementList.current.includes(name)) {
       newElementList.current.push(name);
     }
-
-    if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
 
     if (isDefault) {
       defaultSelection = name;
     }
 
     const focused = enabled && currentlySelected === name;
-
-    // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
-    // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
-    if (control && !newControls.current.some((c) => c.name === name)) {
-      newControls.current.push({ ...control, name });
-    }
 
     return {
       focused,
@@ -192,17 +207,20 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
     // Mirror mode is all-or-nothing: only mirror when EVERY navigable element supplied a
     // descriptor. A partial set falls back to classic arrows so the phone is never misleading.
+    // Remote-only descriptors are excluded from the tally — they have no on-screen element to cover.
     const collected = newControls.current;
-    const fullCoverage = collected.length > 0 && collected.length === elementList.current.length;
+    const screenControls = collected.length - remoteOnlyNames.current.size;
+    const fullCoverage = collected.length > 0 && screenControls === elementList.current.length;
     if (collected.length > 0 && !fullCoverage && process.env.NODE_ENV !== 'production') {
       captureException(
         new Error(
-          `useKeyboardNav: partial mirror coverage (${collected.length}/${elementList.current.length} controls); falling back to arrows`,
+          `useKeyboardNav: partial mirror coverage (${screenControls}/${elementList.current.length} controls); falling back to arrows`,
         ),
       );
     }
     const nextControls = fullCoverage ? collected : [];
     newControls.current = [];
+    remoteOnlyNames.current = new Set();
     // Only update state when the committed set actually changed — an empty→empty no-op keeps classic
     // screens from re-registering (which would re-order them ahead of others in `.at(-1)` selection).
     setCommittedControls((prev) => (sameControls(prev, nextControls) ? prev : nextControls));

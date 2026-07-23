@@ -91,7 +91,9 @@ const ButtonContent = ({
   return (
     <span className="flex w-full items-center justify-between gap-4">
       <IconSlot size={size}>{leftIcon}</IconSlot>
-      <span className="min-w-0 text-center">{children}</span>
+      {/* `truncate` needs the shrink `min-w-0` already here to have a bounded width to ellipsize
+          against - without it the span would grow to fit its content instead of wrapping/clipping. */}
+      <span className="min-w-0 truncate text-center">{children}</span>
       <IconSlot size={size}>{rightIcon}</IconSlot>
     </span>
   );
