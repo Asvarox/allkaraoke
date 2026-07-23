@@ -375,8 +375,11 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
   });
 
   await test.step('Favourite songs should be also added to remoteMic playlist', async () => {
+    // Leave the remote's song list (so the expanded artist group rolls up on return), then collapse
+    // the host preview with the physical keyboard — the song settings screen is mirrored on the
+    // remote now, so it no longer exposes the classic back-arrow keyboard button.
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await page.keyboard.press('Backspace');
     await pages.songListPage.goToPlaylist(remoteMicsPlaylist);
     await expect(await pages.songListPage.getSongElement(songs.french1.ID)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.french2.ID)).toBeVisible();
@@ -396,8 +399,10 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
   });
 
   await test.step('Go to remove the song from favourites - the song should no longer be visible there', async () => {
+    // Collapse the host preview with the physical keyboard (song settings is mirrored on the remote
+    // now, so there's no classic back-arrow keyboard button to tap).
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await page.keyboard.press('Backspace');
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
     await remoteMic.remoteMicSongListPage.removeSongFromFavouriteList(songs.french1.ID);
