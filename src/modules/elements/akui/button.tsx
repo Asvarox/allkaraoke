@@ -16,7 +16,7 @@ const sizeToClass = {
 
 export const ButtonBase = twx(Box)((props) => {
   return [
-    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-4 border-0 bg-black/45 bg-black/55! px-4 font-bold uppercase duration-300`,
+    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 bg-black/45 bg-black/55! px-4 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
       ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
       : '',
@@ -89,7 +89,7 @@ const ButtonContent = ({
 }) => {
   if (leftIcon == null && rightIcon == null) return <>{children}</>;
   return (
-    <span className="flex w-full items-center justify-between gap-4">
+    <span className="flex w-full items-center justify-between gap-2">
       <IconSlot size={size}>{leftIcon}</IconSlot>
       {/* `truncate` needs the shrink `min-w-0` already here to have a bounded width to ellipsize
           against - without it the span would grow to fit its content instead of wrapping/clipping. */}

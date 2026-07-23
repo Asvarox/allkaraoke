@@ -22,6 +22,8 @@ interface Options {
   backspaceHelp?: string | null;
   direction?: 'horizontal' | 'vertical';
   additionalHelp?: HelpEntry;
+  /** Screen name mirrored to the remote mic, shown as the header above its keyboard (mirror mode). */
+  title?: string;
 }
 
 interface KeyboardAction {
@@ -35,7 +37,14 @@ const sameControls = (a: ControlDescriptor[], b: ControlDescriptor[]) =>
   a.length === b.length && JSON.stringify(a) === JSON.stringify(b);
 
 export default function useKeyboardNav(options: Options = {}, debug = false) {
-  const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
+  const {
+    enabled = true,
+    onBackspace,
+    backspaceHelp = null,
+    direction = 'vertical',
+    additionalHelp = {},
+    title,
+  } = options;
 
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
   const elementList = useRef<string[]>([]);
@@ -59,12 +68,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
         ? {
             // Mirror mode — mutually exclusive with the arrow/accept fields.
             mode: 'mirror',
+            title,
             back: onBackspace ? backspaceHelp : undefined,
             controls: committedControls,
             ...additionalHelp,
           }
         : {
             mode: 'classic',
+            title,
             [direction]: null,
             accept: currentlySelectedActionLabel ?? null,
             back: onBackspace ? backspaceHelp : undefined,
@@ -75,7 +86,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // every render and, via updateKeyboard, spin an infinite re-render loop. Their content is static.
     // `actions` is a stable ref, kept in the list for readability.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls],
+    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls, title],
   );
   useKeyboardHelp(help, enabled);
 

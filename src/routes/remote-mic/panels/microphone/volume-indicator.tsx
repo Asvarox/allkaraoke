@@ -44,6 +44,9 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
 
 const Debug = twc.span`absolute text-white opacity-[0.125]`;
 
-const Indicator = twc.div`max-h-[300px] min-h-[200px] w-full origin-top bg-black/25 transition-[200ms]`;
+const Indicator = twc.div`h-full min-h-0 w-full origin-top bg-black/25 transition-[200ms]`;
 
-const IndicatorContainer = twc.div`relative max-h-[300px] min-h-[200px] flex-1 border-[1px] border-white transition-[300ms]`;
+// A compact strip in portrait — tall enough for the pinned "Join game"/color button — so the mirrored
+// keyboard gets as much room as possible. In landscape there's height to spare beside the keyboard, so
+// it expands back to the full 200–300px preview. The `scaleY` volume viz animates within it either way.
+const IndicatorContainer = twc.div`relative h-[6.5rem] min-h-[6.5rem] w-full border-[1px] border-white transition-[300ms] landscape:h-auto landscape:max-h-[300px] landscape:min-h-[200px] landscape:flex-1`;

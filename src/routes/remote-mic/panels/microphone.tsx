@@ -97,12 +97,12 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
 
   return (
     <div className="relative flex h-full flex-col">
-      <div className="text-md flex h-full flex-col items-center justify-center gap-4 overflow-auto px-4 pt-4 md:flex-row">
+      <div className="text-md flex h-full min-h-0 flex-col items-center justify-center gap-2 overflow-hidden px-4 pt-4 landscape:flex-row landscape:items-stretch landscape:gap-4 landscape:py-2">
         <div
-          className={`flex w-full flex-1 flex-col justify-center gap-4 transition-all duration-300 ease-in-out md:mt-0 md:flex md:flex-col ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
+          className={`flex w-full flex-none flex-col justify-center gap-4 transition-all duration-300 ease-in-out landscape:mt-0 landscape:flex-1 ${searchActive ? 'mt-[-100%]' : 'mt-0'}`}>
           <MicPreview isVisible={isConnected} isMicOn={monitoringStarted} isConnected={isConnected} />
         </div>
-        <div className="w-full min-w-0 flex-1">
+        <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col justify-center">
           {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
           {permissions === 'read' && (
             <Menu.HelpText className="pb-12" data-test="no-permissions-message">
