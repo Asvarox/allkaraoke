@@ -8,7 +8,7 @@
 #GAP:21581
 #ALLKARAOKE_ID:los-autenticos-decadentes-y-julieta-venegas-no-me-importa-el-dinero
 #ALLKARAOKE_SID:6030
-#ALLKARAOKE_LASTUPDATE:2026-07-22T01:56:13.598Z
+#ALLKARAOKE_LASTUPDATE:2026-07-21T20:44:51.049Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=marague248
 #ALLKARAOKE_REALBPM:300
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Los%20Aut%C3%A9nticos%20Decadentes%20y%20Julieta%20Venegas&cancion=No%20me%20importa%20el%20dinero

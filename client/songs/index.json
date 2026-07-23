@@ -5103,7 +5103,7 @@
     "gap": 151.92731277533028,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-22T01:56:13.417Z",
+    "lastUpdate": "2026-07-21T20:44:28.720Z",
     "realBpm": 81,
     "previewStart": 1,
     "previewEnd": 53,
@@ -15433,7 +15433,7 @@
     "gap": 34109.90625,
     "year": "2003",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-22T01:56:12.341Z",
+    "lastUpdate": "2026-07-21T20:40:39.205Z",
     "genre": "Rock Argentino",
     "realBpm": 512,
     "volume": 1,
@@ -37658,7 +37658,7 @@
     "gap": 16652.19807284961,
     "year": "1986",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-07-22T01:56:12.346Z",
+    "lastUpdate": "2026-07-21T20:42:42.941Z",
     "genre": "Pop",
     "realBpm": 117,
     "volume": 1,
@@ -71986,6 +71986,37 @@
     "local": false
   },
   {
+    "id": "him-wicked-game",
+    "title": "Wicked Game",
+    "artist": "HIM",
+    "video": "8oYodfK4DkE",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.5,
+    "gap": 14863.843058350101,
+    "year": "1997",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-07-23T02:04:10.493Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "previewStart": 15,
+    "previewEnd": 224,
+    "volume": 1,
+    "author": "HIM",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=6565",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6038,
+    "tracksCount": 1,
+    "search": "himwickedgame",
+    "local": false
+  },
+  {
     "id": "him-wings-of-a-butterfly",
     "title": "Wings Of A Butterfly",
     "artist": "HIM",
@@ -82451,7 +82482,7 @@
     "bpm": 383.05,
     "gap": 9439.856154549014,
     "year": "2017",
-    "lastUpdate": "2026-06-30T07:26:58.619Z",
+    "lastUpdate": "2026-07-22T20:11:44.348Z",
     "realBpm": 383.05,
     "previewStart": 37.5,
     "previewEnd": 85,
@@ -84671,7 +84702,7 @@
     "gap": 55490.12238531376,
     "year": "2015",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-07-22T01:56:14.041Z",
+    "lastUpdate": "2026-07-21T20:45:47.450Z",
     "realBpm": 125,
     "volume": 1,
     "author": "amro98",
@@ -88439,6 +88470,35 @@
     "shortId": 2359,
     "tracksCount": 2,
     "search": "kendricklamarszaallthestars",
+    "local": false
+  },
+  {
+    "id": "kenia-os-ruleta-rusa",
+    "title": "Ruleta Rusa",
+    "artist": "Kenia Os",
+    "video": "jQScnJoK2hc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 298,
+    "gap": 2443.288590604027,
+    "year": "2026",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-07-23T02:04:11.738Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "vicktoben",
+    "sourceUrl": "ultrastar-es.org",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6044,
+    "tracksCount": 1,
+    "search": "keniaosruletarusa",
     "local": false
   },
   {
@@ -94353,7 +94413,7 @@
     "gap": 3284.109192884059,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2026-07-22T01:56:14.043Z",
+    "lastUpdate": "2026-07-21T20:46:03.635Z",
     "genre": "Pop",
     "realBpm": 114,
     "volume": 1,
@@ -95386,7 +95446,7 @@
     "gap": 21463.547461368653,
     "year": "2003",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-07-22T01:56:14.045Z",
+    "lastUpdate": "2026-07-21T20:46:43.503Z",
     "genre": "Rock",
     "realBpm": 339.75,
     "volume": 1,
@@ -95488,6 +95548,35 @@
     "shortId": 2518,
     "tracksCount": 1,
     "search": "lassoycamiodioquenoteodio",
+    "local": false
+  },
+  {
+    "id": "laufey-castle-in-hollywood",
+    "title": "Castle In Hollywood",
+    "artist": "Laufey",
+    "video": "SOID9nV1iSo",
+    "language": [
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 1394.3589743589744,
+    "year": "2025",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-07-23T02:04:11.739Z",
+    "genre": "Jazz",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "LuMM04",
+    "sourceUrl": "https://www.youtube.com/watch?v=SOID9nV1iSo",
+    "duration": 153,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6045,
+    "tracksCount": 1,
+    "search": "laufeycastleinhollywood",
     "local": false
   },
   {
@@ -100291,7 +100380,7 @@
     "bpm": 300,
     "gap": 21581,
     "year": "2011",
-    "lastUpdate": "2026-07-22T01:56:13.598Z",
+    "lastUpdate": "2026-07-21T20:44:51.049Z",
     "realBpm": 300,
     "volume": 1,
     "author": "marague248",
@@ -101757,7 +101846,7 @@
     "gap": 12269.21832884097,
     "year": "1980",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-07-22T01:56:12.344Z",
+    "lastUpdate": "2026-07-21T20:42:22.770Z",
     "realBpm": 164,
     "previewStart": 60,
     "previewEnd": 95,
@@ -101803,6 +101892,35 @@
     "shortId": 2687,
     "tracksCount": 1,
     "search": "maanamkochamciekochaniemoje",
+    "local": false
+  },
+  {
+    "id": "maanam-szare-miraze",
+    "title": "Szare miraże",
+    "artist": "Maanam",
+    "video": "7SsVR8Zq_LQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 349.5,
+    "gap": 7842.875536480687,
+    "year": "1980",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-07-23T02:04:11.332Z",
+    "realBpm": 173,
+    "volume": 1,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30371",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6040,
+    "tracksCount": 1,
+    "search": "maanamszaremiraze",
     "local": false
   },
   {
@@ -114685,6 +114803,33 @@
     "local": false
   },
   {
+    "id": "mumford-sons-broken-crown",
+    "title": "Broken Crown",
+    "artist": "Mumford & Sons",
+    "video": "gSJGV8SLG-8",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 17353.90625,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-07-23T02:04:11.740Z",
+    "genre": "Folk",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6046,
+    "tracksCount": 1,
+    "search": "mumfordsonsbrokencrown",
+    "local": false
+  },
+  {
     "id": "mumford-sons-dust-bowl-dance",
     "title": "Dust Bowl Dance",
     "artist": "Mumford & Sons",
@@ -118093,6 +118238,34 @@
     "shortId": 3169,
     "tracksCount": 1,
     "search": "neontreeseverybodytalks",
+    "local": false
+  },
+  {
+    "id": "nerf-herder-vivian",
+    "title": "Vivian",
+    "artist": "Nerf Herder",
+    "video": "iEcR3lQgKR0",
+    "language": [
+      "English"
+    ],
+    "bpm": 370,
+    "gap": 27186.486486486487,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-23T02:04:10.494Z",
+    "realBpm": 184,
+    "volume": 1,
+    "author": "rootsrocker",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=14884",
+    "duration": 167,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6039,
+    "tracksCount": 1,
+    "search": "nerfherdervivian",
     "local": false
   },
   {
@@ -132078,7 +132251,7 @@
     "gap": 19903.906447534766,
     "year": "1994",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-22T01:56:12.334Z",
+    "lastUpdate": "2026-07-21T20:40:00.233Z",
     "genre": "Pop",
     "realBpm": 96,
     "volume": 1,
@@ -132775,6 +132948,33 @@
     "shortId": 4998,
     "tracksCount": 1,
     "search": "rammsteinrosenrot",
+    "local": false
+  },
+  {
+    "id": "rammstein-sonne",
+    "title": "Sonne",
+    "artist": "Rammstein",
+    "video": "StZcUAPRRac",
+    "language": [
+      "German"
+    ],
+    "bpm": 300.1,
+    "gap": 280.3332222592471,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-07-23T02:04:10.488Z",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "DoubleDee73",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6037,
+    "tracksCount": 1,
+    "search": "rammsteinsonne",
     "local": false
   },
   {
@@ -137755,7 +137955,7 @@
     "gap": 11405.102040816326,
     "year": "2018",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-07-22T01:56:13.041Z",
+    "lastUpdate": "2026-07-21T20:43:42.451Z",
     "realBpm": 186,
     "volume": 1,
     "author": "Coppolatte",
@@ -141751,7 +141951,7 @@
     "bpm": 254.5,
     "gap": 19708.03536345776,
     "year": "2005",
-    "lastUpdate": "2026-07-22T01:56:13.867Z",
+    "lastUpdate": "2026-07-21T20:45:05.979Z",
     "realBpm": 80,
     "volume": 1,
     "author": "Silverbeam",
@@ -141778,7 +141978,7 @@
     "gap": 3877.040236417368,
     "year": "2011",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-07-22T01:56:14.037Z",
+    "lastUpdate": "2026-07-21T20:45:29.068Z",
     "genre": "Reggae",
     "realBpm": 111,
     "volume": 1,
@@ -143944,7 +144144,7 @@
     "gap": 6406.622516556292,
     "year": "2002",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-07-22T01:56:14.223Z",
+    "lastUpdate": "2026-07-21T20:48:01.344Z",
     "genre": "Country",
     "realBpm": 76,
     "volume": 1,
@@ -144390,7 +144590,7 @@
     "bpm": 230,
     "gap": 7761.739130434783,
     "year": "2020",
-    "lastUpdate": "2026-07-22T01:56:12.349Z",
+    "lastUpdate": "2026-07-21T20:42:59.799Z",
     "genre": "J-Pop",
     "realBpm": 115,
     "previewStart": 45,
@@ -164706,6 +164906,34 @@
     "local": false
   },
   {
+    "id": "they-might-be-giants-doctor-worm",
+    "title": "Doctor Worm",
+    "artist": "They Might Be Giants",
+    "video": "mHliXVifhEM",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 7585.625,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-23T02:04:11.335Z",
+    "genre": "Alternative",
+    "realBpm": 164,
+    "volume": 1,
+    "author": "Supau",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6042,
+    "tracksCount": 1,
+    "search": "theymightbegiantsdoctorworm",
+    "local": false
+  },
+  {
     "id": "thin-lizzy-the-boys-are-back-in-town",
     "title": "The Boys Are Back In Town",
     "artist": "Thin Lizzy",
@@ -167186,6 +167414,36 @@
     "local": false
   },
   {
+    "id": "tomori-kusunoki-hamidashimono",
+    "title": "Hamidashimono",
+    "artist": "Tomori Kusunoki",
+    "video": "F0A86w3mdRY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 254.22,
+    "gap": 23728.931791361814,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-07-23T02:04:11.543Z",
+    "genre": "Anime",
+    "realBpm": 125,
+    "previewStart": 52,
+    "previewEnd": 79,
+    "volume": 1,
+    "author": "Currymalker",
+    "duration": 104,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6043,
+    "tracksCount": 1,
+    "search": "tomorikusunokihamidashimono",
+    "local": false
+  },
+  {
     "id": "tomorrow-x-together-everlasting-shine",
     "title": "Everlasting shine",
     "artist": "Tomorrow X Together",
@@ -169258,7 +169516,7 @@
     "gap": 2921.31361461505,
     "year": "2025",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-07-22T01:56:13.233Z",
+    "lastUpdate": "2026-07-21T20:43:57.319Z",
     "genre": "Pop",
     "realBpm": 115,
     "volume": 1,
@@ -169736,6 +169994,34 @@
     "shortId": 5799,
     "tracksCount": 1,
     "search": "ub40thewayyoudothethingsyoudo",
+    "local": false
+  },
+  {
+    "id": "udo-juergens-aber-bitte-mit-sahne",
+    "title": "Aber bitte mit Sahne",
+    "artist": "Udo Jürgens",
+    "video": "MRBm8PcMfN0",
+    "language": [
+      "German"
+    ],
+    "bpm": 240.15,
+    "gap": 15020.624609618988,
+    "year": "1976",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-07-23T02:04:11.334Z",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=MRBm8PcMfN0",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6041,
+    "tracksCount": 1,
+    "search": "udojuergensaberbittemitsahne",
     "local": false
   },
   {
@@ -177064,7 +177350,7 @@
     "gap": 12626.622516556292,
     "year": "2025",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-07-22T01:56:13.037Z",
+    "lastUpdate": "2026-07-21T20:43:26.665Z",
     "realBpm": 151,
     "volume": 1,
     "author": "Tracks",

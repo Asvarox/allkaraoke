@@ -1,0 +1,231 @@
+#ARTIST:Tomori Kusunoki
+#TITLE:Hamidashimono
+#CREATOR:Currymalker
+#BPM:254,22
+#YEAR:2020
+#PREVIEWSTART:52
+#VIDEO:v=F0A86w3mdRY
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:23728,931791361814
+#ALLKARAOKE_ID:tomori-kusunoki-hamidashimono
+#ALLKARAOKE_SID:6043
+#ALLKARAOKE_LASTUPDATE:2026-07-23T02:04:11.543Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_PREVIEWEND:79
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:104
+#MP3:Tomori Kusunoki - Hamidashimono (TV).mp3
+#COVER:Tomori Kusunoki - Hamidashimono (TV) [CO].jpg
+#MEDLEYSTARTBEAT:564
+#MEDLEYENDBEAT:1085
+: 17 4 8 Sai
+: 23 4 8 gen 
+: 29 2 1 nai
+: 33 13 0 ~
+- 46
+: 53 2 0 A
+: 57 2 0 ra
+: 61 2 -2 so
+: 65 2 0 i 
+: 69 2 -2 no 
+: 73 2 0 yu
+: 77 2 1 ku
+: 81 4 3 sa
+: 87 1 3 ki
+: 89 2 5 ~ 
+: 93 2 1 wa
+: 97 10 0 ~
+- 107 128
+- 128
+: 145 4 8 Hon
+: 151 4 8 tou 
+: 157 2 1 no
+: 161 13 0 ~
+- 174
+: 181 1 0 Bo
+: 183 1 0 ku
+: 185 2 0 ra 
+: 189 2 -2 no 
+: 193 2 0 i
+: 197 2 0 no
+: 201 2 1 chi 
+: 205 2 3 no 
+: 209 1 6 ka
+: 211 2 8 ~
+: 215 4 5 chi 
+: 221 6 5 wo 
+: 229 6 3 mii
+: 237 2 3 da
+* 241 2 2 se
+* 245 2 3 ru 
+: 249 13 5 kai?
+- 262
+: 277 2 2 Ma
+: 281 2 2 sshi
+: 285 1 0 ro 
+: 287 2 2 de 
+: 291 2 2 na 
+: 295 1 0 mo 
+* 297 2 5 na
+: 301 4 2 i
+- 305
+: 309 1 2 Ra
+: 311 1 2 be
+: 313 2 2 ru 
+: 317 1 0 wo 
+: 319 2 2 ha
+: 323 2 2 ra
+: 327 1 0 re
+: 329 2 5 tei
+: 333 4 2 ta
+- 337
+: 341 1 2 Na
+: 343 1 2 ka
+: 345 2 2 mi 
+: 349 1 0 na
+: 351 2 2 n
+: 355 2 2 te 
+: 359 1 0 na
+: 361 2 5 i 
+: 365 2 2 mo 
+: 369 4 0 dou
+: 375 4 0 zen 
+: 381 13 2 de
+- 394
+: 405 2 5 Mizu
+: 409 2 5 ka
+: 413 1 3 ra 
+: 415 2 5 wo 
+: 419 2 5 mo 
+: 423 1 3 gi
+* 425 2 8 sei 
+: 429 3 5 ni
+- 432
+: 437 1 5 Shi
+: 439 1 5 a
+: 441 2 5 wa
+: 445 1 3 se 
+: 447 2 5 wo 
+: 451 2 5 ne
+: 455 1 3 ga
+: 457 2 8 ~
+: 461 4 5 tta
+- 465
+: 469 2 5 Ki
+: 473 2 5 mi 
+: 477 2 3 no 
+: 481 2 5 tsu
+: 485 2 5 yo
+: 489 2 5 sa 
+: 493 2 8 wa 
+: 497 2 12 bo
+: 501 2 13 ku 
+: 505 2 12 ga 
+: 509 2 13 shi
+: 513 4 12 ~
+* 519 4 3 ttei
+* 525 2 6 ru
+: 529 22 5 ~
+- 551 564
+- 564
+: 581 2 3 Ha
+: 585 2 5 mi
+: 589 2 13 da
+: 593 4 12 shi 
+: 599 4 12 mo
+: 605 2 10 no 
+: 609 4 12 no 
+: 615 4 12 ko
+: 621 2 13 e 
+* 625 4 15 yo 
+* 631 1 15 hi
+* 633 2 17 ~
+: 637 2 13 bi
+: 641 7 12 ke
+- 648
+: 653 1 10 Fu
+: 655 1 10 ru
+: 657 2 12 e
+: 661 2 10 ru 
+: 665 2 12 te 
+: 669 2 10 wo 
+: 673 4 12 hii
+: 679 4 13 te 
+: 685 1 10 so
+: 687 1 10 no 
+: 689 2 12 sa
+: 693 2 10 ki 
+: 697 2 12 e 
+: 701 2 10 to 
+: 705 4 12 mu
+: 711 4 13 ka
+: 717 2 8 ou
+: 721 12 10 ~
+- 733
+: 741 2 10 Bo
+: 745 2 10 ku 
+: 749 2 10 ga 
+: 753 2 3 no
+: 757 2 5 ~
+: 761 6 3 zo
+* 769 6 1 n
+: 777 5 3 da
+- 782
+: 785 4 5 Ke
+: 791 2 5 shiki 
+: 795 1 3 wo 
+: 797 2 5 ki
+: 801 1 3 mi 
+: 803 2 5 ni 
+: 807 1 3 mi
+: 809 2 5 se
+: 813 2 3 ru 
+: 817 4 3 yo
+: 823 6 5 ~
+- 829
+* 837 2 3 Na
+* 841 2 5 mi
+: 845 2 13 da 
+: 849 4 12 ni 
+: 855 4 12 ma
+: 861 2 10 ke
+: 865 4 12 ta 
+: 871 4 12 yo
+: 877 2 13 ru 
+: 881 4 15 wo 
+: 887 1 15 ko
+: 889 2 17 ~
+: 893 2 13 wa
+: 897 7 12 se
+- 904
+: 909 1 10 Yo
+: 911 1 10 wa
+: 913 2 12 sa 
+: 917 2 10 ku
+: 921 2 12 ya
+: 925 2 10 shi
+: 929 4 12 sa 
+: 935 4 13 mo 
+: 941 2 10 su
+: 945 2 12 be
+: 949 2 10 te 
+: 953 2 12 chi
+: 957 2 10 ka
+: 961 4 12 ra 
+: 967 4 13 ni 
+: 973 2 8 shite
+: 977 11 10 ~
+- 988
+: 997 2 1 Tsu
+: 1001 2 1 ka
+: 1005 2 3 me 
+: 1009 1 3 mi
+: 1011 4 5 ~
+: 1017 2 3 se
+* 1021 6 5 tsu
+* 1029 6 8 ke
+: 1037 2 8 ro
+: 1041 61 10 ~
+E
