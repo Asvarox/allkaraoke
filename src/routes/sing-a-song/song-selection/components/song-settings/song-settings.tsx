@@ -83,7 +83,8 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
           confirmPlayUnverifiedSong,
           CONFIRM_UNVERIFIED_LABEL,
           true,
-          { control: { type: 'button', label: CONFIRM_UNVERIFIED_LABEL, icon: 'confirm' } },
+          // Forward arrow (the default) reads as "proceed", matching the other "move on" buttons.
+          { control: { type: 'button', label: CONFIRM_UNVERIFIED_LABEL } },
         )}
       />
       <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
