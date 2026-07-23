@@ -103,5 +103,18 @@ visual(
       page: remoteMic._page,
       extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
     });
+
+    // Host expands a song's settings, which publishes the song-settings mirror layout to the remote
+    // (difficulty/mode/track switchers, "Setup mics"/"Play" buttons and the remote-only back control).
+    await pages.songListPage.focusSong('e2e-multitrack-polish-1994');
+    await pages.songListPage.openPreviewForSong('e2e-multitrack-polish-1994');
+
+    await remoteMic.remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('difficulty-setting')).toBeVisible();
+
+    await makeScreenshot('song-settings-keyboard', {
+      page: remoteMic._page,
+      extraMasks: [remoteMic.remoteMicMainPage.connectionStatusElement],
+    });
   },
 );
