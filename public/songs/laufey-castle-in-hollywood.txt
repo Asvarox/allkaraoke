@@ -1,0 +1,412 @@
+#ARTIST:Laufey
+#TITLE:Castle In Hollywood
+#CREATOR:LuMM04
+#BPM:234
+#YEAR:2025
+#VIDEO:v=SOID9nV1iSo
+#GENRE:Jazz
+#LANGUAGE:English
+#GAP:1394,3589743589744
+#ALLKARAOKE_ID:laufey-castle-in-hollywood
+#ALLKARAOKE_SID:6045
+#ALLKARAOKE_LASTUPDATE:2026-07-23T02:04:11.739Z
+#ALLKARAOKE_ARTISTORIGIN:IS
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=SOID9nV1iSo
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:153
+#MP3:Laufey - Castle In Hollywood.mp3
+#COVER:Laufey - Castle In Hollywood [CO].jpg
+#BACKGROUND:Laufey - Castle In Hollywood [BG].jpg
+: 16 4 -7 I 
+: 21 5 -7 rack 
+: 27 5 0 my 
+: 33 6 0 brain,
+- 39
+: 40 8 -7 Spend 
+: 49 8 -7 hours 
+: 58 5 0 and 
+: 64 12 0 days
+- 76
+: 77 3 0 I 
+: 81 6 0 still 
+: 88 8 -2 can’t 
+: 97 6 -2 fi
+: 104 3 -3 gure 
+: 108 4 -5 it 
+: 113 13 -10 out
+- 126
+: 136 7 0 What 
+: 144 8 0 hap
+: 153 3 -2 pened 
+: 157 3 -2 that 
+: 161 7 -2 year 
+: 169 2 -3 in 
+: 172 3 -5 our 
+: 176 13 -10 house
+- 189
+: 198 9 0 Still 
+: 208 7 0 lear
+: 216 3 -2 ning 
+: 220 3 -3 to 
+: 224 9 -5 live 
+: 234 3 -7 with
+: 238 16 -5 out 
+: 255 9 -5 you
+- 264
+: 266 9 -7 I 
+: 276 2 -7 won
+: 279 6 0 der 
+: 286 7 0 what 
+: 294 7 -7 you 
+: 302 7 -8 tell 
+: 310 6 0 your 
+: 317 13 0 friends
+- 330
+: 331 3 0 Which 
+: 335 7 0 ver
+: 343 3 -2 sion 
+: 347 3 -3 of 
+: 351 6 -5 our 
+: 358 3 -7 fai
+: 362 3 -3 ry 
+: 366 5 -3 sto
+: 372 16 -5 ry
+- 388
+: 392 4 0 The 
+: 397 7 0 one 
+: 405 3 -2 where 
+: 409 4 -3 you 
+: 414 5 -5 walk 
+: 420 5 -7 out 
+: 426 3 -3 in 
+: 430 6 -3 glo
+: 437 10 -5 ry,
+- 447
+: 448 5 -7 Or 
+: 454 5 0 the 
+: 460 8 0 night 
+: 469 4 -2 I 
+: 474 2 -3 moved 
+: 477 6 -5 out 
+: 484 3 -7 in 
+: 488 3 -3 a 
+: 492 14 -3 hur
+: 507 10 -5 ry
+- 517
+: 519 8 0 I 
+: 528 4 0 think 
+: 533 3 5 a
+: 537 3 5 bout 
+: 541 3 5 you 
+: 545 7 7 al
+: 553 11 5 ways
+- 564
+: 568 3 0 Tied 
+: 572 3 5 to
+: 576 4 7 ge
+: 581 3 9 ther 
+: 585 3 7 with 
+: 589 2 5 a 
+: 592 4 2 string
+- 596
+: 597 3 5 I 
+: 601 3 5 thought 
+: 605 3 5 that 
+: 609 3 5 lil
+: 613 3 -2 lies 
+: 617 3 -2 died 
+: 621 3 -2 by 
+: 625 3 -2 win
+: 629 3 -2 ter 
+: 633 2 -2 then
+- 635
+: 636 3 -2 They 
+: 640 3 -2 bloomed 
+: 644 3 -2 a
+: 648 3 -2 gain 
+: 652 3 0 in 
+: 656 6 -3 spring, 
+: 663 4 0 it’s 
+: 668 3 5 a 
+: 672 7 7 heart
+: 680 12 5 break
+- 692
+: 696 3 0 Marked 
+: 700 3 5 the 
+: 704 3 7 end 
+: 708 3 9 of 
+: 712 2 7 our 
+: 715 3 5 girl
+: 719 4 2 hood
+- 723
+: 724 3 5 We’ll 
+: 728 3 5 ne
+: 732 3 5 ver 
+: 736 2 5 go 
+: 739 3 -2 back 
+: 743 3 -2 to 
+: 747 3 -2 our
+- 750
+: 751 3 -2 Cas
+: 755 3 -2 tle 
+: 759 3 -2 in 
+: 763 3 -2 Hol
+: 767 2 -3 ly
+: 770 20 -3 wood
+- 790 829
+- 829
+: 845 4 -7 Thir
+: 850 7 0 ty 
+: 858 8 0 months 
+: 867 7 -7 have 
+: 875 6 -7 come 
+: 882 6 0 and 
+: 889 11 0 gone
+- 900
+: 902 3 0 I’m 
+: 906 7 0 da
+: 914 3 -2 ting 
+: 918 3 -3 the 
+: 922 5 -5 boy 
+: 928 3 -7 that 
+: 932 4 -3 we 
+: 937 6 -3 dreamed 
+: 944 19 -5 of
+- 963
+: 964 4 0 I 
+: 969 6 0 wish 
+: 976 3 -2 I 
+: 980 3 -3 could 
+: 984 7 -5 tell 
+: 992 3 -7 him 
+: 996 3 -3 a
+: 1000 7 -3 bout 
+: 1008 17 -5 us
+- 1025
+: 1027 4 0 I 
+: 1032 8 0 wish 
+: 1041 2 -2 I 
+: 1044 2 -3 could 
+: 1047 7 -5 tell 
+: 1055 4 -7 you 
+: 1060 3 -7 how 
+: 1064 2 -5 I 
+: 1067 4 -3 fi
+: 1072 2 -2 nal
+: 1075 4 -3 ly 
+: 1080 7 -5 fell 
+: 1088 6 -7 in 
+: 1095 9 -7 love
+- 1104
+: 1105 4 0 There’s 
+: 1110 7 0 not 
+: 1118 7 -7 a 
+: 1126 8 -8 sin
+: 1135 6 0 gle 
+: 1142 12 0 day
+- 1154
+: 1156 3 0 Where 
+: 1160 7 0 I 
+: 1168 3 -2 di
+: 1172 3 -3 dn’t 
+: 1176 7 -5 wish 
+: 1184 3 -7 we 
+: 1188 2 -3 were 
+: 1191 6 -3 be
+: 1198 14 -5 tter
+- 1212
+: 1216 5 0 That 
+: 1222 6 0 I 
+: 1229 5 -2 coul
+: 1235 3 -3 dn’t 
+: 1239 7 -5 bor
+: 1247 3 -7 row 
+: 1251 2 -3 your 
+: 1254 7 -3 swea
+: 1262 12 -5 ter
+- 1274
+: 1275 3 -7 We 
+: 1279 6 0 were 
+: 1286 7 0 meant 
+: 1294 7 -2 to 
+: 1302 7 -3 be 
+: 1310 7 -5 for
+: 1318 8 -5 e
+: 1327 3 -3 ver 
+: 1331 3 -2 and 
+: 1335 7 -2 e
+: 1343 4 -3 ver
+- 1347
+: 1348 5 -5 I 
+: 1354 4 0 think 
+: 1359 3 5 a
+: 1363 3 5 bout 
+: 1367 3 5 you 
+: 1371 7 7 al
+: 1379 11 5 ways
+- 1390
+: 1394 3 0 Tied 
+: 1398 3 5 to
+: 1402 4 7 ge
+: 1407 3 9 ther 
+: 1411 3 7 with 
+: 1415 1 5 a 
+: 1417 4 2 string
+- 1421
+: 1422 3 5 I 
+: 1426 3 5 thought 
+: 1430 2 5 that 
+: 1433 4 5 lil
+: 1438 3 -2 lies 
+: 1442 3 -2 died 
+: 1446 3 -2 by 
+: 1450 3 -2 win
+: 1454 3 -2 ter 
+: 1458 2 -2 then
+- 1460
+: 1461 3 -2 They 
+: 1465 3 -2 bloomed 
+: 1469 3 -2 a
+: 1473 3 -2 gain 
+: 1477 2 0 in 
+: 1480 7 -3 spring, 
+: 1490 3 0 it’s 
+: 1494 2 5 a 
+: 1497 7 7 heart
+: 1505 12 5 break
+- 1517
+: 1521 3 0 Marked 
+: 1525 3 5 the 
+: 1529 3 7 end 
+: 1533 3 9 of 
+: 1537 2 7 our 
+: 1540 3 5 girl
+: 1544 4 2 hood
+- 1548
+: 1549 2 5 We’ll 
+: 1552 4 5 ne
+: 1557 3 5 ver 
+: 1561 2 5 go 
+: 1564 3 -2 back 
+: 1568 3 -2 to 
+: 1572 3 -2 our
+- 1575
+: 1576 3 -2 Cas
+: 1580 3 -2 tle 
+: 1584 3 -2 in 
+: 1588 3 -2 Hol
+: 1592 2 -3 ly
+: 1595 20 -3 wood
+- 1615 1646
+- 1646
+: 1662 9 5 I 
+: 1672 6 2 wish 
+: 1679 6 5 you 
+: 1686 7 7 well
+- 1693
+: 1694 7 5 I 
+: 1702 7 1 wish 
+: 1710 7 5 like 
+: 1718 7 7 hell 
+: 1726 7 5 you 
+: 1734 7 0 ha
+: 1742 7 5 dn’t 
+: 1750 8 7 lied
+- 1758
+: 1759 6 5 We 
+: 1766 7 -1 could 
+: 1774 6 5 be 
+: 1781 8 7 fine
+- 1789
+: 1790 7 5 The 
+: 1798 6 2 way 
+: 1805 8 5 I 
+: 1814 7 7 dress
+- 1821
+: 1822 7 5 O
+: 1830 6 1 ver 
+: 1837 8 5 ob
+: 1846 6 7 sess, 
+: 1853 7 5 still 
+: 1861 8 0 just 
+: 1870 6 5 like 
+: 1877 7 7 you
+- 1884
+: 1885 7 5 I 
+: 1893 7 -1 owe 
+: 1901 7 5 it 
+: 1909 7 7 to 
+: 1917 7 5 the 
+: 1925 8 2 best 
+: 1934 7 4 worst 
+: 1942 6 5 friend
+- 1948
+: 1949 8 7 I’ve 
+: 1958 14 9 e
+: 1973 15 7 ver 
+: 1989 18 10 had
+: 2008 3 9 ~
+: 2012 32 10 ~
+- 2044
+: 2045 4 5 I 
+: 2050 4 0 think 
+: 2055 3 5 a
+: 2059 3 5 bout 
+: 2063 3 5 you 
+: 2067 7 7 al
+: 2075 11 5 ways
+- 2086
+: 2090 3 0 Tied 
+: 2094 3 5 to
+: 2098 4 7 ge
+: 2103 3 9 ther 
+: 2107 3 7 with 
+: 2111 2 5 a 
+: 2114 4 2 string
+- 2118
+: 2119 3 5 I 
+: 2123 3 5 thought 
+: 2127 3 5 that 
+: 2131 3 5 lil
+: 2135 3 -2 lies 
+: 2139 3 -2 died 
+: 2143 3 -2 by 
+: 2147 3 -2 win
+: 2151 3 -2 ter 
+: 2155 2 -2 then
+- 2157
+: 2158 3 -2 They 
+: 2162 3 -2 bloomed 
+: 2166 3 -2 a
+: 2170 3 -2 gain 
+: 2174 2 0 in 
+: 2177 7 -3 spring, 
+: 2185 4 0 my 
+: 2190 3 5 first 
+: 2194 7 7 heart
+: 2202 12 5 break
+- 2214
+: 2218 3 0 Marked 
+: 2222 3 5 the 
+: 2226 3 7 end 
+: 2230 3 9 of 
+: 2234 2 7 my 
+: 2237 3 5 girl
+: 2241 4 2 hood
+- 2245
+: 2246 3 5 We’ll 
+: 2250 3 5 ne
+: 2254 3 5 ver 
+: 2258 2 5 go 
+: 2261 3 -2 back 
+: 2265 3 -2 to 
+: 2269 3 -2 our
+- 2272
+: 2273 3 -2 Cas
+: 2277 3 -2 tle 
+: 2281 3 -2 in 
+: 2285 3 -2 Hol
+: 2289 2 -3 ly
+: 2292 20 -3 wood
+E
