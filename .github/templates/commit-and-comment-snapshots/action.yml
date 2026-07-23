@@ -62,10 +62,10 @@ runs:
       env:
         BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
       run: pnpm visual-diff:comment
-    # A single "sticky" comment per job (identified by a hidden marker) is
-    # upserted so only the latest gallery is ever shown, and removed once the
-    # snapshots are back in sync - rather than stacking a new comment per run.
-    - name: Upsert or remove visual diff comment
+    # A single comment per job (identified by a hidden marker) is kept: any prior one is
+    # deleted and replaced with a fresh comment (not edited in place) so the PR author gets
+    # a notification, and removed entirely once the snapshots are back in sync.
+    - name: Replace or remove visual diff comment
       uses: actions/github-script@v8
       env:
         COMMENT_BODY: ${{ inputs.comment-body }}
@@ -105,7 +105,6 @@ runs:
           const body = `${process.env.COMMENT_BODY}\n\n[${process.env.COMMENT_LINK_TEXT}](${runUrl})${gallery}\n\n${marker}`;
 
           if (existing) {
-            await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
-          } else {
-            await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
           }
+          await github.rest.issues.createComment({ owner, repo, issue_number, body });
