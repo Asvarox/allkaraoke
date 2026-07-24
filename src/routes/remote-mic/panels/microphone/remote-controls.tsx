@@ -10,23 +10,12 @@ import { serverRpc } from '~/modules/remote-mic/network/client';
 import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
 import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
 import NumericInput from '~/routes/remote-mic/components/numeric-input';
+import { remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
 
 interface Props {
   control: ControlDescriptor;
   onActivate: (name: string) => void;
 }
-
-/**
- * Slightly darker background for the remote-mic keyboard's switch/checkbox controls, so they stand
- * out a touch more against the panel. Buttons keep the standard background — they already read as
- * distinct controls via their icon/label layout, so the extra contrast is only needed on
- * `Switcher`/`Checkbox`, which sit flush with the panel otherwise.
- *
- * `disabled:bg-gray-500!` re-asserts the base button's disabled colour: our darker background is a
- * plain (higher-priority) class that `twMerge` would otherwise let win even for disabled controls,
- * washing out the greyed-out look.
- */
-const remoteSelectorBackground = 'bg-black/65! disabled:bg-gray-500!';
 
 /**
  * Renders a single mirrored control on the remote mic using the SAME components the host screen

@@ -1,9 +1,13 @@
 import { ComponentProps, ReactNode } from 'react';
 import { twc } from 'react-twc';
+import { twMerge } from 'tailwind-merge';
 
 import { InputWrapper } from '~/modules/elements/akui/input-wrapper';
+import { remoteControlHeight, remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
 
-interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
+interface Props extends Omit<ComponentProps<typeof Container>, 'onChange' | 'className'> {
+  /** Narrowed to a plain string (twc types it far wider) so it can be fed to `twMerge`. */
+  className?: string;
   unit?: string;
   value: number;
   onChange: (newValue: number) => void;
@@ -24,7 +28,9 @@ function NumericInput({
 }: Props) {
   return (
     <InputWrapper info={info}>
-      <Container className={`${className} shadow-focusable rounded-xl`} {...props}>
+      <Container
+        className={twMerge('shadow-focusable rounded-xl', remoteControlHeight, remoteSelectorBackground, className)}
+        {...props}>
         <Button
           onClick={() => onChange(value - step)}
           disabled={disabled}
@@ -49,6 +55,9 @@ function NumericInput({
 }
 export default NumericInput;
 
-const Button = twc.button`typography h-14 border-none px-5 py-1 text-xl disabled:opacity-50`;
+// `h-full` so the steppers fill whatever height the container was given, rather than pinning it.
+const Button = twc.button`typography h-full border-none bg-transparent px-5 py-1 text-xl disabled:opacity-50`;
 
-const Container = twc.div`typography flex items-center justify-self-center bg-black`;
+// Full width and the shared control height/background, so a stepper lines up with the buttons,
+// switchers and checkboxes it sits among on the remote.
+const Container = twc.div`typography flex w-full items-center`;

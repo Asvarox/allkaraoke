@@ -20,6 +20,7 @@ import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-s
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import { HelpEntry, KeyboardLayoutMode } from '~/routes/keyboard-help/context';
 import { assertNever } from '~/routes/keyboard-help/controls';
+import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
 import RemoteControl from '~/routes/remote-mic/panels/microphone/remote-controls';
 import RemoteSongSearch from '~/routes/remote-mic/panels/microphone/remote-song-search';
 
@@ -86,13 +87,16 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 // bar without the whole panel scrolling; top/bottom shadows fade in to signal more content off-edge.
 export function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   const controls = keyboard.controls ?? [];
+  // A screen can name its own header glyph (e.g. pause for the pause menu, play for skip intro);
+  // anything that doesn't falls back to the generic keyboard icon.
+  const TitleIcon = keyboard.icon ? remoteButtonIcons[keyboard.icon] : Keyboard;
   return (
     <div data-test="remote-keyboard" data-mode="mirror" className="flex h-full min-h-0 w-full flex-col gap-3">
       {keyboard.title && (
         <div
           data-test="remote-keyboard-header"
           className="text-active flex shrink-0 items-center justify-center gap-2 text-lg font-bold landscape:hidden">
-          <Keyboard className="text-xl!" />
+          <TitleIcon className="text-xl!" />
           <span className="min-w-0 truncate">{keyboard.title}</span>
         </div>
       )}

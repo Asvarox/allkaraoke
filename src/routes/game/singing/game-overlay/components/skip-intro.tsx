@@ -38,7 +38,7 @@ function SkipIntro({ playerRef, isEnabled, onOpenPauseMenu }: Props) {
 
   // A one-action mirror: the prompt element carries the skip action (so physical Enter still skips),
   // plus a remote-only Back that opens the pause menu — the phone otherwise has no Back in mirror mode.
-  const { register } = useKeyboardNav({ enabled: canSkip, title: 'Skip intro' });
+  const { register } = useKeyboardNav({ enabled: canSkip, title: 'Skip intro', titleIcon: 'play' });
   // `focused` is stripped: the prompt is a plain HelpText, not a menu item, so it would leak onto the
   // DOM node — the mirror descriptor and physical-Enter handler are all we need from register here.
   const { focused: _focused, ...skipNav } = register('skip-intro', skipIntro, 'Skip intro', true, {

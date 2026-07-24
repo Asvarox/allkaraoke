@@ -6,7 +6,7 @@ import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import { menuBack, menuEnter, menuNavigate } from '~/modules/sound-manager';
 import { HelpEntry } from '~/routes/keyboard-help/context';
-import { ControlDescriptor, ControlInput } from '~/routes/keyboard-help/controls';
+import { ControlDescriptor, ControlInput, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 
 import useKeyboardHelp from './use-keyboard-help';
 
@@ -24,6 +24,8 @@ interface Options {
   additionalHelp?: HelpEntry;
   /** Screen name mirrored to the remote mic, shown as the header above its keyboard (mirror mode). */
   title?: string;
+  /** Glyph shown beside `title` on the remote; defaults to a generic keyboard icon. */
+  titleIcon?: RemoteButtonIcon;
 }
 
 interface KeyboardAction {
@@ -47,6 +49,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     direction = 'vertical',
     additionalHelp = {},
     title,
+    titleIcon,
   } = options;
 
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
@@ -92,6 +95,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             // Mirror mode — mutually exclusive with the arrow/accept fields.
             mode: 'mirror',
             title,
+            icon: titleIcon,
             back: onBackspace ? backspaceHelp : undefined,
             controls: committedControls,
             ...additionalHelp,
@@ -109,7 +113,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // every render and, via updateKeyboard, spin an infinite re-render loop. Their content is static.
     // `actions` is a stable ref, kept in the list for readability.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls, title],
+    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls, title, titleIcon],
   );
   useKeyboardHelp(help, enabled);
 

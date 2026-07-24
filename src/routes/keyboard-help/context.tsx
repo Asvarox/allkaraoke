@@ -3,7 +3,7 @@ import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react
 
 import ConnectionStatus from '~/modules/remote-mic/connection-status';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
-import { ControlDescriptor } from '~/routes/keyboard-help/controls';
+import { ControlDescriptor, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
 
 import KeyboardHelpView from './help-view';
@@ -33,6 +33,11 @@ export type HelpEntry = RegularHelpEntry & {
   controls?: ControlDescriptor[];
   /** Human-readable name of the mirrored screen, shown as the header above the remote-mic keyboard. */
   title?: string;
+  /**
+   * Glyph shown beside `title` in that header, named from `remoteButtonIcons`. Lets a screen say what
+   * it is at a glance (e.g. a pause glyph for the pause menu); defaults to a generic keyboard icon.
+   */
+  icon?: RemoteButtonIcon;
 };
 
 type KeyboardsList = Record<string, HelpEntry>;

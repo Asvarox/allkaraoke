@@ -55,7 +55,7 @@ function SkipOutro({ onSongEnd, isEnabled, onOpenPauseMenu }: Props) {
 
   // A one-action mirror: the prompt element carries the skip action (so physical Enter still skips),
   // plus a remote-only Back that opens the pause menu — the phone otherwise has no Back in mirror mode.
-  const { register } = useKeyboardNav({ enabled: shouldBeVisible, title: 'Skip outro' });
+  const { register } = useKeyboardNav({ enabled: shouldBeVisible, title: 'Skip outro', titleIcon: 'play' });
   // `focused` is stripped: the prompt is a plain HelpText, not a menu item, so it would leak onto the DOM.
   const { focused: _focused, ...skipNav } = register('skip-outro', skipOutro, 'Skip outro', true, {
     control: { type: 'button', label: 'Skip outro' },

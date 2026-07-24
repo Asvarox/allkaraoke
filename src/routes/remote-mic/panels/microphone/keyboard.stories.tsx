@@ -88,6 +88,7 @@ PauseMenu.args = {
   keyboard: {
     mode: 'mirror',
     title: 'Pause menu',
+    icon: 'pause',
     controls: [
       { type: 'button', name: 'resume', label: 'Resume song', variant: 'back' },
       { type: 'button', name: 'restart', label: 'Restart song', icon: null },
@@ -132,6 +133,7 @@ SkipIntro.args = {
   keyboard: {
     mode: 'mirror',
     title: 'Skip intro',
+    icon: 'play',
     controls: [
       { type: 'button', name: 'skip-intro', label: 'Skip intro' },
       { type: 'button', name: 'pause', label: 'Pause menu', variant: 'back' },

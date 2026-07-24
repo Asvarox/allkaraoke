@@ -67,6 +67,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     // Shared hook: the pause list and the rate-song view render into it one at a time, so the header
     // tracks whichever is showing.
     title: rateSongOpen ? 'Rate the song' : 'Pause menu',
+    titleIcon: rateSongOpen ? undefined : 'pause',
   });
 
   const [isUnverifiedSongFlow, setIsUnverifiedSongFlow] = useState(false);
