@@ -117,6 +117,7 @@ function TextControl({ control }: { control: Extract<ControlDescriptor, { type: 
       placeholder={control.placeholder}
       value={value}
       onChange={setValue}
+      disabled={control.disabled}
       className={remoteSelectorBackground}
       data-test={`control-${control.name}`}
       data-control-type="text"
@@ -141,7 +142,7 @@ function InputLagControl({ control }: { control: Extract<ControlDescriptor, { ty
 
   return (
     <div data-test={`control-${control.name}`} data-control-type="input-lag">
-      <NumericInput value={value} onChange={change} unit="ms" data-test="game-input-lag" />
+      <NumericInput value={value} onChange={change} disabled={control.disabled} unit="ms" data-test="game-input-lag" />
     </div>
   );
 }

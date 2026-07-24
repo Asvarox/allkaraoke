@@ -164,6 +164,33 @@ describe('useKeyboardNav mirror mode', () => {
     expect(onRename).toHaveBeenCalledExactlyOnceWith('New name');
   });
 
+  it('drops a value callback once its control is no longer registered', () => {
+    const onRename = vitest.fn();
+    let renameRegistered = true;
+    const { rerender } = setup((nav) => {
+      if (renameRegistered) {
+        nav.register('rename', () => {}, 'Rename', false, {
+          control: { type: 'text', label: 'Rename', value: '' },
+          onValueChange: onRename,
+        });
+      }
+      nav.register('select', () => {}, 'Select', true, {
+        control: { type: 'button', label: 'Select song' },
+      });
+    });
+
+    renameRegistered = false;
+    rerender();
+
+    // A value edit can reach the host long after the screen moved on — it must not write to a
+    // control that is no longer on screen.
+    act(() => {
+      events.remoteControlValueChanged.dispatch('rename', 'Late edit');
+    });
+
+    expect(onRename).not.toHaveBeenCalled();
+  });
+
   it('emits text and input-lag descriptors with full coverage', () => {
     const { published } = setup((nav) => {
       nav.register('rename', () => {}, 'Rename', false, {

@@ -55,7 +55,17 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   const actions = useRef<Record<string, KeyboardAction>>({});
   // Value callbacks for value-bearing controls (e.g. text fields), keyed by register() name. Kept
   // separate from `actions` because they take the remote-supplied value rather than firing a tap.
+  // Staged per render (`newValueActions`) and swapped in wholesale below, rather than accumulated:
+  // a value edit can arrive from the phone long after the user typed it, and the screen may have
+  // changed in between — rebuilding the registry each render means a control that is gone (or became
+  // disabled, which returns from `register` before staging) can no longer be written to.
   const valueActions = useRef<Record<string, ValueCallback>>({});
+  const newValueActions = useRef<Record<string, ValueCallback>>({});
+  // Cleared at the START of every render (not in the effect below): React can render without flushing
+  // our effect, and a buffer cleared only on commit would carry that render's entries into the next
+  // one — resurrecting a control that has since disappeared. Assigning a fresh object also means the
+  // set already handed to `valueActions` is never mutated afterwards.
+  newValueActions.current = {};
 
   // Mirror mode: descriptors collected from register({ control }) calls. `newControls` accumulates
   // during the current render; the committed set lives in STATE (not a ref) so the `help` memo
@@ -185,7 +195,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     }
 
     if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
-    if (onValueChange) valueActions.current[name] = onValueChange;
+    if (onValueChange) newValueActions.current[name] = onValueChange;
 
     // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
     // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
@@ -254,6 +264,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const nextControls = fullCoverage ? collected : [];
     newControls.current = [];
     remoteOnlyNames.current = new Set();
+    // Swap in this render's value callbacks, dropping any control that is no longer registered.
+    valueActions.current = newValueActions.current;
     // Only update state when the committed set actually changed — an empty→empty no-op keeps classic
     // screens from re-registering (which would re-order them ahead of others in `.at(-1)` selection).
     setCommittedControls((prev) => (sameControls(prev, nextControls) ? prev : nextControls));

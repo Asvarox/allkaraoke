@@ -107,6 +107,7 @@ RateSong.args = {
     controls: [
       { type: 'checkbox', name: 'not-in-sync', label: 'Lyrics are not in sync', checked: false },
       { type: 'checkbox', name: 'bad-lyrics', label: 'Wrong lyrics, missing spaces etc.', checked: true },
+      { type: 'checkbox', name: 'too-quiet', label: 'Too quiet', checked: false },
       { type: 'checkbox', name: 'too-loud', label: 'Too loud', checked: false },
       { type: 'button', name: 'submit', label: 'Submit and exit', icon: 'confirm' },
       { type: 'button', name: 'back', label: 'Back', variant: 'back' },

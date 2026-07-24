@@ -19,7 +19,9 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
   const playerNames = useRecentPlayerNames();
 
   const save = (name: string) => {
-    if (name.trim().length && name.trim() !== score.name) onSave(singSetupId, score.score, score.name, name);
+    // Save the trimmed value, not the raw one — it's what the check above validates against.
+    const trimmed = name.trim();
+    if (trimmed.length && trimmed !== score.name) onSave(singSetupId, score.score, score.name, trimmed);
   };
 
   const onBlur = () => save(newName);
