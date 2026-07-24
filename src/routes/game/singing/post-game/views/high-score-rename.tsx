@@ -18,12 +18,23 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
   const [newName, setNewName] = useState('');
   const playerNames = useRecentPlayerNames();
 
-  const onBlur = () => {
-    if (newName.trim().length && newName.trim() !== score.name) onSave(singSetupId, score.score, score.name, newName);
+  const save = (name: string) => {
+    // Save the trimmed value, not the raw one — it's what the check above validates against.
+    const trimmed = name.trim();
+    if (trimmed.length && trimmed !== score.name) onSave(singSetupId, score.score, score.name, trimmed);
   };
+
+  const onBlur = () => save(newName);
 
   const onActive = () => {
     inputRef.current?.element?.focus();
+  };
+
+  // A name edited on the remote mic arrives here: mirror it into the on-screen field and persist it
+  // right away (the phone never "blurs", so we can't wait for onBlur to save it).
+  const onRemoteRename = (name: string) => {
+    setNewName(name);
+    save(name);
   };
 
   return (
@@ -35,7 +46,10 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
       value={newName}
       label=""
       ref={inputRef}
-      {...register(`highscore-rename-${index}`, onActive)}
+      {...register(`highscore-rename-${index}`, onActive, undefined, false, {
+        control: { type: 'text', label: 'Rename', value: newName, placeholder: score.name },
+        onValueChange: onRemoteRename,
+      })}
       placeholder={score.name}
       data-test={`input-edit-highscore`}
       data-original-name={score.name}

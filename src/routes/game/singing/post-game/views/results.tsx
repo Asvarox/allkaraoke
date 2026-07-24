@@ -5,7 +5,7 @@ import { GAME_MODE, HighScoreEntity, SingSetup } from '~/interfaces';
 import CameraManager from '~/modules/camera/camera-manager';
 import { Button } from '~/modules/elements/akui/button';
 import { sumDetailedScore } from '~/modules/game-engine/game-state/helpers/calculate-score';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
 import CameraRoll from '~/routes/game/singing/post-game/views/results/camera-roll';
 import { CameraRollPlaceholder } from '~/routes/game/singing/post-game/views/results/camera-roll-placeholder';
@@ -44,7 +44,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
     }
   };
 
-  const { register } = useKeyboardNav();
+  const { register } = useKeyboardNav({ title: 'Your score' });
 
   const isCoop = singSetup.mode === GAME_MODE.CO_OP;
   const finalPlayers = isCoop ? [{ ...players[0], name: players.map((player) => player.name).join(', ') }] : players;
@@ -93,14 +93,35 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
           )}
         </div>
       </div>
-      <Button
-        {...register('next-button', () => nextStep(), undefined, true)}
-        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
-        size="small"
-        className="w-full text-2xl lg:ml-auto lg:w-5/14 lg:text-3xl xl:text-4xl 2xl:mt-auto">
-        {isAnimFinished ? 'Next' : 'Skip'}
-      </Button>
+      <NextButton register={register} isAnimFinished={isAnimFinished} onClick={nextStep} />
     </>
+  );
+}
+
+/**
+ * Its own component so `register` runs during THIS render rather than the parent's: a register()
+ * call inline in the parent's JSX runs before any child renders, which would place this button ahead
+ * of the camera-roll placeholder above it — both in arrow navigation and in the control list
+ * mirrored to the remote mic, neither of which would then match what's on screen.
+ */
+function NextButton({
+  register,
+  isAnimFinished,
+  onClick,
+}: {
+  register: RegisterFunc;
+  isAnimFinished: boolean;
+  onClick: () => void;
+}) {
+  const label = isAnimFinished ? 'Next' : 'Skip';
+  return (
+    <Button
+      {...register('next-button', onClick, undefined, true, { control: { type: 'button', label } })}
+      data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
+      size="small"
+      className="w-full text-2xl lg:ml-auto lg:w-5/14 lg:text-3xl xl:text-4xl 2xl:mt-auto">
+      {label}
+    </Button>
   );
 }
 

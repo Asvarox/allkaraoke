@@ -131,12 +131,15 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player2.name);
   });
 
+  // The in-game screens (skip intro, pause menu) mirror their controls to the remote mic, so the
+  // remote has no arrow pad or Enter button to drive them with — use the regular keyboard instead.
+  // Remote-side mirror behaviour is covered by remote-mics-keyboard-mirror.spec.ts.
   await test.step('Check if restart song is possible', async () => {
     await expect(pages.gamePage.getSongLyricsForPlayerElement(player1.num)).toBeVisible({ timeout: 10_000 });
-    await expect(remoteMic1.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled();
-    await remoteMic1.remoteMicMainPage.goBackByKeyboard();
+    await expect(pages.gamePage.skipIntroElement).toBeVisible();
+    await pages.gamePage.goToPauseMenuByKeyboard();
     await expect(pages.gamePage.restartButton).toBeVisible();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song', remoteMic2._page);
+    await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song');
   });
 
   await test.step('Play song', async () => {
@@ -148,7 +151,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await page.waitForTimeout(1500);
-    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
+    // Skip intro is mirrored to the remote, so the remote has no generic Enter button any more.
+    await page.keyboard.press('Enter');
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
@@ -160,13 +164,15 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
   });
 
+  // The post-game screens mirror their controls to the remote too, so step through them with the
+  // regular keyboard (each screen's default-focused button is the one we want).
   await test.step('Go to select new song', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await page.keyboard.press('Enter');
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await page.keyboard.press('Enter');
     await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await page.keyboard.press('Enter');
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
   });
 });

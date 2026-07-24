@@ -46,7 +46,10 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
               <Button
                 subtleFocused
                 className="w-full p-4"
-                {...register('enable-camera', onConfirm, undefined, false, { disabled: loading })}>
+                {...register('enable-camera', onConfirm, undefined, false, {
+                  disabled: loading,
+                  control: { type: 'button', label: 'Enable camera', icon: 'confirm' },
+                })}>
                 Enable camera
               </Button>
               <Typography className="text-sm sm:text-xs lg:text-sm">

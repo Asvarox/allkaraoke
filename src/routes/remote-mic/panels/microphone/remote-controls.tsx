@@ -1,27 +1,21 @@
 import { ArrowBack } from '@mui/icons-material';
+import { useEffect, useState } from 'react';
 
 import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Input } from '~/modules/elements/input';
 import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
+import useDebounce from '~/modules/hooks/use-debounce';
+import { serverRpc } from '~/modules/remote-mic/network/client';
 import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
 import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
+import NumericInput from '~/routes/remote-mic/components/numeric-input';
+import { remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
 
 interface Props {
   control: ControlDescriptor;
   onActivate: (name: string) => void;
 }
-
-/**
- * Slightly darker background for the remote-mic keyboard's switch/checkbox controls, so they stand
- * out a touch more against the panel. Buttons keep the standard background — they already read as
- * distinct controls via their icon/label layout, so the extra contrast is only needed on
- * `Switcher`/`Checkbox`, which sit flush with the panel otherwise.
- *
- * `disabled:bg-gray-500!` re-asserts the base button's disabled colour: our darker background is a
- * plain (higher-priority) class that `twMerge` would otherwise let win even for disabled controls,
- * washing out the greyed-out look.
- */
-const remoteSelectorBackground = 'bg-black/65! disabled:bg-gray-500!';
 
 /**
  * Renders a single mirrored control on the remote mic using the SAME components the host screen
@@ -80,7 +74,64 @@ export default function RemoteControl({ control, onActivate }: Props) {
           {control.label}
         </Checkbox>
       );
+    case 'text':
+      return <TextControl control={control} />;
+    case 'input-lag':
+      return <InputLagControl control={control} />;
     default:
       return assertNever(control);
   }
+}
+
+/**
+ * A mirrored free-form text field. Edits are kept locally so typing stays responsive, then streamed
+ * back to the host (debounced) via `setControlValue`, which routes them to the on-screen input's
+ * `onChange`. The phone is the editor here, so it doesn't echo the host value back onto itself.
+ */
+function TextControl({ control }: { control: Extract<ControlDescriptor, { type: 'text' }> }) {
+  const [value, setValue] = useState(control.value);
+  const debouncedValue = useDebounce(value, 150);
+
+  useEffect(() => {
+    if (debouncedValue !== control.value) void serverRpc.input.setControlValue(control.name, debouncedValue);
+    // Only re-send when the locally-edited value settles; `control.value` is the host's echo and must
+    // not itself trigger a send (that would loop).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [debouncedValue, control.name]);
+
+  return (
+    <Input
+      focused={false}
+      label={control.label}
+      placeholder={control.placeholder}
+      value={value}
+      onChange={setValue}
+      disabled={control.disabled}
+      className={remoteSelectorBackground}
+      data-test={`control-${control.name}`}
+      data-control-type="text"
+    />
+  );
+}
+
+/**
+ * The game's global input-lag stepper, mirrored to the phone. Wired straight to
+ * `serverRpc.settings.setInputLag` — the same RPC the remote settings screen uses — so it behaves
+ * identically wherever it appears. Local optimistic state keeps the stepper snappy while the host
+ * round-trips a fresh descriptor value.
+ */
+function InputLagControl({ control }: { control: Extract<ControlDescriptor, { type: 'input-lag' }> }) {
+  const [value, setValue] = useState(control.value);
+  useEffect(() => setValue(control.value), [control.value]);
+
+  const change = (newValue: number) => {
+    setValue(newValue);
+    void serverRpc.settings.setInputLag(newValue);
+  };
+
+  return (
+    <div data-test={`control-${control.name}`} data-control-type="input-lag">
+      <NumericInput value={value} onChange={change} disabled={control.disabled} unit="ms" data-test="game-input-lag" />
+    </div>
+  );
 }

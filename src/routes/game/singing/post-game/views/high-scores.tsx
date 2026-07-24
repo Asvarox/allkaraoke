@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 
 import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import { useEditScore } from '~/modules/songs/stats/hooks';
 import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
 
@@ -17,7 +17,7 @@ interface Props {
 }
 
 function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
-  const { register } = useKeyboardNav();
+  const { register } = useKeyboardNav({ title: 'High scores' });
   const editScore = useEditScore(song);
 
   return (
@@ -57,14 +57,27 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
         ))}
       </div>
       <div className="mt-auto">
-        <Button
-          className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
-          size="small"
-          {...register('play-next-song-button', onNextStep, undefined, true)}>
-          Select song
-        </Button>
+        <SelectSongButton register={register} onClick={onNextStep} />
       </div>
     </>
+  );
+}
+
+/**
+ * Its own component so `register` runs during THIS render rather than the parent's — otherwise it
+ * would be registered before the rename fields above it, putting it first in arrow navigation and in
+ * the control list mirrored to the remote mic instead of last, where it appears on screen.
+ */
+function SelectSongButton({ register, onClick }: { register: RegisterFunc; onClick: () => void }) {
+  return (
+    <Button
+      className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
+      size="small"
+      {...register('play-next-song-button', onClick, undefined, true, {
+        control: { type: 'button', label: 'Select song' },
+      })}>
+      Select song
+    </Button>
   );
 }
 

@@ -3,7 +3,7 @@ import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react
 
 import ConnectionStatus from '~/modules/remote-mic/connection-status';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
-import { ControlDescriptor } from '~/routes/keyboard-help/controls';
+import { ControlDescriptor, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
 
 import KeyboardHelpView from './help-view';
@@ -33,6 +33,11 @@ export type HelpEntry = RegularHelpEntry & {
   controls?: ControlDescriptor[];
   /** Human-readable name of the mirrored screen, shown as the header above the remote-mic keyboard. */
   title?: string;
+  /**
+   * Glyph shown beside `title` in that header, named from `remoteButtonIcons`. Lets a screen say what
+   * it is at a glance (e.g. a pause glyph for the pause menu); defaults to a generic keyboard icon.
+   */
+  icon?: RemoteButtonIcon;
 };
 
 type KeyboardsList = Record<string, HelpEntry>;
@@ -74,9 +79,10 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
     RemoteMicServer.publish('keyboard-layout', help);
   }, [name, help]);
 
-  // `title` is metadata for the remote-mic header only — keep it out of `rest` so it never leaks
-  // into the on-screen `KeyboardHelpView` (nor inflates its `hasContent` check).
-  const { mode, remote, controls, title, ...rest } = help ?? {};
+  // `title`/`icon` are metadata for the remote-mic header only — keep them out of `rest` so they
+  // never leak into the on-screen `KeyboardHelpView` (which renders one row per key and has no view
+  // for either), nor inflate its `hasContent` check.
+  const { mode, remote, controls, title, icon, ...rest } = help ?? {};
 
   const hasContent = !!Object.values(rest).length;
 
