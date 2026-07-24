@@ -144,4 +144,42 @@ describe('useKeyboardNav mirror mode', () => {
     expect(onCamera).toHaveBeenCalledTimes(1);
     expect(onGraphics).not.toHaveBeenCalled();
   });
+
+  it('routes a value pushed from the remote to the matching control onValueChange', () => {
+    const onRename = vitest.fn();
+    setup((nav) => {
+      nav.register('rename', () => {}, 'Rename', false, {
+        control: { type: 'text', label: 'Rename', value: '' },
+        onValueChange: onRename,
+      });
+      nav.register('select', () => {}, 'Select', true, {
+        control: { type: 'button', label: 'Select song' },
+      });
+    });
+
+    act(() => {
+      events.remoteControlValueChanged.dispatch('rename', 'New name');
+    });
+
+    expect(onRename).toHaveBeenCalledExactlyOnceWith('New name');
+  });
+
+  it('emits text and input-lag descriptors with full coverage', () => {
+    const { published } = setup((nav) => {
+      nav.register('rename', () => {}, 'Rename', false, {
+        control: { type: 'text', label: 'Rename', value: 'E-Ray', placeholder: 'Player 1' },
+        onValueChange: () => {},
+      });
+      nav.register('input-lag', () => {}, 'Input lag', false, {
+        control: { type: 'input-lag', label: 'Input lag', value: 150 },
+      });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([
+      { type: 'text', name: 'rename', label: 'Rename', value: 'E-Ray', placeholder: 'Player 1' },
+      { type: 'input-lag', name: 'input-lag', label: 'Input lag', value: 150 },
+    ]);
+  });
 });

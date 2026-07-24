@@ -1,15 +1,16 @@
 import { ComponentRef, useEffect, useRef, useState } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
-import { MenuButton } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
+import { NavButton } from '~/modules/elements/nav-controls';
 import GameState from '~/modules/game-engine/game-state/game-state';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import SongsService from '~/modules/songs/songs-service';
 import RateSong from '~/routes/game/singing/game-overlay/components/rate-song';
 import SelectInputModal from '~/routes/select-input/select-input-modal';
 import InputLag from '~/routes/settings/input-lag';
+import { InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 interface Props {
   onResume: () => void;
@@ -28,10 +29,17 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
   }, [menuRef]);
 
   const [isInputModalOpen, setIsInputModalOpen] = useState(false);
-
-  const { register } = useKeyboardNav({ enabled: !isInputModalOpen });
+  const [inputLag] = useSettingValue(InputLagSetting);
 
   const [rateSongOpen, setRateSongOpen] = useState(false);
+
+  const { register } = useKeyboardNav({
+    enabled: !isInputModalOpen,
+    // Shared hook: the pause list and the rate-song view render into it one at a time, so the header
+    // tracks whichever is showing.
+    title: rateSongOpen ? 'Rate the song' : 'Pause menu',
+  });
+
   const [isUnverifiedSongFlow, setIsUnverifiedSongFlow] = useState(false);
   const handleExit = async () => {
     const progress = GameState.getSongCompletionProgress();
@@ -58,35 +66,48 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
   return (
     <>
       {!rateSongOpen && (
-        <>
+        <KeyboardNavContext value={register}>
           <Menu>
-            <MenuButton {...register('button-resume-song', onResume)} ref={menuRef}>
+            {/* Resume closes the pause menu — the phone's equivalent of Back, hence the back variant. */}
+            <NavButton name="button-resume-song" variant="back" onClick={onResume} ref={menuRef}>
               Resume song
-            </MenuButton>
-            <MenuButton {...register('button-restart-song', onRestart)}>Restart song</MenuButton>
-            <MenuButton {...register('button-exit-song', handleExit)}>Exit song</MenuButton>
-            <MenuButton {...register('input-settings', () => setIsInputModalOpen(true))}>
+            </NavButton>
+            <NavButton name="button-restart-song" remoteIcon={null} onClick={onRestart}>
+              Restart song
+            </NavButton>
+            <NavButton name="button-exit-song" remoteIcon={null} onClick={handleExit}>
+              Exit song
+            </NavButton>
+            <NavButton name="input-settings" remoteIcon="settings" onClick={() => setIsInputModalOpen(true)}>
               Microphones settings
-            </MenuButton>
+            </NavButton>
             <hr />
             {}
-            <InputLag ref={inputLagRef} {...register('input-lag', onInputLagActive)} />
-            <MenuButton
-              {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
-              size="small">
+            <InputLag
+              ref={inputLagRef}
+              {...register('input-lag', onInputLagActive, 'Input lag', false, {
+                control: { type: 'input-lag', label: 'Input lag', value: inputLag },
+              })}
+            />
+            <NavButton
+              name="edit-song"
+              remoteIcon={null}
+              size="small"
+              onClick={() => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' })}>
               Edit song
-            </MenuButton>
+            </NavButton>
           </Menu>
           <SelectInputModal
             onClose={() => setIsInputModalOpen(false)}
             closeButtonText={'Back to Pause Menu'}
             open={isInputModalOpen}
           />
-        </>
+        </KeyboardNavContext>
       )}
       {rateSongOpen && (
         <RateSong
           onExit={onExit}
+          onBack={() => setRateSongOpen(false)}
           register={register}
           song={GameState.getSong()}
           isUnverifiedSong={isUnverifiedSongFlow}

@@ -82,3 +82,58 @@ ShortKeyboard.args = {
     ],
   },
 };
+
+export const PauseMenu = PhoneShell.bind({});
+PauseMenu.args = {
+  keyboard: {
+    mode: 'mirror',
+    title: 'Pause menu',
+    controls: [
+      { type: 'button', name: 'resume', label: 'Resume song', variant: 'back' },
+      { type: 'button', name: 'restart', label: 'Restart song', icon: null },
+      { type: 'button', name: 'exit', label: 'Exit song', icon: null },
+      { type: 'button', name: 'mics', label: 'Microphones settings', icon: 'settings' },
+      { type: 'input-lag', name: 'input-lag', label: 'Input lag', value: 100 },
+      { type: 'button', name: 'edit', label: 'Edit song', icon: null },
+    ],
+  },
+};
+
+export const RateSong = PhoneShell.bind({});
+RateSong.args = {
+  keyboard: {
+    mode: 'mirror',
+    title: 'Rate the song',
+    controls: [
+      { type: 'checkbox', name: 'not-in-sync', label: 'Lyrics are not in sync', checked: false },
+      { type: 'checkbox', name: 'bad-lyrics', label: 'Wrong lyrics, missing spaces etc.', checked: true },
+      { type: 'checkbox', name: 'too-loud', label: 'Too loud', checked: false },
+      { type: 'button', name: 'submit', label: 'Submit and exit', icon: 'confirm' },
+      { type: 'button', name: 'back', label: 'Back', variant: 'back' },
+    ],
+  },
+};
+
+export const HighScores = PhoneShell.bind({});
+HighScores.args = {
+  keyboard: {
+    mode: 'mirror',
+    title: 'High scores',
+    controls: [
+      { type: 'text', name: 'rename', label: 'Rename', value: '', placeholder: 'E-Ray' },
+      { type: 'button', name: 'select-song', label: 'Select song' },
+    ],
+  },
+};
+
+export const SkipIntro = PhoneShell.bind({});
+SkipIntro.args = {
+  keyboard: {
+    mode: 'mirror',
+    title: 'Skip intro',
+    controls: [
+      { type: 'button', name: 'skip-intro', label: 'Skip intro' },
+      { type: 'button', name: 'pause', label: 'Pause menu', variant: 'back' },
+    ],
+  },
+};

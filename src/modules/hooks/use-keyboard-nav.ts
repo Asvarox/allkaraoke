@@ -32,6 +32,9 @@ interface KeyboardAction {
   propName: string;
 }
 
+/** Applies a new value pushed from the remote to a value-bearing control (e.g. a text field). */
+type ValueCallback = (value: string) => void;
+
 /** Structural equality for committed control sets, so unchanged sets don't trigger a state update. */
 const sameControls = (a: ControlDescriptor[], b: ControlDescriptor[]) =>
   a.length === b.length && JSON.stringify(a) === JSON.stringify(b);
@@ -50,6 +53,9 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   const elementList = useRef<string[]>([]);
   const newElementList = useRef<string[]>([]);
   const actions = useRef<Record<string, KeyboardAction>>({});
+  // Value callbacks for value-bearing controls (e.g. text fields), keyed by register() name. Kept
+  // separate from `actions` because they take the remote-supplied value rather than firing a tap.
+  const valueActions = useRef<Record<string, ValueCallback>>({});
 
   // Mirror mode: descriptors collected from register({ control }) calls. `newControls` accumulates
   // during the current render; the committed set lives in STATE (not a ref) so the `help` memo
@@ -102,6 +108,13 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       action.callback();
       menuEnter.play();
     }
+  });
+
+  // Apply a value edited on the remote mic to the matching value control (e.g. a text field). No
+  // sound and no focus change — it's a continuous edit, not a discrete activation.
+  useEventEffect(events.remoteControlValueChanged, (name, value) => {
+    if (!enabled) return;
+    valueActions.current[name]?.(value);
   });
 
   const handleEnter = () => {
@@ -157,13 +170,22 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       disabled = false,
       control,
       remoteOnly = false,
-    }: { propName?: string; disabled?: boolean; control?: ControlInput; remoteOnly?: boolean } = {},
+      onValueChange,
+    }: {
+      propName?: string;
+      disabled?: boolean;
+      control?: ControlInput;
+      remoteOnly?: boolean;
+      /** For value controls (e.g. `text`): applies a value pushed from the remote mic. */
+      onValueChange?: ValueCallback;
+    } = {},
   ) => {
     if (disabled) {
       return { disabled, focused: false };
     }
 
     if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
+    if (onValueChange) valueActions.current[name] = onValueChange;
 
     // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
     // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.

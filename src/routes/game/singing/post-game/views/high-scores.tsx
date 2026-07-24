@@ -17,7 +17,7 @@ interface Props {
 }
 
 function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
-  const { register } = useKeyboardNav();
+  const { register } = useKeyboardNav({ title: 'High scores' });
   const editScore = useEditScore(song);
 
   return (
@@ -60,7 +60,9 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
         <Button
           className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
           size="small"
-          {...register('play-next-song-button', onNextStep, undefined, true)}>
+          {...register('play-next-song-button', onNextStep, undefined, true, {
+            control: { type: 'button', label: 'Select song' },
+          })}>
           Select song
         </Button>
       </div>

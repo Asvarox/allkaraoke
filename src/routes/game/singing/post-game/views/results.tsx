@@ -44,7 +44,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
     }
   };
 
-  const { register } = useKeyboardNav();
+  const { register } = useKeyboardNav({ title: 'Your score' });
 
   const isCoop = singSetup.mode === GAME_MODE.CO_OP;
   const finalPlayers = isCoop ? [{ ...players[0], name: players.map((player) => player.name).join(', ') }] : players;
@@ -94,7 +94,9 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
         </div>
       </div>
       <Button
-        {...register('next-button', () => nextStep(), undefined, true)}
+        {...register('next-button', () => nextStep(), undefined, true, {
+          control: { type: 'button', label: isAnimFinished ? 'Next' : 'Skip' },
+        })}
         data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}
         size="small"
         className="w-full text-2xl lg:ml-auto lg:w-5/14 lg:text-3xl xl:text-4xl 2xl:mt-auto">

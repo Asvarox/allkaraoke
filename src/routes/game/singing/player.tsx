@@ -188,6 +188,7 @@ function Player({
           }}>
           <GameOverlay
             isPauseMenuVisible={pauseMenuVisible}
+            onOpenPauseMenu={openPauseMenu}
             effectsEnabled={effectsEnabled}
             duration={duration}
             currentStatus={currentStatus}
