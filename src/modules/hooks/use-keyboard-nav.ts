@@ -67,14 +67,21 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   // set already handed to `valueActions` is never mutated afterwards.
   newValueActions.current = {};
 
-  // Mirror mode: descriptors collected from register({ control }) calls. `newControls` accumulates
-  // during the current render; the committed set lives in STATE (not a ref) so the `help` memo
-  // derives from the exact value React rendered with — a ref would go stale and flap classic/mirror.
+  // Mirror mode: descriptors collected from register({ control }) calls during the current render;
+  // the committed set lives in STATE (not a ref) so the `help` memo derives from the exact value
+  // React rendered with — a ref would go stale and flap classic/mirror.
   const newControls = useRef<ControlDescriptor[]>([]);
   // Names registered with `remoteOnly` — they live in `newControls` (so they keep the author's
   // ordering on the phone) but have no on-screen element, so they're subtracted from the coverage
   // count below. A Set, not a counter, so a double render can't inflate it.
   const remoteOnlyNames = useRef<Set<string>>(new Set());
+  // Same render-start reset as `newValueActions`, and for the same reason — but here it also fixes
+  // ORDER: register() de-duplicates by name, so entries left over from a render whose effect never
+  // flushed would pin the control order to whatever that earlier render happened to see, which may
+  // not be the on-screen order. Rebuilding per render makes the mirrored list always follow JSX
+  // order. Fresh instances also mean the set already handed to `committedControls` is never mutated.
+  newControls.current = [];
+  remoteOnlyNames.current = new Set();
   const [committedControls, setCommittedControls] = useState<ControlDescriptor[]>([]);
 
   const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
@@ -262,8 +269,6 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       );
     }
     const nextControls = fullCoverage ? collected : [];
-    newControls.current = [];
-    remoteOnlyNames.current = new Set();
     // Swap in this render's value callbacks, dropping any control that is no longer registered.
     valueActions.current = newValueActions.current;
     // Only update state when the committed set actually changed — an empty→empty no-op keeps classic
