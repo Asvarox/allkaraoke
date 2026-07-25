@@ -173,29 +173,6 @@
       "unplugged": true
     }
   },
-  "pnpm": {
-    "overrides": {
-      "@babel/core": "7.29.6",
-      "ajv@6.12.6": "6.15.0",
-      "brace-expansion@1.1.12": "1.1.15",
-      "diff": "4.0.4",
-      "esbuild@0.27.3": "0.28.1",
-      "express": "4.22.2",
-      "form-data": "2.5.6",
-      "js-yaml": "4.2.0",
-      "lodash": "4.18.1",
-      "minimatch@3.1.2": "3.1.5",
-      "path-to-regexp@0.1.12": "0.1.13",
-      "picomatch@2.3.1": "2.3.2",
-      "picomatch@4.0.3": "4.0.4",
-      "shell-quote": "1.8.4",
-      "smol-toml": "1.6.1",
-      "webpack": "5.104.1",
-      "ws": "8.21.0",
-      "yaml@1.10.2": "1.10.3",
-      "yaml@2.5.1": "2.8.3"
-    }
-  },
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
   "license": "MIT"
 }
