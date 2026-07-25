@@ -1,5 +1,5 @@
 import { captureException } from '@sentry/react';
-import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
@@ -92,6 +92,22 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   remoteOnlyNames.current = new Set();
   screenOnlyNames.current = new Set();
   const [committedControls, setCommittedControls] = useState<ControlDescriptor[]>([]);
+
+  // Forces a re-render of this component so `register` can rebuild the mirrored set — see the
+  // republish check in `register` for when and why that's needed.
+  //
+  // Deferred to a microtask because `register` runs during the CHILD's render, and React forbids
+  // updating another component mid-render. Coalesced so a burst of changed controls costs one render.
+  const [, requestRepublish] = useReducer((token: number) => token + 1, 0);
+  const republishQueued = useRef(false);
+  const scheduleRepublish = () => {
+    if (republishQueued.current) return;
+    republishQueued.current = true;
+    queueMicrotask(() => {
+      republishQueued.current = false;
+      requestRepublish();
+    });
+  };
 
   const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
   const help = useMemo<HelpEntry>(
@@ -222,9 +238,28 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
     // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
     // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
-    if (control && !hideOnRemote && !newControls.current.some((c) => c.name === name)) {
-      newControls.current.push({ ...control, name });
-      if (remoteOnly) remoteOnlyNames.current.add(name);
+    if (control && !hideOnRemote) {
+      const descriptor = { ...control, name } as ControlDescriptor;
+      const existing = newControls.current.findIndex((c) => c.name === name);
+      if (existing === -1) {
+        newControls.current.push(descriptor);
+        if (remoteOnly) remoteOnlyNames.current.add(name);
+      } else {
+        // Same name twice in one collection: a child re-rendered on its own, so this render never
+        // cleared it. Refresh in place, keeping the entry's position in the on-screen order.
+        newControls.current[existing] = descriptor;
+      }
+      // Republish check, against what was last PUBLISHED rather than against this render's
+      // collection. A control's state often lives in a child (rate-song's checkboxes are state inside
+      // RateSong, while the hook sits in PauseMenuContent), and on a child-only re-render nothing
+      // here runs: the effect below never fires, so the phone keeps the stale value even though the
+      // TV updates. The collection can't detect that on its own — React re-runs this render body
+      // WITHOUT re-rendering children whenever a state update turns out to be a no-op (a hook
+      // bailout, which also strips the effect), leaving the collection empty and every child-owned
+      // descriptor looking brand new. `committedControls` is state, so it always reflects what the
+      // phone actually has. Asking for a re-render replays the normal collect → commit → publish path.
+      const published = committedControls.find((c) => c.name === name);
+      if (published && !sameControls([published], [descriptor])) scheduleRepublish();
     }
     if (hideOnRemote) screenOnlyNames.current.add(name);
 
@@ -288,7 +323,10 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
         ),
       );
     }
-    const nextControls = fullCoverage ? collected : [];
+    // A COPY, not `collected` itself: `register` refreshes entries in place when a child re-renders
+    // on its own, and handing the live array to state would let that mutation rewrite the committed
+    // set too — the next comparison would then see "no change" and never publish.
+    const nextControls = fullCoverage ? [...collected] : [];
     // Swap in this render's value callbacks, dropping any control that is no longer registered.
     valueActions.current = newValueActions.current;
     // Only update state when the committed set actually changed — an empty→empty no-op keeps classic
