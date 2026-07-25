@@ -43,12 +43,15 @@ export const CameraRollPlaceholder = ({ register, onConfirm, loading }: Props) =
               <span className="text-md sm:text-sm lg:text-lg">
                 Get a <strong>timelapse</strong> of you singing
               </span>
+              {/* `hideOnRemote`: this triggers the browser's camera-permission prompt, which only
+                  appears on the machine running the game — mirroring it would give the phone a
+                  button that visibly does nothing. */}
               <Button
                 subtleFocused
                 className="w-full p-4"
                 {...register('enable-camera', onConfirm, undefined, false, {
                   disabled: loading,
-                  control: { type: 'button', label: 'Enable camera', icon: 'confirm' },
+                  hideOnRemote: true,
                 })}>
                 Enable camera
               </Button>

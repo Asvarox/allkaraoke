@@ -90,12 +90,11 @@ PauseMenu.args = {
     title: 'Pause menu',
     icon: 'pause',
     controls: [
-      { type: 'button', name: 'resume', label: 'Resume song', variant: 'back' },
+      { type: 'button', name: 'resume', label: 'Resume song', icon: 'play' },
       { type: 'button', name: 'restart', label: 'Restart song', icon: null },
       { type: 'button', name: 'exit', label: 'Exit song', icon: null },
       { type: 'button', name: 'mics', label: 'Microphones settings', icon: 'settings' },
       { type: 'input-lag', name: 'input-lag', label: 'Input lag', value: 100 },
-      { type: 'button', name: 'edit', label: 'Edit song', icon: null },
     ],
   },
 };
@@ -135,8 +134,8 @@ SkipIntro.args = {
     title: 'Skip intro',
     icon: 'play',
     controls: [
-      { type: 'button', name: 'skip-intro', label: 'Skip intro' },
-      { type: 'button', name: 'pause', label: 'Pause menu', variant: 'back' },
+      { type: 'button', name: 'skip-intro', label: 'Skip intro', icon: 'fastForward' },
+      { type: 'button', name: 'pause', label: 'Pause game', icon: 'pause' },
     ],
   },
 };

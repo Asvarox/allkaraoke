@@ -134,6 +134,11 @@ interface NavButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClic
    * override it (e.g. `'play'`), or `null` to show no trailing icon. Ignored for `variant="back"`.
    */
   remoteIcon?: RemoteButtonIcon | null;
+  /**
+   * Keep the button on screen but off the mirrored keyboard, without dropping the screen back to
+   * arrow navigation. For actions the phone can't meaningfully perform.
+   */
+  hideOnRemote?: boolean;
   onClick: () => void;
   isDefault?: boolean;
   disabled?: boolean;
@@ -146,6 +151,7 @@ export function NavButton({
   remoteLabel,
   variant,
   remoteIcon,
+  hideOnRemote = false,
   onClick,
   isDefault = false,
   disabled = false,
@@ -156,6 +162,7 @@ export function NavButton({
   const resolvedLabel = remoteLabel ?? (typeof children === 'string' ? children : '');
   const props = register(name, onClick, resolvedLabel, isDefault, {
     disabled,
+    hideOnRemote,
     control: { type: 'button', label: resolvedLabel, variant, icon: remoteIcon },
   });
   return (

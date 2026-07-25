@@ -78,6 +78,11 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   // ordering on the phone) but have no on-screen element, so they're subtracted from the coverage
   // count below. A Set, not a counter, so a double render can't inflate it.
   const remoteOnlyNames = useRef<Set<string>>(new Set());
+  // The mirror image of `remoteOnlyNames`: names registered with `hideOnRemote` exist on screen but
+  // deliberately send no descriptor (e.g. "Edit song", which opens a whole editor the phone can't
+  // drive). They'd otherwise read as missing coverage and drop the screen back to arrow mode, so
+  // they're discounted from the on-screen side of the tally below.
+  const screenOnlyNames = useRef<Set<string>>(new Set());
   // Same render-start reset as `newValueActions`, and for the same reason — but here it also fixes
   // ORDER: register() de-duplicates by name, so entries left over from a render whose effect never
   // flushed would pin the control order to whatever that earlier render happened to see, which may
@@ -85,6 +90,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   // order. Fresh instances also mean the set already handed to `committedControls` is never mutated.
   newControls.current = [];
   remoteOnlyNames.current = new Set();
+  screenOnlyNames.current = new Set();
   const [committedControls, setCommittedControls] = useState<ControlDescriptor[]>([]);
 
   const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
@@ -191,12 +197,18 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       disabled = false,
       control,
       remoteOnly = false,
+      hideOnRemote = false,
       onValueChange,
     }: {
       propName?: string;
       disabled?: boolean;
       control?: ControlInput;
       remoteOnly?: boolean;
+      /**
+       * Keep this control on screen but off the phone, without dropping the screen out of mirror
+       * mode. For actions the remote genuinely can't carry out (e.g. opening the song editor).
+       */
+      hideOnRemote?: boolean;
       /** For value controls (e.g. `text`): applies a value pushed from the remote mic. */
       onValueChange?: ValueCallback;
     } = {},
@@ -210,10 +222,11 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
     // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
     // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
-    if (control && !newControls.current.some((c) => c.name === name)) {
+    if (control && !hideOnRemote && !newControls.current.some((c) => c.name === name)) {
       newControls.current.push({ ...control, name });
       if (remoteOnly) remoteOnlyNames.current.add(name);
     }
+    if (hideOnRemote) screenOnlyNames.current.add(name);
 
     // A remote-only control exists solely on the phone (e.g. a "back" affordance the screen doesn't
     // show), so it never joins the on-screen navigation list and has no props to hand back.
@@ -264,11 +277,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // Remote-only descriptors are excluded from the tally — they have no on-screen element to cover.
     const collected = newControls.current;
     const screenControls = collected.length - remoteOnlyNames.current.size;
-    const fullCoverage = collected.length > 0 && screenControls === elementList.current.length;
+    // Controls explicitly hidden from the remote aren't expected to be covered, so they come off the
+    // on-screen side of the comparison.
+    const coverableElements = elementList.current.length - screenOnlyNames.current.size;
+    const fullCoverage = collected.length > 0 && screenControls === coverableElements;
     if (collected.length > 0 && !fullCoverage && process.env.NODE_ENV !== 'production') {
       captureException(
         new Error(
-          `useKeyboardNav: partial mirror coverage (${screenControls}/${elementList.current.length} controls); falling back to arrows`,
+          `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`,
         ),
       );
     }

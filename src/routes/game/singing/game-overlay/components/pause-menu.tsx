@@ -98,8 +98,8 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
       {!rateSongOpen && (
         <KeyboardNavContext value={register}>
           <Menu>
-            {/* Resume closes the pause menu — the phone's equivalent of Back, hence the back variant. */}
-            <NavButton name="button-resume-song" variant="back" onClick={onResume} ref={menuRef}>
+            {/* Resume starts playback again, so it reads as "play" rather than a generic back arrow. */}
+            <NavButton name="button-resume-song" remoteIcon="play" onClick={onResume} ref={menuRef}>
               Resume song
             </NavButton>
             <NavButton name="button-restart-song" remoteIcon={null} onClick={onRestart}>
@@ -114,9 +114,11 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
             <hr />
             {}
             <PauseMenuInputLag inputLagRef={inputLagRef} value={inputLag} onActive={onInputLagActive} />
+            {/* Hidden from the phone: it opens the full song editor, which is a desktop/TV-only
+                surface the remote can't drive. */}
             <NavButton
               name="edit-song"
-              remoteIcon={null}
+              hideOnRemote
               size="small"
               onClick={() => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' })}>
               Edit song

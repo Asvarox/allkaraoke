@@ -1,4 +1,4 @@
-import { ArrowForward, Check, Pause, PlayArrow, Settings, Shuffle } from '@mui/icons-material';
+import { ArrowForward, Check, FastForward, Pause, PlayArrow, Settings, Shuffle } from '@mui/icons-material';
 import { ComponentType } from 'react';
 
 /**
@@ -11,6 +11,7 @@ export const remoteButtonIcons = {
   forward: ArrowForward,
   play: PlayArrow,
   pause: Pause,
+  fastForward: FastForward,
   confirm: Check,
   shuffle: Shuffle,
   settings: Settings,

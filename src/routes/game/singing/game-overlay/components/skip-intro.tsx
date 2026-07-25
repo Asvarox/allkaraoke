@@ -42,7 +42,7 @@ function SkipIntro({ playerRef, isEnabled, onOpenPauseMenu }: Props) {
   // `focused` is stripped: the prompt is a plain HelpText, not a menu item, so it would leak onto the
   // DOM node — the mirror descriptor and physical-Enter handler are all we need from register here.
   const { focused: _focused, ...skipNav } = register('skip-intro', skipIntro, 'Skip intro', true, {
-    control: { type: 'button', label: 'Skip intro' },
+    control: { type: 'button', label: 'Skip intro', icon: 'fastForward' },
   });
 
   return !mobilePhoneMode && canSkip ? (
@@ -60,7 +60,7 @@ function SkipIntro({ playerRef, isEnabled, onOpenPauseMenu }: Props) {
       {onOpenPauseMenu && (
         <NavRemoteControl
           name="skip-intro-pause"
-          control={{ type: 'button', label: 'Pause menu', variant: 'back' }}
+          control={{ type: 'button', label: 'Pause game', icon: 'pause' }}
           onClick={onOpenPauseMenu}
         />
       )}

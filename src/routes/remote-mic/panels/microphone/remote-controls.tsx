@@ -1,11 +1,12 @@
-import { ArrowBack } from '@mui/icons-material';
+import { ArrowBack, Edit } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 
 import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Menu } from '~/modules/elements/akui/menu';
 import { Input } from '~/modules/elements/input';
-import { MenuButton } from '~/modules/elements/menu';
+import { MenuButton, MenuContainer } from '~/modules/elements/menu';
+import Modal from '~/modules/elements/modal';
 import { Switcher } from '~/modules/elements/switcher';
-import useDebounce from '~/modules/hooks/use-debounce';
 import { serverRpc } from '~/modules/remote-mic/network/client';
 import { assertNever, ControlDescriptor } from '~/routes/keyboard-help/controls';
 import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
@@ -84,33 +85,71 @@ export default function RemoteControl({ control, onActivate }: Props) {
 }
 
 /**
- * A mirrored free-form text field. Edits are kept locally so typing stays responsive, then streamed
- * back to the host (debounced) via `setControlValue`, which routes them to the on-screen input's
- * `onChange`. The phone is the editor here, so it doesn't echo the host value back onto itself.
+ * A mirrored free-form text field. The keyboard row itself is a plain button showing the current
+ * value; tapping it opens a modal holding the actual input and an explicit "Apply".
+ *
+ * A modal rather than an inline field because the mirrored keyboard is a column of tap targets: an
+ * always-live input would fight the on-screen keyboard for the little vertical room a phone has, and
+ * leave "is this saved yet?" ambiguous. Nothing reaches the host until Apply, so a half-typed name is
+ * never pushed to the TV — dismissing the modal discards the edit.
  */
 function TextControl({ control }: { control: Extract<ControlDescriptor, { type: 'text' }> }) {
-  const [value, setValue] = useState(control.value);
-  const debouncedValue = useDebounce(value, 150);
+  const [open, setOpen] = useState(false);
+  const [draft, setDraft] = useState(control.value);
 
-  useEffect(() => {
-    if (debouncedValue !== control.value) void serverRpc.input.setControlValue(control.name, debouncedValue);
-    // Only re-send when the locally-edited value settles; `control.value` is the host's echo and must
-    // not itself trigger a send (that would loop).
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedValue, control.name]);
+  const openEditor = () => {
+    // Start from whatever the host currently holds, not a stale draft from a dismissed edit.
+    setDraft(control.value);
+    setOpen(true);
+  };
+
+  const apply = () => {
+    void serverRpc.input.setControlValue(control.name, draft);
+    setOpen(false);
+  };
 
   return (
-    <Input
-      focused={false}
-      label={control.label}
-      placeholder={control.placeholder}
-      value={value}
-      onChange={setValue}
-      disabled={control.disabled}
-      className={remoteSelectorBackground}
-      data-test={`control-${control.name}`}
-      data-control-type="text"
-    />
+    <>
+      <MenuButton
+        size="small"
+        onClick={openEditor}
+        disabled={control.disabled}
+        rightIcon={<Edit />}
+        data-test={`control-${control.name}`}
+        data-control-type="text">
+        {control.value || control.placeholder || control.label}
+      </MenuButton>
+      {/* Mounted only while open, rather than left mounted with `open={false}`: `Modal` wraps its
+          backdrop and panel in a Fragment inside `AnimatePresence`, which can't track a multi-child
+          fragment — the exit animation runs to completion but the nodes are never removed, leaving a
+          full-screen `pointer-events: auto` overlay at opacity 0 that would swallow every tap on the
+          phone. Unmounting the whole modal drops those nodes with it; the cost is the 300ms exit
+          fade, which is no loss for a small utility dialog. */}
+      {open && (
+        <Modal open onClose={() => setOpen(false)} withPortal>
+          <MenuContainer className="gap-2.5">
+            <Menu.Header>{control.label}</Menu.Header>
+            <Input
+              focused={false}
+              label=""
+              autoFocus
+              placeholder={control.placeholder}
+              value={draft}
+              onChange={setDraft}
+              // Enter is "done" on a phone keyboard, so treat it as Apply rather than making the user
+              // dismiss the keyboard to reach the button.
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') apply();
+              }}
+              data-test="control-value-input"
+            />
+            <MenuButton onClick={apply} focused data-test="control-value-apply">
+              Apply
+            </MenuButton>
+          </MenuContainer>
+        </Modal>
+      )}
+    </>
   );
 }
 
@@ -131,7 +170,16 @@ function InputLagControl({ control }: { control: Extract<ControlDescriptor, { ty
 
   return (
     <div data-test={`control-${control.name}`} data-control-type="input-lag">
-      <NumericInput value={value} onChange={change} disabled={control.disabled} unit="ms" data-test="game-input-lag" />
+      {/* Unlike every other mirrored control the stepper shows no label of its own — just a number
+          between two arrows — so it needs one underneath saying what it adjusts. */}
+      <NumericInput
+        value={value}
+        onChange={change}
+        disabled={control.disabled}
+        unit="ms"
+        info={`${control.label} — increase if the sound lags behind the lyrics`}
+        data-test="game-input-lag"
+      />
     </div>
   );
 }

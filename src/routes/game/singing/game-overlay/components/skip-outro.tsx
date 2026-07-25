@@ -58,7 +58,7 @@ function SkipOutro({ onSongEnd, isEnabled, onOpenPauseMenu }: Props) {
   const { register } = useKeyboardNav({ enabled: shouldBeVisible, title: 'Skip outro', titleIcon: 'play' });
   // `focused` is stripped: the prompt is a plain HelpText, not a menu item, so it would leak onto the DOM.
   const { focused: _focused, ...skipNav } = register('skip-outro', skipOutro, 'Skip outro', true, {
-    control: { type: 'button', label: 'Skip outro' },
+    control: { type: 'button', label: 'Skip outro', icon: 'fastForward' },
   });
 
   return !mobilePhoneMode && canSkip ? (
@@ -74,7 +74,7 @@ function SkipOutro({ onSongEnd, isEnabled, onOpenPauseMenu }: Props) {
       {onOpenPauseMenu && (
         <NavRemoteControl
           name="skip-outro-pause"
-          control={{ type: 'button', label: 'Pause menu', variant: 'back' }}
+          control={{ type: 'button', label: 'Pause game', icon: 'pause' }}
           onClick={onOpenPauseMenu}
         />
       )}

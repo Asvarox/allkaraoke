@@ -145,6 +145,21 @@ describe('useKeyboardNav mirror mode', () => {
     expect(onGraphics).not.toHaveBeenCalled();
   });
 
+  it('stays in mirror mode when an on-screen control opts out with hideOnRemote', () => {
+    const { published } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      // On screen and arrow-navigable, but deliberately absent from the phone — it must not count as
+      // missing coverage and knock the screen back to the classic arrow pad.
+      nav.register('edit-song', () => {}, 'Edit song', false, { hideOnRemote: true });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([{ type: 'switch', name: 'graphics', label: 'Graphics', value: 'HIGH' }]);
+  });
+
   it('routes a value pushed from the remote to the matching control onValueChange', () => {
     const onRename = vitest.fn();
     setup((nav) => {
