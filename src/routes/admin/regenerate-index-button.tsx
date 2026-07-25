@@ -1,5 +1,6 @@
-import Sync from '@mui/icons-material/Sync';
 import { Button } from '@mui/material';
+
+import { Icon } from '~/modules/elements/akui/icon';
 
 interface Props {
   disabled?: boolean;
@@ -8,7 +9,7 @@ interface Props {
 
 export function RegenerateIndexButton({ disabled, onRegenerate }: Props) {
   return (
-    <Button startIcon={<Sync />} variant="outlined" onClick={onRegenerate} disabled={disabled}>
+    <Button startIcon={<Icon icon="ic:baseline-sync" />} variant="outlined" onClick={onRegenerate} disabled={disabled}>
       Reindex
     </Button>
   );

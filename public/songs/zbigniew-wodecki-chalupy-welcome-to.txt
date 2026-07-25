@@ -1,5 +1,5 @@
 #ARTIST:Zbigniew Wodecki
-#TITLE:Chalupy welcome to
+#TITLE:Chałupy welcome to
 #CREATOR:TeLiXj
 #BPM:255,5
 #YEAR:1985

@@ -1,7 +1,7 @@
-import { ExpandMore } from '@mui/icons-material';
 import { useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Selector } from '~/modules/elements/akui/selector';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import LanguagePickerBottomSheet from '~/routes/sing-a-song/song-selection/components/language-picker-bottom-sheet';
@@ -61,7 +61,7 @@ export default function PlaylistSelector({
           {...keyboardNavRegister?.('playlist-trigger', () => setPlaylistSheetOpen(true), 'Playlists')}
           onClick={() => setPlaylistSheetOpen(true)}>
           <span>{playlists.find((p) => p.name === selectedPlaylist)?.display ?? selectedPlaylist ?? 'All'}</span>
-          <ExpandMore className="h-5! w-5!" />
+          <Icon icon="ic:baseline-expand-more" size={5} />
         </Button>
         <PlaylistBottomSheet
           playlists={playlists}

@@ -1,7 +1,7 @@
-import { Warning } from '@mui/icons-material';
 import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
@@ -13,7 +13,7 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
   return (
     <MenuWithLogo supportedBrowsers>
       <Menu.Header>
-        <Warning fontSize="large" /> An error occurred :(
+        <Icon icon="ic:baseline-warning" className="text-[2.1875rem]" /> An error occurred :(
       </Menu.Header>
       {'message' in errorObj ? (
         <>

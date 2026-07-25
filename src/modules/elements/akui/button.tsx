@@ -1,22 +1,26 @@
-import { ComponentProps, ComponentType, HTMLProps, PropsWithChildren, ReactNode } from 'react';
+import { cloneElement, HTMLProps, isValidElement, PropsWithChildren, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
+import { ButtonSize, sizeToIconSize } from '~/modules/elements/akui/button-sizes';
 import useResponsiveValue from '~/modules/elements/akui/hooks/use-responsive-value';
+import { Icon, IconProps } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
 import { ResponsiveValue } from '~/modules/elements/akui/types';
 import isE2E from '~/modules/utils/is-e2-e';
 import { twx } from '~/utils/twx';
 
+export type { ButtonSize } from '~/modules/elements/akui/button-sizes';
+
 const sizeToClass = {
-  mini: 'h-10 text-md px-2.5',
-  small: 'h-14 text-lg mobile:h-12 mobile:text-md landscap:text-md',
-  regular: 'text-lg h-20 mobile:text-md mobile:h-16 landscap:text-md',
-  large: 'h-20 text-xl',
+  mini: 'h-10 text-md min-w-10',
+  small: 'h-14 text-lg mobile:h-12 mobile:text-md landscap:text-md min-w-14 mobile:min-w-12',
+  regular: 'text-lg h-20 min-w-20 mobile:text-md mobile:h-16 mobile:min-w-16 landscap:text-md',
+  large: 'h-20 text-xl min-w-20',
 };
 
 export const ButtonBase = twx(Box)((props) => {
   return [
-    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 bg-black/45 bg-black/55! px-4 font-bold uppercase duration-300`,
+    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 bg-black/45 bg-black/55! px-3 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
       ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
       : '',
@@ -31,9 +35,9 @@ export const ButtonBase = twx(Box)((props) => {
   ];
 });
 
-export type ButtonSize = 'large' | 'regular' | 'small' | 'mini';
-
-// Icon glyphs are sized off the button's own `size` so every button renders its icons consistently.
+// The gutter span itself can be sized via a Tailwind class (it's a plain `<span>`), but the icon
+// inside it can't — see `sizeToIconSize` in `button-sizes.ts` for why it's cloned with an explicit
+// `size` prop instead.
 const sizeToIconClass = {
   mini: 'size-5',
   small: 'size-6',
@@ -45,6 +49,7 @@ interface Props extends PropsWithChildren {
   title?: ReactNode;
   inactive?: boolean;
   readOnly?: boolean;
+  fullWidth?: boolean;
   focused?: boolean;
   subtleFocused?: boolean;
   size?: ResponsiveValue<ButtonSize>;
@@ -72,8 +77,8 @@ const additionalProps = ({ inactive, readOnly, focused, subtleFocused, leftIcon,
 const IconSlot = ({ size, children }: { size: ButtonSize; children?: ReactNode }) => (
   <span
     aria-hidden={children == null || undefined}
-    className={twMerge('flex shrink-0 items-center justify-center [&>svg]:size-full', sizeToIconClass[size])}>
-    {children}
+    className={twMerge('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
+    {isValidElement<Partial<IconProps>>(children) ? cloneElement(children, { size: sizeToIconSize[size] }) : children}
   </span>
 );
 
@@ -86,18 +91,27 @@ const ButtonContent = ({
   leftIcon,
   rightIcon,
   labelAlign = 'center',
+  iconOnly,
   children,
+  fullWidth,
 }: {
   size: ButtonSize;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   labelAlign?: 'center' | 'left';
+  iconOnly?: boolean;
   children?: ReactNode;
+  fullWidth?: boolean;
 }) => {
   if (leftIcon == null && rightIcon == null) return <>{children}</>;
+
+  if (iconOnly) {
+    return <IconSlot size={size}>{leftIcon || rightIcon}</IconSlot>;
+  }
   return (
     <span className="flex w-full items-center gap-2">
-      <IconSlot size={size}>{leftIcon}</IconSlot>
+      {/* create gutter for icons only for full-width buttons */}
+      {fullWidth || leftIcon ? <IconSlot size={size}>{leftIcon}</IconSlot> : null}
       {/* `flex-1` so the label owns all the room between the two gutters: that's what lets it be
           left-aligned against the icon. Centring is unchanged by it — the gutters are equal width, so
           text centred inside a filled middle lands exactly where the old `justify-between` put it.
@@ -106,7 +120,8 @@ const ButtonContent = ({
       <span className={twMerge('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
         {children}
       </span>
-      <IconSlot size={size}>{rightIcon}</IconSlot>
+      {/* create gutter for icons only for full-width buttons */}
+      {fullWidth || rightIcon ? <IconSlot size={size}>{rightIcon}</IconSlot> : null}
     </span>
   );
 };
@@ -118,12 +133,24 @@ export const Button = ({
   leftIcon,
   rightIcon,
   labelAlign,
+  fullWidth,
   ...props
 }: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => {
+  const iconOnly = Boolean(leftIcon || rightIcon) && !children;
   const resolvedSize = useResponsiveValue(size);
   return (
-    <ButtonBase data-size={resolvedSize} className={className} {...additionalProps(props)} as="button">
-      <ButtonContent size={resolvedSize} leftIcon={leftIcon} rightIcon={rightIcon} labelAlign={labelAlign}>
+    <ButtonBase
+      data-size={resolvedSize}
+      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      {...additionalProps(props)}
+      as="button">
+      <ButtonContent
+        size={resolvedSize}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+        labelAlign={labelAlign}
+        iconOnly={iconOnly}
+        fullWidth={fullWidth}>
         {children}
       </ButtonContent>
     </ButtonBase>
@@ -147,11 +174,6 @@ export const ButtonLink = ({
   );
 };
 
-Button.Icon = ({
-  Icon,
-  className,
-  ...rest
-}: {
-  Icon: ComponentType<{ className?: ComponentProps<'svg'>['className'] }>;
-  className?: ComponentProps<'svg'>['className'];
-}) => <Icon {...rest} className={twMerge('h-8! w-8!', className)} />;
+Button.Icon = ({ icon, className, ...rest }: { icon: string; className?: string }) => (
+  <Icon icon={icon} size={8} {...rest} className={className} />
+);

@@ -37,7 +37,7 @@
 }
 
 @utility stroke-text {
-    -webkit-text-stroke: 0.015em black;
+  -webkit-text-stroke: 0.015em black;
 }
 
 @utility animate-focused {

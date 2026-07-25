@@ -19,15 +19,16 @@ This skill eliminates the manual work of checking for outdated packages across d
 
 Use this skill when you want to:
 
-| Scenario | Trigger Phrases |
-|----------|-----------------|
-| Update dependencies | "update dependencies", "update deps", "update my packages" |
-| Check for outdated packages | "check for outdated packages", "what packages need updating" |
-| Fix dependency problems | "fix my dependency problems", "resolve dependency conflicts" |
-| Security audit | "audit dependencies for vulnerabilities", "check for security issues" |
-| Diagnose issues | "diagnose dependency issues", "why won't my dependencies install" |
+| Scenario                    | Trigger Phrases                                                       |
+| --------------------------- | --------------------------------------------------------------------- |
+| Update dependencies         | "update dependencies", "update deps", "update my packages"            |
+| Check for outdated packages | "check for outdated packages", "what packages need updating"          |
+| Fix dependency problems     | "fix my dependency problems", "resolve dependency conflicts"          |
+| Security audit              | "audit dependencies for vulnerabilities", "check for security issues" |
+| Diagnose issues             | "diagnose dependency issues", "why won't my dependencies install"     |
 
 **Quick Start:**
+
 ```
 update my dependencies
 ```
@@ -36,15 +37,15 @@ The skill will auto-detect your project type and handle everything.
 
 ## Supported Languages
 
-| Language | Package File | Update Tool | Audit Tool |
-|----------|--------------|-------------|------------|
-| Node.js | package.json | `taze` | `npm audit` |
-| Python | requirements.txt, pyproject.toml, Pipfile | `pip-review` | `safety`, `pip-audit` |
-| Go | go.mod | `go get -u` | `govulncheck` |
-| Rust | Cargo.toml | `cargo update` | `cargo audit` |
-| Ruby | Gemfile | `bundle update` | `bundle audit` |
-| Java | pom.xml, build.gradle | `mvn versions:*` | `mvn dependency-check:check` |
-| .NET | *.csproj | `dotnet outdated` | `dotnet list package --vulnerable` |
+| Language | Package File                              | Update Tool       | Audit Tool                         |
+| -------- | ----------------------------------------- | ----------------- | ---------------------------------- |
+| Node.js  | package.json                              | `taze`            | `npm audit`                        |
+| Python   | requirements.txt, pyproject.toml, Pipfile | `pip-review`      | `safety`, `pip-audit`              |
+| Go       | go.mod                                    | `go get -u`       | `govulncheck`                      |
+| Rust     | Cargo.toml                                | `cargo update`    | `cargo audit`                      |
+| Ruby     | Gemfile                                   | `bundle update`   | `bundle audit`                     |
+| Java     | pom.xml, build.gradle                     | `mvn versions:*`  | `mvn dependency-check:check`       |
+| .NET     | *.csproj                                  | `dotnet outdated` | `dotnet list package --vulnerable` |
 
 ## How It Works
 
@@ -75,12 +76,12 @@ The skill follows a systematic 7-step workflow:
 
 ### Update Classification
 
-| Update Type | Version Change | Action |
-|-------------|----------------|--------|
-| **Fixed** | No `^` or `~` prefix | Skip (intentionally pinned) |
-| **PATCH** | `1.2.3` to `1.2.4` | Auto-apply |
-| **MINOR** | `1.2.3` to `1.3.0` | Auto-apply |
-| **MAJOR** | `1.2.3` to `2.0.0` | Prompt user individually |
+| Update Type | Version Change       | Action                      |
+| ----------- | -------------------- | --------------------------- |
+| **Fixed**   | No `^` or `~` prefix | Skip (intentionally pinned) |
+| **PATCH**   | `1.2.3` to `1.2.4`   | Auto-apply                  |
+| **MINOR**   | `1.2.3` to `1.3.0`   | Auto-apply                  |
+| **MAJOR**   | `1.2.3` to `2.0.0`   | Prompt user individually    |
 
 ## Key Features
 
@@ -105,6 +106,7 @@ The skill automatically identifies your project by scanning for common package f
 ### Security Auditing
 
 Built-in security vulnerability scanning for each ecosystem:
+
 - Identifies vulnerabilities by severity (Critical, High, Moderate, Low)
 - Recommends appropriate response times based on severity
 - Integrates with ecosystem-specific audit tools
@@ -112,6 +114,7 @@ Built-in security vulnerability scanning for each ecosystem:
 ### Dependency Diagnosis
 
 Troubleshoots common issues:
+
 - Version conflicts
 - Peer dependency problems
 - Security vulnerabilities
@@ -162,6 +165,7 @@ scripts/run-taze.sh -r
 ### General Requirements
 
 Each language ecosystem requires its standard package manager:
+
 - Node.js: npm, yarn, or pnpm
 - Python: pip
 - Go: go modules
@@ -174,20 +178,21 @@ Each language ecosystem requires its standard package manager:
 
 For the best experience, install these optional but recommended tools:
 
-| Language | Tool | Install Command |
-|----------|------|-----------------|
-| Node.js | taze | `npm install -g taze` |
-| Python | pip-review | `pip install pip-review` |
-| Python | pip-audit | `pip install pip-audit` |
-| Go | govulncheck | `go install golang.org/x/vuln/cmd/govulncheck@latest` |
-| Rust | cargo-audit | `cargo install cargo-audit` |
-| Ruby | bundler-audit | `gem install bundler-audit` |
+| Language | Tool          | Install Command                                       |
+| -------- | ------------- | ----------------------------------------------------- |
+| Node.js  | taze          | `npm install -g taze`                                 |
+| Python   | pip-review    | `pip install pip-review`                              |
+| Python   | pip-audit     | `pip install pip-audit`                               |
+| Go       | govulncheck   | `go install golang.org/x/vuln/cmd/govulncheck@latest` |
+| Rust     | cargo-audit   | `cargo install cargo-audit`                           |
+| Ruby     | bundler-audit | `gem install bundler-audit`                           |
 
 ## Output
 
 ### Update Summary
 
 After running, you will see:
+
 - List of auto-applied minor/patch updates
 - Prompts for each major update decision
 - Final package count and versions
@@ -198,11 +203,11 @@ After running, you will see:
 Vulnerabilities are reported with severity levels:
 
 | Severity | Recommended Response |
-|----------|---------------------|
-| Critical | Fix immediately |
-| High | Fix within 24 hours |
-| Moderate | Fix within 1 week |
-| Low | Fix in next release |
+| -------- | -------------------- |
+| Critical | Fix immediately      |
+| High     | Fix within 24 hours  |
+| Moderate | Fix within 1 week    |
+| Low      | Fix in next release  |
 
 ## Best Practices
 
@@ -226,9 +231,9 @@ Vulnerabilities are reported with severity levels:
 ```json
 {
   "dependencies": {
-    "critical-lib": "1.2.3",      // Exact for critical dependencies
-    "stable-lib": "~1.2.3",       // Patch only for stable libraries
-    "modern-lib": "^1.2.3"        // Minor OK for actively maintained
+    "critical-lib": "1.2.3", // Exact for critical dependencies
+    "stable-lib": "~1.2.3", // Patch only for stable libraries
+    "modern-lib": "^1.2.3" // Minor OK for actively maintained
   }
 }
 ```
@@ -277,13 +282,13 @@ After running updates, verify:
 
 ## Related Tools
 
-| Tool | Language | Purpose | Link |
-|------|----------|---------|------|
-| taze | Node.js | Smart dependency updates | [GitHub](https://github.com/antfu-collective/taze) |
-| npm-check-updates | Node.js | Alternative to taze | [GitHub](https://github.com/raineorshine/npm-check-updates) |
-| pip-review | Python | Interactive pip updates | [GitHub](https://github.com/jgonggrijp/pip-review) |
-| cargo-edit | Rust | Cargo dependency management | [GitHub](https://github.com/killercup/cargo-edit) |
-| bundler-audit | Ruby | Security auditing | [GitHub](https://github.com/rubysec/bundler-audit) |
+| Tool              | Language | Purpose                     | Link                                                        |
+| ----------------- | -------- | --------------------------- | ----------------------------------------------------------- |
+| taze              | Node.js  | Smart dependency updates    | [GitHub](https://github.com/antfu-collective/taze)          |
+| npm-check-updates | Node.js  | Alternative to taze         | [GitHub](https://github.com/raineorshine/npm-check-updates) |
+| pip-review        | Python   | Interactive pip updates     | [GitHub](https://github.com/jgonggrijp/pip-review)          |
+| cargo-edit        | Rust     | Cargo dependency management | [GitHub](https://github.com/killercup/cargo-edit)           |
+| bundler-audit     | Ruby     | Security auditing           | [GitHub](https://github.com/rubysec/bundler-audit)          |
 
 ## License
 

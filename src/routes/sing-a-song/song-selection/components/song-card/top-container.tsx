@@ -1,9 +1,9 @@
-import { FiberNewOutlined, PeopleAlt as PeopleAltIcon, Star } from '@mui/icons-material';
 import dayjs from 'dayjs';
 import { ReactNode, useMemo } from 'react';
 
 import { SongPreview } from '~/interfaces';
 import { Chip } from '~/modules/elements/akui/chip';
+import { Icon } from '~/modules/elements/akui/icon';
 import { useSongStats } from '~/modules/songs/stats/hooks';
 import isSongRecentlyUpdated from '~/modules/songs/utils/is-song-recently-updated';
 import { getEurovisionYear, isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
@@ -25,8 +25,8 @@ export const TopContainer = (props: {
   return (
     <div className="absolute top-2 left-0 z-10 box-border flex w-full items-center justify-end gap-2 px-2">
       {props.song.tracksCount > 1 && (
-        <div data-test="multitrack-indicator" className={`${indicatorBase} mr-auto px-2 [&_svg]:h-6 [&_svg]:w-6`}>
-          <PeopleAltIcon />
+        <div data-test="multitrack-indicator" className={`${indicatorBase} mr-auto px-2`}>
+          <Icon icon="ic:baseline-people-alt" size={6} />
           &nbsp; Duet
         </div>
       )}
@@ -105,8 +105,12 @@ export const SongCardStatsIndicator = ({
         New
       </Chip>
     ) : (
-      <div className={`${base} overflow-hidden [&_svg]:h-7 [&_svg]:w-7 [&_svg]:fill-white`}>
-        {focused ? <span className="mt-0.5 px-2 leading-none">Added recently</span> : <FiberNewOutlined />}
+      <div className={`${base} overflow-hidden`}>
+        {focused ? (
+          <span className="mt-0.5 px-2 leading-none">Added recently</span>
+        ) : (
+          <Icon icon="ic:outline-fiber-new" size={7} className="fill-white" />
+        )}
       </div>
     )
   ) : isPopular && song.language.includes('English') ? (
@@ -115,9 +119,9 @@ export const SongCardStatsIndicator = ({
         Popular
       </Chip>
     ) : (
-      <div className={`${base} overflow-hidden [&_svg]:h-7 [&_svg]:w-7 [&_svg]:fill-[rgb(255,165,0)]`}>
+      <div className={`${base} overflow-hidden`}>
         {focused && <span className="mt-0.5 px-2 leading-none">Popular</span>}
-        <Star />
+        <Icon icon="ic:baseline-star" size={7} className="fill-[rgb(255,165,0)]" />
       </div>
     )
   ) : null;

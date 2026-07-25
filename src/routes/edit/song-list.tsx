@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
 import { Button, FormControlLabel, IconButton, Switch } from '@mui/material';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { useBackground } from '~/modules/elements/background-context';
 import NoPrerender from '~/modules/elements/no-prerender';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
@@ -69,7 +69,7 @@ export default function SongList() {
                   <>
                     <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })}>
                       <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
-                        <EditIcon />
+                        <Icon icon="ic:baseline-edit" />
                       </IconButton>
                     </Link>
                     <IconButton
@@ -87,7 +87,7 @@ export default function SongList() {
                       }}
                       data-test="download-song"
                       data-song={row.original.id}>
-                      <Download />
+                      <Icon icon="ic:baseline-download" />
                     </IconButton>
                     {!row.original.isDeleted && (
                       <IconButton
@@ -98,7 +98,7 @@ export default function SongList() {
                         }}
                         data-test="hide-song"
                         data-song={row.original.id}>
-                        <Visibility />
+                        <Icon icon="ic:baseline-visibility" />
                       </IconButton>
                     )}
                     {row.original.isDeleted && (
@@ -110,7 +110,7 @@ export default function SongList() {
                         }}
                         data-test="restore-song"
                         data-song={row.original.id}>
-                        <VisibilityOff />
+                        <Icon icon="ic:baseline-visibility-off" />
                       </IconButton>
                     )}
                     <IconButton
@@ -131,7 +131,7 @@ export default function SongList() {
                       }}
                       data-test="delete-song"
                       data-song={row.original.id}>
-                      <Delete />
+                      <Icon icon="ic:baseline-delete" />
                     </IconButton>
                   </>
                 )}

@@ -1,5 +1,4 @@
-import { Icon } from '@iconify-icon/react';
-
+import { Icon } from '~/modules/elements/akui/icon';
 import { MenuButton } from '~/modules/elements/menu';
 import MicAccessDeniedView from '~/modules/user-media/mic-access-denied-view';
 import userMediaService from '~/modules/user-media/user-media-service';

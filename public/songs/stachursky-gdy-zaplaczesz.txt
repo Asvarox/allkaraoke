@@ -1,5 +1,5 @@
 #ARTIST:Stachursky
-#TITLE:Gdy Zaplaczesz
+#TITLE:Gdy Zapłaczesz
 #CREATOR:jockel1974
 #BPM:104,1
 #YEAR:1999

@@ -1,8 +1,8 @@
-import { Icon } from '@iconify-icon/react';
 import { ComponentProps, createContext, forwardRef, useContext } from 'react';
 
 import { SongPreview } from '~/interfaces';
 import { Chip } from '~/modules/elements/akui/chip';
+import { Icon } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
 import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/song-flag';
 import { SongCardStatsIndicator } from '~/routes/sing-a-song/song-selection/components/song-card/top-container';

@@ -1,4 +1,3 @@
-import { Close, Search } from '@mui/icons-material';
 import { AnimatePresence, motion } from 'motion/react';
 import {
   ComponentRef,
@@ -14,6 +13,7 @@ import {
 import { useHotkeys } from 'react-hotkeys-hook';
 
 import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Input } from '~/modules/elements/input';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
@@ -129,7 +129,7 @@ export default function SearchBar({
               ref={searchInput}
               size={{ xs: 'mini', sm: 'small' }}
               focused={false}
-              label={<Search className="h-5! w-5!" />}
+              label={<Icon icon="ic:baseline-search" size={5} />}
               value={filters.search ?? ''}
               onChange={(val) => setSearch(val)}
               onFocus={() => setIsFocused(true)}
@@ -145,11 +145,12 @@ export default function SearchBar({
                 <button
                   type="button"
                   aria-label="Close search"
+                  className="flex"
                   onMouseDown={(e) => {
                     e.preventDefault();
                     closeSearch();
                   }}>
-                  <Close className="h-5! w-5! text-white" />
+                  <Icon icon="ic:baseline-close" size={5} className="text-white" />
                 </button>
               }
               data-test="search-input"
@@ -167,9 +168,9 @@ export default function SearchBar({
               type="button"
               aria-label="Search songs"
               className="shrink-0 animate-none"
-              {...keyboardNavRegister?.('search', () => setMobileSearchVisible(true), 'Search')}>
-              <Search className="h-5! w-5!" />
-            </Button>
+              leftIcon={<Icon icon="ic:baseline-search" size={5} />}
+              {...keyboardNavRegister?.('search', () => setMobileSearchVisible(true), 'Search')}
+            />
           </motion.div>
         )}
       </AnimatePresence>
@@ -183,7 +184,7 @@ export default function SearchBar({
       <Input
         ref={searchInput}
         focused={searchNavProps?.focused ?? false}
-        label={<Search className="h-5! w-5!" />}
+        label={<Icon icon="ic:baseline-search" size={5} />}
         value={filters.search ?? ''}
         onChange={(val) => setSearch(val)}
         onFocus={() => setIsFocused(true)}

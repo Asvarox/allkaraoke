@@ -1,6 +1,6 @@
-import { Warning } from '@mui/icons-material';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
@@ -51,7 +51,7 @@ export default memo(function NoiseDetection() {
         noiseDetected ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}>
       <div className="flex items-center gap-2 text-lg">
-        <Warning className="text-active" />
+        <Icon icon="ic:baseline-warning" className="text-active" />
         Noise detected
       </div>
       <hr />

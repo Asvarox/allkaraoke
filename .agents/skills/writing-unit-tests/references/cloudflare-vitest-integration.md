@@ -8,7 +8,7 @@ image: https://developers.cloudflare.com/dev-products-preview.png
 > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt  
 > Use this file to discover all available pages before exploring further.
 
-[Skip to content](#%5Ftop) 
+[Skip to content](#%5Ftop)
 
 # Write your first test
 
@@ -18,22 +18,27 @@ This guide will instruct you through getting started with the `@cloudflare/vites
 
 First, make sure that:
 
-* Your [compatibility date](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) is set to `2022-10-31` or later.
-* Your Worker using the ES modules format (if not, refer to the [migrate to the ES modules format](https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/) guide).
-* Vitest and `@cloudflare/vitest-pool-workers` are installed in your project as dev dependencies  
- npm  yarn  pnpm  bun  
-```  
-npm i -D vitest@^4.1.0 @cloudflare/vitest-pool-workers  
-```  
-```  
-yarn add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers  
-```  
-```  
-pnpm add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers  
-```  
-```  
-bun add -d vitest@^4.1.0 @cloudflare/vitest-pool-workers  
-```  
+- Your [compatibility date](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) is set to `2022-10-31` or later.
+- Your Worker using the ES modules format (if not, refer to the [migrate to the ES modules format](https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/) guide).
+- Vitest and `@cloudflare/vitest-pool-workers` are installed in your project as dev dependencies  
+  npm yarn pnpm bun
+
+```
+npm i -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+```
+
+```
+yarn add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+```
+
+```
+pnpm add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+```
+
+```
+bun add -d vitest@^4.1.0 @cloudflare/vitest-pool-workers
+```
+
 Note  
 The `@cloudflare/vitest-pool-workers` package requires Vitest 4.1 or later.
 
@@ -151,8 +156,8 @@ test/tsconfig.json
 
 We will use this simple Worker as an example. It returns a 404 response for the `/404` path and `"Hello World!"` for all other paths.
 
-* [  JavaScript ](#tab-panel-11571)
-* [  TypeScript ](#tab-panel-11572)
+- [ JavaScript ](#tab-panel-11571)
+- [ TypeScript ](#tab-panel-11572)
 
 src/index.js
 
@@ -204,8 +209,8 @@ export default {
 
 By importing the Worker we can write a unit test for its `fetch` handler.
 
-* [  JavaScript ](#tab-panel-11575)
-* [  TypeScript ](#tab-panel-11576)
+- [ JavaScript ](#tab-panel-11575)
+- [ TypeScript ](#tab-panel-11576)
 
 test/unit.spec.js
 
@@ -321,8 +326,8 @@ describe("Hello World worker", () => {
 
 You can use the `exports` object provided by `cloudflare:workers` to write an integration test. `exports.default.fetch()` calls the default export handler defined in the main Worker.
 
-* [  JavaScript ](#tab-panel-11573)
-* [  TypeScript ](#tab-panel-11574)
+- [ JavaScript ](#tab-panel-11573)
+- [ TypeScript ](#tab-panel-11574)
 
 test/integration.spec.js
 
@@ -380,10 +385,28 @@ When using `exports.default.fetch()` for integration tests, your Worker code run
 
 ## Related resources
 
-* For more complex examples of testing using `@cloudflare/vitest-pool-workers`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
-* [Configuration API reference](https://developers.cloudflare.com/workers/testing/vitest-integration/configuration/)
-* [Test APIs reference](https://developers.cloudflare.com/workers/testing/vitest-integration/test-apis/)
+- For more complex examples of testing using `@cloudflare/vitest-pool-workers`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
+- [Configuration API reference](https://developers.cloudflare.com/workers/testing/vitest-integration/configuration/)
+- [Test APIs reference](https://developers.cloudflare.com/workers/testing/vitest-integration/test-apis/)
 
 ```json
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"/directory/","name":"Directory"}},{"@type":"ListItem","position":2,"item":{"@id":"/workers/","name":"Workers"}},{"@type":"ListItem","position":3,"item":{"@id":"/workers/testing/","name":"Testing"}},{"@type":"ListItem","position":4,"item":{"@id":"/workers/testing/vitest-integration/","name":"Vitest integration"}},{"@type":"ListItem","position":5,"item":{"@id":"/workers/testing/vitest-integration/write-your-first-test/","name":"Write your first test"}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "item": { "@id": "/directory/", "name": "Directory" } },
+    { "@type": "ListItem", "position": 2, "item": { "@id": "/workers/", "name": "Workers" } },
+    { "@type": "ListItem", "position": 3, "item": { "@id": "/workers/testing/", "name": "Testing" } },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": { "@id": "/workers/testing/vitest-integration/", "name": "Vitest integration" }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": { "@id": "/workers/testing/vitest-integration/write-your-first-test/", "name": "Write your first test" }
+    }
+  ]
+}
 ```

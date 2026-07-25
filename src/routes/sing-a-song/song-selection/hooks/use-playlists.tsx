@@ -1,9 +1,9 @@
 // import isoCodeToCountry from '~/modules/utils/iso-code-to-country';
 // import eurovisionIcon from '~/routes/sing-a-song/song-selection/components/song-card/eurovision-icon.svg';
-import { List } from '@mui/icons-material';
 import { ReactElement, ReactNode, useMemo } from 'react';
 
 import { SongPreview } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { ClosableTooltip } from '~/modules/elements/tooltip';
 import useRemoteMicServerStatus from '~/modules/remote-mic/hooks/use-remote-mic-server-status';
@@ -120,7 +120,7 @@ export const usePlaylists = (
                 <Typography className="text-xl">
                   Add songs on your <strong>phone</strong> using{' '}
                   <strong>
-                    <List className="text-[1em]!" /> Song List
+                    <Icon icon="ic:baseline-list" className="text-[1em]!" /> Song List
                   </strong>{' '}
                   tab on the bottom of the screen
                 </Typography>

@@ -1,7 +1,7 @@
-import { ArrowBack } from '@mui/icons-material';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { SingSetup, SongPreview } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
@@ -178,7 +178,7 @@ export default function SongPreviewComponent({
             <button
               onClick={onExitKeyboardControl}
               className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-              <ArrowBack />
+              <Icon icon="ic:baseline-arrow-back" />
               <span className="text-xl font-bold">Sing a song</span>
             </button>
           </div>

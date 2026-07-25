@@ -1,4 +1,3 @@
-import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { memo, useState } from 'react';
 
 import { BottomSheet } from '~/modules/elements/akui/bottom-sheet';
@@ -41,7 +40,7 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
             <PlayerNumberCircle number={playerNumber} /> Change
           </>
         )}{' '}
-        <Button.Icon Icon={SwapHorizIcon} />
+        <Button.Icon icon="ic:baseline-swap-horiz" />
       </MenuButton>
       <BottomSheet open={isOpen} onClose={closeModal} title="Your color">
         <PlayerChangeModal id={RemoteMicClient.getClientId()!} playerNumber={playerNumber} onModalClose={closeModal} />

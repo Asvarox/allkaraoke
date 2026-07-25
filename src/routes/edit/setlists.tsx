@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { LockOpen, LockOutlined } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import createPersistedState from 'use-persisted-state';
 import { Link } from 'wouter';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { useBackground } from '~/modules/elements/background-context';
 import NoPrerender from '~/modules/elements/no-prerender';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
@@ -96,7 +96,8 @@ export default function Setlists() {
                       key={setlist.name}
                       data-test={`setlist-${setlist.name}`}>
                       <span className="pl-2">
-                        {setlist.isEditable ? <LockOpen /> : <LockOutlined />}&nbsp;
+                        {setlist.isEditable ? <Icon icon="ic:baseline-lock-open" /> : <Icon icon="ic:outline-lock" />}
+                        &nbsp;
                         <strong>{setlist.name}</strong> ({setlist.songList?.length} songs)
                       </span>
                       <Button

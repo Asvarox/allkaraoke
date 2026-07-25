@@ -1,6 +1,6 @@
-import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { ComponentProps } from 'react';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 
 import Ping from './ping';
@@ -25,9 +25,9 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
           className="mobile:w-4 mobile:h-4 m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white"
         />
       ) : status === 'unavailable' ? (
-        <ErrorIcon data-test="status-unavailable" style={{ fill: '#ff0000' }} />
+        <Icon icon="ic:baseline-error" data-test="status-unavailable" style={{ color: '#ff0000' }} />
       ) : (
-        <WarningIcon data-test="status-unstable" style={{ fill: '#f89400', stroke: 'black' }} />
+        <Icon icon="ic:baseline-warning" data-test="status-unstable" style={{ color: '#f89400', stroke: 'black' }} />
       )}
       {status !== 'ok' ? (
         <div

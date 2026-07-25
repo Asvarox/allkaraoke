@@ -1,9 +1,9 @@
-import { ArrowRight } from '@mui/icons-material';
 import { groupBy, uniqBy } from 'es-toolkit';
 import { ComponentProps, ReactEventHandler, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
 
 import { SongPreview } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Flag } from '~/modules/elements/flag';
 import useBaseUnitPx from '~/modules/hooks/use-base-unit-px';
 import { serverRpc } from '~/modules/remote-mic/network/client';
@@ -186,7 +186,8 @@ function RemoteSongList({ connectionStatus }: Props) {
                 data-song-count={song.length}
                 onClick={onClick}
                 left={
-                  <ArrowRight
+                  <Icon
+                    icon="ic:baseline-arrow-right"
                     className={`text-white transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
                   />
                 }

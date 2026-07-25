@@ -24,38 +24,38 @@ The skill auto-detects your project type and handles the rest.
 
 ## Triggers
 
-| Trigger | Example |
-|---------|---------|
-| Update dependencies | "update dependencies", "update deps" |
-| Check outdated | "check for outdated packages" |
-| Fix dependency issues | "fix my dependency problems" |
-| Security audit | "audit dependencies for vulnerabilities" |
-| Diagnose deps | "diagnose dependency issues" |
+| Trigger               | Example                                  |
+| --------------------- | ---------------------------------------- |
+| Update dependencies   | "update dependencies", "update deps"     |
+| Check outdated        | "check for outdated packages"            |
+| Fix dependency issues | "fix my dependency problems"             |
+| Security audit        | "audit dependencies for vulnerabilities" |
+| Diagnose deps         | "diagnose dependency issues"             |
 
 ---
 
 ## Supported Languages
 
-| Language | Package File | Update Tool | Audit Tool |
-|----------|--------------|-------------|------------|
-| **Node.js** | package.json | `taze` | `npm audit` |
-| **Python** | requirements.txt, pyproject.toml | `pip-review` | `safety`, `pip-audit` |
-| **Go** | go.mod | `go get -u` | `govulncheck` |
-| **Rust** | Cargo.toml | `cargo update` | `cargo audit` |
-| **Ruby** | Gemfile | `bundle update` | `bundle audit` |
-| **Java** | pom.xml, build.gradle | `mvn versions:*` | `mvn dependency:*` |
-| **.NET** | *.csproj | `dotnet outdated` | `dotnet list package --vulnerable` |
+| Language    | Package File                     | Update Tool       | Audit Tool                         |
+| ----------- | -------------------------------- | ----------------- | ---------------------------------- |
+| **Node.js** | package.json                     | `taze`            | `npm audit`                        |
+| **Python**  | requirements.txt, pyproject.toml | `pip-review`      | `safety`, `pip-audit`              |
+| **Go**      | go.mod                           | `go get -u`       | `govulncheck`                      |
+| **Rust**    | Cargo.toml                       | `cargo update`    | `cargo audit`                      |
+| **Ruby**    | Gemfile                          | `bundle update`   | `bundle audit`                     |
+| **Java**    | pom.xml, build.gradle            | `mvn versions:*`  | `mvn dependency:*`                 |
+| **.NET**    | *.csproj                         | `dotnet outdated` | `dotnet list package --vulnerable` |
 
 ---
 
 ## Quick Reference
 
-| Update Type | Version Change | Action |
-|-------------|----------------|--------|
-| **Fixed** | No `^` or `~` | Skip (intentionally pinned) |
-| **PATCH** | `x.y.z` → `x.y.Z` | Auto-apply |
-| **MINOR** | `x.y.z` → `x.Y.0` | Auto-apply |
-| **MAJOR** | `x.y.z` → `X.0.0` | Prompt user individually |
+| Update Type | Version Change    | Action                      |
+| ----------- | ----------------- | --------------------------- |
+| **Fixed**   | No `^` or `~`     | Skip (intentionally pinned) |
+| **PATCH**   | `x.y.z` → `x.y.Z` | Auto-apply                  |
+| **MINOR**   | `x.y.z` → `x.Y.0` | Auto-apply                  |
+| **MAJOR**   | `x.y.z` → `X.0.0` | Prompt user individually    |
 
 ---
 
@@ -236,13 +236,13 @@ When dependencies are broken, run diagnosis:
 
 ### Common Issues & Fixes
 
-| Issue | Symptoms | Fix |
-|-------|----------|-----|
-| **Version Conflict** | "Cannot resolve dependency tree" | Clean install, use overrides/resolutions |
-| **Peer Dependency** | "Peer dependency not satisfied" | Install required peer version |
-| **Security Vuln** | `npm audit` shows issues | `npm audit fix` or manual update |
-| **Unused Deps** | Bloated bundle | Run `depcheck` (Node) or equivalent |
-| **Duplicate Deps** | Multiple versions installed | Run `npm dedupe` or equivalent |
+| Issue                        | Symptoms                                | Fix                                                           |
+| ---------------------------- | --------------------------------------- | ------------------------------------------------------------- |
+| **Version Conflict**         | "Cannot resolve dependency tree"        | Clean install, use overrides/resolutions                      |
+| **Peer Dependency**          | "Peer dependency not satisfied"         | Install required peer version                                 |
+| **Security Vuln**            | `npm audit` shows issues                | `npm audit fix` or manual update                              |
+| **Unused Deps**              | Bloated bundle                          | Run `depcheck` (Node) or equivalent                           |
+| **Duplicate Deps**           | Multiple versions installed             | Run `npm dedupe` or equivalent                                |
 | **Temporary Override Drift** | Nobody remembers why an override exists | Update `docs/dependency-updates-report.md` in the same change |
 
 ### Emergency Fixes
@@ -294,24 +294,24 @@ dotnet list package --vulnerable
 
 ### Severity Response
 
-| Severity | Action |
-|----------|--------|
-| **Critical** | Fix immediately |
-| **High** | Fix within 24h |
-| **Moderate** | Fix within 1 week |
-| **Low** | Fix in next release |
+| Severity     | Action              |
+| ------------ | ------------------- |
+| **Critical** | Fix immediately     |
+| **High**     | Fix within 24h      |
+| **Moderate** | Fix within 1 week   |
+| **Low**      | Fix in next release |
 
 ---
 
 ## Anti-Patterns
 
-| Avoid | Why | Instead |
-|-------|-----|---------|
-| Update fixed versions | Intentionally pinned | Skip them |
-| Auto-apply MAJOR | Breaking changes | Prompt user |
-| Batch MAJOR prompts | Loses context | Prompt individually |
-| Skip lock file | Irreproducible builds | Always commit lock files |
-| Ignore security alerts | Vulnerabilities | Address by severity |
+| Avoid                  | Why                   | Instead                  |
+| ---------------------- | --------------------- | ------------------------ |
+| Update fixed versions  | Intentionally pinned  | Skip them                |
+| Auto-apply MAJOR       | Breaking changes      | Prompt user              |
+| Batch MAJOR prompts    | Loses context         | Prompt individually      |
+| Skip lock file         | Irreproducible builds | Always commit lock files |
+| Ignore security alerts | Vulnerabilities       | Address by severity      |
 
 ---
 
@@ -335,20 +335,21 @@ After updates:
 
 The skill auto-detects project type by scanning for package files:
 
-| File Found | Language | Package Manager |
-|------------|----------|-----------------|
-| `package.json` | Node.js | npm/yarn/pnpm |
-| `requirements.txt` | Python | pip |
-| `pyproject.toml` | Python | pip/poetry |
-| `Pipfile` | Python | pipenv |
-| `go.mod` | Go | go modules |
-| `Cargo.toml` | Rust | cargo |
-| `Gemfile` | Ruby | bundler |
-| `pom.xml` | Java | Maven |
-| `build.gradle` | Java/Kotlin | Gradle |
-| `*.csproj` | .NET | dotnet |
+| File Found         | Language    | Package Manager |
+| ------------------ | ----------- | --------------- |
+| `package.json`     | Node.js     | npm/yarn/pnpm   |
+| `requirements.txt` | Python      | pip             |
+| `pyproject.toml`   | Python      | pip/poetry      |
+| `Pipfile`          | Python      | pipenv          |
+| `go.mod`           | Go          | go modules      |
+| `Cargo.toml`       | Rust        | cargo           |
+| `Gemfile`          | Ruby        | bundler         |
+| `pom.xml`          | Java        | Maven           |
+| `build.gradle`     | Java/Kotlin | Gradle          |
+| `*.csproj`         | .NET        | dotnet          |
 
 **Detection order matters for monorepos:**
+
 1. Check current directory first
 2. Then check for workspace/monorepo patterns
 3. Offer to run recursively if applicable
@@ -392,10 +393,10 @@ npm install  # or pnpm install / yarn
 
 Some packages have frequent major bumps but are backward-compatible:
 
-| Package | Reason |
-|---------|--------|
+| Package        | Reason                            |
+| -------------- | --------------------------------- |
 | `lucide-react` | Icon library, majors are additive |
-| `@types/*` | Type definitions, usually safe |
+| `@types/*`     | Type definitions, usually safe    |
 
 </details>
 
@@ -414,22 +415,22 @@ PATCH: Bug fixes - backward compatible
 
 ### Range Specifiers
 
-| Specifier | Meaning | Example |
-|-----------|---------|---------|
-| `^1.2.3` | Minor + Patch OK | `>=1.2.3 <2.0.0` |
-| `~1.2.3` | Patch only | `>=1.2.3 <1.3.0` |
-| `1.2.3` | Exact (fixed) | Only `1.2.3` |
-| `>=1.2.3` | At least | Any `>=1.2.3` |
-| `*` | Any | Latest (dangerous) |
+| Specifier | Meaning          | Example            |
+| --------- | ---------------- | ------------------ |
+| `^1.2.3`  | Minor + Patch OK | `>=1.2.3 <2.0.0`   |
+| `~1.2.3`  | Patch only       | `>=1.2.3 <1.3.0`   |
+| `1.2.3`   | Exact (fixed)    | Only `1.2.3`       |
+| `>=1.2.3` | At least         | Any `>=1.2.3`      |
+| `*`       | Any              | Latest (dangerous) |
 
 ### Recommended Strategy
 
 ```json
 {
   "dependencies": {
-    "critical-lib": "1.2.3",      // Exact for critical
-    "stable-lib": "~1.2.3",       // Patch only for stable
-    "modern-lib": "^1.2.3"        // Minor OK for active
+    "critical-lib": "1.2.3", // Exact for critical
+    "stable-lib": "~1.2.3", // Patch only for stable
+    "modern-lib": "^1.2.3" // Minor OK for active
   }
 }
 ```
@@ -442,6 +443,7 @@ PATCH: Bug fixes - backward compatible
 ### Node.js Conflicts
 
 **Diagnosis:**
+
 ```bash
 npm ls package-name      # See dependency tree
 npm explain package-name # Why installed
@@ -449,6 +451,7 @@ yarn why package-name    # Yarn equivalent
 ```
 
 **Resolution with overrides:**
+
 ```json
 // package.json
 {
@@ -459,6 +462,7 @@ yarn why package-name    # Yarn equivalent
 ```
 
 **Resolution with resolutions (Yarn):**
+
 ```json
 {
   "resolutions": {
@@ -470,12 +474,14 @@ yarn why package-name    # Yarn equivalent
 ### Python Conflicts
 
 **Diagnosis:**
+
 ```bash
 pip check
 pipdeptree -p package-name
 ```
 
 **Resolution:**
+
 ```bash
 # Use virtual environment
 python -m venv venv
@@ -492,19 +498,19 @@ pip install -c constraints.txt -r requirements.txt
 
 ## Script Reference
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/check-tool.sh` | Verify tool is installed |
-| `scripts/run-taze.sh` | Run taze with proper flags |
+| Script                  | Purpose                    |
+| ----------------------- | -------------------------- |
+| `scripts/check-tool.sh` | Verify tool is installed   |
+| `scripts/run-taze.sh`   | Run taze with proper flags |
 
 ---
 
 ## Related Tools
 
-| Tool | Language | Purpose |
-|------|----------|---------|
-| [taze](https://github.com/antfu-collective/taze) | Node.js | Smart dependency updates |
-| [npm-check-updates](https://github.com/raineorshine/npm-check-updates) | Node.js | Alternative to taze |
-| [pip-review](https://github.com/jgonggrijp/pip-review) | Python | Interactive pip updates |
-| [cargo-edit](https://github.com/killercup/cargo-edit) | Rust | Cargo dependency management |
-| [bundler-audit](https://github.com/rubysec/bundler-audit) | Ruby | Security auditing |
+| Tool                                                                   | Language | Purpose                     |
+| ---------------------------------------------------------------------- | -------- | --------------------------- |
+| [taze](https://github.com/antfu-collective/taze)                       | Node.js  | Smart dependency updates    |
+| [npm-check-updates](https://github.com/raineorshine/npm-check-updates) | Node.js  | Alternative to taze         |
+| [pip-review](https://github.com/jgonggrijp/pip-review)                 | Python   | Interactive pip updates     |
+| [cargo-edit](https://github.com/killercup/cargo-edit)                  | Rust     | Cargo dependency management |
+| [bundler-audit](https://github.com/rubysec/bundler-audit)              | Ruby     | Security auditing           |

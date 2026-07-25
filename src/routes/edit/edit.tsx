@@ -1,4 +1,3 @@
-import { Delete } from '@mui/icons-material';
 import { IconButton, Paper } from '@mui/material';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
@@ -6,6 +5,7 @@ import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
@@ -88,7 +88,7 @@ export default function Edit() {
               aria-label="Delete unverified song"
               onClick={() => void deleteAdminSong()}
               data-test="delete-admin-unverified-song">
-              <Delete />
+              <Icon icon="ic:baseline-delete" />
             </IconButton>
           )}
           {!adminUnverifiedSongId && song.data.local && (
@@ -106,7 +106,7 @@ export default function Edit() {
                 }
               }}
               data-test="delete-song">
-              <Delete />
+              <Icon icon="ic:baseline-delete" />
             </IconButton>
           )}
         </span>

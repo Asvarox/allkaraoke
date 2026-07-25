@@ -1,6 +1,7 @@
-import { ArrowBack, ArrowForward, PlayArrow } from '@mui/icons-material';
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
+
+import { Icon } from '~/modules/elements/akui/icon';
 
 import { Button, ButtonLink, ButtonSize } from './button';
 
@@ -43,19 +44,22 @@ export const ButtonStory: StoryFn<ComponentProps<typeof Button>> = (args) => {
 export const WithIcons: StoryFn<ComponentProps<typeof Button>> = (args) => {
   return (
     <div style={{ display: 'flex', gap: 12, flexDirection: 'column', width: 320 }}>
-      <Button {...args} rightIcon={<ArrowForward />}>
+      <Button {...args} rightIcon={<Icon icon="ic:baseline-arrow-forward" />}>
         Right icon
       </Button>
-      <Button {...args} leftIcon={<ArrowBack />}>
+      <Button {...args} leftIcon={<Icon icon="ic:baseline-arrow-back" />}>
         Left icon
       </Button>
-      <Button {...args} leftIcon={<ArrowBack />} rightIcon={<ArrowForward />}>
+      <Button
+        {...args}
+        leftIcon={<Icon icon="ic:baseline-arrow-back" />}
+        rightIcon={<Icon icon="ic:baseline-arrow-forward" />}>
         Both icons
       </Button>
-      <Button {...args} rightIcon={<PlayArrow />}>
+      <Button {...args} rightIcon={<Icon icon="ic:baseline-play-arrow" />}>
         Overridden icon
       </Button>
-      <Button {...args} rightIcon={<ArrowForward />} disabled>
+      <Button {...args} rightIcon={<Icon icon="ic:baseline-arrow-forward" />} disabled>
         Disabled with icon
       </Button>
     </div>
@@ -68,7 +72,12 @@ export const IconSizes: StoryFn<ComponentProps<typeof Button>> = (args) => {
   return (
     <div style={{ display: 'flex', gap: 12, flexDirection: 'column', width: 320 }}>
       {sizes.map((size) => (
-        <Button {...args} key={size} size={size} leftIcon={<ArrowBack />} rightIcon={<ArrowForward />}>
+        <Button
+          {...args}
+          key={size}
+          size={size}
+          leftIcon={<Icon icon="ic:baseline-arrow-back" />}
+          rightIcon={<Icon icon="ic:baseline-arrow-forward" />}>
           {size}
         </Button>
       ))}
