@@ -1,9 +1,14 @@
+import { Add, Remove } from '@mui/icons-material';
 import { ComponentProps, ReactNode } from 'react';
 import { twc } from 'react-twc';
+import { twMerge } from 'tailwind-merge';
 
 import { InputWrapper } from '~/modules/elements/akui/input-wrapper';
+import { remoteControlHeight, remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
 
-interface Props extends Omit<ComponentProps<typeof Container>, 'onChange'> {
+interface Props extends Omit<ComponentProps<typeof Container>, 'onChange' | 'className'> {
+  /** Narrowed to a plain string (twc types it far wider) so it can be fed to `twMerge`. */
+  className?: string;
   unit?: string;
   value: number;
   onChange: (newValue: number) => void;
@@ -24,15 +29,17 @@ function NumericInput({
 }: Props) {
   return (
     <InputWrapper info={info}>
-      <Container className={`${className} shadow-focusable rounded-xl`} {...props}>
+      <Container
+        className={twMerge('shadow-focusable rounded-xl', remoteControlHeight, remoteSelectorBackground, className)}
+        {...props}>
         <Button
           onClick={() => onChange(value - step)}
           disabled={disabled}
           data-test="numeric-input-down"
           className="rounded-l-md">
-          -
+          <Remove />
         </Button>
-        <div className="mobile:text-md flex-1 text-center text-lg">
+        <div className="mobile:text-md min-w-0 flex-1 text-center text-lg">
           <strong data-test="numeric-input-value">{value}</strong>
           {unit}
         </div>
@@ -41,7 +48,7 @@ function NumericInput({
           disabled={disabled}
           data-test="numeric-input-up"
           className="rounded-r-md">
-          +
+          <Add />
         </Button>
       </Container>
     </InputWrapper>
@@ -49,6 +56,17 @@ function NumericInput({
 }
 export default NumericInput;
 
-const Button = twc.button`typography h-14 border-none px-5 py-1 text-xl disabled:opacity-50`;
+/**
+ * The -/+ steppers. Real icons rather than "-"/"+" text: the two characters have different advance
+ * widths (which made the buttons different widths, so the signs sat at different insets from each
+ * edge) and different ink heights (the hyphen rides much lower than the plus), so as text they could
+ * never line up. Matching 24px glyphs in equal, flex-centred boxes are symmetric by construction.
+ *
+ * `h-full` so they fill whatever height the container was given rather than pinning it; `size-6`
+ * matches the icon size AKUI uses on its `small` buttons, which is what they sit beside here.
+ */
+const Button = twc.button`typography flex h-full w-14 shrink-0 items-center justify-center border-none bg-transparent disabled:opacity-50 [&>svg]:size-6`;
 
-const Container = twc.div`typography flex items-center justify-self-center bg-black`;
+// Full width and the shared control height/background, so a stepper lines up with the buttons,
+// switchers and checkboxes it sits among on the remote.
+const Container = twc.div`typography flex w-full items-center`;

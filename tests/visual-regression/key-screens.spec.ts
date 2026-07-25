@@ -124,3 +124,78 @@ visual(
     });
   },
 );
+
+// The in-game screens mirror to the remote too, and each has a distinctly shaped layout worth
+// pinning: a single action (skip intro), a plain menu with a numeric stepper in it (pause menu),
+// a checkbox list (rate song) and the post-game buttons. They share one test because the expensive
+// part is getting into a song at all - picking inputs, pairing a real remote mic over WS and
+// starting playback - while each screen after that is one keypress away.
+//
+// The host is driven with the regular keyboard throughout: these screens no longer expose an arrow
+// pad on the remote, which is the whole point of what's being captured here.
+visual(
+  'Remote mic in-game mirrored keyboards',
+  REMOTE_MIC_VIEWPORTS,
+  async ({ page, context, browser, viewport, makeScreenshot }) => {
+    await page.setViewportSize(VIEWPORTS.desktop);
+    await mockSongs({ page, context });
+    const pages = initialise(page, context, browser);
+
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+
+    const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+    // Same fullscreen caveat as the test above - back out before resizing to the phone viewport.
+    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+    await remoteMic._page.setViewportSize(viewport);
+
+    const remoteMasks = [
+      remoteMic.remoteMicMainPage.connectionStatusElement,
+      remoteMic.remoteMicMainPage.indicatorElement,
+    ];
+
+    // A song with a long intro, so the skip-intro prompt (and its mirrored control) actually appears.
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.openPreviewForSong('e2e-skip-intro-polish');
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
+    await pages.calibration.approveDefaultCalibrationSetting();
+    await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
+
+    // Skip intro: a single mirrored action plus the remote-only "Pause menu" back control, since the
+    // phone has no generic Back button once a screen is mirrored.
+    await expect(pages.gamePage.skipIntroElement).toBeVisible({ timeout: 15_000 });
+    await remoteMic.remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('skip-intro')).toBeVisible();
+
+    await makeScreenshot('skip-intro-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
+
+    // Pause menu: the only mirrored screen carrying a non-tappable control - the input-lag stepper.
+    await pages.gamePage.goToPauseMenuByKeyboard();
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('button-resume-song')).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('input-lag')).toBeVisible();
+
+    await makeScreenshot('pause-menu-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
+
+    // Rate song: reached by exiting early (the rating prompt only shows for an unfinished song).
+    await pages.gamePage.navigateAndApproveWithKeyboard('button-exit-song');
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('button-song-ok')).toBeVisible();
+
+    await makeScreenshot('rate-song-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
+
+    // Post-game results. The score animation renames this control from "Skip" to "Next", so wait for
+    // the settled label. Deliberately NOT clicking "skip animation" to get there: once the animation
+    // has finished on its own that same element has become the "next step" button, so clicking it
+    // races into navigating off this screen entirely.
+    await pages.rateUnfinishedSongPage.submitIssueWithKeyboard();
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('next-button')).toHaveText(/next/i, {
+      timeout: 15_000,
+    });
+
+    await makeScreenshot('post-game-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
+  },
+);

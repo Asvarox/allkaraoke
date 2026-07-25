@@ -1,12 +1,12 @@
 import { captureException } from '@sentry/react';
-import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import { menuBack, menuEnter, menuNavigate } from '~/modules/sound-manager';
 import { HelpEntry } from '~/routes/keyboard-help/context';
-import { ControlDescriptor, ControlInput } from '~/routes/keyboard-help/controls';
+import { ControlDescriptor, ControlInput, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 
 import useKeyboardHelp from './use-keyboard-help';
 
@@ -24,6 +24,8 @@ interface Options {
   additionalHelp?: HelpEntry;
   /** Screen name mirrored to the remote mic, shown as the header above its keyboard (mirror mode). */
   title?: string;
+  /** Glyph shown beside `title` on the remote; defaults to a generic keyboard icon. */
+  titleIcon?: RemoteButtonIcon;
 }
 
 interface KeyboardAction {
@@ -31,6 +33,9 @@ interface KeyboardAction {
   label?: string;
   propName: string;
 }
+
+/** Applies a new value pushed from the remote to a value-bearing control (e.g. a text field). */
+type ValueCallback = (value: string) => void;
 
 /** Structural equality for committed control sets, so unchanged sets don't trigger a state update. */
 const sameControls = (a: ControlDescriptor[], b: ControlDescriptor[]) =>
@@ -44,22 +49,65 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     direction = 'vertical',
     additionalHelp = {},
     title,
+    titleIcon,
   } = options;
 
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
   const elementList = useRef<string[]>([]);
   const newElementList = useRef<string[]>([]);
   const actions = useRef<Record<string, KeyboardAction>>({});
+  // Value callbacks for value-bearing controls (e.g. text fields), keyed by register() name. Kept
+  // separate from `actions` because they take the remote-supplied value rather than firing a tap.
+  // Staged per render (`newValueActions`) and swapped in wholesale below, rather than accumulated:
+  // a value edit can arrive from the phone long after the user typed it, and the screen may have
+  // changed in between — rebuilding the registry each render means a control that is gone (or became
+  // disabled, which returns from `register` before staging) can no longer be written to.
+  const valueActions = useRef<Record<string, ValueCallback>>({});
+  const newValueActions = useRef<Record<string, ValueCallback>>({});
+  // Cleared at the START of every render (not in the effect below): React can render without flushing
+  // our effect, and a buffer cleared only on commit would carry that render's entries into the next
+  // one — resurrecting a control that has since disappeared. Assigning a fresh object also means the
+  // set already handed to `valueActions` is never mutated afterwards.
+  newValueActions.current = {};
 
-  // Mirror mode: descriptors collected from register({ control }) calls. `newControls` accumulates
-  // during the current render; the committed set lives in STATE (not a ref) so the `help` memo
-  // derives from the exact value React rendered with — a ref would go stale and flap classic/mirror.
+  // Mirror mode: descriptors collected from register({ control }) calls during the current render;
+  // the committed set lives in STATE (not a ref) so the `help` memo derives from the exact value
+  // React rendered with — a ref would go stale and flap classic/mirror.
   const newControls = useRef<ControlDescriptor[]>([]);
   // Names registered with `remoteOnly` — they live in `newControls` (so they keep the author's
   // ordering on the phone) but have no on-screen element, so they're subtracted from the coverage
   // count below. A Set, not a counter, so a double render can't inflate it.
   const remoteOnlyNames = useRef<Set<string>>(new Set());
+  // The mirror image of `remoteOnlyNames`: names registered with `hideOnRemote` exist on screen but
+  // deliberately send no descriptor (e.g. "Edit song", which opens a whole editor the phone can't
+  // drive). They'd otherwise read as missing coverage and drop the screen back to arrow mode, so
+  // they're discounted from the on-screen side of the tally below.
+  const screenOnlyNames = useRef<Set<string>>(new Set());
+  // Same render-start reset as `newValueActions`, and for the same reason — but here it also fixes
+  // ORDER: register() de-duplicates by name, so entries left over from a render whose effect never
+  // flushed would pin the control order to whatever that earlier render happened to see, which may
+  // not be the on-screen order. Rebuilding per render makes the mirrored list always follow JSX
+  // order. Fresh instances also mean the set already handed to `committedControls` is never mutated.
+  newControls.current = [];
+  remoteOnlyNames.current = new Set();
+  screenOnlyNames.current = new Set();
   const [committedControls, setCommittedControls] = useState<ControlDescriptor[]>([]);
+
+  // Forces a re-render of this component so `register` can rebuild the mirrored set — see the
+  // republish check in `register` for when and why that's needed.
+  //
+  // Deferred to a microtask because `register` runs during the CHILD's render, and React forbids
+  // updating another component mid-render. Coalesced so a burst of changed controls costs one render.
+  const [, requestRepublish] = useReducer((token: number) => token + 1, 0);
+  const republishQueued = useRef(false);
+  const scheduleRepublish = () => {
+    if (republishQueued.current) return;
+    republishQueued.current = true;
+    queueMicrotask(() => {
+      republishQueued.current = false;
+      requestRepublish();
+    });
+  };
 
   const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
   const help = useMemo<HelpEntry>(
@@ -69,6 +117,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             // Mirror mode — mutually exclusive with the arrow/accept fields.
             mode: 'mirror',
             title,
+            icon: titleIcon,
             back: onBackspace ? backspaceHelp : undefined,
             controls: committedControls,
             ...additionalHelp,
@@ -86,7 +135,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // every render and, via updateKeyboard, spin an infinite re-render loop. Their content is static.
     // `actions` is a stable ref, kept in the list for readability.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls, title],
+    [currentlySelectedActionLabel, actions, backspaceHelp, direction, committedControls, title, titleIcon],
   );
   useKeyboardHelp(help, enabled);
 
@@ -102,6 +151,13 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       action.callback();
       menuEnter.play();
     }
+  });
+
+  // Apply a value edited on the remote mic to the matching value control (e.g. a text field). No
+  // sound and no focus change — it's a continuous edit, not a discrete activation.
+  useEventEffect(events.remoteControlValueChanged, (name, value) => {
+    if (!enabled) return;
+    valueActions.current[name]?.(value);
   });
 
   const handleEnter = () => {
@@ -157,20 +213,55 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       disabled = false,
       control,
       remoteOnly = false,
-    }: { propName?: string; disabled?: boolean; control?: ControlInput; remoteOnly?: boolean } = {},
+      hideOnRemote = false,
+      onValueChange,
+    }: {
+      propName?: string;
+      disabled?: boolean;
+      control?: ControlInput;
+      remoteOnly?: boolean;
+      /**
+       * Keep this control on screen but off the phone, without dropping the screen out of mirror
+       * mode. For actions the remote genuinely can't carry out (e.g. opening the song editor).
+       */
+      hideOnRemote?: boolean;
+      /** For value controls (e.g. `text`): applies a value pushed from the remote mic. */
+      onValueChange?: ValueCallback;
+    } = {},
   ) => {
     if (disabled) {
       return { disabled, focused: false };
     }
 
     if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
+    if (onValueChange) newValueActions.current[name] = onValueChange;
 
     // Collect a mirror descriptor when the caller (a Nav.* wrapper) supplied one. No `focused`
     // field — remote mics are touch-first, and omitting it also avoids republishing on host focus.
-    if (control && !newControls.current.some((c) => c.name === name)) {
-      newControls.current.push({ ...control, name });
-      if (remoteOnly) remoteOnlyNames.current.add(name);
+    if (control && !hideOnRemote) {
+      const descriptor = { ...control, name } as ControlDescriptor;
+      const existing = newControls.current.findIndex((c) => c.name === name);
+      if (existing === -1) {
+        newControls.current.push(descriptor);
+        if (remoteOnly) remoteOnlyNames.current.add(name);
+      } else {
+        // Same name twice in one collection: a child re-rendered on its own, so this render never
+        // cleared it. Refresh in place, keeping the entry's position in the on-screen order.
+        newControls.current[existing] = descriptor;
+      }
+      // Republish check, against what was last PUBLISHED rather than against this render's
+      // collection. A control's state often lives in a child (rate-song's checkboxes are state inside
+      // RateSong, while the hook sits in PauseMenuContent), and on a child-only re-render nothing
+      // here runs: the effect below never fires, so the phone keeps the stale value even though the
+      // TV updates. The collection can't detect that on its own — React re-runs this render body
+      // WITHOUT re-rendering children whenever a state update turns out to be a no-op (a hook
+      // bailout, which also strips the effect), leaving the collection empty and every child-owned
+      // descriptor looking brand new. `committedControls` is state, so it always reflects what the
+      // phone actually has. Asking for a re-render replays the normal collect → commit → publish path.
+      const published = committedControls.find((c) => c.name === name);
+      if (published && !sameControls([published], [descriptor])) scheduleRepublish();
     }
+    if (hideOnRemote) screenOnlyNames.current.add(name);
 
     // A remote-only control exists solely on the phone (e.g. a "back" affordance the screen doesn't
     // show), so it never joins the on-screen navigation list and has no props to hand back.
@@ -221,17 +312,23 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     // Remote-only descriptors are excluded from the tally — they have no on-screen element to cover.
     const collected = newControls.current;
     const screenControls = collected.length - remoteOnlyNames.current.size;
-    const fullCoverage = collected.length > 0 && screenControls === elementList.current.length;
+    // Controls explicitly hidden from the remote aren't expected to be covered, so they come off the
+    // on-screen side of the comparison.
+    const coverableElements = elementList.current.length - screenOnlyNames.current.size;
+    const fullCoverage = collected.length > 0 && screenControls === coverableElements;
     if (collected.length > 0 && !fullCoverage && process.env.NODE_ENV !== 'production') {
       captureException(
         new Error(
-          `useKeyboardNav: partial mirror coverage (${screenControls}/${elementList.current.length} controls); falling back to arrows`,
+          `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`,
         ),
       );
     }
-    const nextControls = fullCoverage ? collected : [];
-    newControls.current = [];
-    remoteOnlyNames.current = new Set();
+    // A COPY, not `collected` itself: `register` refreshes entries in place when a child re-renders
+    // on its own, and handing the live array to state would let that mutation rewrite the committed
+    // set too — the next comparison would then see "no change" and never publish.
+    const nextControls = fullCoverage ? [...collected] : [];
+    // Swap in this render's value callbacks, dropping any control that is no longer registered.
+    valueActions.current = newValueActions.current;
     // Only update state when the committed set actually changed — an empty→empty no-op keeps classic
     // screens from re-registering (which would re-order them ahead of others in `.at(-1)` selection).
     setCommittedControls((prev) => (sameControls(prev, nextControls) ? prev : nextControls));

@@ -92,6 +92,12 @@ export const serverHandlers = {
       events.remoteControlActivated.dispatch(name);
     }),
 
+    // Push a new value for a mirrored value control (e.g. a text field) edited on the remote. Same
+    // write permission as activateControl, since it drives the same on-screen state.
+    setControlValue: defineMutation((_ctx: RpcContext, name: string, value: string) => {
+      events.remoteControlValueChanged.dispatch(name, value);
+    }),
+
     // Any connected mic can confirm its readiness (no write permission required)
     confirmReadiness: defineMutation(
       (ctx: RpcContext) => {

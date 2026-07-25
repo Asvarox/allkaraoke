@@ -37,7 +37,15 @@ export type RemoteButtonIcon = keyof typeof remoteButtonIcons;
 export type ControlDescriptor =
   | (ControlMeta & { type: 'button'; label: string; variant?: ButtonVariant; icon?: RemoteButtonIcon | null })
   | (ControlMeta & { type: 'switch'; label: string; value: string })
-  | (ControlMeta & { type: 'checkbox'; label: string; checked: boolean });
+  | (ControlMeta & { type: 'checkbox'; label: string; checked: boolean })
+  // A free-form text field mirrored to the phone (e.g. renaming a high-score). The phone edits the
+  // value locally and streams it back through `serverRpc.input.setControlValue`, which the host
+  // routes to the same `onChange` the on-screen input uses — so typing on either device stays in sync.
+  | (ControlMeta & { type: 'text'; label: string; value: string; placeholder?: string })
+  // The game's global input-lag setting. Rendered on the phone as the SAME numeric stepper the remote
+  // settings screen uses, wired straight to `serverRpc.settings.setInputLag` (no per-control value
+  // channel needed) so it behaves identically wherever it appears. `value` seeds the stepper's display.
+  | (ControlMeta & { type: 'input-lag'; label: string; value: number });
 
 export type ControlType = ControlDescriptor['type'];
 
@@ -48,7 +56,9 @@ export type ControlType = ControlDescriptor['type'];
 export type ControlInput =
   | { type: 'button'; label: string; variant?: ButtonVariant; icon?: RemoteButtonIcon | null }
   | { type: 'switch'; label: string; value: string }
-  | { type: 'checkbox'; label: string; checked: boolean };
+  | { type: 'checkbox'; label: string; checked: boolean }
+  | { type: 'text'; label: string; value: string; placeholder?: string }
+  | { type: 'input-lag'; label: string; value: number };
 
 /** Exhaustiveness guard — a compile error here means a control type is unhandled. */
 export function assertNever(value: never): never {
@@ -67,6 +77,14 @@ export function isValidControl(control: ControlDescriptor): boolean {
       return typeof control.value === 'string';
     case 'checkbox':
       return typeof control.checked === 'boolean';
+    case 'text':
+      // `placeholder` is optional; `value` is the current (possibly empty) text.
+      return (
+        typeof control.value === 'string' &&
+        (control.placeholder === undefined || typeof control.placeholder === 'string')
+      );
+    case 'input-lag':
+      return typeof control.value === 'number';
     default:
       return false;
   }

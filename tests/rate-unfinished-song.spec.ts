@@ -181,28 +181,45 @@ test('user can correctly select all of the shown reasons why the song was not co
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
   });
 
+  // The pause menu and the rate-song view mirror their controls to the remote mic, so the remote has
+  // no arrow pad to navigate them with — these steps drive the game with the regular keyboard instead.
   await test.step('Exit the song before its end', async () => {
     await expect(pages.gamePage.getSongLyricsForPlayerElement(0)).toBeVisible();
     await page.waitForTimeout(500);
-    await remoteMic.remoteMicMainPage.goToPauseMenuWithKeyboard();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-exit-song', remoteMic._page);
+    await pages.gamePage.goToPauseMenuByKeyboard();
+    await pages.gamePage.navigateAndApproveWithKeyboard('button-exit-song');
+  });
+
+  await test.step('An issue toggled from the remote mic updates the remote itself, both on and off', async () => {
+    // rate-song's `issues` state lives in a child of the component holding useKeyboardNav, so a
+    // toggle re-renders only that child. Deselecting used to leave the phone showing the stale
+    // checked state (the TV updated either way, which hid it), so assert BOTH directions here.
+    const remoteIssue = remoteMic.remoteMicMainPage.mirroredControl('button-not-in-sync');
+
+    await remoteIssue.click();
+    await expect(remoteIssue).toHaveAttribute('data-checked', 'true');
+    await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
+
+    await remoteIssue.click();
+    await expect(remoteIssue).toHaveAttribute('data-checked', 'false');
+    await pages.rateUnfinishedSongPage.expectIssueNotToBeSelected('not-in-sync');
   });
 
   await test.step('Only 1 volume issue (too quiet/too loud) can be selected at the same time - after clicking also on 2nd option, 1st is unselected', async () => {
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-quiet', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-quiet');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-quiet');
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('too-loud');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
     await pages.rateUnfinishedSongPage.expectIssueNotToBeSelected('too-quiet');
   });
 
   await test.step('Select 2 more issues - user can select all 3 category issues as a reasons of unfinished song', async () => {
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('not-in-sync', remoteMic._page);
-    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('bad-lyrics', remoteMic._page);
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('not-in-sync');
+    await pages.rateUnfinishedSongPage.selectIssueWithKeyboard('bad-lyrics');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('not-in-sync');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('bad-lyrics');
     await pages.rateUnfinishedSongPage.expectIssueToBeSelected('too-loud');
-    await pages.rateUnfinishedSongPage.submitIssueWithKeyboard(remoteMic._page);
+    await pages.rateUnfinishedSongPage.submitIssueWithKeyboard();
   });
 
   await test.step('User can return to Song List to choose another song', async () => {

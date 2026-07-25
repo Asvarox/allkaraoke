@@ -28,6 +28,7 @@ interface Props {
   effectsEnabled: boolean;
   videoPlayerRef: MutableRefObject<VideoPlayerRef | null>;
   isPauseMenuVisible: boolean;
+  onOpenPauseMenu?: () => void;
 }
 
 const MAX_RENDER_RESOLUTION_W = 1920;
@@ -42,6 +43,7 @@ const GameOverlay = forwardRef(function (
     effectsEnabled,
     videoPlayerRef,
     isPauseMenuVisible,
+    onOpenPauseMenu,
     duration,
   }: Props,
   fRef,
@@ -131,8 +133,8 @@ const GameOverlay = forwardRef(function (
       </div>
       {effectsEnabled && (
         <>
-          <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
-          <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
+          <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} onOpenPauseMenu={onOpenPauseMenu} />
+          <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} onOpenPauseMenu={onOpenPauseMenu} />
         </>
       )}
       <DurationBar players={playerSetups} currentStatus={currentStatus} duration={duration} />

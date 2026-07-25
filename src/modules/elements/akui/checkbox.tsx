@@ -1,5 +1,4 @@
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
-import { twMerge } from 'tailwind-merge';
 
 import { MenuButton } from '~/modules/elements/menu';
 
@@ -9,19 +8,20 @@ export const Checkbox = ({
   ...props
 }: React.ComponentProps<typeof MenuButton> & { checked?: boolean }) => {
   return (
+    // The box goes through the button's own `leftIcon` gutter rather than a hand-rolled span, so it
+    // lands in exactly the same place (and at the same size) as any other button's left icon. The
+    // label stays left-aligned, so labels line up down a list of checkboxes instead of each centring
+    // itself; it also truncates to one line rather than wrapping, same as a button's.
     <MenuButton
       data-checked={checked}
       data-test="checkbox"
       size="small"
+      labelAlign="left"
+      leftIcon={
+        checked ? <CheckBox className="stroke-black/50" /> : <CheckBoxOutlineBlank className="stroke-black/50" />
+      }
       {...props}
-      className={twMerge('justify-start gap-8 pl-8', className)}>
-      <span className="flex h-4 w-4 items-center justify-center rounded">
-        {checked ? (
-          <CheckBox className="h-8! w-8! stroke-black/50" />
-        ) : (
-          <CheckBoxOutlineBlank className="h-8! w-8! stroke-black/50" />
-        )}
-      </span>
+      className={className}>
       {props.children}
     </MenuButton>
   );

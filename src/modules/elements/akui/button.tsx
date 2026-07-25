@@ -52,6 +52,11 @@ interface Props extends PropsWithChildren {
   leftIcon?: ReactNode;
   /** Icon shown after the label. When set, a matching gutter is reserved on the other side too. */
   rightIcon?: ReactNode;
+  /**
+   * How the label sits between the icon gutters. Buttons centre it; controls that read as a list of
+   * options (the checkbox) left-align it so their labels line up with each other.
+   */
+  labelAlign?: 'center' | 'left';
 }
 
 const additionalProps = ({ inactive, readOnly, focused, subtleFocused, leftIcon, rightIcon, ...props }: Props) => ({
@@ -80,20 +85,27 @@ const ButtonContent = ({
   size,
   leftIcon,
   rightIcon,
+  labelAlign = 'center',
   children,
 }: {
   size: ButtonSize;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
+  labelAlign?: 'center' | 'left';
   children?: ReactNode;
 }) => {
   if (leftIcon == null && rightIcon == null) return <>{children}</>;
   return (
-    <span className="flex w-full items-center justify-between gap-2">
+    <span className="flex w-full items-center gap-2">
       <IconSlot size={size}>{leftIcon}</IconSlot>
-      {/* `truncate` needs the shrink `min-w-0` already here to have a bounded width to ellipsize
-          against - without it the span would grow to fit its content instead of wrapping/clipping. */}
-      <span className="min-w-0 truncate text-center">{children}</span>
+      {/* `flex-1` so the label owns all the room between the two gutters: that's what lets it be
+          left-aligned against the icon. Centring is unchanged by it — the gutters are equal width, so
+          text centred inside a filled middle lands exactly where the old `justify-between` put it.
+          `truncate` needs the shrink `min-w-0` here to have a bounded width to ellipsize against -
+          without it the span would grow to fit its content instead of clipping. */}
+      <span className={twMerge('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
+        {children}
+      </span>
       <IconSlot size={size}>{rightIcon}</IconSlot>
     </span>
   );
@@ -105,12 +117,13 @@ export const Button = ({
   className,
   leftIcon,
   rightIcon,
+  labelAlign,
   ...props
 }: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => {
   const resolvedSize = useResponsiveValue(size);
   return (
     <ButtonBase data-size={resolvedSize} className={className} {...additionalProps(props)} as="button">
-      <ButtonContent size={resolvedSize} leftIcon={leftIcon} rightIcon={rightIcon}>
+      <ButtonContent size={resolvedSize} leftIcon={leftIcon} rightIcon={rightIcon} labelAlign={labelAlign}>
         {children}
       </ButtonContent>
     </ButtonBase>
