@@ -1,6 +1,6 @@
-import { QrCode2 } from '@mui/icons-material';
 import { HTMLProps, ReactNode, useMemo } from 'react';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { Kbd } from '~/modules/elements/akui/kbd';
 import { randomInt } from '~/modules/utils/random-value';
 
@@ -58,7 +58,7 @@ const data = [
   <>
     You can control the game with your phone - click on the{' '}
     <strong>
-      <QrCode2 />
+      <Icon icon="ic:baseline-qr-code-2" />
       QR Code Icon
     </strong>{' '}
     on the top right and follow the instructions

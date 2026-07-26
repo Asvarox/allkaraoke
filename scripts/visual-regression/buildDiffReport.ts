@@ -24,7 +24,7 @@ import { decodePng, writePng } from './pngIo';
  */
 
 /** Show thumbnails only when strictly fewer than this many snapshots changed. */
-const MAX_THUMBNAILS = 10;
+const MAX_THUMBNAILS = 50;
 const OUTPUT_DIR = 'test-results/visual-diff-report';
 
 type Status = 'modified' | 'added' | 'removed';

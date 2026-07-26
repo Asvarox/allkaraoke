@@ -1,6 +1,6 @@
-import { List as ListIcon, Settings as SettingsIcon } from '@mui/icons-material';
 import { twc, TwcComponentProps } from 'react-twc';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { MicIcon } from '~/modules/elements/mic-icon';
 import { PhoneTabs } from '~/routes/remote-mic/remote-mic';
 
@@ -26,13 +26,13 @@ export default function BottomBar({ active, setActiveTab }: Props) {
         onClick={() => setActiveTab('song-list')}
         data-test="menu-song-list">
         <ItemIcon>
-          <ListIcon />
+          <Icon icon="ic:baseline-list" size={6} />
         </ItemIcon>
         <ItemTitle>Song list</ItemTitle>
       </ItemContainer>
       <ItemContainer $active={active === 'settings'} onClick={() => setActiveTab('settings')} data-test="menu-settings">
         <ItemIcon>
-          <SettingsIcon />
+          <Icon icon="ic:baseline-settings" size={6} />
         </ItemIcon>
         <ItemTitle>Settings</ItemTitle>
       </ItemContainer>

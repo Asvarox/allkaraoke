@@ -1,7 +1,7 @@
-import { Icon } from '@iconify-icon/react';
-import { QrCode2 } from '@mui/icons-material';
 import { useState } from 'react';
 
+import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';
 import Ping from '~/routes/remote-mic/panels/microphone/ping';
@@ -32,20 +32,20 @@ function TopBar({ connectionStatus }: Props) {
           <div
             className={`text-center ${dotColorByStatus[connectionStatus]} flex w-10 items-center justify-center`}
             aria-hidden="true">
-            <Icon icon="mdi:circle" />
+            <Icon icon="mdi:circle" size={6} />
           </div>
           <span data-test="connection-status">
             {connectionStatus === 'connected' ? <Ping /> : connectionStatus.toUpperCase()}
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <button
+          <Button
+            size="mini"
             onClick={() => setIsQRCodeModalOpen(true)}
-            className="cursor-pointer rounded p-1 hover:bg-white/10"
-            aria-label="Connect phone">
-            <QrCode2 />
-          </button>
-          <FullscreenButton />
+            leftIcon={<Icon icon="ic:baseline-qr-code-2" />}
+            aria-label="Connect phone"
+          />
+          <FullscreenButton size="mini" />
         </div>
       </div>
     </>

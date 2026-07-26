@@ -22,9 +22,9 @@ if (!customCert) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-// experimental: {
-// bundledDev: true,
-// },
+  // experimental: {
+  // bundledDev: true,
+  // },
   resolve: {
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
@@ -121,7 +121,7 @@ export default defineConfig({
         test: {
           name: 'functions',
           include: ['functions/**/*.test.ts'],
-          exclude: ['.claude/**/*']
+          exclude: ['.claude/**/*'],
         },
       },
     ],

@@ -1,7 +1,7 @@
-import { ArrowBack, Edit } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 
 import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { Input } from '~/modules/elements/input';
 import { MenuButton, MenuContainer } from '~/modules/elements/menu';
@@ -37,14 +37,14 @@ export default function RemoteControl({ control, onActivate }: Props) {
       const isBack = control.variant === 'back';
       // Back buttons keep a leading arrow and no trailing icon. Every other button gets a trailing
       // icon: `'forward'` by default, a named glyph when the host overrides it, or none when `null`.
-      const RightIcon = isBack || control.icon === null ? undefined : remoteButtonIcons[control.icon ?? 'forward'];
+      const rightIcon = isBack || control.icon === null ? undefined : remoteButtonIcons[control.icon ?? 'forward'];
       return (
         <MenuButton
           size="small"
           onClick={activate}
           disabled={control.disabled}
-          leftIcon={isBack ? <ArrowBack /> : undefined}
-          rightIcon={RightIcon ? <RightIcon /> : undefined}
+          leftIcon={isBack ? <Icon icon="ic:baseline-arrow-back" /> : undefined}
+          rightIcon={rightIcon ? <Icon icon={rightIcon} /> : undefined}
           data-test={`control-${control.name}`}
           data-control-type="button">
           {control.label}
@@ -114,7 +114,7 @@ function TextControl({ control }: { control: Extract<ControlDescriptor, { type: 
         size="small"
         onClick={openEditor}
         disabled={control.disabled}
-        rightIcon={<Edit />}
+        rightIcon={<Icon icon="ic:baseline-edit" />}
         data-test={`control-${control.name}`}
         data-control-type="text">
         {control.value || control.placeholder || control.label}

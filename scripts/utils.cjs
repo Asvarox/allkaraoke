@@ -29,7 +29,9 @@ module.exports.requestPostHog = async (url, options = {}) => {
       if (!response.ok) {
         const errorText = await response.text();
         if (attempt <= POSTHOG_RETRY_COUNT) {
-          console.warn(`PostHog request failed with status ${response.status}. Retrying in ${POSTHOG_RETRY_DELAY_MS / 1000}s.`);
+          console.warn(
+            `PostHog request failed with status ${response.status}. Retrying in ${POSTHOG_RETRY_DELAY_MS / 1000}s.`,
+          );
           await wait(POSTHOG_RETRY_DELAY_MS);
           continue;
         }

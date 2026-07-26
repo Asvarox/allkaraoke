@@ -1,8 +1,8 @@
-import { Add, Remove } from '@mui/icons-material';
 import { ComponentProps, ReactNode } from 'react';
 import { twc } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { InputWrapper } from '~/modules/elements/akui/input-wrapper';
 import { remoteControlHeight, remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
 
@@ -37,7 +37,7 @@ function NumericInput({
           disabled={disabled}
           data-test="numeric-input-down"
           className="rounded-l-md">
-          <Remove />
+          <Icon icon="ic:baseline-remove" size={6} />
         </Button>
         <div className="mobile:text-md min-w-0 flex-1 text-center text-lg">
           <strong data-test="numeric-input-value">{value}</strong>
@@ -48,7 +48,7 @@ function NumericInput({
           disabled={disabled}
           data-test="numeric-input-up"
           className="rounded-r-md">
-          <Add />
+          <Icon icon="ic:baseline-add" size={6} />
         </Button>
       </Container>
     </InputWrapper>
@@ -62,10 +62,11 @@ export default NumericInput;
  * edge) and different ink heights (the hyphen rides much lower than the plus), so as text they could
  * never line up. Matching 24px glyphs in equal, flex-centred boxes are symmetric by construction.
  *
- * `h-full` so they fill whatever height the container was given rather than pinning it; `size-6`
- * matches the icon size AKUI uses on its `small` buttons, which is what they sit beside here.
+ * `h-full` so they fill whatever height the container was given rather than pinning it; the icons
+ * are sized explicitly via `size={6}` (24px) rather than a CSS class — matches the icon size AKUI
+ * uses on its `small` buttons, which is what they sit beside here.
  */
-const Button = twc.button`typography flex h-full w-14 shrink-0 items-center justify-center border-none bg-transparent disabled:opacity-50 [&>svg]:size-6`;
+const Button = twc.button`typography flex h-full w-14 shrink-0 items-center justify-center border-none bg-transparent disabled:opacity-50`;
 
 // Full width and the shared control height/background, so a stepper lines up with the buttons,
 // switchers and checkboxes it sits among on the remote.

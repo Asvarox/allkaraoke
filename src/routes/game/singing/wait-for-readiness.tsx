@@ -1,7 +1,7 @@
-import { CheckCircleOutlined } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import Loader from '~/modules/elements/loader';
 import events from '~/modules/game-events/game-events';
@@ -80,7 +80,7 @@ function WaitForReadiness({ onFinish }: Props) {
             data-confirmed={confirmed}>
             {!areAllPlayersReady && (
               <span className="h-12 w-12 text-2xl [&_svg]:h-12! [&_svg]:w-12! [&_svg]:stroke-black">
-                {confirmed ? <CheckCircleOutlined /> : <Loader />}
+                {confirmed ? <Icon icon="ic:outline-check-circle" size={12} className="stroke-black" /> : <Loader />}
               </span>
             )}{' '}
             <MicCheckSlot player={player} playerIndex={player.number} />

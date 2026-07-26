@@ -1,5 +1,5 @@
 #ARTIST:Myslovitz
-#TITLE:Z twarza Marilyn Monroe
+#TITLE:Z twarzą Marilyn Monroe
 #CREATOR:davidus01
 #BPM:246
 #YEAR:1996

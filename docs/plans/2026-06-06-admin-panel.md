@@ -134,7 +134,11 @@ export type UnverifiedSongUpdate = Pick<
   'songId' | 'songTxt' | 'artist' | 'title' | 'language' | 'videoId'
 >;
 
-export const updateUnverifiedSong = async (kvNamespace: KVNamespace, sharedSongId: string, update: UnverifiedSongUpdate) => {
+export const updateUnverifiedSong = async (
+  kvNamespace: KVNamespace,
+  sharedSongId: string,
+  update: UnverifiedSongUpdate,
+) => {
   const currentRecord = await getUnverifiedSong(kvNamespace, sharedSongId);
 
   if (!currentRecord) {

@@ -1,5 +1,5 @@
-#ARTIST:Lej mi pól
-#TITLE:Labedz
+#ARTIST:Lej mi pół
+#TITLE:Łabędź
 #CREATOR:MrLudozzerca
 #BPM:228,02
 #YEAR:2021

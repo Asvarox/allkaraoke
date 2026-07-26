@@ -1,10 +1,10 @@
-import { Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
 import { twc } from 'react-twc';
 
 import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { Flag } from '~/modules/elements/flag';
 import { MenuButton } from '~/modules/elements/menu';
@@ -107,8 +107,8 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
               <div
-                className={`absolute top-0 right-0 bottom-0 w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
-                <Flag language={[name]} className="h-full w-full object-cover" />
+                className={`absolute top-[1px] right-[1px] bottom-[1px] w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
+                <Flag language={[name]} className="h-full w-full rounded-r-xl object-cover" />
               </div>
             </Checkbox>
           );
@@ -139,7 +139,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         {areAllLanguagesExcluded && (
           <Menu.HelpText data-test="all-languages-excluded-warning">
             <strong>
-              <Warning />
+              <Icon icon="ic:baseline-warning" />
             </strong>{' '}
             You excluded all the languages, pick at least one
           </Menu.HelpText>

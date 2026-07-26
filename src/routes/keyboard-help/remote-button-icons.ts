@@ -1,6 +1,3 @@
-import { ArrowForward, Check, FastForward, Pause, PlayArrow, Settings, Shuffle } from '@mui/icons-material';
-import { ComponentType } from 'react';
-
 /**
  * The glyphs the remote knows how to draw, keyed by the name a host screen sends over the wire (see
  * `RemoteButtonIcon` in `controls.ts`) — used both on the RIGHT of a mirrored button and as the
@@ -8,11 +5,11 @@ import { ComponentType } from 'react';
  * wire type picks it up automatically, no separate type to keep in sync.
  */
 export const remoteButtonIcons = {
-  forward: ArrowForward,
-  play: PlayArrow,
-  pause: Pause,
-  fastForward: FastForward,
-  confirm: Check,
-  shuffle: Shuffle,
-  settings: Settings,
-} satisfies Record<string, ComponentType>;
+  forward: 'ic:baseline-arrow-forward',
+  play: 'ic:baseline-play-arrow',
+  pause: 'ic:baseline-pause',
+  fastForward: 'ic:baseline-fast-forward',
+  confirm: 'ic:baseline-check',
+  shuffle: 'ic:baseline-shuffle',
+  settings: 'ic:baseline-settings',
+} satisfies Record<string, string>;

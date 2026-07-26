@@ -1,14 +1,7 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "react",
-    "typescript",
-    "unicorn"
-  ],
-  "jsPlugins": [
-    "eslint-plugin-no-only-tests",
-    "eslint-plugin-react-refresh"
-  ],
+  "plugins": ["react", "typescript", "unicorn"],
+  "jsPlugins": ["eslint-plugin-no-only-tests", "eslint-plugin-react-refresh"],
   "categories": {
     "correctness": "off"
   },
@@ -79,12 +72,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.mts",
-        "**/*.cts"
-      ],
+      "files": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
       "rules": {
         "constructor-super": "off",
         "getter-return": "off",
@@ -108,10 +96,7 @@
       }
     },
     {
-      "files": [
-        "**/*.stories.{ts,tsx,js,jsx,mjs,cjs}",
-        "**/*.story.{ts,tsx,js,jsx,mjs,cjs}"
-      ],
+      "files": ["**/*.stories.{ts,tsx,js,jsx,mjs,cjs}", "**/*.story.{ts,tsx,js,jsx,mjs,cjs}"],
       "rules": {
         "storybook/await-interactions": "error",
         "storybook/context-in-play-function": "error",
@@ -126,20 +111,14 @@
         "import/no-anonymous-default-export": "off",
         "react/rules-of-hooks": "off"
       },
-      "jsPlugins": [
-        "eslint-plugin-storybook"
-      ]
+      "jsPlugins": ["eslint-plugin-storybook"]
     },
     {
-      "files": [
-        ".storybook/main.@(js|cjs|mjs|ts)"
-      ],
+      "files": [".storybook/main.@(js|cjs|mjs|ts)"],
       "rules": {
         "storybook/no-uninstalled-addons": "error"
       },
-      "jsPlugins": [
-        "eslint-plugin-storybook"
-      ]
+      "jsPlugins": ["eslint-plugin-storybook"]
     }
   ]
 }

@@ -1,5 +1,6 @@
-import Logout from '@mui/icons-material/Logout';
 import { Button } from '@mui/material';
+
+import { Icon } from '~/modules/elements/akui/icon';
 
 interface Props {
   onLogout: () => void;
@@ -7,7 +8,7 @@ interface Props {
 
 export function LogoutButton({ onLogout }: Props) {
   return (
-    <Button type="button" variant="outlined" startIcon={<Logout />} onClick={onLogout}>
+    <Button type="button" variant="outlined" startIcon={<Icon icon="ic:baseline-logout" />} onClick={onLogout}>
       Logout
     </Button>
   );

@@ -1,20 +1,10 @@
-import {
-  ArrowBack,
-  ArrowForward,
-  Games,
-  Keyboard,
-  KeyboardArrowDown,
-  KeyboardArrowLeft,
-  KeyboardArrowRight,
-  KeyboardArrowUp,
-  Shuffle,
-} from '@mui/icons-material';
 import { captureException } from '@sentry/react';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
 
 import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { serverRpc } from '~/modules/remote-mic/network/client';
 import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-subscription';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
@@ -89,14 +79,14 @@ export function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   const controls = keyboard.controls ?? [];
   // A screen can name its own header glyph (e.g. pause for the pause menu, play for skip intro);
   // anything that doesn't falls back to the generic keyboard icon.
-  const TitleIcon = keyboard.icon ? remoteButtonIcons[keyboard.icon] : Keyboard;
+  const titleIcon = keyboard.icon ? remoteButtonIcons[keyboard.icon] : 'ic:baseline-keyboard';
   return (
     <div data-test="remote-keyboard" data-mode="mirror" className="flex h-full min-h-0 w-full flex-col gap-3">
       {keyboard.title && (
         <div
           data-test="remote-keyboard-header"
           className="text-active flex shrink-0 items-center justify-center gap-2 text-lg font-bold landscape:hidden">
-          <TitleIcon className="text-xl!" />
+          <Icon icon={titleIcon} className="text-xl!" />
           <span className="min-w-0 truncate">{keyboard.title}</span>
         </div>
       )}
@@ -199,7 +189,7 @@ function SongSelectionKeyboard({ keyboard, onSearchStateChange }: { keyboard: He
         data-test="keyboard-shift-r"
         className="w-full basis-full">
         <ActionButton onClick={onPress('random')}>
-          <Shuffle /> {keyboard.shiftR || 'Random Song'}
+          <Icon icon="ic:baseline-shuffle" /> {keyboard.shiftR || 'Random Song'}
         </ActionButton>
       </ActionsContainer>
     </div>
@@ -221,7 +211,7 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
               disabled={!isVertical}
               data-disabled={!isVertical}
               data-test="arrow-up">
-              <KeyboardArrowUp />
+              <Icon icon="ic:baseline-keyboard-arrow-up" />
             </ArrowButton>
           </ArrowsContainer>
           <ArrowsContainer>
@@ -230,17 +220,17 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
               disabled={!isHorizontal}
               data-disabled={!isHorizontal}
               data-test="arrow-left">
-              <KeyboardArrowLeft />
+              <Icon icon="ic:baseline-keyboard-arrow-left" />
             </ArrowButton>
             <ArrowButton disabled data-disabled>
-              <Games />
+              <Icon icon="ic:baseline-games" />
             </ArrowButton>
             <ArrowButton
               onClick={onPress('right')}
               disabled={!isHorizontal}
               data-disabled={!isHorizontal}
               data-test="arrow-right">
-              <KeyboardArrowRight />
+              <Icon icon="ic:baseline-keyboard-arrow-right" />
             </ArrowButton>
           </ArrowsContainer>
           <ArrowsContainer>
@@ -249,7 +239,7 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
               disabled={!isVertical}
               data-disabled={!isVertical}
               data-test="arrow-down">
-              <KeyboardArrowDown />
+              <Icon icon="ic:baseline-keyboard-arrow-down" />
             </ArrowButton>
           </ArrowsContainer>
         </ActionsContainer>
@@ -258,14 +248,14 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
         <ActionButton onClick={onPress('back')} disabled={keyboard.back === undefined} data-test="keyboard-backspace">
           {keyboard.back || (
             <>
-              <ArrowBack /> Back
+              <Icon icon="ic:baseline-arrow-back" /> Back
             </>
           )}
         </ActionButton>
         <ActionButton onClick={onPress('accept')} disabled={keyboard.accept === undefined} data-test="keyboard-enter">
           {keyboard.accept || (
             <>
-              Enter <ArrowForward />
+              Enter <Icon icon="ic:baseline-arrow-forward" />
             </>
           )}
         </ActionButton>

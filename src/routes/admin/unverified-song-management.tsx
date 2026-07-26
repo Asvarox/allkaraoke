@@ -1,6 +1,3 @@
-import Delete from '@mui/icons-material/Delete';
-import Edit from '@mui/icons-material/Edit';
-import Refresh from '@mui/icons-material/Refresh';
 import { Alert, Button, IconButton, Tooltip } from '@mui/material';
 import dayjs from 'dayjs';
 import {
@@ -14,6 +11,7 @@ import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 
 import { RegenerateIndexButton } from './regenerate-index-button';
@@ -216,7 +214,7 @@ export function UnverifiedSongManagement({ password }: Props) {
           </Button>
           <RegenerateIndexButton disabled={isBusy} onRegenerate={() => void handleRegenerateIndex()} />
           <Button
-            startIcon={<Refresh />}
+            startIcon={<Icon icon="ic:baseline-refresh" />}
             variant="outlined"
             onClick={() => {
               resetDeleteError();
@@ -254,7 +252,7 @@ export function UnverifiedSongManagement({ password }: Props) {
                   to={buildAdminUnverifiedSongProcessingUrl(row.original.sharedSongId)}
                   aria-label={`Edit ${row.original.title}`}>
                   <IconButton data-test="edit-unverified-song" data-song={row.original.sharedSongId}>
-                    <Edit />
+                    <Icon icon="ic:baseline-edit" />
                   </IconButton>
                 </Link>
               </span>
@@ -265,7 +263,7 @@ export function UnverifiedSongManagement({ password }: Props) {
                 data-song={row.original.sharedSongId}
                 aria-label={`Delete ${row.original.title}`}
                 onClick={() => void handleDelete(row.original.sharedSongId)}>
-                <Delete />
+                <Icon icon="ic:baseline-delete" />
               </IconButton>
             </Tooltip>
           </div>

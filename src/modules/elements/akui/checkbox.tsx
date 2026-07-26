@@ -1,5 +1,4 @@
-import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
-
+import { Icon } from '~/modules/elements/akui/icon';
 import { MenuButton } from '~/modules/elements/menu';
 
 export const Checkbox = ({
@@ -18,7 +17,11 @@ export const Checkbox = ({
       size="small"
       labelAlign="left"
       leftIcon={
-        checked ? <CheckBox className="stroke-black/50" /> : <CheckBoxOutlineBlank className="stroke-black/50" />
+        checked ? (
+          <Icon icon="ic:baseline-check-box" className="stroke-black/50" />
+        ) : (
+          <Icon icon="ic:baseline-check-box-outline-blank" className="stroke-black/50" />
+        )
       }
       {...props}
       className={className}>
