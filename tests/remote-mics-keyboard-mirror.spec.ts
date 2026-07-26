@@ -56,6 +56,49 @@ test('Mirrors the main menu on the remote mic and navigates directly from it', a
   });
 });
 
+test('Mirrors the exclude-languages screen on the remote mic and toggles a language directly', async ({
+  browser,
+  page,
+}) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open the exclude-languages screen on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const polishControl = remoteMicMainPage.mirroredControl('lang-Polish');
+  const closeControl = remoteMicMainPage.mirroredControl('close-exclude-languages');
+
+  await test.step('Remote mic shows the mirrored language checkboxes instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(polishControl).toBeVisible();
+    await expect(closeControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the mirrored checkbox toggles the language on the host', async () => {
+    const hostCheckbox = pages.songLanguagesPage.getCheckbox('Polish');
+    const hostBefore = await hostCheckbox.getAttribute('data-checked');
+
+    await polishControl.click();
+
+    await expect(hostCheckbox).not.toHaveAttribute('data-checked', hostBefore ?? '');
+  });
+
+  await test.step('Tapping the mirrored close button continues to song selection on the host', async () => {
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected('Polish');
+    await closeControl.click();
+
+    await expect(page.getByTestId('song-preview')).toBeVisible();
+  });
+});
+
 test('Mirrors in-game Options controls on the remote mic and toggles them directly', async ({ browser, page }) => {
   let remoteMic: RemoteMicPages;
 

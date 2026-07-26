@@ -292,10 +292,9 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   });
 
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
-    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
-    // The main menu mirrors its controls to the remote mic, so tap "Sing a song" directly instead of
-    // arrow-navigating + Enter.
+    // Both the main menu and the exclude-languages screen mirror their controls to the remote mic, so
+    // tap the mirrored controls directly instead of arrow-navigating + Enter.
+    await remoteMic.remoteMicMainPage.mirroredControl('close-exclude-languages').click();
     await remoteMic.remoteMicMainPage.mirroredControl('sing-a-song').click();
   });
 

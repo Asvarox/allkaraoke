@@ -68,6 +68,7 @@ export default function SongListToolbar({
                 <button
                   type="button"
                   aria-label="Close search"
+                  className="flex"
                   onMouseDown={(e) => {
                     // Prevent input blur before the click fires
                     e.preventDefault();
@@ -114,9 +115,10 @@ export default function SongListToolbar({
                   size="mini"
                   onClick={open}
                   focused={excludedLanguages.length > 0 && tab === 'list'}
-                  className="scale-100 animate-none"
+                  className="aspect-square scale-100 animate-none justify-center px-0"
                   data-test="song-language-filter">
-                  🇺🇳{selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
+                  <Icon icon="ic:baseline-language" size={4} />
+                  {selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
                 </Button>
               )}
             </LanguageFilter>

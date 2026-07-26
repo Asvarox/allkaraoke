@@ -73,6 +73,7 @@ export type IconName =
   | 'mdi:circle'
   | 'mdi:qrcode-scan'
   | 'mdi:warning'
+  | 'ic:baseline-language'
   | 'mdi:wifi';
 
 /**
