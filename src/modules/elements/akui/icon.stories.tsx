@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Icon } from './icon';
+import { Icon, IconName } from './icon';
 
-const sampleIcons = [
+const sampleIcons: IconName[] = [
   'ic:baseline-close',
   'ic:baseline-check',
   'ic:baseline-delete',
