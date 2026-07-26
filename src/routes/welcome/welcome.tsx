@@ -5,9 +5,9 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import SmoothLink from '~/modules/elements/smooth-link';
+import { NavButton } from '~/modules/elements/nav-controls';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 
 function Welcome() {
@@ -16,7 +16,7 @@ function Welcome() {
   const navigate = useSmoothNavigate();
 
   useBackgroundMusic(/* true */ false);
-  const { register } = useKeyboardNav();
+  const { register } = useKeyboardNav({ title: 'Main Menu' });
   return (
     <>
       <MenuWithLogo>
@@ -32,26 +32,26 @@ function Welcome() {
           />
         </Helmet>
         {/* <FacebookLink /> */}
-        <>
-          <SmoothLink to="game/">
-            <Menu.Button {...register('sing-a-song', () => navigate('game/'))}>Sing a song</Menu.Button>
-          </SmoothLink>
-          <SmoothLink to="select-input/">
-            <Menu.Button {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</Menu.Button>
-          </SmoothLink>
-          <SmoothLink to="settings/">
-            <Menu.Button {...register('settings', () => navigate('settings/'))}>Settings</Menu.Button>
-          </SmoothLink>
-          <SmoothLink to="jukebox/">
-            <Menu.Button {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</Menu.Button>
-          </SmoothLink>
-          <SmoothLink to="history/">
-            <Menu.Button {...register('history', () => navigate('history/'))}>History</Menu.Button>
-          </SmoothLink>
-          <SmoothLink to="manage-songs/">
-            <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
-          </SmoothLink>
-        </>
+        <KeyboardNavContext value={register}>
+          <NavButton name="sing-a-song" remoteIcon="play" onClick={() => navigate('game/')}>
+            Sing a song
+          </NavButton>
+          <NavButton name="select-input" onClick={() => navigate('select-input/')}>
+            Setup Microphones
+          </NavButton>
+          <NavButton name="settings" remoteIcon="settings" onClick={() => navigate('settings/')}>
+            Settings
+          </NavButton>
+          <NavButton name="jukebox" onClick={() => navigate('jukebox/')}>
+            Jukebox
+          </NavButton>
+          <NavButton name="history" onClick={() => navigate('history/')}>
+            History
+          </NavButton>
+          <NavButton name="manage-songs" onClick={() => navigate('manage-songs/')}>
+            Manage Songs
+          </NavButton>
+        </KeyboardNavContext>
         <Menu.HelpText className="flex justify-between">
           Get in touch{' '}
           <span className="flex gap-3">

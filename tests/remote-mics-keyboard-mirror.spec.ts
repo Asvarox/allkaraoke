@@ -26,6 +26,36 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
+test('Mirrors the main menu on the remote mic and navigates directly from it', async ({ browser, page }) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Return to the main menu on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.waitForContainer();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const singSongControl = remoteMicMainPage.mirroredControl('sing-a-song');
+  const settingsControl = remoteMicMainPage.mirroredControl('settings');
+
+  await test.step('Remote mic shows the mirrored main menu instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(singSongControl).toBeVisible();
+    await expect(settingsControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the mirrored Settings button opens Settings on the host', async () => {
+    await settingsControl.click();
+
+    await expect(page.getByTestId('graphics-level')).toBeVisible();
+  });
+});
+
 test('Mirrors in-game Options controls on the remote mic and toggles them directly', async ({ browser, page }) => {
   let remoteMic: RemoteMicPages;
 

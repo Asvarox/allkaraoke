@@ -81,8 +81,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   });
 
   await test.step('Navigate to song list by phone', async () => {
-    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    // The main menu mirrors its controls to the remote mic, so tap "Sing a song" directly instead of
+    // arrow-navigating + Enter.
+    await remoteMic1.remoteMicMainPage.mirroredControl('sing-a-song').click();
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
   });

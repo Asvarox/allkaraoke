@@ -294,8 +294,9 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
-    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
+    // The main menu mirrors its controls to the remote mic, so tap "Sing a song" directly instead of
+    // arrow-navigating + Enter.
+    await remoteMic.remoteMicMainPage.mirroredControl('sing-a-song').click();
   });
 
   await test.step('Set other song languages on remoteMic app', async () => {
