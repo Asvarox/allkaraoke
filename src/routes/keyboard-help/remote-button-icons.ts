@@ -1,3 +1,5 @@
+import { IconName } from '~/modules/elements/akui/icon';
+
 /**
  * The glyphs the remote knows how to draw, keyed by the name a host screen sends over the wire (see
  * `RemoteButtonIcon` in `controls.ts`) — used both on the RIGHT of a mirrored button and as the
@@ -12,4 +14,4 @@ export const remoteButtonIcons = {
   confirm: 'ic:baseline-check',
   shuffle: 'ic:baseline-shuffle',
   settings: 'ic:baseline-settings',
-} satisfies Record<string, string>;
+} satisfies Record<string, IconName>;

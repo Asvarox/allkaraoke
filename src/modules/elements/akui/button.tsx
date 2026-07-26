@@ -187,7 +187,3 @@ export const ButtonLink = ({
     </ButtonBase>
   );
 };
-
-Button.Icon = ({ icon, className, ...rest }: { icon: string; className?: string }) => (
-  <Icon icon={icon} size={8} {...rest} className={className} />
-);
