@@ -96,7 +96,11 @@ export default function Setlists() {
                       key={setlist.name}
                       data-test={`setlist-${setlist.name}`}>
                       <span className="pl-2">
-                        {setlist.isEditable ? <Icon icon="ic:baseline-lock-open" /> : <Icon icon="ic:outline-lock" />}
+                        {setlist.isEditable ? (
+                          <Icon icon="ic:baseline-lock-open" size={6} />
+                        ) : (
+                          <Icon icon="ic:outline-lock" size={6} />
+                        )}
                         &nbsp;
                         <strong>{setlist.name}</strong> ({setlist.songList?.length} songs)
                       </span>

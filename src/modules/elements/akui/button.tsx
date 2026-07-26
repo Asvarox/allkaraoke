@@ -78,7 +78,9 @@ const IconSlot = ({ size, children }: { size: ButtonSize; children?: ReactNode }
   <span
     aria-hidden={children == null || undefined}
     className={twMerge('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
-    {isValidElement<Partial<IconProps>>(children) ? cloneElement(children, { size: sizeToIconSize[size] }) : children}
+    {isValidElement<Partial<IconProps>>(children) && children.type === Icon
+      ? cloneElement(children, { size: sizeToIconSize[size] })
+      : children}
   </span>
 );
 
@@ -133,10 +135,10 @@ export const Button = ({
   leftIcon,
   rightIcon,
   labelAlign,
-  fullWidth,
+  fullWidth = true,
   ...props
 }: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => {
-  const iconOnly = Boolean(leftIcon || rightIcon) && !children;
+  const iconOnly = Boolean(leftIcon || rightIcon) && children == null;
   const resolvedSize = useResponsiveValue(size);
   return (
     <ButtonBase
@@ -162,12 +164,24 @@ export const ButtonLink = ({
   className,
   leftIcon,
   rightIcon,
+  fullWidth = true,
   ...props
 }: Props & Omit<HTMLProps<HTMLAnchorElement>, 'size'>) => {
+  const iconOnly = Boolean(leftIcon || rightIcon) && children == null;
+
   const resolvedSize = useResponsiveValue(size);
   return (
-    <ButtonBase data-size={resolvedSize} className={className} {...additionalProps(props)} as="a">
-      <ButtonContent size={resolvedSize} leftIcon={leftIcon} rightIcon={rightIcon}>
+    <ButtonBase
+      data-size={resolvedSize}
+      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      {...additionalProps(props)}
+      as="a">
+      <ButtonContent
+        size={resolvedSize}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+        fullWidth={fullWidth}
+        iconOnly={iconOnly}>
         {children}
       </ButtonContent>
     </ButtonBase>

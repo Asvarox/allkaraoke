@@ -129,7 +129,7 @@ export default function SearchBar({
               ref={searchInput}
               size={{ xs: 'mini', sm: 'small' }}
               focused={false}
-              label={<Icon icon="ic:baseline-search" size={5} />}
+              label={<Icon icon="ic:baseline-search" size={{ xs: 5, sm: 6 }} />}
               value={filters.search ?? ''}
               onChange={(val) => setSearch(val)}
               onFocus={() => setIsFocused(true)}
@@ -150,7 +150,7 @@ export default function SearchBar({
                     e.preventDefault();
                     closeSearch();
                   }}>
-                  <Icon icon="ic:baseline-close" size={5} className="text-white" />
+                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-white" />
                 </button>
               }
               data-test="search-input"
@@ -168,7 +168,7 @@ export default function SearchBar({
               type="button"
               aria-label="Search songs"
               className="shrink-0 animate-none"
-              leftIcon={<Icon icon="ic:baseline-search" size={5} />}
+              leftIcon={<Icon icon="ic:baseline-search" size={{ xs: 5, sm: 6 }} />}
               {...keyboardNavRegister?.('search', () => setMobileSearchVisible(true), 'Search')}
             />
           </motion.div>

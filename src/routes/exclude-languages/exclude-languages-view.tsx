@@ -107,8 +107,8 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
               <div
-                className={`absolute top-0 right-0 bottom-0 w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
-                <Flag language={[name]} className="h-full w-full object-cover" />
+                className={`absolute top-[1px] right-[1px] bottom-[1px] w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
+                <Flag language={[name]} className="h-full w-full rounded-r-xl object-cover" />
               </div>
             </Checkbox>
           );

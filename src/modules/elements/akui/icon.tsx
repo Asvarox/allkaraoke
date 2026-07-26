@@ -1,22 +1,23 @@
 import { Icon as IconifyIcon } from '@iconify-icon/react';
 import { ComponentProps } from 'react';
 
+import useResponsiveValue from './hooks/use-responsive-value';
+import { ResponsiveValue } from './types';
+
 /**
  * The only place in the app allowed to import `@iconify-icon/react` directly, so the rest of the
  * app depends on this wrapper instead of a specific icon library.
  */
-export type IconProps = ComponentProps<typeof IconifyIcon> & {
+export type IconProps = Omit<ComponentProps<typeof IconifyIcon>, 'size'> & {
   /**
-   * Convenience for common sizes, on the same 4px-per-unit scale as Tailwind's `size-*`/`w-*`/`h-*`
-   * utilities (`size={5}` → 20px). Sets `width`/`height` directly rather than through CSS classes —
-   * the underlying `<iconify-icon>` element computes its own render size from those attributes
-   * (or `font-size` when neither is set) and doesn't reliably respond to Tailwind's `h-*`/`w-*`/
-   * `size-*` classes.
+   * Convenience for common sizes, same as Tailwind's /`w-*`/`h-*` utilities
    */
-  size?: number;
+  size?: ResponsiveValue<number>;
 };
 
 export function Icon({ size, width, height, ...props }: IconProps) {
-  const resolvedSize = size !== undefined ? size * 4 : undefined;
-  return <IconifyIcon width={width ?? resolvedSize} height={height ?? resolvedSize} {...props} />;
+  const responsiveSize = useResponsiveValue(size);
+  const resolvedSize = responsiveSize !== undefined ? responsiveSize * 4 : undefined;
+
+  return <IconifyIcon size={resolvedSize} width={width ?? resolvedSize} height={height ?? resolvedSize} {...props} />;
 }

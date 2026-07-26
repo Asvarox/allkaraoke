@@ -6,7 +6,7 @@ export type ButtonSize = 'large' | 'regular' | 'small' | 'mini';
 // explicit `size` prop (on the same 4px-per-unit scale) rather than sized through a Tailwind class.
 export const sizeToIconSize = {
   mini: 5,
-  small: 7,
+  small: 6,
   regular: 8,
   large: 8,
 } satisfies Record<ButtonSize, number>;
