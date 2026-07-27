@@ -19,7 +19,11 @@ interface Props {
 function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, skipText }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
-  const { register } = useKeyboardNav({ onBackspace: onBack });
+  const { register } = useKeyboardNav({ onBackspace: onBack, title: 'How do you want to sing?' });
+
+  const remoteMicsLabel = mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones';
+  const builtInLabel = `This ${mobilePhoneMode ? "device's" : "computer's"} microphone`;
+
   return (
     <>
       <InputOptionButton
@@ -28,6 +32,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
           () => onPreferenceSelected('remoteMics'),
           undefined,
           previouslySelected === 'remoteMics',
+          { control: { type: 'button', label: remoteMicsLabel } },
         )}
         icon={
           <>
@@ -35,7 +40,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             <Icon icon="ic:baseline-phone-iphone" size={5} />
           </>
         }
-        name={mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones'}
+        name={remoteMicsLabel}
         description={
           <>
             Use{' '}
@@ -54,7 +59,9 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         numOfPlayers="1-4"
       />
       <InputOptionButton
-        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}
+        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in', {
+          control: { type: 'button', label: builtInLabel },
+        })}
         icon={
           <>
             <Icon icon="ic:baseline-person" size={5} />
@@ -65,7 +72,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             )}
           </>
         }
-        name={`This ${mobilePhoneMode ? "device's" : "computer's"} microphone`}
+        name={builtInLabel}
         description={
           <>
             Great to <strong>test</strong> the app, <strong>sing alone</strong> or don&#39;t care about the rivalry at
@@ -82,6 +89,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             () => onPreferenceSelected('multiple-mics'),
             undefined,
             previouslySelected === 'multiple-mics',
+            { control: { type: 'button', label: 'Multiple microphones' } },
           )}
           icon={
             <>
@@ -101,7 +109,9 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
       )}
 
       <InputOptionButton
-        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced')}
+        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced', {
+          control: { type: 'button', label: 'Advanced (manual) setup' },
+        })}
         icon={
           <>
             <MicIconBlue />
@@ -118,7 +128,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         numOfPlayers="1-4"
       />
       <hr />
-      <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
+      <MenuButton
+        {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip', {
+          control: { type: 'button', label: skipText || 'Skip' },
+        })}>
         {skipText || 'Skip'}
       </MenuButton>
     </>

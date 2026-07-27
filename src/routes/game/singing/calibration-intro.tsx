@@ -1,5 +1,6 @@
 import { Menu } from '~/modules/elements/akui/menu';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import { NavButton } from '~/modules/elements/nav-controls';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 
 type Props = {
   onContinue: () => void;
@@ -8,16 +9,19 @@ type Props = {
 export const CalibrationIntro = ({ onContinue }: Props) => {
   const { register } = useKeyboardNav({
     onBackspace: onContinue,
+    title: 'Calibration',
   });
 
   return (
-    <>
+    <KeyboardNavContext value={register}>
       <Menu.Header>Calibration</Menu.Header>
       <Menu.HelpText>Before you sing, ensure the sound is synchronized with video.</Menu.HelpText>
       <Menu.HelpText>
         You can adjust the synchronization in <strong>Pause Menu</strong> later.
       </Menu.HelpText>
-      <Menu.Button {...register('continue', onContinue)}>Continue</Menu.Button>
-    </>
+      <NavButton name="continue" onClick={onContinue}>
+        Continue
+      </NavButton>
+    </KeyboardNavContext>
   );
 };

@@ -5,8 +5,8 @@ import { Helmet } from 'react-helmet';
 import { SongPreview } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { useBackground } from '~/modules/elements/background-context';
+import { NavRemoteControl } from '~/modules/elements/nav-controls';
 import NoPrerender from '~/modules/elements/no-prerender';
-import SmoothLink from '~/modules/elements/smooth-link';
 import VideoPlayer, { VideoState } from '~/modules/elements/video-player/index';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
@@ -21,12 +21,13 @@ function Jukebox() {
   useBackground(false);
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();
+  const goBack = () => navigate('menu/');
   const { width, height } = useViewportSize();
   const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
   const songList = useSongIndex();
 
   const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-  const { register } = useKeyboardNav({ onBackspace: () => navigate('menu/') });
+  const { register } = useKeyboardNav({ onBackspace: goBack, title: 'Jukebox' });
 
   useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 
@@ -63,14 +64,26 @@ function Jukebox() {
             />
           }>
           <div className="absolute right-10 bottom-10 flex flex-col items-end gap-10">
-            <Button {...register('skip-button', playNext)} className="px-20">
+            <Button
+              {...register('skip-button', playNext, 'Skip', false, {
+                control: { type: 'button', label: 'Skip' },
+              })}
+              className="px-20">
               Skip
             </Button>
-            <SmoothLink to={navigateUrl}>
-              <Button {...register('sing-button', () => navigate(navigateUrl), undefined, true)} className="px-20">
-                Sing this song
-              </Button>
-            </SmoothLink>
+            <Button
+              {...register('sing-button', () => navigate(navigateUrl), 'Sing this song', true, {
+                control: { type: 'button', label: 'Sing this song', icon: 'play' },
+              })}
+              className="px-20">
+              Sing this song
+            </Button>
+            <NavRemoteControl
+              nav={register}
+              name="jukebox-back"
+              control={{ type: 'button', label: 'Back to menu', variant: 'back' }}
+              onClick={goBack}
+            />
           </div>
         </SongPage>
       </NoPrerender>

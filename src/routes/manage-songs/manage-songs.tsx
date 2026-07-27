@@ -1,10 +1,9 @@
 import { Helmet } from 'react-helmet';
 
 import { Menu } from '~/modules/elements/akui/menu';
-import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import SmoothLink from '~/modules/elements/smooth-link';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import { NavButton } from '~/modules/elements/nav-controls';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
 
@@ -13,7 +12,7 @@ function ManageSongs() {
   const goBack = () => navigate('menu/');
   const setlist = useSetlist();
 
-  const { register } = useKeyboardNav({ onBackspace: goBack });
+  const { register } = useKeyboardNav({ onBackspace: goBack, title: 'Manage Songs' });
 
   return (
     <MenuWithLogo>
@@ -21,28 +20,28 @@ function ManageSongs() {
         <title>Manage Songs | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <Menu.Header>Manage Songs</Menu.Header>
-      <SmoothLink to="exclude-languages/">
-        <MenuButton {...register('exclude-languages', () => navigate('exclude-languages/'))}>
+      <KeyboardNavContext value={register}>
+        <NavButton name="exclude-languages" onClick={() => navigate('exclude-languages/')}>
           Select Song Languages
-        </MenuButton>
-      </SmoothLink>
-      {setlist.isEditable && (
-        <>
-          <SmoothLink to="edit/list/">
-            <MenuButton {...register('edit-songs', () => navigate('edit/list/'))}>Edit songs</MenuButton>
-          </SmoothLink>
-          <SmoothLink to="edit/setlists">
-            <MenuButton {...register('edit-setlists', () => navigate('edit/setlists'))}>Manage setlists</MenuButton>
-          </SmoothLink>
-          <SmoothLink to="convert/">
-            <MenuButton {...register('convert-song', () => navigate('convert/'))}>Convert UltraStar .txt</MenuButton>
-          </SmoothLink>
-        </>
-      )}
-      <hr />
-      <SmoothLink to="menu/">
-        <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
-      </SmoothLink>
+        </NavButton>
+        {setlist.isEditable && (
+          <>
+            <NavButton name="edit-songs" onClick={() => navigate('edit/list/')}>
+              Edit songs
+            </NavButton>
+            <NavButton name="edit-setlists" onClick={() => navigate('edit/setlists')}>
+              Manage setlists
+            </NavButton>
+            <NavButton name="convert-song" onClick={() => navigate('convert/')}>
+              Convert UltraStar .txt
+            </NavButton>
+          </>
+        )}
+        <hr />
+        <NavButton name="back-button" variant="back" onClick={goBack}>
+          Return To Main Menu
+        </NavButton>
+      </KeyboardNavContext>
     </MenuWithLogo>
   );
 }
