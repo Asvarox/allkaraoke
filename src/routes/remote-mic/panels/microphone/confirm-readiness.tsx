@@ -59,7 +59,7 @@ function ConfirmReadiness({ onConfirm }: Props) {
   return visible ? (
     <div className="animate-blink absolute inset-0 z-[1000] flex flex-col items-center justify-center backdrop-blur-md">
       <MenuContainer>
-        <MenuButton className="animate-focused aspect-square" data-test="ready-button" onClick={confirm}>
+        <MenuButton className="subtle-focus aspect-square" data-test="ready-button" onClick={confirm}>
           Ready
         </MenuButton>
       </MenuContainer>
