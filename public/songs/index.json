@@ -9424,6 +9424,36 @@
     "local": false
   },
   {
+    "id": "andres-calamaro-para-no-olvidar",
+    "title": "Para no olvidar",
+    "artist": "Andrés Calamaro",
+    "video": "2yFTtnhzbT4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 9700,
+    "year": "2005",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-07-27T02:10:22.794Z",
+    "genre": "Pop",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Andr%C3%A9s%20Calamaro&cancion=Para%20no%20olvidar",
+    "duration": 270,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6049,
+    "tracksCount": 1,
+    "search": "andrescalamaroparanoolvidar",
+    "local": false
+  },
+  {
     "id": "andrew-lambrou-break-a-broken-heart",
     "title": "Break A Broken Heart",
     "artist": "Andrew Lambrou",
@@ -66400,6 +66430,35 @@
     "local": false
   },
   {
+    "id": "gosia-andrzejewicz-slowa",
+    "title": "Słowa",
+    "artist": "Gosia Andrzejewicz",
+    "video": "jZBP_cq5asU",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 285.6,
+    "gap": 26902.100840336134,
+    "year": "2006",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-07-27T02:10:23.266Z",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=888",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6051,
+    "tracksCount": 1,
+    "search": "gosiaandrzejewiczslowa",
+    "local": false
+  },
+  {
     "id": "gotye-hearts-a-mess",
     "title": "Hearts A Mess",
     "artist": "Gotye",
@@ -94630,6 +94689,36 @@
     "local": false
   },
   {
+    "id": "lady-gaga-venus",
+    "title": "Venus",
+    "artist": "Lady Gaga",
+    "video": "nP3ctBs3510",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.05,
+    "gap": 7058.469324519728,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-27T02:10:23.403Z",
+    "genre": "Pop",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "Coppolatte",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23748",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16375",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6053,
+    "tracksCount": 1,
+    "search": "ladygagavenus",
+    "local": false
+  },
+  {
     "id": "lady-gaga-you-and-i",
     "title": "You And I",
     "artist": "Lady Gaga",
@@ -100664,6 +100753,35 @@
     "shortId": 2651,
     "tracksCount": 1,
     "search": "lospalmerasolvidala",
+    "local": false
+  },
+  {
+    "id": "los-rodriguez-sin-documentos",
+    "title": "Sin documentos",
+    "artist": "Los Rodríguez",
+    "video": "BUKHMGiW_rY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 384.8,
+    "gap": 32590.486486486487,
+    "year": "1993",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-07-27T02:10:16.411Z",
+    "realBpm": 384.8,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Rodr%C3%ADguez&cancion=Sin%20documentos",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6048,
+    "tracksCount": 1,
+    "search": "losrodriguezsindocumentos",
     "local": false
   },
   {
@@ -113513,6 +113631,34 @@
     "local": false
   },
   {
+    "id": "mitski-bug-like-an-angel",
+    "title": "Bug Like An Angel",
+    "artist": "Mitski",
+    "video": "5WW7cuAm-7Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.41,
+    "gap": 16813.682000961027,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-27T02:10:16.404Z",
+    "genre": "Indie",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "lukmuk",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6047,
+    "tracksCount": 1,
+    "search": "mitskibuglikeanangel",
+    "local": false
+  },
+  {
     "id": "mitski-nobody",
     "title": "Nobody",
     "artist": "Mitski",
@@ -117724,6 +117870,36 @@
     "shortId": 3154,
     "tracksCount": 1,
     "search": "neilyoungheartofgold",
+    "local": false
+  },
+  {
+    "id": "neil-young-old-man",
+    "title": "Old Man",
+    "artist": "Neil Young",
+    "video": "rAtDrFdomN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.6,
+    "gap": 16878.664886515355,
+    "year": "1972",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-07-27T02:10:23.398Z",
+    "realBpm": 141,
+    "previewStart": 58,
+    "previewEnd": 101,
+    "volume": 1,
+    "author": "uweotto",
+    "sourceUrl": "https://www.youtube.com/watch?v=rAtDrFdomN4",
+    "duration": 203,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6052,
+    "tracksCount": 1,
+    "search": "neilyoungoldman",
     "local": false
   },
   {
@@ -147700,7 +147876,7 @@
     "bpm": 364,
     "gap": 1420.989010989011,
     "year": "2023",
-    "lastUpdate": "2026-07-12T08:07:45.093Z",
+    "lastUpdate": "2026-07-26T16:57:28.528Z",
     "genre": "Hip-Hop",
     "realBpm": 127,
     "volume": 1,
@@ -150479,6 +150655,33 @@
     "shortId": 4094,
     "tracksCount": 1,
     "search": "stromaetouslesmemes",
+    "local": false
+  },
+  {
+    "id": "sts-irgendwann-bleib-i-dann-dort",
+    "title": "Irgendwann bleib i dann dort",
+    "artist": "STS",
+    "video": "93nNmegkQos",
+    "language": [
+      "German"
+    ],
+    "bpm": 236.55,
+    "gap": 535.415345592898,
+    "year": "1983",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-07-27T02:10:22.944Z",
+    "genre": "Austropop",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "Su-Metal",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6050,
+    "tracksCount": 1,
+    "search": "stsirgendwannbleibidanndort",
     "local": false
   },
   {
