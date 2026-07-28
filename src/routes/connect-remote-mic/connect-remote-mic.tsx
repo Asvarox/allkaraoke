@@ -9,7 +9,7 @@ const { QRCodeSVG } = qrcode;
 
 function RoomCode({ gameCode, ...props }: { gameCode: string }) {
   return (
-    <strong className="animate-focused inline-flex gap-4 rounded-md px-4 py-1 uppercase" {...props}>
+    <strong className="subtle-focus inline-flex gap-4 rounded-md px-4 py-1 uppercase" {...props}>
       {gameCode.split('').map((letter, i) => (
         <span key={i}>{letter}</span>
       ))}

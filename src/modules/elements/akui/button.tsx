@@ -25,7 +25,8 @@ export const ButtonBase = twx(Box)((props) => {
       ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
-    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? 'animate-focused' : '',
+    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? 'subtle-focus' : '',
+    !isE2E() && !props['disabled'] && !props['data-read-only'] ? 'hover:subtle-focus' : '',
     props['disabled']
       ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500! text-gray-300!'
       : 'active:bg-active',

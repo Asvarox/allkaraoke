@@ -12,12 +12,13 @@ test.beforeEach(async ({ page, context, browser }) => {
 test('Help', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  // The main menu is a mirrored remote-mic keyboard (no classic arrow/accept hints to show), so the
-  // on-screen help indicator is exercised on a screen that still uses classic keyboard navigation.
-  await pages.mainMenuPage.goToInputSelectionPage();
+  // The main menu and most setup/settings screens are mirrored remote-mic keyboards (no classic
+  // arrow/accept hints to show), so the on-screen help indicator is exercised on History, which
+  // still uses classic keyboard navigation.
+  await pages.mainMenuPage.goToHistory();
 
   await test.step('Help container is visible by default on the page if it is not turned off', async () => {
-    await expect(pages.inputSelectionPage.advancedButton).toBeVisible();
+    await expect(page.getByTestId('history-page')).toBeVisible();
     await expect(pages.mainMenuPage.toolbar.helpContainerElement).toBeVisible();
   });
 
@@ -28,7 +29,7 @@ test('Help', async ({ page }) => {
 
   await test.step('The setting is remembered after refresh', async () => {
     await page.reload();
-    await expect(pages.inputSelectionPage.advancedButton).toBeVisible();
+    await expect(page.getByTestId('history-page')).toBeVisible();
     await expect(pages.mainMenuPage.toolbar.helpContainerElement).toBeHidden();
   });
 

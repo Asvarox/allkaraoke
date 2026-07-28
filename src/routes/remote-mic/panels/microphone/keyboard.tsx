@@ -1,4 +1,5 @@
 import { captureException } from '@sentry/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
@@ -43,9 +44,43 @@ const onActivateControl = (name: string) => {
   void serverRpc.input.activateControl(name);
 };
 
+// Keys the AnimatePresence swap below. Mirror screens are told apart by `title` (the only
+// per-screen identity the remote gets); classic/song-selection have no such distinction, so a
+// mode change is the only thing that triggers a transition between them.
+function keyboardKey(mode: KeyboardLayoutMode, keyboard: HelpEntry) {
+  return mode === 'mirror' ? `mirror:${keyboard.title ?? ''}` : mode;
+}
+
+function renderKeyboard(
+  mode: KeyboardLayoutMode,
+  keyboard: HelpEntry,
+  onSearchStateChange: Props['onSearchStateChange'],
+) {
+  switch (mode) {
+    case 'mirror':
+      return <MirrorKeyboard key={keyboardKey(mode, keyboard)} keyboard={keyboard} />;
+    case 'song-selection':
+      return (
+        <SongSelectionKeyboard
+          key={keyboardKey(mode, keyboard)}
+          keyboard={keyboard}
+          onSearchStateChange={onSearchStateChange}
+        />
+      );
+    case 'classic':
+      return <ClassicKeyboard key={keyboardKey(mode, keyboard)} keyboard={keyboard} />;
+    default:
+      return assertNever(mode);
+  }
+}
+
 /**
  * Renders the remote-mic keyboard panel for the active screen. Each layout `mode` has its own
  * renderer; the exhaustive `switch` (with `assertNever`) forces a renderer to exist for every mode.
+ *
+ * Swaps between screens/modes crossfade via AnimatePresence (`mode="wait"` so the outgoing keyboard
+ * fully clears before the next mounts, avoiding a moment with two full-height keyboards stacked) —
+ * see each renderer's root `motion.div` for the actual animation.
  */
 export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
   const keyboard = useSubscription('keyboard-layout');
@@ -54,16 +89,11 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 
   const mode: KeyboardLayoutMode = keyboard.mode ?? 'classic';
 
-  switch (mode) {
-    case 'mirror':
-      return <MirrorKeyboard keyboard={keyboard} />;
-    case 'song-selection':
-      return <SongSelectionKeyboard keyboard={keyboard} onSearchStateChange={onSearchStateChange} />;
-    case 'classic':
-      return <ClassicKeyboard keyboard={keyboard} />;
-    default:
-      return assertNever(mode);
-  }
+  return (
+    <AnimatePresence mode="wait" initial={false}>
+      {renderKeyboard(mode, keyboard, onSearchStateChange)}
+    </AnimatePresence>
+  );
 }
 
 // Mirror mode — the active screen described its own controls; render them directly instead of arrows.
@@ -81,7 +111,14 @@ export function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   // anything that doesn't falls back to the generic keyboard icon.
   const titleIcon = keyboard.icon ? remoteButtonIcons[keyboard.icon] : 'ic:baseline-keyboard';
   return (
-    <div data-test="remote-keyboard" data-mode="mirror" className="flex h-full min-h-0 w-full flex-col gap-3">
+    <motion.div
+      data-test="remote-keyboard"
+      data-mode="mirror"
+      className="flex h-full min-h-0 w-full flex-col gap-3"
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.15 }}>
       {keyboard.title && (
         <div
           data-test="remote-keyboard-header"
@@ -95,7 +132,7 @@ export function MirrorKeyboard({ keyboard }: { keyboard: HelpEntry }) {
           <RemoteControl key={control.name} control={control} onActivate={onActivateControl} />
         ))}
       </ScrollShadowColumn>
-    </div>
+    </motion.div>
   );
 }
 
@@ -170,9 +207,16 @@ function ScrollShadowColumn({ children, className }: PropsWithChildren<{ classNa
 // Classic mode — generic arrow + accept/back navigation shared by most menus.
 function ClassicKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   return (
-    <div data-test="remote-keyboard" data-mode="classic" className="flex flex-wrap justify-center gap-4">
+    <motion.div
+      data-test="remote-keyboard"
+      data-mode="classic"
+      className="flex flex-wrap justify-center gap-4"
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.15 }}>
       <NavPad keyboard={keyboard} />
-    </div>
+    </motion.div>
   );
 }
 
@@ -180,7 +224,14 @@ function ClassicKeyboard({ keyboard }: { keyboard: HelpEntry }) {
 // Extend here (e.g. playlist controls) without touching the other modes.
 function SongSelectionKeyboard({ keyboard, onSearchStateChange }: { keyboard: HelpEntry } & Props) {
   return (
-    <div data-test="remote-keyboard" data-mode="song-selection" className="flex flex-wrap justify-center gap-4">
+    <motion.div
+      data-test="remote-keyboard"
+      data-mode="song-selection"
+      className="flex flex-wrap justify-center gap-4"
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.15 }}>
       {keyboard.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
       <NavPad keyboard={keyboard} />
       {/* "Random song" only makes sense while browsing songs, so it lives in this mode, not NavPad. */}
@@ -192,7 +243,7 @@ function SongSelectionKeyboard({ keyboard, onSearchStateChange }: { keyboard: He
           <Icon icon="ic:baseline-shuffle" /> {keyboard.shiftR || 'Random Song'}
         </ActionButton>
       </ActionsContainer>
-    </div>
+    </motion.div>
   );
 }
 

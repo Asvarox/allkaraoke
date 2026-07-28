@@ -191,3 +191,136 @@ test('Mirrors the song settings controls on the remote mic once a song is select
     await remoteMicMainPage.expectKeyboardModeToBe('song-selection');
   });
 });
+
+test('Mirrors the Manage Songs menu on the remote mic and navigates directly from it', async ({ browser, page }) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open Manage Songs on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToManageSongs();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const excludeLanguagesControl = remoteMicMainPage.mirroredControl('exclude-languages');
+  const backControl = remoteMicMainPage.mirroredControl('back-button');
+
+  await test.step('Remote mic shows the mirrored menu instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(excludeLanguagesControl).toBeVisible();
+    await expect(backControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the mirrored button navigates on the host', async () => {
+    await excludeLanguagesControl.click();
+
+    await expect(page.getByTestId('close-exclude-languages')).toBeVisible();
+  });
+});
+
+test('Mirrors the Remote Microphone Settings screen on the remote mic and toggles the default permission directly', async ({
+  browser,
+  page,
+}) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open Remote Microphone Settings on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSetting();
+    await pages.settingsPage.openRemoteMicSettings();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const connectionTypeControl = remoteMicMainPage.mirroredControl('connection type');
+  const defaultPermissionControl = remoteMicMainPage.mirroredControl('default-permission');
+  const backControl = remoteMicMainPage.mirroredControl('back-button');
+
+  await test.step('Remote mic shows the mirrored controls, including the connected device, instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(connectionTypeControl).toBeVisible();
+    await expect(defaultPermissionControl).toBeVisible();
+    await expect(backControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the mirrored switch changes the default permission on the host', async () => {
+    await pages.settingsPage.expectDefaultPermissionToBeWrite();
+
+    await defaultPermissionControl.click();
+
+    await pages.settingsPage.expectDefaultPermissionToBeRead();
+  });
+});
+
+test('Mirrors the calibration screen on the remote mic and adjusts input lag directly', async ({ browser, page }) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open the calibration screen on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSetting();
+    await pages.settingsPage.goToCalibration();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const inputLagControl = remoteMicMainPage.mirroredControl('input-lag');
+  const saveControl = remoteMicMainPage.mirroredControl('save');
+
+  await test.step('Remote mic shows the mirrored input-lag stepper and save button instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(inputLagControl).toBeVisible();
+    await expect(saveControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Adjusting the mirrored stepper changes the input lag on the host', async () => {
+    await inputLagControl.getByTestId('numeric-input-up').click();
+
+    await pages.calibration.expectInputLagToBe('50');
+  });
+});
+
+test('Mirrors the Jukebox screen on the remote mic and navigates back directly from it', async ({ browser, page }) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open Jukebox on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToJukebox();
+    await expect(page.getByTestId('jukebox-container')).toBeVisible();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const skipControl = remoteMicMainPage.mirroredControl('skip-button');
+  const singControl = remoteMicMainPage.mirroredControl('sing-button');
+  // Jukebox has no on-screen back button - the remote-only control stands in for it.
+  const backControl = remoteMicMainPage.mirroredControl('jukebox-back');
+
+  await test.step('Remote mic shows the mirrored controls instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(skipControl).toBeVisible();
+    await expect(singControl).toBeVisible();
+    await expect(backControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the remote-only back control returns to the main menu on the host', async () => {
+    await backControl.click();
+
+    await pages.mainMenuPage.waitForContainer();
+  });
+});

@@ -11,6 +11,7 @@ interface Props {
 }
 function QRCodeModal({ closeModal, open }: Props) {
   const { register } = useKeyboardNav({
+    enabled: open,
     onBackspace: closeModal,
   });
 

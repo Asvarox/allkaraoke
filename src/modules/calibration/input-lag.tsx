@@ -2,23 +2,15 @@ import { ComponentProps } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 import { Menu } from '~/modules/elements/akui/menu';
-import useKeyboardHelp from '~/modules/hooks/use-keyboard-help';
-import { HelpEntry } from '~/routes/keyboard-help/context';
 import { InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 interface Props extends ComponentProps<typeof Menu.ButtonGroup> {
   focused: boolean;
 }
 
-const help: HelpEntry = {
-  vertical: null,
-  horizontal: 'Adjust input lag',
-};
-
 const InputLag = ({ onClick, focused, ...restProps }: Props) => {
   const [inputLag, setInputLag] = useSettingValue(InputLagSetting);
 
-  useKeyboardHelp(help, focused);
   useHotkeys('left', () => setInputLag(inputLag - 50), { enabled: focused }, [inputLag]);
   useHotkeys('right', () => setInputLag(inputLag + 50), { enabled: focused }, [inputLag]);
 
