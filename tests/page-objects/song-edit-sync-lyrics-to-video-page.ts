@@ -100,16 +100,18 @@ export class SongEditSyncLyricsToVideoPagePO {
   }
 
   public async getCurrentPlaybackTimeMs() {
-    await expect(this.currentPlaybackTimeElement).toContainText(/ms\)/);
+    await expect(this.currentPlaybackTimeElement).toContainText(/\d{2}:\d{2}\.\d{3}/);
 
     const text = await this.currentPlaybackTimeElement.innerText();
-    const match = text.match(/\((\d+) ms\)/);
+    const match = text.match(/(\d{2}):(\d{2})\.(\d{3})/);
 
     if (!match) {
       throw new Error(`Could not parse current playback time from "${text}"`);
     }
 
-    return match[1];
+    const [, minutes, seconds, ms] = match;
+
+    return String((Number(minutes) * 60 + Number(seconds)) * 1000 + Number(ms));
   }
 
   public get estProperTempoBpmElement() {
