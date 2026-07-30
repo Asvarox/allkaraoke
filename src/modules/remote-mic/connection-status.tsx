@@ -36,4 +36,4 @@ export default function ConnectionStatus() {
 
 const Container = twc.div`typography pointer-events-none fixed right-0 bottom-0 z-[100000] flex gap-2.5 text-sm opacity-75 sm:p-1`;
 
-const Row = twc.div``;
+const Row = twc.div`tabular-nums`;

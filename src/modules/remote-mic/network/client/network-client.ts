@@ -117,6 +117,13 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     storage.setItem(MIC_ID_KEY, id);
   };
 
+  // A no-op while not yet connected — the next real connect() call already sends the current name
+  public renameSelf = (name: string) => {
+    if (this.connected) {
+      void this.rpc.players.setName(name);
+    }
+  };
+
   public connect = (roomId: string, name: string, silent: boolean) => {
     const lcRoomId = roomId.toLowerCase();
     if (this.transport) {

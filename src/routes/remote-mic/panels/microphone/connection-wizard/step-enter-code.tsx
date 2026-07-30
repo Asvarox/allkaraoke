@@ -1,8 +1,5 @@
-import { AnimatePresence, motion } from 'motion/react';
 import { ComponentRef, FormEventHandler, useEffect, useRef, useState } from 'react';
-import createPersistedState from 'use-persisted-state';
 
-import { MAX_NAME_LENGTH } from '~/consts';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import Typography from '~/modules/elements/akui/primitives/typography';
@@ -17,50 +14,72 @@ import { ConnectionStatuses } from '~/routes/remote-mic/remote-mic';
 
 interface Props {
   roomId: string | null;
-  onConnect: (roomId: string, name: string) => void;
+  onConnect: (roomId: string) => void;
   connectionStatus: ConnectionStatuses;
   connectionError?: transportErrorReason;
 }
 
-const usePersistedName = createPersistedState<string>('remote_mic_name');
+// Milliseconds between each character reveal when a game code preloaded from the URL is "typed" in
+const AUTO_TYPE_CHAR_DELAY_MS = 90;
 
-export default function StepEnterDetails({ roomId, onConnect, connectionStatus, connectionError }: Props) {
-  const [name, setName] = usePersistedName('');
+export default function StepEnterCode({ roomId, onConnect, connectionStatus, connectionError }: Props) {
+  const [customRoomId, setCustomRoomId] = useState('');
+  // While true, the code is being revealed programmatically — the field is locked to input
+  const [isAutoTyping, setIsAutoTyping] = useState(!!roomId);
   // Start as reset if already in error on mount — avoids re-showing the modal when switching tabs back
   const [errorReset, setErrorReset] = useState(() => connectionStatus === 'error');
-  const [customRoomId, setCustomRoomId] = useState<string>(roomId ?? '');
   const gameCodeInputRef = useRef<ComponentRef<typeof Input>>(null);
-  const nameInputRef = useRef<ComponentRef<typeof Input>>(null);
 
-  const disabled = connectionStatus !== 'uninitialised' && connectionStatus !== 'error';
+  const disabled = isAutoTyping || (connectionStatus !== 'uninitialised' && connectionStatus !== 'error');
 
-  const focusNextInput = (triggerValidation = false) => {
-    if (customRoomId.length !== GAME_CODE_LENGTH) {
-      gameCodeInputRef.current?.element?.focus();
-      triggerValidation && gameCodeInputRef.current?.triggerValidationError('Provide a valid game code');
-      return true;
-    } else if (name === '') {
-      nameInputRef.current?.element?.focus();
-      triggerValidation && nameInputRef.current?.triggerValidationError('Provide your name');
-      return true;
+  // Reveal a preloaded game code one character at a time, as if it were being typed
+  useEffect(() => {
+    if (!roomId) return;
+    const chars = roomId.toUpperCase().slice(0, GAME_CODE_LENGTH);
+    let i = 0;
+    const interval = setInterval(() => {
+      i += 1;
+      setCustomRoomId(chars.slice(0, i));
+      if (i >= chars.length) {
+        clearInterval(interval);
+        setIsAutoTyping(false);
+      }
+    }, AUTO_TYPE_CHAR_DELAY_MS);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run the reveal once, driven by the initial roomId only
+  }, []);
+
+  // Focus the field as soon as it's interactive — either immediately (manual entry) or once the
+  // auto-typed reveal finishes
+  useEffect(() => {
+    if (!isAutoTyping) gameCodeInputRef.current?.element?.focus();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAutoTyping]);
+
+  // Auto-connect as soon as a full code is in place — whether typed by hand, pasted, or revealed above.
+  // connectionStatus is intentionally excluded from deps: it's only read as a gate here, not something
+  // that should retrigger this effect (that would immediately re-fire once status flips to 'connecting').
+  useEffect(() => {
+    if (isAutoTyping) return;
+    if (
+      customRoomId.length === GAME_CODE_LENGTH &&
+      (connectionStatus === 'uninitialised' || connectionStatus === 'error')
+    ) {
+      onConnect(customRoomId);
     }
-    return false;
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [customRoomId, isAutoTyping]);
 
-  const handleConnect: FormEventHandler<HTMLFormElement> = (event) => {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     setErrorReset(false);
 
-    if (!focusNextInput(true)) {
-      // customRoomId takes priority — user may have manually corrected the code from QR
-      onConnect(customRoomId || roomId!, name);
+    if (customRoomId.length !== GAME_CODE_LENGTH) {
+      gameCodeInputRef.current?.triggerValidationError('Provide a valid game code');
+      return;
     }
+    onConnect(customRoomId);
   };
-
-  useEffect(() => {
-    focusNextInput(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- focus the first empty input once on mount
-  }, []);
 
   const shouldShowError = connectionStatus === 'error' && !errorReset;
   const isConnecting = connectionStatus === 'connecting' || connectionStatus === 'reconnecting';
@@ -68,21 +87,8 @@ export default function StepEnterDetails({ roomId, onConnect, connectionStatus, 
   return (
     <>
       {roomId?.startsWith('p') && <ConfirmWifiModal onClose={() => gameCodeInputRef.current?.element?.focus()} />}
-      <AnimatePresence>
-        {isConnecting && (
-          <motion.div
-            className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-black/40 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}>
-            <Loader />
-            <span className="typography text-xl text-white">Connecting…</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
       <div className="flex w-full flex-1 flex-col justify-center">
-        <form className="flex w-full flex-col gap-4 md:gap-8" onSubmit={handleConnect}>
+        <form className="flex w-full flex-col gap-4 md:gap-8" onSubmit={handleSubmit}>
           <Input
             className="[&_input]:text-center [&_input]:tracking-[1.25rem] [&_input]:uppercase"
             ref={gameCodeInputRef}
@@ -95,7 +101,6 @@ export default function StepEnterDetails({ roomId, onConnect, connectionStatus, 
             maxLength={GAME_CODE_LENGTH}
             focused={false}
             disabled={disabled}
-            autoFocus
             data-test="game-code-input"
             onFocus={() => {
               if (connectionStatus === 'error') {
@@ -111,20 +116,8 @@ export default function StepEnterDetails({ roomId, onConnect, connectionStatus, 
               setCustomRoomId(paste.slice(0, GAME_CODE_LENGTH));
             }}
           />
-          <Input
-            maxLength={MAX_NAME_LENGTH}
-            focused={false}
-            label="Your name"
-            placeholder="Enter your name…"
-            value={name}
-            onChange={setName}
-            ref={nameInputRef}
-            disabled={disabled}
-            autoFocus
-            data-test="player-name-input"
-          />
           <MenuButton className="h-24" type="submit" disabled={disabled} data-test="connect-button">
-            Connect
+            {isConnecting ? <Loader size="1.5em" /> : 'Connect'}
           </MenuButton>
         </form>
       </div>

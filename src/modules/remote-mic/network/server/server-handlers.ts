@@ -116,6 +116,17 @@ export const serverHandlers = {
       // Players can remove other players (this is intentional)
       ctx.removePlayer(id);
     }),
+
+    // Any connected mic can rename itself (no write permission required)
+    setName: defineMutation(
+      (ctx: RpcContext, name: string) => {
+        const remoteMic = RemoteMicManager.getRemoteMicById(ctx.senderId);
+        if (!remoteMic) throw new Error('Microphone not found');
+        remoteMic.name = name;
+        events.remoteMicRenamed.dispatch({ id: ctx.senderId, name });
+      },
+      { permission: 'read' },
+    ),
   },
 } as const;
 
