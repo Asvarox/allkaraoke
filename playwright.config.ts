@@ -44,7 +44,7 @@ const config: PlaywrightTestConfig = {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 14_000,
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: prodRun ? 'https://localhost:3010/?e2e-test' : 'https://localhost:3000/?e2e-test',
+    baseURL: prodRun ? 'http://localhost:3010/?e2e-test' : 'http://localhost:3000/?e2e-test',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -117,7 +117,7 @@ const config: PlaywrightTestConfig = {
       ? {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
           command: process.env.CI
-            ? 'wrangler dev --port 3010 --local --local-protocol=https'
+            ? 'wrangler dev --port 3010 --local'
             : 'VITE_APP_PRERENDER=true vite build && vite preview --port 3010',
           port: 3010,
           timeout: 60_000 * 3,
