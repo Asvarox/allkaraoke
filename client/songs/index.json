@@ -23712,6 +23712,33 @@
     "local": false
   },
   {
+    "id": "bobby-darin-beyond-the-sea",
+    "title": "Beyond The Sea",
+    "artist": "Bobby Darin",
+    "video": "m8OlDPqYBLw",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 10832.142857142857,
+    "year": "1959",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-07-30T01:46:40.607Z",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "smugman",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6055,
+    "tracksCount": 1,
+    "search": "bobbydarinbeyondthesea",
+    "local": false
+  },
+  {
     "id": "bobby-helms-jingle-bell-rock",
     "title": "Jingle Bell Rock",
     "artist": "Bobby Helms",
@@ -54622,6 +54649,33 @@
     "shortId": 1522,
     "tracksCount": 1,
     "search": "enyaorinocoflowsailaway",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-just-a-man",
+    "title": "Just A Man",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans)",
+    "video": "b-wQQwMLK7Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 9550,
+    "year": "2024",
+    "lastUpdate": "2026-07-30T01:46:36.006Z",
+    "genre": "Musical",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Vittelius",
+    "duration": 153,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6054,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransjustaman",
     "local": false
   },
   {
@@ -108996,9 +109050,9 @@
       "Japanese"
     ],
     "bpm": 302.02,
-    "gap": 14941.68829878816,
+    "gap": 14841.68829878816,
     "year": "1995",
-    "lastUpdate": "2026-06-23T20:39:29.978Z",
+    "lastUpdate": "2026-07-29T05:14:22.450Z",
     "genre": "Anime",
     "realBpm": 132,
     "volume": 1,
