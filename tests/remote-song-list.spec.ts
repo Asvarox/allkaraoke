@@ -27,9 +27,10 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-// Not disabling it globally so in case SW breaks the app it is caught by other tests
-//test.use({ serviceWorkers: 'block' });
+// Service worker caches index.json, which bypasses Playwright's route mock (mockSongs) and lets
+// the real, much longer production catalog leak in — breaking anything that asserts a specific
+// song is visible without an explicit scroll/search
+test.use({ serviceWorkers: 'block' });
 
 const songs = {
   polish1: {
@@ -82,9 +83,9 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
-  await test.step('Open remoteMic and enter player name', async () => {
-    remoteMic = await openRemoteMic(page, context, browser);
-    await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
+  await test.step('Open remoteMic', async () => {
+    // Connect manually below, once we've confirmed the song list works pre-connection
+    remoteMic = await openRemoteMic(page, context, browser, false);
   });
 
   await test.step('Song list is available without connecting', async () => {
@@ -94,7 +95,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
 
   await test.step('Song list doesnt contain removed songs after connecting', async () => {
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await connectRemoteMic(remoteMic._page);
+    await connectRemoteMic(remoteMic._page, P1_Name);
 
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();

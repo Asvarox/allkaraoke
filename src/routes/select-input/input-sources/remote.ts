@@ -24,9 +24,11 @@ export class RemoteMicrophoneInputSource {
   public static subscribeToListChange = (callback: () => void) => {
     events.remoteMicConnected.subscribe(callback);
     events.remoteMicDisconnected.subscribe(callback);
+    events.remoteMicRenamed.subscribe(callback);
   };
   public static unsubscribeToListChange = (callback: () => void) => {
     events.remoteMicConnected.unsubscribe(callback);
     events.remoteMicDisconnected.unsubscribe(callback);
+    events.remoteMicRenamed.unsubscribe(callback);
   };
 }

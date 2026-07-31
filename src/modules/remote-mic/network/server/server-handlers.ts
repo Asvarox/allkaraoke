@@ -1,3 +1,4 @@
+import { MAX_NAME_LENGTH } from '~/consts';
 import events from '~/modules/game-events/game-events';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
@@ -116,6 +117,20 @@ export const serverHandlers = {
       // Players can remove other players (this is intentional)
       ctx.removePlayer(id);
     }),
+
+    // Any connected mic can rename itself (no write permission required)
+    setName: defineMutation(
+      (ctx: RpcContext, name: string) => {
+        const trimmedName = typeof name === 'string' ? name.trim().slice(0, MAX_NAME_LENGTH) : '';
+        if (!trimmedName) throw new Error('Invalid name');
+
+        const remoteMic = RemoteMicManager.getRemoteMicById(ctx.senderId);
+        if (!remoteMic) throw new Error('Microphone not found');
+        remoteMic.name = trimmedName;
+        events.remoteMicRenamed.dispatch({ id: ctx.senderId, name: trimmedName });
+      },
+      { permission: 'read' },
+    ),
   },
 } as const;
 

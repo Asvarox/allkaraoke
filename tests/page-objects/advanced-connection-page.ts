@@ -60,9 +60,8 @@ export class AdvancedConnectionPagePO {
     await expect(this.getPlayerNameInput(playerNumber)).toContainText(playerName, { ignoreCase: true });
   }
 
-  public async expectConnectedAlertToBeShownForPlayer(playerName: string) {
-    await expect(this.page.locator('.Toastify')).toContainText(`${playerName} connected`, {
-      ignoreCase: true,
-    });
+  public async expectConnectedAlertToBeShownForPlayer(playerName: string | RegExp) {
+    const expected = typeof playerName === 'string' ? `${playerName} connected` : playerName;
+    await expect(this.page.locator('.Toastify')).toContainText(expected, { ignoreCase: true });
   }
 }

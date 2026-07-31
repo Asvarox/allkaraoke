@@ -68,6 +68,7 @@ export const events = {
   remoteMicDisconnected: new GameEvent<(remoteMic: { id: string; name: string }, silent: boolean) => void>(
     'remoteMicDisconnected',
   ),
+  remoteMicRenamed: new GameEvent<(remoteMic: { id: string; name: string }) => void>('remoteMicRenamed'),
   playerNameChanged: new GameEvent<(playerNumber: 0 | 1 | 2 | 3, oldName: string | undefined) => void>(
     'playerNameChanged',
   ),

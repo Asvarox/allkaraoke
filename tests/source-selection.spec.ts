@@ -53,7 +53,9 @@ test('Source selection in sing settings', async ({ page, browser }) => {
   await test.step('Connect remoteMic and assert auto selection of inputs', async () => {
     remoteMic = await openAndConnectRemoteMicDirectly(page, browser, names.player1);
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMic.num, names.player1);
-    await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(names.player1);
+    // The "connected" toast fires at connect time, before the wizard's own name step renames the
+    // mic away from its placeholder — so it shows the placeholder, not the name entered above
+    await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(/Player #\d+ connected/i);
     await pages.advancedConnectionPage.goToSongPreview();
     await expect(pages.advancedConnectionPage.saveButton).not.toBeVisible();
     // v2 SongSettings does not include PlayerSettings; player name pre-fill check is skipped.

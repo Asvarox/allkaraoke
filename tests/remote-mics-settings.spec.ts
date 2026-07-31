@@ -25,6 +25,9 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
   const playerName = 'E2E Test Blue';
 
   const remoteMic = await openRemoteMic(page, context, browser);
+  // The code preloaded from the URL is revealed one character at a time — wait for that to finish
+  // before reading it
+  await expect(remoteMic.remoteMicMainPage.gameCodeInput).toHaveValue(/^.{5}$/);
   const gameCodeValue = await remoteMic.remoteMicMainPage.gameCodeInput.getAttribute('value');
 
   await test.step('Enter player`s name and connect mic with the game', async () => {
@@ -43,7 +46,8 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 
   await test.step('After resetting the mic settings, remoteMicID and player name should be cleared', async () => {
     await remoteMic.remoteMicSettingsPage.resetMicrophone();
-    await remoteMic.remoteMicMainPage.expectPlayerNameToBe('');
+    // No name is remembered anymore, so a fresh placeholder is shown instead of the old name
+    await remoteMic.remoteMicMainPage.expectPlayerNameToBe(/^Player #\d+$/);
     await remoteMic.remoteMicMainPage.expectGameCodeToBe(gameCodeValue!);
 
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();

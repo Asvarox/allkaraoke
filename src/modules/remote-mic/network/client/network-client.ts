@@ -35,6 +35,10 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
 
   private reconnecting = false;
   private connected = false;
+  // The name currently registered (or being registered) with the server — kept up to date by both
+  // connect() and renameSelf() so reconnects always re-register with the latest name, not the one
+  // captured by the original connect() call
+  private currentName = '';
 
   private frequencies: number[] = [];
 
@@ -117,8 +121,17 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     storage.setItem(MIC_ID_KEY, id);
   };
 
+  // A no-op while not yet connected — the next real connect() call already sends the current name
+  public renameSelf = (name: string) => {
+    if (this.connected) {
+      this.currentName = name;
+      this.rpc.players.setName(name).catch((e) => console.warn('Failed to rename mic', e));
+    }
+  };
+
   public connect = (roomId: string, name: string, silent: boolean) => {
     const lcRoomId = roomId.toLowerCase();
+    this.currentName = name;
     if (this.transport) {
       this.transport.clearAllListeners();
       this.transport.close();
@@ -144,7 +157,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       this.clientId!,
       this.roomId,
       () => {
-        this.connectToServer(lcRoomId, name, silent);
+        this.connectToServer(lcRoomId, silent);
       },
       (reason) => {
         if (reason === 'unavailable-id') {
@@ -174,7 +187,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         if (reason !== 'player-removed') {
           if (!this.reconnecting && this.connected) {
             this.reconnecting = true;
-            setTimeout(() => this.reconnect(lcRoomId, name), 1500);
+            setTimeout(() => this.reconnect(lcRoomId), 1500);
           }
         }
 
@@ -204,14 +217,14 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     setTimeout(this.ping, 2_000);
   };
 
-  public connectToServer = (_roomId: string, name: string, silent: boolean) => {
+  public connectToServer = (_roomId: string, silent: boolean) => {
     this.connected = true;
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
     posthog.capture('remote_mic_connection_successful', { transport: this.roomId?.charAt(0) });
     this.transport?.sendEvent({
       t: 'register',
-      name,
+      name: this.currentName,
       id: this.clientId!,
       silent,
       lag: RemoteMicrophoneLagSetting.get(),
@@ -244,11 +257,11 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     });
   };
 
-  private reconnect = (roomId: string, name: string) => {
+  private reconnect = (roomId: string) => {
     if (this.reconnecting) {
       events.karaokeConnectionStatusChange.dispatch('reconnecting');
-      this.connect(roomId, name, false);
-      setTimeout(() => this.reconnect(roomId, name), 2000);
+      this.connect(roomId, this.currentName, false);
+      setTimeout(() => this.reconnect(roomId), 2000);
     }
   };
 

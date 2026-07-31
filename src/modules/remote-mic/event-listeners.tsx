@@ -67,9 +67,9 @@ events.remoteMicConnected.subscribe(async ({ name, id, silent }) => {
   if (!isPreRendering) {
     if (!silent) {
       (await import('react-toastify')).toast.success(
-        <>
+        <span>
           Remote microphone <b className="ph-no-capture">{name}</b> connected!
-        </>,
+        </span>,
         {
           toastId: `connection-status-${id}`,
           updateId: `connection-status-${id}`,
@@ -82,9 +82,9 @@ events.remoteMicDisconnected.subscribe(async ({ name, id }, silent) => {
   if (!isPreRendering) {
     if (!silent) {
       (await import('react-toastify')).toast.warning(
-        <>
+        <span>
           Remote microphone <b className="ph-no-capture">{name}</b> disconnected!
-        </>,
+        </span>,
         {
           toastId: `connection-status-${id}`,
           updateId: `connection-status-${id}`,
@@ -109,6 +109,7 @@ events.inputListChanged.subscribe(sendPlayerStates);
 events.playerInputChanged.subscribe(sendPlayerStates);
 events.remoteMicConnected.subscribe(sendPlayerStates);
 events.remoteMicDisconnected.subscribe(sendPlayerStates);
+events.remoteMicRenamed.subscribe(sendPlayerStates);
 // Publish the current state immediately so new channel subscribers receive
 // the latest list without waiting for the next player/input event.
 sendPlayerStates();
