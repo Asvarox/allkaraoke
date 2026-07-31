@@ -8,14 +8,13 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
   // The game code always auto-connects once fully entered (typed, pasted, or auto-revealed from a
   // preloaded URL) — no button click needed. The "Set Your Name" step, however, only shows up when
   // there's no remembered name yet (e.g. the first connection in this browser context); on a
-  // reconnect with a remembered name it's skipped straight to "connected".
-  const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
-  try {
-    await nameConfirmButton.waitFor({ state: 'visible', timeout: 6_000 });
-  } catch {
-    // Name step was skipped — nothing to confirm
-  }
-  if (await nameConfirmButton.isVisible()) {
+  // reconnect with a remembered name it's skipped straight to "connected". Check localStorage
+  // directly rather than a bounded wait — waiting out a fixed timeout on every (common) reconnect
+  // eats into the toast auto-dismiss window that other assertions rely on.
+  const hasStoredName = await remoteMicPage.evaluate(() => localStorage.getItem('remote_mic_name') !== null);
+  if (!hasStoredName) {
+    const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
+    await nameConfirmButton.waitFor({ state: 'visible', timeout: 20_000 });
     if (name !== undefined) {
       await remoteMicPage.getByTestId('player-name-input').fill(name);
     }
