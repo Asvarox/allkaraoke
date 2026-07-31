@@ -29,6 +29,10 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
   // Start as reset if already in error on mount — avoids re-showing the modal when switching tabs back
   const [errorReset, setErrorReset] = useState(() => connectionStatus === 'error');
   const gameCodeInputRef = useRef<ComponentRef<typeof Input>>(null);
+  // Guards against submitting the same code twice — connectionStatus lags a render behind
+  // RemoteMicClient.connect() actually being called, so a manual Enter/click can otherwise race
+  // the auto-connect effect while both still see connectionStatus as 'uninitialised'
+  const submittedCodeRef = useRef<string | null>(null);
 
   const disabled = isAutoTyping || (connectionStatus !== 'uninitialised' && connectionStatus !== 'error');
 
@@ -63,12 +67,21 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
     if (isAutoTyping) return;
     if (
       customRoomId.length === GAME_CODE_LENGTH &&
-      (connectionStatus === 'uninitialised' || connectionStatus === 'error')
+      (connectionStatus === 'uninitialised' || connectionStatus === 'error') &&
+      submittedCodeRef.current !== customRoomId
     ) {
+      submittedCodeRef.current = customRoomId;
       onConnect(customRoomId);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [customRoomId, isAutoTyping]);
+
+  // A failed attempt re-enables the form for a manual retry — allow resubmitting the same code
+  useEffect(() => {
+    if (connectionStatus === 'error') {
+      submittedCodeRef.current = null;
+    }
+  }, [connectionStatus]);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
@@ -79,6 +92,8 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
       gameCodeInputRef.current?.element?.focus();
       return;
     }
+    if (submittedCodeRef.current === customRoomId) return;
+    submittedCodeRef.current = customRoomId;
     onConnect(customRoomId);
   };
 
