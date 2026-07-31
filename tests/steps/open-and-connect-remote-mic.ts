@@ -5,12 +5,13 @@ import initialise from '../page-objects/initialise';
 import initialiseRemoteMic from '../page-objects/remote-mic/initialise-remote-mic';
 
 export async function connectRemoteMic(remoteMicPage: Page, name?: string, closeMicSelectionMenu = true) {
-  // The game code always auto-connects once fully entered (typed, pasted, or auto-revealed from a
-  // preloaded URL) — no button click needed. The "Set Your Name" step, however, only shows up when
-  // there's no remembered name yet (e.g. the first connection in this browser context); on a
-  // reconnect with a remembered name it's skipped straight to "connected". Check localStorage
-  // directly rather than a bounded wait — waiting out a fixed timeout on every (common) reconnect
-  // eats into the toast auto-dismiss window that other assertions rely on.
+  const connectButton = remoteMicPage.getByTestId('connect-button');
+  try {
+    await expect(connectButton).toBeEnabled({ timeout: 4_000 });
+    await connectButton.click();
+  } catch {
+    // Not on this step, or auto-connect already handled it
+  }
   const hasStoredName = await remoteMicPage.evaluate(() => localStorage.getItem('remote_mic_name') !== null);
   if (!hasStoredName) {
     const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
@@ -34,15 +35,16 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
     }
   }
 }
-export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser) {
+export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser, autoConnect = true) {
   const remoteMic = await context.newPage();
-  await mockSongs({ page: remoteMic, context });
   await initTestMode({ page: remoteMic, context });
 
   const serverUrl = await page.getByTestId('server-link-input').inputValue();
-  await remoteMic.goto(serverUrl);
-
-  // await remoteMic.getByTestId('confirm-wifi-connection').click();
+  // With auto-connect off, the code is still prefilled/revealed but the mic stays disconnected
+  // until connectRemoteMic() (or a manual submit) is called — used to inspect the pre-connect state
+  const url = autoConnect ? serverUrl : `${serverUrl}&autoconnect=false`;
+  await remoteMic.goto(url);
+  await mockSongs({ page: remoteMic, context });
 
   return initialiseRemoteMic(remoteMic, context, browser);
 }

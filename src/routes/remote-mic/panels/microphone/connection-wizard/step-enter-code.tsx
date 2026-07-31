@@ -17,12 +17,21 @@ interface Props {
   onConnect: (roomId: string) => void;
   connectionStatus: ConnectionStatuses;
   connectionError?: transportErrorReason;
+  // When false, a complete code is still revealed/prefilled but never submitted automatically —
+  // the user (or a test inspecting the pre-connection state) has to press Connect themselves
+  autoConnect?: boolean;
 }
 
 // Milliseconds between each character reveal when a game code preloaded from the URL is "typed" in
 const AUTO_TYPE_CHAR_DELAY_MS = 90;
 
-export default function StepEnterCode({ roomId, onConnect, connectionStatus, connectionError }: Props) {
+export default function StepEnterCode({
+  roomId,
+  onConnect,
+  connectionStatus,
+  connectionError,
+  autoConnect = true,
+}: Props) {
   const [customRoomId, setCustomRoomId] = useState('');
   // While true, the code is being revealed programmatically — the field is locked to input
   const [isAutoTyping, setIsAutoTyping] = useState(!!roomId);
@@ -64,7 +73,7 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
   // connectionStatus is intentionally excluded from deps: it's only read as a gate here, not something
   // that should retrigger this effect (that would immediately re-fire once status flips to 'connecting').
   useEffect(() => {
-    if (isAutoTyping) return;
+    if (isAutoTyping || !autoConnect) return;
     if (
       customRoomId.length === GAME_CODE_LENGTH &&
       (connectionStatus === 'uninitialised' || connectionStatus === 'error') &&
@@ -74,7 +83,7 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
       onConnect(customRoomId);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [customRoomId, isAutoTyping]);
+  }, [customRoomId, isAutoTyping, autoConnect]);
 
   // A failed attempt re-enables the form for a manual retry — allow resubmitting the same code
   useEffect(() => {

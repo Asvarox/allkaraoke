@@ -55,14 +55,16 @@ function TopBar({ connectionStatus, roomId }: Props) {
             {connectionStatus === 'connected' ? <Ping /> : connectionStatus.toUpperCase()}
           </span>
         </div>
-        <button
-          type="button"
-          className="ph-no-capture text-md flex max-w-[40vw] items-center gap-1 font-bold text-white/90"
-          onClick={() => setIsRenameModalOpen(true)}
-          data-test="topbar-player-name">
-          <span className="truncate">{name}</span>
-          <Icon icon="ic:baseline-edit" size={4} className="shrink-0 opacity-70" />
-        </button>
+        {connectionStatus === 'connected' && (
+          <button
+            type="button"
+            className="ph-no-capture text-md flex max-w-[40vw] items-center gap-1 font-bold text-white/90"
+            onClick={() => setIsRenameModalOpen(true)}
+            data-test="topbar-player-name">
+            <span className="truncate">{name}</span>
+            <Icon icon="ic:baseline-edit" size={4} className="shrink-0 opacity-70" />
+          </button>
+        )}
         <div className="flex items-center justify-end gap-2">
           <Button
             size="mini"

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 
 import events from '~/modules/game-events/game-events';
+import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
 import { transportErrorReason } from '~/modules/remote-mic/network/client/network-client';
@@ -52,6 +53,10 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
   const permissions = usePermissions();
 
   const { name: effectiveName, hasStoredName, setName: setPersistedName } = useRemoteMicName();
+
+  // Lets e2e tests (and anyone sharing a link) inspect the pre-connection state: the code still
+  // gets prefilled/revealed, but nothing connects until the user submits it themselves
+  const autoConnect = useQueryParam('autoconnect') !== 'false';
 
   // Mirrors connectionStatus but enforces a minimum display time for the connecting state,
   // so the "Connecting…" overlay isn't dismissed too abruptly before advancing or showing an error
@@ -192,6 +197,7 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
             onConnect={handleConnect}
             connectionStatus={delayedConnectionStatus}
             connectionError={connectionError}
+            autoConnect={autoConnect}
           />
         );
       case 2:
