@@ -4,8 +4,23 @@ import { initTestMode, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import initialiseRemoteMic from '../page-objects/remote-mic/initialise-remote-mic';
 
-export async function connectRemoteMic(remoteMicPage: Page, closeMicSelectionMenu = true) {
-  await remoteMicPage.getByTestId('connect-button').click();
+export async function connectRemoteMic(remoteMicPage: Page, name?: string, closeMicSelectionMenu = true) {
+  // The game code always auto-connects once fully entered (typed, pasted, or auto-revealed from a
+  // preloaded URL) — no button click needed. The "Set Your Name" step, however, only shows up when
+  // there's no remembered name yet (e.g. the first connection in this browser context); on a
+  // reconnect with a remembered name it's skipped straight to "connected".
+  const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
+  try {
+    await nameConfirmButton.waitFor({ state: 'visible', timeout: 6_000 });
+  } catch {
+    // Name step was skipped — nothing to confirm
+  }
+  if (await nameConfirmButton.isVisible()) {
+    if (name !== undefined) {
+      await remoteMicPage.getByTestId('player-name-input').fill(name);
+    }
+    await nameConfirmButton.click();
+  }
 
   await expect(remoteMicPage.getByTestId('connection-status')).toHaveText(/\d+ms/i, { timeout: 14_000 });
 
@@ -47,8 +62,7 @@ export async function openAndConnectRemoteMicDirectly(
     });
     const remoteMic = await openRemoteMic(page, context, browser);
 
-    await remoteMic._page.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic._page, closeMicSelectionMenu);
+    await connectRemoteMic(remoteMic._page, name, closeMicSelectionMenu);
 
     return remoteMic;
   });
@@ -74,8 +88,7 @@ export async function openAndConnectRemoteMicWithCode(page: Page, browser: Brows
     // await remoteMic.getByTestId('confirm-wifi-connection').click();
     await remoteMic.getByTestId('game-code-input').fill(gameCode);
 
-    await remoteMic.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic);
+    await connectRemoteMic(remoteMic, name);
 
     return initialiseRemoteMic(remoteMic, context, browser);
   });

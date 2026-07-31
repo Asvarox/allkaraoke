@@ -76,6 +76,7 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
 
     if (customRoomId.length !== GAME_CODE_LENGTH) {
       gameCodeInputRef.current?.triggerValidationError('Provide a valid game code');
+      gameCodeInputRef.current?.element?.focus();
       return;
     }
     onConnect(customRoomId);

@@ -15,10 +15,6 @@ export class JoinExistingGamePagePO {
     return this.page.getByTestId('game-code-input');
   }
 
-  public get playerNameInput() {
-    return this.page.getByTestId('player-name-input');
-  }
-
   public get connectButton() {
     return this.page.getByTestId('connect-button');
   }

@@ -31,7 +31,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
   const [isRenameModalOpen, setIsRenameModalOpen] = useState(false);
   const { name, setName } = useRemoteMicName();
 
-  const isSm = useResponsiveValue({ xs: false, sm: true });
+  const isSmallScreen = useResponsiveValue({ xs: false, sm: true });
   return (
     <>
       <QRCodeModal open={isQRCodeModalOpen} closeModal={() => setIsQRCodeModalOpen(false)} />
@@ -70,7 +70,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
             onClick={() => setIsQRCodeModalOpen(true)}
             leftIcon={<Icon icon="ic:baseline-qr-code-2" />}
             aria-label="Connect phone">
-            {roomId && isSm ? roomId.toUpperCase() : undefined}
+            {roomId && isSmallScreen ? roomId.toUpperCase() : undefined}
           </Button>
           <FullscreenButton size="mini" />
         </div>

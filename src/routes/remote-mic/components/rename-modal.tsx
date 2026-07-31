@@ -23,7 +23,8 @@ export default function RenameModal({ open, currentName, onClose, onSave }: Prop
   const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const trimmed = name.trim();
-    if (trimmed) onSave(trimmed);
+    if (!trimmed) return;
+    onSave(trimmed);
     onClose();
   };
 

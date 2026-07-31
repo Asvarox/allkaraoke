@@ -116,6 +116,17 @@ class PlayersManager {
         }
       });
     });
+
+    events.remoteMicRenamed.subscribe(({ id, name }) => {
+      this.getPlayers().forEach((player) => {
+        if (player.input.source === 'Remote Microphone' && player.input.deviceId === id) {
+          player.nameOverride = name;
+          // The input-selection screens re-render off playerInputChanged, not playerNameChanged —
+          // dispatch it (with no actual input change) so a rename well after assignment is picked up
+          events.playerInputChanged.dispatch(player.number, player.input, player.input);
+        }
+      });
+    });
   }
 
   private storePlayers = () => {
