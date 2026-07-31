@@ -39,12 +39,12 @@ export default function StepEnterCode({ roomId, onConnect, connectionStatus, con
   // Reveal a preloaded game code one character at a time, as if it were being typed
   useEffect(() => {
     if (!roomId) return;
-    const chars = roomId.toUpperCase().slice(0, GAME_CODE_LENGTH);
-    let i = 0;
+    const gameCodeChars = roomId.toUpperCase().slice(0, GAME_CODE_LENGTH);
+    let revealedCharCount = 0;
     const interval = setInterval(() => {
-      i += 1;
-      setCustomRoomId(chars.slice(0, i));
-      if (i >= chars.length) {
+      revealedCharCount += 1;
+      setCustomRoomId(gameCodeChars.slice(0, revealedCharCount));
+      if (revealedCharCount >= gameCodeChars.length) {
         clearInterval(interval);
         setIsAutoTyping(false);
       }
