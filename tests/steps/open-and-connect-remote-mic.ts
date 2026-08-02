@@ -4,8 +4,23 @@ import { initTestMode, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import initialiseRemoteMic from '../page-objects/remote-mic/initialise-remote-mic';
 
-export async function connectRemoteMic(remoteMicPage: Page, closeMicSelectionMenu = true) {
-  await remoteMicPage.getByTestId('connect-button').click();
+export async function connectRemoteMic(remoteMicPage: Page, name?: string, closeMicSelectionMenu = true) {
+  const connectButton = remoteMicPage.getByTestId('connect-button');
+  try {
+    await expect(connectButton).toBeEnabled({ timeout: 4_000 });
+    await connectButton.click();
+  } catch {
+    // Not on this step, or auto-connect already handled it
+  }
+  const hasStoredName = await remoteMicPage.evaluate(() => localStorage.getItem('remote_mic_name') !== null);
+  if (!hasStoredName) {
+    const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
+    await nameConfirmButton.waitFor({ state: 'visible', timeout: 20_000 });
+    if (name !== undefined) {
+      await remoteMicPage.getByTestId('player-name-input').fill(name);
+    }
+    await nameConfirmButton.click();
+  }
 
   await expect(remoteMicPage.getByTestId('connection-status')).toHaveText(/\d+ms/i, { timeout: 14_000 });
 
@@ -20,15 +35,16 @@ export async function connectRemoteMic(remoteMicPage: Page, closeMicSelectionMen
     }
   }
 }
-export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser) {
+export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser, autoConnect = true) {
   const remoteMic = await context.newPage();
-  await mockSongs({ page: remoteMic, context });
   await initTestMode({ page: remoteMic, context });
 
   const serverUrl = await page.getByTestId('server-link-input').inputValue();
-  await remoteMic.goto(serverUrl);
-
-  // await remoteMic.getByTestId('confirm-wifi-connection').click();
+  // With auto-connect off, the code is still prefilled/revealed but the mic stays disconnected
+  // until connectRemoteMic() (or a manual submit) is called — used to inspect the pre-connect state
+  const url = autoConnect ? serverUrl : `${serverUrl}&autoconnect=false`;
+  await remoteMic.goto(url);
+  await mockSongs({ page: remoteMic, context });
 
   return initialiseRemoteMic(remoteMic, context, browser);
 }
@@ -47,8 +63,7 @@ export async function openAndConnectRemoteMicDirectly(
     });
     const remoteMic = await openRemoteMic(page, context, browser);
 
-    await remoteMic._page.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic._page, closeMicSelectionMenu);
+    await connectRemoteMic(remoteMic._page, name, closeMicSelectionMenu);
 
     return remoteMic;
   });
@@ -74,8 +89,7 @@ export async function openAndConnectRemoteMicWithCode(page: Page, browser: Brows
     // await remoteMic.getByTestId('confirm-wifi-connection').click();
     await remoteMic.getByTestId('game-code-input').fill(gameCode);
 
-    await remoteMic.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic);
+    await connectRemoteMic(remoteMic, name);
 
     return initialiseRemoteMic(remoteMic, context, browser);
   });

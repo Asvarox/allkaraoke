@@ -18,7 +18,7 @@ const normalizeSongTxt = (songTxt: string) => songTxt.replaceAll('\r\n', '\n');
     throw new Error('Missing fixture path argument');
   }
 
-  process.env.UNVERIFIED_SONGS_ADMIN_URL = baseUrlArg ?? 'https://localhost:3000';
+  process.env.UNVERIFIED_SONGS_ADMIN_URL = baseUrlArg ?? 'http://localhost:3000';
 
   const fixturePath = path.resolve(process.cwd(), fixturePathArg);
   if (!fs.existsSync(fixturePath)) {

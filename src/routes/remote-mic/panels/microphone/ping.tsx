@@ -21,6 +21,6 @@ function Ping() {
       clearInterval(interval);
     };
   }, []);
-  return <>{latency}ms</>;
+  return <span className="tabular-nums">{latency}ms</span>;
 }
 export default Ping;

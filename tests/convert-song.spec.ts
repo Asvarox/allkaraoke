@@ -99,7 +99,7 @@ test('Convert song', async ({ page }) => {
   });
 
   await test.step('Time seek controls', async () => {
-    const timeControls = ['+0.5', '+1', '+5', '+10', '-0.5', '-1', '-5', '-10'];
+    const timeControls = ['+0.5', '+5', '-0.5', '-5'];
 
     for (const control of timeControls) {
       await pages.songEditSyncLyricsToVideoPage.timeSeekControls(control);
@@ -108,7 +108,7 @@ test('Convert song', async ({ page }) => {
   });
 
   await test.step('Set playback speed controls', async () => {
-    const speedControls = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
+    const speedControls = [0.25, 0.5, 1, 2];
 
     for (const control of speedControls) {
       await pages.songEditSyncLyricsToVideoPage.setPlaybackSpeedControls(control);
@@ -143,7 +143,7 @@ test('Convert song', async ({ page }) => {
   });
 
   await test.step('Current player time can populate desired song end time', async () => {
-    await pages.songEditSyncLyricsToVideoPage.timeSeekControls('+10');
+    await pages.songEditSyncLyricsToVideoPage.timeSeekControls('+5');
     const currentTime = await pages.songEditSyncLyricsToVideoPage.getCurrentPlaybackTimeMs();
     await pages.songEditSyncLyricsToVideoPage.setDesiredSongEndTimeToCurrentPlayerTime();
     await expect(pages.songEditSyncLyricsToVideoPage.desiredSongEndTimeInput).toHaveValue(currentTime);

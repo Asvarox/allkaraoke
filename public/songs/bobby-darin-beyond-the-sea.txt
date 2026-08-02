@@ -1,0 +1,233 @@
+#ARTIST:Bobby Darin
+#TITLE:Beyond The Sea
+#CREATOR:smugman
+#BPM:280
+#YEAR:1959
+#VIDEO:v=m8OlDPqYBLw
+#LANGUAGE:English
+#GAP:10832,142857142857
+#ALLKARAOKE_ID:bobby-darin-beyond-the-sea
+#ALLKARAOKE_SID:6055
+#ALLKARAOKE_LASTUPDATE:2026-07-29T05:15:51.891Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:179
+#MP3:Bobby Darin - Beyond The Sea.mp3
+: 19 7 -1 Some
+: 27 26 4 where 
+: 75 5 3 be
+: 81 5 4 yond 
+: 87 3 6 the 
+: 91 16 8 sea
+- 107
+: 115 11 4 Some
+: 127 13 6 where 
+: 141 5 3 wait
+: 147 3 1 ing 
+: 151 5 -1 for 
+: 157 20 8 me
+- 177 188
+- 188
+: 207 5 6 My 
+: 213 5 8 lo
+: 219 6 9 ver 
+: 227 7 11 stands 
+: 235 4 4 on 
+: 241 9 4 gold
+: 251 4 4 en 
+* 257 5 13 sands
+* 263 1 12 ~
+: 265 31 13 ~
+- 296
+: 297 6 13 And 
+: 305 7 13 watch
+: 313 7 11 es 
+: 321 3 8 the 
+: 325 12 4 ships 
+: 345 5 1 that 
+: 351 3 4 go 
+: 355 3 6 sail
+: 359 1 5 ~
+: 361 25 6 ~
+: 387 16 -1 in
+- 403
+: 411 7 -1 Some
+: 419 16 4 where 
+: 467 5 3 be
+: 473 5 4 yond 
+: 479 3 6 the 
+: 483 14 8 sea
+- 497
+: 509 9 7 She’s 
+: 519 12 6 there 
+: 533 5 3 watch
+: 539 4 1 ing 
+: 545 6 -1 for 
+: 553 16 8 me
+- 569 576
+- 576
+: 595 5 6 If 
+: 601 5 8 I 
+: 607 6 9 could 
+: 615 7 11 fly 
+: 623 4 4 like 
+: 629 9 4 birds 
+: 639 4 4 on 
+* 647 39 13 high
+- 686
+: 687 6 13 Then 
+: 695 7 13 straight 
+: 703 3 11 to 
+: 707 5 8 her 
+: 713 12 4 arms
+- 725
+: 733 5 1 I’d 
+: 739 5 4 go 
+: 745 3 6 sail
+: 749 1 5 ~
+: 751 25 6 ~
+: 777 16 4 ing
+- 793
+: 803 7 3 It’s 
+* 811 3 8 far
+* 815 1 7 ~
+: 817 30 8 ~ 
+: 857 5 7 be
+: 863 5 8 yond 
+: 869 5 10 the 
+: 875 24 12 stars
+- 899
+: 901 7 11 It’s 
+: 909 15 10 near 
+: 925 5 7 be
+: 931 5 5 yond 
+: 937 3 3 the 
+: 941 48 3 moon
+- 989
+: 999 7 6 I 
+: 1007 40 11 know 
+: 1051 5 10 be
+: 1057 5 11 yond 
+: 1063 4 13 a 
+: 1069 12 15 doubt
+- 1081
+: 1095 21 24 My 
+: 1117 11 23 heart 
+: 1129 6 23 will 
+: 1137 5 23 lead 
+: 1143 3 23 me 
+: 1147 4 23 there 
+: 1153 40 23 soon
+- 1193
+: 1195 7 -1 We’ll 
+: 1203 10 4 meet 
+: 1247 5 3 be
+: 1253 5 4 yond 
+: 1259 3 6 the 
+: 1263 20 8 shore
+- 1283
+: 1291 7 4 We’ll 
+: 1299 12 6 kiss 
+: 1315 6 3 just 
+: 1325 3 1 as 
+: 1329 3 -1 be
+: 1333 16 8 fore
+- 1349 1362
+- 1362
+: 1381 5 6 Hap
+: 1387 4 8 py 
+: 1393 6 9 we’ll 
+* 1401 11 11 be 
+: 1413 3 4 be
+: 1417 7 4 yond 
+: 1425 4 4 the 
+* 1431 40 13 sea
+- 1471
+: 1473 7 13 And 
+: 1481 5 11 nev
+: 1487 3 8 er 
+: 1491 3 6 a
+: 1495 16 4 gain 
+: 1513 7 1 I’ll 
+: 1521 5 4 go 
+: 1527 7 6 sail
+: 1535 1 5 ~
+: 1537 23 6 ~
+: 1561 24 4 ing
+- 1585 2156
+- 2156
+: 2175 19 6 I 
+* 2195 44 11 know 
+: 2241 5 10 be
+: 2247 5 11 yond 
+: 2253 3 13 a 
+: 2257 8 15 doubt
+- 2265 2274
+- 2274
+: 2293 7 24 My 
+: 2301 17 23 heart 
+* 2319 7 17 will 
+: 2327 7 23 lead 
+: 2335 5 26 me 
+: 2341 12 23 there 
+: 2355 30 23 soon
+- 2385
+: 2387 5 12 We’ll 
+: 2393 8 16 meet 
+: 2403 5 12 (I 
+: 2409 7 14 know 
+: 2417 5 10 we’ll 
+: 2423 6 11 meet)
+- 2429
+: 2441 3 5 Be
+: 2445 7 7 yond 
+: 2453 4 7 the 
+: 2459 12 7 shore
+- 2471
+: 2483 9 4 We’ll 
+: 2493 12 6 kiss 
+: 2507 6 3 just 
+: 2515 3 1 as 
+: 2519 5 -1 be
+: 2525 20 8 fore
+- 2545 2554
+- 2554
+: 2573 5 6 Hap
+: 2579 5 8 py 
+: 2585 6 9 we’ll 
+: 2593 8 11 be 
+: 2605 3 4 be
+: 2609 7 4 yond 
+: 2617 4 4 the 
+* 2625 40 13 sea
+- 2665
+: 2671 7 13 And 
+: 2679 3 11 nev
+: 2683 3 8 er 
+: 2687 1 5 a
+: 2689 14 3 gain 
+: 2707 7 1 I’ll 
+: 2715 5 4 go 
+: 2721 5 6 sail
+: 2727 1 5 ~
+: 2729 25 6 ~
+: 2755 24 4 ing
+- 2779 2786
+- 2786
+: 2805 10 0 No 
+: 2817 13 -2 more 
+: 2831 7 0 sail
+: 2839 10 2 ing
+- 2849 2860
+- 2860
+: 2879 5 23 So 
+: 2885 9 21 long 
+: 2895 7 19 sail
+: 2903 8 17 ing
+- 2911 2920
+- 2920
+: 2939 7 16 Bye 
+: 2947 10 17 bye 
+: 2965 18 16 sailing...
+E

@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Divider, Typography } from '@mui/material';
+import { Box, Button, ButtonGroup, Typography } from '@mui/material';
 import { useEffect, useRef } from 'react';
 
 import { Pre } from '~/routes/convert/elements';
@@ -24,7 +24,7 @@ export default function AdjustPlayback({ player, playbackSpeed, setPlaybackSpeed
     const interval = setInterval(async () => {
       if (currentTimeElementRef.current) {
         const currentTime = await player.getCurrentTime();
-        currentTimeElementRef.current.textContent = `${formatMs(currentTime)} (${Math.round(currentTime)} ms)`;
+        currentTimeElementRef.current.textContent = `${formatMs(currentTime)}`;
       }
     }, 50);
 
@@ -32,14 +32,14 @@ export default function AdjustPlayback({ player, playbackSpeed, setPlaybackSpeed
   }, [player]);
 
   return (
-    <>
+    <div className="flex gap-2">
       <Box>
         <Typography>
           Playback speed: <Pre data-test="current-speed">{playbackSpeed * 100}%</Pre>
         </Typography>
         <ShortcutIndicator shortcutKey="1/2/3/4">
           <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1 }}>
-            {[0.25, 0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
+            {[0.25, 0.5, 1, 2].map((speed) => (
               <Button
                 size="small"
                 data-test={`speed-${speed}`}
@@ -57,40 +57,25 @@ export default function AdjustPlayback({ player, playbackSpeed, setPlaybackSpeed
       </Box>
       <Box>
         <Typography data-test="current-time">
-          Current time: <Pre ref={currentTimeElementRef} />
+          Time: <Pre ref={currentTimeElementRef} />
         </Typography>
         <Box sx={{ display: 'flex', gap: 1 }}>
           <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1, flex: 1 }}>
-            <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(-10_000)} data-test="seek-10s">
-              -10
-            </Button>
             <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(-5_000)} data-test="seek-5s">
               -5
-            </Button>
-            <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(-1_000)} data-test="seek-1s">
-              -1
             </Button>
             <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(-500)} data-test="seek-0.5s">
               -0.5
             </Button>
-          </ButtonGroup>
-          <Divider />
-          <ButtonGroup variant="contained" sx={{ display: 'flex', mt: 1, flex: 1 }}>
             <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(+500)} data-test="seek+0.5s">
               +0.5
-            </Button>
-            <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(+1_000)} data-test="seek+1s">
-              +1
             </Button>
             <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(+5_000)} data-test="seek+5s">
               +5
             </Button>
-            <Button size="small" sx={{ flex: 1, px: 1 }} onClick={() => seekBy(+10_000)} data-test="seek+10s">
-              +10
-            </Button>
           </ButtonGroup>
         </Box>
       </Box>
-    </>
+    </div>
   );
 }

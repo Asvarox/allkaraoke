@@ -74,10 +74,14 @@ jobs:
           grepInvert: '@visual'
   e2e-tests-add-summary:
     runs-on: ubuntu-latest
-    if: ${{ failure() }}
+    if: always() # needs to run on success too, to clean up a stale failure comment from a previous run
     needs: e2e-tests-run
+    permissions:
+      pull-requests: write # allows commenting on a PR
     steps:
-      - uses: actions/github-script@v8
+      - name: Write job summary
+        if: needs.e2e-tests-run.result == 'failure'
+        uses: actions/github-script@v8
         with:
           script: |
             core.summary.addRaw(`
@@ -87,6 +91,47 @@ jobs:
             | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
             `
             ).write();
+      # A single comment (identified by a hidden marker) is kept: any prior one is deleted and
+      # replaced with a fresh comment (not edited in place) so the PR author gets a
+      # notification, and removed entirely once tests are green again.
+      - name: Replace or remove PR comment about E2E failures
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v8
+        env:
+          E2E_RESULT: ${{ needs.e2e-tests-run.result }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const marker = '<!-- e2e-test-summary -->';
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+            const existing = comments.find((comment) => comment.body?.includes(marker));
+
+            if (process.env.E2E_RESULT === 'success') {
+              if (existing) {
+                await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
+              }
+              return;
+            }
+
+            if (process.env.E2E_RESULT !== 'failure') {
+              return; // skipped/cancelled: leave any existing comment as-is, nothing new to report
+            }
+
+            const reportUrl = `https://${context.runId}.allkaraoke-party-tests-results.pages.dev`;
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+            const body = `## ❌ E2E tests failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
+
+            if (existing) {
+              await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
+            }
+            await github.rest.issues.createComment({ owner, repo, issue_number, body });
 
   ct-tests-run:
     container:
@@ -110,6 +155,8 @@ jobs:
         with:
           config: 'playwright-ct.config.mts'
           updateSnapshots: 'true'
+          snapshotDir: '__snapshots__' # per playwright-ct.config.mts's snapshotDir
+          snapshotSuffix: '-ci.png' # per playwright-ct.config.mts's snapshotPathTemplate
       - name: Commit snapshots and comment with diff thumbnails
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/commit-and-comment-snapshots'
@@ -152,6 +199,8 @@ jobs:
           config: 'playwright.config.ts'
           grep: '@visual'
           updateSnapshots: 'true'
+          snapshotDir: 'tests' # per playwright.config.ts's testDir
+          snapshotSuffix: '-linux.png' # this job always renders in the Linux Playwright container
       - name: Commit snapshots and comment with diff thumbnails
         uses: './.github/templates/commit-and-comment-snapshots'
         with:

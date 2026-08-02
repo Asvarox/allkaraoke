@@ -15,16 +15,20 @@ export class RemoteMicMainPagePO {
   remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
   remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
 
-  public get playerNameInput() {
-    return this.page.getByTestId('player-name-input');
+  // Name entry now lives in the top bar (always available, regardless of connection state) rather
+  // than as a wizard step — see RenameModal.
+  public get topBarPlayerNameButton() {
+    return this.page.getByTestId('topbar-player-name');
   }
 
   public async enterPlayerName(name: string) {
-    await this.playerNameInput.fill(name);
+    await this.topBarPlayerNameButton.click();
+    await this.page.getByTestId('rename-input').fill(name);
+    await this.page.getByTestId('rename-save-button').click();
   }
 
-  public async expectPlayerNameToBe(playerName: string) {
-    await expect(this.playerNameInput).toHaveValue(playerName);
+  public async expectPlayerNameToBe(playerName: string | RegExp) {
+    await expect(this.topBarPlayerNameButton).toContainText(playerName);
   }
 
   indicatorElement = this.page.getByTestId('indicator');
@@ -104,8 +108,20 @@ export class RemoteMicMainPagePO {
     await expect(this.connectionStatusElement).toContainText('DISCONNECTED', { ignoreCase: true });
   }
 
+  public get confirmNameButton() {
+    return this.page.getByTestId('confirm-name-button');
+  }
+
   public async connect() {
-    await this.connectButton.click();
+    // The game code auto-connects once fully entered (e.g. preloaded from the URL) — no button
+    // click needed. The "Set Your Name" step only shows up when there's no remembered name yet.
+    // Check localStorage directly rather than a bounded wait — waiting out a fixed timeout on every
+    // (common) reconnect eats into the toast auto-dismiss window other assertions rely on.
+    const hasStoredName = await this.page.evaluate(() => localStorage.getItem('remote_mic_name') !== null);
+    if (!hasStoredName) {
+      await this.confirmNameButton.waitFor({ state: 'visible', timeout: 20_000 });
+      await this.confirmNameButton.click();
+    }
     await this.expectPlayerToBeConnected();
   }
 

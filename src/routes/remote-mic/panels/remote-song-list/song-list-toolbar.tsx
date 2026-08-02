@@ -1,9 +1,9 @@
-import { Close, Search } from '@mui/icons-material';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentRef, useRef, useState } from 'react';
 
 import { Badge } from '~/modules/elements/akui/badge';
 import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Selector } from '~/modules/elements/akui/selector';
 import { Input } from '~/modules/elements/input';
 import LanguageFilter from '~/routes/remote-mic/panels/remote-song-list/language-filter';
@@ -56,7 +56,7 @@ export default function SongListToolbar({
               size="mini"
               className="w-full text-sm"
               focused={false}
-              label={<Search className="h-4! w-4!" />}
+              label={<Icon icon="ic:baseline-search" size={4} />}
               placeholder="Search the list…"
               value={search}
               onChange={onSearchChange}
@@ -68,13 +68,14 @@ export default function SongListToolbar({
                 <button
                   type="button"
                   aria-label="Close search"
+                  className="flex"
                   onMouseDown={(e) => {
                     // Prevent input blur before the click fires
                     e.preventDefault();
                     closeSearch();
                   }}
                   data-test="search-close-button">
-                  <Close className="h-4! w-4! text-white" />
+                  <Icon icon="ic:baseline-close" size={4} className="text-white" />
                 </button>
               }
               autoFocus
@@ -95,7 +96,7 @@ export default function SongListToolbar({
               className="aspect-square scale-100 animate-none px-0!"
               data-test="search-button"
               aria-label="Search songs">
-              <Search className="h-4! w-4!" />
+              <Icon icon="ic:baseline-search" size={4} />
             </Button>
             <Selector value={tab} onChange={(value) => onTabChange(value as 'list' | 'queue')} className="flex-1">
               <Selector.Item value="list" size="mini" className="flex-1 text-sm" data-test="all-songs-button">
@@ -114,9 +115,10 @@ export default function SongListToolbar({
                   size="mini"
                   onClick={open}
                   focused={excludedLanguages.length > 0 && tab === 'list'}
-                  className="scale-100 animate-none"
+                  className="aspect-square scale-100 animate-none justify-center px-0"
                   data-test="song-language-filter">
-                  🇺🇳{selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
+                  <Icon icon="ic:baseline-language" size={4} />
+                  {selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
                 </Button>
               )}
             </LanguageFilter>

@@ -220,7 +220,7 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
   return (
     <LayoutGame>
       <div
-        className="flex h-screen flex-col overflow-hidden bg-linear-to-br from-[#2575cf] via-[#1a5dab] to-[#144a8a]"
+        className="flex h-screen flex-col overflow-hidden"
         style={
           {
             '--song-group-header-height': `${Math.floor(songGroupHeight)}px`,

@@ -27,9 +27,10 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-// Not disabling it globally so in case SW breaks the app it is caught by other tests
-//test.use({ serviceWorkers: 'block' });
+// Service worker caches index.json, which bypasses Playwright's route mock (mockSongs) and lets
+// the real, much longer production catalog leak in — breaking anything that asserts a specific
+// song is visible without an explicit scroll/search
+test.use({ serviceWorkers: 'block' });
 
 const songs = {
   polish1: {
@@ -82,9 +83,9 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
-  await test.step('Open remoteMic and enter player name', async () => {
-    remoteMic = await openRemoteMic(page, context, browser);
-    await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
+  await test.step('Open remoteMic', async () => {
+    // Connect manually below, once we've confirmed the song list works pre-connection
+    remoteMic = await openRemoteMic(page, context, browser, false);
   });
 
   await test.step('Song list is available without connecting', async () => {
@@ -94,7 +95,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
 
   await test.step('Song list doesnt contain removed songs after connecting', async () => {
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await connectRemoteMic(remoteMic._page);
+    await connectRemoteMic(remoteMic._page, P1_Name);
 
     await pages.smartphonesConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
@@ -292,10 +293,10 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   });
 
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
-    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
-    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
+    // Both the main menu and the exclude-languages screen mirror their controls to the remote mic, so
+    // tap the mirrored controls directly instead of arrow-navigating + Enter.
+    await remoteMic.remoteMicMainPage.mirroredControl('close-exclude-languages').click();
+    await remoteMic.remoteMicMainPage.mirroredControl('sing-a-song').click();
   });
 
   await test.step('Set other song languages on remoteMic app', async () => {
@@ -375,8 +376,11 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
   });
 
   await test.step('Favourite songs should be also added to remoteMic playlist', async () => {
+    // Leave the remote's song list (so the expanded artist group rolls up on return), then collapse
+    // the host preview with the physical keyboard — the song settings screen is mirrored on the
+    // remote now, so it no longer exposes the classic back-arrow keyboard button.
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await page.keyboard.press('Backspace');
     await pages.songListPage.goToPlaylist(remoteMicsPlaylist);
     await expect(await pages.songListPage.getSongElement(songs.french1.ID)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.french2.ID)).toBeVisible();
@@ -396,8 +400,10 @@ test('Grouping artist`s songs works', async ({ page, browser }) => {
   });
 
   await test.step('Go to remove the song from favourites - the song should no longer be visible there', async () => {
+    // Collapse the host preview with the physical keyboard (song settings is mirrored on the remote
+    // now, so there's no classic back-arrow keyboard button to tap).
     await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
-    await remoteMic.remoteMicMainPage.goBackByKeyboard();
+    await page.keyboard.press('Backspace');
     await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
     await remoteMic.remoteMicSongListPage.removeSongFromFavouriteList(songs.french1.ID);

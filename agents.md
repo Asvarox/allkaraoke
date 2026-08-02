@@ -24,3 +24,6 @@ pnpm knip
 ## Styling
 
 - Do not use Material UI or Emotion for new styles or new UI components. Use Tailwind utility classes and existing AKUI primitives instead.
+
+## Comments
+Unless explaining a workflow or a process, keep the comments to at most 2 lines

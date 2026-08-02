@@ -1,3 +1,4 @@
+import { MAX_NAME_LENGTH } from '~/consts';
 import events from '~/modules/game-events/game-events';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
@@ -93,6 +94,12 @@ export const serverHandlers = {
       events.remoteControlActivated.dispatch(name);
     }),
 
+    // Push a new value for a mirrored value control (e.g. a text field) edited on the remote. Same
+    // write permission as activateControl, since it drives the same on-screen state.
+    setControlValue: defineMutation((_ctx: RpcContext, name: string, value: string) => {
+      events.remoteControlValueChanged.dispatch(name, value);
+    }),
+
     // Any connected mic can confirm its readiness (no write permission required)
     confirmReadiness: defineMutation(
       (ctx: RpcContext) => {
@@ -111,6 +118,20 @@ export const serverHandlers = {
       // Players can remove other players (this is intentional)
       ctx.removePlayer(id);
     }),
+
+    // Any connected mic can rename itself (no write permission required)
+    setName: defineMutation(
+      (ctx: RpcContext, name: string) => {
+        const trimmedName = typeof name === 'string' ? name.trim().slice(0, MAX_NAME_LENGTH) : '';
+        if (!trimmedName) throw new Error('Invalid name');
+
+        const remoteMic = RemoteMicManager.getRemoteMicById(ctx.senderId);
+        if (!remoteMic) throw new Error('Microphone not found');
+        remoteMic.name = trimmedName;
+        events.remoteMicRenamed.dispatch({ id: ctx.senderId, name: trimmedName });
+      },
+      { permission: 'read' },
+    ),
   },
 } as const;
 

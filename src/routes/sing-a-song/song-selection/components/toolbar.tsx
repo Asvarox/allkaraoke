@@ -1,7 +1,7 @@
-import { Casino } from '@mui/icons-material';
 import { Dispatch, SetStateAction, useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import PlaylistSelector from '~/routes/sing-a-song/song-selection/components/toolbar/playlist-selector';
@@ -46,7 +46,7 @@ export default function Toolbar({
   const [searchExpanded, setSearchExpanded] = useState(false);
 
   return (
-    <div className="mr-20 flex items-center gap-2 min-[1600px]:mr-0 md:max-[1600px]:mr-30">
+    <div className="mr-25 flex items-center gap-2 min-[1760px]:mr-0 md:max-[1760px]:mr-41">
       <SearchBar
         filters={filters}
         setFilters={setFilters}
@@ -67,9 +67,10 @@ export default function Toolbar({
             data-test="random-song-button"
             className="shrink-0 animate-none"
             {...keyboardNavRegister?.('random-song-button', onRandom, 'Random song')}
+            leftIcon={<Icon icon="ic:baseline-casino" />}
+            fullWidth={false}
             onClick={onRandom}>
-            <Casino className="h-5! w-5!" />
-            <span className="hidden lg:block">Random</span>
+            {!mobile && 'Random'}
           </Button>
 
           <div className="h-6 w-px shrink-0 bg-white/20" aria-hidden="true" />

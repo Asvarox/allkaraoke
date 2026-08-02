@@ -1,8 +1,8 @@
-import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
 import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
 
 import { Badge } from '~/modules/elements/akui/badge';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import { MicIconBlue, MicIconRed } from '~/modules/elements/mic-icon';
@@ -19,7 +19,11 @@ interface Props {
 function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, skipText }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
-  const { register } = useKeyboardNav({ onBackspace: onBack });
+  const { register } = useKeyboardNav({ onBackspace: onBack, title: 'How do you want to sing?' });
+
+  const remoteMicsLabel = mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones';
+  const builtInLabel = `This ${mobilePhoneMode ? "device's" : "computer's"} microphone`;
+
   return (
     <>
       <InputOptionButton
@@ -28,40 +32,47 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
           () => onPreferenceSelected('remoteMics'),
           undefined,
           previouslySelected === 'remoteMics',
+          { control: { type: 'button', label: remoteMicsLabel } },
         )}
         icon={
           <>
-            <PhoneAndroid />
-            <PhoneIphone />
+            <Icon icon="ic:baseline-phone-android" size={5} />
+            <Icon icon="ic:baseline-phone-iphone" size={5} />
           </>
         }
-        name={mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones'}
+        name={remoteMicsLabel}
         description={
           <>
             Use{' '}
             <strong>
-              <PhotoCamera />
+              <Icon icon="ic:baseline-photo-camera" size={4} />
               Camera app
             </strong>{' '}
             to scan a{' '}
             <strong>
-              <QrCode /> QR code
+              <Icon icon="ic:baseline-qr-code" size={4} />
             </strong>{' '}
-            that will open Remote Mic website - no need to download an app!
+            <strong>QR code</strong> that will open Remote Mic website - no need to download an app!
           </>
         }
         recommended
         numOfPlayers="1-4"
       />
       <InputOptionButton
-        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}
+        {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in', {
+          control: { type: 'button', label: builtInLabel },
+        })}
         icon={
           <>
-            <Person />
-            {mobilePhoneMode ? <PhoneIphone /> : <Laptop />}
+            <Icon icon="ic:baseline-person" size={5} />
+            {mobilePhoneMode ? (
+              <Icon icon="ic:baseline-phone-iphone" size={5} />
+            ) : (
+              <Icon icon="ic:baseline-laptop" size={5} />
+            )}
           </>
         }
-        name={`This ${mobilePhoneMode ? "device's" : "computer's"} microphone`}
+        name={builtInLabel}
         description={
           <>
             Great to <strong>test</strong> the app, <strong>sing alone</strong> or don&#39;t care about the rivalry at
@@ -78,6 +89,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             () => onPreferenceSelected('multiple-mics'),
             undefined,
             previouslySelected === 'multiple-mics',
+            { control: { type: 'button', label: 'Multiple microphones' } },
           )}
           icon={
             <>
@@ -97,11 +109,13 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
       )}
 
       <InputOptionButton
-        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced')}
+        {...register('advanced', () => onPreferenceSelected('advanced'), undefined, previouslySelected === 'advanced', {
+          control: { type: 'button', label: 'Advanced (manual) setup' },
+        })}
         icon={
           <>
             <MicIconBlue />
-            <PhoneIphone />
+            <Icon icon="ic:baseline-phone-iphone" size={5} />
           </>
         }
         name="Advanced (manual) setup"
@@ -114,7 +128,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         numOfPlayers="1-4"
       />
       <hr />
-      <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
+      <MenuButton
+        {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip', {
+          control: { type: 'button', label: skipText || 'Skip' },
+        })}>
         {skipText || 'Skip'}
       </MenuButton>
     </>
@@ -149,13 +166,17 @@ const InputOptionButton = ({
       </div>
       {recommended && <Badge className="right-8">Recommended</Badge>}
       <div className="text-md mobile:text-sm flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right">
-        <PeopleAlt className="!text-md !mobile:text-sm" />
+        <Icon icon="ic:baseline-people-alt" className="!text-md !mobile:text-sm" />
         <strong>{numOfPlayers}</strong>
       </div>
     </Menu.Button>
   );
 };
 
-const OptionIconContainer = twc.div`relative [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&_svg:first-of-type]:absolute [&_svg:first-of-type]:z-100 [&_svg:first-of-type]:mt-[0.2em] [&_svg:first-of-type]:ml-[0.35em] [&_svg:first-of-type]:-scale-x-100 [&_svg:first-of-type]:text-[#0099ff]`;
+// `first-child` (not `first-of-type`) so the overlay styling below always lands on whichever icon
+// renders first, regardless of whether the pair is two `<iconify-icon>`s, two `<svg>`s (MicIconBlue/
+// MicIconRed), or a mix of both (MicIconBlue + an `<iconify-icon>`) — `first-of-type` would match
+// both elements independently once they're different tags.
+const OptionIconContainer = twc.div`relative [&_iconify-icon]:text-[#ff3636] [&_iconify-icon]:transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&>*:first-child]:absolute [&>*:first-child]:z-100 [&>*:first-child]:mt-[0.2em] [&>*:first-child]:ml-[0.35em] [&>*:first-child]:-scale-x-100 [&>*:first-child]:text-[#0099ff]`;
 
 export default SelectPreference;

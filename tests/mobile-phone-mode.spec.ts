@@ -99,10 +99,10 @@ test.skip('Mobile phone mode should be playable', async ({ browser, page, browse
   });
 
   await test.step('Start singing a song', async () => {
-    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
-    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    // Both the main menu and the exclude-languages screen mirror their controls to the remote mic, so
+    // tap the mirrored controls directly instead of arrow-navigating + Enter.
+    await remoteMic1.remoteMicMainPage.mirroredControl('sing-a-song').click();
+    await remoteMic1.remoteMicMainPage.mirroredControl('close-exclude-languages').click();
     await page.waitForTimeout(500); // let the list with virtualization load
     await pages.songListPage.closeTheSelectionPlaylistTip();
     await pages.songListPage.focusSong(songID);

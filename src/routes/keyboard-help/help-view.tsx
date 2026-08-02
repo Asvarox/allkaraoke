@@ -24,7 +24,11 @@ export default function KeyboardHelpView({ help }: Props) {
 
   useHotkeys('shift+h', () => setIsVisible(!isVisible), undefined, [isVisible]);
 
-  const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
+  // Only keys this view actually has a renderer for. `HelpEntry` also carries remote-mic-only
+  // metadata (title, icon, mirrored controls) which the provider strips out — but this view sits at
+  // the app root, so an unrecognised key reaching the lookup below would throw and take the whole UI
+  // down with it. Skipping unknown keys keeps that failure mode impossible.
+  const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
 
   if (mobilePhoneMode) {
     return null;

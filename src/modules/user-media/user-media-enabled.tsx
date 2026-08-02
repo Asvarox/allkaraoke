@@ -1,6 +1,6 @@
-import { Icon } from '@iconify-icon/react';
 import { PropsWithChildren, ReactNode, useEffect, useState } from 'react';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { useMicrophoneStatus } from '~/modules/user-media/hooks';
 
 import MicAccessDeniedView from './mic-access-denied-view';

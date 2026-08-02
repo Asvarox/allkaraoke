@@ -246,7 +246,7 @@ Optional: override the admin base URL directly from CLI (useful when test target
 
 ```bash
 pnpm unverified-song:upsert-fixture http://127.0.0.1:3000
-pnpm unverified-song:upsert-fixture https://localhost:3010
+pnpm unverified-song:upsert-fixture http://localhost:3010
 ```
 
 6. Verify APIs manually:

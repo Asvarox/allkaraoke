@@ -81,7 +81,7 @@ function PlayerScoreView({
         className={clsx(
           '2xl:text-md right-6 z-2 text-sm opacity-0 transition-opacity duration-[400ms] md:-top-1',
           revealHighScore && isHighScore(player.name)
-            ? 'animate-focused bg-active scale-[1.025] opacity-100 shadow-none'
+            ? 'subtle-focus bg-active scale-[1.025] opacity-100 shadow-none'
             : '',
         )}>
         High score!

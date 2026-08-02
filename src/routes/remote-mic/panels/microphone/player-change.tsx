@@ -1,8 +1,7 @@
-import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { memo, useState } from 'react';
 
 import { BottomSheet } from '~/modules/elements/akui/bottom-sheet';
-import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { MenuButton } from '~/modules/elements/akui/menu/menu-button';
 import { PlayerNumber } from '~/modules/players/player-number';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
@@ -34,15 +33,11 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
         className="absolute right-4 bottom-4 z-1 p-4"
         onClick={() => setIsOpen(true)}
         data-test="change-player"
-        data-joined={joined}>
-        {!joined ? (
-          'Join game'
-        ) : (
-          <>
-            <PlayerNumberCircle number={playerNumber} /> Change
-          </>
-        )}{' '}
-        <Button.Icon Icon={SwapHorizIcon} />
+        data-joined={joined}
+        fullWidth={false}
+        leftIcon={joined ? <PlayerNumberCircle number={playerNumber ?? 0} /> : undefined}
+        rightIcon={<Icon icon="ic:baseline-swap-horiz" />}>
+        {!joined ? 'Join game' : 'Change'}
       </MenuButton>
       <BottomSheet open={isOpen} onClose={closeModal} title="Your color">
         <PlayerChangeModal id={RemoteMicClient.getClientId()!} playerNumber={playerNumber} onModalClose={closeModal} />

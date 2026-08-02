@@ -1,6 +1,7 @@
-import { Check } from '@mui/icons-material';
 import { motion } from 'motion/react';
 import { Fragment } from 'react';
+
+import { Icon } from '~/modules/elements/akui/icon';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -39,7 +40,7 @@ export const Stepper = ({ steps, current }: Props) => (
                 isDone && 'bg-active/40 text-white',
                 !isCurrent && !isDone && 'bg-white/15 text-white/60',
               )}>
-              {isDone ? <Check className="h-5 w-5" /> : index + 1}
+              {isDone ? <Icon icon="ic:baseline-check" className="h-5 w-5" /> : index + 1}
             </span>
             <span
               className={cn(

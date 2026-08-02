@@ -32,6 +32,7 @@ interface Props {
   skipIntroEnabled?: boolean;
   /** Online mode: routes the skip through the room server so it applies to everyone. */
   onSkipIntro?: (targetTimeSec: number) => void;
+  onOpenPauseMenu?: () => void;
 }
 
 const MAX_RENDER_RESOLUTION_W = 1920;
@@ -46,6 +47,7 @@ const GameOverlay = forwardRef(function (
     effectsEnabled,
     videoPlayerRef,
     isPauseMenuVisible,
+    onOpenPauseMenu,
     duration,
     skipIntroEnabled = true,
     onSkipIntro,
@@ -138,9 +140,14 @@ const GameOverlay = forwardRef(function (
       {effectsEnabled && (
         <>
           {skipIntroEnabled && (
-            <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} onSkip={onSkipIntro} />
+            <SkipIntro
+              playerRef={videoPlayerRef}
+              isEnabled={!isPauseMenuVisible}
+              onSkip={onSkipIntro}
+              onOpenPauseMenu={onOpenPauseMenu}
+            />
           )}
-          <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
+          <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} onOpenPauseMenu={onOpenPauseMenu} />
         </>
       )}
       <DurationBar players={playerSetups} currentStatus={currentStatus} duration={duration} />

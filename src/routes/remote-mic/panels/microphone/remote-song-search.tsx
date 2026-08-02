@@ -1,9 +1,9 @@
-import { Search } from '@mui/icons-material';
 import { ComponentRef, useEffect, useRef, useState } from 'react';
 import { twc } from 'react-twc';
 import { usePrevious, useUnmount } from 'react-use';
 
 import { MAX_NAME_LENGTH } from '~/consts';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Input } from '~/modules/elements/input';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { serverRpc } from '~/modules/remote-mic/network/client';
@@ -34,7 +34,7 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
       onBlur={() => onSearchStateChange?.(false)}
       maxLength={MAX_NAME_LENGTH}
       focused={false}
-      label={<Search />}
+      label={<Icon icon="ic:baseline-search" />}
       placeholder="Search for a song…"
       value={search}
       onChange={setSearch}

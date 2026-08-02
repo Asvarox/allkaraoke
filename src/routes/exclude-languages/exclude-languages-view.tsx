@@ -1,15 +1,15 @@
-import { Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
 import { twc } from 'react-twc';
 
-import { Checkbox } from '~/modules/elements/akui/checkbox';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { Flag } from '~/modules/elements/flag';
 import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import { NavButton, NavCheckbox } from '~/modules/elements/nav-controls';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import { useLanguageList } from '~/modules/songs/hooks/use-language-list';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import isE2E from '~/modules/utils/is-e2-e';
@@ -24,7 +24,7 @@ interface Props {
 const MIN_SONGS_COUNT = isE2E() ? 0 : 20;
 
 function ExcludeLanguagesView({ onClose, closeText }: Props) {
-  const { register } = useKeyboardNav({ onBackspace: onClose });
+  const { register } = useKeyboardNav({ onBackspace: onClose, title: 'Select Song Languages' });
 
   const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
   const { data, isLoading } = useSongIndex();
@@ -84,67 +84,73 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
   return (
     <MenuWithLogo>
       <Menu.Header>Select Song Languages</Menu.Header>
-      <>
-        {isLoading &&
-          new Array(6).fill(0).map((_, i) => (
-            <Skeleton variant="rectangular" width="100%" height="100px" key={i}>
-              <LanguageEntry data-excluded focused={false}>
-                <Flag language={['English']} />
-              </LanguageEntry>
-            </Skeleton>
-          ))}
-        {languageList.map(({ name, count }) => {
-          const excluded = excludedLanguages?.includes(name) ?? false;
-          return (
-            <Checkbox
-              size="regular"
-              className={`relative transition-all ${excluded ? 'opacity-50' : 'opacity-100'} duration-300`}
-              checked={!excluded}
-              key={name}
-              data-excluded={excluded}
-              {...register(`lang-${name}`, () => toggleLanguage(name))}>
-              <span>
-                <LanguageName>{name}</LanguageName> ({count} songs)
-              </span>
-              <div
-                className={`absolute top-0 right-0 bottom-0 w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
-                <Flag language={[name]} className="h-full w-full object-cover" />
-              </div>
-            </Checkbox>
-          );
-        })}
-        {otherSongCount > 0 && (
-          <Menu.HelpText className="text-right">
-            …and <strong>{otherSongCount} songs</strong> in other languages
-          </Menu.HelpText>
-        )}
-      </>
-      <Menu.HelpText>
-        You can always update the selection in <strong>Manage Songs</strong> menu
-      </Menu.HelpText>
-      <NextButtonContainer>
-        <MenuButton
-          {...register('close-exclude-languages', onClose, undefined, true, {
-            disabled: areAllLanguagesExcluded || isLoading,
-          })}>
-          {closeText}
-        </MenuButton>
-        <Menu.HelpText className="text-right">
-          The list will contain{' '}
-          <strong>
-            <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
-          </strong>{' '}
-          songs
+      <KeyboardNavContext value={register}>
+        <>
+          {isLoading &&
+            new Array(6).fill(0).map((_, i) => (
+              <Skeleton variant="rectangular" width="100%" height="100px" key={i}>
+                <LanguageEntry data-excluded focused={false}>
+                  <Flag language={['English']} />
+                </LanguageEntry>
+              </Skeleton>
+            ))}
+          {languageList.map(({ name, count }) => {
+            const excluded = excludedLanguages?.includes(name) ?? false;
+            return (
+              <NavCheckbox
+                size="regular"
+                className={`relative transition-all ${excluded ? 'opacity-50' : 'opacity-100'} duration-300`}
+                checked={!excluded}
+                key={name}
+                data-excluded={excluded}
+                name={`lang-${name}`}
+                label={name}
+                onClick={() => toggleLanguage(name)}>
+                <span>
+                  <LanguageName>{name}</LanguageName> ({count} songs)
+                </span>
+                <div
+                  className={`absolute top-[1px] right-[1px] bottom-[1px] w-20 transition-all md:w-30 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
+                  <Flag language={[name]} className="h-full w-full rounded-r-xl object-cover" />
+                </div>
+              </NavCheckbox>
+            );
+          })}
+          {otherSongCount > 0 && (
+            <Menu.HelpText className="text-right">
+              …and <strong>{otherSongCount} songs</strong> in other languages
+            </Menu.HelpText>
+          )}
+        </>
+        <Menu.HelpText>
+          You can always update the selection in <strong>Manage Songs</strong> menu
         </Menu.HelpText>
-        {areAllLanguagesExcluded && (
-          <Menu.HelpText data-test="all-languages-excluded-warning">
+        <NextButtonContainer>
+          <NavButton
+            name="close-exclude-languages"
+            remoteIcon="confirm"
+            isDefault
+            disabled={areAllLanguagesExcluded || isLoading}
+            onClick={onClose}>
+            {closeText}
+          </NavButton>
+          <Menu.HelpText className="text-right">
+            The list will contain{' '}
             <strong>
-              <Warning />
+              <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
             </strong>{' '}
-            You excluded all the languages, pick at least one
+            songs
           </Menu.HelpText>
-        )}
-      </NextButtonContainer>
+          {areAllLanguagesExcluded && (
+            <Menu.HelpText data-test="all-languages-excluded-warning">
+              <strong>
+                <Icon icon="ic:baseline-warning" />
+              </strong>{' '}
+              You excluded all the languages, pick at least one
+            </Menu.HelpText>
+          )}
+        </NextButtonContainer>
+      </KeyboardNavContext>
     </MenuWithLogo>
   );
 }

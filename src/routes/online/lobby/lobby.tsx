@@ -1,4 +1,3 @@
-import { Edit } from '@mui/icons-material';
 import { throttle } from 'es-toolkit';
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -6,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Song, SongPreview } from '~/interfaces';
 import { Calibration } from '~/modules/calibration/calibration';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
@@ -235,7 +235,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
                         title="Change song"
                         className="hover:text-active flex shrink-0 items-center opacity-75 hover:opacity-100 disabled:opacity-30"
                         data-test="choose-song-button">
-                        <Edit className="h-5 w-5" />
+                        <Icon icon="ic:baseline-edit" className="h-5 w-5" />
                       </button>
                     )}
                   </div>

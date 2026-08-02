@@ -1,9 +1,9 @@
-import { renderHook } from '@testing-library/react';
-import { act, FunctionComponent, PropsWithChildren } from 'react';
+import { render, renderHook, waitFor } from '@testing-library/react';
+import { act, FunctionComponent, PropsWithChildren, useState } from 'react';
 import { describe, expect, it, vitest } from 'vitest';
 
 import events from '~/modules/game-events/game-events';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
 
@@ -40,6 +40,40 @@ function setup(register: (nav: ReturnType<typeof useKeyboardNav>) => void) {
 }
 
 const last = (published: HelpEntry[]) => published.at(-1)!;
+
+/**
+ * Renders a screen whose mirrored control lives in a CHILD component that owns the control's state,
+ * which is how the pause menu drives rate-song: `useKeyboardNav` sits in the parent, but the
+ * checkbox's `checked` is state inside the child. Returns a toggle for that child-only state.
+ */
+function setupChildOwnedControl() {
+  const published: HelpEntry[] = [];
+  const record = (_name: string, help: HelpEntry) => {
+    published.push(help);
+  };
+  let toggle = () => {};
+
+  const Child = ({ nav }: { nav: RegisterFunc }) => {
+    const [checked, setChecked] = useState(false);
+    toggle = () => setChecked((current) => !current);
+    nav('issue', () => {}, 'Issue', false, { control: { type: 'checkbox', label: 'Issue', checked } });
+    return null;
+  };
+
+  const Screen = () => {
+    const { register } = useKeyboardNav();
+    return <Child nav={register} />;
+  };
+
+  render(
+    <KeyboardHelpContext
+      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false }}>
+      <Screen />
+    </KeyboardHelpContext>,
+  );
+
+  return { published, toggle: () => toggle() };
+}
 
 describe('useKeyboardNav mirror mode', () => {
   it('emits mirror controls when every element supplies a descriptor', () => {
@@ -83,6 +117,48 @@ describe('useKeyboardNav mirror mode', () => {
     expect(help.vertical).toBeNull(); // classic navigation field present
   });
 
+  it('keeps full coverage when a remote-only control is added alongside the on-screen ones', () => {
+    const { published, result } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      // Remote-only: no on-screen element, so it must not count against the coverage tally.
+      nav.register('exit', () => {}, 'Exit', false, {
+        remoteOnly: true,
+        control: { type: 'button', label: 'Exit', variant: 'back' },
+      });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([
+      { type: 'switch', name: 'graphics', label: 'Graphics', value: 'HIGH' },
+      { type: 'button', name: 'exit', label: 'Exit', variant: 'back' },
+    ]);
+    // It takes no part in on-screen navigation, so focus stays on the single real element.
+    expect(result.current.focused).toBe('graphics');
+  });
+
+  it('fires a remote-only control without moving on-screen focus onto it', () => {
+    const onExit = vitest.fn();
+    const { result } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      nav.register('exit', onExit, 'Exit', false, {
+        remoteOnly: true,
+        control: { type: 'button', label: 'Exit', variant: 'back' },
+      });
+    });
+
+    act(() => {
+      events.remoteControlActivated.dispatch('exit');
+    });
+
+    expect(onExit).toHaveBeenCalledTimes(1);
+    expect(result.current.focused).toBe('graphics');
+  });
+
   it('activates the matching control callback on remoteControlActivated', () => {
     const onGraphics = vitest.fn();
     const onCamera = vitest.fn();
@@ -101,5 +177,108 @@ describe('useKeyboardNav mirror mode', () => {
 
     expect(onCamera).toHaveBeenCalledTimes(1);
     expect(onGraphics).not.toHaveBeenCalled();
+  });
+
+  it('stays in mirror mode when an on-screen control opts out with hideOnRemote', () => {
+    const { published } = setup((nav) => {
+      nav.register('graphics', () => {}, 'Graphics', false, {
+        control: { type: 'switch', label: 'Graphics', value: 'HIGH' },
+      });
+      // On screen and arrow-navigable, but deliberately absent from the phone — it must not count as
+      // missing coverage and knock the screen back to the classic arrow pad.
+      nav.register('edit-song', () => {}, 'Edit song', false, { hideOnRemote: true });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([{ type: 'switch', name: 'graphics', label: 'Graphics', value: 'HIGH' }]);
+  });
+
+  it('republishes when a control whose state lives in a child component changes', async () => {
+    const { published, toggle } = setupChildOwnedControl();
+
+    expect(last(published).controls).toEqual([{ type: 'checkbox', name: 'issue', label: 'Issue', checked: false }]);
+
+    // Only the child re-renders here — the component holding useKeyboardNav does not. The mirrored
+    // set still has to follow, or the phone keeps showing the stale value (the on-screen menu, which
+    // renders from the child's own state, updates either way and hides the problem). `async` act so
+    // the microtask the republish is deferred to gets flushed.
+    await act(async () => toggle());
+
+    await waitFor(() =>
+      expect(last(published).controls).toEqual([{ type: 'checkbox', name: 'issue', label: 'Issue', checked: true }]),
+    );
+
+    // And back again — the original report was that selecting worked but deselecting did not.
+    await act(async () => toggle());
+
+    await waitFor(() =>
+      expect(last(published).controls).toEqual([{ type: 'checkbox', name: 'issue', label: 'Issue', checked: false }]),
+    );
+  });
+
+  it('routes a value pushed from the remote to the matching control onValueChange', () => {
+    const onRename = vitest.fn();
+    setup((nav) => {
+      nav.register('rename', () => {}, 'Rename', false, {
+        control: { type: 'text', label: 'Rename', value: '' },
+        onValueChange: onRename,
+      });
+      nav.register('select', () => {}, 'Select', true, {
+        control: { type: 'button', label: 'Select song' },
+      });
+    });
+
+    act(() => {
+      events.remoteControlValueChanged.dispatch('rename', 'New name');
+    });
+
+    expect(onRename).toHaveBeenCalledExactlyOnceWith('New name');
+  });
+
+  it('drops a value callback once its control is no longer registered', () => {
+    const onRename = vitest.fn();
+    let renameRegistered = true;
+    const { rerender } = setup((nav) => {
+      if (renameRegistered) {
+        nav.register('rename', () => {}, 'Rename', false, {
+          control: { type: 'text', label: 'Rename', value: '' },
+          onValueChange: onRename,
+        });
+      }
+      nav.register('select', () => {}, 'Select', true, {
+        control: { type: 'button', label: 'Select song' },
+      });
+    });
+
+    renameRegistered = false;
+    rerender();
+
+    // A value edit can reach the host long after the screen moved on — it must not write to a
+    // control that is no longer on screen.
+    act(() => {
+      events.remoteControlValueChanged.dispatch('rename', 'Late edit');
+    });
+
+    expect(onRename).not.toHaveBeenCalled();
+  });
+
+  it('emits text and input-lag descriptors with full coverage', () => {
+    const { published } = setup((nav) => {
+      nav.register('rename', () => {}, 'Rename', false, {
+        control: { type: 'text', label: 'Rename', value: 'E-Ray', placeholder: 'Player 1' },
+        onValueChange: () => {},
+      });
+      nav.register('input-lag', () => {}, 'Input lag', false, {
+        control: { type: 'input-lag', label: 'Input lag', value: 150 },
+      });
+    });
+
+    const help = last(published);
+    expect(help.mode).toBe('mirror');
+    expect(help.controls).toEqual([
+      { type: 'text', name: 'rename', label: 'Rename', value: 'E-Ray', placeholder: 'Player 1' },
+      { type: 'input-lag', name: 'input-lag', label: 'Input lag', value: 150 },
+    ]);
   });
 });

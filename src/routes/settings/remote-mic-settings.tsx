@@ -1,15 +1,14 @@
 import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
 
-import { Checkbox } from '~/modules/elements/akui/checkbox';
 import { Menu } from '~/modules/elements/akui/menu';
-import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
+import { NavButton, NavCheckbox, NavSwitcher } from '~/modules/elements/nav-controls';
 import { Switcher } from '~/modules/elements/switcher';
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/remote-mic/network/server/network-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
@@ -29,7 +28,7 @@ function RemoteMicSettings() {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('settings/');
 
-  const { register } = useKeyboardNav({ onBackspace: goBack });
+  const { register } = useKeyboardNav({ onBackspace: goBack, title: 'Remote Microphone Settings' });
 
   const [remoteMicConnectionType, setRemoteMicConnectionType] = useSettingValue(RemoteMicConnectionTypeSetting);
   const [defaultPermission, setDefaultPermission] = useSettingValue(DefaultRemoteMicPermission);
@@ -53,68 +52,73 @@ function RemoteMicSettings() {
         }}>
         Remote Microphone Settings
       </Menu.Header>
-      <Switcher
-        {...register('connection type', () =>
-          setRemoteMicConnectionType(nextValue(RemoteMicConnectionType, remoteMicConnectionType)),
-        )}
-        label="Connection type"
-        value={remoteMicConnectionType}
-      />
-      <hr />
-      <Switcher
-        {...register('default-permission', () =>
-          setDefaultPermission(nextValue(RemoteMicPermissions, defaultPermission)),
-        )}
-        label="Default permission"
-        info={
-          <>
-            <strong>WRITE</strong> - player is able to navigate the menus remotely and assign themselves and other
-            players to the game.
-            <br />
-            <strong>READ</strong> - player will only be able to use the device as a microphone with no control over the
-            game.
-          </>
-        }
-        value={defaultPermission.toUpperCase()}
-      />
-      <Checkbox
-        size="small"
-        checked={unassignOnSongFinished}
-        {...register('unassign-on-song-finished', () => setUnassignOnSongFinished(!unassignOnSongFinished))}
-        info={`Prevents "ghost" players - remote mics sticking around, not singing subsequent songs.`}>
-        Unassign players after they finish singing
-      </Checkbox>
-      <hr />
-      <Menu.SubHeader>Connected devices permissions:</Menu.SubHeader>
-      {remoteMics.map((mic) => {
-        const permission = RemoteMicManager.getPermission(mic.id);
-        return (
-          <Switcher
-            key={mic.id}
-            className="uppercase"
-            {...register(
-              `mic-${mic.id}`,
-              () => RemoteMicManager.setPermission(mic.id, nextValue(RemoteMicPermissions, permission)),
-              'Change permissions',
-            )}
-            data-test="remote-mic-entry"
-            data-id={mic.id}
-            value={permission}
-            label={
-              <span className="inline-flex items-center uppercase">
-                <span className="text-md pr-4">{mic.id.slice(-4)}</span>
-                <div className="text-md w-20 pr-8 normal-case">
-                  <DevicePing deviceId={mic.id} />
-                </div>
-                <span className="ph-no-capture">{mic.name}</span>
-              </span>
-            }
-          />
-        );
-      })}
-      {remoteMics.length === 0 && <Menu.HelpText>No remote microphones connected</Menu.HelpText>}
-      <hr />
-      <MenuButton {...register('back-button', goBack)}>Return To Settings</MenuButton>
+      <KeyboardNavContext value={register}>
+        <NavSwitcher
+          name="connection type"
+          label="Connection type"
+          value={remoteMicConnectionType}
+          onClick={() => setRemoteMicConnectionType(nextValue(RemoteMicConnectionType, remoteMicConnectionType))}
+        />
+        <hr />
+        <NavSwitcher
+          name="default-permission"
+          label="Default permission"
+          info={
+            <>
+              <strong>WRITE</strong> - player is able to navigate the menus remotely and assign themselves and other
+              players to the game.
+              <br />
+              <strong>READ</strong> - player will only be able to use the device as a microphone with no control over
+              the game.
+            </>
+          }
+          value={defaultPermission.toUpperCase()}
+          onClick={() => setDefaultPermission(nextValue(RemoteMicPermissions, defaultPermission))}
+        />
+        <NavCheckbox
+          size="small"
+          name="unassign-on-song-finished"
+          label="Unassign players after they finish singing"
+          checked={unassignOnSongFinished}
+          onClick={() => setUnassignOnSongFinished(!unassignOnSongFinished)}
+          info={`Prevents "ghost" players - remote mics sticking around, not singing subsequent songs.`}
+        />
+        <hr />
+        <Menu.SubHeader>Connected devices permissions:</Menu.SubHeader>
+        {remoteMics.map((mic) => {
+          const permission = RemoteMicManager.getPermission(mic.id);
+          return (
+            <Switcher
+              key={mic.id}
+              className="uppercase"
+              {...register(
+                `mic-${mic.id}`,
+                () => RemoteMicManager.setPermission(mic.id, nextValue(RemoteMicPermissions, permission)),
+                'Change permissions',
+                false,
+                { control: { type: 'switch', label: mic.name, value: permission } },
+              )}
+              data-test="remote-mic-entry"
+              data-id={mic.id}
+              value={permission}
+              label={
+                <span className="inline-flex items-center uppercase">
+                  <span className="text-md pr-4">{mic.id.slice(-4)}</span>
+                  <div className="text-md w-20 pr-8 normal-case">
+                    <DevicePing deviceId={mic.id} />
+                  </div>
+                  <span className="ph-no-capture">{mic.name}</span>
+                </span>
+              }
+            />
+          );
+        })}
+        {remoteMics.length === 0 && <Menu.HelpText>No remote microphones connected</Menu.HelpText>}
+        <hr />
+        <NavButton name="back-button" variant="back" onClick={goBack}>
+          Return To Settings
+        </NavButton>
+      </KeyboardNavContext>
     </MenuWithLogo>
   );
 }

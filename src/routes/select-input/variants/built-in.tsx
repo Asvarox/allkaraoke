@@ -1,7 +1,7 @@
-import { Check, Error } from '@mui/icons-material';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ValuesType } from 'utility-types';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
@@ -141,7 +141,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
                 <>
                   <span className="typography">Microphone is audible</span>
                   <div className="flex h-8 w-10 items-center justify-end">
-                    <Check className="h-8 w-8 text-white" />
+                    <Icon icon="ic:baseline-check" size={8} className="text-white" />
                   </div>
                 </>
               )}
@@ -149,7 +149,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
                 <>
                   <span className="typography">Microphone is not audible</span>
                   <div className="flex h-8 w-10 items-center justify-end">
-                    <Error className="h-8 w-8 text-red-500" />
+                    <Icon icon="ic:baseline-error" size={8} className="text-red-500" />
                   </div>
                 </>
               )}

@@ -1,8 +1,9 @@
 import { debounce } from 'es-toolkit';
-import { MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
+
 import GameState from '~/modules/game-engine/game-state/game-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';
+import { MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import storage from '~/modules/utils/storage';
@@ -113,6 +114,17 @@ class PlayersManager {
       this.getPlayers().forEach((player) => {
         if (player.input.source === 'Remote Microphone' && player.input.deviceId === id && player.getName() !== name) {
           player.nameOverride = name;
+        }
+      });
+    });
+
+    events.remoteMicRenamed.subscribe(({ id, name }) => {
+      this.getPlayers().forEach((player) => {
+        if (player.input.source === 'Remote Microphone' && player.input.deviceId === id) {
+          player.nameOverride = name;
+          // The input-selection screens re-render off playerInputChanged, not playerNameChanged —
+          // dispatch it (with no actual input change) so a rename well after assignment is picked up
+          events.playerInputChanged.dispatch(player.number, player.input, player.input);
         }
       });
     });

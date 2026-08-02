@@ -1,13 +1,18 @@
-import { Fullscreen, FullscreenExit } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { ComponentProps, useEffect, useState } from 'react';
 
+import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
 import { Tooltip } from '~/modules/elements/tooltip';
 import '~/modules/remote-mic/event-listeners';
 import '~/modules/stats/index';
 import { AutoEnableFullscreenSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
 
-function FullscreenButton() {
+interface Props {
+  /** Callers set this to match whatever icon size their surrounding toolbar uses. */
+  size?: ComponentProps<typeof Button>['size'];
+}
+
+function FullscreenButton({ size = 'large' }: Props) {
   const [, setAutoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [isFullScreen, setIsFullScreen] = useState(document.fullscreenElement !== null);
@@ -25,9 +30,11 @@ function FullscreenButton() {
 
   return (
     <Tooltip title="Toggle fullscreen" place="bottom-end">
-      <IconButton
+      <Button
+        size={size}
+        type="button"
         data-test="toggle-fullscreen"
-        size="small"
+        aria-label="Toggle fullscreen"
         onClick={async () => {
           try {
             if (document.fullscreenElement === null) {
@@ -47,9 +54,9 @@ function FullscreenButton() {
           } catch (e) {
             console.info(e);
           }
-        }}>
-        {isFullScreen ? <FullscreenExit className="fill-white!" /> : <Fullscreen className="fill-white!" />}
-      </IconButton>
+        }}
+        leftIcon={<Icon icon={isFullScreen ? 'ic:baseline-fullscreen-exit' : 'ic:baseline-fullscreen'} />}
+      />
     </Tooltip>
   );
 }

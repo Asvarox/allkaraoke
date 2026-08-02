@@ -1,5 +1,6 @@
-import { Close, Edit } from '@mui/icons-material';
 import { ReactNode } from 'react';
+
+import { Icon } from '~/modules/elements/akui/icon';
 import { useOnlinePlayersStats } from '~/modules/online/client/hooks';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
 import ParticipantStatsRow from '~/routes/online/components/participant-stats-row';
@@ -45,7 +46,7 @@ function ParticipantList({ roomState, selfId, onEdit, onKick }: Props) {
               title="Change your name or color"
               className="hover:text-active relative flex items-center opacity-75 hover:opacity-100"
               data-test="customize-button">
-              <Edit className="h-5 w-5" />
+              <Icon icon="ic:baseline-edit" className="h-5 w-5" />
             </button>
           )}
           {participant.id === roomState.hostId && <Tag data-test="participant-host">host</Tag>}
@@ -59,7 +60,7 @@ function ParticipantList({ roomState, selfId, onEdit, onKick }: Props) {
               title={`Remove ${participant.name} from the room`}
               className="relative flex items-center opacity-75 hover:text-red-400 hover:opacity-100"
               data-test={`online-kick-${participant.playerNumber}`}>
-              <Close className="h-5 w-5" />
+              <Icon icon="ic:baseline-close" className="h-5 w-5" />
             </button>
           )}
         </ParticipantStatsRow>

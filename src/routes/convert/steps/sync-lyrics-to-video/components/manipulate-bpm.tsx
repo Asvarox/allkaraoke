@@ -1,8 +1,8 @@
-import { AccessTime } from '@mui/icons-material';
 import { Button, TextField, Tooltip } from '@mui/material';
 import { useState } from 'react';
 
 import { Song } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
 import { getLastNoteEndFromSections } from '~/modules/songs/utils/notes-selectors';
 import calculateProperBPM from '~/routes/convert/calculate-proper-bpm';
@@ -49,7 +49,7 @@ export default function ManipulateBpm({ current, onChange, onUseCurrentTime, son
               <Tooltip title="Use the current player time">
                 <Button
                   data-test="desired-end-current-time"
-                  endIcon={<AccessTime />}
+                  endIcon={<Icon icon="ic:baseline-access-time" />}
                   color="secondary"
                   variant="text"
                   onClick={setDesiredLastNoteEndToCurrentPlayerTime}>

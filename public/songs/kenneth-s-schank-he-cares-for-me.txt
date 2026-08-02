@@ -1,0 +1,217 @@
+#ARTIST:Kenneth S. Schank
+#TITLE:He Cares for Me
+#CREATOR:Kenneth S. Schank
+#BPM:384
+#YEAR:2019
+#VIDEO:v=EKuj_Shh26I
+#GENRE:Christian
+#LANGUAGE:English
+#GAP:10400,375
+#ALLKARAOKE_ID:kenneth-s-schank-he-cares-for-me
+#ALLKARAOKE_SID:6020
+#ALLKARAOKE_LASTUPDATE:2026-07-19T08:04:27.994Z
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=EKuj_Shh26I
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:145
+#P1:He Cares for Me
+#DOWNBEATOFFSET:116
+#MP3:Kenneth S. Schank - He Cares for Me.mp3
+#COVER:Kenneth S. Schank - He Cares for Me [CO].jpg
+#VOCALS:Kenneth S. Schank - He Cares for Me [Vocals].mp3
+#INSTRUMENTAL:Kenneth S. Schank - He Cares for Me [Instrumental].mp3
+: 26 13 58 he 
+: 42 20 58 knows 
+: 66 3 58 the 
+: 70 16 63 stars 
+: 90 11 62 that 
+: 106 18 62 shine 
+: 125 10 60 at 
+: 138 10 58 night
+- 148
+: 154 11 63 he 
+: 168 23 67 made 
+: 193 6 68 the 
+: 202 15 70 burn
+: 217 16 72 ing 
+: 234 36 65 sun
+- 270
+: 282 15 58 and 
+: 298 22 58 ev
+: 322 7 58 'ry 
+: 330 13 63 crea
+: 344 13 62 ture 
+: 361 15 62 great 
+: 378 11 60 or 
+: 390 10 58 small
+- 400
+: 407 13 63 he 
+: 425 17 63 num
+: 443 13 65 bers 
+: 457 15 67 ev
+: 473 16 68 ‘ry 
+: 490 31 70 one
+- 521
+: 536 4 72 He 
+: 542 7 74 ~ 
+: 551 21 75 al
+: 575 9 75 so 
+: 585 14 74 knows 
+: 603 12 72 my 
+: 618 15 70 face 
+: 640 6 68 and 
+: 648 9 67 voice.
+- 657
+: 666 13 68 He 
+: 682 15 70 loves 
+: 700 10 63 me 
+: 712 15 63 per
+: 730 17 62 fect
+: 748 27 60 ly.
+- 775
+: 794 13 58 Our 
+: 808 21 58 Heav'n
+: 832 10 58 ly 
+: 843 15 63 Fa
+: 859 15 62 ther 
+: 875 15 60 knows 
+: 891 11 62 all 
+: 906 10 63 things.
+- 916
+: 921 12 63 He 
+: 938 17 67 knows 
+: 960 5 68 and 
+: 967 22 65 cares 
+: 996 9 63 for 
+: 1007 46 63 me.
+- 1053
+: 1074 15 58 He 
+: 1090 23 58 hears 
+: 1114 3 58 the 
+: 1122 17 63 sound 
+: 1140 12 62 of 
+: 1154 14 62 o
+: 1169 13 60 cean 
+: 1186 10 58 waves
+- 1196
+: 1202 11 63 that 
+: 1216 24 67 crash 
+: 1244 14 70 up
+: 1259 3 70 on 
+: 1263 15 72 the 
+: 1279 31 65 shore.
+- 1310
+: 1331 12 58 And 
+: 1348 18 58 when 
+: 1368 5 58 the 
+: 1378 11 63 rain 
+: 1390 13 62 clouds 
+: 1409 16 62 fill 
+: 1426 9 60 the 
+: 1436 12 58 sky
+- 1448
+: 1455 13 63 he 
+: 1473 15 63 hears 
+: 1489 11 65 the 
+: 1505 16 67 thun
+: 1522 14 68 der 
+: 1537 29 70 roar.
+- 1566
+: 1585 7 72 He 
+: 1592 7 74 ~ 
+: 1599 22 75 al
+: 1622 9 75 so 
+: 1635 12 74 hears 
+: 1654 5 72 all 
+: 1661 20 70 qui
+: 1681 12 68 et 
+: 1699 6 67 words
+- 1705
+: 1720 4 68 I 
+: 1726 18 70 pray 
+: 1754 4 63 on 
+: 1761 16 63 bend
+: 1779 16 62 ed 
+: 1797 23 60 knee.
+- 1820
+: 1841 10 58 Our 
+: 1852 5 58 Heav'n
+: 1858 30 58 ly 
+: 1889 17 63 Fa
+: 1907 9 62 ther 
+: 1921 17 60 hears 
+: 1943 6 62 all 
+: 1953 12 63 things
+- 1965
+: 1970 12 63 He 
+: 1985 17 67 hears 
+: 2007 5 68 and 
+: 2015 24 65 cares 
+: 2044 9 63 for 
+: 2055 6 63 me.
+- 2061 2090
+- 2090
+: 2116 22 58 He 
+: 2139 22 58 loves 
+: 2163 4 58 me 
+: 2169 15 63 whether 
+: 2184 15 62 whether 
+: 2200 18 62 I 
+: 2219 10 60 am 
+: 2232 17 58 sad
+- 2249
+: 2257 6 63 or 
+: 2266 22 67 hap
+: 2289 8 68 py 
+: 2299 14 70 or 
+: 2320 5 72 in 
+: 2328 35 65 pain.
+- 2363
+: 2375 17 58 He 
+: 2393 24 58 un
+: 2418 6 58 der
+: 2425 15 63 stands 
+: 2442 10 62 my 
+: 2454 16 62 trou
+: 2472 9 60 bles 
+: 2491 9 58 and
+- 2500
+: 2505 18 63 he 
+: 2532 3 63 e
+: 2537 15 65 ven 
+: 2553 15 67 knows 
+: 2570 12 68 my 
+: 2585 30 70 name.
+- 2615
+: 2632 7 72 For 
+: 2640 7 74 ~ 
+: 2649 21 75 He's 
+: 2673 5 75 my 
+: 2679 16 74 Heav'n
+: 2696 16 72 ly 
+: 2713 17 70 Fa
+: 2730 16 68 ~
+: 2747 8 67 ther,
+- 2755
+: 2760 12 68 His 
+: 2774 17 70 child 
+: 2795 13 63 I'll 
+: 2811 14 63 al
+: 2826 12 62 ways 
+: 2841 31 60 be.
+- 2872
+: 2890 12 58 Our 
+: 2903 23 58 Heav'n
+: 2929 8 58 ly 
+: 2938 16 63 Fa
+: 2955 13 62 ther 
+: 2970 14 60 loves 
+: 2986 13 62 us 
+: 3002 10 63 all,
+- 3012
+: 3018 15 63 He 
+: 3034 14 67 loves 
+: 3057 6 68 and 
+: 3065 23 65 cares 
+: 3093 8 63 for 
+: 3104 63 63 me.
+E

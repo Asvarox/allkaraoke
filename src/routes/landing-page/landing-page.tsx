@@ -161,6 +161,6 @@ const StatSegment = twc.div`typography flex flex-1 flex-col justify-center text-
 
 const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
 
-const PlayButton = twx(ButtonLink)`mobile:text-2xl animate-focused w-full bg-black/60 px-4 py-4 text-5xl`;
+const PlayButton = twx(ButtonLink)`mobile:text-2xl subtle-focus w-full bg-black/60 px-4 py-4 text-5xl`;
 
 export default LandingPage;

@@ -1,7 +1,8 @@
-import { Search } from '@mui/icons-material';
 import { Button, Tooltip } from '@mui/material';
 import { ComponentProps } from 'react';
 import { twc } from 'react-twc';
+
+import { Icon } from '~/modules/elements/akui/icon';
 
 export const Pre = twc.span`font-mono`;
 
@@ -14,7 +15,7 @@ export const inputAction = (action: ComponentProps<typeof Button>['onClick'], en
           <span>
             <Button
               sx={{ mr: -1 }}
-              endIcon={<Search />}
+              endIcon={<Icon icon="ic:baseline-search" />}
               color={'secondary'}
               variant={'text'}
               onClick={action}
