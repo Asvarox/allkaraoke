@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Button } from '~/modules/elements/akui/button';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -7,10 +8,10 @@ import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import Modal from '~/modules/elements/modal';
 import styles from '~/modules/game-engine/drawing/styles';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
-import OnlineClient, { ONLINE_NAME_KEY } from '~/modules/online/client/online-client';
+import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineParticipant } from '~/modules/online/protocol/types';
 import { PLAYER_NUMBERS, PlayerNumber } from '~/modules/players/player-number';
-import storage from '~/modules/utils/storage';
+import { setStoredOnlineName } from '~/routes/online/hooks/use-online-name';
 import { BackgroundThemeSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 // Same pattern as the remote-mic player change — colors are picked by name, matching the theme
@@ -42,7 +43,7 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
   const submitName = () => {
     const trimmed = name.trim();
     if (trimmed && trimmed !== self?.name) {
-      storage.setItem(ONLINE_NAME_KEY, trimmed);
+      setStoredOnlineName(trimmed);
       void OnlineClient.rpc.room.setName(trimmed).catch(() => undefined);
     }
   };

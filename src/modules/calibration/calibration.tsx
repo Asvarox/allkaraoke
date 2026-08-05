@@ -11,9 +11,11 @@ import InputLag from './input-lag';
 type Props = {
   onSave: () => void;
   onClose?: () => void;
+  /** What confirming actually leads to — the online wizard enters a room rather than starting a song. */
+  saveLabel?: string;
 };
 
-export const Calibration = ({ onClose, onSave }: Props) => {
+export const Calibration = ({ onClose, onSave, saveLabel = 'Looks good, play the song' }: Props) => {
   const inputLagRef = useRef<HTMLInputElement | null>(null);
   const [inputLag] = useSettingValue(InputLagSetting);
 
@@ -44,7 +46,7 @@ export const Calibration = ({ onClose, onSave }: Props) => {
       </Menu.HelpText>
       <Menu.Divider />
       <NavButton name="save" onClick={onSave}>
-        Looks good, play the song
+        {saveLabel}
       </NavButton>
     </KeyboardNavContext>
   );

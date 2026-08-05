@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-import { MAX_NAME_LENGTH } from '~/consts';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { useOnlineConnectionStatus, useOnlineRoomState, useReportPlayerStats } from '~/modules/online/client/hooks';
-import OnlineClient, { ONLINE_NAME_KEY } from '~/modules/online/client/online-client';
-import InputManager from '~/modules/game-engine/input/input-manager';
+import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
 import storage from '~/modules/utils/storage';
+import { getStoredOnlineName } from '~/routes/online/hooks/use-online-name';
 import useOnlineSong from '~/routes/online/hooks/use-online-song';
 import Lobby from '~/routes/online/lobby/lobby';
 import { ONLINE_CREATED_ROOM_KEY, ONLINE_SETUP_DONE_KEY } from '~/routes/online/online';
@@ -28,7 +29,7 @@ function OnlineRoom({ roomCode }: Props) {
 
   useEffect(() => {
     if (!setupDone) return;
-    const name = (storage.getItem<string>(ONLINE_NAME_KEY) ?? '').slice(0, MAX_NAME_LENGTH);
+    const name = getStoredOnlineName();
     // Only the session that explicitly opened this room may create it — joining a
     // non-existing code gets rejected with 'not-found' instead of creating a room
     const create = storage.session.getItem(ONLINE_CREATED_ROOM_KEY) === roomCode;
@@ -60,16 +61,8 @@ function OnlineRoom({ roomCode }: Props) {
     };
   }, []);
 
-  useEffect(() => {
-    // Keep the mic monitored for the whole room stay so volume indicators work in the lobby
-    const wasMonitoring = InputManager.monitoringStarted();
-    InputManager.startMonitoring();
-    return () => {
-      if (!wasMonitoring) {
-        InputManager.stopMonitoring();
-      }
-    };
-  }, []);
+  // Keep the mic monitored for the whole room stay so volume indicators work in the lobby
+  useMicMonitoring();
 
   const [status, statusDetail] = useOnlineConnectionStatus();
   const roomState = useOnlineRoomState();
@@ -93,7 +86,9 @@ function OnlineRoom({ roomCode }: Props) {
   if (!setupDone) {
     return (
       <OnlineSetupWizard
+        mode="join"
         joinRoomCode={roomCode}
+        onBack={() => navigate('online/', { room: null })}
         onComplete={() => {
           storage.session.setItem(ONLINE_SETUP_DONE_KEY, '1');
           setSetupDone(true);

@@ -1,20 +1,20 @@
 import { AnimatePresence, motion } from 'motion/react';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { MAX_NAME_LENGTH } from '~/consts';
+import { Calibration } from '~/modules/calibration/calibration';
 import { Menu } from '~/modules/elements/akui/menu';
-import { Stepper } from '~/modules/elements/akui/stepper';
-import { useBackground } from '~/modules/elements/background-context';
+import WizardChecklist, { WizardStepEntry } from '~/modules/elements/akui/wizard-checklist';
 import { Input } from '~/modules/elements/input';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import InputManager from '~/modules/game-engine/input/input-manager';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
-import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import { checkRoomExists, ONLINE_NAME_KEY } from '~/modules/online/client/online-client';
+import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
+import { checkRoomExists } from '~/modules/online/client/online-client';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
-import storage from '~/modules/utils/storage';
+import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
+import useOnlineName from '~/routes/online/hooks/use-online-name';
 import BuiltIn from '~/routes/select-input/variants/built-in';
-import { MicSetupPreferenceSetting } from '~/routes/settings/settings-state';
+import { IsCalibratedSetting, MicSetupPreferenceSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 const generateRoomCode = () => {
   let code = '';
@@ -24,177 +24,253 @@ const generateRoomCode = () => {
   return code;
 };
 
+/** Step ids double as the checklist ordering — see `stepOrder` below. */
+const STEP = { code: 0, name: 1, mic: 2, calibration: 3 } as const;
+type Step = (typeof STEP)[keyof typeof STEP];
+
+const STEP_LABELS: Record<Step, string> = {
+  [STEP.code]: 'Enter Room Code',
+  [STEP.name]: 'Set Your Name',
+  [STEP.mic]: 'Set Up Microphone',
+  [STEP.calibration]: 'Sync Video With Sound',
+};
+
+// Matches the remote-mic wizard's step crossfade — long enough to read as a transition, short
+// enough never to be waited on
+const STEP_TRANSITION_S = 0.2;
+
 interface Props {
-  /** Room code when arriving via an invite link; null when creating/joining manually. */
-  joinRoomCode: string | null;
+  /** 'create' opens a brand-new room; 'join' asks for (or confirms) a room code first. */
+  mode: 'create' | 'join';
+  /** Room code when arriving via an invite link — prefills the code step. */
+  joinRoomCode?: string | null;
   onComplete: (roomCode: string, options: { create: boolean }) => void;
+  onBack: () => void;
 }
 
-const STEPS = ['Room', 'Name', 'Microphone'];
-type Step = 'room' | 'name' | 'mic';
-const stepIndex: Record<Step, number> = { room: 0, name: 1, mic: 2 };
+/**
+ * Everything that has to happen before entering a room, as the same checklist the remote mic uses:
+ * room code (join only) → name (skipped when remembered) → microphone → calibration (skipped when
+ * already calibrated). Calibrating here rather than in the lobby means readying up is a single click.
+ */
+function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Props) {
+  const { name: storedName, hasStoredName, setName: persistName } = useOnlineName();
+  const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
 
-/** Three-step flow before entering a room: open/join the room → set your name → set up your mic. */
-function OnlineSetupWizard({ joinRoomCode, onComplete }: Props) {
-  useBackground(true);
-  const navigate = useSmoothNavigate();
-  const [step, setStep] = useState<Step>('room');
-  const [name, setName] = useState<string>(storage.getItem(ONLINE_NAME_KEY) ?? '');
-  const [joinCode, setJoinCode] = useState('');
-  const [checkingRoom, setCheckingRoom] = useState(false);
-  // The room decision from step 1, applied after the final step
-  const roomTarget = useRef<{ roomCode: string; create: boolean } | null>(null);
-  const joinInputRef = useRef<{
-    element: HTMLInputElement | null;
-    triggerValidationError: (message: string) => void;
-  } | null>(null);
+  // Which steps this singer actually walks through, decided once on mount: a remembered name and an
+  // earlier calibration drop out entirely, and completing a step must not shrink the checklist.
+  const [stepOrder] = useState<Step[]>(() => {
+    const steps: Step[] = [];
+    if (mode === 'join') steps.push(STEP.code);
+    if (!hasStoredName) steps.push(STEP.name);
+    steps.push(STEP.mic);
+    if (!isCalibrated) steps.push(STEP.calibration);
+    return steps;
+  });
 
-  const { register } = useKeyboardNav();
+  const [step, setStep] = useState<Step>(stepOrder[0]);
+  // The room decision from the code step, applied once the whole wizard finishes
+  const roomTarget = useRef<{ roomCode: string; create: boolean }>(
+    mode === 'create'
+      ? { roomCode: generateRoomCode(), create: true }
+      : { roomCode: joinRoomCode ?? '', create: false },
+  );
 
-  const createRoom = () => {
-    roomTarget.current = { roomCode: generateRoomCode(), create: true };
-    setStep('name');
-  };
-
-  const joinRoom = async (code: string) => {
-    if (code.length < 3) {
-      joinInputRef.current?.triggerValidationError('Enter the room code');
-      return;
+  const goToNextStep = () => {
+    const next = stepOrder[stepOrder.indexOf(step) + 1];
+    if (next === undefined) {
+      onComplete(roomTarget.current.roomCode, { create: roomTarget.current.create });
+    } else {
+      setStep(next);
     }
-    setCheckingRoom(true);
-    const exists = await checkRoomExists(code);
-    setCheckingRoom(false);
-    if (!exists) {
-      joinInputRef.current?.triggerValidationError('This room does not exist');
-      return;
+  };
+
+  const goToPreviousStep = () => {
+    const previous = stepOrder[stepOrder.indexOf(step) - 1];
+    if (previous === undefined) {
+      onBack();
+    } else {
+      setStep(previous);
     }
-    roomTarget.current = { roomCode: code, create: false };
-    setStep('name');
   };
 
-  const submitName = () => {
-    if (!name.trim()) return;
-    storage.setItem(ONLINE_NAME_KEY, name.trim());
-    setStep('mic');
+  const onCodeConfirmed = (roomCode: string) => {
+    roomTarget.current = { roomCode, create: false };
+    goToNextStep();
   };
 
-  const finish = () => {
-    const target = roomTarget.current ?? {
-      roomCode: joinRoomCode ?? generateRoomCode(),
-      create: false,
-    };
-    onComplete(target.roomCode, { create: target.create });
+  const onNameConfirmed = (name: string) => {
+    persistName(name);
+    goToNextStep();
   };
+
+  const onCalibrated = () => {
+    setIsCalibrated(true);
+    goToNextStep();
+  };
+
+  // The completed room-code entry shows which room is being joined, like the remote mic's game code
+  const getStepLabel = (entry: Step, completed: boolean) =>
+    entry === STEP.code && completed
+      ? `Joining room: ${roomTarget.current.roomCode.toUpperCase()}`
+      : STEP_LABELS[entry];
+
+  const completedSteps: WizardStepEntry[] = stepOrder
+    .slice(0, stepOrder.indexOf(step))
+    .map((entry) => ({ id: entry, label: getStepLabel(entry, true) }));
 
   return (
     <MenuWithLogo>
-      {/* The stepper disappears once the final step is reached */}
-      <AnimatePresence>{step !== 'mic' && <Stepper steps={STEPS} current={stepIndex[step]} />}</AnimatePresence>
-      <Menu.Header data-test="online-setup-header">
-        {joinRoomCode ? `Join room "${joinRoomCode}"` : 'Sing Online'}
-      </Menu.Header>
+      <WizardChecklist completedSteps={completedSteps} activeStep={{ id: step, label: getStepLabel(step, false) }} />
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={step}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -20 }}
-          transition={{ duration: 0.12 }}
-          className="flex flex-col gap-3">
-          {step === 'room' &&
-            (joinRoomCode ? (
-              <>
-                <Menu.HelpText>
-                  You&#39;ve been invited to sing together — up to 6 people, each on their own device.
-                </Menu.HelpText>
-                <Menu.Button
-                  {...register('join-room-button', () => void joinRoom(joinRoomCode))}
-                  disabled={checkingRoom}
-                  data-test="join-room-button">
-                  Join the room
-                </Menu.Button>
-                <Menu.Divider />
-                <Menu.Button {...register('back-button', () => navigate('menu/'))} size="small" data-test="back-button">
-                  Back to main menu
-                </Menu.Button>
-              </>
-            ) : (
-              <>
-                <Menu.HelpText>
-                  Sing together with up to 6 people, each on their own device with their own microphone.
-                </Menu.HelpText>
-                <Menu.Button {...register('create-room-button', createRoom)} data-test="create-room-button">
-                  Open a new room
-                </Menu.Button>
-                <Menu.Divider />
-                <Input
-                  {...register('online-room-code', () => undefined)}
-                  label="Room code"
-                  value={joinCode}
-                  onChange={setJoinCode}
-                  onKeyDown={(event) => {
-                    if (event.key === 'Enter') void joinRoom(joinCode.trim().toLowerCase());
-                  }}
-                  placeholder="e.g. abcde"
-                  ref={joinInputRef}
-                  data-test="join-room-code-input"
-                />
-                <Menu.Button
-                  {...register('join-room-button', () => void joinRoom(joinCode.trim().toLowerCase()))}
-                  disabled={checkingRoom}
-                  data-test="join-room-button">
-                  {checkingRoom ? 'Checking the room…' : 'Join a room'}
-                </Menu.Button>
-                <Menu.Divider />
-                <Menu.Button {...register('back-button', () => navigate('menu/'))} size="small" data-test="back-button">
-                  Back to main menu
-                </Menu.Button>
-              </>
-            ))}
-          {step === 'name' && (
-            <>
-              <Input
-                {...register('online-name', submitName)}
-                label="Your name"
-                value={name}
-                onChange={setName}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter') submitName();
-                }}
-                maxLength={MAX_NAME_LENGTH}
-                placeholder="Enter your name"
-                data-test="online-name-input"
-              />
-              <Menu.Button
-                {...register('next-step-button', submitName)}
-                disabled={!name.trim()}
-                data-test="next-step-button">
-                Next
-              </Menu.Button>
-              <Menu.Divider />
-              <Menu.Button {...register('back-button', () => setStep('room'))} size="small" data-test="back-button">
-                Back
-              </Menu.Button>
-            </>
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: STEP_TRANSITION_S }}
+          className="flex flex-col gap-4">
+          {step === STEP.code && (
+            <CodeStep initialCode={joinRoomCode ?? ''} onConfirm={onCodeConfirmed} onBack={goToPreviousStep} />
           )}
-          {step === 'mic' && <MicStep onBack={() => setStep('name')} onSave={finish} />}
+          {step === STEP.name && (
+            <NameStep initialName={storedName} onConfirm={onNameConfirmed} onBack={goToPreviousStep} />
+          )}
+          {step === STEP.mic && (
+            <MicStep
+              onBack={goToPreviousStep}
+              onSave={goToNextStep}
+              // The last step's button says what actually happens next
+              closeButtonText={isCalibrated ? 'Enter the room' : 'Next'}
+            />
+          )}
+          {step === STEP.calibration && <CalibrationStep onDone={onCalibrated} />}
         </motion.div>
       </AnimatePresence>
     </MenuWithLogo>
   );
 }
 
+/** Room code entry — verified against the server before moving on, so a typo is caught here. */
+function CodeStep({
+  initialCode,
+  onConfirm,
+  onBack,
+}: {
+  initialCode: string;
+  onConfirm: (roomCode: string) => void;
+  onBack: () => void;
+}) {
+  const [code, setCode] = useState(initialCode);
+  const [checking, setChecking] = useState(false);
+  const inputRef = useRef<{
+    element: HTMLInputElement | null;
+    triggerValidationError: (message: string) => void;
+  } | null>(null);
+
+  const { register } = useKeyboardNav({ onBackspace: onBack });
+
+  const submit = async () => {
+    const roomCode = code.trim().toLowerCase();
+    if (roomCode.length < 3) {
+      inputRef.current?.triggerValidationError('Enter the room code');
+      return;
+    }
+    setChecking(true);
+    const exists = await checkRoomExists(roomCode);
+    setChecking(false);
+    if (!exists) {
+      inputRef.current?.triggerValidationError('This room does not exist');
+      return;
+    }
+    onConfirm(roomCode);
+  };
+
+  return (
+    <>
+      <Menu.HelpText>Ask the host for the code shown in their room.</Menu.HelpText>
+      <Input
+        {...register('online-room-code', () => undefined)}
+        className="[&_input]:text-center [&_input]:tracking-[1rem] [&_input]:uppercase"
+        label="Room code"
+        value={code}
+        onChange={setCode}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') void submit();
+        }}
+        maxLength={ONLINE_ROOM_CODE_LENGTH}
+        placeholder="_____"
+        autoCapitalize="characters"
+        autoComplete="off"
+        ref={inputRef}
+        data-test="join-room-code-input"
+      />
+      <Menu.Button
+        {...register('join-room-button', () => void submit())}
+        disabled={checking}
+        data-test="join-room-button">
+        {checking ? 'Checking the room…' : 'Join a room'}
+      </Menu.Button>
+      <Menu.Divider />
+      <Menu.Button {...register('back-button', onBack)} size="small" data-test="back-button">
+        Back
+      </Menu.Button>
+    </>
+  );
+}
+
+function NameStep({
+  initialName,
+  onConfirm,
+  onBack,
+}: {
+  initialName: string;
+  onConfirm: (name: string) => void;
+  onBack: () => void;
+}) {
+  const [name, setName] = useState(initialName);
+  const { register } = useKeyboardNav({ onBackspace: onBack });
+
+  const submit = () => {
+    if (name.trim()) onConfirm(name);
+  };
+
+  return (
+    <>
+      <Input
+        {...register('online-name', submit)}
+        label="Your name"
+        value={name}
+        onChange={setName}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') submit();
+        }}
+        maxLength={MAX_NAME_LENGTH}
+        placeholder="Enter your name"
+        data-test="online-name-input"
+      />
+      <Menu.Button {...register('next-step-button', submit)} disabled={!name.trim()} data-test="next-step-button">
+        Next
+      </Menu.Button>
+      <Menu.Divider />
+      <Menu.Button {...register('back-button', onBack)} size="small" data-test="back-button">
+        Back
+      </Menu.Button>
+    </>
+  );
+}
+
 /** Microphone setup — reuses the "computer's built-in microphone" flow from input selection. */
-function MicStep({ onBack, onSave }: { onBack: () => void; onSave: () => void }) {
-  useEffect(() => {
-    const wasMonitoring = InputManager.monitoringStarted();
-    InputManager.startMonitoring();
-    return () => {
-      if (!wasMonitoring) {
-        InputManager.stopMonitoring();
-      }
-    };
-  }, []);
+function MicStep({
+  onBack,
+  onSave,
+  closeButtonText,
+}: {
+  onBack: () => void;
+  onSave: () => void;
+  closeButtonText: string;
+}) {
+  useMicMonitoring();
 
   const save = () => {
     // Mark mic setup as done so e.g. the song-settings step shows Play instead of "Setup mics"
@@ -208,9 +284,20 @@ function MicStep({ onBack, onSave }: { onBack: () => void; onSave: () => void })
       onBack={onBack}
       onSave={save}
       changePreference={() => undefined}
-      closeButtonText="Enter the room"
+      closeButtonText={closeButtonText}
       onlineSetup
     />
+  );
+}
+
+/** One-time audio calibration, moved ahead of the lobby so readying up never interrupts it. */
+function CalibrationStep({ onDone }: { onDone: () => void }) {
+  const [showIntro, setShowIntro] = useState(true);
+
+  return showIntro ? (
+    <CalibrationIntro onContinue={() => setShowIntro(false)} />
+  ) : (
+    <Calibration onSave={onDone} onClose={() => setShowIntro(true)} saveLabel="Looks good, enter the room" />
   );
 }
 

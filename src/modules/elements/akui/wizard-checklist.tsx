@@ -16,6 +16,7 @@ const transition = { duration: 0.4, ease: 'easeOut' as const };
 
 // Replaces a linear progress bar with a checklist: as each step finishes, its header morphs (via a
 // shared layoutId) from the big active header into a green checked row above the next step's header.
+// Shared by the remote-mic connection wizard and the online-room setup wizard so both read the same.
 export default function WizardChecklist({ completedSteps, activeStep }: Props) {
   return (
     <LayoutGroup>

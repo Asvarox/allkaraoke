@@ -4,7 +4,6 @@ import tinycolor from 'tinycolor2';
 import styles from '~/modules/game-engine/drawing/styles';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
 import { PlayerNumber } from '~/modules/players/player-number';
-import PlayersManager from '~/modules/players/players-manager';
 import { twx } from '~/utils/twx';
 
 const usePlayerColor = (playerNumber: PlayerNumber) => {
@@ -17,18 +16,19 @@ const usePlayerColor = (playerNumber: PlayerNumber) => {
 
 const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right overflow-hidden bg-repeat-y`;
 
-interface Props {
+interface Props extends ComponentProps<typeof VolumeIndicatorBase> {
   playerNumber: PlayerNumber;
   volume: number;
 }
 
+/**
+ * Volume bar driven by an explicitly supplied level, for singers whose audio isn't on this device
+ * (online rooms report their own volume). For local mics use `PlayerMicCheck` instead.
+ */
 export const VolumeIndicator = forwardRef(
   ({ volume, playerNumber, ...rest }: Props, ref: ForwardedRef<HTMLDivElement | null>) => {
     const percent = `${Math.min(1, volume * 20)}`;
     const color = usePlayerColor(playerNumber);
-
-    const player = PlayersManager.getPlayer(playerNumber);
-    if (!player) return null;
 
     return (
       <VolumeIndicatorBase

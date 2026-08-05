@@ -8,21 +8,14 @@ import { MenuButton } from '~/modules/elements/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
 import events from '~/modules/game-events/game-events';
-import { useEventEffect, useEventListenerSelector } from '~/modules/game-events/hooks';
+import { useEventEffect } from '~/modules/game-events/hooks';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
-import PlayersManager from '~/modules/players/players-manager';
-import { getInputId } from '~/modules/players/utils';
 import UserMediaEnabled from '~/modules/user-media/user-media-enabled';
-import { nextIndex } from '~/modules/utils/indexes';
-import { useMicrophoneList } from '~/routes/select-input/hooks/use-microphone-list';
+import useMicSwitcher from '~/routes/select-input/hooks/use-mic-switcher';
 import usePlayerNumberPreset from '~/routes/select-input/hooks/use-player-number-preset';
-import inputSourceListManager from '~/routes/select-input/input-sources/index';
-import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
 import MicCheck from '~/routes/select-input/mic-check';
 import { MicSetupPreference } from '~/routes/settings/settings-state';
-
-import { InputSource } from '../input-sources/interfaces';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;
@@ -74,23 +67,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
   usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
-  const { Microphone } = useMicrophoneList(true, 'Microphone');
-
-  const selectedMic = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
-    const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');
-    const Mics = inputSourceListManager.getInputList().Microphone.list; // get "fresh" list from
-
-    if (selected) {
-      return Mics.find((mic) => mic.id === getInputId(selected))?.label ?? '';
-    }
-    return '';
-  });
-
-  const setMic = (input: InputSource) => {
-    PlayersManager.getPlayers().forEach((player) =>
-      player.changeInput(MicrophoneInputSource.inputName, input.channel, input.deviceId),
-    );
-  };
+  const { Microphone, selectedMic, setMic, cycleMic } = useMicSwitcher();
 
   const autoselect = () => {
     if (selectedMic === '') {
@@ -104,14 +81,6 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
   useEffect(autoselect, [autoselect]);
   useEventEffect([events.inputListChanged, events.playerRemoved], autoselect);
 
-  const cycleMic = () => {
-    const currentIndex = Microphone.list.findIndex((mic) => mic.label === selectedMic);
-
-    if (currentIndex > -1) {
-      const input = Microphone.list[nextIndex(Microphone.list, currentIndex)];
-      setMic(input);
-    }
-  };
   const isAudible = useIsPlayerMicAudible(selectedMic);
 
   useEffect(() => {

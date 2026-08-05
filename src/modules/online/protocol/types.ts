@@ -100,6 +100,8 @@ export interface SongHoverPreview {
   /** YouTube video id so other singers can watch/listen to the preview. */
   video?: string;
   language?: string[];
+  /** Country the artist is from — the song list picks the flag from it when it matches the language. */
+  artistOrigin?: string;
   year?: string;
   previewStart?: number;
   previewEnd?: number;
