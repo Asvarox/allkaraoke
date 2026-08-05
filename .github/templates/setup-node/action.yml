@@ -6,6 +6,11 @@ description: 'Sets up Bun (package manager + task runner) and Node (runtime for 
 runs:
   using: 'composite'
   steps:
+    # oven-sh/setup-bun extracts a .zip, but the playwright container images ship
+    # without unzip. No-op on the GitHub-hosted runners, which already have it.
+    - name: Ensure unzip is available
+      shell: bash
+      run: command -v unzip >/dev/null || (apt-get update && apt-get install -y --no-install-recommends unzip)
     - uses: oven-sh/setup-bun@v2
       with:
         bun-version-file: '.bun-version'
