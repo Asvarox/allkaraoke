@@ -1,0 +1,6 @@
+[install]
+# pnpm-style symlinked node_modules. Required here: the default "hoisted" linker
+# installs a second physical copy of `playwright` under `@playwright/test`, which
+# trips playwright's "Requiring @playwright/test second time" guard (breaks knip).
+# It also keeps phantom dependencies from resolving, matching the previous pnpm setup.
+linker = "isolated"

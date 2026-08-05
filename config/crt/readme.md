@@ -1,6 +1,6 @@
 # Certificates
 
-These are only used by the **opt-in** HTTPS dev mode (`pnpm start:https`). The default `pnpm start` serves plain HTTP on
+These are only used by the **opt-in** HTTPS dev mode (`bun run start:https`). The default `bun run start` serves plain HTTP on
 `localhost`, which browsers already treat as a secure context - no certificate needed.
 
 HTTPS mode exists for opening the dev server from another device (e.g. a phone used as a remote mic). Such a device
@@ -35,7 +35,7 @@ openssl req \
 ```
 
 2. Add `server.pem` to trusted certificates (Keychain App on MacOS)
-3. Run the app with `pnpm start:https`
+3. Run the app with `bun run start:https`
 
 ## Dummy certificate
 

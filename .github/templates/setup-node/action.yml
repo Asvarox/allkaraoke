@@ -1,15 +1,16 @@
 # See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 
 name: setup-node
-description: 'Setups node to the specific version'
+description: 'Sets up Bun (package manager + task runner) and Node (runtime for vite/vitest/playwright)'
 
 runs:
   using: 'composite'
   steps:
-    - uses: pnpm/action-setup@v6
+    - uses: oven-sh/setup-bun@v2
+      with:
+        bun-version-file: '.bun-version'
     - uses: actions/setup-node@v5
       with:
         node-version-file: '.nvmrc'
-        cache: 'pnpm'
-    - run: pnpm install --frozen-lockfile
+    - run: bun install --frozen-lockfile
       shell: bash

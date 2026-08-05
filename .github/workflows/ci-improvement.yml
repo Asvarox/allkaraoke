@@ -31,17 +31,17 @@ jobs:
         uses: './.github/templates/setup-node'
       - parallel:
           - name: Format check
-            run: pnpm format-check
+            run: bun run format-check
           - name: Lint
-            run: pnpm lint
+            run: bun run lint
           - name: Type check
-            run: pnpm type-check
+            run: bun run type-check
           - name: Test
-            run: pnpm test
+            run: bun run test
           - name: Build Storybook
-            run: pnpm build-storybook
+            run: bun run build-storybook
           - name: Knip
-            run: pnpm knip
+            run: bun run knip
   e2e-tests-run:
     strategy:
       fail-fast: false
@@ -61,7 +61,7 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Build app
-        run: pnpm build
+        run: bun run build
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
       - name: Run E2E tests
@@ -190,7 +190,7 @@ jobs:
       - name: Build app
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
-          pnpm build
+          bun run build
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
       - name: Run visual regression tests and update snapshots
@@ -227,9 +227,9 @@ jobs:
           fetch-depth: 200 # needed for Sentry and release-note commit range collection
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: npx playwright install chromium
+      - run: bunx playwright install chromium
         timeout-minutes: 3
-      - run: pnpm build
+      - run: bun run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -343,9 +343,9 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: npx playwright install chromium
+      - run: bunx playwright install chromium
         timeout-minutes: 3
-      - run: pnpm build
+      - run: bun run build
         shell: bash
       - name: Upload to Cloudflare
         id: deploy-report

@@ -30,17 +30,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: npx playwright install chromium
+      - run: bunx playwright install chromium
         timeout-minutes: 3
       - name: Promote shared songs to unverified songs
         run: |
           HOURS_FROM="${{ github.event.inputs.hours_from }}"
           HOURS_TO="${{ github.event.inputs.hours_to }}"
 
-          pnpm tsx scripts/cicd/promote-shared-songs-to-unverified.ts "$HOURS_FROM" "$HOURS_TO"
+          bunx tsx scripts/cicd/promote-shared-songs-to-unverified.ts "$HOURS_FROM" "$HOURS_TO"
       - name: Regenerate unverified songs index
         run: |
-          pnpm tsx scripts/cicd/regenerate-unverified-songs-index.ts "${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}"
+          bunx tsx scripts/cicd/regenerate-unverified-songs-index.ts "${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}"
       - name: Add unverified songs promotion summary
         if: ${{ always() }}
         uses: actions/github-script@v8
