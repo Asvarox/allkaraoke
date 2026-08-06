@@ -3,14 +3,14 @@
   "configurations": [
     {
       "name": "dev",
-      "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["start"],
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "start"],
       "port": 3000
     },
     {
       "name": "storybook",
-      "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["storybook", "--no-open", "--ci"],
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "storybook", "--no-open", "--ci"],
       "port": 6006
     }
   ]

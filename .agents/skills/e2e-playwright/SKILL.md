@@ -20,19 +20,19 @@ Make sure you run just the tests you need for the job at hand. Running the entir
 ### Run all E2E tests (against dev server)
 
 ```bash
-pnpm e2e
+bun run e2e
 ```
 
 ### Run all E2E tests (against production build)
 
 ```bash
-pnpm e2e:prod
+bun run e2e:prod
 ```
 
 ### Run a single test **file**
 
 ```bash
-pnpm e2e --project=chromium tests/sing-a-song.spec.ts
+bun run e2e --project=chromium tests/sing-a-song.spec.ts
 ```
 
 ### Run a single **named test** within a file
@@ -40,22 +40,22 @@ pnpm e2e --project=chromium tests/sing-a-song.spec.ts
 Use `--grep` with a substring or regex matching the test name:
 
 ```bash
-pnpm e2e --project=chromium --grep "Sing a song" tests/sing-a-song.spec.ts
+bun run e2e --project=chromium --grep "Sing a song" tests/sing-a-song.spec.ts
 ```
 
 Or to match a specific `test.step` description that is part of a test:
 
 ```bash
-pnpm e2e --project=chromium --grep "Check preview of song1" tests/sing-a-song.spec.ts
+bun run e2e --project=chromium --grep "Check preview of song1" tests/sing-a-song.spec.ts
 ```
 
 ### Run headed (visible browser window)
 
 ```bash
-pnpm e2e --project=chromium --headed tests/sing-a-song.spec.ts
+bun run e2e --project=chromium --headed tests/sing-a-song.spec.ts
 ```
 
-> **Note:** The dev server (`pnpm start`) must already be running on `https://localhost:3000` before running `pnpm e2e`. Use `pnpm e2e:prod` to build and test against a production build.
+> **Note:** The dev server (`bun run start`) must already be running on `https://localhost:3000` before running `bun run e2e`. Use `bun run e2e:prod` to build and test against a production build.
 
 ## Test File Anatomy
 

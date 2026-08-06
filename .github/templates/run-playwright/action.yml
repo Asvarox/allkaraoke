@@ -141,7 +141,7 @@ runs:
             fi
           fi
         done
-    - run: npx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
+    - run: bunx playwright test -c ${{ inputs.config }} ${{ inputs.updateSnapshots == 'true' && '-u' || '' }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} ${{ inputs.grep != '' && format('--grep={0}', inputs.grep) || '' }} ${{ inputs.grepInvert != '' && format('--grep-invert={0}', inputs.grepInvert) || '' }}
       shell: bash
       name: 'Run Playwright tests'
     - uses: actions/upload-artifact@v4

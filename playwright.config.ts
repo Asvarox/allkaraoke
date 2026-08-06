@@ -125,7 +125,7 @@ const config: PlaywrightTestConfig = {
         }
       : undefined,
     // {
-    //   command: 'pnpm peerjs',
+    //   command: 'bun run peerjs',
     //   port: 3001,
     //   timeout: 60_000 * 3,
     //   reuseExistingServer: true,

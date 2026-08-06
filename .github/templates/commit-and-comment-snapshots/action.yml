@@ -40,7 +40,7 @@ runs:
       shell: bash
       run: |
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
-        pnpm visual-diff:report
+        bun run visual-diff:report
     - name: Auto commit updated snapshots
       id: auto-commit-action
       uses: stefanzweifel/git-auto-commit-action@v7
@@ -61,7 +61,7 @@ runs:
       shell: bash
       env:
         BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
-      run: pnpm visual-diff:comment
+      run: bun run visual-diff:comment
     # A single comment per job (identified by a hidden marker) is kept: any prior one is
     # deleted and replaced with a fresh comment (not edited in place) so the PR author gets
     # a notification, and removed entirely once the snapshots are back in sync.

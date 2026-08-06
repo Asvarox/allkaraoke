@@ -33,8 +33,8 @@ gh secret list --repo <owner>/<repo>
 Use this form if production deploys the Worker from `wrangler.jsonc`.
 
 ```bash
-pnpm wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN
-pnpm wrangler secret put ADMIN_PANEL_PASSWORD
+bunx wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN
+bunx wrangler secret put ADMIN_PANEL_PASSWORD
 ```
 
 Wrangler prompts for each value interactively. If using Wrangler environments, add `--env <environment>` to each command.
@@ -44,8 +44,8 @@ Wrangler prompts for each value interactively. If using Wrangler environments, a
 Use this form if production deploys as a Cloudflare Pages project.
 
 ```bash
-pnpm wrangler pages secret put UNVERIFIED_SONGS_ADMIN_TOKEN --project-name allkaraoke-party
-pnpm wrangler pages secret put ADMIN_PANEL_PASSWORD --project-name allkaraoke-party
+bunx wrangler pages secret put UNVERIFIED_SONGS_ADMIN_TOKEN --project-name allkaraoke-party
+bunx wrangler pages secret put ADMIN_PANEL_PASSWORD --project-name allkaraoke-party
 ```
 
 The KV binding and key prefix are intentionally not part of this secret migration. Keep `SHARED_SONGS_KV`, `shared-song:<sharedSongId>`, and `shared-songs-index` unless a separate storage migration is planned.
@@ -71,7 +71,7 @@ Do this cleanup only after the migration has been deployed and observed.
 - Promotion workflow `.github/workflows/promote-shared-songs-to-unverified.yml` has run successfully with the new secret names.
 - Import workflow `.github/workflows/import-songs.yml` has run successfully with the new secret names.
 - Logs show no expected traffic to legacy `/shared-song`, `/shared-songs`, `/shared-songs-admin`, `/admin/shared-song`, or `/admin/shared-songs` routes.
-- Local and E2E scripts use `pnpm unverified-song:upsert-fixture` instead of the legacy script alias.
+- Local and E2E scripts use `bun run unverified-song:upsert-fixture` instead of the legacy script alias.
 - Existing KV records either contain `sharedSongId` and `validatedAt`, or the team accepts dropping compatibility for older record shapes.
 
 ## Cleanup checklist
@@ -126,14 +126,14 @@ Do not rename these unless a separate KV storage migration is explicitly approve
 Run the focused checks first:
 
 ```bash
-pnpm test functions/unverified-songs-store.test.ts functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts src/routes/sing-a-song/song-selection/hooks/use-unverified-songs-search.test.ts src/modules/songs/utils/shared-song-import-processing.test.ts
-pnpm type-check
+bun run test functions/unverified-songs-store.test.ts functions/admin/unverified-songs.test.ts functions/admin/unverified-song.test.ts src/routes/sing-a-song/song-selection/hooks/use-unverified-songs-search.test.ts src/modules/songs/utils/shared-song-import-processing.test.ts
+bun run type-check
 ```
 
 Run E2E coverage if route wrappers or admin browser behavior changed:
 
 ```bash
-pnpm playwright test tests/admin-unverified-songs.spec.ts tests/unverified-songs-cloudflare-gameplay.spec.ts tests/unverified-songs-cloudflare-storage-edit.spec.ts
+bunx playwright test tests/admin-unverified-songs.spec.ts tests/unverified-songs-cloudflare-gameplay.spec.ts tests/unverified-songs-cloudflare-storage-edit.spec.ts
 ```
 
 Manual endpoint smoke checks should use only new paths:

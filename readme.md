@@ -5,18 +5,18 @@
 ### Requirements
 
 1. Node (check `.nvmrc` for version)
-2. [pnpm](https://pnpm.io/)
+2. [Bun](https://bun.sh/)
 
 ### Install dependencies
 
 ```
-pnpm install
+bun install
 ```
 
 ### Run
 
 ```
-pnpm start
+bun run start
 ```
 
 #### Run in offline mode
@@ -24,13 +24,13 @@ pnpm start
 Plays dummy local video instead of YouTube to work properly in offline environments (eg. planes).
 
 ```
-pnpm start:mock
+bun run start:mock
 ```
 
 #### Run over HTTPS
 
 ```
-pnpm start:https
+bun run start:https
 ```
 
 The app normally runs on plain `http://localhost:3000`. Browsers treat `localhost` as a secure context, so the Service
@@ -38,7 +38,7 @@ Worker, microphone access and the clipboard all work there without any certifica
 
 HTTPS mode is only needed when you want to open the dev server from **another device** - most notably a phone acting as
 a remote mic. Such a device reaches the app via the LAN IP (eg. `192.168.1.10:3000`), which is _not_ a secure context,
-so `getUserMedia` would be blocked. `pnpm start:https` therefore both enables TLS and exposes the server on the LAN
+so `getUserMedia` would be blocked. `bun run start:https` therefore both enables TLS and exposes the server on the LAN
 (no need for an extra `--host` flag).
 
 It serves a self-signed certificate, so the phone will show a certificate warning that you have to accept. See
@@ -47,7 +47,7 @@ It serves a self-signed certificate, so the phone will show a certificate warnin
 ### Build for production
 
 ```
-pnpm build
+bun run build
 ```
 
 ## Development
@@ -57,9 +57,9 @@ By default, dummy (simulated) microphones are used. You can use whatever other m
 ### Connecting remote mic to dev server
 
 You can just copy the link and open it in a new browser tab or whole new browser - that stays on `localhost` and works
-with the default `pnpm start`.
+with the default `bun run start`.
 
-To connect an actual phone you need [HTTPS mode](#run-over-https) (`pnpm start:https`) and to open the LAN IP link.
+To connect an actual phone you need [HTTPS mode](#run-over-https) (`bun run start:https`) and to open the LAN IP link.
 Over plain HTTP the phone isn't a secure context, so the browser blocks microphone access.
 
 > _Note_ that some songs won't work (YouTube will block the access), probably due to the host being an IP.
@@ -72,32 +72,32 @@ Over plain HTTP the phone isn't a secure context, so the browser blocks micropho
 Running against the dev server if it's running by simply running
 
 ```
-pnpm e2e
+bun run e2e
 ```
 
 You can run specific test and specific browser, headed or with debug like so
 
 ```
-pnpm e2e --project="chromium" --headed --debug tests/song-list.spec.ts
+bun run e2e --project="chromium" --headed --debug tests/song-list.spec.ts
 ```
 
 It's also possible to run the tests against prod build (same as in CI) - it makes the tests run slightly faster:
 
 ```
 cp .dev.vars.example .dev.vars
-pnpm e2e:prod
+bun run e2e:prod
 ```
 
 For that you might want to keep following command running separately to not have the app built every time tests are run:
 
 ```
-pnpm build:serve
+bun run build:serve
 ```
 
 ## Run unit tests
 
 ```
-pnpm test
+bun run test
 ```
 
 ## Misc docs

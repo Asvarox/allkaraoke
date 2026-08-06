@@ -1,15 +1,21 @@
 # See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 
 name: setup-node
-description: 'Setups node to the specific version'
+description: 'Sets up Bun (package manager + task runner) and Node (runtime for vite/vitest/playwright)'
 
 runs:
   using: 'composite'
   steps:
-    - uses: pnpm/action-setup@v6
+    # oven-sh/setup-bun extracts a .zip, but the playwright container images ship
+    # without unzip. No-op on the GitHub-hosted runners, which already have it.
+    - name: Ensure unzip is available
+      shell: bash
+      run: command -v unzip >/dev/null || (apt-get update && apt-get install -y --no-install-recommends unzip)
+    - uses: oven-sh/setup-bun@v2
+      with:
+        bun-version-file: '.bun-version'
     - uses: actions/setup-node@v5
       with:
         node-version-file: '.nvmrc'
-        cache: 'pnpm'
-    - run: pnpm install --frozen-lockfile
+    - run: bun install --frozen-lockfile
       shell: bash

@@ -117,7 +117,7 @@ The project expects this binding in `wrangler.jsonc`:
 Run:
 
 ```bash
-pnpm wrangler kv namespace create SHARED_SONGS_KV
+bunx wrangler kv namespace create SHARED_SONGS_KV
 ```
 
 Copy the returned namespace `id` into `wrangler.jsonc` under `kv_namespaces` as `id`.
@@ -127,7 +127,7 @@ Copy the returned namespace `id` into `wrangler.jsonc` under `kv_namespaces` as 
 Run:
 
 ```bash
-pnpm wrangler kv namespace create SHARED_SONGS_KV --preview
+bunx wrangler kv namespace create SHARED_SONGS_KV --preview
 ```
 
 Copy the returned namespace `id` into `wrangler.jsonc` as `preview_id`.
@@ -137,7 +137,7 @@ Copy the returned namespace `id` into `wrangler.jsonc` as `preview_id`.
 Run:
 
 ```bash
-pnpm wrangler kv namespace list
+bunx wrangler kv namespace list
 ```
 
 Confirm both production and preview namespaces exist and match `wrangler.jsonc`.
@@ -155,13 +155,13 @@ Set it for the deployed CI-oriented admin endpoint (`/unverified-songs-admin`).
 If deployment is managed as a Worker:
 
 ```bash
-pnpm wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN
+bunx wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN
 ```
 
 If deployment is managed as a Pages project:
 
 ```bash
-pnpm wrangler pages secret put UNVERIFIED_SONGS_ADMIN_TOKEN --project-name allkaraoke-party
+bunx wrangler pages secret put UNVERIFIED_SONGS_ADMIN_TOKEN --project-name allkaraoke-party
 ```
 
 Guidelines:
@@ -181,13 +181,13 @@ Set it for the deployed browser admin endpoints under `/admin/*`.
 If deployment is managed as a Worker:
 
 ```bash
-pnpm wrangler secret put ADMIN_PANEL_PASSWORD
+bunx wrangler secret put ADMIN_PANEL_PASSWORD
 ```
 
 If deployment is managed as a Pages project:
 
 ```bash
-pnpm wrangler pages secret put ADMIN_PANEL_PASSWORD --project-name allkaraoke-party
+bunx wrangler pages secret put ADMIN_PANEL_PASSWORD --project-name allkaraoke-party
 ```
 
 Guidelines:
@@ -239,14 +239,14 @@ Where used:
 5. Run local fixture upsert to validate:
 
 ```bash
-pnpm unverified-song:upsert-fixture
+bun run unverified-song:upsert-fixture
 ```
 
 Optional: override the admin base URL directly from CLI (useful when test target differs from local default):
 
 ```bash
-pnpm unverified-song:upsert-fixture http://127.0.0.1:3000
-pnpm unverified-song:upsert-fixture http://localhost:3010
+bun run unverified-song:upsert-fixture http://127.0.0.1:3000
+bun run unverified-song:upsert-fixture http://localhost:3010
 ```
 
 6. Verify APIs manually:

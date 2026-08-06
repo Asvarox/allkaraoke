@@ -10,7 +10,7 @@
 When asked to verify types or check for type errors, run:
 
 ```bash
-pnpm type-check
+bun run type-check
 ```
 
 ### Unused files
@@ -18,7 +18,7 @@ pnpm type-check
 When asked to find or remove unused files, run:
 
 ```bash
-pnpm knip
+bun run knip
 ```
 
 ## Styling

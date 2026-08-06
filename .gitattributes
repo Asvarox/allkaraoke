@@ -113,6 +113,7 @@ TODO              text
 *.lock            text -diff
 package.json      text eol=lf
 package-lock.json text eol=lf -diff
+bun.lock          text eol=lf -diff
 pnpm-lock.yaml    text eol=lf -diff
 .prettierrc       text
 yarn.lock         text -diff
