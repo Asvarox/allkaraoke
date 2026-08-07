@@ -18,6 +18,7 @@ class RemoteMicManager extends Listener<[string, RemoteMicPermission]> {
   private subscriptions: Record<subscriptionChannels, string[]> = {
     'remote-mics': [],
     'keyboard-layout': [],
+    'song-selection': [],
     style: [],
     ...storage.session?.getItem(RememberedSubscriptionsKey),
   };

@@ -21,12 +21,17 @@ export const LANGUAGE_PLAYLIST_PREFIX = 'language-';
 export interface PlaylistEntry {
   name: string;
   display?: ReactNode;
+  /**
+   * Plain-text label for the remote mic's mirrored playlist picker. `display` can't be sent (it's
+   * JSX — logos, tooltips), so an entry whose `name` isn't presentable on its own supplies one.
+   */
+  remoteLabel?: string;
   hideNew?: boolean;
   /** True when this entry opens the language picker sheet rather than directly activating a playlist. */
   isLanguagePicker?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
-  groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong'>;
+  groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong' | 'remoteLabel'>;
   postGrouping?: (groups: SongGroup[]) => SongGroup[];
   sortingFn?: (a: SongPreview, b: SongPreview) => number;
   footerComponent?: ReactNode;
@@ -71,6 +76,7 @@ export const usePlaylists = (
           <strong>★</strong>&nbsp;Selection
         </span>
       ),
+      remoteLabel: '★ Selection',
       filters: {
         specificSongs: recommended,
       },
@@ -114,6 +120,7 @@ export const usePlaylists = (
         ? {
             name: 'remote-mics',
             display: <>From &nbsp;Phones</>,
+            remoteLabel: 'From Phones',
             filters: { specificSongs: remoteSongList, skipExcludedLanguages: true },
             footerComponent: (
               <div data-test="remote-mic-playlist-tip" className="flex justify-center">
@@ -134,6 +141,7 @@ export const usePlaylists = (
         ? ({
             name: `${LANGUAGE_PLAYLIST_PREFIX}${extraLanguage}`,
             display: extraLanguage,
+            remoteLabel: extraLanguage,
             isLanguagePicker: true,
             filters: { language: extraLanguage, skipExcludedLanguages: true },
           } as PlaylistEntry)

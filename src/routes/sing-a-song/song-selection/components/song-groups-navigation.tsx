@@ -1,18 +1,16 @@
-import { MutableRefObject, useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { ScrollableRow } from '~/modules/elements/akui/selector';
-import useDebounce from '~/modules/hooks/use-debounce';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import { getSongIdWithNew } from '~/routes/sing-a-song/song-selection/utils/get-song-id-with-new';
 
-const SCROLL_DEBOUNCE_MS = 200;
-
 interface Props {
   groupedSongList: SongGroup[];
   onScrollToGroup: (group: SongGroup) => void;
-  containerRef: MutableRefObject<HTMLDivElement | null>;
+  /** Indexes of the groups scrolled into view — see `useVisibleSongGroups`, owned by the screen. */
+  visibleGroups: number[];
   keyboardNavRegister?: RegisterFunc;
   focusedSong?: string;
 }
@@ -76,55 +74,11 @@ function GroupNavItem({
 export default function SongGroupsNavigation({
   groupedSongList,
   onScrollToGroup,
-  containerRef,
+  visibleGroups,
   keyboardNavRegister,
   focusedSong,
 }: Props) {
-  const [activeGroups, setActiveGroups] = useState<number[]>([]);
-  const debouncedActiveGroups = useDebounce(activeGroups, SCROLL_DEBOUNCE_MS);
-
-  useEffect(() => {
-    // This is slightly complicated logic needed due to virtualization of the list
-    // Intersection observer is used to detect which group header is currently visible.
-    // Mutation observer catches changes in the list, e.g. if the group header appears or disappears
-    // When it happens it restarts the intersection observer with currently attached groups
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const index = Number(entry.target.getAttribute('data-virtualized-group')!);
-
-        if (entry.isIntersecting) {
-          setActiveGroups((current) => [...current, index]);
-        } else {
-          setActiveGroups((current) => current.filter((group) => group !== index));
-        }
-      });
-    });
-
-    const mutationObserver = new MutationObserver(() => {
-      const element = document.querySelectorAll(`[data-virtualized-group]`);
-      observer.disconnect();
-      setActiveGroups([]);
-
-      element.forEach((el) => {
-        observer.observe(el);
-      });
-    });
-
-    if (containerRef.current) {
-      mutationObserver.observe(containerRef.current, {
-        childList: true,
-        subtree: true,
-      });
-
-      return () => {
-        mutationObserver.disconnect();
-        setActiveGroups([]);
-        observer.disconnect();
-      };
-    }
-  }, [groupedSongList, containerRef]);
-
-  const firstActiveGroup = debouncedActiveGroups.length > 0 ? Math.min(...debouncedActiveGroups) : -1;
+  const firstActiveGroup = visibleGroups.length > 0 ? Math.min(...visibleGroups) : -1;
 
   const focusedSongGroup = useMemo(
     () =>
@@ -139,7 +93,7 @@ export default function SongGroupsNavigation({
   return (
     <ScrollableRow className="items-center">
       {groupedSongList.map((group, index) => {
-        const active = debouncedActiveGroups.includes(index);
+        const active = visibleGroups.includes(index);
         return (
           <GroupNavItem
             key={group.name}
