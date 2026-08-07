@@ -1,6 +1,7 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 import { Toolbar } from '../components/toolbar';
+import { songGroupsState } from './song-groups-state';
 
 export class SongListPagePO {
   constructor(
@@ -13,6 +14,12 @@ export class SongListPagePO {
 
   public async goToGroupNavigation(groupName: string) {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
+  }
+
+  /** Name + both highlight states of every group in the nav row, in row order. Compared against the
+   *  remote mic's mirrored copy — see `songGroupsState` on RemoteMicMainPagePO. */
+  public songGroupsState() {
+    return songGroupsState(this.page);
   }
 
   private async ensureSongIsScrolledTo(songID: string) {

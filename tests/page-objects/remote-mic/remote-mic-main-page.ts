@@ -3,6 +3,7 @@ import { Browser, BrowserContext, Page } from '@playwright/test';
 
 import { RemoteTabBar } from '../../page-objects/remote-mic/remote-components/remote-tab-bar';
 import { RemoteToolbar } from '../../page-objects/remote-mic/remote-components/remote-toolbar';
+import { songGroupsState } from '../song-groups-state';
 import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicMainPagePO {
@@ -153,6 +154,14 @@ export class RemoteMicMainPagePO {
     await this.searchSongInput.fill(songID);
   }
 
+  public get closeSearchSongButton() {
+    return this.page.getByTestId('close-search-song-button');
+  }
+
+  public async closeTheSongSearch() {
+    await this.closeSearchSongButton.click();
+  }
+
   public get playlistPickerTrigger() {
     return this.page.getByTestId('playlist-picker-trigger');
   }
@@ -162,12 +171,22 @@ export class RemoteMicMainPagePO {
     await this.page.getByTestId(`playlist-sheet-${name}`).click();
   }
 
+  public async expectSelectedPlaylistToBe(name: string) {
+    await expect(this.playlistPickerTrigger).toContainText(name, { ignoreCase: true });
+  }
+
   public songGroupButton(groupName: string) {
     return this.page.getByTestId(`group-navigation-${groupName}`);
   }
 
   public async goToSongGroup(groupName: string) {
     await this.songGroupButton(groupName).click();
+  }
+
+  /** Name + both highlight states of every mirrored group, in row order — see `songGroupsState`
+   *  on SongListPagePO for the on-screen side this is compared against. */
+  public songGroupsState() {
+    return songGroupsState(this.page);
   }
 
   public get backArrowKeyboardButton() {
