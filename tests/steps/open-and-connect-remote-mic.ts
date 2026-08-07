@@ -6,13 +6,35 @@ import initialiseRemoteMic from '../page-objects/remote-mic/initialise-remote-mi
 
 export async function connectRemoteMic(remoteMicPage: Page, name?: string, closeMicSelectionMenu = true) {
   const connectButton = remoteMicPage.getByTestId('connect-button');
+  const connectionStatus = remoteMicPage.getByTestId('connection-status');
+
+  const isConnected = async () => /\d+ms/i.test((await connectionStatus.textContent().catch(() => '')) ?? '');
+
+  // The wizard submits a prefilled/auto-typed game code on its own, so on most paths the Connect
+  // button goes straight from disabled to unmounted and is never clickable — only the
+  // `autoconnect=false` flow needs the explicit click. Poll for whichever happens first instead of
+  // blocking on the button: the previous fixed 4s wait was spent in full on every auto-connect,
+  // which ate most of the 5s auto-dismiss window of the "<name> connected" toast that callers
+  // assert on right afterwards.
   try {
-    await expect(connectButton).toBeEnabled({ timeout: 4_000 });
-    await connectButton.click();
+    await expect(async () => {
+      if (await isConnected()) return;
+      if (await connectButton.isEnabled({ timeout: 200 }).catch(() => false)) {
+        await connectButton.click();
+        return;
+      }
+      throw new Error('Neither connected nor able to press Connect yet');
+    }).toPass({ timeout: 14_000, intervals: [100] });
   } catch {
-    // Not on this step, or auto-connect already handled it
+    // Neither happened in time — let the connection-status assertion below report the real failure.
   }
-  const hasStoredName = await remoteMicPage.evaluate(() => localStorage.getItem('remote_mic_name') !== null);
+
+  // Matches `useRemoteMicName`: the name is persisted JSON-encoded, and an empty string counts as
+  // "not named yet" — so the wizard still shows the name step even though the key exists.
+  const hasStoredName = await remoteMicPage.evaluate(() => {
+    const stored = localStorage.getItem('remote_mic_name');
+    return stored !== null && stored !== '' && stored !== '""';
+  });
   if (!hasStoredName) {
     const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
     await nameConfirmButton.waitFor({ state: 'visible', timeout: 20_000 });
@@ -22,7 +44,7 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
     await nameConfirmButton.click();
   }
 
-  await expect(remoteMicPage.getByTestId('connection-status')).toHaveText(/\d+ms/i, { timeout: 14_000 });
+  await expect(connectionStatus).toHaveText(/\d+ms/i, { timeout: 14_000 });
 
   if (closeMicSelectionMenu) {
     const closeButton = remoteMicPage.getByTestId('close-menu');
