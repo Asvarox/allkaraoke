@@ -114,10 +114,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     () =>
       committedControls.length > 0
         ? {
-            // Mirror mode — mutually exclusive with the arrow/accept fields.
+            // Mirror mode swaps the remote's arrow pad for the mirrored controls, but the on-screen
+            // indicator (KeyboardHelpView) still needs [direction]/accept — arrow keys keep working
+            // locally regardless of what the phone renders.
             mode: 'mirror',
             title,
             icon: titleIcon,
+            [direction]: null,
+            accept: currentlySelectedActionLabel ?? null,
             back: onBackspace ? backspaceHelp : undefined,
             controls: committedControls,
             ...additionalHelp,
