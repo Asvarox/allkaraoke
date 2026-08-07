@@ -179,9 +179,12 @@ export class SongPreviewPagePO {
     return this.page.getByTestId(`indicator-player-${playerNumber}`).getByTestId('status-unavailable');
   }
 
-  public async expectConnectedAlertToBeShownForPlayer(playerName: string) {
+  // The toast auto-dismisses after 5s, so callers that can't assert the moment it appears start this
+  // before triggering the (re)connection — `timeout` then has to cover the connection itself too.
+  public async expectConnectedAlertToBeShownForPlayer(playerName: string, timeout?: number) {
     await expect(this.page.locator('.Toastify')).toContainText(`${playerName} connected`, {
       ignoreCase: true,
+      timeout,
     });
   }
 
