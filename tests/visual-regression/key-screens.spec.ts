@@ -73,9 +73,13 @@ visual(
 
     const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
     // The connection wizard auto-enters real browser fullscreen, which blocks resizing the viewport
-    // (Chromium refuses `setWindowBounds` while fullscreen) - back out of it first.
+    // (Chromium refuses `setWindowBounds` while fullscreen) - back out of it first. The browser window
+    // leaves fullscreen slightly after the document does, so retry the resize until the window follows.
     await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
-    await remoteMic._page.setViewportSize(viewport);
+    await remoteMic._page.waitForFunction(() => document.fullscreenElement === null);
+    await expect(async () => {
+      await remoteMic._page.setViewportSize(viewport);
+    }).toPass({ timeout: 10_000 });
 
     // Both the live ping counter (top bar) and the mic volume/frequency preview redraw from the fake
     // audio input every frame, so mask them on every remote capture to keep the screenshots stable.
