@@ -55,7 +55,7 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
@@ -135,7 +135,7 @@ jobs:
 
   ct-tests-run:
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
@@ -171,7 +171,7 @@ jobs:
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.61.0-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
