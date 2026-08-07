@@ -29,7 +29,7 @@ export default function KeyboardHelpView({ help }: Props) {
   // the app root, so an unrecognised key reaching the lookup below would throw and take the whole UI
   // down with it. Skipping unknown keys keeps that failure mode impossible.
   const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
-  const hasHelp = Object.keys(help ?? {}).length > 0;
+  const hasHelp = Object.values(help ?? {}).some((value) => value !== undefined);
 
   if (mobilePhoneMode) {
     return null;
