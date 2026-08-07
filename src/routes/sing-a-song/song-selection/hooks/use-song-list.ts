@@ -11,6 +11,11 @@ export interface SongGroup {
   name: string;
   displayShort?: ReactNode;
   displayLong?: ReactNode;
+  /**
+   * Plain-text label for the remote mic's mirrored group row. `displayShort` can't be sent (it's
+   * JSX — e.g. a country flag), so a group whose `name` isn't presentable on its own supplies one.
+   */
+  remoteLabel?: string;
   songs: Array<{ index: number; song: SongPreview; isPopular: boolean }>;
   isNew?: boolean;
 }

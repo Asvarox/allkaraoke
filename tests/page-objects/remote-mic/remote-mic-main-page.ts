@@ -138,8 +138,36 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('search-song-input');
   }
 
+  // Search mirrors the song selection screen's mobile layout: an icon button that expands into the
+  // input, so it has to be opened before anything can be typed.
+  public get searchSongButton() {
+    return this.page.getByTestId('search-song-button');
+  }
+
   public async searchTheSong(songID: string) {
+    // Probe for the already-open input rather than for the button: `click()` auto-waits, so a
+    // negative probe still tolerates the panel being mid-swap into the song-selection keyboard.
+    if (!(await this.searchSongInput.isVisible())) {
+      await this.searchSongButton.click();
+    }
     await this.searchSongInput.fill(songID);
+  }
+
+  public get playlistPickerTrigger() {
+    return this.page.getByTestId('playlist-picker-trigger');
+  }
+
+  public async selectPlaylist(name: string) {
+    await this.playlistPickerTrigger.click();
+    await this.page.getByTestId(`playlist-sheet-${name}`).click();
+  }
+
+  public songGroupButton(groupName: string) {
+    return this.page.getByTestId(`group-navigation-${groupName}`);
+  }
+
+  public async goToSongGroup(groupName: string) {
+    await this.songGroupButton(groupName).click();
   }
 
   public get backArrowKeyboardButton() {

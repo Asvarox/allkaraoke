@@ -111,6 +111,11 @@ export const events = {
   // useKeyboardNav register() name and `value` is the new text the host should apply.
   remoteControlValueChanged: new GameEvent<(name: string, value: string) => void>('remoteControlValueChanged'),
   remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch'),
+  // A playlist was picked on the remote mic's mirrored song-selection toolbar; `name` matches a
+  // PlaylistEntry name.
+  remotePlaylistSelected: new GameEvent<(name: string) => void>('remotePlaylistSelected'),
+  // A song group was tapped on the remote mic's mirrored group nav row; `name` matches a SongGroup name.
+  remoteSongGroupSelected: new GameEvent<(name: string) => void>('remoteSongGroupSelected'),
   remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
   remoteMicSongListUpdated: new GameEvent<(id: string, delta: { added?: string[]; deleted?: string[] }) => void>(
     'remoteMicSongListUpdate',

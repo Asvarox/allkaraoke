@@ -61,6 +61,7 @@ const SFlag = ({ isocode }: { isocode: string }) => (
 // eslint-disable-next-line react-refresh/only-export-components
 export const eurovisionPlaylist: PlaylistEntry = {
   name: 'Eurovision',
+  remoteLabel: 'Eurovision',
   display: (
     <EurovisionDisplay>
       Euro
@@ -82,6 +83,8 @@ export const eurovisionPlaylist: PlaylistEntry = {
         'Other'
       ),
       displayShort: flag,
+      // The phone can't draw the flag `displayShort` is, so it gets the country name instead.
+      remoteLabel: (song.artistOrigin ? isoCodeToCountry(song.artistOrigin) : null) ?? 'Other',
     };
   },
   sortingFn: (a, b) => {
