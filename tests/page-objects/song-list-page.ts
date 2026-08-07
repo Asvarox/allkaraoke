@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
+import { SongGroupsNavigation } from '../components/song-groups-navigation';
 import { Toolbar } from '../components/toolbar';
 
 export class SongListPagePO {
@@ -10,9 +11,10 @@ export class SongListPagePO {
   ) {}
 
   toolbar = new Toolbar(this.page, this.context, this.browser);
+  songGroups = new SongGroupsNavigation(this.page, this.context, this.browser);
 
   public async goToGroupNavigation(groupName: string) {
-    await this.page.getByTestId(`group-navigation-${groupName}`).click();
+    await this.songGroups.goToGroup(groupName);
   }
 
   private async ensureSongIsScrolledTo(songID: string) {
@@ -113,6 +115,19 @@ export class SongListPagePO {
 
   public get songListContainer() {
     return this.page.locator('[data-test="song-list-container"]');
+  }
+
+  /**
+   * Scrolls the list back to the top by wheeling over it, which — unlike the group nav row — moves
+   * the list without moving the selection. A wheel rather than a `scrollTo`: the element that
+   * actually scrolls is an inner node of the virtualization, not `song-list-container` itself.
+   */
+  public async scrollSongListToTop() {
+    const listBox = await this.songListContainer.boundingBox();
+    if (!listBox) throw new Error('Song list is not visible');
+
+    await this.page.mouse.move(listBox.x + listBox.width / 2, listBox.y + listBox.height / 2);
+    await this.page.mouse.wheel(0, -20_000);
   }
 
   public get songPreviewElement() {
