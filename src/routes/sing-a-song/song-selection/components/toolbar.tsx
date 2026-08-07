@@ -70,7 +70,7 @@ export default function Toolbar({
             leftIcon={<Icon icon="ic:baseline-casino" />}
             fullWidth={false}
             onClick={onRandom}>
-            {!mobile && 'Random'}
+            {!mobile ? 'Random' : undefined}
           </Button>
 
           <div className="h-6 w-px shrink-0 bg-white/20" aria-hidden="true" />

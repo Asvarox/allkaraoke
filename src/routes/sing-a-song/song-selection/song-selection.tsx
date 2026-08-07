@@ -243,6 +243,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               containerRef={container}
               groupedSongList={loading ? [] : groupedSongList}
               keyboardNavRegister={row2Register}
+              focusedSong={focusedSong}
               onScrollToGroup={(group) => {
                 if (group.songs.length === 0) return;
 

@@ -1,10 +1,11 @@
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
+import { MutableRefObject, useEffect, useMemo, useRef, useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { ScrollableRow } from '~/modules/elements/akui/selector';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
+import { getSongIdWithNew } from '~/routes/sing-a-song/song-selection/utils/get-song-id-with-new';
 
 const SCROLL_DEBOUNCE_MS = 200;
 
@@ -13,12 +14,14 @@ interface Props {
   onScrollToGroup: (group: SongGroup) => void;
   containerRef: MutableRefObject<HTMLDivElement | null>;
   keyboardNavRegister?: RegisterFunc;
+  focusedSong?: string;
 }
 
 interface GroupNavItemProps {
   group: SongGroup;
   isFirstActive: boolean;
   active: boolean;
+  containsFocusedSong: boolean;
   onScrollToGroup: (group: SongGroup) => void;
   'data-test': string;
   keyboardNavRegister?: RegisterFunc;
@@ -31,6 +34,7 @@ function GroupNavItem({
   group,
   isFirstActive,
   active,
+  containsFocusedSong,
   onScrollToGroup,
   'data-test': dataTest,
   keyboardNavRegister,
@@ -44,6 +48,12 @@ function GroupNavItem({
     }
   }, [isFirstActive]);
 
+  const keyboardFocused = keyboardNavProps?.focused ?? false;
+  // The group holding the focused song gets a dimmer highlight, but only as a fallback: once the
+  // list is scrolled onto that group (active) or the nav row itself is being keyboard-navigated,
+  // the regular full highlight wins.
+  const subtleFocused = containsFocusedSong && !active && !keyboardFocused;
+
   return (
     <Button
       ref={ref}
@@ -52,7 +62,8 @@ function GroupNavItem({
       {...keyboardNavProps}
       // focused must come after the spread so the active-group highlight isn't
       // overwritten by keyboardNavProps.focused (which is false when not keyboard-navigating)
-      focused={active || (keyboardNavProps?.focused ?? false)}
+      focused={active || keyboardFocused || subtleFocused}
+      subtleFocused={subtleFocused}
       // Override register-provided values that should not change
       data-active={active}
       data-test={dataTest}
@@ -67,6 +78,7 @@ export default function SongGroupsNavigation({
   onScrollToGroup,
   containerRef,
   keyboardNavRegister,
+  focusedSong,
 }: Props) {
   const [activeGroups, setActiveGroups] = useState<number[]>([]);
   const debouncedActiveGroups = useDebounce(activeGroups, SCROLL_DEBOUNCE_MS);
@@ -114,6 +126,16 @@ export default function SongGroupsNavigation({
 
   const firstActiveGroup = debouncedActiveGroups.length > 0 ? Math.min(...debouncedActiveGroups) : -1;
 
+  const focusedSongGroup = useMemo(
+    () =>
+      focusedSong
+        ? groupedSongList.findIndex((group) =>
+            group.songs.some((song) => getSongIdWithNew(song, group) === focusedSong),
+          )
+        : -1,
+    [groupedSongList, focusedSong],
+  );
+
   return (
     <ScrollableRow className="items-center">
       {groupedSongList.map((group, index) => {
@@ -123,6 +145,7 @@ export default function SongGroupsNavigation({
             key={group.name}
             group={group}
             active={active}
+            containsFocusedSong={index === focusedSongGroup}
             isFirstActive={index === firstActiveGroup}
             onScrollToGroup={onScrollToGroup}
             keyboardNavRegister={keyboardNavRegister}
