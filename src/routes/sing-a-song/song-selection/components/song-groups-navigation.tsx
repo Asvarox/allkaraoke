@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { Button } from '~/modules/elements/akui/button';
 import { ScrollableRow } from '~/modules/elements/akui/selector';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+import scrollIntoView from '~/modules/utils/scroll-into-view';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import { getSongIdWithNew } from '~/routes/sing-a-song/song-selection/utils/get-song-id-with-new';
 
@@ -42,7 +43,7 @@ function GroupNavItem({
 
   useEffect(() => {
     if (isFirstActive && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      scrollIntoView(ref.current, { inline: 'center', block: 'nearest' });
     }
   }, [isFirstActive]);
 

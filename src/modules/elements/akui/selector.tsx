@@ -14,6 +14,7 @@ import {
 import { twMerge } from 'tailwind-merge';
 
 import { Button } from '~/modules/elements/akui/button';
+import scrollIntoView from '~/modules/utils/scroll-into-view';
 
 // ---------------------------------------------------------------------------
 // Context
@@ -178,7 +179,7 @@ function SelectorItem({ value, children, className, ...props }: SelectorItemProp
 
   useEffect(() => {
     if (isActive && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      scrollIntoView(ref.current, { inline: 'center', block: 'nearest' });
     }
   }, [isActive]);
 
