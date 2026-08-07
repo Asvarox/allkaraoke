@@ -62,44 +62,47 @@ function RemoteMic() {
   return (
     <>
       <ConfirmReadiness onConfirm={onConfirm} />
-      <div id="phone-ui-container" className="mx-auto flex h-dvh w-full max-w-[45rem] flex-col">
+      <div id="phone-ui-container" className="mx-auto flex h-dvh w-full max-w-[45rem] flex-col landscape:max-w-none">
         <TopBar connectionStatus={connectionStatus} roomId={roomId} />
-        <div className="flex flex-1 flex-col justify-center overflow-hidden">
-          {activeTab === 'microphone' && (
-            <Microphone
-              roomId={roomId}
-              monitoringStarted={monitoringStarted}
-              setMonitoringStarted={setMonitoringStarted}
-              connectionStatus={connectionStatus}
-              setIsKeepAwakeOn={setIsKeepAwakeOn}
-              isKeepAwakeOn={isKeepAwakeOn}
-              connectionError={connectionError}
-            />
-          )}
-          {activeTab === 'song-list' && (
-            <RemoteSongList
-              roomId={roomId}
-              monitoringStarted={monitoringStarted}
-              setMonitoringStarted={setMonitoringStarted}
-              connectionStatus={connectionStatus}
-              setIsKeepAwakeOn={setIsKeepAwakeOn}
-              isKeepAwakeOn={isKeepAwakeOn}
-              connectionError={connectionError}
-            />
-          )}
-          {activeTab === 'settings' && (
-            <RemoteSettings
-              roomId={roomId}
-              monitoringStarted={monitoringStarted}
-              setMonitoringStarted={setMonitoringStarted}
-              connectionStatus={connectionStatus}
-              setIsKeepAwakeOn={setIsKeepAwakeOn}
-              isKeepAwakeOn={isKeepAwakeOn}
-              connectionError={connectionError}
-            />
-          )}
+        {/* Landscape: the tab bar becomes a vertical rail on the left of the panel (top bar stays full width) */}
+        <div className="flex min-h-0 flex-1 flex-col landscape:flex-row">
+          <BottomBar setActiveTab={setActiveTab} active={activeTab} className="order-2 landscape:order-1" />
+          <div className="order-1 flex min-h-0 min-w-0 flex-1 flex-col justify-center overflow-hidden landscape:order-2">
+            {activeTab === 'microphone' && (
+              <Microphone
+                roomId={roomId}
+                monitoringStarted={monitoringStarted}
+                setMonitoringStarted={setMonitoringStarted}
+                connectionStatus={connectionStatus}
+                setIsKeepAwakeOn={setIsKeepAwakeOn}
+                isKeepAwakeOn={isKeepAwakeOn}
+                connectionError={connectionError}
+              />
+            )}
+            {activeTab === 'song-list' && (
+              <RemoteSongList
+                roomId={roomId}
+                monitoringStarted={monitoringStarted}
+                setMonitoringStarted={setMonitoringStarted}
+                connectionStatus={connectionStatus}
+                setIsKeepAwakeOn={setIsKeepAwakeOn}
+                isKeepAwakeOn={isKeepAwakeOn}
+                connectionError={connectionError}
+              />
+            )}
+            {activeTab === 'settings' && (
+              <RemoteSettings
+                roomId={roomId}
+                monitoringStarted={monitoringStarted}
+                setMonitoringStarted={setMonitoringStarted}
+                connectionStatus={connectionStatus}
+                setIsKeepAwakeOn={setIsKeepAwakeOn}
+                isKeepAwakeOn={isKeepAwakeOn}
+                connectionError={connectionError}
+              />
+            )}
+          </div>
         </div>
-        <BottomBar setActiveTab={setActiveTab} active={activeTab} />
       </div>
     </>
   );
