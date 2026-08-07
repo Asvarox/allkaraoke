@@ -4,6 +4,7 @@ import { Button } from '~/modules/elements/akui/button';
 import { ScrollableRow } from '~/modules/elements/akui/selector';
 import { serverRpc } from '~/modules/remote-mic/network/client';
 import { RemoteSongGroupEntry } from '~/modules/remote-mic/network/client/subscriptions';
+import scrollIntoView from '~/modules/utils/scroll-into-view';
 import vibrate from '~/modules/utils/vibrate';
 
 interface Props {
@@ -38,7 +39,7 @@ function GroupItem({ group, isFirstVisible }: { group: RemoteSongGroupEntry; isF
 
   useEffect(() => {
     if (isFirstVisible && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      scrollIntoView(ref.current, { inline: 'center', block: 'nearest' });
     }
   }, [isFirstVisible]);
 

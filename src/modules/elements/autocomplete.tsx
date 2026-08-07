@@ -12,6 +12,7 @@ import { twc, TwcComponentProps } from 'react-twc';
 
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
+import scrollIntoView from '~/modules/utils/scroll-into-view';
 
 interface Props extends ComponentProps<typeof Input> {
   label: ReactNode;
@@ -62,7 +63,7 @@ export const Autocomplete = ({
 
         const option = autocompleteMenu.current?.querySelector(`[data-index="${newIndex}"]`) as HTMLDivElement;
 
-        option?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollIntoView(option, { block: 'center' });
       } else {
         inputRef.current?.element?.blur();
         $keyboardNavigationChangeFocus?.(e.code === 'ArrowUp' ? -1 : 1);

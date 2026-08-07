@@ -64,6 +64,12 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
 
         const makeScreenshot: MakeScreenshot = async (name, { page: targetPage = page, extraMasks = [] } = {}) => {
           const fileName = name ? `${slug}-${name}-${viewportName}.png` : `${slug}-${viewportName}.png`;
+
+          // Fixed-position elements (e.g. the top-right toolbar) are pinned at whatever scroll offset
+          // is active when Playwright starts stitching a fullPage screenshot, so they render shifted
+          // down if the page was left scrolled. Reset scroll first so they always land at the top.
+          await targetPage.evaluate(() => window.scrollTo(0, 0));
+
           await expect(targetPage).toHaveScreenshot(fileName, {
             fullPage: true,
             mask: [
