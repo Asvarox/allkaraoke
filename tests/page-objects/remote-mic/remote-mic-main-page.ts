@@ -1,9 +1,9 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
+import { SongGroupsNavigation } from '../../components/song-groups-navigation';
 import { RemoteTabBar } from '../../page-objects/remote-mic/remote-components/remote-tab-bar';
 import { RemoteToolbar } from '../../page-objects/remote-mic/remote-components/remote-toolbar';
-import { songGroupsState } from '../song-groups-state';
 import { micColorToNumberMap, micColorType } from './consts';
 
 export class RemoteMicMainPagePO {
@@ -15,6 +15,9 @@ export class RemoteMicMainPagePO {
 
   remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
   remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
+  // The song groups row the phone mirrors from the song selection screen — same component as the
+  // screen's own row, so both sides can be asserted the same way.
+  songGroups = new SongGroupsNavigation(this.page, this.context, this.browser);
 
   // Name entry now lives in the top bar (always available, regardless of connection state) rather
   // than as a wizard step — see RenameModal.
@@ -173,20 +176,6 @@ export class RemoteMicMainPagePO {
 
   public async expectSelectedPlaylistToBe(name: string) {
     await expect(this.playlistPickerTrigger).toContainText(name, { ignoreCase: true });
-  }
-
-  public songGroupButton(groupName: string) {
-    return this.page.getByTestId(`group-navigation-${groupName}`);
-  }
-
-  public async goToSongGroup(groupName: string) {
-    await this.songGroupButton(groupName).click();
-  }
-
-  /** Name + both highlight states of every mirrored group, in row order — see `songGroupsState`
-   *  on SongListPagePO for the on-screen side this is compared against. */
-  public songGroupsState() {
-    return songGroupsState(this.page);
   }
 
   public get backArrowKeyboardButton() {

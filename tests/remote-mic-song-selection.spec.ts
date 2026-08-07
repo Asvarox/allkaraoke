@@ -20,10 +20,6 @@ const player = { name: 'E2E Test Blue' } as const;
 // into exactly these buckets — see tests/fixtures/songs.
 const ALL_PLAYLIST_GROUPS = ['0-9', 'C', 'P', 'T', 'Z'];
 
-// The screen debounces which group headers count as "in view" before it publishes them, so give the
-// host that long to settle before capturing the state the remote is expected to match.
-const GROUP_VISIBILITY_DEBOUNCE_MS = 400;
-
 // How long the screen ignores Backspace after a search is cleared, plus a margin.
 const SEARCH_BACK_BLOCK_MS = 2_500;
 
@@ -74,47 +70,45 @@ test('Remote mic mirrors and drives the song selection playlists and groups', as
     await remoteMic.remoteMicMainPage.expectSelectedPlaylistToBe('All');
   });
 
-  await test.step('The group row mirrors the screen, highlights and all', async () => {
-    await expect
-      .poll(() => remoteMic.remoteMicMainPage.songGroupsState().then((groups) => groups.map(({ name }) => name)))
-      .toEqual(ALL_PLAYLIST_GROUPS);
-
-    await page.waitForTimeout(GROUP_VISIBILITY_DEBOUNCE_MS);
-    const hostGroups = await pages.songListPage.songGroupsState();
-    // Both highlight states have to agree: which group is scrolled into view, and which one holds
-    // the selected song. Comparing against the screen rather than against hardcoded values keeps
-    // this honest whichever song the screen happened to preselect.
-    await expect.poll(() => remoteMic.remoteMicMainPage.songGroupsState()).toEqual(hostGroups);
-    expect(hostGroups.some((group) => group.subtle || group.visible)).toBe(true);
+  await test.step('The phone offers the same groups as the screen', async () => {
+    await pages.songListPage.songGroups.expectGroupsToBe(ALL_PLAYLIST_GROUPS);
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupsToBe(ALL_PLAYLIST_GROUPS);
   });
 
   await test.step('Tapping a group on the phone scrolls the host list to it', async () => {
-    await remoteMic.remoteMicMainPage.goToSongGroup('Z');
+    await remoteMic.remoteMicMainPage.songGroups.goToGroup('Z');
 
     await pages.songListPage.expectGroupToBeInViewport('Z');
     await pages.songListPage.expectSelectedSongToBe('zzz-last-polish-1994');
-    await expect(remoteMic.remoteMicMainPage.songGroupButton('Z')).toHaveAttribute('data-active', 'true');
 
-    await page.waitForTimeout(GROUP_VISIBILITY_DEBOUNCE_MS);
-    const hostGroups = await pages.songListPage.songGroupsState();
-    await expect.poll(() => remoteMic.remoteMicMainPage.songGroupsState()).toEqual(hostGroups);
+    await pages.songListPage.songGroups.expectGroupToBeVisibleInTheSongList('Z');
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupToBeVisibleInTheSongList('Z');
+  });
+
+  await test.step('The group holding the selected song stays marked once the list scrolls off it', async () => {
+    // Scroll without touching the selection, so the selected song's group ('Z') leaves the viewport
+    // and falls back to the subtler "holds the selection" mark instead of the in-view one.
+    await pages.songListPage.scrollSongListToTop();
+
+    await pages.songListPage.songGroups.expectGroupToBeVisibleInTheSongList('0-9');
+    await pages.songListPage.songGroups.expectGroupToHoldTheSelectedSong('Z');
+
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupToBeVisibleInTheSongList('0-9');
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupToHoldTheSelectedSong('Z');
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupNotToHoldTheSelectedSong('0-9');
   });
 
   await test.step('The collapsed search still filters the host list, and closing it clears the filter', async () => {
     await remoteMic.remoteMicMainPage.searchTheSong('Skip Intro song');
 
     await expect(await pages.songListPage.getSongElement('e2e-skip-intro-polish')).toBeVisible();
-    // A search replaces the letter groups with a single results group on the screen — and so on the phone.
-    await expect
-      .poll(() => remoteMic.remoteMicMainPage.songGroupsState().then((groups) => groups.map(({ name }) => name)))
-      .toContain('Search results');
+    // A search replaces the letter groups with a results group on the screen — and so on the phone.
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupToBeOffered('Search results');
 
     await remoteMic.remoteMicMainPage.closeTheSongSearch();
 
     await expect(remoteMic.remoteMicMainPage.searchSongButton).toBeVisible();
-    await expect
-      .poll(() => remoteMic.remoteMicMainPage.songGroupsState().then((groups) => groups.map(({ name }) => name)))
-      .toEqual(ALL_PLAYLIST_GROUPS);
+    await remoteMic.remoteMicMainPage.songGroups.expectGroupsToBe(ALL_PLAYLIST_GROUPS);
   });
 
   await test.step('The mirror is cleared when the host leaves song selection', async () => {
