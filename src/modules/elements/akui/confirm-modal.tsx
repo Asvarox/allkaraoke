@@ -29,7 +29,10 @@ export default function ConfirmModal({
   confirmButtonProps,
 }: ConfirmModalProps) {
   return (
-    <Modal onClose={onClose} open={open} withPortal>
+    // A confirmation is always the thing on top: it's routinely opened from inside another modal (the
+    // online pause menu ends the game this way), and at the base layer that modal's content would
+    // cover this one's backdrop.
+    <Modal onClose={onClose} open={open} withPortal level="nested">
       {open && (
         <Menu spacing="tight" data-test={dataTestPrefix ? `${dataTestPrefix}-modal` : undefined}>
           <Menu.Header>{title}</Menu.Header>

@@ -31,15 +31,18 @@ export const VolumeIndicator = forwardRef(
     const color = usePlayerColor(playerNumber);
 
     return (
-      <VolumeIndicatorBase
-        // color={color}
-        {...rest}
-        style={{
-          transform: `scaleX(${percent})`,
-          background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
-        }}
-        ref={ref}
-      />
+      // Same two-element shape as PlayerMicCheck below, and for the same reason: the scale has to sit
+      // on an inner element. Scaling the rounded, clipping box itself squashes its corner radius along
+      // with it, and the bar then bleeds past the corners of the row it's sitting in.
+      <VolumeIndicatorBase {...rest} ref={ref}>
+        <div
+          className="h-full w-full origin-right"
+          style={{
+            transform: `scaleX(${percent})`,
+            background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+          }}
+        />
+      </VolumeIndicatorBase>
     );
   },
 );

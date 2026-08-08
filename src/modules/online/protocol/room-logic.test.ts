@@ -1,15 +1,16 @@
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
+
 import { compressChart, prepareChartTransfer, unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
-  ONLINE_COUNTDOWN_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
   ONLINE_MAX_PLAYERS,
-  ONLINE_PROBE_TIMEOUT_MS,
+  ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_RESUME_COUNTDOWN_MS,
   ONLINE_ROOM_TTL_MS,
+  ONLINE_START_LEAD_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { RpcContext } from '~/modules/remote-mic/network/rpc/types';
@@ -59,21 +60,20 @@ const uploadChart = async (room: Room, hostId = 'p1') => {
   await room.handlers.selection.setChart.handler(ctx(hostId), manifest, chartData, 2);
 };
 
-const readyAndProbeAll = async (room: Room, ids: string[]) => {
+const confirmAll = async (room: Room, ids: string[]) => {
   for (const id of ids) {
     await room.handlers.room.setReady.handler(ctx(id), true);
   }
-  for (const id of ids) {
-    await room.handlers.room.reportProbe.handler(ctx(id), true);
-  }
 };
 
-const startSinging = async (room: Room, ids: string[]) => {
-  await uploadChart(room);
-  await readyAndProbeAll(room, ids);
-  expect(room.logic.getState().phase).toBe('countdown');
-  vi.advanceTimersByTime(ONLINE_COUNTDOWN_MS);
+const startSinging = async (room: Room, ids: string[], hostId = 'p1') => {
+  await uploadChart(room, hostId);
+  await room.handlers.room.startGame.handler(ctx(hostId));
+  expect(room.logic.getState().phase).toBe('readiness');
+  await confirmAll(room, ids);
   expect(room.logic.getState().phase).toBe('singing');
+  // The anchor is set a beat ahead of the start so every client hits play at the same instant
+  vi.advanceTimersByTime(ONLINE_START_LEAD_MS);
 };
 
 beforeEach(() => {
@@ -222,92 +222,93 @@ describe('song selection / chart transfer', () => {
 
     expect(() => room.handlers.selection.setPreview.handler(ctx('p2'), preview)).toThrow('Only the host');
   });
-
-  it('resets readiness when the host selects a new song', async () => {
-    const room = createRoom();
-    join(room, ['p1', 'p2']);
-    await uploadChart(room);
-    await room.handlers.room.setReady.handler(ctx('p2'), true);
-    expect(room.logic.getState().participants.find((participant) => participant.id === 'p2')?.ready).toBe(true);
-
-    await uploadChart(room); // select again
-    const state = room.logic.getState();
-    expect(state.participants.every((participant) => !participant.ready)).toBe(true);
-    expect(state.participants.every((participant) => participant.probe === 'unknown')).toBe(true);
-  });
 });
 
-describe('readiness, probing and countdown', () => {
-  it('starts probing once everyone is ready and counts down once everyone is playable', async () => {
+describe('starting a song and readiness', () => {
+  it('lets the host start on their own and holds playback until everyone confirms', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await uploadChart(room);
 
+    await room.handlers.room.startGame.handler(ctx('p1'));
+    const waiting = room.logic.getState();
+    expect(waiting.phase).toBe('readiness');
+    expect(waiting.readinessDeadline).toBe(Date.now() + ONLINE_READINESS_TIMEOUT_MS);
+    expect(waiting.playbackAnchor).toBeNull();
+    expect(waiting.participants.every((participant) => !participant.ready)).toBe(true);
+
     await room.handlers.room.setReady.handler(ctx('p1'), true);
-    expect(room.logic.getState().probeDeadline).toBeNull();
+    expect(room.logic.getState().phase).toBe('readiness');
 
     await room.handlers.room.setReady.handler(ctx('p2'), true);
-    const probing = room.logic.getState();
-    expect(probing.probeDeadline).not.toBeNull();
-    expect(probing.participants.every((participant) => participant.probe === 'pending')).toBe(true);
-
-    await room.handlers.room.reportProbe.handler(ctx('p1'), true);
-    expect(room.logic.getState().phase).toBe('lobby');
-
-    await room.handlers.room.reportProbe.handler(ctx('p2'), true);
-    const state = room.logic.getState();
-    expect(state.phase).toBe('countdown');
-    expect(state.countdownEndsAt).toBe(Date.now() + ONLINE_COUNTDOWN_MS);
-
-    vi.advanceTimersByTime(ONLINE_COUNTDOWN_MS);
     const singing = room.logic.getState();
     expect(singing.phase).toBe('singing');
-    expect(singing.playbackAnchor).toEqual({ serverTimeMs: Date.now(), videoTimeMs: 0 });
+    expect(singing.readinessDeadline).toBeNull();
+    expect(singing.playbackAnchor).toEqual({ serverTimeMs: Date.now() + ONLINE_START_LEAD_MS, videoTimeMs: 0 });
   });
 
-  it('does not start when a singer fails the probe, and surfaces it in the lobby', async () => {
+  it('only lets the host start, and only with a song selected', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    expect(() => room.handlers.room.startGame.handler(ctx('p1'))).toThrow('No song selected');
+
+    await uploadChart(room);
+    expect(() => room.handlers.room.startGame.handler(ctx('p2'))).toThrow('Only the host');
+  });
+
+  it('starts the song anyway when the autostart deadline passes', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await uploadChart(room);
+    await room.handlers.room.startGame.handler(ctx('p1'));
     await room.handlers.room.setReady.handler(ctx('p1'), true);
-    await room.handlers.room.setReady.handler(ctx('p2'), true);
-    await room.handlers.room.reportProbe.handler(ctx('p1'), true);
-    await room.handlers.room.reportProbe.handler(ctx('p2'), false);
 
+    vi.advanceTimersByTime(ONLINE_READINESS_TIMEOUT_MS);
     const state = room.logic.getState();
-    expect(state.phase).toBe('lobby');
-    const failed = state.participants.find((participant) => participant.id === 'p2');
-    expect(failed?.probe).toBe('failed');
-    expect(failed?.ready).toBe(false);
+    expect(state.phase).toBe('singing');
+    // p2 never confirmed — the song rolls for everyone regardless
+    expect(state.participants.find((participant) => participant.id === 'p2')?.ready).toBe(false);
   });
 
-  it('fails singers that never respond to the probe within the timeout', async () => {
+  it('starts once the last singer still being waited for drops out', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await uploadChart(room);
+    await room.handlers.room.startGame.handler(ctx('p1'));
     await room.handlers.room.setReady.handler(ctx('p1'), true);
-    await room.handlers.room.setReady.handler(ctx('p2'), true);
-    await room.handlers.room.reportProbe.handler(ctx('p1'), true);
 
-    vi.advanceTimersByTime(ONLINE_PROBE_TIMEOUT_MS);
-    const state = room.logic.getState();
-    expect(state.phase).toBe('lobby');
-    expect(state.probeDeadline).toBeNull();
-    expect(state.participants.find((participant) => participant.id === 'p2')?.probe).toBe('failed');
+    room.logic.handleDisconnect('p2');
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
+    expect(room.logic.getState().phase).toBe('singing');
   });
 
-  it('requires re-confirmation when a new singer joins during probing', async () => {
+  it('lets the host call the start off and go back to the lobby', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await uploadChart(room);
-    await room.handlers.room.setReady.handler(ctx('p1'), true);
+    await room.handlers.room.startGame.handler(ctx('p1'));
     await room.handlers.room.setReady.handler(ctx('p2'), true);
-    expect(room.logic.getState().probeDeadline).not.toBeNull();
 
-    join(room, ['p3']);
+    expect(() => room.handlers.room.cancelStart.handler(ctx('p2'))).toThrow('Only the host');
+    await room.handlers.room.cancelStart.handler(ctx('p1'));
+
     const state = room.logic.getState();
-    expect(state.probeDeadline).toBeNull();
     expect(state.phase).toBe('lobby');
+    expect(state.readinessDeadline).toBeNull();
+    expect(state.participants.every((participant) => !participant.ready)).toBe(true);
+    // The song stays selected — calling the start off isn't picking a different one
+    expect(state.chart).not.toBeNull();
+
+    // …and the autostart that was pending must not fire after the cancel
+    vi.advanceTimersByTime(ONLINE_READINESS_TIMEOUT_MS);
+    expect(room.logic.getState().phase).toBe('lobby');
+  });
+
+  it('refuses readiness confirmations outside the readiness phase', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    await uploadChart(room);
+    expect(() => room.handlers.room.setReady.handler(ctx('p1'), true)).toThrow('Nothing to confirm readiness for');
   });
 });
 

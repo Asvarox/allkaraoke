@@ -48,14 +48,17 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
     }
   };
 
-  const pickColor = (playerNumber: PlayerNumber) => {
-    if (playerNumber === self?.playerNumber) return;
-    void OnlineClient.rpc.room.setPlayerNumber(playerNumber).catch(() => undefined);
-  };
-
   const close = () => {
     submitName();
     onClose();
+  };
+
+  // Picking a color is the whole decision — apply it (along with any name edit) and get out of the
+  // way, rather than asking for a second click on Done to confirm what was already chosen.
+  const pickColor = (playerNumber: PlayerNumber) => {
+    if (playerNumber === self?.playerNumber) return;
+    void OnlineClient.rpc.room.setPlayerNumber(playerNumber).catch(() => undefined);
+    close();
   };
 
   return (

@@ -1,9 +1,10 @@
 import { PlayerNumber } from '~/modules/players/player-number';
 import { RpcMessages } from '~/modules/remote-mic/network/rpc/types';
 
-export type OnlinePhase = 'lobby' | 'countdown' | 'singing' | 'results';
-
-export type ProbeStatus = 'unknown' | 'pending' | 'playable' | 'failed';
+/** `readiness` is the host having started the song: every singer sits on the singing screen with the
+ * video loaded but held, confirming they're ready — the same beat the local game has when playing
+ * with remote mics. */
+export type OnlinePhase = 'lobby' | 'readiness' | 'singing' | 'results';
 
 export type OnlinePlaybackStatus = 'unstarted' | 'playing' | 'paused' | 'buffering';
 
@@ -14,8 +15,8 @@ export interface OnlineParticipant {
   joinOrder: number;
   playerNumber: PlayerNumber;
   connected: boolean;
+  /** Confirmed "I'm ready to sing" during the readiness phase. Meaningless in any other phase. */
   ready: boolean;
-  probe: ProbeStatus;
   playback: OnlinePlaybackStatus;
 }
 
@@ -72,10 +73,9 @@ export interface OnlineRoomState {
   hostId: string | null;
   tolerance: number;
   chart: ChartManifest | null;
-  /** Set while all singers are expected to probe video playability. */
-  probeDeadline: number | null;
-  /** Server timestamp when the synchronized start countdown ends and playback begins. */
-  countdownEndsAt: number | null;
+  /** Server timestamp when the song starts whether or not everyone has confirmed. Set for the
+   * whole readiness phase, null otherwise. */
+  readinessDeadline: number | null;
   /** Set while singing (and cleared when paused). */
   playbackAnchor: PlaybackAnchor | null;
   pause: OnlinePauseState | null;

@@ -25,7 +25,6 @@ import useKickParticipant from '~/routes/online/hooks/use-kick-participant';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
 import LobbySongHeader from '~/routes/online/lobby/lobby-song-header';
 import ParticipantList from '~/routes/online/lobby/participant-list';
-import PlaybackProbe from '~/routes/online/lobby/playback-probe';
 import OnlineSongPlayersPanel from '~/routes/online/lobby/song-players-panel';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
 
@@ -157,14 +156,11 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
     }
   };
 
-  const setReady = (ready: boolean) => {
-    void OnlineClient.rpc.room.setReady(ready).catch(console.warn);
+  // The host starts the song on their own — everyone confirms readiness on the singing screen after,
+  // with the video already loaded, rather than pre-agreeing to it here
+  const startGame = () => {
+    void OnlineClient.rpc.room.startGame().catch(console.warn);
   };
-
-  // Calibration already happened in the setup wizard, so readying up is a plain toggle
-  const onReadyClick = () => setReady(!self?.ready);
-
-  const everyoneReady = roomState.participants.filter((p) => p.connected).every((p) => p.ready);
 
   // The room reports the selected song as the preview once the host stops browsing — fall back to
   // the chart anyway so the header never goes blank while that update is in flight.
@@ -212,7 +208,13 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
           <MenuWithLogo
             className="border border-white/10 bg-slate-800 sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]"
             data-test="online-lobby">
-            <LobbySongHeader preview={headerPreview} roomCode={roomCode} />
+            <LobbySongHeader
+              preview={headerPreview}
+              roomCode={roomCode}
+              onChooseSong={
+                isHost && !roomState.chart && uploadState !== 'uploading' ? () => setSongSelectionOpen(true) : undefined
+              }
+            />
 
             <Menu.Divider className="sm:mt-auto" />
 
@@ -283,21 +285,20 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
                   <Menu.HelpText data-test="online-upload-error">Song transfer failed: {uploadError}</Menu.HelpText>
                 )}
 
-                {roomState.chart && song && (
+                {/* The host's call alone — everyone else confirms they're ready once the song
+                    screen is up and the video has loaded */}
+                {isHost && roomState.chart && song && (
                   <Menu.Button
-                    {...register('ready-button', onReadyClick, undefined, true)}
-                    data-test="online-ready-button"
-                    disabled={!self?.connected}>
-                    {self?.ready ? 'Not ready after all' : 'I am ready to sing!'}
+                    {...register('start-song', startGame, undefined, true)}
+                    data-test="online-start-song-button"
+                    disabled={!self?.connected || uploadState === 'uploading'}>
+                    Start the song!
                   </Menu.Button>
                 )}
-                {self?.probe === 'failed' && (
-                  <Menu.HelpText data-test="online-probe-failed">
-                    Your device couldn&#39;t play the video — check your connection and try readying up again.
+                {!isHost && roomState.chart && song && (
+                  <Menu.HelpText data-test="online-waiting-for-start">
+                    Waiting for the host to start the song…
                   </Menu.HelpText>
-                )}
-                {everyoneReady && roomState.probeDeadline !== null && (
-                  <Menu.HelpText data-test="online-probing">Checking that everyone can play the video…</Menu.HelpText>
                 )}
 
                 {/* Last in the list — leaving is the way out, not something to hit by accident */}
@@ -310,9 +311,6 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
                 </Menu.Button>
               </div>
             </div>
-
-            {/* Hidden playback probe: cue the video and report to the room whether it can play */}
-            {self?.probe === 'pending' && song && <PlaybackProbe song={song} />}
 
             <CustomizeModal
               open={customizeOpen}

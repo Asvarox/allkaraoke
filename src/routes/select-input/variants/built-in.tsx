@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { ValuesType } from 'utility-types';
 
 import { Icon } from '~/modules/elements/akui/icon';
@@ -26,6 +26,42 @@ interface Props {
   /** Online-mode wizard variant: no input-type switching, no per-player mic boxes (the volume
    * shows behind the mic switcher instead), no smartphone-as-mic suggestion. */
   onlineSetup?: boolean;
+}
+
+/**
+ * The hints that come and go while the mic is being measured. Both live in one slot that always
+ * reserves room for the taller of the two (see `TipSlot`), so a mic turning out to be (in)audible —
+ * or the switch to another device restarting the measurement — never shoves the buttons around.
+ */
+const NOT_AUDIBLE_TIP = "Make some noise to the microphone. If that doesn't work, try using another microphone.";
+
+/**
+ * Holds the height of the "still starting up" beats so they all measure the same: the permission
+ * status resolving (which renders nothing at all), the permission being asked for, and the default
+ * device being picked. It's the longest of those messages, rendered invisibly — text rather than the
+ * warning icon, because an icon only gets its size once it has loaded and would pop the row open.
+ *
+ * The blocked-access screen isn't covered: it adds a how-to-unblock image, which makes it a
+ * different screen rather than another beat of starting up.
+ */
+function StartingUpReserve() {
+  return (
+    <span className="typography invisible col-start-1 row-start-1 text-lg" aria-hidden>
+      Please allow access to the microphone so the default one can be selected.
+    </span>
+  );
+}
+
+function TipSlot({ reserveFor, children }: { reserveFor: ReactNode; children: ReactNode }) {
+  return (
+    <div className="grid">
+      {/* The tallest hint this screen can show, rendered invisibly to hold the row open */}
+      <Menu.HelpText className="invisible col-start-1 row-start-1" aria-hidden>
+        {reserveFor}
+      </Menu.HelpText>
+      <Menu.HelpText className="col-start-1 row-start-1">{children}</Menu.HelpText>
+    </div>
+  );
 }
 
 function useIsPlayerMicAudible(inputLabel: string) {
@@ -87,66 +123,84 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
     onSetupComplete(!!selectedMic && !!isAudible);
   }, [selectedMic, isAudible, onSetupComplete]);
 
+  // The smartphone suggestion is the taller of the two hints, so it's what reserves the slot —
+  // except online, where it's never offered and reserving for it would leave a hole.
+  const smartphoneTip = (
+    <>
+      Built-in microphones can pick up music from the game. For more accurate scores, try using your{' '}
+      <button onClick={() => props.changePreference('remoteMics')}>smartphone as a microphone</button>.
+    </>
+  );
+
   return (
     <>
-      <UserMediaEnabled
-        fallback={
-          <span className="typography text-lg">
-            Please allow access to the microphone so the default one can be selected.
-          </span>
-        }>
-        {!selectedMic && <span className="typography text-lg">The default device is being selected.</span>}
-        {selectedMic && (
-          <>
-            <div className="flex items-end justify-between">
-              <span className="typography text-lg">You&#39;ll sing using</span>
-              <Menu.HelpText>(click to change)</Menu.HelpText>
-            </div>
-            <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic}>
-              {props.onlineSetup && <PlayerMicCheck playerNumber={0} className="rounded-md opacity-40" />}
-            </Switcher>
-            <div className="flex items-center justify-end text-lg">
-              {isAudible === true && (
-                <>
-                  <span className="typography">Microphone is audible</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Icon icon="ic:baseline-check" size={8} className="text-white" />
-                  </div>
-                </>
-              )}
-              {isAudible === false && (
-                <>
-                  <span className="typography">Microphone is not audible</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Icon icon="ic:baseline-error" size={8} className="text-red-500" />
-                  </div>
-                </>
-              )}
-              {isAudible === null && (
-                <>
-                  <span className="typography">Make some noise to the microphone</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Loader />
-                  </div>
-                </>
-              )}
-            </div>
-            {isAudible === false && (
-              <Menu.HelpText>
-                Make some noise to the microphone. If that doesn&#39;t work, try using another microphone.
-              </Menu.HelpText>
+      {/* Everything before a device is picked — the permission status still resolving (nothing to
+          show yet), the permission being asked for, the default device being chosen — is one
+          "starting up" moment, so all of it is stacked on a reserver holding that moment's height.
+          The screen then resizes exactly once: when the actual setup takes over. */}
+      <div className="grid">
+        <StartingUpReserve />
+        <div className="col-start-1 row-start-1 flex flex-col justify-center gap-4">
+          <UserMediaEnabled
+            fallback={
+              <span className="typography text-lg">
+                Please allow access to the microphone so the default one can be selected.
+              </span>
+            }>
+            {!selectedMic && <span className="typography text-lg">The default device is being selected.</span>}
+            {selectedMic && (
+              <>
+                <div className="flex items-end justify-between">
+                  <span className="typography text-lg">You&#39;ll sing using</span>
+                  <Menu.HelpText>(click to change)</Menu.HelpText>
+                </div>
+                <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic}>
+                  {props.onlineSetup && <PlayerMicCheck playerNumber={0} className="rounded-md opacity-40" />}
+                </Switcher>
+                <div className="flex items-center justify-end text-lg">
+                  {isAudible === true && (
+                    <>
+                      <span className="typography">Microphone is audible</span>
+                      <div className="flex h-8 w-10 items-center justify-end">
+                        <Icon icon="ic:baseline-check" size={8} className="text-white" />
+                      </div>
+                    </>
+                  )}
+                  {isAudible === false && (
+                    <>
+                      <span className="typography">Microphone is not audible</span>
+                      <div className="flex h-8 w-10 items-center justify-end">
+                        <Icon icon="ic:baseline-error" size={8} className="text-red-500" />
+                      </div>
+                    </>
+                  )}
+                  {isAudible === null && (
+                    <>
+                      <span className="typography">Make some noise to the microphone</span>
+                      <div className="flex h-8 w-10 items-center justify-end">
+                        <Loader />
+                      </div>
+                    </>
+                  )}
+                </div>
+              </>
             )}
-          </>
-        )}
-        {!props.onlineSetup && <MicCheck />}
+            {/* Gated on the device too: before one is picked there's no level to show, and letting
+                the boxes appear a beat early would be one more height change during startup */}
+            {selectedMic && !props.onlineSetup && <MicCheck />}
 
-        {isAudible === true && !props.onlineSetup && (
-          <Menu.HelpText>
-            Built-in microphones can pick up music from the game. For more accurate scores, try using your{' '}
-            <button onClick={() => props.changePreference('remoteMics')}>smartphone as a microphone</button>.
-          </Menu.HelpText>
-        )}
-      </UserMediaEnabled>
+            {selectedMic && (
+              <TipSlot reserveFor={props.onlineSetup ? NOT_AUDIBLE_TIP : smartphoneTip}>
+                {isAudible === false
+                  ? NOT_AUDIBLE_TIP
+                  : isAudible === true && !props.onlineSetup
+                    ? smartphoneTip
+                    : null}
+              </TipSlot>
+            )}
+          </UserMediaEnabled>
+        </div>
+      </div>
       {!props.onlineSetup && <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>}
       <MenuButton
         {...register('save-button', props.onSave, undefined, true, { disabled: !selectedMic })}

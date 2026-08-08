@@ -1,16 +1,17 @@
 import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 import { defineMutation, defineQuery } from '~/modules/remote-mic/network/rpc/define';
 import { ExtractContract } from '~/modules/remote-mic/network/rpc/types';
+
 import { unpackChartTransfer } from './chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
-  ONLINE_COUNTDOWN_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
-  ONLINE_PROBE_TIMEOUT_MS,
+  ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_RESUME_COUNTDOWN_MS,
   ONLINE_ROOM_TTL_MS,
+  ONLINE_START_LEAD_MS,
   ONLINE_STATS_PUBLISH_MS,
 } from './consts';
 import {
@@ -74,8 +75,7 @@ export class OnlineRoomLogic {
   private chart: ChartManifest | null = null;
   private chartData: string | null = null;
   private chartPreview: SongHoverPreview | null = null;
-  private probeDeadline: number | null = null;
-  private countdownEndsAt: number | null = null;
+  private readinessDeadline: number | null = null;
   private playbackAnchor: OnlineRoomState['playbackAnchor'] = null;
   private pause: OnlineRoomState['pause'] = null;
   private resumeCountdownEndsAt: number | null = null;
@@ -139,8 +139,7 @@ export class OnlineRoomLogic {
     hostId: this.hostId,
     tolerance: this.tolerance,
     chart: this.chart,
-    probeDeadline: this.probeDeadline,
-    countdownEndsAt: this.countdownEndsAt,
+    readinessDeadline: this.readinessDeadline,
     playbackAnchor: this.playbackAnchor,
     pause: this.pause,
     resumeCountdownEndsAt: this.resumeCountdownEndsAt,
@@ -297,15 +296,10 @@ export class OnlineRoomLogic {
       playerNumber: this.freePlayerNumber(),
       connected: true,
       ready: false,
-      probe: 'unknown',
       playback: 'unstarted',
     });
     if (this.hostId === null) {
       this.hostId = id;
-    }
-    // A new singer must ready up and probe like everyone else — cancel any in-flight probing
-    if (this.phase === 'lobby') {
-      this.cancelProbing();
     }
     this.publishState();
     return { accepted: true };
@@ -335,9 +329,9 @@ export class OnlineRoomLogic {
     delete this.playerStats[id];
     this.electHost();
 
-    if (this.phase === 'lobby') {
+    if (this.phase === 'readiness') {
+      // One fewer singer to wait for — that may be the last one holding the song up
       this.checkReadiness();
-      this.checkAllPlayable();
     } else if (this.phase === 'singing') {
       this.checkAllFinished();
     }
@@ -345,63 +339,20 @@ export class OnlineRoomLogic {
     this.publishLeaderboard();
   };
 
-  // --- readiness & probing ---
+  // --- readiness ---
 
-  private cancelProbing = () => {
-    this.probeDeadline = null;
-    this.clearTimer('probe-timeout');
+  /**
+   * The host starting the song doesn't start playback — it moves the room to the readiness phase,
+   * where every singer's device loads the video (held, not playing) and shows the confirmation.
+   * The song rolls once everyone has confirmed, or when the autostart deadline runs out.
+   */
+  private startReadiness = () => {
+    this.phase = 'readiness';
     this.participants.forEach((participant) => {
-      if (participant.probe === 'pending') participant.probe = 'unknown';
+      participant.ready = false;
+      participant.playback = 'unstarted';
     });
-  };
-
-  private checkReadiness = () => {
-    if (this.phase !== 'lobby' || !this.chart) return;
-    const connected = this.connectedParticipants();
-    if (connected.length === 0 || !connected.every((participant) => participant.ready)) return;
-
-    // Everyone is ready — ask all singers that are not yet confirmed playable to probe the video
-    let anyPending = false;
-    connected.forEach((participant) => {
-      if (participant.probe !== 'playable') {
-        participant.probe = 'pending';
-        anyPending = true;
-      }
-    });
-    if (anyPending) {
-      this.probeDeadline = this.deps.now() + ONLINE_PROBE_TIMEOUT_MS;
-      this.setTimer('probe-timeout', ONLINE_PROBE_TIMEOUT_MS, this.expireProbe);
-    } else {
-      this.checkAllPlayable();
-    }
-  };
-
-  private expireProbe = () => {
-    if (this.phase !== 'lobby' || this.probeDeadline === null) return;
-    this.probeDeadline = null;
-    this.participants.forEach((participant) => {
-      if (participant.probe === 'pending') {
-        participant.probe = 'failed';
-        participant.ready = false;
-      }
-    });
-    this.publishState();
-  };
-
-  private checkAllPlayable = () => {
-    if (this.phase !== 'lobby' || !this.chart) return;
-    const connected = this.connectedParticipants();
-    if (connected.length === 0) return;
-    if (connected.every((participant) => participant.ready && participant.probe === 'playable')) {
-      this.startCountdown();
-    }
-  };
-
-  private startCountdown = () => {
-    this.probeDeadline = null;
-    this.clearTimer('probe-timeout');
-    this.phase = 'countdown';
-    this.countdownEndsAt = this.deps.now() + ONLINE_COUNTDOWN_MS;
+    this.readinessDeadline = this.deps.now() + ONLINE_READINESS_TIMEOUT_MS;
     this.leaderboard = this.connectedParticipants().map((participant) => ({
       participantId: participant.id,
       name: participant.name,
@@ -410,14 +361,26 @@ export class OnlineRoomLogic {
     }));
     this.finalResults = null;
     this.finishRequestedAt = null;
-    this.setTimer('countdown', ONLINE_COUNTDOWN_MS, () => {
-      this.phase = 'singing';
-      this.playbackAnchor = { serverTimeMs: this.countdownEndsAt!, videoTimeMs: 0 };
-      this.countdownEndsAt = null;
-      this.publishState();
-    });
+    this.setTimer('readiness', ONLINE_READINESS_TIMEOUT_MS, this.beginPlayback);
     this.publishState();
     this.publishLeaderboard();
+  };
+
+  private checkReadiness = () => {
+    if (this.phase !== 'readiness') return;
+    const connected = this.connectedParticipants();
+    if (connected.length === 0 || !connected.every((participant) => participant.ready)) return;
+    this.beginPlayback();
+  };
+
+  private beginPlayback = () => {
+    if (this.phase !== 'readiness') return;
+    this.clearTimer('readiness');
+    this.readinessDeadline = null;
+    this.phase = 'singing';
+    // Anchored slightly ahead so every client can schedule its own play() against the same instant
+    this.playbackAnchor = { serverTimeMs: this.deps.now() + ONLINE_START_LEAD_MS, videoTimeMs: 0 };
+    this.publishState();
   };
 
   /** Expected video position right now (ms); null when not anchored (paused / not started). */
@@ -516,7 +479,7 @@ export class OnlineRoomLogic {
   /** After the host ends the game, singers that never published a final score get one
    * fabricated from their last leaderboard snapshot so the results can still be shown. */
   private forceResults = () => {
-    if (this.phase !== 'singing' && this.phase !== 'countdown') return;
+    if (this.phase !== 'singing' && this.phase !== 'readiness') return;
     this.finalResults = this.finalResults ?? [];
     this.connectedParticipants().forEach((participant) => {
       if (this.finalResults!.some((result) => result.participantId === participant.id)) return;
@@ -534,7 +497,7 @@ export class OnlineRoomLogic {
 
   private returnToLobby = () => {
     this.phase = 'lobby';
-    this.countdownEndsAt = null;
+    this.readinessDeadline = null;
     this.playbackAnchor = null;
     this.pause = null;
     this.resumeCountdownEndsAt = null;
@@ -548,11 +511,10 @@ export class OnlineRoomLogic {
     this.songVotes = {};
     this.clearTimer('resume');
     this.clearTimer('buffering');
-    this.clearTimer('countdown');
+    this.clearTimer('readiness');
     this.clearTimer('force-results');
     this.participants.forEach((participant) => {
       participant.ready = false;
-      participant.probe = 'unknown';
       participant.playback = 'unstarted';
     });
     this.publishState();
@@ -581,30 +543,32 @@ export class OnlineRoomLogic {
         });
         this.publishState();
       }),
-      setReady: defineMutation((ctx, ready: boolean) => {
-        if (this.phase !== 'lobby') throw new Error('Can only ready up in the lobby');
+      /** Host only: leave the lobby for the readiness phase — no one else has to agree first. */
+      startGame: defineMutation((ctx) => {
+        this.requireHost(ctx.senderId);
+        if (this.phase !== 'lobby') throw new Error('Can only start from the lobby');
         if (!this.chart) throw new Error('No song selected yet');
+        this.startReadiness();
+      }),
+      /** Host only: call the start off (a singer is missing, wrong song) and go back to the lobby. */
+      cancelStart: defineMutation((ctx) => {
+        this.requireHost(ctx.senderId);
+        if (this.phase !== 'readiness') throw new Error('Not starting a song');
+        this.clearTimer('readiness');
+        this.readinessDeadline = null;
+        this.phase = 'lobby';
+        this.leaderboard = [];
+        this.participants.forEach((participant) => {
+          participant.ready = false;
+        });
+        this.publishState();
+        this.publishLeaderboard();
+      }),
+      setReady: defineMutation((ctx, ready: boolean) => {
+        if (this.phase !== 'readiness') throw new Error('Nothing to confirm readiness for');
         const participant = this.requireParticipant(ctx.senderId);
         participant.ready = ready;
-        if (!ready) {
-          this.cancelProbing();
-        }
         this.checkReadiness();
-        this.publishState();
-      }),
-      reportProbe: defineMutation((ctx, playable: boolean) => {
-        if (this.phase !== 'lobby') return;
-        const participant = this.requireParticipant(ctx.senderId);
-        participant.probe = playable ? 'playable' : 'failed';
-        if (!playable) {
-          participant.ready = false;
-        }
-        const anyPending = this.connectedParticipants().some((other) => other.probe === 'pending');
-        if (!anyPending) {
-          this.probeDeadline = null;
-          this.clearTimer('probe-timeout');
-        }
-        this.checkAllPlayable();
         this.publishState();
       }),
       returnToLobby: defineMutation(() => {
@@ -614,7 +578,7 @@ export class OnlineRoomLogic {
       /** Host only: end the current game — everyone wraps up and the room moves to the results. */
       endGame: defineMutation((ctx) => {
         this.requireHost(ctx.senderId);
-        if (this.phase !== 'singing' && this.phase !== 'countdown') throw new Error('No game in progress');
+        if (this.phase !== 'singing' && this.phase !== 'readiness') throw new Error('No game in progress');
         this.finishRequestedAt = this.deps.now();
         // Clients publish their final scores in response; if some never do, force the results
         this.setTimer('force-results', ONLINE_FORCE_RESULTS_MS, this.forceResults);
@@ -663,12 +627,6 @@ export class OnlineRoomLogic {
           this.chartData = data;
           this.chartPreview = preview ?? null;
           this.tolerance = tolerance;
-          // New song — everyone has to confirm readiness and playability again
-          this.cancelProbing();
-          this.participants.forEach((participant) => {
-            participant.ready = false;
-            participant.probe = 'unknown';
-          });
           this.leaderboard = [];
           this.finalResults = null;
           this.songVotes = {};
@@ -728,7 +686,7 @@ export class OnlineRoomLogic {
     scoring: {
       publishScore: defineMutation((ctx, score: number) => {
         const participant = this.requireParticipant(ctx.senderId);
-        if (this.phase !== 'singing' && this.phase !== 'countdown') return;
+        if (this.phase !== 'singing' && this.phase !== 'readiness') return;
         const entry = this.leaderboard.find((other) => other.participantId === participant.id);
         if (entry) {
           entry.score = score;

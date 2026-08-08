@@ -15,14 +15,9 @@ interface Props {
   onKick?: (participant: OnlineParticipant) => void;
 }
 
-const probeLabel: Record<string, string> = {
-  pending: 'checking video…',
-  playable: 'video ok',
-  failed: 'video failed',
-};
-
 /** The room's singers, using the same rows as the local mic check — a player-colored volume bar
- * filling in behind the name, with lobby tags (host/ready/…) and actions on the right. */
+ * filling in behind the name, with lobby tags (host/disconnected) and actions on the right.
+ * Readiness isn't shown here: it's confirmed on the singing screen once the host starts. */
 function ParticipantList({ roomState, selfId, onEdit, onKick }: Props) {
   const isHost = roomState.hostId === selfId;
   const stats = useOnlinePlayersStats();
@@ -57,7 +52,6 @@ function ParticipantList({ roomState, selfId, onEdit, onKick }: Props) {
           <MicCheckSlotShell
             key={participant.id}
             data-test={`online-participant-${participant.playerNumber}`}
-            data-ready={participant.ready}
             data-connected={participant.connected}
             data-vote={voteForThisSong ?? 'none'}
             playerNumber={participant.playerNumber}
@@ -81,8 +75,6 @@ function ParticipantList({ roomState, selfId, onEdit, onKick }: Props) {
               )}
               {participant.id === roomState.hostId && <Tag data-test="participant-host">host</Tag>}
               {!participant.connected && <Tag>disconnected</Tag>}
-              {participant.ready && <Tag data-test="participant-ready">ready</Tag>}
-              {probeLabel[participant.probe] && <Tag>{probeLabel[participant.probe]}</Tag>}
               {isSelf && onEdit && (
                 <button
                   type="button"

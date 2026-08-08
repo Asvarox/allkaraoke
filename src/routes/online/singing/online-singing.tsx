@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'motion/react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { GAME_MODE, SingSetup, Song } from '~/interfaces';
@@ -12,14 +13,18 @@ import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import LayoutGame from '~/routes/layout-game';
-import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
 import LeaderboardOverlay from '~/routes/online/singing/leaderboard-overlay';
 import PauseOverlay from '~/routes/online/singing/pause-overlay';
+import ReadinessOverlay from '~/routes/online/singing/readiness-overlay';
 
 interface Props {
   roomState: OnlineRoomState;
   song: Song;
 }
+
+/** How long the all-confirmed readiness screen holds before it starts fading. This plus the fade
+ * (see READINESS_EXIT_S in readiness-overlay.tsx) has to fit inside ONLINE_START_LEAD_MS. */
+const READINESS_OUTRO_HOLD_MS = 700;
 
 const mapVideoState = (state: VideoState): OnlinePlaybackStatus => {
   switch (state) {
@@ -63,6 +68,21 @@ function OnlineSinging({ roomState, song }: Props) {
     }),
     [roomState.roomCode, roomState.chart?.hash, roomState.tolerance, selfNumber],
   );
+
+  // The room leaves the readiness phase the instant the last singer confirms, but playback is
+  // anchored ONLINE_START_LEAD_MS later. Keep the readiness screen up for part of that window so it
+  // gets to show every row ticked off and fade out, instead of being cut mid-confirmation.
+  const inReadiness = roomState.phase === 'readiness';
+  const [showReadiness, setShowReadiness] = useState(inReadiness);
+  useEffect(() => {
+    if (inReadiness) {
+      setShowReadiness(true);
+      return;
+    }
+    if (!showReadiness) return;
+    const timeout = setTimeout(() => setShowReadiness(false), READINESS_OUTRO_HOLD_MS);
+    return () => clearTimeout(timeout);
+  }, [inReadiness, showReadiness]);
 
   const isPaused = roomState.pause !== null;
   const videoGapMs = (song.videoGap ?? 0) * 1_000;
@@ -195,9 +215,22 @@ function OnlineSinging({ roomState, song }: Props) {
   return (
     <LayoutGame>
       <div className="relative">
-        {roomState.phase === 'countdown' && roomState.countdownEndsAt !== null && (
-          <CountdownOverlay endsAtServerTime={roomState.countdownEndsAt} label="Starting in" />
-        )}
+        {/* The video below is already mounted and cued at this point — the room only rolls it once
+            everyone has confirmed (or the autostart fires) */}
+        <AnimatePresence>
+          {showReadiness && (
+            <ReadinessOverlay
+              participants={roomState.participants}
+              selfId={selfId}
+              hostId={roomState.hostId}
+              readinessDeadline={roomState.readinessDeadline}
+              isHost={isHost}
+              // The room has already committed to starting — drop the chrome and show the full set
+              // of ticks for the rest of the lead-in
+              starting={!inReadiness}
+            />
+          )}
+        </AnimatePresence>
         {roomState.pause !== null && (
           <PauseOverlay
             pause={roomState.pause}

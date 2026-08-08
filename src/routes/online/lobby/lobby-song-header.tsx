@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 
+import { Button } from '~/modules/elements/akui/button';
 import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
@@ -11,6 +12,8 @@ interface Props {
   /** What the host is browsing, or the song already selected — null before anything is picked. */
   preview: SongHoverPreview | null;
   roomCode: string;
+  /** Host only, and only while nothing is picked — turns the empty thumbnail into the way to pick. */
+  onChooseSong?: () => void;
 }
 
 /** Same 30s window the song list previews when the host hasn't sent an explicit end. */
@@ -18,7 +21,7 @@ const PREVIEW_LENGTH = 30;
 
 /** Top half of the lobby, laid out like the expanded song preview: title/artist (plus the room
  * code) on the left, the looping video — with the song's details under it — on the right. */
-function LobbySongHeader({ preview, roomCode }: Props) {
+function LobbySongHeader({ preview, roomCode, onChooseSong }: Props) {
   const player = useRef<VideoPlayerRef | null>(null);
   const video = preview?.video;
   const start = preview?.previewStart ?? 0;
@@ -86,6 +89,17 @@ function LobbySongHeader({ preview, roomCode }: Props) {
               disablekb
               onStateChange={onVideoStateChange}
             />
+          ) : onChooseSong ? (
+            // An empty thumbnail is the most obvious place to look for the song — so it's the button
+            <Button
+              size="small"
+              fullWidth={false}
+              className="w-auto px-6"
+              leftIcon={<Icon icon="ic:baseline-search" size={6} />}
+              onClick={onChooseSong}
+              data-test="thumbnail-choose-song-button">
+              Select song
+            </Button>
           ) : (
             <Icon icon="ic:baseline-search" size={12} className="opacity-25" />
           )}

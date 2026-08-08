@@ -154,22 +154,27 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await expect(page.getByTestId('choose-song-button')).toBeVisible();
   });
 
-  await test.step('Everyone readies up in one click — calibration already happened — countdown starts', async () => {
-    await page.getByTestId('online-ready-button').click();
-    await expect(page.getByTestId('online-participant-0').getByTestId('participant-ready')).toBeVisible();
-    await guestPage.getByTestId('online-ready-button').click();
+  await test.step('The host starts the song — everyone confirms readiness with the video loaded', async () => {
+    // No one else has to agree first: the guest has no start control at all
+    await expect(guestPage.getByTestId('online-start-song-button')).not.toBeVisible();
+    await page.getByTestId('online-start-song-button').click();
 
-    // all ready + all playback probes pass → synchronized countdown on both screens
-    await expect(page.getByTestId('online-countdown')).toBeVisible({
-      timeout: 15_000,
-    });
-    await expect(guestPage.getByTestId('online-countdown')).toBeVisible({
-      timeout: 15_000,
-    });
+    // Both are taken to the song screen, held on the readiness confirmation
+    await expect(page.getByTestId('online-readiness')).toBeVisible({ timeout: 15_000 });
+    await expect(guestPage.getByTestId('online-readiness')).toBeVisible({ timeout: 15_000 });
+    // …showing every singer and who has confirmed so far
+    await expect(page.getByTestId('online-readiness-0')).toContainText(hostName);
+    await expect(page.getByTestId('online-readiness-1')).toContainText(guestName);
+
+    await page.getByTestId('online-ready-button').click();
+    await expect(guestPage.getByTestId('online-readiness-0')).toHaveAttribute('data-confirmed', 'true');
+    // One singer confirming isn't enough — the song is still held
+    await expect(guestPage.getByTestId('online-readiness')).toBeVisible();
+    await guestPage.getByTestId('online-ready-button').click();
   });
 
   await test.step('Singing starts with a live leaderboard for both singers', async () => {
-    await expect(guestPage.getByTestId('online-countdown')).not.toBeVisible({
+    await expect(guestPage.getByTestId('online-readiness')).not.toBeVisible({
       timeout: 15_000,
     });
     await expect(page.getByTestId('online-leaderboard')).toBeVisible({
@@ -225,7 +230,7 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     });
     // the finished song is no longer selected — the next round starts fresh
     await expect(page.getByTestId('online-selected-song')).toContainText('Pick a song');
-    await expect(page.getByTestId('online-ready-button')).not.toBeVisible();
+    await expect(page.getByTestId('online-start-song-button')).not.toBeVisible();
   });
 
   await test.step('Leaving the room takes a confirmation', async () => {
@@ -306,9 +311,9 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
 
   await test.step('Guest changes their color via the customize modal', async () => {
     await guestPage.getByTestId('customize-button').click();
+    // picking a color applies it and closes the modal — there's nothing left to confirm
     await guestPage.getByTestId('online-color-3').click();
-    await expect(guestPage.getByTestId('online-color-3')).toHaveAttribute('data-selected', 'true');
-    await guestPage.getByTestId('customize-done-button').click();
+    await expect(guestPage.getByTestId('online-customize-modal')).not.toBeVisible();
     // the guest now occupies the picked color's slot, visible to everyone
     await expect(guestPage.getByTestId('online-participant-3')).toContainText(guestName);
     await expect(guestPage.getByTestId('online-participant-1')).not.toBeVisible();

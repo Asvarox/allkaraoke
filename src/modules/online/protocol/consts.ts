@@ -15,11 +15,14 @@ export const ONLINE_ROOM_TTL_MS = 6 * 60 * 60 * 1_000;
 /** How long a singer can report buffering before the room auto-pauses for everyone. */
 export const ONLINE_BUFFERING_PAUSE_MS = 1_000;
 
-/** How long clients get to probe (cue the video and report playability) before the attempt fails. */
-export const ONLINE_PROBE_TIMEOUT_MS = 30_000;
+/** How long the room waits for everyone to confirm readiness before starting the song anyway —
+ * the same autostart the local game gives its remote mics. */
+export const ONLINE_READINESS_TIMEOUT_MS = 15_000;
 
-/** Synchronized start countdown duration. */
-export const ONLINE_COUNTDOWN_MS = 5_000;
+/** Lead time between the room deciding to start and the video actually rolling. Long enough for the
+ * readiness screen to show its last tick and bow out, rather than being cut off the instant the
+ * final singer confirms — and it doubles as the window every client schedules its play() in. */
+export const ONLINE_START_LEAD_MS = 2_000;
 
 /** Short countdown before resuming after a pause. */
 export const ONLINE_RESUME_COUNTDOWN_MS = 3_000;

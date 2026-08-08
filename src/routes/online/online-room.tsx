@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
@@ -21,6 +22,10 @@ import OnlineSinging from '~/routes/online/singing/online-singing';
 interface Props {
   roomCode: string;
 }
+
+// Long enough to register as a handover between two full screens, short enough that the readiness
+// screen is up right away
+const ROOM_TRANSITION_S = 0.3;
 
 function OnlineRoom({ roomCode }: Props) {
   const navigate = useSmoothNavigate();
@@ -121,15 +126,34 @@ function OnlineRoom({ roomCode }: Props) {
     return <ConnectingScreen status={status} />;
   }
 
-  if ((roomState.phase === 'countdown' || roomState.phase === 'singing') && song) {
-    return <OnlineSinging roomState={roomState} song={song} />;
-  }
+  // Readiness runs on the singing screen: the video has to be mounted and loaded while everyone
+  // confirms, so it's the same view — just held before the first note
+  const isSinging = (roomState.phase === 'readiness' || roomState.phase === 'singing') && song !== null;
+  const isResults = roomState.phase === 'results' && !!roomState.finalResults?.length && song !== null;
+  const view = isSinging ? 'singing' : isResults ? 'results' : 'lobby';
 
-  if (roomState.phase === 'results' && roomState.finalResults?.length && song) {
-    return <OnlineResults roomState={roomState} song={song} />;
-  }
-
-  return <Lobby roomCode={roomCode} roomState={roomState} song={song} songError={songError} />;
+  // The room switches screens on its own schedule (the host starts the song and everyone's lobby is
+  // replaced by the readiness screen), so the swap is crossfaded rather than cut — being yanked out
+  // of a screen you didn't click away from should at least look deliberate. `wait` keeps the two
+  // fullscreen views from overlapping; the readiness wait easily absorbs the handover.
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={view}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: ROOM_TRANSITION_S }}>
+        {isSinging && song ? (
+          <OnlineSinging roomState={roomState} song={song} />
+        ) : isResults && song ? (
+          <OnlineResults roomState={roomState} song={song} />
+        ) : (
+          <Lobby roomCode={roomCode} roomState={roomState} song={song} songError={songError} />
+        )}
+      </motion.div>
+    </AnimatePresence>
+  );
 }
 
 function ConnectingScreen({ status }: { status: string }) {
