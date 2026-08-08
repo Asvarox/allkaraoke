@@ -18,6 +18,7 @@ import {
   useOnlineSongVotes,
 } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
+import { toSongHoverPreview } from '~/modules/online/client/song-preview';
 import { loadSongForUpload, uploadSongToRoom } from '~/modules/online/client/song-transfer';
 import { OnlineRoomState, SongHoverPreview, SongVote } from '~/modules/online/protocol/types';
 import { OnlineSongSelectionContext, OnlineSongSelectionIntegration } from '~/modules/online/song-selection-context';
@@ -80,24 +81,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
     const send = throttle(() => {
       const { song, difficulty } = previewDraft.current;
       void OnlineClient.rpc.selection
-        .setPreview(
-          song
-            ? {
-                songId: song.id,
-                artist: song.artist,
-                title: song.title,
-                difficulty,
-                mode: 'Duel',
-                video: song.video,
-                language: song.language,
-                artistOrigin: song.artistOrigin,
-                year: song.year,
-                previewStart: song.previewStart ?? (song.videoGap ?? 0) + 60,
-                previewEnd: song.previewEnd,
-                volume: song.volume ?? song.manualVolume,
-              }
-            : null,
-        )
+        .setPreview(song ? toSongHoverPreview(song, difficulty) : null)
         .catch(() => undefined);
     }, 300);
     return {
