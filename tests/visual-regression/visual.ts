@@ -27,6 +27,19 @@ type VisualTestFn = (args: {
 const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 /**
+ * The remote mic connection wizard auto-enters real browser fullscreen, and Chromium refuses
+ * `setWindowBounds` on a fullscreen window. Exiting fullscreen is not enough on its own: the browser
+ * window leaves fullscreen slightly after the document does, so retry the resize until it follows.
+ */
+export async function exitFullscreenAndResize(page: Page, viewport: { width: number; height: number }) {
+  await page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+  await page.waitForFunction(() => document.fullscreenElement === null);
+  await expect(async () => {
+    await page.setViewportSize(viewport);
+  }).toPass({ timeout: 10_000 });
+}
+
+/**
  * Registers one test per viewport, tagged `@visual`.
  * Defaults to all viewports (desktop, tablet, mobile-portrait, mobile-landscape) unless a subset is given.
  * `testFn` should navigate/click through the screens it wants to capture, calling `makeScreenshot(name)`

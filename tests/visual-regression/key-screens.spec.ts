@@ -3,7 +3,7 @@ import { expect } from '@playwright/test';
 import { mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
-import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
+import { exitFullscreenAndResize, REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
 visual('Landing page', async ({ page, makeScreenshot }) => {
   await page.goto('/?e2e-test');
@@ -72,14 +72,7 @@ visual(
     await pages.inputSelectionPage.selectSmartphones();
 
     const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-    // The connection wizard auto-enters real browser fullscreen, which blocks resizing the viewport
-    // (Chromium refuses `setWindowBounds` while fullscreen) - back out of it first. The browser window
-    // leaves fullscreen slightly after the document does, so retry the resize until the window follows.
-    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
-    await remoteMic._page.waitForFunction(() => document.fullscreenElement === null);
-    await expect(async () => {
-      await remoteMic._page.setViewportSize(viewport);
-    }).toPass({ timeout: 10_000 });
+    await exitFullscreenAndResize(remoteMic._page, viewport);
 
     // Both the live ping counter (top bar) and the mic volume/frequency preview redraw from the fake
     // audio input every frame, so mask them on every remote capture to keep the screenshots stable.
@@ -160,9 +153,7 @@ visual(
     await pages.inputSelectionPage.selectSmartphones();
 
     const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-    // Same fullscreen caveat as the test above - back out before resizing to the phone viewport.
-    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
-    await remoteMic._page.setViewportSize(viewport);
+    await exitFullscreenAndResize(remoteMic._page, viewport);
 
     const remoteMasks = [
       remoteMic.remoteMicMainPage.connectionStatusElement,
