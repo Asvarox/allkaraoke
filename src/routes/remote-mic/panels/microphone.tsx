@@ -6,6 +6,7 @@ import Loader from '~/modules/elements/loader';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
 import { transportErrorReason } from '~/modules/remote-mic/network/client/network-client';
 import isDev from '~/modules/utils/is-dev';
+import isE2E from '~/modules/utils/is-e2-e';
 import storage from '~/modules/utils/storage';
 import usePermissions from '~/routes/remote-mic/hooks/use-permissions';
 import ConnectionWizard from '~/routes/remote-mic/panels/microphone/connection-wizard/index';
@@ -57,7 +58,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
     setIsKeepAwakeOn(true);
 
     try {
-      if (!isDev() && autoEnableFullscreen) {
+      if (!isDev() && !isE2E() && autoEnableFullscreen) {
         await document.body.requestFullscreen();
         global.screen.orientation.unlock();
         await global.screen.orientation.lock?.('portrait');
