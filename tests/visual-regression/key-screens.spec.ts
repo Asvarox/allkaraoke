@@ -3,7 +3,7 @@ import { expect } from '@playwright/test';
 import { mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
-import { exitFullscreenAndResize, REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
+import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
 visual('Landing page', async ({ page, makeScreenshot }) => {
   await page.goto('/?e2e-test');
@@ -72,7 +72,10 @@ visual(
     await pages.inputSelectionPage.selectSmartphones();
 
     const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-    await exitFullscreenAndResize(remoteMic._page, viewport);
+    // The connection wizard auto-enters real browser fullscreen, which blocks resizing the viewport
+    // (Chromium refuses `setWindowBounds` while fullscreen) - back out of it first.
+    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+    await remoteMic._page.setViewportSize(viewport);
 
     // Both the live ping counter (top bar) and the mic volume/frequency preview redraw from the fake
     // audio input every frame, so mask them on every remote capture to keep the screenshots stable.
@@ -153,7 +156,9 @@ visual(
     await pages.inputSelectionPage.selectSmartphones();
 
     const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-    await exitFullscreenAndResize(remoteMic._page, viewport);
+    // Same fullscreen caveat as the test above - back out before resizing to the phone viewport.
+    await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
+    await remoteMic._page.setViewportSize(viewport);
 
     const remoteMasks = [
       remoteMic.remoteMicMainPage.connectionStatusElement,
