@@ -10,7 +10,7 @@ import {
   SongVotes,
 } from '~/modules/online/protocol/types';
 import { PlayerNumber } from '~/modules/players/player-number';
-import { createSubscriptionHook } from '~/modules/remote-mic/network/rpc/subscription-manager';
+import { createSubscriptionHook } from '~/modules/remote-mic/network/rpc/use-subscription-factory';
 
 /** Subscribes to one of the room's push channels and returns the latest data, or undefined before
  * the first push. The named hooks below wrap it with the per-channel default. */

@@ -1,7 +1,8 @@
 import events from '~/modules/game-events/game-events';
-import { ChannelName } from '~/modules/remote-mic/network/client/subscriptions';
+import { ChannelName, SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
 import { RpcServer } from '~/modules/remote-mic/network/rpc/rpc-server';
+import { ServerSubscriptionRegistry } from '~/modules/remote-mic/network/rpc/server-subscription-registry';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import { PartyKitServerTransport } from '~/modules/remote-mic/network/server/transport/party-kit-server';
 import { WebSocketServerTransport } from '~/modules/remote-mic/network/server/transport/web-socket-server';
@@ -31,9 +32,9 @@ export class NetworkServer {
     (peerId) => this.transport?.removePlayer(peerId),
   );
 
-  // Stores the most-recently published value per channel so newly subscribing clients
-  // can receive the current state immediately without waiting for the next change.
-  private channelLastValues: Record<string, unknown> = {};
+  // Only the last-value cache half of the registry is used here: which mic is subscribed to what
+  // lives in RemoteMicManager, which remembers it across a host reload and does the fan-out.
+  private subscriptions = new ServerSubscriptionRegistry<SubscriptionChannels>();
 
   public constructor() {
     if (!this.gameCode) {
@@ -78,11 +79,12 @@ export class NetworkServer {
             RemoteMicManager.addSubscription(sender.peer, event.channel);
             // If there is a cached value for this channel, push it immediately to the new subscriber
             // so they don't have to wait for the next change to receive the current state.
-            if (event.channel in this.channelLastValues) {
+            const lastValue = this.subscriptions.getLastValue(event.channel);
+            if (lastValue) {
               sender.send({
                 t: 'rpc-pub',
                 channel: event.channel,
-                data: this.channelLastValues[event.channel],
+                data: lastValue.data,
               } as NetworkMessages);
             }
           } else if (type === 'rpc-unsub') {
@@ -114,7 +116,7 @@ export class NetworkServer {
 
   // Publish data to all clients subscribed to a named channel
   public publish = (channel: string, data: unknown): void => {
-    this.channelLastValues[channel] = data;
+    this.subscriptions.setLastValue(channel as ChannelName, data as SubscriptionChannels[ChannelName]);
     this.rpcServer.publish(channel, data);
   };
 

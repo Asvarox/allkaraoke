@@ -1,6 +1,8 @@
 import { v4 as uuid } from 'uuid';
+
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
+import { PingPongTracker } from '~/modules/remote-mic/network/rpc/ping-pong-tracker';
 import { createRpcProxy } from '~/modules/remote-mic/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/remote-mic/network/rpc/subscription-manager';
 import isE2E from '~/modules/utils/is-e2-e';
@@ -74,9 +76,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private status: OnlineConnectionStatus = 'disconnected';
   private shouldReconnect = false;
   private clockOffsetMs = 0;
-  private latencyMs = 0;
-  private pingStartedAt = 0;
-  private pingTimeout: ReturnType<typeof setTimeout> | null = null;
+  private pingPong = new PingPongTracker();
 
   public readonly subscriptions = new ClientSubscriptionManager<OnlineSubscriptionChannels>();
 
@@ -165,7 +165,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     transport.addListener((message) => {
       if (message.t === 'joined') {
         this.setStatus('connected');
-        this.startPinging();
+        this.pingPong.start(this.sendPing);
         this.subscriptions.setSendFunctions(
           (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel }),
           (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel }),
@@ -183,33 +183,22 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       } else if (message.t === 'ping') {
         this.transport?.sendEvent({ t: 'pong' });
       } else if (message.t === 'pong') {
-        if (this.pingStartedAt) {
-          this.latencyMs = Date.now() - this.pingStartedAt;
-          this.pingStartedAt = 0;
-          this.pingTimeout = setTimeout(this.sendPing, 2_000);
-        }
+        this.pingPong.handlePong();
       }
     });
   };
 
   private sendPing = () => {
     if (!this.transport?.isConnected()) return;
-    this.pingStartedAt = Date.now();
     this.transport.sendEvent({ t: 'ping' });
   };
 
-  private startPinging = () => {
-    if (this.pingTimeout) clearTimeout(this.pingTimeout);
-    this.sendPing();
-  };
-
   /** Latest measured round-trip latency to the room server, ms. */
-  public getLatency = () => this.latencyMs;
+  public getLatency = () => this.pingPong.getLatency();
 
   public disconnect = () => {
     this.shouldReconnect = false;
-    if (this.pingTimeout) clearTimeout(this.pingTimeout);
-    this.pingStartedAt = 0;
+    this.pingPong.stop();
     this.transport?.clearAllListeners();
     this.transport?.close();
     this.transport = undefined;

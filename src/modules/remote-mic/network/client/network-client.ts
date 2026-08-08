@@ -8,10 +8,10 @@ import { ClientTransport } from '~/modules/remote-mic/network/client/transport/i
 import { PartyKitClientTransport } from '~/modules/remote-mic/network/client/transport/party-kit-client';
 import { WebSocketClientTransport } from '~/modules/remote-mic/network/client/transport/web-socket-client';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
+import { PingPongTracker } from '~/modules/remote-mic/network/rpc/ping-pong-tracker';
 import { createRpcProxy } from '~/modules/remote-mic/network/rpc/rpc-client';
 import { ExtractContract } from '~/modules/remote-mic/network/rpc/types';
 import { serverHandlers } from '~/modules/remote-mic/network/server/server-handlers';
-import { getPingTime } from '~/modules/remote-mic/network/utils';
 import Listener from '~/modules/utils/listener';
 import { roundTo } from '~/modules/utils/round-to';
 import storage from '~/modules/utils/storage';
@@ -197,25 +197,28 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     );
   };
 
-  public latency = 999;
-  public pingStart = getPingTime();
-  public pinging = false;
-  private ping = () => {
-    this.pinging = true;
-    this.pingStart = getPingTime();
+  private pingPong = new PingPongTracker({
+    // 999 until the first pong comes back, so the readout never claims a 0 ms round trip
+    initialLatency: 999,
+    onMeasurement: (ping) => this.reportPing(ping),
+  });
 
+  // Read by the remote-mic ping readout, which counts up while a pong is overdue
+  public get latency() {
+    return this.pingPong.getLatency();
+  }
+  public get pingStart() {
+    return this.pingPong.getPingStartedAt();
+  }
+  public get pinging() {
+    return this.pingPong.isPinging();
+  }
+
+  private ping = () => {
     this.transport?.sendEvent({ t: 'ping' } as NetworkMessages);
   };
 
   private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 60_000);
-
-  private onPong = () => {
-    this.latency = getPingTime() - this.pingStart;
-    this.pinging = false;
-    this.reportPing(this.latency);
-
-    setTimeout(this.ping, 2_000);
-  };
 
   public connectToServer = (_roomId: string, silent: boolean) => {
     this.connected = true;
@@ -229,7 +232,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       silent,
       lag: RemoteMicrophoneLagSetting.get(),
     });
-    this.ping();
+    this.pingPong.start(this.ping);
     global?.addEventListener('beforeunload', this.disconnect);
 
     // Wire subscription manager to send rpc-sub/rpc-unsub via the current transport
@@ -249,7 +252,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         // Server pushed subscription data
         subscriptionManager.handlePublish(data.channel, data.data);
       } else if (type === 'pong') {
-        this.onPong();
+        this.pingPong.handlePong();
       } else if (type === 'ping') {
         this.transport?.sendEvent({ t: 'pong' } as NetworkMessages);
       }

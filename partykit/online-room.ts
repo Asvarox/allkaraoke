@@ -1,8 +1,10 @@
 import type * as Party from 'partykit/server';
+
 import { ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 import { RpcServer } from '~/modules/remote-mic/network/rpc/rpc-server';
+import { ServerSubscriptionRegistry } from '~/modules/remote-mic/network/rpc/server-subscription-registry';
 
 const STATE_KEY = 'online-room-state';
 
@@ -17,8 +19,14 @@ const STATE_KEY = 'online-room-state';
 export default class OnlineRoomServer implements Party.Server {
   private logic: OnlineRoomLogic;
   private rpcServer: RpcServer<ReturnType<OnlineRoomLogic['createHandlers']>> | null = null;
-  private subscriptions = new Map<string, Set<string>>();
-  private channelLastValues = new Map<string, unknown>();
+  private subscriptions = new ServerSubscriptionRegistry<OnlineSubscriptionChannels>({
+    // Both channels have a current value even before anything is published, so a peer subscribing
+    // right after joining doesn't have to wait for the next change
+    fallbacks: {
+      'room-state': () => this.logic.getState(),
+      'song-preview': () => this.logic.getChartPreview(),
+    },
+  });
 
   constructor(readonly room: Party.Room) {
     this.logic = this.createLogic();
@@ -30,15 +38,11 @@ export default class OnlineRoomServer implements Party.Server {
         roomCode: this.room.id,
         now: () => Date.now(),
         publish: (channel, data) => {
-          this.channelLastValues.set(channel, data);
-          const subscribers = this.subscriptions.get(channel);
-          if (!subscribers?.size) return;
-          const message = JSON.stringify({ t: 'rpc-pub', channel, data });
-          for (const connection of this.room.getConnections()) {
-            if (subscribers.has(connection.id)) {
-              connection.send(message);
-            }
-          }
+          this.subscriptions.publish(
+            channel,
+            data as OnlineSubscriptionChannels[keyof OnlineSubscriptionChannels],
+            (connectionId, message) => this.room.getConnection(connectionId)?.send(JSON.stringify(message)),
+          );
         },
         persist: (state) => {
           void this.room.storage.put(STATE_KEY, state);
@@ -119,21 +123,15 @@ export default class OnlineRoomServer implements Party.Server {
     if (message.t === 'ping') {
       reply({ t: 'pong' });
     } else if (message.t === 'rpc-sub') {
-      const channel = message.channel as string;
-      if (!this.subscriptions.has(channel)) {
-        this.subscriptions.set(channel, new Set());
-      }
-      this.subscriptions.get(channel)!.add(sender.id);
+      const channel = message.channel;
+      this.subscriptions.subscribe(sender.id, channel);
       // Replay the latest value so new subscribers get the current state immediately
-      if (this.channelLastValues.has(channel)) {
-        reply({ t: 'rpc-pub', channel, data: this.channelLastValues.get(channel) });
-      } else if (channel === ('room-state' satisfies keyof OnlineSubscriptionChannels)) {
-        reply({ t: 'rpc-pub', channel, data: this.logic.getState() });
-      } else if (channel === ('song-preview' satisfies keyof OnlineSubscriptionChannels)) {
-        reply({ t: 'rpc-pub', channel, data: this.logic.getChartPreview() });
+      const lastValue = this.subscriptions.getLastValue(channel);
+      if (lastValue) {
+        reply({ t: 'rpc-pub', channel, data: lastValue.data });
       }
     } else if (message.t === 'rpc-unsub') {
-      this.subscriptions.get(message.channel as string)?.delete(sender.id);
+      this.subscriptions.unsubscribe(sender.id, message.channel);
     } else if (message.t === 'rpc') {
       await this.rpcServer?.handleMessage(message, {
         peer: this.participantIdOf(sender),
@@ -143,7 +141,7 @@ export default class OnlineRoomServer implements Party.Server {
   }
 
   onClose(connection: Party.Connection) {
-    this.subscriptions.forEach((subscribers) => subscribers.delete(connection.id));
+    this.subscriptions.removePeer(connection.id);
     const participantId = this.participantIdOf(connection);
     // Only a participant's last socket closing counts as a disconnect
     const hasOtherLiveConnection = [...this.room.getConnections()].some(
