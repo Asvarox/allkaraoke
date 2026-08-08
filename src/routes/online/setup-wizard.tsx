@@ -11,18 +11,11 @@ import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import { checkRoomExists } from '~/modules/online/client/online-client';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
+import generateRoomCode from '~/modules/utils/generate-room-code';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
 import useOnlineName from '~/routes/online/hooks/use-online-name';
 import BuiltIn from '~/routes/select-input/variants/built-in';
 import { IsCalibratedSetting, MicSetupPreferenceSetting, useSettingValue } from '~/routes/settings/settings-state';
-
-const generateRoomCode = () => {
-  let code = '';
-  for (let i = 0; i < ONLINE_ROOM_CODE_LENGTH; i++) {
-    code += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-  }
-  return code;
-};
 
 /** Step ids double as the checklist ordering — see `stepOrder` below. */
 const STEP = { code: 0, name: 1, mic: 2, calibration: 3 } as const;
@@ -72,7 +65,7 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
   // The room decision from the code step, applied once the whole wizard finishes
   const roomTarget = useRef<{ roomCode: string; create: boolean }>(
     mode === 'create'
-      ? { roomCode: generateRoomCode(), create: true }
+      ? { roomCode: generateRoomCode(ONLINE_ROOM_CODE_LENGTH), create: true }
       : { roomCode: joinRoomCode ?? '', create: false },
   );
 

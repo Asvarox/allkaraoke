@@ -6,6 +6,7 @@ import { ServerTransport } from '~/modules/remote-mic/network/server/transport/i
 import { PartyKitServerTransport } from '~/modules/remote-mic/network/server/transport/party-kit-server';
 import { WebSocketServerTransport } from '~/modules/remote-mic/network/server/transport/web-socket-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
+import generateRoomCode from '~/modules/utils/generate-room-code';
 import storage from '~/modules/utils/storage';
 import { RemoteMicConnectionTypeSetting } from '~/routes/settings/settings-state';
 
@@ -36,10 +37,9 @@ export class NetworkServer {
 
   public constructor() {
     if (!this.gameCode) {
-      this.gameCode = '';
-      for (let i = 0; i < GAME_CODE_LENGTH - 1; i++) {
-        this.gameCode += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-      }
+      // One character short of GAME_CODE_LENGTH: `getGameCode()` prepends the transport-type letter,
+      // and that prefix has to fit within the length remote mics type in.
+      this.gameCode = generateRoomCode(GAME_CODE_LENGTH - 1);
     }
 
     global?.addEventListener?.('beforeunload', () => {
