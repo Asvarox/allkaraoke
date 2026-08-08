@@ -28,25 +28,15 @@ import {
   WireDetailedScore,
 } from './types';
 
-export interface OnlinePersistedState {
-  participants: OnlineParticipant[];
-  nextJoinOrder: number;
-  hostId: string | null;
-  tolerance: number;
-  phase: OnlineRoomState['phase'];
-  chart: ChartManifest | null;
-  /** Compressed (gzip+base64) chart payload, served as-is to (late-)joining clients. */
-  chartData: string | null;
-  /** Preview (video/details) of the selected chart, shown in every lobby. */
-  chartPreview?: SongHoverPreview | null;
-  leaderboard: OnlineRoomState['leaderboard'];
-  finalResults: OnlineFinalResult[] | null;
-  lastActivityAt: number;
-  /** Participants kicked by the host — they cannot rejoin this room. */
-  bannedIds?: string[];
-  /** True once someone explicitly opened (created) this room. */
-  created?: boolean;
-}
+/** Fields added after the first release — blobs still in storage predate them, so they stay optional. */
+type LatePersistedField = 'chartPreview' | 'bannedIds' | 'created';
+
+/**
+ * The hibernation payload, derived from `OnlineRoomLogic.snapshot()` so the type cannot drift
+ * from the value actually written: adding a field to the snapshot adds it here automatically.
+ */
+export type OnlinePersistedState = Omit<RoomSnapshot, LatePersistedField> &
+  Partial<Pick<RoomSnapshot, LatePersistedField>>;
 
 /** Everything the room logic needs from its host environment (PartyKit room or a test harness). */
 export interface OnlineRoomDeps {
@@ -132,6 +122,15 @@ export class OnlineRoomLogic {
 
   // --- state snapshot / publishing ---
 
+  /**
+   * The state pushed to clients. Wider than what is persisted (see `snapshot`): the mid-song
+   * bookkeeping — `readinessDeadline`, `playbackAnchor`, `pause`, `resumeCountdownEndsAt` and
+   * `finishRequestedAt` — is deliberately transient, as it is only meaningful while the timers
+   * backing it are alive and those do not survive hibernation. `roomCode` comes from the deps
+   * rather than from state, and `songVotes`/`playerStats` are in-memory only and not part of the
+   * room state at all. Arrays are cloned here because this leaves the room; `snapshot` hands the
+   * live references over to the storage layer.
+   */
   public getState = (): OnlineRoomState => ({
     roomCode: this.deps.roomCode,
     phase: this.phase,
@@ -148,24 +147,36 @@ export class OnlineRoomLogic {
     finalResults: this.finalResults ? [...this.finalResults] : null,
   });
 
+  /**
+   * Everything the room needs to come back after a restart, in one place — `OnlinePersistedState`
+   * is derived from this method, so a field can never be persisted without being in the type or
+   * declared in the type without being written. Public (rather than private) only because a
+   * private member cannot be reached by the `ReturnType<…>` that derives the type.
+   */
+  public snapshot = () => ({
+    participants: this.participants,
+    nextJoinOrder: this.nextJoinOrder,
+    hostId: this.hostId,
+    tolerance: this.tolerance,
+    phase: this.phase,
+    chart: this.chart,
+    /** Compressed (gzip+base64) chart payload, served as-is to (late-)joining clients. */
+    chartData: this.chartData,
+    /** Preview (video/details) of the selected chart, shown in every lobby. */
+    chartPreview: this.chartPreview,
+    leaderboard: this.leaderboard,
+    finalResults: this.finalResults,
+    lastActivityAt: this.lastActivityAt,
+    /** Participants kicked by the host — they cannot rejoin this room. */
+    bannedIds: this.bannedIds,
+    /** True once someone explicitly opened (created) this room. */
+    created: this.created,
+  });
+
   private touch = () => {
     this.lastActivityAt = this.deps.now();
     this.deps.scheduleTtl(this.lastActivityAt + ONLINE_ROOM_TTL_MS);
-    this.deps.persist({
-      participants: this.participants,
-      nextJoinOrder: this.nextJoinOrder,
-      hostId: this.hostId,
-      tolerance: this.tolerance,
-      phase: this.phase,
-      chart: this.chart,
-      chartData: this.chartData,
-      chartPreview: this.chartPreview,
-      leaderboard: this.leaderboard,
-      finalResults: this.finalResults,
-      lastActivityAt: this.lastActivityAt,
-      bannedIds: this.bannedIds,
-      created: this.created,
-    });
+    this.deps.persist(this.snapshot());
   };
 
   private publishState = () => {
@@ -177,56 +188,51 @@ export class OnlineRoomLogic {
     this.deps.publish('leaderboard', [...this.leaderboard]);
   };
 
-  // Score snapshots arrive from every singer — coalesce broadcasts (leading + trailing)
-  // so subscribers get at most one leaderboard update per ONLINE_LEADERBOARD_PUBLISH_MS.
-  private leaderboardDirty = false;
-
-  private startLeaderboardCooldown = () => {
-    this.setTimer('leaderboard-throttle', ONLINE_LEADERBOARD_PUBLISH_MS, () => {
-      this.timers.delete('leaderboard-throttle');
-      if (this.leaderboardDirty) {
-        this.leaderboardDirty = false;
-        this.publishLeaderboard();
-        this.startLeaderboardCooldown();
-      }
-    });
-  };
-
-  private queueLeaderboardPublish = () => {
-    if (this.timers.has('leaderboard-throttle')) {
-      this.leaderboardDirty = true;
-      return;
-    }
-    this.publishLeaderboard();
-    this.startLeaderboardCooldown();
-  };
-
-  // Ping/volume snapshots arrive continuously from every singer — same coalescing as scores.
-  private statsDirty = false;
-
   private publishStats = () => {
     this.deps.publish('player-stats', { ...this.playerStats });
   };
 
-  private startStatsCooldown = () => {
-    this.setTimer('stats-throttle', ONLINE_STATS_PUBLISH_MS, () => {
-      this.timers.delete('stats-throttle');
-      if (this.statsDirty) {
-        this.statsDirty = false;
-        this.publishStats();
-        this.startStatsCooldown();
+  /**
+   * Leading + trailing throttle: the first update goes out immediately, everything that arrives
+   * during the cooldown is coalesced into a single publish when it ends — and the cooldown keeps
+   * restarting for as long as updates keep coming.
+   */
+  private createCoalescedPublisher = (timerName: string, intervalMs: number, publish: () => void) => {
+    let dirty = false;
+    const startCooldown = () => {
+      this.setTimer(timerName, intervalMs, () => {
+        this.timers.delete(timerName);
+        if (dirty) {
+          dirty = false;
+          publish();
+          startCooldown();
+        }
+      });
+    };
+    return () => {
+      if (this.timers.has(timerName)) {
+        dirty = true;
+        return;
       }
-    });
+      publish();
+      startCooldown();
+    };
   };
 
-  private queueStatsPublish = () => {
-    if (this.timers.has('stats-throttle')) {
-      this.statsDirty = true;
-      return;
-    }
-    this.publishStats();
-    this.startStatsCooldown();
-  };
+  // Score snapshots arrive from every singer — coalesce broadcasts so subscribers get at most
+  // one leaderboard update per ONLINE_LEADERBOARD_PUBLISH_MS.
+  private queueLeaderboardPublish = this.createCoalescedPublisher(
+    'leaderboard-throttle',
+    ONLINE_LEADERBOARD_PUBLISH_MS,
+    this.publishLeaderboard,
+  );
+
+  // Ping/volume snapshots arrive continuously from every singer — same coalescing as scores.
+  private queueStatsPublish = this.createCoalescedPublisher(
+    'stats-throttle',
+    ONLINE_STATS_PUBLISH_MS,
+    this.publishStats,
+  );
 
   // --- participants ---
 
@@ -452,6 +458,31 @@ export class OnlineRoomLogic {
     }
   };
 
+  /**
+   * Everything a phase change has to unwind, grouped into the three things that can be in flight:
+   * the playback anchor (with its pause/resume bookkeeping), the readiness countdown and the
+   * host's end-game request. The call sites clear different subsets — each difference is an
+   * explicit `keep*` flag rather than a silent omission, so it is visible from the call which
+   * state a transition leaves standing on purpose.
+   */
+  private resetPlayback = ({ keepAnchor = false, keepReadiness = false, keepFinishRequest = false } = {}) => {
+    if (!keepAnchor) {
+      this.playbackAnchor = null;
+      this.pause = null;
+      this.resumeCountdownEndsAt = null;
+      this.clearTimer('resume');
+      this.clearTimer('buffering');
+    }
+    if (!keepReadiness) {
+      this.readinessDeadline = null;
+      this.clearTimer('readiness');
+    }
+    if (!keepFinishRequest) {
+      this.finishRequestedAt = null;
+      this.clearTimer('force-results');
+    }
+  };
+
   // --- scoring / results ---
 
   private checkAllFinished = () => {
@@ -467,13 +498,11 @@ export class OnlineRoomLogic {
 
   private enterResults = () => {
     this.phase = 'results';
-    this.playbackAnchor = null;
-    this.pause = null;
-    this.resumeCountdownEndsAt = null;
-    this.finishRequestedAt = null;
-    this.clearTimer('resume');
-    this.clearTimer('buffering');
-    this.clearTimer('force-results');
+    // The readiness deadline/timer are left standing — results can be entered straight out of
+    // readiness (a forced end) and this transition has never cleared them. The timer is inert
+    // outside the readiness phase (beginPlayback bails), but readinessDeadline stays in the
+    // published state for the duration of the results.
+    this.resetPlayback({ keepReadiness: true });
   };
 
   /** After the host ends the game, singers that never published a final score get one
@@ -497,22 +526,14 @@ export class OnlineRoomLogic {
 
   private returnToLobby = () => {
     this.phase = 'lobby';
-    this.readinessDeadline = null;
-    this.playbackAnchor = null;
-    this.pause = null;
-    this.resumeCountdownEndsAt = null;
+    this.resetPlayback();
     this.finalResults = null;
-    this.finishRequestedAt = null;
     this.leaderboard = [];
     // The finished song is done — the next round starts with a fresh selection
     this.chart = null;
     this.chartData = null;
     this.chartPreview = null;
     this.songVotes = {};
-    this.clearTimer('resume');
-    this.clearTimer('buffering');
-    this.clearTimer('readiness');
-    this.clearTimer('force-results');
     this.participants.forEach((participant) => {
       participant.ready = false;
       participant.playback = 'unstarted';
@@ -554,8 +575,11 @@ export class OnlineRoomLogic {
       cancelStart: defineMutation((ctx) => {
         this.requireHost(ctx.senderId);
         if (this.phase !== 'readiness') throw new Error('Not starting a song');
-        this.clearTimer('readiness');
-        this.readinessDeadline = null;
+        // Only the readiness countdown is unwound: a cancel can only come from 'readiness', where
+        // the playback anchor is never set. An end-game requested during readiness is left
+        // standing (this transition has never cleared it) — its force-results timer bails out
+        // once the phase is back to 'lobby', but finishRequestedAt stays in the published state.
+        this.resetPlayback({ keepAnchor: true, keepFinishRequest: true });
         this.phase = 'lobby';
         this.leaderboard = [];
         this.participants.forEach((participant) => {
@@ -730,6 +754,8 @@ export class OnlineRoomLogic {
 
   public getLastActivityAt = () => this.lastActivityAt;
 }
+
+type RoomSnapshot = ReturnType<OnlineRoomLogic['snapshot']>;
 
 export type OnlineHandlers = ReturnType<OnlineRoomLogic['createHandlers']>;
 export type OnlineServerRpc = ExtractContract<OnlineHandlers>;
