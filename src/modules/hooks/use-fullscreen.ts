@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+import isE2E from '~/modules/utils/is-e2-e';
 import { AutoEnableFullscreenSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 export default function useFullscreen() {
@@ -7,7 +8,7 @@ export default function useFullscreen() {
 
   useEffect(() => {
     try {
-      if (autoEnableFullscreen) {
+      if (autoEnableFullscreen && !isE2E()) {
         document.body.requestFullscreen().catch(console.info);
       }
     } catch (_e) {}

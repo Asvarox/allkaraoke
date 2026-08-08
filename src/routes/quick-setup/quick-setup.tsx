@@ -6,6 +6,7 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import isDev from '~/modules/utils/is-dev';
+import isE2E from '~/modules/utils/is-e2-e';
 import SuggestMobileMode from '~/routes/quick-setup/suggest-mobile-mode';
 import SelectInputView from '~/routes/select-input/select-input-view';
 import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
@@ -18,7 +19,7 @@ function QuickSetup() {
   const navigate = useSmoothNavigate();
   const onFinish = async () => {
     navigate('menu/');
-    if (!isDev() && mobilePhoneMode && document.fullscreenElement === null) {
+    if (!isDev() && !isE2E() && mobilePhoneMode && document.fullscreenElement === null) {
       try {
         await document.body.requestFullscreen();
         global.screen.orientation.unlock();

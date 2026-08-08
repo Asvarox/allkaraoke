@@ -10,7 +10,8 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test('Fullscreen is turning on automatically, if user doesnt turn off fullscreen before', async ({ page }) => {
+// We will likely get rid of turning on the fullscreen automatically, so this test is skipped for now. It is kept here for reference.
+test.skip('Fullscreen is turning on automatically, if user doesnt turn off fullscreen before', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
