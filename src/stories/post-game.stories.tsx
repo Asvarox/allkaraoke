@@ -22,6 +22,8 @@ interface StoryArgs {
   player4Score: number;
   player5Score: number;
   gameMode: ValuesType<typeof GAME_MODE>;
+  highScoresEnabled: boolean;
+  cameraEnabled: boolean;
 }
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -77,6 +79,8 @@ const Template = (args: StoryArgs) => {
       width={width}
       height={height}
       onClickSongSelection={() => undefined}
+      highScoresEnabled={args.highScoresEnabled}
+      cameraEnabled={args.cameraEnabled}
       song={convertTxtToSong(song)}
       highScores={[
         {
@@ -137,6 +141,8 @@ const meta = {
     player1Score: 69,
     player2Score: 70,
     player3Score: 71,
+    highScoresEnabled: true,
+    cameraEnabled: true,
   },
   parameters: {
     layout: 'fullscreen',
@@ -146,6 +152,17 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const PostGameStory: Story = {
+  play: async ({ canvas }) => {
+    await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
+  },
+};
+
+/** How the online results screen renders it: no high-score step, no camera roll. */
+export const OnlinePostGameStory: Story = {
+  args: {
+    highScoresEnabled: false,
+    cameraEnabled: false,
+  },
   play: async ({ canvas }) => {
     await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
   },

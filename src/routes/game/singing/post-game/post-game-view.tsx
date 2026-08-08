@@ -31,22 +31,39 @@ interface Props {
   players: PlayerScore[];
   singSetup: SingSetup;
   highScores: HighScoreEntity[];
+  /** Online games are not persisted to local high scores, so there is no high-score step to advance to. */
+  highScoresEnabled?: boolean;
+  /** Online mode hides the camera roll — the singers are not in the same room. */
+  cameraEnabled?: boolean;
+  'data-test'?: string;
 }
 
-function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetup }: Props) {
+function PostGameView({
+  song,
+  width,
+  height,
+  onClickSongSelection,
+  players,
+  highScores,
+  singSetup,
+  highScoresEnabled = true,
+  cameraEnabled = true,
+  'data-test': dataTest,
+}: Props) {
   const [backgroundTheme] = useSettingValue(BackgroundThemeSetting);
   useBackgroundMusic(true);
   const [step, setStep] = useState<'results' | 'highscores'>('results');
 
   return (
     <SongPage songData={song} width={width} height={height}>
-      <div className="flex flex-1 flex-col gap-2">
+      <div className="flex flex-1 flex-col gap-2" data-test={dataTest}>
         {step === 'results' && (
           <ResultsView
-            onNextStep={() => setStep('highscores')}
+            onNextStep={() => (highScoresEnabled ? setStep('highscores') : onClickSongSelection())}
             players={players}
             singSetup={singSetup}
             highScores={highScores}
+            cameraEnabled={cameraEnabled}
           />
         )}
         {step === 'highscores' && (
