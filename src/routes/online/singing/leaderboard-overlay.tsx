@@ -3,8 +3,7 @@ import CountUp from 'react-countup';
 
 import { PlayerColorDot } from '~/modules/elements/player-color-dot';
 import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
-
-const formatScore = (score: number) => Math.max(0, Math.floor(score)).toLocaleString('en');
+import { formatScore } from '~/modules/online/format-score';
 
 /** Presentational live leaderboard rendered from room score snapshots — does not touch GameState.
  * Score updates arrive throttled from the server; CountUp + layout animations smooth them out. */
@@ -25,7 +24,7 @@ function LeaderboardOverlay() {
           className="typography flex items-center gap-2 text-base"
           data-test={`online-leaderboard-entry-${entry.playerNumber}`}>
           <span className="w-6 text-right">{index + 1}.</span>
-          <PlayerColorDot playerNumber={entry.playerNumber} />
+          <PlayerColorDot number={entry.playerNumber} />
           <span className="max-w-40 truncate">{entry.name}</span>
           <span className="text-active ml-auto pl-3" data-test="online-leaderboard-score">
             <CountUp end={entry.score} duration={0.7} preserveValue formattingFn={formatScore} />

@@ -1,29 +1,25 @@
 import { useEffect } from 'react';
-import { twc } from 'react-twc';
 import { useUpdate } from 'react-use';
 
-import styles from '~/modules/game-engine/drawing/styles';
+import { PlayerColorDot } from '~/modules/elements/player-color-dot';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { useSubscription } from '~/modules/remote-mic/network/client/hooks/use-subscription';
 
 interface Props {
-  number: number | null;
+  number: PlayerNumber | null;
 }
 
-export default function PlayerNumberCircle({ number, ...restProps }: Props) {
+/**
+ * The player dot on the phone. `PlayerColorDot` with the one thing only the remote mic needs on top
+ * of it: the theme arrives over the wire, and `switchToTheme` swaps `styles.colors.players` in place
+ * rather than through state, so nothing here would re-render on its own — hence the forced update.
+ */
+export default function PlayerNumberCircle({ number }: Props) {
   const style = useSubscription('style') ?? 'regular';
   const forceUpdate = useUpdate();
   useEffect(() => {
     forceUpdate();
   }, [style, forceUpdate]);
 
-  return (
-    <PlayerColorCircle
-      style={{
-        background: number !== null ? styles.colors.players[number].perfect.fill : styles.colors.text.inactive,
-      }}
-      {...restProps}
-    />
-  );
+  return <PlayerColorDot number={number} variant="fill" />;
 }
-
-const PlayerColorCircle = twc.div`inline-block aspect-square h-[1em] w-[1em] rounded-[1em]`;

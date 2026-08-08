@@ -7,11 +7,10 @@ import Typography from '~/modules/elements/akui/primitives/typography';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
 import useKeyboard from '~/modules/hooks/use-keyboard';
-import { useOnlinePlayersStats } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineParticipant } from '~/modules/online/protocol/types';
 import { waitFinished, waitForReadinessMusic } from '~/modules/sound-manager';
-import { MicCheckSlotShell } from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check/mic-check-slot';
+import ParticipantSlot from '~/routes/online/components/participant-slot';
 
 interface Props {
   participants: OnlineParticipant[];
@@ -36,7 +35,6 @@ const READINESS_EXIT_S = 0.7;
  * whoever walked away from their keyboard.
  */
 function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isHost, starting }: Props) {
-  const stats = useOnlinePlayersStats();
   const connected = participants.filter((participant) => participant.connected);
   const self = participants.find((participant) => participant.id === selfId);
   const everyoneReady = starting || (connected.length > 0 && connected.every((participant) => participant.ready));
@@ -96,18 +94,8 @@ function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isH
                 )}
               </span>
             )}
-            <MicCheckSlotShell
-              className="flex-1"
-              playerNumber={participant.playerNumber}
-              name={<span className="ph-no-capture truncate">{participant.name}</span>}
-              connected
-              // Own level comes from the local mic pipeline; everyone else reports theirs to the room
-              volume={
-                participant.id === selfId
-                  ? { type: 'local' }
-                  : { type: 'remote', volume: stats[participant.id]?.volume ?? 0 }
-              }
-            />
+            {/* Nothing but the name here — the tick to the left already says who's waited for */}
+            <ParticipantSlot className="flex-1" participant={participant} selfId={selfId} showPing={false} />
           </div>
         ))}
       </div>

@@ -1,22 +1,18 @@
-import { ComponentRef, useRef, useState } from 'react';
+import { ComponentProps, ReactNode, useState } from 'react';
 
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Menu } from '~/modules/elements/akui/menu';
-import { Tag } from '~/modules/elements/akui/tag';
 import { MenuButton } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
-import { PlayerColorDot } from '~/modules/elements/player-color-dot';
-import { Switcher } from '~/modules/elements/switcher';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
-import { useOnlineLeaderboard, useOnlinePlayersStats } from '~/modules/online/client/hooks';
+import useKeyboardNav, { KeyboardNavContext, useRegister } from '~/modules/hooks/use-keyboard-nav';
+import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
+import { formatScore } from '~/modules/online/format-score';
 import { OnlineParticipant, OnlinePauseState } from '~/modules/online/protocol/types';
-import ParticipantBadges from '~/routes/online/components/participant-badges';
+import ParticipantSlot from '~/routes/online/components/participant-slot';
 import useKickParticipant from '~/routes/online/hooks/use-kick-participant';
 import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
-import useMicSwitcher from '~/routes/select-input/hooks/use-mic-switcher';
-import InputLag from '~/routes/settings/input-lag';
-import { MicCheckSlotShell } from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check/mic-check-slot';
+import { InGameInputLag, InGameMicSwitcher } from '~/routes/settings/in-game-audio-settings';
 
 interface Props {
   pause: OnlinePauseState;
@@ -27,19 +23,33 @@ interface Props {
   participants: OnlineParticipant[];
 }
 
+interface PauseButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClick' | 'children'> {
+  name: string;
+  onClick: () => void;
+  isDefault?: boolean;
+  children: ReactNode;
+}
+
+/** A pause-menu button that registers from its own render, so it keeps its visual place in the
+ * keyboard navigation order — same reason the settings rows do, see `in-game-audio-settings.tsx`. */
+function PauseButton({ name, onClick, isDefault = false, children, ...props }: PauseButtonProps) {
+  const register = useRegister();
+
+  return (
+    <MenuButton {...props} {...register(name, onClick, undefined, isDefault)}>
+      {children}
+    </MenuButton>
+  );
+}
+
 function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, participants }: Props) {
   const [confirmEndOpen, setConfirmEndOpen] = useState(false);
   const { isKicking, requestKick, kickModal } = useKickParticipant();
   const leaderboard = useOnlineLeaderboard();
-  const stats = useOnlinePlayersStats();
   const selfId = OnlineClient.getParticipantId();
   const modalOpen = confirmEndOpen || isKicking;
 
   const { register } = useKeyboardNav({ enabled: !modalOpen });
-
-  // Mic selection + input lag, adjustable mid-game like in the local pause menu
-  const inputLagRef = useRef<ComponentRef<typeof InputLag>>(null);
-  const { selectedMic, cycleMic } = useMicSwitcher();
 
   if (resumeCountdownEndsAt !== null) {
     return <CountdownOverlay endsAtServerTime={resumeCountdownEndsAt} label="Resuming in" />;
@@ -54,68 +64,45 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
 
   return (
     <Modal open>
-      <Menu data-test="online-pause-overlay">
-        <Menu.Header>
-          {pause.reason === 'buffering' ? `Paused — ${pause.name}'s video is buffering` : `Paused by ${pause.name}`}
-        </Menu.Header>
-        {/* The same singer rows as the lobby, at the density a menu with settings under it allows */}
-        <div className="flex flex-col gap-1">
-          {connected.map((participant) => {
-            const isSelf = participant.id === selfId;
-            const score = leaderboard.find((entry) => entry.participantId === participant.id)?.score ?? 0;
-
-            return (
-              <MicCheckSlotShell
+      <KeyboardNavContext value={register}>
+        <Menu data-test="online-pause-overlay">
+          <Menu.Header>
+            {pause.reason === 'buffering' ? `Paused — ${pause.name}'s video is buffering` : `Paused by ${pause.name}`}
+          </Menu.Header>
+          {/* The same singer rows as the lobby, at the density a menu with settings under it allows */}
+          <div className="flex flex-col gap-1">
+            {connected.map((participant) => (
+              <ParticipantSlot
                 key={participant.id}
                 data-test={`online-pause-player-${participant.playerNumber}`}
                 size="compact"
-                playerNumber={participant.playerNumber}
-                name={
-                  <span className="flex items-center gap-2">
-                    <PlayerColorDot playerNumber={participant.playerNumber} />
-                    {participant.name}
-                  </span>
-                }
-                connected={participant.connected}
-                // The own volume comes straight from the local mic pipeline (no re-render per
-                // frame); everyone else's is the level they report to the room.
-                volume={isSelf ? { type: 'local' } : { type: 'remote', volume: stats[participant.id]?.volume ?? 0 }}>
-                <ParticipantBadges stats={stats[participant.id]}>
-                  {participant.id === hostId && <Tag>host</Tag>}
-                  <span className="text-active text-sm [font-variant-numeric:tabular-nums]">
-                    {Math.max(0, Math.floor(score)).toLocaleString('en')}
-                  </span>
-                  {isHost && !isSelf && (
-                    <button
-                      type="button"
-                      onClick={() => requestKick(participant)}
-                      title={`Remove ${participant.name} from the room`}
-                      className="flex cursor-pointer items-center text-sm opacity-75 hover:text-red-400 hover:opacity-100"
-                      data-test={`online-kick-${participant.playerNumber}`}>
-                      ✕
-                    </button>
-                  )}
-                </ParticipantBadges>
-              </MicCheckSlotShell>
-            );
-          })}
-        </div>
-        <Menu.Divider />
-        <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic || '—'} />
-        <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.element?.focus())} />
-        <Menu.Divider />
-        <MenuButton {...register('online-resume-button', onResume, undefined, true)} data-test="online-resume-button">
-          Resume song
-        </MenuButton>
-        {isHost && (
-          <MenuButton
-            {...register('online-end-game-button', () => setConfirmEndOpen(true))}
-            size="small"
-            data-test="online-end-game-button">
-            End game for everyone
-          </MenuButton>
-        )}
-      </Menu>
+                participant={participant}
+                selfId={selfId}
+                hostId={hostId}
+                showTags
+                showColorDot
+                onKick={requestKick}>
+                <span className="text-active text-sm [font-variant-numeric:tabular-nums]">
+                  {formatScore(leaderboard.find((entry) => entry.participantId === participant.id)?.score ?? 0)}
+                </span>
+              </ParticipantSlot>
+            ))}
+          </div>
+          <Menu.Divider />
+          {/* Mic selection + input lag, adjustable mid-game like in the local pause menu */}
+          <InGameMicSwitcher />
+          <InGameInputLag />
+          <Menu.Divider />
+          <PauseButton name="online-resume-button" onClick={onResume} isDefault>
+            Resume song
+          </PauseButton>
+          {isHost && (
+            <PauseButton name="online-end-game-button" onClick={() => setConfirmEndOpen(true)} size="small">
+              End game for everyone
+            </PauseButton>
+          )}
+        </Menu>
+      </KeyboardNavContext>
       <ConfirmModal
         open={confirmEndOpen}
         onClose={() => setConfirmEndOpen(false)}
