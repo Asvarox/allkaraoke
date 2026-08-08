@@ -5,6 +5,7 @@ import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import { menuBack, menuEnter, menuNavigate } from '~/modules/sound-manager';
+import scrollIntoView from '~/modules/utils/scroll-into-view';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 import { ControlDescriptor, ControlInput, RemoteButtonIcon } from '~/routes/keyboard-help/controls';
 
@@ -114,10 +115,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     () =>
       committedControls.length > 0
         ? {
-            // Mirror mode — mutually exclusive with the arrow/accept fields.
+            // Mirror mode swaps the remote's arrow pad for the mirrored controls, but the on-screen
+            // indicator (KeyboardHelpView) still needs [direction]/accept — arrow keys keep working
+            // locally regardless of what the phone renders.
             mode: 'mirror',
             title,
             icon: titleIcon,
+            [direction]: null,
+            accept: currentlySelectedActionLabel ?? null,
             back: onBackspace ? backspaceHelp : undefined,
             controls: committedControls,
             ...additionalHelp,
@@ -296,9 +301,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   };
 
   useEffect(() => {
-    document
-      .querySelector(`[data-test="${currentlySelected}"]`)
-      ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    scrollIntoView(document.querySelector(`[data-test="${currentlySelected}"]`), { block: 'center' });
   }, [currentlySelected]);
 
   // oxlint-disable-next-line react-hooks/exhaustive-deps

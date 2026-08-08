@@ -1,7 +1,7 @@
 import { captureException } from '@sentry/react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
-import { twc, TwcComponentProps } from 'react-twc';
+import { twc } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
 
 import { Button } from '~/modules/elements/akui/button';
@@ -13,7 +13,8 @@ import { HelpEntry, KeyboardLayoutMode } from '~/routes/keyboard-help/context';
 import { assertNever } from '~/routes/keyboard-help/controls';
 import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
 import RemoteControl from '~/routes/remote-mic/panels/microphone/remote-controls';
-import RemoteSongSearch from '~/routes/remote-mic/panels/microphone/remote-song-search';
+import SongSelectionGroups from '~/routes/remote-mic/panels/microphone/song-selection-groups';
+import SongSelectionToolbar from '~/routes/remote-mic/panels/microphone/song-selection-toolbar';
 
 interface Props {
   onSearchStateChange?: (isActive: boolean) => void;
@@ -220,29 +221,39 @@ function ClassicKeyboard({ keyboard }: { keyboard: HelpEntry }) {
   );
 }
 
-// Song-selection mode — the bespoke song browser: search widget + arrow pad + "Random song".
-// Extend here (e.g. playlist controls) without touching the other modes.
+// Song-selection mode — the bespoke song browser: the screen's own toolbar and group row mirrored
+// on top (search / random / playlists, then the groups), with the arrow pad below for moving
+// song-by-song. The toolbar and group data ride their own `song-selection` channel rather than the
+// keyboard layout, since they change on every scroll; until the first push arrives the rows render
+// empty and the arrow pad alone is usable.
 function SongSelectionKeyboard({ keyboard, onSearchStateChange }: { keyboard: HelpEntry } & Props) {
+  const songSelection = useSubscription('song-selection');
+
   return (
     <motion.div
       data-test="remote-keyboard"
       data-mode="song-selection"
-      className="flex flex-wrap justify-center gap-4"
+      // Sized by its content, NOT `h-full`: the panel slides this whole column up by the mic
+      // preview's height while the search field is open (see microphone.tsx), which would push a
+      // full-height column's top rows off-screen.
+      className="flex w-full flex-col gap-3"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.15 }}>
-      {keyboard.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
-      <NavPad keyboard={keyboard} />
-      {/* "Random song" only makes sense while browsing songs, so it lives in this mode, not NavPad. */}
-      <ActionsContainer
-        $disabled={keyboard.shiftR === undefined}
-        data-test="keyboard-shift-r"
-        className="w-full basis-full">
-        <ActionButton onClick={onPress('random')}>
-          <Icon icon="ic:baseline-shuffle" /> {keyboard.shiftR || 'Random Song'}
-        </ActionButton>
-      </ActionsContainer>
+      <SongSelectionToolbar
+        playlists={songSelection?.playlists ?? []}
+        selectedPlaylist={songSelection?.selectedPlaylist ?? null}
+        searchEnabled={!!keyboard.remote?.includes('search')}
+        // "Random song" only makes sense while browsing songs, so it lives in this mode, not NavPad.
+        randomEnabled={keyboard.shiftR !== undefined}
+        onRandom={onPress('random')}
+        onSearchStateChange={onSearchStateChange}
+      />
+      <SongSelectionGroups groups={songSelection?.groups ?? []} />
+      <div className="flex flex-wrap justify-center gap-4">
+        <NavPad keyboard={keyboard} />
+      </div>
     </motion.div>
   );
 }
@@ -317,10 +328,7 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
 
 const ArrowsContainer = twc.div`flex flex-1 justify-center text-xl text-white`;
 
-const ActionsContainer = twc.div<TwcComponentProps<'div'> & { $disabled?: boolean }>((props) => [
-  'flex flex-1 flex-col justify-between',
-  props.$disabled ? 'opacity-0' : 'opacity-100',
-]);
+const ActionsContainer = twc.div`flex flex-1 flex-col justify-between`;
 
 function ArrowButton({ className, ...props }: ComponentProps<typeof Button>) {
   return (

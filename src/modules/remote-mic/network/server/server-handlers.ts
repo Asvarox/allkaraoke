@@ -38,6 +38,16 @@ export const serverHandlers = {
       events.remoteSongSelected.dispatch(id);
     }),
 
+    // Switch the song selection screen's playlist from the phone's mirrored toolbar.
+    setPlaylist: defineMutation((_ctx: RpcContext, name: string) => {
+      events.remotePlaylistSelected.dispatch(name);
+    }),
+
+    // Jump the song list to a group from the phone's mirrored group nav row.
+    scrollToGroup: defineMutation((_ctx: RpcContext, name: string) => {
+      events.remoteSongGroupSelected.dispatch(name);
+    }),
+
     // Any connected mic can update its own favourites list
     sendMyList: defineMutation(
       (_ctx: RpcContext, delta: { added?: string[]; deleted?: string[] }) => {

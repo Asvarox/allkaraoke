@@ -5061,6 +5061,34 @@
     "local": false
   },
   {
+    "id": "aitana-superestrella",
+    "title": "SUPERESTRELLA",
+    "artist": "Aitana",
+    "video": "vz_vU53JvvI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 272,
+    "gap": 3417.3529411764707,
+    "year": "2025",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-08-05T05:29:42.100Z",
+    "genre": "Pop",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 182,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6056,
+    "tracksCount": 1,
+    "search": "aitanasuperestrella",
+    "local": false
+  },
+  {
     "id": "aitana-vas-a-quedarte",
     "title": "Vas a quedarte",
     "artist": "Aitana",
@@ -34308,6 +34336,34 @@
     "local": false
   },
   {
+    "id": "chris-cornell-you-know-my-name",
+    "title": "You Know My Name",
+    "artist": "Chris Cornell",
+    "video": "X_RAMrU_K8E",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.02,
+    "gap": 18828.253217947786,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-05T05:30:14.290Z",
+    "genre": "Soundtrack",
+    "realBpm": 275,
+    "volume": 0.96,
+    "author": "Canni",
+    "duration": 250,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6057,
+    "tracksCount": 1,
+    "search": "chriscornellyouknowmyname",
+    "local": false
+  },
+  {
     "id": "chris-isaak-wicked-game",
     "title": "Wicked Game",
     "artist": "Chris Isaak",
@@ -54649,6 +54705,33 @@
     "shortId": 1522,
     "tracksCount": 1,
     "search": "enyaorinocoflowsailaway",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-talya-sindel-puppeteer",
+    "title": "Puppeteer",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Talya Sindel)",
+    "video": "tso8nSWnENM",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 17307.5,
+    "year": "2024",
+    "lastUpdate": "2026-08-05T05:30:34.089Z",
+    "genre": "Musical",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6058,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransarmandojuliantalyasindelpuppeteer",
     "local": false
   },
   {
@@ -145160,6 +145243,36 @@
     "shortId": 3927,
     "tracksCount": 1,
     "search": "shockinglemonunderstar",
+    "local": false
+  },
+  {
+    "id": "shoji-meguro-feat-lyn-last-surprise",
+    "title": "Last Surprise",
+    "artist": "Shoji Meguro feat. Lyn",
+    "video": "OvRVh128wbo",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.42,
+    "gap": 15888.670424236325,
+    "year": "2016",
+    "lastUpdate": "2026-08-08T01:02:48.496Z",
+    "realBpm": 123,
+    "previewStart": 45,
+    "previewEnd": 63,
+    "volume": 1,
+    "author": "Lyn",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=183593",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28337",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6059,
+    "tracksCount": 1,
+    "search": "shojimegurofeatlynlastsurprise",
     "local": false
   },
   {

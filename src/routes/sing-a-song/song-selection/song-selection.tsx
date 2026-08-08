@@ -23,7 +23,10 @@ import {
   VirtualizedList,
   VirtualizedListMethods,
 } from '~/routes/sing-a-song/song-selection/components/virtualized-list';
+import useRemoteSongSelectionMirror from '~/routes/sing-a-song/song-selection/hooks/use-remote-song-selection-mirror';
+import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import useSongSelection from '~/routes/sing-a-song/song-selection/hooks/use-song-selection';
+import useVisibleSongGroups from '~/routes/sing-a-song/song-selection/hooks/use-visible-song-groups';
 import { getSongIdWithNew } from '~/routes/sing-a-song/song-selection/utils/get-song-id-with-new';
 import { cn } from '~/utils/cn';
 
@@ -111,6 +114,41 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
   const forceFlag = selectedPlaylist === 'Eurovision';
 
   const container = useRef<HTMLDivElement>(null);
+
+  // The nav row is empty while loading, and the on-screen row, the visibility observer and the
+  // remote-mic mirror all have to agree on which groups exist — so the swap happens once, here.
+  const navGroups = loading ? [] : groupedSongList;
+  const visibleGroups = useVisibleSongGroups(container, navGroups);
+
+  const scrollToGroup = useCallback(
+    (group: SongGroup) => {
+      if (group.songs.length === 0) return;
+
+      moveToSong(getSongIdWithNew(group.songs[0], group));
+      // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
+      setTimeout(() => list.current?.scrollToGroup(group.name), 20);
+    },
+    [moveToSong],
+  );
+
+  useRemoteSongSelectionMirror({
+    playlists,
+    selectedPlaylist,
+    groupedSongList: navGroups,
+    visibleGroups,
+    focusedSong,
+  });
+
+  useEventEffect(events.remotePlaylistSelected, (name) => setSelectedPlaylist(name), [setSelectedPlaylist]);
+
+  useEventEffect(
+    events.remoteSongGroupSelected,
+    (name) => {
+      const group = navGroups.find((candidate) => candidate.name === name);
+      if (group) scrollToGroup(group);
+    },
+    [navGroups, scrollToGroup],
+  );
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
@@ -246,16 +284,11 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
               toolbarNavActive={toolbarFocusMode}
             />
             <SongGroupsNavigation
-              containerRef={container}
-              groupedSongList={loading ? [] : groupedSongList}
+              groupedSongList={navGroups}
+              visibleGroups={visibleGroups}
               keyboardNavRegister={row2Register}
-              onScrollToGroup={(group) => {
-                if (group.songs.length === 0) return;
-
-                moveToSong(getSongIdWithNew(group.songs[0], group));
-                // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
-                setTimeout(() => list.current?.scrollToGroup(group.name), 20);
-              }}
+              focusedSong={focusedSong}
+              onScrollToGroup={scrollToGroup}
             />
           </div>
         </div>

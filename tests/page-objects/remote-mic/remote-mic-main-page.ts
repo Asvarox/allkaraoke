@@ -1,6 +1,7 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
+import { SongGroupsNavigation } from '../../components/song-groups-navigation';
 import { RemoteTabBar } from '../../page-objects/remote-mic/remote-components/remote-tab-bar';
 import { RemoteToolbar } from '../../page-objects/remote-mic/remote-components/remote-toolbar';
 import { micColorToNumberMap, micColorType } from './consts';
@@ -14,6 +15,9 @@ export class RemoteMicMainPagePO {
 
   remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
   remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
+  // The song groups row the phone mirrors from the song selection screen — same component as the
+  // screen's own row, so both sides can be asserted the same way.
+  songGroups = new SongGroupsNavigation(this.page, this.context, this.browser);
 
   // Name entry now lives in the top bar (always available, regardless of connection state) rather
   // than as a wizard step — see RenameModal.
@@ -138,8 +142,40 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('search-song-input');
   }
 
+  // Search mirrors the song selection screen's mobile layout: an icon button that expands into the
+  // input, so it has to be opened before anything can be typed.
+  public get searchSongButton() {
+    return this.page.getByTestId('search-song-button');
+  }
+
   public async searchTheSong(songID: string) {
+    // Probe for the already-open input rather than for the button: `click()` auto-waits, so a
+    // negative probe still tolerates the panel being mid-swap into the song-selection keyboard.
+    if (!(await this.searchSongInput.isVisible())) {
+      await this.searchSongButton.click();
+    }
     await this.searchSongInput.fill(songID);
+  }
+
+  public get closeSearchSongButton() {
+    return this.page.getByTestId('close-search-song-button');
+  }
+
+  public async closeTheSongSearch() {
+    await this.closeSearchSongButton.click();
+  }
+
+  public get playlistPickerTrigger() {
+    return this.page.getByTestId('playlist-picker-trigger');
+  }
+
+  public async selectPlaylist(name: string) {
+    await this.playlistPickerTrigger.click();
+    await this.page.getByTestId(`playlist-sheet-${name}`).click();
+  }
+
+  public async expectSelectedPlaylistToBe(name: string) {
+    await expect(this.playlistPickerTrigger).toContainText(name, { ignoreCase: true });
   }
 
   public get backArrowKeyboardButton() {

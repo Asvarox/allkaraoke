@@ -90,7 +90,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
           { control: { type: 'button', label: CONFIRM_UNVERIFIED_LABEL } },
         )}
       />
-      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:gap-24 [&_hr]:opacity-25">
+      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-end sm:gap-24 [&_hr]:opacity-25">
         {online ? (
           <div className="w-full shrink-0 sm:w-2/5">{online.playersView}</div>
         ) : (

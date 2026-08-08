@@ -97,9 +97,10 @@ describe('useKeyboardNav mirror mode', () => {
       { type: 'checkbox', name: 'camera', label: 'Camera', checked: true },
       { type: 'button', name: 'back', label: 'Back' },
     ]);
-    // Mirror mode is mutually exclusive with the classic arrow fields.
-    expect(help.vertical).toBeUndefined();
-    expect(help.accept).toBeUndefined();
+    // Mirror mode still carries the on-screen arrow/accept hint — local arrow-key navigation
+    // keeps working on mirror-mode screens even though the phone gets the mirrored controls instead.
+    expect(help.vertical).toBeNull();
+    expect(help.accept).toBe('Graphics'); // label of the currently-selected (first registered) element
   });
 
   it('falls back to the classic arrow layout when coverage is partial', () => {

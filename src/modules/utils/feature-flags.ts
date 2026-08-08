@@ -5,4 +5,5 @@ export const FeatureFlags = {
   InitialInputLag: 'initial_input_lag',
   NewVolume: 'new_volume',
   DisableMobileMode: 'disable_mobile_mode',
+  DisableAutoFullscreen: 'disable_auto_fullscreen',
 } as const;

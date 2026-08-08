@@ -39,6 +39,10 @@ const song2 = {
   title: 'Skip Intro song',
 } as const;
 
+// Covers the whole reconnect (page reload, wizard minimum display times, handshake) plus the toast
+// showing up afterwards — these assertions are started before the reconnect is triggered.
+const RECONNECT_ALERT_TIMEOUT = 25_000;
+
 test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
   let remoteMic1: RemoteMicPages;
   let remoteMic2: RemoteMicPages;
@@ -103,25 +107,40 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   });
 
   await test.step('Check if the mics are reselected after they refresh', async () => {
+    // The "<name> connected" toast auto-dismisses after 5s, and the reconnect itself (wizard
+    // minimum display times + handshake) burns a good part of that. Start polling for the toast
+    // before the reconnect instead of asserting it once every other check is done — otherwise the
+    // toast is regularly gone by the time the assertion runs.
+
     // Blue microphone
     await remoteMic1._page.reload();
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).toBeVisible();
-    await remoteMic1.remoteMicMainPage.enterPlayerName(player1.name);
+    // The name survives the refresh (it's persisted on the phone), which is part of what this step
+    // checks — assert it rather than typing it in again.
+    await remoteMic1.remoteMicMainPage.expectPlayerNameToBe(player1.name);
 
+    const player1ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
+      player1.name,
+      RECONNECT_ALERT_TIMEOUT,
+    );
     await connectRemoteMic(remoteMic1._page);
+    await player1ConnectedAlert;
     await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).not.toBeVisible();
-    await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player1.name);
 
     // Red microphone
     await remoteMic2._page.reload();
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).toBeVisible();
-    await remoteMic2.remoteMicMainPage.enterPlayerName(player2.name);
+    await remoteMic2.remoteMicMainPage.expectPlayerNameToBe(player2.name);
 
+    const player2ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
+      player2.name,
+      RECONNECT_ALERT_TIMEOUT,
+    );
     await connectRemoteMic(remoteMic2._page);
+    await player2ConnectedAlert;
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
-    await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
     await pages.calibration.approveDefaultCalibrationSetting();
   });
