@@ -1,7 +1,9 @@
-import { Browser, expect, Page, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
+import { createOnlineRoom } from './steps/create-online-room';
+import { newPlayerPage } from './steps/new-player-page';
 
 // The online room server (partykit dev) is started via the webServer entry in playwright.config.ts
 
@@ -20,55 +22,6 @@ test.beforeEach(async ({ page, context }) => {
   await mockSongs({ page, context });
 });
 
-/**
- * The wizard steps after the room is chosen: name, mic, then the one-time calibration. Calibration
- * happens here rather than in the lobby, so readying up later is a single click. A name and a
- * calibration remembered from an earlier visit drop their step from the wizard entirely — pass
- * `nameStep`/`calibrationStep` as false for those, rather than probing, so there's nothing to race.
- */
-const completeNameMicAndCalibrationSteps = async (
-  page: Page,
-  name: string,
-  { nameStep = true, calibrationStep = true } = {},
-) => {
-  if (nameStep) {
-    await page.getByTestId('online-name-input').fill(name);
-    await page.getByTestId('next-step-button').click();
-  }
-  // Mic setup step — the default (fake) microphone is auto-selected
-  await page.getByTestId('save-button').click();
-  if (calibrationStep) {
-    await page.getByTestId('continue').click();
-    await page.getByTestId('save').click();
-  }
-};
-
-const joinRoomByCode = async (page: Page, roomCode: string) => {
-  await page.getByTestId('join-existing-room-button').click();
-  await page.getByTestId('join-room-code-input').fill(roomCode);
-  await page.getByTestId('join-room-button').click();
-};
-
-const openGuestPage = async (browser: Browser) => {
-  const guestContext = await browser.newContext();
-  const guestPage = await guestContext.newPage();
-  await initTestMode({ page: guestPage, context: guestContext });
-  await mockSongs({ page: guestPage, context: guestContext });
-  return guestPage;
-};
-
-const createRoom = async (page: Page, name: string) => {
-  await page.goto('/online/?e2e-test');
-  await page.getByTestId('create-room-button').click();
-  await completeNameMicAndCalibrationSteps(page, name);
-  await expect(page.getByTestId('online-lobby')).toBeVisible({
-    timeout: 15_000,
-  });
-  const roomCode = new URL(page.url()).searchParams.get('room');
-  expect(roomCode).toBeTruthy();
-  return roomCode!;
-};
-
 test('Online mode: full game flow', async ({ page, context, browser }) => {
   test.slow();
   const pages = initialise(page, context, browser);
@@ -78,64 +31,59 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await pages.landingPage.enterTheGame();
     await page.getByTestId('online').click();
     // the landing screen offers exactly three choices — entering a code belongs to the join flow
-    await expect(page.getByTestId('create-room-button')).toBeVisible();
-    await expect(page.getByTestId('join-existing-room-button')).toBeVisible();
-    await expect(page.getByTestId('back-button')).toBeVisible();
-    await expect(page.getByTestId('join-room-code-input')).not.toBeVisible();
+    await expect(pages.onlineSetupPage.createRoomButton).toBeVisible();
+    await expect(pages.onlineSetupPage.joinExistingRoomButton).toBeVisible();
+    await expect(pages.onlineSetupPage.backButton).toBeVisible();
+    await expect(pages.onlineSetupPage.roomCodeInput).not.toBeVisible();
   });
 
   await test.step('Host opens a room via the name → mic → calibration wizard', async () => {
-    await page.getByTestId('create-room-button').click();
-    await completeNameMicAndCalibrationSteps(page, hostName);
-    await expect(page.getByTestId('online-lobby')).toBeVisible({
-      timeout: 15_000,
-    });
+    await pages.onlineSetupPage.createRoom(hostName);
+    await pages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
   });
-  const roomCode = new URL(page.url()).searchParams.get('room')!;
+  const roomCode = await pages.onlineLobbyPage.getRoomCode();
 
-  const guestPage = await openGuestPage(browser);
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = initialise(guestPage, guestPage.context(), browser);
 
   await test.step('Guest joins by link — the code step arrives prefilled from the invite', async () => {
     await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
-    await expect(guestPage.getByTestId('join-room-code-input')).toHaveValue(roomCode);
-    await guestPage.getByTestId('join-room-button').click();
-    await completeNameMicAndCalibrationSteps(guestPage, guestName);
+    await expect(guestPages.onlineSetupPage.roomCodeInput).toHaveValue(roomCode);
+    await guestPages.onlineSetupPage.submitRoomCode();
+    await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
     // no extra "all set" step — the last wizard step drops the guest right into the lobby
-    await expect(guestPage.getByTestId('online-lobby')).toBeVisible({
-      timeout: 15_000,
-    });
+    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
   });
 
   await test.step('Both singers see each other, host is marked', async () => {
-    const hostEntry = page.getByTestId('online-participant-0');
-    await expect(hostEntry).toContainText(hostName);
-    await expect(hostEntry.getByTestId('participant-host')).toBeVisible();
-    await expect(page.getByTestId('online-participant-1')).toContainText(guestName);
+    await expect(pages.onlineLobbyPage.participantElement(0)).toContainText(hostName);
+    await expect(pages.onlineLobbyPage.participantHostTagElement(0)).toBeVisible();
+    await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
 
-    await expect(guestPage.getByTestId('online-participant-0')).toContainText(hostName);
-    await expect(guestPage.getByTestId('online-participant-1')).toContainText(guestName);
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).toContainText(hostName);
+    await expect(guestPages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
     // the guest has no song-selection controls
-    await expect(guestPage.getByTestId('choose-song-button')).not.toBeVisible();
+    await expect(guestPages.onlineLobbyPage.chooseSongButton).not.toBeVisible();
   });
 
   await test.step('Host browses songs — everyone sees what they hover, with mode and difficulty', async () => {
-    await page.getByTestId('choose-song-button').click();
+    await pages.onlineLobbyPage.goToSongSelection();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.openPreviewForSong(song.ID);
 
     // the other singers get a song-card-like preview with the video and details
-    await expect(guestPage.getByTestId('online-host-browsing-artist')).toHaveText(song.artist);
-    await expect(guestPage.getByTestId('online-host-browsing-title')).toHaveText(song.title);
+    await expect(guestPages.onlineLobbyPage.browsedSongArtistElement).toHaveText(song.artist);
+    await expect(guestPages.onlineLobbyPage.browsedSongTitleElement).toHaveText(song.title);
     // online play is Duel-only; the host's difficulty is visible to everyone
-    await expect(guestPage.getByTestId('online-host-browsing-details')).toContainText('Duel');
-    await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Duel');
+    await expect(guestPages.onlineLobbyPage.browsedSongDetailsElement).toContainText('Duel');
+    await pages.songPreviewPage.expectGameModeToBe('Duel');
   });
 
   await test.step('Guests can react to the browsed song — the host sees the votes', async () => {
-    await guestPage.getByTestId('online-vote-up').click();
-    await expect(page.getByTestId('online-song-player-1')).toHaveAttribute('data-vote', 'up');
-    await expect(page.getByTestId('online-song-player-1')).toContainText(guestName);
+    await guestPages.onlineLobbyPage.voteUp();
+    await expect(pages.onlineLobbyPage.songPlayerElement(1)).toHaveAttribute('data-vote', 'up');
+    await expect(pages.onlineLobbyPage.songPlayerElement(1)).toContainText(guestName);
   });
 
   await test.step('Host selects the song — the chart is transferred to everyone', async () => {
@@ -143,21 +91,21 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await page.getByTestId('play-song-button').click();
 
     // the selected song heads the lobby (and stays previewable) for everyone
-    await expect(page.getByTestId('online-host-browsing-title')).toHaveText(song.title, { timeout: 15_000 });
-    await expect(page.getByTestId('online-host-browsing-artist')).toHaveText(song.artist);
-    await expect(guestPage.getByTestId('online-host-browsing-title')).toHaveText(song.title);
-    await expect(guestPage.getByTestId('online-host-browsing-artist')).toHaveText(song.artist);
+    await expect(pages.onlineLobbyPage.browsedSongTitleElement).toHaveText(song.title, { timeout: 15_000 });
+    await expect(pages.onlineLobbyPage.browsedSongArtistElement).toHaveText(song.artist);
+    await expect(guestPages.onlineLobbyPage.browsedSongTitleElement).toHaveText(song.title);
+    await expect(guestPages.onlineLobbyPage.browsedSongArtistElement).toHaveText(song.artist);
     // voting stays open after the pick (the votes themselves reset with the new song), and the host
     // sees the reaction right on the singer's row
-    await guestPage.getByTestId('online-vote-up').click();
-    await expect(page.getByTestId('online-participant-1')).toHaveAttribute('data-vote', 'up');
-    await expect(page.getByTestId('choose-song-button')).toBeVisible();
+    await guestPages.onlineLobbyPage.voteUp();
+    await expect(pages.onlineLobbyPage.participantElement(1)).toHaveAttribute('data-vote', 'up');
+    await expect(pages.onlineLobbyPage.chooseSongButton).toBeVisible();
   });
 
   await test.step('The host starts the song — everyone confirms readiness with the video loaded', async () => {
     // No one else has to agree first: the guest has no start control at all
-    await expect(guestPage.getByTestId('online-start-song-button')).not.toBeVisible();
-    await page.getByTestId('online-start-song-button').click();
+    await expect(guestPages.onlineLobbyPage.startSongButton).not.toBeVisible();
+    await pages.onlineLobbyPage.startSong();
 
     // Both are taken to the song screen, held on the readiness confirmation
     await expect(page.getByTestId('online-readiness')).toBeVisible({ timeout: 15_000 });
@@ -222,114 +170,112 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   await test.step('No high-scores step — Next returns everyone to the lobby', async () => {
     await page.getByTestId('skip-animation-button').click();
     await page.getByTestId('highscores-button').click();
-    await expect(page.getByTestId('online-lobby')).toBeVisible({
-      timeout: 10_000,
-    });
-    await expect(guestPage.getByTestId('online-lobby')).toBeVisible({
-      timeout: 10_000,
-    });
+    await pages.onlineLobbyPage.expectToBeVisible({ timeout: 10_000 });
+    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 10_000 });
     // the finished song is no longer selected — the next round starts fresh
-    await expect(page.getByTestId('online-selected-song')).toContainText('Pick a song');
-    await expect(page.getByTestId('online-start-song-button')).not.toBeVisible();
+    await expect(pages.onlineLobbyPage.selectedSongElement).toContainText('Pick a song');
+    await expect(pages.onlineLobbyPage.startSongButton).not.toBeVisible();
   });
 
   await test.step('Leaving the room takes a confirmation', async () => {
-    await guestPage.getByTestId('leave-room-button').click();
-    const leaveConfirm = guestPage.getByTestId('online-leave-confirm-modal');
-    await leaveConfirm.getByRole('button', { name: 'Stay in the room' }).click();
-    await expect(guestPage.getByTestId('online-lobby')).toBeVisible();
+    await guestPages.onlineLobbyPage.leaveRoomAndCancel();
+    await guestPages.onlineLobbyPage.expectToBeVisible();
 
-    await guestPage.getByTestId('leave-room-button').click();
-    await leaveConfirm.getByRole('button', { name: 'Leave room' }).click();
-    await expect(guestPage.getByTestId('online-lobby')).not.toBeVisible();
+    await guestPages.onlineLobbyPage.leaveRoomAndConfirm();
+    await guestPages.onlineLobbyPage.expectNotToBeVisible();
   });
 
   await guestPage.context().close();
 });
 
-test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, browser }) => {
+test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, context, browser }) => {
   test.slow();
+  const pages = initialise(page, context, browser);
 
-  const roomCode = await createRoom(page, hostName);
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
-  const guestPage = await openGuestPage(browser);
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = initialise(guestPage, guestPage.context(), browser);
   await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
-  await guestPage.getByTestId('join-room-button').click();
-  await completeNameMicAndCalibrationSteps(guestPage, guestName);
-  await expect(guestPage.getByTestId('online-lobby')).toBeVisible({
-    timeout: 15_000,
-  });
-  await expect(page.getByTestId('online-participant-1')).toContainText(guestName);
+  await guestPages.onlineSetupPage.submitRoomCode();
+  await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
+  await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+  await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
 
   await test.step('Host kicks the guest from the lobby, with a confirmation', async () => {
-    await page.getByTestId('online-kick-1').click();
-    await page.getByTestId('online-kick-confirm-modal').getByRole('button', { name: 'Remove' }).click();
-    await expect(page.getByTestId('online-participant-1')).not.toBeVisible();
-    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({
+    await pages.onlineLobbyPage.kickParticipant(1);
+    await expect(pages.onlineLobbyPage.participantElement(1)).not.toBeVisible();
+    await expect(guestPages.onlineSetupPage.joinRejectedElement).toBeVisible({
       timeout: 15_000,
     });
-    await expect(guestPage.getByTestId('online-join-rejected')).toContainText('removed from this room');
+    await expect(guestPages.onlineSetupPage.joinRejectedElement).toContainText('removed from this room');
   });
 
   await test.step('The kicked singer cannot rejoin by entering the code again', async () => {
-    await guestPage.getByTestId('back-button').click();
+    await guestPages.onlineSetupPage.goBack();
     // the name and calibration are remembered by now, so only the code and mic steps remain
-    await joinRoomByCode(guestPage, roomCode);
-    await completeNameMicAndCalibrationSteps(guestPage, guestName, { nameStep: false, calibrationStep: false });
-    await expect(guestPage.getByTestId('online-join-rejected')).toBeVisible({
+    await guestPages.onlineSetupPage.joinRoomByCode(roomCode);
+    await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName, {
+      nameStep: false,
+      calibrationStep: false,
+    });
+    await expect(guestPages.onlineSetupPage.joinRejectedElement).toBeVisible({
       timeout: 15_000,
     });
-    await expect(guestPage.getByTestId('online-join-rejected')).toContainText('removed from this room');
+    await expect(guestPages.onlineSetupPage.joinRejectedElement).toContainText('removed from this room');
   });
 
   await guestPage.context().close();
 });
 
-test('Online mode: join by code, host disconnect promotes the next-joined singer', async ({ page, browser }) => {
+test('Online mode: join by code, host disconnect promotes the next-joined singer', async ({
+  page,
+  context,
+  browser,
+}) => {
   test.slow();
 
-  const roomCode = await createRoom(page, hostName);
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
-  const guestPage = await openGuestPage(browser);
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = initialise(guestPage, guestPage.context(), browser);
 
   await test.step('Joining a room code that does not exist is rejected upfront', async () => {
     await guestPage.goto('/online/?e2e-test');
-    await joinRoomByCode(guestPage, 'zzzzz');
+    await guestPages.onlineSetupPage.joinRoomByCode('zzzzz');
     await expect(guestPage.getByText('This room does not exist')).toBeVisible();
   });
 
   await test.step('Guest joins by entering the room code in the wizard', async () => {
-    await guestPage.getByTestId('join-room-code-input').fill(roomCode);
-    await guestPage.getByTestId('join-room-button').click();
-    await completeNameMicAndCalibrationSteps(guestPage, guestName);
-    await expect(guestPage.getByTestId('online-lobby')).toBeVisible({
-      timeout: 15_000,
-    });
-    await expect(guestPage.getByTestId('online-participant-0')).toContainText(hostName);
-    await expect(guestPage.getByTestId('online-participant-1')).toContainText(guestName);
+    await guestPages.onlineSetupPage.roomCodeInput.fill(roomCode);
+    await guestPages.onlineSetupPage.submitRoomCode();
+    await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
+    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).toContainText(hostName);
+    await expect(guestPages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
   });
 
   await test.step('Guest changes their color via the customize modal', async () => {
-    await guestPage.getByTestId('customize-button').click();
+    await guestPages.onlineLobbyPage.openCustomizeModal();
     // picking a color applies it and closes the modal — there's nothing left to confirm
-    await guestPage.getByTestId('online-color-3').click();
-    await expect(guestPage.getByTestId('online-customize-modal')).not.toBeVisible();
+    await guestPages.onlineLobbyPage.pickColor(3);
+    await expect(guestPages.onlineLobbyPage.customizeModalElement).not.toBeVisible();
     // the guest now occupies the picked color's slot, visible to everyone
-    await expect(guestPage.getByTestId('online-participant-3')).toContainText(guestName);
-    await expect(guestPage.getByTestId('online-participant-1')).not.toBeVisible();
+    await expect(guestPages.onlineLobbyPage.participantElement(3)).toContainText(guestName);
+    await expect(guestPages.onlineLobbyPage.participantElement(1)).not.toBeVisible();
   });
 
   await test.step('Host disconnects — after the grace period the guest becomes host', async () => {
     await page.close();
     // the disconnect is visible immediately…
-    await expect(guestPage.getByTestId('online-participant-0')).toHaveAttribute('data-connected', 'false', {
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).toHaveAttribute('data-connected', 'false', {
       timeout: 10_000,
     });
     // …and after the reconnect grace period the spot is freed and the host role moves on
-    await expect(guestPage.getByTestId('online-participant-0')).not.toBeVisible({ timeout: 30_000 });
-    await expect(guestPage.getByTestId('online-participant-3').getByTestId('participant-host')).toBeVisible();
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).not.toBeVisible({ timeout: 30_000 });
+    await expect(guestPages.onlineLobbyPage.participantHostTagElement(3)).toBeVisible();
     // the new host can select the song now
-    await expect(guestPage.getByTestId('choose-song-button')).toBeVisible();
+    await expect(guestPages.onlineLobbyPage.chooseSongButton).toBeVisible();
   });
 
   await guestPage.context().close();
