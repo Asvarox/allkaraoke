@@ -145246,6 +145246,36 @@
     "local": false
   },
   {
+    "id": "shoji-meguro-feat-lyn-last-surprise",
+    "title": "Last Surprise",
+    "artist": "Shoji Meguro feat. Lyn",
+    "video": "OvRVh128wbo",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.42,
+    "gap": 15888.670424236325,
+    "year": "2016",
+    "lastUpdate": "2026-08-08T01:02:48.496Z",
+    "realBpm": 123,
+    "previewStart": 45,
+    "previewEnd": 63,
+    "volume": 1,
+    "author": "Lyn",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=183593",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28337",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6059,
+    "tracksCount": 1,
+    "search": "shojimegurofeatlynlastsurprise",
+    "local": false
+  },
+  {
     "id": "shrek-2-holding-out-for-a-hero",
     "title": "Holding Out For A Hero",
     "artist": "Shrek 2",
