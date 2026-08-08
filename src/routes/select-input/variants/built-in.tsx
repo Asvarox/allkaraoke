@@ -36,6 +36,12 @@ interface Props {
 const NOT_AUDIBLE_TIP = "Make some noise to the microphone. If that doesn't work, try using another microphone.";
 
 /**
+ * Shown while the browser is still asking for permission, and — being the longest of the
+ * starting-up messages — also what `StartingUpReserve` holds the height of.
+ */
+const ALLOW_ACCESS_MESSAGE = 'Please allow access to the microphone so the default one can be selected.';
+
+/**
  * Holds the height of the "still starting up" beats so they all measure the same: the permission
  * status resolving (which renders nothing at all), the permission being asked for, and the default
  * device being picked. It's the longest of those messages, rendered invisibly — text rather than the
@@ -47,7 +53,7 @@ const NOT_AUDIBLE_TIP = "Make some noise to the microphone. If that doesn't work
 function StartingUpReserve() {
   return (
     <span className="typography invisible col-start-1 row-start-1 text-lg" aria-hidden>
-      Please allow access to the microphone so the default one can be selected.
+      {ALLOW_ACCESS_MESSAGE}
     </span>
   );
 }
@@ -141,12 +147,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
       <div className="grid">
         <StartingUpReserve />
         <div className="col-start-1 row-start-1 flex flex-col justify-center gap-4">
-          <UserMediaEnabled
-            fallback={
-              <span className="typography text-lg">
-                Please allow access to the microphone so the default one can be selected.
-              </span>
-            }>
+          <UserMediaEnabled fallback={<span className="typography text-lg">{ALLOW_ACCESS_MESSAGE}</span>}>
             {!selectedMic && <span className="typography text-lg">The default device is being selected.</span>}
             {selectedMic && (
               <>
