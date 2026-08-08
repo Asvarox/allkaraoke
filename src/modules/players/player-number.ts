@@ -13,3 +13,7 @@ export const MAX_PLAYERS = 4;
 export const ONLINE_MAX_PLAYERS = 6;
 
 export const PLAYER_NUMBERS: PlayerNumber[] = [0, 1, 2, 3, 4, 5];
+
+/** The seats local party mode offers. Raising MAX_PLAYERS should widen every local screen at once,
+ * so iterate this instead of inlining a tuple. */
+export const LOCAL_PLAYER_NUMBERS: PlayerNumber[] = PLAYER_NUMBERS.slice(0, MAX_PLAYERS);
