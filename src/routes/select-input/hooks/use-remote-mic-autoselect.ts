@@ -2,8 +2,8 @@ import { useRef } from 'react';
 
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
-import { PlayerNumber } from '~/modules/players/player-number';
-import PlayersManager, { MAX_PLAYERS } from '~/modules/players/players-manager';
+import { MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
+import PlayersManager from '~/modules/players/players-manager';
 import { RemoteMicrophoneInputSource } from '~/routes/select-input/input-sources/remote';
 
 export function useRemoteMicAutoselect() {

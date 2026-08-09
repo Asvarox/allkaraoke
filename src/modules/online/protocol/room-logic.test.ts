@@ -6,7 +6,6 @@ import {
   ONLINE_BUFFERING_PAUSE_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
-  ONLINE_MAX_PLAYERS,
   ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_RESUME_COUNTDOWN_MS,
@@ -14,6 +13,7 @@ import {
   ONLINE_START_LEAD_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
+import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
 const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', removePlayer: () => undefined });
 

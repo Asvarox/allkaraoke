@@ -11,7 +11,6 @@ import inputSourceListManager from '~/routes/select-input/input-sources/index';
 import { InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
 
 const SELECTED_INPUTS_KEY = 'playerselectedinputs';
-export { MAX_PLAYERS };
 
 export interface SelectedPlayerInput {
   source: InputSourceNames;

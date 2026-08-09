@@ -1,7 +1,3 @@
-import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
-
-export { ONLINE_MAX_PLAYERS };
-
 /** Maximum size of a serialized chart (song txt) that can be transferred to the room.
  * The biggest chart in the game is ~30 KB raw (a few KB gzipped), so this is generous. */
 export const ONLINE_MAX_CHART_BYTES = 512 * 1024;
