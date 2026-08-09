@@ -25,10 +25,6 @@ interface Props {
   onPickSelected?: () => void;
   /** Online only — a color someone else holds can't be taken. The remote mic lets you steal one. */
   disableOccupied?: boolean;
-  /** Per-button `data-test`, as `${testIdPrefix}-${playerNumber}`. */
-  testIdPrefix: string;
-  /** `data-test` of the "(name)" span inside a taken button. */
-  occupantTestId: string;
 }
 
 /** The list of player colors to pick from, each button painted in the color it offers and labelled
@@ -43,8 +39,6 @@ export function PlayerColorPicker({
   onPick,
   onPickSelected,
   disableOccupied = false,
-  testIdPrefix,
-  occupantTestId,
   children,
 }: PropsWithChildren<Props>) {
   return (
@@ -57,7 +51,7 @@ export function PlayerColorPicker({
           <Button
             key={number}
             size="small"
-            data-test={`${testIdPrefix}-${number}`}
+            data-test={`player-color-${number}`}
             data-selected={isOwn}
             data-focused={isOwn}
             onClick={isOwn ? onPickSelected : () => onPick(number)}
@@ -66,7 +60,7 @@ export function PlayerColorPicker({
             style={{ color: styles.colors.players[number].perfect.fill }}>
             {PLAYER_COLOR_NAMES[theme][number]}
             {(isOwn || occupant) && (
-              <span className="text-sm text-gray-300" data-test={occupantTestId}>
+              <span className="text-sm text-gray-300" data-test="player-color-occupant">
                 ({isOwn ? 'You' : occupant})
               </span>
             )}

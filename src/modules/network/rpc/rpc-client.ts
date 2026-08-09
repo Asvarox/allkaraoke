@@ -11,16 +11,6 @@ export interface RpcClientTransport {
   sendEvent(message: any): void;
 }
 
-/**
- * Creates a namespaced proxy that mirrors the server handler contract.
- * Property access returns a sub-proxy for a namespace; method calls serialize to
- * RpcRequest messages and return a Promise resolved with the server response (10 s timeout).
- *
- * @param getTransport - Returns the active transport (or undefined when disconnected).
- * @param onDisconnect - Registers a one-shot callback that fires when the connection drops.
- *   Must return an unsubscribe function so in-flight requests can clean up before the
- *   callback fires (e.g. when they already resolved via rpc-res).
- */
 /** Fire-and-forget mirror of a client contract: same arguments, no result, rejections swallowed. */
 export type FireAndForgetContract<T> = {
   [NS in keyof T]: {
@@ -53,6 +43,16 @@ export function createFireAndForgetProxy<T extends object>(rpc: T): FireAndForge
   });
 }
 
+/**
+ * Creates a namespaced proxy that mirrors the server handler contract.
+ * Property access returns a sub-proxy for a namespace; method calls serialize to
+ * RpcRequest messages and return a Promise resolved with the server response (10 s timeout).
+ *
+ * @param getTransport - Returns the active transport (or undefined when disconnected).
+ * @param onDisconnect - Registers a one-shot callback that fires when the connection drops.
+ *   Must return an unsubscribe function so in-flight requests can clean up before the
+ *   callback fires (e.g. when they already resolved via rpc-res).
+ */
 export function createRpcProxy<T extends HandlerMap>(
   getTransport: () => RpcClientTransport | undefined,
   onDisconnect: (callback: () => void) => () => void,

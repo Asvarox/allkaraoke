@@ -21,5 +21,5 @@ export default function PlayerNumberCircle({ number }: Props) {
     forceUpdate();
   }, [style, forceUpdate]);
 
-  return <PlayerColorDot number={number} variant="fill" />;
+  return <PlayerColorDot number={number} />;
 }

@@ -80,8 +80,6 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
             occupants={occupants}
             onPick={pickColor}
             disableOccupied
-            testIdPrefix="online-color"
-            occupantTestId="color-occupant"
           />
           <Menu.Button {...register('customize-done', close)} size="small" data-test="customize-done-button">
             Done

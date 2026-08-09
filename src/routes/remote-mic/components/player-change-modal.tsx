@@ -34,9 +34,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, show
       selected={playerNumber}
       occupants={occupants}
       onPick={selectPlayer}
-      onPickSelected={onModalClose}
-      testIdPrefix="change-to-player"
-      occupantTestId="mic-occupant">
+      onPickSelected={onModalClose}>
       <Button size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
         Unassign
       </Button>

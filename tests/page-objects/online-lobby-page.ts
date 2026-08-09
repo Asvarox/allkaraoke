@@ -102,7 +102,7 @@ export class OnlineLobbyPagePO {
   }
 
   public colorButton(colorNumber: number) {
-    return this.page.getByTestId(`online-color-${colorNumber}`);
+    return this.page.getByTestId(`player-color-${colorNumber}`);
   }
 
   public async openCustomizeModal() {
