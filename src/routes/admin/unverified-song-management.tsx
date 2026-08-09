@@ -13,6 +13,7 @@ import { Link } from 'wouter';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { getUnverifiedSongById } from '~/modules/songs/unverified-songs/api';
 
 import { RegenerateIndexButton } from './regenerate-index-button';
 import {
@@ -192,6 +193,17 @@ export function UnverifiedSongManagement({ password }: Props) {
     }
   };
 
+  const handleDownload = async (song: AdminUnverifiedSong) => {
+    const { songTxt } = await getUnverifiedSongById(song.sharedSongId);
+
+    const anchor = document.createElement('a');
+    anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(songTxt)}`;
+    anchor.download = `${song.songId}.txt`;
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  };
+
   return (
     <section className="flex flex-col gap-2">
       <div className="flex flex-col gap-3 pb-4 md:flex-row md:items-center md:justify-between">
@@ -256,6 +268,15 @@ export function UnverifiedSongManagement({ password }: Props) {
                   </IconButton>
                 </Link>
               </span>
+            </Tooltip>
+            <Tooltip title="Download .txt file">
+              <IconButton
+                data-test="download-unverified-song"
+                data-song={row.original.sharedSongId}
+                aria-label={`Download ${row.original.title}`}
+                onClick={() => void handleDownload(row.original)}>
+                <Icon icon="ic:baseline-download" />
+              </IconButton>
             </Tooltip>
             <Tooltip title="Delete unverified song">
               <IconButton
