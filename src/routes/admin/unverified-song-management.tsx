@@ -6,7 +6,7 @@ import {
   type MRT_PaginationState,
   type MRT_SortingState,
 } from 'material-react-table';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import useSWR from 'swr';
 import useSWRMutation from 'swr/mutation';
 import { Link } from 'wouter';
@@ -14,6 +14,8 @@ import { Link } from 'wouter';
 import { Icon } from '~/modules/elements/akui/icon';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 
+import { BackgroundSavesIndicator } from './background-saves-indicator';
+import { useAdminUnverifiedSongSaves } from './background-song-save';
 import { RegenerateIndexButton } from './regenerate-index-button';
 import {
   buildAdminUnverifiedSongProcessingUrl,
@@ -121,6 +123,20 @@ export function UnverifiedSongManagement({ password }: Props) {
     },
   });
 
+  const { pending: pendingSaves } = useAdminUnverifiedSongSaves();
+  const previousPendingSavesCount = useRef(pendingSaves.length);
+
+  useEffect(() => {
+    const hadPendingSaves = previousPendingSavesCount.current > 0;
+    previousPendingSavesCount.current = pendingSaves.length;
+
+    // Background saves change the songs in KV, so refresh the list once they are done.
+    if (hadPendingSaves && pendingSaves.length === 0) {
+      void mutate();
+    }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingSaves.length]);
+
   const hasSongsToProcess = songs.length > 0;
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
@@ -194,6 +210,7 @@ export function UnverifiedSongManagement({ password }: Props) {
 
   return (
     <section className="flex flex-col gap-2">
+      <BackgroundSavesIndicator />
       <div className="flex flex-col gap-3 pb-4 md:flex-row md:items-center md:justify-between">
         <div>
           <h1 className="text-lg!">Unverified Songs Management</h1>
