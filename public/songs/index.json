@@ -4356,6 +4356,34 @@
     "local": false
   },
   {
+    "id": "afi-god-called-in-sick-today",
+    "title": "God Called In Sick Today",
+    "artist": "AFI",
+    "video": "FXisSjTr5e0",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 15416.062992125984,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:48.700Z",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "mrfypower",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=9103",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6062,
+    "tracksCount": 1,
+    "search": "afigodcalledinsicktoday",
+    "local": false
+  },
+  {
     "id": "afi-love-like-winter",
     "title": "Love Like Winter",
     "artist": "AFI",
@@ -10339,6 +10367,34 @@
     "shortId": 285,
     "tracksCount": 1,
     "search": "apache207breakingyourheart",
+    "local": false
+  },
+  {
+    "id": "apache-207-roller",
+    "title": "Roller",
+    "artist": "Apache 207",
+    "video": "Fo3DAhiNKQo",
+    "language": [
+      "German"
+    ],
+    "bpm": 256.15,
+    "gap": 2944.489556900254,
+    "year": "2019",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-09T01:06:48.691Z",
+    "genre": "Rap",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Menggod",
+    "duration": 177,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6060,
+    "tracksCount": 1,
+    "search": "apache207roller",
     "local": false
   },
   {
@@ -20034,6 +20090,36 @@
     "shortId": 531,
     "tracksCount": 1,
     "search": "bigbangfantasticbaby",
+    "local": false
+  },
+  {
+    "id": "big-bang-haru-haru",
+    "title": "Haru Haru",
+    "artist": "Big Bang",
+    "video": "MzCbEdtNbJ0",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 252.04,
+    "gap": 10498.255832407554,
+    "year": "2008",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-08-09T01:06:48.710Z",
+    "genre": "Kpop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Haru+Haru",
+    "duration": 324,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6064,
+    "tracksCount": 1,
+    "search": "bigbangharuharu",
     "local": false
   },
   {
@@ -37698,6 +37784,33 @@
     "shortId": 5220,
     "tracksCount": 1,
     "search": "crowdedhousebetterbehomesoon",
+    "local": false
+  },
+  {
+    "id": "crowded-house-distant-sun",
+    "title": "Distant Sun",
+    "artist": "Crowded House",
+    "video": "Bkd5OQ8b0hQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 225.88,
+    "gap": 18990.895873915353,
+    "year": "1994",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-08-09T01:06:48.718Z",
+    "genre": "Pop",
+    "realBpm": 111,
+    "volume": 1,
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6067,
+    "tracksCount": 1,
+    "search": "crowdedhousedistantsun",
     "local": false
   },
   {
@@ -70624,6 +70737,34 @@
     "local": false
   },
   {
+    "id": "hazbin-hotel-easy",
+    "title": "Easy",
+    "artist": "Hazbin Hotel",
+    "video": "CHriwzZvgkg",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 6451.739130434783,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:48.717Z",
+    "genre": "Soundtrack",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "2tobi2",
+    "duration": 127,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6066,
+    "tracksCount": 1,
+    "search": "hazbinhoteleasy",
+    "local": false
+  },
+  {
     "id": "hazbin-hotel-loser-baby",
     "title": "Loser, Baby",
     "artist": "Hazbin Hotel",
@@ -94038,6 +94179,36 @@
     "local": false
   },
   {
+    "id": "lady-gaga-donatella",
+    "title": "Donatella",
+    "artist": "Lady Gaga",
+    "video": "SCS13YSZikU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.02,
+    "gap": 6710.081593472522,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:48.703Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "Coppolatte",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23748",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=17381",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6063,
+    "tracksCount": 1,
+    "search": "ladygagadonatella",
+    "local": false
+  },
+  {
     "id": "lady-gaga-dont-call-tonight",
     "title": "Don't Call Tonight",
     "artist": "Lady Gaga",
@@ -94505,6 +94676,36 @@
     "shortId": 2482,
     "tracksCount": 1,
     "search": "ladygagapaparazzi",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-perfect-celebrity",
+    "title": "Perfect Celebrity",
+    "artist": "Lady Gaga",
+    "video": "tDZ6bi-YguU",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 18040.384615384617,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:49.189Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "lozboorman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=91773",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=32233",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6069,
+    "tracksCount": 1,
+    "search": "ladygagaperfectcelebrity",
     "local": false
   },
   {
@@ -100976,6 +101177,36 @@
     "shortId": 5877,
     "tracksCount": 1,
     "search": "lostipitoscampanasenlanoche",
+    "local": false
+  },
+  {
+    "id": "los-totora-marchate-ahora",
+    "title": "Márchate ahora",
+    "artist": "Los Totora",
+    "video": "KGYX3wIb-Go",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 204.02,
+    "gap": 20706.689148122732,
+    "year": "2013",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-09T01:06:49.195Z",
+    "genre": "Cumbia",
+    "realBpm": 204.02,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Totora&cancion=M%C3%A1rchate%20ahora",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6071,
+    "tracksCount": 1,
+    "search": "lostotoramarchateahora",
     "local": false
   },
   {
@@ -145256,7 +145487,7 @@
     "bpm": 397.42,
     "gap": 15888.670424236325,
     "year": "2016",
-    "lastUpdate": "2026-08-08T01:02:48.496Z",
+    "lastUpdate": "2026-08-07T10:32:36.692Z",
     "realBpm": 123,
     "previewStart": 45,
     "previewEnd": 63,
@@ -147663,6 +147894,34 @@
     "local": false
   },
   {
+    "id": "slipknot-vermilion-pt-1",
+    "title": "Vermilion, Pt. 1",
+    "artist": "Slipknot",
+    "video": "xKcbYUwmmlE",
+    "language": [
+      "English"
+    ],
+    "bpm": 287.96,
+    "gap": 18740.2792054452,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:48.698Z",
+    "realBpm": 168,
+    "volume": 1,
+    "author": "magic-ott",
+    "sourceUrl": "https://www.youtube.com/watch?v=xKcbYUwmmlE",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6061,
+    "tracksCount": 1,
+    "search": "slipknotvermilionpt1",
+    "local": false
+  },
+  {
     "id": "slipknot-vermilion-pt-2",
     "title": "Vermilion Pt. 2",
     "artist": "Slipknot",
@@ -148762,6 +149021,33 @@
     "shortId": 4034,
     "tracksCount": 1,
     "search": "soundgardenfellonblackdays",
+    "local": false
+  },
+  {
+    "id": "soundgarden-live-to-rise",
+    "title": "Live To Rise",
+    "artist": "Soundgarden",
+    "video": "D3ZNtOcY_1A",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 25998.095238095237,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:49.192Z",
+    "realBpm": 252,
+    "volume": 1,
+    "author": "juhuu",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6070,
+    "tracksCount": 1,
+    "search": "soundgardenlivetorise",
     "local": false
   },
   {
@@ -152939,6 +153225,36 @@
     "shortId": 4155,
     "tracksCount": 1,
     "search": "taburetesirenas",
+    "local": false
+  },
+  {
+    "id": "taconafide-tamagochi",
+    "title": "Tamagochi",
+    "artist": "Taconafide",
+    "video": "odWxQ5eEnfE",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 393.22,
+    "gap": 8003.1888001627585,
+    "year": "2018",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-08-09T01:06:48.715Z",
+    "genre": "Experimental Mix Of Pop,Rap And Trap",
+    "realBpm": 112,
+    "previewEnd": 195,
+    "volume": 1,
+    "author": "UltraSinger [GitHub] and Hyggaa",
+    "duration": 205,
+    "tracks": [
+      {
+        "name": "Tamagotchi",
+        "start": 26
+      }
+    ],
+    "shortId": 6065,
+    "tracksCount": 1,
+    "search": "taconafidetamagochi",
     "local": false
   },
   {
@@ -157175,6 +157491,35 @@
     "shortId": 5298,
     "tracksCount": 1,
     "search": "theb52sroam",
+    "local": false
+  },
+  {
+    "id": "the-band-perry-if-i-die-young",
+    "title": "If I Die Young",
+    "artist": "The Band Perry",
+    "video": "7NJqUN9TClM",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 700,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-09T01:06:48.720Z",
+    "genre": "Country",
+    "realBpm": 130,
+    "volume": 0.85,
+    "author": "enticingzephyr",
+    "sourceUrl": "https://www.youtube.com/watch?v=7NJqUN9TClM&list=RD7NJqUN9TClM&start_radio=1",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6068,
+    "tracksCount": 1,
+    "search": "thebandperryifidieyoung",
     "local": false
   },
   {

@@ -1,4 +1,4 @@
-import * as qrcode from 'qrcode.react';
+import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
 
@@ -7,8 +7,6 @@ import RoomCode from '~/modules/elements/room-code';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
 import buildRoomLink from '~/modules/utils/build-room-link';
-
-const { QRCodeSVG } = qrcode;
 
 function ConnectRemoteMic() {
   // Validate if the component is rendered in a remote mic or in the "main" game via the URL
@@ -31,7 +29,7 @@ function ConnectRemoteMic() {
         </span>
       </div>
       <div className="flex-[0.6] max-[560px]:flex-none">
-        <QRCodeSVG value={link} width="100%" height="100%" includeMargin />
+        <QRCodeSVG value={link} width="100%" height="100%" marginSize={4} />
       </div>
       <div className="flex flex-1 flex-col max-[560px]:hidden">
         <div className="flex-1">
