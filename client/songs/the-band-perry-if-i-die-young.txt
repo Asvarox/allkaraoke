@@ -1,0 +1,507 @@
+#ARTIST:The Band Perry
+#TITLE:If I Die Young
+#CREATOR:enticingzephyr
+#BPM:240
+#YEAR:2010
+#VIDEO:v=7NJqUN9TClM
+#GENRE:Country
+#LANGUAGE:English
+#GAP:700
+#ALLKARAOKE_ID:the-band-perry-if-i-die-young
+#ALLKARAOKE_SID:6068
+#ALLKARAOKE_LASTUPDATE:2026-08-09T01:06:48.720Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=7NJqUN9TClM&list=RD7NJqUN9TClM&start_radio=1
+#ALLKARAOKE_VOLUME:0,85
+#ALLKARAOKE_DURATION:230
+#MP3:The Band Perry - If I Die Young.mp3
+#COVER:The Band Perry - If I Die Young [CO].jpg
+#BACKGROUND:The Band Perry - If I Die Young [BG].jpg
+: 16 3 4 If 
+: 20 3 8 I 
+: 26 3 4 die
+: 30 2 1 ~ 
+: 34 6 1 young,
+- 40
+: 50 2 6 Bu
+: 53 2 8 ry 
+: 56 1 6 me 
+: 58 4 4 in 
+: 65 2 1 sa
+: 68 2 -1 tin
+- 70
+: 78 4 8 Lay 
+: 83 4 6 me 
+: 92 4 6 down 
+: 100 5 6 on 
+: 106 1 -1 a 
+: 113 3 6 bed 
+: 117 2 8 of 
+: 120 5 9 ro
+: 126 6 8 ses
+- 132
+: 135 4 8 Sink 
+: 141 3 8 me 
+: 145 3 6 in 
+: 149 2 4 the 
+: 152 2 6 ri
+: 157 5 4 ver 
+: 171 5 8 at 
+: 178 12 4 dawn
+- 190
+: 194 1 6 Se
+: 196 2 8 ~nd 
+: 200 1 9 me
+: 203 2 8 ~ 
+: 206 3 6 a
+: 211 1 8 way
+: 214 3 6 ~ 
+: 218 5 6 with 
+: 224 1 6 the 
+: 226 7 6 words 
+: 234 2 6 of 
+: 237 2 8 a 
+: 240 4 4 love 
+: 248 12 4 song
+- 260 269
+- 269
+: 285 4 8 Oh 
+: 292 12 4 oh, 
+: 313 4 1 oh 
+: 321 14 -1 oh
+- 335 350
+- 350
+: 366 4 4 Lord 
+: 372 4 8 make 
+: 378 1 6 me 
+: 380 4 6 a 
+: 385 5 6 rain
+: 392 5 4 bow,
+- 397
+: 400 1 6 I’ll 
+: 402 2 6 shine 
+: 405 2 8 down 
+: 408 2 6 on 
+: 411 3 4 my 
+: 415 3 1 mo
+: 419 2 -1 ther
+- 421
+: 427 2 -1 She’ll 
+: 430 2 6 know 
+: 433 3 8 I’m 
+: 438 2 6 safe 
+: 441 3 4 with 
+: 445 3 6 you 
+: 450 3 6 when 
+: 456 3 -1 she 
+: 460 3 6 stands 
+: 464 3 6 un
+: 468 3 8 der 
+: 474 2 9 my 
+: 477 6 8 colors
+- 483
+: 488 7 8 Oh, 
+: 496 7 8 and 
+: 511 3 4 life 
+: 516 3 8 ain’t 
+: 520 5 8 always 
+: 526 3 8 what 
+: 531 3 8 you 
+: 535 2 8 think 
+: 538 2 6 it 
+: 541 3 6 ough
+: 546 1 4 ta 
+: 548 5 4 be,
+- 553
+: 555 2 1 No
+: 558 4 -1 ~ 
+: 567 3 6 ain’t 
+: 571 2 6 e
+: 574 2 4 ven 
+: 577 4 6 gray,
+- 581
+: 584 2 6 But 
+: 587 3 6 she 
+: 591 6 6 buries 
+: 603 3 8 her 
+: 607 5 6 ba
+: 616 8 4 by
+- 624
+: 629 3 1 The 
+: 633 6 8 sharp 
+: 642 9 4 knife 
+: 657 3 -1 of 
+: 661 3 -1 a 
+: 666 1 8 sho
+: 668 6 6 ~rt 
+* 676 46 6 life 
+: 727 7 4 Well,
+- 734
+: 748 3 8 I
+: 752 2 6 ~’ve
+: 755 3 4 ~ 
+: 762 7 4 had 
+: 775 4 -1 just 
+: 780 3 -1 e
+: 784 4 -1 nough 
+: 791 16 -1 time
+- 807 820
+- 820
+: 836 4 4 If 
+: 842 4 8 I 
+: 848 3 4 die 
+: 854 7 1 young,
+- 861
+: 870 2 6 Bu
+: 873 2 8 ry 
+: 876 3 6 me 
+: 880 2 4 in 
+: 885 3 1 sa
+: 890 2 -1 tin
+- 892
+: 895 3 8 Lay 
+: 904 4 6 me 
+: 910 10 6 down 
+: 921 2 6 on
+- 923
+: 926 3 -1 A 
+: 933 2 6 bed 
+: 936 2 8 of 
+: 939 7 9 ro
+: 947 5 8 ses
+- 952
+: 956 3 8 Sink 
+: 960 3 8 me 
+: 964 4 6 in 
+: 969 2 4 the 
+: 972 3 6 ri
+: 977 8 4 ver 
+: 993 2 8 at 
+: 999 7 4 dawn
+- 1006
+: 1014 5 8 Send 
+: 1020 2 9 me
+: 1023 3 8 ~ 
+: 1027 3 6 a
+: 1031 2 8 way
+: 1034 5 6 ~ 
+: 1042 2 6 with 
+: 1045 1 6 the 
+: 1047 5 6 words 
+: 1053 2 6 of 
+: 1056 1 8 a 
+: 1058 4 6 love 
+: 1067 14 4 song
+- 1081
+: 1095 3 1 The 
+: 1103 4 8 sharp 
+: 1112 11 4 knife 
+: 1127 3 -1 of 
+: 1131 3 -1 a 
+: 1136 1 8 sho
+: 1138 6 6 ~rt 
+: 1146 44 6 life 
+: 1196 7 4 Well,
+- 1203
+: 1215 5 8 I
+: 1221 2 6 ~’ve 
+: 1228 9 4 had 
+: 1242 4 -1 just 
+: 1247 3 -1 e 
+: 1251 5 8 nough 
+: 1263 33 6 time
+- 1296
+: 1306 2 4 And 
+: 1309 4 6 I’ll 
+: 1314 3 8 be 
+: 1318 2 6 wea
+: 1321 3 4 ring 
+: 1325 8 4 white,
+- 1333
+: 1342 3 4 When 
+: 1346 3 4 I 
+: 1350 5 6 come 
+: 1356 3 6 in
+: 1360 2 6 to 
+: 1363 2 4 your 
+: 1368 3 1 king
+: 1372 5 -1 dom
+- 1377
+: 1378 2 -1 I’m 
+: 1381 3 1 as 
+: 1385 3 3 green 
+: 1389 1 3 as 
+: 1391 2 3 the 
+: 1394 9 3 ring 
+: 1404 4 3 on 
+: 1409 1 3 my 
+: 1411 9 4 little 
+: 1421 5 6 cold 
+: 1427 3 6 fin
+: 1431 4 4 ger
+- 1435
+: 1436 7 4 I’ve 
+: 1451 4 8 never 
+: 1456 8 8 known 
+: 1465 4 8 the 
+: 1471 4 8 lo
+: 1476 2 6 vin’ 
+: 1479 3 6 of 
+: 1483 4 4 a 
+: 1488 5 4 man
+- 1493
+: 1495 2 4 But 
+: 1498 3 4 it 
+: 1502 5 6 sure 
+: 1508 6 6 felt 
+: 1515 4 6 nice 
+: 1520 2 6 when 
+: 1523 3 6 he 
+: 1527 2 6 was 
+: 1530 5 6 holding 
+: 1536 4 8 my 
+: 1544 4 9 hand
+- 1548
+: 1551 4 8 There’s 
+: 1556 1 1 a 
+: 1562 2 8 boy 
+: 1565 2 6 here 
+: 1568 3 4 in 
+: 1574 5 4 town, 
+: 1581 4 4 says 
+: 1589 3 4 he’ll 
+: 1593 2 6 love 
+: 1596 2 6 me 
+: 1599 2 4 for
+: 1602 3 1 e 
+: 1606 3 -1 ver
+- 1609
+: 1616 7 3 Who 
+: 1624 3 3 would 
+: 1628 3 3 have 
+: 1632 6 3 thought 
+: 1639 14 4 forever 
+: 1654 4 4 could 
+: 1659 2 6 be 
+: 1662 4 6 se
+: 1667 4 8 vered 
+: 1672 4 4 by 
+: 1682 3 1 the 
+: 1688 5 8 sharp 
+: 1695 9 4 knife 
+: 1712 3 -1 of 
+: 1719 1 6 a 
+: 1721 1 8 sho
+: 1723 7 6 ~rt 
+: 1732 45 6 life 
+: 1785 8 4 Well,
+- 1793
+: 1801 8 8 I
+: 1812 2 6 ~’ve 
+: 1817 4 4 had 
+: 1830 3 4 just 
+: 1834 4 4 e
+: 1839 4 13 nough 
+* 1850 20 11 ti
+* 1875 26 15 ~
+* 1902 3 13 ~
+* 1907 6 15 ~
+* 1915 13 16 ~me
+- 1928 2124
+- 2124
+: 2140 5 8 So 
+: 2146 3 11 put 
+: 2150 2 11 on 
+: 2153 3 8 your 
+: 2157 6 6 best 
+: 2164 7 4 boys, 
+: 2172 2 4 and 
+: 2177 1 8 I’ll 
+: 2181 6 4 wear 
+: 2188 5 4 my 
+: 2196 8 -1 pearls
+- 2204 2206
+- 2206
+: 2222 1 3 What 
+: 2224 3 3 I 
+: 2228 7 3 never 
+: 2238 4 3 did 
+: 2244 2 1 is 
+: 2251 21 -1 done
+- 2272
+: 2282 3 -1 A 
+: 2286 2 6 pen
+: 2289 3 8 ny 
+: 2293 2 6 for 
+: 2296 3 4 my 
+: 2301 8 1 thoughts,
+- 2309
+: 2310 3 8 Oh 
+: 2314 4 4 no, 
+: 2322 3 4 I’ll 
+: 2328 7 6 sell 
+: 2336 3 6 ’em 
+: 2340 6 6 for 
+: 2347 1 6 a 
+: 2349 1 6 dol
+: 2351 5 4 lar
+- 2356
+: 2362 3 1 They’re 
+: 2366 3 3 worth 
+: 2370 3 3 so 
+: 2374 3 3 much 
+: 2378 5 3 more 
+: 2388 11 4 after 
+: 2400 2 4 I’m 
+: 2403 2 6 a 
+: 2406 7 6 goner
+- 2413
+: 2414 4 4 A
+: 2419 4 6 ~nd 
+: 2424 1 6 may
+: 2426 2 8 be 
+: 2429 3 6 then 
+: 2433 3 4 you’ll 
+: 2437 6 4 hear 
+: 2444 3 4 the 
+: 2448 8 6 words 
+: 2457 3 6 I 
+: 2461 3 6 been 
+: 2465 5 6 sing
+: 2471 5 4 ing
+- 2476
+: 2485 2 1 Fun
+: 2488 4 3 ny 
+: 2494 3 3 when 
+: 2498 3 3 you’re 
+: 2502 6 3 dead 
+: 2509 3 3 how 
+: 2513 9 4 people 
+: 2523 7 4 start 
+: 2531 9 6 liste
+: 2541 19 4 nin’
+- 2560 2660
+- 2660
+: 2676 5 4 If 
+: 2682 4 8 I 
+: 2687 6 4 die 
+: 2694 9 1 young,
+- 2703
+: 2710 2 6 Bu
+: 2713 3 8 ry 
+: 2717 3 8 me 
+: 2721 2 8 in 
+: 2725 3 6 sa
+: 2729 3 4 tin
+- 2732
+: 2740 3 8 Lay 
+: 2744 7 8 me 
+: 2752 3 11 do
+: 2756 5 6 ~wn 
+: 2762 3 6 on 
+: 2766 3 -1 a 
+: 2772 3 6 bed 
+: 2776 3 8 of 
+: 2780 6 9 ro
+: 2788 5 8 ses
+- 2793
+: 2794 7 8 Sink 
+: 2802 3 8 me 
+: 2806 2 6 in 
+: 2809 3 4 the 
+: 2813 1 6 ri 
+: 2817 9 4 ver
+: 2831 6 8 at 
+: 2838 9 8 dawn
+- 2847
+: 2854 4 8 Send 
+: 2862 6 8 me 
+: 2869 1 6 a
+: 2871 8 8 way 
+: 2880 2 6 with 
+: 2883 2 6 the 
+: 2886 6 6 words 
+: 2893 2 6 of 
+: 2897 2 8 a 
+: 2901 3 6 love 
+: 2905 17 4 song
+- 2922
+: 2924 4 8 Oh 
+: 2930 12 4 oh 
+: 2952 3 6 the 
+: 2956 6 6 bal
+: 2963 3 8 lad 
+: 2967 3 6 of 
+: 2972 1 4 a 
+: 2974 19 4 dove
+- 2993
+: 3008 2 4 Go 
+: 3011 3 1 with 
+: 3018 5 4 peace 
+: 3027 3 1 and 
+: 3034 6 4 love
+- 3040
+: 3049 7 6 Gather 
+: 3057 2 6 up 
+: 3060 2 4 your 
+: 3063 10 4 tears, 
+: 3074 7 11 keep 
+: 3082 2 11 ’em 
+: 3085 2 8 in 
+: 3088 2 6 your 
+: 3091 4 6 poc
+: 3096 5 4 ket
+- 3101
+: 3104 4 3 Save 
+: 3109 3 3 ’em 
+: 3113 3 3 for 
+: 3117 2 3 a 
+: 3120 7 3 time 
+: 3128 2 3 when 
+: 3131 3 3 you’re 
+: 3135 2 3 real
+: 3138 3 4 ly 
+: 3142 6 4 gonna 
+: 3149 4 6 need 
+: 3154 6 8 ’em
+- 3160
+: 3161 5 4 Oh 
+: 3169 3 1 the 
+: 3177 3 8 sharp 
+: 3186 6 4 knife 
+: 3199 3 -1 of 
+: 3203 2 -1 a 
+: 3206 5 8 sho
+: 3212 5 6 ~rt 
+* 3218 27 6 li
+* 3246 2 4 ~
+* 3249 21 3 ~fe
+- 3270
+: 3274 5 4 Well, 
+: 3285 9 11 I
+: 3295 5 8 ~’ve 
+: 3303 8 8 had 
+: 3314 5 4 just 
+* 3320 1 6 e
+* 3322 8 13 nough 
+: 3331 31 11 ti
+: 3365 3 15 ~
+: 3369 2 13 ~
+: 3372 9 11 ~me
+- 3381
+: 3389 5 8 So
+: 3395 5 11 ~ 
+: 3401 4 13 put 
+: 3406 5 11 on 
+: 3412 4 11 your 
+: 3417 6 6 best 
+: 3424 25 4 boys,
+- 3449
+: 3456 3 -1 And 
+: 3462 4 8 I’ll 
+: 3468 8 4 wear 
+: 3477 10 4 my 
+* 3488 8 1 pea
+* 3497 33 -1 ~rls
+E
