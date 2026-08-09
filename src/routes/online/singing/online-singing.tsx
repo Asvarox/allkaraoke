@@ -153,7 +153,7 @@ function OnlineSinging({ roomState, song }: Props) {
   useEffect(() => {
     if (anchorServerTimeMs === null || hasFinished) return;
     const interval = setInterval(() => {
-      void OnlineClient.rpc.scoring.publishScore(GameState.getPlayerScore(selfNumber)).catch(() => undefined);
+      OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
     }, 1_000);
     return () => clearInterval(interval);
   }, [anchorServerTimeMs, hasFinished, selfNumber]);
@@ -162,7 +162,7 @@ function OnlineSinging({ roomState, song }: Props) {
     setVideoStatus(state);
     videoStatusRef.current = state;
     if (hasFinished) return;
-    void OnlineClient.rpc.playback.reportStatus(mapVideoState(state)).catch(() => undefined);
+    OnlineClient.send.playback.reportStatus(mapVideoState(state));
 
     // A manual pause (clicking the video, media keys) pauses the whole room, just like
     // opening the pause menu does in local play. Room-commanded pauses are excluded —
@@ -180,7 +180,7 @@ function OnlineSinging({ roomState, song }: Props) {
       const expectedMs = videoGapMs + anchorVideoTimeMs! + (OnlineClient.serverNow() - anchorServerTimeMs!);
       const nearEnd = durationMs > 0 && expectedMs > durationMs - 3_000;
       if (!nearEnd) {
-        void OnlineClient.rpc.playback.pause().catch(() => undefined);
+        OnlineClient.send.playback.pause();
       }
     }
   };
@@ -188,10 +188,10 @@ function OnlineSinging({ roomState, song }: Props) {
   const onSongEnd = useCallback(() => {
     if (hasFinished) return;
     setHasFinished(true);
-    void OnlineClient.rpc.scoring.publishScore(GameState.getPlayerScore(selfNumber)).catch(() => undefined);
-    void OnlineClient.rpc.scoring
-      .publishFinal(GameState.getPlayerDetailedScore(selfNumber) as unknown as WireDetailedScore)
-      .catch(() => undefined);
+    OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
+    OnlineClient.send.scoring.publishFinal(
+      GameState.getPlayerDetailedScore(selfNumber) as unknown as WireDetailedScore,
+    );
   }, [hasFinished, selfNumber]);
 
   // The host ended the game — wrap up and publish the final score so the results can show
@@ -205,9 +205,9 @@ function OnlineSinging({ roomState, song }: Props) {
   // Any connected singer can pause and any can resume
   const togglePause = () => {
     if (roomState.pause) {
-      void OnlineClient.rpc.playback.resume().catch(() => undefined);
+      OnlineClient.send.playback.resume();
     } else if (roomState.phase === 'singing') {
-      void OnlineClient.rpc.playback.pause().catch(() => undefined);
+      OnlineClient.send.playback.pause();
     }
   };
   useKeyboard({ back: togglePause }, !hasFinished, [roomState.pause, roomState.phase]);
@@ -235,7 +235,7 @@ function OnlineSinging({ roomState, song }: Props) {
           <PauseOverlay
             pause={roomState.pause}
             resumeCountdownEndsAt={roomState.resumeCountdownEndsAt}
-            onResume={() => void OnlineClient.rpc.playback.resume().catch(() => undefined)}
+            onResume={() => OnlineClient.send.playback.resume()}
             isHost={isHost}
             hostId={roomState.hostId}
             participants={roomState.participants}
@@ -261,7 +261,7 @@ function OnlineSinging({ roomState, song }: Props) {
           // Skip intro is offered only to the host and applies to the whole room
           skipIntroEnabled={isHost}
           onSkipIntro={(targetTimeSec) =>
-            void OnlineClient.rpc.playback.seek(Math.max(0, targetTimeSec * 1_000 - videoGapMs)).catch(() => undefined)
+            OnlineClient.send.playback.seek(Math.max(0, targetTimeSec * 1_000 - videoGapMs))
           }
         />
       </div>

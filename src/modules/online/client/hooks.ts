@@ -43,7 +43,7 @@ export const useReportPlayerStats = (enabled: boolean, playerNumber: PlayerNumbe
     if (!enabled) return;
     const interval = setInterval(() => {
       const volume = InputManager.getPlayerVolume(playerNumber) ?? 0;
-      void OnlineClient.rpc.room.reportStats(OnlineClient.getLatency(), volume).catch(() => undefined);
+      OnlineClient.send.room.reportStats(OnlineClient.getLatency(), volume);
     }, 1_500);
     return () => clearInterval(interval);
   }, [enabled, playerNumber]);

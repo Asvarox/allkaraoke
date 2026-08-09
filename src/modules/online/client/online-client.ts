@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
 
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
-import { createRpcProxy } from '~/modules/network/rpc/rpc-client';
+import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
@@ -92,6 +92,10 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       return () => this.removeListener(handler);
     },
   );
+
+  /** Same calls as `rpc`, but nothing to await and rejections are swallowed — for the many
+   * notify-the-room calls whose result nobody reads. */
+  public readonly send = createFireAndForgetProxy(this.rpc);
 
   public getParticipantId = () => {
     if (this.participantId === null) {

@@ -34,7 +34,7 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
     const trimmed = name.trim();
     if (trimmed && trimmed !== self?.name) {
       setStoredOnlineName(trimmed);
-      void OnlineClient.rpc.room.setName(trimmed).catch(() => undefined);
+      OnlineClient.send.room.setName(trimmed);
     }
   };
 
@@ -47,7 +47,7 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
   // way, rather than asking for a second click on Done to confirm what was already chosen.
   const pickColor = (playerNumber: PlayerNumber) => {
     if (playerNumber === self?.playerNumber) return;
-    void OnlineClient.rpc.room.setPlayerNumber(playerNumber).catch(() => undefined);
+    OnlineClient.send.room.setPlayerNumber(playerNumber);
     close();
   };
 

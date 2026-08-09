@@ -80,9 +80,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
   const songPreviewPublisher = useMemo(() => {
     const send = throttle(() => {
       const { song, difficulty } = previewDraft.current;
-      void OnlineClient.rpc.selection
-        .setPreview(song ? toSongHoverPreview(song, difficulty) : null)
-        .catch(() => undefined);
+      OnlineClient.send.selection.setPreview(song ? toSongHoverPreview(song, difficulty) : null);
     }, 300);
     return {
       onSongFocused: (song: SongPreview | undefined) => {
@@ -101,7 +99,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
     if (!songSelectionOpen && isHost) {
       // Left the browser — clear the shared hover (the server falls back to the selected song)
       songPreviewPublisher.cancel();
-      void OnlineClient.rpc.selection.setPreview(null).catch(() => undefined);
+      OnlineClient.send.selection.setPreview(null);
     }
   }, [songSelectionOpen, isHost, songPreviewPublisher]);
 
@@ -112,9 +110,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
 
   const voteSong = (vote: SongVote) => {
     if (!hostSongPreview) return;
-    void OnlineClient.rpc.selection
-      .voteSong(hostSongPreview.songId, myVote === vote ? null : vote)
-      .catch(() => undefined);
+    OnlineClient.send.selection.voteSong(hostSongPreview.songId, myVote === vote ? null : vote);
   };
 
   const songSelectionIntegration = useMemo<OnlineSongSelectionIntegration>(

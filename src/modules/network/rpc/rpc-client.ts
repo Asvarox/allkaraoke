@@ -21,6 +21,38 @@ export interface RpcClientTransport {
  *   Must return an unsubscribe function so in-flight requests can clean up before the
  *   callback fires (e.g. when they already resolved via rpc-res).
  */
+/** Fire-and-forget mirror of a client contract: same arguments, no result, rejections swallowed. */
+export type FireAndForgetContract<T> = {
+  [NS in keyof T]: {
+    [M in keyof T[NS]]: T[NS][M] extends (...args: infer A) => unknown ? (...args: A) => void : never;
+  };
+};
+
+type AsyncNamespaces = Record<string, Record<string, (...args: never[]) => Promise<unknown>>>;
+
+/**
+ * Wraps an RPC proxy so every call is fire-and-forget: nothing to await, and a rejection
+ * (disconnect, timeout, server error) is swallowed instead of surfacing as an unhandled rejection.
+ * Use it for calls whose result nobody reads; keep the plain `rpc` proxy when the answer matters.
+ */
+export function createFireAndForgetProxy<T extends object>(rpc: T): FireAndForgetContract<T> {
+  return new Proxy({} as FireAndForgetContract<T>, {
+    get(_target, ns: string) {
+      const namespace = (rpc as AsyncNamespaces)[ns];
+      return new Proxy(
+        {},
+        {
+          get(_nsTarget, method: string) {
+            return (...args: never[]) => {
+              void namespace[method](...args).catch(() => undefined);
+            };
+          },
+        },
+      );
+    },
+  });
+}
+
 export function createRpcProxy<T extends HandlerMap>(
   getTransport: () => RpcClientTransport | undefined,
   onDisconnect: (callback: () => void) => () => void,

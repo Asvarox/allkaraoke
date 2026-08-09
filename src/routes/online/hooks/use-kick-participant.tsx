@@ -14,7 +14,7 @@ export default function useKickParticipant() {
 
   const confirmKick = () => {
     if (kickTarget) {
-      void OnlineClient.rpc.room.kickPlayer(kickTarget.id).catch(() => undefined);
+      OnlineClient.send.room.kickPlayer(kickTarget.id);
     }
     setKickTarget(null);
   };

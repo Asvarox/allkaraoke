@@ -43,7 +43,7 @@ function OnlineResults({ roomState, song }: Props) {
         song={song}
         width={width}
         height={height}
-        onClickSongSelection={() => void OnlineClient.rpc.room.returnToLobby().catch(() => undefined)}
+        onClickSongSelection={() => OnlineClient.send.room.returnToLobby()}
         players={players}
         singSetup={singSetup}
         highScores={[]}

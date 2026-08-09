@@ -57,7 +57,7 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
 
   const endGame = () => {
     setConfirmEndOpen(false);
-    void OnlineClient.rpc.room.endGame().catch(() => undefined);
+    OnlineClient.send.room.endGame();
   };
 
   const connected = participants.filter((participant) => participant.connected);
