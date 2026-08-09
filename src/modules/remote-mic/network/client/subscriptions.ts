@@ -1,6 +1,6 @@
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
+import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
 import { PlayerNumber } from '~/modules/players/player-number';
-import { ClientSubscriptionManager } from '~/modules/remote-mic/network/rpc/subscription-manager';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 
 /**

@@ -1,6 +1,6 @@
+import { defineMutation, defineQuery } from '~/modules/network/rpc/define';
+import { ExtractContract } from '~/modules/network/rpc/types';
 import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
-import { defineMutation, defineQuery } from '~/modules/remote-mic/network/rpc/define';
-import { ExtractContract } from '~/modules/remote-mic/network/rpc/types';
 
 import { unpackChartTransfer } from './chart-transfer';
 import {

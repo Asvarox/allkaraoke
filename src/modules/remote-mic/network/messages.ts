@@ -1,6 +1,6 @@
 import { Params } from '~/modules/hooks/use-keyboard';
+import { RpcMessages } from '~/modules/network/rpc/types';
 import { SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
-import { RpcMessages } from '~/modules/remote-mic/network/rpc/types';
 
 export interface NetworkRegisterMessage {
   t: 'register';

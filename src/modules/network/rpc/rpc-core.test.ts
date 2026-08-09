@@ -1,6 +1,8 @@
 import { describe, expect, expectTypeOf, it, vi } from 'vitest';
+
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
+
 import { defineMutation, defineQuery } from './define';
 import { RpcServer } from './rpc-server';
 import { ClientSubscriptionManager } from './subscription-manager';

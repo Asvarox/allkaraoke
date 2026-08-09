@@ -1,10 +1,10 @@
 import type * as Party from 'partykit/server';
 
+import { RpcServer } from '~/modules/network/rpc/rpc-server';
+import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { RpcServer } from '~/modules/remote-mic/network/rpc/rpc-server';
-import { ServerSubscriptionRegistry } from '~/modules/remote-mic/network/rpc/server-subscription-registry';
 
 const STATE_KEY = 'online-room-state';
 

@@ -1,4 +1,5 @@
 import { v4 as uuid } from 'uuid';
+
 import { ExtractContract, HandlerMap, RpcRequest, RpcResponse } from './types';
 
 /** Minimal transport shape the RPC proxy needs. remote-mic's ClientTransport and the online

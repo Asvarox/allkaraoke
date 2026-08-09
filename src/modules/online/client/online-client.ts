@@ -1,10 +1,10 @@
 import { v4 as uuid } from 'uuid';
 
+import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
+import { createRpcProxy } from '~/modules/network/rpc/rpc-client';
+import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { PingPongTracker } from '~/modules/remote-mic/network/rpc/ping-pong-tracker';
-import { createRpcProxy } from '~/modules/remote-mic/network/rpc/rpc-client';
-import { ClientSubscriptionManager } from '~/modules/remote-mic/network/rpc/subscription-manager';
 import isE2E from '~/modules/utils/is-e2-e';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';

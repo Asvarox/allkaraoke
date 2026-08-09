@@ -1,8 +1,8 @@
 import events from '~/modules/game-events/game-events';
+import { RpcServer } from '~/modules/network/rpc/rpc-server';
+import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { ChannelName, SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
-import { RpcServer } from '~/modules/remote-mic/network/rpc/rpc-server';
-import { ServerSubscriptionRegistry } from '~/modules/remote-mic/network/rpc/server-subscription-registry';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import { PartyKitServerTransport } from '~/modules/remote-mic/network/server/transport/party-kit-server';
 import { WebSocketServerTransport } from '~/modules/remote-mic/network/server/transport/web-socket-server';

@@ -1,4 +1,4 @@
-import { createSubscriptionHook } from '~/modules/remote-mic/network/rpc/use-subscription-factory';
+import { createSubscriptionHook } from '~/modules/network/rpc/use-subscription-factory';
 
 import { subscriptionManager } from '../subscriptions';
 

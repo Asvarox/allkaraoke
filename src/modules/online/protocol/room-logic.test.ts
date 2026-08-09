@@ -1,5 +1,6 @@
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { RpcContext } from '~/modules/network/rpc/types';
 import { compressChart, prepareChartTransfer, unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
@@ -13,7 +14,6 @@ import {
   ONLINE_START_LEAD_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
-import { RpcContext } from '~/modules/remote-mic/network/rpc/types';
 
 const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', removePlayer: () => undefined });
 

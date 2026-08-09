@@ -1,5 +1,5 @@
+import { RpcMessages } from '~/modules/network/rpc/types';
 import { PlayerNumber } from '~/modules/players/player-number';
-import { RpcMessages } from '~/modules/remote-mic/network/rpc/types';
 
 /** `readiness` is the host having started the song: every singer sits on the singing screen with the
  * video loaded but held, confirming they're ready — the same beat the local game has when playing
