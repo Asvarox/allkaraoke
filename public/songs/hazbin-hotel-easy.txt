@@ -1,0 +1,391 @@
+#ARTIST:Hazbin Hotel
+#TITLE:Easy
+#CREATOR:2tobi2
+#BPM:230
+#YEAR:2025
+#VIDEO:v=CHriwzZvgkg
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:6451,739130434783
+#ALLKARAOKE_ID:hazbin-hotel-easy
+#ALLKARAOKE_SID:6066
+#ALLKARAOKE_LASTUPDATE:2026-08-09T01:06:48.717Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:127
+#MP3:Hazbin Hotel - Easy.mp3
+#COVER:Hazbin Hotel - Easy [CO].jpg
+#BACKGROUND:Hazbin Hotel - Easy [BG].jpg
+: 15 1 3 Shut 
+: 17 2 3 up, 
+: 21 2 1 you 
+: 25 2 3 know 
+: 29 2 1 that 
+: 33 1 5 I 
+: 35 2 3 love 
+: 39 2 1 you
+- 41
+: 47 1 3 But 
+: 49 2 3 that’s 
+: 53 2 1 e
+: 57 2 3 nough 
+: 61 1 1 of 
+: 63 2 5 this 
+: 67 2 -2 spi
+: 71 2 -2 ral
+- 73
+: 79 1 3 Some 
+: 81 2 3 of 
+: 85 2 1 your 
+: 89 2 3 dreams 
+: 93 2 1 ha
+: 97 1 5 ven’t 
+: 99 2 3 come 
+: 103 2 1 true
+- 105
+: 111 1 3 Well, 
+: 113 2 3 here’s 
+: 117 2 1 how 
+: 121 2 3 we’ll 
+: 125 2 1 break 
+: 129 1 5 the 
+: 131 2 -2 cy
+: 135 2 -2 cle
+- 137
+: 143 2 1 Your 
+: 147 4 0 hand, 
+: 155 2 1 my 
+: 159 4 0 hand, 
+: 167 2 1 your 
+: 171 2 0 bo
+: 175 2 1 dy 
+: 179 2 -2 and 
+: 183 4 8 mine
+: 189 4 10 ~
+- 193
+: 207 2 1 They 
+: 211 4 0 can 
+: 219 2 1 with
+: 223 4 0 stand 
+: 231 2 0 the 
+: 235 2 1 f
+: 239 1 -2 i
+: 241 4 -2 ring 
+: 247 4 5 line
+- 251
+: 259 4 -4 ’Cause 
+: 267 2 -2 a
+: 271 2 -2 ny
+: 275 2 -2 one 
+: 279 2 -2 who 
+: 283 2 -2 finds 
+: 287 2 1 love 
+: 291 2 -2 in 
+: 295 4 5 Hell, 
+: 303 2 3 can 
+: 307 2 3 do 
+: 311 2 3 a
+: 315 2 3 ny
+: 319 2 5 thing, 
+: 323 2 3 ba
+: 327 2 1 by
+- 329
+: 331 2 -2 You 
+: 335 2 -2 and 
+: 339 2 -2 me 
+: 343 2 -2 don’t 
+: 347 2 -2 need 
+: 351 2 1 no 
+: 355 2 -2 one 
+: 359 4 5 else 
+: 367 2 3 to 
+: 371 2 3 make 
+: 375 2 3 it 
+: 379 2 3 through 
+: 383 2 5 the 
+: 387 2 3 cra
+: 391 2 1 zy
+- 393
+: 399 2 6 No 
+: 403 2 6 blow 
+: 407 2 5 comes 
+: 411 2 6 close 
+: 415 1 5 to 
+: 417 2 6 fa
+: 421 2 5 tal
+- 423
+: 425 1 3 For 
+: 427 2 3 this 
+: 431 2 3 prin
+: 435 2 3 cess 
+: 439 2 1 and 
+: 443 2 3 fal
+: 447 1 1 len 
+: 449 2 3 an
+: 453 2 5 gel
+- 455
+: 459 2 -2 We 
+: 463 2 -2 al
+: 467 2 -2 rea
+: 471 2 -2 dy 
+: 475 2 -2 found 
+: 479 2 1 love 
+: 483 2 -2 in 
+: 487 4 5 Hell, 
+: 495 2 3 the 
+: 499 2 3 rest 
+: 503 2 1 is 
+: 507 2 6 ea
+: 511 2 5 sy, 
+: 515 2 3 ba
+: 519 2 1 by
+- 521
+: 527 2 6 I 
+: 531 2 6 ap
+: 535 6 5 pre
+: 543 6 1 ci
+: 551 4 -4 ate 
+: 559 4 3 all 
+: 567 4 1 that
+- 571
+: 575 4 5 But 
+: 583 4 -2 we 
+: 591 4 6 Need 
+: 599 4 5 our 
+: 607 4 1 friends 
+: 615 4 3 to 
+: 623 4 5 come 
+: 631 6 5 back
+- 637
+: 651 2 5 You’re 
+: 655 1 3 my 
+: 657 2 5 pil
+: 661 2 3 lar, 
+: 665 1 3 my 
+: 667 2 5 heart’s 
+: 671 1 3 ful
+: 673 2 5 fil
+: 677 2 3 ler, 
+: 681 1 3 but 
+: 683 2 5 there’s 
+: 687 2 3 no 
+: 691 2 5 way 
+: 695 2 3 this 
+: 699 1 5 li
+: 701 2 6 ning’s 
+: 705 2 6 sil
+: 709 2 5 ver
+- 711
+: 715 1 1 Eve
+: 717 1 1 ry
+: 719 2 3 one’s 
+: 723 2 3 gone, 
+: 727 2 5 we’re 
+: 731 2 3 fa
+: 735 1 8 cing 
+: 737 1 5 a 
+: 739 2 5 war
+- 741
+: 745 1 8 We 
+: 747 2 8 can’t 
+: 751 1 8 get 
+: 753 1 8 in 
+: 755 2 8 touch 
+: 759 1 8 with 
+: 761 1 8 a
+: 763 1 8 ny
+: 765 1 8 one 
+: 767 1 8 a
+: 769 1 10 ny
+: 771 2 10 more, 
+: 775 3 8 and-
+- 778
+: 781 2 3 Shut 
+: 785 2 3 up, 
+: 789 2 1 you 
+: 793 2 3 know 
+: 797 2 1 that 
+: 801 1 5 I 
+: 803 2 3 love 
+: 807 4 1 you
+- 811
+: 815 1 3 But 
+: 817 2 3 you’re 
+: 821 2 1 for
+: 825 2 3 get
+: 829 2 1 tin’ 
+: 833 1 5 who 
+: 835 2 -2 we 
+: 839 2 -2 are
+- 841
+: 847 1 3 In 
+: 849 1 3 a 
+: 851 2 3 pit 
+: 855 1 1 that 
+: 857 2 3 doe
+: 861 2 1 sn’t 
+: 865 1 5 let 
+: 867 2 3 sun 
+: 871 4 1 through
+- 875
+: 879 2 3 Some
+: 883 2 3 how, 
+: 887 1 1 we 
+: 889 2 6 ma
+: 893 2 5 naged 
+: 897 1 5 to 
+: 899 2 8 see 
+: 903 4 5 stars
+- 907
+: 911 2 8 Your 
+: 915 6 5 heart, 
+: 923 2 8 my 
+: 927 6 5 heart, 
+: 935 2 8 when 
+: 939 2 5 I 
+: 943 2 8 am 
+: 947 2 5 with 
+: 951 6 12 you
+: 959 6 13 ~
+- 965
+: 975 2 8 Two 
+: 979 4 5 souls, 
+: 987 2 8 one 
+: 991 4 5 goal, 
+: 999 2 5 we’ll 
+: 1003 4 8 ne
+: 1009 4 5 ver 
+: 1015 4 10 lose
+- 1019
+: 1027 4 -4 ’Cause 
+: 1035 2 -2 a
+: 1039 2 -2 ny
+: 1043 2 -2 one 
+: 1047 2 -2 who 
+: 1051 2 -2 finds 
+: 1055 2 1 love 
+: 1059 2 -2 in 
+: 1063 4 5 Hell, 
+: 1071 2 3 can 
+: 1075 2 3 do 
+: 1079 2 3 a
+: 1083 2 3 ny
+: 1087 2 5 thing, 
+: 1091 2 3 ba
+: 1095 2 1 by
+- 1097
+: 1099 2 -2 You 
+: 1103 2 -2 and 
+: 1107 2 -2 me 
+: 1111 2 -2 don’t 
+: 1115 2 -2 need 
+: 1119 2 1 no 
+: 1123 2 -2 one 
+: 1127 4 5 else 
+: 1135 2 3 to 
+: 1139 2 3 make 
+: 1143 2 3 it 
+: 1147 2 3 through 
+: 1151 2 5 the 
+: 1155 2 3 cra
+: 1159 2 1 zy
+- 1161
+: 1167 2 6 No 
+: 1171 2 6 blow 
+: 1175 2 5 comes 
+: 1179 2 6 close 
+: 1183 1 5 to 
+: 1185 2 6 fa
+: 1189 2 5 tal 
+: 1193 1 3 for 
+: 1195 2 3 this 
+: 1199 2 3 prin
+: 1203 2 3 cess 
+: 1207 2 1 and 
+: 1211 2 3 fal
+: 1215 1 1 len 
+: 1217 2 3 an
+: 1221 2 5 gel
+- 1223
+: 1227 2 10 We 
+: 1231 2 10 al 
+: 1235 2 10 rea
+: 1239 2 10 dy 
+: 1243 2 10 found 
+: 1247 2 13 love 
+: 1251 2 10 in 
+: 1255 4 17 Hell, 
+: 1263 2 3 the 
+: 1267 2 3 rest 
+: 1271 2 1 is 
+: 1275 2 6 ea
+: 1279 2 5 sy, 
+: 1283 2 3 ba
+: 1287 2 5 by
+- 1289
+: 1291 2 11 A
+: 1295 2 11 ny
+: 1299 2 11 one 
+: 1303 2 11 who 
+: 1307 2 11 finds 
+: 1311 2 14 love 
+: 1315 2 11 in 
+: 1319 4 18 Hell, 
+: 1327 2 16 can 
+: 1331 2 16 do 
+: 1335 2 16 a
+: 1339 2 16 ny
+: 1343 2 18 thing, 
+: 1347 2 16 ba
+: 1351 2 14 by
+- 1353
+: 1355 2 11 You 
+: 1359 2 11 and 
+: 1363 2 11 me 
+: 1367 2 11 don’t 
+: 1371 2 11 need 
+: 1375 2 14 no 
+: 1379 2 11 one 
+: 1383 4 18 else 
+: 1391 2 16 to 
+: 1395 2 16 make 
+: 1399 2 16 it 
+: 1403 2 16 through 
+: 1407 2 18 the 
+: 1411 2 16 cra
+: 1415 2 14 zy
+- 1417
+: 1423 2 7 No 
+: 1427 2 7 blow 
+: 1431 2 6 comes 
+: 1435 2 7 close 
+: 1439 1 6 to 
+: 1441 2 7 fa
+: 1445 2 6 tal 
+: 1449 1 4 for 
+: 1451 2 4 this 
+: 1455 2 4 prin
+: 1459 2 4 cess 
+: 1463 2 2 and 
+: 1467 2 4 fal
+: 1471 1 2 len 
+: 1473 2 4 an
+: 1477 2 6 gel
+- 1479
+: 1483 2 11 We 
+: 1487 2 11 al
+: 1491 2 11 rea
+: 1495 2 11 dy 
+: 1499 2 11 found 
+: 1503 2 14 love 
+: 1507 2 11 in 
+: 1511 4 18 Hell, 
+: 1519 2 16 the 
+: 1523 2 16 rest 
+: 1527 2 16 is 
+: 1531 2 19 ea
+: 1535 2 18 sy, 
+: 1539 2 16 ba
+: 1543 8 14 by
+E
