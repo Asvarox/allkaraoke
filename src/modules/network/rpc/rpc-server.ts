@@ -1,20 +1,30 @@
-import { AnyDefinition, HandlerMap, RpcContext, RpcRequest } from './types';
+import {
+  AnyDefinition,
+  AnySubscriptionChannels,
+  HandlerMap,
+  RpcCall,
+  RpcContext,
+  RpcPublish,
+  RpcRequest,
+  RpcResponse,
+} from './types';
 
 /** Minimal shape of a connected peer the RPC server can respond to. Both remote-mic's
- * SenderInterface and the online room's connection wrapper satisfy it structurally. */
+ * SenderInterface and the online room's connection wrapper satisfy it structurally — they
+ * accept wider payload types than the two frames the RPC server ever sends. */
 export interface RpcSenderInterface {
   peer: string;
-  send(payload: any): void;
+  send(payload: RpcResponse | RpcCall): void;
 }
 
 /** Handles incoming RPC requests from clients: permission checks, dispatch, and response sending.
  * Feature-agnostic: the hosting server supplies permission lookup, subscription broadcast and
  * peer removal, and its own transport/message types. */
-export class RpcServer<T extends HandlerMap> {
+export class RpcServer<T extends HandlerMap, TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {
   constructor(
     private readonly handlers: T,
     private readonly getPermission: (peerId: string) => 'read' | 'write',
-    private readonly broadcastToSubscribers: (channel: string, message: any) => void,
+    private readonly broadcastToSubscribers: (channel: keyof TChannels, message: RpcPublish<TChannels>) => void,
     private readonly removePlayerFromTransport: (peerId: string) => void,
   ) {}
 
@@ -59,7 +69,7 @@ export class RpcServer<T extends HandlerMap> {
   };
 
   /** Push data to all clients subscribed to a channel. */
-  public publish = (channel: string, data: unknown): void => {
+  public publish = <C extends keyof TChannels>(channel: C, data: TChannels[C]): void => {
     this.broadcastToSubscribers(channel, { t: 'rpc-pub', channel, data });
   };
 

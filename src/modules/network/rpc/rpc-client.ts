@@ -2,13 +2,22 @@ import { v4 as uuid } from 'uuid';
 
 import { ExtractContract, HandlerMap, RpcRequest, RpcResponse } from './types';
 
+/** The only thing the RPC core needs to know about an inbound frame. Both feature protocols
+ * discriminate their messages on `t`, so the core can pick out its own `rpc-res` replies without
+ * knowing either union — which is the whole point of it not importing one. */
+export interface RpcIncomingMessage {
+  t: string;
+}
+
 /** Minimal transport shape the RPC proxy needs. remote-mic's ClientTransport and the online
- * room transport both satisfy it structurally, each with their own message unions. */
+ * room transport both satisfy it structurally, each with their own message unions: their
+ * listeners take a wider type than `RpcIncomingMessage` and their `sendEvent` accepts more
+ * than an `RpcRequest`, both of which are fine in that direction. */
 export interface RpcClientTransport {
   isConnected(): boolean;
-  addListener(listener: (message: any) => void): unknown;
-  removeListener(listener: (message: any) => void): void;
-  sendEvent(message: any): void;
+  addListener(listener: (message: RpcIncomingMessage) => void): unknown;
+  removeListener(listener: (message: RpcIncomingMessage) => void): void;
+  sendEvent(message: RpcRequest): void;
 }
 
 /** Fire-and-forget mirror of a client contract: same arguments, no result, rejections swallowed. */
@@ -63,7 +72,7 @@ export function createRpcProxy<T extends HandlerMap>(
         {},
         {
           get(_nsTarget, method: string) {
-            return (...args: any[]): Promise<any> => {
+            return (...args: unknown[]): Promise<unknown> => {
               const transport = getTransport();
               if (!transport?.isConnected()) {
                 return Promise.reject(new Error(`Not connected (calling ${ns}.${method})`));
@@ -71,7 +80,7 @@ export function createRpcProxy<T extends HandlerMap>(
 
               const id = uuid();
 
-              return new Promise<any>((resolve, reject) => {
+              return new Promise<unknown>((resolve, reject) => {
                 const timeout = setTimeout(() => {
                   cleanup();
                   reject(new Error(`RPC timeout: ${ns}.${method}`));
@@ -82,15 +91,17 @@ export function createRpcProxy<T extends HandlerMap>(
                   reject(new Error(`Transport disconnected during RPC: ${ns}.${method}`));
                 });
 
-                const listener = (event: any) => {
-                  if (event.t === 'rpc-res' && (event as RpcResponse).id === id) {
-                    cleanup();
-                    const response = event as RpcResponse;
-                    if (response.error) {
-                      reject(new Error(response.error));
-                    } else {
-                      resolve(response.result);
-                    }
+                const listener = (event: RpcIncomingMessage) => {
+                  if (event.t !== 'rpc-res') return;
+
+                  const response = event as RpcResponse;
+                  if (response.id !== id) return;
+
+                  cleanup();
+                  if (response.error) {
+                    reject(new Error(response.error));
+                  } else {
+                    resolve(response.result);
                   }
                 };
 

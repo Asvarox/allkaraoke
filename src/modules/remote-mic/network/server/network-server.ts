@@ -25,10 +25,10 @@ export class NetworkServer {
   private started = false;
   private transport: ServerTransport | undefined;
 
-  private rpcServer = new RpcServer(
+  private rpcServer = new RpcServer<typeof serverHandlers, SubscriptionChannels>(
     serverHandlers,
     (peerId) => RemoteMicManager.getPermission(peerId),
-    (channel, message) => RemoteMicManager.broadcastToChannel(channel as ChannelName, message),
+    (channel, message) => RemoteMicManager.broadcastToChannel(channel, message),
     (peerId) => this.transport?.removePlayer(peerId),
   );
 
@@ -115,8 +115,8 @@ export class NetworkServer {
   public getLatency = () => this.transport?.getCurrentPing() ?? 0;
 
   // Publish data to all clients subscribed to a named channel
-  public publish = (channel: string, data: unknown): void => {
-    this.subscriptions.setLastValue(channel as ChannelName, data as SubscriptionChannels[ChannelName]);
+  public publish = <C extends ChannelName>(channel: C, data: SubscriptionChannels[C]): void => {
+    this.subscriptions.setLastValue(channel, data);
     this.rpcServer.publish(channel, data);
   };
 
