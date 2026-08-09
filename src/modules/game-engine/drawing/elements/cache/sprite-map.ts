@@ -1,7 +1,7 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { BIG_NOTE_HEIGHT, NOTE_HEIGHT } from '~/modules/game-engine/drawing/calculate-data';
 import drawRawNote from '~/modules/game-engine/drawing/elements/cache/elements/note';
 import drawRawPlayerNote from '~/modules/game-engine/drawing/elements/cache/elements/player-note';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 const SHADOW_PAD = 10;
 

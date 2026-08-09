@@ -1,5 +1,5 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { FrequencyRecord, milliseconds, Note, PlayerNote, Section, Song, SongTrack } from '~/interfaces';
+import { PlayerNumber } from '~/modules/players/player-number';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 
 export const pitchPadding = 6;

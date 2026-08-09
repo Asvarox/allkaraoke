@@ -1,7 +1,7 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { Note, PlayerNote } from '~/interfaces';
 import { SpriteNames } from '~/modules/game-engine/drawing/elements/cache/sprite-map';
 import drawSpriteWithStartAndEnd from '~/modules/game-engine/drawing/elements/sprite-with-start-and-end';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 const getSpriteName = (playerNumber: PlayerNumber, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
   let spriteName = `p${playerNumber}`;

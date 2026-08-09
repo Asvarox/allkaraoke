@@ -1,5 +1,5 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
 import { SenderInterface } from '~/modules/remote-mic/network/server/transport/interface';
 import { getPingTime } from '~/modules/remote-mic/network/utils';

@@ -1,4 +1,3 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import { GAME_MODE, milliseconds, seconds, SingSetup, Song, songBeat } from '~/interfaces';
 import {
   addDetailedScores,
@@ -8,6 +7,7 @@ import {
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import PlayerState from '~/modules/game-engine/game-state/player-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { PlayerNumber } from '~/modules/players/player-number';
 import getSongBeatCount from '~/modules/songs/utils/get-song-beat-count';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
 import tuple from '~/modules/utils/tuple';

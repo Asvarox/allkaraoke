@@ -1,10 +1,10 @@
-import { PlayerNumber } from '~/modules/players/player-number';
 import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
 import dummyInput from '~/modules/game-engine/input/dummy-input';
 import InputInterface from '~/modules/game-engine/input/interface';
 import MicInput from '~/modules/game-engine/input/multi-mic-input';
 import RemoteMicInput from '~/modules/game-engine/input/remote-mic-input';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import { DrawingTestInputSource } from '~/routes/select-input/input-sources/drawing-test';
 import { InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
