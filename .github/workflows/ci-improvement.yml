@@ -60,10 +60,12 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - name: Build app
-        run: pnpm build
+      # Must run before the build: the preview server that serves the E2E suite reads the
+      # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
         run: cp .dev.vars.example .dev.vars
+      - name: Build app
+        run: pnpm build
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
@@ -187,12 +189,14 @@ jobs:
           persist-credentials: true
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      # Must run before the build: the preview server that serves the E2E suite reads the
+      # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
+      - name: Configure local worker secrets for E2E
+        run: cp .dev.vars.example .dev.vars
       - name: Build app
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
           pnpm build
-      - name: Configure local worker secrets for E2E
-        run: cp .dev.vars.example .dev.vars
       - name: Run visual regression tests and update snapshots
         uses: './.github/templates/run-playwright'
         with:

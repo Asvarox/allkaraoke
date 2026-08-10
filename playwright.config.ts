@@ -115,9 +115,16 @@ const config: PlaywrightTestConfig = {
   webServer: [
     prodRun
       ? {
-          // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
+          // On CI we check the same build as would be deployed - with the risk that some issues won't happen
+          // locally. CI builds in its own step, so it only needs to serve the result. Both paths serve it with
+          // `vite preview`, which runs the built Worker in the Workers runtime via @cloudflare/vite-plugin.
+          //
+          // Not `wrangler dev`: it fronts the Worker with a ProxyWorker whose fetch rejects with "Network
+          // connection lost." whenever a request is aborted mid-flight - a browser page or context closing,
+          // which the remote-mic specs do constantly. Wrangler treats that as fatal and exits, so the rest of
+          // the shard fails with ERR_CONNECTION_REFUSED.
           command: process.env.CI
-            ? 'wrangler dev --port 3010 --local'
+            ? 'vite preview --port 3010'
             : 'VITE_APP_PRERENDER=true vite build && vite preview --port 3010',
           port: 3010,
           timeout: 60_000 * 3,
