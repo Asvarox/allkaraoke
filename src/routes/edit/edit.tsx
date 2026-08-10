@@ -13,6 +13,7 @@ import useSong from '~/modules/songs/hooks/use-song';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import SongDao from '~/modules/songs/songs-service';
 import { getAdminPassword } from '~/routes/admin/admin-password';
+import { BackgroundSavesIndicator } from '~/routes/admin/background-saves-indicator';
 import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
 import { deleteAdminUnverifiedSong, listAdminUnverifiedSongs } from '~/routes/admin/unverified-songs-admin-api';
 import { LazyConvert } from '~/routes/convert/convert';
@@ -74,6 +75,7 @@ export default function Edit() {
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
+      {adminUnverifiedSongId && <BackgroundSavesIndicator />}
       <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
         <Link to={returnLink}>
           <a>{returnLinkLabel}</a>
