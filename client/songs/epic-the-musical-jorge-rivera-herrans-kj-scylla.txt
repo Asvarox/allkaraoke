@@ -1,0 +1,304 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, KJ)
+#TITLE:Scylla
+#CREATOR:Andore
+#BPM:350
+#YEAR:2024
+#VIDEO:v=aPxjbWbhyPc
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:9304,285714285714
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-kj-scylla
+#ALLKARAOKE_SID:6077
+#ALLKARAOKE_LASTUPDATE:2026-08-10T01:08:54.510Z
+#ALLKARAOKE_REALBPM:52
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:198
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, KJ) - Scylla.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, KJ) - Scylla [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, KJ) - Scylla [BG].jpg
+#END:173400
+: 23 3 -4 The 
+: 30 3 -6 lair
+: 33 5 -4 ~
+: 38 5 -6 ~ 
+: 47 2 -8 of 
+: 51 4 -6 Scyl
+: 56 4 -9 ~
+: 62 24 -11 la
+- 86 114
+- 114
+: 137 2 -11 This 
+: 143 6 -9 is 
+: 152 7 -8 our 
+: 161 6 -4 on
+: 167 16 -3 ~
+: 183 4 -4 ly 
+: 190 22 -4 way 
+: 217 8 -4 home
+- 225 246
+- 246
+: 269 23 8 Deep
+: 299 18 6 down
+- 317 318
+- 318
+F 341 2 -11 You're 
+F 351 4 -11 quiet 
+F 357 4 -11 today
+- 361
+F 378 21 4 Deep
+F 406 18 3 down
+- 424 429
+- 429
+F 452 3 6 Not 
+F 456 3 6 much 
+F 460 1 6 to 
+F 464 6 6 say
+- 470
+F 485 22 -11 Deep
+F 512 20 -11 down,
+- 532
+F 537 6 9 you 
+F 550 6 11 hide 
+F 557 7 9 a 
+F 565 7 8 rea
+F 574 2 5 son 
+F 582 4 6 for...
+- 586
+: 591 7 -4 I've 
+: 600 6 -4 got 
+: 608 3 -4 a 
+: 616 6 -6 sec
+: 626 6 -4 ret 
+: 635 2 -6 i 
+: 640 2 -4 can 
+: 644 6 -3 no 
+: 653 6 -4 lon
+: 662 5 -6 ger 
+: 672 15 -4 keep
+- 687
+F 698 23 4 Deep
+F 724 18 3 down,
+- 742
+F 750 8 9 you 
+F 760 7 9 know 
+F 769 5 9 that 
+F 777 8 8 we 
+F 787 6 5 are 
+F 796 2 5 the...
+- 798
+: 804 7 -11 I 
+: 813 6 -4 o
+: 821 4 -4 pend 
+: 826 2 -4 the 
+: 831 5 -3 wind 
+: 840 6 -4 bag 
+: 849 6 -4 while 
+: 857 1 2 you
+: 860 5 3 ~ 
+: 867 5 4 were 
+: 876 5 6 a
+: 885 18 3 sleep
+- 903 913
+- 913
+: 936 10 13 lea
+: 949 6 11 ving 
+: 957 5 9 them 
+: 965 7 8 feel
+: 974 5 9 ing 
+: 983 4 11 be
+: 989 26 8 trayed
+- 1015 1022
+- 1022
+: 1045 6 13 Break
+: 1055 6 11 ing 
+: 1065 4 9 the 
+: 1073 6 8 bonds 
+: 1082 5 9 that 
+: 1091 6 11 you've 
+: 1099 6 8 made
+- 1105
+F 1109 1 -4 im 
+F 1116 5 3 so 
+F 1126 6 3 sor
+F 1136 13 1 ry
+- 1149
+: 1153 6 13 There 
+: 1163 3 15 is 
+: 1171 5 16 no 
+: 1179 7 8 price 
+: 1189 7 8 we 
+: 1198 6 9 won't 
+: 1207 13 8 pay
+- 1220 1221
+- 1221
+: 1244 10 3 We 
+: 1261 19 9 both 
+: 1283 9 8 know 
+: 1294 8 8 what 
+: 1306 3 6 it 
+: 1312 9 9 takes 
+: 1323 3 8 to 
+: 1332 7 6 sur
+: 1341 21 8 vive
+- 1362
+F 1366 10 4 Full 
+F 1380 7 3 speed 
+F 1388 3 1 a 
+F 1394 6 3 Full 
+F 1401 9 3 speed 
+F 1411 3 -4 a
+- 1414
+F 1419 11 8 Full 
+F 1433 7 6 speed 
+F 1442 5 4 a
+F 1458 23 -1 head
+F 1482 9 3 ~
+- 1491
+: 1499 9 -11 Full 
+: 1514 6 -11 speed 
+: 1522 3 -11 a
+: 1527 17 -11 head
+- 1544
+F 1553 24 1 Deep
+F 1580 22 3 down,
+- 1602
+: 1610 6 9 we 
+: 1617 4 9 on
+: 1621 3 11 ~
+: 1625 4 9 ly 
+: 1635 5 8 care 
+: 1643 6 5 for 
+: 1650 3 5 our
+: 1653 3 6 ~
+: 1659 21 8 selves
+- 1680
+F 1686 3 -8 Eu
+F 1689 2 -8 ry
+F 1691 4 -8 lo
+F 1696 6 -11 chus
+- 1702
+: 1715 6 -11 light 
+: 1723 3 -4 up 
+: 1728 10 -4 six 
+: 1740 6 -3 tor
+: 1750 7 -4 ches
+- 1757
+F 1767 24 4 Deep
+F 1796 16 3 down,
+- 1812
+: 1821 6 10 we're 
+: 1828 8 10 lone
+: 1839 7 10 ly 
+: 1849 8 8 de
+: 1858 5 7 mons 
+: 1869 4 6 from 
+: 1876 19 11 hell
+- 1895
+F 1902 7 8 Captain!
+- 1909 1913
+- 1913
+F 1936 4 1 Some
+F 1943 5 1 thing 
+F 1951 3 5 ap
+F 1956 3 5 pro
+F 1961 7 5 aches
+- 1968 2009
+- 2009
+F 2032 13 -5 Hello
+- 2045 2519
+- 2519
+: 2542 6 8 Row 
+: 2552 6 8 for 
+: 2561 6 8 your 
+: 2570 18 8 life
+- 2588
+* 2592 8 13 Drown 
+* 2606 3 11 in 
+* 2614 7 9 your 
+* 2622 2 5 sor
+* 2624 4 6 ~
+* 2630 3 8 ~
+* 2633 2 8 rows
+* 2635 3 9 ~ 
+* 2642 5 9 and 
+* 2651 3 9 f
+* 2654 36 7 ears
+- 2690
+* 2704 6 13 choke 
+* 2713 6 12 on 
+* 2722 5 9 your 
+* 2731 7 8 blood 
+* 2741 4 9 and 
+* 2748 5 10 your 
+* 2760 37 8 tears
+- 2797
+: 2809 8 13 Bleed 
+: 2820 5 15 'til 
+: 2827 8 16 you've 
+: 2838 7 8 run 
+: 2848 6 9 out 
+: 2856 7 9 of 
+: 2866 21 8 years
+- 2887
+: 2895 17 6 We 
+: 2919 19 9 must
+: 2941 2 9 ~ 
+: 2947 4 9 do 
+: 2955 7 8 what 
+: 2971 7 8 takes 
+: 2981 4 8 to 
+: 2988 7 7 sur
+: 2999 15 7 vive
+- 3014
+: 3025 7 23 Give 
+: 3035 4 23 up 
+: 3041 7 22 your 
+: 3052 7 19 hon
+: 3062 4 19 or 
+: 3070 5 23 and 
+: 3081 26 22 faith
+: 3112 2 22 ~
+- 3114
+: 3131 8 11 Live 
+: 3140 6 11 up 
+: 3147 7 11 your 
+: 3155 8 11 life 
+: 3170 4 9 as 
+: 3177 3 11 a 
+: 3184 31 10 wraith
+- 3215 3216
+- 3216
+: 3239 4 15 DIe 
+: 3246 7 15 in 
+: 3256 6 15 the 
+: 3263 9 20 blood 
+: 3275 4 20 where 
+: 3283 4 20 you 
+: 3293 21 21 bathe
+- 3314
+: 3322 19 8 We 
+: 3348 4 19 must
+: 3352 16 21 ~ 
+: 3375 3 20 do 
+: 3381 7 20 what 
+: 3389 4 18 it 
+: 3398 8 13 takes 
+: 3408 3 13 to
+- 3411
+: 3417 4 18 sur
+: 3427 43 8 vive
+- 3470 3565
+- 3565
+: 3588 7 9 We 
+: 3597 7 8 are 
+: 3606 2 6 the 
+: 3609 11 9 same, 
+: 3622 9 8 you 
+: 3632 6 6 and
+- 3638
+: 3650 16 1 i
+: 3668 22 -1 ~
+: 3695 12 2 ~
+: 3712 7 3 ~
+: 3720 25 -11 ~
+E
