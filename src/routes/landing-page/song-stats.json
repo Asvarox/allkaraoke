@@ -1,7 +1,7 @@
 {
   "artists": [
-    "Green Day",
     "Lady Gaga",
+    "Green Day",
     "Linkin Park",
     "Britney Spears",
     "Kylie Minogue",
@@ -49,6 +49,7 @@
     "INXS",
     "Paramore",
     "Radiohead",
+    "Slipknot",
     "The Weeknd",
     "Breaking Benjamin",
     "Marilyn Manson",
@@ -64,7 +65,6 @@
     "No Doubt",
     "Panic! at the Disco",
     "Rise Against",
-    "Slipknot",
     "Three Days Grace",
     "Volbeat",
     "Arctic Monkeys",
@@ -72,6 +72,7 @@
     "Dua Lipa",
     "Gwen Stefani",
     "Kool & The Gang",
+    "Olivia Rodrigo",
     "Owl City",
     "Red Hot Chili Peppers",
     "Rod Stewart",
@@ -87,7 +88,6 @@
     "Jonas Brothers",
     "Melanie Martinez",
     "Oasis",
-    "Olivia Rodrigo",
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
@@ -103,6 +103,7 @@
     "Lorde",
     "★N Sync",
     "Nickelback",
+    "Nightwish",
     "Phil Collins",
     "Sabrina Carpenter",
     "Sean Paul",
@@ -139,6 +140,7 @@
     "Blind Guardian",
     "Cheryl Cole",
     "Chris Brown",
+    "Crowded House",
     "Daft Punk",
     "Delta Goodrem",
     "Duran Duran",
@@ -147,9 +149,7 @@
     "Huey Lewis & The News",
     "Lewis Capaldi",
     "Little Mix",
-    "Nelly Furtado",
-    "Nightwish",
-    "OneRepublic"
+    "Nelly Furtado"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6057
+  "songs": 6108
 }
