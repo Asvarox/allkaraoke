@@ -1,0 +1,316 @@
+#ARTIST:Rammstein
+#TITLE:Links 2-3-4
+#CREATOR:DoubleDee73
+#BPM:260
+#YEAR:2001
+#VIDEO:v=Ph-CA_tu5KA
+#LANGUAGE:German
+#GAP:20959,23076923077
+#ALLKARAOKE_ID:rammstein-links-2-3-4
+#ALLKARAOKE_SID:6112
+#ALLKARAOKE_LASTUPDATE:2026-08-12T01:16:13.681Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:216
+#MP3:Rammstein - Links 2-3-4.mp3
+: 17 9 11 Kann 
+: 33 8 4 man 
+: 49 6 7 Her
+: 57 3 4 zen 
+: 61 7 7 bre
+: 69 8 9 chen
+- 77
+: 81 12 11 Kön
+: 97 11 4 nen 
+: 113 6 7 Her
+: 121 2 4 zen 
+: 125 6 7 spre
+: 133 8 9 chen
+- 141
+: 145 14 11 Kann 
+: 161 12 4 man 
+: 177 6 7 Her
+: 185 2 4 zen 
+: 189 6 7 quä
+: 197 10 9 len
+- 207
+: 209 12 11 Kann 
+: 225 12 4 man 
+: 241 6 7 Her
+: 249 2 4 zen 
+: 253 6 7 steh
+: 261 10 9 len
+- 271
+: 281 6 4 Sie 
+: 289 6 4 woll’n 
+: 297 3 4 mein 
+: 301 6 4 Herz 
+: 309 2 4 am 
+: 313 2 4 rech
+: 317 2 4 ten 
+: 321 6 4 Fleck, 
+: 329 9 4 doch
+- 338
+: 345 2 4 Seh 
+: 349 2 4 ich 
+: 353 6 4 dann 
+: 361 6 4 nach 
+: 369 3 7 un
+: 374 3 4 ten 
+: 381 6 4 weg
+- 387
+: 389 2 4 Da 
+: 393 2 4 schlägt 
+: 397 2 4 es 
+: 401 8 4 links
+- 409 512
+- 512
+: 529 8 4 Links
+- 537 640
+- 640
+: 657 12 11 Kön
+: 673 12 4 nen 
+: 689 5 7 Her
+: 697 2 4 zen 
+: 701 6 7 sin
+: 709 10 9 gen
+- 719
+: 721 14 11 Kann 
+: 737 11 4 ein 
+: 753 6 7 Herz 
+: 761 2 4 zer
+: 765 6 7 sprin
+: 773 8 9 gen
+- 781
+: 785 13 11 Kön
+: 801 12 4 nen 
+: 817 6 7 Her
+: 825 2 4 zen 
+: 829 6 7 rein 
+: 838 8 9 sein
+- 846
+: 849 9 11 Kann 
+: 865 11 4 ein 
+: 881 6 7 Herz 
+: 889 3 4 aus 
+: 893 9 7 Stein 
+: 905 9 9 sein
+- 914
+: 921 6 4 Sie 
+: 929 6 4 woll’n 
+: 937 2 4 mein 
+: 941 6 4 Herz 
+: 949 2 4 am 
+: 953 3 4 rech
+: 957 3 4 ten 
+: 961 5 4 Fleck, 
+* 969 9 4 doch
+- 978
+: 985 2 4 Seh’ 
+: 989 2 4 ich 
+: 993 6 4 dann 
+: 1001 6 4 nach 
+: 1009 3 7 un
+: 1013 5 4 ten 
+: 1021 6 4 weg
+- 1027
+: 1029 2 4 Da 
+: 1033 2 4 schlägt 
+: 1037 3 4 es 
+: 1041 7 4 links,
+- 1048 1088
+- 1088
+: 1105 7 4 Links,
+- 1112 1152
+- 1152
+: 1169 8 4 Links,
+- 1177 1216
+- 1216
+: 1233 8 4 Links,
+- 1241 1248
+- 1248
+: 1265 4 4 Links 
+: 1273 7 4 zwo, 
+: 1281 7 7 drei, 
+* 1289 7 9 vier
+- 1296
+: 1297 6 4 Links 
+: 1305 6 4 zwo, 
+: 1313 6 4 links 
+: 1321 6 4 zwo, 
+: 1329 5 7 links 
+: 1337 6 7 zwo 
+: 1345 6 7 drei 
+: 1353 6 7 vier
+- 1359
+: 1361 7 9 Links
+- 1368 1408
+- 1408
+: 1425 6 4 Links 
+: 1433 6 4 zwo, 
+: 1441 6 4 links 
+: 1449 6 4 zwo, 
+: 1457 5 7 links 
+: 1465 5 7 zwo 
+: 1473 6 7 drei 
+: 1481 6 7 vier
+- 1487
+: 1489 8 9 Links
+- 1497 1504
+- 1504
+: 1521 6 9 Links 
+: 1529 7 9 zwo 
+: 1537 6 9 drei 
+: 1545 7 9 vier
+- 1552 1601
+- 1601
+: 1618 10 11 Kann 
+: 1634 11 4 man 
+: 1650 7 7 Her
+: 1658 3 4 zen 
+: 1662 7 7 fra
+: 1670 10 9 gen
+- 1680
+: 1690 6 9 Ein 
+: 1698 6 9 Kind 
+: 1706 6 4 da
+: 1714 5 7 run
+: 1722 3 4 ter 
+: 1726 7 7 tra
+: 1734 8 9 gen
+- 1742 1745
+- 1745
+: 1762 7 11 Kann 
+: 1770 6 4 man 
+: 1778 6 7 es 
+: 1786 2 4 ver
+: 1790 5 7 schen
+: 1798 6 9 ken
+- 1804 1809
+- 1809
+: 1826 6 9 Mit 
+: 1834 6 4 dem 
+: 1842 6 7 Herz
+: 1850 2 4 en 
+: 1854 5 7 den
+: 1862 6 9 ken
+- 1868
+: 1881 5 4 Sie 
+: 1889 6 4 woll’n 
+: 1897 2 4 mein 
+: 1901 5 4 Herz 
+: 1909 2 4 am 
+: 1913 2 4 rech
+: 1917 2 4 ten 
+: 1921 6 4 Fleck, 
+: 1929 9 4 doch
+- 1938
+: 1945 2 4 Seh’ 
+: 1949 2 4 ich 
+: 1953 6 4 dann 
+: 1961 6 4 nach 
+: 1969 3 7 un
+: 1973 6 4 ten 
+: 1981 9 4 weg
+- 1990
+: 2005 3 4 Da 
+: 2009 3 4 schlägt 
+: 2013 2 4 es 
+: 2017 6 4 in 
+: 2025 6 4 der 
+: 2033 3 7 lin
+: 2037 3 4 ken 
+: 2045 8 4 Brust
+- 2053
+: 2069 3 4 Der 
+: 2073 2 4 Nei
+: 2077 2 4 der 
+: 2081 5 4 hat 
+: 2089 6 4 es 
+: 2097 6 7 schlecht 
+: 2105 3 4 ge
+: 2109 9 4 wusst
+- 2118
+: 2129 7 4 Links,
+- 2136 2176
+- 2176
+: 2193 8 4 Links,
+- 2201 2240
+- 2240
+: 2257 8 4 Links,
+- 2265 2304
+- 2304
+: 2321 8 4 Links,
+- 2329 2336
+- 2336
+: 2353 5 4 Links 
+: 2361 6 4 zwo, 
+: 2369 5 4 drei, 
+: 2377 5 4 vier, 
+: 2385 7 4 links
+- 2392 2592
+- 2592
+: 2609 4 4 Links 
+: 2617 5 4 zwo, 
+: 2625 6 7 drei, 
+: 2633 5 9 vier
+- 2638
+: 2641 6 4 Links 
+: 2649 6 4 zwo, 
+: 2657 6 4 links 
+: 2665 6 4 zwo, 
+: 2673 6 7 links 
+: 2681 6 7 zwo 
+: 2689 6 7 drei 
+: 2697 6 7 vier, 
+: 2705 8 9 links
+- 2713 2752
+- 2752
+: 2769 6 4 Links 
+: 2777 6 4 zwo, 
+: 2785 6 4 links 
+: 2793 6 4 zwo, 
+: 2801 6 7 links 
+: 2809 6 7 zwo 
+: 2817 6 7 drei 
+: 2825 6 7 vier, 
+: 2833 8 9 links
+- 2841 2880
+- 2880
+: 2897 6 7 Links 
+: 2905 6 4 zwo, 
+: 2913 5 4 links 
+: 2921 6 4 zwo, 
+: 2929 6 7 links 
+: 2937 6 7 zwo 
+: 2945 6 7 drei 
+: 2953 6 7 vier
+- 2959
+: 2961 6 7 Links 
+: 2969 6 4 zwo, 
+: 2977 6 4 links 
+: 2985 6 4 zwo, 
+: 2993 6 7 links 
+: 3001 6 7 zwo 
+: 3009 6 7 drei 
+: 3017 6 9 vier
+- 3023
+: 3025 6 4 Links 
+: 3033 6 4 zwo, 
+: 3041 6 4 links 
+: 3049 6 4 zwo, 
+: 3057 6 7 links 
+: 3065 6 7 zwo 
+: 3073 6 7 drei 
+: 3081 6 7 vier
+- 3087
+: 3089 6 7 Links 
+: 3097 6 4 zwo, 
+: 3105 6 7 links 
+: 3113 6 4 zwo, 
+: 3121 6 7 links 
+: 3129 6 7 zwo 
+: 3137 6 7 drei 
+: 3145 6 9 vier
+E

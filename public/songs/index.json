@@ -3938,6 +3938,35 @@
     "local": false
   },
   {
+    "id": "ado-vivarium",
+    "title": "Vivarium",
+    "artist": "Ado",
+    "video": "YvYii6dluM8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 390,
+    "gap": 14760,
+    "year": "2026",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-08-12T01:16:13.684Z",
+    "genre": "Jpop",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Subkei",
+    "authorUrl": "Ado",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6113,
+    "tracksCount": 1,
+    "search": "adovivarium",
+    "local": false
+  },
+  {
     "id": "ado-where-the-wind-blows-piano-ver",
     "title": "Where the wind blows (Piano Ver.)",
     "artist": "Ado",
@@ -4981,7 +5010,7 @@
     "gap": 13655.034769935457,
     "year": "2011",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-08-11T01:08:11.188Z",
+    "lastUpdate": "2026-08-10T11:38:26.311Z",
     "genre": "Anime",
     "realBpm": 88,
     "volume": 1,
@@ -6530,7 +6559,7 @@
     "gap": 27146.39024390244,
     "year": "1995",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-08-11T01:08:33.138Z",
+    "lastUpdate": "2026-08-10T17:24:56.970Z",
     "realBpm": 81,
     "volume": 1,
     "duration": 299,
@@ -9487,7 +9516,7 @@
     "gap": 21844.450691028345,
     "year": "2006",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-11T01:08:32.730Z",
+    "lastUpdate": "2026-08-10T17:22:23.745Z",
     "genre": "Synth-Pop",
     "realBpm": 130,
     "volume": 1,
@@ -10517,7 +10546,7 @@
     "gap": 9927.272727272728,
     "year": "2020",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-11T01:08:11.329Z",
+    "lastUpdate": "2026-08-10T11:39:14.536Z",
     "realBpm": 154,
     "volume": 1,
     "author": "Mamba99",
@@ -10576,7 +10605,7 @@
     "gap": 32.72727272727269,
     "year": "2019",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-11T01:08:32.726Z",
+    "lastUpdate": "2026-08-10T17:22:05.388Z",
     "genre": "Hip-Hop",
     "realBpm": 99,
     "previewStart": 3.99,
@@ -23408,7 +23437,7 @@
     "gap": 44482.53731343283,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-11T01:08:33.141Z",
+    "lastUpdate": "2026-08-10T17:25:11.498Z",
     "realBpm": 135,
     "volume": 1,
     "author": "karmidi",
@@ -30344,6 +30373,35 @@
     "shortId": 843,
     "tracksCount": 1,
     "search": "bustedyear3000",
+    "local": false
+  },
+  {
+    "id": "butaotome-gensou-no-satellite",
+    "title": "Gensou no Satellite",
+    "artist": "Butaotome",
+    "video": "FvJPua224gM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300,
+    "gap": 40310,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-08-12T01:16:13.686Z",
+    "realBpm": 115,
+    "previewStart": 42,
+    "previewEnd": 58,
+    "volume": 1,
+    "author": "memo",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6114,
+    "tracksCount": 1,
+    "search": "butaotomegensounosatellite",
     "local": false
   },
   {
@@ -44545,7 +44603,7 @@
     "gap": 9305.535714285714,
     "year": "1998",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-11T01:08:32.942Z",
+    "lastUpdate": "2026-08-10T17:22:52.382Z",
     "realBpm": 134,
     "volume": 1,
     "author": "Canni",
@@ -55052,7 +55110,7 @@
     "gap": 26279.631210698786,
     "year": "1995",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-08-11T01:08:33.604Z",
+    "lastUpdate": "2026-08-10T20:16:28.330Z",
     "genre": "Pop",
     "realBpm": 132,
     "volume": 1,
@@ -58046,7 +58104,7 @@
     "bpm": 400,
     "gap": 6277.5,
     "year": "2025",
-    "lastUpdate": "2026-08-11T01:08:32.944Z",
+    "lastUpdate": "2026-08-10T17:23:25.288Z",
     "genre": "Rock",
     "realBpm": 135,
     "volume": 1,
@@ -90112,6 +90170,37 @@
     "local": false
   },
   {
+    "id": "kings-of-leon-notion",
+    "title": "Notion",
+    "artist": "Kings of Leon",
+    "video": "NT6mB8N24_g",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.84,
+    "gap": 26406.41472597964,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-12T01:16:13.679Z",
+    "genre": "Rock",
+    "realBpm": 143,
+    "previewStart": 39,
+    "previewEnd": 80,
+    "volume": 1,
+    "author": "bohning, hamadad",
+    "sourceUrl": "https://www.youtube.com/watch?v=DvxxdZpMFHg",
+    "duration": 183,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6111,
+    "tracksCount": 1,
+    "search": "kingsofleonnotion",
+    "local": false
+  },
+  {
     "id": "kings-of-leon-sex-on-fire",
     "title": "Sex On Fire",
     "artist": "Kings Of Leon",
@@ -91126,7 +91215,7 @@
     "gap": 59371.77419354839,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-11T01:08:11.331Z",
+    "lastUpdate": "2026-08-10T17:21:49.535Z",
     "genre": "Nu-Metal",
     "videoGap": 21,
     "realBpm": 123,
@@ -94381,6 +94470,35 @@
     "shortId": 2458,
     "tracksCount": 1,
     "search": "ladygagaarianagranderainonme",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-artpop",
+    "title": "Artpop",
+    "artist": "Lady Gaga",
+    "video": "9d5j1klMYqw",
+    "language": [
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 15454.358974358975,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-12T01:16:13.675Z",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "lozboorman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=91773",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16915",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6110,
+    "tracksCount": 1,
+    "search": "ladygagaartpop",
     "local": false
   },
   {
@@ -101551,7 +101669,7 @@
     "gap": 29750.547461368653,
     "year": "2007",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-11T01:08:11.052Z",
+    "lastUpdate": "2026-08-10T11:37:58.114Z",
     "genre": "Reggae",
     "realBpm": 339.75,
     "volume": 1,
@@ -101700,7 +101818,7 @@
     "gap": 18884,
     "year": "1995",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-08-11T01:08:33.599Z",
+    "lastUpdate": "2026-08-10T20:15:46.958Z",
     "realBpm": 240,
     "volume": 1,
     "author": "enrikito",
@@ -101815,7 +101933,7 @@
     "gap": 27874.01069855255,
     "year": "2016",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-11T01:08:33.601Z",
+    "lastUpdate": "2026-08-10T20:16:06.838Z",
     "genre": "Rock",
     "realBpm": 254.24,
     "volume": 1,
@@ -102257,7 +102375,7 @@
     "bpm": 309.78,
     "gap": 4092.1493317838467,
     "year": "2024",
-    "lastUpdate": "2026-08-11T01:08:11.193Z",
+    "lastUpdate": "2026-08-10T11:38:44.039Z",
     "genre": "Cuarteto",
     "realBpm": 309.78,
     "volume": 1,
@@ -110886,7 +111004,7 @@
     "gap": 15159.665850928119,
     "year": "1996",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-08-11T01:08:33.135Z",
+    "lastUpdate": "2026-08-10T17:24:12.533Z",
     "genre": "New wave, Pop Rock",
     "realBpm": 139,
     "volume": 1,
@@ -114422,7 +114540,7 @@
     "gap": 14748.264462809917,
     "year": "2007",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-11T01:08:33.597Z",
+    "lastUpdate": "2026-08-10T20:14:54.127Z",
     "genre": "Pop/Pop latino/Latino",
     "videoGap": 1,
     "realBpm": 121,
@@ -115101,7 +115219,7 @@
     "gap": 17.806788511749346,
     "year": "2014",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-08-11T01:08:10.462Z",
+    "lastUpdate": "2026-08-10T11:37:06.966Z",
     "realBpm": 172.6,
     "previewStart": 34,
     "previewEnd": 50,
@@ -121280,7 +121398,7 @@
     "gap": 28482.14285714286,
     "year": "2002",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-11T01:08:33.594Z",
+    "lastUpdate": "2026-08-10T17:26:07.193Z",
     "realBpm": 140,
     "volume": 1,
     "author": "ImaginaryLight",
@@ -127050,7 +127168,7 @@
     "bpm": 392.1,
     "gap": 61855.3557765876,
     "year": "1991",
-    "lastUpdate": "2026-08-11T01:08:33.371Z",
+    "lastUpdate": "2026-08-10T17:25:33.841Z",
     "genre": "Thrash Metal",
     "realBpm": 118,
     "volume": 1,
@@ -134374,6 +134492,33 @@
     "shortId": 3586,
     "tracksCount": 1,
     "search": "rammsteinkeinelust",
+    "local": false
+  },
+  {
+    "id": "rammstein-links-2-3-4",
+    "title": "Links 2-3-4",
+    "artist": "Rammstein",
+    "video": "Ph-CA_tu5KA",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 20959.23076923077,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-12T01:16:13.681Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "DoubleDee73",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6112,
+    "tracksCount": 1,
+    "search": "rammsteinlinks234",
     "local": false
   },
   {
@@ -141968,7 +142113,7 @@
     "gap": 21701.29943502825,
     "year": "1996",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-08-11T01:08:33.133Z",
+    "lastUpdate": "2026-08-10T17:23:44.367Z",
     "genre": "Pop",
     "realBpm": 106,
     "volume": 1,
@@ -151698,7 +151843,7 @@
     "gap": 40321.228070175435,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-11T01:08:11.050Z",
+    "lastUpdate": "2026-08-10T11:37:26.999Z",
     "genre": "Rock",
     "realBpm": 84,
     "volume": 1,
