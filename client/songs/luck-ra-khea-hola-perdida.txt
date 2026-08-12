@@ -9,7 +9,7 @@
 #GAP:4092,1493317838467
 #ALLKARAOKE_ID:luck-ra-khea-hola-perdida
 #ALLKARAOKE_SID:6093
-#ALLKARAOKE_LASTUPDATE:2026-08-11T01:08:11.193Z
+#ALLKARAOKE_LASTUPDATE:2026-08-10T11:38:44.039Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=tuadnuevo
 #ALLKARAOKE_REALBPM:309,78
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Luck%20Ra,%20Khea&cancion=Hola%20perdida
