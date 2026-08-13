@@ -3949,7 +3949,7 @@
     "gap": 14760,
     "year": "2026",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-08-12T01:16:13.684Z",
+    "lastUpdate": "2026-08-11T12:44:12.579Z",
     "genre": "Jpop",
     "realBpm": 97,
     "volume": 1,
@@ -10648,6 +10648,34 @@
     "shortId": 6060,
     "tracksCount": 1,
     "search": "apache207roller",
+    "local": false
+  },
+  {
+    "id": "apache-207-wieso-tust-du-dir-das-an",
+    "title": "Wieso tust Du dir das an?",
+    "artist": "Apache 207",
+    "video": "vmj2Ab1GknA",
+    "language": [
+      "German"
+    ],
+    "bpm": 272.5,
+    "gap": 12909.174311926605,
+    "year": "2019",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-13T01:17:39.711Z",
+    "genre": "Hip-Hop",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Whitebeing",
+    "duration": 177,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6115,
+    "tracksCount": 1,
+    "search": "apache207wiesotustdudirdasan",
     "local": false
   },
   {
@@ -30387,7 +30415,7 @@
     "gap": 40310,
     "year": "2010",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-08-12T01:16:13.686Z",
+    "lastUpdate": "2026-08-11T12:44:24.752Z",
     "realBpm": 115,
     "previewStart": 42,
     "previewEnd": 58,
@@ -44559,6 +44587,34 @@
     "shortId": 1215,
     "tracksCount": 1,
     "search": "dieschuledermagischentiere2kannmichirgendjemandhoern",
+    "local": false
+  },
+  {
+    "id": "die-toten-hosen-heute-hier-morgen-dort",
+    "title": "Heute hier, morgen dort",
+    "artist": "Die Toten Hosen",
+    "video": "_WYjkyeBbXU",
+    "language": [
+      "German"
+    ],
+    "bpm": 248,
+    "gap": 2761.7741935483873,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-13T01:17:39.724Z",
+    "genre": "Punk Rock",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "Achilles",
+    "duration": 136,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6119,
+    "tracksCount": 1,
+    "search": "dietotenhosenheutehiermorgendort",
     "local": false
   },
   {
@@ -90181,7 +90237,7 @@
     "gap": 26406.41472597964,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-12T01:16:13.679Z",
+    "lastUpdate": "2026-08-11T12:42:22.838Z",
     "genre": "Rock",
     "realBpm": 143,
     "previewStart": 39,
@@ -94484,7 +94540,7 @@
     "gap": 15454.358974358975,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-12T01:16:13.675Z",
+    "lastUpdate": "2026-08-11T12:42:10.811Z",
     "realBpm": 117,
     "volume": 1,
     "author": "lozboorman",
@@ -101715,6 +101771,35 @@
     "shortId": 6018,
     "tracksCount": 1,
     "search": "losfabulososcadillacsmatador",
+    "local": false
+  },
+  {
+    "id": "los-fabulosos-cadillacs-siguiendo-la-luna",
+    "title": "Siguiendo la luna",
+    "artist": "Los Fabulosos Cadillacs",
+    "video": "94J9VrY9QBA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 80,
+    "gap": 34292.5,
+    "year": "1992",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-13T01:17:39.720Z",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "artax1979",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=artax1979",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Fabulosos%20Cadillacs&cancion=Siguiendo%20la%20luna",
+    "duration": 296,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 6117,
+    "tracksCount": 1,
+    "search": "losfabulososcadillacssiguiendolaluna",
     "local": false
   },
   {
@@ -134506,7 +134591,7 @@
     "gap": 20959.23076923077,
     "year": "2001",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-12T01:16:13.681Z",
+    "lastUpdate": "2026-08-11T12:43:01.262Z",
     "realBpm": 130,
     "volume": 1,
     "author": "DoubleDee73",
@@ -134606,6 +134691,33 @@
     "shortId": 4998,
     "tracksCount": 1,
     "search": "rammsteinrosenrot",
+    "local": false
+  },
+  {
+    "id": "rammstein-seemann",
+    "title": "Seemann",
+    "artist": "Rammstein",
+    "video": "srN1GsnBui8",
+    "language": [
+      "German"
+    ],
+    "bpm": 279.6,
+    "gap": 19680.68669527897,
+    "year": "1995",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-13T01:17:39.722Z",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6118,
+    "tracksCount": 1,
+    "search": "rammsteinseemann",
     "local": false
   },
   {
@@ -152306,6 +152418,33 @@
     "shortId": 4094,
     "tracksCount": 1,
     "search": "stromaetouslesmemes",
+    "local": false
+  },
+  {
+    "id": "sts-grossvater",
+    "title": "Großvater",
+    "artist": "STS",
+    "video": "G6muwrZaYGU",
+    "language": [
+      "German"
+    ],
+    "bpm": 322.4,
+    "gap": 4402.952853598015,
+    "year": "1985",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-08-13T01:17:39.717Z",
+    "genre": "Austropop",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "soinky",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6116,
+    "tracksCount": 1,
+    "search": "stsgrossvater",
     "local": false
   },
   {
