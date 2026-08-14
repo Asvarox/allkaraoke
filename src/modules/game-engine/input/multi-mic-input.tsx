@@ -10,7 +10,6 @@ const isDeviceSelectedForMultipleChannels = (allInputs: SelectedPlayerInput[] = 
 class MultiMicInput implements InputInterface {
   private devices: Record<string, InputInterface> = {};
   public startMonitoring = async (deviceId?: string, allInputs?: SelectedPlayerInput[]) => {
-    console.log(this.devices);
     if (deviceId) {
       if (!this.devices[deviceId]) {
         this.devices[deviceId] = isDeviceSelectedForMultipleChannels(allInputs, deviceId)

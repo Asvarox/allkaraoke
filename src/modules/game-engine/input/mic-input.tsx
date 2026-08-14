@@ -31,7 +31,9 @@ export class MicInput implements InputInterface {
         video: false,
       });
       try {
-        this.context = new AudioContext();
+        this.context = new AudioContext({
+          sampleRate: 44100,
+        });
 
         const source = this.context.createMediaStreamSource(this.stream);
 
