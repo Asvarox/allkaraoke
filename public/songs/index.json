@@ -10662,7 +10662,7 @@
     "gap": 12909.174311926605,
     "year": "2019",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-13T01:17:39.711Z",
+    "lastUpdate": "2026-08-12T13:43:33.607Z",
     "genre": "Hip-Hop",
     "realBpm": 134,
     "volume": 1,
@@ -22514,6 +22514,36 @@
     "shortId": 596,
     "tracksCount": 1,
     "search": "blackpinkhowyoulikethat",
+    "local": false
+  },
+  {
+    "id": "blackpink-jump",
+    "title": "Jump",
+    "artist": "Blackpink",
+    "video": "CgCVZdcKcqY",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 290,
+    "gap": 16187.241379310344,
+    "year": "2025",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-08-14T01:15:51.887Z",
+    "genre": "Kpop",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "Blackpink",
+    "duration": 194,
+    "tracks": [
+      {
+        "name": "Jump",
+        "start": 19
+      }
+    ],
+    "shortId": 6121,
+    "tracksCount": 1,
+    "search": "blackpinkjump",
     "local": false
   },
   {
@@ -44601,7 +44631,7 @@
     "gap": 2761.7741935483873,
     "year": "2012",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-13T01:17:39.724Z",
+    "lastUpdate": "2026-08-12T13:44:58.025Z",
     "genre": "Punk Rock",
     "realBpm": 122,
     "volume": 1,
@@ -87312,6 +87342,35 @@
     "local": false
   },
   {
+    "id": "katseye-gabriela",
+    "title": "Gabriela",
+    "artist": "KATSEYE",
+    "video": "co-TFLbaZAE",
+    "language": [
+      "English"
+    ],
+    "bpm": 293,
+    "gap": 5956.109215017064,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-14T01:15:51.880Z",
+    "realBpm": 146,
+    "previewStart": 30,
+    "previewEnd": 59,
+    "volume": 1,
+    "author": "asdFer",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6120,
+    "tracksCount": 1,
+    "search": "katseyegabriela",
+    "local": false
+  },
+  {
     "id": "katseye-gnarly",
     "title": "Gnarly",
     "artist": "KATSEYE",
@@ -101785,7 +101844,7 @@
     "gap": 34292.5,
     "year": "1992",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-13T01:17:39.720Z",
+    "lastUpdate": "2026-08-12T13:44:17.170Z",
     "realBpm": 80,
     "volume": 1,
     "author": "artax1979",
@@ -134705,7 +134764,7 @@
     "gap": 19680.68669527897,
     "year": "1995",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-13T01:17:39.722Z",
+    "lastUpdate": "2026-08-12T13:44:36.191Z",
     "realBpm": 70,
     "volume": 1,
     "author": "Canni",
@@ -152432,7 +152491,7 @@
     "gap": 4402.952853598015,
     "year": "1985",
     "artistOrigin": "AT",
-    "lastUpdate": "2026-08-13T01:17:39.717Z",
+    "lastUpdate": "2026-08-12T13:43:45.078Z",
     "genre": "Austropop",
     "realBpm": 80,
     "volume": 1,
