@@ -1,0 +1,287 @@
+#ARTIST:Falling In Reverse feat. Marilyn Manson
+#TITLE:God Is A Weapon
+#CREATOR:Alpha0ne
+#BPM:400
+#YEAR:2025
+#VIDEO:v=xqJurrQKNdE
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:6277,5
+#ALLKARAOKE_ID:falling-in-reverse-feat-marilyn-manson-god-is-a-weapon
+#ALLKARAOKE_SID:6099
+#ALLKARAOKE_LASTUPDATE:2026-08-10T17:23:25.288Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=208594
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=31210
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:216
+#MP3:Falling In Reverse feat. Marilyn Manson - God Is A Weapon.mp3
+#COVER:Falling In Reverse feat. Marilyn Manson - God Is A Weapon [CO].jpg
+#BACKGROUND:Falling In Reverse feat. Marilyn Manson - God Is A Weapon [BG].jpg
+: 27 4 10 I 
+: 32 10 9 can’t 
+: 43 11 9 stop 
+: 55 10 9 from 
+: 66 10 9 spin
+: 77 14 7 ning
+- 91 94
+- 94
+: 121 11 10 Down 
+: 133 5 9 the 
+: 139 10 9 rab
+: 150 10 7 bit 
+: 161 36 9 hole
+- 197
+: 210 5 -2 The 
+: 216 5 4 deep
+: 222 10 4 er 
+: 233 9 4 that 
+: 243 11 6 you 
+: 255 40 7 push,
+- 295
+: 304 5 -2 The 
+: 310 5 4 deep
+: 316 11 4 er 
+: 328 10 4 I 
+: 339 9 4 will 
+: 349 30 4 go
+- 379
+: 400 4 4 They 
+: 405 6 10 said 
+: 412 8 9 that 
+: 421 10 9 God’s 
+: 432 11 9 a 
+: 444 10 9 wo
+: 455 12 7 man,
+- 467
+: 494 5 4 I’ll 
+: 500 5 10 wor
+: 506 10 9 ship 
+: 517 10 9 you 
+: 528 10 9 the 
+: 539 24 10 same
+- 563 573
+- 573
+: 600 5 4 ’Cause 
+: 606 6 4 all 
+: 613 4 4 I 
+: 618 6 6 do 
+: 625 8 7 is 
+: 635 10 4 think 
+: 646 10 4 a
+: 657 19 4 bout
+- 676
+: 688 5 4 Say
+: 694 6 4 ing 
+: 701 4 4 your 
+: 706 10 4 name 
+: 717 11 4 in 
+: 729 32 4 vain
+- 761
+* 771 12 4 You 
+* 784 23 10 mi
+* 808 10 9 ~
+* 819 23 9 ~
+* 843 11 7 ght 
+: 855 11 4 as 
+: 867 11 2 well
+- 878
+: 879 22 10 Ma
+: 902 10 9 ~
+: 913 23 9 ~
+: 937 11 7 rry 
+: 949 27 4 me
+- 976 982
+- 982
+: 1009 10 10 My 
+: 1020 11 4 sin
+: 1032 11 10 ful 
+: 1044 11 10 con
+: 1056 22 12 fes
+: 1079 28 10 sion,
+- 1107
+* 1116 10 4 You’re 
+* 1127 11 10 my 
+* 1139 11 10 ob
+* 1151 82 12 ses
+* 1234 7 12 sion
+* 1242 4 2 ~
+* 1247 11 12 ~
+* 1259 64 10 ~ 
+F 1341 3 0 (yeah
+F 1345 4 0 )
+- 1349 1360
+- 1360
+: 1387 11 10 If 
+: 1399 10 4 God 
+: 1410 11 10 is 
+: 1422 12 10 a 
+: 1435 23 12 wo
+: 1459 22 10 man, 
+: 1482 11 4 then 
+: 1494 10 10 God 
+: 1505 11 10 is 
+: 1517 12 12 a 
+: 1530 94 11 wea
+: 1625 94 4 pon 
+F 1720 2 0 (yeah)
+- 1722 1781
+- 1781
+F 1808 2 0 Yeah, 
+F 1814 2 0 yeah, 
+F 1861 2 0 yeah
+- 1863 1895
+- 1895
+: 1922 5 10 I 
+: 1928 10 9 can’t 
+: 1939 10 9 stop 
+: 1950 11 9 from 
+: 1962 10 9 sin
+: 1973 22 7 ning, 
+: 2012 7 4 my 
+: 2020 5 10 ha
+: 2026 9 9 lo’s 
+: 2036 10 9 just 
+: 2047 10 9 a 
+: 2058 22 10 hole
+- 2080
+: 2106 5 4 The 
+: 2112 5 4 deep
+: 2118 10 4 er 
+: 2129 10 7 that 
+: 2140 10 6 I 
+: 2151 11 4 get 
+: 2163 11 4 in
+: 2175 11 4 side 
+: 2187 9 2 you,
+- 2196
+: 2200 5 4 The 
+: 2206 6 4 deep
+: 2213 10 4 er 
+: 2224 10 4 you 
+: 2235 11 7 will 
+: 2247 37 4 fall
+- 2284
+: 2295 4 10 They 
+: 2300 6 9 say 
+: 2307 10 9 that 
+: 2318 10 9 God’s 
+: 2329 11 9 a 
+: 2341 9 9 wea
+: 2351 28 7 pon,
+- 2379
+: 2390 5 10 Well, 
+: 2396 5 9 I’m 
+: 2402 9 9 a 
+: 2412 10 9 hand 
+: 2423 11 9 gre
+: 2435 24 10 nade
+- 2459 2462
+- 2462
+: 2489 11 4 Try 
+: 2501 6 4 to 
+: 2508 10 4 take 
+: 2519 11 6 this 
+: 2531 10 7 ring 
+: 2542 12 4 from 
+: 2555 15 4 me, 
+: 2586 5 4 watch 
+: 2592 11 4 me 
+: 2604 9 4 de
+: 2614 11 4 to
+: 2626 22 4 nate
+- 2648
+* 2669 10 4 You 
+* 2680 23 10 mi
+* 2704 13 9 ~ght
+* 2718 21 7 ~ 
+* 2740 11 4 as 
+* 2752 6 2 well
+* 2759 15 4 ~ 
+: 2775 22 10 bu
+: 2798 10 9 ~
+: 2809 23 9 ~
+: 2833 12 4 ry 
+: 2846 29 4 me
+- 2875 2877
+- 2877
+: 2904 10 10 My 
+: 2915 11 4 sin
+: 2927 11 10 ful 
+: 2939 10 10 con
+: 2950 23 12 fes
+: 2974 25 10 sion,
+- 2999
+* 3009 11 4 You’re 
+* 3021 12 10 my 
+* 3034 11 10 ob
+* 3046 83 12 ses
+* 3130 5 12 sion
+* 3136 6 2 ~
+* 3143 12 12 ~
+* 3156 71 10 ~ 
+F 3238 5 0 (yeah)
+- 3243 3257
+- 3257
+: 3284 10 10 If 
+: 3295 11 4 God 
+: 3307 10 10 is 
+: 3318 11 10 a 
+: 3330 21 12 wo
+: 3352 23 10 man, 
+: 3380 9 4 then 
+: 3390 11 10 God 
+: 3402 10 10 is 
+: 3413 12 12 a 
+: 3426 94 4 wea
+: 3521 90 4 pon 
+F 3616 2 0 (yeah)
+- 3618 3990
+- 3990
+F 4017 20 0 Yeah, 
+F 4066 15 0 yeah,
+- 4081 4395
+- 4395
+: 4422 10 4 My 
+: 4433 11 10 sin
+: 4445 11 9 ful 
+: 4457 11 7 con
+: 4469 22 6 fes
+: 4492 23 4 sion,
+- 4515
+* 4527 12 10 You’re 
+* 4540 10 10 my 
+* 4551 13 12 ob
+* 4565 81 12 ses
+* 4647 5 12 sion
+* 4653 6 2 ~
+* 4660 12 12 ~
+* 4673 34 10 ~
+- 4707
+F 4717 11 0 (Oh, 
+F 4729 23 0 fuck 
+F 4753 26 0 yeah)
+- 4779
+: 4801 10 4 If 
+: 4812 10 10 God 
+: 4823 11 9 is 
+: 4835 12 7 a 
+: 4848 21 6 wo
+: 4870 21 7 man, 
+: 4896 11 4 then 
+: 4908 10 10 God 
+: 4919 10 9 is 
+: 4930 12 7 a 
+: 4944 93 7 wea
+: 5038 93 6 ~
+: 5132 141 4 pon.
+- 5273
+: 5279 8 4 Then 
+: 5288 11 6 God 
+: 5300 11 7 is 
+: 5312 11 12 a 
+: 5324 93 12 wea
+: 5418 90 4 pon
+- 5508
+F 5512 3 0 Yeah
+E

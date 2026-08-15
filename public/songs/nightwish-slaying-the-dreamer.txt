@@ -1,0 +1,248 @@
+#ARTIST:Nightwish
+#TITLE:Slaying The Dreamer
+#CREATOR:ImaginaryLight
+#BPM:280
+#YEAR:2002
+#VIDEO:v=8Xv941u59o8
+#LANGUAGE:English
+#GAP:28482,14285714286
+#ALLKARAOKE_ID:nightwish-slaying-the-dreamer
+#ALLKARAOKE_SID:6105
+#ALLKARAOKE_LASTUPDATE:2026-08-10T17:26:07.193Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23955
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=11027
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:272
+#MP3:Nightwish - Slaying The Dreamer.mp3
+: 19 3 4 I’m 
+: 23 3 4 a 
+: 27 16 2 priest 
+: 51 3 5 for 
+: 55 3 5 the 
+: 59 7 4 poo
+: 67 8 2 rest 
+: 83 3 4 sa
+: 87 3 4 cri
+: 91 16 2 fice
+- 107
+: 115 7 5 I’m 
+: 123 7 4 but 
+: 131 3 4 a 
+: 135 8 2 raft 
+: 147 3 9 in 
+: 151 3 9 a 
+: 155 16 7 sea 
+: 179 7 10 of 
+: 187 7 9 sor
+: 195 8 7 row
+- 203
+: 207 11 5 Of 
+: 219 7 7 sorrow 
+: 227 11 9 and 
+: 239 32 7 greed
+- 271
+: 275 7 4 You 
+: 283 7 2 ba
+: 291 8 2 ~thed 
+: 307 7 5 in 
+: 315 7 4 my 
+: 323 8 2 wine
+- 331
+: 339 7 4 Drank 
+: 347 7 2 from 
+: 355 3 2 my 
+: 359 7 2 cup, 
+: 367 3 5 mocked 
+: 371 7 5 my 
+: 379 7 4 rhy
+: 387 8 2 me
+- 395
+: 403 7 9 Your 
+: 411 16 7 slit 
+: 435 7 10 tongues 
+: 443 7 9 li
+: 451 8 7 ~cked 
+: 463 11 5 my 
+: 475 7 7 a
+: 483 11 9 ching 
+: 495 31 7 wounds
+- 526
+* 527 3 16 Put 
+* 531 3 14 a 
+* 535 4 16 stake 
+: 555 7 7 through 
+: 563 3 5 m
+: 567 3 4 y 
+: 571 7 2 hea
+: 579 7 4 rt
+- 586
+: 587 3 2 And 
+: 591 11 4 drag 
+: 603 7 4 me 
+: 611 7 4 in
+: 619 3 4 to 
+: 623 3 5 su
+: 627 3 4 n
+: 631 8 4 light
+- 639
+* 655 3 16 So 
+* 659 3 14 a
+* 663 4 16 wake 
+: 683 7 14 for 
+: 691 3 12 yo
+: 695 3 11 ur 
+: 699 11 9 greed
+- 710
+: 711 3 9 As 
+: 715 3 11 you’re 
+: 719 11 12 slay
+: 731 11 11 ing 
+: 743 7 7 the 
+: 751 3 5 dre
+: 755 7 4 a
+: 763 8 4 mer
+- 771 992
+- 992
+: 1011 7 4 Swan
+: 1019 16 2 song 
+: 1043 3 5 for 
+: 1047 3 5 the 
+: 1051 7 4 wish 
+: 1059 3 4 of 
+: 1063 8 2 night
+- 1071
+: 1075 3 4 God 
+: 1079 3 4 it 
+: 1083 8 2 hurts 
+: 1095 3 2 keep 
+: 1099 3 2 a 
+: 1103 7 5 name 
+: 1111 3 5 to 
+: 1115 3 5 the 
+: 1119 7 4 pa
+: 1127 8 2 in
+- 1135
+: 1139 7 9 Our 
+: 1147 16 7 prim
+: 1171 7 10 rose 
+: 1179 11 9 path 
+: 1191 7 7 to 
+: 1199 7 5 hell 
+: 1207 3 5 is 
+: 1211 7 7 grow
+: 1219 11 9 ing 
+: 1231 31 7 weed
+- 1262
+* 1263 3 16 Put 
+* 1267 3 14 a 
+* 1271 4 16 stake 
+: 1291 7 7 through 
+: 1299 3 5 m
+: 1303 3 4 y 
+: 1307 7 2 hea
+: 1315 7 4 rt
+- 1322
+: 1323 3 2 And 
+: 1327 11 4 drag 
+: 1339 7 4 me 
+: 1347 7 4 in
+: 1355 3 4 to 
+: 1359 3 5 su
+: 1363 3 4 n
+: 1367 8 4 light
+- 1375
+* 1391 3 16 So 
+* 1395 3 14 a
+* 1399 4 16 wake 
+: 1419 7 14 for 
+: 1427 3 12 yo
+: 1431 3 11 ur 
+: 1435 11 9 greed
+- 1446
+: 1447 3 9 As 
+: 1451 3 11 you’re 
+: 1455 11 12 slay
+: 1467 11 11 ing 
+: 1479 7 7 the 
+: 1487 3 11 dre
+: 1491 7 9 a
+: 1499 8 9 mer
+- 1507 1728
+- 1728
+: 1747 7 5 Blame 
+: 1755 16 3 me, 
+: 1779 7 2 it’s 
+: 1787 16 4 me
+- 1803
+: 1811 7 4 Cow
+: 1819 7 5 ard, 
+: 1827 7 5 a 
+: 1835 7 2 good-
+: 1843 3 2 for-
+: 1847 3 2 no
+: 1851 3 2 thing 
+: 1855 7 5 scape
+: 1863 8 2 goat
+- 1871
+: 1875 7 12 Dumb 
+: 1883 16 11 kid, 
+: 1903 3 9 li
+: 1907 3 9 ving 
+: 1911 3 9 a 
+: 1915 16 11 dream
+- 1931
+: 1939 7 11 Ro
+: 1947 7 12 man
+: 1955 7 12 tic 
+: 1963 7 9 on
+: 1971 3 9 ly 
+: 1975 3 9 on 
+: 1979 3 9 a 
+: 1983 7 12 pa
+: 1991 7 9 per
+- 1998
+* 1999 3 16 Tell 
+* 2003 3 14 me 
+* 2007 4 16 why 
+: 2027 7 10 you 
+: 2035 3 12 took 
+: 2039 3 14 all 
+: 2043 7 12 back 
+: 2051 3 14 was 
+: 2055 8 16 mine
+- 2063
+: 2067 3 16 Stay 
+: 2071 3 16 as 
+: 2075 3 14 you 
+: 2079 4 16 lay - 
+: 2087 3 12 don’t 
+: 2091 7 14 lead 
+: 2099 3 16 me 
+: 2103 3 14 as
+: 2107 7 12 tra
+: 2115 8 11 y
+- 2123
+* 2127 3 16 Tell 
+* 2131 3 14 me 
+* 2135 4 16 why 
+: 2155 7 10 you 
+: 2163 3 12 took 
+: 2167 3 14 all 
+: 2171 7 12 back 
+: 2179 3 14 was 
+: 2183 8 16 mine
+- 2191
+: 2195 3 16 Stay 
+: 2199 3 16 as 
+: 2203 3 14 you 
+: 2207 4 16 lay - 
+: 2215 3 12 don’t 
+: 2219 7 14 lead 
+: 2227 3 16 me 
+* 2231 3 14 as
+* 2235 7 12 tra
+* 2243 15 11 ~
+* 2259 40 9 y
+E

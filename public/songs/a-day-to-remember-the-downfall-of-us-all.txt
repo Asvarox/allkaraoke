@@ -1,0 +1,546 @@
+#ARTIST:A Day To Remember
+#TITLE:The Downfall Of Us All
+#CREATOR:A Day To Remember
+#BPM:260
+#YEAR:2009
+#VIDEO:v=CN4IIgFz93k
+#GENRE:Hardcore
+#LANGUAGE:English
+#GAP:2759,230769230769
+#ALLKARAOKE_ID:a-day-to-remember-the-downfall-of-us-all
+#ALLKARAOKE_SID:6079
+#ALLKARAOKE_LASTUPDATE:2026-08-09T19:11:04.996Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://youtu.be/CN4IIgFz93k?si=5eSIDSGAFJ452bkm
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:225
+#MP3:A Day To Remember - The Downfall Of Us All.mp3
+F 17 1 0 Da 
+F 19 1 0 da 
+F 21 1 0 da 
+F 23 1 0 da 
+F 25 1 0 da 
+F 27 1 0 da 
+F 29 1 0 da 
+F 31 1 0 da 
+F 33 1 0 da 
+F 35 2 0 da 
+F 41 1 0 da 
+F 43 2 0 da
+- 45
+F 53 2 0 Da 
+F 57 2 0 da 
+F 61 2 0 da 
+F 65 1 0 da 
+F 67 2 0 da 
+F 73 1 0 da 
+F 75 2 0 da
+- 77
+F 81 1 0 Da 
+F 83 1 0 da 
+F 85 1 0 da 
+F 87 1 0 da 
+F 89 1 0 da 
+F 91 1 0 da 
+F 93 1 0 da 
+F 95 1 0 da 
+F 97 1 0 da 
+F 99 2 0 da
+- 101
+F 105 1 0 Da 
+F 107 2 0 da 
+F 113 1 0 da 
+F 115 2 0 da 
+F 121 1 0 da 
+F 123 2 0 da
+- 125
+F 131 3 0 Let’s 
+F 135 16 0 go
+- 151 390
+- 390
+: 407 3 7 It’s 
+: 411 3 7 not 
+: 415 3 7 ea
+: 419 3 4 sy 
+: 423 3 4 making 
+: 427 3 4 a 
+: 431 3 2 name 
+: 435 3 2 for 
+: 439 3 4 your
+: 443 6 2 self
+- 449
+: 453 1 0 Where 
+: 455 3 2 do 
+: 459 2 0 you 
+: 463 3 4 draw 
+: 467 3 5 the 
+: 471 3 4 line
+: 475 4 2 ~?
+- 479
+: 483 3 0 I 
+: 487 3 2 ne
+: 491 3 0 ver 
+: 495 3 2 thought 
+: 499 3 2 I’d 
+: 503 2 4 be 
+: 507 7 2 in 
+: 515 7 0 this 
+: 523 6 0 far
+- 529
+: 533 1 7 Lets 
+: 535 3 7 have 
+: 539 3 4 some 
+: 543 2 7 fun
+- 545
+: 548 2 4 And 
+: 551 3 4 ne
+: 555 3 2 ver 
+: 559 3 7 change 
+: 563 3 7 that 
+: 567 3 9 for 
+: 571 3 7 a
+: 575 3 5 ny
+: 579 7 4 one
+: 587 5 3 ~
+: 593 6 2 ~
+- 599
+: 611 3 0 Try 
+: 615 2 2 not 
+: 619 3 0 to 
+: 623 7 5 miss 
+: 631 7 4 me 
+: 639 3 2 when 
+: 643 11 0 I’m 
+: 655 3 2 gone
+: 659 8 -3 ~
+- 667
+: 671 7 7 Oh, 
+: 679 4 7 oh
+: 685 12 4 ~
+- 697
+: 703 6 7 Oh, 
+: 711 4 7 oh
+: 717 6 4 ~
+- 723
+: 727 7 7 I 
+: 735 6 7 sold 
+: 743 7 4 my 
+: 751 7 7 soul 
+: 759 3 4 to 
+: 763 3 4 the 
+: 767 3 7 o
+: 771 7 9 pen 
+: 779 3 7 road
+: 783 27 4 ~
+: 811 7 3 ~
+: 820 17 0 ~
+- 837 838
+- 838
+* 855 7 7 You’ll 
+* 863 3 7 find 
+* 867 3 7 me 
+* 871 3 7 in 
+* 875 3 7 the 
+* 879 7 7 same 
+* 887 3 4 spot 
+* 891 3 4 be
+* 895 3 2 lieve 
+* 899 2 0 me
+- 901
+: 905 1 1 I 
+: 907 3 9 could 
+: 911 3 7 ne
+: 915 3 5 ver 
+: 919 3 4 stop
+: 923 6 2 ~,
+- 929
+: 939 3 4 My 
+: 943 7 5 life’s 
+: 951 7 4 turned 
+: 959 3 0 up
+: 963 11 2 side 
+: 975 6 0 down
+- 981
+: 985 1 7 Meet 
+: 987 3 7 me 
+: 991 7 7 out 
+: 999 3 7 past 
+: 1003 3 7 the 
+: 1007 5 7 train 
+: 1015 2 4 tracks
+- 1017
+: 1020 2 4 I’m 
+: 1023 3 2 leav
+: 1027 3 0 in’ 
+: 1031 2 0 and 
+: 1035 2 9 not 
+: 1039 3 7 com
+: 1043 3 5 ing 
+: 1047 3 4 back
+: 1051 8 2 ~
+- 1059
+: 1067 3 4 You’re 
+: 1071 7 5 right 
+: 1079 6 4 and 
+: 1087 3 0 I 
+: 1091 11 2 was 
+: 1103 8 2 wrong
+- 1111
+* 1115 3 2 This 
+* 1119 3 2 town 
+* 1123 3 0 will 
+* 1127 3 2 be 
+* 1131 1 0 the 
+* 1135 7 5 down
+* 1143 6 4 fall 
+* 1151 3 0 of 
+* 1155 8 2 us 
+* 1167 9 0 all
+* 1177 6 -1 ~
+- 1183 1408
+- 1408
+: 1425 2 6 I’m 
+: 1429 3 7 gonna 
+: 1433 3 7 need 
+: 1438 2 5 you 
+: 1441 3 4 to 
+: 1445 3 3 try 
+: 1449 3 2 to 
+: 1453 3 4 fol
+: 1458 2 5 low 
+: 1461 5 4 a
+: 1467 3 3 long
+: 1471 2 2 ~
+- 1473
+: 1477 1 1 I 
+: 1479 3 2 did 
+: 1483 2 0 the 
+: 1487 3 4 best 
+: 1491 3 5 that 
+: 1495 3 4 I 
+: 1499 5 2 could
+- 1504
+: 1507 3 0 To 
+: 1511 3 2 try 
+: 1515 3 0 to 
+: 1519 3 2 write 
+: 1523 7 0 you 
+: 1531 10 0 songs
+- 1541
+F 1555 2 4 Now 
+F 1559 2 4 go 
+F 1563 2 4 tell 
+F 1567 2 4 them 
+F 1571 2 4 we 
+F 1575 2 4 sold 
+F 1579 5 4 out,
+- 1584
+F 1587 2 4 Like 
+F 1591 2 4 we’re 
+F 1595 2 4 the 
+F 1599 2 4 ones 
+F 1603 2 4 who 
+F 1607 6 4 changed
+- 1613
+F 1617 1 4 I 
+F 1619 3 4 write 
+F 1623 2 4 what 
+F 1627 2 4 I 
+F 1631 2 4 feel, 
+F 1635 1 4 I 
+F 1637 3 4 say 
+F 1641 1 4 what 
+F 1643 1 4 I 
+F 1645 1 4 mean
+- 1646
+F 1649 2 4 You 
+F 1653 2 4 can’t 
+F 1657 2 4 buy 
+F 1661 2 4 sin
+F 1665 2 4 cer
+F 1669 2 4 i
+F 1673 2 4 ty
+- 1675 1678
+- 1678
+: 1695 7 7 Oh, 
+: 1703 3 7 oh
+: 1709 12 4 ~
+- 1721
+: 1727 7 7 Oh, 
+: 1735 3 7 oh
+: 1741 6 4 ~
+- 1747
+: 1751 7 7 I 
+: 1759 6 7 sold 
+: 1767 6 4 my 
+: 1775 5 7 soul 
+: 1783 3 4 to 
+: 1787 1 4 the 
+: 1791 3 7 o
+: 1795 7 9 pen 
+: 1803 3 7 road
+: 1807 27 4 ~
+: 1835 7 3 ~
+: 1843 18 0 ~
+- 1861 1862
+- 1862
+: 1879 7 7 You’ll 
+: 1887 3 7 find 
+: 1891 3 7 me 
+: 1895 3 7 in 
+: 1899 3 7 the 
+: 1903 6 7 same 
+: 1911 3 4 spot 
+: 1915 3 4 be
+: 1919 3 2 lieve 
+: 1923 2 0 me
+- 1925
+: 1929 1 -3 I 
+: 1931 3 9 could 
+: 1935 3 7 ne
+: 1939 3 5 ver 
+: 1943 3 4 stop
+: 1947 6 2 ~,
+- 1953
+: 1963 3 4 My 
+: 1967 7 5 life’s 
+: 1975 7 4 turned 
+: 1983 3 0 up
+: 1987 11 2 side 
+: 1999 6 0 down
+- 2005
+: 2009 1 7 Meet 
+: 2011 3 7 me 
+: 2015 7 7 out 
+: 2023 3 7 past 
+: 2027 3 7 the 
+: 2031 5 7 train 
+: 2039 2 4 tracks
+- 2041
+: 2044 2 4 I’m 
+: 2047 3 2 leav
+: 2051 3 0 in’ 
+: 2055 2 0 and 
+: 2059 2 9 not 
+: 2063 3 7 com
+: 2067 3 5 ing 
+: 2071 3 4 back
+: 2075 8 2 ~
+- 2083
+: 2091 3 4 You’re 
+: 2095 7 5 right 
+: 2103 5 4 and 
+: 2111 3 0 I 
+: 2115 11 2 was 
+: 2127 8 2 wrong
+- 2135
+: 2139 3 2 This 
+: 2143 3 2 town 
+: 2147 3 0 will 
+: 2151 3 2 be 
+: 2155 1 0 the 
+: 2159 7 5 down
+: 2167 5 4 fall 
+: 2175 3 0 of 
+: 2179 8 2 us 
+: 2191 9 0 all
+: 2201 6 -1 ~
+- 2207 2436
+- 2436
+: 2453 3 7 Don’t 
+: 2457 3 7 for
+: 2461 3 7 get 
+: 2465 3 5 your
+: 2469 2 4 selves
+- 2471
+: 2474 1 4 We’ve 
+: 2477 3 7 made 
+: 2481 3 7 up 
+: 2485 3 7 our 
+: 2489 4 7 minds
+- 2493
+: 2497 3 7 We 
+: 2501 7 7 signed 
+: 2509 4 7 3, 
+: 2517 4 7 4, 
+: 2525 4 7 5 
+: 2533 3 7 on 
+: 2537 3 7 the 
+: 2541 3 7 dot
+: 2545 4 7 ted 
+: 2553 14 7 lines
+- 2567
+* 2581 3 7 Don’t 
+* 2585 3 7 for
+* 2589 3 7 get 
+* 2593 3 5 your
+* 2597 2 4 selves
+- 2599
+: 2602 1 4 We’ve 
+: 2605 3 7 made 
+: 2609 3 7 up 
+: 2613 3 7 our 
+: 2617 4 7 minds
+- 2621
+: 2625 3 7 We 
+: 2629 7 7 signed 
+: 2637 4 7 3, 
+: 2645 4 7 4, 
+: 2653 4 7 5 
+: 2661 3 7 on 
+: 2665 3 7 the 
+: 2669 3 7 dot
+: 2673 4 7 ted 
+: 2681 15 7 lines
+- 2696
+: 2709 7 7 You’ll 
+: 2717 3 7 find 
+: 2721 3 7 me 
+: 2725 3 7 in 
+: 2729 3 7 the 
+: 2733 7 7 same 
+: 2741 3 4 spot 
+: 2745 3 4 be
+: 2749 3 2 lieve 
+: 2753 2 0 me
+- 2755
+: 2759 1 0 I 
+: 2761 3 9 could 
+: 2765 3 7 ne
+: 2769 3 5 ver 
+: 2773 3 4 stop
+: 2777 6 2 ~,
+- 2783
+: 2793 3 4 My 
+: 2797 7 5 life’s 
+: 2805 7 4 turned 
+: 2813 3 0 up
+: 2817 11 2 side 
+: 2829 6 0 down
+- 2835
+: 2839 1 7 Meet 
+: 2841 3 7 me 
+: 2845 7 7 out 
+: 2853 3 7 past 
+: 2857 3 7 the 
+: 2861 5 7 train 
+: 2869 2 4 tracks
+- 2871
+: 2874 2 4 I’m 
+: 2877 3 2 leav
+: 2881 3 0 in’ 
+: 2885 2 0 and 
+: 2889 2 9 not 
+: 2893 3 7 com
+: 2897 3 5 ing 
+: 2901 3 4 back
+: 2905 8 2 ~
+- 2913
+: 2921 3 4 You’re 
+: 2925 7 5 right 
+: 2933 6 4 and 
+: 2941 3 0 I 
+: 2945 10 2 was 
+: 2957 8 2 wrong
+- 2965
+: 2969 3 7 You’ll 
+: 2973 3 7 find 
+: 2977 3 7 me 
+: 2981 3 7 in 
+: 2985 3 7 the 
+: 2989 7 7 same 
+: 2997 3 4 spot 
+: 3001 3 4 be
+: 3005 3 2 lieve 
+: 3009 2 0 me
+- 3011
+: 3015 1 -2 I 
+: 3017 3 9 could 
+: 3021 3 7 ne
+: 3025 3 5 ver 
+: 3029 3 4 stop
+: 3033 6 2 ~,
+- 3039
+: 3049 3 4 My 
+: 3053 7 5 life’s 
+: 3061 6 4 turned 
+: 3069 3 0 up
+: 3073 11 2 side 
+: 3085 6 0 down
+- 3091
+: 3095 1 7 Meet 
+: 3097 3 7 me 
+: 3101 7 7 out 
+: 3109 3 7 past 
+: 3113 3 7 the 
+: 3117 5 7 train 
+: 3125 2 4 tracks
+- 3127
+* 3130 2 4 I’m 
+* 3133 3 2 leav
+* 3137 3 0 in’ 
+* 3141 2 0 and 
+* 3145 2 9 not 
+* 3149 3 7 com
+* 3153 3 5 ing 
+* 3157 3 4 back
+* 3161 8 2 ~
+- 3169
+: 3177 3 4 You’re 
+: 3181 7 5 right 
+: 3189 7 4 and 
+: 3197 3 0 I 
+: 3201 11 2 was 
+: 3213 8 2 wrong
+- 3221
+: 3225 3 2 This 
+: 3229 3 2 town 
+: 3233 3 0 will 
+: 3238 2 2 be 
+: 3241 2 0 the 
+: 3245 7 5 down
+: 3253 7 4 fall 
+: 3261 3 0 of 
+: 3265 8 2 us 
+: 3277 8 2 all
+- 3285
+: 3289 3 2 This 
+: 3293 3 2 town 
+: 3297 3 0 will 
+: 3301 3 2 be 
+: 3305 2 0 the 
+: 3309 7 5 down
+: 3317 5 4 fall 
+: 3325 3 0 of 
+: 3329 8 2 us 
+: 3341 4 0 all
+- 3345 3372
+- 3372
+F 3389 2 0 Down
+F 3393 2 0 fall 
+F 3397 2 0 of 
+F 3401 2 0 us 
+F 3405 14 0 all
+- 3419 3436
+- 3436
+F 3453 2 0 Down
+F 3457 2 0 fall 
+F 3461 2 0 of 
+F 3465 2 0 us 
+F 3469 14 0 all
+- 3483 3500
+- 3500
+F 3517 2 0 Down
+F 3521 2 0 fall 
+F 3525 2 0 of 
+F 3529 2 0 us 
+F 3533 14 0 all
+- 3547 3548
+- 3548
+F 3565 2 0 Down
+F 3573 2 0 fall 
+F 3581 2 0 of 
+F 3585 2 0 us 
+F 3597 22 0 all
+E

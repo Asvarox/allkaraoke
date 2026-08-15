@@ -1,0 +1,238 @@
+#ARTIST:Slipknot
+#TITLE:Danger - Keep Away
+#CREATOR:haistshomie666
+#BPM:206,48
+#YEAR:2004
+#VIDEO:v=NSjUb-aRloY
+#LANGUAGE:English
+#GAP:37142,95234405269
+#ALLKARAOKE_ID:slipknot-danger-keep-away
+#ALLKARAOKE_SID:6075
+#ALLKARAOKE_LASTUPDATE:2026-08-09T19:09:47.491Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:69
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=NSjUb-aRloY
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:195
+#MP3:Slipknot - Danger - Keep Away.mp3
+: 14 6 9 That
+: 21 4 7 ~ 
+: 26 6 5 place 
+: 33 4 2 is 
+: 38 2 5 in 
+: 41 6 9 my 
+: 48 1 9 mind
+: 50 2 8 ~
+: 53 5 9 ~
+- 58 92
+- 92
+: 106 3 2 Is 
+: 110 6 9 that
+: 117 3 7 ~ 
+: 121 7 5 space 
+: 129 3 2 that 
+: 133 3 5 you 
+: 137 6 5 call 
+: 144 9 5 mine
+- 153 191
+- 191
+: 205 6 9 That
+: 212 4 7 ~ 
+: 217 7 5 place 
+: 225 3 2 is 
+: 229 3 5 in 
+: 233 6 9 my 
+: 240 2 9 mind
+: 243 1 8 ~
+: 245 7 9 ~
+- 252 282
+- 282
+: 296 4 2 Is 
+: 301 5 9 that
+: 307 5 7 ~ 
+: 313 6 5 space 
+: 320 3 2 that 
+: 324 3 5 you 
+: 328 6 5 call 
+: 335 9 5 mine
+- 344 383
+- 383
+: 397 5 9 Where 
+: 403 5 7 have 
+: 409 3 5 I 
+: 413 11 2 been 
+: 425 3 2 all 
+: 429 3 0 this 
+: 433 3 2 time
+: 437 6 5 ~?
+- 443 479
+- 479
+: 493 5 9 Lost 
+: 499 4 5 en
+: 504 5 7 slaved
+: 510 18 7 ~ 
+: 529 2 5 fa
+: 532 1 2 tal 
+: 534 3 2 de
+: 538 7 2 cline
+- 545 575
+- 575
+: 589 5 9 I’ve 
+: 595 5 7 been 
+: 601 3 5 wai
+: 605 3 2 ting 
+: 609 2 2 for 
+: 612 3 2 this 
+: 616 3 2 to 
+: 620 3 0 un
+: 624 2 2 fold
+: 627 4 5 ~
+- 631 668
+- 668
+: 682 3 2 The 
+: 686 2 9 pie
+: 689 3 7 ces 
+: 693 3 5 are 
+: 697 2 5 on
+: 700 3 2 ly 
+: 704 3 2 as 
+: 708 3 2 good 
+: 712 3 2 as 
+: 716 3 0 the 
+: 720 6 2 whole
+- 726 765
+- 765
+* 779 3 14 Se
+* 783 3 12 vered 
+* 787 4 9 my
+* 792 6 9 self 
+* 799 3 9 from 
+* 803 3 9 my 
+* 807 8 9 own 
+* 816 11 9 life
+- 827 861
+- 861
+: 875 3 9 Cut 
+: 879 3 7 out 
+: 883 3 5 the 
+: 887 3 5 on
+: 891 3 2 ~
+: 895 3 2 ly 
+: 899 4 2 thing 
+: 904 3 2 that 
+: 908 3 0 was 
+: 912 3 2 right
+: 916 5 5 ~
+- 921 959
+- 959
+: 973 3 2 What 
+: 977 3 2 if 
+: 981 3 0 i 
+: 985 2 2 ne
+: 988 3 2 ver 
+: 992 3 2 saw 
+: 996 2 5 you 
+: 999 3 5 a
+: 1003 1 9 gain
+: 1005 2 7 ~
+: 1008 7 9 ~?
+- 1015 1050
+- 1050
+: 1064 4 2 I’d 
+: 1069 4 9 die 
+: 1074 5 7 right 
+: 1080 3 5 next 
+: 1084 3 2 to 
+: 1088 7 2 you 
+: 1096 3 2 in 
+: 1100 3 0 the 
+: 1104 6 2 end
+- 1110 1151
+- 1151
+: 1165 6 9 That
+: 1172 3 7 ~ 
+: 1176 7 5 place 
+: 1184 3 2 is 
+: 1188 3 5 in 
+: 1192 6 9 my 
+: 1199 1 9 mind
+: 1201 2 7 ~
+: 1204 6 9 ~
+- 1210 1242
+- 1242
+: 1256 4 2 Is 
+: 1261 4 9 that
+: 1266 5 7 ~ 
+: 1272 7 5 space 
+: 1280 3 2 that 
+: 1284 3 5 you 
+: 1288 6 5 call 
+: 1295 9 5 mine
+- 1304 1342
+- 1342
+: 1356 3 9 That
+: 1360 7 7 ~ 
+: 1368 7 5 place 
+: 1376 3 2 is 
+: 1380 3 5 in 
+: 1384 5 9 my 
+: 1390 1 9 mind
+: 1392 1 7 ~
+: 1394 5 9 ~
+- 1399 1434
+- 1434
+: 1448 4 2 Is 
+: 1453 3 9 that
+: 1457 6 7 ~ 
+: 1464 6 5 space 
+: 1471 3 2 that 
+: 1475 3 5 you 
+: 1479 6 5 call 
+: 1486 8 5 mine
+- 1494 1535
+- 1535
+: 1549 4 9 I 
+: 1554 5 7 won’t 
+: 1560 3 5 let 
+: 1564 9 2 you 
+: 1574 3 2 walk 
+: 1578 3 0 a
+: 1582 3 2 way
+: 1586 4 5 ~
+- 1590 1626
+- 1626
+: 1640 3 2 With
+: 1644 5 9 out
+: 1650 5 7 ~ 
+: 1656 3 5 hear
+: 1660 3 2 ing 
+: 1664 2 2 what 
+: 1667 3 2 I 
+: 1671 3 2 have 
+: 1675 3 0 to 
+: 1679 7 2 say
+- 1686 1721
+- 1721
+: 1735 3 2 With
+: 1739 5 9 out
+: 1745 4 7 ~ 
+: 1750 3 5 hear
+: 1754 3 2 ing 
+: 1758 3 2 what 
+: 1762 3 2 I 
+: 1766 3 2 have 
+: 1770 3 0 to 
+: 1774 6 2 say
+- 1780 1817
+- 1817
+: 1831 3 2 With
+: 1835 5 9 out
+: 1841 3 7 ~ 
+: 1845 3 5 hear
+: 1849 3 2 ing 
+: 1853 3 2 what 
+: 1857 3 2 I 
+: 1861 3 2 have 
+: 1865 3 0 to 
+: 1869 7 2 say
+E

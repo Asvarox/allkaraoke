@@ -1,0 +1,397 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Luke Holt)
+#TITLE:Thunder Bringer
+#CREATOR:Andore
+#BPM:378,14
+#YEAR:2024
+#VIDEO:v=gtKNgFftV5Y
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:33608,30380282435
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-luke-holt-thunder-bringer
+#ALLKARAOKE_SID:6087
+#ALLKARAOKE_LASTUPDATE:2026-08-09T19:17:29.923Z
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:254
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Luke Holt) - Thunder Bringer.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Luke Holt) - Thunder Bringer [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Luke Holt) - Thunder Bringer [BG].jpg
+#START:12.0
+#END:239950
+: 25 8 -4 Pride 
+: 36 1 -4 is 
+: 39 2 -4 a 
+: 45 6 -5 dam
+: 53 6 -7 sel 
+: 65 4 -9 in 
+: 74 6 -11 dis
+: 84 9 -12 tress
+- 93 152
+- 152
+: 177 9 -4 Hid
+: 187 3 -5 ing 
+: 191 2 -4 a
+: 196 7 -4 way 
+: 206 6 -4 where 
+: 216 8 -5 on
+: 227 1 -7 ly 
+: 238 7 -12 I 
+: 249 7 -11 can 
+: 262 6 -9 un
+: 273 4 -12 dress 
+: 292 13 -1 her
+- 305
+: 330 5 -5 Try 
+: 337 1 -4 all 
+: 343 2 -7 she 
+: 348 6 -5 can 
+: 355 9 -7 not 
+: 368 3 -9 to 
+: 378 7 -11 con
+: 391 10 -12 fess
+- 401 419
+- 419
+: 444 6 0 In 
+: 452 4 -2 the 
+: 457 4 0 end
+- 461
+: 480 1 -5 It’s 
+: 487 5 -5 all 
+: 493 2 -4 the 
+: 500 1 -3 same
+: 502 4 -4 ~ 
+: 512 4 -4 once 
+: 519 4 -5 I
+: 525 3 -6 ~ 
+: 533 4 -7 ap
+: 539 10 -7 ply 
+: 551 13 -5 all 
+: 565 2 -5 the 
+: 574 7 -7 pres
+: 590 9 -9 sure
+- 599
+: 612 7 -5 Thun
+: 624 4 -7 ~
+: 634 9 -12 der, 
+: 649 20 -4 bring 
+: 672 12 -5 her 
+: 692 12 -7 through 
+: 710 9 -12 the 
+: 724 20 1 wrin
+: 745 14 -1 ger
+- 759
+: 765 6 -2 Show 
+: 773 6 -4 her 
+: 781 7 -5 I’m 
+: 792 2 -2 the 
+: 795 6 0 Judg
+: 807 2 -4 ment 
+: 816 7 -5 call 
+: 824 1 -6 ~
+: 826 1 -7 ~
+- 827
+: 830 4 -7 The 
+: 838 4 -5 one 
+: 849 5 -4 who 
+: 855 7 -5 makes 
+: 868 2 0 her 
+: 872 5 -2 king
+: 881 5 -4 dom 
+: 891 11 -5 fall
+- 902
+: 915 13 -5 Light
+: 935 6 -5 ning
+: 943 7 -5 ~ 
+: 953 17 -4 wield 
+: 973 15 -3 her
+- 988
+: 999 9 -7 Use 
+: 1012 4 -12 and 
+* 1029 17 5 yield 
+* 1049 13 15 her
+- 1062
+: 1068 4 -2 Show 
+: 1076 6 -4 her 
+: 1084 4 -5 what 
+: 1090 5 5 she 
+: 1099 4 5 can’t 
+: 1110 3 3 con
+: 1119 11 4 ceal
+- 1130
+: 1134 4 -7 For 
+: 1144 6 -2 true 
+: 1153 4 -4 na
+: 1161 7 -5 ture 
+: 1170 3 -7 will 
+: 1176 6 -2 be 
+: 1186 6 -4 re
+: 1194 9 -5 vealed
+: 1204 9 -4 ~
+- 1213
+F 1237 4 -4 Tell 
+F 1247 5 -4 me,
+- 1252
+R 1269 1 -5 O
+R 1273 3 -5 dys
+R 1278 6 -4 e
+R 1285 7 -5 us
+- 1292
+: 1302 1 5 If 
+: 1305 8 0 I
+: 1314 5 -1 ~ 
+: 1322 1 -2 were 
+: 1327 1 -4 to 
+: 1332 3 -5 make 
+: 1338 2 -5 you 
+: 1346 4 -7 choose
+- 1350 1353
+- 1353
+: 1378 3 1 The 
+: 1385 8 1 lives 
+: 1397 2 0 of 
+: 1401 4 -2 your 
+: 1408 3 -4 men 
+: 1413 3 -5 and 
+: 1422 8 -5 crew 
+: 1432 5 -4 or 
+: 1439 5 -2 your 
+: 1446 7 0 own
+- 1453
+: 1464 8 0 Why 
+: 1475 1 -4 do 
+: 1477 2 -4 I 
+: 1484 2 -6 think 
+: 1492 4 -8 they’d 
+: 1503 17 -7 lose?
+- 1520
+: 1534 4 -12 En
+: 1540 6 -6 light
+: 1550 3 -5 en 
+: 1556 5 -5 me 
+: 1570 3 -5 King 
+: 1574 2 -4 of 
+: 1577 1 -4 i
+: 1581 2 -7 tha
+: 1588 8 -7 ca
+- 1596
+: 1604 3 -7 Since 
+: 1610 4 -3 hun
+: 1619 7 -2 ger 
+: 1628 2 -4 was 
+: 1634 6 -5 far 
+: 1645 2 -7 to 
+: 1651 7 -8 great
+- 1658
+: 1680 4 -8 I 
+: 1687 3 0 won
+: 1694 7 0 der 
+: 1702 2 -3 who’d 
+: 1709 4 -3 take 
+: 1719 2 -5 the 
+: 1725 6 -5 weight 
+: 1733 5 -4 of 
+: 1742 2 -2 the 
+: 1746 6 0 damned
+- 1752
+: 1756 2 -6 And 
+: 1764 3 0 suf
+: 1771 5 -2 fer 
+: 1779 1 -5 a 
+: 1785 4 -5 grue
+: 1792 6 -7 some 
+: 1804 5 -7 fate 
+: 1814 1 -8 to 
+: 1817 1 -8 the
+- 1818
+: 1823 13 -7 Thun
+: 1840 13 -12 der 
+: 1858 20 -4 brin
+: 1879 14 -5 ger
+- 1893
+: 1899 13 -7 Here 
+: 1916 10 0 to 
+: 1935 13 1 ring 
+: 1950 18 0 your
+- 1968
+: 1974 8 -2 Ears 
+: 1984 2 -4 un
+: 1991 7 -5 til 
+: 2000 2 -5 you’re 
+: 2007 5 -2 deaf 
+: 2017 1 6 with 
+: 2026 10 6 fear
+- 2036
+: 2040 2 -7 And 
+: 2050 8 -2 spear 
+: 2060 7 -4 you 
+: 2068 6 -5 while 
+: 2076 3 5 your 
+: 2082 4 0 death 
+: 2091 6 0 is 
+: 2101 1 -5 near
+: 2103 6 -6 ~
+: 2110 4 8 ~
+- 2114
+: 2124 13 -7 Light
+: 2143 7 -12 ning 
+: 2163 17 -4 wiel
+: 2183 14 -5 der
+- 2197
+: 2204 13 -7 Here 
+: 2224 6 0 to 
+: 2239 2 3 yield
+: 2242 14 5 ~ 
+: 2259 12 3 your
+- 2271
+: 2277 5 -2 Time 
+: 2286 5 -4 for 
+: 2294 5 -5 you 
+: 2303 2 -7 have 
+: 2309 6 -2 passed 
+: 2320 1 -2 your 
+: 2327 7 -5 prime
+- 2334
+: 2339 6 -7 Sub
+: 2350 10 -2 lime 
+: 2362 4 -4 you 
+: 2370 5 -5 for 
+: 2376 5 -7 your 
+: 2385 2 -7 act 
+: 2394 2 -4 of 
+: 2403 13 -5 crime
+- 2416 2442
+- 2442
+F 2467 19 -12 Choose
+- 2486 2514
+- 2514
+F 2539 10 -6 Choose?
+- 2549 2553
+- 2553
+: 2578 3 -4 Some
+: 2585 4 -2 one’s
+: 2590 2 -3 ~
+: 2593 1 -4 ~ 
+: 2597 5 -4 got
+: 2603 5 -5 ta 
+: 2612 3 -4 die
+: 2616 1 -3 ~
+: 2618 6 -2 ~ 
+: 2627 1 -4 to
+: 2630 10 -5 day
+- 2640
+: 2648 2 -7 And 
+: 2655 1 -4 You
+: 2657 1 -3 ~ 
+: 2659 3 -2 ~ 
+: 2664 3 -4 have 
+: 2674 3 -5 got 
+: 2682 1 -7 the 
+: 2688 2 -5 fi
+: 2691 1 -4 ~
+: 2693 1 -3 ~
+: 2695 1 -2 ~
+: 2697 2 -3 nal 
+: 2706 16 -5 say
+- 2722 2742
+- 2742
+F 2767 8 -12 You?
+- 2775 2806
+- 2806
+F 2831 2 -12 Or 
+F 2834 4 -12 your 
+F 2841 9 -6 crew?
+- 2850
+: 2875 10 7 Please 
+: 2890 5 7 don’t 
+: 2900 3 7 make 
+: 2909 4 7 me 
+: 2918 12 7 do 
+: 2934 4 5 this
+- 2938
+: 2948 3 7 Don’t 
+: 2956 4 7 make 
+: 2967 5 7 me 
+: 2976 11 7 do 
+: 2990 6 5 this
+- 2996 3937
+- 3937
+F 3962 3 -10 Cap
+F 3968 6 -10 tain?
+- 3974 3998
+- 3998
+F 4023 3 -11 I 
+F 4027 2 -9 have 
+F 4032 1 -11 to 
+F 4035 3 -9 see 
+F 4040 4 -10 her
+- 4044 4077
+- 4077
+F 4102 2 -10 But 
+F 4106 3 -10 we’ll 
+F 4113 5 -12 die
+- 4118 4153
+- 4153
+F 4178 3 -9 I 
+F 4184 4 -8 know
+- 4188 4218
+- 4218
+: 4243 15 -7 Thun
+: 4260 14 -12 der, 
+: 4279 20 -4 bring 
+: 4301 13 0 her
+- 4314
+: 4323 11 -7 Through 
+: 4339 8 -12 the 
+: 4354 19 1 wrin
+: 4375 13 0 ger
+- 4388
+: 4396 4 -2 Show 
+: 4404 5 -4 her 
+: 4411 7 -5 I’m 
+: 4423 1 -2 the 
+: 4426 7 -2 jugd
+: 4437 5 -4 ment 
+: 4447 10 -5 call
+- 4457
+: 4461 3 -7 The 
+: 4469 3 -4 one 
+: 4478 4 -4 who 
+: 4489 6 -5 makes 
+: 4497 2 -7 her 
+: 4503 5 -2 king
+: 4511 4 -4 dom 
+: 4521 12 -5 fall
+- 4533
+: 4544 13 -7 Light
+: 4565 12 -11 ning, 
+: 4583 16 -4 wield 
+: 4603 14 -3 her
+- 4617
+: 4626 6 -6 Use
+: 4637 2 -6 ~ 
+: 4641 7 -12 and 
+* 4659 2 2 yield
+* 4662 1 3 ~
+* 4664 12 5 ~ 
+* 4680 11 0 her
+- 4691
+: 4697 4 -2 Show 
+: 4706 4 -4 her 
+: 4713 4 -5 what 
+: 4723 3 -2 she 
+: 4729 4 -2 can’t 
+: 4740 4 -4 con
+: 4747 13 -4 ceal
+- 4760
+: 4764 4 -7 For 
+: 4774 4 -2 true 
+: 4781 5 -4 na
+: 4790 8 -5 ture 
+: 4800 2 -7 will 
+: 4808 6 -2 be 
+: 4816 7 -4 re
+: 4826 2 -4 vealed
+: 4829 2 -5 ~
+- 4831
+: 4835 6 -6 ~
+E

@@ -1,0 +1,465 @@
+#ARTIST:Lady Gaga
+#TITLE:Artpop
+#CREATOR:lozboorman
+#BPM:234
+#YEAR:2013
+#VIDEO:v=9d5j1klMYqw
+#LANGUAGE:English
+#GAP:15454,358974358975
+#ALLKARAOKE_ID:lady-gaga-artpop
+#ALLKARAOKE_SID:6110
+#ALLKARAOKE_LASTUPDATE:2026-08-11T12:42:10.811Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=91773
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=16915
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:259
+#MP3:Lady Gaga - Artpop.mp3
+: 16 2 5 Come 
+: 20 2 2 to 
+: 23 6 2 me
+- 29 40
+- 40
+: 56 2 5 In 
+: 60 2 5 all 
+: 63 2 2 your 
+: 68 2 5 gla
+: 72 2 5 mour, 
+: 76 2 2 and 
+: 80 2 7 cru
+: 84 2 2 el
+: 88 6 2 ty
+- 94 104
+- 104
+: 120 2 5 Just 
+: 124 2 5 do 
+: 128 2 5 the 
+: 132 2 5 thing 
+: 136 2 5 that 
+: 140 2 3 you 
+* 144 10 0 do
+- 154 184
+- 184
+: 200 2 0 And 
+: 204 2 2 I’ll 
+: 208 4 2 un
+: 215 4 0 dress 
+: 223 7 0 you
+- 230 256
+- 256
+: 272 2 5 Give 
+: 276 2 2 it 
+: 280 5 2 tight
+- 285 295
+- 295
+: 311 2 5 Some
+: 315 2 5 times 
+: 319 2 2 the 
+: 324 2 5 sim
+: 328 2 5 pl
+: 332 2 2 est 
+: 336 2 7 move 
+: 340 2 2 is 
+: 344 7 2 right
+- 351 360
+- 360
+: 376 2 5 The 
+: 380 2 5 me
+: 384 2 5 lo
+: 388 2 5 dy 
+: 392 2 5 that 
+: 396 2 3 you 
+: 400 7 0 choose
+- 407 440
+- 440
+* 456 3 2 Can 
+: 463 3 2 re
+: 470 3 0 scue 
+: 479 6 0 you?
+- 485 524
+- 524
+: 540 2 9 A
+: 544 2 7 ~ 
+: 548 4 7 hy
+: 555 4 5 brid 
+: 563 4 7 can 
+: 572 4 5 with 
+: 580 4 7 stand 
+: 588 2 5 these 
+: 592 3 2 things
+- 595
+: 604 3 9 My 
+: 612 3 7 heart 
+: 619 3 5 can 
+: 627 3 7 beat 
+: 635 3 5 with 
+: 644 3 7 bricks 
+: 652 2 5 and 
+: 656 4 2 strings
+- 660
+: 668 4 9 My 
+* 675 5 7 art
+* 683 5 6 pop 
+: 692 4 7 could 
+: 700 5 6 mean 
+: 708 3 7 a
+: 713 4 5 ny
+: 719 5 2 thing
+- 724 779
+- 779
+: 795 3 9 We 
+: 800 6 2 could, 
+: 811 3 9 we 
+: 816 6 2 could, 
+: 824 2 1 be
+: 828 2 2 long 
+: 832 2 1 to
+: 836 2 2 ge
+* 840 5 9 ther
+- 845
+: 859 3 9 We 
+: 864 6 2 could, 
+: 875 3 9 we 
+: 880 6 2 could, 
+: 888 2 1 be
+: 892 2 2 long 
+: 896 2 1 to
+: 900 2 2 ge
+: 904 5 9 ther
+- 909
+: 923 3 9 We 
+: 928 6 2 could, 
+: 939 3 9 we 
+: 944 6 2 could, 
+: 952 2 1 be
+: 956 2 2 long 
+: 960 2 1 to
+: 964 2 2 ge
+: 968 5 9 ther
+- 973 993
+- 993
+: 1009 3 9 Art
+: 1013 2 9 pop
+: 1016 3 7 ~
+: 1020 3 5 ~
+: 1024 4 2 ~
+- 1028 1120
+- 1120
+: 1136 2 5 Come 
+: 1140 2 2 to 
+: 1144 6 2 me
+- 1150 1160
+- 1160
+: 1176 2 5 With
+: 1180 2 5 out 
+* 1184 2 2 your 
+: 1188 2 5 sub
+: 1192 2 5 text 
+: 1195 2 2 and 
+: 1199 2 7 fan
+: 1203 2 2 ta
+: 1207 7 2 sy
+- 1214 1224
+- 1224
+: 1240 2 5 Just 
+: 1244 2 5 do 
+: 1248 2 5 the 
+: 1252 2 5 thing 
+: 1256 2 5 that 
+: 1260 2 3 you 
+: 1264 9 0 do
+- 1273 1303
+- 1303
+: 1319 2 -1 In 
+* 1324 3 2 a 
+: 1329 4 2 per
+: 1336 4 0 verse 
+: 1343 8 0 hue
+- 1351 1376
+- 1376
+: 1392 2 5 Love 
+: 1396 2 2 is 
+: 1400 6 2 fly
+- 1406 1416
+- 1416
+: 1432 2 5 I’ve 
+: 1436 2 5 flown 
+: 1439 2 2 my 
+: 1443 2 5 bea
+: 1447 2 5 ches 
+: 1451 2 2 with 
+* 1455 2 7 lo
+* 1459 2 2 ver’s 
+: 1463 8 2 side
+- 1471 1479
+- 1479
+: 1495 2 5 The 
+: 1499 2 5 co
+: 1503 2 5 lor’s 
+: 1507 2 5 pa
+: 1511 2 5 lette 
+: 1515 2 3 you 
+: 1519 11 0 choose
+- 1530 1560
+- 1560
+* 1576 3 2 Can 
+: 1583 4 2 pro
+: 1591 4 0 fit 
+: 1599 9 0 you
+- 1608 1644
+- 1644
+: 1660 2 9 A
+: 1663 2 7 ~ 
+: 1667 4 7 hy
+: 1675 4 5 brid 
+* 1683 4 7 can 
+: 1692 4 5 with 
+: 1700 4 7 stand 
+: 1708 2 5 these 
+: 1712 5 2 things
+- 1717
+: 1724 4 9 My 
+: 1732 4 7 heart 
+: 1740 4 5 can 
+: 1748 4 7 beat 
+: 1756 4 5 with 
+: 1764 4 7 bricks 
+: 1772 2 5 and 
+: 1776 5 2 strings
+- 1781
+: 1788 4 9 My 
+: 1795 4 7 art
+: 1803 4 5 pop 
+* 1811 4 7 could 
+: 1820 4 5 mean 
+: 1828 2 7 a
+: 1832 4 5 ny
+: 1839 8 2 thing
+- 1847 1900
+- 1900
+: 1916 4 9 Could 
+: 1924 4 7 try 
+: 1931 4 5 to 
+: 1939 4 7 sell 
+: 1947 4 5 you 
+: 1955 4 7 out 
+: 1964 2 5 or 
+: 1968 6 2 I
+- 1974
+: 1981 4 9 Could 
+: 1988 4 7 show 
+: 1996 4 5 you 
+: 2004 4 7 all 
+: 2012 4 5 the 
+: 2019 4 7 rea
+: 2027 3 5 sons 
+: 2032 6 2 why
+- 2038
+: 2043 4 9 My 
+: 2051 4 7 art 
+: 2059 4 5 pop 
+: 2068 4 7 could 
+* 2075 4 5 mean 
+: 2084 2 7 a
+: 2088 5 5 ny
+: 2096 6 2 thing
+- 2102 2155
+- 2155
+: 2171 3 9 We 
+: 2177 6 2 could, 
+: 2187 3 9 we 
+: 2192 6 2 could, 
+: 2200 2 1 be
+: 2204 2 2 long 
+: 2208 2 1 to
+: 2212 2 2 ge
+: 2216 5 9 ther
+- 2221
+: 2235 3 9 We 
+: 2241 6 2 could, 
+: 2251 3 9 we 
+: 2256 6 2 could, 
+: 2264 2 1 be
+: 2268 2 2 long 
+: 2272 2 1 to
+: 2276 2 2 ge
+: 2280 5 9 ther
+- 2285
+: 2299 3 9 We 
+: 2305 6 2 could, 
+: 2315 3 9 we 
+: 2320 6 2 could, 
+: 2328 2 1 be
+: 2332 2 2 long 
+: 2336 2 1 to
+: 2340 2 2 ge
+: 2344 5 9 ther
+- 2349 2368
+- 2368
+* 2384 2 9 Art
+* 2388 3 9 pop
+* 2392 3 7 ~
+* 2396 3 5 ~
+* 2400 6 2 ~
+- 2406 2408
+- 2408
+F 2424 2 0 Bru
+F 2428 2 0 shes 
+F 2432 2 0 with 
+F 2435 3 0 dark
+F 2439 2 0 ness 
+F 2443 2 0 won’t 
+F 2447 2 0 help 
+F 2451 3 0 you 
+F 2458 4 0 cre
+F 2464 2 0 ate
+- 2466
+F 2471 4 0 Your 
+F 2480 4 0 de
+F 2487 3 0 sti
+F 2492 2 0 ny 
+F 2496 2 0 of 
+F 2500 2 0 self 
+F 2504 2 0 but 
+F 2508 2 0 Art
+F 2512 2 0 pop 
+F 2516 3 0 could 
+F 2522 3 0 mean 
+F 2528 3 0 a
+F 2535 4 0 ny
+F 2543 4 0 thing
+F 2551 4 0 ~
+- 2555 2564
+- 2564
+F 2580 3 0 A
+F 2585 5 0 ny
+F 2595 5 0 thing
+F 2604 4 0 ~
+- 2608 2664
+- 2664
+F 2680 2 0 I 
+F 2684 2 0 tried 
+F 2688 2 0 to 
+F 2692 2 0 sell 
+F 2696 2 0 my
+F 2701 2 0 self, 
+F 2706 3 0 but 
+F 2712 2 0 I 
+F 2716 2 0 am 
+F 2721 3 0 real
+F 2728 3 0 ly 
+F 2736 3 0 laugh
+F 2743 4 0 ing
+- 2747
+F 2751 2 0 ’Cause 
+F 2755 2 0 I 
+F 2759 2 0 just 
+F 2763 2 0 love 
+F 2767 2 0 the 
+F 2771 3 0 mu
+F 2777 3 0 sic 
+F 2784 3 0 not 
+F 2791 3 0 the 
+F 2799 3 0 bling
+F 2807 4 0 ~
+- 2811 2819
+- 2819
+F 2835 3 0 Mu
+F 2840 4 0 sic 
+F 2848 4 0 not 
+F 2855 4 0 the 
+F 2863 4 0 bling
+F 2872 4 0 ~
+- 2876 2923
+- 2923
+: 2939 3 9 We 
+: 2944 6 2 could, 
+: 2955 3 9 we 
+: 2960 6 2 could, 
+: 2968 2 1 be
+: 2972 2 2 long 
+: 2976 2 1 to
+: 2980 2 2 ge
+: 2984 5 9 ther
+- 2989
+: 3003 3 9 We 
+: 3008 6 2 could, 
+: 3019 3 9 we 
+: 3024 6 2 could, 
+: 3032 2 1 be
+: 3036 2 2 long 
+: 3040 2 1 to
+: 3044 2 2 ge
+: 3048 5 9 ther
+- 3053
+: 3067 3 9 We 
+: 3072 6 2 could, 
+: 3083 3 9 we 
+: 3088 6 2 could, 
+: 3096 2 1 be
+: 3100 2 2 long 
+: 3104 2 1 to
+: 3108 2 2 ge
+: 3112 5 9 ther
+- 3117 3137
+- 3137
+: 3153 2 9 Art
+: 3157 2 9 pop
+: 3160 3 7 ~
+: 3164 3 5 ~
+: 3168 8 2 ~
+- 3176 3179
+- 3179
+: 3195 3 9 We 
+: 3200 6 2 could, 
+* 3211 3 9 we 
+* 3216 6 2 could, 
+: 3224 2 1 be
+: 3228 2 2 long 
+: 3232 2 1 to
+: 3236 2 2 ge
+: 3240 5 9 ther
+- 3245
+: 3259 3 9 We 
+: 3264 6 2 could, 
+: 3275 3 9 we 
+: 3280 6 2 could, 
+: 3288 2 1 be
+: 3292 2 2 long 
+: 3296 2 1 to
+: 3300 2 2 ge
+: 3304 5 9 ther
+- 3309
+: 3323 3 9 We 
+: 3328 6 2 could, 
+: 3339 3 9 we 
+: 3344 6 2 could, 
+* 3352 2 1 be
+* 3356 2 2 long 
+: 3360 2 1 to
+: 3364 2 2 ge
+: 3368 5 9 ther
+- 3373 3392
+- 3392
+: 3408 2 9 Art
+: 3412 3 9 pop
+: 3416 3 7 ~
+: 3420 3 5 ~
+* 3424 10 2 ~
+- 3434 3435
+- 3435
+F 3451 8 0 Free 
+F 3463 8 0 my 
+F 3476 8 0 mind
+- 3484
+F 3492 4 0 Art
+F 3500 4 0 pop
+- 3504
+F 3515 6 0 You 
+F 3527 6 0 make 
+F 3539 6 0 my
+- 3545
+F 3555 4 0 Heart 
+F 3564 4 0 stop
+E

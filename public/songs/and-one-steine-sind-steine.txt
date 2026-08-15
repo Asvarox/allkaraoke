@@ -1,0 +1,402 @@
+#ARTIST:And One
+#TITLE:Steine sind Steine
+#CREATOR:Tom
+#BPM:256,14
+#YEAR:2006
+#VIDEO:v=3fM6tNJo_50
+#GENRE:Synth-Pop
+#LANGUAGE:German
+#GAP:21844,450691028345
+#ALLKARAOKE_ID:and-one-steine-sind-steine
+#ALLKARAOKE_SID:6097
+#ALLKARAOKE_LASTUPDATE:2026-08-10T17:22:23.745Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:242
+#MP3:And One - Steine sind Steine.mp3
+#COVER:And One - Steine sind Steine [CO].jpg
+#BACKGROUND:And One - Steine sind Steine [BG].jpg
+R 17 4 0 Erst 
+R 25 4 0 kommt 
+R 33 4 0 Gold
+- 37
+R 45 4 0 Dann 
+R 53 4 0 kommt 
+R 61 2 0 die 
+R 65 4 0 Welt
+- 69
+R 81 4 0 Steine 
+R 89 4 0 sind 
+R 97 4 0 steine
+- 101
+R 109 4 0 Ohne 
+R 121 4 0 rotes 
+R 129 4 0 Geld
+- 133
+R 145 4 0 Erst 
+R 153 4 0 kommt 
+R 161 4 0 Gold
+- 165
+R 173 4 0 Dann 
+R 181 4 0 kommt 
+R 189 2 0 die 
+R 193 4 0 Welt
+- 197
+R 209 4 0 Steine 
+R 217 4 0 sind 
+R 225 4 0 steine
+- 229
+R 237 6 0 Ohne 
+R 249 4 0 rotes 
+R 257 4 0 Geld
+- 261 512
+- 512
+R 529 4 0 Erst 
+R 537 4 0 kommt 
+R 545 4 0 Stahl
+- 549
+R 557 4 0 Dann 
+R 565 4 0 kommt 
+R 573 2 0 die 
+R 577 4 0 Wut
+- 581
+R 593 4 0 Steine 
+R 601 4 0 sind 
+R 609 4 0 steine
+- 613
+R 621 6 0 Ohne 
+R 633 4 0 rotes 
+R 641 4 0 Blut
+- 645
+R 657 4 0 Erst 
+R 665 4 0 kommt 
+R 673 4 0 Stahl
+- 677
+R 685 4 0 Dann 
+R 693 4 0 kommt 
+R 701 2 0 die 
+R 705 4 0 Wut
+- 709
+R 721 4 0 Steine 
+R 729 4 0 sind 
+R 737 4 0 steine
+- 741
+R 750 6 0 Ohne 
+R 762 4 0 rotes 
+R 770 4 0 Blut
+- 774
+R 786 4 0 Erst 
+R 794 4 0 kommt 
+R 802 4 0 stolz
+- 806
+R 814 4 0 Dann 
+R 822 4 0 kommt 
+R 830 2 0 dein 
+R 834 4 0 Land
+- 838
+R 850 4 0 Steine 
+R 858 4 0 sind 
+R 866 4 0 steine
+- 870
+R 878 6 0 Alle 
+R 890 2 0 an 
+R 894 2 0 die 
+R 898 4 0 Wand
+- 902
+R 914 4 0 Erst 
+R 922 4 0 kommt 
+R 930 4 0 stolz
+- 934
+R 942 4 0 Dann 
+R 950 4 0 kommt 
+R 958 2 0 dein 
+R 962 4 0 Land
+- 966
+R 978 4 0 Steine 
+R 986 4 0 sind 
+R 994 4 0 steine
+- 998
+R 1006 6 0 Alle 
+R 1018 2 0 an 
+R 1022 2 0 die 
+R 1026 4 0 Wand
+- 1030
+R 1042 4 0 Erst 
+R 1050 4 0 kommt 
+R 1058 4 0 stolz
+- 1062
+R 1070 4 0 Dann 
+R 1078 4 0 kommt 
+R 1086 2 0 dein 
+R 1090 4 0 Land
+- 1094
+R 1106 4 0 Steine 
+R 1114 4 0 sind 
+R 1122 4 0 steine
+- 1126
+R 1134 6 0 Alle 
+R 1146 2 0 an 
+R 1150 2 0 die 
+R 1154 4 0 Wand
+- 1158
+R 1170 4 0 Erst 
+R 1178 4 0 kommt 
+R 1186 4 0 stolz
+- 1190
+R 1198 4 0 Dann 
+R 1206 4 0 kommt 
+R 1214 2 0 dein 
+R 1218 4 0 Land
+- 1222
+R 1234 4 0 Steine 
+R 1242 4 0 sind 
+R 1250 4 0 steine
+- 1254
+R 1262 6 0 Alle 
+R 1274 2 0 an 
+R 1278 2 0 die 
+R 1282 4 0 Wand
+- 1286 1537
+- 1537
+R 1554 4 0 Erst 
+R 1562 4 0 kommt 
+R 1570 4 0 Krieg
+- 1574
+R 1582 4 0 Dann 
+R 1590 4 0 kommt 
+R 1598 2 0 die 
+R 1602 4 0 Wahl
+- 1606
+R 1618 4 0 Steine 
+R 1626 4 0 sind 
+R 1634 4 0 steine
+- 1638
+R 1646 4 0 Ohne 
+R 1658 4 0 rote 
+R 1666 4 0 qual
+- 1670
+R 1682 4 0 Erst 
+R 1690 4 0 kommt 
+R 1698 4 0 Krieg
+- 1702
+R 1710 4 0 Dann 
+R 1718 4 0 kommt 
+R 1726 2 0 die 
+R 1730 4 0 Wahl
+- 1734
+R 1746 4 0 Steine 
+R 1754 4 0 sind 
+R 1762 4 0 steine
+- 1766
+R 1774 6 0 Ohne 
+R 1786 4 0 rote 
+R 1794 4 0 qual
+- 1798
+R 1810 4 0 Erst 
+R 1818 4 0 kommt 
+R 1826 4 0 hass
+- 1830
+R 1838 4 0 Dann 
+R 1846 4 0 kommt 
+R 1854 2 0 die 
+R 1858 4 0 Nacht
+- 1862
+R 1874 4 0 Steine 
+R 1882 4 0 sind 
+R 1890 4 0 steine
+- 1894
+R 1902 6 0 Ohne 
+R 1914 4 0 rote 
+R 1922 4 0 macht
+- 1926
+R 1938 4 0 Erst 
+R 1946 4 0 kommt 
+R 1954 4 0 hass
+- 1958
+R 1966 4 0 Dann 
+R 1974 4 0 kommt 
+R 1982 2 0 die 
+R 1986 4 0 Nacht
+- 1990
+R 2003 4 0 Steine 
+R 2011 4 0 sind 
+R 2019 4 0 steine
+- 2023
+R 2031 6 0 Ohne 
+R 2043 4 0 rote 
+R 2051 4 0 macht
+- 2055
+R 2067 4 0 Erst 
+R 2075 4 0 kommt 
+R 2083 4 0 stolz
+- 2087
+R 2095 4 0 Dann 
+R 2103 4 0 kommt 
+R 2111 2 0 dein 
+R 2115 4 0 Land
+- 2119
+R 2131 4 0 Steine 
+R 2139 4 0 sind 
+R 2147 4 0 steine
+- 2151
+R 2159 6 0 Alle 
+R 2171 2 0 an 
+R 2175 2 0 die 
+R 2179 4 0 Wand
+- 2183
+R 2195 4 0 Erst 
+R 2203 4 0 kommt 
+R 2211 4 0 stolz
+- 2215
+R 2223 4 0 Dann 
+R 2231 4 0 kommt 
+R 2239 2 0 dein 
+R 2243 4 0 Land
+- 2247
+R 2259 4 0 Steine 
+R 2267 4 0 sind 
+R 2275 4 0 steine
+- 2279
+R 2287 6 0 Alle 
+R 2299 2 0 an 
+R 2303 2 0 die 
+R 2307 4 0 Wand
+- 2311
+R 2323 4 0 Erst 
+R 2331 4 0 kommt 
+R 2339 4 0 stolz
+- 2343
+R 2351 4 0 Dann 
+R 2359 4 0 kommt 
+R 2367 2 0 dein 
+R 2371 4 0 Land
+- 2375
+R 2387 4 0 Steine 
+R 2395 4 0 sind 
+R 2403 4 0 steine
+- 2407
+R 2415 6 0 Alle 
+R 2427 2 0 an 
+R 2431 2 0 die 
+R 2435 4 0 Wand
+- 2439
+R 2451 4 0 Erst 
+R 2459 4 0 kommt 
+R 2467 4 0 stolz
+- 2471
+R 2479 4 0 Dann 
+R 2487 4 0 kommt 
+R 2495 2 0 dein 
+R 2499 4 0 Land
+- 2503
+R 2515 4 0 Steine 
+R 2523 4 0 sind 
+R 2531 4 0 steine
+- 2535
+R 2543 6 0 Alle 
+R 2555 2 0 an 
+R 2559 2 0 die 
+R 2563 4 0 Wand
+- 2567 2818
+- 2818
+R 2835 4 0 Erst 
+R 2843 4 0 kommt 
+R 2851 4 0 stolz
+- 2855
+R 2863 4 0 Dann 
+R 2871 4 0 kommt 
+R 2879 2 0 dein 
+R 2883 4 0 Land
+- 2887
+R 2899 4 0 Steine 
+R 2907 4 0 sind 
+R 2915 4 0 steine
+- 2919
+R 2927 6 0 Alle 
+R 2939 2 0 an 
+R 2943 2 0 die 
+R 2947 4 0 Wand
+- 2951
+R 2963 4 0 Erst 
+R 2971 4 0 kommt 
+R 2979 4 0 stolz
+- 2983
+R 2991 4 0 Dann 
+R 2999 4 0 kommt 
+R 3007 2 0 dein 
+R 3011 4 0 Land
+- 3015
+R 3027 4 0 Steine 
+R 3035 4 0 sind 
+R 3043 4 0 steine
+- 3047
+R 3055 6 0 Alle 
+R 3067 2 0 an 
+R 3071 2 0 die 
+R 3075 4 0 Wand
+- 3079 3082
+- 3082
+R 3099 4 0 Sei 
+R 3107 4 0 stolz
+- 3111
+R 3119 4 0 Deutscher 
+R 3131 4 0 sei 
+R 3139 4 0 stolz
+- 3143 3147
+- 3147
+R 3164 4 0 Sei 
+R 3172 4 0 stolz
+- 3176
+R 3184 4 0 Deutscher 
+R 3196 4 0 sei 
+R 3204 4 0 stolz
+- 3208 3210
+- 3210
+R 3227 4 0 Sei 
+R 3235 4 0 stolz
+- 3239
+R 3247 4 0 Deutscher 
+R 3259 4 0 sei 
+R 3267 4 0 stolz
+- 3271 3274
+- 3274
+R 3291 4 0 Sei 
+R 3299 4 0 stolz
+- 3303
+R 3311 4 0 Deutscher 
+R 3323 4 0 sei 
+R 3331 4 0 stolz
+- 3335 3338
+- 3338
+R 3355 4 0 Sei 
+R 3363 4 0 stolz
+- 3367
+R 3375 4 0 Deutscher 
+R 3387 4 0 sei 
+R 3395 4 0 stolz
+- 3399 3402
+- 3402
+R 3419 4 0 Sei 
+R 3427 4 0 stolz
+- 3431
+R 3439 4 0 Deutscher 
+R 3451 4 0 sei 
+R 3459 4 0 stolz
+- 3463 3466
+- 3466
+R 3483 4 0 Sei 
+R 3491 4 0 stolz
+- 3495
+R 3503 4 0 Deutscher 
+R 3515 4 0 sei 
+R 3523 4 0 stolz
+- 3527 3530
+- 3530
+R 3547 4 0 Sei 
+R 3555 4 0 stolz
+- 3559
+R 3567 4 0 Deutscher 
+R 3579 4 0 sei 
+R 3587 4 0 stolz
+E

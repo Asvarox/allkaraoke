@@ -3,6 +3,7 @@ import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import useSWR from 'swr';
 import { ValuesType } from 'utility-types';
 import { Link } from 'wouter';
 
@@ -17,6 +18,7 @@ import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
 import { getAdminPassword } from '~/routes/admin/admin-password';
+import { saveAdminUnverifiedSongInBackground } from '~/routes/admin/background-song-save';
 import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
 import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
@@ -73,6 +75,13 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
   const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
+
+  // Prefetch the queue so saving can redirect to the next song without waiting for a request.
+  const { data: prefetchedUnverifiedSongs } = useSWR(
+    adminUnverifiedSongId && isAdminProcessingQueue ? (['admin-unverified-songs', getAdminPassword()] as const) : null,
+    ([, password]) => listAdminUnverifiedSongs(password),
+    { keepPreviousData: true },
+  );
 
   useEffect(() => {
     if (steps[currentStep]) {
@@ -218,7 +227,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   };
 
   const getAdminProcessingQueueRedirect = async () => {
-    const songs = await listAdminUnverifiedSongs(getAdminPassword());
+    const songs = prefetchedUnverifiedSongs ?? (await listAdminUnverifiedSongs(getAdminPassword()));
 
     return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
   };
@@ -229,20 +238,17 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
 
     try {
       if (adminUnverifiedSongId) {
-        const saveAdminUnverifiedSong = async () => {
-          await SongDao.store(finalSong!);
-          await shareSong(finalSong!.id);
-          await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
-        };
-
         if (isAdminProcessingQueue) {
-          await saveAdminUnverifiedSong();
+          // Save in the background so the next song can be processed right away.
+          void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
           const nextUrl = await getAdminProcessingQueueRedirect();
           navigate(nextUrl);
           return;
         }
 
-        await saveAdminUnverifiedSong();
+        await SongDao.store(finalSong!);
+        await shareSong(finalSong!.id);
+        await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
         navigate('admin/');
         return;
       }

@@ -1,0 +1,410 @@
+#ARTIST:Blackpink
+#TITLE:Jump
+#CREATOR:Blackpink
+#BPM:290
+#YEAR:2025
+#VIDEO:v=CgCVZdcKcqY
+#GENRE:Kpop
+#LANGUAGE:English, Korean
+#GAP:16187,241379310344
+#ALLKARAOKE_ID:blackpink-jump
+#ALLKARAOKE_SID:6121
+#ALLKARAOKE_LASTUPDATE:2026-08-13T10:58:29.860Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:194
+#P1:Jump
+#MP3:videoplayback.m4a
+#COVER:20240809_Blackpink_Pink_Carpet_09.png
+#BACKGROUND:13.png
+: 19 1 0 I’m 
+: 23 1 0 not 
+: 27 1 0 that 
+: 33 1 0 easy 
+: 42 1 0 to 
+: 47 1 0 tame
+- 48 60
+- 60
+: 79 1 0 You 
+: 83 1 0 should 
+: 87 1 0 see 
+: 90 1 0 me 
+: 95 1 0 under 
+: 100 1 0 these 
+: 106 1 0 lights, 
+: 120 1 0 all 
+: 124 1 0 my 
+: 129 1 0 tears 
+: 133 1 0 turn 
+: 139 1 0 to 
+: 144 1 0 ice
+- 145
+: 152 1 0 That’s 
+: 157 1 0 the 
+: 163 1 0 sweetest 
+: 170 1 0 escape
+- 171 189
+- 189
+: 208 1 0 Every 
+: 212 1 0 time 
+: 217 1 0 the 
+: 221 1 0 feeling 
+: 227 1 0 kicks 
+: 233 1 0 in, 
+: 244 1 0 I 
+: 249 1 0 might 
+: 255 1 0 stay 
+: 260 1 0 through 
+: 266 1 0 the 
+: 269 1 0 night
+- 270 276
+- 276
+: 295 1 0 Bet 
+: 298 1 0 you 
+: 302 1 0 get 
+: 305 1 0 it 
+: 309 1 0 now
+- 310
+: 325 1 0 Rocked 
+: 329 1 0 that, 
+: 333 1 0 didn’t 
+: 337 1 0 I?
+- 338 340
+- 340
+: 359 1 0 Chakgak 
+: 364 1 0 haji 
+: 369 1 0 ma, 
+: 374 1 0 nuga 
+: 384 1 0 nugunji, 
+: 403 1 0 woah-
+: 406 1 0 oh-
+: 409 1 0 oh
+- 410
+: 423 1 0 Think 
+: 426 1 0 you’re 
+: 429 1 0 running 
+: 432 1 0 that?
+- 433 434
+- 434
+: 453 1 0 Guess 
+: 456 1 0 we 
+: 460 1 0 gunnin’ 
+: 465 1 0 back
+- 466
+: 472 1 0 You 
+: 475 1 0 know 
+: 477 1 0 I 
+: 480 1 0 walk 
+: 483 1 0 it, 
+: 486 1 0 yeah, 
+: 489 1 0 I 
+: 492 1 0 talk 
+: 496 1 0 it
+- 497
+: 501 1 0 Nun 
+: 505 1 0 gamgo, 
+: 510 1 0 hana, 
+: 516 1 0 dul, 
+: 526 1 0 set 
+: 534 1 0 (Ttwieo)
+- 535 578
+- 578
+: 597 1 0 Ttwieo
+- 598 642
+- 642
+: 661 1 0 Ttwieo
+- 662 706
+- 706
+: 725 1 0 Ttwieo
+- 726 771
+- 771
+: 790 1 0 Ttwieo
+- 791 792
+- 792
+: 811 1 0 So 
+: 814 1 0 come 
+: 819 1 0 up 
+: 822 1 0 with 
+: 826 1 0 me, 
+: 830 1 0 I’ll 
+: 835 1 0 take 
+: 840 1 0 you 
+: 844 1 0 high
+- 845 857
+- 857
+: 876 1 0 That 
+: 879 1 0 Prima 
+: 884 1 0 donna, 
+: 892 1 0 spice 
+: 898 1 0 up 
+: 903 1 0 your 
+: 909 1 0 life
+- 910 921
+- 921
+: 940 1 0 You 
+: 944 1 0 know 
+: 948 1 0 I 
+: 951 1 0 got 
+: 954 1 0 that 
+: 958 1 0 shit 
+: 962 1 0 that 
+: 966 1 0 you 
+: 971 1 0 like
+- 972 984
+- 984
+: 1003 1 0 So 
+: 1006 1 0 come 
+: 1011 1 0 up 
+: 1014 1 0 with 
+: 1018 1 0 me, 
+: 1022 1 0 run 
+: 1027 1 0 up, 
+: 1030 1 0 uh, 
+: 1036 1 0 jump 
+: 1047 1 0 (Ttwieo)
+- 1048
+: 1061 1 0 Watch 
+: 1065 1 0 me 
+: 1069 1 0 runnin’ 
+: 1074 1 0 up 
+: 1080 1 0 the 
+: 1085 1 0 place
+- 1086
+: 1105 1 0 I’m 
+: 1108 1 0 already 
+: 1115 1 0 stuntin’ 
+: 1126 1 0 and 
+: 1131 1 0 my 
+: 1134 1 0 girls 
+: 1140 1 0 are 
+: 1145 1 0 on 
+: 1150 1 0 the 
+: 1153 1 0 way 
+: 1175 1 0 (Ttwieo)
+- 1176
+: 1185 1 0 Watch 
+: 1189 1 0 me 
+: 1198 1 0 open 
+: 1204 1 0 up 
+: 1210 1 0 the 
+: 1215 1 0 place
+- 1216
+: 1231 1 0 Wanna 
+: 1235 1 0 see 
+: 1240 1 0 you 
+: 1244 1 0 bumpin’, 
+: 1248 1 0 baby, 
+: 1262 1 0 bouncin’ 
+: 1267 1 0 to 
+: 1272 1 0 the 
+: 1277 1 0 bass
+- 1278 1303
+- 1303
+: 1322 1 0 Are 
+: 1325 1 0 you 
+: 1328 1 0 not 
+: 1332 1 0 entertained? 
+: 1342 1 0 (No)
+- 1343
+: 1350 1 0 I 
+: 1354 1 0 ain’t 
+: 1358 1 0 gotta 
+: 1362 1 0 explain 
+: 1374 1 0 (No)
+- 1375
+: 1383 1 0 I’m 
+: 1387 1 0 with 
+: 1391 1 0 all 
+: 1395 1 0 of 
+: 1398 1 0 my 
+: 1401 1 0 sisters 
+: 1410 1 0 (Ah)
+- 1411
+: 1417 1 0 Got 
+: 1420 1 0 ’em 
+: 1423 1 0 going 
+: 1428 1 0 insane, 
+: 1437 1 0 yeah 
+: 1442 1 0 (Yeah)
+- 1443
+: 1448 1 0 You 
+: 1451 1 0 know 
+: 1454 1 0 we 
+: 1457 1 0 on 
+: 1463 1 0 a 
+: 1466 1 0 mission 
+: 1470 1 0 (Yeah)
+- 1471
+: 1477 1 0 All 
+: 1481 1 0 gas, 
+: 1486 1 0 no 
+: 1492 1 0 brakes, 
+: 1502 1 0 yeah 
+: 1509 1 0 (Woo, 
+: 1511 1 0 woo, 
+: 1513 1 0 woo)
+- 1514
+: 1515 1 0 Breaking 
+: 1519 1 0 out 
+: 1522 1 0 of 
+: 1525 1 0 the 
+: 1529 1 0 system
+- 1530
+: 1539 1 0 Breaking 
+: 1544 1 0 out 
+: 1548 1 0 of 
+: 1553 1 0 this 
+: 1558 1 0 cage, 
+: 1566 1 0 yeah
+- 1567
+: 1575 1 0 Bet 
+: 1579 1 0 you 
+: 1582 1 0 get 
+: 1586 1 0 it 
+: 1590 1 0 now
+- 1591
+: 1605 1 0 Ate 
+: 1608 1 0 that, 
+: 1612 1 0 didn’t 
+: 1617 1 0 I?
+- 1618
+: 1637 1 0 Sungan 
+: 1644 1 0 itji 
+: 1650 1 0 ma, 
+: 1654 1 0 nuga 
+: 1665 1 0 nugunji, 
+: 1684 1 0 oh-
+: 1687 1 0 oh-
+: 1690 1 0 oh
+- 1691
+: 1703 1 0 Think 
+: 1707 1 0 you 
+: 1710 1 0 runnin’ 
+: 1714 1 0 that?
+- 1715
+: 1731 1 0 Guess 
+: 1735 1 0 we 
+: 1739 1 0 gunnin’ 
+: 1744 1 0 back
+- 1745
+: 1750 1 0 You 
+: 1752 1 0 know 
+: 1756 1 0 I 
+: 1758 1 0 walk 
+: 1762 1 0 it, 
+: 1766 1 0 yeah, 
+: 1770 1 0 I 
+: 1773 1 0 talk 
+: 1776 1 0 it
+- 1777
+: 1781 1 0 Nun 
+: 1784 1 0 gamgo, 
+: 1790 1 0 hana, 
+: 1798 1 0 dul, 
+: 1806 1 0 set 
+: 1815 1 0 (Ttwieo)
+- 1816 1854
+- 1854
+: 1873 1 0 Ttwi-
+: 1876 1 0 ttwi-
+: 1881 1 0 ttwieo
+- 1882 1923
+- 1923
+: 1942 1 0 Ttwieo
+- 1943 1986
+- 1986
+: 2005 1 0 Ttwieo
+- 2006 2051
+- 2051
+: 2070 1 0 Ttwieo
+- 2071 2072
+- 2072
+: 2091 1 0 So 
+: 2094 1 0 come 
+: 2098 1 0 up 
+: 2101 1 0 with 
+: 2105 1 0 me, 
+: 2109 1 0 I’ll 
+: 2114 1 0 take 
+: 2118 1 0 you 
+: 2124 1 0 high
+: 2157 1 0 That 
+: 2162 1 0 Prima 
+: 2165 1 0 donna, 
+: 2170 1 0 spice 
+: 2176 1 0 up 
+: 2181 1 0 your 
+: 2187 1 0 life
+- 2188 2201
+- 2201
+: 2220 1 0 You 
+: 2223 1 0 know 
+: 2226 1 0 I 
+: 2230 1 0 got 
+: 2235 1 0 that 
+: 2238 1 0 shit 
+: 2243 1 0 that 
+: 2247 1 0 you 
+: 2252 1 0 like
+- 2253 2264
+- 2264
+: 2283 1 0 So 
+: 2286 1 0 come 
+: 2292 1 0 up 
+: 2296 1 0 with 
+: 2300 1 0 me, 
+: 2304 1 0 run 
+: 2307 1 0 up, 
+: 2310 1 0 uh, 
+: 2317 1 0 jump 
+: 2327 1 0 (Ttwieo)
+- 2328
+: 2336 1 0 Watch 
+: 2339 1 0 me 
+: 2345 1 0 runnin’ 
+: 2350 1 0 up 
+: 2354 1 0 the 
+: 2365 1 0 place
+- 2366
+: 2382 1 0 I’m 
+: 2390 1 0 already 
+: 2397 1 0 stuntin’ 
+: 2406 1 0 and 
+: 2412 1 0 my 
+: 2415 1 0 girls 
+: 2421 1 0 are 
+: 2424 1 0 on 
+: 2429 1 0 the 
+: 2433 1 0 way 
+: 2455 1 0 (Ttwieo)
+- 2456
+: 2463 1 0 Watch 
+: 2467 1 0 me 
+: 2473 1 0 open 
+: 2480 1 0 up 
+: 2485 1 0 the 
+: 2492 1 0 place
+- 2493
+: 2511 1 0 Wanna 
+: 2515 1 0 see 
+: 2520 1 0 you 
+: 2524 1 0 bumpin’, 
+: 2529 1 0 baby, 
+: 2538 1 0 bouncin’ 
+: 2545 1 0 to 
+: 2549 1 0 the 
+: 2556 1 0 bass
+- 2557 2788
+- 2788
+: 2807 1 0 BLACKPINK 
+: 2812 1 0 in 
+: 2818 1 0 your 
+: 2826 1 0 area
+- 2827 2938
+- 2938
+: 2957 1 0 Ttwieo
+- 2958 3066
+- 3066
+: 3085 1 0 Ttwieo
+E

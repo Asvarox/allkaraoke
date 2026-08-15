@@ -1,0 +1,343 @@
+#ARTIST:Men At Work
+#TITLE:Overkill
+#CREATOR:rossbr
+#BPM:384,11
+#YEAR:1996
+#VIDEO:v=RY7S6EgSlCI
+#GENRE:New wave, Pop Rock
+#LANGUAGE:English
+#GAP:15159,665850928119
+#ALLKARAOKE_ID:men-at-work-overkill
+#ALLKARAOKE_SID:6101
+#ALLKARAOKE_LASTUPDATE:2026-08-10T17:24:12.533Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:139
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:227
+#COVER:Men at Work - Overkill [CO].jpg
+#MP3:Men at Work - Overkill [Instrumental].mp3
+#AUDIO:Men at Work - Overkill - [Vocals].mp3
+#VOCALS:Men at Work - Overkill [Vocals].mp3
+#INSTRUMENTAL:Men at Work - Overkill - [Vocals].mp3
+#TAGS:key: C# minor
+#COMMENT:v=v=RY7S6EgSlCI,tags=key: C# minor
+#VERSION:1.1.0
+: 26 2 5 I 
+: 30 3 6 can't 
+: 35 3 8 get 
+: 40 4 9 to 
+: 46 8 11 sleep
+- 54 82
+- 82
+: 108 1 2 I 
+: 113 5 8 think 
+: 120 2 9 a
+: 122 3 6 bout 
+: 126 12 4 the 
+: 140 4 7 im
+: 144 5 8 pli
+: 150 13 6 ca
+: 165 10 4 tions
+- 175
+: 194 4 -1 Of 
+: 199 5 4 di
+: 205 5 6 ving 
+: 211 4 8 in 
+: 216 9 9 too 
+: 227 8 11 deep
+- 235 256
+- 256
+: 282 4 1 And 
+: 288 2 7 pos
+: 290 2 9 si
+: 294 9 6 bly 
+: 304 9 4 the 
+: 315 4 6 com
+: 320 5 8 pli
+: 327 12 6 ca
+: 342 7 4 tions
+- 349
+: 372 2 -1 Es
+: 376 2 -1 pe
+: 378 3 4 cial
+: 381 6 8 ly 
+: 390 4 9 at 
+: 397 14 11 night
+- 411 432
+- 432
+: 458 2 1 I 
+: 463 7 9 wor
+: 470 7 8 ry 
+: 478 4 4 o
+: 482 5 3 ver 
+: 491 2 6 si
+: 493 2 4 tu
+: 497 17 6 a
+: 517 10 4 tions
+- 527
+: 546 2 0 I 
+: 551 3 4 know 
+: 556 3 7 we'll 
+: 561 5 8 be 
+: 568 9 9 al
+: 578 11 11 right
+- 589 607
+- 607
+: 633 4 3 Per
+: 637 4 6 haps 
+: 645 4 8 it's 
+: 651 2 6 just 
+: 656 7 4 an 
+: 666 3 6 i
+: 669 3 5 ma
+: 672 2 8 gi
+: 675 17 6 na
+: 694 7 5 tion
+- 701 702
+- 702
+* 728 8 16 Day 
+: 737 3 15 af
+: 741 2 12 ter 
+: 744 29 10 day 
+: 774 3 8 it 
+: 780 3 9 re
+: 783 3 10 ap
+* 788 28 11 pears
+- 816 875
+- 875
+: 901 10 16 Night 
+: 912 4 11 af
+: 916 3 16 ter 
+: 922 18 8 night 
+: 942 4 10 my 
+: 948 5 11 heart
+: 954 4 12 beat
+- 958
+* 974 28 13 shows 
+: 1004 3 8 the 
+: 1010 38 11 fear
+- 1048
+: 1061 26 8 Ghosts 
+: 1093 3 10 ap
+: 1098 14 8 pear 
+: 1114 3 7 and 
+: 1119 33 6 fade 
+: 1154 7 7 a
+: 1163 81 5 way
+- 1244 1318
+- 1318
+: 1344 1 6 A
+: 1346 2 8 long 
+: 1354 3 6 be
+: 1358 4 8 tween 
+: 1362 3 9 the 
+: 1366 8 11 sheets
+- 1374 1412
+- 1412
+: 1438 3 7 On
+: 1442 3 9 ly 
+: 1446 6 7 brings 
+: 1454 7 4 e
+: 1465 4 6 xas
+: 1471 6 7 pe
+: 1478 9 6 ra
+: 1490 9 4 tion
+- 1499
+: 1520 3 -1 It's 
+: 1525 3 4 time 
+: 1531 2 5 to 
+: 1535 5 6 walk 
+: 1544 6 8 the 
+: 1553 7 11 streets
+- 1560 1594
+- 1594
+: 1620 6 8 Smell 
+: 1627 2 9 the 
+: 1642 4 11 des
+: 1648 9 9 pe
+: 1657 9 6 ra
+: 1669 10 4 tion
+- 1679
+: 1695 6 8 At 
+: 1703 6 6 least 
+: 1711 8 4 it's 
+: 1723 3 14 pret
+: 1726 3 15 ty 
+: 1730 19 13 light
+- 1749 1760
+- 1760
+: 1786 3 12 And 
+: 1791 4 8 though 
+: 1797 4 8 there's 
+: 1804 6 1 lit
+: 1810 7 9 tle 
+: 1818 2 8 va
+: 1820 2 10 ri
+: 1822 20 9 a
+: 1845 8 9 tion
+- 1853
+: 1873 3 9 and 
+: 1878 4 9 nul
+: 1882 3 8 li
+: 1885 4 6 fies 
+: 1895 2 11 the 
+: 1898 16 12 light
+- 1914 1935
+- 1935
+: 1961 10 8 From 
+: 1972 4 4 o
+: 1976 5 7 ver
+: 1983 25 9 kill
+- 2008 2029
+- 2029
+* 2055 5 16 Day 
+: 2062 3 12 af
+: 2065 3 11 ter 
+: 2074 26 9 day 
+: 2103 6 7 re
+: 2109 5 8 ap
+* 2116 50 11 pears
+- 2166 2208
+- 2208
+: 2234 5 16 Night 
+: 2242 3 16 af
+: 2246 3 11 ter 
+: 2250 17 8 night 
+: 2269 2 7 my 
+: 2272 8 9 heart
+: 2282 5 11 beat
+- 2287
+* 2301 28 13 shows 
+: 2332 4 15 the 
+* 2339 39 11 fear
+- 2378
+: 2388 28 8 Ghosts 
+: 2422 4 10 ap
+: 2427 12 8 pear 
+: 2441 4 7 and 
+: 2450 34 6 fade 
+: 2486 15 8 a
+: 2501 54 5 way
+- 2555 2558
+- 2558
+: 2584 4 8 Come 
+: 2590 3 10 back 
+: 2595 2 8 a
+: 2597 3 6 no
+: 2601 16 6 ther 
+: 2619 38 9 day
+- 2657 3709
+- 3709
+: 3735 4 4 I 
+: 3741 5 7 can't 
+: 3747 4 9 get 
+: 3752 8 8 to 
+: 3761 9 12 sleep
+- 3770 3793
+- 3793
+: 3819 2 7 I 
+: 3824 7 8 think 
+: 3832 2 6 a
+: 3835 4 7 bout 
+: 3841 9 5 the 
+: 3852 3 8 im
+: 3855 4 9 pli
+: 3862 10 7 ca
+: 3876 16 5 tions
+- 3892
+: 3906 5 4 Of 
+: 3912 5 7 di
+: 3917 5 9 ving 
+: 3924 4 10 in 
+: 3929 10 13 too 
+: 3942 15 12 deep
+- 3957 3970
+- 3970
+: 3996 3 4 And 
+: 4001 4 8 pos
+: 4005 5 6 si
+: 4011 6 7 bly 
+: 4019 8 4 the 
+: 4028 5 6 com
+: 4033 5 8 pli
+: 4040 13 6 ca
+: 4055 14 4 tions
+- 4069
+: 4083 4 4 Es
+: 4089 4 5 pe
+: 4094 4 3 cial
+: 4099 12 7 ly 
+: 4115 6 6 at 
+: 4124 14 4 night
+- 4138 4146
+- 4146
+: 4172 3 5 I 
+: 4177 4 4 wor
+: 4181 4 5 ry 
+: 4187 7 7 o
+: 4194 8 4 ver 
+: 4205 5 6 si
+: 4210 5 4 tu
+: 4216 5 5 a
+: 4221 5 2 tions 
+: 4228 12 -3 that
+- 4240
+: 4259 2 5 I 
+: 4262 6 5 know 
+: 4269 3 5 will 
+: 4274 17 7 be 
+: 4293 11 4 al
+: 4305 16 3 right
+- 4321
+: 4347 3 -3 It's 
+: 4352 6 8 just 
+: 4361 10 9 o
+: 4373 8 9 ver
+: 4382 28 5 kill
+- 4410 4411
+- 4411
+: 4437 10 16 Day 
+: 4449 7 12 af
+: 4456 7 14 ter 
+: 4464 25 10 day 
+: 4493 5 9 re
+: 4498 4 10 ap
+: 4504 61 11 pears
+- 4565 4587
+- 4587
+: 4613 10 16 Night 
+: 4627 3 11 af
+: 4631 4 16 ter 
+: 4637 18 8 night 
+: 4657 3 9 my 
+: 4661 5 11 heart
+: 4668 6 12 beat
+- 4674
+* 4687 29 13 shows 
+: 4718 4 16 the 
+: 4724 37 11 fear
+- 4761
+: 4773 28 8 Ghosts 
+: 4806 6 9 ap
+: 4814 14 7 pear 
+: 4829 3 6 and 
+: 4834 34 5 fade 
+: 4870 15 8 a
+: 4885 44 4 way
+- 4929
+: 4950 29 8 Ghosts 
+: 4984 3 9 ap
+: 4989 13 8 pear 
+: 5004 3 6 and 
+: 5011 33 6 fade 
+: 5046 15 7 a
+: 5061 42 4 way
+- 5103
+: 5127 32 8 Ghosts 
+: 5165 3 9 ap
+: 5170 10 8 pear 
+: 5181 3 6 and 
+: 5188 32 6 fade 
+: 5224 5 7 a
+: 5229 12 4 way
+E

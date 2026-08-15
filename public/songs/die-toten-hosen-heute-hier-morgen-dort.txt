@@ -1,0 +1,361 @@
+#ARTIST:Die Toten Hosen
+#TITLE:Heute hier, morgen dort
+#CREATOR:Achilles
+#BPM:248
+#YEAR:2012
+#VIDEO:v=_WYjkyeBbXU
+#GENRE:Punk Rock
+#LANGUAGE:German
+#GAP:2761,7741935483873
+#ALLKARAOKE_ID:die-toten-hosen-heute-hier-morgen-dort
+#ALLKARAOKE_SID:6119
+#ALLKARAOKE_LASTUPDATE:2026-08-12T13:44:58.025Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:136
+#MP3:Die Toten Hosen - Heute hier, morgen dort.mp3
+: 17 3 13 Heu
+: 21 3 13 te 
+: 26 3 13 hier, 
+: 32 4 10 mor
+: 38 4 8 gen 
+: 43 3 6 dort
+- 46
+: 51 3 15 Bin 
+: 55 4 17 kaum 
+: 60 5 18 da, 
+: 68 2 17 muss 
+: 71 5 15 ich 
+: 77 6 13 fort
+- 83
+: 85 4 6 Hab’ 
+: 90 3 6 mich 
+: 94 4 13 nie
+: 100 4 13 mals 
+: 106 3 13 des
+: 110 5 15 we
+: 117 4 13 gen 
+: 123 4 10 be
+: 128 9 8 klagt
+- 137
+: 154 3 13 Hab’ 
+: 158 3 13 es 
+: 162 5 13 selbst 
+: 168 6 10 so 
+: 175 3 8 ge
+: 179 6 6 wählt
+- 185
+: 188 3 15 Nie 
+: 192 3 17 die 
+: 196 6 18 Jah
+: 203 4 17 re 
+: 209 3 15 ge
+: 213 5 13 zählt
+- 218
+: 223 3 9 Nie 
+: 227 3 6 nach 
+: 231 5 13 Ges
+: 237 5 10 tern 
+: 243 4 6 und 
+: 248 5 8 Mor
+: 254 5 10 gen 
+: 260 4 8 ge
+: 265 8 6 fragt
+- 273 274
+- 274
+: 291 3 15 Manch
+: 295 3 17 mal 
+: 299 6 17 träu
+: 306 5 17 me 
+: 312 3 17 ich 
+: 316 4 17 schwer
+- 320
+: 324 4 15 Und 
+: 329 4 17 dann 
+: 334 5 18 denk’ 
+: 340 5 17 ich 
+: 346 3 15 es 
+: 350 5 13 wär’
+- 355
+: 359 3 13 Zeit 
+: 363 4 13 zu 
+: 368 4 17 blei
+: 373 6 17 ben 
+: 380 3 17 und 
+: 384 5 17 nun
+- 389
+: 392 4 15 Was 
+: 397 4 17 ganz 
+: 402 5 18 And’
+: 408 5 17 res 
+: 414 3 15 zu 
+: 418 4 13 tun
+- 422
+: 427 4 13 So 
+: 432 3 13 ver
+: 436 6 13 geht 
+: 443 4 10 Jahr 
+: 449 3 8 um 
+: 453 4 6 Jahr
+- 457
+: 461 3 15 Und 
+: 466 3 17 es 
+: 471 5 18 ist 
+: 477 4 17 mir 
+: 482 4 15 längst 
+: 487 4 13 klar
+- 491
+: 496 3 10 Dass 
+: 500 3 6 nichts 
+: 504 4 13 bleibt
+- 508
+: 513 3 10 Dass 
+: 517 3 6 nichts 
+: 521 8 8 bleibt, 
+: 530 3 10 wie 
+: 534 4 8 es 
+: 539 8 6 war
+- 547
+: 564 3 13 Dass 
+: 569 3 13 man 
+: 573 6 13 mich 
+: 580 4 10 kaum 
+: 585 3 8 ver
+: 589 4 6 misst
+- 593
+: 598 2 15 Schon 
+: 601 3 17 nach 
+: 605 6 18 Ta
+: 612 4 17 gen 
+: 617 3 15 ver
+: 621 3 13 gisst
+- 624
+: 629 3 9 Wenn 
+: 633 3 6 ich 
+: 637 4 13 längst 
+: 643 5 13 wie
+: 649 3 13 der 
+: 653 5 15 an
+: 659 5 13 ders
+: 665 3 10 wo 
+: 669 5 8 bin
+- 674 675
+- 675
+: 692 4 13 Stört 
+: 697 3 13 und 
+: 701 5 13 küm
+: 707 4 10 mert 
+: 712 3 8 mich 
+: 717 5 6 nicht
+- 722
+: 725 4 15 Viel
+: 730 2 17 leicht 
+: 733 5 18 bleibt 
+: 739 4 17 mein 
+: 744 4 15 Ge
+: 749 5 13 sicht
+- 754
+: 757 3 10 Doch 
+: 761 3 6 dem 
+: 765 3 13 Ei
+: 769 3 13 nen 
+: 773 3 10 o
+: 777 3 6 der 
+: 781 5 8 An
+: 787 5 10 der’n 
+: 793 3 8 im 
+: 797 8 6 Sinn
+- 805
+: 820 4 15 Manch
+: 825 3 17 mal 
+: 829 6 17 träu
+: 836 4 17 me 
+: 841 3 17 ich 
+: 845 4 17 schwer
+- 849
+: 853 3 15 Und 
+: 857 3 17 dann 
+: 861 5 18 denk’ 
+: 867 5 17 ich 
+: 873 3 15 es 
+: 877 3 13 wär’
+- 880
+: 885 3 15 Zeit 
+: 889 3 17 zu 
+: 893 5 17 blei
+: 899 4 17 ben 
+: 904 4 17 und 
+: 909 4 17 nun
+- 913
+: 916 4 15 Was 
+: 921 3 17 ganz 
+: 925 5 18 And’
+: 931 4 17 res 
+: 936 4 15 zu 
+: 941 3 13 tun
+- 944
+: 949 3 13 So 
+: 953 3 13 ver
+: 957 6 13 geht 
+: 964 4 10 Jahr 
+: 969 3 8 um 
+: 973 4 6 Jahr
+- 977
+: 981 3 15 Und 
+: 985 3 17 es 
+: 989 5 18 ist 
+: 995 5 17 mir 
+: 1001 3 15 längst 
+: 1005 4 13 klar
+- 1009
+: 1013 3 10 Dass 
+: 1017 3 6 nichts 
+: 1021 4 13 bleibt
+- 1025
+: 1029 3 10 Dass 
+: 1033 3 6 nichts 
+: 1037 6 8 bleibt, 
+: 1044 3 10 wie 
+: 1048 5 8 es 
+: 1054 8 6 war
+- 1062 1316
+- 1316
+: 1333 4 13 Fragt 
+: 1338 3 13 mich 
+: 1342 4 13 ei
+: 1347 4 10 ner, 
+: 1352 4 8 wa
+: 1357 4 6 rum
+- 1361
+: 1365 3 15 Ich 
+: 1369 3 17 so 
+: 1373 6 18 bin, 
+: 1380 4 17 bleib’ 
+: 1385 3 15 ich 
+: 1389 4 13 stumm
+- 1393
+: 1397 3 8 Denn 
+: 1401 3 6 die 
+: 1405 5 13 Ant
+: 1411 4 13 wort 
+: 1417 3 13 da
+: 1421 5 15 rauf 
+: 1427 4 13 fällt 
+: 1432 4 10 mir 
+: 1437 9 8 schwer
+- 1446
+: 1461 3 13 Denn 
+: 1465 3 13 was 
+: 1469 6 13 neu 
+: 1476 4 10 ist 
+: 1481 3 8 wird 
+: 1485 5 6 alt
+- 1490
+: 1493 3 15 Und 
+: 1497 3 17 was 
+: 1501 4 18 ges
+: 1506 5 17 tern 
+: 1512 4 15 noch 
+: 1517 4 13 galt
+- 1521
+: 1525 3 8 Stimmt 
+: 1529 3 6 schon 
+: 1533 5 13 heut’ 
+: 1540 3 10 o
+: 1544 4 6 der 
+: 1549 4 8 mor
+: 1555 3 10 gen 
+: 1560 3 8 nicht 
+: 1565 6 6 mehr
+- 1571 1572
+- 1572
+: 1589 3 15 Manch
+: 1593 3 17 mal 
+: 1597 4 17 träu
+: 1603 2 17 me 
+: 1608 2 17 ich 
+: 1612 4 17 schwer
+- 1616
+: 1620 4 15 Und 
+: 1625 3 17 dann 
+: 1629 5 18 denk’ 
+: 1635 4 17 ich 
+: 1640 4 15 es 
+: 1645 4 13 wär’
+- 1649
+: 1653 3 13 Zeit 
+: 1657 3 13 zu 
+: 1662 3 17 blei
+: 1667 3 17 ben 
+: 1673 3 17 und 
+: 1677 5 17 nun
+- 1682
+: 1685 3 15 Was 
+: 1689 3 17 ganz 
+: 1693 5 18 And’
+: 1699 3 17 res 
+: 1705 2 15 zu 
+: 1709 4 13 tun
+- 1713
+: 1717 2 13 So 
+: 1721 1 13 ver
+: 1725 4 13 geht 
+: 1731 3 10 Jahr 
+: 1737 2 8 um 
+: 1741 5 6 Jahr
+- 1746
+: 1749 3 15 Und 
+: 1753 3 17 es 
+: 1757 5 18 ist 
+: 1763 4 17 mir 
+: 1768 4 15 längst 
+: 1773 4 13 klar
+- 1777
+: 1781 3 10 Dass 
+: 1785 3 6 nichts 
+: 1789 6 13 bleibt
+- 1795
+: 1797 3 10 Dass 
+: 1801 3 6 nichts 
+: 1805 6 8 bleibt, 
+: 1812 3 10 wie 
+: 1816 4 8 es 
+: 1821 10 6 war
+- 1831
+: 1845 3 13 So 
+: 1849 3 13 ver 
+: 1853 4 13 geht 
+: 1859 5 10 Jahr 
+: 1865 3 8 um 
+: 1869 5 6 Jahr
+- 1874
+: 1877 3 15 Und 
+: 1881 3 17 es 
+: 1885 4 18 ist 
+: 1891 4 17 mir 
+: 1897 3 15 längst 
+: 1901 4 13 klar
+- 1905
+: 1909 3 10 Dass 
+: 1913 3 6 nichts 
+: 1917 4 13 bleibt
+- 1921
+: 1925 3 10 Dass 
+: 1929 3 6 nichts 
+: 1933 6 8 bleibt 
+: 1940 3 10 wie 
+: 1944 4 8 es 
+: 1949 10 6 war
+- 1959
+: 1972 3 10 Dass 
+: 1976 4 6 nichts 
+: 1981 5 13 bleibt
+- 1986
+: 1989 2 10 Dass 
+: 1992 4 6 nichts 
+: 1997 7 8 bleibt 
+: 2005 4 10 wie 
+: 2010 7 8 es 
+: 2018 51 11 war
+E
