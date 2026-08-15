@@ -45,11 +45,14 @@ function CreateOrJoin() {
       <Menu.HelpText>
         Sing together with up to 6 people, each on their own device with their own microphone.
       </Menu.HelpText>
-      <Menu.Button {...register('join-existing-room', () => setMode('join'))} data-test="join-existing-room-button">
-        Join an existing room
-      </Menu.Button>
       <Menu.Button {...register('create-room-button', () => setMode('create'))} data-test="create-room-button">
         Open a new room
+      </Menu.Button>
+      <Menu.Button
+        {...register('join-existing-room', () => setMode('join'))}
+        data-test="join-existing-room-button"
+        size="small">
+        Join an existing room
       </Menu.Button>
       <Menu.Divider />
       <Menu.Button {...register('back-button', () => navigate('menu/'))} size="small" data-test="back-button">

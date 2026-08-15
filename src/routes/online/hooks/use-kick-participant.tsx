@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
+import { trackOnlinePlayerKicked } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineParticipant } from '~/modules/online/protocol/types';
 
@@ -15,6 +16,7 @@ export default function useKickParticipant() {
   const confirmKick = () => {
     if (kickTarget) {
       OnlineClient.send.room.kickPlayer(kickTarget.id);
+      trackOnlinePlayerKicked();
     }
     setKickTarget(null);
   };

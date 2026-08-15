@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
+import { trackOnlineRoomConnectAttempt } from '~/modules/online/client/online-analytics';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 import isE2E from '~/modules/utils/is-e2-e';
@@ -109,8 +110,20 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   public getRoomCode = () => this.roomCode;
   public getName = () => this.name;
 
+  // Tracks the outcome of the current connect() call once, whichever of 'connected'/'rejected'
+  // is reached first — reconnects after that (dropped connection, retries) aren't new attempts.
+  private hasTrackedConnectAttempt = false;
+
   private setStatus = (status: OnlineConnectionStatus, detail?: string) => {
     this.status = status;
+    if (!this.hasTrackedConnectAttempt && (status === 'connected' || status === 'rejected')) {
+      this.hasTrackedConnectAttempt = true;
+      trackOnlineRoomConnectAttempt(
+        this.createRoom ? 'create' : 'join',
+        status === 'connected' ? 'success' : 'failed',
+        detail,
+      );
+    }
     this.onUpdate(status, detail);
   };
 
@@ -124,6 +137,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.name = name;
     this.createRoom = create;
     this.shouldReconnect = true;
+    this.hasTrackedConnectAttempt = false;
     this.openSocket(false);
   };
 

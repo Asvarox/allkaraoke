@@ -8,6 +8,7 @@ import useBlockScroll from '~/modules/hooks/use-block-scroll';
 import useFullscreen from '~/modules/hooks/use-fullscreen';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
+import { trackOnlineDriftSeek, trackOnlineSongStarted } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
@@ -84,6 +85,15 @@ function OnlineSinging({ roomState, song }: Props) {
     return () => clearTimeout(timeout);
   }, [inReadiness, showReadiness]);
 
+  // Host-only songStarted, fired once the room actually starts singing (not at song selection).
+  const startedTrackedRef = useRef(false);
+  useEffect(() => {
+    if (isHost && roomState.phase === 'singing' && !startedTrackedRef.current) {
+      startedTrackedRef.current = true;
+      trackOnlineSongStarted(roomState, song);
+    }
+  }, [isHost, roomState, song]);
+
   const isPaused = roomState.pause !== null;
   const videoGapMs = (song.videoGap ?? 0) * 1_000;
   // The room state object (and with it the anchor's identity) is re-broadcast on unrelated
@@ -124,6 +134,7 @@ function OnlineSinging({ roomState, song }: Props) {
   }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs]);
 
   // Drift correction: seek when local playback strays from the room's expected position
+  const driftSeekTrackedRef = useRef(false);
   useEffect(() => {
     if (anchorServerTimeMs === null || anchorVideoTimeMs === null || isPaused || hasFinished) return;
     const interval = setInterval(async () => {
@@ -142,12 +153,17 @@ function OnlineSinging({ roomState, song }: Props) {
       // 'ended' event on some browsers (Firefox), which would leave the song unfinished
       const durationMs = (player.current.getDuration?.() ?? 0) * 1_000;
       if (durationMs > 0 && expectedMs > durationMs - 2_000) return;
-      if (expectedMs > 0 && Math.abs(currentMs - expectedMs) > ONLINE_DRIFT_THRESHOLD_MS) {
+      const drift = currentMs - expectedMs;
+      if (expectedMs > 0 && Math.abs(drift) > ONLINE_DRIFT_THRESHOLD_MS) {
+        if (!driftSeekTrackedRef.current) {
+          driftSeekTrackedRef.current = true;
+          trackOnlineDriftSeek(song.id, drift);
+        }
         player.current.seekTo(expectedMs / 1_000);
       }
     }, 2_000);
     return () => clearInterval(interval);
-  }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs]);
+  }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs, roomState.roomCode, song.id]);
 
   // Publish score snapshots — the locally computed score is authoritative
   useEffect(() => {

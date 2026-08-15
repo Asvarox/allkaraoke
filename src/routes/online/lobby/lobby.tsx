@@ -17,6 +17,7 @@ import {
   useOnlineSongPreview,
   useOnlineSongVotes,
 } from '~/modules/online/client/hooks';
+import { trackOnlineSongSelected } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { toSongHoverPreview } from '~/modules/online/client/song-preview';
 import { loadSongForUpload, uploadSongToRoom } from '~/modules/online/client/song-transfer';
@@ -129,6 +130,7 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
     try {
       const fullSong = await loadSongForUpload(setup.song);
       await uploadSongToRoom(fullSong, setup.tolerance, previewDraft.current.difficulty);
+      trackOnlineSongSelected(setup.song.id, setup.song.artist, setup.song.title);
       setUploadState('idle');
     } catch (error) {
       setUploadState('error');

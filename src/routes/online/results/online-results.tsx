@@ -1,7 +1,9 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 
 import { DetailedScore, GAME_MODE, SingSetup, Song } from '~/interfaces';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
+import { useIsOnlineHost } from '~/modules/online/client/hooks';
+import { trackOnlineSongEnded } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
@@ -16,6 +18,17 @@ interface Props {
  * online games are not persisted to local high scores. */
 function OnlineResults({ roomState, song }: Props) {
   const { width, height } = useViewportSize();
+  const isHost = useIsOnlineHost();
+
+  // Host-only songEnded, fired once this results screen is reached.
+  const endedTrackedRef = useRef(false);
+  useEffect(() => {
+    if (isHost && !endedTrackedRef.current) {
+      endedTrackedRef.current = true;
+      trackOnlineSongEnded(roomState, song);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- fire once per results mount, not on every roomState broadcast
+  }, []);
 
   const singSetup = useMemo<SingSetup>(
     () => ({
