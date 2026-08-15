@@ -8,6 +8,7 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
+import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
@@ -23,9 +24,8 @@ import { toSongHoverPreview } from '~/modules/online/client/song-preview';
 import { loadSongForUpload, uploadSongToRoom } from '~/modules/online/client/song-transfer';
 import { OnlineRoomState, SongHoverPreview, SongVote } from '~/modules/online/protocol/types';
 import { OnlineSongSelectionContext, OnlineSongSelectionIntegration } from '~/modules/online/song-selection-context';
-import useKickParticipant from '~/routes/online/hooks/use-kick-participant';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
-import LobbySongHeader from '~/routes/online/lobby/lobby-song-header';
+import LobbySongCard from '~/routes/online/lobby/lobby-song-card';
 import ParticipantList from '~/routes/online/lobby/participant-list';
 import OnlineSongPlayersPanel from '~/routes/online/lobby/song-players-panel';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
@@ -36,10 +36,6 @@ interface Props {
   song: Song | null;
   songError: string | null;
 }
-
-// Shared by the on-screen buttons and the descriptors mirrored to remote mics, so the two can't drift
-const LEAVE_CANCEL_LABEL = 'Stay in the room';
-const LEAVE_CONFIRM_LABEL = 'Leave room';
 
 // The lobby ↔ song-browser switch is a "scene change" — a crossfade rather than a cut, but never
 // something to sit through
@@ -55,25 +51,14 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
 
   const [songSelectionOpen, setSongSelectionOpen] = useState(false);
   const [customizeOpen, setCustomizeOpen] = useState(false);
-  const { isKicking, requestKick, kickModal } = useKickParticipant();
-  const [leaveConfirmOpen, setLeaveConfirmOpen] = useState(false);
   const [uploadState, setUploadState] = useState<'idle' | 'uploading' | 'error'>('idle');
   const [uploadError, setUploadError] = useState<string | null>(null);
 
-  // Disabled while any overlay owns the keyboard: the song browser (its own nav), the customize
-  // modal, the kick confirmation or the leave confirmation — otherwise Enter presses there would
-  // also trigger the lobby's remembered actions.
+  // Disabled while the song browser (its own nav) or the customize modal owns the keyboard —
+  // otherwise Enter presses there would also trigger the lobby's remembered actions. The
+  // confirmations (leave, kick) pause this on their own.
   const { register } = useKeyboardNav({
-    enabled: !customizeOpen && !songSelectionOpen && !isKicking && !leaveConfirmOpen,
-  });
-
-  // Keyboard nav for the leave confirmation — enabled only while it's open, so it takes control
-  // over from the lobby at the same moment the lobby's nav is paused.
-  const { register: registerLeave } = useKeyboardNav({
-    enabled: leaveConfirmOpen,
-    onBackspace: () => setLeaveConfirmOpen(false),
-    direction: 'horizontal',
-    title: 'Leave the room?',
+    enabled: !customizeOpen && !songSelectionOpen,
   });
 
   // Share what the host hovers in the song browser (plus difficulty/mode) with the room
@@ -158,7 +143,6 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
       : null);
 
   const leaveRoom = () => {
-    setLeaveConfirmOpen(false);
     navigate('online/', { room: null });
   };
 
@@ -190,141 +174,133 @@ function Lobby({ roomCode, roomState, song, songError }: Props) {
           <MenuWithLogo
             className="border border-white/10 bg-slate-800 sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]"
             data-test="online-lobby">
-            <LobbySongHeader
+            <LobbySongCard
               preview={headerPreview}
               roomCode={roomCode}
               onChooseSong={
                 isHost && !roomState.chart && uploadState !== 'uploading' ? () => setSongSelectionOpen(true) : undefined
               }
-            />
+              footer={
+                <>
+                  <Menu.Divider className="mb-4" />
 
-            <Menu.Divider className="sm:mt-auto" />
+                  {/* The same split the expanded song preview uses for its settings row: singers on
+                      the left where the mic check sits, the actions on the right. */}
+                  <SongPreviewLayout.Split
+                    aside={
+                      <ParticipantList
+                        roomState={roomState}
+                        selfId={selfId}
+                        onEdit={() => setCustomizeOpen(true)}
+                        canKick
+                      />
+                    }>
+                    {(!roomState.chart || !song || songError) && (
+                      <Menu.HelpText data-test="online-selected-song">
+                        {!roomState.chart
+                          ? isHost
+                            ? 'Pick a song to get the party going.'
+                            : hostSongPreview
+                              ? 'The host is browsing — let them know what you think.'
+                              : 'Waiting for the host to pick a song…'
+                          : songError
+                            ? `The song failed to load: ${songError}`
+                            : 'Loading the song…'}
+                      </Menu.HelpText>
+                    )}
 
-            {/* Same split as the expanded song preview's settings row: singers on the left where the
-                mic check sits, the actions on the right. */}
-            <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:gap-12">
-              <div className="w-full shrink-0 sm:w-1/2">
-                <ParticipantList
-                  roomState={roomState}
-                  selfId={selfId}
-                  onEdit={() => setCustomizeOpen(true)}
-                  onKick={requestKick}
-                />
-              </div>
-
-              <div className="flex w-full min-w-0 flex-1 flex-col gap-3 sm:gap-4">
-                {(!roomState.chart || !song || songError) && (
-                  <Menu.HelpText data-test="online-selected-song">
-                    {!roomState.chart
-                      ? isHost
-                        ? 'Pick a song to get the party going.'
-                        : hostSongPreview
-                          ? 'The host is browsing — let them know what you think.'
-                          : 'Waiting for the host to pick a song…'
-                      : songError
-                        ? `The song failed to load: ${songError}`
-                        : 'Loading the song…'}
-                  </Menu.HelpText>
-                )}
-
-                {/* Singers can react to whatever is on screen — the song the host is browsing and the
+                    {/* Singers can react to whatever is on screen — the song the host is browsing and the
                     one they settled on, so the host can still be talked out of it */}
-                {!isHost && hostSongPreview && (
-                  <Menu.ButtonGroup className="w-full gap-2">
-                    <Menu.Button
-                      {...register('online-vote-up', () => voteSong('up'))}
-                      size="small"
-                      className={`flex-1 ${myVote === 'up' ? '' : 'opacity-60'}`}
-                      data-test="online-vote-up">
-                      <Icon icon="ic:baseline-thumb-up" size={5} className="mr-1" />
-                      Sing it!
-                    </Menu.Button>
-                    <Menu.Button
-                      {...register('online-vote-down', () => voteSong('down'))}
-                      size="small"
-                      className={`flex-1 ${myVote === 'down' ? '' : 'opacity-60'}`}
-                      data-test="online-vote-down">
-                      <Icon icon="ic:baseline-thumb-down" size={5} className="mr-1" />
-                      Rather not
-                    </Menu.Button>
-                  </Menu.ButtonGroup>
-                )}
+                    {!isHost && hostSongPreview && (
+                      <Menu.ButtonGroup className="w-full gap-2">
+                        <Menu.Button
+                          {...register('online-vote-up', () => voteSong('up'))}
+                          size="small"
+                          className={`flex-1 ${myVote === 'up' ? '' : 'opacity-60'}`}
+                          data-test="online-vote-up">
+                          <Icon icon="ic:baseline-thumb-up" size={5} className="mr-1" />
+                          Sing it!
+                        </Menu.Button>
+                        <Menu.Button
+                          {...register('online-vote-down', () => voteSong('down'))}
+                          size="small"
+                          className={`flex-1 ${myVote === 'down' ? '' : 'opacity-60'}`}
+                          data-test="online-vote-down">
+                          <Icon icon="ic:baseline-thumb-down" size={5} className="mr-1" />
+                          Rather not
+                        </Menu.Button>
+                      </Menu.ButtonGroup>
+                    )}
 
-                {isHost && (
-                  <Menu.Button
-                    {...register('choose-song', () => setSongSelectionOpen(true), undefined, !roomState.chart)}
-                    disabled={uploadState === 'uploading'}
-                    size={roomState.chart ? 'small' : undefined}
-                    data-test="choose-song-button">
-                    {uploadState === 'uploading'
-                      ? 'Transferring song…'
-                      : roomState.chart
-                        ? 'Change song'
-                        : 'Choose song'}
-                  </Menu.Button>
-                )}
-                {uploadState === 'error' && (
-                  <Menu.HelpText data-test="online-upload-error">Song transfer failed: {uploadError}</Menu.HelpText>
-                )}
+                    {isHost && (
+                      <Menu.Button
+                        {...register('choose-song', () => setSongSelectionOpen(true), undefined, !roomState.chart)}
+                        disabled={uploadState === 'uploading'}
+                        size={roomState.chart ? 'small' : undefined}
+                        data-test="choose-song-button">
+                        {uploadState === 'uploading'
+                          ? 'Transferring song…'
+                          : roomState.chart
+                            ? 'Change song'
+                            : 'Choose song'}
+                      </Menu.Button>
+                    )}
+                    {uploadState === 'error' && (
+                      <Menu.HelpText data-test="online-upload-error">Song transfer failed: {uploadError}</Menu.HelpText>
+                    )}
 
-                {/* The host's call alone — everyone else confirms they're ready once the song
+                    {/* The host's call alone — everyone else confirms they're ready once the song
                     screen is up and the video has loaded */}
-                {isHost && roomState.chart && song && (
-                  <Menu.Button
-                    {...register('start-song', startGame, undefined, true)}
-                    data-test="online-start-song-button"
-                    disabled={!self?.connected || uploadState === 'uploading'}>
-                    Start the song!
-                  </Menu.Button>
-                )}
-                {!isHost && roomState.chart && song && (
-                  <Menu.HelpText data-test="online-waiting-for-start">
-                    Waiting for the host to start the song…
-                  </Menu.HelpText>
-                )}
+                    {isHost && roomState.chart && song && (
+                      <Menu.Button
+                        {...register('start-song', startGame, undefined, true)}
+                        data-test="online-start-song-button"
+                        disabled={!self?.connected || uploadState === 'uploading'}>
+                        Start the song!
+                      </Menu.Button>
+                    )}
+                    {!isHost && roomState.chart && song && (
+                      <Menu.HelpText data-test="online-waiting-for-start">
+                        Waiting for the host to start the song…
+                      </Menu.HelpText>
+                    )}
 
-                {/* Last in the list — leaving is the way out, not something to hit by accident */}
-                <Menu.Divider className="mt-1" />
-                <Menu.Button
-                  {...register('leave-room', () => setLeaveConfirmOpen(true))}
-                  size="small"
-                  data-test="leave-room-button">
-                  Leave room
-                </Menu.Button>
-              </div>
-            </div>
+                    {/* Last in the list — leaving is the way out, not something to hit by accident */}
+                    <Menu.Divider className="mt-1" />
+                    <ConfirmModal
+                      title="Leave the room?"
+                      description={
+                        isHost
+                          ? 'The room stays open and another singer takes over as host.'
+                          : "You'll need the room code to come back."
+                      }
+                      onConfirm={leaveRoom}
+                      dataTestPrefix="online-leave-confirm"
+                      cancelButton={
+                        <ConfirmModal.CancelButton name="stay-in-room">Stay in the room</ConfirmModal.CancelButton>
+                      }
+                      confirmButton={
+                        <ConfirmModal.ConfirmButton name="confirm-leave-room">Leave room</ConfirmModal.ConfirmButton>
+                      }>
+                      {(openLeaveConfirm) => (
+                        <Menu.Button
+                          {...register('leave-room', openLeaveConfirm)}
+                          size="small"
+                          data-test="leave-room-button">
+                          Leave room
+                        </Menu.Button>
+                      )}
+                    </ConfirmModal>
+                  </SongPreviewLayout.Split>
+                </>
+              }
+            />
 
             <CustomizeModal
               open={customizeOpen}
               onClose={() => setCustomizeOpen(false)}
               self={self}
               participants={roomState.participants}
-            />
-
-            {kickModal}
-
-            <ConfirmModal
-              open={leaveConfirmOpen}
-              onClose={() => setLeaveConfirmOpen(false)}
-              title="Leave the room?"
-              description={
-                isHost
-                  ? 'The room stays open and another singer takes over as host.'
-                  : "You'll need the room code to come back."
-              }
-              cancelLabel={LEAVE_CANCEL_LABEL}
-              confirmLabel={LEAVE_CONFIRM_LABEL}
-              dataTestPrefix="online-leave-confirm"
-              cancelButtonProps={registerLeave(
-                'stay-in-room',
-                () => setLeaveConfirmOpen(false),
-                LEAVE_CANCEL_LABEL,
-                true,
-                { control: { type: 'button', label: LEAVE_CANCEL_LABEL, variant: 'back' } },
-              )}
-              confirmButtonProps={registerLeave('confirm-leave-room', leaveRoom, LEAVE_CONFIRM_LABEL, false, {
-                control: { type: 'button', label: LEAVE_CONFIRM_LABEL },
-              })}
             />
           </MenuWithLogo>
         </motion.div>

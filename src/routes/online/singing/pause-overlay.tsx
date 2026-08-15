@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode, useState } from 'react';
+import { ComponentProps, ReactNode } from 'react';
 
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -10,7 +10,6 @@ import OnlineClient from '~/modules/online/client/online-client';
 import { formatScore } from '~/modules/online/format-score';
 import { OnlineParticipant, OnlinePauseState } from '~/modules/online/protocol/types';
 import ParticipantSlot from '~/routes/online/components/participant-slot';
-import useKickParticipant from '~/routes/online/hooks/use-kick-participant';
 import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
 import { InGameInputLag, InGameMicSwitcher } from '~/routes/settings/in-game-audio-settings';
 
@@ -43,20 +42,17 @@ function PauseButton({ name, onClick, isDefault = false, children, ...props }: P
 }
 
 function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, participants }: Props) {
-  const [confirmEndOpen, setConfirmEndOpen] = useState(false);
-  const { isKicking, requestKick, kickModal } = useKickParticipant();
   const leaderboard = useOnlineLeaderboard();
   const selfId = OnlineClient.getParticipantId();
-  const modalOpen = confirmEndOpen || isKicking;
 
-  const { register } = useKeyboardNav({ enabled: !modalOpen });
+  // The confirmations opened from here (end game, kicking a singer) pause this on their own.
+  const { register } = useKeyboardNav();
 
   if (resumeCountdownEndsAt !== null) {
     return <CountdownOverlay endsAtServerTime={resumeCountdownEndsAt} label="Resuming in" />;
   }
 
   const endGame = () => {
-    setConfirmEndOpen(false);
     OnlineClient.send.room.endGame();
   };
 
@@ -81,7 +77,7 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
                 hostId={hostId}
                 showTags
                 showColorDot
-                onKick={requestKick}>
+                canKick>
                 <span className="text-active text-sm [font-variant-numeric:tabular-nums]">
                   {formatScore(leaderboard.find((entry) => entry.participantId === participant.id)?.score ?? 0)}
                 </span>
@@ -97,24 +93,22 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
             Resume song
           </PauseButton>
           {isHost && (
-            <PauseButton name="online-end-game-button" onClick={() => setConfirmEndOpen(true)} size="small">
-              End game for everyone
-            </PauseButton>
+            <ConfirmModal
+              title="End the game?"
+              description="This stops the song for everyone and shows the results."
+              onConfirm={endGame}
+              dataTestPrefix="online-end-game-confirm"
+              cancelButton={<ConfirmModal.CancelButton name="keep-singing">Keep singing</ConfirmModal.CancelButton>}
+              confirmButton={<ConfirmModal.ConfirmButton name="confirm-end-game">End game</ConfirmModal.ConfirmButton>}>
+              {(openEndGameConfirm) => (
+                <PauseButton name="online-end-game-button" onClick={openEndGameConfirm} size="small">
+                  End game for everyone
+                </PauseButton>
+              )}
+            </ConfirmModal>
           )}
         </Menu>
       </KeyboardNavContext>
-      <ConfirmModal
-        open={confirmEndOpen}
-        onClose={() => setConfirmEndOpen(false)}
-        title="End the game?"
-        description="This stops the song for everyone and shows the results."
-        cancelLabel="Keep singing"
-        confirmLabel="End game"
-        dataTestPrefix="online-end-game-confirm"
-        cancelButtonProps={{ onClick: () => setConfirmEndOpen(false) }}
-        confirmButtonProps={{ onClick: endGame }}
-      />
-      {kickModal}
     </Modal>
   );
 }

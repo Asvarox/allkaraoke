@@ -5,6 +5,7 @@ import { Tag } from '~/modules/elements/akui/tag';
 import { PlayerColorDot } from '~/modules/elements/player-color-dot';
 import { useOnlinePlayersStats, useOnlineSongPreview, useOnlineSongVotes } from '~/modules/online/client/hooks';
 import { OnlineParticipant, SongVote } from '~/modules/online/protocol/types';
+import KickPlayer from '~/routes/online/components/kick-player';
 import ParticipantBadges from '~/routes/online/components/participant-badges';
 import { MicCheckSlotShell } from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check/mic-check-slot';
 
@@ -36,8 +37,8 @@ interface Props {
   /** Leading dot in the singer's player color, for rows too tight for the volume bar to read as
    * theirs at a glance. */
   showColorDot?: boolean;
-  /** Host only: kick (and ban) another singer — confirmation handled by the caller. */
-  onKick?: (participant: OnlineParticipant) => void;
+  /** Offer the host the kick (and ban) control on other singers' rows. */
+  canKick?: boolean;
   /** Opens the name/color editor. Rendered on the own row only. */
   onEdit?: () => void;
   /** Screen-specific extras, appended after the tags (a score, a ready tick, …). */
@@ -62,7 +63,7 @@ function ParticipantSlot({
   showVote = false,
   showTags = false,
   showColorDot = false,
-  onKick,
+  canKick = false,
   onEdit,
   children,
   className,
@@ -73,8 +74,8 @@ function ParticipantSlot({
 
   const isSelf = participant.id === selfId;
   const canEdit = onEdit !== undefined && isSelf;
-  const canKick = onKick !== undefined && hostId === selfId && !isSelf;
-  const hasBadges = showPing || showVote || showTags || canEdit || canKick || children !== undefined;
+  const showKick = canKick && hostId === selfId && !isSelf;
+  const hasBadges = showPing || showVote || showTags || canEdit || showKick || children !== undefined;
 
   return (
     <MicCheckSlotShell
@@ -122,16 +123,7 @@ function ParticipantSlot({
               <Icon icon="ic:baseline-edit" className="h-5 w-5" />
             </button>
           )}
-          {canKick && (
-            <button
-              type="button"
-              onClick={() => onKick(participant)}
-              title={`Remove ${participant.name} from the room`}
-              className="flex cursor-pointer items-center opacity-75 hover:text-red-400 hover:opacity-100"
-              data-test={`online-kick-${participant.playerNumber}`}>
-              <Icon icon="ic:baseline-close" className="h-5 w-5" />
-            </button>
-          )}
+          {showKick && <KickPlayer participant={participant} />}
         </ParticipantBadges>
       )}
     </MicCheckSlotShell>

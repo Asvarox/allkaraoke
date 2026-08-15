@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { ReactNode, useCallback, useEffect, useRef } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
+import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import { SongHoverPreview } from '~/modules/online/protocol/types';
 import RoomCodePanel from '~/routes/online/lobby/room-code-panel';
@@ -14,14 +15,16 @@ interface Props {
   roomCode: string;
   /** Host only, and only while nothing is picked — turns the empty thumbnail into the way to pick. */
   onChooseSong?: () => void;
+  /** The row under the card: the room's singers and what everyone can do about the song. */
+  footer: ReactNode;
 }
 
 /** Same 30s window the song list previews when the host hasn't sent an explicit end. */
 const PREVIEW_LENGTH = 30;
 
-/** Top half of the lobby, laid out like the expanded song preview: title/artist (plus the room
- * code) on the left, the looping video — with the song's details under it — on the right. */
-function LobbySongHeader({ preview, roomCode, onChooseSong }: Props) {
+/** The lobby as a song card: the same layout the song list expands a song into, with the room code
+ * under the title and the singers where the mic check sits. */
+function LobbySongCard({ preview, roomCode, onChooseSong, footer }: Props) {
   const player = useRef<VideoPlayerRef | null>(null);
   const video = preview?.video;
   const start = preview?.previewStart ?? 0;
@@ -61,23 +64,22 @@ function LobbySongHeader({ preview, roomCode, onChooseSong }: Props) {
   );
 
   return (
-    <div
-      className="flex flex-col-reverse items-start gap-3 sm:flex-row sm:justify-between sm:gap-12"
-      data-test="online-host-browsing">
-      {/* Half the row, exactly like the singer list below it — so the room code and invite link line
-          up with the singer rows */}
-      <div className="flex w-full min-w-0 flex-col gap-1 sm:w-1/2 sm:gap-3">
+    <SongPreviewLayout
+      expanded
+      title={
         <span
           className="typography text-active truncate text-xl leading-tight font-bold sm:text-3xl"
           data-test="online-host-browsing-title">
           {preview?.title ?? 'No song yet'}
         </span>
+      }
+      artist={
         <span className="typography text-md truncate leading-tight sm:text-xl" data-test="online-host-browsing-artist">
           {preview?.artist ?? 'The host picks the song'}
         </span>
-        <RoomCodePanel roomCode={roomCode} className="mt-2 sm:mt-4" />
-      </div>
-      <div className="flex w-full shrink-0 flex-col gap-2 sm:w-2/5">
+      }
+      underTitle={<RoomCodePanel roomCode={roomCode} className="mt-2 sm:mt-4" />}
+      thumbnail={
         <div className="relative isolate flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl bg-[#2b2b2b]">
           {video ? (
             <VideoPlayer
@@ -104,7 +106,9 @@ function LobbySongHeader({ preview, roomCode, onChooseSong }: Props) {
             <Icon icon="ic:baseline-search" size={12} className="opacity-25" />
           )}
         </div>
-        {preview && (
+      }
+      underThumbnail={
+        preview && (
           <div className="flex flex-wrap items-center gap-1" data-test="online-host-browsing-details">
             {preview.language?.length ? (
               <SongFlag song={{ language: preview.language, artistOrigin: preview.artistOrigin }} chip />
@@ -121,10 +125,11 @@ function LobbySongHeader({ preview, roomCode, onChooseSong }: Props) {
               </Chip>
             )}
           </div>
-        )}
-      </div>
-    </div>
+        )
+      }
+      footer={footer}
+    />
   );
 }
 
-export default LobbySongHeader;
+export default LobbySongCard;
