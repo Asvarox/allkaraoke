@@ -1,0 +1,5 @@
+{
+  "name": "akui",
+  "version": "0.1.0",
+  "types": "./dts-out/entry.d.ts"
+}

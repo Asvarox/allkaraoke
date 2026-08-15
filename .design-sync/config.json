@@ -1,0 +1,15 @@
+{
+  "projectId": "7b76db9d-8dc0-441e-a2d5-a54feffb022d",
+  "pkg": "akui",
+  "globalName": "AKUI",
+  "shape": "storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "entry": ".design-sync/entry.tsx",
+  "tsconfig": "../tsconfig.json",
+  "readmeHeader": ".design-sync/conventions.md",
+  "overrides": {
+    "Button": { "cardMode": "column" },
+    "Menu": { "cardMode": "column" },
+    "Skeleton": { "cardMode": "column" }
+  }
+}

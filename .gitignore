@@ -145,3 +145,12 @@ storybook-static/
 .playwright-cli/
 
 .partykit
+
+# design-sync (Claude Design)
+.design-sync/sb-reference/
+.design-sync/learnings/
+.design-sync/.cache/
+.design-sync/dts-out/
+.design-sync/node_modules
+.ds-sync/
+ds-bundle/
