@@ -17,7 +17,6 @@ export interface OnlineParticipant {
   connected: boolean;
   /** Confirmed "I'm ready to sing" during the readiness phase. Meaningless in any other phase. */
   ready: boolean;
-  playback: OnlinePlaybackStatus;
 }
 
 /** Manifest describing a chart (song txt) transferred as a single gzip+base64 payload. */
@@ -49,6 +48,10 @@ export interface OnlineFinalResult {
   name: string;
   playerNumber: PlayerNumber;
   detailedScore: WireDetailedScore;
+  /** True when this result was fabricated by the room (from the last leaderboard snapshot)
+   * because the singer never published a final score before the host ended the game — the
+   * ratio in `detailedScore` is not a real performance and should not be rendered as one. */
+  incomplete?: boolean;
 }
 
 export interface OnlinePauseState {
@@ -71,6 +74,9 @@ export interface OnlineRoomState {
   phase: OnlinePhase;
   participants: OnlineParticipant[];
   hostId: string | null;
+  /** Pitch-matching tolerance for scoring, an integer from ONLINE_MIN_TOLERANCE to
+   * ONLINE_MAX_TOLERANCE (see consts.ts) — same scale as the local game's difficulty picker,
+   * higher is more forgiving. Set by the host via selection.setChart. */
   tolerance: number;
   chart: ChartManifest | null;
   /** Server timestamp when the song starts whether or not everyone has confirmed. Set for the

@@ -116,9 +116,9 @@ export function createRpcProxy<T extends HandlerMap>(
                 const request: RpcRequest = { t: 'rpc', ns, method, args, id };
                 try {
                   transport.sendEvent(request);
-                } catch (err) {
+                } catch (error) {
                   cleanup();
-                  reject(err instanceof Error ? err : new Error(String(err)));
+                  reject(error instanceof Error ? error : new Error(String(error)));
                 }
               });
             };

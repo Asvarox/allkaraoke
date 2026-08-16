@@ -36,3 +36,11 @@ export const ONLINE_STATS_PUBLISH_MS = 1_000;
 export const ONLINE_FORCE_RESULTS_MS = 5_000;
 
 export const ONLINE_ROOM_CODE_LENGTH = 5;
+
+/** Longest name a participant can set for themselves (matches the local game's MAX_NAME_LENGTH). */
+export const ONLINE_MAX_NAME_LENGTH = 20;
+
+/** Supported range for the pitch-matching tolerance — same scale as the local game's difficulty
+ * picker (1 = Hard .. 3 = Easy in production, up to 6 for the dev-only debug difficulties). */
+export const ONLINE_MIN_TOLERANCE = 1;
+export const ONLINE_MAX_TOLERANCE = 6;

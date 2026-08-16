@@ -7,14 +7,14 @@ export interface RpcContext {
 }
 
 /** A read-only server handler that returns data without side effects. */
-export interface QueryDefinition<TArgs extends any[], TReturn> {
+export interface QueryDefinition<TArgs extends unknown[], TReturn> {
   type: 'query';
   permission: 'read' | 'write';
   handler: (context: RpcContext, ...args: TArgs) => TReturn | Promise<TReturn>;
 }
 
 /** A server handler that performs a side-effecting operation. */
-export interface MutationDefinition<TArgs extends any[], TReturn = void> {
+export interface MutationDefinition<TArgs extends unknown[], TReturn = void> {
   type: 'mutation';
   permission: 'read' | 'write';
   handler: (context: RpcContext, ...args: TArgs) => TReturn | Promise<TReturn>;
@@ -72,12 +72,12 @@ export interface RpcSubscribe<TChannels extends AnySubscriptionChannels = AnySub
   channel: keyof TChannels;
 }
 
-/** Server → Client: push updated data to all subscribers of a channel. */
-export interface RpcPublish<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {
-  t: 'rpc-pub';
-  channel: keyof TChannels;
-  data: TChannels[keyof TChannels];
-}
+/** Server → Client: push updated data to all subscribers of a channel. Distributed over TChannels'
+ * keys so each channel is paired with its own data type, instead of `channel` and `data` being
+ * independently any-channel / any-data. */
+export type RpcPublish<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> = {
+  [C in keyof TChannels]: { t: 'rpc-pub'; channel: C; data: TChannels[C] };
+}[keyof TChannels];
 
 /** Client → Server: unsubscribe from a named push channel. */
 export interface RpcUnsubscribe<TChannels extends AnySubscriptionChannels = AnySubscriptionChannels> {

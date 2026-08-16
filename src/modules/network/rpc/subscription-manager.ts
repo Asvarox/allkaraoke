@@ -8,7 +8,6 @@ type ChannelCallback<TChannels extends AnySubscriptionChannels, C extends keyof 
  * data per channel, and re-subscribes automatically after reconnect via `setSendFunctions`.
  * Generic over the channel map so each feature (remote-mic, online) can run its own instance. */
 export class ClientSubscriptionManager<TChannels extends AnySubscriptionChannels> {
-  private subscriberCounts: Partial<Record<keyof TChannels, number>> = {};
   private latestData: Partial<TChannels> = {};
   private callbacks = new Map<keyof TChannels, Set<ChannelCallback<TChannels, any>>>();
 
@@ -24,10 +23,8 @@ export class ClientSubscriptionManager<TChannels extends AnySubscriptionChannels
     this.sendSubscribeFn = sendSubscribe;
     this.sendUnsubscribeFn = sendUnsubscribe;
 
-    for (const [channel, count] of Object.entries(this.subscriberCounts) as [keyof TChannels, number][]) {
-      if (count > 0) {
-        sendSubscribe(channel);
-      }
+    for (const channel of this.callbacks.keys()) {
+      sendSubscribe(channel);
     }
   };
 
@@ -39,16 +36,13 @@ export class ClientSubscriptionManager<TChannels extends AnySubscriptionChannels
 
   /** Subscribe to a channel. Delivers cached data immediately if available. Returns an unsubscribe function. */
   public subscribe = <C extends keyof TChannels>(channel: C, callback: ChannelCallback<TChannels, C>): (() => void) => {
-    const count = this.subscriberCounts[channel] ?? 0;
-    if (count === 0) {
+    let channelCallbacks = this.callbacks.get(channel);
+    if (!channelCallbacks) {
+      channelCallbacks = new Set();
+      this.callbacks.set(channel, channelCallbacks);
       this.sendSubscribeFn?.(channel);
     }
-    this.subscriberCounts[channel] = count + 1;
-
-    if (!this.callbacks.has(channel)) {
-      this.callbacks.set(channel, new Set());
-    }
-    this.callbacks.get(channel)!.add(callback as ChannelCallback<TChannels, any>);
+    channelCallbacks.add(callback as ChannelCallback<TChannels, any>);
 
     if (channel in this.latestData) {
       callback(this.latestData[channel] as TChannels[C]);
@@ -61,13 +55,12 @@ export class ClientSubscriptionManager<TChannels extends AnySubscriptionChannels
     channel: C,
     callback: ChannelCallback<TChannels, C>,
   ): void => {
-    this.callbacks.get(channel)?.delete(callback as ChannelCallback<TChannels, any>);
-    const count = this.subscriberCounts[channel] ?? 0;
-    if (count <= 1) {
-      this.subscriberCounts[channel] = 0;
+    const channelCallbacks = this.callbacks.get(channel);
+    if (!channelCallbacks) return;
+    channelCallbacks.delete(callback as ChannelCallback<TChannels, any>);
+    if (channelCallbacks.size === 0) {
+      this.callbacks.delete(channel);
       this.sendUnsubscribeFn?.(channel);
-    } else {
-      this.subscriberCounts[channel] = count - 1;
     }
   };
 
