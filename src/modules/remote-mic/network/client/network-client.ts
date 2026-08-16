@@ -134,6 +134,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.currentName = name;
     if (this.transport) {
       this.transport.clearAllListeners();
+      this.pingPong.stop();
       this.transport.close();
     }
     this.transport = lcRoomId.startsWith('w')
@@ -160,6 +161,11 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
         this.connectToServer(lcRoomId, silent);
       },
       (reason) => {
+        // Stop the ping loop as soon as the transport closes — it re-arms itself via
+        // connectToServer() on reconnect, but must not keep scheduling pings against a dead
+        // transport in the meantime (or forever, on a final disconnect).
+        this.pingPong.stop();
+
         if (reason === 'unavailable-id') {
           // create new id if the old one is taken
           this.setClientId(v4());

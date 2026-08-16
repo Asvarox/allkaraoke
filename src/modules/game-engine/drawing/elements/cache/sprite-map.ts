@@ -74,6 +74,8 @@ const spriteMap = {
   ...getAllPlayerSprites(1),
   ...getAllPlayerSprites(2),
   ...getAllPlayerSprites(3),
+  ...getAllPlayerSprites(4),
+  ...getAllPlayerSprites(5),
   noteStar: {
     draw: (ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number) =>
       drawRawNote(ctx, x, y, w, h, 'star'),

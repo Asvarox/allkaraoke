@@ -1,3 +1,5 @@
+import { useCallback } from 'react';
+
 import events from '~/modules/game-events/game-events';
 import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import PlayersManager from '~/modules/players/players-manager';
@@ -27,19 +29,19 @@ export default function useMicSwitcher() {
     return '';
   });
 
-  const setMic = (input: InputSource) => {
+  const setMic = useCallback((input: InputSource) => {
     PlayersManager.getPlayers().forEach((player) =>
       player.changeInput(MicrophoneInputSource.inputName, input.channel, input.deviceId),
     );
-  };
+  }, []);
 
-  const cycleMic = () => {
+  const cycleMic = useCallback(() => {
     const currentIndex = Microphone.list.findIndex((mic) => mic.label === selectedMic);
 
     if (currentIndex > -1) {
       setMic(Microphone.list[nextIndex(Microphone.list, currentIndex)]);
     }
-  };
+  }, [Microphone, selectedMic, setMic]);
 
   return { Microphone, selectedMic, setMic, cycleMic };
 }

@@ -21,15 +21,20 @@ export default function CopyLinkField({ link, inputDataTest, buttonDataTest }: P
   }, [copied]);
 
   const copyLink = () => {
-    void navigator.clipboard?.writeText(link);
-    setCopied(true);
+    if (!navigator.clipboard) return;
+    navigator.clipboard
+      .writeText(link)
+      .then(() => setCopied(true))
+      .catch(() => {
+        // Clipboard write was rejected (e.g. missing permission) — leave the button as "Copy".
+      });
   };
 
   return (
     <div className="flex w-full items-stretch">
       <input
         className="box-border w-full border-none bg-gray-600 p-3 text-sm text-white"
-        disabled
+        readOnly
         value={link}
         data-test={inputDataTest}
       />
