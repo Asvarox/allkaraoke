@@ -35,7 +35,8 @@
     "src/modules/network/rpc/server-subscription-registry.ts",
     "src/modules/network/rpc/subscription-manager.ts",
     "src/modules/network/rpc/types.ts",
-    "src/modules/network/rpc/use-subscription-factory.ts"
+    "src/modules/network/rpc/use-subscription-factory.ts",
+    "src/modules/elements/akui/tag.tsx"
   ],
   "ignoreDependencies": [
     "vite-tsconfig-paths",
