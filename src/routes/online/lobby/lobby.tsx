@@ -43,6 +43,8 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   const self = useOnlineSelf();
 
   const [customizeOpen, setCustomizeOpen] = useState(false);
+  const [starting, setStarting] = useState(false);
+  const [startError, setStartError] = useState<string | null>(null);
 
   // Disabled while the customize modal owns the keyboard — otherwise Enter presses there would also
   // trigger the lobby's remembered actions. The confirmations (leave, kick) pause this on their own.
@@ -63,7 +65,13 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   // The host starts the song on their own — everyone confirms readiness on the singing screen after,
   // with the video already loaded, rather than pre-agreeing to it here
   const startGame = () => {
-    void OnlineClient.rpc.room.startGame().catch(console.warn);
+    if (starting) return;
+    setStarting(true);
+    setStartError(null);
+    void OnlineClient.rpc.room
+      .startGame()
+      .catch((error: unknown) => setStartError(error instanceof Error ? error.message : String(error)))
+      .finally(() => setStarting(false));
   };
 
   // The room reports the selected song as the preview once the host stops browsing — fall back to
@@ -154,8 +162,12 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                       : 'Choose song'}
                 </Menu.Button>
               )}
-              {upload.state === 'error' && (
-                <Menu.HelpText data-test="online-upload-error">Song transfer failed: {upload.error}</Menu.HelpText>
+              {(upload.state === 'error' || startError) && (
+                <Menu.HelpText data-test="online-upload-error">
+                  {upload.state === 'error'
+                    ? `Song transfer failed: ${upload.error}`
+                    : `Failed to start: ${startError}`}
+                </Menu.HelpText>
               )}
 
               {/* The host's call alone — everyone else confirms they're ready once the song
@@ -164,8 +176,8 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                 <Menu.Button
                   {...register('start-song', startGame, undefined, true)}
                   data-test="online-start-song-button"
-                  disabled={!self?.connected || upload.state === 'uploading'}>
-                  Start the song!
+                  disabled={!self?.connected || upload.state === 'uploading' || starting}>
+                  {starting ? 'Starting…' : 'Start the song!'}
                 </Menu.Button>
               )}
               {!isHost && roomState.chart && song && (

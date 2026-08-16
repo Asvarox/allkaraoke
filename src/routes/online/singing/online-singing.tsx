@@ -208,9 +208,9 @@ function OnlineSinging({ roomState, song }: Props) {
     if (hasFinished) return;
     setHasFinished(true);
     OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
-    OnlineClient.send.scoring.publishFinal(
-      GameState.getPlayerDetailedScore(selfNumber) as unknown as WireDetailedScore,
-    );
+    const [actual, max] = GameState.getPlayerDetailedScore(selfNumber);
+    const detailedScore: WireDetailedScore = [{ ...actual }, { ...max }];
+    OnlineClient.send.scoring.publishFinal(detailedScore);
   }, [hasFinished, selfNumber]);
 
   // The host ended the game — wrap up and publish the final score so the results can show
@@ -265,7 +265,6 @@ function OnlineSinging({ roomState, song }: Props) {
             <ReadinessOverlay
               participants={roomState.participants}
               selfId={selfId}
-              hostId={roomState.hostId}
               readinessDeadline={roomState.readinessDeadline}
               isHost={isHost}
               // The room has already committed to starting — drop the chrome and show the full set

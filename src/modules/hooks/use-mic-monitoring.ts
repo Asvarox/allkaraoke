@@ -11,10 +11,15 @@ import InputManager from '~/modules/game-engine/input/input-manager';
 export default function useMicMonitoring() {
   useEffect(() => {
     const wasMonitoring = InputManager.monitoringStarted();
-    InputManager.startMonitoring();
+    const startPromise = InputManager.startMonitoring();
     return () => {
       if (!wasMonitoring) {
-        InputManager.stopMonitoring();
+        // startMonitoring() only flips the "monitoring" flag once its own async work settles. If we
+        // called stopMonitoring() immediately, a startMonitoring() that finishes later would win the
+        // race and leave monitoring running after this component is gone. Wait for it to settle first.
+        void startPromise.finally(() => {
+          void InputManager.stopMonitoring();
+        });
       }
     };
   }, []);

@@ -15,7 +15,9 @@ function CountdownOverlay({ endsAtServerTime, label = 'Starting in' }: Props) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setRemainingMs(OnlineClient.serverTimeToLocal(endsAtServerTime) - Date.now());
+      const remaining = OnlineClient.serverTimeToLocal(endsAtServerTime) - Date.now();
+      setRemainingMs(remaining);
+      if (remaining <= 0) clearInterval(interval);
     }, 100);
     return () => clearInterval(interval);
   }, [endsAtServerTime]);

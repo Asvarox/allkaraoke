@@ -164,8 +164,9 @@ function CodeStep({
   const { register } = useKeyboardNav({ onBackspace: onBack });
 
   const submit = async () => {
+    if (checking) return;
     const roomCode = code.trim().toLowerCase();
-    if (roomCode.length < 3) {
+    if (roomCode.length < ONLINE_ROOM_CODE_LENGTH) {
       inputRef.current?.triggerValidationError('Enter the room code');
       return;
     }

@@ -13,6 +13,16 @@ import storage from '~/modules/utils/storage';
 const PARTICIPANT_ID_KEY = 'ONLINE_PARTICIPANT_ID';
 export const ONLINE_NAME_KEY = 'ONLINE_PARTICIPANT_NAME';
 
+const RECONNECT_BASE_DELAY_MS = 1_000;
+const RECONNECT_MAX_DELAY_MS = 15_000;
+
+/** Exponential backoff with full jitter, capped, so a room outage doesn't get hammered by every
+ * client reconnecting in lockstep on a fixed interval. */
+const getReconnectDelayMs = (attempt: number): number => {
+  const cap = Math.min(RECONNECT_MAX_DELAY_MS, RECONNECT_BASE_DELAY_MS * 2 ** attempt);
+  return Math.random() * cap;
+};
+
 // E2E runs against the local `partykit dev` server started by the Playwright webServer config
 export const getOnlinePartyKitServer = (): string =>
   isE2E() ? 'ws://localhost:1999' : (import.meta.env.VITE_APP_ONLINE_PARTYKIT_URL ?? 'ws://localhost:1999');
@@ -59,7 +69,7 @@ class OnlineTransport extends Listener<[IncomingMessage]> {
     }
   };
 
-  public isConnected = () => (this.connection?.readyState ?? Infinity) < 2;
+  public isConnected = () => this.connection?.readyState === WebSocket.OPEN;
 
   public close = () => {
     const connection = this.connection;
@@ -76,6 +86,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private createRoom = false;
   private status: OnlineConnectionStatus = 'disconnected';
   private shouldReconnect = false;
+  private reconnectAttempts = 0;
   private clockOffsetMs = 0;
   private pingPong = new PingPongTracker();
 
@@ -128,16 +139,17 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   };
 
   public connect = (roomCode: string, name: string, { create = false } = {}) => {
-    const lcRoomCode = roomCode.toLowerCase();
-    if (this.transport?.isConnected() && this.roomCode === lcRoomCode) {
+    const normalizedRoomCode = roomCode.toLowerCase();
+    if (this.transport?.isConnected() && this.roomCode === normalizedRoomCode) {
       return;
     }
     this.disconnect();
-    this.roomCode = lcRoomCode;
+    this.roomCode = normalizedRoomCode;
     this.name = name;
     this.createRoom = create;
     this.shouldReconnect = true;
     this.hasTrackedConnectAttempt = false;
+    this.reconnectAttempts = 0;
     this.openSocket(false);
   };
 
@@ -169,11 +181,13 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
         }
         if (this.shouldReconnect) {
           this.setStatus('reconnecting');
+          const delay = getReconnectDelayMs(this.reconnectAttempts);
+          this.reconnectAttempts += 1;
           setTimeout(() => {
             if (this.shouldReconnect && this.transport === transport) {
               this.openSocket(true);
             }
-          }, 1_500);
+          }, delay);
         } else {
           this.setStatus('disconnected');
         }
@@ -183,6 +197,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     transport.addListener((message) => {
       if (message.t === 'joined') {
         this.setStatus('connected');
+        this.reconnectAttempts = 0;
         this.pingPong.start(this.sendPing);
         this.subscriptions.setSendFunctions(
           (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel }),
@@ -253,15 +268,21 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 }
 
 /** Checks (over HTTP) whether a room code was actually opened, without joining it. */
+const CHECK_ROOM_EXISTS_TIMEOUT_MS = 5_000;
+
 export const checkRoomExists = async (roomCode: string): Promise<boolean> => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), CHECK_ROOM_EXISTS_TIMEOUT_MS);
   try {
     const base = getOnlinePartyKitServer().replace(/^ws/, 'http');
-    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`);
+    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`, { signal: controller.signal });
     if (!response.ok) return false;
     const data = (await response.json()) as { created?: boolean };
     return !!data.created;
   } catch {
     return false;
+  } finally {
+    clearTimeout(timeout);
   }
 };
 

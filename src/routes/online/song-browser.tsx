@@ -27,7 +27,9 @@ function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
     }, 300);
     return {
       onSongFocused: (song: SongPreview | undefined) => {
-        previewDraft.current = { ...previewDraft.current, song };
+        // A difficulty picked for the previously focused song doesn't carry over to a different one
+        const sameSong = previewDraft.current.song?.id === song?.id;
+        previewDraft.current = { song, difficulty: sameSong ? previewDraft.current.difficulty : undefined };
         send();
       },
       onSettingsChange: (song: SongPreview, difficulty: string) => {

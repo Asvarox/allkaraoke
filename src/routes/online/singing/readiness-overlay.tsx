@@ -15,7 +15,6 @@ import ParticipantSlot from '~/routes/online/components/participant-slot';
 interface Props {
   participants: OnlineParticipant[];
   selfId: string;
-  hostId: string | null;
   /** Server timestamp the song starts at regardless of who has confirmed. */
   readinessDeadline: number | null;
   isHost: boolean;
@@ -34,7 +33,7 @@ const READINESS_EXIT_S = 0.7;
  * one — a row per singer with a tick once they've confirmed, and an autostart counting down for
  * whoever walked away from their keyboard.
  */
-function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isHost, starting }: Props) {
+function ReadinessOverlay({ participants, selfId, readinessDeadline, isHost, starting }: Props) {
   const connected = participants.filter((participant) => participant.connected);
   const self = participants.find((participant) => participant.id === selfId);
   const everyoneReady = starting || (connected.length > 0 && connected.every((participant) => participant.ready));
@@ -115,7 +114,7 @@ function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isH
           <MenuButton onClick={confirm} disabled={self?.ready} data-test="online-ready-button">
             {self?.ready ? "You're ready — waiting for the others" : "I'm ready!"}
           </MenuButton>
-          {isHost && hostId === selfId && (
+          {isHost && (
             <MenuButton
               size="small"
               onClick={() => void OnlineClient.rpc.room.cancelStart().catch(console.warn)}

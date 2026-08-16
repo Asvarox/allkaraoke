@@ -48,9 +48,30 @@ export const compressChart = async (txt: string): Promise<string> => {
   return bytesToBase64(new Uint8Array(buffer));
 };
 
+/** Decompresses incrementally, bailing out with ChartTooLargeError as soon as the
+ * decompressed byte count exceeds the limit, so a small malicious payload can't
+ * force us to buffer an unbounded amount of decompressed data in memory. */
 export const decompressChart = async (data: string): Promise<string> => {
   const stream = new Blob([base64ToBytes(data) as BlobPart]).stream().pipeThrough(new DecompressionStream('gzip'));
-  return await new Response(stream).text();
+  const reader = stream.getReader();
+  const decoder = new TextDecoder();
+  let text = '';
+  let bytes = 0;
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      bytes += value.byteLength;
+      if (bytes > ONLINE_MAX_CHART_BYTES) {
+        throw new ChartTooLargeError(bytes);
+      }
+      text += decoder.decode(value, { stream: true });
+    }
+    text += decoder.decode();
+    return text;
+  } finally {
+    void reader.cancel().catch(() => {});
+  }
 };
 
 export interface ChartTransferSource {
@@ -88,7 +109,10 @@ export const unpackChartTransfer = async (manifest: ChartManifest, data: string)
   let txt: string;
   try {
     txt = await decompressChart(data);
-  } catch {
+  } catch (err) {
+    if (err instanceof ChartTooLargeError) {
+      throw err;
+    }
     throw new ChartValidationError('Chart data is corrupted (failed to decompress)');
   }
   const bytes = chartByteSize(txt);

@@ -30,13 +30,17 @@ export class RpcServer<T extends HandlerMap, TChannels extends AnySubscriptionCh
 
   /** Validates, permission-checks, and dispatches an incoming RPC request, then sends the response. */
   public handleMessage = async (message: RpcRequest, sender: RpcSenderInterface): Promise<void> => {
-    const namespace = this.handlers[message.ns];
+    const namespace = Object.prototype.hasOwnProperty.call(this.handlers, message.ns)
+      ? this.handlers[message.ns]
+      : undefined;
     if (!namespace) {
       sender.send({ t: 'rpc-res', id: message.id, error: `Unknown namespace: ${message.ns}` });
       return;
     }
 
-    const definition: AnyDefinition | undefined = namespace[message.method];
+    const definition: AnyDefinition | undefined = Object.prototype.hasOwnProperty.call(namespace, message.method)
+      ? namespace[message.method]
+      : undefined;
     if (!definition) {
       sender.send({
         t: 'rpc-res',

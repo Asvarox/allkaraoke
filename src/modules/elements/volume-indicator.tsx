@@ -1,4 +1,4 @@
-import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
+import { ComponentProps, Ref, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
 
 import styles from '~/modules/game-engine/drawing/styles';
@@ -19,33 +19,32 @@ const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z
 interface Props extends ComponentProps<typeof VolumeIndicatorBase> {
   playerNumber: PlayerNumber;
   volume: number;
+  ref?: Ref<HTMLDivElement | null>;
 }
 
 /**
  * Volume bar driven by an explicitly supplied level, for singers whose audio isn't on this device
  * (online rooms report their own volume). For local mics use `PlayerMicCheck` instead.
  */
-export const VolumeIndicator = forwardRef(
-  ({ volume, playerNumber, ...rest }: Props, ref: ForwardedRef<HTMLDivElement | null>) => {
-    const percent = `${Math.min(1, volume * 20)}`;
-    const color = usePlayerColor(playerNumber);
+export const VolumeIndicator = ({ volume, playerNumber, ref, ...rest }: Props) => {
+  const percent = `${Math.min(1, volume * 20)}`;
+  const color = usePlayerColor(playerNumber);
 
-    return (
-      // Same two-element shape as PlayerMicCheck below, and for the same reason: the scale has to sit
-      // on an inner element. Scaling the rounded, clipping box itself squashes its corner radius along
-      // with it, and the bar then bleeds past the corners of the row it's sitting in.
-      <VolumeIndicatorBase {...rest} ref={ref}>
-        <div
-          className="h-full w-full origin-right"
-          style={{
-            transform: `scaleX(${percent})`,
-            background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
-          }}
-        />
-      </VolumeIndicatorBase>
-    );
-  },
-);
+  return (
+    // Same two-element shape as PlayerMicCheck below, and for the same reason: the scale has to sit
+    // on an inner element. Scaling the rounded, clipping box itself squashes its corner radius along
+    // with it, and the bar then bleeds past the corners of the row it's sitting in.
+    <VolumeIndicatorBase {...rest} ref={ref}>
+      <div
+        className="h-full w-full origin-right"
+        style={{
+          transform: `scaleX(${percent})`,
+          background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+        }}
+      />
+    </VolumeIndicatorBase>
+  );
+};
 
 export const PlayerMicCheck = ({
   playerNumber,

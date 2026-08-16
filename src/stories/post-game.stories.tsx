@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { ComponentProps } from 'react';
-import { expect } from 'storybook/test';
+import { expect, userEvent } from 'storybook/test';
 import { ValuesType } from 'utility-types';
 
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
@@ -164,7 +164,15 @@ export const OnlinePostGameStory: Story = {
     cameraEnabled: false,
   },
   play: async ({ canvas }) => {
-    await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
+    // Wait for the results animation to finish before the "Next"/highscores button is clickable.
+    const nextButton = await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 });
+    await expect(nextButton).toBeVisible();
+
+    await userEvent.click(nextButton);
+
+    // With highScoresEnabled=false, clicking through must call onClickSongSelection directly rather
+    // than advancing to the local-only high-scores step.
+    await expect(canvas.queryByTestId('highscores-container')).not.toBeInTheDocument();
   },
 };
 

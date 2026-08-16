@@ -54,13 +54,17 @@ export const useOnlineConnectionStatus = (): [OnlineConnectionStatus, string | u
     OnlineClient.getStatus(),
     undefined,
   ]);
-  useEffect(
-    () =>
-      OnlineClient.addListener((newStatus, detail) => {
-        setStatus([newStatus, detail]);
-      }),
-    [],
-  );
+  useEffect(() => {
+    // The status may have changed between the initial render and this effect running (e.g. React
+    // StrictMode's double-render, or a slow-mounting subtree), so re-sync before subscribing.
+    setStatus((current) => {
+      const latest = OnlineClient.getStatus();
+      return current[0] === latest ? current : [latest, undefined];
+    });
+    return OnlineClient.addListener((newStatus, detail) => {
+      setStatus([newStatus, detail]);
+    });
+  }, []);
   return status;
 };
 

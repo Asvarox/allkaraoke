@@ -6,7 +6,7 @@ import { OnlineRoomState } from '~/modules/online/protocol/types';
 import { defineMutation, defineQuery } from './define';
 import { RpcServer } from './rpc-server';
 import { ClientSubscriptionManager } from './subscription-manager';
-import { ExtractContract, RpcRequest } from './types';
+import { ExtractContract, RpcRequest, RpcResponse } from './types';
 
 describe('RpcServer (feature-agnostic core)', () => {
   const handlers = {
@@ -17,18 +17,24 @@ describe('RpcServer (feature-agnostic core)', () => {
   };
 
   const createServer = (permission: 'read' | 'write' = 'write') => {
-    const sent: any[] = [];
+    const sent: RpcResponse[] = [];
     const server = new RpcServer(
       handlers,
       () => permission,
       () => undefined,
       () => undefined,
     );
-    const sender = { peer: 'peer-1', send: (payload: any) => sent.push(payload) };
+    const sender = { peer: 'peer-1', send: (payload: unknown) => sent.push(payload as RpcResponse) };
     return { server, sender, sent };
   };
 
-  const request = (ns: string, method: string, args: any[]): RpcRequest => ({ t: 'rpc', ns, method, args, id: 'id1' });
+  const request = (ns: string, method: string, args: unknown[]): RpcRequest => ({
+    t: 'rpc',
+    ns,
+    method,
+    args,
+    id: 'id1',
+  });
 
   it('dispatches requests and returns results', async () => {
     const { server, sender, sent } = createServer();

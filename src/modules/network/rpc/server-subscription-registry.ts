@@ -45,7 +45,7 @@ export class ServerSubscriptionRegistry<TChannels extends AnySubscriptionChannel
     this.setLastValue(channel, data);
     const subscribers = this.subscribers.get(channel);
     if (!subscribers?.size) return;
-    const message = { t: 'rpc-pub', channel, data } as RpcPublish<TChannels>;
+    const message: RpcPublish<TChannels> = { t: 'rpc-pub', channel, data };
     subscribers.forEach((peerId) => send(peerId, message));
   };
 

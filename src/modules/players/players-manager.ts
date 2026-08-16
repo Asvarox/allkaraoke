@@ -26,6 +26,19 @@ export class PlayerEntity {
     public name?: string,
   ) {}
 
+  public setNumber = (newNumber: PlayerNumber) => {
+    const oldNumber = this.number;
+    if (oldNumber === newNumber) return;
+    this.number = newNumber;
+    events.playerNumberChanged.dispatch(newNumber, oldNumber);
+  };
+
+  public clone = (): PlayerEntity => {
+    const cloned = new PlayerEntity(this.number, { ...this.input }, this.name);
+    cloned.nameOverride = this.nameOverride;
+    return cloned;
+  };
+
   public changeInput = (input: InputSourceNames, channel = 0, deviceId?: string) => {
     let restartMonitoringPromise: null | Promise<void> = null;
     if (InputManager.monitoringStarted()) {
@@ -63,6 +76,11 @@ export class PlayerEntity {
 
   public static fromJSON = (data: ReturnType<PlayerEntity['toJSON']>) =>
     new PlayerEntity(data.number, data.input, data.name);
+}
+
+export interface PlayersSnapshot {
+  players: PlayerEntity[];
+  minPlayerNumber: number;
 }
 
 class PlayersManager {
@@ -213,6 +231,35 @@ class PlayersManager {
       this.storePlayers();
       events.playerRemoved.dispatch(player);
     }
+  };
+
+  /** Captures the full roster (including each player's input, name, and nameOverride) plus the
+   * current minimum-player setting, so it can be restored later with {@link restore}. Players are
+   * deep-cloned so later mutations to the live roster don't leak into the snapshot. */
+  public snapshot = (): PlayersSnapshot => ({
+    players: this.players.map((player) => player.clone()),
+    minPlayerNumber: this.minPlayerNumber,
+  });
+
+  /** Atomically replaces the roster and minimum-player setting with a previously captured
+   * {@link snapshot}. Unlike calling removePlayer/addPlayer to reach the same roster, this never
+   * triggers removePlayer's auto-add-to-minimum side effect. */
+  public restore = (snapshot: PlayersSnapshot) => {
+    const outgoingPlayers = this.players;
+    const previousMinPlayerNumber = this.minPlayerNumber;
+
+    this.players = snapshot.players;
+    this.minPlayerNumber = snapshot.minPlayerNumber;
+    this.storePlayers();
+
+    if (previousMinPlayerNumber !== snapshot.minPlayerNumber) {
+      events.minPlayerNumberChanged.dispatch(previousMinPlayerNumber, snapshot.minPlayerNumber);
+    }
+    outgoingPlayers.forEach((player) => events.playerRemoved.dispatch(player));
+    this.players.forEach((player) => {
+      events.playerAdded.dispatch(player.number);
+      events.playerInputChanged.dispatch(player.number, undefined, player.input);
+    });
   };
 
   public getInputs = () => this.getPlayers().map((player) => player.input);

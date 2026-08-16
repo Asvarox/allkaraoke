@@ -2,7 +2,7 @@ import type * as Party from 'partykit/server';
 
 import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
-import { ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
+import { ONLINE_MAX_NAME_LENGTH, ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 
@@ -45,10 +45,14 @@ export default class OnlineRoomServer implements Party.Server {
           );
         },
         persist: (state) => {
-          void this.room.storage.put(STATE_KEY, state);
+          this.room.storage.put(STATE_KEY, state).catch((error) => {
+            console.error('Failed to persist online room state', error);
+          });
         },
         scheduleTtl: (deadline) => {
-          void this.room.storage.setAlarm(deadline);
+          this.room.storage.setAlarm(deadline).catch((error) => {
+            console.error('Failed to schedule online room TTL alarm', error);
+          });
         },
         disconnect: (participantId) => {
           for (const connection of this.room.getConnections()) {
@@ -90,7 +94,9 @@ export default class OnlineRoomServer implements Party.Server {
 
   onConnect(connection: Party.Connection, ctx: Party.ConnectionContext) {
     const url = new URL(ctx.request.url);
-    const name = url.searchParams.get('name') ?? '';
+    // Bound the URL-derived name before it enters room state — a query param is attacker-controlled
+    // and would otherwise bypass the length limit `room.setName` enforces.
+    const name = (url.searchParams.get('name') ?? '').slice(0, ONLINE_MAX_NAME_LENGTH);
     const create = url.searchParams.get('create') === '1';
     // The participant id travels separately from the connection id: connection ids are unique
     // per socket, so a stale socket of the same participant closing (quick refresh, React

@@ -10,8 +10,8 @@ interface Props {
 export default function RoomCode({ code, className, ...props }: Props) {
   return (
     <strong className={cn('subtle-focus inline-flex gap-3 rounded-md px-3 py-1 uppercase', className)} {...props}>
-      {code.split('').map((letter, i) => (
-        <span key={i}>{letter}</span>
+      {code.split('').map((letter, index) => (
+        <span key={index}>{letter}</span>
       ))}
     </strong>
   );
