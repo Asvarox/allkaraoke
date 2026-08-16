@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useEffect, useRef } from 'react';
+import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { Chip } from '~/modules/elements/akui/chip';
@@ -30,28 +30,21 @@ function LobbySongCard({ preview, roomCode, onChooseSong, footer }: Props) {
   const start = preview?.previewStart ?? 0;
   const end = preview?.previewEnd ?? start + PREVIEW_LENGTH;
 
-  // Driven by the ref (rather than the `video` prop) so the preview window can be bounded — that's
-  // what makes ENDED fire, which is what loops it, exactly as the song list does. The YouTube iframe
-  // API may not be up on the first run (getInternalPlayer() is null until then), so keep retrying.
+  // The player only exists while there is a video, so each new one starts unready
+  const [playerReady, setPlayerReady] = useState(false);
   useEffect(() => {
-    if (!video) return;
-    let retry: ReturnType<typeof setTimeout> | undefined;
-    let cancelled = false;
-    const load = () => {
-      if (cancelled) return;
-      try {
-        player.current?.loadVideoById({ videoId: video, startSeconds: start, endSeconds: end });
-        player.current?.playVideo();
-      } catch {
-        retry = setTimeout(load, 200);
-      }
-    };
-    load();
-    return () => {
-      cancelled = true;
-      clearTimeout(retry);
-    };
-  }, [video, start, end]);
+    if (!video) setPlayerReady(false);
+  }, [video]);
+
+  // Driven by the ref (rather than the `video` prop) so the preview window can be bounded — that's
+  // what makes ENDED fire, which is what loops it, exactly as the song list does. Held until the
+  // player reports itself ready: commands sent before that are posted to an iframe that isn't
+  // listening yet, and are dropped without an error, leaving the thumbnail black for good.
+  useEffect(() => {
+    if (!video || !playerReady) return;
+    player.current?.loadVideoById({ videoId: video, startSeconds: start, endSeconds: end });
+    player.current?.playVideo();
+  }, [video, start, end, playerReady]);
 
   const onVideoStateChange = useCallback(
     (state: VideoState) => {
@@ -89,6 +82,7 @@ function LobbySongCard({ preview, roomCode, onChooseSong, footer }: Props) {
               height={270}
               volume={preview?.volume}
               disablekb
+              onReady={() => setPlayerReady(true)}
               onStateChange={onVideoStateChange}
             />
           ) : onChooseSong ? (

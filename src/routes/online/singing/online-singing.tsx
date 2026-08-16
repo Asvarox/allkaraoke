@@ -51,6 +51,7 @@ function OnlineSinging({ roomState, song }: Props) {
   const player = useRef<PlayerRef | null>(null);
   const [videoStatus, setVideoStatus] = useState(VideoState.UNSTARTED);
   const videoStatusRef = useRef(videoStatus);
+  const [videoStarted, setVideoStarted] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
 
   const selfId = OnlineClient.getParticipantId();
@@ -177,6 +178,8 @@ function OnlineSinging({ roomState, song }: Props) {
   const onStatusChange = (state: VideoState) => {
     setVideoStatus(state);
     videoStatusRef.current = state;
+    // Latched, not derived: a pause mid-song must not throw the still back over the video
+    if (state === VideoState.PLAYING) setVideoStarted(true);
     if (hasFinished) return;
     OnlineClient.send.playback.reportStatus(mapVideoState(state));
 
@@ -231,6 +234,30 @@ function OnlineSinging({ roomState, song }: Props) {
   return (
     <LayoutGame>
       <div className="relative">
+        {/* The video is mounted and cued from the start, so until it actually rolls the screen would
+            be showing a held black frame. Cover it with the song's still — the same blurred thumbnail
+            the local game holds through its readiness wait — and hand over to the video once it
+            genuinely starts playing. */}
+        <div
+          // z-20 clears the game overlay (notes and lyrics, z-10 inside the player) while the still
+          // is up, and stays under the leaderboard (z-30) and the readiness screen (z-40)
+          className={`pointer-events-none fixed inset-0 z-20 h-full w-full bg-black transition-opacity duration-300 ${
+            videoStarted ? 'opacity-0' : 'opacity-100'
+          }`}
+          data-test="background-container">
+          <div
+            className="absolute inset-0 scale-105 bg-cover bg-center blur-[10px]"
+            style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')` }}
+          />
+          <div className="relative flex flex-col items-stretch px-10 py-10">
+            <span className="typography text-2xl 2xl:text-3xl" data-test="song-artist">
+              {song.artist}
+            </span>
+            <span className="typography text-active text-3xl 2xl:text-5xl" data-test="song-title">
+              {song.title}
+            </span>
+          </div>
+        </div>
         {/* The video below is already mounted and cued at this point — the room only rolls it once
             everyone has confirmed (or the autostart fires) */}
         <AnimatePresence>

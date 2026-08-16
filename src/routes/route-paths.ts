@@ -11,6 +11,9 @@ const routePaths = {
   MENU: 'menu',
   // Room code travels via the `room` query param to avoid dynamic-segment prerender/404 handling
   ONLINE: 'online',
+  // The host's song browser — its own route so the back button returns to the lobby. Rendered by the
+  // same `Online` route entry (see app.tsx), which is what keeps the room connection alive across it
+  ONLINE_PICK_SONG: 'online/pick-song',
   JUKEBOX: 'jukebox',
   HISTORY: 'history',
   SELECT_INPUT: 'select-input',

@@ -9,6 +9,7 @@ import {
   useContext,
   useState,
 } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Modal from '~/modules/elements/modal';
@@ -40,6 +41,10 @@ type ConfirmModalButtonProps = Omit<ComponentProps<typeof Menu.Button>, 'childre
 /** The label mirrored to remote mics, when the button's content is plain text. */
 const labelOf = (children: ReactNode) => (typeof children === 'string' ? children : undefined);
 
+/** Side by side and sized to their labels once there's room for a row — the pair sits at the end of
+ * the dialog rather than spanning it. Stacked and full width on a phone, as everything else is. */
+const buttonClassName = (className?: string) => twMerge('sm:w-auto sm:min-w-40', className);
+
 function CancelButton({ name, children, isDefault = true, ...props }: ConfirmModalButtonProps) {
   const { register, cancel } = useConfirmModalContext('CancelButton');
   const label = labelOf(children);
@@ -50,7 +55,8 @@ function CancelButton({ name, children, isDefault = true, ...props }: ConfirmMod
       {...register(name, cancel, label, isDefault, {
         control: { type: 'button', label: label ?? 'Cancel', variant: 'back' },
       })}
-      size="small">
+      size="small"
+      className={buttonClassName(props.className)}>
       {children}
     </Menu.Button>
   );
@@ -67,7 +73,8 @@ function ConfirmButton({ name, children, isDefault = false, ...props }: ConfirmM
         // Forward arrow (the default) reads as "proceed", matching the other "move on" buttons.
         control: { type: 'button', label: label ?? 'Confirm' },
       })}
-      size="small">
+      size="small"
+      className={buttonClassName(props.className)}>
       {children}
     </Menu.Button>
   );
@@ -161,10 +168,15 @@ function ConfirmModalRoot({
       <Modal onClose={cancel} open={isOpen} withPortal level="nested">
         {isOpen && (
           <ConfirmModalContext value={{ register, confirm, cancel }}>
-            <Menu spacing="tight" data-test={dataTestPrefix ? `${dataTestPrefix}-modal` : undefined}>
+            {/* The same surface the screens underneath are made of (the lobby card, the pause menu),
+                so a confirmation reads as one of them rather than a system dialog. */}
+            <Menu
+              spacing="tight"
+              className="border border-white/10 bg-slate-800"
+              data-test={dataTestPrefix ? `${dataTestPrefix}-modal` : undefined}>
               <Menu.Header>{title}</Menu.Header>
               <Menu.HelpText>{description}</Menu.HelpText>
-              <Menu.ButtonGroup className="flex-col gap-2 sm:flex-row">
+              <Menu.ButtonGroup className="flex-col gap-2 sm:flex-row sm:justify-end">
                 {cancelButton}
                 {confirmButton}
               </Menu.ButtonGroup>

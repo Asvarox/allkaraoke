@@ -66,10 +66,19 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await expect(guestPages.onlineLobbyPage.chooseSongButton).not.toBeVisible();
   });
 
-  await test.step('Host browses songs — everyone sees what they hover, with mode and difficulty', async () => {
+  await test.step('The song browser is its own history entry — back returns to the lobby', async () => {
     await pages.onlineLobbyPage.goToSongSelection();
+    // the language step only shows on the first visit, so it's taken here rather than below
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
     await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.onlineLobbyPage.expectNotToBeVisible();
+    await expect(page).toHaveURL(/\/online\/pick-song\//);
+    await page.goBack();
+    await pages.onlineLobbyPage.expectToBeVisible();
+  });
+
+  await test.step('Host browses songs — everyone sees what they hover, with mode and difficulty', async () => {
+    await pages.onlineLobbyPage.goToSongSelection();
     await pages.songListPage.openPreviewForSong(song.ID);
 
     // the other singers get a song-card-like preview with the video and details
@@ -81,6 +90,8 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   });
 
   await test.step('Guests can react to the browsed song — the host sees the votes', async () => {
+    // the singer's lobby puts the keyboard on the vote, not on leaving the room
+    await expect(guestPages.onlineLobbyPage.voteUpButton).toHaveAttribute('data-focused', 'true');
     await guestPages.onlineLobbyPage.voteUp();
     await expect(pages.onlineLobbyPage.songPlayerElement(1)).toHaveAttribute('data-vote', 'up');
     await expect(pages.onlineLobbyPage.songPlayerElement(1)).toContainText(guestName);
@@ -183,6 +194,55 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
 
     await guestPages.onlineLobbyPage.leaveRoomAndConfirm();
     await guestPages.onlineLobbyPage.expectNotToBeVisible();
+  });
+
+  await guestPage.context().close();
+});
+
+test('Online mode: the host ends the song from the pause menu', async ({ page, context, browser }) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = initialise(guestPage, guestPage.context(), browser);
+  await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
+  await guestPages.onlineSetupPage.submitRoomCode();
+  await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
+  await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+
+  await test.step('Host picks a song and starts it', async () => {
+    await pages.onlineLobbyPage.goToSongSelection();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.openPreviewForSong(song.ID);
+    await pages.songPreviewPage.goNext();
+    await page.getByTestId('play-song-button').click();
+
+    await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
+    await pages.onlineLobbyPage.startSong();
+    await page.getByTestId('online-ready-button').click();
+    await guestPage.getByTestId('online-ready-button').click();
+    await expect(page.getByTestId('online-leaderboard')).toBeVisible({ timeout: 15_000 });
+  });
+
+  await test.step('Ending the game mid-song takes everyone to the results, not a stuck screen', async () => {
+    await expect(async () => {
+      if (!(await page.getByTestId('online-pause-overlay').isVisible())) {
+        await page.keyboard.press('Escape');
+      }
+      await expect(page.getByTestId('online-pause-overlay')).toBeVisible({ timeout: 3_000 });
+    }).toPass({ timeout: 20_000 });
+
+    await page.getByTestId('online-end-game-button').click();
+    await page.getByTestId('online-end-game-confirm-modal').getByRole('button', { name: 'End game' }).click();
+
+    // The screen the game was ended from has to go: it's the pause menu of a song that no longer runs
+    await expect(page.getByTestId('online-pause-overlay')).not.toBeVisible({ timeout: 30_000 });
+    await expect(page.getByTestId('online-results')).toBeVisible({ timeout: 30_000 });
+    await expect(guestPage.getByTestId('online-results')).toBeVisible({ timeout: 30_000 });
+    await expect(page.getByTestId('player-0-name')).toHaveText(hostName);
   });
 
   await guestPage.context().close();

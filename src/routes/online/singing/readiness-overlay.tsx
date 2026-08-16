@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -45,15 +45,25 @@ function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isH
   };
   useKeyboard({ accept: confirm }, !self?.ready, [self?.ready]);
 
-  // Same music the local game plays while it waits, and the same sting when the wait is over
+  // Same music the local game plays while it waits, and the same sting when the wait is over. The
+  // sting is tied to the wait actually ending — not to this effect being torn down, which also
+  // happens when the overlay simply goes away (the host cancels the start, a re-mount in dev).
+  const wasWaiting = useRef(false);
   useEffect(() => {
-    if (everyoneReady) return;
-    void waitForReadinessMusic.play(false);
-    return () => {
+    if (!everyoneReady) {
+      wasWaiting.current = true;
+      void waitForReadinessMusic.play(false);
+      return;
+    }
+    if (wasWaiting.current) {
+      wasWaiting.current = false;
       if (waitForReadinessMusic.playing()) waitFinished.play();
-      waitForReadinessMusic.stop();
-    };
+    }
+    waitForReadinessMusic.stop();
   }, [everyoneReady]);
+
+  // Leaving with the music still going (cancelled start, a lost connection) stops it, silently
+  useEffect(() => () => waitForReadinessMusic.stop(), []);
 
   const [remainingS, setRemainingS] = useState<number | null>(null);
   useEffect(() => {
@@ -78,7 +88,7 @@ function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isH
           Waiting for all singers to click <strong>&quot;Ready&quot;</strong>
         </Typography>
       )}
-      <div className="flex w-full max-w-120 flex-col gap-4 px-4">
+      <div className="flex w-full max-w-140 flex-col gap-4 px-4">
         {connected.map((participant) => (
           <div
             className="flex items-center gap-5"
@@ -101,7 +111,7 @@ function ReadinessOverlay({ participants, selfId, hostId, readinessDeadline, isH
       </div>
 
       {!everyoneReady && (
-        <div className="flex w-full max-w-120 flex-col gap-3 px-4">
+        <div className="flex w-full max-w-140 flex-col gap-3 px-4">
           <MenuButton onClick={confirm} disabled={self?.ready} data-test="online-ready-button">
             {self?.ready ? "You're ready — waiting for the others" : "I'm ready!"}
           </MenuButton>

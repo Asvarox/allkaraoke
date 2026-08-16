@@ -1,23 +1,33 @@
-import { AnimatePresence, motion } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
+import { useEffect, useRef, useState } from 'react';
+import { useRoute } from 'wouter';
 
+import { SongPreview } from '~/interfaces';
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import { useOnlineConnectionStatus, useOnlineRoomState, useReportPlayerStats } from '~/modules/online/client/hooks';
+import {
+  useIsOnlineHost,
+  useOnlineConnectionStatus,
+  useOnlineRoomState,
+  useReportPlayerStats,
+} from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
 import storage from '~/modules/utils/storage';
 import { getStoredOnlineName } from '~/routes/online/hooks/use-online-name';
 import useOnlineSong from '~/routes/online/hooks/use-online-song';
+import useSongUpload from '~/routes/online/hooks/use-song-upload';
 import Lobby from '~/routes/online/lobby/lobby';
 import { ONLINE_CREATED_ROOM_KEY, ONLINE_SETUP_DONE_KEY } from '~/routes/online/online';
 import OnlineResults from '~/routes/online/results/online-results';
 import OnlineSetupWizard from '~/routes/online/setup-wizard';
 import OnlineSinging from '~/routes/online/singing/online-singing';
+import OnlineSongBrowser from '~/routes/online/song-browser';
+import routePaths from '~/routes/route-paths';
 
 interface Props {
   roomCode: string;
@@ -26,6 +36,10 @@ interface Props {
 // Long enough to register as a handover between two full screens, short enough that the readiness
 // screen is up right away
 const ROOM_TRANSITION_S = 0.3;
+
+// Opening the song browser is a "scene change" the host asked for — a slightly longer crossfade with
+// a zoom, as opposed to the plain fade the room's own swaps get
+const SCENE_TRANSITION_S = 0.4;
 
 function OnlineRoom({ roomCode }: Props) {
   const navigate = useSmoothNavigate();
@@ -86,6 +100,46 @@ function OnlineRoom({ roomCode }: Props) {
   const { song, error: songError } = useOnlineSong(status === 'connected' ? roomState?.chart : null);
   useReportPlayerStats(status === 'connected', selfPlayerNumber ?? 0);
 
+  const isHost = useIsOnlineHost();
+  const [songBrowserRoute] = useRoute(routePaths.ONLINE_PICK_SONG);
+  // Only the host browses songs — everyone else gets the lobby, whatever the URL says
+  const isBrowsingSongs = songBrowserRoute && isHost;
+  // Set once this session pushed the browser entry itself, so closing it can pop that entry instead
+  // of stacking a second lobby one. False when the browser was opened by a reload or a shared link.
+  const pushedSongBrowser = useRef(false);
+
+  const openSongBrowser = () => {
+    pushedSongBrowser.current = true;
+    // Not smooth: the lobby ↔ browser crossfade below is the transition
+    navigate('online/pick-song/', {}, { smooth: false });
+  };
+  const closeSongBrowser = () => {
+    if (pushedSongBrowser.current) {
+      pushedSongBrowser.current = false;
+      // Same as the back button — the song browser only ever replaces the URL, so this lands on the lobby
+      global.history.back();
+    } else {
+      navigate('online/', {}, { smooth: false, replace: true });
+    }
+  };
+
+  // A guest on the browser URL (a shared link, or the host handing over while they browse) is shown
+  // the lobby — so put the URL back to it as well
+  useEffect(() => {
+    if (songBrowserRoute && !isBrowsingSongs && status === 'connected' && roomState) {
+      closeSongBrowser();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- `navigate` is a new function every render
+  }, [songBrowserRoute, isBrowsingSongs, status, roomState]);
+
+  // The chart is transferred once the host picks it, which happens as the browser is closing —
+  // so it's the lobby that reports the transfer, and this has to live above both
+  const upload = useSongUpload();
+  const onSongPicked = (picked: SongPreview, tolerance: number, difficulty?: string) => {
+    closeSongBrowser();
+    void upload.upload(picked, tolerance, difficulty);
+  };
+
   const { register } = useKeyboardNav();
 
   if (!setupDone) {
@@ -130,29 +184,42 @@ function OnlineRoom({ roomCode }: Props) {
   // confirms, so it's the same view — just held before the first note
   const isSinging = (roomState.phase === 'readiness' || roomState.phase === 'singing') && song !== null;
   const isResults = roomState.phase === 'results' && !!roomState.finalResults?.length && song !== null;
-  const view = isSinging ? 'singing' : isResults ? 'results' : 'lobby';
+  const view = isSinging ? 'singing' : isResults ? 'results' : isBrowsingSongs ? 'song-browser' : 'lobby';
+  const isSceneChange = view === 'song-browser';
 
   // The room switches screens on its own schedule (the host starts the song and everyone's lobby is
-  // replaced by the readiness screen), so the swap is crossfaded rather than cut — being yanked out
-  // of a screen you didn't click away from should at least look deliberate. `wait` keeps the two
-  // fullscreen views from overlapping; the readiness wait easily absorbs the handover.
+  // replaced by the readiness screen), so the incoming screen fades in rather than cutting — being
+  // yanked out of a screen you didn't click away from should at least look deliberate.
+  //
+  // Deliberately NOT an AnimatePresence exit: the outgoing screen is a live subtree (leaderboard
+  // subscriptions, `layout` animations, the readiness and pause overlays). If any motion child in it
+  // fails to report its exit as complete — which happens when one unmounts mid-exit — `mode="wait"`
+  // waits forever: the old screen stays in the DOM at opacity 0, the new one never mounts, and the
+  // room is stuck on an invisible, frozen screen until a reload. Dropping the old screen at once
+  // costs a crossfade and cannot hang.
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={view}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: ROOM_TRANSITION_S }}>
-        {isSinging && song ? (
-          <OnlineSinging roomState={roomState} song={song} />
-        ) : isResults && song ? (
-          <OnlineResults roomState={roomState} song={song} />
-        ) : (
-          <Lobby roomCode={roomCode} roomState={roomState} song={song} songError={songError} />
-        )}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={view}
+      initial={{ opacity: 0, scale: isSceneChange ? 1.04 : 1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: isSceneChange ? SCENE_TRANSITION_S : ROOM_TRANSITION_S, ease: 'easeInOut' }}>
+      {isSinging && song ? (
+        <OnlineSinging roomState={roomState} song={song} />
+      ) : isResults && song ? (
+        <OnlineResults roomState={roomState} song={song} />
+      ) : isBrowsingSongs ? (
+        <OnlineSongBrowser preselectedSong={roomState.chart?.songId ?? null} onSongSelected={onSongPicked} />
+      ) : (
+        <Lobby
+          roomCode={roomCode}
+          roomState={roomState}
+          song={song}
+          songError={songError}
+          upload={upload}
+          onChooseSong={openSongBrowser}
+        />
+      )}
+    </motion.div>
   );
 }
 
