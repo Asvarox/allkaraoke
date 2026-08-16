@@ -51,7 +51,9 @@
   },
   "scripts": {
     "start": "vite",
-    "dev": "pnpm start",
+    "dev": "pnpm run --parallel \"/^dev:.+/\"",
+    "dev:vite": "pnpm start",
+    "dev:partykit": "pnpm partykit:dev",
     "start:mock": "VITE_APP_OFFLINE=true vite",
     "start:https": "HTTPS=true vite",
     "start:production": "vite preview --port 3010",
@@ -74,6 +76,7 @@
     "shared-song:upsert-fixture": "pnpm unverified-song:upsert-fixture",
     "test-ct": "pnpm playwright test -c playwright-ct.config.mts",
     "peerjs": "pnpm node peer-js-server.js",
+    "partykit:dev": "partykit dev",
     "youtube:duration": "pnpm tsx scripts/get-youtube-video-duration.ts",
     "songs:backfill-duration": "pnpm tsx scripts/backfill-song-durations.ts",
     "visual-diff:report": "pnpm tsx scripts/visual-regression/buildDiffReport.ts",
