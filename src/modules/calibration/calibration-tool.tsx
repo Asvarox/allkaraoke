@@ -29,7 +29,9 @@ export const CalibrationTool = () => {
   }, [currentStatus]);
 
   return (
-    <div className="flex flex-col items-center justify-center" ref={playerContainer}>
+    // Pinned to the player's height: the YouTube embed is an empty placeholder div until its API
+    // script has loaded, so without this the whole menu shrinks for the moment that takes
+    <div className="flex h-[150px] flex-col items-center justify-center" ref={playerContainer}>
       {currentStatus === VideoState.PLAYING ? (
         <div
           className={twMerge(

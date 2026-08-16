@@ -6,6 +6,7 @@ import { ValuesType } from 'utility-types';
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
 import { MAX_POINTS, beatsToPoints, sumDetailedScore } from '~/modules/game-engine/game-state/helpers/calculate-score';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
+import { PlayerNumber } from '~/modules/players/player-number';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import tuple from '~/modules/utils/tuple';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
@@ -18,7 +19,11 @@ interface StoryArgs {
   player1Score: number;
   player2Score: number;
   player3Score: number;
+  player4Score: number;
+  player5Score: number;
   gameMode: ValuesType<typeof GAME_MODE>;
+  highScoresEnabled: boolean;
+  cameraEnabled: boolean;
 }
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -28,7 +33,7 @@ const Template = (args: StoryArgs) => {
 
   const singSetup: SingSetup = {
     tolerance: 2,
-    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+    players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as PlayerNumber, track: 0 })),
     id: 'storybook-id',
     mode: args.gameMode,
   };
@@ -47,7 +52,7 @@ const Template = (args: StoryArgs) => {
 
   const maxScores = beatsToPoints(maxPoints, pointsPerBeat);
   const players: PlayerScore[] = new Array(args.playerNum).fill(0).map((_t, i) => {
-    const playerNum = i as 0 | 1 | 2 | 3;
+    const playerNum = i as PlayerNumber;
 
     return {
       name: `Player #${i + 1}`,
@@ -74,6 +79,8 @@ const Template = (args: StoryArgs) => {
       width={width}
       height={height}
       onClickSongSelection={() => undefined}
+      highScoresEnabled={args.highScoresEnabled}
+      cameraEnabled={args.cameraEnabled}
       song={convertTxtToSong(song)}
       highScores={[
         {
@@ -134,6 +141,8 @@ const meta = {
     player1Score: 69,
     player2Score: 70,
     player3Score: 71,
+    highScoresEnabled: true,
+    cameraEnabled: true,
   },
   parameters: {
     layout: 'fullscreen',
@@ -143,6 +152,17 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const PostGameStory: Story = {
+  play: async ({ canvas }) => {
+    await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
+  },
+};
+
+/** How the online results screen renders it: no high-score step, no camera roll. */
+export const OnlinePostGameStory: Story = {
+  args: {
+    highScoresEnabled: false,
+    cameraEnabled: false,
+  },
   play: async ({ canvas }) => {
     await expect(await canvas.findByTestId('highscores-button', undefined, { timeout: 15_000 })).toBeVisible();
   },

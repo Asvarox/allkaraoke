@@ -3,13 +3,14 @@ import { memo, useState } from 'react';
 import { BottomSheet } from '~/modules/elements/akui/bottom-sheet';
 import { Icon } from '~/modules/elements/akui/icon';
 import { MenuButton } from '~/modules/elements/akui/menu/menu-button';
+import { PlayerNumber } from '~/modules/players/player-number';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
 import { useClientHandler } from '~/modules/remote-mic/network/client/hooks/use-client-handler';
 import PlayerChangeModal from '~/routes/remote-mic/components/player-change-modal';
 import PlayerNumberCircle from '~/routes/remote-mic/components/player-number-circle';
 
 interface Props {
-  playerNumber: 0 | 1 | 2 | 3 | null;
+  playerNumber: PlayerNumber | null;
 }
 
 export default memo(function PlayerChange({ playerNumber }: Props) {

@@ -9,6 +9,7 @@ import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useBlockScroll from '~/modules/hooks/use-block-scroll';
+import useInstantSongPreview from '~/modules/hooks/use-instant-song-preview';
 import useSmoothNavigate, { buildUrl } from '~/modules/hooks/use-smooth-navigate';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
@@ -33,6 +34,8 @@ import { cn } from '~/utils/cn';
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
   preselectedSong: string | null;
+  /** Reports the currently focused song as the user browses (used by online mode to share it). */
+  onSongFocused?: (song: SongPreviewEntity | undefined) => void;
 }
 
 declare global {
@@ -43,7 +46,7 @@ declare global {
     | undefined;
 }
 
-export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+export default function SongSelection({ onSongSelected, preselectedSong, onSongFocused }: Props) {
   const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const list = useRef<VirtualizedListMethods | null>(null);
@@ -90,6 +93,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     [songPreview, groupedSongList],
   );
 
+  useEffect(() => {
+    onSongFocused?.(songPreview);
+  }, [songPreview, onSongFocused]);
+
   const selectedPlaylistData = useMemo(
     () => playlists.find((playlist) => playlist.name === selectedPlaylist),
     [playlists, selectedPlaylist],
@@ -103,6 +110,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const songGroupHeight = songEntryHeight / 2.5;
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
+  const instantSongPreview = useInstantSongPreview();
+  const selectAndExpandSong = useCallback(
+    (songId: string) => {
+      moveToSong(songId);
+      expandSong();
+    },
+    [moveToSong, expandSong],
+  );
 
   const loading = isLoading || unverifiedSongsLoading || !groupedSongList || !width;
   const forceFlag = selectedPlaylist === 'Eurovision';
@@ -333,7 +348,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     isPopular={songItem.isPopular}
                     key={songItem.song.id}
                     song={songItem.song}
-                    handleClick={isFocused ? expandSong : moveToSong}
+                    handleClick={isFocused ? expandSong : instantSongPreview ? selectAndExpandSong : moveToSong}
                     focused={!showFilters && keyboardControl && isFocused}
                     songId={songId}
                     groupLetter={group.name}

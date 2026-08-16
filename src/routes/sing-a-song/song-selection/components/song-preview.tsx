@@ -2,6 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 
 import { SingSetup, SongPreview } from '~/interfaces';
 import { Icon } from '~/modules/elements/akui/icon';
+import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
@@ -114,6 +115,22 @@ export default function SongPreviewComponent({
     [start],
   );
 
+  const backButton = (
+    <button
+      onClick={onExitKeyboardControl}
+      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
+      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
+      <span className="text-lg font-bold">Sing a song</span>
+    </button>
+  );
+
+  // Desktop: icon-only, inline with the title — no room/need for the "Sing a song" label there.
+  const backIconButton = (
+    <button onClick={onExitKeyboardControl} className="text-active hidden shrink-0 cursor-pointer items-center sm:flex">
+      <Icon icon="ic:baseline-arrow-back" className="text-xl md:text-2xl" />
+    </button>
+  );
+
   const animationDurationSec =
     60 /
     (songPreview.realBpm && songPreview.realBpm > 40
@@ -172,70 +189,54 @@ export default function SongPreviewComponent({
         {/* Click-capture overlay — collapsed only */}
         {!expanded && <div className="absolute inset-0 z-10 cursor-pointer" onClick={onExpand} />}
 
-        {/* Back button — mobile only, shown when expanded */}
-        {expanded && (
-          <div className="mb-2 flex items-center sm:hidden">
-            <button
-              onClick={onExitKeyboardControl}
-              className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-              <Icon icon="ic:baseline-arrow-back" />
-              <span className="text-xl font-bold">Sing a song</span>
-            </button>
-          </div>
-        )}
-
-        {/*
-          Keep SongCard.Thumbnail (and the VideoPlayer inside it) at a stable
-          position in the React tree so the YouTube iframe is never unmounted
-          when expanding/collapsing. In collapsed mode the wrapper uses
-          `display: contents` so it is transparent to layout and the Thumbnail
-          participates directly in SongCard's flex-col flow.
-        */}
-        <div className={expanded ? 'flex flex-col-reverse items-start gap-2 sm:flex-row sm:gap-24' : 'contents'}>
-          {expanded && (
-            <div className="flex min-w-0 flex-1 flex-col gap-1 sm:gap-3">
-              <SongCard.SongTitle className="typography truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
-              <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
+        <SongPreviewLayout
+          expanded={expanded}
+          back={backButton}
+          title={
+            <div className="flex min-w-0 items-center gap-2">
+              {/* Back button — icon-only, next to the title, desktop only, shown when expanded */}
+              {backIconButton}
+              <SongCard.SongTitle className="typography min-w-0 flex-1 truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
             </div>
-          )}
-          <SongCard.Thumbnail
-            ref={thumbnailRef}
-            className={`[view-transition-name:song-preview-thumbnail] ${expanded ? 'w-full shrink-0 sm:w-2/5' : undefined}`}>
-            <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
-              <VideoPlayer
-                width={0}
-                height={0}
-                disablekb
-                ref={player}
-                video={''}
-                volume={volume}
-                onStateChange={onVideoStateChange}
-              />
-            </div>
-          </SongCard.Thumbnail>
-        </div>
-
-        {expanded ? (
-          /* Settings row */
-          <div className="mt-3 [view-transition-name:song-preview-content] sm:mt-auto">
+          }
+          artist={
+            <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
+          }
+          thumbnail={
+            <SongCard.Thumbnail ref={thumbnailRef} className="w-full [view-transition-name:song-preview-thumbnail]">
+              <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
+                <VideoPlayer
+                  width={0}
+                  height={0}
+                  disablekb
+                  ref={player}
+                  video={''}
+                  volume={volume}
+                  onStateChange={onVideoStateChange}
+                />
+              </div>
+            </SongCard.Thumbnail>
+          }
+          collapsedFooter={
+            <SongCard.Footer>
+              <SongCard.SongTitle className="[view-transition-name:song-preview-title]" />
+              <SongCard.Artist className="[view-transition-name:song-preview-artist]" />
+              <SongCard.Badges>
+                <SongCard.Badges.Flag />
+                <SongCard.Badges.Duet />
+                <SongCard.Badges.Stats focused compact />
+              </SongCard.Badges>
+            </SongCard.Footer>
+          }
+          footer={
             <SongSettings
               songPreview={songPreview}
               onPlay={onPlay}
               keyboardControl={keyboardControl}
               onExitKeyboardControl={onExitKeyboardControl}
             />
-          </div>
-        ) : (
-          <SongCard.Footer>
-            <SongCard.SongTitle className="[view-transition-name:song-preview-title]" />
-            <SongCard.Artist className="[view-transition-name:song-preview-artist]" />
-            <SongCard.Badges>
-              <SongCard.Badges.Flag />
-              <SongCard.Badges.Duet />
-              <SongCard.Badges.Stats focused compact />
-            </SongCard.Badges>
-          </SongCard.Footer>
-        )}
+          }
+        />
       </SongCard>
     </>
   );

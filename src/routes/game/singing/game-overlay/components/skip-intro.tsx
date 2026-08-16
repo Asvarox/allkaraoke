@@ -15,11 +15,13 @@ import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/setti
 interface Props {
   playerRef: MutableRefObject<VideoPlayerRef | null>;
   isEnabled: boolean;
+  /** Overrides the local seek — online mode routes the skip through the room server instead. */
+  onSkip?: (targetTimeSec: number) => void;
   /** Opens the pause menu — surfaced as the mirrored keyboard's Back control (the TV still uses Backspace). */
   onOpenPauseMenu?: () => void;
 }
 
-function SkipIntro({ playerRef, isEnabled, onOpenPauseMenu }: Props) {
+function SkipIntro({ playerRef, isEnabled, onSkip, onOpenPauseMenu }: Props) {
   'use no memo'; // React Compiler: shouldBeVisible depends on GameState.getCurrentTime(), read directly during render, while playerRef/isEnabled props stay stable, so the compiler's auto-memo bails out and the skip-intro prompt freezes at its first computed visibility.
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const song = GameState.getSong()!;
@@ -30,7 +32,12 @@ function SkipIntro({ playerRef, isEnabled, onOpenPauseMenu }: Props) {
   const canSkip = isEnabled && shouldBeVisible && hasLongIntro;
 
   const skipIntro = () => {
-    playerRef.current?.seekTo(getSkipIntroTime(song));
+    const target = getSkipIntroTime(song);
+    if (onSkip) {
+      onSkip(target);
+    } else {
+      playerRef.current?.seekTo(target);
+    }
 
     const { artist, title } = GameState.getSong()!;
     posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });
