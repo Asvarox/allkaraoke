@@ -6,6 +6,7 @@ import { SingSetup, Song, SongPreview } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import events from '~/modules/game-events/game-events';
+import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
 import { InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
 import { MobilePhoneModeSetting } from '~/routes/settings/settings-state';
@@ -18,6 +19,12 @@ const trackSongData =
     scores: Array<{ name: string; score: number }> = [],
     progress?: number,
   ) => {
+    // Online mode tracks its own songStarted/songEnded once the room actually starts/finishes
+    // singing (host-only, room-wide player count and scores) — see online-analytics.ts. This
+    // dispatch fires too early for online (at song pick, with just the solo local player), so
+    // skip the local-shaped capture here rather than double-report the event.
+    if (OnlineClient.getRoomCode()) return;
+
     const sameScores = scores.length > 1 && scores.every((score) => score.score === scores[0].score);
 
     const inputs: Record<string, InputSourceNames> = {};
