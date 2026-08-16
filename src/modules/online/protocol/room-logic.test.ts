@@ -1,7 +1,12 @@
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { RpcContext } from '~/modules/network/rpc/types';
-import { compressChart, prepareChartTransfer, unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
+import {
+  ChartValidationError,
+  compressChart,
+  prepareChartTransfer,
+  unpackChartTransfer,
+} from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
   ONLINE_FORCE_RESULTS_MS,
@@ -12,7 +17,8 @@ import {
   ONLINE_ROOM_TTL_MS,
   ONLINE_START_LEAD_MS,
 } from '~/modules/online/protocol/consts';
-import { OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
+import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
+import { WireDetailedScore } from '~/modules/online/protocol/types';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
 const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', removePlayer: () => undefined });
@@ -20,6 +26,8 @@ const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', 
 const CHART_TXT = '#ARTIST:Some Artist\n#TITLE:Some Song\n: 0 4 59 Test\nE';
 let manifest: Awaited<ReturnType<typeof prepareChartTransfer>>['manifest'];
 let chartData: string;
+
+const SAMPLE_DETAILED_SCORE: WireDetailedScore = [{ normal: 100 }, { normal: 200 }];
 
 // Compress once with real timers, before the fake-timer hooks kick in
 beforeAll(async () => {
@@ -29,21 +37,24 @@ beforeAll(async () => {
   ));
 });
 
-const createRoom = () => {
+const createRoom = (restoreFrom?: OnlinePersistedState) => {
   const published: Record<string, unknown[]> = {};
   const persist = vi.fn();
   const scheduleTtl = vi.fn();
   const disconnect = vi.fn();
-  const logic = new OnlineRoomLogic({
-    roomCode: 'testr',
-    now: () => Date.now(),
-    publish: (channel, data) => {
-      (published[channel] ??= []).push(data);
+  const logic = new OnlineRoomLogic(
+    {
+      roomCode: 'testr',
+      now: () => Date.now(),
+      publish: (channel, data) => {
+        (published[channel] ??= []).push(data);
+      },
+      persist,
+      scheduleTtl,
+      disconnect,
     },
-    persist,
-    scheduleTtl,
-    disconnect,
-  });
+    restoreFrom,
+  );
   const handlers = logic.createHandlers();
   return { logic, handlers, published, persist, scheduleTtl, disconnect };
 };
@@ -131,6 +142,17 @@ describe('participants', () => {
     });
   });
 
+  it('trims and bounds a set name, falling back to the current name when empty', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+
+    await room.handlers.room.setName.handler(ctx('p1'), `  ${'x'.repeat(50)}  `);
+    expect(room.logic.getState().participants.find((p) => p.id === 'p1')?.name).toBe('x'.repeat(20));
+
+    await room.handlers.room.setName.handler(ctx('p1'), '   ');
+    expect(room.logic.getState().participants.find((p) => p.id === 'p1')?.name).toBe('x'.repeat(20));
+  });
+
   it('lets a singer change color to a free player number, but not to a taken one', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
@@ -205,7 +227,21 @@ describe('song selection / chart transfer', () => {
     const room = createRoom();
     join(room, ['p1']);
     const corrupted = await compressChart('some other content entirely');
-    await expect(room.handlers.selection.setChart.handler(ctx('p1'), manifest, corrupted, 2)).rejects.toThrow();
+    await expect(room.handlers.selection.setChart.handler(ctx('p1'), manifest, corrupted, 2)).rejects.toThrow(
+      ChartValidationError,
+    );
+    expect(room.logic.getState().chart).toBeNull();
+  });
+
+  it('rejects out-of-range or non-integer tolerance values', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    await expect(room.handlers.selection.setChart.handler(ctx('p1'), manifest, chartData, 0)).rejects.toThrow(
+      'Invalid tolerance',
+    );
+    await expect(room.handlers.selection.setChart.handler(ctx('p1'), manifest, chartData, 1.5)).rejects.toThrow(
+      'Invalid tolerance',
+    );
     expect(room.logic.getState().chart).toBeNull();
   });
 
@@ -397,9 +433,8 @@ describe('host ends the game', () => {
     expect(room.logic.getState().finishRequestedAt).toBe(Date.now());
     expect(room.logic.getState().phase).toBe('singing');
 
-    const detailed = [{ normal: 100 }, { normal: 200 }] as never;
-    await room.handlers.scoring.publishFinal.handler(ctx('p1'), detailed);
-    await room.handlers.scoring.publishFinal.handler(ctx('p2'), detailed);
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE);
+    await room.handlers.scoring.publishFinal.handler(ctx('p2'), SAMPLE_DETAILED_SCORE);
 
     const state = room.logic.getState();
     expect(state.phase).toBe('results');
@@ -420,6 +455,8 @@ describe('host ends the game', () => {
     expect(state.finalResults).toHaveLength(2);
     const p2Result = state.finalResults!.find((result) => result.participantId === 'p2');
     expect(p2Result?.detailedScore[0]).toEqual({ normal: 1_234 });
+    // fabricated from the leaderboard, not a real published score — must not be shown as a real run
+    expect(p2Result?.incomplete).toBe(true);
   });
 
   it('rejects end-game from non-hosts or outside a game', async () => {
@@ -516,11 +553,10 @@ describe('scoring and results', () => {
     join(room, ['p1', 'p2']);
     await startSinging(room, ['p1', 'p2']);
 
-    const detailed = [{ normal: 100 }, { normal: 200 }] as never;
-    await room.handlers.scoring.publishFinal.handler(ctx('p1'), detailed);
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE);
     expect(room.logic.getState().phase).toBe('singing');
 
-    await room.handlers.scoring.publishFinal.handler(ctx('p2'), detailed);
+    await room.handlers.scoring.publishFinal.handler(ctx('p2'), SAMPLE_DETAILED_SCORE);
     const state = room.logic.getState();
     expect(state.phase).toBe('results');
     expect(state.finalResults).toHaveLength(2);
@@ -531,8 +567,7 @@ describe('scoring and results', () => {
     join(room, ['p1', 'p2']);
     await startSinging(room, ['p1', 'p2']);
 
-    const detailed = [{ normal: 100 }, { normal: 200 }] as never;
-    await room.handlers.scoring.publishFinal.handler(ctx('p1'), detailed);
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE);
     room.logic.handleDisconnect('p2');
     vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
 
@@ -543,9 +578,8 @@ describe('scoring and results', () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await startSinging(room, ['p1', 'p2']);
-    const detailed = [{ normal: 100 }, { normal: 200 }] as never;
-    await room.handlers.scoring.publishFinal.handler(ctx('p1'), detailed);
-    await room.handlers.scoring.publishFinal.handler(ctx('p2'), detailed);
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE);
+    await room.handlers.scoring.publishFinal.handler(ctx('p2'), SAMPLE_DETAILED_SCORE);
 
     await room.handlers.room.returnToLobby.handler(ctx('p2'));
     const state = room.logic.getState();
@@ -580,5 +614,61 @@ describe('room TTL', () => {
     const persisted = room.persist.mock.calls.at(-1)?.[0];
     expect(persisted.chartData).toEqual(chartData);
     expect(persisted.participants).toHaveLength(1);
+  });
+});
+
+describe('restoring from a persisted snapshot (hibernation/restart)', () => {
+  it('rebuilds participants (disconnected), host, ban list, created state and phase', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2', 'p3']);
+    // p3 is banned before the snapshot is taken — the ban must survive the restart
+    await source.handlers.room.kickPlayer.handler(ctx('p1'), 'p3');
+    await uploadChart(source);
+    await source.handlers.room.startGame.handler(ctx('p1'));
+    expect(source.logic.getState().phase).toBe('readiness');
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot);
+    const state = restored.logic.getState();
+
+    // 'readiness' depends on live timers/anchors that don't survive a restart
+    expect(state.phase).toBe('lobby');
+    expect(state.hostId).toBe('p1');
+    expect(state.participants.map((participant) => participant.id)).toEqual(['p1', 'p2']);
+    expect(state.participants.every((participant) => !participant.connected && !participant.ready)).toBe(true);
+    expect(restored.logic.isCreated()).toBe(true);
+    expect(state.chart?.songId).toBe('song-1');
+    // the ban list survives the restart
+    expect(restored.logic.handleConnect('p3', 'Name p3')).toEqual({ accepted: false, reason: 'banned' });
+  });
+
+  it('arms a grace timer for every restored participant so stale ones get cleaned up', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    const snapshot = source.logic.snapshot();
+
+    const restored = createRoom(snapshot);
+    expect(restored.logic.getState().participants).toHaveLength(2);
+
+    // no one reconnects — without an armed grace timer these would linger forever
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
+    expect(restored.logic.getState().participants).toHaveLength(0);
+  });
+
+  it('handles blobs from before late-persisted fields existed', () => {
+    const source = createRoom();
+    join(source, ['p1']);
+    const {
+      chartPreview: _chartPreview,
+      bannedIds: _bannedIds,
+      created: _created,
+      ...legacySnapshot
+    } = source.logic.snapshot();
+
+    const restored = createRoom(legacySnapshot);
+    const state = restored.logic.getState();
+    expect(state.chart).toBeNull();
+    expect(restored.logic.isCreated()).toBe(true);
+    expect(restored.logic.handleConnect('p1', 'Name p1')).toEqual({ accepted: true });
   });
 });

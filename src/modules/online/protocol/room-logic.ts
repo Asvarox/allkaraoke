@@ -1,19 +1,20 @@
 import { defineMutation, defineQuery } from '~/modules/network/rpc/define';
 import { ExtractContract } from '~/modules/network/rpc/types';
-import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
-
-import { unpackChartTransfer } from './chart-transfer';
+import { unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
+  ONLINE_MAX_NAME_LENGTH,
+  ONLINE_MAX_TOLERANCE,
+  ONLINE_MIN_TOLERANCE,
   ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_RESUME_COUNTDOWN_MS,
   ONLINE_ROOM_TTL_MS,
   ONLINE_START_LEAD_MS,
   ONLINE_STATS_PUBLISH_MS,
-} from './consts';
+} from '~/modules/online/protocol/consts';
 import {
   ChartManifest,
   OnlineFinalResult,
@@ -26,7 +27,8 @@ import {
   SongVote,
   SongVotes,
   WireDetailedScore,
-} from './types';
+} from '~/modules/online/protocol/types';
+import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 
 /** Fields added after the first release — blobs still in storage predate them, so they stay optional. */
 type LatePersistedField = 'chartPreview' | 'bannedIds' | 'created';
@@ -79,6 +81,9 @@ export class OnlineRoomLogic {
   private songVotes: SongVotes = {};
   /** In-memory only — live ping/volume snapshots per participant. */
   private playerStats: PlayersStats = {};
+  /** In-memory only, deliberately NOT part of the published room state (see `handlePlaybackStatus`) —
+   * it changes far too often to broadcast, and nothing needs to react to it remotely yet. */
+  private playback: Record<string, OnlinePlaybackStatus> = {};
 
   private timers = new Map<string, unknown>();
 
@@ -88,11 +93,19 @@ export class OnlineRoomLogic {
   ) {
     this.lastActivityAt = deps.now();
     if (restoreFrom) {
-      this.participants = restoreFrom.participants.map((participant) => ({ ...participant, connected: false }));
+      this.participants = restoreFrom.participants.map((participant) => ({
+        ...participant,
+        connected: false,
+        // The readiness confirmation is transient and meaningless once restored (see below).
+        ready: false,
+      }));
       this.nextJoinOrder = restoreFrom.nextJoinOrder;
       this.hostId = restoreFrom.hostId;
       this.tolerance = restoreFrom.tolerance;
-      this.phase = restoreFrom.phase;
+      // 'readiness'/'singing' depend on live timers and a playback anchor, neither of which
+      // survives a restart — land back in the lobby rather than resurrecting a phase nothing
+      // is driving anymore. 'lobby' and 'results' need no such live state, so they carry over.
+      this.phase = restoreFrom.phase === 'readiness' || restoreFrom.phase === 'singing' ? 'lobby' : restoreFrom.phase;
       this.chart = restoreFrom.chart;
       this.chartData = restoreFrom.chartData;
       this.chartPreview = restoreFrom.chartPreview ?? null;
@@ -101,6 +114,11 @@ export class OnlineRoomLogic {
       this.lastActivityAt = restoreFrom.lastActivityAt;
       this.bannedIds = restoreFrom.bannedIds ?? [];
       this.created = restoreFrom.created ?? true;
+      // Every restored participant is marked disconnected above — without a grace timer none of
+      // them would ever be cleaned up (or free their spot/host role) if they never come back.
+      this.participants.forEach((participant) => {
+        this.setTimer(`grace:${participant.id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(participant.id));
+      });
     }
   }
 
@@ -302,8 +320,8 @@ export class OnlineRoomLogic {
       playerNumber: this.freePlayerNumber(),
       connected: true,
       ready: false,
-      playback: 'unstarted',
     });
+    this.playback[id] = 'unstarted';
     if (this.hostId === null) {
       this.hostId = id;
     }
@@ -333,6 +351,7 @@ export class OnlineRoomLogic {
     this.leaderboard = this.leaderboard.filter((entry) => entry.participantId !== id);
     delete this.songVotes[id];
     delete this.playerStats[id];
+    delete this.playback[id];
     this.electHost();
 
     if (this.phase === 'readiness') {
@@ -356,7 +375,7 @@ export class OnlineRoomLogic {
     this.phase = 'readiness';
     this.participants.forEach((participant) => {
       participant.ready = false;
-      participant.playback = 'unstarted';
+      this.playback[participant.id] = 'unstarted';
     });
     this.readinessDeadline = this.deps.now() + ONLINE_READINESS_TIMEOUT_MS;
     this.leaderboard = this.connectedParticipants().map((participant) => ({
@@ -429,17 +448,19 @@ export class OnlineRoomLogic {
   };
 
   private handlePlaybackStatus = (id: string, status: OnlinePlaybackStatus) => {
-    const participant = this.requireParticipant(id);
-    participant.playback = status;
+    this.requireParticipant(id);
+    this.playback[id] = status;
 
-    const anyBuffering = this.connectedParticipants().some((other) => other.playback === 'buffering');
+    const anyBuffering = this.connectedParticipants().some((other) => this.playback[other.id] === 'buffering');
 
     if (this.phase === 'singing' && this.pause === null) {
       if (status === 'buffering') {
         // Only pause everyone when the stall lasts longer than the configured threshold
         if (!this.timers.has('buffering')) {
           this.setTimer('buffering', ONLINE_BUFFERING_PAUSE_MS, () => {
-            const stillBuffering = this.connectedParticipants().find((other) => other.playback === 'buffering');
+            const stillBuffering = this.connectedParticipants().find(
+              (other) => this.playback[other.id] === 'buffering',
+            );
             if (stillBuffering && this.phase === 'singing' && this.pause === null) {
               this.pausePlayback(stillBuffering.id, 'buffering');
             }
@@ -451,8 +472,9 @@ export class OnlineRoomLogic {
     }
 
     // Auto-resume a buffering pause once every connected singer reports playable again.
-    // Plain status updates are NOT broadcast — they arrive constantly during playback and
-    // re-publishing the whole room state for each one floods every client.
+    // Plain status updates are NOT broadcast — they arrive constantly during playback, `playback`
+    // is intentionally excluded from the published room state (see the field's doc comment), and
+    // re-publishing the whole room state for each one would flood every client.
     if (this.pause?.reason === 'buffering' && !anyBuffering && this.resumeCountdownEndsAt === null) {
       this.resumePlayback();
     }
@@ -506,7 +528,10 @@ export class OnlineRoomLogic {
   };
 
   /** After the host ends the game, singers that never published a final score get one
-   * fabricated from their last leaderboard snapshot so the results can still be shown. */
+   * fabricated from their last leaderboard snapshot so the results can still be shown. The room
+   * has no notion of the chart's actual max achievable score (that lives in the game engine, not
+   * in this protocol — see WireDetailedScore's doc comment), so it cannot fabricate a meaningful
+   * achieved/max ratio; `incomplete: true` tells consumers not to render this as a real run. */
   private forceResults = () => {
     if (this.phase !== 'singing' && this.phase !== 'readiness') return;
     this.finalResults = this.finalResults ?? [];
@@ -518,6 +543,7 @@ export class OnlineRoomLogic {
         name: participant.name,
         playerNumber: participant.playerNumber,
         detailedScore: [{ normal: score }, { normal: Math.max(score, 1) }],
+        incomplete: true,
       });
     });
     this.enterResults();
@@ -536,7 +562,7 @@ export class OnlineRoomLogic {
     this.songVotes = {};
     this.participants.forEach((participant) => {
       participant.ready = false;
-      participant.playback = 'unstarted';
+      this.playback[participant.id] = 'unstarted';
     });
     this.publishState();
     this.publishLeaderboard();
@@ -558,7 +584,8 @@ export class OnlineRoomLogic {
       getServerTime: defineQuery(() => this.deps.now()),
       setName: defineMutation((ctx, name: string) => {
         const participant = this.requireParticipant(ctx.senderId);
-        participant.name = name.trim() || participant.name;
+        const trimmedName = name.trim().slice(0, ONLINE_MAX_NAME_LENGTH);
+        participant.name = trimmedName || participant.name;
         this.leaderboard.forEach((entry) => {
           if (entry.participantId === participant.id) entry.name = participant.name;
         });
@@ -595,7 +622,10 @@ export class OnlineRoomLogic {
         this.checkReadiness();
         this.publishState();
       }),
-      returnToLobby: defineMutation(() => {
+      /** Intentionally participant-accessible rather than host-only: once in results there's
+       * nothing left to coordinate, so anyone can move the room on to the next round. */
+      returnToLobby: defineMutation((ctx) => {
+        this.requireParticipant(ctx.senderId);
         if (this.phase !== 'results') throw new Error('Not in results');
         this.returnToLobby();
       }),
@@ -645,8 +675,13 @@ export class OnlineRoomLogic {
         async (ctx, manifest: ChartManifest, data: string, tolerance: number, preview?: SongHoverPreview | null) => {
           this.requireHost(ctx.senderId);
           if (this.phase !== 'lobby') throw new Error('Can only select a song in the lobby');
+          if (!Number.isInteger(tolerance) || tolerance < ONLINE_MIN_TOLERANCE || tolerance > ONLINE_MAX_TOLERANCE) {
+            throw new Error('Invalid tolerance');
+          }
           // Validates decompression, length and hash against the manifest
           await unpackChartTransfer(manifest, data);
+          // Re-check: another mutation may have moved the room out of the lobby while we awaited
+          if (this.phase !== 'lobby') throw new Error('Can only select a song in the lobby');
           this.chart = manifest;
           this.chartData = data;
           this.chartPreview = preview ?? null;
