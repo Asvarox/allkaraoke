@@ -14,7 +14,6 @@ import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import UserMediaEnabled from '~/modules/user-media/user-media-enabled';
 import useMicSwitcher from '~/routes/select-input/hooks/use-mic-switcher';
 import usePlayerNumberPreset from '~/routes/select-input/hooks/use-player-number-preset';
-import MicCheck from '~/routes/select-input/mic-check';
 import { MicSetupPreference } from '~/routes/settings/settings-state';
 
 interface Props {
@@ -23,8 +22,7 @@ interface Props {
   onSave: () => void;
   changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
   closeButtonText: string;
-  /** Online-mode wizard variant: no input-type switching, no per-player mic boxes (the volume
-   * shows behind the mic switcher instead), no smartphone-as-mic suggestion. */
+  /** Online-mode wizard variant: no input-type switching, no smartphone-as-mic suggestion. */
   onlineSetup?: boolean;
 }
 
@@ -105,7 +103,6 @@ function useIsPlayerMicAudible(inputLabel: string) {
 }
 
 function BuiltIn({ onSetupComplete, ...props }: Props) {
-  'use no memo'; // React Compiler: <MicCheck /> below is rendered with no props, so the compiler caches that element forever and MicCheck's own re-renders (driven by PlayersManager, a mutable singleton) never get triggered.
   usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
@@ -146,7 +143,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
           The screen then resizes exactly once: when the actual setup takes over. */}
       <div className="grid">
         <StartingUpReserve />
-        <div className="col-start-1 row-start-1 flex flex-col justify-center gap-4">
+        <div className="col-start-1 row-start-1 flex min-w-0 flex-col justify-center gap-4">
           <UserMediaEnabled fallback={<span className="typography text-lg">{ALLOW_ACCESS_MESSAGE}</span>}>
             {!selectedMic && <span className="typography text-lg">The default device is being selected.</span>}
             {selectedMic && (
@@ -156,7 +153,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
                   <Menu.HelpText>(click to change)</Menu.HelpText>
                 </div>
                 <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic}>
-                  {props.onlineSetup && <PlayerMicCheck playerNumber={0} className="rounded-md opacity-40" />}
+                  <PlayerMicCheck playerNumber={0} className="rounded-xl opacity-40" />
                 </Switcher>
                 <div className="flex items-center justify-end text-lg">
                   {isAudible === true && (
@@ -186,10 +183,6 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
                 </div>
               </>
             )}
-            {/* Gated on the device too: before one is picked there's no level to show, and letting
-                the boxes appear a beat early would be one more height change during startup */}
-            {selectedMic && !props.onlineSetup && <MicCheck />}
-
             {selectedMic && (
               <TipSlot reserveFor={props.onlineSetup ? NOT_AUDIBLE_TIP : smartphoneTip}>
                 {isAudible === false

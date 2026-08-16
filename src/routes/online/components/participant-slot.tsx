@@ -120,7 +120,7 @@ function ParticipantSlot({
               title="Change your name or color"
               className="hover:text-active flex cursor-pointer items-center opacity-75 hover:opacity-100"
               data-test="customize-button">
-              <Icon icon="ic:baseline-edit" className="h-5 w-5" />
+              <Icon icon="ic:baseline-edit" size={5} />
             </button>
           )}
           {showKick && <KickPlayer participant={participant} />}
