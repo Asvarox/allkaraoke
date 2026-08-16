@@ -3,6 +3,7 @@ import { debounce } from 'es-toolkit';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';
+import { MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 import RemoteMicServer from '~/modules/remote-mic/network/server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import storage from '~/modules/utils/storage';
@@ -10,7 +11,6 @@ import inputSourceListManager from '~/routes/select-input/input-sources/index';
 import { InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
 
 const SELECTED_INPUTS_KEY = 'playerselectedinputs';
-export const MAX_PLAYERS = 4;
 
 export interface SelectedPlayerInput {
   source: InputSourceNames;
@@ -21,7 +21,7 @@ export interface SelectedPlayerInput {
 export class PlayerEntity {
   public nameOverride: string = '';
   constructor(
-    public number: 0 | 1 | 2 | 3,
+    public number: PlayerNumber,
     public input: SelectedPlayerInput,
     public name?: string,
   ) {}
@@ -183,7 +183,7 @@ class PlayersManager {
     events.minPlayerNumberChanged.dispatch(previousMinPlayerNumber, minPlayerNumber);
   };
 
-  public addPlayer = (playerNumber: 0 | 1 | 2 | 3) => {
+  public addPlayer = (playerNumber: PlayerNumber) => {
     if (GameState.isPlaying() || this.getPlayer(playerNumber)) {
       return;
     }
@@ -197,7 +197,7 @@ class PlayersManager {
     return newPlayer;
   };
 
-  public removePlayer = (playerNumber: 0 | 1 | 2 | 3) => {
+  public removePlayer = (playerNumber: PlayerNumber) => {
     if (GameState.isPlaying()) {
       return;
     }

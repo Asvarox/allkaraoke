@@ -1,12 +1,12 @@
-import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useRef } from 'react';
+import { ComponentProps, Ref, useCallback, useMemo, useRef } from 'react';
 import tinycolor from 'tinycolor2';
 
 import styles from '~/modules/game-engine/drawing/styles';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
-import PlayersManager from '~/modules/players/players-manager';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { twx } from '~/utils/twx';
 
-const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
+const usePlayerColor = (playerNumber: PlayerNumber) => {
   return useMemo(() => {
     if (!styles.colors.players[playerNumber]) return '0, 0, 0';
     const rgb = tinycolor(styles.colors.players[playerNumber].text).toRgb();
@@ -16,37 +16,40 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
 
 const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z-1 h-full w-full origin-right overflow-hidden bg-repeat-y`;
 
-interface Props {
-  playerNumber: 0 | 1 | 2 | 3;
+interface Props extends ComponentProps<typeof VolumeIndicatorBase> {
+  playerNumber: PlayerNumber;
   volume: number;
+  ref?: Ref<HTMLDivElement | null>;
 }
 
-export const VolumeIndicator = forwardRef(
-  ({ volume, playerNumber, ...rest }: Props, ref: ForwardedRef<HTMLDivElement | null>) => {
-    const percent = `${Math.min(1, volume * 20)}`;
-    const color = usePlayerColor(playerNumber);
+/**
+ * Volume bar driven by an explicitly supplied level, for singers whose audio isn't on this device
+ * (online rooms report their own volume). For local mics use `PlayerMicCheck` instead.
+ */
+export const VolumeIndicator = ({ volume, playerNumber, ref, ...rest }: Props) => {
+  const percent = `${Math.min(1, volume * 20)}`;
+  const color = usePlayerColor(playerNumber);
 
-    const player = PlayersManager.getPlayer(playerNumber);
-    if (!player) return null;
-
-    return (
-      <VolumeIndicatorBase
-        // color={color}
-        {...rest}
+  return (
+    // Same two-element shape as PlayerMicCheck below, and for the same reason: the scale has to sit
+    // on an inner element. Scaling the rounded, clipping box itself squashes its corner radius along
+    // with it, and the bar then bleeds past the corners of the row it's sitting in.
+    <VolumeIndicatorBase {...rest} ref={ref}>
+      <div
+        className="h-full w-full origin-right"
         style={{
           transform: `scaleX(${percent})`,
           background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
         }}
-        ref={ref}
       />
-    );
-  },
-);
+    </VolumeIndicatorBase>
+  );
+};
 
 export const PlayerMicCheck = ({
   playerNumber,
   ...props
-}: { playerNumber: 0 | 1 | 2 | 3 } & ComponentProps<typeof VolumeIndicatorBase>) => {
+}: { playerNumber: PlayerNumber } & ComponentProps<typeof VolumeIndicatorBase>) => {
   const elemRef = useRef<HTMLDivElement | null>(null);
 
   const cb = useCallback(([volume]: [number, number]) => {

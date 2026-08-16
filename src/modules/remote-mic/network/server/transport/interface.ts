@@ -6,9 +6,9 @@ export interface SenderInterface {
 
   send(payload: NetworkMessages): void;
 
-  on(event: string, callback: (data: any) => void): void;
+  on(event: string, callback: (data: NetworkMessages) => void): void;
 
-  off(event: string, callback: (data: any) => void): void;
+  off(event: string, callback: (data: NetworkMessages) => void): void;
 
   close(): void;
 }
@@ -22,7 +22,7 @@ export interface ServerTransport extends Listener<[NetworkMessages, SenderInterf
   connect(
     roomId: string,
     onConnect: () => void,
-    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+    onClose: (reason: transportCloseReason, originalEvent: unknown) => void,
   ): void;
 
   disconnect(): void;

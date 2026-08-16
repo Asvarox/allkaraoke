@@ -1,5 +1,6 @@
 import { Params } from '~/modules/hooks/use-keyboard';
-import { RpcMessages } from '~/modules/remote-mic/network/rpc/types';
+import { RpcMessages } from '~/modules/network/rpc/types';
+import { SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 
 export interface NetworkRegisterMessage {
   t: 'register';
@@ -46,4 +47,4 @@ export type NetworkMessages =
   | NetworkPingMessageEvent
   | NetworkPongMessageEvent
   | NetworkRemovePlayerMessage
-  | RpcMessages;
+  | RpcMessages<SubscriptionChannels>;

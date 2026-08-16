@@ -4,6 +4,7 @@ import { appendFrequencyToPlayerNotes } from '~/modules/game-engine/game-state/h
 import calculateScore, { calculateDetailedScoreData } from '~/modules/game-engine/game-state/helpers/calculate-score';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getNoteAtBeat } from '~/modules/songs/utils/notes-selectors';
 
@@ -18,7 +19,7 @@ class PlayerState {
   private storedSectionIndex = 0;
 
   public constructor(
-    private number: 0 | 1 | 2 | 3,
+    private number: PlayerNumber,
     private gameState: GameStateClass,
   ) {
     this.getTrack()

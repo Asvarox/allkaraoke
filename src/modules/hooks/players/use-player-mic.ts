@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { PlayerNumber } from '~/modules/players/player-number';
 import tuple from '~/modules/utils/tuple';
 import { FPSCountSetting } from '~/routes/settings/settings-state';
 
 export const usePlayerMicData = (
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   onMeasure: ([volume, frequency]: [number, number]) => void,
   enabled = true,
   intervalMs = 1000 / FPSCountSetting.get(),
@@ -26,7 +27,7 @@ export const usePlayerMicData = (
 };
 
 const usePlayerMic = (
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   intervalMs = 1000 / FPSCountSetting.get(),
   onMeasure?: ([volume, frequency]: [number, number]) => void,
 ) => {

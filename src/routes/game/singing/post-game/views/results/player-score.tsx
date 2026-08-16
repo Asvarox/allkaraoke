@@ -4,6 +4,7 @@ import CountUp from 'react-countup';
 import { HighScoreEntity, SingSetup } from '~/interfaces';
 import { Badge } from '~/modules/elements/akui/badge';
 import styles from '~/modules/game-engine/drawing/styles';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { formatter } from '~/routes/game/singing/game-overlay/components/score-text';
 import { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
 import PlayerDetailedScore from '~/routes/game/singing/post-game/views/results/player-detailed-score';
@@ -13,7 +14,7 @@ interface Props {
   player: PlayerScore;
   revealHighScore: boolean;
   useColors?: boolean;
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   segment: number;
   highestScore: number;
   highScores: HighScoreEntity[];

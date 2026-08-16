@@ -12,6 +12,7 @@ import GameState from '~/modules/game-engine/game-state/game-state';
 import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import events from '~/modules/game-events/game-events';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getLastNoteEnd } from '~/modules/songs/utils/notes-selectors';
@@ -109,7 +110,7 @@ export default class CanvasDrawing {
 
   private currentPlayerNotes: Record<number, Note> = {};
 
-  private drawPlayer = (playerNumber: 0 | 1 | 2 | 3, ctx: CanvasRenderingContext2D) => {
+  private drawPlayer = (playerNumber: PlayerNumber, ctx: CanvasRenderingContext2D) => {
     // Skip rendering if playerState is undefined
     const playerState = GameState.getPlayer(playerNumber);
     if (!playerState) {
@@ -261,7 +262,7 @@ export default class CanvasDrawing {
     }
   };
 
-  private onSectionEnd = (playerNumber: 0 | 1 | 2 | 3) => {
+  private onSectionEnd = (playerNumber: PlayerNumber) => {
     if (GameState.isPlaying()) {
       const drawingData = this.getDrawingData(playerNumber, -1);
       if (!isNotesSection(drawingData.currentSection)) return;
@@ -339,7 +340,7 @@ export default class CanvasDrawing {
     return displacements;
   };
 
-  private getDrawingData = (playerNumber: 0 | 1 | 2 | 3, sectionShift = 0): DrawingData => {
+  private getDrawingData = (playerNumber: PlayerNumber, sectionShift = 0): DrawingData => {
     const players = PlayersManager.getPlayers();
     const playerIndex = players.findIndex((player) => player.number === playerNumber);
     const playerCount = players.length;

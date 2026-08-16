@@ -15,7 +15,7 @@ export class RemoteMicManagePlayerPage {
       yellow: '3',
     };
 
-    await this.page.getByTestId(`change-to-player-${colorToNumberMap[micColor]}`).click();
+    await this.page.getByTestId(`player-color-${colorToNumberMap[micColor]}`).click();
   }
 
   public async unassignManagedPlayer() {

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-import { LOCAL_PLAYER_NUMBERS } from '~/modules/players/player-number';
-import PlayersManager, { MAX_PLAYERS } from '~/modules/players/players-manager';
+import { MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
+import PlayersManager from '~/modules/players/players-manager';
 
 export default function usePlayerNumberPreset(targetPlayerCount: number, maxPlayerCount: number = MAX_PLAYERS) {
   useEffect(() => {
@@ -13,10 +13,13 @@ export default function usePlayerNumberPreset(targetPlayerCount: number, maxPlay
       }
     } else if (players.length < targetPlayerCount) {
       const takenNumbers = PlayersManager.getPlayers().map((player) => player.number);
-      const availableNumbers = LOCAL_PLAYER_NUMBERS.filter((number) => !takenNumbers.includes(number as 0 | 1 | 2 | 3));
+      const availableNumbers = Array.from(Array(MAX_PLAYERS).keys()).filter(
+        (number) => !takenNumbers.includes(number as PlayerNumber),
+      );
+      console.log(availableNumbers, takenNumbers);
 
       for (let i = players.length; i < targetPlayerCount; i++) {
-        PlayersManager.addPlayer(availableNumbers.shift()! as 0 | 1 | 2 | 3);
+        PlayersManager.addPlayer(availableNumbers.shift()! as PlayerNumber);
       }
     }
   }, [targetPlayerCount, maxPlayerCount]);

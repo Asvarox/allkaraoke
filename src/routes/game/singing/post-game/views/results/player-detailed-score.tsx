@@ -1,11 +1,12 @@
 import Typewriter from 'typewriter-effect';
 
 import styles from '~/modules/game-engine/drawing/styles';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
 import ScoreBar from '~/routes/game/singing/post-game/views/results/score-bar';
 
 interface Props {
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   player: PlayerScore;
   segment: number;
 }
