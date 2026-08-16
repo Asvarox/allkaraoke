@@ -114,6 +114,22 @@ export default function SongPreviewComponent({
     [start],
   );
 
+  const backButton = (
+    <button
+      onClick={onExitKeyboardControl}
+      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
+      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
+      <span className="text-lg font-bold">Sing a song</span>
+    </button>
+  );
+
+  // Desktop: icon-only, inline with the title — no room/need for the "Sing a song" label there.
+  const backIconButton = (
+    <button onClick={onExitKeyboardControl} className="text-active hidden shrink-0 cursor-pointer items-center sm:flex">
+      <Icon icon="ic:baseline-arrow-back" className="text-xl md:text-2xl" />
+    </button>
+  );
+
   const animationDurationSec =
     60 /
     (songPreview.realBpm && songPreview.realBpm > 40
@@ -172,17 +188,8 @@ export default function SongPreviewComponent({
         {/* Click-capture overlay — collapsed only */}
         {!expanded && <div className="absolute inset-0 z-10 cursor-pointer" onClick={onExpand} />}
 
-        {/* Back button — mobile only, shown when expanded */}
-        {expanded && (
-          <div className="mb-2 flex items-center sm:hidden">
-            <button
-              onClick={onExitKeyboardControl}
-              className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-              <Icon icon="ic:baseline-arrow-back" />
-              <span className="text-xl font-bold">Sing a song</span>
-            </button>
-          </div>
-        )}
+        {/* Back button — full-width row above everything, mobile only, shown when expanded */}
+        {expanded && <div className="mb-2 flex items-center sm:hidden">{backButton}</div>}
 
         {/*
           Keep SongCard.Thumbnail (and the VideoPlayer inside it) at a stable
@@ -194,7 +201,11 @@ export default function SongPreviewComponent({
         <div className={expanded ? 'flex flex-col-reverse items-start gap-2 sm:flex-row sm:gap-24' : 'contents'}>
           {expanded && (
             <div className="flex min-w-0 flex-1 flex-col gap-1 sm:gap-3">
-              <SongCard.SongTitle className="typography truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
+              <div className="flex min-w-0 items-center gap-2">
+                {/* Back button — icon-only, next to the title, desktop only, shown when expanded */}
+                {backIconButton}
+                <SongCard.SongTitle className="typography min-w-0 flex-1 truncate text-xl [view-transition-name:song-preview-title] md:text-3xl" />
+              </div>
               <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
             </div>
           )}
