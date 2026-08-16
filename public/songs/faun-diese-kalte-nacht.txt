@@ -1,0 +1,340 @@
+#ARTIST:Faun
+#TITLE:Diese kalte Nacht
+#CREATOR:Daniel-Steinbock
+#BPM:264
+#YEAR:2012
+#VIDEO:v=zr8d9sXioj4
+#LANGUAGE:German
+#GAP:14587,272727272728
+#ALLKARAOKE_ID:faun-diese-kalte-nacht
+#ALLKARAOKE_SID:6122
+#ALLKARAOKE_LASTUPDATE:2026-08-16T00:51:33.375Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=161010
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24157
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:185
+#MP3:Faun - Diese kalte Nacht.mp3
+: 18 2 5 Die
+: 21 2 4 se 
+: 26 5 5 Nacht 
+: 34 3 2 ist 
+: 40 6 2 kalt
+- 46
+: 50 2 2 Und 
+: 53 3 4 der 
+: 58 5 5 Wind, 
+: 65 3 7 der 
+: 73 6 9 bläst
+- 79
+: 84 4 7 Durch 
+: 91 2 7 un
+: 97 2 7 ser 
+: 100 2 7 La
+: 105 2 7 nd
+- 107
+: 113 3 5 Und 
+: 117 2 7 wer 
+: 121 2 10 jet
+: 126 1 9 zt 
+: 129 5 7 noch 
+: 137 3 5 geh
+: 141 1 5 t
+- 142
+: 145 3 4 Ist 
+: 150 2 5 ein 
+: 154 4 2 arm
+: 161 4 2 er 
+: 168 6 2 Tor
+- 174
+: 179 2 4 O
+: 182 2 5 der 
+: 186 4 5 auf 
+: 195 4 7 dem 
+: 202 3 9 Weg 
+: 208 3 7 zu 
+: 213 2 5 der 
+: 219 2 7 Lie
+: 223 1 7 bs
+: 225 2 7 ten
+- 227
+: 230 3 9 Die 
+: 235 2 7 je
+: 239 2 5 de 
+: 243 2 2 Rei
+: 247 2 0 se 
+: 251 6 2 loh
+: 260 2 2 nt
+- 262
+: 265 13 9 Oh 
+: 282 4 5 öff
+: 288 4 2 ne 
+: 298 4 2 mir,
+- 302
+* 305 5 4 Lass 
+: 313 5 5 mich 
+* 321 5 7 hin
+* 329 5 9 ein
+- 334
+: 341 4 7 Dein 
+: 347 7 7 Liebs
+: 357 2 5 ter 
+: 361 3 7 ste
+: 366 3 5 ht 
+: 371 4 5 im 
+: 378 5 10 Mon
+: 386 3 9 den
+: 392 6 7 schein
+- 398
+: 402 2 7 Die
+: 405 2 5 se 
+: 409 2 2 Na
+: 412 2 2 cht 
+: 416 2 0 ist 
+: 420 2 4 so 
+: 424 5 4 kalt,
+- 429
+* 433 5 4 So 
+: 441 5 5 öff
+* 449 5 7 ne 
+* 457 5 9 mir
+- 462
+: 465 4 7 Denn 
+: 473 6 7 mor
+: 484 2 7 gen 
+: 489 4 7 wird 
+: 497 2 7 es 
+* 501 2 9 zu 
+* 505 3 7 spät 
+: 519 8 2 sein
+- 527 760
+- 760
+: 778 3 9 M
+: 783 3 7 ei
+: 788 3 5 n 
+: 793 6 2 Va
+: 802 5 0 ter 
+: 810 5 2 wacht 
+: 819 2 4 ü
+: 822 3 5 ber 
+: 828 5 5 Haus 
+: 835 4 5 und 
+* 841 3 9 Hof
+- 844
+: 850 2 7 Mei
+: 853 2 5 ne 
+: 858 7 7 Tür 
+: 869 3 7 ver
+: 873 4 7 sper
+: 878 3 7 rt 
+: 884 5 7 ein 
+: 891 4 10 Ei
+: 898 4 9 sen
+: 904 6 7 schloss
+- 910
+: 914 3 7 Und 
+: 918 3 5 ich 
+: 923 6 2 ha
+: 932 3 2 be 
+: 937 6 2 kei
+: 948 3 4 nen 
+: 953 4 5 Schlüs
+: 960 4 5 sel 
+: 965 3 7 da
+: 971 6 9 für
+- 977
+: 981 3 7 Es 
+: 985 3 7 fü
+: 989 3 7 hrt 
+: 995 4 7 heut
+: 1001 5 7 Nacht 
+: 1009 4 9 kein 
+: 1016 4 7 Weg 
+: 1024 5 2 zu 
+: 1032 6 2 mir
+- 1038
+: 1043 5 9 Oh, 
+: 1051 4 5 öff
+: 1058 3 2 ne 
+: 1064 5 2 mir,
+- 1069
+* 1074 5 4 Lass 
+: 1082 5 5 mich 
+* 1090 5 7 hin
+* 1098 5 9 ein
+- 1103
+: 1109 4 7 Dein 
+: 1115 7 7 Lieb
+: 1125 2 5 ster 
+: 1129 3 7 steh
+: 1134 3 7 t 
+: 1139 4 5 im 
+: 1146 5 10 Mon
+: 1154 3 9 den
+: 1160 6 7 schein
+- 1166
+: 1170 2 7 Die
+: 1173 2 7 se 
+: 1177 2 5 Na
+: 1180 2 5 cht 
+: 1184 2 2 ist 
+: 1188 2 0 so 
+: 1192 5 2 kalt,
+- 1197
+* 1201 5 4 So 
+: 1209 5 5 öff
+* 1217 5 7 ne 
+* 1225 5 9 mir
+- 1230
+: 1233 4 7 Denn 
+: 1241 6 7 mor
+: 1252 2 7 gen 
+: 1257 4 7 wird 
+: 1265 2 7 es 
+* 1269 2 9 zu 
+* 1273 3 7 spät 
+: 1286 8 2 sein
+- 1294 1791
+- 1791
+: 1809 3 4 Doch 
+: 1813 3 5 die 
+: 1817 5 2 Nacht 
+: 1824 2 2 ist 
+: 1828 3 2 so 
+: 1832 5 2 kalt
+- 1837
+: 1842 3 4 End
+: 1846 2 5 lich 
+: 1850 2 9 öff
+: 1854 2 5 net 
+: 1858 5 7 sie 
+: 1865 4 9 ihm
+- 1869
+: 1873 2 7 Und 
+: 1877 2 5 sie 
+: 1881 2 7 küs
+: 1884 2 7 st 
+: 1887 3 7 ihr
+: 1891 3 7 es 
+: 1895 4 5 Lieb
+: 1901 4 5 sten 
+: 1911 6 9 kal
+: 1920 3 9 te 
+: 1928 3 7 Sti
+: 1932 2 5 rn
+- 1934
+: 1937 3 5 Die
+: 1941 2 4 se 
+: 1945 2 5 Na
+: 1948 2 5 cht 
+: 1951 2 2 ist 
+: 1956 2 2 so 
+: 1960 5 2 kalt
+- 1965
+: 1969 3 4 Doch 
+: 1973 3 5 sie 
+: 1978 3 5 öff
+: 1983 3 5 net 
+: 1988 2 7 die 
+: 1993 5 9 Tür 
+: 2000 3 7 und 
+: 2005 3 5 er 
+: 2009 1 7 küs
+: 2011 2 7 st 
+: 2014 10 7 sie
+- 2024
+: 2040 4 5 Sie
+: 2046 2 2 ben 
+: 2050 2 2 Mal 
+: 2054 1 0 da
+: 2057 3 2 für
+- 2060
+: 2068 5 9 Oh, 
+: 2075 4 5 öff
+: 2081 4 2 ne 
+: 2087 5 2 mir,
+- 2092
+: 2099 5 4 Lass 
+: 2107 5 5 mich 
+: 2115 5 7 hin
+: 2123 5 9 ein
+- 2128
+: 2133 4 7 Dein 
+: 2139 7 7 Lieb
+: 2149 2 7 ster 
+: 2153 3 7 steh
+: 2158 3 7 t 
+: 2163 4 5 im 
+: 2170 5 10 Mon
+: 2178 3 9 den
+: 2184 6 7 schein
+- 2190
+: 2195 2 7 Die
+: 2198 2 5 se 
+: 2202 2 2 Na
+: 2205 2 2 cht 
+: 2209 2 0 ist 
+: 2213 2 2 so 
+: 2217 5 2 kalt,
+- 2222
+: 2226 5 4 So 
+: 2234 5 4 öff
+: 2242 5 7 ne 
+: 2250 5 9 mir
+- 2255
+: 2258 4 7 Denn 
+: 2266 6 7 mor
+: 2277 2 7 gen 
+: 2282 4 7 wird 
+: 2290 2 7 es 
+* 2294 2 9 zu 
+* 2298 3 7 spät 
+: 2312 10 2 sein
+- 2322 2559
+- 2559
+: 2577 3 5 Der 
+: 2584 6 5 Mor
+: 2594 3 2 gen 
+: 2601 4 2 grau
+: 2607 2 2 t 
+: 2610 2 4 Und 
+: 2613 2 4 der 
+: 2617 4 5 Wind,
+- 2621
+: 2625 3 7 Der 
+: 2633 5 9 geht 
+: 2641 5 7 durch 
+: 2651 4 5 un
+: 2657 3 7 ser 
+: 2661 6 7 Land
+- 2667
+: 2674 2 7 Doch 
+: 2678 2 7 das 
+: 2682 5 10 Mäd
+: 2689 5 9 chen 
+: 2697 3 7 lie
+: 2702 2 5 gt 
+: 2705 1 4 in 
+: 2707 1 5 ihr
+: 2710 2 2 es 
+: 2714 3 2 Lieb
+: 2720 3 2 sten 
+: 2726 6 2 Arm
+- 2732
+: 2742 3 4 Und 
+: 2746 3 5 dan
+: 2755 4 5 ket 
+: 2761 3 9 seh
+: 2766 2 9 r 
+: 2769 4 5 der 
+: 2777 3 7 kal
+: 2784 3 7 ten 
+: 2789 5 7 Nacht
+- 2794
+: 2805 2 5 Und 
+: 2809 2 5 dem 
+: 2813 10 5 Wind 
+: 2826 3 2 da
+: 2832 18 2 für
+E

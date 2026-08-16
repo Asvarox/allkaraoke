@@ -38030,6 +38030,35 @@
     "local": false
   },
   {
+    "id": "cro-bye-bye-mtv-unplugged",
+    "title": "Bye Bye (MTV Unplugged)",
+    "artist": "Cro",
+    "video": "huBNgxolXFo",
+    "language": [
+      "German"
+    ],
+    "bpm": 320,
+    "gap": 13735.625,
+    "year": "2016",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-16T00:51:33.986Z",
+    "genre": "Hip-Hop",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "GesangsTalent",
+    "sourceUrl": "https://youtu.be/huBNgxolXFo?si=KafgaKH0vdQnEx6k",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6123,
+    "tracksCount": 1,
+    "search": "crobyebyemtvunplugged",
+    "local": false
+  },
+  {
     "id": "cro-du",
     "title": "Du",
     "artist": "Cro",
@@ -44347,6 +44376,33 @@
     "local": false
   },
   {
+    "id": "die-aerzte-mf",
+    "title": "m+f",
+    "artist": "Die Ärzte",
+    "video": "IcMXftk6Yjc",
+    "language": [
+      "German"
+    ],
+    "bpm": 304,
+    "gap": 3123.157894736842,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-16T00:51:34.486Z",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "Silverbeam",
+    "duration": 255,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6130,
+    "tracksCount": 1,
+    "search": "dieaerztemf",
+    "local": false
+  },
+  {
     "id": "die-arzte-junge",
     "title": "Junge",
     "artist": "Die Ärzte",
@@ -46708,6 +46764,33 @@
     "shortId": 1279,
     "tracksCount": 2,
     "search": "disneyslavalava",
+    "local": false
+  },
+  {
+    "id": "disneys-let-it-shine-me-and-you",
+    "title": "Me And You",
+    "artist": "Disney’s Let It Shine",
+    "video": "HDn-IjrmO18",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 4400.978260869565,
+    "year": "2012",
+    "lastUpdate": "2026-08-16T00:51:33.990Z",
+    "genre": "Soundtrack",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "DoubleDee commissioned by UrGamingTechie",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6124,
+    "tracksCount": 1,
+    "search": "disneysletitshinemeandyou",
     "local": false
   },
   {
@@ -58494,6 +58577,35 @@
     "shortId": 5040,
     "tracksCount": 1,
     "search": "fatboyslimtherockafellerskank",
+    "local": false
+  },
+  {
+    "id": "faun-diese-kalte-nacht",
+    "title": "Diese kalte Nacht",
+    "artist": "Faun",
+    "video": "zr8d9sXioj4",
+    "language": [
+      "German"
+    ],
+    "bpm": 264,
+    "gap": 14587.272727272728,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-16T00:51:33.375Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Daniel-Steinbock",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=161010",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24157",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6122,
+    "tracksCount": 1,
+    "search": "faundiesekaltenacht",
     "local": false
   },
   {
@@ -70785,6 +70897,35 @@
     "shortId": 1853,
     "tracksCount": 2,
     "search": "hamiltongunsandships",
+    "local": false
+  },
+  {
+    "id": "hamilton-helpless",
+    "title": "Helpless",
+    "artist": "Hamilton",
+    "video": "Tg6UC0bVDS4",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.6,
+    "gap": 26.39016897081416,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-16T00:51:34.484Z",
+    "genre": "Musical",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "UltraSinger, mindtakerr",
+    "sourceUrl": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DROZBx89NZmQ&ved=2ahUKEwiw7Y3Fx-iVAxVPrVYBHbstLd8QwqsBegQIFhAB&usg=AOvVaw3vGiJzQIARHfnkEcWp1rat",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "shortId": 6129,
+    "tracksCount": 1,
+    "search": "hamiltonhelpless",
     "local": false
   },
   {
@@ -91197,6 +91338,35 @@
     "local": false
   },
   {
+    "id": "korn-adidas",
+    "title": "A.D.I.D.A.S.",
+    "artist": "KoRn",
+    "video": "239vHrwt8Rs",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.5,
+    "gap": 7735.609756097561,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-16T00:51:34.488Z",
+    "genre": "Nu Metal",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Necturion",
+    "sourceUrl": "https://www.youtube.com/watch?v=239vHrwt8Rs",
+    "duration": 155,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6131,
+    "tracksCount": 1,
+    "search": "kornadidas",
+    "local": false
+  },
+  {
     "id": "korn-alone-i-break",
     "title": "Alone I Break",
     "artist": "KoRn",
@@ -102036,6 +102206,36 @@
     "local": false
   },
   {
+    "id": "los-tipitos-algo",
+    "title": "Algo",
+    "artist": "Los Tipitos",
+    "video": "fQDqLu3OjzU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 350,
+    "gap": 14609.285714285714,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-16T00:51:34.333Z",
+    "genre": "Rock",
+    "realBpm": 350,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Tipitos&cancion=Algo",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6127,
+    "tracksCount": 1,
+    "search": "lostipitosalgo",
+    "local": false
+  },
+  {
     "id": "los-tipitos-campanas-en-la-noche",
     "title": "Campanas en la noche",
     "artist": "Los Tipitos",
@@ -111409,6 +111609,34 @@
     "shortId": 2932,
     "tracksCount": 1,
     "search": "metallicaidisappear",
+    "local": false
+  },
+  {
+    "id": "metallica-king-nothing",
+    "title": "King Nothing",
+    "artist": "Metallica",
+    "video": "V5j8lz4oD4Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.16,
+    "gap": 59928.0374402279,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-16T00:51:34.155Z",
+    "genre": "Hard Rock",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 321,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6125,
+    "tracksCount": 1,
+    "search": "metallicakingnothing",
     "local": false
   },
   {
@@ -127329,6 +127557,33 @@
     "local": false
   },
   {
+    "id": "pantera-walk",
+    "title": "Walk",
+    "artist": "Pantera",
+    "video": "AkFqg5wAuFk",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.7,
+    "gap": 34536.22303093319,
+    "year": "1992",
+    "lastUpdate": "2026-08-16T00:51:34.336Z",
+    "genre": "Metal",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 316,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6128,
+    "tracksCount": 1,
+    "search": "panterawalk",
+    "local": false
+  },
+  {
     "id": "papa-roach-between-angels-and-insects",
     "title": "Between Angels And Insects",
     "artist": "Papa Roach",
@@ -132184,6 +132439,33 @@
     "shortId": 6013,
     "tracksCount": 1,
     "search": "provinzfeatninachubazornliebe",
+    "local": false
+  },
+  {
+    "id": "provinz-pazifik",
+    "title": "Pazifik",
+    "artist": "Provinz",
+    "video": "TqEznNNS3F0",
+    "language": [
+      "German"
+    ],
+    "bpm": 273.5,
+    "gap": 8042.7970749542965,
+    "year": "2025",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-16T00:51:34.157Z",
+    "realBpm": 137,
+    "volume": 1,
+    "author": "Fenyesyes",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6126,
+    "tracksCount": 1,
+    "search": "provinzpazifik",
     "local": false
   },
   {
