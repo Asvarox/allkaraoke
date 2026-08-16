@@ -15,7 +15,7 @@ export async function joinOnlineRoom(
 ) {
   const pages = initialise(page, context, browser);
 
-  await page.goto(`/online/?room=${roomCode}&e2e-test`);
+  await pages.onlineSetupPage.gotoRoomLink(roomCode);
   await pages.onlineSetupPage.submitRoomCode();
   await pages.onlineSetupPage.completeNameMicAndCalibrationSteps(name);
   await pages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });

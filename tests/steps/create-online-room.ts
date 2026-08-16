@@ -9,7 +9,7 @@ import initialise from '../page-objects/initialise';
 export async function createOnlineRoom(page: Page, context: BrowserContext, browser: Browser, name: string) {
   const pages = initialise(page, context, browser);
 
-  await page.goto('/online/?e2e-test');
+  await pages.onlineSetupPage.goto();
   await pages.onlineSetupPage.createRoom(name);
   await pages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
 

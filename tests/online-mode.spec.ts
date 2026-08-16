@@ -7,6 +7,7 @@ import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
 import { joinOnlineRoom } from './steps/join-online-room';
 import { newPlayerPage } from './steps/new-player-page';
+import { openOnlinePauseOverlay } from './steps/open-online-pause-overlay';
 import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
 // The online room server (partykit dev) is started via the webServer entry in playwright.config.ts
@@ -51,7 +52,7 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   const guestPages = initialise(guestPage, guestPage.context(), browser);
 
   await test.step('Guest joins by link — the code step arrives prefilled from the invite', async () => {
-    await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
+    await guestPages.onlineSetupPage.gotoRoomLink(roomCode);
     await expect(guestPages.onlineSetupPage.roomCodeInput).toHaveValue(roomCode);
     await guestPages.onlineSetupPage.submitRoomCode();
     await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
@@ -149,15 +150,7 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   });
 
   await test.step('Any singer can pause — it pauses everyone; any singer can resume', async () => {
-    // In Firefox the first Escape sometimes isn't registered by the game — retry until paused
-    await expect(async () => {
-      if (!(await guestPage.getByTestId('online-pause-overlay').isVisible())) {
-        await guestPage.keyboard.press('Escape');
-      }
-      await expect(page.getByTestId('online-pause-overlay')).toBeVisible({
-        timeout: 3_000,
-      });
-    }).toPass({ timeout: 20_000 });
+    await openOnlinePauseOverlay(guestPage, page);
     await expect(page.getByTestId('online-pause-overlay')).toContainText(guestName);
     await expect(guestPage.getByTestId('online-pause-overlay')).toBeVisible();
 
@@ -210,34 +203,14 @@ test('Online mode: the host ends the song from the pause menu', async ({ page, c
   const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
   const guestPage = await newPlayerPage(browser);
-  const guestPages = initialise(guestPage, guestPage.context(), browser);
-  await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
-  await guestPages.onlineSetupPage.submitRoomCode();
-  await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
-  await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
 
   await test.step('Host picks a song and starts it', async () => {
-    await pages.onlineLobbyPage.goToSongSelection();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
-    await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.openPreviewForSong(song.ID);
-    await pages.songPreviewPage.goNext();
-    await page.getByTestId('play-song-button').click();
-
-    await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
-    await pages.onlineLobbyPage.startSong();
-    await page.getByTestId('online-ready-button').click();
-    await guestPage.getByTestId('online-ready-button').click();
-    await expect(page.getByTestId('online-leaderboard')).toBeVisible({ timeout: 15_000 });
+    await startOnlineSongAndReachLeaderboard(page, pages, guestPages, song);
   });
 
   await test.step('Ending the game mid-song takes everyone to the results, not a stuck screen', async () => {
-    await expect(async () => {
-      if (!(await page.getByTestId('online-pause-overlay').isVisible())) {
-        await page.keyboard.press('Escape');
-      }
-      await expect(page.getByTestId('online-pause-overlay')).toBeVisible({ timeout: 3_000 });
-    }).toPass({ timeout: 20_000 });
+    await openOnlinePauseOverlay(page);
 
     await page.getByTestId('online-end-game-button').click();
     await page.getByTestId('online-end-game-confirm-modal').getByRole('button', { name: 'End game' }).click();
@@ -259,11 +232,7 @@ test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, co
   const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
   const guestPage = await newPlayerPage(browser);
-  const guestPages = initialise(guestPage, guestPage.context(), browser);
-  await guestPage.goto(`/online/?room=${roomCode}&e2e-test`);
-  await guestPages.onlineSetupPage.submitRoomCode();
-  await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
-  await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
   await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
 
   await test.step('Host kicks the guest from the lobby, with a confirmation', async () => {
@@ -305,7 +274,7 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
   const guestPages = initialise(guestPage, guestPage.context(), browser);
 
   await test.step('Joining a room code that does not exist is rejected upfront', async () => {
-    await guestPage.goto('/online/?e2e-test');
+    await guestPages.onlineSetupPage.goto();
     await guestPages.onlineSetupPage.joinRoomByCode('zzzzz');
     await expect(guestPage.getByText('This room does not exist')).toBeVisible();
   });
@@ -358,34 +327,47 @@ test('Online mode: a full room rejects the next joiner', async ({ page, context,
   // are filled at the protocol level here and only the final, rejected join goes through the
   // real UI — which is the part actually under test.
   const fillerSockets: WebSocket[] = [];
-  for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
-    const socket = new WebSocket(
-      `ws://localhost:1999/party/${roomCode}?pid=${crypto.randomUUID()}&name=Filler+${seat}`,
-    );
-    await new Promise<void>((resolve, reject) => {
-      socket.addEventListener('message', (event) => {
-        const message = JSON.parse(event.data.toString());
-        if (message.t === 'joined') resolve();
+  try {
+    for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
+      const socket = new WebSocket(
+        `ws://localhost:1999/party/${roomCode}?pid=${crypto.randomUUID()}&name=Filler+${seat}`,
+      );
+      fillerSockets.push(socket);
+      await new Promise<void>((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error(`Filler socket ${seat} timed out joining`)), 10_000);
+        socket.addEventListener('message', (event) => {
+          const message = JSON.parse(event.data.toString());
+          if (message.t === 'joined') {
+            clearTimeout(timer);
+            resolve();
+          }
+        });
+        socket.addEventListener('error', () => {
+          clearTimeout(timer);
+          reject(new Error(`Filler socket ${seat} failed to join`));
+        });
+        socket.addEventListener('close', () => {
+          clearTimeout(timer);
+          reject(new Error(`Filler socket ${seat} closed before joining`));
+        });
       });
-      socket.addEventListener('error', () => reject(new Error(`Filler socket ${seat} failed to join`)));
+    }
+    await expect(pages.onlineLobbyPage.participantElement(ONLINE_MAX_PLAYERS - 1)).toBeVisible();
+
+    await test.step('The room is at capacity — the next singer is turned away after the wizard, not before', async () => {
+      const overflowPage = await newPlayerPage(browser);
+      const overflowPages = initialise(overflowPage, overflowPage.context(), browser);
+      await overflowPages.onlineSetupPage.gotoRoomLink(roomCode);
+      // The code itself is valid — it's the seat count that fails, so this passes
+      await overflowPages.onlineSetupPage.submitRoomCode();
+      await overflowPages.onlineSetupPage.completeNameMicAndCalibrationSteps('Overflow Singer');
+      await expect(overflowPages.onlineSetupPage.joinRejectedElement).toBeVisible({ timeout: 15_000 });
+      await expect(overflowPages.onlineSetupPage.joinRejectedElement).toContainText('full');
+      await overflowPage.context().close();
     });
-    fillerSockets.push(socket);
+  } finally {
+    fillerSockets.forEach((socket) => socket.close());
   }
-  await expect(pages.onlineLobbyPage.participantElement(ONLINE_MAX_PLAYERS - 1)).toBeVisible();
-
-  await test.step('The room is at capacity — the next singer is turned away after the wizard, not before', async () => {
-    const overflowPage = await newPlayerPage(browser);
-    const overflowPages = initialise(overflowPage, overflowPage.context(), browser);
-    await overflowPage.goto(`/online/?room=${roomCode}&e2e-test`);
-    // The code itself is valid — it's the seat count that fails, so this passes
-    await overflowPages.onlineSetupPage.submitRoomCode();
-    await overflowPages.onlineSetupPage.completeNameMicAndCalibrationSteps('Overflow Singer');
-    await expect(overflowPages.onlineSetupPage.joinRejectedElement).toBeVisible({ timeout: 15_000 });
-    await expect(overflowPages.onlineSetupPage.joinRejectedElement).toContainText('full');
-    await overflowPage.context().close();
-  });
-
-  fillerSockets.forEach((socket) => socket.close());
 });
 
 test('Online mode: a guest refreshing mid-song reconnects into the same running game', async ({
@@ -401,7 +383,7 @@ test('Online mode: a guest refreshing mid-song reconnects into the same running 
   const guestPage = await newPlayerPage(browser);
   const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
 
-  await startOnlineSongAndReachLeaderboard(page, pages, guestPage, song);
+  await startOnlineSongAndReachLeaderboard(page, pages, guestPages, song);
 
   await test.step('Guest refreshes mid-song — they land straight back in the running game, no setup wizard', async () => {
     await guestPage.reload();
@@ -434,7 +416,7 @@ test('Online mode: host closing the tab mid-song still lets the round finish and
   const guestPage = await newPlayerPage(browser);
   const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
 
-  await startOnlineSongAndReachLeaderboard(page, pages, guestPage, song);
+  await startOnlineSongAndReachLeaderboard(page, pages, guestPages, song);
 
   await test.step('Host closes the tab entirely mid-song — the guest is left to finish the round alone', async () => {
     await page.close();

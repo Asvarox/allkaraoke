@@ -363,9 +363,10 @@ jobs:
         # One preview deployment per branch (not per run), so re-pushing a branch replaces its own
         # room server instead of leaking a new one, and the URL stays stable for the whole PR.
         # Must be a valid DNS label: lowercase alphanumerics and dashes, <= 63 chars with the prefix.
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
-          branch="${{ github.head_ref || github.ref_name }}"
-          slug=$(printf '%s' "$branch" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//' | cut -c1-40 | sed -E 's/-+$//')
+          slug=$(printf '%s' "$BRANCH_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//' | cut -c1-40 | sed -E 's/-+$//')
           echo "name=pr-${slug}" >> "$GITHUB_OUTPUT"
       - name: Deploy PartyKit online room (preview)
         env:

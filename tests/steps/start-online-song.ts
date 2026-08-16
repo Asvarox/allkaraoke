@@ -11,7 +11,7 @@ type Pages = ReturnType<typeof initialise>;
 export async function startOnlineSongAndReachLeaderboard(
   hostPage: Page,
   hostPages: Pages,
-  guestPage: Page,
+  guestPages: Pages,
   song: { ID: string; language: string },
 ) {
   await hostPages.onlineLobbyPage.goToSongSelection();
@@ -23,8 +23,8 @@ export async function startOnlineSongAndReachLeaderboard(
 
   await expect(hostPages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
   await hostPages.onlineLobbyPage.startSong();
-  await hostPage.getByTestId('online-ready-button').click();
-  await guestPage.getByTestId('online-ready-button').click();
+  await hostPages.onlineSingingPage.confirmReady();
+  await guestPages.onlineSingingPage.confirmReady();
 
-  await expect(hostPage.getByTestId('online-leaderboard')).toBeVisible({ timeout: 15_000 });
+  await hostPages.onlineSingingPage.expectLeaderboardToBeVisible({ timeout: 15_000 });
 }

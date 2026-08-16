@@ -90,7 +90,7 @@ export class OnlineLobbyPagePO {
 
   public async kickParticipant(playerNumber: number) {
     await this.kickButton(playerNumber).click();
-    await this.kickConfirmModalElement.getByRole('button', { name: 'Remove' }).click();
+    await this.kickConfirmModalElement.getByTestId('confirm-kick-participant').click();
   }
 
   public get customizeButton() {
@@ -123,11 +123,11 @@ export class OnlineLobbyPagePO {
 
   public async leaveRoomAndCancel() {
     await this.leaveRoomButton.click();
-    await this.leaveConfirmModalElement.getByRole('button', { name: 'Stay in the room' }).click();
+    await this.leaveConfirmModalElement.getByTestId('stay-in-room').click();
   }
 
   public async leaveRoomAndConfirm() {
     await this.leaveRoomButton.click();
-    await this.leaveConfirmModalElement.getByRole('button', { name: 'Leave room' }).click();
+    await this.leaveConfirmModalElement.getByTestId('confirm-leave-room').click();
   }
 }

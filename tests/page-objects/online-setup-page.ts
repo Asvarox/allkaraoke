@@ -35,6 +35,16 @@ export class OnlineSetupPagePO {
     return this.page.getByTestId('online-join-rejected');
   }
 
+  /** Lands on the online mode entry screen, offering create/join. */
+  public async goto() {
+    await this.page.goto('/online/?e2e-test');
+  }
+
+  /** Lands on the online mode entry screen with a room's code prefilled from an invite link. */
+  public async gotoRoomLink(roomCode: string) {
+    await this.page.goto(`/online/?room=${roomCode}&e2e-test`);
+  }
+
   public async goBack() {
     await this.backButton.click();
   }
