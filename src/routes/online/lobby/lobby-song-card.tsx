@@ -48,12 +48,14 @@ function LobbySongCard({ preview, roomCode, onChooseSong, footer }: Props) {
 
   const onVideoStateChange = useCallback(
     (state: VideoState) => {
-      if (state === VideoState.ENDED) {
-        player.current?.seekTo(start);
+      if (state === VideoState.ENDED && video) {
+        // Reload (rather than seekTo) so the endSeconds bound is re-established — a bare seek
+        // doesn't reliably re-arm it, and the preview would play past `end` on the next loop.
+        player.current?.loadVideoById({ videoId: video, startSeconds: start, endSeconds: end });
         player.current?.playVideo();
       }
     },
-    [start],
+    [video, start, end],
   );
 
   return (

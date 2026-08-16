@@ -46,7 +46,19 @@
     "src/modules/online/client/hooks.ts",
     "src/modules/online/client/song-preview.ts",
     "src/modules/online/client/song-transfer.ts",
-    "src/modules/online/format-score.ts"
+    "src/modules/online/format-score.ts",
+    "src/routes/online/components/kick-player.tsx",
+    "src/routes/online/components/participant-badges.tsx",
+    "src/routes/online/components/participant-slot.tsx",
+    "src/routes/online/hooks/use-online-name.ts",
+    "src/routes/online/hooks/use-song-upload.ts",
+    "src/routes/online/lobby/customize-modal.tsx",
+    "src/routes/online/lobby/lobby-song-card.tsx",
+    "src/routes/online/lobby/lobby.tsx",
+    "src/routes/online/lobby/participant-list.tsx",
+    "src/routes/online/lobby/room-code-panel.tsx",
+    "src/routes/online/lobby/song-players-panel.tsx",
+    "src/routes/online/setup-wizard.tsx"
   ],
   "ignoreDependencies": [
     "vite-tsconfig-paths",

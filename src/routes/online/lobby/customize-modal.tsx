@@ -26,9 +26,8 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
 
   useEffect(() => {
     if (open) setName(self?.name ?? '');
-  }, [open, self?.name]);
-
-  const { register } = useKeyboardNav({ enabled: open, onBackspace: onClose });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- seed only when the modal opens; a self?.name change while it's open (e.g. an echo of our own edit) must not clobber what's being typed
+  }, [open]);
 
   const submitName = () => {
     const trimmed = name.trim();
@@ -42,6 +41,8 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
     submitName();
     onClose();
   };
+
+  const { register } = useKeyboardNav({ enabled: open, onBackspace: close });
 
   // Picking a color is the whole decision — apply it (along with any name edit) and get out of the
   // way, rather than asking for a second click on Done to confirm what was already chosen.
