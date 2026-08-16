@@ -9,11 +9,14 @@ import { NavButton } from '~/modules/elements/nav-controls';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { FeatureFlags } from '~/modules/utils/feature-flags';
+import useFeatureFlag from '~/modules/utils/use-feature-flag';
 
 function Welcome() {
   useBackground(true);
 
   const navigate = useSmoothNavigate();
+  const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
 
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav({ title: 'Main Menu' });
@@ -36,6 +39,11 @@ function Welcome() {
           <NavButton name="sing-a-song" remoteIcon="play" onClick={() => navigate('game/')}>
             Sing a song
           </NavButton>
+          {onlineModeEnabled && (
+            <NavButton name="online" remoteIcon="play" onClick={() => navigate('online/')}>
+              Sing Online
+            </NavButton>
+          )}
           <NavButton name="select-input" onClick={() => navigate('select-input/')}>
             Setup Microphones
           </NavButton>
