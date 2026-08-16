@@ -11,11 +11,11 @@ export class RemoteMicChangeMicColorPagePO {
   ) {}
 
   public async setOrChangeMicAssignment(micColor: micColorType) {
-    await this.page.getByTestId(`change-to-player-${micColorToNumberMap[micColor]}`).click();
+    await this.page.getByTestId(`player-color-${micColorToNumberMap[micColor]}`).click();
   }
 
   public getMicAssignmentLocator(micColor: micColorType) {
-    return this.page.getByTestId(`change-to-player-${micColorToNumberMap[micColor]}`).getByTestId('mic-occupant');
+    return this.page.getByTestId(`player-color-${micColorToNumberMap[micColor]}`).getByTestId('player-color-occupant');
   }
 
   public async expectAnyPlayerToHaveMicAssigned(micColor: micColorType, playerName: string) {
