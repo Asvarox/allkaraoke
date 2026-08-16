@@ -14,6 +14,9 @@ import { LandingPagePO } from './landing-page';
 import { MainMenuPagePO } from './main-menu-page';
 import { ManageSetlistsPagePO } from './manage-setlists-page';
 import { ManageSongsPagePO } from './manage-songs-page';
+import { OnlineLobbyPagePO } from './online-lobby-page';
+import { OnlineSetupPagePO } from './online-setup-page';
+import { OnlineSingingPagePO } from './online-singing-page';
 import { PostGameHighScoresPagePO } from './post-game-high-scores-page';
 import { PostGameResultsPagePO } from './post-game-results-page';
 import { RateUnfinishedSongPagePO } from './rate-unfinished-song-page';
@@ -59,5 +62,8 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
     calibration: new Calibration(page, context, browser),
     manageSetlists: new ManageSetlistsPagePO(page, context, browser),
+    onlineSetupPage: new OnlineSetupPagePO(page, context, browser),
+    onlineLobbyPage: new OnlineLobbyPagePO(page, context, browser),
+    onlineSingingPage: new OnlineSingingPagePO(page, context, browser),
   };
 }
