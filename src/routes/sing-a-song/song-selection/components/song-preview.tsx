@@ -106,13 +106,15 @@ export default function SongPreviewComponent({
   const onVideoStateChange = useCallback(
     (state: VideoState) => {
       if (state === VideoState.ENDED) {
-        player.current?.seekTo(start);
+        // Reload (rather than seekTo) so the endSeconds bound is re-established — a bare seek
+        // doesn't reliably re-arm it, and the preview would play past `previewEnd` on the next loop.
+        player.current?.loadVideoById({ videoId, startSeconds: previewStart, endSeconds: previewEnd });
         player.current?.playVideo();
       } else if (state === VideoState.PLAYING) {
         setShowVideo(true);
       }
     },
-    [start],
+    [videoId, previewStart, previewEnd],
   );
 
   const backButton = (
