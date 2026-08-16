@@ -5,6 +5,8 @@ export interface PingPongTrackerOptions {
   initialLatency?: number;
   /** Called with every fresh measurement — remote mic reports pings to analytics through it. */
   onMeasurement?: (latencyMs: number) => void;
+  /** Maximum time to wait for a pong before giving up on it and re-arming the loop. */
+  maxWaitMs?: number;
 }
 
 /** Round-trip latency loop shared by the remote-mic and online clients: send a ping, measure the
@@ -12,20 +14,25 @@ export interface PingPongTrackerOptions {
  * feeds back the pongs it receives, so the tracker stays transport- and protocol-agnostic. */
 export class PingPongTracker {
   private readonly intervalMs: number;
+  private readonly maxWaitMs: number;
   private latencyMs: number;
   private pingStartedAt = 0;
   private timeout: ReturnType<typeof setTimeout> | null = null;
+  private watchdog: ReturnType<typeof setTimeout> | null = null;
   private send: (() => void) | null = null;
 
   public constructor(private readonly options: PingPongTrackerOptions = {}) {
     this.intervalMs = options.intervalMs ?? 2_000;
+    this.maxWaitMs = options.maxWaitMs ?? 10_000;
     this.latencyMs = options.initialLatency ?? 0;
   }
 
   /** Starts (or restarts) the loop: pings right away, then again after every pong. */
   public start = (send: () => void): void => {
     if (this.timeout) clearTimeout(this.timeout);
+    if (this.watchdog) clearTimeout(this.watchdog);
     this.timeout = null;
+    this.watchdog = null;
     this.send = send;
     this.ping();
   };
@@ -34,15 +41,25 @@ export class PingPongTracker {
     this.timeout = null;
     this.pingStartedAt = Date.now();
     this.send?.();
+    this.watchdog = setTimeout(this.handleMissingPong, this.maxWaitMs);
   };
 
   /** Feed in an incoming pong: records the round trip and schedules the next ping. Pongs arriving
    * without a ping in flight are ignored, so the loop can never fork into two. */
   public handlePong = (): void => {
     if (!this.pingStartedAt) return;
+    if (this.watchdog) clearTimeout(this.watchdog);
+    this.watchdog = null;
     this.latencyMs = Date.now() - this.pingStartedAt;
     this.pingStartedAt = 0;
     this.options.onMeasurement?.(this.latencyMs);
+    this.timeout = setTimeout(this.ping, this.intervalMs);
+  };
+
+  /** A pong never arrived within maxWaitMs: drop the stale ping and re-arm so the loop keeps running. */
+  private handleMissingPong = (): void => {
+    this.watchdog = null;
+    this.pingStartedAt = 0;
     this.timeout = setTimeout(this.ping, this.intervalMs);
   };
 
@@ -59,7 +76,9 @@ export class PingPongTracker {
   /** Stops the loop and drops the outstanding ping. */
   public stop = (): void => {
     if (this.timeout) clearTimeout(this.timeout);
+    if (this.watchdog) clearTimeout(this.watchdog);
     this.timeout = null;
+    this.watchdog = null;
     this.pingStartedAt = 0;
   };
 }
