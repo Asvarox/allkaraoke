@@ -1,9 +1,13 @@
 import { expect, test } from '@playwright/test';
 
+import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
+
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
+import { joinOnlineRoom } from './steps/join-online-room';
 import { newPlayerPage } from './steps/new-player-page';
+import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
 // The online room server (partykit dev) is started via the webServer entry in playwright.config.ts
 
@@ -335,6 +339,115 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
     await expect(guestPages.onlineLobbyPage.participantElement(0)).not.toBeVisible({ timeout: 30_000 });
     await expect(guestPages.onlineLobbyPage.participantHostTagElement(3)).toBeVisible();
     // the new host can select the song now
+    await expect(guestPages.onlineLobbyPage.chooseSongButton).toBeVisible();
+  });
+
+  await guestPage.context().close();
+});
+
+test('Online mode: a full room rejects the next joiner', async ({ page, context, browser }) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+
+  // Fill every remaining seat with a bare WebSocket connection straight to the partykit room —
+  // the same `pid`/`name` query-string join the real client uses (see online-client.ts), just
+  // without the browser tab, React app or fake mic stream around it. Five *real* guest tabs each
+  // holding a live fake-audio capture reliably deadlocks Chromium's fake-audio backend, so seats
+  // are filled at the protocol level here and only the final, rejected join goes through the
+  // real UI — which is the part actually under test.
+  const fillerSockets: WebSocket[] = [];
+  for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
+    const socket = new WebSocket(
+      `ws://localhost:1999/party/${roomCode}?pid=${crypto.randomUUID()}&name=Filler+${seat}`,
+    );
+    await new Promise<void>((resolve, reject) => {
+      socket.addEventListener('message', (event) => {
+        const message = JSON.parse(event.data.toString());
+        if (message.t === 'joined') resolve();
+      });
+      socket.addEventListener('error', () => reject(new Error(`Filler socket ${seat} failed to join`)));
+    });
+    fillerSockets.push(socket);
+  }
+  await expect(pages.onlineLobbyPage.participantElement(ONLINE_MAX_PLAYERS - 1)).toBeVisible();
+
+  await test.step('The room is at capacity — the next singer is turned away after the wizard, not before', async () => {
+    const overflowPage = await newPlayerPage(browser);
+    const overflowPages = initialise(overflowPage, overflowPage.context(), browser);
+    await overflowPage.goto(`/online/?room=${roomCode}&e2e-test`);
+    // The code itself is valid — it's the seat count that fails, so this passes
+    await overflowPages.onlineSetupPage.submitRoomCode();
+    await overflowPages.onlineSetupPage.completeNameMicAndCalibrationSteps('Overflow Singer');
+    await expect(overflowPages.onlineSetupPage.joinRejectedElement).toBeVisible({ timeout: 15_000 });
+    await expect(overflowPages.onlineSetupPage.joinRejectedElement).toContainText('full');
+    await overflowPage.context().close();
+  });
+
+  fillerSockets.forEach((socket) => socket.close());
+});
+
+test('Online mode: a guest refreshing mid-song reconnects into the same running game', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
+
+  await startOnlineSongAndReachLeaderboard(page, pages, guestPage, song);
+
+  await test.step('Guest refreshes mid-song — they land straight back in the running game, no setup wizard', async () => {
+    await guestPage.reload();
+    await expect(guestPages.onlineLobbyPage.lobbyElement.or(guestPage.getByTestId('online-leaderboard'))).toBeVisible({
+      timeout: 15_000,
+    });
+    // Not bounced back to name/mic/calibration — the session remembers it already finished the wizard
+    await expect(guestPages.onlineSetupPage.createRoomButton).not.toBeVisible();
+  });
+
+  await test.step('The host was unaffected the whole time and the round still finishes for both', async () => {
+    await expect(page.getByTestId('online-results')).toBeVisible({ timeout: 60_000 });
+    await expect(guestPage.getByTestId('online-results')).toBeVisible({ timeout: 30_000 });
+    await expect(page.getByTestId('player-0-name')).toHaveText(hostName);
+  });
+
+  await guestPage.context().close();
+});
+
+test('Online mode: host closing the tab mid-song still lets the round finish and promotes the guest', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
+
+  await startOnlineSongAndReachLeaderboard(page, pages, guestPage, song);
+
+  await test.step('Host closes the tab entirely mid-song — the guest is left to finish the round alone', async () => {
+    await page.close();
+    await expect(guestPage.getByTestId('online-results')).toBeVisible({ timeout: 60_000 });
+    await expect(guestPage.getByTestId('player-1-name')).toHaveText(guestName);
+  });
+
+  await test.step('Back at the lobby, the grace period has expired and the guest is now host', async () => {
+    await guestPage.getByTestId('skip-animation-button').click();
+    await guestPage.getByTestId('highscores-button').click();
+    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 10_000 });
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).not.toBeVisible({ timeout: 30_000 });
+    await expect(guestPages.onlineLobbyPage.participantHostTagElement(1)).toBeVisible();
     await expect(guestPages.onlineLobbyPage.chooseSongButton).toBeVisible();
   });
 
