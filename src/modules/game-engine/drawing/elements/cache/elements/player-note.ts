@@ -1,6 +1,7 @@
 import applyColor from '~/modules/game-engine/drawing/apply-color';
 import roundRect from '~/modules/game-engine/drawing/elements/round-rect';
 import * as test from '~/modules/game-engine/drawing/elements/utils/get-note-color';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 export default function drawRawPlayerNote(
   ctx: CanvasRenderingContext2D,
@@ -8,7 +9,7 @@ export default function drawRawPlayerNote(
   y: number,
   width: number,
   height: number,
-  playerNumber: 0 | 1 | 2 | 3,
+  playerNumber: PlayerNumber,
   isHit: boolean,
   isPerfect: boolean,
   isStar: boolean,

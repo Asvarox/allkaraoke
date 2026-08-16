@@ -1,5 +1,14 @@
 import { captureException } from '@sentry/react';
-import { createContext, useContext, useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from 'react';
 
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
@@ -17,8 +26,27 @@ import useKeyboardHelp from './use-keyboard-help';
  *
  * But still works even with dynamic elements :shrugs:
  */
+// A confirmation takes the keyboard for itself: every other navigation on screen pauses while one is
+// up, so Enter can't also fire whatever the screen underneath had remembered. Module-level rather
+// than a context, because the screens that need pausing sit anywhere above the modal in the tree —
+// usually not even aware of it (a singer's row opens the kick confirmation, the lobby has to pause).
+let exclusiveClaims = 0;
+const exclusiveListeners = new Set<() => void>();
+const notifyExclusive = () => exclusiveListeners.forEach((listener) => listener());
+const subscribeExclusive = (listener: () => void) => {
+  exclusiveListeners.add(listener);
+  return () => void exclusiveListeners.delete(listener);
+};
+const getExclusiveClaims = () => exclusiveClaims;
+
 interface Options {
   enabled?: boolean;
+  /**
+   * Claim the keyboard while enabled, pausing every other navigation. For screens that are meant to
+   * be answered before anything else happens — a confirmation modal. Nesting two is not supported:
+   * both stay live.
+   */
+  exclusive?: boolean;
   onBackspace?: () => void;
   backspaceHelp?: string | null;
   direction?: 'horizontal' | 'vertical';
@@ -44,7 +72,8 @@ const sameControls = (a: ControlDescriptor[], b: ControlDescriptor[]) =>
 
 export default function useKeyboardNav(options: Options = {}, debug = false) {
   const {
-    enabled = true,
+    enabled: enabledByCaller = true,
+    exclusive = false,
     onBackspace,
     backspaceHelp = null,
     direction = 'vertical',
@@ -52,6 +81,19 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     title,
     titleIcon,
   } = options;
+
+  const claimed = useSyncExternalStore(subscribeExclusive, getExclusiveClaims) > 0;
+  const enabled = enabledByCaller && (exclusive || !claimed);
+
+  useEffect(() => {
+    if (!exclusive || !enabledByCaller) return;
+    exclusiveClaims++;
+    notifyExclusive();
+    return () => {
+      exclusiveClaims--;
+      notifyExclusive();
+    };
+  }, [exclusive, enabledByCaller]);
 
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
   const elementList = useRef<string[]>([]);

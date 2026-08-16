@@ -2,11 +2,12 @@ import { ComponentProps } from 'react';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
+import { PlayerNumber } from '~/modules/players/player-number';
 
 import Ping from './ping';
 
 interface Props extends ComponentProps<'div'> {
-  playerNumber: 0 | 1 | 2 | 3;
+  playerNumber: PlayerNumber;
   tooltipPosition?: 'start' | 'end';
 }
 

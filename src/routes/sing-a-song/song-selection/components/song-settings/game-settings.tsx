@@ -6,10 +6,13 @@ import { v4 } from 'uuid';
 
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
 import { NavButton, NavRemoteControl, NavSwitcher } from '~/modules/elements/nav-controls';
+import { Switcher } from '~/modules/elements/switcher';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import gameEvents from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
+import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import isDev from '~/modules/utils/is-dev';
@@ -47,8 +50,16 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
   const [rememberedMode, setMode] = useSetGameMode(null);
-  const mode = rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL);
+  const online = useOnlineSongSelection();
+  // Online play only supports Duel for now
+  const mode = online
+    ? GAME_MODE.DUEL
+    : (rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL));
   const [tolerance, setTolerance] = useSetTolerance(1);
+
+  useEffect(() => {
+    online?.onPreviewSettingsChange(songPreview, difficultyNames[tolerance]);
+  }, [songPreview, tolerance, online]);
 
   const players = PlayersManager.getPlayers();
   const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
@@ -80,7 +91,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
   const changeMode = () => setMode(nextValue(Object.values(GAME_MODE), mode));
   const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
 
-  const toggleTrack = (playerNumber: 0 | 1 | 2 | 3) => () =>
+  const toggleTrack = (playerNumber: PlayerNumber) => () =>
     setPlayerSetup((current) =>
       current.map((s) => (s.number === playerNumber ? { ...s, track: (s.track + 1) % songPreview.tracksCount } : s)),
     );
@@ -114,14 +125,26 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
           className="w-full"
           onClick={changeTolerance}
         />
-        <NavSwitcher
-          name="game-mode-setting"
-          label="Mode"
-          value={gameModeNames[mode]}
-          data-test-value={gameModeNames[mode]}
-          className="w-full"
-          onClick={changeMode}
-        />
+        {online ? (
+          // Online play is locked to Duel, so the mode is display-only — a raw Switcher keeps the
+          // test id without registering a control the host can't actually change.
+          <Switcher
+            data-test="game-mode-setting"
+            label="Mode"
+            value={gameModeNames[mode]}
+            data-test-value={gameModeNames[mode]}
+            className="w-full"
+          />
+        ) : (
+          <NavSwitcher
+            name="game-mode-setting"
+            label="Mode"
+            value={gameModeNames[mode]}
+            data-test-value={gameModeNames[mode]}
+            className="w-full"
+            onClick={changeMode}
+          />
+        )}
         <hr />
         {multipleTracks &&
           players.map((player, index) => {
@@ -134,20 +157,22 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 value={getTrackName(songPreview.tracks, setup.track)}
                 data-test-value={setup.track + 1}
                 className="w-full"
-                onClick={toggleTrack(player.number as 0 | 1 | 2 | 3)}
+                onClick={toggleTrack(player.number as PlayerNumber)}
               />
             );
           })}
         {multipleTracks && <hr />}
-        <NavButton
-          name="select-inputs-button"
-          size="small"
-          className="mobile:px-6"
-          remoteIcon="settings"
-          onClick={() => setShowModal(true)}>
-          Setup mics
-        </NavButton>
-        {areInputsConfigured && (
+        {!online && (
+          <NavButton
+            name="select-inputs-button"
+            size="small"
+            className="mobile:px-6"
+            remoteIcon="settings"
+            onClick={() => setShowModal(true)}>
+            Setup mics
+          </NavButton>
+        )}
+        {(areInputsConfigured || online !== null) && (
           <NavButton
             name="play-song-button"
             size="large"

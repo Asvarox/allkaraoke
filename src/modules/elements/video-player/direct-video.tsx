@@ -15,6 +15,7 @@ export default function DirectVideoPlayer({
   width,
   height,
   onStateChange,
+  onReady,
   ref,
 }: Props) {
   const player = useRef<HTMLVideoElement | null>(null);
@@ -90,6 +91,13 @@ export default function DirectVideoPlayer({
     [player],
   );
   useImperativeHandle(ref, () => playerApi);
+
+  // No handshake here — the <video> element takes commands as soon as it's mounted. Reported anyway
+  // so callers can gate on readiness the same way for both players.
+  useEffect(() => {
+    onReady?.();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per mount, as with the YouTube player
+  }, []);
 
   useEffect(() => {
     playerApi.setSize(width, height);

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 
+import WizardChecklist, { WizardStepEntry } from '~/modules/elements/akui/wizard-checklist';
 import events from '~/modules/game-events/game-events';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
@@ -17,7 +18,6 @@ import StepEnterCode from './step-enter-code';
 import StepLoadingMic from './step-loading-mic';
 import StepPickPlayer from './step-pick-player';
 import StepSetName from './step-set-name';
-import WizardChecklist, { WizardStepEntry } from './wizard-checklist';
 
 interface Props {
   roomId: string | null;

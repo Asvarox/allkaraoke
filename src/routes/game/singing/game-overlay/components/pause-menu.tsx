@@ -1,15 +1,15 @@
-import { ComponentRef, Ref, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Modal from '~/modules/elements/modal';
 import { NavButton } from '~/modules/elements/nav-controls';
 import GameState from '~/modules/game-engine/game-state/game-state';
-import useKeyboardNav, { KeyboardNavContext, useRegister } from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import SongsService from '~/modules/songs/songs-service';
 import RateSong from '~/routes/game/singing/game-overlay/components/rate-song';
 import SelectInputModal from '~/routes/select-input/select-input-modal';
-import InputLag from '~/routes/settings/input-lag';
+import { InGameInputLag } from '~/routes/settings/in-game-audio-settings';
 import { InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 interface Props {
@@ -19,39 +19,9 @@ interface Props {
   open: boolean;
 }
 
-/**
- * The input-lag field as a navigable menu entry.
- *
- * It has to be its own component so that `register` runs during THIS component's render: a
- * `register()` call written inline in the parent's JSX runs while the parent renders — before any
- * child renders — which would put it at the FRONT of the navigation list (and of the mirrored control
- * list) instead of its visual position, making arrow navigation jump around. Every sibling here is a
- * `Nav.*` wrapper that registers from its own render, so this one must too.
- */
-function PauseMenuInputLag({
-  inputLagRef,
-  value,
-  onActive,
-}: {
-  inputLagRef: Ref<ComponentRef<typeof InputLag>>;
-  value: number;
-  onActive: () => void;
-}) {
-  const register = useRegister();
-  return (
-    <InputLag
-      ref={inputLagRef}
-      {...register('input-lag', onActive, 'Input lag', false, {
-        control: { type: 'input-lag', label: 'Input lag', value },
-      })}
-    />
-  );
-}
-
 const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) => {
   const navigate = useSmoothNavigate();
   const menuRef = useRef<null | HTMLButtonElement>(null);
-  const inputLagRef = useRef<ComponentRef<typeof InputLag>>(null);
 
   useEffect(() => {
     menuRef.current?.focus();
@@ -91,8 +61,6 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     }
   };
 
-  const onInputLagActive = () => inputLagRef.current?.element?.focus();
-
   return (
     <>
       {!rateSongOpen && (
@@ -113,7 +81,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
             </NavButton>
             <hr />
             {}
-            <PauseMenuInputLag inputLagRef={inputLagRef} value={inputLag} onActive={onInputLagActive} />
+            <InGameInputLag value={inputLag} />
             {/* Hidden from the phone: it opens the full song editor, which is a desktop/TV-only
                 surface the remote can't drive. */}
             <NavButton

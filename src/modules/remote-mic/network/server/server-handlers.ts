@@ -1,12 +1,12 @@
 import { MAX_NAME_LENGTH } from '~/consts';
 import events from '~/modules/game-events/game-events';
+import { defineMutation, defineQuery } from '~/modules/network/rpc/define';
+import { RpcContext } from '~/modules/network/rpc/types';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { keyStrokes } from '~/modules/remote-mic/network/messages';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import SongDao from '~/modules/songs/songs-service';
 import { InputLagSetting, UnassignOnSongFinishedSetting } from '~/routes/settings/settings-state';
-
-import { defineMutation, defineQuery } from '../rpc/define';
-import { RpcContext } from '../rpc/types';
 
 // All server-side RPC handlers, organized by namespace.
 // Permission key:
@@ -119,7 +119,7 @@ export const serverHandlers = {
   },
 
   players: {
-    requestMicSelect: defineMutation((_ctx: RpcContext, id: string, playerNumber: 0 | 1 | 2 | 3 | null) => {
+    requestMicSelect: defineMutation((_ctx: RpcContext, id: string, playerNumber: PlayerNumber | null) => {
       events.playerChangeRequested.dispatch(id, playerNumber);
     }),
 

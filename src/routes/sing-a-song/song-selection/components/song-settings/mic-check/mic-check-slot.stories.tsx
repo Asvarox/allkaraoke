@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager, { PlayerEntity } from '~/modules/players/players-manager';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 
@@ -23,7 +24,7 @@ const storyPlayers = [
   ),
 ] as const;
 
-const statusesByPlayer: Record<0 | 1 | 2 | 3, inputStatus> = {
+const statusesByPlayer: Partial<Record<PlayerNumber, inputStatus>> = {
   0: 'unavailable',
   1: 'ok',
   2: 'unstable',
@@ -53,17 +54,17 @@ function useStoryMicState() {
       return storyPlayers.filter((player): player is PlayerEntity => player !== undefined);
     }) as typeof PlayersManager.getPlayers;
 
-    InputManager.getInputStatus = ((playerNumber: 0 | 1 | 2 | 3) => {
-      return statusesByPlayer[playerNumber];
+    InputManager.getInputStatus = ((playerNumber: PlayerNumber) => {
+      return statusesByPlayer[playerNumber] ?? 'unavailable';
     }) as typeof InputManager.getInputStatus;
 
-    InputManager.getPlayerVolume = ((playerNumber: 0 | 1 | 2 | 3) => {
+    InputManager.getPlayerVolume = ((playerNumber: PlayerNumber) => {
       if (playerNumber === 1) return 0.82;
       if (playerNumber === 2) return 0.46;
       return 0;
     }) as typeof InputManager.getPlayerVolume;
 
-    InputManager.getPlayerFrequency = ((playerNumber: 0 | 1 | 2 | 3) => {
+    InputManager.getPlayerFrequency = ((playerNumber: PlayerNumber) => {
       if (playerNumber === 1) return 440;
       if (playerNumber === 2) return 220;
       return 0;

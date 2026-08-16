@@ -7,6 +7,7 @@ import {
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import PlayerState from '~/modules/game-engine/game-state/player-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { PlayerNumber } from '~/modules/players/player-number';
 import getSongBeatCount from '~/modules/songs/utils/get-song-beat-count';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
 import tuple from '~/modules/utils/tuple';
@@ -52,14 +53,14 @@ export class GameStateClass {
   public setDuration = (duration: seconds) => (this.duration = duration);
   public getDuration = () => this.duration;
 
-  public getPlayer = (playerNumber: 0 | 1 | 2 | 3) =>
+  public getPlayer = (playerNumber: PlayerNumber) =>
     this.playerStates.find((player) => player.getNumber() === playerNumber);
 
   public getPlayers = () => this.playerStates;
 
   public getPlayerCount = () => this.playerStates.length;
 
-  public getPlayerScore = (player: 0 | 1 | 2 | 3) => {
+  public getPlayerScore = (player: PlayerNumber) => {
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const score = this.getPlayers().reduce((curr, playerState) => curr + playerState.getScore(), 0);
 
@@ -69,7 +70,7 @@ export class GameStateClass {
     }
   };
 
-  public getPlayerDetailedScore = (player: 0 | 1 | 2 | 3) => {
+  public getPlayerDetailedScore = (player: PlayerNumber) => {
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const scores = this.getPlayers().map((playerState) => playerState.getDetailedScore());
 

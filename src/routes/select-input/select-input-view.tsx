@@ -1,11 +1,11 @@
 import posthog from 'posthog-js';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { ValuesType } from 'utility-types';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import { CompletedAnim } from '~/modules/elements/menu/heading';
-import InputManager from '~/modules/game-engine/input/input-manager';
+import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import startViewTransition from '~/modules/utils/start-view-transition';
 import storage from '~/modules/utils/storage';
 import SelectPreference from '~/routes/select-input/select-preference';
@@ -38,13 +38,7 @@ function SelectInputView({ onFinish, closeButtonText, onBack, skipText, smooth =
   );
   const [isComplete, setIsComplete] = useState(false);
 
-  useEffect(() => {
-    const wasMonitoring = InputManager.monitoringStarted();
-    InputManager.startMonitoring();
-    return () => {
-      !wasMonitoring && InputManager.stopMonitoring();
-    };
-  }, []);
+  useMicMonitoring();
 
   const storePreference = (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => {
     if (smooth && preference !== 'skip') {

@@ -1,4 +1,5 @@
-type playerNum = 0 | 1 | 2 | 3;
+import { PlayerNumber } from '~/modules/players/player-number';
+type playerNum = PlayerNumber;
 type score = number;
 export default function getPlayerScoreData(scores: [playerNum, score][], playerNumber: playerNum) {
   // sort by highest score first

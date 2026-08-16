@@ -38,6 +38,10 @@ interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<Player
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
   restartSong?: () => void;
+  /** Online mode: only the host gets the skip-intro prompt. */
+  skipIntroEnabled?: boolean;
+  /** Online mode: routes the skip through the room server so it applies to everyone. */
+  onSkipIntro?: (targetTimeSec: number) => void;
 }
 
 export interface PlayerRef {
@@ -76,6 +80,8 @@ function Player({
   singSetup,
   restartSong,
   pauseMenu = false,
+  skipIntroEnabled = true,
+  onSkipIntro,
   ref,
   ...restProps
 }: Props) {
@@ -198,6 +204,8 @@ function Player({
             onSongEnd={onSongEnd}
             playerSetups={singSetup.players}
             videoPlayerRef={player}
+            skipIntroEnabled={skipIntroEnabled}
+            onSkipIntro={onSkipIntro}
           />
         </div>
       )}

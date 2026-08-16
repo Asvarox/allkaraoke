@@ -34,6 +34,8 @@ import { cn } from '~/utils/cn';
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
   preselectedSong: string | null;
+  /** Reports the currently focused song as the user browses (used by online mode to share it). */
+  onSongFocused?: (song: SongPreviewEntity | undefined) => void;
 }
 
 declare global {
@@ -44,7 +46,7 @@ declare global {
     | undefined;
 }
 
-export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+export default function SongSelection({ onSongSelected, preselectedSong, onSongFocused }: Props) {
   const setlist = useSetlist();
   const [additionalSong, setAdditionalSong] = useState<string | null>(preselectedSong);
   const list = useRef<VirtualizedListMethods | null>(null);
@@ -90,6 +92,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         .find((song) => song.song.id === songPreview?.id),
     [songPreview, groupedSongList],
   );
+
+  useEffect(() => {
+    onSongFocused?.(songPreview);
+  }, [songPreview, onSongFocused]);
 
   const selectedPlaylistData = useMemo(
     () => playlists.find((playlist) => playlist.name === selectedPlaylist),

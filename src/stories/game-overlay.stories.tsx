@@ -8,6 +8,7 @@ import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/inde
 import CanvasDrawing from '~/modules/game-engine/drawing/index';
 import ParticleManager from '~/modules/game-engine/drawing/particle-manager';
 import GameState from '~/modules/game-engine/game-state/game-state';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { processSong } from '~/modules/songs/utils/process-song/process-song';
@@ -55,7 +56,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
   const singSetup: SingSetup = useMemo(() => {
     const setup = {
       tolerance: args.tolerance,
-      players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
+      players: new Array(args.playerNum).fill(0).map((_t, i) => ({ number: i as PlayerNumber, track: 0 })),
       id: 'storybook-id',
       mode: args.gameMode,
     };

@@ -24,6 +24,9 @@ interface Props {
   volume?: number;
   startAt?: number;
   onStateChange?: (state: VideoState) => void;
+  /** The player finished its API handshake. Commands sent before this (loadVideoById, playVideo…)
+   * are posted to an iframe that isn't listening yet and are dropped, silently and for good. */
+  onReady?: () => void;
   width: number;
   height: number;
   ref?: ForwardedRef<VideoPlayerRef>;
@@ -58,6 +61,7 @@ export default function YoutubeVideoPlayer({
   width,
   height,
   onStateChange,
+  onReady,
   ref,
 }: Props) {
   const player = useRef<YouTube | null>(null);
@@ -105,6 +109,7 @@ export default function YoutubeVideoPlayer({
           modestbranding: 1,
         },
       }}
+      onReady={() => onReady?.()}
       onPlaybackRateChange={(e) => {
         console.log('onPlaybackRateChange', e.data);
       }}

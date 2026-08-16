@@ -1,8 +1,9 @@
-import { ComponentProps, useEffect } from 'react';
+import { ComponentProps } from 'react';
 
-import InputManager from '~/modules/game-engine/input/input-manager';
 import events from '~/modules/game-events/game-events';
 import { useEventListener, useEventListenerSelector } from '~/modules/game-events/hooks';
+import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
+import { LOCAL_PLAYER_NUMBERS } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import MicCheckSlot from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check/mic-check-slot';
 import NoiseDetection from '~/routes/sing-a-song/song-selection/components/song-settings/mic-check/noise-detection';
@@ -11,9 +12,7 @@ export default function MicCheck(props: ComponentProps<'div'>) {
   // Force update when the name changes
   useEventListener(events.playerNameChanged);
 
-  useEffect(() => {
-    InputManager.startMonitoring();
-  }, []);
+  useMicMonitoring();
 
   const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
   const isSetup = inputs.some((input) => input.source !== 'Dummy');
@@ -33,7 +32,7 @@ export default function MicCheck(props: ComponentProps<'div'>) {
         <div className="absolute right-0 bottom-full left-0 z-30">
           <NoiseDetection />
         </div>
-        {([0, 1, 2, 3] as const).map((i) => (
+        {LOCAL_PLAYER_NUMBERS.map((i) => (
           <MicCheckSlot key={i} playerIndex={i} player={players.find((p) => p.number === i)} />
         ))}
       </div>
