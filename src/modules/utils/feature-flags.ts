@@ -6,4 +6,5 @@ export const FeatureFlags = {
   NewVolume: 'new_volume',
   DisableMobileMode: 'disable_mobile_mode',
   DisableAutoFullscreen: 'disable_auto_fullscreen',
+  InstantSongPreview: 'instant_song_preview',
 } as const;
