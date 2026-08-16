@@ -61,7 +61,7 @@ function OnlineRoom({ roomCode }: Props) {
   useEffect(() => {
     // The local game path (lyrics, score display) renders from PlayersManager — online mode
     // sings solo as player 0, so trim the roster to just that player while in the room
-    const previousMinPlayers = PlayersManager.getMinPlayerNumber();
+    const previousPlayers = PlayersManager.snapshot();
     PlayersManager.setMinPlayerNumber(1);
     PlayersManager.getPlayers().forEach((player) => {
       if (player.number !== 0) {
@@ -72,11 +72,9 @@ function OnlineRoom({ roomCode }: Props) {
       PlayersManager.addPlayer(0);
     }
     return () => {
-      PlayersManager.setMinPlayerNumber(previousMinPlayers);
-      // Restore the conventional local-mode numbering when leaving the room
-      PlayersManager.getPlayers().forEach((player) => {
-        player.number = 0;
-      });
+      // Restore the pre-room roster (input, name, nameOverride and all) atomically, rather than
+      // replaying removePlayer/addPlayer — which would re-trigger removePlayer's auto-add-to-minimum
+      PlayersManager.restore(previousPlayers);
     };
   }, []);
 
@@ -94,7 +92,7 @@ function OnlineRoom({ roomCode }: Props) {
     // player to match so the note chart and lyrics use the same color as the room
     if (selfPlayerNumber === undefined) return;
     PlayersManager.getPlayers().forEach((player) => {
-      player.number = selfPlayerNumber;
+      player.setNumber(selfPlayerNumber);
     });
   }, [selfPlayerNumber]);
   const { song, error: songError } = useOnlineSong(status === 'connected' ? roomState?.chart : null);
@@ -148,8 +146,11 @@ function OnlineRoom({ roomCode }: Props) {
         mode="join"
         joinRoomCode={roomCode}
         onBack={() => navigate('online/', { room: null })}
-        onComplete={() => {
+        onComplete={(confirmedRoomCode) => {
           storage.session.setItem(ONLINE_SETUP_DONE_KEY, '1');
+          // The code step lets the singer edit the prefilled code, so it may differ from the URL's —
+          // update the URL first so the connect effect below picks up the confirmed code, not the stale one
+          navigate('online/', { room: confirmedRoomCode });
           setSetupDone(true);
         }}
       />

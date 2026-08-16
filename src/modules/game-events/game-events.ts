@@ -73,6 +73,9 @@ export const events = {
   playerNameChanged: new GameEvent<(playerNumber: PlayerNumber, oldName: string | undefined) => void>(
     'playerNameChanged',
   ),
+  playerNumberChanged: new GameEvent<(playerNumber: PlayerNumber, previousNumber: PlayerNumber) => void>(
+    'playerNumberChanged',
+  ),
   playerInputChanged: new GameEvent<
     (
       playerNumber: PlayerNumber,

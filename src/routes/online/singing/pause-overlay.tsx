@@ -46,7 +46,9 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
   const selfId = OnlineClient.getParticipantId();
 
   // The confirmations opened from here (end game, kicking a singer) pause this on their own.
-  const { register } = useKeyboardNav();
+  // Disabled while the resume countdown is up: the menu below isn't rendered then, so Enter/Escape/
+  // arrows must not act on its (unmounted) registrations.
+  const { register } = useKeyboardNav({ enabled: resumeCountdownEndsAt === null });
 
   if (resumeCountdownEndsAt !== null) {
     return <CountdownOverlay endsAtServerTime={resumeCountdownEndsAt} label="Resuming in" />;

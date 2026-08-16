@@ -92,14 +92,11 @@ function App() {
                 </Route>
                 {/* One entry for the room and the host's song browser (`online/pick-song`): a second
                     <Route> would remount `Online` on the way in and drop the room connection */}
-                <Route
-                  path={`${routePaths.ONLINE}/:section?`}
-                  component={() => (
-                    <Suspense fallback={<PageLoader />}>
-                      <LazyOnline />
-                    </Suspense>
-                  )}
-                />
+                <Route path={`${routePaths.ONLINE}/:section?`}>
+                  <Suspense fallback={<PageLoader />}>
+                    <LazyOnline />
+                  </Suspense>
+                </Route>
                 <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
                 <Route path={routePaths.SETTINGS} component={Settings} />
                 <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />

@@ -32,6 +32,8 @@ export default function useOnlineSong(manifest: ChartManifest | null | undefined
       .catch((downloadError) => {
         if (loadedHash.current === hash) {
           setError(downloadError instanceof Error ? downloadError.message : String(downloadError));
+          // Allow a subsequent manifest push for the same chart to retry the download.
+          loadedHash.current = undefined;
         }
       });
   }, [manifest]);
