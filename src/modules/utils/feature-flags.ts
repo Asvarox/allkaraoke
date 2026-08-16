@@ -7,4 +7,5 @@ export const FeatureFlags = {
   DisableMobileMode: 'disable_mobile_mode',
   DisableAutoFullscreen: 'disable_auto_fullscreen',
   InstantSongPreview: 'instant_song_preview',
+  OnlineMode: 'online_mode',
 } as const;
