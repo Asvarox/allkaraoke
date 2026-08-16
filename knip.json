@@ -27,7 +27,15 @@
     "src/setup-tests.ts",
     "src/stories/song-fixture.ts",
     "src/routes/social-media-elements/social-media-elements.tsx:10",
-    "functions/**/*.test.ts"
+    "functions/**/*.test.ts",
+    "src/modules/network/rpc/define.ts",
+    "src/modules/network/rpc/ping-pong-tracker.ts",
+    "src/modules/network/rpc/rpc-client.ts",
+    "src/modules/network/rpc/rpc-server.ts",
+    "src/modules/network/rpc/server-subscription-registry.ts",
+    "src/modules/network/rpc/subscription-manager.ts",
+    "src/modules/network/rpc/types.ts",
+    "src/modules/network/rpc/use-subscription-factory.ts"
   ],
   "ignoreDependencies": [
     "vite-tsconfig-paths",
