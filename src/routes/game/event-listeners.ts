@@ -19,6 +19,12 @@ const trackSongData =
     scores: Array<{ name: string; score: number }> = [],
     progress?: number,
   ) => {
+    // Online mode tracks its own songStarted/songEnded once the room actually starts/finishes
+    // singing (host-only, room-wide player count and scores) — see online-analytics.ts. This
+    // dispatch fires too early for online (at song pick, with just the solo local player), so
+    // skip the local-shaped capture here rather than double-report the event.
+    if (OnlineClient.getRoomCode()) return;
+
     const sameScores = scores.length > 1 && scores.every((score) => score.score === scores[0].score);
 
     const inputs: Record<string, InputSourceNames> = {};
@@ -57,12 +63,6 @@ const trackSongData =
         captureException(e);
       }
     }
-
-    // Online mode tracks its own songStarted/songEnded once the room actually starts/finishes
-    // singing (host-only, room-wide player count and scores) — see online-analytics.ts. This
-    // dispatch fires too early for online (at song pick, with just the solo local player), so
-    // skip the local-shaped capture here rather than double-report the event.
-    if (OnlineClient.getRoomCode()) return;
 
     posthog.capture(event, {
       songId: id,

@@ -42,7 +42,11 @@
     "src/modules/network/rpc/subscription-manager.ts",
     "src/modules/network/rpc/types.ts",
     "src/modules/network/rpc/use-subscription-factory.ts",
-    "src/modules/elements/akui/tag.tsx"
+    "src/modules/elements/akui/tag.tsx",
+    "src/modules/online/client/hooks.ts",
+    "src/modules/online/client/song-preview.ts",
+    "src/modules/online/client/song-transfer.ts",
+    "src/modules/online/format-score.ts"
   ],
   "ignoreDependencies": [
     "vite-tsconfig-paths",

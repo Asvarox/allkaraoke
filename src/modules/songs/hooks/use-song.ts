@@ -9,13 +9,20 @@ export default function useSong(songId: string, options?: LoadSongOptions) {
   const sharedSongId = options?.sharedSongId;
 
   useEffect(() => {
+    let active = true;
     setSong(null);
 
     loadSongById(songId, { sourceType, sharedSongId })
-      .then(setSong)
+      .then((loaded) => {
+        if (active) setSong(loaded);
+      })
       .catch(() => {
-        setSong(null);
+        if (active) setSong(null);
       });
+
+    return () => {
+      active = false;
+    };
   }, [songId, sharedSongId, sourceType]);
 
   return {

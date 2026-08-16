@@ -28,12 +28,17 @@ export const loadSongForUpload = async (
  * gzip it and send it to the room in a single message. Throws ChartTooLargeError when oversized.
  * The preview (video/details) stays published so the room can still see and hear the song. */
 export const uploadSongToRoom = async (song: Song, tolerance: number, difficulty?: string): Promise<void> => {
-  const txt = convertSongToTxt(song);
-  const { manifest, data } = await prepareChartTransfer(
+  const chartText = convertSongToTxt(song);
+  const { manifest, data: compressedChartData } = await prepareChartTransfer(
     { songId: song.id, artist: song.artist, title: song.title, video: song.video },
-    txt,
+    chartText,
   );
-  await OnlineClient.rpc.selection.setChart(manifest, data, tolerance, toSongHoverPreview(song, difficulty));
+  await OnlineClient.rpc.selection.setChart(
+    manifest,
+    compressedChartData,
+    tolerance,
+    toSongHoverPreview(song, difficulty),
+  );
 };
 
 /** Any client (including late joiners): download the compressed chart from room storage and
