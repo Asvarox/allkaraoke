@@ -47,13 +47,13 @@
     "Bad Religion",
     "George Michael",
     "INXS",
+    "Metallica",
     "Paramore",
     "Radiohead",
     "Slipknot",
     "The Weeknd",
     "Breaking Benjamin",
     "Marilyn Manson",
-    "Metallica",
     "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
@@ -99,6 +99,7 @@
     "Electric Light Orchestra",
     "Elvis Presley",
     "Groove Coverage",
+    "Hamilton",
     "Justin Bieber",
     "Lorde",
     "★N Sync",
@@ -122,7 +123,6 @@
     "Faith No More",
     "Genesis",
     "Goo Goo Dolls",
-    "Hamilton",
     "HIM",
     "Iron Maiden",
     "Jason Derulo",
@@ -147,9 +147,9 @@
     "Frank Sinatra",
     "Hilary Duff",
     "Huey Lewis & The News",
+    "KoRn",
     "Lewis Capaldi",
-    "Little Mix",
-    "Nelly Furtado"
+    "Little Mix"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6108
+  "songs": 6130
 }

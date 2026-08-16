@@ -9,6 +9,7 @@ import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useBlockScroll from '~/modules/hooks/use-block-scroll';
+import useInstantSongPreview from '~/modules/hooks/use-instant-song-preview';
 import useSmoothNavigate, { buildUrl } from '~/modules/hooks/use-smooth-navigate';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
@@ -109,6 +110,14 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
   const songGroupHeight = songEntryHeight / 2.5;
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
+  const instantSongPreview = useInstantSongPreview();
+  const selectAndExpandSong = useCallback(
+    (songId: string) => {
+      moveToSong(songId);
+      expandSong();
+    },
+    [moveToSong, expandSong],
+  );
 
   const loading = isLoading || unverifiedSongsLoading || !groupedSongList || !width;
   const forceFlag = selectedPlaylist === 'Eurovision';
@@ -339,7 +348,7 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
                     isPopular={songItem.isPopular}
                     key={songItem.song.id}
                     song={songItem.song}
-                    handleClick={isFocused ? expandSong : moveToSong}
+                    handleClick={isFocused ? expandSong : instantSongPreview ? selectAndExpandSong : moveToSong}
                     focused={!showFilters && keyboardControl && isFocused}
                     songId={songId}
                     groupLetter={group.name}

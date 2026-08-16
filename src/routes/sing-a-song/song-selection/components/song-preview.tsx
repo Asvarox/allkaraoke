@@ -115,6 +115,22 @@ export default function SongPreviewComponent({
     [start],
   );
 
+  const backButton = (
+    <button
+      onClick={onExitKeyboardControl}
+      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
+      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
+      <span className="text-lg font-bold">Sing a song</span>
+    </button>
+  );
+
+  // Desktop: icon-only, inline with the title — no room/need for the "Sing a song" label there.
+  const backIconButton = (
+    <button onClick={onExitKeyboardControl} className="text-active hidden shrink-0 cursor-pointer items-center sm:flex">
+      <Icon icon="ic:baseline-arrow-back" className="text-xl md:text-2xl" />
+    </button>
+  );
+
   const animationDurationSec =
     60 /
     (songPreview.realBpm && songPreview.realBpm > 40
@@ -175,16 +191,13 @@ export default function SongPreviewComponent({
 
         <SongPreviewLayout
           expanded={expanded}
-          back={
-            <button
-              onClick={onExitKeyboardControl}
-              className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-              <Icon icon="ic:baseline-arrow-back" />
-              <span className="text-xl font-bold">Sing a song</span>
-            </button>
-          }
+          back={backButton}
           title={
-            <SongCard.SongTitle className="typography truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
+            <div className="flex min-w-0 items-center gap-2">
+              {/* Back button — icon-only, next to the title, desktop only, shown when expanded */}
+              {backIconButton}
+              <SongCard.SongTitle className="typography min-w-0 flex-1 truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
+            </div>
           }
           artist={
             <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
