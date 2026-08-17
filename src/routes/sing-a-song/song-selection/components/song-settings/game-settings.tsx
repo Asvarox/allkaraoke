@@ -173,15 +173,26 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
           </NavButton>
         )}
         {(areInputsConfigured || online !== null) && (
-          <NavButton
-            name="play-song-button"
-            size="large"
-            className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
-            remoteIcon="play"
-            isDefault
-            onClick={handlePlay}>
-            Play
-          </NavButton>
+          <>
+            {/* Fixed on mobile — the expanded card scrolls there, and its natural spot in the list
+                can sit below the fold, so `sticky` alone wouldn't show it until the user scrolled
+                down past it. Pin it to the viewport instead so it's visible from the start.
+                Desktop's card never scrolls (sm:overflow-hidden), so this reverts to normal flow. */}
+            <div className="fixed inset-x-px bottom-0 z-40 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
+              <NavButton
+                name="play-song-button"
+                size="large"
+                className="mobile:px-10 mobile:h-10 mobile:text-md w-full px-20 py-1 sm:w-auto"
+                remoteIcon="play"
+                isDefault
+                onClick={handlePlay}>
+                Play
+              </NavButton>
+            </div>
+            {/* Spacer reserving the fixed bar's height so it doesn't cover the last bit of
+                scrollable content (e.g. the mic check panels) underneath it. */}
+            <div aria-hidden className="h-[60px] sm:hidden" />
+          </>
         )}
         {/* Remote-only: the expanded song card has no back button on desktop (only the Backspace
             handler and a mobile-only one in song-preview), so the phone would otherwise have no way
