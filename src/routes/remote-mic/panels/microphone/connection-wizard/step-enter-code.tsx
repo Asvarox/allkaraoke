@@ -147,7 +147,7 @@ export default function StepEnterCode({
         </form>
       </div>
       <Modal open={shouldShowError} onClose={() => setErrorReset(true)} data-test="connection-error-modal" withPortal>
-        <Menu>
+        <Menu modal>
           <Menu.Header>Couldn&#39;t connect</Menu.Header>
           <Typography>
             {roomId ? (

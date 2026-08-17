@@ -41,7 +41,7 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
     <>
       <Modal onClose={handleClose} open={open}>
         {open && (
-          <Menu data-test="languages-container" spacing="tight">
+          <Menu modal data-test="languages-container" spacing="tight">
             {filteredLanguageList.map(({ name, count }) => {
               const isExcluded = excludedLanguages.length && excludedLanguages.includes(name);
               return (

@@ -63,7 +63,7 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
   return (
     <Modal open>
       <KeyboardNavContext value={register}>
-        <Menu data-test="online-pause-overlay">
+        <Menu modal data-test="online-pause-overlay">
           <Menu.Header>
             {pause.reason === 'buffering' ? `Paused — ${pause.name}'s video is buffering` : `Paused by ${pause.name}`}
           </Menu.Header>

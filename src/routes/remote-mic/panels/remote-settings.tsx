@@ -56,7 +56,7 @@ function RemoteSettings({ setIsKeepAwakeOn, monitoringStarted, isKeepAwakeOn }: 
       )}
       {permissions !== 'write' && <MicrophoneSettings />}
       <Modal onClose={() => setOpenedPanel(null)} open={openedPanel !== null && permissions === 'write'}>
-        <MenuContainer>
+        <MenuContainer modal>
           <Menu.Header>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</Menu.Header>
           {openedPanel === 'microphone' && <MicrophoneSettings />}
           {openedPanel === 'manage' && (

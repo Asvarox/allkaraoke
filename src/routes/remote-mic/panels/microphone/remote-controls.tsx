@@ -127,7 +127,7 @@ function TextControl({ control }: { control: Extract<ControlDescriptor, { type: 
           fade, which is no loss for a small utility dialog. */}
       {open && (
         <Modal open onClose={() => setOpen(false)} withPortal>
-          <MenuContainer className="gap-2.5">
+          <MenuContainer className="gap-2.5" modal>
             <Menu.Header>{control.label}</Menu.Header>
             <Input
               focused={false}

@@ -60,7 +60,7 @@ function CustomizeModal({ open, onClose, self, participants }: Props) {
   return (
     <Modal open={open} onClose={close}>
       {open && (
-        <Menu data-test="online-customize-modal">
+        <Menu modal data-test="online-customize-modal">
           <Menu.Header>Name &amp; color</Menu.Header>
           <Input
             {...register('online-name', () => undefined)}

@@ -30,7 +30,7 @@ export default function RenameModal({ open, currentName, onClose, onSave }: Prop
 
   return (
     <Modal open={open} onClose={onClose} data-test="rename-modal" withPortal>
-      <Menu>
+      <Menu modal>
         <Menu.Header>Change your name</Menu.Header>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <Input

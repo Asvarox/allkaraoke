@@ -31,7 +31,7 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 bottom-0 left-0 z-[20003] rounded-t-2xl bg-black/95"
+            className="fixed right-0 bottom-0 left-0 z-[20003] rounded-t-2xl border border-white/10 bg-slate-800"
             style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}>
             {/* Handle bar */}
             <div className="flex justify-center pt-3 pb-2">

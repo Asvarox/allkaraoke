@@ -12,7 +12,7 @@ export default function SelectInputModal({ onClose, closeButtonText, open }: Pro
   return (
     <Modal onClose={onClose} open={open}>
       {open && (
-        <MenuContainer>
+        <MenuContainer modal>
           <SelectInputView
             smooth={false}
             onBack={onClose}
