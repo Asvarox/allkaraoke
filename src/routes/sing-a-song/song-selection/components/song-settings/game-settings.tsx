@@ -162,27 +162,32 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
             );
           })}
         {multipleTracks && <hr />}
-        {!online && (
-          <NavButton
-            name="select-inputs-button"
-            size="small"
-            className="mobile:px-6"
-            remoteIcon="settings"
-            onClick={() => setShowModal(true)}>
-            Setup mics
-          </NavButton>
-        )}
-        {(areInputsConfigured || online !== null) && (
-          <NavButton
-            name="play-song-button"
-            size="large"
-            className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
-            remoteIcon="play"
-            isDefault
-            onClick={handlePlay}>
-            Play
-          </NavButton>
-        )}
+        {/* Sticky on mobile — the expanded card scrolls there, so pin play/setup mics to the
+            bottom of the viewport instead of letting them scroll out of reach. Desktop's card
+            never scrolls (sm:overflow-hidden), so the bar reverts to normal flow there. */}
+        <div className="sticky bottom-0 z-10 -mx-3 flex flex-col gap-3 bg-slate-800 px-3 pt-2 pb-3 sm:static sm:mx-0 sm:gap-4 sm:bg-transparent sm:p-0">
+          {!online && (
+            <NavButton
+              name="select-inputs-button"
+              size="small"
+              className="mobile:px-6"
+              remoteIcon="settings"
+              onClick={() => setShowModal(true)}>
+              Setup mics
+            </NavButton>
+          )}
+          {(areInputsConfigured || online !== null) && (
+            <NavButton
+              name="play-song-button"
+              size="large"
+              className="mobile:px-10 mobile:h-10 mobile:text-md px-20 py-1"
+              remoteIcon="play"
+              isDefault
+              onClick={handlePlay}>
+              Play
+            </NavButton>
+          )}
+        </div>
         {/* Remote-only: the expanded song card has no back button on desktop (only the Backspace
             handler and a mobile-only one in song-preview), so the phone would otherwise have no way
             out of this screen once mirrored. */}
