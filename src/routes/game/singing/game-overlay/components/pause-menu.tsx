@@ -65,7 +65,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
     <>
       {!rateSongOpen && (
         <KeyboardNavContext value={register}>
-          <Menu>
+          <Menu modal>
             {/* Resume starts playback again, so it reads as "play" rather than a generic back arrow. */}
             <NavButton name="button-resume-song" remoteIcon="play" onClick={onResume} ref={menuRef}>
               Resume song

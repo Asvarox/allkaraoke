@@ -98,7 +98,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
             </span>
             <Modal open={showCalibration}>
               {showCalibration && (
-                <Menu>
+                <Menu modal>
                   {showCalibrationIntro ? (
                     <CalibrationIntro onContinue={() => setShowCalibrationIntro(false)} />
                   ) : (

@@ -20,11 +20,14 @@ const MenuSubHeader = twc(Typography)`text-lg`;
 interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, 'title'> {
   title?: ReactNode;
   spacing?: 'regular' | 'tight';
+  /** The surface modal content is built from — border + slate-800 background, so it reads as part
+   * of the app rather than a system dialog. Set on the top-level `Menu` a `Modal` wraps. */
+  modal?: boolean;
 }
-export const Menu = ({ title, children, className, spacing = 'regular', ref, ...props }: MenuProps) => (
+export const Menu = ({ title, children, className, spacing = 'regular', modal = false, ref, ...props }: MenuProps) => (
   <MenuContainer
     {...props}
-    className={`${className} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-7'}`}
+    className={`${modal ? 'border border-white/10 bg-slate-800 ' : ''}${className ?? ''} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-7'}`}
     ref={ref}>
     {title && <MenuHeader>{title}</MenuHeader>}
     {children}

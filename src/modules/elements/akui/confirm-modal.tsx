@@ -170,10 +170,7 @@ function ConfirmModalRoot({
           <ConfirmModalContext value={{ register, confirm, cancel }}>
             {/* The same surface the screens underneath are made of (the lobby card, the pause menu),
                 so a confirmation reads as one of them rather than a system dialog. */}
-            <Menu
-              spacing="tight"
-              className="border border-white/10 bg-slate-800"
-              data-test={dataTestPrefix ? `${dataTestPrefix}-modal` : undefined}>
+            <Menu spacing="tight" modal data-test={dataTestPrefix ? `${dataTestPrefix}-modal` : undefined}>
               <Menu.Header>{title}</Menu.Header>
               <Menu.HelpText>{description}</Menu.HelpText>
               <Menu.ButtonGroup className="flex-col gap-2 sm:flex-row sm:justify-end">

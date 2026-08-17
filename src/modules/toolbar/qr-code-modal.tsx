@@ -17,7 +17,7 @@ function QRCodeModal({ closeModal, open }: Props) {
 
   return (
     <Modal onClose={closeModal} open={open}>
-      <Menu>
+      <Menu modal>
         <ConnectRemoteMic />
         <Menu.Button {...register('quick-connect-close', closeModal)} size="small">
           Close
