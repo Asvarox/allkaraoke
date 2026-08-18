@@ -114,7 +114,7 @@ export default defineConfig({
         test: {
           name: 'app',
           include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts', '.claude/**/*'],
+          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts', 'worker/**/*.test.ts', '.claude/**/*'],
         },
       },
       {
@@ -123,7 +123,10 @@ export default defineConfig({
             main: './worker/index.ts',
             miniflare: {
               compatibilityDate: '2026-05-27',
-              kvNamespaces: ['SHARED_SONGS_KV'],
+              kvNamespaces: ['SHARED_SONGS_KV', 'LEADERBOARD_KV'],
+              durableObjects: {
+                LEADERBOARD_BOARD: { className: 'LeaderboardBoard', useSQLite: true },
+              },
               bindings: {
                 ADMIN_PANEL_PASSWORD: 'admin-password',
               },
@@ -132,7 +135,7 @@ export default defineConfig({
         ],
         test: {
           name: 'functions',
-          include: ['functions/**/*.test.ts'],
+          include: ['functions/**/*.test.ts', 'worker/**/*.test.ts'],
           exclude: ['.claude/**/*'],
         },
       },

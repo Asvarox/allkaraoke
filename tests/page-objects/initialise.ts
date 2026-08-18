@@ -11,6 +11,7 @@ import { InputSelectionPagePO } from './input-selection-page';
 import { JoinExistingGamePagePO } from './join-existing-game-page';
 import { JukeboxPagePO } from './jukebox-page';
 import { LandingPagePO } from './landing-page';
+import { LeaderboardPagePO } from './leaderboard-page';
 import { MainMenuPagePO } from './main-menu-page';
 import { ManageSetlistsPagePO } from './manage-setlists-page';
 import { ManageSongsPagePO } from './manage-songs-page';
@@ -65,5 +66,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     onlineSetupPage: new OnlineSetupPagePO(page, context, browser),
     onlineLobbyPage: new OnlineLobbyPagePO(page, context, browser),
     onlineSingingPage: new OnlineSingingPagePO(page, context, browser),
+    leaderboardPage: new LeaderboardPagePO(page, context, browser),
   };
 }

@@ -1,10 +1,6 @@
-import { captureException } from '@sentry/react';
-import { pack } from 'msgpackr';
 import posthog from 'posthog-js';
 
 import { SingSetup, Song, SongPreview } from '~/interfaces';
-import GameState from '~/modules/game-engine/game-state/game-state';
-import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import events from '~/modules/game-events/game-events';
 import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
@@ -35,34 +31,6 @@ const trackSongData =
 
       inputs[`input${index}`] = player.input.source;
     });
-
-    if (event === 'songEnded') {
-      try {
-        // compress frequency records and see how much space they take, to analyze data usage
-        // for potential global leaderboard. The data can be used to verify if the score is legit
-        // there might be some losses in precision but for the purpose of verifying the score it should be enough
-        const freqs = GameState.getPlayer(0)
-          ?.getPlayerNotes()
-          .filter((note) => getPlayerNoteDistance(note) === 0)
-          .map((note) => note.frequencyRecords)
-          .flat()
-          .map((record) => [record.timestamp, record.frequency])
-          // calculate deltas between subsequent records (each record value is a delta from the previous one)
-          .map((record, index, array) => [
-            record[0] - (array[index - 1]?.[0] ?? 0),
-            record[1] - (array[index - 1]?.[1] ?? 0),
-          ])
-          // Reduce precision to 2 and multiply by 100 to get integers
-          .map((record) => [Math.round(record[0] * 100), Math.round(record[1] * 100)])
-          // If the delta is 0, we can just store timestamp instead of the array
-          .map((record) => (record[1] === 0 ? record[0] : record));
-
-        const compressed = pack(freqs);
-        console.log('compressed', compressed);
-      } catch (e) {
-        captureException(e);
-      }
-    }
 
     posthog.capture(event, {
       songId: id,

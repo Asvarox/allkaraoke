@@ -1,6 +1,6 @@
 # AllKaraoke Glossary
 
-Last updated: 2026-05-16
+Last updated: 2026-08-18
 
 ## Singing and Scoring
 
@@ -12,6 +12,13 @@ Last updated: 2026-05-16
 - **playerNote** — Group of consecutive `frequencyRecord`s matched (by time and distance) to a song note. Represents the coloured sung lines visible in-game.
 - **vibrato** — Pitch oscillation detected on a `playerNote`, contributing a bonus.
 - **perfect** — Hit accuracy category used in the detailed score breakdown.
+
+## Global Leaderboard
+
+- **global leaderboard** — Public board of the best scores from the last 14 days, shown on the main menu. Separate from the per-song local high scores. Opt-in per score; online (multiplayer room) games are excluded. See `docs/leaderboard.md`.
+- **leaderboard identity** — The `{ clientId, name, country }` triple kept in localStorage. `clientId` is a client-generated uuid used as part of the board's dedupe key; name and country prefill the prompt after the first submission.
+- **qualifying score** — The threshold a local score must reach for the post-game prompt to open: 1,000,000, expressed as a share of `MAX_POINTS` so it cannot drift from the scoring formula.
+- **notes blob** — All `frequencyRecord`s of the submitting player, delta-encoded and msgpack-packed, stored with each board record. Unused in v1; it exists so score verification can be built later.
 
 ## Song Data Structure
 

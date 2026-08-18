@@ -11,6 +11,7 @@ import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
 import useFeatureFlag from '~/modules/utils/use-feature-flag';
+import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 
 function Welcome() {
   useBackground(true);
@@ -22,7 +23,7 @@ function Welcome() {
   const { register } = useKeyboardNav({ title: 'Main Menu' });
   return (
     <>
-      <MenuWithLogo>
+      <MenuWithLogo sidePanel={<LeaderboardPanel />}>
         <Helmet>
           <title>Main Menu | AllKaraoke.Party - Free Online Karaoke Party Game</title>
           <link rel="preload" href="/songs/index.json" as="fetch" type="application/json" crossOrigin="anonymous" />
@@ -60,6 +61,9 @@ function Welcome() {
             Manage Songs
           </NavButton>
         </KeyboardNavContext>
+        {/* Narrow screens have no second column, so the board sits here — below the menu, above the
+            footer. The desktop copy is passed to `MenuWithLogo` as `sidePanel`; SWR dedupes the fetch. */}
+        <LeaderboardPanel className="mt-2 lg:hidden" />
         <Menu.HelpText className="flex justify-between">
           Get in touch{' '}
           <span className="flex gap-3">

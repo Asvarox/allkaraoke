@@ -1,40 +1,76 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "allkaraoke-party",
-  "main": "./worker/index.ts",
-  "compatibility_date": "2026-05-27",
-  "assets": {
-    "directory": "./build",
-    "binding": "ASSETS",
-    "not_found_handling": "single-page-application",
-  },
-  "kv_namespaces": [
-    {
-      // Legacy binding name kept to avoid KV namespace migration. Runtime also accepts UNVERIFIED_SONGS_KV.
-      "binding": "SHARED_SONGS_KV",
-      "id": "3bf3f3ab4c0e4d30b5b9faf5b6d0ebda",
-      "preview_id": "4c32b3f25d73438390962814c3c1ed5a",
-    },
-  ],
-  "observability": {
-    "enabled": false,
-    "head_sampling_rate": 1,
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "persist": true,
-      "invocation_logs": true,
-    },
-    "traces": {
-      "enabled": false,
-      "persist": true,
-      "head_sampling_rate": 1,
-    },
-  },
-  // Secrets (UNVERIFIED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.
-  // Production: set via `wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN`
-  // Legacy SHARED_SONGS_ADMIN_TOKEN remains accepted as a fallback.
-  // Production: set via `wrangler secret put ADMIN_PANEL_PASSWORD`
-  // Local dev: add to .dev.vars (gitignored), e.g. UNVERIFIED_SONGS_ADMIN_TOKEN=your-local-token
-  // Local dev: add to .dev.vars (gitignored), e.g. ADMIN_PANEL_PASSWORD=your-local-admin-password
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "allkaraoke-party",
+	"main": "./worker/index.ts",
+	"compatibility_date": "2026-05-27",
+	"assets": {
+		"directory": "./build",
+		"binding": "ASSETS",
+		"not_found_handling": "single-page-application",
+	},
+	"kv_namespaces": [
+		{
+			// Legacy binding name kept to avoid KV namespace migration. Runtime also accepts UNVERIFIED_SONGS_KV.
+			"binding": "SHARED_SONGS_KV",
+			"id": "3bf3f3ab4c0e4d30b5b9faf5b6d0ebda",
+			"preview_id": "4c32b3f25d73438390962814c3c1ed5a",
+		},
+		{
+			// Read side of the leaderboard. The Durable Object writes the top-50 projection here on every
+			// accepted submission; GET /leaderboard serves it through the Cache API and never hits the DO.
+			// TODO: replace with the real ids from `wrangler kv namespace create LEADERBOARD_KV`.
+			"binding": "LEADERBOARD_KV",
+			"id": "f4106f1fa6c7408095196e895b0d4038",
+			"preview_id": "REPLACE_WITH_LEADERBOARD_KV_PREVIEW_ID",
+		},
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "LEADERBOARD_BOARD",
+				"class_name": "LeaderboardBoard",
+			},
+		],
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": [
+				"LeaderboardBoard"
+			],
+		},
+	],
+	// The binding only accepts periods of 10 or 60 seconds, so the intended 30/h is not expressible.
+	// 2 per 60s per clientId is the closest usable setting and needs no bookkeeping of our own.
+	"ratelimits": [
+		{
+			"name": "LEADERBOARD_RATE_LIMITER",
+			"namespace_id": "1001",
+			"simple": {
+				"limit": 2,
+				"period": 60,
+			},
+		},
+	],
+	"observability": {
+		"enabled": false,
+		"head_sampling_rate": 1,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": true,
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1,
+		},
+	},
+	// Secrets (UNVERIFIED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.
+	// Production: set via `wrangler secret put UNVERIFIED_SONGS_ADMIN_TOKEN`
+	// Legacy SHARED_SONGS_ADMIN_TOKEN remains accepted as a fallback.
+	// Production: set via `wrangler secret put ADMIN_PANEL_PASSWORD`
+	// Local dev: add to .dev.vars (gitignored), e.g. UNVERIFIED_SONGS_ADMIN_TOKEN=your-local-token
+	// Local dev: add to .dev.vars (gitignored), e.g. ADMIN_PANEL_PASSWORD=your-local-admin-password
 }

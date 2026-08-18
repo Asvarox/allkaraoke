@@ -1,4 +1,4 @@
-import { ComponentProps, PropsWithChildren } from 'react';
+import { ComponentProps, PropsWithChildren, ReactNode } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
@@ -9,10 +9,15 @@ import GithubRibbon from '~/routes/welcome/github-ribbon';
 
 type Props = PropsWithChildren<{
   supportedBrowsers?: boolean;
+  /**
+   * Rendered to the right of the menu on desktop only. Narrow screens have no room for a second
+   * column, so the caller places its own copy inside the menu instead.
+   */
+  sidePanel?: ReactNode;
 }> &
   ComponentProps<typeof Menu>;
 
-function MenuWithLogo({ children, supportedBrowsers, ...props }: Props) {
+function MenuWithLogo({ children, supportedBrowsers, sidePanel, ...props }: Props) {
   useBackground(true);
 
   return (
@@ -23,7 +28,14 @@ function MenuWithLogo({ children, supportedBrowsers, ...props }: Props) {
           <Logo />
         </div>
         {supportedBrowsers && <RecommendedBrowsers />}
-        <Menu {...props}>{children}</Menu>
+        {sidePanel ? (
+          <div className="flex w-full items-start justify-center gap-6">
+            <Menu {...props}>{children}</Menu>
+            <div className="hidden w-[26rem] shrink-0 lg:block">{sidePanel}</div>
+          </div>
+        ) : (
+          <Menu {...props}>{children}</Menu>
+        )}
       </div>
     </LayoutGame>
   );

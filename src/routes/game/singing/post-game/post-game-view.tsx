@@ -9,6 +9,7 @@ import { BackgroundThemeSetting, useSettingValue } from '~/routes/settings/setti
 
 import SongPage from '../../song-page';
 import HighScoresView from './views/high-scores';
+import LeaderboardPrompt from './views/leaderboard-prompt';
 
 export interface PlayerScore {
   detailedScore: [DetailedScore, DetailedScore];
@@ -67,7 +68,17 @@ function PostGameView({
           />
         )}
         {step === 'highscores' && (
-          <HighScoresView onNextStep={onClickSongSelection} singSetup={singSetup} highScores={highScores} song={song} />
+          <>
+            <HighScoresView
+              onNextStep={onClickSongSelection}
+              singSetup={singSetup}
+              highScores={highScores}
+              song={song}
+            />
+            {/* Sibling rather than a child of HighScoresView so its own registration order — the
+                `Select song` button last — stays exactly as it is */}
+            <LeaderboardPrompt song={song} singSetup={singSetup} />
+          </>
         )}
         <GameTip
           data-active="true"
