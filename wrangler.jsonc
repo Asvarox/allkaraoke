@@ -18,10 +18,9 @@
 		{
 			// Read side of the leaderboard. The Durable Object writes the top-50 projection here on every
 			// accepted submission; GET /leaderboard serves it through the Cache API and never hits the DO.
-			// TODO: replace with the real ids from `wrangler kv namespace create LEADERBOARD_KV`.
 			"binding": "LEADERBOARD_KV",
 			"id": "f4106f1fa6c7408095196e895b0d4038",
-			"preview_id": "REPLACE_WITH_LEADERBOARD_KV_PREVIEW_ID",
+			"preview_id": "516b734626b048d9b9d92f8b7ff09067",
 		},
 	],
 	"durable_objects": {
