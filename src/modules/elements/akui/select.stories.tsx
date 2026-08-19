@@ -9,7 +9,7 @@ export default {
 } as Meta;
 
 const COUNTRIES: SelectOption[] = [
-  { value: '', label: 'Prefer not to say', icon: '🌍' },
+  { value: 'none', label: 'Prefer not to say', icon: '🌍' },
   { value: 'pl', label: 'Poland', icon: '🇵🇱' },
   { value: 'de', label: 'Germany', icon: '🇩🇪' },
   { value: 'fr', label: 'France', icon: '🇫🇷' },
@@ -32,7 +32,7 @@ export const Basic: StoryFn = () => {
   return (
     <div style={{ display: 'flex', gap: 24, flexDirection: 'column', maxWidth: 400 }}>
       <h3 style={{ fontSize: '1rem' }}>Country picker with icons</h3>
-      <Select focused label="Country" value={value} onChange={setValue} options={COUNTRIES} />
+      <Select focused label="" placeholder="Select Country" value={value} onChange={setValue} options={COUNTRIES} />
       <p style={{ fontSize: '0.875rem', opacity: 0.6 }}>Selected: {value || '(prefer not to say)'}</p>
     </div>
   );

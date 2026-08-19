@@ -1,4 +1,13 @@
-import { ComponentProps, ComponentRef, KeyboardEventHandler, ReactNode, useMemo, useRef, useState } from 'react';
+import {
+  ComponentProps,
+  ComponentRef,
+  KeyboardEventHandler,
+  ReactNode,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 
 import { Input } from '~/modules/elements/input';
@@ -8,6 +17,10 @@ import scrollIntoView from '~/modules/utils/scroll-into-view';
 export interface SelectOption {
   value: string;
   label: string;
+  /**
+   * Rendered twice, so it should size itself to its container (`h-full w-full object-cover`): as a
+   * small square in the option list, and as a strip covering the right edge of the closed field.
+   */
   icon?: ReactNode;
 }
 
@@ -37,9 +50,12 @@ export const Select = ({
   placeholder,
   $keyboardNavigationChangeFocus,
   className,
+  ref,
   ...restProps
 }: Props) => {
   const inputRef = useRef<ComponentRef<typeof Input>>(null);
+  useImperativeHandle(ref, () => inputRef.current!);
+
   const optionsMenu = useRef<HTMLDivElement>(null);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -104,14 +120,18 @@ export const Select = ({
     <Container className={className}>
       <Input
         {...restProps}
+        // Keeps the value clear of the icon strip
+        className={selectedOption?.icon ? '[&_input]:pr-20' : undefined}
         role="combobox"
         aria-expanded={isOpen}
         ref={inputRef}
         focused={focused}
         label={label}
         disabled={disabled}
-        placeholder={placeholder ?? selectedOption?.label}
-        adornment={selectedOption?.icon}
+        placeholder={placeholder}
+        // The selected option's icon covers the right edge of the field, the way the language rows
+        // on the Select Song Languages screen carry their flag
+        adornment={selectedOption?.icon && <SelectedIcon>{selectedOption.icon}</SelectedIcon>}
         // While open the field holds the search query; closed, it mirrors the committed option
         value={isOpen ? query : (selectedOption?.label ?? '')}
         onChange={(newQuery) => {
@@ -135,7 +155,7 @@ export const Select = ({
               data-e2e-selected={option.value === value}
               $focused={index === focusedOption}
               onClick={() => commit(option)}>
-              {option.icon}
+              {option.icon && <OptionIcon>{option.icon}</OptionIcon>}
               <span className="truncate">{option.label}</span>
             </SelectMenuItem>
           ))}
@@ -148,6 +168,12 @@ export const Select = ({
 Select.displayName = 'Select';
 
 const Container = twc.div`relative`;
+
+// Matches the flag strip on the language rows: inset by the border, full height, rounded to the
+// field's own corner. The aspect ratio keeps the proportion at any field height.
+const SelectedIcon = twc.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 overflow-hidden rounded-r-xl`;
+
+const OptionIcon = twc.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-xs`;
 
 const SelectMenu = twc.div`absolute z-2 mt-[0.1em] max-h-[9.6em] w-full overflow-y-auto bg-black`;
 

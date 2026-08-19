@@ -5,7 +5,7 @@ import { SelectTestWrapper } from '~/modules/elements/akui/select';
 test.use({ viewport: { width: 500, height: 500 } });
 
 const OPTIONS = [
-  { value: '', label: 'Prefer not to say' },
+  { value: 'none', label: 'Prefer not to say' },
   { value: 'pl', label: 'Poland' },
   { value: 'de', label: 'Germany' },
   { value: 'gb', label: 'United Kingdom' },

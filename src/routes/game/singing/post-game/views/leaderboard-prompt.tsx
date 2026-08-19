@@ -1,5 +1,5 @@
 import posthog from 'posthog-js';
-import { useMemo, useState } from 'react';
+import { ComponentRef, useMemo, useRef, useState } from 'react';
 
 import { MAX_NAME_LENGTH } from '~/consts';
 import { SingSetup, Song } from '~/interfaces';
@@ -34,9 +34,8 @@ const withoutNavHandler = (props: RegisterProps) => {
   return rest;
 };
 
-const flagIcon = (isocode: string) => (
-  <Flag isocode={isocode} loading="lazy" className="h-[1em] w-[1.5em] shrink-0 object-cover" />
-);
+// Sized by whichever container `Select` puts it in — the option list, or the strip on the field
+const flagIcon = (isocode: string) => <Flag isocode={isocode} loading="lazy" className="h-full w-full object-cover" />;
 
 /**
  * Asks the highest-scoring local player whether their score should go on the global board.
@@ -61,6 +60,9 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
 
   const qualifies = !!topPlayer && qualifiesForLeaderboard(topPlayer.score);
   const isOpenInitially = !!leaderboardEnabled && qualifies;
+
+  const nameRef = useRef<ComponentRef<typeof Input>>(null);
+  const countryRef = useRef<ComponentRef<typeof Select>>(null);
 
   const [isOpen, setIsOpen] = useState(isOpenInitially);
   const [name, setName] = useState(() => getPrefilledName(topPlayer?.name));
@@ -87,8 +89,11 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
     const trimmedName = name.trim();
     if (!trimmedName || !topPlayer) return;
 
+    // Both "nothing picked" and the explicit "Prefer not to say" store no country
+    const submittedCountry = country && country !== NO_COUNTRY ? country : null;
+
     setIsOpen(false);
-    persistIdentity(trimmedName, country || null);
+    persistIdentity(trimmedName, submittedCountry);
 
     const playerState = GameState.getPlayer(topPlayer.number);
 
@@ -104,7 +109,7 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
       trackIndex: playerState?.getTrackIndex() ?? 0,
       inputLag: InputManager.getPlayerInputLag(topPlayer.number),
       name: trimmedName,
-      country: country || null,
+      country: submittedCountry,
       notes: encodeNotesPayload(playerState?.getPlayerNotes() ?? []),
     });
 
@@ -131,31 +136,38 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
           That score is good enough for the global leaderboard. Want it on the board on the main menu?
         </Menu.HelpText>
 
-        <Input
-          className="ph-no-capture"
-          label="Name"
-          value={name}
-          onChange={setName}
-          maxLength={MAX_NAME_LENGTH}
-          // `Input` forwards unknown props to the DOM, and the nav handler is not a valid attribute
-          {...withoutNavHandler(
-            register('leaderboard-name', () => undefined, undefined, true, {
-              control: { type: 'text', label: 'Name', value: name },
-              onValueChange: setName,
-            }),
-          )}
-        />
-        <Select
-          className="ph-no-capture"
-          label="Country"
-          value={country}
-          onChange={setCountry}
-          options={countryOptions}
-          {...register('leaderboard-country', () => undefined, undefined, false, {
-            control: { type: 'text', label: 'Country', value: country },
-            onValueChange: setCountry,
-          })}
-        />
+        <div className="flex flex-col gap-2 sm:flex-row">
+          <Input
+            className="ph-no-capture flex-1"
+            label="Name"
+            value={name}
+            onChange={setName}
+            maxLength={MAX_NAME_LENGTH}
+            ref={nameRef}
+            // `Input` forwards unknown props to the DOM, and the nav handler is not a valid attribute
+            {...withoutNavHandler(
+              register('leaderboard-name', () => nameRef.current?.element?.focus(), undefined, true, {
+                control: { type: 'text', label: 'Name', value: name },
+                onValueChange: setName,
+              }),
+            )}
+          />
+          <Select
+            className="ph-no-capture flex-1"
+            // No label: the placeholder carries the field's meaning, and the flag fills the rest
+            label=""
+            placeholder="Select Country"
+            value={country}
+            onChange={setCountry}
+            options={countryOptions}
+            ref={countryRef}
+            // Focusing the field is what opens the list, so the keyboard has to focus it too
+            {...register('leaderboard-country', () => countryRef.current?.element?.focus(), undefined, false, {
+              control: { type: 'text', label: 'Country', value: country },
+              onValueChange: setCountry,
+            })}
+          />
+        </div>
 
         <Menu.ButtonGroup className="flex-col gap-2 sm:flex-row sm:justify-end">
           <Menu.Button

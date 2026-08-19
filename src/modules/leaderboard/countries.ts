@@ -23,8 +23,12 @@ const COUNTRY_CODES = [
   'vn', 'vu', 'wf', 'ws', 'ye', 'yt', 'za', 'zm', 'zw',
 ];
 
-/** The value the "Prefer not to say" option carries; stored as `null` on the record. */
-export const NO_COUNTRY = '';
+/**
+ * The value the explicit "Prefer not to say" option carries; stored as `null` on the record. It is
+ * deliberately not the empty string — that means "nothing picked yet", which is what shows the
+ * field's placeholder.
+ */
+export const NO_COUNTRY = 'none';
 
 export interface Country {
   code: string;
