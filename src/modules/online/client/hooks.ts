@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { createSubscriptionHook } from '~/modules/network/rpc/use-subscription-factory';
 import OnlineClient, { OnlineConnectionStatus } from '~/modules/online/client/online-client';
+import { ONLINE_STATS_REPORT_MS } from '~/modules/online/protocol/consts';
 import {
   LeaderboardEntry,
   OnlineRoomState,
@@ -37,14 +38,45 @@ export const useOnlineSongVotes = (): SongVotes => useOnlineSubscription('song-v
 /** Live ping/volume per participant, pushed (coalesced) on the 'player-stats' channel. */
 export const useOnlinePlayersStats = (): PlayersStats => useOnlineSubscription('player-stats') ?? NO_PLAYERS_STATS;
 
-/** Periodically reports this singer's ping and mic volume to the room. */
+/** Volume steps smaller than this don't move the bar by a visible amount — used to skip reports
+ * that would tell the room nothing (a silent singer reports 0 once and then goes quiet). */
+const VOLUME_REPORT_EPSILON = 0.0005;
+
+/** How often a singer whose volume isn't moving still reports, to keep their ping fresh. */
+const STATS_KEEPALIVE_MS = 1_500;
+
+/** The mic is sampled far faster than it's reported, and the peak of the samples is what goes out —
+ * a single instantaneous reading every ~300ms would alias the loud parts away. */
+const VOLUME_SAMPLE_MS = 50;
+
+/** Periodically reports this singer's ping and mic volume to the room, at the same rate the room
+ * re-broadcasts them, so everyone else's volume bar moves like a meter instead of a slideshow. */
 export const useReportPlayerStats = (enabled: boolean, playerNumber: PlayerNumber) => {
   useEffect(() => {
     if (!enabled) return;
+    let peakVolume = 0;
+    let lastSentVolume: number | null = null;
+    let windowStartedAt = 0;
+    let lastSentAt = 0;
     const interval = setInterval(() => {
-      const volume = InputManager.getPlayerVolume(playerNumber) ?? 0;
+      peakVolume = Math.max(peakVolume, InputManager.getPlayerVolume(playerNumber) ?? 0);
+
+      const now = Date.now();
+      if (now - windowStartedAt < ONLINE_STATS_REPORT_MS) return;
+      const volume = peakVolume;
+      windowStartedAt = now;
+      peakVolume = 0;
+
+      // Reporting three times a second is only cheap while it stays quiet when the volume doesn't
+      // move — a singer sitting silent then costs one message per keepalive, which is also what
+      // refreshes their ping (that one never settles, so it can't gate the skip itself).
+      const volumeMoved = lastSentVolume === null || Math.abs(volume - lastSentVolume) >= VOLUME_REPORT_EPSILON;
+      if (!volumeMoved && now - lastSentAt < STATS_KEEPALIVE_MS) return;
+
+      lastSentVolume = volume;
+      lastSentAt = now;
       OnlineClient.send.room.reportStats(OnlineClient.getLatency(), volume);
-    }, 1_500);
+    }, VOLUME_SAMPLE_MS);
     return () => clearInterval(interval);
   }, [enabled, playerNumber]);
 };

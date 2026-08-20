@@ -29,8 +29,14 @@ export const ONLINE_DRIFT_THRESHOLD_MS = 500;
 /** Leaderboard broadcasts are coalesced so subscribers get at most one update per this interval. */
 export const ONLINE_LEADERBOARD_PUBLISH_MS = 500;
 
-/** Player-stats (ping/volume) broadcasts are coalesced to at most one per this interval. */
-export const ONLINE_STATS_PUBLISH_MS = 1_000;
+/** Player-stats (ping/volume) broadcasts are coalesced to at most one per this interval. Fast
+ * enough for the volume bars to read as live meters (~3 updates/s) rather than a slideshow — the
+ * payload is a couple of numbers per singer, and silent singers stop reporting altogether. */
+export const ONLINE_STATS_PUBLISH_MS = 300;
+
+/** How often each singer samples their mic volume and reports it (with their ping) to the room.
+ * Matches the broadcast interval — sampling faster would only be coalesced away. */
+export const ONLINE_STATS_REPORT_MS = 300;
 
 /** How long the room waits for final scores after the host ends the game before forcing results. */
 export const ONLINE_FORCE_RESULTS_MS = 5_000;

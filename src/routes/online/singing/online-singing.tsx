@@ -8,6 +8,7 @@ import useBlockScroll from '~/modules/hooks/use-block-scroll';
 import useFullscreen from '~/modules/hooks/use-fullscreen';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
+import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
 import { trackOnlineDriftSeek, trackOnlineSongStarted } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
@@ -59,6 +60,17 @@ function OnlineSinging({ roomState, song }: Props) {
   // The local singer plays under their room player number so chart/lyrics colors match the room
   const selfNumber = self?.playerNumber ?? 0;
   const isHost = roomState.hostId === selfId;
+
+  // The medal next to the score belongs to whoever leads the ROOM. This client only sings (and
+  // scores) for itself, so the local game's own derivation would hand every singer a medal — the
+  // room's leaderboard is the only place the other scores exist. Null on a tie, as locally.
+  const leaderboard = useOnlineLeaderboard();
+  const leadingPlayerNumber = useMemo(() => {
+    if (!leaderboard.length) return null;
+    const top = leaderboard.reduce((best, entry) => (entry.score > best.score ? entry : best));
+    const tied = leaderboard.some((entry) => entry.participantId !== top.participantId && entry.score === top.score);
+    return tied ? null : top.playerNumber;
+  }, [leaderboard]);
 
   const singSetup = useMemo<SingSetup>(
     () => ({
@@ -302,6 +314,7 @@ function OnlineSinging({ roomState, song }: Props) {
           singSetup={singSetup}
           // Skip intro is offered only to the host and applies to the whole room
           skipIntroEnabled={isHost}
+          leadingPlayerNumber={leadingPlayerNumber}
           onSkipIntro={(targetTimeSec) =>
             OnlineClient.send.playback.seek(Math.max(0, targetTimeSec * 1_000 - videoGapMs))
           }
