@@ -5,6 +5,7 @@ import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/inde
 import CanvasDrawing from '~/modules/game-engine/drawing/index';
 import fragShader from '~/modules/game-engine/drawing/shaders/shader.frag?raw';
 import vertShader from '~/modules/game-engine/drawing/shaders/shader.vert?raw';
+import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
 import tuple from '~/modules/utils/tuple';
 import SkipIntro from '~/routes/game/singing/game-overlay/components/skip-intro';
@@ -32,6 +33,10 @@ interface Props {
   skipIntroEnabled?: boolean;
   /** Online mode: routes the skip through the room server so it applies to everyone. */
   onSkipIntro?: (targetTimeSec: number) => void;
+  /** Online mode: the player number leading the room, or null while nobody leads it (a tie, or no
+   * scores yet). The local game leaves this undefined and derives the medal from the players on this
+   * device — in a room that is only ever this singer, so everyone would be crowned first. */
+  leadingPlayerNumber?: PlayerNumber | null;
   onOpenPauseMenu?: () => void;
 }
 
@@ -51,6 +56,7 @@ const GameOverlay = forwardRef(function (
     duration,
     skipIntroEnabled = true,
     onSkipIntro,
+    leadingPlayerNumber,
   }: Props,
   fRef,
 ) {
@@ -169,6 +175,7 @@ const GameOverlay = forwardRef(function (
                   tuple([player.number, GameState.getPlayerScore(player.number)]),
                 );
                 const { score, isFirst } = getPlayerScoreData(scores, player.number);
+                const isLeading = leadingPlayerNumber === undefined ? isFirst : leadingPlayerNumber === player.number;
 
                 return (
                   <span
@@ -178,8 +185,8 @@ const GameOverlay = forwardRef(function (
                     data-score={Math.floor(score)}>
                     <ScoreText score={score} />
                     <div
-                      className={`mobile:top-6 mobile:text-lg absolute top-10 rotate-12 text-xl transition-all duration-200 ${isFirst ? '-right-2' : '-right-36'}`}>
-                      {isFirst ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
+                      className={`mobile:top-6 mobile:text-lg absolute top-10 rotate-12 text-xl transition-all duration-200 ${isLeading ? '-right-2' : '-right-36'}`}>
+                      {isLeading ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
                     </div>
                   </span>
                 );

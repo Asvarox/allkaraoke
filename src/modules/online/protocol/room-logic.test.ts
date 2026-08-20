@@ -16,6 +16,7 @@ import {
   ONLINE_RESUME_COUNTDOWN_MS,
   ONLINE_ROOM_TTL_MS,
   ONLINE_START_LEAD_MS,
+  ONLINE_STATS_PUBLISH_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { WireDetailedScore } from '~/modules/online/protocol/types';
@@ -134,7 +135,7 @@ describe('participants', () => {
     // leading publish only, the second report waits for the cooldown
     expect(room.published['player-stats']).toHaveLength(1);
 
-    vi.advanceTimersByTime(1_000);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
     expect(room.published['player-stats']).toHaveLength(2);
     expect(room.published['player-stats'].at(-1)).toEqual({
       p1: { ping: 42, volume: 0.01 },

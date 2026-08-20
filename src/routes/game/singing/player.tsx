@@ -15,6 +15,7 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/vide
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import useKeyboardHelp from '~/modules/hooks/use-keyboard-help';
 import usePrevious from '~/modules/hooks/use-previous';
+import { PlayerNumber } from '~/modules/players/player-number';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
 import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
@@ -42,6 +43,8 @@ interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<Player
   skipIntroEnabled?: boolean;
   /** Online mode: routes the skip through the room server so it applies to everyone. */
   onSkipIntro?: (targetTimeSec: number) => void;
+  /** Online mode: who leads the room, for the first-place medal — see GameOverlay's prop. */
+  leadingPlayerNumber?: PlayerNumber | null;
 }
 
 export interface PlayerRef {
@@ -82,6 +85,7 @@ function Player({
   pauseMenu = false,
   skipIntroEnabled = true,
   onSkipIntro,
+  leadingPlayerNumber,
   ref,
   ...restProps
 }: Props) {
@@ -206,6 +210,7 @@ function Player({
             videoPlayerRef={player}
             skipIntroEnabled={skipIntroEnabled}
             onSkipIntro={onSkipIntro}
+            leadingPlayerNumber={leadingPlayerNumber}
           />
         </div>
       )}
