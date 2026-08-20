@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { twc } from 'react-twc';
 
+import { Badge } from '~/modules/elements/akui/badge';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { useBackground } from '~/modules/elements/background-context';
@@ -42,6 +43,7 @@ function Welcome() {
           {onlineModeEnabled && (
             <NavButton name="online" remoteIcon="play" onClick={() => navigate('online/')}>
               Sing Online
+              <Badge>Preview</Badge>
             </NavButton>
           )}
           <NavButton name="select-input" onClick={() => navigate('select-input/')}>
