@@ -38,7 +38,7 @@ beforeAll(async () => {
   ));
 });
 
-const createRoom = (restoreFrom?: OnlinePersistedState) => {
+const createRoom = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) => {
   const published: Record<string, unknown[]> = {};
   const persist = vi.fn();
   const scheduleTtl = vi.fn();
@@ -55,6 +55,7 @@ const createRoom = (restoreFrom?: OnlinePersistedState) => {
       disconnect,
     },
     restoreFrom,
+    liveParticipantIds,
   );
   const handlers = logic.createHandlers();
   return { logic, handlers, published, persist, scheduleTtl, disconnect };
@@ -671,5 +672,110 @@ describe('restoring from a persisted snapshot (hibernation/restart)', () => {
     expect(state.chart).toBeNull();
     expect(restored.logic.isCreated()).toBe(true);
     expect(restored.logic.handleConnect('p1', 'Name p1')).toEqual({ accepted: true });
+  });
+});
+
+describe('restoring during a hibernation wake (some connections still live)', () => {
+  it('keeps live participants connected and never arms a grace timer for them', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2', 'p3']);
+    const snapshot = source.logic.snapshot();
+
+    // p2's socket genuinely dropped in the gap; p1 and p3 never actually disconnected
+    const restored = createRoom(snapshot, new Set(['p1', 'p3']));
+    const state = restored.logic.getState();
+    expect(state.participants.find((p) => p.id === 'p1')?.connected).toBe(true);
+    expect(state.participants.find((p) => p.id === 'p3')?.connected).toBe(true);
+    expect(state.participants.find((p) => p.id === 'p2')?.connected).toBe(false);
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
+    const survivors = restored.logic.getState().participants.map((p) => p.id);
+    expect(survivors).toEqual(['p1', 'p3']);
+  });
+
+  it('resumes an in-progress readiness countdown on schedule and keeps confirmed readiness', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await uploadChart(source);
+    await source.handlers.room.startGame.handler(ctx('p1'));
+    await source.handlers.room.setReady.handler(ctx('p1'), true);
+    vi.advanceTimersByTime(3_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('readiness');
+    expect(state.participants.find((p) => p.id === 'p1')?.ready).toBe(true);
+    expect(state.readinessDeadline).toBe(snapshot.readinessDeadline);
+
+    // the original deadline is honored, not restarted from a fresh full timeout
+    vi.advanceTimersByTime(ONLINE_READINESS_TIMEOUT_MS - 3_000);
+    expect(restored.logic.getState().phase).toBe('singing');
+  });
+
+  it('keeps a live room in the singing phase with its playback anchor intact', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    vi.advanceTimersByTime(5_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('singing');
+    expect(state.playbackAnchor).toEqual(snapshot.playbackAnchor);
+  });
+
+  it('re-arms the resume countdown mid pause/resume', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    await source.handlers.playback.pause.handler(ctx('p1'));
+    await source.handlers.playback.resume.handler(ctx('p2'));
+    vi.advanceTimersByTime(1_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    expect(restored.logic.getState().resumeCountdownEndsAt).toBe(snapshot.resumeCountdownEndsAt);
+
+    vi.advanceTimersByTime(ONLINE_RESUME_COUNTDOWN_MS - 1_000);
+    const resumed = restored.logic.getState();
+    expect(resumed.pause).toBeNull();
+    expect(resumed.playbackAnchor).not.toBeNull();
+  });
+
+  it('re-arms the force-results timer for a pending endGame', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    await source.handlers.room.endGame.handler(ctx('p1'));
+    vi.advanceTimersByTime(2_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    expect(restored.logic.getState().finishRequestedAt).toBe(snapshot.finishRequestedAt);
+
+    vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS - 2_000);
+    expect(restored.logic.getState().phase).toBe('results');
+  });
+
+  it('falls back to null for mid-song fields missing from a pre-refactor blob, without crashing', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    const {
+      playbackAnchor: _playbackAnchor,
+      readinessDeadline: _readinessDeadline,
+      pause: _pause,
+      resumeCountdownEndsAt: _resumeCountdownEndsAt,
+      finishRequestedAt: _finishRequestedAt,
+      ...legacySnapshot
+    } = source.logic.snapshot();
+
+    const restored = createRoom(legacySnapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('singing');
+    expect(state.playbackAnchor).toBeNull();
+    expect(state.readinessDeadline).toBeNull();
   });
 });

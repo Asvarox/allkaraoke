@@ -8,6 +8,14 @@ import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/pro
 
 const STATE_KEY = 'online-room-state';
 
+/** Persisted on `connection.state` (survives hibernation) so subscriptions can be rebuilt in
+ * `onStart` — the in-memory `ServerSubscriptionRegistry` is lost every time the party hibernates
+ * and wakes for a new message. */
+type OnlineConnectionState = {
+  participantId?: string;
+  channels?: (keyof OnlineSubscriptionChannels)[];
+};
+
 /**
  * Authoritative online-mode room. One instance per room code. Standalone PartyKit project —
  * deployed separately from the remote-mic PartyKit server and from the Cloudflare Worker
@@ -17,6 +25,8 @@ const STATE_KEY = 'online-room-state';
  * query param) doubles as the stable participant id.
  */
 export default class OnlineRoomServer implements Party.Server {
+  options: Party.ServerOptions = { hibernate: true };
+
   private logic: OnlineRoomLogic;
   private rpcServer: RpcServer<ReturnType<OnlineRoomLogic['createHandlers']>> | null = null;
   private subscriptions = new ServerSubscriptionRegistry<OnlineSubscriptionChannels>({
@@ -32,7 +42,7 @@ export default class OnlineRoomServer implements Party.Server {
     this.logic = this.createLogic();
   }
 
-  private createLogic = (restoreFrom?: OnlinePersistedState) =>
+  private createLogic = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) =>
     new OnlineRoomLogic(
       {
         roomCode: this.room.id,
@@ -55,7 +65,7 @@ export default class OnlineRoomServer implements Party.Server {
           });
         },
         disconnect: (participantId) => {
-          for (const connection of this.room.getConnections()) {
+          for (const connection of this.room.getConnections<OnlineConnectionState>()) {
             if (this.participantIdOf(connection) === participantId) {
               connection.close(4001, 'removed');
             }
@@ -63,12 +73,26 @@ export default class OnlineRoomServer implements Party.Server {
         },
       },
       restoreFrom,
+      liveParticipantIds,
     );
 
   async onStart() {
     const persisted = await this.room.storage.get<OnlinePersistedState>(STATE_KEY);
     if (persisted) {
-      this.logic = this.createLogic(persisted);
+      // Sockets that are still attached right now — tells OnlineRoomLogic's constructor whether
+      // this is a hibernation wake (some of these were already in `persisted.participants`) or a
+      // genuine restart (none were).
+      const liveParticipantIds = new Set(
+        [...this.room.getConnections<OnlineConnectionState>()].map((connection) => this.participantIdOf(connection)),
+      );
+      this.logic = this.createLogic(persisted, liveParticipantIds);
+    }
+    // Hibernation drops the in-memory subscription registry between messages; connections
+    // themselves survive it, so rebuild the registry from each connection's persisted state.
+    for (const connection of this.room.getConnections<OnlineConnectionState>()) {
+      for (const channel of connection.state?.channels ?? []) {
+        this.subscriptions.subscribe(connection.id, channel);
+      }
     }
     this.rpcServer = new RpcServer(
       this.logic.createHandlers(),
@@ -77,7 +101,7 @@ export default class OnlineRoomServer implements Party.Server {
         // publishing goes through logic deps directly; RpcServer.publish is unused here
       },
       (peerId) => {
-        for (const connection of this.room.getConnections()) {
+        for (const connection of this.room.getConnections<OnlineConnectionState>()) {
           if (this.participantIdOf(connection) === peerId) {
             connection.close(4001, 'removed');
           }
@@ -92,7 +116,7 @@ export default class OnlineRoomServer implements Party.Server {
     return Response.json({ created: this.logic.isCreated() }, { headers: { 'Access-Control-Allow-Origin': '*' } });
   }
 
-  onConnect(connection: Party.Connection, ctx: Party.ConnectionContext) {
+  onConnect(connection: Party.Connection<OnlineConnectionState>, ctx: Party.ConnectionContext) {
     const url = new URL(ctx.request.url);
     // Bound the URL-derived name before it enters room state — a query param is attacker-controlled
     // and would otherwise bypass the length limit `room.setName` enforces.
@@ -112,10 +136,10 @@ export default class OnlineRoomServer implements Party.Server {
     connection.send(JSON.stringify({ t: 'joined', state: this.logic.getState() }));
   }
 
-  private participantIdOf = (connection: Party.Connection): string =>
-    (connection.state as { participantId?: string } | null)?.participantId ?? connection.id;
+  private participantIdOf = (connection: Party.Connection<OnlineConnectionState>): string =>
+    connection.state?.participantId ?? connection.id;
 
-  async onMessage(raw: string | ArrayBuffer | ArrayBufferView, sender: Party.Connection) {
+  async onMessage(raw: string | ArrayBuffer | ArrayBufferView, sender: Party.Connection<OnlineConnectionState>) {
     if (typeof raw !== 'string') return;
     let message: OnlineMessages;
     try {
@@ -131,6 +155,10 @@ export default class OnlineRoomServer implements Party.Server {
     } else if (message.t === 'rpc-sub') {
       const channel = message.channel;
       this.subscriptions.subscribe(sender.id, channel);
+      sender.setState((prev) => ({
+        ...(prev ?? {}),
+        channels: Array.from(new Set([...(prev?.channels ?? []), channel])),
+      }));
       // Replay the latest value so new subscribers get the current state immediately
       const lastValue = this.subscriptions.getLastValue(channel);
       if (lastValue) {
@@ -138,6 +166,10 @@ export default class OnlineRoomServer implements Party.Server {
       }
     } else if (message.t === 'rpc-unsub') {
       this.subscriptions.unsubscribe(sender.id, message.channel);
+      sender.setState((prev) => ({
+        ...(prev ?? {}),
+        channels: (prev?.channels ?? []).filter((channel) => channel !== message.channel),
+      }));
     } else if (message.t === 'rpc') {
       await this.rpcServer?.handleMessage(message, {
         peer: this.participantIdOf(sender),
@@ -146,11 +178,11 @@ export default class OnlineRoomServer implements Party.Server {
     }
   }
 
-  onClose(connection: Party.Connection) {
+  onClose(connection: Party.Connection<OnlineConnectionState>) {
     this.subscriptions.removePeer(connection.id);
     const participantId = this.participantIdOf(connection);
     // Only a participant's last socket closing counts as a disconnect
-    const hasOtherLiveConnection = [...this.room.getConnections()].some(
+    const hasOtherLiveConnection = [...this.room.getConnections<OnlineConnectionState>()].some(
       (other) => other !== connection && other.id !== connection.id && this.participantIdOf(other) === participantId,
     );
     if (!hasOtherLiveConnection) {
@@ -158,7 +190,7 @@ export default class OnlineRoomServer implements Party.Server {
     }
   }
 
-  onError(connection: Party.Connection) {
+  onError(connection: Party.Connection<OnlineConnectionState>) {
     this.onClose(connection);
   }
 
