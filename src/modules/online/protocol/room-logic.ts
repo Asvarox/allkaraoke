@@ -117,6 +117,7 @@ export class OnlineRoomLogic {
           connected,
           // The readiness confirmation only carries over for someone who never actually left.
           ready: connected ? participant.ready : false,
+          graceDeadline: connected ? null : (participant.graceDeadline ?? null),
         };
       });
       this.nextJoinOrder = restoreFrom.nextJoinOrder;
@@ -150,11 +151,16 @@ export class OnlineRoomLogic {
       }
 
       // Anyone not currently live needs a grace timer, or they'd never be cleaned up (or free
-      // their spot/host role) if they never come back.
+      // their spot/host role) if they never come back. Reuses the remaining time on an
+      // already-ticking window (persisted above) rather than granting a fresh
+      // ONLINE_RECONNECT_GRACE_MS on every wake — otherwise a room that keeps hibernating while
+      // someone else is still around would never actually expire a genuinely dropped participant.
+      const now = this.deps.now();
       this.participants.forEach((participant) => {
-        if (!participant.connected) {
-          this.setTimer(`grace:${participant.id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(participant.id));
-        }
+        if (participant.connected) return;
+        const deadline = participant.graceDeadline ?? now + ONLINE_RECONNECT_GRACE_MS;
+        participant.graceDeadline = deadline;
+        this.setTimer(`grace:${participant.id}`, Math.max(0, deadline - now), () => this.expireGrace(participant.id));
       });
     }
   }
@@ -367,6 +373,7 @@ export class OnlineRoomLogic {
     const existing = this.getParticipant(id);
     if (existing) {
       existing.connected = true;
+      existing.graceDeadline = null;
       if (name) existing.name = name;
       this.clearTimer(`grace:${id}`);
       // A returning earlier-joined participant may reclaim the host role
@@ -386,6 +393,7 @@ export class OnlineRoomLogic {
       playerNumber: this.freePlayerNumber(),
       connected: true,
       ready: false,
+      graceDeadline: null,
     });
     this.playback[id] = 'unstarted';
     if (this.hostId === null) {
@@ -399,6 +407,7 @@ export class OnlineRoomLogic {
     const participant = this.getParticipant(id);
     if (!participant?.connected) return;
     participant.connected = false;
+    participant.graceDeadline = this.deps.now() + ONLINE_RECONNECT_GRACE_MS;
 
     // Keep the spot (and the host role) during the grace window so refreshes don't reshuffle the room
     this.setTimer(`grace:${id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(id));

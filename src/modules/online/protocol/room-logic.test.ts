@@ -693,6 +693,49 @@ describe('restoring during a hibernation wake (some connections still live)', ()
     expect(survivors).toEqual(['p1', 'p3']);
   });
 
+  it('re-arms a partially-elapsed grace window with the remaining time, not a fresh one, across repeated wakes', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p1'); // p2 stays live throughout
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS - 1_000); // 1s of grace left
+    const snapshot1 = source.logic.snapshot();
+    const originalDeadline = snapshot1.participants.find((p) => p.id === 'p1')?.graceDeadline;
+    expect(originalDeadline).toBe(Date.now() + 1_000);
+
+    const wake1 = createRoom(snapshot1, new Set(['p2']));
+    expect(wake1.logic.getState().participants.find((p) => p.id === 'p1')?.graceDeadline).toBe(originalDeadline);
+
+    vi.advanceTimersByTime(500); // 500ms of grace left — still short of the deadline
+    expect(wake1.logic.getState().participants.map((p) => p.id)).toEqual(['p1', 'p2']);
+
+    // A second wake must not push the deadline out again
+    const snapshot2 = wake1.logic.snapshot();
+    const wake2 = createRoom(snapshot2, new Set(['p2']));
+    expect(wake2.logic.getState().participants.find((p) => p.id === 'p1')?.graceDeadline).toBe(originalDeadline);
+
+    vi.advanceTimersByTime(500); // reaches the original deadline, not a deadline extended by either wake
+    expect(wake2.logic.getState().participants.map((p) => p.id)).toEqual(['p2']);
+  });
+
+  it('cleans up promptly when the grace deadline already passed during the hibernation gap', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p1');
+    // Snapshot before the deadline passes — `source`'s own timer firing afterwards is irrelevant,
+    // it represents the process that hibernated before its timer ever got to run.
+    const snapshot = source.logic.snapshot();
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS + 5_000); // the DO woke up long after the deadline passed
+
+    const restored = createRoom(snapshot, new Set(['p2']));
+    // still present at construction time — the timer fires on the next tick, not synchronously
+    expect(restored.logic.getState().participants.map((p) => p.id)).toEqual(['p1', 'p2']);
+
+    vi.advanceTimersByTime(0);
+    expect(restored.logic.getState().participants.map((p) => p.id)).toEqual(['p2']);
+  });
+
   it('resumes an in-progress readiness countdown on schedule and keeps confirmed readiness', async () => {
     const source = createRoom();
     join(source, ['p1', 'p2']);

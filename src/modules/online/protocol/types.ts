@@ -17,6 +17,9 @@ export interface OnlineParticipant {
   connected: boolean;
   /** Confirmed "I'm ready to sing" during the readiness phase. Meaningless in any other phase. */
   ready: boolean;
+  /** Absolute deadline for the reconnect grace window while disconnected, else null. Persisted so
+   * a restore re-arms the remaining time rather than granting a fresh window every wake. */
+  graceDeadline: number | null;
 }
 
 /** Manifest describing a chart (song txt) transferred as a single gzip+base64 payload. */
