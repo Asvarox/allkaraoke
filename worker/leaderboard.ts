@@ -5,6 +5,9 @@ import {
   MAX_NOTES_RECORDS,
   MAX_POINTS,
   MAX_SUBMISSION_BYTES,
+  MAX_SUBMITTED_ID_LENGTH,
+  MAX_SUBMITTED_NAME_LENGTH,
+  MAX_SUBMITTED_SONG_TEXT_LENGTH,
   MIN_NOTES_RECORDS,
   QUALIFYING_SCORE,
 } from '../src/modules/leaderboard/consts';
@@ -24,6 +27,13 @@ const BOARD_INSTANCE_NAME = 'board';
 
 const EMPTY_BOARD: BoardResponse = { generatedAt: 0, entries: [] };
 
+/**
+ * One cache entry for the board, whatever query string the caller used. Keying on the raw request
+ * would let `/leaderboard?x=1` occupy its own entry that no purge ever reaches — and bypass the
+ * cache into KV on every distinct string.
+ */
+export const boardCacheKey = (request: Request) => new URL('/leaderboard', request.url).toString();
+
 const jsonHeaders = { 'Content-Type': 'application/json' };
 
 const error = (status: number, message: string) =>
@@ -38,6 +48,12 @@ export const getBoardStub = (env: LeaderboardEnv) => {
 
 const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 
+const isBoundedString = (value: unknown, maxLength: number): value is string =>
+  isNonEmptyString(value) && value.length <= maxLength;
+
+/** ISO-3166 alpha-2, which is all the client ever sends. */
+const isCountryCode = (value: unknown) => typeof value === 'string' && /^[a-z]{2}$/.test(value);
+
 /**
  * Shape and bounds checks on a decoded submission. Everything here is cheap and synchronous; the
  * hash recomputation is done separately because it is not.
@@ -48,22 +64,32 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
   const submission = payload as Partial<LeaderboardSubmission>;
 
   if (
-    !isNonEmptyString(submission.clientId) ||
-    !isNonEmptyString(submission.songId) ||
-    !isNonEmptyString(submission.name) ||
-    !isNonEmptyString(submission.artist) ||
-    !isNonEmptyString(submission.title) ||
-    !isNonEmptyString(submission.mode) ||
-    !isNonEmptyString(submission.notesHash) ||
-    typeof submission.tolerance !== 'number' ||
-    typeof submission.trackIndex !== 'number' ||
-    typeof submission.inputLag !== 'number'
+    !isBoundedString(submission.clientId, MAX_SUBMITTED_ID_LENGTH) ||
+    !isBoundedString(submission.songId, MAX_SUBMITTED_ID_LENGTH) ||
+    !isBoundedString(submission.name, MAX_SUBMITTED_NAME_LENGTH) ||
+    !isBoundedString(submission.artist, MAX_SUBMITTED_SONG_TEXT_LENGTH) ||
+    !isBoundedString(submission.title, MAX_SUBMITTED_SONG_TEXT_LENGTH) ||
+    !isBoundedString(submission.mode, MAX_SUBMITTED_ID_LENGTH) ||
+    !isBoundedString(submission.notesHash, MAX_SUBMITTED_ID_LENGTH) ||
+    !Number.isFinite(submission.tolerance) ||
+    !Number.isFinite(submission.trackIndex) ||
+    !Number.isFinite(submission.inputLag)
   ) {
     return { message: 'Invalid payload' };
   }
 
-  if (submission.country !== null && typeof submission.country !== 'string') {
+  if (submission.country !== null && !isCountryCode(submission.country)) {
     return { message: 'Invalid country' };
+  }
+
+  // msgpack can carry a map or an array here, and the Durable Object binds it straight into a TEXT
+  // column — an unbindable type would throw inside `submit` and surface as a 500 rather than a 400
+  if (
+    submission.songLastUpdate !== null &&
+    submission.songLastUpdate !== undefined &&
+    !isBoundedString(submission.songLastUpdate, MAX_SUBMITTED_SONG_TEXT_LENGTH)
+  ) {
+    return { message: 'Invalid songLastUpdate' };
   }
 
   if (!Number.isInteger(submission.score)) return { message: 'Invalid score' };
@@ -86,7 +112,7 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
     return { message: 'Implausible notes' };
   }
 
-  return { submission: submission as LeaderboardSubmission };
+  return { submission: { ...submission, songLastUpdate: submission.songLastUpdate ?? null } as LeaderboardSubmission };
 };
 
 export const handleLeaderboardSubmit = async (request: Request, env: LeaderboardEnv) => {
@@ -123,7 +149,7 @@ export const handleLeaderboardSubmit = async (request: Request, env: Leaderboard
     // instead of waiting out the 60s max-age. Other colos still serve their cached copy.
     // Awaited rather than deferred: it is colo-local and cheap, and leaving cache work running
     // past the response makes it race the teardown in the Workers-pool tests.
-    await caches.default.delete(new URL('/leaderboard', request.url).toString());
+    await caches.default.delete(boardCacheKey(request));
   }
 
   return new Response(JSON.stringify(result), { headers: jsonHeaders });
@@ -133,7 +159,9 @@ export const handleLeaderboardRead = async (request: Request, env: LeaderboardEn
   if (request.method !== 'GET') return error(405, 'Method not allowed');
 
   const cache = caches.default;
-  const cached = await cache.match(request);
+  const cacheKey = boardCacheKey(request);
+
+  const cached = await cache.match(cacheKey);
   if (cached) return cached;
 
   const stored = (await env.LEADERBOARD_KV?.get(BOARD_KV_KEY)) ?? JSON.stringify(EMPTY_BOARD);
@@ -145,7 +173,7 @@ export const handleLeaderboardRead = async (request: Request, env: LeaderboardEn
 
   // Two independent responses over the same string rather than a `clone()`: awaiting a put on a
   // tee'd body can block until the other branch is drained, and nothing drains the one we return.
-  await cache.put(request, new Response(stored, { headers }));
+  await cache.put(cacheKey, new Response(stored, { headers }));
 
   return new Response(stored, { headers });
 };

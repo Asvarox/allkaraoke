@@ -3,6 +3,7 @@ import {
   ComponentRef,
   KeyboardEventHandler,
   ReactNode,
+  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -119,6 +120,9 @@ export const Select = ({
     }
   };
 
+  const listboxId = useId();
+  const activeOptionId = focusedOption >= 0 ? `${listboxId}-${focusedOption}` : undefined;
+
   return (
     <Container className={className}>
       <Input
@@ -128,6 +132,8 @@ export const Select = ({
         className={!isOpen && value && selectedOption?.icon ? 'w-full [&_input]:pr-20' : 'w-full'}
         role="combobox"
         aria-expanded={isOpen}
+        aria-controls={listboxId}
+        aria-activedescendant={activeOptionId}
         ref={inputRef}
         focused={focused}
         label={label}
@@ -150,10 +156,14 @@ export const Select = ({
         onKeyDown={handleKeyDown}
       />
       {isOpen && !!filteredOptions.length && (
-        <SelectMenu ref={optionsMenu} role="listbox">
+        <SelectMenu ref={optionsMenu} role="listbox" id={listboxId}>
           {filteredOptions.map((option, index) => (
             <SelectMenuItem
-              role="listitem"
+              // `listbox` takes `option` children; `listitem` is only valid inside a `list`, and
+              // leaves the entries unannounced as selectable
+              role="option"
+              id={`${listboxId}-${index}`}
+              aria-selected={option.value === value}
               key={option.value}
               data-index={index}
               data-focused={index === focusedOption}
@@ -193,7 +203,9 @@ const SelectMenu = twc(
 // `text-lg` (with the same `mobile:text-md` breakpoint) matches the committed value's size in the
 // trigger, which sits in an `Input` at the default `small` size.
 const SelectMenuItem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
-  'typography mobile:text-md flex cursor-pointer min-h-[1em] max-h-[1em] items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
+  // No `max-h`: `Box` is `box-border`, so a 1em cap counts the `p-2` padding too and crops the
+  // `text-lg` line. A minimum keeps the rows even without clipping their labels.
+  'typography mobile:text-md flex min-h-[2.5em] cursor-pointer items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
   props.$focused ? 'text-active' : 'text-white',
 ]);
 

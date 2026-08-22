@@ -3,7 +3,7 @@ import {
   responseHeaders,
   unauthorizedResponse,
 } from '../functions/unverified-songs-browser-admin-auth';
-import { getBoardStub, LeaderboardEnv } from './leaderboard';
+import { boardCacheKey, getBoardStub, LeaderboardEnv } from './leaderboard';
 
 export interface LeaderboardAdminEnv extends LeaderboardEnv {
   ADMIN_PANEL_PASSWORD?: string;
@@ -41,6 +41,10 @@ export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardA
     if (!(await board.deleteRow(id))) {
       return new Response(JSON.stringify({ error: 'Record not found' }), { status: 404, headers: responseHeaders });
     }
+
+    // Deletion is the moderation path, so the removed row must stop being served straight away
+    // rather than linger for the read cache's `max-age`.
+    await caches.default.delete(boardCacheKey(request));
 
     return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders });
   }

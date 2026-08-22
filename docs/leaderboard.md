@@ -9,7 +9,7 @@ Design rationale and the explicitly deferred scope live in
 
 ## Write / read split
 
-```
+```text
 client ──POST /leaderboard──> Worker ──> LeaderboardBoard (Durable Object, SQLite)  [source of truth]
                                               │
                                               └── writes the top-50 JSON ──> KV `board:v1`

@@ -239,6 +239,14 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     const kv = this.env.LEADERBOARD_KV;
     if (!kv) return;
 
-    await kv.put(BOARD_KV_KEY, JSON.stringify(this.projection()));
+    try {
+      await kv.put(BOARD_KV_KEY, JSON.stringify(this.projection()));
+    } catch (error) {
+      // KV allows one write per second per key and 429s the rest. The record itself is already
+      // committed to SQLite, which is the source of truth — failing the whole submission over a
+      // projection that the next accepted write (or the daily alarm) rebuilds anyway would throw
+      // away the row for no gain. The board is at most one submission stale until then.
+      console.error('Failed to write the leaderboard projection to KV', error);
+    }
   }
 }

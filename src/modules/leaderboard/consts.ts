@@ -20,4 +20,13 @@ export const MAX_SUBMISSION_BYTES = 256 * 1024;
 export const MIN_NOTES_RECORDS = 100;
 export const MAX_NOTES_RECORDS = 200_000;
 
+/**
+ * Per-field caps on the text that reaches the public board. The body cap alone is no protection:
+ * it leaves room for a ~200 KB name, and every accepted row is denormalized into the single KV
+ * projection value, so a caller rotating `clientId` could inflate that document at will.
+ */
+export const MAX_SUBMITTED_NAME_LENGTH = 40;
+export const MAX_SUBMITTED_SONG_TEXT_LENGTH = 200;
+export const MAX_SUBMITTED_ID_LENGTH = 128;
+
 export { MAX_POINTS };

@@ -62,7 +62,7 @@ test('should commit an option on click', async ({ mount }) => {
   const component = await mount(<SelectTestWrapper focused label="Country" options={OPTIONS} />);
 
   await component.locator('input').click();
-  await component.locator('[role="listitem"]', { hasText: 'Poland' }).click();
+  await component.locator('[role="option"]', { hasText: 'Poland' }).click();
 
   await expect(component.locator('[data-test="committed-value"]')).toHaveText('pl');
 });
@@ -82,11 +82,22 @@ test('should keep the first option reachable when the list overflows', async ({ 
   // A centred flex column that overflows pushes its leading items past the scroll origin, where
   // nothing can scroll them back into view
   await expect(menu).toHaveJSProperty('scrollTop', 0);
-  await expect(component.locator('[role="listitem"]').first()).toBeInViewport();
+  await expect(component.locator('[role="option"]').first()).toBeInViewport();
 
   await menu.evaluate((element) => element.scrollTo({ top: element.scrollHeight }));
-  await expect(component.locator('[role="listitem"]').last()).toBeInViewport();
+  await expect(component.locator('[role="option"]').last()).toBeInViewport();
 
   await menu.evaluate((element) => element.scrollTo({ top: 0 }));
-  await expect(component.locator('[role="listitem"]').first()).toBeInViewport();
+  await expect(component.locator('[role="option"]').first()).toBeInViewport();
+
+  // A row shorter than its own line box crops the label — compare the rendered height against
+  // what the text inside actually needs
+  const firstOption = component.locator('[role="option"]').first();
+  await expect(firstOption).toContainText('Option 0');
+  const isLabelFullyVisible = await firstOption.evaluate((element) => {
+    const label = element.querySelector('span') ?? element;
+
+    return element.clientHeight >= label.scrollHeight;
+  });
+  expect(isLabelFullyVisible).toBe(true);
 });

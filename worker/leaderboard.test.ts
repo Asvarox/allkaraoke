@@ -132,6 +132,43 @@ describe('POST /leaderboard', () => {
     expect(await response.json()).toEqual({ error: 'Notes hash mismatch' });
   });
 
+  it('rejects an over-long name rather than letting it into the projection', async () => {
+    const response = await submit(await generateSubmission({ name: 'x'.repeat(41) }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Invalid payload' });
+  });
+
+  it('rejects a country that is not an ISO-3166 alpha-2 code', async () => {
+    const response = await submit(await generateSubmission({ country: 'Poland' }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Invalid country' });
+  });
+
+  it('accepts a submission with no country at all', async () => {
+    const response = await submit(await generateSubmission({ country: null }));
+
+    expect(await response.json()).toEqual({ accepted: true });
+  });
+
+  it('rejects a songLastUpdate that SQL could not bind', async () => {
+    // msgpack carries maps and arrays happily; the Durable Object binds this straight into a TEXT
+    // column, so an unbindable value used to throw and surface as a 500
+    const response = await submit(await generateSubmission({ songLastUpdate: { nested: 'map' } as never }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Invalid songLastUpdate' });
+  });
+
+  it('serves one cache entry regardless of the query string', async () => {
+    await submit(await generateSubmission());
+
+    const withQuery = await SELF.fetch('https://example.com/leaderboard?cache-buster=1');
+
+    expect(((await withQuery.json()) as BoardResponse).entries).toHaveLength(1);
+  });
+
   it('rejects a body that is not msgpack', async () => {
     const response = await SELF.fetch('https://example.com/leaderboard', {
       method: 'POST',
@@ -200,5 +237,9 @@ describe('/leaderboard-admin', () => {
       headers: adminHeaders,
     });
     expect(missing.status).toBe(404);
+
+    // Deletion is the moderation path, so the row must leave the cached board immediately
+    const board = await SELF.fetch('https://example.com/leaderboard');
+    expect(((await board.json()) as BoardResponse).entries).toHaveLength(0);
   });
 });

@@ -43,8 +43,13 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
 
   const qualifies = !!leaderboardEnabled && !!topPlayer && qualifiesForLeaderboard(topPlayer.score);
 
-  // The prompt opens on its own only while the player has no standing decision
-  const [isModalOpen, setIsModalOpen] = useState(qualifies && sharingDecision === null);
+  /**
+   * Derived, not seeded from the first render: `useLeaderboardEnabled` reads a PostHog flag that can
+   * still be resolving at mount, and a `useState` initialiser would miss the prompt entirely for
+   * that game once the flag arrived. What is tracked instead is the player having dealt with it.
+   */
+  const [isPromptDismissed, setIsPromptDismissed] = useState(false);
+  const isModalOpen = qualifies && sharingDecision === null && !isPromptDismissed;
 
   const [name, setName] = useState(() => getPrefilledName(topPlayer?.name));
   const [country, setCountry] = useState(getPrefilledCountry);
@@ -99,14 +104,14 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
    * lands on the very panel every later song will show them, and the send happens in one place.
    */
   const acceptFromModal = () => {
-    setIsModalOpen(false);
+    setIsPromptDismissed(true);
     setSharingDecision('always');
     posthog.capture('leaderboardOptedIn', { songId: song.id, score });
   };
 
   /** Closing the prompt any way at all — the button, Backspace, the backdrop — declines for good. */
   const declineFromModal = () => {
-    setIsModalOpen(false);
+    setIsPromptDismissed(true);
     setSharingDecision('never');
     posthog.capture('leaderboardOptedOut', { songId: song.id, score });
   };
@@ -122,8 +127,8 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
   };
 
   const openModal = () => {
+    setIsPromptDismissed(false);
     setSharingDecision(null);
-    setIsModalOpen(true);
   };
 
   const panel: LeaderboardPanelState = (() => {

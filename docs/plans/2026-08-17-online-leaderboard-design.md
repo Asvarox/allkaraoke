@@ -25,8 +25,8 @@ each record so score verification can be built later.
 
 In scope:
 
-- Global board: best score per `(device, song, name)` over a rolling 14 days, top 50 retained,
-  top 10 displayed.
+- Global board: best score per `(device, song, name)` over a rolling 14 days, top 50 projected and
+  top 10 displayed; every accepted record is kept until it expires, so the projection can backfill.
 - Prompt after any local game where the highest-scoring player is at or above 1,000,000.
 - Name + country capture, persisted in localStorage for prefill.
 - Storage of the sung frequency records with each record, unused in v1.
@@ -50,7 +50,7 @@ Out of scope (deferred, decided explicitly):
 
 Write path and read path are fully separated.
 
-```
+```text
 client ──POST /leaderboard──> Worker ──> Durable Object (SQLite)   [source of truth]
                                               │
                                               └── writes top-50 JSON ──> KV `board:v1`
@@ -128,7 +128,7 @@ base64 would inflate a 30–90 KB blob by a third for no benefit.
   songId: string,
   artist: string,
   title: string,
-  songLastUpdate: string,
+  songLastUpdate: string | null,
   score: number,
   tolerance: number,
   mode: string,
@@ -321,8 +321,9 @@ Corrections to the assumptions above, found while building it:
 
 ## Testing
 
-- DO board logic (insert, dedupe, top-50 projection, expiry, rate limit) with
-  `@cloudflare/vitest-pool-workers`, following `worker/unverified-songs-store.test.ts`.
+- DO board logic (insert, dedupe, top-50 projection, expiry) with
+  `@cloudflare/vitest-pool-workers`, following `worker/unverified-songs-store.test.ts`. Rate
+  limiting is applied at the Worker edge, so it is covered by the route tests instead.
 - The prompt modal and the new `Select` with `playwright-ct`.
 - One e2e: sing → qualify → prompt → submit → board renders, against local `wrangler dev`. The
   feature flag also gives the e2e an off-state to assert against.

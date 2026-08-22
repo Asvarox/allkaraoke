@@ -8,8 +8,12 @@ let pages: ReturnType<typeof initialise>;
 const song = 'e2e-multitrack-polish-1994';
 const language = 'Polish';
 
-const playerName = 'E2E Board Player';
-const alwaysPlayerName = 'E2E Always Player';
+// Local Durable Object storage survives between runs, and the board dedupes on the submitted name,
+// so a leftover row from an earlier run would satisfy an assertion this run never earned.
+// Kept short: the name field caps at MAX_NAME_LENGTH (20)
+const runId = Math.random().toString(36).slice(2, 8);
+const playerName = `E2E once ${runId}`;
+const alwaysPlayerName = `E2E always ${runId}`;
 const playerCountry = 'Poland';
 
 /**

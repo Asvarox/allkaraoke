@@ -34,13 +34,19 @@ const columns: MRT_ColumnDef<AdminBoardEntry>[] = [
 export function LeaderboardManagement({ password }: Props) {
   const [error, setError] = useState<string | null>(null);
 
-  const { data, isLoading, mutate } = useSWR(['leaderboard-admin', password], () =>
-    listAdminLeaderboardEntries(password),
-  );
+  const {
+    data,
+    error: listError,
+    isLoading,
+    mutate,
+  } = useSWR(['leaderboard-admin', password], () => listAdminLeaderboardEntries(password));
 
   const tableColumns = useMemo(() => columns, []);
 
   const remove = async (entry: AdminBoardEntry) => {
+    // Deleting a board row cannot be undone, and the rows are one click apart in the table
+    if (!global.confirm(`Delete ${entry.name}'s score for ${entry.artist} — ${entry.title}?`)) return;
+
     setError(null);
 
     try {
@@ -53,7 +59,10 @@ export function LeaderboardManagement({ password }: Props) {
 
   return (
     <div className="flex flex-col gap-4">
-      {error && <Alert severity="error">{error}</Alert>}
+      {/* A failed list would otherwise render as an empty table, indistinguishable from an empty board */}
+      {(error || listError) && (
+        <Alert severity="error">{error ?? (listError instanceof Error ? listError.message : 'Failed to load')}</Alert>
+      )}
       <MaterialReactTable
         columns={tableColumns}
         data={data ?? []}

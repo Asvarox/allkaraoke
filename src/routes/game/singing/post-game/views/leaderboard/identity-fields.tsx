@@ -67,8 +67,10 @@ function LeaderboardIdentityFields({
     <div className="flex flex-col gap-2 sm:flex-row">
       <Select
         className="ph-no-capture min-w-0 sm:basis-1/3"
-        // No label: the placeholder carries the field's meaning, and the flag fills the rest
+        // No label: the placeholder carries the field's meaning, and the flag fills the rest. The
+        // placeholder disappears once a country is picked, so the accessible name is spelled out.
         label=""
+        aria-label="Country"
         placeholder="Select Country"
         value={country}
         onChange={onCountryChange}
