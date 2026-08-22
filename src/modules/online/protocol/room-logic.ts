@@ -32,6 +32,7 @@ import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-numbe
 
 /** Fields added after the first release — blobs still in storage predate them, so they stay optional. */
 type LatePersistedField =
+  | 'roomCode'
   | 'chartPreview'
   | 'bannedIds'
   | 'created'
@@ -56,8 +57,13 @@ export interface OnlineRoomDeps {
   publish: (channel: keyof OnlineSubscriptionChannels, data: unknown) => void;
   /** Persist state so the room survives hibernation/restarts. Fire-and-forget. */
   persist: (state: OnlinePersistedState) => void;
-  /** Schedule the TTL cleanup alarm. */
-  scheduleTtl: (deadline: number) => void;
+  /** Wake the room at this absolute time — the earliest pending deadline across the TTL and every
+   * reconnect grace window, or null when nothing is pending. Backed by the room's single alarm, so
+   * unlike `setTimeout` these survive hibernation: a quiet room with nobody sending anything still
+   * gets woken to expire a grace window. */
+  scheduleWake: (deadline: number | null) => void;
+  /** Wipe the room — its TTL ran out. */
+  destroy?: () => void;
   setTimeout?: (callback: () => void, delayMs: number) => unknown;
   clearTimeout?: (handle: unknown) => void;
   /** Forcibly close a participant's connection(s). */
@@ -94,6 +100,14 @@ export class OnlineRoomLogic {
   private playback: Record<string, OnlinePlaybackStatus> = {};
 
   private timers = new Map<string, unknown>();
+
+  /** Absolute deadlines that must outlive hibernation, keyed by name ('ttl', `grace:<id>`). The
+   * room has exactly one alarm, so these are multiplexed: `scheduleWake` always gets the earliest,
+   * and `handleAlarm` fires everything due and re-arms for the next. Rebuilt on restore from the
+   * persisted `lastActivityAt` and `graceDeadline`s, so a wake never loses one. */
+  private wakeDeadlines = new Map<string, number>();
+  /** Last value handed to `deps.scheduleWake`, so an unchanged earliest deadline doesn't re-arm. */
+  private lastScheduledWake: number | null = null;
 
   constructor(
     private readonly deps: OnlineRoomDeps,
@@ -160,10 +174,65 @@ export class OnlineRoomLogic {
         if (participant.connected) return;
         const deadline = participant.graceDeadline ?? now + ONLINE_RECONNECT_GRACE_MS;
         participant.graceDeadline = deadline;
-        this.setTimer(`grace:${participant.id}`, Math.max(0, deadline - now), () => this.expireGrace(participant.id));
+        this.setWake(`grace:${participant.id}`, deadline);
       });
+      // The TTL deadline has to be back in the map before anything else touches it: `syncWake`
+      // picks the earliest of what it can see, so a missing 'ttl' would let a grace expiry cancel
+      // the room's cleanup alarm outright.
+      this.setWake('ttl', this.lastActivityAt + ONLINE_ROOM_TTL_MS);
     }
   }
+
+  // --- hibernation-safe wakes (the room's single alarm, multiplexed) ---
+
+  private setWake = (name: string, deadline: number) => {
+    this.wakeDeadlines.set(name, deadline);
+    this.syncWake();
+  };
+
+  private clearWake = (name: string) => {
+    if (this.wakeDeadlines.delete(name)) this.syncWake();
+  };
+
+  private syncWake = () => {
+    const deadlines = [...this.wakeDeadlines.values()];
+    const earliest = deadlines.length ? Math.min(...deadlines) : null;
+    if (earliest === this.lastScheduledWake) return;
+    this.lastScheduledWake = earliest;
+    this.deps.scheduleWake(earliest);
+  };
+
+  /**
+   * The room's alarm fired: run every deadline that is due and re-arm for the next one. Called by
+   * the host on `onAlarm`, which is the only thing that wakes a hibernated room nobody is talking
+   * to — grace windows would otherwise never expire once the clients go idle.
+   */
+  public handleAlarm = () => {
+    const now = this.deps.now();
+    // Snapshot the due names first: expiring one deadline republishes state and can add or drop
+    // others (a removed participant re-elects the host, a publish touches the TTL).
+    const due = [...this.wakeDeadlines].filter(([, deadline]) => deadline <= now).map(([name]) => name);
+    for (const name of due) {
+      if (!this.wakeDeadlines.has(name)) continue;
+      this.wakeDeadlines.delete(name);
+      if (name === 'ttl') {
+        // The TTL means abandoned, not merely quiet. Neither pings nor stats reports touch the
+        // room's state (only `publishState` does), so a lobby full of idle singers lets the
+        // deadline come due with everyone still sitting in it — and wiping storage out from under
+        // live sockets would evaporate the room on its next hibernation wake. `isExpired` is the
+        // one place that rule lives.
+        if (!this.isExpired()) {
+          this.touch();
+          continue;
+        }
+        // Nothing left to re-arm — the room and its alarm go away with the storage.
+        this.deps.destroy?.();
+        return;
+      }
+      if (name.startsWith('grace:')) this.expireGrace(name.slice('grace:'.length));
+    }
+    this.syncWake();
+  };
 
   // --- timers ---
 
@@ -236,6 +305,9 @@ export class OnlineRoomLogic {
    * private member cannot be reached by the `ReturnType<…>` that derives the type.
    */
   public snapshot = () => ({
+    /** Persisted because `Party.id` is not readable in an alarm context — the alarm handler has to
+     * rebuild the room from storage alone. */
+    roomCode: this.deps.roomCode,
     participants: this.participants,
     nextJoinOrder: this.nextJoinOrder,
     hostId: this.hostId,
@@ -265,7 +337,7 @@ export class OnlineRoomLogic {
 
   private touch = () => {
     this.lastActivityAt = this.deps.now();
-    this.deps.scheduleTtl(this.lastActivityAt + ONLINE_ROOM_TTL_MS);
+    this.setWake('ttl', this.lastActivityAt + ONLINE_ROOM_TTL_MS);
     this.deps.persist(this.snapshot());
   };
 
@@ -375,7 +447,7 @@ export class OnlineRoomLogic {
       existing.connected = true;
       existing.graceDeadline = null;
       if (name) existing.name = name;
-      this.clearTimer(`grace:${id}`);
+      this.clearWake(`grace:${id}`);
       // A returning earlier-joined participant may reclaim the host role
       this.electHost();
       this.publishState();
@@ -410,7 +482,7 @@ export class OnlineRoomLogic {
     participant.graceDeadline = this.deps.now() + ONLINE_RECONNECT_GRACE_MS;
 
     // Keep the spot (and the host role) during the grace window so refreshes don't reshuffle the room
-    this.setTimer(`grace:${id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(id));
+    this.setWake(`grace:${id}`, participant.graceDeadline);
     this.publishState();
   };
 
@@ -421,7 +493,7 @@ export class OnlineRoomLogic {
   };
 
   private removeParticipant = (id: string) => {
-    this.clearTimer(`grace:${id}`);
+    this.clearWake(`grace:${id}`);
     this.participants = this.participants.filter((other) => other.id !== id);
     this.leaderboard = this.leaderboard.filter((entry) => entry.participantId !== id);
     delete this.songVotes[id];
@@ -715,10 +787,13 @@ export class OnlineRoomLogic {
         this.setTimer('force-results', ONLINE_FORCE_RESULTS_MS, this.forceResults);
         this.publishState();
       }),
-      /** Report your connection latency and mic volume so others can see them. */
-      reportStats: defineMutation((ctx, ping: number, volume: number) => {
+      /** Report your connection latency and mic volume so others can see them. `idle` is sent once
+       * on each transition when a singer stops reporting altogether (see `useIsUserActive`): the
+       * room has no timer watching for stale entries — that would wake it, which is the whole
+       * thing being avoided — so going quiet has to be stated rather than inferred. */
+      reportStats: defineMutation((ctx, ping: number, volume: number, idle: boolean = false) => {
         this.requireParticipant(ctx.senderId);
-        this.playerStats[ctx.senderId] = { ping: Math.round(ping), volume };
+        this.playerStats[ctx.senderId] = { ping: Math.round(ping), volume, idle };
         this.queueStatsPublish();
       }),
       /** Host only: remove a singer from the room and ban them from rejoining. */

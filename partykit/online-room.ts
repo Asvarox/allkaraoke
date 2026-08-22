@@ -2,7 +2,7 @@ import type * as Party from 'partykit/server';
 
 import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
-import { ONLINE_MAX_NAME_LENGTH, ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
+import { ONLINE_MAX_NAME_LENGTH } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 
@@ -29,6 +29,10 @@ export default class OnlineRoomServer implements Party.Server {
 
   private logic: OnlineRoomLogic;
   private rpcServer: RpcServer<ReturnType<OnlineRoomLogic['createHandlers']>> | null = null;
+  /** `onStart` runs once per wake, but `onAlarm` is not covered by it — PartyKit only promises
+   * `onStart` before the first `onConnect`/`onRequest`. Both go through here so an alarm that wakes
+   * a hibernated room still gets restored state and a rebuilt subscription registry to publish to. */
+  private started: Promise<void> | null = null;
   private subscriptions = new ServerSubscriptionRegistry<OnlineSubscriptionChannels>({
     // Both channels have a current value even before anything is published, so a peer subscribing
     // right after joining doesn't have to wait for the next change
@@ -45,7 +49,9 @@ export default class OnlineRoomServer implements Party.Server {
   private createLogic = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) =>
     new OnlineRoomLogic(
       {
-        roomCode: this.room.id,
+        // `Party.id` is not readable in an alarm context, so a restored room prefers the code from
+        // its own snapshot and only falls back to the room's id on a first (non-restored) start.
+        roomCode: restoreFrom?.roomCode ?? this.room.id,
         now: () => Date.now(),
         publish: (channel, data) => {
           this.subscriptions.publish(
@@ -59,9 +65,15 @@ export default class OnlineRoomServer implements Party.Server {
             console.error('Failed to persist online room state', error);
           });
         },
-        scheduleTtl: (deadline) => {
-          this.room.storage.setAlarm(deadline).catch((error) => {
-            console.error('Failed to schedule online room TTL alarm', error);
+        scheduleWake: (deadline) => {
+          const armed = deadline === null ? this.room.storage.deleteAlarm() : this.room.storage.setAlarm(deadline);
+          armed.catch((error) => {
+            console.error('Failed to arm online room alarm', error);
+          });
+        },
+        destroy: () => {
+          this.room.storage.deleteAll().catch((error) => {
+            console.error('Failed to wipe expired online room', error);
           });
         },
         disconnect: (participantId) => {
@@ -76,7 +88,13 @@ export default class OnlineRoomServer implements Party.Server {
       liveParticipantIds,
     );
 
-  async onStart() {
+  onStart() {
+    return this.ensureStarted();
+  }
+
+  private ensureStarted = () => (this.started ??= this.start());
+
+  private async start() {
     const persisted = await this.room.storage.get<OnlinePersistedState>(STATE_KEY);
     if (persisted) {
       // Sockets that are still attached right now — tells OnlineRoomLogic's constructor whether
@@ -194,14 +212,14 @@ export default class OnlineRoomServer implements Party.Server {
     this.onClose(connection);
   }
 
+  /**
+   * The only thing that wakes a room nobody is talking to. Clients in the lobby stop pinging and
+   * reporting once they go idle, so without this a reconnect grace window armed just before the
+   * party hibernated would never expire — the disconnected singer would keep their slot, and
+   * possibly the host role, forever.
+   */
   async onAlarm() {
-    const persisted = await this.room.storage.get<OnlinePersistedState>(STATE_KEY);
-    if (!persisted) return;
-    const expired = Date.now() - persisted.lastActivityAt >= ONLINE_ROOM_TTL_MS;
-    if (expired) {
-      await this.room.storage.deleteAll();
-    } else {
-      await this.room.storage.setAlarm(persisted.lastActivityAt + ONLINE_ROOM_TTL_MS);
-    }
+    await this.ensureStarted();
+    this.logic.handleAlarm();
   }
 }

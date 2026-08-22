@@ -11,6 +11,7 @@ import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import {
   useIsOnlineHost,
+  useIsUserActive,
   useOnlineConnectionStatus,
   useOnlineRoomState,
   useReportPlayerStats,
@@ -101,7 +102,12 @@ function OnlineRoom({ roomCode }: Props) {
     });
   }, [selfPlayerNumber]);
   const { song, error: songError } = useOnlineSong(status === 'connected' ? roomState?.chart : null);
-  useReportPlayerStats(status === 'connected', selfPlayerNumber ?? 0);
+  // Only the lobby and the results screen may go quiet. During readiness and singing the pointer
+  // sits still by design — nobody jiggles the mouse mid-countdown or mid-song — so idling there
+  // would blank everyone's volume bar at exactly the wrong moment.
+  const canIdle = roomState?.phase === 'lobby' || roomState?.phase === 'results';
+  const isUserActive = useIsUserActive(canIdle);
+  useReportPlayerStats(status === 'connected', isUserActive, selfPlayerNumber ?? 0);
 
   const isHost = useIsOnlineHost();
   const [songBrowserRoute] = useRoute(routePaths.ONLINE_PICK_SONG);

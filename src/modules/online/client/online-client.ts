@@ -89,6 +89,10 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private reconnectAttempts = 0;
   private clockOffsetMs = 0;
   private pingPong = new PingPongTracker();
+  /** Set while this browser has gone idle (see `useIsUserActive`). The ping loop is the room's
+   * other source of unsolicited traffic, so it has to stop too — otherwise the party never gets
+   * quiet enough to hibernate no matter what the stats loop does. */
+  private reportingIdle = false;
 
   public readonly subscriptions = new ClientSubscriptionManager<OnlineSubscriptionChannels>();
 
@@ -198,7 +202,8 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       if (message.t === 'joined') {
         this.setStatus('connected');
         this.reconnectAttempts = 0;
-        this.pingPong.start(this.sendPing);
+        // A reconnect while idle (a dropped socket doesn't wake anyone up) stays quiet
+        if (!this.reportingIdle) this.pingPong.start(this.sendPing);
         this.subscriptions.setSendFunctions(
           (channel) => this.transport?.sendEvent({ t: 'rpc-sub', channel }),
           (channel) => this.transport?.sendEvent({ t: 'rpc-unsub', channel }),
@@ -221,6 +226,19 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     });
   };
 
+  /** Stop (or restart) the ping loop as this browser goes idle and comes back. The last measured
+   * latency is kept, so a frozen `getLatency()` still reports something sensible — consumers hide
+   * the ping for idle singers rather than trusting it. */
+  public setReportingIdle = (idle: boolean) => {
+    if (this.reportingIdle === idle) return;
+    this.reportingIdle = idle;
+    if (idle) {
+      this.pingPong.stop();
+    } else if (this.status === 'connected') {
+      this.pingPong.start(this.sendPing);
+    }
+  };
+
   private sendPing = () => {
     if (!this.transport?.isConnected()) return;
     this.transport.sendEvent({ t: 'ping' });
@@ -231,6 +249,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 
   public disconnect = () => {
     this.shouldReconnect = false;
+    this.reportingIdle = false;
     this.pingPong.stop();
     this.transport?.clearAllListeners();
     this.transport?.close();
