@@ -207,16 +207,24 @@ in the PoC, plus those three fields on the record.
 
 ## Standing decisions
 
-The prompt is only the undecided state. `LeaderboardSharingSetting` (localStorage) holds one of:
+The prompt is asked once, the first time a score qualifies, and both of its answers are standing
+decisions. `LeaderboardSharingSetting` (localStorage) holds one of:
 
-- `null` — undecided. The prompt opens after every qualifying song, as originally specified.
-- `'always'` — set by the prompt's "Share my scores from now on" checkbox. The prompt stops opening;
-  the high-scores step instead shows the identity being shared under, with the fields still
-  editable, and the button that moves on to the next song reads "Share score and sing a song" and
-  holds for the request. Sharing on the way out rather than on arrival keeps the wait off the path
-  of a player who just wants to see their score.
-- `'never'` — set by the prompt's "Don't ask again". Nothing opens by itself again; the high-scores
-  step keeps a one-line offer that reopens the prompt, so the decision is not a dead end.
+- `null` — undecided. The prompt opens after a qualifying song.
+- `'always'` — the player accepted. The prompt stops opening; the high-scores step instead shows the
+  identity being shared under, with the fields still editable, and the button that moves on to the
+  next song reads "Share score and sing a song" and holds for the request.
+- `'never'` — the player closed the prompt, by any means. Nothing opens by itself again; the
+  high-scores step keeps a one-line offer that reopens the prompt.
+
+Accepting *arms* the score rather than sending it on the spot: the player lands on the same panel
+every later song will show them, and there is one send path instead of two. Sending happens on the
+way out rather than on arrival, which keeps the wait off the path of a player who just wanted to see
+their score.
+
+There is deliberately no per-song answer. A one-off "not this time" would have to be asked again
+next song, which is the pattern this replaced; the panel's offer covers the case where the decision
+turns out to be wrong.
 
 "Stop sharing scores" on the panel returns to `null` rather than to `'never'` — turning off
 automatic sharing is not the same as never wanting to be asked — and clears the stored name and

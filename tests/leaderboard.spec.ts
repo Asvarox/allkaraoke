@@ -79,12 +79,17 @@ test.describe('Global leaderboard enabled', () => {
       await expect(pages.leaderboardPage.prompt).toBeVisible();
     });
 
-    await test.step('Name and country are submitted', async () => {
+    await test.step('Accepting hands over to the panel on the high scores step', async () => {
       await pages.leaderboardPage.fillIdentity(playerName, playerCountry);
       await pages.leaderboardPage.submit();
+
+      await expect(pages.leaderboardPage.sharePanel).toBeVisible();
+      await expect(pages.postGameHighScoresPage.selectSongButton).toContainText('Share score and sing a song');
     });
 
-    await test.step('The submitted score is on the main menu board', async () => {
+    await test.step('The score is sent on the way out, and lands on the board', async () => {
+      await pages.postGameHighScoresPage.goToSongList();
+
       await page.goto('/?e2e-test');
       await pages.landingPage.enterTheGame();
 
@@ -101,7 +106,6 @@ test.describe('Global leaderboard enabled', () => {
     await test.step('Opt into sharing every score from the prompt', async () => {
       await singTheSong(page);
       await expect(pages.leaderboardPage.prompt).toBeVisible();
-      await pages.leaderboardPage.alwaysShareCheckbox.click();
       await pages.leaderboardPage.fillIdentity(alwaysPlayerName, playerCountry);
       await pages.leaderboardPage.submit();
     });
@@ -125,14 +129,14 @@ test.describe('Global leaderboard enabled', () => {
     });
   });
 
-  test('stops asking after "Don\'t ask again", and keeps a way back in', async ({ page }) => {
+  test('stops asking after a decline, and keeps a way back in', async ({ page }) => {
     test.slow();
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await singTheSong(page);
 
     await expect(pages.leaderboardPage.prompt).toBeVisible();
-    await pages.leaderboardPage.neverAskAgainButton.click();
+    await pages.leaderboardPage.declineButton.click();
     await expect(pages.leaderboardPage.prompt).toHaveCount(0);
 
     await test.step('The high-scores step offers a way back into the prompt', async () => {

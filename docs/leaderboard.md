@@ -136,18 +136,23 @@ replaying the notes blob is the real answer and is deferred.
 
 ## Standing decisions
 
-The prompt is only the undecided state. `LeaderboardSharingSetting` holds `null` (ask every
-qualifying song), `'always'`, or `'never'`, and `useLeaderboardPostGame` turns that into what the
-high-scores step renders:
+The prompt is asked once, and both of its answers are standing decisions —
+`LeaderboardSharingSetting` holds `null`, `'always'` or `'never'`, and `useLeaderboardPostGame`
+turns that into what the high-scores step renders:
 
 | Decision | Prompt | Panel below the local scores | The button that moves on |
 | --- | --- | --- | --- |
-| `null` | opens | offers a way back in once dismissed | "Select song" |
+| `null` | opens | — | "Select song" |
 | `'always'` | never opens | the identity being shared under, still editable, plus "Stop sharing scores" | "Share score and sing a song", holding for the request |
 | `'never'` | never opens | a one-line offer that reopens the prompt | "Select song" |
 
-An armed score is submitted on the way out rather than on arrival, so the wait is never in the way
-of a player who only wanted to see their score. "Stop sharing scores" returns the decision to `null`
+Accepting the prompt arms the score rather than sending it there and then, so the player lands on
+the very panel every later song will show them and the send lives in one place. Closing the prompt
+any way at all — the button, Backspace, the backdrop — declines for good; the panel's offer is the
+way back, so nothing about that is a dead end.
+
+An armed score is sent on the way out rather than on arrival, so the wait is never in the way of a
+player who only wanted to see their score. "Stop sharing scores" returns the decision to `null`
 rather than `'never'` — turning off automatic sharing is not the same as never wanting to be asked —
 and clears the stored name and country. The `clientId` survives: it is the device, not the person.
 

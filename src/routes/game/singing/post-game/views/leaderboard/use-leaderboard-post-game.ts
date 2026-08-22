@@ -17,11 +17,10 @@ import { useSettingValue } from '~/routes/settings/settings-state';
  * What the high-scores step shows below the local scores:
  *
  * - `armed` — the player shares by default; the score goes up when they move on to the next song.
- * - `shared` — this song's score is already on its way, nothing left to do here.
  * - `opt-in` — the player declined; a way back into the prompt, and nothing else.
  * - `null` — the prompt is up, the leaderboard is off, or the score does not qualify.
  */
-export type LeaderboardPanelState = 'armed' | 'shared' | 'opt-in' | null;
+export type LeaderboardPanelState = 'armed' | 'opt-in' | null;
 
 interface Params {
   song: Song;
@@ -46,7 +45,6 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
 
   // The prompt opens on its own only while the player has no standing decision
   const [isModalOpen, setIsModalOpen] = useState(qualifies && sharingDecision === null);
-  const [alwaysShare, setAlwaysShare] = useState(sharingDecision === 'always');
 
   const [name, setName] = useState(() => getPrefilledName(topPlayer?.name));
   const [country, setCountry] = useState(getPrefilledCountry);
@@ -95,20 +93,19 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
     posthog.capture('leaderboardSubmitted', { songId: song.id, score: topPlayer.score });
   };
 
-  /** The modal's own submit: shares right away and records the standing decision if it was ticked. */
-  const submitFromModal = () => {
+  /**
+   * The prompt has exactly two outcomes, and both are standing decisions — there is no per-song
+   * answer to give. Accepting arms this score rather than sending it on the spot, so the player
+   * lands on the very panel every later song will show them, and the send happens in one place.
+   */
+  const acceptFromModal = () => {
     setIsModalOpen(false);
-    if (alwaysShare) setSharingDecision('always');
-
-    void share();
+    setSharingDecision('always');
+    posthog.capture('leaderboardOptedIn', { songId: song.id, score });
   };
 
-  const dismissOnce = () => {
-    setIsModalOpen(false);
-    posthog.capture('leaderboardDismissed', { songId: song.id, score });
-  };
-
-  const neverAskAgain = () => {
+  /** Closing the prompt any way at all — the button, Backspace, the backdrop — declines for good. */
+  const declineFromModal = () => {
     setIsModalOpen(false);
     setSharingDecision('never');
     posthog.capture('leaderboardOptedOut', { songId: song.id, score });
@@ -120,7 +117,6 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
    */
   const stopSharing = () => {
     setSharingDecision(null);
-    setAlwaysShare(false);
     clearIdentity();
     posthog.capture('leaderboardSharingStopped', { songId: song.id });
   };
@@ -132,12 +128,8 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
 
   const panel: LeaderboardPanelState = (() => {
     if (!qualifies || isModalOpen) return null;
-    if (hasSubmitted) return 'shared';
-    if (sharingDecision === 'always') return 'armed';
 
-    // Covers both a standing "never" and a one-off dismissal — either way the only thing left to
-    // offer is a way back into the prompt
-    return 'opt-in';
+    return sharingDecision === 'always' && !hasSubmitted ? 'armed' : 'opt-in';
   })();
 
   return {
@@ -149,14 +141,11 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
     setName,
     country,
     setCountry,
-    alwaysShare,
-    setAlwaysShare,
     isSubmitting,
     canSubmit,
     share,
-    submitFromModal,
-    dismissOnce,
-    neverAskAgain,
+    acceptFromModal,
+    declineFromModal,
     stopSharing,
   };
 }

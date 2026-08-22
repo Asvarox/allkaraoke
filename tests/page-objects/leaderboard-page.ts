@@ -30,14 +30,6 @@ export class LeaderboardPagePO {
     return this.prompt.getByTestId('leaderboard-decline');
   }
 
-  public get neverAskAgainButton() {
-    return this.prompt.getByTestId('leaderboard-never');
-  }
-
-  public get alwaysShareCheckbox() {
-    return this.prompt.getByTestId('leaderboard-always-share');
-  }
-
   // --- High-scores step panel ---
 
   /** Shown once the player shares by default: the identity they share under, and a way to stop. */

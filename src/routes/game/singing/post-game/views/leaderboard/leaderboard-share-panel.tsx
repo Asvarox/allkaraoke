@@ -37,22 +37,16 @@ function LeaderboardSharePanel({ register, leaderboard }: Props) {
 
   return (
     <div className="mt-2 flex flex-col gap-2" data-test="leaderboard-share-panel">
-      <Menu.HelpText>
-        {panel === 'shared'
-          ? 'This score is on its way to the global leaderboard.'
-          : 'This score goes on the global leaderboard as:'}
-      </Menu.HelpText>
+      <Menu.HelpText>This score goes on the global leaderboard as:</Menu.HelpText>
 
-      {panel === 'armed' && (
-        <LeaderboardIdentityFields
-          register={register}
-          name={name}
-          onNameChange={setName}
-          country={country}
-          onCountryChange={setCountry}
-          disabled={isSubmitting}
-        />
-      )}
+      <LeaderboardIdentityFields
+        register={register}
+        name={name}
+        onNameChange={setName}
+        country={country}
+        onCountryChange={setCountry}
+        disabled={isSubmitting}
+      />
 
       <Menu.Button
         size="small"
