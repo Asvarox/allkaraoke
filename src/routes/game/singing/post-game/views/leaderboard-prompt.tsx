@@ -18,6 +18,7 @@ import { encodeNotesPayload } from '~/modules/leaderboard/notes-payload';
 import { qualifiesForLeaderboard } from '~/modules/leaderboard/qualifies';
 import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
 import PlayersManager from '~/modules/players/players-manager';
+import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
 
 interface Props {
   song: Song;
@@ -89,8 +90,9 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
     const trimmedName = name.trim();
     if (!trimmedName || !topPlayer) return;
 
-    // Both "nothing picked" and the explicit "Prefer not to say" store no country
-    const submittedCountry = country && country !== NO_COUNTRY ? country : null;
+    // Both "nothing picked" and the explicit "Prefer not to say" store no country - they're now the
+    // same empty-string value, see `NO_COUNTRY`
+    const submittedCountry = country || null;
 
     setIsOpen(false);
     persistIdentity(trimmedName, submittedCountry);
@@ -133,27 +135,15 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
       <Menu spacing="tight" modal data-test="leaderboard-prompt">
         <Menu.Header>Global leaderboard</Menu.Header>
         <Menu.HelpText>
-          That score is good enough for the global leaderboard. Want it on the board on the main menu?
+          <strong className="text-active">
+            <ScoreText score={Math.round(topPlayer?.score ?? 0)} />
+          </strong>{' '}
+          points is good enough for the global leaderboard. Want it on the board on the main menu?
         </Menu.HelpText>
 
         <div className="flex flex-col gap-2 sm:flex-row">
-          <Input
-            className="ph-no-capture flex-1"
-            label="Name"
-            value={name}
-            onChange={setName}
-            maxLength={MAX_NAME_LENGTH}
-            ref={nameRef}
-            // `Input` forwards unknown props to the DOM, and the nav handler is not a valid attribute
-            {...withoutNavHandler(
-              register('leaderboard-name', () => nameRef.current?.element?.focus(), undefined, true, {
-                control: { type: 'text', label: 'Name', value: name },
-                onValueChange: setName,
-              }),
-            )}
-          />
           <Select
-            className="ph-no-capture flex-1"
+            className="ph-no-capture min-w-0 sm:basis-1/3"
             // No label: the placeholder carries the field's meaning, and the flag fills the rest
             label=""
             placeholder="Select Country"
@@ -166,6 +156,21 @@ function LeaderboardPrompt({ song, singSetup }: Props) {
               control: { type: 'text', label: 'Country', value: country },
               onValueChange: setCountry,
             })}
+          />
+          <Input
+            className="ph-no-capture min-w-0 sm:basis-2/3"
+            label="Name"
+            value={name}
+            onChange={setName}
+            maxLength={MAX_NAME_LENGTH}
+            ref={nameRef}
+            // `Input` forwards unknown props to the DOM, and the nav handler is not a valid attribute
+            {...withoutNavHandler(
+              register('leaderboard-name', () => nameRef.current?.element?.focus(), undefined, true, {
+                control: { type: 'text', label: 'Name', value: name },
+                onValueChange: setName,
+              }),
+            )}
           />
         </div>
 

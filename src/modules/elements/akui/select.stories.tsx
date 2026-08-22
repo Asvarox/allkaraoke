@@ -1,6 +1,8 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { useState } from 'react';
 
+import { Flag } from '~/modules/elements/flag';
+
 import { Select, SelectOption } from './select';
 
 export default {
@@ -8,15 +10,19 @@ export default {
   component: Select,
 } as Meta;
 
+// Sized by whichever container `Select` puts it in - the option list, or the strip on the field -
+// same as `flagIcon` in the leaderboard prompt this story mirrors.
+const flagIcon = (isocode: string) => <Flag isocode={isocode} loading="lazy" className="h-full w-full object-cover" />;
+
 const COUNTRIES: SelectOption[] = [
-  { value: 'none', label: 'Prefer not to say', icon: '🌍' },
-  { value: 'pl', label: 'Poland', icon: '🇵🇱' },
-  { value: 'de', label: 'Germany', icon: '🇩🇪' },
-  { value: 'fr', label: 'France', icon: '🇫🇷' },
-  { value: 'gb', label: 'United Kingdom', icon: '🇬🇧' },
-  { value: 'us', label: 'United States', icon: '🇺🇸' },
-  { value: 'br', label: 'Brazil', icon: '🇧🇷' },
-  { value: 'jp', label: 'Japan', icon: '🇯🇵' },
+  { value: '', label: 'Prefer not to say', icon: flagIcon('un') },
+  { value: 'pl', label: 'Poland', icon: flagIcon('pl') },
+  { value: 'de', label: 'Germany', icon: flagIcon('de') },
+  { value: 'fr', label: 'France', icon: flagIcon('fr') },
+  { value: 'gb', label: 'United Kingdom', icon: flagIcon('gb') },
+  { value: 'us', label: 'United States', icon: flagIcon('us') },
+  { value: 'br', label: 'Brazil', icon: flagIcon('br') },
+  { value: 'jp', label: 'Japan', icon: flagIcon('jp') },
 ];
 
 const GENRES: SelectOption[] = ['Pop', 'Rock', 'Jazz', 'Classical', 'Hip-Hop', 'Electronic', 'Country'].map(

@@ -10,6 +10,7 @@ import {
 } from 'react';
 import { twc, TwcComponentProps } from 'react-twc';
 
+import Box from '~/modules/elements/akui/primitives/box';
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
@@ -58,6 +59,8 @@ export const Select = ({
 
   const optionsMenu = useRef<HTMLDivElement>(null);
 
+  // Opens on focus, not on mount: mounted-open covers whatever sits below the field before the
+  // player has touched anything.
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [focusedOption, setFocusedOption] = useState(-1);
@@ -120,8 +123,9 @@ export const Select = ({
     <Container className={className}>
       <Input
         {...restProps}
-        // Keeps the value clear of the icon strip
-        className={selectedOption?.icon ? '[&_input]:pr-20' : undefined}
+        // `w-full` matches the trigger's width to its container so the options box (also `w-full`)
+        // lines up with it; the icon strip needs the value clear of it
+        className={!isOpen && value && selectedOption?.icon ? 'w-full [&_input]:pr-20' : 'w-full'}
         role="combobox"
         aria-expanded={isOpen}
         ref={inputRef}
@@ -130,10 +134,12 @@ export const Select = ({
         disabled={disabled}
         placeholder={placeholder}
         // The selected option's icon covers the right edge of the field, the way the language rows
-        // on the Select Song Languages screen carry their flag
-        adornment={selectedOption?.icon && <SelectedIcon>{selectedOption.icon}</SelectedIcon>}
-        // While open the field holds the search query; closed, it mirrors the committed option
-        value={isOpen ? query : (selectedOption?.label ?? '')}
+        // on the Select Song Languages screen carry their flag. An empty committed value (e.g. "Prefer
+        // not to say") shows the placeholder instead, so no icon strip either.
+        adornment={!isOpen && value && selectedOption?.icon && <SelectedIcon>{selectedOption.icon}</SelectedIcon>}
+        // While open the field holds the search query; closed, it mirrors the committed option, unless
+        // the committed value is empty - then the placeholder shows through
+        value={isOpen ? query : value && (selectedOption?.label ?? '')}
         onChange={(newQuery) => {
           setIsOpen(true);
           setQuery(newQuery);
@@ -175,10 +181,19 @@ const SelectedIcon = twc.span`pointer-events-none absolute top-[1px] right-[1px]
 
 const OptionIcon = twc.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-xs`;
 
-const SelectMenu = twc.div`absolute z-2 mt-[0.1em] max-h-[9.6em] w-full overflow-y-auto bg-black`;
+// `justify-start` undoes `Box`'s `justify-center`: a centred flex column that overflows pushes its
+// leading items past the scroll origin, where no amount of scrolling can reach them.
+// `bg-slate-800` + border is the same surface a modal `Menu` is made of, so the popup reads as part
+// of the app. `Box`'s own `bg-black/30` disappears against a dark backdrop once the list overflows
+// past whatever it is anchored in.
+const SelectMenu = twc(
+  Box,
+)`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto border border-white/10 bg-slate-800 p-1`;
 
+// `text-lg` (with the same `mobile:text-md` breakpoint) matches the committed value's size in the
+// trigger, which sits in an `Input` at the default `small` size.
 const SelectMenuItem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
-  'typography flex cursor-pointer items-center gap-2 overflow-hidden p-[0.3em] whitespace-nowrap',
+  'typography mobile:text-md flex cursor-pointer min-h-[1em] max-h-[1em] items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
   props.$focused ? 'text-active' : 'text-white',
 ]);
 

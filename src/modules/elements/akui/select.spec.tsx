@@ -66,3 +66,27 @@ test('should commit an option on click', async ({ mount }) => {
 
   await expect(component.locator('[data-test="committed-value"]')).toHaveText('pl');
 });
+
+test('should keep the first option reachable when the list overflows', async ({ mount }) => {
+  const manyOptions = Array.from({ length: 120 }, (_, index) => ({
+    value: `option-${index}`,
+    label: `Option ${index}`,
+  }));
+
+  const component = await mount(<SelectTestWrapper focused label="Country" options={manyOptions} />);
+
+  await component.locator('input').click();
+  const menu = component.locator('[role="listbox"]');
+  await expect(menu).toBeVisible();
+
+  // A centred flex column that overflows pushes its leading items past the scroll origin, where
+  // nothing can scroll them back into view
+  await expect(menu).toHaveJSProperty('scrollTop', 0);
+  await expect(component.locator('[role="listitem"]').first()).toBeInViewport();
+
+  await menu.evaluate((element) => element.scrollTo({ top: element.scrollHeight }));
+  await expect(component.locator('[role="listitem"]').last()).toBeInViewport();
+
+  await menu.evaluate((element) => element.scrollTo({ top: 0 }));
+  await expect(component.locator('[role="listitem"]').first()).toBeInViewport();
+});

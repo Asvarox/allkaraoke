@@ -25,10 +25,10 @@ const COUNTRY_CODES = [
 
 /**
  * The value the explicit "Prefer not to say" option carries; stored as `null` on the record. It is
- * deliberately not the empty string — that means "nothing picked yet", which is what shows the
- * field's placeholder.
+ * the empty string on purpose - `Select` shows its placeholder for an empty committed value, so
+ * picking this option reads the same as never having picked anything.
  */
-export const NO_COUNTRY = 'none';
+export const NO_COUNTRY = '';
 
 export interface Country {
   code: string;
