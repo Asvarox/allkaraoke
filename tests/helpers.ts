@@ -32,6 +32,17 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
     window.isE2ETests = true;
   });
 };
+/**
+ * Opts a spec into the global leaderboard. Under e2e the PostHog flag is not consulted (see
+ * `use-leaderboard-enabled.ts`), so without this the board and the post-game prompt stay off —
+ * which is what every other spec and every main-menu screenshot expects.
+ */
+export const enableLeaderboard = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ELeaderboard = true;
+  });
+};
+
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;

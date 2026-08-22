@@ -7,13 +7,17 @@ import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 
 import { clearAdminPassword, getAdminPassword, setAdminPassword } from './admin-password';
+import { LeaderboardManagement } from './leaderboard-management';
 import { LoginScreen } from './login-screen';
 import { TopBar } from './top-bar';
 import { UnverifiedSongManagement } from './unverified-song-management';
 
-type AdminModule = 'unverified-songs';
+type AdminModule = 'unverified-songs' | 'leaderboard';
 
-const modules: { id: AdminModule; label: string }[] = [{ id: 'unverified-songs', label: 'Unverified Songs' }];
+const modules: { id: AdminModule; label: string }[] = [
+  { id: 'unverified-songs', label: 'Unverified Songs' },
+  { id: 'leaderboard', label: 'Leaderboard' },
+];
 
 export default function Admin() {
   useBackground(false);
@@ -66,7 +70,10 @@ export default function Admin() {
               {!isAuthenticated ? (
                 <LoginScreen onSubmit={handleLogin} />
               ) : (
-                activeModule === 'unverified-songs' && <UnverifiedSongManagement password={password} />
+                <>
+                  {activeModule === 'unverified-songs' && <UnverifiedSongManagement password={password} />}
+                  {activeModule === 'leaderboard' && <LeaderboardManagement password={password} />}
+                </>
               )}
             </div>
           </div>

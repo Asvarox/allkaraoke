@@ -34,6 +34,7 @@
     "src/stories/song-fixture.ts",
     "src/routes/social-media-elements/social-media-elements.tsx:10",
     "functions/**/*.test.ts",
+    "worker/**/*.test.ts",
     "src/modules/network/rpc/define.ts",
     "src/modules/network/rpc/ping-pong-tracker.ts",
     "src/modules/network/rpc/rpc-client.ts",

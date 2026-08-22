@@ -8,4 +8,5 @@ export const FeatureFlags = {
   DisableAutoFullscreen: 'disable_auto_fullscreen',
   InstantSongPreview: 'instant_song_preview',
   OnlineMode: 'online_mode',
+  Leaderboard: 'leaderboard',
 } as const;
