@@ -41,8 +41,14 @@ beforeAll(async () => {
 const createRoom = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) => {
   const published: Record<string, unknown[]> = {};
   const persist = vi.fn();
-  const scheduleTtl = vi.fn();
+  const scheduleWake = vi.fn();
+  const destroy = vi.fn();
   const disconnect = vi.fn();
+  // Stands in for the room's single Durable Object alarm: re-armed on every scheduleWake and, when
+  // it comes due on the fake clock, calls back into handleAlarm exactly as PartyKit's onAlarm does.
+  let alarm: ReturnType<typeof setTimeout> | null = null;
+  // Filled in right below; the alarm callback only ever runs after construction has finished.
+  const armed: { logic?: OnlineRoomLogic } = {};
   const logic = new OnlineRoomLogic(
     {
       roomCode: 'testr',
@@ -51,14 +57,28 @@ const createRoom = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: Rea
         (published[channel] ??= []).push(data);
       },
       persist,
-      scheduleTtl,
+      scheduleWake: (deadline) => {
+        scheduleWake(deadline);
+        if (alarm !== null) clearTimeout(alarm);
+        alarm = null;
+        if (deadline === null) return;
+        alarm = setTimeout(
+          () => {
+            alarm = null;
+            armed.logic?.handleAlarm();
+          },
+          Math.max(0, deadline - Date.now()),
+        );
+      },
+      destroy,
       disconnect,
     },
     restoreFrom,
     liveParticipantIds,
   );
+  armed.logic = logic;
   const handlers = logic.createHandlers();
-  return { logic, handlers, published, persist, scheduleTtl, disconnect };
+  return { logic, handlers, published, persist, scheduleWake, destroy, disconnect };
 };
 
 type Room = ReturnType<typeof createRoom>;
@@ -139,9 +159,26 @@ describe('participants', () => {
     vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
     expect(room.published['player-stats']).toHaveLength(2);
     expect(room.published['player-stats'].at(-1)).toEqual({
-      p1: { ping: 42, volume: 0.01 },
-      p2: { ping: 99, volume: 0.02 },
+      p1: { ping: 42, volume: 0.01, idle: false },
+      p2: { ping: 99, volume: 0.02, idle: false },
     });
+  });
+
+  it('marks a singer idle when they stop reporting, and clears it the moment they come back', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+
+    await room.handlers.room.reportStats.handler(ctx('p1'), 42, 0.01);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+
+    // Going idle is stated, not inferred — the room has no timer watching for stale entries
+    await room.handlers.room.reportStats.handler(ctx('p1'), 42, 0, true);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+    expect(room.published['player-stats'].at(-1)).toEqual({ p1: { ping: 42, volume: 0, idle: true } });
+
+    await room.handlers.room.reportStats.handler(ctx('p1'), 40, 0.02);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+    expect(room.published['player-stats'].at(-1)).toEqual({ p1: { ping: 40, volume: 0.02, idle: false } });
   });
 
   it('trims and bounds a set name, falling back to the current name when empty', async () => {
@@ -598,7 +635,7 @@ describe('room TTL', () => {
   it('schedules TTL cleanup on activity and expires only when idle and empty', async () => {
     const room = createRoom();
     join(room, ['p1']);
-    expect(room.scheduleTtl).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    expect(room.scheduleWake).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
     expect(room.logic.isExpired()).toBe(false);
 
     room.logic.handleDisconnect('p1');
@@ -820,5 +857,70 @@ describe('restoring during a hibernation wake (some connections still live)', ()
     expect(state.phase).toBe('singing');
     expect(state.playbackAnchor).toBeNull();
     expect(state.readinessDeadline).toBeNull();
+  });
+});
+
+describe('hibernation-safe alarms', () => {
+  it('arms the room alarm for the nearest deadline, grace ahead of the TTL', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+
+    room.logic.handleDisconnect('p2');
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+  });
+
+  it('expires a grace window from the alarm alone, with no live timers left', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    room.logic.handleDisconnect('p2');
+
+    // A hibernated party has lost every setTimeout it armed, and an idle lobby sends nothing that
+    // would wake it — moving the clock without running timers is exactly that situation. The alarm
+    // firing is the only thing that happens.
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    room.logic.handleAlarm();
+
+    expect(room.logic.getState().participants.map((participant) => participant.id)).toEqual(['p1']);
+    // and the host role moves on with it
+    expect(room.logic.getState().hostId).toBe('p1');
+  });
+
+  it('re-arms for the TTL once the last grace window has been spent', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    room.logic.handleDisconnect('p2');
+
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    room.logic.handleAlarm();
+
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    expect(room.destroy).not.toHaveBeenCalled();
+  });
+
+  it('wipes the room when the TTL deadline comes due', () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    room.logic.handleDisconnect('p1');
+
+    vi.setSystemTime(Date.now() + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+
+    expect(room.destroy).toHaveBeenCalled();
+  });
+
+  it('restores the pending deadlines after a wake, so a dropped singer is still cleaned up', () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p2');
+    const persisted = source.logic.snapshot();
+
+    // p1 is still attached — a hibernation wake, not a restart
+    const woken = createRoom(persisted, new Set(['p1']));
+    expect(woken.scheduleWake).toHaveBeenLastCalledWith(persisted.participants[1].graceDeadline);
+
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    woken.logic.handleAlarm();
+    expect(woken.logic.getState().participants.map((participant) => participant.id)).toEqual(['p1']);
   });
 });

@@ -5,8 +5,17 @@ export const ONLINE_MAX_CHART_BYTES = 512 * 1024;
 /** How long a disconnected participant keeps their spot (and the host their role) before removal. */
 export const ONLINE_RECONNECT_GRACE_MS = 15_000;
 
-/** Idle room time-to-live — storage is wiped this long after the last activity. */
-export const ONLINE_ROOM_TTL_MS = 6 * 60 * 60 * 1_000;
+/** Idle room time-to-live — storage is wiped this long after the last activity. Short because an
+ * abandoned room now goes quiet (see ONLINE_IDLE_AFTER_MS) instead of holding the party awake, so
+ * there is nothing to gain from keeping a dead room's snapshot around for hours. */
+export const ONLINE_ROOM_TTL_MS = 30 * 60 * 1_000;
+
+/** How long a singer can go without moving the pointer or pressing a key before their client stops
+ * reporting stats and pinging altogether. Only applies in the lobby and on the results screen —
+ * nobody touches the controls while a countdown is running or a song is playing. Long enough not to
+ * blink out on someone reading the song list, short enough that a forgotten tab stops holding the
+ * room (and its Durable Object duration bill) awake. */
+export const ONLINE_IDLE_AFTER_MS = 30 * 1_000;
 
 /** How long a singer can report buffering before the room auto-pauses for everyone. */
 export const ONLINE_BUFFERING_PAUSE_MS = 1_000;

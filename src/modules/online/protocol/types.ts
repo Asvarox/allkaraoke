@@ -128,6 +128,10 @@ export interface PlayerStats {
   ping: number;
   /** Current microphone volume, 0..~0.05 scale (same as InputManager.getPlayerVolume). */
   volume: number;
+  /** They stopped reporting — away from the keyboard, or the tab is hidden. Both `volume` and
+   * `ping` are frozen at their last real values while this is set, so render the row as away
+   * rather than as a silent singer with a good connection. */
+  idle?: boolean;
 }
 
 export type PlayersStats = Record<string, PlayerStats>;
