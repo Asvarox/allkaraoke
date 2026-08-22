@@ -46,6 +46,9 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
                 ? 'bg-black/90 px-4 py-1 sm:py-0 2xl:py-2'
                 : 'bg-black/50 px-4 py-2 sm:py-1 2xl:py-4',
             )}
+            // The score just sung and its date are the only rows that change between runs — named so
+            // the visual baselines can mask them and keep the seeded rows visible
+            data-test={score.singSetupId === singSetup.id ? 'highscore-current-row' : undefined}
             key={index}>
             <div className="text-active px-2">{index + 1}</div>
 

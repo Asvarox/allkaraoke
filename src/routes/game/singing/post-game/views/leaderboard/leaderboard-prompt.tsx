@@ -37,7 +37,7 @@ function LeaderboardPrompt({ leaderboard }: Props) {
       <Menu spacing="tight" modal data-test="leaderboard-prompt">
         <Menu.Header>Global leaderboard</Menu.Header>
         <Menu.HelpText>
-          <strong className="text-active">
+          <strong className="text-active" data-test="leaderboard-prompt-score">
             <ScoreText score={score} />
           </strong>{' '}
           points is good enough for the global leaderboard. Want your scores on the board on the main menu?

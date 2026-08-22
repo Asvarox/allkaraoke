@@ -1,4 +1,4 @@
-import { ComponentRef, useMemo, useRef } from 'react';
+import { ComponentRef, ReactNode, useMemo, useRef } from 'react';
 
 import { MAX_NAME_LENGTH } from '~/consts';
 import { Select, SelectOption } from '~/modules/elements/akui/select';
@@ -30,6 +30,8 @@ interface Props {
    * own default is the button that moves on to the next song. */
   nameIsDefault?: boolean;
   disabled?: boolean;
+  /** Rendered as a third item of the field row, so it lines up with the fields rather than under them. */
+  trailing?: ReactNode;
 }
 
 /**
@@ -44,6 +46,7 @@ function LeaderboardIdentityFields({
   onCountryChange,
   nameIsDefault = false,
   disabled = false,
+  trailing,
 }: Props) {
   const nameRef = useRef<ComponentRef<typeof Input>>(null);
   const countryRef = useRef<ComponentRef<typeof Select>>(null);
@@ -96,6 +99,7 @@ function LeaderboardIdentityFields({
           }),
         )}
       />
+      {trailing}
     </div>
   );
 }
