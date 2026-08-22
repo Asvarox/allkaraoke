@@ -16,6 +16,7 @@ import {
   ONLINE_RESUME_COUNTDOWN_MS,
   ONLINE_ROOM_TTL_MS,
   ONLINE_START_LEAD_MS,
+  ONLINE_STATS_PUBLISH_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { WireDetailedScore } from '~/modules/online/protocol/types';
@@ -37,11 +38,17 @@ beforeAll(async () => {
   ));
 });
 
-const createRoom = (restoreFrom?: OnlinePersistedState) => {
+const createRoom = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) => {
   const published: Record<string, unknown[]> = {};
   const persist = vi.fn();
-  const scheduleTtl = vi.fn();
+  const scheduleWake = vi.fn();
+  const destroy = vi.fn();
   const disconnect = vi.fn();
+  // Stands in for the room's single Durable Object alarm: re-armed on every scheduleWake and, when
+  // it comes due on the fake clock, calls back into handleAlarm exactly as PartyKit's onAlarm does.
+  let alarm: ReturnType<typeof setTimeout> | null = null;
+  // Filled in right below; the alarm callback only ever runs after construction has finished.
+  const armed: { logic?: OnlineRoomLogic } = {};
   const logic = new OnlineRoomLogic(
     {
       roomCode: 'testr',
@@ -50,13 +57,28 @@ const createRoom = (restoreFrom?: OnlinePersistedState) => {
         (published[channel] ??= []).push(data);
       },
       persist,
-      scheduleTtl,
+      scheduleWake: (deadline) => {
+        scheduleWake(deadline);
+        if (alarm !== null) clearTimeout(alarm);
+        alarm = null;
+        if (deadline === null) return;
+        alarm = setTimeout(
+          () => {
+            alarm = null;
+            armed.logic?.handleAlarm();
+          },
+          Math.max(0, deadline - Date.now()),
+        );
+      },
+      destroy,
       disconnect,
     },
     restoreFrom,
+    liveParticipantIds,
   );
+  armed.logic = logic;
   const handlers = logic.createHandlers();
-  return { logic, handlers, published, persist, scheduleTtl, disconnect };
+  return { logic, handlers, published, persist, scheduleWake, destroy, disconnect };
 };
 
 type Room = ReturnType<typeof createRoom>;
@@ -134,12 +156,29 @@ describe('participants', () => {
     // leading publish only, the second report waits for the cooldown
     expect(room.published['player-stats']).toHaveLength(1);
 
-    vi.advanceTimersByTime(1_000);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
     expect(room.published['player-stats']).toHaveLength(2);
     expect(room.published['player-stats'].at(-1)).toEqual({
-      p1: { ping: 42, volume: 0.01 },
-      p2: { ping: 99, volume: 0.02 },
+      p1: { ping: 42, volume: 0.01, idle: false },
+      p2: { ping: 99, volume: 0.02, idle: false },
     });
+  });
+
+  it('marks a singer idle when they stop reporting, and clears it the moment they come back', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+
+    await room.handlers.room.reportStats.handler(ctx('p1'), 42, 0.01);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+
+    // Going idle is stated, not inferred — the room has no timer watching for stale entries
+    await room.handlers.room.reportStats.handler(ctx('p1'), 42, 0, true);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+    expect(room.published['player-stats'].at(-1)).toEqual({ p1: { ping: 42, volume: 0, idle: true } });
+
+    await room.handlers.room.reportStats.handler(ctx('p1'), 40, 0.02);
+    vi.advanceTimersByTime(ONLINE_STATS_PUBLISH_MS);
+    expect(room.published['player-stats'].at(-1)).toEqual({ p1: { ping: 40, volume: 0.02, idle: false } });
   });
 
   it('trims and bounds a set name, falling back to the current name when empty', async () => {
@@ -596,7 +635,7 @@ describe('room TTL', () => {
   it('schedules TTL cleanup on activity and expires only when idle and empty', async () => {
     const room = createRoom();
     join(room, ['p1']);
-    expect(room.scheduleTtl).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    expect(room.scheduleWake).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
     expect(room.logic.isExpired()).toBe(false);
 
     room.logic.handleDisconnect('p1');
@@ -670,5 +709,240 @@ describe('restoring from a persisted snapshot (hibernation/restart)', () => {
     expect(state.chart).toBeNull();
     expect(restored.logic.isCreated()).toBe(true);
     expect(restored.logic.handleConnect('p1', 'Name p1')).toEqual({ accepted: true });
+  });
+});
+
+describe('restoring during a hibernation wake (some connections still live)', () => {
+  it('keeps live participants connected and never arms a grace timer for them', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2', 'p3']);
+    const snapshot = source.logic.snapshot();
+
+    // p2's socket genuinely dropped in the gap; p1 and p3 never actually disconnected
+    const restored = createRoom(snapshot, new Set(['p1', 'p3']));
+    const state = restored.logic.getState();
+    expect(state.participants.find((p) => p.id === 'p1')?.connected).toBe(true);
+    expect(state.participants.find((p) => p.id === 'p3')?.connected).toBe(true);
+    expect(state.participants.find((p) => p.id === 'p2')?.connected).toBe(false);
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
+    const survivors = restored.logic.getState().participants.map((p) => p.id);
+    expect(survivors).toEqual(['p1', 'p3']);
+  });
+
+  it('re-arms a partially-elapsed grace window with the remaining time, not a fresh one, across repeated wakes', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p1'); // p2 stays live throughout
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS - 1_000); // 1s of grace left
+    const snapshot1 = source.logic.snapshot();
+    const originalDeadline = snapshot1.participants.find((p) => p.id === 'p1')?.graceDeadline;
+    expect(originalDeadline).toBe(Date.now() + 1_000);
+
+    const wake1 = createRoom(snapshot1, new Set(['p2']));
+    expect(wake1.logic.getState().participants.find((p) => p.id === 'p1')?.graceDeadline).toBe(originalDeadline);
+
+    vi.advanceTimersByTime(500); // 500ms of grace left — still short of the deadline
+    expect(wake1.logic.getState().participants.map((p) => p.id)).toEqual(['p1', 'p2']);
+
+    // A second wake must not push the deadline out again
+    const snapshot2 = wake1.logic.snapshot();
+    const wake2 = createRoom(snapshot2, new Set(['p2']));
+    expect(wake2.logic.getState().participants.find((p) => p.id === 'p1')?.graceDeadline).toBe(originalDeadline);
+
+    vi.advanceTimersByTime(500); // reaches the original deadline, not a deadline extended by either wake
+    expect(wake2.logic.getState().participants.map((p) => p.id)).toEqual(['p2']);
+  });
+
+  it('cleans up promptly when the grace deadline already passed during the hibernation gap', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p1');
+    // Snapshot before the deadline passes — `source`'s own timer firing afterwards is irrelevant,
+    // it represents the process that hibernated before its timer ever got to run.
+    const snapshot = source.logic.snapshot();
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS + 5_000); // the DO woke up long after the deadline passed
+
+    const restored = createRoom(snapshot, new Set(['p2']));
+    // still present at construction time — the timer fires on the next tick, not synchronously
+    expect(restored.logic.getState().participants.map((p) => p.id)).toEqual(['p1', 'p2']);
+
+    vi.advanceTimersByTime(0);
+    expect(restored.logic.getState().participants.map((p) => p.id)).toEqual(['p2']);
+  });
+
+  it('resumes an in-progress readiness countdown on schedule and keeps confirmed readiness', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await uploadChart(source);
+    await source.handlers.room.startGame.handler(ctx('p1'));
+    await source.handlers.room.setReady.handler(ctx('p1'), true);
+    vi.advanceTimersByTime(3_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('readiness');
+    expect(state.participants.find((p) => p.id === 'p1')?.ready).toBe(true);
+    expect(state.readinessDeadline).toBe(snapshot.readinessDeadline);
+
+    // the original deadline is honored, not restarted from a fresh full timeout
+    vi.advanceTimersByTime(ONLINE_READINESS_TIMEOUT_MS - 3_000);
+    expect(restored.logic.getState().phase).toBe('singing');
+  });
+
+  it('keeps a live room in the singing phase with its playback anchor intact', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    vi.advanceTimersByTime(5_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('singing');
+    expect(state.playbackAnchor).toEqual(snapshot.playbackAnchor);
+  });
+
+  it('re-arms the resume countdown mid pause/resume', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    await source.handlers.playback.pause.handler(ctx('p1'));
+    await source.handlers.playback.resume.handler(ctx('p2'));
+    vi.advanceTimersByTime(1_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    expect(restored.logic.getState().resumeCountdownEndsAt).toBe(snapshot.resumeCountdownEndsAt);
+
+    vi.advanceTimersByTime(ONLINE_RESUME_COUNTDOWN_MS - 1_000);
+    const resumed = restored.logic.getState();
+    expect(resumed.pause).toBeNull();
+    expect(resumed.playbackAnchor).not.toBeNull();
+  });
+
+  it('re-arms the force-results timer for a pending endGame', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    await source.handlers.room.endGame.handler(ctx('p1'));
+    vi.advanceTimersByTime(2_000);
+
+    const snapshot = source.logic.snapshot();
+    const restored = createRoom(snapshot, new Set(['p1', 'p2']));
+    expect(restored.logic.getState().finishRequestedAt).toBe(snapshot.finishRequestedAt);
+
+    vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS - 2_000);
+    expect(restored.logic.getState().phase).toBe('results');
+  });
+
+  it('falls back to null for mid-song fields missing from a pre-refactor blob, without crashing', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await startSinging(source, ['p1', 'p2']);
+    const {
+      playbackAnchor: _playbackAnchor,
+      readinessDeadline: _readinessDeadline,
+      pause: _pause,
+      resumeCountdownEndsAt: _resumeCountdownEndsAt,
+      finishRequestedAt: _finishRequestedAt,
+      ...legacySnapshot
+    } = source.logic.snapshot();
+
+    const restored = createRoom(legacySnapshot, new Set(['p1', 'p2']));
+    const state = restored.logic.getState();
+    expect(state.phase).toBe('singing');
+    expect(state.playbackAnchor).toBeNull();
+    expect(state.readinessDeadline).toBeNull();
+  });
+});
+
+describe('hibernation-safe alarms', () => {
+  it('arms the room alarm for the nearest deadline, grace ahead of the TTL', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+
+    room.logic.handleDisconnect('p2');
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+  });
+
+  it('expires a grace window from the alarm alone, with no live timers left', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    room.logic.handleDisconnect('p2');
+
+    // A hibernated party has lost every setTimeout it armed, and an idle lobby sends nothing that
+    // would wake it — moving the clock without running timers is exactly that situation. The alarm
+    // firing is the only thing that happens.
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    room.logic.handleAlarm();
+
+    expect(room.logic.getState().participants.map((participant) => participant.id)).toEqual(['p1']);
+    // and the host role moves on with it
+    expect(room.logic.getState().hostId).toBe('p1');
+  });
+
+  it('re-arms for the TTL once the last grace window has been spent', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    room.logic.handleDisconnect('p2');
+
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    room.logic.handleAlarm();
+
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    expect(room.destroy).not.toHaveBeenCalled();
+  });
+
+  it('wipes the room when the TTL deadline comes due', () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    room.logic.handleDisconnect('p1');
+
+    vi.setSystemTime(Date.now() + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+
+    expect(room.destroy).toHaveBeenCalled();
+  });
+
+  it('keeps a room whose singers are merely quiet, and pushes the TTL out instead', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+
+    // Neither pings nor stats reports touch the room's state, so a lobby of idle singers reaches
+    // the TTL deadline with everyone still connected. Wiping storage here would evaporate the room
+    // out from under their live sockets on the next hibernation wake.
+    vi.setSystemTime(Date.now() + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+
+    expect(room.destroy).not.toHaveBeenCalled();
+    expect(room.logic.getState().participants).toHaveLength(2);
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+
+    // and it does go when the last of them is finally gone
+    room.logic.handleDisconnect('p1');
+    room.logic.handleDisconnect('p2');
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+    expect(room.destroy).toHaveBeenCalled();
+  });
+
+  it('restores the pending deadlines after a wake, so a dropped singer is still cleaned up', () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    source.logic.handleDisconnect('p2');
+    const persisted = source.logic.snapshot();
+
+    // p1 is still attached — a hibernation wake, not a restart
+    const woken = createRoom(persisted, new Set(['p1']));
+    expect(woken.scheduleWake).toHaveBeenLastCalledWith(persisted.participants[1].graceDeadline);
+
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
+    woken.logic.handleAlarm();
+    expect(woken.logic.getState().participants.map((participant) => participant.id)).toEqual(['p1']);
   });
 });

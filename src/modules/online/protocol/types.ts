@@ -17,6 +17,9 @@ export interface OnlineParticipant {
   connected: boolean;
   /** Confirmed "I'm ready to sing" during the readiness phase. Meaningless in any other phase. */
   ready: boolean;
+  /** Absolute deadline for the reconnect grace window while disconnected, else null. Persisted so
+   * a restore re-arms the remaining time rather than granting a fresh window every wake. */
+  graceDeadline: number | null;
 }
 
 /** Manifest describing a chart (song txt) transferred as a single gzip+base64 payload. */
@@ -125,6 +128,10 @@ export interface PlayerStats {
   ping: number;
   /** Current microphone volume, 0..~0.05 scale (same as InputManager.getPlayerVolume). */
   volume: number;
+  /** They stopped reporting — away from the keyboard, or the tab is hidden. Both `volume` and
+   * `ping` are frozen at their last real values while this is set, so render the row as away
+   * rather than as a silent singer with a good connection. */
+  idle?: boolean;
 }
 
 export type PlayersStats = Record<string, PlayerStats>;

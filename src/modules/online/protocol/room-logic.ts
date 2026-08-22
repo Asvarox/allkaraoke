@@ -31,7 +31,16 @@ import {
 import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 
 /** Fields added after the first release — blobs still in storage predate them, so they stay optional. */
-type LatePersistedField = 'chartPreview' | 'bannedIds' | 'created';
+type LatePersistedField =
+  | 'roomCode'
+  | 'chartPreview'
+  | 'bannedIds'
+  | 'created'
+  | 'readinessDeadline'
+  | 'playbackAnchor'
+  | 'pause'
+  | 'resumeCountdownEndsAt'
+  | 'finishRequestedAt';
 
 /**
  * The hibernation payload, derived from `OnlineRoomLogic.snapshot()` so the type cannot drift
@@ -48,8 +57,13 @@ export interface OnlineRoomDeps {
   publish: (channel: keyof OnlineSubscriptionChannels, data: unknown) => void;
   /** Persist state so the room survives hibernation/restarts. Fire-and-forget. */
   persist: (state: OnlinePersistedState) => void;
-  /** Schedule the TTL cleanup alarm. */
-  scheduleTtl: (deadline: number) => void;
+  /** Wake the room at this absolute time — the earliest pending deadline across the TTL and every
+   * reconnect grace window, or null when nothing is pending. Backed by the room's single alarm, so
+   * unlike `setTimeout` these survive hibernation: a quiet room with nobody sending anything still
+   * gets woken to expire a grace window. */
+  scheduleWake: (deadline: number | null) => void;
+  /** Wipe the room — its TTL ran out. */
+  destroy?: () => void;
   setTimeout?: (callback: () => void, delayMs: number) => unknown;
   clearTimeout?: (handle: unknown) => void;
   /** Forcibly close a participant's connection(s). */
@@ -87,25 +101,42 @@ export class OnlineRoomLogic {
 
   private timers = new Map<string, unknown>();
 
+  /** Absolute deadlines that must outlive hibernation, keyed by name ('ttl', `grace:<id>`). The
+   * room has exactly one alarm, so these are multiplexed: `scheduleWake` always gets the earliest,
+   * and `handleAlarm` fires everything due and re-arms for the next. Rebuilt on restore from the
+   * persisted `lastActivityAt` and `graceDeadline`s, so a wake never loses one. */
+  private wakeDeadlines = new Map<string, number>();
+  /** Last value handed to `deps.scheduleWake`, so an unchanged earliest deadline doesn't re-arm. */
+  private lastScheduledWake: number | null = null;
+
   constructor(
     private readonly deps: OnlineRoomDeps,
     restoreFrom?: OnlinePersistedState,
+    // Connection ids of sockets that are verifiably still attached right now — passed by the host
+    // so a hibernation wake (constructor reruns while some clients never actually disconnected)
+    // can be told apart from a genuine restart (every previous connection is gone).
+    liveParticipantIds: ReadonlySet<string> = new Set(),
   ) {
     this.lastActivityAt = deps.now();
     if (restoreFrom) {
-      this.participants = restoreFrom.participants.map((participant) => ({
-        ...participant,
-        connected: false,
-        // The readiness confirmation is transient and meaningless once restored (see below).
-        ready: false,
-      }));
+      // A hibernation wake, not a genuine restart, when at least one previously-known participant
+      // still has a live socket. Everyone else in that case did disconnect for real during the gap
+      // and gets the normal grace-timer treatment below.
+      const isHibernationWake = restoreFrom.participants.some((participant) => liveParticipantIds.has(participant.id));
+
+      this.participants = restoreFrom.participants.map((participant) => {
+        const connected = liveParticipantIds.has(participant.id);
+        return {
+          ...participant,
+          connected,
+          // The readiness confirmation only carries over for someone who never actually left.
+          ready: connected ? participant.ready : false,
+          graceDeadline: connected ? null : (participant.graceDeadline ?? null),
+        };
+      });
       this.nextJoinOrder = restoreFrom.nextJoinOrder;
       this.hostId = restoreFrom.hostId;
       this.tolerance = restoreFrom.tolerance;
-      // 'readiness'/'singing' depend on live timers and a playback anchor, neither of which
-      // survives a restart — land back in the lobby rather than resurrecting a phase nothing
-      // is driving anymore. 'lobby' and 'results' need no such live state, so they carry over.
-      this.phase = restoreFrom.phase === 'readiness' || restoreFrom.phase === 'singing' ? 'lobby' : restoreFrom.phase;
       this.chart = restoreFrom.chart;
       this.chartData = restoreFrom.chartData;
       this.chartPreview = restoreFrom.chartPreview ?? null;
@@ -114,13 +145,94 @@ export class OnlineRoomLogic {
       this.lastActivityAt = restoreFrom.lastActivityAt;
       this.bannedIds = restoreFrom.bannedIds ?? [];
       this.created = restoreFrom.created ?? true;
-      // Every restored participant is marked disconnected above — without a grace timer none of
-      // them would ever be cleaned up (or free their spot/host role) if they never come back.
+
+      if (isHibernationWake) {
+        // Resume exactly where the room left off — 'readiness'/'singing' timers and the playback
+        // anchor are re-derived from the persisted absolute deadlines below (rearmTimers), so
+        // nobody watching notices the party ever went away.
+        this.phase = restoreFrom.phase;
+        this.readinessDeadline = restoreFrom.readinessDeadline ?? null;
+        this.playbackAnchor = restoreFrom.playbackAnchor ?? null;
+        this.pause = restoreFrom.pause ?? null;
+        this.resumeCountdownEndsAt = restoreFrom.resumeCountdownEndsAt ?? null;
+        this.finishRequestedAt = restoreFrom.finishRequestedAt ?? null;
+        this.rearmTimers();
+      } else {
+        // Nobody is here — a genuine restart. 'readiness'/'singing' depend on live timers and a
+        // playback anchor that nothing is driving anymore with every connection gone, so land
+        // back in the lobby. 'lobby' and 'results' need no such live state, so they carry over.
+        this.phase = restoreFrom.phase === 'readiness' || restoreFrom.phase === 'singing' ? 'lobby' : restoreFrom.phase;
+      }
+
+      // Anyone not currently live needs a grace timer, or they'd never be cleaned up (or free
+      // their spot/host role) if they never come back. Reuses the remaining time on an
+      // already-ticking window (persisted above) rather than granting a fresh
+      // ONLINE_RECONNECT_GRACE_MS on every wake — otherwise a room that keeps hibernating while
+      // someone else is still around would never actually expire a genuinely dropped participant.
+      const now = this.deps.now();
       this.participants.forEach((participant) => {
-        this.setTimer(`grace:${participant.id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(participant.id));
+        if (participant.connected) return;
+        const deadline = participant.graceDeadline ?? now + ONLINE_RECONNECT_GRACE_MS;
+        participant.graceDeadline = deadline;
+        this.setWake(`grace:${participant.id}`, deadline);
       });
+      // The TTL deadline has to be back in the map before anything else touches it: `syncWake`
+      // picks the earliest of what it can see, so a missing 'ttl' would let a grace expiry cancel
+      // the room's cleanup alarm outright.
+      this.setWake('ttl', this.lastActivityAt + ONLINE_ROOM_TTL_MS);
     }
   }
+
+  // --- hibernation-safe wakes (the room's single alarm, multiplexed) ---
+
+  private setWake = (name: string, deadline: number) => {
+    this.wakeDeadlines.set(name, deadline);
+    this.syncWake();
+  };
+
+  private clearWake = (name: string) => {
+    if (this.wakeDeadlines.delete(name)) this.syncWake();
+  };
+
+  private syncWake = () => {
+    const deadlines = [...this.wakeDeadlines.values()];
+    const earliest = deadlines.length ? Math.min(...deadlines) : null;
+    if (earliest === this.lastScheduledWake) return;
+    this.lastScheduledWake = earliest;
+    this.deps.scheduleWake(earliest);
+  };
+
+  /**
+   * The room's alarm fired: run every deadline that is due and re-arm for the next one. Called by
+   * the host on `onAlarm`, which is the only thing that wakes a hibernated room nobody is talking
+   * to — grace windows would otherwise never expire once the clients go idle.
+   */
+  public handleAlarm = () => {
+    const now = this.deps.now();
+    // Snapshot the due names first: expiring one deadline republishes state and can add or drop
+    // others (a removed participant re-elects the host, a publish touches the TTL).
+    const due = [...this.wakeDeadlines].filter(([, deadline]) => deadline <= now).map(([name]) => name);
+    for (const name of due) {
+      if (!this.wakeDeadlines.has(name)) continue;
+      this.wakeDeadlines.delete(name);
+      if (name === 'ttl') {
+        // The TTL means abandoned, not merely quiet. Neither pings nor stats reports touch the
+        // room's state (only `publishState` does), so a lobby full of idle singers lets the
+        // deadline come due with everyone still sitting in it — and wiping storage out from under
+        // live sockets would evaporate the room on its next hibernation wake. `isExpired` is the
+        // one place that rule lives.
+        if (!this.isExpired()) {
+          this.touch();
+          continue;
+        }
+        // Nothing left to re-arm — the room and its alarm go away with the storage.
+        this.deps.destroy?.();
+        return;
+      }
+      if (name.startsWith('grace:')) this.expireGrace(name.slice('grace:'.length));
+    }
+    this.syncWake();
+  };
 
   // --- timers ---
 
@@ -135,6 +247,27 @@ export class OnlineRoomLogic {
       const clear = this.deps.clearTimeout ?? ((handle: unknown) => clearTimeout(handle as never));
       clear(this.timers.get(name));
       this.timers.delete(name);
+    }
+  };
+
+  /** Re-arms the timers a hibernation wake dropped, from the persisted absolute deadlines —
+   * called only when the constructor determined this is a wake (see `isHibernationWake`), never
+   * for a genuine restart. Deadlines already in the past fire on the next tick rather than being
+   * skipped, so a wake that took a while still lands the transition it was mid-flight on. */
+  private rearmTimers = () => {
+    const now = this.deps.now();
+    if (this.phase === 'readiness' && this.readinessDeadline !== null) {
+      this.setTimer('readiness', Math.max(0, this.readinessDeadline - now), this.beginPlayback);
+    }
+    if (this.phase === 'singing' && this.resumeCountdownEndsAt !== null) {
+      this.setTimer('resume', Math.max(0, this.resumeCountdownEndsAt - now), this.finishResume);
+    }
+    if (this.finishRequestedAt !== null && (this.phase === 'singing' || this.phase === 'readiness')) {
+      this.setTimer(
+        'force-results',
+        Math.max(0, this.finishRequestedAt + ONLINE_FORCE_RESULTS_MS - now),
+        this.forceResults,
+      );
     }
   };
 
@@ -172,6 +305,9 @@ export class OnlineRoomLogic {
    * private member cannot be reached by the `ReturnType<…>` that derives the type.
    */
   public snapshot = () => ({
+    /** Persisted because `Party.id` is not readable in an alarm context — the alarm handler has to
+     * rebuild the room from storage alone. */
+    roomCode: this.deps.roomCode,
     participants: this.participants,
     nextJoinOrder: this.nextJoinOrder,
     hostId: this.hostId,
@@ -189,11 +325,19 @@ export class OnlineRoomLogic {
     bannedIds: this.bannedIds,
     /** True once someone explicitly opened (created) this room. */
     created: this.created,
+    /** Mid-song bookkeeping, persisted only so a hibernation wake (see the constructor) can
+     * resume a phase in progress from its absolute deadlines — a genuine restart discards these
+     * regardless of what is stored here. */
+    readinessDeadline: this.readinessDeadline,
+    playbackAnchor: this.playbackAnchor,
+    pause: this.pause,
+    resumeCountdownEndsAt: this.resumeCountdownEndsAt,
+    finishRequestedAt: this.finishRequestedAt,
   });
 
   private touch = () => {
     this.lastActivityAt = this.deps.now();
-    this.deps.scheduleTtl(this.lastActivityAt + ONLINE_ROOM_TTL_MS);
+    this.setWake('ttl', this.lastActivityAt + ONLINE_ROOM_TTL_MS);
     this.deps.persist(this.snapshot());
   };
 
@@ -301,8 +445,9 @@ export class OnlineRoomLogic {
     const existing = this.getParticipant(id);
     if (existing) {
       existing.connected = true;
+      existing.graceDeadline = null;
       if (name) existing.name = name;
-      this.clearTimer(`grace:${id}`);
+      this.clearWake(`grace:${id}`);
       // A returning earlier-joined participant may reclaim the host role
       this.electHost();
       this.publishState();
@@ -320,6 +465,7 @@ export class OnlineRoomLogic {
       playerNumber: this.freePlayerNumber(),
       connected: true,
       ready: false,
+      graceDeadline: null,
     });
     this.playback[id] = 'unstarted';
     if (this.hostId === null) {
@@ -333,9 +479,10 @@ export class OnlineRoomLogic {
     const participant = this.getParticipant(id);
     if (!participant?.connected) return;
     participant.connected = false;
+    participant.graceDeadline = this.deps.now() + ONLINE_RECONNECT_GRACE_MS;
 
     // Keep the spot (and the host role) during the grace window so refreshes don't reshuffle the room
-    this.setTimer(`grace:${id}`, ONLINE_RECONNECT_GRACE_MS, () => this.expireGrace(id));
+    this.setWake(`grace:${id}`, participant.graceDeadline);
     this.publishState();
   };
 
@@ -346,7 +493,7 @@ export class OnlineRoomLogic {
   };
 
   private removeParticipant = (id: string) => {
-    this.clearTimer(`grace:${id}`);
+    this.clearWake(`grace:${id}`);
     this.participants = this.participants.filter((other) => other.id !== id);
     this.leaderboard = this.leaderboard.filter((entry) => entry.participantId !== id);
     delete this.songVotes[id];
@@ -432,18 +579,20 @@ export class OnlineRoomLogic {
     this.publishState();
   };
 
+  private finishResume = () => {
+    this.playbackAnchor = {
+      serverTimeMs: this.resumeCountdownEndsAt!,
+      videoTimeMs: this.pause?.videoTimeMs ?? 0,
+    };
+    this.pause = null;
+    this.resumeCountdownEndsAt = null;
+    this.publishState();
+  };
+
   private resumePlayback = () => {
     if (this.phase !== 'singing' || this.pause === null || this.resumeCountdownEndsAt !== null) return;
     this.resumeCountdownEndsAt = this.deps.now() + ONLINE_RESUME_COUNTDOWN_MS;
-    this.setTimer('resume', ONLINE_RESUME_COUNTDOWN_MS, () => {
-      this.playbackAnchor = {
-        serverTimeMs: this.resumeCountdownEndsAt!,
-        videoTimeMs: this.pause?.videoTimeMs ?? 0,
-      };
-      this.pause = null;
-      this.resumeCountdownEndsAt = null;
-      this.publishState();
-    });
+    this.setTimer('resume', ONLINE_RESUME_COUNTDOWN_MS, this.finishResume);
     this.publishState();
   };
 
@@ -638,10 +787,13 @@ export class OnlineRoomLogic {
         this.setTimer('force-results', ONLINE_FORCE_RESULTS_MS, this.forceResults);
         this.publishState();
       }),
-      /** Report your connection latency and mic volume so others can see them. */
-      reportStats: defineMutation((ctx, ping: number, volume: number) => {
+      /** Report your connection latency and mic volume so others can see them. `idle` is sent once
+       * on each transition when a singer stops reporting altogether (see `useIsUserActive`): the
+       * room has no timer watching for stale entries — that would wake it, which is the whole
+       * thing being avoided — so going quiet has to be stated rather than inferred. */
+      reportStats: defineMutation((ctx, ping: number, volume: number, idle: boolean = false) => {
         this.requireParticipant(ctx.senderId);
-        this.playerStats[ctx.senderId] = { ping: Math.round(ping), volume };
+        this.playerStats[ctx.senderId] = { ping: Math.round(ping), volume, idle };
         this.queueStatsPublish();
       }),
       /** Host only: remove a singer from the room and ban them from rejoining. */

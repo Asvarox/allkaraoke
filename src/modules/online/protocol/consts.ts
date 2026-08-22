@@ -5,8 +5,17 @@ export const ONLINE_MAX_CHART_BYTES = 512 * 1024;
 /** How long a disconnected participant keeps their spot (and the host their role) before removal. */
 export const ONLINE_RECONNECT_GRACE_MS = 15_000;
 
-/** Idle room time-to-live — storage is wiped this long after the last activity. */
-export const ONLINE_ROOM_TTL_MS = 6 * 60 * 60 * 1_000;
+/** Idle room time-to-live — storage is wiped this long after the last activity. Short because an
+ * abandoned room now goes quiet (see ONLINE_IDLE_AFTER_MS) instead of holding the party awake, so
+ * there is nothing to gain from keeping a dead room's snapshot around for hours. */
+export const ONLINE_ROOM_TTL_MS = 30 * 60 * 1_000;
+
+/** How long a singer can go without moving the pointer or pressing a key before their client stops
+ * reporting stats and pinging altogether. Only applies in the lobby and on the results screen —
+ * nobody touches the controls while a countdown is running or a song is playing. Long enough not to
+ * blink out on someone reading the song list, short enough that a forgotten tab stops holding the
+ * room (and its Durable Object duration bill) awake. */
+export const ONLINE_IDLE_AFTER_MS = 30 * 1_000;
 
 /** How long a singer can report buffering before the room auto-pauses for everyone. */
 export const ONLINE_BUFFERING_PAUSE_MS = 1_000;
@@ -29,8 +38,14 @@ export const ONLINE_DRIFT_THRESHOLD_MS = 500;
 /** Leaderboard broadcasts are coalesced so subscribers get at most one update per this interval. */
 export const ONLINE_LEADERBOARD_PUBLISH_MS = 500;
 
-/** Player-stats (ping/volume) broadcasts are coalesced to at most one per this interval. */
-export const ONLINE_STATS_PUBLISH_MS = 1_000;
+/** Player-stats (ping/volume) broadcasts are coalesced to at most one per this interval. Fast
+ * enough for the volume bars to read as live meters (~3 updates/s) rather than a slideshow — the
+ * payload is a couple of numbers per singer, and silent singers stop reporting altogether. */
+export const ONLINE_STATS_PUBLISH_MS = 300;
+
+/** How often each singer samples their mic volume and reports it (with their ping) to the room.
+ * Matches the broadcast interval — sampling faster would only be coalesced away. */
+export const ONLINE_STATS_REPORT_MS = 300;
 
 /** How long the room waits for final scores after the host ends the game before forcing results. */
 export const ONLINE_FORCE_RESULTS_MS = 5_000;

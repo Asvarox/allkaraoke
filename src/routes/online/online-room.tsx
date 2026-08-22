@@ -11,6 +11,7 @@ import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import {
   useIsOnlineHost,
+  useIsUserActive,
   useOnlineConnectionStatus,
   useOnlineRoomState,
   useReportPlayerStats,
@@ -78,11 +79,16 @@ function OnlineRoom({ roomCode }: Props) {
     };
   }, []);
 
-  // Keep the mic monitored for the whole room stay so volume indicators work in the lobby
-  useMicMonitoring();
-
   const [status, statusDetail] = useOnlineConnectionStatus();
   const roomState = useOnlineRoomState();
+
+  // Everyone in the room keeps the mic monitored for the whole stay, re-asserted on every phase (and
+  // on connecting), so the volume bars are live at the same moments for the host and the singers
+  // alike. Screen-level monitoring can't do that here: the host's song-selection screen re-starts
+  // monitoring as it mounts, while a singer joining through an invite link ran the setup wizard
+  // inside the room and would stay on whatever input they had when the room first mounted.
+  useMicMonitoring(`${status}:${roomState?.phase ?? 'none'}`);
+
   const selfPlayerNumber = roomState?.participants.find(
     (participant) => participant.id === OnlineClient.getParticipantId(),
   )?.playerNumber;
@@ -96,7 +102,12 @@ function OnlineRoom({ roomCode }: Props) {
     });
   }, [selfPlayerNumber]);
   const { song, error: songError } = useOnlineSong(status === 'connected' ? roomState?.chart : null);
-  useReportPlayerStats(status === 'connected', selfPlayerNumber ?? 0);
+  // Only the lobby and the results screen may go quiet. During readiness and singing the pointer
+  // sits still by design — nobody jiggles the mouse mid-countdown or mid-song — so idling there
+  // would blank everyone's volume bar at exactly the wrong moment.
+  const canIdle = roomState?.phase === 'lobby' || roomState?.phase === 'results';
+  const isUserActive = useIsUserActive(canIdle);
+  useReportPlayerStats(status === 'connected', isUserActive, selfPlayerNumber ?? 0);
 
   const isHost = useIsOnlineHost();
   const [songBrowserRoute] = useRoute(routePaths.ONLINE_PICK_SONG);

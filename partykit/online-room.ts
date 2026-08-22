@@ -2,11 +2,19 @@ import type * as Party from 'partykit/server';
 
 import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
-import { ONLINE_MAX_NAME_LENGTH, ONLINE_ROOM_TTL_MS } from '~/modules/online/protocol/consts';
+import { ONLINE_MAX_NAME_LENGTH } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 
 const STATE_KEY = 'online-room-state';
+
+/** Persisted on `connection.state` (survives hibernation) so subscriptions can be rebuilt in
+ * `onStart` — the in-memory `ServerSubscriptionRegistry` is lost every time the party hibernates
+ * and wakes for a new message. */
+type OnlineConnectionState = {
+  participantId?: string;
+  channels?: (keyof OnlineSubscriptionChannels)[];
+};
 
 /**
  * Authoritative online-mode room. One instance per room code. Standalone PartyKit project —
@@ -17,8 +25,14 @@ const STATE_KEY = 'online-room-state';
  * query param) doubles as the stable participant id.
  */
 export default class OnlineRoomServer implements Party.Server {
+  options: Party.ServerOptions = { hibernate: true };
+
   private logic: OnlineRoomLogic;
   private rpcServer: RpcServer<ReturnType<OnlineRoomLogic['createHandlers']>> | null = null;
+  /** `onStart` runs once per wake, but `onAlarm` is not covered by it — PartyKit only promises
+   * `onStart` before the first `onConnect`/`onRequest`. Both go through here so an alarm that wakes
+   * a hibernated room still gets restored state and a rebuilt subscription registry to publish to. */
+  private started: Promise<void> | null = null;
   private subscriptions = new ServerSubscriptionRegistry<OnlineSubscriptionChannels>({
     // Both channels have a current value even before anything is published, so a peer subscribing
     // right after joining doesn't have to wait for the next change
@@ -32,10 +46,12 @@ export default class OnlineRoomServer implements Party.Server {
     this.logic = this.createLogic();
   }
 
-  private createLogic = (restoreFrom?: OnlinePersistedState) =>
+  private createLogic = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: ReadonlySet<string>) =>
     new OnlineRoomLogic(
       {
-        roomCode: this.room.id,
+        // `Party.id` is not readable in an alarm context, so a restored room prefers the code from
+        // its own snapshot and only falls back to the room's id on a first (non-restored) start.
+        roomCode: restoreFrom?.roomCode ?? this.room.id,
         now: () => Date.now(),
         publish: (channel, data) => {
           this.subscriptions.publish(
@@ -49,13 +65,19 @@ export default class OnlineRoomServer implements Party.Server {
             console.error('Failed to persist online room state', error);
           });
         },
-        scheduleTtl: (deadline) => {
-          this.room.storage.setAlarm(deadline).catch((error) => {
-            console.error('Failed to schedule online room TTL alarm', error);
+        scheduleWake: (deadline) => {
+          const armed = deadline === null ? this.room.storage.deleteAlarm() : this.room.storage.setAlarm(deadline);
+          armed.catch((error) => {
+            console.error('Failed to arm online room alarm', error);
+          });
+        },
+        destroy: () => {
+          this.room.storage.deleteAll().catch((error) => {
+            console.error('Failed to wipe expired online room', error);
           });
         },
         disconnect: (participantId) => {
-          for (const connection of this.room.getConnections()) {
+          for (const connection of this.room.getConnections<OnlineConnectionState>()) {
             if (this.participantIdOf(connection) === participantId) {
               connection.close(4001, 'removed');
             }
@@ -63,12 +85,32 @@ export default class OnlineRoomServer implements Party.Server {
         },
       },
       restoreFrom,
+      liveParticipantIds,
     );
 
-  async onStart() {
+  onStart() {
+    return this.ensureStarted();
+  }
+
+  private ensureStarted = () => (this.started ??= this.start());
+
+  private async start() {
     const persisted = await this.room.storage.get<OnlinePersistedState>(STATE_KEY);
     if (persisted) {
-      this.logic = this.createLogic(persisted);
+      // Sockets that are still attached right now — tells OnlineRoomLogic's constructor whether
+      // this is a hibernation wake (some of these were already in `persisted.participants`) or a
+      // genuine restart (none were).
+      const liveParticipantIds = new Set(
+        [...this.room.getConnections<OnlineConnectionState>()].map((connection) => this.participantIdOf(connection)),
+      );
+      this.logic = this.createLogic(persisted, liveParticipantIds);
+    }
+    // Hibernation drops the in-memory subscription registry between messages; connections
+    // themselves survive it, so rebuild the registry from each connection's persisted state.
+    for (const connection of this.room.getConnections<OnlineConnectionState>()) {
+      for (const channel of connection.state?.channels ?? []) {
+        this.subscriptions.subscribe(connection.id, channel);
+      }
     }
     this.rpcServer = new RpcServer(
       this.logic.createHandlers(),
@@ -77,7 +119,7 @@ export default class OnlineRoomServer implements Party.Server {
         // publishing goes through logic deps directly; RpcServer.publish is unused here
       },
       (peerId) => {
-        for (const connection of this.room.getConnections()) {
+        for (const connection of this.room.getConnections<OnlineConnectionState>()) {
           if (this.participantIdOf(connection) === peerId) {
             connection.close(4001, 'removed');
           }
@@ -92,7 +134,7 @@ export default class OnlineRoomServer implements Party.Server {
     return Response.json({ created: this.logic.isCreated() }, { headers: { 'Access-Control-Allow-Origin': '*' } });
   }
 
-  onConnect(connection: Party.Connection, ctx: Party.ConnectionContext) {
+  onConnect(connection: Party.Connection<OnlineConnectionState>, ctx: Party.ConnectionContext) {
     const url = new URL(ctx.request.url);
     // Bound the URL-derived name before it enters room state — a query param is attacker-controlled
     // and would otherwise bypass the length limit `room.setName` enforces.
@@ -112,10 +154,10 @@ export default class OnlineRoomServer implements Party.Server {
     connection.send(JSON.stringify({ t: 'joined', state: this.logic.getState() }));
   }
 
-  private participantIdOf = (connection: Party.Connection): string =>
-    (connection.state as { participantId?: string } | null)?.participantId ?? connection.id;
+  private participantIdOf = (connection: Party.Connection<OnlineConnectionState>): string =>
+    connection.state?.participantId ?? connection.id;
 
-  async onMessage(raw: string | ArrayBuffer | ArrayBufferView, sender: Party.Connection) {
+  async onMessage(raw: string | ArrayBuffer | ArrayBufferView, sender: Party.Connection<OnlineConnectionState>) {
     if (typeof raw !== 'string') return;
     let message: OnlineMessages;
     try {
@@ -131,6 +173,10 @@ export default class OnlineRoomServer implements Party.Server {
     } else if (message.t === 'rpc-sub') {
       const channel = message.channel;
       this.subscriptions.subscribe(sender.id, channel);
+      sender.setState((prev) => ({
+        ...(prev ?? {}),
+        channels: Array.from(new Set([...(prev?.channels ?? []), channel])),
+      }));
       // Replay the latest value so new subscribers get the current state immediately
       const lastValue = this.subscriptions.getLastValue(channel);
       if (lastValue) {
@@ -138,6 +184,10 @@ export default class OnlineRoomServer implements Party.Server {
       }
     } else if (message.t === 'rpc-unsub') {
       this.subscriptions.unsubscribe(sender.id, message.channel);
+      sender.setState((prev) => ({
+        ...(prev ?? {}),
+        channels: (prev?.channels ?? []).filter((channel) => channel !== message.channel),
+      }));
     } else if (message.t === 'rpc') {
       await this.rpcServer?.handleMessage(message, {
         peer: this.participantIdOf(sender),
@@ -146,11 +196,11 @@ export default class OnlineRoomServer implements Party.Server {
     }
   }
 
-  onClose(connection: Party.Connection) {
+  onClose(connection: Party.Connection<OnlineConnectionState>) {
     this.subscriptions.removePeer(connection.id);
     const participantId = this.participantIdOf(connection);
     // Only a participant's last socket closing counts as a disconnect
-    const hasOtherLiveConnection = [...this.room.getConnections()].some(
+    const hasOtherLiveConnection = [...this.room.getConnections<OnlineConnectionState>()].some(
       (other) => other !== connection && other.id !== connection.id && this.participantIdOf(other) === participantId,
     );
     if (!hasOtherLiveConnection) {
@@ -158,18 +208,18 @@ export default class OnlineRoomServer implements Party.Server {
     }
   }
 
-  onError(connection: Party.Connection) {
+  onError(connection: Party.Connection<OnlineConnectionState>) {
     this.onClose(connection);
   }
 
+  /**
+   * The only thing that wakes a room nobody is talking to. Clients in the lobby stop pinging and
+   * reporting once they go idle, so without this a reconnect grace window armed just before the
+   * party hibernated would never expire — the disconnected singer would keep their slot, and
+   * possibly the host role, forever.
+   */
   async onAlarm() {
-    const persisted = await this.room.storage.get<OnlinePersistedState>(STATE_KEY);
-    if (!persisted) return;
-    const expired = Date.now() - persisted.lastActivityAt >= ONLINE_ROOM_TTL_MS;
-    if (expired) {
-      await this.room.storage.deleteAll();
-    } else {
-      await this.room.storage.setAlarm(persisted.lastActivityAt + ONLINE_ROOM_TTL_MS);
-    }
+    await this.ensureStarted();
+    this.logic.handleAlarm();
   }
 }

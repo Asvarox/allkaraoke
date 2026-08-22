@@ -3,6 +3,7 @@ import tinycolor from 'tinycolor2';
 
 import styles from '~/modules/game-engine/drawing/styles';
 import { usePlayerMicData } from '~/modules/hooks/players/use-player-mic';
+import { ONLINE_STATS_PUBLISH_MS } from '~/modules/online/protocol/consts';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { twx } from '~/utils/twx';
 
@@ -39,6 +40,9 @@ export const VolumeIndicator = ({ volume, playerNumber, ref, ...rest }: Props) =
         className="h-full w-full origin-right"
         style={{
           transform: `scaleX(${percent})`,
+          // Reported levels land a few times a second, which without this reads as a bar hopping
+          // between positions — a linear tween over one reporting interval turns it into a meter
+          transition: `transform ${ONLINE_STATS_PUBLISH_MS}ms linear`,
           background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
         }}
       />

@@ -73,6 +73,9 @@ function ParticipantSlot({
   const vote = useParticipantVote(participant.id);
 
   const isSelf = participant.id === selfId;
+  // Away from the keyboard or on another tab: they stopped reporting, so their last volume and ping
+  // are frozen rather than current. Never applies to the own row, which reads the mic locally.
+  const isIdle = !isSelf && (stats[participant.id]?.idle ?? false);
   const canEdit = onEdit !== undefined && isSelf;
   const showKick = canKick && hostId === selfId && !isSelf;
   const hasBadges = showPing || showVote || showTags || canEdit || showKick || children !== undefined;
@@ -81,6 +84,7 @@ function ParticipantSlot({
     <MicCheckSlotShell
       data-test={dataTest}
       data-connected={participant.connected}
+      data-idle={isIdle || undefined}
       data-vote={showVote ? (vote ?? 'none') : undefined}
       className={className}
       size={size}
@@ -90,7 +94,8 @@ function ParticipantSlot({
       name={
         <span className={`flex items-center gap-2 ${hasBadges ? 'max-w-[calc(100%-16rem)]' : ''}`}>
           {showColorDot && <PlayerColorDot number={participant.playerNumber} />}
-          <span className={`truncate ${participant.connected ? '' : 'line-through opacity-50'}`}>
+          <span
+            className={`truncate ${participant.connected ? (isIdle ? 'opacity-50' : '') : 'line-through opacity-50'}`}>
             {participant.name}
           </span>
         </span>
@@ -98,9 +103,13 @@ function ParticipantSlot({
       connected={participant.connected}
       // The own volume comes straight from the local mic pipeline (no re-render per frame);
       // everyone else's is the level they report to the room.
-      volume={isSelf ? { type: 'local' } : { type: 'remote', volume: stats[participant.id]?.volume ?? 0 }}>
+      volume={
+        isSelf ? { type: 'local' } : { type: 'remote', volume: isIdle ? 0 : (stats[participant.id]?.volume ?? 0) }
+      }>
       {hasBadges && (
-        <ParticipantBadges stats={showPing ? stats[participant.id] : undefined} vote={showVote ? vote : null}>
+        <ParticipantBadges
+          stats={showPing && !isIdle ? stats[participant.id] : undefined}
+          vote={showVote ? vote : null}>
           {showTags && (
             <>
               {isSelf && (
