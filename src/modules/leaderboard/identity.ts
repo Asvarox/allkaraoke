@@ -35,3 +35,9 @@ export const persistIdentity = (name: string, country: string | null) => {
   LeaderboardNameSetting.set(name);
   LeaderboardCountrySetting.set(country);
 };
+
+/** Drops the stored board identity. The `clientId` stays — it is the device, not the person. */
+export const clearIdentity = () => {
+  LeaderboardNameSetting.set(null);
+  LeaderboardCountrySetting.set(null);
+};

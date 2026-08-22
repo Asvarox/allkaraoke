@@ -34,9 +34,10 @@ In scope:
 
 Out of scope (deferred, decided explicitly):
 
-- "Always store" / "never ask again" persistence, the armed-submission panel, and inline editing on
-  the scores list. v1 prompts on every qualifying score with a plain yes/no. Accepted consequence: a
-  player who never wants to participate sees the modal after every qualifying song.
+- ~~"Always store" / "never ask again" persistence, the armed-submission panel, and inline editing on
+  the scores list.~~ Pulled back into v1 after the first build — a player who never wants to
+  participate seeing the modal after every qualifying song was not an acceptable consequence after
+  all. See "Standing decisions" below.
 - Server-side score verification by replaying the notes blob.
 - "Remove my score" self-service.
 - Difficulty normalization — the board mixes tolerances and is sorted purely by score.
@@ -203,6 +204,23 @@ otherwise the stored data is worthless and the collection window is lost:
 
 v1 therefore stores **all** frequency records of the submitting player, delta-encoded and packed as
 in the PoC, plus those three fields on the record.
+
+## Standing decisions
+
+The prompt is only the undecided state. `LeaderboardSharingSetting` (localStorage) holds one of:
+
+- `null` — undecided. The prompt opens after every qualifying song, as originally specified.
+- `'always'` — set by the prompt's "Share my scores from now on" checkbox. The prompt stops opening;
+  the high-scores step instead shows the identity being shared under, with the fields still
+  editable, and the button that moves on to the next song reads "Share score and sing a song" and
+  holds for the request. Sharing on the way out rather than on arrival keeps the wait off the path
+  of a player who just wants to see their score.
+- `'never'` — set by the prompt's "Don't ask again". Nothing opens by itself again; the high-scores
+  step keeps a one-line offer that reopens the prompt, so the decision is not a dead end.
+
+"Stop sharing scores" on the panel returns to `null` rather than to `'never'` — turning off
+automatic sharing is not the same as never wanting to be asked — and clears the stored name and
+country with it. The `clientId` stays: it identifies the device, not the person.
 
 ## Client Flow
 

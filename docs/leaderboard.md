@@ -38,7 +38,8 @@ copy until it expires.
 | `src/modules/leaderboard/notes-payload.ts` | Delta encoder/decoder for the frequency records |
 | `src/modules/leaderboard/notes-hash.ts` | sha-256 over `notes ++ score`, used on both sides |
 | `src/modules/leaderboard/identity.ts` | localStorage `clientId`, name and country |
-| `src/routes/game/singing/post-game/views/leaderboard-prompt.tsx` | The opt-in modal |
+| `src/modules/leaderboard/sharing.ts` | The standing decision: undecided / always / never |
+| `src/routes/game/singing/post-game/views/leaderboard/` | The prompt, the high-scores panel, and the hook holding their shared state |
 | `src/routes/welcome/leaderboard-panel.tsx` | The board on the main menu |
 | `src/routes/admin/leaderboard-management.tsx` | Row deletion |
 
@@ -133,6 +134,23 @@ replaying the notes blob is the real answer and is deferred.
   of 10 or 60 seconds, so the intended 30/h is not expressible; this is the closest usable setting
   and needs no bookkeeping of our own.
 
+## Standing decisions
+
+The prompt is only the undecided state. `LeaderboardSharingSetting` holds `null` (ask every
+qualifying song), `'always'`, or `'never'`, and `useLeaderboardPostGame` turns that into what the
+high-scores step renders:
+
+| Decision | Prompt | Panel below the local scores | The button that moves on |
+| --- | --- | --- | --- |
+| `null` | opens | offers a way back in once dismissed | "Select song" |
+| `'always'` | never opens | the identity being shared under, still editable, plus "Stop sharing scores" | "Share score and sing a song", holding for the request |
+| `'never'` | never opens | a one-line offer that reopens the prompt | "Select song" |
+
+An armed score is submitted on the way out rather than on arrival, so the wait is never in the way
+of a player who only wanted to see their score. "Stop sharing scores" returns the decision to `null`
+rather than `'never'` — turning off automatic sharing is not the same as never wanting to be asked —
+and clears the stored name and country. The `clientId` survives: it is the device, not the person.
+
 ## Feature flag and tests
 
 The client is gated behind the PostHog `leaderboard` flag. `useFeatureFlag` forces every flag on
@@ -145,5 +163,6 @@ under e2e, which would put the board into every existing spec and every main-men
   `vite.config.mts` includes `worker/**/*.test.ts` there.
 - `src/modules/leaderboard/notes-payload.test.ts` — encoder round-trip and payload size.
 - `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
-- `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu, plus the
-  flag-off state.
+- `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
+  "always share" path across two songs; "Don't ask again" and the way back in; and the flag-off
+  state.

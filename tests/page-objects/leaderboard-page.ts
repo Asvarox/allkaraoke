@@ -30,6 +30,38 @@ export class LeaderboardPagePO {
     return this.prompt.getByTestId('leaderboard-decline');
   }
 
+  public get neverAskAgainButton() {
+    return this.prompt.getByTestId('leaderboard-never');
+  }
+
+  public get alwaysShareCheckbox() {
+    return this.prompt.getByTestId('leaderboard-always-share');
+  }
+
+  // --- High-scores step panel ---
+
+  /** Shown once the player shares by default: the identity they share under, and a way to stop. */
+  public get sharePanel() {
+    return this.page.getByTestId('leaderboard-share-panel');
+  }
+
+  /** Shown once the player has declined: the way back into the prompt. */
+  public get optInPanel() {
+    return this.page.getByTestId('leaderboard-opt-in-panel');
+  }
+
+  public get stopSharingButton() {
+    return this.page.getByTestId('leaderboard-stop-sharing');
+  }
+
+  public get openPromptButton() {
+    return this.page.getByTestId('leaderboard-open-prompt');
+  }
+
+  public get panelNameInput() {
+    return this.sharePanel.getByTestId('leaderboard-name');
+  }
+
   public async fillIdentity(name: string, country: string) {
     await this.nameInput.fill(name);
 

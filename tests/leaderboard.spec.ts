@@ -9,6 +9,7 @@ const song = 'e2e-multitrack-polish-1994';
 const language = 'Polish';
 
 const playerName = 'E2E Board Player';
+const alwaysPlayerName = 'E2E Always Player';
 const playerCountry = 'Poland';
 
 /**
@@ -37,6 +38,18 @@ const singTheSong = async (page: Page) => {
 
   await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
   await pages.calibration.approveDefaultCalibrationSetting();
+
+  await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 60_000 });
+  await pages.postGameResultsPage.skipScoresAnimation();
+  await pages.postGameResultsPage.goToHighScoresStep();
+};
+
+/** A second run, entered from the song list the high-scores step returns to. */
+const singTheSongAgain = async () => {
+  await pages.songListPage.focusSong(song);
+  await pages.songListPage.approveSelectedSongByKeyboard();
+  await pages.songPreviewPage.navigateToGoNextWithKeyboard();
+  await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
 
   await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 60_000 });
   await pages.postGameResultsPage.skipScoresAnimation();
@@ -77,6 +90,55 @@ test.describe('Global leaderboard enabled', () => {
 
       await expect(pages.leaderboardPage.rowFor(playerName).first()).toBeVisible({ timeout: 30_000 });
       await pages.leaderboardPage.expectRowFor(playerName, 'E2ETest', 'Easy');
+    });
+  });
+
+  test('remembers the choice to always share and arms the next score', async ({ page }) => {
+    test.slow();
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+
+    await test.step('Opt into sharing every score from the prompt', async () => {
+      await singTheSong(page);
+      await expect(pages.leaderboardPage.prompt).toBeVisible();
+      await pages.leaderboardPage.alwaysShareCheckbox.click();
+      await pages.leaderboardPage.fillIdentity(alwaysPlayerName, playerCountry);
+      await pages.leaderboardPage.submit();
+    });
+
+    await test.step('The next qualifying score is armed instead of prompted', async () => {
+      await pages.postGameHighScoresPage.goToSongList();
+      await singTheSongAgain();
+
+      await expect(pages.leaderboardPage.prompt).toHaveCount(0);
+      await expect(pages.leaderboardPage.sharePanel).toBeVisible();
+      await expect(pages.leaderboardPage.panelNameInput).toHaveValue(alwaysPlayerName);
+      await expect(pages.postGameHighScoresPage.selectSongButton).toContainText('Share score and sing a song');
+    });
+
+    await test.step('Moving on shares the score, and it lands on the board', async () => {
+      await pages.postGameHighScoresPage.goToSongList();
+
+      await page.goto('/?e2e-test');
+      await pages.landingPage.enterTheGame();
+      await expect(pages.leaderboardPage.rowFor(alwaysPlayerName).first()).toBeVisible({ timeout: 30_000 });
+    });
+  });
+
+  test('stops asking after "Don\'t ask again", and keeps a way back in', async ({ page }) => {
+    test.slow();
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await singTheSong(page);
+
+    await expect(pages.leaderboardPage.prompt).toBeVisible();
+    await pages.leaderboardPage.neverAskAgainButton.click();
+    await expect(pages.leaderboardPage.prompt).toHaveCount(0);
+
+    await test.step('The high-scores step offers a way back into the prompt', async () => {
+      await expect(pages.leaderboardPage.optInPanel).toBeVisible();
+      await pages.leaderboardPage.openPromptButton.click();
+      await expect(pages.leaderboardPage.prompt).toBeVisible();
     });
   });
 });
