@@ -909,6 +909,28 @@ describe('hibernation-safe alarms', () => {
     expect(room.destroy).toHaveBeenCalled();
   });
 
+  it('keeps a room whose singers are merely quiet, and pushes the TTL out instead', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+
+    // Neither pings nor stats reports touch the room's state, so a lobby of idle singers reaches
+    // the TTL deadline with everyone still connected. Wiping storage here would evaporate the room
+    // out from under their live sockets on the next hibernation wake.
+    vi.setSystemTime(Date.now() + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+
+    expect(room.destroy).not.toHaveBeenCalled();
+    expect(room.logic.getState().participants).toHaveLength(2);
+    expect(room.scheduleWake).toHaveBeenLastCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+
+    // and it does go when the last of them is finally gone
+    room.logic.handleDisconnect('p1');
+    room.logic.handleDisconnect('p2');
+    vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS + ONLINE_ROOM_TTL_MS);
+    room.logic.handleAlarm();
+    expect(room.destroy).toHaveBeenCalled();
+  });
+
   it('restores the pending deadlines after a wake, so a dropped singer is still cleaned up', () => {
     const source = createRoom();
     join(source, ['p1', 'p2']);

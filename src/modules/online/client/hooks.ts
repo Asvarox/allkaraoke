@@ -68,13 +68,18 @@ const VOLUME_SAMPLE_MS = 50;
  * the pointer while a countdown is running or a song is playing.
  */
 export const useIsUserActive = (enabled: boolean): boolean => {
-  const [active, setActive] = useState(true);
+  // Read at render time, not from an effect: a room mounted in a background tab has no
+  // `visibilitychange` coming (it is already hidden), and starting out active would have it report
+  // for a full ONLINE_IDLE_AFTER_MS before the idle interval noticed.
+  const [active, setActive] = useState(() => !document.hidden);
 
   useEffect(() => {
     if (!enabled) {
       setActive(true);
       return;
     }
+    // Same for becoming eligible to idle while already hidden (a song ending on a background tab)
+    if (document.hidden) setActive(false);
     // A ref-like local rather than state: input events must not re-render the lobby — only
     // crossing the idle boundary does.
     let lastActivityAt = Date.now();

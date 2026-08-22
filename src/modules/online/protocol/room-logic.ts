@@ -216,6 +216,15 @@ export class OnlineRoomLogic {
       if (!this.wakeDeadlines.has(name)) continue;
       this.wakeDeadlines.delete(name);
       if (name === 'ttl') {
+        // The TTL means abandoned, not merely quiet. Neither pings nor stats reports touch the
+        // room's state (only `publishState` does), so a lobby full of idle singers lets the
+        // deadline come due with everyone still sitting in it — and wiping storage out from under
+        // live sockets would evaporate the room on its next hibernation wake. `isExpired` is the
+        // one place that rule lives.
+        if (!this.isExpired()) {
+          this.touch();
+          continue;
+        }
         // Nothing left to re-arm — the room and its alarm go away with the storage.
         this.deps.destroy?.();
         return;
