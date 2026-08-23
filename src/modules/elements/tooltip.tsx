@@ -5,9 +5,7 @@ import { twc } from 'react-twc';
 
 import storage from '~/modules/utils/storage';
 
-export const StyledTooltip = twc(
-  ReactTooltip,
-)`rounded-2.5! typography [&_strong]:text-active z-10000 w-auto! max-w-[75vw]! bg-black/85! px-4! py-2.5! text-sm! sm:w-max! sm:max-w-[450px]! sm:text-lg! [&_.MuiTooltip-arrow::before]:bg-black/85!`;
+export const StyledTooltip = twc(ReactTooltip)`rounded-xl bg-black/50 px-2 py-1 text-sm text-white`;
 interface Props {
   clickable?: boolean;
   open?: boolean;
@@ -23,7 +21,7 @@ export const Tooltip = ({ children, title, open, ...props }: Props) => {
   return (
     <>
       {createPortal(
-        <StyledTooltip {...props} id={id} ref={tooltipRef} isOpen={open}>
+        <StyledTooltip disableStyleInjection {...props} id={id} ref={tooltipRef} isOpen={open}>
           {title}
         </StyledTooltip>,
         document.body,

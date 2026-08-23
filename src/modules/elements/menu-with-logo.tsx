@@ -29,7 +29,11 @@ function MenuWithLogo({ children, supportedBrowsers, sidePanel, ...props }: Prop
         </div>
         {supportedBrowsers && <RecommendedBrowsers />}
         {sidePanel ? (
-          <div className="flex w-full items-start justify-center gap-6">
+          // `1fr auto 1fr`, nothing in the first column: the two `1fr` tracks always split the
+          // leftover space evenly, so the middle (menu) column stays centered on the page no matter
+          // how wide the side panel is, instead of the pair centering as a unit.
+          <div className="grid w-full grid-cols-[1fr_auto_1fr] items-start gap-6">
+            <div />
             <Menu {...props}>{children}</Menu>
             <div className="hidden w-[26rem] shrink-0 lg:block">{sidePanel}</div>
           </div>

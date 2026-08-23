@@ -2,6 +2,8 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import useSWR from 'swr';
 
+import { Menu } from '~/modules/elements/akui/menu';
+import Box from '~/modules/elements/akui/primitives/box';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { Flag } from '~/modules/elements/flag';
 import { fetchBoard, LEADERBOARD_URL } from '~/modules/leaderboard/client';
@@ -22,19 +24,25 @@ const VISIBLE_ROWS = 10;
 
 function Row({ entry, position }: { entry: BoardEntry; position: number }) {
   return (
-    <div className="typography flex items-center gap-2 bg-black/50 px-3 py-2 text-sm" data-test="leaderboard-row">
-      <div className="text-active w-6 shrink-0 text-right">{position}</div>
-      <div className="ph-no-capture w-5 shrink-0">
-        <Flag isocode={entry.country ?? 'un'} loading="lazy" className="h-[1em] w-[1.5em] object-cover" />
-      </div>
+    // Same rounded-box look as a `Menu.Button`, minus every interactive cue (no hover glow, no
+    // focus border/inner-shadow) - these rows are read-only
+    <div
+      className="typography flex items-center gap-2 rounded-xl bg-black/55 px-2 py-3 text-sm"
+      data-test="leaderboard-row">
+      <div className="text-active text-md w-[2ch] shrink-0 text-right tabular-nums">{position}</div>
       <div className="min-w-0 flex-1 text-left">
-        <div className="ph-no-capture truncate">{entry.name}</div>
+        <div className="ph-no-capture flex items-center gap-2 truncate">
+          <Flag isocode={entry.country ?? 'un'} loading="lazy" className="h-[1em] w-[1.5em] object-cover" />
+          {entry.name}
+        </div>
         <div className="truncate text-xs opacity-70">
           {entry.artist} — {entry.title}
         </div>
       </div>
       <div className="shrink-0 text-right">
-        <ScoreText score={entry.score} />
+        <span className="text-active font-semibold">
+          <ScoreText score={entry.score} />
+        </span>
         <div className="text-xs opacity-70">
           {[difficultyName(entry.tolerance), dayjs(entry.createdAt).fromNow()].filter(Boolean).join(' · ')}
         </div>
@@ -58,11 +66,15 @@ function LeaderboardPanel({ className }: { className?: string }) {
   if (!leaderboardEnabled) return null;
 
   return (
-    <div className={className} data-test="leaderboard-panel">
-      <h2 className="typography text-active mb-2 text-lg">Global leaderboard</h2>
+    // Same box the main menu sits in, so the panel reads as part of it rather than a bolted-on widget
+    <Box className={`w-full items-stretch gap-4 p-4 sm:p-7 ${className ?? ''}`} data-test="leaderboard-panel">
+      <Menu.Header as="h2">Global leaderboard</Menu.Header>
+      <Menu.HelpText className="-mt-4">Highest scores from the last 14 days</Menu.HelpText>
       <div className="flex max-h-[26rem] flex-col gap-1 overflow-y-auto">
         {isLoading &&
-          Array.from({ length: VISIBLE_ROWS }, (_, index) => <Skeleton key={index} className="h-12 w-full" />)}
+          Array.from({ length: VISIBLE_ROWS }, (_, index) => (
+            <Skeleton key={index} className="h-12 w-full rounded-xl" />
+          ))}
         {!isLoading && error && (
           <p className="typography text-sm opacity-70" data-test="leaderboard-error">
             Failed to load results
@@ -78,7 +90,7 @@ function LeaderboardPanel({ className }: { className?: string }) {
             <Row key={`${entry.songId}-${entry.name}-${index}`} entry={entry} position={index + 1} />
           ))}
       </div>
-    </div>
+    </Box>
   );
 }
 
