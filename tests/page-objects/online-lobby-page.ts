@@ -72,6 +72,29 @@ export class OnlineLobbyPagePO {
     await this.voteUpButton.click();
   }
 
+  /** Shown to a host alone in the room — online needs a second singer. */
+  public get needsMoreSingersElement() {
+    return this.page.getByTestId('online-needs-more-singers');
+  }
+
+  public get soloPromptElement() {
+    return this.page.getByTestId('online-solo-modal');
+  }
+
+  public async startSongAndDismissSoloPrompt() {
+    await this.startSongButton.click();
+    await expect(this.soloPromptElement).toBeVisible();
+    await this.soloPromptElement.getByTestId('keep-waiting').click();
+    await expect(this.soloPromptElement).not.toBeVisible();
+  }
+
+  /** Takes the solo prompt's way out — local mode, on the song the room had picked. */
+  public async startSongAndSingLocally() {
+    await this.startSongButton.click();
+    await expect(this.soloPromptElement).toBeVisible();
+    await this.soloPromptElement.getByTestId('sing-locally').click();
+  }
+
   public get startSongButton() {
     return this.page.getByTestId('online-start-song-button');
   }

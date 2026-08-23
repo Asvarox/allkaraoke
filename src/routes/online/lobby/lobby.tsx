@@ -17,6 +17,7 @@ import {
   useOnlineSongVotes,
 } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
+import { ONLINE_MIN_PLAYERS } from '~/modules/online/protocol/consts';
 import { OnlineRoomState, SongHoverPreview, SongVote } from '~/modules/online/protocol/types';
 import { SongUpload } from '~/routes/online/hooks/use-song-upload';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
@@ -89,6 +90,20 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
 
   const leaveRoom = () => {
     navigate('online/', { room: null });
+  };
+
+  // A room of one is a solo the singer could have on this device for free, while the room server
+  // bills for every minute of it — so a lone host is offered local mode instead of a start. The
+  // room enforces the same rule; this only saves the round trip and points at the way out.
+  const connectedCount = roomState.participants.filter((participant) => participant.connected).length;
+  const isAlone = connectedCount < ONLINE_MIN_PLAYERS;
+
+  const singLocally = () => {
+    // The room's pick travels along as the local list's preselection, so the song they already
+    // settled on is the one focused (and added to the list even if their filters hide it) rather
+    // than dropping them at the top of the list to find it again. `room: null` drops the room code
+    // that the query string carries over from the lobby.
+    navigate('game/', { room: null, song: roomState.chart?.songId ?? null });
   };
 
   return (
@@ -172,14 +187,44 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
 
               {/* The host's call alone — everyone else confirms they're ready once the song
                   screen is up and the video has loaded */}
-              {isHost && roomState.chart && song && (
-                <Menu.Button
-                  {...register('start-song', startGame, undefined, true)}
-                  data-test="online-start-song-button"
-                  disabled={!self?.connected || upload.state === 'uploading' || starting}>
-                  {starting ? 'Starting…' : 'Start the song!'}
-                </Menu.Button>
+              {isHost && isAlone && (
+                <Menu.HelpText data-test="online-needs-more-singers">
+                  {`Online takes at least ${ONLINE_MIN_PLAYERS} singers — share the room code above, or sing on your own in local mode.`}
+                </Menu.HelpText>
               )}
+
+              {isHost &&
+                roomState.chart &&
+                song &&
+                (isAlone ? (
+                  <ConfirmModal
+                    title="Sing on your own?"
+                    description="You're the only one in the room, and online mode is for singing together. Local mode has the same songs on this device — or stay and wait for someone to join."
+                    onConfirm={singLocally}
+                    dataTestPrefix="online-solo"
+                    cancelButton={
+                      <ConfirmModal.CancelButton name="keep-waiting">Wait for singers</ConfirmModal.CancelButton>
+                    }
+                    confirmButton={
+                      <ConfirmModal.ConfirmButton name="sing-locally">Sing in local mode</ConfirmModal.ConfirmButton>
+                    }>
+                    {(openSoloPrompt) => (
+                      <Menu.Button
+                        {...register('start-song', openSoloPrompt, undefined, true)}
+                        data-test="online-start-song-button"
+                        disabled={!self?.connected || upload.state === 'uploading'}>
+                        Start the song!
+                      </Menu.Button>
+                    )}
+                  </ConfirmModal>
+                ) : (
+                  <Menu.Button
+                    {...register('start-song', startGame, undefined, true)}
+                    data-test="online-start-song-button"
+                    disabled={!self?.connected || upload.state === 'uploading' || starting}>
+                    {starting ? 'Starting…' : 'Start the song!'}
+                  </Menu.Button>
+                ))}
               {!isHost && roomState.chart && song && (
                 <Menu.HelpText data-test="online-waiting-for-start">
                   Waiting for the host to start the song…

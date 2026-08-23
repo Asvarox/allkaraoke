@@ -331,6 +331,28 @@ describe('starting a song and readiness', () => {
     expect(() => room.handlers.room.startGame.handler(ctx('p2'))).toThrow('Only the host');
   });
 
+  it('refuses to start for a lone singer and points them at local mode', async () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    await uploadChart(room);
+
+    expect(() => room.handlers.room.startGame.handler(ctx('p1'))).toThrow('at least 2 singers');
+    expect(room.logic.getState().phase).toBe('lobby');
+
+    join(room, ['p2']);
+    await room.handlers.room.startGame.handler(ctx('p1'));
+    expect(room.logic.getState().phase).toBe('readiness');
+  });
+
+  it('counts only connected singers towards the minimum', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await uploadChart(room);
+    room.logic.handleDisconnect('p2');
+
+    expect(() => room.handlers.room.startGame.handler(ctx('p1'))).toThrow('at least 2 singers');
+  });
+
   it('starts the song anyway when the autostart deadline passes', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);

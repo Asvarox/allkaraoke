@@ -225,6 +225,71 @@ test('Online mode: the host ends the song from the pause menu', async ({ page, c
   await guestPage.context().close();
 });
 
+test('Online mode: a host alone in the room is offered local mode instead of a start', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  await createOnlineRoom(page, context, browser, hostName);
+  await expect(pages.onlineLobbyPage.needsMoreSingersElement).toBeVisible();
+
+  await test.step('Host picks a song, but starting it offers local mode instead', async () => {
+    await pages.onlineLobbyPage.goToSongSelection();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.openPreviewForSong(song.ID);
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.pickSongForTheRoom();
+
+    await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
+    await pages.onlineLobbyPage.startSongAndDismissSoloPrompt();
+    // Staying keeps the room exactly as it was — no readiness screen, no song
+    await pages.onlineLobbyPage.expectToBeVisible();
+  });
+
+  await test.step('Once a second singer joins, the same button starts the song', async () => {
+    const roomCode = await pages.onlineLobbyPage.getRoomCode();
+    const guestPage = await newPlayerPage(browser);
+    const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
+
+    await expect(pages.onlineLobbyPage.needsMoreSingersElement).not.toBeVisible();
+    await pages.onlineLobbyPage.startSong();
+    await pages.onlineSingingPage.confirmReady();
+    await guestPages.onlineSingingPage.confirmReady();
+    await pages.onlineSingingPage.expectLeaderboardToBeVisible({ timeout: 15_000 });
+
+    await guestPage.context().close();
+  });
+});
+
+test('Online mode: a lone host taking local mode lands on the song the room had picked', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+
+  await createOnlineRoom(page, context, browser, hostName);
+  await pages.onlineLobbyPage.goToSongSelection();
+  await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+  await pages.songLanguagesPage.continueAndGoToSongList();
+  await pages.songListPage.openPreviewForSong(song.ID);
+  await pages.songPreviewPage.goNext();
+  await pages.songPreviewPage.pickSongForTheRoom();
+  await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
+
+  await pages.onlineLobbyPage.startSongAndSingLocally();
+
+  // The local song list opens focused on the room's pick, and the room code is left behind
+  await pages.songListPage.expectSelectedSongToBe(song.ID);
+  expect(new URL(page.url()).searchParams.get('song')).toBe(song.ID);
+  expect(new URL(page.url()).searchParams.get('room')).toBeNull();
+});
+
 test('Online mode: host can kick a singer, who cannot rejoin', async ({ page, context, browser }) => {
   test.slow();
   const pages = initialise(page, context, browser);

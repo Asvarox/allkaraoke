@@ -30,6 +30,11 @@ export class SongPreviewPagePO {
     await this.page.waitForTimeout(300); // force wait for the animation to finish
   }
 
+  /** Online mode: the same button hands the host's pick to the room rather than starting a song. */
+  public async pickSongForTheRoom() {
+    await this.page.getByTestId('play-song-button').click();
+  }
+
   public async playTheSong(skipIntro = true, calibration = true, unverifiedSong = false) {
     const playButton = this.page.getByTestId('play-song-button');
     await playButton.click();

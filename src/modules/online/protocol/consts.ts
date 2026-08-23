@@ -50,6 +50,10 @@ export const ONLINE_STATS_REPORT_MS = 300;
 /** How long the room waits for final scores after the host ends the game before forcing results. */
 export const ONLINE_FORCE_RESULTS_MS = 5_000;
 
+/** Online rooms are for singing together — a lone singer burns the room's duration bill on a
+ * solo they could sing locally for free, so the host can't start until someone else is in. */
+export const ONLINE_MIN_PLAYERS = 2;
+
 export const ONLINE_ROOM_CODE_LENGTH = 5;
 
 /** Longest name a participant can set for themselves (matches the local game's MAX_NAME_LENGTH). */

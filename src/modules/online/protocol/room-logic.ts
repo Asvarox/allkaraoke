@@ -7,6 +7,7 @@ import {
   ONLINE_LEADERBOARD_PUBLISH_MS,
   ONLINE_MAX_NAME_LENGTH,
   ONLINE_MAX_TOLERANCE,
+  ONLINE_MIN_PLAYERS,
   ONLINE_MIN_TOLERANCE,
   ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
@@ -745,6 +746,10 @@ export class OnlineRoomLogic {
         this.requireHost(ctx.senderId);
         if (this.phase !== 'lobby') throw new Error('Can only start from the lobby');
         if (!this.chart) throw new Error('No song selected yet');
+        // The lobby offers a lone host local mode instead; the same rule lives here too, where an
+        // out-of-date client can't skip it.
+        if (this.connectedParticipants().length < ONLINE_MIN_PLAYERS)
+          throw new Error(`Online needs at least ${ONLINE_MIN_PLAYERS} singers — sing on your own in local mode`);
         this.startReadiness();
       }),
       /** Host only: call the start off (a singer is missing, wrong song) and go back to the lobby. */
