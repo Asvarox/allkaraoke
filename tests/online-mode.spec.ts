@@ -242,7 +242,7 @@ test('Online mode: a host alone in the room is offered local mode instead of a s
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.openPreviewForSong(song.ID);
     await pages.songPreviewPage.goNext();
-    await page.getByTestId('play-song-button').click();
+    await pages.songPreviewPage.pickSongForTheRoom();
 
     await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
     await pages.onlineLobbyPage.startSongAndDismissSoloPrompt();
@@ -279,7 +279,7 @@ test('Online mode: a lone host taking local mode lands on the song the room had 
   await pages.songLanguagesPage.continueAndGoToSongList();
   await pages.songListPage.openPreviewForSong(song.ID);
   await pages.songPreviewPage.goNext();
-  await page.getByTestId('play-song-button').click();
+  await pages.songPreviewPage.pickSongForTheRoom();
   await expect(pages.onlineLobbyPage.startSongButton).toBeVisible({ timeout: 15_000 });
 
   await pages.onlineLobbyPage.startSongAndSingLocally();
