@@ -22,8 +22,8 @@
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
-    "Disturbed",
     "Ghost",
+    "Disturbed",
     "Madonna",
     "ABBA",
     "Foo Fighters",
@@ -64,6 +64,7 @@
     "Marina and the Diamonds",
     "No Doubt",
     "Panic! at the Disco",
+    "Red Hot Chili Peppers",
     "Rise Against",
     "Three Days Grace",
     "Volbeat",
@@ -72,9 +73,9 @@
     "Dua Lipa",
     "Gwen Stefani",
     "Kool & The Gang",
+    "Nightwish",
     "Olivia Rodrigo",
     "Owl City",
-    "Red Hot Chili Peppers",
     "Rod Stewart",
     "Sabaton",
     "Thirty Seconds to Mars",
@@ -104,7 +105,6 @@
     "Lorde",
     "★N Sync",
     "Nickelback",
-    "Nightwish",
     "Phil Collins",
     "Sabrina Carpenter",
     "Sean Paul",
@@ -117,6 +117,7 @@
     "Billy Talent",
     "blink-182",
     "Bryan Adams",
+    "Chris Brown",
     "Creed",
     "Earth, Wind & Fire",
     "Eminem",
@@ -129,9 +130,11 @@
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
+    "Shania Twain",
     "Shinedown",
     "Spice Girls",
     "The Offspring",
+    "Weezer",
     "Wham!",
     "ZZ Top",
     "3 Doors Down",
@@ -139,7 +142,6 @@
     "Black Sabbath",
     "Blind Guardian",
     "Cheryl Cole",
-    "Chris Brown",
     "Crowded House",
     "Daft Punk",
     "Delta Goodrem",
@@ -147,9 +149,7 @@
     "Frank Sinatra",
     "Hilary Duff",
     "Huey Lewis & The News",
-    "KoRn",
-    "Lewis Capaldi",
-    "Little Mix"
+    "KoRn"
   ],
   "languages": [
     "Armenian",
@@ -189,5 +189,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6130
+  "songs": 6160
 }

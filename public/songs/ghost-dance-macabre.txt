@@ -1,0 +1,334 @@
+#ARTIST:Ghost
+#TITLE:Dance Macabre
+#CREATOR:lukmuk
+#BPM:252,11
+#YEAR:2018
+#VIDEO:v=jH2WKb3cIfo
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:30478,536749831423
+#ALLKARAOKE_ID:ghost-dance-macabre
+#ALLKARAOKE_SID:6159
+#ALLKARAOKE_LASTUPDATE:2026-08-24T00:51:22.089Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ghost-official.com/
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=jH2WKb3cIfo&list=RDjH2WKb3cIfo&start_radio=1
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:220
+#MP3:Ghost - Dance Macabre.mp3
+: 17 2 2 You’ll 
+: 21 2 2 soon 
+: 25 2 2 be 
+: 29 2 2 hear
+: 33 2 0 ing 
+: 37 2 -2 the 
+: 40 2 2 chi
+: 43 2 0 ~
+: 46 7 2 me
+- 53
+: 64 1 2 Close 
+: 68 2 2 to 
+: 72 11 0 mid
+: 85 2 -5 night
+: 88 6 -7 ~
+- 94 128
+- 128
+: 145 2 2 If 
+: 149 2 2 I 
+: 153 2 2 could 
+: 157 2 2 turn 
+: 160 2 0 back 
+: 164 2 -2 the 
+: 168 2 2 ti
+: 171 2 0 ~
+: 174 11 2 ~me
+- 185
+: 193 1 2 I’d 
+: 196 2 2 make 
+: 200 11 2 all
+: 212 3 0 ~ 
+: 216 7 0 right
+- 223 252
+- 252
+: 269 1 3 How 
+: 272 2 3 could 
+: 276 2 3 it 
+: 280 5 2 end 
+: 288 7 -2 like 
+: 297 7 0 this?
+- 304 308
+- 308
+: 325 2 -2 There’s 
+: 329 2 0 a 
+: 333 2 2 sting 
+: 336 2 2 in 
+: 341 1 2 the 
+: 345 5 0 way 
+: 352 6 -3 you 
+: 360 13 -3 kiss 
+: 376 9 -2 me
+- 385
+: 396 2 3 Some
+: 400 2 3 thing 
+: 404 2 3 with
+: 409 6 2 in 
+: 417 6 -2 your 
+: 425 3 0 eyes
+- 428
+: 432 2 -2 Said 
+: 437 2 0 it 
+: 441 5 2 could 
+: 448 2 0 be 
+: 453 2 -2 the 
+: 457 4 2 last 
+: 464 6 0 time
+- 470
+* 480 2 7 ’Fore 
+* 484 2 7 it’s 
+* 488 6 7 o
+* 496 10 5 ver!
+- 506
+: 516 5 2 Just 
+: 524 2 5 wan
+: 529 5 7 na 
+: 536 10 7 be
+- 546
+: 549 2 2 Wan
+: 553 2 2 na 
+: 557 2 5 be
+: 561 5 7 witch 
+: 568 6 7 you 
+: 577 2 7 in 
+: 580 2 7 the 
+: 585 10 7 moon
+: 597 9 5 light
+- 606 627
+- 627
+: 644 5 2 Just 
+: 652 2 5 wan
+: 657 5 7 na 
+: 665 3 7 be
+- 668
+: 673 2 2 I 
+: 677 2 2 wan
+: 681 2 2 na 
+: 685 2 5 be
+: 688 5 7 witch 
+: 696 13 7 you 
+: 712 11 7 all 
+: 725 7 5 night
+- 732 768
+- 768
+: 785 1 2 It 
+: 789 1 2 keeps 
+: 793 1 2 on 
+: 797 2 2 giv
+: 801 2 0 ing 
+: 805 2 -2 me 
+: 809 2 2 chi
+: 812 2 0 ~
+: 815 12 2 lls
+- 827
+: 832 2 2 But 
+: 836 1 2 I 
+: 840 10 0 know 
+: 853 2 -5 now
+: 856 8 -7 ~
+- 864 895
+- 895
+: 912 1 2 I 
+: 917 2 2 feel 
+: 921 2 2 the 
+: 925 2 5 clos
+: 929 2 5 er 
+: 933 2 3 we 
+: 937 5 2 get
+- 942 944
+- 944
+: 961 2 2 To 
+: 965 2 2 the 
+: 969 10 2 last 
+: 984 6 0 vo
+: 992 9 2 ~w
+- 1001 1016
+- 1016
+: 1033 2 0 I 
+: 1037 2 3 don’t 
+: 1041 2 3 wan
+: 1045 2 3 na 
+: 1049 6 2 end 
+: 1057 5 -2 like 
+: 1065 10 0 this
+- 1075 1076
+- 1076
+: 1093 2 -2 But 
+: 1097 2 0 the 
+: 1101 2 2 sting 
+: 1105 2 2 in 
+: 1109 2 2 the 
+: 1113 6 0 way 
+: 1121 5 -3 you 
+: 1129 13 -3 kiss 
+: 1144 12 -2 me
+- 1156
+: 1164 2 3 Some
+: 1169 2 3 thing 
+: 1173 2 3 with
+: 1177 5 2 in 
+: 1185 6 -2 your 
+: 1193 6 0 eyes
+- 1199
+: 1201 1 -2 Said 
+: 1205 1 0 it 
+: 1209 5 2 could 
+: 1217 2 0 be 
+: 1221 2 -2 the 
+: 1225 5 2 last 
+: 1232 8 0 time
+- 1240
+: 1248 2 7 ’Fore 
+: 1253 2 7 it’s 
+: 1257 5 7 o
+: 1265 9 5 ver!
+- 1274
+: 1284 5 2 Just 
+: 1292 2 5 wan
+: 1297 6 7 na 
+: 1305 8 7 be
+- 1313
+: 1317 2 2 Wan
+: 1321 2 2 na 
+: 1325 2 5 be
+: 1329 5 7 witch 
+: 1337 6 7 you 
+: 1345 1 7 in 
+: 1349 2 7 the 
+: 1353 10 7 moon
+: 1366 8 5 light
+- 1374 1395
+- 1395
+: 1412 5 2 Just 
+: 1421 2 5 wan
+: 1425 6 7 na 
+: 1433 6 7 be
+- 1439
+: 1441 1 2 I 
+: 1445 2 2 wan
+: 1449 2 2 na 
+: 1453 1 5 be
+: 1457 6 7 witch 
+: 1465 12 7 you 
+: 1480 11 7 all 
+: 1493 8 5 night
+- 1501 1524
+- 1524
+: 1541 4 -2 Just 
+: 1548 2 2 wan
+: 1553 6 3 na 
+: 1561 5 3 be
+- 1566
+: 1569 2 -2 I 
+: 1573 2 -2 wan
+: 1578 1 -2 na 
+: 1581 2 2 be
+: 1585 5 3 witch 
+: 1593 15 3 you
+- 1608
+* 1612 5 2 One 
+* 1621 6 2 last 
+* 1629 5 2 time 
+* 1637 2 2 in 
+* 1640 2 2 the 
+* 1645 3 2 an
+* 1649 2 5 cient 
+* 1653 12 5 rhyme
+- 1665
+: 1668 5 2 Just 
+: 1677 2 5 wan
+: 1681 5 7 na 
+: 1689 6 7 be
+- 1695
+: 1697 2 2 I 
+: 1702 1 2 wan
+: 1705 2 2 na 
+: 1709 1 5 be
+: 1713 5 7 witch 
+: 1721 13 7 you 
+: 1737 11 7 all 
+: 1750 7 5 night
+- 1757 2292
+- 2292
+: 2309 5 2 Just 
+: 2317 2 5 wan
+: 2321 6 7 na 
+: 2330 9 7 be
+- 2339
+: 2342 1 2 Wan
+: 2346 2 2 na 
+: 2350 1 5 be
+: 2353 5 7 witch 
+: 2361 6 7 you 
+: 2370 1 7 in 
+: 2374 1 7 the 
+: 2378 9 7 moon
+: 2390 7 5 light
+- 2397 2420
+- 2420
+: 2437 2 2 Just 
+: 2444 2 5 wan
+: 2449 5 7 na 
+: 2457 10 7 be
+- 2467
+: 2469 2 2 Wan
+: 2473 1 2 na 
+: 2478 1 5 be
+: 2482 5 7 witch 
+: 2489 12 7 you 
+: 2504 11 7 all 
+: 2518 9 5 night
+- 2527 2548
+- 2548
+: 2565 5 2 Just 
+: 2574 1 5 wan
+: 2578 6 7 na 
+: 2586 7 7 be
+- 2593
+: 2597 1 2 Wan
+: 2601 1 2 na 
+: 2606 1 5 be
+: 2610 5 7 witch 
+: 2617 6 7 you 
+: 2627 1 7 in 
+: 2630 1 7 the 
+: 2634 9 7 moon
+: 2646 6 5 light
+- 2652 2676
+- 2676
+: 2693 5 2 Just 
+: 2701 2 5 wan
+: 2706 5 7 na 
+: 2714 6 7 be
+- 2720
+: 2721 2 2 I 
+: 2726 1 2 wan
+: 2729 1 2 na 
+: 2733 1 5 be
+: 2737 5 7 witch 
+: 2746 12 7 you 
+: 2761 10 7 all 
+: 2773 16 5 night
+- 2789
+: 2793 12 7 All 
+: 2806 13 5 ri
+: 2821 7 2 ~
+* 2829 41 7 ~ght!
+- 2870
+* 2878 2 10 Wo
+* 2882 2 9 ho 
+* 2886 2 9 wo
+* 2890 2 7 ho 
+* 2894 2 7 wo
+* 2898 2 5 ho, 
+* 2902 25 5 wohh!
+E

@@ -5765,6 +5765,34 @@
     "local": false
   },
   {
+    "id": "alain-bashung-gaby-oh-gaby",
+    "title": "Gaby oh Gaby",
+    "artist": "Alain Bashung",
+    "video": "KgLsxmqlEQc",
+    "language": [
+      "French"
+    ],
+    "bpm": 383.8,
+    "gap": 15743.845752996353,
+    "year": "1980",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-08-24T00:50:37.903Z",
+    "realBpm": 383.8,
+    "volume": 1,
+    "sourceUrl": "https://www.youtube.com/watch?v=KgLsxmqlEQc",
+    "duration": 236,
+    "tracks": [
+      {
+        "name": "Alain Bashung - Gaby oh Gaby",
+        "start": 26
+      }
+    ],
+    "shortId": 6142,
+    "tracksCount": 1,
+    "search": "alainbashunggabyohgaby",
+    "local": false
+  },
+  {
     "id": "alan-jackson-good-time",
     "title": "Good Time",
     "artist": "Alan Jackson",
@@ -8972,6 +9000,36 @@
     "local": false
   },
   {
+    "id": "amii-stewart-knock-on-wood",
+    "title": "Knock On Wood",
+    "artist": "Amii Stewart",
+    "video": "HAbq_qkzFR0",
+    "language": [
+      "English"
+    ],
+    "bpm": 287.73,
+    "gap": 32849.488061724536,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:34.079Z",
+    "genre": "Pop",
+    "realBpm": 141,
+    "previewStart": 30,
+    "previewEnd": 218,
+    "volume": 1,
+    "author": "asb",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6137,
+    "tracksCount": 1,
+    "search": "amiistewartknockonwood",
+    "local": false
+  },
+  {
     "id": "amor-electro-so-e-fogo-se-queimar",
     "title": "Só é fogo se queimar",
     "artist": "Amor Electro",
@@ -9926,6 +9984,34 @@
     "shortId": 265,
     "tracksCount": 1,
     "search": "anggunechoyouandi",
+    "local": false
+  },
+  {
+    "id": "angra-nothing-to-say",
+    "title": "Nothing To Say",
+    "artist": "Angra",
+    "video": "GcdFH6pAUPs",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 56721.739130434784,
+    "year": "1996",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-08-24T00:50:38.817Z",
+    "genre": "Heavy Metal",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "Leo 21",
+    "duration": 383,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6149,
+    "tracksCount": 1,
+    "search": "angranothingtosay",
     "local": false
   },
   {
@@ -27048,6 +27134,34 @@
     "local": false
   },
   {
+    "id": "britney-spears-from-the-bottom-of-my-broken-heart",
+    "title": "From The Bottom Of My Broken Heart",
+    "artist": "Britney Spears",
+    "video": "3KWYn0Zf-Jw",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 2970,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:34.068Z",
+    "genre": "Pop",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "jocke1974, michas17j",
+    "duration": 314,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6133,
+    "tracksCount": 1,
+    "search": "britneyspearsfromthebottomofmybrokenheart",
+    "local": false
+  },
+  {
     "id": "britney-spears-gimme-more",
     "title": "Gimme More",
     "artist": "Britney Spears",
@@ -34693,6 +34807,34 @@
     "shortId": 944,
     "tracksCount": 1,
     "search": "chrisbrownfeatrihannaturnupthemusicremix",
+    "local": false
+  },
+  {
+    "id": "chris-brown-fine-china",
+    "title": "Fine China",
+    "artist": "Chris Brown",
+    "video": "iGs1gODLiSQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.92,
+    "gap": 85531.25756556826,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:51:22.093Z",
+    "genre": "R&B",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 377,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6160,
+    "tracksCount": 1,
+    "search": "chrisbrownfinechina",
     "local": false
   },
   {
@@ -45863,6 +46005,34 @@
     "local": false
   },
   {
+    "id": "disneys-encanto-nao-falamos-do-bruno",
+    "title": "Não Falamos do Bruno",
+    "artist": "Disney’s Encanto",
+    "video": "dWcrZv5p7Jg",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 412.0500000000001,
+    "gap": 5405.915441623132,
+    "year": "2021",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-08-24T00:50:38.818Z",
+    "realBpm": 3,
+    "volume": 1,
+    "author": "wildnight",
+    "sourceUrl": "https://youtu.be/dWcrZv5p7Jg?si=dqBYYsgzY7rAf3pg",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6150,
+    "tracksCount": 1,
+    "search": "disneysencantonaofalamosdobruno",
+    "local": false
+  },
+  {
     "id": "disneys-encanto-no-se-habla-de-bruno",
     "title": "No se habla de Bruno",
     "artist": "Disney’s Encanto",
@@ -55471,6 +55641,34 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-anna-lea-casey-the-challenge",
+    "title": "The Challenge",
+    "artist": "EPIC: The Musical (Anna Lea Casey)",
+    "video": "Ke3Igp5CbQQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.22,
+    "gap": 15220.059949273691,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:37.897Z",
+    "genre": "Musical",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Mircosoft93",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6140,
+    "tracksCount": 1,
+    "search": "epicthemusicalannaleacaseythechallenge",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-anna-lea-casey-would-you-fall-in-love-with-me-again",
     "title": "Would You Fall In Love With Me Again",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Anna Lea Casey)",
@@ -55525,6 +55723,60 @@
     "shortId": 6058,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransarmandojuliantalyasindelpuppeteer",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-barbara-wangui-love-in-paradise",
+    "title": "Love in Paradise",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Barbara Wangui)",
+    "video": "XpSqmQoxhFE",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 7747.5,
+    "year": "2024",
+    "lastUpdate": "2026-08-24T00:51:03.268Z",
+    "genre": "Musical",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6158,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransbarbarawanguiloveinparadise",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-polyphemus",
+    "title": "Polyphemus",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+    "video": "kKgwQy30R-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 7917.5,
+    "year": "2024",
+    "lastUpdate": "2026-08-24T00:50:40.543Z",
+    "genre": "Musical",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6156,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranscastofepicpolyphemus",
     "local": false
   },
   {
@@ -63513,6 +63765,33 @@
     "local": false
   },
   {
+    "id": "george-ezra-paradise",
+    "title": "Paradise",
+    "artist": "George Ezra",
+    "video": "XOwihbur34E",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 17821.739130434784,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-24T00:50:34.072Z",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "choosie",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6134,
+    "tracksCount": 1,
+    "search": "georgeezraparadise",
+    "local": false
+  },
+  {
     "id": "george-ezra-shotgun",
     "title": "Shotgun",
     "artist": "George Ezra",
@@ -64160,6 +64439,36 @@
     "shortId": 1729,
     "tracksCount": 1,
     "search": "ghostcirice",
+    "local": false
+  },
+  {
+    "id": "ghost-dance-macabre",
+    "title": "Dance Macabre",
+    "artist": "Ghost",
+    "video": "jH2WKb3cIfo",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.11,
+    "gap": 30478.536749831423,
+    "year": "2018",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-08-24T00:51:22.089Z",
+    "genre": "Metal",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "lukmuk",
+    "authorUrl": "https://ghost-official.com/",
+    "sourceUrl": "https://www.youtube.com/watch?v=jH2WKb3cIfo&list=RDjH2WKb3cIfo&start_radio=1",
+    "duration": 220,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6159,
+    "tracksCount": 1,
+    "search": "ghostdancemacabre",
     "local": false
   },
   {
@@ -71073,6 +71382,34 @@
     "local": false
   },
   {
+    "id": "hannah-montana-ill-always-remember-you",
+    "title": "I’ll Always Remember You",
+    "artist": "Hannah Montana",
+    "video": "ngl-Hk1qOI4",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.02,
+    "gap": 9380.485382959516,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:37.687Z",
+    "genre": "Soundtrack",
+    "realBpm": 72,
+    "volume": 1,
+    "author": "Coppolatte",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6139,
+    "tracksCount": 1,
+    "search": "hannahmontanaillalwaysrememberyou",
+    "local": false
+  },
+  {
     "id": "hans-albers-auf-der-reeperbahn-nachts-um-halb-eins",
     "title": "Auf der Reeperbahn nachts um halb eins",
     "artist": "Hans Albers",
@@ -72109,6 +72446,34 @@
     "shortId": 1890,
     "tracksCount": 1,
     "search": "herabjoerkjenesaisquoi",
+    "local": false
+  },
+  {
+    "id": "herbert-groenemeyer-maenner",
+    "title": "Männer",
+    "artist": "Herbert Grönemeyer",
+    "video": "UEJNMkEr1Ls",
+    "language": [
+      "German"
+    ],
+    "bpm": 375,
+    "gap": 6370,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-24T00:51:22.095Z",
+    "genre": "Synth-Pop, New Wave, Rock",
+    "realBpm": 187,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6161,
+    "tracksCount": 1,
+    "search": "herbertgroenemeyermaenner",
     "local": false
   },
   {
@@ -83660,6 +84025,34 @@
     "local": false
   },
   {
+    "id": "jose-gonzalez-crosses",
+    "title": "Crosses",
+    "artist": "José González",
+    "video": "4nC8WjPFnGU",
+    "language": [
+      "English"
+    ],
+    "bpm": 362.72,
+    "gap": 16607.498897220998,
+    "year": "2003",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-08-24T00:50:40.273Z",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=4nC8WjPFnGU",
+    "duration": 164,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6154,
+    "tracksCount": 1,
+    "search": "josegonzalezcrosses",
+    "local": false
+  },
+  {
     "id": "jose-jose-almohada",
     "title": "Almohada",
     "artist": "Jose  Jose",
@@ -86983,6 +87376,33 @@
     "shortId": 2282,
     "tracksCount": 1,
     "search": "kardinaloffishallfeatakondangerous",
+    "local": false
+  },
+  {
+    "id": "karel-gott-babicka",
+    "title": "Babička",
+    "artist": "Karel Gott",
+    "video": "Wd04hs_1rkg",
+    "language": [
+      "German"
+    ],
+    "bpm": 215.34,
+    "gap": 14265.2506498329,
+    "year": "1979",
+    "artistOrigin": "CZ",
+    "lastUpdate": "2026-08-24T00:50:38.821Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "MasterChristian",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6152,
+    "tracksCount": 1,
+    "search": "karelgottbabicka",
     "local": false
   },
   {
@@ -95584,6 +96004,36 @@
     "local": false
   },
   {
+    "id": "lady-gaga-mary-jane-holland",
+    "title": "Mary Jane Holland",
+    "artist": "Lady Gaga",
+    "video": "1rRFfI5Q1PE",
+    "language": [
+      "English"
+    ],
+    "bpm": 203.98,
+    "gap": 8214.023923914108,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:38.804Z",
+    "genre": "Pop",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "Coppolatte",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23748",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=17210",
+    "duration": 278,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6145,
+    "tracksCount": 1,
+    "search": "ladygagamaryjaneholland",
+    "local": false
+  },
+  {
     "id": "lady-gaga-monster",
     "title": "Monster",
     "artist": "Lady Gaga",
@@ -101253,6 +101703,35 @@
     "local": false
   },
   {
+    "id": "london-grammar-strong",
+    "title": "Strong",
+    "artist": "London Grammar",
+    "video": "6drfp_3823I",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.5,
+    "gap": 14582.375296912114,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-24T00:50:38.819Z",
+    "genre": "Pop",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "London Grammar",
+    "sourceUrl": "https://youtu.be/6drfp_3823I?si=SXoXQA_Zqi5yK4xq",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6151,
+    "tracksCount": 1,
+    "search": "londongrammarstrong",
+    "local": false
+  },
+  {
     "id": "londonbeat-you-bring-on-the-sun",
     "title": "You Bring On The Sun",
     "artist": "LondonBeat",
@@ -101762,6 +102241,36 @@
     "shortId": 2644,
     "tracksCount": 1,
     "search": "losangelesazulescomotevoyaolvidar",
+    "local": false
+  },
+  {
+    "id": "los-autenticos-decadentes-pendeviejo",
+    "title": "Pendeviejo",
+    "artist": "Los Auténticos Decadentes",
+    "video": "XbpAse62bA8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.09,
+    "gap": 45.629567921803755,
+    "year": "2003",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-24T00:50:38.823Z",
+    "genre": "Rock",
+    "realBpm": 270.09,
+    "volume": 1,
+    "author": "Brunoms86",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=brunoms86",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Aut%C3%A9nticos%20Decadentes&cancion=Pendeviejo",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 6153,
+    "tracksCount": 1,
+    "search": "losautenticosdecadentespendeviejo",
     "local": false
   },
   {
@@ -102296,6 +102805,36 @@
     "local": false
   },
   {
+    "id": "los-tipitos-se-te-nota",
+    "title": "Se te nota",
+    "artist": "Los Tipitos",
+    "video": "642fR7qxlP0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 269.73,
+    "gap": 21417.998998999,
+    "year": "2010",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-24T00:50:37.900Z",
+    "genre": "Rock",
+    "realBpm": 269.73,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Tipitos&cancion=Se%20te%20nota",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6141,
+    "tracksCount": 1,
+    "search": "lostipitossetenota",
+    "local": false
+  },
+  {
     "id": "los-totora-marchate-ahora",
     "title": "Márchate ahora",
     "artist": "Los Totora",
@@ -102821,6 +103360,33 @@
     "shortId": 2665,
     "tracksCount": 1,
     "search": "luisenriqueyonosemanana",
+    "local": false
+  },
+  {
+    "id": "luis-fonsi-daddy-yankee-feat-justin-bieber-despacito-remix",
+    "title": "Despacito (Remix)",
+    "artist": "Luis Fonsi & Daddy Yankee feat. Justin Bieber",
+    "video": "zoYgCg6i9C8",
+    "language": [
+      "Spanish",
+      "English"
+    ],
+    "bpm": 356,
+    "gap": 30668.76404494382,
+    "year": "2017",
+    "lastUpdate": "2026-08-24T00:50:40.845Z",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "blewmaxx",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6157,
+    "tracksCount": 1,
+    "search": "luisfonsidaddyyankeefeatjustinbieberdespacitoremix",
     "local": false
   },
   {
@@ -105374,6 +105940,34 @@
     "shortId": 2744,
     "tracksCount": 1,
     "search": "malumahp",
+    "local": false
+  },
+  {
+    "id": "mama-cass-elliot-make-your-own-kind-of-music",
+    "title": "Make Your Own Kind Of Music",
+    "artist": "Mama Cass Elliot",
+    "video": "iQ7dTMPwUi8",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.35,
+    "gap": 8019.696719620384,
+    "year": "1969",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:38.418Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://www.youtube.com/watch?v=iQ7dTMPwUi8",
+    "duration": 140,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6143,
+    "tracksCount": 1,
+    "search": "mamacasselliotmakeyourownkindofmusic",
     "local": false
   },
   {
@@ -115375,6 +115969,33 @@
     "local": false
   },
   {
+    "id": "mk-dior",
+    "title": "Dior",
+    "artist": "MK",
+    "video": "qXnqZo03PHY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 435.8125,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-24T00:50:38.801Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Purpleurple",
+    "duration": 170,
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "shortId": 6144,
+    "tracksCount": 1,
+    "search": "mkdior",
+    "local": false
+  },
+  {
     "id": "mo-dao-zu-shi-wangxian",
     "title": "WangXian",
     "artist": "Mo Dao Zu Shi",
@@ -121756,6 +122377,65 @@
     "shortId": 3221,
     "tracksCount": 1,
     "search": "nightwishfishmasterwishmastermisheardlyrics",
+    "local": false
+  },
+  {
+    "id": "nightwish-last-ride-of-the-day",
+    "title": "Last Ride Of The Day",
+    "artist": "Nightwish",
+    "video": "ukDEYRXoH2g",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 35031.48148148148,
+    "year": "2011",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-24T00:50:38.815Z",
+    "realBpm": 161,
+    "volume": 1,
+    "author": "Amoebius",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14354",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13424",
+    "duration": 273,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6148,
+    "tracksCount": 1,
+    "search": "nightwishlastrideoftheday",
+    "local": false
+  },
+  {
+    "id": "nightwish-planet-hell",
+    "title": "Planet Hell",
+    "artist": "Nightwish",
+    "video": "Ce71ToVVxts",
+    "language": [
+      "English"
+    ],
+    "bpm": 291.95,
+    "gap": 48.62133927042302,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-24T00:50:38.808Z",
+    "genre": "Metal",
+    "realBpm": 146,
+    "volume": 1,
+    "author": "jalaat73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=94013",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16585",
+    "duration": 279,
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 6146,
+    "tracksCount": 1,
+    "search": "nightwishplanethell",
     "local": false
   },
   {
@@ -132442,6 +133122,33 @@
     "local": false
   },
   {
+    "id": "provinz-glaubst-du",
+    "title": "glaubst du",
+    "artist": "Provinz",
+    "video": "JqOVnlXYgtk",
+    "language": [
+      "German"
+    ],
+    "bpm": 273,
+    "gap": 1240.9890109890111,
+    "year": "2024",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-24T00:50:40.541Z",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "DS",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6155,
+    "tracksCount": 1,
+    "search": "provinzglaubstdu",
+    "local": false
+  },
+  {
     "id": "provinz-pazifik",
     "title": "Pazifik",
     "artist": "Provinz",
@@ -135688,6 +136395,36 @@
     "shortId": 3603,
     "tracksCount": 1,
     "search": "redhotchilipeppersdanicalifornia",
+    "local": false
+  },
+  {
+    "id": "red-hot-chili-peppers-dosed",
+    "title": "Dosed",
+    "artist": "Red Hot Chili Peppers",
+    "video": "WeMXdaId60U",
+    "language": [
+      "English"
+    ],
+    "bpm": 207.72,
+    "gap": 18489.02368573079,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:38.813Z",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "choosie",
+    "duration": 312,
+    "tracks": [
+      {
+        "start": 14
+      },
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6147,
+    "tracksCount": 2,
+    "search": "redhotchilipeppersdosed",
     "local": false
   },
   {
@@ -144079,6 +144816,34 @@
     "local": false
   },
   {
+    "id": "seeed-ding",
+    "title": "Ding",
+    "artist": "Seeed",
+    "video": "_yWU0lFghxU",
+    "language": [
+      "German",
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 12774.358974358975,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-24T00:50:37.684Z",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "mk90",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6138,
+    "tracksCount": 1,
+    "search": "seeedding",
+    "local": false
+  },
+  {
     "id": "seeed-feat-cee-lo-green-aufstehn",
     "title": "Aufstehn!",
     "artist": "Seeed feat. Cee-Lo Green",
@@ -146212,6 +146977,34 @@
     "shortId": 3900,
     "tracksCount": 1,
     "search": "shakirayozunamonotonia",
+    "local": false
+  },
+  {
+    "id": "shania-twain-any-man-of-mine",
+    "title": "Any Man Of Mine",
+    "artist": "Shania Twain",
+    "video": "8N2k-gv6xNE",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 19730.384615384617,
+    "year": "1995",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-08-24T00:50:34.058Z",
+    "genre": "Country-Pop",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "anthem_1",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6132,
+    "tracksCount": 1,
+    "search": "shaniatwainanymanofmine",
     "local": false
   },
   {
@@ -165560,6 +166353,36 @@
     "local": false
   },
   {
+    "id": "the-smiths-how-soon-is-now",
+    "title": "How Soon Is Now?",
+    "artist": "The Smiths",
+    "video": "hnpILIIo9ek",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.5,
+    "gap": 18354.454664914585,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-24T00:50:34.074Z",
+    "realBpm": 95,
+    "previewStart": 40,
+    "previewEnd": 65,
+    "volume": 1,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=hnpILIIo9ek",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6135,
+    "tracksCount": 1,
+    "search": "thesmithshowsoonisnow",
+    "local": false
+  },
+  {
     "id": "the-smiths-please-please-please-let-me-get-what-i-want",
     "title": "Please, Please, Please, Let Me Get What I Want",
     "artist": "The Smiths",
@@ -175722,6 +176545,37 @@
     "shortId": 4679,
     "tracksCount": 1,
     "search": "weezerbuddyholly",
+    "local": false
+  },
+  {
+    "id": "weezer-no-other-one",
+    "title": "No Other One",
+    "artist": "Weezer",
+    "video": "F8VwP5OvJ3o",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 25940,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-24T00:50:34.075Z",
+    "genre": "Alternative Rock",
+    "realBpm": 100,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "krasserdude",
+    "sourceUrl": "https://www.youtube.com/watch?v=F8VwP5OvJ3o&list=RDF8VwP5OvJ3o&start_radio=1",
+    "duration": 182,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6136,
+    "tracksCount": 1,
+    "search": "weezernootherone",
     "local": false
   },
   {
