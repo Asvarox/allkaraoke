@@ -1,0 +1,259 @@
+#ARTIST:Weezer
+#TITLE:No Other One
+#CREATOR:krasserdude
+#BPM:240
+#YEAR:1996
+#PREVIEWSTART:60
+#VIDEO:v=F8VwP5OvJ3o
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:25940
+#ALLKARAOKE_ID:weezer-no-other-one
+#ALLKARAOKE_SID:6136
+#ALLKARAOKE_LASTUPDATE:2026-08-24T00:50:34.075Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=F8VwP5OvJ3o&list=RDF8VwP5OvJ3o&start_radio=1
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:182
+#MP3:Weezer - No Other One.mp3
+: 16 9 5 My 
+: 26 3 3 gi
+: 30 4 5 ~rl’s 
+: 36 7 0 a 
+: 44 3 0 li
+: 48 5 -2 ~
+: 54 10 -2 ar
+- 64
+: 68 4 -4 But 
+: 74 6 5 I 
+: 81 14 3 stand 
+: 96 3 3 be
+: 100 3 1 si
+: 104 7 0 ~de 
+: 112 10 -4 her
+- 122
+: 132 7 5 She’s 
+: 140 3 3 all 
+: 144 4 5 I’ve 
+: 150 4 0 got 
+: 160 9 0 and 
+: 170 7 -2 I 
+: 178 8 -4 don’t 
+: 188 9 0 wan
+: 198 9 -5 na 
+: 208 3 -5 be 
+: 212 3 -4 a
+: 216 22 -7 lone
+- 238
+: 245 9 5 My 
+: 255 3 3 gi
+: 259 4 5 ~rl 
+: 264 9 0 don’t 
+: 274 3 0 see
+: 278 4 -2 ~ 
+: 284 10 -2 me
+- 294
+: 298 3 -4 When 
+: 302 7 5 she’s 
+: 312 9 3 with 
+: 322 3 0 my
+: 326 3 -2 ~ 
+: 331 14 -4 friends
+- 345
+: 360 9 5 She’s 
+: 370 3 3 all 
+: 374 4 5 I’ve 
+: 379 4 0 got 
+: 390 8 0 and 
+: 399 8 -2 I 
+: 408 9 -4 don’t 
+: 418 8 0 wan
+: 427 9 -5 na 
+: 438 3 -5 be 
+: 442 3 -4 a
+: 446 20 -7 lone
+- 466
+: 475 8 8 No, 
+: 484 9 0 there 
+: 494 4 1 is 
+: 499 4 0 no 
+: 504 3 0 o
+: 508 4 -2 ther 
+: 513 10 -2 one
+- 523
+: 533 9 7 No, 
+: 543 7 -2 there 
+: 552 4 0 is 
+: 557 4 -2 no 
+: 562 3 -2 o
+: 566 4 -4 ther 
+: 571 8 -4 one
+- 579
+: 587 4 3 I 
+: 592 8 8 can’t 
+: 601 9 0 have 
+: 611 4 1 a
+: 616 4 0 ny 
+: 621 3 0 o
+: 625 3 -2 ther 
+: 630 6 -2 one
+- 636
+: 639 4 -2 Though 
+: 644 5 0 I 
+: 650 8 3 would, 
+: 659 4 3 now 
+: 664 4 5 I 
+: 669 3 3 ne
+: 673 3 1 ver 
+: 678 4 1 could 
+: 683 3 0 with 
+: 687 20 0 one
+- 707 921
+- 921
+: 937 7 5 All 
+: 945 3 3 of 
+: 949 3 5 the 
+: 953 9 0 drugs 
+: 963 3 0 she
+: 967 5 -2 ~ 
+: 973 10 -2 does
+- 983
+: 993 9 5 Scare 
+: 1003 7 3 me 
+: 1011 3 0 rea
+: 1015 5 -2 ~l 
+: 1021 18 -4 good
+- 1039
+: 1049 9 5 She’s 
+: 1059 3 3 got 
+: 1063 4 5 a 
+: 1069 7 0 tat
+: 1077 9 0 too
+: 1087 9 -2 ~ 
+: 1097 7 -4 and 
+: 1105 10 0 two 
+: 1125 3 -5 pe
+: 1129 3 -4 ~t 
+: 1133 20 -7 snakes
+- 1153
+: 1161 9 5 No
+: 1171 3 3 bo
+: 1175 4 5 dy 
+: 1181 8 0 knows 
+: 1191 7 0 me 
+: 1199 9 -2 like 
+: 1209 7 -4 her
+- 1216
+: 1219 9 5 No
+: 1229 3 3 bo
+: 1233 3 5 dy 
+: 1237 9 0 knows 
+: 1247 9 0 her 
+: 1257 3 -2 like 
+: 1261 4 -4 me
+- 1265
+: 1275 9 5 We’re 
+: 1285 3 3 all 
+: 1289 3 5 we’ve 
+: 1293 4 0 got 
+: 1303 7 0 and 
+: 1311 9 -2 we 
+: 1321 7 -4 don’t 
+: 1329 9 0 wan
+: 1339 9 -5 na 
+: 1349 3 -5 be 
+: 1353 3 -4 a
+: 1357 22 -7 lone
+- 1379
+: 1385 9 8 No, 
+: 1395 7 0 there 
+: 1403 5 1 is 
+: 1409 3 0 no 
+: 1413 3 0 o
+: 1417 3 -2 ther 
+: 1421 10 -2 one
+- 1431
+: 1441 9 7 No, 
+: 1451 9 -2 there 
+: 1461 3 0 is 
+: 1465 3 -2 no 
+: 1469 3 -2 o
+: 1473 3 -4 ther 
+: 1477 10 -4 one
+- 1487
+: 1495 1 3 I 
+: 1497 9 12 can’t 
+: 1507 9 0 have 
+: 1517 3 1 a
+: 1521 4 3 ny 
+: 1527 3 0 o
+: 1531 3 -2 ther 
+: 1535 6 -2 one
+- 1541
+: 1545 5 -2 Though 
+: 1551 3 0 I 
+: 1555 9 3 would, 
+: 1565 3 3 now 
+: 1569 5 5 I 
+: 1575 3 3 ne
+: 1579 3 1 ver 
+: 1583 4 1 could 
+: 1589 3 0 with 
+: 1593 7 0 one
+- 1600
+: 1603 7 8 Oh 
+: 1611 9 8 who
+: 1621 9 6 ~
+: 1631 9 3 ~ 
+: 1641 9 3 hoo
+: 1651 9 1 ~
+: 1661 7 -1 ~ 
+: 1669 10 -1 aah
+- 1679 1815
+- 1815
+: 1831 1 6 Oh
+: 1833 3 8 ~ 
+: 1837 9 8 no 
+: 1847 9 0 there 
+: 1857 3 1 is 
+: 1861 3 0 no
+: 1865 5 0 o 
+: 1871 3 -2 ther 
+: 1875 10 -2 one
+- 1885
+: 1895 7 7 No, 
+: 1903 9 8 there 
+: 1913 3 7 is 
+: 1917 3 5 no 
+: 1921 5 5 o
+: 1927 3 3 ther 
+: 1931 1 3 one
+: 1933 1 1 ~
+: 1935 3 0 ~
+: 1939 3 0 ~
+- 1942
+: 1945 3 0 I 
+: 1949 9 8 won’t 
+: 1959 9 8 have 
+: 1969 3 7 a
+: 1973 4 7 ny 
+: 1979 3 3 o
+: 1983 3 3 ther 
+: 1987 7 1 one-
+- 1994
+: 1997 3 0 Though 
+: 2001 3 1 I 
+: 2005 9 3 would, 
+: 2015 3 3 now 
+: 2019 5 5 I 
+: 2025 3 3 ne
+: 2029 5 1 ver 
+: 2035 3 1 could 
+: 2039 3 0 with 
+: 2043 19 0 one
+: 2063 43 0 ~
+: 2107 7 -2 ~
+: 2115 10 -4 ~
+E
