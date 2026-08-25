@@ -1,0 +1,334 @@
+#ARTIST:Millencolin
+#TITLE:No Cigar
+#CREATOR:Becks82
+#BPM:320
+#YEAR:1999
+#VIDEO:v=bPVo98xA8Sw
+#LANGUAGE:English
+#GAP:18985,625
+#ALLKARAOKE_ID:millencolin-no-cigar
+#ALLKARAOKE_SID:6163
+#ALLKARAOKE_LASTUPDATE:2026-08-25T00:50:21.343Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:158
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=4790
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:167
+#MP3:Millencolin - No Cigar.mp3
+: 21 3 8 Tell 
+: 25 3 8 us 
+: 29 3 6 where 
+: 33 3 4 you’re 
+: 37 8 4 from
+- 45
+: 49 3 4 What 
+: 53 3 8 you 
+: 57 3 8 want 
+: 61 3 6 to 
+: 65 11 4 become
+- 76
+: 77 3 4 And 
+: 81 3 4 we’ll 
+: 85 4 4 say 
+: 91 3 4 if 
+: 95 1 4 you
+: 97 1 6 ’re 
+: 99 7 4 O
+: 107 10 1 K
+- 117 124
+- 124
+: 145 3 1 Where 
+: 149 3 8 did 
+: 153 3 8 you 
+: 157 3 6 go 
+: 161 2 4 to 
+: 165 8 4 school?
+- 173
+: 177 5 4 Right 
+: 183 5 8 answer 
+: 189 3 8 and 
+: 193 7 8 you’re 
+: 201 5 4 co
+: 207 6 1 ol
+- 213
+: 225 3 6 Yeah, 
+: 229 3 6 you’re 
+: 233 3 6 the 
+: 237 3 6 kid 
+: 241 3 8 the 
+: 245 7 8 whole 
+: 253 3 9 d
+: 257 8 8 ay
+- 265
+: 267 3 1 You 
+: 271 2 1 get 
+: 275 2 1 a 
+: 279 7 8 sticker 
+: 287 3 6 in 
+: 291 1 4 your 
+: 293 8 4 face
+- 301
+: 303 7 1 Informa
+: 311 6 8 tion 
+: 321 1 8 ab
+: 323 1 6 out 
+: 325 1 4 the 
+: 327 5 4 case
+- 332
+: 333 5 4 So 
+: 339 3 4 you 
+: 343 3 4 know 
+: 347 5 4 your 
+: 353 3 6 po
+: 357 5 4 ten
+: 363 16 1 tial
+- 379 382
+- 382
+: 403 3 1 Don’t 
+: 407 5 8 think 
+: 413 3 8 you 
+: 417 3 6 can 
+: 421 8 4 extend
+- 429
+: 437 3 4 Don’t 
+: 441 3 8 think 
+: 445 3 8 you 
+: 449 3 6 can 
+: 453 3 8 ex
+: 457 5 9 tend, 
+: 463 5 8 just 
+: 469 5 6 co
+: 475 5 8 mp
+: 481 1 4 re
+: 483 10 1 hend
+- 493
+: 501 3 4 But 
+: 505 3 4 I 
+: 509 3 4 don’t 
+: 513 8 4 wanna 
+: 523 5 6 hear 
+: 529 15 4 i
+: 545 12 1 t
+- 557 558
+- 558
+: 579 3 -1 No, 
+: 583 3 -1 it’s 
+: 587 5 9 more 
+: 593 7 8 than 
+: 601 5 6 I 
+: 607 7 8 acc
+: 615 15 4 ept
+- 630
+: 631 5 4 ’Cause 
+: 637 3 4 I 
+: 641 7 9 don’t 
+: 649 19 8 care 
+: 669 11 4 where 
+: 681 7 6 I 
+: 689 15 8 belong 
+: 705 7 6 no 
+* 713 36 4 more
+- 749
+: 767 5 4 What 
+: 773 5 8 we 
+: 779 16 8 share 
+: 797 11 4 or 
+: 809 7 6 not 
+: 817 7 8 I 
+: 825 7 6 will 
+* 833 45 4 ig
+* 879 8 1 nore
+- 887
+: 891 3 4 I 
+: 895 3 8 will 
+: 899 22 8 ignore
+- 921 1164
+- 1164
+: 1185 5 8 We 
+: 1191 2 8 will 
+: 1195 3 6 shut 
+: 1199 3 4 you 
+: 1203 12 4 out
+- 1215
+: 1217 3 8 We’ll 
+: 1221 5 8 put 
+: 1227 3 6 you 
+: 1231 5 4 in 
+: 1237 7 4 doubt
+- 1244
+: 1245 3 4 If 
+: 1249 3 4 you 
+: 1253 3 4 think 
+: 1257 3 4 that 
+: 1261 1 4 you’re 
+: 1263 9 6 spe
+: 1273 7 4 ci
+: 1281 8 1 al
+- 1289 1292
+- 1292
+: 1313 3 1 We’ll 
+: 1317 5 8 tell 
+: 1323 5 8 you 
+: 1329 1 6 who 
+: 1331 3 4 you 
+: 1335 6 4 are
+- 1341
+: 1345 3 4 We’ll 
+: 1349 3 8 tell 
+: 1353 4 8 you 
+: 1359 3 6 that 
+: 1363 1 8 you
+: 1365 1 9 ’re 
+: 1367 4 8 close 
+: 1373 5 6 but 
+: 1379 4 8 no 
+: 1385 4 4 ci
+: 1391 12 1 gar
+- 1403
+: 1413 1 4 But 
+: 1415 3 4 I 
+: 1419 3 4 don’t 
+: 1423 7 4 wanna 
+: 1431 5 6 hear 
+: 1437 18 4 it
+- 1455 1468
+- 1468
+: 1489 3 -1 No, 
+: 1493 3 -1 it’s 
+: 1497 3 9 more 
+: 1501 7 8 than 
+: 1509 8 6 I 
+: 1519 7 8 acc
+: 1527 15 4 ept
+- 1542
+: 1543 3 4 ’Cause 
+: 1547 3 4 I 
+: 1551 5 9 don’t 
+: 1557 19 8 care 
+: 1577 13 4 where 
+: 1591 7 6 I 
+: 1599 15 8 belong 
+: 1615 7 6 no 
+* 1623 30 4 more
+- 1653 1658
+- 1658
+: 1679 5 4 What 
+: 1685 5 8 we 
+: 1691 16 8 share 
+: 1709 10 4 or 
+: 1721 9 6 not 
+: 1731 5 8 I 
+: 1737 8 6 will 
+* 1747 44 4 ignore
+- 1791
+: 1809 5 -1 And 
+: 1815 5 -1 I 
+: 1821 7 11 wo
+: 1829 8 8 n’t 
+: 1839 11 8 waste 
+: 1851 7 9 my 
+: 1859 11 8 time 
+: 1871 5 6 fitt
+: 1877 7 8 ing 
+: 1885 36 4 in
+- 1921
+: 1941 3 4 ’Cause 
+: 1945 4 8 I 
+: 1951 9 8 do
+: 1961 7 4 n’t 
+: 1969 10 4 think 
+: 1981 7 11 con
+: 1989 5 9 tra
+: 1995 3 8 st 
+: 1999 5 6 is 
+: 2005 5 4 a 
+: 2011 17 4 si
+: 2029 8 1 n
+- 2037 2040
+- 2040
+: 2061 7 4 What 
+: 2069 3 4 they 
+: 2073 5 4 say 
+: 2079 8 4 is...
+- 2087
+: 2097 9 6 Go 
+: 2107 10 1 back, 
+: 2125 3 1 where 
+: 2129 5 6 you 
+: 2135 5 8 came 
+: 2141 16 4 from
+- 2157 2170
+- 2170
+: 2191 3 4 They 
+: 2195 5 4 tell 
+: 2201 3 4 you 
+: 2205 4 4 that, 
+: 2229 7 6 I 
+: 2237 12 1 don’t 
+: 2259 5 6 wan
+: 2265 4 8 na 
+: 2271 12 4 hear
+- 2283 2378
+- 2378
+: 2399 3 -1 No, 
+: 2403 3 -1 it’s 
+: 2407 4 9 more 
+: 2413 5 8 than 
+: 2419 6 6 I 
+: 2427 7 8 acc
+: 2435 8 4 ept
+- 2443
+: 2451 3 4 ’Cause 
+: 2455 3 4 I 
+: 2459 7 9 don’t 
+: 2467 19 8 care 
+: 2487 11 4 where 
+: 2499 7 6 I 
+: 2507 7 8 be
+: 2515 7 6 long 
+: 2523 7 4 no 
+* 2531 36 4 more
+- 2567 2568
+- 2568
+: 2589 3 4 What 
+: 2593 5 8 we 
+: 2599 15 8 share 
+: 2615 13 4 or 
+: 2629 7 6 not
+- 2636
+: 2637 7 8 I 
+: 2645 9 6 will 
+* 2655 44 4 ignore
+- 2699
+: 2717 5 -1 And 
+: 2723 5 -1 I 
+: 2729 7 11 wo
+: 2737 5 8 n’t 
+: 2743 15 8 waste 
+: 2759 7 9 my 
+: 2767 11 8 time 
+: 2779 3 6 fitt
+: 2783 7 8 ing 
+: 2791 36 4 in
+- 2827 2830
+- 2830
+: 2851 3 4 ’Cause 
+: 2855 7 8 I 
+: 2863 7 8 do
+: 2871 7 4 n’t 
+: 2879 11 4 think
+- 2890
+: 2891 9 11 Con
+: 2901 5 9 tra
+: 2907 1 8 st 
+: 2909 7 6 is 
+: 2917 5 4 a 
+: 2923 15 4 si
+: 2939 8 1 n
+- 2947
+: 2957 9 11 No, 
+: 2967 7 9 it’s 
+: 2975 5 8 not 
+: 2981 4 6 a 
+: 2989 28 4 sin
+E

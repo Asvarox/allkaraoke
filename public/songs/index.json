@@ -5776,7 +5776,7 @@
     "gap": 15743.845752996353,
     "year": "1980",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-08-24T00:50:37.903Z",
+    "lastUpdate": "2026-08-23T20:36:19.980Z",
     "realBpm": 383.8,
     "volume": 1,
     "sourceUrl": "https://www.youtube.com/watch?v=KgLsxmqlEQc",
@@ -9011,7 +9011,7 @@
     "gap": 32849.488061724536,
     "year": "1979",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:34.079Z",
+    "lastUpdate": "2026-08-23T16:08:51.548Z",
     "genre": "Pop",
     "realBpm": 141,
     "previewStart": 30,
@@ -9998,7 +9998,7 @@
     "gap": 56721.739130434784,
     "year": "1996",
     "artistOrigin": "BR",
-    "lastUpdate": "2026-08-24T00:50:38.817Z",
+    "lastUpdate": "2026-08-23T20:52:26.530Z",
     "genre": "Heavy Metal",
     "realBpm": 138,
     "volume": 1,
@@ -10877,6 +10877,37 @@
     "shortId": 6002,
     "tracksCount": 1,
     "search": "apulantakoneeseenkadonnut",
+    "local": false
+  },
+  {
+    "id": "apulanta-viisaus-ei-asu-meissae",
+    "title": "Viisaus ei asu meissä",
+    "artist": "Apulanta",
+    "video": "GL6a9TULqaM",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 266,
+    "gap": 7424.962406015038,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-25T00:50:32.103Z",
+    "realBpm": 133,
+    "previewStart": 8,
+    "previewEnd": 241,
+    "volume": 1,
+    "author": "urpo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=20760",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7680",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6176,
+    "tracksCount": 1,
+    "search": "apulantaviisauseiasumeissae",
     "local": false
   },
   {
@@ -27145,7 +27176,7 @@
     "gap": 2970,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:34.068Z",
+    "lastUpdate": "2026-08-23T16:07:14.119Z",
     "genre": "Pop",
     "realBpm": 88,
     "volume": 1,
@@ -31628,6 +31659,33 @@
     "local": false
   },
   {
+    "id": "camila-cabello-never-be-the-same",
+    "title": "Never be the same",
+    "artist": "Camila Cabello",
+    "video": "Ph54wQG8ynk",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.07,
+    "gap": 24544.49475141308,
+    "year": "2018",
+    "artistOrigin": "CU",
+    "lastUpdate": "2026-08-25T00:50:24.484Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "asdFer",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6169,
+    "tracksCount": 1,
+    "search": "camilacabelloneverbethesame",
+    "local": false
+  },
+  {
     "id": "camilo-indigo",
     "title": "Índigo",
     "artist": "Camilo",
@@ -34821,7 +34879,7 @@
     "gap": 85531.25756556826,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:51:22.093Z",
+    "lastUpdate": "2026-08-23T20:57:58.216Z",
     "genre": "R&B",
     "realBpm": 104,
     "volume": 1,
@@ -46016,7 +46074,7 @@
     "gap": 5405.915441623132,
     "year": "2021",
     "artistOrigin": "BR",
-    "lastUpdate": "2026-08-24T00:50:38.818Z",
+    "lastUpdate": "2026-08-23T20:54:33.078Z",
     "realBpm": 3,
     "volume": 1,
     "author": "wildnight",
@@ -55652,7 +55710,7 @@
     "gap": 15220.059949273691,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:37.897Z",
+    "lastUpdate": "2026-08-23T20:35:07.291Z",
     "genre": "Musical",
     "realBpm": 130,
     "volume": 1,
@@ -55736,7 +55794,7 @@
     "bpm": 400,
     "gap": 7747.5,
     "year": "2024",
-    "lastUpdate": "2026-08-24T00:51:03.268Z",
+    "lastUpdate": "2026-08-23T20:57:16.713Z",
     "genre": "Musical",
     "realBpm": 85,
     "volume": 1,
@@ -55763,7 +55821,7 @@
     "bpm": 400,
     "gap": 7917.5,
     "year": "2024",
-    "lastUpdate": "2026-08-24T00:50:40.543Z",
+    "lastUpdate": "2026-08-23T20:56:41.220Z",
     "genre": "Musical",
     "realBpm": 160,
     "volume": 1,
@@ -55888,6 +55946,33 @@
     "shortId": 5879,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransmasonolshavskynolongeryou",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-monster",
+    "title": "Monster",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans)",
+    "video": "qYDms9Z-02A",
+    "language": [
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 3720,
+    "year": "2024",
+    "lastUpdate": "2026-08-25T00:50:27.878Z",
+    "genre": "Musical",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6172,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransmonster",
     "local": false
   },
   {
@@ -59219,6 +59304,35 @@
     "shortId": 1604,
     "tracksCount": 1,
     "search": "fexsubwaysofyourmind",
+    "local": false
+  },
+  {
+    "id": "fey-barco-a-venus",
+    "title": "Barco a Venus",
+    "artist": "Fey",
+    "video": "uL6rxFPAN6Y",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 290,
+    "gap": 26172.241379310344,
+    "year": "2004",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-08-25T00:50:24.302Z",
+    "genre": "Pop",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "vicktoben",
+    "sourceUrl": "www.ultrastar-es.org",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6167,
+    "tracksCount": 1,
+    "search": "feybarcoavenus",
     "local": false
   },
   {
@@ -63776,7 +63890,7 @@
     "gap": 17821.739130434784,
     "year": "2018",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-24T00:50:34.072Z",
+    "lastUpdate": "2026-08-23T16:07:50.135Z",
     "realBpm": 138,
     "volume": 1,
     "author": "choosie",
@@ -64453,7 +64567,7 @@
     "gap": 30478.536749831423,
     "year": "2018",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-08-24T00:51:22.089Z",
+    "lastUpdate": "2026-08-23T20:57:35.323Z",
     "genre": "Metal",
     "realBpm": 125,
     "volume": 1,
@@ -71393,7 +71507,7 @@
     "gap": 9380.485382959516,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:37.687Z",
+    "lastUpdate": "2026-08-23T16:09:33.155Z",
     "genre": "Soundtrack",
     "realBpm": 72,
     "volume": 1,
@@ -72460,7 +72574,7 @@
     "gap": 6370,
     "year": "1984",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-24T00:51:22.095Z",
+    "lastUpdate": "2026-08-23T20:58:15.887Z",
     "genre": "Synth-Pop, New Wave, Rock",
     "realBpm": 187,
     "volume": 1,
@@ -76089,6 +76203,33 @@
     "shortId": 2004,
     "tracksCount": 1,
     "search": "imaginedragonsxjidenemy",
+    "local": false
+  },
+  {
+    "id": "imogen-heap-headlock",
+    "title": "Headlock",
+    "artist": "Imogen Heap",
+    "video": "roPiy2JydwA",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.1,
+    "gap": 17250.416493127865,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-25T00:50:31.952Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6174,
+    "tracksCount": 1,
+    "search": "imogenheapheadlock",
     "local": false
   },
   {
@@ -84036,7 +84177,7 @@
     "gap": 16607.498897220998,
     "year": "2003",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-08-24T00:50:40.273Z",
+    "lastUpdate": "2026-08-23T20:56:00.021Z",
     "realBpm": 135,
     "volume": 1,
     "author": "daggeg",
@@ -87390,7 +87531,7 @@
     "gap": 14265.2506498329,
     "year": "1979",
     "artistOrigin": "CZ",
-    "lastUpdate": "2026-08-24T00:50:38.821Z",
+    "lastUpdate": "2026-08-23T20:55:14.114Z",
     "realBpm": 107,
     "volume": 1,
     "author": "MasterChristian",
@@ -95567,6 +95708,36 @@
     "local": false
   },
   {
+    "id": "lady-gaga-disease",
+    "title": "Disease",
+    "artist": "Lady Gaga",
+    "video": "fmC6b6_ovZY",
+    "language": [
+      "English"
+    ],
+    "bpm": 404.2,
+    "gap": 7018.020781791192,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-25T00:50:32.101Z",
+    "genre": "Pop",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "fasowe",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167003",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30048",
+    "duration": 262,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6175,
+    "tracksCount": 1,
+    "search": "ladygagadisease",
+    "local": false
+  },
+  {
     "id": "lady-gaga-donatella",
     "title": "Donatella",
     "artist": "Lady Gaga",
@@ -96015,7 +96186,7 @@
     "gap": 8214.023923914108,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:38.804Z",
+    "lastUpdate": "2026-08-23T20:37:35.330Z",
     "genre": "Pop",
     "realBpm": 102,
     "volume": 1,
@@ -101714,7 +101885,7 @@
     "gap": 14582.375296912114,
     "year": "2013",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-24T00:50:38.819Z",
+    "lastUpdate": "2026-08-23T20:54:51.990Z",
     "genre": "Pop",
     "realBpm": 78,
     "volume": 1,
@@ -102255,7 +102426,7 @@
     "gap": 45.629567921803755,
     "year": "2003",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-24T00:50:38.823Z",
+    "lastUpdate": "2026-08-23T20:55:38.010Z",
     "genre": "Rock",
     "realBpm": 270.09,
     "volume": 1,
@@ -102816,7 +102987,7 @@
     "gap": 21417.998998999,
     "year": "2010",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-24T00:50:37.900Z",
+    "lastUpdate": "2026-08-23T20:35:59.406Z",
     "genre": "Rock",
     "realBpm": 269.73,
     "volume": 1,
@@ -103374,7 +103545,7 @@
     "bpm": 356,
     "gap": 30668.76404494382,
     "year": "2017",
-    "lastUpdate": "2026-08-24T00:50:40.845Z",
+    "lastUpdate": "2026-08-23T20:57:06.547Z",
     "realBpm": 178,
     "volume": 1,
     "author": "blewmaxx",
@@ -105954,7 +106125,7 @@
     "gap": 8019.696719620384,
     "year": "1969",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:38.418Z",
+    "lastUpdate": "2026-08-23T20:36:37.823Z",
     "realBpm": 120,
     "volume": 1,
     "author": "Canni",
@@ -108732,6 +108903,34 @@
     "local": false
   },
   {
+    "id": "mario-let-me-love-you",
+    "title": "Let Me Love You",
+    "artist": "Mario",
+    "video": "H64QG4UsrGI",
+    "language": [
+      "English"
+    ],
+    "bpm": 378.14,
+    "gap": 10220.30380282435,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-25T00:50:24.000Z",
+    "genre": "RnB",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "rossbr",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6165,
+    "tracksCount": 1,
+    "search": "marioletmeloveyou",
+    "local": false
+  },
+  {
     "id": "marisa-de-lille-romance-te-puedo-dar",
     "title": "Romance te puedo dar",
     "artist": "Marisa De Lille",
@@ -110630,6 +110829,35 @@
     "local": false
   },
   {
+    "id": "mblaq-mona-lisa",
+    "title": "Mona Lisa",
+    "artist": "MBLAQ",
+    "video": "SenkemTrZMQ",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 508.04,
+    "gap": 10886.142036060153,
+    "year": "2011",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-08-25T00:50:24.490Z",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "oldkillerjones",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=17645",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 34
+      }
+    ],
+    "shortId": 6171,
+    "tracksCount": 1,
+    "search": "mblaqmonalisa",
+    "local": false
+  },
+  {
     "id": "mc-vv-dedadao",
     "title": "Dedadão",
     "artist": "MC VV",
@@ -112231,6 +112459,34 @@
     "shortId": 6125,
     "tracksCount": 1,
     "search": "metallicakingnothing",
+    "local": false
+  },
+  {
+    "id": "metallica-master-of-puppets",
+    "title": "Master Of Puppets",
+    "artist": "Metallica",
+    "video": "6xjJ2XIbGRk",
+    "language": [
+      "English"
+    ],
+    "bpm": 311.8,
+    "gap": 59909.73701090443,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-25T00:50:24.488Z",
+    "genre": "Metal",
+    "realBpm": 212,
+    "volume": 1,
+    "author": "IC",
+    "duration": 517,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6170,
+    "tracksCount": 1,
+    "search": "metallicamasterofpuppets",
     "local": false
   },
   {
@@ -115296,6 +115552,34 @@
     "local": false
   },
   {
+    "id": "millencolin-no-cigar",
+    "title": "No Cigar",
+    "artist": "Millencolin",
+    "video": "bPVo98xA8Sw",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 18985.625,
+    "year": "1999",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-08-25T00:50:21.343Z",
+    "realBpm": 158,
+    "volume": 1,
+    "author": "Becks82",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4790",
+    "duration": 167,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6163,
+    "tracksCount": 1,
+    "search": "millencolinnocigar",
+    "local": false
+  },
+  {
     "id": "milo-manheim-meg-donnelly-someday-de-zombies",
     "title": "Someday (De \"ZOMBIES\")",
     "artist": "Milo Manheim & Meg Donnelly",
@@ -115980,7 +116264,7 @@
     "gap": 435.8125,
     "year": "2025",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-24T00:50:38.801Z",
+    "lastUpdate": "2026-08-23T20:37:11.390Z",
     "realBpm": 128,
     "volume": 1,
     "author": "Purpleurple",
@@ -122321,6 +122605,66 @@
     "local": false
   },
   {
+    "id": "nightwish-elvenpath",
+    "title": "Elvenpath",
+    "artist": "Nightwish",
+    "video": "GwKDj2YALVQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 291.04,
+    "gap": 51820.75316107752,
+    "year": "1997",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-25T00:50:21.337Z",
+    "genre": "Metal",
+    "realBpm": 146,
+    "volume": 1,
+    "author": "Zevac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=181957",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28233",
+    "duration": 278,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6162,
+    "tracksCount": 1,
+    "search": "nightwishelvenpath",
+    "local": false
+  },
+  {
+    "id": "nightwish-endless-forms-most-beautiful",
+    "title": "Endless Forms Most Beautiful",
+    "artist": "Nightwish",
+    "video": "VUb1p8fm7Ag",
+    "language": [
+      "English"
+    ],
+    "bpm": 308,
+    "gap": 19137.272727272728,
+    "year": "2015",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-25T00:50:23.994Z",
+    "genre": "Symphonic Metal",
+    "realBpm": 153,
+    "volume": 1,
+    "author": "SchmidtScout",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=117488",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=19476",
+    "duration": 341,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6164,
+    "tracksCount": 1,
+    "search": "nightwishendlessformsmostbeautiful",
+    "local": false
+  },
+  {
     "id": "nightwish-ever-dream",
     "title": "Ever Dream",
     "artist": "Nightwish",
@@ -122391,7 +122735,7 @@
     "gap": 35031.48148148148,
     "year": "2011",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-24T00:50:38.815Z",
+    "lastUpdate": "2026-08-23T20:52:13.925Z",
     "realBpm": 161,
     "volume": 1,
     "author": "Amoebius",
@@ -122420,7 +122764,7 @@
     "gap": 48.62133927042302,
     "year": "2004",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-24T00:50:38.808Z",
+    "lastUpdate": "2026-08-23T20:51:38.295Z",
     "genre": "Metal",
     "realBpm": 146,
     "volume": 1,
@@ -122465,6 +122809,39 @@
     "shortId": 6105,
     "tracksCount": 1,
     "search": "nightwishslayingthedreamer",
+    "local": false
+  },
+  {
+    "id": "nightwish-wish-i-had-an-angel",
+    "title": "Wish I Had An Angel",
+    "artist": "Nightwish",
+    "video": "wEERFBI9eCg",
+    "language": [
+      "English"
+    ],
+    "bpm": 319.1,
+    "gap": 29.855844562833,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-25T00:50:24.277Z",
+    "genre": "Rock",
+    "realBpm": 159,
+    "volume": 1,
+    "author": "Senfbussard",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=56581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=14185",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 20
+      },
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6166,
+    "tracksCount": 2,
+    "search": "nightwishwishihadanangel",
     "local": false
   },
   {
@@ -129597,6 +129974,34 @@
     "local": false
   },
   {
+    "id": "pearl-jam-daughter",
+    "title": "Daughter",
+    "artist": "Pearl Jam",
+    "video": "zgUwd2Gkb-E",
+    "language": [
+      "English"
+    ],
+    "bpm": 386.1,
+    "gap": 10489.89898989899,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-25T00:50:24.481Z",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "kosmo",
+    "sourceUrl": "https://youtu.be/RIJwXgNdWbI?si=DdXDUkg7kzC-5Rsl",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6168,
+    "tracksCount": 1,
+    "search": "pearljamdaughter",
+    "local": false
+  },
+  {
     "id": "pearl-jam-even-flow",
     "title": "Even Flow",
     "artist": "Pearl Jam",
@@ -133133,7 +133538,7 @@
     "gap": 1240.9890109890111,
     "year": "2024",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-24T00:50:40.541Z",
+    "lastUpdate": "2026-08-23T20:56:30.766Z",
     "realBpm": 136,
     "volume": 1,
     "author": "DS",
@@ -133173,6 +133578,33 @@
     "shortId": 6126,
     "tracksCount": 1,
     "search": "provinzpazifik",
+    "local": false
+  },
+  {
+    "id": "provinz-walzer",
+    "title": "Walzer",
+    "artist": "Provinz",
+    "video": "skYKA_LBQc0",
+    "language": [
+      "German"
+    ],
+    "bpm": 513,
+    "gap": 28.362573099415215,
+    "year": "2024",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-25T00:50:31.950Z",
+    "realBpm": 57,
+    "volume": 1,
+    "author": "DS",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 6173,
+    "tracksCount": 1,
+    "search": "provinzwalzer",
     "local": false
   },
   {
@@ -136409,7 +136841,7 @@
     "gap": 18489.02368573079,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:38.813Z",
+    "lastUpdate": "2026-08-23T20:51:54.520Z",
     "realBpm": 104,
     "volume": 1,
     "author": "choosie",
@@ -144828,7 +145260,7 @@
     "gap": 12774.358974358975,
     "year": "2005",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-24T00:50:37.684Z",
+    "lastUpdate": "2026-08-23T16:09:16.373Z",
     "realBpm": 117,
     "volume": 1,
     "author": "mk90",
@@ -146991,7 +147423,7 @@
     "gap": 19730.384615384617,
     "year": "1995",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-08-24T00:50:34.058Z",
+    "lastUpdate": "2026-08-23T16:06:55.923Z",
     "genre": "Country-Pop",
     "realBpm": 156,
     "volume": 1,
@@ -166364,7 +166796,7 @@
     "gap": 18354.454664914585,
     "year": "1984",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-24T00:50:34.074Z",
+    "lastUpdate": "2026-08-23T16:08:10.431Z",
     "realBpm": 95,
     "previewStart": 40,
     "previewEnd": 65,
@@ -176559,7 +176991,7 @@
     "gap": 25940,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-24T00:50:34.075Z",
+    "lastUpdate": "2026-08-23T16:08:26.458Z",
     "genre": "Alternative Rock",
     "realBpm": 100,
     "previewStart": 60,
