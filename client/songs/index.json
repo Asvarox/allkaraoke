@@ -10891,7 +10891,7 @@
     "gap": 7424.962406015038,
     "year": "2007",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-25T00:50:32.103Z",
+    "lastUpdate": "2026-08-24T20:50:24.833Z",
     "realBpm": 133,
     "previewStart": 8,
     "previewEnd": 241,
@@ -20750,6 +20750,36 @@
     "shortId": 538,
     "tracksCount": 1,
     "search": "bigtimerushboyfriend",
+    "local": false
+  },
+  {
+    "id": "bigbang-haru-haru",
+    "title": "Haru Haru",
+    "artist": "BIGBANG",
+    "video": "MzCbEdtNbJ0",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 252,
+    "gap": 10358.095238095239,
+    "year": "2008",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-08-26T00:51:42.011Z",
+    "genre": "Kpop",
+    "realBpm": 126,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "lop",
+    "duration": 324,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6178,
+    "tracksCount": 1,
+    "search": "bigbangharuharu",
     "local": false
   },
   {
@@ -31670,7 +31700,7 @@
     "gap": 24544.49475141308,
     "year": "2018",
     "artistOrigin": "CU",
-    "lastUpdate": "2026-08-25T00:50:24.484Z",
+    "lastUpdate": "2026-08-24T20:47:10.870Z",
     "realBpm": 130,
     "volume": 1,
     "author": "asdFer",
@@ -40326,6 +40356,36 @@
     "local": false
   },
   {
+    "id": "daniel-bedingfield-if-youre-not-the-one",
+    "title": "If You’re Not The One",
+    "artist": "Daniel Bedingfield",
+    "video": "j6nevGNYTkA",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 1450,
+    "year": "2002",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2026-08-26T00:51:46.621Z",
+    "realBpm": 120,
+    "previewStart": 173,
+    "previewEnd": 203,
+    "volume": 1,
+    "author": "a224",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=2276",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6186,
+    "tracksCount": 1,
+    "search": "danielbedingfieldifyourenottheone",
+    "local": false
+  },
+  {
     "id": "daniel-caesar-feat-kali-uchis-get-you",
     "title": "Get You",
     "artist": "Daniel Caesar feat. Kali Uchis",
@@ -42421,6 +42481,35 @@
     "shortId": 1156,
     "tracksCount": 1,
     "search": "dearevanhansenwavingthroughawindow",
+    "local": false
+  },
+  {
+    "id": "death-cab-for-cutie-i-will-follow-you-into-the-dark",
+    "title": "I Will Follow You Into The Dark",
+    "artist": "Death Cab For Cutie",
+    "video": "_30V_ncBQtQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.5,
+    "gap": 25091.663893510817,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-26T00:51:45.998Z",
+    "videoGap": 11,
+    "realBpm": 78,
+    "volume": 1,
+    "author": "lava",
+    "sourceUrl": "https://www.youtube.com/watch?v=_30V_ncBQtQ",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6181,
+    "tracksCount": 1,
+    "search": "deathcabforcutieiwillfollowyouintothedark",
     "local": false
   },
   {
@@ -47444,6 +47533,34 @@
     "shortId": 1294,
     "tracksCount": 1,
     "search": "disneysteenbeachmoviesurfcrazy",
+    "local": false
+  },
+  {
+    "id": "disneys-the-cheetah-girls-2-strut",
+    "title": "Strut",
+    "artist": "Disney’s The Cheetah Girls 2",
+    "video": "rZpSOSfymV4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 3250,
+    "year": "2006",
+    "lastUpdate": "2026-08-26T00:51:45.590Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "DoubleDee commissioned by UrGamingTechie",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=29239",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6180,
+    "tracksCount": 1,
+    "search": "disneysthecheetahgirls2strut",
     "local": false
   },
   {
@@ -55959,7 +56076,7 @@
     "bpm": 375,
     "gap": 3720,
     "year": "2024",
-    "lastUpdate": "2026-08-25T00:50:27.878Z",
+    "lastUpdate": "2026-08-24T20:48:12.380Z",
     "genre": "Musical",
     "realBpm": 90,
     "volume": 1,
@@ -59318,7 +59435,7 @@
     "gap": 26172.241379310344,
     "year": "2004",
     "artistOrigin": "MX",
-    "lastUpdate": "2026-08-25T00:50:24.302Z",
+    "lastUpdate": "2026-08-24T20:46:31.547Z",
     "genre": "Pop",
     "realBpm": 145,
     "volume": 1,
@@ -71203,6 +71320,35 @@
     "local": false
   },
   {
+    "id": "haloo-helsinki-maailman-toisella-puolen",
+    "title": "Maailman toisella puolen",
+    "artist": "Haloo Helsinki!",
+    "video": "sS6Ta6SrTHs",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 250,
+    "gap": 15880,
+    "year": "2011",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-08-26T00:51:46.341Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "previewStart": 43,
+    "previewEnd": 163,
+    "volume": 1,
+    "author": "schizo12",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6185,
+    "tracksCount": 1,
+    "search": "haloohelsinkimaailmantoisellapuolen",
+    "local": false
+  },
+  {
     "id": "halsey-graveyard",
     "title": "Graveyard",
     "artist": "Halsey",
@@ -76217,7 +76363,7 @@
     "gap": 17250.416493127865,
     "year": "2005",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-25T00:50:31.952Z",
+    "lastUpdate": "2026-08-24T20:49:16.747Z",
     "realBpm": 120,
     "volume": 1,
     "author": "DoubleDee",
@@ -84146,7 +84292,7 @@
     "bpm": 383.05,
     "gap": 9439.856154549014,
     "year": "2017",
-    "lastUpdate": "2026-07-22T20:11:44.348Z",
+    "lastUpdate": "2026-08-25T20:25:40.667Z",
     "realBpm": 383.05,
     "previewStart": 37.5,
     "previewEnd": 85,
@@ -95719,7 +95865,7 @@
     "gap": 7018.020781791192,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-25T00:50:32.101Z",
+    "lastUpdate": "2026-08-24T20:49:32.273Z",
     "genre": "Pop",
     "realBpm": 101,
     "volume": 1,
@@ -108914,7 +109060,7 @@
     "gap": 10220.30380282435,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-25T00:50:24.000Z",
+    "lastUpdate": "2026-08-24T20:45:06.447Z",
     "genre": "RnB",
     "realBpm": 95,
     "volume": 1,
@@ -110841,7 +110987,7 @@
     "gap": 10886.142036060153,
     "year": "2011",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-08-25T00:50:24.490Z",
+    "lastUpdate": "2026-08-24T20:47:55.814Z",
     "realBpm": 127,
     "volume": 1,
     "author": "oldkillerjones",
@@ -112473,7 +112619,7 @@
     "gap": 59909.73701090443,
     "year": "1986",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-25T00:50:24.488Z",
+    "lastUpdate": "2026-08-24T20:47:26.944Z",
     "genre": "Metal",
     "realBpm": 212,
     "volume": 1,
@@ -115563,7 +115709,7 @@
     "gap": 18985.625,
     "year": "1999",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-08-25T00:50:21.343Z",
+    "lastUpdate": "2026-08-24T20:44:02.265Z",
     "realBpm": 158,
     "volume": 1,
     "author": "Becks82",
@@ -122616,7 +122762,7 @@
     "gap": 51820.75316107752,
     "year": "1997",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-25T00:50:21.337Z",
+    "lastUpdate": "2026-08-24T20:42:50.456Z",
     "genre": "Metal",
     "realBpm": 146,
     "volume": 1,
@@ -122646,7 +122792,7 @@
     "gap": 19137.272727272728,
     "year": "2015",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-25T00:50:23.994Z",
+    "lastUpdate": "2026-08-24T20:44:20.748Z",
     "genre": "Symphonic Metal",
     "realBpm": 153,
     "volume": 1,
@@ -122823,7 +122969,7 @@
     "gap": 29.855844562833,
     "year": "2004",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-25T00:50:24.277Z",
+    "lastUpdate": "2026-08-24T20:45:32.027Z",
     "genre": "Rock",
     "realBpm": 159,
     "volume": 1,
@@ -125527,6 +125673,33 @@
     "shortId": 5422,
     "tracksCount": 1,
     "search": "olivianewtonjohnphysical",
+    "local": false
+  },
+  {
+    "id": "olivia-rodrigo-all-american-bitch",
+    "title": "all-american bitch",
+    "artist": "Olivia Rodrigo",
+    "video": "n2BnbpjpRdo",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.60000000000014,
+    "gap": 5510.384615384615,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-26T00:51:42.004Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "piharatamo",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6177,
+    "tracksCount": 1,
+    "search": "oliviarodrigoallamericanbitch",
     "local": false
   },
   {
@@ -129985,7 +130158,7 @@
     "gap": 10489.89898989899,
     "year": "1993",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-25T00:50:24.481Z",
+    "lastUpdate": "2026-08-24T20:46:52.488Z",
     "realBpm": 97,
     "volume": 1,
     "author": "kosmo",
@@ -133592,7 +133765,7 @@
     "gap": 28.362573099415215,
     "year": "2024",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-25T00:50:31.950Z",
+    "lastUpdate": "2026-08-24T20:48:40.594Z",
     "realBpm": 57,
     "volume": 1,
     "author": "DS",
@@ -136001,6 +136174,33 @@
     "local": false
   },
   {
+    "id": "rammstein-engel",
+    "title": "Engel",
+    "artist": "Rammstein",
+    "video": "x2rQzv8OWEY",
+    "language": [
+      "German"
+    ],
+    "bpm": 287.8,
+    "gap": 39119.728978457264,
+    "year": "1997",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-26T00:51:46.337Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6183,
+    "tracksCount": 1,
+    "search": "rammsteinengel",
+    "local": false
+  },
+  {
     "id": "rammstein-fruhling-in-paris",
     "title": "Frühling in Paris",
     "artist": "Rammstein",
@@ -136141,6 +136341,37 @@
     "shortId": 3587,
     "tracksCount": 1,
     "search": "rammsteinmutter",
+    "local": false
+  },
+  {
+    "id": "rammstein-ohne-dich",
+    "title": "Ohne dich",
+    "artist": "Rammstein",
+    "video": "LIPc1cfS-oQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 272,
+    "gap": 15327.35294117647,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-26T00:51:46.338Z",
+    "genre": "Metal",
+    "realBpm": 136,
+    "previewStart": 57,
+    "previewEnd": 91,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=LIPc1cfS-oQ",
+    "duration": 359,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6184,
+    "tracksCount": 1,
+    "search": "rammsteinohnedich",
     "local": false
   },
   {
@@ -158774,6 +159005,34 @@
     "local": false
   },
   {
+    "id": "taylor-swift-mean",
+    "title": "Mean",
+    "artist": "Taylor Swift",
+    "video": "jYa1eI1hpDE",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.35,
+    "gap": 3314.9748743718596,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-26T00:51:45.585Z",
+    "genre": "Country",
+    "realBpm": 89,
+    "volume": 1,
+    "author": "porangi",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6179,
+    "tracksCount": 1,
+    "search": "taylorswiftmean",
+    "local": false
+  },
+  {
     "id": "taylor-swift-midnight-rain",
     "title": "Midnight Rain",
     "artist": "Taylor Swift",
@@ -175492,6 +175751,33 @@
     "shortId": 4636,
     "tracksCount": 1,
     "search": "verkaserduchkadancinglashatumbai",
+    "local": false
+  },
+  {
+    "id": "veronica-maggio-sergels-torg",
+    "title": "Sergels torg",
+    "artist": "Veronica Maggio",
+    "video": "h-_UQVsoLQQ",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 278.43,
+    "gap": 35596.40340480552,
+    "year": "2013",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-08-26T00:51:46.335Z",
+    "realBpm": 139,
+    "volume": 1,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=h-_UQVsoLQQ",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6182,
+    "tracksCount": 1,
+    "search": "veronicamaggiosergelstorg",
     "local": false
   },
   {
