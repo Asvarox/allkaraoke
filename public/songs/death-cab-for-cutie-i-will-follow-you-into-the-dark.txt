@@ -1,0 +1,374 @@
+#ARTIST:Death Cab For Cutie
+#TITLE:I Will Follow You Into The Dark
+#CREATOR:lava
+#BPM:300,5
+#YEAR:2005
+#VIDEO:v=_30V_ncBQtQ
+#VIDEOGAP:11
+#LANGUAGE:English
+#GAP:25091,663893510817
+#ALLKARAOKE_ID:death-cab-for-cutie-i-will-follow-you-into-the-dark
+#ALLKARAOKE_SID:6181
+#ALLKARAOKE_LASTUPDATE:2026-08-26T00:51:45.998Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:78
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=_30V_ncBQtQ
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:195
+#MP3:Death Cab For Cutie - I Will Follow You Into The Dark.mp3
+#END:220000
+: 20 11 7 Love 
+: 32 8 9 of 
+: 41 14 9 mine 
+: 67 6 12 some 
+: 74 6 7 day 
+: 81 12 7 you 
+: 94 9 9 will 
+: 104 13 9 die
+- 117
+: 126 3 9 But 
+: 130 7 12 I’ll 
+: 138 6 7 be 
+: 145 11 7 close 
+: 157 6 5 be
+: 164 10 5 hind
+- 174
+: 188 4 2 I’ll 
+: 193 4 2 fol
+: 198 6 0 low 
+: 205 14 9 you 
+: 223 4 9 in
+: 228 3 10 to 
+: 232 3 9 the 
+: 236 11 7 dark
+- 247
+: 267 3 0 No 
+: 271 10 7 blin
+: 282 10 9 ding 
+: 293 12 9 light 
+: 315 3 9 or 
+: 319 4 12 tun
+: 324 6 7 nels 
+: 331 3 7 to 
+: 335 11 7 gates 
+: 347 8 9 of 
+: 356 13 9 white
+- 369
+: 377 4 9 Just 
+: 382 5 12 our 
+: 388 10 7 hands 
+: 399 10 7 clasped 
+: 410 7 5 so 
+: 418 12 5 tight
+- 430
+: 446 4 2 Wai
+: 451 6 0 ting 
+: 458 9 9 for 
+: 472 3 9 the 
+: 476 4 9 hint 
+: 481 4 10 of 
+: 486 5 9 a 
+: 492 11 7 spark
+- 503
+: 519 3 5 If 
+: 523 4 14 hea
+: 528 6 14 ven 
+: 535 2 14 and 
+: 538 3 14 he
+: 542 3 12 ~ll 
+: 546 3 12 de
+: 550 8 12 cide
+- 558
+: 569 4 9 That 
+: 574 6 5 they 
+: 581 7 10 both 
+: 589 9 9 are 
+: 599 5 7 sa
+: 605 5 5 tis
+: 611 12 9 fied
+- 623
+: 642 3 5 Il
+: 646 8 14 lu
+: 655 2 14 mi
+: 658 9 14 nate 
+: 668 4 12 the 
+: 673 18 12 no’s 
+: 692 4 7 on 
+: 697 6 5 their 
+: 704 14 7 va
+: 719 5 7 can
+: 725 7 9 cy 
+: 733 19 12 signs
+- 752
+: 764 3 5 If 
+: 768 8 14 there’s 
+: 777 6 14 no 
+: 784 7 14 one 
+: 792 3 12 be
+: 796 10 12 side 
+: 807 7 9 you
+- 814
+: 824 3 7 When 
+: 828 4 5 your 
+: 833 8 7 sou
+: 842 5 5 ~l 
+: 848 10 5 em
+: 859 18 9 barks
+- 877
+* 888 4 0 Then 
+* 893 8 7 I’ll 
+* 902 9 7 fol
+* 912 7 9 low 
+* 920 7 7 you 
+* 928 5 5 in
+* 934 5 2 to 
+* 940 3 5 the 
+* 944 14 5 dark
+- 958 993
+- 993
+: 1013 3 0 In 
+: 1017 9 7 Catho
+: 1027 7 9 lic 
+: 1035 10 9 school 
+: 1059 4 9 as 
+: 1064 4 12 vi
+: 1069 8 9 cious 
+: 1078 4 7 as 
+: 1083 7 7 Ro
+: 1091 8 9 man 
+: 1100 9 9 rule
+- 1109
+: 1128 3 12 I 
+: 1132 6 7 got 
+: 1139 5 7 my 
+: 1145 4 7 knu
+: 1150 3 5 ~c
+: 1154 8 5 kles 
+: 1163 14 5 bruised 
+: 1195 3 2 by 
+: 1199 3 0 a 
+: 1203 18 9 la
+: 1222 4 10 dy 
+: 1227 6 9 in 
+: 1234 13 7 black
+- 1247
+: 1263 1 0 And 
+: 1265 2 0 I 
+: 1269 11 7 held 
+: 1281 7 9 my 
+: 1289 13 9 tongue 
+: 1316 4 12 a
+: 1321 5 9 ~s 
+: 1327 4 7 she 
+: 1332 11 7 told 
+: 1344 6 9 me
+- 1350
+: 1355 16 9 “Son 
+: 1378 7 12 fear 
+: 1386 5 9 is 
+: 1392 4 7 the 
+: 1397 4 7 hea
+: 1402 3 5 ~rt 
+: 1406 8 5 of 
+: 1415 10 5 love”
+- 1425 1426
+- 1426
+: 1446 3 2 So 
+: 1450 4 0 I 
+: 1455 17 9 ne
+: 1473 5 10 ver 
+: 1479 5 9 went 
+: 1485 14 7 back
+- 1499
+: 1518 2 5 If 
+: 1521 4 14 hea
+: 1526 6 14 ven 
+: 1533 3 14 and 
+: 1537 2 14 he
+: 1540 2 12 ~ll 
+: 1543 3 12 de
+: 1547 13 12 cide
+- 1560
+: 1566 3 7 That 
+: 1570 6 5 they 
+: 1577 8 10 both 
+: 1586 10 9 are 
+: 1597 5 7 sa
+: 1603 6 5 tis
+: 1610 13 9 fied
+- 1623
+: 1639 4 5 Il
+: 1644 5 14 lu
+: 1650 3 14 mi
+: 1654 7 14 na
+: 1662 3 12 ~te 
+: 1666 3 12 the 
+: 1670 16 12 no’s 
+: 1690 4 7 on 
+: 1695 5 5 their 
+: 1701 15 7 va
+: 1717 5 7 can
+: 1723 8 9 cy 
+: 1732 21 12 signs
+- 1753
+: 1762 2 5 If 
+: 1765 8 14 there’s 
+: 1774 6 14 no 
+: 1781 3 14 o
+: 1785 3 12 ~ne 
+: 1789 2 12 be
+: 1792 11 12 side 
+: 1804 7 9 you
+- 1811
+: 1819 4 7 When 
+: 1824 6 5 your 
+: 1831 6 7 sou
+: 1838 6 5 ~l 
+: 1845 9 5 em
+: 1855 13 9 barks
+- 1868
+* 1884 4 0 Then 
+* 1890 8 7 I’ll 
+* 1899 7 7 fol
+* 1907 7 9 low 
+* 1915 8 7 you 
+* 1924 5 5 in
+* 1930 4 2 to 
+* 1935 4 5 the 
+* 1940 11 5 dark
+- 1951 1994
+- 1994
+: 2014 10 7 You 
+: 2025 7 9 and 
+: 2033 13 9 me 
+: 2055 2 9 have 
+: 2058 7 12 seen 
+: 2066 4 7 eve
+: 2071 3 7 ry
+: 2075 9 7 thing 
+: 2085 6 9 to 
+: 2092 10 9 see
+- 2102
+: 2117 2 9 From 
+: 2120 6 12 Bang
+: 2127 6 7 kok 
+: 2134 4 7 to 
+: 2139 5 7 Ca
+: 2145 4 5 ~l
+: 2150 4 5 ga
+: 2155 8 5 ry
+- 2163 2167
+- 2167
+: 2187 3 2 And 
+: 2191 3 0 the 
+: 2195 20 9 soles 
+: 2216 3 10 of 
+: 2220 4 9 your 
+: 2225 20 7 shoes 
+: 2258 5 0 are 
+: 2264 9 7 all 
+: 2274 9 9 worn 
+: 2284 9 9 down
+- 2293
+: 2304 3 9 The 
+: 2308 4 12 ti
+: 2313 5 9 ~me 
+: 2319 4 7 for 
+: 2324 11 7 sleep 
+: 2336 7 9 is 
+: 2344 11 9 now
+- 2355
+: 2369 3 9 It’s 
+: 2373 3 12 no
+: 2377 5 7 thing 
+: 2383 3 7 to 
+: 2387 8 7 cry
+: 2396 5 5 ~ 
+: 2402 3 5 a
+: 2406 8 5 bout
+- 2414 2419
+- 2419
+: 2439 3 2 ’Cause 
+: 2443 3 0 we’ll 
+: 2447 3 7 ho
+: 2451 8 9 ~ld 
+: 2460 6 9 each 
+: 2467 3 10 o
+: 2471 4 9 ther 
+: 2476 13 7 soon
+- 2489
+* 2502 5 9 In the 
+* 2508 14 14 blac
+* 2523 7 14 kest 
+* 2531 6 12 of 
+* 2538 85 17 rooms
+- 2623 2641
+- 2641
+: 2661 4 9 If 
+: 2666 4 14 hea
+: 2671 5 14 ven 
+: 2677 3 14 and 
+: 2681 3 14 he
+: 2685 2 12 ~ll 
+: 2688 3 12 de
+: 2692 17 12 cide
+- 2709
+: 2710 4 7 That 
+: 2715 7 5 they 
+: 2723 6 10 both 
+: 2730 10 9 are 
+: 2741 6 7 sa
+: 2748 5 5 tis
+: 2754 12 9 fied
+- 2766
+: 2784 2 5 Il
+: 2787 6 14 lu
+: 2794 4 14 mi
+: 2799 5 14 na
+: 2805 4 12 ~te 
+: 2810 3 12 the 
+: 2814 15 12 no’s 
+: 2834 4 7 on 
+: 2839 5 5 their 
+: 2845 13 7 va
+: 2859 6 7 can
+: 2866 6 9 cy 
+: 2873 21 12 signs
+- 2894
+: 2906 3 5 If 
+: 2910 8 14 there’s 
+: 2919 6 14 no 
+: 2926 6 14 one 
+: 2933 2 12 be
+: 2936 6 12 si
+: 2943 5 9 ~de 
+: 2949 8 9 you
+- 2957
+: 2964 4 7 When 
+: 2969 4 5 your 
+: 2974 7 7 sou
+: 2982 6 5 ~l 
+: 2989 7 5 em
+: 2997 19 9 barks
+- 3016
+: 3028 3 0 Then 
+: 3032 9 7 I’ll 
+: 3042 7 7 fol
+: 3050 8 9 low 
+: 3059 5 7 you 
+: 3065 7 5 in
+: 3073 5 2 to 
+: 3079 3 5 the 
+: 3083 11 5 dark
+- 3094 3132
+- 3132
+* 3152 4 5 Then 
+* 3157 8 7 I’ll 
+* 3166 8 7 fol
+* 3175 7 9 low 
+* 3183 10 12 you 
+* 3194 4 9 in
+* 3199 5 7 to 
+* 3205 3 5 the 
+* 3209 13 5 dark
+E

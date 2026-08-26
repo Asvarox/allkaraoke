@@ -1,0 +1,275 @@
+#ARTIST:Rammstein
+#TITLE:Engel
+#CREATOR:Canni
+#BPM:287,8
+#YEAR:1997
+#VIDEO:v=x2rQzv8OWEY
+#LANGUAGE:German
+#GAP:39119,728978457264
+#ALLKARAOKE_ID:rammstein-engel
+#ALLKARAOKE_SID:6183
+#ALLKARAOKE_LASTUPDATE:2026-08-26T00:51:46.337Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:267
+#MP3:Rammstein - Engel.mp3
+F 19 3 14 Wer 
+F 25 2 14 zu 
+F 31 3 14 Leb
+F 37 3 14 zeit 
+F 43 3 14 gut 
+F 49 2 14 auf 
+F 52 5 14 Er
+F 61 3 14 den
+- 64 90
+- 90
+F 109 3 14 Wird 
+F 115 3 14 nach 
+F 121 3 14 dem 
+F 127 3 14 Tod 
+F 133 3 14 ein 
+F 139 2 14 Eng
+F 142 4 14 el 
+F 148 6 14 wer
+F 157 3 15 den
+- 160 186
+- 186
+F 205 3 14 Den 
+F 211 3 14 Blick 
+F 217 3 14 gen 
+F 223 2 14 Him
+F 226 5 14 mel 
+F 235 3 14 fragst 
+F 241 2 14 du 
+F 244 7 14 dann
+- 251 282
+- 282
+F 301 3 14 Wa
+F 307 3 14 rum 
+F 313 3 14 man 
+F 319 4 14 sie 
+F 325 3 14 nicht 
+F 331 2 14 seh
+F 334 4 14 en 
+F 343 5 14 kann
+- 348 391
+- 391
+: 410 3 14 Erst 
+: 416 4 14 wenn 
+: 422 3 14 die 
+: 428 8 14 Wol
+: 440 5 14 ken 
+: 452 8 16 schla
+: 462 3 17 fen 
+: 470 12 16 gehn
+- 482 493
+- 493
+: 512 3 14 Kann 
+: 518 3 14 man 
+: 524 6 14 uns 
+: 536 5 14 am 
+* 548 4 17 Him
+: 556 5 14 mel 
+: 567 9 14 sehn
+- 576 583
+- 583
+: 602 2 21 Wir 
+: 608 4 21 ha
+: 614 2 21 ben 
+: 617 6 21 Angst 
+: 626 3 21 und 
+: 632 5 21 sind 
+: 639 2 19 al
+: 642 15 19 lein
+- 657 685
+- 685
+: 704 5 19 Gott 
+: 716 4 19 weiß 
+: 722 3 19 ich 
+: 728 3 19 will 
+: 734 4 21 kein 
+: 740 4 21 Eng
+: 746 5 14 el 
+* 758 15 14 sein
+- 773 1189
+- 1189
+F 1208 8 14 Sie 
+F 1220 4 14 le
+F 1226 2 14 ben 
+F 1232 4 14 hin
+F 1238 3 14 term 
+F 1244 3 14 Son
+F 1248 2 14 nen
+F 1256 18 14 schein
+- 1274 1290
+- 1290
+F 1309 3 14 Ge
+F 1315 4 14 trennt 
+F 1321 2 14 von 
+F 1324 6 14 uns 
+F 1333 2 14 un
+F 1336 5 14 end
+F 1345 3 14 lich 
+F 1352 8 14 weit
+- 1360 1387
+- 1387
+F 1406 3 14 Sie 
+F 1412 3 14 müs
+F 1418 2 14 sen 
+F 1424 3 14 sich 
+F 1430 2 14 an 
+F 1436 4 14 Ster
+F 1442 2 14 ne 
+F 1448 2 14 kral
+F 1451 4 14 len
+- 1455 1483
+- 1483
+F 1502 4 14 Da
+F 1508 3 14 mit 
+F 1514 3 14 sie 
+F 1520 3 14 nicht 
+F 1526 3 14 vom 
+F 1532 2 14 Him
+F 1536 3 14 mel 
+F 1544 2 14 fal
+F 1547 5 14 len
+- 1552 1591
+- 1591
+: 1610 3 14 Erst 
+: 1616 3 14 wenn 
+: 1622 3 14 die 
+: 1628 8 14 Wol
+: 1640 5 14 ken 
+: 1652 6 16 schla
+: 1663 3 17 fen 
+: 1671 9 16 gehn
+- 1680 1694
+- 1694
+: 1713 4 14 Kann 
+: 1719 4 14 man 
+: 1725 5 14 uns 
+: 1737 5 14 am 
+: 1749 4 17 Him
+: 1757 4 14 mel 
+: 1767 10 14 sehn
+- 1777 1783
+- 1783
+: 1802 3 21 Wir 
+: 1808 4 21 ha
+: 1814 2 21 ben 
+: 1817 6 21 Angst 
+: 1827 3 21 und 
+: 1833 3 21 sind 
+: 1839 2 19 al
+* 1843 15 19 lein
+- 1858 1885
+- 1885
+: 1904 4 31 Gott 
+: 1916 4 31 weiß 
+: 1922 4 31 ich 
+: 1928 4 31 will 
+: 1934 4 33 kein 
+: 1940 4 33 Eng
+: 1946 7 26 el 
+: 1958 16 26 sein
+- 1974 2078
+- 2078
+: 2097 5 22 Gott 
+: 2109 3 21 weiß 
+: 2115 3 21 ich 
+: 2121 3 21 will 
+: 2127 4 22 kein 
+: 2133 6 21 Eng
+: 2141 6 14 el 
+: 2151 18 14 sein
+- 2169 2270
+- 2270
+* 2289 4 22 Gott 
+: 2301 4 21 weiß 
+: 2307 4 21 ich 
+: 2313 4 21 will 
+: 2319 4 22 kein 
+: 2325 4 21 Eng
+: 2331 5 14 el 
+: 2343 18 14 sein
+- 2361 2936
+- 2936
+: 2955 3 14 Erst 
+: 2961 3 14 wenn 
+: 2967 3 14 die 
+: 2973 6 14 Wol
+: 2985 6 14 ken 
+: 2997 6 16 schla
+: 3008 4 17 fen 
+: 3016 14 16 gehn
+- 3030 3038
+- 3038
+: 3057 4 14 Kann 
+: 3063 4 14 man 
+: 3070 5 14 uns 
+: 3082 6 14 am 
+: 3094 5 17 Him
+: 3101 5 14 mel 
+: 3112 10 14 sehn
+- 3122 3128
+- 3128
+: 3147 3 21 Wir 
+: 3153 4 21 ha
+: 3159 2 19 ben 
+: 3162 6 21 Angst 
+: 3171 3 21 und 
+: 3177 4 21 sind 
+: 3184 2 19 al
+: 3187 16 19 lein
+- 3203 3230
+- 3230
+: 3249 4 19 Gott 
+: 3261 4 19 weiß 
+: 3267 3 19 ich 
+: 3273 3 19 will 
+: 3279 4 21 kein 
+: 3285 4 21 Eng
+: 3291 6 21 el 
+* 3303 66 21 sein
+- 3369 3422
+- 3422
+: 3441 5 22 Gott 
+: 3453 4 21 weiß 
+: 3459 3 21 ich 
+: 3465 3 21 will 
+: 3471 4 22 kein 
+: 3477 4 21 Eng
+: 3483 7 14 el 
+: 3495 25 14 sein
+- 3520 3614
+- 3614
+: 3633 6 22 Gott 
+: 3645 4 21 weiß 
+: 3651 4 21 ich 
+: 3657 4 21 will 
+: 3663 4 22 kein 
+: 3669 4 21 Eng
+: 3675 7 14 el 
+: 3687 21 14 sein
+- 3708 3806
+- 3806
+: 3825 4 22 Gott 
+: 3837 4 21 weiß 
+: 3843 3 21 ich 
+: 3849 4 21 will 
+* 3855 4 22 kein 
+: 3861 4 21 Eng
+: 3867 8 14 el 
+: 3879 20 14 sein
+- 3899 3998
+- 3998
+: 4017 4 22 Gott 
+: 4029 4 21 weiß 
+: 4035 3 21 ich 
+: 4041 3 21 will 
+: 4047 4 22 kein 
+: 4053 4 21 Eng
+: 4059 6 14 el 
+: 4071 16 14 sein
+E
