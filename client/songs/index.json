@@ -20764,7 +20764,7 @@
     "gap": 10358.095238095239,
     "year": "2008",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-08-26T00:51:42.011Z",
+    "lastUpdate": "2026-08-25T20:25:29.972Z",
     "genre": "Kpop",
     "realBpm": 126,
     "previewStart": 60,
@@ -23981,6 +23981,35 @@
     "shortId": 637,
     "tracksCount": 1,
     "search": "blursong2",
+    "local": false
+  },
+  {
+    "id": "bo-burnham-that-funny-feeling",
+    "title": "That Funny Feeling",
+    "artist": "Bo Burnham",
+    "video": "ObOqq1knVxs",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 21645.535714285714,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-27T06:26:23.238Z",
+    "genre": "Folk",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "thnitch",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=26477",
+    "duration": 308,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6188,
+    "tracksCount": 1,
+    "search": "boburnhamthatfunnyfeeling",
     "local": false
   },
   {
@@ -40367,7 +40396,7 @@
     "gap": 1450,
     "year": "2002",
     "artistOrigin": "NZ",
-    "lastUpdate": "2026-08-26T00:51:46.621Z",
+    "lastUpdate": "2026-08-25T20:28:02.070Z",
     "realBpm": 120,
     "previewStart": 173,
     "previewEnd": 203,
@@ -42495,7 +42524,7 @@
     "gap": 25091.663893510817,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-26T00:51:45.998Z",
+    "lastUpdate": "2026-08-25T20:26:32.049Z",
     "videoGap": 11,
     "realBpm": 78,
     "volume": 1,
@@ -47546,7 +47575,7 @@
     "bpm": 240,
     "gap": 3250,
     "year": "2006",
-    "lastUpdate": "2026-08-26T00:51:45.590Z",
+    "lastUpdate": "2026-08-25T20:26:08.945Z",
     "genre": "Soundtrack",
     "realBpm": 120,
     "volume": 1,
@@ -71331,7 +71360,7 @@
     "gap": 15880,
     "year": "2011",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-08-26T00:51:46.341Z",
+    "lastUpdate": "2026-08-25T20:27:41.971Z",
     "genre": "Pop",
     "realBpm": 125,
     "previewStart": 43,
@@ -125687,7 +125716,7 @@
     "gap": 5510.384615384615,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-26T00:51:42.004Z",
+    "lastUpdate": "2026-08-25T20:25:03.918Z",
     "realBpm": 156,
     "volume": 1,
     "author": "piharatamo",
@@ -136185,7 +136214,7 @@
     "gap": 39119.728978457264,
     "year": "1997",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-26T00:51:46.337Z",
+    "lastUpdate": "2026-08-25T20:26:58.819Z",
     "realBpm": 96,
     "volume": 1,
     "author": "Canni",
@@ -136355,7 +136384,7 @@
     "gap": 15327.35294117647,
     "year": "2004",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-26T00:51:46.338Z",
+    "lastUpdate": "2026-08-25T20:27:19.544Z",
     "genre": "Metal",
     "realBpm": 136,
     "previewStart": 57,
@@ -151859,6 +151888,34 @@
     "local": false
   },
   {
+    "id": "sombr-back-to-friends",
+    "title": "back to friends",
+    "artist": "sombr",
+    "video": "c8zq4kAn_O0",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 12181.935483870968,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-27T06:26:13.653Z",
+    "genre": "Alternative, Indie",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "juli2109",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6187,
+    "tracksCount": 1,
+    "search": "sombrbacktofriends",
+    "local": false
+  },
+  {
     "id": "sonia-youll-never-stop-me-loving-you",
     "title": "You’ll Never Stop Me Loving You",
     "artist": "Sonia",
@@ -159016,7 +159073,7 @@
     "gap": 3314.9748743718596,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-26T00:51:45.585Z",
+    "lastUpdate": "2026-08-25T20:25:54.284Z",
     "genre": "Country",
     "realBpm": 89,
     "volume": 1,
@@ -175765,7 +175822,7 @@
     "gap": 35596.40340480552,
     "year": "2013",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-08-26T00:51:46.335Z",
+    "lastUpdate": "2026-08-25T20:26:42.884Z",
     "realBpm": 139,
     "volume": 1,
     "author": "daggeg",
