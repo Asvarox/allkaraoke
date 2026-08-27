@@ -9,7 +9,7 @@ import { FeatureFlags } from '~/modules/utils/feature-flags';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
-class Setting<T> extends Listener<[T]> {
+export class Setting<T> extends Listener<[T]> {
   private value: T | undefined = undefined;
 
   public constructor(

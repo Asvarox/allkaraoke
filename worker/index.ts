@@ -6,6 +6,11 @@ import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
 import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
 import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
 import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverified-songs-admin';
+import { handleLeaderboardRead, handleLeaderboardSubmit } from './leaderboard';
+import { handleLeaderboardAdmin } from './leaderboard-admin';
+import { LeaderboardBoard } from './leaderboard-do';
+
+export { LeaderboardBoard };
 
 interface WorkerEnv {
   ADMIN_PANEL_PASSWORD?: string;
@@ -14,6 +19,9 @@ interface WorkerEnv {
   SHARED_SONGS_ADMIN_TOKEN?: string;
   UNVERIFIED_SONGS_KV?: KVNamespace;
   SHARED_SONGS_KV?: KVNamespace;
+  LEADERBOARD_KV?: KVNamespace;
+  LEADERBOARD_BOARD?: DurableObjectNamespace<LeaderboardBoard>;
+  LEADERBOARD_RATE_LIMITER?: { limit: (options: { key: string }) => Promise<{ success: boolean }> };
 }
 
 type WorkerRouteParams = Record<string, string | string[]>;
@@ -81,6 +89,14 @@ export default {
 
     if (pathname === '/admin/unverified-song' || pathname === '/admin/shared-song') {
       return callPagesHandler(unverifiedSongBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/leaderboard') {
+      return request.method === 'GET' ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
+    }
+
+    if (pathname === '/leaderboard-admin') {
+      return handleLeaderboardAdmin(request, env);
     }
 
     if (pathname === '/proxy') {

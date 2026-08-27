@@ -182,7 +182,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
               <NavButton
                 name="play-song-button"
                 size="large"
-                className="mobile:px-10 mobile:h-10 mobile:text-md w-full px-20 py-1 sm:w-auto"
+                className="mobile:px-10 mobile:h-10 mobile:text-md w-full flex-1 px-20 py-1 sm:w-auto"
                 remoteIcon="play"
                 isDefault
                 onClick={handlePlay}>

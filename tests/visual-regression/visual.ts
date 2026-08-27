@@ -14,7 +14,19 @@ const ALL_VIEWPORTS = Object.keys(VIEWPORTS) as ViewportName[];
 // Remote mic screens are only ever used on a phone, so they're captured on the two mobile viewports.
 export const REMOTE_MIC_VIEWPORTS: ViewportName[] = ['mobile-portrait', 'mobile-landscape'];
 
-export type MakeScreenshot = (name?: string, options?: { page?: Page; extraMasks?: Locator[] }) => Promise<void>;
+export type MakeScreenshot = (
+  name?: string,
+  options?: {
+    page?: Page;
+    extraMasks?: Locator[];
+    /**
+     * Capture just this element instead of the whole page. For a screen whose subject is an overlay:
+     * a mask is painted at the masked element's own position, so anything volatile *behind* a modal
+     * would otherwise blank out the modal itself.
+     */
+    locator?: Locator;
+  },
+) => Promise<void>;
 
 type VisualTestFn = (args: {
   page: Page;
@@ -62,7 +74,10 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
         });
 
-        const makeScreenshot: MakeScreenshot = async (name, { page: targetPage = page, extraMasks = [] } = {}) => {
+        const makeScreenshot: MakeScreenshot = async (
+          name,
+          { page: targetPage = page, extraMasks = [], locator } = {},
+        ) => {
           const fileName = name ? `${slug}-${name}-${viewportName}.png` : `${slug}-${viewportName}.png`;
 
           // Fixed-position elements (e.g. the top-right toolbar) are pinned at whatever scroll offset
@@ -70,8 +85,8 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           // down if the page was left scrolled. Reset scroll first so they always land at the top.
           await targetPage.evaluate(() => window.scrollTo(0, 0));
 
-          await expect(targetPage).toHaveScreenshot(fileName, {
-            fullPage: true,
+          await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
+            ...(locator ? {} : { fullPage: true }),
             mask: [
               // Embedded YouTube players (e.g. the song editor's "reference sound" step) load real,
               // ever-changing remote content - mask them rather than fighting that non-determinism.

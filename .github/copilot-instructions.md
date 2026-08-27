@@ -34,7 +34,7 @@ Phones connect via PartyKit (built on Cloudflare Workers). The phone detects pit
 ### Styling
 
 - **Tailwind CSS 4** with `react-twc` for component variants: `twc(Box)\`...\``
-- **MUI** only for song management screens (song list table, song editor, setlist management)
+- **MUI** only for song management screens (song list table, song editor, setlist management) and admin screens
 - ⚠️ **Avoid Emotion/css-in-js** - legacy code exists but prefer Tailwind for new work
 
 ### Testing Patterns

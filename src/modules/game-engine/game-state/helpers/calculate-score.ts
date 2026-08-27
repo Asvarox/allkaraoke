@@ -1,12 +1,12 @@
 import { memoize } from 'es-toolkit';
 
-import { noPointsNoteTypes } from '~/consts';
+import { MAX_POINTS, noPointsNoteTypes } from '~/consts';
 import { DetailedScore, PlayerNote, Song } from '~/interfaces';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import tuple from '~/modules/utils/tuple';
 
-export const MAX_POINTS = 3_500_000;
+export { MAX_POINTS };
 
 const noteTypesMultipliers: DetailedScore = {
   freestyle: 0.25,
