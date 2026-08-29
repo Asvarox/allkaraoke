@@ -58,6 +58,25 @@ describe('LeaderboardBoard', () => {
     expect(entry).not.toHaveProperty('id');
   });
 
+  it('keeps a row sung on Easy off the board, admin listing aside', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ clientId: 'client-easy', tolerance: 3, score: 3_000_000 }), notesBlob);
+    await board.submit(generateSubmission({ clientId: 'client-medium' }), notesBlob);
+
+    expect((await board.projection()).entries).toEqual([expect.objectContaining({ score: 1_500_000, tolerance: 2 })]);
+    expect(await board.listForAdmin()).toHaveLength(2);
+  });
+
+  it('rebuilds the projection over the stored rows on demand', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission(), notesBlob);
+
+    // The write path already rebuilt it; the point is that asking again is safe and reports the board
+    expect(await board.rebuild()).toEqual({ entries: 1 });
+    expect(JSON.parse((await workerEnv.LEADERBOARD_KV!.get(BOARD_KV_KEY))!).entries).toHaveLength(1);
+  });
+
   it('keeps the higher score for a repeated client, song and name', async () => {
     const board = getBoard();
 

@@ -102,6 +102,20 @@ describe('POST /leaderboard', () => {
     expect(await response.json()).toEqual({ error: 'Score out of range' });
   });
 
+  it('rejects a score sung on Easy', async () => {
+    const response = await submit(await generateSubmission({ tolerance: 3 }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Difficulty not eligible' });
+  });
+
+  it('accepts a score sung on Hard', async () => {
+    const response = await submit(await generateSubmission({ tolerance: 1 }));
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ accepted: true });
+  });
+
   it('rejects a non-integer score', async () => {
     const response = await submit(await generateSubmission({ score: 1_500_000.5 }));
 
@@ -241,5 +255,26 @@ describe('/leaderboard-admin', () => {
     // Deletion is the moderation path, so the row must leave the cached board immediately
     const board = await SELF.fetch('https://example.com/leaderboard');
     expect(((await board.json()) as BoardResponse).entries).toHaveLength(0);
+  });
+
+  it('rebuilds the public board on POST and serves the result straight away', async () => {
+    await submit(await generateSubmission());
+
+    const response = await SELF.fetch('https://example.com/leaderboard-admin', {
+      method: 'POST',
+      headers: adminHeaders,
+    });
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ entries: 1 });
+
+    const board = await SELF.fetch('https://example.com/leaderboard');
+    expect(((await board.json()) as BoardResponse).entries).toHaveLength(1);
+  });
+
+  it('refuses an unauthenticated rebuild', async () => {
+    const response = await SELF.fetch('https://example.com/leaderboard-admin', { method: 'POST' });
+
+    expect(response.status).toBe(401);
   });
 });

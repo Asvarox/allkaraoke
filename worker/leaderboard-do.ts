@@ -1,6 +1,7 @@
 import { DurableObject } from 'cloudflare:workers';
 
 // Relative import on purpose: the `~` alias is only configured for the app build, not the Worker one
+import { MAX_QUALIFYING_TOLERANCE } from '../src/modules/leaderboard/consts';
 import {
   AdminBoardEntry,
   BOARD_KV_KEY,
@@ -185,13 +186,19 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     return { accepted: true };
   }
 
-  /** Top {@link BOARD_SIZE} rows of the retention window, in public shape. Never selects `notes`. */
+  /**
+   * Top {@link BOARD_SIZE} rows of the retention window, in public shape. Never selects `notes`.
+   *
+   * The difficulty filter is not only about rows submitted before the rule existed — the admin
+   * listing still shows everything, so the board is where "Medium or harder" has to hold.
+   */
   projection(): BoardResponse {
     const rows = this.sql
       .exec<RecordRow>(
         `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE created_at >= ? ORDER BY score DESC, created_at ASC LIMIT ?`,
+         FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`,
         Date.now() - RETENTION_MS,
+        MAX_QUALIFYING_TOLERANCE,
         BOARD_SIZE,
       )
       .toArray();
@@ -221,6 +228,18 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     await this.rebuildProjection();
 
     return true;
+  }
+
+  /**
+   * Rebuilds the KV projection from the rows as they stand. Nothing else needs this — every write
+   * path rebuilds on its own — but a change to what `projection()` selects (a new filter, a new
+   * board size) only reaches the public board on the next write or the daily alarm, and this is
+   * the way to apply it on deploy instead of waiting a day.
+   */
+  async rebuild(): Promise<{ entries: number }> {
+    await this.rebuildProjection();
+
+    return { entries: this.projection().entries.length };
   }
 
   async alarm() {

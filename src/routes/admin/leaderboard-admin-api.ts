@@ -36,6 +36,18 @@ export const listAdminLeaderboardEntries = async (password: string) => {
   return payload.entries;
 };
 
+/**
+ * Re-runs the server-side projection over the stored rows. The board is rebuilt on every write, so
+ * this is only needed after a deploy that changes what the projection selects — without it the
+ * public board keeps its old contents until the next submission or the daily expiry alarm.
+ */
+export const rebuildAdminLeaderboardProjection = async (password: string) => {
+  const response = await fetch(LEADERBOARD_ADMIN_URL, { method: 'POST', headers: adminHeaders(password) });
+  await assertOk(response);
+
+  return (await response.json()) as { entries: number };
+};
+
 export const deleteAdminLeaderboardEntry = async (password: string, id: string) => {
   const url = new URL(LEADERBOARD_ADMIN_URL, window.location.origin);
   url.searchParams.set('id', id);

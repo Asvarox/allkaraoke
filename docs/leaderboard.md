@@ -32,16 +32,16 @@ copy until it expires.
 | --- | --- |
 | `worker/leaderboard-do.ts` | `LeaderboardBoard` — SQLite storage, projection, expiry alarm |
 | `worker/leaderboard.ts` | `POST` validation + `GET` cache/KV read path |
-| `worker/leaderboard-admin.ts` | Authenticated list + delete |
+| `worker/leaderboard-admin.ts` | Authenticated list, delete, and manual projection rebuild |
 | `src/modules/leaderboard/types.ts` | Shapes shared by client and Worker — must stay dependency-free |
-| `src/modules/leaderboard/consts.ts` | `QUALIFYING_SCORE` and the payload bounds, derived from `MAX_POINTS` |
+| `src/modules/leaderboard/consts.ts` | `QUALIFYING_SCORE`, `MAX_QUALIFYING_TOLERANCE` and the payload bounds |
 | `src/modules/leaderboard/notes-payload.ts` | Delta encoder/decoder for the frequency records |
 | `src/modules/leaderboard/notes-hash.ts` | sha-256 over `notes ++ score`, used on both sides |
 | `src/modules/leaderboard/identity.ts` | localStorage `clientId`, name and country |
 | `src/modules/leaderboard/sharing.ts` | The standing decision: undecided / always / never |
 | `src/routes/game/singing/post-game/views/leaderboard/` | The prompt, the high-scores panel, and the hook holding their shared state |
 | `src/routes/welcome/leaderboard-panel.tsx` | The board on the main menu |
-| `src/routes/admin/leaderboard-management.tsx` | Row deletion |
+| `src/routes/admin/leaderboard-management.tsx` | Row deletion and the rebuild button |
 
 The Worker imports from `src/` with **relative** paths. The `~` alias is only configured for the app
 build, so `~/modules/...` does not resolve inside the Worker bundle or its tests.
@@ -86,6 +86,12 @@ admin deletion is the remedy.
 Artist and title are denormalized so the board renders standalone: no song-index lookup on the
 client, and a removed song does not blank a row.
 
+The public projection selects only rows within the 14-day window whose `tolerance` is Medium or
+harder. It is rebuilt on every write and by the daily alarm, never on deploy — so a change to what
+it selects reaches the board on the next submission, or up to a day later. `POST /leaderboard-admin`
+(the admin panel's **Rebuild public board**) applies it immediately and purges the read cache. Submissions easier than that are already rejected, so the filter is there for rows stored
+before the rule and for the admin listing, which deliberately keeps showing everything.
+
 **Every** accepted submission is stored, not only the ones that currently rank. A "discard anything
 outside the top 50" rule cannot survive the 14-day expiry — discarded rows are unrecoverable, so the
 board would erode toward empty as leaders age out.
@@ -112,6 +118,7 @@ The alarm is scheduled the first time the object is constructed, so no Cron Trig
 - a body over 256 KB,
 - a body that is not msgpack, or is missing a required field,
 - a non-integer score, or one below `QUALIFYING_SCORE` or above `MAX_POINTS`,
+- a `tolerance` easier than `MAX_QUALIFYING_TOLERANCE` (only Medium and Hard count),
 - missing notes, malformed notes, or a record count outside the plausibility bounds,
 - a `notesHash` that does not match a server-side recomputation over `notes ++ score`,
 - a client over the rate limit.
