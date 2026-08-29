@@ -1,7 +1,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "d17dd7ba628478e27022c8a59bf2b3b08ed2a477" };
+		e.SENTRY_RELEASE = { id: "810fdead23f203c592ae0cea321b55387481b99a" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -10,7 +10,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "89bea94a-85d3-4e22-873f-af4cfb09cd32", e._sentryDebugIdIdentifier = "sentry-dbid-89bea94a-85d3-4e22-873f-af4cfb09cd32");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5002fe23-78e9-4b82-9d2c-e64bebf5a5bf", e._sentryDebugIdIdentifier = "sentry-dbid-5002fe23-78e9-4b82-9d2c-e64bebf5a5bf");
 	} catch (e) {}
 })();
 import { DurableObject } from "cloudflare:workers";
@@ -2367,6 +2367,7 @@ var validateSubmission = (payload) => {
 	if (submission.songLastUpdate !== null && submission.songLastUpdate !== void 0 && !isBoundedString(submission.songLastUpdate, 200)) return { message: "Invalid songLastUpdate" };
 	if (!Number.isInteger(submission.score)) return { message: "Invalid score" };
 	if (submission.score < QUALIFYING_SCORE || submission.score > 35e5) return { message: "Score out of range" };
+	if (!Number.isInteger(submission.tolerance) || submission.tolerance < 1 || submission.tolerance > 2) return { message: "Difficulty not eligible" };
 	if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength === 0) return { message: "Missing notes" };
 	let recordCount;
 	try {
@@ -2419,8 +2420,8 @@ var handleLeaderboardRead = async (request, env) => {
 //#endregion
 //#region worker/leaderboard-admin.ts
 /**
-* Authenticated list + delete. Row ids only ever reach the admin UI through here — the public board
-* never carries them.
+* Authenticated list, delete, and a manual projection rebuild. Row ids only ever reach the admin UI
+* through here — the public board never carries them.
 */
 var handleLeaderboardAdmin = async (request, env) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
@@ -2430,6 +2431,11 @@ var handleLeaderboardAdmin = async (request, env) => {
 		headers: responseHeaders$3
 	});
 	if (request.method === "GET") return new Response(JSON.stringify({ entries: await board.listForAdmin() }), { headers: responseHeaders$3 });
+	if (request.method === "POST") {
+		const result = await board.rebuild();
+		await caches.default.delete(boardCacheKey(request));
+		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+	}
 	if (request.method === "DELETE") {
 		const id = new URL(request.url).searchParams.get("id")?.trim();
 		if (!id) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
@@ -2541,10 +2547,15 @@ var LeaderboardBoard = class extends DurableObject {
 		await this.rebuildProjection();
 		return { accepted: true };
 	}
-	/** Top {@link BOARD_SIZE} rows of the retention window, in public shape. Never selects `notes`. */
+	/**
+	* Top {@link BOARD_SIZE} rows of the retention window, in public shape. Never selects `notes`.
+	*
+	* The difficulty filter is not only about rows submitted before the rule existed — the admin
+	* listing still shows everything, so the board is where "Medium or harder" has to hold.
+	*/
 	projection() {
 		const rows = this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE created_at >= ? ORDER BY score DESC, created_at ASC LIMIT ?`, Date.now() - RETENTION_MS, 50).toArray();
+         FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`, Date.now() - RETENTION_MS, 2, 50).toArray();
 		return {
 			generatedAt: Date.now(),
 			entries: rows.map(toBoardEntry)
@@ -2564,6 +2575,16 @@ var LeaderboardBoard = class extends DurableObject {
 		this.sql.exec(`DELETE FROM records WHERE id = ?`, id);
 		await this.rebuildProjection();
 		return true;
+	}
+	/**
+	* Rebuilds the KV projection from the rows as they stand. Nothing else needs this — every write
+	* path rebuilds on its own — but a change to what `projection()` selects (a new filter, a new
+	* board size) only reaches the public board on the next write or the daily alarm, and this is
+	* the way to apply it on deploy instead of waiting a day.
+	*/
+	async rebuild() {
+		await this.rebuildProjection();
+		return { entries: this.projection().entries.length };
 	}
 	async alarm() {
 		const cutoff = Date.now() - RETENTION_MS;
