@@ -4,6 +4,7 @@ import { unpack } from 'msgpackr';
 import {
   MAX_NOTES_RECORDS,
   MAX_POINTS,
+  MAX_QUALIFYING_TOLERANCE,
   MAX_SUBMISSION_BYTES,
   MAX_SUBMITTED_ID_LENGTH,
   MAX_SUBMITTED_NAME_LENGTH,
@@ -95,6 +96,17 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
   if (!Number.isInteger(submission.score)) return { message: 'Invalid score' };
   if (submission.score! < QUALIFYING_SCORE || submission.score! > MAX_POINTS) {
     return { message: 'Score out of range' };
+  }
+
+  // The board only ranks Medium and harder — a wider pitch window is not the same game, and the
+  // client already refuses to offer those scores. Checked here too because the client is not the
+  // authority on what reaches a public board.
+  if (
+    !Number.isInteger(submission.tolerance) ||
+    submission.tolerance! < 1 ||
+    submission.tolerance! > MAX_QUALIFYING_TOLERANCE
+  ) {
+    return { message: 'Difficulty not eligible' };
   }
 
   if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength === 0) {

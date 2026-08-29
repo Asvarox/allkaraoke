@@ -1,4 +1,4 @@
-import { expect, Page, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 import { enableLeaderboard, initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
@@ -19,10 +19,10 @@ const playerCountry = 'Poland';
 /**
  * From the main menu through a full song, stopping on the post-game high scores step.
  *
- * Sung on Easy on purpose: the stubbed microphone scores around 890k on the default difficulty,
- * just under the 1,000,000 the Worker requires, so the submission would be rejected server-side.
+ * Sung on the default Medium: the board refuses anything easier (see MAX_QUALIFYING_TOLERANCE), so
+ * Easy - where the stubbed microphone scores highest - is not an option for a submitting run.
  */
-const singTheSong = async (page: Page) => {
+const singTheSong = async () => {
   await pages.mainMenuPage.goToInputSelectionPage();
   await pages.inputSelectionPage.selectAdvancedSetup();
   await pages.advancedConnectionPage.goToMainMenu();
@@ -35,9 +35,7 @@ const singTheSong = async (page: Page) => {
   await pages.songListPage.approveSelectedSongByKeyboard();
 
   await pages.songPreviewPage.navigateToDifficultySettingsWithKeyboard();
-  await page.keyboard.press('Enter'); // Hard
-  await page.keyboard.press('Enter'); // Easy
-  await pages.songPreviewPage.expectGameDifficultyLevelToBe('Easy');
+  await pages.songPreviewPage.expectGameDifficultyLevelToBe('Medium');
   await pages.songPreviewPage.navigateToGoNextWithKeyboard();
 
   await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
@@ -77,7 +75,7 @@ test.describe('Global leaderboard enabled', () => {
       await expect(pages.leaderboardPage.panel).toBeVisible();
     });
 
-    await singTheSong(page);
+    await singTheSong();
 
     await test.step('The prompt opens on the high scores step', async () => {
       await expect(pages.leaderboardPage.prompt).toBeVisible();
@@ -98,7 +96,7 @@ test.describe('Global leaderboard enabled', () => {
       await pages.landingPage.enterTheGame();
 
       await expect(pages.leaderboardPage.rowFor(playerName).first()).toBeVisible({ timeout: 30_000 });
-      await pages.leaderboardPage.expectRowFor(playerName, 'E2ETest', 'Easy');
+      await pages.leaderboardPage.expectRowFor(playerName, 'E2ETest', 'Medium');
     });
   });
 
@@ -108,7 +106,7 @@ test.describe('Global leaderboard enabled', () => {
     await pages.landingPage.enterTheGame();
 
     await test.step('Opt into sharing every score from the prompt', async () => {
-      await singTheSong(page);
+      await singTheSong();
       await expect(pages.leaderboardPage.prompt).toBeVisible();
       await pages.leaderboardPage.fillIdentity(alwaysPlayerName, playerCountry);
       await pages.leaderboardPage.submit();
@@ -137,7 +135,7 @@ test.describe('Global leaderboard enabled', () => {
     test.slow();
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
-    await singTheSong(page);
+    await singTheSong();
 
     await expect(pages.leaderboardPage.prompt).toBeVisible();
     await pages.leaderboardPage.declineButton.click();
@@ -166,7 +164,7 @@ test.describe('Global leaderboard disabled', () => {
     await expect(pages.mainMenuPage.singSongButton).toBeVisible();
     await expect(page.getByTestId('leaderboard-panel')).toHaveCount(0);
 
-    await singTheSong(page);
+    await singTheSong();
 
     await expect(pages.postGameHighScoresPage.highScoresContainer).toBeVisible();
     await expect(pages.leaderboardPage.prompt).toHaveCount(0);

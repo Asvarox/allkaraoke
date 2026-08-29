@@ -10,6 +10,14 @@ export const QUALIFYING_SCORE_RATIO = 2 / 7;
 
 export const QUALIFYING_SCORE = MAX_POINTS * QUALIFYING_SCORE_RATIO;
 
+/**
+ * Widest pitch tolerance (a sing setup's `tolerance`) the board accepts: 1 = Hard, 2 = Medium,
+ * 3 = Easy, 4+ the dev-only debug widths. Only Medium and harder count — every step widens the
+ * pitch window the scoring uses, so an Easy run reaches the qualifying score for singing that
+ * would not come close on Medium, and the rows would not be comparable.
+ */
+export const MAX_QUALIFYING_TOLERANCE = 2;
+
 /** Request body cap for `POST /leaderboard`. */
 export const MAX_SUBMISSION_BYTES = 256 * 1024;
 

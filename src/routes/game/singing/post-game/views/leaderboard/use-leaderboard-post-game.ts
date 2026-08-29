@@ -41,7 +41,8 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
     return players.sort((first, second) => second.score - first.score)[0] ?? null;
   }, []);
 
-  const qualifies = !!leaderboardEnabled && !!topPlayer && qualifiesForLeaderboard(topPlayer.score);
+  const qualifies =
+    !!leaderboardEnabled && !!topPlayer && qualifiesForLeaderboard(topPlayer.score, singSetup.tolerance);
 
   /**
    * Derived, not seeded from the first render: `useLeaderboardEnabled` reads a PostHog flag that can
