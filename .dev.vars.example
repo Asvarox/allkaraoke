@@ -1,9 +1,11 @@
 UNVERIFIED_SONGS_ADMIN_TOKEN=local-unverified-songs-admin-token
 ADMIN_PANEL_PASSWORD=12345
-# Online mode. Both optional locally: without them the game runs online mode on the Durable Object
-# relay instead of the SFU, and STUN needs no credentials at all.
-REALTIME_APP_ID=your-cloudflare-realtime-app-id
-REALTIME_APP_TOKEN=your-cloudflare-realtime-app-token
+# Online mode. Left commented on purpose: this file gets copied verbatim to .dev.vars, and the
+# Worker treats the presence of these two as "the SFU is configured" — a placeholder value would
+# make it route rooms at an app id that does not exist instead of falling back to the local relay.
+# Fill them in only if you have a real Realtime app and want to exercise the SFU locally.
+# REALTIME_APP_ID=your-cloudflare-realtime-app-id
+# REALTIME_APP_TOKEN=your-cloudflare-realtime-app-token
 
 # TURN is opt-in and never needed to develop. Set either the Cloudflare Realtime TURN pair...
 # REALTIME_TURN_KEY_ID=your-turn-key-id

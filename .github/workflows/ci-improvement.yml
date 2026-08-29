@@ -63,7 +63,13 @@ jobs:
       # Must run before the build: the preview server that serves the E2E suite reads the
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
-        run: cp .dev.vars.example .dev.vars
+        # The Realtime app credentials are stripped rather than merely absent from the example:
+        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
+        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
+        # exercises the same room logic, host runtime and succession path over a local wire.
+        run: |
+          cp .dev.vars.example .dev.vars
+          sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
         run: pnpm build
       - name: Run E2E tests
@@ -192,7 +198,13 @@ jobs:
       # Must run before the build: the preview server that serves the E2E suite reads the
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
-        run: cp .dev.vars.example .dev.vars
+        # The Realtime app credentials are stripped rather than merely absent from the example:
+        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
+        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
+        # exercises the same room logic, host runtime and succession path over a local wire.
+        run: |
+          cp .dev.vars.example .dev.vars
+          sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
