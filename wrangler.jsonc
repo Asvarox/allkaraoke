@@ -36,6 +36,13 @@
 				"name": "ONLINE_DIRECTORY",
 				"class_name": "OnlineDirectory",
 			},
+			{
+				// Server-authoritative online room, used when the OnlineP2P feature flag is off.
+				// Unlike the directory this one is on the message path and stays resident for the
+				// length of a song, which is the cost the P2P mode exists to avoid.
+				"name": "ONLINE_ROOM",
+				"class_name": "OnlineRoom",
+			},
 		],
 	},
 	"migrations": [
@@ -49,6 +56,12 @@
 			"tag": "v2",
 			"new_sqlite_classes": [
 				"OnlineDirectory"
+			],
+		},
+		{
+			"tag": "v3",
+			"new_sqlite_classes": [
+				"OnlineRoom"
 			],
 		},
 	],

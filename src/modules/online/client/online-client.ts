@@ -11,6 +11,7 @@ import {
   SfuRoomMembership,
 } from '~/modules/online/client/transport/interface';
 import { SfuClientTransport } from '~/modules/online/client/transport/sfu-client-transport';
+import { WebSocketRoomTransport } from '~/modules/online/client/transport/web-socket-transport';
 import {
   OnlineHostSnapshot,
   OnlineRoomHost,
@@ -20,7 +21,7 @@ import {
 import { ONLINE_HOST_STALL_MS, ONLINE_PROMOTE_STAGGER_MS } from '~/modules/online/protocol/consts';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { fetchRoomInfo } from '~/modules/online/signaling/directory-client';
+import { fetchRoomInfo, signalingUrl } from '~/modules/online/signaling/directory-client';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
@@ -36,6 +37,18 @@ const getReconnectDelayMs = (attempt: number): number => {
   const cap = Math.min(RECONNECT_MAX_DELAY_MS, RECONNECT_BASE_DELAY_MS * 2 ** attempt);
   return Math.random() * cap;
 };
+
+/**
+ * Where a room's authority lives.
+ *
+ * `server` is the original design: `OnlineRoomLogic` in a Durable Object, every client on a socket
+ * to it. Proven, and billed by the second for the length of every song.
+ *
+ * `p2p` runs the same logic in the host's browser and moves messages over the Cloudflare Realtime
+ * SFU, which is billed on egress instead. Cheaper by orders of magnitude, and newer — hence the
+ * feature flag.
+ */
+export type OnlineRoomMode = 'server' | 'p2p';
 
 export type OnlineConnectionStatus =
   | 'disconnected'
@@ -75,6 +88,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private roomCode: string | null = null;
   private name = '';
   private createRoom = false;
+  /** Which mode this room is running in — see `OnlineRoomMode`. Fixed for the life of a connection:
+   * everyone in a room has to agree, so it is decided when the room is entered and not revisited. */
+  private mode: OnlineRoomMode = 'server';
   private status: OnlineConnectionStatus = 'disconnected';
   private shouldReconnect = false;
   private reconnectAttempts = 0;
@@ -142,7 +158,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.onUpdate(status, detail);
   };
 
-  public connect = (roomCode: string, name: string, { create = false } = {}) => {
+  public connect = (roomCode: string, name: string, { create = false, mode = 'server' as OnlineRoomMode } = {}) => {
     const normalizedRoomCode = roomCode.toLowerCase();
     if (this.transport?.isConnected() && this.roomCode === normalizedRoomCode) {
       return;
@@ -151,10 +167,57 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.roomCode = normalizedRoomCode;
     this.name = name;
     this.createRoom = create;
+    this.mode = mode;
     this.shouldReconnect = true;
     this.hasTrackedConnectAttempt = false;
     this.reconnectAttempts = 0;
-    void this.openRoom(false);
+    void this.open(false);
+  };
+
+  public getMode = () => this.mode;
+
+  private open = (isReconnect: boolean) =>
+    this.mode === 'p2p' ? this.openRoom(isReconnect) : this.openServerRoom(isReconnect);
+
+  /**
+   * Server-authoritative mode: one socket to the room's Durable Object, which runs the same
+   * `OnlineRoomLogic`. No host to elect, nothing to take over — which is exactly why this is the
+   * fallback the P2P flag can be turned off to.
+   */
+  private openServerRoom = async (isReconnect: boolean) => {
+    if (!this.roomCode) return;
+    this.setStatus(isReconnect ? 'reconnecting' : 'connecting');
+
+    const transport = new WebSocketRoomTransport();
+    this.transport = transport;
+    this.stopHeartbeatWatchdog();
+
+    const base = signalingUrl(`/online/server/${this.roomCode}`);
+    const url = new URL(base, global.location.href);
+    url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
+    url.searchParams.set('pid', this.getParticipantId());
+    url.searchParams.set('name', this.name);
+    if (this.createRoom) url.searchParams.set('create', '1');
+
+    transport.addListener(this.handleMessage);
+    transport.open(
+      url.toString(),
+      () => {
+        // wait for the room's join verdict before reporting connected
+      },
+      (event) => {
+        if (this.transport !== transport) return;
+        if (this.status === 'rejected') return;
+        // 4000 = join rejected. The join-rejected message itself can be lost when the room closes
+        // right after sending it (observed on Firefox), so the code is read as well.
+        if (event?.code === 4000) {
+          this.shouldReconnect = false;
+          this.setStatus('rejected', event.reason || 'rejected');
+          return;
+        }
+        this.scheduleReconnect();
+      },
+    );
   };
 
   private scheduleReconnect = () => {
@@ -166,7 +229,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     const delay = getReconnectDelayMs(this.reconnectAttempts);
     this.reconnectAttempts += 1;
     setTimeout(() => {
-      if (this.shouldReconnect) void this.openRoom(true);
+      if (this.shouldReconnect) void this.open(true);
     }, delay);
   };
 
@@ -453,8 +516,17 @@ const ONLINE_HOST_HEARTBEAT_CHECK_MS = 500;
 
 const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
 
-/** Checks whether a room code was actually opened, without claiming a slot in it. */
-export const checkRoomExists = async (roomCode: string): Promise<boolean> =>
-  (await fetchRoomInfo(roomCode))?.created === true;
+/** Checks whether a room code was actually opened, without joining it. The two modes keep their
+ * rooms in different places, so the check has to follow the mode the joiner will use. */
+export const checkRoomExists = async (roomCode: string, mode: OnlineRoomMode = 'server'): Promise<boolean> => {
+  if (mode === 'p2p') return (await fetchRoomInfo(roomCode))?.created === true;
+  try {
+    const response = await fetch(signalingUrl(`/online/server/${roomCode.toLowerCase()}`));
+    if (!response.ok) return false;
+    return ((await response.json()) as { created?: boolean }).created === true;
+  } catch {
+    return false;
+  }
+};
 
 export default new OnlineClient();

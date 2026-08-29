@@ -15,11 +15,14 @@ import type {
   SessionDescriptionDto,
 } from '../src/modules/online/signaling/protocol';
 import type { OnlineDirectory } from './online-directory-do';
+import type { OnlineRoom } from './online-room-do';
 
 export interface OnlineSignalingEnv {
   REALTIME_APP_ID?: string;
   REALTIME_APP_TOKEN?: string;
   ONLINE_DIRECTORY?: DurableObjectNamespace<OnlineDirectory>;
+  /** The server-authoritative room, used when the P2P feature flag is off. */
+  ONLINE_ROOM?: DurableObjectNamespace<OnlineRoom>;
 
   /** Comma-separated STUN URLs. Only worth setting to move off Cloudflare's — STUN is
    * unauthenticated, so the default works with nothing configured. */
@@ -351,6 +354,26 @@ export const handleOnlineSignaling = async (
     // Deliberately not gated on Realtime credentials: STUN needs none, and a checkout without an
     // app configured still runs online mode on the relay, which is exactly when this must answer.
     if (rest === 'ice' && request.method === 'GET') return await handleIceServers(env);
+
+    // Server-authoritative mode: the room logic runs in a Durable Object and every client holds a
+    // socket to it. Selected by the OnlineP2P flag being off; see docs/online-mode.md.
+    if (rest.startsWith('server/')) {
+      const roomCode = rest.slice('server/'.length);
+      if (!ROOM_CODE_PATTERN.test(roomCode)) return badRequest('invalid room code');
+      if (!env.ONLINE_ROOM) return json({ error: 'Online mode is not configured' }, 503);
+
+      const namespace = env.ONLINE_ROOM;
+      const room = namespace.get(namespace.idFromName(roomCode));
+      if (request.headers.get('Upgrade') === 'websocket') {
+        // The room needs its own code and cannot read it from an alarm, so it travels with the
+        // upgrade and is persisted from there.
+        const url = new URL(request.url);
+        url.searchParams.set('code', roomCode);
+        return room.fetch(new Request(url, request));
+      }
+      if (request.method === 'GET') return json({ created: await room.isCreated() });
+      return json({ error: 'Method not allowed' }, 405);
+    }
 
     if (rest === 'session' || rest === 'datachannels') {
       if (!hasRealtimeCredentials) return json({ error: 'Realtime is not configured' }, 503);

@@ -1,7 +1,25 @@
 # Online Mode
 
-Online mode lets people in different places sing the same song together. This document describes
-how it is wired after the move off a hosted room server.
+Online mode lets people in different places sing the same song together. It runs in one of two
+modes, chosen by the `OnlineP2P` feature flag:
+
+| Mode | Authority | Wire | Cost |
+| ---- | --------- | ---- | ---- |
+| `server` (flag off, default) | `OnlineRoomLogic` in a Durable Object | WebSocket per client | Duration, for the length of every song |
+| `p2p` (flag on) | The same logic in the host's browser | Cloudflare Realtime SFU | Egress, a few MB per room |
+
+Both run the *same* `OnlineRoomLogic` and speak the same wire protocol — the only differences are
+where the authority lives and what the messages travel over. That is what makes the flag a real
+switch rather than two codebases.
+
+`server` is the mode online mode shipped with, ported off PartyKit into the Worker this project
+already owns. It is the fallback: proven, and expensive in exactly the way `p2p` exists to fix.
+Everything below describes `p2p` unless it says otherwise.
+
+The mode is read once, in `useOnlineMode`, because everyone in a room has to agree — a joiner
+checks the room code against the mode it is about to connect with. Rooms opened in one mode are
+invisible to the other, so flipping the flag does not migrate rooms that are already running; it
+changes what the next room uses.
 
 ## The shape of it
 
@@ -119,7 +137,13 @@ mid-room. Everything else here is indifferent to that change.
 ## Testing
 
 `room-logic.test.ts` was not touched by any of this — it drives the logic through a harness, which
-is why the logic could move at all.
+is why the logic could move into a browser at all, and why both modes can share it.
+
+`online-room-do.test.ts` drives the server-authoritative room over real sockets, and
+`online-mode-server.spec.ts` runs a full round through it in a browser. The rest of the online
+suite runs `p2p`, because feature flags are forced on under e2e — `useOnlineMode` has an opt-in
+(`useServerOnlineMode` in `tests/helpers.ts`) so the fallback still gets exercised. A mode nobody
+runs is not a fallback.
 
 `online-room-host.test.ts` drives the host runtime against an in-memory fabric standing in for the
 SFU, including a takeover from a snapshot.
@@ -166,6 +190,7 @@ minority of networks, and losing it must not stop everyone else joining.
 | `ONLINE_TURN_URLS` / `_USERNAME` / `_CREDENTIAL`             | no (own TURN)       | `wrangler secret put`, `.dev.vars`              |
 | `ONLINE_STUN_URLS`                                           | no                  | defaults to Cloudflare's public STUN            |
 | `VITE_APP_SIGNALING_URL`                                     | no                  | `.env`; empty means same origin                 |
+| `OnlineP2P` feature flag                                     | no (off = server)   | PostHog                                         |
 
 Create the Realtime app in the Cloudflare dashboard under Realtime → SFU. Without the pair, online
 mode still runs — on the relay — which is fine locally and wrong in production.

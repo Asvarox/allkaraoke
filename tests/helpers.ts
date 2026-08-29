@@ -43,6 +43,17 @@ export const enableLeaderboard = async ({ context }: { page: Page; context: Brow
   });
 };
 
+/**
+ * Runs a spec against the server-authoritative online mode — the Durable Object room the
+ * `OnlineP2P` flag falls back to. Without this the suite exercises P2P, since e2e forces feature
+ * flags on.
+ */
+export const useServerOnlineMode = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2EOnlineServerMode = true;
+  });
+};
+
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;
