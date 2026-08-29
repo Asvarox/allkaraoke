@@ -261,10 +261,10 @@ export class OnlineRoomHost {
   private evictParticipant = (participantId: string) => {
     const slot = this.participantToSlot.get(participantId);
     if (slot !== undefined) this.connection.sendToSlot(slot, { t: 'join-rejected', reason: 'banned' } as never);
-    this.dropParticipant(participantId);
+    this.dropParticipant(participantId, { ban: true });
   };
 
-  private dropParticipant = (participantId: string) => {
+  private dropParticipant = (participantId: string, { ban = false } = {}) => {
     const slot = this.participantToSlot.get(participantId);
     if (slot !== undefined) {
       this.slotToParticipant.delete(slot);
@@ -273,7 +273,9 @@ export class OnlineRoomHost {
     this.subscriptions.removePeer(participantId);
     // Frees *their* slot in the directory so somebody else can take it. Fire-and-forget: the room
     // has already stopped talking to them either way.
-    void this.connection.releaseSlot(participantId);
+    // Banning at the directory as well as in the room logic: the logic's ban list lives in this
+    // tab, and a kicked singer could otherwise re-claim a slot and keep reading the broadcast.
+    void this.connection.releaseSlot(participantId, ban);
   };
 
   /**

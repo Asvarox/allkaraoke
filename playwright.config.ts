@@ -60,6 +60,13 @@ const config: PlaywrightTestConfig = {
         '--use-fake-ui-for-media-stream',
         '--use-fake-device-for-media-stream',
         '--use-file-for-fake-audio-capture=tests/fixtures/test-440hz.wav',
+        // Online mode's host liveness is a timer in a browser tab, and only the focused tab is
+        // exempt from Chromium's background throttling — with several pages per spec (and three
+        // shards competing on one CI runner) the guests' watchdogs would otherwise be clamped and
+        // host succession would look like a hang.
+        '--disable-background-timer-throttling',
+        '--disable-backgrounding-occluded-windows',
+        '--disable-renderer-backgrounding',
         !process.env.CI ? '--use-gl=egl' : '',
       ].filter((arg) => arg !== ''),
     },

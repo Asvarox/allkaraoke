@@ -39,8 +39,8 @@ const createFabric = () => {
     isConnected: () => true,
     keepalive: () => Promise.resolve(),
     leave: () => Promise.resolve(),
-    releaseSlot: (participantId) => {
-      released.push(participantId);
+    releaseSlot: (participantId, ban) => {
+      released.push(ban ? `${participantId}:banned` : participantId);
       return Promise.resolve();
     },
   };

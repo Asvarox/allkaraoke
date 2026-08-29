@@ -77,9 +77,19 @@ export interface DataChannelSpec {
   canReply?: boolean;
 }
 
-/** `POST /online/datachannels` — creates negotiated channels on an existing session. Returns the
- * ids the browser must pass to `createDataChannel(name, { negotiated: true, id })`. */
+/**
+ * `POST /online/datachannels` — creates negotiated channels on an existing session. Returns the
+ * ids the browser must pass to `createDataChannel(name, { negotiated: true, id })`.
+ *
+ * The room code and participant id are not bookkeeping: the Worker checks them against the room
+ * directory and will only open the channels that membership entitles you to. Without that check,
+ * anyone holding a room code could subscribe to another singer's slot — and because Cloudflare
+ * grants reply access to one subscriber at a time, claiming it would also revoke the rightful
+ * occupant's upstream.
+ */
 export interface CreateDataChannelsRequest {
+  roomCode: string;
+  participantId: string;
   sessionId: string;
   channels: DataChannelSpec[];
 }
@@ -126,7 +136,13 @@ export type PromoteHostResponse =
  * a browser that just closes is cleaned up by the directory's own expiry instead. */
 export interface LeaveRoomRequest {
   participantId: string;
+  /** Set by the host when it kicks somebody. The room logic already refuses their `hello`, but
+   * without this they could still hold a slot and keep reading the room's broadcast channel. */
+  ban?: boolean;
 }
+
+/** What the directory says a session is allowed to do, used to authorise channel creation. */
+export type ChannelAuthorization = { ok: true; isHost: boolean; slot: number; hostSessionId: string } | { ok: false };
 
 /**
  * Which wire a room's messages travel on.

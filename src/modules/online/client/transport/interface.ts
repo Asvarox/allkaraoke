@@ -30,8 +30,9 @@ export interface OnlineRoomChannels {
   keepalive(): Promise<unknown>;
   leave(): Promise<unknown>;
   /** Frees somebody else's slot in the directory. Only the host calls this — it is the only side
-   * that can tell that a participant is gone for good rather than momentarily quiet. */
-  releaseSlot(participantId: string): Promise<unknown>;
+   * that can tell that a participant is gone for good rather than momentarily quiet. `ban` marks
+   * a kick, which also stops them re-claiming a slot. */
+  releaseSlot(participantId: string, ban?: boolean): Promise<unknown>;
 }
 
 /**

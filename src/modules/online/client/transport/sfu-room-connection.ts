@@ -112,11 +112,18 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     return promoteHost(this.roomCode, { participantId: this.participantId, sessionId, fromEpoch: membership.epoch });
   };
 
+  /** Undoes a join that could not be completed, so a half-open attempt does not cost a seat. */
+  private releaseOwnMembership = async () => {
+    this.membership = null;
+    await this.leave();
+    this.session.close();
+  };
+
   public keepalive = () => keepaliveRoom(this.roomCode);
 
   public leave = () => leaveRoom(this.roomCode, this.participantId);
 
-  public releaseSlot = (participantId: string) => leaveRoom(this.roomCode, participantId);
+  public releaseSlot = (participantId: string, ban = false) => leaveRoom(this.roomCode, participantId, ban);
 
   private wireChannels = async () => {
     const membership = this.membership!;
@@ -135,7 +142,7 @@ export class SfuRoomConnection implements OnlineRoomConnection {
           },
         ];
 
-    const channels = await this.session.createChannels(specs);
+    const channels = await this.session.createChannels(this.roomCode, this.participantId, specs);
 
     this.broadcastChannel = channels.get(ROOM_BROADCAST_CHANNEL)!;
     // The host does not read its own broadcast (the SFU does not loop it back), but a client does.

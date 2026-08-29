@@ -73,6 +73,17 @@ export class SfuSession {
   /** Opens the peer connection and registers it with the SFU. Resolves with the session id, which
    * is what the room directory identifies this browser's media plane by. */
   public open = async (): Promise<string> => {
+    try {
+      return await this.negotiate();
+    } catch (error) {
+      // Anything from here on leaves a peer connection nobody owns — the caller only ever sees the
+      // rejection, so it cannot close it for us.
+      this.close();
+      throw error;
+    }
+  };
+
+  private negotiate = async (): Promise<string> => {
     const ice = await fetchIceServers();
     const peerConnection = new RTCPeerConnection({
       iceServers: ice?.iceServers ?? FALLBACK_ICE_SERVERS,
@@ -108,10 +119,16 @@ export class SfuSession {
    * are what the host broadcasts on; subscriber channels point at the host's session, and the one
    * with `canReply` is the caller's private upstream pipe.
    */
-  public createChannels = async (specs: DataChannelSpec[]): Promise<Map<string, RTCDataChannel>> => {
+  public createChannels = async (
+    roomCode: string,
+    participantId: string,
+    specs: DataChannelSpec[],
+  ): Promise<Map<string, RTCDataChannel>> => {
     if (!this.peerConnection || !this.sessionId) throw new Error('SFU session is not open');
 
     const { channels } = await postSignaling<CreateDataChannelsResponse>('/online/datachannels', {
+      roomCode,
+      participantId,
       sessionId: this.sessionId,
       channels: specs,
     } satisfies CreateDataChannelsRequest);

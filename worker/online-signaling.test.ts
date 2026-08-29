@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { IceServersResponse } from '../src/modules/online/signaling/protocol';
+import { ChannelAuthorization, IceServersResponse } from '../src/modules/online/signaling/protocol';
 import { handleOnlineSignaling, OnlineSignalingEnv } from './online-signaling';
 
 // Enough of the env to get past the "online mode is not configured" guard; the ICE endpoint never
@@ -95,5 +95,109 @@ describe('ICE servers', () => {
 
     expect(iceServers).toHaveLength(1);
     expect(iceServers[0].urls[0]).toContain('stun:');
+  });
+});
+
+/**
+ * Channel creation is the one place a room code alone could have bought access to another singer's
+ * slot. Cloudflare grants reply access to a single subscriber at a time, so claiming somebody
+ * else's slot would not just eavesdrop — it would cut off the rightful occupant.
+ */
+describe('data channel authorisation', () => {
+  const HOST_SESSION = 'host-session';
+
+  const envWith = (auth: ChannelAuthorization): OnlineSignalingEnv =>
+    ({
+      REALTIME_APP_ID: 'app',
+      REALTIME_APP_TOKEN: 'token',
+      ONLINE_DIRECTORY: {
+        idFromName: () => 'id',
+        get: () => ({ authorize: async () => auth }),
+      },
+    }) as unknown as OnlineSignalingEnv;
+
+  const createChannels = async (auth: ChannelAuthorization, channels: unknown[]) => {
+    const request = new Request('https://example.test/online/datachannels', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ roomCode: 'abcde', participantId: 'p2', sessionId: 's2', channels }),
+    });
+    return (await handleOnlineSignaling(request, envWith(auth), '/online/datachannels'))!;
+  };
+
+  const member: ChannelAuthorization = { ok: true, isHost: false, slot: 2, hostSessionId: HOST_SESSION };
+
+  it('turns away a session the directory does not know', async () => {
+    const response = await createChannels({ ok: false }, [
+      { name: 'slot-2', publisherSessionId: HOST_SESSION, canReply: true },
+    ]);
+
+    expect(response.status).toBe(403);
+  });
+
+  it('refuses a member the reply path on somebody else’s slot', async () => {
+    const response = await createChannels(member, [
+      { name: 'slot-4', publisherSessionId: HOST_SESSION, canReply: true },
+    ]);
+
+    expect(response.status).toBe(403);
+  });
+
+  it('refuses a member the reply path on the broadcast channel', async () => {
+    const response = await createChannels(member, [{ name: 'room', publisherSessionId: HOST_SESSION, canReply: true }]);
+
+    expect(response.status).toBe(403);
+  });
+
+  it('refuses a member publishing its own channels', async () => {
+    const response = await createChannels(member, [{ name: 'room' }]);
+
+    expect(response.status).toBe(403);
+  });
+
+  it('refuses a subscription pointed at a session that is not the host', async () => {
+    const response = await createChannels(member, [
+      { name: 'slot-2', publisherSessionId: 'someone-elses-session', canReply: true },
+    ]);
+
+    expect(response.status).toBe(403);
+  });
+
+  it('allows a member its own slot and the read-only broadcast', async () => {
+    const fetchMock = vi.fn(
+      async () => new Response(JSON.stringify({ dataChannels: [{ dataChannelName: 'room', id: 1 }] }), { status: 200 }),
+    );
+    vi.stubGlobal('fetch', fetchMock);
+
+    const response = await createChannels(member, [
+      { name: 'room', publisherSessionId: HOST_SESSION },
+      { name: 'slot-2', publisherSessionId: HOST_SESSION, canReply: true },
+    ]);
+
+    expect(response.status).toBe(200);
+    expect(fetchMock).toHaveBeenCalled();
+  });
+
+  it('allows the host to publish the broadcast and every slot', async () => {
+    const fetchMock = vi.fn(
+      async () => new Response(JSON.stringify({ dataChannels: [{ dataChannelName: 'room', id: 1 }] }), { status: 200 }),
+    );
+    vi.stubGlobal('fetch', fetchMock);
+
+    const response = await createChannels({ ok: true, isHost: true, slot: 0, hostSessionId: HOST_SESSION }, [
+      { name: 'room' },
+      { name: 'slot-0' },
+      { name: 'slot-5' },
+    ]);
+
+    expect(response.status).toBe(200);
+  });
+
+  it('refuses the host subscribing to anything', async () => {
+    const response = await createChannels({ ok: true, isHost: true, slot: 0, hostSessionId: HOST_SESSION }, [
+      { name: 'slot-3', publisherSessionId: 'another-session' },
+    ]);
+
+    expect(response.status).toBe(403);
   });
 });

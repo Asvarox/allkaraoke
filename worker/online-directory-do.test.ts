@@ -86,6 +86,30 @@ describe('OnlineDirectory', () => {
     expect(await directory.join('newcomer', 'sx', false)).toMatchObject({ ok: true, slot: 3 });
   });
 
+  it('authorises a member only for its own session and slot', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    expect(await directory.authorize('p2', 's2')).toMatchObject({ ok: true, isHost: false, slot: 1 });
+    // Knowing somebody's participant id must not be enough to act as them — the session has to
+    // match the one they actually joined with.
+    expect(await directory.authorize('p2', 'some-other-session')).toEqual({ ok: false });
+    expect(await directory.authorize('never-joined', 'sx')).toEqual({ ok: false });
+  });
+
+  it('refuses a banned participant a slot even though the room logic lives elsewhere', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('kicked', 's2', false);
+
+    await directory.leave('kicked', true);
+
+    // Without this they could re-claim a seat and keep reading the room's broadcast channel, since
+    // the room logic's own ban list only lives in the host's tab.
+    expect(await directory.join('kicked', 's2-new', false)).toEqual({ ok: false, reason: 'banned' });
+  });
+
   it('promotes the claimant and bumps the epoch', async () => {
     const directory = getDirectory();
     const host = await directory.join('p1', 's1', true);

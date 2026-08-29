@@ -61,7 +61,17 @@ export class RelayRoomConnection implements OnlineRoomConnection {
       epoch: result.epoch,
       slot: result.slot,
     };
-    await this.openSocket();
+    try {
+      await this.openSocket();
+    } catch (error) {
+      // The slot is already claimed at this point; hand it back rather than let the directory hold
+      // it until the room expires.
+      this.membership = null;
+      this.socket?.close();
+      this.socket = null;
+      await this.leave();
+      throw error;
+    }
     return { ok: true, membership: this.membership };
   };
 
@@ -81,7 +91,7 @@ export class RelayRoomConnection implements OnlineRoomConnection {
 
   public keepalive = () => keepaliveRoom(this.roomCode);
   public leave = () => leaveRoom(this.roomCode, this.participantId);
-  public releaseSlot = (participantId: string) => leaveRoom(this.roomCode, participantId);
+  public releaseSlot = (participantId: string, ban = false) => leaveRoom(this.roomCode, participantId, ban);
 
   private openSocket = () =>
     new Promise<void>((resolve, reject) => {

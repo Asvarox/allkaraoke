@@ -3,6 +3,7 @@ import { DurableObject } from 'cloudflare:workers';
 // Relative import on purpose: the `~` alias is only configured for the app build, not the Worker one
 import { DIRECTORY_TTL_MS, ONLINE_SLOT_COUNT } from '../src/modules/online/signaling/protocol';
 import type {
+  ChannelAuthorization,
   JoinRoomResponse,
   OnlineDataPlane,
   PromoteHostResponse,
@@ -35,6 +36,7 @@ interface Member {
 
 interface DirectoryState {
   created: boolean;
+  bannedIds: string[];
   epoch: number;
   hostParticipantId: string | null;
   hostSessionId: string | null;
@@ -44,6 +46,7 @@ interface DirectoryState {
 
 const emptyState = (now: number): DirectoryState => ({
   created: false,
+  bannedIds: [],
   epoch: 0,
   hostParticipantId: null,
   hostSessionId: null,
@@ -156,7 +159,16 @@ export class OnlineDirectory extends DurableObject {
 
     const slotTag = tags.find((tag) => tag.startsWith('slot:'));
     if (!slotTag) return;
-    const inbound: RelayInboundFrame = { slot: Number(slotTag.slice('slot:'.length)), message: JSON.parse(raw) };
+    // Guarded like the host branch above: a client can send anything on its socket, and throwing
+    // in this handler is treated as an error for the whole Durable Object — one malformed frame
+    // from anyone holding the room code would take the relay down.
+    let message: unknown;
+    try {
+      message = JSON.parse(raw);
+    } catch {
+      return;
+    }
+    const inbound: RelayInboundFrame = { slot: Number(slotTag.slice('slot:'.length)), message };
     this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(JSON.stringify(inbound)));
   }
 
@@ -168,7 +180,26 @@ export class OnlineDirectory extends DurableObject {
     this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(closed));
   }
 
+  /**
+   * What this session may open channels for. The signaling layer asks before forwarding any
+   * channel request to the SFU — membership here is the only thing standing between a room code
+   * and another singer's private slot.
+   */
+  public authorize(participantId: string, sessionId: string): ChannelAuthorization {
+    const member = this.state.members.find((entry) => entry.participantId === participantId);
+    // The session must be the one this participant actually joined with, or knowing somebody
+    // else's participant id would be enough to borrow their slot.
+    if (!member || member.sessionId !== sessionId || !this.state.hostSessionId) return { ok: false };
+    return {
+      ok: true,
+      isHost: this.state.hostParticipantId === participantId,
+      slot: member.slot,
+      hostSessionId: this.state.hostSessionId,
+    };
+  }
+
   public async join(participantId: string, sessionId: string, create: boolean): Promise<JoinRoomResponse> {
+    if ((this.state.bannedIds ?? []).includes(participantId)) return { ok: false, reason: 'banned' };
     if (!this.state.created) {
       if (!create) return { ok: false, reason: 'not-found' };
       this.state.created = true;
@@ -210,10 +241,16 @@ export class OnlineDirectory extends DurableObject {
     };
   }
 
-  public async leave(participantId: string): Promise<void> {
+  public async leave(participantId: string, ban = false): Promise<void> {
     const before = this.state.members.length;
     this.state.members = this.state.members.filter((member) => member.participantId !== participantId);
-    if (this.state.members.length === before) return;
+    // A ban is recorded even for somebody already gone — the point is that they cannot come back,
+    // and the room logic's own ban list lives in a browser that may not be here much longer.
+    if (ban && !(this.state.bannedIds ??= []).includes(participantId)) {
+      this.state.bannedIds.push(participantId);
+    } else if (this.state.members.length === before) {
+      return;
+    }
     this.electFallbackHost();
     await this.persist();
   }

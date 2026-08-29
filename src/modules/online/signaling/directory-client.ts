@@ -32,8 +32,8 @@ export const joinRoom = (roomCode: string, request: JoinRoomRequest) =>
 export const promoteHost = (roomCode: string, request: PromoteHostRequest) =>
   postSignaling<PromoteHostResponse>(`/online/room/${roomCode}/promote`, request);
 
-export const leaveRoom = (roomCode: string, participantId: string) =>
-  postSignaling(`/online/room/${roomCode}/leave`, { participantId }).catch(() => {
+export const leaveRoom = (roomCode: string, participantId: string, ban = false) =>
+  postSignaling(`/online/room/${roomCode}/leave`, { participantId, ban }).catch(() => {
     // Best-effort: a browser being closed may not get this out at all, which is why the host also
     // releases a slot when the channel behind it drops.
   });

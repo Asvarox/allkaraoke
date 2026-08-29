@@ -1,13 +1,15 @@
 // Relative imports on purpose: the `~` alias is only configured for the app build, not the Worker one
+import { ONLINE_SLOT_COUNT, ROOM_BROADCAST_CHANNEL, slotChannelName } from '../src/modules/online/signaling/protocol';
 import type {
   CreateDataChannelsRequest,
   CreateDataChannelsResponse,
   CreateSessionRequest,
   CreateSessionResponse,
-  JoinRoomRequest,
-  LeaveRoomRequest,
+  DataChannelSpec,
   IceServerDto,
   IceServersResponse,
+  JoinRoomRequest,
+  LeaveRoomRequest,
   OnlineDataPlane,
   PromoteHostRequest,
   SessionDescriptionDto,
@@ -203,10 +205,42 @@ const handleCreateSession = async (request: Request, env: OnlineSignalingEnv) =>
   } satisfies CreateSessionResponse);
 };
 
+/**
+ * Which channels a session may open, given what the directory says about it.
+ *
+ * The host publishes the broadcast and every slot; a member subscribes to the broadcast and to
+ * exactly one slot — its own. Anything else is refused. This is the check that keeps a room code
+ * from being enough to read another singer's slot: Cloudflare hands reply access to one subscriber
+ * at a time, so claiming somebody else's slot would also cut off the rightful occupant.
+ */
+const everySlotChannel = Array.from({ length: ONLINE_SLOT_COUNT }, (_, slot) => slotChannelName(slot));
+
+const isChannelAllowed = (channel: DataChannelSpec, auth: { isHost: boolean; slot: number; hostSessionId: string }) => {
+  if (auth.isHost) {
+    // Publisher channels only — the host subscribes to nobody.
+    if (channel.publisherSessionId) return false;
+    return channel.name === ROOM_BROADCAST_CHANNEL || everySlotChannel.includes(channel.name);
+  }
+  // Members only ever subscribe, and only to the current host's session.
+  if (channel.publisherSessionId !== auth.hostSessionId) return false;
+  // The broadcast is read-only for everyone but the host.
+  if (channel.name === ROOM_BROADCAST_CHANNEL) return !channel.canReply;
+  return channel.name === slotChannelName(auth.slot);
+};
+
 const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEnv) => {
   const body = (await request.json().catch(() => null)) as CreateDataChannelsRequest | null;
   if (!body?.sessionId || !Array.isArray(body.channels) || body.channels.length === 0) {
     return badRequest('sessionId and channels required');
+  }
+  if (!ROOM_CODE_PATTERN.test(body.roomCode ?? '') || !body.participantId) {
+    return badRequest('roomCode and participantId required');
+  }
+
+  const auth = await getDirectory(env, body.roomCode).authorize(body.participantId, body.sessionId);
+  if (!auth.ok) return json({ error: 'Not a member of this room' }, 403);
+  if (!body.channels.every((channel) => isChannelAllowed(channel, auth))) {
+    return json({ error: 'Not allowed on this channel' }, 403);
   }
 
   const result = await callRealtime<{ dataChannels: Array<{ dataChannelName: string; id: number }> }>({
@@ -264,9 +298,9 @@ const handleRoom = async (
     return json(await directory.join(participantId, sessionId, create === true));
   }
   if (action === 'leave') {
-    const { participantId } = (body ?? {}) as unknown as LeaveRoomRequest;
+    const { participantId, ban } = (body ?? {}) as unknown as LeaveRoomRequest;
     if (!participantId) return badRequest('participantId required');
-    await directory.leave(participantId);
+    await directory.leave(participantId, ban === true);
     return json({ ok: true });
   }
   if (action === 'promote') {

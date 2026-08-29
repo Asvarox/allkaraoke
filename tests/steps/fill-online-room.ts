@@ -15,6 +15,17 @@ export async function fillOnlineRoom(roomCode: string): Promise<WebSocket[]> {
   const origin = new URL(baseURL).origin;
   const sockets: WebSocket[] = [];
 
+  try {
+    return await openFillerSockets(roomCode, origin, sockets);
+  } catch (error) {
+    // The caller only gets the rejection, so it has no handle on the seats already taken — closing
+    // them here keeps a failed setup from leaving a room permanently full for the rest of the run.
+    sockets.forEach((socket) => socket.close());
+    throw error;
+  }
+}
+
+async function openFillerSockets(roomCode: string, origin: string, sockets: WebSocket[]): Promise<WebSocket[]> {
   for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
     const participantId = crypto.randomUUID();
 

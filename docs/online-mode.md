@@ -9,7 +9,7 @@ One participant is the **host**: the room's authority runs in their browser tab.
 client. Clients never talk to each other — they talk to the host, and the host tells them what the
 room looks like. If the host disappears, the next singer in line takes over.
 
-```
+```text
 Host browser                         Cloudflare                    Client browsers
 ────────────                         ──────────                    ───────────────
 OnlineRoomLogic                                                    OnlineClient

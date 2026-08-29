@@ -334,13 +334,16 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       if (Date.now() - this.lastHeartbeatAt < ONLINE_HOST_STALL_MS) return;
       if (this.connection !== connection) return;
 
-      const restoreFrom = this.lastHostSnapshot ?? takeStashedHostSnapshot(this.roomCode!);
       const result = await connection.promote();
       if (!result.ok) {
         // The rejection is the notification: it carries whoever did win.
         if (result.hostSessionId) await this.followNewHost(result.epoch, result.hostSessionId);
         return;
       }
+      // Read only now that the claim has landed: taking the stash consumes it, and losing a race
+      // is the normal outcome for everyone but one candidate — they must keep theirs for the next
+      // stall.
+      const restoreFrom = this.lastHostSnapshot ?? takeStashedHostSnapshot(this.roomCode!);
 
       const membership: SfuRoomMembership = {
         isHost: true,
