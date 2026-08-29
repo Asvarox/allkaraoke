@@ -2,6 +2,26 @@
  * The biggest chart in the game is ~30 KB raw (a few KB gzipped), so this is generous. */
 export const ONLINE_MAX_CHART_BYTES = 512 * 1024;
 
+/** How often the host broadcasts a heartbeat. Every client watches this: it is the only signal
+ * that distinguishes a room where nothing is happening from a host whose tab got throttled into
+ * the background, and the room's authority now lives in a browser that can do exactly that. */
+export const ONLINE_HOST_HEARTBEAT_MS = 1_000;
+
+/** No heartbeat for this long and the host is presumed gone — the succession path starts. Several
+ * beats' worth, because a foregrounded tab under load (pitch detection, video, rendering) can miss
+ * one without being in any trouble. */
+export const ONLINE_HOST_STALL_MS = 4_000;
+
+/** How often the host rebroadcasts its snapshot for the succession line. Slow on purpose: it only
+ * has to be fresh enough that a takeover is not visibly behind, and everything in it that changes
+ * fast (the leaderboard, player stats) is republished on its own channel anyway. */
+export const ONLINE_SNAPSHOT_BROADCAST_MS = 2_000;
+
+/** Clients do not all rush the promotion endpoint at once: each waits its rank in the succession
+ * order times this before claiming. The obvious successor lands first and everyone else's claim
+ * comes back as a stale epoch, which is also how they learn who won. */
+export const ONLINE_PROMOTE_STAGGER_MS = 750;
+
 /** How long a disconnected participant keeps their spot (and the host their role) before removal. */
 export const ONLINE_RECONNECT_GRACE_MS = 15_000;
 

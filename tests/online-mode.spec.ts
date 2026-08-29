@@ -5,12 +5,14 @@ import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
+import { fillOnlineRoom } from './steps/fill-online-room';
 import { joinOnlineRoom } from './steps/join-online-room';
 import { newPlayerPage } from './steps/new-player-page';
 import { openOnlinePauseOverlay } from './steps/open-online-pause-overlay';
 import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
-// The online room server (partykit dev) is started via the webServer entry in playwright.config.ts
+// Online mode's signaling and (in this suite) its relay data plane are part of the Worker that
+// serves the app — see docs/online-mode.md. No separate room server to start.
 
 const song = {
   ID: 'e2e-single-english-1995',
@@ -385,38 +387,9 @@ test('Online mode: a full room rejects the next joiner', async ({ page, context,
 
   const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
-  // Fill every remaining seat with a bare WebSocket connection straight to the partykit room —
-  // the same `pid`/`name` query-string join the real client uses (see online-client.ts), just
-  // without the browser tab, React app or fake mic stream around it. Five *real* guest tabs each
-  // holding a live fake-audio capture reliably deadlocks Chromium's fake-audio backend, so seats
-  // are filled at the protocol level here and only the final, rejected join goes through the
-  // real UI — which is the part actually under test.
   const fillerSockets: WebSocket[] = [];
   try {
-    for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
-      const socket = new WebSocket(
-        `ws://localhost:1999/party/${roomCode}?pid=${crypto.randomUUID()}&name=Filler+${seat}`,
-      );
-      fillerSockets.push(socket);
-      await new Promise<void>((resolve, reject) => {
-        const timer = setTimeout(() => reject(new Error(`Filler socket ${seat} timed out joining`)), 10_000);
-        socket.addEventListener('message', (event) => {
-          const message = JSON.parse(event.data.toString());
-          if (message.t === 'joined') {
-            clearTimeout(timer);
-            resolve();
-          }
-        });
-        socket.addEventListener('error', () => {
-          clearTimeout(timer);
-          reject(new Error(`Filler socket ${seat} failed to join`));
-        });
-        socket.addEventListener('close', () => {
-          clearTimeout(timer);
-          reject(new Error(`Filler socket ${seat} closed before joining`));
-        });
-      });
-    }
+    fillerSockets.push(...(await fillOnlineRoom(roomCode)));
     await expect(pages.onlineLobbyPage.participantElement(ONLINE_MAX_PLAYERS - 1)).toBeVisible();
 
     await test.step('The room is at capacity — the next singer is turned away after the wizard, not before', async () => {

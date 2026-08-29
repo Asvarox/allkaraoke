@@ -9,10 +9,12 @@ import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverif
 import { handleLeaderboardRead, handleLeaderboardSubmit } from './leaderboard';
 import { handleLeaderboardAdmin } from './leaderboard-admin';
 import { LeaderboardBoard } from './leaderboard-do';
+import { OnlineDirectory } from './online-directory-do';
+import { handleOnlineSignaling, OnlineSignalingEnv } from './online-signaling';
 
-export { LeaderboardBoard };
+export { LeaderboardBoard, OnlineDirectory };
 
-interface WorkerEnv {
+interface WorkerEnv extends OnlineSignalingEnv {
   ADMIN_PANEL_PASSWORD?: string;
   ASSETS?: Fetcher;
   UNVERIFIED_SONGS_ADMIN_TOKEN?: string;
@@ -68,8 +70,13 @@ const callPagesHandler = (
 };
 
 export default {
-  fetch(request, env, executionContext) {
+  async fetch(request, env, executionContext) {
     const { pathname } = new URL(request.url);
+
+    // Online mode's signaling: SFU session/datachannel setup and the room directory. The message
+    // path itself never comes here — it runs host-to-client over the SFU.
+    const onlineResponse = await handleOnlineSignaling(request, env, pathname);
+    if (onlineResponse) return onlineResponse;
 
     if (pathname === '/unverified-songs' || pathname === '/shared-songs') {
       return callPagesHandler(unverifiedSongsOnRequest as PagesLikeHandler, request, env, executionContext);

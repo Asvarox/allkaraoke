@@ -1,6 +1,0 @@
-{
-  "$schema": "https://www.partykit.io/schema.json",
-  "name": "allkaraoke-online",
-  "main": "partykit/online-room.ts",
-  "compatibilityDate": "2026-07-05"
-}

@@ -94,6 +94,10 @@ export interface OnlineRoomState {
   finishRequestedAt: number | null;
   leaderboard: LeaderboardEntry[];
   finalResults: OnlineFinalResult[] | null;
+  /** Bumped by the room directory on every host change. Clients carry it into their promotion
+   * claim, which the directory accepts only if it still matches — that is what stops two singers
+   * who noticed the same stall from both becoming host. */
+  hostEpoch: number;
 }
 
 /** What the host is currently focusing in the song browser — shown live to the other singers,
@@ -151,4 +155,45 @@ interface OnlinePongMessage {
   t: 'pong';
 }
 
-export type OnlineMessages = RpcMessages<OnlineSubscriptionChannels> | OnlinePingMessage | OnlinePongMessage;
+/**
+ * First thing a client sends on its slot channel. The SFU tells the host which slot a frame came
+ * in on but nothing about who owns it, so this is where a slot gets bound to a participant — it
+ * carries exactly what the old server read off the connection URL.
+ */
+export interface OnlineHelloMessage {
+  t: 'hello';
+  participantId: string;
+  name: string;
+  create: boolean;
+}
+
+/**
+ * The host's running state, broadcast so that whoever succeeds it can pick the room up mid-song
+ * instead of dumping everyone back into a lobby.
+ *
+ * `state` is deliberately opaque here. Its real shape is `OnlinePersistedState`, which is *derived
+ * from* the room logic's own `snapshot()` so a field cannot be persisted without being in the type;
+ * naming it in this file would invert that (room-logic imports this one) and let the two drift.
+ * The compressed chart is not in it — it is the only large field and every client already caches
+ * its own copy from `selection.getChart`, so a successor re-injects that rather than being sent it
+ * a few times a minute for the whole song.
+ */
+export interface OnlineSnapshotMessage {
+  t: 'snapshot';
+  state: unknown;
+}
+
+/** Broadcast by the host at ONLINE_HOST_HEARTBEAT_MS. Its absence is what triggers succession, and
+ * the epoch it carries lets a client that reconnected to a newer host notice it is behind. */
+export interface OnlineHeartbeatMessage {
+  t: 'hb';
+  epoch: number;
+}
+
+export type OnlineMessages =
+  | RpcMessages<OnlineSubscriptionChannels>
+  | OnlinePingMessage
+  | OnlinePongMessage
+  | OnlineHelloMessage
+  | OnlineHeartbeatMessage
+  | OnlineSnapshotMessage;
