@@ -127,7 +127,6 @@ export default defineConfig({
               durableObjects: {
                 LEADERBOARD_BOARD: { className: 'LeaderboardBoard', useSQLite: true },
                 ONLINE_DIRECTORY: { className: 'OnlineDirectory', useSQLite: true },
-                ONLINE_ROOM: { className: 'OnlineRoom', useSQLite: true },
               },
               bindings: {
                 ADMIN_PANEL_PASSWORD: 'admin-password',
@@ -135,10 +134,6 @@ export default defineConfig({
             },
           }),
         ],
-        // The Worker build resolves `~` through tsconfigPaths, but the workers pool does not — and
-        // the server-authoritative room pulls in app modules (OnlineRoomLogic and the RPC core)
-        // that import through the alias.
-        resolve: { alias: { '~': path.resolve(__dirname, 'src') } },
         test: {
           name: 'functions',
           include: ['functions/**/*.test.ts', 'worker/**/*.test.ts'],

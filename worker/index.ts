@@ -10,10 +10,9 @@ import { handleLeaderboardRead, handleLeaderboardSubmit } from './leaderboard';
 import { handleLeaderboardAdmin } from './leaderboard-admin';
 import { LeaderboardBoard } from './leaderboard-do';
 import { OnlineDirectory } from './online-directory-do';
-import { OnlineRoom } from './online-room-do';
 import { handleOnlineSignaling, OnlineSignalingEnv } from './online-signaling';
 
-export { LeaderboardBoard, OnlineDirectory, OnlineRoom };
+export { LeaderboardBoard, OnlineDirectory };
 
 interface WorkerEnv extends OnlineSignalingEnv {
   ADMIN_PANEL_PASSWORD?: string;

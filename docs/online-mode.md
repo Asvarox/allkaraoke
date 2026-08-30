@@ -5,15 +5,24 @@ modes, chosen by the `OnlineP2P` feature flag:
 
 | Mode | Authority | Wire | Cost |
 | ---- | --------- | ---- | ---- |
-| `server` (flag off, default) | `OnlineRoomLogic` in a Durable Object | WebSocket per client | Duration, for the length of every song |
+| `server` (flag off, **default**) | `OnlineRoomLogic` in the PartyKit room | WebSocket per client | Duration, for the length of every song |
 | `p2p` (flag on) | The same logic in the host's browser | Cloudflare Realtime SFU | Egress, a few MB per room |
 
 Both run the *same* `OnlineRoomLogic` and speak the same wire protocol — the only differences are
 where the authority lives and what the messages travel over. That is what makes the flag a real
 switch rather than two codebases.
 
-`server` is the mode online mode shipped with, ported off PartyKit into the Worker this project
-already owns. It is the fallback: proven, and expensive in exactly the way `p2p` exists to fix.
+`server` is the original online mode, untouched: `partykit/online-room.ts`, deployed to PartyKit by
+CI, reached at `VITE_APP_ONLINE_PARTYKIT_URL`. It is the base, and it stays the default until P2P
+has earned the switch.
+
+**This is a migration, not a permanent pair.** The flag exists so P2P can be rolled out gradually
+and turned off in one click. Once it has proved itself, the intended end state is P2P everywhere
+and the removal of everything behind `server`: the PartyKit project and its deployment, the
+`partykit` dependency, both CI deploy steps, `VITE_APP_ONLINE_PARTYKIT_URL`, the webServer entry in
+`playwright.config.ts`, `WebSocketRoomTransport`, `openServerRoom`, `OnlineRoomMode` and this
+table. `OnlineRoomLogic` itself stays — it is shared.
+
 Everything below describes `p2p` unless it says otherwise.
 
 The mode is read once, in `useOnlineMode`, because everyone in a room has to agree — a joiner
@@ -139,11 +148,10 @@ mid-room. Everything else here is indifferent to that change.
 `room-logic.test.ts` was not touched by any of this — it drives the logic through a harness, which
 is why the logic could move into a browser at all, and why both modes can share it.
 
-`online-room-do.test.ts` drives the server-authoritative room over real sockets, and
-`online-mode-server.spec.ts` runs a full round through it in a browser. The rest of the online
-suite runs `p2p`, because feature flags are forced on under e2e — `useOnlineMode` has an opt-in
-(`useServerOnlineMode` in `tests/helpers.ts`) so the fallback still gets exercised. A mode nobody
-runs is not a fallback.
+`online-mode-server.spec.ts` runs a full round through the original PartyKit mode. The rest of the
+online suite runs `p2p`, because feature flags are forced on under e2e — `useOnlineMode` has an
+opt-in (`useServerOnlineMode` in `tests/helpers.ts`) so the default still gets covered. The mode
+that is live in production must not be the one nobody runs.
 
 `online-room-host.test.ts` drives the host runtime against an in-memory fabric standing in for the
 SFU, including a takeover from a snapshot.
@@ -190,10 +198,12 @@ minority of networks, and losing it must not stop everyone else joining.
 | `ONLINE_TURN_URLS` / `_USERNAME` / `_CREDENTIAL`             | no (own TURN)       | `wrangler secret put`, `.dev.vars`              |
 | `ONLINE_STUN_URLS`                                           | no                  | defaults to Cloudflare's public STUN            |
 | `VITE_APP_SIGNALING_URL`                                     | no                  | `.env`; empty means same origin                 |
+| `VITE_APP_ONLINE_PARTYKIT_URL`                               | server mode         | `.env`; the PartyKit room deployment            |
 | `OnlineP2P` feature flag                                     | no (off = server)   | PostHog                                         |
 
 Create the Realtime app in the Cloudflare dashboard under Realtime → SFU. Without the pair, online
 mode still runs — on the relay — which is fine locally and wrong in production.
 
-Local development: `pnpm start` is the whole thing. The `@cloudflare/vite-plugin` runs the Worker
-inside the dev server, so `/online/*` is served same-origin on port 3000 with no second process.
+Local development: `pnpm dev` runs the vite dev server (with the Worker inside it, via
+`@cloudflare/vite-plugin`, so `/online/*` is same-origin on port 3000) and `partykit dev` for the
+server-mode room. `pnpm start` alone is enough if you only need P2P.

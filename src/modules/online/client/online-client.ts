@@ -21,7 +21,8 @@ import {
 import { ONLINE_HOST_STALL_MS, ONLINE_PROMOTE_STAGGER_MS } from '~/modules/online/protocol/consts';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { fetchRoomInfo, signalingUrl } from '~/modules/online/signaling/directory-client';
+import { fetchRoomInfo } from '~/modules/online/signaling/directory-client';
+import isE2E from '~/modules/utils/is-e2-e';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
@@ -41,14 +42,20 @@ const getReconnectDelayMs = (attempt: number): number => {
 /**
  * Where a room's authority lives.
  *
- * `server` is the original design: `OnlineRoomLogic` in a Durable Object, every client on a socket
- * to it. Proven, and billed by the second for the length of every song.
+ * `server` is the original design, unchanged: `OnlineRoomLogic` in the PartyKit room, every client
+ * on a socket to it. It is the default and the base — proven in production, and billed by the
+ * second for the length of every song.
  *
  * `p2p` runs the same logic in the host's browser and moves messages over the Cloudflare Realtime
  * SFU, which is billed on egress instead. Cheaper by orders of magnitude, and newer — hence the
- * feature flag.
+ * feature flag, so it can be rolled out gradually and turned off in one click. Once it has proved
+ * itself, `server` and everything behind it can go.
  */
 export type OnlineRoomMode = 'server' | 'p2p';
+
+// E2E runs against the local `partykit dev` server started by the Playwright webServer config
+export const getOnlinePartyKitServer = (): string =>
+  isE2E() ? 'ws://localhost:1999' : (import.meta.env.VITE_APP_ONLINE_PARTYKIT_URL ?? 'ws://localhost:1999');
 
 export type OnlineConnectionStatus =
   | 'disconnected'
@@ -180,9 +187,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.mode === 'p2p' ? this.openRoom(isReconnect) : this.openServerRoom(isReconnect);
 
   /**
-   * Server-authoritative mode: one socket to the room's Durable Object, which runs the same
-   * `OnlineRoomLogic`. No host to elect, nothing to take over — which is exactly why this is the
-   * fallback the P2P flag can be turned off to.
+   * The original online mode: one socket to the PartyKit room, which runs the same
+   * `OnlineRoomLogic` server-side. No host to elect, nothing to take over — which is exactly why
+   * this is what the P2P flag falls back to.
    */
   private openServerRoom = async (isReconnect: boolean) => {
     if (!this.roomCode) return;
@@ -192,16 +199,13 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.transport = transport;
     this.stopHeartbeatWatchdog();
 
-    const base = signalingUrl(`/online/server/${this.roomCode}`);
-    const url = new URL(base, global.location.href);
-    url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
-    url.searchParams.set('pid', this.getParticipantId());
-    url.searchParams.set('name', this.name);
-    if (this.createRoom) url.searchParams.set('create', '1');
+    // pid identifies the participant; the connection id (_pk) stays unique per socket so a
+    // stale socket closing (e.g. quick reconnects/StrictMode remounts) can't evict a fresh one
+    const url = `${getOnlinePartyKitServer()}/party/${this.roomCode}?pid=${this.getParticipantId()}&name=${encodeURIComponent(this.name)}${this.createRoom ? '&create=1' : ''}`;
 
     transport.addListener(this.handleMessage);
     transport.open(
-      url.toString(),
+      url,
       () => {
         // wait for the room's join verdict before reporting connected
       },
@@ -516,16 +520,26 @@ const ONLINE_HOST_HEARTBEAT_CHECK_MS = 500;
 
 const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
 
-/** Checks whether a room code was actually opened, without joining it. The two modes keep their
- * rooms in different places, so the check has to follow the mode the joiner will use. */
+const CHECK_ROOM_EXISTS_TIMEOUT_MS = 5_000;
+
+/** Checks (over HTTP) whether a room code was actually opened, without joining it. The two modes
+ * keep their rooms in different places — PartyKit and the room directory — so the check has to
+ * follow the mode the joiner is about to use. */
 export const checkRoomExists = async (roomCode: string, mode: OnlineRoomMode = 'server'): Promise<boolean> => {
   if (mode === 'p2p') return (await fetchRoomInfo(roomCode))?.created === true;
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), CHECK_ROOM_EXISTS_TIMEOUT_MS);
   try {
-    const response = await fetch(signalingUrl(`/online/server/${roomCode.toLowerCase()}`));
+    const base = getOnlinePartyKitServer().replace(/^ws/, 'http');
+    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`, { signal: controller.signal });
     if (!response.ok) return false;
-    return ((await response.json()) as { created?: boolean }).created === true;
+    const data = (await response.json()) as { created?: boolean };
+    return !!data.created;
   } catch {
     return false;
+  } finally {
+    clearTimeout(timeout);
   }
 };
 

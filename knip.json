@@ -2,6 +2,7 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": [
     "peer-js-server.js",
+    "partykit/online-room.ts",
     "src/main.tsx",
     "vite-plugin-html-prerender/src/**/*.ts",
     "scripts/**/*.ts"

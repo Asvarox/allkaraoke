@@ -8,13 +8,15 @@ import { newPlayerPage } from './steps/new-player-page';
 import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
 /**
- * The server-authoritative mode: `OnlineRoomLogic` in a Durable Object with every client on a
- * socket to it, which is what the `OnlineP2P` feature flag falls back to.
+ * The original online mode: `OnlineRoomLogic` in the PartyKit room with every client on a socket
+ * to it. This is the default and the base — the `OnlineP2P` flag is what moves a room off it.
  *
- * The rest of the online suite runs P2P, so this is the coverage that keeps the fallback honest —
- * a mode nobody exercises is not a fallback. One full round is enough: both modes share the room
- * logic and the wire protocol, so what is actually under test here is the Durable Object around
- * them and the client's server-mode transport.
+ * The rest of the online suite runs P2P, since feature flags are forced on under e2e, so this is
+ * what keeps the default covered. One full round is enough: both modes share the room logic and
+ * the wire protocol, so what is under test here is the PartyKit room and the client's server-mode
+ * transport.
+ *
+ * The room server is started by the webServer entry in playwright.config.ts.
  */
 
 const song = {
