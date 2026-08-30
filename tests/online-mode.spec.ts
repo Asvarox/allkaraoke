@@ -387,9 +387,8 @@ test('Online mode: a full room rejects the next joiner', async ({ page, context,
 
   const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
-  const fillerSockets: WebSocket[] = [];
+  const fillers = await fillOnlineRoom(browser, roomCode);
   try {
-    fillerSockets.push(...(await fillOnlineRoom(roomCode)));
     await expect(pages.onlineLobbyPage.participantElement(ONLINE_MAX_PLAYERS - 1)).toBeVisible();
 
     await test.step('The room is at capacity — the next singer is turned away after the wizard, not before', async () => {
@@ -404,7 +403,8 @@ test('Online mode: a full room rejects the next joiner', async ({ page, context,
       await overflowPage.context().close();
     });
   } finally {
-    fillerSockets.forEach((socket) => socket.close());
+    // Closing the context drops the filler sockets and frees their seats.
+    await fillers.close();
   }
 });
 
