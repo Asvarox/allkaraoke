@@ -1,0 +1,222 @@
+#ARTIST:The Beatles
+#TITLE:Blackbird
+#CREATOR:choosie
+#BPM:372
+#YEAR:1968
+#VIDEO:v=Man4Xw8Xypo
+#LANGUAGE:English
+#GAP:3631,935483870968
+#ALLKARAOKE_ID:the-beatles-blackbird
+#ALLKARAOKE_SID:6223
+#ALLKARAOKE_LASTUPDATE:2026-08-30T02:49:31.188Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=12547
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:139
+#MP3:The Beatles - Blackbird.mp3
+: 25 6 19 Black
+: 33 6 19 bird 
+: 41 3 19 sin
+: 45 2 19 ging 
+: 49 2 19 in 
+: 53 2 16 the 
+: 57 4 19 dead 
+: 62 6 26 of 
+: 73 36 26 night
+- 109 112
+- 112
+: 137 6 21 Take 
+: 145 6 19 these 
+: 153 3 21 bro
+: 157 2 21 ken 
+: 161 12 21 wings 
+: 177 4 19 and 
+: 183 2 21 learn
+: 187 4 24 ~ 
+: 193 2 26 to 
+: 197 3 21 fly
+: 201 10 23 ~
+- 211 242
+- 242
+: 267 8 21 All 
+: 279 8 23 your 
+* 291 44 19 life
+- 335 340
+- 340
+: 365 2 19 You 
+: 369 2 19 were 
+: 373 12 19 on
+: 387 4 21 ly 
+: 393 4 23 wait
+: 399 4 21 ing
+- 403
+: 411 2 19 For 
+: 415 4 16 this 
+: 421 12 21 mo
+: 435 4 19 ment 
+: 443 2 23 to 
+: 447 4 21 a
+: 453 32 19 rise
+- 485 592
+- 592
+* 617 6 19 Black
+* 625 6 19 bird 
+: 633 3 19 sin
+: 637 2 19 ging 
+: 641 2 19 in 
+: 645 2 16 the 
+: 649 2 19 dead 
+: 653 8 26 of 
+: 665 40 26 night
+- 705
+: 729 6 23 Take 
+: 737 6 19 these 
+: 745 3 21 sun
+: 749 2 21 ken 
+: 753 10 21 eyes 
+: 769 2 19 and 
+: 773 2 21 lea
+: 777 4 24 ~rn 
+: 783 2 26 to 
+: 787 2 21 see
+: 791 12 23 ~
+- 803 831
+- 831
+: 856 8 21 All 
+: 868 8 23 your 
+: 880 28 19 life
+- 908 928
+- 928
+: 953 2 19 You 
+: 957 2 19 were 
+: 961 12 19 on
+: 975 2 21 ly 
+* 979 6 23 wai
+* 987 4 21 ting
+- 991
+: 997 2 19 For 
+: 1001 4 16 this 
+: 1007 12 21 mo
+: 1021 4 19 ment 
+: 1029 4 23 to 
+: 1034 2 21 be
+: 1037 4 16 ~ 
+: 1045 20 19 free
+- 1065
+: 1077 20 24 Black
+: 1101 26 19 bird 
+: 1132 44 19 fly
+- 1176 1178
+- 1178
+* 1203 20 24 Black
+* 1227 26 19 bird 
+: 1259 38 19 fly
+- 1297
+: 1311 6 19 In
+: 1318 2 17 to 
+: 1321 2 14 the 
+: 1326 9 17 light 
+: 1337 2 14 of 
+: 1340 2 14 a 
+: 1344 4 12 dark 
+: 1351 4 10 bla
+: 1356 5 5 ~ck 
+: 1365 28 7 night
+- 1393 1794
+- 1794
+: 1819 20 24 Black
+: 1842 26 19 bird 
+: 1873 28 19 fly
+- 1901 1920
+- 1920
+: 1945 20 24 Black
+: 1969 26 19 bird 
+: 2001 32 19 fly
+- 2033
+* 2051 6 19 In
+* 2059 2 17 to 
+* 2063 2 14 the 
+* 2067 8 17 light 
+: 2077 2 14 of 
+: 2081 2 14 a 
+: 2085 4 12 dark 
+: 2093 3 10 bla
+: 2097 4 5 ~ck 
+: 2106 24 7 night
+- 2130 2538
+- 2538
+: 2563 6 19 Black
+: 2571 6 19 bird 
+: 2579 3 19 sin
+: 2583 2 19 ging 
+: 2587 2 19 in 
+: 2591 2 16 the 
+: 2595 4 19 dead 
+: 2601 6 26 of 
+: 2611 40 26 night
+- 2651
+: 2675 6 23 Take 
+: 2683 6 19 these 
+* 2691 3 21 bro
+* 2695 2 21 ken 
+* 2699 12 21 wings 
+: 2715 2 19 and 
+: 2719 2 21 lea
+: 2723 6 24 ~rn 
+: 2731 2 26 to 
+: 2735 2 21 fly
+: 2739 14 23 ~
+- 2753 2776
+- 2776
+: 2801 8 21 All 
+: 2811 6 23 your 
+: 2819 20 19 life
+- 2839 2872
+- 2872
+: 2897 2 19 You 
+: 2901 2 19 were 
+: 2905 12 19 on
+: 2919 2 16 ly 
+: 2925 4 23 wait
+: 2931 4 21 ing
+- 2935
+: 2941 2 19 For 
+: 2945 4 16 this 
+* 2951 12 21 mo
+* 2965 4 19 ment 
+: 2973 4 23 to 
+: 2978 4 21 a
+: 2985 14 19 rise
+- 2999
+: 3020 2 19 You 
+: 3024 2 19 were 
+: 3029 12 19 on
+: 3043 4 21 ly 
+: 3051 4 23 wait
+: 3057 4 21 ing
+- 3061
+: 3067 2 19 For 
+: 3071 4 16 this 
+: 3077 12 21 mo
+: 3091 4 23 ment 
+: 3099 3 21 to 
+: 3103 5 19 a
+: 3111 22 19 rise
+- 3133
+: 3146 2 19 You 
+: 3150 2 19 were 
+: 3154 6 19 on
+: 3161 2 21 ly 
+: 3166 4 23 wait
+: 3172 4 21 ing
+- 3176
+: 3191 4 19 For 
+: 3197 4 16 this 
+: 3203 12 21 mo
+: 3217 4 19 ment 
+: 3225 4 23 to 
+* 3230 4 21 a
+* 3238 4 21 rise
+* 3244 40 19 ~.
+E

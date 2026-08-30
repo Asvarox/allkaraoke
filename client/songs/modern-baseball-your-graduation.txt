@@ -1,0 +1,430 @@
+#ARTIST:Modern Baseball
+#TITLE:Your Graduation
+#CREATOR:strumd
+#BPM:739
+#YEAR:2014
+#PREVIEWSTART:85
+#VIDEO:v=MbrUzJlTffs
+#GENRE:Emo
+#LANGUAGE:English,
+#GAP:20996,412719891745
+#ALLKARAOKE_ID:modern-baseball-your-graduation
+#ALLKARAOKE_SID:6199
+#ALLKARAOKE_LASTUPDATE:2026-08-30T02:49:16.219Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:185
+#ALLKARAOKE_PREVIEWEND:132
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:186
+#VERSION:1.1.0
+#AUDIO:Modern Baseball - Your Graduation.mp3
+#COVER:Modern Baseball - Your Graduation [CO].jpg
+#COMMENT:Created with Nautilus
+: 49 3 -1 It's 
+: 57 12 -1 been 
+: 72 13 3 three 
+: 89 12 6 whole 
+: 104 6 6 years 
+: 113 3 6 of 
+: 121 9 6 me 
+: 137 4 8 think
+: 144 2 8 ing 
+: 151 3 6 'bout 
+: 161 5 6 you 
+: 169 4 3 eve
+: 176 2 3 ry
+: 184 14 6 day
+- 198
+: 209 4 6 Some
+: 218 4 6 times 
+: 226 3 6 for 
+: 232 14 6 ho
+: 248 2 6 urs 
+: 257 8 8 some
+: 271 13 6 times 
+: 289 4 6 in 
+: 297 10 3 pass
+: 313 13 6 ing
+- 326
+: 344 6 6 Saw 
+: 352 3 6 you 
+: 359 13 6 from 
+: 377 2 6 the 
+: 384 14 8 bot
+: 400 6 8 tom 
+: 408 4 6 of 
+: 415 3 6 the 
+: 424 11 3 stair
+: 440 10 6 case
+- 450
+: 456 6 6 Stood 
+: 464 9 6 out 
+: 478 7 6 for 
+: 488 13 6 ho
+: 503 4 6 urs 
+: 512 11 6 as 
+: 528 10 4 you 
+: 544 9 4 com
+: 560 16 3 plained
+- 576
+: 599 10 3 A
+: 615 13 3 bout 
+: 632 5 3 how 
+: 639 4 3 you 
+: 645 7 3 have
+: 655 3 3 n't 
+: 663 7 3 seen 
+: 671 4 3 your 
+: 680 11 1 friends 
+: 696 12 -1 yet
+- 708
+: 728 7 3 That 
+: 743 17 3 you're 
+: 768 9 4 too 
+: 783 10 3 drunk 
+: 798 2 3 to 
+: 807 13 6 stand 
+: 825 9 3 and 
+: 839 17 1 you 
+: 864 15 3 not 
+: 886 8 1 know
+: 896 19 3 ing 
+: 945 2 1 If 
+: 949 4 1 you 
+: 956 5 -1 can 
+: 965 17 1 love 
+: 989 12 1 him 
+: 1008 5 3 for
+: 1015 6 1 ev
+: 1024 14 -1 er
+- 1038 1062
+- 1062
+: 1111 7 6 Bull
+: 1127 20 6 shit 
+: 1151 6 8 you 
+: 1167 7 6 fuck
+: 1181 4 6 ing 
+: 1191 6 3 miss 
+: 1206 8 6 me
+- 1214
+: 1216 13 6 There 
+: 1232 8 6 I 
+: 1247 7 6 said 
+: 1256 2 6 it 
+: 1260 5 6 I 
+: 1269 4 6 guess 
+: 1277 4 6 I'll 
+: 1286 5 11 talk 
+: 1296 3 11 to 
+: 1302 14 11 you 
+: 1318 4 11 in 
+: 1324 4 11 a 
+: 1333 11 11 few 
+: 1349 14 10 months
+- 1363
+: 1394 5 10 Sit
+: 1401 4 10 ting 
+: 1413 9 13 drunk 
+: 1429 5 13 on 
+: 1436 3 13 the 
+: 1445 10 11 side
+: 1462 5 10 walk
+- 1467
+: 1472 8 15 I 
+: 1486 9 15 guess 
+: 1502 5 15 I'll 
+: 1512 6 15 get 
+: 1520 7 13 up
+- 1527
+: 1534 8 15 I 
+: 1550 8 15 guess 
+: 1566 4 15 I'll 
+: 1575 4 15 go 
+: 1583 5 13 for 
+: 1591 13 11 a 
+: 1621 13 8 walk
+- 1634
+: 1655 4 15 Brushed 
+: 1663 5 15 my 
+: 1671 6 18 shoes 
+: 1679 5 18 a
+: 1687 4 18 gainst 
+: 1695 3 18 the 
+: 1703 4 15 pave
+: 1719 13 13 ment
+- 1732
+: 1746 3 15 I
+: 1765 15 15 swear 
+: 1782 4 15 this 
+: 1789 4 15 has 
+: 1798 6 18 got
+: 1806 3 18 ta 
+: 1814 3 18 be 
+: 1820 4 18 the 
+: 1829 3 15 hun
+: 1845 8 13 dredth 
+: 1859 4 16 time
+: 1885 14 15 I've 
+: 1909 9 18 thought 
+: 1920 37 15 of 
+: 1991 19 15 you 
+: 2016 19 13 to
+: 2039 54 11 night
+- 2093
+: 2116 22 3 You 
+: 2141 18 3 weren't 
+: 2165 6 4 the 
+: 2174 19 3 on
+: 2198 5 1 ly 
+: 2207 21 -1 one 
+: 2230 3 1 who 
+: 2239 18 3 thought 
+: 2261 4 1 of 
+: 2270 7 3 us 
+: 2291 26 1 that 
+: 2325 5 3 way
+- 2330
+: 2373 20 3 I 
+: 2406 27 3 spend 
+: 2437 18 3 most 
+: 2469 10 3 nights 
+: 2485 4 -1 a
+: 2493 28 1 wake 
+: 2533 14 3 wide 
+: 2549 3 -1 a
+: 2557 6 -1 wake
+- 2563 2579
+- 2579
+: 2628 30 15 I 
+: 2662 13 15 nev
+: 2678 3 16 er 
+: 2687 16 15 thought 
+: 2710 5 13 that 
+: 2717 20 11 I 
+: 2740 7 13 oh 
+: 2749 18 15 I 
+: 2770 2 13 would 
+: 2779 19 15 see 
+: 2802 3 13 the 
+: 2812 5 15 day
+- 2817 2818
+- 2818
+: 2867 10 6 Where 
+: 2880 6 15 I'd 
+: 2891 6 15 just 
+: 2907 8 15 let 
+: 2923 9 15 you 
+: 2937 19 15 go 
+: 2961 4 15 let 
+: 2969 4 15 you 
+: 2977 3 15 walk
+: 2994 4 11 a
+: 3003 18 13 way
+- 3021 3138
+- 3138
+: 3187 7 6 Where 
+: 3195 5 6 I'd 
+: 3203 4 15 let 
+: 3213 8 15 you 
+: 3227 3 15 walk
+: 3251 4 10 a
+: 3259 15 11 way 
+: 3282 4 6 Used 
+: 3290 3 6 to 
+: 3300 11 3 call 
+: 3314 3 3 you 
+: 3324 8 6 crook 
+: 3338 5 6 called 
+: 3347 4 6 you 
+: 3354 4 6 a 
+: 3364 11 1 ban
+: 3380 6 3 dit
+- 3386
+: 3395 7 3 There 
+: 3404 12 3 ain't 
+: 3420 7 3 no 
+: 3429 13 3 oth
+: 3445 4 3 er 
+: 3457 7 6 good 
+: 3472 11 4 damn 
+: 3488 10 4 rea
+: 3504 10 3 son 
+: 3521 16 3 why
+- 3537
+: 3563 7 3 My 
+: 3572 11 3 heart 
+: 3586 5 6 it 
+: 3593 3 6 would 
+: 3602 11 6 go 
+: 3618 3 1 mis
+: 3627 7 3 sing
+- 3634
+: 3639 3 3 For 
+: 3649 9 3 so 
+: 3662 8 3 man
+: 3672 5 3 y 
+: 3683 7 3 months 
+: 3696 7 3 so 
+: 3705 14 6 I 
+: 3723 6 4 was 
+: 3739 7 3 wish
+: 3752 7 3 ing 
+: 3763 11 -1 that 
+: 3794 15 3 you
+- 3809
+: 3826 9 3 That 
+: 3841 4 3 you 
+: 3847 2 3 would 
+: 3856 6 3 stop 
+: 3866 3 3 pre
+: 3875 11 1 tend
+: 3892 10 -1 ing
+- 3902
+: 3917 4 3 Re
+: 3924 5 3 mem
+: 3932 5 3 ber 
+: 3941 12 3 all 
+: 3955 3 3 those 
+: 3964 11 3 count
+: 3980 5 3 less 
+: 3992 11 6 nights 
+: 4012 5 3 when 
+: 4019 8 3 I 
+: 4036 14 1 told 
+: 4057 7 3 you 
+: 4067 10 1 I 
+: 4083 10 6 loved 
+: 4100 14 3 you?
+- 4114
+: 4136 2 3 And 
+: 4146 10 1 you'd 
+: 4162 19 1 nev
+: 4187 7 1 er 
+: 4200 2 1 for
+: 4210 7 1 get 
+: 4219 4 -1 it
+- 4223
+: 4235 9 3 Oh 
+: 4250 6 3 just 
+: 4264 2 -1 for
+: 4273 9 1 get 
+: 4287 23 15 You 
+: 4312 16 15 weren't 
+: 4337 7 16 the 
+: 4345 16 15 on
+: 4368 2 13 ly 
+: 4378 19 11 one 
+: 4400 3 13 who 
+: 4410 20 15 thought 
+: 4433 5 13 of 
+: 4442 8 15 us 
+: 4463 22 13 that 
+: 4496 5 15 way
+- 4501
+: 4541 2 6 And 
+: 4546 18 15 I 
+: 4578 23 15 spend 
+: 4608 18 15 most 
+: 4640 10 15 nights 
+: 4657 4 11 a
+: 4664 25 13 wake 
+: 4703 14 15 wide 
+: 4720 4 11 a
+: 4727 4 11 wake
+- 4731 4750
+- 4750
+: 4799 2 13 I
+: 4833 13 15 nev
+: 4849 3 16 er 
+: 4857 17 15 thought 
+: 4881 5 13 that 
+: 4888 22 11 I 
+: 4912 6 13 oh 
+: 4921 19 15 I 
+: 4942 2 13 would 
+: 4952 18 15 see 
+: 4975 2 13 the 
+: 4985 4 15 day
+- 4989 4991
+- 4991
+: 5040 11 6 Where 
+: 5054 7 15 I'd 
+: 5064 6 15 just 
+: 5080 7 15 let 
+: 5095 10 15 you 
+: 5110 22 15 go 
+: 5134 2 15 let 
+: 5143 4 15 you 
+: 5151 3 15 walk
+: 5168 4 11 a
+: 5176 19 13 way
+- 5195 5310
+- 5310
+: 5359 4 6 Where 
+: 5365 7 6 I'd 
+: 5376 2 15 let 
+: 5386 13 15 you 
+: 5401 6 15 walk
+: 5426 4 10 a
+: 5433 16 11 way
+- 5449 6415
+- 6415
+: 6464 22 15 You 
+: 6488 17 15 weren't 
+: 6512 5 16 the 
+: 6520 19 15 on
+: 6543 4 13 ly 
+: 6551 22 11 one 
+: 6574 2 13 who 
+: 6583 19 15 thought 
+: 6604 4 13 of 
+: 6614 7 15 us 
+: 6632 28 13 that 
+: 6669 5 15 way
+- 6674
+: 6717 19 15 I 
+: 6750 24 15 spend 
+: 6781 18 15 most 
+: 6813 9 15 nights 
+: 6830 4 11 a
+: 6838 25 13 wake 
+: 6878 13 15 wide 
+: 6893 3 11 a
+: 6902 7 11 wake
+- 6909 6926
+- 6926
+: 6975 26 15 I 
+: 7007 13 15 nev
+: 7022 2 16 er 
+: 7031 15 15 thought 
+: 7053 6 13 that 
+: 7061 20 11 I 
+: 7084 7 13 oh 
+: 7092 20 15 I 
+: 7115 3 13 would 
+: 7124 19 15 see 
+: 7149 3 13 the 
+: 7158 5 15 day
+- 7163 7164
+- 7164
+: 7213 10 6 Where 
+: 7227 7 15 I'd 
+: 7238 6 15 just 
+: 7254 8 15 let 
+: 7269 9 15 you 
+: 7287 18 15 go 
+: 7307 4 15 let 
+: 7316 5 15 you 
+: 7323 2 15 walk
+: 7341 6 11 a
+: 7349 17 13 way
+- 7366 7485
+- 7485
+: 7534 6 6 Go 
+: 7542 4 6 a
+: 7550 5 15 head 
+: 7557 9 15 and 
+: 7573 6 15 walk
+: 7598 7 10 a
+: 7608 19 11 way
+E

@@ -5263,6 +5263,35 @@
     "local": false
   },
   {
+    "id": "ajr-inertia",
+    "title": "Inertia",
+    "artist": "AJR",
+    "video": "QyDAEaxBkkI",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.74,
+    "gap": 8278.249018249018,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:22.811Z",
+    "realBpm": 176,
+    "previewStart": 43,
+    "previewEnd": 70,
+    "volume": 0.94,
+    "author": "blackcat6",
+    "duration": 221,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6211,
+    "tracksCount": 1,
+    "search": "ajrinertia",
+    "local": false
+  },
+  {
     "id": "ajr-worlds-smallest-violin",
     "title": "World’s Smallest Violin",
     "artist": "AJR",
@@ -10270,6 +10299,34 @@
     "shortId": 274,
     "tracksCount": 1,
     "search": "annenmaykantereitbarfussamklavier",
+    "local": false
+  },
+  {
+    "id": "annenmaykantereit-ich-geh-heut-nicht-mehr-tanzen",
+    "title": "Ich geh heut nicht mehr tanzen",
+    "artist": "AnnenMayKantereit",
+    "video": "MKyj6lYHfT8",
+    "language": [
+      "German"
+    ],
+    "bpm": 253.5,
+    "gap": 14054.082840236686,
+    "year": "2018",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-30T02:49:26.242Z",
+    "realBpm": 122,
+    "volume": 0.54,
+    "author": "haistshomie666",
+    "sourceUrl": "https://youtu.be/MKyj6lYHfT8",
+    "duration": 266,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6215,
+    "tracksCount": 1,
+    "search": "annenmaykantereitichgehheutnichtmehrtanzen",
     "local": false
   },
   {
@@ -23995,7 +24052,7 @@
     "gap": 21645.535714285714,
     "year": "2021",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-27T06:26:23.238Z",
+    "lastUpdate": "2026-08-26T16:33:33.454Z",
     "genre": "Folk",
     "realBpm": 76,
     "volume": 1,
@@ -33127,6 +33184,35 @@
     "local": false
   },
   {
+    "id": "celtas-cortos-tranquilo-majete",
+    "title": "Tranquilo majete",
+    "artist": "Celtas Cortos",
+    "video": "JK8ZPtUASr8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 400,
+    "gap": 30487.5,
+    "year": "1993",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-08-30T02:49:16.028Z",
+    "genre": "Folk-Rock Latino",
+    "videoGap": 4,
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Toarman",
+    "duration": 256,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6196,
+    "tracksCount": 1,
+    "search": "celtascortostranquilomajete",
+    "local": false
+  },
+  {
     "id": "centimillimental-kizuato",
     "title": "Kizuato",
     "artist": "Centimillimental",
@@ -36690,6 +36776,33 @@
     "shortId": 4870,
     "tracksCount": 1,
     "search": "coldchiselkhesanh",
+    "local": false
+  },
+  {
+    "id": "cold-chisel-when-the-war-is-over",
+    "title": "When The War Is Over",
+    "artist": "Cold Chisel",
+    "video": "HoS1Fr9G46I",
+    "language": [
+      "English"
+    ],
+    "bpm": 367.25,
+    "gap": -42.882232811436324,
+    "year": "1982",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-08-30T02:49:26.241Z",
+    "genre": "Rock",
+    "realBpm": 93,
+    "volume": 1,
+    "duration": 266,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6214,
+    "tracksCount": 1,
+    "search": "coldchiselwhenthewarisover",
     "local": false
   },
   {
@@ -41097,6 +41210,35 @@
     "local": false
   },
   {
+    "id": "dave-matthews-band-crash-into-me",
+    "title": "Crash Into Me",
+    "artist": "Dave Matthews Band",
+    "video": "k7in-9E3ImQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.7,
+    "gap": 17595.42500820479,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:30.775Z",
+    "genre": "Pop",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "theecnemelc",
+    "sourceUrl": "https://www.youtube.com/watch?v=k7in-9E3ImQ",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6220,
+    "tracksCount": 1,
+    "search": "davematthewsbandcrashintome",
+    "local": false
+  },
+  {
     "id": "dave-rodgers-deja-vu",
     "title": "Deja Vu",
     "artist": "Dave Rodgers",
@@ -45052,6 +45194,33 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-kein-alkohol-ist-auch-keine-loesung",
+    "title": "Kein Alkohol (ist auch keine Lösung)!",
+    "artist": "Die Toten Hosen",
+    "video": "HFmzrCAocq8",
+    "language": [
+      "German"
+    ],
+    "bpm": 340,
+    "gap": 4905.294117647059,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-30T02:49:14.310Z",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6191,
+    "tracksCount": 1,
+    "search": "dietotenhosenkeinalkoholistauchkeineloesung",
+    "local": false
+  },
+  {
     "id": "die-toten-hosen-pushed-again",
     "title": "Pushed Again",
     "artist": "Die Toten Hosen",
@@ -47193,6 +47362,33 @@
     "shortId": 1281,
     "tracksCount": 1,
     "search": "disneysmoanahowfarillgo",
+    "local": false
+  },
+  {
+    "id": "disneys-mulan-comme-un-homme",
+    "title": "Comme un homme",
+    "artist": "Disney’s Mulan",
+    "video": "cVWrCr2Hh1A",
+    "language": [
+      "French"
+    ],
+    "bpm": 218.75,
+    "gap": 85590,
+    "year": "1998",
+    "lastUpdate": "2026-08-30T02:49:30.629Z",
+    "genre": "Soundtrack",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "khorne59",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6219,
+    "tracksCount": 1,
+    "search": "disneysmulancommeunhomme",
     "local": false
   },
   {
@@ -56122,6 +56318,33 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-steven-rodriguez-ruthlessness",
+    "title": "Ruthlessness",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)",
+    "video": "skVSbITX4kY",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.54,
+    "gap": 26831.234592745383,
+    "year": "2024",
+    "lastUpdate": "2026-08-30T02:49:21.465Z",
+    "genre": "Musical",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6210,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransstevenrodriguezruthlessness",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-talya-sindel-done-for",
     "title": "Done For",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Talya Sindel)",
@@ -56177,6 +56400,37 @@
     "shortId": 5880,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranstalyasindelthereareotherways",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-teagan-earley-luke-holt-cast-of-epic-god-games",
+    "title": "God Games",
+    "artist": "EPIC: The Musical (Teagan Earley, Luke Holt, Cast of EPIC)",
+    "video": "dA8R3XNdXjQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 5700,
+    "year": "2024",
+    "lastUpdate": "2026-08-30T02:49:13.780Z",
+    "genre": "Musical",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Andore",
+    "sourceUrl": "https://www.youtube.com/watch?v=z_5Hokpu0vg",
+    "duration": 345,
+    "tracks": [
+      {
+        "start": 20
+      },
+      {
+        "start": 384
+      }
+    ],
+    "shortId": 6190,
+    "tracksCount": 2,
+    "search": "epicthemusicalteaganearleylukeholtcastofepicgodgames",
     "local": false
   },
   {
@@ -63490,6 +63744,34 @@
     "local": false
   },
   {
+    "id": "gareth-emery-standerwick-feat-haliene-saving-light",
+    "title": "Saving Light",
+    "artist": "Gareth Emery & Standerwick feat. Haliene",
+    "video": "1UTYlATnHhI",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 52949.230769230766,
+    "year": "2017",
+    "lastUpdate": "2026-08-30T02:49:29.712Z",
+    "genre": "Trance",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "bigrip",
+    "sourceUrl": "Gareth Emery & Standerwick feat. Haliene",
+    "duration": 356,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6218,
+    "tracksCount": 1,
+    "search": "garethemerystanderwickfeathalienesavinglight",
+    "local": false
+  },
+  {
     "id": "garfield-y-sus-amigos-amigo-es",
     "title": "Amigo es",
     "artist": "Garfield y sus Amigos",
@@ -65548,6 +65830,34 @@
     "shortId": 1746,
     "tracksCount": 1,
     "search": "ginuwinepony",
+    "local": false
+  },
+  {
+    "id": "girl-in-red-i-wanna-be-your-girlfriend",
+    "title": "I Wanna Be Your Girlfriend",
+    "artist": "girl in red",
+    "video": "XCOPQ02pY2o",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.48,
+    "gap": 173.78052518647178,
+    "year": "2018",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-08-30T02:49:17.522Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=XCOPQ02pY2o",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6202,
+    "tracksCount": 1,
+    "search": "girlinrediwannabeyourgirlfriend",
     "local": false
   },
   {
@@ -75541,6 +75851,33 @@
     "local": false
   },
   {
+    "id": "ikkimel-keta-und-krawall",
+    "title": "KETA UND KRAWALL",
+    "artist": "Ikkimel",
+    "video": "RiFfJ-mPBTg",
+    "language": [
+      "German"
+    ],
+    "bpm": 314,
+    "gap": 10526.815286624204,
+    "year": "2023",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-30T02:49:17.525Z",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "Viktor1234678",
+    "duration": 136,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6203,
+    "tracksCount": 1,
+    "search": "ikkimelketaundkrawall",
+    "local": false
+  },
+  {
     "id": "il-volo-grande-amore",
     "title": "Grande amore",
     "artist": "Il Volo",
@@ -77452,6 +77789,35 @@
     "shortId": 2027,
     "tracksCount": 1,
     "search": "irohasasakifeatmikuhatsunemoon",
+    "local": false
+  },
+  {
+    "id": "iron-maiden-fear-of-the-dark",
+    "title": "Fear Of The Dark",
+    "artist": "Iron Maiden",
+    "video": "ZtO687uyKVw",
+    "language": [
+      "English"
+    ],
+    "bpm": 215.2,
+    "gap": 51574.163568773234,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:18.819Z",
+    "genre": "Heavy Metal",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "RetroGirl",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=23439",
+    "duration": 436,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6204,
+    "tracksCount": 1,
+    "search": "ironmaidenfearofthedark",
     "local": false
   },
   {
@@ -84854,6 +85220,34 @@
     "local": false
   },
   {
+    "id": "jovanotti-un-raggio-di-sole",
+    "title": "Un raggio di sole",
+    "artist": "Jovanotti",
+    "video": "uL3f-NDaxjM",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 224,
+    "gap": 25813.535714285714,
+    "year": "1999",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-08-30T02:49:18.969Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Jovanotti",
+    "sourceUrl": "https://www.youtube.com/watch?v=uL3f-NDaxjM&list=RDuL3f-NDaxjM&start_radio=1",
+    "duration": 292,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6206,
+    "tracksCount": 1,
+    "search": "jovanottiunraggiodisole",
+    "local": false
+  },
+  {
     "id": "jovenes-pordioseros-descontrolado",
     "title": "Descontrolado",
     "artist": "Jóvenes Pordioseros",
@@ -90808,6 +91202,34 @@
     "shortId": 2370,
     "tracksCount": 1,
     "search": "kidrockfeatsherylcrowpicture",
+    "local": false
+  },
+  {
+    "id": "killswitch-engage-my-curse",
+    "title": "My Curse",
+    "artist": "Killswitch Engage",
+    "video": "iPW9AbRMwFU",
+    "language": [
+      "English"
+    ],
+    "bpm": 357.8,
+    "gap": 40693.85131358301,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:14.418Z",
+    "realBpm": 177,
+    "volume": 1,
+    "author": "mg",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4681",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6192,
+    "tracksCount": 1,
+    "search": "killswitchengagemycurse",
     "local": false
   },
   {
@@ -99473,6 +99895,34 @@
     "local": false
   },
   {
+    "id": "lil-nas-x-panini",
+    "title": "Panini",
+    "artist": "Lil Nas X",
+    "video": "bXcSLI58-h8",
+    "language": [
+      "English"
+    ],
+    "bpm": 310.04,
+    "gap": 24254.002064249773,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:13.770Z",
+    "genre": "Pop",
+    "realBpm": 154,
+    "volume": 1,
+    "author": "Subkei",
+    "duration": 145,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6189,
+    "tracksCount": 1,
+    "search": "lilnasxpanini",
+    "local": false
+  },
+  {
     "id": "lil-nas-x-star-walkin-league-of-legends-worlds-anthem",
     "title": "Star Walkin’ (League Of Legends Worlds Anthem)",
     "artist": "Lil Nas X",
@@ -99766,6 +100216,34 @@
     "shortId": 6015,
     "tracksCount": 1,
     "search": "limpbizkitmygeneration",
+    "local": false
+  },
+  {
+    "id": "limp-bizkit-nookie",
+    "title": "Nookie",
+    "artist": "Limp Bizkit",
+    "video": "JTMVOzPPtiw",
+    "language": [
+      "English"
+    ],
+    "bpm": 387.2999999999998,
+    "gap": 23165.62194179758,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:16.210Z",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "haistshomie666",
+    "sourceUrl": "https://www.youtube.com/watch?v=JTMVOzPPtiw",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6197,
+    "tracksCount": 1,
+    "search": "limpbizkitnookie",
     "local": false
   },
   {
@@ -101741,6 +102219,33 @@
     "local": false
   },
   {
+    "id": "little-mix-shout-out-to-my-ex",
+    "title": "Shout Out To My Ex",
+    "artist": "Little Mix",
+    "video": "bFDzhKdrN9M",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.16,
+    "gap": 328.73730964467006,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:16.214Z",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6198,
+    "tracksCount": 1,
+    "search": "littlemixshoutouttomyex",
+    "local": false
+  },
+  {
     "id": "little-mix-silent-night",
     "title": "Silent Night",
     "artist": "Little Mix",
@@ -102976,6 +103481,36 @@
     "local": false
   },
   {
+    "id": "los-piojos-bicho-de-ciudad",
+    "title": "Bicho de ciudad",
+    "artist": "Los Piojos",
+    "video": "HPQGQwnVFhE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 315.3400000000001,
+    "gap": 15547.491805361453,
+    "year": "2007",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-30T02:49:14.536Z",
+    "genre": "Rock",
+    "realBpm": 314.84,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Piojos&cancion=Bicho%20de%20ciudad",
+    "duration": 317,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6193,
+    "tracksCount": 1,
+    "search": "lospiojosbichodeciudad",
+    "local": false
+  },
+  {
     "id": "los-rodriguez-milonga-del-marinero-y-el-capitan",
     "title": "Milonga del marinero y el capitán",
     "artist": "Los Rodríguez",
@@ -103178,6 +103713,37 @@
     "shortId": 6141,
     "tracksCount": 1,
     "search": "lostipitossetenota",
+    "local": false
+  },
+  {
+    "id": "los-tipitos-silencio",
+    "title": "Silencio",
+    "artist": "Los Tipitos",
+    "video": "QRDdx2wq_-g",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 228.49999999999997,
+    "gap": 29777.157894736843,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-08-30T02:49:15.930Z",
+    "genre": "Rock",
+    "videoGap": 5,
+    "realBpm": 228,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Tipitos&cancion=Silencio",
+    "duration": 276,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6195,
+    "tracksCount": 1,
+    "search": "lostipitossilencio",
     "local": false
   },
   {
@@ -112093,6 +112659,37 @@
     "local": false
   },
   {
+    "id": "melody-esa-diva",
+    "title": "Esa Diva",
+    "artist": "Melody",
+    "video": "BvVxhbCW9rw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 254,
+    "gap": 14346.062992125984,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:20.816Z",
+    "edition": "ESC 2025",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Tuupertunut",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189927",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30827",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6208,
+    "tracksCount": 1,
+    "search": "melodyesadiva",
+    "local": false
+  },
+  {
     "id": "melovin-under-the-ladder",
     "title": "Under The Ladder",
     "artist": "MELOVIN",
@@ -116572,6 +117169,36 @@
     "local": false
   },
   {
+    "id": "modern-baseball-your-graduation",
+    "title": "Your Graduation",
+    "artist": "Modern Baseball",
+    "video": "MbrUzJlTffs",
+    "language": [
+      "English,"
+    ],
+    "bpm": 739,
+    "gap": 20996.412719891745,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:16.219Z",
+    "genre": "Emo",
+    "realBpm": 185,
+    "previewStart": 85,
+    "previewEnd": 132,
+    "volume": 1,
+    "author": "strumd",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 49
+      }
+    ],
+    "shortId": 6199,
+    "tracksCount": 1,
+    "search": "modernbaseballyourgraduation",
+    "local": false
+  },
+  {
     "id": "modern-talking-cheri-cheri-lady",
     "title": "Cheri, Cheri Lady",
     "artist": "Modern Talking",
@@ -117827,6 +118454,34 @@
     "shortId": 3074,
     "tracksCount": 1,
     "search": "murrayheadonenightinbangkok",
+    "local": false
+  },
+  {
+    "id": "muse-animals",
+    "title": "Animals",
+    "artist": "Muse",
+    "video": "tFG_5PBl2K8",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 20361.59663865546,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:15.929Z",
+    "genre": "Rock",
+    "realBpm": 169,
+    "volume": 0.94,
+    "author": "gun8",
+    "duration": 264,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6194,
+    "tracksCount": 1,
+    "search": "museanimals",
     "local": false
   },
   {
@@ -121835,6 +122490,34 @@
     "local": false
   },
   {
+    "id": "nick-kamen-each-time-you-break-my-heart",
+    "title": "Each Time You Break My Heart",
+    "artist": "Nick Kamen",
+    "video": "gix6cPfF3S4",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.3,
+    "gap": 18075.672215108836,
+    "year": "1986",
+    "lastUpdate": "2026-08-30T02:49:26.244Z",
+    "genre": "Disco",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "RetroGirl",
+    "sourceUrl": "Nick Kamen",
+    "duration": 268,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6216,
+    "tracksCount": 1,
+    "search": "nickkameneachtimeyoubreakmyheart",
+    "local": false
+  },
+  {
     "id": "nickelback-far-away",
     "title": "Far Away",
     "artist": "Nickelback",
@@ -124832,6 +125515,36 @@
     "shortId": 3260,
     "tracksCount": 1,
     "search": "norahjonesdontknowwhy",
+    "local": false
+  },
+  {
+    "id": "nothing-but-thieves-amsterdam",
+    "title": "Amsterdam",
+    "artist": "Nothing But Thieves",
+    "video": "X2zcG3bcuMI",
+    "language": [
+      "English"
+    ],
+    "bpm": 335.96,
+    "gap": 34437.74020716752,
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:20.814Z",
+    "genre": "Rock",
+    "realBpm": 168,
+    "volume": 1,
+    "author": "hayyann",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=23630",
+    "duration": 282,
+    "tracks": [
+      {
+        "name": "Amsterdam",
+        "start": 22
+      }
+    ],
+    "shortId": 6207,
+    "tracksCount": 1,
+    "search": "nothingbutthievesamsterdam",
     "local": false
   },
   {
@@ -130936,6 +131649,34 @@
     "local": false
   },
   {
+    "id": "peter-paul-mary-500-miles",
+    "title": "500 Miles",
+    "artist": "Peter, Paul & Mary",
+    "video": "UJmbn1sQw2A",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 18886.486486486487,
+    "year": "1962",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:30.963Z",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=1303",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6222,
+    "tracksCount": 1,
+    "search": "peterpaulmary500miles",
+    "local": false
+  },
+  {
     "id": "peter-schilling-major-tom-vollig-losgelost",
     "title": "Major Tom (völlig losgelöst)",
     "artist": "Peter Schilling",
@@ -136227,6 +136968,33 @@
     "shortId": 6183,
     "tracksCount": 1,
     "search": "rammsteinengel",
+    "local": false
+  },
+  {
+    "id": "rammstein-feuer-frei",
+    "title": "Feuer frei!",
+    "artist": "Rammstein",
+    "video": "ZkW-K5RQdzo",
+    "language": [
+      "German"
+    ],
+    "bpm": 297,
+    "gap": 18889.89898989899,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-30T02:49:22.812Z",
+    "realBpm": 190,
+    "volume": 1,
+    "author": "purgatorio",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6212,
+    "tracksCount": 1,
+    "search": "rammsteinfeuerfrei",
     "local": false
   },
   {
@@ -141834,6 +142602,33 @@
     "local": false
   },
   {
+    "id": "rumbombe-hurensohn",
+    "title": "HURENSOHN",
+    "artist": "Rumbombe",
+    "video": "l1PNcCST9wM",
+    "language": [
+      "German"
+    ],
+    "bpm": 288,
+    "gap": 13800.416666666666,
+    "year": "2025",
+    "lastUpdate": "2026-08-30T02:49:22.813Z",
+    "genre": "Ballermann",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "b4St1@fuN",
+    "duration": 170,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6213,
+    "tracksCount": 1,
+    "search": "rumbombehurensohn",
+    "local": false
+  },
+  {
     "id": "run-dmc-its-tricky",
     "title": "It’s Tricky",
     "artist": "Run DMC",
@@ -142924,6 +143719,35 @@
     "local": false
   },
   {
+    "id": "saint-motel-cold-cold-man",
+    "title": "Cold Cold Man",
+    "artist": "Saint Motel",
+    "video": "Of3jUuQzH2o",
+    "language": [
+      "English"
+    ],
+    "bpm": 222,
+    "gap": 70046.48648648648,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:16.232Z",
+    "genre": "Rock",
+    "realBpm": 111,
+    "volume": 1,
+    "author": "gun8",
+    "sourceUrl": "https://www.youtube.com/watch?v=Of3jUuQzH2o",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6200,
+    "tracksCount": 1,
+    "search": "saintmotelcoldcoldman",
+    "local": false
+  },
+  {
     "id": "sakura-card-captor-yo-te-atrapo-tu-me-atrapas",
     "title": "Yo te atrapo, tú me atrapas",
     "artist": "Sakura Card Captor",
@@ -143748,21 +144572,22 @@
     "id": "sarah-brightman-andrea-bocelli-time-to-say-goodbye-con-te-partiro",
     "title": "Time To Say Goodbye (Con te partirò)",
     "artist": "Sarah Brightman & Andrea Bocelli",
-    "video": "T1v6XzMFsnk",
+    "video": "M3mdHmhI3cs",
     "language": [
       "Italian"
     ],
     "bpm": 220.6,
-    "gap": 22400.054397098822,
+    "gap": 21900.054397098822,
     "year": "1995",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-05-06T19:18:29.978Z",
+    "lastUpdate": "2026-08-28T06:53:24.176Z",
     "edition": "[DUET]-Songs",
     "genre": "Opera",
     "realBpm": 106,
     "volume": 1,
     "manualVolume": 0.5,
     "author": "Respeckt",
+    "duration": 247,
     "tracks": [
       {
         "name": "Sarah Brightman",
@@ -151857,6 +152682,33 @@
     "local": false
   },
   {
+    "id": "soffie-fuer-immer-fruehling",
+    "title": "Für immer Frühling",
+    "artist": "Soffie",
+    "video": "M-klKqj-7Lo",
+    "language": [
+      "German"
+    ],
+    "bpm": 560,
+    "gap": 14598.92857142857,
+    "year": "2024",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-30T02:49:21.311Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Mamba99",
+    "duration": 146,
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "shortId": 6209,
+    "tracksCount": 1,
+    "search": "soffiefuerimmerfruehling",
+    "local": false
+  },
+  {
     "id": "soft-cell-tainted-love",
     "title": "Tainted Love",
     "artist": "Soft Cell",
@@ -151899,7 +152751,7 @@
     "gap": 12181.935483870968,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-27T06:26:13.653Z",
+    "lastUpdate": "2026-08-26T16:32:58.048Z",
     "genre": "Alternative, Indie",
     "realBpm": 93,
     "volume": 1,
@@ -152216,6 +153068,33 @@
     "local": false
   },
   {
+    "id": "soziedad-alkoholika-piedra-contra-tijera",
+    "title": "Piedra contra tijera",
+    "artist": "Soziedad Alkoholika",
+    "video": "j--2L3_FN08",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 260,
+    "gap": 23265.23076923077,
+    "year": "2003",
+    "lastUpdate": "2026-08-30T02:49:18.820Z",
+    "genre": "Thrashcore",
+    "videoGap": 2,
+    "realBpm": 130,
+    "volume": 1,
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6205,
+    "tracksCount": 1,
+    "search": "soziedadalkoholikapiedracontratijera",
+    "local": false
+  },
+  {
     "id": "spandau-ballet-gold",
     "title": "Gold",
     "artist": "Spandau Ballet",
@@ -152299,6 +153178,34 @@
     "shortId": 4037,
     "tracksCount": 1,
     "search": "spandauballettrue",
+    "local": false
+  },
+  {
+    "id": "spice-girls-goodbye",
+    "title": "Goodbye",
+    "artist": "Spice Girls",
+    "video": "eegDtyrSUZw",
+    "language": [
+      "English"
+    ],
+    "bpm": 272.02,
+    "gap": 8757.42592456437,
+    "year": "1998",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:30.962Z",
+    "genre": "Pop",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "Unknown",
+    "duration": 274,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6221,
+    "tracksCount": 1,
+    "search": "spicegirlsgoodbye",
     "local": false
   },
   {
@@ -160894,6 +161801,34 @@
     "local": false
   },
   {
+    "id": "the-beatles-blackbird",
+    "title": "Blackbird",
+    "artist": "The Beatles",
+    "video": "Man4Xw8Xypo",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 3631.935483870968,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:31.188Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "choosie",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=12547",
+    "duration": 139,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6223,
+    "tracksCount": 1,
+    "search": "thebeatlesblackbird",
+    "local": false
+  },
+  {
     "id": "the-beatles-come-together",
     "title": "Come Together",
     "artist": "The Beatles",
@@ -163665,6 +164600,35 @@
     "shortId": 4332,
     "tracksCount": 1,
     "search": "thegreatestshowmanthegreatestshow",
+    "local": false
+  },
+  {
+    "id": "the-greatest-showman-the-other-side",
+    "title": "The Other Side",
+    "artist": "The Greatest Showman",
+    "video": "ollOayfDJFc",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 26230,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:34.672Z",
+    "genre": "Soundtrack",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "sentientred",
+    "sourceUrl": "https://www.youtube.com/watch?v=KL2bISAB1j8&list=RDKL2bISAB1j8&start_radio=1",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6225,
+    "tracksCount": 1,
+    "search": "thegreatestshowmantheotherside",
     "local": false
   },
   {
@@ -166868,6 +167832,33 @@
     "shortId": 4404,
     "tracksCount": 1,
     "search": "thesistersofmercymarian",
+    "local": false
+  },
+  {
+    "id": "the-sisters-of-mercy-temple-of-love",
+    "title": "Temple Of Love",
+    "artist": "The Sisters of Mercy",
+    "video": "o-s1O3fGHXE",
+    "language": [
+      "English"
+    ],
+    "bpm": 352,
+    "gap": 32.954545454545496,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-30T02:49:29.711Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6217,
+    "tracksCount": 1,
+    "search": "thesistersofmercytempleoflove",
     "local": false
   },
   {
@@ -171499,6 +172490,34 @@
     "shortId": 4524,
     "tracksCount": 1,
     "search": "tonesandidancemonkey",
+    "local": false
+  },
+  {
+    "id": "toni-braxton-breathe-again",
+    "title": "Breathe Again",
+    "artist": "Toni Braxton",
+    "video": "pRFEz2MjZgg",
+    "language": [
+      "English"
+    ],
+    "bpm": 308,
+    "gap": 125.97402597402595,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-30T02:49:17.520Z",
+    "genre": "R&B, Soul",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "znxineohp",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6201,
+    "tracksCount": 1,
+    "search": "tonibraxtonbreatheagain",
     "local": false
   },
   {
@@ -181215,6 +182234,33 @@
     "shortId": 4772,
     "tracksCount": 1,
     "search": "yukoshinzouwosasageyo",
+    "local": false
+  },
+  {
+    "id": "yung-kai-blue",
+    "title": "Blue",
+    "artist": "Yung Kai",
+    "video": "IpFX2vq8HKw",
+    "language": [
+      "English"
+    ],
+    "bpm": 390,
+    "gap": 18356,
+    "year": "2024",
+    "lastUpdate": "2026-08-30T02:49:31.189Z",
+    "genre": "Indie Pop",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Subkei",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6224,
+    "tracksCount": 1,
+    "search": "yungkaiblue",
     "local": false
   },
   {

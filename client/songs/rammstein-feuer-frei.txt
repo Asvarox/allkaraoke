@@ -1,0 +1,217 @@
+#ARTIST:Rammstein
+#TITLE:Feuer frei!
+#CREATOR:purgatorio
+#BPM:297
+#YEAR:2001
+#VIDEO:v=ZkW-K5RQdzo
+#LANGUAGE:German
+#GAP:18889,89898989899
+#ALLKARAOKE_ID:rammstein-feuer-frei
+#ALLKARAOKE_SID:6212
+#ALLKARAOKE_LASTUPDATE:2026-08-30T02:49:22.812Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:190
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:197
+#MP3:Rammstein - Feuer frei!.mp3
+: 20 7 2 Ge
+: 28 8 3 tadelt 
+: 37 9 2 wird 
+: 48 5 1 wer 
+: 55 4 3 Schmer
+: 60 5 3 zen 
+: 66 13 4 kennt
+- 79 102
+- 102
+: 122 4 2 Vom 
+: 129 3 3 Feu
+: 133 5 5 er 
+: 139 8 2 das 
+: 148 6 3 die 
+: 155 5 3 Haut 
+: 161 5 2 ver
+: 167 10 2 brennt
+- 177 214
+- 214
+: 234 2 3 Ich 
+: 237 7 2 werf 
+: 245 6 4 ein 
+: 253 15 2 Licht
+- 268
+: 285 3 4 In 
+: 289 6 3 mein 
+: 296 6 5 Ge
+: 303 21 3 sicht
+- 324
+: 335 2 6 Ein 
+: 338 7 5 heis
+: 346 5 4 ser 
+: 352 24 2 Schrei
+- 376 380
+- 380
+: 400 11 3 Feuer 
+: 414 11 2 frei!
+- 425 608
+- 608
+: 628 8 2 Bang 
+: 638 11 2 Bang
+- 649 710
+- 710
+: 730 7 2 Bang 
+: 740 8 2 Bang
+- 748 803
+- 803
+: 823 4 2 Ge
+: 830 4 3 a
+: 836 4 2 delt 
+: 843 4 2 ist 
+: 848 5 2 wer 
+: 855 4 3 Schmer
+: 861 4 3 zen 
+: 867 10 2 kennt
+- 877 903
+- 903
+: 923 5 2 Vom 
+: 929 3 3 Feu
+: 933 5 5 er 
+: 939 7 2 das 
+: 949 5 3 in 
+: 955 5 2 Lust 
+: 961 5 3 ver
+: 967 9 2 brennt
+- 976 1016
+- 1016
+: 1036 3 2 Ein 
+: 1040 6 7 Fun
+: 1048 5 5 ken
+: 1054 14 2 stoss
+- 1068
+: 1087 1 4 In 
+: 1089 6 8 ihr
+: 1096 5 5 en 
+: 1104 17 2 Schoss
+- 1121
+: 1135 3 4 Ein 
+: 1139 6 5 heis
+: 1146 6 4 ser 
+: 1154 16 2 Schrei
+- 1170 1183
+- 1183
+: 1203 9 3 Feuer 
+: 1215 10 2 frei!
+- 1225
+: 1229 7 2 Bang 
+: 1238 9 2 Bang
+- 1247 1260
+- 1260
+: 1280 7 2 Bang 
+: 1289 10 2 Bang
+- 1299 1347
+- 1347
+: 1367 9 3 Feuer 
+: 1380 13 2 frei!
+- 1393 1409
+- 1409
+: 1429 7 2 Bang 
+: 1439 8 2 Bang
+- 1447 1460
+- 1460
+: 1480 6 2 Bang 
+: 1490 9 2 Bang
+- 1499 1549
+- 1549
+: 1569 8 3 Feuer 
+: 1581 11 2 frei!
+- 1592 1804
+- 1804
+: 1824 5 2 Ge
+: 1831 4 4 fähr
+: 1837 5 2 lich 
+: 1843 5 4 ist 
+: 1850 4 2 wer 
+: 1855 5 4 Schmer
+: 1862 4 2 zen 
+: 1868 11 1 kennt
+- 1879 1904
+- 1904
+: 1924 5 2 Vom 
+: 1931 3 4 Feu
+: 1935 4 6 er 
+: 1940 8 2 das 
+: 1950 5 4 den 
+: 1956 5 2 Geist 
+: 1962 5 4 ver
+: 1970 7 3 brennt
+- 1977
+: 1980 8 2 Bang 
+: 1990 8 2 Bang
+- 1998 2004
+- 2004
+: 2024 5 2 Ge
+: 2030 5 4 fähr
+: 2036 6 3 lich 
+: 2043 5 2 das 
+: 2050 5 2 ge
+: 2056 4 4 brann
+: 2061 5 5 te 
+: 2068 5 2 Kind
+- 2073
+: 2074 5 2 Mit 
+: 2080 3 4 Feu
+: 2084 5 6 er 
+: 2090 6 2 das 
+: 2097 5 3 vom 
+: 2103 6 4 Le
+: 2110 4 3 ben 
+: 2115 11 2 trennt
+- 2126
+: 2136 3 2 Ein 
+: 2140 7 4 heis
+: 2148 7 2 ser 
+: 2156 13 4 Schrei
+- 2169
+: 2181 7 2 Bang 
+: 2190 8 2 Bang
+- 2198
+: 2205 9 3 Feuer 
+: 2216 10 2 frei!
+- 2226 2612
+- 2612
+: 2632 6 2 Bang 
+: 2640 9 2 Bang
+- 2649 2661
+- 2661
+: 2681 8 2 Bang 
+: 2691 9 2 Bang
+- 2700 2747
+- 2747
+: 2767 9 3 Feuer 
+: 2779 12 2 frei!
+- 2791 2811
+- 2811
+: 2831 8 2 Bang 
+: 2841 9 2 Bang
+- 2850 2861
+- 2861
+: 2881 8 2 Bang 
+: 2892 10 2 Bang
+- 2902 2948
+- 2948
+: 2968 10 3 Feuer 
+: 2981 11 2 frei!
+- 2992 3011
+- 3011
+: 3031 8 2 Bang 
+: 3040 10 2 Bang
+- 3050 3062
+- 3062
+: 3082 8 2 Bang 
+: 3091 10 2 Bang
+- 3101 3247
+- 3247
+: 3267 11 3 Feuer 
+: 3280 13 2 frei!
+- 3293
+: 3306 8 2 Bang 
+: 3315 10 2 Bang
+E
