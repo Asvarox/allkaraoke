@@ -137,13 +137,25 @@ The panel shows regardless of whether the score qualifies for submission — tel
 nowhere near the board where they would have landed is the only reason to show it to them. It is
 hidden entirely for a difficulty that is never stored. Its wording tracks the standing decision:
 "would be" while undecided or declined, "will be" once the score is armed, "is" once it has gone. It
-is headed "Online scores", not "Global scores": the global board is a different board, and an Easy
-run is told in the same breath that it is not going there.
+is headed "Global scoreboard", and the local high scores beside it are rebuilt on the same panel and
+row as "Local scoreboard" — the two sit side by side, so anything that made them look like different
+components would read as a mistake. The local board keeps everything it did before, the inline rename
+field included; only its presentation moved.
+
+The pairing does put "Global scoreboard" next to a share panel that tells an Easy player their score
+is "not the global one". The heading is about where the scores come from — this device or everyone —
+and the subtitle under it scopes the board ("This song · Easy · last 14 days"), but it is a wording
+collision worth knowing about.
 
 The high-scores step keeps its two columns clear of the keyboard-help overlay, which is fixed to the
 top-right of every screen and shown by default (`KeyboardHelpVisibilitySetting`). It is the only step
 whose content reaches that corner, so the reserved band lives on the row in `high-scores.tsx` rather
 than in the overlay.
+
+The boards take whatever height the step has left instead of a fixed cap, and scroll inside it. That
+needs `min-h-0` on the step's column in `post-game-view.tsx` — a flex item defaults to
+`min-height: auto` and will not shrink, so without it the boards pushed the button that moves on off
+the bottom of the screen.
 
 Nothing rate-limits this route: it is a `GET` with no `clientId` to key on, and it is a read of rows
 that `GET /leaderboard` already exposes.
