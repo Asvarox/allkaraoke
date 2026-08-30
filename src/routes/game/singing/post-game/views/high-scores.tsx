@@ -43,7 +43,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           The right padding keeps the pair clear of the keyboard-help overlay, which is fixed to the
           top-right of every screen (`help-view.tsx`) and would otherwise print itself over the board
           — this step is the only one whose content reaches that corner. */}
-      <div className="flex min-h-0 flex-1 flex-col items-start gap-3 lg:flex-row lg:gap-6 lg:pr-[25rem]">
+      <div className="flex min-h-0 flex-1 flex-col items-start gap-3 lg:flex-row lg:items-stretch lg:gap-6 lg:pr-[25rem]">
         <ScoreboardPanel title="Local scoreboard" subtitle="This song · this device" data-test="highscores-container">
           {highScores.map((score, index) => {
             const isCurrentRun = score.singSetupId === singSetup.id;

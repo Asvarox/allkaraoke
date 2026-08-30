@@ -92,10 +92,9 @@ test.describe('Global leaderboard enabled', () => {
       await expect(pages.leaderboardPage.prompt).toBeVisible();
     });
 
-    await test.step("The song's own board ranks the score before it is shared", async () => {
+    await test.step("The song's own board shows the score before it is shared", async () => {
       await expect(pages.leaderboardPage.songPanel).toBeVisible();
-      // "would be", not "is" — the score has not been sent yet
-      await expect(pages.leaderboardPage.songPanelPosition).toContainText('would be');
+      await expect(pages.leaderboardPage.songPanelOwnRow).toBeVisible();
     });
 
     await test.step('Accepting hands over to the panel on the high scores step', async () => {
@@ -140,11 +139,11 @@ test.describe('Global leaderboard enabled', () => {
       await expect(pages.postGameHighScoresPage.selectSongButton).toContainText('Share score and sing a song');
     });
 
-    await test.step("The first run's score is on the song's own board, and the armed one will be", async () => {
+    await test.step("The first run's score is on the song's own board, beside the one just sung", async () => {
       await expect(pages.leaderboardPage.songPanelRows.filter({ hasText: alwaysPlayerName }).first()).toBeVisible({
         timeout: 30_000,
       });
-      await expect(pages.leaderboardPage.songPanelPosition).toContainText('will be');
+      await expect(pages.leaderboardPage.songPanelOwnRow).toBeVisible();
     });
 
     await test.step('Moving on shares the score, and it lands on the board', async () => {
@@ -166,11 +165,11 @@ test.describe('Global leaderboard enabled', () => {
     await pages.leaderboardPage.declineButton.click();
     await expect(pages.leaderboardPage.prompt).toHaveCount(0);
 
-    await test.step("The song's own board is shown and ranks the score", async () => {
-      // Ranking does not depend on the score being accepted anywhere, so this survives the two
-      // muted tests above
+    await test.step("The song's own board is shown, with the run just sung slotted into it", async () => {
+      // The row is synthetic and does not depend on the score being accepted anywhere, so this
+      // survives the two muted tests above
       await expect(pages.leaderboardPage.songPanel).toBeVisible();
-      await expect(pages.leaderboardPage.songPanelPosition).toContainText('would be');
+      await expect(pages.leaderboardPage.songPanelOwnRow).toBeVisible();
     });
 
     await test.step('The high-scores step offers a way back into the prompt', async () => {

@@ -5,6 +5,7 @@ import { expect, userEvent } from 'storybook/test';
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
+import { SONG_BOARD_NEIGHBOURS } from '~/modules/leaderboard/consts';
 import { LeaderboardCountrySetting, LeaderboardNameSetting } from '~/modules/leaderboard/identity';
 import { LeaderboardSharingSetting, SharingDecision } from '~/modules/leaderboard/sharing';
 import { BoardEntry, SongBoardResponse } from '~/modules/leaderboard/types';
@@ -24,8 +25,8 @@ const difficulties = { Hard: 1, Medium: 2, Easy: 3 } as const;
 interface StoryArgs {
   difficulty: keyof typeof difficulties;
   score: number;
-  /** How many rows the song's global board comes back with. */
-  onlineRows: number;
+  /** How many scores the song's board holds in total — the window around the player is what is shown. */
+  boardTotal: number;
   /** What `GET /leaderboard-song` does, so the loading and failure states are reachable too. */
   boardResponse: 'loaded' | 'empty' | 'loading' | 'error';
   /**
@@ -46,17 +47,22 @@ const names = [
   ['Dilnoza', 'uz'],
 ] as const;
 
-const boardEntries = (count: number, tolerance: number): BoardEntry[] =>
-  Array.from({ length: count }, (_, index) => ({
-    name: names[index % names.length][0],
-    country: names[index % names.length][1],
-    score: 2_600_000 - index * 137_000,
-    artist: song.artist,
-    title: song.title,
-    songId: song.id,
-    tolerance,
-    createdAt: Date.now() - (index + 1) * 7 * 60 * 60 * 1000,
-  }));
+/** A run of rows starting at `startPosition`, scoring down from just above the player's own score. */
+const boardEntries = (count: number, tolerance: number, startPosition: number, score: number): BoardEntry[] =>
+  Array.from({ length: count }, (_, index) => {
+    const rank = startPosition + index;
+
+    return {
+      name: `${names[rank % names.length][0]} ${rank}`,
+      country: names[rank % names.length][1],
+      score: Math.max(1, score + (SONG_BOARD_NEIGHBOURS - index) * 4_000),
+      artist: song.artist,
+      title: song.title,
+      songId: song.id,
+      tolerance,
+      createdAt: Date.now() - (rank + 1) * 7 * 60 * 60 * 1000,
+    };
+  });
 
 /**
  * Stands in for `GET /leaderboard-song`. Storybook has no request-mocking addon, and the panel is
@@ -78,12 +84,19 @@ function StubbedSongBoard({ args, children }: { args: StoryArgs; children: React
       if (args.boardResponse === 'error') return Promise.resolve(new Response('nope', { status: 500 }));
 
       const tolerance = difficulties[args.difficulty];
-      const entries = args.boardResponse === 'empty' ? [] : boardEntries(args.onlineRows, tolerance);
+      const empty = args.boardResponse === 'empty';
+
+      // The same window the Worker would cut: the player somewhere in the middle of the board, with
+      // up to SONG_BOARD_NEIGHBOURS rows either side
+      const position = empty ? 1 : Math.min(Math.round(args.boardTotal / 2), args.boardTotal + 1);
+      const startPosition = Math.max(1, position - SONG_BOARD_NEIGHBOURS);
+      const count = empty ? 0 : Math.min(SONG_BOARD_NEIGHBOURS * 2, args.boardTotal - startPosition + 1);
+
       const payload: SongBoardResponse = {
-        entries,
-        total: entries.length,
-        // Wherever the sung score falls among the canned rows
-        position: entries.filter((entry) => entry.score >= args.score).length + 1,
+        entries: boardEntries(count, tolerance, startPosition, args.score),
+        total: empty ? 0 : args.boardTotal,
+        startPosition,
+        position,
       };
 
       return Promise.resolve(new Response(JSON.stringify(payload), { status: 200 }));
@@ -194,14 +207,14 @@ const meta = {
   argTypes: {
     difficulty: { control: 'radio', options: Object.keys(difficulties) },
     score: { control: { type: 'range', min: 0, max: 3_500_000, step: 50_000 } },
-    onlineRows: { control: { type: 'range', min: 1, max: 20, step: 1 } },
+    boardTotal: { control: { type: 'range', min: 1, max: 500, step: 1 } },
     boardResponse: { control: 'radio', options: ['loaded', 'empty', 'loading', 'error'] },
     sharing: { control: 'radio', options: ['always', 'undecided', 'never'] },
   },
   args: {
     difficulty: 'Medium',
     score: 1_850_000,
-    onlineRows: 6,
+    boardTotal: 120,
     boardResponse: 'loaded',
     // Not 'undecided': the prompt opens over the boards, and these stories are about the boards
     sharing: 'always',

@@ -41,20 +41,23 @@ function LeaderboardSharePanel({ register, leaderboard }: Props) {
   if (panel === 'opt-in') {
     return (
       <Box className={panelClassName} data-test="leaderboard-opt-in-panel">
-        <Menu.HelpText>
-          {reachesGlobalBoard
-            ? 'This score is good enough for the global leaderboard on the main menu.'
-            : `This score is good enough for this song's ${difficulty} leaderboard.`}
-        </Menu.HelpText>
-        <Menu.Button
-          size="small"
-          className="sm:w-auto sm:min-w-60 sm:self-start"
-          data-test="leaderboard-open-prompt"
-          {...register('leaderboard-open-prompt', openModal, undefined, false, {
-            control: { type: 'button', label: 'Share this score' },
-          })}>
-          Share this score
-        </Menu.Button>
+        {/* One line: the offer on the left, the way to take it on the right */}
+        <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <Menu.HelpText>
+            {reachesGlobalBoard
+              ? 'This score is good enough for the global leaderboard on the main menu.'
+              : `This score is good enough for this song's ${difficulty} leaderboard.`}
+          </Menu.HelpText>
+          <Menu.Button
+            size="small"
+            className="shrink-0 sm:w-auto sm:min-w-60"
+            data-test="leaderboard-open-prompt"
+            {...register('leaderboard-open-prompt', openModal, undefined, false, {
+              control: { type: 'button', label: 'Share this score' },
+            })}>
+            Share this score
+          </Menu.Button>
+        </div>
       </Box>
     );
   }

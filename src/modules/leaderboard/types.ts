@@ -47,9 +47,16 @@ export interface BoardResponse {
  * part of the split — the two tracks of a duet are ranked together.
  */
 export interface SongBoardResponse {
+  /**
+   * A window of the board rather than its top: when the caller sends a score, the rows either side
+   * of where it lands, so the player can see themselves among their neighbours instead of only
+   * among people they will never catch.
+   */
   entries: BoardEntry[];
-  /** Rows for this song and difficulty within the retention window, including the ones not listed. */
+  /** Every row for this song and difficulty, including the ones outside the window. */
   total: number;
+  /** 1-based rank of `entries[0]`, so the window can be numbered without counting from the top. */
+  startPosition: number;
   /**
    * 1-based rank the `score` query parameter would take on this board, ties losing to the rows
    * already there. `null` when the caller sent no score.

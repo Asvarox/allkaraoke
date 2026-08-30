@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 
 import { BOARD_KV_KEY, BoardResponse, LeaderboardSubmission } from '../src/modules/leaderboard/types';
 import type { LeaderboardBoard } from './leaderboard-do';
-import { BOARD_SIZE, RETENTION_MS } from './leaderboard-do';
+import { BOARD_SIZE, GLOBAL_BOARD_WINDOW_MS, NOTES_RETENTION_MS } from './leaderboard-do';
 
 const notesBlob = new Uint8Array([1, 2, 3, 4]);
 
@@ -141,7 +141,7 @@ describe('LeaderboardBoard', () => {
     expect((await board.projection()).entries.map((entry) => entry.name)).toEqual(['Bob']);
   });
 
-  it('drops expired rows and backfills the board from previously unranked records', async () => {
+  it('drops aged-out rows off the global board and backfills it from previously unranked records', async () => {
     const board = getBoard();
 
     // Fill the board, then add one more record that is too low to be ranked
@@ -157,7 +157,7 @@ describe('LeaderboardBoard', () => {
     await runInDurableObject(board, (_instance, state) => {
       state.storage.sql.exec(
         `UPDATE records SET created_at = ? WHERE name != ?`,
-        Date.now() - RETENTION_MS - 1000,
+        Date.now() - GLOBAL_BOARD_WINDOW_MS - 1000,
         'Newcomer',
       );
     });
@@ -173,7 +173,7 @@ describe('LeaderboardBoard', () => {
     await board.submit(generateSubmission(), notesBlob);
 
     await runInDurableObject(board, (_instance, state) => {
-      state.storage.sql.exec(`UPDATE records SET created_at = ?`, Date.now() - RETENTION_MS - 1000);
+      state.storage.sql.exec(`UPDATE records SET created_at = ?`, Date.now() - NOTES_RETENTION_MS - 1000);
     });
     await runInDurableObject(board, (instance) => instance.alarm());
 
@@ -184,6 +184,8 @@ describe('LeaderboardBoard', () => {
     );
 
     expect(remainingNotes).toBe(0);
+    // The row itself stays — only the blob expires
+    expect(await board.listForAdmin()).toHaveLength(1);
   });
 
   it('splits the per-song board by difficulty and ignores the vocal track', async () => {
@@ -231,19 +233,66 @@ describe('LeaderboardBoard', () => {
     expect((await board.songBoard('song-1', 2, null)).position).toBeNull();
   });
 
-  it('keeps expired rows out of the per-song board and its ranking', async () => {
+  it('keeps rows the global board has aged out on the per-song board, which is all time', async () => {
     const board = getBoard();
-    await board.submit(generateSubmission({ clientId: 'fresh', name: 'Fresh' }), notesBlob);
+    await board.submit(generateSubmission({ clientId: 'old', name: 'Old timer' }), notesBlob);
 
     await runInDurableObject(board, (_instance, state) => {
       state.storage.sql.exec(
         `UPDATE records SET created_at = ? WHERE name = ?`,
-        Date.now() - RETENTION_MS - 1000,
-        'Fresh',
+        Date.now() - GLOBAL_BOARD_WINDOW_MS - 1000,
+        'Old timer',
       );
     });
+    // The alarm no longer deletes rows, so an all-time board still has this one after a sweep
+    await runInDurableObject(board, (instance) => instance.alarm());
 
-    expect(await board.songBoard('song-1', 2, 1_000_000)).toEqual({ entries: [], total: 0, position: 1 });
+    expect((await board.projection()).entries).toEqual([]);
+    expect(await board.songBoard('song-1', 2, 1_000_000)).toEqual({
+      entries: [expect.objectContaining({ name: 'Old timer' })],
+      total: 1,
+      startPosition: 1,
+      position: 2,
+    });
+  });
+
+  it('returns the rows either side of the score rather than the top of the board', async () => {
+    const board = getBoard();
+
+    // 60 rows, best first — the score below lands in the middle of them
+    for (let index = 0; index < 60; index++) {
+      await board.submit(
+        generateSubmission({ clientId: `client-${index}`, name: `Player ${index}`, score: 3_000_000 - index * 10_000 }),
+        notesBlob,
+      );
+    }
+
+    const { entries, startPosition, position, total } = await board.songBoard('song-1', 2, 2_705_000);
+
+    // 30 rows score higher, so the player would be 31st and the window starts 25 above that
+    expect(position).toBe(31);
+    expect(total).toBe(60);
+    expect(startPosition).toBe(6);
+    expect(entries).toHaveLength(50);
+    expect(entries[0].name).toBe('Player 5');
+    expect(entries.at(-1)!.name).toBe('Player 54');
+  });
+
+  it('starts the window at the top when the score is near it', async () => {
+    const board = getBoard();
+
+    for (let index = 0; index < 5; index++) {
+      await board.submit(
+        generateSubmission({ clientId: `client-${index}`, name: `Player ${index}`, score: 3_000_000 - index * 10_000 }),
+        notesBlob,
+      );
+    }
+
+    const { entries, startPosition, position } = await board.songBoard('song-1', 2, 2_995_000);
+
+    expect(position).toBe(2);
+    expect(startPosition).toBe(1);
+    expect(entries).toHaveLength(5);
   });
 
   it('rejects submissions with an empty name', async () => {

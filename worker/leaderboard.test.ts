@@ -254,6 +254,7 @@ describe('GET /leaderboard-song', () => {
         expect.objectContaining({ name: 'Second', score: 1_500_000 }),
       ],
       total: 2,
+      startPosition: 1,
       position: 2,
     });
   });

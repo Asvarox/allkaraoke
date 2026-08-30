@@ -29,10 +29,16 @@ export const MAX_SUBMITTED_TOLERANCE = 3;
 export const MAX_GLOBAL_BOARD_TOLERANCE = 2;
 
 /**
- * How many rows `GET /leaderboard-song` returns. Smaller than the global board: this one sits beside
- * the local high scores on the post-game screen, and `total` carries the rest of the story.
+ * How many rows `GET /leaderboard-song` returns when the caller asks about no particular score —
+ * just the top of the board.
  */
 export const SONG_BOARD_SIZE = 20;
+
+/**
+ * How many rows either side of the caller's score the per-song board returns. The player's own row
+ * goes between the two halves, so the list they see is `2 * SONG_BOARD_NEIGHBOURS + 1` rows long.
+ */
+export const SONG_BOARD_NEIGHBOURS = 25;
 
 /** Request body cap for `POST /leaderboard`. */
 export const MAX_SUBMISSION_BYTES = 256 * 1024;

@@ -84,9 +84,9 @@ export class LeaderboardPagePO {
     return this.songPanel.getByTestId('song-leaderboard-row');
   }
 
-  /** "Your N points would be #X of Y." */
-  public get songPanelPosition() {
-    return this.songPanel.getByTestId('song-leaderboard-position');
+  /** The run just sung, slotted into the board where it would land and ringed like a focused control. */
+  public get songPanelOwnRow() {
+    return this.songPanel.getByTestId('song-leaderboard-own-row');
   }
 
   // --- Main-menu panel ---

@@ -19,14 +19,15 @@ interface Props {
  * `Box` centres its children; this stacks them full width instead, and spells out its own surface —
  * `Box`'s `bg-black/30` is invisible against this screen, and the border is what reads as an edge.
  *
- * Height is taken from whatever the parent leaves rather than capped at a magic number: the panel
- * grows to its rows and then stops, and the list inside it scrolls. The post-game step has no room
- * to spare, and a fixed cap there pushed the button that moves on off the bottom of the screen.
+ * Height is taken from whatever the parent leaves rather than capped at a magic number: the post-game
+ * step has no room to spare, and a fixed cap there pushed the button that moves on off the bottom of
+ * the screen. `basis-0` so a pair of panels splits the width evenly whatever is in them, and
+ * `h-full` so they are the same height whether or not they hold the same number of rows.
  */
 function ScoreboardPanel({ title, subtitle, children, 'data-test': dataTest }: Props) {
   return (
     <Box
-      className="max-h-full min-h-0 w-full items-stretch gap-1.5 border border-white/10 bg-black/50 p-2 lg:max-w-[25rem] lg:flex-1"
+      className="max-h-full min-h-0 w-full items-stretch gap-1.5 border border-white/10 bg-black/50 p-2 lg:h-full lg:flex-1 lg:basis-0"
       data-test={dataTest}>
       <Menu.SubHeader as="h2" className="text-active text-left text-base font-bold lg:text-lg">
         {title}

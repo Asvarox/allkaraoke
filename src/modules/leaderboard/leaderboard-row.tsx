@@ -14,15 +14,26 @@ interface Props {
   position: number;
   /** Off for a board that is already one song and one difficulty — both would be the same on every row. */
   withSongDetails?: boolean;
+  highlighted?: boolean;
+  scrollIntoView?: boolean;
   'data-test'?: string;
 }
 
 /** A {@link ScoreboardRow} built from a board row: the flag beside the name, the date relative. */
-function LeaderboardRow({ entry, position, withSongDetails = true, 'data-test': dataTest = 'leaderboard-row' }: Props) {
+function LeaderboardRow({
+  entry,
+  position,
+  withSongDetails = true,
+  highlighted,
+  scrollIntoView,
+  'data-test': dataTest = 'leaderboard-row',
+}: Props) {
   return (
     <ScoreboardRow
       position={position}
       score={entry.score}
+      highlighted={highlighted}
+      scrollIntoView={scrollIntoView}
       data-test={dataTest}
       name={
         <>

@@ -1,7 +1,7 @@
 # Global Leaderboard
 
-A public board of the best karaoke scores from the last 14 days, shown on the main menu, plus a
-per-song board on the post-game screen. Players opt in per score through a prompt after singing. The
+A public board of the best karaoke scores from the last 14 days, shown on the main menu, plus an
+all-time per-song board on the post-game screen. Players opt in per score through a prompt after singing. The
 sung frequency records are stored alongside each record so score verification can be built later;
 nothing reads them in v1.
 
@@ -96,9 +96,11 @@ it selects reaches the board on the next submission, or up to a day later. `POST
 (the admin panel's **Rebuild public board**) applies it immediately and purges the read cache. Submissions easier than that are already rejected, so the filter is there for rows stored
 before the rule and for the admin listing, which deliberately keeps showing everything.
 
-**Every** accepted submission is stored, not only the ones that currently rank. A "discard anything
-outside the top 50" rule cannot survive the 14-day expiry — discarded rows are unrecoverable, so the
-board would erode toward empty as leaders age out.
+**Every** accepted submission is stored, not only the ones that currently rank, and rows are never
+deleted. A "discard anything outside the top 50" rule cannot survive the global board's 14-day
+window — discarded rows are unrecoverable, so the board would erode toward empty as leaders age out —
+and the per-song boards are all-time, so a row that has aged off the main menu is still ranked on its
+own song's.
 
 The notes blobs live in their own table and are never `SELECT`ed by the board query, so they never
 load into a read. SQLite enforces the foreign key, so anything that deletes records deletes the
@@ -127,25 +129,43 @@ not part of the split** — both singers of a duet are ranked together, and the 
 the rows it would fragment. `tolerance` above `MAX_SUBMITTED_TOLERANCE` is rejected outright: the
 debug widths are never stored, so such a request could only describe an empty board.
 
+**All-time**, with no date window. A song's board is not something anyone races weekly, and cutting
+it to a fortnight would empty it for every song nobody happened to sing lately. This is why the
+expiry alarm no longer deletes rows (see below).
+
 `position` counts rows scoring `>=` the queried score, plus one. `>=`, not `>`, because a submitted
 tie gets a later `created_at` and so sorts behind the row that got there first — the order the board
 itself would give it. The cost is that a score _already_ on the board is ranked one place below where
 it sits; the query answers where a score _would_ land, and the post-game panel asks before the
 submission goes out.
 
+`entries` is a **window around that position**, not the top of the board: `SONG_BOARD_NEIGHBOURS`
+rows either side of where the score lands, with `startPosition` giving the rank of the first of them.
+Being told you are 4,000th under a list of people you will never catch says nothing; your neighbours
+do. With no score to place there is nothing to centre on, so the response is the top
+`SONG_BOARD_SIZE` instead.
+
+The panel then slots the run just sung into that window as a row of its own, ringed with the same
+`subtle-focus` inset the focused controls elsewhere carry, and scrolls it to the middle of the list.
+The row is synthetic — the score has usually not been submitted yet, and nothing refetches after it
+has. The ranks still come out right: the rows above the insertion keep theirs, and the ones below are
+pushed down by exactly the one row that joined them.
+
 The panel shows regardless of whether the score qualifies for submission — telling a player who is
 nowhere near the board where they would have landed is the only reason to show it to them. It is
-hidden entirely for a difficulty that is never stored. Its wording tracks the standing decision:
-"would be" while undecided or declined, "will be" once the score is armed, "is" once it has gone. It
-is headed "Global scoreboard", and the local high scores beside it are rebuilt on the same panel and
+hidden entirely for a difficulty that is never stored. It is headed "Global scoreboard", and the local high scores beside it are rebuilt on the same panel and
 row as "Local scoreboard" — the two sit side by side, so anything that made them look like different
 components would read as a mistake. The local board keeps everything it did before, the inline rename
 field included; only its presentation moved.
 
 The pairing does put "Global scoreboard" next to a share panel that tells an Easy player their score
 is "not the global one". The heading is about where the scores come from — this device or everyone —
-and the subtitle under it scopes the board ("This song · Easy · last 14 days"), but it is a wording
-collision worth knowing about.
+and the subtitle under it scopes the board ("This song · Easy · all time · 121 scores"), but it is a
+wording collision worth knowing about.
+
+The two panels split the width evenly (`basis-0`) and share a height (`h-full` under an
+`items-stretch` row), so they read as one thing split in two rather than two widgets that happen to
+be adjacent.
 
 The high-scores step keeps its two columns clear of the keyboard-help overlay, which is fixed to the
 top-right of every screen and shown by default (`KeyboardHelpVisibilitySetting`). It is the only step
@@ -189,12 +209,20 @@ leaderboard" and then having them not find it on the main menu is the failure th
 
 `alarm()` runs once a day and reschedules itself:
 
-1. delete the `notes` blobs of records older than 14 days,
-2. delete those records,
-3. sweep any orphaned blobs,
-4. rebuild the KV projection.
+1. delete the `notes` blobs of records older than `NOTES_RETENTION_MS`,
+2. sweep any orphaned blobs,
+3. rebuild the KV projection.
 
 The alarm is scheduled the first time the object is constructed, so no Cron Trigger is involved.
+
+**Only the blobs expire.** The rows are kept indefinitely, which is what makes the per-song boards
+all-time; the global board does its own windowing in `projection()` rather than relying on rows
+having been deleted. Two constants say so separately: `GLOBAL_BOARD_WINDOW_MS` is how far back the
+main menu's board looks, `NOTES_RETENTION_MS` is how long the frequency records are kept. Both are 14
+days today, for unrelated reasons.
+
+The blobs are the only large thing here — a row is a couple of hundred bytes against up to 256 KB for
+a blob — so keeping rows forever costs little, and nothing reads the blobs yet.
 
 ## Validation
 
