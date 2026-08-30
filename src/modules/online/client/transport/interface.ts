@@ -51,6 +51,13 @@ export interface OnlineRoomConnection extends OnlineRoomChannels {
   promote(): Promise<{ ok: boolean; epoch: number; hostSessionId?: string | null }>;
   /** Fires when the connection is unrecoverable — the caller re-joins from scratch. */
   onLost(listener: () => void): () => void;
+  /**
+   * Fires when the data plane can tell, exactly, that the host is gone — rather than the client
+   * having to infer it from missing heartbeats. Only the relay can: the SFU does not report who
+   * has stopped publishing, so its implementation never fires and the watchdog remains the general
+   * mechanism.
+   */
+  onHostLost(listener: () => void): () => void;
   close(): void;
 }
 

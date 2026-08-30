@@ -379,6 +379,11 @@ jobs:
           BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
           slug=$(printf '%s' "$BRANCH_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//' | cut -c1-40 | sed -E 's/-+$//')
+          # A branch name with no lowercase alphanumerics normalises to nothing, and `pr-` alone is
+          # not a valid DNS label — the deploy would fail before the app is even built.
+          if [ -z "$slug" ]; then
+            slug=$(printf '%s' "$BRANCH_NAME" | sha256sum | cut -c1-12)
+          fi
           echo "name=pr-${slug}" >> "$GITHUB_OUTPUT"
       - name: Deploy PartyKit online room (preview)
         env:

@@ -81,7 +81,7 @@ describe('OnlineDirectory', () => {
       await directory.join(`p${i}`, `s${i}`, false);
     }
 
-    await directory.leave('p3');
+    await directory.leave('p3', { requestedBy: { participantId: 'p0', sessionId: 's0' } });
 
     expect(await directory.join('newcomer', 'sx', false)).toMatchObject({ ok: true, slot: 3 });
   });
@@ -103,11 +103,54 @@ describe('OnlineDirectory', () => {
     await directory.join('p1', 's1', true);
     await directory.join('kicked', 's2', false);
 
-    await directory.leave('kicked', true);
+    await directory.leave('kicked', { ban: true, requestedBy: { participantId: 'p1', sessionId: 's1' } });
 
     // Without this they could re-claim a seat and keep reading the room's broadcast channel, since
     // the room logic's own ban list only lives in the host's tab.
     expect(await directory.join('kicked', 's2-new', false)).toEqual({ ok: false, reason: 'banned' });
+  });
+
+  it('lets a participant release its own slot', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    await directory.leave('p2', { requestedBy: { participantId: 'p2', sessionId: 's2' } });
+
+    expect(await directory.join('newcomer', 'sx', false)).toMatchObject({ ok: true, slot: 1 });
+  });
+
+  it('refuses to remove somebody on behalf of a participant that is not the host', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+    await directory.join('p3', 's3', false);
+
+    // A room code plus a participant id must not be enough to throw a singer out.
+    await directory.leave('p3', { requestedBy: { participantId: 'p2', sessionId: 's2' } });
+
+    expect(await directory.authorize('p3', 's3')).toMatchObject({ ok: true });
+  });
+
+  it('refuses a ban from anyone but the host', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+    await directory.join('p3', 's3', false);
+
+    await directory.leave('p3', { ban: true, requestedBy: { participantId: 'p2', sessionId: 's2' } });
+
+    expect(await directory.join('p3', 's3', false)).toMatchObject({ ok: true });
+  });
+
+  it('ignores a removal from a session that does not match its participant', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    await directory.leave('p2', { requestedBy: { participantId: 'p1', sessionId: 'forged-session' } });
+
+    expect(await directory.authorize('p2', 's2')).toMatchObject({ ok: true });
   });
 
   it('promotes the claimant and bumps the epoch', async () => {
@@ -164,7 +207,7 @@ describe('OnlineDirectory', () => {
     await directory.join('p1', 's1', true);
     await directory.join('p2', 's2', false);
 
-    await directory.leave('p1');
+    await directory.leave('p1', { requestedBy: { participantId: 'p1', sessionId: 's1' } });
 
     expect(await directory.info()).toMatchObject({ hostSessionId: 's2' });
   });

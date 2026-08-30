@@ -135,7 +135,11 @@ export type PromoteHostResponse =
 /** `POST /online/room/:code/leave` — frees the slot so somebody else can take it. Best-effort:
  * a browser that just closes is cleaned up by the directory's own expiry instead. */
 export interface LeaveRoomRequest {
+  /** Who is being removed. */
   participantId: string;
+  /** Who is asking. Anyone may release their own slot; only the current host may remove or ban
+   * somebody else, so this is checked against the directory rather than trusted. */
+  requestedBy: { participantId: string; sessionId: string };
   /** Set by the host when it kicks somebody. The room logic already refuses their `hello`, but
    * without this they could still hold a slot and keep reading the room's broadcast channel. */
   ban?: boolean;

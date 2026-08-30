@@ -30,6 +30,7 @@ export class RelayRoomConnection implements OnlineRoomConnection {
   private messageListeners = new Set<(message: OnlineMessages, slot: number | null) => void>();
   private closeListeners = new Set<(slot: number) => void>();
   private lostListeners = new Set<() => void>();
+  private hostLostListeners = new Set<() => void>();
 
   public constructor(
     private readonly roomCode: string,
@@ -45,6 +46,11 @@ export class RelayRoomConnection implements OnlineRoomConnection {
   public onLost = (listener: () => void) => {
     this.lostListeners.add(listener);
     return () => this.lostListeners.delete(listener);
+  };
+
+  public onHostLost = (listener: () => void) => {
+    this.hostLostListeners.add(listener);
+    return () => this.hostLostListeners.delete(listener);
   };
 
   public join = async ({ create = false } = {}): Promise<OnlineJoinOutcome> => {
@@ -90,14 +96,19 @@ export class RelayRoomConnection implements OnlineRoomConnection {
     });
 
   public keepalive = () => keepaliveRoom(this.roomCode);
-  public leave = () => leaveRoom(this.roomCode, this.participantId);
-  public releaseSlot = (participantId: string, ban = false) => leaveRoom(this.roomCode, participantId, ban);
+  private requester = () => ({ participantId: this.participantId, sessionId: this.getSessionId() });
+
+  public leave = () => leaveRoom(this.roomCode, this.participantId, this.requester());
+  public releaseSlot = (participantId: string, ban = false) =>
+    leaveRoom(this.roomCode, participantId, this.requester(), ban);
 
   private openSocket = () =>
     new Promise<void>((resolve, reject) => {
       const membership = this.membership!;
+      // Role and slot are the directory's to decide — this only says who is asking. Sending them
+      // would let anyone with the room code claim to be the host.
       const base = signalingUrl(
-        `/online/room/${this.roomCode}/relay?role=${membership.isHost ? 'host' : 'client'}&slot=${membership.slot}`,
+        `/online/room/${this.roomCode}/relay?participantId=${encodeURIComponent(this.participantId)}&sessionId=${encodeURIComponent(this.getSessionId())}`,
       );
       const url = new URL(base, global.location.href);
       url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -121,6 +132,12 @@ export class RelayRoomConnection implements OnlineRoomConnection {
     }
 
     if (!isHost) {
+      // The relay's own notice that the host's socket dropped. Every real frame is an
+      // `OnlineMessages` discriminated on `t`, so this cannot collide with one.
+      if ((parsed as { hostGone?: boolean })?.hostGone === true) {
+        this.hostLostListeners.forEach((listener) => listener());
+        return;
+      }
       // A client cannot tell a broadcast from a reply on its own slot, and does not need to — the
       // SFU version hands both to the same listeners too.
       this.messageListeners.forEach((listener) => listener(parsed as OnlineMessages, null));

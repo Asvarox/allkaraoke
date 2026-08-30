@@ -80,6 +80,7 @@ export class OnlineRoomHost {
 
   private readonly loopback: LoopbackTransportPair;
   private readonly timers: ReturnType<typeof setTimeout>[] = [];
+  private readonly detachConnection: Array<() => void> = [];
   private wakeTimer: ReturnType<typeof setTimeout> | null = null;
   private lastSnapshot: OnlinePersistedState | null = null;
   private lastSnapshotBroadcastAt = 0;
@@ -168,14 +169,20 @@ export class OnlineRoomHost {
   public getEpoch = () => this.membership.epoch;
 
   private bindConnection = () => {
-    this.connection.onMessage((message, slot) => {
-      if (slot === null) return; // the host never reads its own broadcast
-      void this.handleMessage(message, slot);
-    });
-    this.connection.onSlotClosed((slot) => {
-      const participantId = this.slotToParticipant.get(slot);
-      if (participantId) this.logic.handleDisconnect(participantId);
-    });
+    // The connection outlives a role change, so the unsubscribes are kept and called in `close()`
+    // — otherwise a demoted host would go on handling room traffic from inside a room it no
+    // longer runs.
+    this.detachConnection.push(
+      this.connection.onMessage((message, slot) => {
+        if (this.closed || slot === null) return; // the host never reads its own broadcast
+        void this.handleMessage(message, slot);
+      }),
+      this.connection.onSlotClosed((slot) => {
+        if (this.closed) return;
+        const participantId = this.slotToParticipant.get(slot);
+        if (participantId) this.logic.handleDisconnect(participantId);
+      }),
+    );
     this.loopback.addHostListener((message, sender) => {
       void this.handleFromSender(message, sender);
     });
@@ -214,6 +221,9 @@ export class OnlineRoomHost {
     const result = this.logic.handleConnect(participantId, boundedName, { create });
     if (!result.accepted) {
       sender.send({ t: 'join-rejected', reason: result.reason });
+      // They never became a participant, but they did claim a directory slot to get here — a
+      // room-full rejection would otherwise cost the room the very seat it just refused.
+      void this.connection.releaseSlot(participantId, result.reason === 'banned');
       return;
     }
 
@@ -371,6 +381,7 @@ export class OnlineRoomHost {
     if (this.closed) return;
     this.closed = true;
     global.removeEventListener('pagehide', this.stashSnapshot);
+    this.detachConnection.forEach((detach) => detach());
     this.timers.forEach((timer) => clearInterval(timer));
     if (this.wakeTimer) clearTimeout(this.wakeTimer);
     this.loopback.close();

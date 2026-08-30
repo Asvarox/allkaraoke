@@ -163,6 +163,9 @@ describe('OnlineRoomHost', () => {
     await vi.advanceTimersByTimeAsync(0);
 
     expect(latecomer.received).toContainEqual({ t: 'join-rejected', reason: 'room-full' });
+    // Rejecting them must also hand back the directory slot they claimed on the way in, or a full
+    // room loses the very seat it just refused.
+    expect(fabric.released).toContain('too-many');
   });
 
   it('starts the reconnect grace window when a slot channel closes', async () => {

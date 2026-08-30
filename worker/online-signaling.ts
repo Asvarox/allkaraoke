@@ -298,9 +298,10 @@ const handleRoom = async (
     return json(await directory.join(participantId, sessionId, create === true));
   }
   if (action === 'leave') {
-    const { participantId, ban } = (body ?? {}) as unknown as LeaveRoomRequest;
+    const { participantId, requestedBy, ban } = (body ?? {}) as unknown as LeaveRoomRequest;
     if (!participantId) return badRequest('participantId required');
-    await directory.leave(participantId, ban === true);
+    if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest('requestedBy required');
+    await directory.leave(participantId, { ban: ban === true, requestedBy });
     return json({ ok: true });
   }
   if (action === 'promote') {

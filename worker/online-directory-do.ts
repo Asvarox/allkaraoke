@@ -117,17 +117,21 @@ export class OnlineDirectory extends DurableObject {
    * The relay's socket upgrade. This has to be `fetch` rather than an RPC method: a 101 response
    * carrying a `webSocket` cannot cross the RPC boundary, so the signaling layer forwards the
    * original request here instead.
+   *
+   * Role and slot are derived from directory membership, never from the request. Taking them from
+   * the query string would have let anyone holding a room code open a host-tagged socket and
+   * broadcast to the room as if they were running it, or read another singer's slot.
    */
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url);
-    const role = url.searchParams.get('role') === 'host' ? 'host' : 'client';
-    const slot = Number(url.searchParams.get('slot') ?? '0');
-    if (!Number.isInteger(slot) || slot < 0 || slot >= ONLINE_SLOT_COUNT) {
-      return new Response('invalid slot', { status: 400 });
-    }
+    const participantId = url.searchParams.get('participantId') ?? '';
+    const sessionId = url.searchParams.get('sessionId') ?? '';
+
+    const auth = this.authorize(participantId, sessionId);
+    if (!auth.ok) return new Response('Not a member of this room', { status: 403 });
 
     const pair = new WebSocketPair();
-    const tag = role === 'host' ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(slot);
+    const tag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
     // Hibernatable, and tagged rather than held in a field — the tags survive an eviction, an
     // in-memory map would not.
     this.ctx.acceptWebSocket(pair[1], [tag]);
@@ -173,7 +177,21 @@ export class OnlineDirectory extends DurableObject {
   }
 
   async webSocketClose(socket: WebSocket) {
-    const slotTag = this.ctx.getTags(socket).find((tag) => tag.startsWith('slot:'));
+    const tags = this.ctx.getTags(socket);
+
+    if (tags.includes(OnlineDirectory.HOST_TAG)) {
+      // The host's socket dies with its tab whether or not any JavaScript got to run, so this is
+      // an exact signal where the SFU has none — clients would otherwise sit through the whole
+      // heartbeat stall before starting the succession they already know is needed.
+      const gone = JSON.stringify({ hostGone: true });
+      this.ctx
+        .getWebSockets()
+        .filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG))
+        .forEach((client) => client.send(gone));
+      return;
+    }
+
+    const slotTag = tags.find((tag) => tag.startsWith('slot:'));
     if (!slotTag) return;
     // The host learns a singer is gone the way it would over the SFU: the pipe closed.
     const closed = JSON.stringify({ slot: Number(slotTag.slice('slot:'.length)), closed: true });
@@ -241,7 +259,29 @@ export class OnlineDirectory extends DurableObject {
     };
   }
 
-  public async leave(participantId: string, ban = false): Promise<void> {
+  /**
+   * Removes a participant, optionally banning them.
+   *
+   * `requestedBy` is the session asking. Anyone may release their own slot; only the current host
+   * may remove or ban somebody else — otherwise a room code plus a participant id would be enough
+   * to throw any singer out of any room.
+   */
+  public async leave(
+    participantId: string,
+    { ban = false, requestedBy }: { ban?: boolean; requestedBy?: { participantId: string; sessionId: string } } = {},
+  ): Promise<void> {
+    const requester = requestedBy
+      ? this.authorize(requestedBy.participantId, requestedBy.sessionId)
+      : { ok: false as const };
+    const isSelf = requestedBy?.participantId === participantId && requester.ok;
+    const isHost = requester.ok && requester.isHost;
+    if (!isSelf && !isHost) return;
+    if (ban && !isHost) return;
+
+    return this.removeMember(participantId, ban);
+  }
+
+  private async removeMember(participantId: string, ban: boolean): Promise<void> {
     const before = this.state.members.length;
     this.state.members = this.state.members.filter((member) => member.participantId !== participantId);
     // A ban is recorded even for somebody already gone — the point is that they cannot come back,

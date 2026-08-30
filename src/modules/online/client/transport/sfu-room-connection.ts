@@ -66,6 +66,10 @@ export class SfuRoomConnection implements OnlineRoomConnection {
   public getMembership = () => this.membership;
   /** Fires when the connection to the SFU is unrecoverable — the caller re-joins from scratch. */
   public onLost = (listener: () => void) => this.session.onLost(listener);
+
+  /** The SFU does not report who stopped publishing, so a lost host is only ever inferred from
+   * missing heartbeats here. Present to satisfy the contract the relay does implement. */
+  public onHostLost = () => () => undefined;
   public getSessionId = () => this.session.getSessionId();
   public isConnected = () => this.session.isConnected() && this.broadcastChannel?.readyState === 'open';
 
@@ -121,9 +125,12 @@ export class SfuRoomConnection implements OnlineRoomConnection {
 
   public keepalive = () => keepaliveRoom(this.roomCode);
 
-  public leave = () => leaveRoom(this.roomCode, this.participantId);
+  private requester = () => ({ participantId: this.participantId, sessionId: this.session.getSessionId()! });
 
-  public releaseSlot = (participantId: string, ban = false) => leaveRoom(this.roomCode, participantId, ban);
+  public leave = () => leaveRoom(this.roomCode, this.participantId, this.requester());
+
+  public releaseSlot = (participantId: string, ban = false) =>
+    leaveRoom(this.roomCode, participantId, this.requester(), ban);
 
   private wireChannels = async () => {
     const membership = this.membership!;

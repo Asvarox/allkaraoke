@@ -29,6 +29,8 @@ async function openFillerSockets(roomCode: string, origin: string, sockets: WebS
   for (let seat = 1; seat < ONLINE_MAX_PLAYERS; seat++) {
     const participantId = crypto.randomUUID();
 
+    // The relay identifies a socket by its directory membership, so a filler joins first and then
+    // connects as itself — role and slot are the directory's to decide.
     const joinResponse = await fetch(`${origin}/online/room/${roomCode}/join`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -40,7 +42,7 @@ async function openFillerSockets(roomCode: string, origin: string, sockets: WebS
     // The end-to-end suite runs on the relay data plane — there is no Realtime app to talk to in
     // CI — so a filler speaks the same relay protocol the client does.
     const socket = new WebSocket(
-      `${origin.replace(/^http/, 'ws')}/online/room/${roomCode}/relay?role=client&slot=${join.slot}`,
+      `${origin.replace(/^http/, 'ws')}/online/room/${roomCode}/relay?participantId=${encodeURIComponent(participantId)}&sessionId=${encodeURIComponent(participantId)}`,
     );
     sockets.push(socket);
 

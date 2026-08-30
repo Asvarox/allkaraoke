@@ -271,6 +271,14 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     connection.onLost(() => {
       if (this.connection === connection) this.scheduleReconnect();
     });
+    connection.onHostLost(() => {
+      // An exact signal beats waiting out ONLINE_HOST_STALL_MS. Expressed by ageing the last
+      // heartbeat rather than by a second code path: `claimHost` re-checks freshness after its
+      // stagger, and a claim raised while the last beat still looked recent would abort there.
+      if (this.connection !== connection || this.host) return;
+      this.lastHeartbeatAt = 0;
+      void this.claimHost();
+    });
 
     this.attachRole(outcome.membership);
   };
@@ -279,7 +287,10 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
    * is the host — starts the room logic in this tab. */
   private attachRole = (membership: SfuRoomMembership, restoreFrom: OnlineHostSnapshot | null = null) => {
     const connection = this.connection!;
+    // Closing, not just clearing: an SfuClientTransport also holds a `connection.onMessage`
+    // subscription, and the same connection object outlives a role change.
     this.transport?.clearAllListeners();
+    this.transport?.close();
     this.host?.close();
     this.host = null;
 
@@ -333,6 +344,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     } else if (message.t === 'join-rejected') {
       this.shouldReconnect = false;
       this.setStatus('rejected', message.reason);
+      // Being turned away has to close the data plane too. Leaving it open kept an evicted client
+      // subscribed to the room's broadcast, and its slot claimed in the directory.
+      this.releaseConnection();
     } else if (message.t === 'rpc-pub') {
       this.subscriptions.handlePublish(
         message.channel,
@@ -465,6 +479,22 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 
   /** Latest measured round-trip latency to the host, ms. */
   public getLatency = () => this.pingPong.getLatency();
+
+  /** Drops the data plane while leaving the connection *status* alone — used when the room has
+   * rejected us, where the status is the whole point and must survive. */
+  private releaseConnection = () => {
+    this.stopHeartbeatWatchdog();
+    this.host?.close();
+    this.host = null;
+    this.transport?.clearAllListeners();
+    this.transport?.close();
+    this.transport = undefined;
+    if (this.connection) {
+      void this.connection.leave();
+      this.connection.close();
+      this.connection = null;
+    }
+  };
 
   public disconnect = () => {
     this.shouldReconnect = false;
