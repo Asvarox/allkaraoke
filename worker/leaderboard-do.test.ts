@@ -58,7 +58,7 @@ describe('LeaderboardBoard', () => {
     expect(entry).not.toHaveProperty('id');
   });
 
-  it('keeps a row sung on Easy off the board, admin listing aside', async () => {
+  it('keeps a row sung on Easy off the global board but on the song board for Easy', async () => {
     const board = getBoard();
 
     await board.submit(generateSubmission({ clientId: 'client-easy', tolerance: 3, score: 3_000_000 }), notesBlob);
@@ -66,6 +66,14 @@ describe('LeaderboardBoard', () => {
 
     expect((await board.projection()).entries).toEqual([expect.objectContaining({ score: 1_500_000, tolerance: 2 })]);
     expect(await board.listForAdmin()).toHaveLength(2);
+
+    // The whole reason Easy is stored: its own per-song board, where it is ranked against Easy only
+    expect((await board.songBoard('song-1', 3, null)).entries).toEqual([
+      expect.objectContaining({ score: 3_000_000, tolerance: 3 }),
+    ]);
+    expect((await board.songBoard('song-1', 2, null)).entries).toEqual([
+      expect.objectContaining({ score: 1_500_000, tolerance: 2 }),
+    ]);
   });
 
   it('rebuilds the projection over the stored rows on demand', async () => {
@@ -176,6 +184,66 @@ describe('LeaderboardBoard', () => {
     );
 
     expect(remainingNotes).toBe(0);
+  });
+
+  it('splits the per-song board by difficulty and ignores the vocal track', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ clientId: 'a', name: 'Hard singer', tolerance: 1 }), notesBlob);
+    await board.submit(
+      generateSubmission({ clientId: 'b', name: 'Medium singer', tolerance: 2, trackIndex: 1 }),
+      notesBlob,
+    );
+    await board.submit(generateSubmission({ clientId: 'c', name: 'Other song', songId: 'song-2' }), notesBlob);
+
+    const medium = await board.songBoard('song-1', 2, null);
+
+    expect(medium.total).toBe(1);
+    // The track index differs from every other row and is deliberately not part of the split
+    expect(medium.entries).toEqual([expect.objectContaining({ name: 'Medium singer' })]);
+
+    const hard = await board.songBoard('song-1', 1, null);
+    expect(hard.entries).toEqual([expect.objectContaining({ name: 'Hard singer' })]);
+  });
+
+  it('ranks a score that is not on the board against the rows that are', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ clientId: 'a', name: 'First', score: 2_000_000 }), notesBlob);
+    await board.submit(generateSubmission({ clientId: 'b', name: 'Second', score: 1_500_000 }), notesBlob);
+
+    expect(await board.songBoard('song-1', 2, 1_800_000)).toEqual(expect.objectContaining({ total: 2, position: 2 }));
+    expect((await board.songBoard('song-1', 2, 2_500_000)).position).toBe(1);
+    expect((await board.songBoard('song-1', 2, 1_000_000)).position).toBe(3);
+  });
+
+  it('ranks a tie behind the row that got there first', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission({ score: 1_500_000 }), notesBlob);
+
+    expect((await board.songBoard('song-1', 2, 1_500_000)).position).toBe(2);
+  });
+
+  it('leaves a score out of the per-song ranking when none was asked for', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission(), notesBlob);
+
+    expect((await board.songBoard('song-1', 2, null)).position).toBeNull();
+  });
+
+  it('keeps expired rows out of the per-song board and its ranking', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission({ clientId: 'fresh', name: 'Fresh' }), notesBlob);
+
+    await runInDurableObject(board, (_instance, state) => {
+      state.storage.sql.exec(
+        `UPDATE records SET created_at = ? WHERE name = ?`,
+        Date.now() - RETENTION_MS - 1000,
+        'Fresh',
+      );
+    });
+
+    expect(await board.songBoard('song-1', 2, 1_000_000)).toEqual({ entries: [], total: 0, position: 1 });
   });
 
   it('rejects submissions with an empty name', async () => {

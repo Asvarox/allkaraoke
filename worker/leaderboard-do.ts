@@ -1,13 +1,14 @@
 import { DurableObject } from 'cloudflare:workers';
 
 // Relative import on purpose: the `~` alias is only configured for the app build, not the Worker one
-import { MAX_QUALIFYING_TOLERANCE } from '../src/modules/leaderboard/consts';
+import { MAX_GLOBAL_BOARD_TOLERANCE, SONG_BOARD_SIZE } from '../src/modules/leaderboard/consts';
 import {
   AdminBoardEntry,
   BOARD_KV_KEY,
   BoardEntry,
   BoardResponse,
   LeaderboardSubmission,
+  SongBoardResponse,
 } from '../src/modules/leaderboard/types';
 
 export interface LeaderboardDurableObjectEnv {
@@ -198,12 +199,69 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
         `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
          FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`,
         Date.now() - RETENTION_MS,
-        MAX_QUALIFYING_TOLERANCE,
+        MAX_GLOBAL_BOARD_TOLERANCE,
         BOARD_SIZE,
       )
       .toArray();
 
     return { generatedAt: Date.now(), entries: rows.map(toBoardEntry) };
+  }
+
+  /**
+   * The board for one song at one difficulty, plus where a given score would land on it.
+   *
+   * Unlike {@link projection} this is read straight off the Durable Object — there is no KV
+   * projection to serve it from. A projection per (song, difficulty) would be thousands of KV
+   * values rewritten on every submission, and the read happens once per finished song rather than
+   * on every main-menu load, so the DO read is the cheaper side of that trade.
+   *
+   * Difficulty is an exact match, not `<=`: a wider pitch window is a different game, so Medium
+   * rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored.
+   */
+  songBoard(songId: string, tolerance: number, score: number | null): SongBoardResponse {
+    const cutoff = Date.now() - RETENTION_MS;
+
+    const rows = this.sql
+      .exec<RecordRow>(
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+         FROM records WHERE song_id = ? AND tolerance = ? AND created_at >= ?
+         ORDER BY score DESC, created_at ASC LIMIT ?`,
+        songId,
+        tolerance,
+        cutoff,
+        SONG_BOARD_SIZE,
+      )
+      .toArray();
+
+    const total =
+      this.sql
+        .exec<{ count: number }>(
+          `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ? AND created_at >= ?`,
+          songId,
+          tolerance,
+          cutoff,
+        )
+        .toArray()[0]?.count ?? 0;
+
+    // `>=`, not `>`: a submitted tie gets a later `created_at` and so sorts behind the row that got
+    // there first, which is the order the board itself would put it in. The cost is that a score
+    // already on the board is ranked one place below where it sits — the caller is asking where a
+    // score *would* land, and it is answered before the submission goes out.
+    const notBehind =
+      score === null
+        ? null
+        : (this.sql
+            .exec<{ count: number }>(
+              `SELECT COUNT(*) AS count FROM records
+               WHERE song_id = ? AND tolerance = ? AND created_at >= ? AND score >= ?`,
+              songId,
+              tolerance,
+              cutoff,
+              score,
+            )
+            .toArray()[0]?.count ?? 0);
+
+    return { entries: rows.map(toBoardEntry), total, position: notBehind === null ? null : notBehind + 1 };
   }
 
   /** Every stored row, newest first, including ids. Authenticated admin use only. */

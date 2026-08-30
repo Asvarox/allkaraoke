@@ -1,55 +1,14 @@
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
 import useSWR from 'swr';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
-import { Flag } from '~/modules/elements/flag';
 import { fetchBoard, LEADERBOARD_URL } from '~/modules/leaderboard/client';
-import { BoardEntry } from '~/modules/leaderboard/types';
+import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
 import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
-import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
-
-// Registered here rather than app-wide — this is the only screen that renders a relative date
-dayjs.extend(relativeTime);
-
-const difficultyNames = ['Hard', 'Medium', 'Easy'];
-
-/** `tolerance` on a sing setup is 1-based; anything outside the shipped range renders as nothing. */
-const difficultyName = (tolerance: number) => difficultyNames[tolerance - 1];
 
 /** 10 rows fit; the rest of the top 50 is reachable by mouse or touch scroll only. */
 const VISIBLE_ROWS = 10;
-
-function Row({ entry, position }: { entry: BoardEntry; position: number }) {
-  return (
-    // Same rounded-box look as a `Menu.Button`, minus every interactive cue (no hover glow, no
-    // focus border/inner-shadow) - these rows are read-only
-    <div
-      className="typography flex items-center gap-2 rounded-xl bg-black/55 px-2 py-3 text-sm"
-      data-test="leaderboard-row">
-      <div className="text-active text-md w-[2ch] shrink-0 text-right tabular-nums">{position}</div>
-      <div className="min-w-0 flex-1 text-left">
-        <div className="ph-no-capture flex items-center gap-2 truncate">
-          <Flag isocode={entry.country ?? 'un'} loading="lazy" className="h-[1em] w-[1.5em] object-cover" />
-          {entry.name}
-        </div>
-        <div className="truncate text-xs opacity-70">
-          {entry.artist} — {entry.title}
-        </div>
-      </div>
-      <div className="shrink-0 text-right">
-        <span className="text-active font-semibold">
-          <ScoreText score={entry.score} />
-        </span>
-        <div className="text-xs opacity-70">
-          {[difficultyName(entry.tolerance), dayjs(entry.createdAt).fromNow()].filter(Boolean).join(' · ')}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 /**
  * The global board, read straight from the cached `GET /leaderboard` projection. Deliberately
@@ -87,7 +46,7 @@ function LeaderboardPanel({ className }: { className?: string }) {
         )}
         {!error &&
           data?.entries.map((entry, index) => (
-            <Row key={`${entry.songId}-${entry.name}-${index}`} entry={entry} position={index + 1} />
+            <LeaderboardRow key={`${entry.songId}-${entry.name}-${index}`} entry={entry} position={index + 1} />
           ))}
       </div>
     </Box>

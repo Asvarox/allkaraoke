@@ -42,6 +42,21 @@ export interface BoardResponse {
   entries: BoardEntry[];
 }
 
+/**
+ * Body of `GET /leaderboard-song`. One song at one difficulty; the vocal track is deliberately not
+ * part of the split — the two tracks of a duet are ranked together.
+ */
+export interface SongBoardResponse {
+  entries: BoardEntry[];
+  /** Rows for this song and difficulty within the retention window, including the ones not listed. */
+  total: number;
+  /**
+   * 1-based rank the `score` query parameter would take on this board, ties losing to the rows
+   * already there. `null` when the caller sent no score.
+   */
+  position: number | null;
+}
+
 /** Board row as returned by the authenticated admin listing, with the id needed to delete it. */
 export interface AdminBoardEntry extends BoardEntry {
   id: string;

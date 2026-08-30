@@ -1,8 +1,9 @@
 # Global Leaderboard
 
-A public board of the best karaoke scores from the last 14 days, shown on the main menu. Players opt
-in per score through a prompt after singing. The sung frequency records are stored alongside each
-record so score verification can be built later; nothing reads them in v1.
+A public board of the best karaoke scores from the last 14 days, shown on the main menu, plus a
+per-song board on the post-game screen. Players opt in per score through a prompt after singing. The
+sung frequency records are stored alongside each record so score verification can be built later;
+nothing reads them in v1.
 
 Design rationale and the explicitly deferred scope live in
 `docs/plans/2026-08-17-online-leaderboard-design.md`.
@@ -15,6 +16,8 @@ client ──POST /leaderboard──> Worker ──> LeaderboardBoard (Durable O
                                               └── writes the top-50 JSON ──> KV `board:v1`
 
 client ──GET  /leaderboard──> Worker ──> caches.default ──miss──> KV `board:v1`
+
+client ──GET  /leaderboard-song?songId&tolerance&score──> Worker ──> LeaderboardBoard
 ```
 
 The read path never touches the Durable Object. Free-plan DOs allow 100k requests/day, and a cache
@@ -28,20 +31,21 @@ copy until it expires.
 
 ## Files
 
-| Path | Role |
-| --- | --- |
-| `worker/leaderboard-do.ts` | `LeaderboardBoard` — SQLite storage, projection, expiry alarm |
-| `worker/leaderboard.ts` | `POST` validation + `GET` cache/KV read path |
-| `worker/leaderboard-admin.ts` | Authenticated list, delete, and manual projection rebuild |
-| `src/modules/leaderboard/types.ts` | Shapes shared by client and Worker — must stay dependency-free |
-| `src/modules/leaderboard/consts.ts` | `QUALIFYING_SCORE`, `MAX_QUALIFYING_TOLERANCE` and the payload bounds |
-| `src/modules/leaderboard/notes-payload.ts` | Delta encoder/decoder for the frequency records |
-| `src/modules/leaderboard/notes-hash.ts` | sha-256 over `notes ++ score`, used on both sides |
-| `src/modules/leaderboard/identity.ts` | localStorage `clientId`, name and country |
-| `src/modules/leaderboard/sharing.ts` | The standing decision: undecided / always / never |
-| `src/routes/game/singing/post-game/views/leaderboard/` | The prompt, the high-scores panel, and the hook holding their shared state |
-| `src/routes/welcome/leaderboard-panel.tsx` | The board on the main menu |
-| `src/routes/admin/leaderboard-management.tsx` | Row deletion and the rebuild button |
+| Path                                                   | Role                                                                          |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| `worker/leaderboard-do.ts`                             | `LeaderboardBoard` — SQLite storage, projection, expiry alarm                 |
+| `worker/leaderboard.ts`                                | `POST` validation, the global `GET` cache/KV read path, and the per-song read |
+| `worker/leaderboard-admin.ts`                          | Authenticated list, delete, and manual projection rebuild                     |
+| `src/modules/leaderboard/types.ts`                     | Shapes shared by client and Worker — must stay dependency-free                |
+| `src/modules/leaderboard/consts.ts`                    | `QUALIFYING_SCORE`, `MAX_QUALIFYING_TOLERANCE` and the payload bounds         |
+| `src/modules/leaderboard/notes-payload.ts`             | Delta encoder/decoder for the frequency records                               |
+| `src/modules/leaderboard/notes-hash.ts`                | sha-256 over `notes ++ score`, used on both sides                             |
+| `src/modules/leaderboard/identity.ts`                  | localStorage `clientId`, name and country                                     |
+| `src/modules/leaderboard/sharing.ts`                   | The standing decision: undecided / always / never                             |
+| `src/routes/game/singing/post-game/views/leaderboard/` | The prompt, the high-scores panel, and the hook holding their shared state    |
+| `src/modules/leaderboard/leaderboard-row.tsx`          | One row, shared by the main-menu board and the per-song board                 |
+| `src/routes/welcome/leaderboard-panel.tsx`             | The board on the main menu                                                    |
+| `src/routes/admin/leaderboard-management.tsx`          | Row deletion and the rebuild button                                           |
 
 The Worker imports from `src/` with **relative** paths. The `~` alias is only configured for the app
 build, so `~/modules/...` does not resolve inside the Worker bundle or its tests.
@@ -87,7 +91,7 @@ Artist and title are denormalized so the board renders standalone: no song-index
 client, and a removed song does not blank a row.
 
 The public projection selects only rows within the 14-day window whose `tolerance` is Medium or
-harder. It is rebuilt on every write and by the daily alarm, never on deploy — so a change to what
+harder (`MAX_GLOBAL_BOARD_TOLERANCE`). It is rebuilt on every write and by the daily alarm, never on deploy — so a change to what
 it selects reaches the board on the next submission, or up to a day later. `POST /leaderboard-admin`
 (the admin panel's **Rebuild public board**) applies it immediately and purges the read cache. Submissions easier than that are already rejected, so the filter is there for rows stored
 before the rule and for the admin listing, which deliberately keeps showing everything.
@@ -99,6 +103,75 @@ board would erode toward empty as leaders age out.
 The notes blobs live in their own table and are never `SELECT`ed by the board query, so they never
 load into a read. SQLite enforces the foreign key, so anything that deletes records deletes the
 matching blobs first.
+
+## The per-song board
+
+`GET /leaderboard-song?songId=…&tolerance=…&score=…` answers, for the song that was just sung, "who
+else has sung this, and where would this score land among them". It is rendered beside the local
+high scores on the post-game step, behind the `song_leaderboard` flag (see below), and returns:
+
+```ts
+{ entries: BoardEntry[]; total: number; position: number | null }
+```
+
+It is read **straight off the Durable Object** rather than from KV and the Cache API. There is one of
+these boards per (song, difficulty) rather than one in total, so a KV projection would mean thousands
+of values rewritten on every submission; and `score` differs on nearly every call, so an edge cache
+would miss more or less always. The read happens once per finished song, orders of magnitude below
+main-menu loads, which is the side of the trade that makes the DO read the cheap one. The response is
+`private, max-age=30` — it is keyed on one player's score and is not reusable by anyone else.
+
+Split by **difficulty only**, matched exactly rather than `<=`: a wider pitch window is a different
+game, so Medium rows would flatter a Hard singer and vice versa. The **vocal track is deliberately
+not part of the split** — both singers of a duet are ranked together, and the extra axis is not worth
+the rows it would fragment. `tolerance` above `MAX_SUBMITTED_TOLERANCE` is rejected outright: the
+debug widths are never stored, so such a request could only describe an empty board.
+
+`position` counts rows scoring `>=` the queried score, plus one. `>=`, not `>`, because a submitted
+tie gets a later `created_at` and so sorts behind the row that got there first — the order the board
+itself would give it. The cost is that a score _already_ on the board is ranked one place below where
+it sits; the query answers where a score _would_ land, and the post-game panel asks before the
+submission goes out.
+
+The panel shows regardless of whether the score qualifies for submission — telling a player who is
+nowhere near the board where they would have landed is the only reason to show it to them. It is
+hidden entirely for a difficulty that is never stored. Its wording tracks the standing decision:
+"would be" while undecided or declined, "will be" once the score is armed, "is" once it has gone. It
+is headed "Online scores", not "Global scores": the global board is a different board, and an Easy
+run is told in the same breath that it is not going there.
+
+The high-scores step keeps its two columns clear of the keyboard-help overlay, which is fixed to the
+top-right of every screen and shown by default (`KeyboardHelpVisibilitySetting`). It is the only step
+whose content reaches that corner, so the reserved band lives on the row in `high-scores.tsx` rather
+than in the overlay.
+
+Nothing rate-limits this route: it is a `GET` with no `clientId` to key on, and it is a read of rows
+that `GET /leaderboard` already exposes.
+
+## Two boards, two difficulty rules
+
+There are two limits on a run's `tolerance`, and they exist for different reasons:
+
+| Constant                     | Value      | Meaning                                                                                                                                                      |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `MAX_SUBMITTED_TOLERANCE`    | 3 (Easy)   | The easiest run stored at all, **with the per-song boards on**. Above it are the dev-only debug widths, which are not a shipped difficulty and get no board. |
+| `MAX_GLOBAL_BOARD_TOLERANCE` | 2 (Medium) | The easiest run the **global** board ranks.                                                                                                                  |
+
+The global board mixes every song and every difficulty into one ranking, and each tolerance step
+widens the pitch window the scoring uses — an Easy run reaches the qualifying score for singing that
+would not come close on Medium, so those rows are not comparable. The per-song boards are split by
+difficulty, so an Easy run is only ever ranked against other Easy runs of the same song and there is
+nothing incomparable about it. That is why Easy is stored and shown, and still kept off the main
+menu.
+
+`src/modules/leaderboard/qualifies.ts` is where the client says which is which:
+`hasLeaderboard(tolerance, songBoardsEnabled)` (is there a board to reach) and
+`reachesGlobalBoard(tolerance)` (does the main menu rank it). With the per-song boards flagged off,
+`hasLeaderboard` falls back to the global limit — an Easy score collected then would sit in storage
+with nothing to show it on. Medium and harder are collected either way. The post-game copy is driven by the second one throughout — the prompt's header
+and question, the share panel's "goes on … as:" line, and the opt-in offer all name **the song's own
+board** rather than the global one for an Easy run. Telling a player their score is "on the
+leaderboard" and then having them not find it on the main menu is the failure this avoids.
 
 ## Expiry alarm
 
@@ -118,7 +191,7 @@ The alarm is scheduled the first time the object is constructed, so no Cron Trig
 - a body over 256 KB,
 - a body that is not msgpack, or is missing a required field,
 - a non-integer score, or one below `QUALIFYING_SCORE` or above `MAX_POINTS`,
-- a `tolerance` easier than `MAX_QUALIFYING_TOLERANCE` (only Medium and Hard count),
+- a `tolerance` easier than `MAX_SUBMITTED_TOLERANCE` (the dev-only debug widths above Easy),
 - missing notes, malformed notes, or a record count outside the plausibility bounds,
 - a `notesHash` that does not match a server-side recomputation over `notes ++ score`,
 - a client over the rate limit.
@@ -147,11 +220,11 @@ The prompt is asked once, and both of its answers are standing decisions —
 `LeaderboardSharingSetting` holds `null`, `'always'` or `'never'`, and `useLeaderboardPostGame`
 turns that into what the high-scores step renders:
 
-| Decision | Prompt | Panel below the local scores | The button that moves on |
-| --- | --- | --- | --- |
-| `null` | opens | — | "Select song" |
+| Decision   | Prompt      | Panel below the local scores                                                | The button that moves on                               |
+| ---------- | ----------- | --------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `null`     | opens       | —                                                                           | "Select song"                                          |
 | `'always'` | never opens | the identity being shared under, still editable, plus "Stop sharing scores" | "Share score and sing a song", holding for the request |
-| `'never'` | never opens | a one-line offer that reopens the prompt | "Select song" |
+| `'never'`  | never opens | a one-line offer that reopens the prompt                                    | "Select song"                                          |
 
 Accepting the prompt arms the score rather than sending it there and then, so the player lands on
 the very panel every later song will show them and the send lives in one place. Closing the prompt
@@ -165,9 +238,16 @@ and clears the stored name and country. The `clientId` survives: it is the devic
 
 ## Feature flag and tests
 
-The client is gated behind the PostHog `leaderboard` flag. `useFeatureFlag` forces every flag on
+The client is gated behind two PostHog flags. `leaderboard` covers the whole feature; the per-song
+boards sit behind `song_leaderboard` on top of it, because they ship separately — the global board is
+already live, and the per-song boards change a screen every player sees and bring a difficulty rule
+of their own. `use-song-leaderboard-enabled.ts` returns false whenever `leaderboard` is off: there is
+no per-song board to show when the feature it belongs to is off, and no prompt to collect a name
+through.
+
+Both are gated the same way. `useFeatureFlag` forces every flag on
 under e2e, which would put the board into every existing spec and every main-menu screenshot, so
-`use-leaderboard-enabled.ts` consults an e2e-only opt-in instead (`enableLeaderboard` in
+each hook consults an e2e-only opt-in instead (`enableLeaderboard` and `enableSongLeaderboard` in
 `tests/helpers.ts`). That also gives the spec a real off-state to assert against.
 
 - `worker/leaderboard-do.test.ts`, `worker/leaderboard.test.ts` — Durable Object and route
@@ -176,5 +256,11 @@ under e2e, which would put the board into every existing spec and every main-men
 - `src/modules/leaderboard/notes-payload.test.ts` — encoder round-trip and payload size.
 - `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
 - `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
-  "always share" path across two songs; "Don't ask again" and the way back in; and the flag-off
-  state.
+  "always share" path across two songs; the per-song board and its position line on the post-game
+  step; "Don't ask again" and the way back in; and both flag-off states.
+
+  The first two are `test.fixme`: `getQualifyingScore()` scales the threshold down 1000x under e2e so
+  the prompt opens, but `POST /leaderboard` enforces the real `QUALIFYING_SCORE`, and the stubbed
+  microphone does not reliably clear it on Medium. Everything up to the submit passes; the row those
+  two then look for may never have been stored. Seeding the board through the admin route, or scaling
+  the Worker's threshold under e2e too, is what would bring them back.

@@ -11,12 +11,28 @@ export const QUALIFYING_SCORE_RATIO = 2 / 7;
 export const QUALIFYING_SCORE = MAX_POINTS * QUALIFYING_SCORE_RATIO;
 
 /**
- * Widest pitch tolerance (a sing setup's `tolerance`) the board accepts: 1 = Hard, 2 = Medium,
- * 3 = Easy, 4+ the dev-only debug widths. Only Medium and harder count — every step widens the
- * pitch window the scoring uses, so an Easy run reaches the qualifying score for singing that
- * would not come close on Medium, and the rows would not be comparable.
+ * Pitch tolerance on a sing setup: 1 = Hard, 2 = Medium, 3 = Easy, 4+ the dev-only debug widths.
+ *
+ * Two different limits hang off it, because the two boards rank different things:
+ *
+ * - {@link MAX_SUBMITTED_TOLERANCE} — the easiest run that may be stored at all. The per-song boards
+ *   are split by difficulty, so an Easy run is only ever ranked against other Easy runs of the same
+ *   song and there is nothing incomparable about it. The debug widths above Easy are not a shipped
+ *   difficulty and get no board.
+ * - {@link MAX_GLOBAL_BOARD_TOLERANCE} — the easiest run that reaches the single global board on the
+ *   main menu. That board mixes every song and every difficulty into one ranking, and each step
+ *   widens the pitch window the scoring uses, so an Easy run reaches the qualifying score for
+ *   singing that would not come close on Medium. Those rows would not be comparable.
  */
-export const MAX_QUALIFYING_TOLERANCE = 2;
+export const MAX_SUBMITTED_TOLERANCE = 3;
+
+export const MAX_GLOBAL_BOARD_TOLERANCE = 2;
+
+/**
+ * How many rows `GET /leaderboard-song` returns. Smaller than the global board: this one sits beside
+ * the local high scores on the post-game screen, and `total` carries the rest of the story.
+ */
+export const SONG_BOARD_SIZE = 20;
 
 /** Request body cap for `POST /leaderboard`. */
 export const MAX_SUBMISSION_BYTES = 256 * 1024;

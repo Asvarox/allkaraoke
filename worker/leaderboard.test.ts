@@ -6,7 +6,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { MAX_POINTS, QUALIFYING_SCORE } from '../src/modules/leaderboard/consts';
 import { computeNotesHash } from '../src/modules/leaderboard/notes-hash';
 import { encodeNotesPayload } from '../src/modules/leaderboard/notes-payload';
-import { BoardResponse, LeaderboardSubmission } from '../src/modules/leaderboard/types';
+import { BoardResponse, LeaderboardSubmission, SongBoardResponse } from '../src/modules/leaderboard/types';
 import { handleLeaderboardSubmit, LeaderboardEnv } from './leaderboard';
 
 const generateNotes = (recordCount: number) =>
@@ -102,8 +102,21 @@ describe('POST /leaderboard', () => {
     expect(await response.json()).toEqual({ error: 'Score out of range' });
   });
 
-  it('rejects a score sung on Easy', async () => {
-    const response = await submit(await generateSubmission({ tolerance: 3 }));
+  it('stores an Easy score for the song boards while keeping it off the global one', async () => {
+    const response = await submit(await generateSubmission({ tolerance: 3, name: 'Easy singer' }));
+    expect(response.status).toBe(200);
+
+    const global = (await (await SELF.fetch('https://example.com/leaderboard')).json()) as BoardResponse;
+    expect(global.entries).toEqual([]);
+
+    const song = (await (
+      await SELF.fetch('https://example.com/leaderboard-song?songId=song-1&tolerance=3')
+    ).json()) as SongBoardResponse;
+    expect(song.entries).toEqual([expect.objectContaining({ name: 'Easy singer', tolerance: 3 })]);
+  });
+
+  it('rejects a score sung on a debug pitch width', async () => {
+    const response = await submit(await generateSubmission({ tolerance: 4 }));
 
     expect(response.status).toBe(400);
     expect(await response.json()).toEqual({ error: 'Difficulty not eligible' });
@@ -221,6 +234,64 @@ describe('POST /leaderboard', () => {
     });
 
     expect(response.status).toBe(413);
+  });
+});
+
+describe('GET /leaderboard-song', () => {
+  const songBoard = (query: string) => SELF.fetch(`https://example.com/leaderboard-song?${query}`);
+
+  it('returns the board for one song and difficulty, and where a score would land on it', async () => {
+    await submit(await generateSubmission({ clientId: 'a', name: 'First', score: 2_000_000 }));
+    await submit(await generateSubmission({ clientId: 'b', name: 'Second', score: 1_500_000 }));
+    await submit(await generateSubmission({ clientId: 'c', name: 'Elsewhere', songId: 'song-2' }));
+
+    const response = await songBoard('songId=song-1&tolerance=2&score=1800000');
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({
+      entries: [
+        expect.objectContaining({ name: 'First', score: 2_000_000 }),
+        expect.objectContaining({ name: 'Second', score: 1_500_000 }),
+      ],
+      total: 2,
+      position: 2,
+    });
+  });
+
+  it('omits the position when no score is asked about', async () => {
+    await submit(await generateSubmission());
+
+    const payload = (await (await songBoard('songId=song-1&tolerance=2')).json()) as SongBoardResponse;
+
+    expect(payload.position).toBeNull();
+    expect(payload.total).toBe(1);
+  });
+
+  it("keeps the response out of shared caches — it is keyed on one player's score", async () => {
+    const response = await songBoard('songId=song-1&tolerance=2&score=1500000');
+
+    expect(response.headers.get('Cache-Control')).toBe('private, max-age=30');
+  });
+
+  it('serves a board for every shipped difficulty, and none for the debug widths', async () => {
+    expect((await songBoard('songId=song-1&tolerance=3')).status).toBe(200);
+    expect((await songBoard('songId=song-1&tolerance=4')).status).toBe(400);
+    expect((await songBoard('songId=song-1&tolerance=0')).status).toBe(400);
+    expect((await songBoard('songId=song-1&tolerance=not-a-number')).status).toBe(400);
+  });
+
+  it('rejects a missing song id and an out-of-range score', async () => {
+    expect((await songBoard('tolerance=2')).status).toBe(400);
+    expect((await songBoard(`songId=song-1&tolerance=2&score=${MAX_POINTS + 1}`)).status).toBe(400);
+    expect((await songBoard('songId=song-1&tolerance=2&score=-1')).status).toBe(400);
+  });
+
+  it('refuses anything but a GET', async () => {
+    const response = await SELF.fetch('https://example.com/leaderboard-song?songId=song-1&tolerance=2', {
+      method: 'POST',
+    });
+
+    expect(response.status).toBe(405);
   });
 });
 

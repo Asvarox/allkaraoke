@@ -18,18 +18,34 @@ const panelClassName = 'mt-2 w-full items-stretch justify-start gap-2 border bor
 
 /**
  * Sits under the local high scores once the player has a standing decision, so the prompt does not
- * have to interrupt them every time. Registers into the high-scores navigation — its controls come
+ * have to interrupt them every time. Names the board the score is actually going on: an Easy run is
+ * ranked against this song only and never appears on the main menu's board. Registers into the high-scores navigation — its controls come
  * after the score renames and before the button that moves on, matching where they are on screen.
  */
 function LeaderboardSharePanel({ register, leaderboard }: Props) {
-  const { panel, name, setName, country, setCountry, isSubmitting, stopSharing, openModal } = leaderboard;
+  const {
+    panel,
+    name,
+    setName,
+    country,
+    setCountry,
+    isSubmitting,
+    stopSharing,
+    openModal,
+    reachesGlobalBoard,
+    difficulty,
+  } = leaderboard;
 
   if (panel === null) return null;
 
   if (panel === 'opt-in') {
     return (
       <Box className={panelClassName} data-test="leaderboard-opt-in-panel">
-        <Menu.HelpText>This score is good enough for the global leaderboard on the main menu.</Menu.HelpText>
+        <Menu.HelpText>
+          {reachesGlobalBoard
+            ? 'This score is good enough for the global leaderboard on the main menu.'
+            : `This score is good enough for this song's ${difficulty} leaderboard.`}
+        </Menu.HelpText>
         <Menu.Button
           size="small"
           className="sm:w-auto sm:min-w-60 sm:self-start"
@@ -45,7 +61,11 @@ function LeaderboardSharePanel({ register, leaderboard }: Props) {
 
   return (
     <Box className={panelClassName} data-test="leaderboard-share-panel">
-      <Menu.HelpText>This score goes on the global leaderboard as:</Menu.HelpText>
+      <Menu.HelpText>
+        {reachesGlobalBoard
+          ? 'This score goes on the global leaderboard as:'
+          : `This score goes on this song's ${difficulty} leaderboard — not the global one — as:`}
+      </Menu.HelpText>
 
       <LeaderboardIdentityFields
         register={register}
