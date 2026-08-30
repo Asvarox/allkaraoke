@@ -1,0 +1,213 @@
+#ARTIST:Peter, Paul & Mary
+#TITLE:500 Miles
+#CREATOR:Canni
+#BPM:296
+#YEAR:1962
+#VIDEO:v=UJmbn1sQw2A
+#LANGUAGE:English
+#GAP:18886,486486486487
+#ALLKARAOKE_ID:peter-paul-mary-500-miles
+#ALLKARAOKE_SID:6222
+#ALLKARAOKE_LASTUPDATE:2026-08-30T02:49:30.963Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=1303
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:168
+#MP3:Peter, Paul & Mary - 500 Miles.mp3
+: 20 7 5 If 
+: 28 7 5 you 
+: 36 24 9 miss
+- 60
+: 64 15 7 The train 
+: 80 7 5 I’m 
+: 88 32 5 on,
+- 120
+: 128 7 7 You 
+: 136 3 5 will 
+: 140 19 7 know 
+: 160 7 9 that 
+: 168 7 7 I 
+: 176 11 5 am 
+: 188 24 2 gone.
+- 212
+: 216 11 2 You 
+: 228 11 5 can 
+: 240 19 7 hear 
+: 260 3 9 the 
+: 264 11 7 whist
+: 276 7 5 le 
+: 284 20 2 blow
+- 304
+: 308 7 0 A 
+: 316 11 2 hund
+: 328 11 5 red 
+: 340 60 7 miles.
+- 400
+: 412 3 5 A 
+: 416 11 5 hund
+: 428 11 5 red 
+: 440 23 7 miles,
+- 463
+: 464 3 5 A 
+: 468 11 5 hund
+: 480 7 5 red 
+: 488 23 7 miles,
+- 511
+: 512 7 5 A 
+: 520 7 5 hund
+: 528 7 5 red 
+: 536 23 0 miles,
+- 559
+: 560 7 9 A 
+: 568 11 7 hund
+: 580 7 5 red 
+: 588 24 7 miles,
+- 612
+: 616 15 2 You 
+: 632 11 5 can 
+: 644 15 7 hear 
+: 660 7 9 the 
+: 668 7 7 whist
+: 676 7 5 le 
+: 684 24 2 blow
+- 708
+: 712 7 0 A 
+: 720 7 2 hund
+: 728 11 5 red 
+: 740 64 5 miles.
+- 804
+: 808 23 5 Lord 
+: 832 7 5 I’m 
+: 840 23 9 one, 
+: 864 19 7 Lord 
+: 884 7 5 I’m 
+: 892 23 9 two,
+- 915
+: 916 19 7 Lord 
+: 936 3 5 I’m 
+: 940 27 7 three, 
+: 968 11 9 Lord 
+: 980 11 5 I’m 
+: 992 16 2 four,
+- 1008
+: 1016 15 2 Lord 
+: 1032 11 5 I’m 
+: 1044 23 7 five 
+: 1068 11 9 hund
+: 1080 7 5 red 
+: 1088 24 2 miles
+- 1112
+: 1116 15 5 From 
+: 1132 11 5 my 
+: 1144 64 7 home,
+- 1208
+: 1212 7 0 Five 
+: 1220 7 2 hund
+: 1228 11 5 red 
+: 1240 19 7 miles,
+- 1259
+: 1260 7 5 Five 
+: 1268 11 5 hund
+: 1280 7 5 red 
+: 1288 20 9 miles,
+- 1308
+: 1312 7 9 Five 
+: 1320 7 7 hund
+: 1328 11 5 red 
+: 1340 20 9 miles,
+- 1360
+: 1364 3 9 Five 
+: 1368 11 5 hund
+: 1380 7 7 red 
+: 1388 27 9 miles,
+- 1415
+: 1416 15 2 Lord 
+: 1432 7 5 I’m 
+: 1440 27 7 five 
+: 1468 11 9 hund
+: 1480 11 5 red 
+: 1492 20 2 miles
+- 1512
+: 1516 11 2 From 
+: 1528 15 5 my 
+: 1544 56 5 home.
+- 1600
+: 1612 19 5 Not 
+: 1632 7 5 a 
+: 1640 27 9 shirt 
+: 1668 11 7 on 
+: 1680 11 5 my 
+: 1692 23 9 back,
+- 1715
+: 1716 15 7 Not 
+: 1732 7 5 a 
+: 1740 23 7 penny 
+: 1764 15 7 to 
+: 1780 11 5 my 
+: 1792 23 2 name,
+- 1815
+: 1816 15 2 Lord 
+: 1832 7 5 I 
+: 1840 27 7 can’t 
+: 1868 11 9 go 
+: 1880 11 5 back 
+: 1892 23 2 home
+- 1915
+: 1916 19 0 This 
+: 1936 3 2 a 
+: 1940 68 7 way.
+- 2008
+: 2012 15 5 This 
+: 2028 11 5 a 
+: 2040 27 9 way 
+: 2068 11 9 this 
+: 2080 7 7 a 
+: 2088 28 5 way
+- 2116
+: 2120 11 9 This 
+: 2132 7 7 a 
+: 2140 27 5 way 
+: 2168 15 9 this 
+: 2184 7 7 a 
+: 2192 20 5 way
+- 2212
+: 2216 19 2 Lord 
+: 2236 7 5 I 
+: 2244 27 7 can’t 
+: 2272 11 9 go 
+: 2284 7 7 back 
+: 2292 24 5 Home
+- 2316
+: 2324 11 2 This 
+: 2336 7 0 a 
+: 2344 64 2 way.
+- 2408
+: 2420 15 5 If 
+: 2436 11 5 you 
+: 2448 15 5 mist 
+: 2464 7 9 the 
+: 2472 11 9 Train 
+: 2484 11 7 I’m 
+: 2496 24 5 on,
+- 2520
+: 2532 7 9 You 
+: 2540 7 7 will 
+: 2548 15 5 know 
+: 2564 7 7 that, 
+: 2572 23 9 I’m 
+: 2596 20 7 gone
+- 2616
+: 2620 11 2 You 
+: 2632 7 5 can 
+: 2640 23 7 hear 
+: 2664 7 9 the 
+: 2672 7 7 whist
+: 2680 7 5 le 
+: 2688 23 2 blow
+- 2711
+: 2712 7 0 A 
+: 2720 11 2 hund
+: 2732 11 5 red 
+: 2744 100 5 miles.
+E
