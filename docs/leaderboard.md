@@ -265,6 +265,11 @@ each hook consults an e2e-only opt-in instead (`enableLeaderboard` and `enableSo
 - `worker/leaderboard-do.test.ts`, `worker/leaderboard.test.ts` — Durable Object and route
   behaviour, under `@cloudflare/vitest-pool-workers`. These live in the `functions` vitest project;
   `vite.config.mts` includes `worker/**/*.test.ts` there.
+- `src/stories/post-game-scoreboards.stories.tsx` — the high-scores step in Storybook, with both
+  scoreboards. The scores on that screen come from `GameState` and `PlayersManager` rather than from
+  props, and the real ones are computed from sung notes, so the story seeds a sing setup and fixes
+  each player state's score; `GET /leaderboard-song` is stubbed there too (there is no
+  request-mocking addon), which is what makes the empty, loading and failed states reachable.
 - `src/modules/leaderboard/notes-payload.test.ts` — encoder round-trip and payload size.
 - `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
 - `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
