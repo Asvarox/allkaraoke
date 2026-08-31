@@ -5,10 +5,16 @@ import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
 
 /**
- * The pair on the post-game step: half the row each (`basis-0`), the same height as each other
- * (`h-full` under an `items-stretch` row), and no more than the step has left over.
+ * The pair on the post-game step.
+ *
+ * Two layouts, because the step has two very different amounts of room. Side by side it is an even
+ * split of what the step has left over (`flex-1 basis-0`, `h-full`) and the screen never scrolls.
+ * Stacked there is not enough height to divide — a phone in landscape left both boards a hundred
+ * pixels each, with their headings colliding with the panel below — so each takes a fixed few rows
+ * and the page scrolls instead.
  */
-export const POST_GAME_SCOREBOARD_CLASS = 'max-h-full border border-white/10 p-2 lg:h-full lg:flex-1 lg:basis-0';
+export const POST_GAME_SCOREBOARD_CLASS =
+  'max-h-[18rem] border border-white/10 p-2 lg:h-full lg:max-h-full lg:flex-1 lg:basis-0';
 
 interface Props {
   title: string;
@@ -84,8 +90,17 @@ function ScoreboardPanel({ title, subtitle, children, fill, className, 'data-tes
       <Menu.HelpText className="text-left text-xs opacity-70 lg:text-sm">{subtitle}</Menu.HelpText>
       {/* `min-h-0` so this is what shrinks when the panel is capped, rather than overflowing it */}
       {/* `flex-1` only when there is something to fill with: otherwise the list would stretch to the
-          panel's full height and leave a board with three rows floating in a tall empty frame */}
-      <div ref={listRef} className={clsx('flex min-h-0 flex-col gap-1 overflow-y-auto', fill && 'flex-1')}>
+          panel's full height and leave a board with three rows floating in a tall empty frame.
+          The mask fades whatever the bottom edge cuts through, so a row the list ran out of room for
+          reads as more below rather than as a row that failed to draw. It falls on empty space, and
+          so is invisible, when everything fits. */}
+      <div
+        ref={listRef}
+        className={clsx(
+          'flex min-h-0 flex-col gap-1 overflow-y-auto',
+          '[mask-image:linear-gradient(to_bottom,black_calc(100%-1.25rem),transparent)]',
+          fill && 'flex-1',
+        )}>
         {children}
         {fill && Array.from({ length: Math.max(0, rowsThatFit) }, (_, index) => fill(index))}
       </div>

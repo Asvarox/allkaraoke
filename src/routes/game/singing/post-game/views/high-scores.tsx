@@ -43,7 +43,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           tip under them rather than stopping short of both. The keyboard-help overlay is fixed over
           the top-right of every screen (`help-view.tsx`) and this step is the only one whose content
           reaches that corner, so the top rows of the global board sit under it. */}
-      <div className="flex min-h-0 flex-1 flex-col items-start gap-3 lg:flex-row lg:items-stretch lg:gap-6">
+      <div className="flex flex-col items-start gap-3 lg:min-h-0 lg:flex-1 lg:flex-row lg:items-stretch lg:gap-6">
         <ScoreboardPanel
           className={POST_GAME_SCOREBOARD_CLASS}
           title="Local scoreboard"

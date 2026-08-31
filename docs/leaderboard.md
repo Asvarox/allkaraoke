@@ -163,9 +163,20 @@ is "not the global one". The heading is about where the scores come from — thi
 and the subtitle under it scopes the board ("This song · Easy · all time · 121 scores"), but it is a
 wording collision worth knowing about.
 
-The two panels split the width evenly (`basis-0`) and share a height (`h-full` under an
+Side by side, the two panels split the width evenly (`basis-0`) and share a height (`h-full` under an
 `items-stretch` row), so they read as one thing split in two rather than two widgets that happen to
-be adjacent. They span the full content width, lining up with the share panel and the tip below them.
+be adjacent. They span the full content width, lining up with the share panel and the tip below them,
+and the step never scrolls.
+
+Stacked, below `lg`, they do **not** divide the leftover height. There is not enough of it: a phone
+in landscape gave each board about a hundred pixels and their headings collided with the panel below,
+and leaving them to size themselves is worse still — the global board's fifty rows take the whole
+column and the local board collapses to its heading. Each takes a fixed few rows (`max-h-[18rem]`)
+instead, and the page scrolls, which is the natural thing to do on a phone anyway.
+
+The list fades out at its bottom edge, so a row the panel ran out of room for reads as more below
+rather than as a row that failed to draw. The fade falls on empty space, and so is invisible, when
+everything fits.
 
 `ScoreboardPanel` and `ScoreboardRow` are used by **all three** boards — the local high scores, the
 song's global board, and the global board on the main menu — so a board looks like a board wherever
