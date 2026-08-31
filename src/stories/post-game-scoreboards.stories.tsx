@@ -27,6 +27,8 @@ interface StoryArgs {
   score: number;
   /** How many scores the song's board holds in total — the window around the player is what is shown. */
   boardTotal: number;
+  /** How many local high scores this device has for the song, so the placeholder fill is visible. */
+  localRows: number;
   /** What `GET /leaderboard-song` does, so the loading and failure states are reachable too. */
   boardResponse: 'loaded' | 'empty' | 'loading' | 'error';
   /**
@@ -195,7 +197,9 @@ const Template = (args: StoryArgs) => {
           { singSetupId: 'earlier-2', name: 'Dat Boi', score: 1_650_000, date: '2025-11-14' },
           { singSetupId: 'earlier-3', name: 'Good Guy Greg', score: 1_300_000, date: '2025-04-02' },
           { singSetupId: 'earlier-4', name: 'Pepe', score: 950_000, date: '2024-06-19' },
-        ].sort((first, second) => second.score - first.score)}
+        ]
+          .slice(0, args.localRows)
+          .sort((first, second) => second.score - first.score)}
       />
     </StubbedSongBoard>
   );
@@ -208,6 +212,7 @@ const meta = {
     difficulty: { control: 'radio', options: Object.keys(difficulties) },
     score: { control: { type: 'range', min: 0, max: 3_500_000, step: 50_000 } },
     boardTotal: { control: { type: 'range', min: 1, max: 500, step: 1 } },
+    localRows: { control: { type: 'range', min: 1, max: 5, step: 1 } },
     boardResponse: { control: 'radio', options: ['loaded', 'empty', 'loading', 'error'] },
     sharing: { control: 'radio', options: ['always', 'undecided', 'never'] },
   },
@@ -215,6 +220,7 @@ const meta = {
     difficulty: 'Medium',
     score: 1_850_000,
     boardTotal: 120,
+    localRows: 5,
     boardResponse: 'loaded',
     // Not 'undecided': the prompt opens over the boards, and these stories are about the boards
     sharing: 'always',
@@ -248,6 +254,12 @@ export const FirstScorePromptStory: Story = {
 /** Easy is ranked on the song's own board and never on the main menu's — the copy has to say so. */
 export const EasyScoreboardsStory: Story = {
   args: { difficulty: 'Easy' },
+  play: goToScoreboards,
+};
+
+/** Few local scores, so the local board fills the height it shares with the global one. */
+export const SparseLocalBoardStory: Story = {
+  args: { localRows: 2 },
   play: goToScoreboards,
 };
 

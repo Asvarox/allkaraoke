@@ -87,4 +87,27 @@ function ScoreboardRow({
   );
 }
 
+/**
+ * An empty row, to fill a board out to the height it has been given. Same shape and rank column as a
+ * real row, so the list reads as a board with places still to be taken rather than as one that
+ * stopped rendering. Marked so {@link ScoreboardPanel} can tell it apart when measuring.
+ */
+export function ScoreboardPlaceholderRow({ position }: { position: number }) {
+  return (
+    <div
+      className="typography flex items-center gap-2 rounded-xl bg-black/25 px-2 py-2 text-sm opacity-40"
+      data-placeholder
+      data-test="scoreboard-placeholder-row"
+      aria-hidden>
+      <div className="text-md w-[2ch] shrink-0 text-right tabular-nums">{position}</div>
+      <div className="min-w-0 flex-1 text-left">—</div>
+      {/* Mirrors a real row's stacked score and meta lines, so a filled list keeps one row pitch */}
+      <div className="shrink-0 text-right">
+        <span className="font-semibold">&nbsp;</span>
+        <div className="text-xs">&nbsp;</div>
+      </div>
+    </div>
+  );
+}
+
 export default ScoreboardRow;

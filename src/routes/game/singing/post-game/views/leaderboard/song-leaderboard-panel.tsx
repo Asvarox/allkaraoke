@@ -6,7 +6,7 @@ import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { fetchSongBoard, songBoardUrl } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
 import { BoardEntry } from '~/modules/leaderboard/types';
-import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
+import ScoreboardPanel, { POST_GAME_SCOREBOARD_CLASS } from '~/modules/scoreboard/scoreboard-panel';
 import { LeaderboardPostGame } from '~/routes/game/singing/post-game/views/leaderboard/use-leaderboard-post-game';
 
 interface Props {
@@ -77,6 +77,7 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard }: Props) {
 
   return (
     <ScoreboardPanel
+      className={POST_GAME_SCOREBOARD_CLASS}
       title="Global scoreboard"
       // The count the removed "of N" sentence used to carry — the player's own row says the rest
       subtitle={`This song · ${difficulty} · all time${data ? ` · ${data.total + 1} scores` : ''}`}

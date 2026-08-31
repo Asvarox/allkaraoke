@@ -165,12 +165,25 @@ wording collision worth knowing about.
 
 The two panels split the width evenly (`basis-0`) and share a height (`h-full` under an
 `items-stretch` row), so they read as one thing split in two rather than two widgets that happen to
-be adjacent.
+be adjacent. They span the full content width, lining up with the share panel and the tip below them.
 
-The high-scores step keeps its two columns clear of the keyboard-help overlay, which is fixed to the
-top-right of every screen and shown by default (`KeyboardHelpVisibilitySetting`). It is the only step
-whose content reaches that corner, so the reserved band lives on the row in `high-scores.tsx` rather
-than in the overlay.
+`ScoreboardPanel` and `ScoreboardRow` are used by **all three** boards — the local high scores, the
+song's global board, and the global board on the main menu — so a board looks like a board wherever
+it turns up. Sizing and padding are the caller's, passed as `className`: Tailwind classes of the same
+property do not merge through `clsx`, so nothing a caller might override can live in the base.
+
+The local board fills any height it has left over with placeholder rows (`ScoreboardPanel`'s `fill`).
+Only five scores are ever kept per song, so without them the list trails off into empty panel beside
+a global board that fills its own. How many fit is measured rather than assumed — the height is
+whatever the step left over and the row height comes from the rows — and placeholders are excluded
+from that measurement so they cannot feed back into it.
+
+**The keyboard-help overlay overlaps the global board.** It is fixed to the top-right of every screen
+and shown by default (`KeyboardHelpVisibilitySetting`), and the high-scores step is the only one
+whose content reaches that corner. The boards used to reserve a band clear of it, but that stopped
+them short of the share panel below; they are full width now, so the overlay prints over the global
+board's heading and first row or two. Shift+H hides it. Moving the overlay on this step, or putting
+the band back, are the two ways out if it proves annoying.
 
 The boards take whatever height the step has left instead of a fixed cap, and scroll inside it. That
 needs `min-h-0` on the step's column in `post-game-view.tsx` — a flex item defaults to

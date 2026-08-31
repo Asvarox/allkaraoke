@@ -1,40 +1,94 @@
-import { ReactNode } from 'react';
+import clsx from 'clsx';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
+
+/**
+ * The pair on the post-game step: half the row each (`basis-0`), the same height as each other
+ * (`h-full` under an `items-stretch` row), and no more than the step has left over.
+ */
+export const POST_GAME_SCOREBOARD_CLASS = 'max-h-full border border-white/10 p-2 lg:h-full lg:flex-1 lg:basis-0';
 
 interface Props {
   title: string;
   /** What the board covers — the heading has no room to say it. */
   subtitle: ReactNode;
   children: ReactNode;
+  /**
+   * Rendered repeatedly to fill the list out to its full height, once for each row of empty space
+   * left under `children`. For a board with fewer rows than it has room for, so it reads as a board
+   * with space still to earn rather than as a panel that failed to load.
+   */
+  fill?: (index: number) => ReactNode;
+  className?: string;
   'data-test'?: string;
 }
 
 /**
- * The surface the post-game boards sit on: a titled panel with a scrolling list of
- * {@link ScoreboardRow}s. The local and global boards share it so the pair reads as one thing split
- * in two rather than as two unrelated widgets.
+ * The surface every board sits on: a titled panel with a scrolling list of {@link ScoreboardRow}s.
+ * All three use it — the local high scores and the song's global board on the post-game screen, and
+ * the global board on the main menu — so a board looks like a board wherever it turns up.
  *
  * `Box` centres its children; this stacks them full width instead, and spells out its own surface —
- * `Box`'s `bg-black/30` is invisible against this screen, and the border is what reads as an edge.
+ * `Box`'s `bg-black/30` is invisible against these screens, and the border is what reads as an edge.
  *
- * Height is taken from whatever the parent leaves rather than capped at a magic number: the post-game
- * step has no room to spare, and a fixed cap there pushed the button that moves on off the bottom of
- * the screen. `basis-0` so a pair of panels splits the width evenly whatever is in them, and
- * `h-full` so they are the same height whether or not they hold the same number of rows.
+ * Sizing and padding are the caller's, through `className`: the post-game pair splits a row and
+ * shares its height, the main-menu board sits in a fixed column with room to breathe. Tailwind
+ * classes of the same property do not merge through `clsx`, so nothing overridable belongs in the
+ * base.
  */
-function ScoreboardPanel({ title, subtitle, children, 'data-test': dataTest }: Props) {
+function ScoreboardPanel({ title, subtitle, children, fill, className, 'data-test': dataTest }: Props) {
+  const listRef = useRef<HTMLDivElement>(null);
+  const [rowsThatFit, setRowsThatFit] = useState(0);
+
+  /**
+   * How many rows the list has room for, measured rather than assumed — the height is whatever the
+   * parent left over, and the row height comes from the rows themselves.
+   *
+   * Placeholders are excluded from the count, so adding them cannot feed back into the measurement.
+   */
+  useEffect(() => {
+    const list = listRef.current;
+    if (!fill || !list) return;
+
+    const measure = () => {
+      const rows = list.querySelectorAll<HTMLElement>(':scope > :not([data-placeholder])');
+      const rowHeight = rows[0]?.offsetHeight;
+      if (!rowHeight) return;
+
+      const gap = parseFloat(getComputedStyle(list).rowGap) || 0;
+
+      setRowsThatFit(Math.floor((list.clientHeight + gap) / (rowHeight + gap)) - rows.length);
+    };
+
+    measure();
+
+    const observer = new ResizeObserver(measure);
+    observer.observe(list);
+
+    return () => observer.disconnect();
+  }, [fill, children]);
+
   return (
     <Box
-      className="max-h-full min-h-0 w-full items-stretch gap-1.5 border border-white/10 bg-black/50 p-2 lg:h-full lg:flex-1 lg:basis-0"
+      // Padding and every height/width rule are the caller's: Tailwind classes of the same property
+      // do not merge here, so anything a caller might need to override cannot be in the base
+      // `justify-start`: `Box` centres its children, which on a panel taller than its rows floats
+      // the board in the middle of its own frame
+      className={clsx('min-h-0 w-full items-stretch justify-start gap-1.5 bg-black/50', className)}
       data-test={dataTest}>
       <Menu.SubHeader as="h2" className="text-active text-left text-base font-bold lg:text-lg">
         {title}
       </Menu.SubHeader>
       <Menu.HelpText className="text-left text-xs opacity-70 lg:text-sm">{subtitle}</Menu.HelpText>
       {/* `min-h-0` so this is what shrinks when the panel is capped, rather than overflowing it */}
-      <div className="flex min-h-0 flex-col gap-1 overflow-y-auto">{children}</div>
+      {/* `flex-1` only when there is something to fill with: otherwise the list would stretch to the
+          panel's full height and leave a board with three rows floating in a tall empty frame */}
+      <div ref={listRef} className={clsx('flex min-h-0 flex-col gap-1 overflow-y-auto', fill && 'flex-1')}>
+        {children}
+        {fill && Array.from({ length: Math.max(0, rowsThatFit) }, (_, index) => fill(index))}
+      </div>
     </Box>
   );
 }
