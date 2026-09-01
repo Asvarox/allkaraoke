@@ -44,13 +44,19 @@ export const enableLeaderboard = async ({ context }: { page: Page; context: Brow
 };
 
 /**
- * Runs a spec against the server-authoritative online mode — the Durable Object room the
- * `OnlineP2P` flag falls back to. Without this the suite exercises P2P, since e2e forces feature
- * flags on.
+ * Runs a spec against the original online mode — the PartyKit room the `OnlineP2P` flag falls back
+ * to. Without this the suite exercises P2P, since e2e forces feature flags on.
  */
 export const useServerOnlineMode = async ({ context }: { page: Page; context: BrowserContext }) => {
   await context.addInitScript(() => {
     window.isE2EOnlineServerMode = true;
+  });
+};
+
+/** The per-song boards on the post-game screen sit behind a second flag — see `enableLeaderboard`. */
+export const enableSongLeaderboard = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ESongLeaderboard = true;
   });
 };
 

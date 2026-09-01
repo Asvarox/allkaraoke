@@ -73,6 +73,22 @@ export class LeaderboardPagePO {
     await expect(this.prompt).not.toBeVisible();
   }
 
+  // --- High-scores step: the board for the song just sung ---
+
+  /** One song at one difficulty, beside the local high scores. */
+  public get songPanel() {
+    return this.page.getByTestId('song-leaderboard-panel');
+  }
+
+  public get songPanelRows() {
+    return this.songPanel.getByTestId('song-leaderboard-row');
+  }
+
+  /** The run just sung, slotted into the board where it would land and ringed like a focused control. */
+  public get songPanelOwnRow() {
+    return this.songPanel.getByTestId('song-leaderboard-own-row');
+  }
+
   // --- Main-menu panel ---
 
   /**

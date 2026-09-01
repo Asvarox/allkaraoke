@@ -5,11 +5,13 @@ import { SingSetup, Song } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { submitScore } from '~/modules/leaderboard/client';
+import { difficultyName } from '~/modules/leaderboard/difficulty';
 import { clearIdentity, getPrefilledCountry, getPrefilledName, persistIdentity } from '~/modules/leaderboard/identity';
 import { encodeNotesPayload } from '~/modules/leaderboard/notes-payload';
-import { qualifiesForLeaderboard } from '~/modules/leaderboard/qualifies';
+import { hasLeaderboard, qualifiesForLeaderboard, reachesGlobalBoard } from '~/modules/leaderboard/qualifies';
 import { LeaderboardSharingSetting } from '~/modules/leaderboard/sharing';
 import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
+import useSongLeaderboardEnabled from '~/modules/leaderboard/use-song-leaderboard-enabled';
 import PlayersManager from '~/modules/players/players-manager';
 import { useSettingValue } from '~/routes/settings/settings-state';
 
@@ -29,6 +31,7 @@ interface Params {
 
 export default function useLeaderboardPostGame({ song, singSetup }: Params) {
   const leaderboardEnabled = useLeaderboardEnabled();
+  const songLeaderboardEnabled = useSongLeaderboardEnabled();
   const [sharingDecision, setSharingDecision] = useSettingValue(LeaderboardSharingSetting);
 
   const topPlayer = useMemo(() => {
@@ -41,7 +44,10 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
     return players.sort((first, second) => second.score - first.score)[0] ?? null;
   }, []);
 
-  const qualifies = !!leaderboardEnabled && !!topPlayer && qualifiesForLeaderboard(topPlayer.score);
+  const qualifies =
+    !!leaderboardEnabled &&
+    !!topPlayer &&
+    qualifiesForLeaderboard(topPlayer.score, singSetup.tolerance, songLeaderboardEnabled);
 
   /**
    * Derived, not seeded from the first render: `useLeaderboardEnabled` reads a PostHog flag that can
@@ -138,6 +144,23 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
   })();
 
   return {
+    /**
+     * Whether the per-song board is on. It hangs off this rather than off `qualifies` — a score too
+     * low to share is still ranked against the song's board, which is the whole point of showing the
+     * player where they would have landed.
+     */
+    songLeaderboardEnabled,
+    /** Difficulty alone, without the score threshold: whether this run has a board to be shown. */
+    hasLeaderboard: hasLeaderboard(singSetup.tolerance, songLeaderboardEnabled),
+    /**
+     * Whether the score would also land on the global board, or only on this song's own. Easy is
+     * ranked per song and nowhere else, and the post-game copy has to say so — a player told their
+     * score is "on the leaderboard" and then not finding it on the main menu was misled.
+     */
+    reachesGlobalBoard: reachesGlobalBoard(singSetup.tolerance),
+    /** "Easy", "Medium", "Hard" — the copy names the board the score is going on. */
+    difficulty: difficultyName(singSetup.tolerance),
+    hasSubmitted,
     panel,
     isModalOpen,
     openModal,

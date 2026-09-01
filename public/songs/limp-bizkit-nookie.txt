@@ -1,0 +1,853 @@
+#ARTIST:Limp Bizkit
+#TITLE:Nookie
+#CREATOR:haistshomie666
+#BPM:387,2999999999998
+#YEAR:1999
+#VIDEO:v=JTMVOzPPtiw
+#LANGUAGE:English
+#GAP:23165,62194179758
+#ALLKARAOKE_ID:limp-bizkit-nookie
+#ALLKARAOKE_SID:6197
+#ALLKARAOKE_LASTUPDATE:2026-08-27T18:27:05.930Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=JTMVOzPPtiw
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:269
+#MP3:Limp Bizkit - Nookie.mp3
+#START:22.0
+F 26 9 0 Check
+- 35 57
+- 57
+F 83 9 0 One, 
+F 99 10 0 One, 
+F 115 10 0 Two
+- 125 142
+- 142
+F 168 1 0 I 
+F 172 1 0 came 
+F 176 1 0 in
+F 180 1 0 to 
+F 184 1 0 this 
+F 188 6 0 world 
+F 196 2 0 as 
+F 200 2 0 a 
+F 204 4 0 re
+F 212 5 0 ject
+- 217
+: 220 3 -1 Look 
+: 224 3 -1 in
+: 228 2 -1 to 
+: 231 3 4 these 
+: 236 11 2 eyes
+- 247
+F 251 2 0 Then 
+F 255 2 0 you’ll 
+F 259 1 0 see 
+F 263 2 0 the 
+F 267 5 0 size 
+F 275 2 0 of 
+F 279 1 0 these 
+F 283 9 0 flames
+- 292
+F 298 2 2 Dwel
+F 302 1 2 lin 
+F 306 2 2 on 
+F 310 1 2 the 
+F 314 7 4 past
+- 321
+F 326 2 2 It’s 
+F 331 2 2 bur
+F 335 1 2 nin’ 
+F 339 2 2 up 
+F 343 1 2 my 
+F 347 11 4 brain
+- 358
+F 362 2 0 Eve
+F 366 1 0 ry
+F 370 1 0 one 
+F 374 2 0 that 
+F 378 5 0 burns 
+F 386 2 0 has 
+F 390 1 0 to 
+F 394 5 0 learn 
+F 402 1 0 from 
+F 406 1 0 the 
+F 410 9 0 pain
+- 419
+F 433 7 0 Hey
+- 440
+F 445 1 0 I 
+F 449 1 0 think 
+F 453 1 0 a
+F 457 2 0 bout 
+F 461 1 0 the 
+F 465 7 0 day
+- 472
+F 485 1 0 My 
+F 489 1 0 gir
+F 493 1 0 lie 
+F 497 1 0 ran 
+F 501 1 0 a
+F 505 5 0 way 
+F 512 1 0 with 
+F 516 2 0 my 
+F 520 7 0 pay
+- 527
+F 532 1 0 When 
+F 536 1 0 fel
+F 540 1 0 las 
+F 544 1 0 came 
+F 548 7 0 to 
+F 559 7 0 play
+- 566
+F 574 2 0 No 
+F 579 1 0 she’s 
+F 583 5 0 stuck 
+F 591 1 0 with 
+F 595 2 0 my 
+F 599 1 0 ho
+F 603 1 0 meez 
+F 607 1 0 that 
+F 611 1 0 she 
+F 615 7 0 fucked
+- 622
+F 627 1 0 And 
+F 631 4 0 I’m 
+F 638 1 0 just 
+F 642 1 0 a 
+F 646 1 0 suc
+F 650 1 0 ker 
+F 654 1 0 with 
+F 658 2 0 a 
+F 662 5 0 lump 
+F 670 1 0 in 
+F 674 1 0 my 
+F 678 7 0 throat
+- 685
+F 686 10 1 Hey
+- 696
+: 701 2 0 Like 
+: 705 2 0 a 
+: 710 5 1 chump
+- 715
+F 718 12 1 Hey
+- 730
+: 735 3 0 Like 
+: 739 3 0 a 
+: 743 5 1 chump
+- 748
+F 750 12 0 Hey
+- 762
+: 767 2 0 Like 
+: 771 2 0 a 
+: 775 5 1 chump
+- 780
+F 783 13 0 Hey
+- 796
+: 800 3 0 Like 
+: 804 3 0 a 
+: 808 5 1 chump
+- 813
+F 816 13 0 Hey
+- 829
+: 833 3 0 Like 
+: 837 3 0 a 
+: 841 5 1 chump
+- 846
+F 848 12 0 Hey
+- 860
+: 865 3 0 Like 
+: 869 3 0 a 
+: 873 5 1 chump
+- 878
+F 882 12 0 Hey
+- 894
+: 898 3 0 Like 
+: 902 3 0 a 
+: 906 5 1 chump
+- 911
+F 914 9 0 Hey
+- 923
+F 926 2 0 Should 
+F 930 2 0 I 
+F 934 2 0 be 
+F 938 1 0 fee
+F 942 2 0 lin’ 
+F 946 9 0 bad?
+- 955
+F 959 1 0 Should 
+F 963 2 0 I 
+F 967 1 0 be 
+F 971 2 0 fee
+F 975 1 0 lin’ 
+F 979 9 0 good?
+- 988
+F 990 1 0 It’s 
+F 994 2 0 kin
+F 998 2 0 da 
+F 1002 9 0 sad 
+F 1013 2 0 that 
+F 1017 1 0 I’m 
+F 1021 1 0 the 
+F 1025 2 0 laug
+F 1029 2 0 hin’ 
+F 1033 5 0 stock 
+F 1041 1 0 of 
+F 1045 1 0 the 
+F 1049 1 0 neigh
+F 1053 2 0 bor
+F 1057 7 0 hood
+- 1064
+F 1068 1 0 And 
+F 1072 1 0 you 
+F 1076 1 0 would 
+F 1080 2 0 think 
+F 1084 1 0 that 
+F 1088 1 0 I’d 
+F 1092 1 0 be 
+F 1096 2 0 mo
+F 1100 1 0 vin’ 
+F 1104 8 0 on
+- 1112
+F 1116 1 0 But 
+F 1120 1 0 I’m 
+F 1124 1 0 a 
+F 1128 1 0 suc
+F 1132 1 0 ker 
+F 1136 1 0 like 
+F 1140 1 0 I 
+F 1144 10 0 said
+- 1154
+F 1159 2 0 Fucked 
+F 1163 2 0 up 
+F 1167 2 0 in 
+F 1171 2 0 the 
+F 1175 4 0 head, 
+F 1183 7 0 not!!
+- 1190
+F 1203 1 0 And 
+F 1207 1 0 may
+F 1211 1 0 be 
+F 1215 1 0 she 
+F 1219 1 0 just 
+F 1223 2 0 made 
+F 1227 1 0 a 
+F 1231 1 0 mis
+F 1235 5 0 take
+- 1240
+F 1242 1 0 And 
+F 1246 1 0 I 
+F 1250 1 0 should 
+F 1254 1 0 give 
+F 1258 1 0 her 
+F 1262 1 0 a 
+F 1266 10 0 break
+- 1276
+F 1281 1 0 My 
+F 1285 1 0 heart 
+F 1289 1 0 will 
+F 1293 5 0 ache 
+F 1301 1 0 ei
+F 1305 1 0 ther 
+F 1309 6 0 way
+- 1315
+F 1321 5 0 Hey, 
+F 1333 2 0 what 
+F 1337 1 0 the 
+F 1341 5 0 hell
+- 1346
+F 1348 2 0 What 
+F 1352 1 0 you 
+F 1356 5 0 want 
+F 1364 2 0 me 
+F 1368 1 0 to 
+F 1372 8 0 say
+- 1380
+: 1384 3 1 I 
+: 1388 5 1 won’t 
+: 1396 11 3 lie 
+: 1412 2 1 that 
+: 1416 2 1 I 
+: 1420 2 1 can’t 
+: 1424 3 1 de
+: 1428 14 3 ny
+- 1442
+F 1448 1 0 I 
+F 1452 1 0 did 
+F 1456 1 0 it 
+F 1460 6 0 all 
+F 1468 1 0 for 
+F 1472 1 0 the 
+F 1476 2 0 noo
+F 1480 10 0 kie
+- 1490
+F 1504 1 0 The 
+F 1508 2 0 noo
+F 1513 9 0 kie
+- 1522
+F 1536 1 0 So 
+F 1540 2 0 you 
+F 1544 1 0 can 
+F 1548 1 0 take 
+F 1552 2 0 that 
+F 1557 2 0 coo
+F 1562 3 0 kie
+- 1565
+F 1568 1 0 And 
+F 1572 1 0 Stick 
+F 1576 2 0 it 
+F 1581 2 0 up 
+F 1585 2 0 your...
+- 1587
+F 1589 10 0 Yeah!
+- 1599
+F 1604 1 0 Stick 
+F 1608 1 0 it 
+F 1612 1 0 up 
+F 1616 1 0 your...
+- 1617
+F 1620 11 0 Yeah!
+- 1631
+F 1637 2 0 Stick 
+F 1641 1 0 it 
+F 1645 1 0 up 
+F 1649 1 0 your...
+- 1650
+F 1653 10 0 Yeah!
+- 1663
+F 1668 1 0 Stick 
+F 1672 1 0 it 
+F 1676 2 0 up 
+F 1680 10 0 your...
+- 1690
+F 1703 2 0 I 
+F 1708 1 0 did 
+F 1712 2 0 it 
+F 1717 4 0 all 
+F 1724 1 0 for 
+F 1728 1 0 the 
+F 1733 2 0 noo
+F 1737 8 0 kie
+- 1745
+F 1759 1 0 The 
+F 1764 2 0 noo
+F 1768 8 0 kie
+- 1776
+F 1792 2 0 So 
+F 1796 1 0 you 
+F 1800 1 0 can 
+F 1804 1 0 take 
+F 1808 2 0 that 
+F 1813 2 0 coo
+F 1818 3 0 kie
+- 1821
+F 1825 1 0 And 
+F 1829 1 0 Stick 
+F 1833 1 0 it 
+F 1837 2 0 up 
+F 1841 1 0 your...
+- 1842
+F 1845 9 0 Yeah!
+- 1854
+F 1860 2 0 Stick 
+F 1864 1 0 it 
+F 1868 1 0 up 
+F 1872 1 0 your...
+- 1873
+F 1876 11 0 Yeah!
+- 1887
+F 1892 2 0 Stick 
+F 1896 1 0 it 
+F 1900 2 0 up 
+F 1904 1 0 your...
+- 1905
+F 1909 11 0 Yeah!
+- 1920
+F 1925 2 0 Stick 
+F 1929 1 0 it 
+F 1933 1 0 up 
+F 1937 6 0 your...
+- 1943
+F 1963 11 0 Why 
+F 1979 1 0 did 
+F 1983 2 0 it 
+F 1987 3 0 take 
+F 1992 4 0 so 
+F 1999 7 0 long?
+- 2006
+F 2011 9 0 Why 
+F 2027 1 0 did 
+F 2030 2 0 I 
+F 2035 1 0 wait 
+F 2039 6 0 so 
+F 2047 5 0 long, 
+F 2058 8 0 huh
+- 2066
+F 2077 2 0 To 
+F 2082 1 0 fi
+F 2086 1 0 gure 
+F 2090 2 0 it 
+F 2094 7 0 out? 
+F 2105 1 0 but 
+F 2109 1 0 I 
+F 2114 2 0 did 
+F 2118 5 0 it
+- 2123
+: 2126 3 -1 And 
+: 2130 3 -1 I’m 
+: 2134 3 -1 the 
+: 2138 3 -1 on
+: 2142 3 4 ly 
+: 2146 11 2 one 
+F 2161 1 0 un
+F 2165 1 0 der
+F 2169 1 0 neath 
+F 2173 2 0 the 
+F 2177 1 0 sun 
+F 2181 1 0 who 
+F 2185 2 0 did
+F 2189 1 0 n’t 
+F 2193 1 0 get 
+F 2197 7 0 it
+- 2204
+F 2212 1 0 I 
+F 2216 1 0 can’t 
+F 2220 1 0 be
+F 2224 7 0 lieve 
+F 2236 2 0 that 
+F 2240 1 0 I 
+F 2244 1 0 can 
+F 2248 2 0 be 
+F 2252 1 0 de
+F 2256 4 0 ceived
+- 2260
+F 2279 1 0 By 
+F 2283 2 0 my 
+F 2287 2 0 so 
+F 2292 2 0 called 
+F 2299 5 0 girl, 
+F 2307 1 0 but 
+F 2311 2 0 in 
+F 2315 1 0 re
+F 2319 2 0 a
+F 2323 1 0 li
+F 2327 8 0 ty
+- 2335
+F 2343 2 0 Had 
+F 2347 1 0 a 
+F 2351 2 0 hid
+F 2355 1 0 den 
+F 2358 2 0 a
+F 2363 4 0 gen
+F 2370 4 0 da
+- 2374
+F 2378 2 0 She 
+F 2382 1 0 put 
+F 2386 1 0 my 
+F 2390 2 0 ten
+F 2395 5 0 der 
+F 2402 1 0 heart 
+F 2406 1 0 in 
+F 2410 2 0 a 
+F 2414 2 0 blen
+F 2418 5 0 der
+- 2423
+F 2426 1 0 And 
+F 2430 5 0 still 
+F 2438 1 0 I 
+F 2442 1 0 sur
+F 2446 1 0 ren
+F 2450 4 0 dered
+- 2454
+F 2469 11 0 Hey
+- 2480
+: 2485 3 0 Like 
+: 2489 3 0 a 
+: 2493 5 1 chump
+- 2498
+F 2502 12 0 Hey
+- 2514
+: 2518 3 0 Like 
+: 2522 3 0 a 
+: 2526 5 1 chump
+- 2531
+F 2535 12 0 Hey
+- 2547
+: 2551 3 0 Like 
+: 2555 3 0 a 
+: 2559 4 1 chump
+- 2563
+F 2567 13 0 Hey
+- 2580
+: 2584 3 0 Like 
+: 2588 3 0 a 
+: 2592 4 1 chump
+- 2596
+F 2600 13 0 Hey
+- 2613
+: 2617 3 0 Like 
+: 2621 3 0 a 
+: 2625 4 1 chump
+- 2629
+F 2633 13 0 Hey
+- 2646
+: 2649 3 0 Like 
+: 2653 3 0 a 
+: 2657 4 1 chump
+- 2661
+F 2665 14 0 Hey
+- 2679
+: 2682 3 0 Like 
+: 2686 3 0 a 
+: 2690 5 1 chump
+- 2695 2700
+- 2700
+F 2726 3 0 I 
+F 2730 2 0 did 
+F 2734 2 0 it 
+F 2738 5 0 all 
+F 2747 2 0 for 
+F 2751 2 0 the 
+F 2755 2 0 noo
+F 2760 8 0 kie
+- 2768
+F 2781 2 0 The 
+F 2786 1 0 noo
+F 2791 6 0 kie
+- 2797
+F 2814 1 0 So 
+F 2818 1 0 you 
+F 2822 1 0 can 
+F 2826 2 0 take 
+F 2831 2 0 that 
+F 2836 3 0 coo
+F 2841 3 0 kie
+- 2844
+F 2847 1 0 And 
+F 2851 1 0 Stick 
+F 2855 1 0 it 
+F 2859 2 0 up 
+F 2863 3 0 your...
+- 2866
+F 2874 4 0 Yeah!
+- 2878
+F 2882 2 0 Stick 
+F 2886 1 0 it 
+F 2890 1 0 up 
+F 2894 2 0 your...
+- 2896
+F 2899 11 0 Yeah!
+- 2910
+F 2915 2 0 Stick 
+F 2919 1 0 it 
+F 2923 1 0 up 
+F 2927 2 0 your...
+- 2929
+F 2931 10 0 Yeah!
+- 2941
+F 2947 1 0 Stick 
+F 2951 2 0 it 
+F 2955 2 0 up 
+F 2959 8 0 your...
+- 2967
+F 2984 2 0 I 
+F 2988 1 0 did 
+F 2992 2 0 it 
+F 2996 5 0 all 
+F 3004 1 0 for 
+F 3008 1 0 the 
+F 3012 2 0 noo
+F 3016 9 0 kie
+- 3025
+F 3039 2 0 The 
+F 3043 2 0 noo
+F 3048 8 0 kie
+- 3056
+F 3070 2 0 So 
+F 3075 2 0 you 
+F 3079 2 0 can 
+F 3083 2 0 take 
+F 3088 2 0 that 
+F 3093 2 0 coo
+F 3098 2 0 kie
+- 3100
+F 3103 1 0 And 
+F 3107 1 0 Stick 
+F 3111 2 0 it 
+F 3115 2 0 up 
+F 3119 2 0 your...
+- 3121
+F 3124 10 0 Yeah!
+- 3134
+F 3140 2 0 Stick 
+F 3144 1 0 it 
+F 3148 1 0 up 
+F 3152 2 0 your...
+- 3154
+F 3156 11 0 Yeah!
+- 3167
+F 3171 2 0 Stick 
+F 3175 1 0 it 
+F 3179 2 0 up 
+F 3184 2 0 your...
+- 3186
+F 3188 9 0 Yeah!
+- 3197
+F 3203 2 0 Stick 
+F 3207 1 0 it 
+F 3211 2 0 up 
+F 3216 7 0 your...
+- 3223 3250
+- 3250
+: 3276 6 6 I’m 
+: 3285 4 6 on
+: 3293 2 6 ly 
+: 3298 7 6 hu
+: 3309 18 4 man
+- 3327 3359
+- 3359
+: 3385 3 -6 It’s 
+: 3389 7 -6 so 
+: 3397 10 -6 ea
+: 3408 7 -6 sy 
+: 3416 6 -6 for 
+: 3423 6 -6 your 
+: 3430 18 -3 friends 
+: 3464 4 -4 to 
+: 3469 7 -3 give 
+: 3477 7 -3 you 
+: 3485 4 -3 their 
+: 3490 6 -6 ad
+: 3497 18 -6 vice
+- 3515 3523
+- 3523
+: 3549 7 6 They 
+: 3558 13 9 tell 
+: 3573 22 6 you 
+: 3608 8 4 to 
+: 3617 4 6 let 
+: 3622 4 4 her 
+: 3627 6 6 go
+: 3634 18 4 ~
+- 3652 3660
+- 3660
+: 3686 7 6 It’s 
+: 3694 6 4 ea
+: 3702 4 6 si
+: 3707 17 6 er 
+: 3726 7 9 said 
+: 3735 7 9 then 
+: 3743 7 6 it’s 
+: 3751 22 6 done
+- 3773 3784
+- 3784
+: 3810 6 6 I 
+: 3818 3 6 ap
+: 3825 4 9 pre
+: 3833 2 9 ci
+: 3838 7 9 ate 
+: 3848 49 9 it
+- 3897
+: 3905 7 9 I 
+: 3914 19 6 do, 
+: 3947 15 4 but 
+: 3978 8 4 just 
+: 3987 13 6 leave 
+: 4002 7 6 me 
+: 4010 4 4 a
+: 4015 24 6 lone
+- 4039 4097
+- 4097
+: 4123 8 6 Leave 
+: 4132 5 6 me 
+: 4140 4 4 a
+: 4146 3 6 lone
+: 4151 35 4 ~
+- 4186 4207
+- 4207
+: 4233 12 6 Just 
+: 4249 12 9 leave 
+: 4266 5 9 me 
+: 4274 2 6 a
+: 4278 20 6 lone!
+- 4298
+: 4310 3 -1 Ain’t 
+: 4314 6 1 no
+: 4322 6 1 thin’ 
+: 4330 6 1 gon
+: 4337 3 -1 na 
+: 4341 17 1 change
+- 4358
+: 4377 4 1 You 
+: 4385 5 1 can 
+: 4393 5 1 go 
+: 4400 2 -1 a
+: 4404 16 1 way
+- 4420
+: 4438 8 -1 I’m 
+: 4447 6 1 just 
+: 4455 7 1 gon
+: 4463 3 1 na 
+: 4467 18 3 stay 
+: 4487 7 1 here 
+: 4495 6 1 and 
+: 4503 7 -1 al
+: 4511 6 1 ways 
+: 4518 6 1 be 
+: 4525 4 -1 the 
+: 4530 14 1 same
+- 4544
+: 4561 4 -1 Ain’t 
+: 4566 7 1 no
+: 4574 7 1 thin’ 
+: 4582 7 1 gon
+: 4590 3 -1 na 
+: 4594 15 1 change
+- 4609
+: 4625 3 -1 Cuz’ 
+: 4630 6 1 you 
+: 4637 6 1 can 
+: 4645 6 1 go 
+: 4653 3 -1 a
+: 4657 16 1 way
+- 4673
+: 4688 3 1 And 
+: 4692 6 -1 I’m 
+: 4699 8 1 just 
+: 4708 6 1 gon
+: 4715 3 1 na 
+: 4719 19 3 stay 
+: 4739 9 1 here 
+: 4749 6 1 and 
+: 4756 7 -1 al
+: 4764 6 1 ways 
+: 4771 6 1 be 
+: 4778 3 -1 the 
+: 4782 16 1 same
+- 4798
+: 4813 4 4 Ain’t 
+: 4818 6 6 no
+: 4825 7 6 thin’ 
+: 4834 6 6 gon
+: 4841 3 4 na 
+: 4845 18 6 change
+- 4863
+: 4875 3 4 If 
+: 4879 7 6 you 
+: 4887 7 6 can 
+: 4895 7 6 go 
+: 4903 3 4 a
+: 4907 23 6 way
+- 4930
+: 4942 7 4 I’m 
+: 4950 6 6 just 
+: 4958 6 6 gon
+: 4965 4 6 na 
+: 4970 18 8 stay 
+: 4989 7 6 here 
+: 4997 7 6 and 
+: 5005 7 4 al
+: 5013 6 6 ways 
+: 5021 6 6 be 
+: 5028 3 4 the 
+: 5032 4 6 same
+- 5036
+F 5041 1 0 I 
+F 5045 1 0 did 
+F 5049 1 0 it 
+F 5053 5 0 all 
+F 5061 1 0 for 
+F 5066 1 0 the 
+F 5070 2 0 noo
+F 5075 9 0 kie
+- 5084
+F 5096 2 0 The 
+F 5101 2 0 noo
+F 5107 7 0 kie
+- 5114
+F 5129 2 0 So 
+F 5134 1 0 you 
+F 5138 1 0 can 
+F 5142 1 0 take 
+F 5146 1 0 that 
+F 5151 2 0 coo
+F 5157 2 0 kie
+- 5159
+F 5162 3 1 And 
+F 5166 3 1 Stick 
+F 5170 3 1 it 
+F 5174 3 1 up 
+F 5178 3 1 your...
+- 5181
+F 5182 11 0 Yeah!
+- 5193
+F 5198 3 1 Stick 
+F 5202 2 1 it 
+F 5206 2 1 up 
+F 5210 2 1 your...
+- 5212
+F 5214 10 0 Yeah!
+- 5224
+F 5230 3 1 Stick 
+F 5234 3 1 it 
+F 5238 3 1 up 
+F 5242 2 1 your...
+- 5244
+F 5246 10 0 Yeah!
+- 5256
+F 5262 3 1 Stick 
+F 5266 3 1 it 
+F 5270 3 1 up 
+F 5274 4 1 your...
+- 5278
+F 5298 1 0 I 
+F 5302 1 0 did 
+F 5306 1 0 it 
+F 5310 4 0 all 
+F 5318 1 0 for 
+F 5322 1 0 the 
+F 5326 1 0 noo
+F 5330 5 0 kie
+- 5335
+F 5353 1 0 The 
+F 5358 1 0 noo
+F 5362 5 0 kie
+- 5367
+F 5385 2 0 So 
+F 5389 1 0 you 
+F 5393 2 0 can 
+F 5398 1 0 take 
+F 5402 1 0 that 
+F 5407 2 0 coo
+F 5412 2 0 kie
+- 5414
+F 5417 1 1 And 
+F 5421 1 1 Stick 
+F 5425 1 1 it 
+F 5429 1 1 up 
+F 5433 1 1 your...
+- 5434
+F 5436 10 0 Yeah!
+- 5446
+F 5453 3 1 Stick 
+F 5457 3 1 it 
+F 5461 3 1 up 
+F 5465 3 1 your...
+- 5468
+F 5469 11 0 Yeah!
+- 5480
+F 5485 3 1 Stick 
+F 5489 3 1 it 
+F 5493 3 1 up 
+F 5497 3 1 your...
+- 5500
+F 5501 11 0 Yeah!
+- 5512
+F 5517 3 0 Stick 
+F 5521 3 0 it 
+F 5525 3 0 up 
+F 5529 3 0 your...
+- 5532
+F 5533 12 0 Yeah!
+E

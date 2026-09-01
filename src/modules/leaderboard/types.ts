@@ -42,6 +42,28 @@ export interface BoardResponse {
   entries: BoardEntry[];
 }
 
+/**
+ * Body of `GET /leaderboard-song`. One song at one difficulty; the vocal track is deliberately not
+ * part of the split — the two tracks of a duet are ranked together.
+ */
+export interface SongBoardResponse {
+  /**
+   * A window of the board rather than its top: when the caller sends a score, the rows either side
+   * of where it lands, so the player can see themselves among their neighbours instead of only
+   * among people they will never catch.
+   */
+  entries: BoardEntry[];
+  /** Every row for this song and difficulty, including the ones outside the window. */
+  total: number;
+  /** 1-based rank of `entries[0]`, so the window can be numbered without counting from the top. */
+  startPosition: number;
+  /**
+   * 1-based rank the `score` query parameter would take on this board, ties losing to the rows
+   * already there. `null` when the caller sent no score.
+   */
+  position: number | null;
+}
+
 /** Board row as returned by the authenticated admin listing, with the id needed to delete it. */
 export interface AdminBoardEntry extends BoardEntry {
   id: string;

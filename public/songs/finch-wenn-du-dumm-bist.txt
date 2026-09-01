@@ -1,0 +1,621 @@
+#ARTIST:FiNCH
+#TITLE:WENN DU DUMM BiST
+#CREATOR:Mircosoft93
+#BPM:340,2
+#YEAR:2025
+#VIDEO:v=FoD0rTRGaNE
+#GENRE:Rap
+#LANGUAGE:German
+#GAP:8965,890652557318
+#ALLKARAOKE_ID:finch-wenn-du-dumm-bist
+#ALLKARAOKE_SID:6241
+#ALLKARAOKE_LASTUPDATE:2026-09-01T02:54:34.716Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:170
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=FoD0rTRGaNE
+#ALLKARAOKE_PREVIEWEND:34
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:165
+#MP3:FiNCH - WENN DU DUMM BiST.mp3
+#COVER:FiNCH - WENN DU DUMM BiST [CO].jpg
+#BACKGROUND:FiNCH - WENN DU DUMM BiST [BG].jpg
+: 23 1 -10 Das 
+: 28 2 -1 Le
+: 31 2 -1 ben 
+: 35 1 -1 ist 
+: 39 2 -1 so 
+: 43 2 0 le
+: 46 3 -1 icht 
+* 51 3 -3 wenn 
+* 55 2 -5 du 
+* 59 6 -5 dumm 
+* 67 1 -10 bist
+- 68
+: 83 1 -10 Weil’s 
+: 87 1 -10 für 
+: 91 2 -1 al
+: 94 1 -1 les 
+: 99 2 -1 ei
+: 103 2 -1 nen 
+: 107 2 0 e
+: 111 2 -1 in
+: 115 2 -3 fa
+: 119 2 -5 chen 
+: 123 4 -5 Grund 
+: 132 7 -10 gibt
+- 139 148
+- 148
+: 171 2 -5 Al
+: 175 1 -3 les 
+: 179 2 -1 im 
+: 183 4 -1 Lo
+: 189 4 0 ~t, 
+: 195 2 -1 so
+: 199 9 -3 lang 
+: 211 1 -5 das 
+* 215 4 -1 Do
+* 221 4 0 ~
+* 228 2 -1 sen
+* 231 10 -3 bier 
+* 243 2 -5 noch 
+* 248 6 -8 schmeckt
+- 254 281
+- 281
+R 304 1 0 Mit 
+R 308 2 0 mei
+R 311 2 0 nem 
+R 315 2 0 di
+R 319 1 0 cken 
+R 323 2 0 fet
+R 327 1 0 ten 
+R 332 4 0 Bier
+R 339 3 0 bauch, 
+R 343 2 0 da 
+R 347 2 0 will 
+R 351 2 0 se 
+R 355 2 0 mir 
+R 360 2 0 nich
+- 362
+R 368 2 0 Die 
+R 371 2 0 vö
+R 375 2 0 gelt 
+R 380 2 0 lie
+R 383 2 0 ber 
+R 387 2 0 mit 
+R 391 2 0 dem 
+R 395 2 0 Mu
+R 398 2 0 ham
+R 403 2 0 med 
+R 407 2 0 da 
+R 411 2 0 von 
+R 415 2 0 dem 
+R 419 2 0 Mc
+R 423 4 0 Fit
+- 427
+R 435 2 0 Der 
+R 439 2 0 kann 
+R 443 2 0 nicht 
+R 447 2 0 ma’ 
+R 451 2 0 rich
+R 455 2 0 tig 
+R 459 6 0 Deutsch, 
+R 467 2 0 doch 
+R 471 2 0 kas
+R 476 1 0 siert 
+R 480 2 0 schön 
+R 483 2 0 uns
+R 487 2 0 re 
+R 491 2 0 Mü
+R 495 1 0 cken
+- 496
+R 503 2 0 Und 
+R 507 2 0 ick 
+R 511 2 0 hab’ 
+R 515 2 0 vom 
+R 519 2 0 Ma
+R 523 2 0 lo
+R 528 1 0 chen 
+R 531 2 0 in
+R 535 2 0 ne 
+R 539 3 0 Bee
+R 543 2 0 ne 
+R 547 2 0 und 
+R 551 2 0 im 
+R 555 2 0 Rü
+R 560 1 0 cken
+- 561
+R 575 2 0 Ick 
+R 579 2 0 hab’ 
+R 583 2 0 da 
+R 587 1 0 letz
+R 591 1 0 tens 
+R 595 2 0 wat 
+R 599 2 0 auf 
+R 603 2 0 Face
+R 607 2 0 book 
+R 611 2 0 je
+R 616 2 0 seh’n
+- 618
+R 624 2 0 Da 
+R 627 2 0 loo
+R 631 2 0 fen 
+R 635 2 0 Ker
+R 640 2 0 le 
+R 644 2 0 rum 
+R 647 2 0 wie 
+R 651 2 0 Wei
+R 655 2 0 ber, 
+R 659 2 0 kanns
+R 663 1 0 te 
+R 668 4 0 kee’m 
+R 675 2 0 er
+R 681 3 0 zähl’n
+- 684
+R 691 2 0 Ick 
+R 695 2 0 heul’ 
+R 699 1 0 nicht 
+R 703 2 0 rum 
+R 707 2 0 wie 
+R 711 2 0 ’ne 
+R 715 2 0 Al
+R 719 2 0 te, 
+R 723 2 0 nee, 
+R 727 2 0 ick 
+R 732 2 0 sauf’ 
+R 735 2 0 wie 
+R 739 2 0 ’nen 
+R 744 4 0 Mann
+- 748
+R 752 2 0 Und 
+R 755 2 0 hab’ 
+R 759 2 0 dit 
+R 764 1 0 Scho
+R 767 2 0 ko
+R 771 2 0 ding 
+R 775 1 0 noch 
+R 780 1 0 nie 
+R 783 2 0 im 
+R 787 2 0 Le
+R 791 2 0 ben 
+R 795 2 0 »Schaum
+R 799 1 0 kuss« 
+R 804 2 0 je
+R 809 2 0 nannt
+- 811
+R 823 2 0 Ick 
+R 827 1 0 lass’ 
+R 831 2 0 mir 
+R 835 1 0 nüsch 
+R 839 2 0 ver
+R 843 2 0 bie
+R 848 1 0 ten 
+R 851 2 0 und 
+R 855 2 0 schon 
+R 859 2 0 jar 
+R 863 1 0 nüsch 
+R 867 2 0 vom 
+R 873 4 0 Staat
+- 877
+R 879 2 0 Und 
+R 883 2 0 wer 
+R 887 2 0 wat 
+R 891 2 0 an
+R 895 2 0 de
+R 899 1 0 ret 
+R 905 4 0 sagt, 
+R 911 2 0 wird 
+R 915 2 0 von 
+R 919 2 0 da 
+R 923 2 0 o
+R 928 1 0 ben 
+R 931 2 0 be
+R 938 4 0 zahlt
+- 942
+R 948 2 0 Nur 
+R 951 2 0 die 
+R 955 5 0 ein’n, 
+R 963 2 0 die 
+R 967 2 0 man 
+R 971 5 0 wähl’n 
+R 979 2 0 kann, 
+R 984 2 0 ick 
+R 988 2 0 weeß, 
+R 991 2 0 wo
+R 996 2 0 von 
+R 1000 2 0 ick 
+R 1004 2 0 re
+R 1008 2 0 de, 
+R 1012 2 0 Mann
+- 1014
+R 1015 2 0 Die 
+R 1019 2 0 Wahr
+R 1022 2 0 heit 
+R 1028 2 0 steht 
+R 1032 2 0 auf 
+R 1036 2 0 Te
+R 1040 2 0 le
+R 1044 2 0 gram
+- 1046
+* 1047 1 -10 Das 
+* 1052 2 -1 Le
+* 1055 2 -1 ben 
+* 1059 1 -1 ist 
+* 1063 2 -1 so 
+* 1067 2 0 le
+* 1070 3 -1 icht, 
+: 1075 3 -3 wenn 
+: 1079 2 -5 du 
+: 1083 6 -5 dumm 
+: 1091 1 -10 bist
+- 1092
+: 1108 1 -10 Weil’s 
+: 1112 1 -10 für 
+: 1116 2 -1 al
+: 1119 1 -1 les 
+: 1124 2 -1 ei
+: 1128 2 -1 nen 
+* 1132 2 0 e
+* 1136 2 -1 in
+* 1140 2 -3 fa
+* 1144 2 -5 chen 
+* 1148 4 -5 Grund 
+* 1157 7 -10 gibt
+- 1164 1173
+- 1173
+* 1196 2 -5 Al
+* 1200 1 -3 les 
+* 1204 2 -1 im 
+* 1208 4 -1 Lo
+* 1214 4 0 ~t, 
+: 1220 2 -1 so
+: 1224 9 -3 lang 
+: 1236 1 -5 das 
+: 1240 4 -1 Do
+: 1246 4 0 ~
+: 1253 2 -1 sen
+: 1256 10 -3 bier 
+: 1268 2 -5 noch 
+: 1273 6 -8 schmeckt
+- 1279 1280
+- 1280
+: 1303 1 -10 Das 
+: 1308 2 -1 Le
+: 1311 2 -1 ben 
+: 1315 1 -1 ist 
+: 1319 2 -1 so 
+: 1323 2 0 le
+: 1326 3 -1 icht, 
+* 1331 3 -3 wenn 
+* 1335 2 -5 du 
+* 1339 6 -5 dumm 
+* 1347 1 -1 bist
+- 1348
+: 1360 2 -10 Weil 
+: 1363 1 -10 du’s 
+: 1367 2 -10 ver
+: 1372 1 -1 stehst, 
+: 1376 2 -1 wenn 
+: 1380 2 -1 du 
+: 1384 2 -1 nur 
+* 1387 4 0 drei 
+* 1392 1 -1 Se
+* 1396 2 -3 kun
+* 1400 2 -5 den 
+* 1404 4 -5 rum
+* 1412 4 -10 klickst
+- 1416 1428
+- 1428
+: 1451 3 -5 Al
+: 1455 1 -3 les 
+* 1460 2 -1 I
+* 1463 4 -1 dio
+* 1469 4 0 ~
+* 1475 2 -1 ten, 
+: 1480 6 -3 die 
+: 1491 2 -5 sind 
+* 1496 4 -1 doo
+* 1502 4 0 ~f, 
+: 1507 3 -1 nur 
+: 1513 7 -3 du 
+: 1523 1 -5 hast 
+: 1527 10 -8 recht
+- 1537 1577
+- 1577
+R 1600 2 0 Ick 
+R 1604 2 0 hab’ 
+R 1608 2 0 wat 
+R 1612 2 0 für 
+R 1616 2 0 den 
+R 1620 2 0 Kli
+R 1623 2 0 ma
+R 1628 2 0 wan
+R 1632 2 0 del 
+R 1635 2 0 je
+R 1639 3 0 tan
+- 1642
+R 1648 2 0 Ick 
+R 1651 2 0 ras’ 
+R 1656 2 0 die 
+R 1661 3 0 vier
+R 1668 2 0 hun
+R 1672 2 0 dert 
+R 1676 2 0 Me
+R 1680 1 0 ter 
+R 1684 1 0 mit 
+R 1688 2 0 mei’m 
+R 1692 2 0 Die
+R 1696 1 0 sel 
+R 1701 1 0 zum 
+R 1705 3 0 Spar
+- 1708
+R 1715 2 0 Und 
+R 1720 1 0 auch 
+R 1723 2 0 wenn 
+R 1727 2 0 ick 
+R 1733 1 0 zwan
+R 1737 1 0 zig 
+R 1741 4 0 Mark 
+R 1748 1 0 für 
+R 1751 2 0 den 
+R 1756 1 0 Li
+R 1759 2 0 ter 
+R 1763 2 0 be
+R 1769 3 0 zahl’
+- 1772
+R 1783 2 0 Ick 
+R 1788 2 0 wür
+R 1792 1 0 de 
+R 1796 2 0 lie
+R 1799 2 0 ber 
+R 1804 2 0 ster
+R 1810 1 0 ben 
+R 1813 2 0 als 
+R 1818 1 0 ’ne 
+R 1821 2 0 E-
+R 1825 2 0 Kar
+R 1828 1 0 re 
+R 1834 5 0 fahr’n
+- 1839
+R 1856 2 0 Uff 
+R 1862 3 0 mein’n 
+R 1868 4 0 Grill, 
+R 1887 2 0 kommt 
+R 1891 2 0 nur 
+R 1895 2 0 ’nen 
+R 1900 5 0 Steak
+- 1905
+R 1920 2 0 Keen 
+R 1924 2 0 grü
+R 1928 2 0 ner 
+R 1933 4 0 Müll, 
+R 1940 2 0 denn 
+R 1944 2 0 der 
+R 1948 2 0 hat 
+R 1952 2 0 ja 
+R 1956 2 0 nie 
+R 1960 1 0 je
+R 1965 6 0 lebt
+- 1971
+R 1980 1 0 Ech
+R 1984 1 0 te 
+R 1988 2 0 star
+R 1992 1 0 ke 
+R 1996 2 0 Män
+R 2000 2 0 ner 
+R 2004 2 0 woll’n 
+R 2008 2 0 nur 
+R 2012 2 0 sau
+R 2017 1 0 fen, 
+R 2020 2 0 rau
+R 2024 1 0 chen, 
+R 2028 2 0 fi
+R 2032 1 0 cken
+- 2033
+R 2040 2 0 Und 
+R 2044 2 0 wer
+R 2050 1 0 den 
+R 2053 2 0 nie 
+R 2057 2 0 im 
+R 2060 2 0 Le
+R 2065 1 0 ben 
+R 2069 2 0 die
+R 2073 1 0 sen 
+R 2077 4 0 Frau’n
+R 2084 2 0 fuß
+R 2088 2 0 ball 
+R 2093 2 0 kie
+R 2097 1 0 ken
+- 2098
+R 2104 2 0 Dit 
+R 2108 2 0 soll
+R 2112 1 0 ten 
+R 2116 2 0 die 
+R 2121 2 0 ver
+R 2125 2 0 bie
+R 2129 1 0 ten, 
+R 2133 2 0 wenn 
+R 2136 2 0 man 
+R 2141 2 0 mir 
+R 2144 2 0 da
+R 2148 1 0 nach 
+R 2152 6 0 fragt
+- 2158
+R 2161 2 0 Und 
+R 2165 2 0 wer 
+R 2169 2 0 wat 
+R 2173 2 0 an
+R 2177 2 0 de
+R 2181 1 0 ret 
+R 2187 3 0 sagt, 
+R 2193 1 0 wird 
+R 2197 2 0 von 
+R 2201 1 0 da 
+R 2205 2 0 o
+R 2209 1 0 ben 
+R 2213 1 0 be
+R 2219 4 0 zahlt
+- 2223
+R 2229 2 0 Nur 
+R 2233 2 0 die 
+R 2237 5 0 ein’n, 
+R 2245 1 0 die 
+R 2249 2 0 man 
+R 2253 5 0 wähl’n 
+R 2261 2 0 kann, 
+R 2265 2 0 ick 
+R 2269 2 0 weeß, 
+R 2273 2 0 wo
+R 2277 2 0 von 
+R 2281 2 0 ick 
+R 2285 2 0 re
+R 2289 2 0 de, 
+R 2293 2 0 Mann
+- 2295
+R 2297 2 0 Die 
+R 2301 2 0 Wahr
+R 2304 2 0 heit 
+R 2310 2 0 steht 
+R 2313 2 0 auf 
+R 2317 2 0 Te
+R 2321 2 0 le
+R 2326 1 0 gram
+- 2327
+: 2328 1 -10 Das 
+: 2333 2 -1 Le
+: 2336 2 -1 ben 
+: 2340 1 -1 ist 
+: 2344 2 -1 so 
+: 2348 2 0 le
+: 2351 3 -1 icht, 
+* 2356 3 -3 wenn 
+* 2360 2 -5 du 
+* 2364 6 -5 dumm 
+* 2372 1 -10 bist
+- 2373
+* 2389 1 -10 Weil’s 
+* 2393 1 -10 für 
+* 2397 2 -1 al
+* 2400 1 -1 les 
+: 2405 2 -1 ei
+: 2409 2 -1 nen 
+: 2413 2 0 e
+: 2417 2 -1 in
+: 2421 2 -3 fa
+: 2425 2 -5 chen 
+: 2429 4 -5 Grund 
+: 2438 7 -10 gibt
+- 2445 2454
+- 2454
+: 2477 2 -5 Al
+: 2481 1 -3 les 
+: 2485 2 -1 im 
+: 2489 4 -1 Lo
+: 2495 4 0 ~t, 
+: 2501 2 -1 so
+: 2505 9 -3 lang 
+: 2517 1 -5 das 
+* 2521 4 -1 Do
+* 2527 4 0 ~
+* 2534 2 -1 sen
+* 2537 10 -3 bier 
+: 2549 2 -5 noch 
+: 2554 6 -8 schmeckt
+- 2560 2561
+- 2561
+* 2584 1 -10 Das 
+* 2589 2 -1 Le
+* 2592 2 -1 ben 
+* 2596 1 -1 ist 
+* 2600 2 -1 so 
+* 2604 2 0 le
+* 2607 3 -1 icht, 
+: 2612 3 -3 wenn 
+: 2616 2 -5 du 
+: 2620 6 -5 dumm 
+: 2628 1 -1 bist
+- 2629
+: 2641 2 -10 Weil 
+: 2644 1 -10 du’s 
+: 2648 2 -10 ver
+: 2653 1 -1 stehst, 
+: 2657 2 -1 wenn 
+: 2661 2 -1 du 
+: 2665 2 -1 nur 
+: 2668 4 0 drei 
+: 2673 1 -1 Se
+: 2677 2 -3 kun
+: 2680 2 -5 den 
+* 2685 4 -5 rum
+* 2693 4 -10 klickst
+- 2697 2709
+- 2709
+: 2732 3 -5 Al
+: 2736 1 -3 les 
+: 2741 2 -1 I
+: 2744 4 -1 dio
+: 2750 4 0 ~
+: 2756 2 -1 ten, 
+: 2761 6 -3 die 
+: 2772 2 -5 sind 
+: 2777 4 -1 doo
+: 2783 4 0 ~f, 
+: 2788 3 -1 nur 
+* 2794 7 -3 du 
+* 2804 1 -5 hast 
+* 2808 10 -8 recht
+- 2818 3075
+- 3075
+: 3098 1 -10 Das 
+: 3103 2 -1 Le
+: 3106 2 -1 ben 
+: 3110 1 -1 ist 
+: 3114 2 -1 so 
+: 3118 2 0 le
+: 3121 3 -1 icht, 
+* 3126 3 -3 wenn 
+* 3130 2 -5 du 
+* 3134 6 -5 dumm 
+* 3142 1 -1 bist
+- 3143
+: 3154 2 -10 Weil 
+: 3157 1 -10 du’s 
+: 3161 2 -10 ver
+: 3166 1 -1 stehst, 
+: 3170 2 -1 wenn 
+: 3174 2 -1 du 
+: 3178 2 -1 nur 
+* 3181 4 0 drei 
+* 3186 1 -1 Se
+* 3190 2 -3 kun
+* 3193 2 -5 den 
+: 3198 4 -5 rum
+: 3206 4 -10 klickst
+- 3210 3222
+- 3222
+: 3245 3 -5 Al
+: 3249 1 -3 les 
+* 3254 2 -1 I
+* 3257 4 -1 dio
+* 3263 4 0 ~
+* 3269 2 -1 ten, 
+: 3274 6 -3 die 
+: 3285 2 -5 sind 
+* 3290 4 -1 doo
+* 3296 4 0 ~f, 
+: 3301 3 -1 nur 
+: 3307 7 -3 du 
+: 3317 1 -5 hast 
+: 3321 10 -8 recht
+- 3331
+: 3354 1 -10 Das 
+: 3359 2 -1 Le
+: 3362 2 -1 ben 
+: 3366 1 -1 ist 
+: 3370 2 -1 so 
+: 3374 2 0 le
+: 3377 3 -1 icht, 
+* 3382 3 -3 wenn 
+* 3386 2 -5 du 
+* 3390 6 -5 dumm 
+* 3398 1 -10 bist
+E

@@ -1,17 +1,27 @@
-import clsx from 'clsx';
 import dayjs from 'dayjs';
 
 import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
+import ScoreboardRow, { ScoreboardPlaceholderRow } from '~/modules/scoreboard/scoreboard-row';
 import { useEditScore } from '~/modules/songs/stats/hooks';
-import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
 import LeaderboardPrompt from '~/routes/game/singing/post-game/views/leaderboard/leaderboard-prompt';
 import LeaderboardSharePanel from '~/routes/game/singing/post-game/views/leaderboard/leaderboard-share-panel';
+import SongLeaderboardPanel from '~/routes/game/singing/post-game/views/leaderboard/song-leaderboard-panel';
 import useLeaderboardPostGame from '~/routes/game/singing/post-game/views/leaderboard/use-leaderboard-post-game';
 
 import HighScoreRename from './high-score-rename';
+
+/**
+ * The two boards, side by side from tablet up and stacked below it. Their own height is
+ * `ScoreboardPanel`'s; this only says how they share the width.
+ */
+const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:flex-1 md:basis-0';
+
+/** How many rows the local board pads out to, so it stands as tall as the global one beside it. */
+const LOCAL_SCOREBOARD_ROWS = 5;
 
 interface Props {
   onNextStep: () => void;
@@ -37,42 +47,54 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
 
   return (
     <>
-      <div className="flex flex-col gap-3 sm:gap-2 lg:gap-4" data-test="highscores-container">
-        {highScores.map((score, index) => (
-          <div
-            className={clsx(
-              'typography lg:text-md relative flex items-center text-sm 2xl:text-lg',
-              score.singSetupId === singSetup.id
-                ? 'bg-black/90 px-4 py-1 sm:py-0 2xl:py-2'
-                : 'bg-black/50 px-4 py-2 sm:py-1 2xl:py-4',
-            )}
-            // The score just sung and its date are the only rows that change between runs — named so
-            // the visual baselines can mask them and keep the seeded rows visible
-            data-test={score.singSetupId === singSetup.id ? 'highscore-current-row' : undefined}
-            key={index}>
-            <div className="text-active px-2">{index + 1}</div>
+      {/* Side by side from tablet up, stacked on a phone. Full width, so the pair lines up with the
+          share panel and the tip under them rather than stopping short of both. */}
+      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6">
+        <ScoreboardPanel
+          className={SCOREBOARD_CLASS}
+          title="Local scoreboard"
+          subtitle="This song · this device"
+          data-test="highscores-container">
+          {highScores.map((score, index) => {
+            const isCurrentRun = score.singSetupId === singSetup.id;
 
-            <div className="ph-no-capture flex-1 p-1 text-left">
-              {score.singSetupId === singSetup.id ? (
-                <HighScoreRename
-                  index={index}
-                  score={score}
-                  register={register}
-                  singSetupId={singSetup.id}
-                  onSave={editScore}
-                />
-              ) : (
-                score.name
-              )}
-            </div>
-            <div className="px-1">
-              <ScoreText score={score.score} />
-            </div>
-            <div className="2xl:text-md absolute -right-2 -bottom-2 bg-black px-1 text-xs">
-              {dayjs(score.date).format('MMMM D, YYYY')}
-            </div>
-          </div>
-        ))}
+            return (
+              <ScoreboardRow
+                key={index}
+                position={index + 1}
+                score={score.score}
+                highlighted={isCurrentRun}
+                // The score just sung and its date are the only rows that change between runs — named
+                // so the visual baselines can mask them and keep the seeded rows visible
+                data-test={isCurrentRun ? 'highscore-current-row' : undefined}
+                name={
+                  isCurrentRun ? (
+                    <HighScoreRename
+                      index={index}
+                      score={score}
+                      register={register}
+                      singSetupId={singSetup.id}
+                      onSave={editScore}
+                    />
+                  ) : (
+                    score.name
+                  )
+                }
+                meta={dayjs(score.date).format('MMM D, YYYY')}
+              />
+            );
+          })}
+          {/* A device with fewer scores than this still stands as tall as the global board beside it */}
+          {Array.from({ length: Math.max(0, LOCAL_SCOREBOARD_ROWS - highScores.length) }, (_, index) => (
+            <ScoreboardPlaceholderRow key={`placeholder-${index}`} position={highScores.length + index + 1} />
+          ))}
+        </ScoreboardPanel>
+        <SongLeaderboardPanel
+          song={song}
+          singSetup={singSetup}
+          leaderboard={leaderboard}
+          className={SCOREBOARD_CLASS}
+        />
       </div>
       <LeaderboardSharePanel register={register} leaderboard={leaderboard} />
       <div className="mt-auto">

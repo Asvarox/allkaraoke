@@ -13,4 +13,5 @@ export const FeatureFlags = {
    * mode shipped with, kept as the fallback. See docs/online-mode.md. */
   OnlineP2P: 'online_p2p',
   Leaderboard: 'leaderboard',
+  SongLeaderboard: 'song_leaderboard',
 } as const;

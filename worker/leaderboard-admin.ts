@@ -10,8 +10,8 @@ export interface LeaderboardAdminEnv extends LeaderboardEnv {
 }
 
 /**
- * Authenticated list + delete. Row ids only ever reach the admin UI through here — the public board
- * never carries them.
+ * Authenticated list, delete, and a manual projection rebuild. Row ids only ever reach the admin UI
+ * through here — the public board never carries them.
  */
 export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardAdminEnv) => {
   if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
@@ -26,6 +26,15 @@ export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardA
 
   if (request.method === 'GET') {
     return new Response(JSON.stringify({ entries: await board.listForAdmin() }), { headers: responseHeaders });
+  }
+
+  if (request.method === 'POST') {
+    const result = await board.rebuild();
+
+    // Same reasoning as the delete path: the point of rebuilding by hand is seeing the result now
+    await caches.default.delete(boardCacheKey(request));
+
+    return new Response(JSON.stringify(result), { headers: responseHeaders });
   }
 
   if (request.method === 'DELETE') {
