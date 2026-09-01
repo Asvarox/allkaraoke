@@ -1,0 +1,958 @@
+#ARTIST:Seeed
+#TITLE:Augenbling
+#CREATOR:Silverbeam,mancer
+#BPM:205
+#YEAR:2012
+#VIDEO:v=qttGJ3il62Y
+#LANGUAGE:German, English
+#GAP:1325,6097560975609
+#ALLKARAOKE_ID:seeed-augenbling
+#ALLKARAOKE_SID:6238
+#ALLKARAOKE_LASTUPDATE:2026-09-01T02:54:34.707Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:226
+#MP3:Seeed - Augenbling.mp3
+R 14 1 0 Dei
+R 16 1 0 ne 
+R 18 1 0 Au
+R 20 1 0 gen 
+R 22 1 0 ma
+R 24 1 0 chen 
+R 26 2 0 bling 
+R 30 1 0 bling
+- 31
+R 32 1 0 Und 
+R 34 1 0 al
+R 36 1 0 les 
+R 38 1 0 ist 
+R 40 1 0 ver
+R 42 1 0 ges
+R 44 1 0 sen
+- 45
+R 46 1 0 Dei
+R 48 1 0 ne 
+R 50 1 0 Au
+R 52 1 0 gen 
+R 54 1 0 ma
+R 56 1 0 chen 
+R 58 2 0 bling 
+R 62 1 0 bling
+- 63
+R 64 1 0 Und 
+R 66 1 0 al
+R 68 1 0 les 
+R 70 1 0 ist 
+R 72 1 0 ver
+R 74 1 0 ges
+R 76 1 0 sen
+- 77
+R 78 1 0 Dei
+R 80 1 0 ne 
+R 82 1 0 Au
+R 84 1 0 gen 
+R 86 1 0 ma
+R 88 1 0 chen 
+R 90 2 0 bling 
+R 94 1 0 bling
+- 95
+R 96 1 0 Und 
+R 98 1 0 al
+R 100 1 0 les 
+R 102 1 0 ist 
+R 104 1 0 ver
+R 106 1 0 ges
+R 108 1 0 sen
+- 109
+R 110 1 0 Dei
+R 112 1 0 ne 
+R 114 1 0 Au
+R 116 1 0 gen 
+R 118 1 0 ma
+R 120 1 0 chen 
+R 122 2 0 bling 
+R 126 1 0 bling
+- 127
+R 128 1 0 Und 
+R 130 1 0 al
+R 132 1 0 les 
+R 134 1 0 ist 
+R 136 1 0 ver
+R 138 1 0 ges
+R 140 1 0 sen
+- 141
+R 142 1 0 Dei
+R 144 1 0 ne 
+R 146 1 0 Au
+R 148 1 0 gen 
+R 150 1 0 ma
+R 152 1 0 chen 
+* 154 2 0 bling 
+R 158 1 0 bling
+- 159
+R 160 1 0 Und 
+R 162 1 0 al
+R 164 1 0 les 
+R 166 1 0 ist 
+R 168 1 0 ver
+R 170 1 0 ges
+R 172 1 0 sen
+- 173
+R 174 1 0 Dei
+R 176 1 0 ne 
+R 178 1 0 Au
+R 180 1 0 gen 
+R 182 1 0 ma
+R 184 1 0 chen 
+R 186 2 0 bling 
+R 190 1 0 bling
+- 191
+R 192 1 0 Und 
+R 194 1 0 al
+R 196 1 0 les 
+R 198 1 0 ist 
+R 200 1 0 ver
+R 202 1 0 ges
+R 204 1 0 sen
+- 205
+R 206 1 0 Dei
+R 208 1 0 ne 
+R 210 1 0 Au
+R 212 1 0 gen 
+R 214 1 0 ma
+R 216 1 0 chen 
+R 218 2 0 bling 
+R 222 1 0 bling
+- 223
+R 224 1 0 Und 
+R 226 1 0 al
+R 228 1 0 les 
+R 230 1 0 ist 
+R 232 1 0 ver
+R 234 1 0 ges
+R 236 1 0 sen
+- 237
+R 238 1 0 Dei
+R 240 1 0 ne 
+R 242 1 0 Au
+R 244 1 0 gen 
+R 246 1 0 ma
+R 248 1 0 chen 
+R 250 2 0 bling 
+R 254 1 0 bling
+- 255
+R 256 1 0 Und 
+R 258 1 0 al
+R 260 1 0 les 
+R 262 1 0 ist 
+R 264 1 0 ver
+R 266 1 0 ges
+R 268 1 0 sen
+- 269
+: 270 2 -5 Ich 
+: 274 2 0 lieg 
+: 278 1 0 im 
+: 280 3 0 Dreck
+- 283
+: 290 2 -2 Sink 
+: 294 2 -5 ins 
+: 298 4 0 Meer
+- 302
+: 306 2 0 Wieg 
+: 310 3 0 zehn 
+: 318 1 0 Ton
+: 320 1 0 nen
+- 321
+: 322 1 -2 Bin 
+: 324 1 -2 in
+: 326 1 -2 nen 
+: 330 4 0 leer
+- 334
+: 338 2 0 Dreh 
+: 342 1 0 mich 
+: 344 2 0 im 
+: 350 2 0 Kreis
+- 352
+: 354 2 -2 Seh 
+: 358 2 -5 nichts 
+* 362 5 0 mehr
+- 367
+: 370 1 0 Je
+: 372 1 0 der 
+: 374 2 0 Weg
+- 376
+: 382 2 -5 Führt 
+: 386 1 -2 wie
+: 388 1 -2 der 
+: 390 2 -5 hier 
+: 394 4 -5 her
+- 398
+: 402 2 0 Mal 
+: 406 1 0 mei
+: 408 1 0 ne 
+: 410 2 0 Wand 
+: 414 2 -5 an
+- 416
+: 418 2 -2 Ra
+: 422 2 -5 ben
+: 426 6 0 schwarz
+- 432
+: 434 2 0 Bin 
+: 438 1 0 mü
+: 440 1 0 de 
+: 442 2 0 und
+- 444
+: 450 2 -2 Schlaf 
+: 454 1 -5 am 
+: 458 4 0 Tag
+- 462
+: 466 2 0 Lieg 
+: 470 2 0 flach
+- 472
+: 478 1 0 Glotz 
+: 480 1 0 mich 
+: 482 2 -2 in 
+: 486 2 0 mein 
+: 490 4 0 Grab
+- 494
+: 498 1 0 Gei
+: 500 1 0 er 
+: 502 1 0 auf’
+: 504 1 -5 m 
+: 506 2 0 Dach
+- 508
+: 514 2 -2 War
+: 518 1 -5 ten 
+: 520 1 -5 auf 
+: 522 6 -5 Aas
+- 528
+* 534 3 3 Ruf 
+: 538 2 3 mich 
+: 542 2 3 nicht 
+: 546 2 2 an, 
+: 550 2 2 ich 
+: 554 2 0 bin 
+: 558 5 0 tot
+- 563
+: 566 1 0 Mei
+: 568 1 -2 ne 
+: 570 2 0 Haut 
+: 574 2 3 grün, 
+: 578 2 0 die 
+: 582 2 0 Au
+: 586 2 -5 gen 
+: 590 4 0 rot
+- 594
+: 598 2 0 Lad 
+: 602 2 0 mich 
+: 606 2 0 nich 
+: 610 2 0 ein, 
+: 614 2 -2 denn 
+: 618 2 0 da 
+: 622 2 3 wo 
+: 626 2 2 ich 
+: 630 2 0 hin
+: 634 4 -5 geh
+- 638
+: 642 3 -1 Reg
+: 646 2 -1 net 
+: 650 2 -5 es 
+: 654 4 0 bloß
+- 658
+: 662 2 3 Die 
+: 666 2 0 Wand 
+: 670 2 -5 ist 
+: 674 3 -2 lang 
+: 678 2 0 und 
+: 682 2 0 zu 
+: 686 3 0 hoch
+- 689
+: 694 2 3 Der 
+: 698 2 0 Gra
+: 702 2 -5 ben 
+: 706 2 -2 tief 
+: 710 2 0 und 
+: 714 2 0 zu 
+: 718 3 0 groß
+- 721
+: 726 2 0 Ir
+: 730 2 0 gend
+: 734 2 0 wo 
+: 738 2 0 aus 
+: 742 2 0 dem 
+: 746 2 0 Nichts
+- 748
+: 750 2 -5 Ein 
+* 754 2 -1 Blick 
+: 762 2 -5 für 
+: 766 2 -1 den 
+: 770 2 -1 es 
+: 774 2 -5 sich 
+: 778 2 0 lohnt
+- 780
+R 782 1 0 Dei
+R 784 1 0 ne 
+R 786 1 0 Au
+R 788 1 0 gen 
+R 790 1 0 ma
+R 792 1 0 chen 
+R 794 2 0 bling 
+R 798 1 0 bling
+- 799
+R 800 1 0 Und 
+R 802 1 0 al
+R 804 1 0 les 
+R 806 1 0 ist 
+R 808 1 0 ver
+R 810 1 0 ges
+R 812 1 0 sen
+- 813
+R 814 1 0 Dei
+R 816 1 0 ne 
+R 818 1 0 Au
+R 820 1 0 gen 
+R 822 1 0 ma
+R 824 1 0 chen 
+R 826 2 0 bling 
+R 830 1 0 bling
+- 831
+R 832 1 0 Und 
+R 834 1 0 al
+R 836 1 0 les 
+R 838 1 0 ist 
+R 840 1 0 ver
+R 842 1 0 ges
+R 844 1 0 sen
+- 845
+R 846 1 0 Dei
+* 848 1 0 ne 
+* 850 1 0 Au
+R 852 1 0 gen 
+R 854 1 0 ma
+R 856 1 0 chen 
+R 858 2 0 bling 
+R 862 1 0 bling
+- 863
+R 864 1 0 Und 
+R 866 1 0 al
+R 868 1 0 les 
+R 870 1 0 ist 
+R 872 1 0 ver
+R 874 1 0 ges
+R 876 1 0 sen
+- 877
+R 878 1 0 Dei
+R 880 1 0 ne 
+R 882 1 0 Au
+R 884 1 0 gen 
+R 886 1 0 ma
+R 888 1 0 chen 
+R 890 2 0 bling 
+R 894 1 0 bling
+- 895
+R 896 1 0 Und 
+R 898 1 0 al
+R 900 1 0 les 
+R 902 1 0 ist 
+R 904 1 0 ver
+R 906 1 0 ges
+R 908 1 0 sen
+- 909
+R 910 1 0 Dei
+R 912 1 0 ne 
+R 914 1 0 Au
+R 916 1 0 gen 
+R 918 1 0 ma
+R 920 1 0 chen 
+R 922 2 0 bling 
+R 926 1 0 bling
+- 927
+R 928 1 0 Und 
+R 930 1 0 al
+R 932 1 0 les 
+R 934 1 0 ist 
+R 936 1 0 ver
+R 938 1 0 ges
+R 940 1 0 sen
+- 941
+R 942 1 0 Dei
+R 944 1 0 ne 
+R 946 1 0 Au
+R 948 1 0 gen 
+R 950 1 0 ma
+R 952 1 0 chen 
+R 954 2 0 bling 
+R 958 1 0 bling
+- 959
+R 960 1 0 Und 
+R 962 1 0 al
+R 964 1 0 les 
+R 966 1 0 ist 
+R 968 1 0 ver
+R 970 1 0 ges
+R 972 1 0 sen
+- 973
+R 974 1 0 Dei
+R 976 1 0 ne 
+R 978 1 0 Au
+R 980 1 0 gen 
+R 982 1 0 ma
+R 984 1 0 chen 
+R 986 2 0 bling 
+R 990 1 0 bling
+- 991
+R 992 1 0 Und 
+R 994 1 0 al
+R 996 1 0 les 
+R 998 1 0 ist 
+R 1000 1 0 ver
+R 1002 1 0 ges
+R 1004 1 0 sen
+- 1005
+R 1006 1 0 Dei
+R 1008 1 0 ne 
+R 1010 1 0 Au
+R 1012 1 0 gen 
+R 1014 1 0 ma
+R 1016 1 0 chen 
+* 1018 2 0 bling 
+R 1022 1 0 bling
+- 1023
+R 1024 1 0 Und 
+R 1026 1 0 al
+R 1028 1 0 les 
+R 1030 1 0 ist 
+R 1032 1 0 ver
+R 1034 1 0 ges
+R 1036 1 0 sen
+- 1037
+R 1038 1 0 Dei
+R 1040 1 0 ne 
+R 1042 1 0 Au
+R 1044 1 0 gen 
+R 1046 1 0 ma
+R 1048 1 0 chen 
+R 1050 2 0 bling 
+R 1054 1 0 bling
+- 1055
+R 1056 1 0 Und 
+R 1058 1 0 al
+R 1060 1 0 les 
+R 1062 1 0 ist 
+R 1064 1 0 ver
+R 1066 1 0 ges
+R 1068 1 0 sen
+- 1069
+R 1070 1 0 Dei
+R 1072 1 0 ne 
+R 1074 1 0 Au
+R 1076 1 0 gen 
+R 1078 1 0 ma
+R 1080 1 0 chen 
+R 1082 2 0 bling 
+R 1086 1 0 bling
+- 1087
+R 1088 1 0 Und 
+R 1090 1 0 al
+R 1092 1 0 les 
+R 1094 1 0 ist 
+R 1096 1 0 ver
+R 1098 1 0 ges
+R 1100 1 0 sen
+- 1101
+R 1102 1 0 Dei
+R 1104 1 0 ne 
+R 1106 1 -2 Au
+R 1108 2 0 gen 
+R 1114 1 5 ge
+R 1116 1 3 ben 
+R 1118 1 3 mei
+R 1120 1 0 ner 
+R 1122 2 0 Welt 
+R 1126 1 -2 wie
+R 1128 1 0 der 
+R 1130 4 0 Glanz
+- 1134
+* 1146 2 5 Du 
+R 1150 1 3 machst 
+R 1154 2 0 mich 
+R 1158 1 0 wie
+R 1160 1 0 der 
+R 1162 4 0 ganz
+- 1166
+R 1178 2 5 Drück 
+R 1182 1 3 dir 
+R 1184 1 3 mein 
+R 1186 2 0 Herz 
+R 1190 1 0 in 
+R 1192 1 0 die 
+R 1194 3 0 Hand
+- 1197
+R 1206 1 5 Ba
+R 1208 1 3 by, 
+R 1210 1 0 nimm 
+R 1212 1 0 es 
+R 1214 2 -2 als 
+R 1218 4 0 Pfand
+- 1222 1224
+- 1224
+: 1238 1 0 Kom
+: 1240 1 0 me 
+: 1242 1 0 je
+: 1244 1 0 den 
+: 1246 2 0 Tag, 
+: 1250 1 -5 be
+: 1252 3 0 such
+: 1256 1 0 e 
+: 1258 2 0 dich
+- 1260
+: 1266 1 0 Al
+: 1268 1 0 le 
+: 1270 1 0 in 
+: 1272 3 0 dei
+: 1276 1 0 nem 
+: 1278 2 0 Kiez 
+: 1282 1 -5 ver
+: 1284 3 0 flu
+: 1288 1 0 chen 
+: 1290 2 0 mich
+- 1292
+: 1294 2 -5 Steh 
+: 1298 2 0 in 
+: 1302 1 0 dei
+: 1304 1 0 nem 
+: 1306 2 0 Hof, 
+: 1310 1 0 sing 
+: 1312 1 0 ’n 
+* 1316 2 2 schie
+: 1319 1 0 fes 
+: 1322 2 0 Lied
+- 1324
+: 1326 1 -5 Das 
+: 1328 2 0 Haus 
+: 1332 3 0 tobt, 
+R 1338 1 3 Mo
+R 1340 1 0 bi
+R 1342 2 -2 liar 
+R 1346 2 -2 flieg 
+R 1350 1 -5 im 
+R 1352 2 -5 Beat
+- 1354
+R 1356 2 0 Aus 
+R 1360 1 0 dem 
+R 1362 2 0 Nichts
+- 1364
+R 1374 1 0 Wur
+R 1376 1 0 de 
+R 1378 2 0 schwarz 
+R 1382 1 -5 zu 
+R 1385 2 0 bunt
+- 1387
+R 1390 1 -5 Aus 
+R 1392 1 -5 dem 
+R 1394 2 0 Platz 
+R 1398 1 0 an 
+R 1400 1 0 der 
+R 1402 2 0 Bar
+- 1404
+R 1406 1 0 Wur
+R 1408 1 -2 de 
+R 1410 2 0 Haus 
+R 1414 1 0 und 
+R 1416 2 0 Hund
+- 1418
+R 1420 1 3 Du 
+R 1422 2 0 bist 
+R 1426 2 0 schön
+- 1428
+R 1430 2 0 Ich 
+R 1434 1 0 geh 
+R 1436 1 3 der 
+R 1438 1 0 Sa
+R 1440 1 0 che 
+R 1442 2 0 auf 
+R 1446 1 0 den 
+R 1448 3 0 Grund
+- 1451
+R 1454 1 0 Und 
+R 1456 1 0 dein 
+R 1458 2 3 Bauch 
+R 1462 1 3 wird 
+R 1465 5 -2 rund
+- 1470 1480
+- 1480
+: 1494 1 3 Ba
+: 1496 1 3 by, 
+: 1498 2 3 geh 
+: 1502 1 2 mit 
+: 1504 1 0 mir 
+: 1506 2 0 raus 
+: 1510 2 0 ans 
+: 1514 2 0 Licht
+- 1516
+: 1520 1 -2 Ich 
+: 1522 2 0 glau
+: 1526 1 0 be 
+: 1528 1 0 an 
+: 1530 2 3 Gott, 
+: 1534 1 0 denn 
+: 1536 1 0 er 
+: 1538 2 -2 bau
+: 1542 1 0 te 
+: 1544 2 0 dich
+- 1546
+: 1548 2 3 Aus
+: 1552 1 0 ge
+: 1554 2 0 rech
+: 1558 1 0 net 
+* 1560 3 0 ich 
+: 1566 1 0 bin 
+: 1568 1 0 im 
+: 1570 2 0 Gar
+: 1574 1 -2 ten 
+: 1576 2 0 E
+: 1580 1 -5 den
+- 1581
+G 1582 1 2 Die
+G 1584 1 0 se 
+G 1586 2 -5 Braut, 
+G 1590 1 2 die
+G 1592 1 0 ser 
+G 1594 2 -5 Arsch, 
+G 1598 1 2 die
+G 1600 1 0 ser 
+G 1602 2 -5 Tag, 
+G 1606 1 -2 die
+G 1608 1 0 ses 
+G 1611 3 0 Le
+G 1615 2 0 ben
+- 1617 1632
+- 1632
+R 1646 1 0 Dei
+R 1648 1 0 ne 
+R 1650 1 0 Au
+R 1652 1 0 gen 
+R 1654 1 0 ma
+R 1656 1 0 chen 
+R 1658 2 0 bling 
+R 1662 1 0 bling
+- 1663
+R 1664 1 0 Und 
+R 1666 1 0 al
+R 1668 1 0 les 
+R 1670 1 0 ist 
+R 1672 1 0 ver
+R 1674 1 0 ges
+R 1676 1 0 sen
+- 1677
+R 1678 1 0 Dei
+R 1680 1 0 ne 
+R 1682 1 0 Au
+R 1684 1 0 gen 
+R 1686 1 0 ma
+R 1688 1 0 chen 
+R 1690 2 0 bling 
+R 1694 1 0 bling
+- 1695
+R 1696 1 0 Und 
+R 1698 1 0 al
+R 1700 1 0 les 
+R 1702 1 0 ist 
+R 1704 1 0 ver
+R 1706 1 0 ges
+R 1708 1 0 sen
+- 1709
+R 1710 1 0 Dei
+R 1712 1 0 ne 
+R 1714 1 0 Au
+R 1716 1 0 gen 
+R 1718 1 0 ma
+R 1720 1 0 chen 
+R 1722 2 0 bling 
+R 1726 1 0 bling
+- 1727
+R 1728 1 0 Und 
+R 1730 1 0 al
+R 1732 1 0 les 
+R 1734 1 0 ist 
+R 1736 1 0 ver
+R 1738 1 0 ges
+R 1740 1 0 sen
+- 1741
+R 1742 1 0 Dei
+R 1744 1 0 ne 
+R 1746 1 0 Au
+R 1748 1 0 gen 
+R 1750 1 0 ma
+R 1752 1 0 chen 
+R 1754 2 0 bling 
+R 1758 1 0 bling
+- 1759
+R 1760 1 0 Und 
+R 1762 1 0 al
+R 1764 1 0 les 
+R 1766 1 0 ist 
+R 1768 1 0 ver
+R 1770 1 0 ges
+R 1772 1 0 sen
+- 1773
+R 1774 1 0 Dei
+R 1776 1 0 ne 
+R 1778 1 0 Au
+R 1780 1 0 gen 
+R 1782 1 0 ma
+R 1784 1 0 chen 
+R 1786 2 0 bling 
+R 1790 1 0 bling
+- 1791
+R 1792 1 0 Und 
+R 1794 1 0 al
+R 1796 1 0 les 
+R 1798 1 0 ist 
+* 1800 1 0 ver
+R 1802 1 0 ges
+R 1804 1 0 sen
+- 1805
+R 1806 1 0 Dei
+R 1808 1 0 ne 
+R 1810 1 0 Au
+R 1812 1 0 gen 
+R 1814 1 0 ma
+R 1816 1 0 chen 
+R 1818 2 0 bling 
+R 1822 1 0 bling
+- 1823
+R 1824 1 0 Und 
+R 1826 1 0 al
+R 1828 1 0 les 
+R 1830 1 0 ist 
+R 1832 1 0 ver
+R 1834 1 0 ges
+R 1836 1 0 sen
+- 1837
+R 1838 1 0 Dei
+R 1840 1 0 ne 
+R 1842 1 0 Au
+R 1844 1 0 gen 
+R 1846 1 0 ma
+R 1848 1 0 chen 
+R 1850 2 0 bling 
+R 1854 1 0 bling
+- 1855
+R 1856 1 0 Und 
+R 1858 1 0 al
+R 1860 1 0 les 
+R 1862 1 0 ist 
+R 1864 1 0 ver
+R 1866 1 0 ges
+R 1868 1 0 sen
+- 1869 1884
+- 1884
+: 1898 7 3 Yeah
+- 1905
+: 1918 2 5 You 
+: 1922 2 3 know 
+: 1926 1 0 how 
+: 1928 1 0 it 
+: 1930 2 0 goes 
+: 1934 4 2 ya’ll
+- 1938
+: 1950 2 -2 If 
+: 1954 2 3 one 
+: 1958 2 3 girl’s 
+: 1962 7 0 there
+- 1969 1970
+- 1970
+: 1984 1 -5 A
+: 1986 1 0 no
+: 1988 1 0 ther 
+: 1990 2 0 will 
+: 1994 3 -2 come
+- 1997
+* 2002 3 3 New 
+: 2008 1 0 Ma
+: 2010 2 0 dame 
+: 2014 1 0 makes 
+: 2016 1 0 me 
+: 2018 2 -2 gaze 
+: 2022 2 0 and 
+: 2026 3 0 stun
+- 2029
+: 2030 1 0 Have 
+: 2032 1 0 to 
+: 2034 2 -2 raise 
+: 2038 2 0 my 
+: 2042 2 0 thumb, 
+: 2046 1 0 she’s 
+: 2048 1 0 a 
+: 2050 2 -2 load
+: 2054 2 0 ed 
+: 2058 3 0 gun
+- 2061
+: 2066 3 3 Cool 
+: 2072 1 0 me 
+: 2074 2 0 down 
+: 2078 1 0 for 
+: 2080 1 0 my 
+: 2082 2 -2 brain 
+: 2086 2 0 is 
+: 2090 2 0 gone
+- 2092
+: 2094 1 0 If 
+: 2096 1 0 no 
+: 2098 2 -2 sa
+: 2102 2 0 vior 
+: 2106 1 0 comes, 
+: 2108 1 0 I’m 
+: 2110 1 0 gon
+: 2112 1 0 na 
+* 2114 2 5 burn 
+: 2118 2 0 my 
+: 2122 3 0 hand
+- 2125
+: 2136 2 0 Some 
+: 2140 1 0 guy’s 
+: 2143 1 0 wan
+: 2145 1 0 na 
+: 2148 1 0 spy 
+: 2150 2 0 out 
+: 2153 2 0 and 
+: 2156 2 7 tell
+: 2159 2 7 ~
+: 2162 2 7 ~
+- 2164
+: 2169 1 0 My 
+: 2171 2 0 wife’s 
+: 2174 1 0 gon
+: 2176 1 0 na 
+: 2179 2 0 cry 
+: 2182 2 0 out 
+: 2185 2 0 and 
+: 2188 2 7 yell
+: 2191 2 7 ~
+: 2194 2 7 ~
+- 2196
+: 2201 1 0 The 
+: 2203 2 0 dogs 
+: 2207 2 0 will 
+: 2212 1 2 sniff 
+: 2214 1 0 it 
+: 2216 2 0 and 
+: 2221 1 2 smell 
+: 2223 1 0 it, 
+: 2226 1 0 re
+: 2228 2 2 tell 
+: 2231 1 0 it
+- 2232
+: 2234 1 0 Then 
+: 2236 1 0 the 
+: 2238 2 0 press 
+: 2241 1 0 gon
+: 2243 1 0 na 
+: 2245 1 0 buy 
+: 2247 1 0 it 
+: 2250 1 0 and 
+* 2253 2 7 sell
+: 2256 2 7 ~
+: 2259 2 7 ~
+- 2261
+: 2264 1 0 So 
+: 2266 1 3 sim
+: 2268 1 0 mer 
+: 2270 1 0 down 
+: 2272 1 0 and 
+: 2274 2 0 please 
+: 2278 1 0 let 
+: 2280 1 0 me 
+: 2283 2 2 go
+- 2285
+: 2294 1 0 Raise 
+: 2296 1 0 the 
+: 2298 1 3 dim
+: 2300 1 0 mer 
+: 2302 1 0 for 
+: 2304 1 0 the 
+: 2306 2 0 lights 
+: 2310 1 0 are 
+: 2312 1 0 too 
+: 2315 3 2 low
+- 2318
+: 2324 1 0 In 
+: 2326 2 0 this 
+: 2330 1 3 thril
+: 2332 2 0 ler
+- 2334
+: 2336 1 -2 I 
+: 2338 2 0 can’t 
+: 2342 1 0 leave 
+: 2344 1 0 the 
+: 2346 2 0 field 
+: 2350 1 0 as 
+: 2352 1 0 a 
+: 2354 1 2 win
+: 2356 3 0 ner
+- 2359
+: 2364 1 0 So 
+: 2366 1 0 bet
+: 2368 1 0 ter 
+: 2370 1 0 watch 
+: 2372 1 0 out 
+: 2374 1 0 M
+: 2376 1 0 r. 
+* 2379 2 7 Del
+: 2382 2 7 lé
+: 2385 2 7 ~
+- 2387 2400
+- 2400
+R 2414 1 0 Dei
+R 2416 1 0 ne 
+R 2418 1 0 Au
+R 2420 1 0 gen 
+R 2422 1 0 ma
+R 2424 1 0 chen 
+R 2426 2 0 bling 
+R 2430 1 0 bling
+- 2431
+R 2432 1 0 Und 
+R 2434 1 0 al
+R 2436 1 0 les 
+R 2438 1 0 ist 
+R 2440 1 0 ver
+R 2442 1 0 ges
+R 2444 1 0 sen
+- 2445
+R 2446 1 0 Dei
+R 2448 1 0 ne 
+R 2450 1 0 Au
+R 2452 1 0 gen 
+R 2454 1 0 ma
+R 2456 1 0 chen 
+R 2458 2 0 bling 
+R 2462 1 0 bling
+- 2463
+R 2464 1 0 Und 
+R 2466 1 0 al
+R 2468 1 0 les 
+R 2470 1 0 ist 
+R 2472 1 0 ver
+R 2474 1 0 ges
+R 2476 1 0 sen
+- 2477
+R 2478 1 0 Dei
+R 2480 1 0 ne 
+R 2482 1 0 Au
+R 2484 1 0 gen 
+R 2486 1 0 ma
+R 2488 1 0 chen 
+R 2490 2 0 bling 
+R 2494 1 0 bling
+- 2495
+R 2496 1 0 Und 
+R 2498 1 0 al
+R 2500 1 0 les 
+R 2502 1 0 ist 
+R 2504 1 0 ver
+R 2506 1 0 ges
+R 2508 1 0 sen
+E
