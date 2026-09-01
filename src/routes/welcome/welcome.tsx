@@ -8,6 +8,7 @@ import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import { NavButton } from '~/modules/elements/nav-controls';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
+import useJukeboxHidden from '~/modules/hooks/use-jukebox-hidden';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
@@ -20,7 +21,7 @@ function Welcome() {
   const navigate = useSmoothNavigate();
   const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
   // Experiment: hiding the Jukebox entry point to see whether it changes how many songs people sing.
-  const jukeboxHidden = useFeatureFlag(FeatureFlags.HideJukebox);
+  const jukeboxHidden = useJukeboxHidden();
 
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav({ title: 'Main Menu' });

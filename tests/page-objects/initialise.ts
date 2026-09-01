@@ -9,6 +9,7 @@ import { GamePagePO } from './game-page';
 import { HistoryPagePO } from './history-page';
 import { InputSelectionPagePO } from './input-selection-page';
 import { JoinExistingGamePagePO } from './join-existing-game-page';
+import { JukeboxPagePO } from './jukebox-page';
 import { LandingPagePO } from './landing-page';
 import { LeaderboardPagePO } from './leaderboard-page';
 import { MainMenuPagePO } from './main-menu-page';
@@ -52,6 +53,7 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     gamePage: new GamePagePO(page, context, browser),
     postGameResultsPage: new PostGameResultsPagePO(page, context, browser),
     postGameHighScoresPage: new PostGameHighScoresPagePO(page, context, browser),
+    jukeboxPage: new JukeboxPagePO(page, context, browser),
     historyPage: new HistoryPagePO(page, context, browser),
     remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
     singstarConnectionPage: new SingstarConnectionPagePO(page, context, browser),
