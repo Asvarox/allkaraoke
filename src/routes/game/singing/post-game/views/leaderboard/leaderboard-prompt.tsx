@@ -10,7 +10,7 @@ interface Props {
 }
 
 /**
- * Asked once, the first time a score is good enough for the global board.
+ * Asked once, the first time a score is good enough for a board.
  *
  * Both answers are standing decisions, so there is no per-song question to come back to: accepting
  * hands the player over to the panel on the high-scores step, which is what every later song shows
@@ -20,8 +20,23 @@ interface Props {
  * Online games never reach here — the high-scores step is not rendered for them.
  */
 function LeaderboardPrompt({ leaderboard }: Props) {
-  const { isModalOpen, score, name, setName, country, setCountry, canSubmit, acceptFromModal, declineFromModal } =
-    leaderboard;
+  const {
+    isModalOpen,
+    score,
+    name,
+    setName,
+    country,
+    setCountry,
+    canSubmit,
+    acceptFromModal,
+    declineFromModal,
+    reachesGlobalBoard,
+    difficulty,
+  } = leaderboard;
+
+  // The board the player is actually being offered. Naming the global one to somebody whose Easy
+  // run will never appear there is the one thing this prompt must not do.
+  const title = reachesGlobalBoard ? 'Global leaderboard' : 'Song leaderboard';
 
   // Exclusive, so the high-scores list underneath keeps its own registration order untouched —
   // in particular the `Select song` button stays last there.
@@ -29,18 +44,26 @@ function LeaderboardPrompt({ leaderboard }: Props) {
     enabled: isModalOpen,
     exclusive: true,
     onBackspace: declineFromModal,
-    title: 'Global leaderboard',
+    title,
   });
 
   return (
     <Modal open={isModalOpen} onClose={declineFromModal} withPortal level="nested">
       <Menu spacing="tight" modal data-test="leaderboard-prompt">
-        <Menu.Header>Global leaderboard</Menu.Header>
+        <Menu.Header>{title}</Menu.Header>
         <Menu.HelpText>
           <strong className="text-active" data-test="leaderboard-prompt-score">
             <ScoreText score={score} />
           </strong>{' '}
-          points is good enough for the global leaderboard. Want your scores on the board on the main menu?
+          {reachesGlobalBoard ? (
+            <>points is good enough for the global leaderboard. Want your scores on the board on the main menu?</>
+          ) : (
+            <>
+              points is good enough for this song&apos;s {difficulty} leaderboard. {difficulty} scores are ranked
+              against this song only — the global board on the main menu takes Medium and harder. Want your scores
+              shared?
+            </>
+          )}
         </Menu.HelpText>
 
         <LeaderboardIdentityFields

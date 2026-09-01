@@ -4,7 +4,7 @@ import { unpack } from 'msgpackr';
 import {
   MAX_NOTES_RECORDS,
   MAX_POINTS,
-  MAX_QUALIFYING_TOLERANCE,
+  MAX_SUBMITTED_TOLERANCE,
   MAX_SUBMISSION_BYTES,
   MAX_SUBMITTED_ID_LENGTH,
   MAX_SUBMITTED_NAME_LENGTH,
@@ -98,13 +98,15 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
     return { message: 'Score out of range' };
   }
 
-  // The board only ranks Medium and harder — a wider pitch window is not the same game, and the
-  // client already refuses to offer those scores. Checked here too because the client is not the
-  // authority on what reaches a public board.
+  // Easy is stored — it gets its own per-song board, where it is only ever ranked against other
+  // Easy runs. What it does not get is a place on the global board, and that is the projection's
+  // job (see `MAX_GLOBAL_BOARD_TOLERANCE`), not this one. Above Easy are the dev-only debug widths,
+  // which are not a shipped difficulty and get no board at all. Checked here too because the client
+  // is not the authority on what reaches a public board.
   if (
     !Number.isInteger(submission.tolerance) ||
     submission.tolerance! < 1 ||
-    submission.tolerance! > MAX_QUALIFYING_TOLERANCE
+    submission.tolerance! > MAX_SUBMITTED_TOLERANCE
   ) {
     return { message: 'Difficulty not eligible' };
   }
@@ -165,6 +167,50 @@ export const handleLeaderboardSubmit = async (request: Request, env: Leaderboard
   }
 
   return new Response(JSON.stringify(result), { headers: jsonHeaders });
+};
+
+/**
+ * The board for one song at one difficulty, and the rank the caller's score would take on it.
+ *
+ * Unlike the global board this one ranks Easy too — a board split by difficulty has nothing to gain
+ * from refusing the easy end of it.
+ *
+ * Served from the Durable Object rather than the KV projection and the Cache API that back
+ * `GET /leaderboard`: there is one of these per (song, difficulty) rather than one in total, and the
+ * `score` parameter differs on nearly every call, so an edge cache would miss more or less always.
+ * The read happens once per finished song, which is orders of magnitude below main-menu loads.
+ */
+export const handleSongLeaderboardRead = async (request: Request, env: LeaderboardEnv) => {
+  if (request.method !== 'GET') return error(405, 'Method not allowed');
+
+  const board = getBoardStub(env);
+  if (!board) return error(500, 'Leaderboard storage is not configured');
+
+  const params = new URL(request.url).searchParams;
+
+  const songId = params.get('songId');
+  if (!isBoundedString(songId, MAX_SUBMITTED_ID_LENGTH)) return error(400, 'Invalid songId');
+
+  const tolerance = Number(params.get('tolerance'));
+  // Every shipped difficulty has a board of its own, Easy included; the debug widths above it are
+  // never stored, so a request for one could only ever describe an empty board
+  if (!Number.isInteger(tolerance) || tolerance < 1 || tolerance > MAX_SUBMITTED_TOLERANCE) {
+    return error(400, 'Invalid tolerance');
+  }
+
+  const rawScore = params.get('score');
+  const score = rawScore === null ? null : Math.round(Number(rawScore));
+  if (score !== null && (!Number.isFinite(score) || score < 0 || score > MAX_POINTS)) {
+    return error(400, 'Invalid score');
+  }
+
+  const result = await board.songBoard(songId, tolerance, score);
+
+  return new Response(JSON.stringify(result), {
+    // Private and short: the response is keyed on a score that belongs to one player, so it is only
+    // ever reusable by the tab that asked for it
+    headers: { ...jsonHeaders, 'Cache-Control': 'private, max-age=30' },
+  });
 };
 
 export const handleLeaderboardRead = async (request: Request, env: LeaderboardEnv) => {

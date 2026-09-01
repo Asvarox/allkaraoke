@@ -6,7 +6,7 @@ import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
 import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
 import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
 import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverified-songs-admin';
-import { handleLeaderboardRead, handleLeaderboardSubmit } from './leaderboard';
+import { handleLeaderboardRead, handleLeaderboardSubmit, handleSongLeaderboardRead } from './leaderboard';
 import { handleLeaderboardAdmin } from './leaderboard-admin';
 import { LeaderboardBoard } from './leaderboard-do';
 
@@ -93,6 +93,10 @@ export default {
 
     if (pathname === '/leaderboard') {
       return request.method === 'GET' ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
+    }
+
+    if (pathname === '/leaderboard-song') {
+      return handleSongLeaderboardRead(request, env);
     }
 
     if (pathname === '/leaderboard-admin') {

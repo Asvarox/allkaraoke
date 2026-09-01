@@ -1,21 +1,33 @@
 import { DurableObject } from 'cloudflare:workers';
 
 // Relative import on purpose: the `~` alias is only configured for the app build, not the Worker one
-import { MAX_QUALIFYING_TOLERANCE } from '../src/modules/leaderboard/consts';
+import { MAX_GLOBAL_BOARD_TOLERANCE, SONG_BOARD_NEIGHBOURS, SONG_BOARD_SIZE } from '../src/modules/leaderboard/consts';
 import {
   AdminBoardEntry,
   BOARD_KV_KEY,
   BoardEntry,
   BoardResponse,
   LeaderboardSubmission,
+  SongBoardResponse,
 } from '../src/modules/leaderboard/types';
 
 export interface LeaderboardDurableObjectEnv {
   LEADERBOARD_KV?: KVNamespace;
 }
 
-/** Rows older than this drop out of the board and their notes blobs are deleted. */
-export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
+/**
+ * How far back the global board on the main menu looks. Rows older than this stop being ranked
+ * there; they are not deleted, and the per-song boards keep them.
+ */
+export const GLOBAL_BOARD_WINDOW_MS = 14 * 24 * 60 * 60 * 1000;
+
+/**
+ * How long the sung frequency records are kept. The blobs are the only large thing stored — a row
+ * is a couple of hundred bytes, a blob up to 256 KB — and nothing reads them yet, so they are the
+ * part that expires. The rows themselves are kept indefinitely, which is what makes the per-song
+ * boards all-time.
+ */
+export const NOTES_RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 
 /** How many rows the projection keeps. Every accepted submission is stored regardless. */
 export const BOARD_SIZE = 50;
@@ -98,6 +110,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe ON records (client_id, song_id, name_normalized);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
+    // Covers all three per-song queries — the count, the rank, and the window — in the order they
+    // read. Rows are never deleted now, so these run over a table that only grows.
+    this.sql.exec(
+      `CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`,
+    );
     this.sql.exec(`
       CREATE TABLE IF NOT EXISTS notes (
         record_id TEXT PRIMARY KEY REFERENCES records (id),
@@ -197,13 +214,79 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
       .exec<RecordRow>(
         `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
          FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`,
-        Date.now() - RETENTION_MS,
-        MAX_QUALIFYING_TOLERANCE,
+        Date.now() - GLOBAL_BOARD_WINDOW_MS,
+        MAX_GLOBAL_BOARD_TOLERANCE,
         BOARD_SIZE,
       )
       .toArray();
 
     return { generatedAt: Date.now(), entries: rows.map(toBoardEntry) };
+  }
+
+  /**
+   * The board for one song at one difficulty, plus where a given score would land on it.
+   *
+   * Unlike {@link projection} this is read straight off the Durable Object — there is no KV
+   * projection to serve it from. A projection per (song, difficulty) would be thousands of KV
+   * values rewritten on every submission, and the read happens once per finished song rather than
+   * on every main-menu load, so the DO read is the cheaper side of that trade.
+   *
+   * All-time, with no date window: a song's board is not a leaderboard anyone races weekly, and
+   * cutting it to a fortnight would empty it for every song nobody happened to sing lately.
+   *
+   * Difficulty is an exact match, not `<=`: a wider pitch window is a different game, so Medium
+   * rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored.
+   */
+  songBoard(songId: string, tolerance: number, score: number | null): SongBoardResponse {
+    const total =
+      this.sql
+        .exec<{ count: number }>(
+          `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ?`,
+          songId,
+          tolerance,
+        )
+        .toArray()[0]?.count ?? 0;
+
+    // `>=`, not `>`: a submitted tie gets a later `created_at` and so sorts behind the row that got
+    // there first, which is the order the board itself would put it in. The cost is that a score
+    // already on the board is ranked one place below where it sits — the caller is asking where a
+    // score *would* land, and it is answered before the submission goes out.
+    const position =
+      score === null
+        ? null
+        : (this.sql
+            .exec<{ count: number }>(
+              `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ? AND score >= ?`,
+              songId,
+              tolerance,
+              score,
+            )
+            .toArray()[0]?.count ?? 0) + 1;
+
+    /*
+     * With a score to place, the window is the rows either side of it rather than the top of the
+     * board: `position` splits the table at index `position - 1`, so `SONG_BOARD_NEIGHBOURS` rows
+     * before that index are above the player and the same number from it are below. Being told you
+     * are 4,000th under a list of people you will never catch says nothing; your neighbours do.
+     */
+    const [offset, limit] =
+      position === null
+        ? [0, SONG_BOARD_SIZE]
+        : [Math.max(0, position - 1 - SONG_BOARD_NEIGHBOURS), SONG_BOARD_NEIGHBOURS * 2];
+
+    const rows = this.sql
+      .exec<RecordRow>(
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+         FROM records WHERE song_id = ? AND tolerance = ?
+         ORDER BY score DESC, created_at ASC LIMIT ? OFFSET ?`,
+        songId,
+        tolerance,
+        limit,
+        offset,
+      )
+      .toArray();
+
+    return { entries: rows.map(toBoardEntry), total, startPosition: offset + 1, position };
   }
 
   /** Every stored row, newest first, including ids. Authenticated admin use only. */
@@ -243,11 +326,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   }
 
   async alarm() {
-    const cutoff = Date.now() - RETENTION_MS;
+    const cutoff = Date.now() - NOTES_RETENTION_MS;
 
-    // Notes reference records, and SQLite enforces the foreign key — blobs go first
+    // Only the blobs expire. The rows stay: the per-song boards are all-time, and the global board
+    // does its own windowing in `projection()` rather than relying on rows being gone.
     this.sql.exec(`DELETE FROM notes WHERE record_id IN (SELECT id FROM records WHERE created_at < ?)`, cutoff);
-    this.sql.exec(`DELETE FROM records WHERE created_at < ?`, cutoff);
     this.sql.exec(`DELETE FROM notes WHERE record_id NOT IN (SELECT id FROM records)`);
 
     await this.rebuildProjection();
