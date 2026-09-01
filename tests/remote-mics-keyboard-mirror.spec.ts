@@ -290,3 +290,37 @@ test('Mirrors the calibration screen on the remote mic and adjusts input lag dir
     await pages.calibration.expectInputLagToBe('50');
   });
 });
+
+test('Mirrors the Jukebox screen on the remote mic and navigates back directly from it', async ({ browser, page }) => {
+  let remoteMic: RemoteMicPages;
+
+  await test.step('Connect a remote mic with control permission', async () => {
+    remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  });
+
+  await test.step('Open Jukebox on the host', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToJukebox();
+    await expect(page.getByTestId('jukebox-container')).toBeVisible();
+  });
+
+  const remoteMicMainPage = remoteMic!.remoteMicMainPage;
+  const skipControl = remoteMicMainPage.mirroredControl('skip-button');
+  const singControl = remoteMicMainPage.mirroredControl('sing-button');
+  // Jukebox has no on-screen back button - the remote-only control stands in for it.
+  const backControl = remoteMicMainPage.mirroredControl('jukebox-back');
+
+  await test.step('Remote mic shows the mirrored controls instead of the arrow keyboard', async () => {
+    await remoteMicMainPage.expectKeyboardModeToBe('mirror');
+    await expect(skipControl).toBeVisible();
+    await expect(singControl).toBeVisible();
+    await expect(backControl).toBeVisible();
+    await expect(remoteMicMainPage.arrowUpButton).toBeHidden();
+  });
+
+  await test.step('Tapping the remote-only back control returns to the main menu on the host', async () => {
+    await backControl.click();
+
+    await pages.mainMenuPage.waitForContainer();
+  });
+});
