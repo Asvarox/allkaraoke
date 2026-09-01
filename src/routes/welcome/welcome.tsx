@@ -19,6 +19,7 @@ function Welcome() {
 
   const navigate = useSmoothNavigate();
   const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
+  const jukeboxEnabled = useFeatureFlag(FeatureFlags.Jukebox);
 
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav({ title: 'Main Menu' });
@@ -53,9 +54,11 @@ function Welcome() {
           <NavButton name="settings" remoteIcon="settings" onClick={() => navigate('settings/')}>
             Settings
           </NavButton>
-          <NavButton name="jukebox" onClick={() => navigate('jukebox/')}>
-            Jukebox
-          </NavButton>
+          {jukeboxEnabled && (
+            <NavButton name="jukebox" onClick={() => navigate('jukebox/')}>
+              Jukebox
+            </NavButton>
+          )}
           <NavButton name="history" onClick={() => navigate('history/')}>
             History
           </NavButton>
