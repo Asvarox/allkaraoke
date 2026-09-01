@@ -172,7 +172,9 @@ export const useSongListFilter = (
   const filteredList = useMemo(
     () =>
       applyFilters(list, {
-        ...(playlist?.filters ?? {}),
+        // While a search is active the user searches the whole catalog (only hidden songs
+        // and excluded languages are dropped), regardless of which playlist is selected.
+        ...(isSearchApplied(deferredFilters) ? {} : (playlist?.filters ?? {})),
         ...deferredFilters,
         excludeLanguages: excludedLanguages ?? [],
         additionalSongs: additionalSong ? [additionalSong] : [],
