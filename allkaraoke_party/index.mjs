@@ -1,7 +1,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "eaebd18d0c305008a7a4f92647c03c2ff7e4a81e" };
+		e.SENTRY_RELEASE = { id: "1f8d7976fc8e9dcaf476dea3bfd085a3fb8ac483" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
@@ -10,7 +10,7 @@
 			return e;
 		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
 		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5002fe23-78e9-4b82-9d2c-e64bebf5a5bf", e._sentryDebugIdIdentifier = "sentry-dbid-5002fe23-78e9-4b82-9d2c-e64bebf5a5bf");
+		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "997a46a1-c9f3-4159-bf9b-e58b8de11960", e._sentryDebugIdIdentifier = "sentry-dbid-997a46a1-c9f3-4159-bf9b-e58b8de11960");
 	} catch (e) {}
 })();
 import { DurableObject } from "cloudflare:workers";
@@ -2367,7 +2367,7 @@ var validateSubmission = (payload) => {
 	if (submission.songLastUpdate !== null && submission.songLastUpdate !== void 0 && !isBoundedString(submission.songLastUpdate, 200)) return { message: "Invalid songLastUpdate" };
 	if (!Number.isInteger(submission.score)) return { message: "Invalid score" };
 	if (submission.score < QUALIFYING_SCORE || submission.score > 35e5) return { message: "Score out of range" };
-	if (!Number.isInteger(submission.tolerance) || submission.tolerance < 1 || submission.tolerance > 2) return { message: "Difficulty not eligible" };
+	if (!Number.isInteger(submission.tolerance) || submission.tolerance < 1 || submission.tolerance > 3) return { message: "Difficulty not eligible" };
 	if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength === 0) return { message: "Missing notes" };
 	let recordCount;
 	try {
@@ -2402,6 +2402,35 @@ var handleLeaderboardSubmit = async (request, env) => {
 	const result = await board.submit(submission, submission.notes);
 	if (result.accepted) await caches.default.delete(boardCacheKey(request));
 	return new Response(JSON.stringify(result), { headers: jsonHeaders });
+};
+/**
+* The board for one song at one difficulty, and the rank the caller's score would take on it.
+*
+* Unlike the global board this one ranks Easy too — a board split by difficulty has nothing to gain
+* from refusing the easy end of it.
+*
+* Served from the Durable Object rather than the KV projection and the Cache API that back
+* `GET /leaderboard`: there is one of these per (song, difficulty) rather than one in total, and the
+* `score` parameter differs on nearly every call, so an edge cache would miss more or less always.
+* The read happens once per finished song, which is orders of magnitude below main-menu loads.
+*/
+var handleSongLeaderboardRead = async (request, env) => {
+	if (request.method !== "GET") return error(405, "Method not allowed");
+	const board = getBoardStub(env);
+	if (!board) return error(500, "Leaderboard storage is not configured");
+	const params = new URL(request.url).searchParams;
+	const songId = params.get("songId");
+	if (!isBoundedString(songId, 128)) return error(400, "Invalid songId");
+	const tolerance = Number(params.get("tolerance"));
+	if (!Number.isInteger(tolerance) || tolerance < 1 || tolerance > 3) return error(400, "Invalid tolerance");
+	const rawScore = params.get("score");
+	const score = rawScore === null ? null : Math.round(Number(rawScore));
+	if (score !== null && (!Number.isFinite(score) || score < 0 || score > 35e5)) return error(400, "Invalid score");
+	const result = await board.songBoard(songId, tolerance, score);
+	return new Response(JSON.stringify(result), { headers: {
+		...jsonHeaders,
+		"Cache-Control": "private, max-age=30"
+	} });
 };
 var handleLeaderboardRead = async (request, env) => {
 	if (request.method !== "GET") return error(405, "Method not allowed");
@@ -2456,8 +2485,18 @@ var handleLeaderboardAdmin = async (request, env) => {
 };
 //#endregion
 //#region worker/leaderboard-do.ts
-/** Rows older than this drop out of the board and their notes blobs are deleted. */
-var RETENTION_MS = 12096e5;
+/**
+* How far back the global board on the main menu looks. Rows older than this stop being ranked
+* there; they are not deleted, and the per-song boards keep them.
+*/
+var GLOBAL_BOARD_WINDOW_MS = 12096e5;
+/**
+* How long the sung frequency records are kept. The blobs are the only large thing stored — a row
+* is a couple of hundred bytes, a blob up to 256 KB — and nothing reads them yet, so they are the
+* part that expires. The rows themselves are kept indefinitely, which is what makes the per-song
+* boards all-time.
+*/
+var NOTES_RETENTION_MS = 12096e5;
 var ALARM_INTERVAL_MS = 864e5;
 /**
 * Trimmed, casefolded, whitespace-collapsed. Part of the dedupe key, so a player who re-sings a
@@ -2509,6 +2548,7 @@ var LeaderboardBoard = class extends DurableObject {
 		this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe ON records (client_id, song_id, name_normalized);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
+		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`);
 		this.sql.exec(`
       CREATE TABLE IF NOT EXISTS notes (
         record_id TEXT PRIMARY KEY REFERENCES records (id),
@@ -2555,10 +2595,37 @@ var LeaderboardBoard = class extends DurableObject {
 	*/
 	projection() {
 		const rows = this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`, Date.now() - RETENTION_MS, 2, 50).toArray();
+         FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`, Date.now() - GLOBAL_BOARD_WINDOW_MS, 2, 50).toArray();
 		return {
 			generatedAt: Date.now(),
 			entries: rows.map(toBoardEntry)
+		};
+	}
+	/**
+	* The board for one song at one difficulty, plus where a given score would land on it.
+	*
+	* Unlike {@link projection} this is read straight off the Durable Object — there is no KV
+	* projection to serve it from. A projection per (song, difficulty) would be thousands of KV
+	* values rewritten on every submission, and the read happens once per finished song rather than
+	* on every main-menu load, so the DO read is the cheaper side of that trade.
+	*
+	* All-time, with no date window: a song's board is not a leaderboard anyone races weekly, and
+	* cutting it to a fortnight would empty it for every song nobody happened to sing lately.
+	*
+	* Difficulty is an exact match, not `<=`: a wider pitch window is a different game, so Medium
+	* rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored.
+	*/
+	songBoard(songId, tolerance, score) {
+		const total = this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ?`, songId, tolerance).toArray()[0]?.count ?? 0;
+		const position = score === null ? null : (this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ? AND score >= ?`, songId, tolerance, score).toArray()[0]?.count ?? 0) + 1;
+		const [offset, limit] = position === null ? [0, 20] : [Math.max(0, position - 1 - 25), 50];
+		return {
+			entries: this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+         FROM records WHERE song_id = ? AND tolerance = ?
+         ORDER BY score DESC, created_at ASC LIMIT ? OFFSET ?`, songId, tolerance, limit, offset).toArray().map(toBoardEntry),
+			total,
+			startPosition: offset + 1,
+			position
 		};
 	}
 	/** Every stored row, newest first, including ids. Authenticated admin use only. */
@@ -2587,9 +2654,8 @@ var LeaderboardBoard = class extends DurableObject {
 		return { entries: this.projection().entries.length };
 	}
 	async alarm() {
-		const cutoff = Date.now() - RETENTION_MS;
+		const cutoff = Date.now() - NOTES_RETENTION_MS;
 		this.sql.exec(`DELETE FROM notes WHERE record_id IN (SELECT id FROM records WHERE created_at < ?)`, cutoff);
-		this.sql.exec(`DELETE FROM records WHERE created_at < ?`, cutoff);
 		this.sql.exec(`DELETE FROM notes WHERE record_id NOT IN (SELECT id FROM records)`);
 		await this.rebuildProjection();
 		await this.ctx.storage.setAlarm(Date.now() + ALARM_INTERVAL_MS);
@@ -2630,6 +2696,7 @@ var worker_entry_default = { fetch(request, env, executionContext) {
 	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$6, request, env, executionContext);
 	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$7, request, env, executionContext);
 	if (pathname === "/leaderboard") return request.method === "GET" ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
+	if (pathname === "/leaderboard-song") return handleSongLeaderboardRead(request, env);
 	if (pathname === "/leaderboard-admin") return handleLeaderboardAdmin(request, env);
 	if (pathname === "/proxy") return callPagesHandler(onRequest$4, request, env, executionContext);
 	if (pathname === "/stry-tunnel") return callPagesHandler(onRequest$3, request, env, executionContext);
