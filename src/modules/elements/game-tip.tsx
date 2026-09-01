@@ -30,9 +30,6 @@ const data = [
     If the game feels a bit jaggy with low FPS, check out <strong>Settings</strong> page
   </>,
   <>
-    Party is only getting started? Play <strong>Jukebox</strong> for the music and to see what songs are available
-  </>,
-  <>
     Research shows that <strong>duet songs</strong> are that bit more fun than simple one-track ones
   </>,
   <>
