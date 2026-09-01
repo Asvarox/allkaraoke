@@ -39,27 +39,8 @@ function ScoreboardRow({
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
 
-  // Not `Element.scrollIntoView`: that walks every scrollable ancestor, and the whole page is one of
-  // them here. The list this row sits in is its own parent, so scrolling that directly is enough.
-  //
-  // Re-run whenever the list resizes: the panel takes its height from what the rest of the step
-  // leaves over, so on the first paint the list is often shorter than it ends up, and centring
-  // against that height lands the row near the top.
   useEffect(() => {
-    const row = ref.current;
-    const list = row?.parentElement;
-    if (!scrollIntoView || !row || !list) return;
-
-    const centre = () => {
-      list.scrollTop = row.offsetTop - list.offsetTop - (list.clientHeight - row.clientHeight) / 2;
-    };
-
-    centre();
-
-    const observer = new ResizeObserver(centre);
-    observer.observe(list);
-
-    return () => observer.disconnect();
+    if (scrollIntoView) ref.current?.scrollIntoView({ block: 'center' });
   }, [scrollIntoView]);
 
   return (

@@ -67,7 +67,7 @@ function LeaderboardSharePanel({ register, leaderboard }: Props) {
       <Menu.HelpText>
         {reachesGlobalBoard
           ? 'This score goes on the global leaderboard as:'
-          : `This score goes on this song's ${difficulty} leaderboard — not the global one — as:`}
+          : `This score goes on this song's ${difficulty} leaderboard as:`}
       </Menu.HelpText>
 
       <LeaderboardIdentityFields

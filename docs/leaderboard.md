@@ -146,7 +146,7 @@ do. With no score to place there is nothing to centre on, so the response is the
 `SONG_BOARD_SIZE` instead.
 
 The panel then slots the run just sung into that window as a row of its own, ringed with the same
-`subtle-focus` inset the focused controls elsewhere carry, and scrolls it to the middle of the list.
+`subtle-focus` inset the focused controls elsewhere carry, and scrolls it into view.
 The row is synthetic — the score has usually not been submitted yet, and nothing refetches after it
 has. The ranks still come out right: the rows above the insertion keep theirs, and the ones below are
 pushed down by exactly the one row that joined them.
@@ -163,16 +163,9 @@ is "not the global one". The heading is about where the scores come from — thi
 and the subtitle under it scopes the board ("This song · Easy · all time · 121 scores"), but it is a
 wording collision worth knowing about.
 
-Side by side, the two panels split the width evenly (`basis-0`) and share a height (`h-full` under an
-`items-stretch` row), so they read as one thing split in two rather than two widgets that happen to
-be adjacent. They span the full content width, lining up with the share panel and the tip below them,
-and the step never scrolls.
-
-Stacked, below `lg`, they do **not** divide the leftover height. There is not enough of it: a phone
-in landscape gave each board about a hundred pixels and their headings collided with the panel below,
-and leaving them to size themselves is worse still — the global board's fifty rows take the whole
-column and the local board collapses to its heading. Each takes a fixed few rows (`max-h-[18rem]`)
-instead, and the page scrolls, which is the natural thing to do on a phone anyway.
+The two boards are side by side from tablet up (`md`) and stacked on a phone, splitting the width
+evenly (`basis-0`) when they are side by side. They span the full content width, lining up with the
+share panel and the tip below them.
 
 The list fades out at its bottom edge, so a row the panel ran out of room for reads as more below
 rather than as a row that failed to draw. The fade falls on empty space, and so is invisible, when
@@ -180,14 +173,16 @@ everything fits.
 
 `ScoreboardPanel` and `ScoreboardRow` are used by **all three** boards — the local high scores, the
 song's global board, and the global board on the main menu — so a board looks like a board wherever
-it turns up. Sizing and padding are the caller's, passed as `className`: Tailwind classes of the same
-property do not merge through `clsx`, so nothing a caller might override can live in the base.
+it turns up. Loading, failed and empty are the panel's states too: every board reaches them, and
+three copies of the same skeleton is three places to forget one. Width and padding are the caller's,
+passed as `className`, since Tailwind classes of the same property do not merge through `clsx`.
 
-The local board fills any height it has left over with placeholder rows (`ScoreboardPanel`'s `fill`).
-Only five scores are ever kept per song, so without them the list trails off into empty panel beside
-a global board that fills its own. How many fit is measured rather than assumed — the height is
-whatever the step left over and the row height comes from the rows — and placeholders are excluded
-from that measurement so they cannot feed back into it.
+Every board's list is a fixed five-rows tall and scrolls past that. Fixed rather than fitted to what
+is left over: the post-game step has the least room of the three screens, and a board that grows into
+whatever is going spare there pushes the button that moves on off the bottom.
+
+The local board pads out to that same five rows with placeholder rows, so a device with fewer scores
+still stands as tall as the global board beside it.
 
 **The keyboard-help overlay overlaps the global board.** It is fixed to the top-right of every screen
 and shown by default (`KeyboardHelpVisibilitySetting`), and the high-scores step is the only one

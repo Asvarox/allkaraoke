@@ -4,7 +4,7 @@ import { HighScoreEntity, SingSetup, Song } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
-import ScoreboardPanel, { POST_GAME_SCOREBOARD_CLASS } from '~/modules/scoreboard/scoreboard-panel';
+import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
 import ScoreboardRow, { ScoreboardPlaceholderRow } from '~/modules/scoreboard/scoreboard-row';
 import { useEditScore } from '~/modules/songs/stats/hooks';
 import LeaderboardPrompt from '~/routes/game/singing/post-game/views/leaderboard/leaderboard-prompt';
@@ -13,6 +13,15 @@ import SongLeaderboardPanel from '~/routes/game/singing/post-game/views/leaderbo
 import useLeaderboardPostGame from '~/routes/game/singing/post-game/views/leaderboard/use-leaderboard-post-game';
 
 import HighScoreRename from './high-score-rename';
+
+/**
+ * The two boards, side by side from tablet up and stacked below it. Their own height is
+ * `ScoreboardPanel`'s; this only says how they share the width.
+ */
+const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:flex-1 md:basis-0';
+
+/** How many rows the local board pads out to, so it stands as tall as the global one beside it. */
+const LOCAL_SCOREBOARD_ROWS = 5;
 
 interface Props {
   onNextStep: () => void;
@@ -38,21 +47,13 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
 
   return (
     <>
-      {/* The two boards sit side by side once there is room for two columns; below that the global
-          one follows the local one. Full width, so the pair lines up with the share panel and the
-          tip under them rather than stopping short of both. The keyboard-help overlay is fixed over
-          the top-right of every screen (`help-view.tsx`) and this step is the only one whose content
-          reaches that corner, so the top rows of the global board sit under it. */}
-      <div className="flex flex-col items-start gap-3 lg:min-h-0 lg:flex-1 lg:flex-row lg:items-stretch lg:gap-6">
+      {/* Side by side from tablet up, stacked on a phone. Full width, so the pair lines up with the
+          share panel and the tip under them rather than stopping short of both. */}
+      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6">
         <ScoreboardPanel
-          className={POST_GAME_SCOREBOARD_CLASS}
+          className={SCOREBOARD_CLASS}
           title="Local scoreboard"
           subtitle="This song · this device"
-          // Only five scores are ever kept per song, so on a tall screen the list would trail off
-          // into empty panel next to a global board that fills its own
-          fill={(index) => (
-            <ScoreboardPlaceholderRow key={`placeholder-${index}`} position={highScores.length + index + 1} />
-          )}
           data-test="highscores-container">
           {highScores.map((score, index) => {
             const isCurrentRun = score.singSetupId === singSetup.id;
@@ -83,8 +84,17 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
               />
             );
           })}
+          {/* A device with fewer scores than this still stands as tall as the global board beside it */}
+          {Array.from({ length: Math.max(0, LOCAL_SCOREBOARD_ROWS - highScores.length) }, (_, index) => (
+            <ScoreboardPlaceholderRow key={`placeholder-${index}`} position={highScores.length + index + 1} />
+          ))}
         </ScoreboardPanel>
-        <SongLeaderboardPanel song={song} singSetup={singSetup} leaderboard={leaderboard} />
+        <SongLeaderboardPanel
+          song={song}
+          singSetup={singSetup}
+          leaderboard={leaderboard}
+          className={SCOREBOARD_CLASS}
+        />
       </div>
       <LeaderboardSharePanel register={register} leaderboard={leaderboard} />
       <div className="mt-auto">

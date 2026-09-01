@@ -2,21 +2,18 @@ import { useMemo } from 'react';
 import useSWR from 'swr';
 
 import { SingSetup, Song } from '~/interfaces';
-import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { fetchSongBoard, songBoardUrl } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
 import { BoardEntry } from '~/modules/leaderboard/types';
-import ScoreboardPanel, { POST_GAME_SCOREBOARD_CLASS } from '~/modules/scoreboard/scoreboard-panel';
+import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
 import { LeaderboardPostGame } from '~/routes/game/singing/post-game/views/leaderboard/use-leaderboard-post-game';
 
 interface Props {
   song: Song;
   singSetup: SingSetup;
   leaderboard: LeaderboardPostGame;
+  className?: string;
 }
-
-/** Enough to fill the column next to the local scores; the rest of the board scrolls. */
-const VISIBLE_ROWS = 6;
 
 /**
  * The global board for the song just sung, sitting beside the local high scores.
@@ -29,7 +26,7 @@ const VISIBLE_ROWS = 6;
  * Rendering does not depend on the score qualifying: a player who is nowhere near the board still
  * gets told where they would have landed, which is the only reason to show it to them at all.
  */
-function SongLeaderboardPanel({ song, singSetup, leaderboard }: Props) {
+function SongLeaderboardPanel({ song, singSetup, leaderboard, className }: Props) {
   const { songLeaderboardEnabled, hasLeaderboard, difficulty, score, name, country } = leaderboard;
 
   const shouldFetch = songLeaderboardEnabled && hasLeaderboard;
@@ -77,36 +74,26 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard }: Props) {
 
   return (
     <ScoreboardPanel
-      className={POST_GAME_SCOREBOARD_CLASS}
+      className={className}
       title="Global scoreboard"
       // The count the removed "of N" sentence used to carry — the player's own row says the rest
       subtitle={`This song · ${difficulty} · all time${data ? ` · ${data.total + 1} scores` : ''}`}
+      isLoading={isLoading}
+      error={error}
+      isEmpty={rows.length === 0}
+      emptyMessage="Nobody has shared a score for this song yet"
       data-test="song-leaderboard-panel">
-      {isLoading &&
-        Array.from({ length: VISIBLE_ROWS }, (_, index) => <Skeleton key={index} className="h-12 w-full rounded-xl" />)}
-      {!isLoading && error && (
-        <p className="typography text-sm opacity-70" data-test="song-leaderboard-error">
-          Failed to load results
-        </p>
-      )}
-      {/* Only with no score to place — one that lands on an empty board is shown as its first row */}
-      {!isLoading && !error && rows.length === 0 && (
-        <p className="typography text-sm opacity-70" data-test="song-leaderboard-empty">
-          Nobody has shared a score for this song yet
-        </p>
-      )}
-      {!error &&
-        rows.map(({ entry, isPlayer }, index) => (
-          <LeaderboardRow
-            key={`${entry.name}-${entry.score}-${index}`}
-            entry={entry}
-            position={(data?.startPosition ?? 1) + index}
-            withSongDetails={false}
-            highlighted={isPlayer}
-            scrollIntoView={isPlayer}
-            data-test={isPlayer ? 'song-leaderboard-own-row' : 'song-leaderboard-row'}
-          />
-        ))}
+      {rows.map(({ entry, isPlayer }, index) => (
+        <LeaderboardRow
+          key={`${entry.name}-${entry.score}-${index}`}
+          entry={entry}
+          position={(data?.startPosition ?? 1) + index}
+          withSongDetails={false}
+          highlighted={isPlayer}
+          scrollIntoView={isPlayer}
+          data-test={isPlayer ? 'song-leaderboard-own-row' : 'song-leaderboard-row'}
+        />
+      ))}
     </ScoreboardPanel>
   );
 }

@@ -110,6 +110,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe ON records (client_id, song_id, name_normalized);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
+    // Covers all three per-song queries — the count, the rank, and the window — in the order they
+    // read. Rows are never deleted now, so these run over a table that only grows.
+    this.sql.exec(
+      `CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`,
+    );
     this.sql.exec(`
       CREATE TABLE IF NOT EXISTS notes (
         record_id TEXT PRIMARY KEY REFERENCES records (id),

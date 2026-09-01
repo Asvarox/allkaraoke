@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { ComponentProps, ReactNode, useEffect, useState } from 'react';
+import { ComponentProps, ReactNode, useEffect, useRef, useState } from 'react';
 import { expect, userEvent } from 'storybook/test';
 
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
@@ -57,7 +57,9 @@ const boardEntries = (count: number, tolerance: number, startPosition: number, s
     return {
       name: `${names[rank % names.length][0]} ${rank}`,
       country: names[rank % names.length][1],
-      score: Math.max(1, score + (SONG_BOARD_NEIGHBOURS - index) * 4_000),
+      // `- 1` so the row at the insertion point is strictly below the player, the way a
+      // submitted tie would be
+      score: Math.max(1, score + (SONG_BOARD_NEIGHBOURS - index) * 4_000 - 1),
       artist: song.artist,
       title: song.title,
       songId: song.id,
@@ -75,12 +77,19 @@ const boardEntries = (count: number, tolerance: number, startPosition: number, s
  * of a decorator wrapping it would run.
  */
 function StubbedSongBoard({ args, children }: { args: StoryArgs; children: ReactNode }) {
+  // The stub is installed once, but Storybook's controls change `args` on every render — so it reads
+  // them through a ref rather than closing over the ones it was mounted with
+  const latestArgs = useRef(args);
+  latestArgs.current = args;
+
   const [original] = useState(() => {
     const previous = window.fetch;
 
     window.fetch = (input, init) => {
       const url = String(input instanceof Request ? input.url : input);
       if (!url.includes('/leaderboard-song')) return previous(input, init);
+
+      const args = latestArgs.current;
 
       if (args.boardResponse === 'loading') return new Promise<Response>(() => {});
       if (args.boardResponse === 'error') return Promise.resolve(new Response('nope', { status: 500 }));
