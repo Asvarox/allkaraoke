@@ -36,10 +36,6 @@ export class MainMenuPagePO {
     await this.page.getByTestId('settings').click();
   }
 
-  public async goToJukebox() {
-    await this.page.getByTestId('jukebox').click();
-  }
-
   public async goToHistory() {
     await this.page.getByTestId('history').click();
   }

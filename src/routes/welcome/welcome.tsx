@@ -19,6 +19,8 @@ function Welcome() {
 
   const navigate = useSmoothNavigate();
   const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
+  // Experiment: hiding the Jukebox entry point to see whether it changes how many songs people sing.
+  const jukeboxHidden = useFeatureFlag(FeatureFlags.HideJukebox);
 
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav({ title: 'Main Menu' });
@@ -53,9 +55,11 @@ function Welcome() {
           <NavButton name="settings" remoteIcon="settings" onClick={() => navigate('settings/')}>
             Settings
           </NavButton>
-          <NavButton name="jukebox" onClick={() => navigate('jukebox/')}>
-            Jukebox
-          </NavButton>
+          {!jukeboxHidden && (
+            <NavButton name="jukebox" onClick={() => navigate('jukebox/')}>
+              Jukebox
+            </NavButton>
+          )}
           <NavButton name="history" onClick={() => navigate('history/')}>
             History
           </NavButton>
