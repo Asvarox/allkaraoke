@@ -1,0 +1,598 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Troy)
+#TITLE:Wouldn’t You Like
+#CREATOR:Andore
+#BPM:387,6
+#YEAR:2024
+#VIDEO:v=1lke4HP4j8o
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:10333,808049535604
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-troy-wouldnt-you-like
+#ALLKARAOKE_SID:6237
+#ALLKARAOKE_LASTUPDATE:2026-09-01T02:54:34.553Z
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:188
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Troy) - Wouldn’t You Like.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Troy) - Wouldn’t You Like [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Troy) - Wouldn’t You Like [BG].jpg
+#END:173000
+: 26 9 7 I 
+: 39 8 1 must 
+: 52 8 0 say
+- 60
+: 76 2 0 What 
+: 81 2 3 a 
+: 85 2 3 bril
+: 88 7 3 liant 
+: 101 6 3 speech 
+: 108 4 2 you 
+: 115 10 -3 gave
+- 125
+F 131 2 -11 Who 
+F 135 4 -11 goes 
+F 142 4 -11 there?
+- 146
+: 161 5 7 Just
+: 169 2 6 ~ 
+: 175 3 2 a 
+: 184 12 0 friend
+- 196
+: 211 2 0 Who 
+: 216 2 2 could 
+: 219 4 3 help 
+: 227 4 3 you 
+: 234 5 3 save 
+: 241 5 2 your 
+: 251 7 -3 men
+- 258
+: 268 2 -5 A 
+: 273 3 -5 foe 
+: 278 7 2 like 
+: 289 6 -5 Cir
+: 299 3 -5 ce 
+: 306 2 2 not 
+: 312 2 2 to 
+: 315 3 2 be 
+: 320 5 2 messed 
+: 330 3 -5 with
+- 333
+: 338 3 0 You 
+: 343 3 0 want 
+: 347 3 0 to 
+: 352 3 0 beat 
+: 359 5 0 her?
+- 364
+: 369 4 0 You’ll 
+: 376 4 0 need 
+: 383 2 -1 the 
+: 387 6 -1 bles
+: 397 2 -2 sing 
+: 401 2 -3 of 
+: 405 2 -2 a 
+: 410 6 0 cert
+: 417 3 -2 ain 
+: 422 6 0 god
+- 428
+: 443 1 0 Di
+: 445 5 0 vine 
+: 452 2 0 inter
+: 457 7 0 vent
+: 466 2 0 ion
+- 468
+: 478 3 0 Some
+: 482 3 0 one 
+: 488 5 0 who’s 
+: 496 3 0 not 
+: 507 1 -4 a
+: 509 4 -4 fraid 
+: 518 7 -5 to
+- 525
+: 538 3 8 Send 
+: 542 2 6 a 
+: 546 5 -12 mess
+: 553 6 -12 age
+- 559 572
+- 572
+F 598 3 0 Her
+F 602 6 1 mes?
+- 608 664
+- 664
+: 690 5 -3 Wouldn’t 
+: 697 3 0 you 
+: 703 7 0 like 
+: 712 2 0 a 
+: 716 7 0 taste 
+: 726 3 0 of 
+: 732 2 0 the 
+: 736 7 0 pow
+: 745 5 2 er?
+- 750
+: 754 4 0 Wouldn’t 
+: 759 3 0 you 
+: 763 10 0 like 
+: 775 2 0 to 
+: 780 4 0 use 
+: 787 3 0 more 
+: 792 3 -2 than 
+: 798 1 0 words?
+: 800 8 2 ~
+- 808
+: 816 6 0 Deep 
+: 824 1 0 in 
+: 826 2 0 the 
+: 830 8 0 night 
+: 839 1 -2 the 
+: 844 4 0 fight 
+: 851 7 0 lasts 
+: 860 2 -2 for 
+: 863 3 0 hours
+: 867 6 -2 ~
+- 873
+: 877 2 0 You 
+: 882 3 0 can 
+: 887 5 -2 be 
+: 895 4 2 hurt 
+: 904 2 -2 or 
+: 908 3 0 you 
+: 914 3 0 can 
+: 919 5 -2 beat 
+: 926 6 2 her
+- 932
+: 942 7 -1 Wouldn’t 
+: 950 3 0 you 
+: 955 7 0 like 
+: 966 3 -2 to 
+: 971 4 0 have 
+: 978 3 0 some 
+: 982 2 0 of 
+: 986 2 0 the 
+: 990 3 0 ma
+: 997 5 2 gic?
+- 1002
+: 1006 6 0 Wouldn’t 
+: 1013 4 0 you 
+: 1020 6 0 like 
+: 1028 5 0 your 
+: 1035 3 0 out
+: 1041 5 0 come 
+: 1049 3 2 pre
+: 1054 6 2 ferred?
+- 1060
+: 1070 4 0 Deep 
+: 1077 2 0 in 
+: 1080 3 0 the 
+: 1084 6 0 night 
+: 1092 2 0 the 
+: 1097 4 0 fight 
+: 1104 2 0 can 
+: 1108 3 0 be 
+: 1114 3 0 tra
+: 1118 3 -2 ~
+: 1124 1 -2 gic
+- 1125
+: 1129 5 3 I’ll 
+: 1136 4 5 help 
+: 1144 1 5 you 
+: 1148 5 5 con
+: 1155 3 3 quer 
+: 1160 14 2 her
+- 1174
+* 1184 2 7 She 
+* 1187 2 9 can 
+* 1191 5 8 turn
+* 1197 6 10 ~ 
+* 1204 4 9 you 
+: 1211 6 7 to 
+: 1221 1 5 an 
+: 1225 5 7 an
+: 1231 4 5 i
+: 1239 9 0 mal
+- 1248
+: 1252 4 0 That’ll 
+: 1259 6 0 end 
+: 1267 3 -2 up 
+: 1274 4 0 on 
+: 1280 3 2 her 
+: 1286 9 0 plate
+- 1295
+: 1310 2 7 She 
+: 1314 2 9 can 
+: 1318 4 9 all
+: 1323 5 10 ~ 
+: 1330 4 9 but 
+: 1338 4 7 make 
+: 1346 3 5 you 
+: 1353 3 7 fall 
+: 1358 2 7 in 
+: 1366 2 1 love
+: 1369 4 0 ~
+- 1373
+: 1377 3 0 Like 
+: 1382 2 -1 you’re 
+: 1385 5 0 on 
+: 1391 7 -2 you’re 
+: 1401 4 10 hun
+: 1406 3 10 dred 
+: 1413 5 -7 date
+- 1418
+: 1440 2 7 She 
+: 1443 3 5 can 
+: 1449 6 7 con
+: 1456 6 5 jure 
+: 1464 4 7 up 
+: 1471 2 4 a 
+: 1476 4 3 mon
+: 1483 9 3 ster
+- 1492
+: 1504 5 -2 That’ll 
+: 1513 7 0 grind 
+: 1523 3 -2 you 
+: 1528 2 1 to 
+: 1531 2 2 the 
+: 1536 17 2 bones
+- 1553
+: 1564 3 5 She 
+: 1568 4 5 has 
+: 1575 4 8 all 
+: 1583 3 5 the 
+: 1588 8 7 ways 
+: 1599 3 6 to 
+: 1603 6 7 haunt 
+: 1611 7 7 ya
+- 1618
+: 1630 2 2 When 
+: 1633 2 2 you 
+: 1638 5 4 Take 
+: 1645 4 6 her 
+: 1652 4 6 on 
+: 1659 1 7 a
+* 1661 4 7 lone
+* 1667 6 9 ~
+* 1674 1 10 ~
+* 1676 2 9 ~
+* 1679 3 7 ~
+* 1683 2 10 ~
+* 1686 9 9 ~
+- 1695
+: 1703 6 2 Wouldn’t 
+: 1712 3 2 you 
+: 1718 3 2 like 
+: 1724 2 2 a 
+: 1729 5 2 taste 
+: 1737 4 2 of 
+: 1745 2 0 the 
+: 1749 7 0 pow
+: 1758 4 2 er?
+- 1762
+: 1766 6 2 Wouldn’t 
+: 1774 3 -5 you 
+: 1779 4 -5 like 
+: 1787 2 -5 to 
+: 1792 4 0 use 
+: 1798 4 0 more 
+: 1804 3 0 than 
+: 1813 7 2 words?
+- 1820
+: 1831 3 0 Deep 
+: 1835 3 0 in 
+: 1839 2 0 the 
+: 1842 7 0 night 
+: 1851 2 0 the 
+: 1854 5 0 fight 
+: 1862 6 0 lasts 
+: 1870 3 -2 for 
+: 1875 8 -2 hours
+- 1883
+: 1887 3 0 You 
+: 1894 3 0 can 
+: 1900 4 0 be 
+: 1908 4 2 hurt
+- 1912
+: 1916 2 0 Or 
+: 1919 3 0 you 
+: 1927 2 0 can 
+: 1932 3 0 beat 
+: 1939 8 2 her
+- 1947
+: 1955 5 0 Wouldn’t 
+: 1962 5 0 you 
+: 1970 6 0 like 
+: 1978 2 0 to 
+: 1981 4 0 have 
+: 1988 3 0 some 
+: 1994 5 0 other 
+: 2002 4 0 ma
+: 2009 5 0 gic?
+- 2014
+: 2018 6 0 Wouldn’t 
+: 2026 3 0 you 
+: 2031 7 0 like 
+: 2040 3 0 your 
+: 2044 5 0 out
+: 2054 5 0 come 
+: 2061 2 -5 pref
+: 2065 6 -5 referred?
+- 2071
+: 2082 4 0 Deep 
+: 2089 2 0 in 
+: 2092 3 0 the 
+: 2097 5 0 night 
+: 2104 2 0 the 
+: 2109 4 0 fight 
+: 2115 3 0 can 
+: 2119 5 0 be 
+: 2127 5 0 tra
+: 2134 3 0 gic
+- 2137
+: 2141 5 -7 I’ll 
+: 2148 4 -7 help 
+: 2155 3 -7 you 
+: 2160 5 2 con
+: 2167 4 2 quer 
+: 2173 11 2 her
+- 2184
+F 2195 4 7 Oh 
+F 2200 7 5 oh 
+F 2209 8 0 Oh 
+F 2219 7 7 oh
+- 2226 2230
+- 2230
+: 2256 3 2 Here 
+: 2261 3 3 in 
+: 2266 4 5 the 
+: 2272 4 3 root 
+: 2278 2 2 of 
+: 2282 2 0 this 
+: 2288 3 1 flow
+: 2292 2 0 er
+- 2294
+: 2298 4 -2 There 
+: 2303 5 -2 lies 
+: 2310 3 -2 such 
+: 2314 2 -3 a 
+: 2319 5 -2 pow
+: 2325 3 -3 er 
+: 2330 2 -5 to 
+: 2335 4 -3 take 
+: 2341 3 -5 her 
+: 2348 14 -3 on
+- 2362
+: 2382 3 3 You 
+: 2386 4 3 must 
+: 2392 2 5 con
+: 2395 6 3 sume 
+: 2404 3 2 and 
+: 2408 3 0 di
+: 2412 5 0 gest 
+: 2420 1 0 it
+- 2421
+: 2425 3 -2 Then 
+: 2430 3 0 you’ll 
+: 2435 4 -3 mani
+: 2444 5 -3 fest 
+: 2454 3 -3 a 
+: 2461 5 9 be
+: 2467 3 9 ing 
+: 2471 2 7 of 
+: 2478 3 2 your 
+: 2483 3 5 cre
+: 2487 6 5 a
+: 2494 11 3 tion
+- 2505
+: 2509 5 1 All 
+: 2516 3 0 you 
+: 2522 5 0 need’s
+: 2528 6 2 ~ 
+: 2536 4 0 im
+: 2541 1 -2 ag
+: 2543 5 -3 ~
+: 2549 3 -3 i
+: 2553 5 0 na
+: 2561 4 -2 tion
+- 2565
+: 2573 6 -5 Though 
+: 2580 3 -5 it’s 
+: 2588 4 -2 on
+: 2595 4 -2 ly 
+: 2604 3 -3 for 
+: 2608 3 -5 a 
+: 2613 6 -5 mo
+: 2621 7 -5 ment
+- 2628
+: 2636 3 -5 Till 
+: 2641 7 -5 you’ve 
+: 2651 5 0 beat
+: 2657 5 -2 en 
+: 2665 4 0 your 
+: 2672 4 2 op
+: 2678 7 3 pon
+: 2686 16 2 ent
+- 2702
+F 2718 1 -3 And 
+F 2720 2 -3 i 
+F 2725 2 -3 call 
+F 2730 2 -3 this 
+F 2737 5 -3 root
+- 2742
+F 2749 7 -5 Holy 
+F 2762 9 -5 Moly!
+- 2771 2818
+- 2818
+: 2844 3 1 Wouldn’t 
+: 2851 4 0 you 
+: 2857 4 0 like 
+: 2863 2 1 a 
+: 2868 6 1 taste 
+: 2877 3 0 of 
+: 2883 2 0 the 
+: 2888 7 0 pow
+: 2896 4 0 er?
+- 2900
+: 2905 6 0 Wouldn’t 
+: 2913 4 0 you 
+: 2920 4 0 like 
+: 2928 3 0 to 
+: 2932 4 0 use 
+: 2939 4 0 more 
+: 2944 3 0 than 
+: 2952 6 2 words?
+- 2958
+: 2968 4 0 Deep 
+: 2975 3 0 in 
+: 2979 2 0 the 
+: 2983 4 0 night 
+: 2990 2 0 the 
+: 2995 4 0 fight 
+: 3002 7 0 lasts 
+: 3011 2 0 for 
+: 3015 8 -2 hours
+- 3023
+: 3027 3 2 You 
+: 3033 3 0 can 
+: 3040 3 2 be 
+: 3046 5 2 hurt
+- 3051
+: 3055 2 0 Or 
+: 3059 3 0 you 
+: 3065 3 0 can 
+: 3072 4 2 beat 
+: 3078 5 2 her
+- 3083
+: 3094 8 0 Wouldn’t 
+: 3104 3 0 you 
+: 3109 5 0 like 
+: 3118 1 0 to 
+: 3120 5 0 have 
+: 3128 5 0 some 
+: 3135 4 0 other 
+: 3141 5 0 ma
+: 3149 4 0 gic?
+- 3153
+: 3157 6 0 Wouldn’t 
+: 3164 3 0 you 
+: 3170 6 0 like 
+: 3181 4 0 your 
+: 3186 3 0 out
+: 3192 6 0 come 
+: 3201 2 0 pre
+: 3205 6 0 ferred
+- 3211
+: 3221 5 0 Deep 
+: 3228 3 0 in 
+: 3232 2 0 the 
+: 3236 5 0 night 
+: 3244 1 0 the 
+: 3248 5 0 fight 
+: 3256 2 0 can 
+: 3260 3 0 be 
+: 3267 7 0 tra
+: 3276 1 0 gic
+- 3277
+: 3281 3 1 I’ll 
+: 3288 3 -3 help 
+: 3295 3 -3 you 
+: 3300 3 -2 con
+: 3308 3 -2 quer 
+: 3312 10 2 her
+- 3322 3327
+- 3327
+F 3353 4 1 Wouldn’t 
+F 3358 4 0 you 
+F 3363 4 0 like 
+F 3369 2 1 a 
+F 3372 6 1 taste 
+F 3380 3 0 of 
+F 3386 2 0 the 
+F 3392 9 0 pow
+F 3403 4 0 er?
+- 3407
+F 3414 6 0 Wouldn’t 
+F 3422 4 0 you 
+F 3429 4 0 like 
+F 3437 3 0 to 
+F 3441 4 0 use 
+F 3448 4 0 more 
+F 3453 3 0 than 
+F 3459 6 2 words?
+- 3465
+F 3476 4 0 Deep 
+F 3481 3 0 in 
+F 3485 2 0 the 
+F 3493 4 0 night 
+F 3498 2 0 the 
+F 3502 4 0 fight 
+F 3508 7 0 lasts 
+F 3519 2 0 for 
+F 3524 7 -2 hours
+- 3531
+F 3536 3 2 You 
+F 3542 3 0 can 
+F 3547 3 2 be 
+F 3553 8 2 hurt 
+F 3564 2 0 or 
+F 3568 3 0 you 
+F 3574 3 0 can 
+F 3578 4 2 beat 
+F 3584 7 2 her
+- 3591
+F 3601 8 0 Wouldn’t 
+F 3611 3 0 you 
+F 3616 5 0 like 
+F 3625 1 0 to 
+F 3627 5 0 have 
+F 3635 5 0 some 
+F 3642 4 0 other 
+F 3648 5 0 ma
+F 3654 5 0 gic?
+- 3659
+F 3665 6 0 Wouldn’t 
+F 3672 3 0 you 
+F 3678 6 0 like 
+F 3689 4 0 your 
+F 3694 3 0 out
+F 3698 6 0 come 
+F 3709 2 0 pre
+F 3713 6 0 ferred
+- 3719
+F 3727 5 0 Deep 
+F 3734 3 0 in 
+F 3738 2 0 the 
+F 3742 5 0 night 
+F 3750 1 0 the 
+F 3754 5 0 fight 
+F 3762 2 0 can 
+F 3766 3 0 be 
+F 3773 7 0 tra
+F 3782 2 0 gic
+- 3784
+F 3790 3 1 I’ll 
+F 3794 3 -3 help 
+F 3801 3 -3 you 
+F 3806 3 -2 con
+F 3814 3 -2 quer 
+F 3818 14 2 her
+- 3832 3859
+- 3859
+F 3885 2 2 Her
+F 3888 8 2 mes
+- 3896 3907
+- 3907
+F 3933 4 -3 Thank 
+F 3939 3 -2 you
+- 3942
+F 3967 4 3 Don’t 
+F 3977 4 5 thank 
+F 3986 3 2 me 
+F 3994 9 2 friend
+- 4003
+: 4007 2 -2 You 
+: 4012 7 2 very 
+: 4023 5 2 well 
+: 4030 5 -2 may 
+: 4040 13 0 die
+- 4053 4076
+- 4076
+F 4102 3 -7 Good 
+F 4106 6 -4 luck
+E
