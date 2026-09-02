@@ -70,7 +70,9 @@ function LeaderboardPanel({ className }: { className?: string }) {
     <Box className={`w-full items-stretch gap-4 p-4 sm:p-7 ${className ?? ''}`} data-test="leaderboard-panel">
       <Menu.Header as="h2">Global leaderboard</Menu.Header>
       <Menu.HelpText className="-mt-4">Highest scores from the last 14 days</Menu.HelpText>
-      <div className="flex max-h-[26rem] flex-col gap-1 overflow-y-auto">
+      {/* Capped so the board can't push the rest of a scrolling page down — except in the main menu's
+          full-height rail (`lg`), where it takes whatever room is left instead of stopping short. */}
+      <div className="flex max-h-[26rem] flex-col gap-1 overflow-y-auto lg:max-h-none lg:min-h-0 lg:flex-1">
         {isLoading &&
           Array.from({ length: VISIBLE_ROWS }, (_, index) => (
             <Skeleton key={index} className="h-12 w-full rounded-xl" />

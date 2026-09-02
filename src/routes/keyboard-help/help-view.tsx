@@ -16,55 +16,66 @@ import { RegularHelpEntry } from './context';
 
 interface Props {
   help: RegularHelpEntry;
+  placement?: 'corner' | 'inline';
 }
 
-export default function KeyboardHelpView({ help }: Props) {
+/**
+ * One row per key the active screen responds to, plus the Shift+H row that is always true. Rendered
+ * by the floating `KeyboardHelpView` and, on screens that place the help themselves, directly.
+ */
+export function KeyboardHelpList({ help }: { help: RegularHelpEntry }) {
+  // Only keys there is actually a renderer for. `HelpEntry` also carries remote-mic-only metadata
+  // (title, icon, mirrored controls) which the provider strips out — but this renders at the app
+  // root, so an unrecognised key reaching the lookup below would throw and take the whole UI down
+  // with it. Skipping unknown keys keeps that failure mode impossible.
+  const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
+
+  return (
+    <>
+      {helps.map(([type, label]) => {
+        const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
+        return (
+          <Section key={type}>
+            <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+            <SectionKeys>
+              <Component />
+            </SectionKeys>
+          </Section>
+        );
+      })}
+      <Section>
+        <SectionHelp>Show/hide this help</SectionHelp>
+        <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
+      </Section>
+    </>
+  );
+}
+
+export default function KeyboardHelpView({ help, placement = 'corner' }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [isVisible, setIsVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
 
+  // Registered here rather than next to the container it toggles: the shortcut has to keep working on
+  // screens that draw the list themselves, where this component renders nothing at all.
   useHotkeys('shift+h', () => setIsVisible(!isVisible), undefined, [isVisible]);
 
-  // Only keys this view actually has a renderer for. `HelpEntry` also carries remote-mic-only
-  // metadata (title, icon, mirrored controls) which the provider strips out — but this view sits at
-  // the app root, so an unrecognised key reaching the lookup below would throw and take the whole UI
-  // down with it. Skipping unknown keys keeps that failure mode impossible.
-  const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
   const hasHelp = Object.values(help ?? {}).some((value) => value !== undefined);
 
-  if (mobilePhoneMode) {
+  if (mobilePhoneMode || placement === 'inline') {
     return null;
   }
 
   return (
-    <>
-      <Container
-        data-test="help-container"
-        onClick={() => setIsVisible(!isVisible)}
-        data-visible={hasHelp && isVisible}>
-        {isVisible && (
-          <>
-            <UseKeyboardIndicator className="UseKeyboardIndicator">
-              Use indicated keys on your keyboard
-            </UseKeyboardIndicator>
-            {helps.map(([type, label]) => {
-              const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
-              return (
-                <Section key={type}>
-                  <SectionHelp>{label ?? defaultLabel}</SectionHelp>
-                  <SectionKeys>
-                    <Component />
-                  </SectionKeys>
-                </Section>
-              );
-            })}
-            <Section>
-              <SectionHelp>Show/hide this help</SectionHelp>
-              <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
-            </Section>
-          </>
-        )}
-      </Container>
-    </>
+    <Container data-test="help-container" onClick={() => setIsVisible(!isVisible)} data-visible={hasHelp && isVisible}>
+      {isVisible && (
+        <>
+          <UseKeyboardIndicator className="UseKeyboardIndicator">
+            Use indicated keys on your keyboard
+          </UseKeyboardIndicator>
+          <KeyboardHelpList help={help} />
+        </>
+      )}
+    </Container>
   );
 }
 

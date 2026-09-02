@@ -22,7 +22,7 @@ function setup(register: (nav: ReturnType<typeof useKeyboardNav>) => void) {
   };
   const wrapper: FunctionComponent<PropsWithChildren> = ({ children }) => (
     <KeyboardHelpContext
-      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false }}>
+      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false, help: {} }}>
       {children}
     </KeyboardHelpContext>
   );
@@ -67,7 +67,7 @@ function setupChildOwnedControl() {
 
   render(
     <KeyboardHelpContext
-      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false }}>
+      value={{ setKeyboard: record, updateKeyboard: record, unsetKeyboard: () => {}, hasContent: false, help: {} }}>
       <Screen />
     </KeyboardHelpContext>,
   );
