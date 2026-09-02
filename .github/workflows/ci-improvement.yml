@@ -63,7 +63,13 @@ jobs:
       # Must run before the build: the preview server that serves the E2E suite reads the
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
-        run: cp .dev.vars.example .dev.vars
+        # The Realtime app credentials are stripped rather than merely absent from the example:
+        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
+        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
+        # exercises the same room logic, host runtime and succession path over a local wire.
+        run: |
+          cp .dev.vars.example .dev.vars
+          sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
         run: pnpm build
       - name: Run E2E tests
@@ -192,7 +198,13 @@ jobs:
       # Must run before the build: the preview server that serves the E2E suite reads the
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
-        run: cp .dev.vars.example .dev.vars
+        # The Realtime app credentials are stripped rather than merely absent from the example:
+        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
+        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
+        # exercises the same room logic, host runtime and succession path over a local wire.
+        run: |
+          cp .dev.vars.example .dev.vars
+          sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
@@ -367,6 +379,11 @@ jobs:
           BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
           slug=$(printf '%s' "$BRANCH_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//' | cut -c1-40 | sed -E 's/-+$//')
+          # A branch name with no lowercase alphanumerics normalises to nothing, and `pr-` alone is
+          # not a valid DNS label — the deploy would fail before the app is even built.
+          if [ -z "$slug" ]; then
+            slug=$(printf '%s' "$BRANCH_NAME" | sha256sum | cut -c1-12)
+          fi
           echo "name=pr-${slug}" >> "$GITHUB_OUTPUT"
       - name: Deploy PartyKit online room (preview)
         env:
@@ -380,7 +397,9 @@ jobs:
         run: pnpm exec partykit deploy --preview ${{ steps.preview.outputs.name }} --domain online.allkaraoke.party
       - name: Build app
         env:
-          # Points the build at the preview PartyKit room deployed above, instead of production
+          # Points the build at the preview PartyKit room deployed above, instead of production.
+          # P2P rooms need no equivalent — their signaling is part of the Worker deployed below and
+          # the client reaches it same-origin.
           VITE_APP_ONLINE_PARTYKIT_URL: wss://${{ steps.preview.outputs.name }}.online.allkaraoke.party
         run: pnpm build
         shell: bash

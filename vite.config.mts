@@ -126,6 +126,7 @@ export default defineConfig({
               kvNamespaces: ['SHARED_SONGS_KV', 'LEADERBOARD_KV'],
               durableObjects: {
                 LEADERBOARD_BOARD: { className: 'LeaderboardBoard', useSQLite: true },
+                ONLINE_DIRECTORY: { className: 'OnlineDirectory', useSQLite: true },
               },
               bindings: {
                 ADMIN_PANEL_PASSWORD: 'admin-password',

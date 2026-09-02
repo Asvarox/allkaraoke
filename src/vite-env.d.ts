@@ -5,6 +5,8 @@ declare namespace globalThis {
   var isE2ETests: boolean | undefined;
   /** Set by `enableLeaderboard` in tests/helpers.ts — the e2e stand-in for the PostHog flag. */
   var isE2ELeaderboard: boolean | undefined;
+  /** Opts a spec into the server-authoritative online mode; e2e runs P2P otherwise. */
+  var isE2EOnlineServerMode: boolean | undefined;
   /** Set by `enableSongLeaderboard` in tests/helpers.ts — the e2e stand-in for the PostHog flag. */
   var isE2ESongLeaderboard: boolean | undefined;
 

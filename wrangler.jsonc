@@ -29,6 +29,13 @@
 				"name": "LEADERBOARD_BOARD",
 				"class_name": "LeaderboardBoard",
 			},
+			{
+				// Online mode's room directory: who is in a room, which SFU slot channel they own,
+				// and who is hosting. Touched on join/leave/promote and a 5-minute keepalive only —
+				// the message path runs host-to-client over the Realtime SFU and never reaches here.
+				"name": "ONLINE_DIRECTORY",
+				"class_name": "OnlineDirectory",
+			},
 		],
 	},
 	"migrations": [
@@ -36,6 +43,12 @@
 			"tag": "v1",
 			"new_sqlite_classes": [
 				"LeaderboardBoard"
+			],
+		},
+		{
+			"tag": "v2",
+			"new_sqlite_classes": [
+				"OnlineDirectory"
 			],
 		},
 	],
@@ -72,4 +85,15 @@
 	// Production: set via `wrangler secret put ADMIN_PANEL_PASSWORD`
 	// Local dev: add to .dev.vars (gitignored), e.g. UNVERIFIED_SONGS_ADMIN_TOKEN=your-local-token
 	// Local dev: add to .dev.vars (gitignored), e.g. ADMIN_PANEL_PASSWORD=your-local-admin-password
+	//
+	// Online mode (Cloudflare Realtime SFU). REALTIME_APP_ID is not secret and could live in `vars`,
+	// but it is kept next to its token so the pair is configured in one place.
+	// Production: `wrangler secret put REALTIME_APP_ID` / `wrangler secret put REALTIME_APP_TOKEN`
+	// Local dev: add both to .dev.vars
+	//
+	// TURN is opt-in and only matters on networks that block UDP to the SFU. Either the Cloudflare
+	// Realtime TURN pair (REALTIME_TURN_KEY_ID / REALTIME_TURN_API_TOKEN — a separate key from the
+	// SFU app, used to mint short-lived per-client credentials), or a server of your own via
+	// ONLINE_TURN_URLS / ONLINE_TURN_USERNAME / ONLINE_TURN_CREDENTIAL. With neither, clients get
+	// STUN only, which needs no credentials and is what every local checkout uses.
 }
