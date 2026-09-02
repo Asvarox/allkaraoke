@@ -35,7 +35,7 @@ function MenuTile({ label, hint, badge, variant = 'secondary', className, ...pro
       // `[data-focused]` rule re-colours the hint: focus turns the whole tile orange, and a dimmed
       // white line on that is unreadable.
       className={twMerge(
-        "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left normal-case sm:px-6 sm:py-5 [&[data-focused='true']_[data-hint]]:text-black/60",
+        "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left sm:px-6 sm:py-5 [&[data-focused='true']_[data-hint]]:text-black/60",
         className,
       )}>
       <span className="flex w-full min-w-0 flex-col items-start gap-1 sm:gap-2">
@@ -45,7 +45,7 @@ function MenuTile({ label, hint, badge, variant = 'secondary', className, ...pro
         <span
           data-hint
           className={twMerge(
-            'mobile:hidden w-full truncate font-normal tracking-widest opacity-70',
+            'mobile:hidden w-full truncate font-normal tracking-widest normal-case opacity-70',
             primary ? 'text-sm' : 'text-xs',
           )}>
           {hint}
