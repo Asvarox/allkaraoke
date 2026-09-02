@@ -4,7 +4,6 @@ import { Badge } from '~/modules/elements/akui/badge';
 import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
-import useJukeboxHidden from '~/modules/hooks/use-jukebox-hidden';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
@@ -29,17 +28,10 @@ function Welcome() {
   // Asked here as well as inside the panel: with the board off there is no rail, and the tiles should
   // take the width back rather than sit next to an empty column.
   const leaderboardEnabled = useLeaderboardEnabled();
-  // Experiment: hiding the Jukebox entry point to see whether it changes how many songs people sing.
-  const jukeboxHidden = useJukeboxHidden();
 
   useBackgroundMusic(/* true */ false);
   // Tiles sit in a grid, so all four arrows navigate by position — see `handleSpatialNavigation`.
-  // `inline` moves the key list into the footer, out of the corner the leaderboard rail now occupies.
-  const { register } = useKeyboardNav({
-    title: 'Main Menu',
-    direction: 'horizontal-vertical',
-    additionalHelp: { placement: 'inline' },
-  });
+  const { register } = useKeyboardNav({ title: 'Main Menu', direction: 'horizontal-vertical' });
 
   return (
     <LayoutGame>
@@ -61,14 +53,16 @@ function Welcome() {
         {/* The utility icons the design puts next to the logo are the app-wide `Toolbar`, which is
             already fixed to this corner (see `layout-game.tsx`) — hence the reserved space on the right. */}
         <header className="flex shrink-0 items-center justify-between gap-6 pr-32">
-          <div className="mobile:text-3xl text-4xl">
+          {/* The logo is sized in `em`, so this is its whole scale. Capped at the size the design
+              asks for and kept proportional to the viewport below that, or it runs off a phone. */}
+          <div className="text-[min(13vw,5.25rem)]">
             <Logo />
           </div>
         </header>
 
         <div
           className={`grid min-h-0 flex-1 gap-4 lg:gap-6 ${
-            leaderboardEnabled ? 'lg:grid-cols-[minmax(0,1fr)_26rem]' : ''
+            leaderboardEnabled ? 'lg:grid-cols-[minmax(0,1fr)_32rem]' : ''
           }`}>
           <div className="mobile:gap-3 flex min-h-0 flex-col gap-4 lg:gap-6">
             <KeyboardNavContext value={register}>
@@ -80,7 +74,7 @@ function Welcome() {
                   name="sing-a-song"
                   variant="primary"
                   label="Sing a song"
-                  hint="Start your performance"
+                  hint="Sing solo or start a party"
                   remoteIcon="play"
                   onClick={() => navigate('game/')}
                 />
@@ -96,10 +90,7 @@ function Welcome() {
                   />
                 )}
               </div>
-              <div className="mobile:gap-3 grid flex-1 grid-cols-2 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
-                {!jukeboxHidden && (
-                  <MenuTile name="jukebox" label="Jukebox" hint="Browse & queue" onClick={() => navigate('jukebox/')} />
-                )}
+              <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 <MenuTile
                   name="select-input"
                   label="Setup Microphones"

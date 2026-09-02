@@ -10,5 +10,4 @@ export const FeatureFlags = {
   OnlineMode: 'online_mode',
   Leaderboard: 'leaderboard',
   SongLeaderboard: 'song_leaderboard',
-  HideJukebox: 'hide_jukebox',
 } as const;

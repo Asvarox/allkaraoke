@@ -16,66 +16,55 @@ import { RegularHelpEntry } from './context';
 
 interface Props {
   help: RegularHelpEntry;
-  placement?: 'corner' | 'inline';
 }
 
-/**
- * One row per key the active screen responds to, plus the Shift+H row that is always true. Rendered
- * by the floating `KeyboardHelpView` and, on screens that place the help themselves, directly.
- */
-export function KeyboardHelpList({ help }: { help: RegularHelpEntry }) {
-  // Only keys there is actually a renderer for. `HelpEntry` also carries remote-mic-only metadata
-  // (title, icon, mirrored controls) which the provider strips out — but this renders at the app
-  // root, so an unrecognised key reaching the lookup below would throw and take the whole UI down
-  // with it. Skipping unknown keys keeps that failure mode impossible.
-  const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
-
-  return (
-    <>
-      {helps.map(([type, label]) => {
-        const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
-        return (
-          <Section key={type}>
-            <SectionHelp>{label ?? defaultLabel}</SectionHelp>
-            <SectionKeys>
-              <Component />
-            </SectionKeys>
-          </Section>
-        );
-      })}
-      <Section>
-        <SectionHelp>Show/hide this help</SectionHelp>
-        <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
-      </Section>
-    </>
-  );
-}
-
-export default function KeyboardHelpView({ help, placement = 'corner' }: Props) {
+export default function KeyboardHelpView({ help }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const [isVisible, setIsVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
 
-  // Registered here rather than next to the container it toggles: the shortcut has to keep working on
-  // screens that draw the list themselves, where this component renders nothing at all.
   useHotkeys('shift+h', () => setIsVisible(!isVisible), undefined, [isVisible]);
 
+  // Only keys this view actually has a renderer for. `HelpEntry` also carries remote-mic-only
+  // metadata (title, icon, mirrored controls) which the provider strips out — but this view sits at
+  // the app root, so an unrecognised key reaching the lookup below would throw and take the whole UI
+  // down with it. Skipping unknown keys keeps that failure mode impossible.
+  const helps = Object.entries(help ?? {}).filter(([type, value]) => value !== undefined && type in KeyhelpComponent);
   const hasHelp = Object.values(help ?? {}).some((value) => value !== undefined);
 
-  if (mobilePhoneMode || placement === 'inline') {
+  if (mobilePhoneMode) {
     return null;
   }
 
   return (
-    <Container data-test="help-container" onClick={() => setIsVisible(!isVisible)} data-visible={hasHelp && isVisible}>
-      {isVisible && (
-        <>
-          <UseKeyboardIndicator className="UseKeyboardIndicator">
-            Use indicated keys on your keyboard
-          </UseKeyboardIndicator>
-          <KeyboardHelpList help={help} />
-        </>
-      )}
-    </Container>
+    <>
+      <Container
+        data-test="help-container"
+        onClick={() => setIsVisible(!isVisible)}
+        data-visible={hasHelp && isVisible}>
+        {isVisible && (
+          <>
+            <UseKeyboardIndicator className="UseKeyboardIndicator">
+              Use indicated keys on your keyboard
+            </UseKeyboardIndicator>
+            {helps.map(([type, label]) => {
+              const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
+              return (
+                <Section key={type}>
+                  <SectionKeys>
+                    <Component />
+                  </SectionKeys>
+                  <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+                </Section>
+              );
+            })}
+            <Section>
+              <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
+              <SectionHelp>Show/hide this help</SectionHelp>
+            </Section>
+          </>
+        )}
+      </Container>
+    </>
   );
 }
 
@@ -115,17 +104,21 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
   alphanumeric: { view: Alphanumeric, defaultLabel: 'Search' },
 };
 
-const Section = twc.div`flex items-center gap-4`;
+// One entry per column - its keys on top, what they do underneath - so the panel reads as a strip of
+// keys rather than a list of sentences, and stays short enough to sit in a corner.
+const Section = twc.div`flex min-w-0 flex-col items-center gap-2 text-center`;
 
-const SectionKeys = twc.div`flex-2 flex-nowrap text-center font-bold text-white`;
+const SectionKeys = twc.div`flex-nowrap text-center font-bold text-white`;
 
-const SectionHelp = twc(Typography)`text-md flex-3 text-right`;
+const SectionHelp = twc(Typography)`text-center text-sm text-balance`;
 
 const UseKeyboardIndicator = twc(
   Typography,
 )`text-md invisible absolute inset-0 flex items-center justify-center bg-black/75 p-8 text-white opacity-0 duration-300 hover:visible hover:opacity-100`;
 
 const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
-  `fixed top-[5rem] right-0 z-1000 w-[28rem] scale-75 cursor-pointer items-stretch gap-4 p-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
+  // Bottom right, laid out as a row: a panel of its own in the corner, rather than a column of text
+  // down the side of whatever screen is up. `w-auto` so it is only as wide as its entries.
+  `fixed right-2 bottom-2 z-1000 w-auto max-w-[calc(100vw-1rem)] scale-90 cursor-pointer flex-row! items-start justify-end gap-6 px-4 py-3 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
   props['data-visible'] ? 'mobile:hidden flex' : 'hidden',
 ]);

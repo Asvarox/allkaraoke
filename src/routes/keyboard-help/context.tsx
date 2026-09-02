@@ -38,13 +38,6 @@ export type HelpEntry = RegularHelpEntry & {
    * it is at a glance (e.g. a pause glyph for the pause menu); defaults to a generic keyboard icon.
    */
   icon?: RemoteButtonIcon;
-  /**
-   * Where the on-screen key list is drawn. `corner` (the default) is the floating panel pinned to the
-   * top right. `inline` suppresses it because the screen draws the list somewhere of its own — the
-   * main menu puts it above its footer toggle, where the corner panel would sit on top of the
-   * leaderboard rail.
-   */
-  placement?: 'corner' | 'inline';
 };
 
 type KeyboardsList = Record<string, HelpEntry>;
@@ -86,17 +79,17 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
     RemoteMicServer.publish('keyboard-layout', help);
   }, [name, help]);
 
-  // `title`/`icon` are metadata for the remote-mic header only, and `placement` only says where the
-  // list is drawn — keep all three out of `rest` so they never leak into the key list (which renders
-  // one row per key and has no view for any of them), nor inflate its `hasContent` check.
-  const { mode, remote, controls, title, icon, placement, ...rest } = help ?? {};
+  // `title`/`icon` are metadata for the remote-mic header only — keep them out of `rest` so they
+  // never leak into the on-screen `KeyboardHelpView` (which renders one row per key and has no view
+  // for either), nor inflate its `hasContent` check.
+  const { mode, remote, controls, title, icon, ...rest } = help ?? {};
 
   const hasContent = !!Object.values(rest).length;
 
   return (
-    <KeyboardHelpContext value={{ setKeyboard, updateKeyboard, unsetKeyboard, hasContent, help: rest }}>
+    <KeyboardHelpContext value={{ setKeyboard, updateKeyboard, unsetKeyboard, hasContent }}>
       {children}
-      <KeyboardHelpView help={rest} placement={placement} />
+      <KeyboardHelpView help={rest} />
       <ConnectionStatus />
     </KeyboardHelpContext>
   );
