@@ -56,7 +56,10 @@ function PostGameView({
 
   return (
     <SongPage songData={song} width={width} height={height}>
-      <div className="flex flex-1 flex-col gap-2" data-test={dataTest}>
+      {/* `min-h-0` so a step whose content is taller than the page shrinks inside it rather than
+          growing past the bottom — a flex item defaults to `min-height: auto` and will not. The
+          high-scores step relies on it: its boards give up height so the button stays on screen. */}
+      <div className="flex min-h-0 flex-1 flex-col gap-2" data-test={dataTest}>
         {step === 'results' && (
           <ResultsView
             onNextStep={() => (highScoresEnabled ? setStep('highscores') : onClickSongSelection())}

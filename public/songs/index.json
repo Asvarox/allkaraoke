@@ -5234,6 +5234,36 @@
     "local": false
   },
   {
+    "id": "ajr-bang",
+    "title": "BANG!",
+    "artist": "AJR",
+    "video": "4THFRpw68oQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 7012.142857142857,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:26:13.537Z",
+    "genre": "Alternative, Indie",
+    "realBpm": 140,
+    "previewStart": 36,
+    "previewEnd": 76,
+    "volume": 0.95,
+    "author": "DoubleDee",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6240,
+    "tracksCount": 1,
+    "search": "ajrbang",
+    "local": false
+  },
+  {
     "id": "ajr-bummerland",
     "title": "Bummerland",
     "artist": "AJR",
@@ -5274,7 +5304,7 @@
     "gap": 8278.249018249018,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:22.811Z",
+    "lastUpdate": "2026-08-28T12:02:09.037Z",
     "realBpm": 176,
     "previewStart": 43,
     "previewEnd": 70,
@@ -7008,6 +7038,35 @@
     "local": false
   },
   {
+    "id": "alexandra-burke-hallelujah",
+    "title": "Hallelujah",
+    "artist": "Alexandra Burke",
+    "video": "aplWTXEcY70",
+    "language": [
+      "English"
+    ],
+    "bpm": 218.12,
+    "gap": 6898.457729690079,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-31T06:54:53.075Z",
+    "realBpm": 183,
+    "volume": 1,
+    "author": "suseH",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=155232",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=22888",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6226,
+    "tracksCount": 1,
+    "search": "alexandraburkehallelujah",
+    "local": false
+  },
+  {
     "id": "alexandros-senkou",
     "title": "Senkou",
     "artist": "[Alexandros]",
@@ -7418,6 +7477,35 @@
     "shortId": 193,
     "tracksCount": 1,
     "search": "aliciakeysnoone",
+    "local": false
+  },
+  {
+    "id": "alien-ant-farm-smooth-criminal",
+    "title": "Smooth Criminal",
+    "artist": "Alien Ant Farm",
+    "video": "CDl9ZMfj6aE",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.85,
+    "gap": 14645.469765609612,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:22:19.489Z",
+    "edition": "[SC]-Songs",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "Alien Ant Farm",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6230,
+    "tracksCount": 1,
+    "search": "alienantfarmsmoothcriminal",
     "local": false
   },
   {
@@ -8368,6 +8456,33 @@
     "shortId": 219,
     "tracksCount": 1,
     "search": "alvvaysarchiemarryme",
+    "local": false
+  },
+  {
+    "id": "aly-aj-chemicals-react",
+    "title": "Chemicals React",
+    "artist": "Aly & AJ",
+    "video": "l3cQUeGWcf0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7620,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:25:56.983Z",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "jalkazar",
+    "duration": 182,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6239,
+    "tracksCount": 1,
+    "search": "alyajchemicalsreact",
     "local": false
   },
   {
@@ -10313,7 +10428,7 @@
     "gap": 14054.082840236686,
     "year": "2018",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-30T02:49:26.242Z",
+    "lastUpdate": "2026-08-28T12:03:58.724Z",
     "realBpm": 122,
     "volume": 0.54,
     "author": "haistshomie666",
@@ -12029,6 +12144,34 @@
     "shortId": 322,
     "tracksCount": 1,
     "search": "arianagrandegreedy",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-hate-that-i-made-you-love-me",
+    "title": "Hate That I Made You Love Me",
+    "artist": "Ariana Grande",
+    "video": "82-jTNka3uc",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 52134.375,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T06:56:30.390Z",
+    "genre": "Contemporary R&B, Pop",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 301,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6227,
+    "tracksCount": 1,
+    "search": "arianagrandehatethatimadeyouloveme",
     "local": false
   },
   {
@@ -27953,6 +28096,34 @@
     "local": false
   },
   {
+    "id": "bronski-beat-smalltown-boy-single-version",
+    "title": "Smalltown Boy (Single Version)",
+    "artist": "Bronski Beat",
+    "video": "8PGppDW8kD0",
+    "language": [
+      "English"
+    ],
+    "bpm": 268.8,
+    "gap": 13705.535714285714,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-08-31T20:23:29.457Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Buberatz",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=8524",
+    "duration": 304,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6234,
+    "tracksCount": 1,
+    "search": "bronskibeatsmalltownboysingleversion",
+    "local": false
+  },
+  {
     "id": "brooks-dunn-boot-scootin-boogie",
     "title": "Boot Scootin’ Boogie",
     "artist": "Brooks & Dunn",
@@ -33195,7 +33366,7 @@
     "gap": 30487.5,
     "year": "1993",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-08-30T02:49:16.028Z",
+    "lastUpdate": "2026-08-27T18:25:37.305Z",
     "genre": "Folk-Rock Latino",
     "videoGap": 4,
     "realBpm": 200,
@@ -36790,7 +36961,7 @@
     "gap": -42.882232811436324,
     "year": "1982",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-08-30T02:49:26.241Z",
+    "lastUpdate": "2026-08-28T12:03:37.417Z",
     "genre": "Rock",
     "realBpm": 93,
     "volume": 1,
@@ -41221,7 +41392,7 @@
     "gap": 17595.42500820479,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:30.775Z",
+    "lastUpdate": "2026-08-28T12:06:43.455Z",
     "genre": "Pop",
     "realBpm": 101,
     "volume": 1,
@@ -45136,6 +45307,33 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-all-die-ganzen-jahre",
+    "title": "All die ganzen Jahre",
+    "artist": "Die Toten Hosen",
+    "video": "CynbhjMY4J0",
+    "language": [
+      "German"
+    ],
+    "bpm": 240,
+    "gap": 12950,
+    "year": "1990",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-31T20:22:49.744Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6232,
+    "tracksCount": 1,
+    "search": "dietotenhosenalldieganzenjahre",
+    "local": false
+  },
+  {
     "id": "die-toten-hosen-heute-hier-morgen-dort",
     "title": "Heute hier, morgen dort",
     "artist": "Die Toten Hosen",
@@ -45205,7 +45403,7 @@
     "gap": 4905.294117647059,
     "year": "2002",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-30T02:49:14.310Z",
+    "lastUpdate": "2026-08-27T18:22:48.329Z",
     "realBpm": 115,
     "volume": 1,
     "author": "Canni",
@@ -47375,7 +47573,7 @@
     "bpm": 218.75,
     "gap": 85590,
     "year": "1998",
-    "lastUpdate": "2026-08-30T02:49:30.629Z",
+    "lastUpdate": "2026-08-28T12:06:04.831Z",
     "genre": "Soundtrack",
     "realBpm": 130,
     "volume": 1,
@@ -52650,6 +52848,32 @@
     "local": false
   },
   {
+    "id": "edoardo-bennato-gianna-nannini-unestate-italiana",
+    "title": "Un’estate italiana",
+    "artist": "Edoardo Bennato & Gianna Nannini",
+    "video": "N2ANAqO1TLs",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 235.7,
+    "gap": 20501.756470089094,
+    "year": "1989",
+    "lastUpdate": "2026-08-31T20:27:26.400Z",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "RES",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6243,
+    "tracksCount": 1,
+    "search": "edoardobennatogiannananniniunestateitaliana",
+    "local": false
+  },
+  {
     "id": "edurne-siempre-es-navidad-junto-a-ti",
     "title": "Siempre es Navidad junto a ti",
     "artist": "Edurne",
@@ -56328,7 +56552,7 @@
     "bpm": 397.54,
     "gap": 26831.234592745383,
     "year": "2024",
-    "lastUpdate": "2026-08-30T02:49:21.465Z",
+    "lastUpdate": "2026-08-27T20:41:14.155Z",
     "genre": "Musical",
     "realBpm": 135,
     "volume": 1,
@@ -56403,6 +56627,60 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-teagan-earley-warrior-of-the-mind",
+    "title": "Warrior Of The Mind",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Teagan Earley)",
+    "video": "_N15ek-uTl0",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 9487.5,
+    "year": "2024",
+    "lastUpdate": "2026-08-31T20:27:54.223Z",
+    "genre": "Musical",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6244,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransteaganearleywarriorofthemind",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-troy-wouldnt-you-like",
+    "title": "Wouldn’t You Like",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Troy)",
+    "video": "1lke4HP4j8o",
+    "language": [
+      "English"
+    ],
+    "bpm": 387.6,
+    "gap": 10333.808049535604,
+    "year": "2024",
+    "lastUpdate": "2026-08-31T20:24:44.440Z",
+    "genre": "Musical",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 188,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6237,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranstroywouldntyoulike",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-teagan-earley-luke-holt-cast-of-epic-god-games",
     "title": "God Games",
     "artist": "EPIC: The Musical (Teagan Earley, Luke Holt, Cast of EPIC)",
@@ -56413,7 +56691,7 @@
     "bpm": 300,
     "gap": 5700,
     "year": "2024",
-    "lastUpdate": "2026-08-30T02:49:13.780Z",
+    "lastUpdate": "2026-08-27T18:22:20.159Z",
     "genre": "Musical",
     "realBpm": 110,
     "volume": 1,
@@ -60120,6 +60398,36 @@
     "local": false
   },
   {
+    "id": "finch-wenn-du-dumm-bist",
+    "title": "WENN DU DUMM BiST",
+    "artist": "FiNCH",
+    "video": "FoD0rTRGaNE",
+    "language": [
+      "German"
+    ],
+    "bpm": 340.2,
+    "gap": 8965.890652557318,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:26:32.434Z",
+    "genre": "Rap",
+    "realBpm": 170,
+    "previewEnd": 34,
+    "volume": 1,
+    "author": "Mircosoft93",
+    "sourceUrl": "https://www.youtube.com/watch?v=FoD0rTRGaNE",
+    "duration": 165,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6241,
+    "tracksCount": 1,
+    "search": "finchwenndudummbist",
+    "local": false
+  },
+  {
     "id": "finger-eleven-paralyzer",
     "title": "Paralyzer",
     "artist": "Finger Eleven",
@@ -63754,7 +64062,7 @@
     "bpm": 260,
     "gap": 52949.230769230766,
     "year": "2017",
-    "lastUpdate": "2026-08-30T02:49:29.712Z",
+    "lastUpdate": "2026-08-28T12:05:35.136Z",
     "genre": "Trance",
     "realBpm": 200,
     "volume": 1,
@@ -65844,7 +66152,7 @@
     "gap": 173.78052518647178,
     "year": "2018",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-08-30T02:49:17.522Z",
+    "lastUpdate": "2026-08-27T20:36:05.501Z",
     "realBpm": 156,
     "volume": 1,
     "author": "daggeg",
@@ -68348,6 +68656,37 @@
     "shortId": 4903,
     "tracksCount": 1,
     "search": "gorillazplasticbeach",
+    "local": false
+  },
+  {
+    "id": "gosia-andrzejewicz-pozwol-zyc",
+    "title": "Pozwól żyć",
+    "artist": "Gosia Andrzejewicz",
+    "video": "vZjAam9UOqE",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 304,
+    "gap": 11023.157894736842,
+    "year": "2006",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-08-31T20:22:35.896Z",
+    "realBpm": 76,
+    "previewStart": 58,
+    "previewEnd": 99,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=887",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6231,
+    "tracksCount": 1,
+    "search": "gosiaandrzejewiczpozwolzyc",
     "local": false
   },
   {
@@ -75862,7 +76201,7 @@
     "gap": 10526.815286624204,
     "year": "2023",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-30T02:49:17.525Z",
+    "lastUpdate": "2026-08-27T20:36:19.302Z",
     "realBpm": 155,
     "volume": 1,
     "author": "Viktor1234678",
@@ -77803,7 +78142,7 @@
     "gap": 51574.163568773234,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:18.819Z",
+    "lastUpdate": "2026-08-27T20:38:26.764Z",
     "genre": "Heavy Metal",
     "realBpm": 127,
     "volume": 1,
@@ -85231,7 +85570,7 @@
     "gap": 25813.535714285714,
     "year": "1999",
     "artistOrigin": "IT",
-    "lastUpdate": "2026-08-30T02:49:18.969Z",
+    "lastUpdate": "2026-08-27T20:39:58.224Z",
     "realBpm": 112,
     "volume": 1,
     "author": "Jovanotti",
@@ -91216,7 +91555,7 @@
     "gap": 40693.85131358301,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:14.418Z",
+    "lastUpdate": "2026-08-27T18:23:06.229Z",
     "realBpm": 177,
     "volume": 1,
     "author": "mg",
@@ -98249,6 +98588,37 @@
     "local": false
   },
   {
+    "id": "laufey-madwoman",
+    "title": "Madwoman",
+    "artist": "Laufey",
+    "video": "R_J3pz33Qwc",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 15598.620689655172,
+    "year": "2026",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-08-31T17:13:59.633Z",
+    "genre": "Jazz",
+    "realBpm": 87,
+    "previewStart": 78,
+    "previewEnd": 100,
+    "volume": 1,
+    "author": "LuMM04",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=32236",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6228,
+    "tracksCount": 1,
+    "search": "laufeymadwoman",
+    "local": false
+  },
+  {
     "id": "laura-pausini-en-cambio-no",
     "title": "En cambio no",
     "artist": "Laura Pausini",
@@ -99906,7 +100276,7 @@
     "gap": 24254.002064249773,
     "year": "2019",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:13.770Z",
+    "lastUpdate": "2026-08-27T18:21:57.143Z",
     "genre": "Pop",
     "realBpm": 154,
     "volume": 1,
@@ -100230,7 +100600,7 @@
     "gap": 23165.62194179758,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:16.210Z",
+    "lastUpdate": "2026-08-27T18:27:05.930Z",
     "realBpm": 98,
     "volume": 1,
     "author": "haistshomie666",
@@ -102230,7 +102600,7 @@
     "gap": 328.73730964467006,
     "year": "2016",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:16.214Z",
+    "lastUpdate": "2026-08-27T20:34:31.256Z",
     "realBpm": 126,
     "volume": 1,
     "author": "Sing-Girl",
@@ -102488,6 +102858,35 @@
     "shortId": 2626,
     "tracksCount": 1,
     "search": "lmfaosorryforpartyrocking",
+    "local": false
+  },
+  {
+    "id": "local-natives-mt-washington",
+    "title": "Mt. Washington",
+    "artist": "Local Natives",
+    "video": "mN-CqIytN2U",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.6,
+    "gap": 12355.94278283485,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T17:14:18.549Z",
+    "genre": "Indie Rock",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "Double D",
+    "sourceUrl": "https://www.youtube.com/watch?v=3sUQvjFsavg",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6229,
+    "tracksCount": 1,
+    "search": "localnativesmtwashington",
     "local": false
   },
   {
@@ -103492,7 +103891,7 @@
     "gap": 15547.491805361453,
     "year": "2007",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-30T02:49:14.536Z",
+    "lastUpdate": "2026-08-27T18:23:49.279Z",
     "genre": "Rock",
     "realBpm": 314.84,
     "volume": 1,
@@ -103727,7 +104126,7 @@
     "gap": 29777.157894736843,
     "year": "2004",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-08-30T02:49:15.930Z",
+    "lastUpdate": "2026-08-27T18:25:05.234Z",
     "genre": "Rock",
     "videoGap": 5,
     "realBpm": 228,
@@ -105030,6 +105429,36 @@
     "shortId": 2687,
     "tracksCount": 1,
     "search": "maanamkochamciekochaniemoje",
+    "local": false
+  },
+  {
+    "id": "maanam-raz-dwa-raz-dwa",
+    "title": "Raz dwa raz dwa",
+    "artist": "Maanam",
+    "video": "GhhaKVefQrQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 268.16,
+    "gap": 8643.138424821002,
+    "year": "1984",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-08-31T20:24:06.931Z",
+    "genre": "Rock",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30372",
+    "duration": 129,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6236,
+    "tracksCount": 1,
+    "search": "maanamrazdwarazdwa",
     "local": false
   },
   {
@@ -112670,7 +113099,7 @@
     "gap": 14346.062992125984,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:20.816Z",
+    "lastUpdate": "2026-08-27T20:40:25.658Z",
     "edition": "ESC 2025",
     "genre": "Pop",
     "realBpm": 127,
@@ -117180,7 +117609,7 @@
     "gap": 20996.412719891745,
     "year": "2014",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:16.219Z",
+    "lastUpdate": "2026-08-27T20:35:07.537Z",
     "genre": "Emo",
     "realBpm": 185,
     "previewStart": 85,
@@ -118468,7 +118897,7 @@
     "gap": 20361.59663865546,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:15.929Z",
+    "lastUpdate": "2026-08-27T18:24:03.875Z",
     "genre": "Rock",
     "realBpm": 169,
     "volume": 0.94,
@@ -121390,7 +121819,7 @@
     "bpm": 228.6,
     "gap": 29.448818897637807,
     "year": "2006",
-    "lastUpdate": "2026-06-30T07:26:33.185Z",
+    "lastUpdate": "2026-08-31T20:25:29.549Z",
     "genre": "Urban",
     "realBpm": 113,
     "volume": 1,
@@ -122500,7 +122929,7 @@
     "bpm": 234.3,
     "gap": 18075.672215108836,
     "year": "1986",
-    "lastUpdate": "2026-08-30T02:49:26.244Z",
+    "lastUpdate": "2026-08-28T12:04:16.235Z",
     "genre": "Disco",
     "realBpm": 200,
     "volume": 1,
@@ -125529,7 +125958,7 @@
     "gap": 34437.74020716752,
     "year": "2017",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:20.814Z",
+    "lastUpdate": "2026-08-27T20:40:10.271Z",
     "genre": "Rock",
     "realBpm": 168,
     "volume": 1,
@@ -131660,7 +132089,7 @@
     "gap": 18886.486486486487,
     "year": "1962",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:30.963Z",
+    "lastUpdate": "2026-08-29T22:27:45.188Z",
     "realBpm": 94,
     "volume": 1,
     "author": "Canni",
@@ -136982,7 +137411,7 @@
     "gap": 18889.89898989899,
     "year": "2001",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-30T02:49:22.812Z",
+    "lastUpdate": "2026-08-28T12:03:03.737Z",
     "realBpm": 190,
     "volume": 1,
     "author": "purgatorio",
@@ -142612,7 +143041,7 @@
     "bpm": 288,
     "gap": 13800.416666666666,
     "year": "2025",
-    "lastUpdate": "2026-08-30T02:49:22.813Z",
+    "lastUpdate": "2026-08-28T12:03:19.792Z",
     "genre": "Ballermann",
     "realBpm": 144,
     "volume": 1,
@@ -143730,7 +144159,7 @@
     "gap": 70046.48648648648,
     "year": "2014",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:16.232Z",
+    "lastUpdate": "2026-08-27T20:35:19.411Z",
     "genre": "Rock",
     "realBpm": 111,
     "volume": 1,
@@ -146330,6 +146759,34 @@
     "shortId": 3835,
     "tracksCount": 1,
     "search": "secretgardennocturne",
+    "local": false
+  },
+  {
+    "id": "seeed-augenbling",
+    "title": "Augenbling",
+    "artist": "Seeed",
+    "video": "qttGJ3il62Y",
+    "language": [
+      "German",
+      "English"
+    ],
+    "bpm": 205,
+    "gap": 1325.6097560975609,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-08-31T20:25:15.843Z",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "Silverbeam,mancer",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6238,
+    "tracksCount": 1,
+    "search": "seeedaugenbling",
     "local": false
   },
   {
@@ -150551,6 +151008,36 @@
     "local": false
   },
   {
+    "id": "simple-plan-id-do-anything",
+    "title": "I’d Do Anything",
+    "artist": "Simple Plan",
+    "video": "H2M7zo8ZziE",
+    "language": [
+      "English"
+    ],
+    "bpm": 338,
+    "gap": 7229.289940828403,
+    "year": "2002",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-08-31T20:23:03.041Z",
+    "genre": "Punk",
+    "realBpm": 169,
+    "previewStart": 30,
+    "previewEnd": 45,
+    "volume": 1,
+    "author": "jdogk",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6233,
+    "tracksCount": 1,
+    "search": "simpleplaniddoanything",
+    "local": false
+  },
+  {
     "id": "simple-plan-im-just-a-kid",
     "title": "I’m Just A Kid",
     "artist": "Simple Plan",
@@ -152693,7 +153180,7 @@
     "gap": 14598.92857142857,
     "year": "2024",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-08-30T02:49:21.311Z",
+    "lastUpdate": "2026-08-27T20:40:52.435Z",
     "realBpm": 140,
     "volume": 1,
     "author": "Mamba99",
@@ -153078,7 +153565,7 @@
     "bpm": 260,
     "gap": 23265.23076923077,
     "year": "2003",
-    "lastUpdate": "2026-08-30T02:49:18.820Z",
+    "lastUpdate": "2026-08-27T20:39:14.396Z",
     "genre": "Thrashcore",
     "videoGap": 2,
     "realBpm": 130,
@@ -153192,7 +153679,7 @@
     "gap": 8757.42592456437,
     "year": "1998",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:30.962Z",
+    "lastUpdate": "2026-08-28T12:07:12.597Z",
     "genre": "Pop",
     "realBpm": 98,
     "volume": 1,
@@ -154381,6 +154868,37 @@
     "shortId": 4072,
     "tracksCount": 1,
     "search": "steviewonderijustcalledtosayiloveyou",
+    "local": false
+  },
+  {
+    "id": "stevie-wonder-isnt-she-lovely",
+    "title": "Isn’t She Lovely",
+    "artist": "Stevie Wonder",
+    "video": "oE56g61mW44",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.6,
+    "gap": 6279.898989898989,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:26:57.978Z",
+    "genre": "Soundtrack",
+    "realBpm": 237.6,
+    "volume": 1,
+    "author": "bohning",
+    "authorUrl": "https://www.youtube.com/channel/UCGD7CfG3JgZF52QpIRivV1Q",
+    "sourceUrl": "https://www.youtube.com/watch?v=oE56g61mW44",
+    "duration": 200,
+    "tracks": [
+      {
+        "name": "Isn't She Lovely",
+        "start": 16
+      }
+    ],
+    "shortId": 6242,
+    "tracksCount": 1,
+    "search": "steviewonderisntshelovely",
     "local": false
   },
   {
@@ -161812,7 +162330,7 @@
     "gap": 3631.935483870968,
     "year": "1968",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:31.188Z",
+    "lastUpdate": "2026-08-29T22:28:27.078Z",
     "realBpm": 96,
     "volume": 1,
     "author": "choosie",
@@ -164614,7 +165132,7 @@
     "gap": 26230,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:34.672Z",
+    "lastUpdate": "2026-08-29T22:33:36.201Z",
     "genre": "Soundtrack",
     "realBpm": 152,
     "volume": 1,
@@ -167846,7 +168364,7 @@
     "gap": 32.954545454545496,
     "year": "1992",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-08-30T02:49:29.711Z",
+    "lastUpdate": "2026-08-28T12:05:17.757Z",
     "realBpm": 142,
     "volume": 1,
     "author": "Fepo",
@@ -172504,7 +173022,7 @@
     "gap": 125.97402597402595,
     "year": "1993",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-30T02:49:17.520Z",
+    "lastUpdate": "2026-08-27T20:35:43.901Z",
     "genre": "R&B, Soul",
     "realBpm": 78,
     "volume": 1,
@@ -182247,7 +182765,7 @@
     "bpm": 390,
     "gap": 18356,
     "year": "2024",
-    "lastUpdate": "2026-08-30T02:49:31.189Z",
+    "lastUpdate": "2026-08-29T22:29:05.386Z",
     "genre": "Indie Pop",
     "realBpm": 97,
     "volume": 1,
@@ -182922,6 +183440,33 @@
     "shortId": 4792,
     "tracksCount": 1,
     "search": "zendayabellathornewatchme",
+    "local": false
+  },
+  {
+    "id": "zendaya-replay",
+    "title": "Replay",
+    "artist": "Zendaya",
+    "video": "cyLE48i4XY0",
+    "language": [
+      "English"
+    ],
+    "bpm": 373.23,
+    "gap": 16295.257615947272,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-08-31T20:23:44.740Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6235,
+    "tracksCount": 1,
+    "search": "zendayareplay",
     "local": false
   },
   {

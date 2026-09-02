@@ -9,4 +9,6 @@ export const FeatureFlags = {
   InstantSongPreview: 'instant_song_preview',
   OnlineMode: 'online_mode',
   Leaderboard: 'leaderboard',
+  SongLeaderboard: 'song_leaderboard',
+  HideJukebox: 'hide_jukebox',
 } as const;

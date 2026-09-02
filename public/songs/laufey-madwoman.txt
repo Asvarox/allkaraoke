@@ -1,0 +1,353 @@
+#ARTIST:Laufey
+#TITLE:Madwoman
+#CREATOR:LuMM04
+#BPM:348
+#YEAR:2026
+#PREVIEWSTART:78
+#VIDEO:v=R_J3pz33Qwc
+#GENRE:Jazz
+#LANGUAGE:English
+#GAP:15598,620689655172
+#ALLKARAOKE_ID:laufey-madwoman
+#ALLKARAOKE_SID:6228
+#ALLKARAOKE_LASTUPDATE:2026-08-31T17:13:59.633Z
+#ALLKARAOKE_ARTISTORIGIN:IS
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=32236
+#ALLKARAOKE_PREVIEWEND:100
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:240
+#MP3:Laufey - Madwoman.mp3
+#COVER:Laufey - Madwoman [CO].jpg
+#BACKGROUND:Laufey - Madwoman [BG].jpg
+: 23 12 0 Such 
+: 36 2 2 a 
+: 39 6 4 ter
+: 46 4 0 ri
+: 51 5 -3 ble 
+: 57 6 4 i
+: 64 22 2 dea
+- 86
+: 88 8 0 Worst 
+: 97 5 2 one 
+: 103 6 4 I’ve 
+: 110 3 0 had 
+: 114 7 -3 all 
+: 122 6 4 this 
+: 129 20 2 year
+- 149
+: 153 7 0 But 
+: 161 5 2 I 
+: 167 6 4 can’t 
+: 174 4 0 ig
+: 179 6 -3 nore 
+: 186 7 4 our 
+: 194 6 2 ob
+: 201 8 0 vi
+: 210 8 -1 ous
+: 220 5 0 at
+: 226 10 -1 trac
+: 237 29 -3 tion
+- 266
+: 280 9 0 I 
+: 290 3 2 i
+: 294 7 4 ma
+: 302 3 0 gine 
+: 306 7 -3 how 
+: 314 6 4 it 
+: 321 20 2 ends
+- 341
+: 344 7 0 Up 
+: 352 4 2 in 
+: 357 7 4 flames 
+: 365 5 0 we’ll 
+: 371 6 -3 go 
+: 378 6 4 a
+: 385 19 2 gain
+- 404
+: 409 7 0 See
+: 417 4 2 king 
+: 422 6 4 cha
+: 429 5 0 os
+- 434
+: 435 6 -3 Can’t 
+: 442 7 4 help 
+: 450 7 2 gi
+: 458 7 0 ving 
+: 466 7 -1 in
+: 474 6 0 to 
+: 481 14 -1 pas
+: 496 26 -3 sion
+- 522
+: 525 4 -3 But 
+: 530 4 -1 there’s 
+: 535 4 0 some
+: 540 6 4 thing 
+: 547 16 7 so 
+: 564 15 9 ve
+: 580 14 4 xing 
+: 595 15 2 ’bout 
+: 611 31 4 you
+- 642
+: 657 5 -5 It’s 
+: 663 4 -5 like 
+: 668 2 -3 the 
+: 671 3 -1 gods 
+: 675 3 0 a
+: 679 14 7 bove 
+: 694 16 9 us 
+: 712 13 4 don’t 
+: 726 11 2 ap
+: 738 32 4 prove
+- 770
+: 793 7 5 We’ve 
+: 801 7 4 been 
+: 809 7 5 through 
+: 817 8 4 this 
+: 826 7 5 be
+: 834 7 4 fore
+- 841
+: 842 7 2 Fell 
+: 850 8 0 in 
+: 859 6 -1 and 
+: 866 7 2 out, 
+: 874 7 0 I 
+: 882 7 -1 said 
+: 890 8 0 “no 
+: 899 9 -3 more”
+- 908
+: 909 6 -3 But 
+: 916 8 0 still 
+: 925 5 4 I 
+: 931 6 2 want 
+: 938 9 0 you 
+: 948 9 -1 like 
+: 958 6 0 a 
+: 965 16 -1 mad, 
+: 982 16 -7 mad 
+: 999 14 -1 wo
+: 1014 32 -3 man
+- 1046 1094
+- 1094
+: 1117 5 0 I 
+: 1123 3 2 re
+: 1127 7 4 mind 
+: 1135 3 0 my
+: 1139 7 -3 self 
+: 1147 6 4 how 
+: 1154 20 2 he’d
+- 1174
+: 1179 6 0 Ques
+: 1186 4 2 tion 
+: 1191 6 4 eve
+: 1198 3 0 ry
+: 1202 7 -3 thing 
+: 1210 6 4 ’bout 
+: 1217 18 2 me
+- 1235
+: 1241 6 0 Called 
+: 1248 4 2 me 
+: 1253 7 4 stu
+: 1261 5 0 pid 
+: 1267 6 -3 as 
+: 1274 6 4 a 
+: 1281 7 2 mind
+: 1289 7 0 less 
+: 1297 6 -1 joke
+- 1303
+: 1304 8 0 He 
+: 1313 6 -1 hyp
+: 1320 7 0 no
+: 1328 7 -1 tized 
+: 1336 8 0 me 
+: 1345 7 -1 as 
+: 1353 6 0 we 
+: 1360 11 4 spoke
+- 1371
+: 1373 5 9 Pure
+: 1379 4 8 ly 
+: 1384 5 4 my
+: 1390 5 0 tho
+: 1396 5 -3 lo
+: 1402 6 4 gi
+: 1409 17 2 cal
+- 1426
+: 1433 7 0 With 
+: 1441 3 2 the 
+: 1445 7 4 u
+: 1453 2 0 gli
+: 1456 3 -3 ~
+: 1460 11 4 est 
+: 1472 22 2 soul
+- 1494
+: 1498 6 0 You 
+: 1505 4 2 would 
+: 1510 7 4 think 
+: 1518 4 0 that 
+: 1523 6 -3 he 
+: 1530 6 4 is 
+: 1537 7 2 hol
+: 1545 7 0 ding 
+: 1553 7 -1 me 
+: 1561 7 0 for 
+: 1569 17 -1 ran
+: 1587 23 -3 som
+- 1610
+: 1611 4 -3 ’Cause 
+: 1616 4 -1 there’s 
+: 1621 4 0 some
+: 1626 6 4 thing 
+: 1633 16 7 so 
+: 1650 15 9 ve
+: 1666 14 4 xing 
+: 1681 15 2 ’bout 
+: 1697 31 4 you
+- 1728
+: 1743 5 -5 It’s 
+: 1749 4 -5 like 
+: 1754 2 -3 the 
+: 1757 3 -1 gods 
+: 1761 3 0 a
+: 1765 14 7 bove 
+: 1780 16 9 us 
+: 1798 13 4 don’t 
+: 1812 11 2 ap
+: 1824 32 4 prove
+- 1856
+: 1879 7 5 We’ve 
+: 1887 7 4 been 
+: 1895 7 5 through 
+: 1903 8 4 this 
+: 1912 7 5 be
+: 1920 7 4 fore
+- 1927
+: 1928 7 2 Fell 
+: 1936 8 0 in 
+: 1945 6 -1 and 
+: 1952 7 2 out, 
+: 1960 7 0 I 
+: 1968 7 -1 said 
+: 1976 8 0 “no 
+: 1985 9 -3 more”
+- 1994
+: 1995 6 -3 But 
+: 2002 8 0 still 
+: 2011 5 4 I 
+: 2017 6 2 want 
+: 2024 9 0 you 
+: 2034 9 -1 like 
+: 2044 6 0 a 
+: 2051 16 -1 mad, 
+: 2068 16 -7 mad 
+: 2085 14 -1 wo
+: 2100 32 -3 man
+- 2132 2440
+- 2440
+: 2463 4 0 Made 
+: 2468 4 2 it 
+: 2473 6 4 to 
+: 2480 2 0 the 
+: 2483 8 -3 fi
+: 2492 5 4 nal 
+: 2498 16 2 hour
+- 2514
+: 2523 5 0 But 
+: 2529 4 2 the 
+: 2534 6 4 wine 
+: 2541 4 0 be
+: 2546 7 -3 gins 
+: 2554 5 4 to 
+: 2560 18 2 sour
+- 2578
+: 2588 5 0 And 
+: 2594 4 2 I’m 
+: 2599 6 4 see
+: 2606 5 0 ing 
+: 2612 5 -3 my
+: 2618 7 4 self 
+: 2626 7 2 in 
+: 2634 6 0 a 
+: 2641 7 -1 dread
+: 2649 7 0 ful 
+: 2657 12 -1 fa
+: 2670 24 -3 shion
+- 2694
+: 2714 6 0 Then 
+: 2721 3 2 the 
+: 2725 6 4 fog 
+: 2732 5 0 be
+: 2738 7 -3 gins 
+: 2746 5 -1 to 
+: 2752 5 -1 clear
+: 2758 17 -4 ~
+- 2775
+: 2779 4 0 As 
+: 2784 4 2 I’m 
+: 2789 7 4 gas
+: 2797 5 5 ping 
+: 2803 6 4 at 
+: 2810 6 9 clean 
+: 2817 21 11 air
+- 2838
+: 2843 5 11 I 
+: 2849 4 12 re
+: 2854 7 11 mem
+: 2862 4 12 ber 
+: 2867 7 11 how 
+: 2875 6 12 to
+: 2882 7 11 ge
+: 2890 7 9 ther 
+: 2898 6 4 we’re 
+: 2905 7 11 so 
+: 2913 16 11 hand
+: 2930 22 9 some
+- 2952
+: 2955 4 -3 ’Cause 
+: 2960 4 -1 there’s 
+: 2965 4 0 some
+: 2970 6 4 thing 
+: 2977 16 7 so 
+: 2994 15 9 ve
+: 3010 14 4 xing 
+: 3025 15 2 ’bout 
+: 3041 31 4 you
+- 3072
+: 3087 5 -5 It’s 
+: 3093 4 -5 like 
+: 3098 2 -3 the 
+: 3101 3 -1 gods 
+: 3105 3 0 a
+: 3109 14 7 bove 
+: 3124 16 9 us 
+: 3142 13 4 don’t 
+: 3156 11 2 ap
+: 3168 32 4 prove
+- 3200
+: 3223 7 5 We’ve 
+: 3231 7 4 been 
+: 3239 7 5 through 
+: 3247 8 4 this 
+: 3256 7 5 be
+: 3264 7 4 fore
+- 3271
+: 3272 7 2 Fell 
+: 3280 8 0 in 
+: 3289 6 -1 and 
+: 3296 7 2 out, 
+: 3304 7 0 I 
+: 3312 7 -1 said 
+: 3320 8 0 “no 
+: 3329 9 -3 more”
+- 3338
+: 3339 6 -3 But 
+: 3346 8 0 still 
+: 3355 5 4 I 
+: 3361 6 2 want 
+: 3368 9 0 you 
+: 3378 9 -1 like 
+: 3388 6 0 a 
+: 3395 16 -1 mad, 
+: 3412 16 -7 mad 
+: 3429 14 -1 wo
+: 3444 32 -3 man
+E

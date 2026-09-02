@@ -61,6 +61,20 @@ describe('useSongListFilter', () => {
     expect(result.current.filteredList).toContainEqual(list[0]);
   });
 
+  it('should search the whole catalog, ignoring the selected playlist filters', () => {
+    global.location.search = '?playlist=language-Polish';
+
+    const { result } = renderHook(() => useSongListFilter(list, [], false, null));
+
+    act(() => {
+      result.current.setFilters({ search: 'queen dont' });
+    });
+
+    // list[2] is Spanish, so the Polish playlist would normally exclude it
+    expect(result.current.filteredList).toContainEqual(list[2]);
+    expect(result.current.filteredList).not.toContainEqual(list[0]);
+  });
+
   it('should create a language-specific playlist entry when URL has language playlist', () => {
     global.location.search = '?playlist=language-Polish';
 

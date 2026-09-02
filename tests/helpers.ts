@@ -43,6 +43,13 @@ export const enableLeaderboard = async ({ context }: { page: Page; context: Brow
   });
 };
 
+/** The per-song boards on the post-game screen sit behind a second flag — see `enableLeaderboard`. */
+export const enableSongLeaderboard = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ESongLeaderboard = true;
+  });
+};
+
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;

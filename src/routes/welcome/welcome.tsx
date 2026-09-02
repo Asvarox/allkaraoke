@@ -4,6 +4,7 @@ import { Badge } from '~/modules/elements/akui/badge';
 import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
+import useJukeboxHidden from '~/modules/hooks/use-jukebox-hidden';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
@@ -28,6 +29,8 @@ function Welcome() {
   // Asked here as well as inside the panel: with the board off there is no rail, and the tiles should
   // take the width back rather than sit next to an empty column.
   const leaderboardEnabled = useLeaderboardEnabled();
+  // Experiment: hiding the Jukebox entry point to see whether it changes how many songs people sing.
+  const jukeboxHidden = useJukeboxHidden();
 
   useBackgroundMusic(/* true */ false);
   // Tiles sit in a grid, so all four arrows navigate by position — see `handleSpatialNavigation`.
@@ -94,7 +97,9 @@ function Welcome() {
                 )}
               </div>
               <div className="mobile:gap-3 grid flex-1 grid-cols-2 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
-                <MenuTile name="jukebox" label="Jukebox" hint="Browse & queue" onClick={() => navigate('jukebox/')} />
+                {!jukeboxHidden && (
+                  <MenuTile name="jukebox" label="Jukebox" hint="Browse & queue" onClick={() => navigate('jukebox/')} />
+                )}
                 <MenuTile
                   name="select-input"
                   label="Setup Microphones"
