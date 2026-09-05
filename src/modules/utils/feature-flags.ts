@@ -10,5 +10,5 @@ export const FeatureFlags = {
   OnlineMode: 'online_mode',
   Leaderboard: 'leaderboard',
   SongLeaderboard: 'song_leaderboard',
-  HideJukebox: 'hide_jukebox',
+  NewMainMenu: 'new_main_menu',
 } as const;

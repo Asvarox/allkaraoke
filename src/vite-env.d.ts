@@ -7,6 +7,8 @@ declare namespace globalThis {
   var isE2ELeaderboard: boolean | undefined;
   /** Set by `enableSongLeaderboard` in tests/helpers.ts — the e2e stand-in for the PostHog flag. */
   var isE2ESongLeaderboard: boolean | undefined;
+  /** Set by `enableNewMainMenu` in tests/helpers.ts — the e2e stand-in for the experiment. */
+  var isE2ENewMainMenu: boolean | undefined;
 
   // See https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1615
   type OrientationLockType =

@@ -49,7 +49,12 @@ interface Options {
   exclusive?: boolean;
   onBackspace?: () => void;
   backspaceHelp?: string | null;
-  direction?: 'horizontal' | 'vertical';
+  /**
+   * Which arrows move the selection. `horizontal`/`vertical` walk the registration order on one axis.
+   * `horizontal-vertical` switches to spatial navigation instead — see `handleSpatialNavigation`.
+   * The value doubles as the key of the arrow glyph shown in the on-screen keyboard help.
+   */
+  direction?: 'horizontal' | 'vertical' | 'horizontal-vertical';
   additionalHelp?: HelpEntry;
   /** Screen name mirrored to the remote mic, shown as the header above its keyboard (mirror mode). */
   title?: string;
@@ -226,10 +231,90 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     setCurrentlySelected(elementList.current.at((currentIndex + direction) % elementList.current.length) ?? null);
   };
 
+  const spanOf = (rect: DOMRect, axis: 'x' | 'y') =>
+    axis === 'x' ? { start: rect.x, end: rect.x + rect.width } : { start: rect.y, end: rect.y + rect.height };
+  const centerOf = (rect: DOMRect, axis: 'x' | 'y') => {
+    const { start, end } = spanOf(rect, axis);
+    return (start + end) / 2;
+  };
+
+  /**
+   * Navigation by where things actually are on screen, for layouts that aren't a single list — the
+   * main menu's tiles sit in ragged rows (two wide ones above five narrow ones), which no fixed
+   * column count describes.
+   *
+   * Candidates are sorted into four buckets and the first non-empty one wins:
+   *   1. ahead on this axis AND sharing a row/column band with the selection — the obvious neighbour;
+   *   2. nothing ahead in the band, so wrap to the far end of that same band (Right off the last tile
+   *      of a row returns to the first tile of THAT row, not to whatever happens to be leftmost);
+   *   3. ahead but in another band, for layouts whose bands don't line up at all;
+   *   4. anything at all, so a keypress at an edge is never a dead end on a TV remote.
+   * Within a bucket the off-axis distance counts double, so of two equally distant candidates the one
+   * lined up with the selection is the one that was meant.
+   *
+   * Measured per keypress rather than cached: registration order says nothing about position, and the
+   * grid reflows with the viewport (and with `Sing online` appearing behind its feature flag).
+   */
+  const handleSpatialNavigation = (axis: 'x' | 'y', towards: -1 | 1) => {
+    const currentRect = currentlySelected
+      ? document.querySelector(`[data-test="${currentlySelected}"]`)?.getBoundingClientRect()
+      : undefined;
+    // Nothing measurable to move from (first keypress before anything focused, or a hidden element)
+    // — fall back to walking the registration order, same as a one-dimensional screen.
+    if (!currentRect) return handleNavigation(towards);
+
+    const cross = axis === 'x' ? 'y' : 'x';
+    const fromAlong = centerOf(currentRect, axis);
+    const fromAcross = centerOf(currentRect, cross);
+    const fromBand = spanOf(currentRect, cross);
+
+    type Candidate = { name: string; score: number };
+    // Indexed by the bucket order described above.
+    const buckets: Array<Candidate | null> = [null, null, null, null];
+
+    for (const name of elementList.current) {
+      if (name === currentlySelected) continue;
+      const rect = document.querySelector(`[data-test="${name}"]`)?.getBoundingClientRect();
+      // A registered element can still be display:none (a responsive copy of the same control), and
+      // an all-zero box would read as sitting in the top-left corner of the screen.
+      if (!rect || (rect.width === 0 && rect.height === 0)) continue;
+
+      const along = (centerOf(rect, axis) - fromAlong) * towards;
+      const across = Math.abs(centerOf(rect, cross) - fromAcross);
+      const band = spanOf(rect, cross);
+      const aligned = Math.min(band.end, fromBand.end) - Math.max(band.start, fromBand.start) > 1;
+      const isAhead = along > 1;
+
+      // `along` is negative for anything behind, so the lowest score in a wrap bucket is the element
+      // furthest back — exactly where wrapping should land.
+      const score = along + across * 2;
+      const bucket = isAhead ? (aligned ? 0 : 2) : aligned ? 1 : 3;
+      const best = buckets[bucket];
+      if (!best || score < best.score) buckets[bucket] = { name, score };
+    }
+
+    const target = buckets.find(Boolean);
+    if (!target) return;
+    menuNavigate.play();
+    setCurrentlySelected(target.name);
+  };
+
+  const arrowHandlers =
+    direction === 'horizontal-vertical'
+      ? {
+          up: () => handleSpatialNavigation('y', -1),
+          down: () => handleSpatialNavigation('y', 1),
+          left: () => handleSpatialNavigation('x', -1),
+          right: () => handleSpatialNavigation('x', 1),
+        }
+      : {
+          [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
+          [direction === 'vertical' ? 'down' : 'right']: () => handleNavigation(1),
+        };
+
   useKeyboard(
     {
-      [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
-      [direction === 'vertical' ? 'down' : 'right']: () => handleNavigation(1),
+      ...arrowHandlers,
       accept: handleEnter,
       back: handleBackspace,
     },

@@ -26,6 +26,11 @@ interface Props {
   emptyMessage?: string;
   isEmpty?: boolean;
   className?: string;
+  /**
+   * Classes for the scrolling list, for a caller that owns its own height — the main menu's rail is
+   * as tall as the screen, and {@link LIST_HEIGHT} would leave it stopping a long way short.
+   */
+  listClassName?: string;
   'data-test'?: string;
 }
 
@@ -50,6 +55,7 @@ function ScoreboardPanel({
   emptyMessage,
   isEmpty,
   className,
+  listClassName,
   'data-test': dataTest,
 }: Props) {
   return (
@@ -70,6 +76,7 @@ function ScoreboardPanel({
           'flex flex-col gap-1 overflow-y-auto',
           '[mask-image:linear-gradient(to_bottom,black_calc(100%-1.25rem),transparent)]',
           LIST_HEIGHT,
+          listClassName,
         )}>
         {isLoading &&
           Array.from({ length: LOADING_ROWS }, (_, index) => (

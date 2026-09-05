@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
 
-import { mockSongs } from '../helpers';
+import { enableNewMainMenu, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
 import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
@@ -15,6 +15,17 @@ visual('Landing page', async ({ page, makeScreenshot }) => {
 visual('Main menu', async ({ page, makeScreenshot }) => {
   // Navigating directly (rather than clicking through the landing page) avoids the landing page's
   // viewport-dependent CTA, which on narrow viewports leads to quick-setup instead of the main menu.
+  await page.goto('/menu/?e2e-test');
+  await expect(page.getByTestId('sing-a-song')).toBeVisible();
+
+  await makeScreenshot();
+});
+
+// The `new_main_menu` experiment's test side. The control is captured by 'Main menu' above; both
+// need a shot of their own for as long as the experiment runs.
+visual('Main menu tiled', async ({ page, context, makeScreenshot }) => {
+  await enableNewMainMenu({ page, context });
+
   await page.goto('/menu/?e2e-test');
   await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
