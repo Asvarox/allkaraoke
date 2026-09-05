@@ -315,7 +315,7 @@ so specs that are not about the leaderboard call
 - `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
 - `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
   "always share" path across two songs; the per-song board and its position line on the post-game
-  step; "Don't ask again" and the way back in; and both flag-off states.
+  step; and "Don't ask again" and the way back in.
 
   The first two are `test.fixme`: `getQualifyingScore()` scales the threshold down 1000x under e2e so
   the prompt opens, but `POST /leaderboard` enforces the real `QUALIFYING_SCORE`, and the stubbed
