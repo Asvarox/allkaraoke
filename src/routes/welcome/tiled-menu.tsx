@@ -49,10 +49,11 @@ function TiledMenu() {
           crossOrigin="anonymous"
         />
       </Helmet>
-      {/* `h-dvh` only from `lg`: on a TV the menu is meant to fill the screen exactly, with the tile
-          rows sharing the leftover height. Narrower than that it grows past the fold and scrolls,
-          which is the only way five tiles, the board and the footer all fit on a phone. */}
-      <div className="mobile:gap-3 mobile:p-3 flex min-h-dvh w-screen flex-col gap-4 p-4 lg:h-dvh lg:gap-6 lg:p-6">
+      {/* `h-dvh` only from `xl`, the width the board takes a column of its own: on a TV the menu is
+          meant to fill the screen exactly, with the tile rows sharing the leftover height. Narrower
+          than that the board is stacked under the tiles, and tiles plus board plus footer only fit by
+          growing past the fold and scrolling. */}
+      <div className="mobile:gap-3 mobile:p-3 flex min-h-dvh w-screen flex-col gap-4 p-4 xl:h-dvh xl:gap-6 xl:p-6">
         {/* The utility icons the design puts next to the logo are the app-wide `Toolbar`, which is
             already fixed to this corner (see `layout-game.tsx`) — hence the reserved space on the right. */}
         <header className="flex shrink-0 items-center justify-between gap-6 pr-32">
@@ -120,7 +121,7 @@ function TiledMenu() {
           {/* One instance, not a desktop/narrow pair: it moves from the rail to the bottom of the
               single column purely by where the grid puts it. */}
           {leaderboardEnabled && (
-            <LeaderboardPanel className="lg:h-full" listClassName="lg:h-auto lg:min-h-0 lg:flex-1" />
+            <LeaderboardPanel className="xl:h-full" listClassName="xl:h-auto xl:min-h-0 xl:flex-1" />
           )}
         </div>
 
