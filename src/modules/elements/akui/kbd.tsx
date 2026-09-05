@@ -9,8 +9,8 @@ export const Kbd = ({ className, children, ...props }: HTMLProps<HTMLElement>): 
   return (
     <kbd
       className={twMerge(
-        'inline-block rounded-xl border-4 border-gray-300 border-r-gray-400 border-b-gray-400',
-        'bg-gray-50 px-2 py-0.5 leading-snug font-normal text-gray-800',
+        'inline-block rounded-lg border-3 min-w-7 border-gray-300 border-r-gray-400 border-b-gray-400',
+        'bg-gray-50 px-1.5 py-0.5 leading-snug font-normal text-gray-800',
         'shadow',
         className,
       )}

@@ -108,7 +108,7 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
 // keys rather than a list of sentences, and stays short enough to sit in a corner. `justify-end`
 // puts every column's keys against its label, so the labels line up however tall the keys above them
 // are (the arrow pad is two rows, every other entry is one).
-const Section = twc.div`flex min-w-0 flex-col items-center justify-end gap-2 text-center`;
+const Section = twc.div`flex min-w-0 flex-col items-center justify-end gap-1 text-center`;
 
 // `text-sm` here rather than on the `Kbd`s themselves: they size in `em`, so the whole cluster -
 // glyphs, padding and border - scales from this one place.
@@ -118,13 +118,13 @@ const SectionHelp = twc(Typography)`text-center text-sm text-balance`;
 
 const UseKeyboardIndicator = twc(
   Typography,
-)`text-md invisible absolute inset-0 flex items-center justify-center bg-black/75 p-8 text-white opacity-0 duration-300 hover:visible hover:opacity-100`;
+)`text-md invisible absolute inset-0 flex items-center justify-center bg-black/75 py-8 text-white opacity-0 duration-300 hover:visible hover:opacity-100`;
 
 const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
   // Bottom right, laid out as a row: a panel of its own in the corner, rather than a column of text
   // down the side of whatever screen is up. Flush into the corner - no offset, and only the one
   // corner facing the page is rounded. `w-auto` so it is only as wide as its entries, and `items-end`
   // so every column sits on a shared bottom edge whatever the height of the keys above it.
-  `fixed right-0 bottom-0 z-1000 w-auto max-w-screen cursor-pointer flex-row! items-end justify-end gap-6 rounded-none rounded-tl-xl px-4 py-3 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
+  `fixed right-0 bottom-0 z-1000 w-auto max-w-screen cursor-pointer flex-row! items-end justify-end gap-4 rounded-none rounded-tl-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
   props['data-visible'] ? 'mobile:hidden flex' : 'hidden',
 ]);
