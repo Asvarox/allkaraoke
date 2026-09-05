@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { enableLeaderboard, enableSongLeaderboard, initTestMode, mockSongs } from './helpers';
+import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 
 let pages: ReturnType<typeof initialise>;
@@ -59,12 +59,10 @@ const singTheSongAgain = async () => {
   await pages.postGameResultsPage.goToHighScoresStep();
 };
 
-test.describe('Global leaderboard enabled', () => {
+test.describe('Global leaderboard', () => {
   test.beforeEach(async ({ page, context, browser }) => {
     pages = initialise(page, context, browser);
     await initTestMode({ page, context });
-    await enableLeaderboard({ page, context });
-    await enableSongLeaderboard({ page, context });
     await mockSongs({ page, context });
   });
 
@@ -177,49 +175,5 @@ test.describe('Global leaderboard enabled', () => {
       await pages.leaderboardPage.openPromptButton.click();
       await expect(pages.leaderboardPage.prompt).toBeVisible();
     });
-  });
-});
-
-test.describe('Song leaderboard disabled', () => {
-  test.beforeEach(async ({ page, context, browser }) => {
-    pages = initialise(page, context, browser);
-    await initTestMode({ page, context });
-    await enableLeaderboard({ page, context });
-    await mockSongs({ page, context });
-  });
-
-  test('keeps the per-song board away while still collecting the score', async ({ page }) => {
-    test.slow();
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await singTheSong();
-
-    // The global board is unaffected by the second flag — Medium and harder are still offered
-    await expect(pages.leaderboardPage.prompt).toBeVisible();
-    await expect(pages.leaderboardPage.prompt).toContainText('global leaderboard');
-    await expect(pages.leaderboardPage.songPanel).toHaveCount(0);
-  });
-});
-
-test.describe('Global leaderboard disabled', () => {
-  test.beforeEach(async ({ page, context, browser }) => {
-    pages = initialise(page, context, browser);
-    await initTestMode({ page, context });
-    await mockSongs({ page, context });
-  });
-
-  test('renders neither the board nor the prompt when the flag is off', async ({ page }) => {
-    test.slow();
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-
-    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
-    await expect(page.getByTestId('leaderboard-panel')).toHaveCount(0);
-
-    await singTheSong();
-
-    await expect(pages.postGameHighScoresPage.highScoresContainer).toBeVisible();
-    await expect(pages.leaderboardPage.prompt).toHaveCount(0);
-    await expect(pages.leaderboardPage.songPanel).toHaveCount(0);
   });
 });

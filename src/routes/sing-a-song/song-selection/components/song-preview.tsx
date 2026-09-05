@@ -7,7 +7,6 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/vide
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
 import { useSpecialTheme } from '~/routes/sing-a-song/song-selection/hooks/use-special-theme';
@@ -46,7 +45,6 @@ export default function SongPreviewComponent({
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
   const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
   useSpecialTheme(songPreview, FeatureFlags.Eurovision, isEurovisionSong, 'eurovision');
-  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
 
   const expanded = keyboardControl;
 
@@ -72,9 +70,7 @@ export default function SongPreviewComponent({
 
   const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
   const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
-  const songPreviewVolume = newVolumeFFEnabled
-    ? (songPreview.volume ?? songPreview.manualVolume)
-    : songPreview.manualVolume;
+  const songPreviewVolume = songPreview.manualVolume;
   const undebounced = useMemo(
     () => [songPreview.video, start, end, songPreviewVolume] as const,
     [songPreview.video, start, end, songPreviewVolume],

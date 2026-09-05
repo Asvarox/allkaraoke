@@ -8,7 +8,6 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import { NavButton, NavSwitcher } from '~/modules/elements/nav-controls';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
-import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { nextValue } from '~/modules/utils/indexes';
 import {
@@ -30,7 +29,6 @@ function Settings() {
   const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
   const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
   const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const mobileModeDisabled = useMobileModeDisabled();
 
   const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
   useEffect(() => {
@@ -94,18 +92,14 @@ function Settings() {
           info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
           onClick={() => (camera ? CameraManager.disable() : enableCamera())}
         />
-        {!mobileModeDisabled && (
-          <>
-            <hr />
-            <NavSwitcher
-              name="mobile-phone-mode"
-              label="Mobile Phone Mode"
-              value={mobilePhoneMode ? 'Yes' : 'No'}
-              info="Adjust the game to a smaller screen. Disables option to sing in duets."
-              onClick={() => setMobilePhoneMode(!mobilePhoneMode)}
-            />
-          </>
-        )}
+        <hr />
+        <NavSwitcher
+          name="mobile-phone-mode"
+          label="Mobile Phone Mode"
+          value={mobilePhoneMode ? 'Yes' : 'No'}
+          info="Adjust the game to a smaller screen. Disables option to sing in duets."
+          onClick={() => setMobilePhoneMode(!mobilePhoneMode)}
+        />
         <hr />
         <NavButton
           name="remote-mics-settings"
