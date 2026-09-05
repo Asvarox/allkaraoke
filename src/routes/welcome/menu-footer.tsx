@@ -13,12 +13,12 @@ const socials: Array<{ name: string; icon: IconName; href: string }> = [
  * is keyboard-navigable — they're read-only credits and mouse-only links, and putting them in the
  * arrow order would make the tiles harder to reach on a TV.
  *
- * Everything stays on the left: the bottom-right corner belongs to the floating keyboard help
+ * Everything stays on the right: the bottom-left corner belongs to the floating keyboard help
  * (`help-view.tsx`), which would otherwise land on top of it.
  */
 function MenuFooter() {
   return (
-    <footer className="typography mobile:gap-4 flex flex-wrap items-end gap-10 border-t border-white/10 pt-3 text-white/55">
+    <footer className="typography mobile:gap-4 flex flex-wrap items-end justify-end gap-10 border-t border-white/10 pt-3 text-white/55">
       <div className="flex flex-col gap-2">
         <SectionLabel>Get in touch</SectionLabel>
         <div className="flex items-center gap-4 text-lg">

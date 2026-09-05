@@ -121,10 +121,12 @@ const UseKeyboardIndicator = twc(
 )`text-md invisible absolute inset-0 flex items-center justify-center bg-black/75 py-8 text-white opacity-0 duration-300 hover:visible hover:opacity-100`;
 
 const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
-  // Bottom right, laid out as a row: a panel of its own in the corner, rather than a column of text
-  // down the side of whatever screen is up. Flush into the corner - no offset, and only the one
-  // corner facing the page is rounded. `w-auto` so it is only as wide as its entries, and `items-end`
-  // so every column sits on a shared bottom edge whatever the height of the keys above it.
-  `fixed right-0 bottom-0 z-1000 w-auto max-w-screen cursor-pointer flex-row! items-end justify-end gap-4 rounded-none rounded-tl-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
+  // Bottom left, laid out as a row: a panel of its own in the corner, rather than a column of text
+  // down the side of whatever screen is up. The LEFT corner because the right one is where screens
+  // put their primary action - "Play next song", the rating buttons - and a panel sitting on top of
+  // those swallows the click. Flush into the corner - no offset, and only the one corner facing the
+  // page is rounded. `w-auto` so it is only as wide as its entries, and `items-end` so every column
+  // sits on a shared bottom edge whatever the height of the keys above it.
+  `fixed bottom-0 left-0 z-1000 w-auto max-w-screen cursor-pointer flex-row! items-end justify-start gap-4 rounded-none rounded-tr-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
   props['data-visible'] ? 'mobile:hidden flex' : 'hidden',
 ]);
