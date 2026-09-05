@@ -39,7 +39,7 @@ function MenuTile({ label, hint, badge, variant = 'secondary', className, ...pro
         className,
       )}>
       <span className="flex w-full min-w-0 flex-col items-start gap-1 sm:gap-2">
-        <span className={twMerge('w-full leading-tight text-balance', primary ? 'text-lg sm:text-xl' : 'text-md')}>
+        <span className={twMerge('w-full leading-tight text-balance', primary ? 'text-lg sm:text-xl' : 'text-lg')}>
           {label}
         </span>
         <span

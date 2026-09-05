@@ -65,7 +65,7 @@ function TiledMenu() {
 
         <div
           className={`grid min-h-0 flex-1 gap-4 lg:gap-6 ${
-            leaderboardEnabled ? 'lg:grid-cols-[minmax(0,1fr)_32rem]' : ''
+            leaderboardEnabled ? 'xl:grid-cols-[minmax(0,1fr)_32rem]' : ''
           }`}>
           <div className="mobile:gap-3 flex min-h-0 flex-col gap-4 lg:gap-6">
             <KeyboardNavContext value={register}>
@@ -103,14 +103,14 @@ function TiledMenu() {
                 <MenuTile
                   name="manage-songs"
                   label="Manage Songs"
-                  hint="Edit collection"
+                  hint="Select languages, add new songs"
                   onClick={() => navigate('manage-songs/')}
                 />
                 <MenuTile name="history" label="History" hint="Past scores" onClick={() => navigate('history/')} />
                 <MenuTile
                   name="settings"
                   label="Settings"
-                  hint="Sound, language"
+                  hint="Graphics, additional options"
                   remoteIcon="settings"
                   onClick={() => navigate('settings/')}
                 />
