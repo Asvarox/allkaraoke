@@ -10,7 +10,7 @@ import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
  * skipped by `useKeyboardNav`: making 50 rows keyboard-traversable would add a navigation sink that
  * TV users hit by accident, so on a TV this is a display of the top 10 and nothing more.
  */
-function LeaderboardPanel({ className }: { className?: string }) {
+function LeaderboardPanel({ className, listClassName }: { className?: string; listClassName?: string }) {
   const leaderboardEnabled = useLeaderboardEnabled();
 
   const { data, error, isLoading } = useSWR(leaderboardEnabled ? LEADERBOARD_URL : null, fetchBoard, {
@@ -24,9 +24,9 @@ function LeaderboardPanel({ className }: { className?: string }) {
     // widget — and the same `ScoreboardPanel` the post-game boards use, so a board looks like a board
     <ScoreboardPanel
       className={`p-4 sm:p-7 ${className ?? ''}`}
-      // In the main menu's full-height rail the list takes whatever room is left rather than stopping
-      // at the shared five-row height; everywhere narrower it keeps that height and scrolls.
-      listClassName="lg:h-auto lg:min-h-0 lg:flex-1"
+      // Passed through so a caller can trade the shared five-row list height for one of its own —
+      // the tiled menu's rail is as tall as the screen and would otherwise stop a long way short.
+      listClassName={listClassName}
       title="Global leaderboard"
       subtitle="Highest scores from the last 14 days"
       isLoading={isLoading}

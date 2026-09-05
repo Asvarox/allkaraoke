@@ -50,6 +50,13 @@ export const enableSongLeaderboard = async ({ context }: { page: Page; context: 
   });
 };
 
+/** Puts the tiled main menu up — the test side of the `new_main_menu` experiment. */
+export const enableNewMainMenu = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ENewMainMenu = true;
+  });
+};
+
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;
