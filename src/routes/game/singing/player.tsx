@@ -16,8 +16,6 @@ import useKeyboard from '~/modules/hooks/use-keyboard';
 import useKeyboardHelp from '~/modules/hooks/use-keyboard-help';
 import usePrevious from '~/modules/hooks/use-previous';
 import { PlayerNumber } from '~/modules/players/player-number';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
 import { cn } from '~/utils/cn';
 
@@ -90,7 +88,6 @@ function Player({
   ...restProps
 }: Props) {
   'use no memo'; // React Compiler: none of GameOverlay's props tick every frame (score comes from GameState, read at render time), so the compiler memoizes the <GameOverlay> element across renders and the score display never updates.
-  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const player = useRef<VideoPlayerRef | null>(null);
   const [pauseMenuVisible, setPauseMenuVisible] = useState(false);
 
@@ -223,7 +220,7 @@ function Player({
           controls={showControls}
           autoplay={autoplay}
           disablekb={process.env.NODE_ENV !== 'development'}
-          volume={newVolumeFFEnabled ? (song.volume ?? song.manualVolume) : song.manualVolume}
+          volume={song.manualVolume}
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
         />

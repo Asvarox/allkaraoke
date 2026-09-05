@@ -68,6 +68,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
   await test.step('Skip to the Song list', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
   });
 
@@ -114,6 +115,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Skip to the Song list', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
   });
 
@@ -163,6 +165,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   await test.step('Skip to the Song list', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
   });
 
@@ -255,6 +258,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Skip to the Song List', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
   });
 

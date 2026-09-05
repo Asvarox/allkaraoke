@@ -2,7 +2,6 @@ import useSWR from 'swr';
 
 import { fetchBoard, LEADERBOARD_URL } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
-import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
 import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
 
 /**
@@ -11,13 +10,9 @@ import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
  * TV users hit by accident, so on a TV this is a display of the top 10 and nothing more.
  */
 function LeaderboardPanel({ className, listClassName }: { className?: string; listClassName?: string }) {
-  const leaderboardEnabled = useLeaderboardEnabled();
-
-  const { data, error, isLoading } = useSWR(leaderboardEnabled ? LEADERBOARD_URL : null, fetchBoard, {
+  const { data, error, isLoading } = useSWR(LEADERBOARD_URL, fetchBoard, {
     revalidateOnFocus: false,
   });
-
-  if (!leaderboardEnabled) return null;
 
   return (
     // Same box the main menu sits in, so the panel reads as part of it rather than a bolted-on

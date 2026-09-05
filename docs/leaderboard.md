@@ -110,7 +110,7 @@ matching blobs first.
 
 `GET /leaderboard-song?songId=…&tolerance=…&score=…` answers, for the song that was just sung, "who
 else has sung this, and where would this score land among them". It is rendered beside the local
-high scores on the post-game step, behind the `song_leaderboard` flag (see below), and returns:
+high scores on the post-game step, and returns:
 
 ```ts
 { entries: BoardEntry[]; total: number; position: number | null }
@@ -295,19 +295,13 @@ player who only wanted to see their score. "Stop sharing scores" returns the dec
 rather than `'never'` — turning off automatic sharing is not the same as never wanting to be asked —
 and clears the stored name and country. The `clientId` survives: it is the device, not the person.
 
-## Feature flag and tests
+## Tests
 
-The client is gated behind two PostHog flags. `leaderboard` covers the whole feature; the per-song
-boards sit behind `song_leaderboard` on top of it, because they ship separately — the global board is
-already live, and the per-song boards change a screen every player sees and bring a difficulty rule
-of their own. `use-song-leaderboard-enabled.ts` returns false whenever `leaderboard` is off: there is
-no per-song board to show when the feature it belongs to is off, and no prompt to collect a name
-through.
-
-Both are gated the same way. `useFeatureFlag` forces every flag on
-under e2e, which would put the board into every existing spec and every main-menu screenshot, so
-each hook consults an e2e-only opt-in instead (`enableLeaderboard` and `enableSongLeaderboard` in
-`tests/helpers.ts`). That also gives the spec a real off-state to assert against.
+The whole feature — the global board and the per-song boards alike — is on for everyone; the
+`leaderboard` and `song_leaderboard` PostHog flags that gated it have been removed. Every e2e run
+now sees the board on the main menu, and the post-game share prompt greets every qualifying score,
+so specs that are not about the leaderboard call
+`pages.postGameHighScoresPage.dismissLeaderboardPrompt()` to decline it on the high-scores step.
 
 - `worker/leaderboard-do.test.ts`, `worker/leaderboard.test.ts` — Durable Object and route
   behaviour, under `@cloudflare/vitest-pool-workers`. These live in the `functions` vitest project;
@@ -321,7 +315,7 @@ each hook consults an e2e-only opt-in instead (`enableLeaderboard` and `enableSo
 - `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
 - `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
   "always share" path across two songs; the per-song board and its position line on the post-game
-  step; "Don't ask again" and the way back in; and both flag-off states.
+  step; and "Don't ask again" and the way back in.
 
   The first two are `test.fixme`: `getQualifyingScore()` scales the threshold down 1000x under e2e so
   the prompt opens, but `POST /leaderboard` enforces the real `QUALIFYING_SCORE`, and the stubbed
