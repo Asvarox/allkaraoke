@@ -27,17 +27,22 @@ visual('Landing page tiled', async ({ page, context, viewport, makeScreenshot })
   // The board is a desktop-only rail on this page, so there is nothing to wait for on the narrow
   // viewports — and waiting would fail them.
   if (viewport.width >= 1024) {
-    await expect(page.getByTestId('leaderboard-row').first()).toBeVisible();
+    await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
   }
 
   await makeScreenshot();
 });
 
-visual('Main menu', async ({ page, makeScreenshot }) => {
+visual('Main menu', async ({ page, context, makeScreenshot }) => {
+  // Both menus are captured against a full board, for the same reason the landing page is: the board
+  // is the one thing on these screens whose height is the server's to decide.
+  await mockLeaderboard({ page, context });
+
   // Navigating directly (rather than clicking through the landing page) avoids the landing page's
   // viewport-dependent CTA, which on narrow viewports leads to quick-setup instead of the main menu.
   await page.goto('/menu/?e2e-test');
   await expect(page.getByTestId('sing-a-song')).toBeVisible();
+  await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
 
   await makeScreenshot();
 });
@@ -46,9 +51,11 @@ visual('Main menu', async ({ page, makeScreenshot }) => {
 // need a shot of their own for as long as the experiment runs.
 visual('Main menu tiled', async ({ page, context, makeScreenshot }) => {
   await enableNewMainMenu({ page, context });
+  await mockLeaderboard({ page, context });
 
   await page.goto('/menu/?e2e-test');
   await expect(page.getByTestId('sing-a-song')).toBeVisible();
+  await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
 
   await makeScreenshot();
 });

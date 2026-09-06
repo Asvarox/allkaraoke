@@ -125,11 +125,20 @@ function TiledMenu() {
             </KeyboardNavContext>
           </div>
           {/* One instance, not a desktop/narrow pair: it moves from the rail to the bottom of the
-              single column purely by where the grid puts it. */}
-          <LeaderboardPanel
-            className={`${MenuViewTransition.LEADERBOARD} xl:h-full`}
-            listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
-          />
+              single column purely by where the grid puts it.
+
+              As a rail (from `xl`) it fills its cell absolutely rather than sitting in it: fifty rows
+              are taller than the tiles beside them, and in flow that height becomes the row's — the
+              screen this one is pinned to the viewport for then scrolls anyway, to show a list that
+              can scroll itself. Out of flow it has no height to give, so the rail is as tall as the
+              tiles and the list takes what is left. Below `xl` it is a block under them, where its
+              own five-row height is what it should be. */}
+          <div className="relative">
+            <LeaderboardPanel
+              className={`${MenuViewTransition.LEADERBOARD} xl:absolute xl:inset-0`}
+              listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
+            />
+          </div>
         </div>
 
         <MenuFooter />
