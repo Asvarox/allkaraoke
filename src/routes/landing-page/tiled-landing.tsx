@@ -220,11 +220,20 @@ function TiledLanding() {
           </div>
 
           {/* Dropped on a phone rather than stacked: it is the one block here that is neither the
-              pitch nor a way into a game, and it would push everything else past two screenfuls. */}
-          <LeaderboardPanel
-            className={`${MenuViewTransition.LEADERBOARD} hidden lg:flex xl:h-full`}
-            listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
-          />
+              pitch nor a way into a game, and it would push everything else past two screenfuls.
+
+              As a rail (from `xl`) the board fills its grid cell absolutely rather than sitting in
+              it: fifty rows are taller than everything to their left, and in flow that height
+              becomes the row's, so the whole page scrolls to show a list that can scroll itself.
+              Out of flow it has no height to give, the row is as tall as the cards beside it, and
+              the list takes what is left and scrolls. Below `xl` there is no second column and the
+              board is a block under the cards, where its own five-row height is what it should be. */}
+          <div className="relative hidden lg:block">
+            <LeaderboardPanel
+              className={`${MenuViewTransition.LEADERBOARD} xl:absolute xl:inset-0`}
+              listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
+            />
+          </div>
         </div>
 
         {/* The phone's call to action, pinned to the bottom of the screen rather than left in the
