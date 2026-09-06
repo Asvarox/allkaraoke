@@ -4207,6 +4207,34 @@
     "local": false
   },
   {
+    "id": "adriano-celentano-azzurro",
+    "title": "Azzurro",
+    "artist": "Adriano Celentano",
+    "video": "xt-3gNs8rUo",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 237.89999999999998,
+    "gap": 7649.898989898989,
+    "year": "1968",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-09-06T02:12:59.298Z",
+    "genre": "Schlager",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Adriano Celentano",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6246,
+    "tracksCount": 1,
+    "search": "adrianocelentanoazzurro",
+    "local": false
+  },
+  {
     "id": "aerosmith-crazy",
     "title": "Crazy",
     "artist": "Aerosmith",
@@ -53778,6 +53806,37 @@
     "local": false
   },
   {
+    "id": "element-of-crime-delmenhorst",
+    "title": "Delmenhorst",
+    "artist": "Element Of Crime",
+    "video": "j8fHerNSaEM",
+    "language": [
+      "German"
+    ],
+    "bpm": 400,
+    "gap": 18572.5,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-06T02:13:16.776Z",
+    "genre": "Rock",
+    "realBpm": 106,
+    "previewStart": 37,
+    "previewEnd": 102,
+    "volume": 1,
+    "author": "testguy1245",
+    "sourceUrl": "https://www.youtube.com/watch?v=j8fHerNSaEM",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6250,
+    "tracksCount": 1,
+    "search": "elementofcrimedelmenhorst",
+    "local": false
+  },
+  {
     "id": "elena-siegman-115",
     "title": "115",
     "artist": "Elena Siegman",
@@ -56455,6 +56514,33 @@
     "shortId": 6077,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranskjscylla",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-luke-holt-the-horse-and-the-infant",
+    "title": "The Horse And The Infant",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Luke Holt)",
+    "video": "OE8TQBqWVV8",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 4917.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-06T02:13:16.604Z",
+    "genre": "Musical",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6249,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranslukeholtthehorseandtheinfant",
     "local": false
   },
   {
@@ -107284,6 +107370,33 @@
     "local": false
   },
   {
+    "id": "mama-cass-elliot-dream-a-little-dream-of-me",
+    "title": "Dream A Little Dream Of Me",
+    "artist": "Mama Cass Elliot",
+    "video": "v8I5vDewcZo",
+    "language": [
+      "English"
+    ],
+    "bpm": 206.35999999999999,
+    "gap": 12964.889245118042,
+    "year": "1968",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-06T02:13:16.598Z",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "Fiete",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6247,
+    "tracksCount": 1,
+    "search": "mamacasselliotdreamalittledreamofme",
+    "local": false
+  },
+  {
     "id": "mama-cass-elliot-make-your-own-kind-of-music",
     "title": "Make Your Own Kind Of Music",
     "artist": "Mama Cass Elliot",
@@ -133821,6 +133934,33 @@
     "shortId": 4995,
     "tracksCount": 1,
     "search": "pnksober",
+    "local": false
+  },
+  {
+    "id": "pnk-who-knew",
+    "title": "Who Knew",
+    "artist": "P!nk",
+    "video": "NJWIbIe0N90",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 11517.142857142857,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-06T02:12:59.292Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 1,
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6245,
+    "tracksCount": 1,
+    "search": "pnkwhoknew",
     "local": false
   },
   {
@@ -178857,6 +178997,33 @@
     "shortId": 4679,
     "tracksCount": 1,
     "search": "weezerbuddyholly",
+    "local": false
+  },
+  {
+    "id": "weezer-i-just-threw-out-the-love-of-my-dreams",
+    "title": "I Just Threw Out The Love Of My Dreams",
+    "artist": "Weezer",
+    "video": "r2dosVRzLSM",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.8,
+    "gap": 5002.239263803681,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-06T02:13:16.599Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Viktor1234678",
+    "duration": 158,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6248,
+    "tracksCount": 1,
+    "search": "weezerijustthrewouttheloveofmydreams",
     "local": false
   },
   {

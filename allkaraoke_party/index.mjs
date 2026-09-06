@@ -1,7 +1,7 @@
 (function() {
 	try {
 		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "abf9e6e61b6562caa9438a38045bca133ef6bc5d" };
+		e.SENTRY_RELEASE = { id: "cd9a6add02f1e0c55020b30e2028c1ed5603e890" };
 		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
 			for (var n = 1; n < arguments.length; n++) {
 				var a = arguments[n];
