@@ -1,0 +1,344 @@
+#ARTIST:Element Of Crime
+#TITLE:Delmenhorst
+#CREATOR:testguy1245
+#BPM:400
+#YEAR:2005
+#PREVIEWSTART:37
+#VIDEO:v=j8fHerNSaEM
+#GENRE:Rock
+#LANGUAGE:German
+#GAP:18572,5
+#ALLKARAOKE_ID:element-of-crime-delmenhorst
+#ALLKARAOKE_SID:6250
+#ALLKARAOKE_LASTUPDATE:2026-09-06T02:13:16.776Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:106
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=j8fHerNSaEM
+#ALLKARAOKE_PREVIEWEND:102
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:236
+#MP3:Element Of Crime - Delmenhorst.mp3
+#COVER:Element Of Crime - Delmenhorst [CO].jpg
+#BACKGROUND:Element Of Crime - Delmenhorst [BG].jpg
+: 27 6 11 Ich 
+: 35 5 11 bin 
+: 42 3 11 jetzt 
+: 48 2 11 im
+: 53 3 9 mer 
+: 64 2 7 da, 
+: 73 2 4 wo 
+: 78 2 11 du 
+: 84 2 9 nicht 
+: 91 2 7 bist
+- 93 125
+- 125
+: 152 5 11 Und 
+: 159 6 11 das 
+: 167 2 11 ist 
+: 171 2 11 im
+: 174 4 11 mer 
+: 190 6 11 Del
+: 198 2 2 men
+: 201 3 4 horst
+- 204 253
+- 253
+: 280 4 9 Es 
+: 285 3 9 ist 
+: 293 8 9 schön, 
+: 302 7 9 wenn’s 
+: 311 5 7 nicht 
+: 319 2 7 mehr 
+: 323 6 4 weh 
+: 330 5 2 tut
+- 335 368
+- 368
+: 395 7 9 Und 
+: 403 6 9 wo 
+: 410 2 9 zu 
+: 413 6 9 sein, 
+: 421 10 7 wo 
+: 433 7 4 du 
+: 441 2 7 nie 
+: 444 5 9 warst
+- 449 498
+- 498
+: 525 6 14 Hin
+: 533 3 11 ter 
+: 537 6 14 Huch
+: 545 3 11 ting 
+: 556 6 14 ist 
+: 563 3 4 ein 
+: 567 10 4 Gra
+: 578 4 11 ben
+- 582 620
+- 620
+: 647 5 12 Der 
+: 654 5 12 ist 
+: 662 3 12 we
+: 667 7 12 der 
+: 678 5 11 breit 
+: 684 5 9 noch 
+: 691 5 11 tief
+- 696 734
+- 734
+: 761 4 11 Und 
+: 768 5 11 dann 
+: 776 3 11 kommt 
+: 780 8 11 gleich 
+: 790 4 9 »Ge
+: 798 5 7 trän
+: 805 3 4 ke 
+: 809 6 11 Hoff
+: 817 6 9 mann«
+- 823 862
+- 862
+: 889 6 9 Sag’ 
+: 897 3 11 Be
+: 901 6 9 scheid, 
+: 911 4 7 wenn 
+: 919 4 9 du 
+: 926 3 7 mich 
+: 930 9 7 liebst
+- 939 1220
+- 1220
+: 1247 5 11 Ich 
+: 1254 6 11 hab 
+: 1261 7 11 jetzt 
+: 1269 3 11 Sa
+: 1274 3 9 chen 
+: 1279 5 7 an, 
+: 1293 3 4 die 
+: 1297 4 11 du 
+: 1304 3 9 nicht 
+: 1309 3 7 magst
+- 1312 1342
+- 1342
+: 1369 6 11 Und 
+: 1377 4 11 die 
+: 1383 5 9 sind 
+: 1389 3 11 im
+: 1393 3 11 mer 
+: 1408 5 11 grün 
+: 1415 3 2 und 
+: 1419 3 4 blau
+- 1422 1472
+- 1472
+: 1499 4 9 Ob 
+: 1505 3 9 ich 
+: 1509 8 9 wir
+: 1519 4 9 klich 
+: 1528 5 7 Sport 
+: 1536 3 7 be
+: 1540 6 4 trei
+: 1548 3 2 be
+- 1551 1593
+- 1593
+: 1620 4 9 In
+: 1627 2 9 teres
+: 1631 4 9 siert 
+: 1638 7 7 hier 
+: 1650 6 4 kei
+: 1658 2 7 ne 
+: 1661 3 9 Sau
+- 1664 1715
+- 1715
+: 1742 6 14 Hin
+: 1750 2 11 ter 
+: 1753 4 14 Huch
+: 1760 7 11 ting 
+: 1773 4 14 ist 
+: 1781 3 4 ein 
+: 1785 3 4 Gra
+: 1792 5 11 ben
+- 1797 1828
+- 1828
+: 1855 7 12 Der 
+: 1863 6 12 in 
+: 1871 2 12 die 
+: 1874 4 12 Och
+: 1885 6 12 tum 
+: 1893 3 11 sich 
+: 1901 3 9 er
+: 1905 4 11 gießt
+- 1909 1950
+- 1950
+: 1977 6 11 Und 
+: 1984 7 11 dann 
+: 1993 3 11 kommt 
+: 1997 3 11 gleich 
+: 2008 6 9 »Ge
+: 2016 6 7 trän
+: 2024 2 4 ke 
+: 2027 6 11 Hoff
+: 2035 5 9 mann«
+- 2040 2079
+- 2079
+: 2106 5 9 Sag’ 
+: 2113 2 11 Be
+: 2116 7 9 scheid, 
+: 2128 5 7 wenn 
+: 2136 6 9 du 
+: 2144 2 7 mich 
+: 2147 6 7 liebst
+- 2153 2434
+- 2434
+: 2461 6 11 Ich 
+: 2468 6 11 mach’ 
+: 2475 4 11 jetzt 
+: 2480 5 11 end
+: 2487 4 9 lich 
+: 2499 4 7 all
+: 2504 4 4 es 
+: 2510 4 11 öf
+: 2515 3 9 fent
+: 2520 5 7 lich
+- 2525 2564
+- 2564
+: 2591 5 11 Und 
+: 2598 4 11 er
+: 2603 4 11 zäh
+: 2609 7 11 le, 
+: 2619 4 11 was 
+: 2626 3 2 ich 
+: 2630 4 4 weiß
+- 2634 2684
+- 2684
+: 2711 6 9 Auf 
+: 2719 2 9 der 
+: 2723 9 9 Stra
+: 2733 7 9 ße 
+: 2741 6 7 der 
+: 2750 2 7 Ver
+: 2753 6 4 damm
+: 2763 6 2 ten
+- 2769 2805
+- 2805
+: 2832 5 9 Die 
+: 2838 3 9 hier 
+: 2842 7 9 Bre
+: 2850 7 7 mer 
+: 2862 6 4 Stra
+: 2869 3 7 ße 
+: 2873 12 9 heißt
+- 2885 2927
+- 2927
+: 2954 6 14 Hin
+: 2961 2 11 ter 
+: 2964 6 14 Huch
+: 2971 8 11 ting 
+: 2984 4 14 ist 
+: 2991 3 4 ein 
+: 2995 9 4 Gra
+: 3005 6 11 ben
+- 3011 3038
+- 3038
+: 3065 6 12 In 
+: 3073 6 12 den 
+: 3080 4 12 sich 
+: 3085 7 12 ei
+: 3093 10 12 ner 
+: 3105 6 11 ü
+: 3112 3 9 ber
+: 3116 11 11 gibt
+- 3127 3159
+- 3159
+: 3186 7 11 Und 
+: 3194 6 11 dann 
+: 3201 3 11 kommt 
+: 3205 8 11 gleich 
+: 3216 7 9 »Ge
+: 3224 7 7 trän
+: 3232 3 4 ke 
+: 3236 5 11 Hoff
+: 3244 4 9 mann«
+- 3248 3288
+- 3288
+: 3315 6 9 Sag’ 
+: 3322 2 11 Be
+: 3325 6 9 scheid, 
+: 3337 7 7 wenn 
+: 3345 6 9 du 
+: 3352 3 7 mich 
+: 3356 9 7 liebst
+- 3365 4368
+- 4368
+: 4395 7 11 Ich 
+: 4403 6 11 bin 
+: 4410 3 11 jetzt 
+: 4414 8 11 da, 
+: 4424 8 9 wo 
+: 4433 5 7 ich 
+: 4439 3 4 mich 
+: 4444 6 11 ha
+: 4451 4 9 ben 
+: 4456 4 7 will
+- 4460 4490
+- 4490
+: 4517 6 11 Und 
+: 4524 5 11 das 
+: 4531 3 11 ist 
+: 4535 4 11 im
+: 4540 7 11 mer 
+: 4555 4 11 Del
+: 4561 3 2 men
+: 4566 3 4 horst
+- 4569 4618
+- 4618
+: 4645 6 9 Erst 
+: 4653 4 9 wenn 
+: 4658 4 9 al
+: 4663 6 9 les 
+: 4673 7 7 scheiß
+: 4681 3 7 e
+: 4685 7 4 gal
+: 4693 3 2 ~ 
+: 4697 2 2 ist
+- 4699 4740
+- 4740
+: 4767 5 9 Macht 
+: 4773 2 9 das 
+: 4776 6 9 Le
+: 4783 10 7 ben 
+: 4796 6 4 wie
+: 4803 3 7 der 
+: 4807 3 9 Spaß
+- 4810 4860
+- 4860
+: 4887 7 14 Hin
+: 4895 2 11 ter 
+: 4898 6 14 Huch
+: 4905 11 11 ting 
+: 4919 6 14 ist 
+: 4926 2 4 ein 
+: 4929 7 4 Gra
+: 4937 5 11 ben
+- 4942 4980
+- 4980
+: 5007 6 12 Der 
+: 5014 7 12 ist 
+: 5022 2 12 we
+: 5025 5 12 der 
+: 5037 6 11 breit 
+: 5045 5 9 noch 
+: 5052 4 11 tief
+- 5056 5094
+- 5094
+: 5121 6 11 Und 
+: 5128 6 11 dann 
+: 5135 3 11 kommt 
+: 5139 6 11 gleich 
+: 5151 6 9 »Ge
+: 5158 7 7 trän
+: 5166 4 4 ke 
+: 5171 6 11 Hoff
+: 5178 4 9 mann«
+- 5182 5223
+- 5223
+: 5250 6 9 Sag’ 
+: 5257 3 11 Be
+: 5261 8 9 scheid, 
+: 5271 6 7 wenn 
+: 5280 7 9 du 
+: 5288 2 7 mich
+: 5291 2 7 liebst
+E
