@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class PostGameHighScoresPagePO {
   constructor(
@@ -25,6 +25,23 @@ export class PostGameHighScoresPagePO {
 
   public get highScoresContainer() {
     return this.page.getByTestId('highscores-container');
+  }
+
+  /**
+   * The leaderboard share prompt now greets every qualifying score on the high-scores step. Specs
+   * that are not about the leaderboard decline it to get at the panel underneath. A no-op when the
+   * score did not qualify or the player already answered the prompt in an earlier run.
+   */
+  public async dismissLeaderboardPrompt() {
+    await this.highScoresContainer.waitFor();
+    const prompt = this.page.getByTestId('leaderboard-prompt');
+    try {
+      await prompt.waitFor({ state: 'visible', timeout: 3000 });
+    } catch {
+      return;
+    }
+    await this.page.getByTestId('leaderboard-decline').click();
+    await expect(prompt).not.toBeVisible();
   }
 
   public get selectSongButton() {

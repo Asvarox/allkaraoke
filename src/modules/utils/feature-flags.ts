@@ -3,12 +3,6 @@ export const FeatureFlags = {
   Eurovision: 'eurovision',
   RemoteMicConnectionType: 'remote_mics_connection_type',
   InitialInputLag: 'initial_input_lag',
-  NewVolume: 'new_volume',
-  DisableMobileMode: 'disable_mobile_mode',
-  DisableAutoFullscreen: 'disable_auto_fullscreen',
   InstantSongPreview: 'instant_song_preview',
-  OnlineMode: 'online_mode',
-  Leaderboard: 'leaderboard',
-  SongLeaderboard: 'song_leaderboard',
   NewMainMenu: 'new_main_menu',
 } as const;
