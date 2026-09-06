@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
 
-import { enableNewLandingPage, enableNewMainMenu, mockSongs } from '../helpers';
+import { enableNewLandingPage, enableNewMainMenu, mockLeaderboard, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
 import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
@@ -14,11 +14,21 @@ visual('Landing page', async ({ page, makeScreenshot }) => {
 
 // The `new_landing_menu` experiment's landing side. The control is captured by 'Landing page'
 // above; both need a shot of their own for as long as the experiment runs.
-visual('Landing page tiled', async ({ page, context, makeScreenshot }) => {
+//
+// Captured against a full board, which is the state the rail is laid out for: it fills the height
+// the cards beside it set and scrolls the rest, and a board of five rows would never show whether
+// it still does.
+visual('Landing page tiled', async ({ page, context, viewport, makeScreenshot }) => {
   await enableNewLandingPage({ page, context });
+  await mockLeaderboard({ page, context });
 
   await page.goto('/?e2e-test');
   await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();
+  // The board is a desktop-only rail on this page, so there is nothing to wait for on the narrow
+  // viewports — and waiting would fail them.
+  if (viewport.width >= 1024) {
+    await expect(page.getByTestId('leaderboard-row').first()).toBeVisible();
+  }
 
   await makeScreenshot();
 });
