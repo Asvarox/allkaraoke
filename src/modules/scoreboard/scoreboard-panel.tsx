@@ -62,7 +62,7 @@ function ScoreboardPanel({
     <Box
       // Padding and every width rule are the caller's: Tailwind classes of the same property do not
       // merge here, so anything a caller might need to override cannot be in the base
-      className={clsx('w-full items-stretch justify-start gap-1.5 bg-black/50', className)}
+      className={clsx('w-full items-stretch justify-start gap-1.5', className)}
       data-test={dataTest}>
       <Menu.Header as="h2">{title}</Menu.Header>
       <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>

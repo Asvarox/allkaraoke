@@ -105,7 +105,7 @@ function TiledLanding() {
         <div className="grid flex-1 gap-4 lg:gap-6 xl:grid-cols-[minmax(0,1fr)_32rem]">
           <div className="flex flex-col gap-3 lg:gap-4 xl:gap-6">
             <Box
-              className={`${MenuViewTransition.SING_A_SONG} flex-1 items-stretch justify-start gap-4 bg-black/60 p-4 lg:flex-row lg:gap-6 lg:p-6`}>
+              className={`${MenuViewTransition.SING_A_SONG} flex-1 items-stretch justify-start gap-4 p-4 lg:flex-row lg:gap-6 lg:p-6`}>
               <div className="flex min-w-0 flex-1 flex-col gap-8">
                 <Menu.Header>Free karaoke party game</Menu.Header>
                 <Typography className="text-md text-justify">
@@ -189,7 +189,7 @@ function TiledLanding() {
                 one part of the page a visitor is unlikely to go looking for, so it gets a real
                 button and the height to be seen. */}
             <Box
-              className={`${MenuViewTransition.SING_ONLINE} hidden shrink-0 flex-row items-center justify-start gap-6 bg-black/60 p-5 lg:flex`}>
+              className={`${MenuViewTransition.SING_ONLINE} hidden shrink-0 flex-row items-center justify-start gap-6 p-5 lg:flex`}>
               <div className="flex min-w-0 flex-1 flex-col gap-1">
                 <div className="flex items-center gap-3">
                   <Chip variant="orange">Preview</Chip>
@@ -211,7 +211,7 @@ function TiledLanding() {
               {tiles.map((tile, index) => (
                 <Box
                   key={tile.value}
-                  className={`${MenuViewTransition.TILES[index]} items-start justify-start gap-1 bg-black/60 p-3 sm:p-4`}>
+                  className={`${MenuViewTransition.TILES[index]} items-start justify-start gap-1 p-3 sm:p-4`}>
                   <Typography className="text-md leading-tight font-bold uppercase">{tile.value}</Typography>
                   <Typography className="text-sm leading-snug">{tile.label}</Typography>
                 </Box>
@@ -235,7 +235,7 @@ function TiledLanding() {
             Sticky and not fixed, so at the end of the scroll it settles above the footer instead of
             covering it — and blurred behind, because what it is pinned over is a pair of
             screenshots. */}
-        <div className="sticky bottom-3 z-10 flex flex-col gap-3 rounded-xl bg-black/30 p-2 backdrop-blur-sm sm:flex-row lg:hidden">
+        <div className="sticky bottom-0 z-10 flex flex-col gap-3 rounded-xl bg-black/30 p-2 backdrop-blur-sm sm:flex-row lg:hidden">
           <SmoothLink to="remote-mic/" className="flex-1">
             <PrimaryCta data-test="join-existing-game">
               <span className="flex flex-col items-center leading-tight">
@@ -262,6 +262,6 @@ const Screenshot = twx.img`shadow-5 aspect-video w-full rounded-md border-1 bord
 // Orange rather than the app's usual dark button: this is the only screen with a single thing it
 // wants the visitor to do, and every other surface here is already a dark card.
 const PrimaryCta = twx(ButtonLink)`bg-active! text-md h-auto w-full py-4 text-shadow-[0px_0px_3px_#000000] lg:text-lg`;
-const SecondaryCta = twx(ButtonLink)`subtle-focus text-md h-auto w-full bg-black/60 py-4 lg:text-lg`;
+const SecondaryCta = twx(ButtonLink)`subtle-focus text-md h-auto w-full py-4 lg:text-lg`;
 
 export default TiledLanding;

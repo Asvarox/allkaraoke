@@ -36,7 +36,7 @@ export const Menu = ({ title, children, className, spacing = 'regular', modal = 
 
 Menu.Header = twc(
   Typography,
-)`mobile:text-xl text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000]`;
+)`mobile:text-lg text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000]`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;
