@@ -64,9 +64,7 @@ function ScoreboardPanel({
       // merge here, so anything a caller might need to override cannot be in the base
       className={clsx('w-full items-stretch justify-start gap-1.5 bg-black/50', className)}
       data-test={dataTest}>
-      <Menu.SubHeader as="h2" className="text-active text-left">
-        {title}
-      </Menu.SubHeader>
+      <Menu.Header as="h2">{title}</Menu.Header>
       <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>
       {/* The mask fades whatever the bottom edge cuts through, so a row the list ran out of room for
           reads as more below rather than as a row that failed to draw. It falls on empty space, and

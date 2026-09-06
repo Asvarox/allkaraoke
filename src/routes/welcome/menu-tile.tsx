@@ -9,10 +9,9 @@ import { NavButton } from '~/modules/elements/nav-controls';
 type Props = Omit<ComponentProps<typeof NavButton>, 'children' | 'size' | 'variant'> & {
   /** Also the label mirrored to the remote mic, so it has to stay a plain string. */
   label: string;
+  displayLabel?: ReactNode;
   /** One line under the label saying what the tile leads to. Never shown on the remote. */
   hint: string;
-  /** `Badge`-style overlay pinned to the tile's corner, e.g. the "Preview" flag on Sing Online. */
-  badge?: ReactNode;
   /** `primary` is the top row (Sing a song / Sing online); `secondary` is the smaller row below. */
   variant?: 'primary' | 'secondary';
 };
@@ -22,7 +21,7 @@ type Props = Omit<ComponentProps<typeof NavButton>, 'children' | 'size' | 'varia
  * sizes itself — a tile fills whatever grid cell it is dropped into, so every size class here is
  * about the *text*; the box comes from the grid.
  */
-function MenuTile({ label, hint, badge, variant = 'secondary', className, ...props }: Props) {
+function MenuTile({ label, hint, displayLabel, variant = 'secondary', className, ...props }: Props) {
   const primary = variant === 'primary';
 
   return (
@@ -35,23 +34,22 @@ function MenuTile({ label, hint, badge, variant = 'secondary', className, ...pro
       // `[data-focused]` rule re-colours the hint: focus turns the whole tile orange, and a dimmed
       // white line on that is unreadable.
       className={twMerge(
-        "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left sm:px-6 sm:py-5 [&[data-focused='true']_[data-hint]]:text-black/60",
+        "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left sm:px-6 sm:py-6 [&[data-focused='true']_[data-hint]]:text-black/60",
         className,
       )}>
       <span className="flex w-full min-w-0 flex-col items-start gap-1 sm:gap-2">
         <span className={twMerge('w-full leading-tight text-balance', primary ? 'text-lg sm:text-xl' : 'text-lg')}>
-          {label}
+          {displayLabel || label}
         </span>
         <span
           data-hint
           className={twMerge(
-            'mobile:hidden w-full truncate font-normal tracking-widest normal-case opacity-70',
+            'mobile:hidden w-full truncate font-normal tracking-widest normal-case',
             primary ? 'text-sm' : 'text-xs',
           )}>
           {hint}
         </span>
       </span>
-      {badge}
     </NavButton>
   );
 }

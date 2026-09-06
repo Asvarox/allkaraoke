@@ -13,7 +13,7 @@ const variantClasses: Record<Variant, string> = {
   slate: 'bg-slate-600/40 border border-white/15 text-white/80',
 };
 
-const ChipBase = twx.div`box-border flex h-6 min-w-6 shrink-0 items-center justify-center gap-1 rounded px-1.5 text-xs font-semibold uppercase`;
+const ChipBase = twx.div`box-border inline-flex h-6 min-w-6 shrink-0 items-center justify-center gap-1 rounded px-1.5 text-xs font-semibold uppercase`;
 
 interface ChipProps extends Omit<ComponentProps<'div'>, 'color'> {
   variant?: Variant;
