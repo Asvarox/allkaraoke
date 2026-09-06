@@ -12,9 +12,6 @@ import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
 import SmoothLink from '~/modules/elements/smooth-link';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 import MenuFooter from '~/routes/welcome/menu-footer';
 import { MenuViewTransition } from '~/routes/welcome/menu-view-transitions';
@@ -67,11 +64,6 @@ function TiledLanding() {
 
   useBackground(true);
 
-  const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
-  // Asked here as well as inside the panel: with the board off there is no rail, and the cards
-  // should take the width back rather than sit next to an empty column.
-  const leaderboardEnabled = useLeaderboardEnabled();
-
   const nextPage = 'menu/';
   useHotkeys(
     'enter',
@@ -107,12 +99,10 @@ function TiledLanding() {
           <Logo />
         </header>
 
-        <div
-          className={`grid flex-1 gap-4 lg:gap-6 ${
-            // The menu's own rail column, to the rem: the board is the same panel on both screens and
-            // it morphs from one to the other, so a different width here would make it jump.
-            leaderboardEnabled ? 'xl:grid-cols-[minmax(0,1fr)_32rem]' : ''
-          }`}>
+        {/* The rail is the menu's own column, to the rem: the board is the same panel on both
+            screens and it morphs from one to the other, so a different width here would make it
+            jump. */}
+        <div className="grid flex-1 gap-4 lg:gap-6 xl:grid-cols-[minmax(0,1fr)_32rem]">
           <div className="flex flex-col gap-3 lg:gap-4 xl:gap-6">
             <Box
               className={`${MenuViewTransition.SING_A_SONG} flex-1 items-stretch justify-start gap-4 bg-black/60 p-4 lg:flex-row lg:gap-6 lg:p-6`}>
@@ -198,25 +188,23 @@ function TiledLanding() {
             {/* Its own row rather than a line of text: online play is the newest thing here and the
                 one part of the page a visitor is unlikely to go looking for, so it gets a real
                 button and the height to be seen. */}
-            {onlineModeEnabled && (
-              <Box
-                className={`${MenuViewTransition.SING_ONLINE} hidden shrink-0 flex-row items-center justify-start gap-6 bg-black/60 p-5 lg:flex`}>
-                <div className="flex min-w-0 flex-1 flex-col gap-1">
-                  <div className="flex items-center gap-3">
-                    <Chip variant="orange">Preview</Chip>
-                    <Typography className="text-md font-bold uppercase">Sing Online</Typography>
-                  </div>
-                  <Typography className="text-sm">
-                    Friends not in the room? Host a game they join from their own browser — same songs, same scoring.
-                  </Typography>
+            <Box
+              className={`${MenuViewTransition.SING_ONLINE} hidden shrink-0 flex-row items-center justify-start gap-6 bg-black/60 p-5 lg:flex`}>
+              <div className="flex min-w-0 flex-1 flex-col gap-1">
+                <div className="flex items-center gap-3">
+                  <Chip variant="orange">Preview</Chip>
+                  <Typography className="text-md font-bold uppercase">Sing Online</Typography>
                 </div>
-                <SmoothLink to="online/">
-                  <ButtonLink data-test="sing-online" className="px-5" size="small">
-                    Host or join an online room
-                  </ButtonLink>
-                </SmoothLink>
-              </Box>
-            )}
+                <Typography className="text-sm">
+                  Friends not in the room? Host a game they join from their own browser — same songs, same scoring.
+                </Typography>
+              </div>
+              <SmoothLink to="online/">
+                <ButtonLink data-test="sing-online" className="px-5" size="small">
+                  Host or join an online room
+                </ButtonLink>
+              </SmoothLink>
+            </Box>
 
             {/* Matched by position to the menu's second tile row, which is what these morph into */}
             <div className="grid shrink-0 grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4 xl:gap-6">

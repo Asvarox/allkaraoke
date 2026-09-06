@@ -136,6 +136,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await test.step('Skip to High Scores and update name', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     // v2 does not set player names pre-game; specific high-score name lookups are skipped.
     await pages.postGameHighScoresPage.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
   });
@@ -185,6 +186,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await test.step('Check if the already updated name is still save in High Scores', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);
   });
 });

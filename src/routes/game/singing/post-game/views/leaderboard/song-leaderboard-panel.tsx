@@ -27,9 +27,9 @@ interface Props {
  * gets told where they would have landed, which is the only reason to show it to them at all.
  */
 function SongLeaderboardPanel({ song, singSetup, leaderboard, className }: Props) {
-  const { songLeaderboardEnabled, hasLeaderboard, difficulty, score, name, country } = leaderboard;
+  const { hasLeaderboard, difficulty, score, name, country } = leaderboard;
 
-  const shouldFetch = songLeaderboardEnabled && hasLeaderboard;
+  const shouldFetch = hasLeaderboard;
 
   const { data, error, isLoading } = useSWR(
     shouldFetch ? songBoardUrl({ songId: song.id, tolerance: singSetup.tolerance, score }) : null,
@@ -68,8 +68,8 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className }: Props
     return listed;
   }, [data, name, country, score, song, singSetup.tolerance]);
 
-  // Behind its own flag, and away entirely for the dev-only debug widths above Easy — those are
-  // never stored, so the list would be permanently empty.
+  // Away entirely for the dev-only debug widths above Easy — those are never stored, so the list
+  // would be permanently empty.
   if (!shouldFetch) return null;
 
   return (

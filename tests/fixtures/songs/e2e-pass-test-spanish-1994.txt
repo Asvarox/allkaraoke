@@ -8,6 +8,7 @@
 #ALLKARAOKE_ID:e2e-pass-test-spanish-1994
 #VIDEO:v=koBUXESJZ8g
 #ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_OLDVOLUME:1
 : 15 2 -3 It
 : 18 2 -3 was
 : 24 10 2 Christ

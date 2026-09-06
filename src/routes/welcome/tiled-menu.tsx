@@ -6,9 +6,6 @@ import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import LayoutGame from '~/routes/layout-game';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 import MenuFooter from '~/routes/welcome/menu-footer';
@@ -28,10 +25,6 @@ function TiledMenu() {
   useBackground(true);
 
   const navigate = useSmoothNavigate();
-  const onlineModeEnabled = useFeatureFlag(FeatureFlags.OnlineMode);
-  // Asked here as well as inside the panel: with the board off there is no rail, and the tiles should
-  // take the width back rather than sit next to an empty column.
-  const leaderboardEnabled = useLeaderboardEnabled();
 
   useBackgroundMusic(/* true */ false);
   // Tiles sit in a grid, so all four arrows navigate by position — see `handleSpatialNavigation`.
@@ -65,15 +58,12 @@ function TiledMenu() {
           </div>
         </header>
 
-        <div
-          className={`grid min-h-0 flex-1 gap-4 lg:gap-6 ${
-            leaderboardEnabled ? 'xl:grid-cols-[minmax(0,1fr)_32rem]' : ''
-          }`}>
+        <div className="grid min-h-0 flex-1 gap-4 lg:gap-6 xl:grid-cols-[minmax(0,1fr)_32rem]">
           <div className="mobile:gap-3 flex min-h-0 flex-col gap-4 lg:gap-6">
             <KeyboardNavContext value={register}>
-              {/* `auto-cols-fr` with column flow rather than a fixed column count: the top row is one
-                  tile or two depending on the online-mode flag, and the bottom row is however many
-                  supporting screens exist — neither should have to restate a column count. */}
+              {/* `auto-cols-fr` with column flow rather than a fixed column count: the top row is the
+                  two ways into a game, and the bottom row is however many supporting screens exist —
+                  neither should have to restate a column count. */}
               <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 {/* The view-transition names pair these tiles with the blocks the new landing page
                     puts in the same roles — see `menu-view-transitions.ts` for the whole mapping. */}
@@ -86,22 +76,20 @@ function TiledMenu() {
                   className={MenuViewTransition.SING_A_SONG}
                   onClick={() => navigate('game/')}
                 />
-                {onlineModeEnabled && (
-                  <MenuTile
-                    name="online"
-                    variant="primary"
-                    label="Sing online"
-                    displayLabel={
-                      <div className="flex items-center gap-2">
-                        <Chip variant="orange">Preview</Chip> Sing online
-                      </div>
-                    }
-                    hint="Play with friends remotely"
-                    remoteIcon="play"
-                    className={MenuViewTransition.SING_ONLINE}
-                    onClick={() => navigate('online/')}
-                  />
-                )}
+                <MenuTile
+                  name="online"
+                  variant="primary"
+                  label="Sing online"
+                  displayLabel={
+                    <div className="flex items-center gap-2">
+                      <Chip variant="orange">Preview</Chip> Sing online
+                    </div>
+                  }
+                  hint="Play with friends remotely"
+                  remoteIcon="play"
+                  className={MenuViewTransition.SING_ONLINE}
+                  onClick={() => navigate('online/')}
+                />
               </div>
               <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 <MenuTile
@@ -138,12 +126,10 @@ function TiledMenu() {
           </div>
           {/* One instance, not a desktop/narrow pair: it moves from the rail to the bottom of the
               single column purely by where the grid puts it. */}
-          {leaderboardEnabled && (
-            <LeaderboardPanel
-              className={`${MenuViewTransition.LEADERBOARD} xl:h-full`}
-              listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
-            />
-          )}
+          <LeaderboardPanel
+            className={`${MenuViewTransition.LEADERBOARD} xl:h-full`}
+            listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
+          />
         </div>
 
         <MenuFooter />
