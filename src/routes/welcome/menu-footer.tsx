@@ -18,18 +18,7 @@ const socials: Array<{ name: string; icon: IconName; href: string }> = [
  */
 function MenuFooter() {
   return (
-    <footer className="typography mobile:gap-4 flex flex-wrap items-end justify-end gap-10 border-t border-white/10 pt-3 text-white/55">
-      <div className="flex flex-col gap-2">
-        <SectionLabel>Get in touch</SectionLabel>
-        <div className="flex items-center gap-4 text-lg">
-          {socials.map(({ name, icon, href }) => (
-            <a key={name} href={href} target="_blank" rel="noreferrer" aria-label={name} className="flex">
-              <Icon icon={icon} />
-            </a>
-          ))}
-        </div>
-      </div>
-
+    <footer className="typography mobile:gap-4 flex flex-wrap items-end justify-between gap-10 border-t border-white/10 pt-3 text-white/55">
       {/* Same attribution the menu has always carried, kept as its own view-transition target so it
           doesn't slide across the screen on the way in and out of the menu. */}
       <div className="flex flex-col gap-1 text-xs [view-transition-name:background-music-credit]">
@@ -46,10 +35,20 @@ function MenuFooter() {
           </a>
         </span>
       </div>
+      <div className="flex flex-col gap-2">
+        <SectionLabel>Get in touch</SectionLabel>
+        <div className="flex items-center gap-4 text-lg">
+          {socials.map(({ name, icon, href }) => (
+            <a key={name} href={href} target="_blank" rel="noreferrer" aria-label={name} className="flex">
+              <Icon icon={icon} />
+            </a>
+          ))}
+        </div>
+      </div>
     </footer>
   );
 }
 
-const SectionLabel = twc.span`text-xs font-bold tracking-widest uppercase opacity-70`;
+const SectionLabel = twc.span`text-xs font-bold tracking-widest uppercase`;
 
 export default MenuFooter;

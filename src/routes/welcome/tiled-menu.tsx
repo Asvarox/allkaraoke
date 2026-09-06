@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import { Badge } from '~/modules/elements/akui/badge';
+import { Chip } from '~/modules/elements/akui/chip';
 import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
@@ -10,6 +10,7 @@ import LayoutGame from '~/routes/layout-game';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 import MenuFooter from '~/routes/welcome/menu-footer';
 import MenuTile from '~/routes/welcome/menu-tile';
+import { MenuViewTransition } from '~/routes/welcome/menu-view-transitions';
 
 /**
  * The main menu as tiles rather than the stacked button list every other screen uses: the two ways
@@ -17,7 +18,7 @@ import MenuTile from '~/routes/welcome/menu-tile';
  * underneath, and the leaderboard takes a full-height rail on the right. Below `lg` the rail has
  * nowhere to go, so the whole thing folds into one column with the board under the tiles.
  *
- * The test side of the `new_main_menu` experiment - see `welcome.tsx` for the switch and
+ * The menu side of the `new_landing_menu` experiment - see `welcome.tsx` for the switch and
  * `classic-menu.tsx` for the control.
  */
 function TiledMenu() {
@@ -64,21 +65,29 @@ function TiledMenu() {
                   two ways into a game, and the bottom row is however many supporting screens exist —
                   neither should have to restate a column count. */}
               <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
+                {/* The view-transition names pair these tiles with the blocks the new landing page
+                    puts in the same roles — see `menu-view-transitions.ts` for the whole mapping. */}
                 <MenuTile
                   name="sing-a-song"
                   variant="primary"
                   label="Sing a song"
                   hint="Sing solo or start a party"
                   remoteIcon="play"
+                  className={MenuViewTransition.SING_A_SONG}
                   onClick={() => navigate('game/')}
                 />
                 <MenuTile
                   name="online"
                   variant="primary"
-                  label="Sing Online"
+                  label="Sing online"
+                  displayLabel={
+                    <div className="flex items-center gap-2">
+                      <Chip variant="orange">Preview</Chip> Sing online
+                    </div>
+                  }
                   hint="Play with friends remotely"
                   remoteIcon="play"
-                  badge={<Badge>Preview</Badge>}
+                  className={MenuViewTransition.SING_ONLINE}
                   onClick={() => navigate('online/')}
                 />
               </div>
@@ -87,20 +96,29 @@ function TiledMenu() {
                   name="select-input"
                   label="Setup Microphones"
                   hint="Configure audio"
+                  className={MenuViewTransition.TILES[0]}
                   onClick={() => navigate('select-input/')}
                 />
                 <MenuTile
                   name="manage-songs"
                   label="Manage Songs"
                   hint="Select languages, add new songs"
+                  className={MenuViewTransition.TILES[1]}
                   onClick={() => navigate('manage-songs/')}
                 />
-                <MenuTile name="history" label="History" hint="Past scores" onClick={() => navigate('history/')} />
+                <MenuTile
+                  name="history"
+                  label="History"
+                  hint="Past scores"
+                  className={MenuViewTransition.TILES[2]}
+                  onClick={() => navigate('history/')}
+                />
                 <MenuTile
                   name="settings"
                   label="Settings"
                   hint="Graphics, additional options"
                   remoteIcon="settings"
+                  className={MenuViewTransition.TILES[3]}
                   onClick={() => navigate('settings/')}
                 />
               </div>
@@ -108,7 +126,10 @@ function TiledMenu() {
           </div>
           {/* One instance, not a desktop/narrow pair: it moves from the rail to the bottom of the
               single column purely by where the grid puts it. */}
-          <LeaderboardPanel className="xl:h-full" listClassName="xl:h-auto xl:min-h-0 xl:flex-1" />
+          <LeaderboardPanel
+            className={`${MenuViewTransition.LEADERBOARD} xl:h-full`}
+            listClassName="xl:h-auto xl:min-h-0 xl:flex-1"
+          />
         </div>
 
         <MenuFooter />

@@ -16,7 +16,7 @@ import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
  * The main menu as it has always been: one centred column of buttons under the logo, with the
  * leaderboard alongside it on a wide screen and below it on a narrow one.
  *
- * The control side of the `new_main_menu` experiment - see `welcome.tsx` for the switch and
+ * The control side of the `new_landing_menu` experiment's menu - see `welcome.tsx` for the switch and
  * `tiled-menu.tsx` for the test.
  */
 function ClassicMenu() {

@@ -1,11 +1,22 @@
 import { expect } from '@playwright/test';
 
-import { enableNewMainMenu, mockSongs } from '../helpers';
+import { enableNewLandingPage, enableNewMainMenu, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
 import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
 visual('Landing page', async ({ page, makeScreenshot }) => {
+  await page.goto('/?e2e-test');
+  await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();
+
+  await makeScreenshot();
+});
+
+// The `new_landing_menu` experiment's landing side. The control is captured by 'Landing page'
+// above; both need a shot of their own for as long as the experiment runs.
+visual('Landing page tiled', async ({ page, context, makeScreenshot }) => {
+  await enableNewLandingPage({ page, context });
+
   await page.goto('/?e2e-test');
   await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();
 
@@ -21,7 +32,7 @@ visual('Main menu', async ({ page, makeScreenshot }) => {
   await makeScreenshot();
 });
 
-// The `new_main_menu` experiment's test side. The control is captured by 'Main menu' above; both
+// The `new_landing_menu` experiment's menu side. The control is captured by 'Main menu' above; both
 // need a shot of their own for as long as the experiment runs.
 visual('Main menu tiled', async ({ page, context, makeScreenshot }) => {
   await enableNewMainMenu({ page, context });

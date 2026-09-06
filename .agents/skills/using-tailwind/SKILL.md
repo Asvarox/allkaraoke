@@ -39,3 +39,6 @@ Prefer components from `src/modules/elements/AKUI/` over raw HTML + classes:
 - **`Box`** (`~/modules/elements/AKUI/Primitives/Box`) — polymorphic container with `flex flex-col items-center justify-center rounded-md bg-black/50`. Override with `className`. Not suitable where those defaults are unwanted.
 - **`Menu` / `Menu.Button` / `Menu.Header`** — for menu screens (main menu, settings).
 - Use `twc(Typography)` or `twc(Box)` to create reusable AKUI-based TWC variants.
+
+## Deprecated
+* DO NOT USE `landscap:` or `mobile:` prefixes, use standard breakpoints instead.

@@ -32,10 +32,21 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
     window.isE2ETests = true;
   });
 };
-/** Puts the tiled main menu up — the test side of the `new_main_menu` experiment. */
+/** Puts the tiled main menu up — the menu side of the `new_landing_menu` experiment. */
 export const enableNewMainMenu = async ({ context }: { page: Page; context: BrowserContext }) => {
   await context.addInitScript(() => {
     window.isE2ENewMainMenu = true;
+  });
+};
+
+/**
+ * Puts the card-grid landing page up — the landing side of the `new_landing_menu` experiment. The
+ * two sides are opted into separately here, so a spec can reproduce any of the experiment's four
+ * arms.
+ */
+export const enableNewLandingPage = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ENewLandingPage = true;
   });
 };
 

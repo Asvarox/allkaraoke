@@ -18,7 +18,7 @@ function LeaderboardPanel({ className, listClassName }: { className?: string; li
     // Same box the main menu sits in, so the panel reads as part of it rather than a bolted-on
     // widget — and the same `ScoreboardPanel` the post-game boards use, so a board looks like a board
     <ScoreboardPanel
-      className={`p-4 sm:p-7 ${className ?? ''}`}
+      className={`p-4 sm:p-6 ${className ?? ''}`}
       // Passed through so a caller can trade the shared five-row list height for one of its own —
       // the tiled menu's rail is as tall as the screen and would otherwise stop a long way short.
       listClassName={listClassName}
