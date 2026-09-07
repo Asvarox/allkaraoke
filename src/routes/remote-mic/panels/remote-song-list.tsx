@@ -181,7 +181,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
             return (
               <SongListItem
-                className="overflow-hidden border-b border-black bg-black/60 active:bg-black"
+                className="bg-black/75 active:bg-black"
                 data-test={`song-group-${mainArtistName}`}
                 data-song-count={song.length}
                 onClick={onClick}
@@ -218,7 +218,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
           return (
             <SongListItem
-              className={`${isOnSavedList ? 'bg-black/50' : 'bg-black/30'} ${isExpanded ? 'pl-16' : ''}`}
+              className={`${isOnSavedList ? 'bg-black/50' : ''} ${isExpanded ? 'pl-16' : ''}`}
               data-test={song.id}
               left={<Flag language={song.language} className="h-8 w-8 rounded-full object-cover" />}
               topText={song.title}
@@ -276,11 +276,17 @@ interface ItemProps extends ComponentProps<'div'> {
   bottomText: React.ReactNode;
 }
 
+/**
+ * A row in the list. `bg-black/40` is the default card surface, the same one `Box` is built from —
+ * callers only spell out a background when their row deviates from it: `/50` for a song already on
+ * the saved list, `/75` for an artist group header, which is a bar and matches the toolbar directly
+ * above the list rather than the rows under it.
+ */
 const SongListItem = ({ className, left, action, topText, bottomText, ...props }: ItemProps) => {
   return (
     <div
       className={cn(
-        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/15 px-3 transition-all duration-100`,
+        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/40 px-3 transition-all duration-100`,
         className,
       )}
       {...props}>
