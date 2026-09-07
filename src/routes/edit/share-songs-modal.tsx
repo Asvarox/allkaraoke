@@ -28,6 +28,7 @@ export const shareSong = async (id: string) => {
     }
   } catch (e) {
     console.error(e);
+    posthog.captureException(e);
   }
 };
 

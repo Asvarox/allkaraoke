@@ -1,3 +1,5 @@
+import posthog from 'posthog-js';
+
 import InputInterface from '~/modules/game-engine/input/interface';
 import AubioStrategy from '~/modules/game-engine/input/mic-strategies/aubio';
 import events from '~/modules/game-events/game-events';
@@ -72,8 +74,10 @@ export class MicInput implements InputInterface {
         events.micMonitoringStarted.dispatch();
       } catch (e) {
         console.error(e);
+        posthog.captureException(e);
       }
     } catch (e) {
+      posthog.captureException(e, { message: 'MicInput.startMonitoring' });
       console.warn(e);
     }
   };

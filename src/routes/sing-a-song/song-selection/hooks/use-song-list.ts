@@ -1,3 +1,4 @@
+import posthog from 'posthog-js';
 import { ReactNode, useMemo } from 'react';
 
 import { SongPreview } from '~/interfaces';
@@ -95,6 +96,7 @@ export default function useSongList(additionalSong: string | null) {
           group.songs.push({ index: songIndexMap.get(song.id) ?? 0, song, isPopular: popular.includes(song.id) });
         } catch (e) {
           console.error(e);
+          posthog.captureException(e);
         }
       });
 

@@ -1,4 +1,5 @@
 import { range } from 'es-toolkit';
+import posthog from 'posthog-js';
 
 import { getInputId } from '~/modules/players/utils';
 import userMediaService from '~/modules/user-media/user-media-service';
@@ -56,6 +57,7 @@ export class MicrophoneInputSource {
 
       devices = await userMediaService.enumerateDevices();
     } catch (e) {
+      posthog.captureException(e, { message: 'Microphone.getInputs' });
       console.warn(e);
     }
 
