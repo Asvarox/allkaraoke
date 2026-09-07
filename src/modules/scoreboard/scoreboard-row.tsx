@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { ReactNode, useEffect, useRef } from 'react';
 
+import Box from '~/modules/elements/akui/primitives/box';
 import ScoreText from '~/routes/game/singing/game-overlay/components/score-text';
 
 interface Props {
@@ -44,13 +45,14 @@ function ScoreboardRow({
   }, [scrollIntoView]);
 
   return (
-    <div
+    <Box
       ref={ref}
       className={clsx(
-        'typography flex items-center gap-2 rounded-xl px-2 py-2 text-sm',
+        'typography flex-row! items-center gap-2 px-2 py-2 text-sm',
         // The same ring the focused controls elsewhere on the screen carry, so the player's own row
-        // is found the way everything else on a TV is found
-        highlighted ? 'subtle-focus bg-black/90' : 'bg-black/55',
+        // is found the way everything else on a TV is found. The highlighted row also sits a step
+        // above the default surface, so it reads as picked out even without the ring.
+        highlighted && 'subtle-focus bg-black/75',
       )}
       data-test={dataTest}>
       <div className="text-active text-md w-[2ch] shrink-0 text-right tabular-nums">{position}</div>
@@ -64,7 +66,7 @@ function ScoreboardRow({
         </span>
         {meta && <div className="text-xs opacity-70">{meta}</div>}
       </div>
-    </div>
+    </Box>
   );
 }
 
@@ -75,8 +77,8 @@ function ScoreboardRow({
  */
 export function ScoreboardPlaceholderRow({ position }: { position: number }) {
   return (
-    <div
-      className="typography flex items-center gap-2 rounded-xl bg-black/25 px-2 py-2 text-sm opacity-40"
+    <Box
+      className="typography flex-row! items-center gap-2 px-2 py-2 text-sm opacity-40"
       data-placeholder
       data-test="scoreboard-placeholder-row"
       aria-hidden>
@@ -87,7 +89,7 @@ export function ScoreboardPlaceholderRow({ position }: { position: number }) {
         <span className="font-semibold">&nbsp;</span>
         <div className="text-xs">&nbsp;</div>
       </div>
-    </div>
+    </Box>
   );
 }
 

@@ -1,9 +1,11 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 
+import { Button } from '~/modules/elements/akui/button';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 import { ControlDescriptor } from '~/routes/keyboard-help/controls';
 
 import { MirrorKeyboard } from './keyboard';
+import { MicPillShell } from './volume-indicator';
 
 export default {
   title: 'Remote Mic/Mirror Keyboard',
@@ -29,14 +31,20 @@ const settingsKeyboard: HelpEntry = {
   ],
 };
 
-// The always-compact mic preview: mirrors VolumeIndicator's container sizing (volume-indicator.tsx)
-// without its network-client chain, so the story stays renderable in isolation.
+// The real mic pill, minus the network client its colour button talks to — so the shell's sizing is
+// the actual one rather than a copy of it that can drift.
 function MicPreviewPlaceholder() {
   return (
-    <div className="relative h-[6.5rem] min-h-[6.5rem] w-full rounded-md border border-white bg-white/10 landscape:h-auto landscape:max-h-[300px] landscape:min-h-[200px] landscape:flex-1">
-      <span className="text-default absolute inset-0 flex items-center justify-center">Mic preview</span>
-      <button className="text-default absolute right-4 bottom-4 rounded bg-white/20 p-3 text-xs">Join game</button>
-    </div>
+    <MicPillShell
+      playerNumber={0}
+      volume={0.03}
+      isMicOn
+      action={
+        <Button size="mini" className="z-1 ml-auto" fullWidth={false}>
+          Change
+        </Button>
+      }
+    />
   );
 }
 
