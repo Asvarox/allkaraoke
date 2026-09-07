@@ -12,6 +12,7 @@ import {
 import { TwcComponentProps } from 'react-twc';
 
 import Box from '~/modules/elements/akui/primitives/box';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
@@ -194,12 +195,12 @@ const OptionIcon = twx.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-x
 
 // `justify-start` undoes `Box`'s `justify-center`: a centred flex column that overflows pushes its
 // leading items past the scroll origin, where no amount of scrolling can reach them.
-// `bg-slate-800` + border is the same surface a modal `Menu` is made of, so the popup reads as part
-// of the app. `Box`'s own `bg-black/30` disappears against a dark backdrop once the list overflows
+// The shared `dialogSurface` — the same surface a modal `Menu` is made of, so the popup reads as
+// part of the app. `Box`'s own translucent black disappears against a dark backdrop once the list overflows
 // past whatever it is anchored in.
 const SelectMenu = twx(
   Box,
-)`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto border border-white/10 bg-slate-800 p-1`;
+)`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto p-1 ${dialogSurface}`;
 
 // `text-lg` (with the same `mobile:text-md` breakpoint) matches the committed value's size in the
 // trigger, which sits in an `Input` at the default `small` size.

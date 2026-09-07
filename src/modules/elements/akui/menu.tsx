@@ -3,6 +3,7 @@ import { ComponentProps, HTMLProps, PropsWithChildren, ReactNode } from 'react';
 import { MenuButton } from '~/modules/elements/akui/menu/menu-button';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import isE2E from '~/modules/utils/is-e2-e';
 import { twx } from '~/utils/twx';
 
@@ -20,14 +21,14 @@ const MenuSubHeader = twx(Typography)`text-lg`;
 interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, 'title'> {
   title?: ReactNode;
   spacing?: 'regular' | 'tight';
-  /** The surface modal content is built from — border + slate-800 background, so it reads as part
-   * of the app rather than a system dialog. Set on the top-level `Menu` a `Modal` wraps. */
+  /** Build this menu from the shared `dialogSurface`, so it reads as part of the app rather than a
+   * system dialog. Set on the top-level `Menu` a `Modal` wraps. */
   modal?: boolean;
 }
 export const Menu = ({ title, children, className, spacing = 'regular', modal = false, ref, ...props }: MenuProps) => (
   <MenuContainer
     {...props}
-    className={`${modal ? 'border border-white/10 bg-slate-800 ' : ''}${className ?? ''} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-6'}`}
+    className={`${modal ? `${dialogSurface} ` : ''}${className ?? ''} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-6'}`}
     ref={ref}>
     {title && <MenuHeader>{title}</MenuHeader>}
     {children}

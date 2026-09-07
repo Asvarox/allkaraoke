@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { PropsWithChildren } from 'react';
 import { createPortal } from 'react-dom';
 
-import { twx } from '~/utils/twx';
+import { Backdrop } from '~/modules/elements/akui/backdrop';
 interface Props extends PropsWithChildren {
   open: boolean;
   onClose?: () => void;
@@ -55,7 +55,3 @@ export default function Modal({ children, open, onClose, withPortal = false, lev
 
   return withPortal ? createPortal(content, document.body) : content;
 }
-
-const Backdrop = twx(
-  motion.div,
-)`fixed top-0 left-0 h-screen w-screen bg-black/75 [background-image:radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] [background-size:10px_10px] backdrop-blur-[20px]`;

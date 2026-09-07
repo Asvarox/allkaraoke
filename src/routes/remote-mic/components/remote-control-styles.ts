@@ -1,14 +1,16 @@
 /**
- * Slightly darker background shared by the remote-mic's "selector"-style controls — the switcher, the
- * checkbox and the numeric stepper — so they read as one family and stand out a touch against the
- * panel. Buttons deliberately keep the standard background: their icon/label layout already reads as
- * a distinct control, so they don't need the extra contrast.
+ * The button surface, restated for the remote-mic's "selector"-style controls — the switcher, the
+ * checkbox and the numeric stepper. Anything interactive carries the same, more prominent fill as a
+ * button, so a stepper sitting in a row of buttons reads as the same kind of thing rather than as a
+ * slightly different one.
  *
- * `disabled:bg-gray-500!` re-asserts the base button's disabled colour: the darker background is a
- * plain (higher-priority) class that `cn` would otherwise let win even for disabled controls,
- * washing out the greyed-out look. It's inert on non-button elements (a `div` is never `:disabled`).
+ * The stepper is a plain element, not a `Button`, so it would otherwise fall through to the panel's
+ * own surface; `important` keeps it from being reset by a caller's layout classes.
+ *
+ * `disabled:bg-gray-500!` re-asserts the base button's disabled colour, which the fill above would
+ * otherwise wash out. It's inert on non-button elements (a `div` is never `:disabled`).
  */
-export const remoteSelectorBackground = 'bg-black/65! disabled:bg-gray-500!';
+export const remoteSelectorBackground = 'bg-black/55! disabled:bg-gray-500!';
 
 /**
  * Height of a remote-mic control, matching AKUI's `size="small"` button (`h-14`, `mobile:h-12`) that

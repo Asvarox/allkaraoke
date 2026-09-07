@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect';
 
+import Box from '~/modules/elements/akui/primitives/box';
 import styles from '~/modules/game-engine/drawing/styles';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
@@ -14,7 +15,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
   const [detailedScore, maxScore] = player.detailedScore;
 
   return (
-    <div className="relative box-border flex h-8 w-full flex-row gap-1 rounded-xl bg-black/50 p-1 2xl:h-12">
+    <Box className="relative h-8 w-full flex-row! gap-1 p-1 2xl:h-12">
       <ScoreBar
         score={segment > -1 ? detailedScore.rap + detailedScore.freestyle + detailedScore.normal : 0}
         maxScore={maxScore.rap + maxScore.freestyle + maxScore.normal}
@@ -60,7 +61,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
           />
         )}
       </span>
-    </div>
+    </Box>
   );
 }
 

@@ -10,6 +10,7 @@ import {
 } from 'react';
 import { TwcComponentProps } from 'react-twc';
 
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
@@ -130,7 +131,7 @@ Autocomplete.displayName = 'Autocomplete';
 
 const Container = twx.div`relative`;
 
-const AutocompleteMenu = twx.div`absolute z-2 mt-[0.1em] max-h-[6.4em] w-full overflow-y-auto bg-black`;
+const AutocompleteMenu = twx.div`absolute z-2 mt-[0.1em] max-h-[6.4em] w-full overflow-y-auto ${dialogSurface}`;
 
 const AutocompleteMenuitem = twx.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
   'typography cursor-pointer truncate overflow-hidden p-[0.3em] whitespace-nowrap',

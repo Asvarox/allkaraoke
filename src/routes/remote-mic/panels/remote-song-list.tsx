@@ -181,7 +181,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
             return (
               <SongListItem
-                className="overflow-hidden border-b border-black bg-black/60 active:bg-black/100"
+                className="overflow-hidden border-b border-black bg-black/60 active:bg-black"
                 data-test={`song-group-${mainArtistName}`}
                 data-song-count={song.length}
                 onClick={onClick}
@@ -196,13 +196,13 @@ function RemoteSongList({ connectionStatus }: Props) {
                 action={
                   isExpanded ? (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
                       data-test="remove-song-button">
                       CLOSE
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
                       data-test="add-song-button">
                       EXPAND
                     </button>
@@ -228,7 +228,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                 <>
                   {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
                       onClick={(e) => {
                         e.stopPropagation();
                         void serverRpc.songs.select(song.id);
@@ -239,7 +239,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                   )}
                   {isOnSavedList ? (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
                       data-test="remove-song-button"
                       onClick={(e) => {
                         e.stopPropagation();
@@ -249,7 +249,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
                       data-test="add-song-button"
                       onClick={(e) => {
                         e.stopPropagation();

@@ -161,6 +161,6 @@ const LanguageName = twx.span`transition-[300ms]`;
 
 const LanguageEntry = twx(
   MenuButton,
-)`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50 data-[excluded=true]:data-[focused=false]:bg-black/55`;
+)`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50`;
 
 export default ExcludeLanguagesView;
