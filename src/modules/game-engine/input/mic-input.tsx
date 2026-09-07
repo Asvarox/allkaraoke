@@ -1,5 +1,3 @@
-import { captureException } from '@sentry/react';
-
 import InputInterface from '~/modules/game-engine/input/interface';
 import AubioStrategy from '~/modules/game-engine/input/mic-strategies/aubio';
 import events from '~/modules/game-events/game-events';
@@ -73,11 +71,9 @@ export class MicInput implements InputInterface {
 
         events.micMonitoringStarted.dispatch();
       } catch (e) {
-        captureException(e);
         console.error(e);
       }
     } catch (e) {
-      captureException(e, { level: 'warning', extra: { message: 'MicInput.startMonitoring' } });
       console.warn(e);
     }
   };

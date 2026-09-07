@@ -1,4 +1,3 @@
-import { captureException } from '@sentry/react';
 import bezier from 'bezier-easing';
 
 import { noDistanceNoteTypes } from '~/consts';
@@ -57,7 +56,7 @@ export default class CanvasDrawing {
       try {
         this.shaders = new Shaders(this.canvas);
       } catch (e) {
-        captureException(e);
+        console.error(e);
       }
     }
   };

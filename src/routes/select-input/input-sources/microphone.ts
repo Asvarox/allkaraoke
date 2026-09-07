@@ -1,4 +1,3 @@
-import { captureException } from '@sentry/react';
 import { range } from 'es-toolkit';
 
 import { getInputId } from '~/modules/players/utils';
@@ -57,7 +56,6 @@ export class MicrophoneInputSource {
 
       devices = await userMediaService.enumerateDevices();
     } catch (e) {
-      captureException(e, { level: 'warning', extra: { message: 'Microphone.getInputs' } });
       console.warn(e);
     }
 

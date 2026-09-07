@@ -1,4 +1,3 @@
-import { captureException } from '@sentry/react';
 import {
   createContext,
   useContext,
@@ -447,10 +446,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const coverableElements = elementList.current.length - screenOnlyNames.current.size;
     const fullCoverage = collected.length > 0 && screenControls === coverableElements;
     if (collected.length > 0 && !fullCoverage && process.env.NODE_ENV !== 'production') {
-      captureException(
-        new Error(
-          `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`,
-        ),
+      console.error(
+        `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`,
       );
     }
     // A COPY, not `collected` itself: `register` refreshes entries in place when a child re-renders

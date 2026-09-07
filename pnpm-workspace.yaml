@@ -2,7 +2,6 @@ packages:
   - '.'
 
 allowBuilds:
-  '@sentry/cli': true
   core-js: false
   esbuild: true
   msgpackr-extract: true

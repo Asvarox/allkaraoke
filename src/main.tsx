@@ -7,13 +7,6 @@ import '~/modules/utils/expose-singletons';
 import '~/modules/utils/wdyr';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import {
-  browserTracingIntegration,
-  init,
-  setUser,
-  thirdPartyErrorFilterIntegration,
-  withProfiler,
-} from '@sentry/react';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
 import { lazy, StrictMode, Suspense } from 'react';
@@ -25,46 +18,11 @@ import App from '~/app';
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { normalizeSting } from '~/modules/songs/utils/get-song-id';
-import isDev from '~/modules/utils/is-dev';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
 import { randomInt } from '~/modules/utils/random-value';
-import sentryIgnoreErrors from '~/modules/utils/sentry-ignore-errors';
 import storage from '~/modules/utils/storage';
 import songStats from '~/routes/landing-page/song-stats.json';
-
-const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
-
-if (isSentryEnabled) {
-  init({
-    integrations: [
-      browserTracingIntegration({
-        enableInp: true,
-      }),
-      thirdPartyErrorFilterIntegration({
-        // Specify the application keys that you specified in the Sentry bundler plugin
-        filterKeys: ['allkaraoke-party-sentry-key'],
-
-        // Defines how to handle errors that contain third party stack frames.
-        // Possible values are:
-        // - 'drop-error-if-contains-third-party-frames'
-        // - 'drop-error-if-exclusively-contains-third-party-frames'
-        // - 'apply-tag-if-contains-third-party-frames'
-        // - 'apply-tag-if-exclusively-contains-third-party-frames'
-        behaviour: 'apply-tag-if-contains-third-party-frames',
-      }),
-    ],
-
-    dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
-    ignoreErrors: sentryIgnoreErrors,
-    // Set tracesSampleRate to 1.0 to capture 100%
-    // of transactions for performance monitoring.
-    // We recommend adjusting this value in production
-    tracesSampleRate: isE2E() ? 0 : 0.01,
-    environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
-    tunnel: '/stry-tunnel',
-  });
-}
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
@@ -91,10 +49,6 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
 
         ph.alias(storedName, storedUser);
       }
-
-      if (isSentryEnabled) {
-        setUser({ id: storedUser });
-      }
     },
   });
   // posthog.featureFlags.override({ websockets_remote_mics: false });
@@ -114,13 +68,11 @@ const LazyToastContainer = lazy(() =>
   import('react-toastify').then(({ ToastContainer }) => ({ default: ToastContainer })),
 );
 
-const AppWithProfiler = withProfiler(App);
-
 root.render(
   <StrictMode>
     <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
       <CacheProvider value={emotionCache}>
-        <AppWithProfiler />
+        <App />
         <NoPrerender>
           <Suspense>
             <LazyToastContainer position="bottom-left" theme={'colored'} limit={3} />

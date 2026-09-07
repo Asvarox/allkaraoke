@@ -52,7 +52,6 @@ jobs:
         shardTotal: [3]
     runs-on: ubuntu-latest
     env:
-      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     container:
       image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
@@ -179,7 +178,6 @@ jobs:
       pull-requests: write # allows commenting on a PR
     runs-on: ubuntu-latest
     env:
-      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
       - uses: actions/checkout@v7
@@ -223,12 +221,11 @@ jobs:
       name: production
       url: https://allkaraoke.party/
     env:
-      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 200 # needed for Sentry and release-note commit range collection
+          fetch-depth: 200 # needed for release-note commit range collection
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
@@ -255,15 +252,6 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: pnpm exec partykit deploy --domain online.allkaraoke.party
 
-      - name: Create Sentry release
-        uses: getsentry/action-release@v1
-        env:
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
-        with:
-          environment: production
-          sourcemaps: './build'
       - name: Add Deployment PostHog Annotation
         uses: actions/github-script@v8
         env:
@@ -350,7 +338,6 @@ jobs:
       name: prs
       url: ${{ steps.deploy-report.outputs.deployment-url }}
     env:
-      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
       - uses: actions/checkout@v5

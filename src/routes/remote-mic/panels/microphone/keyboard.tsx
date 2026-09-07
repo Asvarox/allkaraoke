@@ -1,4 +1,3 @@
-import { captureException } from '@sentry/react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 import { twc } from 'react-twc';
@@ -27,9 +26,7 @@ function vibrate() {
     navigator?.vibrate?.(100);
   } catch (e) {
     if (!exceptionCaptured) {
-      captureException(e, {
-        level: 'warning',
-      });
+      console.warn(e);
       exceptionCaptured = true;
     }
   }

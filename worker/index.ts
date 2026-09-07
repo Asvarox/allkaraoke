@@ -2,7 +2,6 @@ import { onRequest as unverifiedSongBrowserAdminOnRequest } from '../functions/a
 import { onRequest as unverifiedSongsBrowserAdminOnRequest } from '../functions/admin/unverified-songs';
 import { onRequest as phDataOnRequest } from '../functions/ph-data/[[catchall]]';
 import { onRequest as proxyOnRequest } from '../functions/proxy';
-import { onRequest as sentryTunnelOnRequest } from '../functions/stry-tunnel';
 import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
 import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
 import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverified-songs-admin';
@@ -105,10 +104,6 @@ export default {
 
     if (pathname === '/proxy') {
       return callPagesHandler(proxyOnRequest as PagesLikeHandler, request, env, executionContext);
-    }
-
-    if (pathname === '/stry-tunnel') {
-      return callPagesHandler(sentryTunnelOnRequest as PagesLikeHandler, request, env, executionContext);
     }
 
     if (pathname === '/ph-data' || pathname.startsWith('/ph-data/')) {
