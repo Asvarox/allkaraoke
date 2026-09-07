@@ -10,7 +10,7 @@ export default function Box<T extends ElementType = 'div'>({ as, className, chil
   return (
     <Component
       className={twMerge(
-        `box-border flex flex-col items-center justify-center rounded-xl bg-black/30 shadow-[inset_0px_0px_40px_2px_rgba(0,0,0,0.2)]`,
+        `box-border flex flex-col items-center justify-center rounded-xl bg-black/40 shadow-[inset_0px_0px_40px_2px_rgba(0,0,0,0.2)]`,
         className,
       )}
       {...props}>

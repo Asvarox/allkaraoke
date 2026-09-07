@@ -27,14 +27,16 @@ interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, '
 export const Menu = ({ title, children, className, spacing = 'regular', modal = false, ref, ...props }: MenuProps) => (
   <MenuContainer
     {...props}
-    className={`${modal ? 'border border-white/10 bg-slate-800 ' : ''}${className ?? ''} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-7'}`}
+    className={`${modal ? 'border border-white/10 bg-slate-800 ' : ''}${className ?? ''} ${spacing === 'tight' ? 'gap-2 p-4' : 'gap-4 p-4 sm:p-6'}`}
     ref={ref}>
     {title && <MenuHeader>{title}</MenuHeader>}
     {children}
   </MenuContainer>
 );
 
-Menu.Header = twc(Typography)`mobile:text-xl text-active flex items-center justify-center text-2xl font-bold`;
+Menu.Header = twc(
+  Typography,
+)`mobile:text-lg text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000]`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;
