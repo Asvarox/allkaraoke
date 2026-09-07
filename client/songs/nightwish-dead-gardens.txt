@@ -1,0 +1,226 @@
+#ARTIST:Nightwish
+#TITLE:Dead Gardens
+#CREATOR:Canni
+#BPM:316
+#YEAR:2004
+#VIDEO:v=kkpd1k_ndFk
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:44183,16455696202
+#ALLKARAOKE_ID:nightwish-dead-gardens
+#ALLKARAOKE_SID:6254
+#ALLKARAOKE_LASTUPDATE:2026-09-07T02:10:48.189Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:157
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=13106
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:269
+#MP3:Nightwish - Dead Gardens.mp3
+: 21 2 7 The 
+: 24 16 9 sto
+: 41 6 2 ry 
+: 56 3 2 be
+: 60 9 2 hind
+- 69
+: 70 3 2 The 
+: 74 13 4 pain
+: 88 6 5 ting
+- 94
+: 95 13 10 I 
+: 109 9 2 drew 
+: 126 10 7 is 
+: 139 10 10 al
+: 150 7 9 ready 
+: 158 1 10 to
+: 160 16 9 ~ld
+- 176
+: 182 4 2 No 
+: 189 5 2 more 
+: 196 3 2 tear
+: 200 13 4 stains 
+: 214 3 5 on 
+: 218 4 5 the
+- 222
+: 223 6 4 Pa
+: 230 3 4 ges 
+: 234 6 2 of 
+: 246 4 0 my 
+: 255 3 5 di
+: 259 4 4 a
+: 264 3 2 ry
+- 267
+: 287 5 9 Ti
+: 293 10 2 red 
+: 310 7 2 but 
+: 318 7 2 un
+: 331 4 2 a
+: 336 5 4 ble
+- 341
+: 343 6 4 To 
+: 350 4 5 gi
+: 355 10 10 ~ve 
+: 366 9 2 up
+- 375
+: 381 13 7 Since 
+: 395 35 10 I
+: 431 6 2 ~’m
+- 437
+: 439 1 2 Re
+: 441 11 2 spon
+: 453 4 4 si
+: 458 10 5 ble 
+: 469 3 5 for 
+: 473 4 7 the 
+: 478 20 5 li
+: 499 4 4 ~ves
+- 503
+: 504 3 5 I 
+: 508 1 4 sa
+: 510 28 2 ~ved
+- 538
+: 550 3 5 The 
+: 554 11 5 play 
+: 566 7 4 is 
+: 574 25 5 done
+- 599
+: 613 2 7 The 
+: 616 12 7 cur
+: 629 7 5 tain’s 
+: 637 18 7 down
+- 655
+: 670 47 9 All 
+: 718 1 9 the 
+: 720 3 9 ta
+: 724 3 7 ~les 
+: 728 7 5 a
+: 736 4 7 ~re 
+: 741 37 9 told
+- 778
+: 791 4 9 A
+: 796 5 12 ~
+: 802 13 7 ~
+: 816 15 5 ~
+: 832 8 7 ~ll 
+: 841 4 7 the 
+: 846 7 10 or
+: 854 6 9 chi
+: 861 8 10 ~ds 
+: 870 4 12 go
+: 875 41 9 ~ne
+- 916
+: 925 40 9 Lo
+: 966 3 12 ~st 
+: 970 4 9 in 
+: 975 6 7 my 
+: 982 7 5 own 
+: 990 29 7 wo
+: 1020 12 9 ~rld
+- 1032
+: 1042 1 9 No
+: 1044 4 12 ~w 
+: 1049 5 7 I 
+: 1055 6 5 ca
+: 1062 19 7 re 
+: 1084 17 5 for 
+: 1103 14 4 dead 
+: 1118 10 4 gar
+: 1129 20 2 de
+: 1150 31 0 ~ns
+- 1181 1213
+- 1213
+: 1234 5 9 My 
+: 1240 17 2 song 
+: 1263 10 2 is 
+: 1274 11 4 lit
+: 1286 8 5 tle 
+: 1295 15 10 wo
+: 1311 12 2 ~rth 
+: 1324 34 7 any
+: 1359 8 10 mo
+: 1368 5 10 ~
+: 1374 3 9 ~
+: 1378 4 9 ~re
+- 1382
+: 1390 7 2 Time 
+: 1398 4 2 to 
+: 1403 5 4 lay 
+: 1409 12 5 this 
+: 1422 11 7 weary 
+: 1434 10 7 pen 
+: 1445 5 5 a
+: 1451 8 4 si
+: 1460 2 5 ~
+: 1463 11 4 ~
+: 1475 8 2 ~de
+- 1483
+: 1493 3 5 The 
+: 1497 14 5 play 
+: 1512 4 4 is 
+: 1517 21 5 done
+- 1538
+: 1556 3 7 The 
+: 1562 10 7 cur
+: 1573 8 5 tain’s 
+: 1582 23 7 down
+- 1605 2362
+- 2362
+: 2383 40 9 All 
+: 2426 2 9 the 
+: 2429 6 9 ta
+: 2436 3 7 ~les 
+: 2440 9 5 a
+: 2450 2 7 ~re 
+: 2453 37 9 told
+- 2490
+: 2494 6 9 A
+: 2501 4 12 ~
+: 2506 6 7 ~
+: 2513 16 5 ~
+: 2530 24 7 ~ll 
+: 2555 3 7 the 
+: 2559 5 10 or
+: 2565 7 9 chi
+: 2573 11 10 ~ds 
+: 2585 4 12 go
+: 2590 41 9 ~ne
+- 2631
+: 2640 41 9 All 
+: 2682 3 9 the 
+: 2686 4 9 ta
+: 2691 3 7 ~les 
+: 2695 8 5 a
+: 2704 3 7 ~re 
+: 2708 36 9 told
+- 2744
+: 2754 4 9 A
+: 2759 7 12 ~
+: 2767 8 7 ~
+: 2776 5 5 ~
+: 2782 28 7 ~ll 
+: 2811 3 7 the 
+: 2815 4 10 or
+: 2820 11 9 chi
+: 2832 4 10 ~ds 
+: 2837 5 12 go
+: 2843 42 9 ~ne
+- 2885
+: 2893 38 9 Lo
+: 2932 5 12 ~st 
+: 2938 4 9 in 
+: 2943 6 7 my 
+: 2950 8 5 own 
+: 2959 29 7 wo
+: 2989 11 9 ~rld
+- 3000
+: 3011 2 9 No
+: 3014 3 12 ~w 
+: 3018 5 7 I 
+: 3024 15 5 ca
+: 3040 9 7 ~re 
+: 3052 17 5 for 
+: 3070 15 4 dead 
+: 3086 9 4 gar
+: 3096 21 2 de
+: 3118 28 0 ~ns
+E
