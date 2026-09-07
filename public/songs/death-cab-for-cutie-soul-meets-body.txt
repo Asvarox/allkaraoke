@@ -1,0 +1,405 @@
+#ARTIST:Death Cab For Cutie
+#TITLE:Soul Meets Body
+#CREATOR:Silverbeam
+#BPM:256,2
+#YEAR:2005
+#VIDEO:v=uizQVriWp8M
+#LANGUAGE:English
+#GAP:15144,683840749414
+#ALLKARAOKE_ID:death-cab-for-cutie-soul-meets-body
+#ALLKARAOKE_SID:6263
+#ALLKARAOKE_LASTUPDATE:2026-09-07T02:11:25.318Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=uizQVriWp8M
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:233
+#MP3:Death Cab For Cutie - Soul Meets Body.mp3
+: 17 4 2 I 
+: 25 4 2 want 
+: 33 2 9 to 
+: 38 9 7 live
+- 47
+: 61 6 5 Where 
+: 73 12 5 soul 
+: 89 11 0 meets 
+: 105 10 0 bo
+: 117 12 -3 dy
+- 129
+: 145 4 2 And 
+: 153 4 2 let 
+: 161 2 9 the 
+: 166 10 7 sun
+- 176
+: 185 3 5 Wrap 
+: 190 3 0 its 
+: 197 13 12 arms 
+: 217 11 9 a
+: 233 9 9 round 
+: 245 8 7 me 
+: 257 5 5 and
+- 262
+: 277 5 2 Bathe 
+: 285 4 9 my 
+: 293 10 7 skin
+- 303
+: 309 2 5 In 
+: 313 3 5 wa
+: 317 4 5 ter 
+: 325 12 5 cool 
+: 345 10 0 and 
+: 361 10 0 cleans
+: 373 4 -3 ing
+- 377
+: 381 4 -5 And 
+* 389 19 7 feel
+- 408 440
+- 440
+: 457 7 7 Feel 
+: 469 5 7 what 
+: 477 4 9 it’s 
+: 485 12 10 like 
+: 501 4 9 to 
+: 509 4 7 be 
+: 517 9 2 new
+- 526
+: 533 2 2 Cause 
+: 537 2 2 in 
+: 541 5 9 my 
+: 549 6 7 head
+- 555
+: 569 5 5 There’s 
+: 577 2 5 a 
+: 581 13 5 grey
+: 601 11 0 hound 
+: 617 8 0 sta
+: 629 11 -3 tion
+- 640
+: 653 2 2 Where 
+: 657 4 2 I 
+: 665 2 2 send 
+: 669 4 9 my 
+: 677 6 7 thoughts
+- 683 688
+- 688
+: 705 2 2 To 
+: 709 6 12 far 
+: 717 5 9 off 
+: 729 3 9 des
+: 737 2 9 ti
+: 741 12 9 na
+: 757 7 7 tions
+- 764
+: 773 3 5 So 
+: 778 5 2 they 
+: 785 4 2 may 
+: 792 3 2 have 
+: 797 4 9 a 
+: 805 11 7 chance
+- 816
+: 829 4 5 Of 
+: 837 13 5 find
+: 857 2 0 ing 
+: 862 6 0 a 
+: 873 7 0 place 
+: 885 5 -3 where 
+: 893 6 -5 they’re
+- 899
+: 909 6 7 Far 
+: 921 9 9 more 
+: 937 6 10 suit
+: 945 3 9 ~
+: 950 3 9 ed 
+: 957 5 7 than 
+: 965 2 2 here
+- 967
+: 969 2 9 Ba 
+: 973 4 9 da 
+: 981 2 9 ba 
+: 985 5 9 da 
+: 993 5 7 ba 
+: 1001 10 4 ba
+- 1011
+: 1017 2 5 Ba 
+: 1021 5 4 da 
+: 1029 4 2 ba 
+: 1037 4 2 ba 
+: 1045 2 2 ba 
+: 1049 5 2 da 
+* 1057 4 4 ba 
+: 1065 8 0 ba
+- 1073
+: 1081 2 5 Ba 
+: 1085 5 4 da 
+: 1093 4 2 ba 
+: 1101 4 2 ba 
+: 1109 2 2 ba 
+: 1113 4 2 da 
+: 1121 4 0 ba 
+: 1129 5 4 ba 
+: 1137 4 2 da
+- 1141
+: 1145 2 2 Ba 
+: 1149 4 0 da 
+: 1157 11 -3 ba
+- 1168 1468
+- 1468
+: 1485 2 2 And 
+: 1489 4 2 I 
+: 1497 2 2 can
+: 1501 5 9 not 
+: 1509 7 7 guess
+- 1516 1520
+- 1520
+: 1537 2 5 What 
+: 1541 16 5 we’ll 
+: 1561 10 0 dis
+: 1577 9 0 co
+: 1589 11 -3 ver
+- 1600
+: 1613 2 2 When 
+: 1617 4 2 we 
+: 1625 5 2 turn 
+: 1633 2 9 the 
+: 1637 7 7 dirt
+- 1644
+: 1657 2 5 With 
+: 1661 4 0 our 
+* 1669 12 12 palms 
+: 1689 3 9 cupped 
+: 1694 7 9 like 
+: 1705 9 9 sho
+: 1717 4 7 vels
+- 1721
+: 1725 2 5 But 
+: 1729 5 5 I 
+: 1737 6 2 know 
+: 1745 4 2 our 
+: 1753 2 2 fil
+: 1757 4 9 thy 
+: 1765 10 7 hands
+- 1775 1776
+- 1776
+: 1793 2 5 Can 
+: 1797 14 5 wash 
+: 1817 2 0 one 
+: 1821 7 0 a
+: 1833 10 0 no
+: 1845 5 -3 ther’s
+- 1850
+: 1853 5 -5 And 
+: 1861 11 7 not 
+: 1881 10 9 one 
+* 1897 8 10 speck 
+: 1909 4 9 will 
+: 1917 5 7 re
+: 1925 2 2 main
+- 1927
+: 1929 2 9 I 
+: 1933 5 9 do 
+: 1941 2 9 be
+: 1945 6 9 lieve 
+: 1953 3 7 it’s 
+: 1961 7 4 true
+- 1968
+: 1973 2 2 That 
+: 1977 3 5 there 
+: 1982 5 4 are 
+: 1989 4 2 roads 
+: 1997 4 2 left 
+: 2005 2 2 in 
+: 2009 2 2 both 
+: 2013 2 2 of 
+: 2017 5 4 our 
+: 2025 5 0 shoes
+- 2030
+: 2037 2 2 But 
+: 2041 2 5 if 
+: 2047 3 4 the 
+: 2053 5 2 si
+: 2061 2 2 lence 
+: 2065 5 2 takes 
+: 2073 4 2 you
+- 2077
+: 2081 2 0 Then 
+: 2085 2 0 I 
+: 2089 5 4 hope 
+: 2097 4 2 it 
+: 2105 3 2 takes 
+: 2112 3 0 me 
+* 2117 11 -3 too
+- 2128 2164
+- 2164
+: 2181 2 -3 So 
+: 2185 3 9 brown 
+: 2190 4 9 eyes 
+: 2197 2 9 I 
+: 2201 5 9 hold 
+: 2209 4 7 you 
+: 2217 7 4 near
+- 2224
+: 2229 2 0 Cause 
+: 2233 5 5 you’re 
+: 2240 3 4 the 
+: 2245 6 2 on
+: 2253 2 2 ly 
+: 2257 2 2 song 
+: 2261 3 2 I 
+: 2265 5 2 want 
+: 2273 5 4 to 
+: 2281 5 0 hear
+- 2286
+: 2293 2 0 A 
+* 2297 4 5 me
+: 2303 4 4 lo
+: 2309 4 2 dy
+- 2313
+: 2317 5 2 Sof
+: 2325 2 2 tly 
+: 2329 4 2 soar
+: 2334 4 0 ing 
+: 2341 6 4 through 
+: 2353 5 2 my 
+: 2361 3 2 at
+: 2367 3 0 mos
+: 2373 12 -3 phere
+- 2385 2412
+- 2412
+: 2429 6 5 Where 
+: 2441 9 2 soul 
+: 2453 7 5 meets 
+: 2465 9 7 bo
+* 2477 72 9 dy
+- 2549
+: 2558 8 5 Where 
+: 2569 9 2 soul 
+: 2581 8 5 meets 
+: 2593 9 7 bo
+: 2605 12 9 dy
+- 2617
+: 2621 7 5 Where 
+: 2633 9 0 soul 
+: 2645 7 4 meets 
+: 2657 8 5 bo
+: 2669 55 7 dy
+- 2724 2740
+- 2740
+: 2757 2 0 And 
+: 2761 2 9 I 
+: 2765 4 9 do 
+: 2773 2 9 be
+: 2777 5 9 lieve 
+: 2785 3 7 it’s 
+: 2793 8 4 true
+- 2801
+: 2805 2 0 That 
+: 2809 3 5 there 
+: 2814 4 4 are 
+: 2821 4 2 roads 
+: 2829 4 2 left 
+: 2837 2 2 in 
+: 2841 2 2 both 
+: 2845 2 2 of 
+: 2849 3 4 our
+: 2853 2 2 ~ 
+: 2857 5 0 shoes
+- 2862
+: 2869 2 0 But 
+: 2873 2 5 if 
+: 2879 3 4 the 
+: 2885 5 2 si
+: 2893 2 2 lence 
+: 2897 5 2 takes 
+: 2905 5 2 you
+- 2910
+: 2913 2 0 Then 
+: 2917 2 0 I 
+* 2921 5 4 hope 
+: 2929 5 2 it 
+: 2937 3 2 takes 
+: 2944 3 0 me 
+: 2949 13 -3 too
+- 2962 2996
+- 2996
+: 3013 2 0 So 
+: 3017 2 9 brown 
+: 3022 4 9 eyes 
+: 3029 2 9 I 
+: 3033 5 9 hold 
+: 3041 5 7 you 
+: 3049 6 4 near
+- 3055
+: 3061 2 0 Cause 
+: 3065 4 5 you’re 
+: 3072 3 4 the 
+: 3077 5 2 on
+: 3085 2 2 ly 
+: 3089 2 2 song 
+: 3093 2 2 I 
+: 3097 4 2 want 
+: 3105 5 4 to 
+: 3113 6 0 hear
+- 3119
+: 3125 2 0 A 
+: 3129 4 5 me
+: 3135 3 4 lo
+: 3141 4 2 dy
+- 3145
+: 3149 5 2 Sof
+: 3157 2 2 tly 
+: 3161 4 2 soar
+: 3167 3 0 ing 
+: 3173 7 4 through 
+: 3185 5 2 my 
+: 3193 4 2 at
+: 3199 3 0 mos
+: 3206 11 -3 phere
+- 3217 3236
+- 3236
+: 3253 2 0 A 
+: 3257 4 5 me
+: 3263 4 4 lo
+: 3269 4 2 dy
+- 3273
+: 3277 5 2 Sof
+: 3284 2 2 tly 
+: 3289 4 2 soar
+: 3295 3 0 ing 
+* 3301 7 4 through 
+: 3312 5 2 my 
+: 3320 5 2 at
+: 3326 3 0 mos
+: 3333 12 -3 phere
+- 3345 3364
+- 3364
+: 3381 2 0 A 
+: 3385 4 5 me
+: 3391 4 4 lo
+: 3397 4 2 dy
+- 3401
+: 3405 4 2 Sof
+: 3412 3 2 tly 
+: 3417 4 2 soar
+: 3423 3 0 ing 
+: 3429 7 4 through 
+: 3440 5 2 my 
+: 3448 5 2 at
+: 3455 3 0 mos
+: 3461 15 -3 phere
+- 3476 3492
+- 3492
+: 3509 2 0 A 
+: 3513 4 5 me
+: 3519 4 4 lo
+: 3525 4 2 dy
+- 3529
+: 3533 4 2 Sof
+: 3540 2 2 tly 
+: 3545 4 2 soar
+: 3551 3 0 ing 
+* 3557 8 4 through 
+: 3569 6 2 my 
+: 3577 4 2 at
+: 3583 3 0 mos
+: 3589 10 -3 phere
+E

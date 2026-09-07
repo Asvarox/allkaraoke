@@ -272,10 +272,10 @@
       "Korean"
     ],
     "bpm": 256,
-    "gap": 8830.90625,
+    "gap": 8630.90625,
     "year": "2011",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-06-05T00:10:00.128Z",
+    "lastUpdate": "2026-09-06T12:52:17.260Z",
     "genre": "Kpop",
     "realBpm": 128,
     "previewStart": 86,
@@ -4218,7 +4218,7 @@
     "gap": 7649.898989898989,
     "year": "1968",
     "artistOrigin": "IT",
-    "lastUpdate": "2026-09-06T02:12:59.298Z",
+    "lastUpdate": "2026-09-05T18:46:44.628Z",
     "genre": "Schlager",
     "realBpm": 119,
     "volume": 1,
@@ -32151,6 +32151,33 @@
     "local": false
   },
   {
+    "id": "camp-rock-this-is-me",
+    "title": "This Is Me",
+    "artist": "Camp Rock",
+    "video": "dabNhScQz9M",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 4130,
+    "year": "2008",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-09-07T02:10:47.119Z",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "Demi Lovato, Joe Jonas (Camp Rock)",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6252,
+    "tracksCount": 1,
+    "search": "camprockthisisme",
+    "local": false
+  },
+  {
     "id": "capital-cities-safe-and-sound",
     "title": "Safe And Sound",
     "artist": "Capital Cities",
@@ -42880,6 +42907,34 @@
     "shortId": 6181,
     "tracksCount": 1,
     "search": "deathcabforcutieiwillfollowyouintothedark",
+    "local": false
+  },
+  {
+    "id": "death-cab-for-cutie-soul-meets-body",
+    "title": "Soul Meets Body",
+    "artist": "Death Cab For Cutie",
+    "video": "uizQVriWp8M",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.2,
+    "gap": 15144.683840749414,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-07T02:11:25.318Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Silverbeam",
+    "sourceUrl": "https://www.youtube.com/watch?v=uizQVriWp8M",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6263,
+    "tracksCount": 1,
+    "search": "deathcabforcutiesoulmeetsbody",
     "local": false
   },
   {
@@ -53817,7 +53872,7 @@
     "gap": 18572.5,
     "year": "2005",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-06T02:13:16.776Z",
+    "lastUpdate": "2026-09-05T18:48:42.789Z",
     "genre": "Rock",
     "realBpm": 106,
     "previewStart": 37,
@@ -56463,6 +56518,33 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-charybdis",
+    "title": "Charybdis",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans)",
+    "video": "PAmy8jhQUmA",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 13207.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-07T02:11:25.327Z",
+    "genre": "Musical",
+    "realBpm": 167,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 135,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6267,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranscharybdis",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-just-a-man",
     "title": "Just A Man",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans)",
@@ -56527,7 +56609,7 @@
     "bpm": 400,
     "gap": 4917.5,
     "year": "2024",
-    "lastUpdate": "2026-09-06T02:13:16.604Z",
+    "lastUpdate": "2026-09-05T18:48:23.063Z",
     "genre": "Musical",
     "realBpm": 120,
     "volume": 1,
@@ -61636,6 +61718,34 @@
     "shortId": 1647,
     "tracksCount": 1,
     "search": "flyleafimsosick",
+    "local": false
+  },
+  {
+    "id": "foals-spanish-sahara",
+    "title": "Spanish Sahara",
+    "artist": "Foals",
+    "video": "eYoINidnLRQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 40653.90625,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-07T02:10:48.393Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "boohjaa",
+    "sourceUrl": "https://www.youtube.com/watch?v=eYoINidnLRQ",
+    "duration": 414,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6256,
+    "tracksCount": 1,
+    "search": "foalsspanishsahara",
     "local": false
   },
   {
@@ -84725,6 +84835,35 @@
     "local": false
   },
   {
+    "id": "jonas-brothers-what-a-man-gotta-do",
+    "title": "What A Man Gotta Do",
+    "artist": "Jonas Brothers",
+    "video": "XejVB_fba04",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.07,
+    "gap": 5904.733047286239,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-07T02:10:48.097Z",
+    "genre": "Pop",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "h0ngE",
+    "sourceUrl": "https://www.youtube.com/watch?v=XejVB_fba04",
+    "duration": 221,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6253,
+    "tracksCount": 1,
+    "search": "jonasbrotherswhatamangottado",
+    "local": false
+  },
+  {
     "id": "jonas-brothers-when-you-look-me-in-the-eyes",
     "title": "When You Look Me In The Eyes",
     "artist": "Jonas Brothers",
@@ -87166,6 +87305,34 @@
     "shortId": 2241,
     "tracksCount": 1,
     "search": "justinbieberfeatjadensmithneversaynever",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-feat-rascal-flatts-that-should-be-me",
+    "title": "That Should Be Me",
+    "artist": "Justin Bieber feat. Rascal Flatts",
+    "video": "p5Jw-T4dVss",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.96,
+    "gap": 36.313759108443946,
+    "year": "2010",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-09-07T02:10:48.285Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6255,
+    "tracksCount": 1,
+    "search": "justinbieberfeatrascalflattsthatshouldbeme",
     "local": false
   },
   {
@@ -91975,6 +92142,37 @@
     "shortId": 2378,
     "tracksCount": 1,
     "search": "kingafricalabomba",
+    "local": false
+  },
+  {
+    "id": "king-gnu-aizo",
+    "title": "AIZO",
+    "artist": "King Gnu",
+    "video": "tWn_GlPZd-I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 380,
+    "gap": -42.57894736842104,
+    "year": "2026",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-07T02:10:47.113Z",
+    "genre": "Jpop",
+    "realBpm": 190,
+    "previewStart": 65,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "Subkei",
+    "sourceUrl": "https://www.youtube.com/watch?v=ESpFESY24IY&list=RDESpFESY24IY&start_radio=1",
+    "duration": 117,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6251,
+    "tracksCount": 1,
+    "search": "kinggnuaizo",
     "local": false
   },
   {
@@ -97194,6 +97392,36 @@
     "shortId": 2480,
     "tracksCount": 1,
     "search": "ladygagalovegame",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-manicure",
+    "title": "MANiCURE",
+    "artist": "Lady Gaga",
+    "video": "zwB-2-YQEy4",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 1.7391304347826235,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-07T02:11:10.268Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "LittleK.",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=871",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=17222",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6260,
+    "tracksCount": 1,
+    "search": "ladygagamanicure",
     "local": false
   },
   {
@@ -103580,6 +103808,33 @@
     "local": false
   },
   {
+    "id": "los-aristogatos-todos-quieren-ser-ya-gatos-jazz",
+    "title": "Todos quieren ser ya gatos jazz",
+    "artist": "Los Aristogatos",
+    "video": "wvLSywV8NUM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 249.60000000000002,
+    "gap": 240,
+    "year": "1970",
+    "lastUpdate": "2026-09-07T02:10:48.783Z",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "Aristogatos",
+    "sourceUrl": "https://www.youtube.com/watch?v=wvLSywV8NUM&t=9s",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 6258,
+    "tracksCount": 1,
+    "search": "losaristogatostodosquierenseryagatosjazz",
+    "local": false
+  },
+  {
     "id": "los-autenticos-decadentes-pendeviejo",
     "title": "Pendeviejo",
     "artist": "Los Auténticos Decadentes",
@@ -104138,6 +104393,36 @@
     "shortId": 5877,
     "tracksCount": 1,
     "search": "lostipitoscampanasenlanoche",
+    "local": false
+  },
+  {
+    "id": "los-tipitos-la-ley-de-la-ferocidad",
+    "title": "La ley de la ferocidad",
+    "artist": "Los Tipitos",
+    "video": "tDk5Y3qWWqA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 299.94,
+    "gap": 5672.799959991999,
+    "year": "2012",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-09-07T02:11:25.326Z",
+    "genre": "Rock",
+    "realBpm": 299.94,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Tipitos&cancion=La%20ley%20de%20la%20ferocidad",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6266,
+    "tracksCount": 1,
+    "search": "lostipitoslaleydelaferocidad",
     "local": false
   },
   {
@@ -107381,7 +107666,7 @@
     "gap": 12964.889245118042,
     "year": "1968",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-06T02:13:16.598Z",
+    "lastUpdate": "2026-09-05T18:47:32.131Z",
     "realBpm": 92,
     "volume": 1,
     "author": "Fiete",
@@ -116631,6 +116916,34 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-robot",
+    "title": "Robot",
+    "artist": "Miley Cyrus",
+    "video": "33LqXEmW9WA",
+    "language": [
+      "English"
+    ],
+    "bpm": 264.04,
+    "gap": 14107.427662475382,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-07T02:11:25.323Z",
+    "genre": "Pop",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "klops_007",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6265,
+    "tracksCount": 1,
+    "search": "mileycyrusrobot",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-see-you-again",
     "title": "See You Again",
     "artist": "Miley Cyrus",
@@ -117882,6 +118195,34 @@
     "shortId": 3039,
     "tracksCount": 1,
     "search": "momolandbboombboom",
+    "local": false
+  },
+  {
+    "id": "mon-laferte-amor-completo",
+    "title": "Amor completo",
+    "artist": "Mon Laferte",
+    "video": "PQlG1gznMBE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 350.05,
+    "gap": 40551.4265104985,
+    "year": "2015",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-09-07T02:11:25.320Z",
+    "realBpm": 175,
+    "volume": 1,
+    "author": "asdFer",
+    "duration": 249,
+    "tracks": [
+      {
+        "name": "Amor Completo",
+        "start": 23
+      }
+    ],
+    "shortId": 6264,
+    "tracksCount": 1,
+    "search": "monlaferteamorcompleto",
     "local": false
   },
   {
@@ -123976,6 +124317,36 @@
     "local": false
   },
   {
+    "id": "nightwish-dead-gardens",
+    "title": "Dead Gardens",
+    "artist": "Nightwish",
+    "video": "kkpd1k_ndFk",
+    "language": [
+      "English"
+    ],
+    "bpm": 316,
+    "gap": 44183.16455696202,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-07T02:10:48.189Z",
+    "genre": "Metal",
+    "realBpm": 157,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13106",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6254,
+    "tracksCount": 1,
+    "search": "nightwishdeadgardens",
+    "local": false
+  },
+  {
     "id": "nightwish-elan",
     "title": "Élan",
     "artist": "Nightwish",
@@ -125273,6 +125644,35 @@
     "shortId": 4834,
     "tracksCount": 1,
     "search": "nirvanawheredidyousleeplastnight",
+    "local": false
+  },
+  {
+    "id": "nmixx-sonar-breaker",
+    "title": "Soñar (Breaker)",
+    "artist": "NMIXX",
+    "video": "MMtRxcy8PX0",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 16170,
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-09-07T02:11:20.050Z",
+    "genre": "K-Pop",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6262,
+    "tracksCount": 1,
+    "search": "nmixxsonarbreaker",
     "local": false
   },
   {
@@ -133948,7 +134348,7 @@
     "gap": 11517.142857142857,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-06T02:12:59.292Z",
+    "lastUpdate": "2026-09-05T18:46:16.666Z",
     "genre": "Pop",
     "realBpm": 140,
     "volume": 1,
@@ -135354,6 +135754,34 @@
     "shortId": 3521,
     "tracksCount": 1,
     "search": "purabenteuerland",
+    "local": false
+  },
+  {
+    "id": "purple-disco-machine-kungs-julian-peretta-substitution",
+    "title": "Substitution",
+    "artist": "Purple Disco Machine, Kungs, Julian Peretta",
+    "video": "7x5lqqji9ww",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 1861.774193548387,
+    "year": "2023",
+    "lastUpdate": "2026-09-07T02:11:25.482Z",
+    "genre": "Dance, Electronic",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Dragon33",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=27456",
+    "duration": 182,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6269,
+    "tracksCount": 1,
+    "search": "purplediscomachinekungsjulianperettasubstitution",
     "local": false
   },
   {
@@ -140995,6 +141423,37 @@
     "local": false
   },
   {
+    "id": "ringo-sheena-honnou-instinct",
+    "title": "Honnou -Instinct-",
+    "artist": "Ringo Sheena",
+    "video": "Xz-qUcF6dIM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 193.98,
+    "gap": 9418.74172595113,
+    "year": "1999",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-07T02:10:48.671Z",
+    "genre": "Alternative rock",
+    "realBpm": 97,
+    "previewStart": 30,
+    "previewEnd": 73,
+    "volume": 0.91,
+    "author": "Subkei",
+    "sourceUrl": "https://www.youtube.com/watch?v=Xz-qUcF6dIM",
+    "duration": 256,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6257,
+    "tracksCount": 1,
+    "search": "ringosheenahonnouinstinct",
+    "local": false
+  },
+  {
     "id": "ringo-sheena-honnou",
     "title": "Honnou",
     "artist": "Ringo Sheena",
@@ -144196,6 +144655,35 @@
     "shortId": 5166,
     "tracksCount": 1,
     "search": "sadeloveisfound",
+    "local": false
+  },
+  {
+    "id": "sade-no-ordinary-love",
+    "title": "No Ordinary Love",
+    "artist": "Sade",
+    "video": "_WcWHZc8s2I",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 21233.157894736843,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-07T02:11:10.266Z",
+    "genre": "Downtempo",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "DoubleDee commissioned by BC FOX",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=31815",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6259,
+    "tracksCount": 1,
+    "search": "sadenoordinarylove",
     "local": false
   },
   {
@@ -160211,6 +160699,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-death-by-a-thousand-cuts",
+    "title": "Death By A Thousand Cuts",
+    "artist": "Taylor Swift",
+    "video": "GTEFSuFfgnU",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.25,
+    "gap": 20213.322259136214,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-07T02:11:25.480Z",
+    "genre": "Pop",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=GTEFSuFfgnU",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6268,
+    "tracksCount": 1,
+    "search": "taylorswiftdeathbyathousandcuts",
+    "local": false
+  },
+  {
     "id": "taylor-swift-dont-blame-me",
     "title": "Don’t Blame Me",
     "artist": "Taylor Swift",
@@ -174289,6 +174806,36 @@
     "local": false
   },
   {
+    "id": "tsukuyomi-kyuuseishu",
+    "title": "Kyuuseishu",
+    "artist": "Tsukuyomi",
+    "video": "yA9RY-DW6xY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 412,
+    "gap": 1182.990291262136,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-07T02:11:10.269Z",
+    "genre": "Anime",
+    "realBpm": 205,
+    "previewStart": 2,
+    "previewEnd": 16,
+    "volume": 1,
+    "author": "Currymalker",
+    "duration": 96,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6261,
+    "tracksCount": 1,
+    "search": "tsukuyomikyuuseishu",
+    "local": false
+  },
+  {
     "id": "turf-pasos-al-costado",
     "title": "Pasos al costado",
     "artist": "Turf",
@@ -179011,7 +179558,7 @@
     "gap": 5002.239263803681,
     "year": "1996",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-06T02:13:16.599Z",
+    "lastUpdate": "2026-09-05T18:47:50.573Z",
     "realBpm": 130,
     "volume": 1,
     "author": "Viktor1234678",

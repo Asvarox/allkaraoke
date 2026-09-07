@@ -1,0 +1,552 @@
+#ARTIST:Taylor Swift
+#TITLE:Death By A Thousand Cuts
+#CREATOR:princetongirl98
+#BPM:376,25
+#YEAR:2019
+#VIDEO:v=GTEFSuFfgnU
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:20213,322259136214
+#ALLKARAOKE_ID:taylor-swift-death-by-a-thousand-cuts
+#ALLKARAOKE_SID:6268
+#ALLKARAOKE_LASTUPDATE:2026-09-07T02:11:25.480Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GTEFSuFfgnU
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:200
+#MP3:Taylor Swift - Death By A Thousand Cuts.mp3
+: 25 2 6 Say
+: 29 2 8 ing 
+: 33 2 8 good
+: 41 5 4 bye 
+: 49 2 4 is
+- 51
+: 54 8 6 Death 
+: 65 2 6 by 
+: 70 1 8 a 
+: 74 3 3 thou
+: 81 3 3 sand 
+: 88 7 4 cuts
+- 95
+: 103 5 4 Flash
+: 111 5 4 backs 
+: 121 2 8 wak
+: 126 1 4 ing 
+: 130 4 4 me 
+: 137 5 4 up
+- 142
+: 156 2 9 I 
+: 161 2 1 get 
+: 167 4 1 drunk, 
+: 176 2 4 but 
+: 180 1 4 it’s 
+: 184 5 8 not 
+: 192 4 3 e
+: 200 4 4 nough
+- 204
+: 208 2 4 ’Cause 
+: 213 1 6 the 
+: 217 4 6 morn
+: 224 4 1 ing 
+: 233 4 4 comes
+- 237
+: 240 1 4 And 
+: 244 1 4 you’re 
+: 248 1 6 not 
+: 252 3 6 my 
+: 259 14 6 baby
+- 273
+: 286 6 6 I 
+: 295 5 1 look 
+: 304 4 4 through 
+: 310 1 4 the 
+: 314 4 4 win
+: 322 3 6 dows 
+: 328 4 3 of 
+: 335 3 3 this 
+: 343 8 4 love
+- 351
+: 359 5 1 Even 
+: 367 2 4 though 
+: 372 1 4 we 
+: 376 2 4 board
+: 381 2 8 ed 
+: 385 4 1 them 
+: 393 7 4 up
+- 400
+: 415 2 4 Chan
+: 419 2 4 delier’s 
+: 425 7 4 still 
+: 437 2 4 flick
+: 442 4 8 er
+: 449 3 1 ing 
+: 456 4 1 here
+- 460
+: 464 2 4 ’Cause 
+: 469 2 4 I 
+: 473 5 1 can’t 
+: 481 3 1 pre
+: 488 6 4 tend
+- 494
+: 503 2 4 It’s 
+: 508 16 6 ok 
+: 527 1 6 when 
+: 530 5 4 it’s 
+: 537 8 4 not
+- 545 607
+- 607
+: 632 1 4 It’s 
+* 635 3 4 death 
+* 642 1 4 by 
+* 645 2 4 a 
+* 649 3 11 thou
+* 656 4 11 sand 
+* 663 11 9 cuts
+- 674 790
+- 790
+: 815 1 8 I 
+: 818 1 3 dress 
+: 822 1 4 to 
+: 826 5 4 kill 
+: 833 3 4 my 
+: 840 9 6 time
+- 849 851
+- 851
+: 876 1 3 I 
+: 880 1 4 take 
+: 884 1 4 the 
+: 888 5 4 long 
+: 896 4 11 way 
+: 904 8 11 home
+- 912 915
+- 915
+: 940 2 3 I 
+: 944 1 3 ask 
+: 948 1 4 the 
+: 952 9 4 traffic 
+: 964 7 6 lights
+- 971
+: 974 2 4 If 
+: 979 3 4 it’ll 
+: 984 3 4 be 
+: 990 5 6 all 
+: 998 4 6 right
+- 1002
+: 1005 1 11 They 
+: 1009 4 11 say, 
+* 1016 7 11 “I 
+* 1026 9 9 don’t 
+* 1039 11 8 know”
+- 1050
+: 1073 1 4 And 
+: 1077 1 1 what 
+: 1081 3 4 once 
+: 1088 5 4 was 
+: 1096 9 6 ours
+- 1105 1111
+- 1111
+: 1136 4 4 Is 
+: 1144 4 4 no 
+: 1151 5 11 one’s 
+: 1159 15 1 now
+- 1174
+: 1195 2 4 I 
+: 1200 1 4 see 
+: 1204 1 3 you 
+: 1208 8 4 every
+: 1220 6 6 where
+- 1226
+: 1229 1 6 The 
+: 1233 5 4 only 
+: 1241 1 4 thing 
+: 1245 5 4 we 
+: 1252 8 6 share
+- 1260
+: 1263 4 11 Is 
+: 1272 7 11 this 
+: 1283 8 1 small 
+: 1294 7 9 town
+- 1301
+: 1315 1 4 You 
+: 1320 1 11 said 
+: 1325 1 6 it 
+: 1329 1 6 was 
+: 1333 1 4 a 
+* 1338 5 4 great 
+* 1346 10 11 love
+- 1356 1358
+- 1358
+: 1383 7 4 One 
+: 1393 1 4 for 
+: 1397 1 4 the 
+: 1401 5 6 a
+: 1409 11 8 ges
+- 1420
+: 1441 1 4 But 
+: 1444 1 1 if 
+: 1448 1 4 the 
+: 1451 5 4 story’s 
+: 1464 5 4 o
+: 1473 7 8 ver
+- 1480
+: 1487 1 11 Why 
+: 1491 1 3 am 
+: 1495 1 4 I 
+: 1498 5 4 still 
+: 1506 1 4 writ
+: 1510 1 4 ing 
+* 1513 9 8 pa
+* 1525 13 8 ges?
+- 1538
+: 1559 1 4 ’Cause 
+: 1563 1 6 say
+: 1567 3 8 ing 
+: 1573 2 8 good
+: 1578 4 4 bye
+- 1582
+: 1585 3 4 Is 
+: 1592 6 6 death 
+: 1601 1 6 by 
+: 1605 1 6 a 
+: 1608 5 4 thou
+: 1617 4 3 sand 
+: 1624 7 4 cuts
+- 1631
+: 1641 5 4 Flash
+: 1649 5 4 backs 
+: 1658 2 8 wak
+: 1662 1 4 ing 
+: 1666 4 3 me 
+: 1673 7 4 up
+- 1680
+: 1692 2 9 I 
+: 1697 2 1 get 
+: 1703 6 4 drunk, 
+: 1713 1 4 but 
+: 1717 2 4 it’s 
+: 1721 3 8 not 
+: 1728 2 1 e
+: 1735 5 4 nough
+- 1740
+: 1744 1 4 ’Cause 
+: 1749 2 6 the 
+: 1753 5 6 morn
+: 1761 5 1 ing 
+: 1769 3 4 comes
+- 1772
+: 1776 1 1 And 
+: 1780 1 4 you’re 
+: 1784 1 6 not 
+: 1788 5 6 my 
+: 1797 10 8 baby
+: 1809 3 3 ~
+- 1812
+: 1825 1 8 I 
+: 1832 6 1 look 
+: 1841 1 8 through 
+: 1845 1 4 the 
+: 1849 5 4 win
+: 1856 4 6 dows 
+: 1864 3 1 of 
+: 1871 6 3 this 
+: 1880 8 4 love
+- 1888
+: 1895 6 1 Even 
+: 1904 1 4 though 
+: 1907 2 4 we 
+: 1912 7 4 boarded 
+: 1922 3 1 them 
+: 1929 8 4 up
+- 1937
+: 1951 2 4 Chan
+: 1956 9 4 delier 
+: 1968 1 4 still 
+: 1972 7 4 flick
+: 1983 4 1 er
+: 1990 1 4 ing 
+: 1994 4 4 here
+- 1998
+: 2002 1 6 ’Cause 
+: 2006 1 3 I 
+: 2010 5 6 can’t 
+: 2017 4 1 pre
+: 2024 7 4 tend
+- 2031
+: 2039 3 11 It’s 
+: 2044 6 6 o
+: 2052 5 4 kay 
+: 2061 1 8 when 
+: 2066 4 4 it’s 
+: 2073 7 4 not
+- 2080 2141
+- 2141
+: 2166 1 4 It’s 
+: 2170 4 4 death 
+: 2178 1 4 by 
+: 2182 1 4 a 
+: 2186 4 11 thou
+: 2193 5 11 sand 
+: 2201 10 9 cuts
+- 2211 2313
+- 2313
+* 2338 4 4 My 
+* 2345 6 1 heart, 
+* 2353 6 3 my 
+* 2362 5 1 hips, 
+* 2370 5 4 my 
+* 2378 5 1 body, 
+* 2385 5 8 my 
+* 2394 6 11 love
+- 2400
+: 2408 2 1 Try
+: 2412 1 3 ing 
+: 2414 1 4 to 
+: 2417 1 1 find 
+: 2422 1 11 a 
+: 2425 2 9 part 
+: 2430 2 4 of 
+: 2434 3 3 me
+- 2437
+: 2440 1 4 That 
+: 2443 2 1 you 
+: 2446 8 4 didn’t 
+: 2457 7 11 touch
+- 2464
+: 2473 2 1 Gave 
+: 2477 1 3 up 
+: 2481 4 4 on 
+: 2489 5 1 me
+- 2494
+: 2498 1 1 Like 
+: 2502 1 11 I 
+: 2506 3 11 was 
+: 2511 1 8 a 
+: 2515 4 4 bad 
+: 2520 4 1 drug
+- 2524
+: 2528 2 11 Now 
+: 2533 1 4 I’m 
+: 2536 2 1 search
+: 2540 3 4 ing 
+: 2545 5 4 for 
+: 2553 6 8 signs
+- 2559
+: 2562 1 6 In 
+: 2566 1 4 a 
+: 2568 14 4 haunted 
+: 2584 6 6 club
+- 2590
+* 2594 4 4 Our 
+* 2601 5 3 songs, 
+* 2610 4 4 our 
+* 2617 5 11 films, 
+* 2625 11 4 united 
+* 2641 5 4 we 
+* 2648 6 6 stand
+- 2654
+: 2659 3 1 Our 
+: 2665 5 1 coun
+: 2673 4 11 try,
+- 2677
+: 2682 2 4 Guess 
+: 2686 1 4 it 
+: 2690 1 3 was 
+: 2694 1 11 a 
+* 2698 5 1 law
+* 2706 4 4 less 
+* 2713 7 11 land
+- 2720
+: 2728 3 4 Quiet 
+: 2737 5 4 my 
+: 2745 5 9 fears
+- 2750
+: 2753 1 9 With 
+: 2757 1 4 the 
+: 2761 2 1 touch 
+: 2765 1 6 of 
+: 2769 6 6 your 
+: 2777 7 6 hand
+- 2784
+: 2792 3 1 Pa
+: 2797 2 4 per 
+: 2802 4 4 cut 
+: 2809 5 11 stings
+- 2814
+: 2817 2 3 From 
+: 2822 1 11 our 
+* 2825 2 1 pa
+* 2829 3 9 per 
+* 2834 4 9 thin 
+* 2841 4 9 plans
+- 2845
+* 2849 5 11 My 
+* 2857 5 1 time, 
+* 2865 4 3 my 
+* 2872 7 11 wine, 
+* 2882 5 4 my 
+* 2890 5 11 spir
+* 2898 1 4 it, 
+* 2900 4 8 my 
+* 2908 8 11 trust
+- 2916
+: 2922 2 6 Try
+: 2927 1 4 ing 
+: 2931 2 1 to 
+: 2935 1 6 find 
+: 2939 1 1 a 
+: 2943 1 4 part 
+: 2946 1 4 of 
+: 2950 1 11 me 
+: 2954 1 8 you 
+: 2957 1 4 didn’t 
+: 2962 5 8 take 
+: 2971 7 11 up
+- 2978
+: 2984 5 4 Gave 
+: 2992 1 4 you 
+: 2995 3 4 too 
+: 3002 4 6 much 
+: 3009 2 4 but 
+: 3014 1 4 it 
+: 3018 6 1 wasn’t 
+: 3027 3 4 e
+: 3033 4 6 nough
+- 3037
+: 3046 2 4 But 
+: 3050 2 1 I’ll 
+: 3054 2 4 be 
+: 3058 2 4 all 
+: 3065 3 4 right,
+- 3068
+: 3070 3 4 It’s 
+: 3075 2 11 just 
+: 3080 1 4 a 
+: 3083 4 9 thou
+: 3090 11 9 sand 
+: 3118 13 9 cuts
+- 3131 3206
+- 3206
+: 3231 1 11 I 
+: 3235 4 4 get 
+: 3243 4 4 drunk 
+: 3250 1 4 but 
+: 3255 1 4 it’s 
+: 3258 3 4 not 
+: 3267 23 4 enough
+- 3290
+: 3312 1 1 ’Cause 
+: 3317 1 4 you’re 
+: 3323 2 6 not 
+: 3327 5 6 my 
+: 3335 14 6 baby
+- 3349
+: 3362 4 6 I 
+: 3370 4 8 look 
+: 3378 1 11 through 
+: 3383 1 4 the 
+: 3387 4 4 win
+: 3394 4 6 dows 
+: 3402 4 3 of 
+: 3409 5 3 this 
+: 3417 6 4 love
+- 3423
+: 3432 5 4 Even 
+: 3441 2 4 though 
+: 3445 1 4 we 
+: 3449 6 8 boarded 
+: 3458 4 1 them 
+: 3465 6 4 up
+- 3471
+: 3487 3 9 Chan
+: 3493 9 4 delier’s 
+: 3506 4 4 still 
+: 3514 2 8 flick
+: 3518 1 6 er
+: 3522 3 1 ing 
+: 3529 4 4 here
+- 3533
+: 3537 1 4 ’Cause 
+: 3542 1 3 I 
+: 3546 5 1 can’t 
+: 3554 4 1 pre
+: 3561 7 4 tend 
+: 3576 1 3 it’s 
+: 3581 15 6 ok 
+: 3601 1 6 when 
+: 3603 4 4 it’s 
+: 3610 8 4 not
+- 3618
+* 3642 2 3 No, 
+* 3647 2 11 it’s 
+* 3652 15 6 not
+- 3667 3680
+- 3680
+: 3705 1 4 It’s 
+: 3709 4 4 death 
+: 3715 1 4 by 
+: 3720 1 4 a 
+: 3724 5 11 thou
+: 3731 3 11 sand 
+: 3738 9 9 cuts
+- 3747 3794
+- 3794
+: 3819 1 1 Try
+: 3822 1 3 ing 
+: 3826 1 4 to 
+: 3830 1 6 find 
+: 3834 1 4 a 
+: 3837 1 1 part 
+: 3841 1 4 of 
+: 3845 1 4 me
+- 3846
+: 3849 1 4 That 
+: 3852 2 6 you 
+: 3857 5 4 didn’t 
+: 3867 9 4 touch
+- 3876 3886
+- 3886
+: 3911 2 11 My 
+: 3915 5 8 body, 
+: 3924 4 8 my 
+: 3931 15 6 love, 
+: 3970 10 6 my 
+: 3984 13 4 trust
+- 3997 4009
+- 4009
+: 4034 2 8 But 
+: 4038 1 6 it 
+: 4042 5 8 wasn’t 
+: 4050 5 11 enough,
+- 4055
+: 4070 1 4 It 
+: 4073 7 1 wasn’t 
+: 4083 17 6 enough, 
+* 4102 7 4 no, 
+* 4112 7 4 no 
+: 4209 1 4 take
+- 4210
+: 4212 1 8 I 
+: 4214 1 4 the 
+: 4218 5 4 long 
+: 4227 5 11 way 
+: 4234 11 11 home
+- 4245 4247
+- 4247
+: 4272 1 3 I 
+: 4276 1 1 ask 
+: 4279 1 1 the 
+: 4283 1 4 traffic 
+: 4287 12 6 lights 
+: 4303 2 4 if 
+: 4307 2 4 it’ll 
+: 4312 5 4 be 
+: 4319 4 4 all 
+: 4326 6 6 right
+- 4332
+: 4335 1 1 They 
+: 4340 4 11 say, 
+* 4346 7 11 “I 
+* 4358 14 9 don’t 
+* 4381 11 8 know”
+E
