@@ -1,8 +1,6 @@
 import { captureException } from '@sentry/react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
-import { twc } from 'react-twc';
-import { twMerge } from 'tailwind-merge';
 
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
@@ -15,6 +13,8 @@ import { remoteButtonIcons } from '~/routes/keyboard-help/remote-button-icons';
 import RemoteControl from '~/routes/remote-mic/panels/microphone/remote-controls';
 import SongSelectionGroups from '~/routes/remote-mic/panels/microphone/song-selection-groups';
 import SongSelectionToolbar from '~/routes/remote-mic/panels/microphone/song-selection-toolbar';
+import { cn } from '~/utils/cn';
+import { twx } from '~/utils/twx';
 
 interface Props {
   onSearchStateChange?: (isActive: boolean) => void;
@@ -180,7 +180,7 @@ function ScrollShadowColumn({ children, className }: PropsWithChildren<{ classNa
   const { showTop, showBottom } = useVerticalScrollShadows(scrollRef, contentRef);
 
   return (
-    <div className={twMerge('relative flex min-h-0 flex-col', className)}>
+    <div className={cn('relative flex min-h-0 flex-col', className)}>
       {/* The mirror keyboard is only single-column in portrait, so the shadows bleed past the panel's
           `px-4` (`-left-4 -right-4`) to span the full screen width; in landscape (two columns) they're
           hidden entirely (`landscape:hidden`). */}
@@ -326,20 +326,16 @@ function NavPad({ keyboard }: { keyboard: HelpEntry }) {
   );
 }
 
-const ArrowsContainer = twc.div`flex flex-1 justify-center text-xl text-white`;
+const ArrowsContainer = twx.div`text-default flex flex-1 justify-center text-xl`;
 
-const ActionsContainer = twc.div`flex flex-1 flex-col justify-between`;
+const ActionsContainer = twx.div`flex flex-1 flex-col justify-between`;
 
 function ArrowButton({ className, ...props }: ComponentProps<typeof Button>) {
   return (
-    <Button
-      size="small"
-      className={twMerge('m-0.5 aspect-square scale-100 animate-none px-0!', className)}
-      {...props}
-    />
+    <Button size="small" className={cn('m-0.5 aspect-square scale-100 animate-none px-0!', className)} {...props} />
   );
 }
 
 function ActionButton({ className, ...props }: ComponentProps<typeof Button>) {
-  return <Button size="small" className={twMerge('m-0.5 w-full', className)} {...props} />;
+  return <Button size="small" className={cn('m-0.5 w-full', className)} {...props} />;
 }

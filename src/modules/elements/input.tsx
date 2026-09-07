@@ -9,10 +9,10 @@ import {
   useState,
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { twc } from 'react-twc';
 
 import { REGULAR_ALPHA_CHARS } from '~/modules/hooks/use-keyboard';
 import { cn } from '~/utils/cn';
+import { twx } from '~/utils/twx';
 
 import { Menu } from './akui/menu';
 
@@ -76,9 +76,7 @@ export const Input = ({
       className={cn(
         `relative scale-100!`,
         className,
-        validationError
-          ? 'starting:outline-text-error/0 outline-text-error/100 outline outline-offset-2 duration-300'
-          : '',
+        validationError ? 'starting:outline-error/0 outline-error/100 outline outline-offset-2 duration-300' : '',
       )}
       onClick={() => {
         inputRef.current?.focus();
@@ -96,7 +94,7 @@ export const Input = ({
         {validationError && (
           <motion.div
             exit={{ opacity: 0, right: '20%' }}
-            className="bg-text-error/75 absolute right-0 bottom-[-1.5rem] rounded-md p-1 text-sm text-white opacity-100 duration-300 starting:right-10 starting:opacity-0">
+            className="bg-error/75 text-default absolute right-0 bottom-[-1.5rem] rounded-md p-1 text-sm opacity-100 duration-300 starting:right-10 starting:opacity-0">
             {validationError}️
           </motion.div>
         )}
@@ -105,8 +103,8 @@ export const Input = ({
   );
 };
 
-const Adornment = twc.span``;
+const Adornment = twx.span``;
 
-const Label = twc.span`pointer-events-none inline-flex w-auto items-center justify-center whitespace-nowrap [&_svg]:text-[1em]`;
+const Label = twx.span`pointer-events-none inline-flex w-auto items-center justify-center whitespace-nowrap [&_svg]:text-[1em]`;
 
-const StyledInput = twc.input`typography text-active w-full border-0 bg-transparent p-0 text-[1em] [caret-shape:underscore] focus:outline-none`;
+const StyledInput = twx.input`typography text-active w-full border-0 bg-transparent p-0 text-[1em] [caret-shape:underscore] focus:outline-none`;

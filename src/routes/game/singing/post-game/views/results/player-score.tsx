@@ -63,7 +63,7 @@ function PlayerScoreView({
           data-test={`player-${playerNumber}-score`}
           data-score={Math.floor(playerScore)}
           className={cn(
-            'typography text-md flex flex-1 justify-between bg-transparent text-white transition-[font-size,color] duration-400 ease-in-out 2xl:text-xl',
+            'typography text-md flex flex-1 justify-between bg-transparent transition-[font-size,color] duration-400 ease-in-out 2xl:text-xl',
             isWinner ? 'text-active text-lg 2xl:text-2xl' : '',
           )}>
           <span

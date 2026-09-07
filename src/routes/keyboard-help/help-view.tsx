@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { twc, TwcComponentProps } from 'react-twc';
+import { TwcComponentProps } from 'react-twc';
 
 import { Kbd } from '~/modules/elements/akui/kbd';
 import Box from '~/modules/elements/akui/primitives/box';
@@ -11,6 +11,7 @@ import {
   MobilePhoneModeSetting,
   useSettingValue,
 } from '~/routes/settings/settings-state';
+import { twx } from '~/utils/twx';
 
 import { RegularHelpEntry } from './context';
 
@@ -108,19 +109,19 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
 // keys rather than a list of sentences, and stays short enough to sit in a corner. `justify-end`
 // puts every column's keys against its label, so the labels line up however tall the keys above them
 // are (the arrow pad is two rows, every other entry is one).
-const Section = twc.div`flex min-w-0 flex-col items-center justify-end gap-1 text-center`;
+const Section = twx.div`flex min-w-0 flex-col items-center justify-end gap-1 text-center`;
 
 // `text-sm` here rather than on the `Kbd`s themselves: they size in `em`, so the whole cluster -
 // glyphs, padding and border - scales from this one place.
-const SectionKeys = twc.div`flex-nowrap text-center text-sm font-bold text-white`;
+const SectionKeys = twx.div`text-default flex-nowrap text-center text-sm font-bold`;
 
-const SectionHelp = twc(Typography)`text-center text-sm text-balance`;
+const SectionHelp = twx(Typography)`text-center text-sm text-balance`;
 
-const UseKeyboardIndicator = twc(
+const UseKeyboardIndicator = twx(
   Typography,
-)`text-md invisible absolute inset-0 flex items-center justify-center bg-black/75 py-8 text-white opacity-0 duration-300 hover:visible hover:opacity-100`;
+)`text-md text-default invisible absolute inset-0 flex items-center justify-center bg-black/75 py-8 opacity-0 duration-300 hover:visible hover:opacity-100`;
 
-const Container = twc(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
+const Container = twx(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
   // Bottom left, laid out as a row: a panel of its own in the corner, rather than a column of text
   // down the side of whatever screen is up. The LEFT corner because the right one is where screens
   // put their primary action - "Play next song", the rating buttons - and a panel sitting on top of

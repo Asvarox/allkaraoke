@@ -1,7 +1,7 @@
 import { ComponentProps, ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { NavButton } from '~/modules/elements/nav-controls';
+import { cn } from '~/utils/cn';
 
 // `variant` is taken over from `NavButton` (where it marks a control's role on the remote, e.g.
 // `back`): no tile is ever anything but a plain forward action, so the name is free to describe the
@@ -33,17 +33,17 @@ function MenuTile({ label, hint, displayLabel, variant = 'secondary', className,
       // centring — the tile's label sits in its top-left corner, not in the middle of the box. The
       // `[data-focused]` rule re-colours the hint: focus turns the whole tile orange, and a dimmed
       // white line on that is unreadable.
-      className={twMerge(
+      className={cn(
         "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left sm:px-6 sm:py-6 [&[data-focused='true']_[data-hint]]:text-black/60",
         className,
       )}>
       <span className="flex w-full min-w-0 flex-col items-start gap-1 sm:gap-2">
-        <span className={twMerge('w-full leading-tight text-balance', primary ? 'text-lg sm:text-xl' : 'text-lg')}>
+        <span className={cn('w-full leading-tight text-balance', primary ? 'text-lg sm:text-xl' : 'text-lg')}>
           {displayLabel || label}
         </span>
         <span
           data-hint
-          className={twMerge(
+          className={cn(
             'mobile:hidden w-full truncate font-normal tracking-widest normal-case',
             primary ? 'text-sm' : 'text-xs',
           )}>

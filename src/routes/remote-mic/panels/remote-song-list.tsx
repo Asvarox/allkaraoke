@@ -188,7 +188,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                 left={
                   <Icon
                     icon="ic:baseline-arrow-right"
-                    className={`text-white transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+                    className={`text-default transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
                   />
                 }
                 topText={mainArtistName}

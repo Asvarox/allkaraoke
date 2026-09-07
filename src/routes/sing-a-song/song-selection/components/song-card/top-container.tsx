@@ -12,7 +12,7 @@ import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/s
 
 // Base indicator pill shared by all badge variants
 const indicatorBase =
-  'h-8 min-w-8 box-border text-white text-base flex items-center justify-center uppercase bg-black/75 rounded-lg';
+  'h-8 min-w-8 box-border text-default text-base flex items-center justify-center uppercase bg-black/75 rounded-lg';
 export const indicatorCompact =
   'h-6 min-w-6 box-border text-xs flex items-center justify-center uppercase rounded px-1.5 shrink-0 font-semibold';
 

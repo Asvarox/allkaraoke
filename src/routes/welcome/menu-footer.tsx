@@ -1,6 +1,5 @@
-import { twc } from 'react-twc';
-
 import { Icon, IconName } from '~/modules/elements/akui/icon';
+import { twx } from '~/utils/twx';
 
 const socials: Array<{ name: string; icon: IconName; href: string }> = [
   { name: 'Facebook', icon: 'cib:facebook', href: 'https://www.facebook.com/allkaraoke.party' },
@@ -18,7 +17,7 @@ const socials: Array<{ name: string; icon: IconName; href: string }> = [
  */
 function MenuFooter() {
   return (
-    <footer className="typography mobile:gap-4 flex flex-wrap items-end justify-between gap-10 border-t border-white/10 pt-3 text-white/55">
+    <footer className="typography mobile:gap-4 text-default/55 flex flex-wrap items-end justify-between gap-10 border-t border-white/10 pt-3">
       {/* Same attribution the menu has always carried, kept as its own view-transition target so it
           doesn't slide across the screen on the way in and out of the menu. */}
       <div className="flex flex-col gap-1 text-xs [view-transition-name:background-music-credit]">
@@ -49,6 +48,6 @@ function MenuFooter() {
   );
 }
 
-const SectionLabel = twc.span`text-xs font-bold tracking-widest uppercase`;
+const SectionLabel = twx.span`text-xs font-bold tracking-widest uppercase`;
 
 export default MenuFooter;

@@ -28,8 +28,10 @@
   }
 }
 
+/* The single source of the app's default text colour: `text-default` (defined in
+   tailwind.config.js from `styles.colors.text.default`) rather than a palette shade picked here. */
 @utility typography {
-  @apply text-slate-100;
+  @apply text-default;
 
   strong {
     @apply text-active;

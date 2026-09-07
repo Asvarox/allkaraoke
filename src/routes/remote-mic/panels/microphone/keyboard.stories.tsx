@@ -34,8 +34,8 @@ const settingsKeyboard: HelpEntry = {
 function MicPreviewPlaceholder() {
   return (
     <div className="relative h-[6.5rem] min-h-[6.5rem] w-full rounded-md border border-white bg-white/10 landscape:h-auto landscape:max-h-[300px] landscape:min-h-[200px] landscape:flex-1">
-      <span className="absolute inset-0 flex items-center justify-center text-white">Mic preview</span>
-      <button className="absolute right-4 bottom-4 rounded bg-white/20 p-3 text-xs text-white">Join game</button>
+      <span className="text-default absolute inset-0 flex items-center justify-center">Mic preview</span>
+      <button className="text-default absolute right-4 bottom-4 rounded bg-white/20 p-3 text-xs">Join game</button>
     </div>
   );
 }
@@ -44,7 +44,7 @@ function MicPreviewPlaceholder() {
 // `h-dvh` container so resizing the Storybook viewport actually drives the portrait/landscape layout.
 const PhoneShell: StoryFn<{ keyboard: HelpEntry }> = ({ keyboard }) => (
   <div className="mx-auto flex h-dvh w-full max-w-[45rem] flex-col border border-white/20">
-    <div className="shrink-0 bg-slate-800 p-3 text-center text-white">Top bar</div>
+    <div className="text-default shrink-0 bg-slate-800 p-3 text-center">Top bar</div>
     <div className="flex flex-1 flex-col justify-center overflow-hidden">
       <div className="relative flex h-full flex-col">
         <div className="text-md flex h-full min-h-0 flex-col items-center justify-center gap-2 overflow-hidden px-4 pt-4 landscape:flex-row landscape:items-stretch landscape:gap-4 landscape:py-2">
@@ -57,7 +57,7 @@ const PhoneShell: StoryFn<{ keyboard: HelpEntry }> = ({ keyboard }) => (
         </div>
       </div>
     </div>
-    <div className="flex shrink-0 gap-px bg-slate-700 text-center text-xs text-white">
+    <div className="text-default flex shrink-0 gap-px bg-slate-700 text-center text-xs">
       {['Microphone', 'Song list', 'Settings'].map((t) => (
         <div key={t} className="flex-1 bg-black p-2">
           {t}

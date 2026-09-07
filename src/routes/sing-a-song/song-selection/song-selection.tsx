@@ -389,7 +389,7 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
               Footer={
                 selectedPlaylistData?.footerComponent ??
                 (setlist.isEditable ? (
-                  <div className="typography mt-auto pt-20 text-center text-lg text-white sm:text-xl">
+                  <div className="typography mt-auto pt-20 text-center text-lg sm:text-xl">
                     Missing a song? Try{' '}
                     <Link to="convert/">
                       <a>adding one</a>
@@ -478,7 +478,7 @@ const components: Components<{
     </>
   ),
   EmptyPlaceholder: () => (
-    <div className="typography flex h-[30vh] flex-1 items-center justify-center text-xl text-white sm:text-4xl">
+    <div className="typography flex h-[30vh] flex-1 items-center justify-center text-xl sm:text-4xl">
       No songs found
     </div>
   ),

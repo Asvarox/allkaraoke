@@ -1,7 +1,6 @@
 import { Skeleton } from '@mui/material';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
-import { twc } from 'react-twc';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -15,6 +14,7 @@ import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import isE2E from '~/modules/utils/is-e2-e';
 import languageNameToIsoCode from '~/modules/utils/language-name-to-iso-code';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { twx } from '~/utils/twx';
 
 interface Props {
   onClose: () => void;
@@ -155,11 +155,11 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
   );
 }
 
-const NextButtonContainer = twc.div`flex flex-col gap-2.5`;
+const NextButtonContainer = twx.div`flex flex-col gap-2.5`;
 
-const LanguageName = twc.span`transition-[300ms]`;
+const LanguageName = twx.span`transition-[300ms]`;
 
-const LanguageEntry = twc(
+const LanguageEntry = twx(
   MenuButton,
 )`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50 data-[excluded=true]:data-[focused=false]:bg-black/55`;
 

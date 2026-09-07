@@ -27,7 +27,7 @@ function Toolbar({ children }: PropsWithChildren) {
     <>
       <QRCodeModal closeModal={closeModal} open={isModalOpen} />
       <div
-        className="fixed top-0 right-0 z-[10000] m-0 flex cursor-pointer items-center gap-1 pt-2 pr-2 text-white"
+        className="text-default fixed top-0 right-0 z-[10000] m-0 flex cursor-pointer items-center gap-1 pt-2 pr-2"
         style={toolbarStyle}>
         {children}
         {hasContent && (

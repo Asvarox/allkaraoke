@@ -1,5 +1,4 @@
 import { cloneElement, HTMLProps, isValidElement, PropsWithChildren, ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { ButtonSize, sizeToIconSize } from '~/modules/elements/akui/button-sizes';
 import useResponsiveValue from '~/modules/elements/akui/hooks/use-responsive-value';
@@ -7,6 +6,7 @@ import { Icon, IconProps } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
 import { ResponsiveValue } from '~/modules/elements/akui/types';
 import isE2E from '~/modules/utils/is-e2-e';
+import { cn } from '~/utils/cn';
 import { twx } from '~/utils/twx';
 
 export type { ButtonSize } from '~/modules/elements/akui/button-sizes';
@@ -78,7 +78,7 @@ const additionalProps = ({ inactive, readOnly, focused, subtleFocused, leftIcon,
 const IconSlot = ({ size, children }: { size: ButtonSize; children?: ReactNode }) => (
   <span
     aria-hidden={children == null || undefined}
-    className={twMerge('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
+    className={cn('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
     {isValidElement<Partial<IconProps>>(children) && children.type === Icon
       ? cloneElement(children, { size: sizeToIconSize[size] })
       : children}
@@ -120,7 +120,7 @@ const ButtonContent = ({
           text centred inside a filled middle lands exactly where the old `justify-between` put it.
           `truncate` needs the shrink `min-w-0` here to have a bounded width to ellipsize against -
           without it the span would grow to fit its content instead of clipping. */}
-      <span className={twMerge('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
+      <span className={cn('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
         {children}
       </span>
       {/* create gutter for icons only for full-width buttons */}

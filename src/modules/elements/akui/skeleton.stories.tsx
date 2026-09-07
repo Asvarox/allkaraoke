@@ -4,11 +4,13 @@ import { Skeleton } from './skeleton';
 
 function GalleryTemplate() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-950 p-8 text-white">
+    <div className="text-default flex min-h-screen items-center justify-center bg-slate-950 p-8">
       <div className="flex w-full max-w-5xl flex-col gap-8">
         <div>
           <h1 className="text-2xl font-semibold">AKUI Skeleton</h1>
-          <p className="text-sm text-white/60">Reusable loading blocks for text, thumbnails, cards, and compact UI.</p>
+          <p className="text-default/60 text-sm">
+            Reusable loading blocks for text, thumbnails, cards, and compact UI.
+          </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">

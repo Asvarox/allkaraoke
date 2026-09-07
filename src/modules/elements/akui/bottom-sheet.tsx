@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { PropsWithChildren, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { twc } from 'react-twc';
+
+import { twx } from '~/utils/twx';
 
 export interface BottomSheetProps extends PropsWithChildren {
   open: boolean;
@@ -10,7 +11,7 @@ export interface BottomSheetProps extends PropsWithChildren {
   title?: ReactNode;
 }
 
-const Backdrop = twc(motion.div)`fixed inset-0 z-[20002] bg-black/60 backdrop-blur-sm`;
+const Backdrop = twx(motion.div)`fixed inset-0 z-[20002] bg-black/60 backdrop-blur-sm`;
 
 export function BottomSheet({ open, onClose, title, children }: BottomSheetProps) {
   const sheet = (
@@ -38,7 +39,7 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
               <div className="h-1 w-10 rounded-full bg-white/30" />
             </div>
             {title && (
-              <div className="px-4 pb-2 text-sm font-bold tracking-widest text-white/50 uppercase">{title}</div>
+              <div className="text-default/50 px-4 pb-2 text-sm font-bold tracking-widest uppercase">{title}</div>
             )}
             {/* Content */}
             <div className="max-h-[60vh] overflow-y-auto px-4">{children}</div>

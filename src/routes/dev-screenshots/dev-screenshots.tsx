@@ -285,10 +285,10 @@ function DiffBadge({ diff, className = '' }: { diff: Diff | undefined; className
 
   const base = `pointer-events-none rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none ${className}`;
   if (diff.status === 'pending') return <span className={`${base} bg-neutral-700 text-neutral-300`}>diffing…</span>;
-  if (diff.status === 'error') return <span className={`${base} bg-amber-600 text-white`}>diff error</span>;
+  if (diff.status === 'error') return <span className={`${base} text-default bg-amber-600`}>diff error</span>;
 
   const percent = diff.ratio !== undefined ? `${(diff.ratio * 100).toFixed(1)}%` : '';
-  return <span className={`${base} bg-red-600 text-white`}>Δ {percent}</span>;
+  return <span className={`${base} text-default bg-red-600`}>Δ {percent}</span>;
 }
 
 // Stacks the diff image on top of the screenshot, hidden until the enclosing `group`-marked ancestor
@@ -347,7 +347,7 @@ function DevScreenshots() {
   const focused = parseHash(hash);
 
   return (
-    <div className="min-h-screen bg-neutral-900 p-6 text-white">
+    <div className="text-default min-h-screen bg-neutral-900 p-6">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold">Visual regression screenshots</h1>
         <div className="flex gap-2">

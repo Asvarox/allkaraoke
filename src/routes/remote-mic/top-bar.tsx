@@ -44,7 +44,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
           RemoteMicClient.renameSelf(newName);
         }}
       />
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-black px-3 py-1.5 text-white">
+      <div className="text-default grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-black px-3 py-1.5">
         <div className="text-md flex items-center gap-1.5 font-bold">
           <div
             className={`text-center ${dotColorByStatus[connectionStatus]} flex w-10 items-center justify-center`}
@@ -58,7 +58,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
         {connectionStatus === 'connected' && (
           <button
             type="button"
-            className="ph-no-capture text-md flex max-w-[40vw] items-center gap-1 font-bold text-white/90"
+            className="ph-no-capture text-md text-default/90 flex max-w-[40vw] items-center gap-1 font-bold"
             onClick={() => setIsRenameModalOpen(true)}
             data-test="topbar-player-name">
             <span className="truncate">{name}</span>

@@ -1,5 +1,6 @@
 import { HTMLProps, ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
+
+import { cn } from '~/utils/cn';
 
 /**
  * Kbd component for displaying keyboard keys with consistent styling.
@@ -8,8 +9,8 @@ import { twMerge } from 'tailwind-merge';
 export const Kbd = ({ className, children, ...props }: HTMLProps<HTMLElement>): ReactNode => {
   return (
     <kbd
-      className={twMerge(
-        'inline-block rounded-lg border-3 min-w-7 border-gray-300 border-r-gray-400 border-b-gray-400',
+      className={cn(
+        'inline-block min-w-7 rounded-lg border-3 border-gray-300 border-r-gray-400 border-b-gray-400',
         'bg-gray-50 px-1.5 py-0.5 leading-snug font-normal text-gray-800',
         'shadow',
         className,

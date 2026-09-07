@@ -11,7 +11,7 @@ function MicCheck({ names }: Props) {
     <div className="flex gap-3">
       {PlayersManager.getPlayers().map((player) => (
         <div
-          className="relative flex flex-1 flex-col items-center gap-3 border border-white bg-black px-8 py-2 text-center text-lg text-white"
+          className="text-default relative flex flex-1 flex-col items-center gap-3 border border-white bg-black px-8 py-2 text-center text-lg"
           data-test={`mic-check-p${player.number}`}
           key={player.number}>
           <PlayerMicCheck playerNumber={player.number} />

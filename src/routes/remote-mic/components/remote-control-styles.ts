@@ -5,7 +5,7 @@
  * a distinct control, so they don't need the extra contrast.
  *
  * `disabled:bg-gray-500!` re-asserts the base button's disabled colour: the darker background is a
- * plain (higher-priority) class that `twMerge` would otherwise let win even for disabled controls,
+ * plain (higher-priority) class that `cn` would otherwise let win even for disabled controls,
  * washing out the greyed-out look. It's inert on non-button elements (a `div` is never `:disabled`).
  */
 export const remoteSelectorBackground = 'bg-black/65! disabled:bg-gray-500!';

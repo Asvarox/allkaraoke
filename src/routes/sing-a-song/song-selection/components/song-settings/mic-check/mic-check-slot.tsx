@@ -53,7 +53,7 @@ export function MicCheckSlotShell({
     <Box
       {...props}
       className={`relative flex w-full items-center text-center transition-opacity ${SIZES[size]} ${
-        connected ? 'border-white text-white' : 'border-gray-600 bg-black text-gray-500 opacity-40'
+        connected ? 'text-default border-white' : 'border-gray-600 bg-black text-gray-500 opacity-40'
       } ${className ?? ''}`}>
       <span className="ph-no-capture absolute inset-0 z-1 flex items-center justify-center">{name}</span>
       {/* Badges stay visible for a dropped singer too — that's when knowing who dropped matters most */}

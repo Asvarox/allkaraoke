@@ -1,13 +1,13 @@
 import { ComponentProps, ReactNode } from 'react';
-import { twc } from 'react-twc';
-import { twMerge } from 'tailwind-merge';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { InputWrapper } from '~/modules/elements/akui/input-wrapper';
 import { remoteControlHeight, remoteSelectorBackground } from '~/routes/remote-mic/components/remote-control-styles';
+import { cn } from '~/utils/cn';
+import { twx } from '~/utils/twx';
 
 interface Props extends Omit<ComponentProps<typeof Container>, 'onChange' | 'className'> {
-  /** Narrowed to a plain string (twc types it far wider) so it can be fed to `twMerge`. */
+  /** Narrowed to a plain string (twx types it far wider) so it can be fed to `cn`. */
   className?: string;
   unit?: string;
   value: number;
@@ -30,7 +30,7 @@ function NumericInput({
   return (
     <InputWrapper info={info}>
       <Container
-        className={twMerge('shadow-focusable rounded-xl', remoteControlHeight, remoteSelectorBackground, className)}
+        className={cn('shadow-focusable rounded-xl', remoteControlHeight, remoteSelectorBackground, className)}
         {...props}>
         <Button
           onClick={() => onChange(value - step)}
@@ -66,8 +66,8 @@ export default NumericInput;
  * are sized explicitly via `size={6}` (24px) rather than a CSS class — matches the icon size AKUI
  * uses on its `small` buttons, which is what they sit beside here.
  */
-const Button = twc.button`typography flex h-full w-14 shrink-0 items-center justify-center border-none bg-transparent disabled:opacity-50`;
+const Button = twx.button`typography flex h-full w-14 shrink-0 items-center justify-center border-none bg-transparent disabled:opacity-50`;
 
 // Full width and the shared control height/background, so a stepper lines up with the buttons,
 // switchers and checkboxes it sits among on the remote.
-const Container = twc.div`typography flex w-full items-center`;
+const Container = twx.div`typography flex w-full items-center`;

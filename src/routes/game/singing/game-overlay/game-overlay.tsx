@@ -122,7 +122,7 @@ const GameOverlay = forwardRef(function (
   const showMultipleLines = !mobilePhoneMode && players.length > 1;
 
   return (
-    <div className="relative flex h-full flex-col font-bold text-white">
+    <div className="text-default relative flex h-full flex-col font-bold">
       {graphicLevel === 'high' && (
         <>
           <script type={'x-shader/x-fragment'} id={'plane-fs'}>

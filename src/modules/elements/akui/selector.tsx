@@ -11,10 +11,10 @@ import {
   useRef,
   useState,
 } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { Button } from '~/modules/elements/akui/button';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
+import { cn } from '~/utils/cn';
 
 // ---------------------------------------------------------------------------
 // Context
@@ -106,7 +106,7 @@ export function ScrollableRow({ children, className }: PropsWithChildren<{ class
   }, []);
 
   return (
-    <div className={twMerge('relative min-w-0 overflow-hidden', className)}>
+    <div className={cn('relative min-w-0 overflow-hidden', className)}>
       <div
         className="pointer-events-none absolute inset-y-0 left-0 z-10 flex w-10 items-center justify-start pl-1 transition-opacity duration-150"
         style={{ opacity: showLeft ? 1 : 0 }}
@@ -150,7 +150,7 @@ function SelectorRoot({ value, onChange, children, asChild, className }: Selecto
     const merged =
       isValidElement(child) && className
         ? cloneElement(child as React.ReactElement<{ className?: string }>, {
-            className: twMerge((child.props as { className?: string }).className, className),
+            className: cn((child.props as { className?: string }).className, className),
           })
         : child;
 
@@ -189,7 +189,7 @@ function SelectorItem({ value, children, className, ...props }: SelectorItemProp
       {...props}
       focused={isActive}
       onClick={() => ctx.onChange(value)}
-      className={twMerge('scale-100!', className)}>
+      className={cn('scale-100!', className)}>
       {children}
     </Button>
   );

@@ -160,7 +160,7 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
                     <>
                       <span className="typography">Microphone is audible</span>
                       <div className="flex h-8 w-10 items-center justify-end">
-                        <Icon icon="ic:baseline-check" size={8} className="text-white" />
+                        <Icon icon="ic:baseline-check" size={8} className="text-default" />
                       </div>
                     </>
                   )}

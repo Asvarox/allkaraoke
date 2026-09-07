@@ -1,11 +1,11 @@
 import { cloneElement, ComponentProps, ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
-import { twc } from 'react-twc';
 
 import storage from '~/modules/utils/storage';
+import { twx } from '~/utils/twx';
 
-export const StyledTooltip = twc(ReactTooltip)`rounded-xl bg-black/50 px-2 py-1 text-sm text-white`;
+export const StyledTooltip = twx(ReactTooltip)`text-default rounded-xl bg-black/50 px-2 py-1 text-sm`;
 interface Props {
   clickable?: boolean;
   open?: boolean;
@@ -82,6 +82,6 @@ export const ClosableTooltip = ({
   );
 };
 
-const OkButtonWrapper = twc.div`mt-2.5 flex justify-end`;
+const OkButtonWrapper = twx.div`mt-2.5 flex justify-end`;
 
-const OkButton = twc.button`rounded-1 text-md hover:text-active hover:border-active active:bg-active cursor-pointer border border-white bg-none px-5 py-0.5 font-bold text-white active:border-none active:text-white`;
+const OkButton = twx.button`rounded-1 text-md hover:text-active hover:border-active active:bg-active text-default active:text-default cursor-pointer border border-white bg-none px-5 py-0.5 font-bold active:border-none`;

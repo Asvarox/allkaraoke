@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { twc } from 'react-twc';
 import Typewriter from 'typewriter-effect';
 
 import { ButtonLink } from '~/modules/elements/akui/button';
@@ -161,12 +160,12 @@ function ClassicLanding() {
   );
 }
 
-const StatText = twc.div`mobile:text-md text-lg`;
-const StatSubText = twc.div`text-md mobile:text-sm pt-1 text-right [&_.Typewriter]:inline`;
+const StatText = twx.div`mobile:text-md text-lg`;
+const StatSubText = twx.div`text-md mobile:text-sm pt-1 text-right [&_.Typewriter]:inline`;
 
-const StatSegment = twc.div`typography flex flex-1 flex-col justify-center text-xl`;
+const StatSegment = twx.div`typography flex flex-1 flex-col justify-center text-xl`;
 
-const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
+const Screenshot = twx.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
 
 const PlayButton = twx(ButtonLink)`mobile:text-2xl subtle-focus w-full bg-black/60 px-4 py-4 text-5xl`;
 

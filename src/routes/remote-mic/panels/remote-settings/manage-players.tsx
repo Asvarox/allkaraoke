@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
 
 import { BottomSheet } from '~/modules/elements/akui/bottom-sheet';
@@ -11,6 +10,7 @@ import { SubscriptionChannels } from '~/modules/remote-mic/network/client/subscr
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import PlayerChangeModal from '~/routes/remote-mic/components/player-change-modal';
 import PlayerNumberCircle from '~/routes/remote-mic/components/player-number-circle';
+import { twx } from '~/utils/twx';
 
 function ManagePlayers() {
   const list = useSubscription('remote-mics') ?? [];
@@ -65,9 +65,9 @@ const Entry = ({ mic }: { mic: ValuesType<SubscriptionChannels['remote-mics']> }
   );
 };
 
-const Container = twc.div`flex flex-col gap-2.5`;
+const Container = twx.div`flex flex-col gap-2.5`;
 
-const RemoteMicEntry = twc(MenuButton)`flex items-center px-5`;
+const RemoteMicEntry = twx(MenuButton)`flex items-center px-5`;
 
-const RemoteMicId = twc.span`px-2.5 text-sm`;
+const RemoteMicId = twx.span`px-2.5 text-sm`;
 export default ManagePlayers;

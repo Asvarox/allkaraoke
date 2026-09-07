@@ -30,8 +30,10 @@ module.exports = {
           'player-0-christmas': styles.colorSets.christmasGreen.text,
           'player-1': styles.colors.players[1].text,
           'player-1-christmas': styles.colorSets.christmasRed.text,
-          error: 'red',
         },
+        // Top-level, not nested under `text`, so the utilities read `text-error` / `bg-error` /
+        // `outline-error` rather than the doubled-up `text-text-error`.
+        error: 'red',
         active: styles.colors.text.active,
       },
       keyframes: {

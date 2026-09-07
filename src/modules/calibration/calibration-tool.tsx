@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMeasure } from 'react-use';
-import { twMerge } from 'tailwind-merge';
 
 import Typography from '~/modules/elements/akui/primitives/typography';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import isE2E from '~/modules/utils/is-e2-e';
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
+import { cn } from '~/utils/cn';
 
 export const CalibrationTool = () => {
   // The circle shrinks from full size to nothing every 250ms of video time, so a screenshot can catch it
@@ -34,7 +34,7 @@ export const CalibrationTool = () => {
     <div className="flex h-[150px] flex-col items-center justify-center" ref={playerContainer}>
       {currentStatus === VideoState.PLAYING ? (
         <div
-          className={twMerge(
+          className={cn(
             'bg-active pointer-events-none absolute h-[150px] w-[150px] rounded-full',
             !frozen && 'animate-calibrate-pulse',
           )}

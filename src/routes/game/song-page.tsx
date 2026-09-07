@@ -16,8 +16,8 @@ export default function SongPage({ songData, background, width, height, children
       <BackgroundImage video={songData.video} blur />
       {background && <div className="fixed inset-0">{background}</div>}
 
-      <div className="relative mx-auto flex h-full max-w-440 flex-col px-4 text-white">
-        <div className="pointer-events-none mb-4 flex flex-col items-start gap-1 text-white">
+      <div className="text-default relative mx-auto flex h-full max-w-440 flex-col px-4">
+        <div className="text-default pointer-events-none mb-4 flex flex-col items-start gap-1">
           <ContentElement className="text-active mt-2 text-lg lg:text-xl 2xl:mt-5 2xl:text-5xl">
             {songData.title}
           </ContentElement>

@@ -89,7 +89,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4">
         <Loader />
-        <span className="typography text-xl text-white">Reconnecting…</span>
+        <span className="typography text-xl">Reconnecting…</span>
       </div>
     );
   }
@@ -122,7 +122,7 @@ function Microphone({ roomId, monitoringStarted, setIsKeepAwakeOn, connectionErr
             animate={{ opacity: 1, scale: 1, transition: { duration: 0.25 } }}
             exit={{ opacity: 0, transition: { duration: 0.2 } }}>
             <Loader />
-            <span className="typography text-xl text-white">Reconnecting…</span>
+            <span className="typography text-xl">Reconnecting…</span>
           </motion.div>
         )}
       </AnimatePresence>
