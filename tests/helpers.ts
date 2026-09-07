@@ -2,6 +2,7 @@ import { readFileSync, readdirSync } from 'fs';
 
 import { BrowserContext, Page } from '@playwright/test';
 
+import { BoardEntry } from '../src/modules/leaderboard/types';
 import { getSongPreview } from '../src/modules/songs/utils';
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../src/modules/songs/utils/convert-txt-to-song';
@@ -48,6 +49,46 @@ export const enableNewLandingPage = async ({ context }: { page: Page; context: B
   await context.addInitScript(() => {
     window.isE2ENewLandingPage = true;
   });
+};
+
+const BOARD_SONGS = [
+  { artist: 'Bon Jovi', title: 'Livin on a Prayer' },
+  { artist: 'ABBA', title: 'Dancing Queen' },
+  { artist: 'Queen', title: 'Bohemian Rhapsody' },
+  { artist: 'Adele', title: 'Rolling in the Deep' },
+  { artist: 'Linkin Park', title: 'Numb' },
+];
+
+/**
+ * A full global board, for a screen whose point is what a long one does to it. The rows are made
+ * here rather than sung: the local Durable Object holds whatever earlier specs happened to submit,
+ * which is neither this many rows nor the same rows twice.
+ *
+ * Everything a row renders is fixed — the dates are whole days back so the relative date each one
+ * shows cannot drift mid-run, and the flags, which come from flagcdn.com, are stubbed with a plain
+ * swatch so a screenshot never waits on a CDN.
+ */
+export const mockLeaderboard = async ({ page }: { page: Page; context: BrowserContext }, count = 50) => {
+  const entries: BoardEntry[] = Array.from({ length: count }, (_, index) => ({
+    name: `E2E Player ${String(index + 1).padStart(2, '0')}`,
+    country: 'pl',
+    score: 1_200_000 - index * 7_531,
+    ...BOARD_SONGS[index % BOARD_SONGS.length],
+    songId: `e2e-board-song-${index % BOARD_SONGS.length}`,
+    // 1-based, and only ever Medium or Hard: Easy never reaches the global board
+    tolerance: (index % 2) + 1,
+    createdAt: Date.now() - ((index % 13) + 1) * 24 * 60 * 60 * 1000,
+  }));
+
+  await page.route('/leaderboard', (route) =>
+    route.fulfill({ status: 200, body: JSON.stringify({ generatedAt: Date.now(), entries }) }),
+  );
+  await page.route('https://flagcdn.com/**', (route) =>
+    route.fulfill({
+      contentType: 'image/svg+xml',
+      body: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><rect width="3" height="2" fill="#3f5170"/></svg>',
+    }),
+  );
 };
 
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
