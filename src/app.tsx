@@ -1,8 +1,8 @@
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
-import { ErrorBoundary } from '@sentry/react';
 import { Suspense, lazy, useMemo } from 'react';
 import { Route, Router, Switch } from 'wouter';
 
+import { ErrorBoundary } from '~/modules/elements/error-boundary';
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';

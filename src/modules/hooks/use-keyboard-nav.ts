@@ -1,4 +1,4 @@
-import { captureException } from '@sentry/react';
+import posthog from 'posthog-js';
 import {
   createContext,
   useContext,
@@ -447,11 +447,9 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const coverableElements = elementList.current.length - screenOnlyNames.current.size;
     const fullCoverage = collected.length > 0 && screenControls === coverableElements;
     if (collected.length > 0 && !fullCoverage && process.env.NODE_ENV !== 'production') {
-      captureException(
-        new Error(
-          `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`,
-        ),
-      );
+      const message = `useKeyboardNav: partial mirror coverage (${screenControls}/${coverableElements} controls); falling back to arrows`;
+      console.error(message);
+      posthog.captureException(new Error(message));
     }
     // A COPY, not `collected` itself: `register` refreshes entries in place when a child re-renders
     // on its own, and handing the live array to state would let that mutation rewrite the committed

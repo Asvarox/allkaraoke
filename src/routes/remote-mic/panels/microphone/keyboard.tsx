@@ -1,5 +1,5 @@
-import { captureException } from '@sentry/react';
 import { AnimatePresence, motion } from 'motion/react';
+import posthog from 'posthog-js';
 import { ComponentProps, PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 import { twc } from 'react-twc';
 import { twMerge } from 'tailwind-merge';
@@ -27,9 +27,8 @@ function vibrate() {
     navigator?.vibrate?.(100);
   } catch (e) {
     if (!exceptionCaptured) {
-      captureException(e, {
-        level: 'warning',
-      });
+      posthog.captureException(e);
+      console.warn(e);
       exceptionCaptured = true;
     }
   }

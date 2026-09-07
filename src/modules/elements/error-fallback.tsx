@@ -1,13 +1,13 @@
-import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
+import { ErrorFallbackProps } from '~/modules/elements/error-boundary';
 import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import storage from '~/modules/utils/storage';
 
-export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
+export const ErrorFallback = ({ error, resetError }: ErrorFallbackProps) => {
   const errorObj = error as object;
 
   return (
