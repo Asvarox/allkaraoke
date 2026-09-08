@@ -56,7 +56,7 @@ function ClassicLanding() {
         <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <GithubRibbon />
-      <div className="landscap:w-full landscap:flex-row mx-auto flex min-h-screen w-[72rem] flex-col items-stretch justify-center gap-4 max-lg:h-auto max-lg:w-full [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
+      <div className="mx-auto flex min-h-screen w-[72rem] flex-col items-stretch justify-center gap-4 max-lg:h-auto max-lg:w-full max-lg:landscape:flex-row [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
         <div className="flex justify-center gap-6 text-6xl max-lg:hidden">
           <LogoIcon />
           <Logo />
@@ -66,7 +66,7 @@ function ClassicLanding() {
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <Box className="landscap:flex-1 flex-row gap-6 bg-black/60 p-10 max-lg:flex-col max-lg:rounded-[0] max-lg:p-4 [&_hr]:my-3">
+        <Box className="flex-row gap-6 bg-black/60 p-10 max-lg:flex-col max-lg:rounded-[0] max-lg:p-4 max-lg:landscape:flex-1 [&_hr]:my-3">
           <StatSegment className="h-full justify-between">
             <div className="max-lg:text-md text-justify text-lg leading-normal">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
@@ -121,7 +121,7 @@ function ClassicLanding() {
               </StatText>
             </div>
           </StatSegment>
-          <StatSegment className="landscap:hidden gap-10 max-lg:flex-row max-lg:gap-2">
+          <StatSegment className="gap-10 max-lg:flex-row max-lg:gap-2 max-lg:landscape:hidden">
             <Screenshot
               src={screenshot1}
               alt="Song list screen"
@@ -136,8 +136,8 @@ function ClassicLanding() {
             <a data-test="join-existing-game">Join existing game</a>
           </SmoothLink>
         </Typography>
-        <div className="landscap:flex-1 flex flex-col justify-stretch">
-          <div className="landscap:fixed top-0 right-0 left-[calc(50vw+1rem)] flex flex-col gap-6">
+        <div className="flex flex-col justify-stretch max-lg:landscape:flex-1">
+          <div className="top-0 right-0 left-[calc(50vw+1rem)] flex flex-col gap-6 max-lg:landscape:fixed">
             <SmoothLink to="remote-mic/">
               <PlayButton data-test="join-existing-game" className="hidden h-28 max-lg:flex">
                 <span className="text-lg">

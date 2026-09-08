@@ -1,5 +1,4 @@
 const styles = require('./src/modules/game-engine/drawing/styles');
-const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -132,12 +131,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    plugin(({ addVariant }) => {
-      // `landscap` — a phone held sideways: short enough that vertical space is the constraint, and
-      // wide enough that it is not a portrait screen. Tailwind's own `landscape:` is orientation
-      // only and would fire on every desktop, so there is no stock variant that says this.
-      addVariant('landscap', '@media (max-height: 500px) and (min-aspect-ratio: 16/10)');
-    }),
-  ],
+  plugins: [],
 };

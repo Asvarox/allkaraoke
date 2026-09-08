@@ -157,7 +157,7 @@ function RemoteSongList({ connectionStatus }: Props) {
       />
       <CustomVirtualization
         forceRenderItem={-1}
-        Footer={<div style={{ height: unit * 3.75 }} className="landscap:block hidden" />}
+        Footer={<div style={{ height: unit * 3.75 }} className="hidden max-lg:landscape:block" />}
         overScan={200}
         components={{}}
         context={{}}
