@@ -73,7 +73,7 @@ const loadedGroups: PlayHistoryGroup[] = [
 ];
 
 export default {
-  title: 'History/Page',
+  title: 'Game/History',
   component: HistoryPageView,
   parameters: {
     layout: 'fullscreen',

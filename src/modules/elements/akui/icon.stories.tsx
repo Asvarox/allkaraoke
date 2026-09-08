@@ -59,7 +59,7 @@ function GalleryTemplate() {
 }
 
 export default {
-  title: 'AKUI/Icon',
+  title: 'Components/Icon',
   component: Icon,
   parameters: {
     layout: 'fullscreen',

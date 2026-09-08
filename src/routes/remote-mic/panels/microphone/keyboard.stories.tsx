@@ -8,7 +8,7 @@ import { MirrorKeyboard } from './keyboard';
 import { MicPillShell } from './volume-indicator';
 
 export default {
-  title: 'Remote Mic/Mirror Keyboard',
+  title: 'Game/Remote Mic/Mirror Keyboard',
   component: MirrorKeyboard,
 } as Meta;
 

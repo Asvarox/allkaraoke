@@ -121,7 +121,7 @@ function GalleryTemplate() {
 }
 
 export default {
-  title: 'Song Selection/Mic Check Slot',
+  title: 'Game/Song Selection/Mic Check Slot',
   component: MicCheckSlot,
   parameters: {
     layout: 'fullscreen',

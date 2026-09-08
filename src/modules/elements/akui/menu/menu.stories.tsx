@@ -5,7 +5,7 @@ import { Menu } from '../menu';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'AKUI/Menu',
+  title: 'Components/Menu',
   component: Menu,
 } as Meta<ComponentProps<typeof Menu>>;
 

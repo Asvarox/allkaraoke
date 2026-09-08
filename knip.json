@@ -32,6 +32,7 @@
     "src/routes/sing-a-song/song-selection/hooks/use-playlists-eurovision.tsx",
     "src/setup-tests.ts",
     "src/stories/song-fixture.ts",
+    "src/stories/foundations/foundations-kit.tsx",
     "src/routes/social-media-elements/social-media-elements.tsx:10",
     "functions/**/*.test.ts",
     "worker/**/*.test.ts",
@@ -77,6 +78,8 @@
   ],
   "ignoreExportsUsedInFile": true,
   "paths": {
-    "~/*": ["src/*"]
+    "~/*": [
+      "src/*"
+    ]
   }
 }

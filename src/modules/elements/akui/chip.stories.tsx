@@ -4,7 +4,7 @@ import { ComponentProps } from 'react';
 import { Chip } from './chip';
 
 export default {
-  title: 'AKUI/Chip',
+  title: 'Components/Chip',
   component: Chip,
 } as Meta<ComponentProps<typeof Chip>>;
 

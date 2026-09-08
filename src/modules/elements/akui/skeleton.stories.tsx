@@ -45,7 +45,7 @@ function GalleryTemplate() {
 }
 
 export default {
-  title: 'AKUI/Skeleton',
+  title: 'Components/Skeleton',
   component: Skeleton,
   parameters: {
     layout: 'fullscreen',

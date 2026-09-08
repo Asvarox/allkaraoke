@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Selector } from './selector';
 
 export default {
-  title: 'AKUI/Selector',
+  title: 'Components/Selector',
   component: Selector,
 } as Meta;
 
