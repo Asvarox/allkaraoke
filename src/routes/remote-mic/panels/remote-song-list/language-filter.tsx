@@ -56,7 +56,7 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
                   <span>
                     {name} <small className="pl-2 text-xs">({count} songs)</small>
                   </span>
-                  <Flag language={[name]} className="h-full w-20 object-cover" />
+                  <Flag language={[name]} className="h-full w-18 rounded-xl object-cover p-1.5" />
                 </Menu.Button>
               );
             })}
