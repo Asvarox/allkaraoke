@@ -36,7 +36,7 @@ describe('cn', () => {
     });
 
     it('treats a variant as a separate axis', () => {
-      expect(merge('text-lg', 'mobile:text-md')).toBe('text-lg mobile:text-md');
+      expect(merge('text-lg', 'max-lg:text-md')).toBe('text-lg max-lg:text-md');
     });
   });
 

@@ -23,7 +23,7 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
       {status === 'ok' ? (
         <div
           data-test="status-ok"
-          className="mobile:w-4 mobile:h-4 m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white"
+          className="m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white max-lg:h-4 max-lg:w-4"
         />
       ) : status === 'unavailable' ? (
         <Icon icon="ic:baseline-error" size={6} data-test="status-unavailable" style={{ color: '#ff0000' }} />

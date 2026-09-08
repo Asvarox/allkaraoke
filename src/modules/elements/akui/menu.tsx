@@ -15,7 +15,7 @@ const MenuContainer = twx(Box)(() => [
   !isE2E() && 'menu-neighbour-glow',
 ]);
 
-export const MenuHelpText = twx(Typography)`text-md mobile:text-xs`;
+export const MenuHelpText = twx(Typography)`text-md max-lg:text-xs`;
 const MenuSubHeader = twx(Typography)`text-lg`;
 
 interface MenuProps extends PropsWithChildren, Omit<HTMLProps<HTMLDivElement>, 'title'> {
@@ -37,7 +37,7 @@ export const Menu = ({ title, children, className, spacing = 'regular', modal = 
 
 Menu.Header = twx(
   Typography,
-)`mobile:text-lg text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000]`;
+)`text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000] max-lg:text-lg`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;

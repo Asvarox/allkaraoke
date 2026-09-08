@@ -15,7 +15,7 @@ import { interactiveSurface } from '~/modules/elements/akui/surfaces';
 export const remoteSelectorBackground = `${interactiveSurface} disabled:bg-gray-500!`;
 
 /**
- * Height of a remote-mic control, matching AKUI's `size="small"` button (`h-14`, `mobile:h-12`) that
+ * Height of a remote-mic control, matching AKUI's `size="small"` button (`h-14`, `max-lg:h-12`) that
  * every mirrored button/switcher/checkbox renders at — so a stepper sitting among them lines up.
  */
-export const remoteControlHeight = 'mobile:h-12 h-14';
+export const remoteControlHeight = 'max-lg:h-12 h-14';

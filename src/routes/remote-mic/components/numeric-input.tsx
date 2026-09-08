@@ -39,7 +39,7 @@ function NumericInput({
           className="rounded-l-md">
           <Icon icon="ic:baseline-remove" size={6} />
         </Button>
-        <div className="mobile:text-md min-w-0 flex-1 text-center text-lg">
+        <div className="max-lg:text-md min-w-0 flex-1 text-center text-lg">
           <strong data-test="numeric-input-value">{value}</strong>
           {unit}
         </div>

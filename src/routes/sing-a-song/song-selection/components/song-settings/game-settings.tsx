@@ -166,7 +166,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
           <NavButton
             name="select-inputs-button"
             size="small"
-            className="mobile:px-6"
+            className="max-lg:px-6"
             remoteIcon="settings"
             onClick={() => setShowModal(true)}>
             Setup mics
@@ -182,7 +182,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
               <NavButton
                 name="play-song-button"
                 size="large"
-                className="mobile:px-10 mobile:h-10 mobile:text-md w-full flex-1 px-20 py-1 sm:w-auto"
+                className="max-lg:text-md w-full flex-1 px-20 py-1 max-lg:h-10 max-lg:px-10 sm:w-auto"
                 remoteIcon="play"
                 isDefault
                 onClick={handlePlay}>

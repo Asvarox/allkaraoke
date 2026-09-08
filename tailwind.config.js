@@ -134,7 +134,9 @@ module.exports = {
   },
   plugins: [
     plugin(({ addVariant }) => {
-      addVariant('mobile', '@media (max-width: 900px)');
+      // `landscap` — a phone held sideways: short enough that vertical space is the constraint, and
+      // wide enough that it is not a portrait screen. Tailwind's own `landscape:` is orientation
+      // only and would fire on every desktop, so there is no stock variant that says this.
       addVariant('landscap', '@media (max-height: 500px) and (min-aspect-ratio: 16/10)');
     }),
   ],

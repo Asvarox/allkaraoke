@@ -34,7 +34,7 @@ function MenuTile({ label, hint, displayLabel, variant = 'secondary', className,
       // `[data-focused]` rule re-colours the hint: focus turns the whole tile orange, and a dimmed
       // white line on that is unreadable.
       className={cn(
-        "mobile:min-h-16 h-full min-h-20 items-start! justify-start! px-4 py-3 text-left sm:px-6 sm:py-6 [&[data-focused='true']_[data-hint]]:text-black/60",
+        "h-full min-h-20 items-start! justify-start! px-4 py-3 text-left max-lg:min-h-16 sm:px-6 sm:py-6 [&[data-focused='true']_[data-hint]]:text-black/60",
         className,
       )}>
       <span className="flex w-full min-w-0 flex-col items-start gap-1 sm:gap-2">
@@ -44,7 +44,7 @@ function MenuTile({ label, hint, displayLabel, variant = 'secondary', className,
         <span
           data-hint
           className={cn(
-            'mobile:hidden w-full truncate font-normal tracking-widest normal-case',
+            'w-full truncate font-normal tracking-widest normal-case max-lg:hidden',
             primary ? 'text-sm' : 'text-xs',
           )}>
           {hint}

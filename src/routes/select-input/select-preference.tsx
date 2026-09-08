@@ -160,13 +160,13 @@ const InputOptionButton = ({
       <OptionIconContainer className="flex w-20 items-center pl-4">{icon}</OptionIconContainer>
       <div className="flex w-full flex-col group-data-[focused=true]:gap-1">
         {name}
-        <span className="description mobile:text-xs max-h-0 overflow-clip text-sm transition-all duration-300 group-hover:max-h-10 group-data-[focused=true]:max-h-10">
+        <span className="description max-h-0 overflow-clip text-sm transition-all duration-300 group-hover:max-h-10 group-data-[focused=true]:max-h-10 max-lg:text-xs">
           {description}
         </span>
       </div>
       {recommended && <Badge className="right-8">Recommended</Badge>}
-      <div className="text-md mobile:text-sm flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right">
-        <Icon icon="ic:baseline-people-alt" className="!text-md !mobile:text-sm" />
+      <div className="text-md flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right max-lg:text-sm">
+        <Icon icon="ic:baseline-people-alt" className="!text-md !max-lg:text-sm" />
         <strong>{numOfPlayers}</strong>
       </div>
     </Menu.Button>

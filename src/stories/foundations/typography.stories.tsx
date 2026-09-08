@@ -131,11 +131,11 @@ export const Typography: StoryFn = () => (
       title="Responsive"
       note={
         <>
-          Use Tailwind&rsquo;s own breakpoints — <code>sm:</code> upward, or the <code>max-*</code> variants when a rule
-          has to stop applying. The project also defines two custom variants, <code>mobile:</code> (max-width 900px) and{' '}
-          <code>landscap:</code> (a short landscape phone); both are <strong>deprecated</strong> and should not be
-          reached for in new code. They are max-width where the stock ones are min-width, so mixing the two directions
-          in one class list leaves a band of widths where it is not obvious which rule wins.
+          Tailwind&rsquo;s own breakpoints only: <code>sm:</code> upward for min-width, and the <code>max-*</code>{' '}
+          variants where a rule has to stop applying. The project used to carry a custom <code>mobile:</code> variant at
+          max-width 900px; it is gone, and its usages now sit on <code>max-lg:</code>. Watch the direction —{' '}
+          <code>max-*</code> is max-width where <code>sm:</code> and friends are min-width, so mixing the two in one
+          class list leaves a band of widths where it is not obvious which rule wins.
         </>
       }>
       <Row name="text-lg sm:text-xl" meta="resize the viewport to see it move">

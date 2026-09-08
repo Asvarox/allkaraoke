@@ -14,8 +14,8 @@ export type { ButtonSize } from '~/modules/elements/akui/button-sizes';
 
 const sizeToClass = {
   mini: 'h-10 text-md min-w-10',
-  small: 'h-[50px] text-lg mobile:text-md landscap:text-md min-w-[50px]',
-  regular: 'text-lg h-20 min-w-20 mobile:text-md mobile:h-16 mobile:min-w-16 landscap:text-md',
+  small: 'h-[50px] text-lg max-lg:text-md landscap:text-md min-w-[50px]',
+  regular: 'text-lg h-20 min-w-20 max-lg:text-md max-lg:h-16 max-lg:min-w-16 landscap:text-md',
   large: 'h-20 text-xl min-w-20',
 };
 

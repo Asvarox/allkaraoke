@@ -47,7 +47,7 @@ function TiledMenu() {
           meant to fill the screen exactly, with the tile rows sharing the leftover height. Narrower
           than that the board is stacked under the tiles, and tiles plus board plus footer only fit by
           growing past the fold and scrolling. */}
-      <div className="mobile:gap-3 mobile:p-3 flex min-h-dvh w-screen flex-col gap-4 p-4 xl:h-dvh xl:gap-6 xl:p-6">
+      <div className="flex min-h-dvh w-screen flex-col gap-4 p-4 max-lg:gap-3 max-lg:p-3 xl:h-dvh xl:gap-6 xl:p-6">
         {/* The utility icons the design puts next to the logo are the app-wide `Toolbar`, which is
             already fixed to this corner (see `layout-game.tsx`) — hence the reserved space on the right. */}
         <header className="flex shrink-0 items-center justify-between gap-6 pr-32">
@@ -59,12 +59,12 @@ function TiledMenu() {
         </header>
 
         <div className="grid min-h-0 flex-1 gap-4 lg:gap-6 xl:grid-cols-[minmax(0,1fr)_32rem]">
-          <div className="mobile:gap-3 flex min-h-0 flex-col gap-4 lg:gap-6">
+          <div className="flex min-h-0 flex-col gap-4 max-lg:gap-3 lg:gap-6">
             <KeyboardNavContext value={register}>
               {/* `auto-cols-fr` with column flow rather than a fixed column count: the top row is the
                   two ways into a game, and the bottom row is however many supporting screens exist —
                   neither should have to restate a column count. */}
-              <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
+              <div className="grid flex-1 grid-cols-1 gap-4 max-lg:gap-3 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 {/* The view-transition names pair these tiles with the blocks the new landing page
                     puts in the same roles — see `menu-view-transitions.ts` for the whole mapping. */}
                 <MenuTile
@@ -91,7 +91,7 @@ function TiledMenu() {
                   onClick={() => navigate('online/')}
                 />
               </div>
-              <div className="mobile:gap-3 grid flex-1 grid-cols-1 gap-4 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
+              <div className="grid flex-1 grid-cols-1 gap-4 max-lg:gap-3 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 <MenuTile
                   name="select-input"
                   label="Setup Microphones"

@@ -202,12 +202,12 @@ const SelectMenu = twx(
   Box,
 )`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto p-1 ${dialogSurface}`;
 
-// `text-lg` (with the same `mobile:text-md` breakpoint) matches the committed value's size in the
+// `text-lg` (with the same `max-lg:text-md` breakpoint) matches the committed value's size in the
 // trigger, which sits in an `Input` at the default `small` size.
 const SelectMenuItem = twx.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
   // No `max-h`: `Box` is `box-border`, so a 1em cap counts the `p-2` padding too and crops the
   // `text-lg` line. A minimum keeps the rows even without clipping their labels.
-  'typography mobile:text-md flex min-h-[2.5em] cursor-pointer items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
+  'typography max-lg:text-md flex min-h-[2.5em] cursor-pointer items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
   props.$focused ? 'text-active' : 'text-default',
 ]);
 

@@ -17,7 +17,7 @@ const socials: Array<{ name: string; icon: IconName; href: string }> = [
  */
 function MenuFooter() {
   return (
-    <footer className="typography mobile:gap-4 text-default/55 flex flex-wrap items-end justify-between gap-10 border-t border-white/10 pt-3">
+    <footer className="typography text-default/55 flex flex-wrap items-end justify-between gap-10 border-t border-white/10 pt-3 max-lg:gap-4">
       {/* Same attribution the menu has always carried, kept as its own view-transition target so it
           doesn't slide across the screen on the way in and out of the menu. */}
       <div className="flex flex-col gap-1 text-xs [view-transition-name:background-music-credit]">
