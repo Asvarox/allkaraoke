@@ -36,7 +36,7 @@ export default function SongPage({ songData, background, width, height, children
 }
 
 export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
-  <span className={clsx('typography inline-block bg-black/50 px-5 py-0.5', className)} {...restProps} />
+  <span className={clsx('typography inline-block bg-black/55 px-5 py-0.5', className)} {...restProps} />
 );
 
 const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (

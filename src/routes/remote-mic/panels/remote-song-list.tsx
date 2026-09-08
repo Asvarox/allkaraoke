@@ -4,6 +4,7 @@ import createPersistedState from 'use-persisted-state';
 
 import { SongPreview } from '~/interfaces';
 import { Icon } from '~/modules/elements/akui/icon';
+import { interactiveSurface } from '~/modules/elements/akui/surfaces';
 import { Flag } from '~/modules/elements/flag';
 import useBaseUnitPx from '~/modules/hooks/use-base-unit-px';
 import { serverRpc } from '~/modules/remote-mic/network/client';
@@ -196,13 +197,13 @@ function RemoteSongList({ connectionStatus }: Props) {
                 action={
                   isExpanded ? (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="remove-song-button">
                       CLOSE
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="add-song-button">
                       EXPAND
                     </button>
@@ -218,7 +219,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
           return (
             <SongListItem
-              className={`${isOnSavedList ? 'bg-black/50' : ''} ${isExpanded ? 'pl-16' : ''}`}
+              className={`${isOnSavedList ? 'bg-black/55' : ''} ${isExpanded ? 'pl-16' : ''}`}
               data-test={song.id}
               left={<Flag language={song.language} className="h-8 w-8 rounded-full object-cover" />}
               topText={song.title}
@@ -228,7 +229,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                 <>
                   {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       onClick={(e) => {
                         e.stopPropagation();
                         void serverRpc.songs.select(song.id);
@@ -239,7 +240,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                   )}
                   {isOnSavedList ? (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="remove-song-button"
                       onClick={(e) => {
                         e.stopPropagation();
@@ -249,7 +250,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black/55 px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="add-song-button"
                       onClick={(e) => {
                         e.stopPropagation();

@@ -131,13 +131,15 @@ export const Typography: StoryFn = () => (
       title="Responsive"
       note={
         <>
-          Two directions are in play. <code>mobile:</code> is a custom max-width variant at 900px, while{' '}
-          <code>sm:</code> and friends are Tailwind&rsquo;s own min-width ones — they overlap between 640px and 900px,
-          so pick one direction per component rather than mixing them in a single class list.
+          Use Tailwind&rsquo;s own breakpoints — <code>sm:</code> upward, or the <code>max-*</code> variants when a rule
+          has to stop applying. The project also defines two custom variants, <code>mobile:</code> (max-width 900px) and{' '}
+          <code>landscap:</code> (a short landscape phone); both are <strong>deprecated</strong> and should not be
+          reached for in new code. They are max-width where the stock ones are min-width, so mixing the two directions
+          in one class list leaves a band of widths where it is not obvious which rule wins.
         </>
       }>
-      <Row name="text-lg mobile:text-md" meta="resize the viewport to see it move">
-        <TextSample property="font-size" className="mobile:text-md text-lg">
+      <Row name="text-lg sm:text-xl" meta="resize the viewport to see it move">
+        <TextSample property="font-size" className="text-lg sm:text-xl">
           Chodz, pomaluj mój świat
         </TextSample>
       </Row>

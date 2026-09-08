@@ -5,7 +5,7 @@ import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
 import storage from '~/modules/utils/storage';
 import { twx } from '~/utils/twx';
 
-export const StyledTooltip = twx(ReactTooltip)`text-default rounded-xl bg-black/50 px-2 py-1 text-sm`;
+export const StyledTooltip = twx(ReactTooltip)`text-default rounded-xl bg-black/55 px-2 py-1 text-sm`;
 interface Props {
   clickable?: boolean;
   open?: boolean;

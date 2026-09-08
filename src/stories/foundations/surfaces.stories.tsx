@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react-vite';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
 import { Button } from '~/modules/elements/akui/button';
 import Box from '~/modules/elements/akui/primitives/box';
-import { dialogSurface } from '~/modules/elements/akui/surfaces';
+import { dialogSurface, interactiveFocus, interactiveSurface } from '~/modules/elements/akui/surfaces';
 
 import { BusyGround, Page, Row, Section, Swatch } from './foundations-kit';
 
@@ -26,8 +26,9 @@ export const Surfaces: StoryFn = () => (
       title="In-game surfaces"
       note={
         <>
-          Four roles, all translucent black. <code>Box</code> is the default card and the one to reach for first —
-          spelling out a background by hand is how the codebase ended up with sixteen different opacities.
+          Three roles, all translucent black. <code>Box</code> is the default card and the one to reach for first —
+          spelling out a background by hand is how the codebase ended up with sixteen different opacities. The scrim the{' '}
+          <code>Backdrop</code> uses is a fourth value, but it is not a surface: nothing sits on it.
         </>
       }>
       <BusyGround>
@@ -35,11 +36,10 @@ export const Surfaces: StoryFn = () => (
           <Box className="w-full items-stretch p-3">
             <code className="text-sm">Box — bg-black/40 · the default card</code>
           </Box>
-          <Box className="w-full items-stretch bg-black/50 p-3">
-            <code className="text-sm">bg-black/50 — one step up: score panels, tooltips, a picked-out row</code>
-          </Box>
           <Box className="w-full items-stretch bg-black/55 p-3">
-            <code className="text-sm">bg-black/55 — anything interactive, matching the button base</code>
+            <code className="text-sm">
+              bg-black/55 — one step up: anything interactive, plus tooltips and picked-out rows
+            </code>
           </Box>
           <Box className="w-full items-stretch bg-black/75 p-3">
             <code className="text-sm">bg-black/75 — bars and toolbars</code>
@@ -49,22 +49,50 @@ export const Surfaces: StoryFn = () => (
     </Section>
 
     <Section
-      title="Controls sit above surfaces"
+      title="Interactive surfaces"
       note={
         <>
-          Interactive elements carry a more prominent fill than the surface under them. A <code>Button</code> brings its
-          own; a control that is not a button should restate <code>bg-black/55</code> rather than inventing a shade.
+          <code>interactiveSurface</code> — the resting state of anything the player can act on. The fill is a step
+          above the card underneath, and the 1px orange hairline is the actual tell: on a TV across the room it is what
+          separates &ldquo;you can press this&rdquo; from &ldquo;this is just a panel&rdquo;. Anything interactive
+          should carry it, and anything carrying it should be interactive.
         </>
       }>
       <BusyGround>
         <Box className="w-full items-stretch gap-3 p-3">
-          <code className="text-sm">A Box, with buttons on it</code>
-          <div className="flex gap-3">
+          <code className="text-sm">a Box — no hairline, nothing to press</code>
+          <div className={`rounded-xl p-3 ${interactiveSurface}`}>
+            <code className="text-sm">interactiveSurface — the hairline says this responds</code>
+          </div>
+        </Box>
+      </BusyGround>
+    </Section>
+
+    <Section
+      title="Interactive states"
+      note={
+        <>
+          Four states on top of the resting one. <code>interactiveFocus</code> is the quiet highlight — an inset orange
+          ring for hover, and for keyboard focus on a control too big or too colourful to fill. Full keyboard focus
+          instead floods the control with <code>bg-active</code>, which is what the TV needs from across a room.{' '}
+          <code>inactiveSurface</code> is switched off but still operable; <code>disabled</code> is greyed out and
+          unreachable, and the two must not look alike.
+        </>
+      }>
+      <BusyGround>
+        <Box className="w-full items-stretch gap-3 p-3">
+          <div className="flex flex-wrap gap-3">
             <Button size="small" fullWidth={false} className="px-6">
-              Default
+              Resting
+            </Button>
+            <Button size="small" fullWidth={false} className={`px-6 ${interactiveFocus}`}>
+              Hover / soft focus
             </Button>
             <Button size="small" fullWidth={false} className="px-6" data-focused>
-              Focused
+              Keyboard focus
+            </Button>
+            <Button size="small" fullWidth={false} className="px-6" inactive>
+              Inactive
             </Button>
             <Button size="small" fullWidth={false} className="px-6" disabled>
               Disabled

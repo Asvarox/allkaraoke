@@ -4,6 +4,7 @@ import { ButtonSize, sizeToIconSize } from '~/modules/elements/akui/button-sizes
 import useResponsiveValue from '~/modules/elements/akui/hooks/use-responsive-value';
 import { Icon, IconProps } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
+import { inactiveSurface, interactiveFocus, interactiveSurface } from '~/modules/elements/akui/surfaces';
 import { ResponsiveValue } from '~/modules/elements/akui/types';
 import isE2E from '~/modules/utils/is-e2-e';
 import { cn } from '~/utils/cn';
@@ -20,17 +21,17 @@ const sizeToClass = {
 
 export const ButtonBase = twx(Box)((props) => {
   return [
-    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 bg-black/55! px-3 font-bold uppercase duration-300`,
+    `typography ${interactiveSurface} pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 px-3 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
       ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
-    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? 'subtle-focus' : '',
-    !isE2E() && !props['disabled'] && !props['data-read-only'] ? 'hover:subtle-focus' : '',
+    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
+    !isE2E() && !props['disabled'] && !props['data-read-only'] ? `hover:${interactiveFocus}` : '',
     props['disabled']
       ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500! text-gray-300!'
       : 'active:bg-active',
-    props['data-inactive'] ? 'line-through! decoration-white opacity-25' : 'no-underline!',
+    props['data-inactive'] ? `${inactiveSurface} line-through!` : 'no-underline!',
     props['data-read-only'] ? 'cursor-default! active:bg-black/75' : '',
     sizeToClass[(props['data-size'] as keyof typeof sizeToClass) || 'regular'],
   ];

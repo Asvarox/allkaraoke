@@ -89,7 +89,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
           {isLoading &&
             new Array(6).fill(0).map((_, i) => (
               <Skeleton variant="rectangular" width="100%" height="100px" key={i}>
-                <LanguageEntry data-excluded focused={false}>
+                <LanguageEntry inactive focused={false}>
                   <Flag language={['English']} />
                 </LanguageEntry>
               </Skeleton>
@@ -99,7 +99,11 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
             return (
               <NavCheckbox
                 size="regular"
-                className={`relative transition-all ${excluded ? 'opacity-50' : 'opacity-100'} duration-300`}
+                className="relative transition-all duration-300"
+                // The button's own `inactive` state, rather than a second dimming rule here: an
+                // excluded language is the same idea as any other switched-off option, and the
+                // remote mic's language filter already renders it that way.
+                inactive={excluded}
                 checked={!excluded}
                 key={name}
                 data-excluded={excluded}
@@ -159,8 +163,6 @@ const NextButtonContainer = twx.div`flex flex-col gap-2.5`;
 
 const LanguageName = twx.span`transition-[300ms]`;
 
-const LanguageEntry = twx(
-  MenuButton,
-)`relative m-0 w-full justify-start data-[excluded=true]:line-through data-[excluded=true]:decoration-white data-[excluded=true]:opacity-50`;
+const LanguageEntry = twx(MenuButton)`relative m-0 w-full justify-start`;
 
 export default ExcludeLanguagesView;
