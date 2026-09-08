@@ -17,7 +17,6 @@ export default {
 const SCALE = [
   'text-xs',
   'text-sm',
-  'text-base',
   'text-md',
   'text-lg',
   'text-xl',
@@ -45,9 +44,11 @@ export const Typography: StoryFn = () => (
       title="Scale"
       note={
         <>
-          Eleven steps, declared as <code>theme.fontSize</code> and therefore replacing Tailwind&rsquo;s default scale
-          entirely. Two things to know: <code>md</code> is an extra step that stock Tailwind has no equivalent for, and
-          the real body sizes in the game are <code>sm</code> and <code>lg</code> rather than <code>base</code>.
+          Ten steps, declared as <code>theme.fontSize</code> and therefore replacing Tailwind&rsquo;s default scale
+          entirely. Note the naming: there is no <code>base</code>. Tailwind&rsquo;s <code>base</code> step was the name
+          for a default nothing here actually used, so the ladder runs <code>sm</code> → <code>md</code> and{' '}
+          <code>md</code> is the default body size — it is what <code>Typography</code> applies when a caller says
+          nothing.
         </>
       }>
       {SCALE.map((step) => (

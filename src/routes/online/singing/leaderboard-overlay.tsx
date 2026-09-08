@@ -22,7 +22,7 @@ function LeaderboardOverlay() {
           layout
           transition={{ duration: 0.3 }}
           key={entry.participantId}
-          className="typography flex items-center gap-2 text-base"
+          className="typography text-md flex items-center gap-2"
           data-test={`online-leaderboard-entry-${entry.playerNumber}`}>
           <span className="w-6 text-right">{index + 1}.</span>
           <PlayerColorDot number={entry.playerNumber} />

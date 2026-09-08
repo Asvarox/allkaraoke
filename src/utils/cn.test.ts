@@ -26,7 +26,7 @@ describe('cn', () => {
       // `md` is a custom step in the font-size scale but still parses as a t-shirt size, so it
       // conflicts with the other sizes rather than being mistaken for a colour.
       [['text-md', 'text-lg'], 'text-lg'],
-      [['text-6xl', 'text-base'], 'text-base'],
+      [['text-6xl', 'text-xs'], 'text-xs'],
     ])('%s -> %s', (classes, expected) => {
       expect(merge(...classes)).toBe(expected);
     });

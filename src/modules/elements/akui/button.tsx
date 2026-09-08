@@ -145,7 +145,7 @@ export const Button = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      className={cn(iconOnly && 'aspect-square px-0', className)}
       {...additionalProps(props)}
       as="button">
       <ButtonContent
@@ -175,7 +175,7 @@ export const ButtonLink = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      className={cn(iconOnly && 'aspect-square px-0', className)}
       {...additionalProps(props)}
       as="a">
       <ButtonContent

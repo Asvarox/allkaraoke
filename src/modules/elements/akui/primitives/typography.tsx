@@ -11,10 +11,10 @@ export function Typography<T extends ElementType = 'span'>({ as, className, chil
   const Component = as || 'span';
   return (
     <Component
-      className={cn(
-        `typography [&_a]:typography [&_a]:text-active text-base ${active ? 'text-active' : ''}`,
-        className,
-      )}
+      // No `[&_a]:typography` here: it and `[&_a]:text-active` are one class group under one
+      // modifier, so the merge always drops the first. Anchors take the active colour, which is
+      // what it was there for.
+      className={cn(`typography [&_a]:text-active text-md ${active ? 'text-active' : ''}`, className)}
       {...props}>
       {children}
     </Component>

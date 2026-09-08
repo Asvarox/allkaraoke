@@ -31,7 +31,7 @@ interface ShellProps extends Omit<ComponentProps<typeof Box>, 'children'> {
 
 const SIZES = {
   regular: 'h-14 gap-5 border px-2 py-2 text-lg',
-  compact: 'h-8 gap-2 rounded-md border-0 px-2 py-0.5 text-base',
+  compact: 'h-8 gap-2 rounded-md border-0 px-2 py-0.5 text-md',
 } as const;
 
 /**

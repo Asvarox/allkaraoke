@@ -3,6 +3,7 @@ import { ComponentProps } from 'react';
 import { Icon } from '~/modules/elements/akui/icon';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import { PlayerNumber } from '~/modules/players/player-number';
+import { cn } from '~/utils/cn';
 
 import Ping from './ping';
 
@@ -17,7 +18,7 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
   return (
     <div
       {...restProps}
-      className={`relative flex w-full items-center justify-end gap-2 ${className}`}
+      className={cn('relative flex w-full items-center justify-end gap-2', className)}
       data-test="player-mic-status">
       <Ping playerNumber={playerNumber} />
       {status === 'ok' ? (
@@ -37,7 +38,7 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
       )}
       {status !== 'ok' ? (
         <div
-          className={`absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 text-base ${
+          className={`text-md absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 ${
             tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
           }`}>
           {status === 'unavailable' ? (
