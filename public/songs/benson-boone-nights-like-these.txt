@@ -1,0 +1,376 @@
+#ARTIST:Benson Boone
+#TITLE:Nights Like These
+#CREATOR:enricowernado
+#BPM:388
+#YEAR:2022
+#VIDEO:v=dEtuadwCd6c
+#LANGUAGE:English
+#GAP:10034,845360824742
+#ALLKARAOKE_ID:benson-boone-nights-like-these
+#ALLKARAOKE_SID:6275
+#ALLKARAOKE_LASTUPDATE:2026-09-09T02:25:25.942Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=dEtuadwCd6c
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:173
+#MP3:Benson Boone - Nights Like These.mp3
+#COVER:Benson Boone - Nights Like These [CO].jpg
+#BACKGROUND:Benson Boone - Nights Like These [BG].jpg
+: 26 8 2 Lights 
+: 35 3 0 are 
+: 39 5 2 low
+: 45 6 -2 ~
+- 51
+: 55 3 -2 My 
+: 60 4 2 hands 
+: 67 3 0 are 
+: 72 9 2 cold 
+: 84 11 -2 a
+: 99 14 -7 gainst 
+: 116 5 2 the
+: 124 4 0 ~ 
+: 131 19 0 wheel
+- 150
+: 163 3 -2 And 
+: 168 5 0 you 
+: 176 6 -2 still 
+: 183 8 0 have 
+: 192 4 2 my 
+: 198 6 2 coa
+: 205 5 0 ~
+: 211 14 -5 ~t
+- 225 257
+- 257
+: 283 7 2 Eyes 
+: 292 3 0 are 
+: 298 3 2 lo
+: 304 9 -2 ~st 
+: 318 4 2 in 
+: 325 3 0 the 
+: 331 10 2 fog 
+: 343 12 -2 with
+: 359 11 -7 out 
+: 373 7 2 you
+: 381 7 0 ~ 
+: 391 17 0 here
+- 408
+: 424 4 -2 And 
+: 429 4 0 I 
+: 435 6 -2 can’t 
+: 444 6 0 see 
+: 451 5 2 the 
+: 458 5 2 roa
+: 464 5 0 ~
+: 470 20 -5 ~d
+- 490
+: 511 4 2 Now 
+: 517 4 5 I’m 
+: 524 12 7 stan
+: 537 5 0 ding 
+: 544 6 0 at 
+: 553 4 -2 your 
+: 558 10 -5 door
+- 568
+: 577 3 2 And 
+: 582 3 5 I 
+: 589 8 7 hope 
+: 601 3 0 that 
+: 606 3 0 you’re 
+: 613 3 -2 not 
+: 619 12 2 home
+- 631
+: 636 3 0 So, 
+: 642 2 0 I 
+: 647 2 0 can 
+: 652 3 -2 get 
+: 658 12 3 used 
+: 674 9 2 to 
+: 689 5 0 be
+: 697 4 -2 ing 
+: 705 4 -2 a
+: 713 19 -5 lone
+- 732
+: 745 4 5 On 
+: 753 5 14 ni
+: 761 3 12 ~ghts 
+: 767 12 10 like 
+* 784 14 7 these 
+: 802 6 5 when 
+: 812 7 5 my 
+: 820 5 5 will
+: 826 7 5 pow
+* 834 8 15 er’s 
+* 844 12 14 weak
+- 856
+: 882 6 14 I’m 
+: 891 4 12 gon
+: 898 4 10 na 
+: 906 20 12 call, 
+: 931 6 10 so, 
+: 941 12 12 just 
+: 956 8 12 let 
+: 965 9 10 it 
+: 975 11 12 ring
+- 986
+: 1004 5 5 I’ll 
+: 1012 6 14 dri
+: 1020 5 12 ~ve 
+: 1029 10 10 these 
+: 1044 11 7 streets, 
+: 1061 7 5 don’t 
+: 1070 5 5 come 
+: 1078 4 5 loo
+: 1086 4 5 king 
+: 1094 5 15 for 
+: 1103 13 14 me
+- 1116
+: 1140 4 5 If 
+: 1145 4 14 you’re 
+: 1150 7 12 let
+: 1159 6 10 ting 
+: 1167 21 12 go, 
+: 1189 8 10 then 
+: 1198 12 12 I’m 
+: 1213 6 12 gon
+: 1221 6 10 na 
+: 1229 19 12 need
+- 1248
+: 1260 7 5 More 
+: 1271 4 14 ni
+: 1278 6 12 ~ghts 
+: 1287 10 10 like 
+: 1302 12 7 these
+- 1314 1354
+- 1354
+: 1380 4 -2 I 
+: 1386 4 2 fight 
+: 1393 5 0 the 
+: 1399 4 2 u
+: 1404 7 -2 ~rge 
+: 1414 4 -2 to 
+: 1419 4 2 write 
+: 1426 5 0 the 
+: 1434 10 2 words 
+: 1447 12 -2 up 
+: 1463 9 -7 in 
+: 1474 6 2 my
+: 1481 8 0 ~ 
+: 1491 18 0 head
+- 1509
+: 1521 6 -2 That 
+: 1528 4 0 I 
+: 1533 4 3 know 
+: 1538 3 2 I 
+: 1542 5 0 shoul
+: 1548 3 -2 dn’t 
+: 1554 15 -2 send
+- 1569 1612
+- 1612
+: 1638 5 -2 It’s 
+: 1644 7 7 hard 
+: 1652 4 5 to 
+: 1657 8 5 heal 
+: 1668 4 2 when 
+: 1673 5 2 I 
+: 1680 4 5 keep 
+: 1688 7 5 stea
+: 1697 6 3 ling 
+: 1704 8 3 glan
+: 1713 6 2 ces 
+: 1722 5 0 at 
+: 1728 7 2 your 
+: 1739 8 0 pic
+: 1748 14 -7 ture
+- 1762
+: 1778 3 -2 So, 
+: 1784 3 0 I 
+: 1789 3 3 look 
+: 1795 4 2 a
+: 1802 7 5 way 
+: 1813 4 2 a
+: 1820 21 5 gain
+- 1841
+: 1847 5 5 On 
+: 1855 3 14 ni
+: 1862 4 12 ~ghts 
+: 1869 10 10 like 
+: 1885 13 7 these 
+: 1902 5 5 when 
+: 1911 4 5 my 
+: 1918 4 5 will
+: 1926 4 5 pow
+: 1933 5 15 er’s 
+: 1942 18 14 weak
+- 1960
+: 1983 6 14 I’m 
+: 1992 4 12 gon
+: 2000 4 10 na 
+: 2007 19 12 call, 
+: 2031 5 10 so 
+: 2040 11 12 just 
+: 2055 6 12 let 
+: 2065 3 10 it 
+: 2071 15 12 ring
+- 2086
+: 2104 7 5 I’ll 
+: 2113 6 14 dri
+: 2120 7 12 ~ve 
+: 2128 14 10 these 
+: 2143 16 7 streets, 
+: 2160 8 5 don’t 
+: 2169 8 5 come 
+: 2178 7 5 loo
+: 2186 5 5 king 
+: 2192 7 15 for 
+: 2200 14 14 me
+- 2214
+: 2236 3 5 If 
+: 2242 7 14 you’re 
+: 2251 7 12 let
+: 2259 6 10 ting 
+: 2266 16 12 go, 
+: 2289 8 10 then 
+: 2298 11 12 I’m 
+: 2313 7 12 gon
+: 2322 6 10 na 
+: 2330 12 12 need
+- 2342
+: 2363 7 5 More 
+: 2372 7 14 ni
+: 2380 6 12 ~ghts 
+: 2387 18 10 like
+- 2405
+: 2414 5 -2 You 
+: 2420 5 3 got
+: 2427 5 3 ta 
+: 2433 6 3 let 
+: 2440 5 2 me 
+: 2446 16 2 drown
+- 2462
+: 2478 3 -2 You 
+: 2484 4 2 got
+: 2491 4 2 ta 
+: 2497 4 2 let 
+: 2505 3 2 me 
+: 2511 7 2 fall 
+: 2522 3 0 a
+: 2527 18 0 part
+- 2545 2562
+- 2562
+: 2588 6 -2 With
+: 2597 5 3 out 
+: 2605 4 2 you 
+: 2612 7 0 here 
+: 2620 4 -2 to 
+: 2627 16 3 catch 
+: 2644 9 2 me
+: 2654 9 0 ~
+- 2663
+: 2673 5 -2 And 
+: 2679 5 3 if 
+: 2685 5 3 you’re 
+: 2691 8 3 not 
+: 2700 4 2 a
+: 2705 12 2 round
+- 2717
+: 2737 3 -2 I 
+: 2742 4 2 got
+: 2749 3 2 ta 
+: 2755 7 2 learn 
+: 2765 3 2 to 
+: 2771 8 2 face 
+: 2781 3 0 the 
+: 2787 15 0 dark
+- 2802 2819
+- 2819
+: 2845 8 -2 ’Cause 
+: 2856 4 3 days 
+: 2863 7 2 turn 
+: 2872 4 0 in
+: 2880 5 -2 to 
+: 2888 12 3 nights 
+: 2904 5 2 li
+: 2912 4 0 ~ke 
+: 2919 17 -2 these
+- 2936 2990
+- 2990
+: 3016 7 2 Ni
+: 3024 9 0 ~ghts 
+: 3034 10 -2 like 
+: 3050 15 -7 these
+- 3065 3079
+- 3079
+: 3105 7 5 ’Cause 
+: 3114 5 5 days 
+: 3122 5 7 turn 
+: 3130 6 10 in
+: 3138 4 12 to 
+: 3146 6 14 ni
+: 3154 4 12 ~ghts 
+: 3161 14 10 like 
+: 3179 12 7 these 
+: 3195 6 5 when 
+: 3204 4 5 my 
+: 3210 5 5 will
+: 3217 7 5 pow
+: 3226 6 15 er’s 
+: 3235 18 14 weak
+- 3253
+: 3274 6 14 I’m 
+: 3283 6 12 gon
+: 3293 4 10 na 
+: 3301 16 12 call, 
+: 3323 7 10 so, 
+: 3332 12 12 just 
+* 3348 6 15 let 
+* 3356 4 14 it 
+* 3363 8 14 ri
+* 3372 5 12 ~
+* 3378 11 10 ~ng
+- 3389
+: 3397 7 5 I’ll 
+: 3405 7 14 dri
+: 3413 7 12 ~ve 
+: 3421 12 10 these 
+: 3435 18 7 streets, 
+: 3454 7 5 don’t 
+: 3462 8 5 come 
+: 3471 6 5 loo
+: 3478 7 5 king 
+* 3486 7 17 fo
+* 3494 5 14 ~r 
+* 3500 5 15 me
+* 3506 3 14 ~
+* 3510 4 12 ~
+* 3515 11 10 ~
+- 3526
+: 3533 4 5 If 
+: 3538 6 14 you’re 
+: 3545 6 12 let
+: 3552 6 10 ting 
+: 3559 17 12 go, 
+: 3582 6 10 then 
+* 3591 13 15 I’m 
+* 3606 8 15 gon
+* 3615 7 17 na 
+* 3623 11 17 nee
+* 3635 15 14 ~d
+- 3650
+: 3654 5 14 More 
+: 3662 4 19 ni
+: 3669 5 17 ~ghts 
+: 3678 12 17 like 
+: 3694 7 12 the
+: 3702 17 10 ~se
+- 3719 3766
+- 3766
+: 3792 7 19 Ni
+: 3801 5 17 ~ghts 
+: 3809 6 17 li
+: 3818 5 12 ~ke 
+: 3826 6 12 the
+: 3835 7 14 ~
+: 3845 3 12 ~
+: 3850 20 10 ~se
+E
