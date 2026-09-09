@@ -5,6 +5,7 @@ import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import isE2E from '~/modules/utils/is-e2-e';
+import { cn } from '~/utils/cn';
 import { twx } from '~/utils/twx';
 
 // Styling lives in the `menu-neighbour-glow` rules in index.css (needs a real CSS transition to
@@ -44,6 +45,8 @@ Menu.Button = MenuButton;
 Menu.ButtonGroup = twx.div`flex`;
 Menu.HelpText = MenuHelpText;
 Menu.SubHeader = MenuSubHeader;
+/** `border-white/10` — the same edge the surface it divides is drawn with; a divider is not a
+ * heavier thing than the panel around it. `/20` is reserved for the hover step. */
 Menu.Divider = ({ className, ...props }: ComponentProps<'hr'>) => (
-  <hr className={['border-white/20', className].filter(Boolean).join(' ')} {...props} />
+  <hr className={cn('border-white/10', className)} {...props} />
 );

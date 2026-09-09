@@ -137,11 +137,19 @@ export const Surfaces: StoryFn = () => (
       </BusyGround>
     </Section>
 
-    <Section title="Borders" note="Three weights, all white at low alpha, so an edge never becomes a colour decision.">
-      <Row name="border-white/10" meta="dialog edges, dividers">
+    <Section
+      title="Borders"
+      note={
+        <>
+          White at low alpha, so an edge is never a colour decision. Two of these are a pair rather than two weights:{' '}
+          <code>/10</code> is every resting edge, and <code>/20</code> is that same edge on hover — the song grid is
+          where you see it. Solid white is a different thing entirely, and says a mic is connected.
+        </>
+      }>
+      <Row name="border-white/10" meta="every resting edge">
         <Swatch property="border-color" className="border-white/10" />
       </Row>
-      <Row name="border-white/20" meta="a heavier divider">
+      <Row name="border-white/20" meta="the hover step above it">
         <Swatch property="border-color" className="border-white/20" />
       </Row>
       <Row name="border-white" meta="a connected mic pill">

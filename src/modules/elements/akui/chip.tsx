@@ -10,7 +10,7 @@ const variantClasses: Record<Variant, string> = {
   green: 'bg-green-500/20 border border-green-500/30 text-green-400',
   orange: 'bg-orange-500/20 border border-orange-500/30 text-orange-400',
   zinc: 'bg-zinc-700 text-default',
-  slate: 'bg-slate-600/40 border border-white/15 text-default/80',
+  slate: 'bg-slate-600/40 border border-white/10 text-default/80',
 };
 
 const ChipBase = twx.div`box-border inline-flex h-6 min-w-6 shrink-0 items-center justify-center gap-1 rounded px-1.5 text-xs font-semibold uppercase`;
