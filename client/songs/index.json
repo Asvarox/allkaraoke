@@ -20090,6 +20090,34 @@
     "local": false
   },
   {
+    "id": "benson-boone-nights-like-these",
+    "title": "Nights Like These",
+    "artist": "Benson Boone",
+    "video": "dEtuadwCd6c",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 10034.845360824742,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-08T20:45:22.456Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "enricowernado",
+    "sourceUrl": "https://www.youtube.com/watch?v=dEtuadwCd6c",
+    "duration": 173,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6275,
+    "tracksCount": 1,
+    "search": "bensonboonenightslikethese",
+    "local": false
+  },
+  {
     "id": "beth-dime",
     "title": "Dime",
     "artist": "Beth",
@@ -21065,6 +21093,34 @@
     "shortId": 540,
     "tracksCount": 1,
     "search": "bikinikillrebelgirl",
+    "local": false
+  },
+  {
+    "id": "bilderbuch-bungalow",
+    "title": "Bungalow",
+    "artist": "Bilderbuch",
+    "video": "pV-GGCrRcu0",
+    "language": [
+      "German"
+    ],
+    "bpm": 364,
+    "gap": 2000.989010989011,
+    "year": "2017",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-09-10T02:25:36.606Z",
+    "genre": "Pop",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "g3n35i5",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6290,
+    "tracksCount": 1,
+    "search": "bilderbuchbungalow",
     "local": false
   },
   {
@@ -32810,6 +32866,33 @@
     "shortId": 883,
     "tracksCount": 1,
     "search": "cascadaeverytimewetouch",
+    "local": false
+  },
+  {
+    "id": "casper-im-ascheregen",
+    "title": "Im Ascheregen",
+    "artist": "Casper",
+    "video": "yqObMM_QzVQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 568,
+    "gap": 102126.47887323944,
+    "year": "2013",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-10T02:25:57.969Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "Mamba99",
+    "duration": 303,
+    "tracks": [
+      {
+        "start": 38
+      }
+    ],
+    "shortId": 6291,
+    "tracksCount": 1,
+    "search": "casperimascheregen",
     "local": false
   },
   {
@@ -45090,6 +45173,34 @@
     "local": false
   },
   {
+    "id": "die-aerzte-deine-schuld",
+    "title": "Deine Schuld",
+    "artist": "Die Ärzte",
+    "video": "kRrP-bZvD2s",
+    "language": [
+      "German"
+    ],
+    "bpm": 216,
+    "gap": 33987.77777777778,
+    "year": "2003",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-08T20:46:48.462Z",
+    "genre": "Punk Rock",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Lightbringer",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6278,
+    "tracksCount": 1,
+    "search": "dieaerztedeineschuld",
+    "local": false
+  },
+  {
     "id": "die-aerzte-mf",
     "title": "m+f",
     "artist": "Die Ärzte",
@@ -47724,6 +47835,33 @@
     "shortId": 1283,
     "tracksCount": 1,
     "search": "disneysmulanreflection",
+    "local": false
+  },
+  {
+    "id": "disneys-mulan-reflexion",
+    "title": "Réflexion",
+    "artist": "Disney’s Mulan",
+    "video": "ELQuh63FSfg",
+    "language": [
+      "French"
+    ],
+    "bpm": 398.7,
+    "gap": 1054.198645598194,
+    "year": "1998",
+    "lastUpdate": "2026-09-10T02:25:15.110Z",
+    "genre": "Soundtrack",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Arkhor2",
+    "duration": 97,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6288,
+    "tracksCount": 1,
+    "search": "disneysmulanreflexion",
     "local": false
   },
   {
@@ -57084,6 +57222,34 @@
     "local": false
   },
   {
+    "id": "erik-mjoenes-the-story-of-fire-saga-lion-of-love",
+    "title": "The Story Of Fire Saga - Lion Of Love",
+    "artist": "Erik Mjönes",
+    "video": "JezQBoxX-pg",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.04,
+    "gap": 1582.2882445364949,
+    "year": "2020",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-09-10T02:25:14.509Z",
+    "edition": "ESC 2020",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "mouton5000",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6286,
+    "tracksCount": 1,
+    "search": "erikmjoenesthestoryoffiresagalionoflove",
+    "local": false
+  },
+  {
     "id": "erika-vikman-ich-komme",
     "title": "ICH KOMME",
     "artist": "Erika Vikman",
@@ -61042,6 +61208,36 @@
     "shortId": 1626,
     "tracksCount": 1,
     "search": "fleetwoodmacgoyourownway",
+    "local": false
+  },
+  {
+    "id": "fleetwood-mac-landslide",
+    "title": "Landslide",
+    "artist": "Fleetwood Mac",
+    "video": "ONzuVds6hPE",
+    "language": [
+      "English"
+    ],
+    "bpm": 238.6,
+    "gap": 12294.132439228835,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-08T20:44:51.233Z",
+    "genre": "Rock",
+    "realBpm": 159,
+    "previewStart": 60,
+    "previewEnd": 149,
+    "volume": 1,
+    "author": "nerblo",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6273,
+    "tracksCount": 1,
+    "search": "fleetwoodmaclandslide",
     "local": false
   },
   {
@@ -84260,6 +84456,34 @@
     "local": false
   },
   {
+    "id": "joji-pixelated-kisses",
+    "title": "PIXELATED KISSES",
+    "artist": "Joji",
+    "video": "SblNBrgLdvo",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.9,
+    "gap": 13867.246811702926,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-10T02:26:25.361Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "tyromantaYT",
+    "duration": 109,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6295,
+    "tracksCount": 1,
+    "search": "jojipixelatedkisses",
+    "local": false
+  },
+  {
     "id": "joji-slow-dancing-in-the-dark",
     "title": "Slow Dancing In The Dark",
     "artist": "Joji",
@@ -89080,6 +89304,33 @@
     "local": false
   },
   {
+    "id": "kate-bush-babooshka",
+    "title": "Babooshka",
+    "artist": "Kate Bush",
+    "video": "6xckBwPdo1c",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 20465.29411764706,
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:26:25.366Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "bohning",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6297,
+    "tracksCount": 1,
+    "search": "katebushbabooshka",
+    "local": false
+  },
+  {
     "id": "kate-bush-running-up-that-hill",
     "title": "Running Up That Hill",
     "artist": "Kate Bush",
@@ -91606,7 +91857,7 @@
     "gap": 47750,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-08T02:22:49.797Z",
+    "lastUpdate": "2026-09-07T10:01:46.957Z",
     "genre": "Contemporary R&B, Hip hop, Hip hop soul, Pop soul, R&B",
     "realBpm": 116,
     "volume": 1,
@@ -93355,6 +93606,33 @@
     "shortId": 4983,
     "tracksCount": 1,
     "search": "kornmakemebad",
+    "local": false
+  },
+  {
+    "id": "korn-twisted-transistor",
+    "title": "Twisted Transistor",
+    "artist": "KoRn",
+    "video": "o7uGPWFwg1I",
+    "language": [
+      "English"
+    ],
+    "bpm": 441.86,
+    "gap": 80235.52527950029,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-08T20:48:10.389Z",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "haistshomie666",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6282,
+    "tracksCount": 1,
+    "search": "korntwistedtransistor",
     "local": false
   },
   {
@@ -100959,6 +101237,34 @@
     "local": false
   },
   {
+    "id": "limp-bizkit-take-a-look-around",
+    "title": "Take A Look Around",
+    "artist": "Limp Bizkit",
+    "video": "o3UHMV3jrZk",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.1,
+    "gap": 38509.60784313725,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-08T20:49:53.449Z",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "https://www.youtube.com/watch?v=bPD6YiBFG1Q",
+    "duration": 308,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6285,
+    "tracksCount": 1,
+    "search": "limpbizkittakealookaround",
+    "local": false
+  },
+  {
     "id": "lindsey-stirling-feat-becky-g-christmas-cmon",
     "title": "Christmas C’mon",
     "artist": "Lindsey Stirling feat. Becky G",
@@ -103384,6 +103690,33 @@
     "local": false
   },
   {
+    "id": "loona-odd-eye-circle-girl-front",
+    "title": "Girl Front",
+    "artist": "LOONA / ODD EYE CIRCLE",
+    "video": "MPIKnAU-JyU",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 300,
+    "gap": 31800,
+    "year": "2017",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-09-10T02:25:58.120Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6292,
+    "tracksCount": 1,
+    "search": "loonaoddeyecirclegirlfront",
+    "local": false
+  },
+  {
     "id": "lord-of-the-lost-blood-glitter",
     "title": "Blood & Glitter",
     "artist": "Lord Of The Lost",
@@ -103890,6 +104223,34 @@
     "shortId": 6153,
     "tracksCount": 1,
     "search": "losautenticosdecadentespendeviejo",
+    "local": false
+  },
+  {
+    "id": "los-autenticos-decadentes-y-cacho-castana-y-la-banda-sigue",
+    "title": "Y la banda sigue",
+    "artist": "Los Auténticos Decadentes y Cacho Castaña",
+    "video": "t5-8nS72jjY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 20871,
+    "year": "2014",
+    "lastUpdate": "2026-09-10T02:26:03.966Z",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Aut%C3%A9nticos%20Decadentes%20y%20Cacho%20Casta%C3%B1a&cancion=Y%20la%20banda%20sigue",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6294,
+    "tracksCount": 1,
+    "search": "losautenticosdecadentesycachocastanaylabandasigue",
     "local": false
   },
   {
@@ -118571,6 +118932,37 @@
     "local": false
   },
   {
+    "id": "moona-hoshinova-high-tide",
+    "title": "High Tide",
+    "artist": "Moona Hoshinova",
+    "video": "stmZAThUl64",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 11276.024096385543,
+    "year": "2022",
+    "artistOrigin": "ID",
+    "lastUpdate": "2026-09-10T02:26:25.364Z",
+    "realBpm": 166,
+    "previewStart": 44,
+    "previewEnd": 74,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=51165",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26332",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6296,
+    "tracksCount": 1,
+    "search": "moonahoshinovahightide",
+    "local": false
+  },
+  {
     "id": "morandi-angels",
     "title": "Angels",
     "artist": "Morandi",
@@ -119813,6 +120205,35 @@
     "shortId": 6004,
     "tracksCount": 1,
     "search": "musesupremacy",
+    "local": false
+  },
+  {
+    "id": "muse-survival",
+    "title": "Survival",
+    "artist": "Muse",
+    "video": "nBFpFnCG3zA",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 89273.90243902439,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:25:36.602Z",
+    "genre": "Rock",
+    "videoGap": 1,
+    "realBpm": 164,
+    "volume": 0.74,
+    "author": "gun8",
+    "duration": 310,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6289,
+    "tracksCount": 1,
+    "search": "musesurvival",
     "local": false
   },
   {
@@ -121234,7 +121655,7 @@
     "bpm": 360,
     "gap": 4970,
     "year": "2013",
-    "lastUpdate": "2026-06-24T11:17:02.236Z",
+    "lastUpdate": "2026-09-09T21:00:09.389Z",
     "genre": "J-Pop",
     "realBpm": 167,
     "volume": 1,
@@ -124493,6 +124914,34 @@
     "local": false
   },
   {
+    "id": "nightwish-feat-jonsu-eraemaan-viimeinen",
+    "title": "Erämaan Viimeinen",
+    "artist": "Nightwish feat. Jonsu",
+    "video": "rA-XIXy5vw4",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 276,
+    "gap": 50841.739130434784,
+    "year": "2007",
+    "lastUpdate": "2026-09-08T20:47:06.698Z",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Zevac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=181957",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28236",
+    "duration": 307,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6279,
+    "tracksCount": 1,
+    "search": "nightwishfeatjonsueraemaanviimeinen",
+    "local": false
+  },
+  {
     "id": "nightwish-fishmaster-wishmaster-misheard-lyrics",
     "title": "Fishmaster (Wishmaster misheard lyrics)",
     "artist": "Nightwish",
@@ -127531,6 +127980,34 @@
     "shortId": 3289,
     "tracksCount": 1,
     "search": "oliviarodrigodriverslicense",
+    "local": false
+  },
+  {
+    "id": "olivia-rodrigo-drop-dead",
+    "title": "drop dead",
+    "artist": "Olivia Rodrigo",
+    "video": "78wrful9cVU",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 19307.272727272728,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-08T20:48:28.491Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6283,
+    "tracksCount": 1,
+    "search": "oliviarodrigodropdead",
     "local": false
   },
   {
@@ -133799,6 +134276,33 @@
     "local": false
   },
   {
+    "id": "pitty-na-sua-estante",
+    "title": "Na Sua Estante",
+    "artist": "Pitty",
+    "video": "DP3j6hgS4VY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 424,
+    "gap": 19089.43396226415,
+    "year": "2005",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-09-08T20:47:51.780Z",
+    "realBpm": 86,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 6281,
+    "tracksCount": 1,
+    "search": "pittynasuaestante",
+    "local": false
+  },
+  {
     "id": "pitty-teto-de-vidro",
     "title": "Teto de Vidro",
     "artist": "Pitty",
@@ -137886,7 +138390,7 @@
     "gap": 36373.01346070343,
     "year": "2001",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-08T02:22:50.540Z",
+    "lastUpdate": "2026-09-07T10:02:29.132Z",
     "realBpm": 115,
     "volume": 1,
     "author": "broehmsjuergen",
@@ -138147,12 +138651,13 @@
     "gap": 5378.148091927502,
     "year": "2005",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-08T02:22:50.538Z",
+    "lastUpdate": "2026-09-07T10:02:14.214Z",
     "genre": "Neue Deutsche Härte",
     "realBpm": 5,
     "previewEnd": 10,
     "volume": 70,
     "author": "DarkPasUnit",
+    "duration": 230,
     "tracks": [
       {
         "start": 22
@@ -138659,6 +139164,34 @@
     "shortId": 3594,
     "tracksCount": 1,
     "search": "rayparkerjrghostbusters",
+    "local": false
+  },
+  {
+    "id": "raye-where-is-my-husband",
+    "title": "WHERE IS MY HUSBAND!",
+    "artist": "RAYE",
+    "video": "rK5TyISxZ_M",
+    "language": [
+      "English"
+    ],
+    "bpm": 464,
+    "gap": 2097.8448275862065,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:25:58.284Z",
+    "genre": "R&B, Pop",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "shortId": 6293,
+    "tracksCount": 1,
+    "search": "rayewhereismyhusband",
     "local": false
   },
   {
@@ -155202,6 +155735,33 @@
     "local": false
   },
   {
+    "id": "stefan-peters-schwarze-natascha",
+    "title": "Schwarze Natascha",
+    "artist": "Stefan Peters",
+    "video": "J-MHp8z9Lx0",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 2899.230769230769,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-08T20:47:36.818Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "general2000",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6280,
+    "tracksCount": 1,
+    "search": "stefanpetersschwarzenatascha",
+    "local": false
+  },
+  {
     "id": "steindi-the-hardest-karaoke-song-in-the-world",
     "title": "The Hardest Karaoke Song in the World",
     "artist": "Steindi",
@@ -159045,6 +159605,36 @@
     "local": false
   },
   {
+    "id": "take-that-beautiful-world",
+    "title": "Beautiful World",
+    "artist": "Take That",
+    "video": "OXDmm0WK40s",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.02,
+    "gap": -729.9166736105324,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-08T20:49:01.168Z",
+    "edition": "SingStar Take That",
+    "genre": "Pop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "Take That",
+    "duration": 266,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6284,
+    "tracksCount": 1,
+    "search": "takethatbeautifulworld",
+    "local": false
+  },
+  {
     "id": "take-that-could-it-be-magic",
     "title": "Could It Be Magic",
     "artist": "Take That",
@@ -161136,6 +161726,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-ivy",
+    "title": "Ivy",
+    "artist": "Taylor Swift",
+    "video": "9nIOx-ezlzA",
+    "language": [
+      "English"
+    ],
+    "bpm": 356.11,
+    "gap": 769.0764089747549,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-10T02:25:15.108Z",
+    "genre": "Folklore",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=9nIOx-ezlzA",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6287,
+    "tracksCount": 1,
+    "search": "taylorswiftivy",
+    "local": false
+  },
+  {
     "id": "taylor-swift-lavender-haze",
     "title": "Lavender Haze",
     "artist": "Taylor Swift",
@@ -161165,6 +161784,34 @@
     "shortId": 4206,
     "tracksCount": 1,
     "search": "taylorswiftlavenderhaze",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-look-what-you-made-me-do",
+    "title": "Look What You Made Me Do",
+    "artist": "Taylor Swift",
+    "video": "3tmd-ClpJxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.62,
+    "gap": 19930.38379897883,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-08T20:45:08.219Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "ddog282",
+    "duration": 256,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6274,
+    "tracksCount": 1,
+    "search": "taylorswiftlookwhatyoumademedo",
     "local": false
   },
   {
@@ -162846,6 +163493,33 @@
     "shortId": 5359,
     "tracksCount": 1,
     "search": "theataristheboysofsummer",
+    "local": false
+  },
+  {
+    "id": "the-axis-of-awesome-4-chords",
+    "title": "4 Chords",
+    "artist": "The Axis Of Awesome",
+    "video": "oOlDewpCfZQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 17291.739130434784,
+    "year": "2011",
+    "lastUpdate": "2026-09-08T20:46:26.523Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "boraxa",
+    "duration": 380,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6277,
+    "tracksCount": 1,
+    "search": "theaxisofawesome4chords",
     "local": false
   },
   {
@@ -178115,6 +178789,33 @@
     "shortId": 4636,
     "tracksCount": 1,
     "search": "verkaserduchkadancinglashatumbai",
+    "local": false
+  },
+  {
+    "id": "veronica-maggio-jag-kommer",
+    "title": "Jag kommer",
+    "artist": "Veronica Maggio",
+    "video": "VjZwz3yxS9I",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 300,
+    "gap": 40240,
+    "year": "2011",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-09-08T20:46:08.936Z",
+    "realBpm": 151,
+    "volume": 1,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=VjZwz3yxS9I",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6276,
+    "tracksCount": 1,
+    "search": "veronicamaggiojagkommer",
     "local": false
   },
   {

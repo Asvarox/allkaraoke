@@ -1,0 +1,155 @@
+#ARTIST:Disney’s Mulan
+#TITLE:Réflexion
+#CREATOR:Arkhor2
+#BPM:398,7
+#YEAR:1998
+#VIDEO:v=ELQuh63FSfg
+#GENRE:Soundtrack
+#LANGUAGE:French
+#GAP:1054,198645598194
+#ALLKARAOKE_ID:disneys-mulan-reflexion
+#ALLKARAOKE_SID:6288
+#ALLKARAOKE_LASTUPDATE:2026-09-10T02:25:15.110Z
+#ALLKARAOKE_REALBPM:119
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:97
+#MP3:Disney’s Mulan - Réflexion.mp3
+: 27 7 -1 Non 
+: 35 3 0 ja
+: 39 24 2 mais
+- 63
+: 83 3 -1 Je 
+: 87 3 0 ne 
+: 91 12 2 se
+: 107 12 2 rai 
+: 123 20 7 faite
+- 143
+: 155 3 -1 Pour 
+: 159 3 2 le 
+: 163 7 0 mar
+: 171 7 -1 i
+: 179 28 -3 age
+- 207
+: 227 7 0 Ni 
+: 235 7 0 un
+: 243 7 0 e 
+: 251 7 2 fille 
+: 259 12 -1 bien 
+: 275 8 -3 sage
+- 283
+* 295 7 -1 Je 
+* 303 3 0 le 
+* 307 24 2 sais
+- 331
+: 351 3 -1 Cet
+: 355 7 0 te 
+: 363 8 2 vie 
+: 375 12 7 n’est 
+: 391 20 2 pas 
+* 415 8 7 pour 
+* 427 52 9 moi
+- 479
+: 495 7 2 J’ai 
+: 503 3 3 com
+: 507 28 5 pris
+- 535
+: 551 3 2 Que 
+: 555 3 3 si 
+: 559 12 5 je 
+: 575 12 5 veux 
+: 591 11 10 res
+: 603 7 2 ter
+- 610
+: 611 11 5 Ce 
+: 623 11 3 que 
+: 635 7 2 je 
+: 643 20 0 suis
+- 663 664
+- 664
+: 691 7 3 Mes 
+: 699 7 3 pa
+: 707 7 3 rents 
+: 715 7 5 se
+: 723 15 2 ront 
+: 739 7 0 meur
+: 747 11 -2 ~
+: 759 48 -2 tris
+- 807 872
+- 872
+* 899 36 12 Quel 
+* 939 12 12 est 
+: 955 12 10 donc 
+: 971 12 12 ce 
+: 987 7 14 mi
+: 995 3 12 ~
+: 999 3 10 ra
+: 1003 28 10 ge ?
+- 1031
+: 1035 15 9 Cette 
+: 1051 12 10 i
+: 1067 20 7 mage 
+: 1099 12 5 sans 
+: 1115 12 10 vi
+: 1131 20 3 sage
+- 1151
+: 1167 12 2 Pour
+: 1183 12 5 quoi 
+: 1199 12 10 mi
+: 1215 12 14 roir 
+: 1231 12 14 re
+: 1247 12 15 flé
+: 1263 12 12 chis-
+: 1279 16 10 tu
+- 1295
+* 1299 44 12 Sans 
+* 1347 12 12 me 
+* 1363 52 12 voir ?
+- 1415
+: 1435 28 12 Je 
+: 1467 20 12 cher
+: 1491 7 10 che en 
+: 1499 19 12 ma 
+: 1519 7 14 mé
+: 1527 7 12 ~
+: 1535 3 10 moir
+: 1539 28 10 e
+- 1567
+: 1583 7 9 Qui 
+: 1591 11 10 je 
+: 1603 20 7 suis 
+: 1635 12 5 pour 
+: 1651 12 10 sa
+: 1667 24 3 voir
+- 1691
+: 1703 12 2 Per
+: 1719 12 5 due 
+: 1735 12 10 dans 
+: 1751 12 14 ces 
+: 1767 12 14 ré
+: 1783 12 15 fle
+: 1799 28 12 xions
+- 1827
+: 1831 12 12 Où 
+: 1847 7 14 mon
+: 1855 7 10 ~ 
+: 1863 12 10 âme 
+* 1895 7 12 s’é
+* 1903 7 10 ~
+* 1911 104 14 gare
+- 2015 2028
+- 2028
+: 2055 12 2 Dans 
+: 2071 12 5 mon 
+: 2087 12 10 mi
+: 2103 12 14 roir 
+: 2119 12 14 d’il
+: 2135 12 15 lu
+: 2151 24 12 sions
+- 2175
+: 2195 19 12 Quelle 
+: 2215 11 14 fille 
+: 2227 7 10 je
+: 2235 12 10 ~ 
+* 2275 11 9 vais 
+* 2287 84 10 voir ?
+E
