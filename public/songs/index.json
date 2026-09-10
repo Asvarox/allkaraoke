@@ -20101,7 +20101,7 @@
     "gap": 10034.845360824742,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-09T02:25:25.942Z",
+    "lastUpdate": "2026-09-08T20:45:22.456Z",
     "realBpm": 96,
     "volume": 1,
     "author": "enricowernado",
@@ -21093,6 +21093,34 @@
     "shortId": 540,
     "tracksCount": 1,
     "search": "bikinikillrebelgirl",
+    "local": false
+  },
+  {
+    "id": "bilderbuch-bungalow",
+    "title": "Bungalow",
+    "artist": "Bilderbuch",
+    "video": "pV-GGCrRcu0",
+    "language": [
+      "German"
+    ],
+    "bpm": 364,
+    "gap": 2000.989010989011,
+    "year": "2017",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-09-10T02:25:36.606Z",
+    "genre": "Pop",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "g3n35i5",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6290,
+    "tracksCount": 1,
+    "search": "bilderbuchbungalow",
     "local": false
   },
   {
@@ -32838,6 +32866,33 @@
     "shortId": 883,
     "tracksCount": 1,
     "search": "cascadaeverytimewetouch",
+    "local": false
+  },
+  {
+    "id": "casper-im-ascheregen",
+    "title": "Im Ascheregen",
+    "artist": "Casper",
+    "video": "yqObMM_QzVQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 568,
+    "gap": 102126.47887323944,
+    "year": "2013",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-10T02:25:57.969Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "Mamba99",
+    "duration": 303,
+    "tracks": [
+      {
+        "start": 38
+      }
+    ],
+    "shortId": 6291,
+    "tracksCount": 1,
+    "search": "casperimascheregen",
     "local": false
   },
   {
@@ -45129,7 +45184,7 @@
     "gap": 33987.77777777778,
     "year": "2003",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-09T02:25:29.951Z",
+    "lastUpdate": "2026-09-08T20:46:48.462Z",
     "genre": "Punk Rock",
     "realBpm": 108,
     "volume": 1,
@@ -47780,6 +47835,33 @@
     "shortId": 1283,
     "tracksCount": 1,
     "search": "disneysmulanreflection",
+    "local": false
+  },
+  {
+    "id": "disneys-mulan-reflexion",
+    "title": "Réflexion",
+    "artist": "Disney’s Mulan",
+    "video": "ELQuh63FSfg",
+    "language": [
+      "French"
+    ],
+    "bpm": 398.7,
+    "gap": 1054.198645598194,
+    "year": "1998",
+    "lastUpdate": "2026-09-10T02:25:15.110Z",
+    "genre": "Soundtrack",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Arkhor2",
+    "duration": 97,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6288,
+    "tracksCount": 1,
+    "search": "disneysmulanreflexion",
     "local": false
   },
   {
@@ -57140,6 +57222,34 @@
     "local": false
   },
   {
+    "id": "erik-mjoenes-the-story-of-fire-saga-lion-of-love",
+    "title": "The Story Of Fire Saga - Lion Of Love",
+    "artist": "Erik Mjönes",
+    "video": "JezQBoxX-pg",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.04,
+    "gap": 1582.2882445364949,
+    "year": "2020",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-09-10T02:25:14.509Z",
+    "edition": "ESC 2020",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "mouton5000",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6286,
+    "tracksCount": 1,
+    "search": "erikmjoenesthestoryoffiresagalionoflove",
+    "local": false
+  },
+  {
     "id": "erika-vikman-ich-komme",
     "title": "ICH KOMME",
     "artist": "Erika Vikman",
@@ -61112,7 +61222,7 @@
     "gap": 12294.132439228835,
     "year": "1975",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-09T02:25:25.759Z",
+    "lastUpdate": "2026-09-08T20:44:51.233Z",
     "genre": "Rock",
     "realBpm": 159,
     "previewStart": 60,
@@ -84346,6 +84456,34 @@
     "local": false
   },
   {
+    "id": "joji-pixelated-kisses",
+    "title": "PIXELATED KISSES",
+    "artist": "Joji",
+    "video": "SblNBrgLdvo",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.9,
+    "gap": 13867.246811702926,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-10T02:26:25.361Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "tyromantaYT",
+    "duration": 109,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6295,
+    "tracksCount": 1,
+    "search": "jojipixelatedkisses",
+    "local": false
+  },
+  {
     "id": "joji-slow-dancing-in-the-dark",
     "title": "Slow Dancing In The Dark",
     "artist": "Joji",
@@ -89166,6 +89304,33 @@
     "local": false
   },
   {
+    "id": "kate-bush-babooshka",
+    "title": "Babooshka",
+    "artist": "Kate Bush",
+    "video": "6xckBwPdo1c",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 20465.29411764706,
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:26:25.366Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "bohning",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6297,
+    "tracksCount": 1,
+    "search": "katebushbabooshka",
+    "local": false
+  },
+  {
     "id": "kate-bush-running-up-that-hill",
     "title": "Running Up That Hill",
     "artist": "Kate Bush",
@@ -93455,7 +93620,7 @@
     "gap": 80235.52527950029,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-09T02:25:32.087Z",
+    "lastUpdate": "2026-09-08T20:48:10.389Z",
     "realBpm": 110,
     "volume": 1,
     "author": "haistshomie666",
@@ -101083,7 +101248,7 @@
     "gap": 38509.60784313725,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-09T02:25:32.099Z",
+    "lastUpdate": "2026-09-08T20:49:53.449Z",
     "realBpm": 101,
     "volume": 1,
     "author": "snake84",
@@ -103525,6 +103690,33 @@
     "local": false
   },
   {
+    "id": "loona-odd-eye-circle-girl-front",
+    "title": "Girl Front",
+    "artist": "LOONA / ODD EYE CIRCLE",
+    "video": "MPIKnAU-JyU",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 300,
+    "gap": 31800,
+    "year": "2017",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-09-10T02:25:58.120Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6292,
+    "tracksCount": 1,
+    "search": "loonaoddeyecirclegirlfront",
+    "local": false
+  },
+  {
     "id": "lord-of-the-lost-blood-glitter",
     "title": "Blood & Glitter",
     "artist": "Lord Of The Lost",
@@ -104031,6 +104223,34 @@
     "shortId": 6153,
     "tracksCount": 1,
     "search": "losautenticosdecadentespendeviejo",
+    "local": false
+  },
+  {
+    "id": "los-autenticos-decadentes-y-cacho-castana-y-la-banda-sigue",
+    "title": "Y la banda sigue",
+    "artist": "Los Auténticos Decadentes y Cacho Castaña",
+    "video": "t5-8nS72jjY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 20871,
+    "year": "2014",
+    "lastUpdate": "2026-09-10T02:26:03.966Z",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Aut%C3%A9nticos%20Decadentes%20y%20Cacho%20Casta%C3%B1a&cancion=Y%20la%20banda%20sigue",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6294,
+    "tracksCount": 1,
+    "search": "losautenticosdecadentesycachocastanaylabandasigue",
     "local": false
   },
   {
@@ -118712,6 +118932,37 @@
     "local": false
   },
   {
+    "id": "moona-hoshinova-high-tide",
+    "title": "High Tide",
+    "artist": "Moona Hoshinova",
+    "video": "stmZAThUl64",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 11276.024096385543,
+    "year": "2022",
+    "artistOrigin": "ID",
+    "lastUpdate": "2026-09-10T02:26:25.364Z",
+    "realBpm": 166,
+    "previewStart": 44,
+    "previewEnd": 74,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=51165",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26332",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6296,
+    "tracksCount": 1,
+    "search": "moonahoshinovahightide",
+    "local": false
+  },
+  {
     "id": "morandi-angels",
     "title": "Angels",
     "artist": "Morandi",
@@ -119954,6 +120205,35 @@
     "shortId": 6004,
     "tracksCount": 1,
     "search": "musesupremacy",
+    "local": false
+  },
+  {
+    "id": "muse-survival",
+    "title": "Survival",
+    "artist": "Muse",
+    "video": "nBFpFnCG3zA",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 89273.90243902439,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:25:36.602Z",
+    "genre": "Rock",
+    "videoGap": 1,
+    "realBpm": 164,
+    "volume": 0.74,
+    "author": "gun8",
+    "duration": 310,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6289,
+    "tracksCount": 1,
+    "search": "musesurvival",
     "local": false
   },
   {
@@ -121375,7 +121655,7 @@
     "bpm": 360,
     "gap": 4970,
     "year": "2013",
-    "lastUpdate": "2026-06-24T11:17:02.236Z",
+    "lastUpdate": "2026-09-09T21:00:09.389Z",
     "genre": "J-Pop",
     "realBpm": 167,
     "volume": 1,
@@ -124644,7 +124924,7 @@
     "bpm": 276,
     "gap": 50841.739130434784,
     "year": "2007",
-    "lastUpdate": "2026-09-09T02:25:29.953Z",
+    "lastUpdate": "2026-09-08T20:47:06.698Z",
     "realBpm": 124,
     "volume": 1,
     "author": "Zevac",
@@ -127714,7 +127994,7 @@
     "gap": 19307.272727272728,
     "year": "2026",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-09T02:25:32.090Z",
+    "lastUpdate": "2026-09-08T20:48:28.491Z",
     "genre": "Pop",
     "realBpm": 130,
     "volume": 1,
@@ -134007,7 +134287,7 @@
     "gap": 19089.43396226415,
     "year": "2005",
     "artistOrigin": "BR",
-    "lastUpdate": "2026-09-09T02:25:32.086Z",
+    "lastUpdate": "2026-09-08T20:47:51.780Z",
     "realBpm": 86,
     "volume": 1,
     "author": "b888arb",
@@ -138377,6 +138657,7 @@
     "previewEnd": 10,
     "volume": 70,
     "author": "DarkPasUnit",
+    "duration": 230,
     "tracks": [
       {
         "start": 22
@@ -138883,6 +139164,34 @@
     "shortId": 3594,
     "tracksCount": 1,
     "search": "rayparkerjrghostbusters",
+    "local": false
+  },
+  {
+    "id": "raye-where-is-my-husband",
+    "title": "WHERE IS MY HUSBAND!",
+    "artist": "RAYE",
+    "video": "rK5TyISxZ_M",
+    "language": [
+      "English"
+    ],
+    "bpm": 464,
+    "gap": 2097.8448275862065,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-10T02:25:58.284Z",
+    "genre": "R&B, Pop",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "shortId": 6293,
+    "tracksCount": 1,
+    "search": "rayewhereismyhusband",
     "local": false
   },
   {
@@ -155437,7 +155746,7 @@
     "gap": 2899.230769230769,
     "year": "2009",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-09T02:25:31.452Z",
+    "lastUpdate": "2026-09-08T20:47:36.818Z",
     "realBpm": 130,
     "volume": 1,
     "author": "general2000",
@@ -159307,7 +159616,7 @@
     "gap": -729.9166736105324,
     "year": "2006",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-09T02:25:32.094Z",
+    "lastUpdate": "2026-09-08T20:49:01.168Z",
     "edition": "SingStar Take That",
     "genre": "Pop",
     "realBpm": 200,
@@ -161417,6 +161726,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-ivy",
+    "title": "Ivy",
+    "artist": "Taylor Swift",
+    "video": "9nIOx-ezlzA",
+    "language": [
+      "English"
+    ],
+    "bpm": 356.11,
+    "gap": 769.0764089747549,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-10T02:25:15.108Z",
+    "genre": "Folklore",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=9nIOx-ezlzA",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6287,
+    "tracksCount": 1,
+    "search": "taylorswiftivy",
+    "local": false
+  },
+  {
     "id": "taylor-swift-lavender-haze",
     "title": "Lavender Haze",
     "artist": "Taylor Swift",
@@ -161460,7 +161798,7 @@
     "gap": 19930.38379897883,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-09T02:25:25.835Z",
+    "lastUpdate": "2026-09-08T20:45:08.219Z",
     "genre": "Pop",
     "realBpm": 128,
     "volume": 1,
@@ -163168,7 +163506,7 @@
     "bpm": 230,
     "gap": 17291.739130434784,
     "year": "2011",
-    "lastUpdate": "2026-09-09T02:25:26.050Z",
+    "lastUpdate": "2026-09-08T20:46:26.523Z",
     "genre": "Rock",
     "realBpm": 120,
     "volume": 1,
@@ -178465,7 +178803,7 @@
     "gap": 40240,
     "year": "2011",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-09T02:25:25.945Z",
+    "lastUpdate": "2026-09-08T20:46:08.936Z",
     "realBpm": 151,
     "volume": 1,
     "author": "daggeg",
