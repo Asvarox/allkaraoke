@@ -21107,7 +21107,7 @@
     "gap": 2000.989010989011,
     "year": "2017",
     "artistOrigin": "AT",
-    "lastUpdate": "2026-09-10T02:25:36.606Z",
+    "lastUpdate": "2026-09-09T20:59:35.589Z",
     "genre": "Pop",
     "realBpm": 91,
     "volume": 1,
@@ -32880,7 +32880,7 @@
     "gap": 102126.47887323944,
     "year": "2013",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-10T02:25:57.969Z",
+    "lastUpdate": "2026-09-09T20:59:45.004Z",
     "realBpm": 142,
     "volume": 1,
     "author": "Mamba99",
@@ -36493,6 +36493,34 @@
     "shortId": 974,
     "tracksCount": 1,
     "search": "ciroylospersasastros",
+    "local": false
+  },
+  {
+    "id": "clairo-sexy-to-someone",
+    "title": "Sexy To Someone",
+    "artist": "Clairo",
+    "video": "iUxlnNnAoTc",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.72,
+    "gap": 9416.938898971566,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-11T02:20:08.762Z",
+    "genre": "Alternative, Indie",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "CarolC93",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6299,
+    "tracksCount": 1,
+    "search": "clairosexytosomeone",
     "local": false
   },
   {
@@ -47848,7 +47876,7 @@
     "bpm": 398.7,
     "gap": 1054.198645598194,
     "year": "1998",
-    "lastUpdate": "2026-09-10T02:25:15.110Z",
+    "lastUpdate": "2026-09-09T20:57:56.481Z",
     "genre": "Soundtrack",
     "realBpm": 119,
     "volume": 1,
@@ -51897,6 +51925,34 @@
     "shortId": 5749,
     "tracksCount": 1,
     "search": "eagleeyecherrysavetonight",
+    "local": false
+  },
+  {
+    "id": "eagles-one-of-these-nights",
+    "title": "One Of These Nights",
+    "artist": "Eagles",
+    "video": "ESc2Tq2HzhQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 221,
+    "gap": 15961.900452488688,
+    "year": "1975",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-11T02:20:09.030Z",
+    "genre": "Rock",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "mustangfred",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6300,
+    "tracksCount": 1,
+    "search": "eaglesoneofthesenights",
     "local": false
   },
   {
@@ -57233,7 +57289,7 @@
     "gap": 1582.2882445364949,
     "year": "2020",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-10T02:25:14.509Z",
+    "lastUpdate": "2026-09-09T20:56:59.776Z",
     "edition": "ESC 2020",
     "realBpm": 140,
     "volume": 1,
@@ -84467,7 +84523,7 @@
     "gap": 13867.246811702926,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-10T02:26:25.361Z",
+    "lastUpdate": "2026-09-09T21:01:55.049Z",
     "genre": "Pop",
     "realBpm": 124,
     "volume": 1,
@@ -89315,7 +89371,7 @@
     "gap": 20465.29411764706,
     "year": "1980",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-10T02:26:25.366Z",
+    "lastUpdate": "2026-09-09T21:02:37.501Z",
     "realBpm": 107,
     "volume": 1,
     "author": "bohning",
@@ -103701,7 +103757,7 @@
     "gap": 31800,
     "year": "2017",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-09-10T02:25:58.120Z",
+    "lastUpdate": "2026-09-09T21:00:29.742Z",
     "realBpm": 142,
     "volume": 1,
     "author": "b888arb",
@@ -104236,7 +104292,7 @@
     "bpm": 300,
     "gap": 20871,
     "year": "2014",
-    "lastUpdate": "2026-09-10T02:26:03.966Z",
+    "lastUpdate": "2026-09-09T21:01:35.289Z",
     "realBpm": 300,
     "volume": 1,
     "author": "marague248",
@@ -118943,7 +118999,7 @@
     "gap": 11276.024096385543,
     "year": "2022",
     "artistOrigin": "ID",
-    "lastUpdate": "2026-09-10T02:26:25.364Z",
+    "lastUpdate": "2026-09-09T21:02:19.400Z",
     "realBpm": 166,
     "previewStart": 44,
     "previewEnd": 74,
@@ -120219,7 +120275,7 @@
     "gap": 89273.90243902439,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-10T02:25:36.602Z",
+    "lastUpdate": "2026-09-09T20:58:46.934Z",
     "genre": "Rock",
     "videoGap": 1,
     "realBpm": 164,
@@ -138657,7 +138713,6 @@
     "previewEnd": 10,
     "volume": 70,
     "author": "DarkPasUnit",
-    "duration": 230,
     "tracks": [
       {
         "start": 22
@@ -139178,7 +139233,7 @@
     "gap": 2097.8448275862065,
     "year": "2025",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-10T02:25:58.284Z",
+    "lastUpdate": "2026-09-09T21:00:48.052Z",
     "genre": "R&B, Pop",
     "realBpm": 116,
     "volume": 1,
@@ -146996,6 +147051,35 @@
     "shortId": 3813,
     "tracksCount": 1,
     "search": "scissorsistersidontfeellikedancin",
+    "local": false
+  },
+  {
+    "id": "scooter-break-it-up",
+    "title": "Break It Up",
+    "artist": "Scooter",
+    "video": "dWIHvuABaFU",
+    "language": [
+      "English"
+    ],
+    "bpm": 283.18,
+    "gap": 26823.57299244297,
+    "year": "1996",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-11T02:20:04.675Z",
+    "genre": "Classic Rock",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "Fepo",
+    "sourceUrl": "https://www.youtube.com/watch?v=dWIHvuABaFU",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6298,
+    "tracksCount": 1,
+    "search": "scooterbreakitup",
     "local": false
   },
   {
@@ -161737,7 +161821,7 @@
     "gap": 769.0764089747549,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-10T02:25:15.108Z",
+    "lastUpdate": "2026-09-09T20:57:20.833Z",
     "genre": "Folklore",
     "realBpm": 88,
     "volume": 1,
@@ -170876,6 +170960,34 @@
     "shortId": 4426,
     "tracksCount": 1,
     "search": "thevinesgetfree",
+    "local": false
+  },
+  {
+    "id": "the-wanted-chasing-the-sun",
+    "title": "Chasing The Sun",
+    "artist": "The Wanted",
+    "video": "RFS5N_yAGTo",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.96,
+    "gap": 10953.750586029068,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-11T02:20:09.035Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "lozboorman",
+    "sourceUrl": "https://www.youtube.com/watch?v=RFS5N_yAGTo",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6301,
+    "tracksCount": 1,
+    "search": "thewantedchasingthesun",
     "local": false
   },
   {
