@@ -8,7 +8,7 @@
 #GAP:20871
 #ALLKARAOKE_ID:los-autenticos-decadentes-y-cacho-castana-y-la-banda-sigue
 #ALLKARAOKE_SID:6294
-#ALLKARAOKE_LASTUPDATE:2026-09-10T02:26:03.966Z
+#ALLKARAOKE_LASTUPDATE:2026-09-09T21:01:35.289Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=marague248
 #ALLKARAOKE_REALBPM:300
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Los%20Aut%C3%A9nticos%20Decadentes%20y%20Cacho%20Casta%C3%B1a&cancion=Y%20la%20banda%20sigue
