@@ -4,9 +4,9 @@
     "Green Day",
     "Linkin Park",
     "Britney Spears",
+    "Taylor Swift",
     "Kylie Minogue",
     "Michael Jackson",
-    "Taylor Swift",
     "Ariana Grande",
     "Queen",
     "Take That",
@@ -25,9 +25,9 @@
     "Ghost",
     "Disturbed",
     "Madonna",
+    "Muse",
     "ABBA",
     "Foo Fighters",
-    "Muse",
     "Bruno Mars",
     "Lana Del Rey",
     "Westlife",
@@ -55,6 +55,7 @@
     "The Weeknd",
     "Breaking Benjamin",
     "Marilyn Manson",
+    "Olivia Rodrigo",
     "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
@@ -64,7 +65,6 @@
     "Mariah Carey",
     "Marina and the Diamonds",
     "No Doubt",
-    "Olivia Rodrigo",
     "Panic! at the Disco",
     "Red Hot Chili Peppers",
     "Rise Against",
@@ -103,6 +103,7 @@
     "Hamilton",
     "Iron Maiden",
     "Justin Bieber",
+    "KoRn",
     "Lorde",
     "★N Sync",
     "Nickelback",
@@ -148,8 +149,7 @@
     "Daft Punk",
     "Delta Goodrem",
     "Duran Duran",
-    "Frank Sinatra",
-    "Hilary Duff"
+    "Fleetwood Mac"
   ],
   "languages": [
     "Armenian",
@@ -190,5 +190,5 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6271
+  "songs": 6314
 }

@@ -1,0 +1,452 @@
+#ARTIST:Disney’s Phineas and Ferb
+#TITLE:S.I.M.P. (Squirrels In My Pants)
+#CREATOR:lily
+#BPM:240
+#YEAR:2009
+#VIDEO:v=gaFdUkf8Hik
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:10490
+#ALLKARAOKE_ID:disneys-phineas-and-ferb-simp-squirrels-in-my-pants
+#ALLKARAOKE_SID:6314
+#ALLKARAOKE_LASTUPDATE:2026-09-12T02:27:47.298Z
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:101
+#MP3:Disney’s Phineas and Ferb - S.I.M.P. (Squirrels In My Pants).mp3
+#COVER:Disney’s Phineas and Ferb - S.I.M.P. (Squirrels In My Pants) [CO].jpg
+#BACKGROUND:Disney’s Phineas and Ferb - S.I.M.P. (Squirrels In My Pants) [BG].jpg
+F 16 2 7 There’s 
+F 20 2 7 squirrels 
+F 24 1 7 in 
+F 26 1 7 my 
+F 28 4 7 pants!
+- 32
+R 36 1 9 Tell 
+: 38 1 9 me 
+: 40 2 9 what’s 
+: 44 1 12 ma
+: 46 1 12 king 
+: 48 2 9 you 
+: 52 2 7 jump 
+: 56 2 9 like 
+: 60 4 9 that
+- 64
+R 68 2 13 S
+R 72 2 13 -I
+R 76 2 15 -M
+R 80 2 15 -P, 
+R 84 2 15 squirrels 
+R 88 1 15 in 
+R 90 1 12 my 
+R 92 1 15 pants!
+- 93
+: 96 2 9 Ain’t 
+: 100 2 9 got 
+: 104 2 9 no 
+: 108 1 12 chic
+: 110 1 12 kens, 
+: 112 2 9 ain’t 
+: 116 2 7 got 
+: 120 2 9 no 
+: 124 4 9 rats
+- 128
+R 132 2 13 S
+R 136 2 13 -I
+R 140 2 15 -M
+R 144 2 15 -P, 
+R 148 2 15 squirrels 
+R 152 1 15 in 
+R 154 1 12 my 
+R 156 4 15 pants!
+- 160
+: 164 2 16 S 
+: 168 1 16 to 
+: 170 1 16 the 
+: 172 2 16 I 
+: 176 1 16 to 
+: 178 1 16 the 
+: 180 2 16 M 
+: 184 1 16 to 
+: 186 1 16 the 
+: 188 1 14 P
+: 190 1 12 ~,
+- 191
+: 192 2 7 Then 
+: 196 1 9 may
+: 198 1 9 be 
+: 200 2 9 you 
+: 204 2 12 can 
+: 208 2 9 be 
+: 212 1 7 mo
+: 214 1 9 ving 
+: 216 2 9 like 
+: 220 5 9 me
+- 225
+: 228 2 14 Step 
+: 232 2 14 right 
+: 236 1 14 o
+: 238 1 14 ver 
+: 240 2 12 and 
+: 244 2 14 watch 
+: 248 2 12 me 
+: 252 1 14 put 
+: 254 2 12 it...
+- 256
+F 260 6 7 Squirrels! 
+F 276 6 7 Squirrels!
+- 282
+: 292 2 14 Step 
+: 296 2 14 right 
+: 300 1 14 o
+: 302 1 14 ver 
+: 304 2 12 and 
+: 308 2 14 watch 
+: 312 2 12 me 
+: 316 1 14 put 
+: 318 2 12 it...
+- 320
+R 324 2 11 S 
+: 328 1 9 to 
+: 330 1 9 the 
+: 332 2 9 I 
+: 336 1 9 to 
+: 338 1 9 the 
+: 340 2 9 M 
+: 344 1 9 to 
+: 346 1 9 the 
+: 348 2 9 P!
+- 350
+: 356 1 9 Who 
+: 358 1 9 you 
+: 360 2 9 got 
+: 364 2 12 back 
+: 368 2 9 home, 
+: 372 1 7 wa
+: 374 1 7 ter
+: 376 1 9 ing 
+: 378 1 9 your 
+: 380 2 9 plants?
+- 382
+R 388 2 13 S
+R 392 2 13 -I
+R 396 2 15 -M
+R 400 2 15 -P, 
+R 404 2 15 squirrels 
+R 408 1 15 in 
+R 410 1 12 my 
+R 412 4 15 pants!
+- 416
+: 420 2 9 How 
+: 424 1 9 can 
+: 426 1 9 I 
+: 428 1 12 qua
+: 430 1 12 li
+: 432 1 9 fy 
+: 434 1 9 for 
+: 436 1 7 go
+: 438 1 9 vern
+: 440 2 9 ment 
+: 444 2 9 grants?
+- 446
+R 452 2 13 S
+R 456 2 13 -I
+R 460 2 15 -M
+R 464 2 15 -P, 
+R 468 2 15 squirrels 
+R 472 1 15 in 
+R 474 1 12 my 
+R 476 4 15 pants!
+- 480
+: 484 2 4 Hyp
+: 488 2 4 no
+: 492 2 4 tize 
+: 496 2 4 me, 
+: 500 1 3 put 
+: 502 1 4 me 
+: 504 1 2 in 
+: 506 1 4 a 
+: 508 1 2 trance
+: 510 2 0 ~
+- 512
+R 516 2 13 S
+R 520 2 13 -I
+R 524 2 15 -M
+R 528 2 15 -P, 
+R 532 2 15 squirrels 
+R 536 1 15 in 
+R 538 1 12 my 
+R 540 4 15 pants!
+- 544
+: 548 1 9 Got 
+: 550 1 9 an 
+: 552 2 9 Aunt 
+: 556 2 12 Flo
+: 560 2 9 rence 
+: 564 1 7 liv
+: 566 1 9 ing 
+: 568 2 9 in 
+: 572 4 9 France
+- 576
+R 580 2 15 She 
+R 584 2 7 can’t 
+R 588 2 5 see 
+R 592 1 2 the-
+- 593
+F 596 2 7 Squirrels 
+F 600 1 7 in 
+F 602 1 7 my 
+F 604 4 7 pants!
+- 608
+: 612 2 14 Step 
+: 616 2 14 right 
+: 620 1 14 o
+: 622 1 14 ver 
+: 624 2 12 and 
+: 628 2 14 watch 
+: 632 2 12 me 
+: 636 1 14 put 
+: 638 2 12 it...
+- 640
+F 644 6 7 Squirrels! 
+F 660 6 7 Squirrels!
+- 666
+: 676 2 14 Step 
+: 680 2 14 right 
+: 684 1 14 o
+: 686 1 14 ver 
+: 688 2 12 and 
+: 692 2 14 watch 
+: 696 2 12 me 
+: 700 1 14 put 
+: 702 2 12 it...
+- 704
+R 708 2 11 S 
+: 712 1 9 to 
+: 714 1 9 the 
+: 716 2 9 I 
+: 720 1 9 to 
+: 722 1 9 the 
+: 724 2 9 M 
+: 728 1 9 to 
+: 730 1 9 the 
+: 732 2 9 P!
+- 734
+: 740 1 9 If 
+: 742 1 9 you 
+: 744 1 9 wan
+: 746 1 9 na 
+: 748 2 12 know 
+: 752 1 9 how 
+: 754 1 9 I’m 
+: 756 1 7 do
+: 758 1 7 in’ 
+: 760 2 9 this 
+: 764 4 9 dance
+- 768
+R 772 2 13 S
+R 776 2 13 -I
+R 780 2 15 -M
+R 784 2 15 -P, 
+R 788 2 15 squirrels 
+R 792 1 15 in 
+R 794 1 12 my 
+R 796 1 15 pants!
+- 797
+R 800 2 7 There’s 
+: 804 1 9 some
+: 806 1 9 thin’ 
+: 808 1 9 in 
+: 810 1 9 my 
+: 812 2 12 trou
+: 816 1 9 sers, 
+: 818 1 9 you 
+: 820 1 7 know 
+: 822 1 7 it 
+: 824 2 9 ain’t 
+: 828 4 9 ants
+- 832
+R 836 2 13 S
+R 840 2 13 -I
+R 844 2 15 -M
+R 848 2 15 -P, 
+R 852 2 15 squirrels 
+R 856 1 15 in 
+R 858 1 12 my 
+R 860 4 15 pants!
+- 864
+: 868 2 16 Pro
+: 872 2 16 le
+: 876 2 16 tariat 
+: 880 2 16 and 
+: 884 2 16 bour
+: 888 2 16 geoi
+: 892 1 14 sie
+: 894 3 12 ~
+- 897
+R 900 1 14 Ba
+R 902 1 12 by 
+R 904 1 13 you 
+R 906 1 11 don’t 
+R 908 1 13 need 
+R 910 1 11 an 
+R 912 1 12 a
+R 914 1 10 ca
+R 916 1 15 de
+R 918 1 12 mic 
+R 920 2 7 de
+R 924 4 11 gree!
+- 928
+: 932 1 14 Ev
+: 934 1 16 ery
+: 936 1 16 bo
+: 938 1 16 dy’s 
+: 940 1 15 smell
+: 942 1 16 in’ 
+: 944 2 16 my 
+: 948 2 16 pot
+: 952 2 16 pour
+: 956 4 16 ri
+- 960
+R 964 2 11 S 
+R 968 1 9 to 
+R 970 1 9 the 
+R 972 2 11 I 
+R 976 1 9 to 
+R 978 1 9 the 
+R 980 2 11 M 
+R 984 1 9 to 
+R 986 1 9 the 
+R 988 3 11 P!
+- 991
+: 996 2 14 Step 
+: 1000 2 14 right 
+: 1004 1 14 o
+: 1006 1 14 ver 
+: 1008 2 12 and 
+: 1012 2 14 watch 
+: 1016 2 12 me 
+: 1020 1 14 put 
+: 1022 2 12 it...
+- 1024
+F 1028 6 7 Squirrels! 
+F 1044 6 7 Squirrels!
+- 1050
+: 1060 2 14 Step 
+: 1064 2 14 right 
+: 1068 1 14 o
+: 1070 1 14 ver 
+: 1072 2 12 and 
+: 1076 2 14 watch 
+: 1080 2 12 me 
+: 1084 1 14 put 
+: 1086 2 12 it...
+- 1088
+: 1092 8 16 Down, 
+: 1104 4 19 down, 
+: 1112 4 16 on 
+: 1118 4 16 the 
+: 1124 18 14 ground
+- 1142
+: 1152 1 14 ’Cause 
+: 1154 1 12 you 
+: 1156 1 14 know 
+: 1158 1 12 I 
+: 1160 1 14 got 
+: 1162 1 16 it 
+: 1164 1 14 go
+: 1166 1 12 in’ 
+: 1168 1 9 on
+- 1169
+: 1172 2 9 S 
+: 1176 1 9 to 
+: 1178 1 9 the 
+: 1180 2 9 I 
+: 1184 1 9 to 
+: 1186 1 9 the 
+: 1188 2 12 M 
+: 1192 1 9 to 
+: 1194 1 9 the 
+: 1196 2 9 P
+- 1198
+: 1204 2 9 S 
+: 1208 1 9 to 
+: 1210 1 9 the 
+: 1212 2 9 I 
+: 1216 1 9 to 
+: 1218 1 9 the 
+: 1220 2 12 M 
+: 1224 1 9 to 
+: 1226 1 9 the 
+: 1228 1 9 P
+- 1229
+: 1232 1 7 If 
+: 1234 1 9 your 
+: 1236 1 9 poc
+: 1238 1 9 kets 
+: 1240 2 9 are 
+R 1244 1 11 emp
+: 1246 1 9 ty 
+: 1248 1 9 get 
+: 1250 1 9 a 
+: 1252 2 7 cash 
+: 1256 2 9 ad
+: 1260 4 9 vance
+- 1264
+F 1268 6 7 Squirrels! 
+F 1284 6 7 Squirrels!
+- 1290
+: 1296 1 9 If 
+: 1298 1 9 you’re 
+: 1300 1 16 lo
+: 1302 1 16 sin’ 
+: 1304 2 16 your 
+: 1308 2 16 hair, 
+: 1312 1 16 get 
+: 1314 1 16 your
+: 1316 2 16 self 
+: 1320 2 16 im
+: 1324 1 12 plants
+- 1325
+: 1328 1 9 If 
+: 1330 1 6 you’re 
+: 1332 1 9 wres
+: 1334 1 9 tl
+: 1336 1 9 in’ 
+: 1338 1 9 a 
+: 1340 2 12 bear, 
+: 1344 1 9 then 
+: 1346 1 7 you 
+: 1348 2 7 ain’t 
+: 1352 1 9 got 
+: 1354 1 9 a 
+: 1356 2 9 chance
+- 1358
+: 1364 2 16 Old 
+: 1368 1 16 Un
+: 1370 1 16 cle 
+: 1372 1 16 Fred
+: 1374 1 16 dy 
+: 1376 2 16 just 
+: 1380 1 19 ra
+: 1382 1 16 ges 
+: 1384 2 16 and 
+: 1388 1 16 rants
+- 1389
+: 1392 1 16 Ain’t 
+: 1394 1 16 a
+: 1396 2 19 bout 
+: 1400 4 16 love, 
+: 1408 1 16 ain’t 
+: 1410 1 16 a
+: 1412 2 19 bout 
+: 1416 2 16 ro
+: 1420 1 16 mance
+- 1421
+: 1422 1 16 I 
+: 1424 2 19 got 
+: 1428 2 24 squirrels 
+: 1432 1 21 in 
+: 1434 1 21 my 
+: 1436 4 21 pants!
+E
