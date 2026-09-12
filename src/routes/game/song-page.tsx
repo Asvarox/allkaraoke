@@ -35,8 +35,10 @@ export default function SongPage({ songData, background, width, height, children
   );
 }
 
+/** Title, artist and credit on the song page. `text-shadow-legible` rather than a plate behind the
+ * text: the background is the song's own video, and covering it defeats the point of showing it. */
 export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
-  <span className={clsx('typography inline-block bg-black/55 px-5 py-0.5', className)} {...restProps} />
+  <span className={clsx('typography inline-block text-shadow-legible', className)} {...restProps} />
 );
 
 const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (

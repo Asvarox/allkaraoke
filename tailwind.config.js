@@ -24,6 +24,18 @@ module.exports = {
     },
     extend: {
       /**
+       * Keeping text readable on top of the song video, which is the app's default background and
+       * can be any frame of anything. This is the treatment to reach for — not a plate behind the
+       * text, which hides the video the screen exists to show.
+       *
+       * Two sizes because the halo has to scale with the text: the default suits body and heading
+       * sizes, `lg` is for the large prompts that sit over full-screen video.
+       */
+      textShadow: {
+        legible: '0px 0px 3px #000000',
+        'legible-lg': '0 0 2rem black',
+      },
+      /**
        * The stacking ladder. Every layer that escapes its parent — anything `fixed` or portalled —
        * takes a rung here instead of picking a number, which is how the app ended up with values
        * from 0 to 100000 that only made sense pairwise.

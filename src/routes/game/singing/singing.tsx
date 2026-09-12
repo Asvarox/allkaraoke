@@ -15,7 +15,6 @@ import PlayersManager from '~/modules/players/players-manager';
 import useSong from '~/modules/songs/hooks/use-song';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
 import WaitForReadiness from '~/routes/game/singing/wait-for-readiness';
-import { ContentElement } from '~/routes/game/song-page';
 import LayoutGame from '~/routes/layout-game';
 import { IsCalibratedSetting, useSettingValue } from '~/routes/settings/settings-state';
 
@@ -87,18 +86,18 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                 height: `${height}px`,
               }}
             />
-            {/* The same plate the song page puts these on. Bare text sits directly on the song's
-                own thumbnail here, so a bright video leaves it unreadable. */}
-            <ContentElement
-              className="mb-1 self-start text-2xl [view-transition-name:song-preview-artist] 2xl:text-3xl"
+            {/* These sit directly on the song's own thumbnail, so they need `text-shadow-legible`
+                to survive a bright frame. */}
+            <span
+              className="typography text-shadow-legible text-2xl [view-transition-name:song-preview-artist] 2xl:text-3xl"
               data-test="song-artist">
               {songPreview.artist}
-            </ContentElement>
-            <ContentElement
-              className="text-active self-start text-3xl [view-transition-name:song-preview-title] 2xl:text-5xl"
+            </span>
+            <span
+              className="typography text-active text-shadow-legible text-3xl [view-transition-name:song-preview-title] 2xl:text-5xl"
               data-test="song-title">
               {songPreview.title}
-            </ContentElement>
+            </span>
             <Modal open={showCalibration}>
               {showCalibration && (
                 <Menu modal>

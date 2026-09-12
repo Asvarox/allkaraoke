@@ -94,14 +94,22 @@ export const Typography: StoryFn = () => (
 
     <Section
       title="Treatments"
-      note="Two effects exist to keep text legible on top of a moving song video rather than as decoration.">
-      <Row name="stroke-text" meta="-webkit-text-stroke, for lyrics">
-        <span className="typography stroke-text text-3xl">Chodz, pomaluj mój świat</span>
+      note={
+        <>
+          The app&rsquo;s background is the song video, so text has to survive an arbitrary frame.{' '}
+          <code>text-shadow-legible</code> is the answer — reach for it rather than putting a plate behind the text,
+          which hides the thing the screen exists to show. <code>lg</code> is the same idea scaled up for large prompts
+          over full-screen video.
+        </>
+      }>
+      <Row name="text-shadow-legible" meta="the default, for body and headings">
+        <span className="typography text-shadow-legible text-lg">Chodz, pomaluj mój świat</span>
       </Row>
-      <Row name="text-shadow-[…]" meta="on the active-orange fill">
-        <span className="text-active text-3xl font-bold text-shadow-[0px_0px_3px_#000000]">
-          Chodz, pomaluj mój świat
-        </span>
+      <Row name="text-shadow-legible-lg" meta="large prompts over video">
+        <span className="typography text-shadow-legible-lg text-3xl font-bold">Skip intro</span>
+      </Row>
+      <Row name="stroke-text" meta="-webkit-text-stroke — lyrics only">
+        <span className="typography stroke-text text-3xl">Chodz, pomaluj mój świat</span>
       </Row>
       <Row name="uppercase" meta="every button label">
         <span className="typography text-lg font-bold uppercase">Sing a song</span>

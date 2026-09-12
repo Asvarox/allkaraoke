@@ -38,7 +38,7 @@ export const Menu = ({ title, children, className, spacing = 'regular', modal = 
 
 Menu.Header = twx(
   Typography,
-)`text-active flex items-center justify-center text-xl font-bold uppercase text-shadow-[0px_0px_3px_#000000] max-lg:text-lg`;
+)`text-active text-shadow-legible flex items-center justify-center text-xl font-bold uppercase max-lg:text-lg`;
 export const MenuHeader = Menu.Header;
 
 Menu.Button = MenuButton;

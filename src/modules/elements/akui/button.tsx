@@ -23,7 +23,7 @@ export const ButtonBase = twx(Box)((props) => {
   return [
     `typography ${interactiveSurface} pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 px-3 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
-      ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
+      ? 'bg-active! text-shadow-legible scale-[1.025]'
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
     !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
