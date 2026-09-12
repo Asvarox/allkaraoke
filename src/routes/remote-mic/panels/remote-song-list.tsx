@@ -123,9 +123,23 @@ function RemoteSongList({ connectionStatus }: Props) {
   }, [filteredSongList]);
 
   const [expandedArtists, setExpandedArtists] = useState<string[]>([]);
+  // A new search, another tab or another language filter is a different list; groups expanded in
+  // the old one mean nothing in it.
   useLayoutEffect(() => {
     setExpandedArtists([]);
-  }, [search, songList, tab, excludedLanguages]);
+  }, [search, tab, excludedLanguages]);
+  // `songList` changes identity again once the desktop's overrides land, a beat after the panel
+  // mounts and easily after a group has been opened. Clearing on that collapsed the group out from
+  // under whoever had just opened it, so drop only the artists that are genuinely gone.
+  useLayoutEffect(() => {
+    setExpandedArtists((artists) => {
+      const stillGrouped = groupedSongList
+        .filter((entry) => Array.isArray(entry))
+        .map((group) => getMainArtistName(group[0].artist));
+      const remaining = artists.filter((artist) => isArtistPresent(artist, stillGrouped));
+      return remaining.length === artists.length ? artists : remaining;
+    });
+  }, [groupedSongList]);
 
   const itemsToRender = useMemo(() => {
     const itemsToRender: typeof groupedSongList = [];
