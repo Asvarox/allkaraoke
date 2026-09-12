@@ -15,7 +15,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
   const [detailedScore, maxScore] = player.detailedScore;
 
   return (
-    <Box className="relative h-8 w-full flex-row! gap-1 p-1 2xl:h-12">
+    <Box className="relative h-8 w-full flex-row! justify-start gap-1 p-1 2xl:h-12">
       <ScoreBar
         score={segment > -1 ? detailedScore.rap + detailedScore.freestyle + detailedScore.normal : 0}
         maxScore={maxScore.rap + maxScore.freestyle + maxScore.normal}
@@ -39,7 +39,7 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
         maxScore={maxScore.vibrato}
         color={styles.colors.players[playerNumber].perfect.stroke}
       />
-      <span className="typography 2xl:text-md absolute top-9 left-2 block text-right text-sm whitespace-nowrap 2xl:top-12">
+      <span className="typography 2xl:text-md text-shadow-legible absolute top-9 left-2 block text-right text-sm whitespace-nowrap 2xl:top-12">
         {segment < 5 && (
           <Typewriter
             options={{
