@@ -34,10 +34,11 @@ export const Typography: StoryFn = () => (
     title="Typography"
     intro={
       <>
-        One family, set on <code>body</code> in <code>index.css</code>: Seravek, then Gill Sans Nova, Ubuntu, Calibri.
-        There is no <code>fontFamily</code> in the Tailwind config, so <code>font-sans</code> would emit
-        Tailwind&rsquo;s stack rather than this one — leave text to inherit instead. The root is 16px, doubling to 32px
-        above 3840px so the game stays readable across the room on a 4K TV.
+        One family: Seravek, then Gill Sans Nova, Ubuntu, Calibri. It is a token — <code>theme.fontFamily.sans</code> —
+        and <code>index.css</code> applies it to <code>body</code> rather than restating the stack, so{' '}
+        <code>font-sans</code> means the game&rsquo;s font and not Tailwind&rsquo;s default. <code>font-mono</code> is
+        the same arrangement for code. The root is 16px, doubling to 32px above 3840px so the game stays readable across
+        the room on a 4K TV.
       </>
     }>
     <Section
@@ -45,10 +46,10 @@ export const Typography: StoryFn = () => (
       note={
         <>
           Ten steps, declared as <code>theme.fontSize</code> and therefore replacing Tailwind&rsquo;s default scale
-          entirely. Note the naming: there is no <code>base</code>. Tailwind&rsquo;s <code>base</code> step was the name
-          for a default nothing here actually used, so the ladder runs <code>sm</code> → <code>md</code> and{' '}
-          <code>md</code> is the default body size — it is what <code>Typography</code> applies when a caller says
-          nothing.
+          entirely. There is no <code>base</code>: it was Tailwind&rsquo;s name for a default nothing here used, and{' '}
+          <code>sm</code> now carries its 16px. So the ladder runs <code>xs</code> → <code>sm</code> → <code>md</code>{' '}
+          with no gap in it, and <code>md</code> is the default body size — what <code>Typography</code> applies when a
+          caller says nothing.
         </>
       }>
       {SCALE.map((step) => (
@@ -111,20 +112,20 @@ export const Typography: StoryFn = () => (
       title="Headings"
       note={
         <>
-          Bare <code>h1</code>–<code>h5</code> carry sizes set in <code>index.css</code>, and they do not all line up
-          with the scale above — <code>h3</code> is 1.75rem, which no utility can reproduce. In practice the heading a
-          player sees on a menu is <code>Menu.Header</code>, which is a span.
+          A heading is sized like anything else. <code>index.css</code> used to give bare <code>h1</code>–
+          <code>h5</code> their own sizes — a second scale outside <code>theme.fontSize</code>, with <code>h3</code> at
+          1.75rem that no utility could reproduce — and that is gone. Pick the element for document structure and the
+          size with a <code>text-*</code> class. The heading a player actually sees on a menu is{' '}
+          <code>Menu.Header</code>.
         </>
       }>
-      {(['h1', 'h2', 'h3', 'h4', 'h5'] as const).map((tag) => (
-        <Row key={tag} name={`<${tag}>`}>
-          <TextSample as={tag} property="font-size">
-            Chodz, pomaluj mój świat
-          </TextSample>
-        </Row>
-      ))}
-      <Row name="Menu.Header" meta="what menus actually use">
+      <Row name="Menu.Header" meta="what menus use">
         <Menu.Header>Sing a song</Menu.Header>
+      </Row>
+      <Row name="<h2 className='text-xl'>" meta="an unstyled h2 is body-sized now">
+        <TextSample as="h2" property="font-size" className="text-xl">
+          Chodz, pomaluj mój świat
+        </TextSample>
       </Row>
     </Section>
 

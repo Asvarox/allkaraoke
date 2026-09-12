@@ -4,9 +4,15 @@ const styles = require('./src/modules/game-engine/drawing/styles');
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    // Replaces Tailwind's stacks rather than extending them, so `font-sans` means the game's font
+    // instead of the framework's default — index.css applies these rather than repeating them.
+    fontFamily: {
+      sans: ['Seravek', 'Gill Sans Nova', 'Ubuntu', 'Calibri', 'DejaVu Sans', 'source-sans-pro', 'sans-serif'],
+      mono: ['source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace'],
+    },
     fontSize: {
       xs: '0.75rem',
-      sm: '0.9rem',
+      sm: '1rem',
       md: '1.25rem',
       lg: '1.5rem',
       xl: '2rem',

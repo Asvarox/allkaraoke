@@ -95,7 +95,8 @@ function SingStarMics(props: Props) {
 
   return (
     <>
-      <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can find SingStar ones.</h2>}>
+      <UserMediaEnabled
+        fallback={<h2 className="text-xl">Please allow access to the microphone so we can find SingStar ones.</h2>}>
         {!isSetup && (
           <>
             <span className="typography block text-lg">
@@ -136,7 +137,7 @@ function SingStarMics(props: Props) {
         )}
         {isSetup && (
           <>
-            <h2 data-test="setup-completed">
+            <h2 className="text-xl" data-test="setup-completed">
               <strong>SingStar</strong> microphone connected!
             </h2>
 

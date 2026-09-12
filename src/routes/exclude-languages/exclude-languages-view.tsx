@@ -1,11 +1,10 @@
-import { Skeleton } from '@mui/material';
 import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
+import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { Flag } from '~/modules/elements/flag';
-import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import { NavButton, NavCheckbox } from '~/modules/elements/nav-controls';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
@@ -86,14 +85,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
       <Menu.Header>Select Song Languages</Menu.Header>
       <KeyboardNavContext value={register}>
         <>
-          {isLoading &&
-            new Array(6).fill(0).map((_, i) => (
-              <Skeleton variant="rectangular" width="100%" height="100px" key={i}>
-                <LanguageEntry inactive focused={false}>
-                  <Flag language={['English']} />
-                </LanguageEntry>
-              </Skeleton>
-            ))}
+          {isLoading && new Array(6).fill(0).map((_, i) => <Skeleton className="h-25 w-full" key={i} />)}
           {languageList.map(({ name, count }) => {
             const excluded = excludedLanguages?.includes(name) ?? false;
             return (
@@ -162,7 +154,5 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
 const NextButtonContainer = twx.div`flex flex-col gap-2.5`;
 
 const LanguageName = twx.span`transition-[300ms]`;
-
-const LanguageEntry = twx(MenuButton)`relative m-0 w-full justify-start`;
 
 export default ExcludeLanguagesView;

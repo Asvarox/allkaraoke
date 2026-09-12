@@ -192,7 +192,7 @@ body {
 body,
 button,
 input {
-  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  @apply font-sans;
 }
 
 html {
@@ -205,7 +205,7 @@ html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  @apply font-mono;
 }
 
 .blockOverflow {
@@ -356,22 +356,9 @@ code {
   opacity: 1;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
+/*
+  No bare `h1`–`h5` sizes. They were a second type scale living outside `theme.fontSize` — `h3` was
+  1.75rem, a size no utility could reproduce — and they sized elements chosen for document structure
+  rather than for how big the text should be. A heading takes `Menu.Header` or a `text-*` class like
+  anything else.
+*/
