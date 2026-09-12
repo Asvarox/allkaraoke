@@ -128,6 +128,6 @@ const Container = twx(Box)((props: TwcComponentProps<'div'> & { 'data-visible': 
   // those swallows the click. Flush into the corner - no offset, and only the one corner facing the
   // page is rounded. `w-auto` so it is only as wide as its entries, and `items-end` so every column
   // sits on a shared bottom edge whatever the height of the keys above it.
-  `fixed bottom-0 left-0 z-1000 w-auto max-w-screen cursor-pointer flex-row! items-end justify-start gap-4 rounded-none rounded-tr-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
+  `z-help fixed bottom-0 left-0 w-auto max-w-screen cursor-pointer flex-row! items-end justify-start gap-4 rounded-none rounded-tr-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
   props['data-visible'] ? 'flex max-lg:hidden' : 'hidden',
 ]);

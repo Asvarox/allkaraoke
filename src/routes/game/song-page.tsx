@@ -41,7 +41,7 @@ export const ContentElement = ({ className, ...restProps }: React.ComponentProps
 
 const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (
   <div
-    className={clsx('fixed inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
+    className={clsx('fixed inset-0 z-scene bg-cover bg-center', blur ? 'blur-sm' : undefined)}
     style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${video}/hqdefault.jpg')` }}
   />
 );

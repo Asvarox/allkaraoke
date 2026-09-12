@@ -178,7 +178,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 can sit below the fold, so `sticky` alone wouldn't show it until the user scrolled
                 down past it. Pin it to the viewport instead so it's visible from the start.
                 Desktop's card never scrolls (sm:overflow-hidden), so this reverts to normal flow. */}
-            <div className="fixed inset-x-px bottom-0 z-40 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
+            <div className="z-hud-blocking fixed inset-x-px bottom-0 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
               <NavButton
                 name="play-song-button"
                 size="large"

@@ -37,7 +37,7 @@ export default function LyricNoteToken({
 
   return (
     <span className={note.type === 'freestyle' ? 'italic' : 'not-italic'}>
-      <span className="absolute z-[1]">
+      <span className="absolute z-1">
         <span className={pop === 1 ? 'animate-lyrics-pop inline-block' : 'inline-block'}>
           <LyricActive fill={fill} color={playerColor}>
             {note.lyrics.trim()}

@@ -177,6 +177,6 @@ const InputOptionButton = ({
 // renders first, regardless of whether the pair is two `<iconify-icon>`s, two `<svg>`s (MicIconBlue/
 // MicIconRed), or a mix of both (MicIconBlue + an `<iconify-icon>`) — `first-of-type` would match
 // both elements independently once they're different tags.
-const OptionIconContainer = twx.div`relative [&_iconify-icon]:text-[#ff3636] [&_iconify-icon]:transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&>*:first-child]:absolute [&>*:first-child]:z-100 [&>*:first-child]:mt-[0.2em] [&>*:first-child]:ml-[0.35em] [&>*:first-child]:-scale-x-100 [&>*:first-child]:text-[#0099ff]`;
+const OptionIconContainer = twx.div`relative [&_iconify-icon]:text-[#ff3636] [&_iconify-icon]:transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&>*:first-child]:absolute [&>*:first-child]:z-1 [&>*:first-child]:mt-[0.2em] [&>*:first-child]:ml-[0.35em] [&>*:first-child]:-scale-x-100 [&>*:first-child]:text-[#0099ff]`;
 
 export default SelectPreference;

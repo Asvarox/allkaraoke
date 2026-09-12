@@ -74,7 +74,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
       <LayoutGame>
         <div className="relative">
           <div
-            className={`pointer-events-none fixed inset-0 z-10 flex h-full w-full flex-col items-stretch px-10 py-10 transition-opacity duration-500 [view-transition-name:song-preview] ${
+            className={`z-scene-overlay pointer-events-none fixed inset-0 flex h-full w-full flex-col items-stretch px-10 py-10 transition-opacity duration-500 [view-transition-name:song-preview] ${
               isOverlayVisible ? 'opacity-100' : 'opacity-0'
             }`}
             data-test="background-container">

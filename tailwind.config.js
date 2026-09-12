@@ -23,6 +23,32 @@ module.exports = {
       '6xl': '10rem',
     },
     extend: {
+      /**
+       * The stacking ladder. Every layer that escapes its parent — anything `fixed` or portalled —
+       * takes a rung here instead of picking a number, which is how the app ended up with values
+       * from 0 to 100000 that only made sense pairwise.
+       *
+       * Plain `z-1`, `z-2`, `z-10` stay right for stacking *inside* a component: those form their
+       * own context and never compete with these.
+       */
+      zIndex: {
+        scene: '0', // the song's background image, behind everything
+        'scene-hint': '4', // skip intro/outro prompts
+        'scene-overlay': '10', // the blurred song backdrop while singing
+        'scene-cover': '20', // the still that covers the game overlay until video starts
+        hud: '30', // in-game readouts: live leaderboard, status text
+        'hud-blocking': '40', // takes the screen: countdown, readiness, the mobile action bar
+        chrome: '50', // sticky headers and bars belonging to a screen
+        'expanded-backdrop': '60', // the expanded song preview and its scrim
+        expanded: '61',
+        help: '70', // the keyboard help panel
+        toolbar: '80', // the dev toolbar
+        'modal-backdrop': '90', // dialogs, over everything a screen owns
+        modal: '91',
+        'modal-top-backdrop': '92', // a dialog or sheet opened from inside another
+        'modal-top': '93',
+        toast: '100', // connection status — must outrank even a modal
+      },
       boxShadow: {
         focusable: 'inset 0 0 0 1px rgba(255,165,0,.25), inset 0px 0px 40px 2px rgba(0,0,0,0.2)',
       },

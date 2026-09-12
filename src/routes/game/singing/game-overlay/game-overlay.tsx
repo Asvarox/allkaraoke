@@ -131,7 +131,7 @@ const GameOverlay = forwardRef(function (
           <script id="plane-vs" type="x-shader/x-vertex">
             {vertShader}
           </script>
-          <div id="canvas" className="absolute inset-0 z-[10000] h-full w-full" />
+          <div id="canvas" className="absolute inset-0 z-20 h-full w-full" />
         </>
       )}
       <div id="plane" className="absolute inset-0 h-full w-full" style={!effectsEnabled ? { opacity: 0 } : undefined}>

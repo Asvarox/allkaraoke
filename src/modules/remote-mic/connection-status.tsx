@@ -34,6 +34,6 @@ export default function ConnectionStatus() {
   );
 }
 
-const Container = twx.div`typography pointer-events-none fixed right-0 bottom-0 z-[100000] flex gap-2.5 text-sm opacity-75 sm:p-1`;
+const Container = twx.div`typography z-toast pointer-events-none fixed right-0 bottom-0 flex gap-2.5 text-sm opacity-75 sm:p-1`;
 
 const Row = twx.div`tabular-nums`;

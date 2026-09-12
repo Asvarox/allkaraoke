@@ -21,4 +21,4 @@ export default function LogoIcon(props: HTMLProps<HTMLDivElement>) {
 const StyledLogo = twx.div`relative transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em]`;
 
 const Mic1 = twx.svg`h-[1em] w-[1em] transition-[300ms]`;
-const Mic2 = twx(Mic1)`absolute top-[0.1em] left-[0.22em] z-100 scale-x-[-1]`;
+const Mic2 = twx(Mic1)`absolute top-[0.1em] left-[0.22em] z-1 scale-x-[-1]`;

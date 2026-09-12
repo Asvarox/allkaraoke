@@ -19,7 +19,7 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
       {open && (
         <>
           <Backdrop
-            className="z-[20002]"
+            className="z-modal-top-backdrop"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className={cn('fixed right-0 bottom-0 left-0 z-[20003] rounded-t-2xl', dialogSurface)}
+            className={cn('z-modal-top fixed right-0 bottom-0 left-0 rounded-t-2xl', dialogSurface)}
             style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}>
             {/* Handle bar */}
             <div className="flex justify-center pt-3 pb-2">

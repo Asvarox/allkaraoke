@@ -161,7 +161,7 @@ export default function SongPreviewComponent({
       )}
 
       {/* Backdrop — only shown when expanded */}
-      {expanded && <Backdrop className="z-201" onClick={onExitKeyboardControl} />}
+      {expanded && <Backdrop className="z-expanded-backdrop" onClick={onExitKeyboardControl} />}
 
       <SongCard
         song={songPreview}
@@ -176,7 +176,7 @@ export default function SongPreviewComponent({
           // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
           // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
           expanded
-            ? `${dialogSurface} fixed inset-0 z-202 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
+            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
             : `absolute z-3 bg-slate-800 transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
               }`

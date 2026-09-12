@@ -278,7 +278,7 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
             '--song-list-padding-right': `${LIST_PADDING_PX}px`,
           } as React.CSSProperties
         }>
-        <div className="fixed top-0 right-0 left-0 z-100 flex flex-col border-b border-white/10 bg-slate-950/50 pt-2 pb-2 backdrop-blur-md">
+        <div className="z-chrome fixed top-0 right-0 left-0 flex flex-col border-b border-white/10 bg-slate-950/50 pt-2 pb-2 backdrop-blur-md">
           <div className="mx-auto flex w-full max-w-360 flex-col gap-2 pr-(--song-list-padding-right) pl-(--song-list-padding-left)">
             <Toolbar
               filters={filters}

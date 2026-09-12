@@ -15,7 +15,7 @@ function LeaderboardOverlay() {
 
   return (
     <Box
-      className="pointer-events-none fixed top-24 right-4 z-30 items-stretch gap-1 rounded-lg p-3"
+      className="z-hud pointer-events-none fixed top-24 right-4 items-stretch gap-1 rounded-lg p-3"
       data-test="online-leaderboard">
       {leaderboard.map((entry, index) => (
         <motion.div
