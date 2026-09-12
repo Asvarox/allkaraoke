@@ -1,0 +1,226 @@
+#ARTIST:Joji
+#TITLE:PIXELATED KISSES
+#CREATOR:tyromantaYT
+#BPM:399,9
+#YEAR:2025
+#VIDEO:v=SblNBrgLdvo
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:13867,246811702926
+#ALLKARAOKE_ID:joji-pixelated-kisses
+#ALLKARAOKE_SID:6295
+#ALLKARAOKE_LASTUPDATE:2026-09-09T21:01:55.049Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:109
+#MP3:Joji - PIXELATED KISSES.mp3
+#COVER:Joji - PIXELATED KISSES [CO].jpg
+#BACKGROUND:Joji - PIXELATED KISSES [BG].jpg
+: 27 6 11 Pi
+: 34 6 9 xe
+: 41 6 7 la
+: 48 5 6 ted 
+: 54 3 6 kis
+: 58 7 4 ses 
+: 66 5 6 got 
+: 72 5 4 me 
+: 78 5 6 go
+: 84 5 4 in’ 
+: 90 11 6 in
+: 102 12 6 sane
+- 114
+: 130 1 9 Re
+: 132 1 11 ~
+: 134 7 9 pli
+: 142 6 7 cate 
+: 149 5 6 this 
+: 155 5 6 mo
+: 161 2 6 ment
+: 164 2 4 ~ 
+: 167 7 6 from 
+: 175 4 6 a 
+: 180 2 6 mi
+: 183 2 7 ~l
+: 186 7 6 lion 
+: 194 8 6 miles 
+: 203 6 7 a
+: 210 8 9 way
+- 218
+: 234 2 9 Wai
+: 237 2 11 ~
+: 240 5 9 ting 
+: 246 6 7 for 
+: 253 3 6 a 
+: 257 7 6 se
+: 265 6 4 cond 
+: 272 7 6 ba
+: 280 3 4 by 
+: 284 7 6 ne
+: 292 3 4 ver 
+: 296 7 6 made 
+: 304 3 4 a 
+: 308 7 6 sound
+: 316 1 4 ~
+: 318 6 4 ~
+- 324
+* 326 4 4 If 
+* 331 4 6 you 
+* 336 7 11 ne
+* 344 3 9 ver 
+: 348 5 7 hear 
+: 354 5 6 from 
+: 360 6 6 me
+- 366
+: 376 5 6 All 
+: 382 2 6 the 
+: 385 3 4 sa
+: 389 7 6 tel
+: 397 3 4 lites 
+: 401 7 6 are
+: 409 3 4 ~ 
+: 413 7 6 down
+: 421 3 4 ~
+- 424
+: 425 6 6 Yeah 
+: 432 5 4 they’re 
+: 438 11 6 all 
+: 452 6 6 fuc
+: 459 3 4 kin’ 
+: 463 7 6 down
+: 471 15 7 ~
+- 486 515
+- 515
+: 542 8 7 Fal 
+: 551 3 4 lin’ 
+: 555 7 7 through 
+: 563 6 4 the 
+: 570 11 7 at
+: 582 11 9 mo
+: 594 11 2 sphere 
+: 606 11 2 right 
+: 618 12 2 now
+- 630
+: 631 6 2 Ba
+: 638 6 2 by 
+: 645 5 11 are 
+: 651 5 9 you 
+: 657 5 7 real
+: 663 4 6 ly 
+: 669 7 6 down
+: 677 7 7 ~?
+- 684 710
+- 710
+: 737 6 2 Ba
+: 744 6 2 by 
+: 751 5 11 are 
+: 757 5 9 you 
+: 763 5 7 real
+: 769 4 6 ly 
+: 775 7 6 down
+: 783 7 7 ~?
+- 790 827
+- 827
+: 854 6 11 Pi
+: 861 6 9 xe
+: 868 6 7 la
+: 875 5 6 ted 
+: 881 3 6 kis
+: 885 7 4 ses 
+: 893 5 6 got 
+: 899 5 4 me 
+: 905 5 6 go
+: 911 5 4 in’ 
+: 917 11 6 in
+: 929 12 6 sane
+- 941
+: 957 1 9 Re
+: 959 1 11 ~
+: 961 7 9 pli
+: 969 6 7 cate 
+: 976 5 6 this 
+: 982 5 6 mo
+: 988 2 6 ment
+: 991 2 4 ~ 
+: 994 7 6 from 
+: 1002 4 6 a 
+: 1007 2 6 mi
+: 1010 2 7 ~l
+: 1013 7 6 lion 
+: 1021 8 6 miles 
+: 1030 6 7 a
+: 1037 8 9 way
+- 1045
+: 1061 2 9 Wai
+: 1064 2 11 ~
+: 1067 5 9 ting 
+: 1073 6 7 for 
+: 1080 3 6 a 
+: 1084 7 6 se
+: 1092 6 4 cond 
+: 1099 7 6 ba
+: 1107 3 4 by 
+: 1111 7 6 ne
+: 1119 3 4 ver 
+: 1123 7 6 made 
+: 1131 3 4 a 
+: 1135 7 6 sound
+: 1143 1 4 ~
+: 1145 4 4 ~
+- 1149
+* 1152 4 4 If 
+* 1157 4 6 you 
+* 1162 7 11 ne
+* 1170 3 9 ver 
+: 1174 5 7 hear 
+: 1180 5 6 from 
+: 1186 6 6 me
+- 1192
+: 1203 5 6 All 
+: 1209 2 6 the 
+: 1212 3 4 sa
+: 1216 7 6 tel
+: 1224 3 4 lites 
+: 1228 7 6 are
+: 1236 3 4 ~ 
+: 1240 7 6 down
+: 1248 3 4 ~
+- 1251
+: 1252 6 6 Yeah 
+: 1259 5 4 they’re 
+: 1265 11 6 all 
+: 1279 6 6 fuc
+: 1286 3 4 kin’ 
+: 1290 7 6 down
+: 1298 15 7 ~
+- 1313 1342
+- 1342
+: 1369 8 7 Fal
+: 1378 3 4 lin’ 
+: 1382 7 7 through 
+: 1390 6 4 the 
+: 1397 11 7 at
+: 1409 11 9 mo
+: 1421 11 2 sphere 
+: 1433 11 2 right 
+: 1445 12 2 now
+- 1457
+: 1458 6 2 Ba
+: 1465 6 2 by 
+: 1472 5 11 are 
+: 1478 5 9 you 
+: 1484 5 7 real
+: 1490 4 6 ly 
+: 1496 7 6 down
+: 1504 7 7 ~?
+- 1511 1537
+- 1537
+: 1564 6 2 Ba
+: 1571 6 2 by 
+: 1578 5 11 are 
+: 1584 5 9 you 
+: 1590 5 7 real
+: 1596 4 6 ly 
+: 1602 7 6 down
+: 1610 7 7 ~?
+E
