@@ -17,11 +17,11 @@ const sampleIcons: IconName[] = [
 
 function GalleryTemplate() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-950 p-8 text-white">
+    <div className="text-default flex min-h-screen items-center justify-center bg-slate-950 p-8">
       <div className="flex w-full max-w-5xl flex-col gap-8">
         <div>
           <h1 className="text-2xl font-semibold">AKUI Icon</h1>
-          <p className="text-sm text-white/60">
+          <p className="text-default/60 text-sm">
             A thin wrapper around <code>@iconify-icon/react</code> — the only place in the app allowed to import it
             directly. Pass any iconify icon identifier via the <code>icon</code> prop.
           </p>
@@ -59,7 +59,7 @@ function GalleryTemplate() {
 }
 
 export default {
-  title: 'AKUI/Icon',
+  title: 'Components/Icon',
   component: Icon,
   parameters: {
     layout: 'fullscreen',

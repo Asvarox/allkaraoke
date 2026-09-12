@@ -6,7 +6,7 @@ import { Flag } from '~/modules/elements/flag';
 import { Select, SelectOption } from './select';
 
 export default {
-  title: 'AKUI/Select',
+  title: 'Components/Select',
   component: Select,
 } as Meta;
 

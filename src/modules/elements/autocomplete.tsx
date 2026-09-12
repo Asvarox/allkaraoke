@@ -8,11 +8,13 @@ import {
   useRef,
   useState,
 } from 'react';
-import { twc, TwcComponentProps } from 'react-twc';
+import { TwcComponentProps } from 'react-twc';
 
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
+import { twx } from '~/utils/twx';
 
 interface Props extends ComponentProps<typeof Input> {
   label: ReactNode;
@@ -127,13 +129,13 @@ export const Autocomplete = ({
 
 Autocomplete.displayName = 'Autocomplete';
 
-const Container = twc.div`relative`;
+const Container = twx.div`relative`;
 
-const AutocompleteMenu = twc.div`absolute z-2 mt-[0.1em] max-h-[6.4em] w-full overflow-y-auto bg-black`;
+const AutocompleteMenu = twx.div`absolute z-2 mt-[0.1em] max-h-[6.4em] w-full overflow-y-auto ${dialogSurface}`;
 
-const AutocompleteMenuitem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
+const AutocompleteMenuitem = twx.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
   'typography cursor-pointer truncate overflow-hidden p-[0.3em] whitespace-nowrap',
-  props.$focused ? 'text-active' : 'text-white',
+  props.$focused ? 'text-active' : 'text-default',
 ]);
 
 interface TestWrapperProps {

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { twc } from 'react-twc';
 import Typewriter from 'typewriter-effect';
 
 import { ButtonLink } from '~/modules/elements/akui/button';
@@ -57,19 +56,19 @@ function ClassicLanding() {
         <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <GithubRibbon />
-      <div className="mobile:w-full mobile:h-auto landscap:w-full landscap:flex-row mx-auto flex min-h-screen w-[72rem] flex-col items-stretch justify-center gap-4 [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
-        <div className="mobile:hidden flex justify-center gap-6 text-6xl">
+      <div className="mx-auto flex min-h-screen w-[72rem] flex-col items-stretch justify-center gap-4 max-lg:h-auto max-lg:w-full max-lg:landscape:flex-row [&_a]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)] [&_strong]:[text-shadow:_0_0_5rem_var(--tw-shadow-color)]">
+        <div className="flex justify-center gap-6 text-6xl max-lg:hidden">
           <LogoIcon />
           <Logo />
         </div>
         <SmoothLink to={nextPage}>
-          <PlayButton data-test="enter-the-game" className="mobile:hidden h-26">
+          <PlayButton data-test="enter-the-game" className="h-26 max-lg:hidden">
             Enter the game
           </PlayButton>
         </SmoothLink>
-        <Box className="mobile:flex-col landscap:flex-1 mobile:p-4 mobile:rounded-[0] flex-row gap-6 bg-black/60 p-10 [&_hr]:my-3">
+        <Box className="flex-row gap-6 bg-black/60 p-10 max-lg:flex-col max-lg:rounded-[0] max-lg:p-4 max-lg:landscape:flex-1 [&_hr]:my-3">
           <StatSegment className="h-full justify-between">
-            <div className="mobile:text-md text-justify text-lg leading-normal">
+            <div className="max-lg:text-md text-justify text-lg leading-normal">
               <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
               <strong>SingStar</strong>. Sing along to your favorite songs and compete with your friends, all through
               the browser! Updated almost weekly with new songs and features.
@@ -122,7 +121,7 @@ function ClassicLanding() {
               </StatText>
             </div>
           </StatSegment>
-          <StatSegment className="mobile:flex-row landscap:hidden mobile:gap-2 gap-10">
+          <StatSegment className="gap-10 max-lg:flex-row max-lg:gap-2 max-lg:landscape:hidden">
             <Screenshot
               src={screenshot1}
               alt="Song list screen"
@@ -131,16 +130,16 @@ function ClassicLanding() {
             <Screenshot src={screenshot2} alt="In-game screen" className="[box-shadow:_0_0_6rem_rgb(19,19,19)]" />
           </StatSegment>
         </Box>
-        <Typography className="text-md mobile:hidden text-right">
+        <Typography className="text-md text-right max-lg:hidden">
           Using this device as remote microphone?{' '}
           <SmoothLink to="remote-mic/">
             <a data-test="join-existing-game">Join existing game</a>
           </SmoothLink>
         </Typography>
-        <div className="landscap:flex-1 flex flex-col justify-stretch">
-          <div className="landscap:fixed top-0 right-0 left-[calc(50vw+1rem)] flex flex-col gap-6">
+        <div className="flex flex-col justify-stretch max-lg:landscape:flex-1">
+          <div className="top-0 right-0 left-[calc(50vw+1rem)] flex flex-col gap-6 max-lg:landscape:fixed">
             <SmoothLink to="remote-mic/">
-              <PlayButton data-test="join-existing-game" className="mobile:flex hidden h-28">
+              <PlayButton data-test="join-existing-game" className="hidden h-28 max-lg:flex">
                 <span className="text-lg">
                   Join game
                   <div className="text-sm">
@@ -150,7 +149,7 @@ function ClassicLanding() {
               </PlayButton>
             </SmoothLink>
             <SmoothLink to="quick-setup/">
-              <PlayButton data-test="enter-the-game" className="mobile:flex hidden h-28 !text-lg">
+              <PlayButton data-test="enter-the-game" className="hidden h-28 !text-lg max-lg:flex">
                 Start new game
               </PlayButton>
             </SmoothLink>
@@ -161,13 +160,13 @@ function ClassicLanding() {
   );
 }
 
-const StatText = twc.div`mobile:text-md text-lg`;
-const StatSubText = twc.div`text-md mobile:text-sm pt-1 text-right [&_.Typewriter]:inline`;
+const StatText = twx.div`max-lg:text-md text-lg`;
+const StatSubText = twx.div`text-md pt-1 text-right max-lg:text-sm [&_.Typewriter]:inline`;
 
-const StatSegment = twc.div`typography flex flex-1 flex-col justify-center text-xl`;
+const StatSegment = twx.div`typography flex flex-1 flex-col justify-center text-xl`;
 
-const Screenshot = twc.img`shadow-5 mobile:w-[calc(50vw_-_1rem)] aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
+const Screenshot = twx.img`shadow-5 aspect-video w-full rounded-md border-1 border-black/50 object-cover max-lg:w-[calc(50vw_-_1rem)]`;
 
-const PlayButton = twx(ButtonLink)`mobile:text-2xl subtle-focus w-full bg-black/60 px-4 py-4 text-5xl`;
+const PlayButton = twx(ButtonLink)`subtle-focus w-full px-4 py-4 text-5xl max-lg:text-2xl`;
 
 export default ClassicLanding;

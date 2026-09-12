@@ -1,10 +1,11 @@
 import dayjs from 'dayjs';
-import { twc, TwcComponentProps } from 'react-twc';
+import { TwcComponentProps } from 'react-twc';
 
 import { GAME_MODE } from '~/interfaces';
 import { Button } from '~/modules/elements/akui/button';
 import { Menu } from '~/modules/elements/akui/menu';
 import Typography from '~/modules/elements/akui/primitives/typography';
+import { twx } from '~/utils/twx';
 
 import { PlayHistoryEntry } from './use-play-history';
 
@@ -99,10 +100,10 @@ export function PlayEntryCard({ entry, isExpanded, focused, onClick, 'data-focus
   );
 }
 
-const ThumbnailBase = twc.div<{ $expanded: boolean } & TwcComponentProps<'div'>>((props) => [
+const ThumbnailBase = twx.div<{ $expanded: boolean } & TwcComponentProps<'div'>>((props) => [
   'mt-1 mr-1 aspect-video w-32 shrink-0 self-start rounded-sm object-cover',
   props.$expanded ? 'rounded-tr-md' : 'rounded-r-md',
 ]);
 
 // Used multiple times (mode + completion + one per player score) → TWC
-const DetailRow = twc(Typography)`flex justify-between text-sm`;
+const DetailRow = twx(Typography)`flex justify-between text-sm`;

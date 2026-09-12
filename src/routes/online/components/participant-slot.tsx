@@ -113,7 +113,7 @@ function ParticipantSlot({
           {showTags && (
             <>
               {isSelf && (
-                <Tag className="bg-black text-white" data-test="participant-self">
+                <Tag className="text-default bg-black" data-test="participant-self">
                   you
                 </Tag>
               )}

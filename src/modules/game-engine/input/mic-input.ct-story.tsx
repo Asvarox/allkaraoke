@@ -12,7 +12,7 @@ export const MicInputCtStory = () => {
   }, []);
   return (
     <div>
-      <h1>Just adding MicInput to the window</h1>
+      <h1 className="text-2xl">Just adding MicInput to the window</h1>
     </div>
   );
 };

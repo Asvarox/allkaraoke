@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { PropsWithChildren } from 'react';
 import { createPortal } from 'react-dom';
-import { twc } from 'react-twc';
+
+import { Backdrop } from '~/modules/elements/akui/backdrop';
 interface Props extends PropsWithChildren {
   open: boolean;
   onClose?: () => void;
@@ -9,17 +10,17 @@ interface Props extends PropsWithChildren {
   // which ensures it escapes any parent stacking contexts or overflow:hidden containers.
   withPortal?: boolean;
   /**
-   * Which stacking layer this modal claims. `nested` is for a modal opened *from* another modal (a
-   * confirmation over a pause menu): a portal alone doesn't help there, because the modal underneath
-   * sits at the base layer's content z-index and would render on top of the new backdrop — leaving
+   * Which rung of the stacking ladder this modal claims. `nested` is for a modal opened *from*
+   * another modal (a confirmation over a pause menu): a portal alone doesn't help there, because the
+   * modal underneath sits on `modal` and would render on top of a second `modal-backdrop` — leaving
    * the confirmation looking like it has no background at all.
    */
   level?: 'base' | 'nested';
 }
 
 const LEVELS = {
-  base: { backdrop: 'z-[20000]', content: 'z-[20001]' },
-  nested: { backdrop: 'z-[20002]', content: 'z-[20003]' },
+  base: { backdrop: 'z-modal-backdrop', content: 'z-modal' },
+  nested: { backdrop: 'z-modal-top-backdrop', content: 'z-modal-top' },
 } as const;
 
 export default function Modal({ children, open, onClose, withPortal = false, level = 'base' }: Props) {
@@ -54,7 +55,3 @@ export default function Modal({ children, open, onClose, withPortal = false, lev
 
   return withPortal ? createPortal(content, document.body) : content;
 }
-
-const Backdrop = twc(
-  motion.div,
-)`fixed top-0 left-0 h-screen w-screen bg-black/75 [background-image:radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] [background-size:10px_10px] backdrop-blur-[20px]`;

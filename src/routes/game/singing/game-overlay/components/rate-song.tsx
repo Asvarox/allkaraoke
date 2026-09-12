@@ -76,7 +76,7 @@ export default function RateSong({ register, onExit, onBack, song, isUnverifiedS
 
   return (
     <>
-      <Menu data-test={'rate-song-container'} title="Is the song OK?">
+      <Menu data-test={'rate-song-container'} title="Is the song OK?" modal>
         <Menu.SubHeader>If there&#39;s something wrong with the song, let me know so I can fix it</Menu.SubHeader>
         <NavCheckbox
           nav={register}

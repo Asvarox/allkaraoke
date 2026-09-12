@@ -1,8 +1,8 @@
 import { HTMLProps, useContext } from 'react';
-import { twc } from 'react-twc';
 
 import { BackgroundContext } from '~/modules/elements/background-context';
 import { MicIconBlue, MicIconRed } from '~/modules/elements/mic-icon';
+import { twx } from '~/utils/twx';
 
 export default function LogoIcon(props: HTMLProps<HTMLDivElement>) {
   const { theme } = useContext(BackgroundContext);
@@ -18,7 +18,7 @@ export default function LogoIcon(props: HTMLProps<HTMLDivElement>) {
   );
 }
 
-const StyledLogo = twc.div`relative transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em]`;
+const StyledLogo = twx.div`relative transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em]`;
 
-const Mic1 = twc.svg`h-[1em] w-[1em] transition-[300ms]`;
-const Mic2 = twc(Mic1)`absolute top-[0.1em] left-[0.22em] z-100 scale-x-[-1]`;
+const Mic1 = twx.svg`h-[1em] w-[1em] transition-[300ms]`;
+const Mic2 = twx(Mic1)`absolute top-[0.1em] left-[0.22em] z-1 scale-x-[-1]`;

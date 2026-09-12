@@ -3,6 +3,7 @@ import CountUp from 'react-countup';
 
 import { HighScoreEntity, SingSetup } from '~/interfaces';
 import { Badge } from '~/modules/elements/akui/badge';
+import Box from '~/modules/elements/akui/primitives/box';
 import styles from '~/modules/game-engine/drawing/styles';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { formatter } from '~/routes/game/singing/game-overlay/components/score-text';
@@ -52,18 +53,14 @@ function PlayerScoreView({
   const isWinner = revealHighScore && playerScore === highestScore;
 
   return (
-    <div
-      className={cn(
-        'relative flex flex-col items-center gap-0 bg-black/50 px-2 py-1 transition-all ease-in-out',
-        revealHighScore ? '' : 'mb-4 2xl:mb-6',
-      )}>
+    <Box className={cn('relative px-2 py-1 transition-all ease-in-out', revealHighScore ? '' : 'mb-4 2xl:mb-6')}>
       <div className="flex w-full flex-1">
         <div
           data-win={revealHighScore && playerScore === highestScore}
           data-test={`player-${playerNumber}-score`}
           data-score={Math.floor(playerScore)}
           className={cn(
-            'typography text-md flex flex-1 justify-between bg-transparent text-white transition-[font-size,color] duration-400 ease-in-out 2xl:text-xl',
+            'typography text-md flex flex-1 justify-between bg-transparent transition-[font-size,color] duration-400 ease-in-out 2xl:text-xl',
             isWinner ? 'text-active text-lg 2xl:text-2xl' : '',
           )}>
           <span
@@ -86,7 +83,7 @@ function PlayerScoreView({
         )}>
         High score!
       </Badge>
-    </div>
+    </Box>
   );
 }
 

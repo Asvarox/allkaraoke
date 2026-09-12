@@ -16,8 +16,8 @@ export default function SongPage({ songData, background, width, height, children
       <BackgroundImage video={songData.video} blur />
       {background && <div className="fixed inset-0">{background}</div>}
 
-      <div className="relative mx-auto flex h-full max-w-440 flex-col px-4 text-white">
-        <div className="pointer-events-none mb-4 flex flex-col items-start gap-1 text-white">
+      <div className="text-default relative mx-auto flex h-full max-w-440 flex-col px-4">
+        <div className="text-default pointer-events-none mb-4 flex flex-col items-start gap-1">
           <ContentElement className="text-active mt-2 text-lg lg:text-xl 2xl:mt-5 2xl:text-5xl">
             {songData.title}
           </ContentElement>
@@ -35,13 +35,15 @@ export default function SongPage({ songData, background, width, height, children
   );
 }
 
+/** Title, artist and credit on the song page. `text-shadow-legible` rather than a plate behind the
+ * text: the background is the song's own video, and covering it defeats the point of showing it. */
 export const ContentElement = ({ className, ...restProps }: React.ComponentProps<'span'>) => (
-  <span className={clsx('typography inline-block bg-black/50 px-5 py-0.5', className)} {...restProps} />
+  <span className={clsx('typography inline-block text-shadow-legible', className)} {...restProps} />
 );
 
 const BackgroundImage = ({ blur, video }: { blur: boolean; video: string }) => (
   <div
-    className={clsx('fixed inset-0 z-0 bg-cover bg-center', blur ? 'blur-sm' : undefined)}
+    className={clsx('fixed inset-0 z-scene bg-cover bg-center', blur ? 'blur-sm' : undefined)}
     style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${video}/hqdefault.jpg')` }}
   />
 );

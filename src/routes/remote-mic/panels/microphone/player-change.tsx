@@ -11,9 +11,11 @@ import PlayerNumberCircle from '~/routes/remote-mic/components/player-number-cir
 
 interface Props {
   playerNumber: PlayerNumber | null;
+  /** Placement is the caller's — this sits inside the mic pill, which owns its own layout. */
+  className?: string;
 }
 
-export default memo(function PlayerChange({ playerNumber }: Props) {
+export default memo(function PlayerChange({ playerNumber, className }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -29,8 +31,8 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
   return (
     <>
       <MenuButton
-        size="small"
-        className="absolute right-4 bottom-4 z-1 p-4"
+        size="mini"
+        className={className}
         onClick={() => setIsOpen(true)}
         data-test="change-player"
         data-joined={joined}

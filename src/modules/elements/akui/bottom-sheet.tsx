@@ -1,7 +1,10 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { PropsWithChildren, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { twc } from 'react-twc';
+
+import { Backdrop } from '~/modules/elements/akui/backdrop';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
+import { cn } from '~/utils/cn';
 
 export interface BottomSheetProps extends PropsWithChildren {
   open: boolean;
@@ -10,14 +13,13 @@ export interface BottomSheetProps extends PropsWithChildren {
   title?: ReactNode;
 }
 
-const Backdrop = twc(motion.div)`fixed inset-0 z-[20002] bg-black/60 backdrop-blur-sm`;
-
 export function BottomSheet({ open, onClose, title, children }: BottomSheetProps) {
   const sheet = (
     <AnimatePresence>
       {open && (
         <>
           <Backdrop
+            className="z-modal-top-backdrop"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -31,14 +33,14 @@ export function BottomSheet({ open, onClose, title, children }: BottomSheetProps
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 bottom-0 left-0 z-[20003] rounded-t-2xl border border-white/10 bg-slate-800"
+            className={cn('z-modal-top fixed right-0 bottom-0 left-0 rounded-t-2xl', dialogSurface)}
             style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}>
             {/* Handle bar */}
             <div className="flex justify-center pt-3 pb-2">
               <div className="h-1 w-10 rounded-full bg-white/30" />
             </div>
             {title && (
-              <div className="px-4 pb-2 text-sm font-bold tracking-widest text-white/50 uppercase">{title}</div>
+              <div className="text-default/50 px-4 pb-2 text-sm font-bold tracking-widest uppercase">{title}</div>
             )}
             {/* Content */}
             <div className="max-h-[60vh] overflow-y-auto px-4">{children}</div>

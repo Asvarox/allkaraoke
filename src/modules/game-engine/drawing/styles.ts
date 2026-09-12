@@ -116,7 +116,10 @@ const styles = {
     },
     text: {
       active: 'rgb(255, 165, 0)',
-      default: 'white',
+      // Tailwind's `slate-100`. Slightly off pure white: it's the colour the `typography` utility
+      // has always rendered, and now the single source both that utility and `text-default` read
+      // from, so "default text colour" has exactly one value across canvas and DOM.
+      default: 'oklch(96.8% 0.007 247.896)',
       inactive: 'grey',
     },
   },

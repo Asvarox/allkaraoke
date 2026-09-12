@@ -18,7 +18,7 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
       {'message' in errorObj ? (
         <>
           <span className="typography text-lg">The game crashed with following error</span>
-          <pre className="font-mono text-white">{errorObj.message as string}</pre>
+          <pre className="text-default font-mono">{errorObj.message as string}</pre>
         </>
       ) : (
         <span className="typography text-lg">The game crashed</span>

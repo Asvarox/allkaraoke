@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { twc } from 'react-twc';
 
 import useRemoteMicServerStatus from '~/modules/remote-mic/hooks/use-remote-mic-server-status';
 import isE2E from '~/modules/utils/is-e2-e';
+import { twx } from '~/utils/twx';
 
 export default function ConnectionStatus() {
   const [display, setDisplay] = useState<boolean | null>(null);
@@ -34,6 +34,6 @@ export default function ConnectionStatus() {
   );
 }
 
-const Container = twc.div`typography pointer-events-none fixed right-0 bottom-0 z-[100000] flex gap-2.5 text-sm opacity-75 sm:p-1`;
+const Container = twx.div`typography z-toast pointer-events-none fixed right-0 bottom-0 flex gap-2.5 text-sm opacity-75 sm:p-1`;
 
-const Row = twc.div`tabular-nums`;
+const Row = twx.div`tabular-nums`;

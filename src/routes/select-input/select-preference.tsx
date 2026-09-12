@@ -1,4 +1,3 @@
-import { twc } from 'react-twc';
 import { ValuesType } from 'utility-types';
 
 import { Badge } from '~/modules/elements/akui/badge';
@@ -8,6 +7,7 @@ import { MenuButton } from '~/modules/elements/menu';
 import { MicIconBlue, MicIconRed } from '~/modules/elements/mic-icon';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { twx } from '~/utils/twx';
 
 interface Props {
   onPreferenceSelected: (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => void;
@@ -160,13 +160,13 @@ const InputOptionButton = ({
       <OptionIconContainer className="flex w-20 items-center pl-4">{icon}</OptionIconContainer>
       <div className="flex w-full flex-col group-data-[focused=true]:gap-1">
         {name}
-        <span className="description mobile:text-xs max-h-0 overflow-clip text-sm transition-all duration-300 group-hover:max-h-10 group-data-[focused=true]:max-h-10">
+        <span className="description max-h-0 overflow-clip text-sm transition-all duration-300 group-hover:max-h-10 group-data-[focused=true]:max-h-10 max-lg:text-xs">
           {description}
         </span>
       </div>
       {recommended && <Badge className="right-8">Recommended</Badge>}
-      <div className="text-md mobile:text-sm flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right">
-        <Icon icon="ic:baseline-people-alt" className="!text-md !mobile:text-sm" />
+      <div className="text-md flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right max-lg:text-sm">
+        <Icon icon="ic:baseline-people-alt" className="!text-md !max-lg:text-sm" />
         <strong>{numOfPlayers}</strong>
       </div>
     </Menu.Button>
@@ -177,6 +177,6 @@ const InputOptionButton = ({
 // renders first, regardless of whether the pair is two `<iconify-icon>`s, two `<svg>`s (MicIconBlue/
 // MicIconRed), or a mix of both (MicIconBlue + an `<iconify-icon>`) — `first-of-type` would match
 // both elements independently once they're different tags.
-const OptionIconContainer = twc.div`relative [&_iconify-icon]:text-[#ff3636] [&_iconify-icon]:transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&>*:first-child]:absolute [&>*:first-child]:z-100 [&>*:first-child]:mt-[0.2em] [&>*:first-child]:ml-[0.35em] [&>*:first-child]:-scale-x-100 [&>*:first-child]:text-[#0099ff]`;
+const OptionIconContainer = twx.div`relative [&_iconify-icon]:text-[#ff3636] [&_iconify-icon]:transition-[300ms] [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:text-[#ff3636] [&_svg]:transition-[300ms] [&>*:first-child]:absolute [&>*:first-child]:z-1 [&>*:first-child]:mt-[0.2em] [&>*:first-child]:ml-[0.35em] [&>*:first-child]:-scale-x-100 [&>*:first-child]:text-[#0099ff]`;
 
 export default SelectPreference;

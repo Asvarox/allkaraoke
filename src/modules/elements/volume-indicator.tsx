@@ -20,14 +20,26 @@ const VolumeIndicatorBase = twx.div`pointer-events-none absolute top-0 right-0 z
 interface Props extends ComponentProps<typeof VolumeIndicatorBase> {
   playerNumber: PlayerNumber;
   volume: number;
+  /**
+   * How long the bar takes to travel to a new level. Match it to how often levels actually arrive:
+   * the default is the online publish interval, and the remote mic passes its own throttle instead.
+   */
+  transitionMs?: number;
   ref?: Ref<HTMLDivElement | null>;
 }
 
 /**
- * Volume bar driven by an explicitly supplied level, for singers whose audio isn't on this device
- * (online rooms report their own volume). For local mics use `PlayerMicCheck` instead.
+ * Volume bar driven by an explicitly supplied level, for singers whose audio isn't read on this
+ * device through `usePlayerMicData` — online rooms report their own volume, and the remote mic reads
+ * its own hardware. For a host-side local mic use `PlayerMicCheck` instead.
  */
-export const VolumeIndicator = ({ volume, playerNumber, ref, ...rest }: Props) => {
+export const VolumeIndicator = ({
+  volume,
+  playerNumber,
+  transitionMs = ONLINE_STATS_PUBLISH_MS,
+  ref,
+  ...rest
+}: Props) => {
   const percent = `${Math.min(1, volume * 20)}`;
   const color = usePlayerColor(playerNumber);
 
@@ -42,7 +54,7 @@ export const VolumeIndicator = ({ volume, playerNumber, ref, ...rest }: Props) =
           transform: `scaleX(${percent})`,
           // Reported levels land a few times a second, which without this reads as a bar hopping
           // between positions — a linear tween over one reporting interval turns it into a meter
-          transition: `transform ${ONLINE_STATS_PUBLISH_MS}ms linear`,
+          transition: `transform ${transitionMs}ms linear`,
           background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
         }}
       />

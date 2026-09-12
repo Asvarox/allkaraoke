@@ -1,9 +1,10 @@
-import { twc, TwcComponentProps } from 'react-twc';
-import { twMerge } from 'tailwind-merge';
+import { TwcComponentProps } from 'react-twc';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { MicIcon } from '~/modules/elements/mic-icon';
 import { PhoneTabs } from '~/routes/remote-mic/remote-mic';
+import { cn } from '~/utils/cn';
+import { twx } from '~/utils/twx';
 
 interface Props {
   active: PhoneTabs;
@@ -16,7 +17,7 @@ export default function BottomBar({ active, setActiveTab, className }: Props) {
     // Portrait: horizontal bar pinned to the bottom. Landscape: vertical rail on the left side
     // (the mic view turns into two columns there, so a bottom bar would eat the scarce height).
     <div
-      className={twMerge(
+      className={cn(
         'right-0 bottom-0 flex w-full origin-bottom-right items-stretch gap-[1px] bg-slate-700 landscape:h-full landscape:w-24 landscape:flex-col landscape:justify-end landscape:bg-black',
         className,
       )}>
@@ -48,12 +49,12 @@ export default function BottomBar({ active, setActiveTab, className }: Props) {
   );
 }
 
-const ItemContainer = twc.div<{ $active?: boolean } & TwcComponentProps<'div'>>((props) =>
+const ItemContainer = twx.div<{ $active?: boolean } & TwcComponentProps<'div'>>((props) =>
   [
     'flex flex-1 cursor-pointer flex-col items-center justify-center gap-1 border-t-2 bg-black p-1 text-xs landscape:flex-none landscape:gap-2 landscape:border-t-0 landscape:border-l-2 landscape:py-4',
     props.$active ? 'text-active border-active' : 'border-transparent text-[#cecece]',
   ].join(' '),
 );
 
-const ItemIcon = twc.div`[&_svg]:h-6 [&_svg]:w-6`;
-const ItemTitle = twc.div``;
+const ItemIcon = twx.div`[&_svg]:h-6 [&_svg]:w-6`;
+const ItemTitle = twx.div``;

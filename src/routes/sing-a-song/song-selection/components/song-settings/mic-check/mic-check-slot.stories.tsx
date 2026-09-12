@@ -95,7 +95,7 @@ function GalleryTemplate() {
 
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-slate-900 p-8">
-      <div className="typography flex w-150 flex-col gap-4 text-white">
+      <div className="typography flex w-150 flex-col gap-4">
         <div>
           <h1 className="text-2xl font-semibold">Mic Check Slot States</h1>
           <p className="text-sm text-stone-400">Disconnected, healthy, unstable, and dropped device states.</p>
@@ -121,7 +121,7 @@ function GalleryTemplate() {
 }
 
 export default {
-  title: 'Song Selection/Mic Check Slot',
+  title: 'Game/Song Selection/Mic Check Slot',
   component: MicCheckSlot,
   parameters: {
     layout: 'fullscreen',

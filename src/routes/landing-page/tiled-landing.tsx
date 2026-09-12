@@ -264,13 +264,11 @@ function TiledLanding() {
   );
 }
 
-// `twx` and not `twc`: the card's copies override the width these set, and only the tailwind-merge
-// flavour actually drops the class being overridden rather than leaving both in the list.
 const Screenshot = twx.img`shadow-5 aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
 
 // Orange rather than the app's usual dark button: this is the only screen with a single thing it
 // wants the visitor to do, and every other surface here is already a dark card.
-const PrimaryCta = twx(ButtonLink)`bg-active! text-md h-auto w-full py-4 text-shadow-[0px_0px_3px_#000000] lg:text-lg`;
+const PrimaryCta = twx(ButtonLink)`bg-active! text-md text-shadow-legible h-auto w-full py-4 lg:text-lg`;
 const SecondaryCta = twx(ButtonLink)`subtle-focus text-md h-auto w-full py-4 lg:text-lg`;
 
 export default TiledLanding;

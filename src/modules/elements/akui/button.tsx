@@ -1,36 +1,37 @@
 import { cloneElement, HTMLProps, isValidElement, PropsWithChildren, ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { ButtonSize, sizeToIconSize } from '~/modules/elements/akui/button-sizes';
 import useResponsiveValue from '~/modules/elements/akui/hooks/use-responsive-value';
 import { Icon, IconProps } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
+import { inactiveSurface, interactiveFocus, interactiveSurface } from '~/modules/elements/akui/surfaces';
 import { ResponsiveValue } from '~/modules/elements/akui/types';
 import isE2E from '~/modules/utils/is-e2-e';
+import { cn } from '~/utils/cn';
 import { twx } from '~/utils/twx';
 
 export type { ButtonSize } from '~/modules/elements/akui/button-sizes';
 
 const sizeToClass = {
   mini: 'h-10 text-md min-w-10',
-  small: 'h-[50px] text-lg mobile:text-md landscap:text-md min-w-[50px]',
-  regular: 'text-lg h-20 min-w-20 mobile:text-md mobile:h-16 mobile:min-w-16 landscap:text-md',
+  small: 'h-[50px] text-lg max-lg:text-md min-w-[50px]',
+  regular: 'text-lg h-20 min-w-20 max-lg:text-md max-lg:h-16 max-lg:min-w-16',
   large: 'h-20 text-xl min-w-20',
 };
 
 export const ButtonBase = twx(Box)((props) => {
   return [
-    `typography shadow-focusable pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 bg-black/45 bg-black/55! px-3 font-bold uppercase duration-300`,
+    `typography ${interactiveSurface} pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 px-3 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
-      ? 'bg-active! scale-[1.025] text-shadow-[0px_0px_3px_#000000]'
+      ? 'bg-active! text-shadow-legible scale-[1.025]'
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
-    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? 'subtle-focus' : '',
-    !isE2E() && !props['disabled'] && !props['data-read-only'] ? 'hover:subtle-focus' : '',
+    !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
+    !isE2E() && !props['disabled'] && !props['data-read-only'] ? `hover:${interactiveFocus}` : '',
     props['disabled']
       ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500! text-gray-300!'
       : 'active:bg-active',
-    props['data-inactive'] ? 'line-through! decoration-white opacity-25' : 'no-underline!',
+    props['data-inactive'] ? `${inactiveSurface} line-through!` : 'no-underline!',
     props['data-read-only'] ? 'cursor-default! active:bg-black/75' : '',
     sizeToClass[(props['data-size'] as keyof typeof sizeToClass) || 'regular'],
   ];
@@ -78,7 +79,7 @@ const additionalProps = ({ inactive, readOnly, focused, subtleFocused, leftIcon,
 const IconSlot = ({ size, children }: { size: ButtonSize; children?: ReactNode }) => (
   <span
     aria-hidden={children == null || undefined}
-    className={twMerge('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
+    className={cn('flex shrink-0 items-center justify-center', sizeToIconClass[size])}>
     {isValidElement<Partial<IconProps>>(children) && children.type === Icon
       ? cloneElement(children, { size: sizeToIconSize[size] })
       : children}
@@ -120,7 +121,7 @@ const ButtonContent = ({
           text centred inside a filled middle lands exactly where the old `justify-between` put it.
           `truncate` needs the shrink `min-w-0` here to have a bounded width to ellipsize against -
           without it the span would grow to fit its content instead of clipping. */}
-      <span className={twMerge('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
+      <span className={cn('min-w-0 flex-1 truncate', labelAlign === 'left' ? 'text-left' : 'text-center')}>
         {children}
       </span>
       {/* create gutter for icons only for full-width buttons */}
@@ -144,7 +145,7 @@ export const Button = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      className={cn(iconOnly && 'aspect-square px-0', className)}
       {...additionalProps(props)}
       as="button">
       <ButtonContent
@@ -174,7 +175,7 @@ export const ButtonLink = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={`${iconOnly ? 'aspect-square px-0' : ''} ${className}`}
+      className={cn(iconOnly && 'aspect-square px-0', className)}
       {...additionalProps(props)}
       as="a">
       <ButtonContent

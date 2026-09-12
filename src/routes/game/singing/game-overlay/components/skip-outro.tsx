@@ -65,7 +65,7 @@ function SkipOutro({ onSongEnd, isEnabled, onOpenPauseMenu }: Props) {
     <KeyboardNavContext value={register}>
       <Menu.HelpText
         {...skipNav}
-        className={`pointer-events-none fixed bottom-[15rem] z-[4] w-full p-2 text-center text-2xl transition-all duration-500 [text-shadow:0_0_2rem_black] ${shouldBeVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} `}
+        className={`z-scene-hint text-shadow-legible-lg pointer-events-none fixed bottom-[15rem] w-full p-2 text-center text-2xl transition-all duration-500 ${shouldBeVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} `}
         style={{ textShadow: '0 0 2rem black' }}
         data-test="skip-outro-info"
         data-visible={shouldBeVisible}>

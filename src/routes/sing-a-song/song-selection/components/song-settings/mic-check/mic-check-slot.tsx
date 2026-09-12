@@ -31,7 +31,7 @@ interface ShellProps extends Omit<ComponentProps<typeof Box>, 'children'> {
 
 const SIZES = {
   regular: 'h-14 gap-5 border px-2 py-2 text-lg',
-  compact: 'h-8 gap-2 rounded-md border-0 px-2 py-0.5 text-base',
+  compact: 'h-8 gap-2 rounded-md border-0 px-2 py-0.5 text-md',
 } as const;
 
 /**
@@ -53,7 +53,7 @@ export function MicCheckSlotShell({
     <Box
       {...props}
       className={`relative flex w-full items-center text-center transition-opacity ${SIZES[size]} ${
-        connected ? 'border-white text-white' : 'border-gray-600 bg-black text-gray-500 opacity-40'
+        connected ? 'text-default border-white' : 'border-gray-600 bg-black text-gray-500 opacity-40'
       } ${className ?? ''}`}>
       <span className="ph-no-capture absolute inset-0 z-1 flex items-center justify-center">{name}</span>
       {/* Badges stay visible for a dropped singer too — that's when knowing who dropped matters most */}

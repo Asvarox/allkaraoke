@@ -166,7 +166,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
           <NavButton
             name="select-inputs-button"
             size="small"
-            className="mobile:px-6"
+            className="max-lg:px-6"
             remoteIcon="settings"
             onClick={() => setShowModal(true)}>
             Setup mics
@@ -178,11 +178,11 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 can sit below the fold, so `sticky` alone wouldn't show it until the user scrolled
                 down past it. Pin it to the viewport instead so it's visible from the start.
                 Desktop's card never scrolls (sm:overflow-hidden), so this reverts to normal flow. */}
-            <div className="fixed inset-x-px bottom-0 z-40 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
+            <div className="z-hud-blocking fixed inset-x-px bottom-0 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
               <NavButton
                 name="play-song-button"
                 size="large"
-                className="mobile:px-10 mobile:h-10 mobile:text-md w-full flex-1 px-20 py-1 sm:w-auto"
+                className="max-lg:text-md w-full flex-1 px-20 py-1 max-lg:h-10 max-lg:px-10 sm:w-auto"
                 remoteIcon="play"
                 isDefault
                 onClick={handlePlay}>

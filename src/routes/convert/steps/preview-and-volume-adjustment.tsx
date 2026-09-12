@@ -80,7 +80,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
 
   return (
     <div className="flex w-full flex-col gap-2">
-      <h4>
+      <h4 className="text-lg">
         Set song preview (start: {msec(previewStart * 1000, internalPlayer)}, end:{' '}
         {msec(previewEnd * 1000, internalPlayer)})
       </h4>
@@ -104,10 +104,10 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
         />
       </div>
 
-      <h4>Adjust volume</h4>
+      <h4 className="text-lg">Adjust volume</h4>
       <div className="flex flex-col gap-10 lg:flex-row">
         <div className="flex flex-1 flex-col gap-2">
-          <h5>Song</h5>
+          <h5 className="text-md">Song</h5>
           <YouTube
             opts={{
               width: '100%',
@@ -128,7 +128,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           />
         </div>
         <div className="flex flex-1 flex-col gap-2">
-          <h5>Reference sound</h5>
+          <h5 className="text-md">Reference sound</h5>
           <p>Use the slider below to make the video volume roughly the same as this music.</p>
           <br />
           <audio
@@ -154,7 +154,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           />
         </div>
       </div>
-      <h5>Final Song Volume ({data.volume * 100})</h5>
+      <h5 className="text-md">Final Song Volume ({data.volume * 100})</h5>
       <div className="px-5">
         <Slider
           data-test="volume"

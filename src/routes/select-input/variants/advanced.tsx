@@ -65,7 +65,7 @@ function Advanced(props: Props) {
         ))}
         <hr />
         {micInputs.length > 1 && isChromium() && isWindows() && (
-          <h3>
+          <h3 className="text-lg">
             <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any problems, try using
             an alternative browser (eg. <strong>MS Edge</strong> or <strong>Firefox</strong>)
           </h3>

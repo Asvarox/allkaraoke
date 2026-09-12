@@ -1,5 +1,6 @@
 import { SVGProps } from 'react';
-import { twc } from 'react-twc';
+
+import { twx } from '~/utils/twx';
 
 interface Props extends SVGProps<SVGSVGElement> {
   christmas?: boolean;
@@ -16,9 +17,9 @@ export const MicIcon = ({ christmas, ...props }: Props) => (
   </svg>
 );
 
-export const MicIconBlue = twc(MicIcon)((props) => [
+export const MicIconBlue = twx(MicIcon)((props) => [
   props.christmas ? `fill-text-player-0-christmas` : `fill-text-player-0`,
 ]);
-export const MicIconRed = twc(MicIcon)((props) => [
+export const MicIconRed = twx(MicIcon)((props) => [
   props.christmas ? `fill-text-player-1-christmas` : `fill-text-player-1`,
 ]);

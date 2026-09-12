@@ -1,12 +1,14 @@
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
+import { statusSurface } from '~/modules/elements/akui/surfaces';
 import isChromium from '~/modules/utils/is-chromium';
+import { cn } from '~/utils/cn';
 
 function RecommendedBrowsers() {
   return (
     <>
       {!isChromium() && (
-        <Box className="w-full rounded-none bg-red-900 py-12 text-center">
+        <Box className={cn('w-full rounded-none py-12 text-center', statusSurface.warning)}>
           <Typography className="text-lg">
             This game is tested in <strong>Google Chrome</strong> and <strong>MS Edge</strong>.
           </Typography>

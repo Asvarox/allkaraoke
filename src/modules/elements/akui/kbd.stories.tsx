@@ -5,7 +5,7 @@ import { Kbd } from './kbd';
 import Typography from './primitives/typography';
 
 export default {
-  title: 'AKUI/Kbd',
+  title: 'Components/Kbd',
   component: Kbd,
 } as Meta<ComponentProps<typeof Kbd>>;
 
