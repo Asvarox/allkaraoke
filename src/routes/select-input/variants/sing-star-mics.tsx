@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 
 import { Menu } from '~/modules/elements/akui/menu';
+import { statusSurface } from '~/modules/elements/akui/surfaces';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
 import InputManager from '~/modules/game-engine/input/input-manager';
@@ -18,6 +19,7 @@ import InputSources from '~/routes/select-input/input-sources/index';
 import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
 import MicCheck from '~/routes/select-input/mic-check';
 import { MicSetupPreference } from '~/routes/settings/settings-state';
+import { cn } from '~/utils/cn';
 
 interface Props {
   onSetupComplete: (complete: boolean) => void;
@@ -117,7 +119,7 @@ function SingStarMics(props: Props) {
             {showAdvancedTip && (
               <>
                 {!listChanged && (
-                  <Menu.HelpText className="bg-red-900 p-2.5" data-test="advanced-tip">
+                  <Menu.HelpText className={cn('p-2.5', statusSurface.warning)} data-test="advanced-tip">
                     If they don&#39;t get detected, try{' '}
                     <button className="text-active cursor-pointer" onClick={() => props.changePreference('advanced')}>
                       Advanced
@@ -126,7 +128,7 @@ function SingStarMics(props: Props) {
                   </Menu.HelpText>
                 )}
                 {isChromium() && isWindows() && (
-                  <Menu.HelpText className="bg-red-900 p-2.5">
+                  <Menu.HelpText className={cn('p-2.5', statusSurface.warning)}>
                     <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any problems,
                     try using an alternative browser (eg. <strong>MS Edge</strong> or <strong>Firefox</strong>)
                   </Menu.HelpText>

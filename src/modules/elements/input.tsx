@@ -76,7 +76,7 @@ export const Input = ({
       className={cn(
         `relative scale-100!`,
         className,
-        validationError ? 'starting:outline-error/0 outline-error/100 outline outline-offset-2 duration-300' : '',
+        validationError ? 'starting:outline-danger/0 outline-danger/100 outline outline-offset-2 duration-300' : '',
       )}
       onClick={() => {
         inputRef.current?.focus();
@@ -94,7 +94,7 @@ export const Input = ({
         {validationError && (
           <motion.div
             exit={{ opacity: 0, right: '20%' }}
-            className="bg-error/75 text-default absolute right-0 bottom-[-1.5rem] rounded-md p-1 text-sm opacity-100 duration-300 starting:right-10 starting:opacity-0">
+            className="bg-danger/75 text-default absolute right-0 bottom-[-1.5rem] rounded-md p-1 text-sm opacity-100 duration-300 starting:right-10 starting:opacity-0">
             {validationError}️
           </motion.div>
         )}

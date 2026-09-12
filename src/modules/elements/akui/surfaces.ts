@@ -44,3 +44,22 @@ export const interactiveFocus = 'subtle-focus';
  * Not the same as `disabled`, which greys the fill out and removes pointer events entirely.
  */
 export const inactiveSurface = 'line-through decoration-white opacity-25';
+
+/** The four status roles. `danger` is broken or destructive, `warning` is degraded but working,
+ * `success` is confirmed good, `info` is in progress and not yet either. */
+export type StatusRole = 'danger' | 'warning' | 'success' | 'info';
+
+/**
+ * The surface a status message sits on: a tint of its own colour plus a slightly stronger border.
+ *
+ * Fill and border only — no text colour. Some callers want the label in the status colour too (a
+ * `Chip` does), but a paragraph of body copy inside a warning panel should stay readable body
+ * copy, so the two are kept separate and the caller adds `text-danger` and friends when it wants
+ * them.
+ */
+export const statusSurface: Record<StatusRole, string> = {
+  danger: 'bg-danger/20 border border-danger/30',
+  warning: 'bg-warning/20 border border-warning/30',
+  success: 'bg-success/20 border border-success/30',
+  info: 'bg-info/20 border border-info/30',
+};

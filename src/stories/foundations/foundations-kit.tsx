@@ -117,6 +117,54 @@ export function TextSample<T extends 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' =
 }
 
 /**
+ * Reports the contrast ratio between an element's own colour and the surface behind it, so a status
+ * page can show whether a role is actually readable rather than asserting that it is.
+ */
+export function ContrastReadout({ className, on }: { className: string; on: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [ratio, setRatio] = useState<number | null>(null);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    // Through a canvas, because `getComputedStyle` hands back `oklch(...)` verbatim these days —
+    // scraping numbers out of that string reads lightness and hue as if they were red and green.
+    // Painting a pixel makes the browser convert to sRGB properly.
+    const context = document.createElement('canvas').getContext('2d')!;
+    const parse = (value: string) => {
+      context.clearRect(0, 0, 1, 1);
+      context.fillStyle = value;
+      context.fillRect(0, 0, 1, 1);
+      const [r, g, b] = context.getImageData(0, 0, 1, 1).data;
+      return [r, g, b] as const;
+    };
+    const channel = (value: number) => {
+      const c = value / 255;
+      return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+    };
+    const luminance = ([r, g, b]: readonly number[]) => 0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b);
+
+    const foreground = luminance(parse(getComputedStyle(element).color));
+    const background = luminance(parse(getComputedStyle(element.parentElement!).backgroundColor));
+    const [high, low] = foreground > background ? [foreground, background] : [background, foreground];
+    setRatio(Math.round(((high + 0.05) / (low + 0.05)) * 100) / 100);
+  }, [className, on]);
+
+  return (
+    <div className={`flex items-center gap-3 rounded-md px-3 py-2 ${on}`}>
+      <span ref={ref} className={`${className} text-sm font-semibold`}>
+        The quick brown fox
+      </span>
+      <code className="ml-auto text-xs opacity-70">
+        {ratio === null ? '—' : `${ratio}:1`}
+        {ratio !== null && ratio < 4.5 ? ' ✗ AA' : ratio !== null ? ' ✓ AA' : ''}
+      </code>
+    </div>
+  );
+}
+
+/**
  * A busy ground to put translucent surfaces on. The in-game surfaces are translucent black over
  * whatever the song video happens to be showing, so judging them against flat grey says nothing
  * about how they actually read.

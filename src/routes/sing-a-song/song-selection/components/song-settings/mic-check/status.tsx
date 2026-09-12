@@ -27,13 +27,14 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
           className="m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white max-lg:h-4 max-lg:w-4"
         />
       ) : status === 'unavailable' ? (
-        <Icon icon="ic:baseline-error" size={6} data-test="status-unavailable" style={{ color: '#ff0000' }} />
+        <Icon icon="ic:baseline-error" size={6} data-test="status-unavailable" className="text-danger" />
       ) : (
         <Icon
           icon="ic:baseline-warning"
           size={6}
           data-test="status-unstable"
-          style={{ color: '#f89400', stroke: 'black' }}
+          className="text-warning"
+          style={{ stroke: 'black' }}
         />
       )}
       {status !== 'ok' ? (

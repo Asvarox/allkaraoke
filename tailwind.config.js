@@ -61,9 +61,22 @@ module.exports = {
           'player-1': styles.colors.players[1].text,
           'player-1-christmas': styles.colorSets.christmasRed.text,
         },
-        // Top-level, not nested under `text`, so the utilities read `text-error` / `bg-error` /
-        // `outline-error` rather than the doubled-up `text-text-error`.
-        error: 'red',
+        /**
+         * Status. Four roles, each one value used as text, icon fill, border and background — so
+         * they are colours rather than a composed class string.
+         *
+         * `warning` is amber, not orange, on purpose: `active` is orange and means *focused*, and
+         * the orange these used to be (`#f89400`) was close enough to it that an unstable-mic icon
+         * read as a focused control. Amber is far enough away to tell apart across a room.
+         *
+         * These are the `-400` steps of Tailwind's own ramps, which is where the contrast sits on
+         * both grounds the app uses — the dialog slate and the near-black in-game card. The `error`
+         * token this replaces was pure `red`, which misses AA against the dialog surface.
+         */
+        danger: 'oklch(70.4% 0.191 22.216)', // red-400
+        warning: 'oklch(82.8% 0.189 84.429)', // amber-400
+        success: 'oklch(79.2% 0.209 151.711)', // green-400
+        info: 'oklch(70.7% 0.165 254.624)', // blue-400
         active: styles.colors.text.active,
       },
       keyframes: {

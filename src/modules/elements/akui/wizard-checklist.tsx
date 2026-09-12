@@ -27,7 +27,7 @@ export default function WizardChecklist({ completedSteps, activeStep }: Props) {
             layoutId={`wizard-step-${id}`}
             layout
             transition={transition}
-            className="flex items-center gap-1.5 text-sm font-medium text-green-400">
+            className="text-success flex items-center gap-1.5 text-sm font-medium">
             <Icon icon="ic:outline-check-circle" className="text-md" />
             <span>{label}</span>
           </motion.div>

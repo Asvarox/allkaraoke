@@ -1,9 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 
 import { Chip } from '~/modules/elements/akui/chip';
+import { statusSurface } from '~/modules/elements/akui/surfaces';
 import styles, { colorSets } from '~/modules/game-engine/drawing/styles';
 
-import { Page, Row, Section, Swatch, TextSample } from './foundations-kit';
+import { ContrastReadout, Page, Row, Section, Swatch, TextSample } from './foundations-kit';
 
 export default {
   title: 'Foundations/Colours',
@@ -39,8 +40,9 @@ export const Colours: StoryFn = () => (
       title="Text"
       note={
         <>
-          Four semantic tokens carry every piece of text in the game. <code>text-default</code> is the one the{' '}
-          <code>typography</code> utility applies, so it is the colour text takes when nothing says otherwise.
+          Three semantic tokens carry the body of the game. <code>text-default</code> is the one the{' '}
+          <code>typography</code> utility applies, so it is the colour text takes when nothing says otherwise. Anything
+          reporting a state takes a status role instead — those are further down.
         </>
       }>
       <Row name="text-default" meta="body copy">
@@ -55,11 +57,6 @@ export const Colours: StoryFn = () => (
       </Row>
       <Row name="text-inactive" meta="the line not being sung">
         <TextSample property="color" className="text-inactive text-lg">
-          The quick brown fox
-        </TextSample>
-      </Row>
-      <Row name="text-error" meta="validation only">
-        <TextSample property="color" className="text-error text-lg">
           The quick brown fox
         </TextSample>
       </Row>
@@ -113,19 +110,60 @@ export const Colours: StoryFn = () => (
       title="Status"
       note={
         <>
-          Status colour lives in <code>Chip</code> rather than in loose Tailwind palette classes, so a warning looks the
-          same everywhere one appears. Each variant is a fill, a border and a text colour picked to hold contrast on the
-          dark ground.
+          Four roles, and every way the app reports state uses them: a validation error, a dropped mic, the remote
+          mic&rsquo;s connection dot, a browser advisory. <code>warning</code> is amber rather than orange because{' '}
+          <code>active</code> is orange and means <em>focused</em> — the orange these used to be was close enough that
+          an unstable-mic icon read as a focused control.
         </>
       }>
-      <Row name="Chip variants">
+      <Row name="text-danger" meta="broken, or about to destroy something">
+        <ContrastReadout className="text-danger" on="bg-slate-800" />
+      </Row>
+      <Row name="text-warning" meta="degraded but still working">
+        <ContrastReadout className="text-warning" on="bg-slate-800" />
+      </Row>
+      <Row name="text-success" meta="confirmed good">
+        <ContrastReadout className="text-success" on="bg-slate-800" />
+      </Row>
+      <Row name="text-info" meta="in progress, neither yet">
+        <ContrastReadout className="text-info" on="bg-slate-800" />
+      </Row>
+      <Row name="statusSurface[role]" meta="fill + border, no text colour">
+        <div className="flex flex-wrap gap-2">
+          {(['danger', 'warning', 'success', 'info'] as const).map((role) => (
+            <div key={role} className={`rounded-md px-3 py-2 text-sm ${statusSurface[role]}`}>
+              {role}
+            </div>
+          ))}
+        </div>
+      </Row>
+    </Section>
+
+    <Section
+      title="Chip"
+      note={
+        <>
+          Two axes on one component. The category variants label what something <em>is</em> — <code>green</code> here
+          means &ldquo;new&rdquo;, not &ldquo;good&rdquo; — and are picked to be told apart from each other. The status
+          variants take the roles above, so a chip reporting a failure matches every other failure in the app.
+        </>
+      }>
+      <Row name="category" meta="what it is">
         <div className="flex flex-wrap gap-2">
           <Chip variant="slate">slate</Chip>
           <Chip variant="zinc">zinc</Chip>
           <Chip variant="blue">blue</Chip>
           <Chip variant="esc">esc</Chip>
-          <Chip variant="green">green</Chip>
-          <Chip variant="orange">orange</Chip>
+          <Chip variant="green">new</Chip>
+          <Chip variant="orange">preview</Chip>
+        </div>
+      </Row>
+      <Row name="status" meta="how it is going">
+        <div className="flex flex-wrap gap-2">
+          <Chip variant="danger">danger</Chip>
+          <Chip variant="warning">warning</Chip>
+          <Chip variant="success">success</Chip>
+          <Chip variant="info">info</Chip>
         </div>
       </Row>
     </Section>

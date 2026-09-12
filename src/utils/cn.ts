@@ -28,7 +28,7 @@ export const CUSTOM_BOX_SHADOWS = ['shadow-focusable', 'subtle-focus'] as const;
 
 /**
  * `typography` (index.css) applies `text-default`, so for merging purposes it *is* a text colour and
- * has to sit in the same group as `text-active` / `text-inactive` / `text-error`. Otherwise both
+ * has to sit in the same group as `text-active` / `text-inactive` / `text-danger`. Otherwise both
  * survive the merge and only the stylesheet's own ordering decides the winner.
  *
  * Consequence worth knowing: `cn('typography', 'text-active')` now resolves to `text-active` alone,

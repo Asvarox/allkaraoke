@@ -21,7 +21,7 @@ describe('cn', () => {
     it.each([
       [['text-default', 'text-active'], 'text-active'],
       [['text-active', 'text-default'], 'text-default'],
-      [['text-error', 'text-inactive'], 'text-inactive'],
+      [['text-danger', 'text-inactive'], 'text-inactive'],
       [['bg-black/40', 'bg-black/55'], 'bg-black/55'],
       // `md` is a custom step in the font-size scale but still parses as a t-shirt size, so it
       // conflicts with the other sizes rather than being mistaken for a colour.
@@ -46,7 +46,7 @@ describe('cn', () => {
     it('resolves typography against an explicit text colour', () => {
       expect(merge('typography', 'text-active')).toBe('text-active');
       expect(merge('typography', 'text-inactive')).toBe('text-inactive');
-      expect(merge('typography', 'text-error')).toBe('text-error');
+      expect(merge('typography', 'text-danger')).toBe('text-danger');
     });
 
     it('lets typography override an earlier colour', () => {

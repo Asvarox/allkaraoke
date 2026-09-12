@@ -11,14 +11,15 @@ import useRemoteMicName from '~/routes/remote-mic/hooks/use-remote-mic-name';
 import Ping from '~/routes/remote-mic/panels/microphone/ping';
 import { ConnectionStatuses } from '~/routes/remote-mic/remote-mic';
 
-// Maps each connection status to a Tailwind text-color class for the status dot
+// The connection state machine, in the status roles. `uninitialised` and `connecting` are neither
+// good nor bad yet, so they stay the inactive grey rather than claiming a role.
 const dotColorByStatus: Record<ConnectionStatuses, string> = {
-  uninitialised: 'text-gray-400',
-  connecting: 'text-gray-400',
-  reconnecting: 'text-blue-400',
-  connected: 'text-green-400',
-  disconnected: 'text-red-400',
-  error: 'text-red-400',
+  uninitialised: 'text-inactive',
+  connecting: 'text-inactive',
+  reconnecting: 'text-info',
+  connected: 'text-success',
+  disconnected: 'text-danger',
+  error: 'text-danger',
 };
 
 interface Props {
