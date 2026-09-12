@@ -1,0 +1,177 @@
+#ARTIST:Patricio Vázquez
+#TITLE:Amor, solo en mi amor
+#CREATOR:subkei
+#BPM:230,68
+#YEAR:2003
+#PREVIEWSTART:65
+#VIDEO:v=bIh6QMAvGXc
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:8761,622854170279
+#ALLKARAOKE_ID:patricio-vazquez-amor-solo-en-mi-amor
+#ALLKARAOKE_SID:6313
+#ALLKARAOKE_LASTUPDATE:2026-09-12T02:27:45.928Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=orphen
+#ALLKARAOKE_PREVIEWEND:80
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:90
+#COVER:Patricio V疽quez - Amor, solo en mi amor (TV).jpg
+#MP3:Patricio V疽quez - Amor, solo en mi amor (TV).mp3
+#MEDLEYSTARTBEAT:577
+#MEDLEYENDBEAT:1118
+: 15 10 5 Quie
+: 27 2 4 ro es
+: 31 3 2 tar 
+: 35 3 4 a 
+: 40 5 5 tu 
+: 47 6 4 la
+: 55 6 -1 do
+- 61
+: 64 6 4 y 
+: 72 5 2 mos
+: 80 9 1 trar
+: 91 3 -3 te 
+: 95 3 -3 to
+: 99 3 -3 do 
+: 103 3 -3 lo 
+: 107 3 -3 que 
+: 112 2 4 sien
+: 115 4 5 ~
+: 120 3 4 ~
+: 126 16 2 to
+- 142 289
+- 289
+: 304 2 -3 Tú 
+: 308 1 -3 sa
+: 310 1 -3 bes
+: 312 1 -5 có
+: 314 2 -3 mo 
+: 318 1 -3 so
+: 320 3 -2 ~
+: 324 2 -3 mos 
+: 332 3 -3 en 
+: 336 1 0 re
+: 338 5 2 a
+: 344 1 0 li
+: 346 3 -3 ~
+: 350 7 -3 dad
+- 357
+: 368 2 -3 cuan
+: 372 1 -3 do 
+: 374 1 -3 nos 
+: 376 1 -5 en
+: 378 3 -3 con
+: 382 1 -3 tra
+: 384 2 -2 ~
+: 388 2 -3 mos 
+: 396 3 -3 con 
+: 400 5 -5 la 
+: 408 3 -7 pa
+: 414 8 -10 sión
+- 422
+: 432 2 -3 sa
+: 436 1 -3 bes 
+: 438 1 -3 que 
+: 440 1 -5 no 
+: 442 2 -3 pen
+: 446 1 -3 sa
+: 448 2 -2 ~
+: 452 2 -3 mos 
+: 460 2 -3 con 
+: 464 1 0 cla
+: 466 4 2 ~
+: 472 1 0 ri
+: 474 3 -3 ~
+: 478 9 -3 dad
+- 487
+: 496 2 -3 por
+: 500 1 -3 que el 
+: 502 1 -3 a
+: 504 1 -5 mor 
+: 506 2 -3 nos 
+: 510 1 -3 cie
+: 512 3 -2 ~
+: 516 3 -3 ga 
+: 523 3 -3 a 
+: 528 6 -5 la 
+: 536 4 -7 ver
+: 542 6 -10 dad
+- 548 577
+- 577
+: 592 19 2 La 
+: 612 2 0 luz
+: 616 3 2 frí
+: 620 3 5 a 
+: 624 6 4 i
+: 632 1 2 lu
+: 634 4 0 ~
+: 640 3 0 mi
+: 644 3 -2 ~
+: 648 6 -2 na 
+: 664 3 -3 to
+: 668 3 -3 do 
+: 672 3 -3 a 
+: 676 5 0 mi 
+: 684 3 -2 pa
+: 688 2 -3 ~
+: 692 14 -3 so
+- 706
+: 720 18 2 y 
+: 740 3 0 a
+: 744 2 2 ho
+: 748 3 5 ra 
+: 752 6 4 mi 
+: 760 6 2 si
+: 768 6 1 lue
+: 776 5 2 ta es
+: 784 1 2 tá
+: 786 13 4 ~ 
+: 804 3 2 en 
+: 808 3 1 la 
+: 812 3 2 pa
+: 816 35 4 red
+- 851 865
+- 865
+* 880 10 5 Quie
+* 892 3 4 ro es
+* 896 3 2 tar 
+* 900 3 4 a 
+* 905 5 5 tu 
+* 912 6 4 la
+* 920 6 -1 do
+- 926
+: 929 6 4 y 
+: 937 5 2 mos
+: 945 9 1 trar
+: 956 3 -3 te 
+: 960 3 -3 to
+: 964 3 -3 do 
+: 968 3 -3 lo 
+: 972 3 -3 que 
+* 977 2 4 sien
+* 980 4 5 ~
+* 985 3 4 ~
+* 991 8 2 to
+- 999
+: 1008 10 5 quie
+: 1019 2 4 ro 
+: 1024 3 2 siem
+: 1028 2 4 pre 
+: 1032 6 5 cu
+: 1040 6 4 brir
+: 1048 5 -1 te
+- 1053
+: 1056 6 4 pro
+: 1064 5 2 te
+: 1072 10 1 ger
+: 1084 3 -3 te 
+: 1088 3 -2 con 
+: 1092 2 -3 mis 
+: 1096 3 -5 pro
+: 1100 2 -3 pias 
+: 1104 7 5 ma
+: 1113 4 4 ~
+: 1119 14 2 nos
+E

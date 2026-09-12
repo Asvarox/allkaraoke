@@ -20376,6 +20376,33 @@
     "local": false
   },
   {
+    "id": "beyonce-feat-jay-z-drunk-in-love",
+    "title": "Drunk In Love",
+    "artist": "Beyoncé feat. Jay-Z",
+    "video": "p1JPKLa-Ofc",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.04,
+    "gap": 69332.2882445365,
+    "year": "2013",
+    "lastUpdate": "2026-09-12T02:27:38.677Z",
+    "genre": "Rap",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 382,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6304,
+    "tracksCount": 1,
+    "search": "beyoncefeatjayzdrunkinlove",
+    "local": false
+  },
+  {
     "id": "beyonce-grown-woman",
     "title": "Grown Woman",
     "artist": "Beyoncé",
@@ -36507,7 +36534,7 @@
     "gap": 9416.938898971566,
     "year": "2024",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-11T02:20:08.762Z",
+    "lastUpdate": "2026-09-10T05:46:25.469Z",
     "genre": "Alternative, Indie",
     "realBpm": 98,
     "volume": 1,
@@ -39267,6 +39294,33 @@
     "shortId": 1048,
     "tracksCount": 1,
     "search": "culchacandelahamma",
+    "local": false
+  },
+  {
+    "id": "culcha-candela-schoene-neue-welt",
+    "title": "Schöne neue Welt",
+    "artist": "Culcha Candela",
+    "video": "1EA7lgdTcLk",
+    "language": [
+      "German"
+    ],
+    "bpm": 278,
+    "gap": 15694.820143884892,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-12T02:27:42.215Z",
+    "realBpm": 139,
+    "volume": 0.97,
+    "author": "JaucheJochen",
+    "duration": 220,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6306,
+    "tracksCount": 1,
+    "search": "culchacandelaschoeneneuewelt",
     "local": false
   },
   {
@@ -47645,6 +47699,35 @@
     "local": false
   },
   {
+    "id": "disneys-la-reine-des-neiges-liberee-delivree",
+    "title": "Libérée, délivrée",
+    "artist": "Disney’s La Reine des Neiges",
+    "video": "vzgInDxzyGU",
+    "language": [
+      "French"
+    ],
+    "bpm": 264,
+    "gap": 17807.272727272728,
+    "year": "2013",
+    "lastUpdate": "2026-09-12T02:27:42.216Z",
+    "genre": "Soundtrack",
+    "videoGap": 3,
+    "realBpm": 137,
+    "volume": 1,
+    "author": "Disney",
+    "sourceUrl": "https://www.youtube.com/watch?v=vzgInDxzyGU",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6307,
+    "tracksCount": 1,
+    "search": "disneyslareinedesneigeslibereedelivree",
+    "local": false
+  },
+  {
     "id": "disneys-la-sirenita-bajo-el-mar",
     "title": "Bajo el Mar",
     "artist": "Disney’s La Sirenita",
@@ -47890,6 +47973,33 @@
     "shortId": 6288,
     "tracksCount": 1,
     "search": "disneysmulanreflexion",
+    "local": false
+  },
+  {
+    "id": "disneys-phineas-and-ferb-simp-squirrels-in-my-pants",
+    "title": "S.I.M.P. (Squirrels In My Pants)",
+    "artist": "Disney’s Phineas and Ferb",
+    "video": "gaFdUkf8Hik",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 10490,
+    "year": "2009",
+    "lastUpdate": "2026-09-12T02:27:47.298Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "lily",
+    "duration": 101,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6314,
+    "tracksCount": 1,
+    "search": "disneysphineasandferbsimpsquirrelsinmypants",
     "local": false
   },
   {
@@ -48450,6 +48560,34 @@
     "shortId": 1300,
     "tracksCount": 1,
     "search": "disneysthenightmarebeforechristmaswhatsthis",
+    "local": false
+  },
+  {
+    "id": "disneys-toy-story-5-taylor-swift-i-knew-it-i-knew-you",
+    "title": "I Knew It, I Knew You",
+    "artist": "Disney’s Toy Story 5 (Taylor Swift)",
+    "video": "hDU4GB1PTxc",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 5251.935483870968,
+    "year": "2026",
+    "lastUpdate": "2026-09-12T02:27:43.920Z",
+    "genre": "Country Pop",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=hDU4GB1PTxc",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6309,
+    "tracksCount": 1,
+    "search": "disneystoystory5taylorswiftiknewitiknewyou",
     "local": false
   },
   {
@@ -51939,7 +52077,7 @@
     "gap": 15961.900452488688,
     "year": "1975",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-11T02:20:09.030Z",
+    "lastUpdate": "2026-09-10T05:46:48.030Z",
     "genre": "Rock",
     "realBpm": 112,
     "volume": 1,
@@ -56252,6 +56390,33 @@
     "shortId": 1515,
     "tracksCount": 1,
     "search": "engenheirosdohawaiieraumgarotoquecomoeuamavaosbeatleseosrollingstones",
+    "local": false
+  },
+  {
+    "id": "enhypen-bite-me",
+    "title": "Bite Me",
+    "artist": "ENHYPEN",
+    "video": "wXFLzODIdUI",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 277,
+    "gap": 21047.270758122744,
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-09-12T02:27:45.495Z",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6310,
+    "tracksCount": 1,
+    "search": "enhypenbiteme",
     "local": false
   },
   {
@@ -81265,6 +81430,34 @@
     "local": false
   },
   {
+    "id": "jay-chou-yilu-xiang-bei",
+    "title": "Yīlù xiàng běi",
+    "artist": "Jay Chou",
+    "video": "OoM-97XZVLE",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 268.02,
+    "gap": 35462.612491605105,
+    "year": "2005",
+    "artistOrigin": "TW",
+    "lastUpdate": "2026-09-12T02:27:38.332Z",
+    "genre": "C-Pop",
+    "realBpm": 67,
+    "volume": 1,
+    "author": "WingXero",
+    "duration": 301,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6303,
+    "tracksCount": 1,
+    "search": "jaychouyiluxiangbei",
+    "local": false
+  },
+  {
     "id": "jay-sean-feat-lil-wayne-down",
     "title": "Down",
     "artist": "Jay Sean feat. Lil Wayne",
@@ -93634,6 +93827,34 @@
     "local": false
   },
   {
+    "id": "korn-here-to-stay",
+    "title": "Here To Stay",
+    "artist": "KoRn",
+    "video": "pr3x7tS__dE",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 74065,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-12T02:27:42.212Z",
+    "genre": "Nu Metal",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 306,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6305,
+    "tracksCount": 1,
+    "search": "kornheretostay",
+    "local": false
+  },
+  {
     "id": "korn-make-me-bad",
     "title": "Make Me Bad",
     "artist": "KoRn",
@@ -94520,6 +94741,34 @@
     "shortId": 2423,
     "tracksCount": 1,
     "search": "kygofeatmatynoyesstay",
+    "local": false
+  },
+  {
+    "id": "kygo-imagine-dragons-born-to-be-yours",
+    "title": "Born To Be Yours",
+    "artist": "Kygo & Imagine Dragons",
+    "video": "mOFvJVroAJE",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 6813.1578947368425,
+    "year": "2018",
+    "lastUpdate": "2026-09-12T02:27:47.493Z",
+    "genre": "Pop",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "https://www.youtube.com/watch?v=mOFvJVroAJE",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6315,
+    "tracksCount": 1,
+    "search": "kygoimaginedragonsborntobeyours",
     "local": false
   },
   {
@@ -104222,6 +104471,35 @@
     "shortId": 2644,
     "tracksCount": 1,
     "search": "losangelesazulescomotevoyaolvidar",
+    "local": false
+  },
+  {
+    "id": "los-angeles-azules-nicki-nicole-otra-noche",
+    "title": "Otra Noche",
+    "artist": "Los Ángeles Azules & NICKI NICOLE",
+    "video": "EOBE_uBSGYw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 368.04,
+    "gap": 20441.089012063905,
+    "year": "2022",
+    "lastUpdate": "2026-09-12T02:27:42.443Z",
+    "genre": "Cumbia",
+    "realBpm": 368.04,
+    "volume": 1,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20%C3%81ngeles%20Azules%20&%20NICKI%20NICOLE&cancion=Otra%20Noche",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6308,
+    "tracksCount": 1,
+    "search": "losangelesazulesnickinicoleotranoche",
     "local": false
   },
   {
@@ -121709,9 +121987,9 @@
       "Japanese"
     ],
     "bpm": 360,
-    "gap": 4970,
+    "gap": 5020,
     "year": "2013",
-    "lastUpdate": "2026-09-09T21:00:09.389Z",
+    "lastUpdate": "2026-09-11T06:15:07.426Z",
     "genre": "J-Pop",
     "realBpm": 167,
     "volume": 1,
@@ -132008,6 +132286,37 @@
     "local": false
   },
   {
+    "id": "patricio-vazquez-amor-solo-en-mi-amor",
+    "title": "Amor, solo en mi amor",
+    "artist": "Patricio Vázquez",
+    "video": "bIh6QMAvGXc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 230.68,
+    "gap": 8761.622854170279,
+    "year": "2003",
+    "lastUpdate": "2026-09-12T02:27:45.928Z",
+    "genre": "Anime",
+    "realBpm": 120,
+    "previewStart": 65,
+    "previewEnd": 80,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=orphen",
+    "duration": 90,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6313,
+    "tracksCount": 1,
+    "search": "patriciovazquezamorsoloenmiamor",
+    "local": false
+  },
+  {
     "id": "patty-pravo-pazza-idea",
     "title": "Pazza idea",
     "artist": "Patty Pravo",
@@ -142094,6 +142403,33 @@
     "local": false
   },
   {
+    "id": "rina-sawayama-xs",
+    "title": "XS",
+    "artist": "Rina Sawayama",
+    "video": "TO2c06p6m5w",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.96,
+    "gap": 30914.18362113182,
+    "year": "2020",
+    "lastUpdate": "2026-09-12T02:27:45.692Z",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "Rubn4",
+    "sourceUrl": "https://www.youtube.com/watch?v=TO2c06p6m5w",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6312,
+    "tracksCount": 1,
+    "search": "rinasawayamaxs",
+    "local": false
+  },
+  {
     "id": "ringo-sheena-honnou-instinct",
     "title": "Honnou -Instinct-",
     "artist": "Ringo Sheena",
@@ -147065,7 +147401,7 @@
     "gap": 26823.57299244297,
     "year": "1996",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-11T02:20:04.675Z",
+    "lastUpdate": "2026-09-10T05:45:38.937Z",
     "genre": "Classic Rock",
     "realBpm": 155,
     "volume": 1,
@@ -158328,6 +158664,33 @@
     "shortId": 4127,
     "tracksCount": 1,
     "search": "systemofadownattack",
+    "local": false
+  },
+  {
+    "id": "system-of-a-down-atwa",
+    "title": "Atwa",
+    "artist": "System of a Down",
+    "video": "g3x3qI5ttXg",
+    "language": [
+      "English"
+    ],
+    "bpm": 356,
+    "gap": 10438.76404494382,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-12T02:27:45.682Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "purgatorio",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6311,
+    "tracksCount": 1,
+    "search": "systemofadownatwa",
     "local": false
   },
   {
@@ -170974,7 +171337,7 @@
     "gap": 10953.750586029068,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-11T02:20:09.035Z",
+    "lastUpdate": "2026-09-10T05:47:01.162Z",
     "realBpm": 128,
     "volume": 1,
     "author": "lozboorman",
@@ -173809,6 +174172,33 @@
     "shortId": 4506,
     "tracksCount": 1,
     "search": "tomdicemeandmyguitar",
+    "local": false
+  },
+  {
+    "id": "tom-frager-lady-melody",
+    "title": "Lady Melody",
+    "artist": "Tom Frager",
+    "video": "3T4mB7V03T0",
+    "language": [
+      "French"
+    ],
+    "bpm": 340,
+    "gap": 9105.29411764706,
+    "year": "2009",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-09-12T02:27:37.805Z",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "davidlink",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6302,
+    "tracksCount": 1,
+    "search": "tomfragerladymelody",
     "local": false
   },
   {
