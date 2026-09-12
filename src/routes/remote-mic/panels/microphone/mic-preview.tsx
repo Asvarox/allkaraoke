@@ -31,7 +31,13 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
 
   return isVisible ? (
     <>
-      <VolumeIndicator volume={volume} playerNumber={playerNumber} isMicOn={isMicOn} isConnected={isConnected} />
+      <VolumeIndicator
+        className="h-28 items-end"
+        volume={volume}
+        playerNumber={playerNumber}
+        isMicOn={isMicOn}
+        isConnected={isConnected}
+      />
     </>
   ) : null;
 }

@@ -46,7 +46,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
         }}
       />
       <div className="text-default grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-black px-3 py-1.5">
-        <div className="text-md flex items-center gap-1.5 font-bold">
+        <div className="flex items-center gap-1.5 text-sm">
           <div
             className={`text-center ${dotColorByStatus[connectionStatus]} flex w-10 items-center justify-center`}
             aria-hidden="true">
@@ -59,7 +59,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
         {connectionStatus === 'connected' && (
           <button
             type="button"
-            className="ph-no-capture text-md text-default/90 flex max-w-[40vw] items-center gap-1 font-bold"
+            className="ph-no-capture text-default/90 flex max-w-[40vw] items-center gap-1 text-sm font-bold"
             onClick={() => setIsRenameModalOpen(true)}
             data-test="topbar-player-name">
             <span className="truncate">{name}</span>

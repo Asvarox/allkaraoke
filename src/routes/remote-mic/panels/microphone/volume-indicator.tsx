@@ -60,9 +60,10 @@ interface Props {
   playerNumber: PlayerNumber | null;
   isMicOn: boolean;
   isConnected: boolean;
+  className?: string;
 }
 
-export default function VolumeIndicator({ playerNumber, volume, isMicOn, isConnected }: Props) {
+export default function VolumeIndicator({ playerNumber, volume, isMicOn, isConnected, className = '' }: Props) {
   const permissions = usePermissions();
 
   return (
@@ -73,6 +74,7 @@ export default function VolumeIndicator({ playerNumber, volume, isMicOn, isConne
       action={
         isConnected && permissions === 'write' && <PlayerChange className="z-1 ml-auto" playerNumber={playerNumber} />
       }
+      className={className}
     />
   );
 }
