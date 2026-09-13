@@ -1,25 +1,14 @@
 import { expect } from '@playwright/test';
 
-import { enableNewLandingPage, enableNewMainMenu, mockLeaderboard, mockSongs } from '../helpers';
+import { mockLeaderboard, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
 import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
-visual('Landing page', async ({ page, makeScreenshot }) => {
-  await page.goto('/?e2e-test');
-  await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();
-
-  await makeScreenshot();
-});
-
-// The `new_landing_menu` experiment's landing side. The control is captured by 'Landing page'
-// above; both need a shot of their own for as long as the experiment runs.
-//
 // Captured against a full board, which is the state the rail is laid out for: it fills the height
 // the cards beside it set and scrolls the rest, and a board of five rows would never show whether
 // it still does.
-visual('Landing page tiled', async ({ page, context, viewport, makeScreenshot }) => {
-  await enableNewLandingPage({ page, context });
+visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
   await mockLeaderboard({ page, context });
 
   await page.goto('/?e2e-test');
@@ -34,25 +23,12 @@ visual('Landing page tiled', async ({ page, context, viewport, makeScreenshot })
 });
 
 visual('Main menu', async ({ page, context, makeScreenshot }) => {
-  // Both menus are captured against a full board, for the same reason the landing page is: the board
+  // The menu is captured against a full board, for the same reason the landing page is: the board
   // is the one thing on these screens whose height is the server's to decide.
   await mockLeaderboard({ page, context });
 
   // Navigating directly (rather than clicking through the landing page) avoids the landing page's
   // viewport-dependent CTA, which on narrow viewports leads to quick-setup instead of the main menu.
-  await page.goto('/menu/?e2e-test');
-  await expect(page.getByTestId('sing-a-song')).toBeVisible();
-  await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
-
-  await makeScreenshot();
-});
-
-// The `new_landing_menu` experiment's menu side. The control is captured by 'Main menu' above; both
-// need a shot of their own for as long as the experiment runs.
-visual('Main menu tiled', async ({ page, context, makeScreenshot }) => {
-  await enableNewMainMenu({ page, context });
-  await mockLeaderboard({ page, context });
-
   await page.goto('/menu/?e2e-test');
   await expect(page.getByTestId('sing-a-song')).toBeVisible();
   await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
