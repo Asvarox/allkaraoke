@@ -162,7 +162,11 @@ export function ScrollableContainer({
   }, []);
 
   return (
-    <div className={cn('relative overflow-hidden', isHorizontal ? 'min-w-0' : 'min-h-0', className)}>
+    // A column is a one-cell grid rather than a plain block: the scrollport is then stretched to
+    // whatever height this wrapper ends up with (a fixed one, or what is left of a flex parent)
+    // while still reporting its content height upwards, so a caller can cap the list without also
+    // having to give it a height. A percentage height on the scrollport can't do both.
+    <div className={cn('relative overflow-hidden', isHorizontal ? 'min-w-0' : 'grid min-h-0', className)}>
       {arrows && (
         <>
           <Arrow orientation={orientation} edge="start" visible={showStart} />
@@ -182,7 +186,7 @@ export function ScrollableContainer({
         }
         className={cn(
           'flex [scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
-          isHorizontal ? 'items-center gap-1 overflow-x-auto' : 'h-full flex-col overflow-y-auto',
+          isHorizontal ? 'items-center gap-1 overflow-x-auto' : 'min-h-0 flex-col overflow-y-auto',
           contentClassName,
         )}>
         {children}
