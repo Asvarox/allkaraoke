@@ -9,6 +9,7 @@ import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
+import { PostHogProvider } from 'posthog-js/react';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { v4 } from 'uuid';
@@ -18,6 +19,7 @@ import App from '~/app';
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { normalizeSting } from '~/modules/songs/utils/get-song-id';
+import { isIgnoredException } from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
 import { randomInt } from '~/modules/utils/random-value';
@@ -28,6 +30,15 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
     // debug: true,
     api_host: '/ph-data',
+    before_send: (event) => {
+      if (event?.event === '$exception') {
+        const exceptionList = (event.properties?.['$exception_list'] ?? []) as { $exception_message?: string }[];
+        if (exceptionList.some((exception) => isIgnoredException(exception.$exception_message))) {
+          return null;
+        }
+      }
+      return event;
+    },
     loaded: (ph) => {
       let storedUser = storage.local.getItem('posthog-user-id');
       if (!storedUser) {
@@ -70,15 +81,19 @@ const LazyToastContainer = lazy(() =>
 
 root.render(
   <StrictMode>
-    <MotionConfig transition={isE2E() ? { duration: 0.001 } : undefined} reducedMotion={isE2E() ? 'always' : undefined}>
-      <CacheProvider value={emotionCache}>
-        <App />
-        <NoPrerender>
-          <Suspense>
-            <LazyToastContainer position="bottom-left" theme={'colored'} limit={3} />
-          </Suspense>
-        </NoPrerender>
-      </CacheProvider>
-    </MotionConfig>
+    <PostHogProvider client={posthog}>
+      <MotionConfig
+        transition={isE2E() ? { duration: 0.001 } : undefined}
+        reducedMotion={isE2E() ? 'always' : undefined}>
+        <CacheProvider value={emotionCache}>
+          <App />
+          <NoPrerender>
+            <Suspense>
+              <LazyToastContainer position="bottom-left" theme={'colored'} limit={3} />
+            </Suspense>
+          </NoPrerender>
+        </CacheProvider>
+      </MotionConfig>
+    </PostHogProvider>
   </StrictMode>,
 );
