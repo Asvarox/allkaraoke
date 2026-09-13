@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { initTestMode, mockSongs } from './helpers';
+import { enableAutoMobileMode, initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 import {
@@ -27,6 +27,21 @@ test.skip('Mobile phone mode should be dismissible', async ({ page }) => {
   await pages.landingPage.enterTheGame();
   await pages.landingPage.dismissMobileModePrompt();
   await expect(pages.inputSelectionPage.multipleMicButton).toBeVisible(); // Multiple Mics is hidden when in Mobile Mode
+});
+
+test('Mobile phone mode should be enabled without the prompt in the auto opt-in experiment', async ({
+  page,
+  context,
+}) => {
+  await enableAutoMobileMode({ page, context });
+
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+
+  await expect(pages.landingPage.mobileModePrompt).not.toBeVisible();
+  // Multiple Mics is hidden when in Mobile Mode - so the mode is on without anyone being asked
+  await expect(pages.inputSelectionPage.multipleMicButton).not.toBeVisible();
+  await expect(pages.inputSelectionPage.smartphonesButton).toBeVisible();
 });
 
 const player1 = {

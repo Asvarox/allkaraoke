@@ -51,6 +51,16 @@ export const enableNewLandingPage = async ({ context }: { page: Page; context: B
   });
 };
 
+/**
+ * Puts a mobile device straight into Mobile Phone Mode with no prompt — the `test` arm of the
+ * `mobile_mode_auto_opt_in` experiment. Without it a spec gets the prompt, which is the control arm.
+ */
+export const enableAutoMobileMode = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2EAutoMobileMode = true;
+  });
+};
+
 const BOARD_SONGS = [
   { artist: 'Bon Jovi', title: 'Livin on a Prayer' },
   { artist: 'ABBA', title: 'Dancing Queen' },

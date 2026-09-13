@@ -5,4 +5,5 @@ export const FeatureFlags = {
   InitialInputLag: 'initial_input_lag',
   InstantSongPreview: 'instant_song_preview',
   LandingMenu: 'new_landing_menu',
+  MobileModeAutoOptIn: 'mobile_mode_auto_opt_in',
 } as const;
