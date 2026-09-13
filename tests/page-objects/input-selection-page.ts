@@ -7,8 +7,12 @@ export class InputSelectionPagePO {
     private browser: Browser,
   ) {}
 
+  public get smartphonesButton() {
+    return this.page.getByTestId('remote-mics');
+  }
+
   public async selectSmartphones() {
-    await this.page.getByTestId('remote-mics').click();
+    await this.smartphonesButton.click();
   }
 
   public async selectComputersMicrophone() {

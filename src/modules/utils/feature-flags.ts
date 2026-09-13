@@ -3,4 +3,5 @@ export const FeatureFlags = {
   Eurovision: 'eurovision',
   RemoteMicConnectionType: 'remote_mics_connection_type',
   InitialInputLag: 'initial_input_lag',
+  MobileModeAutoOptIn: 'mobile_mode_auto_opt_in',
 } as const;

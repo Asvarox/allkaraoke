@@ -1,5 +1,5 @@
 import isMobile from 'is-mobile';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
@@ -7,12 +7,25 @@ import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import isDev from '~/modules/utils/is-dev';
 import isE2E from '~/modules/utils/is-e2-e';
 import SuggestMobileMode from '~/routes/quick-setup/suggest-mobile-mode';
+import useMobileModeAutoOptIn from '~/routes/quick-setup/use-mobile-mode-auto-opt-in';
 import SelectInputView from '~/routes/select-input/select-input-view';
 import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 function QuickSetup() {
-  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const isMobileDevice = useMemo(() => isMobile(), []);
+  const autoOptIn = useMobileModeAutoOptIn();
+
+  // Nobody has answered the prompt (or set the mode in Settings) on a device the mode is meant for
+  const needsMobileModeDecision = mobilePhoneMode === null && isMobileDevice;
+
+  useEffect(() => {
+    if (needsMobileModeDecision && autoOptIn === 'enabled') {
+      // Fullscreen and the orientation lock need a user gesture, so they stay where they already
+      // are for this path - `onFinish`, once the user leaves the input selection.
+      setMobilePhoneMode(true);
+    }
+  }, [needsMobileModeDecision, autoOptIn, setMobilePhoneMode]);
 
   const navigate = useSmoothNavigate();
   const onFinish = async () => {
@@ -33,8 +46,10 @@ function QuickSetup() {
       <Helmet>
         <title>Select Input | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      {mobilePhoneMode === null && isMobileDevice ? (
-        <SuggestMobileMode />
+      {needsMobileModeDecision ? (
+        // `enabled` renders nothing for the tick it takes the effect above to flip the setting, and
+        // `pending` until the experiment arm is known - see `useMobileModeAutoOptIn`.
+        autoOptIn === 'disabled' && <SuggestMobileMode />
       ) : (
         <MenuWithLogo>
           <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth />
