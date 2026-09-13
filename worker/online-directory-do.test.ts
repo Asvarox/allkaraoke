@@ -1,6 +1,6 @@
 import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { ONLINE_SLOT_COUNT } from '../src/modules/online/signaling/protocol';
 import type { JoinRoomResponse } from '../src/modules/online/signaling/protocol';
@@ -33,8 +33,8 @@ const openRelay = async (directory: DurableObjectStub<OnlineDirectory>, particip
   return { socket, received, send: (raw: string) => socket.send(raw), close: () => socket.close() };
 };
 
-/** Lets the Durable Object work through the socket events a test just triggered. */
-const settle = () => new Promise((resolve) => setTimeout(resolve, 50));
+/** A frame in the shape the host sends on the relay: one broadcast, fanned out to every client. */
+const hostBroadcast = (message: unknown) => JSON.stringify({ kind: 'broadcast', message });
 
 afterEach(async () => {
   await reset();
@@ -275,14 +275,18 @@ describe('OnlineDirectory', () => {
     const second = await directory.join('p2', 's2', false);
     const oldHostSocket = await openRelay(directory, 'p1', 's1');
     const guestSocket = await openRelay(directory, 'p2', 's2');
-
     await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
+    const newHostSocket = await openRelay(directory, 'p2', 's2');
+
     // The promotion does not reach into the outgoing host's tab; it may only have been throttled
     // and still has its socket. Left alone it would answer client frames alongside the new host.
-    oldHostSocket.send(JSON.stringify({ kind: 'broadcast', message: { t: 'hb', epoch: 1 } }));
-    await settle();
+    oldHostSocket.send(hostBroadcast({ t: 'hb', epoch: 1 }));
+    newHostSocket.send(hostBroadcast({ t: 'hb', epoch: 2 }));
 
-    expect(guestSocket.received).toEqual([]);
+    // What lands is the whole assertion: the stale frame was sent first, so a single arrival that
+    // is the new host's proves the other was dropped rather than merely slower.
+    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(1));
+    expect(JSON.parse(guestSocket.received[0])).toMatchObject({ t: 'hb', epoch: 2 });
   });
 
   it('announces a host loss when a room is left without one, and not otherwise', async () => {
@@ -294,17 +298,18 @@ describe('OnlineDirectory', () => {
     await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
     const newHostSocket = await openRelay(directory, 'p2', 's2');
 
-    // A stale host socket closing is routine — the room already has a host, and announcing this as
-    // a loss would send everyone off to elect a successor to the host they just elected. Settled
-    // before the next close so the two are not racing each other into `webSocketClose`.
+    // A stale host socket closing is routine — the room already has a host, and announcing it as a
+    // loss would send everyone off to elect a successor to the host they just elected. Proven by a
+    // frame sent straight after arriving with nothing in front of it, rather than by waiting a
+    // fixed time and taking the silence on trust.
     oldHostSocket.close();
-    await settle();
-    expect(guestSocket.received).toEqual([]);
+    newHostSocket.send(hostBroadcast({ t: 'hb', epoch: 2 }));
+    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(1));
 
     // The host actually in charge going away is the signal this exists for.
     newHostSocket.close();
-    await settle();
-    expect(guestSocket.received).toEqual([JSON.stringify({ hostGone: true })]);
+    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(2));
+    expect(guestSocket.received.map((frame) => JSON.parse(frame))).toEqual([{ t: 'hb', epoch: 2 }, { hostGone: true }]);
   });
 
   it('elects a replacement host when the current one leaves outright', async () => {
