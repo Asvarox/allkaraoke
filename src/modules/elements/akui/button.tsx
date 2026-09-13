@@ -47,6 +47,23 @@ const sizeToIconClass = {
   large: 'size-8',
 } satisfies Record<ButtonSize, string>;
 
+// A flag is a tile the height of the button, so only its width scales with the size — the taller
+// rows on the language screen carry a wider one. `sizeToFlagReserveClass` is the same width plus a
+// gap, applied as right padding so the label stops before the flag instead of running under it.
+const sizeToFlagClass = {
+  mini: 'w-12',
+  small: 'w-18',
+  regular: 'w-18 md:w-28',
+  large: 'w-18 md:w-28',
+} satisfies Record<ButtonSize, string>;
+
+const sizeToFlagReserveClass = {
+  mini: 'pr-14',
+  small: 'pr-20',
+  regular: 'pr-20 md:pr-30',
+  large: 'pr-20 md:pr-30',
+} satisfies Record<ButtonSize, string>;
+
 interface Props extends PropsWithChildren {
   title?: ReactNode;
   inactive?: boolean;
@@ -64,9 +81,24 @@ interface Props extends PropsWithChildren {
    * options (the checkbox) left-align it so their labels line up with each other.
    */
   labelAlign?: 'center' | 'left';
+  /**
+   * A flag (or any image) inset into the button's right edge — how a language row shows the
+   * language it stands for. The button sizes it, reserves the matching right padding so the label
+   * stops before it, and dims it along with `inactive`.
+   */
+  flag?: ReactNode;
 }
 
-const additionalProps = ({ inactive, readOnly, focused, subtleFocused, leftIcon, rightIcon, ...props }: Props) => ({
+const additionalProps = ({
+  inactive,
+  readOnly,
+  focused,
+  subtleFocused,
+  leftIcon,
+  rightIcon,
+  flag,
+  ...props
+}: Props) => ({
   ...props,
   ...(focused ? { 'data-focused': true } : {}),
   ...(subtleFocused ? { 'data-subtle-focus': true } : {}),
@@ -83,6 +115,24 @@ const IconSlot = ({ size, children }: { size: ButtonSize; children?: ReactNode }
     {isValidElement<Partial<IconProps>>(children) && children.type === Icon
       ? cloneElement(children, { size: sizeToIconSize[size] })
       : children}
+  </span>
+);
+
+// The flag is pinned over the button's right edge rather than placed in flow: a button with an icon
+// gutter (a `Checkbox`) wraps its children in a truncating span, so a flag put in there would be
+// clipped along with the label instead of sitting at the edge. The label is kept clear of it by the
+// right padding the button reserves, not by the layout.
+const FlagSlot = ({ size, inactive, children }: { size: ButtonSize; inactive?: boolean; children: ReactNode }) => (
+  <span
+    aria-hidden
+    className={cn(
+      // The padding sits on the image, not on this span: an `img`'s corner radius is reduced by its
+      // own padding, so the flag reads as a tile inset in the button rather than a rounded hole.
+      'pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] transition-all *:h-full *:w-full *:rounded-xl *:object-cover *:p-1.5',
+      sizeToFlagClass[size],
+      inactive ? 'grayscale-75' : 'grayscale-0',
+    )}>
+    {children}
   </span>
 );
 
@@ -137,6 +187,7 @@ export const Button = ({
   leftIcon,
   rightIcon,
   labelAlign,
+  flag,
   fullWidth = true,
   ...props
 }: Props & Omit<HTMLProps<HTMLButtonElement>, 'size'>) => {
@@ -145,7 +196,7 @@ export const Button = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={cn(iconOnly && 'aspect-square px-0', className)}
+      className={cn(iconOnly && 'aspect-square px-0', flag && sizeToFlagReserveClass[resolvedSize], className)}
       {...additionalProps(props)}
       as="button">
       <ButtonContent
@@ -157,15 +208,22 @@ export const Button = ({
         fullWidth={fullWidth}>
         {children}
       </ButtonContent>
+      {flag && (
+        <FlagSlot size={resolvedSize} inactive={props.inactive}>
+          {flag}
+        </FlagSlot>
+      )}
     </ButtonBase>
   );
 };
+
 export const ButtonLink = ({
   children,
   size = 'regular',
   className,
   leftIcon,
   rightIcon,
+  flag,
   fullWidth = true,
   ...props
 }: Props & Omit<HTMLProps<HTMLAnchorElement>, 'size'>) => {
@@ -175,7 +233,7 @@ export const ButtonLink = ({
   return (
     <ButtonBase
       data-size={resolvedSize}
-      className={cn(iconOnly && 'aspect-square px-0', className)}
+      className={cn(iconOnly && 'aspect-square px-0', flag && sizeToFlagReserveClass[resolvedSize], className)}
       {...additionalProps(props)}
       as="a">
       <ButtonContent
@@ -186,6 +244,11 @@ export const ButtonLink = ({
         iconOnly={iconOnly}>
         {children}
       </ButtonContent>
+      {flag && (
+        <FlagSlot size={resolvedSize} inactive={props.inactive}>
+          {flag}
+        </FlagSlot>
+      )}
     </ButtonBase>
   );
 };
