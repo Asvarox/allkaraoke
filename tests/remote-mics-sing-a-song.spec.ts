@@ -192,6 +192,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await page.keyboard.press('Enter');
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
     await page.keyboard.press('Enter');
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
     await page.keyboard.press('Enter');
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();

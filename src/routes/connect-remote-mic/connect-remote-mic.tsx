@@ -37,20 +37,20 @@ function ConnectRemoteMic() {
             Game code: <RoomCode code={gameCode} data-test="game-code" />
           </span>
           <ol className="mb-3 list-inside list-decimal pl-6">
-            <li className="text-md leading-8 text-white">
+            <li className="text-md text-default leading-8">
               Go to{' '}
               <a href={new URL(link).origin} target="_blank" rel="noreferrer">
                 allkaraoke.party
               </a>{' '}
               on your phone
             </li>
-            <li className="text-md leading-8 text-white">
+            <li className="text-md text-default leading-8">
               Click on <b className="text-active typography font-bold">Join game</b>
             </li>
-            <li className="text-md leading-8 text-white">
+            <li className="text-md text-default leading-8">
               Enter the code <RoomCode code={gameCode} />
             </li>
-            <li className="text-md leading-8 text-white">Follow the instructions</li>
+            <li className="text-md text-default leading-8">Follow the instructions</li>
           </ol>
         </div>
         <div className="flex-none">

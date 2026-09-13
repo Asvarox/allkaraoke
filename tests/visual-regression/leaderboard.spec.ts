@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 
-import { enableLeaderboard, initTestMode, mockRandom, mockSongs } from '../helpers';
+import { initTestMode, mockRandom, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { visual } from './visual';
 
@@ -30,7 +30,6 @@ visual('Leaderboard prompt', async ({ page, context, browser, makeScreenshot }) 
   const pages = initialise(page, context, browser);
 
   await initTestMode({ page, context });
-  await enableLeaderboard({ page, context });
   await mockSongs({ page, context });
   // The game tip under the scores is picked at random on every mount, so the baseline would never
   // hold without pinning it

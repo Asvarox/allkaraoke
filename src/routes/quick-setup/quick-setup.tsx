@@ -3,7 +3,6 @@ import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
-import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import isDev from '~/modules/utils/is-dev';
 import isE2E from '~/modules/utils/is-e2-e';
@@ -14,7 +13,6 @@ import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/setti
 function QuickSetup() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const isMobileDevice = useMemo(() => isMobile(), []);
-  const mobileModeDisabled = useMobileModeDisabled();
 
   const navigate = useSmoothNavigate();
   const onFinish = async () => {
@@ -35,7 +33,7 @@ function QuickSetup() {
       <Helmet>
         <title>Select Input | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      {mobilePhoneMode === null && isMobileDevice && !mobileModeDisabled ? (
+      {mobilePhoneMode === null && isMobileDevice ? (
         <SuggestMobileMode />
       ) : (
         <MenuWithLogo>

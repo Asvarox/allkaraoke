@@ -1,4 +1,4 @@
-const errors = [
+const ignoredExceptions: (string | RegExp)[] = [
   'AbortError: Version change transaction was aborted in upgradeneeded event handler.',
   'The object can not be found here.',
   'Document is hidden.',
@@ -9,7 +9,6 @@ const errors = [
   'NotAllowedError: Document is not focused.',
   'Error: Socket was destroyed!',
   /TypeError: Failed to fetch/,
-  // https://docs.sentry.io/platforms/javascript/configuration/filtering/#using--1
   // Random plugins/extensions
   'top.GLOBALS',
   // See: http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
@@ -37,4 +36,9 @@ const errors = [
   /RPC timeout: .+/,
   /Not connected \(calling .+\)/,
 ];
-export default errors;
+
+export const isIgnoredException = (message: string | null | undefined): boolean => {
+  if (!message) return false;
+
+  return ignoredExceptions.some((entry) => (entry instanceof RegExp ? entry.test(message) : message.includes(entry)));
+};

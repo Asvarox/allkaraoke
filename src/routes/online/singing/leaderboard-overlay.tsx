@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import CountUp from 'react-countup';
 
+import Box from '~/modules/elements/akui/primitives/box';
 import { PlayerColorDot } from '~/modules/elements/player-color-dot';
 import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
 import { formatScore } from '~/modules/online/format-score';
@@ -13,15 +14,15 @@ function LeaderboardOverlay() {
   if (!leaderboard.length) return null;
 
   return (
-    <div
-      className="pointer-events-none fixed top-24 right-4 z-30 flex flex-col gap-1 rounded-lg bg-black/50 p-3"
+    <Box
+      className="z-hud pointer-events-none fixed top-24 right-4 items-stretch gap-1 rounded-lg p-3"
       data-test="online-leaderboard">
       {leaderboard.map((entry, index) => (
         <motion.div
           layout
           transition={{ duration: 0.3 }}
           key={entry.participantId}
-          className="typography flex items-center gap-2 text-base"
+          className="typography text-md flex items-center gap-2"
           data-test={`online-leaderboard-entry-${entry.playerNumber}`}>
           <span className="w-6 text-right">{index + 1}.</span>
           <PlayerColorDot number={entry.playerNumber} />
@@ -31,7 +32,7 @@ function LeaderboardOverlay() {
           </span>
         </motion.div>
       ))}
-    </div>
+    </Box>
   );
 }
 

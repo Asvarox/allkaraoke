@@ -150,7 +150,7 @@ export default function SearchBar({
                     e.preventDefault();
                     closeSearch();
                   }}>
-                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-white" />
+                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-default" />
                 </button>
               }
               data-test="search-input"
@@ -197,6 +197,22 @@ export default function SearchBar({
           }
         }}
         placeholder="Search songs…"
+        adornment={
+          filters.search ? (
+            <button
+              type="button"
+              aria-label="Clear search"
+              className="flex"
+              onMouseDown={(e) => {
+                e.preventDefault();
+                setSearch('');
+                searchInput.current?.element?.focus();
+              }}
+              data-test="clear-search">
+              <Icon icon="ic:baseline-close" size={5} className="text-default" />
+            </button>
+          ) : undefined
+        }
         data-test="search-input"
       />
     </div>

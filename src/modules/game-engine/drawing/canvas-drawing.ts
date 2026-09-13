@@ -1,5 +1,5 @@
-import { captureException } from '@sentry/react';
 import bezier from 'bezier-easing';
+import posthog from 'posthog-js';
 
 import { noDistanceNoteTypes } from '~/consts';
 import { Note, NotesSection, PlayerNote } from '~/interfaces';
@@ -57,7 +57,8 @@ export default class CanvasDrawing {
       try {
         this.shaders = new Shaders(this.canvas);
       } catch (e) {
-        captureException(e);
+        console.error(e);
+        posthog.captureException(e);
       }
     }
   };

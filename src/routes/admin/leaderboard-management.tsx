@@ -45,7 +45,19 @@ export function LeaderboardManagement({ password }: Props) {
     error: listError,
     isLoading,
     mutate,
-  } = useSWR(['leaderboard-admin', password], () => listAdminLeaderboardEntries(password));
+  } = useSWR(['leaderboard-admin', password], () => listAdminLeaderboardEntries(password), {
+    /*
+     * The listing is not paginated server-side — one request returns every row and the table pages
+     * through them client-side. SWR's default revalidations (focus, reconnect, stale remount) would
+     * re-download the whole board while the admin is only clicking between pages of data it already
+     * has, so the row set is fetched once and refreshed only by the explicit `mutate()` after a
+     * delete.
+     */
+    revalidateOnFocus: false,
+    revalidateOnReconnect: false,
+    revalidateIfStale: false,
+    keepPreviousData: true,
+  });
 
   const tableColumns = useMemo(() => columns, []);
 

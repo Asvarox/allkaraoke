@@ -3,21 +3,18 @@ import isE2E from '~/modules/utils/is-e2-e';
 
 /**
  * The threshold is scaled down under e2e exactly the way `use-high-scores.ts` scales its seeded
- * scores, so the e2e run exercises the real qualifying branch instead of a stubbed one. What keeps
- * the prompt out of the other specs is the feature flag (see `use-leaderboard-enabled.ts`).
+ * scores, so the e2e run exercises the real qualifying branch instead of a stubbed one.
  */
 export const getQualifyingScore = () => (isE2E() ? QUALIFYING_SCORE / 1000 : QUALIFYING_SCORE);
 
 /**
  * Whether the difficulty has a board to reach, and so whether the score is worth offering to share.
  *
- * With the per-song boards on, every shipped difficulty has one — Easy is ranked against other Easy
- * runs of the same song rather than against Medium and Hard — but the dev-only debug widths above
- * Easy do not. With them off, the global board is the only destination there is, and it takes
- * Medium and harder; an Easy score collected then would sit in storage with nothing to show it on.
+ * Every shipped difficulty has one — Easy is ranked against other Easy runs of the same song rather
+ * than against Medium and Hard — but the dev-only debug widths above Easy do not: a score collected
+ * then would sit in storage with nothing to show it on.
  */
-export const hasLeaderboard = (tolerance: number, songBoardsEnabled: boolean) =>
-  tolerance <= (songBoardsEnabled ? MAX_SUBMITTED_TOLERANCE : MAX_GLOBAL_BOARD_TOLERANCE);
+export const hasLeaderboard = (tolerance: number) => tolerance <= MAX_SUBMITTED_TOLERANCE;
 
 /**
  * Whether a score also reaches the single global board on the main menu, which mixes every song and
@@ -28,5 +25,5 @@ export const hasLeaderboard = (tolerance: number, songBoardsEnabled: boolean) =>
 export const reachesGlobalBoard = (tolerance: number) => tolerance <= MAX_GLOBAL_BOARD_TOLERANCE;
 
 /** Whether the score is worth offering to share — high enough, on a difficulty that has a board. */
-export const qualifiesForLeaderboard = (score: number, tolerance: number, songBoardsEnabled: boolean) =>
-  score >= getQualifyingScore() && hasLeaderboard(tolerance, songBoardsEnabled);
+export const qualifiesForLeaderboard = (score: number, tolerance: number) =>
+  score >= getQualifyingScore() && hasLeaderboard(tolerance);

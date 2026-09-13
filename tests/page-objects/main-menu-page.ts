@@ -36,8 +36,12 @@ export class MainMenuPagePO {
     await this.page.getByTestId('settings').click();
   }
 
+  /**
+   * By URL, not by clicking: the Jukebox has no main-menu tile any more, but the screen itself is
+   * still shipped and reachable, so the specs that cover it still need a way in.
+   */
   public async goToJukebox() {
-    await this.page.getByTestId('jukebox').click();
+    await this.page.goto('/jukebox/?e2e-test');
   }
 
   public async goToHistory() {

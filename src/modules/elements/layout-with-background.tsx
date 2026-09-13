@@ -1,5 +1,5 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
-import { twc, TwcComponentProps } from 'react-twc';
+import { TwcComponentProps } from 'react-twc';
 
 import { BackgroundContext as BackgroundContext1 } from '~/modules/elements/background-context';
 import { EurovisionBackground } from '~/modules/elements/background/eurovision';
@@ -7,6 +7,7 @@ import Snow from '~/modules/elements/snow';
 import { colorSets } from '~/modules/game-engine/drawing/styles';
 import isE2E from '~/modules/utils/is-e2-e';
 import { GraphicSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { twx } from '~/utils/twx';
 
 import eurovisionBg from './eurovisionbg.svg';
 
@@ -74,7 +75,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   );
 }
 
-const EscBar = twc.div`h-full scale-y-[4] [background-size:100%_50%] data-[animate=true]:flex-1 data-[animate=true]:animate-[escGradient_46s_linear_infinite]`;
+const EscBar = twx.div`h-full scale-y-[4] [background-size:100%_50%] data-[animate=true]:flex-1 data-[animate=true]:animate-[escGradient_46s_linear_infinite]`;
 
 export const EurovisionTheme = () => (
   <EscBar
@@ -83,14 +84,14 @@ export const EurovisionTheme = () => (
   />
 );
 
-export const BackgroundStatic = twc.div`h-full w-full bg-white`;
+export const BackgroundStatic = twx.div`h-full w-full bg-white`;
 
 type BGProps = TwcComponentProps<'div'> & {
   'data-theme': backgroundTheme;
   'data-graphic-level': ReturnType<typeof GraphicSetting.get>;
 };
 
-export const Background = twc(BackgroundStatic)((props: BGProps) => [
+export const Background = twx(BackgroundStatic)((props: BGProps) => [
   'h-screen w-screen',
   props['data-theme'] === 'halloween' ? 'bg-black' : '',
   props['data-graphic-level'] === 'high' ? 'animate-gradient' : '',

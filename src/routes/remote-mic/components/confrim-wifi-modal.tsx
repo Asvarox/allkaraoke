@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { twc } from 'react-twc';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -7,6 +6,7 @@ import { MenuButton, MenuContainer } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
 import styles from '~/modules/game-engine/drawing/styles';
 import storage from '~/modules/utils/storage';
+import { twx } from '~/utils/twx';
 
 interface Props {
   onClose?: () => void;
@@ -72,8 +72,8 @@ export default function ConfirmWifiModal({ onClose }: Props) {
   );
 }
 
-const MenuComponent = twc(MenuContainer)`gap-2.5`;
+const MenuComponent = twx(MenuContainer)`gap-2.5`;
 
-const Wrapper = twc.div`flex flex-col items-center gap-5`;
+const Wrapper = twx.div`flex flex-col items-center gap-5`;
 
-const IconsWrapper = twc.div`my-5 flex items-center gap-5 text-white [&_iconify-icon]:text-7xl [&_iconify-icon:nth-of-type(1)]:animate-[pulse_2s_infinite_0s] [&_iconify-icon:nth-of-type(2)]:animate-[pulse_2s_infinite_0.5s] [&_iconify-icon:nth-of-type(3)]:animate-[pulse_2s_infinite_1s]`;
+const IconsWrapper = twx.div`text-default my-5 flex items-center gap-5 [&_iconify-icon]:text-7xl [&_iconify-icon:nth-of-type(1)]:animate-[pulse_2s_infinite_0s] [&_iconify-icon:nth-of-type(2)]:animate-[pulse_2s_infinite_0.5s] [&_iconify-icon:nth-of-type(3)]:animate-[pulse_2s_infinite_1s]`;

@@ -9,11 +9,11 @@ import {
   useContext,
   useState,
 } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Modal from '~/modules/elements/modal';
 import useKeyboardNav, { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+import { cn } from '~/utils/cn';
 
 interface ConfirmModalContextValue {
   /** The modal's own keyboard nav — the two buttons are the only things it navigates. */
@@ -43,7 +43,7 @@ const labelOf = (children: ReactNode) => (typeof children === 'string' ? childre
 
 /** Side by side and sized to their labels once there's room for a row — the pair sits at the end of
  * the dialog rather than spanning it. Stacked and full width on a phone, as everything else is. */
-const buttonClassName = (className?: string) => twMerge('sm:w-auto sm:min-w-40', className);
+const buttonClassName = (className?: string) => cn('sm:w-auto sm:min-w-40', className);
 
 function CancelButton({ name, children, isDefault = true, ...props }: ConfirmModalButtonProps) {
   const { register, cancel } = useConfirmModalContext('CancelButton');

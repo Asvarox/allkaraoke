@@ -2,7 +2,6 @@ import useSWR from 'swr';
 
 import { fetchBoard, LEADERBOARD_URL } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
-import useLeaderboardEnabled from '~/modules/leaderboard/use-leaderboard-enabled';
 import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
 
 /**
@@ -10,20 +9,19 @@ import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
  * skipped by `useKeyboardNav`: making 50 rows keyboard-traversable would add a navigation sink that
  * TV users hit by accident, so on a TV this is a display of the top 10 and nothing more.
  */
-function LeaderboardPanel({ className }: { className?: string }) {
-  const leaderboardEnabled = useLeaderboardEnabled();
-
-  const { data, error, isLoading } = useSWR(leaderboardEnabled ? LEADERBOARD_URL : null, fetchBoard, {
+function LeaderboardPanel({ className, listClassName }: { className?: string; listClassName?: string }) {
+  const { data, error, isLoading } = useSWR(LEADERBOARD_URL, fetchBoard, {
     revalidateOnFocus: false,
   });
-
-  if (!leaderboardEnabled) return null;
 
   return (
     // Same box the main menu sits in, so the panel reads as part of it rather than a bolted-on
     // widget — and the same `ScoreboardPanel` the post-game boards use, so a board looks like a board
     <ScoreboardPanel
-      className={`p-4 sm:p-7 ${className ?? ''}`}
+      className={`p-4 sm:p-6 ${className ?? ''}`}
+      // Passed through so a caller can trade the shared five-row list height for one of its own —
+      // the tiled menu's rail is as tall as the screen and would otherwise stop a long way short.
+      listClassName={listClassName}
       title="Global leaderboard"
       subtitle="Highest scores from the last 14 days"
       isLoading={isLoading}

@@ -120,7 +120,7 @@ const Template = (args: StoryArgs) => {
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'PostGame',
+  title: 'Game/Post Game/Results',
   component: Template,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

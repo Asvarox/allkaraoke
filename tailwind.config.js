@@ -1,14 +1,18 @@
 const styles = require('./src/modules/game-engine/drawing/styles');
-const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    // Replaces Tailwind's stacks rather than extending them, so `font-sans` means the game's font
+    // instead of the framework's default — index.css applies these rather than repeating them.
+    fontFamily: {
+      sans: ['Seravek', 'Gill Sans Nova', 'Ubuntu', 'Calibri', 'DejaVu Sans', 'source-sans-pro', 'sans-serif'],
+      mono: ['source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace'],
+    },
     fontSize: {
       xs: '0.75rem',
-      sm: '0.9rem',
-      base: '1rem',
+      sm: '1rem',
       md: '1.25rem',
       lg: '1.5rem',
       xl: '2rem',
@@ -19,6 +23,44 @@ module.exports = {
       '6xl': '10rem',
     },
     extend: {
+      /**
+       * Keeping text readable on top of the song video, which is the app's default background and
+       * can be any frame of anything. This is the treatment to reach for — not a plate behind the
+       * text, which hides the video the screen exists to show.
+       *
+       * Two sizes because the halo has to scale with the text: the default suits body and heading
+       * sizes, `lg` is for the large prompts that sit over full-screen video.
+       */
+      textShadow: {
+        legible: '0px 0px 3px #000000',
+        'legible-lg': '0 0 2rem black',
+      },
+      /**
+       * The stacking ladder. Every layer that escapes its parent — anything `fixed` or portalled —
+       * takes a rung here instead of picking a number, which is how the app ended up with values
+       * from 0 to 100000 that only made sense pairwise.
+       *
+       * Plain `z-1`, `z-2`, `z-10` stay right for stacking *inside* a component: those form their
+       * own context and never compete with these.
+       */
+      zIndex: {
+        scene: '0', // the song's background image, behind everything
+        'scene-hint': '4', // skip intro/outro prompts
+        'scene-overlay': '10', // the blurred song backdrop while singing
+        'scene-cover': '20', // the still that covers the game overlay until video starts
+        hud: '30', // in-game readouts: live leaderboard, status text
+        'hud-blocking': '40', // takes the screen: countdown, readiness, the mobile action bar
+        chrome: '50', // sticky headers and bars belonging to a screen
+        'expanded-backdrop': '60', // the expanded song preview and its scrim
+        expanded: '61',
+        help: '70', // the keyboard help panel
+        toolbar: '80', // the dev toolbar
+        'modal-backdrop': '90', // dialogs, over everything a screen owns
+        modal: '91',
+        'modal-top-backdrop': '92', // a dialog or sheet opened from inside another
+        'modal-top': '93',
+        toast: '100', // connection status — must outrank even a modal
+      },
       boxShadow: {
         focusable: 'inset 0 0 0 1px rgba(255,165,0,.25), inset 0px 0px 40px 2px rgba(0,0,0,0.2)',
       },
@@ -30,8 +72,23 @@ module.exports = {
           'player-0-christmas': styles.colorSets.christmasGreen.text,
           'player-1': styles.colors.players[1].text,
           'player-1-christmas': styles.colorSets.christmasRed.text,
-          error: 'red',
         },
+        /**
+         * Status. Four roles, each one value used as text, icon fill, border and background — so
+         * they are colours rather than a composed class string.
+         *
+         * `warning` is amber, not orange, on purpose: `active` is orange and means *focused*, and
+         * the orange these used to be (`#f89400`) was close enough to it that an unstable-mic icon
+         * read as a focused control. Amber is far enough away to tell apart across a room.
+         *
+         * These are the `-400` steps of Tailwind's own ramps, which is where the contrast sits on
+         * both grounds the app uses — the dialog slate and the near-black in-game card. The `error`
+         * token this replaces was pure `red`, which misses AA against the dialog surface.
+         */
+        danger: 'oklch(70.4% 0.191 22.216)', // red-400
+        warning: 'oklch(82.8% 0.189 84.429)', // amber-400
+        success: 'oklch(79.2% 0.209 151.711)', // green-400
+        info: 'oklch(70.7% 0.165 254.624)', // blue-400
         active: styles.colors.text.active,
       },
       keyframes: {
@@ -130,10 +187,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    plugin(({ addVariant }) => {
-      addVariant('mobile', '@media (max-width: 900px)');
-      addVariant('landscap', '@media (max-height: 500px) and (min-aspect-ratio: 16/10)');
-    }),
-  ],
+  plugins: [],
 };

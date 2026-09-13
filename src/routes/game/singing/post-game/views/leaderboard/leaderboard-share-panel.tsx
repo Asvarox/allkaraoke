@@ -9,12 +9,10 @@ interface Props {
   leaderboard: LeaderboardPostGame;
 }
 
-/**
- * `Box` centres its children; the panel stacks them full width instead. Its own `bg-black/30` is
- * invisible against this screen, so the surface is spelled out — `bg-black/50` matches the score
- * rows above, and the border is what actually reads as an edge.
- */
-const panelClassName = 'mt-2 w-full items-stretch justify-start gap-2 border border-white/10 bg-black/50 p-3';
+/** `Box` centres its children; the panel stacks them full width instead. The border is what reads as
+ * an edge against this screen — `Box`'s own fill is faint here on purpose, matching the score rows
+ * above it. */
+const panelClassName = 'mt-2 w-full items-stretch justify-start gap-2 border border-white/10 p-3';
 
 /**
  * Sits under the local high scores once the player has a standing decision, so the prompt does not

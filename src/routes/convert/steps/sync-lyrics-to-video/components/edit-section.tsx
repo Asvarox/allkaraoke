@@ -174,7 +174,9 @@ export default function EditSection({
           {selectedSection > -1 && (
             <>
               {selectedSection === 0 && (
-                <h3 data-test={`use-gap-info`}>Use gap shift to change when this section starts</h3>
+                <h3 className="text-lg" data-test={`use-gap-info`}>
+                  Use gap shift to change when this section starts
+                </h3>
               )}
               {selectedSection > 0 && (
                 <>

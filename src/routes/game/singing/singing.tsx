@@ -74,7 +74,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
       <LayoutGame>
         <div className="relative">
           <div
-            className={`pointer-events-none fixed inset-0 z-10 flex h-full w-full flex-col items-stretch px-10 py-10 transition-opacity duration-500 [view-transition-name:song-preview] ${
+            className={`z-scene-overlay pointer-events-none fixed inset-0 flex h-full w-full flex-col items-stretch px-10 py-10 transition-opacity duration-500 [view-transition-name:song-preview] ${
               isOverlayVisible ? 'opacity-100' : 'opacity-0'
             }`}
             data-test="background-container">
@@ -86,13 +86,15 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                 height: `${height}px`,
               }}
             />
+            {/* These sit directly on the song's own thumbnail, so they need `text-shadow-legible`
+                to survive a bright frame. */}
             <span
-              className="typography text-2xl [view-transition-name:song-preview-artist] 2xl:text-3xl"
+              className="typography text-shadow-legible text-2xl [view-transition-name:song-preview-artist] 2xl:text-3xl"
               data-test="song-artist">
               {songPreview.artist}
             </span>
             <span
-              className="typography text-active text-3xl [view-transition-name:song-preview-title] 2xl:text-5xl"
+              className="typography text-active text-shadow-legible text-3xl [view-transition-name:song-preview-title] 2xl:text-5xl"
               data-test="song-title">
               {songPreview.title}
             </span>

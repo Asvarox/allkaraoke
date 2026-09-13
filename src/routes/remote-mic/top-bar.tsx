@@ -11,14 +11,15 @@ import useRemoteMicName from '~/routes/remote-mic/hooks/use-remote-mic-name';
 import Ping from '~/routes/remote-mic/panels/microphone/ping';
 import { ConnectionStatuses } from '~/routes/remote-mic/remote-mic';
 
-// Maps each connection status to a Tailwind text-color class for the status dot
+// The connection state machine, in the status roles. `uninitialised` and `connecting` are neither
+// good nor bad yet, so they stay the inactive grey rather than claiming a role.
 const dotColorByStatus: Record<ConnectionStatuses, string> = {
-  uninitialised: 'text-gray-400',
-  connecting: 'text-gray-400',
-  reconnecting: 'text-blue-400',
-  connected: 'text-green-400',
-  disconnected: 'text-red-400',
-  error: 'text-red-400',
+  uninitialised: 'text-inactive',
+  connecting: 'text-inactive',
+  reconnecting: 'text-info',
+  connected: 'text-success',
+  disconnected: 'text-danger',
+  error: 'text-danger',
 };
 
 interface Props {
@@ -44,8 +45,8 @@ function TopBar({ connectionStatus, roomId }: Props) {
           RemoteMicClient.renameSelf(newName);
         }}
       />
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-black px-3 py-1.5 text-white">
-        <div className="text-md flex items-center gap-1.5 font-bold">
+      <div className="text-default grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-black px-3 py-1.5">
+        <div className="flex items-center gap-1.5 text-sm">
           <div
             className={`text-center ${dotColorByStatus[connectionStatus]} flex w-10 items-center justify-center`}
             aria-hidden="true">
@@ -58,7 +59,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
         {connectionStatus === 'connected' && (
           <button
             type="button"
-            className="ph-no-capture text-md flex max-w-[40vw] items-center gap-1 font-bold text-white/90"
+            className="ph-no-capture text-default/90 flex max-w-[40vw] items-center gap-1 text-sm font-bold"
             onClick={() => setIsRenameModalOpen(true)}
             data-test="topbar-player-name">
             <span className="truncate">{name}</span>

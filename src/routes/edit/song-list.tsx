@@ -43,7 +43,7 @@ export default function SongList() {
               </Link>
             </div>
             <div className="col-span-6 flex items-center justify-center">
-              <h4>
+              <h4 className="text-lg">
                 <span
                   onClick={() => {
                     window.__exposeSingletons();

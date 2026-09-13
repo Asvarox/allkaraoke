@@ -70,6 +70,7 @@ test('window for rating unfinished song is visible and can be skipped by the use
     await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
   });
 });
@@ -85,6 +86,7 @@ test('user can correctly select all of the shown reasons why the song was not co
     await test.step('Go back to Song List', async () => {
       await pages.postGameResultsPage.skipScoresAnimation();
       await pages.postGameResultsPage.goToHighScoresStep();
+      await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
       await pages.postGameHighScoresPage.goToSongList();
     });
   };
@@ -225,6 +227,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   await test.step('User can return to Song List to choose another song', async () => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
     await expect(await pages.songListPage.getSongElement(songsID.spanish)).toBeVisible();
     await pages.songListPage.openPreviewForSong(songsID.spanish);

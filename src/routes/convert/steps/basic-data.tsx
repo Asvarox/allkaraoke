@@ -54,7 +54,7 @@ export default function BasicData(props: Props) {
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
       {props.isTxtRequired && (
         <div>
-          <h4>Where to find songs?</h4>
+          <h4 className="text-lg">Where to find songs?</h4>
           <p>
             Any UltraStar compatible .txt file will do. You can find many already made songs on{' '}
             <a href="https://usdb.animux.de/" target="_blank" rel="noreferrer">

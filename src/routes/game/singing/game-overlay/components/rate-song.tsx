@@ -6,8 +6,6 @@ import { Menu } from '~/modules/elements/akui/menu';
 import { NavButton, NavCheckbox, NavRemoteControl } from '~/modules/elements/nav-controls';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { InputLagSetting } from '~/routes/settings/settings-state';
 
 interface Props {
@@ -22,11 +20,10 @@ interface Props {
 type reportTypes = 'not-in-sync' | 'too-loud' | 'too-quiet' | 'bad-lyrics';
 
 export default function RateSong({ register, onExit, onBack, song, isUnverifiedSong = false }: Props) {
-  const newVolumeFFEnabled = useFeatureFlag(FeatureFlags.NewVolume);
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const [issues, setIssues] = useState<reportTypes[]>([]);
 
-  const volume = newVolumeFFEnabled ? (song?.volume ?? song?.manualVolume) : song?.manualVolume;
+  const volume = song?.manualVolume;
 
   const toggleIssue = (issue: reportTypes) => {
     setIssues((current) => {
@@ -79,7 +76,7 @@ export default function RateSong({ register, onExit, onBack, song, isUnverifiedS
 
   return (
     <>
-      <Menu data-test={'rate-song-container'} title="Is the song OK?">
+      <Menu data-test={'rate-song-container'} title="Is the song OK?" modal>
         <Menu.SubHeader>If there&#39;s something wrong with the song, let me know so I can fix it</Menu.SubHeader>
         <NavCheckbox
           nav={register}

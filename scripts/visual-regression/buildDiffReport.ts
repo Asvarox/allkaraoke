@@ -4,13 +4,15 @@ import { basename, join } from 'node:path';
 
 import { diffImages } from '../../src/modules/utils/image-diff';
 import { decodePng, writePng } from './pngIo';
+import { type GalleryEntry, renderGalleryHtml } from './renderGalleryHtml';
 
 /**
- * Builds a visual-diff thumbnail report for snapshots changed in the working
- * tree (relative to the index). For each changed snapshot it writes the old,
- * new and diff PNGs into a per-image folder under {@link OUTPUT_DIR}, plus a
- * `report.json` describing them. The report is only populated when fewer than
- * {@link MAX_THUMBNAILS} snapshots changed — beyond that a gallery is noise.
+ * Builds a visual-diff report for snapshots changed in the working tree
+ * (relative to the index). For each changed snapshot it writes the old, new and
+ * diff PNGs into a per-image folder under {@link OUTPUT_DIR}, plus a
+ * `report.json` describing them and an `index.html` gallery page that shows all
+ * of them side by side. Every changed snapshot is included - the page is hosted,
+ * not inlined into a PR comment, so there is no reason to cap it.
  *
  * Meant to run in CI right after `playwright test -u`, before the snapshots are
  * committed. The output lives under `test-results/` (gitignored), so it is never
@@ -23,8 +25,6 @@ import { decodePng, writePng } from './pngIo';
  * auto-commit.
  */
 
-/** Show thumbnails only when strictly fewer than this many snapshots changed. */
-const MAX_THUMBNAILS = 50;
 const OUTPUT_DIR = 'test-results/visual-diff-report';
 
 type Status = 'modified' | 'added' | 'removed';
@@ -35,26 +35,10 @@ interface ChangedSnapshot {
   status: Status;
 }
 
-interface ReportEntry {
-  index: number;
-  name: string;
-  path: string;
-  status: Status;
-  hasOld: boolean;
-  hasNew: boolean;
-  hasDiff: boolean;
-  width?: number;
-  height?: number;
-  mismatchedPixels?: number;
-  totalPixels?: number;
-  ratio?: number;
-}
-
 interface Report {
   changedCount: number;
-  hasThumbnails: boolean;
-  truncated: boolean;
-  entries: ReportEntry[];
+  hasReport: boolean;
+  entries: GalleryEntry[];
 }
 
 // Playwright screenshot snapshots live in `*-snapshots/` (visual-regression
@@ -121,6 +105,12 @@ function setOutput(name: string, value: string): void {
   if (file) appendFileSync(file, `${name}=${value}\n`);
 }
 
+function runUrl(): string | undefined {
+  const { GITHUB_SERVER_URL, GITHUB_REPOSITORY, GITHUB_RUN_ID } = process.env;
+  if (!GITHUB_SERVER_URL || !GITHUB_REPOSITORY || !GITHUB_RUN_ID) return undefined;
+  return `${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}`;
+}
+
 function main(): void {
   const changed = listChangedSnapshots();
   const changedCount = changed.length;
@@ -128,71 +118,66 @@ function main(): void {
   rmSync(OUTPUT_DIR, { recursive: true, force: true });
   mkdirSync(OUTPUT_DIR, { recursive: true });
 
-  const withinLimit = changedCount > 0 && changedCount < MAX_THUMBNAILS;
-  const report: Report = {
-    changedCount,
-    hasThumbnails: false,
-    truncated: changedCount >= MAX_THUMBNAILS,
-    entries: [],
-  };
+  const report: Report = { changedCount, hasReport: changedCount > 0, entries: [] };
 
-  if (withinLimit) {
-    changed.forEach((snapshot, index) => {
-      const entryDir = join(OUTPUT_DIR, String(index));
-      mkdirSync(entryDir, { recursive: true });
+  changed.forEach((snapshot, index) => {
+    const entryDir = join(OUTPUT_DIR, String(index));
+    mkdirSync(entryDir, { recursive: true });
 
-      const oldBuffer = snapshot.status === 'added' ? null : readFromIndex(snapshot.path);
-      const newBuffer = snapshot.status === 'removed' ? null : readWorkingTree(snapshot.path);
+    const oldBuffer = snapshot.status === 'added' ? null : readFromIndex(snapshot.path);
+    const newBuffer = snapshot.status === 'removed' ? null : readWorkingTree(snapshot.path);
 
-      const entry: ReportEntry = {
-        index,
-        name: basename(snapshot.path),
-        path: snapshot.path,
-        status: snapshot.status,
-        hasOld: false,
-        hasNew: false,
-        hasDiff: false,
-      };
+    const entry: GalleryEntry = {
+      index,
+      name: basename(snapshot.path),
+      path: snapshot.path,
+      status: snapshot.status,
+      hasOld: false,
+      hasNew: false,
+      hasDiff: false,
+    };
 
-      if (oldBuffer) {
-        writeFileSync(join(entryDir, 'old.png'), oldBuffer);
-        entry.hasOld = true;
+    if (oldBuffer) {
+      writeFileSync(join(entryDir, 'old.png'), oldBuffer);
+      entry.hasOld = true;
+    }
+    if (newBuffer) {
+      writeFileSync(join(entryDir, 'new.png'), newBuffer);
+      entry.hasNew = true;
+    }
+
+    if (oldBuffer && newBuffer) {
+      try {
+        const result = diffImages(decodePng(oldBuffer), decodePng(newBuffer));
+        writePng(join(entryDir, 'diff.png'), result);
+        entry.hasDiff = true;
+        entry.width = result.width;
+        entry.height = result.height;
+        entry.mismatchedPixels = result.mismatchedPixels;
+        entry.totalPixels = result.totalPixels;
+        entry.ratio = result.ratio;
+      } catch (error) {
+        console.warn(`Failed to diff ${snapshot.path}:`, error);
       }
-      if (newBuffer) {
-        writeFileSync(join(entryDir, 'new.png'), newBuffer);
-        entry.hasNew = true;
-      }
+    }
 
-      if (oldBuffer && newBuffer) {
-        try {
-          const result = diffImages(decodePng(oldBuffer), decodePng(newBuffer));
-          writePng(join(entryDir, 'diff.png'), result);
-          entry.hasDiff = true;
-          entry.width = result.width;
-          entry.height = result.height;
-          entry.mismatchedPixels = result.mismatchedPixels;
-          entry.totalPixels = result.totalPixels;
-          entry.ratio = result.ratio;
-        } catch (error) {
-          console.warn(`Failed to diff ${snapshot.path}:`, error);
-        }
-      }
-
-      report.entries.push(entry);
-    });
-
-    report.hasThumbnails = report.entries.length > 0;
-  }
+    report.entries.push(entry);
+  });
 
   writeFileSync(join(OUTPUT_DIR, 'report.json'), JSON.stringify(report, null, 2));
+  writeFileSync(
+    join(OUTPUT_DIR, 'index.html'),
+    renderGalleryHtml(report.entries, {
+      runUrl: runUrl(),
+      branch: process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME,
+      generatedAt: new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC',
+    }),
+  );
 
   setOutput('changed_count', String(changedCount));
-  setOutput('has_thumbnails', String(report.hasThumbnails));
+  setOutput('has_report', String(report.hasReport));
 
-  console.log(
-    `Visual diff report: ${changedCount} changed snapshot(s), ` +
-      `thumbnails ${report.hasThumbnails ? `generated for ${report.entries.length}` : 'skipped'}.`,
-  );
+  console.log(`Visual diff report: ${changedCount} changed snapshot(s), gallery page written to ${OUTPUT_DIR}.`);
 }
 
 main();

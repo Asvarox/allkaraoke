@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
+import { ScrollableColumn } from '~/modules/elements/akui/scrollable-container';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
 
 /**
@@ -26,6 +27,11 @@ interface Props {
   emptyMessage?: string;
   isEmpty?: boolean;
   className?: string;
+  /**
+   * Classes for the scrolling list, for a caller that owns its own height — the main menu's rail is
+   * as tall as the screen, and {@link LIST_HEIGHT} would leave it stopping a long way short.
+   */
+  listClassName?: string;
   'data-test'?: string;
 }
 
@@ -38,7 +44,7 @@ interface Props {
  * three copies of the same skeleton is three places to forget.
  *
  * `Box` centres its children; this stacks them full width and top-aligned instead, and spells out
- * its own surface — `Box`'s `bg-black/30` is invisible against these screens, and the border is what
+ * its own surface — `Box`'s translucent fill is invisible against these screens, and the border is what
  * reads as an edge.
  */
 function ScoreboardPanel({
@@ -50,27 +56,21 @@ function ScoreboardPanel({
   emptyMessage,
   isEmpty,
   className,
+  listClassName,
   'data-test': dataTest,
 }: Props) {
   return (
     <Box
       // Padding and every width rule are the caller's: Tailwind classes of the same property do not
       // merge here, so anything a caller might need to override cannot be in the base
-      className={clsx('w-full items-stretch justify-start gap-1.5 bg-black/50', className)}
+      className={clsx('w-full items-stretch justify-start gap-1.5', className)}
       data-test={dataTest}>
-      <Menu.SubHeader as="h2" className="text-active text-left">
-        {title}
-      </Menu.SubHeader>
+      <Menu.Header as="h2">{title}</Menu.Header>
       <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>
-      {/* The mask fades whatever the bottom edge cuts through, so a row the list ran out of room for
-          reads as more below rather than as a row that failed to draw. It falls on empty space, and
-          so is invisible, when everything fits. */}
-      <div
-        className={clsx(
-          'flex flex-col gap-1 overflow-y-auto',
-          '[mask-image:linear-gradient(to_bottom,black_calc(100%-1.25rem),transparent)]',
-          LIST_HEIGHT,
-        )}>
+      {/* The same fade-and-arrow treatment the song group rows use, turned on its side: whichever
+          edge cuts a row off fades it and points that way, so a half-drawn row reads as more rows
+          rather than as one that failed to draw. A board whose rows all fit shows neither. */}
+      <ScrollableColumn className={clsx(LIST_HEIGHT, listClassName)} contentClassName="gap-1">
         {isLoading &&
           Array.from({ length: LOADING_ROWS }, (_, index) => (
             <Skeleton key={index} className="h-12 w-full rounded-xl" />
@@ -78,7 +78,7 @@ function ScoreboardPanel({
         {!isLoading && !!error && <Menu.HelpText data-test="scoreboard-error">Failed to load results</Menu.HelpText>}
         {!isLoading && !error && isEmpty && <Menu.HelpText data-test="scoreboard-empty">{emptyMessage}</Menu.HelpText>}
         {!isLoading && !error && children}
-      </div>
+      </ScrollableColumn>
     </Box>
   );
 }

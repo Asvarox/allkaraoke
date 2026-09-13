@@ -52,11 +52,11 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
                   data-active={!!excludedLanguages.length && !excludedLanguages.includes(name)}
                   onClick={() => excludeLanguage(name)}
                   data-test={name}
-                  className={`justify-between pr-0 pl-4`}>
+                  flag={<Flag language={[name]} />}
+                  className={`justify-start pl-4`}>
                   <span>
                     {name} <small className="pl-2 text-xs">({count} songs)</small>
                   </span>
-                  <Flag language={[name]} className="h-full w-20 object-cover" />
                 </Menu.Button>
               );
             })}

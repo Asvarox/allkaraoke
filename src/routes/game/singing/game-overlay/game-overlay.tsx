@@ -122,7 +122,7 @@ const GameOverlay = forwardRef(function (
   const showMultipleLines = !mobilePhoneMode && players.length > 1;
 
   return (
-    <div className="relative flex h-full flex-col font-bold text-white">
+    <div className="text-default relative flex h-full flex-col font-bold">
       {graphicLevel === 'high' && (
         <>
           <script type={'x-shader/x-fragment'} id={'plane-fs'}>
@@ -131,7 +131,7 @@ const GameOverlay = forwardRef(function (
           <script id="plane-vs" type="x-shader/x-vertex">
             {vertShader}
           </script>
-          <div id="canvas" className="absolute inset-0 z-[10000] h-full w-full" />
+          <div id="canvas" className="absolute inset-0 z-20 h-full w-full" />
         </>
       )}
       <div id="plane" className="absolute inset-0 h-full w-full" style={!effectsEnabled ? { opacity: 0 } : undefined}>
@@ -162,7 +162,7 @@ const GameOverlay = forwardRef(function (
           <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showStatusForAllPlayers={players.length > 2} />
         )}
       </div>
-      <div className="mobile:text-xl stroke-text z-10 flex h-full flex-1 flex-col justify-around pr-4 text-right text-3xl">
+      <div className="stroke-text z-10 flex h-full flex-1 flex-col justify-around pr-4 text-right text-3xl max-lg:text-xl">
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
@@ -185,7 +185,7 @@ const GameOverlay = forwardRef(function (
                     data-score={Math.floor(score)}>
                     <ScoreText score={score} />
                     <div
-                      className={`mobile:top-6 mobile:text-lg absolute top-10 rotate-12 text-xl transition-all duration-200 ${isLeading ? '-right-2' : '-right-36'}`}>
+                      className={`absolute top-10 rotate-12 text-xl transition-all duration-200 max-lg:top-6 max-lg:text-lg ${isLeading ? '-right-2' : '-right-36'}`}>
                       {isLeading ? <div className="motion-preset-pulse-sm opacity-75">🥇</div> : '🥇'}
                     </div>
                   </span>

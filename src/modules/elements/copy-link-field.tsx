@@ -33,7 +33,7 @@ export default function CopyLinkField({ link, inputDataTest, buttonDataTest }: P
   return (
     <div className="flex w-full items-stretch">
       <input
-        className="box-border w-full border-none bg-gray-600 p-3 text-sm text-white"
+        className="text-default box-border w-full border-none bg-gray-600 p-3 text-sm"
         readOnly
         value={link}
         data-test={inputDataTest}

@@ -59,7 +59,7 @@ function DurationBar({ players, duration }: Props) {
   if (!duration) return null;
 
   return (
-    <div className="absolute top-1/2 left-0 h-2.5 w-full -translate-y-1/2 bg-black/50">
+    <div className="absolute top-1/2 left-0 h-2.5 w-full -translate-y-1/2 bg-black/55">
       {firstNotes.map((note) => (
         <Marker key={note} position={note / durationMs} />
       ))}

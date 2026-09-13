@@ -1,5 +1,5 @@
-import { FallbackRender } from '@sentry/react';
 import localForage from 'localforage';
+import { PostHogErrorBoundaryFallbackProps } from 'posthog-js/react';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -7,18 +7,22 @@ import { MenuButton } from '~/modules/elements/menu';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import storage from '~/modules/utils/storage';
 
-export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
-  const errorObj = error as object;
+type Props = PostHogErrorBoundaryFallbackProps & {
+  resetError: () => void;
+};
+
+export const ErrorFallback = ({ error, resetError }: Props) => {
+  const message = typeof error === 'object' && error !== null && 'message' in error ? String(error.message) : null;
 
   return (
     <MenuWithLogo supportedBrowsers>
       <Menu.Header>
         <Icon icon="ic:baseline-warning" className="text-[2.1875rem]" /> An error occurred :(
       </Menu.Header>
-      {'message' in errorObj ? (
+      {message !== null ? (
         <>
           <span className="typography text-lg">The game crashed with following error</span>
-          <pre className="font-mono text-white">{errorObj.message as string}</pre>
+          <pre className="text-default font-mono">{message}</pre>
         </>
       ) : (
         <span className="typography text-lg">The game crashed</span>

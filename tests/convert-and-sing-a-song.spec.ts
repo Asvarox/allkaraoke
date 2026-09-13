@@ -106,6 +106,7 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await pages.postGameHighScoresPage.goToSongList();
     await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
   });

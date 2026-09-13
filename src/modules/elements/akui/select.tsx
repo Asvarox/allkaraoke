@@ -9,19 +9,22 @@ import {
   useRef,
   useState,
 } from 'react';
-import { twc, TwcComponentProps } from 'react-twc';
+import { TwcComponentProps } from 'react-twc';
 
 import Box from '~/modules/elements/akui/primitives/box';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
 import { nextIndex } from '~/modules/utils/indexes';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
+import { twx } from '~/utils/twx';
 
 export interface SelectOption {
   value: string;
   label: string;
   /**
    * Rendered twice, so it should size itself to its container (`h-full w-full object-cover`): as a
-   * small square in the option list, and as a strip covering the right edge of the closed field.
+   * small square in the option list, and as a padded, rounded tile inset into the right edge of the
+   * closed field.
    */
   icon?: ReactNode;
 }
@@ -171,8 +174,11 @@ export const Select = ({
               data-e2e-selected={option.value === value}
               $focused={index === focusedOption}
               onClick={() => commit(option)}>
+              {/* Flag on the right, label on the left — the same order the language rows and the
+                  language picker sheet use. `flex-1` lets the label truncate instead of pushing
+                  the icon off the row. */}
+              <span className="flex-1 truncate">{option.label}</span>
               {option.icon && <OptionIcon>{option.icon}</OptionIcon>}
-              <span className="truncate">{option.label}</span>
             </SelectMenuItem>
           ))}
         </SelectMenu>
@@ -183,30 +189,33 @@ export const Select = ({
 
 Select.displayName = 'Select';
 
-const Container = twc.div`relative`;
+const Container = twx.div`relative`;
 
-// Matches the flag strip on the language rows: inset by the border, full height, rounded to the
-// field's own corner. The aspect ratio keeps the proportion at any field height.
-const SelectedIcon = twc.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 overflow-hidden rounded-r-xl`;
+// Matches the flag on the language rows: inset by the border, full height, and the icon itself
+// padded away from the field's edges and rounded on all four corners rather than bleeding into
+// them (`*:` styles the icon the caller passed in). The aspect ratio keeps the proportion at any
+// field height.
+const SelectedIcon = twx.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 p-1.5 *:rounded-xl`;
 
-const OptionIcon = twc.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-xs`;
+// Rounded like the flag on the field and on the language rows, scaled down to the row's own size.
+const OptionIcon = twx.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-sm`;
 
 // `justify-start` undoes `Box`'s `justify-center`: a centred flex column that overflows pushes its
 // leading items past the scroll origin, where no amount of scrolling can reach them.
-// `bg-slate-800` + border is the same surface a modal `Menu` is made of, so the popup reads as part
-// of the app. `Box`'s own `bg-black/30` disappears against a dark backdrop once the list overflows
+// The shared `dialogSurface` — the same surface a modal `Menu` is made of, so the popup reads as
+// part of the app. `Box`'s own translucent black disappears against a dark backdrop once the list overflows
 // past whatever it is anchored in.
-const SelectMenu = twc(
+const SelectMenu = twx(
   Box,
-)`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto border border-white/10 bg-slate-800 p-1`;
+)`absolute z-2 max-h-[12em] w-full items-stretch justify-start gap-3 overflow-y-auto p-1 ${dialogSurface}`;
 
-// `text-lg` (with the same `mobile:text-md` breakpoint) matches the committed value's size in the
+// `text-lg` (with the same `max-lg:text-md` breakpoint) matches the committed value's size in the
 // trigger, which sits in an `Input` at the default `small` size.
-const SelectMenuItem = twc.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
+const SelectMenuItem = twx.div<{ $focused: boolean } & TwcComponentProps<'div'>>((props) => [
   // No `max-h`: `Box` is `box-border`, so a 1em cap counts the `p-2` padding too and crops the
   // `text-lg` line. A minimum keeps the rows even without clipping their labels.
-  'typography mobile:text-md flex min-h-[2.5em] cursor-pointer items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
-  props.$focused ? 'text-active' : 'text-white',
+  'typography max-lg:text-md flex min-h-[2.5em] cursor-pointer items-center gap-2 overflow-hidden rounded-lg p-2 text-lg whitespace-nowrap',
+  props.$focused ? 'text-active' : 'text-default',
 ]);
 
 interface TestWrapperProps {

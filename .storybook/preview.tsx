@@ -13,6 +13,11 @@ if (isChromatic()) {
 
 export const parameters: Preview = {
   parameters: {
+    options: {
+      // Alphabetical would put Components first. Read the system in the order it is built instead:
+      // the tokens, then the kit made from them, then the screens the kit assembles into.
+      storySort: { order: ['Foundations', 'Components', 'Game'] },
+    },
     viewport: {
       options: {
         ...MINIMAL_VIEWPORTS,

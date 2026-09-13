@@ -1,12 +1,11 @@
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
-import { ErrorBoundary } from '@sentry/react';
-import { Suspense, lazy, useEffect, useMemo } from 'react';
+import { PostHogErrorBoundary } from 'posthog-js/react';
+import { Suspense, lazy, useMemo, useState } from 'react';
 import { Route, Router, Switch } from 'wouter';
 
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import PageLoader from '~/modules/elements/page-loader';
-import useMobileModeDisabled from '~/modules/hooks/use-mobile-mode-disabled';
 import GetSongsBPMs from '~/routes/edit/get-songs-bp-ms';
 import ExcludeLanguages from '~/routes/exclude-languages/exclude-languages';
 import Game from '~/routes/game/game';
@@ -19,7 +18,7 @@ import routePaths from '~/routes/route-paths';
 import { CalibrationSettings } from '~/routes/settings/calibration';
 import RemoteMicSettings from '~/routes/settings/remote-mic-settings';
 import Settings from '~/routes/settings/settings';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { GraphicSetting, useSettingValue } from '~/routes/settings/settings-state';
 import SocialMediaElements from '~/routes/social-media-elements/social-media-elements';
 import Welcome from '~/routes/welcome/welcome';
 
@@ -48,16 +47,9 @@ const LazyDevScreenshots = import.meta.env.DEV ? lazy(() => import('~/routes/dev
 
 function App() {
   const [graphicSetting] = useSettingValue(GraphicSetting);
-
-  const mobileModeDisabled = useMobileModeDisabled();
-  const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  useEffect(() => {
-    // Force it off for users who opted in before the flag loaded, or in a previous session,
-    // while the disable-mobile-mode experiment is running.
-    if (mobileModeDisabled && mobilePhoneMode) {
-      setMobilePhoneMode(false);
-    }
-  }, [mobileModeDisabled, mobilePhoneMode, setMobilePhoneMode]);
+  // Remounts the boundary (and everything below it) when "Reset Error" is clicked, since
+  // PostHogErrorBoundary has no reset method of its own.
+  const [errorBoundaryKey, setErrorBoundaryKey] = useState(0);
 
   const theme = useMemo<Theme>(
     () =>
@@ -69,7 +61,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <ErrorBoundary fallback={ErrorFallback}>
+      <PostHogErrorBoundary
+        key={errorBoundaryKey}
+        fallback={(props) => <ErrorFallback {...props} resetError={() => setErrorBoundaryKey((key) => key + 1)} />}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
             <Router base={import.meta.env.BASE_URL}>
@@ -148,7 +142,7 @@ function App() {
             </Router>
           </KeyboardHelpProvider>
         </LayoutWithBackgroundProvider>
-      </ErrorBoundary>
+      </PostHogErrorBoundary>
     </ThemeProvider>
   );
 }

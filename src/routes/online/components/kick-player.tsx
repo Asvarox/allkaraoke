@@ -31,7 +31,7 @@ export default function KickPlayer({ participant }: Props) {
       <button
         type="button"
         title={`Remove ${participant.name} from the room`}
-        className="flex cursor-pointer items-center opacity-75 hover:text-red-400 hover:opacity-100"
+        className="hover:text-danger flex cursor-pointer items-center opacity-75 hover:opacity-100"
         data-test={`online-kick-${participant.playerNumber}`}>
         <Icon icon="ic:baseline-close" className="h-5 w-5" />
       </button>

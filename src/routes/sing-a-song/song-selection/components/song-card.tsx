@@ -107,7 +107,12 @@ interface SongCardProps extends ComponentProps<'div'> {
   song: SongPreview;
   isPopular: boolean;
   forceFlag?: boolean;
-  /** When true, applies the focused scale/border/shadow style (scale-100 md:scale-[1.075] + amber border + glow) */
+  /** When true, the card takes the keyboard-focus treatment: the active colour, scaled up.
+   *
+   * A border and an outward glow rather than a fill, because the card's interior is not the card's
+   * to paint — in the song list the focused card is covered by the song preview's own card, so a
+   * background would flash orange and then be hidden the moment the preview fades in. The edge is
+   * the only part that stays visible. */
   focused?: boolean;
 }
 
@@ -126,7 +131,7 @@ function SongCardRoot({
         className={cn(
           'relative box-border flex h-full w-full flex-col items-stretch justify-normal overflow-hidden rounded-2xl p-1.5 transition-all duration-300',
           focused
-            ? 'scale-100 border-2 border-amber-400 shadow-[0_0_24px_rgba(250,204,21,0.35)] md:scale-[1.075]'
+            ? 'border-active shadow-active/35 scale-100 border-2 shadow-[0_0_24px] md:scale-[1.075]'
             : 'border border-white/10',
           className,
         )}

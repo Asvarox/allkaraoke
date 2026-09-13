@@ -11,7 +11,6 @@
     "@mui/material": "^9.3.1",
     "@mui/system": "^9.3.0",
     "@mui/x-date-pickers": "^9.11.0",
-    "@sentry/react": "^10.58.0",
     "@sindresorhus/transliterate": "^2.3.1",
     "@uriopass/nosleep.js": "^0.12.2",
     "aubiojs": "0.1.0",
@@ -109,7 +108,6 @@
     "@playwright/experimental-ct-react": "1.62.1",
     "@playwright/test": "1.62.1",
     "@rolldown/plugin-babel": "^0.2.3",
-    "@sentry/vite-plugin": "^5.4.0",
     "@storybook/addon-links": "^10.5.7",
     "@storybook/react-vite": "^10.5.7",
     "@tailwindcss/postcss": "^4.3.3",
@@ -176,6 +174,6 @@
       "unplugged": true
     }
   },
-  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
+  "packageManager": "pnpm@12.3.4",
   "license": "MIT"
 }

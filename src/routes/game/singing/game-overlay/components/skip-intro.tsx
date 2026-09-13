@@ -56,7 +56,7 @@ function SkipIntro({ playerRef, isEnabled, onSkip, onOpenPauseMenu }: Props) {
     <KeyboardNavContext value={register}>
       <Menu.HelpText
         {...skipNav}
-        className="pointer-events-none fixed bottom-[15rem] z-[4] w-full p-2 text-center text-2xl transition-all duration-500 [text-shadow:0_0_2rem_black]"
+        className="z-scene-hint text-shadow-legible-lg pointer-events-none fixed bottom-[15rem] w-full p-2 text-center text-2xl transition-all duration-500"
         style={{
           transform: canSkip ? 'scale(1)' : 'scale(0)',
           opacity: canSkip ? 1 : 0,

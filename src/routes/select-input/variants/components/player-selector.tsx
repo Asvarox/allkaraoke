@@ -1,5 +1,3 @@
-import { twc } from 'react-twc';
-
 import { Menu } from '~/modules/elements/akui/menu';
 import { Switcher } from '~/modules/elements/switcher';
 import { PlayerMicCheck } from '~/modules/elements/volume-indicator';
@@ -7,6 +5,7 @@ import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import { PlayerEntity } from '~/modules/players/players-manager';
 import { useMicrophoneList } from '~/routes/select-input/hooks/use-microphone-list';
 import { usePlayerInput } from '~/routes/select-input/hooks/use-player-input';
+import { twx } from '~/utils/twx';
 
 interface Props {
   player: PlayerEntity;
@@ -49,9 +48,9 @@ export const PlayerSelector = (props: Props) => {
   );
 };
 
-const SwitcherWithMicCheck = twc(Switcher)`relative`;
+const SwitcherWithMicCheck = twx(Switcher)`relative`;
 
-const SwitcherWithPlayerHeader = twc(Switcher)`bg-none`;
+const SwitcherWithPlayerHeader = twx(Switcher)`bg-none`;
 
-const Header = twc.div`flex items-end justify-between`;
+const Header = twx.div`flex items-end justify-between`;
 export default PlayerSelector;
