@@ -10,7 +10,7 @@
 #GAP:8761,622854170279
 #ALLKARAOKE_ID:patricio-vazquez-amor-solo-en-mi-amor
 #ALLKARAOKE_SID:6313
-#ALLKARAOKE_LASTUPDATE:2026-09-12T02:27:45.928Z
+#ALLKARAOKE_LASTUPDATE:2026-09-11T20:44:22.385Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=orphen

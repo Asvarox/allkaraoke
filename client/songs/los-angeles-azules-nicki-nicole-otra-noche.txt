@@ -9,7 +9,7 @@
 #GAP:20441,089012063905
 #ALLKARAOKE_ID:los-angeles-azules-nicki-nicole-otra-noche
 #ALLKARAOKE_SID:6308
-#ALLKARAOKE_LASTUPDATE:2026-09-12T02:27:42.443Z
+#ALLKARAOKE_LASTUPDATE:2026-09-11T20:42:21.396Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=vicktoben
 #ALLKARAOKE_REALBPM:368,04
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Los%20%C3%81ngeles%20Azules%20&%20NICKI%20NICOLE&cancion=Otra%20Noche

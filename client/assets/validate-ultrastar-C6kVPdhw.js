@@ -1,0 +1,3 @@
+import{r as e}from"./songs-service-Dizfaldv.js";function t(e){return e.tracks.every(e=>e.sections.every(e=>Number.isFinite(e.start)?e.type===`pause`?Number.isFinite(e.end):e.notes.every(e=>Number.isFinite(e.start)&&Number.isFinite(e.length)&&Number.isFinite(e.pitch)):!1))}function n(n){let r=n.split(`
+`);for(let e of[`#TITLE`,`#ARTIST`,`#BPM`])if(!r.some(t=>t.startsWith(e)))return!1;if(!r.some(e=>e.startsWith(`:`)))return!1;try{return t(e(n))}catch(e){return console.log(e),!1}}export{n as t};
+//# sourceMappingURL=validate-ultrastar-C6kVPdhw.js.map

@@ -1,18 +1,3 @@
-(function() {
-	try {
-		var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-		e.SENTRY_RELEASE = { id: "896e7aeb239d80f3424d1147224653a7e9201efd" };
-		e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[new e.Error().stack] = function(e) {
-			for (var n = 1; n < arguments.length; n++) {
-				var a = arguments[n];
-				if (null != a) for (var t in a) a.hasOwnProperty(t) && (e[t] = a[t]);
-			}
-			return e;
-		}({}, e._sentryModuleMetadata[new e.Error().stack], { "_sentryBundlerPluginAppKey:allkaraoke-party-sentry-key": true });
-		var n = new e.Error().stack;
-		n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "997a46a1-c9f3-4159-bf9b-e58b8de11960", e._sentryDebugIdIdentifier = "sentry-dbid-997a46a1-c9f3-4159-bf9b-e58b8de11960");
-	} catch (e) {}
-})();
 import { DurableObject } from "cloudflare:workers";
 //#region functions/unverified-songs-browser-admin-auth.ts
 var responseHeaders$3 = { "Content-Type": "application/json" };
@@ -155,7 +140,7 @@ var isUnverifiedSongUpdate = (payload) => {
 	const update = payload;
 	return typeof update.songId === "string" && typeof update.songTxt === "string" && typeof update.artist === "string" && typeof update.title === "string" && Array.isArray(update.language) && update.language.every((language) => typeof language === "string") && typeof update.videoId === "string";
 };
-var onRequest$7 = async ({ request, env }) => {
+var onRequest$6 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
@@ -192,7 +177,7 @@ var onRequest$7 = async ({ request, env }) => {
 };
 //#endregion
 //#region functions/admin/unverified-songs.ts
-var onRequest$6 = async ({ request, env }) => {
+var onRequest$5 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
@@ -256,12 +241,12 @@ async function forwardRequest({ request }, pathWithSearch) {
 	originRequest.headers.delete("cookie");
 	return await fetch(`https://${API_HOST}/${pathWithSearch}`, originRequest);
 }
-var onRequest$5 = (context) => {
+var onRequest$4 = (context) => {
 	return handleRequest(context);
 };
 //#endregion
 //#region functions/proxy.ts
-var onRequest$4 = async (context) => {
+var onRequest$3 = async (context) => {
 	const hostAllowList = ["ultrastar-es.org", "usdb.animux.de"];
 	try {
 		const url = new URL(context.request.url);
@@ -283,19 +268,6 @@ var onRequest$4 = async (context) => {
 		console.error(e);
 		return new Response();
 	}
-};
-//#endregion
-//#region functions/stry-tunnel.ts
-var onRequest$3 = async (context) => {
-	const bodyString = await context.request.text();
-	const [data] = bodyString.split("\n");
-	const { dsn } = JSON.parse(data);
-	const url = `https://sentry.io/api${new URL(dsn).pathname}/envelope/`;
-	return await fetch(url, {
-		method: "POST",
-		headers: { "Content-Type": "application/x-sentry-envelope" },
-		body: bodyString
-	});
 };
 //#endregion
 //#region functions/unverified-song.ts
@@ -2693,14 +2665,13 @@ var worker_entry_default = { fetch(request, env, executionContext) {
 	if (pathname === "/unverified-songs" || pathname === "/shared-songs") return callPagesHandler(onRequest$1, request, env, executionContext);
 	if (pathname === "/unverified-song" || pathname === "/shared-song") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/unverified-songs-admin" || pathname === "/shared-songs-admin") return callPagesHandler(onRequest, request, env, executionContext);
-	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$6, request, env, executionContext);
-	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$7, request, env, executionContext);
+	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$5, request, env, executionContext);
+	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$6, request, env, executionContext);
 	if (pathname === "/leaderboard") return request.method === "GET" ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
 	if (pathname === "/leaderboard-song") return handleSongLeaderboardRead(request, env);
 	if (pathname === "/leaderboard-admin") return handleLeaderboardAdmin(request, env);
-	if (pathname === "/proxy") return callPagesHandler(onRequest$4, request, env, executionContext);
-	if (pathname === "/stry-tunnel") return callPagesHandler(onRequest$3, request, env, executionContext);
-	if (pathname === "/ph-data" || pathname.startsWith("/ph-data/")) return callPagesHandler(onRequest$5, request, env, executionContext, { catchall: pathname.slice(8).split("/").filter(Boolean) });
+	if (pathname === "/proxy") return callPagesHandler(onRequest$3, request, env, executionContext);
+	if (pathname === "/ph-data" || pathname.startsWith("/ph-data/")) return callPagesHandler(onRequest$4, request, env, executionContext, { catchall: pathname.slice(8).split("/").filter(Boolean) });
 	return new Response("Not found", { status: 404 });
 } };
 //#endregion
