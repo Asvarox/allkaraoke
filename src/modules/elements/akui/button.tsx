@@ -4,7 +4,12 @@ import { ButtonSize, sizeToIconSize } from '~/modules/elements/akui/button-sizes
 import useResponsiveValue from '~/modules/elements/akui/hooks/use-responsive-value';
 import { Icon, IconProps } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
-import { inactiveSurface, interactiveFocus, interactiveSurface } from '~/modules/elements/akui/surfaces';
+import {
+  inactiveSurface,
+  interactiveFocus,
+  interactiveFocusHover,
+  interactiveSurface,
+} from '~/modules/elements/akui/surfaces';
 import { ResponsiveValue } from '~/modules/elements/akui/types';
 import isE2E from '~/modules/utils/is-e2-e';
 import { cn } from '~/utils/cn';
@@ -27,7 +32,7 @@ export const ButtonBase = twx(Box)((props) => {
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
     !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
-    !isE2E() && !props['disabled'] && !props['data-read-only'] ? `hover:${interactiveFocus}` : '',
+    !isE2E() && !props['disabled'] && !props['data-read-only'] ? interactiveFocusHover : '',
     props['disabled']
       ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500! text-gray-300!'
       : 'active:bg-active',

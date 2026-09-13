@@ -20,11 +20,15 @@ export class LandingPagePO {
     await this.page.getByTestId('join-existing-game').and(this.page.locator(':visible')).click();
   }
 
+  public get mobileModePrompt() {
+    return this.page.getByTestId('enable-mobile-mode');
+  }
+
   public async dismissMobileModePrompt() {
     await this.page.getByTestId('dismiss-mobile-mode').click();
   }
 
   public async enableMobilePhoneMode() {
-    await this.page.getByTestId('enable-mobile-mode').click();
+    await this.mobileModePrompt.click();
   }
 }

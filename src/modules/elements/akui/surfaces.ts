@@ -37,6 +37,14 @@ export const interactiveSurface = 'shadow-focusable bg-black/55!';
 export const interactiveFocus = 'subtle-focus';
 
 /**
+ * The same highlight on pointer hover. Spelled out as a literal rather than built as
+ * `` `hover:${interactiveFocus}` ``: Tailwind scans source text for class names, so an interpolated
+ * variant is never seen and the rule is never generated — the class lands on the element at runtime
+ * with no CSS behind it.
+ */
+export const interactiveFocusHover = 'hover:subtle-focus';
+
+/**
  * Interactive, still operable, but currently switched off — an excluded language, an option that is
  * toggled off rather than unavailable. Struck through and dimmed, so it reads as a live control in
  * an "off" state rather than as a disabled one the player cannot reach.

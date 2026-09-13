@@ -33,13 +33,6 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
     window.isE2ETests = true;
   });
 };
-/** Puts the tiled main menu up — the menu side of the `new_landing_menu` experiment. */
-export const enableNewMainMenu = async ({ context }: { page: Page; context: BrowserContext }) => {
-  await context.addInitScript(() => {
-    window.isE2ENewMainMenu = true;
-  });
-};
-
 /**
  * Runs a spec against the original online mode — the PartyKit room the `OnlineP2P` flag falls back
  * to. Without this the suite exercises P2P, since e2e forces feature flags on.
@@ -51,13 +44,12 @@ export const useServerOnlineMode = async ({ context }: { page: Page; context: Br
 };
 
 /**
- * Puts the card-grid landing page up — the landing side of the `new_landing_menu` experiment. The
- * two sides are opted into separately here, so a spec can reproduce any of the experiment's four
- * arms.
+ * Puts a mobile device straight into Mobile Phone Mode with no prompt — the `test` arm of the
+ * `mobile_mode_auto_opt_in` experiment. Without it a spec gets the prompt, which is the control arm.
  */
-export const enableNewLandingPage = async ({ context }: { page: Page; context: BrowserContext }) => {
+export const enableAutoMobileMode = async ({ context }: { page: Page; context: BrowserContext }) => {
   await context.addInitScript(() => {
-    window.isE2ENewLandingPage = true;
+    window.isE2EAutoMobileMode = true;
   });
 };
 
