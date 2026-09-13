@@ -26,7 +26,7 @@ const EVALUATION_TIMEOUT_MS = 1_500;
  *
  * - `pending` - flags haven't been evaluated yet, render neither arm
  * - `enabled` - opt the user in without asking (`test`)
- * - `disabled` - show the prompt (`control`, an unevaluated flag, or a failed lookup)
+ * - `disabled` - show the prompt (`control`, a failed lookup, or one that arrived too late)
  */
 export type MobileModeAutoOptIn = 'pending' | 'enabled' | 'disabled';
 
@@ -48,8 +48,11 @@ export default function useMobileModeAutoOptIn(): MobileModeAutoOptIn {
   // Toggle Mobile Phone Mode back off in the Settings menu to get the prompt back.
   if (isDev()) return 'enabled';
 
+  // Latched: once we've given up and shown the prompt, a late `test` must not flip the mode under
+  // whoever is reading it - the setting is persisted, so that opt-in would stick.
+  if (evaluationTimedOut) return 'disabled';
   if (variant === 'test') return 'enabled';
-  if (variant === undefined && !evaluationTimedOut) return 'pending';
+  if (variant === undefined) return 'pending';
 
   return 'disabled';
 }
