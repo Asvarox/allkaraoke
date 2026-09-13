@@ -1,3 +1,4 @@
+import isMobile from 'is-mobile';
 import { ComponentProps, memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { Link } from 'wouter';
@@ -9,7 +10,6 @@ import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useBlockScroll from '~/modules/hooks/use-block-scroll';
-import useInstantSongPreview from '~/modules/hooks/use-instant-song-preview';
 import useSmoothNavigate, { buildUrl } from '~/modules/hooks/use-smooth-navigate';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
@@ -110,7 +110,8 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
   const songGroupHeight = songEntryHeight / 2.5;
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
-  const instantSongPreview = useInstantSongPreview();
+  // Tapping a song on touch devices opens its preview right away; on desktop the first click only moves focus.
+  const instantSongPreview = useMemo(() => isMobile(), []);
   const selectAndExpandSong = useCallback(
     (songId: string) => {
       moveToSong(songId);
