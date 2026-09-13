@@ -101,14 +101,11 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 data-excluded={excluded}
                 name={`lang-${name}`}
                 label={name}
-                onClick={() => toggleLanguage(name)}>
+                onClick={() => toggleLanguage(name)}
+                flag={<Flag language={[name]} />}>
                 <span>
                   <LanguageName>{name}</LanguageName> ({count} songs)
                 </span>
-                <div
-                  className={`absolute top-[1px] right-[1px] bottom-[1px] w-18 transition-all md:w-28 ${excluded ? 'grayscale-75' : 'grayscale-0'}`}>
-                  <Flag language={[name]} className="h-full w-full rounded-xl object-cover p-1.5" />
-                </div>
               </NavCheckbox>
             );
           })}

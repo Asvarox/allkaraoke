@@ -23,7 +23,8 @@ export interface SelectOption {
   label: string;
   /**
    * Rendered twice, so it should size itself to its container (`h-full w-full object-cover`): as a
-   * small square in the option list, and as a strip covering the right edge of the closed field.
+   * small square in the option list, and as a padded, rounded tile inset into the right edge of the
+   * closed field.
    */
   icon?: ReactNode;
 }
@@ -173,8 +174,11 @@ export const Select = ({
               data-e2e-selected={option.value === value}
               $focused={index === focusedOption}
               onClick={() => commit(option)}>
+              {/* Flag on the right, label on the left — the same order the language rows and the
+                  language picker sheet use. `flex-1` lets the label truncate instead of pushing
+                  the icon off the row. */}
+              <span className="flex-1 truncate">{option.label}</span>
               {option.icon && <OptionIcon>{option.icon}</OptionIcon>}
-              <span className="truncate">{option.label}</span>
             </SelectMenuItem>
           ))}
         </SelectMenu>
@@ -187,11 +191,14 @@ Select.displayName = 'Select';
 
 const Container = twx.div`relative`;
 
-// Matches the flag strip on the language rows: inset by the border, full height, rounded to the
-// field's own corner. The aspect ratio keeps the proportion at any field height.
-const SelectedIcon = twx.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 overflow-hidden rounded-r-xl`;
+// Matches the flag on the language rows: inset by the border, full height, and the icon itself
+// padded away from the field's edges and rounded on all four corners rather than bleeding into
+// them (`*:` styles the icon the caller passed in). The aspect ratio keeps the proportion at any
+// field height.
+const SelectedIcon = twx.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 p-1.5 *:rounded-xl`;
 
-const OptionIcon = twx.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-xs`;
+// Rounded like the flag on the field and on the language rows, scaled down to the row's own size.
+const OptionIcon = twx.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-sm`;
 
 // `justify-start` undoes `Box`'s `justify-center`: a centred flex column that overflows pushes its
 // leading items past the scroll origin, where no amount of scrolling can reach them.

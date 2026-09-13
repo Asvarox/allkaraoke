@@ -38,12 +38,12 @@ export default function LanguagePickerBottomSheet({
               onSelect(name);
               onClose();
             }}
-            className="w-full scale-100! justify-between pr-0 pl-4"
-            data-test={`language-picker-${name}`}>
+            className="w-full scale-100! justify-start pl-4"
+            data-test={`language-picker-${name}`}
+            flag={<Flag language={[name]} />}>
             <span>
               {name} <small className="pl-2 text-xs">({count} songs)</small>
             </span>
-            <Flag language={[name]} className="h-full w-20 object-cover" />
           </Button>
         ))}
       </div>
