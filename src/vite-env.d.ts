@@ -3,10 +3,6 @@
 declare namespace globalThis {
   var chrome: any;
   var isE2ETests: boolean | undefined;
-  /** Set by `enableNewMainMenu` in tests/helpers.ts — the e2e stand-in for the experiment. */
-  var isE2ENewMainMenu: boolean | undefined;
-  /** Set by `enableNewLandingPage` in tests/helpers.ts — the e2e stand-in for the experiment. */
-  var isE2ENewLandingPage: boolean | undefined;
 
   // See https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1615
   type OrientationLockType =
