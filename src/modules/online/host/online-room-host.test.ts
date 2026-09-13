@@ -303,6 +303,73 @@ describe('OnlineRoomHost stall detection', () => {
   });
 });
 
+/**
+ * A snapshot in the shape a host persists, so a test can start a room already in a given phase.
+ * `successor` is connected, which is what makes the restore a hibernation wake rather than a
+ * restart — a restart deliberately drops `readiness`/`singing` back to the lobby.
+ */
+const snapshotInPhase = (phase: string, hostId = 'host-participant'): OnlineHostSnapshot =>
+  ({
+    roomCode: 'testr',
+    participants: [
+      { id: hostId, name: 'A', joinOrder: 0, playerNumber: 0, connected: true, ready: false, graceDeadline: null },
+      { id: 'successor', name: 'B', joinOrder: 1, playerNumber: 1, connected: true, ready: false, graceDeadline: null },
+    ],
+    nextJoinOrder: 2,
+    hostId,
+    tolerance: 2,
+    phase,
+    chart: null,
+    chartPreview: null,
+    leaderboard: [],
+    finalResults: [],
+    lastActivityAt: Date.now(),
+    bannedIds: [],
+    created: true,
+    readinessDeadline: null,
+    playbackAnchor: null,
+    pause: null,
+    resumeCountdownEndsAt: null,
+    finishRequestedAt: null,
+  }) as unknown as OnlineHostSnapshot;
+
+const broadcastPhases = (messages: OnlineMessages[]) =>
+  messages.filter((message) => message.t === 'snapshot').map((message) => (message.state as { phase: string }).phase);
+
+describe('OnlineRoomHost snapshot broadcasting', () => {
+  it('puts a phase change on the wire at once instead of holding it for the rate limit', async () => {
+    // Restored mid-results with a live singer, so the room comes back in 'results' rather than
+    // being treated as a restart and dropped into the lobby.
+    startHost(snapshotInPhase('results'));
+    await vi.advanceTimersByTimeAsync(ONLINE_SNAPSHOT_BROADCAST_MS + 10);
+    expect(broadcastPhases(fabric.broadcasts).at(-1)).toBe('results');
+    const before = fabric.broadcasts.length;
+
+    // Well inside the rate-limit window — which is exactly when a phase change lands, because a
+    // transition is the newest thing that has happened.
+    await vi.advanceTimersByTimeAsync(50);
+    host.getLoopbackTransport().sendEvent({ t: 'rpc', id: 1, ns: 'room', method: 'returnToLobby', args: [] });
+    await vi.advanceTimersByTimeAsync(50);
+
+    // Without this the succession line keeps being told 'results' while the room is in the lobby,
+    // and a host that vanishes inside the window hands over a snapshot of the wrong phase.
+    expect(broadcastPhases(fabric.broadcasts.slice(before))).toContain('lobby');
+  });
+
+  it('still holds back a snapshot that changes nothing about the phase', async () => {
+    startHost(snapshotInPhase('lobby'));
+    await vi.advanceTimersByTimeAsync(ONLINE_SNAPSHOT_BROADCAST_MS + 10);
+    const before = fabric.broadcasts.length;
+
+    // A singer joining republishes state — routine traffic the limit exists to thin out.
+    await vi.advanceTimersByTimeAsync(50);
+    fabric.connect(1).send(hello('newcomer', 'Newcomer'));
+    await vi.advanceTimersByTimeAsync(50);
+
+    expect(broadcastPhases(fabric.broadcasts.slice(before))).toEqual([]);
+  });
+});
+
 describe('OnlineRoomHost takeover', () => {
   it('resumes the room from the previous host’s snapshot instead of restarting it', async () => {
     // What a successor holds: the last snapshot it saw broadcast, with the singers that were in

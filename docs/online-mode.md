@@ -168,19 +168,24 @@ Two mitigations are in place:
 - Every client stores the newest snapshot it receives the same way, so a takeover right after a
   navigation still has something to restore from.
 
-**Known gap.** These cover a host navigating normally. They do not yet cover a host *disappearing*
-around the same moment a client is navigating: the successor takes over holding a lobby-phase
-snapshot, so `scoring.publishFinal` (which requires `phase === 'singing'`) drops the score and the
-round ends in the lobby instead of the results.
+A host disappearing within a couple of seconds of starting a song used to lose the round: the
+successor took over holding a *lobby*-phase snapshot, so `scoring.publishFinal` (which requires
+`phase === 'singing'`) dropped the score and everyone landed back in the lobby.
+
+The cause was the snapshot rate limit rather than the navigation. `broadcastSnapshot` thinned the
+stream to one every `ONLINE_SNAPSHOT_BROADCAST_MS`, which drops precisely the wrong snapshot: a
+phase change is the newest thing that has happened, so it falls inside the window and is held back
+while the *previous* phase keeps going out. Starting a song is also when every tab is at its
+busiest, so it is exactly when a host is likely to vanish. Phase changes now bypass the limit;
+everything else — the leaderboard, singers coming and going — is still thinned.
 
 `tests/online-mode.spec.ts` "host closing the tab mid-song still lets the round finish and promotes
-the guest" is where this shows up, and it is **timing-dependent**: it passes on CI and fails
-reproducibly on a local macOS run. Whether it goes red is decided by how much of the navigation
-lands inside the stall window, so treat a green CI run as luck rather than as coverage.
+the guest" covers it end to end, and `online-room-host.test.ts` pins the rate-limit behaviour
+directly.
 
-The durable fix is to stop navigating: keep online mode on one page for the whole lobby → song →
-results cycle, so neither the host's authority nor a client's succession state is ever torn down
-mid-room. Everything else here is indifferent to that change.
+Still worth doing: stop navigating altogether, keeping online mode on one page for the whole
+lobby → song → results cycle, so neither the host's authority nor a client's succession state is
+torn down mid-room. Everything else here is indifferent to that change.
 
 ## Testing
 

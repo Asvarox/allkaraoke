@@ -92,6 +92,9 @@ export class OnlineRoomHost {
   private wakeTimer: ReturnType<typeof setTimeout> | null = null;
   private lastSnapshot: OnlinePersistedState | null = null;
   private lastSnapshotBroadcastAt = 0;
+  /** Phase of the last snapshot actually put on the wire, so a transition can jump the rate limit
+   * exactly once rather than on every tick that follows it. */
+  private lastBroadcastPhase: OnlinePersistedState['phase'] | null = null;
   private closed = false;
 
   private readonly membership: SfuRoomMembership;
@@ -406,16 +409,25 @@ export class OnlineRoomHost {
    *
    * Driven by the room logic's own `persist` rather than by a timer: it then rides exactly the
    * same path as the state pushes clients already depend on, costs nothing while a room sits
-   * still, and cannot drift out of step with the state it describes. The rate limit is a
-   * timestamp rather than a scheduled flush for the same reason — the last snapshot before a host
-   * disappears is worth more than an evenly spaced one.
+   * still, and cannot drift out of step with the state it describes.
+   *
+   * The rate limit covers the steady state — the leaderboard ticking over, singers coming and
+   * going — where a successor being a second or two behind costs nothing. A phase change is the
+   * opposite of steady state, and a plain timestamp limiter drops exactly the wrong one: the
+   * transition is the newest thing that happened, so it lands inside the window and is held back
+   * while the *previous* phase keeps being rebroadcast. A host that disappears in those two
+   * seconds — which is when a host is most likely to disappear, since starting a song is when
+   * everyone's tab is busiest — hands its successor a snapshot from before the song began, and
+   * the round ends in the lobby. So a phase change goes out at once.
    */
   private broadcastSnapshot = () => {
     const snapshot = this.lastSnapshot;
     if (!snapshot) return;
     const now = Date.now();
-    if (now - this.lastSnapshotBroadcastAt < ONLINE_SNAPSHOT_BROADCAST_MS) return;
+    const phaseChanged = snapshot.phase !== this.lastBroadcastPhase;
+    if (!phaseChanged && now - this.lastSnapshotBroadcastAt < ONLINE_SNAPSHOT_BROADCAST_MS) return;
     this.lastSnapshotBroadcastAt = now;
+    this.lastBroadcastPhase = snapshot.phase;
     this.reconcileSlots();
     const { chartData: _chartData, ...withoutChart } = snapshot;
     this.broadcast({ t: 'snapshot', state: withoutChart satisfies OnlineHostSnapshot });
