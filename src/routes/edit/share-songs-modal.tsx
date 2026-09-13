@@ -1,5 +1,4 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
-import { captureException } from '@sentry/react';
 import posthog from 'posthog-js';
 import { useState } from 'react';
 import createPersistedState from 'use-persisted-state';
@@ -29,7 +28,7 @@ export const shareSong = async (id: string) => {
     }
   } catch (e) {
     console.error(e);
-    captureException(e);
+    posthog.captureException(e);
   }
 };
 

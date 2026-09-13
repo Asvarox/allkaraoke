@@ -1,4 +1,4 @@
-import { captureException } from '@sentry/react';
+import posthog from 'posthog-js';
 
 import InputInterface from '~/modules/game-engine/input/interface';
 import AubioStrategy from '~/modules/game-engine/input/mic-strategies/aubio';
@@ -73,11 +73,11 @@ export class MicInput implements InputInterface {
 
         events.micMonitoringStarted.dispatch();
       } catch (e) {
-        captureException(e);
         console.error(e);
+        posthog.captureException(e);
       }
     } catch (e) {
-      captureException(e, { level: 'warning', extra: { message: 'MicInput.startMonitoring' } });
+      posthog.captureException(e, { message: 'MicInput.startMonitoring' });
       console.warn(e);
     }
   };

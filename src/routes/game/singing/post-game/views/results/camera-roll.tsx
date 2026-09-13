@@ -1,4 +1,4 @@
-import { captureException } from '@sentry/react';
+import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
 
 import CameraManager from '~/modules/camera/camera-manager';
@@ -23,7 +23,8 @@ function CameraRoll() {
     try {
       if (video.current) video.current.playbackRate = 16;
     } catch (e) {
-      captureException(e);
+      console.error(e);
+      posthog.captureException(e);
     }
   }, [videoSrc]);
 

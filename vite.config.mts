@@ -1,7 +1,6 @@
 import { cloudflare } from '@cloudflare/vite-plugin';
 import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
 import babel from '@rolldown/plugin-babel';
-import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import fs from 'node:fs';
@@ -36,9 +35,6 @@ export default defineConfig({
   },
   plugins: [
     process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(),
-    sentryVitePlugin({
-      applicationKey: 'allkaraoke-party-sentry-key',
-    }),
     react({
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),
