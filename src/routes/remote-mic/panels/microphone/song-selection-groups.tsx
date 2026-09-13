@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
-import { ScrollableRow } from '~/modules/elements/akui/selector';
+import { ScrollableRow } from '~/modules/elements/akui/scrollable-container';
 import { serverRpc } from '~/modules/remote-mic/network/client';
 import { RemoteSongGroupEntry } from '~/modules/remote-mic/network/client/subscriptions';
 import scrollIntoView from '~/modules/utils/scroll-into-view';

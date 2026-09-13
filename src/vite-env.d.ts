@@ -3,10 +3,6 @@
 declare namespace globalThis {
   var chrome: any;
   var isE2ETests: boolean | undefined;
-  /** Set by `enableNewMainMenu` in tests/helpers.ts — the e2e stand-in for the experiment. */
-  var isE2ENewMainMenu: boolean | undefined;
-  /** Set by `enableNewLandingPage` in tests/helpers.ts — the e2e stand-in for the experiment. */
-  var isE2ENewLandingPage: boolean | undefined;
   /** Set by `enableAutoMobileMode` in tests/helpers.ts — the e2e stand-in for the experiment. */
   var isE2EAutoMobileMode: boolean | undefined;
 

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
-import { ScrollableRow } from '~/modules/elements/akui/selector';
+import { ScrollableRow } from '~/modules/elements/akui/scrollable-container';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import scrollIntoView from '~/modules/utils/scroll-into-view';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
