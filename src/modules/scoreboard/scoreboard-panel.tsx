@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
+import { ScrollableColumn } from '~/modules/elements/akui/scrollable-container';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
 
 /**
@@ -66,16 +67,10 @@ function ScoreboardPanel({
       data-test={dataTest}>
       <Menu.Header as="h2">{title}</Menu.Header>
       <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>
-      {/* The mask fades whatever the bottom edge cuts through, so a row the list ran out of room for
-          reads as more below rather than as a row that failed to draw. It falls on empty space, and
-          so is invisible, when everything fits. */}
-      <div
-        className={clsx(
-          'flex flex-col gap-1 overflow-y-auto',
-          '[mask-image:linear-gradient(to_bottom,black_calc(100%-1.25rem),transparent)]',
-          LIST_HEIGHT,
-          listClassName,
-        )}>
+      {/* The same fade-and-arrow treatment the song group rows use, turned on its side: whichever
+          edge cuts a row off fades it and points that way, so a half-drawn row reads as more rows
+          rather than as one that failed to draw. A board whose rows all fit shows neither. */}
+      <ScrollableColumn className={clsx(LIST_HEIGHT, listClassName)} contentClassName="gap-1">
         {isLoading &&
           Array.from({ length: LOADING_ROWS }, (_, index) => (
             <Skeleton key={index} className="h-12 w-full rounded-xl" />
@@ -83,7 +78,7 @@ function ScoreboardPanel({
         {!isLoading && !!error && <Menu.HelpText data-test="scoreboard-error">Failed to load results</Menu.HelpText>}
         {!isLoading && !error && isEmpty && <Menu.HelpText data-test="scoreboard-empty">{emptyMessage}</Menu.HelpText>}
         {!isLoading && !error && children}
-      </div>
+      </ScrollableColumn>
     </Box>
   );
 }
