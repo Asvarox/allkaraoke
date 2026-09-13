@@ -57,7 +57,7 @@ export default function Setlists() {
               </Link>
             </div>
             <div className="col-span-6 flex items-center justify-center">
-              <h4>Manage setlists</h4>
+              <h4 className="text-lg">Manage setlists</h4>
             </div>
             <div className="col-span-12">
               <div className="flex flex-col items-stretch gap-4">
@@ -75,7 +75,7 @@ export default function Setlists() {
                 <p>
                   You can also make a setlist non-editable, which prevents users from adding additional songs to it.
                 </p>
-                <h5 className="flex items-center gap-2">
+                <h5 className="text-md flex items-center gap-2">
                   Your setlists
                   <Button
                     data-test={'create-new-setlist'}

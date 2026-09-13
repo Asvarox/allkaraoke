@@ -12,7 +12,7 @@ export const MenuButton = ({ info, className, ...props }: Props) => {
   return (
     <InputWrapper info={info}>
       {/* @ts-expect-error either Button or a link */}
-      <Component {...props} className={`${className}`} />
+      <Component {...props} className={className} />
     </InputWrapper>
   );
 };

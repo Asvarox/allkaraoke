@@ -64,7 +64,7 @@ function WaitForReadiness({ onFinish }: Props) {
   }));
 
   return (
-    <div className="typography absolute inset-0 z-1000 flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
+    <div className="typography absolute inset-0 z-10 flex h-full w-full flex-col items-center justify-center gap-8 text-xl">
       {!areAllPlayersReady && (
         <Typography className="text-2xl">
           Waiting for all players to click <strong>&quot;Ready&quot;</strong>

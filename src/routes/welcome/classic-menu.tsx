@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet';
-import { twc } from 'react-twc';
 
 import { Badge } from '~/modules/elements/akui/badge';
 import { Icon } from '~/modules/elements/akui/icon';
@@ -11,6 +10,7 @@ import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
+import { twx } from '~/utils/twx';
 
 /**
  * The main menu as it has always been: one centred column of buttons under the logo, with the
@@ -102,6 +102,6 @@ function ClassicMenu() {
   );
 }
 
-const BackgroundMusicCredit = twc.div`typography flex flex-col text-sm no-underline opacity-85 [view-transition-name:background-music-credit]`;
+const BackgroundMusicCredit = twx.div`typography flex flex-col text-sm no-underline opacity-85 [view-transition-name:background-music-credit]`;
 
 export default ClassicMenu;

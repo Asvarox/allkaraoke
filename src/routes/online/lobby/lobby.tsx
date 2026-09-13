@@ -4,6 +4,7 @@ import { Song } from '~/interfaces';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
@@ -23,6 +24,7 @@ import { SongUpload } from '~/routes/online/hooks/use-song-upload';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
 import LobbySongCard from '~/routes/online/lobby/lobby-song-card';
 import ParticipantList from '~/routes/online/lobby/participant-list';
+import { cn } from '~/utils/cn';
 
 interface Props {
   roomCode: string;
@@ -109,7 +111,10 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   return (
     // Same card as the expanded song preview — width, background and padding included
     <MenuWithLogo
-      className="border border-white/10 bg-slate-800 sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]"
+      className={cn(
+        dialogSurface,
+        'sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]',
+      )}
       data-test="online-lobby">
       <LobbySongCard
         preview={headerPreview}

@@ -4,6 +4,7 @@ import createPersistedState from 'use-persisted-state';
 
 import { SongPreview } from '~/interfaces';
 import { Icon } from '~/modules/elements/akui/icon';
+import { interactiveSurface } from '~/modules/elements/akui/surfaces';
 import { Flag } from '~/modules/elements/flag';
 import useBaseUnitPx from '~/modules/hooks/use-base-unit-px';
 import { serverRpc } from '~/modules/remote-mic/network/client';
@@ -122,9 +123,23 @@ function RemoteSongList({ connectionStatus }: Props) {
   }, [filteredSongList]);
 
   const [expandedArtists, setExpandedArtists] = useState<string[]>([]);
+  // A new search, another tab or another language filter is a different list; groups expanded in
+  // the old one mean nothing in it.
   useLayoutEffect(() => {
     setExpandedArtists([]);
-  }, [search, songList, tab, excludedLanguages]);
+  }, [search, tab, excludedLanguages]);
+  // `songList` changes identity again once the desktop's overrides land, a beat after the panel
+  // mounts and easily after a group has been opened. Clearing on that collapsed the group out from
+  // under whoever had just opened it, so drop only the artists that are genuinely gone.
+  useLayoutEffect(() => {
+    setExpandedArtists((artists) => {
+      const stillGrouped = groupedSongList
+        .filter((entry) => Array.isArray(entry))
+        .map((group) => getMainArtistName(group[0].artist));
+      const remaining = artists.filter((artist) => isArtistPresent(artist, stillGrouped));
+      return remaining.length === artists.length ? artists : remaining;
+    });
+  }, [groupedSongList]);
 
   const itemsToRender = useMemo(() => {
     const itemsToRender: typeof groupedSongList = [];
@@ -156,7 +171,7 @@ function RemoteSongList({ connectionStatus }: Props) {
       />
       <CustomVirtualization
         forceRenderItem={-1}
-        Footer={<div style={{ height: unit * 3.75 }} className="landscap:block hidden" />}
+        Footer={<div style={{ height: unit * 3.75 }} className="hidden max-lg:landscape:block" />}
         overScan={200}
         components={{}}
         context={{}}
@@ -181,14 +196,14 @@ function RemoteSongList({ connectionStatus }: Props) {
 
             return (
               <SongListItem
-                className="overflow-hidden border-b border-black bg-black/60 active:bg-black/100"
+                className="bg-black/75 active:bg-black"
                 data-test={`song-group-${mainArtistName}`}
                 data-song-count={song.length}
                 onClick={onClick}
                 left={
                   <Icon
                     icon="ic:baseline-arrow-right"
-                    className={`text-white transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+                    className={`text-default transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
                   />
                 }
                 topText={mainArtistName}
@@ -196,13 +211,13 @@ function RemoteSongList({ connectionStatus }: Props) {
                 action={
                   isExpanded ? (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="remove-song-button">
                       CLOSE
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="add-song-button">
                       EXPAND
                     </button>
@@ -218,7 +233,7 @@ function RemoteSongList({ connectionStatus }: Props) {
 
           return (
             <SongListItem
-              className={`${isOnSavedList ? 'bg-black/50' : 'bg-black/30'} ${isExpanded ? 'pl-16' : ''}`}
+              className={`${isOnSavedList ? 'bg-black/55' : ''} ${isExpanded ? 'pl-16' : ''}`}
               data-test={song.id}
               left={<Flag language={song.language} className="h-8 w-8 rounded-full object-cover" />}
               topText={song.title}
@@ -228,7 +243,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                 <>
                   {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       onClick={(e) => {
                         e.stopPropagation();
                         void serverRpc.songs.select(song.id);
@@ -239,7 +254,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                   )}
                   {isOnSavedList ? (
                     <button
-                      className={`active:bg-active typography h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="remove-song-button"
                       onClick={(e) => {
                         e.stopPropagation();
@@ -249,7 +264,7 @@ function RemoteSongList({ connectionStatus }: Props) {
                     </button>
                   ) : (
                     <button
-                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full bg-black px-3 text-sm`}
+                      className={`active:bg-active typography text-active h-8 min-w-8 rounded-full px-3 text-sm ${interactiveSurface}`}
                       data-test="add-song-button"
                       onClick={(e) => {
                         e.stopPropagation();
@@ -276,11 +291,17 @@ interface ItemProps extends ComponentProps<'div'> {
   bottomText: React.ReactNode;
 }
 
+/**
+ * A row in the list. `bg-black/40` is the default card surface, the same one `Box` is built from —
+ * callers only spell out a background when their row deviates from it: `/50` for a song already on
+ * the saved list, `/75` for an artist group header, which is a bar and matches the toolbar directly
+ * above the list rather than the rows under it.
+ */
 const SongListItem = ({ className, left, action, topText, bottomText, ...props }: ItemProps) => {
   return (
     <div
       className={cn(
-        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/15 px-3 transition-all duration-100`,
+        `relative flex h-15 items-center gap-4 overflow-hidden border-b border-black bg-black/40 px-3 transition-all duration-100`,
         className,
       )}
       {...props}>

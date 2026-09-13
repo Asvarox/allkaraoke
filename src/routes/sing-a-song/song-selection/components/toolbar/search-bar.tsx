@@ -150,7 +150,7 @@ export default function SearchBar({
                     e.preventDefault();
                     closeSearch();
                   }}>
-                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-white" />
+                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-default" />
                 </button>
               }
               data-test="search-input"
@@ -209,7 +209,7 @@ export default function SearchBar({
                 searchInput.current?.element?.focus();
               }}
               data-test="clear-search">
-              <Icon icon="ic:baseline-close" size={5} className="text-white" />
+              <Icon icon="ic:baseline-close" size={5} className="text-default" />
             </button>
           ) : undefined
         }

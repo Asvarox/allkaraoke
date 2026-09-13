@@ -13,7 +13,7 @@ export function BackgroundSavesIndicator() {
     <div className="pointer-events-none fixed top-2 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center gap-1">
       {pending.length > 0 && (
         <span
-          className="flex items-center gap-2 rounded-full bg-slate-900/90 px-3 py-1 text-sm text-white shadow-lg"
+          className="text-default flex items-center gap-2 rounded-full bg-slate-900/90 px-3 py-1 text-sm shadow-lg"
           data-test="admin-background-saves"
           data-pending-saves={pending.length}
           title={pending.map((save) => save.label).join('\n')}>
@@ -24,7 +24,7 @@ export function BackgroundSavesIndicator() {
       {failed.map((save) => (
         <span
           key={save.sharedSongId}
-          className="pointer-events-auto flex items-center gap-2 rounded-full bg-red-700/95 px-3 py-1 text-sm text-white shadow-lg"
+          className="text-default pointer-events-auto flex items-center gap-2 rounded-full bg-red-700/95 px-3 py-1 text-sm shadow-lg"
           data-test="admin-background-save-error"
           data-song={save.sharedSongId}>
           Failed to save {save.label}: {save.message}

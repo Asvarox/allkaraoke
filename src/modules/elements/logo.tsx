@@ -1,5 +1,4 @@
 import { ComponentProps } from 'react';
-import { twc } from 'react-twc';
 
 import storage from '~/modules/utils/storage';
 import { MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
@@ -38,4 +37,4 @@ export default function Logo(props: ComponentProps<'div'>) {
 
 const LetterBase = twx.span`typography relative top-[-0.15em] left-[-0.1em] text-[1em] leading-0.5 font-bold -tracking-[0.15em] [-webkit-text-stroke:0.02em_black] [font-variant:small-caps] [&_span]:inline-block`;
 
-const DotParty = twc.span`absolute right-[-0.3em] bottom-[0.8em] text-[0.4em] -tracking-[0.1em]`;
+const DotParty = twx.span`absolute right-[-0.3em] bottom-[0.8em] text-[0.4em] -tracking-[0.1em]`;

@@ -22,7 +22,7 @@ export const ErrorFallback = ({ error, resetError }: Props) => {
       {message !== null ? (
         <>
           <span className="typography text-lg">The game crashed with following error</span>
-          <pre className="font-mono text-white">{message}</pre>
+          <pre className="text-default font-mono">{message}</pre>
         </>
       ) : (
         <span className="typography text-lg">The game crashed</span>

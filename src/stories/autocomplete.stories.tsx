@@ -5,7 +5,7 @@ import { Autocomplete } from '~/modules/elements/autocomplete';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Autocomplete',
+  title: 'Components/Autocomplete',
   component: Autocomplete,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

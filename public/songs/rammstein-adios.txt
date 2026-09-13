@@ -1,0 +1,235 @@
+#ARTIST:Rammstein
+#TITLE:Adios
+#CREATOR:broehmsjuergen
+#BPM:230,3
+#YEAR:2001
+#VIDEO:v=rvwftBpqiiw
+#LANGUAGE:German
+#GAP:36373,01346070343
+#ALLKARAOKE_ID:rammstein-adios
+#ALLKARAOKE_SID:6272
+#ALLKARAOKE_LASTUPDATE:2026-09-07T10:02:29.132Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:229
+#MP3:Rammstein - Adios.mp3
+: 15 3 2 Er 
+: 19 3 2 legt 
+: 23 3 2 die 
+: 27 7 2 Na
+: 35 7 2 del 
+: 43 7 4 auf 
+: 51 3 4 die 
+: 55 7 5 A
+: 63 8 5 der
+- 71
+: 81 1 2 Und 
+: 83 3 2 bit 
+: 87 3 2 tet 
+: 91 7 2 die 
+: 99 7 2 mus
+: 107 7 4 ik 
+: 115 3 4 her
+: 119 12 5 rein
+- 131
+: 143 3 2 Zwi
+: 147 3 2 ~
+: 151 3 2 schen 
+: 155 7 2 Hals 
+: 163 7 2 und 
+: 171 7 4 Un
+: 179 3 4 ter
+: 183 12 5 arm
+- 195
+: 207 3 2 Die 
+: 211 3 2 Me
+: 215 3 2 lo
+: 219 7 2 die 
+: 227 7 2 fährt 
+: 235 7 4 lei
+: 243 7 4 se 
+: 251 7 5 ins 
+: 259 7 5 Ge
+: 267 8 2 bein
+- 275 384
+- 384
+: 399 3 2 Er 
+: 403 3 2 hat 
+: 407 3 2 die 
+: 411 7 2 Au
+: 419 7 2 gen 
+: 427 7 4 zu
+: 435 3 4 ge
+: 439 8 5 macht
+- 447 448
+- 448
+: 463 3 2 In 
+: 467 3 2 sei
+: 471 3 2 nem 
+: 475 7 2 Blut 
+: 483 7 2 tobt 
+: 491 7 4 ei
+: 499 3 4 ne 
+: 503 12 5 Schlacht
+- 515
+: 527 3 2 Ein 
+: 531 3 2 Heer 
+: 535 3 2 mar
+: 539 7 2 schiert 
+: 547 7 2 durch 
+: 555 7 4 sei
+: 563 3 4 nen 
+: 567 12 5 Darm
+- 579
+: 591 3 2 Die 
+: 595 3 2 Ein
+: 599 3 2 ge
+: 603 7 2 wei
+: 611 7 2 de 
+: 619 7 4 wer
+: 627 7 4 den
+- 634
+: 635 7 5 Lang
+: 643 7 5 sam 
+: 651 8 2 warm
+- 659 892
+- 892
+: 907 15 10 Nichts 
+: 923 7 10 ist 
+: 931 3 9 für 
+* 935 20 7 dich
+- 955 956
+- 956
+: 971 15 9 Nichts 
+: 987 7 9 war 
+: 995 3 12 für 
+* 999 20 9 dich
+- 1019 1020
+- 1020
+: 1035 15 10 Nichts 
+: 1051 7 10 bleibt 
+: 1059 3 9 für 
+* 1063 20 7 dich
+- 1083
+: 1095 3 5 Für 
+: 1099 3 9 im
+: 1103 12 2 mer
+: 1163 15 10 nichts 
+: 1179 7 10 ist 
+: 1187 3 9 für 
+* 1191 20 7 dich
+- 1211 1212
+- 1212
+: 1227 15 9 Nichts 
+: 1243 7 9 war 
+: 1251 3 12 für 
+* 1255 20 9 dich
+- 1275 1276
+- 1276
+: 1291 15 10 Nichts 
+: 1307 7 10 bleibt 
+: 1315 3 9 für 
+* 1319 20 7 dich
+- 1339
+: 1351 3 5 Für 
+: 1355 3 9 im
+* 1359 28 2 mer
+- 1387 1792
+- 1792
+: 1807 3 2 Er 
+: 1811 3 2 nimmt 
+: 1815 3 2 die 
+: 1819 7 2 Na
+: 1827 7 2 del 
+: 1835 7 4 von 
+: 1843 3 4 der 
+: 1847 7 5 A
+: 1855 8 5 der
+- 1863
+: 1871 3 2 Die 
+: 1875 3 2 Me
+: 1879 3 2 lo
+: 1883 7 2 die 
+: 1891 7 2 fährt 
+: 1899 7 4 aus 
+: 1907 3 4 der 
+: 1911 12 5 Haut
+- 1923
+: 1931 7 2 Gei
+: 1939 7 2 gen 
+: 1947 3 2 bren
+: 1951 8 2 nen 
+: 1963 7 4 mit 
+: 1971 3 4 Gek
+: 1975 12 5 reisch
+- 1987
+: 1995 7 2 Har
+: 2003 7 2 fen 
+: 2011 7 2 schnei
+: 2019 7 2 den 
+: 2027 3 4 sich 
+: 2031 4 4 ins 
+: 2039 12 5 Fleisch
+- 2051
+: 2063 3 2 Er 
+: 2067 3 2 hat 
+: 2071 3 2 die 
+: 2075 7 2 Au
+: 2083 7 2 gen 
+: 2091 7 2 auf
+: 2099 3 2 ge
+: 2103 12 2 macht
+- 2115 2116
+- 2116
+: 2131 3 2 Doch 
+: 2135 3 2 er 
+: 2139 7 2 ist 
+: 2147 7 2 nicht 
+: 2155 7 2 auf
+: 2163 7 2 ge
+: 2171 8 2 wacht
+- 2179
+: 2187 15 10 Nichts 
+: 2203 7 10 ist 
+: 2211 3 9 für 
+* 2215 20 7 dich
+- 2235 2236
+- 2236
+: 2251 15 9 Nichts 
+: 2267 7 9 war 
+: 2275 3 12 für 
+* 2279 20 9 dich
+- 2299 2300
+- 2300
+: 2315 15 10 Nichts 
+: 2331 7 10 bleibt 
+: 2339 3 9 für 
+* 2343 20 7 dich
+- 2363
+: 2375 3 5 Für 
+: 2379 3 9 im
+* 2383 28 2 mer
+- 2411 2428
+- 2428
+: 2443 15 10 Nichts 
+: 2459 7 10 ist 
+: 2467 3 9 für 
+* 2471 20 7 dich
+- 2491 2492
+- 2492
+: 2507 15 9 Nichts 
+: 2523 7 9 war 
+: 2531 3 12 für 
+* 2535 20 9 dich
+- 2555 2556
+- 2556
+: 2571 15 10 Nichts 
+: 2587 7 10 bleibt 
+: 2595 3 9 für 
+* 2599 20 7 dich
+- 2619
+: 2631 3 5 Für 
+: 2635 3 9 im
+* 2639 28 2 mer
+E

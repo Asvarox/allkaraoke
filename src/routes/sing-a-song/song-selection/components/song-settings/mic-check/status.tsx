@@ -3,6 +3,7 @@ import { ComponentProps } from 'react';
 import { Icon } from '~/modules/elements/akui/icon';
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import { PlayerNumber } from '~/modules/players/player-number';
+import { cn } from '~/utils/cn';
 
 import Ping from './ping';
 
@@ -17,27 +18,28 @@ function PlayerStatus({ playerNumber, tooltipPosition = 'end', className, ...res
   return (
     <div
       {...restProps}
-      className={`relative flex w-full items-center justify-end gap-2 ${className}`}
+      className={cn('relative flex w-full items-center justify-end gap-2', className)}
       data-test="player-mic-status">
       <Ping playerNumber={playerNumber} />
       {status === 'ok' ? (
         <div
           data-test="status-ok"
-          className="mobile:w-4 mobile:h-4 m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white"
+          className="m-[0.15rem] inline-block h-6 w-6 rounded-full border border-black bg-white max-lg:h-4 max-lg:w-4"
         />
       ) : status === 'unavailable' ? (
-        <Icon icon="ic:baseline-error" size={6} data-test="status-unavailable" style={{ color: '#ff0000' }} />
+        <Icon icon="ic:baseline-error" size={6} data-test="status-unavailable" className="text-danger" />
       ) : (
         <Icon
           icon="ic:baseline-warning"
           size={6}
           data-test="status-unstable"
-          style={{ color: '#f89400', stroke: 'black' }}
+          className="text-warning"
+          style={{ stroke: 'black' }}
         />
       )}
       {status !== 'ok' ? (
         <div
-          className={`absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 text-base ${
+          className={`text-md absolute -top-3 flex w-80 translate-x-4 items-center rounded-xl bg-black/75 p-2 ${
             tooltipPosition === 'end' ? 'right-auto left-full' : 'right-full left-auto'
           }`}>
           {status === 'unavailable' ? (

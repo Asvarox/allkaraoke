@@ -43,7 +43,7 @@ interface Props {
  * three copies of the same skeleton is three places to forget.
  *
  * `Box` centres its children; this stacks them full width and top-aligned instead, and spells out
- * its own surface — `Box`'s `bg-black/30` is invisible against these screens, and the border is what
+ * its own surface — `Box`'s translucent fill is invisible against these screens, and the border is what
  * reads as an edge.
  */
 function ScoreboardPanel({

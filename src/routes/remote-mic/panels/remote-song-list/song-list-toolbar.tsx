@@ -75,7 +75,7 @@ export default function SongListToolbar({
                     closeSearch();
                   }}
                   data-test="search-close-button">
-                  <Icon icon="ic:baseline-close" size={4} className="text-white" />
+                  <Icon icon="ic:baseline-close" size={4} className="text-default" />
                 </button>
               }
               autoFocus

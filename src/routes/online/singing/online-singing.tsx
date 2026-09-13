@@ -251,9 +251,9 @@ function OnlineSinging({ roomState, song }: Props) {
             the local game holds through its readiness wait — and hand over to the video once it
             genuinely starts playing. */}
         <div
-          // z-20 clears the game overlay (notes and lyrics, z-10 inside the player) while the still
-          // is up, and stays under the leaderboard (z-30) and the readiness screen (z-40)
-          className={`pointer-events-none fixed inset-0 z-20 h-full w-full bg-black transition-opacity duration-300 ${
+          // `scene-cover` clears the game overlay (notes and lyrics, stacked locally inside the
+          // player) while the still is up, and stays under `hud` and `hud-blocking`
+          className={`z-scene-cover pointer-events-none fixed inset-0 h-full w-full bg-black transition-opacity duration-300 ${
             videoStarted ? 'opacity-0' : 'opacity-100'
           }`}
           data-test="background-container">
@@ -298,7 +298,7 @@ function OnlineSinging({ roomState, song }: Props) {
         <LeaderboardOverlay />
         {hasFinished && (
           <div
-            className="typography fixed inset-x-0 top-1/3 z-30 text-center text-3xl"
+            className="typography z-hud fixed inset-x-0 top-1/3 text-center text-3xl"
             data-test="online-waiting-for-others">
             Waiting for the other singers to finish…
           </div>

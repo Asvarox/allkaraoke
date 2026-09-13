@@ -7,7 +7,7 @@ import { Button, ButtonLink, ButtonSize } from './button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'AKUI/Button',
+  title: 'Components/Button',
   component: Button,
 } as Meta<ComponentProps<typeof Button>>;
 

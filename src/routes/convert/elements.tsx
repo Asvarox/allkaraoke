@@ -1,10 +1,10 @@
 import { Button, Tooltip } from '@mui/material';
 import { ComponentProps } from 'react';
-import { twc } from 'react-twc';
 
 import { Icon } from '~/modules/elements/akui/icon';
+import { twx } from '~/utils/twx';
 
-export const Pre = twc.span`font-mono`;
+export const Pre = twx.span`font-mono`;
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const inputAction = (action: ComponentProps<typeof Button>['onClick'], enabled: boolean, label = 'Lookup') => ({

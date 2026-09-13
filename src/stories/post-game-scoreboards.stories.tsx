@@ -215,7 +215,7 @@ const Template = (args: StoryArgs) => {
 };
 
 const meta = {
-  title: 'PostGame/Scoreboards',
+  title: 'Game/Post Game/Scoreboards',
   component: Template,
   argTypes: {
     difficulty: { control: 'radio', options: Object.keys(difficulties) },

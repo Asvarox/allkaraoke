@@ -75,7 +75,7 @@ function useDrawingTestPlayers(volume: number) {
 // ---------------------------------------------------------------------------
 
 export default {
-  title: 'Song Selection/SongPreview',
+  title: 'Game/Song Selection/Song Preview',
   argTypes: {
     volume: { control: { type: 'range', min: 0, max: 1, step: 0.01 } },
     isPopular: { control: 'boolean' },

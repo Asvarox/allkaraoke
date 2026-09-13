@@ -91,7 +91,7 @@ function RemoteSongSearch({ onSearchStateChange, onExpandedChange }: Props) {
                   closeSearch();
                 }}
                 data-test="close-search-song-button">
-                <Icon icon="ic:baseline-close" size={5} className="text-white" />
+                <Icon icon="ic:baseline-close" size={5} className="text-default" />
               </button>
             }
             data-test="search-song-input"

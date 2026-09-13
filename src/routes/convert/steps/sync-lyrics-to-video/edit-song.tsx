@@ -323,7 +323,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </div>
           </>
         )}
-        {!player.current && <h2>Start the song to see the manipulation form</h2>}
+        {!player.current && <h2 className="text-xl">Start the song to see the manipulation form</h2>}
       </div>
       {player.current && (
         <>

@@ -5,7 +5,7 @@ import { BottomSheet } from './bottom-sheet';
 import { Button } from './button';
 
 export default {
-  title: 'AKUI/BottomSheet',
+  title: 'Components/Bottom Sheet',
   component: BottomSheet,
   parameters: {
     layout: 'fullscreen',

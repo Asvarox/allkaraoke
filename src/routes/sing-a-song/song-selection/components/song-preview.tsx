@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { SingSetup, SongPreview } from '~/interfaces';
+import { Backdrop } from '~/modules/elements/akui/backdrop';
 import { Icon } from '~/modules/elements/akui/icon';
+import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
@@ -159,12 +161,7 @@ export default function SongPreviewComponent({
       )}
 
       {/* Backdrop — only shown when expanded */}
-      {expanded && (
-        <div
-          className="fixed inset-0 z-201 bg-black/50 bg-[radial-gradient(transparent_3px,rgba(0,0,0,0.5)_3px)] bg-size-[10px_10px] backdrop-blur-[20px]"
-          onClick={onExitKeyboardControl}
-        />
-      )}
+      {expanded && <Backdrop className="z-expanded-backdrop" onClick={onExitKeyboardControl} />}
 
       <SongCard
         song={songPreview}
@@ -176,12 +173,13 @@ export default function SongPreviewComponent({
         data-test="song-preview"
         focused={!expanded}
         className={
-          'bg-slate-800 ' +
-          (expanded
-            ? 'fixed inset-0 z-202 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4'
-            : `absolute z-3 transition-opacity ${
+          // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
+          // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
+          expanded
+            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
+            : `absolute z-3 bg-slate-800 transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
-              }`)
+              }`
         }
         style={expanded ? {} : { width, height, top, left }}>
         {/* Click-capture overlay — collapsed only */}

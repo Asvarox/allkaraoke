@@ -28,7 +28,7 @@ function ParticipantList({ roomState, selfId, onEdit, canKick }: Props) {
               key={`empty-${playerNumber}`}
               data-test={`online-empty-slot-${playerNumber}`}
               playerNumber={playerNumber}
-              name={<span className="text-base">Free slot</span>}
+              name={<span className="text-md">Free slot</span>}
               connected={false}
               volume={{ type: 'none' }}
             />

@@ -155,7 +155,7 @@ export default function Lyrics({ player, bottom = false, effectsEnabled, showSta
 
   return (
     <motion.div
-      className={cn(!effectsEnabled ? `h-8` : 'mobile:h-20 h-30', 'box-border w-full p-3 text-center leading-none')}
+      className={cn(!effectsEnabled ? `h-8` : 'h-30 max-lg:h-20', 'box-border w-full p-3 text-center leading-none')}
       style={{ position: 'relative' }}
       data-test={`lyrics-container-player-${player.number}`}
       animate={

@@ -13,8 +13,8 @@ export default function LyricsLine({ nextLine, effectsEnabled, style, ...rest }:
         !effectsEnabled
           ? `text-[min(5vw,1.25rem)]`
           : nextLine
-            ? 'mobile:text-md text-lg'
-            : 'mobile:text-xl mobile:h-10 h-14 text-3xl',
+            ? 'max-lg:text-md text-lg'
+            : 'h-14 text-3xl max-lg:h-10 max-lg:text-xl',
         nextLine ? 'text-inactive' : 'text-default',
         'typography stroke-text',
       )}
