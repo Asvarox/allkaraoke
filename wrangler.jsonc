@@ -63,6 +63,19 @@
 				"period": 60,
 			},
 		},
+		// Online mode's two paid endpoints (`/online/session`, `/online/datachannels`), keyed by IP.
+		// Generous on purpose: a whole household behind one address joining the same room costs a
+		// session plus a channel call each, and a promotion costs another channel call — so this is
+		// well clear of honest use while still capping what an unauthenticated caller can spend on
+		// our Realtime app.
+		{
+			"name": "ONLINE_SIGNALING_RATE_LIMITER",
+			"namespace_id": "1002",
+			"simple": {
+				"limit": 60,
+				"period": 60,
+			},
+		},
 	],
 	"observability": {
 		"enabled": false,

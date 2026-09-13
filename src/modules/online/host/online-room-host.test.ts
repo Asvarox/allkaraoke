@@ -4,6 +4,7 @@ import { OnlineRoomChannels, SfuRoomMembership } from '~/modules/online/client/t
 import { OnlineHostSnapshot, OnlineRoomHost } from '~/modules/online/host/online-room-host';
 import {
   ONLINE_HOST_HEARTBEAT_MS,
+  ONLINE_HOST_STALL_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_SNAPSHOT_BROADCAST_MS,
 } from '~/modules/online/protocol/consts';
@@ -87,15 +88,20 @@ const joinedState = (messages: OnlineMessages[]): OnlineRoomState | undefined =>
 
 let fabric: ReturnType<typeof createFabric>;
 let host: OnlineRoomHost;
+let suspectedStalls: number;
 
 const startHost = (restoreFrom: OnlineHostSnapshot | null = null) => {
   fabric = createFabric();
+  suspectedStalls = 0;
   host = new OnlineRoomHost({
     roomCode: 'testr',
     participantId: 'host-participant',
     connection: fabric.channels,
     membership: fabric.membership,
     restoreFrom,
+    onSuspectedStall: () => {
+      suspectedStalls += 1;
+    },
   });
   return host;
 };
@@ -229,6 +235,71 @@ describe('OnlineRoomHost', () => {
     expect(snapshot).toBeDefined();
     expect(snapshot!.state).not.toHaveProperty('chartData');
     expect(snapshot!.state.participants).toBeDefined();
+  });
+});
+
+describe('OnlineRoomHost identity', () => {
+  it('refuses a slot claiming a participant that is sitting somewhere else', async () => {
+    startHost();
+    const victim = fabric.connect(1);
+    const impostor = fabric.connect(2);
+    victim.send(hello('victim', 'Victim'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    // Every participant id is published in room-state, so copying one costs nothing. Taking the
+    // identity would re-point the victim's replies at this slot and run its RPCs as them.
+    impostor.send(hello('victim', 'Not The Victim'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(impostor.received.at(-1)).toMatchObject({ t: 'join-rejected', reason: 'not-authorized' });
+    // The victim keeps its seat: it did nothing wrong, and was not even involved.
+    expect(lastState(fabric.broadcasts)?.participants.map((participant) => participant.name)).toContain('Victim');
+  });
+
+  it('refuses a slot claiming the host', async () => {
+    startHost();
+    const impostor = fabric.connect(1);
+
+    // The host joins over the loopback and never occupies a slot, so the slot map alone would not
+    // have caught this — and the room logic gives its host id the run of the room.
+    impostor.send(hello('host-participant', 'Not The Host'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(impostor.received.at(-1)).toMatchObject({ t: 'join-rejected', reason: 'not-authorized' });
+  });
+
+  it('still lets the rightful owner of a slot rejoin on it', async () => {
+    startHost();
+    const guest = fabric.connect(1);
+    guest.send(hello('guest', 'Guest'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    guest.send(hello('guest', 'Guest'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(guest.received.filter((message) => (message as { t: string }).t === 'joined')).toHaveLength(2);
+  });
+});
+
+describe('OnlineRoomHost stall detection', () => {
+  it('says nothing while its heartbeat keeps time', async () => {
+    startHost();
+
+    await vi.advanceTimersByTimeAsync(ONLINE_HOST_HEARTBEAT_MS * 10);
+
+    expect(suspectedStalls).toBe(0);
+  });
+
+  it('reports a gap long enough for the room to have replaced it', async () => {
+    startHost();
+    await vi.advanceTimersByTimeAsync(ONLINE_HOST_HEARTBEAT_MS);
+
+    // A throttled tab does not run its timers; when it comes back, the gap is the only evidence it
+    // has that the room waited out ONLINE_HOST_STALL_MS and moved on without it.
+    vi.setSystemTime(Date.now() + ONLINE_HOST_STALL_MS);
+    await vi.advanceTimersByTimeAsync(ONLINE_HOST_HEARTBEAT_MS);
+
+    expect(suspectedStalls).toBe(1);
   });
 });
 

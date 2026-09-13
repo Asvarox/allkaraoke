@@ -20,7 +20,3 @@ export const getCachedChartData = (manifest: ChartManifest | null): string | nul
   if (!manifest || cached?.hash !== manifest.hash) return null;
   return cached.data;
 };
-
-export const clearChartCache = () => {
-  cached = null;
-};

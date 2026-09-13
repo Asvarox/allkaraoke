@@ -97,14 +97,25 @@ export interface CreateDataChannelsResponse {
   channels: Array<{ name: string; id: number }>;
 }
 
-export type JoinRejectedReason = 'room-full' | 'not-found' | 'banned';
+export type JoinRejectedReason = 'room-full' | 'not-found' | 'banned' | 'not-authorized';
 
-/** `POST /online/room/:code/join` — claims a slot in the directory and reports who is hosting. */
+/**
+ * `POST /online/room/:code/join` — claims a slot in the directory and reports who is hosting.
+ *
+ * A participant id is not a credential: it is published to the whole room in `room-state`, so
+ * anybody who has been in a room knows everyone else's. The directory therefore mints a secret for
+ * each membership on its first join and requires it on every later call that acts on that
+ * membership. Without it, re-joining as somebody else's participant id would re-point their row —
+ * taking the host's channels over, or leaving any singer unable to open one.
+ */
 export interface JoinRoomRequest {
   participantId: string;
   sessionId: string;
   /** Opens the room when it does not exist yet. Without it an unknown code is `not-found`. */
   create?: boolean;
+  /** Proof that this caller is the participant it claims to be. Absent on a first join (there is
+   * nothing to prove yet) and required on every rejoin. */
+  secret?: string;
 }
 export type JoinRoomResponse =
   | {
@@ -113,24 +124,34 @@ export type JoinRoomResponse =
       isHost: boolean;
       /** Whose channels to subscribe to. Equals the caller's own session when `isHost`. */
       hostSessionId: string;
-      /** Bumped on every host change; stamped on every message so a resurrected old host's
-       * frames can be dropped instead of fighting the new one. */
+      /** Bumped on every host change; carried into a promotion claim so two singers reacting to
+       * the same stall cannot both win. */
       epoch: number;
       /** The slot channel this participant owns for the lifetime of its membership. */
       slot: number;
+      /** This membership's secret — minted on the first join and returned unchanged afterwards.
+       * Handed only to the joiner, and never published in room state. */
+      secret: string;
     }
   | { ok: false; reason: JoinRejectedReason };
 
 /** `POST /online/room/:code/promote` — a client that saw the host go quiet claims the role. The
- * directory accepts it only if `fromEpoch` still matches, so simultaneous claims cannot both win. */
+ * directory accepts it only if `fromEpoch` still matches, so simultaneous claims cannot both win —
+ * and only if `secret` matches, so the claim can only be made by the participant itself. */
 export interface PromoteHostRequest {
   participantId: string;
   sessionId: string;
   fromEpoch: number;
+  secret: string;
 }
 export type PromoteHostResponse =
   | { ok: true; epoch: number }
-  | { ok: false; reason: 'stale-epoch' | 'not-a-member'; epoch: number; hostSessionId: string | null };
+  | {
+      ok: false;
+      reason: 'stale-epoch' | 'not-a-member' | 'not-authorized';
+      epoch: number;
+      hostSessionId: string | null;
+    };
 
 /** `POST /online/room/:code/leave` — frees the slot so somebody else can take it. Best-effort:
  * a browser that just closes is cleaned up by the directory's own expiry instead. */

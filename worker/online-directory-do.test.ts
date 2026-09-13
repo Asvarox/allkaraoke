@@ -3,6 +3,7 @@ import { env as workerEnv } from 'cloudflare:workers';
 import { afterEach, describe, expect, it } from 'vitest';
 
 import { ONLINE_SLOT_COUNT } from '../src/modules/online/signaling/protocol';
+import type { JoinRoomResponse } from '../src/modules/online/signaling/protocol';
 import type { OnlineDirectory } from './online-directory-do';
 
 let roomCounter = 0;
@@ -12,6 +13,28 @@ const getDirectory = () => {
   const namespace = workerEnv.ONLINE_DIRECTORY as DurableObjectNamespace<OnlineDirectory>;
   return namespace.get(namespace.idFromName(`room${(roomCounter += 1)}`));
 };
+
+/** The secret a successful join minted, which every later call on that membership has to present. */
+const secretOf = (response: JoinRoomResponse) => (response.ok ? response.secret : undefined);
+
+/**
+ * Opens a relay socket the way the signaling layer does — by forwarding an upgrade request, since a
+ * 101 carrying a `webSocket` cannot cross the Durable Object RPC boundary.
+ */
+const openRelay = async (directory: DurableObjectStub<OnlineDirectory>, participantId: string, sessionId: string) => {
+  const url = `https://example.test/online/room/testr/relay?participantId=${participantId}&sessionId=${sessionId}`;
+  const response = await directory.fetch(new Request(url, { headers: { Upgrade: 'websocket' } }));
+  const socket = response.webSocket!;
+  socket.accept();
+  const received: string[] = [];
+  socket.addEventListener('message', (event) => {
+    received.push(event.data as string);
+  });
+  return { socket, received, send: (raw: string) => socket.send(raw), close: () => socket.close() };
+};
+
+/** Lets the Durable Object work through the socket events a test just triggered. */
+const settle = () => new Promise((resolve) => setTimeout(resolve, 50));
 
 afterEach(async () => {
   await reset();
@@ -69,7 +92,7 @@ describe('OnlineDirectory', () => {
     const before = await directory.join('p2', 's2', false);
 
     // Same participant, new SFU session — what a reconnect after a network flap looks like.
-    const after = await directory.join('p2', 's2-new', false);
+    const after = await directory.join('p2', 's2-new', false, secretOf(before));
 
     expect(after).toMatchObject({ ok: true, slot: (before as { slot: number }).slot });
   });
@@ -136,11 +159,11 @@ describe('OnlineDirectory', () => {
     const directory = getDirectory();
     await directory.join('p1', 's1', true);
     await directory.join('p2', 's2', false);
-    await directory.join('p3', 's3', false);
+    const third = await directory.join('p3', 's3', false);
 
     await directory.leave('p3', { ban: true, requestedBy: { participantId: 'p2', sessionId: 's2' } });
 
-    expect(await directory.join('p3', 's3', false)).toMatchObject({ ok: true });
+    expect(await directory.join('p3', 's3', false, secretOf(third))).toMatchObject({ ok: true });
   });
 
   it('ignores a removal from a session that does not match its participant', async () => {
@@ -156,9 +179,9 @@ describe('OnlineDirectory', () => {
   it('promotes the claimant and bumps the epoch', async () => {
     const directory = getDirectory();
     const host = await directory.join('p1', 's1', true);
-    await directory.join('p2', 's2', false);
+    const second = await directory.join('p2', 's2', false);
 
-    const result = await directory.promote('p2', 's2', (host as { epoch: number }).epoch);
+    const result = await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
 
     expect(result).toEqual({ ok: true, epoch: (host as { epoch: number }).epoch + 1 });
     expect(await directory.info()).toMatchObject({ hostSessionId: 's2' });
@@ -167,13 +190,13 @@ describe('OnlineDirectory', () => {
   it('lets only the first of two simultaneous claims win', async () => {
     const directory = getDirectory();
     const host = await directory.join('p1', 's1', true);
-    await directory.join('p2', 's2', false);
-    await directory.join('p3', 's3', false);
+    const second = await directory.join('p2', 's2', false);
+    const third = await directory.join('p3', 's3', false);
     const epoch = (host as { epoch: number }).epoch;
 
-    const winner = await directory.promote('p2', 's2', epoch);
+    const winner = await directory.promote('p2', 's2', epoch, secretOf(second));
     // p3 saw the same stall and claims with the epoch it knew, which is now stale.
-    const loser = await directory.promote('p3', 's3', epoch);
+    const loser = await directory.promote('p3', 's3', epoch, secretOf(third));
 
     expect(winner).toMatchObject({ ok: true });
     // The rejection is how the loser finds out who won — it must carry the winner's session.
@@ -184,7 +207,7 @@ describe('OnlineDirectory', () => {
     const directory = getDirectory();
     const host = await directory.join('p1', 's1', true);
 
-    const result = await directory.promote('stranger', 'sx', (host as { epoch: number }).epoch);
+    const result = await directory.promote('stranger', 'sx', (host as { epoch: number }).epoch, 'any-secret');
 
     expect(result).toMatchObject({ ok: false, reason: 'not-a-member' });
   });
@@ -193,13 +216,95 @@ describe('OnlineDirectory', () => {
     const directory = getDirectory();
     const host = await directory.join('p1', 's1', true);
     const second = await directory.join('p2', 's2', false);
-    await directory.promote('p2', 's2', (host as { epoch: number }).epoch);
+    await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
 
     // p1 comes back: it must still hold its original slot rather than be treated as a newcomer.
-    const rejoin = await directory.join('p1', 's1', false);
+    const rejoin = await directory.join('p1', 's1', false, secretOf(host));
 
     expect(rejoin).toMatchObject({ ok: true, isHost: false, slot: 0, hostSessionId: 's2' });
     expect((second as { slot: number }).slot).toBe(1);
+  });
+
+  it('refuses a rejoin that cannot prove the membership is its own', async () => {
+    const directory = getDirectory();
+    const host = await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    // A participant id is not a credential: it is published to the whole room in `room-state`, so
+    // every client already knows the host's. Replaying it must not move the host's channels.
+    expect(await directory.join('p1', 'attacker-session', false)).toEqual({
+      ok: false,
+      reason: 'not-authorized',
+    });
+    expect(await directory.info()).toMatchObject({ hostSessionId: 's1', epoch: (host as { epoch: number }).epoch });
+    // ...and the real host is still able to open its channels.
+    expect(await directory.authorize('p1', 's1')).toMatchObject({ ok: true, isHost: true });
+  });
+
+  it('refuses a rejoin that would cut a singer off from their own slot', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    // Pointing somebody at a session that does not exist would leave them unable to open a channel
+    // for as long as the membership lives — a denial of service costing one request.
+    expect(await directory.join('p2', 'garbage', false, 'wrong-secret')).toEqual({
+      ok: false,
+      reason: 'not-authorized',
+    });
+    expect(await directory.authorize('p2', 's2')).toMatchObject({ ok: true });
+  });
+
+  it('refuses a promotion claimed on somebody else\u2019s behalf', async () => {
+    const directory = getDirectory();
+    const host = await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+    const epoch = (host as { epoch: number }).epoch;
+
+    // The epoch is published in room state, so a stale-epoch check alone would not have stopped
+    // this: the attacker knows both the id and the epoch, and supplies its own session.
+    const result = await directory.promote('p2', 'attacker-session', epoch, 'wrong-secret');
+
+    expect(result).toMatchObject({ ok: false, reason: 'not-authorized' });
+    expect(await directory.info()).toMatchObject({ hostSessionId: 's1', epoch });
+  });
+
+  it('ignores relay traffic from a host that has been superseded', async () => {
+    const directory = getDirectory();
+    const host = await directory.join('p1', 's1', true);
+    const second = await directory.join('p2', 's2', false);
+    const oldHostSocket = await openRelay(directory, 'p1', 's1');
+    const guestSocket = await openRelay(directory, 'p2', 's2');
+
+    await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
+    // The promotion does not reach into the outgoing host's tab; it may only have been throttled
+    // and still has its socket. Left alone it would answer client frames alongside the new host.
+    oldHostSocket.send(JSON.stringify({ kind: 'broadcast', message: { t: 'hb', epoch: 1 } }));
+    await settle();
+
+    expect(guestSocket.received).toEqual([]);
+  });
+
+  it('announces a host loss when a room is left without one, and not otherwise', async () => {
+    const directory = getDirectory();
+    const host = await directory.join('p1', 's1', true);
+    const second = await directory.join('p2', 's2', false);
+    const oldHostSocket = await openRelay(directory, 'p1', 's1');
+    const guestSocket = await openRelay(directory, 'p2', 's2');
+    await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
+    const newHostSocket = await openRelay(directory, 'p2', 's2');
+
+    // A stale host socket closing is routine — the room already has a host, and announcing this as
+    // a loss would send everyone off to elect a successor to the host they just elected. Settled
+    // before the next close so the two are not racing each other into `webSocketClose`.
+    oldHostSocket.close();
+    await settle();
+    expect(guestSocket.received).toEqual([]);
+
+    // The host actually in charge going away is the signal this exists for.
+    newHostSocket.close();
+    await settle();
+    expect(guestSocket.received).toEqual([JSON.stringify({ hostGone: true })]);
   });
 
   it('elects a replacement host when the current one leaves outright', async () => {

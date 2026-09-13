@@ -1,4 +1,5 @@
 import { OnlineMessages } from '~/modules/online/protocol/types';
+import { JoinRejectedReason } from '~/modules/online/signaling/protocol';
 
 /** Where this browser sits in a room: which side of the wiring it is on, whose channels it should
  * be subscribed to, and which slot is its own. */
@@ -11,8 +12,10 @@ export interface SfuRoomMembership {
 }
 
 export type OnlineJoinOutcome =
-  | { ok: true; membership: SfuRoomMembership }
-  | { ok: false; reason: 'room-full' | 'not-found' | 'banned' };
+  // The reason is the directory's, passed through unchanged — restating the union here let the two
+  // drift, and a reason the transport did not know about stopped compiling rather than reaching the
+  // caller that has to act on it.
+  { ok: true; membership: SfuRoomMembership } | { ok: false; reason: JoinRejectedReason };
 
 /**
  * The room's channels, as the host runtime and the client transport use them. `SfuRoomConnection`

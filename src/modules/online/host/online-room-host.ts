@@ -5,6 +5,7 @@ import { OnlinePeerSender, OnlineRoomChannels, SfuRoomMembership } from '~/modul
 import { LoopbackTransportPair } from '~/modules/online/client/transport/loopback-transport';
 import {
   ONLINE_HOST_HEARTBEAT_MS,
+  ONLINE_HOST_STALL_MS,
   ONLINE_MAX_NAME_LENGTH,
   ONLINE_SNAPSHOT_BROADCAST_MS,
 } from '~/modules/online/protocol/consts';
@@ -54,6 +55,13 @@ interface OnlineRoomHostOptions {
   membership: SfuRoomMembership;
   /** Present only on a takeover: the last snapshot this browser saw from the previous host. */
   restoreFrom?: OnlineHostSnapshot | null;
+  /**
+   * Called when this tab was starved for long enough that the room will have elected somebody else
+   * — see `watchForOwnStall`. The host cannot settle that itself (only the directory knows who is
+   * in charge, and only `OnlineClient` can re-wire a connection), so it reports the suspicion and
+   * `OnlineClient` checks.
+   */
+  onSuspectedStall?: () => void;
 }
 
 /**
@@ -90,12 +98,24 @@ export class OnlineRoomHost {
   private readonly connection: OnlineRoomChannels;
   private readonly participantId: string;
   private readonly roomCode: string;
+  private readonly onSuspectedStall?: () => void;
+  /** When the heartbeat loop last ran. The gap between ticks is what tells this tab it was
+   * throttled, which is the only thing that can cost it the room while it is still connected. */
+  private lastHeartbeatTickAt = Date.now();
 
-  public constructor({ roomCode, participantId, connection, membership, restoreFrom }: OnlineRoomHostOptions) {
+  public constructor({
+    roomCode,
+    participantId,
+    connection,
+    membership,
+    restoreFrom,
+    onSuspectedStall,
+  }: OnlineRoomHostOptions) {
     this.connection = connection;
     this.membership = membership;
     this.participantId = participantId;
     this.roomCode = roomCode;
+    this.onSuspectedStall = onSuspectedStall;
     this.loopback = new LoopbackTransportPair(participantId);
 
     // A takeover is exactly the case `OnlineRoomLogic` already calls a hibernation wake: the room
@@ -209,6 +229,25 @@ export class OnlineRoomHost {
     await this.handleFromSender(message, this.senderForSlot(slot));
   };
 
+  /**
+   * Whether a slot may claim to be this participant.
+   *
+   * The slot a frame arrives on is trustworthy — the directory decides who holds which, and the
+   * signaling layer will not open somebody else's slot channel for you. The participant id in the
+   * `hello` is not: it is whatever the client typed, and every id in the room is published in
+   * `room-state` for anyone to copy. So a slot may name any participant the room has not placed
+   * yet, and no participant it has placed somewhere else.
+   *
+   * The host's own id is the case that matters most and the one the slot map does not cover — the
+   * host joins over the loopback and never occupies a slot, so without naming it here a client
+   * could say hello as the host and inherit everything the room logic lets the host do.
+   */
+  private mayClaimIdentity = (participantId: string, slot: number): boolean => {
+    if (participantId === this.participantId) return false;
+    const boundSlot = this.participantToSlot.get(participantId);
+    return boundSlot === undefined || boundSlot === slot;
+  };
+
   private handleHello = (participantId: string, name: string, create: boolean, slot: number) => {
     // The name arrives from a client and goes straight into room state, so it is bounded here the
     // same way the PartyKit server bounded the one it read off the connection URL.
@@ -217,6 +256,14 @@ export class OnlineRoomHost {
       peer: participantId,
       send: (payload: unknown) => this.connection.sendToSlot(slot, payload as OnlineMessages),
     };
+
+    if (!this.mayClaimIdentity(participantId, slot)) {
+      // Not a slot to release: whoever is on it is welcome to the room under their own id, and
+      // taking their seat away would punish the wrong participant if this was a stale rejoin
+      // racing its own disconnect rather than somebody helping themselves to an identity.
+      sender.send({ t: 'join-rejected', reason: 'not-authorized' });
+      return;
+    }
 
     const result = this.logic.handleConnect(participantId, boundedName, { create });
     if (!result.accepted) {
@@ -316,9 +363,31 @@ export class OnlineRoomHost {
     );
   };
 
+  /**
+   * Notices that this tab was starved for longer than the room was willing to wait.
+   *
+   * The authority lives in a browser now, and a browser throttles background timers. Every client
+   * watches the heartbeat and replaces a host that goes quiet for ONLINE_HOST_STALL_MS — but the
+   * host itself is told nothing: it does not read its own broadcast, so the successor's heartbeats
+   * never reach it, and it stopped running a watchdog the moment it became host. Left alone it
+   * comes back from the throttle and carries on running a room that is no longer its own.
+   *
+   * The gap between two heartbeat ticks is the one signal it does have. Exceeding the stall
+   * threshold does not prove it was replaced — nobody may have been watching — so this only asks
+   * the question; `OnlineClient` puts it to the directory.
+   */
+  private watchForOwnStall = () => {
+    const now = Date.now();
+    const sinceLastTick = now - this.lastHeartbeatTickAt;
+    this.lastHeartbeatTickAt = now;
+    if (sinceLastTick >= ONLINE_HOST_STALL_MS) this.onSuspectedStall?.();
+  };
+
   private startLoops = () => {
+    this.lastHeartbeatTickAt = Date.now();
     this.timers.push(
       setInterval(() => {
+        this.watchForOwnStall();
         this.broadcast({ t: 'hb', epoch: this.membership.epoch });
         // Piggy-backed on the heartbeat rather than given its own timer. The room logic publishes
         // state on transitions, and a song is one long stretch without any — so the persist-driven

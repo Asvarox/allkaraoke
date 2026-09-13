@@ -21,6 +21,11 @@ export interface OnlineSignalingEnv {
   REALTIME_APP_TOKEN?: string;
   ONLINE_DIRECTORY?: DurableObjectNamespace<OnlineDirectory>;
 
+  /** Guards the two endpoints that spend money — they call Cloudflare's Realtime API on our app
+   * token, and nothing about them is tied to a signed-in anybody. Optional, and absent locally and
+   * under e2e (where neither endpoint is reachable anyway, for want of Realtime credentials). */
+  ONLINE_SIGNALING_RATE_LIMITER?: { limit: (options: { key: string }) => Promise<{ success: boolean }> };
+
   /** Comma-separated STUN URLs. Only worth setting to move off Cloudflare's — STUN is
    * unauthenticated, so the default works with nothing configured. */
   ONLINE_STUN_URLS?: string;
@@ -66,17 +71,42 @@ const ROOM_CODE_PATTERN = /^[a-z0-9]{5}$/;
  */
 const BOOTSTRAP_CHANNEL = 'self';
 
-const json = (body: unknown, status = 200) =>
+/**
+ * Which origins may call this from a browser.
+ *
+ * The app and the Worker are the same origin everywhere that matters — production serves both, and
+ * so does `vite dev` through the Cloudflare plugin — so the only cross-origin caller worth allowing
+ * is a checkout pointed at another deployment with `VITE_APP_SIGNALING_URL`. Reflecting a localhost
+ * origin covers that without handing every page on the internet a browser-side client for these
+ * endpoints. It is not a security boundary on its own (nothing outside a browser honours CORS,
+ * which is why the endpoints are also authorised and rate-limited) — it just stops the casual case.
+ */
+const isAllowedOrigin = (origin: string, requestUrl: string): boolean => {
+  if (origin === new URL(requestUrl).origin) return true;
+  try {
+    const { hostname } = new URL(origin);
+    return hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '[::1]';
+  } catch {
+    return false;
+  }
+};
+
+const corsHeaders = (request: Request): Record<string, string> => {
+  const origin = request.headers.get('Origin');
+  if (!origin || !isAllowedOrigin(origin, request.url)) return {};
+  return { 'Access-Control-Allow-Origin': origin, Vary: 'Origin' };
+};
+
+const json = (request: Request, body: unknown, status = 200) =>
   new Response(JSON.stringify(body), {
     status,
     headers: {
       'Content-Type': 'application/json',
-      // The dev server runs on a different origin than the Worker; in production they are the same.
-      'Access-Control-Allow-Origin': '*',
+      ...corsHeaders(request),
     },
   });
 
-const badRequest = (message: string) => json({ error: message }, 400);
+const badRequest = (request: Request, message: string) => json(request, { error: message }, 400);
 
 interface RealtimeCallOptions {
   env: OnlineSignalingEnv;
@@ -135,7 +165,7 @@ const mintCloudflareTurn = async (env: OnlineSignalingEnv): Promise<IceServerDto
   return servers;
 };
 
-const handleIceServers = async (env: OnlineSignalingEnv) => {
+const handleIceServers = async (request: Request, env: OnlineSignalingEnv) => {
   const stun: IceServerDto = {
     urls: splitUrls(env.ONLINE_STUN_URLS).length ? splitUrls(env.ONLINE_STUN_URLS) : DEFAULT_STUN_URLS,
   };
@@ -144,18 +174,18 @@ const handleIceServers = async (env: OnlineSignalingEnv) => {
     try {
       const servers = await mintCloudflareTurn(env);
       // Cloudflare's response already carries its own STUN entry, so it is returned as-is.
-      return json<IceServersResponse>({ iceServers: servers, ttlSeconds: TURN_CREDENTIAL_TTL_SECONDS });
+      return json<IceServersResponse>(request, { iceServers: servers, ttlSeconds: TURN_CREDENTIAL_TTL_SECONDS });
     } catch (error) {
       // TURN is a fallback for a minority of networks; losing it must not stop everyone else
       // joining, so this degrades to STUN rather than failing the request.
       console.error('Falling back to STUN only', error);
-      return json<IceServersResponse>({ iceServers: [stun] });
+      return json<IceServersResponse>(request, { iceServers: [stun] });
     }
   }
 
   const staticTurnUrls = splitUrls(env.ONLINE_TURN_URLS);
   if (staticTurnUrls.length) {
-    return json<IceServersResponse>({
+    return json<IceServersResponse>(request, {
       iceServers: [
         stun,
         {
@@ -167,7 +197,7 @@ const handleIceServers = async (env: OnlineSignalingEnv) => {
     });
   }
 
-  return json<IceServersResponse>({ iceServers: [stun] });
+  return json<IceServersResponse>(request, { iceServers: [stun] });
 };
 
 const isSessionDescription = (value: unknown): value is SessionDescriptionDto => {
@@ -182,7 +212,7 @@ const getDirectory = (env: OnlineSignalingEnv, roomCode: string) => {
 
 const handleCreateSession = async (request: Request, env: OnlineSignalingEnv) => {
   const body = (await request.json().catch(() => null)) as CreateSessionRequest | null;
-  if (!isSessionDescription(body?.offer)) return badRequest('offer required');
+  if (!isSessionDescription(body?.offer)) return badRequest(request, 'offer required');
 
   const created = await callRealtime<{ sessionId: string }>({
     env,
@@ -199,7 +229,7 @@ const handleCreateSession = async (request: Request, env: OnlineSignalingEnv) =>
     },
   });
 
-  return json<CreateSessionResponse>({
+  return json<CreateSessionResponse>(request, {
     sessionId: created.sessionId,
     answer: established.sessionDescription,
   } satisfies CreateSessionResponse);
@@ -231,16 +261,16 @@ const isChannelAllowed = (channel: DataChannelSpec, auth: { isHost: boolean; slo
 const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEnv) => {
   const body = (await request.json().catch(() => null)) as CreateDataChannelsRequest | null;
   if (!body?.sessionId || !Array.isArray(body.channels) || body.channels.length === 0) {
-    return badRequest('sessionId and channels required');
+    return badRequest(request, 'sessionId and channels required');
   }
   if (!ROOM_CODE_PATTERN.test(body.roomCode ?? '') || !body.participantId) {
-    return badRequest('roomCode and participantId required');
+    return badRequest(request, 'roomCode and participantId required');
   }
 
   const auth = await getDirectory(env, body.roomCode).authorize(body.participantId, body.sessionId);
-  if (!auth.ok) return json({ error: 'Not a member of this room' }, 403);
+  if (!auth.ok) return json(request, { error: 'Not a member of this room' }, 403);
   if (!body.channels.every((channel) => isChannelAllowed(channel, auth))) {
-    return json({ error: 'Not allowed on this channel' }, 403);
+    return json(request, { error: 'Not allowed on this channel' }, 403);
   }
 
   const result = await callRealtime<{ dataChannels: Array<{ dataChannelName: string; id: number }> }>({
@@ -260,7 +290,7 @@ const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEn
     },
   });
 
-  return json<CreateDataChannelsResponse>({
+  return json<CreateDataChannelsResponse>(request, {
     channels: result.dataChannels.map((channel) => ({ name: channel.dataChannelName, id: channel.id })),
   });
 };
@@ -275,48 +305,61 @@ const handleRoom = async (
   const directory = getDirectory(env, roomCode);
 
   if (action === '' && request.method === 'GET') {
-    return json(await directory.info(dataPlane));
+    return json(request, await directory.info(dataPlane));
   }
 
   if (action === 'relay') {
     // The relay exists for environments with no Realtime app to talk to. Refusing it whenever the
     // SFU *is* configured is what stops production from ever falling back onto a data plane that
     // would put every message back through a Durable Object.
-    if (dataPlane !== 'relay') return json({ error: 'Relay is disabled' }, 404);
-    if (request.headers.get('Upgrade') !== 'websocket') return json({ error: 'Expected websocket' }, 426);
+    if (dataPlane !== 'relay') return json(request, { error: 'Relay is disabled' }, 404);
+    if (request.headers.get('Upgrade') !== 'websocket') return json(request, { error: 'Expected websocket' }, 426);
     // Forwarded rather than called as RPC: a 101 response carrying a `webSocket` cannot cross the
     // Durable Object RPC boundary.
     return directory.fetch(request);
   }
-  if (request.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
+  if (request.method !== 'POST') return json(request, { error: 'Method not allowed' }, 405);
 
   const body = (await request.json().catch(() => null)) as Record<string, unknown> | null;
 
   if (action === 'join') {
-    const { participantId, sessionId, create } = (body ?? {}) as unknown as JoinRoomRequest;
-    if (!participantId || !sessionId) return badRequest('participantId and sessionId required');
-    return json(await directory.join(participantId, sessionId, create === true));
+    const { participantId, sessionId, create, secret } = (body ?? {}) as unknown as JoinRoomRequest;
+    if (!participantId || !sessionId) return badRequest(request, 'participantId and sessionId required');
+    return json(request, await directory.join(participantId, sessionId, create === true, secret));
   }
   if (action === 'leave') {
     const { participantId, requestedBy, ban } = (body ?? {}) as unknown as LeaveRoomRequest;
-    if (!participantId) return badRequest('participantId required');
-    if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest('requestedBy required');
+    if (!participantId) return badRequest(request, 'participantId required');
+    if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest(request, 'requestedBy required');
     await directory.leave(participantId, { ban: ban === true, requestedBy });
-    return json({ ok: true });
+    return json(request, { ok: true });
   }
   if (action === 'promote') {
-    const { participantId, sessionId, fromEpoch } = (body ?? {}) as unknown as PromoteHostRequest;
+    const { participantId, sessionId, fromEpoch, secret } = (body ?? {}) as unknown as PromoteHostRequest;
     if (!participantId || !sessionId || typeof fromEpoch !== 'number') {
-      return badRequest('participantId, sessionId and fromEpoch required');
+      return badRequest(request, 'participantId, sessionId and fromEpoch required');
     }
-    return json(await directory.promote(participantId, sessionId, fromEpoch));
+    return json(request, await directory.promote(participantId, sessionId, fromEpoch, secret));
   }
   if (action === 'keepalive') {
     await directory.keepalive();
-    return json({ ok: true });
+    return json(request, { ok: true });
   }
 
-  return json({ error: 'Not found' }, 404);
+  return json(request, { error: 'Not found' }, 404);
+};
+
+/**
+ * Fails open when the binding is absent — it is not configured locally or under e2e, and neither
+ * is a Realtime app, so there is nothing there to spend. A request with no `CF-Connecting-IP` is
+ * not on the Cloudflare edge at all and is bucketed together under one key rather than waved
+ * through individually.
+ */
+const withinRateLimit = async (request: Request, env: OnlineSignalingEnv): Promise<boolean> => {
+  const limiter = env.ONLINE_SIGNALING_RATE_LIMITER;
+  if (!limiter) return true;
+  const result = await limiter.limit({ key: request.headers.get('CF-Connecting-IP') ?? 'unknown' });
+  return result.success;
 };
 
 /** Routes everything under `/online/`. Returns null when the path is not ours. */
@@ -331,7 +374,7 @@ export const handleOnlineSignaling = async (
     return new Response(null, {
       status: 204,
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        ...corsHeaders(request),
         'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
@@ -339,7 +382,7 @@ export const handleOnlineSignaling = async (
   }
 
   if (!env.ONLINE_DIRECTORY) {
-    return json({ error: 'Online mode is not configured' }, 503);
+    return json(request, { error: 'Online mode is not configured' }, 503);
   }
 
   // Only the SFU endpoints need Realtime credentials. The directory does not, which is what lets
@@ -351,11 +394,19 @@ export const handleOnlineSignaling = async (
 
     // Deliberately not gated on Realtime credentials: STUN needs none, and a checkout without an
     // app configured still runs online mode on the relay, which is exactly when this must answer.
-    if (rest === 'ice' && request.method === 'GET') return await handleIceServers(env);
+    if (rest === 'ice' && request.method === 'GET') return await handleIceServers(request, env);
 
     if (rest === 'session' || rest === 'datachannels') {
-      if (!hasRealtimeCredentials) return json({ error: 'Realtime is not configured' }, 503);
-      if (request.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
+      if (!hasRealtimeCredentials) return json(request, { error: 'Realtime is not configured' }, 503);
+      if (request.method !== 'POST') return json(request, { error: 'Method not allowed' }, 405);
+      // These two are the only endpoints that spend anything: they call Cloudflare's Realtime API
+      // on our app token, and neither is behind a login. `/online/session` in particular takes
+      // nothing but an SDP offer, so without this any page anywhere could open sessions on our app
+      // for as long as it liked. Keyed by IP because that is the only identity on offer — a room
+      // code would be attacker-chosen, and the session does not exist yet to be checked against.
+      if (!(await withinRateLimit(request, env))) {
+        return json(request, { error: 'Too many requests' }, 429);
+      }
       return rest === 'session'
         ? await handleCreateSession(request, env)
         : await handleCreateDataChannels(request, env);
@@ -363,13 +414,13 @@ export const handleOnlineSignaling = async (
 
     if (rest.startsWith('room/')) {
       const [roomCode, action = ''] = rest.slice('room/'.length).split('/');
-      if (!ROOM_CODE_PATTERN.test(roomCode ?? '')) return badRequest('invalid room code');
+      if (!ROOM_CODE_PATTERN.test(roomCode ?? '')) return badRequest(request, 'invalid room code');
       return await handleRoom(request, env, roomCode, action, hasRealtimeCredentials ? 'sfu' : 'relay');
     }
 
-    return json({ error: 'Not found' }, 404);
+    return json(request, { error: 'Not found' }, 404);
   } catch (error) {
     console.error('Online signaling failed', error);
-    return json({ error: 'Signaling failed' }, 502);
+    return json(request, { error: 'Signaling failed' }, 502);
   }
 };

@@ -11,6 +11,7 @@ import {
   promoteHost,
   signalingUrl,
 } from '~/modules/online/signaling/directory-client';
+import { getMembershipSecret, setMembershipSecret } from '~/modules/online/signaling/membership-secret';
 import { RelayHostFrame, RelayInboundFrame } from '~/modules/online/signaling/protocol';
 
 /**
@@ -58,8 +59,10 @@ export class RelayRoomConnection implements OnlineRoomConnection {
       participantId: this.participantId,
       sessionId: this.participantId,
       create,
+      secret: getMembershipSecret(this.roomCode),
     });
     if (!result.ok) return { ok: false, reason: result.reason };
+    setMembershipSecret(this.roomCode, result.secret);
 
     this.membership = {
       isHost: result.isHost,
@@ -93,6 +96,7 @@ export class RelayRoomConnection implements OnlineRoomConnection {
       participantId: this.participantId,
       sessionId: this.participantId,
       fromEpoch: this.membership!.epoch,
+      secret: getMembershipSecret(this.roomCode) ?? '',
     });
 
   public keepalive = () => keepaliveRoom(this.roomCode);
@@ -183,6 +187,7 @@ export class RelayRoomConnection implements OnlineRoomConnection {
     this.messageListeners.clear();
     this.closeListeners.clear();
     this.lostListeners.clear();
+    this.hostLostListeners.clear();
     const socket = this.socket;
     this.socket = null;
     socket?.close();

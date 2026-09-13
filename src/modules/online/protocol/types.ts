@@ -96,7 +96,8 @@ export interface OnlineRoomState {
   finalResults: OnlineFinalResult[] | null;
   /** Bumped by the room directory on every host change. Clients carry it into their promotion
    * claim, which the directory accepts only if it still matches — that is what stops two singers
-   * who noticed the same stall from both becoming host. */
+   * who noticed the same stall from both becoming host. The heartbeat carries it too, which is how
+   * a client that is still subscribed to a replaced host finds out it is behind. */
   hostEpoch: number;
 }
 

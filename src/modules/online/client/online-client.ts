@@ -22,6 +22,7 @@ import { ONLINE_HOST_STALL_MS, ONLINE_PROMOTE_STAGGER_MS } from '~/modules/onlin
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 import { fetchRoomInfo } from '~/modules/online/signaling/directory-client';
+import { clearMembershipSecret } from '~/modules/online/signaling/membership-secret';
 import isE2E from '~/modules/utils/is-e2-e';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
@@ -114,6 +115,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private lastHeartbeatAt = 0;
   private heartbeatWatchdog: ReturnType<typeof setInterval> | null = null;
   private promoting = false;
+  /** Guards `rotateIdentity` to one attempt per connect, so an unrecoverable rejection cannot turn
+   * into an endless loop of fresh participant ids hammering the directory. */
+  private hasRotatedIdentity = false;
 
   public readonly subscriptions = new ClientSubscriptionManager<OnlineSubscriptionChannels>();
 
@@ -140,6 +144,20 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       storage.setItem(PARTICIPANT_ID_KEY, this.participantId);
     }
     return this.participantId;
+  };
+
+  /**
+   * Starts over as a new participant.
+   *
+   * Only for the one case that cannot be recovered any other way: the directory still holds a
+   * membership under our participant id and we have lost the secret that proves it is ours (cleared
+   * site data, or a room that outlived a deploy). A fresh id costs the singer their place in the
+   * running round; being unable to enter the room at all until it expires costs them the room.
+   */
+  private rotateIdentity = () => {
+    if (this.roomCode) clearMembershipSecret(this.roomCode);
+    this.participantId = uuid();
+    storage.setItem(PARTICIPANT_ID_KEY, this.participantId);
   };
 
   public getStatus = () => this.status;
@@ -177,6 +195,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.mode = mode;
     this.shouldReconnect = true;
     this.hasTrackedConnectAttempt = false;
+    this.hasRotatedIdentity = false;
     this.reconnectAttempts = 0;
     void this.open(false);
   };
@@ -241,6 +260,15 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     if (!this.roomCode) return;
     this.setStatus(isReconnect ? 'reconnecting' : 'connecting');
 
+    // A reconnect arrives with the previous connection still held here. Dropping it without
+    // closing would leak its peer connection and its listeners; leaving the room is deliberately
+    // *not* done, because the whole point of reconnecting is to come back to the same seat.
+    const superseded = this.connection;
+    this.connection = null;
+    superseded?.close();
+    this.host?.close();
+    this.host = null;
+
     let connection: OnlineRoomConnection | null = null;
     let outcome;
     try {
@@ -261,10 +289,20 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     }
 
     if (!outcome.ok) {
-      this.shouldReconnect = false;
-      this.setStatus('rejected', outcome.reason);
       connection.close();
       this.connection = null;
+      // The directory knows this participant id but we cannot prove it is ours — the secret was
+      // never stored, or was cleared. Nothing is recoverable under the old identity, so take a new
+      // one and come back as a stranger rather than leaving the singer locked out of the room for
+      // as long as the membership lives.
+      if (outcome.reason === 'not-authorized' && !this.hasRotatedIdentity) {
+        this.hasRotatedIdentity = true;
+        this.rotateIdentity();
+        void this.open(isReconnect);
+        return;
+      }
+      this.shouldReconnect = false;
+      this.setStatus('rejected', outcome.reason);
       return;
     }
 
@@ -303,6 +341,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
         // A promotion brings its own snapshot; otherwise this may be the same tab coming back from
         // a navigation, in which case the room it was running is waiting in sessionStorage.
         restoreFrom: restoreFrom ?? takeStashedHostSnapshot(this.roomCode!),
+        onSuspectedStall: () => void this.verifyStillHosting(),
       });
       this.transport = this.host.getLoopbackTransport();
       this.stopHeartbeatWatchdog();
@@ -421,24 +460,47 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
         if (result.hostSessionId) await this.followNewHost(result.epoch, result.hostSessionId);
         return;
       }
-      // Read only now that the claim has landed: taking the stash consumes it, and losing a race
-      // is the normal outcome for everyone but one candidate — they must keep theirs for the next
-      // stall.
-      const restoreFrom = this.lastHostSnapshot ?? takeStashedHostSnapshot(this.roomCode!);
-
-      const membership: SfuRoomMembership = {
-        isHost: true,
-        hostSessionId: connection.getSessionId()!,
-        epoch: result.epoch,
-        slot: connection.getMembership()!.slot,
-      };
-      await connection.rewire(membership);
-      this.attachRole(membership, restoreFrom);
+      await this.takeOverAsHost(connection, result.epoch);
     } catch {
       // Promotion is retried by the watchdog on its next tick — nothing to unwind here.
     } finally {
       this.promoting = false;
     }
+  };
+
+  /** Starts running the room in this tab, resuming whatever the previous host was in the middle of. */
+  private takeOverAsHost = async (connection: OnlineRoomConnection, epoch: number) => {
+    // Read only now that the claim has landed: taking the stash consumes it, and losing a race is
+    // the normal outcome for everyone but one candidate — they must keep theirs for the next stall.
+    const restoreFrom = this.lastHostSnapshot ?? takeStashedHostSnapshot(this.roomCode!);
+
+    const membership: SfuRoomMembership = {
+      isHost: true,
+      hostSessionId: connection.getSessionId()!,
+      epoch,
+      slot: connection.getMembership()!.slot,
+    };
+    await connection.rewire(membership);
+    if (this.connection !== connection) return;
+    this.attachRole(membership, restoreFrom);
+  };
+
+  /**
+   * Checks with the directory whether this tab is still the host, and steps down if it is not.
+   *
+   * Raised by `OnlineRoomHost` when its heartbeat loop was starved for longer than the room waits
+   * before replacing a host. The host has no other way of finding out: it does not read its own
+   * broadcast, so the successor's heartbeats never reach it. Without this it would come back from
+   * the throttle and keep running a room the rest of the singers had already left behind.
+   */
+  private verifyStillHosting = async () => {
+    const connection = this.connection;
+    if (!connection || !this.host) return;
+    const info = await fetchRoomInfo(this.roomCode!);
+    // Unreachable directory: say nothing rather than stand a working room down over a failed fetch.
+    if (!info?.hostSessionId || this.connection !== connection || !this.host) return;
+    if (info.hostSessionId === connection.getSessionId()) return;
+    await this.followNewHost(info.epoch, info.hostSessionId);
   };
 
   /** Re-subscribes to a different host's channels, keeping this browser's own SFU session. */
@@ -452,6 +514,14 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       const info = await fetchRoomInfo(this.roomCode!);
       if (!info?.hostSessionId) return;
       resolvedHostSessionId = info.hostSessionId;
+    }
+
+    // The directory can name *us* as the host without us having asked: when a host leaves for good
+    // it elects the earliest remaining member on the spot. Following ourselves would leave the room
+    // subscribed to channels nobody publishes, so this is a takeover, not a follow.
+    if (resolvedHostSessionId === connection.getSessionId()) {
+      await this.takeOverAsHost(connection, epoch);
+      return;
     }
 
     const membership: SfuRoomMembership = { ...current, isHost: false, hostSessionId: resolvedHostSessionId, epoch };
@@ -512,6 +582,12 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       this.connection = null;
     }
     this.lastHostSnapshot = null;
+    // The secret deliberately outlives this. `disconnect` runs on every unmount, and the game is
+    // not a single-page app — moving from the lobby to the song is a real page load, so the next
+    // page has to be able to prove the membership is still ours. `leave` above is fire-and-forget
+    // and may well land after that rejoin; dropping the secret here would leave the singer unable
+    // to prove anything about a membership that is still standing. A stale secret costs nothing:
+    // the directory only consults it when the membership exists, and a fresh join overwrites it.
     this.roomCode = null;
     if (this.status !== 'disconnected') {
       this.setStatus('disconnected');

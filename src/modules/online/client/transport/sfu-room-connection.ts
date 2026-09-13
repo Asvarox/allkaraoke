@@ -5,6 +5,7 @@ import {
 } from '~/modules/online/client/transport/interface';
 import { OnlineMessages } from '~/modules/online/protocol/types';
 import { joinRoom, keepaliveRoom, leaveRoom, promoteHost } from '~/modules/online/signaling/directory-client';
+import { getMembershipSecret, setMembershipSecret } from '~/modules/online/signaling/membership-secret';
 import { ONLINE_SLOT_COUNT, ROOM_BROADCAST_CHANNEL, slotChannelName } from '~/modules/online/signaling/protocol';
 import { SfuSession } from '~/modules/online/signaling/sfu-session';
 
@@ -78,11 +79,19 @@ export class SfuRoomConnection implements OnlineRoomConnection {
   public join = async ({ create = false } = {}): Promise<OnlineJoinOutcome> => {
     const sessionId = await this.session.open();
 
-    const result = await joinRoom(this.roomCode, { participantId: this.participantId, sessionId, create });
+    const result = await joinRoom(this.roomCode, {
+      participantId: this.participantId,
+      sessionId,
+      create,
+      // Absent on a first join; on every later one this is what proves the membership is ours
+      // rather than one whose participant id we read off the room state.
+      secret: getMembershipSecret(this.roomCode),
+    });
     if (!result.ok) {
       this.session.close();
       return { ok: false, reason: result.reason };
     }
+    setMembershipSecret(this.roomCode, result.secret);
 
     this.membership = {
       isHost: result.isHost,
@@ -90,7 +99,14 @@ export class SfuRoomConnection implements OnlineRoomConnection {
       epoch: result.epoch,
       slot: result.slot,
     };
-    await this.wireChannels();
+    try {
+      await this.wireChannels();
+    } catch (error) {
+      // The slot is claimed by this point, so a half-open attempt has to hand it back rather than
+      // hold a seat nobody is sitting in until the room expires.
+      await this.releaseOwnMembership();
+      throw error;
+    }
     return { ok: true, membership: this.membership };
   };
 
@@ -113,7 +129,14 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     const membership = this.membership;
     const sessionId = this.session.getSessionId();
     if (!membership || !sessionId) throw new Error('Not in a room');
-    return promoteHost(this.roomCode, { participantId: this.participantId, sessionId, fromEpoch: membership.epoch });
+    return promoteHost(this.roomCode, {
+      participantId: this.participantId,
+      sessionId,
+      fromEpoch: membership.epoch,
+      // The epoch is published in room state, so it is not proof of anything on its own — this is
+      // what stops a claim being made on somebody else's behalf.
+      secret: getMembershipSecret(this.roomCode) ?? '',
+    });
   };
 
   /** Undoes a join that could not be completed, so a half-open attempt does not cost a seat. */

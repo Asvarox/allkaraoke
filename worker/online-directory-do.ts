@@ -21,9 +21,11 @@ import type {
  * is the whole point of the rewrite: the old room object stayed resident for the length of every
  * song, this one wakes for a millisecond a handful of times per room.
  *
- * Trust model matches what the PartyKit room already assumed: the participant id is whatever the
- * client says it is. A griefer who has the room code could evict somebody; the same was true
- * before, and the room logic's ban list is still the real defence.
+ * Trust model: a participant id proves nothing — it is published to the whole room in `room-state`,
+ * so everybody who has ever been in a room knows everyone else's. What a membership is held by is
+ * the secret minted here on its first join. Rejoining a membership or promoting it requires that
+ * secret; removing somebody else requires being the current host. The room logic's ban list remains
+ * the defence against a griefer who simply joins legitimately.
  */
 
 const STATE_KEY = 'directory';
@@ -32,6 +34,10 @@ interface Member {
   participantId: string;
   sessionId: string;
   slot: number;
+  /** Minted here on the first join and never published in room state. Everything that acts on an
+   * existing membership — rejoining it, promoting it — has to present this, because the
+   * participant id itself is broadcast to the whole room and proves nothing. */
+  secret: string;
 }
 
 interface DirectoryState {
@@ -43,6 +49,23 @@ interface DirectoryState {
   members: Member[];
   lastActivityAt: number;
 }
+
+/**
+ * Compares a membership secret against what a caller presented.
+ *
+ * A membership stored before secrets existed has none, and matches nothing — a room still running
+ * across a deploy sends its singers back through a fresh join rather than leaving the old hole open
+ * for the rest of its TTL. The comparison is length-checked first and then whole-string, so it does
+ * not leak a matching prefix through an early return.
+ */
+const secretMatches = (stored: string | undefined, presented: string | undefined): boolean => {
+  if (!stored || !presented || stored.length !== presented.length) return false;
+  let difference = 0;
+  for (let index = 0; index < stored.length; index++) {
+    difference |= stored.charCodeAt(index) ^ presented.charCodeAt(index);
+  }
+  return difference === 0;
+};
 
 const emptyState = (now: number): DirectoryState => ({
   created: false,
@@ -112,6 +135,26 @@ export class OnlineDirectory extends DurableObject {
 
   private static readonly HOST_TAG = 'host';
   private static readonly slotTag = (slot: number) => `slot:${slot}`;
+  /** Who a socket belongs to. The role tags are fixed when a socket is accepted, so after a
+   * promotion the outgoing host's socket still carries `host` — this is what tells the two apart. */
+  private static readonly participantTag = (participantId: string) => `participant:${participantId}`;
+
+  private isCurrentHostSocket(socket: WebSocket): boolean {
+    const tags = this.ctx.getTags(socket);
+    if (!tags.includes(OnlineDirectory.HOST_TAG)) return false;
+    return (
+      this.state.hostParticipantId !== null &&
+      tags.includes(OnlineDirectory.participantTag(this.state.hostParticipantId))
+    );
+  }
+
+  /** Whether anybody is currently holding the room's host socket, ignoring one that is on its way
+   * out — `webSocketClose` runs while its own socket is still listed. */
+  private hasLiveHostSocket(except?: WebSocket): boolean {
+    return this.ctx
+      .getWebSockets(OnlineDirectory.HOST_TAG)
+      .some((socket) => socket !== except && this.isCurrentHostSocket(socket));
+  }
 
   /**
    * The relay's socket upgrade. This has to be `fetch` rather than an RPC method: a 101 response
@@ -131,19 +174,21 @@ export class OnlineDirectory extends DurableObject {
     if (!auth.ok) return new Response('Not a member of this room', { status: 403 });
 
     const pair = new WebSocketPair();
-    const tag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
+    const roleTag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
     // Hibernatable, and tagged rather than held in a field — the tags survive an eviction, an
     // in-memory map would not.
-    this.ctx.acceptWebSocket(pair[1], [tag]);
+    this.ctx.acceptWebSocket(pair[1], [roleTag, OnlineDirectory.participantTag(participantId)]);
     return new Response(null, { status: 101, webSocket: pair[0] });
   }
 
   async webSocketMessage(socket: WebSocket, raw: string | ArrayBuffer) {
     if (typeof raw !== 'string') return;
     const tags = this.ctx.getTags(socket);
-    const isHost = tags.includes(OnlineDirectory.HOST_TAG);
 
-    if (isHost) {
+    if (tags.includes(OnlineDirectory.HOST_TAG)) {
+      // A superseded host is not one: it is a tab that has not caught up yet, and letting it keep
+      // broadcasting would have it fight the host that replaced it.
+      if (!this.isCurrentHostSocket(socket)) return;
       let frame: RelayHostFrame;
       try {
         frame = JSON.parse(raw);
@@ -173,13 +218,26 @@ export class OnlineDirectory extends DurableObject {
       return;
     }
     const inbound: RelayInboundFrame = { slot: Number(slotTag.slice('slot:'.length)), message };
-    this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(JSON.stringify(inbound)));
+    // Only the host in charge, for the same reason: two authorities answering the same RPC is
+    // worse than none.
+    this.ctx
+      .getWebSockets(OnlineDirectory.HOST_TAG)
+      .filter((host) => this.isCurrentHostSocket(host))
+      .forEach((host) => host.send(JSON.stringify(inbound)));
   }
 
   async webSocketClose(socket: WebSocket) {
     const tags = this.ctx.getTags(socket);
 
     if (tags.includes(OnlineDirectory.HOST_TAG)) {
+      // Only when it leaves the room without a host. The condition is deliberately "is anybody
+      // still holding the host socket" rather than "was this the host": a host that leaves cleanly
+      // has already had its successor elected by `electFallbackHost`, so checking the closing
+      // socket's own identity would swallow the very case this signal exists for. The other side of
+      // it is a socket left over from a host that was superseded while throttled — that one closes
+      // with the new host's socket already open, and announcing it as a loss would send the room
+      // off to elect a successor to the host it just elected.
+      if (this.hasLiveHostSocket(socket)) return;
       // The host's socket dies with its tab whether or not any JavaScript got to run, so this is
       // an exact signal where the SFU has none — clients would otherwise sit through the whole
       // heartbeat stall before starting the succession they already know is needed.
@@ -216,7 +274,12 @@ export class OnlineDirectory extends DurableObject {
     };
   }
 
-  public async join(participantId: string, sessionId: string, create: boolean): Promise<JoinRoomResponse> {
+  public async join(
+    participantId: string,
+    sessionId: string,
+    create: boolean,
+    secret?: string,
+  ): Promise<JoinRoomResponse> {
     if ((this.state.bannedIds ?? []).includes(participantId)) return { ok: false, reason: 'banned' };
     if (!this.state.created) {
       if (!create) return { ok: false, reason: 'not-found' };
@@ -228,6 +291,11 @@ export class OnlineDirectory extends DurableObject {
     // room could never let anybody back in.
     const existing = this.state.members.find((member) => member.participantId === participantId);
     if (existing) {
+      // The secret is what makes this a rejoin rather than a takeover. Without it, replaying
+      // somebody else's participant id would re-point their row at the caller's session: the host's
+      // channels would move to whoever asked, and any singer could be cut off from their own slot
+      // by being pointed at a session that does not exist.
+      if (!secretMatches(existing.secret, secret)) return { ok: false, reason: 'not-authorized' };
       existing.sessionId = sessionId;
       if (this.state.hostParticipantId === participantId) {
         // The host came back on a new session: its published channels are gone with the old one,
@@ -238,7 +306,7 @@ export class OnlineDirectory extends DurableObject {
     } else {
       const slot = this.freeSlot();
       if (slot === null) return { ok: false, reason: 'room-full' };
-      this.state.members.push({ participantId, sessionId, slot });
+      this.state.members.push({ participantId, sessionId, slot, secret: crypto.randomUUID() });
     }
 
     if (this.state.hostParticipantId === null) {
@@ -256,6 +324,7 @@ export class OnlineDirectory extends DurableObject {
       hostSessionId: this.state.hostSessionId!,
       epoch: this.state.epoch,
       slot: member.slot,
+      secret: member.secret,
     };
   }
 
@@ -300,10 +369,21 @@ export class OnlineDirectory extends DurableObject {
    * clients noticing the same stall both call this, and only the first one to land wins. The loser
    * gets the winner's epoch back and follows it instead of starting a second room.
    */
-  public async promote(participantId: string, sessionId: string, fromEpoch: number): Promise<PromoteHostResponse> {
+  public async promote(
+    participantId: string,
+    sessionId: string,
+    fromEpoch: number,
+    secret?: string,
+  ): Promise<PromoteHostResponse> {
     const member = this.state.members.find((entry) => entry.participantId === participantId);
     if (!member) {
       return { ok: false, reason: 'not-a-member', epoch: this.state.epoch, hostSessionId: this.state.hostSessionId };
+    }
+    // Checked before the epoch: the epoch is published in room state, so it is not a secret and
+    // cannot stand in for one. Without this, anybody in the room could hand the host role to a
+    // session of their choosing by claiming somebody else's participant id.
+    if (!secretMatches(member.secret, secret)) {
+      return { ok: false, reason: 'not-authorized', epoch: this.state.epoch, hostSessionId: this.state.hostSessionId };
     }
     if (fromEpoch !== this.state.epoch) {
       return { ok: false, reason: 'stale-epoch', epoch: this.state.epoch, hostSessionId: this.state.hostSessionId };

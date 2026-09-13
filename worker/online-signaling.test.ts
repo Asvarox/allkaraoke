@@ -201,3 +201,74 @@ describe('data channel authorisation', () => {
     expect(response.status).toBe(403);
   });
 });
+
+describe('abuse limits', () => {
+  const realtimeEnv = {
+    REALTIME_APP_ID: 'app',
+    REALTIME_APP_TOKEN: 'token',
+    ONLINE_DIRECTORY: {},
+  } as unknown as OnlineSignalingEnv;
+
+  const createSession = (env: OnlineSignalingEnv) => {
+    const request = new Request('https://example.test/online/session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'CF-Connecting-IP': '203.0.113.9' },
+      body: JSON.stringify({ offer: { type: 'offer', sdp: 'v=0' } }),
+    });
+    return handleOnlineSignaling(request, env, '/online/session');
+  };
+
+  it('turns away a caller that has run out of budget on the paid endpoints', async () => {
+    // `/online/session` takes nothing but an SDP offer and spends our Realtime app token, so
+    // without a limit any page anywhere could open sessions on it for as long as it liked.
+    const response = await createSession({
+      ...realtimeEnv,
+      ONLINE_SIGNALING_RATE_LIMITER: { limit: async () => ({ success: false }) },
+    });
+
+    expect(response?.status).toBe(429);
+  });
+
+  it('runs with no limiter bound at all', async () => {
+    // Absent locally and under e2e. Failing closed there would take online mode down on every
+    // checkout, and there is no Realtime app to spend anything on in the first place.
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string) =>
+        Response.json(
+          url.includes('/sessions/new')
+            ? { sessionId: 'created' }
+            : { sessionDescription: { type: 'answer', sdp: 'v=0' } },
+        ),
+      ),
+    );
+
+    const response = await createSession(realtimeEnv);
+
+    expect(response?.status).toBe(200);
+  });
+});
+
+describe('cross-origin access', () => {
+  const ice = (origin?: string) =>
+    handleOnlineSignaling(
+      new Request('https://allkaraoke.party/online/ice', origin ? { headers: { Origin: origin } } : undefined),
+      { ONLINE_DIRECTORY: {} } as unknown as OnlineSignalingEnv,
+      '/online/ice',
+    );
+
+  it('answers its own origin and a local checkout', async () => {
+    expect((await ice('https://allkaraoke.party'))?.headers.get('Access-Control-Allow-Origin')).toBe(
+      'https://allkaraoke.party',
+    );
+    // A build pointed at another deployment with VITE_APP_SIGNALING_URL — the one real cross-origin
+    // caller these endpoints have.
+    expect((await ice('http://localhost:3000'))?.headers.get('Access-Control-Allow-Origin')).toBe(
+      'http://localhost:3000',
+    );
+  });
+
+  it('does not hand every page on the internet a browser-side client', async () => {
+    expect((await ice('https://not-ours.example'))?.headers.get('Access-Control-Allow-Origin')).toBeNull();
+  });
+});

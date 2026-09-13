@@ -98,7 +98,32 @@ a five-minute keepalive — never on the message path. A room wakes it for a han
 a few times per session instead of staying resident for every song.
 
 The signaling endpoints (`worker/online-signaling.ts`) proxy SFU session and channel creation so
-the Realtime app token never reaches a browser.
+the Realtime app token never reaches a browser. Those two are the only endpoints that spend
+anything, and neither is behind a login, so they are rate-limited by IP —
+`/online/session` in particular takes nothing but an SDP offer.
+
+## Who a participant is
+
+A participant id proves nothing. It is published to the whole room in `room-state` (that is how
+every client computes the same succession order), so everyone who has been in a room knows
+everyone else's.
+
+So the directory mints a **membership secret** on a participant's first join, returns it to that
+joiner alone, and requires it on everything that acts on that membership afterwards: rejoining it,
+and promoting it. Without that, replaying somebody else's participant id at `join` would re-point
+their row — moving the host's channels to whoever asked, or leaving any singer permanently unable
+to open their own slot by pointing them at a session that does not exist. The browser keeps the
+secret in `localStorage` next to the participant id and for the same reason: a room outlives
+several page loads, and a singer who closes the tab and comes back is the same member.
+
+Removing *somebody else* is separate, and gated on being the current host rather than on a secret —
+`leave` carries the asking session and the directory checks it.
+
+The host applies the same rule one level up, to the `hello` a client opens its slot with. The slot
+a frame arrives on is trustworthy; the participant id inside it is not. A slot may name any
+participant the room has not placed yet, and no participant it has placed somewhere else — the
+host's own id included, which is the case the slot map cannot cover, since the host joins over the
+loopback and never occupies a slot.
 
 ## Host succession
 
@@ -109,8 +134,9 @@ authority lives in a browser.
 1. Each client waits its rank in the succession order (connected participants by `joinOrder`, the
    same ordering the room logic itself elects a host with) times `ONLINE_PROMOTE_STAGGER_MS`. The
    obvious successor therefore claims first and the rest only pile in if it turns out to be gone too.
-2. It calls `promote` with the epoch it knows. The directory accepts only if that epoch is still
-   current, so of two clients reacting to the same stall exactly one wins.
+2. It calls `promote` with its membership secret and the epoch it knows. The directory accepts only
+   if that epoch is still current, so of two clients reacting to the same stall exactly one wins —
+   and only if the secret matches, so the claim can only be made by the participant itself.
 3. The loser's rejection carries the winner's session id — that is how it learns who to
    re-subscribe to, with no extra round trip.
 4. The winner rebuilds `OnlineRoomLogic` from the last snapshot it received. That is the same code
@@ -119,6 +145,15 @@ authority lives in a browser.
 
 The snapshot deliberately leaves out the compressed chart: it is the only large field, and every
 singer already had to download it to sing. A successor restores it from `chart-cache.ts`.
+
+The host that was replaced has to find out too, and nothing tells it: it does not read its own
+broadcast, so the successor's heartbeats never reach it, and it stopped watching for a stall the
+moment it became host. What it does have is the gap between its own heartbeat ticks. One longer
+than `ONLINE_HOST_STALL_MS` means it was starved for as long as the room waits before replacing a
+host, so it asks the directory who is in charge and steps down if the answer is not itself
+(`verifyStillHosting`). On the relay there is a second, blunter mechanism: `promote` closes the
+superseded host's socket outright, because a socket left open would keep receiving every client's
+frames and answering them.
 
 ## The page-navigation constraint
 
@@ -134,10 +169,14 @@ Two mitigations are in place:
   navigation still has something to restore from.
 
 **Known gap.** These cover a host navigating normally. They do not yet cover a host *disappearing*
-around the same moment a client is navigating — `tests/online-mode.spec.ts` "host closing the tab
-mid-song still lets the round finish and promotes the guest" fails: the successor takes over
-holding a lobby-phase snapshot, so `scoring.publishFinal` (which requires `phase === 'singing'`)
-drops the score and the round ends in the lobby instead of the results.
+around the same moment a client is navigating: the successor takes over holding a lobby-phase
+snapshot, so `scoring.publishFinal` (which requires `phase === 'singing'`) drops the score and the
+round ends in the lobby instead of the results.
+
+`tests/online-mode.spec.ts` "host closing the tab mid-song still lets the round finish and promotes
+the guest" is where this shows up, and it is **timing-dependent**: it passes on CI and fails
+reproducibly on a local macOS run. Whether it goes red is decided by how much of the navigation
+lands inside the stall window, so treat a green CI run as luck rather than as coverage.
 
 The durable fix is to stop navigating: keep online mode on one page for the whole lobby → song →
 results cycle, so neither the host's authority nor a client's succession state is ever torn down
