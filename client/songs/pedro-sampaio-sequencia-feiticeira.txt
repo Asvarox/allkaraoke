@@ -1,0 +1,391 @@
+#ARTIST:Pedro Sampaio
+#TITLE:Sequência Feiticeira
+#CREATOR:b888arb
+#BPM:260,04
+#YEAR:2025
+#VIDEO:v=_zKnEm9xPWw
+#GENRE:Funk Carioca
+#LANGUAGE:Portuguese
+#GAP:599,3816335948317
+#ALLKARAOKE_ID:pedro-sampaio-sequencia-feiticeira
+#ALLKARAOKE_SID:6331
+#ALLKARAOKE_LASTUPDATE:2026-09-14T02:42:33.461Z
+#ALLKARAOKE_ARTISTORIGIN:BR
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:130
+#MP3:Pedro Sampaio feat. MC GW, MC Jhey, MC Nito, MC Rodrigo do CN - Sequência Feiticeira.mp3
+#COVER:Pedro Sampaio feat. MC GW, MC Jhey, MC Nito, MC Rodrigo do CN - Sequência Feiticeira [CO].jpg
+#BACKGROUND:Pedro Sampaio feat. MC GW, MC Jhey, MC Nito, MC Rodrigo do CN - Sequência Feiticeira [BG].jpg
+F 17 3 12 A
+F 21 6 12 ê, 
+F 41 2 12 man
+F 44 2 12 da
+F 47 2 12 ram 
+F 50 2 12 me 
+F 53 2 12 cha
+F 56 4 12 mar?
+- 60
+F 77 2 12 Ê
+F 81 2 12 ta 
+F 85 1 12 por
+F 88 2 12 ra, 
+F 109 2 12 vai, 
+F 113 2 12 ca
+F 117 1 12 ra
+F 120 3 12 lho!
+- 123 208
+- 208
+F 225 3 12 Pe
+F 230 3 12 sa
+F 235 1 12 do, 
+F 238 4 12 né?
+- 242 248
+- 248
+: 265 2 9 Jei
+: 269 2 16 to 
+: 273 2 16 que 
+: 277 2 16 tu 
+: 281 6 16 sen
+: 289 2 16 ta é 
+: 293 2 17 gos
+: 297 6 14 to
+: 305 2 14 so 
+: 309 2 12 de
+: 313 2 16 ma
+: 317 2 12 ~
+: 321 16 14 ~is
+- 337
+: 341 2 12 Ô, 
+: 345 2 12 be
+: 349 6 12 bê, eu 
+: 357 6 16 que
+: 365 6 11 ro 
+* 373 6 16 re
+* 381 6 9 play
+- 387
+* 393 2 9 Quan
+* 397 2 16 do 
+: 401 2 16 tu 
+: 405 2 16 con
+: 409 6 16 trai, 
+: 417 2 16 tu 
+: 421 2 17 a
+: 425 6 14 ca
+: 433 2 14 ba 
+: 437 2 12 com 
+: 441 2 16 o pa
+: 445 2 12 ~
+: 449 16 14 ~i
+- 465
+: 469 2 12 Sem 
+: 473 2 12 que
+: 477 6 11 rer 
+: 485 6 16 me en
+: 493 6 11 fei
+: 501 6 16 ti
+: 509 6 9 cei
+- 515
+: 518 6 16 Me en
+: 526 6 11 fei
+: 534 6 16 ti
+: 542 6 9 cei
+- 548
+: 550 6 16 Me en
+: 558 6 11 fei
+: 566 6 16 ti
+: 574 6 9 cei
+- 580
+: 582 6 16 Me en
+* 590 6 11 fei
+* 598 6 16 ti
+* 606 6 9 cei
+- 612
+: 614 6 16 Me en
+: 622 6 11 fei
+: 630 6 16 ti
+: 638 6 9 cei
+- 644
+F 645 2 12 Fei
+F 649 2 12 ti
+F 653 2 12 cei
+F 657 2 12 ra 
+F 661 3 12 faz 
+F 666 4 12 fei
+F 672 2 12 ti
+F 676 1 12 ço
+- 677
+: 678 6 16 Me en
+: 686 6 11 fei
+: 694 6 16 ti
+: 702 6 9 cei
+- 708
+F 709 2 12 Fei
+F 713 2 12 ti
+F 717 2 12 cei
+F 721 2 12 ra 
+F 725 3 12 faz 
+F 730 4 12 fei
+F 736 2 12 ti
+F 740 1 12 ço
+- 741
+: 742 6 16 Me en
+: 750 6 11 fei
+: 758 6 16 ti...
+- 764
+F 765 2 12 Pa
+F 769 2 12 re e f... 
+F 773 2 12 pa
+F 777 2 12 re e 
+F 781 2 12 fi
+F 785 1 12 ca 
+F 787 1 12 na 
+F 789 2 12 pon
+F 793 1 12 ta 
+F 795 1 12 do 
+F 797 2 12 pé
+- 799
+F 809 2 12 En
+F 813 2 12 ga
+F 817 1 12 ta 
+F 819 1 12 na 
+F 821 2 12 mar
+F 825 2 12 cha 
+F 829 1 12 à 
+F 831 2 12 ré
+- 833 940
+- 940
+: 957 2 9 En
+: 961 2 11 tão, 
+: 965 2 11 en
+: 969 2 11 tão 
+: 973 2 16 vai 
+: 977 2 11 no 
+: 981 2 11 chão, 
+: 985 2 11 ban
+: 989 2 12 di
+: 993 2 9 da
+- 995
+: 997 2 9 Já 
+: 1001 2 7 que eu 
+: 1005 2 9 sou 
+: 1009 2 7 teu 
+: 1013 2 9 pre
+: 1017 2 12 fe
+: 1021 2 11 ri
+: 1025 2 11 do
+- 1027
+* 1029 2 11 Me en
+* 1033 2 11 fei
+* 1037 2 12 ti
+* 1041 2 16 ça 
+: 1045 2 11 com es
+: 1049 2 11 sa 
+: 1053 2 12 bun
+: 1057 2 9 da
+- 1059
+: 1061 2 9 Que eu 
+: 1065 2 7 sei 
+: 1069 2 9 que 
+: 1073 2 7 cê 
+: 1077 2 9 gos
+: 1081 2 12 ta 
+: 1085 2 11 dis
+: 1089 2 11 so
+- 1091
+: 1093 2 11 En
+: 1097 2 11 tão 
+: 1101 2 12 vai 
+: 1105 2 16 no 
+: 1109 2 11 chão, 
+* 1113 2 11 ban
+* 1117 2 12 di
+* 1121 2 9 da
+- 1123
+: 1125 2 9 Já 
+: 1129 2 7 que eu 
+: 1133 2 9 sou 
+: 1137 2 7 teu 
+: 1141 2 9 pre
+: 1145 2 12 fe
+: 1149 2 11 ri
+: 1153 2 11 do
+- 1155
+: 1157 2 11 Me en
+: 1161 2 11 fei
+: 1165 2 12 ti
+: 1169 2 16 ça 
+: 1173 2 11 com es
+: 1177 2 11 sa 
+: 1181 2 12 bun
+: 1185 2 9 da
+- 1187
+: 1189 2 9 Que eu 
+: 1193 2 7 sei 
+: 1197 2 9 que 
+: 1201 2 7 cê 
+: 1205 2 9 gos
+: 1202 3 12 ta 
+: 1206 2 11 dis
+: 1209 2 11 so
+- 1211
+F 1213 1 12 A
+F 1215 1 12 ê, 
+F 1217 1 12 nun
+F 1219 1 12 ca 
+F 1221 1 12 dei
+F 1223 1 12 xe 
+F 1225 2 12 pra a
+F 1228 1 12 ma
+F 1230 1 12 nhã
+- 1231
+F 1232 1 12 O que 
+F 1234 2 12 tu 
+F 1237 2 12 po
+F 1240 1 12 de 
+F 1242 2 12 fa
+F 1245 2 12 zer 
+F 1248 2 12 ho
+F 1251 2 12 je, 
+F 1257 2 12 é a
+F 1261 1 12 go
+F 1263 1 12 ra, 
+F 1265 3 12 vai, 
+F 1269 3 12 vai
+- 1272 1309
+- 1309
+F 1326 2 12 Pe
+F 1330 2 12 dro 
+F 1334 2 12 Sam
+F 1338 2 12 pa
+F 1342 15 12 io
+- 1357 1361
+- 1361
+F 1378 2 12 Pe
+F 1382 2 12 sa
+F 1386 2 12 do, 
+F 1390 4 12 né?
+- 1394 1400
+- 1400
+: 1417 2 9 Jei
+: 1421 2 16 to 
+: 1425 2 16 que 
+: 1429 2 16 tu 
+: 1433 6 16 sen
+: 1441 2 16 ta é 
+* 1445 2 17 gos
+* 1449 6 14 to
+* 1457 2 14 so 
+: 1461 2 12 de
+: 1465 2 16 ma
+: 1469 2 12 ~
+: 1473 16 14 ~is
+- 1489
+: 1493 2 12 Ô, 
+: 1497 2 12 be
+: 1501 6 12 bê, eu 
+: 1509 6 16 que
+: 1517 6 11 ro 
+: 1525 6 16 re
+: 1533 6 9 play
+- 1539
+: 1545 2 9 Quan
+: 1549 2 16 do 
+: 1553 2 16 tu 
+: 1557 2 16 con
+: 1561 6 16 trai, 
+: 1569 2 16 tu 
+: 1573 2 17 a
+: 1577 6 14 ca
+: 1585 2 14 ba 
+: 1589 2 12 com 
+: 1593 2 16 o pa
+: 1597 2 12 ~
+: 1601 12 14 ~i
+- 1613
+* 1621 2 12 Sem 
+* 1625 2 12 que
+* 1629 6 11 rer 
+: 1637 6 16 me en
+: 1645 6 11 fei
+: 1653 6 16 ti
+: 1661 6 9 cei
+- 1667
+: 1669 6 16 Me en
+: 1677 6 11 fei
+: 1685 6 16 ti
+: 1693 6 9 cei
+- 1699
+: 1701 6 16 Me en
+: 1709 6 11 fei
+: 1717 6 16 ti
+: 1725 6 9 cei
+- 1731
+: 1733 6 16 Me en
+: 1741 6 11 fei
+: 1749 6 16 ti
+: 1757 6 9 cei
+- 1763
+: 1765 6 16 Me en
+: 1773 6 11 fei
+: 1781 6 16 ti
+: 1789 6 9 cei
+- 1795
+F 1796 2 12 Fei
+F 1800 2 12 ti
+F 1804 2 12 cei
+F 1808 2 12 ra 
+F 1812 3 12 faz 
+F 1817 4 12 fei
+F 1823 2 12 ti
+F 1827 1 12 ço
+- 1828
+: 1829 6 16 Me en
+: 1837 6 11 fei
+: 1845 6 16 ti
+: 1853 6 9 cei
+- 1859
+F 1860 2 12 Fei
+F 1864 2 12 ti
+F 1868 2 12 cei
+F 1872 2 12 ra 
+F 1876 3 12 faz 
+F 1881 4 12 fei
+F 1887 2 12 ti
+F 1891 2 12 ço
+- 1893
+: 1894 6 16 Me en
+: 1902 6 11 fei
+: 1910 6 16 ti...
+- 1916
+F 1917 2 12 Pa
+F 1921 2 12 re e f... 
+F 1925 2 12 pa
+F 1929 2 12 re e 
+F 1933 2 12 fi
+F 1937 1 12 ca 
+F 1939 1 12 na 
+F 1941 2 12 pon
+F 1945 1 12 ta 
+F 1947 1 12 do 
+F 1949 2 12 pé
+- 1951 1977
+- 1977
+F 1994 2 12 En
+F 1998 2 12 ga
+F 2002 1 12 ta 
+F 2004 1 12 na 
+F 2006 2 12 mar
+F 2010 2 12 cha 
+F 2014 1 12 à 
+F 2016 2 12 ré
+- 2018 2085
+- 2085
+: 2102 2 11 Sem 
+: 2106 2 11 que
+: 2110 6 11 rer 
+: 2118 6 16 me en
+: 2126 6 11 fei
+* 2134 6 16 ti
+* 2142 6 9 cei
+E

@@ -1,0 +1,388 @@
+#ARTIST:Faun
+#TITLE:Walpurgisnacht
+#CREATOR:mustangfred
+#BPM:324,03
+#YEAR:2014
+#VIDEO:v=nLgM1QJ3S_I
+#GENRE:Medieval Folk
+#LANGUAGE:German
+#GAP:6711,575780020368
+#ALLKARAOKE_ID:faun-walpurgisnacht
+#ALLKARAOKE_SID:6332
+#ALLKARAOKE_LASTUPDATE:2026-09-14T02:42:34.910Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=5943
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24219
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:229
+#MP3:Faun - Walpurgisnacht.mp3
+: 22 4 2 In 
+: 28 3 2 den 
+: 33 5 0 A
+: 40 2 0 bend
+: 46 2 2 him
+: 51 2 2 mel 
+: 57 5 4 stei
+: 64 2 4 gen
+- 66
+: 70 3 2 Heu
+: 76 3 2 te 
+: 81 3 0 Nacht 
+: 88 2 0 die 
+: 93 2 0 Zau
+: 97 2 2 ber
+: 100 4 2 wei
+: 105 3 2 sen
+- 108
+: 118 5 5 Wil
+: 125 2 5 des 
+: 130 4 4 Volk 
+: 136 2 4 und 
+: 141 1 4 Li
+: 144 1 5 ~
+: 147 2 5 liths 
+: 153 5 7 Art
+- 158
+* 166 3 5 Lau
+* 171 3 7 ernd 
+: 178 3 7 Win
+: 183 1 5 de
+: 186 2 0 ~, 
+: 190 2 0 heim
+: 196 1 2 lich 
+: 201 4 2 Fahrt
+- 205
+: 214 2 2 Lasst 
+: 220 1 2 uns 
+: 226 5 0 zu 
+: 232 1 0 den 
+* 238 2 0 Feu
+* 241 2 2 ~
+* 244 2 2 ern 
+: 251 3 4 strei
+: 257 1 4 fen
+- 258
+: 262 5 2 Rau
+: 268 2 2 nend 
+: 274 3 0 nach 
+: 280 2 0 den 
+: 286 1 0 Ster
+: 289 1 2 ~
+: 293 2 2 nen 
+: 298 3 4 grei
+: 304 2 4 fen
+- 306
+: 310 1 4 Gu
+: 313 1 5 ~
+: 316 2 5 tes 
+: 322 3 5 und 
+: 327 2 5 auch 
+: 333 5 5 bö
+: 340 2 5 ses 
+: 345 3 5 Wort
+: 349 2 7 ~
+- 351
+: 358 4 5 Tra
+: 364 3 9 gen 
+: 370 3 7 wir 
+: 376 2 5 heut 
+: 382 3 0 fort 
+: 388 2 5 und 
+: 394 4 2 fort
+- 398
+: 404 5 2 In 
+: 411 4 4 den 
+: 417 5 5 Wei
+: 423 3 9 den 
+: 429 5 7 wer
+: 436 3 4 den 
+: 444 1 0 un
+: 449 1 2 sere
+: 451 1 4 ~ 
+* 454 5 2 Trä
+* 461 3 2 u
+* 466 7 2 me 
+: 478 8 2 klin
+: 489 2 2 gen
+- 491
+: 501 3 2 Und 
+: 508 4 4 die 
+: 514 3 5 Win
+: 519 5 9 de 
+: 526 4 7 wer
+: 532 2 4 den 
+: 538 2 0 un
+: 545 1 2 sere
+: 547 1 4 ~ 
+: 550 9 2 Lie
+: 561 9 2 der 
+* 574 4 2 sin
+* 584 2 2 gen
+- 586
+: 597 2 2 Lasst 
+: 603 3 4 uns 
+: 609 2 5 mit 
+: 615 3 9 den 
+: 621 3 7 Fun
+: 627 5 4 ken 
+: 634 4 0 ü
+: 639 2 4 ber’s 
+: 646 10 2 Feu
+: 658 5 2 er 
+* 670 7 2 sprin
+* 682 2 2 gen
+- 684
+: 693 4 2 In 
+: 699 5 2 der 
+: 706 3 2 Wal
+: 712 10 2 pur
+: 724 2 4 ~
+: 728 1 2 ~
+: 731 5 0 gis
+: 742 22 2 nacht
+- 764 767
+- 767
+: 789 22 -3 Eh 
+* 813 21 0 oh, 
+: 838 2 0 hört 
+: 844 2 2 die 
+: 849 5 2 Gei
+: 857 2 0 gen, 
+: 862 3 0 hört 
+: 867 3 2 die 
+: 873 4 2 Gei
+: 880 2 0 gen
+- 882
+: 886 23 -3 Eh 
+: 911 21 0 oh, 
+: 933 1 0 die 
+: 935 3 0 Feu
+: 941 3 2 er 
+: 947 2 2 sind 
+: 951 2 2 ent
+: 958 3 2 facht
+- 961
+: 980 24 -3 Eh 
+: 1006 20 0 oh, 
+: 1029 3 0 folgt 
+: 1035 4 2 dem 
+: 1041 4 2 Rei
+* 1047 1 0 gen, 
+: 1054 2 0 folgt 
+: 1059 3 2 dem 
+: 1064 6 2 Rei
+: 1072 1 0 gen
+- 1073
+: 1076 4 2 In 
+: 1083 4 2 der 
+: 1090 2 2 Wal
+: 1096 10 2 pur
+: 1107 2 4 ~
+: 1110 1 2 ~
+: 1114 3 0 gis
+: 1125 25 2 nacht
+- 1150 1441
+- 1441
+: 1463 3 2 Un
+: 1468 1 2 ge
+: 1475 3 0 stüm 
+: 1479 3 0 im 
+: 1486 5 2 Spiel 
+: 1493 2 2 der 
+: 1497 5 4 Gei
+: 1504 3 4 gen 
+: 1509 3 0 Dre
+: 1515 2 2 ht
+- 1517
+: 1521 2 0 Sich 
+: 1525 1 0 un
+: 1528 3 0 ser 
+: 1534 2 2 nächt
+: 1539 3 2 lich’ 
+: 1546 4 4 Rei
+: 1552 4 4 gen 
+: 1558 3 5 Und 
+: 1564 3 5 wir 
+: 1569 5 4 tre
+: 1576 3 4 ten 
+: 1582 4 5 wild 
+: 1588 2 5 und 
+: 1594 4 7 frei
+- 1598
+: 1604 6 5 Die
+: 1612 2 9 sem 
+: 1617 4 7 al
+: 1623 2 5 ten 
+: 1629 4 0 Zau
+: 1635 4 4 ber 
+: 1642 4 2 bei
+- 1646
+: 1654 4 2 Ein
+: 1661 4 2 mal 
+: 1667 4 0 nur 
+: 1674 1 0 im 
+: 1678 3 2 gro
+: 1684 3 2 ßen 
+: 1690 4 4 Krei
+: 1696 2 4 se
+- 1698
+: 1702 3 2 Tan
+: 1708 3 2 zen 
+: 1714 4 0 wir 
+: 1720 1 0 auf 
+: 1727 3 2 je
+: 1732 3 2 ne 
+: 1738 5 4 Wei
+: 1744 4 4 se 
+: 1750 1 5 Bis 
+: 1756 1 5 das 
+: 1761 3 4 ers
+: 1768 3 4 te 
+: 1774 4 5 Mor
+: 1780 4 5 gen
+: 1786 2 7 licht
+- 1788
+: 1798 3 5 Un
+: 1803 3 9 ser 
+: 1810 3 7 Traum
+: 1816 3 2 ge
+: 1822 4 0 we
+: 1827 3 4 be 
+: 1834 2 2 bricht
+- 1836
+: 1844 5 2 In 
+: 1851 4 4 den 
+: 1857 5 5 Wei
+: 1863 3 9 den 
+: 1870 4 7 wer
+: 1876 3 4 den 
+: 1884 1 0 un
+: 1889 1 2 sere
+: 1891 1 4 ~ 
+: 1894 6 2 Trä
+: 1901 3 2 u
+: 1906 8 2 me 
+: 1919 4 2 klin
+: 1930 2 2 gen
+- 1932
+: 1942 3 2 Und 
+: 1948 4 4 die 
+: 1954 3 5 Win
+: 1959 5 9 de 
+: 1966 4 7 wer
+: 1972 2 4 den 
+: 1978 2 0 un
+: 1985 1 2 sere
+: 1987 1 4 ~ 
+: 1990 10 2 Lie
+: 2002 9 2 der 
+: 2014 4 2 sin
+: 2026 2 2 gen
+- 2028
+: 2037 2 2 Lasst 
+: 2043 3 4 uns 
+: 2049 2 5 mit 
+: 2055 3 9 den 
+: 2061 3 7 Fun
+: 2067 5 4 ken 
+: 2074 2 0 ü
+: 2079 1 2 ber’s
+: 2081 1 4 ~ 
+: 2085 12 2 Feu
+: 2098 5 2 er 
+: 2109 9 2 sprin
+: 2121 2 2 gen
+- 2123
+: 2133 4 2 In 
+: 2139 5 2 der 
+: 2146 3 2 Wal
+: 2152 9 2 pur
+: 2162 1 4 ~
+: 2164 1 2 ~
+: 2167 1 0 ~
+: 2170 4 0 gis
+: 2181 22 2 nacht
+- 2203 2208
+- 2208
+: 2230 22 -3 Eh 
+: 2254 22 0 oh, 
+: 2278 2 0 hört 
+: 2284 2 2 die 
+: 2289 5 2 Gei
+: 2296 2 0 gen, 
+: 2302 3 0 hört 
+: 2308 2 2 die 
+: 2312 5 2 Gei
+: 2320 2 0 gen
+- 2322
+: 2326 23 -3 Eh 
+: 2351 20 0 oh, 
+: 2374 1 0 die 
+: 2376 2 0 Feu
+: 2380 3 2 er 
+: 2386 3 2 sind 
+: 2391 2 2 ent
+: 2397 4 2 facht
+- 2401
+: 2421 23 -3 Eh 
+: 2446 22 0 oh, 
+: 2470 3 0 folgt 
+: 2476 3 2 dem 
+: 2481 4 2 Rei
+: 2487 2 0 gen, 
+: 2494 2 0 folgt 
+: 2500 2 2 dem 
+: 2504 6 2 Rei
+: 2511 1 0 gen
+- 2512
+: 2516 5 2 In 
+: 2523 4 2 der 
+: 2529 4 2 Wal
+: 2536 10 2 pur
+: 2547 2 4 ~
+: 2550 1 2 ~
+: 2554 4 0 gis
+: 2565 25 2 nacht
+- 2590 4320
+- 4320
+: 4342 22 -3 Eh 
+: 4366 22 0 oh, 
+: 4390 2 0 hört 
+: 4396 2 2 die 
+: 4401 5 2 Gei
+: 4408 2 0 gen, 
+: 4414 3 0 hört 
+: 4420 2 2 die 
+: 4425 4 2 Gei
+: 4432 2 0 gen
+- 4434
+: 4438 23 -3 Eh 
+: 4463 20 0 oh, 
+: 4486 1 0 die 
+: 4488 2 0 Feu
+: 4492 3 2 er 
+: 4498 3 2 sind 
+: 4503 2 2 ent
+: 4510 3 2 facht
+- 4513
+* 4533 23 -3 Eh 
+: 4558 22 0 oh, 
+: 4582 3 0 folgt 
+: 4588 3 2 dem 
+: 4593 4 2 Rei
+: 4599 2 0 gen, 
+: 4606 2 0 folgt 
+: 4612 2 2 dem 
+: 4616 6 2 Rei
+: 4624 1 0 gen
+- 4625
+: 4628 5 2 In 
+: 4635 4 2 der 
+* 4641 4 2 Wal
+* 4648 10 2 pur
+* 4659 2 4 ~
+* 4662 1 2 ~
+: 4666 4 0 gis
+: 4678 27 2 nacht
+E

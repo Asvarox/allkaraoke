@@ -1653,7 +1653,7 @@
     "gap": 5320,
     "year": "2009",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-09-13T02:26:01.725Z",
+    "lastUpdate": "2026-09-12T12:26:39.192Z",
     "genre": "No idea",
     "realBpm": 76,
     "previewStart": 60,
@@ -43401,6 +43401,32 @@
     "local": false
   },
   {
+    "id": "default-wasting-my-time",
+    "title": "Wasting My Time",
+    "artist": "Default",
+    "video": "UAocvKHUidg",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 20350,
+    "year": "2001",
+    "lastUpdate": "2026-09-14T02:42:33.140Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "robsetsfire",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6327,
+    "tracksCount": 1,
+    "search": "defaultwastingmytime",
+    "local": false
+  },
+  {
     "id": "deftones-back-to-school-mini-maggit",
     "title": "Back to School (Mini Maggit)",
     "artist": "Deftones",
@@ -53571,7 +53597,7 @@
     "bpm": 306.06,
     "gap": 14039.800039208,
     "year": "2009",
-    "lastUpdate": "2026-09-13T02:25:59.855Z",
+    "lastUpdate": "2026-09-12T12:25:37.973Z",
     "realBpm": 78,
     "volume": 1,
     "author": "Tomatenwerfer",
@@ -56987,6 +57013,35 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-kira-stone-cast-of-epic-keep-your-friends-close",
+    "title": "Keep Your Friends Close",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Kira Stone, Cast of EPIC)",
+    "video": "UGYny6uI2bA",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 12867.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-14T02:42:33.311Z",
+    "genre": "Musical",
+    "realBpm": 80,
+    "previewStart": 60,
+    "previewEnd": 168,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6330,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranskirastonecastofepickeepyourfriendsclose",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-kj-scylla",
     "title": "Scylla",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, KJ)",
@@ -60073,7 +60128,7 @@
     "gap": 4467.702459508098,
     "year": "2022",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-09-13T02:26:01.272Z",
+    "lastUpdate": "2026-09-12T12:26:17.258Z",
     "genre": "Anime",
     "realBpm": 100,
     "previewStart": 48,
@@ -60262,6 +60317,36 @@
     "shortId": 6122,
     "tracksCount": 1,
     "search": "faundiesekaltenacht",
+    "local": false
+  },
+  {
+    "id": "faun-walpurgisnacht",
+    "title": "Walpurgisnacht",
+    "artist": "Faun",
+    "video": "nLgM1QJ3S_I",
+    "language": [
+      "German"
+    ],
+    "bpm": 324.03,
+    "gap": 6711.575780020368,
+    "year": "2014",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-14T02:42:34.910Z",
+    "genre": "Medieval Folk",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "mustangfred",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5943",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24219",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6332,
+    "tracksCount": 1,
+    "search": "faunwalpurgisnacht",
     "local": false
   },
   {
@@ -61232,7 +61317,7 @@
     "gap": 53411.363214837715,
     "year": "1985",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-09-13T02:25:57.749Z",
+    "lastUpdate": "2026-09-12T12:23:54.398Z",
     "realBpm": 101,
     "previewStart": 79,
     "previewEnd": 138,
@@ -61498,7 +61583,7 @@
     "gap": 999.2307692307692,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:59.853Z",
+    "lastUpdate": "2026-09-12T12:25:16.914Z",
     "realBpm": 125,
     "volume": 1,
     "author": "dude76",
@@ -94283,6 +94368,34 @@
     "shortId": 5998,
     "tracksCount": 1,
     "search": "kpopdemonhuntersrumijinufree",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-saja-boys-meu-pequeno-guarana",
+    "title": "Meu Pequeno Guaraná",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "4EoGIUvP_uA",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 252,
+    "gap": 17548.095238095237,
+    "year": "2025",
+    "lastUpdate": "2026-09-14T02:42:32.535Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 2,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "sourceUrl": "https://youtu.be/4EoGIUvP_uA?si=SsmJdxGQ_AM3ILYY",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6325,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboysmeupequenoguarana",
     "local": false
   },
   {
@@ -132995,6 +133108,34 @@
     "local": false
   },
   {
+    "id": "pedro-sampaio-sequencia-feiticeira",
+    "title": "Sequência Feiticeira",
+    "artist": "Pedro Sampaio",
+    "video": "_zKnEm9xPWw",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 260.04,
+    "gap": 599.3816335948317,
+    "year": "2025",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-09-14T02:42:33.461Z",
+    "genre": "Funk Carioca",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 130,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6331,
+    "tracksCount": 1,
+    "search": "pedrosampaiosequenciafeiticeira",
+    "local": false
+  },
+  {
     "id": "pendulum-the-tempest",
     "title": "The Tempest",
     "artist": "Pendulum",
@@ -136507,6 +136648,35 @@
     "local": false
   },
   {
+    "id": "provinz-hymne-gegen-euch",
+    "title": "Hymne gegen euch",
+    "artist": "Provinz",
+    "video": "BKh5IMj4ias",
+    "language": [
+      "German"
+    ],
+    "bpm": 340,
+    "gap": 26745.29411764706,
+    "year": "2021",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-14T02:42:34.912Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "previewStart": 117.94,
+    "volume": 1,
+    "author": "bohning, Fepo",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6333,
+    "tracksCount": 1,
+    "search": "provinzhymnegegeneuch",
+    "local": false
+  },
+  {
     "id": "provinz-pazifik",
     "title": "Pazifik",
     "artist": "Provinz",
@@ -139990,7 +140160,7 @@
     "gap": 52500.97826086957,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:57.743Z",
+    "lastUpdate": "2026-09-12T12:23:07.376Z",
     "realBpm": 91,
     "volume": 1,
     "author": "choosie",
@@ -143450,7 +143620,7 @@
     "bpm": 320,
     "gap": 895.625,
     "year": "2026",
-    "lastUpdate": "2026-09-13T02:26:01.727Z",
+    "lastUpdate": "2026-09-12T12:27:06.816Z",
     "genre": "Pop",
     "realBpm": 160,
     "volume": 1,
@@ -143509,7 +143679,7 @@
     "gap": 8583.050847457627,
     "year": "2010",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-13T02:25:59.650Z",
+    "lastUpdate": "2026-09-12T12:24:40.584Z",
     "realBpm": 88,
     "volume": 1,
     "author": "daggeg",
@@ -150841,6 +151011,36 @@
     "shortId": 3900,
     "tracksCount": 1,
     "search": "shakirayozunamonotonia",
+    "local": false
+  },
+  {
+    "id": "shakira-zoo-de-disney-zootopia-2",
+    "title": "Zoo (De \"Disney Zootopia 2\")",
+    "artist": "Shakira",
+    "video": "Kw3935PH01E",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": -95.11627906976742,
+    "year": "2025",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-09-14T02:42:33.138Z",
+    "genre": "Sountrack",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
+    "duration": 198,
+    "tracks": [
+      {
+        "name": "Shakira - Zoo",
+        "start": 8
+      }
+    ],
+    "shortId": 6326,
+    "tracksCount": 1,
+    "search": "shakirazoodedisneyzootopia2",
     "local": false
   },
   {
@@ -162368,6 +162568,36 @@
     "local": false
   },
   {
+    "id": "taylor-swift-how-you-get-the-girl",
+    "title": "How You Get The Girl",
+    "artist": "Taylor Swift",
+    "video": "rnwD7veCoFQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.05,
+    "gap": 77.66923557592168,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-14T02:42:33.302Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "previewStart": 46,
+    "previewEnd": 80,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6328,
+    "tracksCount": 1,
+    "search": "taylorswifthowyougetthegirl",
+    "local": false
+  },
+  {
     "id": "taylor-swift-i-knew-you-were-trouble",
     "title": "I Knew You Were Trouble",
     "artist": "Taylor Swift",
@@ -162396,6 +162626,35 @@
     "shortId": 4205,
     "tracksCount": 1,
     "search": "taylorswiftiknewyouweretrouble",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-im-only-me-when-im-with-you",
+    "title": "I’m Only Me When I’m With You",
+    "artist": "Taylor Swift",
+    "video": "AlTfYj7q5gQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 8270,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-14T02:42:33.305Z",
+    "genre": "Pop",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "jalkazar",
+    "sourceUrl": "https://www.youtube.com/watch?v=AlTfYj7q5gQ",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6329,
+    "tracksCount": 1,
+    "search": "taylorswiftimonlymewhenimwithyou",
     "local": false
   },
   {
@@ -176568,7 +176827,7 @@
     "gap": 33462.142857142855,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:59.850Z",
+    "lastUpdate": "2026-09-12T12:24:58.881Z",
     "realBpm": 140,
     "volume": 1,
     "author": "theecnemelc",
