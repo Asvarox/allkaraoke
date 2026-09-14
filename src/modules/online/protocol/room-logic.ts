@@ -54,6 +54,9 @@ export type OnlinePersistedState = Omit<RoomSnapshot, LatePersistedField> &
 export interface OnlineRoomDeps {
   roomCode: string;
   now: () => number;
+  /** The room directory's host epoch, published so clients can carry it into a promotion claim.
+   * A function rather than a value because the host bumps it when it takes over mid-life. */
+  hostEpoch?: () => number;
   /** Push data to all subscribers of a channel. */
   publish: (channel: keyof OnlineSubscriptionChannels, data: unknown) => void;
   /** Persist state so the room survives hibernation/restarts. Fire-and-forget. */
@@ -297,6 +300,7 @@ export class OnlineRoomLogic {
     finishRequestedAt: this.finishRequestedAt,
     leaderboard: [...this.leaderboard],
     finalResults: this.finalResults ? [...this.finalResults] : null,
+    hostEpoch: this.deps.hostEpoch?.() ?? 0,
   });
 
   /**

@@ -17,6 +17,7 @@ import {
   useReportPlayerStats,
 } from '~/modules/online/client/hooks';
 import OnlineClient from '~/modules/online/client/online-client';
+import { useOnlineMode } from '~/modules/online/client/use-online-mode';
 import PlayersManager from '~/modules/players/players-manager';
 import storage from '~/modules/utils/storage';
 import { getStoredOnlineName } from '~/routes/online/hooks/use-online-name';
@@ -44,6 +45,7 @@ const SCENE_TRANSITION_S = 0.4;
 
 function OnlineRoom({ roomCode }: Props) {
   const navigate = useSmoothNavigate();
+  const mode = useOnlineMode();
   // Joining via an invite link goes through the same name → mic → join wizard first
   const [setupDone, setSetupDone] = useState(() => storage.session.getItem(ONLINE_SETUP_DONE_KEY) === '1');
 
@@ -53,11 +55,11 @@ function OnlineRoom({ roomCode }: Props) {
     // Only the session that explicitly opened this room may create it — joining a
     // non-existing code gets rejected with 'not-found' instead of creating a room
     const create = storage.session.getItem(ONLINE_CREATED_ROOM_KEY) === roomCode;
-    OnlineClient.connect(roomCode, name, { create });
+    OnlineClient.connect(roomCode, name, { create, mode });
     return () => {
       OnlineClient.disconnect();
     };
-  }, [roomCode, setupDone]);
+  }, [roomCode, setupDone, mode]);
 
   useEffect(() => {
     // The local game path (lyrics, score display) renders from PlayersManager — online mode

@@ -1,4 +1,5 @@
 import { Song, SongPreview } from '~/interfaces';
+import { cacheChartData } from '~/modules/online/client/chart-cache';
 import OnlineClient from '~/modules/online/client/online-client';
 import { toSongHoverPreview } from '~/modules/online/client/song-preview';
 import { prepareChartTransfer, unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
@@ -33,6 +34,7 @@ export const uploadSongToRoom = async (song: Song, tolerance: number, difficulty
     { songId: song.id, artist: song.artist, title: song.title, video: song.video },
     chartText,
   );
+  cacheChartData(manifest, compressedChartData);
   await OnlineClient.rpc.selection.setChart(
     manifest,
     compressedChartData,
@@ -46,5 +48,8 @@ export const uploadSongToRoom = async (song: Song, tolerance: number, difficulty
 export const downloadSongFromRoom = async (manifest: ChartManifest): Promise<Song> => {
   const data = await OnlineClient.rpc.selection.getChart();
   const txt = await unpackChartTransfer(manifest, data);
+  // Kept as-is (still compressed) so this browser can hand the chart back to the room if it ends
+  // up hosting — the succession snapshot does not carry it.
+  cacheChartData(manifest, data);
   return processSong(convertTxtToSong(txt));
 };

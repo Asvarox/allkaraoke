@@ -10,6 +10,7 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import { checkRoomExists } from '~/modules/online/client/online-client';
+import { useOnlineMode } from '~/modules/online/client/use-online-mode';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
 import generateRoomCode from '~/modules/utils/generate-room-code';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
@@ -156,6 +157,7 @@ function CodeStep({
 }) {
   const [code, setCode] = useState(initialCode);
   const [checking, setChecking] = useState(false);
+  const mode = useOnlineMode();
   const inputRef = useRef<{
     element: HTMLInputElement | null;
     triggerValidationError: (message: string) => void;
@@ -171,7 +173,9 @@ function CodeStep({
       return;
     }
     setChecking(true);
-    const exists = await checkRoomExists(roomCode);
+    // Checked against the mode this browser will actually join with — the two keep their rooms in
+    // different places, so asking the wrong one would reject a code that exists.
+    const exists = await checkRoomExists(roomCode, mode);
     setChecking(false);
     if (!exists) {
       inputRef.current?.triggerValidationError('This room does not exist');
