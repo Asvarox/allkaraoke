@@ -44,6 +44,14 @@ function Welcome() {
   // navigate out of. `settings/` still links to the standalone route.
   const [micSetup, setMicSetup] = useState(false);
 
+  // Backing out puts the setting back to "never asked": the dialog fills it in from `navigator.
+  // languages` as soon as it opens, and leaving that behind would mean a user who cancelled is
+  // never asked again — they would go straight to a song list filtered by a guess they never saw.
+  const cancelLanguages = () => {
+    setExcludedLanguages(null);
+    setLanguageSelection(false);
+  };
+
   const confirmLanguages = () => {
     setExcludedLanguages(excludedLanguages ?? []);
     setLanguageSelection(false);
@@ -186,7 +194,7 @@ function Welcome() {
           variant="modal"
           closeText="Continue to Song Selection"
           onClose={confirmLanguages}
-          onCancel={() => setLanguageSelection(false)}
+          onCancel={cancelLanguages}
         />
       )}
     </LayoutGame>
