@@ -12,7 +12,10 @@ export default function SelectInputModal({ onClose, closeButtonText, open }: Pro
   return (
     <Modal onClose={onClose} open={open}>
       {open && (
-        <MenuContainer modal>
+        // Capped at the viewport and scrolled internally: the device lists some of these steps show
+        // are as long as the hardware plugged in, and past the cap the dialog would otherwise grow
+        // off both ends of the screen.
+        <MenuContainer modal className="max-h-[85dvh] justify-start overflow-y-auto">
           <SelectInputView
             smooth={false}
             onBack={onClose}

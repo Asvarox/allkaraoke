@@ -49,6 +49,9 @@ test('Remove player`s mic by another player - works', async ({ page, browser }) 
     await remoteMic2.remoteMicMainPage.expectConnectActionToBeUnavailable();
 
     await page.reload();
+    // Mic setup is a dialog over the main menu now, not a route — a reload lands on the menu, so it
+    // has to be opened again.
+    await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.defaultName);
   });

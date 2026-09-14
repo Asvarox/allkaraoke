@@ -3,9 +3,11 @@ import CountUp from 'react-countup';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
+import { ScrollableColumn } from '~/modules/elements/akui/scrollable-container';
 import { Skeleton } from '~/modules/elements/akui/skeleton';
 import { Flag } from '~/modules/elements/flag';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
+import Modal from '~/modules/elements/modal';
 import { NavButton, NavCheckbox } from '~/modules/elements/nav-controls';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import { useLanguageList } from '~/modules/songs/hooks/use-language-list';
@@ -18,12 +20,28 @@ import { twx } from '~/utils/twx';
 interface Props {
   onClose: () => void;
   closeText: string;
+  /**
+   * `page` is the standalone screen (its own route, reached from Manage Songs). `modal` is the
+   * first-run ask, which sits over the screen that triggered it — the main menu — so picking
+   * languages reads as a step of "sing a song" rather than a screen the user got sent to.
+   */
+  variant?: 'page' | 'modal';
+  /** Modal only: leaving without committing a selection (Backspace, backdrop). Defaults to `onClose`. */
+  onCancel?: () => void;
 }
 
 const MIN_SONGS_COUNT = isE2E() ? 0 : 20;
 
-function ExcludeLanguagesView({ onClose, closeText }: Props) {
-  const { register } = useKeyboardNav({ onBackspace: onClose, title: 'Select Song Languages' });
+function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel }: Props) {
+  const isModal = variant === 'modal';
+  const dismiss = onCancel ?? onClose;
+  const { register } = useKeyboardNav({
+    onBackspace: dismiss,
+    title: 'Select Song Languages',
+    // As a modal it owns the keyboard: the menu underneath stays on screen and would otherwise keep
+    // reacting to the arrows.
+    exclusive: isModal,
+  });
 
   const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
   const { data, isLoading } = useSongIndex();
@@ -80,69 +98,104 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
     }
   }, [languageList, excludedLanguages, setExcludedLanguages]);
 
+  const list = (
+    <>
+      {isLoading && new Array(6).fill(0).map((_, i) => <Skeleton className="h-25 w-full shrink-0" key={i} />)}
+      {languageList.map(({ name, count }) => {
+        const excluded = excludedLanguages?.includes(name) ?? false;
+        return (
+          <NavCheckbox
+            size="regular"
+            className="relative shrink-0 transition-all duration-300"
+            // The button's own `inactive` state, rather than a second dimming rule here: an
+            // excluded language is the same idea as any other switched-off option, and the
+            // remote mic's language filter already renders it that way.
+            inactive={excluded}
+            checked={!excluded}
+            key={name}
+            data-excluded={excluded}
+            name={`lang-${name}`}
+            label={name}
+            onClick={() => toggleLanguage(name)}
+            flag={<Flag language={[name]} />}>
+            <span>
+              <LanguageName>{name}</LanguageName> ({count} songs)
+            </span>
+          </NavCheckbox>
+        );
+      })}
+      {otherSongCount > 0 && (
+        <Menu.HelpText className="text-right">
+          …and <strong>{otherSongCount} songs</strong> in other languages
+        </Menu.HelpText>
+      )}
+    </>
+  );
+
+  const footer = (
+    <>
+      <Menu.HelpText>
+        You can always update the selection in <strong>Manage Songs</strong> menu
+      </Menu.HelpText>
+      <NextButtonContainer>
+        <NavButton
+          name="close-exclude-languages"
+          remoteIcon="confirm"
+          isDefault
+          disabled={areAllLanguagesExcluded || isLoading}
+          onClick={onClose}>
+          {closeText}
+        </NavButton>
+        <Menu.HelpText className="text-right">
+          The list will contain{' '}
+          <strong>
+            <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
+          </strong>{' '}
+          songs
+        </Menu.HelpText>
+        {areAllLanguagesExcluded && (
+          <Menu.HelpText data-test="all-languages-excluded-warning">
+            <strong>
+              <Icon icon="ic:baseline-warning" />
+            </strong>{' '}
+            You excluded all the languages, pick at least one
+          </Menu.HelpText>
+        )}
+      </NextButtonContainer>
+    </>
+  );
+
+  if (isModal) {
+    return (
+      <Modal open withPortal onClose={dismiss}>
+        {/* The dialog is capped at the viewport and only the list inside it scrolls, so the running
+            song count and the confirm button stay in sight however many languages there are. */}
+        <Menu
+          modal
+          className="max-h-[85dvh] justify-start"
+          data-test="exclude-languages-modal"
+          // `Menu` claims the shared `menu-container` view-transition name, which is meant for the
+          // screen a route swaps out. As an overlay it is not that screen, and a second element
+          // holding the name aborts the transition the confirm button starts.
+          style={{ viewTransitionName: 'none' }}>
+          <Menu.Header>Select Song Languages</Menu.Header>
+          <KeyboardNavContext value={register}>
+            <ScrollableColumn className="w-full flex-1" contentClassName="gap-4 pb-1">
+              {list}
+            </ScrollableColumn>
+            {footer}
+          </KeyboardNavContext>
+        </Menu>
+      </Modal>
+    );
+  }
+
   return (
     <MenuWithLogo>
       <Menu.Header>Select Song Languages</Menu.Header>
       <KeyboardNavContext value={register}>
-        <>
-          {isLoading && new Array(6).fill(0).map((_, i) => <Skeleton className="h-25 w-full" key={i} />)}
-          {languageList.map(({ name, count }) => {
-            const excluded = excludedLanguages?.includes(name) ?? false;
-            return (
-              <NavCheckbox
-                size="regular"
-                className="relative transition-all duration-300"
-                // The button's own `inactive` state, rather than a second dimming rule here: an
-                // excluded language is the same idea as any other switched-off option, and the
-                // remote mic's language filter already renders it that way.
-                inactive={excluded}
-                checked={!excluded}
-                key={name}
-                data-excluded={excluded}
-                name={`lang-${name}`}
-                label={name}
-                onClick={() => toggleLanguage(name)}
-                flag={<Flag language={[name]} />}>
-                <span>
-                  <LanguageName>{name}</LanguageName> ({count} songs)
-                </span>
-              </NavCheckbox>
-            );
-          })}
-          {otherSongCount > 0 && (
-            <Menu.HelpText className="text-right">
-              …and <strong>{otherSongCount} songs</strong> in other languages
-            </Menu.HelpText>
-          )}
-        </>
-        <Menu.HelpText>
-          You can always update the selection in <strong>Manage Songs</strong> menu
-        </Menu.HelpText>
-        <NextButtonContainer>
-          <NavButton
-            name="close-exclude-languages"
-            remoteIcon="confirm"
-            isDefault
-            disabled={areAllLanguagesExcluded || isLoading}
-            onClick={onClose}>
-            {closeText}
-          </NavButton>
-          <Menu.HelpText className="text-right">
-            The list will contain{' '}
-            <strong>
-              <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
-            </strong>{' '}
-            songs
-          </Menu.HelpText>
-          {areAllLanguagesExcluded && (
-            <Menu.HelpText data-test="all-languages-excluded-warning">
-              <strong>
-                <Icon icon="ic:baseline-warning" />
-              </strong>{' '}
-              You excluded all the languages, pick at least one
-            </Menu.HelpText>
-          )}
-        </NextButtonContainer>
+        {list}
+        {footer}
       </KeyboardNavContext>
     </MenuWithLogo>
   );
