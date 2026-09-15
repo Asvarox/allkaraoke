@@ -3,6 +3,7 @@ import { ComponentProps, ReactNode, useEffect, useRef, useState } from 'react';
 import { expect, userEvent } from 'storybook/test';
 
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
+import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import { SONG_BOARD_NEIGHBOURS } from '~/modules/leaderboard/consts';
@@ -238,6 +239,16 @@ const meta = {
     layout: 'fullscreen',
     viewport: { defaultViewport: '720p' },
   },
+  // The real app always sits inside this provider, painting the ambient blue gradient behind the
+  // page — Storybook doesn't mount it by default, and the post-game screens have no background of
+  // their own now that they stopped painting the song thumbnail behind themselves.
+  decorators: [
+    (Story) => (
+      <LayoutWithBackgroundProvider>
+        <Story />
+      </LayoutWithBackgroundProvider>
+    ),
+  ],
 } as Meta<ComponentProps<typeof Template>>;
 
 type Story = StoryObj<typeof meta>;

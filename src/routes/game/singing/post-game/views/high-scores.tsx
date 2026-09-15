@@ -15,18 +15,29 @@ import useLeaderboardPostGame from '~/routes/game/singing/post-game/views/leader
 import HighScoreRename from './high-score-rename';
 
 /**
- * The two boards, side by side from tablet up and stacked below it. `md:min-h-0` so the panel can
- * hand its height down to the scrolling list inside it — without it the list cannot shrink and the
- * board grows past the page instead of scrolling.
+ * Growing the boards is gated on the window being both wide enough for them to sit side by side and
+ * tall enough to have height to spare — not on width alone, which is the trap here.
+ *
+ * A landscape phone is 844x390: wide enough for `md`, but with barely 300px for the step. Asking a
+ * board to fill that while its list floors at 15rem gave the list a height its own panel could not
+ * contain, and it burst out of the bottom. Dropping the floor instead let the list grow to every row
+ * it had and stop scrolling. Neither is a board. Below this threshold nothing is overridden and the
+ * panel keeps the fixed five-row list it has always had.
  */
-const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:min-h-0 md:flex-1 md:basis-0';
+/** The two boards, side by side from tablet up and stacked below it. */
+const SCOREBOARD_CLASS =
+  'border border-white/10 p-2 md:flex-1 md:basis-0 [@media(min-width:768px)_and_(min-height:720px)]:min-h-0';
 
 /**
- * From tablet up the boards take whatever height the step has spare, rather than stopping at the
- * fixed five rows `ScoreboardPanel` defaults to. `min-h-60` is that default (15rem), kept as the
- * floor so a short window still shows a full board and the button below stays on screen.
+ * Where there is room, the boards take whatever height the step has spare rather than stopping at
+ * the fixed five rows `ScoreboardPanel` defaults to. `min-h-60` is that default (15rem), kept as the
+ * floor — safe here, because this only applies to a window with the height for it.
+ *
+ * Written out in full rather than built from a shared constant: Tailwind only generates classes it
+ * finds spelled out in the source, so an interpolated variant would silently produce no CSS.
  */
-const SCOREBOARD_LIST_CLASS = 'md:h-auto md:min-h-60 md:flex-1';
+const SCOREBOARD_LIST_CLASS =
+  '[@media(min-width:768px)_and_(min-height:720px)]:h-auto [@media(min-width:768px)_and_(min-height:720px)]:min-h-60 [@media(min-width:768px)_and_(min-height:720px)]:flex-1';
 
 /** How many rows the local board pads out to, so it stands as tall as the global one beside it. */
 const LOCAL_SCOREBOARD_ROWS = 5;
@@ -57,7 +68,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
     <>
       {/* Side by side from tablet up, stacked on a phone. Full width, so the pair lines up with the
           share panel and the tip under them rather than stopping short of both. */}
-      <div className="flex flex-col items-start gap-3 md:min-h-0 md:flex-1 md:flex-row md:items-stretch md:gap-6">
+      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6 [@media(min-width:768px)_and_(min-height:720px)]:min-h-0 [@media(min-width:768px)_and_(min-height:720px)]:flex-1">
         <ScoreboardPanel
           className={SCOREBOARD_CLASS}
           listClassName={SCOREBOARD_LIST_CLASS}
