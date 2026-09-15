@@ -120,7 +120,12 @@ const styles = {
       // has always rendered, and now the single source both that utility and `text-default` read
       // from, so "default text colour" has exactly one value across canvas and DOM.
       default: 'oklch(96.8% 0.007 247.896)',
-      inactive: 'grey',
+      // Plain white at 70%, rather than a fixed grey: de-emphasised text sits on top of whatever the
+      // screen is showing — the app's blue, a dark card, the song's own video — and letting the
+      // backdrop tint it keeps it in key with each. Still a clear step below `default`, which is
+      // what keeps the next lyrics line reading as "not yours yet" while it is being sung towards.
+      // `rgba` rather than a Tailwind opacity modifier: the canvas reads this same value.
+      inactive: 'rgba(255, 255, 255, 0.7)',
     },
   },
 };
