@@ -64,7 +64,10 @@ function PostGameView({
   const [backgroundTheme] = useSettingValue(BackgroundThemeSetting);
   useBackgroundMusic(true);
   const [step, setStep] = useState<'results' | 'highscores'>('results');
-  const round = useSongsPlayedToday();
+  // `highScoresEnabled` is the same signal as "this game was saved locally": online play sets it
+  // false precisely because its results never reach local storage, which is where the round count is
+  // read from.
+  const round = useSongsPlayedToday(highScoresEnabled);
 
   return (
     <div className="relative overflow-y-auto" style={{ width, height }}>

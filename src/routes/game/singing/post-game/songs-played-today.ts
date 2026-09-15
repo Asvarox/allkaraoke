@@ -27,16 +27,22 @@ export function countPlaysToday(allStats: Record<string, SongStats>): number {
  * that mark a song "played today" in song selection, so the number survives a reload and cannot
  * drift from what the rest of the app believes was played.
  *
- * Returns `null` until the records have loaded, and for online games — those are never written to
- * local stats, so there is no round to report. Callers should leave the line out rather than print
- * a zero.
+ * Returns `null` until the records have loaded, and whenever `isLocalGame` is false. Online rounds
+ * are never written to local stats, so counting them would report a number made up entirely of
+ * songs sung locally earlier in the day — a round count belonging to a different night out.
+ * Callers should leave the line out rather than print it.
  */
-export function useSongsPlayedToday(): number | null {
+export function useSongsPlayedToday(isLocalGame: boolean): number | null {
   const [count, setCount] = useState<number | null>(null);
 
   const recount = useCallback(async () => {
+    if (!isLocalGame) {
+      setCount(null);
+      return;
+    }
+
     setCount(countPlaysToday(await getAllStats()) || null);
-  }, []);
+  }, [isLocalGame]);
 
   useEffect(() => {
     recount();

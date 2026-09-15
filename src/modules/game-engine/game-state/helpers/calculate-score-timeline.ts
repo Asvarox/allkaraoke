@@ -1,5 +1,5 @@
 import { noPointsNoteTypes } from '~/consts';
-import { DetailedScore, PlayerNote, Song } from '~/interfaces';
+import { DetailedScore, PlayerNote, Song, songBeat } from '~/interfaces';
 import {
   beatsToPoints,
   calculateDetailedScoreData,
@@ -20,26 +20,38 @@ export type ScoreTimeline = DetailedScore[];
  * staying cheap enough to compute for every player at once when the screen mounts. */
 export const SCORE_TIMELINE_SAMPLES = 120;
 
+/** Same two filters `calculateDetailedScoreData` applies, so a timeline adds up to the score it
+ * returns rather than to a slightly different number. */
+const scoringNotesOf = (playerNotes: PlayerNote[]) =>
+  playerNotes.filter((note) => !noPointsNoteTypes.includes(note.note.type) && getPlayerNoteDistance(note) === 0);
+
+/**
+ * The beat every player's timeline ends on.
+ *
+ * Shared across players on purpose. The results screen samples every timeline at the same progress,
+ * so a per-player endpoint would make one progress value mean a different moment of the song for
+ * each of them — the board and the chart would be comparing different points of the same replay,
+ * and co-op would average samples taken at different beats.
+ *
+ * The song's own length normally ends last, but a note sung past it would be cut off the end of the
+ * timeline and lost, leaving that player's final sample short of their real total.
+ */
+export function getTimelineEndBeat(song: Song, playerNotes: PlayerNote[][]): songBeat {
+  return playerNotes
+    .flatMap(scoringNotesOf)
+    .reduce((end, note) => Math.max(end, note.start + note.length), Math.max(getSongBeatCount(song), 1));
+}
+
 export function calculateScoreTimeline(
   playerNotes: PlayerNote[],
   song: Song,
   trackNumber: number,
+  /** From {@link getTimelineEndBeat}, computed once across every player sharing the screen. */
+  endBeat: songBeat,
   sampleCount: number = SCORE_TIMELINE_SAMPLES,
 ): ScoreTimeline {
   const [pointsPerBeat] = calculateDetailedScoreData(playerNotes, song, trackNumber);
-
-  // Same two filters `calculateDetailedScoreData` applies, so the timeline adds up to the score it
-  // returns rather than to a slightly different number.
-  const scoringNotes = playerNotes.filter(
-    (note) => !noPointsNoteTypes.includes(note.note.type) && getPlayerNoteDistance(note) === 0,
-  );
-
-  // The song's own length normally ends last, but a note sung past it would be cut off the end of
-  // the timeline and lost, leaving the final sample short of the real total.
-  const endBeat = scoringNotes.reduce(
-    (end, note) => Math.max(end, note.start + note.length),
-    Math.max(getSongBeatCount(song), 1),
-  );
+  const scoringNotes = scoringNotesOf(playerNotes);
 
   const timeline: ScoreTimeline = [];
   for (let sample = 0; sample <= sampleCount; sample++) {
