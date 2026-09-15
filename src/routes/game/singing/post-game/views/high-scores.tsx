@@ -15,10 +15,18 @@ import useLeaderboardPostGame from '~/routes/game/singing/post-game/views/leader
 import HighScoreRename from './high-score-rename';
 
 /**
- * The two boards, side by side from tablet up and stacked below it. Their own height is
- * `ScoreboardPanel`'s; this only says how they share the width.
+ * The two boards, side by side from tablet up and stacked below it. `md:min-h-0` so the panel can
+ * hand its height down to the scrolling list inside it — without it the list cannot shrink and the
+ * board grows past the page instead of scrolling.
  */
-const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:flex-1 md:basis-0';
+const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:min-h-0 md:flex-1 md:basis-0';
+
+/**
+ * From tablet up the boards take whatever height the step has spare, rather than stopping at the
+ * fixed five rows `ScoreboardPanel` defaults to. `min-h-60` is that default (15rem), kept as the
+ * floor so a short window still shows a full board and the button below stays on screen.
+ */
+const SCOREBOARD_LIST_CLASS = 'md:h-auto md:min-h-60 md:flex-1';
 
 /** How many rows the local board pads out to, so it stands as tall as the global one beside it. */
 const LOCAL_SCOREBOARD_ROWS = 5;
@@ -49,9 +57,10 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
     <>
       {/* Side by side from tablet up, stacked on a phone. Full width, so the pair lines up with the
           share panel and the tip under them rather than stopping short of both. */}
-      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6">
+      <div className="flex flex-col items-start gap-3 md:min-h-0 md:flex-1 md:flex-row md:items-stretch md:gap-6">
         <ScoreboardPanel
           className={SCOREBOARD_CLASS}
+          listClassName={SCOREBOARD_LIST_CLASS}
           title="Local scoreboard"
           subtitle="This song · this device"
           data-test="highscores-container">
@@ -94,6 +103,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           singSetup={singSetup}
           leaderboard={leaderboard}
           className={SCOREBOARD_CLASS}
+          listClassName={SCOREBOARD_LIST_CLASS}
         />
       </div>
       <LeaderboardSharePanel register={register} leaderboard={leaderboard} />
@@ -101,7 +111,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
         <SelectSongButton
           register={register}
           onClick={goToNextStep}
-          label={isArmed ? 'Share score and sing a song' : 'Select song'}
+          label={isArmed ? 'Share score and sing a song' : 'Select next song'}
           isSubmitting={leaderboard.isSubmitting}
         />
       </div>
@@ -126,7 +136,6 @@ function SelectSongButton({ register, onClick, label, isSubmitting }: SelectSong
   return (
     <Button
       className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
-      size="small"
       // Kept off the register spread: a disabled registration returns no props at all, and the e2e
       // and the remote both need this button findable while the score is in flight.
       data-test="play-next-song-button"
@@ -135,7 +144,7 @@ function SelectSongButton({ register, onClick, label, isSubmitting }: SelectSong
         disabled: isSubmitting,
         control: { type: 'button', label },
       })}>
-      {isSubmitting ? 'Sharing…' : label}
+      {isSubmitting ? 'Sharing the score…' : label}
     </Button>
   );
 }

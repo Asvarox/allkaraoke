@@ -3,7 +3,12 @@ import {
   addDetailedScores,
   beatsToPoints,
   divideDetailedScores,
+  emptyDetailedScore,
 } from '~/modules/game-engine/game-state/helpers/calculate-score';
+import {
+  ScoreTimeline,
+  calculateScoreTimeline,
+} from '~/modules/game-engine/game-state/helpers/calculate-score-timeline';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import PlayerState from '~/modules/game-engine/game-state/player-state';
 import InputManager from '~/modules/game-engine/input/input-manager';
@@ -93,6 +98,27 @@ export class GameStateClass {
 
       return tuple([beatsToPoints(counts, pointsPerBeat), beatsToPoints(maxCounts, pointsPerBeat)]);
     }
+  };
+
+  /** Per-player running score for the results screen to animate through. Co-op collapses to the one
+   * team score the same way `getPlayerDetailedScore` does: summed across players, then averaged. */
+  public getPlayerScoreTimeline = (player: PlayerNumber): ScoreTimeline => {
+    const song = this.getSong()!;
+    const timelineOf = (playerState: PlayerState) =>
+      calculateScoreTimeline(playerState.getPlayerNotes(), song, playerState.getTrackIndex());
+
+    if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
+      const timelines = this.getPlayers().map(timelineOf);
+
+      return timelines[0].map((_, sample) =>
+        divideDetailedScores(
+          timelines.reduce((sum, timeline) => addDetailedScores(sum, timeline[sample]), emptyDetailedScore()),
+          this.getPlayerCount(),
+        ),
+      );
+    }
+
+    return timelineOf(this.getPlayer(player)!);
   };
 
   public getSongCompletionProgress = () => {
