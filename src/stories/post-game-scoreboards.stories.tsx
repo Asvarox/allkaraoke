@@ -13,6 +13,7 @@ import { PlayerNumber } from '~/modules/players/player-number';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import tuple from '~/modules/utils/tuple';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
+import { PostGameBackground } from '~/stories/post-game-background';
 
 import songTxt from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt?raw';
 
@@ -238,6 +239,13 @@ const meta = {
     layout: 'fullscreen',
     viewport: { defaultViewport: '720p' },
   },
+  decorators: [
+    (Story) => (
+      <PostGameBackground>
+        <Story />
+      </PostGameBackground>
+    ),
+  ],
 } as Meta<ComponentProps<typeof Template>>;
 
 type Story = StoryObj<typeof meta>;

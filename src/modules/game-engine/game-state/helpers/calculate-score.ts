@@ -18,7 +18,17 @@ const noteTypesMultipliers: DetailedScore = {
   vibrato: 0.25,
 };
 
-const countsToBeats = (counts: DetailedScore): DetailedScore => ({
+export const emptyDetailedScore = (): DetailedScore => ({
+  freestyle: 0,
+  rap: 0,
+  rapstar: 0,
+  star: 0,
+  normal: 0,
+  perfect: 0,
+  vibrato: 0,
+});
+
+export const countsToBeats = (counts: DetailedScore): DetailedScore => ({
   freestyle: counts.freestyle * noteTypesMultipliers.freestyle,
   rap: counts.rap * noteTypesMultipliers.rap,
   rapstar: counts.rapstar * noteTypesMultipliers.rapstar,
@@ -60,6 +70,21 @@ export const divideDetailedScores = (counts: DetailedScore, divideBy: number): D
   perfect: counts.perfect / divideBy,
   vibrato: counts.vibrato / divideBy,
 });
+
+export const multiplyDetailedScore = (counts: DetailedScore, multiplier: number): DetailedScore => ({
+  freestyle: counts.freestyle * multiplier,
+  rap: counts.rap * multiplier,
+  rapstar: counts.rapstar * multiplier,
+  star: counts.star * multiplier,
+  normal: counts.normal * multiplier,
+  perfect: counts.perfect * multiplier,
+  vibrato: counts.vibrato * multiplier,
+});
+
+/** `progress` 0 gives `from`, 1 gives `to`. Used to read a score from between two timeline samples,
+ * so the reveal moves every frame instead of stepping from one sample to the next. */
+export const lerpDetailedScores = (from: DetailedScore, to: DetailedScore, progress: number): DetailedScore =>
+  addDetailedScores(multiplyDetailedScore(from, 1 - progress), multiplyDetailedScore(to, progress));
 
 const countSungBeats = memoize((song: Song): DetailedScore[] => {
   return song.tracks.map(({ sections }) => {
