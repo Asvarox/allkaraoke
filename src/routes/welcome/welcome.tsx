@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet';
 
 import { Chip } from '~/modules/elements/akui/chip';
@@ -6,7 +8,10 @@ import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import ExcludeLanguagesView from '~/routes/exclude-languages/exclude-languages-view';
 import LayoutGame from '~/routes/layout-game';
+import SelectInputModal from '~/routes/select-input/select-input-modal';
+import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/settings/settings-state';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 import MenuFooter from '~/routes/welcome/menu-footer';
 import MenuTile from '~/routes/welcome/menu-tile';
@@ -23,9 +28,47 @@ function Welcome() {
 
   const navigate = useSmoothNavigate();
 
+  // The first-run language pick belongs to "sing a song", so it happens here, as a modal over the
+  // menu, instead of the song list swapping itself out for a full screen once the route has changed.
+  const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
+  const [languageSelection, setLanguageSelection] = useState(false);
+  const goToSongList = () => {
+    if (excludedLanguages === null) {
+      setLanguageSelection(true);
+    } else {
+      navigate('game/');
+    }
+  };
+  // Mic setup is a menu entry, not a place: it opens over the tiles the same way the language pick
+  // does, so finishing it puts the user back where they started instead of on a screen they have to
+  // navigate out of. `settings/` still links to the standalone route.
+  const [micSetup, setMicSetup] = useState(false);
+
+  // Backing out puts the setting back to "never asked": the dialog fills it in from `navigator.
+  // languages` as soon as it opens, and leaving that behind would mean a user who cancelled is
+  // never asked again — they would go straight to a song list filtered by a guess they never saw.
+  const cancelLanguages = () => {
+    setExcludedLanguages(null);
+    setLanguageSelection(false);
+  };
+
+  const confirmLanguages = () => {
+    setExcludedLanguages(excludedLanguages ?? []);
+    setLanguageSelection(false);
+    // No view transition on the way out: the tiles it would morph have been behind a dialog the
+    // whole time, so it animates nothing the user can see — and until it finishes, the song list
+    // underneath is a snapshot that swallows the first click.
+    navigate('game/', undefined, { smooth: false });
+  };
+
   useBackgroundMusic(/* true */ false);
   // Tiles sit in a grid, so all four arrows navigate by position — see `handleSpatialNavigation`.
-  const { register } = useKeyboardNav({ title: 'Main Menu', direction: 'horizontal-vertical' });
+  const { register } = useKeyboardNav({
+    // An open dialog owns the keyboard — the tiles behind it must not answer the arrows as well.
+    enabled: !languageSelection && !micSetup,
+    title: 'Main Menu',
+    direction: 'horizontal-vertical',
+  });
 
   return (
     <LayoutGame>
@@ -71,7 +114,7 @@ function Welcome() {
                   hint="Sing solo or start a party"
                   remoteIcon="play"
                   className={MenuViewTransition.SING_A_SONG}
-                  onClick={() => navigate('game/')}
+                  onClick={goToSongList}
                 />
                 <MenuTile
                   name="online"
@@ -94,7 +137,7 @@ function Welcome() {
                   label="Setup Microphones"
                   hint="Configure audio"
                   className={MenuViewTransition.TILES[0]}
-                  onClick={() => navigate('select-input/')}
+                  onClick={() => setMicSetup(true)}
                 />
                 <MenuTile
                   name="manage-songs"
@@ -140,6 +183,20 @@ function Welcome() {
 
         <MenuFooter />
       </div>
+      {/* Portalled to the body, as the song settings screen does with the same dialog: inside the
+          menu's own layout the tiles paint over its backdrop and keep taking the clicks. */}
+      {createPortal(
+        <SelectInputModal open={micSetup} onClose={() => setMicSetup(false)} closeButtonText="Go to main menu" />,
+        document.body,
+      )}
+      {languageSelection && (
+        <ExcludeLanguagesView
+          variant="modal"
+          closeText="Continue to Song Selection"
+          onClose={confirmLanguages}
+          onCancel={cancelLanguages}
+        />
+      )}
     </LayoutGame>
   );
 }

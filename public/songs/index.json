@@ -1653,7 +1653,7 @@
     "gap": 5320,
     "year": "2009",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-09-13T02:26:01.725Z",
+    "lastUpdate": "2026-09-12T12:26:39.192Z",
     "genre": "No idea",
     "realBpm": 76,
     "previewStart": 60,
@@ -15450,6 +15450,34 @@
     "shortId": 4944,
     "tracksCount": 1,
     "search": "aviciiyoumakeme",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-alice",
+    "title": "Alice",
+    "artist": "Avril Lavigne",
+    "video": "YI4m-l2yRZA",
+    "language": [
+      "English"
+    ],
+    "bpm": 238.1,
+    "gap": 25992.020159596806,
+    "year": "2010",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-09-16T02:41:12.319Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6336,
+    "tracksCount": 1,
+    "search": "avrillavignealice",
     "local": false
   },
   {
@@ -36969,6 +36997,34 @@
     "local": false
   },
   {
+    "id": "cmx-ruoste",
+    "title": "Ruoste",
+    "artist": "CMX",
+    "video": "L8MJKwA9LZo",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 252.8,
+    "gap": 17081.29746835443,
+    "year": "1994",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-16T02:41:17.035Z",
+    "realBpm": 126,
+    "previewStart": 16,
+    "previewEnd": 230,
+    "volume": 1,
+    "author": "CMX",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6353,
+    "tracksCount": 1,
+    "search": "cmxruoste",
+    "local": false
+  },
+  {
     "id": "cobra-starship-feat-leighton-meester-good-girls-go-bad",
     "title": "Good Girls Go Bad",
     "artist": "Cobra Starship feat. Leighton Meester",
@@ -39234,6 +39290,35 @@
     "shortId": 1045,
     "tracksCount": 1,
     "search": "crush40livelearn",
+    "local": false
+  },
+  {
+    "id": "crush-40-open-your-heart",
+    "title": "Open Your Heart",
+    "artist": "Crush 40",
+    "video": "JsL-5R76jFk",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.53,
+    "gap": 39471.83366505545,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:17.031Z",
+    "genre": "Game",
+    "videoGap": 17,
+    "realBpm": 112,
+    "volume": 1,
+    "author": "BPEmu",
+    "duration": 290,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6351,
+    "tracksCount": 1,
+    "search": "crush40openyourheart",
     "local": false
   },
   {
@@ -42391,6 +42476,33 @@
     "local": false
   },
   {
+    "id": "david-guetta-onerepublic-i-dont-wanna-wait",
+    "title": "I Don’t Wanna Wait",
+    "artist": "David Guetta & OneRepublic",
+    "video": "dSDbwfXX5_I",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 36.923076923076906,
+    "year": "2024",
+    "lastUpdate": "2026-09-16T02:41:14.898Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=dSDbwfXX5_I",
+    "duration": 155,
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 6340,
+    "tracksCount": 1,
+    "search": "davidguettaonerepublicidontwannawait",
+    "local": false
+  },
+  {
     "id": "david-guetta-sia-titanium",
     "title": "Titanium",
     "artist": "David Guetta & Sia",
@@ -43401,6 +43513,32 @@
     "local": false
   },
   {
+    "id": "default-wasting-my-time",
+    "title": "Wasting My Time",
+    "artist": "Default",
+    "video": "UAocvKHUidg",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 20350,
+    "year": "2001",
+    "lastUpdate": "2026-09-13T12:29:34.300Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "robsetsfire",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6327,
+    "tracksCount": 1,
+    "search": "defaultwastingmytime",
+    "local": false
+  },
+  {
     "id": "deftones-back-to-school-mini-maggit",
     "title": "Back to School (Mini Maggit)",
     "artist": "Deftones",
@@ -43690,6 +43828,35 @@
     "shortId": 1172,
     "tracksCount": 1,
     "search": "deichkindremmidemmiyippieyippieyeah",
+    "local": false
+  },
+  {
+    "id": "del-shannon-runaway",
+    "title": "Runaway",
+    "artist": "Del Shannon",
+    "video": "wSWMJxbxj7c",
+    "language": [
+      "English"
+    ],
+    "bpm": 308.23,
+    "gap": 5848.035882295688,
+    "year": "1961",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:13.392Z",
+    "genre": "Oldies",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "blewmaxx, asb",
+    "sourceUrl": "Del Shannon",
+    "duration": 136,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6339,
+    "tracksCount": 1,
+    "search": "delshannonrunaway",
     "local": false
   },
   {
@@ -47812,6 +47979,33 @@
     "shortId": 1279,
     "tracksCount": 2,
     "search": "disneyslavalava",
+    "local": false
+  },
+  {
+    "id": "disneys-lemonade-mouth-more-than-a-band",
+    "title": "More Than A Band",
+    "artist": "Disney’s Lemonade Mouth",
+    "video": "HG827ejO870",
+    "language": [
+      "English"
+    ],
+    "bpm": 325.8,
+    "gap": 7547.108655616943,
+    "year": "2011",
+    "lastUpdate": "2026-09-16T02:41:16.618Z",
+    "genre": "Soundtrack",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 148,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6346,
+    "tracksCount": 1,
+    "search": "disneyslemonademouthmorethanaband",
     "local": false
   },
   {
@@ -53571,7 +53765,7 @@
     "bpm": 306.06,
     "gap": 14039.800039208,
     "year": "2009",
-    "lastUpdate": "2026-09-13T02:25:59.855Z",
+    "lastUpdate": "2026-09-12T12:25:37.973Z",
     "realBpm": 78,
     "volume": 1,
     "author": "Tomatenwerfer",
@@ -53648,6 +53842,34 @@
     "shortId": 1446,
     "tracksCount": 1,
     "search": "elcuartetodenoselhijodehernandez",
+    "local": false
+  },
+  {
+    "id": "el-reno-renardo-camino-moria",
+    "title": "Camino Moria",
+    "artist": "El Reno Renardo",
+    "video": "U-RtO3bjVac",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 7760,
+    "year": "2007",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-09-16T02:41:15.088Z",
+    "genre": "Freak Metal",
+    "realBpm": 180,
+    "volume": 1,
+    "author": "P4n4cea",
+    "duration": 275,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6343,
+    "tracksCount": 1,
+    "search": "elrenorenardocaminomoria",
     "local": false
   },
   {
@@ -56987,6 +57209,35 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-kira-stone-cast-of-epic-keep-your-friends-close",
+    "title": "Keep Your Friends Close",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Kira Stone, Cast of EPIC)",
+    "video": "UGYny6uI2bA",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 12867.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-13T14:49:06.920Z",
+    "genre": "Musical",
+    "realBpm": 80,
+    "previewStart": 60,
+    "previewEnd": 168,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6330,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranskirastonecastofepickeepyourfriendsclose",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-kj-scylla",
     "title": "Scylla",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, KJ)",
@@ -60073,7 +60324,7 @@
     "gap": 4467.702459508098,
     "year": "2022",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-09-13T02:26:01.272Z",
+    "lastUpdate": "2026-09-12T12:26:17.258Z",
     "genre": "Anime",
     "realBpm": 100,
     "previewStart": 48,
@@ -60262,6 +60513,36 @@
     "shortId": 6122,
     "tracksCount": 1,
     "search": "faundiesekaltenacht",
+    "local": false
+  },
+  {
+    "id": "faun-walpurgisnacht",
+    "title": "Walpurgisnacht",
+    "artist": "Faun",
+    "video": "nLgM1QJ3S_I",
+    "language": [
+      "German"
+    ],
+    "bpm": 324.03,
+    "gap": 6711.575780020368,
+    "year": "2014",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-13T14:50:02.126Z",
+    "genre": "Medieval Folk",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "mustangfred",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5943",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24219",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6332,
+    "tracksCount": 1,
+    "search": "faunwalpurgisnacht",
     "local": false
   },
   {
@@ -60923,6 +61204,37 @@
     "local": false
   },
   {
+    "id": "filow-ikkimel-jiggy",
+    "title": "Jiggy",
+    "artist": "Filow & Ikkimel",
+    "video": "gwj7E2cjR10",
+    "language": [
+      "German"
+    ],
+    "bpm": 216,
+    "gap": 9477.777777777777,
+    "year": "2025",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-16T02:41:16.812Z",
+    "realBpm": 107,
+    "previewStart": 49,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "NotReallyInnocent",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=30432",
+    "duration": 134,
+    "tracks": [
+      {
+        "name": "Jiggy",
+        "start": 14
+      }
+    ],
+    "shortId": 6348,
+    "tracksCount": 1,
+    "search": "filowikkimeljiggy",
+    "local": false
+  },
+  {
     "id": "filow-rasenschach",
     "title": "Rasenschach",
     "artist": "Filow",
@@ -61232,7 +61544,7 @@
     "gap": 53411.363214837715,
     "year": "1985",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-09-13T02:25:57.749Z",
+    "lastUpdate": "2026-09-12T12:23:54.398Z",
     "realBpm": 101,
     "previewStart": 79,
     "previewEnd": 138,
@@ -61498,7 +61810,7 @@
     "gap": 999.2307692307692,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:59.853Z",
+    "lastUpdate": "2026-09-12T12:25:16.914Z",
     "realBpm": 125,
     "volume": 1,
     "author": "dude76",
@@ -71236,6 +71548,33 @@
     "local": false
   },
   {
+    "id": "grover-washington-jr-bill-withers-just-the-two-of-us",
+    "title": "Just The Two Of Us",
+    "artist": "Grover Washington, Jr. & Bill Withers",
+    "video": "6IO74QV6wHY",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.7,
+    "gap": 40106.74005504128,
+    "year": "1980",
+    "lastUpdate": "2026-09-16T02:41:12.323Z",
+    "genre": "Ballad",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 447,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6337,
+    "tracksCount": 1,
+    "search": "groverwashingtonjrbillwithersjustthetwoofus",
+    "local": false
+  },
+  {
     "id": "grupo-frontera-no-se-va-en-vivo",
     "title": "No se va (en vivo)",
     "artist": "Grupo Frontera",
@@ -73074,6 +73413,33 @@
     "shortId": 1858,
     "tracksCount": 1,
     "search": "hanatanjishoumushoku",
+    "local": false
+  },
+  {
+    "id": "hannah-montana-2-nobodys-perfect",
+    "title": "Nobody’s Perfect",
+    "artist": "Hannah Montana 2",
+    "video": "-1QDJyspxGA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7400,
+    "year": "2008",
+    "lastUpdate": "2026-09-16T02:41:16.435Z",
+    "genre": "Soundtrack",
+    "realBpm": 131,
+    "volume": 1,
+    "author": "jalkazar",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6345,
+    "tracksCount": 1,
+    "search": "hannahmontana2nobodysperfect",
     "local": false
   },
   {
@@ -89786,6 +90152,34 @@
     "local": false
   },
   {
+    "id": "kato-feat-jon-turn-the-lights-off",
+    "title": "Turn The Lights Off",
+    "artist": "KATO feat. Jon",
+    "video": "FxDMMeWK1ZE",
+    "language": [
+      "English"
+    ],
+    "bpm": 528,
+    "gap": 5,
+    "year": "2010",
+    "lastUpdate": "2026-09-16T02:41:18.438Z",
+    "genre": "Dance",
+    "realBpm": 131,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=31651",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6354,
+    "tracksCount": 1,
+    "search": "katofeatjonturnthelightsoff",
+    "local": false
+  },
+  {
     "id": "katrina-and-the-waves-love-shine-a-light",
     "title": "Love Shine A Light",
     "artist": "Katrina And The Waves",
@@ -92879,6 +93273,37 @@
     "local": false
   },
   {
+    "id": "kings-of-leon-crawl",
+    "title": "Crawl",
+    "artist": "Kings of Leon",
+    "video": "F5DkWzLMuKY",
+    "language": [
+      "English"
+    ],
+    "bpm": 341.25,
+    "gap": 47259.01098901099,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:15.083Z",
+    "genre": "Rock",
+    "realBpm": 169,
+    "previewStart": 38,
+    "previewEnd": 87,
+    "volume": 1,
+    "author": "bohning",
+    "sourceUrl": "https://www.youtube.com/watch?v=F5DkWzLMuKY",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6341,
+    "tracksCount": 1,
+    "search": "kingsofleoncrawl",
+    "local": false
+  },
+  {
     "id": "kings-of-leon-notion",
     "title": "Notion",
     "artist": "Kings of Leon",
@@ -94057,6 +94482,34 @@
     "local": false
   },
   {
+    "id": "korn-word-up",
+    "title": "Word Up!",
+    "artist": "KoRn",
+    "video": "-M7vOnlcLbo",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.14,
+    "gap": 16210.757301628328,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:18.637Z",
+    "genre": "Nu Metal",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "Whiteshark",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6355,
+    "tracksCount": 1,
+    "search": "kornwordup",
+    "local": false
+  },
+  {
     "id": "kortez-zostan",
     "title": "Zostań",
     "artist": "KORTEZ",
@@ -94283,6 +94736,34 @@
     "shortId": 5998,
     "tracksCount": 1,
     "search": "kpopdemonhuntersrumijinufree",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-saja-boys-meu-pequeno-guarana",
+    "title": "Meu Pequeno Guaraná",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "4EoGIUvP_uA",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 252,
+    "gap": 17548.095238095237,
+    "year": "2025",
+    "lastUpdate": "2026-09-13T12:28:55.624Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 2,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "sourceUrl": "https://youtu.be/4EoGIUvP_uA?si=SsmJdxGQ_AM3ILYY",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6325,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboysmeupequenoguarana",
     "local": false
   },
   {
@@ -96004,6 +96485,34 @@
     "shortId": 5440,
     "tracksCount": 1,
     "search": "kylieminogueyourdisconeedsyou",
+    "local": false
+  },
+  {
+    "id": "kyo-derniere-danse",
+    "title": "Dernière danse",
+    "artist": "Kyo",
+    "video": "aU_TQcyGkvY",
+    "language": [
+      "French"
+    ],
+    "bpm": 344,
+    "gap": -109.30232558139551,
+    "year": "2002",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-09-16T02:41:16.820Z",
+    "genre": "Rock",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "babou28",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6350,
+    "tracksCount": 1,
+    "search": "kyodernieredanse",
     "local": false
   },
   {
@@ -101390,6 +101899,33 @@
     "shortId": 2565,
     "tracksCount": 1,
     "search": "lilnasxstarwalkinleagueoflegendsworldsanthem",
+    "local": false
+  },
+  {
+    "id": "lil-nas-x-thats-what-i-want",
+    "title": "THATS WHAT I WANT",
+    "artist": "Lil Nas X",
+    "video": "QDYDRA5JPLE",
+    "language": [
+      "English"
+    ],
+    "bpm": 352.16,
+    "gap": 9370.331667423898,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:17.034Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "lozboorman",
+    "duration": 162,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6352,
+    "tracksCount": 1,
+    "search": "lilnasxthatswhatiwant",
     "local": false
   },
   {
@@ -111451,6 +111987,34 @@
     "local": false
   },
   {
+    "id": "mariya-takeuchi-plastic-love",
+    "title": "Plastic Love",
+    "artist": "Mariya Takeuchi",
+    "video": "T_lC2O1oIew",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300,
+    "gap": 39800,
+    "year": "1985",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-16T02:41:13.152Z",
+    "genre": "City Pop",
+    "realBpm": 300,
+    "volume": 1,
+    "author": "linkwalnut",
+    "duration": 309,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6338,
+    "tracksCount": 1,
+    "search": "mariyatakeuchiplasticlove",
+    "local": false
+  },
+  {
     "id": "mark-forster-feat-sido-au-revoir",
     "title": "Au revoir",
     "artist": "Mark Forster feat. Sido",
@@ -112427,6 +112991,36 @@
     "shortId": 2867,
     "tracksCount": 1,
     "search": "martinamcbrideabrokenwing",
+    "local": false
+  },
+  {
+    "id": "marvin-gaye-i-heard-it-through-the-grapevine",
+    "title": "I Heard It Through The Grapevine",
+    "artist": "Marvin Gaye",
+    "video": "cXWHpbpNdHE",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.50000000000006,
+    "gap": 19246.89898989899,
+    "year": "1968",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:16.430Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=telixj",
+    "sourceUrl": "https://www.youtube.com/watch?v=cXWHpbpNdHE",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6344,
+    "tracksCount": 1,
+    "search": "marvingayeihearditthroughthegrapevine",
     "local": false
   },
   {
@@ -114953,6 +115547,34 @@
     "shortId": 6170,
     "tracksCount": 1,
     "search": "metallicamasterofpuppets",
+    "local": false
+  },
+  {
+    "id": "metallica-metal-militia",
+    "title": "Metal Militia",
+    "artist": "Metallica",
+    "video": "BDaYBB9DkBg",
+    "language": [
+      "English"
+    ],
+    "bpm": 336,
+    "gap": 60007.857142857145,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:16.809Z",
+    "genre": "Hard Rock",
+    "realBpm": 176,
+    "volume": 1,
+    "author": "JBKHoc",
+    "duration": 312,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6347,
+    "tracksCount": 1,
+    "search": "metallicametalmilitia",
     "local": false
   },
   {
@@ -125479,6 +126101,36 @@
     "local": false
   },
   {
+    "id": "nightwish-noise",
+    "title": "Noise",
+    "artist": "Nightwish",
+    "video": "LczGSoibRe8",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.9,
+    "gap": 35666.940565118544,
+    "year": "2020",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-16T02:41:12.316Z",
+    "genre": "Symphonic Metal",
+    "realBpm": 154,
+    "volume": 1,
+    "author": "Quetzaldo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=161148",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=23961",
+    "duration": 356,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6335,
+    "tracksCount": 1,
+    "search": "nightwishnoise",
+    "local": false
+  },
+  {
     "id": "nightwish-planet-hell",
     "title": "Planet Hell",
     "artist": "Nightwish",
@@ -132995,6 +133647,34 @@
     "local": false
   },
   {
+    "id": "pedro-sampaio-sequencia-feiticeira",
+    "title": "Sequência Feiticeira",
+    "artist": "Pedro Sampaio",
+    "video": "_zKnEm9xPWw",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 260.04,
+    "gap": 599.3816335948317,
+    "year": "2025",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-09-13T14:49:37.464Z",
+    "genre": "Funk Carioca",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 130,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6331,
+    "tracksCount": 1,
+    "search": "pedrosampaiosequenciafeiticeira",
+    "local": false
+  },
+  {
     "id": "pendulum-the-tempest",
     "title": "The Tempest",
     "artist": "Pendulum",
@@ -136507,6 +137187,35 @@
     "local": false
   },
   {
+    "id": "provinz-hymne-gegen-euch",
+    "title": "Hymne gegen euch",
+    "artist": "Provinz",
+    "video": "BKh5IMj4ias",
+    "language": [
+      "German"
+    ],
+    "bpm": 340,
+    "gap": 26745.29411764706,
+    "year": "2021",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-13T14:50:29.035Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "previewStart": 117.94,
+    "volume": 1,
+    "author": "bohning, Fepo",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6333,
+    "tracksCount": 1,
+    "search": "provinzhymnegegeneuch",
+    "local": false
+  },
+  {
     "id": "provinz-pazifik",
     "title": "Pazifik",
     "artist": "Provinz",
@@ -139990,7 +140699,7 @@
     "gap": 52500.97826086957,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:57.743Z",
+    "lastUpdate": "2026-09-12T12:23:07.376Z",
     "realBpm": 91,
     "volume": 1,
     "author": "choosie",
@@ -143450,7 +144159,7 @@
     "bpm": 320,
     "gap": 895.625,
     "year": "2026",
-    "lastUpdate": "2026-09-13T02:26:01.727Z",
+    "lastUpdate": "2026-09-12T12:27:06.816Z",
     "genre": "Pop",
     "realBpm": 160,
     "volume": 1,
@@ -143509,7 +144218,7 @@
     "gap": 8583.050847457627,
     "year": "2010",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-13T02:25:59.650Z",
+    "lastUpdate": "2026-09-12T12:24:40.584Z",
     "realBpm": 88,
     "volume": 1,
     "author": "daggeg",
@@ -150841,6 +151550,36 @@
     "shortId": 3900,
     "tracksCount": 1,
     "search": "shakirayozunamonotonia",
+    "local": false
+  },
+  {
+    "id": "shakira-zoo-de-disney-zootopia-2",
+    "title": "Zoo (De \"Disney Zootopia 2\")",
+    "artist": "Shakira",
+    "video": "Kw3935PH01E",
+    "language": [
+      "English"
+    ],
+    "bpm": 258,
+    "gap": -95.11627906976742,
+    "year": "2025",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-09-13T12:29:17.888Z",
+    "genre": "Sountrack",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "vicktoben",
+    "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
+    "duration": 198,
+    "tracks": [
+      {
+        "name": "Shakira - Zoo",
+        "start": 8
+      }
+    ],
+    "shortId": 6326,
+    "tracksCount": 1,
+    "search": "shakirazoodedisneyzootopia2",
     "local": false
   },
   {
@@ -162368,6 +163107,36 @@
     "local": false
   },
   {
+    "id": "taylor-swift-how-you-get-the-girl",
+    "title": "How You Get The Girl",
+    "artist": "Taylor Swift",
+    "video": "rnwD7veCoFQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.05,
+    "gap": 77.66923557592168,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-13T12:31:25.401Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "previewStart": 46,
+    "previewEnd": 80,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6328,
+    "tracksCount": 1,
+    "search": "taylorswifthowyougetthegirl",
+    "local": false
+  },
+  {
     "id": "taylor-swift-i-knew-you-were-trouble",
     "title": "I Knew You Were Trouble",
     "artist": "Taylor Swift",
@@ -162396,6 +163165,35 @@
     "shortId": 4205,
     "tracksCount": 1,
     "search": "taylorswiftiknewyouweretrouble",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-im-only-me-when-im-with-you",
+    "title": "I’m Only Me When I’m With You",
+    "artist": "Taylor Swift",
+    "video": "AlTfYj7q5gQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 8270,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-13T14:48:49.260Z",
+    "genre": "Pop",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "jalkazar",
+    "sourceUrl": "https://www.youtube.com/watch?v=AlTfYj7q5gQ",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6329,
+    "tracksCount": 1,
+    "search": "taylorswiftimonlymewhenimwithyou",
     "local": false
   },
   {
@@ -162544,6 +163342,35 @@
     "shortId": 4208,
     "tracksCount": 1,
     "search": "taylorswiftlover",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-maroon",
+    "title": "Maroon",
+    "artist": "Taylor Swift",
+    "video": "lvHZjvIyqsk",
+    "language": [
+      "English"
+    ],
+    "bpm": 367.23,
+    "gap": 8769.687933992322,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:12.310Z",
+    "genre": "Pop",
+    "realBpm": 56,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=lvHZjvIyqsk",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6334,
+    "tracksCount": 1,
+    "search": "taylorswiftmaroon",
     "local": false
   },
   {
@@ -162722,6 +163549,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-so-it-goes",
+    "title": "So It Goes…",
+    "artist": "Taylor Swift",
+    "video": "iAv1Y1YIwm8",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.5,
+    "gap": 8198.330550918197,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:16.818Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "amro98",
+    "sourceUrl": "https://www.youtube.com/watch?v=iAv1Y1YIwm8",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6349,
+    "tracksCount": 1,
+    "search": "taylorswiftsoitgoes",
+    "local": false
+  },
+  {
     "id": "taylor-swift-style",
     "title": "Style",
     "artist": "Taylor Swift",
@@ -162778,6 +163634,35 @@
     "shortId": 5858,
     "tracksCount": 1,
     "search": "taylorswiftthefateofophelia",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-the-way-i-loved-you-taylors-version",
+    "title": "The Way I Loved You (Taylor's Version",
+    "artist": "Taylor Swift",
+    "video": "DlexmDDSDZ0",
+    "language": [
+      "English"
+    ],
+    "bpm": 321.28,
+    "gap": 23169.546812749002,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-16T02:41:15.085Z",
+    "genre": "Country Pop",
+    "realBpm": 161,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=DlexmDDSDZ0",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6342,
+    "tracksCount": 1,
+    "search": "taylorswiftthewayilovedyoutaylorsversion",
     "local": false
   },
   {
@@ -172080,6 +172965,34 @@
     "local": false
   },
   {
+    "id": "the-weeknd-wicked-games",
+    "title": "Wicked Games",
+    "artist": "The Weeknd",
+    "video": "O1OTWCd40bc",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 8863.157894736842,
+    "year": "2012",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-09-16T02:41:18.640Z",
+    "realBpm": 114,
+    "previewEnd": 272,
+    "volume": 1,
+    "author": "funkmkb",
+    "duration": 282,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6356,
+    "tracksCount": 1,
+    "search": "theweekndwickedgames",
+    "local": false
+  },
+  {
     "id": "the-white-stripes-7-nation-army",
     "title": "7 Nation Army",
     "artist": "The White Stripes",
@@ -176568,7 +177481,7 @@
     "gap": 33462.142857142855,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-13T02:25:59.850Z",
+    "lastUpdate": "2026-09-12T12:24:58.881Z",
     "realBpm": 140,
     "volume": 1,
     "author": "theecnemelc",
