@@ -4,7 +4,6 @@ import { expect, userEvent } from 'storybook/test';
 import { ValuesType } from 'utility-types';
 
 import { DetailedScore, GAME_MODE, SingSetup } from '~/interfaces';
-import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
 import {
   MAX_POINTS,
   beatsToPoints,
@@ -21,6 +20,7 @@ import { PlayerNumber } from '~/modules/players/player-number';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import tuple from '~/modules/utils/tuple';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
+import { PostGameBackground } from '~/stories/post-game-background';
 
 import song from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt?raw';
 
@@ -183,14 +183,11 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
-  // The real app always sits inside this provider, painting the ambient blue gradient behind the
-  // page — Storybook doesn't mount it by default, and the results screen has no background of its
-  // own to show now that it stopped painting the song thumbnail behind itself.
   decorators: [
     (Story) => (
-      <LayoutWithBackgroundProvider>
+      <PostGameBackground>
         <Story />
-      </LayoutWithBackgroundProvider>
+      </PostGameBackground>
     ),
   ],
 } as Meta<ComponentProps<typeof Template>>;

@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { DetailedScore, SingSetup, Song } from '~/interfaces';
 import Box from '~/modules/elements/akui/primitives/box';
+import { useBackground } from '~/modules/elements/background-context';
 import { GameTip } from '~/modules/elements/game-tip';
 import { ScoreTimeline } from '~/modules/game-engine/game-state/helpers/calculate-score-timeline';
 import { gameModeNames } from '~/modules/game-modes';
@@ -62,6 +63,11 @@ function PostGameView({
   'data-test': dataTest,
 }: Props) {
   const [backgroundTheme] = useSettingValue(BackgroundThemeSetting);
+  // The singing screen hides the app background behind the video and nothing on the way here turns
+  // it back on — this screen stopped painting the song thumbnail, so without this it sits on bare
+  // black. The theme is the one song selection picked for this song (a Christmas song keeps its
+  // snow), which singing does not preserve on its own.
+  useBackground(true, backgroundTheme);
   useBackgroundMusic(true);
   const [step, setStep] = useState<'results' | 'highscores'>('results');
   // `highScoresEnabled` is the same signal as "this game was saved locally": online play sets it
