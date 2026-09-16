@@ -46,5 +46,3 @@ export function ProgressBar({ progress, color, label, value, barClassName, class
     </div>
   );
 }
-
-export default ProgressBar;

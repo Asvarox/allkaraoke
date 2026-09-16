@@ -8,7 +8,7 @@ import {
 import {
   ScoreTimeline,
   calculateScoreTimeline,
-  getTimelineEndBeat,
+  getTimelineRange,
 } from '~/modules/game-engine/game-state/helpers/calculate-score-timeline';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import PlayerState from '~/modules/game-engine/game-state/player-state';
@@ -105,14 +105,14 @@ export class GameStateClass {
    * team score the same way `getPlayerDetailedScore` does: summed across players, then averaged. */
   public getPlayerScoreTimeline = (player: PlayerNumber): ScoreTimeline => {
     const song = this.getSong()!;
-    // One endpoint for everyone on the screen, so the same progress means the same moment of the
-    // song in every timeline — see `getTimelineEndBeat`.
-    const endBeat = getTimelineEndBeat(
+    // One range for everyone on the screen, so the same progress means the same moment of the song
+    // in every timeline — see `getTimelineRange`.
+    const range = getTimelineRange(
       song,
       this.getPlayers().map((playerState) => playerState.getPlayerNotes()),
     );
     const timelineOf = (playerState: PlayerState) =>
-      calculateScoreTimeline(playerState.getPlayerNotes(), song, playerState.getTrackIndex(), endBeat);
+      calculateScoreTimeline(playerState.getPlayerNotes(), song, playerState.getTrackIndex(), range);
 
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const timelines = this.getPlayers().map(timelineOf);
