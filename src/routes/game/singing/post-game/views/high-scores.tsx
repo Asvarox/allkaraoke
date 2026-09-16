@@ -15,10 +15,29 @@ import useLeaderboardPostGame from '~/routes/game/singing/post-game/views/leader
 import HighScoreRename from './high-score-rename';
 
 /**
- * The two boards, side by side from tablet up and stacked below it. Their own height is
- * `ScoreboardPanel`'s; this only says how they share the width.
+ * Growing the boards is gated on the window being both wide enough for them to sit side by side and
+ * tall enough to have height to spare — not on width alone, which is the trap here.
+ *
+ * A landscape phone is 844x390: wide enough for `md`, but with barely 300px for the step. Asking a
+ * board to fill that while its list floors at 15rem gave the list a height its own panel could not
+ * contain, and it burst out of the bottom. Dropping the floor instead let the list grow to every row
+ * it had and stop scrolling. Neither is a board. Below this threshold nothing is overridden and the
+ * panel keeps the fixed five-row list it has always had.
  */
-const SCOREBOARD_CLASS = 'border border-white/10 p-2 md:flex-1 md:basis-0';
+/** The two boards, side by side from tablet up and stacked below it. */
+const SCOREBOARD_CLASS =
+  'border border-white/10 p-2 md:flex-1 md:basis-0 [@media(min-width:768px)_and_(min-height:720px)]:min-h-0';
+
+/**
+ * Where there is room, the boards take whatever height the step has spare rather than stopping at
+ * the fixed five rows `ScoreboardPanel` defaults to. `min-h-60` is that default (15rem), kept as the
+ * floor — safe here, because this only applies to a window with the height for it.
+ *
+ * Written out in full rather than built from a shared constant: Tailwind only generates classes it
+ * finds spelled out in the source, so an interpolated variant would silently produce no CSS.
+ */
+const SCOREBOARD_LIST_CLASS =
+  '[@media(min-width:768px)_and_(min-height:720px)]:h-auto [@media(min-width:768px)_and_(min-height:720px)]:min-h-60 [@media(min-width:768px)_and_(min-height:720px)]:flex-1';
 
 /** How many rows the local board pads out to, so it stands as tall as the global one beside it. */
 const LOCAL_SCOREBOARD_ROWS = 5;
@@ -49,9 +68,10 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
     <>
       {/* Side by side from tablet up, stacked on a phone. Full width, so the pair lines up with the
           share panel and the tip under them rather than stopping short of both. */}
-      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6">
+      <div className="flex flex-col items-start gap-3 md:flex-row md:items-stretch md:gap-6 [@media(min-width:768px)_and_(min-height:720px)]:min-h-0 [@media(min-width:768px)_and_(min-height:720px)]:flex-1">
         <ScoreboardPanel
           className={SCOREBOARD_CLASS}
+          listClassName={SCOREBOARD_LIST_CLASS}
           title="Local scoreboard"
           subtitle="This song · this device"
           data-test="highscores-container">
@@ -94,6 +114,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           singSetup={singSetup}
           leaderboard={leaderboard}
           className={SCOREBOARD_CLASS}
+          listClassName={SCOREBOARD_LIST_CLASS}
         />
       </div>
       <LeaderboardSharePanel register={register} leaderboard={leaderboard} />
@@ -101,7 +122,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
         <SelectSongButton
           register={register}
           onClick={goToNextStep}
-          label={isArmed ? 'Share score and sing a song' : 'Select song'}
+          label={isArmed ? 'Share score and sing a song' : 'Select next song'}
           isSubmitting={leaderboard.isSubmitting}
         />
       </div>
@@ -126,7 +147,6 @@ function SelectSongButton({ register, onClick, label, isSubmitting }: SelectSong
   return (
     <Button
       className="mt-2 w-full lg:mt-6 lg:ml-auto lg:w-5/12"
-      size="small"
       // Kept off the register spread: a disabled registration returns no props at all, and the e2e
       // and the remote both need this button findable while the score is in flight.
       data-test="play-next-song-button"
@@ -135,7 +155,7 @@ function SelectSongButton({ register, onClick, label, isSubmitting }: SelectSong
         disabled: isSubmitting,
         control: { type: 'button', label },
       })}>
-      {isSubmitting ? 'Sharing…' : label}
+      {isSubmitting ? 'Sharing the score…' : label}
     </Button>
   );
 }
