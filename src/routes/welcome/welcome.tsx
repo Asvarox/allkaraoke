@@ -34,7 +34,10 @@ function Welcome() {
   useEffect(() => {
     const idleCallback = window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1));
     const cancelIdleCallback = window.cancelIdleCallback ?? clearTimeout;
-    const handle = idleCallback(() => SongDao.getIndex());
+    const handle = idleCallback(() => {
+      // Fire-and-forget: nothing here needs the result, just don't leave a rejection unhandled.
+      void SongDao.getIndex().catch(console.error);
+    });
     return () => cancelIdleCallback(handle);
   }, []);
 

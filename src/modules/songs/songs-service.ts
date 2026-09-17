@@ -1,5 +1,6 @@
+import dayjs from 'dayjs';
+
 import { Song, SongPreview } from '~/interfaces';
-import { ReloadIndexWorkerRequest, ReloadIndexWorkerResponse } from '~/modules/songs/reload-index-worker';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { generatePlayerChangesForTrack } from '~/modules/songs/utils/generate-player-changes';
 import getSongId from '~/modules/songs/utils/get-song-id';
@@ -8,47 +9,6 @@ import { lastVisit } from '~/modules/stats/last-visit';
 import storage from '~/modules/utils/storage';
 
 import { getSongPreview } from './utils';
-
-// Lazily started, kept alive for the app's lifetime: reloadIndex can be called many times (song
-// import, delete, restore...) and each call is cheap once the worker is warm, so there's no benefit
-// to tearing it down between calls.
-let indexWorker: Worker | null = null;
-let nextRequestId = 0;
-const pendingRequests = new Map<
-  number,
-  { resolve: (value: Extract<ReloadIndexWorkerResponse, { ok: true }>) => void; reject: (error: Error) => void }
->();
-
-function getIndexWorker() {
-  if (!indexWorker) {
-    indexWorker = new Worker(new URL('./reload-index-worker.ts', import.meta.url), { type: 'module' });
-    indexWorker.onmessage = (event: MessageEvent<ReloadIndexWorkerResponse>) => {
-      const message = event.data;
-      const pending = pendingRequests.get(message.requestId);
-      if (!pending) return;
-      pendingRequests.delete(message.requestId);
-
-      if (message.ok) {
-        pending.resolve(message);
-      } else {
-        pending.reject(new Error(message.error));
-      }
-    };
-    indexWorker.onerror = (event) => {
-      pendingRequests.forEach(({ reject }) => reject(new Error(event.message)));
-      pendingRequests.clear();
-    };
-  }
-  return indexWorker;
-}
-
-function reloadIndexInWorker(request: Omit<ReloadIndexWorkerRequest, 'requestId'>) {
-  const requestId = nextRequestId++;
-  return new Promise<Extract<ReloadIndexWorkerResponse, { ok: true }>>((resolve, reject) => {
-    pendingRequests.set(requestId, { resolve, reject });
-    getIndexWorker().postMessage({ ...request, requestId } satisfies ReloadIndexWorkerRequest);
-  });
-}
 
 let store: Promise<LocalForage | typeof storage.memory> | null = null;
 
@@ -76,6 +36,10 @@ class SongsService {
   private defaultIndex: SongPreview[] | null = null;
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
+  // Bumped at the start of every reloadIndex() call and checked when its fetch resolves, so a
+  // slow-to-resolve call (e.g. the menu's warmup) can't clobber a newer one that already applied —
+  // otherwise it could overwrite a just-stored song with a stale pre-store snapshot.
+  private reloadSeq = 0;
   public store = async (song: Song, reloadIndex = true) => {
     await (
       await getStorage()
@@ -138,22 +102,51 @@ class SongsService {
   public generateSongFile = (song: Pick<Song | SongPreview, 'artist' | 'title'> & { id?: string }) => getSongId(song);
 
   public reloadIndex = async () => {
-    const [storageIndex, deletedSongs] = await Promise.all([this.getLocalIndex(), this.getDeletedSongsList()]);
+    const seq = ++this.reloadSeq;
+    const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([
+      fetch(`/songs/index.json`).then((response) => response.json() as Promise<SongPreview[]>),
+      this.getLocalIndex(),
+      this.getDeletedSongsList(),
+    ]);
 
-    const { defaultIndex, indexWithDeletedSongs, finalIndex, removedLocalSongIds } = await reloadIndexInWorker({
-      storageIndex,
-      deletedSongs,
-      lastVisit,
-    });
+    // A newer reloadIndex() call was issued while this one was still in flight — applying this stale
+    // result could undo whatever the newer call already did. Exception: if nothing has ever been
+    // applied yet, apply it anyway so callers never see a permanently-null index; the newer call
+    // (which is still in flight) will correct it once it lands.
+    if (seq !== this.reloadSeq && this.finalIndex !== null) return;
 
     this.defaultIndex = defaultIndex;
-    this.indexWithDeletedSongs = indexWithDeletedSongs;
-    this.finalIndex = finalIndex;
+    const lastVisitDate = dayjs(lastVisit);
 
-    if (removedLocalSongIds.length) {
-      const songStorage = await getStorage();
-      removedLocalSongIds.forEach((id) => songStorage.removeItem(id));
-    }
+    // Filter out local songs that were updated to default index
+    const storageIndexWithUpdatedSongs = storageIndex.filter((song) => {
+      const defaultSong = defaultIndex.find((localSong) => localSong.id === song.id);
+      if (!defaultSong) return true;
+      return dayjs(song.lastUpdate ?? 0).isAfter(dayjs(defaultSong.lastUpdate ?? 0));
+    });
+    const localSongs = storageIndexWithUpdatedSongs.map((song) => song.id);
+
+    storageIndex.forEach(async (song) => {
+      if (!localSongs.includes(song.id)) {
+        (await getStorage()).removeItem(song.id);
+      }
+    });
+
+    this.indexWithDeletedSongs = [
+      ...storageIndexWithUpdatedSongs,
+      ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
+    ].map((song) => ({
+      ...song,
+      isBuiltIn: this.isBuiltIn(song.id),
+      isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
+      isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
+    }));
+
+    this.indexWithDeletedSongs.sort((a, b) =>
+      `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()),
+    );
+
+    this.finalIndex = this.indexWithDeletedSongs.filter((song) => !song.isDeleted);
   };
 
   public deleteSong = async (songId: string) => {
