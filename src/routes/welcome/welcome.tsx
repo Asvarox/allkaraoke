@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet';
 
@@ -8,6 +8,7 @@ import Logo from '~/modules/elements/logo';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import SongDao from '~/modules/songs/songs-service';
 import ExcludeLanguagesView from '~/routes/exclude-languages/exclude-languages-view';
 import LayoutGame from '~/routes/layout-game';
 import SelectInputModal from '~/routes/select-input/select-input-modal';
@@ -25,6 +26,20 @@ import { MenuViewTransition } from '~/routes/welcome/menu-view-transitions';
  */
 function Welcome() {
   useBackground(true);
+
+  // Warms the song index cache while the user is still looking at the menu, so the song list
+  // route reads it from memory instead of waiting on the fetch itself. Deferred to idle time: the
+  // parse/sort of the full index is a ~250ms blocking task, and running it during mount stutters
+  // the menu's own paint and view transition.
+  useEffect(() => {
+    const idleCallback = window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1));
+    const cancelIdleCallback = window.cancelIdleCallback ?? clearTimeout;
+    const handle = idleCallback(() => {
+      // Fire-and-forget: nothing here needs the result, just don't leave a rejection unhandled.
+      void SongDao.getIndex().catch(console.error);
+    });
+    return () => cancelIdleCallback(handle);
+  }, []);
 
   const navigate = useSmoothNavigate();
 
