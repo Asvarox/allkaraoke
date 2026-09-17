@@ -33,7 +33,7 @@ async function getStorage() {
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
 class SongsService {
-  private defaultIndex: SongPreview[] | null = null;
+  private defaultIndexIds: Set<string> | null = null;
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
   // Bumped at the start of every reloadIndex() call and checked when its fetch resolves, so a
@@ -67,7 +67,7 @@ class SongsService {
    * @param songId
    */
   public isBuiltIn = (songId: string) => {
-    return this.defaultIndex?.some((song) => song.id === songId) ?? false;
+    return this.defaultIndexIds?.has(songId) ?? false;
   };
 
   public get = async (songId: string): Promise<Song> => {
@@ -115,7 +115,10 @@ class SongsService {
     // (which is still in flight) will correct it once it lands.
     if (seq !== this.reloadSeq && this.finalIndex !== null) return;
 
-    this.defaultIndex = defaultIndex;
+    // A Set lookup, not `defaultIndex.some(...)` per song below: with ~6000 built-in songs, doing that
+    // scan once per song in the merged list was an O(n^2) pass and the main cost of this method.
+    const defaultIndexIds = new Set(defaultIndex.map((song) => song.id));
+    this.defaultIndexIds = defaultIndexIds;
     const lastVisitDate = dayjs(lastVisit);
 
     // Filter out local songs that were updated to default index
@@ -137,7 +140,7 @@ class SongsService {
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
     ].map((song) => ({
       ...song,
-      isBuiltIn: this.isBuiltIn(song.id),
+      isBuiltIn: defaultIndexIds.has(song.id),
       isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
       isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
     }));
