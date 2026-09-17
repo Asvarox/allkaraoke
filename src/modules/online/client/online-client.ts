@@ -553,6 +553,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   /** Drops the data plane while leaving the connection *status* alone — used when the room has
    * rejected us, where the status is the whole point and must survive. */
   private releaseConnection = () => {
+    // Stopped here as well as in `disconnect`: a rejected client keeps its status on screen and may
+    // never disconnect, and the tracker would otherwise re-arm against the dropped transport forever.
+    this.pingPong.stop();
     this.stopHeartbeatWatchdog();
     this.host?.close();
     this.host = null;
