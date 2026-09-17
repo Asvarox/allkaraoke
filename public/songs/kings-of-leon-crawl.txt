@@ -1,0 +1,318 @@
+#ARTIST:Kings of Leon
+#TITLE:Crawl
+#CREATOR:bohning
+#BPM:341,25
+#YEAR:2008
+#PREVIEWSTART:38
+#VIDEO:v=F5DkWzLMuKY
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:47259,01098901099
+#ALLKARAOKE_ID:kings-of-leon-crawl
+#ALLKARAOKE_SID:6341
+#ALLKARAOKE_LASTUPDATE:2026-09-16T02:41:15.083Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:169
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=F5DkWzLMuKY
+#ALLKARAOKE_PREVIEWEND:87
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:247
+#MP3:Kings of Leon - Crawl.mp3
+#COVER:Kings of Leon - Crawl [CO].jpg
+#BACKGROUND:Kings of Leon - Crawl [BG].jpg
+: 23 4 4 You 
+: 32 11 2 fault 
+: 55 4 4 my 
+: 64 6 2 pri
+: 71 2 1 ~de
+- 73
+: 85 1 3 Do
+: 87 4 4 ~n’t 
+: 92 7 4 e
+: 101 2 4 ver 
+: 104 3 4 need 
+: 108 2 4 to 
+: 113 2 6 ’pol
+: 116 3 2 ~
+: 120 2 2 o
+: 125 7 2 gi
+: 133 3 1 ~ze
+- 136
+: 148 2 2 As 
+: 154 4 4 your 
+: 161 6 3 li
+: 168 4 1 ~ps 
+: 185 3 4 un
+: 194 5 2 fo
+: 200 9 1 ~ld
+- 209
+: 223 3 4 Sha
+: 230 2 4 kin’ 
+: 234 2 4 pur
+: 238 2 4 ple 
+: 242 2 6 fro
+: 245 1 2 ~m 
+: 250 2 2 the 
+: 255 7 2 co
+: 263 2 1 ~ld
+- 265
+* 277 2 2 You 
+* 282 2 2 bet
+* 285 3 2 ter 
+* 290 3 2 learn 
+* 294 2 2 to 
+* 300 26 2 cra
+* 327 5 1 ~wl
+- 332
+: 343 2 2 You 
+: 347 2 2 bet
+: 350 4 2 ter 
+: 355 3 2 learn 
+: 359 2 2 to 
+: 365 27 2 cra
+: 393 5 1 ~wl
+- 398
+: 408 1 2 Be
+: 412 1 2 fore 
+: 414 4 2 I 
+: 420 2 2 walk 
+: 425 4 4 a
+: 430 20 4 way
+: 451 9 3 ~
+- 460
+* 472 2 2 Be
+* 476 3 2 fore 
+* 480 3 2 I 
+* 484 2 2 walk 
+* 489 3 4 a
+* 494 20 4 way
+* 515 11 3 ~
+- 526 903
+- 903
+: 926 4 4 You 
+: 935 5 2 bro
+: 941 1 1 ~ke 
+: 959 4 4 my 
+: 967 6 2 mouth
+- 973
+* 991 2 4 The 
+* 995 6 4 bloo
+* 1002 2 4 dy 
+* 1007 1 4 bits 
+* 1011 2 4 are 
+* 1016 3 6 spit
+* 1020 6 2 ting 
+* 1028 10 2 ou
+* 1039 3 1 ~t
+- 1042
+: 1051 2 1 Is 
+: 1056 4 4 your 
+: 1064 8 2 gra
+: 1073 5 1 ~ve 
+: 1088 2 4 un
+: 1096 9 2 sca
+: 1106 6 1 ~thed?
+- 1112
+: 1121 2 4 The 
+: 1125 5 4 worm 
+: 1131 2 4 is 
+: 1136 3 4 coun
+: 1140 1 4 ting 
+: 1145 2 6 do
+: 1148 2 2 ~wn 
+: 1152 2 2 the 
+: 1157 17 2 day
+- 1174
+: 1180 3 4 He 
+: 1184 2 2 wants 
+: 1188 2 2 to 
+: 1193 2 2 see 
+: 1196 2 2 you 
+: 1204 31 2 crawl
+- 1235
+* 1245 3 4 He 
+* 1249 2 2 wants 
+* 1252 2 0 to 
+* 1258 2 2 see 
+* 1261 2 2 you 
+* 1268 30 2 cra
+* 1299 2 1 ~wl
+- 1301
+: 1310 1 2 Be
+: 1314 2 2 fore 
+: 1317 3 2 I 
+: 1322 2 2 walk 
+: 1327 3 4 a
+: 1331 21 4 way
+: 1353 8 3 ~
+- 1361
+: 1374 1 -1 Be
+: 1378 2 2 fore 
+: 1381 3 2 I 
+: 1386 2 2 walk 
+: 1391 3 4 a
+: 1395 10 4 way
+: 1406 4 2 ~
+- 1410
+: 1411 2 2 The 
+: 1416 4 2 reds 
+: 1423 2 0 and 
+: 1427 2 2 the 
+: 1431 4 2 whites 
+: 1439 3 2 and 
+: 1443 2 3 a
+: 1451 21 4 bused
+- 1472 1518
+- 1518
+* 1541 2 4 The 
+* 1545 5 4 cru
+* 1553 2 4 ci
+* 1557 5 4 fied 
+* 1565 3 6 U
+* 1570 4 2 S
+* 1578 14 2 A
+* 1593 8 1 ~
+- 1601 1642
+- 1642
+: 1665 2 1 As 
+: 1669 2 2 ev
+: 1672 2 2 ery 
+: 1677 2 2 pro
+: 1682 2 2 phe
+: 1688 7 2 cy 
+: 1696 3 2 un
+: 1706 23 4 folds
+- 1729 1769
+- 1769
+: 1792 4 4 Oh 
+: 1801 5 4 Hell 
+: 1807 2 4 is 
+: 1812 2 4 sure
+: 1816 2 4 ly 
+: 1819 5 6 on 
+: 1825 2 2 its 
+: 1832 14 2 way
+: 1847 9 1 ~
+- 1856 2568
+- 2568
+: 2591 6 4 The 
+: 2599 7 2 ra
+: 2607 2 1 ~t 
+: 2620 2 4 and 
+: 2624 3 4 the 
+: 2632 7 2 fly
+- 2639
+* 2656 2 4 They’re 
+* 2661 4 4 sear
+* 2667 2 4 chin’ 
+* 2672 3 4 for 
+* 2676 2 4 an 
+* 2680 5 6 a
+* 2686 2 2 li
+* 2692 8 2 bi
+* 2701 3 1 ~
+- 2704
+: 2716 2 4 As 
+: 2721 5 4 we 
+: 2728 8 2 wai
+: 2737 5 1 ~t 
+: 2752 6 4 the 
+: 2760 8 2 wra
+: 2769 4 1 ~th
+- 2773
+: 2783 2 4 They 
+: 2788 4 4 ne
+: 2795 2 4 ver 
+: 2799 2 4 went 
+: 2803 2 4 to 
+: 2808 1 6 Su
+: 2810 2 4 ~n
+: 2815 3 2 day 
+: 2821 7 2 Ma
+: 2829 6 1 ~ss
+- 2835
+: 2843 2 2 They 
+: 2847 2 2 want 
+: 2850 2 2 to 
+: 2856 2 2 see 
+: 2859 2 2 us 
+: 2868 19 2 cra
+: 2888 7 1 ~wl
+- 2895
+: 2908 2 4 They 
+: 2912 2 2 want 
+: 2915 1 2 to 
+: 2920 1 2 see 
+: 2922 3 2 us 
+: 2932 23 2 cra
+: 2956 5 1 ~wl
+- 2961
+* 2971 1 2 Be
+* 2974 3 2 fore 
+* 2978 3 2 they 
+* 2983 2 2 walk 
+* 2987 3 4 a
+* 2991 27 4 way
+* 3019 7 2 ~
+- 3026
+: 3034 1 2 Be
+: 3038 2 2 fore 
+: 3042 2 2 they 
+: 3047 2 2 walk 
+: 3051 2 4 a
+: 3055 9 4 way
+: 3065 4 2 ~
+- 3069
+: 3070 2 2 The 
+: 3075 4 2 reds 
+: 3082 2 2 and 
+: 3087 2 2 the 
+: 3090 4 2 whites 
+: 3098 2 3 and 
+: 3102 2 3 a
+: 3107 25 4 bused
+- 3132 3174
+- 3174
+: 3197 2 4 The 
+: 3202 4 4 cru
+: 3208 2 4 ci
+: 3213 5 4 fied 
+: 3221 3 6 U
+: 3225 4 2 S
+: 3232 11 2 A
+: 3244 8 1 ~
+- 3252 3296
+- 3296
+: 3319 2 1 As 
+: 3323 2 1 ev
+: 3327 2 1 ery 
+: 3331 3 1 pro
+: 3336 3 1 phe
+: 3343 7 2 cy 
+: 3351 4 2 un
+: 3359 28 4 folds
+- 3387 3422
+- 3422
+: 3445 4 4 Oh 
+: 3454 5 4 Hell 
+: 3460 2 4 is 
+: 3465 2 4 sure
+: 3469 3 4 ly 
+: 3473 3 6 on 
+: 3477 2 2 its 
+: 3485 13 2 way
+: 3499 17 1 ~
+- 3516 3528
+- 3528
+F 3551 3 -1 Who’s 
+F 3559 2 1 gon
+F 3562 2 1 na 
+F 3568 5 -1 save 
+F 3574 1 -1 you?
+- 3575
+F 3580 5 -3 Come 
+F 3586 3 -3 and 
+F 3594 2 -3 take 
+F 3600 2 -5 us 
+F 3605 5 -5 home
+E

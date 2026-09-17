@@ -157,7 +157,9 @@ function LandingPage() {
 
                 <div className="mt-5 hidden flex-col gap-2 lg:flex">
                   <SmoothLink to={nextPage}>
-                    <PrimaryCta data-test="enter-the-game">Enter the game</PrimaryCta>
+                    <PrimaryCta size="regular" data-test="enter-the-game">
+                      Enter the game
+                    </PrimaryCta>
                   </SmoothLink>
                   <Typography className="text-md text-center">
                     Have a game code?{' '}
@@ -197,7 +199,7 @@ function LandingPage() {
                 </Typography>
               </div>
               <SmoothLink to="online/">
-                <ButtonLink data-test="sing-online" className="px-5" size="small">
+                <ButtonLink data-test="sing-online" subtleFocused focused size="small">
                   Host or join an online room
                 </ButtonLink>
               </SmoothLink>
@@ -241,7 +243,7 @@ function LandingPage() {
             Sticky and not fixed, so at the end of the scroll it settles above the footer instead of
             covering it — and blurred behind, because what it is pinned over is a pair of
             screenshots. */}
-        <div className="sticky bottom-0 z-10 flex flex-col gap-3 rounded-xl bg-black/30 p-2 backdrop-blur-sm sm:flex-row lg:hidden">
+        <div className="sticky bottom-0 z-10 flex flex-col gap-3 rounded-xl bg-black/40 p-2 backdrop-blur-sm sm:flex-row lg:hidden">
           <SmoothLink to="remote-mic/" className="flex-1">
             <PrimaryCta data-test="join-existing-game">
               <span className="flex flex-col items-center leading-tight">
@@ -261,11 +263,11 @@ function LandingPage() {
   );
 }
 
-const Screenshot = twx.img`shadow-5 aspect-video w-full rounded-md border-1 border-black/50 object-cover`;
+const Screenshot = twx.img`shadow-5 aspect-video w-full rounded-md border-1 border-black object-cover`;
 
 // Orange rather than the app's usual dark button: this is the only screen with a single thing it
 // wants the visitor to do, and every other surface here is already a dark card.
-const PrimaryCta = twx(ButtonLink)`bg-active! text-md text-shadow-legible h-auto w-full py-4 lg:text-lg`;
-const SecondaryCta = twx(ButtonLink)`subtle-focus text-md h-auto w-full py-4 lg:text-lg`;
+const PrimaryCta = twx(ButtonLink)`bg-active! text-shadow-legible w-full`;
+const SecondaryCta = twx(ButtonLink)`subtle-focus w-full`;
 
 export default LandingPage;

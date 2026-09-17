@@ -211,13 +211,14 @@ visual(
 
     await makeScreenshot('rate-song-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
 
-    // Post-game results. The score animation renames this control from "Skip" to "Next", so wait for
-    // the settled label. Deliberately NOT clicking "skip animation" to get there: once the animation
-    // has finished on its own that same element has become the "next step" button, so clicking it
-    // races into navigating off this screen entirely.
+    // Post-game results. The score animation renames this control from "Skip animation" to
+    // "Leaderboards", so wait for the settled label. Deliberately NOT clicking "skip animation" to
+    // get there: once the animation has finished on its own that same element has become the "next
+    // step" button, so clicking it races into navigating off this screen entirely. The wait covers
+    // the whole reveal — the replay itself plus the pause before the winner is called.
     await pages.rateUnfinishedSongPage.submitIssueWithKeyboard();
-    await expect(remoteMic.remoteMicMainPage.mirroredControl('next-button')).toHaveText(/next/i, {
-      timeout: 15_000,
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('next-button')).toHaveText(/leaderboards/i, {
+      timeout: 20_000,
     });
 
     await makeScreenshot('post-game-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });

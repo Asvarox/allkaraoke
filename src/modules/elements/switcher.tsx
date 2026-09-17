@@ -33,7 +33,7 @@ export const Switcher = ({
     onClick={onClick}
     data-disabled={disabled}
     {...restProps}
-    className={`${className} shadow-focusable flex justify-start gap-2`}>
+    className={`${className} flex justify-start gap-2`}>
     {/* A real 2-column flex row: the label is never truncated (always fully visible, left-aligned) and
         keeps its natural width; the value takes whatever's left and truncates there. `popLayout` lets
         the value animate in/out with `position: absolute` applied only to the exiting node, so the

@@ -1,0 +1,512 @@
+#ARTIST:Filow & Ikkimel
+#TITLE:Jiggy
+#CREATOR:NotReallyInnocent
+#BPM:216
+#YEAR:2025
+#PREVIEWSTART:49
+#VIDEO:v=gwj7E2cjR10
+#LANGUAGE:German
+#GAP:9477,777777777777
+#ALLKARAOKE_ID:filow-ikkimel-jiggy
+#ALLKARAOKE_SID:6348
+#ALLKARAOKE_LASTUPDATE:2026-09-16T02:41:16.812Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=30432
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:134
+#P1:Jiggy
+#MP3:Filow & Ikkimel - Jiggy.mp3
+#COVER:Filow & Ikkimel - Jiggy [CO].jpg
+#BACKGROUND:Filow & Ikkimel - Jiggy [BG].jpg
+R 14 2 1 Schieb 
+R 17 1 1 dein’n 
+R 19 3 2 Arsch 
+R 23 1 1 auf
+R 25 1 0 n 
+R 27 1 0 Floor, 
+R 29 1 -1 wir 
+R 31 3 -1 geh’n 
+R 35 1 1 jig
+R 37 3 -1 gy
+- 40
+R 43 3 0 Bang, 
+R 47 3 1 bang, 
+R 51 1 2 Par
+R 53 1 1 ty, 
+R 55 1 -1 hab’ 
+R 57 1 -1 ’n 
+R 59 1 -1 Spon
+R 61 1 -1 sor, 
+R 63 3 -1 no 
+R 67 1 -1 Did
+R 69 3 -1 dy
+- 72
+R 78 1 0 Ich 
+R 80 1 0 bin 
+R 82 1 0 ’n 
+R 84 1 0 Pfer
+R 86 1 0 de
+R 88 1 0 mäd
+R 90 1 0 chen 
+R 92 1 0 und 
+R 94 1 0 ich 
+R 96 1 0 tra
+R 98 1 0 ge 
+R 100 1 0 Did
+R 102 1 0 dl
+- 103
+R 109 1 0 Auf 
+R 111 1 0 mei
+R 113 1 0 ’m 
+R 115 1 0 T-
+R 117 1 0 Shirt 
+R 119 1 0 und 
+R 121 1 0 er 
+R 123 1 0 guckt 
+R 125 1 0 auf 
+R 127 1 0 mei
+R 129 1 0 ne 
+R 131 1 0 Tit
+R 133 1 0 ten
+- 134
+R 140 1 0 Shim
+R 142 1 0 my, 
+R 144 1 0 shim
+R 146 1 0 my, 
+R 148 1 0 La
+R 150 1 0 dy, 
+R 152 1 0 bleib’ 
+R 154 1 0 ent
+R 156 1 0 spannt 
+R 158 1 0 und 
+R 160 1 0 rauch’ 
+R 162 1 0 ’ne 
+R 164 1 0 Kip
+R 166 2 0 pe
+- 168
+R 178 1 -1 Wa
+R 180 1 0 rum 
+R 182 1 0 wird 
+R 184 1 0 mir 
+R 186 1 0 so 
+R 188 1 0 heiß? 
+R 190 1 0 Weil 
+R 192 1 0 al
+R 194 1 0 le 
+R 196 1 0 La
+R 198 1 0 dys 
+R 200 1 0 sind 
+R 202 1 0 am 
+R 204 1 0 strip
+R 206 2 0 pen
+- 208
+R 213 1 0 Dad
+R 215 1 0 dy 
+R 217 1 0 lässt 
+R 219 1 0 die 
+R 221 1 0 Schei
+R 223 1 0 ne 
+R 225 1 0 flie
+R 227 1 0 gen 
+R 229 1 0 und 
+R 231 1 0 lässt 
+R 233 1 0 sich 
+R 235 1 0 nicht 
+R 237 1 0 bit
+R 239 1 0 ten
+- 240
+R 243 1 0 Ich 
+R 245 1 0 sag’: 
+R 247 1 0 »Du 
+R 249 1 0 machst 
+R 251 1 0 mich 
+R 253 1 0 geil«, 
+R 255 1 0 und 
+R 257 1 0 dann 
+R 259 1 0 beiß’ 
+R 261 1 0 ich 
+R 263 1 0 auf 
+R 265 1 0 sei
+R 267 1 0 ne 
+R 269 1 0 Lip
+R 271 2 0 pen
+- 273
+R 277 3 0 Fuck, 
+R 281 1 0 Ba
+R 283 1 0 by, 
+R 285 1 0 Ba
+R 287 1 0 by, 
+R 289 1 0 ja, 
+R 291 1 0 ich 
+R 293 1 0 mag 
+R 295 1 0 es, 
+R 297 1 0 wenn 
+R 299 1 0 es 
+R 301 3 0 bounct
+- 304
+R 309 3 0 Oh 
+R 313 3 0 my 
+R 317 3 0 God, 
+R 321 1 0 komm 
+R 323 1 0 doch 
+R 325 1 0 mit 
+R 327 1 0 in 
+R 329 1 0 mei
+R 331 1 0 ne 
+R 333 3 0 Lounge
+- 336
+R 345 3 0 Lack
+R 349 1 0 schu
+R 351 2 0 he, 
+R 354 3 0 viel 
+R 358 1 0 Boo
+R 360 1 0 ty, 
+R 362 1 0 gei
+R 364 1 0 le 
+R 366 3 0 Frau’n
+- 369
+R 374 1 0 I 
+R 376 1 0 got 
+R 378 1 0 what 
+R 380 1 0 you 
+R 382 3 0 want, 
+R 386 1 0 Fi
+R 388 1 0 low, 
+R 390 1 0 und 
+R 392 1 0 ich 
+R 394 1 0 will 
+R 396 1 0 es 
+R 398 3 0 auch
+- 401
+R 410 1 1 Stеll 
+R 412 1 1 dir 
+R 414 1 1 vor, 
+R 416 1 1 dass 
+R 418 1 1 wir 
+R 420 1 1 heu
+R 422 1 1 te 
+R 424 1 1 A
+R 426 1 1 bend 
+R 428 1 1 zu 
+R 430 3 1 zwеit 
+R 434 3 1 wär’n
+- 437
+R 451 1 0 Was 
+R 453 1 0 wär 
+R 455 1 0 dir 
+R 457 1 0 das 
+R 459 1 0 für 
+R 461 1 0 ’n 
+R 463 3 0 Preis 
+R 467 1 0 wert?
+- 468
+: 471 8 -1 Uh, 
+: 487 3 -1 Girl 
+: 491 3 -1 su
+: 495 3 2 per
+: 499 6 1 se
+: 507 3 -3 xy
+- 510
+: 515 3 -3 Ich 
+: 519 3 -1 frag’ 
+: 523 3 -1 mich, 
+: 527 3 2 wie 
+: 531 7 1 schmeckt 
+: 539 3 -3 sie?
+- 542
+: 548 3 -3 Ich 
+: 552 3 -1 wart’ 
+: 556 3 -3 schon 
+: 560 3 -1 viel 
+: 564 3 -3 zu 
+: 568 3 -1 lang 
+: 572 3 -3 auf 
+: 576 3 -1 ei
+: 580 3 -3 ne 
+: 584 3 -1 Frau 
+: 588 3 -3 wie 
+: 592 5 -6 dich
+- 597
+: 600 8 -1 Du 
+: 616 3 -1 bist 
+: 620 3 -1 so 
+: 624 3 2 e
+: 628 6 1 lek
+: 636 3 -3 trisch
+- 639
+: 645 3 -3 Ich 
+: 649 3 -1 bring’ 
+: 653 3 -1 dir 
+: 657 3 2 ein’n 
+: 661 7 1 Sekt 
+: 669 3 -3 mit
+- 672
+: 677 3 -3 Ich 
+: 681 3 -1 hätt 
+: 685 3 -3 so 
+: 689 3 -1 ger
+: 693 3 -3 ne 
+: 697 3 -1 mehr, 
+: 701 3 -3 a
+: 705 3 -1 ber 
+: 709 3 -3 ich 
+: 713 3 -1 trau’ 
+: 717 3 -3 mich 
+: 721 4 -6 nicht
+- 725
+: 733 3 -1 Auf 
+: 737 3 -1 ei
+: 741 3 -3 ne 
+: 745 3 -1 Frau 
+: 749 3 -1 wie 
+: 753 5 -1 dich
+- 758 780
+- 780
+: 794 5 -1 Uh, 
+: 802 3 -1 Girl, 
+: 806 3 -3 ich 
+: 810 3 -1 trau’ 
+: 814 3 -1 mich 
+: 818 5 -1 nicht
+- 823 844
+- 844
+: 858 7 -1 Bitch, 
+: 869 1 -3 wir 
+: 871 3 -1 geh’n 
+: 875 3 2 stur
+: 879 6 1 dy
+- 885
+R 891 1 -2 Par
+R 893 1 0 ty 
+R 895 1 -2 all 
+R 897 1 -4 the 
+R 899 3 -1 time, 
+R 903 1 -2 Ed
+R 905 1 -1 die 
+R 907 3 -1 Mur
+R 911 3 -1 phy
+- 914
+R 921 1 0 Ich 
+R 923 1 0 se
+R 925 1 0 he 
+R 927 1 0 ei
+R 929 1 0 ne 
+R 931 1 0 La
+R 933 1 0 dy, 
+R 935 1 0 sie 
+R 937 1 0 ist 
+R 939 3 0 cur
+R 943 5 0 vy
+- 948
+R 955 1 0 Ba
+R 957 1 0 by, 
+R 959 1 0 bit
+R 961 1 0 te, 
+R 963 1 0 bit
+R 965 1 0 te 
+R 967 3 0 talk 
+R 971 3 0 dir
+R 975 3 0 ty
+- 978
+R 987 1 0 Ho
+R 989 1 0 se 
+R 991 3 0 blau, 
+R 995 3 0 Hemd 
+R 999 3 0 auf, 
+R 1003 1 0 Ik
+R 1005 1 0 ki 
+R 1007 3 0 legt 
+R 1011 3 0 Shem 
+R 1015 2 0 drauf
+- 1017
+R 1020 3 0 Walk
+R 1024 3 0 man-
+R 1028 3 0 Swag, 
+R 1032 1 0 uh, 
+R 1036 1 0 Kool-
+R 1038 3 0 &-
+R 1042 1 0 the-
+R 1044 3 0 Gang-
+R 1048 3 0 Sound
+- 1051
+R 1055 1 0 Ich 
+R 1057 1 0 trin
+R 1059 1 0 ke 
+R 1061 3 0 viel, 
+R 1065 1 0 a
+R 1067 1 0 ber 
+R 1069 1 0 ge
+R 1071 1 0 be 
+R 1073 3 0 kein’n 
+R 1077 3 0 Cent 
+R 1081 1 0 aus
+- 1082
+R 1085 1 0 Al
+R 1087 1 0 le 
+R 1089 3 0 dreh’n 
+R 1093 1 0 durch, 
+R 1095 1 0 wenn 
+R 1097 1 0 Ma
+R 1099 1 0 ma 
+R 1101 1 0 Ik
+R 1103 1 0 ki 
+R 1105 3 0 ihr’n 
+R 1109 3 0 Ass 
+R 1113 3 0 bounct
+- 1116
+: 1119 1 -1 Sie 
+: 1121 1 -1 hat 
+: 1123 1 -1 ge
+: 1125 1 -1 sagt, 
+: 1127 1 -1 sie 
+: 1129 1 -1 hat 
+: 1131 1 -1 was 
+: 1133 1 -1 Bes
+: 1135 1 -1 se
+: 1137 1 -1 res 
+: 1139 1 -1 ver
+: 1141 1 -1 dient 
+: 1143 1 -1 als 
+: 1145 1 -1 ihr’n 
+: 1147 1 4 Ex
+- 1148
+: 1151 1 -1 Ich 
+: 1153 1 -1 glaub’, 
+: 1155 1 -1 der 
+: 1157 1 -1 Duft 
+: 1159 1 -1 an 
+: 1161 1 -1 mei
+: 1163 1 -1 nem 
+: 1165 1 -1 Hals 
+: 1167 1 -1 hat 
+: 1169 1 -1 ihr 
+: 1171 1 -1 In
+: 1173 1 -1 tres
+: 1175 1 -1 se 
+: 1177 1 -1 ge
+: 1179 3 4 weckt
+- 1182
+: 1185 2 -1 Flipp’ 
+: 1188 2 -1 das 
+: 1191 1 -1 Zip
+: 1193 1 -1 po 
+: 1195 2 -1 auf, 
+: 1198 1 -1 Ba
+: 1200 1 -1 by, 
+: 1202 1 -1 lass 
+: 1204 1 -1 uns 
+: 1206 1 -1 Ket
+: 1208 1 -1 te 
+: 1210 1 -1 rau
+: 1212 1 -1 chen
+- 1213
+: 1214 1 -1 Get 
+: 1216 1 -1 down 
+: 1218 1 -1 on 
+: 1220 1 -1 it, 
+: 1222 1 -1 ich 
+: 1224 1 -1 will 
+: 1226 1 -1 bis
+: 1228 1 -1 schen 
+: 1230 1 -1 Al
+: 1232 1 -1 ko
+: 1234 1 -1 hol, 
+: 1236 1 -1 ’ne 
+: 1238 1 -1 Flup
+: 1240 1 -1 pe 
+: 1242 1 -1 und 
+: 1244 3 4 Sex
+- 1247
+R 1250 1 -1 Stell 
+R 1252 1 -1 dir 
+R 1254 1 -1 vor, 
+R 1256 1 -1 dass 
+R 1258 1 -1 wir 
+R 1260 1 -1 heu
+R 1262 1 -1 te 
+R 1264 1 -1 A
+R 1266 1 -1 bend 
+R 1268 1 -1 zu 
+R 1270 3 -1 zweit 
+R 1274 3 -1 wär’n
+- 1277
+R 1291 1 -1 Was 
+R 1293 1 -1 wär 
+R 1295 1 -1 dir 
+R 1297 1 -1 das 
+R 1299 1 -1 für 
+R 1301 1 -1 ’n 
+R 1303 3 -1 Preis 
+R 1307 1 -1 wert?
+- 1308
+: 1311 8 -1 Uh, 
+: 1327 3 -1 Girl 
+: 1331 3 -1 su
+: 1335 3 2 per
+: 1339 6 1 se
+: 1347 3 -3 xy
+- 1350
+: 1355 3 -3 Ich 
+: 1359 3 -1 frag’ 
+: 1363 3 -1 mich, 
+: 1367 3 2 wie 
+: 1371 7 1 schmeckt 
+: 1379 3 -3 sie?
+- 1382
+: 1388 3 -3 Ich 
+: 1392 3 -1 wart’ 
+: 1396 3 -3 schon 
+: 1400 3 -1 viel 
+: 1404 3 -3 zu 
+: 1408 3 -1 lang 
+: 1412 3 -3 auf 
+: 1416 3 -1 ei
+: 1420 3 -3 ne 
+: 1424 3 -1 Frau 
+: 1428 3 -3 wie 
+: 1432 5 -6 dich
+- 1437
+: 1440 8 -1 Du 
+: 1456 3 -1 bist 
+: 1460 3 -1 so 
+: 1464 3 2 e
+: 1468 6 1 lek
+: 1476 3 -3 trisch
+- 1479
+: 1485 3 -3 Ich 
+: 1489 3 -1 bring’ 
+: 1493 3 -1 dir 
+: 1497 3 2 ein’n 
+: 1501 7 1 Sekt 
+: 1509 3 -3 mit
+- 1512
+: 1517 3 -3 Ich 
+: 1521 3 -1 hätt 
+: 1525 3 -3 so 
+: 1529 3 -1 ger
+: 1533 3 -3 ne 
+: 1537 3 -1 mehr, 
+: 1541 3 -3 a
+: 1545 3 -1 ber 
+: 1549 3 -3 ich 
+: 1553 3 -1 trau’ 
+: 1557 3 -3 mich 
+: 1561 4 -6 nicht
+- 1565
+: 1573 3 -1 Auf 
+: 1577 3 -1 ei
+: 1581 3 -3 ne 
+: 1585 3 -1 Frau 
+: 1589 3 -1 wie 
+: 1593 4 -1 dich
+- 1597 1622
+- 1622
+: 1636 5 -1 Uh, 
+: 1642 3 -1 Girl, 
+: 1646 3 -3 ich 
+: 1650 3 -1 trau’ 
+: 1654 3 -1 mich 
+: 1658 5 -1 nicht
+E

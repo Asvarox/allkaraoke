@@ -25,6 +25,7 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
         name: player.getName(),
         playerNumber: player.number,
         detailedScore: GameState.getPlayerDetailedScore(player.number),
+        scoreTimeline: GameState.getPlayerScoreTimeline(player.number),
       })),
     [],
   );

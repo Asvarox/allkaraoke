@@ -13,6 +13,8 @@ interface Props {
   singSetup: SingSetup;
   leaderboard: LeaderboardPostGame;
   className?: string;
+  /** Passed straight through to the panel's scrolling list — see `ScoreboardPanel`. */
+  listClassName?: string;
 }
 
 /**
@@ -26,7 +28,7 @@ interface Props {
  * Rendering does not depend on the score qualifying: a player who is nowhere near the board still
  * gets told where they would have landed, which is the only reason to show it to them at all.
  */
-function SongLeaderboardPanel({ song, singSetup, leaderboard, className }: Props) {
+function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listClassName }: Props) {
   const { hasLeaderboard, difficulty, score, name, country } = leaderboard;
 
   const shouldFetch = hasLeaderboard;
@@ -75,6 +77,7 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className }: Props
   return (
     <ScoreboardPanel
       className={className}
+      listClassName={listClassName}
       title="Global scoreboard"
       // The count the removed "of N" sentence used to carry — the player's own row says the rest
       subtitle={`This song · ${difficulty} · all time${data ? ` · ${data.total + 1} scores` : ''}`}

@@ -10,6 +10,7 @@ import { Switcher } from '~/modules/elements/switcher';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import gameEvents from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
+import { gameModeNames } from '~/modules/game-modes';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
 import { PlayerNumber } from '~/modules/players/player-number';
@@ -25,12 +26,6 @@ interface Props {
   keyboardControl: boolean;
   onExitKeyboardControl: () => void;
 }
-
-const gameModeNames = {
-  [GAME_MODE.DUEL]: 'Duel',
-  [GAME_MODE.PASS_THE_MIC]: 'Pass The Mic',
-  [GAME_MODE.CO_OP]: 'Cooperation',
-};
 
 const difficultyNames = ['Hard', 'Medium', 'Easy'];
 
