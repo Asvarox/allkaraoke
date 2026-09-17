@@ -176,12 +176,27 @@ The cause was the snapshot rate limit rather than the navigation. `broadcastSnap
 stream to one every `ONLINE_SNAPSHOT_BROADCAST_MS`, which drops precisely the wrong snapshot: a
 phase change is the newest thing that has happened, so it falls inside the window and is held back
 while the *previous* phase keeps going out. Starting a song is also when every tab is at its
-busiest, so it is exactly when a host is likely to vanish. Phase changes now bypass the limit;
-everything else — the leaderboard, singers coming and going — is still thinned.
+busiest, so it is exactly when a host is likely to vanish.
 
-`tests/online-mode.spec.ts` "host closing the tab mid-song still lets the round finish and promotes
-the guest" covers it end to end, and `online-room-host.test.ts` pins the rate-limit behaviour
-directly.
+The same limiter lost the room in the lobby, too. A singer who had joined, or changed colour, less
+than a couple of seconds before the host left was holding a snapshot from before that change — or,
+for a newcomer, no snapshot at all, in which case they took over by opening an empty room of their
+own.
+
+So the rule is now by caller rather than by content. Every time the room logic persists — a join or
+leave, a colour, readiness, a playback transition, a final score — the snapshot goes out at once.
+Those are discrete events, each already accompanied by a full room-state push, so the snapshot
+alongside costs next to nothing. Only the heartbeat's refresh, which exists to carry the leaderboard
+through a song, is limited to one per `ONLINE_SNAPSHOT_BROADCAST_MS`.
+
+That change exposed a race in kicking: a kick removes the singer — which persists — before it
+disconnects them, and slot bookkeeping used to run on the snapshot path, in between, dropping the
+slot the eviction then needed to deliver the rejection on. It runs on the heartbeat now, which a
+synchronous handler cannot be interrupted by.
+
+`tests/online-mode.spec.ts` covers all three end to end ("host closing the tab mid-song…", "host
+disconnect promotes the next-joined singer", "host can kick a singer…"), and
+`online-room-host.test.ts` pins each rule directly.
 
 Still worth doing: stop navigating altogether, keeping online mode on one page for the whole
 lobby → song → results cycle, so neither the host's authority nor a client's succession state is

@@ -92,9 +92,6 @@ export class OnlineRoomHost {
   private wakeTimer: ReturnType<typeof setTimeout> | null = null;
   private lastSnapshot: OnlinePersistedState | null = null;
   private lastSnapshotBroadcastAt = 0;
-  /** Phase of the last snapshot actually put on the wire, so a transition can jump the rate limit
-   * exactly once rather than on every tick that follows it. */
-  private lastBroadcastPhase: OnlinePersistedState['phase'] | null = null;
   private closed = false;
 
   private readonly membership: SfuRoomMembership;
@@ -161,7 +158,7 @@ export class OnlineRoomHost {
         },
         persist: (state) => {
           this.lastSnapshot = state;
-          this.broadcastSnapshot();
+          this.broadcastSnapshot({ immediately: true });
         },
         scheduleWake: (deadline) => this.scheduleWake(deadline),
         destroy: () => this.close(),
@@ -342,7 +339,13 @@ export class OnlineRoomHost {
    * Releases slots the room logic has finished with. A participant whose reconnect grace window
    * expires is dropped inside the logic, which has no way to reach the directory — so without this
    * their slot would stay claimed and a busy room would start turning people away with seats free.
-   * Runs on the snapshot tick because it is cheap and needs no timer of its own.
+   *
+   * Runs on the heartbeat and nowhere else. It must never run inside a room-logic call: a kick
+   * removes the singer (which persists) *before* it disconnects them, and reconciling in between
+   * would drop their slot mapping first — `evictParticipant` would then find no slot to deliver the
+   * rejection on, and the kicked singer would sit in a room that had quietly forgotten them. A timer
+   * callback cannot interleave with a synchronous handler, so the heartbeat only ever sees the kick
+   * whole.
    */
   private reconcileSlots = () => {
     const present = new Set(this.logic.getState().participants.map((participant) => participant.id));
@@ -391,11 +394,11 @@ export class OnlineRoomHost {
     this.timers.push(
       setInterval(() => {
         this.watchForOwnStall();
+        this.reconcileSlots();
         this.broadcast({ t: 'hb', epoch: this.membership.epoch });
-        // Piggy-backed on the heartbeat rather than given its own timer. The room logic publishes
-        // state on transitions, and a song is one long stretch without any — so the persist-driven
-        // path alone would leave the succession line holding a snapshot from before the song
-        // started. Still rate-limited to ONLINE_SNAPSHOT_BROADCAST_MS inside broadcastSnapshot.
+        // Piggy-backed on the heartbeat rather than given its own timer. The room logic persists on
+        // transitions, and a song is one long stretch without any while the leaderboard in the
+        // snapshot keeps moving — so this refreshes it, at most once per ONLINE_SNAPSHOT_BROADCAST_MS.
         this.broadcastSnapshot();
       }, ONLINE_HOST_HEARTBEAT_MS),
       // Without this the directory's TTL would wipe a room out from under a long session, and the
@@ -407,28 +410,25 @@ export class OnlineRoomHost {
   /**
    * Hands the succession line the state it would need to take over.
    *
-   * Driven by the room logic's own `persist` rather than by a timer: it then rides exactly the
-   * same path as the state pushes clients already depend on, costs nothing while a room sits
-   * still, and cannot drift out of step with the state it describes.
+   * Two callers, treated differently. Every time the room logic persists — somebody joined or left,
+   * picked a colour, readied up, the song started, paused or ended — the snapshot goes out at once.
+   * Those are discrete events, each already accompanied by a full room-state push to everyone, so
+   * sending the snapshot alongside costs next to nothing; and each is exactly what a successor has to
+   * know. Holding one back was the bug: a limiter keeps re-sending the *previous* state and drops the
+   * newest, so a host that vanished within a couple of seconds of a change handed over a room from
+   * before it — a song that had not started, or, for a singer who had only just joined, no room at
+   * all, and the successor began an empty one.
    *
-   * The rate limit covers the steady state — the leaderboard ticking over, singers coming and
-   * going — where a successor being a second or two behind costs nothing. A phase change is the
-   * opposite of steady state, and a plain timestamp limiter drops exactly the wrong one: the
-   * transition is the newest thing that happened, so it lands inside the window and is held back
-   * while the *previous* phase keeps being rebroadcast. A host that disappears in those two
-   * seconds — which is when a host is most likely to disappear, since starting a song is when
-   * everyone's tab is busiest — hands its successor a snapshot from before the song began, and
-   * the round ends in the lobby. So a phase change goes out at once.
+   * The heartbeat is the other caller. It refreshes what changes without a persist — the leaderboard
+   * climbing through a song — and that is steady-state traffic, so it is the only part limited to
+   * one send per ONLINE_SNAPSHOT_BROADCAST_MS.
    */
-  private broadcastSnapshot = () => {
+  private broadcastSnapshot = ({ immediately = false } = {}) => {
     const snapshot = this.lastSnapshot;
     if (!snapshot) return;
     const now = Date.now();
-    const phaseChanged = snapshot.phase !== this.lastBroadcastPhase;
-    if (!phaseChanged && now - this.lastSnapshotBroadcastAt < ONLINE_SNAPSHOT_BROADCAST_MS) return;
+    if (!immediately && now - this.lastSnapshotBroadcastAt < ONLINE_SNAPSHOT_BROADCAST_MS) return;
     this.lastSnapshotBroadcastAt = now;
-    this.lastBroadcastPhase = snapshot.phase;
-    this.reconcileSlots();
     const { chartData: _chartData, ...withoutChart } = snapshot;
     this.broadcast({ t: 'snapshot', state: withoutChart satisfies OnlineHostSnapshot });
   };

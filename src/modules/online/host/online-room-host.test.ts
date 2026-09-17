@@ -238,6 +238,24 @@ describe('OnlineRoomHost', () => {
   });
 });
 
+describe('OnlineRoomHost kicks', () => {
+  it('tells a kicked singer they were removed, even though removing them persists first', async () => {
+    startHost();
+    const guest = fabric.connect(1);
+    guest.send(hello('guest', 'Guest'));
+    await vi.advanceTimersByTimeAsync(0);
+
+    // Removing a singer persists the room, and a persist puts a snapshot on the wire at once. If
+    // slot bookkeeping ran on that path it would forget the guest's slot before the eviction
+    // looked it up, and the rejection would never be sent.
+    host.getLoopbackTransport().sendEvent({ t: 'rpc', id: 1, ns: 'room', method: 'kickPlayer', args: ['guest'] });
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(guest.received).toContainEqual({ t: 'join-rejected', reason: 'banned' });
+    expect(fabric.released).toContain('guest:banned');
+  });
+});
+
 describe('OnlineRoomHost identity', () => {
   it('refuses a slot claiming a participant that is sitting somewhere else', async () => {
     startHost();
@@ -333,8 +351,12 @@ const snapshotInPhase = (phase: string, hostId = 'host-participant'): OnlineHost
     finishRequestedAt: null,
   }) as unknown as OnlineHostSnapshot;
 
-const broadcastPhases = (messages: OnlineMessages[]) =>
-  messages.filter((message) => message.t === 'snapshot').map((message) => (message.state as { phase: string }).phase);
+const snapshotsIn = (messages: OnlineMessages[]) =>
+  messages
+    .filter((message) => message.t === 'snapshot')
+    .map((message) => message.state as { phase: string; participants: Array<{ id: string }> });
+
+const broadcastPhases = (messages: OnlineMessages[]) => snapshotsIn(messages).map((snapshot) => snapshot.phase);
 
 describe('OnlineRoomHost snapshot broadcasting', () => {
   it('puts a phase change on the wire at once instead of holding it for the rate limit', async () => {
@@ -356,17 +378,33 @@ describe('OnlineRoomHost snapshot broadcasting', () => {
     expect(broadcastPhases(fabric.broadcasts.slice(before))).toContain('lobby');
   });
 
-  it('still holds back a snapshot that changes nothing about the phase', async () => {
+  it('hands the succession line a newcomer at once, not a rate-limit window later', async () => {
     startHost(snapshotInPhase('lobby'));
     await vi.advanceTimersByTimeAsync(ONLINE_SNAPSHOT_BROADCAST_MS + 10);
     const before = fabric.broadcasts.length;
 
-    // A singer joining republishes state — routine traffic the limit exists to thin out.
+    // Well inside the window since the last snapshot — which is where a join usually lands.
     await vi.advanceTimersByTimeAsync(50);
     fabric.connect(1).send(hello('newcomer', 'Newcomer'));
-    await vi.advanceTimersByTimeAsync(50);
+    await vi.advanceTimersByTimeAsync(0);
 
-    expect(broadcastPhases(fabric.broadcasts.slice(before))).toEqual([]);
+    // A host that vanished now would otherwise leave the newcomer with no snapshot at all, and they
+    // would take over by opening an empty room of their own.
+    const sent = snapshotsIn(fabric.broadcasts.slice(before));
+    expect(sent.at(-1)?.participants.map((participant) => participant.id)).toContain('newcomer');
+  });
+
+  it('refreshes the snapshot on the heartbeat no more often than the limit allows', async () => {
+    startHost(snapshotInPhase('lobby'));
+    await vi.advanceTimersByTimeAsync(ONLINE_SNAPSHOT_BROADCAST_MS + 10);
+    const before = fabric.broadcasts.length;
+
+    // Nothing happens in the room — only the heartbeat, which ticks faster than the limit.
+    await vi.advanceTimersByTimeAsync(ONLINE_SNAPSHOT_BROADCAST_MS * 3);
+
+    const sent = snapshotsIn(fabric.broadcasts.slice(before)).length;
+    expect(sent).toBeLessThanOrEqual(3);
+    expect(sent).toBeGreaterThanOrEqual(2);
   });
 });
 
