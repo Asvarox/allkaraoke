@@ -10,6 +10,23 @@ import storage from '~/modules/utils/storage';
 
 import { getSongPreview } from './utils';
 
+// Building the per-song preview (isBuiltIn/isNew/isDeleted) is a plain per-item transform, so unlike
+// JSON.parse or Array.sort (opaque, atomic engine calls that can't be paused), it can be sliced: yield
+// back to the browser every CHUNK_SIZE items so a long list doesn't block a single animation frame.
+const CHUNK_SIZE = 1000;
+const yieldToBrowser = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
+
+async function mapInChunks<T, R>(items: T[], fn: (item: T) => R): Promise<R[]> {
+  const result: R[] = new Array(items.length);
+  for (let i = 0; i < items.length; i++) {
+    result[i] = fn(items[i]);
+    if (i > 0 && i % CHUNK_SIZE === 0) {
+      await yieldToBrowser();
+    }
+  }
+  return result;
+}
+
 let store: Promise<LocalForage | typeof storage.memory> | null = null;
 
 async function getStorage() {
@@ -135,21 +152,29 @@ class SongsService {
       }
     });
 
-    this.indexWithDeletedSongs = [
+    const merged = [
       ...storageIndexWithUpdatedSongs,
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
-    ].map((song) => ({
+    ];
+
+    const indexWithDeletedSongs = await mapInChunks(merged, (song) => ({
       ...song,
       isBuiltIn: defaultIndexIds.has(song.id),
       isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
       isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
     }));
 
-    this.indexWithDeletedSongs.sort((a, b) =>
+    // Re-checked here too: the chunked map above yields repeatedly, widening the window in which a
+    // newer reloadIndex() call could have been issued (and possibly already applied) while this one
+    // was still working through its chunks.
+    if (seq !== this.reloadSeq && this.finalIndex !== null) return;
+
+    indexWithDeletedSongs.sort((a, b) =>
       `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()),
     );
 
-    this.finalIndex = this.indexWithDeletedSongs.filter((song) => !song.isDeleted);
+    this.indexWithDeletedSongs = indexWithDeletedSongs;
+    this.finalIndex = indexWithDeletedSongs.filter((song) => !song.isDeleted);
   };
 
   public deleteSong = async (songId: string) => {
