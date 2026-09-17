@@ -15464,7 +15464,7 @@
     "gap": 25992.020159596806,
     "year": "2010",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-09-16T02:41:12.319Z",
+    "lastUpdate": "2026-09-15T10:49:44.321Z",
     "genre": "Rock",
     "realBpm": 120,
     "volume": 1,
@@ -37008,7 +37008,7 @@
     "gap": 17081.29746835443,
     "year": "1994",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-16T02:41:17.035Z",
+    "lastUpdate": "2026-09-15T19:50:47.481Z",
     "realBpm": 126,
     "previewStart": 16,
     "previewEnd": 230,
@@ -37814,6 +37814,33 @@
     "shortId": 5106,
     "tracksCount": 1,
     "search": "commodoreseasy",
+    "local": false
+  },
+  {
+    "id": "conan-gray-yours",
+    "title": "Yours",
+    "artist": "Conan Gray",
+    "video": "74NhLkjIeMs",
+    "language": [
+      "English"
+    ],
+    "bpm": 259,
+    "gap": 13845.444015444016,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-17T02:44:50.771Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Fenyesyes",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6361,
+    "tracksCount": 1,
+    "search": "conangrayyours",
     "local": false
   },
   {
@@ -39304,7 +39331,7 @@
     "gap": 39471.83366505545,
     "year": "1998",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:17.031Z",
+    "lastUpdate": "2026-09-15T19:50:20.021Z",
     "genre": "Game",
     "videoGap": 17,
     "realBpm": 112,
@@ -42486,7 +42513,7 @@
     "bpm": 260,
     "gap": 36.923076923076906,
     "year": "2024",
-    "lastUpdate": "2026-09-16T02:41:14.898Z",
+    "lastUpdate": "2026-09-15T10:50:38.507Z",
     "realBpm": 130,
     "volume": 1,
     "author": "DoubleDee",
@@ -43842,7 +43869,7 @@
     "gap": 5848.035882295688,
     "year": "1961",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:13.392Z",
+    "lastUpdate": "2026-09-15T10:50:25.430Z",
     "genre": "Oldies",
     "realBpm": 200,
     "volume": 1,
@@ -45919,6 +45946,34 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-wannsee",
+    "title": "Wannsee",
+    "artist": "Die Toten Hosen",
+    "video": "JMODYxRcoBI",
+    "language": [
+      "German"
+    ],
+    "bpm": 314.69,
+    "gap": 13519.01490355588,
+    "year": "2017",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-17T02:44:50.962Z",
+    "genre": "Punk Rock",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "rote_rose",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6362,
+    "tracksCount": 1,
+    "search": "dietotenhosenwannsee",
+    "local": false
+  },
+  {
     "id": "diego-torres-color-esperanza",
     "title": "Color esperanza",
     "artist": "Diego Torres",
@@ -47992,7 +48047,7 @@
     "bpm": 325.8,
     "gap": 7547.108655616943,
     "year": "2011",
-    "lastUpdate": "2026-09-16T02:41:16.618Z",
+    "lastUpdate": "2026-09-15T18:44:38.077Z",
     "genre": "Soundtrack",
     "realBpm": 155,
     "volume": 1,
@@ -53089,6 +53144,35 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-sapphire",
+    "title": "Sapphire",
+    "artist": "Ed Sheeran",
+    "video": "JgDNFQ2RaLQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 1493.157894736842,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-17T02:44:51.345Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=JgDNFQ2RaLQ",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6367,
+    "tracksCount": 1,
+    "search": "edsheeransapphire",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-shape-of-you",
     "title": "Shape of you",
     "artist": "Ed Sheeran",
@@ -53856,7 +53940,7 @@
     "gap": 7760,
     "year": "2007",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-09-16T02:41:15.088Z",
+    "lastUpdate": "2026-09-15T10:51:45.473Z",
     "genre": "Freak Metal",
     "realBpm": 180,
     "volume": 1,
@@ -61215,7 +61299,7 @@
     "gap": 9477.777777777777,
     "year": "2025",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-16T02:41:16.812Z",
+    "lastUpdate": "2026-09-15T18:46:52.970Z",
     "realBpm": 107,
     "previewStart": 49,
     "previewEnd": 90,
@@ -71558,7 +71642,7 @@
     "bpm": 399.7,
     "gap": 40106.74005504128,
     "year": "1980",
-    "lastUpdate": "2026-09-16T02:41:12.323Z",
+    "lastUpdate": "2026-09-15T10:49:57.338Z",
     "genre": "Ballad",
     "realBpm": 87,
     "volume": 1,
@@ -73426,7 +73510,7 @@
     "bpm": 300,
     "gap": 7400,
     "year": "2008",
-    "lastUpdate": "2026-09-16T02:41:16.435Z",
+    "lastUpdate": "2026-09-15T18:43:53.800Z",
     "genre": "Soundtrack",
     "realBpm": 131,
     "volume": 1,
@@ -74420,6 +74504,34 @@
     "shortId": 1887,
     "tracksCount": 1,
     "search": "helloweenhalloween",
+    "local": false
+  },
+  {
+    "id": "helloween-twilight-of-the-gods",
+    "title": "Twilight Of The Gods",
+    "artist": "Helloween",
+    "video": "qJ4qMZe67cc",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.84,
+    "gap": 14596.741164241164,
+    "year": "1987",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-17T02:44:50.011Z",
+    "genre": "Metal",
+    "realBpm": 154,
+    "volume": 1,
+    "author": "Angry",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6359,
+    "tracksCount": 1,
+    "search": "helloweentwilightofthegods",
     "local": false
   },
   {
@@ -90162,7 +90274,7 @@
     "bpm": 528,
     "gap": 5,
     "year": "2010",
-    "lastUpdate": "2026-09-16T02:41:18.438Z",
+    "lastUpdate": "2026-09-15T19:50:57.744Z",
     "genre": "Dance",
     "realBpm": 131,
     "volume": 1,
@@ -93284,7 +93396,7 @@
     "gap": 47259.01098901099,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:15.083Z",
+    "lastUpdate": "2026-09-15T10:50:53.232Z",
     "genre": "Rock",
     "realBpm": 169,
     "previewStart": 38,
@@ -94493,7 +94605,7 @@
     "gap": 16210.757301628328,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:18.637Z",
+    "lastUpdate": "2026-09-15T19:52:14.382Z",
     "genre": "Nu Metal",
     "realBpm": 116,
     "volume": 1,
@@ -96499,7 +96611,7 @@
     "gap": -109.30232558139551,
     "year": "2002",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-09-16T02:41:16.820Z",
+    "lastUpdate": "2026-09-15T19:49:44.040Z",
     "genre": "Rock",
     "realBpm": 115,
     "volume": 1,
@@ -101913,7 +102025,7 @@
     "gap": 9370.331667423898,
     "year": "2021",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:17.034Z",
+    "lastUpdate": "2026-09-15T19:50:33.669Z",
     "realBpm": 88,
     "volume": 1,
     "author": "lozboorman",
@@ -111998,7 +112110,7 @@
     "gap": 39800,
     "year": "1985",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-09-16T02:41:13.152Z",
+    "lastUpdate": "2026-09-15T10:50:09.918Z",
     "genre": "City Pop",
     "realBpm": 300,
     "volume": 1,
@@ -113005,7 +113117,7 @@
     "gap": 19246.89898989899,
     "year": "1968",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:16.430Z",
+    "lastUpdate": "2026-09-15T10:52:39.417Z",
     "genre": "Pop",
     "realBpm": 117,
     "volume": 1,
@@ -115561,7 +115673,7 @@
     "gap": 60007.857142857145,
     "year": "1983",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:16.809Z",
+    "lastUpdate": "2026-09-15T18:46:08.234Z",
     "genre": "Hard Rock",
     "realBpm": 176,
     "volume": 1,
@@ -115665,6 +115777,33 @@
     "shortId": 2935,
     "tracksCount": 1,
     "search": "metallicaone",
+    "local": false
+  },
+  {
+    "id": "metallica-ride-the-lightning",
+    "title": "Ride The Lightning",
+    "artist": "Metallica",
+    "video": "We_DLCYDaYw",
+    "language": [
+      "English"
+    ],
+    "bpm": 303.55,
+    "gap": 39521.69494317246,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-17T02:44:50.009Z",
+    "realBpm": 151,
+    "volume": 1,
+    "author": "IC",
+    "duration": 398,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6358,
+    "tracksCount": 1,
+    "search": "metallicaridethelightning",
     "local": false
   },
   {
@@ -119309,6 +119448,34 @@
     "local": false
   },
   {
+    "id": "mitski-star",
+    "title": "Star",
+    "artist": "Mitski",
+    "video": "zdFoi-YEIFU",
+    "language": [
+      "English"
+    ],
+    "bpm": 347,
+    "gap": 14215.763688760806,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-17T02:44:51.146Z",
+    "genre": "Folk",
+    "realBpm": 73,
+    "volume": 1,
+    "author": "lukmuk",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6364,
+    "tracksCount": 1,
+    "search": "mitskistar",
+    "local": false
+  },
+  {
     "id": "mitski-washing-machine-heart",
     "title": "Washing Machine Heart",
     "artist": "Mitski",
@@ -119600,6 +119767,34 @@
     "shortId": 3037,
     "tracksCount": 1,
     "search": "modestmousefloaton",
+    "local": false
+  },
+  {
+    "id": "mohombi-bumpy-ride",
+    "title": "Bumpy Ride",
+    "artist": "Mohombi",
+    "video": "G2RCCDSBEGk",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.04,
+    "gap": 19900.190439916205,
+    "year": "2010",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-09-17T02:44:51.154Z",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=11302",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6366,
+    "tracksCount": 1,
+    "search": "mohombibumpyride",
     "local": false
   },
   {
@@ -126112,7 +126307,7 @@
     "gap": 35666.940565118544,
     "year": "2020",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-16T02:41:12.316Z",
+    "lastUpdate": "2026-09-15T10:49:33.708Z",
     "genre": "Symphonic Metal",
     "realBpm": 154,
     "volume": 1,
@@ -126128,6 +126323,36 @@
     "shortId": 6335,
     "tracksCount": 1,
     "search": "nightwishnoise",
+    "local": false
+  },
+  {
+    "id": "nightwish-over-the-hills-and-far-away",
+    "title": "Over The Hills And Far Away",
+    "artist": "Nightwish",
+    "video": "CwED4C5FJuo",
+    "language": [
+      "English"
+    ],
+    "bpm": 271.5,
+    "gap": 6995.5248618784535,
+    "year": "2001",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-17T02:44:51.149Z",
+    "genre": "Metal",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "ImaginaryLight",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23955",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=10950",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6365,
+    "tracksCount": 1,
+    "search": "nightwishoverthehillsandfaraway",
     "local": false
   },
   {
@@ -128426,6 +128651,35 @@
     "shortId": 3271,
     "tracksCount": 1,
     "search": "oasissomemightsay",
+    "local": false
+  },
+  {
+    "id": "oasis-stand-by-me",
+    "title": "Stand By Me",
+    "artist": "Oasis",
+    "video": "maTP315XZCQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 480,
+    "gap": 30400,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-17T02:44:50.767Z",
+    "genre": "Britpop",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "unknown",
+    "sourceUrl": "https://www.youtube.com/watch?v=maTP315XZCQ",
+    "duration": 358,
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "shortId": 6360,
+    "tracksCount": 1,
+    "search": "oasisstandbyme",
     "local": false
   },
   {
@@ -132875,6 +133129,36 @@
     "shortId": 3394,
     "tracksCount": 1,
     "search": "partenaireparticulierpartenaireparticulier",
+    "local": false
+  },
+  {
+    "id": "partynextdoor-persian-rugs",
+    "title": "PERSIAN RUGS",
+    "artist": "PARTYNEXTDOOR",
+    "video": "4NYGgJlY3Uw",
+    "language": [
+      "English"
+    ],
+    "bpm": 110,
+    "gap": 14454.454545454546,
+    "year": "2020",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-09-17T02:44:50.963Z",
+    "genre": "R&B",
+    "realBpm": 110,
+    "previewStart": 15,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "drewand (AI-assisted first pass)",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 6363,
+    "tracksCount": 1,
+    "search": "partynextdoorpersianrugs",
     "local": false
   },
   {
@@ -141706,6 +141990,35 @@
     "shortId": 3634,
     "tracksCount": 1,
     "search": "revolverheldichlassfuerdichdaslichtan",
+    "local": false
+  },
+  {
+    "id": "revolverheld-mit-dir-chilln",
+    "title": "Mit dir chilln",
+    "artist": "Revolverheld",
+    "video": "wO_fSipy5l0",
+    "language": [
+      "German"
+    ],
+    "bpm": 248,
+    "gap": 18631.774193548386,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-17T02:44:50.001Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1379",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6357,
+    "tracksCount": 1,
+    "search": "revolverheldmitdirchilln",
     "local": false
   },
   {
@@ -163356,7 +163669,7 @@
     "gap": 8769.687933992322,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:12.310Z",
+    "lastUpdate": "2026-09-15T10:49:23.810Z",
     "genre": "Pop",
     "realBpm": 56,
     "volume": 1,
@@ -163560,7 +163873,7 @@
     "gap": 8198.330550918197,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:16.818Z",
+    "lastUpdate": "2026-09-15T19:49:02.055Z",
     "genre": "Pop",
     "realBpm": 75,
     "volume": 1,
@@ -163648,7 +163961,7 @@
     "gap": 23169.546812749002,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-16T02:41:15.085Z",
+    "lastUpdate": "2026-09-15T10:51:19.747Z",
     "genre": "Country Pop",
     "realBpm": 161,
     "volume": 1,
@@ -172976,7 +173289,7 @@
     "gap": 8863.157894736842,
     "year": "2012",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-09-16T02:41:18.640Z",
+    "lastUpdate": "2026-09-15T19:53:29.646Z",
     "realBpm": 114,
     "previewEnd": 272,
     "volume": 1,
