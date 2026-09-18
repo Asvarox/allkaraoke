@@ -145,7 +145,7 @@
     "oxlint": "^1.83.0",
     "partykit": "^0.0.115",
     "peer": "^1.0.2",
-    "playwright": "^1.62.1",
+    "playwright": "1.62.1",
     "pngjs": "^7.0.0",
     "postcss": "^8.5.28",
     "rollup-plugin-visualizer": "^7.1.1",

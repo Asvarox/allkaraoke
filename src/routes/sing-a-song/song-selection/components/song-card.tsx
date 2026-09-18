@@ -1,3 +1,4 @@
+// oxlint-disable react-refresh/only-export-components
 import { ComponentProps, createContext, forwardRef, useContext } from 'react';
 
 import { SongPreview } from '~/interfaces';
