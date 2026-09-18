@@ -25,6 +25,26 @@ export const slotChannelName = (slot: number) => `slot-${slot}`;
  * it cannot be imported here without dragging the app's `~` alias into the Worker build. */
 export const ONLINE_SLOT_COUNT = 6;
 
+/**
+ * The first character of a P2P room code. Every other code is a PartyKit (server-mode) room.
+ *
+ * The code carries its room's transport so that nobody has to agree on anything else: the
+ * `OnlineP2P` flag decides which kind of code a room is *created* with, and from then on everyone
+ * who joins — whatever their own flag says, however they arrived at the code — goes where the code
+ * points. Deciding by each joiner's flag instead split friends across two backends that cannot see
+ * each other's rooms.
+ *
+ * A digit, because PartyKit codes have only ever been letters: every code handed out before this
+ * existed keeps meaning exactly what it meant. 0 and 1 are left out — they read as O and l, and the
+ * code is read out across a room and typed on phones.
+ */
+export const P2P_ROOM_CODE_LEADS = '23456789';
+
+/** A P2P room code in full: a lead digit and four lowercase letters, five characters like every
+ * room code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to
+ * this, so a room can only ever exist in the backend its code points to. */
+export const P2P_ROOM_CODE_PATTERN = /^[2-9][a-z]{4}$/;
+
 /** A room's directory row is wiped this long after the last call touching it. The host's keepalive
  * is what holds a live room open, so this only has to outlast the gap between keepalives. */
 export const DIRECTORY_TTL_MS = 30 * 60 * 1_000;

@@ -1,5 +1,10 @@
 // Relative imports on purpose: the `~` alias is only configured for the app build, not the Worker one
-import { ONLINE_SLOT_COUNT, ROOM_BROADCAST_CHANNEL, slotChannelName } from '../src/modules/online/signaling/protocol';
+import {
+  ONLINE_SLOT_COUNT,
+  P2P_ROOM_CODE_PATTERN,
+  ROOM_BROADCAST_CHANNEL,
+  slotChannelName,
+} from '../src/modules/online/signaling/protocol';
 import type {
   CreateDataChannelsRequest,
   CreateDataChannelsResponse,
@@ -60,8 +65,10 @@ const TURN_CREDENTIAL_TTL_SECONDS = 2 * 60 * 60;
 const TURN_REFRESH_MARGIN_MS = 10 * 60 * 1_000;
 
 /** Room codes are the only thing that reaches the directory as a Durable Object name, so they are
- * pinned to exactly what the game generates before anything is looked up. */
-const ROOM_CODE_PATTERN = /^[a-z0-9]{5}$/;
+ * pinned to exactly what the game generates for a P2P room before anything is looked up. A code of
+ * any other shape belongs to PartyKit; refusing it here is what keeps a room from ever existing in
+ * both backends under one code, whatever an out-of-date client asks for. */
+const ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 
 /**
  * The channel every session establishes its SCTP transport with. Cloudflare's establish endpoint

@@ -120,7 +120,7 @@ describe('data channel authorisation', () => {
     const request = new Request('https://example.test/online/datachannels', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ roomCode: 'abcde', participantId: 'p2', sessionId: 's2', channels }),
+      body: JSON.stringify({ roomCode: '2abcd', participantId: 'p2', sessionId: 's2', channels }),
     });
     return (await handleOnlineSignaling(request, envWith(auth), '/online/datachannels'))!;
   };
@@ -270,5 +270,18 @@ describe('cross-origin access', () => {
 
   it('does not hand every page on the internet a browser-side client', async () => {
     expect((await ice('https://not-ours.example'))?.headers.get('Access-Control-Allow-Origin')).toBeNull();
+  });
+});
+
+describe('room codes', () => {
+  it('turns away a code that belongs to PartyKit, so no room can exist in both backends', async () => {
+    const env = { ONLINE_DIRECTORY: {} } as unknown as OnlineSignalingEnv;
+    const lookup = (code: string) =>
+      handleOnlineSignaling(new Request(`https://example.test/online/room/${code}`), env, `/online/room/${code}`);
+
+    // An all-letter code is a server-mode room; the directory must never answer for one, or an
+    // out-of-date client could open a P2P room under a code everyone else looks for in PartyKit.
+    expect((await lookup('abcde'))?.status).toBe(400);
+    expect((await lookup('1abcd'))?.status).toBe(400);
   });
 });

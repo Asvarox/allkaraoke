@@ -41,10 +41,13 @@ test('Online mode (server): a full round from lobby to results', async ({ page, 
 
   const roomCode = await createOnlineRoom(page, context, browser, hostName);
 
+  // Opened in server mode, so the code is all letters — the mark every PartyKit code has carried.
+  expect(roomCode).toMatch(/^[a-z]+$/);
+
+  // Deliberately not opted into server mode: under e2e the guest's flag says P2P. It still lands in
+  // this room, because a joiner follows the code rather than its own flag — the case of a singer
+  // enrolled in the other mode than whoever opened the room.
   const guestPage = await newPlayerPage(browser);
-  // The guest has to agree on the mode — the two keep their rooms in different places, so a
-  // mismatched joiner would be told the code does not exist.
-  await useServerOnlineMode({ page: guestPage, context: guestPage.context() });
   const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
 
   await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);

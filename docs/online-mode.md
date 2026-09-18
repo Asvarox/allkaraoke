@@ -20,15 +20,45 @@ has earned the switch.
 and turned off in one click. Once it has proved itself, the intended end state is P2P everywhere
 and the removal of everything behind `server`: the PartyKit project and its deployment, the
 `partykit` dependency, both CI deploy steps, `VITE_APP_ONLINE_PARTYKIT_URL`, the webServer entry in
-`playwright.config.ts`, `WebSocketRoomTransport`, `openServerRoom`, `OnlineRoomMode` and this
-table. `OnlineRoomLogic` itself stays — it is shared.
+`playwright.config.ts`, `WebSocketRoomTransport`, `openServerRoom`, `room-mode.ts` and this
+table. `OnlineRoomLogic` itself stays — it is shared. So do the digit-led codes: once PartyKit is
+gone every code is P2P, and the generator can widen back to the whole alphabet.
 
 Everything below describes `p2p` unless it says otherwise.
 
-The mode is read once, in `useOnlineMode`, because everyone in a room has to agree — a joiner
-checks the room code against the mode it is about to connect with. Rooms opened in one mode are
-invisible to the other, so flipping the flag does not migrate rooms that are already running; it
-changes what the next room uses.
+### The room code carries the mode
+
+Everyone in a room has to be on the same transport, and the two keep their rooms in different
+places — a PartyKit room is invisible to the directory and the other way round. So the mode is
+written into the room's code, the one thing everybody in a room is guaranteed to share:
+
+- a code that **starts with a digit `2`–`9`** is a P2P room (`P2P_ROOM_CODE_LEADS`);
+- **anything else** — the all-letter codes PartyKit has always used — is a server room.
+
+The flag is read in exactly one place, `useNewRoomMode`, and only to decide what kind of code a
+*new* room is opened with. Joining never consults it: `roomModeOf(code)` decides where the wizard
+looks the code up, where `OnlineClient.connect` goes, and — on the Worker — which codes the
+directory will serve at all (`P2P_ROOM_CODE_PATTERN`), so no room can exist in both backends under
+one code.
+
+Three things follow from that, and they are the reason it is done this way:
+
+- **Mixed rooms work.** The flag is a percentage rollout, so friends are enrolled independently.
+  When each joiner's own flag picked the backend, anyone enrolled differently from the host was
+  told the room did not exist.
+- **The kill switch only affects new rooms.** Turning the flag off changes the next code handed
+  out; everyone already in a P2P room, and everyone joining or reloading one, still goes where its
+  code points.
+- **No mid-room switch.** The code is fixed for the life of the room, so a flag answer that arrives
+  late — PostHog is a network round trip away on somebody's first visit — cannot tear a room down
+  and reopen it in the other backend. For the same reason the create wizard generates the code when
+  it finishes rather than when it opens.
+
+A digit was chosen because no code ever handed out before started with one: every existing
+PartyKit code keeps meaning exactly what it meant, with no fallback needed. `0` and `1` are left
+out because they read as O and l. The price is a smaller code space for P2P rooms — eight lead
+characters instead of twenty-six, about 3.7M codes — which is fine now that knowing a code no longer
+lets anyone act as somebody else in the room.
 
 ## The shape of it
 
@@ -208,9 +238,10 @@ torn down mid-room. Everything else here is indifferent to that change.
 is why the logic could move into a browser at all, and why both modes can share it.
 
 `online-mode-server.spec.ts` runs a full round through the original PartyKit mode. The rest of the
-online suite runs `p2p`, because feature flags are forced on under e2e — `useOnlineMode` has an
+online suite runs `p2p`, because feature flags are forced on under e2e — `useNewRoomMode` has an
 opt-in (`useServerOnlineMode` in `tests/helpers.ts`) so the default still gets covered. The mode
-that is live in production must not be the one nobody runs.
+that is live in production must not be the one nobody runs. Each side also has a guest enrolled in
+the *other* mode join by code, which is the mixed-room case above.
 
 `online-room-host.test.ts` drives the host runtime against an in-memory fabric standing in for the
 SFU, including a takeover from a snapshot.

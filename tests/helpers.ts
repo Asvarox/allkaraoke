@@ -34,8 +34,11 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
   });
 };
 /**
- * Runs a spec against the original online mode — the PartyKit room the `OnlineP2P` flag falls back
- * to. Without this the suite exercises P2P, since e2e forces feature flags on.
+ * Makes rooms this browser *opens* original-mode ones — PartyKit, the side the `OnlineP2P` flag
+ * falls back to. Without this the suite opens P2P rooms, since e2e forces feature flags on.
+ *
+ * It has no effect on joining: a joiner follows the room's code wherever its own flag points, so
+ * setting this on a guest is how a spec reproduces a singer enrolled in the other mode.
  */
 export const useServerOnlineMode = async ({ context }: { page: Page; context: BrowserContext }) => {
   await context.addInitScript(() => {

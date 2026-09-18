@@ -4,6 +4,7 @@ import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
 import { trackOnlineRoomConnectAttempt } from '~/modules/online/client/online-analytics';
+import { OnlineRoomMode, roomModeOf } from '~/modules/online/client/room-mode';
 import { createRoomConnection } from '~/modules/online/client/transport/create-room-connection';
 import {
   OnlineClientTransport,
@@ -39,20 +40,6 @@ const getReconnectDelayMs = (attempt: number): number => {
   const cap = Math.min(RECONNECT_MAX_DELAY_MS, RECONNECT_BASE_DELAY_MS * 2 ** attempt);
   return Math.random() * cap;
 };
-
-/**
- * Where a room's authority lives.
- *
- * `server` is the original design, unchanged: `OnlineRoomLogic` in the PartyKit room, every client
- * on a socket to it. It is the default and the base — proven in production, and billed by the
- * second for the length of every song.
- *
- * `p2p` runs the same logic in the host's browser and moves messages over the Cloudflare Realtime
- * SFU, which is billed on egress instead. Cheaper by orders of magnitude, and newer — hence the
- * feature flag, so it can be rolled out gradually and turned off in one click. Once it has proved
- * itself, `server` and everything behind it can go.
- */
-export type OnlineRoomMode = 'server' | 'p2p';
 
 // E2E runs against the local `partykit dev` server started by the Playwright webServer config
 export const getOnlinePartyKitServer = (): string =>
@@ -96,8 +83,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private roomCode: string | null = null;
   private name = '';
   private createRoom = false;
-  /** Which mode this room is running in — see `OnlineRoomMode`. Fixed for the life of a connection:
-   * everyone in a room has to agree, so it is decided when the room is entered and not revisited. */
+  /** Which mode this room is running in, read off its code — see `roomModeOf`. */
   private mode: OnlineRoomMode = 'server';
   private status: OnlineConnectionStatus = 'disconnected';
   private shouldReconnect = false;
@@ -183,7 +169,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.onUpdate(status, detail);
   };
 
-  public connect = (roomCode: string, name: string, { create = false, mode = 'server' as OnlineRoomMode } = {}) => {
+  public connect = (roomCode: string, name: string, { create = false } = {}) => {
     const normalizedRoomCode = roomCode.toLowerCase();
     if (this.transport?.isConnected() && this.roomCode === normalizedRoomCode) {
       return;
@@ -192,7 +178,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.roomCode = normalizedRoomCode;
     this.name = name;
     this.createRoom = create;
-    this.mode = mode;
+    // From the code, never from this browser's flag: everyone in a room has to be on the same
+    // transport, and the code is the one thing they are all guaranteed to share.
+    this.mode = roomModeOf(normalizedRoomCode);
     this.shouldReconnect = true;
     this.hasTrackedConnectAttempt = false;
     this.hasRotatedIdentity = false;
@@ -632,10 +620,10 @@ const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
 const CHECK_ROOM_EXISTS_TIMEOUT_MS = 5_000;
 
 /** Checks (over HTTP) whether a room code was actually opened, without joining it. The two modes
- * keep their rooms in different places — PartyKit and the room directory — so the check has to
- * follow the mode the joiner is about to use. */
-export const checkRoomExists = async (roomCode: string, mode: OnlineRoomMode = 'server'): Promise<boolean> => {
-  if (mode === 'p2p') return (await fetchRoomInfo(roomCode))?.created === true;
+ * keep their rooms in different places — PartyKit and the room directory — and the code says
+ * which one to ask. */
+export const checkRoomExists = async (roomCode: string): Promise<boolean> => {
+  if (roomModeOf(roomCode.toLowerCase()) === 'p2p') return (await fetchRoomInfo(roomCode))?.created === true;
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), CHECK_ROOM_EXISTS_TIMEOUT_MS);

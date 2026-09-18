@@ -1,8 +1,9 @@
 import { expect, test } from '@playwright/test';
 
+import { P2P_ROOM_CODE_PATTERN } from '~/modules/online/signaling/protocol';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
-import { initTestMode, mockSongs } from './helpers';
+import { initTestMode, mockSongs, useServerOnlineMode } from './helpers';
 import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
 import { fillOnlineRoom } from './steps/fill-online-room';
@@ -376,6 +377,35 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
     await expect(guestPages.onlineLobbyPage.participantHostTagElement(3)).toBeVisible();
     // the new host can select the song now
     await expect(guestPages.onlineLobbyPage.chooseSongButton).toBeVisible();
+  });
+
+  await guestPage.context().close();
+});
+
+test('Online mode: a singer enrolled in server mode still joins a P2P room by its code', async ({
+  page,
+  context,
+  browser,
+}) => {
+  const pages = initialise(page, context, browser);
+
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+  // Opened under the P2P flag, so the code leads with a digit — the mark that sends everybody here.
+  expect(roomCode).toMatch(P2P_ROOM_CODE_PATTERN);
+
+  const guestPage = await newPlayerPage(browser);
+  // The guest's own flag points at the other backend. It used to decide where the code was looked
+  // up, and the guest was told the room did not exist; the code decides now.
+  await useServerOnlineMode({ page: guestPage, context: guestPage.context() });
+  const guestPages = initialise(guestPage, guestPage.context(), browser);
+
+  await test.step("The guest types the code and lands in the host's room", async () => {
+    await guestPages.onlineSetupPage.goto();
+    await guestPages.onlineSetupPage.joinRoomByCode(roomCode);
+    await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
+    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
+    await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
+    await expect(guestPages.onlineLobbyPage.participantElement(0)).toContainText(hostName);
   });
 
   await guestPage.context().close();

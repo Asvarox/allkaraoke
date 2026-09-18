@@ -5,7 +5,7 @@ declare namespace globalThis {
   var isE2ETests: boolean | undefined;
   /** Set by `enableAutoMobileMode` in tests/helpers.ts — the e2e stand-in for the experiment. */
   var isE2EAutoMobileMode: boolean | undefined;
-  /** Opts a spec into the server-authoritative online mode; e2e runs P2P otherwise. */
+  /** Makes rooms a spec opens server-mode ones; e2e opens P2P rooms otherwise. Joining ignores it. */
   var isE2EOnlineServerMode: boolean | undefined;
 
   // See https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1615
