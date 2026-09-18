@@ -2642,6 +2642,596 @@ var LeaderboardBoard = class extends DurableObject {
 		}
 	}
 };
+/** Per-participant duplex pipe. The host publishes one of these per slot; the single client
+* holding the slot subscribes with `canReply: true`, which makes the same negotiated channel
+* bidirectional. Cloudflare grants reply access to exactly one subscriber per publisher channel
+* (a later grant revokes the earlier one), so a slot must never have two live claimants — the
+* directory Durable Object is what guarantees that. */
+var slotChannelName = (slot) => `slot-${slot}`;
+/** A P2P room code in full: a lead digit and four lowercase letters, five characters like every
+* room code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to
+* this, so a room can only ever exist in the backend its code points to. */
+var P2P_ROOM_CODE_PATTERN = /^[2-9][a-z]{4}$/;
+/** A room's directory row is wiped this long after the last call touching it. The host's keepalive
+* is what holds a live room open, so this only has to outlast the gap between keepalives. */
+var DIRECTORY_TTL_MS = 18e5;
+//#endregion
+//#region worker/online-directory-do.ts
+/**
+* The one piece of server state online mode keeps: who is in a room, which slot channel each of
+* them owns, and who is currently hosting.
+*
+* Deliberately tiny and deliberately cold. It is touched on join, leave, host promotion and a
+* five-minute keepalive — never on the message path, which runs host-to-client over the SFU. That
+* is the whole point of the rewrite: the old room object stayed resident for the length of every
+* song, this one wakes for a millisecond a handful of times per room.
+*
+* Trust model: a participant id proves nothing — it is published to the whole room in `room-state`,
+* so everybody who has ever been in a room knows everyone else's. What a membership is held by is
+* the secret minted here on its first join. Rejoining a membership or promoting it requires that
+* secret; removing somebody else requires being the current host. The room logic's ban list remains
+* the defence against a griefer who simply joins legitimately.
+*/
+var STATE_KEY = "directory";
+/**
+* Compares a membership secret against what a caller presented.
+*
+* A membership stored before secrets existed has none, and matches nothing — a room still running
+* across a deploy sends its singers back through a fresh join rather than leaving the old hole open
+* for the rest of its TTL. The comparison is length-checked first and then whole-string, so it does
+* not leak a matching prefix through an early return.
+*/
+var secretMatches = (stored, presented) => {
+	if (!stored || !presented || stored.length !== presented.length) return false;
+	let difference = 0;
+	for (let index = 0; index < stored.length; index++) difference |= stored.charCodeAt(index) ^ presented.charCodeAt(index);
+	return difference === 0;
+};
+var emptyState = (now) => ({
+	created: false,
+	bannedIds: [],
+	epoch: 0,
+	hostParticipantId: null,
+	hostSessionId: null,
+	members: [],
+	lastActivityAt: now
+});
+var OnlineDirectory = class OnlineDirectory extends DurableObject {
+	state;
+	constructor(ctx, env) {
+		super(ctx, env);
+		this.state = emptyState(Date.now());
+		ctx.blockConcurrencyWhile(async () => {
+			const stored = await ctx.storage.get(STATE_KEY);
+			if (stored) this.state = stored;
+		});
+	}
+	async persist() {
+		this.state.lastActivityAt = Date.now();
+		await this.ctx.storage.put(STATE_KEY, this.state);
+		await this.ctx.storage.setAlarm(this.state.lastActivityAt + DIRECTORY_TTL_MS);
+	}
+	freeSlot() {
+		const taken = new Set(this.state.members.map((member) => member.slot));
+		for (let slot = 0; slot < 6; slot++) if (!taken.has(slot)) return slot;
+		return null;
+	}
+	/** Host is whoever the directory last promoted, falling back to the earliest remaining member so
+	* a room whose host row was pruned still has one rather than going headless. */
+	electFallbackHost() {
+		if (this.state.members.some((member) => member.participantId === this.state.hostParticipantId)) return;
+		const next = this.state.members[0] ?? null;
+		this.state.hostParticipantId = next?.participantId ?? null;
+		this.state.hostSessionId = next?.sessionId ?? null;
+		if (next) this.state.epoch += 1;
+	}
+	info(dataPlane = "sfu") {
+		return {
+			created: this.state.created,
+			hostSessionId: this.state.hostSessionId,
+			epoch: this.state.epoch,
+			dataPlane
+		};
+	}
+	static HOST_TAG = "host";
+	static slotTag = (slot) => `slot:${slot}`;
+	/** Who a socket belongs to. The role tags are fixed when a socket is accepted, so after a
+	* promotion the outgoing host's socket still carries `host` — this is what tells the two apart. */
+	static participantTag = (participantId) => `participant:${participantId}`;
+	isCurrentHostSocket(socket) {
+		const tags = this.ctx.getTags(socket);
+		if (!tags.includes(OnlineDirectory.HOST_TAG)) return false;
+		return this.state.hostParticipantId !== null && tags.includes(OnlineDirectory.participantTag(this.state.hostParticipantId));
+	}
+	/** Whether anybody is currently holding the room's host socket, ignoring one that is on its way
+	* out — `webSocketClose` runs while its own socket is still listed. */
+	hasLiveHostSocket(except) {
+		return this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).some((socket) => socket !== except && this.isCurrentHostSocket(socket));
+	}
+	/**
+	* The relay's socket upgrade. This has to be `fetch` rather than an RPC method: a 101 response
+	* carrying a `webSocket` cannot cross the RPC boundary, so the signaling layer forwards the
+	* original request here instead.
+	*
+	* Role and slot are derived from directory membership, never from the request. Taking them from
+	* the query string would have let anyone holding a room code open a host-tagged socket and
+	* broadcast to the room as if they were running it, or read another singer's slot.
+	*/
+	async fetch(request) {
+		const url = new URL(request.url);
+		const participantId = url.searchParams.get("participantId") ?? "";
+		const sessionId = url.searchParams.get("sessionId") ?? "";
+		const auth = this.authorize(participantId, sessionId);
+		if (!auth.ok) return new Response("Not a member of this room", { status: 403 });
+		const pair = new WebSocketPair();
+		const roleTag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
+		this.ctx.acceptWebSocket(pair[1], [roleTag, OnlineDirectory.participantTag(participantId)]);
+		return new Response(null, {
+			status: 101,
+			webSocket: pair[0]
+		});
+	}
+	async webSocketMessage(socket, raw) {
+		if (typeof raw !== "string") return;
+		const tags = this.ctx.getTags(socket);
+		if (tags.includes(OnlineDirectory.HOST_TAG)) {
+			if (!this.isCurrentHostSocket(socket)) return;
+			let frame;
+			try {
+				frame = JSON.parse(raw);
+			} catch {
+				return;
+			}
+			const payload = JSON.stringify(frame.message);
+			(frame.kind === "broadcast" ? this.ctx.getWebSockets().filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG)) : this.ctx.getWebSockets(OnlineDirectory.slotTag(frame.slot))).forEach((target) => target.send(payload));
+			return;
+		}
+		const slotTag = tags.find((tag) => tag.startsWith("slot:"));
+		if (!slotTag) return;
+		let message;
+		try {
+			message = JSON.parse(raw);
+		} catch {
+			return;
+		}
+		const inbound = {
+			slot: Number(slotTag.slice(5)),
+			message
+		};
+		this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).filter((host) => this.isCurrentHostSocket(host)).forEach((host) => host.send(JSON.stringify(inbound)));
+	}
+	async webSocketClose(socket) {
+		const tags = this.ctx.getTags(socket);
+		if (tags.includes(OnlineDirectory.HOST_TAG)) {
+			if (this.hasLiveHostSocket(socket)) return;
+			const gone = JSON.stringify({ hostGone: true });
+			this.ctx.getWebSockets().filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG)).forEach((client) => client.send(gone));
+			return;
+		}
+		const slotTag = tags.find((tag) => tag.startsWith("slot:"));
+		if (!slotTag) return;
+		const closed = JSON.stringify({
+			slot: Number(slotTag.slice(5)),
+			closed: true
+		});
+		this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(closed));
+	}
+	/**
+	* What this session may open channels for. The signaling layer asks before forwarding any
+	* channel request to the SFU — membership here is the only thing standing between a room code
+	* and another singer's private slot.
+	*/
+	authorize(participantId, sessionId) {
+		const member = this.state.members.find((entry) => entry.participantId === participantId);
+		if (!member || member.sessionId !== sessionId || !this.state.hostSessionId) return { ok: false };
+		return {
+			ok: true,
+			isHost: this.state.hostParticipantId === participantId,
+			slot: member.slot,
+			hostSessionId: this.state.hostSessionId
+		};
+	}
+	async join(participantId, sessionId, create, secret) {
+		if ((this.state.bannedIds ?? []).includes(participantId)) return {
+			ok: false,
+			reason: "banned"
+		};
+		if (!this.state.created) {
+			if (!create) return {
+				ok: false,
+				reason: "not-found"
+			};
+			this.state.created = true;
+		}
+		const existing = this.state.members.find((member) => member.participantId === participantId);
+		if (existing) {
+			if (!secretMatches(existing.secret, secret)) return {
+				ok: false,
+				reason: "not-authorized"
+			};
+			existing.sessionId = sessionId;
+			if (this.state.hostParticipantId === participantId) {
+				this.state.hostSessionId = sessionId;
+				this.state.epoch += 1;
+			}
+		} else {
+			const slot = this.freeSlot();
+			if (slot === null) return {
+				ok: false,
+				reason: "room-full"
+			};
+			this.state.members.push({
+				participantId,
+				sessionId,
+				slot,
+				secret: crypto.randomUUID()
+			});
+		}
+		if (this.state.hostParticipantId === null) {
+			this.state.hostParticipantId = participantId;
+			this.state.hostSessionId = sessionId;
+			this.state.epoch += 1;
+		}
+		await this.persist();
+		const member = this.state.members.find((entry) => entry.participantId === participantId);
+		return {
+			ok: true,
+			isHost: this.state.hostParticipantId === participantId,
+			hostSessionId: this.state.hostSessionId,
+			epoch: this.state.epoch,
+			slot: member.slot,
+			secret: member.secret
+		};
+	}
+	/**
+	* Removes a participant, optionally banning them.
+	*
+	* `requestedBy` is the session asking. Anyone may release their own slot; only the current host
+	* may remove or ban somebody else — otherwise a room code plus a participant id would be enough
+	* to throw any singer out of any room.
+	*/
+	async leave(participantId, { ban = false, requestedBy } = {}) {
+		const requester = requestedBy ? this.authorize(requestedBy.participantId, requestedBy.sessionId) : { ok: false };
+		const isSelf = requestedBy?.participantId === participantId && requester.ok;
+		const isHost = requester.ok && requester.isHost;
+		if (!isSelf && !isHost) return;
+		if (ban && !isHost) return;
+		return this.removeMember(participantId, ban);
+	}
+	async removeMember(participantId, ban) {
+		const before = this.state.members.length;
+		this.state.members = this.state.members.filter((member) => member.participantId !== participantId);
+		if (ban && !(this.state.bannedIds ??= []).includes(participantId)) this.state.bannedIds.push(participantId);
+		else if (this.state.members.length === before) return;
+		this.electFallbackHost();
+		await this.persist();
+	}
+	/**
+	* A client that watched the host go quiet takes over. `fromEpoch` is a compare-and-swap: two
+	* clients noticing the same stall both call this, and only the first one to land wins. The loser
+	* gets the winner's epoch back and follows it instead of starting a second room.
+	*/
+	async promote(participantId, sessionId, fromEpoch, secret) {
+		const member = this.state.members.find((entry) => entry.participantId === participantId);
+		if (!member) return {
+			ok: false,
+			reason: "not-a-member",
+			epoch: this.state.epoch,
+			hostSessionId: this.state.hostSessionId
+		};
+		if (!secretMatches(member.secret, secret)) return {
+			ok: false,
+			reason: "not-authorized",
+			epoch: this.state.epoch,
+			hostSessionId: this.state.hostSessionId
+		};
+		if (fromEpoch !== this.state.epoch) return {
+			ok: false,
+			reason: "stale-epoch",
+			epoch: this.state.epoch,
+			hostSessionId: this.state.hostSessionId
+		};
+		member.sessionId = sessionId;
+		this.state.hostParticipantId = participantId;
+		this.state.hostSessionId = sessionId;
+		this.state.epoch += 1;
+		await this.persist();
+		return {
+			ok: true,
+			epoch: this.state.epoch
+		};
+	}
+	/** Pushes the TTL out. Called by the host every DIRECTORY_KEEPALIVE_MS — without it a room that
+	* outlives the TTL in one sitting would be wiped out from under its own players, and the next
+	* person to try the code would be told it does not exist. */
+	async keepalive() {
+		await this.persist();
+	}
+	async alarm() {
+		if (Date.now() - this.state.lastActivityAt < 18e5) {
+			await this.ctx.storage.setAlarm(this.state.lastActivityAt + DIRECTORY_TTL_MS);
+			return;
+		}
+		await this.ctx.storage.deleteAll();
+		this.state = emptyState(Date.now());
+	}
+};
+//#endregion
+//#region worker/online-signaling.ts
+var REALTIME_API_BASE = "https://rtc.live.cloudflare.com/v1/apps";
+var REALTIME_TURN_API_BASE = "https://rtc.live.cloudflare.com/v1/turn/keys";
+/** Cloudflare's public STUN, which takes no credentials — the reason online mode connects at all
+* on a checkout with nothing configured. Port 53 is there because some networks only let
+* DNS-looking traffic out. */
+var DEFAULT_STUN_URLS = ["stun:stun.cloudflare.com:3478", "stun:stun.cloudflare.com:53"];
+/** Lifetime of a minted TURN credential. Comfortably longer than a karaoke session, short enough
+* that a credential handed to a client is not useful forever. An allocation already in progress is
+* unaffected when it lapses; the next connection mints a fresh one. */
+var TURN_CREDENTIAL_TTL_SECONDS = 7200;
+/** Re-mint this long before expiry rather than handing out a credential about to lapse. */
+var TURN_REFRESH_MARGIN_MS = 6e5;
+/** Room codes are the only thing that reaches the directory as a Durable Object name, so they are
+* pinned to exactly what the game generates for a P2P room before anything is looked up. A code of
+* any other shape belongs to PartyKit; refusing it here is what keeps a room from ever existing in
+* both backends under one code, whatever an out-of-date client asks for. */
+var ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
+/**
+* The channel every session establishes its SCTP transport with. Cloudflare's establish endpoint
+* wants a channel alongside the SDP offer, but a browser does not know whether it is the host
+* until it has a session id to join the directory with — so everybody opens the same throwaway
+* local channel here and gets its real ones on the second call, once its role is known.
+*/
+var BOOTSTRAP_CHANNEL = "self";
+/**
+* Which origins may call this from a browser.
+*
+* The app and the Worker are the same origin everywhere that matters — production serves both, and
+* so does `vite dev` through the Cloudflare plugin — so the only cross-origin caller worth allowing
+* is a checkout pointed at another deployment with `VITE_APP_SIGNALING_URL`. Reflecting a localhost
+* origin covers that without handing every page on the internet a browser-side client for these
+* endpoints. It is not a security boundary on its own (nothing outside a browser honours CORS,
+* which is why the endpoints are also authorised and rate-limited) — it just stops the casual case.
+*/
+var isAllowedOrigin = (origin, requestUrl) => {
+	if (origin === new URL(requestUrl).origin) return true;
+	try {
+		const { hostname } = new URL(origin);
+		return hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]";
+	} catch {
+		return false;
+	}
+};
+var corsHeaders = (request) => {
+	const origin = request.headers.get("Origin");
+	if (!origin || !isAllowedOrigin(origin, request.url)) return {};
+	return {
+		"Access-Control-Allow-Origin": origin,
+		Vary: "Origin"
+	};
+};
+var json = (request, body, status = 200) => new Response(JSON.stringify(body), {
+	status,
+	headers: {
+		"Content-Type": "application/json",
+		...corsHeaders(request)
+	}
+});
+var badRequest = (request, message) => json(request, { error: message }, 400);
+/** Every SFU call goes through here so the app token never leaves the Worker. */
+var callRealtime = async ({ env, path, method = "POST", body }) => {
+	const response = await fetch(`${REALTIME_API_BASE}/${env.REALTIME_APP_ID}${path}`, {
+		method,
+		headers: {
+			Authorization: `Bearer ${env.REALTIME_APP_TOKEN}`,
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(body)
+	});
+	if (!response.ok) throw new Error(`Realtime API ${path} failed: ${response.status} ${await response.text()}`);
+	return await response.json();
+};
+/** Minted credentials, memoised per isolate so a room full of singers joining at once does not
+* mint one apiece. Keyed by TURN key id: rotating the key must not keep handing out credentials
+* minted with the old one. Not shared between isolates, which only costs a few extra mints. */
+var cachedTurn = /* @__PURE__ */ new Map();
+var splitUrls = (value) => (value ?? "").split(",").map((url) => url.trim()).filter(Boolean);
+var mintCloudflareTurn = async (env) => {
+	const keyId = env.REALTIME_TURN_KEY_ID;
+	const cached = cachedTurn.get(keyId);
+	if (cached && cached.expiresAt - TURN_REFRESH_MARGIN_MS > Date.now()) return cached.servers;
+	const response = await fetch(`${REALTIME_TURN_API_BASE}/${keyId}/credentials/generate-ice-servers`, {
+		method: "POST",
+		headers: {
+			Authorization: `Bearer ${env.REALTIME_TURN_API_TOKEN}`,
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify({ ttl: TURN_CREDENTIAL_TTL_SECONDS })
+	});
+	if (!response.ok) throw new Error(`TURN credential minting failed: ${response.status}`);
+	const { iceServers } = await response.json();
+	const servers = Array.isArray(iceServers) ? iceServers : [iceServers];
+	cachedTurn.set(keyId, {
+		servers,
+		expiresAt: Date.now() + TURN_CREDENTIAL_TTL_SECONDS * 1e3
+	});
+	return servers;
+};
+var handleIceServers = async (request, env) => {
+	const stun = { urls: splitUrls(env.ONLINE_STUN_URLS).length ? splitUrls(env.ONLINE_STUN_URLS) : DEFAULT_STUN_URLS };
+	if (env.REALTIME_TURN_KEY_ID && env.REALTIME_TURN_API_TOKEN) try {
+		return json(request, {
+			iceServers: await mintCloudflareTurn(env),
+			ttlSeconds: TURN_CREDENTIAL_TTL_SECONDS
+		});
+	} catch (error) {
+		console.error("Falling back to STUN only", error);
+		return json(request, { iceServers: [stun] });
+	}
+	const staticTurnUrls = splitUrls(env.ONLINE_TURN_URLS);
+	if (staticTurnUrls.length) return json(request, { iceServers: [stun, {
+		urls: staticTurnUrls,
+		...env.ONLINE_TURN_USERNAME ? { username: env.ONLINE_TURN_USERNAME } : {},
+		...env.ONLINE_TURN_CREDENTIAL ? { credential: env.ONLINE_TURN_CREDENTIAL } : {}
+	}] });
+	return json(request, { iceServers: [stun] });
+};
+var isSessionDescription = (value) => {
+	const candidate = value;
+	return typeof candidate?.sdp === "string" && (candidate.type === "offer" || candidate.type === "answer");
+};
+var getDirectory = (env, roomCode) => {
+	const namespace = env.ONLINE_DIRECTORY;
+	return namespace.get(namespace.idFromName(roomCode));
+};
+var handleCreateSession = async (request, env) => {
+	const body = await request.json().catch(() => null);
+	if (!isSessionDescription(body?.offer)) return badRequest(request, "offer required");
+	const created = await callRealtime({
+		env,
+		path: "/sessions/new",
+		body: {}
+	});
+	const established = await callRealtime({
+		env,
+		path: `/sessions/${created.sessionId}/datachannels/establish`,
+		body: {
+			dataChannel: {
+				location: "local",
+				dataChannelName: BOOTSTRAP_CHANNEL
+			},
+			sessionDescription: {
+				type: "offer",
+				sdp: body.offer.sdp
+			}
+		}
+	});
+	return json(request, {
+		sessionId: created.sessionId,
+		answer: established.sessionDescription
+	});
+};
+/**
+* Which channels a session may open, given what the directory says about it.
+*
+* The host publishes the broadcast and every slot; a member subscribes to the broadcast and to
+* exactly one slot — its own. Anything else is refused. This is the check that keeps a room code
+* from being enough to read another singer's slot: Cloudflare hands reply access to one subscriber
+* at a time, so claiming somebody else's slot would also cut off the rightful occupant.
+*/
+var everySlotChannel = Array.from({ length: 6 }, (_, slot) => slotChannelName(slot));
+var isChannelAllowed = (channel, auth) => {
+	if (auth.isHost) {
+		if (channel.publisherSessionId) return false;
+		return channel.name === "room" || everySlotChannel.includes(channel.name);
+	}
+	if (channel.publisherSessionId !== auth.hostSessionId) return false;
+	if (channel.name === "room") return !channel.canReply;
+	return channel.name === slotChannelName(auth.slot);
+};
+var handleCreateDataChannels = async (request, env) => {
+	const body = await request.json().catch(() => null);
+	if (!body?.sessionId || !Array.isArray(body.channels) || body.channels.length === 0) return badRequest(request, "sessionId and channels required");
+	if (!ROOM_CODE_PATTERN.test(body.roomCode ?? "") || !body.participantId) return badRequest(request, "roomCode and participantId required");
+	const auth = await getDirectory(env, body.roomCode).authorize(body.participantId, body.sessionId);
+	if (!auth.ok) return json(request, { error: "Not a member of this room" }, 403);
+	if (!body.channels.every((channel) => isChannelAllowed(channel, auth))) return json(request, { error: "Not allowed on this channel" }, 403);
+	return json(request, { channels: (await callRealtime({
+		env,
+		path: `/sessions/${body.sessionId}/datachannels/new`,
+		body: { dataChannels: body.channels.map((channel) => channel.publisherSessionId ? {
+			location: "remote",
+			sessionId: channel.publisherSessionId,
+			dataChannelName: channel.name,
+			...channel.canReply ? { canReply: true } : {}
+		} : {
+			location: "local",
+			dataChannelName: channel.name
+		}) }
+	})).dataChannels.map((channel) => ({
+		name: channel.dataChannelName,
+		id: channel.id
+	})) });
+};
+var handleRoom = async (request, env, roomCode, action, dataPlane) => {
+	const directory = getDirectory(env, roomCode);
+	if (action === "" && request.method === "GET") return json(request, await directory.info(dataPlane));
+	if (action === "relay") {
+		if (dataPlane !== "relay") return json(request, { error: "Relay is disabled" }, 404);
+		if (request.headers.get("Upgrade") !== "websocket") return json(request, { error: "Expected websocket" }, 426);
+		return directory.fetch(request);
+	}
+	if (request.method !== "POST") return json(request, { error: "Method not allowed" }, 405);
+	const body = await request.json().catch(() => null);
+	if (action === "join") {
+		const { participantId, sessionId, create, secret } = body ?? {};
+		if (!participantId || !sessionId) return badRequest(request, "participantId and sessionId required");
+		return json(request, await directory.join(participantId, sessionId, create === true, secret));
+	}
+	if (action === "leave") {
+		const { participantId, requestedBy, ban } = body ?? {};
+		if (!participantId) return badRequest(request, "participantId required");
+		if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest(request, "requestedBy required");
+		await directory.leave(participantId, {
+			ban: ban === true,
+			requestedBy
+		});
+		return json(request, { ok: true });
+	}
+	if (action === "promote") {
+		const { participantId, sessionId, fromEpoch, secret } = body ?? {};
+		if (!participantId || !sessionId || typeof fromEpoch !== "number") return badRequest(request, "participantId, sessionId and fromEpoch required");
+		return json(request, await directory.promote(participantId, sessionId, fromEpoch, secret));
+	}
+	if (action === "keepalive") {
+		await directory.keepalive();
+		return json(request, { ok: true });
+	}
+	return json(request, { error: "Not found" }, 404);
+};
+/**
+* Fails open when the binding is absent — it is not configured locally or under e2e, and neither
+* is a Realtime app, so there is nothing there to spend. A request with no `CF-Connecting-IP` is
+* not on the Cloudflare edge at all and is bucketed together under one key rather than waved
+* through individually.
+*/
+var withinRateLimit = async (request, env) => {
+	const limiter = env.ONLINE_SIGNALING_RATE_LIMITER;
+	if (!limiter) return true;
+	return (await limiter.limit({ key: request.headers.get("CF-Connecting-IP") ?? "unknown" })).success;
+};
+/** Routes everything under `/online/`. Returns null when the path is not ours. */
+var handleOnlineSignaling = async (request, env, pathname) => {
+	if (!pathname.startsWith("/online/")) return null;
+	if (request.method === "OPTIONS") return new Response(null, {
+		status: 204,
+		headers: {
+			...corsHeaders(request),
+			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+			"Access-Control-Allow-Headers": "Content-Type"
+		}
+	});
+	if (!env.ONLINE_DIRECTORY) return json(request, { error: "Online mode is not configured" }, 503);
+	const hasRealtimeCredentials = Boolean(env.REALTIME_APP_ID && env.REALTIME_APP_TOKEN);
+	try {
+		const rest = pathname.slice(8);
+		if (rest === "ice" && request.method === "GET") return await handleIceServers(request, env);
+		if (rest === "session" || rest === "datachannels") {
+			if (!hasRealtimeCredentials) return json(request, { error: "Realtime is not configured" }, 503);
+			if (request.method !== "POST") return json(request, { error: "Method not allowed" }, 405);
+			if (!await withinRateLimit(request, env)) return json(request, { error: "Too many requests" }, 429);
+			return rest === "session" ? await handleCreateSession(request, env) : await handleCreateDataChannels(request, env);
+		}
+		if (rest.startsWith("room/")) {
+			const [roomCode, action = ""] = rest.slice(5).split("/");
+			if (!ROOM_CODE_PATTERN.test(roomCode ?? "")) return badRequest(request, "invalid room code");
+			return await handleRoom(request, env, roomCode, action, hasRealtimeCredentials ? "sfu" : "relay");
+		}
+		return json(request, { error: "Not found" }, 404);
+	} catch (error) {
+		console.error("Online signaling failed", error);
+		return json(request, { error: "Signaling failed" }, 502);
+	}
+};
 //#endregion
 //#region worker/index.ts
 var createContext = (request, env, executionContext, params) => {
@@ -2660,8 +3250,10 @@ var callPagesHandler = (handler, request, env, executionContext, params = {}) =>
 };
 //#endregion
 //#region \0virtual:cloudflare/worker-entry
-var worker_entry_default = { fetch(request, env, executionContext) {
+var worker_entry_default = { async fetch(request, env, executionContext) {
 	const { pathname } = new URL(request.url);
+	const onlineResponse = await handleOnlineSignaling(request, env, pathname);
+	if (onlineResponse) return onlineResponse;
 	if (pathname === "/unverified-songs" || pathname === "/shared-songs") return callPagesHandler(onRequest$1, request, env, executionContext);
 	if (pathname === "/unverified-song" || pathname === "/shared-song") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/unverified-songs-admin" || pathname === "/shared-songs-admin") return callPagesHandler(onRequest, request, env, executionContext);
@@ -2675,6 +3267,6 @@ var worker_entry_default = { fetch(request, env, executionContext) {
 	return new Response("Not found", { status: 404 });
 } };
 //#endregion
-export { LeaderboardBoard, worker_entry_default as default };
+export { LeaderboardBoard, OnlineDirectory, worker_entry_default as default };
 
 //# sourceMappingURL=index.mjs.map
