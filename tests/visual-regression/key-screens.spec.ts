@@ -1,5 +1,6 @@
 import { expect } from '@playwright/test';
 
+import songStats from '../../src/routes/landing-page/song-stats.json';
 import { mockLeaderboard, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
@@ -10,6 +11,10 @@ import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 // it still does.
 visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
   await mockLeaderboard({ page, context });
+  // The recently added songs are labelled relative to now ("added 2 days ago", "236 songs added in
+  // the last 30 days"), so against the real clock the same page would read differently every day.
+  // Pinned to when the stats file was generated, it only changes when the songs do.
+  await page.clock.setFixedTime(songStats.generatedAt);
 
   await page.goto('/?e2e-test');
   await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();

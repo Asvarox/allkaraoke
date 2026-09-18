@@ -1,0 +1,245 @@
+#ARTIST:PARTYNEXTDOOR
+#TITLE:PERSIAN RUGS
+#CREATOR:drewand (AI-assisted first pass)
+#BPM:110
+#YEAR:2020
+#PREVIEWSTART:15
+#VIDEO:v=4NYGgJlY3Uw
+#GENRE:R&B
+#LANGUAGE:English
+#GAP:14454,454545454546
+#ALLKARAOKE_ID:partynextdoor-persian-rugs
+#ALLKARAOKE_SID:6363
+#ALLKARAOKE_LASTUPDATE:2026-09-16T20:38:16.420Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:180
+#VERSION:1.0.0
+#MP3:PARTYNEXTDOOR - PERSIAN RUGS (Official Audio) - PARTYNEXTDOOR (128k).mp3
+#END:179808
+: 7 7 -4 Persian 
+: 15 9 -4 rugs, 
+: 33 1 4 but 
+: 35 1 4 she's 
+: 37 1 -4 from 
+: 39 7 -3 Nicaragua
+- 46
+: 47 3 -4 Thought 
+: 51 1 4 you 
+: 53 2 5 was 
+: 56 6 -4 Persian 
+: 63 8 -4 love
+- 71 77
+- 77
+: 84 1 4 Are 
+: 85 1 6 we 
+: 87 12 1 turning 
+: 106 1 -4 up?
+- 107
+: 107 1 -4 Or 
+: 111 1 -3 are 
+: 113 1 -4 we 
+: 115 3 -4 wasting 
+: 119 4 -4 time?
+- 123
+: 127 2 6 Girl, 
+: 129 1 4 don't 
+: 131 2 1 waste 
+: 133 1 -1 my 
+: 137 4 6 time
+- 141
+: 143 1 6 You 
+: 145 2 6 know 
+: 147 2 4 I'm 
+: 151 7 4 PARTY
+- 158 160
+- 160
+: 167 1 -4 I 
+: 169 3 -1 don't 
+: 175 1 3 just 
+: 177 3 1 wanna 
+: 181 6 -1 chill 
+: 194 2 -1 with 
+: 197 2 -4 you, 
+: 207 2 -3 oh, 
+: 215 10 -4 no
+- 225 226
+- 226
+: 233 1 4 I 
+: 235 2 1 wanna 
+: 238 5 4 turn 
+: 245 2 6 up 
+: 257 1 1 on
+- 258
+: 258 1 1 I 
+: 259 9 4 wanna 
+: 270 3 4 turn 
+: 274 2 4 you 
+: 289 1 -4 on
+- 290
+: 297 1 4 I 
+: 298 3 6 wanna 
+: 302 3 4 lay 
+: 306 3 -3 with 
+: 310 2 -3 you
+- 312
+: 312 5 -4 That's 
+: 317 1 -4 the 
+: 319 1 -4 least 
+: 323 2 -4 I'ma 
+: 326 3 -4 do, 
+: 345 3 -4 ooh
+- 348 351
+- 351
+: 358 1 -1 Fuck, 
+: 361 1 6 I 
+: 362 1 6 look 
+: 363 2 6 like? 
+: 367 1 -1 I 
+: 368 1 1 don't 
+: 370 3 -1 wanna 
+: 374 8 -4 chill
+- 382 383
+- 383
+: 390 1 6 I'm 
+: 392 4 -1 kissing 
+: 398 1 -3 ya, 
+: 400 1 -4 I 
+: 401 1 -4 want 
+: 402 1 -4 you 
+: 404 1 -1 to 
+: 406 8 -4 feel
+- 414
+: 414 6 -4 Can 
+: 421 1 1 you 
+: 422 1 4 feel 
+: 423 1 6 it 
+: 424 1 6 babe?
+- 425
+: 425 1 6 Can 
+: 427 3 6 you 
+: 432 4 6 feel 
+: 438 1 -4 me 
+: 442 3 -4 baby?
+- 445
+: 451 1 -1 Can 
+: 452 1 1 you 
+: 454 1 4 feel 
+: 455 1 -1 it 
+: 456 1 -1 babe?
+- 457
+: 457 1 -1 Can 
+: 458 2 1 you 
+: 461 2 -4 feel 
+: 464 2 6 me 
+: 471 5 4 babe?
+- 476 494
+- 494
+: 501 2 6 Kissing 
+: 504 1 -4 you 
+: 510 1 -4 there
+- 511 525
+- 525
+: 532 1 -2 I'm 
+: 533 2 6 fucking 
+: 535 1 -4 you 
+: 537 12 -4 right
+- 549 558
+- 558
+: 565 2 4 Loving 
+: 567 1 -4 you 
+: 569 7 -4 there
+- 576 590
+- 590
+: 597 2 -1 Loving 
+: 599 1 -4 you 
+: 604 8 -4 right
+- 612 622
+- 622
+: 629 1 -4 Fuck 
+: 630 1 -4 with 
+: 632 1 -4 a 
+: 633 5 -4 pro
+- 638 650
+- 650
+: 657 1 4 Come 
+: 659 1 6 baby, 
+: 661 1 -1 fuck 
+: 662 2 6 with 
+: 664 1 6 a 
+: 665 11 -4 pro
+- 676 683
+- 683
+: 690 1 4 When 
+: 691 1 4 you 
+: 693 1 4 gon' 
+: 694 1 6 let 
+: 695 1 4 me 
+: 696 4 -4 know?
+- 700 715
+- 715
+: 722 1 3 I 
+: 723 1 4 be 
+: 725 3 6 kissing 
+: 729 14 -4 you 
+: 744 1 6 slow
+- 745 750
+- 750
+: 757 2 4 Tongue 
+: 760 3 6 down, 
+: 764 2 -4 down, 
+: 767 3 -1 down, 
+: 770 2 -4 down
+- 772 778
+- 778
+: 785 2 -4 I'll 
+: 787 1 -4 be 
+: 788 3 4 down, 
+: 792 3 6 down, 
+: 796 2 -4 down, 
+: 799 3 -1 down, 
+: 802 2 -4 down
+- 804 811
+- 811
+: 818 1 -4 Making 
+: 820 2 4 sure 
+: 822 2 6 you're 
+: 825 1 6 mine 
+: 826 1 4 and 
+: 827 1 4 I 
+: 828 1 4 make 
+: 829 1 4 you 
+: 830 3 -1 feel 
+: 834 4 -4 right
+- 838 842
+- 842
+: 849 1 -4 The 
+: 850 1 -4 way 
+: 851 1 -4 I'm 
+: 852 2 4 talking 
+: 855 2 6 girl, 
+: 857 1 6 I'ma 
+: 860 1 6 fuck 
+: 861 1 6 you 
+: 862 2 -1 so 
+: 866 1 -4 nice
+- 867
+: 867 7 -4 Ooh, 
+: 878 13 4 no-no-no
+- 891
+: 892 1 4 I 
+: 893 3 4 make 
+: 897 3 -4 love 
+: 900 2 6 to 
+: 903 1 6 you
+- 904 919
+- 919
+: 926 1 4 I 
+: 927 2 4 wanna 
+: 930 2 -4 make 
+: 932 1 6 love 
+: 934 1 6 to 
+: 939 1 6 you
+E

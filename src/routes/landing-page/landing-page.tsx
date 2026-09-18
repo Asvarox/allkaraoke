@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
-import Typewriter from 'typewriter-effect';
 
 import { ButtonLink } from '~/modules/elements/akui/button';
 import { Chip } from '~/modules/elements/akui/chip';
@@ -18,6 +16,7 @@ import { MenuViewTransition } from '~/routes/welcome/menu-view-transitions';
 import { twx } from '~/utils/twx';
 
 import LogoIcon from './logo-icon';
+import RecentlyAddedSongs from './recently-added-songs';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import songStats from './song-stats.json';
@@ -26,6 +25,8 @@ const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 })
 const songCount = formatter.format(songStats.songs);
 const languageCount = songStats.languages.length;
 
+// What the stat tiles under the card used to say, now that the songs themselves have taken that
+// row: everything there that was a claim about the game rather than about the catalogue.
 const bullets = [
   <>
     Use either your SingStar/regular microphone or <strong>connect phones to sing</strong>.
@@ -34,22 +35,21 @@ const bullets = [
     <strong>{songCount} songs</strong> across {languageCount} languages, updated weekly.
   </>,
   <>
+    <strong>1–4 players</strong> — solo, duets or a full party.
+  </>,
+  <>
     Compete with friends and with players <strong>across the globe</strong>.
   </>,
-];
-
-const tiles = [
-  { value: `${songCount} songs`, label: `${languageCount} languages, growing weekly` },
-  { value: 'Phones as mics', label: 'No need to download an app' },
-  { value: '1–4 players', label: 'Solo, duets or a full party' },
-  { value: '100% free', label: 'Open source, check out GitHub' },
+  <>
+    <strong>100% free</strong> and open source.
+  </>,
 ];
 
 /**
  * The landing page built from the main menu's own vocabulary — the same `Box` surfaces, the same
  * `LeaderboardPanel` rail, the same footer — so arriving at the menu reads as the next screen of one
  * app rather than a different product. The pitch keeps its place at the top; below it the entry
- * point, the online-mode teaser and the stats sit in cards, with the live global board alongside.
+ * point, the online-mode teaser and the newest songs sit in cards, with the live global board alongside.
  *
  * The call to action swaps by viewport rather than by copy: on a desktop the visitor is the one
  * hosting, so "Enter the game" is the primary and joining is a text link under it; on a phone they
@@ -69,16 +69,6 @@ function LandingPage() {
     },
     [nextPage],
   );
-
-  // The typewriter is the last thing to start moving, after the background and the screenshots have
-  // settled.
-  const [showTypewriter, setShowTypewriter] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowTypewriter(true);
-    }, 4_000);
-    return () => clearTimeout(timeout);
-  }, []);
 
   return (
     <>
@@ -108,7 +98,7 @@ function LandingPage() {
                 <Typography className="text-md text-justify">
                   <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation`s{' '}
                   <strong>SingStar</strong>. Sing along to your favorite songs and compete with your friends, all
-                  through the browser! Updated almost weekly with new songs and features.
+                  through the browser!
                 </Typography>
 
                 <ul className="text-md flex flex-col gap-1.5">
@@ -121,24 +111,6 @@ function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <Typography className="text-md hidden lg:block">
-                  Artists such as{' '}
-                  <strong className="text-active [&_.Typewriter]:inline">
-                    {showTypewriter ? (
-                      <Typewriter
-                        options={{
-                          strings: songStats.artists,
-                          autoStart: true,
-                          loop: true,
-                          delay: 100,
-                        }}
-                      />
-                    ) : (
-                      songStats.artists.at(-1)
-                    )}
-                  </strong>
-                </Typography>
-
                 {/* The shots, when they are not in a column of their own beside the text: side by
                     side under the copy and above the button. That is every width where the text
                     column would otherwise be squeezed — under `lg`, where the card is one column
@@ -205,17 +177,9 @@ function LandingPage() {
               </SmoothLink>
             </Box>
 
-            {/* Matched by position to the menu's second tile row, which is what these morph into */}
-            <div className="grid shrink-0 grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4 xl:gap-6">
-              {tiles.map((tile, index) => (
-                <Box
-                  key={tile.value}
-                  className={`${MenuViewTransition.TILES[index]} items-start justify-start gap-1 p-3 sm:p-4`}>
-                  <Typography className="text-md leading-tight font-bold uppercase">{tile.value}</Typography>
-                  <Typography className="text-sm leading-snug">{tile.label}</Typography>
-                </Box>
-              ))}
-            </div>
+            {/* Dropped below `lg` for the same reason the board is: it is neither the pitch nor a
+                way into a game, and four song tiles side by side need the width to stay readable. */}
+            <RecentlyAddedSongs className="hidden lg:flex" />
           </div>
 
           {/* Dropped on a phone rather than stacked: it is the one block here that is neither the

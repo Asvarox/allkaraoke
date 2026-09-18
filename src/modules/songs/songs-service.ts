@@ -10,6 +10,23 @@ import storage from '~/modules/utils/storage';
 
 import { getSongPreview } from './utils';
 
+// Building the per-song preview (isBuiltIn/isNew/isDeleted) is a plain per-item transform, so unlike
+// JSON.parse or Array.sort (opaque, atomic engine calls that can't be paused), it can be sliced: yield
+// back to the browser every CHUNK_SIZE items so a long list doesn't block a single animation frame.
+const CHUNK_SIZE = 1000;
+const yieldToBrowser = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
+
+async function mapInChunks<T, R>(items: T[], fn: (item: T) => R): Promise<R[]> {
+  const result: R[] = new Array(items.length);
+  for (let i = 0; i < items.length; i++) {
+    result[i] = fn(items[i]);
+    if (i > 0 && i % CHUNK_SIZE === 0) {
+      await yieldToBrowser();
+    }
+  }
+  return result;
+}
+
 let store: Promise<LocalForage | typeof storage.memory> | null = null;
 
 async function getStorage() {
@@ -33,9 +50,13 @@ async function getStorage() {
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
 class SongsService {
-  private defaultIndex: SongPreview[] | null = null;
+  private defaultIndexIds: Set<string> | null = null;
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
+  // Bumped at the start of every reloadIndex() call and checked when its fetch resolves, so a
+  // slow-to-resolve call (e.g. the menu's warmup) can't clobber a newer one that already applied —
+  // otherwise it could overwrite a just-stored song with a stale pre-store snapshot.
+  private reloadSeq = 0;
   public store = async (song: Song, reloadIndex = true) => {
     await (
       await getStorage()
@@ -63,7 +84,7 @@ class SongsService {
    * @param songId
    */
   public isBuiltIn = (songId: string) => {
-    return this.defaultIndex?.some((song) => song.id === songId) ?? false;
+    return this.defaultIndexIds?.has(songId) ?? false;
   };
 
   public get = async (songId: string): Promise<Song> => {
@@ -98,12 +119,23 @@ class SongsService {
   public generateSongFile = (song: Pick<Song | SongPreview, 'artist' | 'title'> & { id?: string }) => getSongId(song);
 
   public reloadIndex = async () => {
+    const seq = ++this.reloadSeq;
     const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([
       fetch(`/songs/index.json`).then((response) => response.json() as Promise<SongPreview[]>),
       this.getLocalIndex(),
       this.getDeletedSongsList(),
     ]);
-    this.defaultIndex = defaultIndex;
+
+    // A newer reloadIndex() call was issued while this one was still in flight — applying this stale
+    // result could undo whatever the newer call already did. Exception: if nothing has ever been
+    // applied yet, apply it anyway so callers never see a permanently-null index; the newer call
+    // (which is still in flight) will correct it once it lands.
+    if (seq !== this.reloadSeq && this.finalIndex !== null) return;
+
+    // A Set lookup, not `defaultIndex.some(...)` per song below: with ~6000 built-in songs, doing that
+    // scan once per song in the merged list was an O(n^2) pass and the main cost of this method.
+    const defaultIndexIds = new Set(defaultIndex.map((song) => song.id));
+    this.defaultIndexIds = defaultIndexIds;
     const lastVisitDate = dayjs(lastVisit);
 
     // Filter out local songs that were updated to default index
@@ -120,21 +152,29 @@ class SongsService {
       }
     });
 
-    this.indexWithDeletedSongs = [
+    const merged = [
       ...storageIndexWithUpdatedSongs,
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
-    ].map((song) => ({
+    ];
+
+    const indexWithDeletedSongs = await mapInChunks(merged, (song) => ({
       ...song,
-      isBuiltIn: this.isBuiltIn(song.id),
+      isBuiltIn: defaultIndexIds.has(song.id),
       isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
       isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
     }));
 
-    this.indexWithDeletedSongs.sort((a, b) =>
+    // Re-checked here too: the chunked map above yields repeatedly, widening the window in which a
+    // newer reloadIndex() call could have been issued (and possibly already applied) while this one
+    // was still working through its chunks.
+    if (seq !== this.reloadSeq && this.finalIndex !== null) return;
+
+    indexWithDeletedSongs.sort((a, b) =>
       `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()),
     );
 
-    this.finalIndex = this.indexWithDeletedSongs.filter((song) => !song.isDeleted);
+    this.indexWithDeletedSongs = indexWithDeletedSongs;
+    this.finalIndex = indexWithDeletedSongs.filter((song) => !song.isDeleted);
   };
 
   public deleteSong = async (songId: string) => {
