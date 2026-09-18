@@ -45,7 +45,7 @@ function MenuTile({ label, hint, displayLabel, variant = 'secondary', className,
           data-hint
           className={cn(
             'w-full truncate font-normal tracking-widest normal-case max-lg:hidden',
-            primary ? 'text-sm' : 'text-xs',
+            primary ? 'text-md' : 'text-sm',
           )}>
           {hint}
         </span>

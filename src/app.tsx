@@ -24,7 +24,6 @@ import Welcome from '~/routes/welcome/welcome';
 
 import Convert from './routes/convert/convert';
 import Edit from './routes/edit/edit';
-import Jukebox from './routes/jukebox/jukebox';
 import SelectInput from './routes/select-input/select-input';
 
 const LazySongList = lazy(() =>
@@ -71,7 +70,6 @@ function App() {
                 <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
                 <Route path={routePaths.MENU} component={Welcome} />
                 <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
-                <Route path={routePaths.JUKEBOX} component={Jukebox} />
                 <Route
                   path={routePaths.HISTORY}
                   component={() => (

@@ -50,6 +50,8 @@
     "react-refresh/only-export-components": [
       "error",
       {
+        "extraHOCs": ["twx"],
+        "allowCompoundComponents": true,
         "allowConstantExport": true
       }
     ],

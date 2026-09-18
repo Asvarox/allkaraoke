@@ -93,7 +93,7 @@ function LandingPage() {
           <div className="flex flex-col gap-3 lg:gap-4 xl:gap-6">
             <Box
               className={`${MenuViewTransition.SING_A_SONG} flex-1 items-stretch justify-start gap-4 p-4 lg:flex-row lg:gap-6 lg:p-6`}>
-              <div className="flex min-w-0 flex-1 flex-col gap-8">
+              <div className="flex min-w-0 flex-1 flex-col gap-6">
                 <Menu.Header>Free karaoke party game</Menu.Header>
                 <Typography className="text-md text-justify">
                   <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation`s{' '}

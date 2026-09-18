@@ -15,7 +15,6 @@
     "!src/**/*.d.ts"
   ],
   "ignore": [
-    "src/modules/elements/layout-with-background-emotion.tsx",
     "src/modules/game-engine/input/mic-strategies/yin.ts",
     "src/modules/remote-mic/network/client/transport/peer-js-client.ts",
     "src/modules/remote-mic/network/server/transport/peer-js-server.ts",
