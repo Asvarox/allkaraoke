@@ -1759,6 +1759,33 @@
     "local": false
   },
   {
+    "id": "a-ha-the-sun-always-shines-on-tv",
+    "title": "The Sun Always Shines On T.V.",
+    "artist": "a-ha",
+    "video": "a3ir9HC9vYg",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.5,
+    "gap": 15604.082840236686,
+    "year": "1985",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-09-18T02:31:54.862Z",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "jockel1974",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6370,
+    "tracksCount": 1,
+    "search": "ahathesunalwaysshinesontv",
+    "local": false
+  },
+  {
     "id": "a-perfect-circle-judith",
     "title": "Judith",
     "artist": "A Perfect Circle",
@@ -37828,7 +37855,7 @@
     "gap": 13845.444015444016,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-17T02:44:50.771Z",
+    "lastUpdate": "2026-09-16T20:37:40.729Z",
     "realBpm": 130,
     "volume": 1,
     "author": "Fenyesyes",
@@ -45957,7 +45984,7 @@
     "gap": 13519.01490355588,
     "year": "2017",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-17T02:44:50.962Z",
+    "lastUpdate": "2026-09-16T20:37:53.453Z",
     "genre": "Punk Rock",
     "realBpm": 156,
     "volume": 1,
@@ -53155,7 +53182,7 @@
     "gap": 1493.157894736842,
     "year": "2025",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-17T02:44:51.345Z",
+    "lastUpdate": "2026-09-16T20:40:43.047Z",
     "genre": "Pop",
     "realBpm": 95,
     "volume": 1,
@@ -73036,6 +73063,33 @@
     "local": false
   },
   {
+    "id": "hairspray-movie-i-can-hear-the-bells",
+    "title": "I Can Hear The Bells",
+    "artist": "Hairspray (Movie)",
+    "video": "ZbdmiykoJm8",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 4400,
+    "year": "2007",
+    "lastUpdate": "2026-09-18T02:31:57.532Z",
+    "genre": "Soundtrack",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "REL",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6372,
+    "tracksCount": 1,
+    "search": "hairspraymovieicanhearthebells",
+    "local": false
+  },
+  {
     "id": "hairspray-movie-nicest-kids-in-town",
     "title": "Nicest Kids in Town",
     "artist": "Hairspray (Movie)",
@@ -74518,7 +74572,7 @@
     "gap": 14596.741164241164,
     "year": "1987",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-17T02:44:50.011Z",
+    "lastUpdate": "2026-09-16T20:36:43.266Z",
     "genre": "Metal",
     "realBpm": 154,
     "volume": 1,
@@ -92975,6 +93029,35 @@
     "local": false
   },
   {
+    "id": "killing-joke-love-like-blood",
+    "title": "Love Like Blood",
+    "artist": "Killing Joke",
+    "video": "TnpwuRlXbhk",
+    "language": [
+      "English"
+    ],
+    "bpm": 374.42,
+    "gap": 33928.450937449925,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-18T02:31:54.864Z",
+    "genre": "New Wave",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Gollum",
+    "sourceUrl": "Killing Joke",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6371,
+    "tracksCount": 1,
+    "search": "killingjokelovelikeblood",
+    "local": false
+  },
+  {
     "id": "killswitch-engage-my-curse",
     "title": "My Curse",
     "artist": "Killswitch Engage",
@@ -95591,6 +95674,34 @@
     "shortId": 2425,
     "tracksCount": 1,
     "search": "kygoxwhitneyhoustonhigherlove",
+    "local": false
+  },
+  {
+    "id": "kyle-alessandro-lighter",
+    "title": "Lighter",
+    "artist": "Kyle Alessandro",
+    "video": "pUjWzQ671MQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.51,
+    "gap": 5933.931379737554,
+    "year": "2025",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-09-18T02:31:54.860Z",
+    "edition": "ESC 2025",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "Rata-Fy",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6369,
+    "tracksCount": 1,
+    "search": "kylealessandrolighter",
     "local": false
   },
   {
@@ -103005,6 +103116,39 @@
     "shortId": 2591,
     "tracksCount": 1,
     "search": "linkinparklost",
+    "local": false
+  },
+  {
+    "id": "linkin-park-lying-from-you",
+    "title": "Lying From You",
+    "artist": "Linkin Park",
+    "video": "_c3XfcyQ45w",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 22045.625,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-18T02:32:03.462Z",
+    "genre": "Nu Metal",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 175,
+    "tracks": [
+      {
+        "name": "Mike",
+        "start": 21
+      },
+      {
+        "name": "Chester",
+        "start": 365
+      }
+    ],
+    "shortId": 6375,
+    "tracksCount": 2,
+    "search": "linkinparklyingfromyou",
     "local": false
   },
   {
@@ -115791,7 +115935,7 @@
     "gap": 39521.69494317246,
     "year": "1984",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-17T02:44:50.009Z",
+    "lastUpdate": "2026-09-16T20:36:24.875Z",
     "realBpm": 151,
     "volume": 1,
     "author": "IC",
@@ -119459,7 +119603,7 @@
     "gap": 14215.763688760806,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-17T02:44:51.146Z",
+    "lastUpdate": "2026-09-16T20:38:45.468Z",
     "genre": "Folk",
     "realBpm": 73,
     "volume": 1,
@@ -119781,7 +119925,7 @@
     "gap": 19900.190439916205,
     "year": "2010",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-17T02:44:51.154Z",
+    "lastUpdate": "2026-09-16T20:40:28.340Z",
     "realBpm": 106,
     "volume": 1,
     "author": "snake84",
@@ -122950,7 +123094,7 @@
     "bpm": 360,
     "gap": 5020,
     "year": "2013",
-    "lastUpdate": "2026-09-11T06:15:07.426Z",
+    "lastUpdate": "2026-09-17T21:00:11.410Z",
     "genre": "J-Pop",
     "realBpm": 167,
     "volume": 1,
@@ -126337,7 +126481,7 @@
     "gap": 6995.5248618784535,
     "year": "2001",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-17T02:44:51.149Z",
+    "lastUpdate": "2026-09-16T20:39:01.180Z",
     "genre": "Metal",
     "realBpm": 135,
     "volume": 1,
@@ -126412,6 +126556,35 @@
     "shortId": 6105,
     "tracksCount": 1,
     "search": "nightwishslayingthedreamer",
+    "local": false
+  },
+  {
+    "id": "nightwish-wanderlust",
+    "title": "Wanderlust",
+    "artist": "Nightwish",
+    "video": "hIKgj6vHFx8",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.1,
+    "gap": 20442.01084850833,
+    "year": "2000",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-18T02:31:54.853Z",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=350",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6368,
+    "tracksCount": 1,
+    "search": "nightwishwanderlust",
     "local": false
   },
   {
@@ -128665,7 +128838,7 @@
     "gap": 30400,
     "year": "1997",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-17T02:44:50.767Z",
+    "lastUpdate": "2026-09-16T20:37:22.831Z",
     "genre": "Britpop",
     "realBpm": 87,
     "volume": 1,
@@ -133143,7 +133316,7 @@
     "gap": 14454.454545454546,
     "year": "2020",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-09-17T02:44:50.963Z",
+    "lastUpdate": "2026-09-16T20:38:16.420Z",
     "genre": "R&B",
     "realBpm": 110,
     "previewStart": 15,
@@ -140084,6 +140257,33 @@
     "local": false
   },
   {
+    "id": "rammstein-haifisch",
+    "title": "Haifisch",
+    "artist": "Rammstein",
+    "video": "GP0_MNj8f1Q",
+    "language": [
+      "German"
+    ],
+    "bpm": 270,
+    "gap": 37260,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-18T02:32:00.068Z",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "King090",
+    "duration": 273,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6373,
+    "tracksCount": 1,
+    "search": "rammsteinhaifisch",
+    "local": false
+  },
+  {
     "id": "rammstein-keine-lust",
     "title": "Keine Lust",
     "artist": "Rammstein",
@@ -142004,7 +142204,7 @@
     "gap": 18631.774193548386,
     "year": "2005",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-17T02:44:50.001Z",
+    "lastUpdate": "2026-09-16T20:35:54.568Z",
     "genre": "Pop",
     "realBpm": 130,
     "volume": 1,
@@ -150451,6 +150651,35 @@
     "shortId": 3858,
     "tracksCount": 1,
     "search": "selenanomequedamas",
+    "local": false
+  },
+  {
+    "id": "semisonic-closing-time",
+    "title": "Closing Time",
+    "artist": "Semisonic",
+    "video": "xGytDsqkQY8",
+    "language": [
+      "English"
+    ],
+    "bpm": 368.2,
+    "gap": 16531.531776208583,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-18T02:32:00.070Z",
+    "genre": "Rock",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "IC",
+    "duration": 233,
+    "tracks": [
+      {
+        "name": "Closing Time - Semisonic",
+        "start": 25
+      }
+    ],
+    "shortId": 6374,
+    "tracksCount": 1,
+    "search": "semisonicclosingtime",
     "local": false
   },
   {
