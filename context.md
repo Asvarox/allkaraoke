@@ -64,7 +64,6 @@ Input is managed through two cooperating singletons:
 - **local song** — Song stored in the user's own browser.
 - **setlist** — Curated named list of songs (by `shortId`) that can be shared via link. Can be editable (users may add songs during selection) or locked.
 - **excluded languages** — Per-user language filter; songs in excluded languages are hidden from the song selection screen.
-- **jukebox** — Non-scoring song playback mode.
 
 ## Remote Microphone and Networking
 
@@ -88,7 +87,6 @@ Input is managed through two cooperating singletons:
 - **Edit Setlists** — Create and manage named setlists.
 - **Exclude Languages** — Configure per-user language filter.
 - **Settings** — Global settings including remote mic options and calibration.
-- **Jukebox** — Playback-only song browsing.
 
 ## Deprecated / Legacy
 

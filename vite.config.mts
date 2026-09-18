@@ -102,12 +102,12 @@ export default defineConfig({
 
   test: {
     globals: true,
-    environment: 'happy-dom',
     setupFiles: 'src/setup-tests.ts',
     projects: [
       {
         extends: true,
         test: {
+          environment: 'happy-dom',
           name: 'app',
           include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
           exclude: [...configDefaults.exclude, 'functions/**/*.test.ts', 'worker/**/*.test.ts', '.claude/**/*'],
