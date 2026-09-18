@@ -28,17 +28,23 @@ function Welcome() {
   useBackground(true);
 
   // Warms the song index cache while the user is still looking at the menu, so the song list
-  // route reads it from memory instead of waiting on the fetch itself. Deferred to idle time: the
-  // parse/sort of the full index is a ~250ms blocking task, and running it during mount stutters
-  // the menu's own paint and view transition.
+  // route reads it from memory instead of waiting on the fetch itself. Delayed 1s and deferred to
+  // idle time: the parse/sort of the full index is a ~250ms blocking task, and running it right at
+  // mount stutters the menu's own paint and view transition.
   useEffect(() => {
     const idleCallback = window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1));
     const cancelIdleCallback = window.cancelIdleCallback ?? clearTimeout;
-    const handle = idleCallback(() => {
-      // Fire-and-forget: nothing here needs the result, just don't leave a rejection unhandled.
-      void SongDao.getIndex().catch(console.error);
-    });
-    return () => cancelIdleCallback(handle);
+    let handle: number | undefined;
+    const timeout = setTimeout(() => {
+      handle = idleCallback(() => {
+        // Fire-and-forget: nothing here needs the result, just don't leave a rejection unhandled.
+        void SongDao.getIndex().catch(console.error);
+      });
+    }, 1000);
+    return () => {
+      clearTimeout(timeout);
+      if (handle !== undefined) cancelIdleCallback(handle);
+    };
   }, []);
 
   const navigate = useSmoothNavigate();

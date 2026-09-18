@@ -179,12 +179,14 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await test.step('After game is ended, properly players score values should be displayed', async () => {
     await pages.gamePage.exitSong();
     await pages.rateUnfinishedSongPage.skipSongRating();
+    // The results view counts the score up from 0 on a reveal animation, so the displayed value
+    // must not be asserted against until the animation is skipped/finished.
+    await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player1.number, currentP1score!);
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player2.number, currentP2score!);
   });
 
   await test.step('Check if the already updated name is still save in High Scores', async () => {
-    await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
     await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);
