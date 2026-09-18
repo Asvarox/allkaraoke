@@ -1,5 +1,13 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
+import { REVEAL_DURATION } from '~/routes/game/singing/post-game/views/results/score-utils';
+
+/** The results screen plays the whole song back before a score reaches its total, and the reveal
+ * eases out, so for its last second a score sits a fraction short of its final value. An assertion
+ * on the final value has to outlast the whole reveal plus however long the screen took to mount —
+ * the default expect timeout is shorter than the reveal itself. */
+const FINAL_SCORE_TIMEOUT = REVEAL_DURATION + 7_000;
+
 export class PostGameResultsPagePO {
   constructor(
     private page: Page,
@@ -36,7 +44,9 @@ export class PostGameResultsPagePO {
   }
 
   public async expectPlayerScoreValueToBe(playerNumber: number, expectedValue: string) {
-    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedValue);
+    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedValue, {
+      timeout: FINAL_SCORE_TIMEOUT,
+    });
   }
 
   public get playersCoopScoreElement() {

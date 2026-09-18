@@ -53,6 +53,9 @@ function OnlineRoom({ roomCode }: Props) {
     // Only the session that explicitly opened this room may create it — joining a
     // non-existing code gets rejected with 'not-found' instead of creating a room
     const create = storage.session.getItem(ONLINE_CREATED_ROOM_KEY) === roomCode;
+    // No mode here: the code carries it (see `roomModeOf`). Reading the flag instead is what used to
+    // tear a room down whenever PostHog's answer arrived late, and open a second one in the other
+    // backend under the same code.
     OnlineClient.connect(roomCode, name, { create });
     return () => {
       OnlineClient.disconnect();

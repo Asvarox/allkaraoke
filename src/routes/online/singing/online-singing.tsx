@@ -8,7 +8,7 @@ import useBlockScroll from '~/modules/hooks/use-block-scroll';
 import useFullscreen from '~/modules/hooks/use-fullscreen';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
-import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
+import { useLiveOnlineLeader } from '~/modules/online/client/live-leaderboard';
 import { trackOnlineDriftSeek, trackOnlineSongStarted } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
@@ -63,14 +63,9 @@ function OnlineSinging({ roomState, song }: Props) {
 
   // The medal next to the score belongs to whoever leads the ROOM. This client only sings (and
   // scores) for itself, so the local game's own derivation would hand every singer a medal — the
-  // room's leaderboard is the only place the other scores exist. Null on a tie, as locally.
-  const leaderboard = useOnlineLeaderboard();
-  const leadingPlayerNumber = useMemo(() => {
-    if (!leaderboard.length) return null;
-    const top = leaderboard.reduce((best, entry) => (entry.score > best.score ? entry : best));
-    const tied = leaderboard.some((entry) => entry.participantId !== top.participantId && entry.score === top.score);
-    return tied ? null : top.playerNumber;
-  }, [leaderboard]);
+  // room's leaderboard is the only place the other scores exist. Read from the same live board the
+  // overlay shows, so the medal and the top row never disagree.
+  const leadingPlayerNumber = useLiveOnlineLeader();
 
   const singSetup = useMemo<SingSetup>(
     () => ({

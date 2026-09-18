@@ -5,7 +5,7 @@ import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
 import useKeyboardNav, { KeyboardNavContext, useRegister } from '~/modules/hooks/use-keyboard-nav';
-import { useOnlineLeaderboard } from '~/modules/online/client/hooks';
+import { useLiveOnlineLeaderboard } from '~/modules/online/client/live-leaderboard';
 import OnlineClient from '~/modules/online/client/online-client';
 import { formatScore } from '~/modules/online/format-score';
 import { OnlineParticipant, OnlinePauseState } from '~/modules/online/protocol/types';
@@ -42,7 +42,8 @@ function PauseButton({ name, onClick, isDefault = false, children, ...props }: P
 }
 
 function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, participants }: Props) {
-  const leaderboard = useOnlineLeaderboard();
+  // Live, like the leaderboard this sits over — the two show the same scores side by side.
+  const leaderboard = useLiveOnlineLeaderboard();
   const selfId = OnlineClient.getParticipantId();
 
   // The confirmations opened from here (end game, kicking a singer) pause this on their own.
