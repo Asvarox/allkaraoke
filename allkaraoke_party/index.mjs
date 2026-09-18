@@ -410,7 +410,7 @@ var onRequest = async ({ request, env }) => {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/msgpackr@2.0.4/node_modules/msgpackr/unpack.js
+//#region node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/unpack.js
 var decoder;
 try {
 	decoder = new TextDecoder();
@@ -782,11 +782,7 @@ function read() {
 				return readMap(value);
 			default:
 				if (token >= 224) return token - 256;
-				if (token === void 0) {
-					let error = /* @__PURE__ */ new Error("Unexpected end of MessagePack data");
-					error.incomplete = true;
-					throw error;
-				}
+				if (token === void 0) throw endOfMessagePackError();
 				throw new Error("Unknown MessagePack token " + token);
 		}
 	}
@@ -855,28 +851,40 @@ function readStringJS(length) {
 		const byte1 = src[position$1++];
 		if ((byte1 & 128) === 0) units.push(byte1);
 		else if ((byte1 & 224) === 192) {
-			const byte2 = src[position$1++] & 63;
-			const codePoint = (byte1 & 31) << 6 | byte2;
-			if (codePoint < 128) units.push(65533);
-			else units.push(codePoint);
+			if (byte1 < 194 || position$1 >= end || (src[position$1] & 192) !== 128) units.push(65533);
+			else {
+				const byte2 = src[position$1++] & 63;
+				units.push((byte1 & 31) << 6 | byte2);
+			}
 		} else if ((byte1 & 240) === 224) {
-			const byte2 = src[position$1++] & 63;
-			const byte3 = src[position$1++] & 63;
-			const codePoint = (byte1 & 31) << 12 | byte2 << 6 | byte3;
-			if (codePoint < 2048 || codePoint >= 55296 && codePoint <= 57343) units.push(65533);
-			else units.push(codePoint);
+			const byte2 = position$1 < end ? src[position$1] : 0;
+			if (position$1 >= end || (byte2 & 192) !== 128 || byte1 === 224 && byte2 < 160 || byte1 === 237 && byte2 >= 160) units.push(65533);
+			else {
+				position$1++;
+				if (position$1 >= end || (src[position$1] & 192) !== 128) units.push(65533);
+				else {
+					const byte3 = src[position$1++] & 63;
+					units.push((byte1 & 31) << 12 | (byte2 & 63) << 6 | byte3);
+				}
+			}
 		} else if ((byte1 & 248) === 240) {
-			const byte2 = src[position$1++] & 63;
-			const byte3 = src[position$1++] & 63;
-			const byte4 = src[position$1++] & 63;
-			let unit = (byte1 & 7) << 18 | byte2 << 12 | byte3 << 6 | byte4;
-			if (unit < 65536 || unit > 1114111) units.push(65533);
-			else if (unit > 65535) {
-				unit -= 65536;
-				units.push(unit >>> 10 & 1023 | 55296);
-				unit = 56320 | unit & 1023;
-				units.push(unit);
-			} else units.push(unit);
+			const byte2 = position$1 < end ? src[position$1] : 0;
+			if (byte1 > 244 || position$1 >= end || (byte2 & 192) !== 128 || byte1 === 240 && byte2 < 144 || byte1 === 244 && byte2 >= 144) units.push(65533);
+			else {
+				position$1++;
+				if (position$1 >= end || (src[position$1] & 192) !== 128) units.push(65533);
+				else {
+					const byte3 = src[position$1++] & 63;
+					if (position$1 >= end || (src[position$1] & 192) !== 128) units.push(65533);
+					else {
+						const byte4 = src[position$1++] & 63;
+						let unit = (byte1 & 7) << 18 | (byte2 & 63) << 12 | byte3 << 6 | byte4;
+						unit -= 65536;
+						units.push(unit >>> 10 & 1023 | 55296);
+						units.push(56320 | unit & 1023);
+					}
+				}
+			}
 		} else units.push(65533);
 		if (units.length >= 4096) {
 			result += fromCharCode.apply(String, units);
@@ -886,13 +894,20 @@ function readStringJS(length) {
 	if (units.length > 0) result += fromCharCode.apply(String, units);
 	return result;
 }
+function endOfMessagePackError() {
+	let error = /* @__PURE__ */ new Error("Unexpected end of MessagePack data");
+	error.incomplete = true;
+	return error;
+}
 function readArray(length) {
+	if (length > srcEnd - position$1) throw endOfMessagePackError();
 	let array = new Array(length);
 	for (let i = 0; i < length; i++) array[i] = read();
 	if (currentUnpackr.freezeData) return Object.freeze(array);
 	return array;
 }
 function readMap(length) {
+	if (length > (srcEnd - position$1) / 2) throw endOfMessagePackError();
 	if (currentUnpackr.mapsAsObjects) {
 		let object = {};
 		for (let i = 0; i < length; i++) {
@@ -1350,7 +1365,7 @@ var FLOAT32_OPTIONS = {
 new Uint8Array((/* @__PURE__ */ new Float32Array(1)).buffer, 0, 4);
 Unpackr.SUPPORTS_STRUCT_HOOKS = true;
 //#endregion
-//#region node_modules/.pnpm/msgpackr@2.0.4/node_modules/msgpackr/pack.js
+//#region node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/pack.js
 var textEncoder;
 try {
 	textEncoder = new TextEncoder();
@@ -1451,7 +1466,7 @@ var Packr = class extends Unpackr {
 			try {
 				if (packr._writeStruct && value && typeof value === "object") {
 					if (value.constructor === Object) writeStruct(value);
-					else if (value.constructor !== Map && !Array.isArray(value) && !extensionClasses.some((extClass) => value instanceof extClass)) writeStruct(value.toJSON ? value.toJSON() : value);
+					else if (value.constructor !== Map && !Array.isArray(value) && !extensionClasses.some((extClass) => value instanceof extClass)) writeStruct(packr.useToJSON !== false && value.toJSON ? value.toJSON() : value);
 					else pack(value);
 				} else pack(value);
 				let lastBundle = bundledStrings;
@@ -1759,7 +1774,7 @@ var Packr = class extends Unpackr {
 						}
 						if (Array.isArray(value)) packArray(value);
 						else {
-							if (value.toJSON) {
+							if (packr.useToJSON !== false && value.toJSON) {
 								const json = value.toJSON();
 								if (json !== value) return pack(json);
 							}
