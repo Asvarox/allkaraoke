@@ -151,29 +151,20 @@ function Welcome() {
                   name="select-input"
                   label="Setup Microphones"
                   hint="Configure audio"
-                  className={MenuViewTransition.TILES[0]}
                   onClick={() => setMicSetup(true)}
                 />
                 <MenuTile
                   name="manage-songs"
                   label="Manage Songs"
                   hint="Select languages, add new songs"
-                  className={MenuViewTransition.TILES[1]}
                   onClick={() => navigate('manage-songs/')}
                 />
-                <MenuTile
-                  name="history"
-                  label="History"
-                  hint="Past scores"
-                  className={MenuViewTransition.TILES[2]}
-                  onClick={() => navigate('history/')}
-                />
+                <MenuTile name="history" label="History" hint="Past scores" onClick={() => navigate('history/')} />
                 <MenuTile
                   name="settings"
                   label="Settings"
                   hint="Graphics, additional options"
                   remoteIcon="settings"
-                  className={MenuViewTransition.TILES[3]}
                   onClick={() => navigate('settings/')}
                 />
               </div>
