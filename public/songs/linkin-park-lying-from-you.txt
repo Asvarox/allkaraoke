@@ -1,0 +1,638 @@
+#ARTIST:Linkin Park
+#TITLE:Lying From You
+#CREATOR:DoubleDee
+#BPM:320
+#YEAR:2003
+#VIDEO:v=_c3XfcyQ45w
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:22045,625
+#ALLKARAOKE_ID:linkin-park-lying-from-you
+#ALLKARAOKE_SID:6375
+#ALLKARAOKE_LASTUPDATE:2026-09-18T02:32:03.462Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:175
+#P1:Mike
+#P2:Chester
+#MP3:Linkin Park - Lying From You [DUET].mp3
+#COVER:Linkin Park - Lying From You [DUET] [CO].jpg
+#BACKGROUND:Linkin Park - Lying From You [DUET] [BG].jpg
+G 21 3 -7 When 
+G 29 3 -5 I 
+G 37 2 -7 pre
+G 41 3 -4 tend 
+R 53 2 -8 eve
+R 57 2 -7 ry
+R 61 2 -5 thing 
+R 65 2 -8 is 
+R 69 2 -5 what 
+R 73 2 -8 I 
+R 77 2 -4 want 
+R 81 2 -7 it 
+R 85 2 -7 to 
+R 89 2 -6 be
+- 91
+R 97 2 -6 I 
+R 101 2 -6 look 
+R 105 2 -8 e
+R 109 2 -7 xact
+R 113 2 -6 ly 
+R 117 2 -6 like 
+R 121 2 -7 what 
+R 125 2 -6 you 
+R 129 2 -7 had 
+R 133 2 -6 al
+R 137 2 -7 ways 
+R 141 2 -4 wan
+R 145 2 -7 ted 
+R 149 2 -8 to 
+R 153 4 -5 see
+- 157
+R 161 2 -8 When 
+R 165 2 -7 I 
+R 169 2 -8 pre
+R 173 2 -4 tend 
+R 177 2 -7 I 
+R 181 2 -7 can 
+R 185 2 -8 for
+R 189 2 -4 get 
+R 193 2 -7 a
+R 197 2 -7 bout 
+R 201 1 -7 the 
+R 204 2 -5 cri
+R 207 1 -7 mi
+R 209 2 -7 nal 
+R 213 2 -7 I 
+R 217 4 -7 am
+- 221
+R 229 2 -4 Stea
+R 233 2 -6 ling 
+R 237 2 -4 se
+R 241 2 -5 cond 
+R 245 2 -6 af
+R 249 2 -6 ter 
+R 253 2 -4 se
+R 257 2 -7 cond 
+R 261 2 -6 just 
+R 265 2 -7 ’cause 
+R 269 2 -5 I 
+R 273 2 -6 know 
+R 277 2 -7 I 
+R 282 3 -4 can
+- 285
+G 293 2 -7 But 
+R 305 2 -9 I 
+R 309 2 -6 can’t 
+R 313 2 -6 pre
+R 317 2 -2 tend 
+R 321 2 -5 this 
+R 325 2 -6 is 
+R 329 2 -7 the 
+R 333 2 -6 way 
+R 337 2 -6 i
+R 341 2 -9 t’ll 
+R 346 3 -4 stay
+- 349
+R 353 2 -5 I’m 
+R 357 3 -4 just
+- 360 412
+- 412
+R 433 2 -9 I 
+R 437 2 -6 can’t 
+R 441 2 -6 pre
+R 445 2 -5 tend 
+R 449 2 -5 I’m 
+R 453 2 -3 who 
+R 457 2 -4 you 
+R 461 2 -4 want 
+R 465 2 -5 me 
+R 469 2 -6 to 
+R 473 4 -4 be
+- 477
+R 481 2 -4 So 
+R 485 4 -4 I’m
+- 489 560
+- 560
+G 581 3 -2 No, 
+G 593 2 -2 no 
+G 597 2 -2 tur
+G 601 2 -2 ning 
+G 605 3 -2 back 
+G 613 2 1 now
+- 615 688
+- 688
+R 709 3 -2 No, 
+R 721 2 -2 no 
+R 725 2 -2 tur
+R 729 2 -2 ning 
+R 733 4 1 back 
+R 741 3 1 now
+- 744 828
+- 828
+R 849 2 1 No 
+R 853 3 -1 tur
+R 857 2 -2 ning 
+R 861 3 1 back 
+R 869 3 1 now
+- 872 944
+- 944
+R 965 4 -2 No, 
+R 977 2 -2 no 
+R 981 2 -2 tur
+R 985 2 -2 ning 
+R 989 2 1 back 
+R 997 2 1 now
+- 999 1072
+- 1072
+R 1093 2 -9 I 
+R 1097 2 -7 re
+R 1101 3 -6 mem
+R 1105 2 -9 ber 
+R 1109 2 -6 what 
+R 1113 2 -9 they 
+R 1117 2 -6 taught 
+R 1121 2 -9 to 
+R 1125 4 -9 me
+- 1129
+R 1137 2 -11 Re
+R 1141 2 -7 mem
+R 1145 2 -9 ber 
+R 1149 2 -6 con
+R 1153 2 -9 de
+R 1157 2 -6 scen
+R 1161 2 -9 ding 
+R 1165 2 -6 talk 
+R 1169 2 -7 of 
+R 1173 2 -6 who 
+R 1177 3 -7 I 
+R 1181 2 -6 ought 
+R 1185 2 -9 to 
+R 1189 4 -6 be
+- 1193
+R 1201 2 -7 Re
+R 1205 2 -6 mem
+R 1209 2 -9 ber 
+R 1213 2 -6 lis
+R 1217 2 -7 te
+R 1221 2 -7 ning 
+R 1225 2 -7 to 
+R 1229 2 -6 all 
+R 1233 2 -7 of 
+R 1237 2 -6 that 
+R 1241 2 -9 and 
+R 1245 3 -6 this 
+R 1249 2 -7 a
+R 1253 4 -6 gain
+- 1257
+R 1265 2 -4 So 
+R 1269 2 -6 I 
+R 1273 2 -6 pre
+R 1277 2 -4 ten
+R 1281 2 -6 ded 
+R 1285 2 -4 up 
+R 1289 2 -6 a 
+R 1293 2 -4 per
+R 1297 2 -6 son 
+R 1301 2 -6 who 
+R 1305 2 -9 was 
+R 1309 3 -2 fit
+R 1313 2 -4 ting 
+R 1317 1 -6 in
+- 1318
+R 1321 2 -9 And 
+R 1333 2 -7 now 
+R 1337 2 -6 you 
+R 1341 2 -4 think 
+R 1345 2 -6 this 
+R 1349 2 -4 per
+R 1353 2 -6 son 
+R 1357 2 -6 real
+R 1361 2 -6 ly 
+R 1365 2 -7 is 
+R 1369 3 -4 me
+- 1372
+R 1377 2 -4 And 
+R 1381 3 -4 I’m
+- 1384 1436
+- 1436
+R 1457 1 -9 But 
+R 1459 1 -9 the 
+R 1461 3 -4 more 
+R 1465 2 -5 I 
+R 1469 2 -1 push, 
+R 1475 1 -2 the 
+R 1477 2 -2 more 
+R 1481 3 -4 I’m 
+R 1485 2 -2 pul
+R 1489 2 -3 ling 
+R 1493 2 -3 a
+R 1497 4 -2 way
+- 1501
+R 1505 3 -2 ’Cause 
+R 1509 3 -1 I’m
+- 1512 1584
+- 1584
+R 1605 3 -2 No, 
+R 1617 2 -2 no 
+R 1621 2 -2 tur
+R 1625 2 -2 ning 
+R 1629 3 -2 back 
+R 1637 2 1 now
+- 1639 1712
+- 1712
+R 1733 3 -2 No, 
+R 1745 2 -2 no 
+R 1749 2 -2 tur
+R 1753 2 -2 ning 
+R 1757 4 1 back 
+R 1765 3 1 now
+- 1768 1852
+- 1852
+R 1873 2 -2 No 
+R 1877 3 -2 tur
+R 1881 2 -2 ning 
+R 1885 3 1 back 
+R 1893 3 1 now
+- 1896 1968
+- 1968
+R 1989 4 -2 No, 
+R 2001 2 -2 no 
+R 2005 2 -2 tur
+R 2009 2 -2 ning 
+R 2013 2 1 back 
+R 2021 2 1 now
+- 2023 2148
+- 2148
+R 2169 2 -2 This 
+R 2173 2 -4 is
+R 2177 2 -4 n’t 
+R 2181 2 -2 what 
+R 2185 2 -4 I 
+R 2189 2 -2 wan
+R 2193 2 -3 ted 
+R 2197 2 -4 to 
+R 2201 3 -4 be
+- 2204
+R 2208 3 -2 I 
+R 2213 2 -3 ne
+R 2217 2 -4 ver 
+R 2221 2 -2 thought 
+R 2225 2 -4 that 
+R 2229 2 -3 what 
+R 2233 2 -4 I 
+R 2237 2 -2 said 
+R 2241 2 -4 would 
+R 2245 2 -2 have 
+R 2249 2 -4 you 
+R 2253 2 -2 run
+R 2257 2 -4 ning 
+R 2261 2 -4 from 
+R 2265 4 -2 me
+- 2269
+G 2276 4 -4 Like 
+G 2284 6 -2 this
+- 2290
+G 2297 2 -2 This 
+G 2301 2 -2 is
+G 2305 2 -4 n’t 
+R 2309 2 -3 what 
+R 2313 2 -4 I 
+R 2317 2 -2 wan
+R 2321 2 -4 ted 
+R 2325 2 -4 to 
+R 2329 3 -4 be
+- 2332
+R 2337 2 -2 I 
+R 2341 2 -4 ne
+R 2345 2 -4 ver 
+R 2349 3 -2 thought 
+R 2353 2 -4 that 
+R 2357 2 -2 what 
+R 2361 2 -4 I 
+R 2365 2 -2 said 
+R 2369 2 -4 would 
+R 2373 2 -4 have 
+R 2377 2 -4 you 
+R 2381 2 -2 run
+R 2385 2 -4 ning 
+R 2389 2 -4 from 
+R 2393 3 -2 me
+- 2396
+R 2405 3 -2 Like 
+R 2413 4 -2 this
+- 2417
+R 2425 2 -2 This 
+R 2429 2 -4 is
+R 2433 2 -4 n’t 
+R 2437 2 -2 what 
+R 2441 2 -2 I 
+R 2445 2 -2 wan
+R 2449 2 -4 ted 
+R 2453 2 -4 to 
+R 2457 3 -4 be
+- 2460
+R 2465 2 -1 I 
+R 2469 2 -2 ne
+R 2473 2 -3 ver 
+R 2477 2 -2 thought 
+R 2481 2 -3 that 
+R 2485 2 -2 what 
+R 2489 2 -3 I 
+R 2493 2 -2 said 
+R 2497 2 -3 would 
+R 2501 2 -2 have 
+R 2505 2 -3 you 
+R 2509 2 -2 run
+R 2513 2 -3 ning 
+R 2517 2 -3 from 
+R 2521 3 -3 me
+- 2524
+R 2532 4 -2 Like 
+R 2540 4 -3 this
+- 2544
+R 2553 2 0 This 
+R 2557 2 -2 is
+R 2561 2 -3 n’t 
+R 2565 2 -3 what 
+R 2569 2 -2 I 
+R 2573 2 -2 wan
+R 2577 2 -3 ted 
+R 2581 2 -3 to 
+R 2585 3 -3 be
+- 2588
+R 2593 2 2 I 
+R 2597 2 -1 ne
+R 2601 2 -2 ver 
+R 2605 2 -1 thought 
+R 2609 2 -2 that 
+R 2613 2 -1 what 
+R 2617 2 -2 I 
+R 2621 2 -1 said 
+R 2625 2 -2 would 
+R 2629 2 -1 have 
+R 2633 2 -2 you 
+R 2637 2 -1 run
+R 2641 2 -3 ning 
+R 2645 2 -3 from 
+R 2649 3 -3 me
+- 2652
+G 2660 4 -3 Like 
+G 2668 3 -2 this
+- 2671 2684
+- 2684
+R 2705 3 -2 No 
+R 2709 2 -2 tur
+R 2713 2 -3 ning 
+R 2717 2 -2 back 
+R 2725 2 0 now
+- 2727 2800
+- 2800
+R 2821 3 -2 No, 
+R 2833 2 -2 no 
+R 2837 2 -2 tur
+R 2841 2 -2 ning 
+R 2845 4 1 back 
+R 2853 3 1 now
+- 2856 2940
+- 2940
+R 2961 2 -2 No 
+R 2965 3 -2 tur
+R 2969 2 -2 ning 
+R 2973 3 1 back 
+R 2981 3 1 now
+- 2984 3056
+- 3056
+R 3077 4 -2 No, 
+R 3089 2 -2 no 
+R 3093 2 -2 tur
+R 3097 2 -2 ning 
+R 3101 2 1 back 
+R 3109 2 1 now
+- 0 344
+- 344
+: 365 7 -2 Try
+: 373 12 -1 ing 
+: 388 5 -4 to 
+: 396 12 -2 bend 
+: 412 5 -2 the 
+: 420 12 -2 truth
+- 432 472
+- 472
+: 493 6 -2 Ly
+: 501 10 -1 ing 
+: 515 6 -4 my 
+: 524 12 -2 way 
+: 540 9 -2 from
+- 549
+* 557 7 8 You
+* 565 39 10 ~
+- 604
+: 617 2 10 I 
+: 621 2 10 want 
+: 625 2 11 to 
+: 629 4 10 be 
+: 637 3 10 pushed 
+: 645 2 8 a
+: 649 3 10 side
+: 653 4 3 ~, 
+: 661 6 3 so 
+: 669 5 6 let 
+: 676 7 3 me 
+: 685 7 8 go
+: 693 38 10 ~
+- 731
+: 748 2 10 Let 
+: 752 2 11 me 
+: 757 6 10 take 
+: 764 5 10 back 
+: 772 3 10 my 
+: 777 8 10 life,
+- 785
+: 789 4 3 I’d 
+: 796 5 6 ra
+: 805 3 3 ther 
+: 813 8 10 be 
+: 829 6 8 all 
+: 837 2 10 a
+: 841 17 10 lone
+: 859 2 3 ~
+- 861
+: 877 3 10 A
+: 881 3 11 ny
+: 885 5 10 where 
+: 893 5 10 on 
+: 901 2 8 my 
+: 905 3 10 own
+: 909 3 3 ~ 
+: 917 5 3 ’cause 
+: 925 5 6 I 
+: 933 5 3 can 
+: 941 7 8 see
+: 949 34 10 ~
+- 983
+: 1001 2 10 The 
+: 1005 2 10 ve
+: 1009 2 11 ry 
+: 1013 4 10 worst 
+: 1021 6 10 part 
+: 1029 2 10 of 
+: 1033 12 10 you 
+: 1057 7 3 is 
+: 1069 10 3 me
+- 1079 1368
+- 1368
+: 1389 7 -2 Try
+: 1397 12 -1 ing 
+: 1412 5 -4 to 
+: 1420 12 -2 bend 
+: 1436 5 -2 the 
+: 1444 12 -2 truth
+- 1456 1496
+- 1496
+: 1517 6 -2 Ly
+: 1525 10 -1 ing 
+: 1539 6 -4 my 
+: 1549 12 -2 way 
+: 1565 8 -2 from
+- 1573
+: 1581 7 8 You
+: 1589 37 10 ~
+- 1626
+: 1641 2 10 I 
+: 1645 2 10 want 
+: 1649 2 11 to 
+: 1653 4 10 be 
+: 1661 3 10 pushed 
+: 1669 2 8 a
+: 1673 3 10 side
+: 1677 4 3 ~, 
+: 1685 6 3 so 
+: 1693 5 6 let 
+: 1700 7 3 me 
+: 1709 7 8 go
+: 1717 36 10 ~
+- 1753
+: 1773 2 10 Let 
+: 1777 2 11 me 
+: 1781 6 10 take 
+: 1788 5 10 back 
+: 1796 3 10 my 
+: 1801 8 10 life,
+- 1809
+: 1813 4 3 I’d 
+: 1821 5 6 ra
+: 1829 3 3 ther 
+: 1837 8 10 be 
+: 1853 6 8 all 
+: 1861 2 10 a
+: 1865 19 10 lone
+: 1885 2 3 ~
+- 1887
+: 1901 3 10 A
+: 1905 3 11 ny
+: 1909 5 10 where 
+: 1917 5 10 on 
+: 1925 2 8 my 
+: 1929 3 10 own
+: 1933 3 3 ~ 
+: 1941 5 3 ’cause 
+: 1949 5 6 I 
+: 1957 5 3 can 
+: 1965 7 8 see
+: 1973 32 10 ~
+- 2005
+: 2025 2 10 The 
+: 2029 2 10 ve
+: 2033 2 11 ry 
+: 2037 4 10 worst 
+: 2045 6 10 part 
+: 2053 2 10 of 
+: 2057 12 10 you
+- 2069
+: 2089 2 10 The 
+: 2093 2 10 ve
+: 2097 2 11 ry 
+: 2101 4 10 worst 
+: 2109 6 10 part 
+: 2117 2 10 of 
+: 2121 12 10 you
+- 2133
+: 2145 7 15 Is 
+* 2156 68 15 me
+- 2224 2384
+- 2384
+: 2405 3 10 Like 
+: 2413 33 10 this
+- 2446 2511
+- 2511
+: 2532 3 10 Like 
+: 2540 32 10 this
+- 2572 2662
+- 2662
+: 2683 38 10 You
+- 2721
+: 2729 2 10 I 
+: 2733 2 10 want 
+: 2737 2 11 to 
+: 2741 4 10 be 
+: 2749 3 10 pushed 
+: 2757 2 8 a
+: 2761 3 10 side
+: 2765 4 3 ~, 
+: 2773 6 3 so 
+: 2781 5 6 let 
+: 2788 7 3 me 
+: 2797 7 8 go
+: 2805 38 10 ~
+- 2843
+: 2861 2 10 Let 
+: 2865 2 11 me 
+: 2869 6 10 take 
+: 2876 5 10 back 
+: 2884 3 10 my 
+: 2889 8 10 life,
+- 2897
+: 2901 4 3 I’d 
+: 2909 5 6 ra
+: 2917 3 3 ther 
+: 2925 8 10 be 
+: 2941 6 8 all 
+: 2949 2 10 a
+: 2953 17 10 lone
+: 2971 2 3 ~
+- 2973
+: 2989 3 10 A
+: 2993 3 11 ny
+: 2997 5 10 where 
+: 3005 5 10 on 
+: 3013 2 8 my 
+: 3017 3 10 own
+: 3021 3 3 ~ 
+: 3029 5 3 ’cause 
+: 3037 5 6 I 
+: 3045 5 3 can 
+: 3053 7 8 see
+: 3061 32 10 ~
+- 3093
+: 3113 2 10 The 
+: 3117 2 10 ve
+: 3121 2 11 ry 
+: 3125 4 10 worst 
+: 3133 6 10 part 
+: 3141 2 10 of 
+: 3145 10 10 you
+- 3155 3156
+- 3156
+: 3177 2 10 The 
+: 3181 2 10 ve
+: 3185 2 11 ry 
+: 3189 4 10 worst 
+: 3197 6 10 part 
+: 3205 2 10 of 
+: 3209 10 10 you
+- 3219
+: 3233 6 3 Is 
+: 3244 11 3 me
+E
