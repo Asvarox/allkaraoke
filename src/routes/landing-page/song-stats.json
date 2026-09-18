@@ -29,16 +29,16 @@
     "ABBA",
     "Foo Fighters",
     "Bruno Mars",
+    "Ed Sheeran",
     "Lana Del Rey",
+    "Metallica",
+    "Nightwish",
     "Westlife",
     "Adele",
     "Demi Lovato",
-    "Ed Sheeran",
     "Katy Perry",
     "Kelly Clarkson",
-    "Metallica",
     "Miley Cyrus",
-    "Nightwish",
     "Avril Lavigne",
     "Backstreet Boys",
     "Beyoncé",
@@ -76,6 +76,7 @@
     "Gwen Stefani",
     "Jonas Brothers",
     "Kool & The Gang",
+    "Oasis",
     "Owl City",
     "Rod Stewart",
     "Sabaton",
@@ -89,7 +90,6 @@
     "Guns N’ Roses",
     "KoRn",
     "Melanie Martinez",
-    "Oasis",
     "Pink Floyd",
     "Serj Tankian",
     "Tenacious D",
@@ -190,5 +190,330 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6355
+  "songs": 6366,
+  "generatedAt": "2026-09-18T06:26:46.943Z",
+  "additionsPerDay": {
+    "2026-09-17": 11,
+    "2026-09-15": 23,
+    "2026-09-13": 9,
+    "2026-09-12": 9,
+    "2026-09-11": 14,
+    "2026-09-10": 4,
+    "2026-09-09": 12,
+    "2026-09-08": 13,
+    "2026-09-07": 3,
+    "2026-09-06": 19,
+    "2026-09-05": 6,
+    "2026-08-31": 19,
+    "2026-08-29": 4,
+    "2026-08-28": 11,
+    "2026-08-27": 22,
+    "2026-08-26": 2,
+    "2026-08-25": 10,
+    "2026-08-24": 15,
+    "2026-08-23": 30,
+    "2026-08-15": 10,
+    "2026-08-13": 2,
+    "2026-08-12": 5,
+    "2026-08-11": 5,
+    "2026-08-10": 21,
+    "2026-08-09": 17,
+    "2026-08-08": 12,
+    "2026-08-07": 1,
+    "2026-08-05": 3,
+    "2026-07-29": 2,
+    "2026-07-26": 7,
+    "2026-07-22": 10,
+    "2026-07-21": 16
+  },
+  "recentlyAdded": [
+    {
+      "artist": "Ed Sheeran",
+      "title": "Sapphire",
+      "video": "JgDNFQ2RaLQ",
+      "addedAt": "2026-09-17T02:44:51.345Z"
+    },
+    {
+      "artist": "Mohombi",
+      "title": "Bumpy Ride",
+      "video": "G2RCCDSBEGk",
+      "addedAt": "2026-09-17T02:44:51.154Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Over The Hills And Far Away",
+      "video": "CwED4C5FJuo",
+      "addedAt": "2026-09-17T02:44:51.149Z"
+    },
+    {
+      "artist": "Mitski",
+      "title": "Star",
+      "video": "zdFoi-YEIFU",
+      "addedAt": "2026-09-17T02:44:51.146Z"
+    },
+    {
+      "artist": "PARTYNEXTDOOR",
+      "title": "PERSIAN RUGS",
+      "video": "4NYGgJlY3Uw",
+      "addedAt": "2026-09-17T02:44:50.963Z"
+    },
+    {
+      "artist": "Die Toten Hosen",
+      "title": "Wannsee",
+      "video": "JMODYxRcoBI",
+      "addedAt": "2026-09-17T02:44:50.962Z"
+    },
+    {
+      "artist": "Conan Gray",
+      "title": "Yours",
+      "video": "74NhLkjIeMs",
+      "addedAt": "2026-09-17T02:44:50.771Z"
+    },
+    {
+      "artist": "Oasis",
+      "title": "Stand By Me",
+      "video": "maTP315XZCQ",
+      "addedAt": "2026-09-17T02:44:50.767Z"
+    },
+    {
+      "artist": "Helloween",
+      "title": "Twilight Of The Gods",
+      "video": "qJ4qMZe67cc",
+      "addedAt": "2026-09-17T02:44:50.011Z"
+    },
+    {
+      "artist": "Metallica",
+      "title": "Ride The Lightning",
+      "video": "We_DLCYDaYw",
+      "addedAt": "2026-09-17T02:44:50.009Z"
+    },
+    {
+      "artist": "Revolverheld",
+      "title": "Mit dir chilln",
+      "video": "wO_fSipy5l0",
+      "addedAt": "2026-09-17T02:44:50.001Z"
+    },
+    {
+      "artist": "The Weeknd",
+      "title": "Wicked Games",
+      "video": "O1OTWCd40bc",
+      "addedAt": "2026-09-15T19:53:29.646Z"
+    },
+    {
+      "artist": "KoRn",
+      "title": "Word Up!",
+      "video": "-M7vOnlcLbo",
+      "addedAt": "2026-09-15T19:52:14.382Z"
+    },
+    {
+      "artist": "KATO feat. Jon",
+      "title": "Turn The Lights Off",
+      "video": "FxDMMeWK1ZE",
+      "addedAt": "2026-09-15T19:50:57.744Z"
+    },
+    {
+      "artist": "CMX",
+      "title": "Ruoste",
+      "video": "L8MJKwA9LZo",
+      "addedAt": "2026-09-15T19:50:47.481Z"
+    },
+    {
+      "artist": "Lil Nas X",
+      "title": "THATS WHAT I WANT",
+      "video": "QDYDRA5JPLE",
+      "addedAt": "2026-09-15T19:50:33.669Z"
+    },
+    {
+      "artist": "Crush 40",
+      "title": "Open Your Heart",
+      "video": "JsL-5R76jFk",
+      "addedAt": "2026-09-15T19:50:20.021Z"
+    },
+    {
+      "artist": "Kyo",
+      "title": "Dernière danse",
+      "video": "aU_TQcyGkvY",
+      "addedAt": "2026-09-15T19:49:44.040Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "So It Goes…",
+      "video": "iAv1Y1YIwm8",
+      "addedAt": "2026-09-15T19:49:02.055Z"
+    },
+    {
+      "artist": "Filow & Ikkimel",
+      "title": "Jiggy",
+      "video": "gwj7E2cjR10",
+      "addedAt": "2026-09-15T18:46:52.970Z"
+    },
+    {
+      "artist": "Metallica",
+      "title": "Metal Militia",
+      "video": "BDaYBB9DkBg",
+      "addedAt": "2026-09-15T18:46:08.234Z"
+    },
+    {
+      "artist": "Disney’s Lemonade Mouth",
+      "title": "More Than A Band",
+      "video": "HG827ejO870",
+      "addedAt": "2026-09-15T18:44:38.077Z"
+    },
+    {
+      "artist": "Hannah Montana 2",
+      "title": "Nobody’s Perfect",
+      "video": "-1QDJyspxGA",
+      "addedAt": "2026-09-15T18:43:53.800Z"
+    },
+    {
+      "artist": "Marvin Gaye",
+      "title": "I Heard It Through The Grapevine",
+      "video": "cXWHpbpNdHE",
+      "addedAt": "2026-09-15T10:52:39.417Z"
+    },
+    {
+      "artist": "El Reno Renardo",
+      "title": "Camino Moria",
+      "video": "U-RtO3bjVac",
+      "addedAt": "2026-09-15T10:51:45.473Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "The Way I Loved You (Taylor's Version",
+      "video": "DlexmDDSDZ0",
+      "addedAt": "2026-09-15T10:51:19.747Z"
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Crawl",
+      "video": "F5DkWzLMuKY",
+      "addedAt": "2026-09-15T10:50:53.232Z"
+    },
+    {
+      "artist": "David Guetta & OneRepublic",
+      "title": "I Don’t Wanna Wait",
+      "video": "dSDbwfXX5_I",
+      "addedAt": "2026-09-15T10:50:38.507Z"
+    },
+    {
+      "artist": "Del Shannon",
+      "title": "Runaway",
+      "video": "wSWMJxbxj7c",
+      "addedAt": "2026-09-15T10:50:25.430Z"
+    },
+    {
+      "artist": "Mariya Takeuchi",
+      "title": "Plastic Love",
+      "video": "T_lC2O1oIew",
+      "addedAt": "2026-09-15T10:50:09.918Z"
+    },
+    {
+      "artist": "Grover Washington, Jr. & Bill Withers",
+      "title": "Just The Two Of Us",
+      "video": "6IO74QV6wHY",
+      "addedAt": "2026-09-15T10:49:57.338Z"
+    },
+    {
+      "artist": "Avril Lavigne",
+      "title": "Alice",
+      "video": "YI4m-l2yRZA",
+      "addedAt": "2026-09-15T10:49:44.321Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Noise",
+      "video": "LczGSoibRe8",
+      "addedAt": "2026-09-15T10:49:33.708Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Maroon",
+      "video": "lvHZjvIyqsk",
+      "addedAt": "2026-09-15T10:49:23.810Z"
+    },
+    {
+      "artist": "Provinz",
+      "title": "Hymne gegen euch",
+      "video": "BKh5IMj4ias",
+      "addedAt": "2026-09-13T14:50:29.035Z"
+    },
+    {
+      "artist": "Faun",
+      "title": "Walpurgisnacht",
+      "video": "nLgM1QJ3S_I",
+      "addedAt": "2026-09-13T14:50:02.126Z"
+    },
+    {
+      "artist": "Pedro Sampaio",
+      "title": "Sequência Feiticeira",
+      "video": "_zKnEm9xPWw",
+      "addedAt": "2026-09-13T14:49:37.464Z"
+    },
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Kira Stone, Cast of EPIC)",
+      "title": "Keep Your Friends Close",
+      "video": "UGYny6uI2bA",
+      "addedAt": "2026-09-13T14:49:06.920Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "I’m Only Me When I’m With You",
+      "video": "AlTfYj7q5gQ",
+      "addedAt": "2026-09-13T14:48:49.260Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "How You Get The Girl",
+      "video": "rnwD7veCoFQ",
+      "addedAt": "2026-09-13T12:31:25.401Z"
+    },
+    {
+      "artist": "Default",
+      "title": "Wasting My Time",
+      "video": "UAocvKHUidg",
+      "addedAt": "2026-09-13T12:29:34.300Z"
+    },
+    {
+      "artist": "Shakira",
+      "title": "Zoo (De \"Disney Zootopia 2\")",
+      "video": "Kw3935PH01E",
+      "addedAt": "2026-09-13T12:29:17.888Z"
+    },
+    {
+      "artist": "KPop Demon Hunters (Saja Boys)",
+      "title": "Meu Pequeno Guaraná",
+      "video": "4EoGIUvP_uA",
+      "addedAt": "2026-09-13T12:28:55.624Z"
+    },
+    {
+      "artist": "ROBI & Ivana",
+      "title": "FA-TAL!",
+      "video": "YSTq9MBVAJ4",
+      "addedAt": "2026-09-12T12:27:06.816Z"
+    },
+    {
+      "artist": "A-ha",
+      "title": "Shadowside",
+      "video": "FMjkCF-BcQU",
+      "addedAt": "2026-09-12T12:26:39.192Z"
+    },
+    {
+      "artist": "FantasticYouth",
+      "title": "Gedou Sanka",
+      "video": "JtQeB0kNiu0",
+      "addedAt": "2026-09-12T12:26:17.258Z"
+    },
+    {
+      "artist": "Eisblume & Scala",
+      "title": "Louise",
+      "video": "_I6o7yoPa74",
+      "addedAt": "2026-09-12T12:25:37.973Z"
+    },
+    {
+      "artist": "Fleet Foxes",
+      "title": "White Winter Hymnal",
+      "video": "DrQRS40OKNE",
+      "addedAt": "2026-09-12T12:25:16.914Z"
+    }
+  ]
 }

@@ -8,7 +8,6 @@
  * - `SING_A_SONG` — the landing page's main card ↔ the menu's "Sing a song" tile
  * - `SING_ONLINE` — the landing page's online strip ↔ the menu's "Sing Online" tile
  * - `LEADERBOARD` — the global board, which is the same panel on both screens
- * - `TILES[n]` — the landing page's stat tiles ↔ the menu's second tile row, matched by position
  *
  * Written out as whole class strings (and not built from a template) because Tailwind finds
  * arbitrary utilities by scanning the source for the literal text.
@@ -20,10 +19,4 @@ export const MenuViewTransition = {
   SING_A_SONG: '[view-transition-name:menu-sing-a-song]',
   SING_ONLINE: '[view-transition-name:menu-sing-online]',
   LEADERBOARD: '[view-transition-name:menu-leaderboard]',
-  TILES: [
-    '[view-transition-name:menu-tile-0]',
-    '[view-transition-name:menu-tile-1]',
-    '[view-transition-name:menu-tile-2]',
-    '[view-transition-name:menu-tile-3]',
-  ],
 } as const;

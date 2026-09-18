@@ -42,7 +42,6 @@
     "tailwind-merge": "^3.6.0",
     "tailwindcss-motion": "^1.1.1",
     "tinycolor2": "^1.6.0",
-    "typewriter-effect": "^2.22.0",
     "use-persisted-state": "^0.3.3",
     "uuid": "^14.0.1",
     "vite-tsconfig-paths": "^6.1.1",
