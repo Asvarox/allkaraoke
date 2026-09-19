@@ -104,6 +104,13 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   /** Guards `rotateIdentity` to one attempt per connect, so an unrecoverable rejection cannot turn
    * into an endless loop of fresh participant ids hammering the directory. */
   private hasRotatedIdentity = false;
+  /** Bumped by every `openRoom` and every `disconnect`, so an attempt still resolving its room can
+   * tell it has been superseded before it joins. Joining is not harmless: it re-points this
+   * participant's directory row at the attempt's own session, which is then closed — leaving the
+   * directory naming a dead session (for a host, one everybody subscribes to and hears nothing
+   * from). React's StrictMode remount in dev does exactly this: connect, disconnect and connect
+   * again, synchronously, while the first attempt is still awaiting. */
+  private openAttempt = 0;
 
   public readonly subscriptions = new ClientSubscriptionManager<OnlineSubscriptionChannels>();
 
@@ -257,11 +264,16 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.host?.close();
     this.host = null;
 
+    const attempt = ++this.openAttempt;
     let connection: OnlineRoomConnection | null = null;
     let outcome;
     try {
       // Which data plane a room uses is the Worker's answer, not a guess — see createRoomConnection.
       connection = await createRoomConnection(this.roomCode, this.getParticipantId());
+      if (attempt !== this.openAttempt) {
+        connection.close();
+        return;
+      }
       this.connection = connection;
       outcome = await connection.join({ create: this.createRoom });
     } catch {
@@ -558,6 +570,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   };
 
   public disconnect = () => {
+    this.openAttempt++;
     this.shouldReconnect = false;
     this.reportingIdle = false;
     this.pingPong.stop();

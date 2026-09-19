@@ -24,6 +24,9 @@ import type { OnlineDirectory } from './online-directory-do';
 export interface OnlineSignalingEnv {
   REALTIME_APP_ID?: string;
   REALTIME_APP_TOKEN?: string;
+  /** Where the Realtime SFU API lives. Only ever set by the end-to-end suite, to point the Worker at
+   * the fake SFU in `tests/fake-sfu` — production always talks to Cloudflare's. */
+  REALTIME_API_URL?: string;
   ONLINE_DIRECTORY?: DurableObjectNamespace<OnlineDirectory>;
 
   /** Guards the two endpoints that spend money — they call Cloudflare's Realtime API on our app
@@ -48,7 +51,7 @@ export interface OnlineSignalingEnv {
   ONLINE_TURN_CREDENTIAL?: string;
 }
 
-const REALTIME_API_BASE = 'https://rtc.live.cloudflare.com/v1/apps';
+const DEFAULT_REALTIME_API_URL = 'https://rtc.live.cloudflare.com/v1';
 const REALTIME_TURN_API_BASE = 'https://rtc.live.cloudflare.com/v1/turn/keys';
 
 /** Cloudflare's public STUN, which takes no credentials — the reason online mode connects at all
@@ -127,7 +130,8 @@ interface RealtimeCallOptions {
 
 /** Every SFU call goes through here so the app token never leaves the Worker. */
 const callRealtime = async <T>({ env, path, method = 'POST', body }: RealtimeCallOptions): Promise<T> => {
-  const response = await fetch(`${REALTIME_API_BASE}/${env.REALTIME_APP_ID}${path}`, {
+  const baseUrl = env.REALTIME_API_URL ?? DEFAULT_REALTIME_API_URL;
+  const response = await fetch(`${baseUrl}/apps/${env.REALTIME_APP_ID}${path}`, {
     method,
     headers: {
       Authorization: `Bearer ${env.REALTIME_APP_TOKEN}`,

@@ -5,7 +5,8 @@
     "partykit/online-room.ts",
     "src/main.tsx",
     "vite-plugin-html-prerender/src/**/*.ts",
-    "scripts/**/*.ts"
+    "scripts/**/*.ts",
+    "tests/fake-sfu/server.mts"
   ],
   "project": [
     "src/**/*.{js,jsx,ts,tsx}",

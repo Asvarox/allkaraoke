@@ -10,6 +10,16 @@ import { devices } from '@playwright/test';
 const prodRun = process.env.CI || process.env.PROD_RUN;
 
 /**
+ * Online mode's P2P rooms run against a fake Cloudflare Realtime SFU (tests/fake-sfu) — there is no
+ * Realtime app to reach from here. The app's Worker is pointed at it by `E2E_FAKE_SFU_URL`, see
+ * vite.config.mts; CI sets it on its build step, and the local servers below set it themselves.
+ * 127.0.0.1 rather than localhost: in the CI container localhost can resolve to an address the fake
+ * is not listening on.
+ */
+const FAKE_SFU_PORT = 3480;
+const FAKE_SFU_URL = `http://127.0.0.1:${FAKE_SFU_PORT}/v1`;
+
+/**
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
@@ -44,7 +54,9 @@ const config: PlaywrightTestConfig = {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 14_000,
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: prodRun ? 'http://localhost:3010/?e2e-test' : 'http://localhost:3000/?e2e-test',
+    // Not 3000: the suite's dev server runs in fake-SFU mode, so it must not be mistaken for (or
+    // collide with) the `pnpm start` you develop against.
+    baseURL: prodRun ? 'http://localhost:3010/?e2e-test' : 'http://localhost:3020/?e2e-test',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -132,12 +144,25 @@ const config: PlaywrightTestConfig = {
           // the shard fails with ERR_CONNECTION_REFUSED.
           command: process.env.CI
             ? 'vite preview --port 3010'
-            : 'VITE_APP_PRERENDER=true vite build && vite preview --port 3010',
+            : `E2E_FAKE_SFU_URL=${FAKE_SFU_URL} VITE_APP_PRERENDER=true vite build && vite preview --port 3010`,
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,
         }
-      : undefined,
+      : {
+          // Keep one running with `pnpm start:e2e` to skip the startup on every run.
+          command: 'pnpm start:e2e',
+          port: 3020,
+          timeout: 60_000 * 3,
+          reuseExistingServer: true,
+        },
+    {
+      command: 'node tests/fake-sfu/server.mts',
+      env: { FAKE_SFU_PORT: String(FAKE_SFU_PORT) },
+      port: FAKE_SFU_PORT,
+      timeout: 30_000,
+      reuseExistingServer: true,
+    },
     {
       // The original online mode's room server (standalone PartyKit project, see partykit.json).
       // Still the default mode; P2P rooms need nothing here, they run against the Worker.
