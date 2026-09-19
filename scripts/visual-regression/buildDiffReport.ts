@@ -42,7 +42,7 @@ interface Report {
 }
 
 // Playwright screenshot snapshots live in `*-snapshots/` (visual-regression
-// tests) or `__snapshots__/` (component tests, per playwright-ct.config.mts).
+// tests) or `__snapshots__/` (Vitest browser tests, per the browser project in vite.config.mts).
 const isSnapshot = (path: string) =>
   path.endsWith('.png') && (path.includes('-snapshots/') || path.includes('__snapshots__/'));
 

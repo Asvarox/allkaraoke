@@ -1,41 +1,11 @@
 import { useEffect } from 'react';
 
 import { GAME_MODE } from '~/interfaces';
-import CanvasDrawing from '~/modules/game-engine/drawing/canvas-drawing';
-import { drawSprite, getSprite } from '~/modules/game-engine/drawing/elements/cache/cached-sprites';
-import drawPlayerNote from '~/modules/game-engine/drawing/elements/player-note';
-import roundRect from '~/modules/game-engine/drawing/elements/round-rect';
 import GameState from '~/modules/game-engine/game-state/game-state';
-import beatToMs from '~/modules/game-engine/game-state/helpers/beat-to-ms';
-import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
 import PlayersManager from '~/modules/players/players-manager';
 import { mulitrack } from '~/modules/songs/utils/song-fixture';
-import pitchToFrequency from '~/modules/utils/pitch-to-frequency';
 
-// Add needed stuff here
-const CanvasTestApi = {
-  utils: {
-    pitchToFrequency,
-    beatToMs,
-  },
-  Elements: {
-    drawPlayerNote: drawPlayerNote,
-    roundRect: roundRect,
-    drawSprite: drawSprite,
-    getSprite: getSprite,
-  },
-  GameState,
-  DrawingTestInput,
-  CanvasDrawing,
-};
-
-global.canvasTestApi = CanvasTestApi;
-
-declare global {
-  var canvasTestApi: typeof CanvasTestApi;
-}
-
-interface Props {
+export interface Props {
   width: number;
   height: number;
 }

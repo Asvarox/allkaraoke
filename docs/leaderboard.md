@@ -312,7 +312,7 @@ so specs that are not about the leaderboard call
   each player state's score; `GET /leaderboard-song` is stubbed there too (there is no
   request-mocking addon), which is what makes the empty, loading and failed states reachable.
 - `src/modules/leaderboard/notes-payload.test.ts` — encoder round-trip and payload size.
-- `src/modules/elements/akui/select.spec.tsx` — the country picker, under `playwright-ct`.
+- `src/modules/elements/akui/select.browser.test.tsx` — the country picker, under Vitest browser mode.
 - `tests/leaderboard.spec.ts` — sing → prompt → submit → the row appears on the main menu; the
   "always share" path across two songs; the per-song board and its position line on the post-game
   step; and "Don't ask again" and the way back in.
