@@ -3038,9 +3038,9 @@ var callRealtime = async ({ env, path, method = "POST", body }) => {
 		method,
 		headers: {
 			Authorization: `Bearer ${env.REALTIME_APP_TOKEN}`,
-			"Content-Type": "application/json"
+			...body === void 0 ? {} : { "Content-Type": "application/json" }
 		},
-		body: JSON.stringify(body)
+		...body === void 0 ? {} : { body: JSON.stringify(body) }
 	});
 	if (!response.ok) throw new Error(`Realtime API ${path} failed: ${response.status} ${await response.text()}`);
 	return await response.json();
@@ -3103,8 +3103,7 @@ var handleCreateSession = async (request, env) => {
 	if (!isSessionDescription(body?.offer)) return badRequest(request, "offer required");
 	const created = await callRealtime({
 		env,
-		path: "/sessions/new",
-		body: {}
+		path: "/sessions/new"
 	});
 	const established = await callRealtime({
 		env,
