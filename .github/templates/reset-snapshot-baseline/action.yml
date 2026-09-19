@@ -3,8 +3,8 @@
 name: reset-snapshot-baseline
 description: >-
   Resets the committed screenshot references under snapshotDir to the PR's target branch, so that a
-  following snapshot-updating test run (Playwright `-u`, Vitest browser mode `-u`) and
-  commit-and-comment-snapshots always report the full diff against the target branch.
+  following snapshot-updating test run (Playwright `-u`, Vitest browser mode `--update`) and
+  upload-changed-snapshots always report the full diff against the target branch.
 
 inputs:
   snapshotDir:
@@ -25,7 +25,7 @@ runs:
   using: 'composite'
   steps:
     # When updating snapshots, reset the baseline to the PR's target branch
-    # first, so the status-based diff in commit-and-comment-snapshots always
+    # first, so the status-based diff in upload-changed-snapshots always
     # reflects the full diff against the target branch, not just the change
     # since the last time this job auto-committed snapshots to the PR branch.
     - name: Fetch target branch for visual diff baseline
