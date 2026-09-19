@@ -77,7 +77,7 @@ export default function Edit() {
       </Helmet>
       {adminUnverifiedSongId && <BackgroundSavesIndicator />}
       <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
-        <Link to={returnLink}>
+        <Link to={returnLink} asChild>
           <a>{returnLinkLabel}</a>
         </Link>
         <span data-test="edit-song-heading">

@@ -52,7 +52,7 @@ export default function Setlists() {
         <Container>
           <div className="grid grid-cols-12 items-center gap-y-4" data-test="manage-setlists-page">
             <div className="col-span-3 flex items-center justify-start">
-              <Link to="menu/">
+              <Link to="menu/" asChild>
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
             </div>

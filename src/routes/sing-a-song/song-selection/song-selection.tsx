@@ -392,7 +392,7 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
                 (setlist.isEditable ? (
                   <div className="typography mt-auto pt-20 text-center text-lg sm:text-xl">
                     Missing a song? Try{' '}
-                    <Link to="convert/">
+                    <Link to="convert/" asChild>
                       <a>adding one</a>
                     </Link>{' '}
                     yourself!
