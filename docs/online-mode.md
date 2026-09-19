@@ -115,7 +115,31 @@ grant revokes the earlier one — so two clients must never hold the same slot. 
 directory's job.
 
 Slots are published up front, all `ONLINE_SLOT_COUNT` of them, because negotiated data channels
-need no SDP renegotiation. Somebody joining costs two signaling calls and no renegotiation at all.
+need no SDP renegotiation. Once a browser's transport is up, somebody joining costs one directory
+call and one channel call, and no renegotiation at all.
+
+### The transport handshake
+
+Cloudflare's data-channel transport is offered by the SFU, not the browser — the order matters, and
+getting it the other way round is what failed first in production:
+
+1. `POST /online/session` (no body). The Worker calls `sessions/new` — with **no body**; the API
+   rejects even `{}` — and then `datachannels/establish` with a single `remote` channel and no SDP.
+   The SFU answers with an **offer**. The Worker returns it with the session id and an `answerToken`.
+2. The browser sets that offer, creates its answer and sends it to `POST /online/session/answer`
+   with the token. The Worker passes it on as `PUT renegotiate`, and the transport comes up.
+3. Channels are then created with `datachannels/new` and opened as negotiated channels with the ids
+   it returns. Each requested channel succeeds or fails on its own inside an HTTP 200, so the Worker
+   checks every item and fails loudly on a refused one.
+
+The `answerToken` is an HMAC of the session id keyed from the Realtime app token. Session ids are
+not secret — a room's host session id is handed to anyone who asks for the room — so without it
+anyone could renegotiate somebody else's transport with an answer of their own.
+
+[Cloudflare's echo-datachannels example](https://github.com/cloudflare/realtime-examples/tree/main/echo-datachannels)
+is the reference for all three steps. The end-to-end suite cannot exercise any of it — CI has no
+Realtime app and runs on the relay — so `online-signaling.test.ts` pins the exact request of each
+call against what the real API accepts.
 
 The host learns which participant owns a slot from the `hello` frame each client sends first — the
 SFU conveys the slot a frame arrived on and nothing else.
@@ -128,9 +152,9 @@ a five-minute keepalive — never on the message path. A room wakes it for a han
 a few times per session instead of staying resident for every song.
 
 The signaling endpoints (`worker/online-signaling.ts`) proxy SFU session and channel creation so
-the Realtime app token never reaches a browser. Those two are the only endpoints that spend
-anything, and neither is behind a login, so they are rate-limited by IP —
-`/online/session` in particular takes nothing but an SDP offer.
+the Realtime app token never reaches a browser. They are the only endpoints that spend anything,
+and none is behind a login, so they are rate-limited by IP — `/online/session` in particular takes
+no input at all.
 
 ## Who a participant is
 
