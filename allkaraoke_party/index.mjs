@@ -2991,12 +2991,13 @@ var TURN_REFRESH_MARGIN_MS = 6e5;
 * both backends under one code, whatever an out-of-date client asks for. */
 var ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 /**
-* The channel every session establishes its SCTP transport with. Cloudflare's establish endpoint
-* wants a channel alongside the SDP offer, but a browser does not know whether it is the host
-* until it has a session id to join the directory with — so everybody opens the same throwaway
-* local channel here and gets its real ones on the second call, once its role is known.
+* The channel `datachannels/establish` sets the SCTP transport up with. Cloudflare's endpoint needs
+* one, but a browser does not know whether it is the host until it has a session id to join the
+* directory with — so every session establishes with the same one, as a `remote` channel the way
+* Cloudflare's own data-channel example does, and gets its real channels afterwards, once its role
+* is known. The browser never uses it.
 */
-var BOOTSTRAP_CHANNEL = "self";
+var TRANSPORT_CHANNEL = "server-events";
 /**
 * Which origins may call this from a browser.
 *
@@ -3098,9 +3099,15 @@ var getDirectory = (env, roomCode) => {
 	const namespace = env.ONLINE_DIRECTORY;
 	return namespace.get(namespace.idFromName(roomCode));
 };
+/**
+* Opens an SFU session and starts its data-channel transport — the first half of the handshake.
+*
+* The SFU is the offerer: `datachannels/establish` takes no SDP and answers with an offer (and
+* `requiresImmediateRenegotiation`), which the browser answers through `handleAnswerSession`. This
+* was once the other way round — the browser offering, and the offer sent to `establish` — which
+* the API refuses outright ("Failed to decode body as JSON").
+*/
 var handleCreateSession = async (request, env) => {
-	const body = await request.json().catch(() => null);
-	if (!isSessionDescription(body?.offer)) return badRequest(request, "offer required");
 	const created = await callRealtime({
 		env,
 		path: "/sessions/new"
@@ -3108,21 +3115,67 @@ var handleCreateSession = async (request, env) => {
 	const established = await callRealtime({
 		env,
 		path: `/sessions/${created.sessionId}/datachannels/establish`,
-		body: {
-			dataChannel: {
-				location: "local",
-				dataChannelName: BOOTSTRAP_CHANNEL
-			},
-			sessionDescription: {
-				type: "offer",
-				sdp: body.offer.sdp
-			}
-		}
+		body: { dataChannel: {
+			location: "remote",
+			dataChannelName: TRANSPORT_CHANNEL
+		} }
 	});
+	if (established.sessionDescription?.type !== "offer") throw new Error(`Realtime API establish returned no offer: ${JSON.stringify(established)}`);
 	return json(request, {
 		sessionId: created.sessionId,
-		answer: established.sessionDescription
+		offer: established.sessionDescription,
+		answerToken: await answerTokenFor(env, created.sessionId)
 	});
+};
+/** The second half: the browser's answer to the SFU's offer, which is what brings the transport up. */
+var handleAnswerSession = async (request, env) => {
+	const body = await request.json().catch(() => null);
+	if (!body?.sessionId || body.answer?.type !== "answer" || !isSessionDescription(body.answer)) return badRequest(request, "sessionId and answer required");
+	if (!await answerTokenMatches(env, body.sessionId, body.answerToken)) return json(request, { error: "Not your session" }, 403);
+	await callRealtime({
+		env,
+		method: "PUT",
+		path: `/sessions/${body.sessionId}/renegotiate`,
+		body: { sessionDescription: {
+			type: "answer",
+			sdp: body.answer.sdp
+		} }
+	});
+	return json(request, { ok: true });
+};
+/**
+* A capability for answering one session: an HMAC of its id, keyed from the Realtime app token the
+* Worker already holds. Stateless — nothing to store or expire — and only the Worker can mint one,
+* so only the browser that opened the session gets it.
+*/
+var answerTokenKeys = /* @__PURE__ */ new Map();
+var answerTokenKey = (env) => {
+	const secret = `online-session-answer:${env.REALTIME_APP_TOKEN}`;
+	let key = answerTokenKeys.get(secret);
+	if (!key) {
+		key = crypto.subtle.importKey("raw", new TextEncoder().encode(secret), {
+			name: "HMAC",
+			hash: "SHA-256"
+		}, false, ["sign", "verify"]);
+		answerTokenKeys.set(secret, key);
+	}
+	return key;
+};
+var toBase64Url = (bytes) => btoa(String.fromCharCode(...new Uint8Array(bytes))).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/, "");
+var fromBase64Url = (value) => {
+	try {
+		const binary = atob(value.replaceAll("-", "+").replaceAll("_", "/"));
+		return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+	} catch {
+		return null;
+	}
+};
+var answerTokenFor = async (env, sessionId) => toBase64Url(await crypto.subtle.sign("HMAC", await answerTokenKey(env), new TextEncoder().encode(sessionId)));
+/** `crypto.subtle.verify` compares in constant time, so a wrong token leaks nothing about the right one. */
+var answerTokenMatches = async (env, sessionId, token) => {
+	const signature = typeof token === "string" ? fromBase64Url(token) : null;
+	if (!signature) return false;
+	return crypto.subtle.verify("HMAC", await answerTokenKey(env), signature, new TextEncoder().encode(sessionId));
 };
 /**
 * Which channels a session may open, given what the directory says about it.
@@ -3149,7 +3202,7 @@ var handleCreateDataChannels = async (request, env) => {
 	const auth = await getDirectory(env, body.roomCode).authorize(body.participantId, body.sessionId);
 	if (!auth.ok) return json(request, { error: "Not a member of this room" }, 403);
 	if (!body.channels.every((channel) => isChannelAllowed(channel, auth))) return json(request, { error: "Not allowed on this channel" }, 403);
-	return json(request, { channels: (await callRealtime({
+	const result = await callRealtime({
 		env,
 		path: `/sessions/${body.sessionId}/datachannels/new`,
 		body: { dataChannels: body.channels.map((channel) => channel.publisherSessionId ? {
@@ -3161,7 +3214,10 @@ var handleCreateDataChannels = async (request, env) => {
 			location: "local",
 			dataChannelName: channel.name
 		}) }
-	})).dataChannels.map((channel) => ({
+	});
+	const channels = result.dataChannels ?? [];
+	if (channels.find((channel) => channel.errorCode || typeof channel.id !== "number") || channels.length !== body.channels.length) throw new Error(`Realtime API datachannels/new refused a channel: ${JSON.stringify(result)}`);
+	return json(request, { channels: channels.map((channel) => ({
 		name: channel.dataChannelName,
 		id: channel.id
 	})) });
@@ -3229,11 +3285,13 @@ var handleOnlineSignaling = async (request, env, pathname) => {
 	try {
 		const rest = pathname.slice(8);
 		if (rest === "ice" && request.method === "GET") return await handleIceServers(request, env);
-		if (rest === "session" || rest === "datachannels") {
+		if (rest === "session" || rest === "session/answer" || rest === "datachannels") {
 			if (!hasRealtimeCredentials) return json(request, { error: "Realtime is not configured" }, 503);
 			if (request.method !== "POST") return json(request, { error: "Method not allowed" }, 405);
 			if (!await withinRateLimit(request, env)) return json(request, { error: "Too many requests" }, 429);
-			return rest === "session" ? await handleCreateSession(request, env) : await handleCreateDataChannels(request, env);
+			if (rest === "session") return await handleCreateSession(request, env);
+			if (rest === "session/answer") return await handleAnswerSession(request, env);
+			return await handleCreateDataChannels(request, env);
 		}
 		if (rest.startsWith("room/")) {
 			const [roomCode, action = ""] = rest.slice(5).split("/");
