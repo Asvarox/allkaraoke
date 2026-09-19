@@ -285,3 +285,45 @@ describe('room codes', () => {
     expect((await lookup('1abcd'))?.status).toBe(400);
   });
 });
+
+describe('Realtime API calls', () => {
+  it('opens a session with no body at all, then establishes the transport with the offer', async () => {
+    // The API validates any body it is given, and `sessions/new` takes none — production answered
+    // `{}` with "Body JSON validation error: sessionDescription", so every P2P room failed to open.
+    // The stubs below used to accept whatever they were sent, which is how that got through.
+    const calls: Array<{ url: string; body: BodyInit | null | undefined; contentType: string | null }> = [];
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string, init: RequestInit) => {
+        calls.push({ url, body: init.body, contentType: new Headers(init.headers).get('Content-Type') });
+        return Response.json(
+          url.endsWith('/sessions/new')
+            ? { sessionId: 'created' }
+            : { sessionDescription: { type: 'answer', sdp: 'v=0' } },
+        );
+      }),
+    );
+    const request = new Request('https://example.test/online/session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ offer: { type: 'offer', sdp: 'v=0 offer' } }),
+    });
+
+    const response = await handleOnlineSignaling(
+      request,
+      { REALTIME_APP_ID: 'app', REALTIME_APP_TOKEN: 'token', ONLINE_DIRECTORY: {} } as unknown as OnlineSignalingEnv,
+      '/online/session',
+    );
+
+    expect(response?.status).toBe(200);
+    const [created, established] = calls;
+    expect(created.url).toMatch(/\/apps\/app\/sessions\/new$/);
+    expect(created.body).toBeUndefined();
+    expect(created.contentType).toBeNull();
+    expect(established.url).toMatch(/\/sessions\/created\/datachannels\/establish$/);
+    expect(JSON.parse(established.body as string)).toMatchObject({
+      sessionDescription: { type: 'offer', sdp: 'v=0 offer' },
+      dataChannel: { location: 'local' },
+    });
+  });
+});

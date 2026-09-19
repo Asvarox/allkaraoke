@@ -119,7 +119,9 @@ interface RealtimeCallOptions {
   env: OnlineSignalingEnv;
   path: string;
   method?: 'POST' | 'PUT';
-  body: unknown;
+  /** Left out entirely when absent — not sent as `{}`. The API validates any body it is given, and
+   * `sessions/new` takes none: an empty object is rejected with a `decoding_error`. */
+  body?: unknown;
 }
 
 /** Every SFU call goes through here so the app token never leaves the Worker. */
@@ -128,9 +130,9 @@ const callRealtime = async <T>({ env, path, method = 'POST', body }: RealtimeCal
     method,
     headers: {
       Authorization: `Bearer ${env.REALTIME_APP_TOKEN}`,
-      'Content-Type': 'application/json',
+      ...(body === undefined ? {} : { 'Content-Type': 'application/json' }),
     },
-    body: JSON.stringify(body),
+    ...(body === undefined ? {} : { body: JSON.stringify(body) }),
   });
   if (!response.ok) {
     throw new Error(`Realtime API ${path} failed: ${response.status} ${await response.text()}`);
@@ -221,10 +223,11 @@ const handleCreateSession = async (request: Request, env: OnlineSignalingEnv) =>
   const body = (await request.json().catch(() => null)) as CreateSessionRequest | null;
   if (!isSessionDescription(body?.offer)) return badRequest(request, 'offer required');
 
+  // No body: the endpoint takes none, and the API rejects even `{}` ("Body JSON validation error:
+  // sessionDescription"). The transport is set up by `establish` below instead.
   const created = await callRealtime<{ sessionId: string }>({
     env,
     path: '/sessions/new',
-    body: {},
   });
 
   const established = await callRealtime<{ sessionDescription: SessionDescriptionDto }>({
