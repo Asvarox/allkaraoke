@@ -6,9 +6,9 @@ import {
   slotChannelName,
 } from '../src/modules/online/signaling/protocol';
 import type {
+  AnswerSessionRequest,
   CreateDataChannelsRequest,
   CreateDataChannelsResponse,
-  CreateSessionRequest,
   CreateSessionResponse,
   DataChannelSpec,
   IceServerDto,
@@ -71,12 +71,13 @@ const TURN_REFRESH_MARGIN_MS = 10 * 60 * 1_000;
 const ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 
 /**
- * The channel every session establishes its SCTP transport with. Cloudflare's establish endpoint
- * wants a channel alongside the SDP offer, but a browser does not know whether it is the host
- * until it has a session id to join the directory with — so everybody opens the same throwaway
- * local channel here and gets its real ones on the second call, once its role is known.
+ * The channel `datachannels/establish` sets the SCTP transport up with. Cloudflare's endpoint needs
+ * one, but a browser does not know whether it is the host until it has a session id to join the
+ * directory with — so every session establishes with the same one, as a `remote` channel the way
+ * Cloudflare's own data-channel example does, and gets its real channels afterwards, once its role
+ * is known. The browser never uses it.
  */
-const BOOTSTRAP_CHANNEL = 'self';
+const TRANSPORT_CHANNEL = 'server-events';
 
 /**
  * Which origins may call this from a browser.
@@ -219,30 +220,102 @@ const getDirectory = (env: OnlineSignalingEnv, roomCode: string) => {
   return namespace.get(namespace.idFromName(roomCode));
 };
 
+/**
+ * Opens an SFU session and starts its data-channel transport — the first half of the handshake.
+ *
+ * The SFU is the offerer: `datachannels/establish` takes no SDP and answers with an offer (and
+ * `requiresImmediateRenegotiation`), which the browser answers through `handleAnswerSession`. This
+ * was once the other way round — the browser offering, and the offer sent to `establish` — which
+ * the API refuses outright ("Failed to decode body as JSON").
+ */
 const handleCreateSession = async (request: Request, env: OnlineSignalingEnv) => {
-  const body = (await request.json().catch(() => null)) as CreateSessionRequest | null;
-  if (!isSessionDescription(body?.offer)) return badRequest(request, 'offer required');
-
-  // No body: the endpoint takes none, and the API rejects even `{}` ("Body JSON validation error:
-  // sessionDescription"). The transport is set up by `establish` below instead.
+  // No body: `sessions/new` takes none, and the API rejects even `{}` ("Body JSON validation
+  // error: sessionDescription").
   const created = await callRealtime<{ sessionId: string }>({
     env,
     path: '/sessions/new',
   });
 
-  const established = await callRealtime<{ sessionDescription: SessionDescriptionDto }>({
+  const established = await callRealtime<{ sessionDescription?: SessionDescriptionDto }>({
     env,
     path: `/sessions/${created.sessionId}/datachannels/establish`,
-    body: {
-      dataChannel: { location: 'local', dataChannelName: BOOTSTRAP_CHANNEL },
-      sessionDescription: { type: 'offer', sdp: body!.offer.sdp },
-    },
+    body: { dataChannel: { location: 'remote', dataChannelName: TRANSPORT_CHANNEL } },
   });
+  if (established.sessionDescription?.type !== 'offer') {
+    throw new Error(`Realtime API establish returned no offer: ${JSON.stringify(established)}`);
+  }
 
   return json<CreateSessionResponse>(request, {
     sessionId: created.sessionId,
-    answer: established.sessionDescription,
+    offer: established.sessionDescription,
+    answerToken: await answerTokenFor(env, created.sessionId),
   } satisfies CreateSessionResponse);
+};
+
+/** The second half: the browser's answer to the SFU's offer, which is what brings the transport up. */
+const handleAnswerSession = async (request: Request, env: OnlineSignalingEnv) => {
+  const body = (await request.json().catch(() => null)) as AnswerSessionRequest | null;
+  if (!body?.sessionId || body.answer?.type !== 'answer' || !isSessionDescription(body.answer)) {
+    return badRequest(request, 'sessionId and answer required');
+  }
+  // Session ids are public — a room's host session id is handed to anyone who asks for the room —
+  // so this is what stops a stranger renegotiating somebody else's transport with an answer of
+  // their own.
+  if (!(await answerTokenMatches(env, body.sessionId, body.answerToken))) {
+    return json(request, { error: 'Not your session' }, 403);
+  }
+
+  await callRealtime({
+    env,
+    method: 'PUT',
+    path: `/sessions/${body.sessionId}/renegotiate`,
+    body: { sessionDescription: { type: 'answer', sdp: body.answer.sdp } },
+  });
+  return json(request, { ok: true });
+};
+
+/**
+ * A capability for answering one session: an HMAC of its id, keyed from the Realtime app token the
+ * Worker already holds. Stateless — nothing to store or expire — and only the Worker can mint one,
+ * so only the browser that opened the session gets it.
+ */
+const answerTokenKeys = new Map<string, Promise<CryptoKey>>();
+const answerTokenKey = (env: OnlineSignalingEnv) => {
+  const secret = `online-session-answer:${env.REALTIME_APP_TOKEN}`;
+  let key = answerTokenKeys.get(secret);
+  if (!key) {
+    key = crypto.subtle.importKey('raw', new TextEncoder().encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, [
+      'sign',
+      'verify',
+    ]);
+    answerTokenKeys.set(secret, key);
+  }
+  return key;
+};
+
+const toBase64Url = (bytes: ArrayBuffer) =>
+  btoa(String.fromCharCode(...new Uint8Array(bytes)))
+    .replaceAll('+', '-')
+    .replaceAll('/', '_')
+    .replace(/=+$/, '');
+
+const fromBase64Url = (value: string): Uint8Array | null => {
+  try {
+    const binary = atob(value.replaceAll('-', '+').replaceAll('_', '/'));
+    return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  } catch {
+    return null;
+  }
+};
+
+const answerTokenFor = async (env: OnlineSignalingEnv, sessionId: string) =>
+  toBase64Url(await crypto.subtle.sign('HMAC', await answerTokenKey(env), new TextEncoder().encode(sessionId)));
+
+/** `crypto.subtle.verify` compares in constant time, so a wrong token leaks nothing about the right one. */
+const answerTokenMatches = async (env: OnlineSignalingEnv, sessionId: string, token: unknown) => {
+  const signature = typeof token === 'string' ? fromBase64Url(token) : null;
+  if (!signature) return false;
+  return crypto.subtle.verify('HMAC', await answerTokenKey(env), signature, new TextEncoder().encode(sessionId));
 };
 
 /**
@@ -283,7 +356,9 @@ const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEn
     return json(request, { error: 'Not allowed on this channel' }, 403);
   }
 
-  const result = await callRealtime<{ dataChannels: Array<{ dataChannelName: string; id: number }> }>({
+  const result = await callRealtime<{
+    dataChannels?: Array<{ dataChannelName?: string; id?: number; errorCode?: string; errorDescription?: string }>;
+  }>({
     env,
     path: `/sessions/${body.sessionId}/datachannels/new`,
     body: {
@@ -300,8 +375,17 @@ const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEn
     },
   });
 
+  // Each channel succeeds or fails on its own, inside an HTTP 200 — a refused channel comes back as
+  // an item with an `errorCode` and no id. Handing that to the browser would fail much later, as a
+  // negotiated channel with no id; failing here puts Cloudflare's own reason in the log.
+  const channels = result.dataChannels ?? [];
+  const failed = channels.find((channel) => channel.errorCode || typeof channel.id !== 'number');
+  if (failed || channels.length !== body.channels.length) {
+    throw new Error(`Realtime API datachannels/new refused a channel: ${JSON.stringify(result)}`);
+  }
+
   return json<CreateDataChannelsResponse>(request, {
-    channels: result.dataChannels.map((channel) => ({ name: channel.dataChannelName, id: channel.id })),
+    channels: channels.map((channel) => ({ name: channel.dataChannelName!, id: channel.id! })),
   });
 };
 
@@ -406,20 +490,20 @@ export const handleOnlineSignaling = async (
     // app configured still runs online mode on the relay, which is exactly when this must answer.
     if (rest === 'ice' && request.method === 'GET') return await handleIceServers(request, env);
 
-    if (rest === 'session' || rest === 'datachannels') {
+    if (rest === 'session' || rest === 'session/answer' || rest === 'datachannels') {
       if (!hasRealtimeCredentials) return json(request, { error: 'Realtime is not configured' }, 503);
       if (request.method !== 'POST') return json(request, { error: 'Method not allowed' }, 405);
-      // These two are the only endpoints that spend anything: they call Cloudflare's Realtime API
-      // on our app token, and neither is behind a login. `/online/session` in particular takes
-      // nothing but an SDP offer, so without this any page anywhere could open sessions on our app
-      // for as long as it liked. Keyed by IP because that is the only identity on offer — a room
-      // code would be attacker-chosen, and the session does not exist yet to be checked against.
+      // These are the only endpoints that spend anything: they call Cloudflare's Realtime API on
+      // our app token, and none is behind a login. `/online/session` in particular takes no input
+      // at all, so without this any page anywhere could open sessions on our app for as long as it
+      // liked. Keyed by IP because that is the only identity on offer — a room code would be
+      // attacker-chosen, and the session does not exist yet to be checked against.
       if (!(await withinRateLimit(request, env))) {
         return json(request, { error: 'Too many requests' }, 429);
       }
-      return rest === 'session'
-        ? await handleCreateSession(request, env)
-        : await handleCreateDataChannels(request, env);
+      if (rest === 'session') return await handleCreateSession(request, env);
+      if (rest === 'session/answer') return await handleAnswerSession(request, env);
+      return await handleCreateDataChannels(request, env);
     }
 
     if (rest.startsWith('room/')) {

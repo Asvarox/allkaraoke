@@ -79,14 +79,29 @@ export interface SessionDescriptionDto {
   sdp: string;
 }
 
-/** `POST /online/session` — opens an SFU session for this browser and establishes its SCTP
- * transport in the same round trip. */
-export interface CreateSessionRequest {
-  offer: SessionDescriptionDto;
-}
+/**
+ * `POST /online/session` (no body) — opens an SFU session for this browser and starts its
+ * data-channel transport.
+ *
+ * The SFU makes the offer, not the browser: Cloudflare's `datachannels/establish` takes no SDP and
+ * answers with an offer of its own (and `requiresImmediateRenegotiation`). The browser answers it
+ * and hands the answer back through `POST /online/session/answer`.
+ */
 export interface CreateSessionResponse {
   sessionId: string;
+  offer: SessionDescriptionDto;
+  /** Proof that the caller is the browser this session was opened for — required by the answer
+   * endpoint. Session ids are not secret (a room's host session id is published to anyone who
+   * asks), so without it anyone could renegotiate somebody else's session out from under them. */
+  answerToken: string;
+}
+
+/** `POST /online/session/answer` — completes the transport with the browser's answer to the SFU's
+ * offer. */
+export interface AnswerSessionRequest {
+  sessionId: string;
   answer: SessionDescriptionDto;
+  answerToken: string;
 }
 
 export interface DataChannelSpec {

@@ -1,8 +1,8 @@
 import { fetchIceServers, postSignaling } from '~/modules/online/signaling/directory-client';
 import {
+  AnswerSessionRequest,
   CreateDataChannelsRequest,
   CreateDataChannelsResponse,
-  CreateSessionRequest,
   CreateSessionResponse,
   DataChannelSpec,
 } from '~/modules/online/signaling/protocol';
@@ -19,28 +19,31 @@ const FALLBACK_ICE_SERVERS: RTCIceServer[] = [
   { urls: ['stun:stun.cloudflare.com:3478', 'stun:stun.cloudflare.com:53'] },
 ];
 
-/** The SFU signalling API takes one complete offer — there is no trickle-ICE endpoint — so the
- * local description has to be fully gathered before it is sent. Capped because a candidate that
- * never arrives (a blocked STUN port) would otherwise hang the join forever; what has been
- * gathered by then is normally enough to connect. */
-const ICE_GATHERING_TIMEOUT_MS = 3_000;
+/** How long the transport may take to come up once the answer is in. Bounded so an SFU that is
+ * unreachable (UDP blocked, no TURN) fails the join with a clear reason instead of hanging it. */
+const CONNECT_TIMEOUT_MS = 20_000;
 
-const waitForIceGathering = (peerConnection: RTCPeerConnection) =>
-  new Promise<void>((resolve) => {
-    if (peerConnection.iceGatheringState === 'complete') {
-      resolve();
-      return;
-    }
-    const done = () => {
+const waitForConnected = (peerConnection: RTCPeerConnection) =>
+  new Promise<void>((resolve, reject) => {
+    const check = () => {
+      if (peerConnection.connectionState === 'connected') {
+        cleanup();
+        resolve();
+      } else if (peerConnection.connectionState === 'failed' || peerConnection.connectionState === 'closed') {
+        cleanup();
+        reject(new Error(`SFU connection ${peerConnection.connectionState}`));
+      }
+    };
+    const timeout = setTimeout(() => {
+      cleanup();
+      reject(new Error(`SFU connection still ${peerConnection.connectionState} after ${CONNECT_TIMEOUT_MS}ms`));
+    }, CONNECT_TIMEOUT_MS);
+    const cleanup = () => {
       clearTimeout(timeout);
-      peerConnection.removeEventListener('icegatheringstatechange', onChange);
-      resolve();
+      peerConnection.removeEventListener('connectionstatechange', check);
     };
-    const onChange = () => {
-      if (peerConnection.iceGatheringState === 'complete') done();
-    };
-    const timeout = setTimeout(done, ICE_GATHERING_TIMEOUT_MS);
-    peerConnection.addEventListener('icegatheringstatechange', onChange);
+    peerConnection.addEventListener('connectionstatechange', check);
+    check();
   });
 
 /**
@@ -96,20 +99,24 @@ export class SfuSession {
       }
     });
 
-    // An offer only carries an SCTP m-line if the connection has at least one data channel when it
-    // is created. Every real channel here is negotiated (so it cannot be the one that does this),
-    // which leaves a throwaway as the only way to get the transport into the SDP.
-    peerConnection.createDataChannel('sctp-bootstrap');
+    // The SFU makes the offer and this browser answers it — Cloudflare's data-channel handshake. The
+    // offer already carries the SCTP transport, so nothing has to be opened here first.
+    const { sessionId, offer, answerToken } = await postSignaling<CreateSessionResponse>('/online/session', {});
+    await peerConnection.setRemoteDescription({ type: 'offer', sdp: offer.sdp });
+    const answer = await peerConnection.createAnswer();
+    await peerConnection.setLocalDescription(answer);
+    // Sent as soon as it exists, without waiting for local candidates: the SFU is ICE-lite, so it
+    // learns this browser's address from the connectivity checks it receives — the same as
+    // Cloudflare's own example does.
+    await postSignaling('/online/session/answer', {
+      sessionId,
+      answer: { type: 'answer', sdp: peerConnection.localDescription!.sdp },
+      answerToken,
+    } satisfies AnswerSessionRequest);
+    // Waited out here rather than left to the channels: a transport that never comes up then fails
+    // with that as the reason, instead of as a channel timing out somewhere downstream.
+    await waitForConnected(peerConnection);
 
-    const offer = await peerConnection.createOffer();
-    await peerConnection.setLocalDescription(offer);
-    await waitForIceGathering(peerConnection);
-
-    const { sessionId, answer } = await postSignaling<CreateSessionResponse>('/online/session', {
-      offer: { type: 'offer', sdp: peerConnection.localDescription!.sdp },
-    } satisfies CreateSessionRequest);
-
-    await peerConnection.setRemoteDescription({ type: 'answer', sdp: answer.sdp });
     this.sessionId = sessionId;
     return sessionId;
   };
