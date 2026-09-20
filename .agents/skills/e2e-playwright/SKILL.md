@@ -55,7 +55,7 @@ pnpm e2e --project=chromium --grep "Check preview of song1" tests/sing-a-song.sp
 pnpm e2e --project=chromium --headed tests/sing-a-song.spec.ts
 ```
 
-> **Note:** The dev server (`pnpm start`) must already be running on `https://localhost:3000` before running `pnpm e2e`. Use `pnpm e2e:prod` to build and test against a production build.
+> **Note:** `pnpm e2e` starts its own dev server on `http://localhost:3020` (`pnpm start:e2e`, pointed at the fake SFU in `tests/fake-sfu`) plus the fake itself, or reuses them if already running — keep `pnpm start:e2e` open to skip the startup. It is separate from the `pnpm start` you develop against on 3000. Use `pnpm e2e:prod` to build and test against a production build.
 
 ## Test File Anatomy
 

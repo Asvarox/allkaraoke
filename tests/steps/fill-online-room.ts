@@ -6,16 +6,16 @@ import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
  * Occupies every seat but the host's, at the protocol level.
  *
  * Five real guest tabs each holding a live fake-audio capture reliably deadlocks Chromium's
- * fake-audio backend, so the seats are filled the way the client fills them — claim a slot in the
- * room directory, open that slot's pipe, say hello — without the game running around them. Only
- * the final, rejected join goes through the real UI, which is the part under test.
+ * fake-audio backend, so the seats are filled the way the client fills them — open an SFU session,
+ * claim a slot in the room directory, open that slot's pipe, say hello — without the game running
+ * around them. Only the final, rejected join goes through the real UI, which is the part under test.
  *
  * The work happens inside a page rather than in the test process. The app's origin is only
  * reliably reachable from a browser: in the CI container `vite preview` binds a localhost that
  * Node's `fetch` resolves to an address nothing is listening on, so the same requests that a page
  * makes happily fail from the runner with ECONNREFUSED.
  *
- * Returns the context holding the sockets; closing it frees the seats.
+ * Returns the context holding the connections; closing it frees the seats.
  */
 export async function fillOnlineRoom(browser: Browser, roomCode: string): Promise<BrowserContext> {
   const context = await browser.newContext({ baseURL: test.info().project.use.baseURL });
@@ -26,48 +26,88 @@ export async function fillOnlineRoom(browser: Browser, roomCode: string): Promis
 
     await page.evaluate(
       async ({ roomCode, seats }) => {
-        // Parked on `window` so the sockets outlive this call and keep their seats claimed.
-        const sockets: WebSocket[] = ((window as never as { __fillers: WebSocket[] }).__fillers = []);
+        // Parked on `window` so the connections outlive this call and keep their seats claimed.
+        const connections: RTCPeerConnection[] = ((window as never as { __fillers: RTCPeerConnection[] }).__fillers =
+          []);
+
+        const post = async <T>(path: string, body: unknown): Promise<T> => {
+          const response = await fetch(path, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+          });
+          if (!response.ok) throw new Error(`${path} failed: ${response.status} ${await response.text()}`);
+          return response.json() as Promise<T>;
+        };
+
+        const until = (what: string, done: (settle: (error?: Error) => void) => void) =>
+          new Promise<void>((resolve, reject) => {
+            const timer = setTimeout(() => reject(new Error(`${what} timed out`)), 10_000);
+            done((error) => {
+              clearTimeout(timer);
+              error ? reject(error) : resolve();
+            });
+          });
 
         for (let seat = 1; seat < seats; seat++) {
           const participantId = crypto.randomUUID();
 
-          // The relay identifies a socket by its directory membership, so a filler joins first and
-          // then connects as itself — role and slot are the directory's to decide.
-          const joinResponse = await fetch(`/online/room/${roomCode}/join`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ participantId, sessionId: participantId }),
+          // The same handshake SfuSession runs: the SFU offers, this page answers.
+          const { sessionId, offer, answerToken } = await post<{
+            sessionId: string;
+            offer: RTCSessionDescriptionInit;
+            answerToken: string;
+          }>('/online/session', {});
+          const peerConnection = new RTCPeerConnection({ bundlePolicy: 'max-bundle' });
+          connections.push(peerConnection);
+          await peerConnection.setRemoteDescription(offer);
+          await peerConnection.setLocalDescription(await peerConnection.createAnswer());
+          await post('/online/session/answer', {
+            sessionId,
+            answer: { type: 'answer', sdp: peerConnection.localDescription!.sdp },
+            answerToken,
           });
-          const join = (await joinResponse.json()) as { ok: boolean; reason?: string };
+          await until(`Filler ${seat} transport`, (settle) => {
+            const check = () => {
+              if (peerConnection.connectionState === 'connected') settle();
+              if (peerConnection.connectionState === 'failed') settle(new Error(`Filler ${seat} transport failed`));
+            };
+            peerConnection.addEventListener('connectionstatechange', check);
+            check();
+          });
+
+          // Role and slot are the directory's to decide.
+          const join = await post<{ ok: boolean; reason?: string; hostSessionId: string; slot: number }>(
+            `/online/room/${roomCode}/join`,
+            { participantId, sessionId },
+          );
           if (!join.ok) throw new Error(`Filler ${seat} could not claim a seat: ${join.reason}`);
 
-          // The end-to-end suite runs on the relay data plane — there is no Realtime app to talk
-          // to in CI — so a filler speaks the same relay protocol the client does.
-          const relay = new URL(`/online/room/${roomCode}/relay`, location.href);
-          relay.protocol = relay.protocol === 'https:' ? 'wss:' : 'ws:';
-          relay.searchParams.set('participantId', participantId);
-          relay.searchParams.set('sessionId', participantId);
+          const slotName = `slot-${join.slot}`;
+          const { channels } = await post<{ channels: Array<{ name: string; id: number }> }>('/online/datachannels', {
+            roomCode,
+            participantId,
+            sessionId,
+            channels: [
+              { name: 'room', publisherSessionId: join.hostSessionId },
+              { name: slotName, publisherSessionId: join.hostSessionId, canReply: true },
+            ],
+          });
+          const opened = channels.map(({ name, id }) =>
+            peerConnection.createDataChannel(name, { negotiated: true, id }),
+          );
+          const slot = opened.find((channel) => channel.label === slotName)!;
 
-          const socket = new WebSocket(relay.toString());
-          sockets.push(socket);
-
-          await new Promise<void>((resolve, reject) => {
-            const timer = setTimeout(() => reject(new Error(`Filler socket ${seat} timed out joining`)), 10_000);
-            const settle = (error?: Error) => {
-              clearTimeout(timer);
-              error ? reject(error) : resolve();
-            };
-            socket.addEventListener('open', () => {
-              socket.send(JSON.stringify({ t: 'hello', participantId, name: `Filler ${seat}`, create: false }));
+          await until(`Filler ${seat} joining`, (settle) => {
+            slot.addEventListener('open', () => {
+              slot.send(JSON.stringify({ t: 'hello', participantId, name: `Filler ${seat}`, create: false }));
             });
-            socket.addEventListener('message', (event: MessageEvent<string>) => {
+            slot.addEventListener('message', (event: MessageEvent<string>) => {
               const message = JSON.parse(event.data);
               if (message.t === 'joined') settle();
               if (message.t === 'join-rejected') settle(new Error(`Filler ${seat} rejected: ${message.reason}`));
             });
-            socket.addEventListener('error', () => settle(new Error(`Filler socket ${seat} failed to join`)));
-            socket.addEventListener('close', () => settle(new Error(`Filler socket ${seat} closed before joining`)));
+            slot.addEventListener('close', () => settle(new Error(`Filler ${seat} slot closed before joining`)));
           });
         }
       },

@@ -26,6 +26,29 @@ if (useHttps && !customCert) {
   );
 }
 
+// Set for the end-to-end suite only (`pnpm start:e2e`, and CI's e2e build): points the Worker's
+// Realtime calls at the fake SFU in tests/fake-sfu, with placeholder credentials so P2P rooms take
+// the SFU data plane rather than the relay. Never set on a build that gets deployed.
+// The signaling rate limiter goes too: every page of the suite shares one local IP, far past the
+// budget sized for one real browser.
+const fakeSfuUrl = process.env.E2E_FAKE_SFU_URL;
+const cloudflareOptions: Parameters<typeof cloudflare>[0] = fakeSfuUrl
+  ? {
+      config: (config) => {
+        config.vars = {
+          ...config.vars,
+          REALTIME_APP_ID: 'e2e-fake-sfu',
+          REALTIME_APP_TOKEN: 'e2e-fake-sfu',
+          REALTIME_API_URL: fakeSfuUrl,
+        };
+        // Mutated rather than returned: a returned array is concatenated onto the original.
+        config.ratelimits = config.ratelimits?.filter(({ name }) => name !== 'ONLINE_SIGNALING_RATE_LIMITER');
+      },
+      // Runs next to a regular `pnpm start`; sharing its Durable Object storage would mix rooms.
+      persistState: { path: '.wrangler/state-e2e' },
+    }
+  : undefined;
+
 // https://vitejs.dev/config/
 export default defineConfig({
   // experimental: {
@@ -35,7 +58,7 @@ export default defineConfig({
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
   plugins: [
-    process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(),
+    process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(cloudflareOptions),
     react({
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),
@@ -77,6 +100,8 @@ export default defineConfig({
       : null,
   ],
   base: '/',
+  // The same for the dep cache — two dev servers optimising into one directory trample each other.
+  cacheDir: fakeSfuUrl ? 'node_modules/.vite-e2e' : undefined,
   build: {
     outDir: 'build',
     sourcemap: !process.env.FAST_BUILD,

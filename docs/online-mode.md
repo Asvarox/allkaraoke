@@ -137,8 +137,8 @@ not secret — a room's host session id is handed to anyone who asks for the roo
 anyone could renegotiate somebody else's transport with an answer of their own.
 
 [Cloudflare's echo-datachannels example](https://github.com/cloudflare/realtime-examples/tree/main/echo-datachannels)
-is the reference for all three steps. The end-to-end suite cannot exercise any of it — CI has no
-Realtime app and runs on the relay — so `online-signaling.test.ts` pins the exact request of each
+is the reference for all three steps. The end-to-end suite runs against a fake SFU that only mirrors
+our reading of the API (see Testing), so `online-signaling.test.ts` pins the exact request of each
 call against what the real API accepts.
 
 The host learns which participant owns a slot from the `hello` frame each client sends first — the
@@ -271,14 +271,24 @@ the *other* mode join by code, which is the mixed-room case above.
 SFU, including a takeover from a snapshot.
 
 The end-to-end suite has no Cloudflare Realtime app to talk to — there is no local emulator, and a
-pull-request build has no credentials. So the Worker reports `dataPlane: 'relay'` when Realtime is
-unconfigured and the client opens a WebSocket relay through the room's Durable Object instead
-(`relay-room-connection.ts`). This is deliberately the expensive shape — a server in the middle of
-every message — and production can never take it: the Worker refuses the upgrade whenever the SFU
-is configured. What it buys is that everything above `OnlineRoomChannels` is the production code
-path under test: the room logic, the host runtime, slot binding and the whole succession flow.
+pull-request build has no credentials. So `playwright.config.ts` starts a fake SFU
+(`tests/fake-sfu`): a werift peer implementing just the endpoints the Worker calls, with
+Cloudflare's publish / subscribe / `canReply` routing. `E2E_FAKE_SFU_URL` points the Worker at it
+(see vite.config.mts) — `pnpm start:e2e` sets it for the suite's dev server on port 3020, and CI
+sets it on its e2e build. Every P2P spec therefore runs the production browser code end to end:
+`SfuSession`, `SfuRoomConnection`, the Worker's Realtime calls, and everything above them.
+"Full game flow" asserts no relay socket was opened, so a Worker that silently lost its SFU config
+fails loudly instead of passing on the relay.
 
-The same fallback makes a local checkout work with no Realtime credentials at all.
+The fake is our reading of the API, not the API: it catches regressions in our own code, not a
+misreading of Cloudflare's.
+
+Without Realtime configured — a local checkout with no credentials — the Worker reports
+`dataPlane: 'relay'` and the client opens a WebSocket relay through the room's Durable Object
+instead (`relay-room-connection.ts`). This is deliberately the expensive shape — a server in the
+middle of every message — and production can never take it: the Worker refuses the upgrade whenever
+the SFU is configured. The end-to-end suite no longer runs on it; `online-directory-do.test.ts`
+covers it.
 
 ## ICE: STUN always, TURN opt-in
 

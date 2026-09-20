@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, Page, test } from '@playwright/test';
 
 import { P2P_ROOM_CODE_PATTERN } from '~/modules/online/signaling/protocol';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
@@ -12,8 +12,8 @@ import { newPlayerPage } from './steps/new-player-page';
 import { openOnlinePauseOverlay } from './steps/open-online-pause-overlay';
 import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
-// Online mode's signaling and (in this suite) its relay data plane are part of the Worker that
-// serves the app — see docs/online-mode.md. No separate room server to start.
+// Online mode's signaling is part of the Worker that serves the app — see docs/online-mode.md. P2P
+// rooms run against the fake SFU in tests/fake-sfu, started by playwright.config.ts.
 
 const song = {
   ID: 'e2e-single-english-1995',
@@ -25,6 +25,18 @@ const song = {
 const hostName = 'E2E Host';
 const guestName = 'E2E Guest';
 
+/** Records how a page reached its room: SFU handshakes completed, relay sockets opened. */
+const watchDataPlane = (page: Page) => {
+  const seen = { sfuSessions: 0, relaySockets: 0 };
+  page.on('response', (response) => {
+    if (response.url().endsWith('/online/session/answer') && response.ok()) seen.sfuSessions++;
+  });
+  page.on('websocket', (socket) => {
+    if (socket.url().includes('/relay')) seen.relaySockets++;
+  });
+  return seen;
+};
+
 test.beforeEach(async ({ page, context }) => {
   await initTestMode({ page, context });
   await mockSongs({ page, context });
@@ -33,6 +45,7 @@ test.beforeEach(async ({ page, context }) => {
 test('Online mode: full game flow', async ({ page, context, browser }) => {
   test.slow();
   const pages = initialise(page, context, browser);
+  const hostPlane = watchDataPlane(page);
 
   await test.step('Host reaches online mode from the main menu', async () => {
     await page.goto('/?e2e-test');
@@ -53,6 +66,7 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
 
   const guestPage = await newPlayerPage(browser);
   const guestPages = initialise(guestPage, guestPage.context(), browser);
+  const guestPlane = watchDataPlane(guestPage);
 
   await test.step('Guest joins by link — the code step arrives prefilled from the invite', async () => {
     await guestPages.onlineSetupPage.gotoRoomLink(roomCode);
@@ -194,6 +208,15 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
 
     await guestPages.onlineLobbyPage.leaveRoomAndConfirm();
     await guestPages.onlineLobbyPage.expectNotToBeVisible();
+  });
+
+  await test.step('The whole round went through the SFU, not the relay', async () => {
+    // A Worker that lost its Realtime config (or a dev server started without `pnpm start:e2e`)
+    // silently puts everyone on the relay, and every other assertion here would still pass.
+    expect(hostPlane.sfuSessions).toBeGreaterThan(0);
+    expect(guestPlane.sfuSessions).toBeGreaterThan(0);
+    expect(hostPlane.relaySockets).toBe(0);
+    expect(guestPlane.relaySockets).toBe(0);
   });
 
   await guestPage.context().close();

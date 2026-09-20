@@ -63,14 +63,17 @@ jobs:
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
         # The Realtime app credentials are stripped rather than merely absent from the example:
-        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
-        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
-        # exercises the same room logic, host runtime and succession path over a local wire.
+        # the E2E build supplies its own, pointing at the fake SFU (see the build step below).
         run: |
           cp .dev.vars.example .dev.vars
           sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
+        # Points the Worker at the fake SFU that playwright.config.ts starts (tests/fake-sfu), so
+        # P2P rooms run on the SFU data plane. This build is only ever served to the suite — the
+        # deploy job builds its own, without it.
         run: pnpm build
+        env:
+          E2E_FAKE_SFU_URL: http://127.0.0.1:3480/v1
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
@@ -190,16 +193,18 @@ jobs:
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
         # The Realtime app credentials are stripped rather than merely absent from the example:
-        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
-        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
-        # exercises the same room logic, host runtime and succession path over a local wire.
+        # the build below supplies its own, pointing at the fake SFU.
         run: |
           cp .dev.vars.example .dev.vars
           sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
+        # Same fake SFU as the e2e job — the online visual specs open a real P2P room, so this build
+        # must reach the same data plane rather than falling back to the relay.
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
           pnpm build
+        env:
+          E2E_FAKE_SFU_URL: http://127.0.0.1:3480/v1
       - name: Run visual regression tests and update snapshots
         uses: './.github/templates/run-playwright'
         with:
