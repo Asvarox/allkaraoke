@@ -279,7 +279,8 @@ export function UnverifiedSongManagement({ password }: Props) {
               <span>
                 <Link
                   to={buildAdminUnverifiedSongProcessingUrl(row.original.sharedSongId)}
-                  aria-label={`Edit ${row.original.title}`}>
+                  aria-label={`Edit ${row.original.title}`}
+                  asChild>
                   <IconButton data-test="edit-unverified-song" data-song={row.original.sharedSongId}>
                     <Icon icon="ic:baseline-edit" />
                   </IconButton>

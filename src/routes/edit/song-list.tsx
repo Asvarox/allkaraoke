@@ -38,7 +38,7 @@ export default function SongList() {
 
           <div className="grid grid-cols-12 items-center gap-y-4">
             <div className="col-span-3 flex items-center justify-start">
-              <Link to="menu/">
+              <Link to="menu/" asChild>
                 <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
             </div>
@@ -55,7 +55,7 @@ export default function SongList() {
               </h4>
             </div>
             <div className="col-span-3 flex items-center justify-end">
-              <Link to="convert/">
+              <Link to="convert/" asChild>
                 <Button data-test="convert-song" variant={'contained'}>
                   Import UltraStar .TXT
                 </Button>
@@ -67,7 +67,7 @@ export default function SongList() {
                 data={data}
                 renderRowActions={({ row }) => (
                   <>
-                    <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })}>
+                    <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })} asChild>
                       <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
                         <Icon icon="ic:baseline-edit" />
                       </IconButton>

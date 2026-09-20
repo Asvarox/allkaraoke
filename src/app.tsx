@@ -1,7 +1,7 @@
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
 import { PostHogErrorBoundary } from 'posthog-js/react';
 import { Suspense, lazy, useMemo, useState } from 'react';
-import { Route, Router, Switch } from 'wouter';
+import { AroundNavHandler, Route, Router, Switch } from 'wouter';
 
 import { ErrorFallback } from '~/modules/elements/error-fallback';
 import LayoutWithBackgroundProvider from '~/modules/elements/layout-with-background';
@@ -37,6 +37,12 @@ const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) =
 // module's eager glob import of the test screenshot PNGs) is dead-code-eliminated from production builds.
 const LazyDevScreenshots = import.meta.env.DEV ? lazy(() => import('~/routes/dev-screenshots/dev-screenshots')) : null;
 
+// The app navigates with base-relative paths (`menu/`). wouter v3 treats a `/` base as empty and joins it
+// with the target as-is, which would turn them into document-relative URLs (`/edit/song/menu/`), so anchor
+// them at the root the way wouter v2 did
+const toAbsolutePath = (path: string) => (path.startsWith('/') ? path : `/${path}`);
+const aroundNav: AroundNavHandler = (navigate, to, options) => navigate(toAbsolutePath(to), options);
+
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
 // // without increasing initial load time. Vite doesn't support prefetch yet
@@ -65,7 +71,7 @@ function App() {
         fallback={(props) => <ErrorFallback {...props} resetError={() => setErrorBoundaryKey((key) => key + 1)} />}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
-            <Router base={import.meta.env.BASE_URL}>
+            <Router base={import.meta.env.BASE_URL} hrefs={toAbsolutePath} aroundNav={aroundNav}>
               <Switch>
                 <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
                 <Route path={routePaths.MENU} component={Welcome} />

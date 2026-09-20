@@ -54,7 +54,7 @@ jobs:
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
@@ -142,7 +142,7 @@ jobs:
 
   browser-tests-run:
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -178,7 +178,7 @@ jobs:
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
