@@ -1158,20 +1158,57 @@ describe('chat', () => {
     });
   });
 
-  it('keeps the room alive without forcing a snapshot write per message', () => {
+  describe('persistence', () => {
+    it('writes a lone message out rather than leaving it in memory', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      room.persist.mockClear();
+
+      say(room, 'p2', 'said once, then quiet');
+
+      // The PartyKit room has no periodic write of its own, so a message that never persists is
+      // lost the moment it hibernates — acknowledged to the sender and gone.
+      expect(room.persist).toHaveBeenCalledTimes(1);
+      const written = room.persist.mock.calls[0][0] as OnlinePersistedState;
+      expect(written.chat).toEqual([expect.objectContaining({ text: 'said once, then quiet' })]);
+    });
+
+    it('coalesces a burst into far fewer writes than messages', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      room.persist.mockClear();
+
+      // Spread just enough to stay under the burst limit while staying well inside one persist
+      // window, so the coalescing is what is being measured rather than the rate limiter.
+      for (let i = 0; i < 4; i++) {
+        say(room, 'p2', `burst ${i}`);
+        vi.advanceTimersByTime(ONLINE_CHAT_BURST_WINDOW_MS / ONLINE_CHAT_BURST_LIMIT + 1);
+      }
+
+      // The whole history rides the snapshot, and in a P2P room persisting broadcasts it to the
+      // succession line — a write per message would put the entire backlog on the wire for every
+      // line sent.
+      expect(room.persist.mock.calls.length).toBeLessThan(4);
+      expect(room.persist).toHaveBeenCalled();
+    });
+
+    it('counts a message as activity, pushing the room TTL out', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+
+      vi.advanceTimersByTime(ONLINE_ROOM_TTL_MS / 2);
+      room.scheduleWake.mockClear();
+      say(room, 'p2', 'still here');
+
+      expect(room.scheduleWake).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    });
+  });
+
+  it('refuses the backlog to someone who is not in the room', () => {
     const room = createRoom();
-    join(room, ['p1', 'p2']);
-    room.persist.mockClear();
+    join(room, ['p1']);
+    say(room, 'p1', 'members only');
 
-    vi.advanceTimersByTime(ONLINE_ROOM_TTL_MS / 2);
-    room.scheduleWake.mockClear();
-    say(room, 'p2', 'still here');
-
-    // The whole history rides the snapshot, and in a P2P room persisting broadcasts it to the
-    // succession line — so a message must not trigger one. The periodic rebroadcast carries it.
-    expect(room.persist).not.toHaveBeenCalled();
-    // It does still count as activity, though: the TTL alarm is re-armed a full window out from
-    // the message rather than being left where it was when the room last published.
-    expect(room.scheduleWake).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    expect(() => room.handlers.chat.getHistory.handler(ctx('stranger'))).toThrow('Not a participant');
   });
 });

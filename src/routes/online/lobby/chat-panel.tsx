@@ -84,18 +84,21 @@ function ChatPanel({ register, inline }: Props) {
         ref={scroller}
         // Takes the leftover height beside the card, so the input sits at the bottom of the panel
         // rather than halfway up it. `min-h-0` because a flex child defaults to its content's
-        // height and would otherwise push past the panel instead of scrolling inside it. Inline,
-        // there is no height to fill, so it falls back to a fixed one.
-        className={cn(
-          'text-md flex flex-col justify-end gap-1 overflow-y-hidden text-white',
-          inline ? 'h-48' : 'min-h-0 flex-1',
-        )}
+        // height and would otherwise push the list past the panel instead of scrolling inside it.
+        // Inline there is no height to fill, so it falls back to a fixed one.
+        className={cn('text-md flex flex-col overflow-y-auto text-white', inline ? 'h-48' : 'min-h-0 flex-1')}
         data-test="online-chat-messages">
-        {lines.length === 0 ? (
-          <Menu.HelpText className="text-center">Say hi while you wait.</Menu.HelpText>
-        ) : (
-          lines.map((line) => <ChatLineRow key={line.id} line={line} />)
-        )}
+        {/* `mt-auto` rather than `justify-end` on the scroller: both push a short conversation to
+            the bottom, but a flex container that justifies to the end overflows past its *start*
+            edge, and that overflow cannot be scrolled back to. With the rows in an auto-margined
+            block, a long history scrolls normally. */}
+        <div className="mt-auto flex flex-col gap-1">
+          {lines.length === 0 ? (
+            <Menu.HelpText className="text-center">Say hi while you wait.</Menu.HelpText>
+          ) : (
+            lines.map((line) => <ChatLineRow key={line.id} line={line} />)
+          )}
+        </div>
       </div>
       <div {...navProps}>
         <Input
@@ -104,8 +107,10 @@ function ChatPanel({ register, inline }: Props) {
           size="small"
           label={null}
           value={draft}
-          onChange={setDraft}
-          maxLength={ONLINE_MAX_CHAT_LENGTH}
+          // Cut to the same unit the room measures in. `maxLength` counts UTF-16 units, so a
+          // field capped that way stops an emoji-heavy message well short of what the room would
+          // actually have accepted.
+          onChange={(value) => setDraft([...value].slice(0, ONLINE_MAX_CHAT_LENGTH).join(''))}
           placeholder="Say something…"
           onKeyDown={(e) => {
             // Enter sends and keeps the focus — the search bar blurs on Enter, but a chat box you
@@ -134,10 +139,12 @@ function ChatPanel({ register, inline }: Props) {
               aria-label="Send"
               className="flex disabled:cursor-default"
               disabled={!canSend}
-              onMouseDown={(e) => {
-                e.preventDefault();
-                void submit();
-              }}
+              // `onMouseDown` only keeps the focus where it is — mousedown would otherwise blur
+              // the field, and a blur hands the keyboard back to the lobby. Sending is on
+              // `onClick` so that activating the button from the keyboard works too; preventing
+              // mousedown's default does not stop the click that follows it.
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={() => void submit()}
               data-test="online-chat-send">
               <Icon
                 icon="ic:baseline-send"

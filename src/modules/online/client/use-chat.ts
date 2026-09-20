@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
+import { useOnlineConnectionStatus } from '~/modules/online/client/hooks';
 import { trackOnlineChatMessageSent } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
-import { ONLINE_CHAT_RATE_LIMIT_ERROR } from '~/modules/online/protocol/consts';
+import { ONLINE_CHAT_HISTORY_SIZE, ONLINE_CHAT_RATE_LIMIT_ERROR } from '~/modules/online/protocol/consts';
 import { ChatMessage } from '~/modules/online/protocol/types';
 import { chatMessage as chatMessageSound } from '~/modules/sound-manager';
 
@@ -24,18 +25,47 @@ export type ChatSendFailure = 'rate-limited' | 'disconnected';
  * anyone in the room can hear. */
 const SOUND_THROTTLE_MS = 400;
 
+/** Drops the oldest lines once there are more than the room itself keeps. The room evicts at
+ * ONLINE_CHAT_HISTORY_SIZE, but a client accumulates everything published while it is open, so
+ * without this a long-running lobby grows without bound — and would show scrollback the room can
+ * no longer hand to anyone who joins later. */
+const capHistory = (lines: ChatLine[]): ChatLine[] =>
+  lines.length > ONLINE_CHAT_HISTORY_SIZE ? lines.slice(lines.length - ONLINE_CHAT_HISTORY_SIZE) : lines;
+
 /** Appends `incoming` unless the id is already there, and replaces a pending line of the same id
  * with the room's confirmed copy. Ordering is append-only: ids are random, so position in the
  * array is the only ordering there is, and the room's is the one that counts. */
 const mergeMessage = (lines: ChatLine[], incoming: ChatMessage): ChatLine[] => {
   const existing = lines.findIndex((line) => line.id === incoming.id);
-  if (existing === -1) return [...lines, incoming];
+  if (existing === -1) return capHistory([...lines, incoming]);
   // Confirming our own pending line: take the room's copy (its `at`, and its normalized text),
   // and leave it where it already sits rather than moving it to the end.
   const next = [...lines];
   next[existing] = incoming;
   return next;
 };
+
+/**
+ * Asks the room for the backlog and folds it in ahead of whatever this client already has.
+ *
+ * History first, then anything that arrived while the request was in flight (and anything still
+ * pending), in the order this client saw them — reconciled by id, so the duplicate the
+ * subscribe-then-fetch ordering deliberately produces collapses instead of showing twice.
+ */
+const fetchHistory = (disposed: () => boolean, setLines: Dispatch<SetStateAction<ChatLine[]>>) =>
+  OnlineClient.rpc.chat
+    .getHistory()
+    .then((history) => {
+      if (disposed()) return;
+      setLines((current) => {
+        const known = new Set(history.map((message) => message.id));
+        return capHistory([...history, ...current.filter((line) => !known.has(line.id))]);
+      });
+    })
+    .catch(() => {
+      // A room mid-handover has nobody to answer yet. The live channel keeps working, and the
+      // reconnect effect below asks again once the client is attached to whoever took over.
+    });
 
 /**
  * The lobby's chat.
@@ -68,27 +98,32 @@ export const useOnlineChat = () => {
       void chatMessageSound.play();
     });
 
-    void OnlineClient.rpc.chat
-      .getHistory()
-      .then((history) => {
-        if (disposed) return;
-        // History first, then anything that arrived while it was in flight (and anything still
-        // pending), in the order this client saw them.
-        setLines((current) => {
-          const known = new Set(history.map((message) => message.id));
-          return [...history, ...current.filter((line) => !known.has(line.id))];
-        });
-      })
-      .catch(() => {
-        // A room mid-handover has no one to answer — the next reconnect retries, and the live
-        // channel keeps working in the meantime.
-      });
+    void fetchHistory(() => disposed, setLines);
 
     return () => {
       disposed = true;
       unsubscribe();
     };
   }, []);
+
+  // Anything published while this client was not attached never reached the channel, so the
+  // backlog has to be asked for again on every reconnect — and a P2P host handover is a reconnect
+  // to a *different* room runtime, which is exactly when the gap is most likely. Reconciling by id
+  // means a refetch that turns up nothing new costs a render and no visible change.
+  const [status] = useOnlineConnectionStatus();
+  const wasConnected = useRef(status === 'connected');
+  useEffect(() => {
+    const connected = status === 'connected';
+    const reconnected = connected && !wasConnected.current;
+    wasConnected.current = connected;
+    if (!reconnected) return;
+
+    let disposed = false;
+    void fetchHistory(() => disposed, setLines);
+    return () => {
+      disposed = true;
+    };
+  }, [status]);
 
   /**
    * Sends a message, showing it faded straight away.

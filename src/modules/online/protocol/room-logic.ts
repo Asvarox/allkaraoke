@@ -8,6 +8,7 @@ import {
   ONLINE_CHAT_BURST_LIMIT,
   ONLINE_CHAT_BURST_WINDOW_MS,
   ONLINE_CHAT_HISTORY_SIZE,
+  ONLINE_CHAT_PERSIST_MS,
   ONLINE_CHAT_RATE_LIMIT,
   ONLINE_CHAT_RATE_LIMIT_ERROR,
   ONLINE_CHAT_RATE_WINDOW_MS,
@@ -424,6 +425,14 @@ export class OnlineRoomLogic {
     'leaderboard-throttle',
     ONLINE_LEADERBOARD_PUBLISH_MS,
     this.publishLeaderboard,
+  );
+
+  /** Chat messages arrive faster than the room should write itself out — see
+   * ONLINE_CHAT_PERSIST_MS for why this is neither per-message nor skipped entirely. The leading
+   * edge fires immediately, so a single message in a quiet room is written at once rather than
+   * waiting for a second one that may never come. */
+  private queueChatPersist = this.createCoalescedPublisher('chat-persist', ONLINE_CHAT_PERSIST_MS, () =>
+    this.deps.persist(this.snapshot()),
   );
 
   // Ping/volume snapshots arrive continuously from every singer — same coalescing as scores.
@@ -995,14 +1004,21 @@ export class OnlineRoomLogic {
         if (this.chat.length > ONLINE_CHAT_HISTORY_SIZE) {
           this.chat.splice(0, this.chat.length - ONLINE_CHAT_HISTORY_SIZE);
         }
-        // Chatting keeps the room alive, but does not earn an immediate snapshot — see `touch`.
+        // Chatting keeps the room alive; the write itself is coalesced rather than skipped, so a
+        // room that hibernates right after a message still has it. See `queueChatPersist`.
         this.touch({ persist: false });
+        this.queueChatPersist();
         this.deps.publish('chat', message);
         return message;
       }),
       /** The whole history, for a client that just joined. The channel only ever carries the
-       * newest message, so this is the one place the backlog is handed out. */
-      getHistory: defineQuery((): ChatMessage[] => [...this.chat]),
+       * newest message, so this is the one place the backlog is handed out — and the one place
+       * the whole conversation can be read in a single call, so it is gated on actually being in
+       * the room rather than merely being able to reach it. */
+      getHistory: defineQuery((ctx): ChatMessage[] => {
+        this.requireParticipant(ctx.senderId);
+        return [...this.chat];
+      }),
     },
     playback: {
       pause: defineMutation((ctx) => {

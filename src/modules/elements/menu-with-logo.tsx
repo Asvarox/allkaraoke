@@ -38,7 +38,13 @@ function MenuWithLogo({ children, supportedBrowsers, sidePanel, ...props }: Prop
           // responsible for filling the height it is given (`h-full`).
           <div className="flex w-full items-stretch justify-center gap-6">
             <Menu {...props}>{children}</Menu>
-            <div className="hidden w-[31rem] shrink-0 lg:block">{sidePanel}</div>
+            {/* The panel is taken out of flow (`absolute inset-0` against this `relative` box) so
+                that the menu alone decides how tall the row is. Left in flow it would also *drive*
+                the height, and a panel with a long scrolling list — a chat — would grow the whole
+                page instead of scrolling inside the space it was given. */}
+            <div className="relative hidden w-[31rem] shrink-0 lg:block">
+              <div className="absolute inset-0">{sidePanel}</div>
+            </div>
           </div>
         ) : (
           <Menu {...props}>{children}</Menu>
