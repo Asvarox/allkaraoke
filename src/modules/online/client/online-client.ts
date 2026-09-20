@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
-import { trackOnlineRoomConnectAttempt } from '~/modules/online/client/online-analytics';
+import { trackOnlinePing, trackOnlineRoomConnectAttempt } from '~/modules/online/client/online-analytics';
 import { OnlineRoomMode, roomModeOf } from '~/modules/online/client/room-mode';
 import { createRoomConnection } from '~/modules/online/client/transport/create-room-connection';
 import {
@@ -89,7 +89,22 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private shouldReconnect = false;
   private reconnectAttempts = 0;
   private clockOffsetMs = 0;
-  private pingPong = new PingPongTracker();
+  private pingPong = new PingPongTracker({ onMeasurement: (ping) => this.reportPing(ping) });
+
+  /** Feeds the ping loop's measurements to analytics. Reads the mode, the loopback flag and the
+   * data plane at report time rather than at connect time: a host takeover flips `getIsHosting()`
+   * mid-room, and attributing a post-takeover measurement to the old role would put a loopback
+   * reading in the network sample. */
+  private reportPing = (ping: number) => {
+    if (!this.roomCode) return;
+    trackOnlinePing({
+      ping,
+      roomCode: this.roomCode,
+      roomMode: this.getMode(),
+      isLoopbackHost: this.getIsHosting(),
+      dataPlane: this.connection?.getDataPlane() ?? null,
+    });
+  };
   /** Set while this browser has gone idle (see `useIsUserActive`). Nothing here holds a server
    * awake any more, but a silent client still costs the host bandwidth and everyone else a row
    * that pretends to be live, so the loop still stops. */

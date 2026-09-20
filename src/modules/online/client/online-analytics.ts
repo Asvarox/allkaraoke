@@ -1,7 +1,10 @@
+import { throttle } from 'es-toolkit';
 import posthog from 'posthog-js';
 
 import { GAME_MODE, Song } from '~/interfaces';
+import { OnlineRoomMode } from '~/modules/online/client/room-mode';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
+import { OnlineDataPlane } from '~/modules/online/signaling/protocol';
 
 /** Non-reversible digest of the room code for event correlation — avoids sending the raw,
  * joinable room code to the analytics vendor while still letting events for the same room be
@@ -67,3 +70,36 @@ export const trackOnlineDriftSeek = (songId: string, driftMs: number) => {
 export const trackOnlinePlayerKicked = () => {
   posthog.capture('onlinePlayerKicked');
 };
+
+/** How much of the ping loop reaches analytics. The tracker measures every couple of seconds,
+ * which is what the live readout needs and far more than a transport comparison does — one sample
+ * a minute per client keeps a long room from drowning out a short one. */
+const PING_REPORT_INTERVAL_MS = 60_000;
+
+interface OnlinePingReport {
+  ping: number;
+  roomCode: string;
+  roomMode: OnlineRoomMode;
+  /** True while this browser is the p2p host, whose transport is a loopback into its own tab: the
+   * measurement is then ~0 and is not a network reading at all. Server-mode rooms have no loopback
+   * — every client, room controller included, is on a real socket to the PartyKit room — so this is
+   * only ever true for `p2p`. Reported rather than dropped, so a per-player latency view can keep
+   * it while a transport comparison filters it out. */
+  isLoopbackHost: boolean;
+  /** Null in server mode, where the room's Durable Object is the data plane and there is no
+   * connection to ask. */
+  dataPlane: OnlineDataPlane | null;
+}
+
+/** Round-trip latency to whoever runs the room, for comparing the PartyKit and P2P transports.
+ * `roomMode` has to be sent explicitly — `roomCodeHash` destroys the lead character `roomModeOf`
+ * reads the mode from. */
+export const trackOnlinePing = throttle(({ ping, roomCode, roomMode, isLoopbackHost, dataPlane }: OnlinePingReport) => {
+  posthog.capture('onlinePing', {
+    ping,
+    roomMode,
+    isLoopbackHost,
+    dataPlane,
+    roomCodeHash: hashRoomCode(roomCode),
+  });
+}, PING_REPORT_INTERVAL_MS);

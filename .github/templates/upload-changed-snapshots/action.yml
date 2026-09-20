@@ -1,0 +1,71 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
+name: upload-changed-snapshots
+description: >-
+  Uploads the screenshot references a preceding snapshot-updating test run (Playwright `-u`,
+  Vitest browser mode `--update`) actually changed, as a GitHub Actions artifact. Meant to run
+  after reset-snapshot-baseline, so "changed" means "differs from the PR's target branch".
+
+  Only changed files are uploaded, never the whole snapshot directory: a shard only renders the
+  tests it ran, so uploading everything would let one shard's untouched copies overwrite another
+  shard's updates when the commit-snapshots job merges all artifacts. Files keep their repo-relative
+  paths inside the artifact.
+
+inputs:
+  name:
+    required: true
+    description: >-
+      Artifact name. Must start with 'changed-snapshots-' (the commit-snapshots job downloads that
+      pattern) and be unique per job and shard, e.g. 'changed-snapshots-browser-1'.
+  snapshotDir:
+    required: true
+    description: "Same as reset-snapshot-baseline's snapshotDir"
+  snapshotSuffix:
+    required: true
+    description: "Same as reset-snapshot-baseline's snapshotSuffix"
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Collect changed snapshots
+      id: collect
+      shell: bash
+      # Same file selection as reset-snapshot-baseline (a "*-snapshots" or "__snapshots__" directory
+      # segment and the given suffix). Only the worktree column of `git status` counts: the reset
+      # left the index holding the target branch's files, so that column is exactly "the fresh
+      # render differs from the target branch" - modified (M) or not there at all (??).
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        SNAPSHOT_DIR='${{ inputs.snapshotDir }}'
+        SNAPSHOT_SUFFIX='${{ inputs.snapshotSuffix }}'
+        STAGING_DIR="$RUNNER_TEMP/changed-snapshots"
+        rm -rf "$STAGING_DIR"
+        mkdir -p "$STAGING_DIR"
+
+        COUNT=0
+        while IFS= read -r -d '' ENTRY; do
+          CODE="${ENTRY:0:2}"
+          FILE="${ENTRY:3}"
+          # A rename/copy record is followed by its source path as a separate record
+          if [[ "${CODE:0:1}" == R || "${CODE:0:1}" == C ]]; then
+            read -r -d '' _ || true
+          fi
+          [[ "$CODE" == '??' || "${CODE:1:1}" == M ]] || continue
+          [[ "$FILE" == *"$SNAPSHOT_SUFFIX" ]] || continue
+          [[ "/$FILE" == */__snapshots__/* || "/$FILE" == *-snapshots/* ]] || continue
+
+          mkdir -p "$STAGING_DIR/$(dirname "$FILE")"
+          cp "$FILE" "$STAGING_DIR/$FILE"
+          echo "Changed: $FILE"
+          COUNT=$((COUNT + 1))
+        done < <(git status --porcelain=v1 -z --untracked-files=all -- "$SNAPSHOT_DIR")
+
+        echo "$COUNT changed snapshot(s)"
+        echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+        echo "dir=$STAGING_DIR" >> "$GITHUB_OUTPUT"
+    - uses: actions/upload-artifact@v4
+      if: steps.collect.outputs.count != '0'
+      with:
+        name: ${{ inputs.name }}
+        path: ${{ steps.collect.outputs.dir }}
+        retention-days: 7

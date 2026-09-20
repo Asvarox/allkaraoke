@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useSearch } from 'wouter/use-location';
+import { useSearch } from 'wouter';
 
 export default function useQueryParam(param: string) {
   const search = useSearch();

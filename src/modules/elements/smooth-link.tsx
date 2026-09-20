@@ -1,15 +1,18 @@
-import { ComponentProps, HTMLAttributes, MouseEventHandler } from 'react';
+import { AnchorHTMLAttributes, MouseEventHandler, ReactElement } from 'react';
 import { Link } from 'wouter';
 
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 
-interface Props extends Omit<ComponentProps<typeof Link>, 'href' | 'to'> {
+interface BaseProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'onClick'> {
   to: string;
   disabled?: boolean;
-  onClick?: HTMLAttributes<HTMLElement>['onClick'];
+  onClick?: MouseEventHandler<HTMLElement>;
 }
 
-export default function SmoothLink(props: Props) {
+// Mirrors wouter's Link: renders an <a>, or with `asChild` passes the link props to its only child
+type Props = (BaseProps & { asChild?: false }) | (BaseProps & { asChild: true; children: ReactElement });
+
+export default function SmoothLink({ asChild, ...props }: Props) {
   const navigate = useSmoothNavigate();
   const handleClick: MouseEventHandler<HTMLElement> = (e) => {
     if (!props.onClick) {
@@ -20,5 +23,11 @@ export default function SmoothLink(props: Props) {
     }
   };
 
-  return <Link {...props} onClick={handleClick} />;
+  return asChild ? (
+    <Link {...props} asChild onClick={handleClick}>
+      {props.children as ReactElement}
+    </Link>
+  ) : (
+    <Link {...props} onClick={handleClick} />
+  );
 }

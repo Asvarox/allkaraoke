@@ -296,7 +296,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         <div className="col-span-12">
           {!isEdit && (
             <div className="mb-4">
-              <Link to="menu/">
+              <Link to="menu/" asChild>
                 <a>Return to the main menu</a>
               </Link>
             </div>

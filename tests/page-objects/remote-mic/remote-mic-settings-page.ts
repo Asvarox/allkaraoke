@@ -1,4 +1,4 @@
-import { expect } from '@playwright/experimental-ct-react';
+import { expect } from '@playwright/test';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 import { RemoteTabBar } from '../../page-objects/remote-mic/remote-components/remote-tab-bar';

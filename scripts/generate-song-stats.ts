@@ -1,5 +1,4 @@
-import { execSync } from 'child_process';
-import { existsSync, statSync, writeFileSync } from 'fs';
+import { writeFileSync } from 'fs';
 
 import { uniq } from 'es-toolkit';
 
@@ -7,46 +6,12 @@ import { SongPreview } from '~/interfaces';
 
 const targetFile = './src/routes/landing-page/song-stats.json';
 
-// Skip running the script if the target file has been modified in the last 4 days
-if (existsSync(targetFile)) {
-  let lastModifiedTime = 0;
-
-  try {
-    const gitTimeStr = execSync(`git log -1 --format=%ct -- "${targetFile}"`, { encoding: 'utf-8' }).trim();
-    if (gitTimeStr) {
-      lastModifiedTime = parseInt(gitTimeStr, 10) * 1000;
-    }
-  } catch (error) {
-    console.warn('Failed to get last commit time via git:', error);
-  }
-
-  // Fallback to fs.stat mtime if git failed or returned nothing
-  if (!lastModifiedTime) {
-    try {
-      lastModifiedTime = statSync(targetFile).mtimeMs;
-    } catch (error) {
-      console.warn('Failed to get file mtime via stat:', error);
-    }
-  }
-
-  if (lastModifiedTime) {
-    const fourDaysInMs = 4 * 24 * 60 * 60 * 1000;
-    const timeSinceLastChange = Date.now() - lastModifiedTime;
-    if (timeSinceLastChange < fourDaysInMs) {
-      console.log(
-        `Skipping song stats generation: target file was modified ${(timeSinceLastChange / (24 * 60 * 60 * 1000)).toFixed(2)} days ago (limit is 4 days).`,
-      );
-      process.exit(0);
-    }
-  }
-}
-
 /** How many of the newest songs the landing page's "recently added" rail rotates through. */
 const RECENTLY_ADDED_COUNT = 48;
 /**
  * How far back the per-day tally reaches. The landing page counts the last 30 days out of it at
- * runtime rather than reading a number baked in here: this file is regenerated at most every few
- * days, and a count frozen at generation time would keep claiming songs that have since aged out
+ * runtime rather than reading a number baked in here: this file is only regenerated when songs
+ * change, and a count frozen at generation time would keep claiming songs that have since aged out
  * of the window.
  */
 const ADDITIONS_HISTORY_DAYS = 60;

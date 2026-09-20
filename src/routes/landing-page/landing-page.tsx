@@ -128,14 +128,14 @@ function LandingPage() {
                 <div className="hidden flex-1 lg:block" />
 
                 <div className="mt-5 hidden flex-col gap-2 lg:flex">
-                  <SmoothLink to={nextPage}>
+                  <SmoothLink to={nextPage} asChild>
                     <PrimaryCta size="regular" data-test="enter-the-game">
                       Enter the game
                     </PrimaryCta>
                   </SmoothLink>
                   <Typography className="text-md text-center">
                     Have a game code?{' '}
-                    <SmoothLink to="remote-mic/">
+                    <SmoothLink to="remote-mic/" asChild>
                       <a data-test="join-existing-game">Join instead</a>
                     </SmoothLink>
                   </Typography>
@@ -170,7 +170,7 @@ function LandingPage() {
                   Friends not in the room? Host a game they join from their own browser — same songs, same scoring.
                 </Typography>
               </div>
-              <SmoothLink to="online/">
+              <SmoothLink to="online/" asChild>
                 <ButtonLink data-test="sing-online" subtleFocused focused size="small">
                   Host or join an online room
                 </ButtonLink>
@@ -208,7 +208,7 @@ function LandingPage() {
             covering it — and blurred behind, because what it is pinned over is a pair of
             screenshots. */}
         <div className="sticky bottom-0 z-10 flex flex-col gap-3 rounded-xl bg-black/40 p-2 backdrop-blur-sm sm:flex-row lg:hidden">
-          <SmoothLink to="remote-mic/" className="flex-1">
+          <SmoothLink to="remote-mic/" asChild>
             <PrimaryCta data-test="join-existing-game">
               <span className="flex flex-col items-center leading-tight">
                 Join with code
@@ -216,7 +216,7 @@ function LandingPage() {
               </span>
             </PrimaryCta>
           </SmoothLink>
-          <SmoothLink to="quick-setup/" className="flex-1">
+          <SmoothLink to="quick-setup/" asChild>
             <SecondaryCta data-test="enter-the-game">Start new game</SecondaryCta>
           </SmoothLink>
         </div>

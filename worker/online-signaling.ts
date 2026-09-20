@@ -180,6 +180,12 @@ const mintCloudflareTurn = async (env: OnlineSignalingEnv): Promise<IceServerDto
 };
 
 const handleIceServers = async (request: Request, env: OnlineSignalingEnv) => {
+  // Only the end-to-end suite points this at something other than Cloudflare, and that fake runs on
+  // loopback: there is no public address for STUN to discover. Handing out a STUN server that the
+  // test environment cannot reach leaves Chromium in 'checking' until the join times out, instead of
+  // pairing the host candidates it already has.
+  if (env.REALTIME_API_URL) return json<IceServersResponse>(request, { iceServers: [] });
+
   const stun: IceServerDto = {
     urls: splitUrls(env.ONLINE_STUN_URLS).length ? splitUrls(env.ONLINE_STUN_URLS) : DEFAULT_STUN_URLS,
   };

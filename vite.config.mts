@@ -1,5 +1,6 @@
 import { cloudflare } from '@cloudflare/vite-plugin';
 import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
+import { playwright } from '@vitest/browser-playwright';
 import babel from '@rolldown/plugin-babel';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
@@ -127,15 +128,67 @@ export default defineConfig({
 
   test: {
     globals: true,
-    setupFiles: 'src/setup-tests.ts',
     projects: [
       {
         extends: true,
         test: {
           environment: 'happy-dom',
           name: 'app',
+          setupFiles: 'src/setup-tests.ts',
           include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-          exclude: [...configDefaults.exclude, 'functions/**/*.test.ts', 'worker/**/*.test.ts', '.claude/**/*'],
+          exclude: [
+            ...configDefaults.exclude,
+            '**/*.browser.test.{ts,tsx}',
+            'functions/**/*.test.ts',
+            'worker/**/*.test.ts',
+            '.claude/**/*',
+          ],
+        },
+      },
+      {
+        extends: true,
+        // Imported dynamically, so the optimizer only discovers it mid-run and reloads the page under the test
+        optimizeDeps: { include: ['aubiojs'] },
+        test: {
+          name: 'browser',
+          setupFiles: 'src/setup-tests.browser.ts',
+          include: ['src/**/*.browser.test.{ts,tsx}'],
+          browser: {
+            enabled: true,
+            headless: true,
+            provider: playwright({
+              launchOptions: {
+                args: [
+                  '--no-sandbox',
+                  '--font-render-hinting=none', // https://github.com/microsoft/playwright/issues/20097
+                  '--mute-audio',
+                  '--allow-file-access-from-files',
+                  '--use-fake-ui-for-media-stream',
+                  '--use-fake-device-for-media-stream',
+                  '--use-file-for-fake-audio-capture=tests/fixtures/test-440hz.wav',
+                  ...(process.env.CI ? [] : ['--use-gl=egl']),
+                ],
+              },
+            }),
+            instances: [{ browser: 'chromium' }],
+            locators: {
+              testIdAttribute: 'data-test',
+            },
+            expect: {
+              toMatchScreenshot: {
+                // Keeps the layout the Playwright CT suite used: one shared root directory, split per test
+                // file, and `-ci` references for the Linux CI container vs. per-platform ones locally
+                resolveScreenshotPath: ({ arg, ext, root, testFileDirectory, testFileName }) =>
+                  path.join(
+                    root,
+                    '__snapshots__',
+                    path.relative('src', testFileDirectory),
+                    testFileName,
+                    `${arg}${process.env.CI ? '-ci' : `-${process.platform}`}${ext}`,
+                  ),
+              },
+            },
+          },
         },
       },
       {

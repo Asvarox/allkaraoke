@@ -54,7 +54,7 @@ jobs:
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
@@ -143,73 +143,68 @@ jobs:
             }
             await github.rest.issues.createComment({ owner, repo, issue_number, body });
 
-  ct-tests-run:
+  browser-tests-run:
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
-    permissions:
-      contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
-      pull-requests: write # allows commenting on a PR
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - name: Run Component Tests
+      - name: Run browser tests
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: './.github/templates/run-playwright'
-        with:
-          config: 'playwright-ct.config.mts'
-      - name: Run Component Tests and update snapshots
+        run: pnpm test:browser --run
+      - name: Reset snapshot baseline to target branch
         if: github.ref != 'refs/heads/master'
-        uses: './.github/templates/run-playwright'
+        uses: './.github/templates/reset-snapshot-baseline'
         with:
-          config: 'playwright-ct.config.mts'
-          updateSnapshots: 'true'
-          snapshotDir: '__snapshots__' # per playwright-ct.config.mts's snapshotDir
-          snapshotSuffix: '-ci.png' # per playwright-ct.config.mts's snapshotPathTemplate
-      - name: Commit snapshots and comment with diff thumbnails
+          snapshotDir: '__snapshots__' # per the browser project's resolveScreenshotPath in vite.config.mts
+          snapshotSuffix: '-ci.png' # per the browser project's resolveScreenshotPath in vite.config.mts
+      - name: Run browser tests and update snapshots
         if: github.ref != 'refs/heads/master'
-        uses: './.github/templates/commit-and-comment-snapshots'
+        run: pnpm test:browser --run --update
+      - name: Upload changed snapshots
+        if: github.ref != 'refs/heads/master'
+        uses: './.github/templates/upload-changed-snapshots'
         with:
-          commit-message: '[ci-skip][skip-release-notes] chore: update visual regression snapshots'
-          comment-body: 'Changes detected in visual regression tests. Please review.'
-          comment-link-text: 'View the run that committed the updated snapshots'
-          cloudflare-branch-prefix: 'ct'
-          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          cloudflare-account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          name: 'changed-snapshots-browser-1' # when sharding, suffix with the shard index
+          snapshotDir: '__snapshots__'
+          snapshotSuffix: '-ci.png'
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-tests-attachments
+          path: |
+            .vitest-attachments
+            **/__screenshots__
 
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
     container:
-      image: docker://mcr.microsoft.com/playwright:v1.62.1-jammy
-    permissions:
-      contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
-      pull-requests: write # allows commenting on a PR
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: ${{ github.head_ref }}
-          # Value already defaults to true, but `persist-credentials` is required to push new commits to the repository.
-          persist-credentials: true
       - name: Setup Node
         uses: './.github/templates/setup-node'
       # Must run before the build: the preview server that serves the E2E suite reads the
       # .dev.vars the build copies into build/allkaraoke_party/, not the one in the repo root.
       - name: Configure local worker secrets for E2E
         # The Realtime app credentials are stripped rather than merely absent from the example:
-        # the Worker switches online mode onto the SFU as soon as it sees them, and the E2E suite
-        # has no Realtime app to reach. Without them it uses the Durable Object relay, which
-        # exercises the same room logic, host runtime and succession path over a local wire.
+        # the build below supplies its own, pointing at the fake SFU.
         run: |
           cp .dev.vars.example .dev.vars
           sed -i '/^REALTIME_APP_/d' .dev.vars
       - name: Build app
+        # Same fake SFU as the e2e job — the online visual specs open a real P2P room, so this build
+        # must reach the same data plane rather than falling back to the relay.
         run: |
           git config --global --add safe.directory /__w/allkaraoke/allkaraoke
           pnpm build
+        env:
+          E2E_FAKE_SFU_URL: http://127.0.0.1:3480/v1
       - name: Run visual regression tests and update snapshots
         uses: './.github/templates/run-playwright'
         with:
@@ -218,20 +213,121 @@ jobs:
           updateSnapshots: 'true'
           snapshotDir: 'tests' # per playwright.config.ts's testDir
           snapshotSuffix: '-linux.png' # this job always renders in the Linux Playwright container
-      - name: Commit snapshots and comment with diff thumbnails
-        uses: './.github/templates/commit-and-comment-snapshots'
+      - name: Upload changed snapshots
+        uses: './.github/templates/upload-changed-snapshots'
         with:
-          commit-message: '[ci-skip][skip-release-notes] chore: update visual regression screenshots'
-          comment-body: 'Changes detected in visual regression screenshots. Please review.'
-          comment-link-text: 'View the run that committed the updated screenshots'
-          cloudflare-branch-prefix: 'vr'
-          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          cloudflare-account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          name: 'changed-snapshots-visual-regression-1' # when sharding, suffix with the shard index
+          snapshotDir: 'tests'
+          snapshotSuffix: '-linux.png'
+
+  # Collects the snapshots every test job (and shard) changed, commits them to the PR branch in one
+  # go and posts a single PR comment linking to an old / new / diff gallery of all of them.
+  commit-snapshots:
+    if: ${{ !cancelled() && github.event_name == 'pull_request' }}
+    needs: ['browser-tests-run', 'visual-regression-tests-run']
+    permissions:
+      contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
+      pull-requests: write # allows commenting on a PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          # Value already defaults to true, but `persist-credentials` is required to push new commits to the repository.
+          persist-credentials: true
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download changed snapshots
+        uses: actions/download-artifact@v5
+        with:
+          pattern: changed-snapshots-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/changed-snapshots
+      - name: Fetch target branch for visual diff baseline
+        run: git fetch --depth=1 origin "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+      # Diffs against the target branch rather than the PR branch, so the gallery always shows the
+      # full change - not just what changed since a previous run auto-committed snapshots here.
+      - name: Build visual diff gallery
+        id: visual-diff
+        run: pnpm visual-diff:report --snapshots "${{ runner.temp }}/changed-snapshots" --base "origin/${{ github.base_ref }}"
+      - name: Apply changed snapshots
+        run: |
+          if [ -d "${{ runner.temp }}/changed-snapshots" ]; then
+            cp -R "${{ runner.temp }}/changed-snapshots/." .
+          fi
+      - name: Auto commit updated snapshots
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: '[ci-skip][skip-release-notes] chore: update visual regression snapshots'
+          commit_options: '--no-verify'
+          file_pattern: '*.png'
+      - name: Upload visual diff gallery to Cloudflare Pages
+        id: deploy-visual-diff
+        if: steps.visual-diff.outputs.has_report == 'true'
+        continue-on-error: true # a hosting hiccup shouldn't block the review comment
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy test-results/visual-diff-report --project-name=allkaraoke-party-tests-results --branch=visual-diff-${{ github.run_id }}
+      - name: Render visual diff comment
+        if: steps.visual-diff.outputs.has_report == 'true'
+        env:
+          BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
+        run: pnpm visual-diff:comment
+      # A single comment (identified by a hidden marker) is kept: any prior one is deleted and
+      # replaced with a fresh comment (not edited in place) so the PR author gets a notification,
+      # and removed entirely once the snapshots match the target branch again. When a test job
+      # failed its snapshots are missing here, so an existing comment is left as-is instead.
+      - name: Replace or remove visual diff comment
+        uses: actions/github-script@v8
+        env:
+          HAS_REPORT: ${{ steps.visual-diff.outputs.has_report }}
+          ALL_TESTS_PASSED: ${{ !contains(needs.*.result, 'failure') }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            // Prefix match also cleans up the per-job comments (`:ct`, `:vr`) posted before the jobs were merged
+            const markerPrefix = '<!-- visual-diff-thumbnails';
+            const marker = `${markerPrefix} -->`;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+            const existing = comments.filter((comment) => comment.body?.includes(markerPrefix));
+
+            if (process.env.HAS_REPORT !== 'true' && process.env.ALL_TESTS_PASSED !== 'true') {
+              return;
+            }
+
+            for (const comment of existing) {
+              await github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id });
+            }
+
+            if (process.env.HAS_REPORT !== 'true') {
+              return;
+            }
+
+            const fs = require('node:fs');
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+
+            let galleryLink = '';
+            try {
+              galleryLink = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
+            } catch {}
+
+            const body = `Changes detected in visual regression snapshots. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})${galleryLink}\n\n${marker}`;
+            await github.rest.issues.createComment({ owner, repo, issue_number, body });
 
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: ['e2e-tests-run', 'ct-tests-run', 'quick-checks']
+    needs: ['e2e-tests-run', 'browser-tests-run', 'quick-checks']
     environment:
       name: production
       url: https://allkaraoke.party/

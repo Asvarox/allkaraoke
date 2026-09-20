@@ -118,7 +118,6 @@ fabric.properties
 stats.html
 /test-results/
 /playwright-report/
-/playwright/.cache/
 /blob-report/
 /all-blobs-reports/
 scripts/scraped-bpm-data.json
@@ -153,3 +152,12 @@ storybook-static/
 .design-sync/node_modules
 .ds-sync/
 ds-bundle/
+
+# Vitest browser mode failure screenshots
+__screenshots__/
+# Vitest browser mode screenshot diffs
+/.vitest-attachments/
+# Locally rendered browser test references - only the `-ci` ones rendered in the CI container are committed
+/__snapshots__/**/*-darwin.png
+/__snapshots__/**/*-linux.png
+/__snapshots__/**/*-win32.png
