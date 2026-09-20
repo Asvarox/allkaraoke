@@ -1,10 +1,19 @@
+import { v4 as uuid } from 'uuid';
+
 import { defineMutation, defineQuery } from '~/modules/network/rpc/define';
 import { ExtractContract } from '~/modules/network/rpc/types';
 import { unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
+  ONLINE_CHAT_BURST_LIMIT,
+  ONLINE_CHAT_BURST_WINDOW_MS,
+  ONLINE_CHAT_HISTORY_SIZE,
+  ONLINE_CHAT_RATE_LIMIT,
+  ONLINE_CHAT_RATE_LIMIT_ERROR,
+  ONLINE_CHAT_RATE_WINDOW_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
+  ONLINE_MAX_CHAT_LENGTH,
   ONLINE_MAX_NAME_LENGTH,
   ONLINE_MAX_TOLERANCE,
   ONLINE_MIN_PLAYERS,
@@ -18,6 +27,7 @@ import {
 } from '~/modules/online/protocol/consts';
 import {
   ChartManifest,
+  ChatMessage,
   OnlineFinalResult,
   OnlineParticipant,
   OnlinePlaybackStatus,
@@ -37,6 +47,7 @@ type LatePersistedField =
   | 'chartPreview'
   | 'bannedIds'
   | 'created'
+  | 'chat'
   | 'readinessDeadline'
   | 'playbackAnchor'
   | 'pause'
@@ -95,6 +106,13 @@ export class OnlineRoomLogic {
   private bannedIds: string[] = [];
   private created = false;
   private finishRequestedAt: number | null = null;
+  /** Lobby chat, oldest first. Persisted (and so handed to a successor host) because a chat that
+   * empties itself every time the host's tab navigates would read as a bug. */
+  private chat: ChatMessage[] = [];
+  /** In-memory only — send times per participant, for the rate limit. A host takeover resets
+   * these: the successor has never seen the previous host's traffic, and a spammer timing their
+   * burst to land on a handover is not a threat worth persisting a window for. */
+  private chatRateWindow = new Map<string, number[]>();
   /** In-memory only — votes on the currently browsed song, not worth persisting. */
   private songVotes: SongVotes = {};
   /** In-memory only — live ping/volume snapshots per participant. */
@@ -149,6 +167,7 @@ export class OnlineRoomLogic {
       this.lastActivityAt = restoreFrom.lastActivityAt;
       this.bannedIds = restoreFrom.bannedIds ?? [];
       this.created = restoreFrom.created ?? true;
+      this.chat = restoreFrom.chat ?? [];
 
       if (isHibernationWake) {
         // Resume exactly where the room left off — 'readiness'/'singing' timers and the playback
@@ -330,6 +349,8 @@ export class OnlineRoomLogic {
     bannedIds: this.bannedIds,
     /** True once someone explicitly opened (created) this room. */
     created: this.created,
+    /** Lobby chat history — the successor picks the conversation up where it was left. */
+    chat: this.chat,
     /** Mid-song bookkeeping, persisted only so a hibernation wake (see the constructor) can
      * resume a phase in progress from its absolute deadlines — a genuine restart discards these
      * regardless of what is stored here. */
@@ -340,10 +361,21 @@ export class OnlineRoomLogic {
     finishRequestedAt: this.finishRequestedAt,
   });
 
-  private touch = () => {
+  /**
+   * Marks the room as alive, pushing its TTL out.
+   *
+   * `persist: false` keeps the deadline bookkeeping but skips writing the snapshot, for activity
+   * that happens often and can afford to be a little behind. Chat is the only caller: the whole
+   * history is in the snapshot, and in a P2P room `deps.persist` broadcasts that snapshot to the
+   * succession line immediately — so persisting per message would put a hundred lines of chat on
+   * the wire for every one line sent, which is exactly what publishing only the newest message
+   * avoids. The regular ONLINE_SNAPSHOT_BROADCAST_MS rebroadcast carries it instead, and a
+   * takeover loses at most that much of the conversation.
+   */
+  private touch = ({ persist = true }: { persist?: boolean } = {}) => {
     this.lastActivityAt = this.deps.now();
     this.setWake('ttl', this.lastActivityAt + ONLINE_ROOM_TTL_MS);
-    this.deps.persist(this.snapshot());
+    if (persist) this.deps.persist(this.snapshot());
   };
 
   private publishState = () => {
@@ -730,6 +762,63 @@ export class OnlineRoomLogic {
     }
   };
 
+  // --- chat ---
+
+  /**
+   * What a message looks like once the room is done with it.
+   *
+   * The input caps typing at ONLINE_MAX_CHAT_LENGTH and cannot produce a newline, so none of this
+   * fires for our own client — it is here because the wire is open to any client at all.
+   *
+   * Order matters. Newlines and tabs become spaces *before* the remaining control characters are
+   * dropped, so "one\ntwo" reads as "one two" rather than "onetwo". The cut is by code point
+   * (`[...text]`) rather than `slice`, which counts UTF-16 units and would leave half a surrogate
+   * pair — a broken glyph — at the limit. Trimming is last so a message of nothing but spaces
+   * collapses to empty here rather than surviving as a blank line.
+   */
+  private normalizeChatText = (text: string): string =>
+    [...String(text ?? '').replace(/[\r\n\t\v\f]+/g, ' ')]
+      .filter((character) => {
+        const code = character.codePointAt(0)!;
+        // C0 and C1 control ranges. Whatever in here carried meaning (newlines, tabs) has already
+        // become a space above; the rest only ever arrives to confuse a renderer.
+        return !(code <= 0x1f || (code >= 0x7f && code <= 0x9f));
+      })
+      .slice(0, ONLINE_MAX_CHAT_LENGTH)
+      .join('')
+      .trim();
+
+  /**
+   * Records a send and reports whether it was over either limit.
+   *
+   * Two windows, because they catch different things: the minute-long one is the sustained budget,
+   * and the five-second one stops that whole budget being spent at once. The check is a plain
+   * sliding window of send times — nothing is recorded when a message is refused, so being
+   * throttled cannot itself extend the throttle.
+   */
+  private chatRateLimitExceeded = (participantId: string): boolean => {
+    const now = this.deps.now();
+    const sends = (this.chatRateWindow.get(participantId) ?? []).filter((at) => now - at < ONLINE_CHAT_RATE_WINDOW_MS);
+    const burst = sends.filter((at) => now - at < ONLINE_CHAT_BURST_WINDOW_MS);
+    if (sends.length >= ONLINE_CHAT_RATE_LIMIT || burst.length >= ONLINE_CHAT_BURST_LIMIT) {
+      // Still write the pruned window back — otherwise a participant who keeps hitting the limit
+      // never drops their expired entries and stays throttled past the window.
+      this.chatRateWindow.set(participantId, sends);
+      return true;
+    }
+    this.chatRateWindow.set(participantId, [...sends, now]);
+    return false;
+  };
+
+  /** A message id the history is not already using. The id arrives from the client (so that its
+   * own optimistic copy can be matched to this one), which means it is neither unique nor
+   * anybody's to claim until the room has checked. */
+  private uniqueChatId = (proposed: unknown): string => {
+    const candidate = typeof proposed === 'string' ? proposed.slice(0, 64) : '';
+    if (!candidate || this.chat.some((message) => message.id === candidate)) return uuid();
+    return candidate;
+  };
+
   // --- RPC handlers ---
 
   public createHandlers = () => ({
@@ -878,6 +967,42 @@ export class OnlineRoomLogic {
         }
         this.deps.publish('song-votes', { ...this.songVotes });
       }),
+    },
+    chat: {
+      /**
+       * Say something in the lobby. Deliberately available in every phase rather than only in the
+       * lobby — the panel is only rendered there, but a message that arrives while the room is
+       * mid-song is still a message, and refusing it by phase would mean a client that is a beat
+       * behind loses what someone typed.
+       */
+      send: defineMutation((ctx, text: string, id: string): ChatMessage => {
+        const participant = this.requireParticipant(ctx.senderId);
+        const body = this.normalizeChatText(text);
+        if (!body) throw new Error('Nothing to send');
+        if (this.chatRateLimitExceeded(participant.id)) throw new Error(ONLINE_CHAT_RATE_LIMIT_ERROR);
+
+        const message: ChatMessage = {
+          id: this.uniqueChatId(id),
+          at: this.deps.now(),
+          authorId: participant.id,
+          authorName: participant.name,
+          playerNumber: participant.playerNumber,
+          text: body,
+        };
+        this.chat.push(message);
+        // Oldest out first. Spliced in place rather than reassigned because `snapshot()` hands the
+        // live array to the storage layer.
+        if (this.chat.length > ONLINE_CHAT_HISTORY_SIZE) {
+          this.chat.splice(0, this.chat.length - ONLINE_CHAT_HISTORY_SIZE);
+        }
+        // Chatting keeps the room alive, but does not earn an immediate snapshot — see `touch`.
+        this.touch({ persist: false });
+        this.deps.publish('chat', message);
+        return message;
+      }),
+      /** The whole history, for a client that just joined. The channel only ever carries the
+       * newest message, so this is the one place the backlog is handed out. */
+      getHistory: defineQuery((): ChatMessage[] => [...this.chat]),
     },
     playback: {
       pause: defineMutation((ctx) => {

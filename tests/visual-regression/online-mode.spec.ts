@@ -44,6 +44,12 @@ visual('Online mode', ['desktop'], async ({ page, context, browser, viewport, ma
 
   await makeScreenshot('lobby', { extraMasks: roomCodeMasks(page) });
 
+  // Chat with something in it — the empty panel says nothing about how a message is actually
+  // rendered. Deterministic: fixed text, the name from the wizard above, and no timestamps.
+  await pages.onlineLobbyPage.sendChatMessage('anyone know this one?');
+  await expect(pages.onlineLobbyPage.chatMessageElement('anyone know this one?')).toBeVisible();
+  await makeScreenshot('lobby-chat', { extraMasks: roomCodeMasks(page) });
+
   // Host picks a song
   await pages.onlineLobbyPage.goToSongSelection();
   await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);

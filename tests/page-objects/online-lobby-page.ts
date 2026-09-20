@@ -64,6 +64,25 @@ export class OnlineLobbyPagePO {
     await this.chooseSongButton.click();
   }
 
+  /** The lobby chat. Rendered beside the card on wide screens and inside it on narrow ones, but
+   * only ever once, so these do not need to disambiguate. */
+  public get chatInput() {
+    return this.page.getByTestId('online-chat-input');
+  }
+
+  public get chatMessageElements() {
+    return this.page.getByTestId('online-chat-message');
+  }
+
+  public chatMessageElement(text: string) {
+    return this.chatMessageElements.filter({ hasText: text });
+  }
+
+  public async sendChatMessage(text: string) {
+    await this.chatInput.fill(text);
+    await this.chatInput.press('Enter');
+  }
+
   public get voteUpButton() {
     return this.page.getByTestId('online-vote-up');
   }

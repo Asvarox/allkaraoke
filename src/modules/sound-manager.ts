@@ -2,6 +2,7 @@ import christmasBackgroundMusicSound from '~/assets/2020-12-16_-_christmas_rock_
 import wooshSound from '~/assets/60013__qubodup__whoosh.mp3';
 import waitFinishedSound from '~/assets/376817__original_sound__impact-cinematic.ogg';
 import waitForReadinessSound from '~/assets/459342__papaninkasettratat__cinematic-music-short.ogg';
+import chatMessageSound from '~/assets/chat_message.mp3';
 import backgroundMusicSound from '~/assets/funk-cool-groove-(no-copyright-music)-by-anwar-amr.ogg';
 import halloweenWaitFinishedSound from '~/assets/halloween/boo-and-laugh-7060.mp3';
 import halloweenWooshSound from '~/assets/halloween/croworraven1-6749.mp3';
@@ -85,6 +86,13 @@ class ThemedSound {
 
 export const menuNavigate = new Sound({
   src: menuNavigateSound,
+});
+
+/** A message arrived in the lobby chat. Its own asset rather than a second reference to
+ * `menu_navigate.mp3` — it currently *is* that file, but chat wanting its own sound later should
+ * be a matter of replacing one file, not untangling a shared import. */
+export const chatMessage = new Sound({
+  src: chatMessageSound,
 });
 
 export const menuEnter = new Sound({

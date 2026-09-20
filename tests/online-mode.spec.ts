@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 
+import { ONLINE_MAX_CHAT_LENGTH } from '~/modules/online/protocol/consts';
 import { P2P_ROOM_CODE_PATTERN } from '~/modules/online/signaling/protocol';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
@@ -502,4 +503,69 @@ test('Online mode: host closing the tab mid-song still lets the round finish and
   });
 
   await guestPage.context().close();
+});
+
+test('Online mode: singers chat in the lobby, and a late joiner gets the backlog', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const pages = initialise(page, context, browser);
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
+
+  await test.step('A message reaches the other singer, tagged with who sent it', async () => {
+    await pages.onlineLobbyPage.sendChatMessage('anyone know this one?');
+
+    await expect(guestPages.onlineLobbyPage.chatMessageElement('anyone know this one?')).toBeVisible();
+    await expect(guestPages.onlineLobbyPage.chatMessageElement('anyone know this one?')).toContainText(hostName);
+    // The sender's own copy stops being pending once the room has taken it. Generous timeout
+    // because this is a real round trip to a host that is another browser tab — under a loaded
+    // machine (the suite runs several workers) it can take a while, and the line legitimately
+    // stays pending until it lands.
+    await expect(pages.onlineLobbyPage.chatMessageElement('anyone know this one?')).not.toHaveAttribute(
+      'data-pending',
+      'true',
+      { timeout: 15_000 },
+    );
+  });
+
+  await test.step('And back the other way, so both sides see the same conversation', async () => {
+    await guestPages.onlineLobbyPage.sendChatMessage('every word of it');
+
+    await expect(pages.onlineLobbyPage.chatMessageElement('every word of it')).toBeVisible();
+    await expect(pages.onlineLobbyPage.chatMessageElements).toHaveCount(2);
+  });
+
+  await test.step('A third singer arriving late is handed the history, in order', async () => {
+    const latecomerPage = await newPlayerPage(browser);
+    const latecomerPages = await joinOnlineRoom(
+      latecomerPage,
+      latecomerPage.context(),
+      browser,
+      roomCode,
+      'E2E Latecomer',
+    );
+
+    // Nothing was said while they were joining, so what they see is purely the backlog — the
+    // history request, not the live channel.
+    await expect(latecomerPages.onlineLobbyPage.chatMessageElements).toHaveCount(2);
+    await expect(latecomerPages.onlineLobbyPage.chatMessageElements.first()).toContainText('anyone know this one?');
+    await expect(latecomerPages.onlineLobbyPage.chatMessageElements.last()).toContainText('every word of it');
+
+    await test.step('and joins in, which everyone already in the room sees', async () => {
+      await latecomerPages.onlineLobbyPage.sendChatMessage('starting from the top?');
+
+      await expect(pages.onlineLobbyPage.chatMessageElement('starting from the top?')).toBeVisible();
+      await expect(guestPages.onlineLobbyPage.chatMessageElement('starting from the top?')).toBeVisible();
+    });
+  });
+
+  await test.step('The input caps what can be typed at the room limit', async () => {
+    await pages.onlineLobbyPage.chatInput.fill('x'.repeat(ONLINE_MAX_CHAT_LENGTH + 50));
+    expect(await pages.onlineLobbyPage.chatInput.inputValue()).toHaveLength(ONLINE_MAX_CHAT_LENGTH);
+  });
 });
