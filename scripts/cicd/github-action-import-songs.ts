@@ -167,9 +167,6 @@ type ImportedSongSummary = {
       stdio: 'inherit',
     });
 
-    console.log('Updating song stats');
-    execSync(`pnpm tsx scripts/generate-song-stats.ts`, { stdio: 'inherit' });
-
     if (isUnverifiedSongsAdminConfigured()) {
       console.log('Cleaning up promoted shared songs from Cloudflare pending pool');
       for (const songId of promotedSongs) {

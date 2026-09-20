@@ -43,7 +43,18 @@ jobs:
       - name: Get songs scheduled
         if: github.event_name == 'schedule'
         run: pnpm tsx scripts/cicd/github-action-import-songs.ts "${{ secrets.DEFAULT_IMPORT_USER_IDS }}" "" ""
+      - name: Detect updated songs
+        id: song-changes
+        run: |
+          if [ -n "$(git status --porcelain -- public/songs)" ]; then
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          fi
+      # Skipped when nothing was imported: the stats file carries a `generatedAt` timestamp, so
+      # regenerating it on a quiet run would commit a diff that says nothing about the catalogue.
       - name: Update stats
+        if: steps.song-changes.outputs.changed == 'true'
         run: pnpm tsx scripts/generate-song-stats.ts
       - name: Update popularity index
         run: pnpm tsx scripts/generate-song-popularity-index.ts
