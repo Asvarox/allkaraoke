@@ -2973,7 +2973,7 @@ var OnlineDirectory = class OnlineDirectory extends DurableObject {
 };
 //#endregion
 //#region worker/online-signaling.ts
-var REALTIME_API_BASE = "https://rtc.live.cloudflare.com/v1/apps";
+var DEFAULT_REALTIME_API_URL = "https://rtc.live.cloudflare.com/v1";
 var REALTIME_TURN_API_BASE = "https://rtc.live.cloudflare.com/v1/turn/keys";
 /** Cloudflare's public STUN, which takes no credentials — the reason online mode connects at all
 * on a checkout with nothing configured. Port 53 is there because some networks only let
@@ -3035,7 +3035,8 @@ var json = (request, body, status = 200) => new Response(JSON.stringify(body), {
 var badRequest = (request, message) => json(request, { error: message }, 400);
 /** Every SFU call goes through here so the app token never leaves the Worker. */
 var callRealtime = async ({ env, path, method = "POST", body }) => {
-	const response = await fetch(`${REALTIME_API_BASE}/${env.REALTIME_APP_ID}${path}`, {
+	const baseUrl = env.REALTIME_API_URL ?? DEFAULT_REALTIME_API_URL;
+	const response = await fetch(`${baseUrl}/apps/${env.REALTIME_APP_ID}${path}`, {
 		method,
 		headers: {
 			Authorization: `Bearer ${env.REALTIME_APP_TOKEN}`,
@@ -3073,6 +3074,7 @@ var mintCloudflareTurn = async (env) => {
 	return servers;
 };
 var handleIceServers = async (request, env) => {
+	if (env.REALTIME_API_URL) return json(request, { iceServers: [] });
 	const stun = { urls: splitUrls(env.ONLINE_STUN_URLS).length ? splitUrls(env.ONLINE_STUN_URLS) : DEFAULT_STUN_URLS };
 	if (env.REALTIME_TURN_KEY_ID && env.REALTIME_TURN_API_TOKEN) try {
 		return json(request, {
