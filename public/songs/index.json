@@ -1770,7 +1770,7 @@
     "gap": 15604.082840236686,
     "year": "1985",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-09-18T02:31:54.862Z",
+    "lastUpdate": "2026-09-17T20:58:35.013Z",
     "realBpm": 200,
     "volume": 1,
     "author": "jockel1974",
@@ -5202,6 +5202,36 @@
     "local": false
   },
   {
+    "id": "airbag-amor-de-verano",
+    "title": "Amor de verano",
+    "artist": "Airbag",
+    "video": "3ioa-_UCyd8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 262.26,
+    "gap": 2987.6824525280254,
+    "year": "2006",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-09-20T02:42:04.979Z",
+    "genre": "Pop",
+    "realBpm": 262.26,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Airbag&cancion=Amor%20de%20verano",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6384,
+    "tracksCount": 1,
+    "search": "airbagamordeverano",
+    "local": false
+  },
+  {
     "id": "airbag-cae-el-sol",
     "title": "Cae el sol",
     "artist": "Airbag",
@@ -5934,6 +5964,35 @@
     "shortId": 6142,
     "tracksCount": 1,
     "search": "alainbashunggabyohgaby",
+    "local": false
+  },
+  {
+    "id": "alan-jackson-chasin-that-neon-rainbow",
+    "title": "Chasin’ That Neon Rainbow",
+    "artist": "Alan Jackson",
+    "video": "WCPpOba2O4g",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.22,
+    "gap": 29147.393222378185,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-20T02:42:05.610Z",
+    "genre": "Country",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Zevac",
+    "sourceUrl": "Alan Jackson",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6389,
+    "tracksCount": 1,
+    "search": "alanjacksonchasinthatneonrainbow",
     "local": false
   },
   {
@@ -7209,6 +7268,37 @@
     "shortId": 182,
     "tracksCount": 1,
     "search": "alexisjordanhappiness",
+    "local": false
+  },
+  {
+    "id": "alfredo-casero-pizza-conmigo",
+    "title": "Pizza conmigo",
+    "artist": "Alfredo Casero",
+    "video": "qlCnemO91tM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 383.96,
+    "gap": 26220.269194707784,
+    "year": "2001",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-09-20T02:42:06.934Z",
+    "genre": "Rock",
+    "videoGap": 5,
+    "realBpm": 383.96,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Alfredo%20Casero&cancion=Pizza%20conmigo",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6390,
+    "tracksCount": 1,
+    "search": "alfredocaseropizzaconmigo",
     "local": false
   },
   {
@@ -45534,6 +45624,33 @@
     "local": false
   },
   {
+    "id": "die-aerzte-ist-das-noch-punkrock",
+    "title": "Ist das noch Punkrock?",
+    "artist": "Die Ärzte",
+    "video": "tPHEzoomYaU",
+    "language": [
+      "German"
+    ],
+    "bpm": 353.5,
+    "gap": 25041.61244695898,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-20T02:42:07.776Z",
+    "realBpm": 176,
+    "volume": 1,
+    "author": "Silverbeam",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6397,
+    "tracksCount": 1,
+    "search": "dieaerzteistdasnochpunkrock",
+    "local": false
+  },
+  {
     "id": "die-aerzte-mf",
     "title": "m+f",
     "artist": "Die Ärzte",
@@ -46731,6 +46848,60 @@
     "shortId": 1238,
     "tracksCount": 1,
     "search": "disneysbrotherbearlookthroughmyeyes",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-2-cant-back-down",
+    "title": "Can’t Back Down",
+    "artist": "Disney’s Camp Rock 2",
+    "video": "_zrt86GXM8w",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.2,
+    "gap": 40.28776978417261,
+    "year": "2010",
+    "lastUpdate": "2026-09-20T02:42:07.089Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "savik1993",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 6391,
+    "tracksCount": 1,
+    "search": "disneyscamprock2cantbackdown",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-joe-jonas-gotta-find-you",
+    "title": "Gotta Find You",
+    "artist": "Disney’s Camp Rock (Joe Jonas)",
+    "video": "AH0geUR9WTA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 6150,
+    "year": "2008",
+    "lastUpdate": "2026-09-20T02:42:05.438Z",
+    "genre": "Soundtrack",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "britneyblisswilliams",
+    "duration": 130,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6388,
+    "tracksCount": 1,
+    "search": "disneyscamprockjoejonasgottafindyou",
     "local": false
   },
   {
@@ -54758,6 +54929,33 @@
     "local": false
   },
   {
+    "id": "ella-langley-choosin-texas",
+    "title": "Choosin’ Texas",
+    "artist": "Ella Langley",
+    "video": "hLOheGDwD_0",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.69,
+    "gap": 16598.62032133161,
+    "year": "2026",
+    "lastUpdate": "2026-09-20T02:42:03.621Z",
+    "genre": "Country",
+    "realBpm": 224.69,
+    "volume": 1,
+    "author": "usdb3000",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6383,
+    "tracksCount": 1,
+    "search": "ellalangleychoosintexas",
+    "local": false
+  },
+  {
     "id": "ellie-goulding-burn",
     "title": "Burn",
     "artist": "Ellie Goulding",
@@ -56754,6 +56952,33 @@
     "local": false
   },
   {
+    "id": "engelbert-humperdinck-a-man-without-love",
+    "title": "A Man Without Love",
+    "artist": "Engelbert Humperdinck",
+    "video": "o0WWaA3oFa4",
+    "language": [
+      "English"
+    ],
+    "bpm": 439.29999999999984,
+    "gap": 8531.363636363636,
+    "year": "1968",
+    "artistOrigin": "IN",
+    "lastUpdate": "2026-09-20T02:42:05.100Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6385,
+    "tracksCount": 1,
+    "search": "engelberthumperdinckamanwithoutlove",
+    "local": false
+  },
+  {
     "id": "engenheiros-do-hawaii-era-um-garoto-que-como-eu-amava-os-beatles-e-os-rolling-stones",
     "title": "Era um garoto que como eu amava os Beatles e os Rolling Stones",
     "artist": "Engenheiros do Hawaii",
@@ -57460,6 +57685,36 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-miguel-veloso-teagan-earley-i-cant-help-but-wonder",
+    "title": "I Can’t Help But Wonder",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Miguel Veloso, Teagan Earley)",
+    "video": "dHfZ84ytX9Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 22047.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-20T02:42:07.576Z",
+    "genre": "Musical",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 301,
+    "tracks": [
+      {
+        "start": 27
+      },
+      {
+        "start": 263
+      }
+    ],
+    "shortId": 6396,
+    "tracksCount": 2,
+    "search": "epicthemusicaljorgeriveraherransmiguelvelosoteaganearleyicanthelpbutwonder",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-monster",
     "title": "Monster",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans)",
@@ -57572,6 +57827,36 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-teagan-earley-my-goodbye",
+    "title": "My Goodbye",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Teagan Earley)",
+    "video": "U6r-pOuRnkE",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 13717.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-20T02:42:07.408Z",
+    "genre": "Musical",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 27
+      },
+      {
+        "start": 263
+      }
+    ],
+    "shortId": 6394,
+    "tracksCount": 2,
+    "search": "epicthemusicaljorgeriveraherransteaganearleymygoodbye",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-teagan-earley-warrior-of-the-mind",
     "title": "Warrior Of The Mind",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Teagan Earley)",
@@ -57623,6 +57908,33 @@
     "shortId": 6237,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranstroywouldntyoulike",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-wanda-herrans-the-underworld",
+    "title": "The Underworld",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Wanda Herrans)",
+    "video": "PbVJaMIrQ7g",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 9497.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-20T02:42:05.221Z",
+    "genre": "Musical",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 279,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6386,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranswandaherranstheunderworld",
     "local": false
   },
   {
@@ -73073,7 +73385,7 @@
     "bpm": 300,
     "gap": 4400,
     "year": "2007",
-    "lastUpdate": "2026-09-18T02:31:57.532Z",
+    "lastUpdate": "2026-09-17T20:59:15.081Z",
     "genre": "Soundtrack",
     "realBpm": 112,
     "volume": 1,
@@ -77479,6 +77791,35 @@
     "local": false
   },
   {
+    "id": "ikimono-gakari-netsujou-no-spectrum",
+    "title": "Netsujou no Spectrum",
+    "artist": "Ikimono Gakari",
+    "video": "sDcsB8g6ZUc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 320.04,
+    "gap": 345.74803149606316,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-20T02:42:03.004Z",
+    "realBpm": 160,
+    "previewStart": 10,
+    "previewEnd": 30,
+    "volume": 1,
+    "author": "Currymalker",
+    "duration": 91,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6378,
+    "tracksCount": 1,
+    "search": "ikimonogakarinetsujounospectrum",
+    "local": false
+  },
+  {
     "id": "ikkimel-keta-und-krawall",
     "title": "KETA UND KRAWALL",
     "artist": "Ikkimel",
@@ -81593,6 +81934,35 @@
     "shortId": 2069,
     "tracksCount": 1,
     "search": "jarzebinakokoeurospoko",
+    "local": false
+  },
+  {
+    "id": "jason-derulo-breathing",
+    "title": "Breathing",
+    "artist": "Jason Derulo",
+    "video": "8FbF18hDosw",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 11733.90625,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-20T02:42:02.415Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Ultrasonic",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=14150",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6376,
+    "tracksCount": 1,
+    "search": "jasonderulobreathing",
     "local": false
   },
   {
@@ -93040,7 +93410,7 @@
     "gap": 33928.450937449925,
     "year": "1985",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-09-18T02:31:54.864Z",
+    "lastUpdate": "2026-09-17T20:58:49.641Z",
     "genre": "New Wave",
     "realBpm": 200,
     "volume": 1,
@@ -95688,7 +96058,7 @@
     "gap": 5933.931379737554,
     "year": "2025",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-09-18T02:31:54.860Z",
+    "lastUpdate": "2026-09-17T20:58:21.495Z",
     "edition": "ESC 2025",
     "realBpm": 105,
     "volume": 1,
@@ -103130,7 +103500,7 @@
     "gap": 22045.625,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-18T02:32:03.462Z",
+    "lastUpdate": "2026-09-17T21:09:14.022Z",
     "genre": "Nu Metal",
     "realBpm": 80,
     "volume": 1,
@@ -114647,7 +115017,7 @@
     "bpm": 302.02,
     "gap": 14841.68829878816,
     "year": "1995",
-    "lastUpdate": "2026-07-29T05:14:22.450Z",
+    "lastUpdate": "2026-09-19T21:43:14.519Z",
     "genre": "Anime",
     "realBpm": 132,
     "volume": 1,
@@ -114721,6 +115091,34 @@
     "shortId": 2904,
     "tracksCount": 1,
     "search": "megurinelukalukalukanightfever",
+    "local": false
+  },
+  {
+    "id": "mehnersmoos-3-uhr-nachts",
+    "title": "3 Uhr Nachts",
+    "artist": "Mehnersmoos",
+    "video": "JmNOZ7W7RJw",
+    "language": [
+      "German"
+    ],
+    "bpm": 234.14,
+    "gap": 15154.972238831468,
+    "year": "2022",
+    "lastUpdate": "2026-09-20T02:42:07.778Z",
+    "genre": "Hip-Hop",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "Mehnersmoos",
+    "sourceUrl": "https://www.youtube.com/watch?v=JmNOZ7W7RJw",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6398,
+    "tracksCount": 1,
+    "search": "mehnersmoos3uhrnachts",
     "local": false
   },
   {
@@ -118976,6 +119374,35 @@
     "shortId": 6163,
     "tracksCount": 1,
     "search": "millencolinnocigar",
+    "local": false
+  },
+  {
+    "id": "milo-j-rara-vez",
+    "title": "Rara vez",
+    "artist": "Milo j",
+    "video": "aBSkvI0CkgU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 381.72,
+    "gap": 2780.60452687834,
+    "year": "2024",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-09-20T02:42:03.260Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "UltraSinger [GitHub] 0.0.13.dev16",
+    "sourceUrl": "https://www.youtube.com/watch?v=aBSkvI0CkgU",
+    "duration": 137,
+    "tracks": [
+      {
+        "name": "rara vez",
+        "start": 25
+      }
+    ],
+    "shortId": 6381,
+    "tracksCount": 1,
+    "search": "milojraravez",
     "local": false
   },
   {
@@ -123860,6 +124287,35 @@
     "local": false
   },
   {
+    "id": "ne-yo-mad",
+    "title": "Mad",
+    "artist": "Ne-Yo",
+    "video": "sAYuOc7_TKg",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 30679.23076923077,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-20T02:42:03.502Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "britneyblisswilliams",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=6348",
+    "duration": 280,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6382,
+    "tracksCount": 1,
+    "search": "neyomad",
+    "local": false
+  },
+  {
     "id": "ne-yo-miss-independent",
     "title": "Miss Independent",
     "artist": "Ne-Yo",
@@ -126411,6 +126867,35 @@
     "local": false
   },
   {
+    "id": "nightwish-ghost-love-score",
+    "title": "Ghost Love Score",
+    "artist": "Nightwish",
+    "video": "aXYzFIdXeG8",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.5,
+    "gap": 0,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-20T02:42:07.402Z",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "ultrastarsongs",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1314",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=4345",
+    "duration": 603,
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "shortId": 6393,
+    "tracksCount": 1,
+    "search": "nightwishghostlovescore",
+    "local": false
+  },
+  {
     "id": "nightwish-last-ride-of-the-day",
     "title": "Last Ride Of The Day",
     "artist": "Nightwish",
@@ -126570,7 +127055,7 @@
     "gap": 20442.01084850833,
     "year": "2000",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-18T02:31:54.853Z",
+    "lastUpdate": "2026-09-17T20:57:44.090Z",
     "realBpm": 129,
     "volume": 1,
     "author": "Canni",
@@ -134560,6 +135045,34 @@
     "local": false
   },
   {
+    "id": "peter-fox-schwarz-zu-blau",
+    "title": "Schwarz zu blau",
+    "artist": "Peter Fox",
+    "video": "yphwzD1XaBY",
+    "language": [
+      "German"
+    ],
+    "bpm": 215.49,
+    "gap": 23605.476820270083,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-20T02:42:05.436Z",
+    "genre": "Rap",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "Amoebius",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6387,
+    "tracksCount": 1,
+    "search": "peterfoxschwarzzublau",
+    "local": false
+  },
+  {
     "id": "peter-gabriel-in-your-eyes",
     "title": "In Your Eyes",
     "artist": "Peter Gabriel",
@@ -137727,6 +138240,33 @@
     "local": false
   },
   {
+    "id": "provinz-x-majan-x-jeremias-liebe-zu-dritt",
+    "title": "Liebe zu dritt",
+    "artist": "Provinz x MAJAN x JEREMIAS",
+    "video": "NDlgGxfNTM4",
+    "language": [
+      "German"
+    ],
+    "bpm": 252,
+    "gap": 608.0952380952382,
+    "year": "2021",
+    "lastUpdate": "2026-09-20T02:42:03.006Z",
+    "genre": "Indie",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "Johnnn",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6379,
+    "tracksCount": 1,
+    "search": "provinzxmajanxjeremiasliebezudritt",
+    "local": false
+  },
+  {
     "id": "psy-feat-cl-of-2ne1-daddy",
     "title": "DADDY",
     "artist": "PSY feat. CL of 2NE1",
@@ -140268,7 +140808,7 @@
     "gap": 37260,
     "year": "2009",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-18T02:32:00.068Z",
+    "lastUpdate": "2026-09-17T20:59:32.082Z",
     "realBpm": 136,
     "volume": 1,
     "author": "King090",
@@ -147494,6 +148034,33 @@
     "local": false
   },
   {
+    "id": "sam-smith-kim-petras-unholy",
+    "title": "Unholy",
+    "artist": "Sam Smith & Kim Petras",
+    "video": "Uq9gPaIzbe8",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.98,
+    "gap": 67162.36092265943,
+    "year": "2022",
+    "lastUpdate": "2026-09-20T02:42:07.244Z",
+    "videoGap": 53,
+    "realBpm": 131,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 276,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6392,
+    "tracksCount": 1,
+    "search": "samsmithkimpetrasunholy",
+    "local": false
+  },
+  {
     "id": "sam-smith-normani-dancing-with-a-stranger",
     "title": "Dancing With A Stranger",
     "artist": "Sam Smith & Normani",
@@ -150665,7 +151232,7 @@
     "gap": 16531.531776208583,
     "year": "1998",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-18T02:32:00.070Z",
+    "lastUpdate": "2026-09-17T20:59:47.398Z",
     "genre": "Rock",
     "realBpm": 92,
     "volume": 1,
@@ -151403,6 +151970,32 @@
     "shortId": 3879,
     "tracksCount": 1,
     "search": "shakiradontbother",
+    "local": false
+  },
+  {
+    "id": "shakira-feat-burna-boy-dai-dai",
+    "title": "Dai Dai",
+    "artist": "Shakira feat. Burna Boy",
+    "video": "salwJjShv2M",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.02,
+    "gap": 64.35040082751487,
+    "year": "2026",
+    "lastUpdate": "2026-09-20T02:42:02.422Z",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "Misrouted",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "shortId": 6377,
+    "tracksCount": 1,
+    "search": "shakirafeatburnaboydaidai",
     "local": false
   },
   {
@@ -156092,6 +156685,35 @@
     "local": false
   },
   {
+    "id": "sober-arrepentido",
+    "title": "Arrepentido",
+    "artist": "Sôber",
+    "video": "XBDTQfp9ntc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 210,
+    "gap": 1057,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-09-20T02:42:07.924Z",
+    "genre": "Rock",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "Sober",
+    "sourceUrl": "https://www.youtube.com/watch?v=XBDTQfp9ntc&list=RDXBDTQfp9ntc&start_radio=1",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6399,
+    "tracksCount": 1,
+    "search": "soberarrepentido",
+    "local": false
+  },
+  {
     "id": "soda-stereo-cuando-pase-el-temblor",
     "title": "Cuando Pase el Temblor",
     "artist": "Soda Stereo",
@@ -158387,6 +159009,35 @@
     "shortId": 4082,
     "tracksCount": 1,
     "search": "stonesourbother",
+    "local": false
+  },
+  {
+    "id": "stone-temple-pilots-interstate-love-song",
+    "title": "Interstate Love Song",
+    "artist": "Stone Temple Pilots",
+    "video": "yjJL9DGU7Gg",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.7,
+    "gap": 69801.64445561981,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-20T02:42:03.259Z",
+    "genre": "Grunge",
+    "videoGap": 36,
+    "realBpm": 85,
+    "volume": 1,
+    "author": "FoamyPab",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6380,
+    "tracksCount": 1,
+    "search": "stonetemplepilotsinterstatelovesong",
     "local": false
   },
   {
@@ -163263,6 +163914,35 @@
     "shortId": 4193,
     "tracksCount": 1,
     "search": "taylorswiftblankspace",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-but-daddy-i-love-him",
+    "title": "But Daddy I Love Him",
+    "artist": "Taylor Swift",
+    "video": "U2W173hRfyA",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 5000,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-20T02:42:07.572Z",
+    "genre": "Pop",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Subby77",
+    "sourceUrl": "https://www.youtube.com/watch?v=U2W173hRfyA",
+    "duration": 345,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6395,
+    "tracksCount": 1,
+    "search": "taylorswiftbutdaddyilovehim",
     "local": false
   },
   {
