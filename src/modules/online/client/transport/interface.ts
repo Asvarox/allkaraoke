@@ -1,5 +1,5 @@
 import { OnlineMessages } from '~/modules/online/protocol/types';
-import { JoinRejectedReason } from '~/modules/online/signaling/protocol';
+import { JoinRejectedReason, OnlineDataPlane } from '~/modules/online/signaling/protocol';
 
 /** Where this browser sits in a room: which side of the wiring it is on, whose channels it should
  * be subscribed to, and which slot is its own. */
@@ -49,6 +49,11 @@ export interface OnlineRoomChannels {
  */
 export interface OnlineRoomConnection extends OnlineRoomChannels {
   join(options?: { create?: boolean }): Promise<OnlineJoinOutcome>;
+  /** Which wire this connection actually ended up on. Fixed per implementation, but read back
+   * rather than assumed: `createRoomConnection` picks it from the Worker's answer, so a Worker that
+   * stops reporting `sfu` silently moves production onto the relay. Reported with the latency
+   * measurements, where that fallback would otherwise look like an unexplained ping regression. */
+  getDataPlane(): OnlineDataPlane;
   /** Re-points at a different host without giving up this browser's own membership. */
   rewire(membership: SfuRoomMembership): Promise<void>;
   promote(): Promise<{ ok: boolean; epoch: number; hostSessionId?: string | null }>;

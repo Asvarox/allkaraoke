@@ -38,6 +38,8 @@ export class RelayRoomConnection implements OnlineRoomConnection {
     private readonly participantId: string,
   ) {}
 
+  public getDataPlane = () => 'relay' as const;
+
   public getMembership = () => this.membership;
   /** The directory only needs something stable to identify this browser by; with no SFU session to
    * name, the participant id does the job. */
