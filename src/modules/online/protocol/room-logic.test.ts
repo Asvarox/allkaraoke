@@ -9,6 +9,12 @@ import {
 } from '~/modules/online/protocol/chart-transfer';
 import {
   ONLINE_BUFFERING_PAUSE_MS,
+  ONLINE_CHAT_BURST_LIMIT,
+  ONLINE_CHAT_BURST_WINDOW_MS,
+  ONLINE_CHAT_HISTORY_SIZE,
+  ONLINE_CHAT_RATE_LIMIT,
+  ONLINE_CHAT_RATE_LIMIT_ERROR,
+  ONLINE_CHAT_RATE_WINDOW_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
   ONLINE_READINESS_TIMEOUT_MS,
@@ -19,7 +25,7 @@ import {
   ONLINE_STATS_PUBLISH_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
-import { WireDetailedScore } from '~/modules/online/protocol/types';
+import { ChatMessage, WireDetailedScore } from '~/modules/online/protocol/types';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
 const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', removePlayer: () => undefined });
@@ -27,6 +33,9 @@ const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', 
 const CHART_TXT = '#ARTIST:Some Artist\n#TITLE:Some Song\n: 0 4 59 Test\nE';
 let manifest: Awaited<ReturnType<typeof prepareChartTransfer>>['manifest'];
 let chartData: string;
+
+/** A single emoji, which is two UTF-16 units — the shape that a naive `slice` breaks. */
+const GRINNING = '\u{1F600}';
 
 const SAMPLE_DETAILED_SCORE: WireDetailedScore = [{ normal: 100 }, { normal: 200 }];
 
@@ -966,5 +975,261 @@ describe('hibernation-safe alarms', () => {
     vi.setSystemTime(Date.now() + ONLINE_RECONNECT_GRACE_MS);
     woken.logic.handleAlarm();
     expect(woken.logic.getState().participants.map((participant) => participant.id)).toEqual(['p1']);
+  });
+});
+
+describe('chat', () => {
+  // Both chat handlers are synchronous, but `defineMutation`/`defineQuery` type every handler's
+  // return as `T | Promise<T>` for the async ones' sake — asserted here rather than at each of the
+  // couple of dozen call sites below.
+  const say = (room: Room, id: string, text: string, messageId = `${id}-${Math.random()}`) =>
+    room.handlers.chat.send.handler(ctx(id), text, messageId) as ChatMessage;
+
+  const history = (room: Room, id = 'p1') => room.handlers.chat.getHistory.handler(ctx(id)) as ChatMessage[];
+
+  it('broadcasts the message it accepted and keeps it in the history', () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+
+    const sent = say(room, 'p2', 'hello everyone');
+
+    expect(sent.text).toBe('hello everyone');
+    expect(sent.authorId).toBe('p2');
+    expect(room.published.chat).toEqual([sent]);
+    expect(history(room)).toEqual([sent]);
+  });
+
+  it('stamps the name the author had at the time, and never revisits it', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await room.handlers.room.setName.handler(ctx('p2'), 'Before');
+
+    const sent = say(room, 'p2', 'said as Before');
+    await room.handlers.room.setName.handler(ctx('p2'), 'After');
+
+    expect(sent.authorName).toBe('Before');
+    expect(history(room)[0].authorName).toBe('Before');
+  });
+
+  it('rejects a message from someone who is not in the room', () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    expect(() => say(room, 'stranger', 'let me in')).toThrow('Not a participant');
+  });
+
+  describe('normalization', () => {
+    it('truncates by code point, so an emoji at the limit is not cut in half', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      // Each of these is two UTF-16 units; `slice` would leave a lone surrogate at the boundary.
+      const sent = say(room, 'p1', GRINNING.repeat(250));
+      expect([...sent.text]).toHaveLength(200);
+      expect(sent.text.endsWith(GRINNING)).toBe(true);
+    });
+
+    it('turns newlines and tabs into spaces rather than deleting them', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      expect(say(room, 'p1', 'one\ntwo\tthree').text).toBe('one two three');
+    });
+
+    it('drops control characters', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      expect(say(room, 'p1', 'clean text').text).toBe('cleantext');
+    });
+
+    it('refuses a message that is empty once trimmed', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      expect(() => say(room, 'p1', '   \n  ')).toThrow('Nothing to send');
+      expect(history(room)).toEqual([]);
+    });
+  });
+
+  describe('rate limiting', () => {
+    it('allows the sustained rate but refuses a burst', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+
+      for (let i = 0; i < ONLINE_CHAT_BURST_LIMIT; i++) say(room, 'p1', `burst ${i}`);
+      expect(() => say(room, 'p1', 'one too many')).toThrow(ONLINE_CHAT_RATE_LIMIT_ERROR);
+
+      // Once the burst window has rolled past, the same client is welcome again.
+      vi.advanceTimersByTime(ONLINE_CHAT_BURST_WINDOW_MS);
+      expect(say(room, 'p1', 'after the burst window').text).toBe('after the burst window');
+    });
+
+    it('refuses past the sustained limit even when nothing is bursty', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+
+      // Spread out enough that the burst window never fills up.
+      for (let i = 0; i < ONLINE_CHAT_RATE_LIMIT; i++) {
+        say(room, 'p1', `paced ${i}`);
+        vi.advanceTimersByTime(ONLINE_CHAT_BURST_WINDOW_MS / ONLINE_CHAT_BURST_LIMIT + 1);
+      }
+      expect(() => say(room, 'p1', 'over the minute')).toThrow(ONLINE_CHAT_RATE_LIMIT_ERROR);
+
+      vi.advanceTimersByTime(ONLINE_CHAT_RATE_WINDOW_MS);
+      expect(say(room, 'p1', 'a minute later').text).toBe('a minute later');
+    });
+
+    it('limits each singer separately', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+
+      for (let i = 0; i < ONLINE_CHAT_BURST_LIMIT; i++) say(room, 'p1', `burst ${i}`);
+      expect(() => say(room, 'p1', 'p1 is done')).toThrow(ONLINE_CHAT_RATE_LIMIT_ERROR);
+      expect(say(room, 'p2', 'p2 is fine').text).toBe('p2 is fine');
+    });
+
+    it('does not count a refused message against the sender', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+
+      for (let i = 0; i < ONLINE_CHAT_BURST_LIMIT; i++) say(room, 'p1', `burst ${i}`);
+      // Hammering while throttled must not push the window along — otherwise being rate limited
+      // would extend the rate limit.
+      for (let i = 0; i < 20; i++) expect(() => say(room, 'p1', 'again')).toThrow();
+
+      vi.advanceTimersByTime(ONLINE_CHAT_BURST_WINDOW_MS);
+      expect(say(room, 'p1', 'let me back in').text).toBe('let me back in');
+    });
+  });
+
+  describe('ids', () => {
+    it('keeps the suffix the sender minted, under the author the room resolved', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      expect(say(room, 'p1', 'mine', 'chosen-id').id).toBe('p1:chosen-id');
+    });
+
+    it("namespaces ids by author, so one singer cannot name another singer's message", () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      const mine = say(room, 'p1', 'first', 'same-suffix');
+
+      // Same suffix from a different singer: the author half differs, so it lands as its own
+      // message instead of replacing the first one on every client still showing it.
+      const theirs = say(room, 'p2', 'trying to reuse that id', 'same-suffix');
+
+      expect(mine.id).toBe('p1:same-suffix');
+      expect(theirs.id).toBe('p2:same-suffix');
+      const stored = history(room);
+      expect(stored).toHaveLength(2);
+      expect(stored[0].text).toBe('first');
+    });
+
+    it('re-mints when the sender reuses one of their own ids', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      say(room, 'p1', 'first', 'duplicate-id');
+
+      const second = say(room, 'p1', 'same id again', 'duplicate-id');
+
+      expect(second.id).not.toBe('p1:duplicate-id');
+      expect(history(room)).toHaveLength(2);
+    });
+
+    it('strips anything id-shaped out of a proposed suffix', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      // The id is echoed to every client and used as a React key — it carries no free text.
+      expect(say(room, 'p1', 'hello', '../../evil id!').id).toBe('p1:evilid');
+    });
+  });
+
+  describe('history', () => {
+    it('keeps the newest ONLINE_CHAT_HISTORY_SIZE and drops the oldest', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+
+      for (let i = 0; i < ONLINE_CHAT_HISTORY_SIZE + 10; i++) {
+        say(room, 'p1', `message ${i}`);
+        // Stay under the rate limit — this is a history test, not a throttling one.
+        vi.advanceTimersByTime(ONLINE_CHAT_RATE_WINDOW_MS);
+      }
+
+      const stored = history(room);
+      expect(stored).toHaveLength(ONLINE_CHAT_HISTORY_SIZE);
+      expect(stored[0].text).toBe('message 10');
+      expect(stored[stored.length - 1].text).toBe(`message ${ONLINE_CHAT_HISTORY_SIZE + 9}`);
+    });
+
+    it('survives into a room restored from a snapshot', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      say(room, 'p1', 'said before the handover');
+
+      const successor = createRoom(room.logic.snapshot(), new Set(['p2']));
+
+      expect(history(successor, 'p2')).toEqual([expect.objectContaining({ text: 'said before the handover' })]);
+    });
+
+    it('starts empty for a room restored from a snapshot that predates chat', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      const legacy = { ...room.logic.snapshot() } as OnlinePersistedState;
+      delete (legacy as { chat?: unknown }).chat;
+
+      const restored = createRoom(legacy, new Set(['p1']));
+
+      expect(history(restored)).toEqual([]);
+    });
+  });
+
+  describe('persistence', () => {
+    it('writes a lone message out rather than leaving it in memory', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      room.persist.mockClear();
+
+      say(room, 'p2', 'said once, then quiet');
+
+      // The PartyKit room has no periodic write of its own, so a message that never persists is
+      // lost the moment it hibernates — acknowledged to the sender and gone.
+      expect(room.persist).toHaveBeenCalledTimes(1);
+      const written = room.persist.mock.calls[0][0] as OnlinePersistedState;
+      expect(written.chat).toEqual([expect.objectContaining({ text: 'said once, then quiet' })]);
+    });
+
+    it('coalesces a burst into far fewer writes than messages', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+      room.persist.mockClear();
+
+      // Spread just enough to stay under the burst limit while staying well inside one persist
+      // window, so the coalescing is what is being measured rather than the rate limiter.
+      for (let i = 0; i < 4; i++) {
+        say(room, 'p2', `burst ${i}`);
+        vi.advanceTimersByTime(ONLINE_CHAT_BURST_WINDOW_MS / ONLINE_CHAT_BURST_LIMIT + 1);
+      }
+
+      // The whole history rides the snapshot, and in a P2P room persisting broadcasts it to the
+      // succession line — a write per message would put the entire backlog on the wire for every
+      // line sent.
+      expect(room.persist.mock.calls.length).toBeLessThan(4);
+      expect(room.persist).toHaveBeenCalled();
+    });
+
+    it('counts a message as activity, pushing the room TTL out', () => {
+      const room = createRoom();
+      join(room, ['p1', 'p2']);
+
+      vi.advanceTimersByTime(ONLINE_ROOM_TTL_MS / 2);
+      room.scheduleWake.mockClear();
+      say(room, 'p2', 'still here');
+
+      expect(room.scheduleWake).toHaveBeenCalledWith(Date.now() + ONLINE_ROOM_TTL_MS);
+    });
+  });
+
+  it('refuses the backlog to someone who is not in the room', () => {
+    const room = createRoom();
+    join(room, ['p1']);
+    say(room, 'p1', 'members only');
+
+    expect(() => room.handlers.chat.getHistory.handler(ctx('stranger'))).toThrow('Not a participant');
   });
 });

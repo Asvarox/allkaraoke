@@ -9,6 +9,7 @@ import { useBackground } from '~/modules/elements/background-context';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
+import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import {
@@ -21,6 +22,7 @@ import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_MIN_PLAYERS } from '~/modules/online/protocol/consts';
 import { OnlineRoomState, SongHoverPreview, SongVote } from '~/modules/online/protocol/types';
 import { SongUpload } from '~/routes/online/hooks/use-song-upload';
+import ChatPanel from '~/routes/online/lobby/chat-panel';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
 import LobbySongCard from '~/routes/online/lobby/lobby-song-card';
 import ParticipantList from '~/routes/online/lobby/participant-list';
@@ -51,9 +53,22 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
 
   // Disabled while the customize modal owns the keyboard — otherwise Enter presses there would also
   // trigger the lobby's remembered actions. The confirmations (leave, kick) pause this on their own.
+  //
+  // Spatial rather than vertical since the chat sits beside the card: registration order alone
+  // would put it after "Leave room" at the bottom of the list, so reaching it would mean arrowing
+  // down past the way out. With spatial navigation it is simply to the right of everything, which
+  // is where it is drawn.
   const { register } = useKeyboardNav({
     enabled: !customizeOpen,
+    direction: 'horizontal-vertical',
   });
+
+  // The chat is one component in one of two places, never both: beside the card where there is
+  // room for it, inside the card where there isn't. Rendering both and hiding one with CSS would
+  // run two of everything behind it — two subscriptions, two histories, two notification sounds.
+  const breakpoint = useBreakpoint();
+  const chatBesideCard = breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === '2xl';
+  const chat = <ChatPanel register={register} inline={!chatBesideCard} />;
 
   const hostSongPreview = useOnlineSongPreview();
   const votes = useOnlineSongVotes();
@@ -111,6 +126,7 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   return (
     // Same card as the expanded song preview — width, background and padding included
     <MenuWithLogo
+      sidePanel={chatBesideCard ? chat : undefined}
       className={cn(
         dialogSurface,
         'sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]',
@@ -259,6 +275,13 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                   </Menu.Button>
                 )}
               </ConfirmModal>
+
+              {!chatBesideCard && (
+                <>
+                  <Menu.Divider className="mt-1" />
+                  {chat}
+                </>
+              )}
             </SongPreviewLayout.Split>
           </>
         }

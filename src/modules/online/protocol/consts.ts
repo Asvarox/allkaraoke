@@ -83,3 +83,34 @@ export const ONLINE_MAX_NAME_LENGTH = 20;
  * picker (1 = Hard .. 3 = Easy in production, up to 6 for the dev-only debug difficulties). */
 export const ONLINE_MIN_TOLERANCE = 1;
 export const ONLINE_MAX_TOLERANCE = 6;
+
+/** Longest chat message a singer can send. The input caps typing at this, so the room-side limit
+ * only ever fires on a client that isn't ours. */
+export const ONLINE_MAX_CHAT_LENGTH = 200;
+
+/** How many messages the room keeps. Everything older is dropped — the panel has no scrollback,
+ * and the whole history rides the host's snapshot to whoever takes the room over next. */
+export const ONLINE_CHAT_HISTORY_SIZE = 100;
+
+/** Sustained chat rate per singer: the window, and how many messages fit in it. */
+export const ONLINE_CHAT_RATE_WINDOW_MS = 60 * 1_000;
+export const ONLINE_CHAT_RATE_LIMIT = 40;
+
+/** Burst guard on top of the sustained limit — 40-per-minute on its own permits all forty inside
+ * two seconds, which is the shape spam actually takes. */
+export const ONLINE_CHAT_BURST_WINDOW_MS = 5 * 1_000;
+export const ONLINE_CHAT_BURST_LIMIT = 5;
+
+/** The rate limiter's rejection, spelled once so the client can tell it apart from a message that
+ * failed because the room was mid-handover — the two want different wording and only one of them
+ * is worth offering a resend for. It travels as a plain string (that is all an RPC error is), so
+ * both ends have to name the same constant. */
+export const ONLINE_CHAT_RATE_LIMIT_ERROR = 'Slow down — too many messages';
+
+/** How often chat writes the room snapshot. Chat deliberately does not persist per message — the
+ * whole history is in the snapshot, and in a P2P room persisting broadcasts that snapshot to the
+ * succession line, so a write per message would put a hundred lines on the wire for every one
+ * sent. It cannot skip persisting altogether either: the PartyKit room has no periodic write of
+ * its own, so an acknowledged message would be lost when it hibernates. Coalescing at this
+ * interval bounds both — at worst a restart loses this much of the conversation. */
+export const ONLINE_CHAT_PERSIST_MS = 2_000;

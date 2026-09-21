@@ -57,6 +57,7 @@ export type IconName =
   | 'ic:baseline-refresh'
   | 'ic:baseline-remove'
   | 'ic:baseline-search'
+  | 'ic:baseline-send'
   | 'ic:baseline-settings'
   | 'ic:baseline-shuffle'
   | 'ic:baseline-speed'

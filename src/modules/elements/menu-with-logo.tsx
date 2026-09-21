@@ -29,13 +29,22 @@ function MenuWithLogo({ children, supportedBrowsers, sidePanel, ...props }: Prop
         </div>
         {supportedBrowsers && <RecommendedBrowsers />}
         {sidePanel ? (
-          // `1fr auto 1fr`, nothing in the first column: the two `1fr` tracks always split the
-          // leftover space evenly, so the middle (menu) column stays centered on the page no matter
-          // how wide the side panel is, instead of the pair centering as a unit.
-          <div className="grid w-full grid-cols-[1fr_auto_1fr] items-start gap-6">
-            <div />
+          // The menu and its panel are centered together, as one block: they read as a single
+          // surface split in two, so centering the menu alone (and letting the panel hang off one
+          // side) would sit the pair visibly off-center under a centered logo.
+          //
+          // `items-stretch` so the panel is as tall as the menu beside it — a panel hugging its own
+          // content next to a full-height card looks like it failed to load. The panel is
+          // responsible for filling the height it is given (`h-full`).
+          <div className="flex w-full items-stretch justify-center gap-6">
             <Menu {...props}>{children}</Menu>
-            <div className="hidden w-[26rem] shrink-0 lg:block">{sidePanel}</div>
+            {/* The panel is taken out of flow (`absolute inset-0` against this `relative` box) so
+                that the menu alone decides how tall the row is. Left in flow it would also *drive*
+                the height, and a panel with a long scrolling list — a chat — would grow the whole
+                page instead of scrolling inside the space it was given. */}
+            <div className="relative hidden w-[31rem] shrink-0 lg:block">
+              <div className="absolute inset-0">{sidePanel}</div>
+            </div>
           </div>
         ) : (
           <Menu {...props}>{children}</Menu>

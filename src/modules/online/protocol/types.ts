@@ -122,6 +122,29 @@ export interface SongHoverPreview {
   volume?: number;
 }
 
+/**
+ * One line of lobby chat.
+ *
+ * `id` is minted by the *sender*, not the room — the client renders its own message before the
+ * room has seen it (see the chat panel), and matching that pending line against the copy that
+ * comes back is only exact if both carry the same id. The room still checks the id is not already
+ * in its history and re-mints it if it is, so a client cannot take over someone else's line by
+ * naming it.
+ *
+ * `authorName` and `playerNumber` are snapshots taken when the message was sent, deliberately not
+ * re-read from the participant list afterwards: chat is a record of who said what at the time, and
+ * a rename (or a singer leaving) must not rewrite it.
+ */
+export interface ChatMessage {
+  id: string;
+  /** Room clock (`deps.now()`) when the message was accepted. Stored, not rendered yet. */
+  at: number;
+  authorId: string;
+  authorName: string;
+  playerNumber: PlayerNumber;
+  text: string;
+}
+
 export type SongVote = 'up' | 'down';
 
 /** Per-participant vote on the song the host is browsing. */
@@ -147,6 +170,10 @@ export type OnlineSubscriptionChannels = {
   'song-preview': SongHoverPreview | null;
   'song-votes': SongVotes;
   'player-stats': PlayersStats;
+  /** Only the newest message, not the history. The history is a hundred lines that would
+   * otherwise be rebroadcast in full on every single message; joiners fetch it once with
+   * `chat.getHistory` instead. */
+  chat: ChatMessage;
 };
 
 interface OnlinePingMessage {

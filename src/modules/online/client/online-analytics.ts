@@ -103,3 +103,15 @@ export const trackOnlinePing = throttle(({ ping, roomCode, roomMode, isLoopbackH
     roomCodeHash: hashRoomCode(roomCode),
   });
 }, PING_REPORT_INTERVAL_MS);
+
+/**
+ * Fired once per message this browser successfully sends, never for messages received.
+ *
+ * Deliberately carries no message text and no participant id — what is worth knowing is whether
+ * anyone chats at all and in what kind of room, and the content of a private party's conversation
+ * is not ours to ship anywhere. `length` is the one thing kept from the message itself, as a
+ * rough read on whether the 200-character cap is anywhere near being a constraint.
+ */
+export const trackOnlineChatMessageSent = (roomCode: string, length: number) => {
+  posthog.capture('onlineChatMessageSent', { roomCodeHash: hashRoomCode(roomCode), length });
+};
