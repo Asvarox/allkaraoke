@@ -28,11 +28,11 @@
     "Muse",
     "ABBA",
     "Foo Fighters",
+    "Nightwish",
     "Bruno Mars",
     "Ed Sheeran",
     "Lana Del Rey",
     "Metallica",
-    "Nightwish",
     "Westlife",
     "Adele",
     "Demi Lovato",
@@ -103,6 +103,7 @@
     "Groove Coverage",
     "Hamilton",
     "Iron Maiden",
+    "Jason Derulo",
     "Justin Bieber",
     "Lorde",
     "★N Sync",
@@ -129,7 +130,6 @@
     "Genesis",
     "Goo Goo Dolls",
     "HIM",
-    "Jason Derulo",
     "Johnny Cash",
     "Jonathan Coulton",
     "Little Mix",
@@ -190,10 +190,13 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6366,
-  "generatedAt": "2026-09-18T06:26:46.943Z",
+  "songs": 6398,
+  "generatedAt": "2026-09-21T02:39:32.923Z",
   "additionsPerDay": {
-    "2026-09-17": 11,
+    "2026-09-19": 13,
+    "2026-09-18": 11,
+    "2026-09-17": 8,
+    "2026-09-16": 11,
     "2026-09-15": 23,
     "2026-09-13": 9,
     "2026-09-12": 9,
@@ -222,76 +225,266 @@
     "2026-08-07": 1,
     "2026-08-05": 3,
     "2026-07-29": 2,
-    "2026-07-26": 7,
-    "2026-07-22": 10,
-    "2026-07-21": 16
+    "2026-07-26": 7
   },
   "recentlyAdded": [
+    {
+      "artist": "Sôber",
+      "title": "Arrepentido",
+      "video": "XBDTQfp9ntc",
+      "addedAt": "2026-09-19T21:51:09.503Z"
+    },
+    {
+      "artist": "Mehnersmoos",
+      "title": "3 Uhr Nachts",
+      "video": "JmNOZ7W7RJw",
+      "addedAt": "2026-09-19T21:50:35.597Z"
+    },
+    {
+      "artist": "Die Ärzte",
+      "title": "Ist das noch Punkrock?",
+      "video": "tPHEzoomYaU",
+      "addedAt": "2026-09-19T21:50:17.311Z"
+    },
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Miguel Veloso, Teagan Earley)",
+      "title": "I Can’t Help But Wonder",
+      "video": "dHfZ84ytX9Q",
+      "addedAt": "2026-09-19T21:50:04.327Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "But Daddy I Love Him",
+      "video": "U2W173hRfyA",
+      "addedAt": "2026-09-19T21:49:50.833Z"
+    },
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Teagan Earley)",
+      "title": "My Goodbye",
+      "video": "U6r-pOuRnkE",
+      "addedAt": "2026-09-19T21:48:59.224Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Ghost Love Score",
+      "video": "aXYzFIdXeG8",
+      "addedAt": "2026-09-19T21:48:39.337Z"
+    },
+    {
+      "artist": "Sam Smith & Kim Petras",
+      "title": "Unholy",
+      "video": "Uq9gPaIzbe8",
+      "addedAt": "2026-09-19T21:43:36.819Z"
+    },
+    {
+      "artist": "Disney’s Camp Rock 2",
+      "title": "Can’t Back Down",
+      "video": "_zrt86GXM8w",
+      "addedAt": "2026-09-19T21:43:24.931Z"
+    },
+    {
+      "artist": "Alfredo Casero",
+      "title": "Pizza conmigo",
+      "video": "qlCnemO91tM",
+      "addedAt": "2026-09-19T21:43:00.802Z"
+    },
+    {
+      "artist": "Alan Jackson",
+      "title": "Chasin’ That Neon Rainbow",
+      "video": "WCPpOba2O4g",
+      "addedAt": "2026-09-19T21:41:32.102Z"
+    },
+    {
+      "artist": "Disney’s Camp Rock (Joe Jonas)",
+      "title": "Gotta Find You",
+      "video": "AH0geUR9WTA",
+      "addedAt": "2026-09-19T21:41:17.877Z"
+    },
+    {
+      "artist": "Peter Fox",
+      "title": "Schwarz zu blau",
+      "video": "yphwzD1XaBY",
+      "addedAt": "2026-09-19T21:41:02.459Z"
+    },
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Wanda Herrans)",
+      "title": "The Underworld",
+      "video": "PbVJaMIrQ7g",
+      "addedAt": "2026-09-18T20:04:29.108Z"
+    },
+    {
+      "artist": "Engelbert Humperdinck",
+      "title": "A Man Without Love",
+      "video": "o0WWaA3oFa4",
+      "addedAt": "2026-09-18T20:04:18.372Z"
+    },
+    {
+      "artist": "Airbag",
+      "title": "Amor de verano",
+      "video": "3ioa-_UCyd8",
+      "addedAt": "2026-09-18T20:03:38.238Z"
+    },
+    {
+      "artist": "Ella Langley",
+      "title": "Choosin’ Texas",
+      "video": "hLOheGDwD_0",
+      "addedAt": "2026-09-18T16:51:30.704Z"
+    },
+    {
+      "artist": "Ne-Yo",
+      "title": "Mad",
+      "video": "sAYuOc7_TKg",
+      "addedAt": "2026-09-18T14:12:26.407Z"
+    },
+    {
+      "artist": "Milo j",
+      "title": "Rara vez",
+      "video": "aBSkvI0CkgU",
+      "addedAt": "2026-09-18T14:11:44.344Z"
+    },
+    {
+      "artist": "Stone Temple Pilots",
+      "title": "Interstate Love Song",
+      "video": "yjJL9DGU7Gg",
+      "addedAt": "2026-09-18T14:11:27.002Z"
+    },
+    {
+      "artist": "Provinz x MAJAN x JEREMIAS",
+      "title": "Liebe zu dritt",
+      "video": "NDlgGxfNTM4",
+      "addedAt": "2026-09-18T14:11:12.687Z"
+    },
+    {
+      "artist": "Ikimono Gakari",
+      "title": "Netsujou no Spectrum",
+      "video": "sDcsB8g6ZUc",
+      "addedAt": "2026-09-18T14:10:47.723Z"
+    },
+    {
+      "artist": "Shakira feat. Burna Boy",
+      "title": "Dai Dai",
+      "video": "salwJjShv2M",
+      "addedAt": "2026-09-18T14:10:37.335Z"
+    },
+    {
+      "artist": "Jason Derulo",
+      "title": "Breathing",
+      "video": "8FbF18hDosw",
+      "addedAt": "2026-09-18T14:10:25.024Z"
+    },
+    {
+      "artist": "Linkin Park",
+      "title": "Lying From You",
+      "video": "_c3XfcyQ45w",
+      "addedAt": "2026-09-17T21:09:14.022Z"
+    },
+    {
+      "artist": "Semisonic",
+      "title": "Closing Time",
+      "video": "xGytDsqkQY8",
+      "addedAt": "2026-09-17T20:59:47.398Z"
+    },
+    {
+      "artist": "Rammstein",
+      "title": "Haifisch",
+      "video": "GP0_MNj8f1Q",
+      "addedAt": "2026-09-17T20:59:32.082Z"
+    },
+    {
+      "artist": "Hairspray (Movie)",
+      "title": "I Can Hear The Bells",
+      "video": "ZbdmiykoJm8",
+      "addedAt": "2026-09-17T20:59:15.081Z"
+    },
+    {
+      "artist": "Killing Joke",
+      "title": "Love Like Blood",
+      "video": "TnpwuRlXbhk",
+      "addedAt": "2026-09-17T20:58:49.641Z"
+    },
+    {
+      "artist": "a-ha",
+      "title": "The Sun Always Shines On T.V.",
+      "video": "a3ir9HC9vYg",
+      "addedAt": "2026-09-17T20:58:35.013Z"
+    },
+    {
+      "artist": "Kyle Alessandro",
+      "title": "Lighter",
+      "video": "pUjWzQ671MQ",
+      "addedAt": "2026-09-17T20:58:21.495Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Wanderlust",
+      "video": "hIKgj6vHFx8",
+      "addedAt": "2026-09-17T20:57:44.090Z"
+    },
     {
       "artist": "Ed Sheeran",
       "title": "Sapphire",
       "video": "JgDNFQ2RaLQ",
-      "addedAt": "2026-09-17T02:44:51.345Z"
+      "addedAt": "2026-09-16T20:40:43.047Z"
     },
     {
       "artist": "Mohombi",
       "title": "Bumpy Ride",
       "video": "G2RCCDSBEGk",
-      "addedAt": "2026-09-17T02:44:51.154Z"
+      "addedAt": "2026-09-16T20:40:28.340Z"
     },
     {
       "artist": "Nightwish",
       "title": "Over The Hills And Far Away",
       "video": "CwED4C5FJuo",
-      "addedAt": "2026-09-17T02:44:51.149Z"
+      "addedAt": "2026-09-16T20:39:01.180Z"
     },
     {
       "artist": "Mitski",
       "title": "Star",
       "video": "zdFoi-YEIFU",
-      "addedAt": "2026-09-17T02:44:51.146Z"
+      "addedAt": "2026-09-16T20:38:45.468Z"
     },
     {
       "artist": "PARTYNEXTDOOR",
       "title": "PERSIAN RUGS",
       "video": "4NYGgJlY3Uw",
-      "addedAt": "2026-09-17T02:44:50.963Z"
+      "addedAt": "2026-09-16T20:38:16.420Z"
     },
     {
       "artist": "Die Toten Hosen",
       "title": "Wannsee",
       "video": "JMODYxRcoBI",
-      "addedAt": "2026-09-17T02:44:50.962Z"
+      "addedAt": "2026-09-16T20:37:53.453Z"
     },
     {
       "artist": "Conan Gray",
       "title": "Yours",
       "video": "74NhLkjIeMs",
-      "addedAt": "2026-09-17T02:44:50.771Z"
+      "addedAt": "2026-09-16T20:37:40.729Z"
     },
     {
       "artist": "Oasis",
       "title": "Stand By Me",
       "video": "maTP315XZCQ",
-      "addedAt": "2026-09-17T02:44:50.767Z"
+      "addedAt": "2026-09-16T20:37:22.831Z"
     },
     {
       "artist": "Helloween",
       "title": "Twilight Of The Gods",
       "video": "qJ4qMZe67cc",
-      "addedAt": "2026-09-17T02:44:50.011Z"
+      "addedAt": "2026-09-16T20:36:43.266Z"
     },
     {
       "artist": "Metallica",
       "title": "Ride The Lightning",
       "video": "We_DLCYDaYw",
-      "addedAt": "2026-09-17T02:44:50.009Z"
+      "addedAt": "2026-09-16T20:36:24.875Z"
     },
     {
       "artist": "Revolverheld",
       "title": "Mit dir chilln",
       "video": "wO_fSipy5l0",
-      "addedAt": "2026-09-17T02:44:50.001Z"
+      "addedAt": "2026-09-16T20:35:54.568Z"
     },
     {
       "artist": "The Weeknd",
@@ -322,198 +515,6 @@
       "title": "THATS WHAT I WANT",
       "video": "QDYDRA5JPLE",
       "addedAt": "2026-09-15T19:50:33.669Z"
-    },
-    {
-      "artist": "Crush 40",
-      "title": "Open Your Heart",
-      "video": "JsL-5R76jFk",
-      "addedAt": "2026-09-15T19:50:20.021Z"
-    },
-    {
-      "artist": "Kyo",
-      "title": "Dernière danse",
-      "video": "aU_TQcyGkvY",
-      "addedAt": "2026-09-15T19:49:44.040Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "So It Goes…",
-      "video": "iAv1Y1YIwm8",
-      "addedAt": "2026-09-15T19:49:02.055Z"
-    },
-    {
-      "artist": "Filow & Ikkimel",
-      "title": "Jiggy",
-      "video": "gwj7E2cjR10",
-      "addedAt": "2026-09-15T18:46:52.970Z"
-    },
-    {
-      "artist": "Metallica",
-      "title": "Metal Militia",
-      "video": "BDaYBB9DkBg",
-      "addedAt": "2026-09-15T18:46:08.234Z"
-    },
-    {
-      "artist": "Disney’s Lemonade Mouth",
-      "title": "More Than A Band",
-      "video": "HG827ejO870",
-      "addedAt": "2026-09-15T18:44:38.077Z"
-    },
-    {
-      "artist": "Hannah Montana 2",
-      "title": "Nobody’s Perfect",
-      "video": "-1QDJyspxGA",
-      "addedAt": "2026-09-15T18:43:53.800Z"
-    },
-    {
-      "artist": "Marvin Gaye",
-      "title": "I Heard It Through The Grapevine",
-      "video": "cXWHpbpNdHE",
-      "addedAt": "2026-09-15T10:52:39.417Z"
-    },
-    {
-      "artist": "El Reno Renardo",
-      "title": "Camino Moria",
-      "video": "U-RtO3bjVac",
-      "addedAt": "2026-09-15T10:51:45.473Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "The Way I Loved You (Taylor's Version",
-      "video": "DlexmDDSDZ0",
-      "addedAt": "2026-09-15T10:51:19.747Z"
-    },
-    {
-      "artist": "Kings of Leon",
-      "title": "Crawl",
-      "video": "F5DkWzLMuKY",
-      "addedAt": "2026-09-15T10:50:53.232Z"
-    },
-    {
-      "artist": "David Guetta & OneRepublic",
-      "title": "I Don’t Wanna Wait",
-      "video": "dSDbwfXX5_I",
-      "addedAt": "2026-09-15T10:50:38.507Z"
-    },
-    {
-      "artist": "Del Shannon",
-      "title": "Runaway",
-      "video": "wSWMJxbxj7c",
-      "addedAt": "2026-09-15T10:50:25.430Z"
-    },
-    {
-      "artist": "Mariya Takeuchi",
-      "title": "Plastic Love",
-      "video": "T_lC2O1oIew",
-      "addedAt": "2026-09-15T10:50:09.918Z"
-    },
-    {
-      "artist": "Grover Washington, Jr. & Bill Withers",
-      "title": "Just The Two Of Us",
-      "video": "6IO74QV6wHY",
-      "addedAt": "2026-09-15T10:49:57.338Z"
-    },
-    {
-      "artist": "Avril Lavigne",
-      "title": "Alice",
-      "video": "YI4m-l2yRZA",
-      "addedAt": "2026-09-15T10:49:44.321Z"
-    },
-    {
-      "artist": "Nightwish",
-      "title": "Noise",
-      "video": "LczGSoibRe8",
-      "addedAt": "2026-09-15T10:49:33.708Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "Maroon",
-      "video": "lvHZjvIyqsk",
-      "addedAt": "2026-09-15T10:49:23.810Z"
-    },
-    {
-      "artist": "Provinz",
-      "title": "Hymne gegen euch",
-      "video": "BKh5IMj4ias",
-      "addedAt": "2026-09-13T14:50:29.035Z"
-    },
-    {
-      "artist": "Faun",
-      "title": "Walpurgisnacht",
-      "video": "nLgM1QJ3S_I",
-      "addedAt": "2026-09-13T14:50:02.126Z"
-    },
-    {
-      "artist": "Pedro Sampaio",
-      "title": "Sequência Feiticeira",
-      "video": "_zKnEm9xPWw",
-      "addedAt": "2026-09-13T14:49:37.464Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Kira Stone, Cast of EPIC)",
-      "title": "Keep Your Friends Close",
-      "video": "UGYny6uI2bA",
-      "addedAt": "2026-09-13T14:49:06.920Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "I’m Only Me When I’m With You",
-      "video": "AlTfYj7q5gQ",
-      "addedAt": "2026-09-13T14:48:49.260Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "How You Get The Girl",
-      "video": "rnwD7veCoFQ",
-      "addedAt": "2026-09-13T12:31:25.401Z"
-    },
-    {
-      "artist": "Default",
-      "title": "Wasting My Time",
-      "video": "UAocvKHUidg",
-      "addedAt": "2026-09-13T12:29:34.300Z"
-    },
-    {
-      "artist": "Shakira",
-      "title": "Zoo (De \"Disney Zootopia 2\")",
-      "video": "Kw3935PH01E",
-      "addedAt": "2026-09-13T12:29:17.888Z"
-    },
-    {
-      "artist": "KPop Demon Hunters (Saja Boys)",
-      "title": "Meu Pequeno Guaraná",
-      "video": "4EoGIUvP_uA",
-      "addedAt": "2026-09-13T12:28:55.624Z"
-    },
-    {
-      "artist": "ROBI & Ivana",
-      "title": "FA-TAL!",
-      "video": "YSTq9MBVAJ4",
-      "addedAt": "2026-09-12T12:27:06.816Z"
-    },
-    {
-      "artist": "A-ha",
-      "title": "Shadowside",
-      "video": "FMjkCF-BcQU",
-      "addedAt": "2026-09-12T12:26:39.192Z"
-    },
-    {
-      "artist": "FantasticYouth",
-      "title": "Gedou Sanka",
-      "video": "JtQeB0kNiu0",
-      "addedAt": "2026-09-12T12:26:17.258Z"
-    },
-    {
-      "artist": "Eisblume & Scala",
-      "title": "Louise",
-      "video": "_I6o7yoPa74",
-      "addedAt": "2026-09-12T12:25:37.973Z"
-    },
-    {
-      "artist": "Fleet Foxes",
-      "title": "White Winter Hymnal",
-      "video": "DrQRS40OKNE",
-      "addedAt": "2026-09-12T12:25:16.914Z"
     }
   ]
 }
