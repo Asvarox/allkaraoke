@@ -1099,23 +1099,44 @@ describe('chat', () => {
   });
 
   describe('ids', () => {
-    it('keeps the id the sender minted, so their own pending copy matches', () => {
+    it('keeps the suffix the sender minted, under the author the room resolved', () => {
       const room = createRoom();
       join(room, ['p1']);
-      expect(say(room, 'p1', 'mine', 'chosen-id').id).toBe('chosen-id');
+      expect(say(room, 'p1', 'mine', 'chosen-id').id).toBe('p1:chosen-id');
     });
 
-    it('re-mints an id that is already in the history', () => {
+    it("namespaces ids by author, so one singer cannot name another singer's message", () => {
       const room = createRoom();
       join(room, ['p1', 'p2']);
-      say(room, 'p1', 'first', 'duplicate-id');
+      const mine = say(room, 'p1', 'first', 'same-suffix');
 
-      const second = say(room, 'p2', 'trying to reuse that id', 'duplicate-id');
+      // Same suffix from a different singer: the author half differs, so it lands as its own
+      // message instead of replacing the first one on every client still showing it.
+      const theirs = say(room, 'p2', 'trying to reuse that id', 'same-suffix');
 
-      expect(second.id).not.toBe('duplicate-id');
+      expect(mine.id).toBe('p1:same-suffix');
+      expect(theirs.id).toBe('p2:same-suffix');
       const stored = history(room);
       expect(stored).toHaveLength(2);
       expect(stored[0].text).toBe('first');
+    });
+
+    it('re-mints when the sender reuses one of their own ids', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      say(room, 'p1', 'first', 'duplicate-id');
+
+      const second = say(room, 'p1', 'same id again', 'duplicate-id');
+
+      expect(second.id).not.toBe('p1:duplicate-id');
+      expect(history(room)).toHaveLength(2);
+    });
+
+    it('strips anything id-shaped out of a proposed suffix', () => {
+      const room = createRoom();
+      join(room, ['p1']);
+      // The id is echoed to every client and used as a React key — it carries no free text.
+      expect(say(room, 'p1', 'hello', '../../evil id!').id).toBe('p1:evilid');
     });
   });
 

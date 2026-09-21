@@ -48,19 +48,32 @@ const mergeMessage = (lines: ChatLine[], incoming: ChatMessage): ChatLine[] => {
 /**
  * Asks the room for the backlog and folds it in ahead of whatever this client already has.
  *
- * History first, then anything that arrived while the request was in flight (and anything still
- * pending), in the order this client saw them — reconciled by id, so the duplicate the
- * subscribe-then-fetch ordering deliberately produces collapses instead of showing twice.
+ * The room's copy is the authoritative one, so it is the base rather than one half of a blend.
+ * What this client holds is kept only where it is genuinely *newer* than anything the room sent —
+ * a message published in the gap between subscribing and this reply landing. Older local lines are
+ * dropped: after a reconnect they may be a backlog the room has since rolled past, and keeping
+ * them would let a stale conversation survive (and, once the cap trimmed from the end, evict the
+ * freshly fetched one outright).
+ *
+ * Pending lines sit outside the cap. They are this client's unacknowledged work, not history, and
+ * trimming one would silently drop a message the sender is still watching.
  */
+export const mergeFetchedHistory = (current: ChatLine[], history: ChatMessage[]): ChatLine[] => {
+  const known = new Set(history.map((message) => message.id));
+  // The room appends, so its last entry is the newest thing it knows about.
+  const newestKnownAt = history.length ? history[history.length - 1].at : 0;
+  const missedWhileFetching = current.filter(
+    (line): line is ChatMessage => !isPending(line) && !known.has(line.id) && line.at > newestKnownAt,
+  );
+  return [...capHistory([...history, ...missedWhileFetching]), ...current.filter(isPending)];
+};
+
 const fetchHistory = (disposed: () => boolean, setLines: Dispatch<SetStateAction<ChatLine[]>>) =>
   OnlineClient.rpc.chat
     .getHistory()
     .then((history) => {
       if (disposed()) return;
-      setLines((current) => {
-        const known = new Set(history.map((message) => message.id));
-        return capHistory([...history, ...current.filter((line) => !known.has(line.id))]);
-      });
+      setLines((current) => mergeFetchedHistory(current, history));
     })
     .catch(() => {
       // A room mid-handover has nobody to answer yet. The live channel keeps working, and the
@@ -139,11 +152,15 @@ export const useOnlineChat = () => {
     const body = text.trim();
     if (!body) return null;
 
-    const id = uuid();
+    const participantId = OnlineClient.getParticipantId();
+    // Only the second half is ours to choose — the room prefixes the author it resolved, so ids
+    // are namespaced and one client cannot name another's message. Mirrored here so the pending
+    // line carries the id the room will hand back, which is what matches the two.
+    const suffix = uuid();
+    const id = `${participantId}:${suffix}`;
     // The pending line is drawn like any other, so it needs the same name and colour the room
     // will stamp on it — read from the room state this client already has rather than left blank
     // and filled in on confirmation, which would make the line visibly change as it lands.
-    const participantId = OnlineClient.getParticipantId();
     const self = OnlineClient.subscriptions
       .getSnapshot('room-state')
       ?.participants.find((participant) => participant.id === participantId);
@@ -159,7 +176,7 @@ export const useOnlineChat = () => {
     setLines((current) => [...current, pending]);
 
     try {
-      const accepted = await OnlineClient.rpc.chat.send(body, id);
+      const accepted = await OnlineClient.rpc.chat.send(body, suffix);
       const roomCode = OnlineClient.getRoomCode();
       if (roomCode) trackOnlineChatMessageSent(roomCode, accepted.text.length);
       // Usually a no-op: the broadcast has already replaced the pending line. It matters when the

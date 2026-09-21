@@ -819,12 +819,25 @@ export class OnlineRoomLogic {
     return false;
   };
 
-  /** A message id the history is not already using. The id arrives from the client (so that its
-   * own optimistic copy can be matched to this one), which means it is neither unique nor
-   * anybody's to claim until the room has checked. */
-  private uniqueChatId = (proposed: unknown): string => {
-    const candidate = typeof proposed === 'string' ? proposed.slice(0, 64) : '';
-    if (!candidate || this.chat.some((message) => message.id === candidate)) return uuid();
+  /**
+   * The id a message will carry, namespaced to its author.
+   *
+   * The client proposes the second half so that it can match the room's copy to the line it
+   * already drew optimistically — the accepted message is broadcast before this call's response is
+   * sent, so the echo usually arrives first and there is nothing else to recognise it by.
+   *
+   * The author half is taken from the participant the room resolved, never from the request, which
+   * is what stops a client naming somebody else's message. Without it a client could reuse an id
+   * that has aged out of the room's history but is still on screen somewhere, and replace that
+   * line in place on every client still holding it. Scoped this way the worst it can do is
+   * overwrite one of its own.
+   */
+  private uniqueChatId = (authorId: string, proposed: unknown): string => {
+    // Bounded and stripped to id-shaped characters: it is echoed to every client and used as a
+    // React key, so it has no business carrying arbitrary text.
+    const suffix = typeof proposed === 'string' ? proposed.slice(0, 64).replace(/[^\w-]/g, '') : '';
+    const candidate = suffix ? `${authorId}:${suffix}` : '';
+    if (!candidate || this.chat.some((message) => message.id === candidate)) return `${authorId}:${uuid()}`;
     return candidate;
   };
 
@@ -991,7 +1004,7 @@ export class OnlineRoomLogic {
         if (this.chatRateLimitExceeded(participant.id)) throw new Error(ONLINE_CHAT_RATE_LIMIT_ERROR);
 
         const message: ChatMessage = {
-          id: this.uniqueChatId(id),
+          id: this.uniqueChatId(participant.id, id),
           at: this.deps.now(),
           authorId: participant.id,
           authorName: participant.name,
