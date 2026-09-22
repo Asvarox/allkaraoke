@@ -54,6 +54,8 @@ const HIDDEN_SELECTORS = [
   '[data-test="mic-volume-indicator"] > *',
   // Round-trip time to each singer in an online room, refreshed every second.
   '[data-test="participant-ping"]',
+  // The room's code, generated per run. Its width doesn't vary, so the bar it sits in doesn't move.
+  '[data-test="topbar-room-code"]',
 ];
 
 /**
@@ -144,7 +146,17 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           // Fixed-position elements (e.g. the top-right toolbar) are pinned at whatever scroll offset
           // is active when Playwright starts stitching a fullPage screenshot, so they render shifted
           // down if the page was left scrolled. Reset scroll first so they always land at the top.
-          await targetPage.evaluate(() => window.scrollTo(0, 0));
+          await targetPage.evaluate(() => {
+            window.scrollTo(0, 0);
+
+            // These screens mostly scroll inside an element rather than the window - the post-game
+            // boards are one - and a list that scrolls a row into view as it renders settles at a
+            // different offset depending on when that row arrived. Left alone, the shot is of
+            // whatever offset that race happened to land on.
+            document.querySelectorAll('*').forEach((element) => {
+              if (element.scrollTop !== 0) element.scrollTop = 0;
+            });
+          });
 
           // `extraMasks` are the caller-supplied volatile regions, e.g. the remote mic's live ping
           // counter; HIDDEN_SELECTORS covers the ones every screen shares.

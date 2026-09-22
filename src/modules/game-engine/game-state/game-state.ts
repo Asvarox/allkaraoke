@@ -18,6 +18,9 @@ import getSongBeatCount from '~/modules/songs/utils/get-song-beat-count';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
 import tuple from '~/modules/utils/tuple';
 
+/** The game holds the mic for the length of a song, and takes and releases it from two places. */
+const MONITORING_HOLDER_ID = 'game';
+
 export class GameStateClass {
   private song: Song | null = null;
   private currentTime: milliseconds = 0;
@@ -134,11 +137,11 @@ export class GameStateClass {
   };
 
   public startInputMonitoring = async () => {
-    return InputManager.startMonitoring();
+    return InputManager.startMonitoring(MONITORING_HOLDER_ID);
   };
 
   public stopInputMonitoring = () => {
-    return InputManager.stopMonitoring();
+    return InputManager.stopMonitoring(MONITORING_HOLDER_ID);
   };
 
   public update = () => {

@@ -14,26 +14,21 @@ import { RemoteMicrophoneInputSource } from '~/routes/select-input/input-sources
 class InputManager {
   private isMonitoring = false;
 
-  /** How many outstanding {@link requestMonitoring} holds there are. */
-  private holders = 0;
+  /** Everyone who currently wants the pipeline running, by the id they hold it under. */
+  private holders = new Set<string>();
 
-  /**
-   * Whether the pipeline belongs to the holders rather than to a direct {@link startMonitoring}
-   * caller (the game engine, say), who is owed it for as long as they want it. Ownership is a
-   * property of the group, not of whoever releases last: it is decided when the first hold is taken
-   * and stands until the last one is given back.
-   */
-  private startedByHolders = false;
+  private nextHolderId = 0;
+
+  /** The inputs the pipeline was last opened for, so it can be closed for exactly those again. */
+  private openedInputs: SelectedPlayerInput[] = [];
 
   /** Tail of the queue of pipeline transitions - see {@link serialize}. */
   private transitions: Promise<unknown> = Promise.resolve();
 
   constructor() {
-    events.inputListChanged.subscribe(async () => {
-      if (this.isMonitoring) {
-        await this.stopMonitoring();
-        this.startMonitoring();
-      }
+    // A device appearing or disappearing changes what should be open, but not who wants it.
+    events.inputListChanged.subscribe(() => {
+      void this.reassertMonitoring();
     });
   }
 
@@ -86,105 +81,96 @@ class InputManager {
   /**
    * Runs pipeline transitions one after another. They each take a while to settle and only then
    * report what they did, so overlapping ones read a state that is already out of date and undo
-   * each other's work - a stop begun before a start can finish after it and tear down the devices
-   * that start had just opened. Queueing them means every transition sees where things actually
+   * each other's work - a close begun before an open can finish after it and tear down the devices
+   * that open had just brought up. Queueing them means every transition sees where things actually
    * stand, and the one after it sees the result.
    *
-   * A transition that fails is still a transition: the queue carries on rather than wedging.
+   * A transition that fails is still a transition: the queue carries on rather than wedging. Its
+   * rejection is absorbed here too - a remote input rejects when its transport drops mid-connection,
+   * which means the pipeline isn't running, and nothing above this can do anything about that.
    */
-  private serialize = <T>(transition: () => Promise<T>): Promise<T> => {
-    const result = this.transitions.then(transition, transition);
-    this.transitions = result.catch(() => undefined);
+  private serialize = (transition: () => Promise<void>) => {
+    const result = this.transitions.then(transition, transition).catch(() => undefined);
+    this.transitions = result;
 
     return result;
   };
 
-  private startMonitoringNow = async () => {
-    const allInputs = PlayersManager.getPlayers().map((player) => player.input);
+  /** Brings up whatever the players are singing through now, and remembers it for {@link close}. */
+  private open = async () => {
+    const inputs = PlayersManager.getPlayers().map((player) => player.input);
+
     await Promise.all(
-      allInputs.map((input) => this.sourceNameToInput(input.source).startMonitoring(input.deviceId, allInputs)),
+      inputs.map((input) => this.sourceNameToInput(input.source).startMonitoring(input.deviceId, inputs)),
     );
+    this.openedInputs = inputs;
     this.isMonitoring = true;
   };
 
-  private stopMonitoringNow = async (inputs: SelectedPlayerInput[]) => {
+  /**
+   * Closes what {@link open} brought up - the inputs as they were then, which is not necessarily
+   * what the players are on now. A player switching microphone leaves the one they were using to be
+   * closed, and it is only findable here.
+   */
+  private close = async () => {
+    const inputs = this.openedInputs;
+    this.openedInputs = [];
+
     await Promise.all(inputs.map((input) => this.sourceNameToInput(input.source).stopMonitoring(input.deviceId)));
     this.isMonitoring = false;
   };
 
   /**
-   * Which inputs a stop is going to release, decided as the caller asks rather than when the queue
-   * gets round to it. `PlayersManager.changeInput` stops monitoring and *then* swaps the player's
-   * input over; read any later and the swap has already landed, so the stop would release the device
-   * being switched to and leave the one it was called to release running.
+   * Registers a holder and hands back its release; the pipeline runs for as long as anyone holds
+   * it. Callers say what they need and nothing else - overlapping holds, and the pipeline's own
+   * async lifecycle, are this manager's problem.
+   *
+   * `holderId` is for a caller whose start and release are in different places, like the game
+   * engine running the mic for the length of a song; everyone else gets an id of their own and can
+   * ignore this. Holding under an id already held is the same hold, not a second one.
    */
-  private currentInputs = () => PlayersManager.getPlayers().map((player) => player.input);
+  public startMonitoring = (holderId: string = `holder-${this.nextHolderId++}`) => {
+    this.holders.add(holderId);
+    void this.serialize(this.open);
 
-  /**
-   * Starts the pipeline outright, for callers that drive it rather than hold it - the game engine
-   * runs it for the length of a song. Idempotent per device: it picks up inputs added since, and
-   * never tears a running one down. Anything that just wants a mic while it's on screen should
-   * take a hold with {@link requestMonitoring} instead.
-   */
-  public startMonitoring = () => this.serialize(this.startMonitoringNow);
-
-  /** Counterpart to {@link startMonitoring}. Stops the pipeline regardless of who wanted it. */
-  public stopMonitoring = () => {
-    const inputs = this.currentInputs();
-
-    return this.serialize(() => this.stopMonitoringNow(inputs));
+    // Returns nothing, so it can be handed straight to `useEffect` as its cleanup.
+    return () => {
+      void this.stopMonitoring(holderId);
+    };
   };
 
   /**
-   * Asks for the pipeline to be running for as long as the caller needs it, and hands back the
-   * release to call when it doesn't. Callers state what they need and nothing else - overlapping
-   * requests, and the pipeline's own async lifecycle, are this manager's problem:
+   * Releases a hold, and with it the pipeline once nothing else is holding it. Taking the hold
+   * again before the teardown gets its turn keeps it running: React's StrictMode remounts every
+   * effect in dev, and a screen handing over to another that wants the mic too shouldn't have it
+   * stop and start in between.
    *
-   * - The pipeline is started once for however many holders there are, and torn down when the last
-   *   one lets go. A screen nested inside another that also holds it (the input setup inside the
-   *   online wizard inside a room) can therefore ask for it without taking it away from its parent.
-   * - A hold released and re-taken in the same tick keeps it running. React's StrictMode remounts
-   *   every effect in dev, so the naive teardown would leave the screen that just mounted without a
-   *   mic for good.
-   * - A pipeline someone started directly is never stopped here, however the holds come and go.
-   *
-   * Releasing twice does nothing the second time.
+   * Releasing something that isn't held does nothing.
    */
-  public requestMonitoring = () => {
-    const isFirstHolder = this.holders === 0;
-    this.holders++;
+  public stopMonitoring = (holderId: string) => {
+    if (!this.holders.delete(holderId)) return Promise.resolve();
 
-    void this.serialize(async () => {
-      // Asked once the queue gets here, not when the hold was taken: a stop this hold is waiting
-      // behind would otherwise still read as "running" and leave the group thinking the pipeline is
-      // someone else's.
-      if (isFirstHolder) {
-        this.startedByHolders = !this.isMonitoring;
-      }
+    return this.serialize(async () => {
+      if (this.holders.size > 0) return;
 
-      await this.startMonitoringNow();
-      // A remote input rejects when its transport drops mid-connection. Nothing can be done about
-      // it here - monitoring simply isn't running - and the release below reads the holder count
-      // rather than the outcome, so let it go rather than leave an unhandled rejection behind.
-    }).catch(() => undefined);
+      await this.close();
+    });
+  };
 
-    let released = false;
+  /**
+   * Brings the running pipeline up to date with inputs that have changed underneath it - a player
+   * switching microphone, a device appearing or going away. Closes what was open and opens what the
+   * players are on now, in that order, so the device being switched away from is actually released.
+   *
+   * Does nothing when nobody is holding the pipeline: there is nothing running to bring up to date.
+   */
+  public reassertMonitoring = () => {
+    if (this.holders.size === 0) return Promise.resolve();
 
-    return () => {
-      if (released) return;
-      released = true;
-      this.holders--;
-      const inputs = this.currentInputs();
-
-      void this.serialize(async () => {
-        // By now someone else may be holding it open - either a nested screen, or this very
-        // component re-mounting, which is what React's StrictMode does on every mount in dev.
-        // Tearing the pipeline down there would leave the screen that just mounted without a mic.
-        if (this.holders === 0 && this.startedByHolders) {
-          await this.stopMonitoringNow(inputs);
-        }
-      }).catch(() => undefined);
-    };
+    return this.serialize(async () => {
+      await this.close();
+      await this.open();
+    });
   };
 
   public monitoringStarted = () => this.isMonitoring;

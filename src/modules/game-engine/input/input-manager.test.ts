@@ -16,10 +16,10 @@ const createInput = () => {
 
   const input: InputInterface = {
     startMonitoring: async (deviceId?: string) => {
-      log.push(deviceId === undefined ? 'start' : `start:${deviceId}`);
+      log.push(`start:${deviceId}`);
     },
     stopMonitoring: async (deviceId?: string) => {
-      log.push(deviceId === undefined ? 'stop' : `stop:${deviceId}`);
+      log.push(`stop:${deviceId}`);
       if (!holdStop) return;
 
       return new Promise<void>((resolve) => {
@@ -63,14 +63,12 @@ describe('InputManager monitoring', () => {
     device = createInput();
     InputManager.sourceNameToInput = () => device.input;
 
-    // The manager is a singleton, so start each test from a pipeline that is known to be off.
-    await InputManager.stopMonitoring();
     device.log.length = 0;
   });
 
-  it('keeps the pipeline running while anyone still holds it', async () => {
-    const release = InputManager.requestMonitoring();
-    const releaseNested = InputManager.requestMonitoring();
+  it('runs the pipeline for as long as anyone holds it', async () => {
+    const release = InputManager.startMonitoring();
+    const releaseNested = InputManager.startMonitoring();
     await settle();
 
     release();
@@ -86,13 +84,38 @@ describe('InputManager monitoring', () => {
     expect(InputManager.monitoringStarted()).toBe(false);
   });
 
+  it('treats the same holder id as one hold however often it is taken', async () => {
+    InputManager.startMonitoring('the-game');
+    InputManager.startMonitoring('the-game');
+    await settle();
+
+    await InputManager.stopMonitoring('the-game');
+    await settle();
+
+    expect(InputManager.monitoringStarted()).toBe(false);
+  });
+
+  it('ignores a release of something that is not held', async () => {
+    const release = InputManager.startMonitoring('mine');
+    await settle();
+
+    await InputManager.stopMonitoring('someone-elses');
+    await settle();
+
+    expect(device.log).not.toContain('stop:default');
+    expect(InputManager.monitoringStarted()).toBe(true);
+
+    release();
+    await settle();
+  });
+
   it('survives a hold released and re-taken in the same tick', async () => {
-    const release = InputManager.requestMonitoring();
+    const release = InputManager.startMonitoring();
     await settle();
 
     // What React's StrictMode does to every effect in dev.
     release();
-    const releaseRemounted = InputManager.requestMonitoring();
+    const releaseRemounted = InputManager.startMonitoring();
     await settle();
 
     expect(device.log).not.toContain('stop:default');
@@ -102,39 +125,32 @@ describe('InputManager monitoring', () => {
     await settle();
   });
 
-  it('does not stop a pipeline it was not the one to start', async () => {
-    await InputManager.startMonitoring();
-
-    const release = InputManager.requestMonitoring();
-    await settle();
-    release();
-    await settle();
-
-    expect(device.log).not.toContain('stop:default');
-    expect(InputManager.monitoringStarted()).toBe(true);
-  });
-
-  it('releases the input the caller had when it asked, not the one it is switching to', async () => {
-    const release = InputManager.requestMonitoring();
+  it('releases the input a player was on when they switch to another', async () => {
+    const release = InputManager.startMonitoring();
     await settle();
     device.log.length = 0;
 
-    // What PlayersManager.changeInput() does: stop monitoring, then swap the input over.
-    const stopped = InputManager.stopMonitoring();
-    PlayersManager.getPlayer(0)!.input = { source: 'Microphone', deviceId: 'the-new-one', channel: 0 };
-    await stopped;
+    PlayersManager.getPlayer(0)!.changeInput('Microphone', 0, 'the-new-one');
     await settle();
 
-    expect(device.log).toEqual(['stop:default']);
+    expect(device.log).toEqual(['stop:default', 'start:the-new-one']);
 
     release();
     await settle();
   });
 
-  it('starts behind a stop that is still in flight rather than racing it', async () => {
+  it('has nothing to bring up to date when nobody is holding the pipeline', async () => {
+    await InputManager.reassertMonitoring();
+    await settle();
+
+    expect(device.log).toEqual([]);
+    expect(InputManager.monitoringStarted()).toBe(false);
+  });
+
+  it('starts behind a teardown that is still in flight rather than racing it', async () => {
     device.holdStop();
 
-    const release = InputManager.requestMonitoring();
+    const release = InputManager.startMonitoring();
     await settle();
 
     // The last holder leaves - a screen being navigated away from - and the next one arrives before
@@ -143,7 +159,7 @@ describe('InputManager monitoring', () => {
     await settle();
     expect(device.log).toEqual(['start:default', 'stop:default']);
 
-    const releaseNext = InputManager.requestMonitoring();
+    const releaseNext = InputManager.startMonitoring();
     await settle();
 
     // Queued behind the teardown rather than running alongside it.
@@ -152,8 +168,8 @@ describe('InputManager monitoring', () => {
     device.finishStop();
     await settle();
 
-    // The start had to wait: running it alongside the stop would have left the teardown to finish
-    // last and close the devices it had just opened.
+    // The start had to wait: running it alongside the teardown would have left the teardown to
+    // finish last and close the devices it had just opened.
     expect(device.log).toEqual(['start:default', 'stop:default', 'start:default']);
     expect(InputManager.monitoringStarted()).toBe(true);
 

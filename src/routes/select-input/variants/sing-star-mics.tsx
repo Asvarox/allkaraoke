@@ -53,7 +53,7 @@ function SingStarMics(props: Props) {
   useEffect(() => {
     if (!isSetup) return;
 
-    return InputManager.requestMonitoring();
+    return InputManager.startMonitoring();
   }, [isSetup]);
 
   const onContinue = () => {
