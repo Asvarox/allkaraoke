@@ -5,7 +5,7 @@ import MicInput from '~/modules/game-engine/input/multi-mic-input';
 import RemoteMicInput from '~/modules/game-engine/input/remote-mic-input';
 import events from '~/modules/game-events/game-events';
 import { PlayerNumber } from '~/modules/players/player-number';
-import PlayersManager from '~/modules/players/players-manager';
+import PlayersManager, { SelectedPlayerInput } from '~/modules/players/players-manager';
 import { DrawingTestInputSource } from '~/routes/select-input/input-sources/drawing-test';
 import { InputSourceNames } from '~/routes/select-input/input-sources/interfaces';
 import { MicrophoneInputSource } from '~/routes/select-input/input-sources/microphone';
@@ -24,6 +24,9 @@ class InputManager {
    * and stands until the last one is given back.
    */
   private startedByHolders = false;
+
+  /** Tail of the queue of pipeline transitions - see {@link serialize}. */
+  private transitions: Promise<unknown> = Promise.resolve();
 
   constructor() {
     events.inputListChanged.subscribe(async () => {
@@ -80,7 +83,23 @@ class InputManager {
     }
   };
 
-  public startMonitoring = async () => {
+  /**
+   * Runs pipeline transitions one after another. They each take a while to settle and only then
+   * report what they did, so overlapping ones read a state that is already out of date and undo
+   * each other's work - a stop begun before a start can finish after it and tear down the devices
+   * that start had just opened. Queueing them means every transition sees where things actually
+   * stand, and the one after it sees the result.
+   *
+   * A transition that fails is still a transition: the queue carries on rather than wedging.
+   */
+  private serialize = <T>(transition: () => Promise<T>): Promise<T> => {
+    const result = this.transitions.then(transition, transition);
+    this.transitions = result.catch(() => undefined);
+
+    return result;
+  };
+
+  private startMonitoringNow = async () => {
     const allInputs = PlayersManager.getPlayers().map((player) => player.input);
     await Promise.all(
       allInputs.map((input) => this.sourceNameToInput(input.source).startMonitoring(input.deviceId, allInputs)),
@@ -88,13 +107,32 @@ class InputManager {
     this.isMonitoring = true;
   };
 
-  public stopMonitoring = async () => {
-    await Promise.all(
-      PlayersManager.getPlayers().map((player) =>
-        this.sourceNameToInput(player.input.source).stopMonitoring(player.input.deviceId),
-      ),
-    );
+  private stopMonitoringNow = async (inputs: SelectedPlayerInput[]) => {
+    await Promise.all(inputs.map((input) => this.sourceNameToInput(input.source).stopMonitoring(input.deviceId)));
     this.isMonitoring = false;
+  };
+
+  /**
+   * Which inputs a stop is going to release, decided as the caller asks rather than when the queue
+   * gets round to it. `PlayersManager.changeInput` stops monitoring and *then* swaps the player's
+   * input over; read any later and the swap has already landed, so the stop would release the device
+   * being switched to and leave the one it was called to release running.
+   */
+  private currentInputs = () => PlayersManager.getPlayers().map((player) => player.input);
+
+  /**
+   * Starts the pipeline outright, for callers that drive it rather than hold it - the game engine
+   * runs it for the length of a song. Idempotent per device: it picks up inputs added since, and
+   * never tears a running one down. Anything that just wants a mic while it's on screen should
+   * take a hold with {@link requestMonitoring} instead.
+   */
+  public startMonitoring = () => this.serialize(this.startMonitoringNow);
+
+  /** Counterpart to {@link startMonitoring}. Stops the pipeline regardless of who wanted it. */
+  public stopMonitoring = () => {
+    const inputs = this.currentInputs();
+
+    return this.serialize(() => this.stopMonitoringNow(inputs));
   };
 
   /**
@@ -113,15 +151,22 @@ class InputManager {
    * Releasing twice does nothing the second time.
    */
   public requestMonitoring = () => {
-    if (this.holders === 0) {
-      this.startedByHolders = !this.isMonitoring;
-    }
+    const isFirstHolder = this.holders === 0;
     this.holders++;
 
-    // A remote input rejects when its transport drops mid-connection. Nothing can be done about it
-    // here - monitoring simply isn't running - but the release below still has to wait for the
-    // attempt to settle, so absorb it at the source rather than leaving an unhandled rejection.
-    const startPromise = this.startMonitoring().catch(() => undefined);
+    void this.serialize(async () => {
+      // Asked once the queue gets here, not when the hold was taken: a stop this hold is waiting
+      // behind would otherwise still read as "running" and leave the group thinking the pipeline is
+      // someone else's.
+      if (isFirstHolder) {
+        this.startedByHolders = !this.isMonitoring;
+      }
+
+      await this.startMonitoringNow();
+      // A remote input rejects when its transport drops mid-connection. Nothing can be done about
+      // it here - monitoring simply isn't running - and the release below reads the holder count
+      // rather than the outcome, so let it go rather than leave an unhandled rejection behind.
+    }).catch(() => undefined);
 
     let released = false;
 
@@ -129,15 +174,16 @@ class InputManager {
       if (released) return;
       released = true;
       this.holders--;
+      const inputs = this.currentInputs();
 
-      // startMonitoring() only flips `isMonitoring` once its own async work settles. Stopping right
-      // away would let a start that finishes later win the race and leave the pipeline running with
-      // nobody holding it. Wait for the attempt to settle, then look at where things actually stand.
-      void startPromise.finally(() => {
+      void this.serialize(async () => {
+        // By now someone else may be holding it open - either a nested screen, or this very
+        // component re-mounting, which is what React's StrictMode does on every mount in dev.
+        // Tearing the pipeline down there would leave the screen that just mounted without a mic.
         if (this.holders === 0 && this.startedByHolders) {
-          void this.stopMonitoring();
+          await this.stopMonitoringNow(inputs);
         }
-      });
+      }).catch(() => undefined);
     };
   };
 
