@@ -97,12 +97,9 @@ visual(
     await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
     await remoteMic._page.setViewportSize(viewport);
 
-    // Both the live ping counter (top bar) and the mic volume/frequency preview redraw from the fake
-    // audio input every frame, so mask them on every remote capture to keep the screenshots stable.
-    const remoteMasks = [
-      remoteMic.remoteMicMainPage.connectionStatusElement,
-      remoteMic.remoteMicMainPage.indicatorElement,
-    ];
+    // The live ping counter in the top bar is re-measured every second. (The mic pill below it keeps
+    // its shape - only the volume bar inside it is hidden, by the shared rule.)
+    const remoteMasks = [remoteMic.remoteMicMainPage.connectionStatusElement];
 
     // Host returns to the main menu, which publishes its own mirrored layout to the remote.
     await pages.smartphonesConnectionPage.goToMainMenu();
@@ -180,10 +177,7 @@ visual(
     await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
     await remoteMic._page.setViewportSize(viewport);
 
-    const remoteMasks = [
-      remoteMic.remoteMicMainPage.connectionStatusElement,
-      remoteMic.remoteMicMainPage.indicatorElement,
-    ];
+    const remoteMasks = [remoteMic.remoteMicMainPage.connectionStatusElement];
 
     // A song with a long intro, so the skip-intro prompt (and its mirrored control) actually appears.
     await pages.smartphonesConnectionPage.goToMainMenu();

@@ -18,11 +18,15 @@ const seedIdentity = (page: Page) =>
   });
 
 /**
- * The row for the score just sung carries that score and today's date, and the prompt repeats the
- * score — both change between runs. The seeded rows around them are fixed, so only these are masked.
+ * The run that has just been sung carries a score and a timestamp that change every run - on the
+ * local board, on the global one, and in the prompt. Only those cells are hidden: the rank and the
+ * name beside them are the same every run, and blanking a whole row would leave a gap where the
+ * board's own layout should be.
  */
 const volatileRegions = (page: Page) => [
-  page.getByTestId('highscore-current-row'),
+  page.getByTestId('highscore-current-row').getByTestId('scoreboard-row-score'),
+  // Only present once the score has been submitted, i.e. for the sharing shot.
+  page.getByTestId('song-leaderboard-own-row').getByTestId('scoreboard-row-score'),
   page.getByTestId('leaderboard-prompt-score'),
 ];
 
@@ -57,8 +61,11 @@ visual('Leaderboard prompt', async ({ page, context, browser, makeScreenshot }) 
   await pages.postGameResultsPage.goToHighScoresStep();
 
   await expect(pages.leaderboardPage.prompt).toBeVisible();
-  // Just the dialog: the score list behind it is volatile, and a mask over it would be painted on
-  // top of the modal rather than behind it
+  // The prompt reads "<score> points is good enough ..." inline, so a score one digit longer rewraps
+  // the sentence and the dialog comes out a line taller. Hiding the score doesn't help - a hidden
+  // element still takes up its own width - so pin the text to a fixed one before capturing.
+  await page.getByTestId('leaderboard-prompt-score').evaluate((element) => (element.textContent = '1 000 000'));
+  // Just the dialog - the score list behind it is volatile and isn't the subject of this shot
   await makeScreenshot('modal', { locator: pages.leaderboardPage.prompt, extraMasks: volatileRegions(page) });
 
   await pages.leaderboardPage.submit();

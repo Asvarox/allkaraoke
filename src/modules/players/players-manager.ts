@@ -40,20 +40,15 @@ export class PlayerEntity {
   };
 
   public changeInput = (input: InputSourceNames, channel = 0, deviceId?: string) => {
-    let restartMonitoringPromise: null | Promise<void> = null;
-    if (InputManager.monitoringStarted()) {
-      restartMonitoringPromise = InputManager.stopMonitoring();
-    }
-
     const newInput: SelectedPlayerInput = { source: input, deviceId, channel };
     const oldInput = this.input;
     this.input = newInput;
 
     events.playerInputChanged.dispatch(this.number, oldInput, newInput);
 
-    if (restartMonitoringPromise) {
-      restartMonitoringPromise.then(InputManager.startMonitoring);
-    }
+    // Releases the device this player was on and picks up the one they moved to, if the pipeline is
+    // running at all.
+    void InputManager.reassertMonitoring();
   };
 
   public toJSON = () => ({

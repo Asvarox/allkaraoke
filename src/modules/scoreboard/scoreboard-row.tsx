@@ -60,7 +60,7 @@ function ScoreboardRow({
         <div className="ph-no-capture flex items-center gap-2 truncate">{name}</div>
         {subtitle && <div className="truncate text-xs opacity-70">{subtitle}</div>}
       </div>
-      <div className="shrink-0 text-right">
+      <div className="shrink-0 text-right" data-test="scoreboard-row-score">
         <span className="text-active font-semibold">
           <ScoreText score={score} />
         </span>
