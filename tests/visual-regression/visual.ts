@@ -73,13 +73,18 @@ const withElementsHidden = async (targetPage: Page, locators: Locator[], capture
   const style = await targetPage.addStyleTag({
     content: `${[...HIDDEN_SELECTORS, `[${HIDDEN_ATTRIBUTE}]`].join(', ')} { visibility: hidden !important; }`,
   });
-  await Promise.all(
-    elements.map((element) =>
-      element.evaluate((node, attribute) => node.setAttribute(attribute, ''), HIDDEN_ATTRIBUTE),
-    ),
-  );
 
   try {
+    await Promise.all(
+      elements.map((element) =>
+        element
+          // A region that has gone since it was resolved is one less thing to hide, not a failure -
+          // and tagging runs inside the `try` so that a rejection here still unwinds the rest.
+          .evaluate((node, attribute) => node.setAttribute(attribute, ''), HIDDEN_ATTRIBUTE)
+          .catch(() => {}),
+      ),
+    );
+
     await capture();
   } finally {
     await Promise.all(
