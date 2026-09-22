@@ -40,28 +40,8 @@ const NOT_AUDIBLE_TIP = "Make some noise to the microphone. If that doesn't work
  */
 const MEASURING_MESSAGE = 'Make some noise to the microphone';
 
-/**
- * Shown while the browser is still asking for permission, and — being the longest of the
- * starting-up messages — also what `StartingUpReserve` holds the height of.
- */
+/** Shown while the browser is still asking for permission. */
 const ALLOW_ACCESS_MESSAGE = 'Please allow access to the microphone so the default one can be selected.';
-
-/**
- * Holds the height of the "still starting up" beats so they all measure the same: the permission
- * status resolving (which renders nothing at all), the permission being asked for, and the default
- * device being picked. It's the longest of those messages, rendered invisibly — text rather than the
- * warning icon, because an icon only gets its size once it has loaded and would pop the row open.
- *
- * The blocked-access screen isn't covered: it adds a how-to-unblock image, which makes it a
- * different screen rather than another beat of starting up.
- */
-function StartingUpReserve() {
-  return (
-    <span className="typography invisible col-start-1 row-start-1 text-lg" aria-hidden>
-      {ALLOW_ACCESS_MESSAGE}
-    </span>
-  );
-}
 
 function TipSlot({ reserveFor, children }: { reserveFor: ReactNode; children: ReactNode }) {
   return (
@@ -142,83 +122,85 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
     </>
   );
 
+  // Laid out in full from the first frame, with the mic and its audibility as placeholders until the
+  // default device is picked. Handed to `UserMediaEnabled` as both its pending and its granted
+  // content: nothing here needs the permission to have resolved, so the screen opens as itself
+  // rather than as an empty panel, and the same tree stays mounted once access comes through.
+  const setup = (
+    <>
+      <div className="flex items-end justify-between">
+        <span className="typography text-lg">You&#39;ll sing using</span>
+        <Menu.HelpText>(click to change)</Menu.HelpText>
+      </div>
+      {/* Unregistered while loading: there's no other device to cycle to yet, and the switcher is
+          inert anyway. */}
+      <Switcher
+        {...(selectedMic ? register('selected-mic', cycleMic) : {})}
+        loading={!selectedMic}
+        label="Mic"
+        value={selectedMic}>
+        {selectedMic ? <PlayerMicCheck playerNumber={0} className="rounded-xl opacity-40" /> : null}
+      </Switcher>
+      <div className="flex items-center justify-end text-lg">
+        {!selectedMic && (
+          <>
+            {/* The message this line becomes, rendered invisibly under the placeholder bar: it gives
+                the bar both its width and — where the screen is narrow enough for the message to
+                wrap — the height of however many lines it takes. */}
+            <span className="typography grid">
+              <span className="invisible col-start-1 row-start-1" aria-hidden>
+                {MEASURING_MESSAGE}
+              </span>
+              <Skeleton className="col-start-1 row-start-1 h-5 w-full self-center" />
+            </span>
+            <div className="flex h-8 w-10 items-center justify-end">
+              <Loader />
+            </div>
+          </>
+        )}
+        {selectedMic && isAudible === true && (
+          <>
+            <span className="typography">Microphone is audible</span>
+            <div className="flex h-8 w-10 items-center justify-end">
+              <Icon icon="ic:baseline-check" size={8} className="text-default" />
+            </div>
+          </>
+        )}
+        {selectedMic && isAudible === false && (
+          <>
+            <span className="typography">Microphone is not audible</span>
+            <div className="flex h-8 w-10 items-center justify-end">
+              <Icon icon="ic:baseline-error" size={8} className="text-danger" />
+            </div>
+          </>
+        )}
+        {selectedMic && isAudible === null && (
+          <>
+            <span className="typography">{MEASURING_MESSAGE}</span>
+            <div className="flex h-8 w-10 items-center justify-end">
+              <Loader />
+            </div>
+          </>
+        )}
+      </div>
+      {/* Rendered while loading too: the slot is height-reserved, so leaving it out until a device
+          is picked would be one more thing popping the layout open. */}
+      <TipSlot reserveFor={props.onlineSetup ? NOT_AUDIBLE_TIP : smartphoneTip}>
+        {selectedMic && isAudible === false
+          ? NOT_AUDIBLE_TIP
+          : selectedMic && isAudible === true && !props.onlineSetup
+            ? smartphoneTip
+            : null}
+      </TipSlot>
+    </>
+  );
+
   return (
     <>
-      {/* The permission status still resolving (nothing to show yet) and the permission being asked
-          for are one "starting up" moment, so both are stacked on a reserver holding that moment's
-          height. Once access is granted the setup below takes over — laid out in full from the
-          start, with the mic and its audibility skeletoned until the default device is picked, so
-          the screen resizes exactly once instead of again when the device arrives. */}
-      <div className="grid">
-        <StartingUpReserve />
-        <div className="col-start-1 row-start-1 flex min-w-0 flex-col justify-center gap-4">
-          <UserMediaEnabled fallback={<span className="typography text-lg">{ALLOW_ACCESS_MESSAGE}</span>}>
-            <div className="flex items-end justify-between">
-              <span className="typography text-lg">You&#39;ll sing using</span>
-              <Menu.HelpText>(click to change)</Menu.HelpText>
-            </div>
-            {/* Unregistered while loading: there's no other device to cycle to yet, and the switcher
-                is inert anyway. */}
-            <Switcher
-              {...(selectedMic ? register('selected-mic', cycleMic) : {})}
-              loading={!selectedMic}
-              label="Mic"
-              value={selectedMic}>
-              {selectedMic ? <PlayerMicCheck playerNumber={0} className="rounded-xl opacity-40" /> : null}
-            </Switcher>
-            <div className="flex items-center justify-end text-lg">
-              {!selectedMic && (
-                <>
-                  {/* The message this line becomes, rendered invisibly under the placeholder bar: it
-                      gives the bar both its width and — where the screen is narrow enough for the
-                      message to wrap — the height of however many lines it takes. */}
-                  <span className="typography grid">
-                    <span className="invisible col-start-1 row-start-1" aria-hidden>
-                      {MEASURING_MESSAGE}
-                    </span>
-                    <Skeleton className="col-start-1 row-start-1 h-5 w-full self-center" />
-                  </span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Loader />
-                  </div>
-                </>
-              )}
-              {selectedMic && isAudible === true && (
-                <>
-                  <span className="typography">Microphone is audible</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Icon icon="ic:baseline-check" size={8} className="text-default" />
-                  </div>
-                </>
-              )}
-              {selectedMic && isAudible === false && (
-                <>
-                  <span className="typography">Microphone is not audible</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Icon icon="ic:baseline-error" size={8} className="text-danger" />
-                  </div>
-                </>
-              )}
-              {selectedMic && isAudible === null && (
-                <>
-                  <span className="typography">{MEASURING_MESSAGE}</span>
-                  <div className="flex h-8 w-10 items-center justify-end">
-                    <Loader />
-                  </div>
-                </>
-              )}
-            </div>
-            {/* Rendered while loading too: the slot is height-reserved, so leaving it out until a
-                device is picked would be one more thing popping the layout open. */}
-            <TipSlot reserveFor={props.onlineSetup ? NOT_AUDIBLE_TIP : smartphoneTip}>
-              {selectedMic && isAudible === false
-                ? NOT_AUDIBLE_TIP
-                : selectedMic && isAudible === true && !props.onlineSetup
-                  ? smartphoneTip
-                  : null}
-            </TipSlot>
-          </UserMediaEnabled>
-        </div>
+      <div className="flex min-w-0 flex-col justify-center gap-4">
+        <UserMediaEnabled fallback={<span className="typography text-lg">{ALLOW_ACCESS_MESSAGE}</span>} pending={setup}>
+          {setup}
+        </UserMediaEnabled>
       </div>
       {!props.onlineSetup && <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>}
       <MenuButton
