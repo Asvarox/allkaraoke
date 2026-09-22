@@ -46,7 +46,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # browser: [ 'chromium', 'firefox' ]
         browser: ['chromium']
         shardIndex: [1, 2, 3]
         shardTotal: [3]
@@ -180,6 +179,11 @@ jobs:
 
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
+    strategy:
+      fail-fast: false
+      matrix:
+        shardIndex: [1, 2]
+        shardTotal: [2]
     container:
       image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
@@ -209,6 +213,8 @@ jobs:
         uses: './.github/templates/run-playwright'
         with:
           config: 'playwright.config.ts'
+          shard: '${{ matrix.shardIndex }}'
+          shardTotal: '${{ matrix.shardTotal }}'
           grep: '@visual'
           updateSnapshots: 'true'
           snapshotDir: 'tests' # per playwright.config.ts's testDir
@@ -216,7 +222,7 @@ jobs:
       - name: Upload changed snapshots
         uses: './.github/templates/upload-changed-snapshots'
         with:
-          name: 'changed-snapshots-visual-regression-1' # when sharding, suffix with the shard index
+          name: 'changed-snapshots-visual-regression-${{ matrix.shardIndex }}'
           snapshotDir: 'tests'
           snapshotSuffix: '-linux.png'
 

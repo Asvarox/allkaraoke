@@ -96,35 +96,6 @@ const config: PlaywrightTestConfig = {
         permissions: ['microphone'],
       },
     },
-
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-
-        // https://webrtc.org/getting-started/testing
-        launchOptions: {
-          firefoxUserPrefs: {
-            'browser.cache.disk.enable': false,
-            'browser.cache.disk.capacity': 0,
-            'browser.cache.disk.smart_size.enabled': false,
-            'browser.cache.disk.smart_size.first_run': false,
-            'browser.sessionstore.resume_from_crash': false,
-            'browser.startup.page': 0,
-            'media.navigator.streams.fake': true,
-            'media.navigator.permission.disabled': true,
-            'device.storage.enabled': false,
-            'media.gstreamer.enabled': false,
-            'browser.startup.homepage': 'about:blank',
-            'browser.startup.firstrunSkipsHomepage': false,
-            'extensions.update.enabled': false,
-            'app.update.enabled': false,
-            'network.http.use-cache': false,
-            'browser.shell.checkDefaultBrowser': false,
-          },
-        },
-      },
-    },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
