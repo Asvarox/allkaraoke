@@ -19,11 +19,7 @@ export type MakeScreenshot = (
   options?: {
     page?: Page;
     extraMasks?: Locator[];
-    /**
-     * Capture just this element instead of the whole page. For a screen whose subject is an overlay:
-     * a mask is painted at the masked element's own position, so anything volatile *behind* a modal
-     * would otherwise blank out the modal itself.
-     */
+    /** Capture just this element instead of the whole page, e.g. to frame a dialog. */
     locator?: Locator;
   },
 ) => Promise<void>;
@@ -37,6 +33,66 @@ type VisualTestFn = (args: {
 }) => Promise<void>;
 
 const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+const HIDDEN_ATTRIBUTE = 'data-visual-hidden';
+
+/**
+ * Volatile regions every screen shares. Kept as selectors rather than locators so the rule also
+ * covers nodes that appear *after* the capture starts - the YouTube player, for one, swaps its own
+ * iframe in asynchronously.
+ */
+const HIDDEN_SELECTORS = [
+  // Embedded YouTube players (e.g. the song editor's "reference sound" step) load real,
+  // ever-changing remote content - hide them rather than fighting that non-determinism.
+  'iframe[src*="youtube"]',
+  // Video playback is never at the same frame twice, and the native controls count the elapsed
+  // time out loud on top of it.
+  'video',
+  // Only the bar inside the meter, not the element it fills: the bar redraws continuously from the
+  // (fake) audio input via direct DOM mutation (so animation-disabling does nothing), while the box
+  // around it - the remote mic's pill, a singer's row - is static and part of the screen's design.
+  '[data-test="mic-volume-indicator"] > *',
+  // Round-trip time to each singer in an online room, refreshed every second.
+  '[data-test="participant-ping"]',
+];
+
+/**
+ * Hides the given elements for the duration of `capture`.
+ *
+ * Playwright's own `mask` option doesn't hide anything - it paints an opaque pink box over the
+ * finished screenshot at the element's position, so every baseline carries those boxes and anything
+ * rendered *above* a masked element (a dialog over a volatile list) gets covered by them too.
+ * Flipping the elements to `visibility: hidden` instead leaves the layout untouched and simply lets
+ * whatever sits behind them show through, so the baseline is the real screen minus the volatile bits.
+ */
+const withElementsHidden = async (targetPage: Page, locators: Locator[], capture: () => Promise<void>) => {
+  // Caller-supplied regions are locators, which can't be turned back into CSS - tag the elements
+  // they currently resolve to and let the same rule pick the tag up.
+  const elements = (await Promise.all(locators.map((locator) => locator.all()))).flat();
+
+  const style = await targetPage.addStyleTag({
+    content: `${[...HIDDEN_SELECTORS, `[${HIDDEN_ATTRIBUTE}]`].join(', ')} { visibility: hidden !important; }`,
+  });
+  await Promise.all(
+    elements.map((element) =>
+      element.evaluate((node, attribute) => node.setAttribute(attribute, ''), HIDDEN_ATTRIBUTE),
+    ),
+  );
+
+  try {
+    await capture();
+  } finally {
+    await Promise.all(
+      elements.map((element) =>
+        element
+          // The element may have been unmounted by the time the shot is done - nothing left to restore then.
+          .evaluate((node, attribute) => node.removeAttribute(attribute), HIDDEN_ATTRIBUTE)
+          .catch(() => {}),
+      ),
+    );
+    await style.evaluate((node) => node.parentNode?.removeChild(node)).catch(() => {});
+  }
+};
 
 /**
  * Registers one test per viewport, tagged `@visual`.
@@ -85,20 +141,16 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           // down if the page was left scrolled. Reset scroll first so they always land at the top.
           await targetPage.evaluate(() => window.scrollTo(0, 0));
 
-          await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
-            ...(locator ? {} : { fullPage: true }),
-            mask: [
-              // Embedded YouTube players (e.g. the song editor's "reference sound" step) load real,
-              // ever-changing remote content - mask them rather than fighting that non-determinism.
-              targetPage.locator('iframe[src*="youtube"]'),
-              // Live microphone level meters redraw continuously from the (fake) audio input in real
-              // time via direct DOM mutation, so CSS animation-disabling has no effect on them.
-              targetPage.locator('[data-test="mic-volume-indicator"]'),
-              // Caller-supplied volatile regions (e.g. the remote mic's live ping counter).
-              ...extraMasks,
-            ],
-            // A masked iframe's own async layout can shift the mask box by a pixel or two - tolerate that jitter
-            maxDiffPixelRatio: 0.02,
+          // `extraMasks` are the caller-supplied volatile regions, e.g. the remote mic's live ping
+          // counter; HIDDEN_SELECTORS covers the ones every screen shares.
+          await withElementsHidden(targetPage, extraMasks, async () => {
+            await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
+              ...(locator ? {} : { fullPage: true }),
+              // Covers antialiasing around text and a pixel of async layout drift, and nothing
+              // larger. The old budget was twenty times this, to absorb the jitter of a painted mask
+              // box that no longer exists.
+              maxDiffPixelRatio: 0.005,
+            });
           });
         };
 

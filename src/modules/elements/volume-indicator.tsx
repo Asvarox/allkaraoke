@@ -47,7 +47,7 @@ export const VolumeIndicator = ({
     // Same two-element shape as PlayerMicCheck below, and for the same reason: the scale has to sit
     // on an inner element. Scaling the rounded, clipping box itself squashes its corner radius along
     // with it, and the bar then bleeds past the corners of the row it's sitting in.
-    <VolumeIndicatorBase {...rest} ref={ref}>
+    <VolumeIndicatorBase data-test="mic-volume-indicator" {...rest} ref={ref}>
       <div
         className="h-full w-full origin-right"
         style={{
