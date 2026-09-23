@@ -172,9 +172,9 @@ export const Gallery: Story = {
 
 export const Loading: Story = {
   render: () => <LoadingTemplate />,
-  // The handover is on a timer, so a snapshot of this story would race it. The Gallery and the
+  // The handover is on a timer, so a screenshot of this story would race it. The Gallery and the
   // side-by-side section below already cover both states as stills.
-  parameters: { chromatic: { disableSnapshot: true } },
+  tags: ['no-screenshot'],
 };
 
 export const UseCases: Story = {
