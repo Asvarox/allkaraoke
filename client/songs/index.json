@@ -16430,6 +16430,36 @@
     "local": false
   },
   {
+    "id": "babymetal-headbangeeeeerrrrr",
+    "title": "Headbangeeeeerrrrr!!!!!",
+    "artist": "Babymetal",
+    "video": "2IzR_ClTE8Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 370,
+    "gap": 30736.486486486487,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-23T02:41:39.696Z",
+    "realBpm": 177,
+    "previewStart": 99,
+    "previewEnd": 129,
+    "volume": 0.98,
+    "author": "Su-Metal",
+    "sourceUrl": "https://youtu.be/2IzR_ClTE8Y",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6403,
+    "tracksCount": 1,
+    "search": "babymetalheadbangeeeeerrrrr",
+    "local": false
+  },
+  {
     "id": "babymetal-megitsune",
     "title": "Megitsune",
     "artist": "Babymetal",
@@ -32292,6 +32322,37 @@
     "local": false
   },
   {
+    "id": "camilo-sesto-algo-de-mi",
+    "title": "Algo de mí",
+    "artist": "Camilo Sesto",
+    "video": "_sTeDba7eHA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 307.0000000000016,
+    "gap": 739.8013029316013,
+    "year": "1971",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-09-23T02:41:40.485Z",
+    "realBpm": 72,
+    "previewStart": 73,
+    "previewEnd": 100,
+    "volume": 1,
+    "author": "Valeriavalesita",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=jaimeoka",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?cancion=Algo+de+m%C3%AD",
+    "duration": 250,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6413,
+    "tracksCount": 1,
+    "search": "camilosestoalgodemi",
+    "local": false
+  },
+  {
     "id": "camilo-sesto-quieres-ser-mi-amante",
     "title": "¿Quieres ser mi amante?",
     "artist": "Camilo Sesto",
@@ -32433,6 +32494,36 @@
     "shortId": 6252,
     "tracksCount": 1,
     "search": "camprockthisisme",
+    "local": false
+  },
+  {
+    "id": "candlemass-bewitched",
+    "title": "Bewitched",
+    "artist": "Candlemass",
+    "video": "h3LNi-aPXuc",
+    "language": [
+      "English"
+    ],
+    "bpm": 298.71,
+    "gap": 90455.68143014965,
+    "year": "1987",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-09-23T02:41:40.294Z",
+    "genre": "Doom Metal",
+    "realBpm": 87,
+    "previewStart": 60,
+    "previewEnd": 154,
+    "volume": 1,
+    "author": "Bananenbenno",
+    "duration": 456,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6412,
+    "tracksCount": 1,
+    "search": "candlemassbewitched",
     "local": false
   },
   {
@@ -48259,6 +48350,33 @@
     "shortId": 6346,
     "tracksCount": 1,
     "search": "disneyslemonademouthmorethanaband",
+    "local": false
+  },
+  {
+    "id": "disneys-lemonade-mouth-turn-up-the-music",
+    "title": "Turn Up The Music",
+    "artist": "Disney’s Lemonade Mouth",
+    "video": "dACNhrdm44c",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.4,
+    "gap": 57892.785602503915,
+    "year": "2011",
+    "lastUpdate": "2026-09-23T02:41:38.790Z",
+    "genre": "Soundtrack",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6400,
+    "tracksCount": 1,
+    "search": "disneyslemonademouthturnupthemusic",
     "local": false
   },
   {
@@ -75990,6 +76108,33 @@
     "local": false
   },
   {
+    "id": "him-poison-girl",
+    "title": "Poison Girl",
+    "artist": "HIM",
+    "video": "yGvidlULUDQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 35.71428571428578,
+    "year": "1999",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-23T02:41:41.069Z",
+    "genre": "Rock",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "mrfypower",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6418,
+    "tracksCount": 1,
+    "search": "himpoisongirl",
+    "local": false
+  },
+  {
     "id": "him-right-here-in-my-arms",
     "title": "Right Here in My Arms",
     "artist": "HIM",
@@ -78177,6 +78322,34 @@
     "shortId": 1987,
     "tracksCount": 1,
     "search": "imaginedragonseyesclosed",
+    "local": false
+  },
+  {
+    "id": "imagine-dragons-feat-ado-take-me-to-the-beach",
+    "title": "Take Me to the Beach",
+    "artist": "Imagine Dragons feat. Ado",
+    "video": "5Duje_sZko8",
+    "language": [
+      "English"
+    ],
+    "bpm": 315,
+    "gap": 8340,
+    "year": "2024",
+    "lastUpdate": "2026-09-23T02:41:39.492Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "DoubleDee, commissioned by AnimeFan1997",
+    "sourceUrl": "https://www.youtube.com/watch?v=5Duje_sZko8",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6401,
+    "tracksCount": 1,
+    "search": "imaginedragonsfeatadotakemetothebeach",
     "local": false
   },
   {
@@ -82735,6 +82908,62 @@
     "shortId": 2091,
     "tracksCount": 1,
     "search": "jboallesnurgeklaut",
+    "local": false
+  },
+  {
+    "id": "jean-jacques-goldman-au-bout-de-mes-reves",
+    "title": "Au bout de mes rêves",
+    "artist": "Jean-Jacques Goldman",
+    "video": "o3hX0DU1QoI",
+    "language": [
+      "French"
+    ],
+    "bpm": 253.44,
+    "gap": 14873.844696969696,
+    "year": "1982",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-09-23T02:41:40.872Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Coolz",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6416,
+    "tracksCount": 1,
+    "search": "jeanjacquesgoldmanauboutdemesreves",
+    "local": false
+  },
+  {
+    "id": "jean-jacques-goldman-quand-tu-danses",
+    "title": "Quand tu danses",
+    "artist": "Jean-Jacques Goldman",
+    "video": "2EpQxCdUyLw",
+    "language": [
+      "French"
+    ],
+    "bpm": 373.78,
+    "gap": 18082.73604794264,
+    "year": "1997",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-09-23T02:41:41.067Z",
+    "genre": "Variété",
+    "realBpm": 134.2,
+    "volume": 1,
+    "author": "Coolz",
+    "duration": 265,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6417,
+    "tracksCount": 1,
+    "search": "jeanjacquesgoldmanquandtudanses",
     "local": false
   },
   {
@@ -92303,6 +92532,37 @@
     "shortId": 2339,
     "tracksCount": 2,
     "search": "keiinospiritinthesky",
+    "local": false
+  },
+  {
+    "id": "keina-suda-veil",
+    "title": "veil",
+    "artist": "Keina Suda",
+    "video": "geE49ne2mQg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 300.16,
+    "gap": -78.52025586353943,
+    "year": "2019",
+    "lastUpdate": "2026-09-23T02:41:40.681Z",
+    "genre": "Anime",
+    "realBpm": 75,
+    "previewStart": 39.5,
+    "previewEnd": 89,
+    "volume": 1,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=veil+%28TV%29&idioma=ja",
+    "duration": 89,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6415,
+    "tracksCount": 1,
+    "search": "keinasudaveil",
     "local": false
   },
   {
@@ -104734,6 +104994,32 @@
     "local": false
   },
   {
+    "id": "little-mix-feat-machine-gun-kelly-no-more-sad-songs",
+    "title": "No More Sad Songs",
+    "artist": "Little Mix feat. Machine Gun Kelly",
+    "video": "HHCC4ndeJyE",
+    "language": [
+      "English"
+    ],
+    "bpm": 204.25,
+    "gap": 8181.8482252141985,
+    "year": "2017",
+    "lastUpdate": "2026-09-23T02:41:39.902Z",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6407,
+    "tracksCount": 1,
+    "search": "littlemixfeatmachinegunkellynomoresadsongs",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-missy-elliott-how-ya-doin",
     "title": "How Ya Doin’?",
     "artist": "Little Mix feat. Missy Elliott",
@@ -113447,6 +113733,34 @@
     "local": false
   },
   {
+    "id": "martin-and-james-all-over-the-news",
+    "title": "All Over The News",
+    "artist": "Martin and James",
+    "video": "kP41QhrzLtc",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 10208.691588785046,
+    "year": "2011",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-23T02:41:40.093Z",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "uweotto, Usdx",
+    "sourceUrl": "Martin and James",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6408,
+    "tracksCount": 1,
+    "search": "martinandjamesalloverthenews",
+    "local": false
+  },
+  {
     "id": "martin-garrix-bebe-rexha-in-the-name-of-love",
     "title": "In The Name Of Love",
     "artist": "Martin Garrix & Bebe Rexha",
@@ -120397,6 +120711,36 @@
     "local": false
   },
   {
+    "id": "mom-jeans-death-cup",
+    "title": "Death Cup",
+    "artist": "Mom Jeans",
+    "video": "ejpAXCFm_CE",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.4,
+    "gap": 21916.257839721253,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-23T02:41:40.292Z",
+    "genre": "Emo",
+    "realBpm": 86,
+    "previewStart": 23,
+    "previewEnd": 73,
+    "volume": 1,
+    "author": "strumd",
+    "duration": 277,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6410,
+    "tracksCount": 1,
+    "search": "momjeansdeathcup",
+    "local": false
+  },
+  {
     "id": "momoiro-clover-z-moon-pride",
     "title": "MOON PRIDE",
     "artist": "Momoiro Clover Z",
@@ -124617,7 +124961,7 @@
     "bpm": 228.6,
     "gap": 29.448818897637807,
     "year": "2006",
-    "lastUpdate": "2026-08-31T20:25:29.549Z",
+    "lastUpdate": "2026-09-22T20:59:31.244Z",
     "genre": "Urban",
     "realBpm": 113,
     "volume": 1,
@@ -127041,6 +127385,35 @@
     "shortId": 6105,
     "tracksCount": 1,
     "search": "nightwishslayingthedreamer",
+    "local": false
+  },
+  {
+    "id": "nightwish-storytime",
+    "title": "Storytime",
+    "artist": "Nightwish",
+    "video": "09MTDBb8qro",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.99999999999994,
+    "gap": 27304.573890839452,
+    "year": "2011",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-23T02:41:40.293Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "Amoebius",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14354",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13142",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6411,
+    "tracksCount": 1,
+    "search": "nightwishstorytime",
     "local": false
   },
   {
@@ -132929,6 +133302,33 @@
     "shortId": 3367,
     "tracksCount": 1,
     "search": "panicatthediscotheballadofmonalisaalbumversion",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-the-only-difference-between-martyrdom-and-suicide-is-press-coverage",
+    "title": "The Only Difference Between Martyrdom And Suicide Is Press Coverage",
+    "artist": "Panic! at the Disco",
+    "video": "flKd80xRazk",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": -8.823529411764696,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-23T02:41:39.693Z",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "chiio",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 6402,
+    "tracksCount": 1,
+    "search": "panicatthediscotheonlydifferencebetweenmartyrdomandsuicideispresscoverage",
     "local": false
   },
   {
@@ -155125,6 +155525,34 @@
     "local": false
   },
   {
+    "id": "sistar-i-like-that",
+    "title": "I Like That",
+    "artist": "SISTAR",
+    "video": "LJVUjmNMF8c",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 310.04,
+    "gap": 13738.002064249775,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-09-23T02:41:40.290Z",
+    "genre": "Kpop",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6409,
+    "tracksCount": 1,
+    "search": "sistarilikethat",
+    "local": false
+  },
+  {
     "id": "sistar-shake-it",
     "title": "SHAKE IT",
     "artist": "SISTAR",
@@ -164006,6 +164434,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-dear-john",
+    "title": "Dear John",
+    "artist": "Taylor Swift",
+    "video": "N-FYySSy0rM",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 23531.59663865546,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-23T02:41:39.702Z",
+    "genre": "Country Pop",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "fredbloggs73",
+    "sourceUrl": "https://www.youtube.com/watch?v=N-FYySSy0rM",
+    "duration": 410,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6405,
+    "tracksCount": 1,
+    "search": "taylorswiftdearjohn",
+    "local": false
+  },
+  {
     "id": "taylor-swift-death-by-a-thousand-cuts",
     "title": "Death By A Thousand Cuts",
     "artist": "Taylor Swift",
@@ -168598,6 +169055,36 @@
     "local": false
   },
   {
+    "id": "the-cranberries-dreams",
+    "title": "Dreams",
+    "artist": "The Cranberries",
+    "video": "Yam5uK6e-bQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.3,
+    "gap": 33928.93898173339,
+    "year": "1992",
+    "artistOrigin": "IE",
+    "lastUpdate": "2026-09-23T02:41:39.698Z",
+    "genre": "Pop",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "juliana",
+    "sourceUrl": "https://www.youtube.com/watch?v=Yam5uK6e-bQ&t=1s",
+    "duration": 254,
+    "tracks": [
+      {
+        "name": "Dreams",
+        "start": 17
+      }
+    ],
+    "shortId": 6404,
+    "tracksCount": 1,
+    "search": "thecranberriesdreams",
+    "local": false
+  },
+  {
     "id": "the-cranberries-linger",
     "title": "Linger",
     "artist": "The Cranberries",
@@ -172135,6 +172622,33 @@
     "shortId": 4395,
     "tracksCount": 2,
     "search": "therockyhorrorpictureshowoveratthefrankensteinplace",
+    "local": false
+  },
+  {
+    "id": "the-rocky-horror-picture-show-touch-a-touch-a-touch-a-touch-me",
+    "title": "Touch-a, Touch-a, Touch-a, Touch Me",
+    "artist": "The Rocky Horror Picture Show",
+    "video": "JKMpRikJeLI",
+    "language": [
+      "English"
+    ],
+    "bpm": 227.44000000000003,
+    "gap": 143.9660436957094,
+    "year": "1975",
+    "lastUpdate": "2026-09-23T02:41:40.486Z",
+    "genre": "Musical",
+    "realBpm": 173,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 161,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 6414,
+    "tracksCount": 1,
+    "search": "therockyhorrorpictureshowtouchatouchatouchatouchme",
     "local": false
   },
   {
@@ -182902,6 +183416,36 @@
     "shortId": 4669,
     "tracksCount": 1,
     "search": "walkthemoonshutupdance",
+    "local": false
+  },
+  {
+    "id": "walkure-ikenai-borderline",
+    "title": "Ikenai Borderline",
+    "artist": "Walkure",
+    "video": "6HYHdkEYdQE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 321.98,
+    "gap": 34810.67836511585,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-23T02:41:39.706Z",
+    "genre": "Anime",
+    "realBpm": 161,
+    "previewStart": 72,
+    "previewEnd": 98,
+    "volume": 0.85,
+    "author": "Subkei",
+    "duration": 283,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6406,
+    "tracksCount": 1,
+    "search": "walkureikenaiborderline",
     "local": false
   },
   {
