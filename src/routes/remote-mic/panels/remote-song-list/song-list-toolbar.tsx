@@ -65,18 +65,12 @@ export default function SongListToolbar({
                 if (e.key === 'Escape') closeSearch();
               }}
               adornment={
-                <button
-                  type="button"
+                <Input.IconButton
+                  icon="ic:baseline-close"
                   aria-label="Close search"
-                  className="flex"
-                  onMouseDown={(e) => {
-                    // Prevent input blur before the click fires
-                    e.preventDefault();
-                    closeSearch();
-                  }}
-                  data-test="search-close-button">
-                  <Icon icon="ic:baseline-close" size={4} className="text-default" />
-                </button>
+                  onClick={closeSearch}
+                  data-test="search-close-button"
+                />
               }
               autoFocus
               data-test="search-input"

@@ -82,17 +82,12 @@ function RemoteSongSearch({ onSearchStateChange, onExpandedChange }: Props) {
             autoFocus
             className="w-full"
             adornment={
-              <button
-                type="button"
+              <Input.IconButton
+                icon="ic:baseline-close"
                 aria-label="Close search"
-                className="flex"
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  closeSearch();
-                }}
-                data-test="close-search-song-button">
-                <Icon icon="ic:baseline-close" size={5} className="text-default" />
-              </button>
+                onClick={closeSearch}
+                data-test="close-search-song-button"
+              />
             }
             data-test="search-song-input"
           />
