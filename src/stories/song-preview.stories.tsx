@@ -62,7 +62,7 @@ function useDrawingTestPlayers(volume: number) {
       // a special case in sourceNameToInput.
       player.changeInput('DrawingTest' as Parameters<typeof player.changeInput>[0], 0, 'default');
     });
-    InputManager.startMonitoring();
+    return InputManager.startMonitoring();
   }, []);
 
   useEffect(() => {

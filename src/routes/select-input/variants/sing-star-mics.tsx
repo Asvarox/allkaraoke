@@ -48,13 +48,12 @@ function SingStarMics(props: Props) {
     return isSameDeviceId && isMicInput && areAllPreferred;
   });
 
+  // Only once the mics are actually set up is there anything to listen to. Held rather than started
+  // outright: this screen renders inside the input setup, which is holding the pipeline too.
   useEffect(() => {
-    if (isSetup) {
-      InputManager.startMonitoring();
-    }
-    return () => {
-      InputManager.stopMonitoring();
-    };
+    if (!isSetup) return;
+
+    return InputManager.startMonitoring();
   }, [isSetup]);
 
   const onContinue = () => {

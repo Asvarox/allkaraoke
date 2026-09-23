@@ -76,7 +76,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
-    if (!showModal) InputManager.startMonitoring();
+    if (!showModal) void InputManager.reassertMonitoring();
   }, [showModal]);
 
   const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';

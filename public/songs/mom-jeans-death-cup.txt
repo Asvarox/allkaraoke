@@ -1,0 +1,336 @@
+#ARTIST:Mom Jeans
+#TITLE:Death Cup
+#CREATOR:strumd
+#BPM:344,4
+#YEAR:2016
+#PREVIEWSTART:23
+#VIDEO:v=ejpAXCFm_CE
+#GENRE:Emo
+#LANGUAGE:English
+#GAP:21916,257839721253
+#ALLKARAOKE_ID:mom-jeans-death-cup
+#ALLKARAOKE_SID:6410
+#ALLKARAOKE_LASTUPDATE:2026-09-23T02:41:40.292Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:86
+#ALLKARAOKE_PREVIEWEND:73
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:277
+#VERSION:1.1.0
+#AUDIO:Mom Jeans - Death Cup.mp3
+#COVER:Mom Jeans - Death Cup [CO].jpg
+#COMMENT:Created with Nautilus
+R 23 1 0 I 
+R 28 1 0 think 
+R 39 1 0 it's 
+R 44 1 0 'bout 
+R 55 1 0 time 
+R 66 1 0 that
+- 67
+R 71 1 0 I 
+R 77 1 0 warned 
+R 87 1 0 you 
+R 92 1 0 I 
+R 103 1 0 might 
+R 108 1 0 cry 
+R 119 1 0 in 
+R 124 1 0 front 
+R 130 1 0 of 
+R 135 1 0 you
+- 136 256
+- 256
+R 279 1 0 And 
+R 285 1 0 I 
+R 295 1 0 don't 
+R 301 1 0 want 
+R 311 1 0 you 
+R 317 1 0 to 
+R 326 1 0 feel
+- 327
+R 343 1 0 Like 
+R 349 1 0 I'm 
+R 359 1 0 a
+R 365 1 0 fraid 
+R 375 1 0 of 
+R 381 1 0 the 
+R 390 1 0 truth
+- 391 513
+- 513
+R 536 1 0 I 
+R 541 1 0 did
+R 552 1 0 n't 
+R 557 1 0 want 
+R 568 1 0 you 
+R 573 1 0 to 
+R 582 1 0 feel
+- 583
+R 600 1 0 Like 
+R 605 1 0 it 
+R 616 1 0 was 
+R 621 1 0 all 
+R 637 1 0 your 
+R 646 1 0 fault
+- 647 769
+- 769
+R 792 1 0 But 
+R 796 1 0 that 
+R 803 1 0 does
+R 808 1 0 n't 
+R 813 1 0 mean 
+R 821 1 0 that 
+R 824 1 0 I 
+R 829 1 0 want
+R 835 1 0 ed 
+R 840 1 0 you
+- 841
+R 856 1 0 To 
+R 861 1 0 feel 
+R 875 1 0 no
+R 888 1 0 thing 
+R 893 1 0 at 
+R 904 1 0 all
+- 905 1025
+- 1025
+R 1048 1 0 What 
+R 1054 1 0 do 
+R 1064 1 0 you 
+R 1070 1 0 want 
+R 1080 1 0 me 
+R 1086 1 0 to 
+R 1094 1 0 say
+- 1095
+R 1112 1 0 When 
+R 1118 1 0 I 
+R 1128 1 0 can't 
+R 1134 1 0 tell 
+R 1144 1 0 you 
+R 1150 1 0 the 
+R 1160 1 0 truth?
+- 1161 1281
+- 1281
+R 1304 1 0 Please 
+R 1310 1 0 tell 
+R 1321 1 0 me 
+R 1326 1 0 how 
+R 1337 1 0 the 
+R 1342 1 0 fuck
+- 1343
+R 1353 1 0 I'm 
+R 1358 1 0 supposed 
+R 1369 1 0 to 
+R 1374 1 0 deal 
+R 1385 1 0 with 
+R 1390 1 0 los
+R 1401 1 0 ing 
+R 1417 1 0 you
+- 1418 1794
+- 1794
+R 1817 1 0 So 
+R 1822 1 0 what's 
+R 1833 1 0 the 
+R 1838 1 0 point 
+R 1849 1 0 of 
+R 1854 1 0 talk
+R 1865 1 0 ing
+- 1866
+R 1870 1 0 If 
+R 1881 1 0 you're 
+R 1886 1 0 not 
+R 1901 1 0 chang
+R 1913 1 0 ing 
+R 1919 1 0 your 
+R 1929 1 0 mind?
+- 1930 2050
+- 2050
+R 2073 1 0 It 
+R 2079 1 0 just 
+R 2089 1 0 re
+R 2095 1 0 minds 
+R 2105 1 0 me 
+R 2116 1 0 of 
+R 2121 1 0 the 
+R 2127 1 0 ly
+R 2137 1 0 ing
+- 2138
+R 2143 1 0 and 
+R 2153 1 0 it's 
+R 2159 1 0 wast
+R 2169 1 0 ing 
+R 2175 1 0 my 
+R 2186 1 0 time
+- 2187 2307
+- 2307
+R 2330 1 0 So 
+R 2335 1 0 was 
+R 2346 1 0 it 
+R 2351 1 0 worth 
+R 2362 1 0 it 
+R 2367 1 0 to 
+R 2378 1 0 me?
+- 2379
+R 2394 1 0 to 
+R 2399 1 0 wait 
+R 2410 1 0 a
+R 2415 1 0 round 
+R 2426 1 0 and 
+R 2431 1 0 then 
+R 2442 1 0 see
+- 2443
+R 2458 1 0 If 
+R 2463 1 0 all 
+R 2474 1 0 my 
+R 2479 1 0 love 
+R 2490 1 0 was 
+R 2495 1 0 well 
+R 2506 1 0 spent
+- 2507
+R 2522 1 0 My 
+R 2527 1 0 night 
+R 2538 1 0 time 
+R 2543 1 0 hikes 
+R 2554 1 0 and 
+R 2559 1 0 week
+R 2570 1 0 ends
+- 2571
+R 2586 1 0 You 
+R 2591 1 0 are 
+R 2602 1 0 my 
+R 2607 1 0 best 
+R 2623 1 0 friend
+- 2624 2627
+- 2627
+R 2650 1 0 And 
+R 2655 1 0 I 
+R 2666 1 0 don't 
+R 2671 1 0 want 
+R 2682 1 0 this 
+R 2689 1 0 to 
+R 2699 1 0 end
+- 2700 2819
+- 2819
+R 2842 1 0 What 
+R 2848 1 0 do 
+R 2858 1 0 you 
+R 2864 1 0 want 
+R 2874 1 0 me 
+R 2880 1 0 to 
+R 2890 1 0 say
+- 2891
+R 2906 1 0 When 
+R 2912 1 0 I 
+R 2922 1 0 can't 
+R 2928 1 0 tell 
+R 2938 1 0 you 
+R 2944 1 0 the 
+R 2954 1 0 truth
+- 2955 3076
+- 3076
+R 3099 1 0 But 
+R 3104 1 0 tell 
+R 3115 1 0 me 
+R 3120 1 0 how 
+R 3131 1 0 the 
+R 3136 1 0 fuck
+- 3137
+R 3147 1 0 I'm 
+R 3152 1 0 supposed 
+R 3163 1 0 to 
+R 3168 1 0 deal 
+R 3179 1 0 with 
+R 3184 1 0 los
+R 3195 1 0 ing 
+R 3209 1 0 you
+- 3210 3844
+- 3844
+R 3867 1 0 What 
+R 3873 1 0 do 
+R 3883 1 0 you 
+R 3889 1 0 want 
+R 3899 1 0 me 
+R 3905 1 0 to 
+R 3916 1 0 say
+- 3917
+R 3932 1 0 When 
+R 3937 1 0 I 
+R 3948 1 0 can't 
+R 3953 1 0 tell 
+R 3964 1 0 you 
+R 3969 1 0 the 
+R 3980 1 0 truth
+- 3981 4106
+- 4106
+R 4129 1 0 Tell 
+R 4140 1 0 me 
+R 4145 1 0 how 
+R 4156 1 0 the 
+R 4161 1 0 fuck
+- 4162
+R 4172 1 0 I'm 
+R 4177 1 0 supposed 
+R 4188 1 0 to 
+R 4193 1 0 deal 
+R 4204 1 0 with 
+R 4209 1 0 los
+R 4220 1 0 ing 
+R 4236 1 0 you
+- 4237 4491
+- 4491
+R 4514 1 0 HEY!
+- 4515 4523
+- 4523
+R 4546 1 0 HEY!
+- 4547 4555
+- 4555
+R 4578 1 0 HEY!
+- 4579 4587
+- 4587
+R 4610 1 0 HEY!
+- 4611 5126
+- 5126
+R 5149 1 0 It 
+R 5154 1 0 was
+R 5165 1 0 n't 
+R 5170 1 0 worth 
+R 5181 1 0 it 
+R 5186 1 0 to 
+R 5197 1 0 me
+- 5198
+R 5213 1 0 To 
+R 5218 1 0 wait 
+R 5229 1 0 a
+R 5234 1 0 round 
+R 5245 1 0 and 
+R 5250 1 0 then 
+R 5261 1 0 see
+- 5262
+R 5277 1 0 If 
+R 5282 1 0 all 
+R 5293 1 0 my 
+R 5298 1 0 love 
+R 5309 1 0 was 
+R 5314 1 0 gone 
+R 5325 1 0 spent
+- 5326
+R 5341 1 0 My 
+R 5347 1 0 night 
+R 5357 1 0 time 
+R 5363 1 0 hikes 
+R 5373 1 0 and 
+R 5379 1 0 week
+R 5389 1 0 ends
+- 5390
+R 5405 1 0 You 
+R 5411 1 0 were 
+R 5421 1 0 my 
+R 5427 1 0 best 
+R 5437 1 0 friend
+- 5438 5446
+- 5446
+R 5469 1 0 I 
+R 5475 1 0 did
+R 5485 1 0 n't 
+R 5491 1 0 want 
+R 5501 1 0 it 
+R 5507 1 0 to 
+R 5517 1 0 end
+E

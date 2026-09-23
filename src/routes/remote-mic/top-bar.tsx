@@ -73,7 +73,7 @@ function TopBar({ connectionStatus, roomId }: Props) {
             onClick={() => setIsQRCodeModalOpen(true)}
             leftIcon={<Icon icon="ic:baseline-qr-code-2" />}
             aria-label="Connect phone">
-            {roomId && isSmallScreen ? roomId.toUpperCase() : undefined}
+            {roomId && isSmallScreen ? <span data-test="topbar-room-code">{roomId.toUpperCase()}</span> : undefined}
           </Button>
           <FullscreenButton size="mini" />
         </div>
