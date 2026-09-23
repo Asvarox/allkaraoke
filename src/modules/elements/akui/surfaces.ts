@@ -2,7 +2,7 @@
  * The surfaces the app is built from, and the states an interactive one moves through.
  *
  * The surface a dialog-like element is built from: the modal `Menu`, the `Select` popup, the
- * `Autocomplete` menu, the bottom sheet, the lobby card, the expanded song preview.
+ * bottom sheet, the lobby card, the expanded song preview.
  *
  * Opaque slate rather than the translucent black the in-game surfaces use. Those sit *in* the scene
  * and let the video through on purpose; a dialog sits on top of it and has to stay readable over

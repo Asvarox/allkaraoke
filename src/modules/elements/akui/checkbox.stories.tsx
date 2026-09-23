@@ -1,35 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { ComponentProps, ReactNode, useState } from 'react';
+import { ComponentProps, useState } from 'react';
 
 import { ButtonSize } from '~/modules/elements/akui/button';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 
 import { Checkbox } from './checkbox';
-
-function Page({ title, description, children }: { title: string; description: string; children: ReactNode }) {
-  return (
-    <div className="text-default flex min-h-screen justify-center bg-slate-950 p-8">
-      <div className="flex w-full max-w-3xl flex-col gap-8">
-        <div>
-          <h1 className="text-2xl font-semibold">{title}</h1>
-          <p className="text-default/60 text-sm">{description}</p>
-        </div>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function Section({ title, description, children }: { title: string; description?: string; children: ReactNode }) {
-  return (
-    <section className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
-      <div>
-        <h2 className="text-lg font-medium">{title}</h2>
-        {description && <p className="text-default/60 text-sm">{description}</p>}
-      </div>
-      {children}
-    </section>
-  );
-}
 
 /** `Checkbox` is controlled — it draws the box its `checked` prop asks for and nothing else. */
 function DemoCheckbox({
@@ -47,18 +22,18 @@ const SIZES: ButtonSize[] = ['mini', 'small', 'regular', 'large'];
 
 function GalleryTemplate() {
   return (
-    <Page
+    <StoryPage
       title="Checkbox"
       description="A button whose left-icon gutter holds the box, so the box lands exactly where any other button's left icon does. Labels are left-aligned and truncate to one line, so they line up down a list instead of each centring itself.">
-      <Section title="Sizes" description="The box scales with the button's size. Defaults to `small`.">
+      <StorySection title="Sizes" description="The box scales with the button's size. Defaults to `small`.">
         {SIZES.map((size) => (
           <DemoCheckbox key={size} size={size} initialChecked>
             {size}
           </DemoCheckbox>
         ))}
-      </Section>
+      </StorySection>
 
-      <Section title="States" description="Click any of them — they're all live.">
+      <StorySection title="States" description="Click any of them — they're all live.">
         <DemoCheckbox>Unchecked</DemoCheckbox>
         <DemoCheckbox initialChecked>Checked</DemoCheckbox>
         {/* One row per screen carries the cursor; `focused` is what paints it. */}
@@ -72,20 +47,20 @@ function GalleryTemplate() {
         <Checkbox checked readOnly>
           Read only
         </Checkbox>
-      </Section>
+      </StorySection>
 
-      <Section title="Labels" description="A long label truncates rather than wrapping — the box never moves.">
+      <StorySection title="Labels" description="A long label truncates rather than wrapping — the box never moves.">
         <DemoCheckbox initialChecked>Short</DemoCheckbox>
         <DemoCheckbox>Unassign the microphone after the song finishes, so the next player can join</DemoCheckbox>
         <DemoCheckbox initialChecked />
-      </Section>
+      </StorySection>
 
-      <Section title="Info" description="Helper text under the row, rendered by `InputWrapper`.">
+      <StorySection title="Info" description="Helper text under the row, rendered by `InputWrapper`.">
         <DemoCheckbox initialChecked info="Applies to every player in the room.">
           Unassign after song
         </DemoCheckbox>
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
@@ -106,10 +81,10 @@ function MultiSelectTemplate() {
   const allSelected = selected.length === SONGS.length;
 
   return (
-    <Page
+    <StoryPage
       title="Checkbox — multi-select"
       description="The song editor's selection column: a header that selects everything, then one row per song.">
-      <Section title="Song list">
+      <StorySection title="Song list">
         <Checkbox
           checked={allSelected}
           onClick={() => setSelected(allSelected ? [] : SONGS.map((song) => song.id))}
@@ -130,32 +105,34 @@ function MultiSelectTemplate() {
         <p className="text-default/60 text-sm">
           {selected.length} of {SONGS.length} selected
         </p>
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
 function UseCasesTemplate() {
   return (
-    <Page
+    <StoryPage
       title="Checkbox — in context"
       description="The two shapes it shows up in: a settings row, and a compact row in a mirrored remote control list.">
-      <Section title="Settings row">
+      <StorySection title="Settings row">
         <DemoCheckbox initialChecked className="w-full" info="The mic is freed for the next player.">
           Unassign after song finished
         </DemoCheckbox>
         <DemoCheckbox className="w-full">Mute the backing track</DemoCheckbox>
-      </Section>
+      </StorySection>
 
-      <Section title="Remote control row" description="Mirrored from the game — `mini`, on the remote's own surface.">
+      <StorySection
+        title="Remote control row"
+        description="Mirrored from the game — `mini`, on the remote's own surface.">
         <DemoCheckbox size="mini" className="w-full" initialChecked>
           Manual mic assignment
         </DemoCheckbox>
         <DemoCheckbox size="mini" className="w-full" disabled>
           Unavailable while singing
         </DemoCheckbox>
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 

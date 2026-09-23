@@ -18,9 +18,12 @@ export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'hallowee
 // blue-ish colour on <body> instead keeps screenshots stable and fully covered.
 const SCREENSHOT_BACKGROUND = '#1a5dab';
 
+/** The app's regular blue, as a still gradient — the animated background runs over a 400% sized copy of it. */
+export const regularBackgroundGradient = 'linear-gradient(to bottom right, #2575cf, #1a5dab, #144a8a, #2575cf)';
+
 const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: CSSProperties } = {
   default: {
-    backgroundImage: 'linear-gradient(to bottom right, #2575cf, #1a5dab, #144a8a, #2575cf)',
+    backgroundImage: regularBackgroundGradient,
     backgroundSize: '400% 400%',
   },
   christmas: {

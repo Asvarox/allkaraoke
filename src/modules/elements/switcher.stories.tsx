@@ -1,36 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { ComponentProps, ReactNode, useEffect, useState } from 'react';
+import { ComponentProps, useEffect, useState } from 'react';
 
 import { ButtonSize } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 
 import { Switcher } from './switcher';
-
-function Page({ title, description, children }: { title: string; description: string; children: ReactNode }) {
-  return (
-    <div className="text-default flex min-h-screen justify-center bg-slate-950 p-8">
-      <div className="flex w-full max-w-3xl flex-col gap-8">
-        <div>
-          <h1 className="text-2xl font-semibold">{title}</h1>
-          <p className="text-default/60 text-sm">{description}</p>
-        </div>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function Section({ title, description, children }: { title: string; description?: string; children: ReactNode }) {
-  return (
-    <section className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
-      <div>
-        <h2 className="text-lg font-medium">{title}</h2>
-        {description && <p className="text-default/60 text-sm">{description}</p>}
-      </div>
-      {children}
-    </section>
-  );
-}
 
 /** Clicking a switcher cycles to the next value in its list — it never opens a menu. */
 function DemoSwitcher({
@@ -51,16 +26,18 @@ const SIZES: ButtonSize[] = ['mini', 'small', 'regular', 'large'];
 
 function GalleryTemplate() {
   return (
-    <Page
+    <StoryPage
       title="Switcher"
       description="A one-line setting that cycles through its options on click. The label is never truncated and keeps its natural width; the value takes the rest and crossfades whenever it changes.">
-      <Section title="Sizes" description="Defaults to `small` — the size a settings menu row uses.">
+      <StorySection title="Sizes" description="Defaults to `small` — the size a settings menu row uses.">
         {SIZES.map((size) => (
           <DemoSwitcher key={size} size={size} label={size} values={DIFFICULTIES} className="w-full" />
         ))}
-      </Section>
+      </StorySection>
 
-      <Section title="States" description="Only one row per screen carries the cursor, so only one here is `focused`.">
+      <StorySection
+        title="States"
+        description="Only one row per screen carries the cursor, so only one here is `focused`.">
         <DemoSwitcher label="Resting" values={DIFFICULTIES} className="w-full" />
         <DemoSwitcher label="Focused" values={DIFFICULTIES} className="w-full" focused />
         {/* The switcher isn't a `<button>` at heart, so it carries `data-disabled` rather than the
@@ -69,9 +46,11 @@ function GalleryTemplate() {
         <Switcher label="Read only" value="Duel" className="w-full" readOnly />
         {/* Inert on purpose: the value isn't known yet, so the click does nothing. */}
         <Switcher label="Loading" value={undefined} className="w-full" loading />
-      </Section>
+      </StorySection>
 
-      <Section title="Value" description="Whatever's left after the label — truncated with an ellipsis, never wrapped.">
+      <StorySection
+        title="Value"
+        description="Whatever's left after the label — truncated with an ellipsis, never wrapped.">
         <Switcher label="Short" value="Duel" className="w-full" />
         <Switcher
           label="Long"
@@ -91,18 +70,18 @@ function GalleryTemplate() {
           }
           className="w-full"
         />
-      </Section>
+      </StorySection>
 
-      <Section title="Info" description="Helper text under the row, rendered by `InputWrapper`.">
+      <StorySection title="Info" description="Helper text under the row, rendered by `InputWrapper`.">
         <DemoSwitcher
           label="Mic"
           values={['Built-in microphone', 'Remote microphone']}
           className="w-full"
           info="Every player needs their own microphone."
         />
-      </Section>
+      </StorySection>
 
-      <Section
+      <StorySection
         title="Children"
         description="Anything passed as children lands inside the row, after the value — this is where the mic-check meter goes.">
         <DemoSwitcher label="Mic" values={['Built-in microphone', 'Remote microphone']} className="w-full">
@@ -110,8 +89,8 @@ function GalleryTemplate() {
             meter
           </span>
         </DemoSwitcher>
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
@@ -130,17 +109,17 @@ function LoadingTemplate() {
   }, []);
 
   return (
-    <Page
+    <StoryPage
       title="Switcher — loading"
       description="The value resolves after two seconds. Reload the story to watch the placeholder hand over again.">
-      <Section title="Placeholder to value">
+      <StorySection title="Placeholder to value">
         <Switcher label="Mic" value={mic} loading={mic === null} className="w-full" />
-      </Section>
-      <Section title="Side by side" description="Same height either way — nothing moves when the value arrives.">
+      </StorySection>
+      <StorySection title="Side by side" description="Same height either way — nothing moves when the value arrives.">
         <Switcher label="Mic" value={undefined} loading className="w-full" />
         <Switcher label="Mic" value="Built-in microphone" className="w-full" />
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
@@ -148,10 +127,10 @@ function UseCasesTemplate() {
   const [online, setOnline] = useState(false);
 
   return (
-    <Page
+    <StoryPage
       title="Switcher — in context"
       description="A settings menu is a column of switchers: labels line up, values right-align against them.">
-      <Section title="Game settings">
+      <StorySection title="Game settings">
         <DemoSwitcher label="Difficulty" values={DIFFICULTIES} className="w-full" focused />
         {/* Online play is locked to Duel, so the mode reads as display-only rather than as a
             control the host can cycle. */}
@@ -168,12 +147,12 @@ function UseCasesTemplate() {
           onClick={() => setOnline((current) => !current)}
           info={online ? 'Mode is locked to Duel while playing online.' : undefined}
         />
-      </Section>
+      </StorySection>
 
-      <Section title="Mic setup" description="The value loads asynchronously, so the row starts as a placeholder.">
+      <StorySection title="Mic setup" description="The value loads asynchronously, so the row starts as a placeholder.">
         <Switcher label="Mic" value={undefined} loading className="w-full" />
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 

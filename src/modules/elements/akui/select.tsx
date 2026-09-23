@@ -41,8 +41,8 @@ interface Props extends Omit<ComponentProps<typeof Input>, 'value' | 'onChange' 
 }
 
 /**
- * Searchable select with a locked value — unlike {@link Autocomplete}, which is free text over
- * `string[]`, the committed value always comes from `options`. Typing filters, Enter commits the
+ * Searchable select with a locked value — unlike a free-text `Input`, the committed value always
+ * comes from `options`. Typing filters, Enter commits the
  * highlighted option, Escape reverts to whatever was committed before the search started.
  */
 export const Select = ({

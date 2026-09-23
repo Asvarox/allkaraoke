@@ -1,36 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { ComponentProps, ComponentRef, ReactNode, useRef, useState } from 'react';
+import { ComponentProps, ComponentRef, useRef, useState } from 'react';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 
 import { Input } from './input';
-
-function Page({ title, description, children }: { title: string; description: string; children: ReactNode }) {
-  return (
-    <div className="text-default flex min-h-screen justify-center bg-slate-950 p-8">
-      <div className="flex w-full max-w-3xl flex-col gap-8">
-        <div>
-          <h1 className="text-2xl font-semibold">{title}</h1>
-          <p className="text-default/60 text-sm">{description}</p>
-        </div>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function Section({ title, description, children }: { title: string; description?: string; children: ReactNode }) {
-  return (
-    <section className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
-      <div>
-        <h2 className="text-lg font-medium">{title}</h2>
-        {description && <p className="text-default/60 text-sm">{description}</p>}
-      </div>
-      {children}
-    </section>
-  );
-}
 
 /**
  * `Input` is fully controlled, so every story needs an owner for the value. Note `focused` is the
@@ -55,18 +30,18 @@ const SIZES = ['mini', 'small'] as const satisfies ComponentProps<typeof Input>[
 
 function GalleryTemplate() {
   return (
-    <Page
+    <StoryPage
       title="Input"
       description="A text field built on the same surface as the kit's buttons: the label keeps its natural width on the left, the caret takes the rest, and the whole control is the click target.">
-      <Section
+      <StorySection
         title="Sizes"
         description="The two short Button sizes. Defaults to `small`; the taller ones would turn a line of text into a target to aim at.">
         {SIZES.map((size) => (
           <DemoInput key={size} size={size} label={size} initialValue="Type here" />
         ))}
-      </Section>
+      </StorySection>
 
-      <Section
+      <StorySection
         title="States"
         description="Only one field per screen is ever `focused`, so only one here is — a focused field claims the letter keys.">
         <DemoInput label="Resting" initialValue="Not selected" />
@@ -76,15 +51,15 @@ function GalleryTemplate() {
             no caret, no hover, no typing — but the value stays legible instead of greying out. */}
         <DemoInput label="Read only" initialValue="Duel" readOnly />
         <DemoInput label="Empty" placeholder="Placeholder text" />
-      </Section>
+      </StorySection>
 
-      <Section title="Label" description="Any node — a word, an icon, or nothing at all.">
+      <StorySection title="Label" description="Any node — a word, an icon, or nothing at all.">
         <DemoInput label="Name" initialValue="Adam" />
         <DemoInput label={<Icon icon="ic:baseline-search" size={6} />} placeholder="Search…" />
         <DemoInput label="" placeholder="No label" />
-      </Section>
+      </StorySection>
 
-      <Section
+      <StorySection
         title="Adornment"
         description="A trailing slot for controls that belong to the field itself. Pressing one never blurs the field.">
         <DemoInput
@@ -105,9 +80,9 @@ function GalleryTemplate() {
           adornment={<Input.IconButton icon="ic:baseline-send" aria-label="Send" disabled />}
         />
         <DemoInput label="Input lag" initialValue="120" adornment="ms" />
-      </Section>
+      </StorySection>
 
-      <Section
+      <StorySection
         title="Button inside the field"
         description="`Input.Button` when the action needs a word rather than an icon. It runs one size below the field it sits in, and wears the active fill — it's the one thing in the field that acts on its own.">
         <DemoInput size="small" label="Small" initialValue="Room code" adornment={<Input.Button>Join</Input.Button>} />
@@ -117,12 +92,12 @@ function GalleryTemplate() {
           initialValue="Room code"
           adornment={<Input.Button disabled>Join</Input.Button>}
         />
-      </Section>
+      </StorySection>
 
-      <Section title="Info" description="Helper text under the field, rendered by `InputWrapper`.">
+      <StorySection title="Info" description="Helper text under the field, rendered by `InputWrapper`.">
         <DemoInput label="Nickname" initialValue="Singer123" info="Shown on the leaderboard." />
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
@@ -142,10 +117,10 @@ function ValidationErrorTemplate() {
   };
 
   return (
-    <Page
+    <StoryPage
       title="Input — validation error"
       description="Submit with fewer than 4 characters to trigger it. The outline and the message fade out on their own after 4 seconds.">
-      <Section title="Imperative error">
+      <StorySection title="Imperative error">
         <Input
           ref={inputRef}
           focused={false}
@@ -164,8 +139,8 @@ function ValidationErrorTemplate() {
             Submit
           </Menu.Button>
         </div>
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 
@@ -175,8 +150,8 @@ function UseCasesTemplate() {
   const [name, setName] = useState('Adam');
 
   return (
-    <Page title="Input — in context" description="How the field is actually dressed at its three main call sites.">
-      <Section title="Game code" description="Remote-mic connection: wide letter spacing, centred, capped length.">
+    <StoryPage title="Input — in context" description="How the field is actually dressed at its three main call sites.">
+      <StorySection title="Game code" description="Remote-mic connection: wide letter spacing, centred, capped length.">
         <Input
           className="[&_input]:text-center [&_input]:tracking-[1.25rem] [&_input]:uppercase"
           label="Game code"
@@ -188,9 +163,9 @@ function UseCasesTemplate() {
           autoComplete="off"
           focused={false}
         />
-      </Section>
+      </StorySection>
 
-      <Section title="Song search" description="Remote song list toolbar: `mini`, icon for a label, clear button.">
+      <StorySection title="Song search" description="Remote song list toolbar: `mini`, icon for a label, clear button.">
         <Input
           size="mini"
           className="w-full text-sm"
@@ -203,12 +178,14 @@ function UseCasesTemplate() {
             <Input.IconButton icon="ic:baseline-close" aria-label="Close search" onClick={() => setSearch('')} />
           }
         />
-      </Section>
+      </StorySection>
 
-      <Section title="Leaderboard name" description="Post-game identity field: focused by the cursor, length-capped.">
+      <StorySection
+        title="Leaderboard name"
+        description="Post-game identity field: focused by the cursor, length-capped.">
         <Input label="Name" value={name} onChange={setName} maxLength={16} focused info="Max 16 characters." />
-      </Section>
-    </Page>
+      </StorySection>
+    </StoryPage>
   );
 }
 

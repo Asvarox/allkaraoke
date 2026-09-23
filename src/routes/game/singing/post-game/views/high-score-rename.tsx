@@ -1,8 +1,7 @@
-import { ComponentRef, useRef, useState } from 'react';
+import { ComponentRef, KeyboardEvent, useRef, useState } from 'react';
 
 import { HighScoreEntity } from '~/interfaces';
-import { Autocomplete } from '~/modules/elements/autocomplete';
-import useRecentPlayerNames from '~/modules/hooks/players/use-recent-player-names';
+import { Input } from '~/modules/elements/input';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 
 interface Props {
@@ -14,9 +13,8 @@ interface Props {
 }
 
 function HighScoreRename({ score, register, singSetupId, onSave, index }: Props) {
-  const inputRef = useRef<ComponentRef<typeof Autocomplete>>(null);
+  const inputRef = useRef<ComponentRef<typeof Input>>(null);
   const [newName, setNewName] = useState('');
-  const playerNames = useRecentPlayerNames();
 
   const save = (name: string) => {
     // Save the trimmed value, not the raw one — it's what the check above validates against.
@@ -37,19 +35,40 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
     save(name);
   };
 
+  // `Input` forwards unknown props to the DOM, so the nav handler is taken out and used here instead
+  const { $keyboardNavigationChangeFocus: changeFocus, ...navProps } = register(
+    `highscore-rename-${index}`,
+    onActive,
+    undefined,
+    false,
+    {
+      control: { type: 'text', label: 'Rename', value: newName, placeholder: score.name },
+      onValueChange: onRemoteRename,
+    },
+  ) as ReturnType<Props['register']> & { $keyboardNavigationChangeFocus?: (direction: -1 | 1) => void };
+
+  // Enter commits the name; the arrows leave the field for the row above or below. Either way the
+  // blur is what saves it and hands the keyboard back to the list.
+  const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.code === 'Enter') {
+      inputRef.current?.element?.blur();
+    } else if (e.code === 'ArrowUp' || e.code === 'ArrowDown') {
+      e.preventDefault();
+      inputRef.current?.element?.blur();
+      changeFocus?.(e.code === 'ArrowUp' ? -1 : 1);
+    }
+  };
+
   return (
-    <Autocomplete
-      className="ph-no-capture [&_input]:lg:text-md [&_button]:h-8 [&_button]:lg:h-10 [&_input]:text-sm"
-      options={playerNames}
+    <Input
+      className="ph-no-capture [&_input]:lg:text-md h-8 lg:h-10 [&_input]:text-sm"
       onChange={setNewName}
       onBlur={onBlur}
+      onKeyDown={onKeyDown}
       value={newName}
       label=""
       ref={inputRef}
-      {...register(`highscore-rename-${index}`, onActive, undefined, false, {
-        control: { type: 'text', label: 'Rename', value: newName, placeholder: score.name },
-        onValueChange: onRemoteRename,
-      })}
+      {...navProps}
       placeholder={score.name}
       data-test={`input-edit-highscore`}
       data-original-name={score.name}
