@@ -24,6 +24,7 @@ export class NetworkServer {
   private gameCode = storage.session.getItem(GAME_CODE_KEY)!;
   private started = false;
   private transport: ServerTransport | undefined;
+  private reconnectTimer: ReturnType<typeof setTimeout> | undefined;
 
   private rpcServer = new RpcServer<typeof serverHandlers, SubscriptionChannels>(
     serverHandlers,
@@ -108,13 +109,19 @@ export class NetworkServer {
         this.started = false;
 
         // try to reconnect
-        setTimeout(this.start, 1_000);
+        this.reconnectTimer = setTimeout(() => {
+          this.reconnectTimer = undefined;
+          this.start();
+        }, 1_000);
       },
     );
   };
 
   /** Closes the server for good, dropping the phones connected to it. `start()` opens a new one. */
   public stop = () => {
+    // A connection that dropped on its own has a reconnect queued, which would reopen the server
+    clearTimeout(this.reconnectTimer);
+    this.reconnectTimer = undefined;
     const transport = this.transport;
     if (!transport) return;
     // Cleared first, so the transport's close callback doesn't schedule a reconnect

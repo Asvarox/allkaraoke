@@ -724,6 +724,24 @@ describe('room standings across songs', () => {
     });
   });
 
+  it('keeps the total of a singer who sat a song out, and empties only their last song', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2', 'p3']);
+    await playSong(room, ['p1', 'p2', 'p3'], { p1: 100, p2: 50, p3: 30 });
+
+    // p3 is away when the next song starts, so it goes ahead without them in its leaderboard
+    room.logic.handleDisconnect('p3');
+    await startSinging(room, ['p1', 'p2']);
+    // back inside the reconnect grace window, before the song ends
+    join(room, ['p3']);
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), 7);
+    await room.handlers.scoring.publishScore.handler(ctx('p2'), 3);
+    await room.handlers.room.endGame.handler(ctx('p1'));
+    vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
+
+    expect(room.logic.getState().roomScores?.p3).toEqual({ total: 30, lastSong: null });
+  });
+
   it("drops a singer's standings when they leave for good, so coming back starts from nothing", async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);

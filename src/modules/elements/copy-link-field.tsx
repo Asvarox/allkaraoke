@@ -36,6 +36,7 @@ export default function CopyLinkField({ link, inputDataTest, buttonDataTest }: P
     <Input
       focused={false}
       label=""
+      aria-label="Invite link"
       value={link}
       onChange={() => undefined}
       readOnly
