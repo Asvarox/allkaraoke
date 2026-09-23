@@ -67,6 +67,8 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
       onKeyDown={onKeyDown}
       value={newName}
       label=""
+      // No visible label in the row, so the field is named for assistive tech instead
+      aria-label="Rename"
       ref={inputRef}
       {...navProps}
       placeholder={score.name}

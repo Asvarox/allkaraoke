@@ -46,6 +46,8 @@ export const Switcher = ({
     data-focused={focused}
     onClick={loading ? undefined : onClick}
     data-disabled={disabled}
+    // The native state too: `data-disabled` only styles the row, Enter or Space would still press it
+    disabled={disabled}
     readOnly={readOnly || loading}
     {...restProps}
     className={`${className} flex justify-start gap-2`}>

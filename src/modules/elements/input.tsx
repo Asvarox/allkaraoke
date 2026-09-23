@@ -83,13 +83,15 @@ export const Input = ({
   info,
   ref,
   size = 'small',
+  id,
   ...restProps
 }: Props) => {
   const [validationError, setValidationError] = useState<null | string>(null);
   const validationErrorTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const resolvedSize = useResponsiveValue(size);
-  const inputId = useId();
+  const generatedId = useId();
+  const inputId = id ?? generatedId;
   useImperativeHandle(ref, () => ({
     element: inputRef.current,
     triggerValidationError: (message: string) => {
