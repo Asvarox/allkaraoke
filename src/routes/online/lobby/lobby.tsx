@@ -143,12 +143,14 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
             type="button"
             {...navProps}
             className={cn(
-              'text-active flex shrink-0 cursor-pointer items-center gap-1.5 rounded-md transition-colors hover:opacity-80',
-              focused && 'subtle-focus -mx-2 px-2 py-1',
+              'text-active flex shrink-0 cursor-pointer items-center rounded-md transition-colors hover:opacity-80',
+              focused && 'subtle-focus -m-1 p-1',
             )}
+            aria-label="Leave room"
+            title="Leave room"
             data-test="leave-room-button">
-            <Icon icon="ic:baseline-arrow-back" className="text-lg" />
-            <span className="text-lg font-bold">Leave</span>
+            {/* Sized with the heading beside it */}
+            <Icon icon="ic:baseline-arrow-back" className="text-xl max-lg:text-lg" />
           </button>
         );
       }}
