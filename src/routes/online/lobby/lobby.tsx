@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import { Song } from '~/interfaces';
-import { Button } from '~/modules/elements/akui/button';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -130,18 +129,29 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
       dataTestPrefix="online-leave-confirm"
       cancelButton={<ConfirmModal.CancelButton name="stay-in-room">Stay in the room</ConfirmModal.CancelButton>}
       confirmButton={<ConfirmModal.ConfirmButton name="confirm-leave-room">Leave room</ConfirmModal.ConfirmButton>}>
-      {(openLeaveConfirm) => (
-        <Button
-          {...register('leave-room', openLeaveConfirm, 'Leave room')}
-          size="small"
-          fullWidth={false}
-          className="shrink-0"
-          aria-label="Leave room"
-          title="Leave room"
-          leftIcon={<Icon icon="ic:baseline-arrow-back" />}
-          data-test="leave-room-button"
-        />
-      )}
+      {(openLeaveConfirm) => {
+        const {
+          focused,
+          $keyboardNavigationChangeFocus: _changeFocus,
+          ...navProps
+        } = register('leave-room', openLeaveConfirm, 'Leave room') as ReturnType<typeof register> & {
+          $keyboardNavigationChangeFocus?: unknown;
+        };
+        // The song preview's mobile back link, so leaving reads as going back rather than as an action
+        return (
+          <button
+            type="button"
+            {...navProps}
+            className={cn(
+              'text-active flex shrink-0 cursor-pointer items-center gap-1.5 rounded-md transition-colors hover:opacity-80',
+              focused && 'subtle-focus -mx-2 px-2 py-1',
+            )}
+            data-test="leave-room-button">
+            <Icon icon="ic:baseline-arrow-back" className="text-lg" />
+            <span className="text-lg font-bold">Leave</span>
+          </button>
+        );
+      }}
     </ConfirmModal>
   );
 

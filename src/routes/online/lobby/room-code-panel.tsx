@@ -19,9 +19,10 @@ function RoomCodePanel({ roomCode, className, back }: Props) {
 
   return (
     <div className={`flex flex-col gap-2 ${className ?? ''}`} data-test="online-invite-link">
-      <div className="flex items-center gap-3">
+      {/* The code drops to its own line where the column is too narrow for all three */}
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         {back}
-        <Menu.Header className="justify-start">Room code:</Menu.Header>
+        <Menu.Header className="justify-start whitespace-nowrap">Room code:</Menu.Header>
         <RoomCode code={roomCode} className="typography text-xl max-lg:text-lg" data-test="online-room-code" />
       </div>
       <CopyLinkField link={link} inputDataTest="online-invite-link-input" buttonDataTest="copy-room-link-button" />
