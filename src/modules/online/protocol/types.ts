@@ -42,6 +42,18 @@ export interface LeaderboardEntry {
   score: number;
 }
 
+/** One singer's standing across the songs a room has played. */
+export interface RoomScore {
+  /** Sum of every song this singer has finished in the room. */
+  total: number;
+  /** Their score in the most recently finished song, or null when they sat that one out. */
+  lastSong: number | null;
+}
+
+/** Everyone's standings by participant id. A row appears only after a singer's first finished song,
+ * and goes with their seat when they leave for good (see `removeParticipant`). */
+export type RoomScores = Record<string, RoomScore>;
+
 /** Detailed score kept opaque on the wire ([score, maxScore] per note type) so the protocol
  * stays decoupled from the game engine types. */
 export type WireDetailedScore = [Record<string, number>, Record<string, number>];
@@ -93,6 +105,9 @@ export interface OnlineRoomState {
   /** Set when the host ended the game — clients wrap up and publish their final scores. */
   finishRequestedAt: number | null;
   leaderboard: LeaderboardEntry[];
+  /** Standings across every song this room has played — unlike `leaderboard`, they outlive each song.
+   * Absent when the host runs a deploy from before the standings existed. */
+  roomScores?: RoomScores;
   finalResults: OnlineFinalResult[] | null;
   /** Bumped by the room directory on every host change. Clients carry it into their promotion
    * claim, which the directory accepts only if it still matches — that is what stops two singers

@@ -239,7 +239,7 @@ function OnlineSinging({ roomState, song }: Props) {
   useKeyboard({ back: togglePause }, !hasFinished, [roomState.pause, roomState.phase]);
 
   return (
-    <LayoutGame>
+    <LayoutGame connectPhone={false}>
       <div className="relative">
         {/* The video is mounted and cued from the start, so until it actually rolls the screen would
             be showing a held black frame. Cover it with the song's still — the same blurred thumbnail

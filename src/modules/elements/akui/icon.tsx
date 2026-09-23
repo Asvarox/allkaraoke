@@ -77,6 +77,7 @@ export type IconName =
   | 'ic:round-people-alt'
   | 'mdi:arrow-left'
   | 'mdi:circle'
+  | 'mdi:crown'
   | 'mdi:qrcode-scan'
   | 'mdi:warning'
   | 'ic:baseline-language'

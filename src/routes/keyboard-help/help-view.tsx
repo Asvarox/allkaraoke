@@ -60,7 +60,7 @@ export default function KeyboardHelpView({ help }: Props) {
             })}
             <Section>
               <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
-              <SectionHelp>Show/hide this help</SectionHelp>
+              <SectionHelp>Toggle this help</SectionHelp>
             </Section>
           </>
         )}

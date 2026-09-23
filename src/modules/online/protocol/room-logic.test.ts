@@ -108,6 +108,19 @@ const confirmAll = async (room: Room, ids: string[]) => {
   }
 };
 
+/** A whole song, start to finish: `scores` is what each singer ends on, and the room is left back
+ * in the lobby. */
+const playSong = async (room: Room, ids: string[], scores: Record<string, number>, hostId = 'p1') => {
+  await startSinging(room, ids, hostId);
+  for (const id of ids) {
+    if (scores[id] !== undefined) await room.handlers.scoring.publishScore.handler(ctx(id), scores[id]);
+  }
+  for (const id of ids) {
+    await room.handlers.scoring.publishFinal.handler(ctx(id), SAMPLE_DETAILED_SCORE);
+  }
+  await room.handlers.room.returnToLobby.handler(ctx(hostId));
+};
+
 const startSinging = async (room: Room, ids: string[], hostId = 'p1') => {
   await uploadChart(room, hostId);
   await room.handlers.room.startGame.handler(ctx(hostId));
@@ -659,6 +672,101 @@ describe('scoring and results', () => {
     // the finished song is no longer selected — the next round starts fresh
     expect(state.chart).toBeNull();
     expect(room.published['song-votes'].at(-1)).toEqual({});
+  });
+});
+
+describe('room standings across songs', () => {
+  it('adds each song to the running total and keeps the last one on its own', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+
+    await playSong(room, ['p1', 'p2'], { p1: 100, p2: 250 });
+    expect(room.logic.getState().roomScores).toEqual({
+      p1: { total: 100, lastSong: 100 },
+      p2: { total: 250, lastSong: 250 },
+    });
+
+    await playSong(room, ['p1', 'p2'], { p1: 400, p2: 10 });
+    expect(room.logic.getState().roomScores).toEqual({
+      p1: { total: 500, lastSong: 400 },
+      p2: { total: 260, lastSong: 10 },
+    });
+  });
+
+  it('gives a singer who has not sung yet no row at all, rather than a zero', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await playSong(room, ['p1', 'p2'], { p1: 100, p2: 50 });
+
+    join(room, ['p3']);
+    expect(room.logic.getState().roomScores?.p3).toBeUndefined();
+
+    await playSong(room, ['p1', 'p2', 'p3'], { p1: 10, p2: 20, p3: 30 });
+    expect(room.logic.getState().roomScores?.p3).toEqual({ total: 30, lastSong: 30 });
+  });
+
+  it('empties the last-song column for a singer the song passed by, leaving their total alone', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await playSong(room, ['p1', 'p2'], { p1: 100, p2: 50 });
+
+    // p3 walks in halfway through the next song: in the room, but never in its leaderboard
+    await startSinging(room, ['p1', 'p2']);
+    join(room, ['p3']);
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), 7);
+    await room.handlers.scoring.publishScore.handler(ctx('p2'), 3);
+    await room.handlers.room.endGame.handler(ctx('p1'));
+    vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
+
+    expect(room.logic.getState().roomScores).toEqual({
+      p1: { total: 107, lastSong: 7 },
+      p2: { total: 53, lastSong: 3 },
+    });
+  });
+
+  it("drops a singer's standings when they leave for good, so coming back starts from nothing", async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await playSong(room, ['p1', 'p2'], { p1: 100, p2: 250 });
+
+    room.logic.handleDisconnect('p2');
+    // Still theirs for as long as the reconnect window is open — a refresh is not leaving
+    expect(room.logic.getState().roomScores?.p2).toEqual({ total: 250, lastSong: 250 });
+
+    vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
+    expect(room.logic.getState().roomScores?.p2).toBeUndefined();
+
+    join(room, ['p2']);
+    expect(room.logic.getState().roomScores?.p2).toBeUndefined();
+  });
+
+  it('leaves the standings alone when the song is ended before anyone sang it', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await playSong(room, ['p1', 'p2'], { p1: 100, p2: 250 });
+
+    await uploadChart(room, 'p1');
+    await room.handlers.room.startGame.handler(ctx('p1'));
+    await room.handlers.room.endGame.handler(ctx('p1'));
+    vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
+
+    expect(room.logic.getState().phase).toBe('results');
+    expect(room.logic.getState().roomScores).toEqual({
+      p1: { total: 100, lastSong: 100 },
+      p2: { total: 250, lastSong: 250 },
+    });
+  });
+
+  it('carries the standings through a restore', async () => {
+    const source = createRoom();
+    join(source, ['p1', 'p2']);
+    await playSong(source, ['p1', 'p2'], { p1: 100, p2: 250 });
+
+    const restored = createRoom(source.logic.snapshot(), new Set(['p1', 'p2']));
+    expect(restored.logic.getState().roomScores).toEqual({
+      p1: { total: 100, lastSong: 100 },
+      p2: { total: 250, lastSong: 250 },
+    });
   });
 });
 

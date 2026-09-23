@@ -5,6 +5,7 @@ import { PlayerMicCheck, VolumeIndicator } from '~/modules/elements/volume-indic
 import usePlayerMicStatus from '~/modules/hooks/players/use-player-mic-status';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { PlayerEntity } from '~/modules/players/players-manager';
+import { cn } from '~/utils/cn';
 
 import PlayerStatus from './status';
 
@@ -52,10 +53,17 @@ export function MicCheckSlotShell({
   return (
     <Box
       {...props}
-      className={`relative flex w-full items-center text-center transition-opacity ${SIZES[size]} ${
-        connected ? 'text-default border-white' : 'border-gray-600 bg-black text-gray-500 opacity-40'
-      } ${className ?? ''}`}>
-      <span className="ph-no-capture absolute inset-0 z-1 flex items-center justify-center">{name}</span>
+      // `cn` so a caller can override one token — the online standings swap `border-white` for `border-active`
+      className={cn(
+        'relative flex w-full items-center text-center transition-opacity',
+        SIZES[size],
+        connected ? 'text-default border-white' : 'border-gray-600 bg-black text-gray-500 opacity-40',
+        className,
+      )}>
+      {/* Skipped when there is no name to centre — a `columns` row puts its own name in flow */}
+      {name !== null && (
+        <span className="ph-no-capture absolute inset-0 z-1 flex items-center justify-center">{name}</span>
+      )}
       {/* Badges stay visible for a dropped singer too — that's when knowing who dropped matters most */}
       {children}
       {connected && (

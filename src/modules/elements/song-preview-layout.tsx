@@ -20,6 +20,9 @@ interface Props {
   thumbnail: ReactNode;
   /** Under the thumbnail — the lobby's song details. Expanded only. */
   underThumbnail?: ReactNode;
+  /** Title over thumbnail at every width — for a card squeezed into one column of several (the
+   * online lobby), where side by side the title column ends up narrower than its words. */
+  stacked?: boolean;
   /** The card's own footer in the song list: title, artist and badges over the small card. */
   collapsedFooter?: ReactNode;
   /** The bottom row: song settings in the song list, singers and actions in the lobby. */
@@ -39,13 +42,21 @@ export default function SongPreviewLayout({
   underTitle,
   thumbnail,
   underThumbnail,
+  stacked = false,
   collapsedFooter,
   footer,
 }: Props) {
   return (
     <>
       {expanded && back && <div className="mb-2 flex items-center sm:hidden">{back}</div>}
-      <div className={expanded ? 'flex flex-col-reverse items-start gap-2 sm:flex-row sm:gap-24' : 'contents'}>
+      <div
+        className={
+          expanded
+            ? stacked
+              ? 'flex flex-col items-stretch gap-3'
+              : 'flex flex-col-reverse items-start gap-2 sm:flex-row sm:gap-24'
+            : 'contents'
+        }>
         {expanded && (
           <div className="flex min-w-0 flex-1 flex-col gap-1 sm:gap-3">
             {title}
@@ -53,7 +64,14 @@ export default function SongPreviewLayout({
             {underTitle}
           </div>
         )}
-        <div className={expanded ? 'flex w-full shrink-0 flex-col gap-2 sm:w-2/5' : 'contents'}>
+        <div
+          className={
+            expanded
+              ? stacked
+                ? 'flex w-full flex-col gap-2'
+                : 'flex w-full shrink-0 flex-col gap-2 sm:w-2/5'
+              : 'contents'
+          }>
           {thumbnail}
           {expanded && underThumbnail}
         </div>
@@ -75,7 +93,8 @@ function Split({ aside, children, className }: SplitProps) {
   return (
     <div
       className={`flex w-full flex-col gap-3 sm:flex-row sm:items-end sm:gap-24 [&_hr]:opacity-25 ${className ?? ''}`}>
-      <div className="w-full shrink-0 sm:w-2/5">{aside}</div>
+      {/* Dropped rather than left empty, so an aside-less split gives the actions the full width */}
+      {aside !== undefined && <div className="w-full shrink-0 sm:w-2/5">{aside}</div>}
       <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4">{children}</div>
     </div>
   );

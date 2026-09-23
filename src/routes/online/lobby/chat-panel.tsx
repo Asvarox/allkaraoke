@@ -73,7 +73,7 @@ function ChatPanel({ register, inline }: Props) {
         // Beside the card it is a surface of its own, and has to be built from the same parts the
         // lobby card is — `dialogSurface`, the menu's radius and its padding — or it reads as a
         // stray box parked next to the app. `h-full` fills the height the grid hands it.
-        !inline && cn(dialogSurface, 'h-full rounded-none p-4 sm:p-6 md:rounded-xl'),
+        !inline && cn(dialogSurface, 'h-full min-h-0 rounded-none p-4 sm:p-6 md:rounded-xl'),
       )}
       // Not `online-chat`: `register` puts that name on the nav target below as its own
       // `data-test`, and two elements answering to one id makes every query for it ambiguous.

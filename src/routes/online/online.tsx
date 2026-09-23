@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { Menu } from '~/modules/elements/akui/menu';
@@ -7,6 +7,7 @@ import NoPrerender from '~/modules/elements/no-prerender';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import RemoteMicServer from '~/modules/remote-mic/network/server';
 import storage from '~/modules/utils/storage';
 import OnlineRoom from '~/routes/online/online-room';
 import OnlineSetupWizard from '~/routes/online/setup-wizard';
@@ -64,6 +65,11 @@ function CreateOrJoin() {
 
 function Online() {
   const roomCode = useQueryParam('room');
+
+  // Every online singer brings their own device, so there's nothing for a phone to connect to
+  useEffect(() => {
+    RemoteMicServer.stop();
+  }, []);
 
   return (
     <>

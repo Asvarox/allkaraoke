@@ -64,11 +64,12 @@ export class NetworkServer {
     console.log('connection started', this.getGameCode());
     storeGameCode(this.gameCode);
 
-    this.transport.connect(
+    const transport = this.transport;
+    transport.connect(
       this.getGameCode(),
       () => {
         console.log('connected', this.getGameCode());
-        this.transport!.addListener((event, sender) => {
+        transport.addListener((event, sender) => {
           const type = event.t;
 
           if (type === 'register') {
@@ -101,6 +102,8 @@ export class NetworkServer {
         events.micServerStarted.dispatch();
       },
       () => {
+        // Closed on purpose by `stop()` — it has already reported the server as stopped
+        if (this.transport !== transport) return;
         events.micServerStopped.dispatch();
         this.started = false;
 
@@ -108,6 +111,20 @@ export class NetworkServer {
         setTimeout(this.start, 1_000);
       },
     );
+  };
+
+  /** Closes the server for good, dropping the phones connected to it. `start()` opens a new one. */
+  public stop = () => {
+    const transport = this.transport;
+    if (!transport) return;
+    // Cleared first, so the transport's close callback doesn't schedule a reconnect
+    this.transport = undefined;
+    RemoteMicManager.getRemoteMics().forEach((remoteMic) => RemoteMicManager.removeRemoteMic(remoteMic.id, true));
+    transport.disconnect();
+    if (this.started) {
+      this.started = false;
+      events.micServerStopped.dispatch();
+    }
   };
 
   public isStarted = () => this.started;
