@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { ComponentRef, useLayoutEffect, useRef, useState } from 'react';
 
-import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
@@ -128,32 +127,16 @@ function ChatPanel({ register, inline }: Props) {
           }}
           // Sits inside the box, the same way the song search puts its clear button there. Always
           // drawn, dimmed until there is something to send — a control that appears only once it
-          // becomes usable never gets the chance to say what it is.
-          //
-          // `onMouseDown` with `preventDefault` rather than `onClick`: mousedown blurs the input
-          // first, and a blur is what hands the keyboard back to the lobby — the click would land
-          // on a control the navigation had already moved away from.
+          // becomes usable never gets the chance to say what it is. The dimmed state is
+          // `Input.IconButton`'s own: muted, not invisible, so it still reads as a control.
           adornment={
-            <button
-              type="button"
+            <Input.IconButton
+              icon="ic:baseline-send"
               aria-label="Send"
-              className="flex disabled:cursor-default"
               disabled={!canSend}
-              // `onMouseDown` only keeps the focus where it is — mousedown would otherwise blur
-              // the field, and a blur hands the keyboard back to the lobby. Sending is on
-              // `onClick` so that activating the button from the keyboard works too; preventing
-              // mousedown's default does not stop the click that follows it.
-              onMouseDown={(e) => e.preventDefault()}
               onClick={() => void submit()}
-              data-test="online-chat-send">
-              <Icon
-                icon="ic:baseline-send"
-                size={5}
-                // Muted, not invisible: on the field's near-black fill anything below roughly this
-                // lightness reads as an empty box rather than a control waiting for input.
-                className={cn('duration-300', canSend ? 'text-default' : 'text-gray-400')}
-              />
-            </button>
+              data-test="online-chat-send"
+            />
           }
           className="w-full"
           data-test="online-chat-input"

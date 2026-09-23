@@ -1,11 +1,13 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 
 import { Menu } from '~/modules/elements/akui/menu';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 
-import { Page, Row, Section, TextSample } from './foundations-kit';
+import { Row, TextSample } from './foundations-kit';
 
 export default {
   title: 'Foundations/Typography',
+  parameters: { layout: 'fullscreen' },
 } as Meta;
 
 /**
@@ -30,9 +32,10 @@ const SCALE = [
 const WEIGHTS = ['font-normal', 'font-medium', 'font-semibold', 'font-bold'] as const;
 
 export const Typography: StoryFn = () => (
-  <Page
+  <StoryPage
+    wide
     title="Typography"
-    intro={
+    description={
       <>
         One family: Seravek, then Gill Sans Nova, Ubuntu, Calibri. It is a token — <code>theme.fontFamily.sans</code> —
         and <code>index.css</code> applies it to <code>body</code> rather than restating the stack, so{' '}
@@ -41,9 +44,9 @@ export const Typography: StoryFn = () => (
         the room on a 4K TV.
       </>
     }>
-    <Section
+    <StorySection
       title="Scale"
-      note={
+      description={
         <>
           Ten steps, declared as <code>theme.fontSize</code> and therefore replacing Tailwind&rsquo;s default scale
           entirely. There is no <code>base</code>: it was Tailwind&rsquo;s name for a default nothing here used, and{' '}
@@ -59,11 +62,11 @@ export const Typography: StoryFn = () => (
           </TextSample>
         </Row>
       ))}
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Weight"
-      note="Buttons and headings are bold; the rest of the game is normal. Medium and semibold appear rarely and mostly in denser, secondary UI.">
+      description="Buttons and headings are bold; the rest of the game is normal. Medium and semibold appear rarely and mostly in denser, secondary UI.">
       {WEIGHTS.map((weight) => (
         <Row key={weight} name={weight}>
           <TextSample property="font-weight" className={`${weight} text-lg`}>
@@ -71,11 +74,11 @@ export const Typography: StoryFn = () => (
           </TextSample>
         </Row>
       ))}
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="The typography utility"
-      note={
+      description={
         <>
           <code>typography</code> applies <code>text-default</code> and colours any nested <code>strong</code> with{' '}
           <code>text-active</code>. It is registered with tailwind-merge as a text colour, so an explicit colour placed
@@ -90,11 +93,11 @@ export const Typography: StoryFn = () => (
       <Row name="typography + text-active" meta="the explicit colour wins">
         <span className="typography text-active text-lg">Entire game is navigable with a keyboard</span>
       </Row>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Treatments"
-      note={
+      description={
         <>
           The app&rsquo;s background is the song video, so text has to survive an arbitrary frame.{' '}
           <code>text-shadow-legible</code> is the answer — reach for it rather than putting a plate behind the text,
@@ -114,11 +117,11 @@ export const Typography: StoryFn = () => (
       <Row name="uppercase" meta="every button label">
         <span className="typography text-lg font-bold uppercase">Sing a song</span>
       </Row>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Headings"
-      note={
+      description={
         <>
           A heading is sized like anything else. <code>index.css</code> used to give bare <code>h1</code>–
           <code>h5</code> their own sizes — a second scale outside <code>theme.fontSize</code>, with <code>h3</code> at
@@ -135,11 +138,11 @@ export const Typography: StoryFn = () => (
           Chodz, pomaluj mój świat
         </TextSample>
       </Row>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Responsive"
-      note={
+      description={
         <>
           Tailwind&rsquo;s own breakpoints only — there are no custom variants left. <code>sm:</code> upward for
           min-width, the <code>max-*</code> variants where a rule has to stop applying, and stack them when a case needs
@@ -153,6 +156,6 @@ export const Typography: StoryFn = () => (
           Chodz, pomaluj mój świat
         </TextSample>
       </Row>
-    </Section>
-  </Page>
+    </StorySection>
+  </StoryPage>
 );

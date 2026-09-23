@@ -41,8 +41,8 @@ interface Props extends Omit<ComponentProps<typeof Input>, 'value' | 'onChange' 
 }
 
 /**
- * Searchable select with a locked value — unlike {@link Autocomplete}, which is free text over
- * `string[]`, the committed value always comes from `options`. Typing filters, Enter commits the
+ * Searchable select with a locked value — unlike a free-text `Input`, the committed value always
+ * comes from `options`. Typing filters, Enter commits the
  * highlighted option, Escape reverts to whatever was committed before the search started.
  */
 export const Select = ({
@@ -195,7 +195,7 @@ const Container = twx.div`relative`;
 // padded away from the field's edges and rounded on all four corners rather than bleeding into
 // them (`*:` styles the icon the caller passed in). The aspect ratio keeps the proportion at any
 // field height.
-const SelectedIcon = twx.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 p-1.5 *:rounded-xl`;
+const SelectedIcon = twx.span`pointer-events-none absolute top-[1px] right-[1px] bottom-[1px] aspect-3/2 p-1.5 *:rounded-lg`;
 
 // Rounded like the flag on the field and on the language rows, scaled down to the row's own size.
 const OptionIcon = twx.span`h-[1em] w-[1.5em] shrink-0 overflow-hidden rounded-sm`;

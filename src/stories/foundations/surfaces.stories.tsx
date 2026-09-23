@@ -3,18 +3,21 @@ import { Meta, StoryFn } from '@storybook/react-vite';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
 import { Button } from '~/modules/elements/akui/button';
 import Box from '~/modules/elements/akui/primitives/box';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 import { dialogSurface, interactiveFocus, interactiveSurface } from '~/modules/elements/akui/surfaces';
 
-import { BusyGround, Page, Row, Section, Swatch } from './foundations-kit';
+import { BusyGround, Row, Swatch } from './foundations-kit';
 
 export default {
   title: 'Foundations/Surfaces',
+  parameters: { layout: 'fullscreen' },
 } as Meta;
 
 export const Surfaces: StoryFn = () => (
-  <Page
+  <StoryPage
+    wide
     title="Surfaces"
-    intro={
+    description={
       <>
         Two separate languages, and the split is the thing to understand. In-game surfaces are translucent black: they
         sit <em>in</em> the scene and let the song video through. Dialog surfaces are opaque slate: they sit{' '}
@@ -22,9 +25,9 @@ export const Surfaces: StoryFn = () => (
         over a deliberately busy ground, because judging a translucent fill against flat grey tells you nothing.
       </>
     }>
-    <Section
+    <StorySection
       title="In-game surfaces"
-      note={
+      description={
         <>
           Three roles, all translucent black. <code>Box</code> is the default card and the one to reach for first —
           spelling out a background by hand is how the codebase ended up with sixteen different opacities. The scrim the{' '}
@@ -46,11 +49,11 @@ export const Surfaces: StoryFn = () => (
           </Box>
         </div>
       </BusyGround>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Interactive surfaces"
-      note={
+      description={
         <>
           <code>interactiveSurface</code> — the resting state of anything the player can act on. The fill is a step
           above the card underneath, and the 1px orange hairline is the actual tell: on a TV across the room it is what
@@ -66,11 +69,11 @@ export const Surfaces: StoryFn = () => (
           </div>
         </Box>
       </BusyGround>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Interactive states"
-      note={
+      description={
         <>
           Four states on top of the resting one. <code>interactiveFocus</code> is the quiet highlight — an inset orange
           ring for hover, and for keyboard focus on a control too big or too colourful to fill. Full keyboard focus
@@ -100,16 +103,15 @@ export const Surfaces: StoryFn = () => (
           </div>
         </Box>
       </BusyGround>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Dialog surface"
-      note={
+      description={
         <>
           <code>dialogSurface</code> — opaque slate plus a hairline border. Used by the modal <code>Menu</code>, the{' '}
-          <code>Select</code> popup, the <code>Autocomplete</code> menu, the bottom sheet, the lobby card and the
-          expanded song preview. The border is what reads as the edge once the fill stops contrasting with the scrim
-          behind it.
+          <code>Select</code> popup, the bottom sheet, the lobby card and the expanded song preview. The border is what
+          reads as the edge once the fill stops contrasting with the scrim behind it.
         </>
       }>
       <BusyGround>
@@ -117,11 +119,11 @@ export const Surfaces: StoryFn = () => (
           <code className="text-sm">dialogSurface — {dialogSurface}</code>
         </div>
       </BusyGround>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Backdrop"
-      note={
+      description={
         <>
           The scrim behind anything that opens on top of the app. The dot screen and the 20px blur are load-bearing, not
           decoration: the video keeps playing underneath, and a flat tint alone reads as the screen dimming rather than
@@ -135,11 +137,11 @@ export const Surfaces: StoryFn = () => (
           <code className="text-sm">a dialog over the Backdrop</code>
         </div>
       </BusyGround>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Borders"
-      note={
+      description={
         <>
           White at low alpha, so an edge is never a colour decision. Two of these are a pair rather than two weights:{' '}
           <code>/10</code> is every resting edge, and <code>/20</code> is that same edge on hover — the song grid is
@@ -155,6 +157,6 @@ export const Surfaces: StoryFn = () => (
       <Row name="border-white" meta="a connected mic pill">
         <Swatch property="border-color" className="border-white" />
       </Row>
-    </Section>
-  </Page>
+    </StorySection>
+  </StoryPage>
 );

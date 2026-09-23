@@ -25,6 +25,10 @@ const sizeToClass = {
 };
 
 export const ButtonBase = twx(Box)((props) => {
+  // `data-disabled` for controls that aren't a `<button>` and so can't carry the real attribute —
+  // the field, the switcher. Both spellings mean the same thing here.
+  const disabled = props['disabled'] || props['data-disabled'];
+
   return [
     `typography ${interactiveSurface} pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 px-3 font-bold uppercase duration-300`,
     !isE2E() && props['data-focused'] && !props['data-subtle-focus']
@@ -32,8 +36,10 @@ export const ButtonBase = twx(Box)((props) => {
       : '',
     !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
     !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
-    !isE2E() && !props['disabled'] && !props['data-read-only'] ? interactiveFocusHover : '',
-    props['disabled']
+    // Nothing that can't be acted on lights up under the pointer: a hover highlight on a dead
+    // control promises a press that will never happen.
+    !isE2E() && !disabled && !props['data-read-only'] ? interactiveFocusHover : '',
+    disabled
       ? 'pointer-events-none scale-100! animate-none! cursor-default bg-gray-500! text-gray-300!'
       : 'active:bg-active',
     props['data-inactive'] ? `${inactiveSurface} line-through!` : 'no-underline!',
@@ -153,6 +159,7 @@ const ButtonContent = ({
   iconOnly,
   children,
   fullWidth,
+  truncate,
 }: {
   size: ButtonSize;
   leftIcon?: ReactNode;
@@ -161,8 +168,13 @@ const ButtonContent = ({
   iconOnly?: boolean;
   children?: ReactNode;
   fullWidth?: boolean;
+  /** Clip a label with no icons to one line — a flag fixes the room it has, so it can't wrap past it. */
+  truncate?: boolean;
 }) => {
-  if (leftIcon == null && rightIcon == null) return <>{children}</>;
+  if (leftIcon == null && rightIcon == null) {
+    // No `flex-1`: the span keeps its content width, so the button's own justify still places it.
+    return truncate ? <span className="min-w-0 truncate">{children}</span> : <>{children}</>;
+  }
 
   if (iconOnly) {
     return <IconSlot size={size}>{leftIcon || rightIcon}</IconSlot>;
@@ -210,7 +222,8 @@ export const Button = ({
         rightIcon={rightIcon}
         labelAlign={labelAlign}
         iconOnly={iconOnly}
-        fullWidth={fullWidth}>
+        fullWidth={fullWidth}
+        truncate={Boolean(flag)}>
         {children}
       </ButtonContent>
       {flag && (
@@ -246,7 +259,8 @@ export const ButtonLink = ({
         leftIcon={leftIcon}
         rightIcon={rightIcon}
         fullWidth={fullWidth}
-        iconOnly={iconOnly}>
+        iconOnly={iconOnly}
+        truncate={Boolean(flag)}>
         {children}
       </ButtonContent>
       {flag && (

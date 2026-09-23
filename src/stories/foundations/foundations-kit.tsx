@@ -3,7 +3,7 @@ import { ComponentProps, ElementType, ReactNode, useEffect, useRef, useState } f
 import { cn } from '~/utils/cn';
 
 /**
- * Shared furniture for the Foundations pages.
+ * Shared furniture for the Foundations pages, laid out on AKUI's `StoryPage` / `StorySection`.
  *
  * Everything here reads its value back out of the DOM rather than printing a number typed into the
  * story. A swatch labelled `text-active` shows whatever `text-active` actually resolves to in the
@@ -20,30 +20,6 @@ function useComputed(ref: React.RefObject<HTMLElement | null>, property: string)
   }, [ref, property]);
 
   return value;
-}
-
-export function Page({ title, intro, children }: { title: string; intro: ReactNode; children: ReactNode }) {
-  return (
-    <div className="typography min-h-screen bg-slate-950 p-8">
-      <div className="mx-auto flex max-w-5xl flex-col gap-10">
-        <header className="flex flex-col gap-2">
-          <h1 className="text-active text-3xl font-bold">{title}</h1>
-          <p className="max-w-3xl text-sm opacity-80">{intro}</p>
-        </header>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-export function Section({ title, note, children }: { title: string; note?: ReactNode; children: ReactNode }) {
-  return (
-    <section className="flex flex-col gap-3">
-      <h2 className="text-xl font-semibold">{title}</h2>
-      {note && <p className="max-w-3xl text-sm opacity-70">{note}</p>}
-      <div className="flex flex-col gap-2">{children}</div>
-    </section>
-  );
 }
 
 /** A labelled row: the name of the thing on the left, a live sample on the right. */

@@ -76,7 +76,10 @@ export default function SearchBar({
     notifyExpandedChange(expanded);
   }, [expanded]);
 
-  useHotkeys('down', () => searchInput.current?.element?.blur(), { enabled: isFocused, enableOnTags: ['INPUT'] });
+  useHotkeys('down', () => searchInput.current?.element?.blur(), {
+    enabled: isFocused,
+    enableOnTags: ['INPUT'],
+  });
 
   const onSearchSong = (e: KeyboardEvent) => {
     e.stopPropagation();
@@ -141,18 +144,7 @@ export default function SearchBar({
               placeholder="Search songs…"
               autoFocus
               className="w-full"
-              adornment={
-                <button
-                  type="button"
-                  aria-label="Close search"
-                  className="flex"
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    closeSearch();
-                  }}>
-                  <Icon icon="ic:baseline-close" size={{ xs: 5, sm: 6 }} className="text-default" />
-                </button>
-              }
+              adornment={<Input.IconButton icon="ic:baseline-close" aria-label="Close search" onClick={closeSearch} />}
               data-test="search-input"
             />
           </motion.div>
@@ -199,18 +191,17 @@ export default function SearchBar({
         placeholder="Search songs…"
         adornment={
           filters.search ? (
-            <button
-              type="button"
+            <Input.IconButton
+              icon="ic:baseline-close"
               aria-label="Clear search"
-              className="flex"
-              onMouseDown={(e) => {
-                e.preventDefault();
+              // The button never takes the focus itself, but the field may not have had it either —
+              // clearing from a cold field should leave the caret ready for the next query.
+              onClick={() => {
                 setSearch('');
                 searchInput.current?.element?.focus();
               }}
-              data-test="clear-search">
-              <Icon icon="ic:baseline-close" size={5} className="text-default" />
-            </button>
+              data-test="clear-search"
+            />
           ) : undefined
         }
         data-test="search-input"

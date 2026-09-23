@@ -1,10 +1,13 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 import { useEffect, useRef, useState } from 'react';
 
-import { Page, Row, Section } from './foundations-kit';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
+
+import { Row } from './foundations-kit';
 
 export default {
   title: 'Foundations/Layers',
+  parameters: { layout: 'fullscreen' },
 } as Meta;
 
 /**
@@ -48,18 +51,19 @@ function Rung({ className }: { className: string }) {
 }
 
 export const Layers: StoryFn = () => (
-  <Page
+  <StoryPage
+    wide
     title="Layers"
-    intro={
+    description={
       <>
         Anything that escapes its parent — <code>fixed</code>, or rendered through a portal — takes a rung on this
         ladder rather than picking a number. Before it existed the app held 22 different z-index values between 0 and
         100000, each of which only made sense against whichever other layer it had once been compared to.
       </>
     }>
-    <Section
+    <StorySection
       title="The ladder"
-      note={
+      description={
         <>
           Ordered bottom to top. The numbers are deliberately close together and deliberately not interesting: reach for
           the rung whose description matches, and if none does, add one here rather than picking a value at the call
@@ -71,11 +75,11 @@ export const Layers: StoryFn = () => (
           <Rung className={token} />
         </Row>
       ))}
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Local stacking is not on the ladder"
-      note={
+      description={
         <>
           A positioned element with a transform, an opacity or a z-index of its own starts a new stacking context, and
           everything inside it competes only with its siblings. That is most of the z-index in the app — a badge over a
@@ -89,6 +93,6 @@ export const Layers: StoryFn = () => (
           Seven values across the whole app, none of them competing with the ladder above.
         </span>
       </Row>
-    </Section>
-  </Page>
+    </StorySection>
+  </StoryPage>
 );

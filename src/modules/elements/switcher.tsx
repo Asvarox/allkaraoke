@@ -1,6 +1,8 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { ComponentProps, PropsWithChildren, ReactNode } from 'react';
 
+import { cn } from '~/utils/cn';
+
 import { Menu } from './akui/menu';
 import { Skeleton } from './akui/skeleton';
 
@@ -44,6 +46,8 @@ export const Switcher = ({
     data-focused={focused}
     onClick={loading ? undefined : onClick}
     data-disabled={disabled}
+    // The native state too: `data-disabled` only styles the row, Enter or Space would still press it
+    disabled={disabled}
     readOnly={readOnly || loading}
     {...restProps}
     className={`${className} flex justify-start gap-2`}>
@@ -55,7 +59,11 @@ export const Switcher = ({
     <AnimatePresence mode="popLayout">
       <motion.span
         layout
-        className="text-active min-w-0 flex-1 overflow-hidden pl-2.5 text-right text-ellipsis whitespace-nowrap"
+        // Disabled greys the value along with the row, the way a disabled Button greys its label.
+        className={cn(
+          'min-w-0 flex-1 overflow-hidden pl-2.5 text-right text-ellipsis whitespace-nowrap',
+          disabled ? 'text-gray-300!' : 'text-active',
+        )}
         key={loading ? LOADING_KEY : (value ?? '')}
         initial={{ opacity: 0, translateY: 20 }}
         animate={{ opacity: 1, translateY: 0 }}

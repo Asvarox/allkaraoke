@@ -1,13 +1,15 @@
 import { Meta, StoryFn } from '@storybook/react-vite';
 
 import { Chip } from '~/modules/elements/akui/chip';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 import { statusSurface } from '~/modules/elements/akui/surfaces';
 import styles, { colorSets } from '~/modules/game-engine/drawing/styles';
 
-import { ContrastReadout, Page, Row, Section, Swatch, TextSample } from './foundations-kit';
+import { ContrastReadout, Row, Swatch, TextSample } from './foundations-kit';
 
 export default {
   title: 'Foundations/Colours',
+  parameters: { layout: 'fullscreen' },
 } as Meta;
 
 /** The seasonal palettes, grouped the way `colorThemes` in `styles.ts` assigns them to players. */
@@ -26,9 +28,10 @@ const THEMES = {
 } satisfies Record<string, (keyof typeof colorSets)[]>;
 
 export const Colours: StoryFn = () => (
-  <Page
+  <StoryPage
+    wide
     title="Colours"
-    intro={
+    description={
       <>
         Every colour in the game resolves from <code>src/modules/game-engine/drawing/styles.ts</code>. The Tailwind
         config reads that file at build time, so the canvas the notes are drawn on and the DOM the menus are built from
@@ -36,9 +39,9 @@ export const Colours: StoryFn = () => (
         with it.
       </>
     }>
-    <Section
+    <StorySection
       title="Text"
-      note={
+      description={
         <>
           Three semantic tokens carry the body of the game. <code>text-default</code> is the one the{' '}
           <code>typography</code> utility applies, so it is the colour text takes when nothing says otherwise. Anything
@@ -60,11 +63,11 @@ export const Colours: StoryFn = () => (
           The quick brown fox
         </TextSample>
       </Row>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Player colours"
-      note={
+      description={
         <>
           One set per player, up to six. Each set carries a fill and a stroke plus the note variants the renderer draws
           with — <code>hit</code>, <code>miss</code>, <code>perfect</code> and the golden-note pair. The order here is
@@ -79,11 +82,11 @@ export const Colours: StoryFn = () => (
           </div>
         </Row>
       ))}
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Seasonal themes"
-      note={
+      description={
         <>
           <code>switchToTheme()</code> swaps the whole player palette in place when a themed song plays. It mutates{' '}
           <code>styles.colors.players</code> directly rather than going through state, so canvas picks it up on the next
@@ -104,11 +107,11 @@ export const Colours: StoryFn = () => (
           </div>
         </Row>
       ))}
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Status"
-      note={
+      description={
         <>
           Four roles, and every way the app reports state uses them: a validation error, a dropped mic, the remote
           mic&rsquo;s connection dot, a browser advisory. <code>warning</code> is amber rather than orange because{' '}
@@ -137,11 +140,11 @@ export const Colours: StoryFn = () => (
           ))}
         </div>
       </Row>
-    </Section>
+    </StorySection>
 
-    <Section
+    <StorySection
       title="Chip"
-      note={
+      description={
         <>
           Two axes on one component. The category variants label what something <em>is</em> — <code>green</code> here
           means &ldquo;new&rdquo;, not &ldquo;good&rdquo; — and are picked to be told apart from each other. The status
@@ -166,6 +169,6 @@ export const Colours: StoryFn = () => (
           <Chip variant="info">info</Chip>
         </div>
       </Row>
-    </Section>
-  </Page>
+    </StorySection>
+  </StoryPage>
 );
