@@ -1,12 +1,9 @@
-import { Meta, StoryFn } from '@storybook/react-vite';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { useState } from 'react';
 
-import { Selector } from './selector';
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 
-export default {
-  title: 'Components/Selector',
-  component: Selector,
-} as Meta;
+import { Selector } from './selector';
 
 const SIZES = ['Small', 'Medium', 'Large', 'Extra Large'];
 const GENRES = [
@@ -24,68 +21,73 @@ const GENRES = [
   'Blues',
 ];
 
-export const Basic: StoryFn = () => {
-  const [value, setValue] = useState('Medium');
+/** `Selector` is controlled, so every sample needs an owner for the value. */
+function DemoSelector({ items, initialValue }: { items: string[]; initialValue: string }) {
+  const [value, setValue] = useState(initialValue);
+
   return (
-    <div style={{ display: 'flex', gap: 24, flexDirection: 'column', maxWidth: 400 }}>
-      <h3 style={{ fontSize: '1rem', marginBottom: '4px' }}>Basic selector</h3>
+    <div className="flex flex-col gap-2">
       <Selector value={value} onChange={setValue}>
-        {SIZES.map((size) => (
-          <Selector.Item key={size} value={size}>
-            {size}
+        {items.map((item) => (
+          <Selector.Item key={item} value={item}>
+            {item}
           </Selector.Item>
         ))}
       </Selector>
-      <p style={{ fontSize: '0.875rem', opacity: 0.6 }}>Selected: {value}</p>
+      <p className="text-sm opacity-70">Selected: {value}</p>
     </div>
   );
+}
+
+function GalleryTemplate() {
+  return (
+    <StoryPage
+      title="Selector"
+      description="A row of mutually exclusive options, all visible at once — for short lists where opening a menu would hide the choice.">
+      <StorySection title="Basic">
+        <DemoSelector items={SIZES} initialValue="Medium" />
+      </StorySection>
+
+      <StorySection
+        title="Overflow"
+        description="More options than fit: the row scrolls and grows arrows at the edges it can scroll towards.">
+        <div className="max-w-xs">
+          <DemoSelector items={GENRES} initialValue="Jazz" />
+        </div>
+      </StorySection>
+    </StoryPage>
+  );
+}
+
+function UseCasesTemplate() {
+  return (
+    <StoryPage title="Selector — in context" description="Several selectors stacked into one filter panel.">
+      <StorySection title="Size">
+        <DemoSelector items={SIZES} initialValue="Medium" />
+      </StorySection>
+      <StorySection title="Genre" description="Overflows, like it would in a narrow panel.">
+        <div className="max-w-sm">
+          <DemoSelector items={GENRES} initialValue="Pop" />
+        </div>
+      </StorySection>
+    </StoryPage>
+  );
+}
+
+export default {
+  title: 'Components/Selector',
+  component: Selector,
+  parameters: {
+    layout: 'fullscreen',
+  },
+} satisfies Meta<typeof Selector>;
+
+type Story = StoryObj<typeof Selector>;
+
+export const Gallery: Story = {
+  render: () => <GalleryTemplate />,
 };
 
-export const Overflow: StoryFn = () => {
-  const [value, setValue] = useState('Jazz');
-  return (
-    <div style={{ display: 'flex', gap: 24, flexDirection: 'column', maxWidth: 320 }}>
-      <h3 style={{ fontSize: '1rem', marginBottom: '4px' }}>Overflow with scroll arrows</h3>
-      <Selector value={value} onChange={setValue}>
-        {GENRES.map((genre) => (
-          <Selector.Item key={genre} value={genre}>
-            {genre}
-          </Selector.Item>
-        ))}
-      </Selector>
-      <p style={{ fontSize: '0.875rem', opacity: 0.6 }}>Selected: {value}</p>
-    </div>
-  );
-};
-
-export const MultipleSelectors: StoryFn = () => {
-  const [size, setSize] = useState('Medium');
-  const [genre, setGenre] = useState('Pop');
-  return (
-    <div style={{ display: 'flex', gap: 24, flexDirection: 'column', maxWidth: 400 }}>
-      <div>
-        <h3 style={{ fontSize: '1rem', marginBottom: '8px' }}>Size</h3>
-        <Selector value={size} onChange={setSize}>
-          {SIZES.map((s) => (
-            <Selector.Item key={s} value={s}>
-              {s}
-            </Selector.Item>
-          ))}
-        </Selector>
-      </div>
-      <div>
-        <h3 style={{ fontSize: '1rem', marginBottom: '8px' }}>Genre (overflow)</h3>
-        <Selector value={genre} onChange={setGenre}>
-          {GENRES.map((g) => (
-            <Selector.Item key={g} value={g}>
-              {g}
-            </Selector.Item>
-          ))}
-        </Selector>
-      </div>
-      <p style={{ fontSize: '0.875rem', opacity: 0.6 }}>
-        Size: {size} · Genre: {genre}
-      </p>
-    </div>
-  );
+export const UseCases: Story = {
+  render: () => <UseCasesTemplate />,
 };

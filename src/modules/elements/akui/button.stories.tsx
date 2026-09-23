@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
+import { Flag } from '~/modules/elements/flag';
 
 import { Button, ButtonLink, ButtonSize } from './button';
 
@@ -78,6 +79,31 @@ function GalleryTemplate() {
           <Button key={size} size={size} leftIcon={<Icon icon="ic:baseline-settings" />} aria-label="Settings" />
         ))}
       </StorySection>
+
+      <StorySection
+        title="Flag"
+        description="`flag` insets an image into the right edge at the button's full height. Only its width scales with `size`, and the label stops before it.">
+        {SIZES.map((size) => (
+          <Button key={size} size={size} flag={<Flag language={['Polish']} />}>
+            {size}
+          </Button>
+        ))}
+      </StorySection>
+
+      <StorySection title="Flag states" description="An `inactive` button greys its flag out along with the label.">
+        <Button size="small" flag={<Flag language={['English']} />}>
+          Resting
+        </Button>
+        <Button size="small" focused flag={<Flag language={['English']} />}>
+          Focused
+        </Button>
+        <Button size="small" inactive flag={<Flag language={['English']} />}>
+          Inactive
+        </Button>
+        <Button size="small" flag={<Flag language={['English']} />}>
+          A long label wraps before it reaches the flag, never under it
+        </Button>
+      </StorySection>
     </StoryPage>
   );
 }
@@ -105,6 +131,26 @@ function UseCasesTemplate() {
         <Button size="small" rightIcon={<Icon icon="ic:baseline-arrow-forward" />}>
           Next
         </Button>
+      </StorySection>
+
+      <StorySection
+        title="Language picker"
+        description="The song list's language sheet: left-aligned labels, the language's flag on the right.">
+        {[
+          { name: 'English', count: 1432 },
+          { name: 'Polish', count: 518 },
+          { name: 'Spanish', count: 96 },
+        ].map(({ name, count }, index) => (
+          <Button
+            key={name}
+            size="small"
+            focused={index === 0}
+            className="justify-start pl-4"
+            labelAlign="left"
+            flag={<Flag language={[name]} />}>
+            {name} <small className="pl-2 text-xs">({count} songs)</small>
+          </Button>
+        ))}
       </StorySection>
     </StoryPage>
   );

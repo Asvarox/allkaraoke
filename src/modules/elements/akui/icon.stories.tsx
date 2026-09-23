@@ -1,5 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
+
 import { Icon, IconName } from './icon';
 
 const sampleIcons: IconName[] = [
@@ -17,44 +19,43 @@ const sampleIcons: IconName[] = [
 
 function GalleryTemplate() {
   return (
-    <div className="text-default flex min-h-screen items-center justify-center bg-slate-950 p-8">
-      <div className="flex w-full max-w-5xl flex-col gap-8">
-        <div>
-          <h1 className="text-2xl font-semibold">AKUI Icon</h1>
-          <p className="text-default/60 text-sm">
-            A thin wrapper around <code>@iconify-icon/react</code> — the only place in the app allowed to import it
-            directly. Pass any iconify icon identifier via the <code>icon</code> prop.
-          </p>
-        </div>
+    <StoryPage
+      title="Icon"
+      description={
+        <>
+          A thin wrapper around <code>@iconify-icon/react</code> — the only place in the app allowed to import it
+          directly. Pass any iconify identifier from <code>IconName</code> via the <code>icon</code> prop.
+        </>
+      }>
+      <StorySection
+        title="Default size"
+        description="Driven by the surrounding font size."
+        layout="row"
+        className="text-3xl">
+        {sampleIcons.map((icon) => (
+          <Icon key={icon} icon={icon} />
+        ))}
+      </StorySection>
 
-        <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5">
-          <h2 className="text-lg font-medium">Default size (font-size driven)</h2>
-          <div className="flex flex-wrap items-center gap-4 text-3xl">
-            {sampleIcons.map((icon) => (
-              <Icon key={icon} icon={icon} />
-            ))}
-          </div>
-        </section>
+      <StorySection title="Size" description="`size` in Tailwind spacing units, or a responsive value." layout="row">
+        {[4, 5, 6, 8, 12].map((size) => (
+          <Icon key={size} icon="ic:baseline-warning" size={size} />
+        ))}
+      </StorySection>
 
-        <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5">
-          <h2 className="text-lg font-medium">Explicit width/height</h2>
-          <div className="flex flex-wrap items-center gap-4">
-            <Icon icon="ic:baseline-warning" width="16" height="16" />
-            <Icon icon="ic:baseline-warning" width="24" height="24" />
-            <Icon icon="ic:baseline-warning" width="48" height="48" />
-          </div>
-        </section>
+      <StorySection title="Explicit width and height" layout="row">
+        <Icon icon="ic:baseline-warning" width="16" height="16" />
+        <Icon icon="ic:baseline-warning" width="24" height="24" />
+        <Icon icon="ic:baseline-warning" width="48" height="48" />
+      </StorySection>
 
-        <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5">
-          <h2 className="text-lg font-medium">Color follows text color</h2>
-          <div className="flex flex-wrap items-center gap-4 text-4xl">
-            <Icon icon="ic:baseline-favorite" className="text-red-500" />
-            <Icon icon="ic:baseline-favorite" className="text-blue-500" />
-            <Icon icon="ic:baseline-favorite" className="text-green-500" />
-          </div>
-        </section>
-      </div>
-    </div>
+      <StorySection title="Colour" description="Follows the text colour." layout="row" className="text-4xl">
+        <Icon icon="ic:baseline-favorite" className="text-active" />
+        <Icon icon="ic:baseline-favorite" className="text-danger" />
+        <Icon icon="ic:baseline-favorite" className="text-success" />
+        <Icon icon="ic:baseline-favorite" className="text-info" />
+      </StorySection>
+    </StoryPage>
   );
 }
 

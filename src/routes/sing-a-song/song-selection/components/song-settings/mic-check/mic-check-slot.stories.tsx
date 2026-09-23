@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { useEffect } from 'react';
 
+import { StoryPage, StorySection } from '~/modules/elements/akui/story-layout';
 import InputManager from '~/modules/game-engine/input/input-manager';
 import { inputStatus } from '~/modules/game-engine/input/interface';
 import { PlayerNumber } from '~/modules/players/player-number';
@@ -90,33 +91,24 @@ function useStoryMicState() {
   }, []);
 }
 
+const SLOTS = [
+  { label: 'No player connected', playerIndex: 0, player: storyPlayers[0] },
+  { label: 'Connected', playerIndex: 1, player: storyPlayers[1] },
+  { label: 'Connection unstable', playerIndex: 2, player: storyPlayers[2] },
+  { label: 'Device unavailable', playerIndex: 3, player: storyPlayers[3] },
+] as const;
+
 function GalleryTemplate() {
   useStoryMicState();
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center bg-slate-900 p-8">
-      <div className="typography flex w-150 flex-col gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold">Mic Check Slot States</h1>
-          <p className="text-sm text-stone-400">Disconnected, healthy, unstable, and dropped device states.</p>
-        </div>
-        <div className="flex flex-col gap-3">
-          {(
-            [
-              { label: 'No Player Connected', playerIndex: 0 as const, player: storyPlayers[0] },
-              { label: 'Connected', playerIndex: 1 as const, player: storyPlayers[1] },
-              { label: 'Connection Unstable', playerIndex: 2 as const, player: storyPlayers[2] },
-              { label: 'Device Unavailable', playerIndex: 3 as const, player: storyPlayers[3] },
-            ] as const
-          ).map((item) => (
-            <div key={item.playerIndex} className="flex flex-col gap-2">
-              <span className="text-sm font-medium tracking-wide text-stone-300 uppercase">{item.label}</span>
-              <MicCheckSlot playerIndex={item.playerIndex} player={item.player} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <StoryPage title="Mic Check Slot" description="Disconnected, healthy, unstable and dropped device states.">
+      {SLOTS.map((slot) => (
+        <StorySection key={slot.playerIndex} title={slot.label}>
+          <MicCheckSlot playerIndex={slot.playerIndex} player={slot.player} />
+        </StorySection>
+      ))}
+    </StoryPage>
   );
 }
 
