@@ -82,7 +82,7 @@ function GalleryTemplate() {
 
       <StorySection
         title="Flag"
-        description="`flag` insets an image into the right edge at the button's full height. Only its width scales with `size`, and the label stops before it.">
+        description="`flag` insets an image into the right edge at the button's full height. Only its width scales with `size`, and the label truncates before it.">
         {SIZES.map((size) => (
           <Button key={size} size={size} flag={<Flag language={['Polish']} />}>
             {size}
@@ -101,7 +101,7 @@ function GalleryTemplate() {
           Inactive
         </Button>
         <Button size="small" flag={<Flag language={['English']} />}>
-          A long label wraps before it reaches the flag, never under it
+          A long label that runs into the flag and truncates before it
         </Button>
       </StorySection>
     </StoryPage>

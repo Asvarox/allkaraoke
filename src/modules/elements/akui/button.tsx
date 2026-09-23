@@ -159,6 +159,7 @@ const ButtonContent = ({
   iconOnly,
   children,
   fullWidth,
+  truncate,
 }: {
   size: ButtonSize;
   leftIcon?: ReactNode;
@@ -167,8 +168,13 @@ const ButtonContent = ({
   iconOnly?: boolean;
   children?: ReactNode;
   fullWidth?: boolean;
+  /** Clip a label with no icons to one line — a flag fixes the room it has, so it can't wrap past it. */
+  truncate?: boolean;
 }) => {
-  if (leftIcon == null && rightIcon == null) return <>{children}</>;
+  if (leftIcon == null && rightIcon == null) {
+    // No `flex-1`: the span keeps its content width, so the button's own justify still places it.
+    return truncate ? <span className="min-w-0 truncate">{children}</span> : <>{children}</>;
+  }
 
   if (iconOnly) {
     return <IconSlot size={size}>{leftIcon || rightIcon}</IconSlot>;
@@ -216,7 +222,8 @@ export const Button = ({
         rightIcon={rightIcon}
         labelAlign={labelAlign}
         iconOnly={iconOnly}
-        fullWidth={fullWidth}>
+        fullWidth={fullWidth}
+        truncate={Boolean(flag)}>
         {children}
       </ButtonContent>
       {flag && (
@@ -252,7 +259,8 @@ export const ButtonLink = ({
         leftIcon={leftIcon}
         rightIcon={rightIcon}
         fullWidth={fullWidth}
-        iconOnly={iconOnly}>
+        iconOnly={iconOnly}
+        truncate={Boolean(flag)}>
         {children}
       </ButtonContent>
       {flag && (
