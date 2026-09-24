@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { GAME_MODE, SongPreview } from '~/interfaces';
+import { withAppBackground } from '~/stories/app-background';
 
 import { HistoryPageView } from './history-page-view';
 import { PlayHistoryGroup } from './use-play-history';
@@ -75,6 +76,7 @@ const loadedGroups: PlayHistoryGroup[] = [
 export default {
   title: 'Game/History',
   component: HistoryPageView,
+  decorators: [withAppBackground],
   parameters: {
     layout: 'fullscreen',
   },
