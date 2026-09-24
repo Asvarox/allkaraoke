@@ -10,7 +10,7 @@
 #GAP:-78,52025586353943
 #ALLKARAOKE_ID:keina-suda-veil
 #ALLKARAOKE_SID:6415
-#ALLKARAOKE_LASTUPDATE:2026-09-23T02:41:40.681Z
+#ALLKARAOKE_LASTUPDATE:2026-09-22T21:06:35.723Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:75
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=veil+%28TV%29&idioma=ja

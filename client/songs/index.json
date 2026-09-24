@@ -1672,6 +1672,33 @@
     "local": false
   },
   {
+    "id": "a-ha-stay-on-these-roads",
+    "title": "Stay On These Roads",
+    "artist": "a-ha",
+    "video": "nWey1DBAchM",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 32560.384615384617,
+    "year": "1988",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-09-24T02:30:47.912Z",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Buberatz",
+    "duration": 286,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6420,
+    "tracksCount": 1,
+    "search": "ahastayontheseroads",
+    "local": false
+  },
+  {
     "id": "a-ha-summer-moved-on",
     "title": "Summer Moved On",
     "artist": "a-ha",
@@ -10620,6 +10647,33 @@
     "local": false
   },
   {
+    "id": "annenmaykantereit-oft-gefragt",
+    "title": "Oft gefragt",
+    "artist": "AnnenMayKantereit",
+    "video": "TxZMfufRJfo",
+    "language": [
+      "German"
+    ],
+    "bpm": 252.46,
+    "gap": 4709.939000237661,
+    "year": "2015",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-24T02:30:48.285Z",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "blewmaxx",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6423,
+    "tracksCount": 1,
+    "search": "annenmaykantereitoftgefragt",
+    "local": false
+  },
+  {
     "id": "annenmaykantereit-pocahontas",
     "title": "Pocahontas",
     "artist": "AnnenMayKantereit",
@@ -16441,7 +16495,7 @@
     "gap": 30736.486486486487,
     "year": "2013",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-09-23T02:41:39.696Z",
+    "lastUpdate": "2026-09-22T21:00:06.739Z",
     "realBpm": 177,
     "previewStart": 99,
     "previewEnd": 129,
@@ -20320,6 +20374,36 @@
     "shortId": 6275,
     "tracksCount": 1,
     "search": "bensonboonenightslikethese",
+    "local": false
+  },
+  {
+    "id": "berlin-take-my-breath-away",
+    "title": "Take My Breath Away",
+    "artist": "Berlin",
+    "video": "Bx51eegLTY8",
+    "language": [
+      "English"
+    ],
+    "bpm": 288,
+    "gap": 10220.416666666666,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-24T02:30:48.286Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=5413",
+    "duration": 252,
+    "tracks": [
+      {
+        "name": "Tale My Breath Away",
+        "start": 19
+      }
+    ],
+    "shortId": 6424,
+    "tracksCount": 1,
+    "search": "berlintakemybreathaway",
     "local": false
   },
   {
@@ -32333,7 +32417,7 @@
     "gap": 739.8013029316013,
     "year": "1971",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-09-23T02:41:40.485Z",
+    "lastUpdate": "2026-09-22T21:05:37.473Z",
     "realBpm": 72,
     "previewStart": 73,
     "previewEnd": 100,
@@ -32508,7 +32592,7 @@
     "gap": 90455.68143014965,
     "year": "1987",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-09-23T02:41:40.294Z",
+    "lastUpdate": "2026-09-22T21:05:15.640Z",
     "genre": "Doom Metal",
     "realBpm": 87,
     "previewStart": 60,
@@ -48155,6 +48239,35 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-ryan-sharpay-what-ive-been-looking-for",
+    "title": "What I’ve Been Looking For",
+    "artist": "Disney’s High School Musical (Ryan, Sharpay)",
+    "video": "S-wSCKaHJ6Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.7,
+    "gap": 7651.05112620665,
+    "year": "2006",
+    "lastUpdate": "2026-09-24T02:30:47.384Z",
+    "genre": "Soundtrack",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=376",
+    "duration": 125,
+    "tracks": [
+      {
+        "name": "What I've Been Looking For",
+        "start": 19
+      }
+    ],
+    "shortId": 6419,
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusicalryansharpaywhativebeenlookingfor",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-were-all-in-this-together",
     "title": "We’re All In This Together",
     "artist": "Disney’s High School Musical",
@@ -48363,7 +48476,7 @@
     "bpm": 383.4,
     "gap": 57892.785602503915,
     "year": "2011",
-    "lastUpdate": "2026-09-23T02:41:38.790Z",
+    "lastUpdate": "2026-09-22T16:57:52.161Z",
     "genre": "Soundtrack",
     "realBpm": 93,
     "volume": 1,
@@ -49127,6 +49240,33 @@
     "shortId": 1299,
     "tracksCount": 2,
     "search": "disneysthelionkinghakunamatata",
+    "local": false
+  },
+  {
+    "id": "disneys-the-nightmare-before-christmas-this-is-halloween",
+    "title": "This Is Halloween",
+    "artist": "Disney’s The Nightmare Before Christmas",
+    "video": "ZVuToMilP0A",
+    "language": [
+      "English"
+    ],
+    "bpm": 334.24,
+    "gap": 14032.68549545237,
+    "year": "1993",
+    "lastUpdate": "2026-09-24T02:30:48.101Z",
+    "genre": "Soundtrack",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6422,
+    "tracksCount": 1,
+    "search": "disneysthenightmarebeforechristmasthisishalloween",
     "local": false
   },
   {
@@ -67141,11 +67281,11 @@
     "language": [
       "English"
     ],
-    "bpm": 521,
-    "gap": 17211.32245681382,
+    "bpm": 520.8,
+    "gap": 17011.32245681382,
     "year": "2019",
     "artistOrigin": "SE",
-    "lastUpdate": "2024-01-13T09:55:14.193Z",
+    "lastUpdate": "2026-09-23T07:53:07.583Z",
     "genre": "Rock",
     "realBpm": 130,
     "previewStart": 75,
@@ -76119,7 +76259,7 @@
     "gap": 35.71428571428578,
     "year": "1999",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-23T02:41:41.069Z",
+    "lastUpdate": "2026-09-22T21:08:28.355Z",
     "genre": "Rock",
     "realBpm": 124,
     "volume": 1,
@@ -78335,7 +78475,7 @@
     "bpm": 315,
     "gap": 8340,
     "year": "2024",
-    "lastUpdate": "2026-09-23T02:41:39.492Z",
+    "lastUpdate": "2026-09-22T16:58:18.384Z",
     "genre": "Pop",
     "realBpm": 105,
     "volume": 1,
@@ -82922,7 +83062,7 @@
     "gap": 14873.844696969696,
     "year": "1982",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-09-23T02:41:40.872Z",
+    "lastUpdate": "2026-09-22T21:06:50.288Z",
     "genre": "Pop",
     "realBpm": 127,
     "volume": 1,
@@ -82950,7 +83090,7 @@
     "gap": 18082.73604794264,
     "year": "1997",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-09-23T02:41:41.067Z",
+    "lastUpdate": "2026-09-22T21:07:06.225Z",
     "genre": "Variété",
     "realBpm": 134.2,
     "volume": 1,
@@ -90798,6 +90938,34 @@
     "local": false
   },
   {
+    "id": "kasey-chambers-not-pretty-enough",
+    "title": "Not Pretty Enough",
+    "artist": "Kasey Chambers",
+    "video": "v5rOdF9rUKI",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": -40,
+    "year": "2001",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-09-24T02:30:47.915Z",
+    "genre": "Country",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "hugamuga",
+    "sourceUrl": "Kasey Chambers",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6421,
+    "tracksCount": 1,
+    "search": "kaseychambersnotprettyenough",
+    "local": false
+  },
+  {
     "id": "katarzyna-laska-mam-te-moc-kraina-lodu",
     "title": "Mam tę moc (Kraina lodu)",
     "artist": "Katarzyna Łaska",
@@ -92545,7 +92713,7 @@
     "bpm": 300.16,
     "gap": -78.52025586353943,
     "year": "2019",
-    "lastUpdate": "2026-09-23T02:41:40.681Z",
+    "lastUpdate": "2026-09-22T21:06:35.723Z",
     "genre": "Anime",
     "realBpm": 75,
     "previewStart": 39.5,
@@ -105004,7 +105172,7 @@
     "bpm": 204.25,
     "gap": 8181.8482252141985,
     "year": "2017",
-    "lastUpdate": "2026-09-23T02:41:39.902Z",
+    "lastUpdate": "2026-09-22T21:03:04.492Z",
     "realBpm": 102,
     "volume": 1,
     "author": "Sing-Girl",
@@ -111033,6 +111201,36 @@
     "local": false
   },
   {
+    "id": "manu-chao-clandestino",
+    "title": "Clandestino",
+    "artist": "Manu Chao",
+    "video": "0TamvrMZl4g",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 340,
+    "gap": 8515.29411764706,
+    "year": "1998",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-09-24T02:30:48.483Z",
+    "genre": "Reggae",
+    "realBpm": 340,
+    "volume": 1,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Manu%20Chao&cancion=Clandestino",
+    "duration": 140,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6425,
+    "tracksCount": 1,
+    "search": "manuchaoclandestino",
+    "local": false
+  },
+  {
     "id": "manuel-gas-gas-gas",
     "title": "Gas Gas Gas",
     "artist": "Manuel",
@@ -113744,7 +113942,7 @@
     "gap": 10208.691588785046,
     "year": "2011",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-23T02:41:40.093Z",
+    "lastUpdate": "2026-09-22T21:03:48.376Z",
     "realBpm": 200,
     "volume": 1,
     "author": "uweotto, Usdx",
@@ -120722,7 +120920,7 @@
     "gap": 21916.257839721253,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-23T02:41:40.292Z",
+    "lastUpdate": "2026-09-22T21:04:21.774Z",
     "genre": "Emo",
     "realBpm": 86,
     "previewStart": 23,
@@ -127399,7 +127597,7 @@
     "gap": 27304.573890839452,
     "year": "2011",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-09-23T02:41:40.293Z",
+    "lastUpdate": "2026-09-22T21:04:50.964Z",
     "realBpm": 156,
     "volume": 1,
     "author": "Amoebius",
@@ -133316,7 +133514,7 @@
     "gap": -8.823529411764696,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-23T02:41:39.693Z",
+    "lastUpdate": "2026-09-22T20:59:08.319Z",
     "realBpm": 170,
     "volume": 1,
     "author": "chiio",
@@ -155536,7 +155734,7 @@
     "gap": 13738.002064249775,
     "year": "2016",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-09-23T02:41:40.290Z",
+    "lastUpdate": "2026-09-22T21:04:03.035Z",
     "genre": "Kpop",
     "realBpm": 155,
     "volume": 1,
@@ -164445,7 +164643,7 @@
     "gap": 23531.59663865546,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-23T02:41:39.702Z",
+    "lastUpdate": "2026-09-22T21:01:02.828Z",
     "genre": "Country Pop",
     "realBpm": 116,
     "volume": 1,
@@ -165342,6 +165540,35 @@
     "shortId": 6342,
     "tracksCount": 1,
     "search": "taylorswiftthewayilovedyoutaylorsversion",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-tis-the-damn-season",
+    "title": "’tis the damn season",
+    "artist": "Taylor Swift",
+    "video": "WuvhOD-mP8M",
+    "language": [
+      "English"
+    ],
+    "bpm": 365.51,
+    "gap": 13575.074826954118,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-24T02:30:48.680Z",
+    "genre": "Folklore",
+    "realBpm": 146,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=WuvhOD-mP8M",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6426,
+    "tracksCount": 1,
+    "search": "taylorswifttisthedamnseason",
     "local": false
   },
   {
@@ -169066,7 +169293,7 @@
     "gap": 33928.93898173339,
     "year": "1992",
     "artistOrigin": "IE",
-    "lastUpdate": "2026-09-23T02:41:39.698Z",
+    "lastUpdate": "2026-09-22T21:00:49.027Z",
     "genre": "Pop",
     "realBpm": 129,
     "volume": 1,
@@ -172635,7 +172862,7 @@
     "bpm": 227.44000000000003,
     "gap": 143.9660436957094,
     "year": "1975",
-    "lastUpdate": "2026-09-23T02:41:40.486Z",
+    "lastUpdate": "2026-09-22T21:06:18.194Z",
     "genre": "Musical",
     "realBpm": 173,
     "volume": 1,
@@ -183430,7 +183657,7 @@
     "gap": 34810.67836511585,
     "year": "2015",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-09-23T02:41:39.706Z",
+    "lastUpdate": "2026-09-22T21:02:44.348Z",
     "genre": "Anime",
     "realBpm": 161,
     "previewStart": 72,
