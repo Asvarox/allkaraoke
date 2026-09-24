@@ -190,10 +190,11 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6417,
-  "generatedAt": "2026-09-23T02:42:14.579Z",
+  "songs": 6425,
+  "generatedAt": "2026-09-24T02:31:15.990Z",
   "additionsPerDay": {
-    "2026-09-23": 19,
+    "2026-09-24": 8,
+    "2026-09-22": 19,
     "2026-09-19": 13,
     "2026-09-18": 11,
     "2026-09-17": 8,
@@ -230,118 +231,166 @@
   },
   "recentlyAdded": [
     {
+      "artist": "Taylor Swift",
+      "title": "’tis the damn season",
+      "video": "WuvhOD-mP8M",
+      "addedAt": "2026-09-24T02:30:48.680Z"
+    },
+    {
+      "artist": "Manu Chao",
+      "title": "Clandestino",
+      "video": "0TamvrMZl4g",
+      "addedAt": "2026-09-24T02:30:48.483Z"
+    },
+    {
+      "artist": "Berlin",
+      "title": "Take My Breath Away",
+      "video": "Bx51eegLTY8",
+      "addedAt": "2026-09-24T02:30:48.286Z"
+    },
+    {
+      "artist": "AnnenMayKantereit",
+      "title": "Oft gefragt",
+      "video": "TxZMfufRJfo",
+      "addedAt": "2026-09-24T02:30:48.285Z"
+    },
+    {
+      "artist": "Disney’s The Nightmare Before Christmas",
+      "title": "This Is Halloween",
+      "video": "ZVuToMilP0A",
+      "addedAt": "2026-09-24T02:30:48.101Z"
+    },
+    {
+      "artist": "Kasey Chambers",
+      "title": "Not Pretty Enough",
+      "video": "v5rOdF9rUKI",
+      "addedAt": "2026-09-24T02:30:47.915Z"
+    },
+    {
+      "artist": "a-ha",
+      "title": "Stay On These Roads",
+      "video": "nWey1DBAchM",
+      "addedAt": "2026-09-24T02:30:47.912Z"
+    },
+    {
+      "artist": "Disney’s High School Musical (Ryan, Sharpay)",
+      "title": "What I’ve Been Looking For",
+      "video": "S-wSCKaHJ6Y",
+      "addedAt": "2026-09-24T02:30:47.384Z"
+    },
+    {
       "artist": "HIM",
       "title": "Poison Girl",
       "video": "yGvidlULUDQ",
-      "addedAt": "2026-09-23T02:41:41.069Z"
+      "addedAt": "2026-09-22T21:08:28.355Z"
     },
     {
       "artist": "Jean-Jacques Goldman",
       "title": "Quand tu danses",
       "video": "2EpQxCdUyLw",
-      "addedAt": "2026-09-23T02:41:41.067Z"
+      "addedAt": "2026-09-22T21:07:06.225Z"
     },
     {
       "artist": "Jean-Jacques Goldman",
       "title": "Au bout de mes rêves",
       "video": "o3hX0DU1QoI",
-      "addedAt": "2026-09-23T02:41:40.872Z"
+      "addedAt": "2026-09-22T21:06:50.288Z"
     },
     {
       "artist": "Keina Suda",
       "title": "veil",
       "video": "geE49ne2mQg",
-      "addedAt": "2026-09-23T02:41:40.681Z"
+      "addedAt": "2026-09-22T21:06:35.723Z"
     },
     {
       "artist": "The Rocky Horror Picture Show",
       "title": "Touch-a, Touch-a, Touch-a, Touch Me",
       "video": "JKMpRikJeLI",
-      "addedAt": "2026-09-23T02:41:40.486Z"
+      "addedAt": "2026-09-22T21:06:18.194Z"
     },
     {
       "artist": "Camilo Sesto",
       "title": "Algo de mí",
       "video": "_sTeDba7eHA",
-      "addedAt": "2026-09-23T02:41:40.485Z"
+      "addedAt": "2026-09-22T21:05:37.473Z"
     },
     {
       "artist": "Candlemass",
       "title": "Bewitched",
       "video": "h3LNi-aPXuc",
-      "addedAt": "2026-09-23T02:41:40.294Z"
+      "addedAt": "2026-09-22T21:05:15.640Z"
     },
     {
       "artist": "Nightwish",
       "title": "Storytime",
       "video": "09MTDBb8qro",
-      "addedAt": "2026-09-23T02:41:40.293Z"
+      "addedAt": "2026-09-22T21:04:50.964Z"
     },
     {
       "artist": "Mom Jeans",
       "title": "Death Cup",
       "video": "ejpAXCFm_CE",
-      "addedAt": "2026-09-23T02:41:40.292Z"
+      "addedAt": "2026-09-22T21:04:21.774Z"
     },
     {
       "artist": "SISTAR",
       "title": "I Like That",
       "video": "LJVUjmNMF8c",
-      "addedAt": "2026-09-23T02:41:40.290Z"
+      "addedAt": "2026-09-22T21:04:03.035Z"
     },
     {
       "artist": "Martin and James",
       "title": "All Over The News",
       "video": "kP41QhrzLtc",
-      "addedAt": "2026-09-23T02:41:40.093Z"
+      "addedAt": "2026-09-22T21:03:48.376Z"
     },
     {
       "artist": "Little Mix feat. Machine Gun Kelly",
       "title": "No More Sad Songs",
       "video": "HHCC4ndeJyE",
-      "addedAt": "2026-09-23T02:41:39.902Z"
+      "addedAt": "2026-09-22T21:03:04.492Z"
     },
     {
       "artist": "Walkure",
       "title": "Ikenai Borderline",
       "video": "6HYHdkEYdQE",
-      "addedAt": "2026-09-23T02:41:39.706Z"
+      "addedAt": "2026-09-22T21:02:44.348Z"
     },
     {
       "artist": "Taylor Swift",
       "title": "Dear John",
       "video": "N-FYySSy0rM",
-      "addedAt": "2026-09-23T02:41:39.702Z"
+      "addedAt": "2026-09-22T21:01:02.828Z"
     },
     {
       "artist": "The Cranberries",
       "title": "Dreams",
       "video": "Yam5uK6e-bQ",
-      "addedAt": "2026-09-23T02:41:39.698Z"
+      "addedAt": "2026-09-22T21:00:49.027Z"
     },
     {
       "artist": "Babymetal",
       "title": "Headbangeeeeerrrrr!!!!!",
       "video": "2IzR_ClTE8Y",
-      "addedAt": "2026-09-23T02:41:39.696Z"
+      "addedAt": "2026-09-22T21:00:06.739Z"
     },
     {
       "artist": "Panic! at the Disco",
       "title": "The Only Difference Between Martyrdom And Suicide Is Press Coverage",
       "video": "flKd80xRazk",
-      "addedAt": "2026-09-23T02:41:39.693Z"
+      "addedAt": "2026-09-22T20:59:08.319Z"
     },
     {
       "artist": "Imagine Dragons feat. Ado",
       "title": "Take Me to the Beach",
       "video": "5Duje_sZko8",
-      "addedAt": "2026-09-23T02:41:39.492Z"
+      "addedAt": "2026-09-22T16:58:18.384Z"
     },
     {
       "artist": "Disney’s Lemonade Mouth",
       "title": "Turn Up The Music",
       "video": "dACNhrdm44c",
-      "addedAt": "2026-09-23T02:41:38.790Z"
+      "addedAt": "2026-09-22T16:57:52.161Z"
     },
     {
       "artist": "Sôber",
@@ -468,54 +517,6 @@
       "title": "Liebe zu dritt",
       "video": "NDlgGxfNTM4",
       "addedAt": "2026-09-18T14:11:12.687Z"
-    },
-    {
-      "artist": "Ikimono Gakari",
-      "title": "Netsujou no Spectrum",
-      "video": "sDcsB8g6ZUc",
-      "addedAt": "2026-09-18T14:10:47.723Z"
-    },
-    {
-      "artist": "Shakira feat. Burna Boy",
-      "title": "Dai Dai",
-      "video": "salwJjShv2M",
-      "addedAt": "2026-09-18T14:10:37.335Z"
-    },
-    {
-      "artist": "Jason Derulo",
-      "title": "Breathing",
-      "video": "8FbF18hDosw",
-      "addedAt": "2026-09-18T14:10:25.024Z"
-    },
-    {
-      "artist": "Linkin Park",
-      "title": "Lying From You",
-      "video": "_c3XfcyQ45w",
-      "addedAt": "2026-09-17T21:09:14.022Z"
-    },
-    {
-      "artist": "Semisonic",
-      "title": "Closing Time",
-      "video": "xGytDsqkQY8",
-      "addedAt": "2026-09-17T20:59:47.398Z"
-    },
-    {
-      "artist": "Rammstein",
-      "title": "Haifisch",
-      "video": "GP0_MNj8f1Q",
-      "addedAt": "2026-09-17T20:59:32.082Z"
-    },
-    {
-      "artist": "Hairspray (Movie)",
-      "title": "I Can Hear The Bells",
-      "video": "ZbdmiykoJm8",
-      "addedAt": "2026-09-17T20:59:15.081Z"
-    },
-    {
-      "artist": "Killing Joke",
-      "title": "Love Like Blood",
-      "video": "TnpwuRlXbhk",
-      "addedAt": "2026-09-17T20:58:49.641Z"
     }
   ]
 }
