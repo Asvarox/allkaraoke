@@ -23,10 +23,10 @@
     "Billie Eilish",
     "Elton John",
     "Ghost",
+    "Nightwish",
     "Disturbed",
     "Madonna",
     "Muse",
-    "Nightwish",
     "ABBA",
     "Foo Fighters",
     "Bruno Mars",
@@ -190,10 +190,11 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6425,
-  "generatedAt": "2026-09-24T02:31:15.990Z",
+  "songs": 6441,
+  "generatedAt": "2026-09-25T02:48:24.520Z",
   "additionsPerDay": {
-    "2026-09-24": 8,
+    "2026-09-25": 16,
+    "2026-09-23": 8,
     "2026-09-22": 19,
     "2026-09-19": 13,
     "2026-09-18": 11,
@@ -226,57 +227,152 @@
     "2026-08-08": 12,
     "2026-08-07": 1,
     "2026-08-05": 3,
-    "2026-07-29": 2,
-    "2026-07-26": 7
+    "2026-07-29": 2
   },
   "recentlyAdded": [
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+      "title": "Survive",
+      "video": "6GpuV9iyQYU",
+      "addedAt": "2026-09-25T02:47:54.444Z"
+    },
+    {
+      "artist": "Momoiro Clover Z",
+      "title": "Nippon Egao Hyakkei",
+      "video": "ymP81hBZni4",
+      "addedAt": "2026-09-25T02:47:54.441Z"
+    },
+    {
+      "artist": "The Wanted",
+      "title": "Glad You Came",
+      "video": "2ggzxInyzVE",
+      "addedAt": "2026-09-25T02:47:54.440Z"
+    },
+    {
+      "artist": "Junior Caldera feat. Sophie Ellis-Bextor",
+      "title": "Can’t Fight This Feeling",
+      "video": "xTqhdtE2XaI",
+      "addedAt": "2026-09-25T02:47:54.267Z"
+    },
+    {
+      "artist": "Bersuit Vergarabat",
+      "title": "El viejo de arriba",
+      "video": "K3RIqyhzVZs",
+      "addedAt": "2026-09-25T02:47:54.099Z"
+    },
+    {
+      "artist": "Wise Guys",
+      "title": "Das Sägewerk Bad Segeberg",
+      "video": "jVkN2WNOnuc",
+      "addedAt": "2026-09-25T02:47:53.925Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Escapist",
+      "video": "eKuCFk1j_Io",
+      "addedAt": "2026-09-25T02:47:53.923Z"
+    },
+    {
+      "artist": "ROSALÍA",
+      "title": "La perla",
+      "video": "GkTWxDB21cA",
+      "addedAt": "2026-09-25T02:47:53.922Z"
+    },
+    {
+      "artist": "Los Rancheros",
+      "title": "Casualidad",
+      "video": "EKTjAsCeLao",
+      "addedAt": "2026-09-25T02:47:53.747Z"
+    },
+    {
+      "artist": "Ricardo Junior",
+      "title": "Sorriso Resplandecente",
+      "video": "3n3itDDgmQQ",
+      "addedAt": "2026-09-25T02:47:53.574Z"
+    },
+    {
+      "artist": "Liam Payne & Rita Ora",
+      "title": "For You (Fifty Shades Freed)",
+      "video": "RQUuqbzQVsY",
+      "addedAt": "2026-09-25T02:47:53.403Z"
+    },
+    {
+      "artist": "LMFAO",
+      "title": "Sexy And I Know It",
+      "video": "wyx6JDQCslE",
+      "addedAt": "2026-09-25T02:47:53.399Z"
+    },
+    {
+      "artist": "Brødrene Olsen",
+      "title": "Smuk som et stjerneskud",
+      "video": "rp8ny2s2mZg",
+      "addedAt": "2026-09-25T02:47:53.226Z"
+    },
+    {
+      "artist": "Grimes",
+      "title": "Oblivion",
+      "video": "JtH68PJIQLE",
+      "addedAt": "2026-09-25T02:47:53.049Z"
+    },
+    {
+      "artist": "Twenty One Pilots",
+      "title": "Shy Away",
+      "video": "3sO-Y1Zbft4",
+      "addedAt": "2026-09-25T02:47:53.047Z"
+    },
+    {
+      "artist": "Axel Fischer",
+      "title": "Amsterdam",
+      "video": "q8NRgJRmNA0",
+      "addedAt": "2026-09-25T02:47:52.380Z"
+    },
     {
       "artist": "Taylor Swift",
       "title": "’tis the damn season",
       "video": "WuvhOD-mP8M",
-      "addedAt": "2026-09-24T02:30:48.680Z"
+      "addedAt": "2026-09-23T21:10:16.923Z"
     },
     {
       "artist": "Manu Chao",
       "title": "Clandestino",
       "video": "0TamvrMZl4g",
-      "addedAt": "2026-09-24T02:30:48.483Z"
+      "addedAt": "2026-09-23T21:09:42.906Z"
     },
     {
       "artist": "Berlin",
       "title": "Take My Breath Away",
       "video": "Bx51eegLTY8",
-      "addedAt": "2026-09-24T02:30:48.286Z"
+      "addedAt": "2026-09-23T21:09:05.231Z"
     },
     {
       "artist": "AnnenMayKantereit",
       "title": "Oft gefragt",
       "video": "TxZMfufRJfo",
-      "addedAt": "2026-09-24T02:30:48.285Z"
+      "addedAt": "2026-09-23T21:08:33.137Z"
     },
     {
       "artist": "Disney’s The Nightmare Before Christmas",
       "title": "This Is Halloween",
       "video": "ZVuToMilP0A",
-      "addedAt": "2026-09-24T02:30:48.101Z"
+      "addedAt": "2026-09-23T21:08:12.234Z"
     },
     {
       "artist": "Kasey Chambers",
       "title": "Not Pretty Enough",
       "video": "v5rOdF9rUKI",
-      "addedAt": "2026-09-24T02:30:47.915Z"
+      "addedAt": "2026-09-23T21:07:53.728Z"
     },
     {
       "artist": "a-ha",
       "title": "Stay On These Roads",
       "video": "nWey1DBAchM",
-      "addedAt": "2026-09-24T02:30:47.912Z"
+      "addedAt": "2026-09-23T21:07:22.820Z"
     },
     {
       "artist": "Disney’s High School Musical (Ryan, Sharpay)",
       "title": "What I’ve Been Looking For",
       "video": "S-wSCKaHJ6Y",
-      "addedAt": "2026-09-24T02:30:47.384Z"
+      "addedAt": "2026-09-23T21:07:02.593Z"
     },
     {
       "artist": "HIM",
@@ -421,102 +517,6 @@
       "title": "But Daddy I Love Him",
       "video": "U2W173hRfyA",
       "addedAt": "2026-09-19T21:49:50.833Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Teagan Earley)",
-      "title": "My Goodbye",
-      "video": "U6r-pOuRnkE",
-      "addedAt": "2026-09-19T21:48:59.224Z"
-    },
-    {
-      "artist": "Nightwish",
-      "title": "Ghost Love Score",
-      "video": "aXYzFIdXeG8",
-      "addedAt": "2026-09-19T21:48:39.337Z"
-    },
-    {
-      "artist": "Sam Smith & Kim Petras",
-      "title": "Unholy",
-      "video": "Uq9gPaIzbe8",
-      "addedAt": "2026-09-19T21:43:36.819Z"
-    },
-    {
-      "artist": "Disney’s Camp Rock 2",
-      "title": "Can’t Back Down",
-      "video": "_zrt86GXM8w",
-      "addedAt": "2026-09-19T21:43:24.931Z"
-    },
-    {
-      "artist": "Alfredo Casero",
-      "title": "Pizza conmigo",
-      "video": "qlCnemO91tM",
-      "addedAt": "2026-09-19T21:43:00.802Z"
-    },
-    {
-      "artist": "Alan Jackson",
-      "title": "Chasin’ That Neon Rainbow",
-      "video": "WCPpOba2O4g",
-      "addedAt": "2026-09-19T21:41:32.102Z"
-    },
-    {
-      "artist": "Disney’s Camp Rock (Joe Jonas)",
-      "title": "Gotta Find You",
-      "video": "AH0geUR9WTA",
-      "addedAt": "2026-09-19T21:41:17.877Z"
-    },
-    {
-      "artist": "Peter Fox",
-      "title": "Schwarz zu blau",
-      "video": "yphwzD1XaBY",
-      "addedAt": "2026-09-19T21:41:02.459Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Wanda Herrans)",
-      "title": "The Underworld",
-      "video": "PbVJaMIrQ7g",
-      "addedAt": "2026-09-18T20:04:29.108Z"
-    },
-    {
-      "artist": "Engelbert Humperdinck",
-      "title": "A Man Without Love",
-      "video": "o0WWaA3oFa4",
-      "addedAt": "2026-09-18T20:04:18.372Z"
-    },
-    {
-      "artist": "Airbag",
-      "title": "Amor de verano",
-      "video": "3ioa-_UCyd8",
-      "addedAt": "2026-09-18T20:03:38.238Z"
-    },
-    {
-      "artist": "Ella Langley",
-      "title": "Choosin’ Texas",
-      "video": "hLOheGDwD_0",
-      "addedAt": "2026-09-18T16:51:30.704Z"
-    },
-    {
-      "artist": "Ne-Yo",
-      "title": "Mad",
-      "video": "sAYuOc7_TKg",
-      "addedAt": "2026-09-18T14:12:26.407Z"
-    },
-    {
-      "artist": "Milo j",
-      "title": "Rara vez",
-      "video": "aBSkvI0CkgU",
-      "addedAt": "2026-09-18T14:11:44.344Z"
-    },
-    {
-      "artist": "Stone Temple Pilots",
-      "title": "Interstate Love Song",
-      "video": "yjJL9DGU7Gg",
-      "addedAt": "2026-09-18T14:11:27.002Z"
-    },
-    {
-      "artist": "Provinz x MAJAN x JEREMIAS",
-      "title": "Liebe zu dritt",
-      "video": "NDlgGxfNTM4",
-      "addedAt": "2026-09-18T14:11:12.687Z"
     }
   ]
 }
