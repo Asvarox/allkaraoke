@@ -1683,7 +1683,7 @@
     "gap": 32560.384615384617,
     "year": "1988",
     "artistOrigin": "NO",
-    "lastUpdate": "2026-09-24T02:30:47.912Z",
+    "lastUpdate": "2026-09-23T21:07:22.820Z",
     "realBpm": 100,
     "volume": 1,
     "author": "Buberatz",
@@ -10658,7 +10658,7 @@
     "gap": 4709.939000237661,
     "year": "2015",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-09-24T02:30:48.285Z",
+    "lastUpdate": "2026-09-23T21:08:33.137Z",
     "realBpm": 125,
     "volume": 1,
     "author": "blewmaxx",
@@ -16104,6 +16104,33 @@
     "local": false
   },
   {
+    "id": "axel-fischer-amsterdam",
+    "title": "Amsterdam",
+    "artist": "Axel Fischer",
+    "video": "q8NRgJRmNA0",
+    "language": [
+      "German"
+    ],
+    "bpm": 264,
+    "gap": 1197.2727272727275,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-25T02:47:52.380Z",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "general2000",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6427,
+    "tracksCount": 1,
+    "search": "axelfischeramsterdam",
+    "local": false
+  },
+  {
     "id": "axelle-red-sensualite",
     "title": "Sensualité",
     "artist": "Axelle Red",
@@ -20388,7 +20415,7 @@
     "gap": 10220.416666666666,
     "year": "1986",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-24T02:30:48.286Z",
+    "lastUpdate": "2026-09-23T21:09:05.231Z",
     "realBpm": 96,
     "volume": 1,
     "author": "IC",
@@ -20404,6 +20431,36 @@
     "shortId": 6424,
     "tracksCount": 1,
     "search": "berlintakemybreathaway",
+    "local": false
+  },
+  {
+    "id": "bersuit-vergarabat-el-viejo-de-arriba",
+    "title": "El viejo de arriba",
+    "artist": "Bersuit Vergarabat",
+    "video": "K3RIqyhzVZs",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 392,
+    "gap": 23767.102040816328,
+    "year": "2001",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-09-25T02:47:54.099Z",
+    "genre": "Rock Argentino",
+    "realBpm": 392,
+    "volume": 1,
+    "author": "Tongas Pla",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=tongas%20pla",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Bersuit%20Vergarabat&cancion=El%20viejo%20de%20arriba",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6438,
+    "tracksCount": 1,
+    "search": "bersuitvergarabatelviejodearriba",
     "local": false
   },
   {
@@ -28493,6 +28550,34 @@
     "shortId": 756,
     "tracksCount": 1,
     "search": "britneyspearsyoudrivemecrazy",
+    "local": false
+  },
+  {
+    "id": "brodrene-olsen-smuk-som-et-stjerneskud",
+    "title": "Smuk som et stjerneskud",
+    "artist": "Brødrene Olsen",
+    "video": "rp8ny2s2mZg",
+    "language": [
+      "Danish"
+    ],
+    "bpm": 208,
+    "gap": 19530.384615384617,
+    "year": "2000",
+    "artistOrigin": "DK",
+    "lastUpdate": "2026-09-25T02:47:53.226Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "NikNak",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6430,
+    "tracksCount": 1,
+    "search": "brodreneolsensmuksometstjerneskud",
     "local": false
   },
   {
@@ -48249,7 +48334,7 @@
     "bpm": 279.7,
     "gap": 7651.05112620665,
     "year": "2006",
-    "lastUpdate": "2026-09-24T02:30:47.384Z",
+    "lastUpdate": "2026-09-23T21:07:02.593Z",
     "genre": "Soundtrack",
     "realBpm": 140,
     "volume": 1,
@@ -49253,7 +49338,7 @@
     "bpm": 334.24,
     "gap": 14032.68549545237,
     "year": "1993",
-    "lastUpdate": "2026-09-24T02:30:48.101Z",
+    "lastUpdate": "2026-09-23T21:08:12.234Z",
     "genre": "Soundtrack",
     "realBpm": 110,
     "volume": 1,
@@ -57746,6 +57831,33 @@
     "shortId": 6156,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranscastofepicpolyphemus",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-survive",
+    "title": "Survive",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+    "video": "6GpuV9iyQYU",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 11337.5,
+    "year": "2024",
+    "lastUpdate": "2026-09-25T02:47:54.444Z",
+    "genre": "Musical",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6442,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranscastofepicsurvive",
     "local": false
   },
   {
@@ -71943,6 +72055,34 @@
     "shortId": 1816,
     "tracksCount": 1,
     "search": "gretasalomejonsineverforget",
+    "local": false
+  },
+  {
+    "id": "grimes-oblivion",
+    "title": "Oblivion",
+    "artist": "Grimes",
+    "video": "JtH68PJIQLE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 24600,
+    "year": "2012",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-09-25T02:47:53.049Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "REL",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=20479",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6429,
+    "tracksCount": 1,
+    "search": "grimesoblivion",
     "local": false
   },
   {
@@ -88853,6 +88993,33 @@
     "local": false
   },
   {
+    "id": "junior-caldera-feat-sophie-ellis-bextor-cant-fight-this-feeling",
+    "title": "Can’t Fight This Feeling",
+    "artist": "Junior Caldera feat. Sophie Ellis-Bextor",
+    "video": "xTqhdtE2XaI",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.26,
+    "gap": 13664.916881292438,
+    "year": "2010",
+    "lastUpdate": "2026-09-25T02:47:54.267Z",
+    "genre": "Disco House",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "klops_007",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6439,
+    "tracksCount": 1,
+    "search": "juniorcalderafeatsophieellisbextorcantfightthisfeeling",
+    "local": false
+  },
+  {
     "id": "junior-senior-move-your-feet",
     "title": "Move Your Feet",
     "artist": "Junior Senior",
@@ -90949,7 +91116,7 @@
     "gap": -40,
     "year": "2001",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-09-24T02:30:47.915Z",
+    "lastUpdate": "2026-09-23T21:07:53.728Z",
     "genre": "Country",
     "realBpm": 200,
     "volume": 1,
@@ -102634,6 +102801,35 @@
     "local": false
   },
   {
+    "id": "liam-payne-rita-ora-for-you-fifty-shades-freed",
+    "title": "For You (Fifty Shades Freed)",
+    "artist": "Liam Payne & Rita Ora",
+    "video": "RQUuqbzQVsY",
+    "language": [
+      "English"
+    ],
+    "bpm": 362.27,
+    "gap": 16846.26604466282,
+    "year": "2018",
+    "lastUpdate": "2026-09-25T02:47:53.403Z",
+    "genre": "Pop",
+    "realBpm": 113,
+    "previewStart": 59,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "AkaMisaki",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6432,
+    "tracksCount": 1,
+    "search": "liampayneritaoraforyoufiftyshadesfreed",
+    "local": false
+  },
+  {
     "id": "lifehouse-first-time",
     "title": "First Time",
     "artist": "Lifehouse",
@@ -105541,6 +105737,36 @@
     "local": false
   },
   {
+    "id": "lmfao-sexy-and-i-know-it",
+    "title": "Sexy And I Know It",
+    "artist": "LMFAO",
+    "video": "wyx6JDQCslE",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 11879.23076923077,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-25T02:47:53.399Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "vicktoben",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=54350",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=13095",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6431,
+    "tracksCount": 1,
+    "search": "lmfaosexyandiknowit",
+    "local": false
+  },
+  {
     "id": "lmfao-sorry-for-party-rocking",
     "title": "Sorry For Party Rocking",
     "artist": "LMFAO",
@@ -106731,6 +106957,36 @@
     "shortId": 6193,
     "tracksCount": 1,
     "search": "lospiojosbichodeciudad",
+    "local": false
+  },
+  {
+    "id": "los-rancheros-casualidad",
+    "title": "Casualidad",
+    "artist": "Los Rancheros",
+    "video": "EKTjAsCeLao",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 247.2,
+    "gap": 10022.126213592233,
+    "year": "1993",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-09-25T02:47:53.747Z",
+    "genre": "Balada",
+    "realBpm": 247.2,
+    "volume": 1,
+    "author": "pinky73",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=pinky73",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Rancheros&cancion=Casualidad",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6434,
+    "tracksCount": 1,
+    "search": "losrancheroscasualidad",
     "local": false
   },
   {
@@ -111212,7 +111468,7 @@
     "gap": 8515.29411764706,
     "year": "1998",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-09-24T02:30:48.483Z",
+    "lastUpdate": "2026-09-23T21:09:42.906Z",
     "genre": "Reggae",
     "realBpm": 340,
     "volume": 1,
@@ -120967,6 +121223,36 @@
     "local": false
   },
   {
+    "id": "momoiro-clover-z-nippon-egao-hyakkei",
+    "title": "Nippon Egao Hyakkei",
+    "artist": "Momoiro Clover Z",
+    "video": "ymP81hBZni4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 320,
+    "gap": 4914.625,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-09-25T02:47:54.441Z",
+    "genre": "Anime",
+    "realBpm": 160,
+    "previewStart": 8,
+    "previewEnd": 26,
+    "volume": 1,
+    "author": "Currymalker",
+    "duration": 96,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6441,
+    "tracksCount": 1,
+    "search": "momoirocloverznipponegaohyakkei",
+    "local": false
+  },
+  {
     "id": "momoland-bboom-bboom",
     "title": "BBoom BBoom",
     "artist": "MOMOLAND",
@@ -127319,6 +127605,36 @@
     "shortId": 6164,
     "tracksCount": 1,
     "search": "nightwishendlessformsmostbeautiful",
+    "local": false
+  },
+  {
+    "id": "nightwish-escapist",
+    "title": "Escapist",
+    "artist": "Nightwish",
+    "video": "eKuCFk1j_Io",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.08,
+    "gap": 74270.69147459039,
+    "year": "2009",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-25T02:47:53.923Z",
+    "genre": "Metal",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=15891",
+    "duration": 302,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6436,
+    "tracksCount": 1,
+    "search": "nightwishescapist",
     "local": false
   },
   {
@@ -143449,6 +143765,36 @@
     "local": false
   },
   {
+    "id": "ricardo-junior-sorriso-resplandecente",
+    "title": "Sorriso Resplandecente",
+    "artist": "Ricardo Junior",
+    "video": "3n3itDDgmQQ",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 266,
+    "gap": 4244.962406015038,
+    "year": "2002",
+    "lastUpdate": "2026-09-25T02:47:53.574Z",
+    "genre": "Anime / Pop Rock",
+    "realBpm": 266,
+    "previewStart": 4,
+    "previewEnd": 96,
+    "volume": 1,
+    "author": "Nick + ChatGPT",
+    "sourceUrl": "https://www.youtube.com/watch?v=3n3itDDgmQQ",
+    "duration": 106,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6433,
+    "tracksCount": 1,
+    "search": "ricardojuniorsorrisoresplandecente",
+    "local": false
+  },
+  {
     "id": "ricardo-murguia-cambios-extranos",
     "title": "Cambios Extraños",
     "artist": "Ricardo Murguía",
@@ -146870,6 +147216,35 @@
     "shortId": 3729,
     "tracksCount": 1,
     "search": "rosaliafeattheweekndlafama",
+    "local": false
+  },
+  {
+    "id": "rosalia-la-perla",
+    "title": "La perla",
+    "artist": "ROSALÍA",
+    "video": "GkTWxDB21cA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 200.45,
+    "gap": 3654.1888251434275,
+    "year": "2025",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-09-25T02:47:53.922Z",
+    "genre": "Latin Music",
+    "realBpm": 49,
+    "volume": 1,
+    "author": "Rosalía",
+    "sourceUrl": "https://www.youtube.com/watch?v=GkTWxDB21cA&list=RDGkTWxDB21cA&start_radio=1",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6435,
+    "tracksCount": 1,
+    "search": "rosalialaperla",
     "local": false
   },
   {
@@ -165554,7 +165929,7 @@
     "gap": 13575.074826954118,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2026-09-24T02:30:48.680Z",
+    "lastUpdate": "2026-09-23T21:10:16.923Z",
     "genre": "Folklore",
     "realBpm": 146,
     "volume": 1,
@@ -174428,6 +174803,35 @@
     "local": false
   },
   {
+    "id": "the-wanted-glad-you-came",
+    "title": "Glad You Came",
+    "artist": "The Wanted",
+    "video": "2ggzxInyzVE",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 126.06299212598424,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-09-25T02:47:54.440Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "flaur",
+    "sourceUrl": "https://www.youtube.com/watch?v=2ggzxInyzVE",
+    "duration": 203,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6440,
+    "tracksCount": 1,
+    "search": "thewantedgladyoucame",
+    "local": false
+  },
+  {
     "id": "the-weather-girls-its-raining-men",
     "title": "It’s Raining Men",
     "artist": "The Weather Girls",
@@ -179518,6 +179922,36 @@
     "shortId": 4563,
     "tracksCount": 1,
     "search": "twentyonepilotssaturday",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-shy-away",
+    "title": "Shy Away",
+    "artist": "Twenty One Pilots",
+    "video": "3sO-Y1Zbft4",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 9274.845360824742,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-25T02:47:53.047Z",
+    "genre": "Alternative",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "theecnemelc",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=136738",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24658",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6428,
+    "tracksCount": 1,
+    "search": "twentyonepilotsshyaway",
     "local": false
   },
   {
@@ -186406,6 +186840,33 @@
     "shortId": 4734,
     "tracksCount": 1,
     "search": "wirsindheldenvonhieranblind",
+    "local": false
+  },
+  {
+    "id": "wise-guys-das-saegewerk-bad-segeberg",
+    "title": "Das Sägewerk Bad Segeberg",
+    "artist": "Wise Guys",
+    "video": "jVkN2WNOnuc",
+    "language": [
+      "German"
+    ],
+    "bpm": 329.59,
+    "gap": 4798.756030219363,
+    "year": "2014",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-09-25T02:47:53.925Z",
+    "realBpm": 165,
+    "volume": 1,
+    "author": "sindbad",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6437,
+    "tracksCount": 1,
+    "search": "wiseguysdassaegewerkbadsegeberg",
     "local": false
   },
   {

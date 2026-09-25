@@ -1,0 +1,358 @@
+#ARTIST:Twenty One Pilots
+#TITLE:Shy Away
+#CREATOR:theecnemelc
+#BPM:388
+#YEAR:2021
+#VIDEO:v=3sO-Y1Zbft4
+#GENRE:Alternative
+#LANGUAGE:English
+#GAP:9274,845360824742
+#ALLKARAOKE_ID:twenty-one-pilots-shy-away
+#ALLKARAOKE_SID:6428
+#ALLKARAOKE_LASTUPDATE:2026-09-25T02:47:53.047Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136738
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=24658
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:179
+#MP3:Twenty One Pilots - Shy Away.mp3
+: 26 4 0 When 
+: 31 4 2 I 
+: 36 16 4 get 
+: 66 21 0 home
+- 87
+: 99 3 -5 You 
+: 103 4 4 bet
+: 108 5 2 ter 
+: 114 7 4 not 
+: 122 7 2 be 
+: 130 5 7 there
+- 135
+: 139 7 5 We’re 
+: 147 5 4 pla
+: 153 9 2 cin’ 
+: 163 18 2 bets 
+: 191 3 0 you 
+: 195 4 0 wo
+: 200 11 -3 ~n’t
+- 211
+: 226 17 0 Shed 
+: 244 16 2 your 
+* 261 15 4 mo
+* 277 8 2 des
+* 286 12 0 ty
+- 298
+: 313 2 -5 And 
+: 316 3 2 the 
+: 320 8 2 on
+: 329 14 0 ly 
+: 356 9 4 thing 
+: 366 1 2 to 
+: 368 10 4 leave 
+: 379 5 2 be
+: 385 5 7 hind
+- 390
+: 394 5 5 Is 
+: 400 8 4 your 
+: 409 11 2 own 
+: 421 22 -1 skin 
+: 453 13 -1 on 
+: 467 7 -3 the 
+* 475 31 0 floor
+- 506
+: 518 13 0 Don’t 
+: 532 15 2 you 
+: 548 13 2 shy 
+: 562 4 0 a
+: 567 13 0 way
+- 580 587
+- 587
+: 613 3 4 Ma
+: 617 7 4 ni
+: 625 6 2 fest 
+: 632 8 0 a 
+: 641 8 0 cei
+: 650 5 -3 ling
+- 655
+: 659 5 0 When 
+: 665 11 2 you 
+: 677 12 2 shy 
+: 690 4 0 a
+: 695 13 0 way
+- 708 713
+- 713
+: 739 5 4 Sear
+: 745 7 2 chin’ 
+: 753 7 2 for 
+: 761 8 0 that 
+: 770 7 4 fee
+: 778 4 2 lin’
+- 782
+: 786 6 2 Just 
+: 793 9 2 like 
+: 803 3 0 an 
+: 807 7 4 “I 
+: 815 7 4 love 
+: 823 13 4 you”
+- 836 840
+- 840
+: 866 4 -3 That 
+: 871 4 4 i
+: 876 6 4 sn’t 
+: 883 7 2 wo
+: 891 16 0 ~rds
+- 907
+: 925 2 -5 Like 
+: 928 3 -5 a 
+: 932 7 0 song 
+: 940 8 2 he 
+: 949 14 2 wrote,
+- 963
+: 978 3 -5 That’s 
+: 982 3 -3 ne
+: 986 3 -3 ver 
+: 990 14 -5 heard
+- 1004
+: 1029 15 0 Don’t 
+: 1045 13 2 you 
+F 1060 30 0 shh
+- 1090 1281
+- 1281
+: 1307 4 0 When 
+: 1312 4 2 you 
+: 1317 29 4 get 
+: 1347 6 0 ho
+: 1354 14 -3 ~me
+- 1368
+: 1379 3 -5 You 
+: 1383 5 4 bare
+: 1389 5 2 ly 
+: 1395 6 4 re
+: 1402 9 2 cog
+: 1412 7 7 nize 
+: 1420 6 5 the 
+: 1427 5 4 pic
+: 1433 4 2 tures
+- 1437
+: 1441 14 2 They 
+: 1458 3 -5 put 
+: 1462 4 -5 in 
+: 1467 4 -5 a 
+* 1472 17 2 frame
+- 1489
+: 1501 2 -5 ’Cause 
+: 1504 5 -5 you 
+: 1510 14 0 shed 
+: 1526 13 2 your 
+: 1542 13 4 mo
+: 1558 6 2 des
+: 1567 9 0 ty
+- 1576
+: 1590 14 0 Don’t 
+: 1606 7 0 cir
+: 1614 6 0 cle 
+: 1621 8 9 the 
+* 1630 18 7 track
+- 1648
+: 1668 9 0 Take 
+: 1678 7 0 what 
+: 1686 7 9 you 
+: 1694 11 7 hav?
+- 1705
+: 1709 6 0 And 
+: 1716 8 0 leave 
+: 1725 8 0 your 
+: 1734 8 0 skin 
+: 1743 6 -3 on 
+: 1750 4 -3 the 
+* 1755 29 -5 floor
+- 1784
+: 1797 13 0 Don’t 
+: 1811 15 2 you 
+: 1827 13 2 shy 
+: 1841 4 0 a
+: 1846 13 0 way
+- 1859 1866
+- 1866
+: 1892 3 4 Ma
+: 1896 7 4 ni
+: 1904 6 2 fest 
+: 1911 8 0 a 
+: 1920 8 0 cei
+: 1929 5 -3 ling
+- 1934
+: 1938 5 0 When 
+: 1944 11 2 you 
+: 1956 12 2 shy 
+: 1969 4 0 a
+: 1974 13 0 way
+- 1987 1992
+- 1992
+: 2018 5 4 Sear
+: 2024 7 2 chin’ 
+: 2032 7 2 for 
+: 2040 8 0 that 
+: 2049 7 4 fee
+: 2057 4 2 lin’
+- 2061
+: 2065 6 2 Just 
+: 2072 9 2 like 
+: 2082 3 0 an 
+: 2086 7 4 “I 
+: 2094 7 4 love 
+: 2102 13 4 you”
+- 2115 2119
+- 2119
+: 2145 4 -3 That 
+: 2150 4 4 i
+: 2155 6 4 sn’t 
+: 2162 7 2 wo
+: 2170 16 0 ~rds
+- 2186
+: 2204 2 -5 Like 
+: 2207 3 -5 a 
+: 2211 7 0 song 
+: 2219 8 2 he 
+: 2228 14 2 wrote
+- 2242
+: 2257 3 -5 That’s 
+: 2261 3 -3 ne
+: 2265 3 -3 ver 
+: 2269 14 -5 heard
+- 2283 2305
+- 2305
+: 2331 3 0 When 
+: 2335 4 2 I 
+* 2340 30 4 get 
+: 2371 30 0 home
+- 2401
+: 2406 4 7 Boy, 
+: 2411 7 7 you 
+: 2419 7 7 bet
+: 2427 7 4 ter 
+: 2435 7 9 not 
+: 2443 7 7 be 
+: 2451 4 7 there
+- 2455
+: 2459 6 5 You’re 
+* 2466 30 4 long 
+* 2497 29 0 gone
+- 2526
+: 2531 17 0 Shed 
+: 2549 16 2 your 
+: 2566 15 4 mo
+: 2582 8 2 des
+: 2591 12 0 ty
+- 2603
+: 2613 14 0 Don’t 
+: 2629 7 0 cir
+: 2637 6 0 cle 
+: 2644 8 9 the 
+: 2653 13 7 track
+- 2666
+: 2670 6 0 Just 
+: 2677 8 0 break 
+: 2686 8 0 the 
+: 2695 7 0 cy
+: 2703 7 0 cle 
+: 2711 7 9 in 
+: 2719 11 7 half
+- 2730
+: 2734 6 0 And 
+: 2741 8 0 leave 
+: 2750 8 0 your 
+: 2759 8 0 skin 
+: 2768 6 -3 on 
+: 2775 4 -3 the 
+: 2780 29 -5 floor
+- 2809 2860
+- 2860
+: 2886 13 0 Don’t 
+: 2900 15 2 you 
+: 2916 13 2 shy 
+: 2930 4 0 a
+: 2935 13 0 way
+- 2948 2955
+- 2955
+: 2981 3 4 Ma
+: 2985 7 4 ni
+: 2993 6 2 fest 
+: 3000 8 0 a 
+: 3009 8 0 cei
+: 3018 5 -3 ling
+- 3023
+: 3027 5 0 When 
+: 3033 11 2 you 
+: 3045 12 2 shy 
+: 3058 4 0 a
+: 3063 13 0 way
+- 3076 3081
+- 3081
+: 3107 5 4 Sear
+: 3113 7 2 chin’ 
+: 3121 7 2 for 
+: 3129 8 0 that 
+: 3138 7 4 fee
+: 3146 4 2 lin’
+- 3150
+: 3154 6 2 Just 
+: 3161 9 2 like 
+: 3171 3 0 an 
+: 3175 7 4 “I 
+: 3183 7 4 love 
+: 3191 13 4 you”
+- 3204 3208
+- 3208
+: 3234 4 -3 That 
+: 3239 4 4 i
+: 3244 6 4 sn’t 
+: 3251 7 2 wo
+: 3259 16 0 ~rds
+- 3275
+: 3293 2 -5 Like 
+: 3296 3 -5 a 
+: 3300 7 0 song 
+: 3308 8 2 he 
+: 3317 14 2 wrote
+- 3331
+: 3346 3 -5 That’s 
+: 3350 3 -3 ne
+: 3354 3 -3 ver 
+: 3358 14 -5 heard
+- 3372 3386
+- 3386
+: 3412 3 -5 That’s 
+: 3416 3 -1 ne
+: 3420 3 -3 ver 
+: 3424 14 -5 heard
+- 3438 3658
+- 3658
+: 3684 2 4 An 
+: 3687 4 4 “I 
+: 3692 10 4 love 
+: 3703 17 4 you”
+- 3720
+: 3746 4 -3 That 
+: 3751 4 5 i
+: 3756 6 4 sn’t 
+: 3763 7 2 wo
+: 3771 16 0 ~rds
+- 3787
+: 3805 2 -5 Like 
+: 3808 3 -5 a 
+: 3812 7 0 song 
+: 3820 8 2 he 
+: 3829 14 2 wrote
+- 3843
+: 3858 3 -5 That’s 
+: 3862 3 -3 ne
+: 3866 3 -3 ver 
+: 3870 14 -5 heard
+- 3884
+: 3910 13 0 Don’t 
+: 3924 15 2 you 
+: 3940 13 2 shy 
+: 3954 4 0 a
+: 3959 13 0 way
+E

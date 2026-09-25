@@ -1,0 +1,311 @@
+#ARTIST:Ricardo Junior
+#TITLE:Sorriso Resplandecente
+#CREATOR:Nick + ChatGPT
+#BPM:266
+#YEAR:2002
+#PREVIEWSTART:4
+#VIDEO:v=3n3itDDgmQQ
+#GENRE:Anime / Pop Rock
+#LANGUAGE:Portuguese
+#GAP:4244,962406015038
+#ALLKARAOKE_ID:ricardo-junior-sorriso-resplandecente
+#ALLKARAOKE_SID:6433
+#ALLKARAOKE_LASTUPDATE:2026-09-25T02:47:53.574Z
+#ALLKARAOKE_REALBPM:266
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=3n3itDDgmQQ
+#ALLKARAOKE_PREVIEWEND:96
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:106
+#SOURCE:https://www.youtube.com/watch?v=3n3itDDgmQQ
+#COMMENT:Mapa completo da versão curta de TV presente no vídeo vinculado.
+#COMMENT:#BPM:266 usa a grade dobrada da gravação (andamento musical aproximado: 133 BPM).
+#COMMENT:A segunda estrofe da letra completa não existe neste vídeo de 1:46 e não foi incluída.
+: 18 6 7 Seu 
+: 26 6 7 sor
+: 34 3 4 ri
+: 38 3 5 so 
+: 42 3 7 é 
+: 46 3 9 tão 
+: 50 3 7 res
+: 54 3 5 plan
+: 58 3 5 de
+: 62 3 4 cen
+: 66 3 4 te
+: 70 3 2 ~
+: 74 5 2 ~
+- 79
+: 82 6 4 Que 
+: 90 6 4 dei
+: 98 3 0 xou 
+: 102 2 2 meu 
+: 106 3 4 co
+: 110 3 5 ra
+: 114 3 4 ção
+: 118 3 2 ~ 
+: 122 3 2 a
+: 126 3 0 le
+: 130 3 0 ~
+: 134 3 -1 gre
+: 138 5 -1 ~
+- 143
+: 154 3 -3 Me 
+: 158 3 -3 dê
+: 162 5 0 ~ 
+: 170 3 7 a
+: 174 3 9 ~ 
+: 178 13 7 mão
+: 194 4 0 ~
+- 198
+: 202 3 2 Pra 
+: 206 3 4 fu
+: 210 7 5 gir 
+: 218 3 4 des
+: 222 3 2 ta 
+: 226 6 2 ter
+: 234 3 0 rí
+: 238 3 2 ~
+: 242 8 2 vel
+- 250
+: 258 3 0 Es
+: 262 3 0 cu
+: 266 7 -1 ri
+: 274 51 0 dão
+- 325 396
+- 396
+: 414 3 -2 Des
+: 418 3 0 de 
+: 422 3 0 o 
+: 426 3 0 di
+: 430 3 0 a 
+: 434 3 0 em 
+: 438 3 0 que 
+: 442 3 -2 eu 
+: 446 3 -4 te 
+: 450 3 -4 re
+: 454 3 -2 en
+: 458 5 0 con
+: 466 5 -2 trei
+- 471
+: 478 3 -9 Me 
+: 482 3 -2 lem
+: 486 3 -2 brei 
+: 490 3 -2 da
+: 494 3 -2 que
+: 498 3 -2 le 
+: 502 3 -2 lin
+: 506 3 -4 do 
+: 510 9 -5 lu
+: 520 9 -2 gar
+: 530 6 -4 ~
+- 536
+: 542 2 -12 Que 
+: 546 4 -4 na 
+: 553 3 -4 mi
+: 557 4 -4 nha 
+: 562 3 -5 in
+: 566 4 -5 fân
+: 574 3 -7 cia 
+: 578 3 -5 e
+: 582 3 -5 ra
+- 585
+: 586 3 -7 Es
+: 590 3 -7 pe
+: 594 7 -7 ci
+: 602 7 -7 al 
+: 610 3 -9 pa
+: 614 7 -7 ra 
+: 622 3 -7 mim
+: 626 8 -5 ~
+- 634
+: 646 6 -4 Que
+: 654 3 -2 ro 
+: 658 7 0 sa
+: 670 3 -2 ber
+- 673
+: 674 3 0 Se 
+: 678 4 0 co
+: 685 3 0 mi
+: 689 3 0 go 
+: 693 3 0 vo
+: 698 3 -2 cê 
+: 702 7 -4 quer 
+: 710 3 -2 vir 
+: 714 7 0 dan
+: 722 5 -2 çar
+- 727
+: 734 3 -2 Se 
+: 738 5 -2 me 
+: 744 4 0 der 
+: 750 3 2 a 
+: 754 3 2 mão 
+: 758 3 2 eu 
+: 762 5 3 te 
+: 770 6 -2 le
+: 777 4 -4 va
+: 782 4 -5 rei
+: 787 12 -4 ~
+- 799
+: 806 3 -4 Por 
+: 810 3 -2 um 
+: 814 3 -4 ca
+: 818 3 -5 mi
+: 822 4 -5 nho, 
+: 830 7 -5 chei
+: 838 7 7 o 
+: 846 3 5 de 
+: 850 15 5 som
+: 866 3 5 bras 
+: 870 3 3 e 
+: 874 3 2 de 
+: 878 10 3 luz
+- 888
+: 898 3 0 Vo
+: 902 3 0 cê 
+: 906 3 2 po
+: 910 3 2 de 
+: 914 3 3 a
+: 918 4 3 té 
+: 926 3 2 não 
+: 930 8 3 per
+: 942 3 2 ce
+: 946 8 3 ber
+- 954
+: 958 3 0 Mas 
+: 962 3 5 o 
+: 966 3 3 meu 
+: 970 3 2 co
+: 974 3 0 ra
+: 978 3 0 ção 
+: 982 3 -2 se 
+: 990 3 -5 a
+: 994 3 -2 mar
+: 998 3 -2 rou 
+: 1006 3 -5 em 
+: 1010 2 -2 vo
+: 1012 1 -2 cê
+- 1013
+: 1014 3 -2 Que 
+: 1018 3 -5 pre
+: 1022 3 -5 ci
+: 1026 5 -2 sa 
+: 1032 5 0 de 
+: 1038 3 2 al
+: 1042 5 3 guém
+: 1048 5 2 ~
+: 1054 3 3 ~
+: 1058 8 0 ~
+- 1066
+: 1074 4 3 Pra 
+: 1080 5 2 te 
+: 1086 3 3 mos
+: 1090 3 0 trar 
+: 1094 3 0 o 
+: 1098 3 7 a
+: 1102 3 5 mor 
+: 1106 8 5 que 
+: 1118 3 5 o 
+: 1122 3 5 mun
+: 1126 3 3 do 
+: 1130 3 5 te 
+: 1134 3 5 dá
+: 1138 24 7 ~
+- 1162
+: 1170 6 7 Meu 
+: 1178 6 7 a
+: 1186 3 4 le
+: 1190 3 5 gre 
+: 1194 3 7 co
+: 1198 3 9 ra
+: 1202 3 7 ção
+: 1206 3 5 ~ 
+: 1210 3 5 pal
+: 1214 3 4 pi
+: 1218 3 4 ta
+: 1222 3 2 ~
+: 1226 5 2 ~
+- 1231
+: 1234 6 4 Por 
+: 1242 6 4 um 
+: 1250 3 0 u
+: 1254 3 2 ni
+: 1258 3 4 ver
+: 1262 3 5 so 
+: 1266 3 4 de 
+: 1270 3 2 es
+: 1274 3 2 pe
+: 1278 3 0 ran
+: 1282 3 0 ça
+: 1286 3 -1 ~
+: 1290 5 -1 ~
+- 1295
+: 1306 3 -3 Me 
+: 1310 3 -3 dê
+: 1314 6 0 ~ 
+: 1322 6 9 a 
+: 1330 7 7 mão
+: 1338 3 7 ~
+: 1342 7 0 ~
+- 1349
+: 1354 3 2 A 
+: 1358 3 4 ma
+: 1362 7 5 gi
+: 1370 7 4 a 
+: 1378 7 2 nos 
+: 1386 3 0 es
+: 1390 3 2 pe
+: 1394 11 4 ra
+: 1406 1 5 ~
+: 1408 1 4 ~
+: 1410 8 2 ~
+- 1418
+: 1426 6 7 Vou 
+: 1434 6 7 te 
+: 1442 3 4 a
+: 1446 3 5 mar 
+: 1450 3 7 por 
+: 1454 3 9 to
+: 1458 3 7 da 
+: 1462 3 5 a 
+: 1466 3 5 mi
+: 1470 3 4 nha 
+: 1474 3 4 vi
+: 1478 3 2 da
+: 1482 5 2 ~
+- 1487
+: 1490 6 4 Vem 
+: 1498 6 4 co
+: 1506 3 0 mi
+: 1510 3 2 go 
+: 1514 3 4 por 
+: 1518 3 5 es
+: 1522 3 4 te 
+: 1526 3 2 ca
+: 1530 3 2 mi
+: 1534 3 0 nho
+: 1538 3 0 ~
+: 1542 3 -1 ~
+: 1546 5 -1 ~
+- 1551
+: 1562 3 -3 Me 
+: 1566 3 -3 dê
+: 1570 5 0 ~ 
+: 1578 3 7 a
+: 1582 3 9 ~ 
+: 1586 13 7 mão
+: 1602 4 0 ~
+- 1606
+: 1610 3 2 Pra 
+: 1614 3 4 fu
+: 1618 7 5 gir 
+: 1626 3 4 des
+: 1630 3 2 ta 
+: 1634 6 2 ter
+: 1642 3 0 rí
+: 1646 3 2 ~
+: 1650 8 2 vel
+- 1658
+: 1666 3 0 Es
+: 1670 3 0 cu
+: 1674 7 -1 ri
+: 1682 64 0 dão
+E

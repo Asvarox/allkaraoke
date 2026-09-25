@@ -1,0 +1,406 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)
+#TITLE:Survive
+#CREATOR:b888arb
+#BPM:400
+#YEAR:2024
+#VIDEO:v=6GpuV9iyQYU
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:11337,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-cast-of-epic-survive
+#ALLKARAOKE_SID:6442
+#ALLKARAOKE_LASTUPDATE:2026-09-25T02:47:54.444Z
+#ALLKARAOKE_REALBPM:178
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:196
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Survive.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Survive [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Survive [BG].jpg
+: 27 3 3 My 
+: 36 3 2 bro
+: 41 4 0 thers
+- 45
+: 71 2 4 The 
+: 76 3 2 rest 
+: 84 1 0 of 
+: 89 2 2 our 
+: 97 5 5 fleet
+- 102
+: 112 3 3 They 
+: 119 3 2 wait 
+: 125 1 0 at 
+: 132 1 2 the 
+: 138 5 5 beach
+- 143
+: 156 2 3 And 
+: 160 1 2 if 
+: 168 2 0 we’re 
+: 173 1 2 de
+: 180 5 5 fea
+: 187 3 3 ted, 
+: 193 4 2 they’re 
+: 201 3 0 good
+: 205 7 2 ~ 
+: 213 3 3 as 
+: 223 6 0 dead
+- 229
+: 253 4 2 Straight 
+: 259 1 3 a
+: 264 5 0 head,
+- 269
+: 285 3 -5 That 
+: 292 1 -8 is 
+: 298 4 -4 who 
+: 305 4 -2 we’re 
+: 316 4 -5 figh
+: 322 2 -7 ting
+- 324 335
+- 335
+: 362 2 3 No 
+: 369 3 2 back
+: 376 2 0 up,
+- 378
+: 402 3 3 No 
+: 411 3 2 chance 
+: 419 2 0 for 
+: 425 1 3 sup
+: 430 5 5 port
+- 435
+: 446 2 3 So 
+: 453 5 2 draw 
+: 460 2 0 out 
+: 466 2 2 your 
+: 474 5 5 swords
+- 479
+: 487 1 3 Our 
+: 494 3 2 foe 
+: 500 2 0 must 
+: 507 1 2 be 
+: 512 7 5 thwar
+: 520 3 3 ted 
+: 527 3 2 right 
+: 539 8 2 here 
+: 549 2 3 and 
+: 556 7 0 now
+- 563
+: 585 3 2 Show 
+: 591 4 3 me, 
+: 599 1 0 how
+: 601 1 -1 ~
+: 603 3 0 ~
+- 606
+: 615 8 7 Great 
+: 626 2 7 is 
+: 633 3 7 your 
+: 640 3 7 will 
+: 647 2 7 to 
+: 654 3 7 sur
+: 660 29 7 vive?
+- 689
+: 713 4 0 Six 
+: 723 7 2 hun
+: 734 4 3 dred 
+: 742 10 7 lives
+: 753 2 5 ~ 
+: 759 1 5 at 
+: 766 18 5 stake,
+- 784
+: 796 3 2 It’s 
+: 807 3 3 just 
+: 817 4 5 one 
+: 826 12 8 life 
+: 842 1 6 to 
+: 848 17 7 take
+- 865
+: 880 2 7 And 
+: 889 5 7 when 
+: 899 7 7 we 
+: 911 2 6 kill
+: 914 4 7 ~ 
+: 920 4 8 him, 
+: 931 9 5 then 
+: 942 6 3 our 
+: 954 10 3 jour
+: 965 5 2 ~
+: 973 3 2 ney’s
+: 977 1 3 ~
+: 979 1 2 ~
+: 981 1 3 ~
+: 983 3 2 ~
+- 986
+: 995 12 0 O
+: 1008 4 -1 ~
+: 1015 8 -1 ver
+: 1024 1 0 ~
+: 1026 3 -1 ~
+- 1029
+: 1046 6 0 No 
+: 1057 9 2 dy
+: 1067 7 3 ing 
+: 1076 10 7 on
+: 1087 1 6 ~
+: 1089 1 5 ~ 
+: 1094 3 5 me 
+: 1098 9 5 now,
+: 1108 1 6 ~
+: 1110 1 5 ~
+: 1112 1 4 ~
+: 1114 1 5 ~
+- 1115
+: 1130 5 2 De
+: 1139 1 4 feat
+: 1141 2 3 ~
+: 1144 1 2 ~
+: 1146 3 3 ~ 
+: 1150 4 5 is 
+: 1160 15 8 not 
+: 1177 1 7 al
+: 1183 9 7 lowed
+: 1193 3 5 ~
+- 1196
+: 1212 7 7 We 
+: 1222 5 7 must 
+: 1233 5 7 live 
+: 1246 7 7 through 
+: 1255 5 8 this 
+: 1265 4 5 day
+- 1269
+: 1276 3 3 So 
+: 1286 1 8 fight,
+: 1288 4 7 ~ 
+: 1307 1 8 fight,
+: 1309 4 7 ~ 
+: 1327 29 7 fight
+- 1356 1507
+- 1507
+: 1534 1 4 Sur
+: 1536 1 3 ~
+: 1538 1 3 round
+: 1540 1 2 ~ 
+: 1549 1 2 him!
+- 1550
+R 1553 2 4 Sur
+R 1557 5 5 round 
+R 1566 2 4 him!
+- 1568
+: 1573 1 3 At
+: 1580 2 2 tack 
+: 1587 2 0 from 
+: 1593 2 2 be
+: 1599 6 5 hind,
+- 1605
+: 1614 2 3 Keep 
+: 1621 2 3 dis
+: 1627 3 0 tance 
+: 1636 2 2 in 
+: 1641 7 5 mind
+- 1648
+: 1654 1 3 And 
+: 1664 2 2 stay 
+: 1670 1 0 in 
+: 1676 1 2 his 
+: 1682 4 5 blind
+: 1692 4 3 spot 
+: 1697 1 2 and 
+: 1705 3 0 strike
+: 1709 1 1 ~
+: 1711 1 2 ~
+: 1713 1 1 ~
+: 1715 1 2 ~ 
+: 1719 2 3 his 
+: 1726 1 1 heels
+: 1728 12 0 ~
+- 1740
+R 1752 3 -1 Strike 
+R 1760 2 -1 the 
+R 1769 4 -1 heels!
+- 1773
+: 1788 2 7 Show 
+: 1794 2 5 him 
+: 1801 2 7 that 
+: 1808 5 10 we’re 
+: 1819 3 7 dead
+: 1826 2 5 ly
+- 1828 1836
+- 1836
+: 1863 2 8 Ex
+: 1871 1 7 haust
+: 1873 1 6 ~ 
+: 1882 2 3 him
+- 1884
+: 1907 2 7 Don’t 
+: 1914 2 7 let 
+: 1919 3 5 him 
+: 1926 1 7 get 
+: 1933 5 8 close,
+- 1938
+: 1948 2 7 He’s 
+: 1955 4 7 strong 
+: 1963 2 5 but 
+: 1968 2 7 he’s 
+: 1975 7 8 slow
+- 1982
+: 1992 1 7 He 
+: 1996 1 8 can’t
+: 1998 2 7 ~ 
+: 2003 4 5 land 
+: 2011 1 7 a 
+: 2015 1 8 blow
+: 2017 1 9 ~
+: 2019 3 8 ~ 
+: 2026 1 7 if 
+: 2032 2 5 we’re 
+: 2038 2 3 out
+: 2041 9 5 ~ 
+: 2053 1 3 of 
+: 2060 6 0 reach
+- 2066
+: 2086 3 5 Find 
+: 2093 1 3 a 
+: 2100 7 0 breach
+- 2107
+: 2122 3 7 Stand 
+: 2129 2 7 up 
+: 2135 1 7 and 
+: 2141 4 7 fight 
+: 2149 4 10 for 
+: 2156 3 8 your 
+: 2163 30 7 lives
+- 2193
+R 2215 4 -10 Six 
+R 2226 4 -10 hun
+R 2237 3 -8 dred 
+R 2248 9 -5 lives 
+R 2262 1 -7 at 
+R 2270 13 -7 stake
+- 2283
+R 2299 3 -10 It’s 
+R 2309 4 -9 just 
+R 2319 5 -7 one 
+R 2335 4 -4 life 
+R 2345 1 -5 to 
+R 2350 15 -5 take
+- 2365
+R 2382 4 -5 And 
+R 2392 7 -5 when 
+R 2402 7 -5 we 
+R 2415 6 -5 kill 
+R 2425 5 -4 him 
+R 2435 7 -7 then 
+R 2445 5 -9 our 
+R 2457 12 -9 jour
+R 2470 6 -10 ~
+R 2478 14 -10 ney’s 
+R 2494 1 -10 is 
+R 2499 16 -10 o
+R 2519 4 -10 ver
+- 2523
+: 2529 4 7 Push 
+: 2538 3 10 for
+: 2542 1 11 ~
+* 2544 61 12 ~
+: 2606 1 11 ~
+: 2608 5 10 ~
+: 2614 1 9 ~
+: 2616 4 8 ~
+: 2621 16 7 ~
+: 2638 1 6 ~
+: 2640 14 5 ~
+: 2655 4 5 ward!
+- 2659 3269
+- 3269
+R 3296 2 -4 Cap
+R 3305 3 -4 tain?
+- 3308
+R 3330 5 -5 E
+R 3336 6 -5 nough
+- 3342 3439
+- 3439
+R 3466 2 -8 He’s 
+R 3471 1 -10 got 
+R 3473 1 -7 a 
+R 3481 3 -4 club
+- 3484
+R 3506 3 -9 He’s 
+R 3512 2 -9 got 
+R 3515 1 -9 a 
+R 3523 15 -9 Clu-
+- 3538 3566
+- 3566
+R 3593 1 -6 What 
+R 3596 1 -6 are 
+R 3598 1 -6 our 
+R 3602 3 -5 or
+R 3607 2 -5 ders?
+- 3609 3621
+- 3621
+R 3648 1 -6 Cap
+R 3653 1 -6 tain?
+- 3654 3661
+- 3661
+R 3688 2 -6 Cap
+R 3694 9 -5 ta-
+- 3703 3932
+- 3932
+R 3959 5 -7 You’ve 
+R 3971 4 -7 hurt 
+R 3979 7 -7 me 
+R 3990 5 -7 e
+R 4000 6 -7 nough
+- 4006 4025
+- 4025
+R 4052 2 -8 Six 
+R 4061 4 -10 hun
+R 4070 5 -9 dred 
+R 4081 8 -5 lives 
+R 4095 3 -12 I’ll 
+R 4103 15 -12 take
+- 4118
+R 4134 5 -10 Six 
+R 4144 3 -9 hun
+R 4153 3 -7 dred 
+R 4169 6 -12 lives 
+R 4180 2 -5 I’ll 
+R 4190 12 -12 break
+- 4202
+R 4219 2 -12 And 
+R 4230 5 -12 when 
+R 4239 7 -12 I 
+R 4251 2 -12 kill 
+R 4262 3 -12 you 
+R 4272 4 -7 then 
+R 4283 6 -9 my
+- 4289
+R 4297 9 -9 Pain
+R 4307 4 -10 ~ 
+R 4314 9 -10 is
+R 4324 2 -9 ~
+R 4327 2 -10 ~ 
+R 4334 19 -12 o
+R 4354 9 -12 ver
+R 4364 5 -12 ~
+- 4369
+R 4387 3 7 You’re 
+R 4395 8 -10 dy
+R 4406 6 -9 ing 
+R 4416 11 -12 here 
+R 4430 2 -12 and 
+R 4439 13 -12 now
+- 4452
+R 4467 3 -12 Es
+R 4479 5 -9 cape 
+R 4489 4 -10 is 
+R 4498 15 -10 not 
+R 4516 3 -10 al
+R 4520 18 -10 lowed
+- 4538
+R 4554 3 -12 You 
+R 4561 5 -12 won’t 
+R 4570 7 -12 live 
+R 4580 8 -12 through 
+R 4590 6 -4 this 
+R 4602 6 -12 day, 
+R 4612 7 -12 now 
+R 4623 37 -12 die, 
+R 4668 18 -12 di-
+E
