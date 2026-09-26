@@ -1,5 +1,6 @@
 import { onRequest as unverifiedSongBrowserAdminOnRequest } from '../functions/admin/unverified-song';
 import { onRequest as unverifiedSongsBrowserAdminOnRequest } from '../functions/admin/unverified-songs';
+import { onRequest as phDataOnRequest } from '../functions/ph-data/[[catchall]]';
 import { onRequest as proxyOnRequest } from '../functions/proxy';
 import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
 import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
@@ -110,6 +111,13 @@ export default {
 
     if (pathname === '/proxy') {
       return callPagesHandler(proxyOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/ph-data' || pathname.startsWith('/ph-data/')) {
+      const catchallPath = pathname.slice('/ph-data'.length).split('/').filter(Boolean);
+      return callPagesHandler(phDataOnRequest as PagesLikeHandler, request, env, executionContext, {
+        catchall: catchallPath,
+      });
     }
 
     return new Response('Not found', { status: 404 });
