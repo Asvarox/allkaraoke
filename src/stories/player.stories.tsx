@@ -96,4 +96,6 @@ type Story = StoryObj<typeof Test>;
 export const GameSingingPlayerStory = {
   // @ts-expect-error to be fixed
   render: (args) => <Test {...args} />,
+  // Plays the song live on mount, so no two screenshots of it are the same
+  tags: ['no-screenshot'],
 } satisfies Story;

@@ -3,6 +3,7 @@ import { Meta, StoryFn } from '@storybook/react-vite';
 import { Button } from '~/modules/elements/akui/button';
 import { HelpEntry } from '~/routes/keyboard-help/context';
 import { ControlDescriptor } from '~/routes/keyboard-help/controls';
+import { withAppBackground } from '~/stories/app-background';
 
 import { MirrorKeyboard } from './keyboard';
 import { MicPillShell } from './volume-indicator';
@@ -10,6 +11,8 @@ import { MicPillShell } from './volume-indicator';
 export default {
   title: 'Game/Remote Mic/Mirror Keyboard',
   component: MirrorKeyboard,
+  decorators: [withAppBackground],
+  parameters: { layout: 'fullscreen' },
 } as Meta;
 
 const buttonControls = (count: number): ControlDescriptor[] =>
