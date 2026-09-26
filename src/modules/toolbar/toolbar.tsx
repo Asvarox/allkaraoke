@@ -16,7 +16,11 @@ const toolbarStyle: ViewTransitionStyle = {
   viewTransitionName: 'toolbar',
 };
 
-function Toolbar({ children }: PropsWithChildren) {
+interface Props extends PropsWithChildren {
+  connectPhone?: boolean;
+}
+
+function Toolbar({ children, connectPhone = true }: Props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
   const { hasContent } = useContext(KeyboardHelpContext);
@@ -25,7 +29,7 @@ function Toolbar({ children }: PropsWithChildren) {
 
   return (
     <>
-      <QRCodeModal closeModal={closeModal} open={isModalOpen} />
+      {connectPhone && <QRCodeModal closeModal={closeModal} open={isModalOpen} />}
       <div
         className="text-default z-toolbar fixed top-0 right-0 m-0 flex cursor-pointer items-center gap-1 pt-2 pr-2"
         style={toolbarStyle}>
@@ -44,16 +48,18 @@ function Toolbar({ children }: PropsWithChildren) {
           </Tooltip>
         )}
         <FullscreenButton size={{ xs: 'mini', sm: 'small' }} />
-        <Tooltip title="Connect phone" place="bottom-end">
-          <Button
-            size={{ xs: 'mini', sm: 'small' }}
-            type="button"
-            aria-label="Connect phone"
-            onClick={() => setIsModalOpen((current) => !current)}
-            leftIcon={<Icon icon="ic:baseline-qr-code-2" />}
-            data-test="quick-connect-phone"
-          />
-        </Tooltip>
+        {connectPhone && (
+          <Tooltip title="Connect phone" place="bottom-end">
+            <Button
+              size={{ xs: 'mini', sm: 'small' }}
+              type="button"
+              aria-label="Connect phone"
+              onClick={() => setIsModalOpen((current) => !current)}
+              leftIcon={<Icon icon="ic:baseline-qr-code-2" />}
+              data-test="quick-connect-phone"
+            />
+          </Tooltip>
+        )}
       </div>
     </>
   );

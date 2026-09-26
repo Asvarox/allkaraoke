@@ -6,7 +6,7 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { useBackground } from '~/modules/elements/background-context';
-import MenuWithLogo from '~/modules/elements/menu-with-logo';
+import Logo from '~/modules/elements/logo';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useBreakpoint from '~/modules/hooks/use-breakpoint';
@@ -21,11 +21,12 @@ import {
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_MIN_PLAYERS } from '~/modules/online/protocol/consts';
 import { OnlineRoomState, SongHoverPreview, SongVote } from '~/modules/online/protocol/types';
+import LayoutGame from '~/routes/layout-game';
 import { SongUpload } from '~/routes/online/hooks/use-song-upload';
 import ChatPanel from '~/routes/online/lobby/chat-panel';
 import CustomizeModal from '~/routes/online/lobby/customize-modal';
 import LobbySongCard from '~/routes/online/lobby/lobby-song-card';
-import ParticipantList from '~/routes/online/lobby/participant-list';
+import RoomLeaderboard from '~/routes/online/lobby/room-leaderboard';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -54,20 +55,26 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   // Disabled while the customize modal owns the keyboard — otherwise Enter presses there would also
   // trigger the lobby's remembered actions. The confirmations (leave, kick) pause this on their own.
   //
-  // Spatial rather than vertical since the chat sits beside the card: registration order alone
-  // would put it after "Leave room" at the bottom of the list, so reaching it would mean arrowing
-  // down past the way out. With spatial navigation it is simply to the right of everything, which
-  // is where it is drawn.
+  // Spatial rather than vertical since the panels sit side by side: registration order alone would
+  // chain them one after another, so arrowing would jump between columns rather than move to the
+  // control drawn next to the current one.
   const { register } = useKeyboardNav({
     enabled: !customizeOpen,
     direction: 'horizontal-vertical',
   });
 
-  // The chat is one component in one of two places, never both: beside the card where there is
-  // room for it, inside the card where there isn't. Rendering both and hiding one with CSS would
-  // run two of everything behind it — two subscriptions, two histories, two notification sounds.
+  // Chat and standings are each rendered once — a column of their own where there is room, inside
+  // the card where there isn't. Two hidden copies would mean two subscriptions, histories, sounds.
   const breakpoint = useBreakpoint();
   const chatBesideCard = breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === '2xl';
+  const leaderboardBesideCard = breakpoint === 'xl' || breakpoint === '2xl';
+
+  // Standings, song, chat in roughly thirds. Whole class names, as Tailwind only sees literal ones.
+  const columns = leaderboardBesideCard
+    ? 'grid-cols-[minmax(0,33fr)_minmax(0,39fr)_minmax(0,28fr)]'
+    : chatBesideCard
+      ? 'grid-cols-[minmax(0,64fr)_minmax(0,36fr)]'
+      : 'grid-cols-1';
   const chat = <ChatPanel register={register} inline={!chatBesideCard} />;
 
   const hostSongPreview = useOnlineSongPreview();
@@ -109,6 +116,63 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
     navigate('online/', { room: null });
   };
 
+  // Sits next to the room code, wherever the lobby has put it at this width
+  const leaveButton = (
+    <ConfirmModal
+      title="Leave the room?"
+      description={
+        isHost
+          ? 'The room stays open and another singer takes over as host.'
+          : "You'll need the room code to come back."
+      }
+      onConfirm={leaveRoom}
+      dataTestPrefix="online-leave-confirm"
+      cancelButton={<ConfirmModal.CancelButton name="stay-in-room">Stay in the room</ConfirmModal.CancelButton>}
+      confirmButton={<ConfirmModal.ConfirmButton name="confirm-leave-room">Leave room</ConfirmModal.ConfirmButton>}>
+      {(openLeaveConfirm) => {
+        const {
+          focused,
+          $keyboardNavigationChangeFocus: _changeFocus,
+          ...navProps
+        } = register('leave-room', openLeaveConfirm, 'Leave room') as ReturnType<typeof register> & {
+          $keyboardNavigationChangeFocus?: unknown;
+        };
+        // The song preview's mobile back link, so leaving reads as going back rather than as an action
+        return (
+          <button
+            type="button"
+            {...navProps}
+            className={cn(
+              'text-active flex shrink-0 cursor-pointer items-center rounded-md transition-colors hover:opacity-80',
+              focused && 'subtle-focus -m-1 p-1',
+            )}
+            aria-label="Leave room"
+            title="Leave room"
+            data-test="leave-room-button">
+            {/* Sized with the heading beside it */}
+            <Icon icon="ic:baseline-arrow-back" className="text-xl max-lg:text-lg" />
+          </button>
+        );
+      }}
+    </ConfirmModal>
+  );
+
+  const leaderboard = (
+    <RoomLeaderboard
+      roomCode={roomCode}
+      roomState={roomState}
+      selfId={selfId}
+      register={register}
+      onEdit={() => setCustomizeOpen(true)}
+      inline={!leaderboardBesideCard}
+      back={leaveButton}
+    />
+  );
+
+  // Always the host for now — the room has no picker rotation yet
+  const picker = roomState.participants.find((participant) => participant.id === roomState.hostId);
+  const pickerName = picker === undefined ? null : picker.id === selfId ? 'You' : picker.name;
+
   // A room of one is a solo the singer could have on this device for free, while the room server
   // bills for every minute of it — so a lone host is offered local mode instead of a start. The
   // room enforces the same rule; this only saves the round trip and points at the way out.
@@ -124,168 +188,176 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   };
 
   return (
-    // Same card as the expanded song preview — width, background and padding included
-    <MenuWithLogo
-      sidePanel={chatBesideCard ? chat : undefined}
-      className={cn(
-        dialogSurface,
-        'sm:min-h-[72vh] sm:max-w-[min(90vw,72rem)] lg:max-w-[min(90vw,72rem)] 2xl:max-w-[min(90vw,72rem)]',
-      )}
-      data-test="online-lobby">
-      <LobbySongCard
-        preview={headerPreview}
-        roomCode={roomCode}
-        onChooseSong={isHost && !roomState.chart && upload.state !== 'uploading' ? onChooseSong : undefined}
-        footer={
-          <>
-            <Menu.Divider className="mb-4" />
+    // Full-screen like the main menu rather than a centred card: the side panels need that width
+    <LayoutGame connectPhone={false}>
+      {/* The main menu's frame, except `h-dvh` from `lg` — where this screen gains its second column */}
+      <div className="flex min-h-dvh w-screen flex-col gap-4 p-4 max-lg:gap-3 max-lg:p-3 lg:h-dvh xl:gap-6 xl:p-6">
+        {/* `pr-32` leaves room for the app-wide `Toolbar` fixed to this corner (see `layout-game.tsx`) */}
+        <header className="flex shrink-0 items-center justify-between gap-6 pr-32">
+          {/* The logo is sized in `em`: capped, and proportional to the viewport below that */}
+          <div className="text-[min(13vw,5.25rem)]">
+            <Logo />
+          </div>
+        </header>
 
-            {/* The same split the expanded song preview uses for its settings row: singers on
-                the left where the mic check sits, the actions on the right. */}
-            <SongPreviewLayout.Split
-              aside={
-                <ParticipantList roomState={roomState} selfId={selfId} onEdit={() => setCustomizeOpen(true)} canKick />
-              }>
-              {(!roomState.chart || !song || songError) && (
-                <Menu.HelpText data-test="online-selected-song">
-                  {!roomState.chart
-                    ? isHost
-                      ? 'Pick a song to get the party going.'
-                      : hostSongPreview
-                        ? 'The host is browsing — let them know what you think.'
-                        : 'Waiting for the host to pick a song…'
-                    : songError
-                      ? `The song failed to load: ${songError}`
-                      : 'Loading the song…'}
-                </Menu.HelpText>
-              )}
+        {/* The explicit row bounds the panels — an implicit one grows with a full room's standings
+            instead of letting them scroll */}
+        <div className={cn('grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)] gap-4 xl:gap-6', columns)}>
+          {leaderboardBesideCard && leaderboard}
 
-              {/* Singers can react to whatever is on screen — the song the host is browsing and the
-                  one they settled on, so the host can still be talked out of it */}
-              {!isHost && hostSongPreview && (
-                <Menu.ButtonGroup className="w-full gap-2">
-                  {/* The vote is what a singer's lobby is for — leaving isn't, so the focus lands
-                      here as soon as there's something to vote on */}
-                  <Menu.Button
-                    {...register('online-vote-up', () => voteSong('up'), undefined, true)}
-                    size="small"
-                    className={`flex-1 ${myVote === 'up' ? '' : 'opacity-60'}`}
-                    data-test="online-vote-up">
-                    <Icon icon="ic:baseline-thumb-up" size={5} className="mr-1" />
-                    Sing it!
-                  </Menu.Button>
-                  <Menu.Button
-                    {...register('online-vote-down', () => voteSong('down'))}
-                    size="small"
-                    className={`flex-1 ${myVote === 'down' ? '' : 'opacity-60'}`}
-                    data-test="online-vote-down">
-                    <Icon icon="ic:baseline-thumb-down" size={5} className="mr-1" />
-                    Rather not
-                  </Menu.Button>
-                </Menu.ButtonGroup>
-              )}
+          <Menu
+            // The grid sizes the card, so every breakpoint's `max-w` from `MenuContainer` is lifted
+            className={cn(
+              dialogSurface,
+              // `min-h-0` keeps content from stretching the grid item past its row; `justify-start`
+              // because centred overflowing content can't be scrolled back to its top
+              'h-full min-h-0 w-full max-w-none justify-start overflow-x-hidden overflow-y-auto sm:max-w-none lg:max-w-none 2xl:max-w-none',
+            )}
+            data-test="online-lobby">
+            <LobbySongCard
+              preview={headerPreview}
+              // Beside the card, the standings panel carries the invite
+              roomCode={leaderboardBesideCard ? undefined : roomCode}
+              back={leaderboardBesideCard ? undefined : leaveButton}
+              pickerName={pickerName}
+              picked={roomState.chart !== null}
+              onChooseSong={isHost && !roomState.chart && upload.state !== 'uploading' ? onChooseSong : undefined}
+              footer={
+                <>
+                  <Menu.Divider className="mb-4" />
 
-              {isHost && (
-                <Menu.Button
-                  {...register('choose-song', onChooseSong, undefined, !roomState.chart)}
-                  disabled={upload.state === 'uploading'}
-                  size={roomState.chart ? 'small' : undefined}
-                  data-test="choose-song-button">
-                  {upload.state === 'uploading'
-                    ? 'Transferring song…'
-                    : roomState.chart
-                      ? 'Change song'
-                      : 'Choose song'}
-                </Menu.Button>
-              )}
-              {(upload.state === 'error' || startError) && (
-                <Menu.HelpText data-test="online-upload-error">
-                  {upload.state === 'error'
-                    ? `Song transfer failed: ${upload.error}`
-                    : `Failed to start: ${startError}`}
-                </Menu.HelpText>
-              )}
+                  {/* Folded into the card, the standings take its full width — a table needs more than 2/5 */}
+                  {!leaderboardBesideCard && (
+                    <>
+                      {leaderboard}
+                      <Menu.Divider className="my-4" />
+                    </>
+                  )}
 
-              {/* The host's call alone — everyone else confirms they're ready once the song
-                  screen is up and the video has loaded */}
-              {isHost && isAlone && (
-                <Menu.HelpText data-test="online-needs-more-singers">
-                  {`Online takes at least ${ONLINE_MIN_PLAYERS} singers — share the room code above, or sing on your own in local mode.`}
-                </Menu.HelpText>
-              )}
+                  <SongPreviewLayout.Split>
+                    {(!roomState.chart || !song || songError) && (
+                      <Menu.HelpText data-test="online-selected-song">
+                        {!roomState.chart
+                          ? isHost
+                            ? 'Pick a song to get the party going.'
+                            : hostSongPreview
+                              ? 'The host is browsing — let them know what you think.'
+                              : 'Waiting for the host to pick a song…'
+                          : songError
+                            ? `The song failed to load: ${songError}`
+                            : 'Loading the song…'}
+                      </Menu.HelpText>
+                    )}
 
-              {isHost &&
-                roomState.chart &&
-                song &&
-                (isAlone ? (
-                  <ConfirmModal
-                    title="Sing on your own?"
-                    description="You're the only one in the room, and online mode is for singing together. Local mode has the same songs on this device — or stay and wait for someone to join."
-                    onConfirm={singLocally}
-                    dataTestPrefix="online-solo"
-                    cancelButton={
-                      <ConfirmModal.CancelButton name="keep-waiting">Wait for singers</ConfirmModal.CancelButton>
-                    }
-                    confirmButton={
-                      <ConfirmModal.ConfirmButton name="sing-locally">Sing in local mode</ConfirmModal.ConfirmButton>
-                    }>
-                    {(openSoloPrompt) => (
+                    {/* Singers can react to whatever is on screen — the song the host is browsing and the
+                        one they settled on, so the host can still be talked out of it */}
+                    {!isHost && hostSongPreview && (
+                      <Menu.ButtonGroup className="w-full gap-1">
+                        {/* The vote is what a singer's lobby is for — leaving isn't, so the focus lands
+                            here as soon as there's something to vote on */}
+                        <Menu.Button
+                          {...register('online-vote-up', () => voteSong('up'), undefined, true)}
+                          size="small"
+                          className={`flex-1 ${myVote === 'up' ? '' : 'opacity-60'}`}
+                          data-test="online-vote-up">
+                          <Icon icon="ic:baseline-thumb-up" size={5} className="mr-1" />
+                          Sing it!
+                        </Menu.Button>
+                        <Menu.Button
+                          {...register('online-vote-down', () => voteSong('down'))}
+                          size="small"
+                          className={`flex-1 ${myVote === 'down' ? '' : 'opacity-60'}`}
+                          data-test="online-vote-down">
+                          <Icon icon="ic:baseline-thumb-down" size={5} className="mr-1" />
+                          Rather not
+                        </Menu.Button>
+                      </Menu.ButtonGroup>
+                    )}
+
+                    {isHost && (
                       <Menu.Button
-                        {...register('start-song', openSoloPrompt, undefined, true)}
-                        data-test="online-start-song-button"
-                        disabled={!self?.connected || upload.state === 'uploading'}>
-                        Start the song!
+                        {...register('choose-song', onChooseSong, undefined, !roomState.chart)}
+                        disabled={upload.state === 'uploading'}
+                        size={roomState.chart ? 'small' : undefined}
+                        data-test="choose-song-button">
+                        {upload.state === 'uploading'
+                          ? 'Transferring song…'
+                          : roomState.chart
+                            ? 'Change song'
+                            : 'Choose song'}
                       </Menu.Button>
                     )}
-                  </ConfirmModal>
-                ) : (
-                  <Menu.Button
-                    {...register('start-song', startGame, undefined, true)}
-                    data-test="online-start-song-button"
-                    disabled={!self?.connected || upload.state === 'uploading' || starting}>
-                    {starting ? 'Starting…' : 'Start the song!'}
-                  </Menu.Button>
-                ))}
-              {!isHost && roomState.chart && song && (
-                <Menu.HelpText data-test="online-waiting-for-start">
-                  Waiting for the host to start the song…
-                </Menu.HelpText>
-              )}
+                    {(upload.state === 'error' || startError) && (
+                      <Menu.HelpText data-test="online-upload-error">
+                        {upload.state === 'error'
+                          ? `Song transfer failed: ${upload.error}`
+                          : `Failed to start: ${startError}`}
+                      </Menu.HelpText>
+                    )}
 
-              {/* Last in the list — leaving is the way out, not something to hit by accident */}
-              <Menu.Divider className="mt-1" />
-              <ConfirmModal
-                title="Leave the room?"
-                description={
-                  isHost
-                    ? 'The room stays open and another singer takes over as host.'
-                    : "You'll need the room code to come back."
-                }
-                onConfirm={leaveRoom}
-                dataTestPrefix="online-leave-confirm"
-                cancelButton={
-                  <ConfirmModal.CancelButton name="stay-in-room">Stay in the room</ConfirmModal.CancelButton>
-                }
-                confirmButton={
-                  <ConfirmModal.ConfirmButton name="confirm-leave-room">Leave room</ConfirmModal.ConfirmButton>
-                }>
-                {(openLeaveConfirm) => (
-                  <Menu.Button {...register('leave-room', openLeaveConfirm)} size="small" data-test="leave-room-button">
-                    Leave room
-                  </Menu.Button>
-                )}
-              </ConfirmModal>
+                    {/* The host's call alone — everyone else confirms they're ready once the song
+                        screen is up and the video has loaded */}
+                    {isHost && isAlone && (
+                      <Menu.HelpText data-test="online-needs-more-singers">
+                        {`Online takes at least ${ONLINE_MIN_PLAYERS} singers — share the room code above, or sing on your own in local mode.`}
+                      </Menu.HelpText>
+                    )}
 
-              {!chatBesideCard && (
-                <>
-                  <Menu.Divider className="mt-1" />
-                  {chat}
+                    {isHost &&
+                      roomState.chart &&
+                      song &&
+                      (isAlone ? (
+                        <ConfirmModal
+                          title="Sing on your own?"
+                          description="You're the only one in the room, and online mode is for singing together. Local mode has the same songs on this device — or stay and wait for someone to join."
+                          onConfirm={singLocally}
+                          dataTestPrefix="online-solo"
+                          cancelButton={
+                            <ConfirmModal.CancelButton name="keep-waiting">Wait for singers</ConfirmModal.CancelButton>
+                          }
+                          confirmButton={
+                            <ConfirmModal.ConfirmButton name="sing-locally">
+                              Sing in local mode
+                            </ConfirmModal.ConfirmButton>
+                          }>
+                          {(openSoloPrompt) => (
+                            <Menu.Button
+                              {...register('start-song', openSoloPrompt, undefined, true)}
+                              data-test="online-start-song-button"
+                              disabled={!self?.connected || upload.state === 'uploading'}>
+                              Start the song!
+                            </Menu.Button>
+                          )}
+                        </ConfirmModal>
+                      ) : (
+                        <Menu.Button
+                          {...register('start-song', startGame, undefined, true)}
+                          data-test="online-start-song-button"
+                          disabled={!self?.connected || upload.state === 'uploading' || starting}>
+                          {starting ? 'Starting…' : 'Start the song!'}
+                        </Menu.Button>
+                      ))}
+                    {!isHost && roomState.chart && song && (
+                      <Menu.HelpText data-test="online-waiting-for-start">
+                        Waiting for the host to start the song…
+                      </Menu.HelpText>
+                    )}
+
+                    {!chatBesideCard && (
+                      <>
+                        <Menu.Divider className="mt-1" />
+                        {chat}
+                      </>
+                    )}
+                  </SongPreviewLayout.Split>
                 </>
-              )}
-            </SongPreviewLayout.Split>
-          </>
-        }
-      />
+              }
+            />
+          </Menu>
+
+          {chatBesideCard && chat}
+        </div>
+      </div>
 
       <CustomizeModal
         open={customizeOpen}
@@ -293,7 +365,7 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
         self={self}
         participants={roomState.participants}
       />
-    </MenuWithLogo>
+    </LayoutGame>
   );
 }
 

@@ -203,6 +203,18 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await expect(pages.onlineLobbyPage.startSongButton).not.toBeVisible();
   });
 
+  await test.step('The standings kept the song that was just sung, on both tabs', async () => {
+    // Both singers were on the leaderboard, so both come back with a score rather than the dash a
+    // singer who has not sung yet shows. The actual number is whatever the fake mic managed.
+    await expect(pages.onlineLobbyPage.scoreTabElement).toHaveAttribute('data-tab', 'session');
+    await expect(pages.onlineLobbyPage.participantScoreElement(0)).not.toHaveText('—');
+    await expect(pages.onlineLobbyPage.participantScoreElement(1)).not.toHaveText('—');
+
+    await pages.onlineLobbyPage.selectScoreTab('last-song');
+    await expect(pages.onlineLobbyPage.scoreTabElement).toHaveAttribute('data-tab', 'last-song');
+    await expect(pages.onlineLobbyPage.participantScoreElement(0)).not.toHaveText('—');
+  });
+
   await test.step('Leaving the room takes a confirmation', async () => {
     await guestPages.onlineLobbyPage.leaveRoomAndCancel();
     await guestPages.onlineLobbyPage.expectToBeVisible();

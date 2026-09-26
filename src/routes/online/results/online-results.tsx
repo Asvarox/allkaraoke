@@ -51,7 +51,7 @@ function OnlineResults({ roomState, song }: Props) {
   );
 
   return (
-    <LayoutGame>
+    <LayoutGame connectPhone={false}>
       <PostGameView
         song={song}
         width={width}

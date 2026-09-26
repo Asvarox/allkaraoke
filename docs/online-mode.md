@@ -179,6 +179,39 @@ participant the room has not placed yet, and no participant it has placed somewh
 host's own id included, which is the case the slot map cannot cover, since the host joins over the
 loopback and never occupies a slot.
 
+## Room standings
+
+A room keeps two different scoreboards, and they answer different questions.
+
+`leaderboard` is the song in progress: a sorted list of live scores each singer publishes once a
+second, rebuilt from scratch at `startReadiness` and wiped on the way back to the lobby. It is what
+the in-game overlay draws, and it is gone by the time the next song starts.
+
+`roomScores` is the evening: `{ total, lastSong }` per participant id, and it survives the songs.
+`enterResults` banks the finished song into it (`bankSongScores`), reading the score off
+`leaderboard` rather than recomputing it from `finalResults` — each client publishes its final score
+immediately before its detailed one, and `forceResults` falls back to the same place, so the banked
+number is the one everyone watched climb. It also keeps the room from having to interpret
+`WireDetailedScore`, which this protocol deliberately treats as opaque.
+
+Three consequences worth knowing:
+
+- **A song somebody sat out empties their `lastSong`, and leaves their `total` alone.** The map is
+  rebuilt on every bank rather than added to, so a singer who walked in halfway through the song —
+  in the room, never in its leaderboard — shows a dash in the last-song column instead of somebody
+  else's stale number.
+- **A song ended before it was sung banks nothing.** The host can end the game during the readiness
+  check, which still goes through `enterResults`; banking only out of `singing` keeps that song's
+  all-zero leaderboard from overwriting everybody's `lastSong`.
+- **Leaving for good resets the score.** `removeParticipant` drops the standings row with the seat,
+  so a singer who runs out their reconnect grace comes back to zero. A refresh does not: the grace
+  window is exactly what tells the two apart. The lobby's panel lists singers from `participants`,
+  never from `roomScores`, which is what makes somebody who left disappear from the board rather
+  than lingering on it with a frozen score.
+
+The standings are persisted with the rest of the snapshot, so a host takeover or a hibernation wake
+does not reset the party's running totals — see `LatePersistedField` for why the field is optional.
+
 ## Host succession
 
 Every client watches the host's heartbeat. Silence for `ONLINE_HOST_STALL_MS` means the host is

@@ -13,6 +13,10 @@ Last updated: 2026-08-18
 - **vibrato** — Pitch oscillation detected on a `playerNote`, contributing a bonus.
 - **perfect** — Hit accuracy category used in the detailed score breakdown.
 
+- **room standings** — Per-room scoreboard in online mode (`roomScores`), kept across the songs of one room and shown in the lobby. Separate from both the local high scores and the global leaderboard.
+- **session score** — A singer's running total across every song they have finished in the room. Resets when they leave for good, not when they reconnect.
+- **last-song score** — The same singer's score in the most recently finished song, or empty when they sat that one out.
+
 ## Global Leaderboard
 
 - **global leaderboard** — Public board of the best scores from the last 14 days, shown on the main menu. Separate from the per-song local high scores. Opt-in per score; online (multiplayer room) games are excluded. See `docs/leaderboard.md`.

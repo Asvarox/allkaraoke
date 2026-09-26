@@ -35,6 +35,7 @@ import {
   OnlineRoomState,
   OnlineSubscriptionChannels,
   PlayersStats,
+  RoomScores,
   SongHoverPreview,
   SongVote,
   SongVotes,
@@ -53,7 +54,8 @@ type LatePersistedField =
   | 'playbackAnchor'
   | 'pause'
   | 'resumeCountdownEndsAt'
-  | 'finishRequestedAt';
+  | 'finishRequestedAt'
+  | 'roomScores';
 
 /**
  * The hibernation payload, derived from `OnlineRoomLogic.snapshot()` so the type cannot drift
@@ -102,6 +104,8 @@ export class OnlineRoomLogic {
   private pause: OnlineRoomState['pause'] = null;
   private resumeCountdownEndsAt: number | null = null;
   private leaderboard: OnlineRoomState['leaderboard'] = [];
+  /** Standings across every song of this room — see `bankSongScores`. */
+  private roomScores: RoomScores = {};
   private finalResults: OnlineFinalResult[] | null = null;
   private lastActivityAt: number;
   private bannedIds: string[] = [];
@@ -164,6 +168,7 @@ export class OnlineRoomLogic {
       this.chartData = restoreFrom.chartData;
       this.chartPreview = restoreFrom.chartPreview ?? null;
       this.leaderboard = restoreFrom.leaderboard;
+      this.roomScores = restoreFrom.roomScores ?? {};
       this.finalResults = restoreFrom.finalResults;
       this.lastActivityAt = restoreFrom.lastActivityAt;
       this.bannedIds = restoreFrom.bannedIds ?? [];
@@ -319,6 +324,7 @@ export class OnlineRoomLogic {
     resumeCountdownEndsAt: this.resumeCountdownEndsAt,
     finishRequestedAt: this.finishRequestedAt,
     leaderboard: [...this.leaderboard],
+    roomScores: { ...this.roomScores },
     finalResults: this.finalResults ? [...this.finalResults] : null,
     hostEpoch: this.deps.hostEpoch?.() ?? 0,
   });
@@ -344,6 +350,8 @@ export class OnlineRoomLogic {
     /** Preview (video/details) of the selected chart, shown in every lobby. */
     chartPreview: this.chartPreview,
     leaderboard: this.leaderboard,
+    /** Persisted so a takeover or a hibernation wake doesn't reset the running totals. */
+    roomScores: this.roomScores,
     finalResults: this.finalResults,
     lastActivityAt: this.lastActivityAt,
     /** Participants kicked by the host — they cannot rejoin this room. */
@@ -542,6 +550,8 @@ export class OnlineRoomLogic {
     this.clearWake(`grace:${id}`);
     this.participants = this.participants.filter((other) => other.id !== id);
     this.leaderboard = this.leaderboard.filter((entry) => entry.participantId !== id);
+    // Leaving for good resets the score — whoever takes the seat next is a different singer
+    delete this.roomScores[id];
     delete this.songVotes[id];
     delete this.playerStats[id];
     delete this.playback[id];
@@ -713,7 +723,24 @@ export class OnlineRoomLogic {
     }
   };
 
+  /** Adds the finished song to the room's standings, read off the leaderboard everyone watched.
+   * Rebuilt rather than added to, so `lastSong` empties for anyone the song passed by. */
+  private bankSongScores = () => {
+    const banked: RoomScores = {};
+    this.participants.forEach((participant) => {
+      const previous = this.roomScores[participant.id];
+      const entry = this.leaderboard.find((other) => other.participantId === participant.id);
+      const lastSong = entry ? entry.score : null;
+      // Nothing to remember yet for someone who has sung neither this song nor an earlier one.
+      if (lastSong === null && previous === undefined) return;
+      banked[participant.id] = { total: (previous?.total ?? 0) + (lastSong ?? 0), lastSong };
+    });
+    this.roomScores = banked;
+  };
+
   private enterResults = () => {
+    // A song ended during readiness was never sung — its all-zero leaderboard is not a result
+    if (this.phase === 'singing') this.bankSongScores();
     this.phase = 'results';
     // The readiness deadline/timer are left standing — results can be entered straight out of
     // readiness (a forced end) and this transition has never cleared them. The timer is inert
