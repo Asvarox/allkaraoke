@@ -140,7 +140,7 @@ var isUnverifiedSongUpdate = (payload) => {
 	const update = payload;
 	return typeof update.songId === "string" && typeof update.songTxt === "string" && typeof update.artist === "string" && typeof update.title === "string" && Array.isArray(update.language) && update.language.every((language) => typeof language === "string") && typeof update.videoId === "string";
 };
-var onRequest$5 = async ({ request, env }) => {
+var onRequest$6 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
@@ -177,7 +177,7 @@ var onRequest$5 = async ({ request, env }) => {
 };
 //#endregion
 //#region functions/admin/unverified-songs.ts
-var onRequest$4 = async ({ request, env }) => {
+var onRequest$5 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
@@ -216,6 +216,33 @@ var onRequest$4 = async ({ request, env }) => {
 			headers: responseHeaders$3
 		});
 	}
+};
+//#endregion
+//#region functions/ph-data/[[catchall]].ts
+var API_HOST = "eu.i.posthog.com";
+var ASSET_HOST = "eu-assets.i.posthog.com";
+async function handleRequest(context) {
+	const url = new URL(context.request.url);
+	const pathname = context.params.catchall.join("/");
+	const pathWithParams = pathname + url.search;
+	if (pathname.startsWith("/static/")) return retrieveStatic(context, pathWithParams);
+	else return forwardRequest(context, pathWithParams);
+}
+async function retrieveStatic({ request, waitUntil }, pathname) {
+	let response = await caches.default.match(request);
+	if (!response) {
+		response = await fetch(`https://${ASSET_HOST}/${pathname}`);
+		waitUntil(caches.default.put(request, response.clone()));
+	}
+	return response;
+}
+async function forwardRequest({ request }, pathWithSearch) {
+	const originRequest = new Request(request);
+	originRequest.headers.delete("cookie");
+	return await fetch(`https://${API_HOST}/${pathWithSearch}`, originRequest);
+}
+var onRequest$4 = (context) => {
+	return handleRequest(context);
 };
 //#endregion
 //#region functions/proxy.ts
@@ -3304,12 +3331,13 @@ var worker_entry_default = { async fetch(request, env, executionContext) {
 	if (pathname === "/unverified-songs" || pathname === "/shared-songs") return callPagesHandler(onRequest$1, request, env, executionContext);
 	if (pathname === "/unverified-song" || pathname === "/shared-song") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/unverified-songs-admin" || pathname === "/shared-songs-admin") return callPagesHandler(onRequest, request, env, executionContext);
-	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$4, request, env, executionContext);
-	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$5, request, env, executionContext);
+	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$5, request, env, executionContext);
+	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$6, request, env, executionContext);
 	if (pathname === "/leaderboard") return request.method === "GET" ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
 	if (pathname === "/leaderboard-song") return handleSongLeaderboardRead(request, env);
 	if (pathname === "/leaderboard-admin") return handleLeaderboardAdmin(request, env);
 	if (pathname === "/proxy") return callPagesHandler(onRequest$3, request, env, executionContext);
+	if (pathname === "/ph-data" || pathname.startsWith("/ph-data/")) return callPagesHandler(onRequest$4, request, env, executionContext, { catchall: pathname.slice(8).split("/").filter(Boolean) });
 	return new Response("Not found", { status: 404 });
 } };
 //#endregion
