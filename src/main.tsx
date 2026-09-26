@@ -30,8 +30,7 @@ import songStats from '~/routes/landing-page/song-stats.json';
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
     // debug: true,
-    api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
-    ui_host: 'https://eu.posthog.com',
+    api_host: '/ph-data',
     before_send: (event) => {
       if (event?.event === '$exception') {
         const exceptionList = (event.properties?.['$exception_list'] ?? []) as { $exception_message?: string }[];
