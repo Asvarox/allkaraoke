@@ -35,10 +35,11 @@ export interface GalleryMeta {
 const escapeHtml = (value: string) =>
   value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-function cell(entry: GalleryEntry, file: string, present: boolean, label: string): string {
-  if (!present) return '<td class="cell empty">—</td>';
+function thumbnail(entry: GalleryEntry, file: string, present: boolean, label: string): string {
+  const caption = `<figcaption>${label}</figcaption>`;
+  if (!present) return `<figure>${caption}<div class="empty">—</div></figure>`;
   const src = `${entry.index}/${file}`;
-  return `<td class="cell"><a href="${src}" target="_blank" rel="noreferrer"><img src="${src}" alt="${escapeHtml(`${label} ${entry.name}`)}" loading="lazy" /></a></td>`;
+  return `<figure>${caption}<a href="${src}" target="_blank" rel="noreferrer"><img src="${src}" alt="${escapeHtml(`${label} ${entry.name}`)}" loading="lazy" /></a></figure>`;
 }
 
 function statusLabel(entry: GalleryEntry): string {
@@ -56,9 +57,12 @@ function row(entry: GalleryEntry): string {
   return [
     `<tr id="snapshot-${entry.index}">`,
     `<td class="meta"><a class="name" href="#snapshot-${entry.index}">${escapeHtml(entry.name)}</a><code class="path">${escapeHtml(entry.path)}</code>${statusLabel(entry)}</td>`,
-    cell(entry, 'old.png', entry.hasOld, 'Old'),
-    cell(entry, 'new.png', entry.hasNew, 'New'),
-    cell(entry, 'diff.png', entry.hasDiff, 'Diff'),
+    // One cell for all three, so they sit next to each other rather than spread across the table
+    '<td class="thumbnails"><div class="thumbnails-row">',
+    thumbnail(entry, 'old.png', entry.hasOld, 'Old'),
+    thumbnail(entry, 'new.png', entry.hasNew, 'New'),
+    thumbnail(entry, 'diff.png', entry.hasDiff, 'Diff'),
+    '</div></td>',
     '</tr>',
   ].join('');
 }
@@ -77,15 +81,17 @@ header a { color: inherit; }
 .filters input { flex: 1 1 260px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); color: inherit; }
 .filters label { color: var(--muted); display: flex; gap: 6px; align-items: center; }
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
-/* Fixed layout: old, new and diff always share the row equally, whatever the size of the images or thumbnails */
-table { border-collapse: collapse; width: 100%; min-width: 720px; table-layout: fixed; }
-col.meta-col { width: 240px; }
+table { border-collapse: collapse; width: 100%; }
 thead th { position: sticky; top: 0; background: var(--panel); text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); z-index: 1; }
 tbody tr + tr { border-top: 1px solid var(--border); }
 td { padding: 12px; vertical-align: top; }
-td.cell { text-align: center; }
-td.cell img { display: block; margin: 0 auto; width: 100%; max-width: var(--thumb, 320px); height: auto; border: 1px solid var(--border); border-radius: 4px; background: var(--panel); }
-td.empty { color: var(--muted); }
+td.meta { min-width: 220px; max-width: 320px; }
+td.thumbnails { width: 100%; }
+.thumbnails-row { display: flex; justify-content: center; align-items: flex-start; gap: 12px; }
+.thumbnails figure { margin: 0; flex: 0 1 var(--thumb, 320px); min-width: 0; }
+.thumbnails figcaption { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 4px; }
+.thumbnails img { display: block; width: 100%; border: 1px solid var(--border); border-radius: 4px; background: var(--panel); }
+.thumbnails .empty { color: var(--muted); text-align: center; padding: 24px 0; border: 1px dashed var(--border); border-radius: 4px; }
 .name { display: block; font-weight: 600; word-break: break-word; color: inherit; text-decoration: none; }
 .path { display: block; color: var(--muted); font-size: 11px; word-break: break-all; margin: 4px 0 8px; }
 .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--border); }
@@ -129,8 +135,7 @@ export function renderGalleryHtml(entries: GalleryEntry[], meta: GalleryMeta): s
           '<label>Thumbnail size <input id="size" type="range" min="120" max="900" value="320" /></label>',
           '</div>',
           '<div class="table-wrap"><table>',
-          '<colgroup><col class="meta-col" /><col /><col /><col /></colgroup>',
-          '<thead><tr><th>Snapshot</th><th>Old</th><th>New</th><th>Diff</th></tr></thead>',
+          '<thead><tr><th>Snapshot</th><th>Old / New / Diff</th></tr></thead>',
           '<tbody>',
           ...entries.map((entry) =>
             row(entry).replace('<tr ', `<tr data-search="${escapeHtml(`${entry.name} ${entry.path}`.toLowerCase())}" `),
