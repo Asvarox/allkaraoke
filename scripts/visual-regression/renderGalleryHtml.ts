@@ -77,13 +77,14 @@ header a { color: inherit; }
 .filters input { flex: 1 1 260px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); color: inherit; }
 .filters label { color: var(--muted); display: flex; gap: 6px; align-items: center; }
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
-table { border-collapse: collapse; width: 100%; }
+/* Fixed layout: old, new and diff always share the row equally, whatever the size of the images or thumbnails */
+table { border-collapse: collapse; width: 100%; min-width: 720px; table-layout: fixed; }
+col.meta-col { width: 240px; }
 thead th { position: sticky; top: 0; background: var(--panel); text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); z-index: 1; }
 tbody tr + tr { border-top: 1px solid var(--border); }
 td { padding: 12px; vertical-align: top; }
-td.meta { min-width: 220px; max-width: 320px; }
 td.cell { text-align: center; }
-td.cell img { max-width: 100%; width: var(--thumb, 320px); border: 1px solid var(--border); border-radius: 4px; background: var(--panel); }
+td.cell img { display: block; margin: 0 auto; width: 100%; max-width: var(--thumb, 320px); height: auto; border: 1px solid var(--border); border-radius: 4px; background: var(--panel); }
 td.empty { color: var(--muted); }
 .name { display: block; font-weight: 600; word-break: break-word; color: inherit; text-decoration: none; }
 .path { display: block; color: var(--muted); font-size: 11px; word-break: break-all; margin: 4px 0 8px; }
@@ -128,6 +129,7 @@ export function renderGalleryHtml(entries: GalleryEntry[], meta: GalleryMeta): s
           '<label>Thumbnail size <input id="size" type="range" min="120" max="900" value="320" /></label>',
           '</div>',
           '<div class="table-wrap"><table>',
+          '<colgroup><col class="meta-col" /><col /><col /><col /></colgroup>',
           '<thead><tr><th>Snapshot</th><th>Old</th><th>New</th><th>Diff</th></tr></thead>',
           '<tbody>',
           ...entries.map((entry) =>

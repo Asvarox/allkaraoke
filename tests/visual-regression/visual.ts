@@ -101,6 +101,27 @@ export const withElementsHidden = async (targetPage: Page, locators: Locator[], 
   }
 };
 
+/**
+ * Waits for every icon to be drawn. Icons (`<iconify-icon>`) fetch their SVG from the Iconify API at
+ * runtime, and only render while on screen - so a full-page capture would lose the ones below the fold.
+ * `stopObserver` is the element's own switch for rendering regardless of visibility.
+ */
+export const waitForIcons = async (targetPage: Page) => {
+  await targetPage.evaluate(() =>
+    document
+      .querySelectorAll<HTMLElement & { stopObserver?: () => void }>('iconify-icon')
+      .forEach((icon) => icon.stopObserver?.()),
+  );
+  await targetPage.waitForFunction(
+    () =>
+      Array.from(document.querySelectorAll('iconify-icon')).every((icon) =>
+        icon.shadowRoot?.querySelector('svg, span'),
+      ),
+    undefined,
+    { timeout: 15_000 },
+  );
+};
+
 /** Takes the network and timing out of what a page renders. Call before navigating. */
 export const stabilizePage = async (page: Page) => {
   // Song cards show a real YouTube thumbnail (i3.ytimg.com); serving a fixed local image instead
@@ -165,6 +186,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
 
           // `extraMasks` are the caller-supplied volatile regions, e.g. the remote mic's live ping
           // counter; HIDDEN_SELECTORS covers the ones every screen shares.
+          await waitForIcons(targetPage);
           await withElementsHidden(targetPage, extraMasks, async () => {
             await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
               ...(locator ? {} : { fullPage: true }),
