@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import { SongPreview } from '~/interfaces';
-import { trackOnlineSongSelected } from '~/modules/online/client/online-analytics';
 import { loadSongForUpload, uploadSongToRoom } from '~/modules/online/client/song-transfer';
 
 /** Transfers the host's pick to the room. Owned above the lobby ↔ song-browser switch: the browser
@@ -16,7 +15,6 @@ export default function useSongUpload() {
     try {
       const fullSong = await loadSongForUpload(song);
       await uploadSongToRoom(fullSong, tolerance, difficulty);
-      trackOnlineSongSelected(song.id, song.artist, song.title);
       setState('idle');
     } catch (uploadError) {
       setState('error');

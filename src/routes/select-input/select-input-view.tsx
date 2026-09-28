@@ -1,4 +1,3 @@
-import posthog from 'posthog-js';
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { ValuesType } from 'utility-types';
@@ -59,7 +58,6 @@ function SelectInputView({ onFinish, closeButtonText, onBack, skipText, smooth =
 
     if (pref) {
       storage.local.setItem(LAST_SELECTED_KEY, pref);
-      posthog.capture('sourcePreferenceSet', { source: pref });
     }
 
     onFinish?.(pref);

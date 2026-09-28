@@ -99,14 +99,10 @@ export const events = {
   micMonitoringStopped: new GameEvent('micMonitoringStopped'),
   playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: PlayerNumber | null) => void>(
     'playerChangeRequested',
-    true,
   ),
 
   songStatStored: new GameEvent<(key: string, stats: SongStats) => void>('songStatStored'),
-  songScoreUpdated: new GameEvent<(key: string, stats: SongStats, newName: string) => void>(
-    'songScoreUpdated',
-    () => undefined,
-  ),
+  songScoreUpdated: new GameEvent<(key: string, stats: SongStats, newName: string) => void>('songScoreUpdated'),
 
   remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
   // A mirrored control was tapped directly on the remote mic; `name` matches a useKeyboardNav register() name.

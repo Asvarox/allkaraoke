@@ -69,7 +69,8 @@ pnpm start:mock      # Offline mode with dummy video
 pnpm test            # Unit tests (Vitest)
 pnpm e2e             # E2E against dev server
 pnpm e2e:prod        # E2E against production build
-pnpm lint            # ESLint
+pnpm lint            # Lint (oxlint)
+pnpm format          # Format (oxfmt)
 pnpm storybook       # Component stories
 ```
 
