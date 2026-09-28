@@ -88,9 +88,6 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
     } finally {
       setIsSubmitting(false);
     }
-
-    // Never the name or the country — this event is analytics, the board is the only place identity goes
-    posthog.capture('leaderboardSubmitted', { songId: song.id, score: topPlayer.score });
   };
 
   /**
@@ -101,7 +98,6 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
   const acceptFromModal = () => {
     setIsPromptDismissed(true);
     setSharingDecision('always');
-    posthog.capture('leaderboardOptedIn', { songId: song.id, score });
   };
 
   /** Closing the prompt any way at all — the button, Backspace, the backdrop — declines for good. */

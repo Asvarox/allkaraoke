@@ -51,18 +51,6 @@ export const trackOnlineSongEnded = (roomState: OnlineRoomState, song: Song) => 
   });
 };
 
-export const trackOnlineRoomConnectAttempt = (
-  action: 'create' | 'join',
-  result: 'success' | 'failed',
-  reason?: string,
-) => {
-  posthog.capture('onlineRoomConnect', { action, result, reason });
-};
-
-export const trackOnlineSongSelected = (songId: string, artist: string, title: string) => {
-  posthog.capture('onlineSongSelected', { songId, artist, title });
-};
-
 export const trackOnlineDriftSeek = (songId: string, driftMs: number) => {
   posthog.capture('onlineDriftSeek', { songId, driftMs: Math.round(driftMs) });
 };
@@ -113,5 +101,8 @@ export const trackOnlinePing = throttle(({ ping, roomCode, roomMode, isLoopbackH
  * rough read on whether the 200-character cap is anywhere near being a constraint.
  */
 export const trackOnlineChatMessageSent = (roomCode: string, length: number) => {
-  posthog.capture('onlineChatMessageSent', { roomCodeHash: hashRoomCode(roomCode), length });
+  posthog.capture('onlineChatMessageSent', {
+    roomCodeHash: hashRoomCode(roomCode),
+    length,
+  });
 };

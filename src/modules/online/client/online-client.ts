@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
-import { trackOnlinePing, trackOnlineRoomConnectAttempt } from '~/modules/online/client/online-analytics';
+import { trackOnlinePing } from '~/modules/online/client/online-analytics';
 import { OnlineRoomMode, roomModeOf } from '~/modules/online/client/room-mode';
 import { createRoomConnection } from '~/modules/online/client/transport/create-room-connection';
 import {
@@ -89,7 +89,9 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private shouldReconnect = false;
   private reconnectAttempts = 0;
   private clockOffsetMs = 0;
-  private pingPong = new PingPongTracker({ onMeasurement: (ping) => this.reportPing(ping) });
+  private pingPong = new PingPongTracker({
+    onMeasurement: (ping) => this.reportPing(ping),
+  });
 
   /** Feeds the ping loop's measurements to analytics. Reads the mode, the loopback flag and the
    * data plane at report time rather than at connect time: a host takeover flips `getIsHosting()`
@@ -174,20 +176,8 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   /** True while the room's authority is running in this tab. */
   public getIsHosting = () => this.host !== null;
 
-  // Tracks the outcome of the current connect() call once, whichever of 'connected'/'rejected'
-  // is reached first — reconnects after that (dropped connection, retries) aren't new attempts.
-  private hasTrackedConnectAttempt = false;
-
   private setStatus = (status: OnlineConnectionStatus, detail?: string) => {
     this.status = status;
-    if (!this.hasTrackedConnectAttempt && (status === 'connected' || status === 'rejected')) {
-      this.hasTrackedConnectAttempt = true;
-      trackOnlineRoomConnectAttempt(
-        this.createRoom ? 'create' : 'join',
-        status === 'connected' ? 'success' : 'failed',
-        detail,
-      );
-    }
     this.onUpdate(status, detail);
   };
 
@@ -204,7 +194,6 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     // transport, and the code is the one thing they are all guaranteed to share.
     this.mode = roomModeOf(normalizedRoomCode);
     this.shouldReconnect = true;
-    this.hasTrackedConnectAttempt = false;
     this.hasRotatedIdentity = false;
     this.reconnectAttempts = 0;
     void this.open(false);
@@ -539,7 +528,12 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       return;
     }
 
-    const membership: SfuRoomMembership = { ...current, isHost: false, hostSessionId: resolvedHostSessionId, epoch };
+    const membership: SfuRoomMembership = {
+      ...current,
+      isHost: false,
+      hostSessionId: resolvedHostSessionId,
+      epoch,
+    };
     await connection.rewire(membership);
     this.attachRole(membership);
   };
@@ -657,7 +651,9 @@ export const checkRoomExists = async (roomCode: string): Promise<boolean> => {
   const timeout = setTimeout(() => controller.abort(), CHECK_ROOM_EXISTS_TIMEOUT_MS);
   try {
     const base = getOnlinePartyKitServer().replace(/^ws/, 'http');
-    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`, { signal: controller.signal });
+    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`, {
+      signal: controller.signal,
+    });
     if (!response.ok) return false;
     const data = (await response.json()) as { created?: boolean };
     return !!data.created;

@@ -13,6 +13,16 @@ When asked to verify types or check for type errors, run:
 pnpm type-check
 ```
 
+### Linting and formatting
+
+Use the package.json scripts, not the underlying tools directly:
+
+```bash
+pnpm lint          # lint
+pnpm format        # format
+pnpm format-check  # check formatting
+```
+
 ### Unused files
 
 When asked to find or remove unused files, run:
