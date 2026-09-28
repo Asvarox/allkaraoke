@@ -67,7 +67,7 @@ const HIDDEN_SELECTORS = [
  * Flipping the elements to `visibility: hidden` instead leaves the layout untouched and simply lets
  * whatever sits behind them show through, so the baseline is the real screen minus the volatile bits.
  */
-const withElementsHidden = async (targetPage: Page, locators: Locator[], capture: () => Promise<void>) => {
+export const withElementsHidden = async (targetPage: Page, locators: Locator[], capture: () => Promise<void>) => {
   // Caller-supplied regions are locators, which can't be turned back into CSS - tag the elements
   // they currently resolve to and let the same rule pick the tag up.
   const elements = (await Promise.all(locators.map((locator) => locator.all()))).flat();
@@ -101,6 +101,24 @@ const withElementsHidden = async (targetPage: Page, locators: Locator[], capture
   }
 };
 
+/** Takes the network and timing out of what a page renders. Call before navigating. */
+export const stabilizePage = async (page: Page) => {
+  // Song cards show a real YouTube thumbnail (i3.ytimg.com); serving a fixed local image instead
+  // keeps screenshots deterministic and independent of real network/CDN timing.
+  await page.route('https://i3.ytimg.com/**', (route) =>
+    route.fulfill({ path: 'src/routes/landing-page/screenshot1.webp' }),
+  );
+
+  // Some screens animate between states via the View Transitions API, which isn't reliably frozen
+  // by Playwright's animation-disabling and can be caught mid-transition. The app's own transition
+  // helper already falls back to an instant state change when the API is unsupported, so removing
+  // it here (a real, already-exercised code path on browsers without the API) sidesteps the timing
+  // entirely instead of guessing at wait times.
+  await page.addInitScript(() => {
+    Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
+  });
+};
+
 /**
  * Registers one test per viewport, tagged `@visual`.
  * Defaults to all viewports (desktop, tablet, mobile-portrait, mobile-landscape) unless a subset is given.
@@ -122,20 +140,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
 
         await page.setViewportSize(VIEWPORTS[viewportName]);
 
-        // Song cards show a real YouTube thumbnail (i3.ytimg.com); serving a fixed local image instead
-        // keeps screenshots deterministic and independent of real network/CDN timing.
-        await page.route('https://i3.ytimg.com/**', (route) =>
-          route.fulfill({ path: 'src/routes/landing-page/screenshot1.webp' }),
-        );
-
-        // Some screens animate between states via the View Transitions API, which isn't reliably frozen
-        // by Playwright's animation-disabling and can be caught mid-transition. The app's own transition
-        // helper already falls back to an instant state change when the API is unsupported, so removing
-        // it here (a real, already-exercised code path on browsers without the API) sidesteps the timing
-        // entirely instead of guessing at wait times.
-        await page.addInitScript(() => {
-          Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
-        });
+        await stabilizePage(page);
 
         const makeScreenshot: MakeScreenshot = async (
           name,
