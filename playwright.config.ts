@@ -24,6 +24,8 @@ const FAKE_SFU_URL = `http://127.0.0.1:${FAKE_SFU_PORT}/v1`;
  */
 const config: PlaywrightTestConfig = {
   testDir: './tests',
+  // Run by playwright.storybook.config.ts against the Storybook build instead
+  testIgnore: 'storybook/**',
   /* Maximum time one test can run for. */
   timeout: 45_000,
   maxFailures: process.env.CI ? 3 : undefined,

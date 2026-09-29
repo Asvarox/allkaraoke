@@ -67,7 +67,7 @@ const HIDDEN_SELECTORS = [
  * Flipping the elements to `visibility: hidden` instead leaves the layout untouched and simply lets
  * whatever sits behind them show through, so the baseline is the real screen minus the volatile bits.
  */
-const withElementsHidden = async (targetPage: Page, locators: Locator[], capture: () => Promise<void>) => {
+export const withElementsHidden = async (targetPage: Page, locators: Locator[], capture: () => Promise<void>) => {
   // Caller-supplied regions are locators, which can't be turned back into CSS - tag the elements
   // they currently resolve to and let the same rule pick the tag up.
   const elements = (await Promise.all(locators.map((locator) => locator.all()))).flat();
@@ -102,6 +102,45 @@ const withElementsHidden = async (targetPage: Page, locators: Locator[], capture
 };
 
 /**
+ * Waits for every icon to be drawn. Icons (`<iconify-icon>`) fetch their SVG from the Iconify API at
+ * runtime, and only render while on screen - so a full-page capture would lose the ones below the fold.
+ * `stopObserver` is the element's own switch for rendering regardless of visibility.
+ */
+export const waitForIcons = async (targetPage: Page) => {
+  await targetPage.evaluate(() =>
+    document
+      .querySelectorAll<HTMLElement & { stopObserver?: () => void }>('iconify-icon')
+      .forEach((icon) => icon.stopObserver?.()),
+  );
+  await targetPage.waitForFunction(
+    () =>
+      Array.from(document.querySelectorAll('iconify-icon')).every((icon) =>
+        icon.shadowRoot?.querySelector('svg, span'),
+      ),
+    undefined,
+    { timeout: 15_000 },
+  );
+};
+
+/** Takes the network and timing out of what a page renders. Call before navigating. */
+export const stabilizePage = async (page: Page) => {
+  // Song cards show a real YouTube thumbnail (i3.ytimg.com); serving a fixed local image instead
+  // keeps screenshots deterministic and independent of real network/CDN timing.
+  await page.route('https://i3.ytimg.com/**', (route) =>
+    route.fulfill({ path: 'src/routes/landing-page/screenshot1.webp' }),
+  );
+
+  // Some screens animate between states via the View Transitions API, which isn't reliably frozen
+  // by Playwright's animation-disabling and can be caught mid-transition. The app's own transition
+  // helper already falls back to an instant state change when the API is unsupported, so removing
+  // it here (a real, already-exercised code path on browsers without the API) sidesteps the timing
+  // entirely instead of guessing at wait times.
+  await page.addInitScript(() => {
+    Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
+  });
+};
+
+/**
  * Registers one test per viewport, tagged `@visual`.
  * Defaults to all viewports (desktop, tablet, mobile-portrait, mobile-landscape) unless a subset is given.
  * `testFn` should navigate/click through the screens it wants to capture, calling `makeScreenshot(name)`
@@ -122,20 +161,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
 
         await page.setViewportSize(VIEWPORTS[viewportName]);
 
-        // Song cards show a real YouTube thumbnail (i3.ytimg.com); serving a fixed local image instead
-        // keeps screenshots deterministic and independent of real network/CDN timing.
-        await page.route('https://i3.ytimg.com/**', (route) =>
-          route.fulfill({ path: 'src/routes/landing-page/screenshot1.webp' }),
-        );
-
-        // Some screens animate between states via the View Transitions API, which isn't reliably frozen
-        // by Playwright's animation-disabling and can be caught mid-transition. The app's own transition
-        // helper already falls back to an instant state change when the API is unsupported, so removing
-        // it here (a real, already-exercised code path on browsers without the API) sidesteps the timing
-        // entirely instead of guessing at wait times.
-        await page.addInitScript(() => {
-          Object.defineProperty(document, 'startViewTransition', { value: undefined, configurable: true });
-        });
+        await stabilizePage(page);
 
         const makeScreenshot: MakeScreenshot = async (
           name,
@@ -160,6 +186,7 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
 
           // `extraMasks` are the caller-supplied volatile regions, e.g. the remote mic's live ping
           // counter; HIDDEN_SELECTORS covers the ones every screen shares.
+          await waitForIcons(targetPage);
           await withElementsHidden(targetPage, extraMasks, async () => {
             await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
               ...(locator ? {} : { fullPage: true }),
