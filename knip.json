@@ -65,6 +65,9 @@
     "src/routes/online/setup-wizard.tsx"
   ],
   "ignoreDependencies": [
+    "@iconify-json/cib",
+    "@iconify-json/ic",
+    "@iconify-json/mdi",
     "vite-tsconfig-paths",
     "@mui/system",
     "peerjs",

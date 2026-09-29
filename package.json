@@ -78,7 +78,6 @@
     "partykit:dev": "partykit dev",
     "youtube:duration": "pnpm tsx scripts/get-youtube-video-duration.ts",
     "songs:backfill-duration": "pnpm tsx scripts/backfill-song-durations.ts",
-    "icons:generate": "pnpm tsx scripts/generate-icon-collections.ts",
     "visual-diff:report": "pnpm tsx scripts/visual-regression/buildDiffReport.ts",
     "visual-diff:comment": "pnpm tsx scripts/visual-regression/renderComment.ts",
     "storybook": "storybook dev -p 6006",

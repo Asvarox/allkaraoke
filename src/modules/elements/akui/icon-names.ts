@@ -3,8 +3,8 @@
  * `string`) so a new icon can't be introduced by copy-pasting a slightly different identifier for a
  * role that's already covered by one of these — adding one here is a deliberate, greppable step.
  *
- * The icons are bundled rather than fetched from the Iconify API: after adding one, run
- * `pnpm icons:generate` to add it to icon-collections.json.
+ * The icons are bundled rather than fetched from the Iconify API - scripts/vite-plugin-bundled-icons.ts
+ * picks each one listed here out of its `@iconify-json/<prefix>` set.
  */
 export const ICON_NAMES = [
   'cib:facebook',

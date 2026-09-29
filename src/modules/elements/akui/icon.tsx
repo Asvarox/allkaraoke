@@ -1,15 +1,15 @@
-import { addCollection, Icon as IconifyIcon, IconifyJSON } from '@iconify-icon/react';
+import { addCollection, Icon as IconifyIcon } from '@iconify-icon/react';
 import { ComponentProps } from 'react';
+import iconCollections from 'virtual:icon-collections';
 
 import useResponsiveValue from './hooks/use-responsive-value';
-import iconCollections from './icon-collections.json';
 import { IconName } from './icon-names';
 import { ResponsiveValue } from './types';
 
 export type { IconName } from './icon-names';
 
 // Bundled rather than fetched from the Iconify API on first render, so icons show up at once and offline
-Object.values(iconCollections).forEach((collection: IconifyJSON) => addCollection(collection));
+iconCollections.forEach((collection) => addCollection(collection));
 
 /**
  * The only place in the app allowed to import `@iconify-icon/react` directly, so the rest of the
@@ -27,5 +27,15 @@ export function Icon({ size, width, height, ...props }: IconProps) {
   const responsiveSize = useResponsiveValue(size);
   const resolvedSize = responsiveSize !== undefined ? responsiveSize * 4 : undefined;
 
-  return <IconifyIcon size={resolvedSize} width={width ?? resolvedSize} height={height ?? resolvedSize} {...props} />;
+  return (
+    <IconifyIcon
+      // Draws the icon even off screen - it's bundled, so there's nothing left to save by waiting until it's
+      // scrolled into view, and full-page screenshots would otherwise capture it missing
+      noobserver
+      size={resolvedSize}
+      width={width ?? resolvedSize}
+      height={height ?? resolvedSize}
+      {...props}
+    />
+  );
 }
