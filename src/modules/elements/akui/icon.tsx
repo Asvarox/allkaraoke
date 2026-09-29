@@ -1,86 +1,15 @@
-import { Icon as IconifyIcon } from '@iconify-icon/react';
+import { addCollection, Icon as IconifyIcon, IconifyJSON } from '@iconify-icon/react';
 import { ComponentProps } from 'react';
 
 import useResponsiveValue from './hooks/use-responsive-value';
+import iconCollections from './icon-collections.json';
+import { IconName } from './icon-names';
 import { ResponsiveValue } from './types';
 
-/**
- * Every iconify identifier actually used in the app. Kept as a closed union (rather than plain
- * `string`) so a new icon can't be introduced by copy-pasting a slightly different identifier for a
- * role that's already covered by one of these — adding one here is a deliberate, greppable step.
- */
-export type IconName =
-  | 'cib:facebook'
-  | 'cib:github'
-  | 'cib:instagram'
-  | 'ic:baseline-access-time'
-  | 'ic:baseline-add'
-  | 'ic:baseline-arrow-back'
-  | 'ic:baseline-arrow-forward'
-  | 'ic:baseline-arrow-right'
-  | 'ic:baseline-calendar-today'
-  | 'ic:baseline-casino'
-  | 'ic:baseline-check'
-  | 'ic:baseline-check-box'
-  | 'ic:baseline-check-box-outline-blank'
-  | 'ic:baseline-close'
-  | 'ic:baseline-content-copy'
-  | 'ic:baseline-delete'
-  | 'ic:baseline-download'
-  | 'ic:baseline-edit'
-  | 'ic:baseline-error'
-  | 'ic:baseline-expand-more'
-  | 'ic:baseline-fast-forward'
-  | 'ic:baseline-favorite'
-  | 'ic:baseline-fullscreen'
-  | 'ic:baseline-fullscreen-exit'
-  | 'ic:baseline-games'
-  | 'ic:baseline-help'
-  | 'ic:baseline-keyboard'
-  | 'ic:baseline-keyboard-arrow-down'
-  | 'ic:baseline-keyboard-arrow-left'
-  | 'ic:baseline-keyboard-arrow-right'
-  | 'ic:baseline-keyboard-arrow-up'
-  | 'ic:baseline-laptop'
-  | 'ic:baseline-list'
-  | 'ic:baseline-lock-open'
-  | 'ic:baseline-logout'
-  | 'ic:baseline-pause'
-  | 'ic:baseline-people-alt'
-  | 'ic:baseline-person'
-  | 'ic:baseline-phone-android'
-  | 'ic:baseline-phone-iphone'
-  | 'ic:baseline-photo-camera'
-  | 'ic:baseline-play-arrow'
-  | 'ic:baseline-qr-code'
-  | 'ic:baseline-qr-code-2'
-  | 'ic:baseline-refresh'
-  | 'ic:baseline-remove'
-  | 'ic:baseline-search'
-  | 'ic:baseline-send'
-  | 'ic:baseline-settings'
-  | 'ic:baseline-shuffle'
-  | 'ic:baseline-speed'
-  | 'ic:baseline-star'
-  | 'ic:baseline-swap-horiz'
-  | 'ic:baseline-sync'
-  | 'ic:baseline-thumb-down'
-  | 'ic:baseline-thumb-up'
-  | 'ic:baseline-visibility'
-  | 'ic:baseline-visibility-off'
-  | 'ic:baseline-warning'
-  | 'ic:baseline-wifi'
-  | 'ic:outline-check-circle'
-  | 'ic:outline-fiber-new'
-  | 'ic:outline-help'
-  | 'ic:outline-lock'
-  | 'ic:round-people-alt'
-  | 'mdi:arrow-left'
-  | 'mdi:circle'
-  | 'mdi:qrcode-scan'
-  | 'mdi:warning'
-  | 'ic:baseline-language'
-  | 'mdi:wifi';
+export type { IconName } from './icon-names';
+
+// Bundled rather than fetched from the Iconify API on first render, so icons show up at once and offline
+Object.values(iconCollections).forEach((collection: IconifyJSON) => addCollection(collection));
 
 /**
  * The only place in the app allowed to import `@iconify-icon/react` directly, so the rest of the
