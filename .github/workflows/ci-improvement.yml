@@ -11,18 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  chromatic:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 200 # needed to detect changed snapshots
-      - name: Setup Node
-        uses: './.github/templates/setup-node'
-      - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
   quick-checks:
     runs-on: ubuntu-latest
     steps:
@@ -217,20 +205,47 @@ jobs:
           shardTotal: '${{ matrix.shardTotal }}'
           grep: '@visual'
           updateSnapshots: 'true'
-          snapshotDir: 'tests' # per playwright.config.ts's testDir
+          # Not all of playwright.config.ts's testDir: tests/storybook holds the storybook-screenshots-run job's snapshots
+          snapshotDir: 'tests/visual-regression'
           snapshotSuffix: '-linux.png' # this job always renders in the Linux Playwright container
       - name: Upload changed snapshots
         uses: './.github/templates/upload-changed-snapshots'
         with:
           name: 'changed-snapshots-visual-regression-${{ matrix.shardIndex }}'
-          snapshotDir: 'tests'
+          snapshotDir: 'tests/visual-regression'
+          snapshotSuffix: '-linux.png'
+
+  # Screenshots every Storybook story, see tests/storybook/stories.spec.ts
+  storybook-screenshots-run:
+    if: github.ref != 'refs/heads/master'
+    container:
+      image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Build Storybook
+        run: pnpm build-storybook
+      - name: Screenshot stories and update snapshots
+        uses: './.github/templates/run-playwright'
+        with:
+          config: 'playwright.storybook.config.ts'
+          updateSnapshots: 'true'
+          snapshotDir: 'tests/storybook' # per playwright.storybook.config.ts's snapshotPathTemplate
+          snapshotSuffix: '-linux.png'
+      - name: Upload changed snapshots
+        uses: './.github/templates/upload-changed-snapshots'
+        with:
+          name: 'changed-snapshots-storybook-1' # when sharding, suffix with the shard index
+          snapshotDir: 'tests/storybook'
           snapshotSuffix: '-linux.png'
 
   # Collects the snapshots every test job (and shard) changed, commits them to the PR branch in one
   # go and posts a single PR comment linking to an old / new / diff gallery of all of them.
   commit-snapshots:
     if: ${{ !cancelled() && github.event_name == 'pull_request' }}
-    needs: ['browser-tests-run', 'visual-regression-tests-run']
+    needs: ['browser-tests-run', 'visual-regression-tests-run', 'storybook-screenshots-run']
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
