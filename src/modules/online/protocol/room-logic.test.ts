@@ -1,5 +1,6 @@
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { MAX_POINTS } from '~/consts';
 import { RpcContext } from '~/modules/network/rpc/types';
 import {
   ChartValidationError,
@@ -601,6 +602,29 @@ describe('scoring and results', () => {
     expect(leaderboard.map((entry) => entry.participantId)).toEqual(['p2', 'p1']);
   });
 
+  it('ignores a score that is not a number and pulls an out-of-range one back', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await startSinging(room, ['p1', 'p2']);
+
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), 100);
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), Number.NaN);
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), Number.POSITIVE_INFINITY);
+    await room.handlers.scoring.publishScore.handler(ctx('p2'), -1);
+    vi.advanceTimersByTime(ONLINE_LEADERBOARD_PUBLISH_MS);
+
+    const leaderboard = room.published['leaderboard'].at(-1) as Array<{ participantId: string; score: number }>;
+    expect(leaderboard.map(({ participantId, score }) => [participantId, score])).toEqual([
+      ['p1', 100],
+      ['p2', 0],
+    ]);
+
+    await room.handlers.scoring.publishScore.handler(ctx('p1'), MAX_POINTS * 2);
+    vi.advanceTimersByTime(ONLINE_LEADERBOARD_PUBLISH_MS);
+    const capped = room.published['leaderboard'].at(-1) as Array<{ participantId: string; score: number }>;
+    expect(capped[0].score).toBe(MAX_POINTS);
+  });
+
   it('coalesces leaderboard broadcasts to at most one per interval', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
@@ -681,13 +705,13 @@ describe('room standings across songs', () => {
     join(room, ['p1', 'p2']);
 
     await playSong(room, ['p1', 'p2'], { p1: 100, p2: 250 });
-    expect(room.logic.getState().roomScores).toEqual({
+    expect(room.logic.getState().standings).toEqual({
       p1: { total: 100, lastSong: 100 },
       p2: { total: 250, lastSong: 250 },
     });
 
     await playSong(room, ['p1', 'p2'], { p1: 400, p2: 10 });
-    expect(room.logic.getState().roomScores).toEqual({
+    expect(room.logic.getState().standings).toEqual({
       p1: { total: 500, lastSong: 400 },
       p2: { total: 260, lastSong: 10 },
     });
@@ -699,28 +723,30 @@ describe('room standings across songs', () => {
     await playSong(room, ['p1', 'p2'], { p1: 100, p2: 50 });
 
     join(room, ['p3']);
-    expect(room.logic.getState().roomScores?.p3).toBeUndefined();
+    expect(room.logic.getState().standings?.p3).toBeUndefined();
 
     await playSong(room, ['p1', 'p2', 'p3'], { p1: 10, p2: 20, p3: 30 });
-    expect(room.logic.getState().roomScores?.p3).toEqual({ total: 30, lastSong: 30 });
+    expect(room.logic.getState().standings?.p3).toEqual({ total: 30, lastSong: 30 });
   });
 
-  it('empties the last-song column for a singer the song passed by, leaving their total alone', async () => {
+  it('banks what a singer who joined halfway had reached by the end', async () => {
     const room = createRoom();
     join(room, ['p1', 'p2']);
     await playSong(room, ['p1', 'p2'], { p1: 100, p2: 50 });
 
-    // p3 walks in halfway through the next song: in the room, but never in its leaderboard
+    // p3's client starts publishing the moment it is in the room, so it lands on the leaderboard
     await startSinging(room, ['p1', 'p2']);
     join(room, ['p3']);
     await room.handlers.scoring.publishScore.handler(ctx('p1'), 7);
     await room.handlers.scoring.publishScore.handler(ctx('p2'), 3);
+    await room.handlers.scoring.publishScore.handler(ctx('p3'), 4);
     await room.handlers.room.endGame.handler(ctx('p1'));
     vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
 
-    expect(room.logic.getState().roomScores).toEqual({
+    expect(room.logic.getState().standings).toEqual({
       p1: { total: 107, lastSong: 7 },
       p2: { total: 53, lastSong: 3 },
+      p3: { total: 4, lastSong: 4 },
     });
   });
 
@@ -739,7 +765,7 @@ describe('room standings across songs', () => {
     await room.handlers.room.endGame.handler(ctx('p1'));
     vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
 
-    expect(room.logic.getState().roomScores?.p3).toEqual({ total: 30, lastSong: null });
+    expect(room.logic.getState().standings?.p3).toEqual({ total: 30, lastSong: null });
   });
 
   it("drops a singer's standings when they leave for good, so coming back starts from nothing", async () => {
@@ -749,13 +775,13 @@ describe('room standings across songs', () => {
 
     room.logic.handleDisconnect('p2');
     // Still theirs for as long as the reconnect window is open — a refresh is not leaving
-    expect(room.logic.getState().roomScores?.p2).toEqual({ total: 250, lastSong: 250 });
+    expect(room.logic.getState().standings?.p2).toEqual({ total: 250, lastSong: 250 });
 
     vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
-    expect(room.logic.getState().roomScores?.p2).toBeUndefined();
+    expect(room.logic.getState().standings?.p2).toBeUndefined();
 
     join(room, ['p2']);
-    expect(room.logic.getState().roomScores?.p2).toBeUndefined();
+    expect(room.logic.getState().standings?.p2).toBeUndefined();
   });
 
   it('leaves the standings alone when the song is ended before anyone sang it', async () => {
@@ -769,7 +795,7 @@ describe('room standings across songs', () => {
     vi.advanceTimersByTime(ONLINE_FORCE_RESULTS_MS);
 
     expect(room.logic.getState().phase).toBe('results');
-    expect(room.logic.getState().roomScores).toEqual({
+    expect(room.logic.getState().standings).toEqual({
       p1: { total: 100, lastSong: 100 },
       p2: { total: 250, lastSong: 250 },
     });
@@ -781,7 +807,7 @@ describe('room standings across songs', () => {
     await playSong(source, ['p1', 'p2'], { p1: 100, p2: 250 });
 
     const restored = createRoom(source.logic.snapshot(), new Set(['p1', 'p2']));
-    expect(restored.logic.getState().roomScores).toEqual({
+    expect(restored.logic.getState().standings).toEqual({
       p1: { total: 100, lastSong: 100 },
       p2: { total: 250, lastSong: 250 },
     });

@@ -1,15 +1,15 @@
-import { OnlineParticipant, RoomScores } from '~/modules/online/protocol/types';
+import { OnlineParticipant, RoomStandings } from '~/modules/online/protocol/types';
 
-/** Which column of `RoomScores` the board is ranked by. */
+/** Which figure of a `RoomStanding` the table is ranked by. */
 export type ScoreTab = 'session' | 'last-song';
 
-/** The two columns, in the order the switch flips through them. */
+/** The two tabs over the table, in the order they are offered. */
 export const SCORE_TABS: { id: ScoreTab; label: string }[] = [
   { id: 'session', label: 'Session' },
   { id: 'last-song', label: 'Last song' },
 ];
 
-export interface StandingsRow {
+export interface RankedParticipant {
   participant: OnlineParticipant;
   /** null when this singer has nothing on this tab yet — drawn as a dash rather than as a zero. */
   score: number | null;
@@ -19,12 +19,12 @@ export interface StandingsRow {
  * Anyone without a score on this tab sorts last; ties and the unscored tail keep join order. */
 export const rankParticipants = (
   participants: OnlineParticipant[],
-  roomScores: RoomScores,
+  standings: RoomStandings,
   tab: ScoreTab,
-): StandingsRow[] =>
+): RankedParticipant[] =>
   participants
     .map((participant) => {
-      const scores = roomScores[participant.id];
+      const scores = standings[participant.id];
       return {
         participant,
         score: (tab === 'session' ? scores?.total : scores?.lastSong) ?? null,

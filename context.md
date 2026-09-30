@@ -1,6 +1,6 @@
 # AllKaraoke Glossary
 
-Last updated: 2026-08-18
+Last updated: 2026-09-30
 
 ## Singing and Scoring
 
@@ -12,10 +12,6 @@ Last updated: 2026-08-18
 - **playerNote** — Group of consecutive `frequencyRecord`s matched (by time and distance) to a song note. Represents the coloured sung lines visible in-game.
 - **vibrato** — Pitch oscillation detected on a `playerNote`, contributing a bonus.
 - **perfect** — Hit accuracy category used in the detailed score breakdown.
-
-- **room standings** — Per-room scoreboard in online mode (`roomScores`), kept across the songs of one room and shown in the lobby. Separate from both the local high scores and the global leaderboard.
-- **session score** — A singer's running total across every song they have finished in the room. Resets when they leave for good, not when they reconnect.
-- **last-song score** — The same singer's score in the most recently finished song, or empty when they sat that one out.
 
 ## Global Leaderboard
 
@@ -81,6 +77,12 @@ Input is managed through two cooperating singletons:
 - **PartyKit** — Default transport backend for remote mics (Cloudflare Workers based).
 - **WebSockets** — Alternative direct WebSocket transport for remote mics.
 - **PeerJS** — Legacy peer-to-peer WebRTC transport, kept for backwards compatibility.
+
+## Online Mode
+
+- **room standings** — Per-room scoreboard in online mode (`standings`), kept across the songs of one room and shown in the lobby. Not the live `leaderboard` of the song in progress, which is gone by the next song. Separate from both the local high scores and the global leaderboard. See `docs/online-mode.md`.
+- **session score** — A singer's running total across every song they have finished in the room. Resets when they leave for good, not when they reconnect.
+- **last-song score** — The same singer's score in the most recently finished song, or empty when they sat that one out.
 
 ## App Routes
 

@@ -3,6 +3,7 @@ import { type CSSProperties, PropsWithChildren, useContext, useState } from 'rea
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Tooltip } from '~/modules/elements/tooltip';
+import { useRemoteMicsAvailable } from '~/modules/remote-mic/no-remote-mics';
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
@@ -16,20 +17,17 @@ const toolbarStyle: ViewTransitionStyle = {
   viewTransitionName: 'toolbar',
 };
 
-interface Props extends PropsWithChildren {
-  connectPhone?: boolean;
-}
-
-function Toolbar({ children, connectPhone = true }: Props) {
+function Toolbar({ children }: PropsWithChildren) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
   const { hasContent } = useContext(KeyboardHelpContext);
+  const remoteMicsAvailable = useRemoteMicsAvailable();
 
   const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
-      {connectPhone && <QRCodeModal closeModal={closeModal} open={isModalOpen} />}
+      {remoteMicsAvailable && <QRCodeModal closeModal={closeModal} open={isModalOpen} />}
       <div
         className="text-default z-toolbar fixed top-0 right-0 m-0 flex cursor-pointer items-center gap-1 pt-2 pr-2"
         style={toolbarStyle}>
@@ -48,7 +46,7 @@ function Toolbar({ children, connectPhone = true }: Props) {
           </Tooltip>
         )}
         <FullscreenButton size={{ xs: 'mini', sm: 'small' }} />
-        {connectPhone && (
+        {remoteMicsAvailable && (
           <Tooltip title="Connect phone" place="bottom-end">
             <Button
               size={{ xs: 'mini', sm: 'small' }}

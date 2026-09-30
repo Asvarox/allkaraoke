@@ -10,6 +10,7 @@ import { createOnlineRoom } from './steps/create-online-room';
 import { fillOnlineRoom } from './steps/fill-online-room';
 import { joinOnlineRoom } from './steps/join-online-room';
 import { newPlayerPage } from './steps/new-player-page';
+import { openAndConnectRemoteMicDirectly } from './steps/open-and-connect-remote-mic';
 import { openOnlinePauseOverlay } from './steps/open-online-pause-overlay';
 import { startOnlineSongAndReachLeaderboard } from './steps/start-online-song';
 
@@ -41,6 +42,34 @@ const watchDataPlane = (page: Page) => {
 test.beforeEach(async ({ page, context }) => {
   await initTestMode({ page, context });
   await mockSongs({ page, context });
+});
+
+test('Online mode: phones connected as mics are back after visiting it', async ({ page, context, browser }) => {
+  const pages = initialise(page, context, browser);
+
+  const remoteMic = await test.step('A phone is connected as a mic', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.mainMenuPage.goToInputSelectionPage();
+    await pages.inputSelectionPage.selectSmartphones();
+    const phone = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    return phone;
+  });
+
+  await test.step('Online mode has no phone mics — nothing offers to connect one', async () => {
+    await expect(pages.mainMenuPage.toolbar.quickConnectPhoneButton).toBeVisible();
+    await page.getByTestId('online').click();
+    await expect(pages.onlineSetupPage.createRoomButton).toBeVisible();
+    await expect(pages.mainMenuPage.toolbar.quickConnectPhoneButton).not.toBeVisible();
+  });
+
+  await test.step('Back in the main menu the phone is connected again', async () => {
+    await pages.onlineSetupPage.backButton.click();
+    await pages.mainMenuPage.waitForContainer();
+    await expect(pages.mainMenuPage.toolbar.quickConnectPhoneButton).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.connectionStatusElement).toHaveText(/\d+ms/i, { timeout: 15_000 });
+  });
 });
 
 test('Online mode: full game flow', async ({ page, context, browser }) => {
@@ -136,6 +165,15 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await expect(pages.onlineLobbyPage.chooseSongButton).toBeVisible();
   });
 
+  await test.step("The host's arrow keys stay in the column they are drawn in", async () => {
+    await expect(pages.onlineLobbyPage.startSongButton).toHaveAttribute('data-focused', 'true');
+    // Start is the card's last control, so Down comes round to its first — not over to the standings
+    await page.keyboard.press('ArrowDown');
+    await expect(pages.onlineLobbyPage.chooseSongButton).toHaveAttribute('data-focused', 'true');
+    await page.keyboard.press('ArrowUp');
+    await expect(pages.onlineLobbyPage.startSongButton).toHaveAttribute('data-focused', 'true');
+  });
+
   await test.step('The host starts the song — everyone confirms readiness with the video loaded', async () => {
     // No one else has to agree first: the guest has no start control at all
     await expect(guestPages.onlineLobbyPage.startSongButton).not.toBeVisible();
@@ -206,12 +244,12 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   await test.step('The standings kept the song that was just sung, on both tabs', async () => {
     // Both singers were on the leaderboard, so both come back with a score rather than the dash a
     // singer who has not sung yet shows. The actual number is whatever the fake mic managed.
-    await expect(pages.onlineLobbyPage.scoreTabElement).toHaveAttribute('data-tab', 'session');
+    await pages.onlineLobbyPage.expectScoreTab('session');
     await expect(pages.onlineLobbyPage.participantScoreElement(0)).not.toHaveText('—');
     await expect(pages.onlineLobbyPage.participantScoreElement(1)).not.toHaveText('—');
 
     await pages.onlineLobbyPage.selectScoreTab('last-song');
-    await expect(pages.onlineLobbyPage.scoreTabElement).toHaveAttribute('data-tab', 'last-song');
+    await pages.onlineLobbyPage.expectScoreTab('last-song');
     await expect(pages.onlineLobbyPage.participantScoreElement(0)).not.toHaveText('—');
   });
 

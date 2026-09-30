@@ -2,7 +2,7 @@ import { ComponentRef, KeyboardEvent, useRef, useState } from 'react';
 
 import { HighScoreEntity } from '~/interfaces';
 import { Input } from '~/modules/elements/input';
-import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
+import useKeyboardNav, { splitNavProps } from '~/modules/hooks/use-keyboard-nav';
 
 interface Props {
   index: number;
@@ -36,16 +36,12 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
   };
 
   // `Input` forwards unknown props to the DOM, so the nav handler is taken out and used here instead
-  const { $keyboardNavigationChangeFocus: changeFocus, ...navProps } = register(
-    `highscore-rename-${index}`,
-    onActive,
-    undefined,
-    false,
-    {
+  const { changeFocus, navProps } = splitNavProps(
+    register(`highscore-rename-${index}`, onActive, undefined, false, {
       control: { type: 'text', label: 'Rename', value: newName, placeholder: score.name },
       onValueChange: onRemoteRename,
-    },
-  ) as ReturnType<Props['register']> & { $keyboardNavigationChangeFocus?: (direction: -1 | 1) => void };
+    }),
+  );
 
   // Enter commits the name; the arrows leave the field for the row above or below. Either way the
   // blur is what saves it and hands the keyboard back to the list.

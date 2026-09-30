@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { OnlineParticipant, RoomScores } from '~/modules/online/protocol/types';
+import { OnlineParticipant, RoomStandings } from '~/modules/online/protocol/types';
 import { PlayerNumber } from '~/modules/players/player-number';
 import { rankParticipants } from '~/routes/online/lobby/room-standings';
 
@@ -21,7 +21,7 @@ const p3 = participant('p3', 2);
 const order = (rows: ReturnType<typeof rankParticipants>) => rows.map((row) => row.participant.id);
 
 describe('rankParticipants', () => {
-  const scores: RoomScores = {
+  const scores: RoomStandings = {
     p1: { total: 300, lastSong: 10 },
     p2: { total: 100, lastSong: 90 },
   };
@@ -38,12 +38,12 @@ describe('rankParticipants', () => {
   });
 
   it('sorts a singer who sat the last song out below one who scored nothing in it', () => {
-    const satOut: RoomScores = { p1: { total: 300, lastSong: null }, p2: { total: 100, lastSong: 0 } };
+    const satOut: RoomStandings = { p1: { total: 300, lastSong: null }, p2: { total: 100, lastSong: 0 } };
     expect(order(rankParticipants([p1, p2], satOut, 'last-song'))).toEqual(['p2', 'p1']);
   });
 
   it('breaks ties by join order, so a board of equal scores stops reshuffling itself', () => {
-    const tied: RoomScores = { p1: { total: 50, lastSong: 50 }, p2: { total: 50, lastSong: 50 } };
+    const tied: RoomStandings = { p1: { total: 50, lastSong: 50 }, p2: { total: 50, lastSong: 50 } };
     expect(order(rankParticipants([p2, p1], tied, 'session'))).toEqual(['p1', 'p2']);
   });
 

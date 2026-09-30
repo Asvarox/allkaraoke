@@ -2,7 +2,6 @@ import { motion } from 'motion/react';
 import { ComponentRef, useLayoutEffect, useRef, useState } from 'react';
 
 import { Menu } from '~/modules/elements/akui/menu';
-import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { Input } from '~/modules/elements/input';
 import styles from '~/modules/game-engine/drawing/styles';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
@@ -19,9 +18,9 @@ interface Props {
 /**
  * The lobby's chat.
  *
- * Placed by the lobby in one of two spots depending on the width: as `MenuWithLogo`'s `sidePanel`
- * from `lg` up, and `inline` inside the card below that, where there is no room for a second
- * column. One instance either way — see the note at the lobby's breakpoint check.
+ * Placed by the lobby in one of two spots depending on the width: in a column of its own from `lg`
+ * up, and `inline` inside the card below that, where there is no room for a second column. One
+ * instance either way — see the note at the lobby's breakpoint check.
  *
  * Always pinned to the bottom, with no scrollback and no unread badge: the panel is on screen for
  * as long as anyone is in the lobby, so there is no "away" state for an unread count to describe.
@@ -68,13 +67,8 @@ function ChatPanel({ register, inline }: Props) {
 
   return (
     <div
-      className={cn(
-        'flex flex-col gap-4',
-        // Beside the card it is a surface of its own, and has to be built from the same parts the
-        // lobby card is — `dialogSurface`, the menu's radius and its padding — or it reads as a
-        // stray box parked next to the app. `h-full` fills the height the grid hands it.
-        !inline && cn(dialogSurface, 'h-full min-h-0 rounded-none p-4 sm:p-6 md:rounded-xl'),
-      )}
+      // Beside the card the lobby draws it on a `LobbyPanel`, which this fills
+      className={cn('flex flex-col gap-4', !inline && 'min-h-0 flex-1')}
       // Not `online-chat`: `register` puts that name on the nav target below as its own
       // `data-test`, and two elements answering to one id makes every query for it ambiguous.
       data-test="online-chat-panel">

@@ -40,13 +40,13 @@ export class OnlineLobbyPagePO {
     return this.participantElement(playerNumber).getByTestId('participant-score');
   }
 
-  /** The Session / Last song switch above the standings; carries the tab showing as `data-tab`. */
-  public get scoreTabElement() {
-    return this.page.getByTestId('online-score-tab');
-  }
-
+  /** The Session / Last song switch above the standings. */
   public async selectScoreTab(tab: 'session' | 'last-song') {
     await this.page.getByTestId(`online-score-tab-${tab}`).click();
+  }
+
+  public async expectScoreTab(tab: 'session' | 'last-song') {
+    await expect(this.page.getByTestId(`online-score-tab-${tab}`)).toHaveAttribute('aria-pressed', 'true');
   }
 
   /** The singer rows as rendered next to the song browser, where they also carry the song votes. */

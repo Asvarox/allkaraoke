@@ -8,6 +8,7 @@ import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
+import PageFrame from '~/modules/elements/page-frame';
 import SmoothLink from '~/modules/elements/smooth-link';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
@@ -78,7 +79,7 @@ function LandingPage() {
       {/* `min-h-dvh` and not `h-dvh`: unlike the menu, this screen has a paragraph and a card of
           copy in it, so pinning it to the viewport would squeeze those rather than the gaps. It
           fills the first screenful and grows past it when the text needs the room. */}
-      <div className="flex min-h-dvh w-screen flex-col gap-3 p-3 lg:gap-4 lg:p-4 xl:gap-6 xl:p-6">
+      <PageFrame>
         {/* The same scale the tiled menu gives its logo — the logo carries a view-transition name of
             its own (see `logo.tsx`), so matching sizes is what makes it hold still on the way in. */}
         <header className="flex shrink-0 items-center gap-4 text-[min(13vw,5.25rem)]">
@@ -222,7 +223,7 @@ function LandingPage() {
         </div>
 
         <MenuFooter />
-      </div>
+      </PageFrame>
     </>
   );
 }

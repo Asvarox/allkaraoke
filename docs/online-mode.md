@@ -187,8 +187,8 @@ A room keeps two different scoreboards, and they answer different questions.
 second, rebuilt from scratch at `startReadiness` and wiped on the way back to the lobby. It is what
 the in-game overlay draws, and it is gone by the time the next song starts.
 
-`roomScores` is the evening: `{ total, lastSong }` per participant id, and it survives the songs.
-`enterResults` banks the finished song into it (`bankSongScores`), reading the score off
+`standings` is the evening: `{ total, lastSong }` per participant id, and it survives the songs.
+`enterResults` banks the finished song into it (`bankStandings`), reading the score off
 `leaderboard` rather than recomputing it from `finalResults` — each client publishes its final score
 immediately before its detailed one, and `forceResults` falls back to the same place, so the banked
 number is the one everyone watched climb. It also keeps the room from having to interpret
@@ -197,16 +197,20 @@ number is the one everyone watched climb. It also keeps the room from having to 
 Three consequences worth knowing:
 
 - **A song somebody sat out empties their `lastSong`, and leaves their `total` alone.** The map is
-  rebuilt on every bank rather than added to, so a singer who walked in halfway through the song —
-  in the room, never in its leaderboard — shows a dash in the last-song column instead of somebody
-  else's stale number.
+  rebuilt on every bank rather than added to, so a singer who was away for the whole song — inside
+  their reconnect grace, never on its leaderboard — shows a dash in the last-song column instead of
+  somebody else's stale number. Someone who walked in halfway did not sit it out: their client
+  publishes every second from the moment it is in the room, so they bank what they had reached.
+- **A published score is pulled into `0..MAX_POINTS`, and a non-number is dropped.** The standings
+  add it up for the rest of the evening, where it used to die with the song. The game engine reports
+  `-1` for a player it doesn't have yet, which is what the clamp is for.
 - **A song ended before it was sung banks nothing.** The host can end the game during the readiness
   check, which still goes through `enterResults`; banking only out of `singing` keeps that song's
   all-zero leaderboard from overwriting everybody's `lastSong`.
 - **Leaving for good resets the score.** `removeParticipant` drops the standings row with the seat,
   so a singer who runs out their reconnect grace comes back to zero. A refresh does not: the grace
   window is exactly what tells the two apart. The lobby's panel lists singers from `participants`,
-  never from `roomScores`, which is what makes somebody who left disappear from the board rather
+  never from `standings`, which is what makes somebody who left disappear from the board rather
   than lingering on it with a frozen score.
 
 The standings are persisted with the rest of the snapshot, so a host takeover or a hibernation wake

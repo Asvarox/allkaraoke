@@ -486,6 +486,16 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
 export type RegisterFunc = ReturnType<typeof useKeyboardNav>['register'];
 
+/** Takes the arrow-out handler off what `register` returns, for a control that would pass it to the
+ * DOM (a plain `Input`). One that wants it, to leave the field on an arrow key, gets `changeFocus`. */
+export const splitNavProps = (props: ReturnType<RegisterFunc>) => {
+  const { $keyboardNavigationChangeFocus: changeFocus, ...navProps } = props as ReturnType<RegisterFunc> & {
+    $keyboardNavigationChangeFocus?: (direction: -1 | 1) => void;
+  };
+
+  return { changeFocus, navProps };
+};
+
 /**
  * Shares a screen's `register` with its subtree so controls (and nested components) don't need it
  * drilled through props. Provide it with `<KeyboardNavContext value={register}>` and read it with

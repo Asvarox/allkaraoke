@@ -40,7 +40,9 @@ export default function CopyLinkField({ link, inputDataTest, buttonDataTest }: P
       value={link}
       onChange={() => undefined}
       readOnly
-      className="w-full"
+      size="mini"
+      // A step down so more of the link is on show — the code is at its far end
+      className="w-full [&_input]:text-sm"
       data-test={inputDataTest}
       adornment={
         <Input.Button onClick={copyLink} data-test={buttonDataTest}>

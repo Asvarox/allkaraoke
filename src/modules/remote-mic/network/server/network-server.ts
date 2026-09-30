@@ -117,13 +117,14 @@ export class NetworkServer {
     );
   };
 
-  /** Closes the server for good, dropping the phones connected to it. `start()` opens a new one. */
+  /** Closes the server, dropping the phones connected to it — `start()` opens a new one. Returns
+   * whether there was a server to close (one waiting to reconnect counts), so a caller can restore it. */
   public stop = () => {
     // A connection that dropped on its own has a reconnect queued, which would reopen the server
     clearTimeout(this.reconnectTimer);
     this.reconnectTimer = undefined;
     const transport = this.transport;
-    if (!transport) return;
+    if (!transport) return false;
     // Cleared first, so the transport's close callback doesn't schedule a reconnect
     this.transport = undefined;
     RemoteMicManager.getRemoteMics().forEach((remoteMic) => RemoteMicManager.removeRemoteMic(remoteMic.id, true));
@@ -132,6 +133,7 @@ export class NetworkServer {
       this.started = false;
       events.micServerStopped.dispatch();
     }
+    return true;
   };
 
   public isStarted = () => this.started;
