@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6441,
-  "generatedAt": "2026-09-27T02:52:38.145Z",
+  "songs": 6443,
+  "generatedAt": "2026-09-30T03:18:29.852Z",
   "additionsPerDay": {
+    "2026-09-30": 2,
     "2026-09-24": 16,
     "2026-09-23": 8,
     "2026-09-22": 19,
@@ -226,10 +227,21 @@
     "2026-08-09": 17,
     "2026-08-08": 12,
     "2026-08-07": 1,
-    "2026-08-05": 3,
-    "2026-07-29": 2
+    "2026-08-05": 3
   },
   "recentlyAdded": [
+    {
+      "artist": "Ravyn Lenae",
+      "title": "Love Me Not",
+      "video": "cswfR85D7jM",
+      "addedAt": "2026-09-30T03:18:20.050Z"
+    },
+    {
+      "artist": "Poets of the Fall",
+      "title": "Carnival Of Rust",
+      "video": "MKk1u5RMTn4",
+      "addedAt": "2026-09-30T03:18:19.944Z"
+    },
     {
       "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
       "title": "Survive",
@@ -505,18 +517,6 @@
       "title": "Ist das noch Punkrock?",
       "video": "tPHEzoomYaU",
       "addedAt": "2026-09-19T21:50:17.311Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Miguel Veloso, Teagan Earley)",
-      "title": "I Can’t Help But Wonder",
-      "video": "dHfZ84ytX9Q",
-      "addedAt": "2026-09-19T21:50:04.327Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "But Daddy I Love Him",
-      "video": "U2W173hRfyA",
-      "addedAt": "2026-09-19T21:49:50.833Z"
     }
   ]
 }

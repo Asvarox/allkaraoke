@@ -137969,6 +137969,33 @@
     "local": false
   },
   {
+    "id": "poets-of-the-fall-carnival-of-rust",
+    "title": "Carnival Of Rust",
+    "artist": "Poets of the Fall",
+    "video": "MKk1u5RMTn4",
+    "language": [
+      "English"
+    ],
+    "bpm": 362.1,
+    "gap": 22615.79950289975,
+    "year": "2006",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-09-30T03:18:19.944Z",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "IC",
+    "duration": 274,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6443,
+    "tracksCount": 1,
+    "search": "poetsofthefallcarnivalofrust",
+    "local": false
+  },
+  {
     "id": "poets-of-the-fall-lift",
     "title": "Lift",
     "artist": "Poets Of The Fall",
@@ -142256,6 +142283,34 @@
     "shortId": 5924,
     "tracksCount": 1,
     "search": "ratablancamujeramante",
+    "local": false
+  },
+  {
+    "id": "ravyn-lenae-love-me-not",
+    "title": "Love Me Not",
+    "artist": "Ravyn Lenae",
+    "video": "cswfR85D7jM",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 22133.157894736843,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-09-30T03:18:20.050Z",
+    "genre": "Pop",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6444,
+    "tracksCount": 1,
+    "search": "ravynlenaelovemenot",
     "local": false
   },
   {
