@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 
 import { getIcons } from '@iconify/utils';
-import type { Plugin } from 'vite';
+import { parseAst, type Plugin } from 'vite';
 
 type IconSet = Parameters<typeof getIcons>[0];
 
@@ -11,10 +11,27 @@ const RESOLVED_ID = `\0${VIRTUAL_ID}`;
 
 /** The identifiers listed in `ICON_NAMES`, read from the source so an edit is picked up without a restart. */
 function readIconNames(namesFile: string): string[] {
-  const list = /ICON_NAMES\s*=\s*\[([\s\S]*?)\]/.exec(readFileSync(namesFile, 'utf8'))?.[1];
-  if (!list) throw new Error(`No \`ICON_NAMES = [...]\` list found in ${namesFile}`);
+  const fail = (reason: string): never => {
+    throw new Error(`${namesFile}: ${reason} - expected \`export const ICON_NAMES = ['prefix:name', ...] as const\``);
+  };
 
-  return [...list.matchAll(/'([^']+)'/g)].map(([, name]) => name);
+  const program = parseAst(readFileSync(namesFile, 'utf8'), { lang: 'ts' }, namesFile);
+  const declarator = program.body
+    .flatMap((statement) => (statement.type === 'ExportNamedDeclaration' ? [statement.declaration] : [statement]))
+    .flatMap((statement) => (statement?.type === 'VariableDeclaration' ? statement.declarations : []))
+    .find(({ id }) => id.type === 'Identifier' && id.name === 'ICON_NAMES');
+  if (!declarator) return fail('no ICON_NAMES declaration');
+
+  // `[...] as const` (or `satisfies`) wraps the array itself
+  let list = declarator.init;
+  while (list?.type === 'TSAsExpression' || list?.type === 'TSSatisfiesExpression') list = list.expression;
+  if (list?.type !== 'ArrayExpression') return fail('ICON_NAMES is not an array literal');
+
+  return list.elements.map((element) =>
+    element?.type === 'Literal' && typeof element.value === 'string'
+      ? element.value
+      : fail('ICON_NAMES holds something other than string literals'),
+  );
 }
 
 /**
