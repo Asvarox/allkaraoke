@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import { Chip } from '~/modules/elements/akui/chip';
 import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
+import PageFrame from '~/modules/elements/page-frame';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
@@ -108,7 +109,7 @@ function Welcome() {
           meant to fill the screen exactly, with the tile rows sharing the leftover height. Narrower
           than that the board is stacked under the tiles, and tiles plus board plus footer only fit by
           growing past the fold and scrolling. */}
-      <div className="flex min-h-dvh w-screen flex-col gap-4 p-4 max-lg:gap-3 max-lg:p-3 xl:h-dvh xl:gap-6 xl:p-6">
+      <PageFrame fixedFrom="xl">
         {/* The utility icons the design puts next to the logo are the app-wide `Toolbar`, which is
             already fixed to this corner (see `layout-game.tsx`) — hence the reserved space on the right. */}
         <header className="flex shrink-0 items-center justify-between gap-6 pr-32">
@@ -194,7 +195,7 @@ function Welcome() {
         </div>
 
         <MenuFooter />
-      </div>
+      </PageFrame>
       {/* Portalled to the body, as the song settings screen does with the same dialog: inside the
           menu's own layout the tiles paint over its backdrop and keep taking the clicks. */}
       {createPortal(

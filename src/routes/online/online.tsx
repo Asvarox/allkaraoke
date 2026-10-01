@@ -7,6 +7,7 @@ import NoPrerender from '~/modules/elements/no-prerender';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { NoRemoteMics } from '~/modules/remote-mic/no-remote-mics';
 import storage from '~/modules/utils/storage';
 import OnlineRoom from '~/routes/online/online-room';
 import OnlineSetupWizard from '~/routes/online/setup-wizard';
@@ -70,7 +71,10 @@ function Online() {
       <Helmet>
         <title>Sing Online | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      <NoPrerender>{roomCode ? <OnlineRoom roomCode={roomCode} /> : <CreateOrJoin />}</NoPrerender>
+      {/* Every online singer brings their own device, so there's nothing for a phone to connect to */}
+      <NoRemoteMics>
+        <NoPrerender>{roomCode ? <OnlineRoom roomCode={roomCode} /> : <CreateOrJoin />}</NoPrerender>
+      </NoRemoteMics>
     </>
   );
 }

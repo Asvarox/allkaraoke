@@ -75,6 +75,7 @@ export const ICON_NAMES = [
   'ic:round-people-alt',
   'mdi:arrow-left',
   'mdi:circle',
+  'mdi:crown',
   'mdi:qrcode-scan',
   'mdi:warning',
   'mdi:wifi',

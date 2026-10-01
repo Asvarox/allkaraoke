@@ -35,6 +35,20 @@ export class OnlineLobbyPagePO {
     return this.participantElement(playerNumber).getByTestId('participant-host');
   }
 
+  /** A singer's score in the room's standings — a dash until they have been through a song. */
+  public participantScoreElement(playerNumber: number) {
+    return this.participantElement(playerNumber).getByTestId('participant-score');
+  }
+
+  /** The Session / Last song switch above the standings. */
+  public async selectScoreTab(tab: 'session' | 'last-song') {
+    await this.page.getByTestId(`online-score-tab-${tab}`).click();
+  }
+
+  public async expectScoreTab(tab: 'session' | 'last-song') {
+    await expect(this.page.getByTestId(`online-score-tab-${tab}`)).toHaveAttribute('aria-pressed', 'true');
+  }
+
   /** The singer rows as rendered next to the song browser, where they also carry the song votes. */
   public songPlayerElement(playerNumber: number) {
     return this.page.getByTestId(`online-song-player-${playerNumber}`);

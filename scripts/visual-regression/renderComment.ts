@@ -19,21 +19,34 @@ const OUTPUT_DIR = 'test-results/visual-diff-report';
 interface Report {
   changedCount: number;
   hasReport: boolean;
-  entries: unknown[];
+  entries: { status: 'modified' | 'added' }[];
 }
 
 const trimSlash = (value: string) => value.replace(/\/+$/, '');
+
+/** e.g. "2 added, 5 changed" - zero counts are left out. */
+function summarize(report: Report): string {
+  const count = (status: string) => report.entries.filter((entry) => entry.status === status).length;
+  return [
+    [count('added'), 'added'],
+    [count('modified'), 'changed'],
+  ]
+    .filter(([n]) => n)
+    .map(([n, label]) => `${n} ${label}`)
+    .join(', ');
+}
 
 function render(report: Report, baseUrl: string | undefined): string {
   if (!report.hasReport) return '';
 
   const count = `${report.changedCount} snapshot${report.changedCount === 1 ? '' : 's'} changed`;
+  const summary = `**Summary:** ${summarize(report)}`;
 
   if (!baseUrl) {
-    return `\n\n> ℹ️ ${count} — the preview gallery could not be uploaded, see the run logs.`;
+    return `\n\n${summary}\n\n> ℹ️ ${count} — the preview gallery could not be uploaded, see the run logs.`;
   }
 
-  return `\n\n📸 **[View the ${count} (old / new / diff)](${trimSlash(baseUrl)}/index.html)**`;
+  return `\n\n${summary}\n\n📸 **[View the ${count} (old / new / diff)](${trimSlash(baseUrl)}/index.html)**`;
 }
 
 function main(): void {

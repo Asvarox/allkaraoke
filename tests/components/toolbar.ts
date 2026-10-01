@@ -42,6 +42,10 @@ export class Toolbar {
     }
   }
 
+  public get quickConnectPhoneButton() {
+    return this.page.getByTestId('quick-connect-phone');
+  }
+
   public async quickConnectPhone() {
     await this.page.getByTestId('quick-connect-phone').click();
   }
