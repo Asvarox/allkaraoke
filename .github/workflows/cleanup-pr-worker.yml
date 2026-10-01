@@ -1,0 +1,36 @@
+name: Delete PR preview worker
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [master]
+
+# Same group as the PR's CI/CD run, so a deploy still in flight is cancelled rather than finishing
+# after the delete and bringing the worker back
+concurrency:
+  group: CI/CD-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  delete-worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WORKER_NAME: allkaraoke-party-pr-${{ github.event.pull_request.number }}
+        # `force` also removes the worker's Durable Object namespaces. Error 10007 (worker not found)
+        # means the PR was never deployed or was already cleaned up, which is fine
+        run: |
+          status=$(curl -sS -o response.json -w '%{http_code}' -X DELETE \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/$WORKER_NAME?force=true")
+          cat response.json
+          if [ "$status" -lt 300 ]; then
+            echo "Deleted $WORKER_NAME"
+          elif jq -e '.errors[]? | select(.code == 10007)' response.json > /dev/null; then
+            echo "$WORKER_NAME does not exist"
+          else
+            exit 1
+          fi
