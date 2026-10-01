@@ -1,10 +1,9 @@
-import { expect, Page, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 import { ONLINE_MAX_CHAT_LENGTH } from '~/modules/online/protocol/consts';
-import { P2P_ROOM_CODE_PATTERN } from '~/modules/online/signaling/protocol';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
-import { initTestMode, mockSongs, useServerOnlineMode } from './helpers';
+import { initTestMode, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
 import { fillOnlineRoom } from './steps/fill-online-room';
@@ -26,18 +25,6 @@ const song = {
 
 const hostName = 'E2E Host';
 const guestName = 'E2E Guest';
-
-/** Records how a page reached its room: SFU handshakes completed, relay sockets opened. */
-const watchDataPlane = (page: Page) => {
-  const seen = { sfuSessions: 0, relaySockets: 0 };
-  page.on('response', (response) => {
-    if (response.url().endsWith('/online/session/answer') && response.ok()) seen.sfuSessions++;
-  });
-  page.on('websocket', (socket) => {
-    if (socket.url().includes('/relay')) seen.relaySockets++;
-  });
-  return seen;
-};
 
 test.beforeEach(async ({ page, context }) => {
   await initTestMode({ page, context });
@@ -75,7 +62,6 @@ test('Online mode: phones connected as mics are back after visiting it', async (
 test('Online mode: full game flow', async ({ page, context, browser }) => {
   test.slow();
   const pages = initialise(page, context, browser);
-  const hostPlane = watchDataPlane(page);
 
   await test.step('Host reaches online mode from the main menu', async () => {
     await page.goto('/?e2e-test');
@@ -96,7 +82,6 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
 
   const guestPage = await newPlayerPage(browser);
   const guestPages = initialise(guestPage, guestPage.context(), browser);
-  const guestPlane = watchDataPlane(guestPage);
 
   await test.step('Guest joins by link — the code step arrives prefilled from the invite', async () => {
     await guestPages.onlineSetupPage.gotoRoomLink(roomCode);
@@ -259,15 +244,6 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
 
     await guestPages.onlineLobbyPage.leaveRoomAndConfirm();
     await guestPages.onlineLobbyPage.expectNotToBeVisible();
-  });
-
-  await test.step('The whole round went through the SFU, not the relay', async () => {
-    // A Worker that lost its Realtime config (or a dev server started without `pnpm start:e2e`)
-    // silently puts everyone on the relay, and every other assertion here would still pass.
-    expect(hostPlane.sfuSessions).toBeGreaterThan(0);
-    expect(guestPlane.sfuSessions).toBeGreaterThan(0);
-    expect(hostPlane.relaySockets).toBe(0);
-    expect(guestPlane.relaySockets).toBe(0);
   });
 
   await guestPage.context().close();
@@ -451,35 +427,6 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
     await expect(guestPages.onlineLobbyPage.participantHostTagElement(3)).toBeVisible();
     // the new host can select the song now
     await expect(guestPages.onlineLobbyPage.chooseSongButton).toBeVisible();
-  });
-
-  await guestPage.context().close();
-});
-
-test('Online mode: a singer enrolled in server mode still joins a P2P room by its code', async ({
-  page,
-  context,
-  browser,
-}) => {
-  const pages = initialise(page, context, browser);
-
-  const roomCode = await createOnlineRoom(page, context, browser, hostName);
-  // Opened under the P2P flag, so the code leads with a digit — the mark that sends everybody here.
-  expect(roomCode).toMatch(P2P_ROOM_CODE_PATTERN);
-
-  const guestPage = await newPlayerPage(browser);
-  // The guest's own flag points at the other backend. It used to decide where the code was looked
-  // up, and the guest was told the room did not exist; the code decides now.
-  await useServerOnlineMode({ page: guestPage, context: guestPage.context() });
-  const guestPages = initialise(guestPage, guestPage.context(), browser);
-
-  await test.step("The guest types the code and lands in the host's room", async () => {
-    await guestPages.onlineSetupPage.goto();
-    await guestPages.onlineSetupPage.joinRoomByCode(roomCode);
-    await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);
-    await guestPages.onlineLobbyPage.expectToBeVisible({ timeout: 15_000 });
-    await expect(pages.onlineLobbyPage.participantElement(1)).toContainText(guestName);
-    await expect(guestPages.onlineLobbyPage.participantElement(0)).toContainText(hostName);
   });
 
   await guestPage.context().close();

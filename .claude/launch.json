@@ -8,12 +8,6 @@
       "port": 3000
     },
     {
-      "name": "partykit",
-      "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["partykit:dev"],
-      "port": 1999
-    },
-    {
       "name": "storybook",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["storybook", "--no-open", "--ci"],

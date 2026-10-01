@@ -10,8 +10,7 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
 import { checkRoomExists } from '~/modules/online/client/online-client';
-import { generateOnlineRoomCode } from '~/modules/online/client/room-mode';
-import { useNewRoomMode } from '~/modules/online/client/use-new-room-mode';
+import { generateOnlineRoomCode } from '~/modules/online/client/room-code';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
 import useOnlineName from '~/routes/online/hooks/use-online-name';
@@ -63,9 +62,8 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
   });
 
   const [step, setStep] = useState<Step>(stepOrder[0]);
-  const newRoomMode = useNewRoomMode();
   // The room decision from the code step, applied once the whole wizard finishes. A room being
-  // opened gets its code only then — see `useNewRoomMode` for why not on mount.
+  // opened gets its code only then.
   const roomTarget = useRef<{ roomCode: string; create: boolean }>({
     roomCode: mode === 'create' ? '' : (joinRoomCode ?? ''),
     create: mode === 'create',
@@ -74,7 +72,7 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
   const goToNextStep = () => {
     const next = stepOrder[stepOrder.indexOf(step) + 1];
     if (next === undefined) {
-      if (roomTarget.current.create) roomTarget.current.roomCode = generateOnlineRoomCode(newRoomMode);
+      if (roomTarget.current.create) roomTarget.current.roomCode = generateOnlineRoomCode();
       onComplete(roomTarget.current.roomCode, { create: roomTarget.current.create });
     } else {
       setStep(next);

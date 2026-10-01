@@ -252,6 +252,28 @@ describe('abuse limits', () => {
   });
 });
 
+describe('without Realtime credentials', () => {
+  const env = { ONLINE_DIRECTORY: {} } as unknown as OnlineSignalingEnv;
+
+  it('refuses the SFU endpoints rather than putting rooms on another data plane', async () => {
+    for (const path of ['/online/session', '/online/session/answer', '/online/datachannels']) {
+      const response = await handleOnlineSignaling(
+        new Request(`https://example.test${path}`, { method: 'POST' }),
+        env,
+        path,
+      );
+
+      expect(response?.status, path).toBe(503);
+    }
+  });
+
+  it('still answers for STUN, which needs no credentials', async () => {
+    const response = await handleOnlineSignaling(new Request('https://example.test/online/ice'), env, '/online/ice');
+
+    expect(response?.status).toBe(200);
+  });
+});
+
 describe('cross-origin access', () => {
   const ice = (origin?: string) =>
     handleOnlineSignaling(
@@ -277,13 +299,12 @@ describe('cross-origin access', () => {
 });
 
 describe('room codes', () => {
-  it('turns away a code that belongs to PartyKit, so no room can exist in both backends', async () => {
+  it('turns away a code the game never generates', async () => {
     const env = { ONLINE_DIRECTORY: {} } as unknown as OnlineSignalingEnv;
     const lookup = (code: string) =>
       handleOnlineSignaling(new Request(`https://example.test/online/room/${code}`), env, `/online/room/${code}`);
 
-    // An all-letter code is a server-mode room; the directory must never answer for one, or an
-    // out-of-date client could open a P2P room under a code everyone else looks for in PartyKit.
+    // Codes are only ever a lead digit and letters; anything else never reaches a Durable Object name.
     expect((await lookup('abcde'))?.status).toBe(400);
     expect((await lookup('1abcd'))?.status).toBe(400);
   });

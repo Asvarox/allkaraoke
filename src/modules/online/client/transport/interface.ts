@@ -1,5 +1,5 @@
 import { OnlineMessages } from '~/modules/online/protocol/types';
-import { JoinRejectedReason, OnlineDataPlane } from '~/modules/online/signaling/protocol';
+import { JoinRejectedReason } from '~/modules/online/signaling/protocol';
 
 /** Where this browser sits in a room: which side of the wiring it is on, whose channels it should
  * be subscribed to, and which slot is its own. */
@@ -42,30 +42,16 @@ export interface OnlineRoomChannels {
  * A full connection to a room: the directory dance (claim a slot, learn who hosts, take over) plus
  * the channels the messages travel on.
  *
- * Two implementations. `SfuRoomConnection` is the real one. The end-to-end suite uses a local
- * fabric instead — the SFU is the one piece of this that cannot be stood up in CI, and everything
- * that is actually ours (slot assignment, host election, takeover, the room logic itself) is
- * exercised either way.
+ * `SfuRoomConnection` is the real implementation; the host runtime's tests drive an in-memory
+ * fabric instead.
  */
 export interface OnlineRoomConnection extends OnlineRoomChannels {
   join(options?: { create?: boolean }): Promise<OnlineJoinOutcome>;
-  /** Which wire this connection actually ended up on. Fixed per implementation, but read back
-   * rather than assumed: `createRoomConnection` picks it from the Worker's answer, so a Worker that
-   * stops reporting `sfu` silently moves production onto the relay. Reported with the latency
-   * measurements, where that fallback would otherwise look like an unexplained ping regression. */
-  getDataPlane(): OnlineDataPlane;
   /** Re-points at a different host without giving up this browser's own membership. */
   rewire(membership: SfuRoomMembership): Promise<void>;
   promote(): Promise<{ ok: boolean; epoch: number; hostSessionId?: string | null }>;
   /** Fires when the connection is unrecoverable — the caller re-joins from scratch. */
   onLost(listener: () => void): () => void;
-  /**
-   * Fires when the data plane can tell, exactly, that the host is gone — rather than the client
-   * having to infer it from missing heartbeats. Only the relay can: the SFU does not report who
-   * has stopped publishing, so its implementation never fires and the watchdog remains the general
-   * mechanism.
-   */
-  onHostLost(listener: () => void): () => void;
   close(): void;
 }
 

@@ -65,7 +65,7 @@ type LatePersistedField =
 export type OnlinePersistedState = Omit<RoomSnapshot, LatePersistedField> &
   Partial<Pick<RoomSnapshot, LatePersistedField>>;
 
-/** Everything the room logic needs from its host environment (PartyKit room or a test harness). */
+/** Everything the room logic needs from its host environment (the host's browser tab or a test harness). */
 export interface OnlineRoomDeps {
   roomCode: string;
   now: () => number;

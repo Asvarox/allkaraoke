@@ -4,15 +4,13 @@ import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
 import { trackOnlinePing } from '~/modules/online/client/online-analytics';
-import { OnlineRoomMode, roomModeOf } from '~/modules/online/client/room-mode';
-import { createRoomConnection } from '~/modules/online/client/transport/create-room-connection';
 import {
   OnlineClientTransport,
   OnlineRoomConnection,
   SfuRoomMembership,
 } from '~/modules/online/client/transport/interface';
 import { SfuClientTransport } from '~/modules/online/client/transport/sfu-client-transport';
-import { WebSocketRoomTransport } from '~/modules/online/client/transport/web-socket-transport';
+import { SfuRoomConnection } from '~/modules/online/client/transport/sfu-room-connection';
 import {
   OnlineHostSnapshot,
   OnlineRoomHost,
@@ -24,7 +22,6 @@ import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
 import { fetchRoomInfo } from '~/modules/online/signaling/directory-client';
 import { clearMembershipSecret } from '~/modules/online/signaling/membership-secret';
-import isE2E from '~/modules/utils/is-e2-e';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
@@ -40,10 +37,6 @@ const getReconnectDelayMs = (attempt: number): number => {
   const cap = Math.min(RECONNECT_MAX_DELAY_MS, RECONNECT_BASE_DELAY_MS * 2 ** attempt);
   return Math.random() * cap;
 };
-
-// E2E runs against the local `partykit dev` server started by the Playwright webServer config
-export const getOnlinePartyKitServer = (): string =>
-  isE2E() ? 'ws://localhost:1999' : (import.meta.env.VITE_APP_ONLINE_PARTYKIT_URL ?? 'ws://localhost:1999');
 
 export type OnlineConnectionStatus =
   | 'disconnected'
@@ -83,8 +76,6 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private roomCode: string | null = null;
   private name = '';
   private createRoom = false;
-  /** Which mode this room is running in, read off its code — see `roomModeOf`. */
-  private mode: OnlineRoomMode = 'server';
   private status: OnlineConnectionStatus = 'disconnected';
   private shouldReconnect = false;
   private reconnectAttempts = 0;
@@ -93,18 +84,15 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     onMeasurement: (ping) => this.reportPing(ping),
   });
 
-  /** Feeds the ping loop's measurements to analytics. Reads the mode, the loopback flag and the
-   * data plane at report time rather than at connect time: a host takeover flips `getIsHosting()`
-   * mid-room, and attributing a post-takeover measurement to the old role would put a loopback
-   * reading in the network sample. */
+  /** Feeds the ping loop's measurements to analytics. Reads the loopback flag at report time rather
+   * than at connect time: a host takeover flips `getIsHosting()` mid-room, and attributing a
+   * post-takeover measurement to the old role would put a loopback reading in the network sample. */
   private reportPing = (ping: number) => {
     if (!this.roomCode) return;
     trackOnlinePing({
       ping,
       roomCode: this.roomCode,
-      roomMode: this.getMode(),
       isLoopbackHost: this.getIsHosting(),
-      dataPlane: this.connection?.getDataPlane() ?? null,
     });
   };
   /** Set while this browser has gone idle (see `useIsUserActive`). Nothing here holds a server
@@ -190,56 +178,10 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     this.roomCode = normalizedRoomCode;
     this.name = name;
     this.createRoom = create;
-    // From the code, never from this browser's flag: everyone in a room has to be on the same
-    // transport, and the code is the one thing they are all guaranteed to share.
-    this.mode = roomModeOf(normalizedRoomCode);
     this.shouldReconnect = true;
     this.hasRotatedIdentity = false;
     this.reconnectAttempts = 0;
-    void this.open(false);
-  };
-
-  public getMode = () => this.mode;
-
-  private open = (isReconnect: boolean) =>
-    this.mode === 'p2p' ? this.openRoom(isReconnect) : this.openServerRoom(isReconnect);
-
-  /**
-   * The original online mode: one socket to the PartyKit room, which runs the same
-   * `OnlineRoomLogic` server-side. No host to elect, nothing to take over — which is exactly why
-   * this is what the P2P flag falls back to.
-   */
-  private openServerRoom = async (isReconnect: boolean) => {
-    if (!this.roomCode) return;
-    this.setStatus(isReconnect ? 'reconnecting' : 'connecting');
-
-    const transport = new WebSocketRoomTransport();
-    this.transport = transport;
-    this.stopHeartbeatWatchdog();
-
-    // pid identifies the participant; the connection id (_pk) stays unique per socket so a
-    // stale socket closing (e.g. quick reconnects/StrictMode remounts) can't evict a fresh one
-    const url = `${getOnlinePartyKitServer()}/party/${this.roomCode}?pid=${this.getParticipantId()}&name=${encodeURIComponent(this.name)}${this.createRoom ? '&create=1' : ''}`;
-
-    transport.addListener(this.handleMessage);
-    transport.open(
-      url,
-      () => {
-        // wait for the room's join verdict before reporting connected
-      },
-      (event) => {
-        if (this.transport !== transport) return;
-        if (this.status === 'rejected') return;
-        // 4000 = join rejected. The join-rejected message itself can be lost when the room closes
-        // right after sending it (observed on Firefox), so the code is read as well.
-        if (event?.code === 4000) {
-          this.shouldReconnect = false;
-          this.setStatus('rejected', event.reason || 'rejected');
-          return;
-        }
-        this.scheduleReconnect();
-      },
-    );
+    void this.openRoom(false);
   };
 
   private scheduleReconnect = () => {
@@ -251,7 +193,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     const delay = getReconnectDelayMs(this.reconnectAttempts);
     this.reconnectAttempts += 1;
     setTimeout(() => {
-      if (this.shouldReconnect) void this.open(true);
+      if (this.shouldReconnect) void this.openRoom(true);
     }, delay);
   };
 
@@ -272,8 +214,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     let connection: OnlineRoomConnection | null = null;
     let outcome;
     try {
-      // Which data plane a room uses is the Worker's answer, not a guess — see createRoomConnection.
-      connection = await createRoomConnection(this.roomCode, this.getParticipantId());
+      connection = new SfuRoomConnection(this.roomCode, this.getParticipantId());
       if (attempt !== this.openAttempt) {
         connection.close();
         return;
@@ -302,7 +243,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
       if (outcome.reason === 'not-authorized' && !this.hasRotatedIdentity) {
         this.hasRotatedIdentity = true;
         this.rotateIdentity();
-        void this.open(isReconnect);
+        void this.openRoom(isReconnect);
         return;
       }
       this.shouldReconnect = false;
@@ -312,14 +253,6 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 
     connection.onLost(() => {
       if (this.connection === connection) this.scheduleReconnect();
-    });
-    connection.onHostLost(() => {
-      // An exact signal beats waiting out ONLINE_HOST_STALL_MS. Expressed by ageing the last
-      // heartbeat rather than by a second code path: `claimHost` re-checks freshness after its
-      // stagger, and a claim raised while the last beat still looked recent would abort there.
-      if (this.connection !== connection || this.host) return;
-      this.lastHeartbeatAt = 0;
-      void this.claimHost();
     });
 
     this.attachRole(outcome.membership);
@@ -639,29 +572,8 @@ const ONLINE_HOST_HEARTBEAT_CHECK_MS = 500;
 
 const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
 
-const CHECK_ROOM_EXISTS_TIMEOUT_MS = 5_000;
-
-/** Checks (over HTTP) whether a room code was actually opened, without joining it. The two modes
- * keep their rooms in different places — PartyKit and the room directory — and the code says
- * which one to ask. */
-export const checkRoomExists = async (roomCode: string): Promise<boolean> => {
-  if (roomModeOf(roomCode.toLowerCase()) === 'p2p') return (await fetchRoomInfo(roomCode))?.created === true;
-
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), CHECK_ROOM_EXISTS_TIMEOUT_MS);
-  try {
-    const base = getOnlinePartyKitServer().replace(/^ws/, 'http');
-    const response = await fetch(`${base}/party/${roomCode.toLowerCase()}`, {
-      signal: controller.signal,
-    });
-    if (!response.ok) return false;
-    const data = (await response.json()) as { created?: boolean };
-    return !!data.created;
-  } catch {
-    return false;
-  } finally {
-    clearTimeout(timeout);
-  }
-};
+/** Checks (over HTTP) whether a room code was actually opened, without joining it. */
+export const checkRoomExists = async (roomCode: string): Promise<boolean> =>
+  (await fetchRoomInfo(roomCode))?.created === true;
 
 export default new OnlineClient();

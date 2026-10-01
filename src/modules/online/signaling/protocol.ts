@@ -26,23 +26,14 @@ export const slotChannelName = (slot: number) => `slot-${slot}`;
 export const ONLINE_SLOT_COUNT = 6;
 
 /**
- * The first character of a P2P room code. Every other code is a PartyKit (server-mode) room.
- *
- * The code carries its room's transport so that nobody has to agree on anything else: the
- * `OnlineP2P` flag decides which kind of code a room is *created* with, and from then on everyone
- * who joins — whatever their own flag says, however they arrived at the code — goes where the code
- * points. Deciding by each joiner's flag instead split friends across two backends that cannot see
- * each other's rooms.
- *
- * A digit, because PartyKit codes have only ever been letters: every code handed out before this
- * existed keeps meaning exactly what it meant. 0 and 1 are left out — they read as O and l, and the
+ * The first character of a room code: a digit, left over from when the all-letter codes belonged to
+ * the PartyKit room server this one replaced. 0 and 1 are left out — they read as O and l, and the
  * code is read out across a room and typed on phones.
  */
 export const P2P_ROOM_CODE_LEADS = '23456789';
 
-/** A P2P room code in full: a lead digit and four lowercase letters, five characters like every
- * room code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to
- * this, so a room can only ever exist in the backend its code points to. */
+/** A room code in full: a lead digit and four lowercase letters, five characters like every room
+ * code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to this. */
 export const P2P_ROOM_CODE_PATTERN = /^[2-9][a-z]{4}$/;
 
 /** A room's directory row is wiped this long after the last call touching it. The host's keepalive
@@ -204,30 +195,9 @@ export interface LeaveRoomRequest {
 /** What the directory says a session is allowed to do, used to authorise channel creation. */
 export type ChannelAuthorization = { ok: true; isHost: boolean; slot: number; hostSessionId: string } | { ok: false };
 
-/**
- * Which wire a room's messages travel on.
- *
- * `sfu` is production. `relay` is the fallback the Worker reports when no Realtime credentials are
- * configured — the end-to-end suite and a local checkout without a Cloudflare Realtime app. It
- * routes the same frames through the room's Durable Object instead, which is exactly the cost the
- * SFU exists to avoid, so it must never be what production answers with.
- */
-export type OnlineDataPlane = 'sfu' | 'relay';
-
-/** `GET /online/room/:code` — lets the join screen check a code without claiming a slot, and tells
- * a client which data plane to open before it commits to one. */
+/** `GET /online/room/:code` — lets the join screen check a code without claiming a slot. */
 export interface RoomInfoResponse {
   created: boolean;
   hostSessionId: string | null;
   epoch: number;
-  dataPlane: OnlineDataPlane;
-}
-
-/** Host → relay. Mirrors the two things the SFU gives the host: a fan-out and a per-slot pipe. */
-export type RelayHostFrame = { kind: 'broadcast'; message: unknown } | { kind: 'slot'; slot: number; message: unknown };
-
-/** Relay → host. The slot is what the SFU conveys implicitly by which channel a frame arrived on. */
-export interface RelayInboundFrame {
-  slot: number;
-  message: unknown;
 }

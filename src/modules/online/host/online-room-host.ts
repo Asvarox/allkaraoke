@@ -67,10 +67,10 @@ interface OnlineRoomHostOptions {
 /**
  * The authoritative room, running in the host's own tab.
  *
- * This is `partykit/online-room.ts` with the server taken out. `OnlineRoomLogic` is untouched and
- * still drives everything — only its environment changed: the Durable Object's alarm became a
- * `setTimeout`, its storage became a snapshot broadcast to the succession line, and its per-socket
- * fan-out became one publish on the SFU's broadcast channel.
+ * It used to run on a server. `OnlineRoomLogic` is untouched and still drives everything — only its
+ * environment changed: the Durable Object's alarm became a `setTimeout`, its storage became a
+ * snapshot broadcast to the succession line, and its per-socket fan-out became one publish on the
+ * SFU's broadcast channel.
  *
  * That last one is the point of the whole design. The old room paid for a server that stayed
  * resident for the length of every song; this one pays for bytes the SFU forwards, and the host's
@@ -249,8 +249,7 @@ export class OnlineRoomHost {
   };
 
   private handleHello = (participantId: string, name: string, create: boolean, slot: number) => {
-    // The name arrives from a client and goes straight into room state, so it is bounded here the
-    // same way the PartyKit server bounded the one it read off the connection URL.
+    // The name arrives from a client and goes straight into room state, so it is bounded here.
     const boundedName = (name ?? '').slice(0, ONLINE_MAX_NAME_LENGTH);
     const sender = {
       peer: participantId,

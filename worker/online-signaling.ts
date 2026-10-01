@@ -15,7 +15,6 @@ import type {
   IceServersResponse,
   JoinRoomRequest,
   LeaveRoomRequest,
-  OnlineDataPlane,
   PromoteHostRequest,
   SessionDescriptionDto,
 } from '../src/modules/online/signaling/protocol';
@@ -24,8 +23,8 @@ import type { OnlineDirectory } from './online-directory-do';
 export interface OnlineSignalingEnv {
   REALTIME_APP_ID?: string;
   REALTIME_APP_TOKEN?: string;
-  /** Where the Realtime SFU API lives. Only ever set by the end-to-end suite, to point the Worker at
-   * the fake SFU in `tests/fake-sfu` — production always talks to Cloudflare's. */
+  /** Where the Realtime SFU API lives. Only ever set locally, to point the Worker at the fake SFU in
+   * `tests/fake-sfu` (see vite.config.mts) — production always talks to Cloudflare's. */
   REALTIME_API_URL?: string;
   ONLINE_DIRECTORY?: DurableObjectNamespace<OnlineDirectory>;
 
@@ -68,9 +67,7 @@ const TURN_CREDENTIAL_TTL_SECONDS = 2 * 60 * 60;
 const TURN_REFRESH_MARGIN_MS = 10 * 60 * 1_000;
 
 /** Room codes are the only thing that reaches the directory as a Durable Object name, so they are
- * pinned to exactly what the game generates for a P2P room before anything is looked up. A code of
- * any other shape belongs to PartyKit; refusing it here is what keeps a room from ever existing in
- * both backends under one code, whatever an out-of-date client asks for. */
+ * pinned to exactly what the game generates before anything is looked up. */
 const ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 
 /**
@@ -399,29 +396,13 @@ const handleCreateDataChannels = async (request: Request, env: OnlineSignalingEn
   });
 };
 
-const handleRoom = async (
-  request: Request,
-  env: OnlineSignalingEnv,
-  roomCode: string,
-  action: string,
-  dataPlane: OnlineDataPlane,
-) => {
+const handleRoom = async (request: Request, env: OnlineSignalingEnv, roomCode: string, action: string) => {
   const directory = getDirectory(env, roomCode);
 
   if (action === '' && request.method === 'GET') {
-    return json(request, await directory.info(dataPlane));
+    return json(request, await directory.info());
   }
 
-  if (action === 'relay') {
-    // The relay exists for environments with no Realtime app to talk to. Refusing it whenever the
-    // SFU *is* configured is what stops production from ever falling back onto a data plane that
-    // would put every message back through a Durable Object.
-    if (dataPlane !== 'relay') return json(request, { error: 'Relay is disabled' }, 404);
-    if (request.headers.get('Upgrade') !== 'websocket') return json(request, { error: 'Expected websocket' }, 426);
-    // Forwarded rather than called as RPC: a 101 response carrying a `webSocket` cannot cross the
-    // Durable Object RPC boundary.
-    return directory.fetch(request);
-  }
   if (request.method !== 'POST') return json(request, { error: 'Method not allowed' }, 405);
 
   const body = (await request.json().catch(() => null)) as Record<string, unknown> | null;
@@ -489,15 +470,13 @@ export const handleOnlineSignaling = async (
     return json(request, { error: 'Online mode is not configured' }, 503);
   }
 
-  // Only the SFU endpoints need Realtime credentials. The directory does not, which is what lets
-  // the end-to-end suite run the real slot assignment and host election against a local data plane.
+  // Only the SFU endpoints need Realtime credentials; the directory does not.
   const hasRealtimeCredentials = Boolean(env.REALTIME_APP_ID && env.REALTIME_APP_TOKEN);
 
   try {
     const rest = pathname.slice('/online/'.length);
 
-    // Deliberately not gated on Realtime credentials: STUN needs none, and a checkout without an
-    // app configured still runs online mode on the relay, which is exactly when this must answer.
+    // Deliberately not gated on Realtime credentials: STUN needs none.
     if (rest === 'ice' && request.method === 'GET') return await handleIceServers(request, env);
 
     if (rest === 'session' || rest === 'session/answer' || rest === 'datachannels') {
@@ -519,7 +498,7 @@ export const handleOnlineSignaling = async (
     if (rest.startsWith('room/')) {
       const [roomCode, action = ''] = rest.slice('room/'.length).split('/');
       if (!ROOM_CODE_PATTERN.test(roomCode ?? '')) return badRequest(request, 'invalid room code');
-      return await handleRoom(request, env, roomCode, action, hasRealtimeCredentials ? 'sfu' : 'relay');
+      return await handleRoom(request, env, roomCode, action);
     }
 
     return json(request, { error: 'Not found' }, 404);

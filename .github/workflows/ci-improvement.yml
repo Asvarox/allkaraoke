@@ -374,15 +374,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
-      - name: Deploy PartyKit online room
-        env:
-          PARTYKIT_LOGIN: ${{ secrets.PARTYKIT_LOGIN }}
-          PARTYKIT_TOKEN: ${{ secrets.PARTYKIT_TOKEN }}
-          # PartyKit provisions the custom hostname through the Cloudflare account that owns the
-          # allkaraoke.party zone, so it needs Cloudflare credentials on top of the PartyKit ones
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: pnpm exec partykit deploy --domain online.allkaraoke.party
 
       - name: Add Deployment PostHog Annotation
         uses: actions/github-script@v8
@@ -477,37 +468,7 @@ jobs:
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
         timeout-minutes: 3
-      - name: Compute PartyKit preview name
-        id: preview
-        # One preview deployment per branch (not per run), so re-pushing a branch replaces its own
-        # room server instead of leaking a new one, and the URL stays stable for the whole PR.
-        # Must be a valid DNS label: lowercase alphanumerics and dashes, <= 63 chars with the prefix.
-        env:
-          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-        run: |
-          slug=$(printf '%s' "$BRANCH_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//' | cut -c1-40 | sed -E 's/-+$//')
-          # A branch name with no lowercase alphanumerics normalises to nothing, and `pr-` alone is
-          # not a valid DNS label — the deploy would fail before the app is even built.
-          if [ -z "$slug" ]; then
-            slug=$(printf '%s' "$BRANCH_NAME" | sha256sum | cut -c1-12)
-          fi
-          echo "name=pr-${slug}" >> "$GITHUB_OUTPUT"
-      - name: Deploy PartyKit online room (preview)
-        env:
-          PARTYKIT_LOGIN: ${{ secrets.PARTYKIT_LOGIN }}
-          PARTYKIT_TOKEN: ${{ secrets.PARTYKIT_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        # A preview under the custom domain lands on <preview>.<domain>, i.e.
-        # pr-<slug>.online.allkaraoke.party. The zone's certificate already covers
-        # *.online.allkaraoke.party, so no extra certificate work per branch.
-        run: pnpm exec partykit deploy --preview ${{ steps.preview.outputs.name }} --domain online.allkaraoke.party
       - name: Build app
-        env:
-          # Points the build at the preview PartyKit room deployed above, instead of production.
-          # P2P rooms need no equivalent — their signaling is part of the Worker deployed below and
-          # the client reaches it same-origin.
-          VITE_APP_ONLINE_PARTYKIT_URL: wss://${{ steps.preview.outputs.name }}.online.allkaraoke.party
         run: pnpm build
         shell: bash
       - name: Upload to Cloudflare

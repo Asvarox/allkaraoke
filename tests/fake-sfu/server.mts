@@ -1,9 +1,10 @@
 /**
- * A stand-in for the Cloudflare Realtime SFU, for the end-to-end suite.
+ * A stand-in for the Cloudflare Realtime SFU, for the end-to-end suite and for local development
+ * without a Realtime app (`scripts/vite-plugin-fake-sfu.ts` starts it next to the dev server).
  *
  * Implements only what `worker/online-signaling.ts` calls, with a real WebRTC endpoint behind it
  * (werift), so the browser runs the production `SfuSession` / `SfuRoomConnection` code — the SFU
- * handshake, negotiated channel ids, the transport coming up — instead of the relay.
+ * handshake, negotiated channel ids, the transport coming up.
  *
  * The routing mirrors Cloudflare's data-channel semantics as `docs/online-mode.md` describes them:
  * - a `local` channel is something the session publishes; whatever the browser sends on it goes to
