@@ -246,8 +246,8 @@ importers:
         specifier: ^0.12.2
         version: 0.12.2
       aubiojs:
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.2.1
+        version: 0.2.1
       bezier-easing:
         specifier: ^3.1.0
         version: 3.1.0
@@ -3617,8 +3617,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  aubiojs@0.1.0:
-    resolution: {integrity: sha512-ikjNTJvreFCBh2c8BsKTG/p9TT4mxDzXYnJE62Nx74X7wSm32hkftlQEb2hPIMJu7ZrRvRGBoxHWkA/IJE86YA==}
+  aubiojs@0.2.1:
+    resolution: {integrity: sha512-lTMm5j/UMGlCvmZlBfBe9KM+tMdvnxm93fwaMugcPak/zUJfFMtkXf5azC4gG/V1FWXGmh1ejsa5sdm+Nlxs8w==}
 
   babel-plugin-macros@3.1.0:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
@@ -8769,7 +8769,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  aubiojs@0.1.0: {}
+  aubiojs@0.2.1: {}
 
   babel-plugin-macros@3.1.0:
     dependencies:
