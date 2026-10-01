@@ -1,5 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
+import { MAX_POINTS } from '~/consts';
 import { defineMutation, defineQuery } from '~/modules/network/rpc/define';
 import { ExtractContract } from '~/modules/network/rpc/types';
 import { unpackChartTransfer } from '~/modules/online/protocol/chart-transfer';
@@ -35,6 +36,7 @@ import {
   OnlineRoomState,
   OnlineSubscriptionChannels,
   PlayersStats,
+  RoomStandings,
   SongHoverPreview,
   SongVote,
   SongVotes,
@@ -53,7 +55,8 @@ type LatePersistedField =
   | 'playbackAnchor'
   | 'pause'
   | 'resumeCountdownEndsAt'
-  | 'finishRequestedAt';
+  | 'finishRequestedAt'
+  | 'standings';
 
 /**
  * The hibernation payload, derived from `OnlineRoomLogic.snapshot()` so the type cannot drift
@@ -102,6 +105,8 @@ export class OnlineRoomLogic {
   private pause: OnlineRoomState['pause'] = null;
   private resumeCountdownEndsAt: number | null = null;
   private leaderboard: OnlineRoomState['leaderboard'] = [];
+  /** Standings across every song of this room — see `bankStandings`. */
+  private standings: RoomStandings = {};
   private finalResults: OnlineFinalResult[] | null = null;
   private lastActivityAt: number;
   private bannedIds: string[] = [];
@@ -164,6 +169,7 @@ export class OnlineRoomLogic {
       this.chartData = restoreFrom.chartData;
       this.chartPreview = restoreFrom.chartPreview ?? null;
       this.leaderboard = restoreFrom.leaderboard;
+      this.standings = restoreFrom.standings ?? {};
       this.finalResults = restoreFrom.finalResults;
       this.lastActivityAt = restoreFrom.lastActivityAt;
       this.bannedIds = restoreFrom.bannedIds ?? [];
@@ -319,6 +325,7 @@ export class OnlineRoomLogic {
     resumeCountdownEndsAt: this.resumeCountdownEndsAt,
     finishRequestedAt: this.finishRequestedAt,
     leaderboard: [...this.leaderboard],
+    standings: { ...this.standings },
     finalResults: this.finalResults ? [...this.finalResults] : null,
     hostEpoch: this.deps.hostEpoch?.() ?? 0,
   });
@@ -344,6 +351,8 @@ export class OnlineRoomLogic {
     /** Preview (video/details) of the selected chart, shown in every lobby. */
     chartPreview: this.chartPreview,
     leaderboard: this.leaderboard,
+    /** Persisted so a takeover or a hibernation wake doesn't reset the running totals. */
+    standings: this.standings,
     finalResults: this.finalResults,
     lastActivityAt: this.lastActivityAt,
     /** Participants kicked by the host — they cannot rejoin this room. */
@@ -542,6 +551,8 @@ export class OnlineRoomLogic {
     this.clearWake(`grace:${id}`);
     this.participants = this.participants.filter((other) => other.id !== id);
     this.leaderboard = this.leaderboard.filter((entry) => entry.participantId !== id);
+    // Leaving for good resets the score — whoever takes the seat next is a different singer
+    delete this.standings[id];
     delete this.songVotes[id];
     delete this.playerStats[id];
     delete this.playback[id];
@@ -713,7 +724,24 @@ export class OnlineRoomLogic {
     }
   };
 
+  /** Adds the finished song to the room's standings, read off the leaderboard everyone watched.
+   * Rebuilt rather than added to, so `lastSong` empties for anyone the song passed by. */
+  private bankStandings = () => {
+    const banked: RoomStandings = {};
+    this.participants.forEach((participant) => {
+      const previous = this.standings[participant.id];
+      const entry = this.leaderboard.find((other) => other.participantId === participant.id);
+      const lastSong = entry ? entry.score : null;
+      // Nothing to remember yet for someone who has sung neither this song nor an earlier one.
+      if (lastSong === null && previous === undefined) return;
+      banked[participant.id] = { total: (previous?.total ?? 0) + (lastSong ?? 0), lastSong };
+    });
+    this.standings = banked;
+  };
+
   private enterResults = () => {
+    // A song ended during readiness was never sung — its all-zero leaderboard is not a result
+    if (this.phase === 'singing') this.bankStandings();
     this.phase = 'results';
     // The readiness deadline/timer are left standing — results can be entered straight out of
     // readiness (a forced end) and this transition has never cleared them. The timer is inert
@@ -1061,6 +1089,10 @@ export class OnlineRoomLogic {
       publishScore: defineMutation((ctx, score: number) => {
         const participant = this.requireParticipant(ctx.senderId);
         if (this.phase !== 'singing' && this.phase !== 'readiness') return;
+        // The standings add this up for the rest of the evening, so a bad number is dropped and an
+        // out-of-range one pulled back (the game engine reports -1 for a player it doesn't have yet)
+        if (!Number.isFinite(score)) return;
+        score = Math.min(Math.max(score, 0), MAX_POINTS);
         const entry = this.leaderboard.find((other) => other.participantId === participant.id);
         if (entry) {
           entry.score = score;

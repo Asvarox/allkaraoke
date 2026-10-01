@@ -33,7 +33,7 @@ Prefer `src/modules/elements/akui/` over raw HTML plus classes:
   justify-center rounded-xl bg-black/40` plus an inset shadow. Override via `className`; reach past
   it only when those defaults are actively wrong.
 - **`Button` / `Menu` / `Menu.Button` / `Menu.Header`** — every control and menu screen.
-- **`Chip`, `Badge`, `Tag`, `Kbd`, `Select`, `Selector`, `Checkbox`, `Skeleton`, `BottomSheet`,
+- **`Chip`, `Badge`, `Kbd`, `Select`, `Selector`, `Checkbox`, `Skeleton`, `BottomSheet`,
   `Modal`, `Backdrop`** — check for one of these before building the same thing again.
 - Compose with `twc(Typography)` / `twc(Box)` rather than reimplementing them.
 

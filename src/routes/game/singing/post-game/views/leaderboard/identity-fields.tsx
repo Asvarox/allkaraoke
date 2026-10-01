@@ -4,18 +4,8 @@ import { MAX_NAME_LENGTH } from '~/consts';
 import { Select, SelectOption } from '~/modules/elements/akui/select';
 import { Flag } from '~/modules/elements/flag';
 import { Input } from '~/modules/elements/input';
-import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+import { RegisterFunc, splitNavProps } from '~/modules/hooks/use-keyboard-nav';
 import { getCountries, NO_COUNTRY } from '~/modules/leaderboard/countries';
-
-type RegisterProps = ReturnType<RegisterFunc>;
-
-/** `Select` consumes the arrow-out handler; a plain `Input` would pass it straight to the DOM. */
-const withoutNavHandler = (props: RegisterProps) => {
-  const { $keyboardNavigationChangeFocus: _navHandler, ...rest } = props as RegisterProps &
-    Record<'$keyboardNavigationChangeFocus', unknown>;
-
-  return rest;
-};
 
 // Sized by whichever container `Select` puts it in — the option list, or the strip on the field
 const flagIcon = (isocode: string) => <Flag isocode={isocode} loading="lazy" className="h-full w-full object-cover" />;
@@ -93,13 +83,13 @@ function LeaderboardIdentityFields({
         ref={nameRef}
         disabled={disabled}
         // `Input` forwards unknown props to the DOM, and the nav handler is not a valid attribute
-        {...withoutNavHandler(
+        {...splitNavProps(
           register('leaderboard-name', () => nameRef.current?.element?.focus(), undefined, nameIsDefault, {
             disabled,
             control: { type: 'text', label: 'Name', value: name },
             onValueChange: onNameChange,
           }),
-        )}
+        ).navProps}
       />
       {trailing}
     </div>
