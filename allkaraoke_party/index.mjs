@@ -2636,9 +2636,8 @@ var LeaderboardBoard = class extends DurableObject {
 * (a later grant revokes the earlier one), so a slot must never have two live claimants — the
 * directory Durable Object is what guarantees that. */
 var slotChannelName = (slot) => `slot-${slot}`;
-/** A P2P room code in full: a lead digit and four lowercase letters, five characters like every
-* room code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to
-* this, so a room can only ever exist in the backend its code points to. */
+/** A room code in full: a lead digit and four lowercase letters, five characters like every room
+* code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to this. */
 var P2P_ROOM_CODE_PATTERN = /^[2-9][a-z]{4}$/;
 /** A room's directory row is wiped this long after the last call touching it. The host's keepalive
 * is what holds a live room open, so this only has to outlast the gap between keepalives. */
@@ -2684,7 +2683,7 @@ var emptyState = (now) => ({
 	members: [],
 	lastActivityAt: now
 });
-var OnlineDirectory = class OnlineDirectory extends DurableObject {
+var OnlineDirectory = class extends DurableObject {
 	state;
 	constructor(ctx, env) {
 		super(ctx, env);
@@ -2713,96 +2712,12 @@ var OnlineDirectory = class OnlineDirectory extends DurableObject {
 		this.state.hostSessionId = next?.sessionId ?? null;
 		if (next) this.state.epoch += 1;
 	}
-	info(dataPlane = "sfu") {
+	info() {
 		return {
 			created: this.state.created,
 			hostSessionId: this.state.hostSessionId,
-			epoch: this.state.epoch,
-			dataPlane
+			epoch: this.state.epoch
 		};
-	}
-	static HOST_TAG = "host";
-	static slotTag = (slot) => `slot:${slot}`;
-	/** Who a socket belongs to. The role tags are fixed when a socket is accepted, so after a
-	* promotion the outgoing host's socket still carries `host` — this is what tells the two apart. */
-	static participantTag = (participantId) => `participant:${participantId}`;
-	isCurrentHostSocket(socket) {
-		const tags = this.ctx.getTags(socket);
-		if (!tags.includes(OnlineDirectory.HOST_TAG)) return false;
-		return this.state.hostParticipantId !== null && tags.includes(OnlineDirectory.participantTag(this.state.hostParticipantId));
-	}
-	/** Whether anybody is currently holding the room's host socket, ignoring one that is on its way
-	* out — `webSocketClose` runs while its own socket is still listed. */
-	hasLiveHostSocket(except) {
-		return this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).some((socket) => socket !== except && this.isCurrentHostSocket(socket));
-	}
-	/**
-	* The relay's socket upgrade. This has to be `fetch` rather than an RPC method: a 101 response
-	* carrying a `webSocket` cannot cross the RPC boundary, so the signaling layer forwards the
-	* original request here instead.
-	*
-	* Role and slot are derived from directory membership, never from the request. Taking them from
-	* the query string would have let anyone holding a room code open a host-tagged socket and
-	* broadcast to the room as if they were running it, or read another singer's slot.
-	*/
-	async fetch(request) {
-		const url = new URL(request.url);
-		const participantId = url.searchParams.get("participantId") ?? "";
-		const sessionId = url.searchParams.get("sessionId") ?? "";
-		const auth = this.authorize(participantId, sessionId);
-		if (!auth.ok) return new Response("Not a member of this room", { status: 403 });
-		const pair = new WebSocketPair();
-		const roleTag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
-		this.ctx.acceptWebSocket(pair[1], [roleTag, OnlineDirectory.participantTag(participantId)]);
-		return new Response(null, {
-			status: 101,
-			webSocket: pair[0]
-		});
-	}
-	async webSocketMessage(socket, raw) {
-		if (typeof raw !== "string") return;
-		const tags = this.ctx.getTags(socket);
-		if (tags.includes(OnlineDirectory.HOST_TAG)) {
-			if (!this.isCurrentHostSocket(socket)) return;
-			let frame;
-			try {
-				frame = JSON.parse(raw);
-			} catch {
-				return;
-			}
-			const payload = JSON.stringify(frame.message);
-			(frame.kind === "broadcast" ? this.ctx.getWebSockets().filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG)) : this.ctx.getWebSockets(OnlineDirectory.slotTag(frame.slot))).forEach((target) => target.send(payload));
-			return;
-		}
-		const slotTag = tags.find((tag) => tag.startsWith("slot:"));
-		if (!slotTag) return;
-		let message;
-		try {
-			message = JSON.parse(raw);
-		} catch {
-			return;
-		}
-		const inbound = {
-			slot: Number(slotTag.slice(5)),
-			message
-		};
-		this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).filter((host) => this.isCurrentHostSocket(host)).forEach((host) => host.send(JSON.stringify(inbound)));
-	}
-	async webSocketClose(socket) {
-		const tags = this.ctx.getTags(socket);
-		if (tags.includes(OnlineDirectory.HOST_TAG)) {
-			if (this.hasLiveHostSocket(socket)) return;
-			const gone = JSON.stringify({ hostGone: true });
-			this.ctx.getWebSockets().filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG)).forEach((client) => client.send(gone));
-			return;
-		}
-		const slotTag = tags.find((tag) => tag.startsWith("slot:"));
-		if (!slotTag) return;
-		const closed = JSON.stringify({
-			slot: Number(slotTag.slice(5)),
-			closed: true
-		});
-		this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(closed));
 	}
 	/**
 	* What this session may open channels for. The signaling layer asks before forwarding any
@@ -2959,9 +2874,7 @@ var TURN_CREDENTIAL_TTL_SECONDS = 7200;
 /** Re-mint this long before expiry rather than handing out a credential about to lapse. */
 var TURN_REFRESH_MARGIN_MS = 6e5;
 /** Room codes are the only thing that reaches the directory as a Durable Object name, so they are
-* pinned to exactly what the game generates for a P2P room before anything is looked up. A code of
-* any other shape belongs to PartyKit; refusing it here is what keeps a room from ever existing in
-* both backends under one code, whatever an out-of-date client asks for. */
+* pinned to exactly what the game generates before anything is looked up. */
 var ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 /**
 * The channel `datachannels/establish` sets the SCTP transport up with. Cloudflare's endpoint needs
@@ -3197,14 +3110,9 @@ var handleCreateDataChannels = async (request, env) => {
 		id: channel.id
 	})) });
 };
-var handleRoom = async (request, env, roomCode, action, dataPlane) => {
+var handleRoom = async (request, env, roomCode, action) => {
 	const directory = getDirectory(env, roomCode);
-	if (action === "" && request.method === "GET") return json(request, await directory.info(dataPlane));
-	if (action === "relay") {
-		if (dataPlane !== "relay") return json(request, { error: "Relay is disabled" }, 404);
-		if (request.headers.get("Upgrade") !== "websocket") return json(request, { error: "Expected websocket" }, 426);
-		return directory.fetch(request);
-	}
+	if (action === "" && request.method === "GET") return json(request, await directory.info());
 	if (request.method !== "POST") return json(request, { error: "Method not allowed" }, 405);
 	const body = await request.json().catch(() => null);
 	if (action === "join") {
@@ -3271,7 +3179,7 @@ var handleOnlineSignaling = async (request, env, pathname) => {
 		if (rest.startsWith("room/")) {
 			const [roomCode, action = ""] = rest.slice(5).split("/");
 			if (!ROOM_CODE_PATTERN.test(roomCode ?? "")) return badRequest(request, "invalid room code");
-			return await handleRoom(request, env, roomCode, action, hasRealtimeCredentials ? "sfu" : "relay");
+			return await handleRoom(request, env, roomCode, action);
 		}
 		return json(request, { error: "Not found" }, 404);
 	} catch (error) {
