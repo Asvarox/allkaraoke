@@ -5,10 +5,7 @@ import { DIRECTORY_TTL_MS, ONLINE_SLOT_COUNT } from '../src/modules/online/signa
 import type {
   ChannelAuthorization,
   JoinRoomResponse,
-  OnlineDataPlane,
   PromoteHostResponse,
-  RelayHostFrame,
-  RelayInboundFrame,
   RoomInfoResponse,
 } from '../src/modules/online/signaling/protocol';
 
@@ -115,145 +112,12 @@ export class OnlineDirectory extends DurableObject {
     if (next) this.state.epoch += 1;
   }
 
-  public info(dataPlane: OnlineDataPlane = 'sfu'): RoomInfoResponse {
+  public info(): RoomInfoResponse {
     return {
       created: this.state.created,
       hostSessionId: this.state.hostSessionId,
       epoch: this.state.epoch,
-      dataPlane,
     };
-  }
-
-  // --- fallback relay ---
-  //
-  // Only reachable when the Worker has no Realtime credentials: the end-to-end suite, and a local
-  // checkout without a Cloudflare Realtime app. It forwards the same frames the SFU would, so
-  // everything above `OnlineRoomChannels` — the room logic, the host runtime, slot binding, host
-  // succession — is the production code path either way. What it costs is precisely what the SFU
-  // was brought in to stop paying: this object stays resident for as long as anyone is singing.
-  // The signaling layer is what keeps it out of production; see `handleOnlineSignaling`.
-
-  private static readonly HOST_TAG = 'host';
-  private static readonly slotTag = (slot: number) => `slot:${slot}`;
-  /** Who a socket belongs to. The role tags are fixed when a socket is accepted, so after a
-   * promotion the outgoing host's socket still carries `host` — this is what tells the two apart. */
-  private static readonly participantTag = (participantId: string) => `participant:${participantId}`;
-
-  private isCurrentHostSocket(socket: WebSocket): boolean {
-    const tags = this.ctx.getTags(socket);
-    if (!tags.includes(OnlineDirectory.HOST_TAG)) return false;
-    return (
-      this.state.hostParticipantId !== null &&
-      tags.includes(OnlineDirectory.participantTag(this.state.hostParticipantId))
-    );
-  }
-
-  /** Whether anybody is currently holding the room's host socket, ignoring one that is on its way
-   * out — `webSocketClose` runs while its own socket is still listed. */
-  private hasLiveHostSocket(except?: WebSocket): boolean {
-    return this.ctx
-      .getWebSockets(OnlineDirectory.HOST_TAG)
-      .some((socket) => socket !== except && this.isCurrentHostSocket(socket));
-  }
-
-  /**
-   * The relay's socket upgrade. This has to be `fetch` rather than an RPC method: a 101 response
-   * carrying a `webSocket` cannot cross the RPC boundary, so the signaling layer forwards the
-   * original request here instead.
-   *
-   * Role and slot are derived from directory membership, never from the request. Taking them from
-   * the query string would have let anyone holding a room code open a host-tagged socket and
-   * broadcast to the room as if they were running it, or read another singer's slot.
-   */
-  async fetch(request: Request): Promise<Response> {
-    const url = new URL(request.url);
-    const participantId = url.searchParams.get('participantId') ?? '';
-    const sessionId = url.searchParams.get('sessionId') ?? '';
-
-    const auth = this.authorize(participantId, sessionId);
-    if (!auth.ok) return new Response('Not a member of this room', { status: 403 });
-
-    const pair = new WebSocketPair();
-    const roleTag = auth.isHost ? OnlineDirectory.HOST_TAG : OnlineDirectory.slotTag(auth.slot);
-    // Hibernatable, and tagged rather than held in a field — the tags survive an eviction, an
-    // in-memory map would not.
-    this.ctx.acceptWebSocket(pair[1], [roleTag, OnlineDirectory.participantTag(participantId)]);
-    return new Response(null, { status: 101, webSocket: pair[0] });
-  }
-
-  async webSocketMessage(socket: WebSocket, raw: string | ArrayBuffer) {
-    if (typeof raw !== 'string') return;
-    const tags = this.ctx.getTags(socket);
-
-    if (tags.includes(OnlineDirectory.HOST_TAG)) {
-      // A superseded host is not one: it is a tab that has not caught up yet, and letting it keep
-      // broadcasting would have it fight the host that replaced it.
-      if (!this.isCurrentHostSocket(socket)) return;
-      let frame: RelayHostFrame;
-      try {
-        frame = JSON.parse(raw);
-      } catch {
-        return;
-      }
-      const payload = JSON.stringify(frame.message);
-      const targets =
-        frame.kind === 'broadcast'
-          ? this.ctx
-              .getWebSockets()
-              .filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG))
-          : this.ctx.getWebSockets(OnlineDirectory.slotTag(frame.slot));
-      targets.forEach((target) => target.send(payload));
-      return;
-    }
-
-    const slotTag = tags.find((tag) => tag.startsWith('slot:'));
-    if (!slotTag) return;
-    // Guarded like the host branch above: a client can send anything on its socket, and throwing
-    // in this handler is treated as an error for the whole Durable Object — one malformed frame
-    // from anyone holding the room code would take the relay down.
-    let message: unknown;
-    try {
-      message = JSON.parse(raw);
-    } catch {
-      return;
-    }
-    const inbound: RelayInboundFrame = { slot: Number(slotTag.slice('slot:'.length)), message };
-    // Only the host in charge, for the same reason: two authorities answering the same RPC is
-    // worse than none.
-    this.ctx
-      .getWebSockets(OnlineDirectory.HOST_TAG)
-      .filter((host) => this.isCurrentHostSocket(host))
-      .forEach((host) => host.send(JSON.stringify(inbound)));
-  }
-
-  async webSocketClose(socket: WebSocket) {
-    const tags = this.ctx.getTags(socket);
-
-    if (tags.includes(OnlineDirectory.HOST_TAG)) {
-      // Only when it leaves the room without a host. The condition is deliberately "is anybody
-      // still holding the host socket" rather than "was this the host": a host that leaves cleanly
-      // has already had its successor elected by `electFallbackHost`, so checking the closing
-      // socket's own identity would swallow the very case this signal exists for. The other side of
-      // it is a socket left over from a host that was superseded while throttled — that one closes
-      // with the new host's socket already open, and announcing it as a loss would send the room
-      // off to elect a successor to the host it just elected.
-      if (this.hasLiveHostSocket(socket)) return;
-      // The host's socket dies with its tab whether or not any JavaScript got to run, so this is
-      // an exact signal where the SFU has none — clients would otherwise sit through the whole
-      // heartbeat stall before starting the succession they already know is needed.
-      const gone = JSON.stringify({ hostGone: true });
-      this.ctx
-        .getWebSockets()
-        .filter((candidate) => !this.ctx.getTags(candidate).includes(OnlineDirectory.HOST_TAG))
-        .forEach((client) => client.send(gone));
-      return;
-    }
-
-    const slotTag = tags.find((tag) => tag.startsWith('slot:'));
-    if (!slotTag) return;
-    // The host learns a singer is gone the way it would over the SFU: the pipe closed.
-    const closed = JSON.stringify({ slot: Number(slotTag.slice('slot:'.length)), closed: true });
-    this.ctx.getWebSockets(OnlineDirectory.HOST_TAG).forEach((host) => host.send(closed));
   }
 
   /**

@@ -1,9 +1,9 @@
 UNVERIFIED_SONGS_ADMIN_TOKEN=local-unverified-songs-admin-token
 ADMIN_PANEL_PASSWORD=12345
-# Online mode. Left commented on purpose: this file gets copied verbatim to .dev.vars, and the
-# Worker treats the presence of these two as "the SFU is configured" — a placeholder value would
-# make it route rooms at an app id that does not exist instead of falling back to the local relay.
-# Fill them in only if you have a real Realtime app and want to exercise the SFU locally.
+# Online mode. Left commented on purpose: without these two, `pnpm start` runs the fake SFU from
+# tests/fake-sfu next to the dev server and points the Worker at it, so online mode works locally
+# with no Cloudflare account. A placeholder value here would turn that off and route rooms at an app
+# id that does not exist. Fill them in only if you have a real Realtime app and want to use it.
 # REALTIME_APP_ID=your-cloudflare-realtime-app-id
 # REALTIME_APP_TOKEN=your-cloudflare-realtime-app-token
 

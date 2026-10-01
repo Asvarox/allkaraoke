@@ -64,15 +64,10 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     private readonly participantId: string,
   ) {}
 
-  public getDataPlane = () => 'sfu' as const;
-
   public getMembership = () => this.membership;
   /** Fires when the connection to the SFU is unrecoverable — the caller re-joins from scratch. */
   public onLost = (listener: () => void) => this.session.onLost(listener);
 
-  /** The SFU does not report who stopped publishing, so a lost host is only ever inferred from
-   * missing heartbeats here. Present to satisfy the contract the relay does implement. */
-  public onHostLost = () => () => undefined;
   public getSessionId = () => this.session.getSessionId();
   public isConnected = () => this.session.isConnected() && this.broadcastChannel?.readyState === 'open';
 

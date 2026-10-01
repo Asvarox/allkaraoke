@@ -1,6 +1,6 @@
 import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it } from 'vitest';
 
 import { ONLINE_SLOT_COUNT } from '../src/modules/online/signaling/protocol';
 import type { JoinRoomResponse } from '../src/modules/online/signaling/protocol';
@@ -17,40 +17,11 @@ const getDirectory = () => {
 /** The secret a successful join minted, which every later call on that membership has to present. */
 const secretOf = (response: JoinRoomResponse) => (response.ok ? response.secret : undefined);
 
-/**
- * Opens a relay socket the way the signaling layer does — by forwarding an upgrade request, since a
- * 101 carrying a `webSocket` cannot cross the Durable Object RPC boundary.
- */
-const openRelay = async (directory: DurableObjectStub<OnlineDirectory>, participantId: string, sessionId: string) => {
-  const url = `https://example.test/online/room/testr/relay?participantId=${participantId}&sessionId=${sessionId}`;
-  const response = await directory.fetch(new Request(url, { headers: { Upgrade: 'websocket' } }));
-  const socket = response.webSocket!;
-  socket.accept();
-  const received: string[] = [];
-  socket.addEventListener('message', (event) => {
-    received.push(event.data as string);
-  });
-  return { socket, received, send: (raw: string) => socket.send(raw), close: () => socket.close() };
-};
-
-/** A frame in the shape the host sends on the relay: one broadcast, fanned out to every client. */
-const hostBroadcast = (message: unknown) => JSON.stringify({ kind: 'broadcast', message });
-
 afterEach(async () => {
   await reset();
 });
 
 describe('OnlineDirectory', () => {
-  it('reports the data plane it was asked about, defaulting to the SFU', async () => {
-    const directory = getDirectory();
-    await directory.join('p1', 's1', true);
-
-    // Production must never be told 'relay' — the signaling layer only passes it when Realtime is
-    // unconfigured, and the default here is the safe one either way.
-    expect(await directory.info()).toMatchObject({ dataPlane: 'sfu' });
-    expect(await directory.info('relay')).toMatchObject({ dataPlane: 'relay' });
-  });
-
   it('refuses a room nobody opened', async () => {
     const directory = getDirectory();
 
@@ -267,49 +238,6 @@ describe('OnlineDirectory', () => {
 
     expect(result).toMatchObject({ ok: false, reason: 'not-authorized' });
     expect(await directory.info()).toMatchObject({ hostSessionId: 's1', epoch });
-  });
-
-  it('ignores relay traffic from a host that has been superseded', async () => {
-    const directory = getDirectory();
-    const host = await directory.join('p1', 's1', true);
-    const second = await directory.join('p2', 's2', false);
-    const oldHostSocket = await openRelay(directory, 'p1', 's1');
-    const guestSocket = await openRelay(directory, 'p2', 's2');
-    await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
-    const newHostSocket = await openRelay(directory, 'p2', 's2');
-
-    // The promotion does not reach into the outgoing host's tab; it may only have been throttled
-    // and still has its socket. Left alone it would answer client frames alongside the new host.
-    oldHostSocket.send(hostBroadcast({ t: 'hb', epoch: 1 }));
-    newHostSocket.send(hostBroadcast({ t: 'hb', epoch: 2 }));
-
-    // What lands is the whole assertion: the stale frame was sent first, so a single arrival that
-    // is the new host's proves the other was dropped rather than merely slower.
-    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(1));
-    expect(JSON.parse(guestSocket.received[0])).toMatchObject({ t: 'hb', epoch: 2 });
-  });
-
-  it('announces a host loss when a room is left without one, and not otherwise', async () => {
-    const directory = getDirectory();
-    const host = await directory.join('p1', 's1', true);
-    const second = await directory.join('p2', 's2', false);
-    const oldHostSocket = await openRelay(directory, 'p1', 's1');
-    const guestSocket = await openRelay(directory, 'p2', 's2');
-    await directory.promote('p2', 's2', (host as { epoch: number }).epoch, secretOf(second));
-    const newHostSocket = await openRelay(directory, 'p2', 's2');
-
-    // A stale host socket closing is routine — the room already has a host, and announcing it as a
-    // loss would send everyone off to elect a successor to the host they just elected. Proven by a
-    // frame sent straight after arriving with nothing in front of it, rather than by waiting a
-    // fixed time and taking the silence on trust.
-    oldHostSocket.close();
-    newHostSocket.send(hostBroadcast({ t: 'hb', epoch: 2 }));
-    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(1));
-
-    // The host actually in charge going away is the signal this exists for.
-    newHostSocket.close();
-    await vi.waitFor(() => expect(guestSocket.received).toHaveLength(2));
-    expect(guestSocket.received.map((frame) => JSON.parse(frame))).toEqual([{ t: 'hb', epoch: 2 }, { hostGone: true }]);
   });
 
   it('elects a replacement host when the current one leaves outright', async () => {

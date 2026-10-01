@@ -54,8 +54,8 @@ const createRoom = (restoreFrom?: OnlinePersistedState, liveParticipantIds?: Rea
   const scheduleWake = vi.fn();
   const destroy = vi.fn();
   const disconnect = vi.fn();
-  // Stands in for the room's single Durable Object alarm: re-armed on every scheduleWake and, when
-  // it comes due on the fake clock, calls back into handleAlarm exactly as PartyKit's onAlarm does.
+  // Stands in for the room's single wake-up timer: re-armed on every scheduleWake and, when
+  // it comes due on the fake clock, calls back into handleAlarm exactly as the host's timer does.
   let alarm: ReturnType<typeof setTimeout> | null = null;
   // Filled in right below; the alarm callback only ever runs after construction has finished.
   const armed: { logic?: OnlineRoomLogic } = {};
@@ -1339,8 +1339,8 @@ describe('chat', () => {
 
       say(room, 'p2', 'said once, then quiet');
 
-      // The PartyKit room has no periodic write of its own, so a message that never persists is
-      // lost the moment it hibernates — acknowledged to the sender and gone.
+      // Nothing else writes the snapshot on a timer, so a message that never persists is lost if the
+      // host vanishes — acknowledged to the sender and gone.
       expect(room.persist).toHaveBeenCalledTimes(1);
       const written = room.persist.mock.calls[0][0] as OnlinePersistedState;
       expect(written.chat).toEqual([expect.objectContaining({ text: 'said once, then quiet' })]);

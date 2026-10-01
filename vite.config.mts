@@ -8,8 +8,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
+import { type ConfigEnv } from 'vite';
 import { configDefaults, defineConfig } from 'vitest/config';
 import { bundledIcons } from './scripts/vite-plugin-bundled-icons';
+import { fakeSfu, hasRealtimeCredentials } from './scripts/vite-plugin-fake-sfu';
 import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
@@ -27,31 +29,53 @@ if (useHttps && !customCert) {
   );
 }
 
-// Set for the end-to-end suite only (`pnpm start:e2e`, and CI's e2e build): points the Worker's
-// Realtime calls at the fake SFU in tests/fake-sfu, with placeholder credentials so P2P rooms take
-// the SFU data plane rather than the relay. Never set on a build that gets deployed.
-// The signaling rate limiter goes too: every page of the suite shares one local IP, far past the
-// budget sized for one real browser.
-const fakeSfuUrl = process.env.E2E_FAKE_SFU_URL;
-const cloudflareOptions: Parameters<typeof cloudflare>[0] = fakeSfuUrl
-  ? {
-      config: (config) => {
-        config.vars = {
-          ...config.vars,
-          REALTIME_APP_ID: 'e2e-fake-sfu',
-          REALTIME_APP_TOKEN: 'e2e-fake-sfu',
-          REALTIME_API_URL: fakeSfuUrl,
-        };
-        // Mutated rather than returned: a returned array is concatenated onto the original.
-        config.ratelimits = config.ratelimits?.filter(({ name }) => name !== 'ONLINE_SIGNALING_RATE_LIMITER');
-      },
-      // Runs next to a regular `pnpm start`; sharing its Durable Object storage would mix rooms.
-      persistState: { path: '.wrangler/state-e2e' },
-    }
-  : undefined;
+// Online mode needs a Cloudflare Realtime SFU, and a checkout has no Realtime app. So the Worker's
+// Realtime calls are pointed at the fake SFU in tests/fake-sfu, with placeholder credentials, in two
+// cases - never on a build that gets deployed:
+// - the end-to-end suite (`E2E_FAKE_SFU_URL`: `pnpm start:e2e`, and CI's e2e build), which starts the
+//   fake itself and keeps its Durable Object storage and dep cache apart from a regular `pnpm start`;
+// - the dev server, when `.dev.vars` holds no Realtime credentials: the fake is started alongside it.
+// The signaling rate limiter goes in both: every page of the suite, or every tab a developer opens to
+// play against themselves, shares one local IP, far past the budget sized for one real browser.
+const e2eFakeSfuUrl = process.env.E2E_FAKE_SFU_URL;
+const DEV_FAKE_SFU_PORT = 3481;
+
+const fakeSfuUrlFor = ({ command, isPreview }: ConfigEnv): string | undefined => {
+  if (e2eFakeSfuUrl) return e2eFakeSfuUrl;
+  if (command !== 'serve' || isPreview || process.env.VITEST || process.env.VITEST_WORKER_ID) return undefined;
+  return hasRealtimeCredentials(__dirname) ? undefined : `http://127.0.0.1:${DEV_FAKE_SFU_PORT}/v1`;
+};
+
+const cloudflareOptionsFor = (fakeSfuUrl: string | undefined): Parameters<typeof cloudflare>[0] =>
+  fakeSfuUrl
+    ? {
+        config: (config) => {
+          config.vars = {
+            ...config.vars,
+            REALTIME_APP_ID: 'fake-sfu',
+            REALTIME_APP_TOKEN: 'fake-sfu',
+            REALTIME_API_URL: fakeSfuUrl,
+          };
+          // Mutated rather than returned: a returned array is concatenated onto the original.
+          config.ratelimits = config.ratelimits?.filter(({ name }) => name !== 'ONLINE_SIGNALING_RATE_LIMITER');
+        },
+        // Runs next to a regular `pnpm start`; sharing its Durable Object storage would mix rooms.
+        persistState: e2eFakeSfuUrl ? { path: '.wrangler/state-e2e' } : undefined,
+      }
+    : undefined;
+
+/** The Cloudflare plugin, plus the fake SFU's process when the dev server has to run one. */
+const cloudflarePlugins = (env: ConfigEnv) => {
+  if (process.env.VITEST || process.env.VITEST_WORKER_ID) return [];
+  const fakeSfuUrl = fakeSfuUrlFor(env);
+  return [
+    cloudflare(cloudflareOptionsFor(fakeSfuUrl)),
+    fakeSfuUrl && !e2eFakeSfuUrl ? fakeSfu({ port: DEV_FAKE_SFU_PORT }) : null,
+  ];
+};
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig((env) => ({
   // experimental: {
   // bundledDev: true,
   // },
@@ -59,7 +83,7 @@ export default defineConfig({
     tsconfigPaths: true, // Tells Vite to read paths from tsconfig.json
   },
   plugins: [
-    process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(cloudflareOptions),
+    ...cloudflarePlugins(env),
     bundledIcons({ namesFile: path.resolve(__dirname, 'src/modules/elements/akui/icon-names.ts') }),
     react({
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
@@ -103,7 +127,7 @@ export default defineConfig({
   ],
   base: '/',
   // The same for the dep cache — two dev servers optimising into one directory trample each other.
-  cacheDir: fakeSfuUrl ? 'node_modules/.vite-e2e' : undefined,
+  cacheDir: e2eFakeSfuUrl ? 'node_modules/.vite-e2e' : undefined,
   build: {
     outDir: 'build',
     sourcemap: !process.env.FAST_BUILD,
@@ -218,4 +242,4 @@ export default defineConfig({
       },
     ],
   },
-});
+}));

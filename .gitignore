@@ -143,7 +143,6 @@ storybook-static/
 
 .playwright-cli/
 
-.partykit
 # design-sync (Claude Design)
 .design-sync/sb-reference/
 .design-sync/learnings/

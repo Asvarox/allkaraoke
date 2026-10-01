@@ -1,64 +1,19 @@
 # Online Mode
 
-Online mode lets people in different places sing the same song together. It runs in one of two
-modes, chosen by the `OnlineP2P` feature flag:
+Online mode lets people in different places sing the same song together. The room's authority runs
+in the host's browser and its messages travel over the Cloudflare Realtime SFU, which is billed on
+egress — a few MB per room — rather than by the second.
 
-| Mode | Authority | Wire | Cost |
-| ---- | --------- | ---- | ---- |
-| `server` (flag off, **default**) | `OnlineRoomLogic` in the PartyKit room | WebSocket per client | Duration, for the length of every song |
-| `p2p` (flag on) | The same logic in the host's browser | Cloudflare Realtime SFU | Egress, a few MB per room |
+(It started life as a server-authoritative room on PartyKit, one WebSocket per client. That mode,
+its deployment and the `OnlineP2P` feature flag that chose between the two are gone.)
 
-Both run the *same* `OnlineRoomLogic` and speak the same wire protocol — the only differences are
-where the authority lives and what the messages travel over. That is what makes the flag a real
-switch rather than two codebases.
+### Room codes
 
-`server` is the original online mode, untouched: `partykit/online-room.ts`, deployed to PartyKit by
-CI, reached at `VITE_APP_ONLINE_PARTYKIT_URL`. It is the base, and it stays the default until P2P
-has earned the switch.
-
-**This is a migration, not a permanent pair.** The flag exists so P2P can be rolled out gradually
-and turned off in one click. Once it has proved itself, the intended end state is P2P everywhere
-and the removal of everything behind `server`: the PartyKit project and its deployment, the
-`partykit` dependency, both CI deploy steps, `VITE_APP_ONLINE_PARTYKIT_URL`, the webServer entry in
-`playwright.config.ts`, `WebSocketRoomTransport`, `openServerRoom`, `room-mode.ts` and this
-table. `OnlineRoomLogic` itself stays — it is shared. So do the digit-led codes: once PartyKit is
-gone every code is P2P, and the generator can widen back to the whole alphabet.
-
-Everything below describes `p2p` unless it says otherwise.
-
-### The room code carries the mode
-
-Everyone in a room has to be on the same transport, and the two keep their rooms in different
-places — a PartyKit room is invisible to the directory and the other way round. So the mode is
-written into the room's code, the one thing everybody in a room is guaranteed to share:
-
-- a code that **starts with a digit `2`–`9`** is a P2P room (`P2P_ROOM_CODE_LEADS`);
-- **anything else** — the all-letter codes PartyKit has always used — is a server room.
-
-The flag is read in exactly one place, `useNewRoomMode`, and only to decide what kind of code a
-*new* room is opened with. Joining never consults it: `roomModeOf(code)` decides where the wizard
-looks the code up, where `OnlineClient.connect` goes, and — on the Worker — which codes the
-directory will serve at all (`P2P_ROOM_CODE_PATTERN`), so no room can exist in both backends under
-one code.
-
-Three things follow from that, and they are the reason it is done this way:
-
-- **Mixed rooms work.** The flag is a percentage rollout, so friends are enrolled independently.
-  When each joiner's own flag picked the backend, anyone enrolled differently from the host was
-  told the room did not exist.
-- **The kill switch only affects new rooms.** Turning the flag off changes the next code handed
-  out; everyone already in a P2P room, and everyone joining or reloading one, still goes where its
-  code points.
-- **No mid-room switch.** The code is fixed for the life of the room, so a flag answer that arrives
-  late — PostHog is a network round trip away on somebody's first visit — cannot tear a room down
-  and reopen it in the other backend. For the same reason the create wizard generates the code when
-  it finishes rather than when it opens.
-
-A digit was chosen because no code ever handed out before started with one: every existing
-PartyKit code keeps meaning exactly what it meant, with no fallback needed. `0` and `1` are left
-out because they read as O and l. The price is a smaller code space for P2P rooms — eight lead
-characters instead of twenty-six, about 3.7M codes — which is fine now that knowing a code no longer
-lets anyone act as somebody else in the room.
+A room code is five characters: a lead digit `2`–`9` and four lowercase letters
+(`P2P_ROOM_CODE_PATTERN`). The lead digit is a leftover from when it told the two modes apart — `0`
+and `1` are left out because they read as O and l. The Worker holds its directory to this pattern, so
+a code of any other shape never reaches a Durable Object name. Now that nothing else claims the
+all-letter codes, the generator could widen back to the whole alphabet.
 
 ## The shape of it
 
@@ -242,9 +197,7 @@ broadcast, so the successor's heartbeats never reach it, and it stopped watching
 moment it became host. What it does have is the gap between its own heartbeat ticks. One longer
 than `ONLINE_HOST_STALL_MS` means it was starved for as long as the room waits before replacing a
 host, so it asks the directory who is in charge and steps down if the answer is not itself
-(`verifyStillHosting`). On the relay there is a second, blunter mechanism: `promote` closes the
-superseded host's socket outright, because a socket left open would keep receiving every client's
-frames and answering them.
+(`verifyStillHosting`).
 
 ## The page-navigation constraint
 
@@ -296,36 +249,30 @@ torn down mid-room. Everything else here is indifferent to that change.
 ## Testing
 
 `room-logic.test.ts` was not touched by any of this — it drives the logic through a harness, which
-is why the logic could move into a browser at all, and why both modes can share it.
-
-`online-mode-server.spec.ts` runs a full round through the original PartyKit mode. The rest of the
-online suite runs `p2p`, because feature flags are forced on under e2e — `useNewRoomMode` has an
-opt-in (`useServerOnlineMode` in `tests/helpers.ts`) so the default still gets covered. The mode
-that is live in production must not be the one nobody runs. Each side also has a guest enrolled in
-the *other* mode join by code, which is the mixed-room case above.
+is why the logic could move into a browser at all.
 
 `online-room-host.test.ts` drives the host runtime against an in-memory fabric standing in for the
 SFU, including a takeover from a snapshot.
 
-The end-to-end suite has no Cloudflare Realtime app to talk to — there is no local emulator, and a
-pull-request build has no credentials. So `playwright.config.ts` starts a fake SFU
+There is no local emulator of Cloudflare Realtime, and a pull-request build has no credentials. So
+the end-to-end suite and a checkout with no Realtime app both run against a fake SFU
 (`tests/fake-sfu`): a werift peer implementing just the endpoints the Worker calls, with
-Cloudflare's publish / subscribe / `canReply` routing. `E2E_FAKE_SFU_URL` points the Worker at it
-(see vite.config.mts) — `pnpm start:e2e` sets it for the suite's dev server on port 3020, and CI
-sets it on its e2e build. Every P2P spec therefore runs the production browser code end to end:
-`SfuSession`, `SfuRoomConnection`, the Worker's Realtime calls, and everything above them.
-"Full game flow" asserts no relay socket was opened, so a Worker that silently lost its SFU config
-fails loudly instead of passing on the relay.
+Cloudflare's publish / subscribe / `canReply` routing. The Worker is pointed at it with placeholder
+credentials and `REALTIME_API_URL` (see vite.config.mts):
+
+- **e2e:** `playwright.config.ts` starts the fake on port 3480, and `E2E_FAKE_SFU_URL` makes the
+  suite's dev server on port 3020 (`pnpm start:e2e`) and CI's e2e build use it.
+- **local dev:** `pnpm start` starts the fake on port 3481 itself (`scripts/vite-plugin-fake-sfu.ts`)
+  whenever `.dev.vars` holds no `REALTIME_APP_ID` / `REALTIME_APP_TOKEN`. Put a real pair there to use
+  a real Realtime app instead.
+
+Either way every P2P spec and every local room runs the production browser code end to end:
+`SfuSession`, `SfuRoomConnection`, the Worker's Realtime calls, and everything above them. A Worker
+with no credentials and no fake — a deployed Worker that lost its secrets, say — refuses the SFU
+endpoints with a 503 rather than carrying messages some other way.
 
 The fake is our reading of the API, not the API: it catches regressions in our own code, not a
 misreading of Cloudflare's.
-
-Without Realtime configured — a local checkout with no credentials — the Worker reports
-`dataPlane: 'relay'` and the client opens a WebSocket relay through the room's Durable Object
-instead (`relay-room-connection.ts`). This is deliberately the expensive shape — a server in the
-middle of every message — and production can never take it: the Worker refuses the upgrade whenever
-the SFU is configured. The end-to-end suite no longer runs on it; `online-directory-do.test.ts`
-covers it.
 
 ## ICE: STUN always, TURN opt-in
 
@@ -359,12 +306,12 @@ minority of networks, and losing it must not stop everyone else joining.
 | `ONLINE_TURN_URLS` / `_USERNAME` / `_CREDENTIAL`             | no (own TURN)       | `wrangler secret put`, `.dev.vars`              |
 | `ONLINE_STUN_URLS`                                           | no                  | defaults to Cloudflare's public STUN            |
 | `VITE_APP_SIGNALING_URL`                                     | no                  | `.env`; empty means same origin                 |
-| `VITE_APP_ONLINE_PARTYKIT_URL`                               | server mode         | `.env`; the PartyKit room deployment            |
-| `OnlineP2P` feature flag                                     | no (off = server)   | PostHog                                         |
 
-Create the Realtime app in the Cloudflare dashboard under Realtime → SFU. Without the pair, online
-mode still runs — on the relay — which is fine locally and wrong in production.
+Create the Realtime app in the Cloudflare dashboard under Realtime → SFU. Without the pair the
+Worker's SFU endpoints answer 503; locally the dev server runs the fake SFU instead (see Testing).
+Secrets belong to one Worker by name, so a preview deployed under its own name needs the pair set on it
+too.
 
-Local development: `pnpm dev` runs the vite dev server (with the Worker inside it, via
-`@cloudflare/vite-plugin`, so `/online/*` is same-origin on port 3000) and `partykit dev` for the
-server-mode room. `pnpm start` alone is enough if you only need P2P.
+Local development: `pnpm dev` (or `pnpm start`) runs the vite dev server (with the Worker inside it, via
+`@cloudflare/vite-plugin`, so `/online/*` is same-origin on port 3000), and with no credentials in
+`.dev.vars`, the fake SFU beside it.

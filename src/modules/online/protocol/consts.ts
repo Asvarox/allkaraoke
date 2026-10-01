@@ -110,7 +110,7 @@ export const ONLINE_CHAT_RATE_LIMIT_ERROR = 'Slow down — too many messages';
 /** How often chat writes the room snapshot. Chat deliberately does not persist per message — the
  * whole history is in the snapshot, and in a P2P room persisting broadcasts that snapshot to the
  * succession line, so a write per message would put a hundred lines on the wire for every one
- * sent. It cannot skip persisting altogether either: the PartyKit room has no periodic write of
- * its own, so an acknowledged message would be lost when it hibernates. Coalescing at this
- * interval bounds both — at worst a restart loses this much of the conversation. */
+ * sent. It cannot skip persisting altogether either: nothing else writes the snapshot on a timer,
+ * so an acknowledged message would be lost if the host vanished before the next persist. Coalescing
+ * at this interval bounds both — at worst a takeover loses this much of the conversation. */
 export const ONLINE_CHAT_PERSIST_MS = 2_000;

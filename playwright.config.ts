@@ -136,14 +136,6 @@ const config: PlaywrightTestConfig = {
       timeout: 30_000,
       reuseExistingServer: true,
     },
-    {
-      // The original online mode's room server (standalone PartyKit project, see partykit.json).
-      // Still the default mode; P2P rooms need nothing here, they run against the Worker.
-      command: 'pnpm exec partykit dev --port 1999',
-      port: 1999,
-      timeout: 60_000 * 3,
-      reuseExistingServer: true,
-    },
     // {
     //   command: 'pnpm peerjs',
     //   port: 3001,
