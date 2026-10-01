@@ -9,6 +9,7 @@ import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { configDefaults, defineConfig } from 'vitest/config';
+import { bundledIcons } from './scripts/vite-plugin-bundled-icons';
 import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
@@ -59,6 +60,7 @@ export default defineConfig({
   },
   plugins: [
     process.env.VITEST || process.env.VITEST_WORKER_ID ? null : cloudflare(cloudflareOptions),
+    bundledIcons({ namesFile: path.resolve(__dirname, 'src/modules/elements/akui/icon-names.ts') }),
     react({
       jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),

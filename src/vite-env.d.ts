@@ -1,5 +1,11 @@
 /// <reference types="vite/client" />
 
+// Served by scripts/vite-plugin-bundled-icons.ts: the data of every icon in ICON_NAMES
+declare module 'virtual:icon-collections' {
+  const collections: import('@iconify-icon/react').IconifyJSON[];
+  export default collections;
+}
+
 declare namespace globalThis {
   var chrome: any;
   var isE2ETests: boolean | undefined;

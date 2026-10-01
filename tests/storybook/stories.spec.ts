@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import { expect, test } from '@playwright/test';
 
-import { stabilizePage, waitForIcons, withElementsHidden } from '../visual-regression/visual';
+import { stabilizePage, withElementsHidden } from '../visual-regression/visual';
 
 interface IndexEntry {
   id: string;
@@ -111,7 +111,6 @@ for (const story of stories) {
     }
 
     await page.evaluate(() => document.fonts.ready);
-    await waitForIcons(page);
 
     await withElementsHidden(page, [], () =>
       expect(page).toHaveScreenshot(`${story.id}.png`, { fullPage: true, maxDiffPixelRatio: 0.005 }),
