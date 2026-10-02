@@ -39,17 +39,24 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
           let { left, top, right, bottom } = rect;
           for (let parent = element.parentElement; parent; parent = parent.parentElement) {
             const { overflowX, overflowY } = getComputedStyle(parent);
-            if (overflowX === 'visible' && overflowY === 'visible') continue;
             const clip = parent.getBoundingClientRect();
-            left = Math.min(Math.max(left, clip.left), clip.right);
-            right = Math.min(Math.max(right, clip.left), clip.right);
-            top = Math.min(Math.max(top, clip.top), clip.bottom);
-            bottom = Math.min(Math.max(bottom, clip.top), clip.bottom);
+            if (overflowX !== 'visible') {
+              left = Math.min(Math.max(left, clip.left), clip.right);
+              right = Math.min(Math.max(right, clip.left), clip.right);
+            }
+            if (overflowY !== 'visible') {
+              top = Math.min(Math.max(top, clip.top), clip.bottom);
+              bottom = Math.min(Math.max(bottom, clip.top), clip.bottom);
+            }
           }
+          // A display:none copy stays all-zero, which the app skips too
+          if (rect.width === 0 && rect.height === 0) return null;
           return { x: left, y: top, width: right - left, height: bottom - top };
         });
         return [handle, box] as const;
       }),
+    ).then((measured) =>
+      measured.filter((entry): entry is [(typeof entry)[0], NonNullable<(typeof entry)[1]>] => entry[1] !== null),
     );
 
     // Matrix of navigable elements -- the value is data-test

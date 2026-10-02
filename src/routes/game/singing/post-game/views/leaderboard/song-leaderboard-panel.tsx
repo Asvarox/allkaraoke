@@ -59,7 +59,8 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
       createdAt: Date.now(),
     };
 
-    return slotIntoBoard(data, player).rows;
+    // Never the earlier submission it ties: this run hasn't been shared yet
+    return slotIntoBoard(data, player, { matchShared: false }).rows;
   }, [data, name, country, score, song, singSetup.tolerance]);
 
   // Away entirely for the dev-only debug widths above Easy — those are never stored, so the list

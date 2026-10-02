@@ -54,6 +54,13 @@ describe('slotIntoBoard', () => {
     expect(slotted.position).toBe(2);
   });
 
+  it('lists a run known to be new apart from an earlier one it ties', () => {
+    const slotted = slotIntoBoard(board(listed, 3), entry('Bob', 2000), { matchShared: false });
+
+    expect(names(slotted.rows)).toEqual(['Ann', 'Bob', '*Bob', 'Cid']);
+    expect(slotted.position).toBe(3);
+  });
+
   it('keeps somebody else with the same score apart from the run', () => {
     const slotted = slotIntoBoard(board(listed, 3), entry('Me', 2000));
 

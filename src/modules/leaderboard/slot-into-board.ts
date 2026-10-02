@@ -16,14 +16,21 @@ interface SlottedBoard {
 const normalizeName = (name: string) => name.trim().replace(/\s+/g, ' ').toLowerCase();
 
 /** A window of a song board with the player's run slotted in at its rank. A run already on it (same
- * name and score, shared earlier) is marked in place instead, as the board ranks it one place too low. */
-export function slotIntoBoard(board: SongBoardResponse, run: BoardEntry | null): SlottedBoard {
+ * name and score, shared earlier) is marked in place instead, as the board ranks it one place too low —
+ * unless `matchShared` is off, for a run known to be new that only happens to tie an earlier one. */
+export function slotIntoBoard(
+  board: SongBoardResponse,
+  run: BoardEntry | null,
+  { matchShared = true }: { matchShared?: boolean } = {},
+): SlottedBoard {
   const rows = board.entries.map((entry) => ({ entry, isPlayer: false }));
   if (!run || board.position === null) return { rows, position: null };
 
-  const sharedIndex = rows.findIndex(
-    ({ entry }) => entry.score === Math.round(run.score) && normalizeName(entry.name) === normalizeName(run.name),
-  );
+  const sharedIndex = !matchShared
+    ? -1
+    : rows.findIndex(
+        ({ entry }) => entry.score === Math.round(run.score) && normalizeName(entry.name) === normalizeName(run.name),
+      );
   if (sharedIndex !== -1) {
     rows[sharedIndex] = { ...rows[sharedIndex], isPlayer: true };
     return { rows, position: board.startPosition + sharedIndex };

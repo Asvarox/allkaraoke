@@ -32,10 +32,15 @@ const visibleRectOf = (element: Element) => {
     const { overflowX, overflowY } = getComputedStyle(parent);
     if (overflowX === 'visible' && overflowY === 'visible') continue;
     const box = parent.getBoundingClientRect();
-    left = Math.min(Math.max(left, box.left), box.right);
-    right = Math.min(Math.max(right, box.left), box.right);
-    top = Math.min(Math.max(top, box.top), box.bottom);
-    bottom = Math.min(Math.max(bottom, box.top), box.bottom);
+    // Per axis: `overflow-x: clip` beside a visible `overflow-y` leaves the vertical extent showing
+    if (overflowX !== 'visible') {
+      left = Math.min(Math.max(left, box.left), box.right);
+      right = Math.min(Math.max(right, box.left), box.right);
+    }
+    if (overflowY !== 'visible') {
+      top = Math.min(Math.max(top, box.top), box.bottom);
+      bottom = Math.min(Math.max(bottom, box.top), box.bottom);
+    }
   }
   // Kept as a box: a hidden element's all-zero one is how the caller skips it
   return rect.width === 0 && rect.height === 0 ? rect : new DOMRect(left, top, right - left, bottom - top);
