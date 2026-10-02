@@ -4,6 +4,7 @@ import useSWR from 'swr';
 import { SingSetup, Song } from '~/interfaces';
 import { fetchSongBoard, songBoardUrl } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
+import { slotIntoBoard } from '~/modules/leaderboard/slot-into-board';
 import { BoardEntry } from '~/modules/leaderboard/types';
 import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
 import { LeaderboardPostGame } from '~/routes/game/singing/post-game/views/leaderboard/use-leaderboard-post-game';
@@ -41,17 +42,11 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
 
   /**
    * The board as the player should read it: the window the Worker returned with the run just sung
-   * slotted into place, rather than a list they then have to find themselves in.
-   *
-   * The row is synthetic — the score has usually not been submitted yet, and after it has, nothing
-   * refetches. Ranks come out right either way: the rows above the insertion keep theirs, and the
-   * ones below are pushed down by exactly the one row that joined them.
+   * slotted into place. The row is synthetic — the score has usually not been submitted yet, and
+   * after it has, nothing refetches.
    */
   const rows = useMemo(() => {
     if (!data) return [];
-
-    const listed = data.entries.map((entry) => ({ entry, isPlayer: false }));
-    if (data.position === null) return listed;
 
     const player: BoardEntry = {
       name: name.trim() || 'You',
@@ -64,10 +59,7 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
       createdAt: Date.now(),
     };
 
-    const index = Math.min(Math.max(data.position - data.startPosition, 0), listed.length);
-    listed.splice(index, 0, { entry: player, isPlayer: true });
-
-    return listed;
+    return slotIntoBoard(data, player).rows;
   }, [data, name, country, score, song, singSetup.tolerance]);
 
   // Away entirely for the dev-only debug widths above Easy — those are never stored, so the list

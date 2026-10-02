@@ -2,6 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 
 import { SingSetup, SongPreview } from '~/interfaces';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
+import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
@@ -9,9 +10,15 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/vide
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
+import {
+  KeyboardHelpVisibilitySetting,
+  MobilePhoneModeSetting,
+  useSettingValue,
+} from '~/routes/settings/settings-state';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
 import { useSpecialTheme } from '~/routes/sing-a-song/song-selection/hooks/use-special-theme';
+import { cn } from '~/utils/cn';
 
 interface Props {
   songPreview: SongPreview;
@@ -115,20 +122,20 @@ export default function SongPreviewComponent({
     [videoId, previewStart, previewEnd],
   );
 
-  const backButton = (
-    <button
-      onClick={onExitKeyboardControl}
-      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
-      <span className="text-lg font-bold">Sing a song</span>
-    </button>
-  );
+  const [isKeyboardHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
+  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const reservesKeyboardHelp = isKeyboardHelpVisible && !mobilePhoneMode;
 
-  // Desktop: icon-only, inline with the title — no room/need for the "Sing a song" label there.
-  const backIconButton = (
-    <button onClick={onExitKeyboardControl} className="text-active hidden shrink-0 cursor-pointer items-center sm:flex">
-      <Icon icon="ic:baseline-arrow-back" className="text-xl md:text-2xl" />
-    </button>
+  // Pointer and touch only — off the keyboard navigation, which has Backspace for this
+  const backButton = (
+    <Button
+      // The app toolbar's size, so the two corners match
+      size={{ xs: 'mini', sm: 'small' }}
+      leftIcon={<Icon icon="ic:baseline-arrow-back" />}
+      onClick={onExitKeyboardControl}
+      aria-label="Back to the song list"
+      data-test="song-preview-back"
+    />
   );
 
   const animationDurationSec =
@@ -175,8 +182,15 @@ export default function SongPreviewComponent({
         className={
           // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
           // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
+          // Expanded it takes the whole screen; `pt-2` on the widest layout puts the back button level
+          // with the app's toolbar.
           expanded
-            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
+            ? cn(
+                dialogSurface,
+                'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 md:portrait:p-5 max-lg:landscape:py-2 lg:landscape:px-6 lg:landscape:pt-2',
+                // The keyboard help sits in the bottom left corner from `lg` up, where Setup mics would be
+                reservesKeyboardHelp ? 'lg:pb-22' : 'lg:pb-6',
+              )
             : `absolute z-3 bg-slate-800 transition-opacity ${
                 showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
               }`
@@ -189,17 +203,21 @@ export default function SongPreviewComponent({
           expanded={expanded}
           back={backButton}
           title={
-            <div className="flex min-w-0 items-center gap-2">
-              {/* Back button — icon-only, next to the title, desktop only, shown when expanded */}
-              {backIconButton}
-              <SongCard.SongTitle className="typography min-w-0 flex-1 truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!" />
-            </div>
+            // Wraps onto a second line rather than cutting a long title off, except on a phone held
+            // sideways, which has no height to spare for it
+            <SongCard.SongTitle className="typography max-lg:landscape:text-md line-clamp-2 whitespace-normal! [view-transition-name:song-preview-title] md:portrait:text-xl max-lg:landscape:line-clamp-1 lg:landscape:text-xl" />
           }
           artist={
-            <SongCard.Artist className="typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl" />
+            <SongCard.Artist className="typography md:portrait:text-md! lg:landscape:text-md! text-sm! [view-transition-name:song-preview-artist]" />
           }
           thumbnail={
-            <SongCard.Thumbnail ref={thumbnailRef} className="w-full [view-transition-name:song-preview-thumbnail]">
+            <SongCard.Thumbnail
+              ref={thumbnailRef}
+              className={cn(
+                'w-full [view-transition-name:song-preview-thumbnail]',
+                // Opened on the widest layout, as tall as its row, which gives way when the settings need the room
+                expanded && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
+              )}>
               <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
                 <VideoPlayer
                   width={0}

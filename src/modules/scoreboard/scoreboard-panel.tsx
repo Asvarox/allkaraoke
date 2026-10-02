@@ -17,9 +17,14 @@ const LIST_HEIGHT = 'h-[15rem]';
 const LOADING_ROWS = 5;
 
 interface Props {
-  title: string;
+  /** Left out where something around the board already names it — a tab, say. */
+  title?: string;
   /** What the board covers — the heading has no room to say it. */
-  subtitle: ReactNode;
+  subtitle?: ReactNode;
+  /** Controls beside the title that change what the board lists, e.g. the song preview's difficulty tabs. */
+  actions?: ReactNode;
+  /** A line pinned under the list, outside its scroll — e.g. the player's own best, wherever the list is. */
+  footer?: ReactNode;
   children: ReactNode;
   isLoading?: boolean;
   error?: unknown;
@@ -50,6 +55,8 @@ interface Props {
 function ScoreboardPanel({
   title,
   subtitle,
+  actions,
+  footer,
   children,
   isLoading,
   error,
@@ -59,14 +66,24 @@ function ScoreboardPanel({
   listClassName,
   'data-test': dataTest,
 }: Props) {
+  const header = title && <Menu.Header as="h2">{title}</Menu.Header>;
+
   return (
     <Box
       // Padding and every width rule are the caller's: Tailwind classes of the same property do not
       // merge here, so anything a caller might need to override cannot be in the base
       className={clsx('w-full items-stretch justify-start gap-1.5', className)}
       data-test={dataTest}>
-      <Menu.Header as="h2">{title}</Menu.Header>
-      <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>
+      {actions ? (
+        // Wraps rather than squeezing the controls once the title leaves them no room beside it
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5">
+          {header}
+          {actions}
+        </div>
+      ) : (
+        header
+      )}
+      {subtitle && <Menu.HelpText className="text-left">{subtitle}</Menu.HelpText>}
       {/* The same fade-and-arrow treatment the song group rows use, turned on its side: whichever
           edge cuts a row off fades it and points that way, so a half-drawn row reads as more rows
           rather than as one that failed to draw. A board whose rows all fit shows neither. */}
@@ -79,6 +96,7 @@ function ScoreboardPanel({
         {!isLoading && !error && isEmpty && <Menu.HelpText data-test="scoreboard-empty">{emptyMessage}</Menu.HelpText>}
         {!isLoading && !error && children}
       </ScrollableColumn>
+      {footer}
     </Box>
   );
 }

@@ -1,9 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { SongPreview } from '~/interfaces';
 import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { BoardEntry, SongBoardResponse } from '~/modules/leaderboard/types';
 import PlayersManager from '~/modules/players/players-manager';
 import SongPreviewComponent from '~/routes/sing-a-song/song-selection/components/song-preview';
 
@@ -71,6 +72,56 @@ function useDrawingTestPlayers(volume: number) {
 }
 
 // ---------------------------------------------------------------------------
+// Leaderboard — no request mocking in Storybook, so `fetch` answers `GET /leaderboard-song` itself.
+// Hard has nobody on it, so the empty state is a tab away.
+// ---------------------------------------------------------------------------
+
+const BOARD_NAMES = [
+  ['Lydia', 'us'],
+  ['Baaarb', 'br'],
+  ['Mari', 'es'],
+  ['Tessa', 'de'],
+  ['Kasia_sings', 'pl'],
+  ['nordlys', 'no'],
+  ['DJ Pancake', 'nl'],
+  ['Yui', 'jp'],
+] as const;
+
+const songBoard = (tolerance: number): SongBoardResponse => {
+  const entries: BoardEntry[] = Array.from({ length: tolerance === 1 ? 0 : 6 * tolerance }, (_, index) => ({
+    name: BOARD_NAMES[index % BOARD_NAMES.length][0],
+    country: BOARD_NAMES[index % BOARD_NAMES.length][1],
+    score: 3_000_000 - index * 97_000,
+    artist: songPreview.artist,
+    title: songPreview.title,
+    songId: songPreview.id,
+    tolerance,
+    createdAt: Date.now() - (index + 1) * 26 * 60 * 60 * 1000,
+  }));
+
+  return { entries, total: entries.length, startPosition: 1, position: null };
+};
+
+/** Installed during render rather than in an effect: SWR fires on mount, before any effect would run. */
+function useStubbedSongBoard() {
+  const [original] = useState(() => {
+    const previous = window.fetch;
+
+    window.fetch = (input, init) => {
+      const url = String(input instanceof Request ? input.url : input);
+      if (!url.includes('/leaderboard-song')) return previous(input, init);
+
+      const tolerance = Number(new URL(url, window.location.origin).searchParams.get('tolerance'));
+      return Promise.resolve(new Response(JSON.stringify(songBoard(tolerance)), { status: 200 }));
+    };
+
+    return previous;
+  });
+
+  useEffect(() => () => void (window.fetch = original), [original]);
+}
+
+// ---------------------------------------------------------------------------
 // Default meta
 // ---------------------------------------------------------------------------
 
@@ -92,12 +143,13 @@ export default {
 type Story = StoryObj<StoryArgs>;
 
 // ---------------------------------------------------------------------------
-// Expanded story — the fully-expanded panel with MicCheck + GameSettings.
-// This is the most useful story for iterating on the settings UI.
+// Expanded story — the opened preview: the song and its settings, the mic check and
+// the song's leaderboard. The most useful story for iterating on the settings UI.
 // ---------------------------------------------------------------------------
 
 function ExpandedTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
+  useStubbedSongBoard();
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
@@ -179,6 +231,7 @@ const duetSongPreview: SongPreview = {
 
 function DuetTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
+  useStubbedSongBoard();
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">

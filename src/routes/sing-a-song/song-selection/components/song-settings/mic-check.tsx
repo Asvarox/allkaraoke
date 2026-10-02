@@ -20,16 +20,18 @@ export default function MicCheck(props: ComponentProps<'div'>) {
 
   return (
     <div {...props} className={`typography flex flex-col gap-3 text-2xl ${props.className ?? ''}`}>
-      <div className="relative grid w-full grid-cols-2 gap-3 md:grid-cols-1">
+      {/* Two columns only on a phone held sideways, which has the width for them but not the height */}
+      <div className="relative grid w-full grid-cols-1 gap-3 max-lg:landscape:grid-cols-2">
         {!isSetup && (
-          <div className="text-default absolute -inset-2 z-1 flex flex-col items-center justify-center gap-1 rounded-xl bg-black/35 text-center">
+          <div className="text-default absolute inset-0 z-1 flex flex-col items-center justify-center gap-1 rounded-xl bg-black/35 text-center">
             <span className="text-lg font-semibold">Microphones are not set up yet</span>
             <span className="text-md opacity-75">
-              Go to <strong>Setup Mics</strong> on the right
+              Go to <strong>Setup Mics</strong> below
             </span>
           </div>
         )}
-        <div className="absolute right-0 bottom-full left-0 z-30">
+        {/* Over the first rows rather than above them: the panel this sits in starts at the top of the screen */}
+        <div className="absolute inset-x-0 top-0 z-30">
           <NoiseDetection />
         </div>
         {LOCAL_PLAYER_NUMBERS.map((i) => (

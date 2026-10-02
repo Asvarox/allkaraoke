@@ -10,6 +10,10 @@ export interface OnlineSongSelectionIntegration {
   onPreviewSettingsChange: (song: SongPreview, difficulty: string) => void;
   /** Rendered instead of the mic check — connected singers and their song votes. */
   playersView: ReactNode;
+  /** Rendered beside the players heading — the room's votes on the song, counted up. */
+  playersSummary?: ReactNode;
+  /** Rendered instead of the leaderboard — the room's chat, which online games don't reach anyway. */
+  chatView?: ReactNode;
 }
 
 export const OnlineSongSelectionContext = createContext<OnlineSongSelectionIntegration | null>(null);
