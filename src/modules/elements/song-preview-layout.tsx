@@ -55,14 +55,13 @@ const EXPANDED_GRID = [
   "max-lg:landscape:grid-cols-[minmax(0,18rem)_minmax(0,1fr)] max-lg:landscape:grid-rows-[auto_auto_minmax(0,1fr)_auto] max-lg:landscape:[grid-template-areas:'video_panels'_'info_panels'_'settings_panels'_'actions_panels']",
   // Tablet, upright: the song across the top, the players and the leaderboard side by side under it
   "md:portrait:grid-cols-2 md:portrait:grid-rows-[auto_auto_minmax(16rem,1fr)_auto] md:portrait:[grid-template-areas:'video_info'_'video_settings'_'players_board'_'actions_actions']",
-  // Tablet sideways, and desktop: players, the song with its settings, leaderboard. Back sits level
-  // with the app's toolbar; short of height, the video gives way first
-  "lg:landscape:grid-cols-[minmax(0,11fr)_minmax(0,10fr)_minmax(0,10fr)] lg:landscape:grid-rows-[auto_minmax(0,auto)_auto_1fr_auto] lg:landscape:[grid-template-areas:'back_._.'_'players_video_board'_'players_info_board'_'players_settings_board'_'mics_play_board']",
+  // Tablet sideways, and desktop: the song's title across the top as the dialog's header, then players,
+  // the video with its settings, leaderboard. Short of height, the video gives way first
+  "lg:landscape:grid-cols-[minmax(0,11fr)_minmax(0,10fr)_minmax(0,10fr)] lg:landscape:grid-rows-[auto_minmax(0,auto)_1fr_auto] lg:landscape:[grid-template-areas:'info_info_info'_'players_video_board'_'players_settings_board'_'mics_play_board']",
 ].join(' ');
 
-/** Over the video's corner, except on the widest layout, where it gets a row of its own above it. */
-const BACK_CLASS =
-  'z-2 m-2 self-start justify-self-start [grid-area:video] lg:landscape:m-0 lg:landscape:[grid-area:back]';
+/** Over the video's corner; on the widest layout the title carries it instead. */
+const BACK_CLASS = 'z-2 m-2 self-start justify-self-start [grid-area:video] lg:landscape:hidden';
 
 /** Under the video; on an upright tablet clear of the app's toolbar, which sits in the corner above it. */
 const INFO_CLASS = 'flex min-w-0 flex-col gap-1 self-start [grid-area:info] md:portrait:pt-12';

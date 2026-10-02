@@ -1,0 +1,203 @@
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import createPersistedState from 'use-persisted-state';
+import { ValuesType } from 'utility-types';
+import { v4 } from 'uuid';
+
+import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
+import { NavButton, NavRemoteControl, NavSwitcher } from '~/modules/elements/nav-controls';
+import { Switcher } from '~/modules/elements/switcher';
+import InputManager from '~/modules/game-engine/input/input-manager';
+import gameEvents from '~/modules/game-events/game-events';
+import { useEventEffect } from '~/modules/game-events/hooks';
+import { gameModeNames } from '~/modules/game-modes';
+import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
+import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
+import { PlayerNumber } from '~/modules/players/player-number';
+import PlayersManager from '~/modules/players/players-manager';
+import { nextIndex, nextValue } from '~/modules/utils/indexes';
+import isDev from '~/modules/utils/is-dev';
+import SelectInputModal from '~/routes/select-input/select-input-modal';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
+
+interface Props {
+  songPreview: SongPreview;
+  onNextStep: (setup: SingSetup) => void;
+  keyboardControl: boolean;
+  onExitKeyboardControl: () => void;
+}
+
+const difficultyNames = ['Hard', 'Medium', 'Easy'];
+
+if (isDev()) {
+  difficultyNames.push('Debug 4');
+  difficultyNames.push('Debug 5');
+  difficultyNames.push('Debug 6');
+}
+
+// added -v3 to the key as the value to handle default selection if it wasnt changed
+const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE> | null>('song_settings-game_mode-v3');
+const useSetTolerance = createPersistedState<number>('song_settings-tolerance-v2');
+
+const getTrackName = (tracks: SongPreview['tracks'], index: number) => tracks[index]?.name ?? `Track ${index + 1}`;
+
+export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
+  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
+  const [rememberedMode, setMode] = useSetGameMode(null);
+  const online = useOnlineSongSelection();
+  // Online play only supports Duel for now
+  const mode = online
+    ? GAME_MODE.DUEL
+    : (rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL));
+  const [tolerance, setTolerance] = useSetTolerance(1);
+
+  useEffect(() => {
+    online?.onPreviewSettingsChange(songPreview, difficultyNames[tolerance]);
+  }, [songPreview, tolerance, online]);
+
+  const players = PlayersManager.getPlayers();
+  const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
+
+  const initialisePlayerSetup = () => {
+    const currentPlayers = PlayersManager.getPlayers();
+    const hasMultipleTracks = !mobilePhoneMode && currentPlayers.length === 2 && songPreview.tracksCount > 1;
+
+    return currentPlayers.map((player, index) => ({
+      number: player.number,
+      track: hasMultipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
+    }));
+  };
+  const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(initialisePlayerSetup());
+  useEventEffect([gameEvents.playerAdded, gameEvents.playerRemoved], () => setPlayerSetup(initialisePlayerSetup()), [
+    mobilePhoneMode,
+    songPreview.tracksCount,
+  ]);
+
+  const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    if (!showModal) void InputManager.reassertMonitoring();
+  }, [showModal]);
+
+  const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
+
+  const handlePlay = () => onNextStep({ id: v4(), players: playerSetup, mode, tolerance: tolerance + 1 });
+
+  const changeMode = () => setMode(nextValue(Object.values(GAME_MODE), mode));
+  const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
+
+  const toggleTrack = (playerNumber: PlayerNumber) => () =>
+    setPlayerSetup((current) =>
+      current.map((s) => (s.number === playerNumber ? { ...s, track: (s.track + 1) % songPreview.tracksCount } : s)),
+    );
+
+  const { register, focusElement } = useKeyboardNav({
+    enabled: keyboardControl && !showModal,
+    onBackspace: onExitKeyboardControl,
+    additionalHelp: { remote: ['select-song'] },
+    title: 'Song Settings',
+  });
+
+  return (
+    <>
+      {createPortal(
+        <SelectInputModal
+          open={showModal}
+          closeButtonText="Continue to the song"
+          onClose={() => {
+            setShowModal(false);
+            if (areInputsConfigured) focusElement('play-song-button');
+          }}
+        />,
+        document.body,
+      )}
+      <KeyboardNavContext value={register}>
+        <NavSwitcher
+          name="difficulty-setting"
+          label="Difficulty"
+          value={difficultyNames[tolerance]}
+          data-test-value={difficultyNames[tolerance]}
+          className="w-full"
+          onClick={changeTolerance}
+        />
+        {online ? (
+          // Online play is locked to Duel, so the mode is display-only — a raw Switcher keeps the
+          // test id without registering a control the host can't actually change.
+          <Switcher
+            data-test="game-mode-setting"
+            label="Mode"
+            value={gameModeNames[mode]}
+            data-test-value={gameModeNames[mode]}
+            className="w-full"
+          />
+        ) : (
+          <NavSwitcher
+            name="game-mode-setting"
+            label="Mode"
+            value={gameModeNames[mode]}
+            data-test-value={gameModeNames[mode]}
+            className="w-full"
+            onClick={changeMode}
+          />
+        )}
+        <hr />
+        {multipleTracks &&
+          players.map((player, index) => {
+            const setup = playerSetup.find((s) => s.number === player.number) ?? { track: 0 };
+            return (
+              <NavSwitcher
+                key={player.number}
+                name={`player-${player.number}-track-setting`}
+                label={`P${index + 1} Track`}
+                value={getTrackName(songPreview.tracks, setup.track)}
+                data-test-value={setup.track + 1}
+                className="w-full"
+                onClick={toggleTrack(player.number as PlayerNumber)}
+              />
+            );
+          })}
+        {multipleTracks && <hr />}
+        {!online && (
+          <NavButton
+            name="select-inputs-button"
+            size="small"
+            className="max-lg:px-6"
+            remoteIcon="settings"
+            onClick={() => setShowModal(true)}>
+            Setup mics
+          </NavButton>
+        )}
+        {(areInputsConfigured || online !== null) && (
+          <>
+            {/* Fixed on mobile — the expanded card scrolls there, and its natural spot in the list
+                can sit below the fold, so `sticky` alone wouldn't show it until the user scrolled
+                down past it. Pin it to the viewport instead so it's visible from the start.
+                Desktop's card never scrolls (sm:overflow-hidden), so this reverts to normal flow. */}
+            <div className="z-hud-blocking fixed inset-x-px bottom-0 flex h-[60px] items-center bg-slate-800 px-3 sm:static sm:h-auto sm:bg-transparent sm:p-0">
+              <NavButton
+                name="play-song-button"
+                size="large"
+                className="max-lg:text-md w-full flex-1 px-20 py-1 max-lg:h-10 max-lg:px-10 sm:w-auto"
+                remoteIcon="play"
+                isDefault
+                onClick={handlePlay}>
+                Play
+              </NavButton>
+            </div>
+            {/* Spacer reserving the fixed bar's height so it doesn't cover the last bit of
+                scrollable content (e.g. the mic check panels) underneath it. */}
+            <div aria-hidden className="h-[60px] sm:hidden" />
+          </>
+        )}
+        {/* Remote-only: the expanded song card has no back button on desktop (only the Backspace
+            handler and a mobile-only one in song-preview), so the phone would otherwise have no way
+            out of this screen once mirrored. */}
+        <NavRemoteControl
+          name="exit-song-settings"
+          control={{ type: 'button', label: 'Back to song list', variant: 'back' }}
+          onClick={onExitKeyboardControl}
+        />
+      </KeyboardNavContext>
+    </>
+  );
+}

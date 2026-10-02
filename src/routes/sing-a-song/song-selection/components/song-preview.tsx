@@ -6,17 +6,15 @@ import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
+import SongPreviewLayoutLegacy from '~/modules/elements/song-preview-layout-legacy';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
-import {
-  KeyboardHelpVisibilitySetting,
-  MobilePhoneModeSetting,
-  useSettingValue,
-} from '~/routes/settings/settings-state';
+import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
+import SongSettingsLegacy from '~/routes/sing-a-song/song-selection/components/song-settings/legacy/song-settings';
 import { useSpecialTheme } from '~/routes/sing-a-song/song-selection/hooks/use-special-theme';
 import { cn } from '~/utils/cn';
 
@@ -54,6 +52,10 @@ export default function SongPreviewComponent({
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
   const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
   useSpecialTheme(songPreview, FeatureFlags.Eurovision, isEurovisionSong, 'eurovision');
+  // The redesign with the leaderboard; off, the preview is the one before it, in the legacy files
+  const redesign = useFeatureFlag(FeatureFlags.SongPreviewRedesign);
+  const Layout = redesign ? SongPreviewLayout : SongPreviewLayoutLegacy;
+  const Settings = redesign ? SongSettings : SongSettingsLegacy;
 
   const expanded = keyboardControl;
 
@@ -122,12 +124,8 @@ export default function SongPreviewComponent({
     [videoId, previewStart, previewEnd],
   );
 
-  const [isKeyboardHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
-  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const reservesKeyboardHelp = isKeyboardHelpVisible && !mobilePhoneMode;
-
   // Pointer and touch only — off the keyboard navigation, which has Backspace for this
-  const backButton = (
+  const backButton = redesign ? (
     <Button
       // The app toolbar's size, so the two corners match
       size={{ xs: 'mini', sm: 'small' }}
@@ -136,6 +134,13 @@ export default function SongPreviewComponent({
       aria-label="Back to the song list"
       data-test="song-preview-back"
     />
+  ) : (
+    <button
+      onClick={onExitKeyboardControl}
+      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
+      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
+      <span className="text-lg font-bold">Sing a song</span>
+    </button>
   );
 
   const animationDurationSec =
@@ -182,33 +187,57 @@ export default function SongPreviewComponent({
         className={
           // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
           // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
-          // Expanded it takes the whole screen; `pt-2` on the widest layout puts the back button level
-          // with the app's toolbar.
-          expanded
-            ? cn(
-                dialogSurface,
-                'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 md:portrait:p-5 max-lg:landscape:py-2 lg:landscape:px-6 lg:landscape:pt-2',
-                // The keyboard help sits in the bottom left corner from `lg` up, where Setup mics would be
-                reservesKeyboardHelp ? 'lg:pb-22' : 'lg:pb-6',
-              )
-            : `absolute z-3 bg-slate-800 transition-opacity ${
-                showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
-              }`
+          // Expanded it fills a phone or tablet, and on the widest layout is a large dialog, clear of the
+          // app's toolbar above it and the keyboard help below.
+          expanded && !redesign
+            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
+            : expanded
+              ? cn(
+                  dialogSurface,
+                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 md:portrait:p-5 max-lg:landscape:py-2',
+                  'lg:landscape:top-16 lg:landscape:bottom-24 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
+                  'lg:landscape:pb-6',
+                )
+              : `absolute z-3 bg-slate-800 transition-opacity ${
+                  showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
+                }`
         }
         style={expanded ? {} : { width, height, top, left }}>
         {/* Click-capture overlay — collapsed only */}
         {!expanded && <div className="absolute inset-0 z-10 cursor-pointer" onClick={onExpand} />}
 
-        <SongPreviewLayout
+        <Layout
           expanded={expanded}
           back={backButton}
           title={
-            // Wraps onto a second line rather than cutting a long title off, except on a phone held
-            // sideways, which has no height to spare for it
-            <SongCard.SongTitle className="typography max-lg:landscape:text-md line-clamp-2 whitespace-normal! [view-transition-name:song-preview-title] md:portrait:text-xl max-lg:landscape:line-clamp-1 lg:landscape:text-xl" />
+            <div className="flex min-w-0 items-center gap-2">
+              {/* The dialog's own way back, beside its title — on smaller layouts it sits over the video */}
+              <button
+                onClick={onExitKeyboardControl}
+                aria-label="Back to the song list"
+                className={cn(
+                  'text-active hidden shrink-0 cursor-pointer items-center',
+                  redesign ? 'lg:landscape:flex' : 'sm:flex',
+                )}>
+                <Icon icon="ic:baseline-arrow-back" className={redesign ? 'text-2xl' : 'text-xl md:text-2xl'} />
+              </button>
+              <SongCard.SongTitle
+                className={
+                  redesign
+                    ? 'typography max-lg:landscape:text-md line-clamp-2 min-w-0 flex-1 whitespace-normal! [view-transition-name:song-preview-title] md:portrait:text-xl max-lg:landscape:line-clamp-1 lg:landscape:text-xl'
+                    : 'typography min-w-0 flex-1 truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!'
+                }
+              />
+            </div>
           }
           artist={
-            <SongCard.Artist className="typography md:portrait:text-md! lg:landscape:text-md! text-sm! [view-transition-name:song-preview-artist]" />
+            <SongCard.Artist
+              className={
+                redesign
+                  ? 'typography md:portrait:text-md! lg:landscape:text-md! text-sm! [view-transition-name:song-preview-artist]'
+                  : 'typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl'
+              }
+            />
           }
           thumbnail={
             <SongCard.Thumbnail
@@ -216,7 +245,7 @@ export default function SongPreviewComponent({
               className={cn(
                 'w-full [view-transition-name:song-preview-thumbnail]',
                 // Opened on the widest layout, as tall as its row, which gives way when the settings need the room
-                expanded && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
+                expanded && redesign && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
               )}>
               <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
                 <VideoPlayer
@@ -243,7 +272,7 @@ export default function SongPreviewComponent({
             </SongCard.Footer>
           }
           footer={
-            <SongSettings
+            <Settings
               songPreview={songPreview}
               onPlay={onPlay}
               keyboardControl={keyboardControl}
