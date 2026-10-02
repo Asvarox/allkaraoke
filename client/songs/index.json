@@ -264,6 +264,33 @@
     "local": false
   },
   {
+    "id": "2ne1-fire",
+    "title": "Fire",
+    "artist": "2NE1",
+    "video": "I3tuZF1qizQ",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 595,
+    "gap": 14241.596638655463,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-02T03:25:40.504Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "lop",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "shortId": 6456,
+    "tracksCount": 1,
+    "search": "2ne1fire",
+    "local": false
+  },
+  {
     "id": "2ne1-i-am-the-best",
     "title": "I Am The Best",
     "artist": "2NE1",
@@ -7036,6 +7063,33 @@
     "shortId": 5232,
     "tracksCount": 1,
     "search": "alexlloydamazing",
+    "local": false
+  },
+  {
+    "id": "alex-sierra-little-do-you-know",
+    "title": "Little Do You Know",
+    "artist": "Alex & Sierra",
+    "video": "4bzIpYiPUUo",
+    "language": [
+      "English"
+    ],
+    "bpm": 292,
+    "gap": 373.9726027397261,
+    "year": "2014",
+    "lastUpdate": "2026-10-02T03:25:39.923Z",
+    "genre": "Pop",
+    "realBpm": 146,
+    "volume": 1,
+    "author": "lilsilly61",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6451,
+    "tracksCount": 1,
+    "search": "alexsierralittledoyouknow",
     "local": false
   },
   {
@@ -16624,6 +16678,33 @@
     "shortId": 436,
     "tracksCount": 1,
     "search": "baccarayessiricanboogie",
+    "local": false
+  },
+  {
+    "id": "bacilos-tabaco-y-chanel",
+    "title": "Tabaco y Chanel",
+    "artist": "Bacilos",
+    "video": "6JqnbsQpljU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 194.26,
+    "gap": 20502.190672294862,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-02T03:25:39.515Z",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Pantero",
+    "duration": 263,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6447,
+    "tracksCount": 1,
+    "search": "bacilostabacoychanel",
     "local": false
   },
   {
@@ -34276,6 +34357,34 @@
     "local": false
   },
   {
+    "id": "chappell-roan-the-subway",
+    "title": "The Subway",
+    "artist": "Chappell Roan",
+    "video": "woLfAvD5iXI",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 16816.024096385543,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-02T03:25:38.948Z",
+    "genre": "Pop",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "Adelaido",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6445,
+    "tracksCount": 1,
+    "search": "chappellroanthesubway",
+    "local": false
+  },
+  {
     "id": "charlene-ive-never-been-to-me",
     "title": "I’ve Never Been To Me",
     "artist": "Charlene",
@@ -41968,6 +42077,34 @@
     "local": false
   },
   {
+    "id": "daryl-hall-john-oates-you-make-my-dreams",
+    "title": "You Make My Dreams",
+    "artist": "Daryl Hall & John Oates",
+    "video": "49BQKU5wflk",
+    "language": [
+      "English"
+    ],
+    "bpm": 392.1,
+    "gap": 10215.355776587605,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-02T03:25:40.316Z",
+    "genre": "Pop Rock",
+    "realBpm": 167,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6454,
+    "tracksCount": 1,
+    "search": "darylhalljohnoatesyoumakemydreams",
+    "local": false
+  },
+  {
     "id": "das-lumpenpack-padagogen",
     "title": "Pädagogen",
     "artist": "Das Lumpenpack",
@@ -48942,6 +49079,33 @@
     "local": false
   },
   {
+    "id": "disneys-tangled-grace-potter-something-that-i-want",
+    "title": "Something That I Want",
+    "artist": "Disney’s Tangled (Grace Potter)",
+    "video": "gwcvjzWNqxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 337,
+    "gap": 4390.771513353116,
+    "year": "2010",
+    "lastUpdate": "2026-10-02T03:25:40.505Z",
+    "genre": "Soundtrack",
+    "realBpm": 168,
+    "volume": 1,
+    "author": "Basti",
+    "duration": 141,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6457,
+    "tracksCount": 1,
+    "search": "disneystangledgracepottersomethingthatiwant",
+    "local": false
+  },
+  {
     "id": "disneys-tangled-i-see-the-light",
     "title": "I See The Light",
     "artist": "Disney's Tangled",
@@ -48996,6 +49160,33 @@
     "shortId": 1290,
     "tracksCount": 1,
     "search": "disneystangledwhenwillmylifebegin",
+    "local": false
+  },
+  {
+    "id": "disneys-tarzan-menneskeson",
+    "title": "Menneskesøn",
+    "artist": "Disney’s Tarzan",
+    "video": "XfKNyLwTjzU",
+    "language": [
+      "Danish"
+    ],
+    "bpm": 283.4,
+    "gap": 13154.354269583628,
+    "year": "1999",
+    "lastUpdate": "2026-10-02T03:25:40.317Z",
+    "genre": "Soundtrack",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "bohning",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6455,
+    "tracksCount": 1,
+    "search": "disneystarzanmenneskeson",
     "local": false
   },
   {
@@ -58251,6 +58442,35 @@
     "shortId": 6244,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransteaganearleywarriorofthemind",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-troy-dangerous",
+    "title": "Dangerous",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Troy)",
+    "video": "zJhJ5E1hK2A",
+    "language": [
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 70,
+    "year": "2024",
+    "lastUpdate": "2026-10-02T03:25:39.703Z",
+    "genre": "Musical",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "b888arb",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=31757",
+    "duration": 216,
+    "tracks": [
+      {
+        "name": "Dangerous",
+        "start": 9
+      }
+    ],
+    "shortId": 6448,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranstroydangerous",
     "local": false
   },
   {
@@ -73856,6 +74076,33 @@
     "local": false
   },
   {
+    "id": "hairspray-movie-you-cant-stop-the-beat",
+    "title": "You Can’t Stop The Beat",
+    "artist": "Hairspray (Movie)",
+    "video": "H2KQGAiVec0",
+    "language": [
+      "English"
+    ],
+    "bpm": 346,
+    "gap": 24792.890173410404,
+    "year": "2007",
+    "lastUpdate": "2026-10-02T03:25:40.129Z",
+    "genre": "Soundtrack",
+    "realBpm": 171,
+    "volume": 1,
+    "author": "REL",
+    "duration": 343,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6453,
+    "tracksCount": 1,
+    "search": "hairspraymovieyoucantstopthebeat",
+    "local": false
+  },
+  {
     "id": "halestorm-dirty-mind",
     "title": "Dirty Mind",
     "artist": "Halestorm",
@@ -74316,6 +74563,35 @@
     "shortId": 6139,
     "tracksCount": 1,
     "search": "hannahmontanaillalwaysrememberyou",
+    "local": false
+  },
+  {
+    "id": "hannah-montana-youll-always-find-your-way-back-home",
+    "title": "You’ll Always Find Your Way Back Home",
+    "artist": "Hannah Montana",
+    "video": "ddPXRIH0-RY",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.76,
+    "gap": 13768.83830455259,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-02T03:25:39.921Z",
+    "genre": "Pop",
+    "realBpm": 153,
+    "volume": 1,
+    "author": "Coppolatte",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=13504",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6450,
+    "tracksCount": 1,
+    "search": "hannahmontanayoullalwaysfindyourwaybackhome",
     "local": false
   },
   {
@@ -105675,6 +105951,32 @@
     "shortId": 2623,
     "tracksCount": 1,
     "search": "lizzojuice",
+    "local": false
+  },
+  {
+    "id": "lizzy-mcalpine-ceilings",
+    "title": "Ceilings",
+    "artist": "Lizzy McAlpine",
+    "video": "2bpMSpFTdzM",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.26,
+    "gap": 22127.37595355431,
+    "year": "2023",
+    "lastUpdate": "2026-10-02T03:25:38.955Z",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6446,
+    "tracksCount": 1,
+    "search": "lizzymcalpineceilings",
     "local": false
   },
   {
@@ -143791,6 +144093,33 @@
     "local": false
   },
   {
+    "id": "rhapsody-holy-thunderforce",
+    "title": "Holy Thunderforce",
+    "artist": "Rhapsody",
+    "video": "RYzYo-XJfUI",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 9890,
+    "year": "2000",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-10-02T03:25:39.918Z",
+    "realBpm": 55,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 262,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6449,
+    "tracksCount": 1,
+    "search": "rhapsodyholythunderforce",
+    "local": false
+  },
+  {
     "id": "rhapsody-the-magic-of-the-wizards-dreams",
     "title": "The Magic Of The Wizard’s Dreams",
     "artist": "Rhapsody",
@@ -164911,6 +165240,35 @@
     "shortId": 4191,
     "tracksCount": 1,
     "search": "taylorswiftbadblood",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-bejeweled",
+    "title": "Bejeweled",
+    "artist": "Taylor Swift",
+    "video": "b7QlX3yR2xs",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.97,
+    "gap": 128510.28819855493,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-02T03:25:40.120Z",
+    "genre": "Pop",
+    "realBpm": 164,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=b7QlX3yR2xs",
+    "duration": 354,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6452,
+    "tracksCount": 1,
+    "search": "taylorswiftbejeweled",
     "local": false
   },
   {
