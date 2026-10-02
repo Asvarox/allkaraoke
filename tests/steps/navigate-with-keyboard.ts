@@ -69,6 +69,9 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
     const startingElement = (await allFocusedElements[0].getAttribute('data-test'))!;
     const start = findInMatrix(rows, startingElement);
     const [finishX, finishY] = findInMatrix(rows, targetTestId);
+    // Already there: the walk below would still go to the row's start and back, which a mirrored
+    // remote mic (no arrow keys) can't do
+    if (startingElement === targetTestId) return;
 
     const intermediateSteps: Array<[number, number, dirs]> = [];
     if (start[0] > 0) {

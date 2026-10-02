@@ -183,9 +183,11 @@ export default function GameSettings({
               remoteIcon="settings"
               // The gear the remote shows for it too
               leftIcon={compact ? <Icon icon="ic:baseline-settings" /> : undefined}
+              // Play's height wherever the two share a row: a centre higher or lower than Play's
+              // makes the other one the nearest control on that side for the arrow keys
               className={cn(
                 SongPreviewLayout.area.mics,
-                'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:self-end',
+                'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:h-16',
                 'shrink-0 md:portrait:w-56',
               )}
               onClick={() => setShowModal(true)}>
