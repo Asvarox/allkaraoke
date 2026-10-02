@@ -29,9 +29,26 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
     const navigableElements = await page.locator('[data-e2e-focused]:not([data-unfocusable])');
     const handles = await navigableElements.elementHandles();
 
+    // Where each element shows, as the app's spatial navigation measures it: clamped to whatever clips
+    // it, so a control scrolled out of a column isn't level with the ones beside the column
     let rectangles = await Promise.all(
       handles.map(async (handle) => {
-        return [handle, (await handle.boundingBox())!] as const;
+        const box = await handle.evaluate((node) => {
+          const element = node as Element;
+          const rect = element.getBoundingClientRect();
+          let { left, top, right, bottom } = rect;
+          for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+            const { overflowX, overflowY } = getComputedStyle(parent);
+            if (overflowX === 'visible' && overflowY === 'visible') continue;
+            const clip = parent.getBoundingClientRect();
+            left = Math.min(Math.max(left, clip.left), clip.right);
+            right = Math.min(Math.max(right, clip.left), clip.right);
+            top = Math.min(Math.max(top, clip.top), clip.bottom);
+            bottom = Math.min(Math.max(bottom, clip.top), clip.bottom);
+          }
+          return { x: left, y: top, width: right - left, height: bottom - top };
+        });
+        return [handle, box] as const;
       }),
     );
 
@@ -74,20 +91,25 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
     if (startingElement === targetTestId) return;
 
     const intermediateSteps: Array<[number, number, dirs]> = [];
-    if (start[0] > 0) {
-      // Move to the first element in the row
-      addSteps(start, intermediateSteps, 'Left', start[0]);
-    }
-    if (start[1] < finishY) {
-      // Move down to the target row
-      addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
-    } else if (start[1] > finishY) {
-      // Move up to the target row
-      addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
-    }
-    if (finishX > 0) {
-      // Move to the target element
-      addSteps(start, intermediateSteps, 'Right', finishX);
+    if (start[1] === finishY) {
+      // Same row: straight across
+      addSteps(start, intermediateSteps, finishX < start[0] ? 'Left' : 'Right', Math.abs(finishX - start[0]));
+    } else {
+      if (start[0] > 0) {
+        // Move to the first element in the row
+        addSteps(start, intermediateSteps, 'Left', start[0]);
+      }
+      if (start[1] < finishY) {
+        // Move down to the target row
+        addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
+      } else if (start[1] > finishY) {
+        // Move up to the target row
+        addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
+      }
+      if (finishX > 0) {
+        // Move to the target element
+        addSteps(start, intermediateSteps, 'Right', finishX);
+      }
     }
 
     for (const [x, y, dir] of intermediateSteps) {
