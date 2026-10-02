@@ -3,7 +3,6 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import { TwcComponentProps } from 'react-twc';
 
 import { Kbd } from '~/modules/elements/akui/kbd';
-import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { supportsEscAsBack } from '~/modules/hooks/use-keyboard';
 import {
@@ -60,7 +59,7 @@ export default function KeyboardHelpView({ help }: Props) {
             })}
             <Section>
               <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
-              <SectionHelp>Show/hide this help</SectionHelp>
+              <SectionHelp>Toggle this help</SectionHelp>
             </Section>
           </>
         )}
@@ -113,21 +112,23 @@ const Section = twx.div`flex min-w-0 flex-col items-center justify-end gap-1 tex
 
 // `text-sm` here rather than on the `Kbd`s themselves: they size in `em`, so the whole cluster -
 // glyphs, padding and border - scales from this one place.
-const SectionKeys = twx.div`text-default flex-nowrap text-center text-sm font-bold`;
+const SectionKeys = twx.div`text-default flex-nowrap text-center text-xs font-bold [&_kbd]:shadow-lg [&_kbd]:shadow-black/70`;
 
-const SectionHelp = twx(Typography)`text-center text-sm text-balance`;
+// No panel background behind the entries, so each label carries its own shadow to stay legible.
+const SectionHelp = twx(Typography)`text-center text-xs text-balance text-shadow-black text-shadow-lg`;
 
+// Blurs the entries underneath on hover instead of covering them with a dark panel.
 const UseKeyboardIndicator = twx(
   Typography,
-)`text-md text-default invisible absolute inset-0 flex items-center justify-center bg-black/75 py-8 opacity-0 duration-300 hover:visible hover:opacity-100`;
+)`text-md text-default invisible absolute inset-0 flex items-center justify-center rounded-tr-xl opacity-0 backdrop-blur-sm duration-300 text-shadow-black text-shadow-lg hover:visible hover:opacity-100`;
 
-const Container = twx(Box)((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
+const Container = twx.div((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
   // Bottom left, laid out as a row: a panel of its own in the corner, rather than a column of text
   // down the side of whatever screen is up. The LEFT corner because the right one is where screens
   // put their primary action - "Play next song", the rating buttons - and a panel sitting on top of
-  // those swallows the click. Flush into the corner - no offset, and only the one corner facing the
-  // page is rounded. `w-auto` so it is only as wide as its entries, and `items-end` so every column
+  // those swallows the click. Flush into the corner with no background - the entries carry their own
+  // shadows. `w-auto` so it is only as wide as its entries, and `items-end` so every column
   // sits on a shared bottom edge whatever the height of the keys above it.
-  `z-help fixed bottom-0 left-0 w-auto max-w-screen cursor-pointer flex-row! items-end justify-start gap-4 rounded-none rounded-tr-xl px-2 py-2 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
+  `z-help fixed bottom-0 left-0 w-auto max-w-screen cursor-pointer flex-row items-end justify-start gap-3 px-1 pr-5 pb-1 pt-5 [view-transition-name:help-view] hover:[&_.UseKeyboardIndicator]:visible hover:[&_.UseKeyboardIndicator]:opacity-100 [&_svg]:fill-white`,
   props['data-visible'] ? 'flex max-lg:hidden' : 'hidden',
 ]);
