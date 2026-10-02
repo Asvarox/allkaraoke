@@ -30,7 +30,7 @@ interface Props {
  * gets told where they would have landed, which is the only reason to show it to them at all.
  */
 function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listClassName }: Props) {
-  const { hasLeaderboard, difficulty, score, name, country } = leaderboard;
+  const { hasLeaderboard, difficulty, score, name, country, hasSubmitted } = leaderboard;
 
   const shouldFetch = hasLeaderboard;
 
@@ -45,8 +45,8 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
    * slotted into place. The row is synthetic — the score has usually not been submitted yet, and
    * after it has, nothing refetches.
    */
-  const rows = useMemo(() => {
-    if (!data) return [];
+  const slotted = useMemo(() => {
+    if (!data) return null;
 
     const player: BoardEntry = {
       name: name.trim() || 'You',
@@ -59,9 +59,11 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
       createdAt: Date.now(),
     };
 
-    // Never the earlier submission it ties: this run hasn't been shared yet
-    return slotIntoBoard(data, player, { matchShared: false }).rows;
-  }, [data, name, country, score, song, singSetup.tolerance]);
+    // Once it's being shared, a board that arrives late may already hold it; before, a row it ties
+    // is an earlier submission, not this run
+    return slotIntoBoard(data, player, { matchShared: hasSubmitted });
+  }, [data, name, country, score, song, singSetup.tolerance, hasSubmitted]);
+  const rows = slotted?.rows ?? [];
 
   // Away entirely for the dev-only debug widths above Easy — those are never stored, so the list
   // would be permanently empty.
@@ -73,7 +75,7 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
       listClassName={listClassName}
       title="Global scoreboard"
       // The count the removed "of N" sentence used to carry — the player's own row says the rest
-      subtitle={`This song · ${difficulty} · all time${data ? ` · ${data.total + 1} scores` : ''}`}
+      subtitle={`This song · ${difficulty} · all time${data ? ` · ${data.total + (slotted?.inserted ? 1 : 0)} scores` : ''}`}
       isLoading={isLoading}
       error={error}
       isEmpty={rows.length === 0}

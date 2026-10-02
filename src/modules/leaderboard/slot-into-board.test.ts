@@ -29,6 +29,7 @@ describe('slotIntoBoard', () => {
     expect(slotIntoBoard(board(listed, null), null)).toEqual({
       rows: listed.map((listedEntry) => ({ entry: listedEntry, isPlayer: false })),
       position: null,
+      inserted: false,
     });
   });
 
@@ -37,6 +38,7 @@ describe('slotIntoBoard', () => {
 
     expect(names(slotted.rows)).toEqual(['Ann', '*Me', 'Bob', 'Cid']);
     expect(slotted.position).toBe(2);
+    expect(slotted.inserted).toBe(true);
   });
 
   it('counts the rank from the start of the window', () => {
@@ -52,6 +54,7 @@ describe('slotIntoBoard', () => {
 
     expect(names(slotted.rows)).toEqual(['Ann', '*Bob', 'Cid']);
     expect(slotted.position).toBe(2);
+    expect(slotted.inserted).toBe(false);
   });
 
   it('lists a run known to be new apart from an earlier one it ties', () => {

@@ -10,6 +10,8 @@ interface SlottedBoard {
   rows: SlottedBoardRow[];
   /** 1-based rank of the player's row, `null` when the board has none. */
   position: number | null;
+  /** The run was added as a row of its own, so the board holds one more score than it says. */
+  inserted: boolean;
 }
 
 /** Mirrors the Worker's dedupe key: names differing only by case or whitespace are one name. */
@@ -24,7 +26,7 @@ export function slotIntoBoard(
   { matchShared = true }: { matchShared?: boolean } = {},
 ): SlottedBoard {
   const rows = board.entries.map((entry) => ({ entry, isPlayer: false }));
-  if (!run || board.position === null) return { rows, position: null };
+  if (!run || board.position === null) return { rows, position: null, inserted: false };
 
   const sharedIndex = !matchShared
     ? -1
@@ -33,7 +35,7 @@ export function slotIntoBoard(
       );
   if (sharedIndex !== -1) {
     rows[sharedIndex] = { ...rows[sharedIndex], isPlayer: true };
-    return { rows, position: board.startPosition + sharedIndex };
+    return { rows, position: board.startPosition + sharedIndex, inserted: false };
   }
 
   // Ranks come out right either way: the rows above the insertion keep theirs, and the ones below are
@@ -41,5 +43,5 @@ export function slotIntoBoard(
   const index = Math.min(Math.max(board.position - board.startPosition, 0), rows.length);
   rows.splice(index, 0, { entry: run, isPlayer: true });
 
-  return { rows, position: board.startPosition + index };
+  return { rows, position: board.startPosition + index, inserted: true };
 }
