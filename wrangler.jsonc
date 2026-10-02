@@ -77,8 +77,9 @@
 			},
 		},
 	],
+	// Inherited by `env.pr`, so preview workers get the same logs and traces
 	"observability": {
-		"enabled": false,
+		"enabled": true,
 		"head_sampling_rate": 1,
 		"logs": {
 			"enabled": true,
@@ -87,9 +88,58 @@
 			"invocation_logs": true,
 		},
 		"traces": {
-			"enabled": false,
+			"enabled": true,
 			"persist": true,
 			"head_sampling_rate": 1,
+		},
+	},
+	"env": {
+		// PR preview workers (`CLOUDFLARE_ENV=pr pnpm build`, deployed as `allkaraoke-party-pr-<number>`).
+		// Each gets its own Durable Objects, so binding the production KV here would let a near-empty
+		// preview board overwrite the public leaderboard. Bindings are not inherited from the top level,
+		// so every one is restated. The KV ids are the `preview_id` namespaces, shared by all previews.
+		"pr": {
+			"kv_namespaces": [
+				{
+					"binding": "SHARED_SONGS_KV",
+					"id": "4c32b3f25d73438390962814c3c1ed5a",
+				},
+				{
+					"binding": "LEADERBOARD_KV",
+					"id": "516b734626b048d9b9d92f8b7ff09067",
+				},
+			],
+			"durable_objects": {
+				"bindings": [
+					{
+						"name": "LEADERBOARD_BOARD",
+						"class_name": "LeaderboardBoard",
+					},
+					{
+						"name": "ONLINE_DIRECTORY",
+						"class_name": "OnlineDirectory",
+					},
+				],
+			},
+			// Own namespace ids so preview traffic does not count against production's limits
+			"ratelimits": [
+				{
+					"name": "LEADERBOARD_RATE_LIMITER",
+					"namespace_id": "2001",
+					"simple": {
+						"limit": 2,
+						"period": 60,
+					},
+				},
+				{
+					"name": "ONLINE_SIGNALING_RATE_LIMITER",
+					"namespace_id": "2002",
+					"simple": {
+						"limit": 60,
+						"period": 60,
+					},
+				},
+			],
 		},
 	},
 	// Secrets (UNVERIFIED_SONGS_ADMIN_TOKEN, ADMIN_PANEL_PASSWORD) must NOT be committed here.

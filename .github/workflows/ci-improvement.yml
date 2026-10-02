@@ -456,7 +456,7 @@ jobs:
 
   deploy-branch:
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master'
+    if: github.event_name == 'pull_request'
     environment:
       name: prs
       url: ${{ steps.deploy-report.outputs.deployment-url }}
@@ -469,7 +469,9 @@ jobs:
       - run: npx playwright install chromium
         timeout-minutes: 3
       - name: Build app
-        run: pnpm build
+        # Selects `env.pr` in wrangler.jsonc: the Cloudflare Vite plugin bakes the environment into the
+        # generated config at build time, so `wrangler deploy --env` cannot pick it afterwards
+        run: CLOUDFLARE_ENV=pr pnpm build
         shell: bash
       - name: Upload to Cloudflare
         id: deploy-report
@@ -477,4 +479,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --name=allkaraoke-party-pr-${{ github.run_id }}
+          # One worker per PR, redeployed on every push. cleanup-pr-worker.yml deletes it when the PR closes
+          command: deploy --name=allkaraoke-party-pr-${{ github.event.pull_request.number }}
