@@ -188,13 +188,14 @@ export default function SongPreviewComponent({
           // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
           // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
           // Expanded it fills a phone or tablet, and on the widest layout is a large dialog, clear of the
-          // app's toolbar above it and the keyboard help below.
+          // app's toolbar above it and the keyboard help below. Its opening is the view transition's: the
+          // card's own transitions would start it from the collapsed card's offset in the list, far below.
           expanded && !redesign
-            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
+            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
             : expanded
               ? cn(
                   dialogSurface,
-                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 md:portrait:p-5 max-lg:landscape:py-2',
+                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none md:portrait:p-5 max-lg:landscape:py-2',
                   'lg:landscape:top-16 lg:landscape:bottom-24 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
                   'lg:landscape:pb-6',
                 )
