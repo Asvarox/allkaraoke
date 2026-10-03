@@ -11,10 +11,10 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/vide
 import useDebounce from '~/modules/hooks/use-debounce';
 import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
 import SongSettingsLegacy from '~/routes/sing-a-song/song-selection/components/song-settings/legacy/song-settings';
+import useSongPreviewRedesign from '~/routes/sing-a-song/song-selection/hooks/use-song-preview-redesign';
 import { useSpecialTheme } from '~/routes/sing-a-song/song-selection/hooks/use-special-theme';
 import { cn } from '~/utils/cn';
 
@@ -52,8 +52,8 @@ export default function SongPreviewComponent({
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
   const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
   useSpecialTheme(songPreview, FeatureFlags.Eurovision, isEurovisionSong, 'eurovision');
-  // The redesign with the leaderboard; off, the preview is the one before it, in the legacy files
-  const redesign = useFeatureFlag(FeatureFlags.SongPreviewRedesign);
+  // The `song_preview_redesign` experiment's test arm; control is the preview before it, in the legacy files
+  const redesign = useSongPreviewRedesign();
   const Layout = redesign ? SongPreviewLayout : SongPreviewLayoutLegacy;
   const Settings = redesign ? SongSettings : SongSettingsLegacy;
 

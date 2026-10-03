@@ -30,6 +30,7 @@
     "src/modules/utils/test-utils.ts",
     "src/modules/utils/use-feature-flag.ts",
     "src/routes/sing-a-song/song-selection/hooks/use-playlists-eurovision.tsx",
+    ".storybook/public/mockServiceWorker.js",
     "src/setup-tests.ts",
     "src/setup-tests.browser.ts",
     "src/stories/song-fixture.ts",

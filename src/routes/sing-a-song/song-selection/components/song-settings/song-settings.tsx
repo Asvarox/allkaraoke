@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { useMedia } from 'react-use';
 
 import { SingSetup, SongPreview } from '~/interfaces';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import Box from '~/modules/elements/akui/primitives/box';
 import { Selector } from '~/modules/elements/akui/selector';
-import SongPreviewLayout, { PHONE_LAYOUT_QUERY } from '~/modules/elements/song-preview-layout';
+import { resolveResponsiveValue } from '~/modules/elements/akui/types';
+import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import events from '~/modules/game-events/game-events';
+import useBreakpoint, { useOrientation } from '~/modules/hooks/use-breakpoint';
 import { useOnlineSongSelection } from '~/modules/online/song-selection-context';
 import { useDifficultySetting } from '~/routes/sing-a-song/song-selection/components/song-settings/difficulty';
 import GameSettings from '~/routes/sing-a-song/song-selection/components/song-settings/game-settings';
@@ -28,7 +29,12 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
   const [pendingSetup, setPendingSetup] = useState<SingSetup | null>(null);
   const [tolerance, setTolerance] = useDifficultySetting(1);
 
-  const isPhone = useMedia(PHONE_LAYOUT_QUERY);
+  // A phone, either way up — the split the layout's grid makes: under `md` upright, under `lg` sideways
+  const breakpoint = useBreakpoint();
+  const isPhone = resolveResponsiveValue(
+    useOrientation() === 'portrait' ? { xs: true, md: false } : { xs: true, lg: false },
+    breakpoint,
+  );
   // A phone has room for one of the two panels at a time, and the leaderboard is the one that's new
   const [panel, setPanel] = useState<Panel>('leaderboard');
 

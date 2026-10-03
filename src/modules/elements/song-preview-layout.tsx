@@ -22,13 +22,6 @@ interface Props {
   footer?: ReactNode;
 }
 
-/**
- * A phone, either way up — the same split the grid below makes: under `md` held upright, under `lg`
- * held sideways. For the parts that change what they render there rather than only where they sit.
- */
-export const PHONE_LAYOUT_QUERY =
-  '(orientation: portrait) and (width < 48rem), (orientation: landscape) and (width < 64rem)';
-
 /** Where the song settings' parts go in the expanded grid. On a phone the players and the
  * leaderboard share one tabbed area; on the widest layout Setup mics sits under the players. */
 const songPreviewArea = {

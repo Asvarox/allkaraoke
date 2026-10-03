@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { useEffect, useState } from 'react';
+import { http, HttpResponse } from 'msw';
+import { useEffect } from 'react';
 
 import { SongPreview } from '~/interfaces';
 import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
@@ -72,8 +73,8 @@ function useDrawingTestPlayers(volume: number) {
 }
 
 // ---------------------------------------------------------------------------
-// Leaderboard — no request mocking in Storybook, so `fetch` answers `GET /leaderboard-song` itself.
-// Hard has nobody on it, so the empty state is a tab away.
+// Leaderboard — `GET /leaderboard-song` answered by MSW. Hard has nobody on it, so the empty state is
+// a tab away.
 // ---------------------------------------------------------------------------
 
 const BOARD_NAMES = [
@@ -102,24 +103,9 @@ const songBoard = (tolerance: number): SongBoardResponse => {
   return { entries, total: entries.length, startPosition: 1, position: null };
 };
 
-/** Installed during render rather than in an effect: SWR fires on mount, before any effect would run. */
-function useStubbedSongBoard() {
-  const [original] = useState(() => {
-    const previous = window.fetch;
-
-    window.fetch = (input, init) => {
-      const url = String(input instanceof Request ? input.url : input);
-      if (!url.includes('/leaderboard-song')) return previous(input, init);
-
-      const tolerance = Number(new URL(url, window.location.origin).searchParams.get('tolerance'));
-      return Promise.resolve(new Response(JSON.stringify(songBoard(tolerance)), { status: 200 }));
-    };
-
-    return previous;
-  });
-
-  useEffect(() => () => void (window.fetch = original), [original]);
-}
+const songBoardHandler = http.get('/leaderboard-song', ({ request }) =>
+  HttpResponse.json(songBoard(Number(new URL(request.url).searchParams.get('tolerance')))),
+);
 
 // ---------------------------------------------------------------------------
 // Default meta
@@ -138,6 +124,9 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
+  beforeEach({ msw }) {
+    msw.use(songBoardHandler);
+  },
 } satisfies Meta<StoryArgs>;
 
 type Story = StoryObj<StoryArgs>;
@@ -149,8 +138,6 @@ type Story = StoryObj<StoryArgs>;
 
 function ExpandedTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
-  useStubbedSongBoard();
-
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
       <SongPreviewComponent
@@ -231,8 +218,6 @@ const duetSongPreview: SongPreview = {
 
 function DuetTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
-  useStubbedSongBoard();
-
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
       <SongPreviewComponent
