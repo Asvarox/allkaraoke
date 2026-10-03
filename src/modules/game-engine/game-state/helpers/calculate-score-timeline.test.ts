@@ -143,13 +143,13 @@ describe('calculateScoreTimeline', () => {
 
   describe('getTrackTimelineRange', () => {
     it("spans the track's notes whatever anyone sang", () => {
-      expect(getTrackTimelineRange(song, 0)).toEqual({ startBeat: 0, endBeat: 20 });
+      expect(getTrackTimelineRange(song, song.tracks[0])).toEqual({ startBeat: 0, endBeat: 20 });
     });
 
     it('starts at the first note rather than the start of the song', () => {
       const lateSong = generateSong([[{ start: 0, type: 'notes', notes: [generateNote(8, 4), generateNote(12, 4)] }]]);
 
-      expect(getTrackTimelineRange(lateSong, 0)).toEqual({ startBeat: 8, endBeat: 16 });
+      expect(getTrackTimelineRange(lateSong, lateSong.tracks[0])).toEqual({ startBeat: 8, endBeat: 16 });
     });
   });
 });

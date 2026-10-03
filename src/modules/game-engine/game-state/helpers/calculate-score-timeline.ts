@@ -1,5 +1,5 @@
 import { noPointsNoteTypes } from '~/consts';
-import { DetailedScore, PlayerNote, Song, songBeat } from '~/interfaces';
+import { DetailedScore, PlayerNote, Song, songBeat, SongTrack } from '~/interfaces';
 import {
   beatsToPoints,
   calculateDetailedScoreData,
@@ -61,14 +61,14 @@ export function getTimelineRange(song: Song, playerNotes: PlayerNote[][]): Timel
 }
 
 /**
- * The stretch of a track that holds notes, from the first one's start to the last one's end.
+ * The stretch of a track that holds notes, from the first one's start to the last one's end. Pass
+ * the track the player is scored against (`PlayerState.getTrack`), merged or not.
  *
  * For when the players sharing the results screen sang on different machines, as online: nobody
  * holds everyone's notes, so `getTimelineRange` cannot be agreed on, but every machine has the same
  * chart. The intro and outro before and after the notes are cut the same way.
  */
-export function getTrackTimelineRange(song: Song, trackNumber: number): TimelineRange {
-  const sections = song.tracks[trackNumber]?.sections ?? [];
+export function getTrackTimelineRange(song: Song, { sections }: SongTrack): TimelineRange {
   const startBeat = getFirstNoteStartFromSections(sections);
   const endBeat = getLastNoteEndFromSections(sections);
 

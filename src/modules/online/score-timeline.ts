@@ -36,7 +36,7 @@ export const getOwnScoreTimeline = (playerNumber: PlayerNumber): WireScoreTimeli
   if (!song || !player) return undefined;
 
   return encodeScoreTimeline(
-    GameState.getPlayerScoreTimeline(playerNumber, getTrackTimelineRange(song, player.getTrackIndex())),
+    GameState.getPlayerScoreTimeline(playerNumber, getTrackTimelineRange(song, player.getTrack())),
   );
 };
 
