@@ -2,11 +2,17 @@ import { throttle } from 'es-toolkit';
 import { useEffect, useMemo, useRef } from 'react';
 
 import { SongPreview } from '~/interfaces';
+import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import OnlineClient from '~/modules/online/client/online-client';
 import { toSongHoverPreview } from '~/modules/online/client/song-preview';
 import { OnlineSongSelectionContext, OnlineSongSelectionIntegration } from '~/modules/online/song-selection-context';
-import OnlineSongPlayersPanel from '~/routes/online/lobby/song-players-panel';
+import ChatPanel from '~/routes/online/lobby/chat-panel';
+import OnlineSongPlayersPanel, { OnlineSongVotesSummary } from '~/routes/online/lobby/song-players-panel';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
+
+/** Keeps the chat off the song settings' keyboard navigation, whose controls all mirror to a phone
+ * remote — a text field has no mirrored form, and one unmirrored control drops the whole screen out. */
+const offKeyboardNav = (() => ({ focused: false })) as unknown as RegisterFunc;
 
 interface Props {
   /** The room's current pick, so re-opening the browser lands back on it. */
@@ -53,6 +59,8 @@ function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
     () => ({
       onPreviewSettingsChange: publisher.onSettingsChange,
       playersView: <OnlineSongPlayersPanel />,
+      playersSummary: <OnlineSongVotesSummary />,
+      chatView: <ChatPanel register={offKeyboardNav} />,
     }),
     [publisher],
   );
