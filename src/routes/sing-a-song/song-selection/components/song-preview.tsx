@@ -188,7 +188,7 @@ export default function SongPreviewComponent({
           // Only the expanded card is dialog-like. Collapsed, this is a tile in the grid and keeps
           // the bare fill — `dialogSurface`'s border would draw an edge around every song in the list.
           // Expanded it fills a phone or tablet, and on the widest layout is a large dialog, clear of the
-          // app's toolbar above it and the keyboard help below. Its opening is the view transition's: the
+          // app's toolbar above it, the same gap below (the keyboard help may overlap it). Its opening is the view transition's: the
           // card's own transitions would start it from the collapsed card's offset in the list, far below.
           expanded && !redesign
             ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
@@ -196,7 +196,7 @@ export default function SongPreviewComponent({
               ? cn(
                   dialogSurface,
                   'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none md:portrait:p-5 max-lg:landscape:py-2',
-                  'lg:landscape:top-16 lg:landscape:bottom-24 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
+                  'lg:landscape:top-16 lg:landscape:bottom-16 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
                   'lg:landscape:pb-6',
                 )
               : `absolute z-3 bg-slate-800 transition-opacity ${
@@ -218,7 +218,7 @@ export default function SongPreviewComponent({
                 aria-label="Back to the song list"
                 className={cn(
                   'text-active hidden shrink-0 cursor-pointer items-center',
-                  redesign ? 'lg:landscape:flex' : 'sm:flex',
+                  redesign ? 'portrait:flex lg:landscape:flex' : 'sm:flex',
                 )}>
                 <Icon icon="ic:baseline-arrow-back" className={redesign ? 'text-2xl' : 'text-xl md:text-2xl'} />
               </button>

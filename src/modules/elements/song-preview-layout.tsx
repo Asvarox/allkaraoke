@@ -41,23 +41,24 @@ const songPreviewArea = {
  * lists scroll inside their panels; a screen too short for the fixed rows scrolls the card instead. */
 const EXPANDED_GRID = [
   'grid h-full shrink-0 gap-3 max-lg:landscape:gap-2 lg:landscape:gap-4',
-  // Phone, upright: the song over its settings, the tabbed panel, Play at the bottom
-  "grid-cols-1 grid-rows-[auto_auto_auto_minmax(16rem,1fr)_auto] [grid-template-areas:'video'_'info'_'settings'_'panels'_'actions']",
+  // Phone, upright: the title over the song and its settings, the tabbed panel, Play at the bottom
+  "grid-cols-1 grid-rows-[auto_auto_auto_minmax(16rem,1fr)_auto] [grid-template-areas:'info'_'video'_'settings'_'panels'_'actions']",
   // Phone, sideways: the song and its settings down the left, the tabbed panel beside them. Every
   // pixel of height counts here, so the controls in that column are a size down
   "max-lg:landscape:grid-cols-[minmax(0,18rem)_minmax(0,1fr)] max-lg:landscape:grid-rows-[auto_auto_minmax(0,1fr)_auto] max-lg:landscape:[grid-template-areas:'video_panels'_'info_panels'_'settings_panels'_'actions_panels']",
-  // Tablet, upright: the song across the top, the players and the leaderboard side by side under it
-  "md:portrait:grid-cols-2 md:portrait:grid-rows-[auto_auto_minmax(16rem,1fr)_auto] md:portrait:[grid-template-areas:'video_info'_'video_settings'_'players_board'_'actions_actions']",
+  // Tablet, upright: the title across the top, the song beside its settings, then the players and the
+  // leaderboard side by side
+  "md:portrait:grid-cols-2 md:portrait:grid-rows-[auto_auto_minmax(16rem,1fr)_auto] md:portrait:[grid-template-areas:'info_info'_'video_settings'_'players_board'_'actions_actions']",
   // Tablet sideways, and desktop: the song's title across the top as the dialog's header, then players,
   // the video with its settings, leaderboard. Short of height, the video gives way first
   "lg:landscape:grid-cols-[minmax(0,11fr)_minmax(0,10fr)_minmax(0,10fr)] lg:landscape:grid-rows-[auto_minmax(0,auto)_1fr_auto] lg:landscape:[grid-template-areas:'info_info_info'_'players_video_board'_'players_settings_board'_'mics_play_board']",
 ].join(' ');
 
-/** Over the video's corner; on the widest layout the title carries it instead. */
-const BACK_CLASS = 'z-2 m-2 self-start justify-self-start [grid-area:video] lg:landscape:hidden';
+/** Over the video's corner on a phone held sideways; everywhere else the title carries it instead. */
+const BACK_CLASS = 'z-2 m-2 self-start justify-self-start [grid-area:video] portrait:hidden lg:landscape:hidden';
 
-/** Under the video; on an upright tablet clear of the app's toolbar, which sits in the corner above it. */
-const INFO_CLASS = 'flex min-w-0 flex-col gap-1 self-start [grid-area:info] md:portrait:pt-12';
+/** The title and artist; held upright, clear of the app's toolbar in the corner beside them. */
+const INFO_CLASS = 'flex min-w-0 flex-col gap-1 self-start [grid-area:info] portrait:pr-36';
 
 /** The opened song preview: the song and its settings, the players about to sing it, and its
  * leaderboard. Every part is a slot, and the settings' own parts are cells of the same grid. */
