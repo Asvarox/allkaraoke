@@ -7,6 +7,7 @@ import {
 } from '~/modules/game-engine/game-state/helpers/calculate-score';
 import {
   ScoreTimeline,
+  TimelineRange,
   calculateScoreTimeline,
   getTimelineRange,
 } from '~/modules/game-engine/game-state/helpers/calculate-score-timeline';
@@ -106,14 +107,16 @@ export class GameStateClass {
 
   /** Per-player running score for the results screen to animate through. Co-op collapses to the one
    * team score the same way `getPlayerDetailedScore` does: summed across players, then averaged. */
-  public getPlayerScoreTimeline = (player: PlayerNumber): ScoreTimeline => {
+  public getPlayerScoreTimeline = (player: PlayerNumber, sharedRange?: TimelineRange): ScoreTimeline => {
     const song = this.getSong()!;
     // One range for everyone on the screen, so the same progress means the same moment of the song
-    // in every timeline — see `getTimelineRange`.
-    const range = getTimelineRange(
-      song,
-      this.getPlayers().map((playerState) => playerState.getPlayerNotes()),
-    );
+    // in every timeline — see `getTimelineRange`. Online passes its own, as nobody has all the notes.
+    const range =
+      sharedRange ??
+      getTimelineRange(
+        song,
+        this.getPlayers().map((playerState) => playerState.getPlayerNotes()),
+      );
     const timelineOf = (playerState: PlayerState) =>
       calculateScoreTimeline(playerState.getPlayerNotes(), song, playerState.getTrackIndex(), range);
 

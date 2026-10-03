@@ -79,6 +79,10 @@ export const ONLINE_ROOM_CODE_LENGTH = 5;
 /** Longest name a participant can set for themselves (matches the local game's MAX_NAME_LENGTH). */
 export const ONLINE_MAX_NAME_LENGTH = 20;
 
+/** Most samples a published score timeline may hold. The game sends `SCORE_TIMELINE_SAMPLES + 1`;
+ * this only has to stop a client that isn't ours from bloating every room-state publish. */
+export const ONLINE_MAX_SCORE_TIMELINE_SAMPLES = 241;
+
 /** Supported range for the pitch-matching tolerance — same scale as the local game's difficulty
  * picker (1 = Hard .. 3 = Easy in production, up to 6 for the dev-only debug difficulties). */
 export const ONLINE_MIN_TOLERANCE = 1;

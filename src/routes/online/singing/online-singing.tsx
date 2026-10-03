@@ -13,6 +13,7 @@ import { trackOnlineDriftSeek, trackOnlineSongStarted } from '~/modules/online/c
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
+import { getOwnScoreTimeline } from '~/modules/online/score-timeline';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import LayoutGame from '~/routes/layout-game';
 import LeaderboardOverlay from '~/routes/online/singing/leaderboard-overlay';
@@ -217,7 +218,7 @@ function OnlineSinging({ roomState, song }: Props) {
     OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
     const [actual, max] = GameState.getPlayerDetailedScore(selfNumber);
     const detailedScore: WireDetailedScore = [{ ...actual }, { ...max }];
-    OnlineClient.send.scoring.publishFinal(detailedScore);
+    OnlineClient.send.scoring.publishFinal(detailedScore, getOwnScoreTimeline(selfNumber));
   }, [hasFinished, selfNumber]);
 
   // The host ended the game — wrap up and publish the final score so the results can show
