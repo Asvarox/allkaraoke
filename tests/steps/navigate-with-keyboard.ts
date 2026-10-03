@@ -29,10 +29,34 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
     const navigableElements = await page.locator('[data-e2e-focused]:not([data-unfocusable])');
     const handles = await navigableElements.elementHandles();
 
+    // Where each element shows, as the app's spatial navigation measures it: clamped to whatever clips
+    // it, so a control scrolled out of a column isn't level with the ones beside the column
     let rectangles = await Promise.all(
       handles.map(async (handle) => {
-        return [handle, (await handle.boundingBox())!] as const;
+        const box = await handle.evaluate((node) => {
+          const element = node as Element;
+          const rect = element.getBoundingClientRect();
+          let { left, top, right, bottom } = rect;
+          for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+            const { overflowX, overflowY } = getComputedStyle(parent);
+            const clip = parent.getBoundingClientRect();
+            if (overflowX !== 'visible') {
+              left = Math.min(Math.max(left, clip.left), clip.right);
+              right = Math.min(Math.max(right, clip.left), clip.right);
+            }
+            if (overflowY !== 'visible') {
+              top = Math.min(Math.max(top, clip.top), clip.bottom);
+              bottom = Math.min(Math.max(bottom, clip.top), clip.bottom);
+            }
+          }
+          // A display:none copy stays all-zero, which the app skips too
+          if (rect.width === 0 && rect.height === 0) return null;
+          return { x: left, y: top, width: right - left, height: bottom - top };
+        });
+        return [handle, box] as const;
       }),
+    ).then((measured) =>
+      measured.filter((entry): entry is [(typeof entry)[0], NonNullable<(typeof entry)[1]>] => entry[1] !== null),
     );
 
     // Matrix of navigable elements -- the value is data-test
@@ -69,22 +93,30 @@ async function navigate(page: Page, targetTestId: string, remoteMic?: Page) {
     const startingElement = (await allFocusedElements[0].getAttribute('data-test'))!;
     const start = findInMatrix(rows, startingElement);
     const [finishX, finishY] = findInMatrix(rows, targetTestId);
+    // Already there: the walk below would still go to the row's start and back, which a mirrored
+    // remote mic (no arrow keys) can't do
+    if (startingElement === targetTestId) return;
 
     const intermediateSteps: Array<[number, number, dirs]> = [];
-    if (start[0] > 0) {
-      // Move to the first element in the row
-      addSteps(start, intermediateSteps, 'Left', start[0]);
-    }
-    if (start[1] < finishY) {
-      // Move down to the target row
-      addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
-    } else if (start[1] > finishY) {
-      // Move up to the target row
-      addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
-    }
-    if (finishX > 0) {
-      // Move to the target element
-      addSteps(start, intermediateSteps, 'Right', finishX);
+    if (start[1] === finishY) {
+      // Same row: straight across
+      addSteps(start, intermediateSteps, finishX < start[0] ? 'Left' : 'Right', Math.abs(finishX - start[0]));
+    } else {
+      if (start[0] > 0) {
+        // Move to the first element in the row
+        addSteps(start, intermediateSteps, 'Left', start[0]);
+      }
+      if (start[1] < finishY) {
+        // Move down to the target row
+        addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
+      } else if (start[1] > finishY) {
+        // Move up to the target row
+        addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
+      }
+      if (finishX > 0) {
+        // Move to the target element
+        addSteps(start, intermediateSteps, 'Right', finishX);
+      }
     }
 
     for (const [x, y, dir] of intermediateSteps) {
