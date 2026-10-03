@@ -11,7 +11,13 @@ export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
   const storageKey = getSongKey(song);
 
   const setSongStats = async () => {
-    setStats(await fetchSongStats(song));
+    // Storage that can't be read counts as no record, rather than leaving callers waiting on stats
+    // that never come (the song preview's board is only requested once they're in)
+    const loaded = await fetchSongStats(song).catch((error: unknown) => {
+      console.error(error);
+      return { plays: 0, scores: [] } satisfies SongStats;
+    });
+    setStats(loaded);
   };
 
   useEffect(() => {
