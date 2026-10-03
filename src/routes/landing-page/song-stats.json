@@ -76,6 +76,7 @@
     "Gwen Stefani",
     "Jonas Brothers",
     "Kool & The Gang",
+    "KoRn",
     "Oasis",
     "Owl City",
     "Rod Stewart",
@@ -88,7 +89,6 @@
     "Destiny’s Child",
     "Good Charlotte",
     "Guns N’ Roses",
-    "KoRn",
     "Melanie Martinez",
     "Pink Floyd",
     "Serj Tankian",
@@ -190,10 +190,11 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6456,
-  "generatedAt": "2026-10-02T03:26:01.235Z",
+  "songs": 6468,
+  "generatedAt": "2026-10-03T04:04:31.293Z",
   "additionsPerDay": {
-    "2026-10-02": 13,
+    "2026-10-03": 12,
+    "2026-10-01": 13,
     "2026-09-29": 2,
     "2026-09-24": 16,
     "2026-09-23": 8,
@@ -232,82 +233,154 @@
   },
   "recentlyAdded": [
     {
+      "artist": "Renaud & Axelle Red",
+      "title": "Manhattan-Kaboul",
+      "video": "0qeV8PDBH8E",
+      "addedAt": "2026-10-03T04:04:09.955Z"
+    },
+    {
+      "artist": "M83",
+      "title": "Midnight City",
+      "video": "dX3k_QDnzHE",
+      "addedAt": "2026-10-03T04:04:09.800Z"
+    },
+    {
+      "artist": "Unheilig",
+      "title": "Zeit zu gehen",
+      "video": "DGrPaVZH4mE",
+      "addedAt": "2026-10-03T04:04:09.798Z"
+    },
+    {
+      "artist": "Shakira",
+      "title": "¿Dónde están los ladrones?",
+      "video": "uO_sNVBAd0k",
+      "addedAt": "2026-10-03T04:04:09.795Z"
+    },
+    {
+      "artist": "Clair Obscur: Expedition 33 (Lorien Testard)",
+      "title": "Lumière",
+      "video": "LpNVf8sczqU",
+      "addedAt": "2026-10-03T04:04:08.978Z"
+    },
+    {
+      "artist": "Carly Rae Jepsen",
+      "title": "Cry",
+      "video": "prrUs44Jvfs",
+      "addedAt": "2026-10-03T04:04:08.976Z"
+    },
+    {
+      "artist": "Mitski",
+      "title": "Your Best American Girl",
+      "video": "u_hDHm9MD0I",
+      "addedAt": "2026-10-03T04:04:08.972Z"
+    },
+    {
+      "artist": "Rixton",
+      "title": "Me and my broken heart",
+      "video": "7JJfJgyHYwU",
+      "addedAt": "2026-10-03T04:04:08.512Z"
+    },
+    {
+      "artist": "KoRn",
+      "title": "Coming Undone",
+      "video": "CSJXle3LP_Q",
+      "addedAt": "2026-10-03T04:04:08.507Z"
+    },
+    {
+      "artist": "The Strokes",
+      "title": "Ode To The Mets",
+      "video": "BjC0KUxiMhc",
+      "addedAt": "2026-10-03T04:04:08.503Z"
+    },
+    {
+      "artist": "Imagine Dragons",
+      "title": "Nice To Meet You",
+      "video": "NeUfmyu5t8Q",
+      "addedAt": "2026-10-03T04:04:08.500Z"
+    },
+    {
+      "artist": "Disney’s High School Musical 2 (Troy & Gabriella)",
+      "title": "You Are The Music In Me",
+      "video": "XRWp6kOvJJs",
+      "addedAt": "2026-10-03T04:04:07.052Z"
+    },
+    {
       "artist": "Disney’s Tangled (Grace Potter)",
       "title": "Something That I Want",
       "video": "gwcvjzWNqxA",
-      "addedAt": "2026-10-02T03:25:40.505Z"
+      "addedAt": "2026-10-01T21:09:10.937Z"
     },
     {
       "artist": "2NE1",
       "title": "Fire",
       "video": "I3tuZF1qizQ",
-      "addedAt": "2026-10-02T03:25:40.504Z"
+      "addedAt": "2026-10-01T21:08:36.554Z"
     },
     {
       "artist": "Disney’s Tarzan",
       "title": "Menneskesøn",
       "video": "XfKNyLwTjzU",
-      "addedAt": "2026-10-02T03:25:40.317Z"
+      "addedAt": "2026-10-01T21:08:12.939Z"
     },
     {
       "artist": "Daryl Hall & John Oates",
       "title": "You Make My Dreams",
       "video": "49BQKU5wflk",
-      "addedAt": "2026-10-02T03:25:40.316Z"
+      "addedAt": "2026-10-01T21:07:51.749Z"
     },
     {
       "artist": "Hairspray (Movie)",
       "title": "You Can’t Stop The Beat",
       "video": "H2KQGAiVec0",
-      "addedAt": "2026-10-02T03:25:40.129Z"
+      "addedAt": "2026-10-01T21:07:40.242Z"
     },
     {
       "artist": "Taylor Swift",
       "title": "Bejeweled",
       "video": "b7QlX3yR2xs",
-      "addedAt": "2026-10-02T03:25:40.120Z"
+      "addedAt": "2026-10-01T21:07:24.633Z"
     },
     {
       "artist": "Alex & Sierra",
       "title": "Little Do You Know",
       "video": "4bzIpYiPUUo",
-      "addedAt": "2026-10-02T03:25:39.923Z"
+      "addedAt": "2026-10-01T21:07:08.167Z"
     },
     {
       "artist": "Hannah Montana",
       "title": "You’ll Always Find Your Way Back Home",
       "video": "ddPXRIH0-RY",
-      "addedAt": "2026-10-02T03:25:39.921Z"
+      "addedAt": "2026-10-01T21:06:57.579Z"
     },
     {
       "artist": "Rhapsody",
       "title": "Holy Thunderforce",
       "video": "RYzYo-XJfUI",
-      "addedAt": "2026-10-02T03:25:39.918Z"
+      "addedAt": "2026-10-01T21:06:31.044Z"
     },
     {
       "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Troy)",
       "title": "Dangerous",
       "video": "zJhJ5E1hK2A",
-      "addedAt": "2026-10-02T03:25:39.703Z"
+      "addedAt": "2026-10-01T21:05:58.887Z"
     },
     {
       "artist": "Bacilos",
       "title": "Tabaco y Chanel",
       "video": "6JqnbsQpljU",
-      "addedAt": "2026-10-02T03:25:39.515Z"
+      "addedAt": "2026-10-01T21:05:46.602Z"
     },
     {
       "artist": "Lizzy McAlpine",
       "title": "Ceilings",
       "video": "2bpMSpFTdzM",
-      "addedAt": "2026-10-02T03:25:38.955Z"
+      "addedAt": "2026-10-01T21:05:10.329Z"
     },
     {
       "artist": "Chappell Roan",
       "title": "The Subway",
       "video": "woLfAvD5iXI",
-      "addedAt": "2026-10-02T03:25:38.948Z"
+      "addedAt": "2026-10-01T21:04:57.678Z"
     },
     {
       "artist": "Ravyn Lenae",
@@ -446,78 +519,6 @@
       "title": "This Is Halloween",
       "video": "ZVuToMilP0A",
       "addedAt": "2026-09-23T21:08:12.234Z"
-    },
-    {
-      "artist": "Kasey Chambers",
-      "title": "Not Pretty Enough",
-      "video": "v5rOdF9rUKI",
-      "addedAt": "2026-09-23T21:07:53.728Z"
-    },
-    {
-      "artist": "a-ha",
-      "title": "Stay On These Roads",
-      "video": "nWey1DBAchM",
-      "addedAt": "2026-09-23T21:07:22.820Z"
-    },
-    {
-      "artist": "Disney’s High School Musical (Ryan, Sharpay)",
-      "title": "What I’ve Been Looking For",
-      "video": "S-wSCKaHJ6Y",
-      "addedAt": "2026-09-23T21:07:02.593Z"
-    },
-    {
-      "artist": "HIM",
-      "title": "Poison Girl",
-      "video": "yGvidlULUDQ",
-      "addedAt": "2026-09-22T21:08:28.355Z"
-    },
-    {
-      "artist": "Jean-Jacques Goldman",
-      "title": "Quand tu danses",
-      "video": "2EpQxCdUyLw",
-      "addedAt": "2026-09-22T21:07:06.225Z"
-    },
-    {
-      "artist": "Jean-Jacques Goldman",
-      "title": "Au bout de mes rêves",
-      "video": "o3hX0DU1QoI",
-      "addedAt": "2026-09-22T21:06:50.288Z"
-    },
-    {
-      "artist": "Keina Suda",
-      "title": "veil",
-      "video": "geE49ne2mQg",
-      "addedAt": "2026-09-22T21:06:35.723Z"
-    },
-    {
-      "artist": "The Rocky Horror Picture Show",
-      "title": "Touch-a, Touch-a, Touch-a, Touch Me",
-      "video": "JKMpRikJeLI",
-      "addedAt": "2026-09-22T21:06:18.194Z"
-    },
-    {
-      "artist": "Camilo Sesto",
-      "title": "Algo de mí",
-      "video": "_sTeDba7eHA",
-      "addedAt": "2026-09-22T21:05:37.473Z"
-    },
-    {
-      "artist": "Candlemass",
-      "title": "Bewitched",
-      "video": "h3LNi-aPXuc",
-      "addedAt": "2026-09-22T21:05:15.640Z"
-    },
-    {
-      "artist": "Nightwish",
-      "title": "Storytime",
-      "video": "09MTDBb8qro",
-      "addedAt": "2026-09-22T21:04:50.964Z"
-    },
-    {
-      "artist": "Mom Jeans",
-      "title": "Death Cup",
-      "video": "ejpAXCFm_CE",
-      "addedAt": "2026-09-22T21:04:21.774Z"
     }
   ]
 }
