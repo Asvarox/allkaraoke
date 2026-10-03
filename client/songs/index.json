@@ -275,7 +275,7 @@
     "gap": 14241.596638655463,
     "year": "2010",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-10-02T03:25:40.504Z",
+    "lastUpdate": "2026-10-01T21:08:36.554Z",
     "realBpm": 120,
     "volume": 1,
     "author": "lop",
@@ -7076,7 +7076,7 @@
     "bpm": 292,
     "gap": 373.9726027397261,
     "year": "2014",
-    "lastUpdate": "2026-10-02T03:25:39.923Z",
+    "lastUpdate": "2026-10-01T21:07:08.167Z",
     "genre": "Pop",
     "realBpm": 146,
     "volume": 1,
@@ -16692,7 +16692,7 @@
     "gap": 20502.190672294862,
     "year": "2001",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-02T03:25:39.515Z",
+    "lastUpdate": "2026-10-01T21:05:46.602Z",
     "realBpm": 97,
     "volume": 1,
     "author": "Pantero",
@@ -33158,6 +33158,34 @@
     "local": false
   },
   {
+    "id": "carly-rae-jepsen-cry",
+    "title": "Cry",
+    "artist": "Carly Rae Jepsen",
+    "video": "prrUs44Jvfs",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.12,
+    "gap": 15108.57686815802,
+    "year": "2016",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-03T04:04:08.976Z",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "Zevac",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6464,
+    "tracksCount": 1,
+    "search": "carlyraejepsencry",
+    "local": false
+  },
+  {
     "id": "carly-rae-jepsen-i-really-like-you",
     "title": "I Really Like You",
     "artist": "Carly Rae Jepsen",
@@ -34368,7 +34396,7 @@
     "gap": 16816.024096385543,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-02T03:25:38.948Z",
+    "lastUpdate": "2026-10-01T21:04:57.678Z",
     "genre": "Pop",
     "realBpm": 83,
     "volume": 1,
@@ -37064,6 +37092,33 @@
     "shortId": 974,
     "tracksCount": 1,
     "search": "ciroylospersasastros",
+    "local": false
+  },
+  {
+    "id": "clair-obscur-expedition-33-lorien-testard-lumiere",
+    "title": "Lumière",
+    "artist": "Clair Obscur: Expedition 33 (Lorien Testard)",
+    "video": "LpNVf8sczqU",
+    "language": [
+      "French"
+    ],
+    "bpm": 320,
+    "gap": 5165.625,
+    "year": "2025",
+    "lastUpdate": "2026-10-03T04:04:08.978Z",
+    "genre": "Ballad",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "Lorien Testar",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6465,
+    "tracksCount": 1,
+    "search": "clairobscurexpedition33lorientestardlumiere",
     "local": false
   },
   {
@@ -42088,7 +42143,7 @@
     "gap": 10215.355776587605,
     "year": "1980",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-02T03:25:40.316Z",
+    "lastUpdate": "2026-10-01T21:07:51.749Z",
     "genre": "Pop Rock",
     "realBpm": 167,
     "volume": 1,
@@ -48245,6 +48300,34 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-2-troy-gabriella-you-are-the-music-in-me",
+    "title": "You Are The Music In Me",
+    "artist": "Disney’s High School Musical 2 (Troy & Gabriella)",
+    "video": "XRWp6kOvJJs",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 25,
+    "year": "2007",
+    "lastUpdate": "2026-10-03T04:04:07.052Z",
+    "genre": "Soundtrack",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "Chris2008",
+    "duration": 202,
+    "tracks": [
+      {
+        "name": "You Are The Music In Me",
+        "start": 14
+      }
+    ],
+    "shortId": 6458,
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical2troygabriellayouarethemusicinme",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-2-what-time-is-it",
     "title": "What Time Is It?",
     "artist": "Disney’s High School Musical 2",
@@ -49089,7 +49172,7 @@
     "bpm": 337,
     "gap": 4390.771513353116,
     "year": "2010",
-    "lastUpdate": "2026-10-02T03:25:40.505Z",
+    "lastUpdate": "2026-10-01T21:09:10.937Z",
     "genre": "Soundtrack",
     "realBpm": 168,
     "volume": 1,
@@ -49173,7 +49256,7 @@
     "bpm": 283.4,
     "gap": 13154.354269583628,
     "year": "1999",
-    "lastUpdate": "2026-10-02T03:25:40.317Z",
+    "lastUpdate": "2026-10-01T21:08:12.939Z",
     "genre": "Soundtrack",
     "realBpm": 142,
     "volume": 1,
@@ -58455,7 +58538,7 @@
     "bpm": 375,
     "gap": 70,
     "year": "2024",
-    "lastUpdate": "2026-10-02T03:25:39.703Z",
+    "lastUpdate": "2026-10-01T21:05:58.887Z",
     "genre": "Musical",
     "realBpm": 160,
     "volume": 1,
@@ -74086,7 +74169,7 @@
     "bpm": 346,
     "gap": 24792.890173410404,
     "year": "2007",
-    "lastUpdate": "2026-10-02T03:25:40.129Z",
+    "lastUpdate": "2026-10-01T21:07:40.242Z",
     "genre": "Soundtrack",
     "realBpm": 171,
     "volume": 1,
@@ -74577,7 +74660,7 @@
     "gap": 13768.83830455259,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-02T03:25:39.921Z",
+    "lastUpdate": "2026-10-01T21:06:57.579Z",
     "genre": "Pop",
     "realBpm": 153,
     "volume": 1,
@@ -79057,6 +79140,34 @@
     "shortId": 1992,
     "tracksCount": 1,
     "search": "imaginedragonsnatural",
+    "local": false
+  },
+  {
+    "id": "imagine-dragons-nice-to-meet-you",
+    "title": "Nice To Meet You",
+    "artist": "Imagine Dragons",
+    "video": "NeUfmyu5t8Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 420,
+    "gap": 18440,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-03T04:04:08.500Z",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=NeUfmyu5t8Q",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 6459,
+    "tracksCount": 1,
+    "search": "imaginedragonsnicetomeetyou",
     "local": false
   },
   {
@@ -95712,6 +95823,34 @@
     "local": false
   },
   {
+    "id": "korn-coming-undone",
+    "title": "Coming Undone",
+    "artist": "KoRn",
+    "video": "CSJXle3LP_Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 5000,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-03T04:04:08.507Z",
+    "genre": "Nu Metal",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "mrfypower",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6461,
+    "tracksCount": 1,
+    "search": "korncomingundone",
+    "local": false
+  },
+  {
     "id": "korn-evolution",
     "title": "Evolution",
     "artist": "KoRn",
@@ -105964,7 +106103,7 @@
     "bpm": 296.26,
     "gap": 22127.37595355431,
     "year": "2023",
-    "lastUpdate": "2026-10-02T03:25:38.955Z",
+    "lastUpdate": "2026-10-01T21:05:10.329Z",
     "realBpm": 148,
     "volume": 1,
     "author": "Tracks",
@@ -108752,6 +108891,34 @@
     "shortId": 2686,
     "tracksCount": 1,
     "search": "m83featsusannesundforoblivion",
+    "local": false
+  },
+  {
+    "id": "m83-midnight-city",
+    "title": "Midnight City",
+    "artist": "M83",
+    "video": "dX3k_QDnzHE",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 36800,
+    "year": "2011",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-03T04:04:09.800Z",
+    "genre": "Electronic",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "Wannseesprinter",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6468,
+    "tracksCount": 1,
+    "search": "m83midnightcity",
     "local": false
   },
   {
@@ -121143,6 +121310,37 @@
     "shortId": 3031,
     "tracksCount": 1,
     "search": "mitskiwashingmachineheart",
+    "local": false
+  },
+  {
+    "id": "mitski-your-best-american-girl",
+    "title": "Your Best American Girl",
+    "artist": "Mitski",
+    "video": "u_hDHm9MD0I",
+    "language": [
+      "English"
+    ],
+    "bpm": 313,
+    "gap": 14633.610223642172,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-03T04:04:08.972Z",
+    "genre": "Rock",
+    "realBpm": 77,
+    "previewStart": 71,
+    "previewEnd": 115,
+    "volume": 1,
+    "author": "lukmuk",
+    "sourceUrl": "https://www.youtube.com/watch?v=u_hDHm9MD0I",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6463,
+    "tracksCount": 1,
+    "search": "mitskiyourbestamericangirl",
     "local": false
   },
   {
@@ -143646,6 +143844,31 @@
     "local": false
   },
   {
+    "id": "renaud-axelle-red-manhattan-kaboul",
+    "title": "Manhattan-Kaboul",
+    "artist": "Renaud & Axelle Red",
+    "video": "0qeV8PDBH8E",
+    "language": [
+      "French"
+    ],
+    "bpm": 210.36,
+    "gap": 13545.711351968055,
+    "year": "2002",
+    "lastUpdate": "2026-10-03T04:04:09.955Z",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "unknowndoll11",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6469,
+    "tracksCount": 1,
+    "search": "renaudaxelleredmanhattankaboul",
+    "local": false
+  },
+  {
     "id": "reni-jusis-zakrecona",
     "title": "Zakręcona",
     "artist": "Reni Jusis",
@@ -144104,7 +144327,7 @@
     "gap": 9890,
     "year": "2000",
     "artistOrigin": "IT",
-    "lastUpdate": "2026-10-02T03:25:39.918Z",
+    "lastUpdate": "2026-10-01T21:06:31.044Z",
     "realBpm": 55,
     "volume": 1,
     "author": "Canni",
@@ -146102,6 +146325,35 @@
     "shortId": 5005,
     "tracksCount": 1,
     "search": "rivafeatdanniiminoguewhodoyoulovenow",
+    "local": false
+  },
+  {
+    "id": "rixton-me-and-my-broken-heart",
+    "title": "Me and my broken heart",
+    "artist": "Rixton",
+    "video": "7JJfJgyHYwU",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 78.27586206896552,
+    "year": "2014",
+    "lastUpdate": "2026-10-03T04:04:08.512Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Me%20and%20my%20broken%20heart",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 6462,
+    "tracksCount": 1,
+    "search": "rixtonmeandmybrokenheart",
     "local": false
   },
   {
@@ -153298,6 +153550,36 @@
     "shortId": 6008,
     "tracksCount": 1,
     "search": "shakiradisneyzootopiazoo",
+    "local": false
+  },
+  {
+    "id": "shakira-donde-estan-los-ladrones",
+    "title": "¿Dónde están los ladrones?",
+    "artist": "Shakira",
+    "video": "uO_sNVBAd0k",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 243.78,
+    "gap": 15660.50578390352,
+    "year": "1998",
+    "artistOrigin": "CO",
+    "lastUpdate": "2026-10-03T04:04:09.795Z",
+    "videoGap": 1,
+    "realBpm": 113,
+    "volume": 1,
+    "author": "Rubn4",
+    "authorUrl": "Shakira",
+    "sourceUrl": "https://youtu.be/Guakc4LU00U?si=7VcAqoerPDfeBEd5",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6466,
+    "tracksCount": 1,
+    "search": "shakiradondeestanlosladrones",
     "local": false
   },
   {
@@ -165254,7 +165536,7 @@
     "gap": 128510.28819855493,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-02T03:25:40.120Z",
+    "lastUpdate": "2026-10-01T21:07:24.633Z",
     "genre": "Pop",
     "realBpm": 164,
     "volume": 1,
@@ -174625,6 +174907,36 @@
     "local": false
   },
   {
+    "id": "the-strokes-ode-to-the-mets",
+    "title": "Ode To The Mets",
+    "artist": "The Strokes",
+    "video": "BjC0KUxiMhc",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 47298.97826086957,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-03T04:04:08.503Z",
+    "genre": "Garage rock, Garage rock revival, Indie rock, New wave, Post-punk revival, Rock, Synth-pop",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "purs",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=32410",
+    "duration": 409,
+    "tracks": [
+      {
+        "name": "Ode To The Mets",
+        "start": 25
+      }
+    ],
+    "shortId": 6460,
+    "tracksCount": 1,
+    "search": "thestrokesodetothemets",
+    "local": false
+  },
+  {
     "id": "the-strokes-reptilia",
     "title": "Reptilia",
     "artist": "The Strokes",
@@ -181836,6 +182148,34 @@
     "shortId": 4600,
     "tracksCount": 1,
     "search": "unheiliggeborenumzuleben",
+    "local": false
+  },
+  {
+    "id": "unheilig-zeit-zu-gehen",
+    "title": "Zeit zu gehen",
+    "artist": "Unheilig",
+    "video": "DGrPaVZH4mE",
+    "language": [
+      "German"
+    ],
+    "bpm": 416.04,
+    "gap": 11190.481684453418,
+    "year": "2018",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-03T04:04:09.798Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "Daniel",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 6467,
+    "tracksCount": 1,
+    "search": "unheiligzeitzugehen",
     "local": false
   },
   {
