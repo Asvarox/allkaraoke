@@ -1,7 +1,9 @@
+import { DIRECTORY_KEEPALIVE_MS } from '~/modules/network/realtime/protocol';
+import { SfuRoomMembership } from '~/modules/network/realtime/types';
 import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { getCachedChartData } from '~/modules/online/client/chart-cache';
-import { OnlinePeerSender, OnlineRoomChannels, SfuRoomMembership } from '~/modules/online/client/transport/interface';
+import { OnlinePeerSender, OnlineRoomChannels } from '~/modules/online/client/transport/interface';
 import { LoopbackTransportPair } from '~/modules/online/client/transport/loopback-transport';
 import {
   ONLINE_HOST_HEARTBEAT_MS,
@@ -11,7 +13,6 @@ import {
 } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { DIRECTORY_KEEPALIVE_MS } from '~/modules/online/signaling/protocol';
 
 /** Everything the host has to hand a successor. `chartData` is stripped on the way out and
  * restored from the successor's own cache — see `chart-cache`. */

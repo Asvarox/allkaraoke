@@ -1,11 +1,11 @@
-import { fetchIceServers, postSignaling } from '~/modules/online/signaling/directory-client';
 import {
   AnswerSessionRequest,
   CreateDataChannelsRequest,
   CreateDataChannelsResponse,
   CreateSessionResponse,
   DataChannelSpec,
-} from '~/modules/online/signaling/protocol';
+} from '~/modules/network/realtime/protocol';
+import { SignalingClient } from '~/modules/network/realtime/signaling-client';
 
 /**
  * Used when the Worker cannot be asked what to use — a hiccup on that request must not stop a join,
@@ -60,6 +60,8 @@ export class SfuSession {
   private readonly channels = new Map<string, RTCDataChannel>();
   private readonly lostListeners = new Set<() => void>();
 
+  public constructor(private readonly signaling: SignalingClient) {}
+
   /** Fires when the transport to the SFU is gone for good. 'disconnected' is deliberately not
    * included — it is a transient ICE state that recovers on its own, and treating it as fatal
    * would tear down a room over a brief network hiccup. */
@@ -87,7 +89,7 @@ export class SfuSession {
   };
 
   private negotiate = async (): Promise<string> => {
-    const ice = await fetchIceServers();
+    const ice = await this.signaling.fetchIceServers();
     const peerConnection = new RTCPeerConnection({
       iceServers: ice?.iceServers ?? FALLBACK_ICE_SERVERS,
       bundlePolicy: 'max-bundle',
@@ -101,14 +103,14 @@ export class SfuSession {
 
     // The SFU makes the offer and this browser answers it — Cloudflare's data-channel handshake. The
     // offer already carries the SCTP transport, so nothing has to be opened here first.
-    const { sessionId, offer, answerToken } = await postSignaling<CreateSessionResponse>('/online/session', {});
+    const { sessionId, offer, answerToken } = await this.signaling.post<CreateSessionResponse>('/session', {});
     await peerConnection.setRemoteDescription({ type: 'offer', sdp: offer.sdp });
     const answer = await peerConnection.createAnswer();
     await peerConnection.setLocalDescription(answer);
     // Sent as soon as it exists, without waiting for local candidates: the SFU is ICE-lite, so it
     // learns this browser's address from the connectivity checks it receives — the same as
     // Cloudflare's own example does.
-    await postSignaling('/online/session/answer', {
+    await this.signaling.post('/session/answer', {
       sessionId,
       answer: { type: 'answer', sdp: peerConnection.localDescription!.sdp },
       answerToken,
@@ -133,7 +135,7 @@ export class SfuSession {
   ): Promise<Map<string, RTCDataChannel>> => {
     if (!this.peerConnection || !this.sessionId) throw new Error('SFU session is not open');
 
-    const { channels } = await postSignaling<CreateDataChannelsResponse>('/online/datachannels', {
+    const { channels } = await this.signaling.post<CreateDataChannelsResponse>('/datachannels', {
       roomCode,
       participantId,
       sessionId: this.sessionId,
@@ -151,6 +153,18 @@ export class SfuSession {
   };
 
   public getChannel = (name: string) => this.channels.get(name);
+
+  /** Round trip to the SFU in ms, as ICE last measured it on the pair in use. Null until known. */
+  public getRoundTripTime = async (): Promise<number | null> => {
+    const stats = await this.peerConnection?.getStats();
+    let roundTripTime: number | null = null;
+    stats?.forEach((report: RTCIceCandidatePairStats) => {
+      if (report.type === 'candidate-pair' && report.nominated && typeof report.currentRoundTripTime === 'number') {
+        roundTripTime = Math.round(report.currentRoundTripTime * 1_000);
+      }
+    });
+    return roundTripTime;
+  };
 
   public close = () => {
     this.lostListeners.clear();

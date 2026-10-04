@@ -2,8 +2,8 @@ import { reset } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
 import { afterEach, describe, expect, it } from 'vitest';
 
+import type { JoinRoomResponse } from '../src/modules/network/realtime/protocol';
 import { ONLINE_SLOT_COUNT } from '../src/modules/online/signaling/protocol';
-import type { JoinRoomResponse } from '../src/modules/online/signaling/protocol';
 import type { OnlineDirectory } from './online-directory-do';
 
 let roomCounter = 0;

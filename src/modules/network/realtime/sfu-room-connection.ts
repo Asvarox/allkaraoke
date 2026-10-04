@@ -1,13 +1,8 @@
-import {
-  OnlineJoinOutcome,
-  OnlineRoomConnection,
-  SfuRoomMembership,
-} from '~/modules/online/client/transport/interface';
-import { OnlineMessages } from '~/modules/online/protocol/types';
-import { joinRoom, keepaliveRoom, leaveRoom, promoteHost } from '~/modules/online/signaling/directory-client';
-import { getMembershipSecret, setMembershipSecret } from '~/modules/online/signaling/membership-secret';
-import { ONLINE_SLOT_COUNT, ROOM_BROADCAST_CHANNEL, slotChannelName } from '~/modules/online/signaling/protocol';
-import { SfuSession } from '~/modules/online/signaling/sfu-session';
+import { getMembershipSecret, setMembershipSecret } from '~/modules/network/realtime/membership-secret';
+import { RealtimeService, ROOM_BROADCAST_CHANNEL, slotChannelName } from '~/modules/network/realtime/protocol';
+import { SfuSession } from '~/modules/network/realtime/sfu-session';
+import { SignalingClient } from '~/modules/network/realtime/signaling-client';
+import { RealtimeJoinOutcome, RealtimeRoomConnection, SfuRoomMembership } from '~/modules/network/realtime/types';
 
 /** A negotiated channel is usable as soon as SCTP is up, but `createDataChannel` still returns it
  * in 'connecting' for a moment. Bounded so a channel the SFU never opens fails the join instead of
@@ -38,6 +33,23 @@ const waitForOpen = (channel: RTCDataChannel) =>
     channel.addEventListener('error', onError);
   });
 
+/** How messages become data-channel frames. Online rooms send JSON text; remote mics send msgpack,
+ * which is what their frequency stream has always been packed as. */
+export interface SfuFrameCodec<M> {
+  encode(message: M): string | ArrayBuffer;
+  /** May throw on a frame it cannot read — the frame is then dropped. */
+  decode(frame: string | ArrayBuffer): M;
+}
+
+export const jsonCodec = <M>(): SfuFrameCodec<M> => ({
+  encode: (message) => JSON.stringify(message),
+  decode: (frame) => JSON.parse(frame as string),
+});
+
+// Split only because `send` is overloaded per type and will not take the union
+const sendFrame = (channel: RTCDataChannel, frame: string | ArrayBuffer) =>
+  typeof frame === 'string' ? channel.send(frame) : channel.send(frame);
+
 /**
  * This browser's connection to a room's media plane.
  *
@@ -47,48 +59,55 @@ const waitForOpen = (channel: RTCDataChannel) =>
  * access to exactly one subscriber per channel, so slots are handed out by the room directory and
  * never shared — a second claimant would silently steal the first one's upstream.
  *
- * Nothing here knows what the messages mean; the host runtime and `OnlineClient` sit on top.
+ * Nothing here knows what the messages mean; online mode and remote mics sit on top.
  */
-export class SfuRoomConnection implements OnlineRoomConnection {
-  private readonly session = new SfuSession();
+export class SfuRoomConnection<M> implements RealtimeRoomConnection<M> {
+  private readonly signaling: SignalingClient;
+  private readonly session: SfuSession;
   private membership: SfuRoomMembership | null = null;
   private broadcastChannel: RTCDataChannel | null = null;
   /** Host: every slot channel, indexed by slot. Client: only its own, at its own index. */
   private slotChannels = new Map<number, RTCDataChannel>();
 
-  private messageListeners = new Set<(message: OnlineMessages, slot: number | null) => void>();
+  private messageListeners = new Set<(message: M, slot: number | null) => void>();
   private closeListeners = new Set<(slot: number) => void>();
 
   public constructor(
+    private readonly service: RealtimeService,
     private readonly roomCode: string,
     private readonly participantId: string,
-  ) {}
+    private readonly codec: SfuFrameCodec<M>,
+  ) {
+    this.signaling = new SignalingClient(service);
+    this.session = new SfuSession(this.signaling);
+  }
 
   public getMembership = () => this.membership;
   /** Fires when the connection to the SFU is unrecoverable — the caller re-joins from scratch. */
   public onLost = (listener: () => void) => this.session.onLost(listener);
 
   public getSessionId = () => this.session.getSessionId();
+  public getRoundTripTime = () => this.session.getRoundTripTime();
   public isConnected = () => this.session.isConnected() && this.broadcastChannel?.readyState === 'open';
 
   /** Opens the SFU session, claims a slot in the directory and wires up the channels for whichever
    * role the directory handed back. */
-  public join = async ({ create = false } = {}): Promise<OnlineJoinOutcome> => {
+  public join = async ({ create = false } = {}): Promise<RealtimeJoinOutcome> => {
     const sessionId = await this.session.open();
 
-    const result = await joinRoom(this.roomCode, {
+    const result = await this.signaling.joinRoom(this.roomCode, {
       participantId: this.participantId,
       sessionId,
       create,
       // Absent on a first join; on every later one this is what proves the membership is ours
       // rather than one whose participant id we read off the room state.
-      secret: getMembershipSecret(this.roomCode),
+      secret: getMembershipSecret(this.service, this.roomCode),
     });
     if (!result.ok) {
       this.session.close();
       return { ok: false, reason: result.reason };
     }
-    setMembershipSecret(this.roomCode, result.secret);
+    setMembershipSecret(this.service, this.roomCode, result.secret);
 
     this.membership = {
       isHost: result.isHost,
@@ -126,13 +145,13 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     const membership = this.membership;
     const sessionId = this.session.getSessionId();
     if (!membership || !sessionId) throw new Error('Not in a room');
-    return promoteHost(this.roomCode, {
+    return this.signaling.promoteHost(this.roomCode, {
       participantId: this.participantId,
       sessionId,
       fromEpoch: membership.epoch,
       // The epoch is published in room state, so it is not proof of anything on its own — this is
       // what stops a claim being made on somebody else's behalf.
-      secret: getMembershipSecret(this.roomCode) ?? '',
+      secret: getMembershipSecret(this.service, this.roomCode) ?? '',
     });
   };
 
@@ -143,14 +162,14 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     this.session.close();
   };
 
-  public keepalive = () => keepaliveRoom(this.roomCode);
+  public keepalive = () => this.signaling.keepaliveRoom(this.roomCode);
 
   private requester = () => ({ participantId: this.participantId, sessionId: this.session.getSessionId()! });
 
-  public leave = () => leaveRoom(this.roomCode, this.participantId, this.requester());
+  public leave = () => this.signaling.leaveRoom(this.roomCode, this.participantId, this.requester());
 
   public releaseSlot = (participantId: string, ban = false) =>
-    leaveRoom(this.roomCode, participantId, this.requester(), ban);
+    this.signaling.leaveRoom(this.roomCode, participantId, this.requester(), ban);
 
   private wireChannels = async () => {
     const membership = this.membership!;
@@ -158,7 +177,7 @@ export class SfuRoomConnection implements OnlineRoomConnection {
     const specs = membership.isHost
       ? [
           { name: ROOM_BROADCAST_CHANNEL },
-          ...Array.from({ length: ONLINE_SLOT_COUNT }, (_, slot) => ({ name: slotChannelName(slot) })),
+          ...Array.from({ length: this.service.slotCount }, (_, slot) => ({ name: slotChannelName(slot) })),
         ]
       : [
           { name: ROOM_BROADCAST_CHANNEL, publisherSessionId: membership.hostSessionId },
@@ -186,10 +205,11 @@ export class SfuRoomConnection implements OnlineRoomConnection {
   };
 
   private attach = (channel: RTCDataChannel, slot: number | null) => {
-    channel.addEventListener('message', (event: MessageEvent<string>) => {
-      let message: OnlineMessages;
+    channel.binaryType = 'arraybuffer';
+    channel.addEventListener('message', (event: MessageEvent<string | ArrayBuffer>) => {
+      let message: M;
       try {
-        message = JSON.parse(event.data);
+        message = this.codec.decode(event.data);
       } catch {
         return;
       }
@@ -204,20 +224,20 @@ export class SfuRoomConnection implements OnlineRoomConnection {
 
   /** Host: one send that reaches every subscriber. Client: not used — a client has no publisher
    * channel and everything it says goes up its own slot. */
-  public broadcast = (message: OnlineMessages) => {
+  public broadcast = (message: M) => {
     if (this.broadcastChannel?.readyState !== 'open') return;
-    this.broadcastChannel.send(JSON.stringify(message));
+    sendFrame(this.broadcastChannel, this.codec.encode(message));
   };
 
   /** Host: down a specific participant's slot. Client: up its own — the `canReply` half of the
    * same negotiated channel, which is why both directions are one call. */
-  public sendToSlot = (slot: number, message: OnlineMessages) => {
+  public sendToSlot = (slot: number, message: M) => {
     const channel = this.slotChannels.get(slot);
     if (channel?.readyState !== 'open') return;
-    channel.send(JSON.stringify(message));
+    sendFrame(channel, this.codec.encode(message));
   };
 
-  public onMessage = (listener: (message: OnlineMessages, slot: number | null) => void) => {
+  public onMessage = (listener: (message: M, slot: number | null) => void) => {
     this.messageListeners.add(listener);
     return () => this.messageListeners.delete(listener);
   };

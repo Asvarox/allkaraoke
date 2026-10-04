@@ -9,10 +9,12 @@ import { handleLeaderboardAdmin } from './leaderboard-admin';
 import { LeaderboardBoard } from './leaderboard-do';
 import { OnlineDirectory } from './online-directory-do';
 import { handleOnlineSignaling, OnlineSignalingEnv } from './online-signaling';
+import { RemoteMicDirectory } from './remote-mic-directory-do';
+import { handleRemoteMicSignaling, RemoteMicSignalingEnv } from './remote-mic-signaling';
 
-export { LeaderboardBoard, OnlineDirectory };
+export { LeaderboardBoard, OnlineDirectory, RemoteMicDirectory };
 
-interface WorkerEnv extends OnlineSignalingEnv {
+interface WorkerEnv extends OnlineSignalingEnv, RemoteMicSignalingEnv {
   ADMIN_PANEL_PASSWORD?: string;
   ASSETS?: Fetcher;
   UNVERIFIED_SONGS_ADMIN_TOKEN?: string;
@@ -75,6 +77,10 @@ export default {
     // path itself never comes here — it runs host-to-client over the SFU.
     const onlineResponse = await handleOnlineSignaling(request, env, pathname);
     if (onlineResponse) return onlineResponse;
+
+    // The same, for remote mics on Realtime game codes
+    const remoteMicResponse = await handleRemoteMicSignaling(request, env, pathname);
+    if (remoteMicResponse) return remoteMicResponse;
 
     if (pathname === '/unverified-songs' || pathname === '/shared-songs') {
       return callPagesHandler(unverifiedSongsOnRequest as PagesLikeHandler, request, env, executionContext);

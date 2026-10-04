@@ -1,12 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
+import { slotChannelName } from '~/modules/network/realtime/protocol';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
-import {
-  ONLINE_SLOT_COUNT,
-  P2P_ROOM_CODE_LEADS,
-  P2P_ROOM_CODE_PATTERN,
-  slotChannelName,
-} from '~/modules/online/signaling/protocol';
+import { ONLINE_SLOT_COUNT, P2P_ROOM_CODE_LEADS, P2P_ROOM_CODE_PATTERN } from '~/modules/online/signaling/protocol';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
 describe('signaling protocol', () => {

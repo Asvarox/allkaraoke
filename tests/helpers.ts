@@ -43,6 +43,22 @@ export const enableAutoMobileMode = async ({ context }: { page: Page; context: B
   });
 };
 
+/**
+ * Gives the game a Realtime game code instead of a PartyKit one — the e2e stand-in for the
+ * `remote_mics_realtime` flag. Only the game needs it: a phone picks its transport from the code.
+ */
+export const useRealtimeRemoteMics = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ERemoteMicsRealtime = true;
+  });
+};
+
+/** Both remote-mic transports, for specs that run once on each. */
+export const REMOTE_MIC_TRANSPORTS = [
+  { transport: 'PartyKit', setUp: async (_args: { page: Page; context: BrowserContext }) => {}, codeLead: 'k' },
+  { transport: 'Realtime', setUp: useRealtimeRemoteMics, codeLead: 'r' },
+] as const;
+
 const BOARD_SONGS = [
   { artist: 'Bon Jovi', title: 'Livin on a Prayer' },
   { artist: 'ABBA', title: 'Dancing Queen' },
