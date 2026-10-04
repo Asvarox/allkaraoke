@@ -9,7 +9,7 @@
 #GAP:78,27586206896552
 #ALLKARAOKE_ID:rixton-me-and-my-broken-heart
 #ALLKARAOKE_SID:6462
-#ALLKARAOKE_LASTUPDATE:2026-10-03T04:04:08.512Z
+#ALLKARAOKE_LASTUPDATE:2026-10-02T21:53:04.937Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=volodia
 #ALLKARAOKE_REALBPM:87
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Me%20and%20my%20broken%20heart
