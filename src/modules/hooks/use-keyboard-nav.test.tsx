@@ -283,3 +283,135 @@ describe('useKeyboardNav mirror mode', () => {
     ]);
   });
 });
+
+describe('useKeyboardNav columns', () => {
+  // Registers every name in its column, in the order given
+  function setupColumns(columns: Record<string, number>) {
+    return renderHook(() => {
+      const nav = useKeyboardNav({ direction: 'horizontal-vertical' });
+      Object.entries(columns).forEach(([name, column]) => nav.register(name, () => {}, name, false, { column }));
+      return nav;
+    });
+  }
+  const press = (key: 'up' | 'down' | 'left' | 'right') => act(() => events.remoteKeyboardPressed.dispatch(key));
+
+  it('keeps Up/Down inside the selected column, wrapping within it', () => {
+    const { result } = setupColumns({ a: 0, b: 0, c: 0, side: 1 });
+
+    press('down');
+    press('down');
+    expect(result.current.focused).toBe('c');
+    press('down');
+    expect(result.current.focused).toBe('a');
+    press('up');
+    expect(result.current.focused).toBe('c');
+  });
+
+  it('moves between columns with Left/Right, wrapping past the last one', () => {
+    const { result } = setupColumns({ a: 0, b: 0, middle: 1, right: 2 });
+
+    press('right');
+    expect(result.current.focused).toBe('middle');
+    press('right');
+    expect(result.current.focused).toBe('right');
+    press('right');
+    expect(result.current.focused).toBe('a');
+    press('left');
+    expect(result.current.focused).toBe('right');
+  });
+
+  it('lands at the same position in the next column, clamped to its length', () => {
+    const { result } = setupColumns({ a: 0, b: 0, c: 0, x: 1, y: 1 });
+
+    press('down');
+    press('right');
+    expect(result.current.focused).toBe('y');
+
+    act(() => result.current.focusElement('c'));
+    press('right');
+    expect(result.current.focused).toBe('y');
+  });
+
+  it('returns to where the selection last was when coming back to a column', () => {
+    const { result } = setupColumns({ mics: 0, difficulty: 1, mode: 1, play: 1 });
+
+    act(() => result.current.focusElement('play'));
+    press('left');
+    expect(result.current.focused).toBe('mics');
+    press('right');
+    expect(result.current.focused).toBe('play');
+  });
+
+  it('walks a single column with Left/Right too', () => {
+    const { result } = setupColumns({ a: 0, b: 0, c: 0 });
+
+    press('right');
+    expect(result.current.focused).toBe('b');
+    press('left');
+    press('left');
+    expect(result.current.focused).toBe('c');
+  });
+
+  it('puts controls without a column in the first one', () => {
+    const { result } = renderHook(() => {
+      const nav = useKeyboardNav({ direction: 'horizontal-vertical' });
+      nav.register('a', () => {});
+      nav.register('side', () => {}, undefined, false, { column: 1 });
+      nav.register('b', () => {});
+      return nav;
+    });
+
+    press('down');
+    expect(result.current.focused).toBe('b');
+  });
+
+  // The main menu at `lg`: two tiles above four, each tile's place in its row being its column
+  function setupRows() {
+    const tiles = { sing: [0, 0], online: [1, 0], mics: [0, 1], songs: [1, 1], history: [2, 1], settings: [3, 1] };
+    return renderHook(() => {
+      const nav = useKeyboardNav({ direction: 'horizontal-vertical' });
+      Object.entries(tiles).forEach(([name, [column, row]]) =>
+        nav.register(name, () => {}, name, false, { column, row }),
+      );
+      return nav;
+    });
+  }
+
+  it('goes round the row with Left/Right, skipping columns with nothing in it', () => {
+    const { result } = setupRows();
+
+    press('right');
+    expect(result.current.focused).toBe('online');
+    press('right');
+    expect(result.current.focused).toBe('sing');
+    press('left');
+    expect(result.current.focused).toBe('online');
+  });
+
+  it('keeps to the row over where the selection last was in a column', () => {
+    const { result } = setupRows();
+
+    press('right');
+    press('left');
+    press('down');
+    expect(result.current.focused).toBe('mics');
+    press('right');
+    expect(result.current.focused).toBe('songs');
+  });
+
+  it('lands on the nearest row when the next column has nothing in this one', () => {
+    const { result } = renderHook(() => {
+      const nav = useKeyboardNav({ direction: 'horizontal-vertical' });
+      nav.register('top', () => {}, undefined, false, { column: 0, row: 0 });
+      nav.register('middle', () => {}, undefined, false, { column: 0, row: 1 });
+      nav.register('bottom', () => {}, undefined, false, { column: 0, row: 2 });
+      nav.register('side-top', () => {}, undefined, false, { column: 1, row: 0 });
+      nav.register('side-bottom', () => {}, undefined, false, { column: 1, row: 3 });
+      return nav;
+    });
+
+    act(() => result.current.focusElement('bottom'));
+    press('right');
+    expect(result.current.focused).toBe('side-bottom');
+  });
+});

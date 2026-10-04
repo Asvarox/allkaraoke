@@ -7,6 +7,7 @@ import { useBackground } from '~/modules/elements/background-context';
 import Logo from '~/modules/elements/logo';
 import PageFrame from '~/modules/elements/page-frame';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
+import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import SongDao from '~/modules/songs/songs-service';
@@ -84,7 +85,11 @@ function Welcome() {
   };
 
   useBackgroundMusic(/* true */ false);
-  // Tiles sit in a grid, so all four arrows navigate by position — see `handleSpatialNavigation`.
+  // From `lg` the tiles sit in two rows, and a tile's place in its row is its keyboard column, so
+  // Left/Right go round the row. Below that they fold into one column, walked by every arrow.
+  const breakpoint = useBreakpoint();
+  const tilesInRows = breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === '2xl';
+  const column = (indexInRow: number) => (tilesInRows ? indexInRow : 0);
   const { register } = useKeyboardNav({
     // An open dialog owns the keyboard — the tiles behind it must not answer the arrows as well.
     enabled: !languageSelection && !micSetup,
@@ -131,6 +136,8 @@ function Welcome() {
                     puts in the same roles — see `menu-view-transitions.ts` for the whole mapping. */}
                 <MenuTile
                   name="sing-a-song"
+                  column={column(0)}
+                  row={0}
                   variant="primary"
                   label="Sing a song"
                   hint="Sing solo or start a party"
@@ -140,6 +147,8 @@ function Welcome() {
                 />
                 <MenuTile
                   name="online"
+                  column={column(1)}
+                  row={0}
                   variant="primary"
                   label="Sing online"
                   displayLabel={
@@ -156,19 +165,32 @@ function Welcome() {
               <div className="grid flex-1 grid-cols-1 gap-4 max-lg:gap-3 lg:auto-cols-fr lg:grid-flow-col lg:gap-6">
                 <MenuTile
                   name="select-input"
+                  column={column(0)}
+                  row={1}
                   label="Setup Microphones"
                   hint="Configure audio"
                   onClick={() => setMicSetup(true)}
                 />
                 <MenuTile
                   name="manage-songs"
+                  column={column(1)}
+                  row={1}
                   label="Manage Songs"
                   hint="Select languages, add new songs"
                   onClick={() => navigate('manage-songs/')}
                 />
-                <MenuTile name="history" label="History" hint="Past scores" onClick={() => navigate('history/')} />
+                <MenuTile
+                  name="history"
+                  column={column(2)}
+                  row={1}
+                  label="History"
+                  hint="Past scores"
+                  onClick={() => navigate('history/')}
+                />
                 <MenuTile
                   name="settings"
+                  column={column(3)}
+                  row={1}
                   label="Settings"
                   hint="Graphics, additional options"
                   remoteIcon="settings"

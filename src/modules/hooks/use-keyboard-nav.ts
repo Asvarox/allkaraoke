@@ -21,32 +21,6 @@ import { ControlDescriptor, ControlInput, RemoteButtonIcon } from '~/routes/keyb
 import useKeyboardHelp from './use-keyboard-help';
 
 /**
- * Where an element shows, not where it's laid out: its box clamped to every ancestor that clips it.
- * A control scrolled out of a column reads as sitting on the column's edge, instead of level with
- * whatever is beside the column at the height it would have had.
- */
-const visibleRectOf = (element: Element) => {
-  const rect = element.getBoundingClientRect();
-  let { left, top, right, bottom } = rect;
-  for (let parent = element.parentElement; parent; parent = parent.parentElement) {
-    const { overflowX, overflowY } = getComputedStyle(parent);
-    if (overflowX === 'visible' && overflowY === 'visible') continue;
-    const box = parent.getBoundingClientRect();
-    // Per axis: `overflow-x: clip` beside a visible `overflow-y` leaves the vertical extent showing
-    if (overflowX !== 'visible') {
-      left = Math.min(Math.max(left, box.left), box.right);
-      right = Math.min(Math.max(right, box.left), box.right);
-    }
-    if (overflowY !== 'visible') {
-      top = Math.min(Math.max(top, box.top), box.bottom);
-      bottom = Math.min(Math.max(bottom, box.top), box.bottom);
-    }
-  }
-  // Kept as a box: a hidden element's all-zero one is how the caller skips it
-  return rect.width === 0 && rect.height === 0 ? rect : new DOMRect(left, top, right - left, bottom - top);
-};
-
-/**
  * todo: Bug: for some reason elementList is duplicated eg.
  * ['a', 'b', 'c', 'a', 'b', 'c']
  *
@@ -77,7 +51,7 @@ interface Options {
   backspaceHelp?: string | null;
   /**
    * Which arrows move the selection. `horizontal`/`vertical` walk the registration order on one axis.
-   * `horizontal-vertical` switches to spatial navigation instead — see `handleSpatialNavigation`.
+   * `horizontal-vertical` adds columns: each control names its own in `register` — see `handleColumnChange`.
    * The value doubles as the key of the arrow glyph shown in the on-screen keyboard help.
    */
   direction?: 'horizontal' | 'vertical' | 'horizontal-vertical';
@@ -129,6 +103,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
   const elementList = useRef<string[]>([]);
   const newElementList = useRef<string[]>([]);
+  // The column each registered element asked for, staged and swapped in alongside `elementList`
+  const elementColumns = useRef<Map<string, number>>(new Map());
+  const newElementColumns = useRef<Map<string, number>>(new Map());
+  // Optional rows, for columns that line up side by side — see `handleColumnChange`
+  const elementRows = useRef<Map<string, number>>(new Map());
+  const newElementRows = useRef<Map<string, number>>(new Map());
+  // Where the selection last was in each column, so leaving a column and coming back returns there
+  const lastInColumn = useRef<Map<number, string>>(new Map());
   const actions = useRef<Record<string, KeyboardAction>>({});
   // Value callbacks for value-bearing controls (e.g. text fields), keyed by register() name. Kept
   // separate from `actions` because they take the remote-supplied value rather than firing a tap.
@@ -257,87 +239,80 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     setCurrentlySelected(elementList.current.at((currentIndex + direction) % elementList.current.length) ?? null);
   };
 
-  const spanOf = (rect: DOMRect, axis: 'x' | 'y') =>
-    axis === 'x' ? { start: rect.x, end: rect.x + rect.width } : { start: rect.y, end: rect.y + rect.height };
-  const centerOf = (rect: DOMRect, axis: 'x' | 'y') => {
-    const { start, end } = spanOf(rect, axis);
-    return (start + end) / 2;
+  const columnOf = (name: string) => elementColumns.current.get(name) ?? 0;
+  const rowOf = (name: string) => elementRows.current.get(name);
+  const membersOf = (column: number) => elementList.current.filter((name) => columnOf(name) === column);
+
+  /** Up/Down: walks the registration order of the selection's own column, wrapping within it. */
+  const handleWithinColumn = (towards: -1 | 1) => {
+    if (!currentlySelected) return handleNavigation(towards);
+    const members = membersOf(columnOf(currentlySelected));
+    if (members.length < 2) return;
+    menuNavigate.play();
+    setCurrentlySelected(members.at((members.indexOf(currentlySelected) + towards) % members.length)!);
   };
 
   /**
-   * Navigation by where things actually are on screen, for layouts that aren't a single list — the
-   * main menu's tiles sit in ragged rows (two wide ones above five narrow ones), which no fixed
-   * column count describes.
-   *
-   * Candidates are sorted into four buckets and the first non-empty one wins:
-   *   1. ahead on this axis AND sharing a row/column band with the selection — the obvious neighbour;
-   *   2. nothing ahead in the band, so wrap to the far end of that same band (Right off the last tile
-   *      of a row returns to the first tile of THAT row, not to whatever happens to be leftmost);
-   *   3. ahead but in another band, for layouts whose bands don't line up at all;
-   *   4. anything at all, so a keypress at an edge is never a dead end on a TV remote.
-   * Within a bucket the off-axis distance counts double, so of two equally distant candidates the one
-   * lined up with the selection is the one that was meant.
-   *
-   * Measured per keypress rather than cached: registration order says nothing about position, and the
-   * grid reflows with the viewport (and with `Sing online` appearing behind its feature flag).
+   * Left/Right: the next column that has anything in it, wrapping. A selection with a `row` skips
+   * columns with nothing in that row, so Left/Right go round the row. Otherwise it lands on the nearest
+   * row in the next column, then where it last was there, then at the same position in the list.
+   * With a single column, Left/Right walk it like Up/Down, so a folded row stays reachable.
    */
-  const handleSpatialNavigation = (axis: 'x' | 'y', towards: -1 | 1) => {
-    const currentRect = currentlySelected
-      ? document.querySelector(`[data-test="${currentlySelected}"]`)?.getBoundingClientRect()
-      : undefined;
-    // Nothing measurable to move from (first keypress before anything focused, or a hidden element)
-    // — fall back to walking the registration order, same as a one-dimensional screen.
-    if (!currentRect) return handleNavigation(towards);
+  const handleColumnChange = (towards: -1 | 1) => {
+    const columns = [...new Set(elementList.current.map(columnOf))].sort((a, b) => a - b);
+    if (!currentlySelected || columns.length < 2) return handleWithinColumn(towards);
 
-    const cross = axis === 'x' ? 'y' : 'x';
-    const fromAlong = centerOf(currentRect, axis);
-    const fromAcross = centerOf(currentRect, cross);
-    const fromBand = spanOf(currentRect, cross);
+    const from = columnOf(currentlySelected);
+    const row = rowOf(currentlySelected);
+    // Every other column, nearest first in the direction of travel
+    const ahead = columns
+      .map((_, step) => columns.at((columns.indexOf(from) + towards * step) % columns.length)!)
+      .slice(1);
+    const pick = (column: number, candidates: string[]) => {
+      const remembered = lastInColumn.current.get(column);
+      return remembered && candidates.includes(remembered) ? remembered : candidates[0];
+    };
+    const move = (target: string) => {
+      lastInColumn.current.set(from, currentlySelected);
+      menuNavigate.play();
+      setCurrentlySelected(target);
+    };
 
-    type Candidate = { name: string; score: number; laidOut: number };
-    // Indexed by the bucket order described above.
-    const buckets: Array<Candidate | null> = [null, null, null, null];
-
-    for (const name of elementList.current) {
-      if (name === currentlySelected) continue;
-      const element = document.querySelector(`[data-test="${name}"]`);
-      const rect = element ? visibleRectOf(element) : undefined;
-      // A registered element can still be display:none (a responsive copy of the same control), and
-      // an all-zero box would read as sitting in the top-left corner of the screen.
-      if (!rect || (rect.width === 0 && rect.height === 0)) continue;
-
-      const along = (centerOf(rect, axis) - fromAlong) * towards;
-      const across = Math.abs(centerOf(rect, cross) - fromAcross);
-      const band = spanOf(rect, cross);
-      const aligned = Math.min(band.end, fromBand.end) - Math.max(band.start, fromBand.start) > 1;
-      const isAhead = along > 1;
-
-      // `along` is negative for anything behind, so the lowest score in a wrap bucket is the element
-      // furthest back — exactly where wrapping should land.
-      const score = along + across * 2;
-      // Controls scrolled out of the same column all show on its edge, so they tie; the one laid out
-      // nearest that edge — the next one the column would scroll to — wins
-      const laidOut = (centerOf(element!.getBoundingClientRect(), axis) - fromAlong) * towards;
-      const bucket = isAhead ? (aligned ? 0 : 2) : aligned ? 1 : 3;
-      const best = buckets[bucket];
-      if (!best || score < best.score || (score === best.score && laidOut < best.laidOut)) {
-        buckets[bucket] = { name, score, laidOut };
+    if (row !== undefined) {
+      for (const column of ahead) {
+        const inRow = membersOf(column).filter((name) => rowOf(name) === row);
+        if (inRow.length) return move(pick(column, inRow));
       }
     }
 
-    const target = buckets.find(Boolean);
-    if (!target) return;
-    menuNavigate.play();
-    setCurrentlySelected(target.name);
+    const to = ahead[0];
+    const members = membersOf(to);
+    const withRows = row === undefined ? [] : members.filter((name) => rowOf(name) !== undefined);
+    if (withRows.length) {
+      const distance = (name: string) => Math.abs(rowOf(name)! - row!);
+      const nearest = Math.min(...withRows.map(distance));
+      return move(
+        pick(
+          to,
+          withRows.filter((name) => distance(name) === nearest),
+        ),
+      );
+    }
+
+    const position = Math.min(Math.max(membersOf(from).indexOf(currentlySelected), 0), members.length - 1);
+    const remembered = lastInColumn.current.get(to);
+    move(remembered && members.includes(remembered) ? remembered : members[position]);
   };
+
+  const moveVertically = direction === 'horizontal-vertical' ? handleWithinColumn : handleNavigation;
 
   const arrowHandlers =
     direction === 'horizontal-vertical'
       ? {
-          up: () => handleSpatialNavigation('y', -1),
-          down: () => handleSpatialNavigation('y', 1),
-          left: () => handleSpatialNavigation('x', -1),
-          right: () => handleSpatialNavigation('x', 1),
+          up: () => handleWithinColumn(-1),
+          down: () => handleWithinColumn(1),
+          left: () => handleColumnChange(-1),
+          right: () => handleColumnChange(1),
         }
       : {
           [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
@@ -379,6 +354,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       remoteOnly = false,
       hideOnRemote = false,
       onValueChange,
+      column = 0,
+      row,
     }: {
       propName?: string;
       disabled?: boolean;
@@ -391,6 +368,10 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       hideOnRemote?: boolean;
       /** For value controls (e.g. `text`): applies a value pushed from the remote mic. */
       onValueChange?: ValueCallback;
+      /** With `direction: 'horizontal-vertical'`: the column Left/Right move between, in ascending order. */
+      column?: number;
+      /** Optional: the row it shares with controls in other columns, for Left/Right to stay in. */
+      row?: number;
     } = {},
   ) => {
     if (disabled) {
@@ -436,6 +417,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     if (!newElementList.current.includes(name)) {
       newElementList.current.push(name);
     }
+    newElementColumns.current.set(name, column);
+    if (row !== undefined) newElementRows.current.set(name, row);
 
     if (isDefault) {
       defaultSelection = name;
@@ -446,7 +429,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     return {
       focused,
       [propName]: onActive,
-      $keyboardNavigationChangeFocus: handleNavigation,
+      $keyboardNavigationChangeFocus: moveVertically,
       'data-test': name,
       ...(enabled
         ? {
@@ -468,6 +451,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
     debug && newElements.length && console.log('new elements', newElements);
     elementList.current = [...newElementList.current];
+    elementColumns.current = new Map(newElementColumns.current);
+    elementRows.current = new Map(newElementRows.current);
 
     // Mirror mode is all-or-nothing: only mirror when EVERY navigable element supplied a
     // descriptor. A partial set falls back to classic arrows so the phone is never misleading.
@@ -494,6 +479,8 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     setCommittedControls((prev) => (sameControls(prev, nextControls) ? prev : nextControls));
 
     newElementList.current.length = 0;
+    newElementColumns.current.clear();
+    newElementRows.current.clear();
 
     if (!elementList.current.length) return;
     if (

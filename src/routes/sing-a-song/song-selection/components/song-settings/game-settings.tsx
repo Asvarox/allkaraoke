@@ -42,6 +42,10 @@ const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE> | null>
 // A size down on a phone held sideways, the one layout where the settings column runs out of height
 const SWITCHER_CLASS = 'w-full max-lg:landscape:h-11';
 
+// Keyboard columns: Setup mics on the left, the settings with Play under them on the right
+const MICS_COLUMN = 0;
+const SETTINGS_COLUMN = 1;
+
 const getTrackName = (tracks: SongPreview['tracks'], index: number) => tracks[index]?.name ?? `Track ${index + 1}`;
 
 export default function GameSettings({
@@ -105,7 +109,7 @@ export default function GameSettings({
   const { register, focusElement } = useKeyboardNav({
     enabled: keyboardControl && !showModal,
     onBackspace: onExitKeyboardControl,
-    // By position rather than by list: on wider screens Setup mics sits in the next column over
+    // Setup mics is a column of its own: beside Play on narrow screens, under the players on wide ones
     direction: 'horizontal-vertical',
     additionalHelp: { remote: ['select-song'] },
     title: 'Song Settings',
@@ -136,6 +140,7 @@ export default function GameSettings({
             value={difficultyNames[tolerance]}
             data-test-value={difficultyNames[tolerance]}
             className={SWITCHER_CLASS}
+            column={SETTINGS_COLUMN}
             onClick={changeTolerance}
           />
           {online ? (
@@ -155,6 +160,7 @@ export default function GameSettings({
               value={gameModeNames[mode]}
               data-test-value={gameModeNames[mode]}
               className={SWITCHER_CLASS}
+              column={SETTINGS_COLUMN}
               onClick={changeMode}
             />
           )}
@@ -169,6 +175,7 @@ export default function GameSettings({
                   value={getTrackName(songPreview.tracks, setup.track)}
                   data-test-value={setup.track + 1}
                   className={SWITCHER_CLASS}
+                  column={SETTINGS_COLUMN}
                   onClick={toggleTrack(player.number as PlayerNumber)}
                 />
               );
@@ -183,13 +190,13 @@ export default function GameSettings({
               remoteIcon="settings"
               // The gear the remote shows for it too
               leftIcon={compact ? <Icon icon="ic:baseline-settings" /> : undefined}
-              // Play's height wherever the two share a row: a centre higher or lower than Play's
-              // makes the other one the nearest control on that side for the arrow keys
+              // Play's height wherever the two share a row
               className={cn(
                 SongPreviewLayout.area.mics,
                 'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:h-16',
                 'shrink-0 md:portrait:w-56',
               )}
+              column={MICS_COLUMN}
               onClick={() => setShowModal(true)}>
               {compact ? null : 'Setup mics'}
             </NavButton>
@@ -202,6 +209,7 @@ export default function GameSettings({
               'h-[50px] flex-1 text-lg md:portrait:h-16 md:portrait:text-xl max-lg:landscape:h-11 lg:landscape:h-16 lg:landscape:text-xl',
             )}
             remoteIcon="play"
+            column={SETTINGS_COLUMN}
             isDefault
             // Before the mics are set up it leads there first — Play is what anyone reaches for
             onClick={canPlay ? handlePlay : () => setShowModal(true)}>
