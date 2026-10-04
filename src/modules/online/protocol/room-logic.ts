@@ -17,6 +17,7 @@ import {
   ONLINE_LEADERBOARD_PUBLISH_MS,
   ONLINE_MAX_CHAT_LENGTH,
   ONLINE_MAX_NAME_LENGTH,
+  ONLINE_MAX_SCORE_TIMELINE_SAMPLES,
   ONLINE_MAX_TOLERANCE,
   ONLINE_MIN_PLAYERS,
   ONLINE_MIN_TOLERANCE,
@@ -41,6 +42,7 @@ import {
   SongVote,
   SongVotes,
   WireDetailedScore,
+  WireScoreTimeline,
 } from '~/modules/online/protocol/types';
 import { ONLINE_MAX_PLAYERS, PlayerNumber } from '~/modules/players/player-number';
 
@@ -1107,7 +1109,7 @@ export class OnlineRoomLogic {
         this.leaderboard.sort((a, b) => b.score - a.score);
         this.queueLeaderboardPublish();
       }),
-      publishFinal: defineMutation((ctx, detailedScore: WireDetailedScore) => {
+      publishFinal: defineMutation((ctx, detailedScore: WireDetailedScore, scoreTimeline?: WireScoreTimeline) => {
         const participant = this.requireParticipant(ctx.senderId);
         if (this.phase !== 'singing') return;
         this.finalResults = this.finalResults ?? [];
@@ -1117,6 +1119,10 @@ export class OnlineRoomLogic {
           name: participant.name,
           playerNumber: participant.playerNumber,
           detailedScore,
+          // Rides along in every room-state publish, so an oversized one is dropped rather than kept.
+          ...(Array.isArray(scoreTimeline) && scoreTimeline.length <= ONLINE_MAX_SCORE_TIMELINE_SAMPLES
+            ? { scoreTimeline }
+            : {}),
         });
         this.checkAllFinished();
         this.publishState();

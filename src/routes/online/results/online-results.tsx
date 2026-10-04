@@ -6,6 +6,7 @@ import { useIsOnlineHost } from '~/modules/online/client/hooks';
 import { trackOnlineSongEnded } from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
+import { decodeScoreTimeline, trimIdleEdges } from '~/modules/online/score-timeline';
 import PostGameView, { PlayerScore } from '~/routes/game/singing/post-game/post-game-view';
 import LayoutGame from '~/routes/layout-game';
 
@@ -40,15 +41,19 @@ function OnlineResults({ roomState, song }: Props) {
     [roomState.roomCode, roomState.chart?.hash, roomState.tolerance, roomState.finalResults],
   );
 
-  const players = useMemo<PlayerScore[]>(
-    () =>
-      (roomState.finalResults ?? []).map((result) => ({
-        name: result.name,
-        playerNumber: result.playerNumber,
-        detailedScore: result.detailedScore as [DetailedScore, DetailedScore],
-      })),
-    [roomState.finalResults],
-  );
+  const players = useMemo<PlayerScore[]>(() => {
+    const results = roomState.finalResults ?? [];
+    const withTimelines = results.filter((result) => result.scoreTimeline);
+    // Trimmed together, so every line keeps starting and ending at the same moment of the song.
+    const timelines = trimIdleEdges(withTimelines.map((result) => decodeScoreTimeline(result.scoreTimeline!)));
+
+    return results.map((result) => ({
+      name: result.name,
+      playerNumber: result.playerNumber,
+      detailedScore: result.detailedScore as [DetailedScore, DetailedScore],
+      scoreTimeline: timelines[withTimelines.indexOf(result)],
+    }));
+  }, [roomState.finalResults]);
 
   return (
     <LayoutGame>

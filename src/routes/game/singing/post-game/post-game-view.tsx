@@ -20,8 +20,8 @@ export interface PlayerScore {
   detailedScore: [DetailedScore, DetailedScore];
   /**
    * The running score across the song, for the results reveal to animate through. Optional because
-   * online play only sends the final totals over the wire — without it the reveal falls back to a
-   * straight ramp from zero to those totals.
+   * an online singer may not have sent one (a result fabricated when the host ended the game, or an
+   * older build) — without it the reveal falls back to a straight ramp from zero to the totals.
    */
   scoreTimeline?: ScoreTimeline;
   playerNumber: PlayerNumber;

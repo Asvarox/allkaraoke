@@ -44,7 +44,7 @@ function buildLines(players: PlayerScore[], useColors: boolean): Line[] {
 
   return players.map((player, index) => {
     const timeline = player.scoreTimeline;
-    // Without a timeline (online) there is only the total to draw: a straight climb to it.
+    // Without a timeline there is only the total to draw: a straight climb to it.
     const scores = timeline?.length ? timeline.map(sumDetailedScore) : [0, totals[index] ?? 0];
 
     return {

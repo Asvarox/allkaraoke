@@ -58,11 +58,18 @@ export type RoomStandings = Record<string, RoomStanding>;
  * stays decoupled from the game engine types. */
 export type WireDetailedScore = [Record<string, number>, Record<string, number>];
 
+/** A singer's running score sampled evenly across the chart's notes, one score per sample, opaque
+ * for the same reason as {@link WireDetailedScore}. */
+export type WireScoreTimeline = Record<string, number>[];
+
 export interface OnlineFinalResult {
   participantId: string;
   name: string;
   playerNumber: PlayerNumber;
   detailedScore: WireDetailedScore;
+  /** How the score built up over the song, for the results chart. Absent from fabricated results
+   * and from singers on a build that predates it — the results then ramp straight to the total. */
+  scoreTimeline?: WireScoreTimeline;
   /** True when this result was fabricated by the room (from the last leaderboard snapshot)
    * because the singer never published a final score before the host ended the game — the
    * ratio in `detailedScore` is not a real performance and should not be rendered as one. */
