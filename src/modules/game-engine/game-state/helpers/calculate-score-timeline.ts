@@ -1,5 +1,5 @@
 import { noPointsNoteTypes } from '~/consts';
-import { DetailedScore, PlayerNote, Song, songBeat } from '~/interfaces';
+import { DetailedScore, PlayerNote, Song, songBeat, SongTrack } from '~/interfaces';
 import {
   beatsToPoints,
   calculateDetailedScoreData,
@@ -8,6 +8,7 @@ import {
 } from '~/modules/game-engine/game-state/helpers/calculate-score';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import getSongBeatCount from '~/modules/songs/utils/get-song-beat-count';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '~/modules/songs/utils/notes-selectors';
 
 /**
  * A player's running score, sampled at even points across a {@link TimelineRange}. Index 0 is the
@@ -53,6 +54,25 @@ export function getTimelineRange(song: Song, playerNotes: PlayerNote[][]): Timel
   const endBeat = Math.max(...scoringNotes.map((note) => note.start + note.length));
 
   if (!scoringNotes.length || endBeat <= startBeat) {
+    return { startBeat: 0, endBeat: Math.max(getSongBeatCount(song), 1) };
+  }
+
+  return { startBeat, endBeat };
+}
+
+/**
+ * The stretch of a track that holds notes, from the first one's start to the last one's end. Pass
+ * the track the player is scored against (`PlayerState.getTrack`), merged or not.
+ *
+ * For when the players sharing the results screen sang on different machines, as online: nobody
+ * holds everyone's notes, so `getTimelineRange` cannot be agreed on, but every machine has the same
+ * chart. The intro and outro before and after the notes are cut the same way.
+ */
+export function getTrackTimelineRange(song: Song, { sections }: SongTrack): TimelineRange {
+  const startBeat = getFirstNoteStartFromSections(sections);
+  const endBeat = getLastNoteEndFromSections(sections);
+
+  if (!Number.isFinite(startBeat) || endBeat <= startBeat) {
     return { startBeat: 0, endBeat: Math.max(getSongBeatCount(song), 1) };
   }
 

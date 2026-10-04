@@ -29,7 +29,7 @@ export function getRevealedScore(player: PlayerScore, progress: number): Detaile
   const timeline = player.scoreTimeline;
 
   if (progress >= 1) return finalScore;
-  // Online sends no timeline, so there is nothing to reveal progressively — ramp the totals instead.
+  // Without a timeline there is nothing to reveal progressively — ramp the totals instead.
   if (!timeline || timeline.length < 2) return multiplyDetailedScore(finalScore, progress);
 
   const position = Math.max(0, progress) * (timeline.length - 1);

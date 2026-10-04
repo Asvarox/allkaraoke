@@ -18,6 +18,7 @@ import {
   ONLINE_CHAT_RATE_WINDOW_MS,
   ONLINE_FORCE_RESULTS_MS,
   ONLINE_LEADERBOARD_PUBLISH_MS,
+  ONLINE_MAX_SCORE_TIMELINE_SAMPLES,
   ONLINE_READINESS_TIMEOUT_MS,
   ONLINE_RECONNECT_GRACE_MS,
   ONLINE_RESUME_COUNTDOWN_MS,
@@ -26,7 +27,7 @@ import {
   ONLINE_STATS_PUBLISH_MS,
 } from '~/modules/online/protocol/consts';
 import { OnlinePersistedState, OnlineRoomLogic } from '~/modules/online/protocol/room-logic';
-import { ChatMessage, WireDetailedScore } from '~/modules/online/protocol/types';
+import { ChatMessage, WireDetailedScore, WireScoreTimeline } from '~/modules/online/protocol/types';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
 const ctx = (senderId: string): RpcContext => ({ senderId, permission: 'write', removePlayer: () => undefined });
@@ -679,6 +680,31 @@ describe('scoring and results', () => {
     vi.advanceTimersByTime(ONLINE_RECONNECT_GRACE_MS);
 
     expect(room.logic.getState().phase).toBe('results');
+  });
+
+  it('keeps the score timeline a singer publishes for the results chart', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await startSinging(room, ['p1', 'p2']);
+    const timeline: WireScoreTimeline = [{}, { normal: 50 }, { normal: 100 }];
+
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE, timeline);
+    await room.handlers.scoring.publishFinal.handler(ctx('p2'), SAMPLE_DETAILED_SCORE);
+
+    const [first, second] = room.logic.getState().finalResults!;
+    expect(first.scoreTimeline).toEqual(timeline);
+    expect(second.scoreTimeline).toBeUndefined();
+  });
+
+  it('drops a score timeline too long to broadcast', async () => {
+    const room = createRoom();
+    join(room, ['p1', 'p2']);
+    await startSinging(room, ['p1', 'p2']);
+    const timeline = new Array(ONLINE_MAX_SCORE_TIMELINE_SAMPLES + 1).fill({ normal: 1 });
+
+    await room.handlers.scoring.publishFinal.handler(ctx('p1'), SAMPLE_DETAILED_SCORE, timeline);
+
+    expect(room.logic.getState().finalResults![0].scoreTimeline).toBeUndefined();
   });
 
   it('returns to the lobby for another song', async () => {
