@@ -3896,6 +3896,35 @@
     "local": false
   },
   {
+    "id": "ado-kira",
+    "title": "KIRA",
+    "artist": "Ado",
+    "video": "qpcz3-iDUP8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 310,
+    "gap": 13743.870967741936,
+    "year": "2026",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-05T03:21:28.750Z",
+    "genre": "Jpop",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "Subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/",
+    "duration": 199,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6482,
+    "tracksCount": 1,
+    "search": "adokira",
+    "local": false
+  },
+  {
     "id": "ado-new-genesis",
     "title": "New Genesis",
     "artist": "Ado",
@@ -18583,6 +18612,33 @@
     "local": false
   },
   {
+    "id": "barricada-oveja-negra",
+    "title": "Oveja negra",
+    "artist": "Barricada",
+    "video": "wt1M---Z7ec",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 328,
+    "gap": 14081.90243902439,
+    "year": "1992",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-05T03:21:28.571Z",
+    "genre": "Rock",
+    "realBpm": 161,
+    "volume": 1,
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6479,
+    "tracksCount": 1,
+    "search": "barricadaovejanegra",
+    "local": false
+  },
+  {
     "id": "barry-manilow-mandy",
     "title": "Mandy",
     "artist": "Barry Manilow",
@@ -24779,6 +24835,34 @@
     "shortId": 638,
     "tracksCount": 1,
     "search": "boaduvettv",
+    "local": false
+  },
+  {
+    "id": "boa-energetic-radio-edit",
+    "title": "Energetic (Radio Edit)",
+    "artist": "BoA",
+    "video": "qE05Bv1e_fo",
+    "language": [
+      "English"
+    ],
+    "bpm": 232,
+    "gap": 760.1724137931034,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-05T03:21:27.129Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Subkei",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6470,
+    "tracksCount": 1,
+    "search": "boaenergeticradioedit",
     "local": false
   },
   {
@@ -46223,6 +46307,32 @@
     "local": false
   },
   {
+    "id": "die-atzen-mit-nena-strobo-pop",
+    "title": "Strobo Pop",
+    "artist": "Die Atzen mit Nena",
+    "video": "aWRbWwJ5qEc",
+    "language": [
+      "German"
+    ],
+    "bpm": 269.67,
+    "gap": 19438.776282122595,
+    "year": "2011",
+    "lastUpdate": "2026-10-05T03:21:28.403Z",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "DS",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6478,
+    "tracksCount": 1,
+    "search": "dieatzenmitnenastrobopop",
+    "local": false
+  },
+  {
     "id": "die-drei-kids-titelsong",
     "title": "Titelsong",
     "artist": "Die drei ??? Kids",
@@ -54129,6 +54239,33 @@
     "shortId": 1433,
     "tracksCount": 1,
     "search": "edsheeranthinkingoutloud",
+    "local": false
+  },
+  {
+    "id": "edd00chan-tricker-cancion-de-los-nighmare-great-escape-cancion-y-letra-edd00chan-w-tricker-fnafhs",
+    "title": "Cancion de los NIGHMARE _GREAT ESCAPE_ (Cancion y Letra) Edd00chan w_ Tricker _ FNAFHS",
+    "artist": "Edd00chan tricker",
+    "video": "YD6BDSg-R3M",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 399.9,
+    "gap": 13334.246811702926,
+    "year": "2016",
+    "lastUpdate": "2026-10-05T03:21:28.228Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "UltraSinger [GitHub] 0.0.13.dev16",
+    "sourceUrl": "https://youtu.be/YD6BDSg-R3M?si=FbE-yQqZg1QYWYo8",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6476,
+    "tracksCount": 1,
+    "search": "edd00chantrickercanciondelosnighmaregreatescapecancionyletraedd00chanwtrickerfnafhs",
     "local": false
   },
   {
@@ -83752,6 +83889,35 @@
     "local": false
   },
   {
+    "id": "jeff-buckley-grace",
+    "title": "Grace",
+    "artist": "Jeff Buckley",
+    "video": "A3adFWKE9JE",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.3000000000003,
+    "gap": 25503.12744331509,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-05T03:21:28.049Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "choosie",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=11768",
+    "duration": 301,
+    "tracks": [
+      {
+        "name": "grace",
+        "start": 17
+      }
+    ],
+    "shortId": 6475,
+    "tracksCount": 1,
+    "search": "jeffbuckleygrace",
+    "local": false
+  },
+  {
     "id": "jeff-chang-wu-bie-op",
     "title": "Wú Bié (OP)",
     "artist": "Jeff Chang",
@@ -85668,6 +85834,33 @@
     "shortId": 2130,
     "tracksCount": 1,
     "search": "joecockeryoucanleaveyourhaton",
+    "local": false
+  },
+  {
+    "id": "joel-corry-feat-mnek-head-heart",
+    "title": "Head & Heart",
+    "artist": "Joel Corry feat. MNEK",
+    "video": "CRuOOxF-ENQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.96,
+    "gap": 9.159212880143173,
+    "year": "2020",
+    "lastUpdate": "2026-10-05T03:21:27.136Z",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "Tracks",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=25141",
+    "duration": 168,
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 6471,
+    "tracksCount": 1,
+    "search": "joelcorryfeatmnekheadheart",
     "local": false
   },
   {
@@ -87854,6 +88047,34 @@
     "local": false
   },
   {
+    "id": "jose-jose-lo-dudo",
+    "title": "Lo dudo",
+    "artist": "José José",
+    "video": "CpBvjrkRKN4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 265.02,
+    "gap": 15067.208965361106,
+    "year": "1983",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-10-05T03:21:28.574Z",
+    "genre": "Balada Pop",
+    "realBpm": 88,
+    "previewEnd": 10,
+    "volume": 1,
+    "author": "JaVar61",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6480,
+    "tracksCount": 1,
+    "search": "josejoselodudo",
+    "local": false
+  },
+  {
     "id": "josh-gad-andrew-rannells-you-and-me-but-mostly-me",
     "title": "You And Me (But Mostly Me)",
     "artist": "Josh Gad & Andrew Rannells",
@@ -88196,6 +88417,34 @@
     "shortId": 2199,
     "tracksCount": 1,
     "search": "journeyopenarms",
+    "local": false
+  },
+  {
+    "id": "jovanotti-bella",
+    "title": "Bella",
+    "artist": "Jovanotti",
+    "video": "O2RccC7UCnY",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 201.8,
+    "gap": 21034.696729435083,
+    "year": "1997",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-10-05T03:21:28.401Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Jovanotti",
+    "duration": 266,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6477,
+    "tracksCount": 1,
+    "search": "jovanottibella",
     "local": false
   },
   {
@@ -113363,6 +113612,33 @@
     "local": false
   },
   {
+    "id": "marina-and-the-diamonds-buy-the-stars",
+    "title": "Buy The Stars",
+    "artist": "Marina and the Diamonds",
+    "video": "-ubL2QU3Qi8",
+    "language": [
+      "English"
+    ],
+    "bpm": 464,
+    "gap": 16.46551724137919,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-05T03:21:28.041Z",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "Syal",
+    "duration": 288,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6473,
+    "tracksCount": 1,
+    "search": "marinaandthediamondsbuythestars",
+    "local": false
+  },
+  {
     "id": "marina-and-the-diamonds-froot",
     "title": "Froot",
     "artist": "Marina and the Diamonds",
@@ -136430,6 +136706,33 @@
     "local": false
   },
   {
+    "id": "peter-fox-alles-neu",
+    "title": "Alles neu",
+    "artist": "Peter Fox",
+    "video": "qdtLCfEcPL4",
+    "language": [
+      "German"
+    ],
+    "bpm": 267.92,
+    "gap": 9672.236488504032,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-05T03:21:28.046Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Ampersand",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6474,
+    "tracksCount": 1,
+    "search": "peterfoxallesneu",
+    "local": false
+  },
+  {
     "id": "peter-fox-haus-am-see",
     "title": "Haus am See",
     "artist": "Peter Fox",
@@ -144166,6 +144469,36 @@
     "shortId": 3632,
     "tracksCount": 1,
     "search": "retracksakatsukinokuruma",
+    "local": false
+  },
+  {
+    "id": "revolverheld-feat-marta-jandova-halt-dich-an-mir-fest",
+    "title": "Halt dich an mir fest",
+    "artist": "Revolverheld feat. Marta Jandová",
+    "video": "wCcJuN47UcY",
+    "language": [
+      "German"
+    ],
+    "bpm": 332,
+    "gap": 11276.024096385543,
+    "year": "2010",
+    "lastUpdate": "2026-10-05T03:21:27.870Z",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "Caruso",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 22
+      },
+      {
+        "name": "P2",
+        "start": 226
+      }
+    ],
+    "shortId": 6472,
+    "tracksCount": 2,
+    "search": "revolverheldfeatmartajandovahaltdichanmirfest",
     "local": false
   },
   {
@@ -180013,6 +180346,34 @@
     "shortId": 4544,
     "tracksCount": 1,
     "search": "tracychapmanoholynight",
+    "local": false
+  },
+  {
+    "id": "train-angel-in-blue-jeans",
+    "title": "Angel In Blue Jeans",
+    "artist": "Train",
+    "video": "qr6Fd8gsED8",
+    "language": [
+      "English"
+    ],
+    "bpm": 230.1,
+    "gap": 13232.164276401565,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-05T03:21:28.576Z",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "Train",
+    "sourceUrl": "https://www.youtube.com/watch?v=qr6Fd8gsED8",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6481,
+    "tracksCount": 1,
+    "search": "trainangelinbluejeans",
     "local": false
   },
   {
