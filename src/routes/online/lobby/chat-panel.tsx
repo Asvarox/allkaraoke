@@ -13,6 +13,8 @@ interface Props {
   register: RegisterFunc;
   /** Rendered inside the lobby card instead of beside it — see the note on layout below. */
   inline?: boolean;
+  /** The lobby's keyboard column it lands in. */
+  column?: number;
 }
 
 /**
@@ -27,7 +29,7 @@ interface Props {
  * The full history is kept in state regardless, so growing a scrollback later is a change to this
  * component alone.
  */
-function ChatPanel({ register, inline }: Props) {
+function ChatPanel({ register, inline, column }: Props) {
   const { lines, send } = useOnlineChat();
   const [draft, setDraft] = useState('');
   const [sending, setSending] = useState(false);
@@ -63,7 +65,7 @@ function ChatPanel({ register, inline }: Props) {
   // Nothing to send while the box is empty, or while the previous message is still in flight.
   const canSend = Boolean(draft.trim()) && !sending;
 
-  const navProps = register('online-chat', () => input.current?.element?.focus(), 'Chat');
+  const navProps = register('online-chat', () => input.current?.element?.focus(), 'Chat', false, { column });
 
   return (
     <div

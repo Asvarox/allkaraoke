@@ -54,7 +54,7 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
   const [starting, setStarting] = useState(false);
   const [startError, setStartError] = useState<string | null>(null);
 
-  // Spatial since the panels sit side by side: registration order alone would chain the columns.
+  // Panels side by side are keyboard columns, so Up/Down stay inside the one they're drawn in.
   // Off while the customize modal owns the keyboard; the confirmations pause this on their own.
   const { register } = useKeyboardNav({
     enabled: !customizeOpen,
@@ -73,7 +73,10 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
     : chatBesideCard
       ? 'grid-cols-[minmax(0,64fr)_minmax(0,36fr)]'
       : 'grid-cols-1';
-  const chat = <ChatPanel register={register} inline={!chatBesideCard} />;
+  // The standings and the room code sit in column 0 whether beside the card or folded into it
+  const cardColumn = standingsBesideCard ? 1 : 0;
+  const chatColumn = chatBesideCard ? cardColumn + 1 : cardColumn;
+  const chat = <ChatPanel register={register} inline={!chatBesideCard} column={chatColumn} />;
 
   const hostSongPreview = useOnlineSongPreview();
   const votes = useOnlineSongVotes();
@@ -240,14 +243,16 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                         {/* The vote is what a singer's lobby is for — leaving isn't, so the focus lands
                             here as soon as there's something to vote on */}
                         <Menu.Button
-                          {...register('online-vote-up', () => voteSong('up'), undefined, true)}
+                          {...register('online-vote-up', () => voteSong('up'), undefined, true, { column: cardColumn })}
                           size="small"
                           className={cn('flex-1', myVote !== 'up' && 'opacity-60')}>
                           <Icon icon="ic:baseline-thumb-up" size={5} className="mr-1" />
                           Sing it!
                         </Menu.Button>
                         <Menu.Button
-                          {...register('online-vote-down', () => voteSong('down'))}
+                          {...register('online-vote-down', () => voteSong('down'), undefined, false, {
+                            column: cardColumn,
+                          })}
                           size="small"
                           className={cn('flex-1', myVote !== 'down' && 'opacity-60')}>
                           <Icon icon="ic:baseline-thumb-down" size={5} className="mr-1" />
@@ -258,7 +263,9 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
 
                     {isHost && (
                       <Menu.Button
-                        {...register('choose-song-button', onChooseSong, undefined, !roomState.chart)}
+                        {...register('choose-song-button', onChooseSong, undefined, !roomState.chart, {
+                          column: cardColumn,
+                        })}
                         disabled={upload.state === 'uploading'}
                         size={roomState.chart ? 'small' : undefined}>
                         {upload.state === 'uploading'
@@ -303,7 +310,9 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                           }>
                           {(openSoloPrompt) => (
                             <Menu.Button
-                              {...register('online-start-song-button', openSoloPrompt, undefined, true)}
+                              {...register('online-start-song-button', openSoloPrompt, undefined, true, {
+                                column: cardColumn,
+                              })}
                               disabled={!self?.connected || upload.state === 'uploading'}>
                               Start the song!
                             </Menu.Button>
@@ -311,7 +320,7 @@ function Lobby({ roomCode, roomState, song, songError, upload, onChooseSong }: P
                         </ConfirmModal>
                       ) : (
                         <Menu.Button
-                          {...register('online-start-song-button', startGame, undefined, true)}
+                          {...register('online-start-song-button', startGame, undefined, true, { column: cardColumn })}
                           disabled={!self?.connected || upload.state === 'uploading' || starting}>
                           {starting ? 'Starting…' : 'Start the song!'}
                         </Menu.Button>

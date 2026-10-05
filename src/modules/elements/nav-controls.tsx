@@ -62,6 +62,10 @@ interface NavSwitcherProps extends Omit<ComponentProps<typeof Switcher>, 'value'
   remoteLabel?: string;
   value: string | number;
   onClick: () => void;
+  /** The keyboard column it sits in, on a `horizontal-vertical` screen. */
+  column?: number;
+  /** Optional: the row it shares with controls in other columns. */
+  row?: number;
   isDefault?: boolean;
   disabled?: boolean;
 }
@@ -75,11 +79,15 @@ export function NavSwitcher({
   onClick,
   isDefault = false,
   disabled = false,
+  column,
+  row,
   ...rest
 }: NavSwitcherProps) {
   const register = useResolvedRegister(nav);
   const props = register(name, onClick, label, isDefault, {
     disabled,
+    column,
+    row,
     control: { type: 'switch', label: remoteLabel ?? label, value: String(value) },
   });
   return <Switcher {...rest} {...props} label={label} value={value} />;
@@ -93,6 +101,10 @@ interface NavCheckboxProps extends Omit<ComponentProps<typeof Checkbox>, 'checke
   remoteLabel?: string;
   checked: boolean;
   onClick: () => void;
+  /** The keyboard column it sits in, on a `horizontal-vertical` screen. */
+  column?: number;
+  /** Optional: the row it shares with controls in other columns. */
+  row?: number;
   isDefault?: boolean;
   disabled?: boolean;
   children?: ReactNode;
@@ -107,12 +119,16 @@ export function NavCheckbox({
   onClick,
   isDefault = false,
   disabled = false,
+  column,
+  row,
   children,
   ...rest
 }: NavCheckboxProps) {
   const register = useResolvedRegister(nav);
   const props = register(name, onClick, label, isDefault, {
     disabled,
+    column,
+    row,
     control: { type: 'checkbox', label: remoteLabel ?? label, checked },
   });
   return (
@@ -140,6 +156,10 @@ interface NavButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onClic
    */
   hideOnRemote?: boolean;
   onClick: () => void;
+  /** The keyboard column it sits in, on a `horizontal-vertical` screen. */
+  column?: number;
+  /** Optional: the row it shares with controls in other columns. */
+  row?: number;
   isDefault?: boolean;
   disabled?: boolean;
   children: ReactNode;
@@ -155,6 +175,8 @@ export function NavButton({
   onClick,
   isDefault = false,
   disabled = false,
+  column,
+  row,
   children,
   ...rest
 }: NavButtonProps) {
@@ -163,6 +185,8 @@ export function NavButton({
   const props = register(name, onClick, resolvedLabel, isDefault, {
     disabled,
     hideOnRemote,
+    column,
+    row,
     control: { type: 'button', label: resolvedLabel, variant, icon: remoteIcon },
   });
   return (
