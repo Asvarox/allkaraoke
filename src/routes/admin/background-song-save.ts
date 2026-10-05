@@ -5,6 +5,7 @@ import SongDao from '~/modules/songs/songs-service';
 import { shareSong } from '~/routes/edit/share-songs-modal';
 
 import { updateAdminUnverifiedSong } from './unverified-songs-admin-api';
+import { markAdminSongVerified } from './verified-songs-counter';
 
 export interface PendingAdminUnverifiedSongSave {
   sharedSongId: string;
@@ -48,6 +49,7 @@ const storeSong = async (sharedSongId: string, song: Song) => {
   await SongDao.store(song);
   await shareSong(song.id);
   await updateAdminUnverifiedSong(sharedSongId, song);
+  markAdminSongVerified(sharedSongId);
 };
 
 export const saveAdminUnverifiedSongInBackground = (sharedSongId: string, song: Song) => {
