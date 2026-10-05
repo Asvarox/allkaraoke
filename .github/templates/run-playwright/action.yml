@@ -49,6 +49,12 @@ inputs:
       baseline reset only touches files ending in this suffix, so it never
       untracks/reverts a snapshot variant this job doesn't itself render.
     default: ''
+  artifactSuffix:
+    required: false
+    description: >-
+      Appended to the uploaded report artifact names - needed when several jobs run the same
+      config/project/shard (e.g. e2e and visual regression), as artifact names must be unique per run.
+    default: ''
 
 runs:
   using: 'composite'
@@ -71,12 +77,12 @@ runs:
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: test-results-blob-${{ inputs.config }}-${{ inputs.project }}-${{ inputs.shard }}
+        name: test-results-blob-${{ inputs.config }}-${{ inputs.project }}${{ inputs.artifactSuffix }}-${{ inputs.shard }}
         path: |
           blob-report
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: test-results-report-${{ inputs.config }}-${{ inputs.project }}-${{ inputs.shard }}
+        name: test-results-report-${{ inputs.config }}-${{ inputs.project }}${{ inputs.artifactSuffix }}-${{ inputs.shard }}
         path: |
           playwright-report
