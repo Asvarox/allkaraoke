@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 
 import WizardChecklist, { WizardStepEntry } from '~/modules/elements/akui/wizard-checklist';
-import SimplifiedMic from '~/modules/game-engine/input/simplified-mic';
 import events from '~/modules/game-events/game-events';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import RemoteMicClient from '~/modules/remote-mic/network/client';
 import { transportErrorReason } from '~/modules/remote-mic/network/client/network-client';
+import userMediaService from '~/modules/user-media/user-media-service';
 import startViewTransition from '~/modules/utils/start-view-transition';
 import usePermissions from '~/routes/remote-mic/hooks/use-permissions';
 import useRemoteMicName from '~/routes/remote-mic/hooks/use-remote-mic-name';
@@ -128,7 +128,8 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
     // to decide the starting step — avoids flashing the "Allow Microphone" step when permission
     // was already granted on a previous visit
     const timer = setTimeout(() => {
-      SimplifiedMic.requestAccess()
+      userMediaService
+        .getUserMedia({ audio: true })
         .then(() => {
           cachedInitialStep = 1;
           goToStep(1);
