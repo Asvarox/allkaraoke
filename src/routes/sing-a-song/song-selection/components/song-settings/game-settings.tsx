@@ -85,6 +85,8 @@ export default function GameSettings({
   ]);
 
   const [showModal, setShowModal] = useState(false);
+  // Opened from Play rather than Setup mics: finishing the setup goes straight into the song
+  const [playAfterSetup, setPlayAfterSetup] = useState(false);
   useEffect(() => {
     if (!showModal) void InputManager.reassertMonitoring();
   }, [showModal]);
@@ -116,10 +118,15 @@ export default function GameSettings({
       {createPortal(
         <SelectInputModal
           open={showModal}
-          closeButtonText="Continue to the song"
+          closeButtonText={playAfterSetup ? 'Play' : 'Continue to the song'}
           onClose={() => {
             setShowModal(false);
             if (areInputsConfigured) focusElement('play-song-button');
+          }}
+          onFinish={(pref) => {
+            setShowModal(false);
+            if (playAfterSetup && pref !== 'skip') handlePlay();
+            else focusElement('play-song-button');
           }}
         />,
         document.body,
@@ -190,7 +197,10 @@ export default function GameSettings({
                 'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:h-16',
                 'shrink-0 md:portrait:w-56',
               )}
-              onClick={() => setShowModal(true)}>
+              onClick={() => {
+                setPlayAfterSetup(false);
+                setShowModal(true);
+              }}>
               {compact ? null : 'Setup mics'}
             </NavButton>
           )}
@@ -204,7 +214,14 @@ export default function GameSettings({
             remoteIcon="play"
             isDefault
             // Before the mics are set up it leads there first — Play is what anyone reaches for
-            onClick={canPlay ? handlePlay : () => setShowModal(true)}>
+            onClick={
+              canPlay
+                ? handlePlay
+                : () => {
+                    setPlayAfterSetup(true);
+                    setShowModal(true);
+                  }
+            }>
             Play
           </NavButton>
         </div>
