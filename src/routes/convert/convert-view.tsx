@@ -21,6 +21,8 @@ import { getAdminPassword } from '~/routes/admin/admin-password';
 import { saveAdminUnverifiedSongInBackground } from '~/routes/admin/background-song-save';
 import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
 import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
+import { markAdminSongVerified } from '~/routes/admin/verified-songs-counter';
+import { VerifiedSongsCounter } from '~/routes/admin/verified-songs-counter-badge';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
 import SongMetadata, { SongMetadataEntity } from '~/routes/convert/steps/song-metadata';
@@ -249,6 +251,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         await SongDao.store(finalSong!);
         await shareSong(finalSong!.id);
         await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
+        markAdminSongVerified(adminUnverifiedSongId);
         navigate('admin/');
         return;
       }
@@ -389,6 +392,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                   disabled={currentStep === 0}>
                   Previous
                 </Button>
+                {adminUnverifiedSongId && <VerifiedSongsCounter />}
                 {isLastStep ? (
                   <Button
                     data-test="save-button"
