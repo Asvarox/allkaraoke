@@ -64,4 +64,25 @@ describe('SimplifiedMic', () => {
     await SimplifiedMic.startMonitoring();
     expect(getUserMedia).toHaveBeenCalledTimes(2);
   });
+
+  it('hands the wizard probe stream over to monitoring instead of asking again', async () => {
+    const { stream } = createStream();
+    const getUserMedia = vi.spyOn(userMediaService, 'getUserMedia').mockResolvedValue(stream);
+
+    await SimplifiedMic.requestAccess();
+    await vi.advanceTimersByTimeAsync(10_000);
+    await SimplifiedMic.startMonitoring();
+
+    expect(getUserMedia).toHaveBeenCalledTimes(1);
+  });
+
+  it('releases the probe stream when monitoring never starts', async () => {
+    const { stream, track } = createStream();
+    vi.spyOn(userMediaService, 'getUserMedia').mockResolvedValue(stream);
+
+    await SimplifiedMic.requestAccess();
+    await vi.advanceTimersByTimeAsync(60_000);
+
+    expect(track.stop).toHaveBeenCalled();
+  });
 });

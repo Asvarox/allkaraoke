@@ -50,6 +50,12 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
     }, STREAM_RELEASE_DELAY_MS);
   };
 
+  /** Asks for mic access without monitoring; the stream is kept for a later `startMonitoring` and released if unused. */
+  public requestAccess = async () => {
+    this.stream = await this.acquireStream();
+    if (!this.startedMonitoring) this.scheduleStreamRelease();
+  };
+
   public startMonitoring = async () => {
     if (this.startedMonitoring) return;
     this.startedMonitoring = true;

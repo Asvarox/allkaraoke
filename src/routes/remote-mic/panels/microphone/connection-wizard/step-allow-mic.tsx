@@ -1,7 +1,7 @@
 import { Icon } from '~/modules/elements/akui/icon';
 import { MenuButton } from '~/modules/elements/menu';
+import SimplifiedMic from '~/modules/game-engine/input/simplified-mic';
 import MicAccessDeniedView from '~/modules/user-media/mic-access-denied-view';
-import userMediaService from '~/modules/user-media/user-media-service';
 
 // This step is only rendered when mic permission has been denied.
 // The ConnectionWizard probes getUserMedia on mount — if accepted it skips
@@ -14,8 +14,7 @@ interface Props {
 const StepAllowMic = ({ onComplete }: Props) => {
   const handleRetry = () => {
     // Re-probe mic permission — if the user has since allowed it, advance to the next step
-    userMediaService
-      .getUserMedia({ audio: true })
+    SimplifiedMic.requestAccess()
       .then(onComplete)
       .catch(() => {
         // Still denied — stay on this step
