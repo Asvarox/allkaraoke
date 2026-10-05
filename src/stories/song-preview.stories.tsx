@@ -1,9 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
+import { http, HttpResponse } from 'msw';
 import { useEffect } from 'react';
 
 import { SongPreview } from '~/interfaces';
 import DrawingTestInput from '~/modules/game-engine/input/drawing-test-input';
 import InputManager from '~/modules/game-engine/input/input-manager';
+import { BoardEntry, SongBoardResponse } from '~/modules/leaderboard/types';
 import PlayersManager from '~/modules/players/players-manager';
 import SongPreviewComponent from '~/routes/sing-a-song/song-selection/components/song-preview';
 
@@ -71,6 +73,41 @@ function useDrawingTestPlayers(volume: number) {
 }
 
 // ---------------------------------------------------------------------------
+// Leaderboard — `GET /leaderboard-song` answered by MSW. Hard has nobody on it, so the empty state is
+// a tab away.
+// ---------------------------------------------------------------------------
+
+const BOARD_NAMES = [
+  ['Lydia', 'us'],
+  ['Baaarb', 'br'],
+  ['Mari', 'es'],
+  ['Tessa', 'de'],
+  ['Kasia_sings', 'pl'],
+  ['nordlys', 'no'],
+  ['DJ Pancake', 'nl'],
+  ['Yui', 'jp'],
+] as const;
+
+const songBoard = (tolerance: number): SongBoardResponse => {
+  const entries: BoardEntry[] = Array.from({ length: tolerance === 1 ? 0 : 6 * tolerance }, (_, index) => ({
+    name: BOARD_NAMES[index % BOARD_NAMES.length][0],
+    country: BOARD_NAMES[index % BOARD_NAMES.length][1],
+    score: 3_000_000 - index * 97_000,
+    artist: songPreview.artist,
+    title: songPreview.title,
+    songId: songPreview.id,
+    tolerance,
+    createdAt: Date.now() - (index + 1) * 26 * 60 * 60 * 1000,
+  }));
+
+  return { entries, total: entries.length, startPosition: 1, position: null };
+};
+
+const songBoardHandler = http.get('/leaderboard-song', ({ request }) =>
+  HttpResponse.json(songBoard(Number(new URL(request.url).searchParams.get('tolerance')))),
+);
+
+// ---------------------------------------------------------------------------
 // Default meta
 // ---------------------------------------------------------------------------
 
@@ -87,18 +124,20 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
+  beforeEach({ msw }) {
+    msw.use(songBoardHandler);
+  },
 } satisfies Meta<StoryArgs>;
 
 type Story = StoryObj<StoryArgs>;
 
 // ---------------------------------------------------------------------------
-// Expanded story — the fully-expanded panel with MicCheck + GameSettings.
-// This is the most useful story for iterating on the settings UI.
+// Expanded story — the opened preview: the song and its settings, the mic check and
+// the song's leaderboard. The most useful story for iterating on the settings UI.
 // ---------------------------------------------------------------------------
 
 function ExpandedTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
-
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
       <SongPreviewComponent
@@ -179,7 +218,6 @@ const duetSongPreview: SongPreview = {
 
 function DuetTemplate({ volume, isPopular }: StoryArgs) {
   useDrawingTestPlayers(volume);
-
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
       <SongPreviewComponent

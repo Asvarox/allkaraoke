@@ -143,6 +143,8 @@
     "husky": "^9.1.7",
     "knip": "^6.37.0",
     "lint-staged": "^17.5.1",
+    "msw": "^3.0.1",
+    "msw-storybook-addon": "^3.0.3",
     "musicbrainz-api": "0.11.0",
     "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",

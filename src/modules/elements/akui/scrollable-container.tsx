@@ -25,6 +25,14 @@ function useScrollEdges(ref: React.RefObject<HTMLElement | null>, orientation: O
   const update = useCallback(() => {
     const el = ref.current;
     if (!el) return;
+    // A caller can switch the scrolling off at some sizes; content can't be scrolled past then, even
+    // when it overhangs the box by a pixel
+    const { overflowX, overflowY } = getComputedStyle(el);
+    if ((orientation === 'horizontal' ? overflowX : overflowY) === 'visible') {
+      setShowStart(false);
+      setShowEnd(false);
+      return;
+    }
     const [offset, client, scroll] =
       orientation === 'horizontal'
         ? [el.scrollLeft, el.clientWidth, el.scrollWidth]
@@ -38,6 +46,9 @@ function useScrollEdges(ref: React.RefObject<HTMLElement | null>, orientation: O
     if (!el) return;
     update();
     el.addEventListener('scroll', update, { passive: true });
+    // A child's transform (a focused control's scale-up) overhangs the box without resizing anything,
+    // so the observers below never hear it shrink back
+    el.addEventListener('transitionend', update);
     // Children arriving, leaving or resizing change what fits just as much as scrolling does — a
     // board that loads its rows a moment later would otherwise keep the mask it had while empty.
     const ro = new ResizeObserver(update);
@@ -56,6 +67,7 @@ function useScrollEdges(ref: React.RefObject<HTMLElement | null>, orientation: O
     mo.observe(el, { childList: true });
     return () => {
       el.removeEventListener('scroll', update);
+      el.removeEventListener('transitionend', update);
       ro.disconnect();
       mo.disconnect();
     };

@@ -57,3 +57,22 @@ const getSnapshot = () => currentBreakpoint;
 export default function useBreakpoint(): Breakpoint {
   return useSyncExternalStore(subscribe, getSnapshot, getBreakpoint);
 }
+
+export type Orientation = 'portrait' | 'landscape';
+
+// The same sense as Tailwind's `portrait:`/`landscape:` variants: the viewport's shape, not the device's
+const portraitQuery = typeof window !== 'undefined' ? window.matchMedia('(orientation: portrait)') : null;
+const getOrientation = (): Orientation => (portraitQuery?.matches === false ? 'landscape' : 'portrait');
+
+const subscribeOrientation = (callback: () => void) => {
+  portraitQuery?.addEventListener('change', callback);
+  return () => portraitQuery?.removeEventListener('change', callback);
+};
+
+/**
+ * The viewport's orientation, for a component whose JS has to follow a `portrait:`/`landscape:` split
+ * in its classes. Pair it with `useBreakpoint` rather than writing the media query again.
+ */
+export function useOrientation(): Orientation {
+  return useSyncExternalStore(subscribeOrientation, getOrientation, getOrientation);
+}

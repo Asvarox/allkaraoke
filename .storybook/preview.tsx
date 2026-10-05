@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react-vite';
+import { mswLoader } from 'msw-storybook-addon/csf3';
 import { configure } from 'storybook/test';
 import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 
@@ -7,6 +8,8 @@ import '../src/index.css';
 configure({ testIdAttribute: 'data-test' });
 
 export const parameters: Preview = {
+  // Requests a story mocks go through MSW (`beforeEach({ msw })` in the story); the rest pass through
+  loaders: [mswLoader()],
   parameters: {
     options: {
       // Alphabetical would put Components first. Read the system in the order it is built instead:

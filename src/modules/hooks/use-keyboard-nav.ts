@@ -21,6 +21,32 @@ import { ControlDescriptor, ControlInput, RemoteButtonIcon } from '~/routes/keyb
 import useKeyboardHelp from './use-keyboard-help';
 
 /**
+ * Where an element shows, not where it's laid out: its box clamped to every ancestor that clips it.
+ * A control scrolled out of a column reads as sitting on the column's edge, instead of level with
+ * whatever is beside the column at the height it would have had.
+ */
+const visibleRectOf = (element: Element) => {
+  const rect = element.getBoundingClientRect();
+  let { left, top, right, bottom } = rect;
+  for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+    const { overflowX, overflowY } = getComputedStyle(parent);
+    if (overflowX === 'visible' && overflowY === 'visible') continue;
+    const box = parent.getBoundingClientRect();
+    // Per axis: `overflow-x: clip` beside a visible `overflow-y` leaves the vertical extent showing
+    if (overflowX !== 'visible') {
+      left = Math.min(Math.max(left, box.left), box.right);
+      right = Math.min(Math.max(right, box.left), box.right);
+    }
+    if (overflowY !== 'visible') {
+      top = Math.min(Math.max(top, box.top), box.bottom);
+      bottom = Math.min(Math.max(bottom, box.top), box.bottom);
+    }
+  }
+  // Kept as a box: a hidden element's all-zero one is how the caller skips it
+  return rect.width === 0 && rect.height === 0 ? rect : new DOMRect(left, top, right - left, bottom - top);
+};
+
+/**
  * todo: Bug: for some reason elementList is duplicated eg.
  * ['a', 'b', 'c', 'a', 'b', 'c']
  *
@@ -268,13 +294,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const fromAcross = centerOf(currentRect, cross);
     const fromBand = spanOf(currentRect, cross);
 
-    type Candidate = { name: string; score: number };
+    type Candidate = { name: string; score: number; laidOut: number };
     // Indexed by the bucket order described above.
     const buckets: Array<Candidate | null> = [null, null, null, null];
 
     for (const name of elementList.current) {
       if (name === currentlySelected) continue;
-      const rect = document.querySelector(`[data-test="${name}"]`)?.getBoundingClientRect();
+      const element = document.querySelector(`[data-test="${name}"]`);
+      const rect = element ? visibleRectOf(element) : undefined;
       // A registered element can still be display:none (a responsive copy of the same control), and
       // an all-zero box would read as sitting in the top-left corner of the screen.
       if (!rect || (rect.width === 0 && rect.height === 0)) continue;
@@ -288,9 +315,14 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
       // `along` is negative for anything behind, so the lowest score in a wrap bucket is the element
       // furthest back — exactly where wrapping should land.
       const score = along + across * 2;
+      // Controls scrolled out of the same column all show on its edge, so they tie; the one laid out
+      // nearest that edge — the next one the column would scroll to — wins
+      const laidOut = (centerOf(element!.getBoundingClientRect(), axis) - fromAlong) * towards;
       const bucket = isAhead ? (aligned ? 0 : 2) : aligned ? 1 : 3;
       const best = buckets[bucket];
-      if (!best || score < best.score) buckets[bucket] = { name, score };
+      if (!best || score < best.score || (score === best.score && laidOut < best.laidOut)) {
+        buckets[bucket] = { name, score, laidOut };
+      }
     }
 
     const target = buckets.find(Boolean);

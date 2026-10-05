@@ -99,6 +99,35 @@ export const mockLeaderboard = async ({ page }: { page: Page; context: BrowserCo
   );
 };
 
+/**
+ * One song's board, the one the song preview shows — the same board whatever the song or difficulty,
+ * for the same reasons as {@link mockLeaderboard}.
+ */
+export const mockSongLeaderboard = async ({ page, context }: { page: Page; context: BrowserContext }, count = 12) => {
+  await mockLeaderboard({ page, context });
+
+  await page.route(
+    (url) => url.pathname === '/leaderboard-song',
+    (route) => {
+      const params = new URL(route.request().url()).searchParams;
+      const entries: BoardEntry[] = Array.from({ length: count }, (_, index) => ({
+        name: `E2E Player ${String(index + 1).padStart(2, '0')}`,
+        country: 'pl',
+        score: 2_400_000 - index * 7_531,
+        ...BOARD_SONGS[0],
+        songId: params.get('songId') ?? '',
+        tolerance: Number(params.get('tolerance')),
+        createdAt: Date.now() - ((index % 13) + 1) * 24 * 60 * 60 * 1000,
+      }));
+
+      return route.fulfill({
+        status: 200,
+        body: JSON.stringify({ entries, total: count, startPosition: 1, position: null }),
+      });
+    },
+  );
+};
+
 export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;

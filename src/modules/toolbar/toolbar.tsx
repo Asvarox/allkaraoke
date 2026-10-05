@@ -37,7 +37,8 @@ function Toolbar({ children }: PropsWithChildren) {
             <Button
               size={{ xs: 'mini', sm: 'small' }}
               type="button"
-              className="hidden md:flex"
+              // Only where the help itself shows
+              className="hidden lg:flex"
               aria-label="Toggle help"
               onClick={() => setIsHelpVisible(!isHelpVisible)}
               data-test="toggle-help"

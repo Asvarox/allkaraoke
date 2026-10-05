@@ -6,4 +6,5 @@ export const FeatureFlags = {
   RemoteMicsRealtime: 'remote_mics_realtime',
   InitialInputLag: 'initial_input_lag',
   MobileModeAutoOptIn: 'mobile_mode_auto_opt_in',
+  SongPreviewRedesign: 'song_preview_redesign',
 } as const;

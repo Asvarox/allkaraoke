@@ -115,6 +115,12 @@ variants are gone — do not reintroduce them.
 Watch the direction: mixing min-width and max-width in one class list leaves a band of widths where
 it isn't obvious which rule wins.
 
+When the JS has to follow a breakpoint too — rendering something different, not just placing it —
+read it with `useBreakpoint` (and `useOrientation` for a `portrait:`/`landscape:` split) from
+`~/modules/hooks/use-breakpoint`, resolving per-breakpoint values with `resolveResponsiveValue`. Never
+hand-write the media query again with `useMedia` or `matchMedia`: a second copy of the breakpoints
+drifts from Tailwind's, and every call adds its own listeners.
+
 ## Class composition
 
 Compose with `cn` (or `twx`, which uses it) — never a template string. `cn` is configured to
