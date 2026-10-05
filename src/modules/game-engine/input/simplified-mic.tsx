@@ -6,10 +6,6 @@ import events from '~/modules/game-events/game-events';
 import userMediaService from '~/modules/user-media/user-media-service';
 import Listener from '~/modules/utils/listener';
 
-// The host stops and restarts monitoring every few seconds (song previews, mic checks). Releasing the
-// stream each time makes browsers with a non-persistent grant re-prompt for the mic on every restart
-const STREAM_RELEASE_DELAY_MS = 60_000;
-
 class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
   private stream: MediaStream | null = null;
   private context: AudioContext | null = null;
@@ -20,42 +16,22 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
   private volumes: [number, number] = [0, 0];
 
   private startedMonitoring = false;
-  private streamReleaseTimeout: ReturnType<typeof setTimeout> | null = null;
-
-  private acquireStream = async () => {
-    if (this.streamReleaseTimeout) {
-      clearTimeout(this.streamReleaseTimeout);
-      this.streamReleaseTimeout = null;
-    }
-    if (this.stream?.getAudioTracks().some((track) => track.readyState === 'live')) return this.stream;
-
-    return userMediaService.getUserMedia({
-      audio: {
-        // echoCancellation is turned on because without it there is silence from the mic
-        // every other second (possibly some kind of Chrome Mobile bug)
-        echoCancellation: true,
-        noiseSuppression: true,
-        autoGainControl: false,
-      },
-      video: false,
-    });
-  };
-
-  private scheduleStreamRelease = () => {
-    if (this.streamReleaseTimeout) clearTimeout(this.streamReleaseTimeout);
-    this.streamReleaseTimeout = setTimeout(() => {
-      this.streamReleaseTimeout = null;
-      this.stream?.getTracks().forEach((track) => track.stop());
-      this.stream = null;
-    }, STREAM_RELEASE_DELAY_MS);
-  };
 
   public startMonitoring = async () => {
     if (this.startedMonitoring) return;
     this.startedMonitoring = true;
 
     try {
-      this.stream = await this.acquireStream();
+      this.stream = await userMediaService.getUserMedia({
+        audio: {
+          // echoCancellation is turned on because without it there is silence from the mic
+          // every other second (possibly some kind of Chrome Mobile bug)
+          echoCancellation: true,
+          noiseSuppression: true,
+          autoGainControl: false,
+        },
+        video: false,
+      });
       try {
         this.context = new AudioContext({
           sampleRate: 44100,
@@ -108,7 +84,9 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
     if (!this.startedMonitoring) return;
     this.startedMonitoring = false;
     this.interval && clearInterval(this.interval);
-    this.scheduleStreamRelease();
+    this.stream?.getTracks().forEach(function (track) {
+      track.stop();
+    });
     try {
       await this.context?.close();
     } catch (e) {
