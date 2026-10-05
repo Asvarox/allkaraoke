@@ -55,6 +55,7 @@
     "Slipknot",
     "Breaking Benjamin",
     "Marilyn Manson",
+    "Marina and the Diamonds",
     "Olivia Rodrigo",
     "Panic! at the Disco",
     "Red Hot Chili Peppers",
@@ -65,7 +66,6 @@
     "High School Musical",
     "Jennifer Lopez",
     "Mariah Carey",
-    "Marina and the Diamonds",
     "No Doubt",
     "Rise Against",
     "Three Days Grace",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6468,
-  "generatedAt": "2026-10-04T03:38:57.978Z",
+  "songs": 6481,
+  "generatedAt": "2026-10-05T03:21:55.171Z",
   "additionsPerDay": {
+    "2026-10-05": 13,
     "2026-10-02": 12,
     "2026-10-01": 13,
     "2026-09-29": 2,
@@ -228,10 +229,87 @@
     "2026-08-10": 21,
     "2026-08-09": 17,
     "2026-08-08": 12,
-    "2026-08-07": 1,
-    "2026-08-05": 3
+    "2026-08-07": 1
   },
   "recentlyAdded": [
+    {
+      "artist": "Ado",
+      "title": "KIRA",
+      "video": "qpcz3-iDUP8",
+      "addedAt": "2026-10-05T03:21:28.750Z"
+    },
+    {
+      "artist": "Train",
+      "title": "Angel In Blue Jeans",
+      "video": "qr6Fd8gsED8",
+      "addedAt": "2026-10-05T03:21:28.576Z"
+    },
+    {
+      "artist": "José José",
+      "title": "Lo dudo",
+      "video": "CpBvjrkRKN4",
+      "addedAt": "2026-10-05T03:21:28.574Z"
+    },
+    {
+      "artist": "Barricada",
+      "title": "Oveja negra",
+      "video": "wt1M---Z7ec",
+      "addedAt": "2026-10-05T03:21:28.571Z"
+    },
+    {
+      "artist": "Die Atzen mit Nena",
+      "title": "Strobo Pop",
+      "video": "aWRbWwJ5qEc",
+      "addedAt": "2026-10-05T03:21:28.403Z"
+    },
+    {
+      "artist": "Jovanotti",
+      "title": "Bella",
+      "video": "O2RccC7UCnY",
+      "addedAt": "2026-10-05T03:21:28.401Z"
+    },
+    {
+      "artist": "Edd00chan tricker",
+      "title": "Cancion de los NIGHMARE _GREAT ESCAPE_ (Cancion y Letra) Edd00chan w_ Tricker _ FNAFHS",
+      "video": "YD6BDSg-R3M",
+      "addedAt": "2026-10-05T03:21:28.228Z"
+    },
+    {
+      "artist": "Jeff Buckley",
+      "title": "Grace",
+      "video": "A3adFWKE9JE",
+      "addedAt": "2026-10-05T03:21:28.049Z"
+    },
+    {
+      "artist": "Peter Fox",
+      "title": "Alles neu",
+      "video": "qdtLCfEcPL4",
+      "addedAt": "2026-10-05T03:21:28.046Z"
+    },
+    {
+      "artist": "Marina and the Diamonds",
+      "title": "Buy The Stars",
+      "video": "-ubL2QU3Qi8",
+      "addedAt": "2026-10-05T03:21:28.041Z"
+    },
+    {
+      "artist": "Revolverheld feat. Marta Jandová",
+      "title": "Halt dich an mir fest",
+      "video": "wCcJuN47UcY",
+      "addedAt": "2026-10-05T03:21:27.870Z"
+    },
+    {
+      "artist": "Joel Corry feat. MNEK",
+      "title": "Head & Heart",
+      "video": "CRuOOxF-ENQ",
+      "addedAt": "2026-10-05T03:21:27.136Z"
+    },
+    {
+      "artist": "BoA",
+      "title": "Energetic (Radio Edit)",
+      "video": "qE05Bv1e_fo",
+      "addedAt": "2026-10-05T03:21:27.129Z"
+    },
     {
       "artist": "Renaud & Axelle Red",
       "title": "Manhattan-Kaboul",
@@ -441,84 +519,6 @@
       "title": "La perla",
       "video": "GkTWxDB21cA",
       "addedAt": "2026-09-24T18:23:30.575Z"
-    },
-    {
-      "artist": "Los Rancheros",
-      "title": "Casualidad",
-      "video": "EKTjAsCeLao",
-      "addedAt": "2026-09-24T18:23:17.333Z"
-    },
-    {
-      "artist": "Ricardo Junior",
-      "title": "Sorriso Resplandecente",
-      "video": "3n3itDDgmQQ",
-      "addedAt": "2026-09-24T18:23:01.841Z"
-    },
-    {
-      "artist": "Liam Payne & Rita Ora",
-      "title": "For You (Fifty Shades Freed)",
-      "video": "RQUuqbzQVsY",
-      "addedAt": "2026-09-24T18:22:33.124Z"
-    },
-    {
-      "artist": "LMFAO",
-      "title": "Sexy And I Know It",
-      "video": "wyx6JDQCslE",
-      "addedAt": "2026-09-24T18:22:12.648Z"
-    },
-    {
-      "artist": "Brødrene Olsen",
-      "title": "Smuk som et stjerneskud",
-      "video": "rp8ny2s2mZg",
-      "addedAt": "2026-09-24T18:21:52.371Z"
-    },
-    {
-      "artist": "Grimes",
-      "title": "Oblivion",
-      "video": "JtH68PJIQLE",
-      "addedAt": "2026-09-24T18:21:34.693Z"
-    },
-    {
-      "artist": "Twenty One Pilots",
-      "title": "Shy Away",
-      "video": "3sO-Y1Zbft4",
-      "addedAt": "2026-09-24T18:21:10.739Z"
-    },
-    {
-      "artist": "Axel Fischer",
-      "title": "Amsterdam",
-      "video": "q8NRgJRmNA0",
-      "addedAt": "2026-09-24T18:20:51.072Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "’tis the damn season",
-      "video": "WuvhOD-mP8M",
-      "addedAt": "2026-09-23T21:10:16.923Z"
-    },
-    {
-      "artist": "Manu Chao",
-      "title": "Clandestino",
-      "video": "0TamvrMZl4g",
-      "addedAt": "2026-09-23T21:09:42.906Z"
-    },
-    {
-      "artist": "Berlin",
-      "title": "Take My Breath Away",
-      "video": "Bx51eegLTY8",
-      "addedAt": "2026-09-23T21:09:05.231Z"
-    },
-    {
-      "artist": "AnnenMayKantereit",
-      "title": "Oft gefragt",
-      "video": "TxZMfufRJfo",
-      "addedAt": "2026-09-23T21:08:33.137Z"
-    },
-    {
-      "artist": "Disney’s The Nightmare Before Christmas",
-      "title": "This Is Halloween",
-      "video": "ZVuToMilP0A",
-      "addedAt": "2026-09-23T21:08:12.234Z"
     }
   ]
 }
