@@ -16,7 +16,10 @@ const StepAllowMic = ({ onComplete }: Props) => {
     // Re-probe mic permission — if the user has since allowed it, advance to the next step
     userMediaService
       .getUserMedia({ audio: true })
-      .then(onComplete)
+      .then((stream) => {
+        stream.getTracks().forEach((track) => track.stop());
+        onComplete();
+      })
       .catch(() => {
         // Still denied — stay on this step
       });
