@@ -64,6 +64,9 @@ visual('Online mode', ['desktop'], async ({ page, context, browser, viewport, ma
   await pages.songPreviewPage.goNext();
   await page.getByTestId('play-song-button').click();
   await expect(pages.onlineLobbyPage.browsedSongTitleElement).not.toHaveText('No song yet', { timeout: 15_000 });
+  // The start button mounts after the title and takes focus, scrolling the overflowing column to it.
+  // Wait for that, else the scroll can land after the screenshot's scroll reset and hide "Picked by".
+  await expect(pages.onlineLobbyPage.startSongButton).toHaveAttribute('data-e2e-focused', 'true', { timeout: 15_000 });
 
   await makeScreenshot('lobby-song-selected', { extraMasks: roomCodeMasks(page) });
 
