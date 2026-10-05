@@ -40,10 +40,15 @@ const SILENT_PEER_RELEASE_MS = 10 * 60 * 1_000;
 
 type DataCallback = (data: NetworkMessages) => void;
 
+interface PendingHello {
+  id: string;
+  frames: RealtimeFrame[];
+}
+
 /**
  * The game's side of the Realtime transport: it hosts a directory room under its game code and
  * publishes a slot channel per phone. Which phone is on which slot is learned from the `rt-hello`
- * each phone sends first.
+ * each phone sends first, checked against the directory.
  */
 export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderInterface]> implements ServerTransport {
   public readonly name = 'Realtime';
@@ -54,6 +59,8 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
   private slotByPeer = new Map<string, number>();
   private peerBySlot = new Map<number, string>();
   private lastHeardAt = new Map<string, number>();
+  /** Slots whose `rt-hello` is being checked with the directory, holding what arrives meanwhile. */
+  private pendingHellos = new Map<number, PendingHello>();
   // Keyed by peer rather than by sender object: a reconnecting phone gets a new sender, and
   // whoever subscribed through the old one must keep receiving its frames
   private dataCallbacks = new Map<string, Set<DataCallback>>();
@@ -112,11 +119,55 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
   private handleFrame = (frame: RealtimeFrame, slot: number | null) => {
     if (slot === null) return;
     if (frame.t === 'rt-hello') {
-      const previousSlot = this.slotByPeer.get(frame.id);
-      if (previousSlot !== undefined) this.peerBySlot.delete(previousSlot);
-      this.slotByPeer.set(frame.id, slot);
-      this.peerBySlot.set(slot, frame.id);
+      // A hello on a slot is a phone (re)connecting: whoever the slot was bound to no longer counts
+      this.unbindSlot(slot);
+      const pending = { id: frame.id, frames: [] };
+      this.pendingHellos.set(slot, pending);
+      void this.verifyHello(slot, pending);
+      return;
     }
+    const pending = this.pendingHellos.get(slot);
+    if (pending) pending.frames.push(frame);
+    else this.deliver(frame, slot);
+  };
+
+  /**
+   * The id in `rt-hello` is only the phone's word — knowing another phone's id (they are published to
+   * every phone) would otherwise be enough to speak with its permissions. The directory knows which
+   * participant it placed on the slot, so the slot is bound only when the two agree.
+   */
+  private verifyHello = async (slot: number, pending: PendingHello) => {
+    const connection = this.connection;
+    let holder: string | null = null;
+    try {
+      holder = (await connection?.getSlotHolder(slot)) ?? null;
+    } catch {
+      // Unanswered is unproven; the phone is told to reconnect, which asks again
+    }
+    // Superseded by a newer hello on the slot, or by a reconnect of the game itself
+    if (this.connection !== connection || this.pendingHellos.get(slot) !== pending) return;
+    this.pendingHellos.delete(slot);
+
+    if (holder !== pending.id) {
+      connection?.sendToSlot(slot, { t: 'rt-close', reason: 'not-authorized' });
+      return;
+    }
+    const previousSlot = this.slotByPeer.get(pending.id);
+    if (previousSlot !== undefined) this.peerBySlot.delete(previousSlot);
+    this.slotByPeer.set(pending.id, slot);
+    this.peerBySlot.set(slot, pending.id);
+    this.lastHeardAt.set(pending.id, Date.now());
+    pending.frames.forEach((frame) => this.deliver(frame, slot));
+  };
+
+  private unbindSlot = (slot: number) => {
+    const peer = this.peerBySlot.get(slot);
+    if (peer === undefined) return;
+    this.peerBySlot.delete(slot);
+    if (this.slotByPeer.get(peer) === slot) this.slotByPeer.delete(peer);
+  };
+
+  private deliver = (frame: RealtimeFrame, slot: number) => {
     const peer = this.peerBySlot.get(slot);
     if (!peer) return;
     this.lastHeardAt.set(peer, Date.now());
@@ -177,6 +228,7 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
     this.slotByPeer.clear();
     this.peerBySlot.clear();
     this.lastHeardAt.clear();
+    this.pendingHellos.clear();
   };
 
   public getCurrentPing = () => this.latency;

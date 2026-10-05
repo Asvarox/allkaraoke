@@ -27,6 +27,19 @@ describe('summarizePings', () => {
   it('has nothing to say about an empty window', () => {
     expect(summarizePings([])).toBeNull();
   });
+
+  it('reports a window where every ping timed out, without inventing a latency', () => {
+    expect(summarizePings([], 3)).toEqual({
+      samples: 0,
+      timeouts: 3,
+      min: null,
+      max: null,
+      avg: null,
+      median: null,
+      p95: null,
+      jitter: null,
+    });
+  });
 });
 
 describe('PingSampler', () => {

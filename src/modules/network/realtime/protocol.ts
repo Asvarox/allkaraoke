@@ -195,6 +195,17 @@ export interface LeaveRoomRequest {
 /** What the directory says a session is allowed to do, used to authorise channel creation. */
 export type ChannelAuthorization = { ok: true; isHost: boolean; slot: number; hostSessionId: string } | { ok: false };
 
+/**
+ * `POST <basePath>/room/:code/slot` — who holds a slot, asked by the host. The SFU tells the host
+ * which slot a frame arrived on, never who sent it; a participant naming itself in its first frame
+ * proves nothing, so the host checks the name against the directory before trusting it.
+ */
+export interface SlotHolderRequest {
+  slot: number;
+  requestedBy: { participantId: string; sessionId: string };
+}
+export type SlotHolderResponse = { ok: true; participantId: string | null } | { ok: false };
+
 /** `GET <basePath>/room/:code` — lets the join screen check a code without claiming a slot. */
 export interface RoomInfoResponse {
   created: boolean;

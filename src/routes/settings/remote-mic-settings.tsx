@@ -64,6 +64,8 @@ function RemoteMicSettings() {
             const next = nextValue(RemoteMicConnectionType, remoteMicConnectionType);
             setRemoteMicConnectionType(next);
             RemoteMicServer.switchTransport(next);
+            // The shown value is the server's, which is not React state
+            forceUpdate();
           }}
         />
         <hr />

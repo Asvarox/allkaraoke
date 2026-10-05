@@ -168,6 +168,14 @@ export class SfuRoomConnection<M> implements RealtimeRoomConnection<M> {
 
   public leave = () => this.signaling.leaveRoom(this.roomCode, this.participantId, this.requester());
 
+  /** Host only: the participant the directory placed on `slot`, or null when nobody holds it. Throws
+   * when the directory cannot be asked or refuses to answer. */
+  public getSlotHolder = async (slot: number): Promise<string | null> => {
+    const response = await this.signaling.fetchSlotHolder(this.roomCode, { slot, requestedBy: this.requester() });
+    if (!response.ok) throw new Error('Not allowed to look up slots');
+    return response.participantId;
+  };
+
   public releaseSlot = (participantId: string, ban = false) =>
     this.signaling.leaveRoom(this.roomCode, participantId, this.requester(), ban);
 

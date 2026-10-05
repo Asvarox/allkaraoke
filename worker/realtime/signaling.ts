@@ -13,6 +13,7 @@ import type {
   PromoteHostRequest,
   RealtimeService,
   SessionDescriptionDto,
+  SlotHolderRequest,
 } from '../../src/modules/network/realtime/protocol';
 import type { RoomDirectory } from './room-directory';
 
@@ -104,7 +105,7 @@ const corsHeaders = (request: Request): Record<string, string> => {
   return { 'Access-Control-Allow-Origin': origin, Vary: 'Origin' };
 };
 
-const json = (request: Request, body: unknown, status = 200) =>
+const json = <T = unknown>(request: Request, body: T, status = 200) =>
   new Response(JSON.stringify(body), {
     status,
     headers: {
@@ -429,6 +430,12 @@ const handleRoom = async (request: Request, directory: DirectoryStub, action: st
       return badRequest(request, 'participantId, sessionId and fromEpoch required');
     }
     return json(request, await directory.promote(participantId, sessionId, fromEpoch, secret));
+  }
+  if (action === 'slot') {
+    const { slot, requestedBy } = (body ?? {}) as unknown as SlotHolderRequest;
+    if (typeof slot !== 'number') return badRequest(request, 'slot required');
+    if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest(request, 'requestedBy required');
+    return json(request, await directory.slotHolder(slot, requestedBy));
   }
   if (action === 'keepalive') {
     await directory.keepalive();

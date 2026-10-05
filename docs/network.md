@@ -53,7 +53,9 @@ Differences from an online room:
 
 - The game is always the host: a remote-mic room never promotes a phone or elects one when the host
   leaves.
-- A phone's first frame is `rt-hello` with its id, which is how the game maps a slot to a phone.
+- A phone's first frame is `rt-hello` with its id. The SFU only tells the game which slot a frame came
+  in on, so the game checks the id against the directory (host-only `room/:code/slot` lookup) before
+  binding the slot, holding that slot's frames until then; a mismatch gets `rt-close` `not-authorized`.
 - The game broadcasts `rt-hb` every 2s. A reloaded game just stops publishing, so a phone treats 10s of
   silence as a closed connection and reconnects. `rt-close` closes a phone on purpose (`player-removed`,
   or `host-closed` as the game unloads, so phones reconnect without waiting out the silence).
@@ -74,7 +76,7 @@ Both transports report the same events, with `transport` (the code's lead letter
 | `remote_mic_server_connection_error`/`lost` | game  | the game's transport failed / dropped                |
 
 `remote_mic_song_ping` summarises every ping of the song (`samples`, `timeouts`, `min`, `max`, `avg`,
-`median`, `p95`, `jitter`, in ms). The game brackets each song with `songStarted` / `songEnded` client
+`median`, `p95`, `jitter`, in ms; the latency figures are null when every ping of the song timed out). The game brackets each song with `songStarted` / `songEnded` client
 calls, and only a phone the game monitored during the song reports. Online mode reports the same summary
 per singer per song as `onlineSongPing`.
 

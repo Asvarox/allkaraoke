@@ -249,4 +249,21 @@ describe('OnlineDirectory', () => {
 
     expect(await directory.info()).toMatchObject({ hostSessionId: 's2' });
   });
+
+  it('tells the host who holds a slot, and nobody else', async () => {
+    const directory = getDirectory();
+    await directory.join('p1', 's1', true);
+    await directory.join('p2', 's2', false);
+
+    expect(await directory.slotHolder(1, { participantId: 'p1', sessionId: 's1' })).toEqual({
+      ok: true,
+      participantId: 'p2',
+    });
+    expect(await directory.slotHolder(4, { participantId: 'p1', sessionId: 's1' })).toEqual({
+      ok: true,
+      participantId: null,
+    });
+    // A member asking is how a phone would learn whose id to claim
+    expect(await directory.slotHolder(1, { participantId: 'p2', sessionId: 's2' })).toEqual({ ok: false });
+  });
 });

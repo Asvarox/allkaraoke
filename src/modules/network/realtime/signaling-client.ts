@@ -6,6 +6,8 @@ import {
   PromoteHostResponse,
   RealtimeService,
   RoomInfoResponse,
+  SlotHolderRequest,
+  SlotHolderResponse,
 } from '~/modules/network/realtime/protocol';
 
 /** Empty means same origin: in production the Worker serves the app itself, and in dev the
@@ -51,6 +53,9 @@ export class SignalingClient {
       // Best-effort: a browser being closed may not get this out at all, which is why the host also
       // releases a slot when the channel behind it drops.
     });
+
+  public fetchSlotHolder = (roomCode: string, request: SlotHolderRequest) =>
+    this.post<SlotHolderResponse>(`/room/${roomCode}/slot`, request);
 
   public keepaliveRoom = (roomCode: string) =>
     this.post(`/room/${roomCode}/keepalive`, {}).catch(() => {

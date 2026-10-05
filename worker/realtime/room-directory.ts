@@ -7,6 +7,7 @@ import type {
   JoinRoomResponse,
   PromoteHostResponse,
   RoomInfoResponse,
+  SlotHolderResponse,
 } from '../../src/modules/network/realtime/protocol';
 
 /**
@@ -135,6 +136,17 @@ export abstract class RoomDirectory extends DurableObject {
    * channel request to the SFU — membership here is the only thing standing between a room code
    * and another singer's private slot.
    */
+  /** Who holds `slot`. Only the host may ask: it is what lets the host attribute a slot's frames to a
+   * participant, and nobody else has a reason to map slots to participants. */
+  public slotHolder(slot: number, requestedBy: { participantId: string; sessionId: string }): SlotHolderResponse {
+    const requester = this.authorize(requestedBy.participantId, requestedBy.sessionId);
+    if (!requester.ok || !requester.isHost) return { ok: false };
+    return {
+      ok: true,
+      participantId: this.state.members.find((member) => member.slot === slot)?.participantId ?? null,
+    };
+  }
+
   public authorize(participantId: string, sessionId: string): ChannelAuthorization {
     const member = this.state.members.find((entry) => entry.participantId === participantId);
     // The session must be the one this participant actually joined with, or knowing somebody
