@@ -2630,22 +2630,25 @@ var LeaderboardBoard = class extends DurableObject {
 		}
 	}
 };
+var ONLINE_REALTIME = {
+	basePath: "/online",
+	slotCount: 6,
+	roomCodePattern: /^[2-9][a-z]{4}$/,
+	storageKey: "ONLINE"
+};
 /** Per-participant duplex pipe. The host publishes one of these per slot; the single client
 * holding the slot subscribes with `canReply: true`, which makes the same negotiated channel
 * bidirectional. Cloudflare grants reply access to exactly one subscriber per publisher channel
 * (a later grant revokes the earlier one), so a slot must never have two live claimants — the
 * directory Durable Object is what guarantees that. */
 var slotChannelName = (slot) => `slot-${slot}`;
-/** A room code in full: a lead digit and four lowercase letters, five characters like every room
-* code (`ONLINE_ROOM_CODE_LENGTH`, kept in sync by a test). The Worker holds its directory to this. */
-var P2P_ROOM_CODE_PATTERN = /^[2-9][a-z]{4}$/;
 /** A room's directory row is wiped this long after the last call touching it. The host's keepalive
 * is what holds a live room open, so this only has to outlast the gap between keepalives. */
 var DIRECTORY_TTL_MS = 18e5;
 //#endregion
-//#region worker/online-directory-do.ts
+//#region worker/realtime/room-directory.ts
 /**
-* The one piece of server state online mode keeps: who is in a room, which slot channel each of
+* The one piece of server state a Realtime room keeps: who is in a room, which slot channel each of
 * them owns, and who is currently hosting.
 *
 * Deliberately tiny and deliberately cold. It is touched on join, leave, host promotion and a
@@ -2683,7 +2686,11 @@ var emptyState = (now) => ({
 	members: [],
 	lastActivityAt: now
 });
-var OnlineDirectory = class extends DurableObject {
+/**
+* A feature's room directory — online mode and remote mics each have their own Durable Object
+* class (and so their own rooms) built on this one.
+*/
+var RoomDirectory = class extends DurableObject {
 	state;
 	constructor(ctx, env) {
 		super(ctx, env);
@@ -2700,12 +2707,13 @@ var OnlineDirectory = class extends DurableObject {
 	}
 	freeSlot() {
 		const taken = new Set(this.state.members.map((member) => member.slot));
-		for (let slot = 0; slot < 6; slot++) if (!taken.has(slot)) return slot;
+		for (let slot = 0; slot < this.slotCount; slot++) if (!taken.has(slot)) return slot;
 		return null;
 	}
 	/** Host is whoever the directory last promoted, falling back to the earliest remaining member so
 	* a room whose host row was pruned still has one rather than going headless. */
 	electFallbackHost() {
+		if (!this.hasSuccession) return;
 		if (this.state.members.some((member) => member.participantId === this.state.hostParticipantId)) return;
 		const next = this.state.members[0] ?? null;
 		this.state.hostParticipantId = next?.participantId ?? null;
@@ -2724,6 +2732,16 @@ var OnlineDirectory = class extends DurableObject {
 	* channel request to the SFU — membership here is the only thing standing between a room code
 	* and another singer's private slot.
 	*/
+	/** Who holds `slot`. Only the host may ask: it is what lets the host attribute a slot's frames to a
+	* participant, and nobody else has a reason to map slots to participants. */
+	slotHolder(slot, requestedBy) {
+		const requester = this.authorize(requestedBy.participantId, requestedBy.sessionId);
+		if (!requester.ok || !requester.isHost) return { ok: false };
+		return {
+			ok: true,
+			participantId: this.state.members.find((member) => member.slot === slot)?.participantId ?? null
+		};
+	}
 	authorize(participantId, sessionId) {
 		const member = this.state.members.find((entry) => entry.participantId === participantId);
 		if (!member || member.sessionId !== sessionId || !this.state.hostSessionId) return { ok: false };
@@ -2822,6 +2840,12 @@ var OnlineDirectory = class extends DurableObject {
 			epoch: this.state.epoch,
 			hostSessionId: this.state.hostSessionId
 		};
+		if (!this.hasSuccession) return {
+			ok: false,
+			reason: "not-authorized",
+			epoch: this.state.epoch,
+			hostSessionId: this.state.hostSessionId
+		};
 		if (!secretMatches(member.secret, secret)) return {
 			ok: false,
 			reason: "not-authorized",
@@ -2860,10 +2884,18 @@ var OnlineDirectory = class extends DurableObject {
 	}
 };
 //#endregion
-//#region worker/online-signaling.ts
+//#region worker/online-directory-do.ts
+/** Online mode's rooms. The authority runs in a singer's browser, so when that singer goes quiet the
+* next one in line takes over (see docs/online-mode.md). */
+var OnlineDirectory = class extends RoomDirectory {
+	slotCount = 6;
+	hasSuccession = true;
+};
+//#endregion
+//#region worker/realtime/signaling.ts
 var DEFAULT_REALTIME_API_URL = "https://rtc.live.cloudflare.com/v1";
 var REALTIME_TURN_API_BASE = "https://rtc.live.cloudflare.com/v1/turn/keys";
-/** Cloudflare's public STUN, which takes no credentials — the reason online mode connects at all
+/** Cloudflare's public STUN, which takes no credentials — the reason Realtime connects at all
 * on a checkout with nothing configured. Port 53 is there because some networks only let
 * DNS-looking traffic out. */
 var DEFAULT_STUN_URLS = ["stun:stun.cloudflare.com:3478", "stun:stun.cloudflare.com:53"];
@@ -2873,9 +2905,6 @@ var DEFAULT_STUN_URLS = ["stun:stun.cloudflare.com:3478", "stun:stun.cloudflare.
 var TURN_CREDENTIAL_TTL_SECONDS = 7200;
 /** Re-mint this long before expiry rather than handing out a credential about to lapse. */
 var TURN_REFRESH_MARGIN_MS = 6e5;
-/** Room codes are the only thing that reaches the directory as a Durable Object name, so they are
-* pinned to exactly what the game generates before anything is looked up. */
-var ROOM_CODE_PATTERN = P2P_ROOM_CODE_PATTERN;
 /**
 * The channel `datachannels/establish` sets the SCTP transport up with. Cloudflare's endpoint needs
 * one, but a browser does not know whether it is the host until it has a session id to join the
@@ -2983,10 +3012,6 @@ var isSessionDescription = (value) => {
 	const candidate = value;
 	return typeof candidate?.sdp === "string" && (candidate.type === "offer" || candidate.type === "answer");
 };
-var getDirectory = (env, roomCode) => {
-	const namespace = env.ONLINE_DIRECTORY;
-	return namespace.get(namespace.idFromName(roomCode));
-};
 /**
 * Opens an SFU session and starts its data-channel transport — the first half of the handshake.
 *
@@ -3073,23 +3098,23 @@ var answerTokenMatches = async (env, sessionId, token) => {
 * from being enough to read another singer's slot: Cloudflare hands reply access to one subscriber
 * at a time, so claiming somebody else's slot would also cut off the rightful occupant.
 */
-var everySlotChannel = Array.from({ length: 6 }, (_, slot) => slotChannelName(slot));
-var isChannelAllowed = (channel, auth) => {
+var everySlotChannel = (service) => Array.from({ length: service.slotCount }, (_, slot) => slotChannelName(slot));
+var isChannelAllowed = (channel, auth, service) => {
 	if (auth.isHost) {
 		if (channel.publisherSessionId) return false;
-		return channel.name === "room" || everySlotChannel.includes(channel.name);
+		return channel.name === "room" || everySlotChannel(service).includes(channel.name);
 	}
 	if (channel.publisherSessionId !== auth.hostSessionId) return false;
 	if (channel.name === "room") return !channel.canReply;
 	return channel.name === slotChannelName(auth.slot);
 };
-var handleCreateDataChannels = async (request, env) => {
+var handleCreateDataChannels = async (request, env, service, directoryOf) => {
 	const body = await request.json().catch(() => null);
 	if (!body?.sessionId || !Array.isArray(body.channels) || body.channels.length === 0) return badRequest(request, "sessionId and channels required");
-	if (!ROOM_CODE_PATTERN.test(body.roomCode ?? "") || !body.participantId) return badRequest(request, "roomCode and participantId required");
-	const auth = await getDirectory(env, body.roomCode).authorize(body.participantId, body.sessionId);
+	if (!service.roomCodePattern.test(body.roomCode ?? "") || !body.participantId) return badRequest(request, "roomCode and participantId required");
+	const auth = await directoryOf(body.roomCode).authorize(body.participantId, body.sessionId);
 	if (!auth.ok) return json(request, { error: "Not a member of this room" }, 403);
-	if (!body.channels.every((channel) => isChannelAllowed(channel, auth))) return json(request, { error: "Not allowed on this channel" }, 403);
+	if (!body.channels.every((channel) => isChannelAllowed(channel, auth, service))) return json(request, { error: "Not allowed on this channel" }, 403);
 	const result = await callRealtime({
 		env,
 		path: `/sessions/${body.sessionId}/datachannels/new`,
@@ -3110,8 +3135,7 @@ var handleCreateDataChannels = async (request, env) => {
 		id: channel.id
 	})) });
 };
-var handleRoom = async (request, env, roomCode, action) => {
-	const directory = getDirectory(env, roomCode);
+var handleRoom = async (request, directory, action) => {
 	if (action === "" && request.method === "GET") return json(request, await directory.info());
 	if (request.method !== "POST") return json(request, { error: "Method not allowed" }, 405);
 	const body = await request.json().catch(() => null);
@@ -3135,6 +3159,12 @@ var handleRoom = async (request, env, roomCode, action) => {
 		if (!participantId || !sessionId || typeof fromEpoch !== "number") return badRequest(request, "participantId, sessionId and fromEpoch required");
 		return json(request, await directory.promote(participantId, sessionId, fromEpoch, secret));
 	}
+	if (action === "slot") {
+		const { slot, requestedBy } = body ?? {};
+		if (typeof slot !== "number") return badRequest(request, "slot required");
+		if (!requestedBy?.participantId || !requestedBy?.sessionId) return badRequest(request, "requestedBy required");
+		return json(request, await directory.slotHolder(slot, requestedBy));
+	}
 	if (action === "keepalive") {
 		await directory.keepalive();
 		return json(request, { ok: true });
@@ -3148,13 +3178,17 @@ var handleRoom = async (request, env, roomCode, action) => {
 * through individually.
 */
 var withinRateLimit = async (request, env) => {
-	const limiter = env.ONLINE_SIGNALING_RATE_LIMITER;
+	const limiter = env.REALTIME_SIGNALING_RATE_LIMITER;
 	if (!limiter) return true;
 	return (await limiter.limit({ key: request.headers.get("CF-Connecting-IP") ?? "unknown" })).success;
 };
-/** Routes everything under `/online/`. Returns null when the path is not ours. */
-var handleOnlineSignaling = async (request, env, pathname) => {
-	if (!pathname.startsWith("/online/")) return null;
+/**
+* Mounts the signaling endpoints of one feature under `service.basePath`: SFU session and channel
+* setup, and the feature's own room directory. The returned handler answers null for any other path.
+*/
+var createRealtimeSignaling = (service, getDirectoryNamespace) => async (request, env, pathname) => {
+	const prefix = `${service.basePath}/`;
+	if (!pathname.startsWith(prefix)) return null;
 	if (request.method === "OPTIONS") return new Response(null, {
 		status: 204,
 		headers: {
@@ -3163,10 +3197,12 @@ var handleOnlineSignaling = async (request, env, pathname) => {
 			"Access-Control-Allow-Headers": "Content-Type"
 		}
 	});
-	if (!env.ONLINE_DIRECTORY) return json(request, { error: "Online mode is not configured" }, 503);
+	const namespace = getDirectoryNamespace(env);
+	if (!namespace) return json(request, { error: "Realtime signaling is not configured" }, 503);
+	const directoryOf = (roomCode) => namespace.get(namespace.idFromName(roomCode));
 	const hasRealtimeCredentials = Boolean(env.REALTIME_APP_ID && env.REALTIME_APP_TOKEN);
 	try {
-		const rest = pathname.slice(8);
+		const rest = pathname.slice(prefix.length);
 		if (rest === "ice" && request.method === "GET") return await handleIceServers(request, env);
 		if (rest === "session" || rest === "session/answer" || rest === "datachannels") {
 			if (!hasRealtimeCredentials) return json(request, { error: "Realtime is not configured" }, 503);
@@ -3174,19 +3210,41 @@ var handleOnlineSignaling = async (request, env, pathname) => {
 			if (!await withinRateLimit(request, env)) return json(request, { error: "Too many requests" }, 429);
 			if (rest === "session") return await handleCreateSession(request, env);
 			if (rest === "session/answer") return await handleAnswerSession(request, env);
-			return await handleCreateDataChannels(request, env);
+			return await handleCreateDataChannels(request, env, service, directoryOf);
 		}
 		if (rest.startsWith("room/")) {
 			const [roomCode, action = ""] = rest.slice(5).split("/");
-			if (!ROOM_CODE_PATTERN.test(roomCode ?? "")) return badRequest(request, "invalid room code");
-			return await handleRoom(request, env, roomCode, action);
+			if (!service.roomCodePattern.test(roomCode ?? "")) return badRequest(request, "invalid room code");
+			return await handleRoom(request, directoryOf(roomCode), action);
 		}
 		return json(request, { error: "Not found" }, 404);
 	} catch (error) {
-		console.error("Online signaling failed", error);
+		console.error(`Realtime signaling under ${service.basePath} failed`, error);
 		return json(request, { error: "Signaling failed" }, 502);
 	}
 };
+//#endregion
+//#region worker/online-signaling.ts
+/** Online mode's signaling under `/online/`. */
+var handleOnlineSignaling = createRealtimeSignaling(ONLINE_REALTIME, (env) => env.ONLINE_DIRECTORY);
+var REMOTE_MIC_REALTIME = {
+	basePath: "/remote-mic-signaling",
+	slotCount: 16,
+	roomCodePattern: /^r[a-z]{4}$/,
+	storageKey: "REMOTE_MIC"
+};
+//#endregion
+//#region worker/remote-mic-directory-do.ts
+/** Remote mics' rooms, one per Realtime game code. The game is the room: a phone holding the host
+* role would leave every other phone subscribed to a game that is not there, so it never moves. */
+var RemoteMicDirectory = class extends RoomDirectory {
+	slotCount = 16;
+	hasSuccession = false;
+};
+//#endregion
+//#region worker/remote-mic-signaling.ts
+/** Remote mics' signaling for Realtime game codes, on the same Realtime app as online mode. */
+var handleRemoteMicSignaling = createRealtimeSignaling(REMOTE_MIC_REALTIME, (env) => env.REMOTE_MIC_DIRECTORY);
 //#endregion
 //#region worker/index.ts
 var createContext = (request, env, executionContext, params) => {
@@ -3209,6 +3267,8 @@ var worker_entry_default = { async fetch(request, env, executionContext) {
 	const { pathname } = new URL(request.url);
 	const onlineResponse = await handleOnlineSignaling(request, env, pathname);
 	if (onlineResponse) return onlineResponse;
+	const remoteMicResponse = await handleRemoteMicSignaling(request, env, pathname);
+	if (remoteMicResponse) return remoteMicResponse;
 	if (pathname === "/unverified-songs" || pathname === "/shared-songs") return callPagesHandler(onRequest$1, request, env, executionContext);
 	if (pathname === "/unverified-song" || pathname === "/shared-song") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/unverified-songs-admin" || pathname === "/shared-songs-admin") return callPagesHandler(onRequest, request, env, executionContext);
@@ -3221,6 +3281,6 @@ var worker_entry_default = { async fetch(request, env, executionContext) {
 	return new Response("Not found", { status: 404 });
 } };
 //#endregion
-export { LeaderboardBoard, OnlineDirectory, worker_entry_default as default };
+export { LeaderboardBoard, OnlineDirectory, RemoteMicDirectory, worker_entry_default as default };
 
 //# sourceMappingURL=index.mjs.map
