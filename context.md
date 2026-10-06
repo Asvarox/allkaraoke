@@ -69,12 +69,13 @@ Input is managed through two cooperating singletons:
 
 - **host** — The main game browser session that runs the game and owns the room.
 - **remote mic** — A phone/secondary browser acting as microphone input, connected to the host over a network transport.
-- **room ID** — Identifier used to pair a remote mic with its host session; prefix determines transport type (`k` = PartyKit, `w` = WebSocket).
+- **room ID** — Identifier used to pair a remote mic with its host session; prefix determines transport type (`k` = PartyKit, `r` = Realtime, `w` = WebSocket).
 - **remote keyboard** — Navigation control surface on the remote mic screen for operating host menus.
 - **remote song list** — Delta-based personal favourites list sent from a remote mic to the host.
 - **remote mic permissions** — Access level granted to a remote client: `write` (full control) or `read` (limited).
 - **readiness confirmation** — Step before a song starts where each remote mic confirms it is ready (required on iOS after a page reload to enable microphone access).
 - **PartyKit** — Default transport backend for remote mics (Cloudflare Workers based).
+- **Realtime** — Remote mic transport over the Cloudflare Realtime SFU, the same wiring online mode uses. Rolled out with the `remote_mics_realtime` flag.
 - **WebSockets** — Alternative direct WebSocket transport for remote mics.
 - **PeerJS** — Legacy peer-to-peer WebRTC transport, kept for backwards compatibility.
 

@@ -1,16 +1,16 @@
 import { v4 as uuid } from 'uuid';
 
+import { clearMembershipSecret } from '~/modules/network/realtime/membership-secret';
+import { jsonCodec, SfuRoomConnection } from '~/modules/network/realtime/sfu-room-connection';
+import { SignalingClient } from '~/modules/network/realtime/signaling-client';
+import { SfuRoomMembership } from '~/modules/network/realtime/types';
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
+import { PingSampler } from '~/modules/network/rpc/ping-stats';
 import { createFireAndForgetProxy, createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ClientSubscriptionManager } from '~/modules/network/rpc/subscription-manager';
-import { trackOnlinePing } from '~/modules/online/client/online-analytics';
-import {
-  OnlineClientTransport,
-  OnlineRoomConnection,
-  SfuRoomMembership,
-} from '~/modules/online/client/transport/interface';
+import { trackOnlineSongPing } from '~/modules/online/client/online-analytics';
+import { OnlineClientTransport, OnlineRoomConnection } from '~/modules/online/client/transport/interface';
 import { SfuClientTransport } from '~/modules/online/client/transport/sfu-client-transport';
-import { SfuRoomConnection } from '~/modules/online/client/transport/sfu-room-connection';
 import {
   OnlineHostSnapshot,
   OnlineRoomHost,
@@ -20,13 +20,14 @@ import {
 import { ONLINE_HOST_STALL_MS, ONLINE_PROMOTE_STAGGER_MS } from '~/modules/online/protocol/consts';
 import { OnlineServerRpc } from '~/modules/online/protocol/room-logic';
 import { OnlineMessages, OnlineRoomState, OnlineSubscriptionChannels } from '~/modules/online/protocol/types';
-import { fetchRoomInfo } from '~/modules/online/signaling/directory-client';
-import { clearMembershipSecret } from '~/modules/online/signaling/membership-secret';
+import { ONLINE_REALTIME } from '~/modules/online/signaling/protocol';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
 const PARTICIPANT_ID_KEY = 'ONLINE_PARTICIPANT_ID';
 export const ONLINE_NAME_KEY = 'ONLINE_PARTICIPANT_NAME';
+
+const signaling = new SignalingClient(ONLINE_REALTIME);
 
 const RECONNECT_BASE_DELAY_MS = 1_000;
 const RECONNECT_MAX_DELAY_MS = 15_000;
@@ -80,21 +81,14 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private shouldReconnect = false;
   private reconnectAttempts = 0;
   private clockOffsetMs = 0;
+  private songPings = new PingSampler();
+  /** Whether this tab hosted when the song began — a takeover mid-song mixes loopback readings with
+   * network ones, and the report says so. */
+  private songStartedHosting = false;
   private pingPong = new PingPongTracker({
-    onMeasurement: (ping) => this.reportPing(ping),
+    onMeasurement: (ping) => this.songPings.record(ping),
+    onTimeout: () => this.songPings.recordTimeout(),
   });
-
-  /** Feeds the ping loop's measurements to analytics. Reads the loopback flag at report time rather
-   * than at connect time: a host takeover flips `getIsHosting()` mid-room, and attributing a
-   * post-takeover measurement to the old role would put a loopback reading in the network sample. */
-  private reportPing = (ping: number) => {
-    if (!this.roomCode) return;
-    trackOnlinePing({
-      ping,
-      roomCode: this.roomCode,
-      isLoopbackHost: this.getIsHosting(),
-    });
-  };
   /** Set while this browser has gone idle (see `useIsUserActive`). Nothing here holds a server
    * awake any more, but a silent client still costs the host bandwidth and everyone else a row
    * that pretends to be live, so the loop still stops. */
@@ -153,7 +147,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
    * running round; being unable to enter the room at all until it expires costs them the room.
    */
   private rotateIdentity = () => {
-    if (this.roomCode) clearMembershipSecret(this.roomCode);
+    if (this.roomCode) clearMembershipSecret(ONLINE_REALTIME, this.roomCode);
     this.participantId = uuid();
     storage.setItem(PARTICIPANT_ID_KEY, this.participantId);
   };
@@ -214,7 +208,12 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
     let connection: OnlineRoomConnection | null = null;
     let outcome;
     try {
-      connection = new SfuRoomConnection(this.roomCode, this.getParticipantId());
+      connection = new SfuRoomConnection(
+        ONLINE_REALTIME,
+        this.roomCode,
+        this.getParticipantId(),
+        jsonCodec<OnlineMessages>(),
+      );
       if (attempt !== this.openAttempt) {
         connection.close();
         return;
@@ -433,7 +432,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
   private verifyStillHosting = async () => {
     const connection = this.connection;
     if (!connection || !this.host) return;
-    const info = await fetchRoomInfo(this.roomCode!);
+    const info = await signaling.fetchRoomInfo(this.roomCode!);
     // Unreachable directory: say nothing rather than stand a working room down over a failed fetch.
     if (!info?.hostSessionId || this.connection !== connection || !this.host) return;
     if (info.hostSessionId === connection.getSessionId()) return;
@@ -448,7 +447,7 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 
     let resolvedHostSessionId = hostSessionId;
     if (!resolvedHostSessionId) {
-      const info = await fetchRoomInfo(this.roomCode!);
+      const info = await signaling.fetchRoomInfo(this.roomCode!);
       if (!info?.hostSessionId) return;
       resolvedHostSessionId = info.hostSessionId;
     }
@@ -491,6 +490,24 @@ export class OnlineClient extends Listener<[OnlineConnectionStatus, string?]> {
 
   /** Latest measured round-trip latency to the host, ms. */
   public getLatency = () => this.pingPong.getLatency();
+
+  /** Starts collecting this song's pings; `reportSongPing` sends them as one event. */
+  public startSongPing = () => {
+    this.songPings.start();
+    this.songStartedHosting = this.getIsHosting();
+  };
+
+  public reportSongPing = (songId: string) => {
+    const stats = this.songPings.finish();
+    if (!stats || !this.roomCode) return;
+    trackOnlineSongPing({
+      stats,
+      songId,
+      roomCode: this.roomCode,
+      isLoopbackHost: this.getIsHosting(),
+      hostChanged: this.songStartedHosting !== this.getIsHosting(),
+    });
+  };
 
   /** Drops the data plane while leaving the connection *status* alone — used when the room has
    * rejected us, where the status is the whole point and must survive. */
@@ -574,6 +591,6 @@ const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
 
 /** Checks (over HTTP) whether a room code was actually opened, without joining it. */
 export const checkRoomExists = async (roomCode: string): Promise<boolean> =>
-  (await fetchRoomInfo(roomCode))?.created === true;
+  (await signaling.fetchRoomInfo(roomCode))?.created === true;
 
 export default new OnlineClient();

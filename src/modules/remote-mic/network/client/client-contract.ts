@@ -10,6 +10,9 @@ export interface ClientContract {
   setPermissions: (level: RemoteMicPermission) => void;
   reload: () => void;
   requestReadiness: () => void;
+  // Bracket one song on the host, so a singing phone reports that song's ping as a single event
+  songStarted: () => void;
+  songEnded: () => void;
   // Sent by the host when the player settings screen is shown, so unassigned phones can auto-open the player picker
   notifyPlayerSettingsOpen: () => void;
 }

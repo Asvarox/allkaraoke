@@ -57,7 +57,7 @@ const cloudflareOptionsFor = (fakeSfuUrl: string | undefined): Parameters<typeof
             REALTIME_API_URL: fakeSfuUrl,
           };
           // Mutated rather than returned: a returned array is concatenated onto the original.
-          config.ratelimits = config.ratelimits?.filter(({ name }) => name !== 'ONLINE_SIGNALING_RATE_LIMITER');
+          config.ratelimits = config.ratelimits?.filter(({ name }) => name !== 'REALTIME_SIGNALING_RATE_LIMITER');
         },
         // Runs next to a regular `pnpm start`; sharing its Durable Object storage would mix rooms.
         persistState: e2eFakeSfuUrl ? { path: '.wrangler/state-e2e' } : undefined,
@@ -227,6 +227,7 @@ export default defineConfig((env) => ({
               durableObjects: {
                 LEADERBOARD_BOARD: { className: 'LeaderboardBoard', useSQLite: true },
                 ONLINE_DIRECTORY: { className: 'OnlineDirectory', useSQLite: true },
+                REMOTE_MIC_DIRECTORY: { className: 'RemoteMicDirectory', useSQLite: true },
               },
               bindings: {
                 ADMIN_PANEL_PASSWORD: 'admin-password',

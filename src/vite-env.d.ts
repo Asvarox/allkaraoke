@@ -11,6 +11,8 @@ declare namespace globalThis {
   var isE2ETests: boolean | undefined;
   /** Set by `enableAutoMobileMode` in tests/helpers.ts — the e2e stand-in for the experiment. */
   var isE2EAutoMobileMode: boolean | undefined;
+  /** Set by `useRealtimeRemoteMics` in tests/helpers.ts — new game codes use the Realtime transport. */
+  var isE2ERemoteMicsRealtime: boolean | undefined;
 
   // See https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1615
   type OrientationLockType =

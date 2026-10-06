@@ -101,12 +101,16 @@ SFU conveys the slot a frame arrived on and nothing else.
 
 ## What still runs on a server
 
-One Durable Object per room code (`worker/online-directory-do.ts`), holding who is in the room,
+The Realtime pieces are shared with remote mics, which mount their own copy of the endpoints and
+their own directory on the same Realtime app (see `network.md`): `src/modules/network/realtime/`
+in the browser, `worker/realtime/` in the Worker. Online mode's share is `ONLINE_REALTIME`.
+
+One Durable Object per room code (`OnlineDirectory`, on `worker/realtime/room-directory.ts`), holding who is in the room,
 which slot each of them owns, and who is hosting. It is touched on join, leave, host promotion and
 a five-minute keepalive — never on the message path. A room wakes it for a handful of milliseconds
 a few times per session instead of staying resident for every song.
 
-The signaling endpoints (`worker/online-signaling.ts`) proxy SFU session and channel creation so
+The signaling endpoints (`worker/realtime/signaling.ts`, mounted under `/online/`) proxy SFU session and channel creation so
 the Realtime app token never reaches a browser. They are the only endpoints that spend anything,
 and none is behind a login, so they are rate-limited by IP — `/online/session` in particular takes
 no input at all.

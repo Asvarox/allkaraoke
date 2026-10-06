@@ -6,6 +6,8 @@ import { milliseconds } from '~/interfaces';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
+import isDev from '~/modules/utils/is-dev';
+import isE2E from '~/modules/utils/is-e2-e';
 import Listener from '~/modules/utils/listener';
 import storage from '~/modules/utils/storage';
 
@@ -83,18 +85,32 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
   process.env.NODE_ENV === 'development' ? 'local' : 'session',
 );
 
-export const RemoteMicConnectionType = ['WebSockets', 'PeerJS', 'PartyKit'] as const;
+export const RemoteMicConnectionType = ['WebSockets', 'PeerJS', 'PartyKit', 'Realtime'] as const;
+
+/** Dev follows the flag being on, like every other flag there. E2E stays on PartyKit unless a spec
+ * opts into Realtime (`useRealtimeRemoteMics` in tests/helpers.ts), so both keep browser coverage. */
+const defaultRemoteMicConnectionType = (): ServerTransport['name'] => {
+  if (isE2E()) return globalThis.isE2ERemoteMicsRealtime ? 'Realtime' : 'PartyKit';
+  return isDev() ? 'Realtime' : 'PartyKit';
+};
+
+/** What a game code generated from now on runs on. A code keeps the transport it was generated with
+ * (see `NetworkServer`), so a flag answer arriving later never strands the phones already on it. */
 export const RemoteMicConnectionTypeSetting = new Setting<ServerTransport['name']>(
   'RemoteMicConnectionType',
-  'PartyKit',
+  defaultRemoteMicConnectionType(),
   'session',
 );
 export const IsCalibratedSetting = new Setting<boolean>('IsCalibrated', false);
 export const UnassignOnSongFinishedSetting = new Setting<boolean>('UnassignOnSongFinished', false, 'session');
 
 posthog.onFeatureFlags?.(() => {
+  if (isDev() || isE2E()) return;
   RemoteMicConnectionTypeSetting.set(
-    (posthog.getFeatureFlagPayload(FeatureFlags.RemoteMicConnectionType) as ServerTransport['name']) ?? 'PartyKit',
+    posthog.isFeatureEnabled(FeatureFlags.RemoteMicsRealtime)
+      ? 'Realtime'
+      : ((posthog.getFeatureFlagPayload(FeatureFlags.RemoteMicConnectionType) as ServerTransport['name']) ??
+          'PartyKit'),
   );
 });
 

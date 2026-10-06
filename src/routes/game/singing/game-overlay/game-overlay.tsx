@@ -7,6 +7,7 @@ import fragShader from '~/modules/game-engine/drawing/shaders/shader.frag?raw';
 import vertShader from '~/modules/game-engine/drawing/shaders/shader.vert?raw';
 import { PlayerNumber } from '~/modules/players/player-number';
 import PlayersManager from '~/modules/players/players-manager';
+import RemoteMicServer from '~/modules/remote-mic/network/server';
 import tuple from '~/modules/utils/tuple';
 import SkipIntro from '~/routes/game/singing/game-overlay/components/skip-intro';
 import SkipOutro from '~/routes/game/singing/game-overlay/components/skip-outro';
@@ -81,9 +82,12 @@ const GameOverlay = forwardRef(function (
 
   useEffect(() => {
     GameState.startInputMonitoring();
+    // Phones report their ping once per song, so they need to know where a song begins and ends
+    RemoteMicServer.callAllClients('songStarted');
 
     return () => {
       GameState.stopInputMonitoring();
+      RemoteMicServer.callAllClients('songEnded');
     };
   }, []);
 
