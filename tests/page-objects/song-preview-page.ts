@@ -35,10 +35,17 @@ export class SongPreviewPagePO {
     await this.page.getByTestId('play-song-button').click();
   }
 
-  public async playTheSong(skipIntro = true, calibration = true, unverifiedSong = false) {
-    const playButton = this.page.getByTestId('play-song-button');
-    await playButton.click();
+  public get playButton() {
+    return this.page.getByTestId('play-song-button');
+  }
 
+  public async playTheSong(skipIntro = true, calibration = true, unverifiedSong = false) {
+    await this.playButton.click();
+    await this.continueIntoTheSong(skipIntro, calibration, unverifiedSong);
+  }
+
+  /** Everything after Play is pressed, for flows that start the song some other way (e.g. finishing the mic setup). */
+  public async continueIntoTheSong(skipIntro = true, calibration = true, unverifiedSong = false) {
     if (unverifiedSong) {
       const confirmPlayButton = this.page.getByTestId('confirm-play-unverified-song');
       await confirmPlayButton.click();
