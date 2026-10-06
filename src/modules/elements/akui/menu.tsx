@@ -1,9 +1,10 @@
-import { ComponentProps, HTMLProps, PropsWithChildren, ReactNode } from 'react';
+import { ComponentProps, HTMLProps, PropsWithChildren, ReactNode, use } from 'react';
 
 import { MenuButton } from '~/modules/elements/akui/menu/menu-button';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
+import { ModalCloseButtonContext } from '~/modules/elements/modal-context';
 import isE2E from '~/modules/utils/is-e2-e';
 import { cn } from '~/utils/cn';
 import { twx } from '~/utils/twx';
@@ -36,10 +37,17 @@ export const Menu = ({ title, children, className, spacing = 'regular', modal = 
   </MenuContainer>
 );
 
-Menu.Header = twx(
+const MenuHeaderBase = twx(
   Typography,
-)`text-active text-shadow-legible phone:px-12 flex items-center justify-center text-center text-xl font-bold uppercase max-lg:text-lg`;
-export const MenuHeader = Menu.Header;
+)`text-active text-shadow-legible flex items-center justify-center text-xl font-bold uppercase max-lg:text-lg`;
+/** In a modal filling a phone's screen it keeps clear of the close button in the corner */
+export const MenuHeader = ({ className, ...props }: ComponentProps<typeof MenuHeaderBase>) => (
+  <MenuHeaderBase
+    className={cn(use(ModalCloseButtonContext) && 'phone:px-12 phone:text-center', className)}
+    {...props}
+  />
+);
+Menu.Header = MenuHeader;
 
 Menu.Button = MenuButton;
 Menu.ButtonGroup = twx.div`flex`;

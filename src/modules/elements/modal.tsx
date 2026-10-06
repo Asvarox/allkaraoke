@@ -5,6 +5,8 @@ import { createPortal } from 'react-dom';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
+import { ModalCloseButtonContext } from '~/modules/elements/modal-context';
+import { cn } from '~/utils/cn';
 
 interface Props extends PropsWithChildren {
   open: boolean;
@@ -19,6 +21,9 @@ interface Props extends PropsWithChildren {
    * the confirmation looking like it has no background at all.
    */
   level?: 'base' | 'nested';
+  /** On a phone, fill the screen with a close button in the corner. Off for small prompts that read
+   * better as a dialog over what they're about. */
+  fullScreenOnPhone?: boolean;
 }
 
 const LEVELS = {
@@ -26,8 +31,16 @@ const LEVELS = {
   nested: { backdrop: 'z-modal-top-backdrop', content: 'z-modal-top' },
 } as const;
 
-export default function Modal({ children, open, onClose, withPortal = false, level = 'base' }: Props) {
+export default function Modal({
+  children,
+  open,
+  onClose,
+  withPortal = false,
+  level = 'base',
+  fullScreenOnPhone = true,
+}: Props) {
   const layer = LEVELS[level];
+  const closeButton = fullScreenOnPhone && !!onClose;
   const content = (
     <AnimatePresence>
       {open && (
@@ -48,14 +61,21 @@ export default function Modal({ children, open, onClose, withPortal = false, lev
             onClick={onClose}
             className={`fixed left-0 h-screen w-screen overflow-auto ${layer.content}`}>
             {/* On a phone the dialog takes the whole screen, its own surface stretched edge to edge */}
-            <div className="phone:h-full phone:items-stretch flex min-h-full items-center justify-center">
+            <div
+              className={cn(
+                'flex min-h-full items-center justify-center',
+                fullScreenOnPhone && 'phone:h-full phone:items-stretch',
+              )}>
               <div
-                className="phone:flex phone:size-full phone:flex-col phone:*:min-h-0 phone:*:w-full phone:*:max-w-none! phone:*:flex-1 phone:*:overflow-y-auto phone:*:rounded-none! phone:*:border-0 phone:*:max-h-none!"
+                className={cn(
+                  fullScreenOnPhone &&
+                    'phone:flex phone:size-full phone:flex-col phone:*:min-h-0 phone:*:w-full phone:*:max-w-none! phone:*:flex-1 phone:*:overflow-y-auto phone:*:rounded-none! phone:*:border-0 phone:*:max-h-none!',
+                )}
                 onClick={(e) => e.stopPropagation()}>
-                {children}
+                <ModalCloseButtonContext value={closeButton}>{children}</ModalCloseButtonContext>
               </div>
             </div>
-            {onClose && (
+            {closeButton && (
               <Button
                 size="mini"
                 type="button"
