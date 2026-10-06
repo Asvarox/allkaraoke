@@ -1,0 +1,217 @@
+#ARTIST:Talk Talk
+#TITLE:Life’s What You Make It
+#CREATOR:Talk talk
+#BPM:367,45
+#YEAR:1985
+#VIDEO:v=l3VqAsMXE7o
+#GENRE:Synth-Pop, New Wave, Dance-Pop, New Pop
+#LANGUAGE:English
+#GAP:39700,27486732889
+#ALLKARAOKE_ID:talk-talk-lifes-what-you-make-it
+#ALLKARAOKE_SID:6486
+#ALLKARAOKE_LASTUPDATE:2026-10-06T04:08:48.034Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=l3VqAsMXE7o
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:258
+#MP3:Talk Talk - Life’s What You Make It.mp3
+: 24 2 13 Ba
+: 28 6 15 ~
+: 40 6 15 by
+- 46
+* 64 6 15 Life’s 
+* 76 6 15 what 
+* 88 6 15 you 
+: 101 7 15 make 
+: 114 6 17 it
+- 120 159
+- 159
+: 183 10 13 Can’t 
+: 199 10 13 es
+: 215 10 13 cape 
+: 231 6 15 it
+- 237 511
+- 511
+: 535 2 13 Ba
+: 539 6 15 ~
+: 551 6 15 by
+- 557
+: 575 6 15 Yes
+: 587 6 15 ter
+: 599 10 15 day’s 
+* 615 7 15 fav’
+* 628 6 17 rite
+- 634 671
+- 671
+: 695 10 18 Don’t 
+: 711 10 18 you 
+: 727 10 18 hate 
+: 743 5 20 it
+- 748 871
+- 871
+: 895 4 11 Eve
+: 903 4 10 ry
+: 911 4 8 thing’s 
+: 920 24 20 all 
+: 951 4 18 right
+- 955
+: 959 6 18 Life’s 
+: 971 6 18 what 
+: 983 8 18 you 
+: 997 8 18 make 
+: 1011 5 20 it
+- 1016 1128
+- 1128
+: 1152 4 11 Eve
+: 1160 4 10 ry
+: 1168 4 8 thing’s 
+: 1177 24 20 all 
+: 1208 26 18 right
+- 1234 1280
+- 1280
+: 1304 2 13 Ba
+: 1308 6 15 ~
+: 1320 6 15 by
+- 1326
+: 1344 6 15 Life’s 
+: 1356 6 15 what 
+: 1368 6 15 you 
+: 1380 6 15 make 
+: 1392 6 17 it
+- 1398 1438
+- 1438
+* 1462 9 13 Don’t 
+* 1478 9 13 back
+* 1494 9 13 date 
+* 1510 5 15 it
+- 1515 1791
+- 1791
+: 1815 2 13 Ba
+: 1819 6 15 ~
+: 1831 6 15 by
+- 1837
+: 1855 6 15 Don’t 
+: 1867 6 15 try 
+: 1879 7 15 to 
+: 1892 7 15 shade 
+: 1905 6 17 it
+- 1911 1951
+- 1951
+* 1975 10 18 Beau
+* 1991 10 18 ty’s 
+* 2007 10 18 na
+* 2023 5 20 ked
+- 2028 2151
+- 2151
+: 2175 4 11 Eve
+: 2183 4 10 ry
+: 2191 4 8 thing’s 
+: 2200 24 20 all 
+: 2231 4 18 right
+- 2235
+: 2239 6 18 Life’s 
+: 2251 6 18 what 
+: 2263 8 18 you 
+: 2277 10 18 make 
+: 2294 4 15 i
+: 2302 4 13 ~t
+- 2306 2407
+- 2407
+* 2431 4 11 Eve
+* 2439 4 10 ry
+* 2447 4 8 thing’s 
+: 2456 24 20 all 
+: 2487 13 18 right
+- 2500
+: 2507 6 18 What 
+: 2518 6 18 you 
+: 2529 6 18 make 
+: 2540 6 20 it
+- 2546 3199
+- 3199
+* 3223 2 13 Ba
+* 3227 6 15 ~
+* 3239 6 15 by
+- 3245
+: 3263 6 15 Life’s 
+: 3275 6 15 what 
+: 3287 7 15 you 
+: 3300 7 15 make 
+: 3313 6 17 it
+- 3319 3359
+- 3359
+: 3383 10 18 Ce
+: 3399 10 18 le
+: 3415 10 18 brate 
+: 3431 6 20 it
+- 3437 3495
+- 3495
+* 3519 7 15 An
+* 3532 6 15 ti
+* 3544 6 15 ci
+* 3559 7 15 pate 
+* 3572 6 17 it
+- 3578 3623
+- 3623
+: 3647 7 13 Yes
+: 3659 7 13 ter
+: 3671 10 13 day’s 
+: 3687 7 13 fa
+: 3699 6 12 ded
+- 3705 3751
+- 3751
+: 3775 6 15 No
+: 3787 7 15 thing 
+: 3799 7 15 can 
+: 3812 7 15 change 
+: 3825 6 17 it
+- 3831 3880
+- 3880
+: 3904 6 18 Life’s 
+: 3916 6 18 what 
+: 3928 6 18 you 
+* 3940 6 18 make 
+* 3952 5 20 it
+- 3957 4071
+- 4071
+: 4095 4 11 Eve
+: 4103 4 10 ry
+: 4111 4 8 thing’s 
+: 4120 24 20 all 
+: 4151 4 18 right
+- 4155
+: 4160 6 18 Life’s 
+: 4172 6 18 what 
+: 4184 7 18 you 
+: 4196 9 18 make 
+: 4211 5 20 it
+- 4216 4327
+- 4327
+: 4351 4 11 Eve
+: 4359 4 10 ry
+: 4367 4 8 thing’s 
+: 4376 24 20 all 
+: 4407 4 18 right
+- 4411
+: 4415 6 18 Life’s 
+: 4427 6 18 what 
+: 4439 8 18 you 
+: 4453 10 18 make 
+: 4470 4 15 i
+: 4478 4 13 ~t
+- 4482 4584
+- 4584
+: 4608 4 11 Eve
+: 4616 4 10 ry
+: 4624 4 8 thing’s 
+* 4633 24 20 all 
+* 4664 30 18 right
+- 4694 4840
+- 4840
+: 4864 4 11 Eve
+: 4872 4 10 ry
+: 4880 4 8 thing’s 
+: 4889 24 20 all 
+: 4920 28 18 right
+E

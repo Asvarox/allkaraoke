@@ -3907,7 +3907,7 @@
     "gap": 13743.870967741936,
     "year": "2026",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-05T03:21:28.750Z",
+    "lastUpdate": "2026-10-04T20:53:15.551Z",
     "genre": "Jpop",
     "realBpm": 155,
     "volume": 1,
@@ -5370,6 +5370,36 @@
     "shortId": 132,
     "tracksCount": 1,
     "search": "airbagnochesdeinsomnio",
+    "local": false
+  },
+  {
+    "id": "aitana-6-de-febrero",
+    "title": "6 DE FEBRERO",
+    "artist": "Aitana",
+    "video": "7csX6CfgMoo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 234,
+    "gap": 11555.358974358975,
+    "year": "2025",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-06T04:08:49.242Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "previewStart": 40,
+    "previewEnd": 70,
+    "volume": 1,
+    "author": "sohcer92",
+    "duration": 191,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6497,
+    "tracksCount": 1,
+    "search": "aitana6defebrero",
     "local": false
   },
   {
@@ -7586,6 +7616,35 @@
     "shortId": 187,
     "tracksCount": 1,
     "search": "aliceinchainsrooster",
+    "local": false
+  },
+  {
+    "id": "alice-in-chains-them-bones",
+    "title": "Them Bones",
+    "artist": "Alice In Chains",
+    "video": "zTuD8k3JvxQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.29999999999995,
+    "gap": 2857.220216606498,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-06T04:08:49.040Z",
+    "realBpm": 82,
+    "previewStart": 63,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "FaKK",
+    "duration": 154,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6494,
+    "tracksCount": 1,
+    "search": "aliceinchainsthembones",
     "local": false
   },
   {
@@ -13238,6 +13297,37 @@
     "local": false
   },
   {
+    "id": "asca-resister",
+    "title": "Resister",
+    "artist": "ASCA",
+    "video": "RPZwWt6_unE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 362.81,
+    "gap": 19107.745100741435,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-06T04:08:49.043Z",
+    "genre": "J-Pop",
+    "realBpm": 183,
+    "previewStart": 45,
+    "previewEnd": 77,
+    "volume": 0.96,
+    "author": "HansiMcKlaus",
+    "sourceUrl": "https://www.youtube.com/watch?v=RPZwWt6_unE",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6496,
+    "tracksCount": 1,
+    "search": "ascaresister",
+    "local": false
+  },
+  {
     "id": "ashanti-we-wish-you-a-merry-christmas",
     "title": "We Wish You A Merry Christmas",
     "artist": "Ashanti",
@@ -18623,7 +18713,7 @@
     "gap": 14081.90243902439,
     "year": "1992",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-10-05T03:21:28.571Z",
+    "lastUpdate": "2026-10-04T20:52:08.980Z",
     "genre": "Rock",
     "realBpm": 161,
     "volume": 1,
@@ -24849,7 +24939,7 @@
     "gap": 760.1724137931034,
     "year": "2009",
     "artistOrigin": "KR",
-    "lastUpdate": "2026-10-05T03:21:27.129Z",
+    "lastUpdate": "2026-10-04T20:47:59.238Z",
     "genre": "Pop",
     "realBpm": 124,
     "volume": 1,
@@ -37266,6 +37356,36 @@
     "local": false
   },
   {
+    "id": "clarice-falcao-feat-silva-eu-me-lembro",
+    "title": "Eu Me Lembro",
+    "artist": "Clarice Falcão feat. Silva",
+    "video": "olbbAuQUZd4",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 381.36,
+    "gap": 526.6771554436754,
+    "year": "2013",
+    "lastUpdate": "2026-10-06T04:08:49.261Z",
+    "genre": "Alternative, Indie",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 25
+      },
+      {
+        "start": 121
+      }
+    ],
+    "shortId": 6501,
+    "tracksCount": 2,
+    "search": "claricefalcaofeatsilvaeumelembro",
+    "local": false
+  },
+  {
     "id": "claris-click",
     "title": "CLICK",
     "artist": "ClariS",
@@ -46317,7 +46437,7 @@
     "bpm": 269.67,
     "gap": 19438.776282122595,
     "year": "2011",
-    "lastUpdate": "2026-10-05T03:21:28.403Z",
+    "lastUpdate": "2026-10-04T20:51:29.538Z",
     "realBpm": 135,
     "volume": 1,
     "author": "DS",
@@ -46649,6 +46769,33 @@
     "shortId": 6098,
     "tracksCount": 1,
     "search": "dietotenhosenpushedagain",
+    "local": false
+  },
+  {
+    "id": "die-toten-hosen-unter-den-wolken",
+    "title": "Unter den Wolken",
+    "artist": "Die Toten Hosen",
+    "video": "PwzDFFH3CMk",
+    "language": [
+      "German"
+    ],
+    "bpm": 262.5,
+    "gap": 22481.428571428572,
+    "year": "2017",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-06T04:08:49.042Z",
+    "realBpm": 141,
+    "volume": 1,
+    "author": "Phi",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6495,
+    "tracksCount": 1,
+    "search": "dietotenhosenunterdenwolken",
     "local": false
   },
   {
@@ -49523,6 +49670,35 @@
     "local": false
   },
   {
+    "id": "disneys-the-hunchback-of-notre-dame-heavens-light-hellfire",
+    "title": "Heaven’s Light / Hellfire",
+    "artist": "Disney’s The Hunchback of Notre Dame",
+    "video": "wYleCKxV_WA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7050,
+    "year": "1996",
+    "lastUpdate": "2026-10-06T04:08:48.440Z",
+    "genre": "Soundtrack",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "REL",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=77104",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17055",
+    "duration": 324,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6491,
+    "tracksCount": 1,
+    "search": "disneysthehunchbackofnotredameheavenslighthellfire",
+    "local": false
+  },
+  {
     "id": "disneys-the-jungle-book-i-wanna-be-like-you",
     "title": "I Wanna Be Like You",
     "artist": "Disney’s The Jungle Book",
@@ -51516,6 +51692,34 @@
     "shortId": 1350,
     "tracksCount": 1,
     "search": "donatanftcleomyslowianie",
+    "local": false
+  },
+  {
+    "id": "donna-lewis-i-love-you-always-forever",
+    "title": "I Love You Always Forever",
+    "artist": "Donna Lewis",
+    "video": "SqdWTeXWvOg",
+    "language": [
+      "English"
+    ],
+    "bpm": 414.8,
+    "gap": 587.4638379942141,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-06T04:08:47.124Z",
+    "genre": "Pop",
+    "realBpm": 56,
+    "volume": 1,
+    "author": "jackroke",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "shortId": 6484,
+    "tracksCount": 1,
+    "search": "donnalewisiloveyoualwaysforever",
     "local": false
   },
   {
@@ -54252,7 +54456,7 @@
     "bpm": 399.9,
     "gap": 13334.246811702926,
     "year": "2016",
-    "lastUpdate": "2026-10-05T03:21:28.228Z",
+    "lastUpdate": "2026-10-04T20:50:45.630Z",
     "realBpm": 150,
     "volume": 1,
     "author": "UltraSinger [GitHub] 0.0.13.dev16",
@@ -54966,6 +55170,34 @@
     "shortId": 1448,
     "tracksCount": 1,
     "search": "elanvodacomadrzinadvodou",
+    "local": false
+  },
+  {
+    "id": "elastinen-anna-soida",
+    "title": "Anna soida",
+    "artist": "Elastinen",
+    "video": "o00nQ85Eeh0",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 264,
+    "gap": 3108.2727272727275,
+    "year": "2006",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-06T04:08:49.251Z",
+    "genre": "Rap",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "palli",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6499,
+    "tracksCount": 1,
+    "search": "elastinenannasoida",
     "local": false
   },
   {
@@ -83900,7 +84132,7 @@
     "gap": 25503.12744331509,
     "year": "1993",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-05T03:21:28.049Z",
+    "lastUpdate": "2026-10-04T20:50:18.963Z",
     "realBpm": 128,
     "volume": 1,
     "author": "choosie",
@@ -85847,7 +86079,7 @@
     "bpm": 245.96,
     "gap": 9.159212880143173,
     "year": "2020",
-    "lastUpdate": "2026-10-05T03:21:27.136Z",
+    "lastUpdate": "2026-10-04T20:48:23.252Z",
     "realBpm": 123,
     "volume": 1,
     "author": "Tracks",
@@ -88058,7 +88290,7 @@
     "gap": 15067.208965361106,
     "year": "1983",
     "artistOrigin": "MX",
-    "lastUpdate": "2026-10-05T03:21:28.574Z",
+    "lastUpdate": "2026-10-04T20:52:26.633Z",
     "genre": "Balada Pop",
     "realBpm": 88,
     "previewEnd": 10,
@@ -88431,7 +88663,7 @@
     "gap": 21034.696729435083,
     "year": "1997",
     "artistOrigin": "IT",
-    "lastUpdate": "2026-10-05T03:21:28.401Z",
+    "lastUpdate": "2026-10-04T20:51:08.215Z",
     "genre": "Pop",
     "realBpm": 100,
     "volume": 1,
@@ -90977,6 +91209,36 @@
     "shortId": 2271,
     "tracksCount": 1,
     "search": "kanakoitoufatima",
+    "local": false
+  },
+  {
+    "id": "kanako-itou-sky-clad-no-kansokusha",
+    "title": "Sky Clad no Kansokusha",
+    "artist": "Kanako Itou",
+    "video": "k2LDC0sTsEQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 334.24,
+    "gap": 25462.68549545237,
+    "year": "2009",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-06T04:08:48.437Z",
+    "genre": "Video Game",
+    "realBpm": 167,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "Currymalker",
+    "duration": 276,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6490,
+    "tracksCount": 1,
+    "search": "kanakoitouskycladnokansokusha",
     "local": false
   },
   {
@@ -100897,6 +101159,36 @@
     "local": false
   },
   {
+    "id": "lady-gaga-swine",
+    "title": "Swine",
+    "artist": "Lady Gaga",
+    "video": "uGExj2Oq8IQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.04,
+    "gap": 6804.061865333541,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-06T04:08:49.246Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Coppolatte",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23748",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=17209",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6498,
+    "tracksCount": 1,
+    "search": "ladygagaswine",
+    "local": false
+  },
+  {
     "id": "lady-gaga-the-edge-of-glory",
     "title": "The Edge Of Glory",
     "artist": "Lady Gaga",
@@ -107203,6 +107495,36 @@
     "shortId": 6258,
     "tracksCount": 1,
     "search": "losaristogatostodosquierenseryagatosjazz",
+    "local": false
+  },
+  {
+    "id": "los-autenticos-decadentes-como-me-voy-a-olvidar",
+    "title": "Cómo me voy a olvidar",
+    "artist": "Los Autenticos Decadentes",
+    "video": "oRWriCU-71M",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 291.58000000000004,
+    "gap": 16727.560010985995,
+    "year": "1997",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-10-06T04:08:48.241Z",
+    "genre": "Rock",
+    "realBpm": 291.28,
+    "volume": 1,
+    "author": "erleo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=erleo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Autenticos%20Decadentes&cancion=C%C3%B3mo%20me%20voy%20a%20olvidar",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6489,
+    "tracksCount": 1,
+    "search": "losautenticosdecadentescomomevoyaolvidar",
     "local": false
   },
   {
@@ -113623,7 +113945,7 @@
     "gap": 16.46551724137919,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-05T03:21:28.041Z",
+    "lastUpdate": "2026-10-04T20:48:59.891Z",
     "realBpm": 115,
     "volume": 1,
     "author": "Syal",
@@ -123469,6 +123791,33 @@
     "local": false
   },
   {
+    "id": "muse-plug-in-baby",
+    "title": "Plug In Baby",
+    "artist": "Muse",
+    "video": "dbB-mICjkQM",
+    "language": [
+      "English"
+    ],
+    "bpm": 271.95,
+    "gap": 32397.170435741864,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-06T04:08:49.039Z",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "bexx",
+    "duration": 221,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6493,
+    "tracksCount": 1,
+    "search": "musepluginbaby",
+    "local": false
+  },
+  {
     "id": "muse-pressure",
     "title": "Pressure",
     "artist": "Muse",
@@ -128675,6 +129024,36 @@
     "shortId": 6105,
     "tracksCount": 1,
     "search": "nightwishslayingthedreamer",
+    "local": false
+  },
+  {
+    "id": "nightwish-sleeping-sun",
+    "title": "Sleeping Sun",
+    "artist": "Nightwish",
+    "video": "UGfKMV5AbMI",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.8,
+    "gap": 23960.978260869564,
+    "year": "1998",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-06T04:08:48.237Z",
+    "genre": "Metal",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=348",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6488,
+    "tracksCount": 1,
+    "search": "nightwishsleepingsun",
     "local": false
   },
   {
@@ -136717,7 +137096,7 @@
     "gap": 9672.236488504032,
     "year": "2008",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-05T03:21:28.046Z",
+    "lastUpdate": "2026-10-04T20:49:13.832Z",
     "realBpm": 134,
     "volume": 1,
     "author": "Ampersand",
@@ -140008,6 +140387,34 @@
     "shortId": 6379,
     "tracksCount": 1,
     "search": "provinzxmajanxjeremiasliebezudritt",
+    "local": false
+  },
+  {
+    "id": "provinz-zimmer",
+    "title": "Zimmer",
+    "artist": "Provinz",
+    "video": "LclJmHqHPvw",
+    "language": [
+      "German"
+    ],
+    "bpm": 213.93,
+    "gap": 13758.370495021736,
+    "year": "2021",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-06T04:08:49.253Z",
+    "genre": "Indie",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "Johnnn",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6500,
+    "tracksCount": 1,
+    "search": "provinzzimmer",
     "local": false
   },
   {
@@ -144482,7 +144889,7 @@
     "bpm": 332,
     "gap": 11276.024096385543,
     "year": "2010",
-    "lastUpdate": "2026-10-05T03:21:27.870Z",
+    "lastUpdate": "2026-10-04T20:48:42.503Z",
     "realBpm": 83,
     "volume": 1,
     "author": "Caruso",
@@ -147197,6 +147604,32 @@
     "shortId": 6318,
     "tracksCount": 1,
     "search": "robyndancingonmyown",
+    "local": false
+  },
+  {
+    "id": "robyn-with-kleerup-with-every-heartbeat",
+    "title": "With Every Heartbeat",
+    "artist": "Robyn with Kleerup",
+    "video": "-ojHWQrm4UM",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.03,
+    "gap": 30178.387389992975,
+    "year": "2007",
+    "lastUpdate": "2026-10-06T04:08:48.848Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "daggeg",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6492,
+    "tracksCount": 1,
+    "search": "robynwithkleerupwitheveryheartbeat",
     "local": false
   },
   {
@@ -165058,6 +165491,35 @@
     "local": false
   },
   {
+    "id": "talk-talk-lifes-what-you-make-it",
+    "title": "Life’s What You Make It",
+    "artist": "Talk Talk",
+    "video": "l3VqAsMXE7o",
+    "language": [
+      "English"
+    ],
+    "bpm": 367.45,
+    "gap": 39700.27486732889,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-06T04:08:48.034Z",
+    "genre": "Synth-Pop, New Wave, Dance-Pop, New Pop",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "Talk talk",
+    "sourceUrl": "https://www.youtube.com/watch?v=l3VqAsMXE7o",
+    "duration": 258,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6486,
+    "tracksCount": 1,
+    "search": "talktalklifeswhatyoumakeit",
+    "local": false
+  },
+  {
     "id": "talking-heads-psycho-killer",
     "title": "Psycho Killer",
     "artist": "Talking Heads",
@@ -166384,6 +166846,35 @@
     "shortId": 4204,
     "tracksCount": 1,
     "search": "taylorswiftheystephen",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-hits-different",
+    "title": "Hits Different",
+    "artist": "Taylor Swift",
+    "video": "_f4yoKJL7IQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 367.25,
+    "gap": 4059.7413206262763,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-06T04:08:48.234Z",
+    "genre": "Pop",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=_f4yoKJL7IQ",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6487,
+    "tracksCount": 1,
+    "search": "taylorswifthitsdifferent",
     "local": false
   },
   {
@@ -177653,6 +178144,33 @@
     "local": false
   },
   {
+    "id": "tiesto-y-karol-g-dont-be-shy",
+    "title": "Don't be shy",
+    "artist": "Tiësto y Karol G",
+    "video": "3wjM9lC_Pv4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.35999999999999,
+    "gap": 404.27994705493006,
+    "year": "2021",
+    "lastUpdate": "2026-10-06T04:08:47.842Z",
+    "genre": "Dance",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 141,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6485,
+    "tracksCount": 1,
+    "search": "tiestoykarolgdontbeshy",
+    "local": false
+  },
+  {
     "id": "tiffany-i-think-were-alone-now",
     "title": "I Think We're Alone Now",
     "artist": "Tiffany",
@@ -180360,7 +180878,7 @@
     "gap": 13232.164276401565,
     "year": "2014",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-05T03:21:28.576Z",
+    "lastUpdate": "2026-10-04T20:52:52.593Z",
     "realBpm": 116,
     "volume": 1,
     "author": "Train",
@@ -180891,6 +181409,35 @@
     "shortId": 4560,
     "tracksCount": 1,
     "search": "twentyonepilotsheathens",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-heavydirtysoul",
+    "title": "Heavydirtysoul",
+    "artist": "Twenty One Pilots",
+    "video": "r_9Kf0D5BTs",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 18619.23076923077,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-06T04:08:47.115Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28285",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6483,
+    "tracksCount": 1,
+    "search": "twentyonepilotsheavydirtysoul",
     "local": false
   },
   {
