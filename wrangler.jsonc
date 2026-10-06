@@ -36,6 +36,12 @@
 				"name": "ONLINE_DIRECTORY",
 				"class_name": "OnlineDirectory",
 			},
+			{
+				// The same for remote mics on Realtime game codes, whose rooms are kept apart from
+				// online mode's. Same Realtime app, same credentials.
+				"name": "REMOTE_MIC_DIRECTORY",
+				"class_name": "RemoteMicDirectory",
+			},
 		],
 	},
 	"migrations": [
@@ -51,6 +57,12 @@
 				"OnlineDirectory"
 			],
 		},
+		{
+			"tag": "v3",
+			"new_sqlite_classes": [
+				"RemoteMicDirectory"
+			],
+		},
 	],
 	// The binding only accepts periods of 10 or 60 seconds, so the intended 30/h is not expressible.
 	// 2 per 60s per clientId is the closest usable setting and needs no bookkeeping of our own.
@@ -63,13 +75,14 @@
 				"period": 60,
 			},
 		},
-		// Online mode's two paid endpoints (`/online/session`, `/online/datachannels`), keyed by IP.
+		// Realtime's two paid endpoints (`session`, `datachannels`, under both online mode's and remote
+		// mics' signaling paths), keyed by IP.
 		// Generous on purpose: a whole household behind one address joining the same room costs a
 		// session plus a channel call each, and a promotion costs another channel call — so this is
 		// well clear of honest use while still capping what an unauthenticated caller can spend on
 		// our Realtime app.
 		{
-			"name": "ONLINE_SIGNALING_RATE_LIMITER",
+			"name": "REALTIME_SIGNALING_RATE_LIMITER",
 			"namespace_id": "1002",
 			"simple": {
 				"limit": 60,
@@ -119,6 +132,10 @@
 						"name": "ONLINE_DIRECTORY",
 						"class_name": "OnlineDirectory",
 					},
+					{
+						"name": "REMOTE_MIC_DIRECTORY",
+						"class_name": "RemoteMicDirectory",
+					},
 				],
 			},
 			// Own namespace ids so preview traffic does not count against production's limits
@@ -132,7 +149,7 @@
 					},
 				},
 				{
-					"name": "ONLINE_SIGNALING_RATE_LIMITER",
+					"name": "REALTIME_SIGNALING_RATE_LIMITER",
 					"namespace_id": "2002",
 					"simple": {
 						"limit": 60,

@@ -14,6 +14,7 @@ const fake = vi.hoisted(() => {
     });
     public disconnect = vi.fn();
     public addListener = vi.fn();
+    public clearAllListeners = vi.fn();
     public getCurrentPing = () => 0;
     public removePlayer = vi.fn();
   }

@@ -10,6 +10,7 @@ import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import RemoteMicServer from '~/modules/remote-mic/network/server';
 import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/remote-mic/network/server/network-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import { nextValue } from '~/modules/utils/indexes';
@@ -30,7 +31,9 @@ function RemoteMicSettings() {
 
   const { register } = useKeyboardNav({ onBackspace: goBack, title: 'Remote Microphone Settings' });
 
-  const [remoteMicConnectionType, setRemoteMicConnectionType] = useSettingValue(RemoteMicConnectionTypeSetting);
+  const [, setRemoteMicConnectionType] = useSettingValue(RemoteMicConnectionTypeSetting);
+  // The game's code keeps the transport it was made with, which a later flag answer may not match
+  const remoteMicConnectionType = RemoteMicServer.getTransportName();
   const [defaultPermission, setDefaultPermission] = useSettingValue(DefaultRemoteMicPermission);
   const [unassignOnSongFinished, setUnassignOnSongFinished] = useSettingValue(UnassignOnSongFinishedSetting);
   const remoteMics = useEventListenerSelector(events.inputListChanged, () => RemoteMicManager.getRemoteMics());
@@ -57,7 +60,13 @@ function RemoteMicSettings() {
           name="connection type"
           label="Connection type"
           value={remoteMicConnectionType}
-          onClick={() => setRemoteMicConnectionType(nextValue(RemoteMicConnectionType, remoteMicConnectionType))}
+          onClick={() => {
+            const next = nextValue(RemoteMicConnectionType, remoteMicConnectionType);
+            setRemoteMicConnectionType(next);
+            RemoteMicServer.switchTransport(next);
+            // The shown value is the server's, which is not React state
+            forceUpdate();
+          }}
         />
         <hr />
         <NavSwitcher

@@ -95,6 +95,17 @@ function OnlineSinging({ roomState, song }: Props) {
     return () => clearTimeout(timeout);
   }, [inReadiness, showReadiness]);
 
+  // Every singer reports the song's ping once, from when the room starts singing to their song's end
+  const pingStartedRef = useRef(false);
+  useEffect(() => {
+    if (roomState.phase === 'singing' && !pingStartedRef.current) {
+      pingStartedRef.current = true;
+      OnlineClient.startSongPing();
+    }
+  }, [roomState.phase]);
+  // A no-op once the song ended normally; covers leaving the song mid-way
+  useEffect(() => () => OnlineClient.reportSongPing(song.id), [song.id]);
+
   // Host-only songStarted, fired once the room actually starts singing (not at song selection).
   const startedTrackedRef = useRef(false);
   useEffect(() => {
@@ -233,11 +244,12 @@ function OnlineSinging({ roomState, song }: Props) {
   const onSongEnd = useCallback(() => {
     if (hasFinished) return;
     setHasFinished(true);
+    OnlineClient.reportSongPing(song.id);
     OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
     const [actual, max] = GameState.getPlayerDetailedScore(selfNumber);
     const detailedScore: WireDetailedScore = [{ ...actual }, { ...max }];
     OnlineClient.send.scoring.publishFinal(detailedScore, getOwnScoreTimeline(selfNumber));
-  }, [hasFinished, selfNumber]);
+  }, [hasFinished, selfNumber, song.id]);
 
   // The host ended the game — wrap up and publish the final score so the results can show
   const finishRequestedAt = roomState.finishRequestedAt;

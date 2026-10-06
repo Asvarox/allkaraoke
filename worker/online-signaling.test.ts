@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { ChannelAuthorization, IceServersResponse } from '../src/modules/online/signaling/protocol';
+import { ChannelAuthorization, IceServersResponse } from '../src/modules/network/realtime/protocol';
 import { handleOnlineSignaling, OnlineSignalingEnv } from './online-signaling';
 
 // Enough of the env to get past the "online mode is not configured" guard; the ICE endpoint never
@@ -197,6 +197,14 @@ describe('data channel authorisation', () => {
     expect(response.status).toBe(200);
   });
 
+  it('holds an online host to the online room’s slots', async () => {
+    const response = await createChannels({ ok: true, isHost: true, slot: 0, hostSessionId: HOST_SESSION }, [
+      { name: 'slot-6' },
+    ]);
+
+    expect(response.status).toBe(403);
+  });
+
   it('refuses the host subscribing to anything', async () => {
     const response = await createChannels({ ok: true, isHost: true, slot: 0, hostSessionId: HOST_SESSION }, [
       { name: 'slot-3', publisherSessionId: 'another-session' },
@@ -226,7 +234,7 @@ describe('abuse limits', () => {
     // limit any page anywhere could open sessions on it for as long as it liked.
     const response = await createSession({
       ...realtimeEnv,
-      ONLINE_SIGNALING_RATE_LIMITER: { limit: async () => ({ success: false }) },
+      REALTIME_SIGNALING_RATE_LIMITER: { limit: async () => ({ success: false }) },
     });
 
     expect(response?.status).toBe(429);
@@ -307,6 +315,8 @@ describe('room codes', () => {
     // Codes are only ever a lead digit and letters; anything else never reaches a Durable Object name.
     expect((await lookup('abcde'))?.status).toBe(400);
     expect((await lookup('1abcd'))?.status).toBe(400);
+    // A remote mic's Realtime game code belongs to the other directory
+    expect((await lookup('rabcd'))?.status).toBe(400);
   });
 });
 

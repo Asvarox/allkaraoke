@@ -5,13 +5,17 @@ import { v4 } from 'uuid';
 import SimplifiedMic from '~/modules/game-engine/input/simplified-mic';
 import events from '~/modules/game-events/game-events';
 import { PingPongTracker } from '~/modules/network/rpc/ping-pong-tracker';
+import { PingSampler } from '~/modules/network/rpc/ping-stats';
 import { createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ExtractContract } from '~/modules/network/rpc/types';
 import { ClientTransport } from '~/modules/remote-mic/network/client/transport/interface';
 import { PartyKitClientTransport } from '~/modules/remote-mic/network/client/transport/party-kit-client';
+import { RealtimeClientTransport } from '~/modules/remote-mic/network/client/transport/realtime-client';
 import { WebSocketClientTransport } from '~/modules/remote-mic/network/client/transport/web-socket-client';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
+import { REMOTE_MIC_ROOM_CODE_LEAD } from '~/modules/remote-mic/network/realtime-protocol';
 import { serverHandlers } from '~/modules/remote-mic/network/server/server-handlers';
+import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import Listener from '~/modules/utils/listener';
 import { roundTo } from '~/modules/utils/round-to';
 import storage from '~/modules/utils/storage';
@@ -26,6 +30,21 @@ export type transportCloseReason = string;
 export type transportErrorReason = string;
 
 export type ServerRpc = ExtractContract<typeof serverHandlers>;
+
+/** Which transport a game code was made for, read off its lead letter (see `GAME_CODE_TRANSPORT_PREFIX`).
+ * Anything unknown is PartyKit, the transport every older code was made for. */
+const transportNameOf = (roomId: string): ServerTransport['name'] => {
+  const lead = roomId.charAt(0);
+  if (lead === 'w') return 'WebSockets';
+  if (lead === REMOTE_MIC_ROOM_CODE_LEAD) return 'Realtime';
+  return 'PartyKit';
+};
+
+const createTransport = (name: ServerTransport['name']): ClientTransport => {
+  if (name === 'WebSockets') return new WebSocketClientTransport();
+  if (name === 'Realtime') return new RealtimeClientTransport();
+  return new PartyKitClientTransport();
+};
 
 export class NetworkClient extends Listener<[NetworkMessages]> {
   private transport: ClientTransport | undefined;
@@ -66,13 +85,22 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       SimplifiedMic.removeListener(this.onFrequencyUpdate);
       SimplifiedMic.addListener(this.onFrequencyUpdate);
       SimplifiedMic.startMonitoring();
+      this.monitoring = true;
+      this.sangThisSong ||= this.songPings.isActive();
       events.remoteMicMonitoringStarted.dispatch();
     });
     registerClientHandler('stopMonitor', () => {
       SimplifiedMic.removeListener(this.onFrequencyUpdate);
       SimplifiedMic.stopMonitoring();
+      this.monitoring = false;
       events.remoteMicMonitoringStopped.dispatch();
     });
+    registerClientHandler('songStarted', () => {
+      this.songPings.start();
+      // The host starts monitoring the song's singers just before it announces the song
+      this.sangThisSong = this.monitoring;
+    });
+    registerClientHandler('songEnded', this.reportSongPing);
     registerClientHandler('reload', () => {
       global.removeEventListener('beforeunload', this.disconnect);
       this.transport?.sendEvent({ t: 'unregister' } as NetworkMessages);
@@ -137,11 +165,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       this.pingPong.stop();
       this.transport.close();
     }
-    this.transport = lcRoomId.startsWith('w')
-      ? new WebSocketClientTransport()
-      : lcRoomId.startsWith('k')
-        ? new PartyKitClientTransport()
-        : new PartyKitClientTransport();
+    this.transport = createTransport(transportNameOf(lcRoomId));
 
     if (this.clientId === null) this.setClientId(v4());
     this.roomId = lcRoomId;
@@ -178,9 +202,10 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
           events.karaokeConnectionStatusChange.dispatch('reconnecting');
         } else if (!this.connected) {
           events.karaokeConnectionStatusChange.dispatch('error', reason);
-          posthog.capture('remote_mic_connection_error', { reason, transport: this.roomId?.charAt(0) });
+          posthog.capture('remote_mic_connection_error', { reason, ...this.transportProperties() });
         } else {
           events.karaokeConnectionStatusChange.dispatch('disconnected');
+          posthog.capture('remote_mic_connection_lost', { reason, ...this.transportProperties() });
         }
 
         events.remoteMicPlayerSet.dispatch(null);
@@ -206,8 +231,28 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   private pingPong = new PingPongTracker({
     // 999 until the first pong comes back, so the readout never claims a 0 ms round trip
     initialLatency: 999,
-    onMeasurement: (ping) => this.reportPing(ping),
+    onMeasurement: (ping) => this.songPings.record(ping),
+    onTimeout: () => this.songPings.recordTimeout(),
   });
+
+  private monitoring = false;
+  private songPings = new PingSampler();
+  /** Whether the host monitored this phone during the current song, i.e. somebody sang on it. */
+  private sangThisSong = false;
+
+  private transportProperties = () => ({
+    // The game code's lead letter, kept as-is so events from before `transportName` stay comparable
+    transport: this.roomId?.charAt(0),
+    transportName: this.roomId ? transportNameOf(this.roomId) : null,
+  });
+
+  private reportSongPing = () => {
+    const stats = this.songPings.finish();
+    const sang = this.sangThisSong;
+    this.sangThisSong = false;
+    if (!stats || !sang) return;
+    posthog.capture('remote_mic_song_ping', { ...stats, ...this.transportProperties() });
+  };
 
   // Read by the remote-mic ping readout, which counts up while a pong is overdue
   public get latency() {
@@ -224,13 +269,11 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
     this.transport?.sendEvent({ t: 'ping' } as NetworkMessages);
   };
 
-  private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 60_000);
-
   public connectToServer = (_roomId: string, silent: boolean) => {
     this.connected = true;
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
-    posthog.capture('remote_mic_connection_successful', { transport: this.roomId?.charAt(0) });
+    posthog.capture('remote_mic_connection_successful', this.transportProperties());
     this.transport?.sendEvent({
       t: 'register',
       name: this.currentName,
@@ -269,7 +312,10 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   private reconnect = (roomId: string) => {
     if (this.reconnecting) {
       events.karaokeConnectionStatusChange.dispatch('reconnecting');
-      this.connect(roomId, this.currentName, false);
+      // An attempt still being set up is left to finish: a Realtime join takes a couple of seconds,
+      // and starting over every tick would never let one complete
+      const settingUp = this.transport instanceof RealtimeClientTransport && this.transport.isConnected();
+      if (!settingUp) this.connect(roomId, this.currentName, false);
       setTimeout(() => this.reconnect(roomId), 2000);
     }
   };

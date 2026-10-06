@@ -1,7 +1,7 @@
-import { throttle } from 'es-toolkit';
 import posthog from 'posthog-js';
 
 import { GAME_MODE, Song } from '~/interfaces';
+import { PingStats } from '~/modules/network/rpc/ping-stats';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
 
 /** Non-reversible digest of the room code for event correlation — avoids sending the raw,
@@ -57,28 +57,29 @@ export const trackOnlinePlayerKicked = () => {
   posthog.capture('onlinePlayerKicked');
 };
 
-/** How much of the ping loop reaches analytics. The tracker measures every couple of seconds,
- * which is what the live readout needs and far more than a transport comparison does — one sample
- * a minute per client keeps a long room from drowning out a short one. */
-const PING_REPORT_INTERVAL_MS = 60_000;
-
-interface OnlinePingReport {
-  ping: number;
+interface OnlineSongPingReport {
+  stats: PingStats;
+  songId: string;
   roomCode: string;
   /** True while this browser is the host, whose transport is a loopback into its own tab: the
-   * measurement is then ~0 and is not a network reading at all. Reported rather than dropped, so a
-   * per-player latency view can keep it while a transport comparison filters it out. */
+   * measurements are then ~0 and are not network readings at all. Reported rather than dropped, so a
+   * per-player latency view can keep them while a transport comparison filters them out. */
   isLoopbackHost: boolean;
+  /** The host role moved to or from this tab during the song, so the sample mixes both kinds. */
+  hostChanged: boolean;
 }
 
-/** Round-trip latency to whoever runs the room. */
-export const trackOnlinePing = throttle(({ ping, roomCode, isLoopbackHost }: OnlinePingReport) => {
-  posthog.capture('onlinePing', {
-    ping,
+/** Round-trip latency to whoever runs the room, summarised over one song — one event per singer per
+ * song, the same shape remote mics report as `remote_mic_song_ping`. */
+export const trackOnlineSongPing = ({ stats, songId, roomCode, isLoopbackHost, hostChanged }: OnlineSongPingReport) => {
+  posthog.capture('onlineSongPing', {
+    ...stats,
+    songId,
     isLoopbackHost,
+    hostChanged,
     roomCodeHash: hashRoomCode(roomCode),
   });
-}, PING_REPORT_INTERVAL_MS);
+};
 
 /**
  * Fired once per message this browser successfully sends, never for messages received.

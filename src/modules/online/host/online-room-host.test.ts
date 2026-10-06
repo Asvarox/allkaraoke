@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { OnlineRoomChannels, SfuRoomMembership } from '~/modules/online/client/transport/interface';
+import { SfuRoomMembership } from '~/modules/network/realtime/types';
+import { OnlineRoomChannels } from '~/modules/online/client/transport/interface';
 import { OnlineHostSnapshot, OnlineRoomHost } from '~/modules/online/host/online-room-host';
 import {
   ONLINE_HOST_HEARTBEAT_MS,
